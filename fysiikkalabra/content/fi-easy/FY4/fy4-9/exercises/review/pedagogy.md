@@ -1,19 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: fbbb9b9401d75abc
-SCOPE: delta added-exercise from ce753f67cda910eb base abdc9e095e4f
+CONTENT-HASH: f9f00f9009a8df82
+SCOPE: delta md-paragraphs,numbers,reflow,typography from fbbb9b9401d75abc base cabadc3e6179
 
 ## Blocking
 None.
 
 ## Polish
-1. exercises/solutions.md:260 (fy4-9-L2-09 d) — "satunnaisvirhe" is not explained although "systemaattinen virhe" is — "satunnaisvirheen eli virheen, joka vaihtelee mittauksesta toiseen, vaikutus pienenee".
-2. exercises/solutions.md:260 — "raajat tai irtotavarat" — "kädet ja jalat tai irralliset tavarat".
-3. exercises/exercises.json (fy4-9-L2-09) — the video is in English; if the page offers subtitles or a transcript (not checked), say so ("Voit käyttää tekstitystä"), so that language is not the obstacle.
+1. exercises/solutions.md:195 (fy4-9-L3 bouncing ball, Kaava) — missing separator between "$v_1 = -g\,t_\text{putoaminen}$" and "Nousussa" — "… $v_1 = -g\,t_\text{putoaminen}$. Nousussa ylimpään kohtaan …".
+2. exercises/solutions.md (L2-09 d) — "satunnaisvirhe" still unexplained — "satunnaisvirheen eli mittauksesta toiseen vaihtelevan virheen vaikutus pienenee".
+3. exercises/solutions.md (L2-09 d) — "raajat tai irtotavarat" — "kädet ja jalat tai irralliset tavarat".
 
 ## Checked
-- Added fy4-9-L2-09 only: the video is needed for b) and frames a), c), d); four parts rise from explaining to designing and evaluating, no overlap.
-- Fits level 2 as an experimental-design and reasoning task; differs from the calculations and data tasks of the level and from the worked example; the set's mix gains its first design task with a real source.
-- Only FY4 knowledge: Newton II, impulse principle, Newton III; the second example method derives m1v1 = m2v2 from the third law and equal impulse times, not from a law taught later.
-- Model answer: what a scale measures and why it reads zero in free fall without claiming "no gravity"; m = F/a and m = FΔt/Δv shown as the same law; example numbers marked as examples (80 kg both ways); error sources with remedies; relative error illustrated (4 %).
-- Hard words opened: hitaus, vapaa pudotus, tukivoima, työnnin, kuvataajuus, systemaattinen virhe, kalibrointi, suhteellinen virhe.
+- Rewrite only: every Kaava step now starts from I = Δp, I = FΔt, p = mv (or the area rule for graph tasks), then the derived formula; no number, answer or id changed.
+- Order basic equations, derived formula, then Sijoitus holds in the car, club, puck, sled, belt, ball, bumper, graph, dummy and bounce tasks.
+- Rubber/clay task: F defined from |v - v0|, F_k and F_s named before ΔF; readable step by step.
+- Dummy task: area rule, I = Δp with sign, and F_ka = I/Δt for a rigid barrier derived in Kaava, so part c has its formula before use.
+- Bounce task: v = v0 + at with a = -g, then impulse principle with ΣF = N_ka - mg; each step explained.
+- L1 multiple-choice and L2-09 paragraph splits are only line breaks; content unchanged, easier to read.
+- Captures not opened: the change is wording and formula order in solutions; judged from the diff text in the packet.
 - Hash the same at start and end.

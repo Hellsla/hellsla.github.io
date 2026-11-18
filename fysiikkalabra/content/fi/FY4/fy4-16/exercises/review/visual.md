@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 23186f4e97bbff73
+CONTENT-HASH: 8ad3639f61897685
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] solutions.md Kaava lines — "..., joten ..., joten ..." chains repeat "joten"; optional smoother "ja".
 
 ## Checked
-- Delta (md-paragraphs, solutions.md), each changed solution at 390 px: sol-fy4-16-L1-06-390.png (lift scale: result / each rejected claim), sol-fy4-16-L1-07-390.png (energy: the claims and the closing remark), sol-fy4-16-L3-04-390.png (sled Järkevyys, the closing paragraph on real snow friction is a separate point) and sol-fy4-16-L3-05-390.png (parachutist Järkevyys: drag vs weight, time average, why the difference is right).
-- Breaks separate distinct points; spacing even, nothing clipped, display blocks intact.
+- fy4-16-open-exercises-L2-1280-6.png (hoist power): Kaava now ΣF = 0, T = mg, W = Fs, E = Pt, then P = W/t = mgh/t; force figure and Sijoitus rows intact, nothing clipped.
+- The changed Sijoitus line in the incline task (substitution into the last symbolic form, same numbers) read in the diff.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

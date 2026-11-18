@@ -1,16 +1,15 @@
-VERDICT: FAIL
+VERDICT: PASS
 CONTENT-HASH: 1500ef8744b0673d
 
 ## Blocking
-- [Major] review/shots/ — visual verification incomplete — the packet's captures (contact sheets, fy4-1-open-exercises-L3-1280-*.png for the three changed Kaava steps) do not exist: the folder content/fi-easy/FY4/fy4-1/exercises/review/shots/ is missing, so the changed Kaava paragraphs could not be looked at as rendered — fix: regenerate the captures (python scripts/screenshot.py fy4-1 --lang fi-easy) and ask for the delta review again.
-
-## Polish
 None.
 
+## Polish
+- [Minor] solutions.md — a rewritten Kaava step runs several equations in one paragraph; it reads fine, splitting is optional.
+
 ## Checked
-- Hash run at start and end: 1500ef8744b0673d (unchanged).
-- Read the diff text of solutions.md (three Kaava steps, 8g and neighbours); no captures could be opened, so no layout judgement was made.
-- The lesson's own shots exist under content/fi-easy/FY4/fy4-1/review/shots/, but they do not show the exercise solutions.
+- Delta (solutions.md Kaava rewrite: basic equations, derived formula, then substitution). Opened at 1280 px in content/fi-easy/FY4/fy4-1/review/shots/: fy4-1-open-exercises-L3-1280-4.png, -5.png, -6.png (cars meeting, scale correction k, police car).
+- Kaava now runs principle, equations, derived formula; Sijoitus uses the last symbolic form. Formulas render without red source, nothing clipped, spacing even, surrounding layout intact. Numbers and answers unchanged in the shown captures. Hash unchanged at the end.
 
 ## Scores
-illustrations n/a · typography n/a · Finnish n/a · accessibility n/a
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

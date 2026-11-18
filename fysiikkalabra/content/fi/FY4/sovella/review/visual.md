@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: dfef3b38c1857fcb
+CONTENT-HASH: 8714d203727c4572
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+- [Minor] fy4-s1 b) figure 3 at 390 px — the labels of the force diagram are small on a phone (about 11 px rendered); the geometry and colours are correct and the description is complete. Optional enlargement.
+- [Minor] fy4-s2/s3 Kaava lines — a few start with the law's name in a sentence-initial position ("Mekaniikan energiaperiaate ...") and then break into long single paragraphs; still readable, no change required.
 
 ## Checked
-- Delta 8c (md-paragraphs): git diff origin/main of solutions.md; only blank lines inserted between sentences, words, numbers and formulas unchanged.
-- Opened contact-5.png and FY4-sovella-stage-fy4-s1-390-4.png (390 px, solutions open, task 1 b Mallivastaus and c Periaate): paragraphs render inside the labelled block with even gaps, label stays on first paragraph, formulas ($G_x$, $4{,}0^\circ$) intact, nothing clipped.
-- Breaks fall at sentence ends; each paragraph holds one thought (1 b four paragraphs, 1 d error discussion three, collision Periaate two); no split reads worse than before.
+- Kaava text read in solutions.md for all parts: each starts from the basic law (Newton II, energy principle, p_ennen = p_jälkeen, impulse principle), then the derived formula, symbolic simplification to the end ("Massa supistuu"), then Sijoitus into the last symbolic form.
+- FY4-sovella-fig-1-390.png (v,t graph: markers vs fitted lines, units, labels), fig-3 (slope force diagram, dashed components, colours), fig-4 (a,v graph, dashed extrapolation to v = 0), fig-5 (collision before/after, v blue, p purple).
+- FY4-sovella-page-390-12.png (rubric rows with inline maths) and -30 (e-part model answer): nothing clipped, formulas inline and legible.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

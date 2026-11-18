@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 21ead76999d37875
-SCOPE: delta added-exercise from daa17f1403857258 base abdc9e095e4f
+CONTENT-HASH: 504b94a242b0ab65
+SCOPE: delta md-paragraphs,numbers,reflow,typography from 21ead76999d37875 base cabadc3
 ## Blocking
 (none)
 ## Polish
-- exercises.json fy4-10-L2-10 d — no part asks for the limits of the model, which the model answer then gives unasked ("Tarkistus ja rajoitukset") — end d with "Mitä simulaatio jättää huomiotta oikeaan törmäyskokeeseen verrattuna?"
-- exercises.json fy4-10-L2-10 — the slider's word "elastisuus" is not the chapter's term; tie them in the task: "… kun elastisuus on $100\,\%$ (kimmoisa törmäys)" and "… $0\,\%$ (täysin kimmoton törmäys)".
-- solutions.md fy4-10-L2-10 c — "sitä enemmän liike-energiaa häviää" contradicts the course's own warning that energy does not vanish — "sitä enemmän liike-energiaa muuttuu muuksi energiaksi".
-- solutions.md fy4-10-L2-10 c — the closing paragraph is about 130 words and holds two things (the rounding of $-0{,}26\,\text{kg}\cdot\text{m/s}$ and the conclusion); start a new paragraph at "Liike-energia sen sijaan pienenee".
-- exercises.json fy4-10-L2-10 and solutions.md — "luettu 16. marraskuuta 2026" / "16.11.2026" is a day after this review round (15.11.2026); write the date actually read.
+- solutions.md (the player-collision task, Kaava, ";" before "Liike-energian") — capital letter after a semicolon: "…; liike-energian muutos on $\Delta E = E_\text{k,ennen} - E_\text{k,jälkeen}$, …".
+- solutions.md (the coupling-wagons mass task, Kaava) — the step from $m_1 v_1 = (m_1 + m_2)v'$ to $m_2 = \dfrac{m_1(v_1 - v')}{v'}$ is joined with "ja" and the rearrangement is not shown; write "joten $m_1 v_1 = m_1 v' + m_2 v'$, joten $m_2 v' = m_1(v_1 - v')$ ja …".
+- solutions.md fy4-10-L2-10 c — earlier polish still open: "sitä enemmän liike-energiaa häviää" contradicts the course's own energy wording; write "…muuttuu muuksi energiaksi".
+- solutions.md fy4-10-L2-10 — the line with $p'$ and $E_\text{k}'$ has the two results with no separator between them in the source; put them on separate lines.
 ## Checked
-- Round 1, delta: only fy4-10-L2-10 judged; the other 23 tasks as passed.
-- Applied and the source is necessary: the student produces the data in the simulation, with the settings named (view, the three boxes, wall off, positive direction).
-- Four parts in order: record signed velocities (a) → compute $p$ and $E_\text{k}$ and compare with the display (b) → vary one variable, elasticity, with the same start values (c) → explain with Newton III why one quantity is conserved and the other not (d). Variable control is explicit; no overlap (c observes, d explains).
-- The investigation can refute a wrong expectation: a student who expects kinetic energy to be conserved sees 0,44 J fall to 0,12 J and 0,02 J.
-- Level 2: data to work with, six short calculations of one formula each; only this chapter's laws and $E_\text{k}$.
-- Model answer followable: method stated for any start values, then a dated example with the defaults, every sum in symbols before numbers, the rounding difference $-0{,}26$ vs $-0{,}25$ explained instead of hidden.
-- Fits the set: the only task where the student generates the collision data; does not repeat the worked example (coupling wagons).
-- Open task with a text answer; nothing disclosed before the student acts.
-- Finnish and case endings correct; situation and instructions first, parts last.
+- Round 1, delta: only the diff judged (Kaava rewrites, paragraph splits); numbers, answers, tasks and ids unchanged in the diff.
+- Every rewritten Kaava now opens from $p_\text{ennen} = p_\text{jälkeen}$ (or $p = mv$, $E_\text{k} = \tfrac12 mv^2$, $\Sigma F = ma$), then the derived formula, symbols to the end, then Sijoitus.
+- Elastic equal-mass collision: the derivation ($v_1' v_2' = 0$, bodies do not pass through each other) is complete and followable; it removes the unexplained "they swap velocities".
+- Two-stage tasks (ballistic pendulum, car crash, wagons with friction) separate the two laws and state each before combining; paragraph splits keep one idea per paragraph.
+- Finnish in the changed lines correct; glossary terms kept.
+- Captures opened: content/fi/FY4/fy4-10/review/shots/fy4-10-open-exercises-L2-1280-5.png (Kaava wraps cleanly, nothing clipped); phone widths judged from the text.

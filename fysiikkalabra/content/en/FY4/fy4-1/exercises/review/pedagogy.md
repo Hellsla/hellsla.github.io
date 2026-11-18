@@ -1,19 +1,17 @@
 VERDICT: PASS
 CONTENT-HASH: 19c370b7c9fc0c25
-SCOPE: delta Kaava-step rewrite from af340b69e0e4d6ab
 
 ## Blocking
 None.
 
 ## Polish
-1. solutions.md:96 vs :287 — the average speed is written $v_\text{speed}$ at line 96 but $v_\text{sp}$ at line 287; use one symbol across the set — change line 96 (and its later rows) to $v_\text{sp}$, if both tasks are in this set.
+None.
 
 ## Checked
-- Round 1, delta: the Kaava-step rewrites judged in their context; numbers, answers and exercises are unchanged.
-- L2 two carts: from $x_\text{A} = x_\text{B}$, then $(v_\text{A} - v_\text{B})t = x_{0\text{B}} - x_{0\text{A}}$, then $t$; algebra correct, symbolic to the end before substitution.
-- L3-04 scale error: starts from the shared scale factor, $x = k x_\text{prog}$ and $v = k v_\text{prog}$, then $x = x_0 + vt$ with $x_0 = k x_{0,\text{prog}}$, then $t = (x - x_0)/v$; derivation correct and a student can follow it.
-- L3-05 police car: $x_{0\text{T}} + v_\text{T}t = v_\text{P}t - v_\text{P}t_0$ rearranges correctly to $x_{0\text{T}} + v_\text{P}t_0 = (v_\text{P} - v_\text{T})t$; matches the substitution row.
-- The other Kaava steps already start from $v = \Delta x/\Delta t$ and $x = x_0 + vt$, the basic equations, so no combined formula opens a solution.
-- Paragraph splits in the model answers and Reasonableness blocks (L1-05..08, L2, L3, L1-09) change no wording, number or sign; each paragraph holds one idea and is under 120 words.
-- The L3-05 sentence "The condition ... gives" and the new Kaava sentences are correct English; case and glossary terms fine.
-- No figure, level or exercise-set count change.
+- Round 1, delta (work queue 8g): Kaava step and paragraph splits in solutions.md judged in their context; no task, number, answer, tolerance or id changed.
+- L2 cart comparison: the Formula now derives t = (x0B - x0A)/(vA - vB) from x_A = x_B step by step; the algebra is correct and the substitution uses the last symbolic form.
+- L3-05 (truck and police car): x_T = x_P gives x0T + vT t = vP t - vP t0, hence t = (x0T + vP t0)/(vP - vT); correct and followed by the position formula.
+- L3-04 (scale error): k, x = k x_prog, v = k v_prog, then x = x0 + v t with x0 = k x0,prog, solved for t; consistent with the substituted 0.39 m (1.25 * 0.31 m) and 0.80 m/s.
+- Long Reasonableness, Principle, Model answer blocks split into one idea per paragraph (L1-05, L1-06, L1-07, L1-08, L2-08/09, L3-04, L3-05, L3-06); no content lost, order kept, the check remains last.
+- Task text, levels and counts unchanged from the passed version; figures unchanged.
+- Captures not opened: the change is text structure only, and the layout checks are the visual reviewer's.

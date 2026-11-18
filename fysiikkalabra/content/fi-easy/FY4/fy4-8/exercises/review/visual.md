@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9eaa6f05c461b162
+CONTENT-HASH: 856d6753f79d091c
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] sol-fy4-8-L2-10-390.png (Vastaus, b) — a stray space before the hyphen in "2² = 4 -kertaisen" (the maths ends, then a word space, then the compound ending); write "$2^2 = 4$-kertaisen".
+- [Minor] solutions.md — source writes `\tfrac{1}{2} mv^2` without a thin space between factors in several Kaava steps; harmless, optional to align with `\,`.
 
 ## Checked
-- Delta (md-paragraphs): opened shots/sol-fy4-8-L1-06-390.png in full, sol-fy4-8-L2-06-390.png in two 1800 px parts (11-15, the vaunu table task) and sol-fy4-8-L2-10-390.png in parts 2-4 (part 1, the task statement, not opened). L1-06: the model answer is split at the steep/gentle-slide point, one thing each. L2-10: Annettu, Periaate, Vastaus sub-parts a)-e) and the closing remarks are in separate paragraphs, spacing even, nothing clipped. Words unchanged. Hash re-run before writing: unchanged.
+- Delta (solutions.md Kaava rewrite, energy conservation / work principle). Opened at 1280 px in content/fi-easy/FY4/fy4-8/review/shots/: fy4-8-open-exercises-L3-1280-2.png. Other changed hunks read from the diff only (limited capture sampling).
+- Basic principle, then substitution of terms, then derived formula; formulas render cleanly, nothing clipped. Hash unchanged at the end.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

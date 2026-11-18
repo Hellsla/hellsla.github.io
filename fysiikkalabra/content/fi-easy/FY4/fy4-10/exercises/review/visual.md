@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8fe7ed8622699707
+CONTENT-HASH: d60f19cf1ffbacf4
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] solutions.md 14-19 (fy4-10-L3-01) and fy4-10-L3-04 — Periaate paragraph ends with the bare label "(2) Heilahdus." / "(2) Törmäys." (in the capture "(2)" at line end, "Heilahdus." alone), its content opening the next paragraph — break before "(2)" so the label starts its own paragraph. Same check in fi and en fy4-10: there "(2) …" opens the paragraph, no defect.
+- [Minor] solutions.md ballistic-pendulum and energy-loss Kaava — a semicolon followed by a capital letter ("...v'; Kappaleiden liike-energia ...", "...; Liike-energia on ...") — use a full stop or lower case.
+- [Minor] solutions.md several Kaava — 'joten ... joten ...' chains and the repeated lead 'Liikemäärä on p = mv' in every solution; fine as a method, optional to vary.
 
 ## Checked
-- Opened (this language's own captures, 1280 px, all solutions open) fy4-10-open-exercises-L3-1280-1 and L2-1280-18; also read every inserted break in the diff.
-- The new paragraph breaks render as separate paragraphs with even spacing, one thing per paragraph, no formula or row clipped, no awkward cut mid-thought except the stranded label in Polish.
-- Delta only (md-paragraphs in solutions.md); hash rechecked, unchanged.
+- Opened fy4-10-open-exercises-L3-1280-6 (collision/skid solution: new Kaava, aligned rows, Sijoitus and Vastaus all intact, no clipping).
+- Read every changed Kaava line in the diff (21 lines): all show p = mv, conservation, then the symbolic result before Sijoitus.
+- Delta only (Kaava lines of solutions.md rewritten as basic equation, derived formula, symbolic simplification; numbers, answers and ids untouched). Hash rechecked at the end, unchanged.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

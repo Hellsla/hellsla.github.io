@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 5d87bb715aeee774
+CONTENT-HASH: f7b8d233f6ae25a0
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] solutions.md (rinne/pulkka task) Sijoitus — `9{,}81\,\tfrac{\text{m}}{\text{s}^2}` and `14{,}0\,{}^\circ` differ from the house forms `\text{m/s}^2` and `^\circ` — use the standard forms.
+- [Minor] solutions.md long Kaava (energy over the whole slope, air-resistance) — very long paragraphs with an aligned block in the middle; consider a paragraph break at 'Siis'.
 
 ## Checked
-- Delta (md-paragraphs, solutions.md), each changed solution at 390 px: sol-fy4-16-L1-06-390.png (lift scale), sol-fy4-16-L1-07-390.png (energy: claims and closing remark), sol-fy4-16-L3-04-390.png (sled Järkevyys, real-snow caveat as its own paragraph) and sol-fy4-16-L3-05-390.png (parachutist Järkevyys in three paragraphs).
-- Breaks separate distinct points; spacing even, nothing clipped, display blocks intact.
+- Opened fy4-16-open-exercises-L3-1280-6 (sliding task 16-21 with table; the preceding solution's Järkevyys and the task layout intact, no horizontal overflow).
+- Read all 19 changed lines: Newton II / energy principle first, then symbolic result, then Sijoitus.
+- Delta only (Kaava lines of solutions.md rewritten as basic equation, derived formula, symbolic simplification; numbers, answers and ids untouched). Hash rechecked at the end, unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

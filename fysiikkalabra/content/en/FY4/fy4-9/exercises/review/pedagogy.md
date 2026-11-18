@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: af8705ea9b13dc3c
-SCOPE: delta added-exercise from 070b5689fcb10cb3 base abdc9e095e4f
+CONTENT-HASH: e42850bb00939229
 
 ## Blocking
 (none)
 
 ## Polish
-1. exercises/solutions.md:230 — part b describes the device only as "applies a known force … measures the resulting motion" and tells the reader to compare with the video — one sentence on what is actually seen in the video (I did not watch it, so no wording is proposed) would help a student who could not answer.
-2. exercises/solutions.md (part c) — the first example method is the same principle as the device in b) — say so, and present the push-apart method as the genuinely different one.
-3. exercises/exercises.json:309 — "(read 16 November 2026)" for a video: "viewed".
+1. exercises/solutions.md:223-252 (fy4-9-L1-09) — the multiple-choice model answer still goes straight to $F_\text{avg} = mv/\Delta t$ with no "$I = \Delta p$, $I = F\,\Delta t$, $p = mv$" row; one such sentence would match the other solutions.
+2. exercises/solutions.md:55,65,85,108 — "…, so $F\,\Delta t = …$, so …" strings two "so" in one sentence; a full stop after the first chain would read more easily.
+3. exercises/solutions.md:201 (L3-04 Formula) — $-I = \Delta p$ with $I$ as a magnitude is correct but dense; say "the impulse points opposite to the motion, so $\Delta p = -I$" in words.
 
 ## Checked
-- Delta: only fy4-9-L2-09 judged, with the list of the set; hash af8705ea9b13dc3c at start and end.
-- Applied and authentic (mass measurement on the space station); the video is the source to interpret; no numbers are given, the student builds the method.
-- Four parts, no overlap: why a scale fails, how the device works by both laws, an own method with its equation, its sources of error (the limits of the method).
-- Only Newton's second and third law and the impulse principle; free fall is used qualitatively.
-- Solution: the facts taken from the source are separated from the reasoning; two example methods with numbers marked as examples; error analysis includes how a relative error carries to the mass.
-- Fits the level-2 mix as the set's experimental-design task; repeats no other exercise.
+- Delta only (the Kaava rewrite): every Formula step now starts from $I = \Delta p$, $I = F\,\Delta t$, $p = mv$ (L2-01, 02, 04, 05, 06; L3-02, 03), then the symbolic result, then substitution into the last form; no number, answer, tolerance, id or task text changed.
+- Variable-force tasks (L3-01, L2-07, L3-04) say first that the impulse is the area under the graph, then apply the principle; the order is a correct derivation.
+- L3-05 now derives $v_1$, $v_2$ from $v = v_0 + at$ before the impulse equation; L3-03 defines $F_\text{r}$, $F_\text{c}$ before $\Delta F$.
+- Paragraph splits (Principle, Model answer, Reasonableness, L2-09 a-d) put one idea per paragraph; the Formula label stays at the start of its own line.
+- Substitution lines, answers and significant-figure remarks are unchanged and consistent with the new Formula lines.
+- L2-09 earlier polish (video sentence, "read" wording) is not touched by this delta and still open.
+- Captures: none opened (a presentation/derivation text rewrite judged from the diff; the open-solution captures predate it).

@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: e1082b35426289cf
-SCOPE: delta added-exercise from a5cb18686cec075d base abdc9e095e4f
+CONTENT-HASH: d60f19cf1ffbacf4
+SCOPE: delta md-paragraphs,numbers,reflow,typography from e1082b35426289cf base cabadc3e6179
 
 ## Blocking
 None.
 
 ## Polish
-1. exercises/solutions.md:292 (fy4-10-L2-10 c) — "sitä enemmän liike-energiaa häviää" uses the wording the course warns against — "sitä enemmän liike-energiaa muuttuu muuksi energiaksi".
-2. exercises/exercises.json (fy4-10-L2-10) — the task says "elastisuus" (the simulation's word) and the chapter "kimmoisa"; join them once in the task: "Elastisuus $100\,\%$ tarkoittaa kimmoisaa törmäystä."
-3. exercises/exercises.json (fy4-10-L2-10 a) — advise a table before the list of readings: "Tee taulukko: massa, nopeus ennen, nopeus jälkeen."
+1. exercises/solutions.md (Kaava of the energy-fraction and car-cart tasks, e.g. "...jälkeen}$; Liike-energia on...", "; Kappaleiden liike-energia...") — a capital letter after a semicolon — use a full stop or a lower-case start: "...; liike-energia on $E_\text{k} = \tfrac12 mv^2$, joten ...".
+2. exercises/solutions.md (fy4-10-L2-10 c) — "sitä enemmän liike-energiaa häviää" is still the wording the course warns against (earlier polish 1) — "sitä enemmän liike-energiaa muuttuu muuksi energiaksi".
+3. exercises/solutions.md (equal-mass elastic collision, Kaava) — "Lyöntipallo ei kulje kohdepallon läpi" is the key step for choosing v1' = 0; say why: "Lyöntipallo ei voi mennä kohdepallon läpi, joten $v_2' = 0$ ei käy ja $v_1' = 0$".
 
 ## Checked
-- Added fy4-10-L2-10 only: the simulation is the data source and the student acts on it (sets, records, computes, compares); four parts rise from recording to explaining, no overlap.
-- Fits level 2 (own data, two conserved quantities); differs from the air-track data tasks by letting the student vary the elasticity; chapter knowledge only.
-- Example solution with the default values checked: −1,25 and 0,25 m/s; p = −0,25 kg·m/s; 0,4375 J; 50 %: −0,69 and 0,06 m/s, 0,12 J; 0 %: −0,125 m/s, 0,02 J. The −0,26 from rounded display values is explained.
-- The solution says first that results depend on the student's choices and gives the method, then the dated example; every sum is written out; d) explains through Newton III and impulse, vector against scalar, and where the energy goes (sisäenergia, in line with the glossary).
-- Hard words opened: systeemi, oletusarvot, ulkoiset voimat, vektorisuure, skalaarisuure.
-- The simulation's Finnish control names were not checked against the live page.
+- Rewrite only: each Kaava now reads "liikemäärä säilyy, p = mv, kokonaisliikemäärä on osien summa", then the specific equation, then the solved form; no number, answer or id changed.
+- Elastic-collision derivation is complete step by step (mass cancels, square the first equation, v1'v2' = 0) and a Year-1 student can follow it.
+- Pendulum, astronaut, car-slide and cart-friction tasks: each phase (collision, then energy or equation of motion) gets its own basic equation before the derived formula.
+- The kinetic-energy loss tasks name E_k = ½mv² and ΔE as before minus after; consistent with the glossary and the lesson.
+- Paragraph splits in Periaate and Mallivastaus are line breaks only; readability improves, content equal.
+- Captures not opened: only solution wording and formula order changed; judged from the packet's diff.
 - Hash the same at start and end.

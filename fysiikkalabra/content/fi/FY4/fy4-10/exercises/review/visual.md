@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e211602d06fc6fec
+CONTENT-HASH: 504b94a242b0ab65
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] solutions.md (ΔE task Kaava) — "...; Liike-energian muutos on ..." has a capital letter after a semicolon; use lower case.
+- [Minor] solutions.md (L2 data task) — the Kaava chain mixes $E_\text{k}$ for the "before" total and $E_\text{k}'$ for after; the new text does not define the prime. Optional.
 
 ## Checked
-- Opened (this language's own captures, 1280 px, all solutions open) fy4-10-open-exercises-L2-1280-16 (elasticity solution, 13 lines of aligned rows between short intro sentences); also read every inserted break in the diff.
-- The new paragraph breaks render as separate paragraphs with even spacing, one thing per paragraph, no formula or row clipped, no awkward cut mid-thought.
-- Delta only (md-paragraphs in solutions.md); hash rechecked, unchanged.
+- fy4-10-open-exercises-L3-1280-4.png (14-21 astronaut): Kaava now p_ennen = p_jälkeen, p = mv, p_ennen = 0, then derived v_a', then v = s/t; display formulas in cards, nothing clipped, Sijoitus aligned.
+- fy4-10-open-exercises-L2-1280-9.png (data task): Kaava reads principle, then E_k, then ratio; layout intact, rows aligned at "=".
+- Other changed Kaava lines read in the diff: each starts from the basic equations, derived formula last, symbolic form precedes Sijoitus; numbers, answers, ids unchanged.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5
