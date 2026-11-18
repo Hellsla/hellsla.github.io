@@ -92,4 +92,26 @@ out.update({"fy9-lampo-s6-Ek": round(Ek), "fy9-lampo-s6-a": round(dT6a, 2), "fy9
             "fy9-lampo-s6-t": round(t6, 1), "fy9-lampo-s6-P": round(P6), "fy9-lampo-s6-kept": kept,
             "fy9-lampo-s6-air": round(to_air), "fy9-lampo-s6-c": round(100 * to_air / Q_discs, 1)})
 
+# s7: heating a metal block with a 100 W element (fy3-6/heating-line; values read from the graph): (0 s; 20 °C), (180 s; 60 °C)
+m7, P7 = 0.50, 100.0
+t7a, T7a, t7b, T7b = 0.0, 20.0, 180.0, 60.0
+rate7 = (T7b - T7a) / (t7b - t7a)                   # K/s
+c7 = P7 * (t7b - t7a) / (m7 * (T7b - T7a))          # J/(kg K): Pt = c m dT
+c_al = 896.0                                        # MAFY: aluminium
+t7c = m7 * c7 * (100.0 - 20.0) / P7                 # s to reach 100 °C
+out.update({"fy9-lampo-s7-a": round(rate7, 3), "fy9-lampo-s7-b": round(c7, 1), "fy9-lampo-s7-b-diff": round(100 * (c7 / c_al - 1), 2),
+            "fy9-lampo-s7-c": round(t7c, 1), "fy9-lampo-s7-c-Q": m7 * c7 * 80.0, "fy9-lampo-s7-c-al": round(m7 * c_al * 80.0 / P7, 1)})
+
+# s8: heating 0,60 kg of ice (fy3-7/melting-curve; values read from the graph): (0 kJ; -16 °C), (20 kJ; 0 °C), (220 kJ; 0 °C)
+m8 = 0.60
+Q1_8, Q2_8, dT8 = 20e3, 220e3, 16.0
+c8 = Q1_8 / (m8 * dT8)                              # J/(kg K)
+s8 = (Q2_8 - Q1_8) / m8                             # J/kg
+c_w8 = 4182.0                                       # MAFY: water, J/(kg K)
+Q_w8 = c_w8 * m8 * 20.0
+Q8c = Q2_8 + Q_w8
+m_melt8 = (120e3 - Q1_8) / s8                       # kg melted at 120 kJ
+out.update({"fy9-lampo-s8-a": round(c8, 1), "fy9-lampo-s8-b": round(s8 / 1000, 1), "fy9-lampo-s8-c": round(Q8c / 1000, 1),
+            "fy9-lampo-s8-c-Qw": round(Q_w8 / 1000, 1), "fy9-lampo-s8-d": round(m_melt8, 3), "fy9-lampo-s8-d-wrong": round(120e3 / s8, 3)})
+
 print(json.dumps(out))

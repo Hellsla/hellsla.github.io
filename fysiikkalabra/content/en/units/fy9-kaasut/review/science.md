@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 3faa649403b7a6f4
-Round 2: delta against the version round 1 reviewed (fix round 1).
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: b61fa0a2e8442d35
+SCOPE: delta: en tasks fy9-kaasut-s8 (fy3-10/pt-suorat) and s9 (fy3-11/pv-isobaari) in sovella/tasks.json and solutions.md, and the changed intro (git diff 49ba8f9 HEAD); fidelity to fi; s1-s7 not re-judged. Language: en.
 
 ## Blocking
-- (none)
+(none)
 
 ## Polish
-- (none)
+- s9: heating air to about 1170 K (about 900 °C) is implausible for a school cylinder; a smaller volume ratio or "the gas is idealised" would help. The task is labelled an invented example.
 
 ## Checked
-- s2 c reasonableness: the added sentence is right. Recomputed: 485.1 kW - 174.6 kW - 232.9 kW = 77.6 kW (= 16 % of the fuel power = 25 % of 310.5 kW); the row with rounded powers gives 77 kW. answers.py key `fy9-kaasut-s2-waste` computes the same quantity from unrounded values.
-- s5 "Yleisiä virheitä": "the molar mass comes out at about two thirds of the correct one" is now unambiguous and right (210 : 311 = 0.68; the amount of substance itself becomes 1.5 times too large).
-- s7 c task text: "derive in symbols ... heat transferred to the water per unit time (the heat power) and the volume flowing per second" matches the rubric and the solution (P_2 t = c rho V dT); the task stays solvable with the given data. Recomputed dT = 2.7e9 W : 2.388e8 W/K = 11.3 K.
-- s7 e: "about 21 C" now agrees with 10 C + 11 K and with the reasonableness check of part c (the old 20 C did not).
-- practice.py check OK (7 tasks, 110 points). Hash the same at the start and the end.
+- Recomputed in one script (R = 8.31, 273.15): s8 a n = 1e5*2.0e-3/(8.31*400) = 0.0602 mol (200 K / 50 kPa gives the same); b 60/100 = 0.60, 40 % smaller, n_B = 0.036 mol; c 100*253.15/400 = 63.3 kPa; s9 a 250 kPa*3.0 l = 750 J; b 250/(8.31*293.15) = 0.1026 mol; c T2 = 4*293.15 = 1172.6 K (899 °C). All answers inside tolerances; 1.2e3 K is inside 3 %. Order-of-magnitude checks (0.083 mol in 2 l, 0.042 mol in 1 l of room air) right.
+- Figure source (lessons/FY3/fy3-10, fy3-11 figures.py): A (200 K; 50 kPa), (400 K; 100 kPa), B (200; 30), (400; 60); isobar 250 kPa from 1.0 l to 4.0 l. Readings in the solutions match.
+- Physics: rigid sealed vessel, n and V constant, p proportional to T; comparison at equal T and V; W = p dV at constant pressure as the area; s9 d dU > 0, Q = dU + W, so Q > W, sign convention consistent. Scope FY3. Kelvin conversions explicit.
+- Assessment: criteria sum to part points; criteria ask only what each part asks; alternative methods (slope, V/T constant, Celsius answer) accepted.
+- Fidelity to fi: ids, figures, points, criteria, answer values and tolerances identical; every number in s8/s9 text, criteria and solutions matches fi.
+- Intro: "Nine problems", "one of the problems is source-based", consistent with the set.
+- Hash b61fa0a2e8442d35 (units.py hash --lang en) at start and end.

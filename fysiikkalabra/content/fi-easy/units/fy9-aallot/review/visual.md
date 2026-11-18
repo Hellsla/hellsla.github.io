@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 0b2eec764f9785fd
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 705a4aa32fbad8ff
+SCOPE: delta: s7 (Kaksi kaiutinta pihalla, kuva fy5-12/ruudukko-tehtava), s8 (Seisova aalto narussa, kuva fy5-13/kuvio-tehtava) ja muuttunut johdanto 390 px:llä
 
 ## Blocking
-- (none)
+(none)
 
 ## Polish
-- (none)
+- [Minor] s7 a — VASTAUS-laatikkoon tulee vain $s_1 = 6{,}0\,\text{m}$, $s_2$ ja $\Delta s$ jäävät laatikon ulkopuolelle; aloita vastaus esim. "Matkat ovat $s_1 = ...$".
+- [Minor] s8 kuva — viivaimen asteikon numerot pienet 390 px:llä.
 
 ## Checked
-- Hunk: sovella/solutions.md, Yleisiä virheitä, first item ("taso" → "intensiteetti"). The sentence now names the quantity that is wrongly taken as inversely proportional, and it agrees with the next sentence ($3\,\text{dB}$ per doubling). Grammar and reading level fine.
-- Opened `fy9-aallot-stage-exercises-390-31.png`: the list item wraps cleanly, $3\,\text{dB}$ and $15\,\%$ render in KaTeX, nothing clipped; the model answer above it is intact.
-- Page overflow measured at 390 and 1280 px with every box open: 0 px.
+- Omat 390 px:n elementtikuvat tehtävistä s7 ja s8 (ongelma, kuva, mallivastaukset auki). check_layout.py --width 360: OK.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

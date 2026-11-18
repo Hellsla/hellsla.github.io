@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 77777c714799f4b0
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 689e602ef05c8a50
+SCOPE: delta: s7 (Metallikappaleen lämmitys, kuva fy3-6/heating-line) ja s8 (Jääpalan lämmitys, kuva fy3-7/melting-curve) sekä muuttunut johdanto (kahdeksan tehtävää) 390 px:llä
 
 ## Blocking
-- (none)
+(none)
 
 ## Polish
-- (none)
+- [Minor] s7/s8 kuvat — katalogikuvan akselien lukuarvot ovat pienet 390 px:llä (noin 8 px), mutta luettavissa; ei muutosta pyydetä tässä.
+- [Minor] fy9-lampo (vanhat tehtävät s1–s5) — kaksi tunnettua leikkautuvaa kaavaa (docs/clipped-formulas/FY9.tsv) 360 px:llä; ei tämän deltan muutosta.
 
 ## Checked
-- Hunk: solutions.md, Yleisiä virheitä, d item ("lämmöksi" → "sisäenergiaksi"). It now matches the Mallivastaus of d ("muuttuu … moottorin sisäenergiaksi").
-- Opened `fy9-lampo-stage-exercises-390-44.png` (Periaate and Mallivastaus of d, start of the list) and `-390-45.png` (the changed item, Hyväksytään myös, rubric a): the item wraps on three lines, nothing clipped, the rubric's formulas and the aligned conversion under it intact.
-- Page overflow at 390 and 1280 px, every box open: 0 px.
+- Omat 390 px:n elementtikuvat tehtävistä s7 ja s8 (ongelma, kuva, kaikki mallivastaukset auki; osat a–d): kuva, SIJOITUS-rivit, VASTAUS-laatikot, JÄRKEVYYS luettu. check_layout.py --width 360: OK (2 tunnettua).
+- screenshot.py ei kuvaa Sovella-osiota (yksikkösivun stage-kuvat ovat Esimerkit), siksi omat kuvat.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

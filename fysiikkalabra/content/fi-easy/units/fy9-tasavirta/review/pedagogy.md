@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 10acfbb4c587770a
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (9441c766eb5c2f62); earlier findings kept unless named fixed.
+CONTENT-HASH: 683e4a80b5d04cff
+SCOPE: delta: VASTAUS-rivit s8 b ja c (sovella/solutions.md), uudelleenkirjoitettu alkamaan suureella; muu yksikkö ennallaan edellisestä PASS-arviosta (3b9eee5b55139e4f).
 
 ## Blocking
 (none)
 
 ## Polish
-- C: the aria-label still has double spaces ("tehtävän  tunnusmerkki") although the fix round said they were removed; harmless for a screen reader.
+- s8 c: "kaksi merkitsevää numeroa kuten virta" on hieman pitkä; "kuten virrassa" olisi sujuvampi. Ei estä.
 
 ## Checked
-- Row "paristolla on sisäinen vastus -> johda silmukalla, ΣΔV = 0" and aria-label "napajännite johdetaan kiertämällä piiri, jännitteiden summa on nolla"; consistent with Johda itse.
-- fi-easy 360 px PNG opened: nine rows; the subtitle "piirrä kytkentä ensin, sitten tunnusmerkki" fits on one line.
+- s8 b: "Virrat ovat I_60 = 0,10 A (60 Ω:n vastus) ja I_30 = 0,20 A (30 Ω:n vastus)." Vastaus alkaa kysytyllä suureella (virrat), arvot ja yksiköt ovat oikein, ja sulkeissa oleva vastus selittää kumpi on kumpi. Lyhyt, selkeä lause, sopii selkokieleen.
+- s8 c: "Tehot ovat P_20 = 1,8 W (20 Ω:n vastus) ja P = 3,6 W (koko kytkentä)." Vastaa kysyttyyn (vastuksen teho ja kokonaisteho); arvot täsmäävät laskuun ja Järkevyys-tarkistukseen (0,60 + 1,2 + 1,8 = 3,6 W).
+- Muutos korjaa myös aiemman visuaalisen arvion löydön (laatikko alkoi kaavalla "60 Ω:n").
+- Muu diff koskee vain review/visual.md-tiedostoa; sisältöä ei muutettu muualla.

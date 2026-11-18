@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3faa649403b7a6f4
-Round 2: delta against the version round 1 reviewed (fix round 1).
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: b61fa0a2e8442d35
+SCOPE: delta: tasks s7 (nuclear plant energy flow, source-based) and s8 (two sealed vessels, p-T graph) with solutions, and the intro; other tasks not re-judged
 
 ## Blocking
-- (none)
+None.
 
 ## Polish
-- A (round 1, still open, optional): s7 d and s2 c share an idea, and s7 shares the plant with fy9-moderni-s6; a cross-reference would help.
+- In the English solutions.md the fixed section headings "Yleisiä virheitä" and "Hyväksytään myös" are Finnish; if the build shows them to students, translate them (the parser may key on them, so check first).
 
 ## Checked
-- solutions.md s2 c Reasonableness: the added sentence explains why the row shows $77\,\text{kW}$ while the unrounded powers give $485.1 - 174.6 - 232.9 = 77.6\,\text{kW}$. Correct and readable. answers.py carries the value.
-- solutions.md s5 Yleisiä virheitä: "the molar mass comes out at about two thirds of the correct one" (my round-1 Polish A) is now unambiguous; $210 : 311 \approx 0.68$.
-- solutions.md s7 e: $10\,{}^\circ\text{C} + 11.3\,\text{K} \approx 21\,{}^\circ\text{C}$, now consistent with the assumed sea temperature and part c.
-- tasks.json s7 c part text: no longer names $Q = cm\Delta T$, so the student chooses the model (the rule for these tasks). "the heat transferred to the water per unit time (the heat power)" matches the term the solution uses ($P_2$, "heat power transferred to the seawater") and the criterion $P_2 t = c\rho V\Delta T$. The three questions of the part are still in a clear order; the answer and the criteria are unchanged.
-- Hash identical at start and end.
+s7 uses an authentic Finnish source with the needed rows named in English glosses; five connected parts rise from reading and efficiency to symbolic derivation and evaluation. s8 needs the graph (slopes of two lines) and a justified comparison. Neither task text names the model. Parts, points (15, 11), figures and answers match fi. Solutions complete for a-e and a-c with common mistakes and accepted alternatives.

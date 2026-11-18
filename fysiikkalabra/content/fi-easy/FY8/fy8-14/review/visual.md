@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 767448765f642c7e
+CONTENT-HASH: daa56138c2ecfed8
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] inquiry.json Ennuste 2, correct-option feedback — "Suurillakin $N$:n arvoilla ... (kun $N$ oli $10$ ja $20$, vain $10\,\%$ ja $5\,\%$)" contradicts itself, and $N$ is not named for an S2 reader (the text says "koinsidensseja"). Fix: "Kun koinsidenssien määrä $N$ kasvaa, osuus lähestyy noin neljäsosaa. Kun $N$ oli $10$ tai $20$, osuus oli vain $10\,\%$ tai $5\,\%$."
+- none
 
 ## Checked
-- Delta: Ennuste 2 feedbacks, röntgen/TT sentences (kymmeniä kertoja suurempi), dose table row, source link, sterilisation text. Opened the shared-layout captures of the Finnish page (open-ennusta-1280-1, theory-1280-3); fi-easy changes read from source, numbers and units are LaTeX.
+- Delta (inquiry.json Kertaa: puoliintumispaksuus prompt now situation-first; lesson.md paragraph cuts). Opened fy8-14-stage-herata-390 (Pohdinta, task closed behind the optional row) and fy8-14-stage-tarkista-390-1 (layout of Testaa ja arvioi survived). Prompt is two sentences, situation then question; Finnish natural, glossary terms unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

@@ -1,13 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 0b2eec764f9785fd
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 705a4aa32fbad8ff
+SCOPE: delta: s7 (kaksi kaiutinta, matkaero ruudukossa, interferenssi) ja s8 (seisova aalto narussa, kuvasta aallonpituus); tehtävien tekstit, osatehtävät, pisteytys, mallivastaukset ja uskollisuus fi-versiolle; unit.md ei ole muuttunut tästä versiosta.
 
 ## Blocking
-- (none)
+
+(none)
 
 ## Polish
-- (none)
+
+- Polish: s7a:n Annettu- ja Kaava-rivit ovat pitkiä (27-28 sanaa); lyhennä helpompaan suomeen.
 
 ## Checked
-- sovella/solutions.md, common mistakes: "intensiteetti" replaces "taso"; recomputed: I proportional to 1/r gives 10 lg 2 = 3 dB per doubling, so the corrected sentence is right and reads clearly.
-- No s7 task was added to this unit in fi-easy (tasks.json unchanged); nothing to review for item 19.
+
+- Uudet tehtävät vaativat itsenäistä soveltamista: tuntematon mutta uskottava tilanne, aineisto (kuvaaja tai kuva) luetaan itse, osat nousevat vaativammiksi (lukeminen, laskenta, perustelu tai ennuste).
+- Tehtävän otsikko tai teksti ei paljasta ratkaisumallia tai kaavaa; vihjeet eivät kerro vastausta.
+- Pisteytys on tarkka eikä anna pisteitä epäolennaisesta; sanalliset osat ovat havaittavia kriteereitä.
+- Mallivastaukset ovat täydelliset (annettu, kysytty, periaate, kaava, sijoitus, vastaus, järkevyys), yleiset virheet ja hyväksytyt vaihtoehdot mukana; laskin tarkistettu (vastaukset täsmäävät).
+- Vastaukset, pisteet ja kuva-viitteet ovat samat kuin fi-versiossa.
+- Lukutaso: lyhyet virkkeet, tuttu sanasto; muutama pitkä virke mallivastauksissa (Polish).
+- Hash alussa ja lopussa sama.

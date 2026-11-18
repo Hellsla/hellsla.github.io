@@ -24,7 +24,7 @@
       "type": "choice",
       "title": "Kertaa: elektroni kaksoisraossa",
       "optional": true,
-      "prompt": "Kaksoisrakokokeessa elektroneja lähetetään yksi kerrallaan, ja varjostin kirjaa jokaisen osuman. Mitä havaitaan, kun osumia on kertynyt tuhansia?",
+      "prompt": "Kemian kirjan elektronipilvikuvien taustalla on ajatus, että elektroni käyttäytyy kuin aalto. Tämä näkyy kaksoisrakokokeessa: elektroneja lähetetään yksi kerrallaan, ja varjostin kirjaa jokaisen osuman. Mitä havaitaan, kun osumia on kertynyt tuhansia?",
       "choices": [
         {
           "text": "Jokainen elektroni osuu yhteen kohtaan, mutta monesta osumasta muodostuu raidallinen interferenssikuvio.",

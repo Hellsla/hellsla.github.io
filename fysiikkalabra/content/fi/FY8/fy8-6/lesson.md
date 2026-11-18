@@ -412,7 +412,9 @@ Ryhmä mittasi viiden eri värisen LEDin kynnysjännitteet ja sovitti pisteisiin
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Sovitetun suoran pisteet $(f_1, U_1) = (4{,}50 \cdot 10^{14}\,\text{Hz};\ 1{,}74\,\text{V})$ ja $(f_2, U_2) = (7{,}50 \cdot 10^{14}\,\text{Hz};\ 2{,}96\,\text{V})$ sekä alkeisvaraus $e = 1{,}602 \cdot 10^{-19}\,\text{C}$. Kysytään Planckin vakiota $h$.
+**Tunnetut ja kysytty.** Sovitetun suoran pisteet $(f_1, U_1) = (4{,}50 \cdot 10^{14}\,\text{Hz};\ 1{,}74\,\text{V})$ ja $(f_2, U_2) = (7{,}50 \cdot 10^{14}\,\text{Hz};\ 2{,}96\,\text{V})$ sekä alkeisvaraus $e = 1{,}602 \cdot 10^{-19}\,\text{C}$.
+
+Kysytään Planckin vakiota $h$.
 
 <!-- vaihe -->
 

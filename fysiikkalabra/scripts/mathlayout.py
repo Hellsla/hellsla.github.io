@@ -255,6 +255,37 @@ def display_chains(text):
     return re.sub(r"\n{3,}", "\n\n", s).strip()
 
 
+LIST_ITEM = re.compile(r"^(?:\d{1,3}\.|[-*+]) ")
+
+
+def list_chains(text):
+    """display_chains for the list items of a guide or an investigation (work queue 4 batch 1: a calculation inside a
+    numbered step, tvt-epavarmuus step 2, ran off a 390 px phone as one inline formula that cannot wrap). Each top-level
+    list item that holds a long chain gets the rows of a calculation (chain_html) inside the item, the text around them
+    indented to stay in the item; an item with no long chain, and everything outside a list, is untouched."""
+    out, item, fence = [], [], False
+    def flush():
+        if not item: return
+        block = "\n".join(item)
+        m = LIST_ITEM.match(block)
+        if m and "\n\n" not in block.rstrip("\n"):          # a one-paragraph item: the common case
+            body = block[m.end():]
+            new = display_chains(body)
+            if new != body.strip():
+                paras = new.split("\n\n")
+                block = block[:m.end()] + paras[0] + "".join("\n\n    " + q for q in paras[1:]) + "\n"
+        out.append(block); item.clear()
+    for line in text.split("\n"):
+        if line.lstrip().startswith("```"): fence = not fence
+        if fence or line.lstrip().startswith("```"): flush(); out.append(line); continue
+        if LIST_ITEM.match(line): flush()
+        elif not line.strip() or not line.startswith((" ", "\t")) and not item: flush(); out.append(line); continue
+        elif not item: out.append(line); continue
+        item.append(line)
+    flush()
+    return "\n".join(out)
+
+
 STEP_RE = re.compile(r"^\*\*([^*\n]+?)([:.])\*\*\s*", re.M)
 
 

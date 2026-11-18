@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 336593f28b1d9da8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: ca526143ca8f4ef0
 
 ## Blocking
 - none
@@ -9,4 +8,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correct
 - none
 
 ## Checked
-- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).
+- batch delta review: retrieval moved to the chapter's own UV-C 254 nm / red 650 nm lamps (as in the hero and ilmio figures); recomputed c/254 nm = 1.18e15 Hz (shown 1.2e15), c/650 nm = 4.61e14 Hz, matching lesson-answers.py; one correct option, distractor feedback right; other changes presentation/approved formula names; hash same at start and end.

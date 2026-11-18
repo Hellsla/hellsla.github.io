@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 3faa649403b7a6f4
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: b61fa0a2e8442d35
+SCOPE: delta: new Sovella tasks s7 and s8 (figures from the catalog, aligned calculation rows, LaTeX units, English decimal points) judged at 390 px, check_layout at 360 px; other tasks not re-judged
 
 ## Blocking
-- (none)
+- none
 
 ## Polish
-- C `sovella/tasks.json` s7 b: "How large a heat power is transferred from the plant to the environment" is correct but heavy; "At what rate is heat transferred from the plant to the environment" reads more naturally (the solution may keep "heat power").
-- C `sovella/solutions.md` s7 b, Reasonableness: three short display boxes interrupt one sentence ("is … and the sum … is the same as"); it reads, but two sentences would be easier to follow on a phone.
-- A for science: s3 common mistake "the molar mass comes out at about two thirds of the correct one" was judged for wording only, not recomputed.
+- [Minor] solutions.md s8 — new text writes the gas constant as `8.31\,\text{J/(mol K)}` while the same file also uses `\tfrac{\text{J}}{\text{mol}\cdot\text{K}}` and the project writes unit products with `\cdot` — use `\text{J/(mol}\cdot\text{K)}` throughout.
+- [Minor] s8 b) Formula block — the symbolic chain `n_B/n_A = ... = p_B/p_A` and the next row `(n_A−n_B)/n_A = 1 − n_B/n_A` are set in one box with different left edges; give the second its own line starting with the quantity.
 
 ## Checked
-- Hash at start and end: 3faa649403b7a6f4 (captures current for this hash).
-- Diff hunks read: s2 row $\approx 77\,\text{kW}$ with the added sentence about unrounded values, the s3 common-mistake sentence, the intro. The s2 and s3 lines were judged from source, their captures not opened.
-- ADDED TASK s7 at 390 px: contact-7 and contact-8 (#78–#92) and `stage-exercises-390-54`, `-58`, `-59`: title, source link, the Finnish row names with glosses, assumptions list with stacked units, parts a–e, all solutions, common mistakes, also accepted, rubric. The long denominator row breaks at "$\cdot\,57\,\tfrac{\text{m}^3}{\text{s}}$" inside the card; `=` aligned; nothing clipped.
-- s7 at 1280 px: contact-14 (#162–#168) and `stage-exercises-1280-44`: the denominator on one row, answer box and reasonableness block intact.
-- Quoted source values ("n. $1600\,\text{MW}$", "n. $13\,\text{TWh}$") render inside the quotation marks; every number with a unit is LaTeX; decimal point throughout.
+- Unit page captures made (screenshot.py fy9-kaasut --lang en); packet read; page opened at 390 px with every box open, tasks s7 and s8 captured as element screenshots (statement, figure, parts, model answer, substitution, answer, reasonableness).
+- check_layout.py fy9-kaasut --width 360: OK for en (known clipped formulas are old rows, none in s7/s8).
+- s7 (nuclear power plant source task, text-only, link to TVO page, assumptions list) and s8 (two vessels, p–T graph with two lines A and B, parts a–c): graph axes and units, distinct colours with line labels, readable rows, formula/substitution/answer order.
 
 ## Scores
-illustrations 4 · typography 4 · language 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish (English prose) 4 · accessibility 5

@@ -69,7 +69,9 @@ $$, joten $E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{254 \cdot 10^
 ## fy8-1-L1-06
 **Kysytty:** mitä tapahtuu irtoavien elektronien määrälle ja suurimmalle liike-energialle, kun valon taajuus pysyy samana ja intensiteetti kaksinkertaistuu
 **Periaate:** Valo antaa energiansa fotoneina, ja yksi elektroni ottaa vastaan yhden fotonin. Fotonin energia on $E = hf$. Suurin liike-energia on $E_\text{k,max} = hf - W$. Se riippuu siis vain taajuudesta ja irrotustyöstä. Intensiteetti kertoo, kuinka monta fotonia osuu pintaan sekunnissa.
-**Mallivastaus:** Kun intensiteetti kaksinkertaistuu, pintaan osuu kaksi kertaa niin monta fotonia sekunnissa. Jokainen riittävän energinen fotoni voi irrottaa yhden elektronin. Elektroneja irtoaa siis enemmän. Fotonin energia $hf$ ei kuitenkaan muutu, koska taajuus on sama. Siksi suurin liike-energia $E_\text{k,max} = hf - W$ pysyy samana. Elektroni ei voi koota energiaa useammasta fotonista. Suurempi fotonien määrä ei siis tee yksittäisestä elektronista nopeampaa. Nopeampia elektroneja saisi vain suuremmalla taajuudella eli lyhyemmällä aallonpituudella.
+**Mallivastaus:** Kun intensiteetti kaksinkertaistuu, pintaan osuu kaksi kertaa niin monta fotonia sekunnissa. Jokainen riittävän energinen fotoni voi irrottaa yhden elektronin. Elektroneja irtoaa siis enemmän. Fotonin energia $hf$ ei kuitenkaan muutu, koska taajuus on sama. Siksi suurin liike-energia $E_\text{k,max} = hf - W$ pysyy samana. Elektroni ei voi koota energiaa useammasta fotonista. Suurempi fotonien määrä ei siis tee yksittäisestä elektronista nopeampaa.
+
+Nopeampia elektroneja saisi vain suuremmalla taajuudella eli lyhyemmällä aallonpituudella.
 
 ## fy8-1-L1-07
 **Annettu:** kaliumin irrotustyö $W = 2{,}30\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$, punaisen valon aallonpituus $650\,\text{nm}$
@@ -92,7 +94,9 @@ $$. Se on pienempi kuin $2{,}30\,\text{eV}$. Raja-aallonpituus on lähellä natr
 ## fy8-1-L1-08
 **Kysytty:** miksi himmeä ultraviolettivalo irrottaa elektroneja heti mutta kirkas punainen valo ei lainkaan
 **Periaate:** Valo antaa energiansa fotoneina, ja yksi elektroni ottaa vastaan yhden fotonin kokonaan. Elektroni irtoaa, jos fotonin energia $hf$ on vähintään irrotustyön $W$ suuruinen. Valon kirkkaus kertoo vain, kuinka monta fotonia tulee. Se ei kerro, kuinka paljon energiaa yksi fotoni kantaa.
-**Mallivastaus:** Ultraviolettifotonin energia $3{,}40\,\text{eV}$ on suurempi kuin natriumin irrotustyö $2{,}28\,\text{eV}$. Jo yksi fotoni riittää siis irrottamaan elektronin. Siksi elektroneja irtoaa heti, vaikka valo olisi himmeää ja fotoneja tulisi vähän. Punaisen valon fotonin energia $1{,}91\,\text{eV}$ on pienempi kuin irrotustyö. Yksikään fotoni ei siis riitä irrottamaan elektronia. Elektroni ei voi koota energiaa usean fotonin yhteisvaikutuksesta eikä odottamalla. Kirkkaampi punainen valo tuo vain lisää fotoneja, joiden energia on liian pieni. Se ei irrota yhtään elektronia.
+**Mallivastaus:** Ultraviolettifotonin energia $3{,}40\,\text{eV}$ on suurempi kuin natriumin irrotustyö $2{,}28\,\text{eV}$. Jo yksi fotoni riittää siis irrottamaan elektronin. Siksi elektroneja irtoaa heti, vaikka valo olisi himmeää ja fotoneja tulisi vähän. Punaisen valon fotonin energia $1{,}91\,\text{eV}$ on pienempi kuin irrotustyö. Yksikään fotoni ei siis riitä irrottamaan elektronia. Elektroni ei voi koota energiaa usean fotonin yhteisvaikutuksesta eikä odottamalla.
+
+Kirkkaampi punainen valo tuo vain lisää fotoneja, joiden energia on liian pieni. Se ei irrota yhtään elektronia.
 
 ## fy8-1-L1-09
 **Kysytty:** mitkä viidestä väitteestä lamppujen A ja B irrottamista elektroneista ovat tosia.
@@ -325,7 +329,9 @@ $$, ja niin se on. Rajataajuus on pienempi kuin kumpikin mittaustaajuus, kuten p
 **Kaava:** $W = \dfrac{hc}{\lambda} - eU_\text{s}$; $N_\text{f} = \dfrac{P\lambda}{hc}$, $N_\text{e} = \dfrac{I}{e}$ ja $\eta = \dfrac{N_\text{e}}{N_\text{f}}$
 **Muunnokset:** $\lambda = 400\,\text{nm} = 400 \cdot 10^{-9}\,\text{m}$, $P_1 = 1{,}0 \cdot 10^{-3}\,\text{W}$, $I_1 = 0{,}30\,\mu\text{A} = 0{,}30 \cdot 10^{-6}\,\text{A}$. Energia yksiköstä $\text{J}$ yksikköön $\text{eV}$ jakamalla luvulla $1{,}602 \cdot 10^{-19}$.
 **Sijoitus:** a) $U_\text{s} = 0{,}80\,\text{V}$ ja fotonin energia on $\tfrac{hc}{\lambda} = \tfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{400 \cdot 10^{-9}\,\text{m}} = 4{,}966 \cdot 10^{-19}\,\text{J} = 3{,}100\,\text{eV}$, joten $W = 3{,}100\,\text{eV} - 0{,}80\,\text{eV} = 2{,}30\,\text{eV}$. b) $N_\text{f} = \dfrac{1{,}0 \cdot 10^{-3}\,\text{W}}{4{,}966 \cdot 10^{-19}\,\text{J}} = 2{,}014 \cdot 10^{15}\,\tfrac{1}{\text{s}}$ ja $N_\text{e} = \dfrac{0{,}30 \cdot 10^{-6}\,\text{A}}{1{,}602 \cdot 10^{-19}\,\text{C}} = 1{,}873 \cdot 10^{12}\,\tfrac{1}{\text{s}}$, joten $\eta = \dfrac{1{,}873 \cdot 10^{12}}{2{,}014 \cdot 10^{15}} = 9{,}30 \cdot 10^{-4} = 0{,}0930\,\%$. c) Teholla $P_2$: $N_\text{f} = 4{,}027 \cdot 10^{15}\,\tfrac{1}{\text{s}}$ ja $N_\text{e} = 3{,}745 \cdot 10^{12}\,\tfrac{1}{\text{s}}$, joten $\eta = 0{,}0930\,\%$ myös nyt.
-**Vastaus:** $\eta = 0{,}093\,\%$. Vastauksessa on kaksi merkitsevää numeroa, koska tehossa $1{,}0\,\text{mW}$ ja virrassa $0{,}30\,\mu\text{A}$ on kaksi. Noin yksi fotoni tuhannesta irrottaa elektronin. Lisäksi $U_\text{s} = 0{,}80\,\text{V}$ ja $W = 2{,}30\,\text{eV}$. Estojännite ei muutu, koska yksi elektroni ottaa vastaan yhden fotonin. Sen suurin liike-energia $hf - W$ riippuu vain taajuudesta ja irrotustyöstä. Kaksinkertainen teho tuo kaksi kertaa niin monta fotonia, mutta yhden fotonin energia ei muutu. Irtoavien elektronien määrä ja kyllästysvirta kaksinkertaistuvat. Nopeimpien elektronien liike-energia ei muutu.
+**Vastaus:** $\eta = 0{,}093\,\%$. Vastauksessa on kaksi merkitsevää numeroa, koska tehossa $1{,}0\,\text{mW}$ ja virrassa $0{,}30\,\mu\text{A}$ on kaksi. Noin yksi fotoni tuhannesta irrottaa elektronin. Lisäksi $U_\text{s} = 0{,}80\,\text{V}$ ja $W = 2{,}30\,\text{eV}$. Estojännite ei muutu, koska yksi elektroni ottaa vastaan yhden fotonin. Sen suurin liike-energia $hf - W$ riippuu vain taajuudesta ja irrotustyöstä.
+
+Kaksinkertainen teho tuo kaksi kertaa niin monta fotonia, mutta yhden fotonin energia ei muutu. Irtoavien elektronien määrä ja kyllästysvirta kaksinkertaistuvat. Nopeimpien elektronien liike-energia ei muutu.
 **Järkevyys:** Virtojen suhde $\tfrac{0{,}60\,\mu\text{A}}{0{,}30\,\mu\text{A}} = 2$ on sama kuin tehojen suhde $\tfrac{2{,}0\,\text{mW}}{1{,}0\,\text{mW}} = 2$. Kvanttisaanto on siis sama kummallakin teholla. Elektroneja irtoaa paljon vähemmän kuin fotoneja tulee ($1{,}9 \cdot 10^{12}$ ja $2{,}0 \cdot 10^{15}$ sekunnissa). Se sopii siihen, että useimmat fotonit eivät irrota elektronia, ja $\eta$ on alle $100\,\%$. Irrotustyö $2{,}30\,\text{eV}$ on lähellä natriumin ja kaliumin arvoja.
 
 ## fy8-1-L3-05
@@ -349,7 +355,9 @@ I_\text{C} &= \dfrac{1{,}0 \cdot 10^{-3}\,\text{W}}{5{,}443 \cdot 10^{-19}\,\tex
 &= 2{,}94 \cdot 10^{-7}\,\text{A}
 \end{aligned}
 $$, joten $I = 1{,}516\,\mu\text{A} + 0 + 0{,}294\,\mu\text{A} = 1{,}810\,\mu\text{A}$. c) $U_\text{s} = \dfrac{3{,}397\,\text{eV} - 2{,}30\,\text{eV}}{e} = 1{,}10\,\text{V}$
-**Vastaus:** $I = 1{,}8\,\mu\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, koska tehoissa ja osuudessa $0{,}10\,\%$ on kaksi. Elektroneja irrottavat lähteet A ja C. Estojännite on $1{,}10\,\text{V}$. Punaisen lähteen B fotonin energia $2{,}00\,\text{eV}$ on pienempi kuin irrotustyö. Yksikään sen fotoni ei siis irrota elektronia, vaikka teho on suurin ja fotoneja tulee eniten. Teho kertoo vain fotonien määrän. Virta syntyy vain fotoneista, joiden energia riittää. Estojännite taas riippuu suurimmasta fotonin energiasta eli ultraviolettilähteestä C.
+**Vastaus:** $I = 1{,}8\,\mu\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, koska tehoissa ja osuudessa $0{,}10\,\%$ on kaksi. Elektroneja irrottavat lähteet A ja C. Estojännite on $1{,}10\,\text{V}$. Punaisen lähteen B fotonin energia $2{,}00\,\text{eV}$ on pienempi kuin irrotustyö. Yksikään sen fotoni ei siis irrota elektronia, vaikka teho on suurin ja fotoneja tulee eniten. Teho kertoo vain fotonien määrän.
+
+Virta syntyy vain fotoneista, joiden energia riittää. Estojännite taas riippuu suurimmasta fotonin energiasta eli ultraviolettilähteestä C.
 **Järkevyys:** Elektroneja irtoaa yhteensä $\tfrac{1{,}810 \cdot 10^{-6}\,\text{A}}{1{,}602 \cdot 10^{-19}\,\text{C}} = 1{,}13 \cdot 10^{13}$ sekunnissa. Se on $0{,}10\,\%$ lähteiden A ja C fotonien määrästä $$
 \begin{aligned}
 &9{,}46 \cdot 10^{15} + 1{,}84 \cdot 10^{15} \\
@@ -427,7 +435,9 @@ hf_0 &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 5{,}562 \cdot 10^{14}\,
 \end{aligned}$$
 
 **Mallivastaus c):** Kun intensiteettia kasvatetaan ja aallonpituus pysyy samana, virta kasvaa. Fotoneja tulee enemmän, ja useampi elektroni irtoaa. Elektronien suurin liike-energia ei muutu: estojännite pysyy samana. Kun aallonpituutta lyhennetään eli taajuutta kasvatetaan, fotonin energia $hf$ kasvaa. Silloin myös suurin liike-energia $E_\text{k,max} = hf - W$ kasvaa. Intensiteetti ei ole yhtälössä lainkaan.
-**Mallivastaus d):** Klassisen aaltomallin mukaan valon energia tulisi pinnalle tasaisesti. Kirkkaampi valo antaisi elektroneille enemmän energiaa. Silloin riittävän kirkas valo irrottaisi elektroneja millä tahansa aallonpituudella. Intensiteetin kasvattaminen kasvattaisi myös liike-energiaa. Havainnot ovat toiset: pitkäaaltoinen valo ei irrota elektroneja millään intensiteetillä. Intensiteetti muuttaa vain virtaa, ei suurinta liike-energiaa. Fotonimallissa energia tulee $hf$:n kokoisina annoksina, ja yksi annos menee yhdelle elektronille. Tästä seuraavat raja $hf \geq W$ ja liike-energian riippuvuus taajuudesta.
+**Mallivastaus d):** Klassisen aaltomallin mukaan valon energia tulisi pinnalle tasaisesti. Kirkkaampi valo antaisi elektroneille enemmän energiaa. Silloin riittävän kirkas valo irrottaisi elektroneja millä tahansa aallonpituudella. Intensiteetin kasvattaminen kasvattaisi myös liike-energiaa. Havainnot ovat toiset: pitkäaaltoinen valo ei irrota elektroneja millään intensiteetillä. Intensiteetti muuttaa vain virtaa, ei suurinta liike-energiaa.
+
+Fotonimallissa energia tulee $hf$:n kokoisina annoksina, ja yksi annos menee yhdelle elektronille. Tästä seuraavat raja $hf \geq W$ ja liike-energian riippuvuus taajuudesta.
 **Vastaus:** $hf_0 \approx 2{,}3\,\text{eV}$. Vastauksessa on kaksi merkitsevää numeroa, koska aallonpituus luetaan liukusäätimestä noin $\pm 10\,\text{nm}$ tarkkuudella. Lukemat $530\,\text{nm}$–$550\,\text{nm}$ antavat $2{,}25\,\text{eV}$–$2{,}34\,\text{eV}$.
 **Järkevyys:** Pikalasku antaa $$\begin{aligned}
 1240\,\text{eV}\,\text{nm} : 539\,\text{nm} &\approx 2{,}3\,\text{eV}

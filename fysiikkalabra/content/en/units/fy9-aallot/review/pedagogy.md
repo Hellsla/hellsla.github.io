@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 54d3c9decc5534cb
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 2ab8e54bc5beb6bd
+SCOPE: delta: tasks s7 (two loudspeakers in a yard, grid figure) and s8 (standing wave on a string, figure) with solutions, and the intro; other tasks not re-judged
 
 ## Blocking
-- (none)
+None.
 
 ## Polish
-- (none)
+- In the English solutions.md the fixed section headings "Yleisiä virheitä" and "Hyväksytään myös" are Finnish; if the build shows them to students, translate them (the parser may key on them, so check first).
 
 ## Checked
-- solutions.md s-task common mistake, part a: "intensity ... inversely proportional to the distance" now matches its consequence (halving of intensity per doubling = 3 dB; the correct 1/r^2 gives 6 dB). Read parts b and c around it for consistency.
-- No added task (s7) in this unit's en diff (git diff --stat against origin/main confirms one line changed).
+Both tasks need the figure to answer, have rising demand (path difference, then lowest frequency; wavelength, speed, three loops, 20 Hz not a resonance) and do not name the interference or standing-wave condition. Parts, points (12, 13), figures and answers match fi. Solutions complete a-d with common mistakes and accepted alternatives.

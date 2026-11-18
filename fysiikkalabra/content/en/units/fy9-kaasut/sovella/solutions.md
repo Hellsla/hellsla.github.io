@@ -597,3 +597,139 @@ There is a lot of heat, but it is at a low temperature. The cooling water is onl
 - In part b the energy may be given in megawatt-hours, gigawatt-hours or joules.
 - In part c one second may be considered: $57\,\text{m}^3$ of water, that is $57\,000\,\text{kg}$, receives the heat $2.7 \cdot 10^{9}\,\text{J}$, and $\Delta T = \dfrac{Q}{cm} \approx 11\,\text{K}$.
 - In part c the warming may be given in kelvins or in degrees Celsius, because the temperature change is the same number in both.
+
+## fy9-kaasut-s8
+
+### a)
+**Given:** measurement points of gas A $(200\,\text{K};\ 50\,\text{kPa})$ and $(400\,\text{K};\ 100\,\text{kPa})$, volume of the vessel $V = 2.0\,\textsf{l}$, ideal gas; $R = 8.31\,\text{J/(mol K)}$
+**Find:** the amount of substance $n_\text{A}$ of gas A
+**Principle:** The state of an ideal gas obeys the ideal gas law $pV = nRT$ (chapter *The ideal gas law*). The vessel is sealed and rigid, so the amount of substance $n$ and the volume $V$ stay constant. Therefore every point of the graph gives the same amount of substance.
+**Reading the graph:** Two points far apart are read from the line of gas A: $(200\,\text{K};\ 50\,\text{kPa})$ and $(400\,\text{K};\ 100\,\text{kPa})$. The second point is used in the calculation and the first as a check.
+**Formula:** $pV = nRT$, so $n = \dfrac{pV}{RT}$
+**Conversions:** $V = 2.0\,\textsf{l} = 2.0 \cdot 10^{-3}\,\text{m}^3$ and $p = 100\,\text{kPa} = 100\,000\,\text{Pa}$. The temperature is already in kelvins.
+**Substitution:** $$
+\begin{aligned}
+n_\text{A} &= \dfrac{pV}{RT} \\
+&= \dfrac{100\,000\,\text{Pa} \cdot 2.0 \cdot 10^{-3}\,\text{m}^3}{8.31\,\text{J/(mol K)} \cdot 400\,\text{K}} \\
+&= \dfrac{200\,\text{J}}{3324\,\text{J/mol}} \\
+&= 0.0602\,\text{mol}
+\end{aligned}
+$$
+**Answer:** $n_\text{A} \approx 0.060\,\text{mol}$, two significant figures like the volume and the values read from the graph.
+**Reasonableness:** The first point gives the same result: $\dfrac{50\,000\,\text{Pa} \cdot 2.0 \cdot 10^{-3}\,\text{m}^3}{8.31\,\text{J/(mol K)} \cdot 200\,\text{K}} = 0.0602\,\text{mol}$. The unit is right, since $\text{Pa} \cdot \text{m}^3 = \text{J}$. Order of magnitude: $2.0\,\textsf{l}$ of air at room temperature and atmospheric pressure is about $0.08\,\text{mol}$, so a small amount of gas fits.
+
+### b)
+**Given:** identical vessels, $V = 2.0\,\textsf{l}$; at the same temperature $T = 400\,\text{K}$ the pressure of gas A is $100\,\text{kPa}$ and that of gas B $60\,\text{kPa}$ (from the graph)
+**Find:** by what percentage $n_\text{B}$ is smaller than $n_\text{A}$
+**Principle:** From the ideal gas law $n = \dfrac{pV}{RT}$ (chapter *The ideal gas law*). When the volume and the temperature are the same, the amount of substance is directly proportional to the pressure. So the comparison must be made at the same temperature.
+**Reading the graph:** At $400\,\text{K}$ the pressure of gas A is $100\,\text{kPa}$ and that of gas B $60\,\text{kPa}$.
+**Formula:** $\dfrac{n_\text{B}}{n_\text{A}} = \dfrac{p_\text{B}V/(RT)}{p_\text{A}V/(RT)} = \dfrac{p_\text{B}}{p_\text{A}}$ and $\dfrac{n_\text{A} - n_\text{B}}{n_\text{A}} = 1 - \dfrac{n_\text{B}}{n_\text{A}}$
+**Conversions:** None needed: the pressures are in the same unit, and the ratio has no unit.
+**Substitution:** $$
+\begin{aligned}
+\dfrac{n_\text{B}}{n_\text{A}} &= \dfrac{60\,\text{kPa}}{100\,\text{kPa}} \\
+&= 0.60
+\end{aligned}
+$$ and $1 - 0.60 = 0.40$. The amount of substance is $n_\text{B} = 0.60 \cdot 0.0602\,\text{mol} = 0.0361\,\text{mol}$.
+**Answer:** The amount of substance of gas B is $40\,\%$ smaller than that of gas A, $n_\text{B} \approx 0.036\,\text{mol}$. With the same volume and temperature, a lower pressure means fewer particles in the vessel.
+**Reasonableness:** At the other temperature the ratio is the same: $\dfrac{30\,\text{kPa}}{50\,\text{kPa}} = 0.60$ at $200\,\text{K}$. The ratio does not depend on the temperature, because both pressures grow in the same proportion. The line of gas B is below the line of gas A in the graph, which fits a smaller amount of substance.
+
+### c)
+**Given:** the point of gas A $(400\,\text{K};\ 100\,\text{kPa})$, the new temperature $\theta_2 = -20\,{}^\circ\text{C}$; the volume and the amount of substance do not change
+**Find:** the pressure $p_2$ of gas A at $-20\,{}^\circ\text{C}$
+**Principle:** The vessel is sealed and rigid, so $n$ and $V$ are constant. By the ideal gas law the pressure is directly proportional to the kelvin temperature, $\dfrac{p}{T} = \dfrac{nR}{V}$ = constant (chapter *Changes of state of a gas and Boyle's law*). The temperature must be in kelvins.
+**Formula:** $\dfrac{p_2}{T_2} = \dfrac{p_1}{T_1}$, so $p_2 = p_1 \dfrac{T_2}{T_1}$
+**Conversions:** $T_2 = (-20 + 273.15)\,\text{K} = 253.15\,\text{K}$
+**Substitution:** $$
+\begin{aligned}
+p_2 &= 100\,\text{kPa} \cdot \dfrac{253.15\,\text{K}}{400\,\text{K}} \\
+&= 63.3\,\text{kPa}
+\end{aligned}
+$$
+**Answer:** $p_2 \approx 63\,\text{kPa}$, two significant figures like the values read from the graph.
+**Reasonableness:** The temperature $253\,\text{K}$ is between the graph points $200\,\text{K}$ and $400\,\text{K}$, so the pressure must be between $50\,\text{kPa}$ and $100\,\text{kPa}$. Check with the ideal gas law: $$
+\begin{aligned}
+n_\text{A}RT_2 &= 0.0602\,\text{mol} \\
+&\cdot 8.31\,\text{J/(mol K)} \\
+&\cdot 253.15\,\text{K} \\
+&= 126.6\,\text{J} \\
+p_2 &= \dfrac{n_\text{A}RT_2}{V} \\
+&= \dfrac{126.6\,\text{J}}{2.0 \cdot 10^{-3}\,\text{m}^3} \\
+&= 63\,\text{kPa}
+\end{aligned}
+$$
+
+### Yleisiä virheitä
+- In part a the volume is not converted to cubic metres ($2.0\,\textsf{l}$ is substituted as the number $2.0$) or the pressure is not converted to pascals, which gives the wrong power of ten.
+- In part b the pressures are compared at different temperatures, for example gas A at $400\,\text{K}$ with gas B at $200\,\text{K}$.
+- In part b the answer is $60\,\%$, which is the ratio $n_\text{B}/n_\text{A}$, although the question asks how much smaller the amount of substance is.
+- In part c $-20$ is substituted as the temperature without converting it to kelvins, or the proportion is calculated from the Celsius temperatures.
+
+### Hyväksytään myös
+- In part a the amount of substance can be calculated from the slope of the line: $\dfrac{p}{T} = 0.25\,\text{kPa/K}$ and $n = \dfrac{V}{R} \cdot \dfrac{p}{T}$.
+- In part c the pressure can be calculated with the ideal gas law $p = \dfrac{nRT}{V}$ from the amount of substance of part a.
+
+## fy9-kaasut-s9
+
+### a)
+**Given:** from the graph the pressure $p = 250\,\text{kPa}$ is constant and the volume grows from $V_1 = 1.0\,\textsf{l}$ to $V_2 = 4.0\,\textsf{l}$
+**Find:** the work $W$ done by the gas
+**Principle:** When the pressure stays constant, the work done by the gas is the pressure times the change in volume (chapter *Work done by a gas and the heat engine*). In the graph this is the area of the rectangle between the segment and the $V$ axis.
+**Reading the graph:** The graph is a horizontal segment at the height $250\,\text{kPa}$. Its end points are $V = 1.0\,\textsf{l}$ and $V = 4.0\,\textsf{l}$.
+**Formula:** $W = p\,\Delta V = p\,(V_2 - V_1)$
+**Conversions:** $\Delta V = 4.0\,\textsf{l} - 1.0\,\textsf{l} = 3.0\,\textsf{l} = 3.0 \cdot 10^{-3}\,\text{m}^3$ and $p = 250\,000\,\text{Pa}$; also $1\,\text{kPa} \cdot 1\,\textsf{l} = 1\,\text{J}$.
+**Substitution:** $$
+\begin{aligned}
+W &= 250\,000\,\text{Pa} \cdot 3.0 \cdot 10^{-3}\,\text{m}^3 \\
+&= 750\,\text{J}
+\end{aligned}
+$$
+**Answer:** $W \approx 750\,\text{J}$, that is $7.5 \cdot 10^{2}\,\text{J}$, two significant figures like the values read from the graph. The work is positive, because the gas expands and pushes the piston.
+**Reasonableness:** The unit is right, since $\text{Pa} \cdot \text{m}^3 = \text{N} \cdot \text{m} = \text{J}$. The rectangle has the height $250$ and the width $3.0$ units ($\text{kPa}$ and $\textsf{l}$), and $250 \cdot 3.0 = 750$.
+
+### b)
+**Given:** initial state $p = 250\,\text{kPa}$, $V_1 = 1.0\,\textsf{l}$ and $\theta_1 = 20\,{}^\circ\text{C}$; ideal gas, $R = 8.31\,\text{J/(mol K)}$
+**Find:** the amount of substance $n$
+**Principle:** The state of an ideal gas obeys the ideal gas law $pV = nRT$ (chapter *The ideal gas law*). Three quantities of the initial state are known, so the amount of substance follows from it.
+**Formula:** $pV = nRT$, so $n = \dfrac{pV_1}{RT_1}$
+**Conversions:** $T_1 = (20 + 273.15)\,\text{K} = 293.15\,\text{K}$, $V_1 = 1.0 \cdot 10^{-3}\,\text{m}^3$ and $p = 250\,000\,\text{Pa}$.
+**Substitution:** $$
+\begin{aligned}
+n &= \dfrac{250\,000\,\text{Pa} \cdot 1.0 \cdot 10^{-3}\,\text{m}^3}{8.31\,\text{J/(mol K)} \cdot 293.15\,\text{K}} \\
+&= \dfrac{250\,\text{J}}{2436\,\text{J/mol}} \\
+&= 0.1026\,\text{mol}
+\end{aligned}
+$$
+**Answer:** $n \approx 0.10\,\text{mol}$, two significant figures like the volume $1.0\,\textsf{l}$.
+**Reasonableness:** The unit is right, since $\text{J} : (\text{J/mol}) = \text{mol}$. Order of magnitude: $1.0\,\textsf{l}$ of air at room temperature and atmospheric pressure is about $0.04\,\text{mol}$, and the pressure is about $2.5$ times as high, so $0.10\,\text{mol}$ fits.
+
+### c)
+**Given:** $p = 250\,\text{kPa}$ constant, $V_2 = 4.0\,\textsf{l}$, $n = 0.1026\,\text{mol}$, $R = 8.31\,\text{J/(mol K)}$
+**Find:** the final temperature $T_2$
+**Principle:** The amount of substance is constant, and the ideal gas law also holds in the final state: $pV_2 = nRT_2$ (chapter *The ideal gas law*). At constant pressure the volume is directly proportional to the kelvin temperature (chapter *Changes of state of a gas and Boyle's law*), which gives a check.
+**Formula:** $T_2 = \dfrac{pV_2}{nR}$
+**Conversions:** $V_2 = 4.0 \cdot 10^{-3}\,\text{m}^3$ and $p = 250\,000\,\text{Pa}$.
+**Substitution:** $$
+\begin{aligned}
+T_2 &= \dfrac{250\,000\,\text{Pa} \cdot 4.0 \cdot 10^{-3}\,\text{m}^3}{0.1026\,\text{mol} \cdot 8.31\,\text{J/(mol K)}} \\
+&= \dfrac{1000\,\text{J}}{0.8528\,\text{J/K}} \\
+&= 1173\,\text{K}
+\end{aligned}
+$$
+**Answer:** $T_2 \approx 1.2 \cdot 10^{3}\,\text{K}$, about $900\,{}^\circ\text{C}$. The answer has two significant figures like the volumes $1.0\,\textsf{l}$ and $4.0\,\textsf{l}$. The intermediate result $1173\,\text{K}$ is unrounded.
+**Reasonableness:** The volume quadruples at constant pressure, so the kelvin temperature must also quadruple: $T_2 = T_1 \dfrac{V_2}{V_1} = 293.15\,\text{K} \cdot 4.0 = 1173\,\text{K}$. The temperature of the gas rises by about $880\,\text{K}$.
+
+### d)
+**Find:** whether the heat $Q$ is greater than, equal to or smaller than the work $W$
+**Principle:** Conservation of energy: the change in the internal energy of the gas is the energy transferred to it as heat minus the work done by the gas, $\Delta U = Q - W$, so $Q = \Delta U + W$ (chapter *Internal energy, heat and conservation of energy*). The internal energy of an ideal gas grows when the temperature rises.
+**Model answer:** The temperature of the gas rises from $293\,\text{K}$ to $1.2 \cdot 10^{3}\,\text{K}$, so the mean kinetic energy of its particles and its internal energy increase: $\Delta U > 0$. By conservation of energy $Q = \Delta U + W$. The heat the gas receives is enough both for the work $750\,\text{J}$ and for the increase in internal energy. Therefore $Q$ is greater than $W$. If the temperature stayed constant, $\Delta U = 0$ and $Q = W$, but here the temperature rises.
+
+### Yleisiä virheitä
+- In part a the work is calculated as $pV_2 = 1000\,\text{J}$ or $pV_1$, although the work is the pressure times the change in volume $p\,\Delta V$.
+- In part b $20$ is substituted as the temperature instead of $293\,\text{K}$, or the litres are not converted to cubic metres.
+- In part c the temperature is not converted from degrees Celsius to kelvins or the answer says that the Celsius temperature quadruples ($80\,{}^\circ\text{C}$).
+- In part d the answer is $Q = W$ without noticing that the temperature and the internal energy of the gas increase.
+
+### Hyväksytään myös
+- In part c the temperature can be calculated directly from the constant-pressure relation $\dfrac{V_1}{T_1} = \dfrac{V_2}{T_2}$ without the amount of substance.
+- In part c the temperature can be given in degrees Celsius: $T_2 - 273.15 \approx 900\,{}^\circ\text{C}$.
