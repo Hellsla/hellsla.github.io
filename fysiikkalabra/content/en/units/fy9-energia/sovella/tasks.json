@@ -1,5 +1,5 @@
 {
-  "intro": "Seven problems in the style of the Finnish matriculation examination bring together the lesson's energy, power and efficiency. Solve them as in the exam: justify the choice of model, solve for the quantity asked before substituting the numbers and assess whether the result is reasonable. The last problem is an applied source-based task whose source opens from the link in the task. Open the model answer and the scoring guide only when your solution is ready.",
+  "intro": "Nine problems in the style of the Finnish matriculation examination bring together the lesson's energy, power and efficiency. Solve them as in the exam: justify the choice of model, solve for the quantity asked before substituting the numbers and assess whether the result is reasonable. The seventh problem is an applied source-based task whose source opens from the link in the task. In the last two problems you read the data from a figure. Open the model answer and the scoring guide only when your solution is ready.",
   "tasks": [
     {
       "id": "fy9-energia-s1",
@@ -854,6 +854,317 @@
         "concept": "fy6-8",
         "communication": "fy2-1",
         "experiment": "fy1-3"
+      }
+    },
+    {
+      "id": "fy9-energia-s8",
+      "title": "A skateboarder in a half-pipe",
+      "source": "example",
+      "source_note": "The situation and the numbers are invented examples.",
+      "skills": [
+        "fy2-1",
+        "fy4-7",
+        "fy4-8"
+      ],
+      "figure": "fy2-1/kitka-pylvaat",
+      "text": "A skateboarder of mass $45\\,\\text{kg}$ starts from rest at the rim of a half-pipe, at point A. They pass point B on the slope and arrive at the bottom, point C. The half-pipe has friction, and air resistance can be ignored. The zero level of potential energy is at point C. The bars in the figure show the skateboarder's potential energy and kinetic energy at points A, B and C. Along the track from A to C the distance is $3.4\\,\\text{m}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "How much internal energy has friction produced in the track and the skateboard's wheels from A to B and from A to C?",
+          "answer": [
+            {
+              "name": "dB",
+              "value": 100,
+              "unit": "J",
+              "tolerance": 0.03
+            },
+            {
+              "name": "dC",
+              "value": 200,
+              "unit": "J",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Both bars are read at each point: A $700\\,\\text{J}$ and $0\\,\\text{J}$, B $300\\,\\text{J}$ and $300\\,\\text{J}$, C $0\\,\\text{J}$ and $500\\,\\text{J}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$E_\\text{mech} = E_\\text{p} + E_\\text{k}$ and $\\Delta E_\\text{int} = E_\\text{mech,A} - E_\\text{mech}$, because the total energy is conserved."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\Delta E_\\text{int,AB} = 700\\,\\text{J} - (300\\,\\text{J} + 300\\,\\text{J}) = 100\\,\\text{J}$ and $\\Delta E_\\text{int,AC} = 700\\,\\text{J} - 500\\,\\text{J} = 200\\,\\text{J}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$100\\,\\text{J}$ and $200\\,\\text{J}$; the internal energy grows as the skateboarder goes on."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Determine the skateboarder's speed at point C.",
+          "answer": {
+            "value": 4.7,
+            "unit": "m/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$E_\\text{k} = \\tfrac{1}{2}mv^2$, so $v = \\sqrt{\\dfrac{2E_\\text{k}}{m}}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nv &= \\sqrt{\\dfrac{2 \\cdot 500\\,\\text{J}}{45\\,\\text{kg}}} \\\\\n&= 4.7\\,\\text{m/s}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 4.7\\,\\text{m/s} \\approx 17\\,\\text{km/h}$, two significant figures."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "How large is the average force of friction on the skateboarder from A to C?",
+          "answer": {
+            "value": 59,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The work done by friction equals the increase of internal energy: $\\Delta E_\\text{int} = Fs$, so $F = \\dfrac{\\Delta E_\\text{int}}{s}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$F = \\dfrac{200\\,\\text{J}}{3.4\\,\\text{m}} \\approx 59\\,\\text{N}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The skateboarder's weight is $45\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 440\\,\\text{N}$, so friction is about $13\\,\\%$ of it, a sensible size for a board on wheels."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "What would the skateboarder's speed at C be if there were no friction? Why is the real speed smaller?",
+          "answer": {
+            "value": 5.6,
+            "unit": "m/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Without friction the mechanical energy is conserved: $E_\\text{k,C} = E_\\text{p,A}$, so $v = \\sqrt{\\dfrac{2E_\\text{p,A}}{m}}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nv &= \\sqrt{\\dfrac{2 \\cdot 700\\,\\text{J}}{45\\,\\text{kg}}} \\\\\n&= 5.6\\,\\text{m/s}\n\\end{aligned}\n$$"
+            },
+            {
+              "text": "Explains that friction turns part of the original $700\\,\\text{J}$ of energy, about $29\\,\\%$ or $200\\,\\text{J}$, into internal energy of the track and the wheels, which is transferred to the surroundings as heat. Only $500\\,\\text{J}$ of kinetic energy remains, so the speed is smaller ($4.7\\,\\text{m/s} < 5.6\\,\\text{m/s}$). No energy is lost.",
+              "tag": "concept",
+              "points": 2
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy2-1",
+        "math": "fy4-8",
+        "concept": "fy2-1"
+      }
+    },
+    {
+      "id": "fy9-energia-s9",
+      "title": "Two devices on an energy meter",
+      "source": "example",
+      "source_note": "The devices and the numbers are invented examples.",
+      "skills": [
+        "fy2-3",
+        "fy2-4",
+        "fy4-7"
+      ],
+      "figure": "fy2-3/graph-ab",
+      "text": "The graph shows the electrical energy $E$ measured by an energy meter for two electrical devices, A and B, as a function of time. Device A is an electric radiator whose electrical energy is all transformed into internal energy of the room. Device B is the motor of a goods lift, which raises a $150\\,\\text{kg}$ load to a height of $20\\,\\text{m}$ during the $80\\,\\text{s}$ of the graph. The price of electricity is $0.16\\,\\text{€/kWh}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Determine the electrical power of devices A and B.",
+          "answer": [
+            {
+              "name": "PA",
+              "value": 1.5,
+              "unit": "kW",
+              "tolerance": 0.03
+            },
+            {
+              "name": "PB",
+              "value": 0.5,
+              "unit": "kW",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "A point far from the origin is read on each line: A $(80\\,\\text{s};\\ 120\\,\\text{kJ})$ and B $(80\\,\\text{s};\\ 40\\,\\text{kJ})$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P = \\dfrac{\\Delta E}{\\Delta t}$, for steady transformation the slope of the $(t,E)$ graph."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$P_\\text{A} = \\dfrac{120\\,\\text{kJ}}{80\\,\\text{s}} = 1.5\\,\\text{kW}$ and $P_\\text{B} = \\dfrac{40\\,\\text{kJ}}{80\\,\\text{s}} = 0.50\\,\\text{kW}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P_\\text{A} = 1.5\\,\\text{kW}$ and $P_\\text{B} = 0.50\\,\\text{kW}$; A's power is three times B's because its line is three times as steep."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Each device is used for $3.0\\,\\text{h}$ a day for $30$ days. How much does the electricity of each device cost during that time?",
+          "answer": [
+            {
+              "name": "cA",
+              "value": 22,
+              "unit": "€",
+              "tolerance": 0.03
+            },
+            {
+              "name": "cB",
+              "value": 7.2,
+              "unit": "€",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$E = Pt$ and the cost $C = E \\cdot p$, where $p$ is the price of electricity; the energy in kilowatt-hours."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E_\\text{A} = 1.5\\,\\text{kW} \\cdot 90\\,\\text{h} = 135\\,\\text{kWh}$ and $E_\\text{B} = 0.50\\,\\text{kW} \\cdot 90\\,\\text{h} = 45\\,\\text{kWh}$, since the total time of use is $30 \\cdot 3.0\\,\\text{h} = 90\\,\\text{h}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$C_\\text{A} = 135\\,\\text{kWh} \\cdot 0.16\\,\\text{€/kWh} \\approx 22\\,\\text{€}$ and $C_\\text{B} = 45\\,\\text{kWh} \\cdot 0.16\\,\\text{€/kWh} = 7.2\\,\\text{€}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The ratio of the costs equals the ratio of the powers, $22\\,\\text{€} : 7.2\\,\\text{€} \\approx 3$, because the time of use and the price are the same."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Determine the efficiency of the lift motor B.",
+          "answer": {
+            "value": 74,
+            "unit": "%",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\eta = \\dfrac{E_\\text{useful}}{E}$, where the useful energy is the change in the load's potential energy $E_\\text{useful} = mgh$."
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The electrical energy taken by B in $80\\,\\text{s}$ is read from the graph: $E = 40\\,\\text{kJ}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E_\\text{useful} = 150\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot 20\\,\\text{m} \\approx 29.4\\,\\text{kJ}$ and $\\eta = \\dfrac{29.4\\,\\text{kJ}}{40\\,\\text{kJ}} = 0.74$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\eta \\approx 74\\,\\%$, two significant figures; the efficiency is below $100\\,\\%$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "How large is the power transferred from motor B to the surroundings as heat? Into which form of energy does it first change?",
+          "answer": {
+            "value": 0.13,
+            "unit": "kW",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P_\\text{loss} = P - P_\\text{useful}$, where $P_\\text{useful} = \\dfrac{E_\\text{useful}}{t}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$P_\\text{useful} = \\dfrac{29.4\\,\\text{kJ}}{80\\,\\text{s}} \\approx 0.37\\,\\text{kW}$ and $P_\\text{loss} = 0.50\\,\\text{kW} - 0.37\\,\\text{kW} \\approx 0.13\\,\\text{kW}$"
+            },
+            {
+              "text": "States that the rest of the energy does not disappear but first becomes internal energy of the motor, gearbox and rope (friction and electrical resistance), which is transferred to the surroundings as heat.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy2-3",
+        "math": "fy2-4",
+        "concept": "fy2-4"
       }
     }
   ]

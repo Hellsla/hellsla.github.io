@@ -464,3 +464,162 @@ The test still gives a useful order of magnitude: in hard frost the range can be
 - In part a cars other than those of the table, when the values are read from the chart of the source and the calculation is correct; the results can be given as whole per cents and as positive numbers when the answer says that the measured distance is shorter.
 - The results of part b to three significant figures, $16.7\,\text{kWh}$ and $26.9\,\text{kWh}$ per hundred kilometres.
 - In part c also other justified reasons, for example the larger friction of cold lubricant in the drivetrain.
+
+## fy9-energia-s8
+
+### a)
+**Given:** from the figure, potential and kinetic energy: A $E_\text{p} = 700\,\text{J}$, $E_\text{k} = 0\,\text{J}$; B $E_\text{p} = 300\,\text{J}$, $E_\text{k} = 300\,\text{J}$; C $E_\text{p} = 0\,\text{J}$, $E_\text{k} = 500\,\text{J}$
+**Find:** the increase of internal energy $\Delta E_\text{int}$ from A to B and from A to C
+**Principle:** On a track with friction the mechanical energy is not conserved: friction increases the internal energy of the track and the wheels. The total energy is conserved, so the decrease of the mechanical energy is the increase of the internal energy (chapter *Forms of energy and conservation of energy*).
+**Reading the graph:** At each point both the potential-energy bar and the kinetic-energy bar are read with the help of the grid (grid spacing $100\,\text{J}$).
+**Formula:** $E_\text{mech} = E_\text{p} + E_\text{k}$ and $\Delta E_\text{int} = E_\text{mech,A} - E_\text{mech}$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+E_\text{mech,A} &= 700\,\text{J} + 0\,\text{J} = 700\,\text{J} \\
+E_\text{mech,B} &= 300\,\text{J} + 300\,\text{J} = 600\,\text{J} \\
+E_\text{mech,C} &= 0\,\text{J} + 500\,\text{J} = 500\,\text{J} \\
+\Delta E_\text{int,AB} &= 700\,\text{J} - 600\,\text{J} = 100\,\text{J} \\
+\Delta E_\text{int,AC} &= 700\,\text{J} - 500\,\text{J} = 200\,\text{J}
+\end{aligned}
+$$
+**Answer:** $100\,\text{J}$ of internal energy has been produced from A to B and $200\,\text{J}$ from A to C.
+**Reasonableness:** The mechanical energy decreases from point to point ($700\,\text{J}$, $600\,\text{J}$, $500\,\text{J}$) and never grows, as on a track with friction it should. About the same amount of internal energy is produced on each part of the way, which fits a steady effect of friction on the track.
+
+### b)
+**Given:** $E_\text{k,C} = 500\,\text{J}$ from the figure, mass $m = 45\,\text{kg}$
+**Find:** the speed $v$ at point C
+**Principle:** At the bottom the potential energy is zero, so the kinetic energy in the figure gives the speed (chapter *Kinetic energy, potential energy and mechanical energy*).
+**Reading the graph:** At point C only the kinetic-energy bar is visible, and it ends at $500\,\text{J}$.
+**Formula:** $E_\text{k} = \tfrac{1}{2}mv^2$, so $v = \sqrt{\dfrac{2E_\text{k}}{m}}$
+**Conversions:** None needed, since $1\,\text{J} = 1\,\text{kg}\,\text{m}^2/\text{s}^2$.
+**Substitution:** $$
+\begin{aligned}
+v &= \sqrt{\dfrac{2 \cdot 500\,\text{J}}{45\,\text{kg}}} \\
+&= \sqrt{22.2\,\text{m}^2/\text{s}^2} \\
+&\approx 4.7\,\text{m/s}
+\end{aligned}
+$$
+**Answer:** The speed at point C is $v \approx 4.7\,\text{m/s}$, two significant figures like the mass.
+**Reasonableness:** $4.7\,\text{m/s} \approx 17\,\text{km/h}$ is a sensible speed at the bottom of a half-pipe.
+
+### c)
+**Given:** the increase of internal energy $\Delta E_\text{int,AC} = 200\,\text{J}$ from part a, distance $s = 3.4\,\text{m}$, mass $m = 45\,\text{kg}$
+**Find:** the average force of friction $F$
+**Principle:** The work done by friction equals the increase of internal energy, and work is force times distance in the direction of the force (chapter *Conservation of mechanical energy and the work-energy principle*). The average force is obtained by dividing the work by the distance travelled.
+**Formula:** $\Delta E_\text{int} = Fs$, so $F = \dfrac{\Delta E_\text{int}}{s}$
+**Conversions:** None needed, since $1\,\text{J} = 1\,\text{N} \cdot \text{m}$.
+**Substitution:** $$
+\begin{aligned}
+F &= \dfrac{200\,\text{J}}{3.4\,\text{m}} \\
+&\approx 59\,\text{N}
+\end{aligned}
+$$
+**Answer:** The average force of friction is $F \approx 59\,\text{N}$, two significant figures like the distance.
+**Reasonableness:** The weight is $G = mg = 45\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 440\,\text{N}$, so friction is about $13\,\%$ of the weight, a sensible size for the rolling resistance and bearing friction of a board on wheels.
+
+### d)
+**Given:** $E_\text{p,A} = 700\,\text{J}$ from the figure, $m = 45\,\text{kg}$
+**Find:** the speed $v_0$ at C without friction, and the reason why the real speed is smaller
+**Principle:** Without friction the mechanical energy is conserved: all the original potential energy turns into kinetic energy (chapter *Forms of energy and conservation of energy*).
+**Reading the graph:** At point A all the energy is potential energy, $700\,\text{J}$.
+**Formula:** $E_\text{k,C} = E_\text{p,A}$, so $\tfrac{1}{2}mv_0^2 = E_\text{p,A}$ and $v_0 = \sqrt{\dfrac{2E_\text{p,A}}{m}}$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+v_0 &= \sqrt{\dfrac{2 \cdot 700\,\text{J}}{45\,\text{kg}}} \\
+&= \sqrt{31.1\,\text{m}^2/\text{s}^2} \\
+&\approx 5.6\,\text{m/s}
+\end{aligned}
+$$
+**Answer:** Without friction the speed would be $v_0 \approx 5.6\,\text{m/s}$. The real speed $4.7\,\text{m/s}$ is smaller because friction turns part of the energy, $200\,\text{J}$ or $\tfrac{200}{700} \approx 29\,\%$, into internal energy of the track and the wheels. It is transferred to the surroundings as heat. Only $500\,\text{J}$ of kinetic energy remains.
+**Reasonableness:** Without friction the speed is greater than with friction, as it should be. The speed decreases by only about $0.9\,\text{m/s}$ although nearly a third of the energy is used, because the speed depends on the square root of the energy.
+
+### Yleisiä virheitä
+- In part a only the kinetic energy is read and the potential energy is forgotten, so B gets $700\,\text{J} - 300\,\text{J} = 400\,\text{J}$ wrongly.
+- In part b the energy of point A, $700\,\text{J}$, is used, or the square root and the factor $2$ are forgotten.
+- In part c the internal energy is divided by the height difference instead of the distance, or the energy in joules is given as the force.
+- In part d the energy is said to "disappear" or "turn into heat": it turns into internal energy, which is transferred to the surroundings as heat.
+
+### Hyväksytään myös
+- In part c the force to three significant figures, $58.8\,\text{N}$, and in part d the speeds to three significant figures, $4.71\,\text{m/s}$ and $5.58\,\text{m/s}$.
+- In part a an answer read directly from the sums of the bars of the figure, when the sums of the mechanical energies are shown.
+
+## fy9-energia-s9
+
+### a)
+**Given:** from the graph A $E_\text{A} = 120\,\text{kJ}$ and B $E_\text{B} = 40\,\text{kJ}$ at the time $t = 80\,\text{s}$; both lines pass through the origin
+**Find:** the electrical powers $P_\text{A}$ and $P_\text{B}$
+**Principle:** When energy is transformed steadily, the power is constant and the energy is directly proportional to time. The power is the slope of the graph (chapter *Power*).
+**Reading the graph:** A point far from the origin is read on each line, at $80\,\text{s}$: A $120\,\text{kJ}$ and B $40\,\text{kJ}$.
+**Formula:** $P = \dfrac{\Delta E}{\Delta t}$
+**Conversions:** $120\,\text{kJ} = 120\,000\,\text{J}$ and $40\,\text{kJ} = 40\,000\,\text{J}$; finally $1\,\text{W} = 0.001\,\text{kW}$.
+**Substitution:** $$
+\begin{aligned}
+P_\text{A} &= \dfrac{120\,000\,\text{J}}{80\,\text{s}} = 1500\,\text{W} = 1.5\,\text{kW} \\
+P_\text{B} &= \dfrac{40\,000\,\text{J}}{80\,\text{s}} = 500\,\text{W} = 0.50\,\text{kW}
+\end{aligned}
+$$
+**Answer:** $P_\text{A} = 1.5\,\text{kW}$ and $P_\text{B} = 0.50\,\text{kW}$, two significant figures like the values read.
+**Reasonableness:** A power of $1.5\,\text{kW}$ is typical of an electric radiator. A's line is three times as steep as B's, and its power is three times as large.
+
+### b)
+**Given:** the powers of part a, $P_\text{A} = 1.5\,\text{kW}$ and $P_\text{B} = 0.50\,\text{kW}$, time of use $t = 30 \cdot 3.0\,\text{h} = 90\,\text{h}$, price $p = 0.16\,\text{€/kWh}$
+**Find:** the cost of electricity $C_\text{A}$ and $C_\text{B}$
+**Principle:** Electrical energy is power times time, and the cost is energy times the unit price. The kilowatt-hour fits directly when the power is in kilowatts and the time in hours (chapter *Power*).
+**Formula:** $E = Pt$ and $C = E\,p$, so $C = P\,t\,p$
+**Conversions:** None needed, since the powers are in kilowatts and the times in hours.
+**Substitution:** $$
+\begin{aligned}
+E_\text{A} &= 1.5\,\text{kW} \cdot 90\,\text{h} = 135\,\text{kWh} \\
+C_\text{A} &= 135\,\text{kWh} \cdot 0.16\,\text{€/kWh} \approx 22\,\text{€} \\
+E_\text{B} &= 0.50\,\text{kW} \cdot 90\,\text{h} = 45\,\text{kWh} \\
+C_\text{B} &= 45\,\text{kWh} \cdot 0.16\,\text{€/kWh} = 7.2\,\text{€}
+\end{aligned}
+$$
+**Answer:** The electricity of A costs about $22\,\text{€}$ and that of B $7.2\,\text{€}$, to two significant figures.
+**Reasonableness:** The ratio of the costs is $22\,\text{€} : 7.2\,\text{€} \approx 3$, the same as the ratio of the powers, because the time of use and the price are the same. A monthly cost of tens of euros for a radiator is a familiar order of magnitude.
+
+### c)
+**Given:** mass $m = 150\,\text{kg}$, height $h = 20\,\text{m}$, electrical energy from the graph $E = 40\,\text{kJ}$ in $80\,\text{s}$; $g = 9.81\,\text{m/s}^2$
+**Find:** the efficiency $\eta$ of motor B
+**Principle:** Efficiency is the share of the energy taken in as electricity that is transformed into useful energy (chapter *Efficiency*). The useful energy is the change in the potential energy of the load in the lift.
+**Reading the graph:** From B's line at $80\,\text{s}$ the reading is $E = 40\,\text{kJ}$.
+**Formula:** $\eta = \dfrac{E_\text{useful}}{E}$, where $E_\text{useful} = mgh$, so $\eta = \dfrac{mgh}{E}$
+**Conversions:** $40\,\text{kJ} = 40\,000\,\text{J}$.
+**Substitution:** $$
+\begin{aligned}
+E_\text{useful} &= 150\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 20\,\text{m} \\
+&\approx 29\,400\,\text{J} \\
+\eta &= \dfrac{29\,400\,\text{J}}{40\,000\,\text{J}} \\
+&= 0.74 = 74\,\%
+\end{aligned}
+$$
+**Answer:** The efficiency of the motor is $\eta \approx 74\,\%$, to two significant figures.
+**Reasonableness:** The efficiency is below $100\,\%$ and suits a lift motor whose gearbox and rope use some of the energy. The useful energy $29.4\,\text{kJ}$ is smaller than the $40\,\text{kJ}$ taken in.
+
+### d)
+**Given:** $P_\text{B} = 0.50\,\text{kW}$ from part a, $E_\text{useful} = 29\,400\,\text{J}$ and $t = 80\,\text{s}$ from part c
+**Find:** the power transferred to the surroundings as heat, $P_\text{loss}$, and the form of energy into which the energy first changes
+**Principle:** The power taken in divides into useful power and the rest. The rest of the energy does not disappear but turns into internal energy, which is transferred to the surroundings as heat (chapter *Efficiency*).
+**Formula:** $P_\text{loss} = P - P_\text{useful}$, where $P_\text{useful} = \dfrac{E_\text{useful}}{t}$
+**Conversions:** $P_\text{B} = 0.50\,\text{kW} = 500\,\text{W}$.
+**Substitution:** $$
+\begin{aligned}
+P_\text{useful} &= \dfrac{29\,400\,\text{J}}{80\,\text{s}} \approx 368\,\text{W} \\
+P_\text{loss} &= 500\,\text{W} - 368\,\text{W} \\
+&\approx 130\,\text{W} = 0.13\,\text{kW}
+\end{aligned}
+$$
+**Answer:** About $0.13\,\text{kW}$ is transferred to the surroundings as heat. The energy first turns into internal energy of the motor, the gearbox and the rope because of friction and electrical resistance, and it is transferred to the surroundings as heat.
+**Reasonableness:** $0.13\,\text{kW} = 26\,\%$ of the power taken in, so $\eta + 26\,\% = 100\,\%$; energy is conserved.
+
+### Yleisiä virheitä
+- In part a the power is read from one value of the graph without dividing by the time, or kilojoules are used as joules.
+- In part b the time of use is wrong ($3.0\,\text{h}$ instead of $90\,\text{h}$), or the power is left in watts and the cost is calculated with the price per kilowatt-hour.
+- In part c the efficiency is calculated as $E / E_\text{useful}$ and comes out over $100\,\%$.
+- In part d the energy is said to "disappear" or "turn into heat", although it is internal energy that is transferred as heat.
+
+### Hyväksytään myös
+- In part c the answer $73.6\,\%$ or $0.74$, and in part d $132\,\text{W}$.
+- In part d the power can also be calculated from the efficiency: $P_\text{loss} = (1 - \eta)P = 0.26 \cdot 0.50\,\text{kW} \approx 0.13\,\text{kW}$.

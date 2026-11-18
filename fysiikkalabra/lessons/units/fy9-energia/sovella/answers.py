@@ -102,4 +102,34 @@ out.update({"fy9-energia-s7-a-inster": round(rel["inster"], 2), "fy9-energia-s7-
             "fy9-energia-s7-c-dT-ratio": round((20 + 32) / (20 + 7), 2), "fy9-energia-s7-c-heat": heat7,
             "fy9-energia-s7-c-heat-share": round(heat7 / E7, 2), "fy9-energia-s7-c-density": round(100 * (rho_ratio - 1), 1)})
 
+# s8: a skater on a half-pipe with friction (fy2-1/kitka-pylvaat; values read from the graph): (E_p, E_k) in J at A, B, C
+m8, s8path = 45.0, 3.4                                            # kg, m (path from A to C along the track)
+A8, B8, C8 = (700.0, 0.0), (300.0, 300.0), (0.0, 500.0)
+Em8 = [sum(P) for P in (A8, B8, C8)]                              # J: mechanical energies 700, 600, 500
+dB8, dC8 = Em8[0] - Em8[1], Em8[0] - Em8[2]                       # J: internal energy gained from A to B and to C
+v8 = math.sqrt(2 * C8[1] / m8)                                    # m/s: E_k = 1/2 m v^2 at C
+F8 = dC8 / s8path                                                 # N: internal energy gained = F s
+G8 = m8 * g                                                       # N: weight
+v8_0 = math.sqrt(2 * A8[0] / m8)                                  # m/s: no friction, E_p(A) -> E_k(C)
+out.update({"fy9-energia-s8-a-dB": dB8, "fy9-energia-s8-a-dC": dC8, "fy9-energia-s8-b": round(v8, 3),
+            "fy9-energia-s8-c": round(F8, 2), "fy9-energia-s8-c-weight": round(G8, 1), "fy9-energia-s8-c-share": round(100 * F8 / G8, 1),
+            "fy9-energia-s8-d": round(v8_0, 3), "fy9-energia-s8-d-diff": round(v8_0 - v8, 2),
+            "fy9-energia-s8-d-share": round(100 * dC8 / Em8[0], 1)})
+
+# s9: two electrical devices on an energy meter (fy2-3/graph-ab; values read from the graph): E(80 s) = 120 kJ and 40 kJ
+EA9, EB9, T9 = 120e3, 40e3, 80.0                                  # J, J, s
+PA9, PB9 = EA9 / T9, EB9 / T9                                     # W: slopes of the lines
+price9, hours9, days9 = 0.16, 3.0, 30                             # EUR/kWh, h per day, days
+kWhA, kWhB = PA9 / 1000 * hours9 * days9, PB9 / 1000 * hours9 * days9   # kWh in the 30 days
+cA, cB = kWhA * price9, kWhB * price9                             # EUR
+m9, h9 = 150.0, 20.0                                              # kg lifted, m: hoist motor B lifts the load in 80 s
+Eu9 = m9 * g * h9                                                 # J: useful energy
+eta9 = Eu9 / EB9
+Pu9 = Eu9 / T9                                                    # W: useful power
+Pl9 = PB9 - Pu9                                                   # W: power transferred to the surroundings as heat
+out.update({"fy9-energia-s9-a-PA": PA9 / 1000, "fy9-energia-s9-a-PB": PB9 / 1000,
+            "fy9-energia-s9-b-cA": round(cA, 2), "fy9-energia-s9-b-cB": round(cB, 2), "fy9-energia-s9-b-kWhA": kWhA, "fy9-energia-s9-b-kWhB": kWhB,
+            "fy9-energia-s9-c": round(100 * eta9, 2), "fy9-energia-s9-c-Eu": round(Eu9, 0),
+            "fy9-energia-s9-d": round(Pl9 / 1000, 3), "fy9-energia-s9-d-Pu": round(Pu9, 1), "fy9-energia-s9-d-Pl": round(Pl9, 1)})
+
 print(json.dumps(out))

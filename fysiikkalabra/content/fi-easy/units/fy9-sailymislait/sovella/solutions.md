@@ -435,3 +435,183 @@ $$
 
 ### Hyväksytään myös
 - c-kohdassa voi laskea pelkällä liike-energialla, $F = \dfrac{15\,675\,\text{J}}{0{,}018\,\text{m}} \approx 0{,}87\,\text{MN}$, jos ratkaisussa todetaan, että painon osuus jätetään pienenä pois.
+
+## fy9-sailymislait-s7
+
+### a)
+**Annettu:** $m = 2{,}0\,\text{kg}$; kuvaajasta alun potentiaalienergia $E_{\text{p}0} = 40\,\text{J}$ (vihreän palkin yläreuna); nollataso on rinteen alapää; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** lähtökorkeus $h$ alapäähän nähden
+**Periaate:** Potentiaalienergia on massa kertaa putoamiskiihtyvyys kertaa korkeus nollatasosta (luku *Liike-energia, potentiaalienergia ja mekaaninen energia*). Alussa kelkka on levossa. Siksi koko mekaaninen energia on potentiaalienergiaa.
+**Kuvaajan lukeminen:** Vihreä palkki ulottuu $40\,\text{J}$:iin, joten $E_{\text{p}0} = 40\,\text{J}$.
+**Kaava:** $E_{\text{p}0} = mgh$, joten $h = \dfrac{E_{\text{p}0}}{mg}$
+**Muunnokset:** Ei tarvita: energia on jouleina ja massa kilogrammoina.
+**Sijoitus:** $$
+\begin{aligned}
+h &= \dfrac{40\,\text{J}}{2{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2} \\
+&= \dfrac{40\,\text{J}}{19{,}62\,\text{N}} \\
+&= 2{,}04\,\text{m}
+\end{aligned}
+$$
+**Vastaus:** $h \approx 2{,}0\,\text{m}$, kaksi merkitsevää numeroa kuten luetut energiat ja massa.
+**Järkevyys:** Rinteen pituus on $6{,}0\,\text{m}$ ja korkeusero $2{,}0\,\text{m}$. Rinteen kaltevuuskulma on $\arcsin\dfrac{2{,}04\,\text{m}}{6{,}0\,\text{m}} \approx 20^\circ$. Se on tavallinen kelkkamäki.
+
+### b)
+**Annettu:** $E_{\text{p}0} = 40\,\text{J}$, lopun liike-energia $E_\text{k} = 25\,\text{J}$ (sinisen palkin yläreuna), rinteen pituus $s = 6{,}0\,\text{m}$; alussa $E_\text{k0} = 0$ ja lopussa $E_\text{p} = 0$
+**Kysytty:** kitkavoiman työ $W_\text{kitka}$ ja kitkavoiman suuruus $F$
+**Periaate:** Kelkkaan vaikuttavat paino, tukivoima ja liukukitka. Tukivoima on kohtisuorassa liikettä vastaan, joten se ei tee työtä. Kitka muuttaa mekaanista energiaa. Siksi käytetään energiaperiaatetta (luku *Mekaanisen energian säilyminen ja energiaperiaate*): alkuenergia ja muiden voimien työ ovat yhteensä loppuenergia. Liukukitka on liikettä vastaan, joten sen työ on negatiivinen: $W_\text{kitka} = -Fs$.
+**Kuvaajan lukeminen:** Sininen palkki ulottuu $25\,\text{J}$:iin, joten $E_\text{k} = 25\,\text{J}$. Kitkan työtä ei ole piirretty.
+**Kaava:** $E_{\text{p}0} + W_\text{kitka} = E_\text{k}$, joten $W_\text{kitka} = E_\text{k} - E_{\text{p}0}$; ja $W_\text{kitka} = -Fs$, joten $F = \dfrac{-W_\text{kitka}}{s}$
+**Muunnokset:** Ei tarvita: $1\,\text{J} = 1\,\text{N m}$.
+**Sijoitus:** $$
+\begin{aligned}
+W_\text{kitka} &= 25\,\text{J} - 40\,\text{J} \\
+&= -15\,\text{J}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+F &= \dfrac{15\,\text{J}}{6{,}0\,\text{m}} \\
+&= 2{,}5\,\text{N}
+\end{aligned}
+$$
+**Vastaus:** $W_\text{kitka} = -15\,\text{J}$ ja $F = 2{,}5\,\text{N}$, kaksi merkitsevää numeroa. Kitkan työ on negatiivinen, koska kitka on liikettä vastaan. Energiaa muuttui sisäenergiaksi $15\,\text{J}$. Sisäenergia siirtyy lämpönä ympäristöön.
+**Järkevyys:** Kitka vei $\dfrac{15\,\text{J}}{40\,\text{J}} = 37{,}5\,\%$ alun energiasta. Kelkan paino on $2{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 19{,}6\,\text{N}$, joten kitkavoima on noin $13\,\%$ painosta. Liukukitkakerroin on $\mu = \dfrac{F}{mg\cos\alpha} \approx 0{,}14$ (kaltevuuskulma $\alpha \approx 20^\circ$). Se on mahdollinen lumisella tai kostealla rinteellä.
+
+### c)
+**Annettu:** $m = 2{,}0\,\text{kg}$, $E_\text{k} = 25\,\text{J}$ alapäässä, $E_{\text{p}0} = 40\,\text{J}$
+**Kysytty:** nopeus $v$ alapäässä ja nopeus $v_0$, joka olisi ilman kitkaa
+**Periaate:** Alapäässä kaikki jäljellä oleva mekaaninen energia on liike-energiaa (luku *Liike-energia, potentiaalienergia ja mekaaninen energia*). Ilman kitkaa vain paino tekisi työtä. Silloin mekaaninen energia säilyisi, ja alun potentiaalienergia muuttuisi kokonaan liike-energiaksi.
+**Kaava:** $E_\text{k} = \tfrac12 mv^2$, joten $v = \sqrt{\dfrac{2E_\text{k}}{m}}$; ilman kitkaa $E_{\text{p}0} = \tfrac12 mv_0^2$, joten $v_0 = \sqrt{\dfrac{2E_{\text{p}0}}{m}}$
+**Muunnokset:** Ei tarvita: $1\,\text{J} = 1\,\text{kg m}^2/\text{s}^2$.
+**Sijoitus:** $$
+\begin{aligned}
+v &= \sqrt{\dfrac{2 \cdot 25\,\text{J}}{2{,}0\,\text{kg}}} \\
+&= \sqrt{25\,\text{m}^2/\text{s}^2} \\
+&= 5{,}0\,\text{m/s}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+v_0 &= \sqrt{\dfrac{2 \cdot 40\,\text{J}}{2{,}0\,\text{kg}}} \\
+&= \sqrt{40\,\text{m}^2/\text{s}^2} \\
+&= 6{,}3\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** $v = 5{,}0\,\text{m/s}$ ja ilman kitkaa $v_0 \approx 6{,}3\,\text{m/s}$. Kitka pienentää nopeutta noin $21\,\%$. Osa potentiaalienergiasta muuttuu sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Silloin liike-energiaa jää vähemmän.
+**Järkevyys:** Nopeus ilman kitkaa on $6{,}3\,\text{m/s} \approx 23\,\text{km/h}$, ja kitkan kanssa $5{,}0\,\text{m/s} = 18\,\text{km/h}$. Kitkallinen nopeus on pienempi, kuten pitääkin. Nopeus ilman kitkaa on yhtä suuri kuin vapaassa pudotuksessa korkeudelta $2{,}0\,\text{m}$: $\sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 2{,}04\,\text{m}} \approx 6{,}3\,\text{m/s}$.
+
+### d)
+**Annettu:** uusi massa $m' = 3{,}0\,\text{kg}$; sama rinne ($h = 2{,}04\,\text{m}$, $s = 6{,}0\,\text{m}$, $\alpha \approx 20^\circ$) ja sama liukukitkakerroin $\mu$
+**Kysytty:** kelkan nopeus alapäässä
+**Periaate:** Käytetään energiaperiaatetta (luku *Mekaanisen energian säilyminen ja energiaperiaate*). Liukukitkavoima on $F = \mu N$. Tukivoima rinteellä on $N = mg\cos\alpha$. Siksi kitkavoima on suoraan verrannollinen massaan.
+**Kaava:** $$
+\begin{aligned}
+mgh - \mu mg\cos\alpha \cdot s &= \tfrac12 mv^2 \\
+v &= \sqrt{2g\,(h - \mu\cos\alpha \cdot s)}
+\end{aligned}
+$$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** Massa supistuu, joten nopeus ei riipu massasta. Tarkistus luvuilla: potentiaalienergia on $3{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 2{,}04\,\text{m} = 60\,\text{J}$. Kitkavoima on $\dfrac{3{,}0}{2{,}0} \cdot 2{,}5\,\text{N} = 3{,}75\,\text{N}$, joten kitkan työ on $-3{,}75\,\text{N} \cdot 6{,}0\,\text{m} = -22{,}5\,\text{J}$. Liike-energia alapäässä on $60\,\text{J} - 22{,}5\,\text{J} = 37{,}5\,\text{J}$ ja $$
+\begin{aligned}
+v &= \sqrt{\dfrac{2 \cdot 37{,}5\,\text{J}}{3{,}0\,\text{kg}}} \\
+&= 5{,}0\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** Nopeus ei muutu, vaan on edelleen $5{,}0\,\text{m/s}$. Painavampi kelkka menettää kitkaan enemmän energiaa ($22{,}5\,\text{J} > 15\,\text{J}$). Sillä on kuitenkin alussa myös enemmän energiaa ($60\,\text{J} > 40\,\text{J}$). Molemmat kasvavat samassa suhteessa.
+**Järkevyys:** Vapaassa pudotuksessa raskas ja kevyt kappale saavuttavat saman nopeuden, kun vastus on pieni. Tässä kitka noudattaa samaa sääntöä, koska sekin kasvaa massan mukana. Todellisuudessa ilmanvastus ei kasva massan mukana. Silloin raskaampi kelkka olisi hieman nopeampi.
+
+### Yleisiä virheitä
+- a-kohdassa korkeudeksi lasketaan rinteen pituus $6{,}0\,\text{m}$ tai potentiaalienergia jaetaan pelkällä massalla.
+- b-kohdassa kitkan työksi merkitään $+15\,\text{J}$ tai laskussa unohdetaan, että kitkan työ jaetaan matkalla; $15\,\text{J} : 6{,}0\,\text{m} = 2{,}5\,\text{N}$ on voima, ei energia.
+- c-kohdassa nopeus lasketaan alun energiasta $40\,\text{J}$ eikä lopun liike-energiasta $25\,\text{J}$, jolloin kitka jää huomiotta.
+- d-kohdassa oletetaan, että painavampi kelkka kulkee nopeammin tai hitaammin, vaikka massa supistuu yhtälöstä.
+
+### Hyväksytään myös
+- b-kohdassa kitkavoima voidaan ratkaista myös liike-energian muutoksesta ja potentiaalienergian muutoksesta erikseen: $F s = E_{\text{p}0} - E_\text{k}$.
+- d-kohdassa riittää symbolinen päättely, jossa massa supistuu energiayhtälöstä, kunhan tulos todetaan.
+
+## fy9-sailymislait-s8
+
+### a)
+**Annettu:** $(t,F)$-kuvaaja: voima kasvaa nollasta arvoon $900\,\text{N}$ ja palaa nollaan hetkellä $12\,\text{ms}$; kuvaajan alku on $t = 0$
+**Kysytty:** impulssi $I$
+**Periaate:** Voiman impulssi on voiman ja ajan kuvaajan ja aika-akselin väliin jäävä pinta-ala (luku *Liikemäärä ja impulssi*). Kuvaaja on kolmio, ja voiman suunta pysyy samana. Siksi impulssi on kolmion pinta-ala.
+**Kuvaajan lukeminen:** Kolmion korkeus on $F_\text{max} = 900\,\text{N}$ ja kanta $\Delta t = 12\,\text{ms}$.
+**Kaava:** $I = \tfrac12 F_\text{max}\,\Delta t$
+**Muunnokset:** $12\,\text{ms} = 12 \cdot 10^{-3}\,\text{s} = 0{,}012\,\text{s}$
+**Sijoitus:** $$
+\begin{aligned}
+I &= \tfrac12 \cdot 900\,\text{N} \cdot 0{,}012\,\text{s} \\
+&= 5{,}4\,\text{N s}
+\end{aligned}
+$$
+**Vastaus:** $I = 5{,}4\,\text{N s}$ ylöspäin, kaksi merkitsevää numeroa kuten kestossa $12\,\text{ms}$.
+**Järkevyys:** Keskivoima on $\dfrac{900\,\text{N}}{2} = 450\,\text{N}$ ja se vaikuttaa $0{,}012\,\text{s}$, joten $450\,\text{N} \cdot 0{,}012\,\text{s} = 5{,}4\,\text{N s}$. Pallon paino on vain $0{,}43\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 4{,}2\,\text{N}$, joten sen jättäminen huomiotta potkun aikana on perusteltua.
+
+### b)
+**Annettu:** $m = 0{,}43\,\text{kg}$, alkunopeus $0$, impulssi $I = 5{,}4\,\text{N s}$
+**Kysytty:** lähtönopeus $v$
+**Periaate:** Voiman impulssi on kappaleen liikemäärän muutos (luku *Liikemäärä ja impulssi*). Potkun aikana pallon liikemäärää muuttaa vain jalan voima. Painovoima ja ilmanvastus ovat merkityksettömiä.
+**Kaava:** $I = \Delta p = mv - 0$, joten $v = \dfrac{I}{m}$
+**Muunnokset:** $1\,\text{N s} = 1\,\text{kg m/s}$
+**Sijoitus:** $$
+\begin{aligned}
+v &= \dfrac{5{,}4\,\text{kg m/s}}{0{,}43\,\text{kg}} \\
+&= 12{,}56\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** $v \approx 13\,\text{m/s}$ ylöspäin, kaksi merkitsevää numeroa kuten massa ja impulssi.
+**Järkevyys:** $13\,\text{m/s}$ on noin $47\,\text{km/h}$. Se on tavallinen nopeus pehmeälle potkulle; kovat laukaukset ovat yli $25\,\text{m/s}$.
+
+### c)
+**Annettu:** $m = 0{,}43\,\text{kg}$, $v = 12{,}56\,\text{m/s}$ potkun jälkeen, nollataso potkun korkeudella
+**Kysytty:** liike-energia $E_\text{k}$ ja korkeus $h$ ilman ilmanvastusta
+**Periaate:** Heti potkun jälkeen pallolla on vain liike-energiaa. Kun ilmanvastus jätetään pois, vain paino tekee työtä. Silloin mekaaninen energia säilyy (luku *Mekaanisen energian säilyminen ja energiaperiaate*). Korkeimmassa kohdassa nopeus on nolla.
+**Kaava:** $E_\text{k} = \tfrac12 mv^2$; $\tfrac12 mv^2 = mgh$, joten $h = \dfrac{v^2}{2g}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+E_\text{k} &= \tfrac12 \cdot 0{,}43\,\text{kg} \cdot (12{,}56\,\text{m/s})^2 \\
+&= 33{,}9\,\text{J}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+h &= \dfrac{(12{,}56\,\text{m/s})^2}{2 \cdot 9{,}81\,\text{m/s}^2} \\
+&= 8{,}04\,\text{m}
+\end{aligned}
+$$
+**Vastaus:** $E_\text{k} \approx 34\,\text{J}$ ja $h \approx 8{,}0\,\text{m}$, kaksi merkitsevää numeroa.
+**Järkevyys:** Tarkistus potentiaalienergialla: $mgh = 0{,}43\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 8{,}04\,\text{m} \approx 33{,}9\,\text{J}$, sama kuin liike-energia. Pallon massa ei vaikuta korkeuteen, vain nopeus.
+
+### d)
+**Annettu:** $m = 0{,}43\,\text{kg}$, $E_\text{k0} = 33{,}9\,\text{J}$ lähdössä, mitattu korkeus $h_\text{mitattu} = 6{,}5\,\text{m}$, nopeus $0$ korkeimmassa kohdassa
+**Kysytty:** ilmanvastuksen työ $W_\text{ilma}$ ja keskimääräinen ilmanvastus $F$
+**Periaate:** Ilmanvastus on liikettä vastaan, joten mekaaninen energia ei säily. Käytetään energiaperiaatetta (luku *Mekaanisen energian säilyminen ja energiaperiaate*): alkuenergia ja ilmanvastuksen työ ovat yhteensä loppuenergia. Ylhäällä liike-energia on nolla ja potentiaalienergia on $mgh_\text{mitattu}$. Ilmanvastuksen työ on negatiivinen: $W_\text{ilma} = -Fh_\text{mitattu}$. Tässä $F$ on voiman keskiarvo koko nousun ajalta.
+**Kaava:** $E_\text{k0} + W_\text{ilma} = mgh_\text{mitattu}$, joten $W_\text{ilma} = mgh_\text{mitattu} - E_\text{k0}$ ja $F = \dfrac{-W_\text{ilma}}{h_\text{mitattu}}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+mgh_\text{mitattu} &= 0{,}43\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 6{,}5\,\text{m} \\
+&= 27{,}4\,\text{J}
+\end{aligned}
+$$ $$
+\begin{aligned}
+W_\text{ilma} &= 27{,}4\,\text{J} - 33{,}9\,\text{J} \\
+&= -6{,}5\,\text{J}
+\end{aligned}
+$$ $$
+\begin{aligned}
+F &= \dfrac{6{,}5\,\text{J}}{6{,}5\,\text{m}} \\
+&= 1{,}0\,\text{N}
+\end{aligned}
+$$
+**Vastaus:** $W_\text{ilma} \approx -6{,}5\,\text{J}$ ja $F \approx 1{,}0\,\text{N}$. Mekaanista energiaa on noin $19\,\%$ vähemmän kuin ilman ilmanvastusta. Se on muuttunut ilman ja pallon sisäenergiaksi. Sisäenergia siirtyy lämpönä ympäristöön.
+**Järkevyys:** Keskimääräinen ilmanvastus on noin neljäsosa pallon painosta ($4{,}2\,\text{N}$). Se on pieni mutta mitattavissa. Nousu jää $8{,}0\,\text{m} - 6{,}5\,\text{m} = 1{,}5\,\text{m}$ matalammaksi kuin ilman ilmanvastusta.
+
+### Yleisiä virheitä
+- a-kohdassa pinta-ala lasketaan suorakulmiona $900\,\text{N} \cdot 12\,\text{ms}$ tai millisekunteja ei muunneta sekunneiksi.
+- b-kohdassa impulssi jaetaan jalan voimalla tai ajalla massan sijaan.
+- c-kohdassa korkeus lasketaan impulssista suoraan tai potentiaalienergiana ilman liike-energian laskemista; $h = v^2 : 2g$ riittää.
+- d-kohdassa ilmanvastuksen työksi kirjataan positiivinen luku tai työ jaetaan väärällä matkalla, esimerkiksi $8{,}0\,\text{m}$:llä.
+
+### Hyväksytään myös
+- a-kohdassa impulssi voidaan laskea ruutuja laskemalla: yksi ruutu on $100\,\text{N} \cdot 2\,\text{ms} = 0{,}2\,\text{N s}$ ja kolmion pinta-ala on noin $27$ ruutua eli $5{,}4\,\text{N s}$.
+- d-kohdassa $W_\text{ilma}$ voidaan laskea myös liike-energian ja potentiaalienergian erotuksena, kunhan etumerkki on negatiivinen.

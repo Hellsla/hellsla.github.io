@@ -1,5 +1,5 @@
 {
-  "intro": "Näissä seitsemässä ylioppilaskokeen tyylisessä tehtävässä tarvitset tunnin asioita: energiaa, tehoa ja hyötysuhdetta. Ratkaise tehtävät samalla tavalla kuin kokeessa. Perustele, miksi valitset tietyn mallin. Ratkaise kysytty suure kaavasta ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Viimeinen tehtävä on soveltava aineistotehtävä. Sen lähde avautuu tehtävässä olevasta linkistä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+  "intro": "Näissä yhdeksässä ylioppilaskokeen tyylisessä tehtävässä tarvitset tunnin asioita: energiaa, tehoa ja hyötysuhdetta. Ratkaise tehtävät samalla tavalla kuin kokeessa. Perustele, miksi valitset tietyn mallin. Ratkaise kysytty suure kaavasta ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Seitsemäs tehtävä on soveltava aineistotehtävä. Sen lähde avautuu tehtävässä olevasta linkistä. Kahdessa viimeisessä tehtävässä luet tiedot kuvasta. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
   "tasks": [
     {
       "id": "fy9-energia-s1",
@@ -854,6 +854,317 @@
         "concept": "fy6-8",
         "communication": "fy2-1",
         "experiment": "fy1-3"
+      }
+    },
+    {
+      "id": "fy9-energia-s8",
+      "title": "Skeittari half-pipessä",
+      "source": "example",
+      "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä.",
+      "skills": [
+        "fy2-1",
+        "fy4-7",
+        "fy4-8"
+      ],
+      "figure": "fy2-1/kitka-pylvaat",
+      "text": "Skeittari, jonka massa on $45\\,\\text{kg}$, lähtee levosta half-pipen reunalta kohdasta A. Hän menee kohdan B ohi rinteessä ja tulee pohjalle kohtaan C. Half-pipessä on kitkaa. Ilmanvastuksen voi jättää huomiotta. Potentiaalienergian nollataso on kohdassa C. Kuvan pylväät näyttävät skeittarin potentiaalienergian ja liike-energian kohdissa A, B ja C. Rataa pitkin matka A:sta C:hen on $3{,}4\\,\\text{m}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka paljon sisäenergiaa kitka on tuottanut radalle ja laudan pyörille matkalla A:sta B:hen ja matkalla A:sta C:hen?",
+          "answer": [
+            {
+              "name": "dB",
+              "value": 100,
+              "unit": "J",
+              "tolerance": 0.03
+            },
+            {
+              "name": "dC",
+              "value": 200,
+              "unit": "J",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kussakin kohdassa luetaan molemmat pylväät: A $700\\,\\text{J}$ ja $0\\,\\text{J}$, B $300\\,\\text{J}$ ja $300\\,\\text{J}$, C $0\\,\\text{J}$ ja $500\\,\\text{J}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$E_\\text{mek} = E_\\text{p} + E_\\text{k}$ ja $\\Delta E_\\text{sis} = E_\\text{mek,A} - E_\\text{mek}$, koska kokonaisenergia säilyy."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\Delta E_\\text{sis,AB} = 700\\,\\text{J} - (300\\,\\text{J} + 300\\,\\text{J}) = 100\\,\\text{J}$ ja $\\Delta E_\\text{sis,AC} = 700\\,\\text{J} - 500\\,\\text{J} = 200\\,\\text{J}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$100\\,\\text{J}$ ja $200\\,\\text{J}$. Sisäenergia kasvaa, kun skeittari etenee."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Määritä skeittarin vauhti kohdassa C.",
+          "answer": {
+            "value": 4.7,
+            "unit": "m/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$E_\\text{k} = \\tfrac{1}{2}mv^2$, josta $v = \\sqrt{\\dfrac{2E_\\text{k}}{m}}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nv &= \\sqrt{\\dfrac{2 \\cdot 500\\,\\text{J}}{45\\,\\text{kg}}} \\\\\n&= 4{,}7\\,\\text{m/s}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 4{,}7\\,\\text{m/s} \\approx 17\\,\\text{km/h}$, kaksi merkitsevää numeroa."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri on kitkavoima keskimäärin matkalla A:sta C:hen?",
+          "answer": {
+            "value": 59,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Kitkan tekemä työ on sisäenergian lisäys: $\\Delta E_\\text{sis} = Fs$, josta $F = \\dfrac{\\Delta E_\\text{sis}}{s}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$F = \\dfrac{200\\,\\text{J}}{3{,}4\\,\\text{m}} \\approx 59\\,\\text{N}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Skeittarin paino on $45\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 440\\,\\text{N}$. Kitka on noin $13\\,\\%$ painosta. Se on järkevä suuruus laudalle, jossa on pyörät."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Mikä olisi skeittarin vauhti kohdassa C, jos kitkaa ei olisi? Miksi todellinen vauhti on pienempi?",
+          "answer": {
+            "value": 5.6,
+            "unit": "m/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Ilman kitkaa mekaaninen energia säilyy: $E_\\text{k,C} = E_\\text{p,A}$, joten $v = \\sqrt{\\dfrac{2E_\\text{p,A}}{m}}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nv &= \\sqrt{\\dfrac{2 \\cdot 700\\,\\text{J}}{45\\,\\text{kg}}} \\\\\n&= 5{,}6\\,\\text{m/s}\n\\end{aligned}\n$$"
+            },
+            {
+              "text": "Selittää, että kitka muuttaa osan alkuperäisestä $700\\,\\text{J}$:n energiasta, noin $29\\,\\%$ eli $200\\,\\text{J}$, radan ja pyörien sisäenergiaksi. Se siirtyy lämpönä ympäristöön. Liike-energiaa jää vain $500\\,\\text{J}$, joten vauhti on pienempi ($4{,}7\\,\\text{m/s} < 5{,}6\\,\\text{m/s}$). Energiaa ei katoa.",
+              "tag": "concept",
+              "points": 2
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy2-1",
+        "math": "fy4-8",
+        "concept": "fy2-1"
+      }
+    },
+    {
+      "id": "fy9-energia-s9",
+      "title": "Kaksi laitetta energiamittarissa",
+      "source": "example",
+      "source_note": "Laitteet ja luvut ovat keksittyjä esimerkkejä.",
+      "skills": [
+        "fy2-3",
+        "fy2-4",
+        "fy4-7"
+      ],
+      "figure": "fy2-3/graph-ab",
+      "text": "Kuvaajassa on kahden sähkölaitteen, A ja B, sähköenergia $E$ ajan funktiona. Energiamittari on mitannut sen. Laite A on sähköpatteri. Sen sähköenergia muuttuu kokonaan huoneen sisäenergiaksi. Laite B on tavarahissin moottori. Se nostaa $150\\,\\text{kg}$:n kuorman $20\\,\\text{m}$ korkeuteen kuvaajan $80\\,\\text{s}$ aikana. Sähkön hinta on $0{,}16\\,\\text{€/kWh}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Määritä laitteiden A ja B sähköteho.",
+          "answer": [
+            {
+              "name": "PA",
+              "value": 1.5,
+              "unit": "kW",
+              "tolerance": 0.03
+            },
+            {
+              "name": "PB",
+              "value": 0.5,
+              "unit": "kW",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kummankin suoran piste luetaan kaukaa origosta: A $(80\\,\\text{s};\\ 120\\,\\text{kJ})$ ja B $(80\\,\\text{s};\\ 40\\,\\text{kJ})$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P = \\dfrac{\\Delta E}{\\Delta t}$. Tasaisessa muuntumisessa se on $(t,E)$-kuvaajan kulmakerroin."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$P_\\text{A} = \\dfrac{120\\,\\text{kJ}}{80\\,\\text{s}} = 1{,}5\\,\\text{kW}$ ja $P_\\text{B} = \\dfrac{40\\,\\text{kJ}}{80\\,\\text{s}} = 0{,}50\\,\\text{kW}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P_\\text{A} = 1{,}5\\,\\text{kW}$ ja $P_\\text{B} = 0{,}50\\,\\text{kW}$. A:n teho on kolminkertainen, koska sen suora on kolme kertaa jyrkempi."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kumpaakin laitetta käytetään $3{,}0\\,\\text{h}$ vuorokaudessa $30$ vuorokauden ajan. Paljonko kummankin laitteen sähkö maksaa tänä aikana?",
+          "answer": [
+            {
+              "name": "cA",
+              "value": 22,
+              "unit": "€",
+              "tolerance": 0.03
+            },
+            {
+              "name": "cB",
+              "value": 7.2,
+              "unit": "€",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$E = Pt$ ja hinta $C = E \\cdot p$, missä $p$ on sähkön hinta. Energia lasketaan kilowattitunteina."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E_\\text{A} = 1{,}5\\,\\text{kW} \\cdot 90\\,\\text{h} = 135\\,\\text{kWh}$ ja $E_\\text{B} = 0{,}50\\,\\text{kW} \\cdot 90\\,\\text{h} = 45\\,\\text{kWh}$, sillä kokonaiskäyttöaika on $30 \\cdot 3{,}0\\,\\text{h} = 90\\,\\text{h}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$C_\\text{A} = 135\\,\\text{kWh} \\cdot 0{,}16\\,\\text{€/kWh} \\approx 22\\,\\text{€}$ ja $C_\\text{B} = 45\\,\\text{kWh} \\cdot 0{,}16\\,\\text{€/kWh} = 7{,}2\\,\\text{€}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Kustannusten suhde on sama kuin tehojen suhde, $22\\,\\text{€} : 7{,}2\\,\\text{€} \\approx 3$, koska käyttöaika ja hinta ovat samat."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Määritä hissin moottorin B hyötysuhde.",
+          "answer": {
+            "value": 74,
+            "unit": "%",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\eta = \\dfrac{E_\\text{hyöty}}{E}$. Hyötyenergia on kuorman potentiaalienergian muutos $E_\\text{hyöty} = mgh$."
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "B:n ottama sähköenergia $80\\,\\text{s}$:ssa luetaan kuvaajasta: $E = 40\\,\\text{kJ}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E_\\text{hyöty} = 150\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 20\\,\\text{m} \\approx 29{,}4\\,\\text{kJ}$ ja $\\eta = \\dfrac{29{,}4\\,\\text{kJ}}{40\\,\\text{kJ}} = 0{,}74$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\eta \\approx 74\\,\\%$, kaksi merkitsevää numeroa. Hyötysuhde on alle $100\\,\\%$."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri teho siirtyy moottorista B lämpönä ympäristöön? Mihin energiamuotoon se ensin muuttuu?",
+          "answer": {
+            "value": 0.13,
+            "unit": "kW",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P_\\text{häviö} = P - P_\\text{hyöty}$, missä $P_\\text{hyöty} = \\dfrac{E_\\text{hyöty}}{t}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$P_\\text{hyöty} = \\dfrac{29{,}4\\,\\text{kJ}}{80\\,\\text{s}} \\approx 0{,}37\\,\\text{kW}$ ja $P_\\text{häviö} = 0{,}50\\,\\text{kW} - 0{,}37\\,\\text{kW} \\approx 0{,}13\\,\\text{kW}$"
+            },
+            {
+              "text": "Toteaa, että loppu energia ei häviä. Se muuttuu ensin moottorin, vaihteiston ja köyden sisäenergiaksi (kitka ja sähkövastus). Sisäenergia siirtyy lämpönä ympäristöön.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy2-3",
+        "math": "fy2-4",
+        "concept": "fy2-4"
       }
     }
   ]
