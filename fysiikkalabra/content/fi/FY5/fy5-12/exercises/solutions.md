@@ -154,7 +154,7 @@ Tämä on sama $\lambda/2$-väli kuin seisovan aallon solmujen välillä (luku S
 ## fy5-12-L2-06
 **Kysytty:** miten opiskelijan väite energian häviämisestä solmuviivalla oikaistaan
 **Periaate:** Heikentävä interferenssi tarkoittaa, että aallot kumoavat toistensa poikkeamat tietyissä kohdissa. Kaiuttimet kuitenkin lähettävät energiaa koko ajan yhtä paljon, joten energian kokonaismäärän täytyy säilyä.
-**Mallivastaus:** Väite on väärä. Solmuviivoilla poikkeamat kumoavat toisensa, joten niille siirtyy hyvin vähän energiaa. Energia ei kuitenkaan häviä, vaan interferenssikuvio jakaa sen eri tavalla tilaan: vahvistavan interferenssin kohtiin energiaa siirtyy vastaavasti enemmän. Energia ei muutu lämmöksi solmuviivoilla eikä siirry takaisin kaiuttimiin, koska aallot kulkevat toistensa läpi ja kaiuttimien tuottama teho pysyy samana.
+**Mallivastaus:** Väite on väärä. Solmuviivoilla poikkeamat kumoavat toisensa, joten niille siirtyy hyvin vähän energiaa. Energia ei kuitenkaan häviä, vaan interferenssikuvio jakaa sen eri tavalla tilaan: vahvistavan interferenssin kohtiin energiaa siirtyy vastaavasti enemmän. Energia ei muutu solmuviivoilla sisäenergiaksi eikä siirry takaisin kaiuttimiin, koska aallot kulkevat toistensa läpi ja kaiuttimien tuottama teho pysyy samana.
 
 ## fy5-12-L2-07
 **Annettu:** amplitudit taulukosta matkaeron mukaan; lähteiden aallot ovat yhtä suuret
