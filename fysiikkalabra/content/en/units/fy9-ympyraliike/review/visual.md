@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c0ad285a9610c83b
-SCOPE: delta: en s9 "wire" -> "cable" in tasks.json and solutions.md to match shared figure fy5-2/kyltti alt text; en. Other tasks not re-judged.
+CONTENT-HASH: e203d4add0bcfddd
 
 ## Blocking
-None. The round 2 Blocking item (s9 text said "wire", figure alt text says "cable") is resolved: no "wire" remains in the en unit, and the figure alt text and the task/solutions now use the same word.
+- none
 
 ## Polish
-Earlier Polish items (long Periaate paragraph in s9; display-block joins) remain recorded, not re-raised.
+- none
 
 ## Checked
-- Grep for "wire" across the en unit: no hits; "cable" used consistently in task statement, parts a and d, rubric details and solutions.
-- Grammar: "a cable runs from...", "the force of the cable", "The cable is oblique", "the cable withstands" all read naturally; "mass of the cable is neglected" fine.
-- Physics and numbers unchanged: 191 N, 380 N, 331 N, 600 N, 30.0 and 45 degrees, 270 N, 29 %.
-- Figure alt text (figures.json fy5-2) reads "A cable runs from the outer end of the rod obliquely up to the wall", matching.
-- Hash at start and end identical: c0ad285a9610c83b.
+- Read the diff origin/main...HEAD for en (sovella/solutions.md, inquiry.json, excluding review/): only blank lines inserted inside long Periaate, Mallivastaus, Kuvaaja, Järkevyys and inquiry model fields (24 breaks); words, maths and figures unchanged; every break falls between sentences, none inside a formula or display block, and the paragraphs stay under about 120 words.
+- Opened review/shots/contact-17.png (en): Sovella model-solution pages show the split paragraphs with normal spacing, no clipping or overflow, labelled blocks and formula rows intact.
+- Opened review/shots/fy9-ympyraliike-stage-sovella-390-4.png (fi): 390 px solution layout readable, formulas not clipped.
+- Read the earlier Sovella visual report (en, PASS) as evidence; the inquiry model change was judged from the diff only, no capture of that field opened.
+- Hash at end equals hash at start.

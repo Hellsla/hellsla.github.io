@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c415a4f87c3b7043
-SCOPE: delta: round 1 fixes since previous visual review: 7400 N in s8 d) (tasks.json and solutions.md), en translation fixes, en term "centripetal acceleration"; fi. Tasks s1-s7 not re-judged.
+CONTENT-HASH: 3bfefce6ac5a84bb
 
 ## Blocking
-None. The previous Blocking item (s8 d greatest friction 7360 N, three figures against two-figure data) is resolved: tasks.json rubric and solutions.md line 606 now read $\approx 7400\,\text{N}$; no 7360 remains in the language. 4500 N and 61 % unchanged and consistent.
+- none
 
 ## Polish
-Round 1 Polish items (s9 a long Periaate paragraph; s9 d / s8 d display-block joins) remain recorded, not re-raised.
+- none
 
 ## Checked
-- Grep for 7360 across tasks.json and solutions.md: no hits; 7400 present in both files.
-- Diff of the Sovella files against the previous commit: only the intended lines changed; no new math, figure reference or layout change.
-- Display-block structure around the edited line unchanged, so the rendering at 390 px is as judged in round 1.
-- Content hash at start and end identical: c415a4f87c3b7043.
+- Read the diff origin/main...HEAD for fi (sovella/solutions.md, inquiry.json, excluding review/): only blank lines inserted inside long Periaate, Mallivastaus, Kuvaaja, Järkevyys and inquiry model fields (24 breaks); words, maths and figures unchanged; every break falls between sentences, none inside a formula or display block, and the paragraphs stay under about 120 words.
+- Opened review/shots/contact-17.png (fi): Sovella model-solution pages show the split paragraphs with normal spacing, no clipping or overflow, labelled blocks and formula rows intact.
+- Opened review/shots/fy9-ympyraliike-stage-sovella-390-4.png (fi): 390 px solution layout readable, formulas not clipped.
+- Read the earlier Sovella visual report (fi, PASS) as evidence; the inquiry model change was judged from the diff only, no capture of that field opened.
+- Hash at end equals hash at start.

@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: d5c67a8d91360d3c
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: e4eee053d0fcc25d
 
 ## Blocking
-- (none)
+(none)
 
 ## Polish
-- (none)
+(none)
 
 ## Checked
-- Hunks: inquiry.json Esimerkki 7 (Hyötysuhde): the correct option and three feedback texts; solutions.md c) and d) Periaate. Each sentence carries decision P1 and reads naturally ("muuttuu lampun ja ympäristön sisäenergiaksi", "valoksi ja sisäenergiaksi").
-- Captures opened: `fy9-koe-stage-sovella-390-7.png`, `fy9-koe-stage-sovella-1280-5.png` (the choice card: four options, the changed one wraps in three lines at 390 px), `fy9-koe-stage-exercises-390-4.png`, `-390-5.png` (Periaate c and d).
-- The three changed feedback texts show only after an answer is committed, so no capture shows them: they were judged from the source text (plain prose with one unchanged link each, no formula).
-- The changed places were found in the built `fi` page by their position in each stage; the contact sheets were not used for triage. No figure and no added task in this unit's diff; the rest stands under the previous PASS.
+- Diff origin/main...HEAD for unit.md and inquiry.json (fi): only paragraph breaks. In unit.md the worked example's "Tunnetut ja kysytty" paragraph is split so the question stands alone; in inquiry.json two model-answer fields (kettle-efficiency marking comment, helmet answer) are split at a sentence boundary. Words, maths and figures are identical.
+- Contact sheets contact-6.png (#61-#72: model solutions, marking, self-assessment, exit ticket) and contact-9.png (#97-#108: example boxes with staged solutions) in review/shots/, at contact-sheet resolution only. The split paragraphs sit as short paragraphs inside the cards; no clipping, overlap or overflow, and the stage layout survived.
+- The earlier Sovella visual report (sovella/review/visual.md, PASS) read as evidence. I did not open individual 390 px captures, so fine type size is not judged.

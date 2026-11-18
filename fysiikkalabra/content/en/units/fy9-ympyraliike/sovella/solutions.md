@@ -3,7 +3,9 @@
 ### a)
 **Given:** mass of the trailer $m_\text{t} = 165\,\text{kg}$ and centre of gravity at the distance $r_\text{t} = 0.58\,\text{m}$ in front of the axle; mass of the boat and the motor $m_\text{b} = 430\,\text{kg}$ and centre of gravity at the distance $r_\text{b} = 0.12\,\text{m}$ in front of the axle; coupling at the distance $r_\text{k} = 3.25\,\text{m}$ in front of the axle; $g = 9.81\,\text{m/s}^2$
 **Find:** the vertical force $F$ of the coupling on the drawbar and the nose weight $F : g$
-**Principle:** Choose the trailer and the boat together as the body. In the free-body diagram the forces on them are the weight of the trailer $\overline{G}_\text{t}$ and the weight of the boat $\overline{G}_\text{b}$ down from the centres of gravity, the normal force of the ground $\overline{N}$ up at the wheels and the force of the coupling $\overline{F}$ up at the end of the drawbar. At rest the horizontal force of the coupling is zero. The trailer is at rest, so it is in equilibrium: the sum of the forces and the sum of the moments are zero. The axle is chosen as the pivot point, so the lever arm of the unknown normal force is zero. The forces are vertical and the distances horizontal, so the distances are the lever arms of the forces (chapter *Equilibrium of a body: forces and moments*).
+**Principle:** Choose the trailer and the boat together as the body. In the free-body diagram the forces on them are the weight of the trailer $\overline{G}_\text{t}$ and the weight of the boat $\overline{G}_\text{b}$ down from the centres of gravity, the normal force of the ground $\overline{N}$ up at the wheels and the force of the coupling $\overline{F}$ up at the end of the drawbar. At rest the horizontal force of the coupling is zero.
+
+The trailer is at rest, so it is in equilibrium: the sum of the forces and the sum of the moments are zero. The axle is chosen as the pivot point, so the lever arm of the unknown normal force is zero. The forces are vertical and the distances horizontal, so the distances are the lever arms of the forces (chapter *Equilibrium of a body: forces and moments*).
 **Formula:** $F r_\text{k} - m_\text{t} g\, r_\text{t} - m_\text{b} g\, r_\text{b} = 0$, so $F = \dfrac{(m_\text{t} r_\text{t} + m_\text{b} r_\text{b})\,g}{r_\text{k}}$ and the nose weight is $m_\text{n} = \dfrac{F}{g} = \dfrac{m_\text{t} r_\text{t} + m_\text{b} r_\text{b}}{r_\text{k}}$
 **Conversions:** None needed: the masses are in kilograms and the distances in metres.
 **Substitution:** The sum of the moments of the weights about the axle is $$
@@ -48,7 +50,9 @@ $$, so $\Delta x = \dfrac{47.7\,\text{kg} \cdot \text{m}}{430\,\text{kg}} = 0.11
 ### d)
 **Find:** how $30\,\text{kg}$ loaded behind the axle changes the nose weight, and why too small a nose weight is dangerous
 **Principle:** A weight behind the axle turns the trailer about the axle in the opposite direction to the weights in front of the axle, so it reduces the moment the coupling has to provide (chapter *Equilibrium of a body: forces and moments*).
-**Model answer:** The moment of the load about the axle is $30\,\text{kg} \cdot g \cdot 1.40\,\text{m}$, and it reduces the moment of the coupling force. The nose weight decreases by $\tfrac{30\,\text{kg} \cdot 1.40\,\text{m}}{3.25\,\text{m}} \approx 13\,\text{kg}$, from the $45\,\text{kg}$ of part a to about $32\,\text{kg}$. If there were even more load at the back, the common centre of gravity of the trailer and the load would move behind the axle. Then the nose weight would be negative: the coupling would have to pull the drawbar down, and the trailer would lift the rear of the car. The normal force on the rear wheels, and so the upper limit of their static friction, would decrease, and the grip in braking and on bends weakens. A small positive nose weight keeps the centre of gravity of the trailer in front of the axle. That is why a heavy load is placed at the axle or a little in front of it.
+**Model answer:** The moment of the load about the axle is $30\,\text{kg} \cdot g \cdot 1.40\,\text{m}$, and it reduces the moment of the coupling force. The nose weight decreases by $\tfrac{30\,\text{kg} \cdot 1.40\,\text{m}}{3.25\,\text{m}} \approx 13\,\text{kg}$, from the $45\,\text{kg}$ of part a to about $32\,\text{kg}$. If there were even more load at the back, the common centre of gravity of the trailer and the load would move behind the axle.
+
+Then the nose weight would be negative: the coupling would have to pull the drawbar down, and the trailer would lift the rear of the car. The normal force on the rear wheels, and so the upper limit of their static friction, would decrease, and the grip in braking and on bends weakens. A small positive nose weight keeps the centre of gravity of the trailer in front of the axle. That is why a heavy load is placed at the axle or a little in front of it.
 
 ### Yleisiä virheitä
 - Moments are taken about the coupling, but the normal force $N$ is not included, or both $N$ and its lever arm about the axle are written into the moment condition.
@@ -111,7 +115,11 @@ $$, $g = 9.81\,\text{m/s}^2$
 ### d)
 **Find:** why an orbit over the poles rather than a geostationary one is used for accurate northern measurements
 **Principle:** The period of a geostationary satellite is the rotation period of the Earth, so its orbit is above the equator at a fixed distance. The height of an orbit over the poles can be chosen (chapter *Satellites and planets in circular orbits*).
-**Model answer:** The suggestion has a good side: a geostationary satellite sees the same area all the time, so it can follow, for example, the motion of clouds continuously. For accurate measurements of northern regions it is, however, poorly suited for two reasons. First, it is at a height of $35\,800\,\text{km}$, about $\tfrac{35\,800}{830} \approx 43$ times higher than the satellite orbiting over the poles, and looking at Finland at a slant the distance is even larger, over $38\,000\,\text{km}$. So with the same instrument details look much less sharp. Second, the geostationary orbit is in the plane of the equator, so it sees Finland at a very oblique angle, low above the horizon, and the polar regions not at all. A satellite orbiting over the poles passes over the northern regions on every revolution at a height of about $830\,\text{km}$. That is why both orbits are used: geostationary ones for continuous monitoring and polar ones for accurate measurements.
+**Model answer:** The suggestion has a good side: a geostationary satellite sees the same area all the time, so it can follow, for example, the motion of clouds continuously. For accurate measurements of northern regions it is, however, poorly suited for two reasons.
+
+First, it is at a height of $35\,800\,\text{km}$, about $\tfrac{35\,800}{830} \approx 43$ times higher than the satellite orbiting over the poles, and looking at Finland at a slant the distance is even larger, over $38\,000\,\text{km}$. So with the same instrument details look much less sharp.
+
+Second, the geostationary orbit is in the plane of the equator, so it sees Finland at a very oblique angle, low above the horizon, and the polar regions not at all. A satellite orbiting over the poles passes over the northern regions on every revolution at a height of about $830\,\text{km}$. That is why both orbits are used: geostationary ones for continuous monitoring and polar ones for accurate measurements.
 
 ### Yleisiä virheitä
 - The height $h$ is substituted as the radius of the orbit instead of the distance from the centre of the Earth, $R + h$.
@@ -186,7 +194,9 @@ $$, $g = 9.81\,\text{m/s}^2$
 
 ### b)
 **Find:** a quantity against which the graph of the force is a straight line, the justification, the graph and the fitted line
-**Graph:** From the equation of motion in a circle $F = m\tfrac{v^2}{r}$ and the orbital speed $v = \tfrac{2\pi r}{T}$ we get $F = \dfrac{4\pi^2 mr}{T^2} = 4\pi^2 mr \cdot \dfrac{1}{T^2}$. When $m$ and $r$ are constant, $F$ is directly proportional to the quantity $\tfrac{1}{T^2}$. Calculate in the table: $\tfrac{1}{T^2}$ is $2.78$, $2.04$, $1.56$, $1.11$, $0.83$, $0.59$ and $0.44\,\tfrac{1}{\text{s}^2}$. The horizontal axis has $\tfrac{1}{T^2}\ (\tfrac{1}{\text{s}^2})$ and the vertical axis $F\ (\text{N})$. A straight line is fitted to the points so that it runs through them with points left on both sides.
+**Graph:** From the equation of motion in a circle $F = m\tfrac{v^2}{r}$ and the orbital speed $v = \tfrac{2\pi r}{T}$ we get $F = \dfrac{4\pi^2 mr}{T^2} = 4\pi^2 mr \cdot \dfrac{1}{T^2}$. When $m$ and $r$ are constant, $F$ is directly proportional to the quantity $\tfrac{1}{T^2}$.
+
+Calculate in the table: $\tfrac{1}{T^2}$ is $2.78$, $2.04$, $1.56$, $1.11$, $0.83$, $0.59$ and $0.44\,\tfrac{1}{\text{s}^2}$. The horizontal axis has $\tfrac{1}{T^2}\ (\tfrac{1}{\text{s}^2})$ and the vertical axis $F\ (\text{N})$. A straight line is fitted to the points so that it runs through them with points left on both sides.
 
 <svg data-fig="fy9-ympyraliike-s3-lin" viewBox="0 0 600 440" role="img" aria-label="Graph: the force F of the string in newtons as a function of the quantity one divided by T squared, in the unit one divided by second squared. Seven black points between 0.44 and 2.78, forces from 0.88 N to 5.42 N. A rising straight line fitted to the points passes almost through the origin. The line is extended as a dashed line up to the force 8.0 N, which is the strength of the string; it is reached when one divided by T squared is about 4.1. Two points on the line are circled, (0.50; 1.01) and (2.50; 4.91), from which the slope of about 1.95 N s² is read." style="max-width:100%;font-size:30px">
   <line x1="128.5" y1="380" x2="128.5" y2="76" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -284,7 +294,9 @@ $$, $g = 9.81\,\text{m/s}^2$
 **Conversions:** None needed: $\sqrt{\tfrac{\text{N} \cdot \text{s}^2}{\text{N}}} = \text{s}$.
 **Substitution:** $T_\text{min} = \sqrt{\dfrac{1.95\,\text{N} \cdot \text{s}^2}{8.0\,\text{N}}} = \sqrt{0.244\,\text{s}^2} = 0.494\,\text{s}$
 **Answer:** $T_\text{min} \approx 0.49\,\text{s}$, about $2$ revolutions per second, two significant figures like the strength of the string $8.0\,\text{N}$.
-**Reasonableness:** The shortest measured period was $0.60\,\text{s}$ and the force $5.42\,\text{N}$. The force grows as the inverse of the square of the period: $5.42\,\text{N} \cdot \left(\tfrac{0.60}{0.49}\right)^2 \approx 8.1\,\text{N}$, so the result is consistent. The prediction is an extrapolation: $\tfrac{1}{T^2} \approx 4.1\,\tfrac{1}{\text{s}^2}$, while the largest measured value is $2.8\,\tfrac{1}{\text{s}^2}$. It holds if the cart stays at the same distance and the string does not stretch. In addition, the uncertainty of the period is a few per cent, so a safe period is chosen clearly longer, for example at least $0.6\,\text{s}$.
+**Reasonableness:** The shortest measured period was $0.60\,\text{s}$ and the force $5.42\,\text{N}$. The force grows as the inverse of the square of the period: $5.42\,\text{N} \cdot \left(\tfrac{0.60}{0.49}\right)^2 \approx 8.1\,\text{N}$, so the result is consistent. The prediction is an extrapolation: $\tfrac{1}{T^2} \approx 4.1\,\tfrac{1}{\text{s}^2}$, while the largest measured value is $2.8\,\tfrac{1}{\text{s}^2}$.
+
+It holds if the cart stays at the same distance and the string does not stretch. In addition, the uncertainty of the period is a few per cent, so a safe period is chosen clearly longer, for example at least $0.6\,\text{s}$.
 
 ### Yleisiä virheitä
 - The time of ten revolutions is plotted on the horizontal axis instead of the period, which makes the slope a hundred times too large.
@@ -307,12 +319,18 @@ $$, $g = 9.81\,\text{m/s}^2$
 \gamma\tfrac{M}{r^2} &= \tfrac{6.674 \cdot 10^{-11} \cdot 5.97 \cdot 10^{24}}{(6.771 \cdot 10^{6})^2}\,\text{m/s}^2 \\
 &\approx 8.7\,\text{m/s}^2
 \end{aligned}
-$$, almost $90\,\%$ of its value at the surface. It is gravitation that keeps the station in its orbit: it is the only force on the station and turns the direction of its velocity all the time. Without gravitation the station would carry straight on out of its orbit. Astronauts float because the station and the astronaut fall freely together: both get the same acceleration towards the Earth. So the floor does not press on the astronaut, the normal force is zero, and a scale would read zero, although the weight acts all the time.
+$$, almost $90\,\%$ of its value at the surface. It is gravitation that keeps the station in its orbit: it is the only force on the station and turns the direction of its velocity all the time.
+
+Without gravitation the station would carry straight on out of its orbit. Astronauts float because the station and the astronaut fall freely together: both get the same acceleration towards the Earth. So the floor does not press on the astronaut, the normal force is zero, and a scale would read zero, although the weight acts all the time.
 
 ### b)
 **Find:** why an astronaut feels heavy on the floor of the rotating ring, which direction is “down”, and at what period the force of the floor matches the Earth's surface
 **Principle:** An astronaut moving with the ring is in uniform circular motion, so the sum of the forces on them points to the centre of the ring: $\Sigma F = m\tfrac{v^2}{r}$. The orbital speed is $v = \tfrac{2\pi r}{T}$ (chapters *Centripetal acceleration and the equation of motion in a circle* and *Moving in a circle: period and speed*).
-**Model answer:** Inside the station only the normal force of the floor acts on the astronaut, when the gravitation of the Earth is ignored because it acts on the station in the same way. The astronaut moves in a circle with the ring, so the net force on them must point to the centre of the ring. That is why the outer wall, the floor, pushes on the soles of their feet towards the centre with the force $N = m\tfrac{v^2}{r}$. On the Earth's surface the same push on the soles feels like supporting one's weight, so the astronaut feels heavy, and “down” is away from the centre of the ring, towards the outer wall. There is no outward centrifugal force: without the floor the astronaut would carry straight on. The floor pushes with as large a force as the Earth's surface when $\tfrac{v^2}{r} = g$. With $v = \tfrac{2\pi r}{T}$ we get $$
+**Model answer:** Inside the station only the normal force of the floor acts on the astronaut, when the gravitation of the Earth is ignored because it acts on the station in the same way. The astronaut moves in a circle with the ring, so the net force on them must point to the centre of the ring.
+
+That is why the outer wall, the floor, pushes on the soles of their feet towards the centre with the force $N = m\tfrac{v^2}{r}$. On the Earth's surface the same push on the soles feels like supporting one's weight, so the astronaut feels heavy, and “down” is away from the centre of the ring, towards the outer wall.
+
+There is no outward centrifugal force: without the floor the astronaut would carry straight on. The floor pushes with as large a force as the Earth's surface when $\tfrac{v^2}{r} = g$. With $v = \tfrac{2\pi r}{T}$ we get $$
 \begin{aligned}
 T &= 2\pi\sqrt{\tfrac{r}{g}} \\
 &= 2\pi\sqrt{\tfrac{110\,\text{m}}{9.81\,\text{m/s}^2}} \\
@@ -323,7 +341,11 @@ $$, so the ring turns about three times a minute, and the orbital speed of the f
 ### c)
 **Find:** the motion of the key after it is released as seen from outside the station and from the astronaut's point of view
 **Principle:** When no forces act on a body, by Newton's first law it carries on in uniform straight-line motion with the velocity it had. In a circular path the velocity is along the tangent of the path (chapter *Moving in a circle: period and speed*).
-**Model answer:** In the hand the key goes round in a circle with the astronaut, and the hand gives it a force pointing to the centre. When the astronaut lets go, no forces act on the key any more, because the gravitation of the Earth is ignored. So, seen from outside, the key carries straight on along the tangent of the path with the velocity it had at the moment of release. The floor, however, curves beneath the path of the key, so the straight path hits the floor after a moment. To the astronaut the key seems to fall “down” to the floor just as on the Earth. The key does not accelerate outwards, and no force pushes it: the floor comes to meet it. Because the hand is closer to the centre than the floor, the orbital speed of the hand is a little smaller than that of the floor, so the key hits the floor a little behind the point right below the feet, against the direction of rotation.
+**Model answer:** In the hand the key goes round in a circle with the astronaut, and the hand gives it a force pointing to the centre. When the astronaut lets go, no forces act on the key any more, because the gravitation of the Earth is ignored.
+
+So, seen from outside, the key carries straight on along the tangent of the path with the velocity it had at the moment of release. The floor, however, curves beneath the path of the key, so the straight path hits the floor after a moment. To the astronaut the key seems to fall “down” to the floor just as on the Earth.
+
+The key does not accelerate outwards, and no force pushes it: the floor comes to meet it. Because the hand is closer to the centre than the floor, the orbital speed of the hand is a little smaller than that of the floor, so the key hits the floor a little behind the point right below the feet, against the direction of rotation.
 
 ### Yleisiä virheitä
 - In part a weightlessness is explained by gravitation being absent, or by a centrifugal force cancelling it.
@@ -354,12 +376,20 @@ $$, so $m_\text{s} = \dfrac{4800\,\text{g} \cdot \text{cm}}{42.0\,\text{cm}} = 1
 ### b)
 **Find:** an assessment of the conclusion and the reliability of the report and justifications of its shortcomings
 **Principle:** The moment condition includes every force that has a lever arm about the chosen point. A systematic error shifts the result in one direction, a random error scatters the results in both directions (chapters *Equilibrium of a body: forces and moments* and *Measuring and the reliability of a measurement*).
-**Model answer:** The conclusion of the report is wrong. The biggest shortcoming is in the calculation model: the knife edge was not at the centre of gravity of the stick, so the stick's own weight acted with the lever arm $10.0\,\text{cm}$ and turned the stick in the same direction as the stone. When its moment was left out, too much was left for the moment of the stone, and the result was systematically about $26\,\%$ too large. With the correct moment condition the result is $114\,\text{g}$, and the difference from the scale is only about $1\,\%$. Friction does not explain the difference: friction at the edge would make the balance point slightly uncertain in either direction, but it would not cause a large error in one direction. In addition, the report does not back up friction with any observation. The measurement was made only once, so the size of the random error cannot be estimated. The uncertainty is missing altogether, and the result $142.857\,\text{g}$ gives too many figures: reading the balance point to about $\pm 0.5\,\text{cm}$ changes the mass by about $\pm 1.5\,\text{g}$.
+**Model answer:** The conclusion of the report is wrong. The biggest shortcoming is in the calculation model: the knife edge was not at the centre of gravity of the stick, so the stick's own weight acted with the lever arm $10.0\,\text{cm}$ and turned the stick in the same direction as the stone. When its moment was left out, too much was left for the moment of the stone, and the result was systematically about $26\,\%$ too large.
+
+With the correct moment condition the result is $114\,\text{g}$, and the difference from the scale is only about $1\,\%$. Friction does not explain the difference: friction at the edge would make the balance point slightly uncertain in either direction, but it would not cause a large error in one direction.
+
+In addition, the report does not back up friction with any observation. The measurement was made only once, so the size of the random error cannot be estimated. The uncertainty is missing altogether, and the result $142.857\,\text{g}$ gives too many figures: reading the balance point to about $\pm 0.5\,\text{cm}$ changes the mass by about $\pm 1.5\,\text{g}$.
 
 ### c)
 **Find:** a plan for an improved experiment with the same equipment
 **Principle:** A reliable result is obtained when the model includes all the forces, there are several measurements and the result is determined from a graph by fitting. A quantity that is kept constant is recorded (chapters *Equilibrium of a body: forces and moments* and *Your own experimental investigation: planning, carrying out and reporting*).
-**Model answer:** The simplest improvement is to place the knife edge at the centre of gravity of the stick, at the $50.0\,\text{cm}$ mark, so that the lever arm of the stick's weight is zero. First check that the empty stick stays horizontal. The support and the string of the stone are kept the same throughout the experiment. The weight is hung in turn at, for example, five different distances from the edge, and each time the balance point of the stone is found and its distance $d_\text{s}$ from the edge is read. Each balance is repeated three times, and the mean of the results is calculated. From the moment condition $m_\text{p} d_\text{p} = m_\text{s} d_\text{s}$, so the graph of the moment of the weight $m_\text{p} d_\text{p}$ as a function of the lever arm of the stone $d_\text{s}$ is a straight line through the origin whose slope is the mass of the stone. If the edge is left somewhere other than the centre of gravity, the line gets a constant term, which is the moment of the stick's weight, and the slope is still the mass of the stone. The uncertainty is estimated from the scatter of the points or with the steepest and the least steep line, and the result is compared with the reading of the scale with their uncertainties.
+**Model answer:** The simplest improvement is to place the knife edge at the centre of gravity of the stick, at the $50.0\,\text{cm}$ mark, so that the lever arm of the stick's weight is zero. First check that the empty stick stays horizontal. The support and the string of the stone are kept the same throughout the experiment.
+
+The weight is hung in turn at, for example, five different distances from the edge, and each time the balance point of the stone is found and its distance $d_\text{s}$ from the edge is read. Each balance is repeated three times, and the mean of the results is calculated. From the moment condition $m_\text{p} d_\text{p} = m_\text{s} d_\text{s}$, so the graph of the moment of the weight $m_\text{p} d_\text{p}$ as a function of the lever arm of the stone $d_\text{s}$ is a straight line through the origin whose slope is the mass of the stone.
+
+If the edge is left somewhere other than the centre of gravity, the line gets a constant term, which is the moment of the stick's weight, and the slope is still the mass of the stone. The uncertainty is estimated from the scatter of the points or with the steepest and the least steep line, and the result is compared with the reading of the scale with their uncertainties.
 
 ### Yleisiä virheitä
 - In part a the weight of the stick is included, but its lever arm is taken as $50.0\,\text{cm}$, the distance from the end of the stick and not from the edge.
@@ -418,7 +448,9 @@ $$
 ### d)
 **Find:** why a loop whose radius of curvature is small at the top and large in the lower part is better for the passenger
 **Principle:** The force of the seat depends on the centripetal acceleration $\tfrac{v^2}{r}$: at the bottom $N = m\left(g + \tfrac{v^2}{r}\right)$ and at the top $N = m\left(\tfrac{v^2}{r} - g\right)$ (chapter *Centripetal acceleration and the equation of motion in a circle*).
-**Model answer:** In the circle model the passenger feels over six times their weight at the bottom, but only $0.28$ times at the top. In the lower part the speed is greatest, so a large radius of curvature reduces the centripetal acceleration $\tfrac{v^2}{r}$ and the force of the seat exactly where it would otherwise be most violent. At the top the speed is smallest, and the condition $v^2 \ge gr$ decides whether the passenger stays in the seat. A small radius of curvature at the top meets the condition even at a lower speed, so the loop can be made higher or the first hill lower. So the shape evens out the force of the seat at different points of the loop: at the bottom it is smaller and at the top surely positive.
+**Model answer:** In the circle model the passenger feels over six times their weight at the bottom, but only $0.28$ times at the top. In the lower part the speed is greatest, so a large radius of curvature reduces the centripetal acceleration $\tfrac{v^2}{r}$ and the force of the seat exactly where it would otherwise be most violent.
+
+At the top the speed is smallest, and the condition $v^2 \ge gr$ decides whether the passenger stays in the seat. A small radius of curvature at the top meets the condition even at a lower speed, so the loop can be made higher or the first hill lower. So the shape evens out the force of the seat at different points of the loop: at the bottom it is smaller and at the top surely positive.
 
 ### Yleisiä virheitä
 - In part a the loss is subtracted from the speed ($0.88 \cdot \sqrt{2gh}$) and not from the energy.
@@ -439,7 +471,9 @@ $$, the same result.
 ### a)
 **Given:** from the source (NASA, checked 16 Nov 2026) the altitude of the station $370$–$460\,\text{km}$; in the model the height of the orbit $h = 400\,\text{km}$, the period $T = 92\,\text{min}$ and the radius of the Earth $R = 6371\,\text{km}$
 **Find:** whether the height of the model fits the source; the orbital speed $v$
-**Principle:** According to the source the station orbits the Earth at an altitude of $370$–$460\,\text{km}$. The $400\,\text{km}$ of the model lies in this range, so the model fits the source. The range is the one in which the altitude of the station is kept over time, not a variation within one orbit. Its width of $90\,\text{km}$ is only about $1.3\,\%$ of the radius of the orbit, so a circular orbit is a good model. In uniform circular motion the station travels the circumference $2\pi r$ of the orbit in the period $T$ (chapter *Moving in a circle: period and speed*). The radius of the orbit is measured from the centre of the Earth, so $r = R + h$.
+**Principle:** According to the source the station orbits the Earth at an altitude of $370$–$460\,\text{km}$. The $400\,\text{km}$ of the model lies in this range, so the model fits the source. The range is the one in which the altitude of the station is kept over time, not a variation within one orbit.
+
+Its width of $90\,\text{km}$ is only about $1.3\,\%$ of the radius of the orbit, so a circular orbit is a good model. In uniform circular motion the station travels the circumference $2\pi r$ of the orbit in the period $T$ (chapter *Moving in a circle: period and speed*). The radius of the orbit is measured from the centre of the Earth, so $r = R + h$.
 **Formula:** $v = \dfrac{2\pi r}{T} = \dfrac{2\pi(R + h)}{T}$
 **Conversions:** $r = 6371\,\text{km} + 400\,\text{km} = 6771\,\text{km} = 6.771 \cdot 10^{6}\,\text{m}$ and $T = 92\,\text{min} = 92 \cdot 60\,\text{s} = 5520\,\text{s}$
 **Substitution:** $$
@@ -469,7 +503,11 @@ $$ and $\dfrac{a_\text{n}}{g} = \dfrac{8.773\,\text{m/s}^2}{9.81\,\text{m/s}^2} 
 ### c)
 **Find:** which force gives the astronaut the centripetal acceleration and why they are weightless although gravitation acts
 **Principle:** By Newton's second law, in a circular orbit $\Sigma F = ma_\text{n}$, and the net force points to the centre of the orbit (chapter *Centripetal acceleration and the equation of motion in a circle*). Weightlessness is free fall: only gravitation acts on the body, and the normal force is zero (chapter *Satellites and planets in circular orbits*).
-**Model answer:** The astronaut orbits the Earth along the same orbit and at the same speed as the station, so they have the same centripetal acceleration $a_\text{n} \approx 8.8\,\text{m/s}^2$ towards the centre of the Earth. Nothing touches the astronaut, so the only force on them is the gravitational force $\overline{G}$ of the Earth. It gives the centripetal acceleration: $G = ma_\text{n}$. If the floor supported the astronaut with a force $\overline{N}$, the equation of motion would be $G - N = ma_\text{n}$. But gravitation alone gives exactly this acceleration to both the astronaut and the station, because the acceleration given by gravitation does not depend on mass. So $N = 0$: the station and the astronaut fall freely together, and the floor does not press on the astronaut. A person feels their weight as the normal force, so without a normal force they feel weightless. Gravitation has not disappeared: by part b it is almost as strong in the orbit as at the surface. So weightlessness means that there is no normal force, not that there is no gravitation.
+**Model answer:** The astronaut orbits the Earth along the same orbit and at the same speed as the station, so they have the same centripetal acceleration $a_\text{n} \approx 8.8\,\text{m/s}^2$ towards the centre of the Earth. Nothing touches the astronaut, so the only force on them is the gravitational force $\overline{G}$ of the Earth. It gives the centripetal acceleration: $G = ma_\text{n}$.
+
+If the floor supported the astronaut with a force $\overline{N}$, the equation of motion would be $G - N = ma_\text{n}$. But gravitation alone gives exactly this acceleration to both the astronaut and the station, because the acceleration given by gravitation does not depend on mass. So $N = 0$: the station and the astronaut fall freely together, and the floor does not press on the astronaut.
+
+A person feels their weight as the normal force, so without a normal force they feel weightless. Gravitation has not disappeared: by part b it is almost as strong in the orbit as at the surface. So weightlessness means that there is no normal force, not that there is no gravitation.
 
 ### d)
 **Given:** from the source (NASA, checked 16 Nov 2026) the electrical energy generated by the solar arrays in a year $E = 735\,000\,\text{kWh}$; time $t = 365\,\text{d}$
@@ -489,7 +527,11 @@ $$
 ### e)
 **Find:** why the station needs batteries and why the mean power alone does not tell whether there is enough electricity at every moment
 **Principle:** A solar array generates electricity only when sunlight falls on it. The mean power $P = \tfrac{E}{t}$ does not tell how the power varies during the time $t$ (chapter *Electrical energy at home*).
-**Model answer:** The station goes round the Earth in $92\,\text{min}$, almost $16$ times a day. On almost every orbit it passes through the shadow of the Earth, because the Earth comes between the Sun and the station. In a low orbit the shadow covers a large part of the orbit. When the Sun is in the plane of the orbit, the station is at the edge of the shadow when its direction, seen from the centre of the Earth, differs from the direction pointing straight away from the Sun by the angle $\theta$ for which $\sin\theta = \tfrac{R}{r}$, so $\theta \approx 70.2^\circ$. The share $\tfrac{2\theta}{360^\circ} \approx 39\,\%$ of the orbit, about $36\,\text{min}$, is then in the shadow. In the shadow the arrays generate no electricity, but the equipment of the station needs it all the time. So the batteries are charged in sunlight, and in the shadow they feed the equipment. The $84\,\text{kW}$ of part d is a mean that hides this variation: the output is zero in the shadow and above the mean in sunlight. If the station is in the shadow $39\,\%$ of the time, the arrays must generate on average $\tfrac{84\,\text{kW}}{0.61} \approx 140\,\text{kW}$ in sunlight. Without energy storage the electricity would be cut off about every $92\,\text{min}$.
+**Model answer:** The station goes round the Earth in $92\,\text{min}$, almost $16$ times a day. On almost every orbit it passes through the shadow of the Earth, because the Earth comes between the Sun and the station. In a low orbit the shadow covers a large part of the orbit.
+
+When the Sun is in the plane of the orbit, the station is at the edge of the shadow when its direction, seen from the centre of the Earth, differs from the direction pointing straight away from the Sun by the angle $\theta$ for which $\sin\theta = \tfrac{R}{r}$, so $\theta \approx 70.2^\circ$. The share $\tfrac{2\theta}{360^\circ} \approx 39\,\%$ of the orbit, about $36\,\text{min}$, is then in the shadow. In the shadow the arrays generate no electricity, but the equipment of the station needs it all the time.
+
+So the batteries are charged in sunlight, and in the shadow they feed the equipment. The $84\,\text{kW}$ of part d is a mean that hides this variation: the output is zero in the shadow and above the mean in sunlight. If the station is in the shadow $39\,\%$ of the time, the arrays must generate on average $\tfrac{84\,\text{kW}}{0.61} \approx 140\,\text{kW}$ in sunlight. Without energy storage the electricity would be cut off about every $92\,\text{min}$.
 
 ### Yleisiä virheitä
 - In part a the height $400\,\text{km}$ is taken as the radius of the orbit instead of $R + h$, or the period is not converted into seconds.
@@ -531,7 +573,9 @@ $$. The radius is plausible for a bend of a road.
 ### b)
 **Given:** mass of the car $m = 1200\,\text{kg}$, speed $v = 15\,\text{m/s}$ and the point of the graph $a_\text{n} = 3.0\,\text{m/s}^2$; $g = 9.81\,\text{m/s}^2$
 **Find:** the friction force $F$
-**Principle:** Choose the car as the body. In the free-body diagram the forces on it are the weight $\overline{G}$ down, the normal force of the road $\overline{N}$ up and the static friction of the tyres $\overline{F}$ horizontally towards the centre of the bend. The friction is static friction, because the tyres do not slip on the road. There is no centrifugal force, because no body acts on the car with such a force. Choose the $x$ axis towards the centre and the $y$ axis up. In the vertical direction the car does not accelerate, so $N - G = 0$. In the horizontal direction the acceleration is the centripetal acceleration: $\Sigma F_x = ma_\text{n}$ (chapter *Centripetal acceleration and the equation of motion in a circle*).
+**Principle:** Choose the car as the body. In the free-body diagram the forces on it are the weight $\overline{G}$ down, the normal force of the road $\overline{N}$ up and the static friction of the tyres $\overline{F}$ horizontally towards the centre of the bend. The friction is static friction, because the tyres do not slip on the road.
+
+There is no centrifugal force, because no body acts on the car with such a force. Choose the $x$ axis towards the centre and the $y$ axis up. In the vertical direction the car does not accelerate, so $N - G = 0$. In the horizontal direction the acceleration is the centripetal acceleration: $\Sigma F_x = ma_\text{n}$ (chapter *Centripetal acceleration and the equation of motion in a circle*).
 **Formula:** $\Sigma F_x = F = ma_\text{n}$
 **Conversions:** Finally $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $$
@@ -605,7 +649,9 @@ $$and the greatest possible friction is $$
 \mu_\text{s} mg &= 0.50 \cdot 1500\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
 &\approx 7400\,\text{N}
 \end{aligned}
-$$. So the heavier car needs a larger friction force, but the tyres give proportionally as much more: both are proportional to the mass, and the friction needed is still about $61\,\%$ of the greatest. The load does not make the bend more slippery.
+$$.
+
+So the heavier car needs a larger friction force, but the tyres give proportionally as much more: both are proportional to the mass, and the friction needed is still about $61\,\%$ of the greatest. The load does not make the bend more slippery.
 
 ### Yleisiä virheitä
 - In part a the numbers are divided the wrong way ($r = a_\text{n} : v^2$), or the speed is not squared.
@@ -633,7 +679,9 @@ $$ at a speed of about $19\,\text{m/s}$.
 ### a)
 **Given:** mass of the sign $m_\text{s} = 18\,\text{kg}$, mass of the rod $m_\text{t} = 3.0\,\text{kg}$, length of the rod $L = 1.20\,\text{m}$ and the angle between the cable and the rod $\theta = 30.0^\circ$; $g = 9.81\,\text{m/s}^2$
 **Find:** the force $T$ of the cable
-**Principle:** Choose the rod and the sign as the body. In the free-body diagram the weight of the sign $\overline{G}_\text{s}$ points down from the end of the rod, the weight of the rod $\overline{G}_\text{t}$ down from the middle of the rod, the force of the cable $\overline{T}$ obliquely up towards the wall from the end of the rod and the force of the hinge $\overline{F}_\text{s}$ at the hinge. The body is at rest, so it is in equilibrium: the sum of the forces and the sum of the moments are zero (chapter *Equilibrium of a body: forces and moments*). The hinge is chosen as the pivot, because about it the lever arm of the unknown force of the hinge is zero. The weight of the rod acts at its centre of gravity, which for a uniform rod is at the middle, at the distance $\tfrac{L}{2}$. The component of the cable force perpendicular to the rod, $T\sin\theta$, turns the rod with the lever arm $L$. The weights turn it the opposite way.
+**Principle:** Choose the rod and the sign as the body. In the free-body diagram the weight of the sign $\overline{G}_\text{s}$ points down from the end of the rod, the weight of the rod $\overline{G}_\text{t}$ down from the middle of the rod, the force of the cable $\overline{T}$ obliquely up towards the wall from the end of the rod and the force of the hinge $\overline{F}_\text{s}$ at the hinge. The body is at rest, so it is in equilibrium: the sum of the forces and the sum of the moments are zero (chapter *Equilibrium of a body: forces and moments*).
+
+The hinge is chosen as the pivot, because about it the lever arm of the unknown force of the hinge is zero. The weight of the rod acts at its centre of gravity, which for a uniform rod is at the middle, at the distance $\tfrac{L}{2}$. The component of the cable force perpendicular to the rod, $T\sin\theta$, turns the rod with the lever arm $L$. The weights turn it the opposite way.
 **Reading the graph:** The length of the rod $L = 1.20\,\text{m}$ and the angle between the cable and the rod $\theta = 30.0^\circ$ are read from the figure.
 **Formula:** The sum of the moments about the hinge is zero: $$
 \begin{aligned}

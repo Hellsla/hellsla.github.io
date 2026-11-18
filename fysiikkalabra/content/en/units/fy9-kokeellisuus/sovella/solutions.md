@@ -5,7 +5,9 @@
 **Principle:** Grip means static friction, which keeps the shoe from starting to slide. The maximum (fully developed) static friction is $\mu_0 N$, so it depends both on the surfaces and on how hard the shoe presses on the floor. The shoes have different weights, so the coefficient of static friction $\mu_0$, which describes only the surfaces, is suitable for the comparison. In a fair test only the shoe changes.
 **Model answer:** *Measured quantity.* I compare the coefficients of static friction of the shoes against the floor board. The coefficient does not depend on the weight of the shoe, so shoes of different weights can be compared.
 
-*Measurement (tilting method).* I place the shoe on the board and put the same mass inside it, for example $1\,\text{kg}$, so that the sole presses against the board as in a game. I raise one end of the board slowly and steadily until the shoe starts to slide, and read the angle $\alpha_0$ of the board with the inclinometer at exactly that moment. If the angle becomes so large that the measurement fails, I use the pulling method: the board horizontal, the shoe is pulled horizontally with the spring balance, and I read the largest reading just before it starts to move. In that case the mass of the shoe and the mass inside it is weighed on the kitchen scale.
+*Measurement (tilting method).* I place the shoe on the board and put the same mass inside it, for example $1\,\text{kg}$, so that the sole presses against the board as in a game. I raise one end of the board slowly and steadily until the shoe starts to slide, and read the angle $\alpha_0$ of the board with the inclinometer at exactly that moment.
+
+If the angle becomes so large that the measurement fails, I use the pulling method: the board horizontal, the shoe is pulled horizontally with the spring balance, and I read the largest reading just before it starts to move. In that case the mass of the shoe and the mass inside it is weighed on the kitchen scale.
 
 *Kept constant:* the same board and the same spot on it, a clean and dry surface (I wipe off dust before every measurement), the same mass inside the shoe, the same position of the shoe and equally slow tilting or pulling. The room temperature and humidity stay the same when the measurements are made on the same day.
 
@@ -75,7 +77,9 @@ I use the initial part of the graph, because when the oil becomes warmer than it
 **Principle:** The calculation assumes that all the energy $P\,\Delta t$ heats the oil. The losses are a systematic error, which always takes the result in the same direction.
 **Model answer:** Part of the energy from the resistor heats the vacuum flask and the surrounding air, so the temperature of the oil rises more slowly than without losses. The slope $k$ is therefore too small, and $c = \tfrac{P}{mk}$ comes out **too large**. The error is systematic, so repeating the measurement does not remove it.
 
-The effect is reduced by keeping the lid closed and the container insulated, by measuring over a short temperature range and by using only the initial part of the graph, as in part b. An alternative is to start a few degrees below room temperature and fit the line to the whole measurement: then the oil gains roughly as much energy from the surroundings at the beginning as it loses at the end. In addition, the same measurement can be made with water: since the specific heat capacity of water is known, one sees how much the container and the losses change the result, and the result for the oil can be corrected.
+The effect is reduced by keeping the lid closed and the container insulated, by measuring over a short temperature range and by using only the initial part of the graph, as in part b.
+
+An alternative is to start a few degrees below room temperature and fit the line to the whole measurement: then the oil gains roughly as much energy from the surroundings at the beginning as it loses at the end. In addition, the same measurement can be made with water: since the specific heat capacity of water is known, one sees how much the container and the losses change the result, and the result for the oil can be corrected.
 
 ### Yleisiä virheitä
 - The temperature is measured only at the beginning and at the end, so no graph can be drawn and it cannot be seen where the losses start to grow.
@@ -270,7 +274,9 @@ Density alone does not prove the rock type, however: the table values are typica
 **Principle:** The relative uncertainties tell which measurement affects the result most. It pays to improve the precision of the measurement whose relative uncertainty is largest.
 **Model answer:** The relative uncertainty of the mass is $0.1\,\text{g} : 187.4\,\text{g} \approx 0.05\,\%$ and that of the volume $2\,\text{cm}^3 : 70\,\text{cm}^3 \approx 3\,\%$. The volume therefore limits the result about 50 times more than the mass, and a more precise balance would not help.
 
-The uncertainty of the volume is reduced with a narrower measuring cylinder whose scale division is, for example, $1\,\text{m}\textsf{l}$ or smaller, if the stone fits in it. Another way is an overflow can: the stone is lowered into a full can, the overflowing water is collected and weighed, and $V = \tfrac{m_\text{water}}{\rho_\text{water}}$. The uncertainty of the weighing is only $0.1\,\text{g}$, but the water left in the spout and on the walls of the can brings a larger uncertainty, about $0.5\,\text{cm}^3$, so the method is more precise than the measuring cylinder only when done carefully. Air bubbles, which would otherwise increase the volume, are removed from the surface of the stone.
+The uncertainty of the volume is reduced with a narrower measuring cylinder whose scale division is, for example, $1\,\text{m}\textsf{l}$ or smaller, if the stone fits in it.
+
+Another way is an overflow can: the stone is lowered into a full can, the overflowing water is collected and weighed, and $V = \tfrac{m_\text{water}}{\rho_\text{water}}$. The uncertainty of the weighing is only $0.1\,\text{g}$, but the water left in the spout and on the walls of the can brings a larger uncertainty, about $0.5\,\text{cm}^3$, so the method is more precise than the measuring cylinder only when done carefully. Air bubbles, which would otherwise increase the volume, are removed from the surface of the stone.
 
 ### Yleisiä virheitä
 - The final reading $190\,\text{m}\textsf{l}$ is taken as the volume of the stone instead of the rise of the water level.

@@ -35,7 +35,9 @@ $$ reaches the devices, which is enough for almost three days.
 ### c)
 **Find:** whether the neighbour's conclusion about the panels' daily energy is correct
 **Principle:** Power tells how fast energy is transformed, and energy is power multiplied by time (chapter *Power*). The rated power of a panel is the maximum power it gives in bright sunshine.
-**Model answer:** The claim is wrong, because it mixes up power and energy. The kilowatt is a unit of power and the kilowatt-hour a unit of energy: $1.2\,\text{kW}$ means that the panels can produce at most $1.2\,\text{kWh}$ *per hour*. The day's energy is the average power multiplied by the time, and it depends on how long and how strongly the sun shines. According to the data, on a sunny day the panels produced $5.4\,\text{kWh}$, which corresponds to $5.4\,\text{kWh} : 1.2\,\text{kW} = 4.5$ hours at full power. On a cloudy day the production of $1.5\,\text{kWh}$ corresponded to only about one hour. The neighbour's number happens to be close to the cloudy day, but the reasoning is wrong.
+**Model answer:** The claim is wrong, because it mixes up power and energy. The kilowatt is a unit of power and the kilowatt-hour a unit of energy: $1.2\,\text{kW}$ means that the panels can produce at most $1.2\,\text{kWh}$ *per hour*. The day's energy is the average power multiplied by the time, and it depends on how long and how strongly the sun shines.
+
+According to the data, on a sunny day the panels produced $5.4\,\text{kWh}$, which corresponds to $5.4\,\text{kWh} : 1.2\,\text{kW} = 4.5$ hours at full power. On a cloudy day the production of $1.5\,\text{kWh}$ corresponded to only about one hour. The neighbour's number happens to be close to the cloudy day, but the reasoning is wrong.
 
 ### Yleisiä virheitä
 - The average power of the fridge is multiplied by only a few hours, because the compressor does not run all the time; the average power already takes this into account.
@@ -86,7 +88,9 @@ $$.
 ### d)
 **Find:** why the overall efficiency falls in summer, when little district heat is needed
 **Principle:** Efficiency depends on what is counted as useful (chapter *Efficiency*). A heat engine cannot turn all heat into electricity; part must be given off to the colder surroundings (chapter *Energy production and the efficiency of power plants*).
-**Model answer:** Heat must in any case be removed from the steam cycle in the condenser when the plant produces electricity. In winter this heat warms district heating water and counts as useful, so the overall efficiency is about $90\,\%$. In summer district heat is needed only for tap water, so most of the condenser's heat must be given off to the surroundings, for example to cooling water, as waste heat. If the electrical power stays at $30\,\text{MW}$, about the same amount of fuel is still used, but less of it is useful, and the overall efficiency falls towards the electrical efficiency. That is why a combined heat and power plant is run according to the heat demand: in summer at a lower power or not at all, and the electricity is produced elsewhere.
+**Model answer:** Heat must in any case be removed from the steam cycle in the condenser when the plant produces electricity. In winter this heat warms district heating water and counts as useful, so the overall efficiency is about $90\,\%$. In summer district heat is needed only for tap water, so most of the condenser's heat must be given off to the surroundings, for example to cooling water, as waste heat.
+
+If the electrical power stays at $30\,\text{MW}$, about the same amount of fuel is still used, but less of it is useful, and the overall efficiency falls towards the electrical efficiency. That is why a combined heat and power plant is run according to the heat demand: in summer at a lower power or not at all, and the electricity is produced elsewhere.
 
 ### Yleisiä virheitä
 - The tonnes per hour are divided directly by the hour without conversions, so the power is obtained in the unit $\text{MJ/h}$ and compared with megawatts.
@@ -220,7 +224,9 @@ $$
 ### d)
 **Find:** the outdoor temperature at which, according to the model, no heating is needed, and why it is not $21\,{}^\circ\text{C}$
 **Principle:** When no heating is needed, the consumption is just the other electricity consumption, $E_\text{other} = 12\,\text{kWh}$, so from the line $E = E_0 + kT$ we solve $T = \dfrac{E_\text{other} - E_0}{k}$. Energy is conserved: all the electrical energy used indoors finally becomes internal energy of the house, and the people and solar radiation also bring energy into the house (chapter *Forms of energy and conservation of energy*).
-**Model answer:** From the extended line we read that the consumption falls to the level of the other consumption, $12\,\text{kWh}$, at about $16$–$17\,{}^\circ\text{C}$ ($T = \dfrac{E_\text{other} - E_0}{k} = \dfrac{12\,\text{kWh} - 93\,\text{kWh}}{-4.9\,\text{kWh}/{}^\circ\text{C}} = 16.5\,{}^\circ\text{C}$ from the equation of the line). So the house needs heating only when it is colder outside. The temperature is about $4\,\text{K}$ below the indoor temperature $21\,{}^\circ\text{C}$, because the electrical energy of lighting, cooking and appliances becomes internal energy in the house. In addition, the residents warm the house, and solar radiation through the windows adds energy. These make up for the heat losses of a small temperature difference, so the heaters are needed only to cover the rest. The result is indicative: it is based on a line of winter days extended far beyond the measured range, and the data do not separate the sun and the wind.
+**Model answer:** From the extended line we read that the consumption falls to the level of the other consumption, $12\,\text{kWh}$, at about $16$–$17\,{}^\circ\text{C}$ ($T = \dfrac{E_\text{other} - E_0}{k} = \dfrac{12\,\text{kWh} - 93\,\text{kWh}}{-4.9\,\text{kWh}/{}^\circ\text{C}} = 16.5\,{}^\circ\text{C}$ from the equation of the line). So the house needs heating only when it is colder outside. The temperature is about $4\,\text{K}$ below the indoor temperature $21\,{}^\circ\text{C}$, because the electrical energy of lighting, cooking and appliances becomes internal energy in the house.
+
+In addition, the residents warm the house, and solar radiation through the windows adds energy. These make up for the heat losses of a small temperature difference, so the heaters are needed only to cover the rest. The result is indicative: it is based on a line of winter days extended far beyond the measured range, and the data do not separate the sun and the wind.
 
 ### Yleisiä virheitä
 - The points are joined into a broken line in the order of the dates, so the graph does not show the dependence on temperature.
@@ -237,12 +243,15 @@ $$
 ### a)
 **Find:** whether two wind turbines and a battery are enough to replace the diesel power plant
 **Principle:** The year's energy is the average power multiplied by the hours of the year (chapter *Ways of producing energy and how they compare*). In an electricity grid, however, production must match consumption at every moment, so besides energy the power and the storage must be examined.
-**Model answer:** The average power of the wind turbines is $P_\text{avg} = k\,N\,P_\text{nom}$ and the energy in a year $E = P_\text{avg}\,t$, where the average is the share $k = 0.30$ of the nominal power, there are $N = 2$ turbines and the nominal power is $P_\text{nom} = 1.0\,\text{MW}$. The average power is $0.30 \cdot 2 \cdot 1.0\,\text{MW} = 0.60\,\text{MW}$, so in a year they produce $0.60\,\text{MW} \cdot 8760\,\text{h} \approx 5.3\,\text{GWh}$. That is more than the island's consumption of $3.0\,\text{GWh}$, so the first part of the claim holds for the year's energy. Electricity, however, cannot be used at the time it is produced on average over the year: in calm weather the wind turbines produce nothing. A full battery covers the winter peak consumption for only $2.0\,\text{MWh} : 1.2\,\text{MW} \approx 1.7$ hours, and a calm frosty period can last for days. So the diesel plant cannot be dismantled unless the island gets other dispatchable power or a connection to the mainland grid.
+**Model answer:** The average power of the wind turbines is $P_\text{avg} = k\,N\,P_\text{nom}$ and the energy in a year $E = P_\text{avg}\,t$, where the average is the share $k = 0.30$ of the nominal power, there are $N = 2$ turbines and the nominal power is $P_\text{nom} = 1.0\,\text{MW}$. The average power is $0.30 \cdot 2 \cdot 1.0\,\text{MW} = 0.60\,\text{MW}$, so in a year they produce $0.60\,\text{MW} \cdot 8760\,\text{h} \approx 5.3\,\text{GWh}$. That is more than the island's consumption of $3.0\,\text{GWh}$, so the first part of the claim holds for the year's energy.
+
+Electricity, however, cannot be used at the time it is produced on average over the year: in calm weather the wind turbines produce nothing. A full battery covers the winter peak consumption for only $2.0\,\text{MWh} : 1.2\,\text{MW} \approx 1.7$ hours, and a calm frosty period can last for days. So the diesel plant cannot be dismantled unless the island gets other dispatchable power or a connection to the mainland grid.
 
 ### b)
 **Find:** a comparison of the options on at least three criteria and a reasoned recommendation
 **Principle:** Production methods are compared on the same criteria: controllability and security of supply, emissions, transport and storage of fuel, and price (chapters *Ways of producing energy and how they compare* and *Energy production, the environment and climate change*).
 **Model answer:**
+
 - *Controllability and security of supply.* The diesel power plant is controllable and covers the peak ($1.5\,\text{MW} > 1.2\,\text{MW}$). Wind power depends on the weather, and the battery does not cover a long calm. The cable brings the dispatchable power of the whole mainland grid to the island, and its $5\,\text{MW}$ covers the peak.
 - *Emissions.* Diesel produces about $2100\,\text{t}$ of carbon dioxide a year (part c). The life-cycle emissions of wind power are only a small fraction of that, and the emissions of the cable's electricity depend on the production methods on the mainland.
 - *Transport and losses.* Diesel must be brought by ship, which is expensive and vulnerable to an icy winter. The transmission loss of the cable is only about $3\,\%$: for the island's $3.0\,\text{GWh}$, about $3.1\,\text{GWh}$ is sent from the mainland.
@@ -260,7 +269,9 @@ m &= e \cdot E \\
 &\cdot 10^{6}\,\text{kWh} \\
 &= 2.1 \cdot 10^{9}\,\text{g}
 \end{aligned}
-$$. Substituting $1\,\text{g} = 10^{-6}\,\text{t}$: the emissions are about $2100\,\text{t}$ of carbon dioxide a year. A wind turbine burns nothing in operation, but manufacturing its steel and concrete, transporting it, building it and dismantling it cause emissions. So its life-cycle emission factor is a few tens of grams per kilowatt-hour or less, not zero. The claim is therefore inaccurate: wind power is low-emission, and its emissions are only a fraction of the emissions of diesel, but it is not completely emission-free.
+$$. Substituting $1\,\text{g} = 10^{-6}\,\text{t}$: the emissions are about $2100\,\text{t}$ of carbon dioxide a year. A wind turbine burns nothing in operation, but manufacturing its steel and concrete, transporting it, building it and dismantling it cause emissions.
+
+So its life-cycle emission factor is a few tens of grams per kilowatt-hour or less, not zero. The claim is therefore inaccurate: wind power is low-emission, and its emissions are only a fraction of the emissions of diesel, but it is not completely emission-free.
 
 ### Yleisiä virheitä
 - In part a the wind turbines' annual energy is calculated with the rated power ($2.0\,\text{MW} \cdot 8760\,\text{h} = 17.5\,\text{GWh}$), so the average power is not taken into account.
@@ -284,6 +295,7 @@ $$. Substituting $1\,\text{g} = 10^{-6}\,\text{t}$: the emissions are about $210
 **Find:** whether the conclusion is justified, the most important sources of error in the measurement and the direction of their effect
 **Principle:** A conclusion is justified only if the difference from the claimed value is greater than the uncertainty of the result (chapter *Measuring and the reliability of a measurement*). The effect of a source of error is assessed by calculating the result again with a changed value.
 **Model answer:** The group's conclusion is not justified, because the uncertainty of the result is several percentage points and the measurement was made only once.
+
 - *Power from the rating plate.* The power on the rating plate is a nominal value, not a measured one, and the actual power depends on the mains voltage. If it were $2100\,\text{W}$, the efficiency would be $87\,\%$; if above $2200\,\text{W}$, the result would be below $83\,\%$. The electrical energy should be measured with an energy meter.
 - *Final temperature.* The water boiled, that is, it was at about $100\,{}^\circ\text{C}$ when the kettle switched off, but the temperature was measured only after the lid was opened. The measurement gives too small a temperature difference and therefore too small an efficiency; with $100\,{}^\circ\text{C}$ the result would be $88\,\%$.
 - *Amount of water.* The scale of the jug is inaccurate. If there was $1.05\,\text{kg}$ of water, the result would be $88\,\%$; if $0.95\,\text{kg}$, it would be $79\,\%$. The water should be weighed.
@@ -295,6 +307,7 @@ The late reading of the final temperature certainly makes the result smaller. Th
 **Find:** an experimental plan to find out whether the efficiency depends on the amount of water
 **Principle:** In the experiment only one variable, the amount of water, is changed and the others are kept constant. The quantities are measured as directly as possible, and the measurements are repeated so that the size of the random variation can be seen (chapter *Measuring and the reliability of a measurement*).
 **Model answer:**
+
 - *Variables.* The quantity changed is the mass of the water, for example $0.50\,\text{kg}$, $0.75\,\text{kg}$, $1.0\,\text{kg}$, $1.25\,\text{kg}$ and $1.5\,\text{kg}$. Kept constant are the same kettle, the same initial temperature (water from the same container), the lid closed and the initial temperature of the kettle: the jug is allowed to cool to room temperature or is rinsed with cold water between measurements.
 - *Measurements.* The water is weighed on a balance. The kettle is connected through an energy meter, which shows the electrical energy directly. Heating is stopped before boiling, for example when the temperature of the stirred water is $80\,{}^\circ\text{C}$, so that evaporation does not distort the result; the temperature is measured immediately after switching off, while stirring.
 - *Repetitions and results.* Each amount of water is measured three times. The efficiency is calculated with the formula $\eta = \tfrac{cm\Delta T}{E}$, and the results are presented in a graph of the efficiency as a function of the amount of water, with the spread of the repetitions.
@@ -360,7 +373,9 @@ $$, the same as the product of the efficiencies. About a quarter of the energy b
 ### d)
 **Find:** whether the claim “the plant produces $216\,\text{MWh}$ of electricity every day” holds, and why the plant can still be useful
 **Principle:** Energy is conserved: as electricity the plant can give at most the energy stored in it by pumping, and because of the losses less (chapter *Forms of energy and conservation of energy*). A store shifts energy in time (chapter *Transferring energy: electricity and heat*).
-**Model answer:** The claim is misleading. A pumped-storage plant does not produce energy but stores it: in each filling and emptying it takes about $289\,\text{MWh}$ from the grid and gives back about $216\,\text{MWh}$, so about $73\,\text{MWh}$ becomes internal energy, which is transferred to the surroundings as heat. The plant is still useful, because it shifts energy in time. It is filled when electricity is plentiful and cheap, for example on a windy night, and emptied at the time of peak consumption or in calm weather, when electricity is scarce. As hydropower it is also quickly controllable power, which weather-dependent wind power needs alongside it. A correct wording would be: “The plant gives $216\,\text{MWh}$ to the grid from the $289\,\text{MWh}$ it took, later, when electricity is needed.”
+**Model answer:** The claim is misleading. A pumped-storage plant does not produce energy but stores it: in each filling and emptying it takes about $289\,\text{MWh}$ from the grid and gives back about $216\,\text{MWh}$, so about $73\,\text{MWh}$ becomes internal energy, which is transferred to the surroundings as heat. The plant is still useful, because it shifts energy in time.
+
+It is filled when electricity is plentiful and cheap, for example on a windy night, and emptied at the time of peak consumption or in calm weather, when electricity is scarce. As hydropower it is also quickly controllable power, which weather-dependent wind power needs alongside it. A correct wording would be: “The plant gives $216\,\text{MWh}$ to the grid from the $289\,\text{MWh}$ it took, later, when electricity is needed.”
 
 ### Yleisiä virheitä
 - In part a the mass is calculated directly from the volume without the density, or the kilometres are not converted to metres.
@@ -400,7 +415,9 @@ Lucid Air: $$
 &= -0.458
 \end{aligned}
 $$
-**Answer:** The measured range was $28.9\,\%$ shorter than the stated one for the Hyundai Inster, $42.9\,\%$ for the Tesla Model Y and $45.8\,\%$ for the Lucid Air, that is, about $29\,\%$, $43\,\%$ and $46\,\%$. Three significant figures match the distances read from the chart, and whole per cents are enough for the comparison. The comparison shows that every car drove a clearly shorter distance in the frost than stated and that the deviation varied from car to car from about $30\,\%$ to almost a half.
+**Answer:** The measured range was $28.9\,\%$ shorter than the stated one for the Hyundai Inster, $42.9\,\%$ for the Tesla Model Y and $45.8\,\%$ for the Lucid Air, that is, about $29\,\%$, $43\,\%$ and $46\,\%$.
+
+Three significant figures match the distances read from the chart, and whole per cents are enough for the comparison. The comparison shows that every car drove a clearly shorter distance in the frost than stated and that the deviation varied from car to car from about $30\,\%$ to almost a half.
 **Reasonableness:** The mean of the deviations of the three cars is $39.2\,\%$, close to the average of all the cars given by the source, $38\,\%$. One of the chosen cars is below the average and two are above it, as it should be when both short-range and long-range cars are included.
 
 ### b)
@@ -419,7 +436,9 @@ E_{100,\text{c}} &= \dfrac{75\,\text{kWh} \cdot 100\,\text{km}}{279\,\text{km}} 
 \end{aligned}
 $$
 **Answer:** The consumption is about $17\,\text{kWh}$ in mild weather and about $27\,\text{kWh}$ in frost per hundred kilometres, two significant figures like the battery energy $75\,\text{kWh}$ and the loss $38\,\%$. The assumption does not hold exactly: a cold battery gives less energy than a warm one. Part of the loss of range therefore comes from the smaller energy and not from a larger consumption, so the real consumption grows less than the model gives.
-**Reasonableness:** In the model the consumption grows by the factor $\tfrac{1}{0.62} \approx 1.6$, that is, by more than $38\,\%$, because the same energy is divided over a shorter distance. The measured consumptions of the source, $21.2\,\text{kWh}$ and $21.6\,\text{kWh}$ per hundred kilometres, are of the same order of magnitude but smaller than the model's $27\,\text{kWh}$. The measured consumptions are, however, those of other cars than the model car, so they show only the order of magnitude. Energy per distance is also a force, because $W = Fs$: $$
+**Reasonableness:** In the model the consumption grows by the factor $\tfrac{1}{0.62} \approx 1.6$, that is, by more than $38\,\%$, because the same energy is divided over a shorter distance. The measured consumptions of the source, $21.2\,\text{kWh}$ and $21.6\,\text{kWh}$ per hundred kilometres, are of the same order of magnitude but smaller than the model's $27\,\text{kWh}$.
+
+The measured consumptions are, however, those of other cars than the model car, so they show only the order of magnitude. Energy per distance is also a force, because $W = Fs$: $$
 \begin{aligned}
 \dfrac{E}{s} &= \dfrac{75 \cdot 1000\,\text{W} \cdot 3600\,\text{s}}{450 \cdot 1000\,\text{m}} \\
 &= 600\,\text{N}
@@ -441,7 +460,9 @@ The energy used for heating and the energy that becomes internal energy of the b
 ### d)
 **Find:** why the largest deviation of the car that drove the furthest does not show that the car withstands frost worse than the others
 **Principle:** Two measurement results can be compared only if they were measured in the same conditions. If the conditions change together with the object studied, the difference does not tell which of them caused it (chapter *Measuring and the reliability of a measurement*).
-**Model answer:** The cars did not drive in the same conditions. According to the source (checked 16 Nov 2026) the temperature fell along the route from about $-7\,{}^\circ\text{C}$ in Oslo to $-32\,{}^\circ\text{C}$ at Folldal. The short-range Hyundai Inster stopped already at a point where it was $-16\,{}^\circ\text{C}$, so it drove its whole distance in the milder first part of the route. The Lucid Air drove $520\,\text{km}$, the furthest, so it drove a large part of its distance on the coldest section of the route and was in the frost the longest. Its heating took energy from the battery for the longest time and with the largest temperature difference. A large percentage therefore tells at least partly about the conditions and not only about the car. The cars cannot be ranked by how well they withstand frost by comparing the percentages directly.
+**Model answer:** The cars did not drive in the same conditions. According to the source (checked 16 Nov 2026) the temperature fell along the route from about $-7\,{}^\circ\text{C}$ in Oslo to $-32\,{}^\circ\text{C}$ at Folldal. The short-range Hyundai Inster stopped already at a point where it was $-16\,{}^\circ\text{C}$, so it drove its whole distance in the milder first part of the route.
+
+The Lucid Air drove $520\,\text{km}$, the furthest, so it drove a large part of its distance on the coldest section of the route and was in the frost the longest. Its heating took energy from the battery for the longest time and with the largest temperature difference. A large percentage therefore tells at least partly about the conditions and not only about the car. The cars cannot be ranked by how well they withstand frost by comparing the percentages directly.
 
 ### e)
 **Find:** why one winter test is not enough to predict the range of a particular car in all winter conditions, and how the test could be improved

@@ -497,7 +497,7 @@
     "Vastaus kertoo, että virhe, joka on joka lukemassa sama (esimerkiksi viivaimen nollakohta), siirtää suoraa muttei muuta kulmakerrointa.",
     "Vastaus kertoo, että kuvaajasta näkee, sopiiko malli (pisteet ovat suoralla) ja onko joukossa selvästi poikkeava piste."
    ],
-   "model": "Kun $k$ lasketaan erikseen jokaisesta mittauksesta, jokaisen lukeman virhe menee suoraan tulokseen. Jos venymä on joka kerta luettu $1\\,\\text{cm}$ liian suureksi, jokainen $k$ on liian pieni, eikä keskiarvo korjaa sitä. Kuvaajassa sama virhe siirtää koko suoraa, mutta kulmakerroin ei muutu, joten $k$ saadaan oikein, ja virhe näkyy vakioterminä. Suora sovitetaan kaikkien pisteiden lomitse, joten yksittäisen pisteen satunnaisvirhe vaikuttaa vähemmän. Lisäksi kuvaajasta näkee heti, ovatko pisteet suoralla eli sopiiko malli, ja erottuuko joukosta poikkeava piste, joka pitää tarkistaa.",
+   "model": "Kun $k$ lasketaan erikseen jokaisesta mittauksesta, jokaisen lukeman virhe menee suoraan tulokseen. Jos venymä on joka kerta luettu $1\\,\\text{cm}$ liian suureksi, jokainen $k$ on liian pieni, eikä keskiarvo korjaa sitä.\n\nKuvaajassa sama virhe siirtää koko suoraa, mutta kulmakerroin ei muutu, joten $k$ saadaan oikein, ja virhe näkyy vakioterminä. Suora sovitetaan kaikkien pisteiden lomitse, joten yksittäisen pisteen satunnaisvirhe vaikuttaa vähemmän. Lisäksi kuvaajasta näkee heti, ovatko pisteet suoralla eli sopiiko malli, ja erottuuko joukosta poikkeava piste, joka pitää tarkistaa.",
    "practice": "Kertaa suoran sovittaminen ja vakiotermi luvussa [*Graafinen esitys ja suoran sovittaminen*](fy1-4.html)."
   },
   {
