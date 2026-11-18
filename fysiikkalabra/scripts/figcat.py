@@ -55,11 +55,15 @@ def owners():
         if (sov / "figures.py").is_file(): out.append((f"{courses.slug(code)}-sovella", sov, ROOT / "content" / i18n.SOURCE / code / "sovella"))
         koe = ROOT / "lessons" / code / "koe"
         if (koe / "figures.py").is_file(): out.append((f"{courses.slug(code)}-koe", koe, ROOT / "content" / i18n.SOURCE / code / "koe"))
+    for u in sorted((ROOT / "lessons" / "units").glob("*/sovella")):   # the task set of a course unit (FY9): id <unit>-sovella
+        out.append((f"{u.parent.name}-sovella", u, ROOT / "content" / i18n.SOURCE / "units" / u.parent.name / "sovella"))
     return [o for o in out if (o[1] / "figures.py").is_file()]
 
 
 def owner(oid):
     """(code folder, text folder) of an owner id, or None."""
+    if oid.endswith("-sovella") and (ROOT / "lessons" / "units" / oid[:-8] / "sovella").is_dir():
+        return ROOT / "lessons" / "units" / oid[:-8] / "sovella", ROOT / "content" / i18n.SOURCE / "units" / oid[:-8] / "sovella"
     m = re.match(r"^([a-z]+\d+)-(sovella|koe)$", oid)
     if m:
         code, sub = m.group(1).upper(), m.group(2); return ROOT / "lessons" / code / sub, ROOT / "content" / i18n.SOURCE / code / sub
