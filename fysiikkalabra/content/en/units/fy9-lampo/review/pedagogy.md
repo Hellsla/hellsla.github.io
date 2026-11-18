@@ -1,12 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 1ba6c1be5bf94f0c
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: ad5c49a24f6cfce2
+SCOPE: delta (new tasks fy9-lampo-s7 and s8, changed intro); s1–s6 not re-judged
 
 ## Blocking
-- (none)
+None.
 
 ## Polish
-- (none)
+- s8 d asks "What mass" (answer kg), but fi/fi-easy ask "kuinka suuri osa" (fraction): fidelity gap; fix the Finnish.
+- s7 a–c: the task text gives power, mass and c of aluminium only as context; the figure (heating-line) is needed and its description gives the end points but no slope or c, so the structure (slope, then Pt = cm dT) is not revealed. Good.
+- s7 b: "Voisiko kappale olla alumiinia?" is fine; the solution rightly notes the graph does not prove it.
 
 ## Checked
-- solutions.md common mistake, part d: "does not turn into internal energy at all" is a quoted wrong claim and reads consistently with the part c line above it. One hunk, no added task.
+- Task text does not name the model or give the solution's steps; s8 b/c/d require the student to read the flat part and combine stages (3 parts of rising demand, d needs the a result).
+- Solutions follow rule 7: given/asked, principle, symbolic formula before numbers, conversions, substitution with units, answer with significant figures, reasonableness; graph reading shown; common mistakes real (e.g. 220 kJ as melting energy, 120 kJ giving 0,36 kg).
+- Rubrics: points sum per part (3/4/4/3 and 4/5/4/3), no points for irrelevant things, tolerances fit the data (358 s and table c accepted).
+- Figure ids fy3-6/heating-line and fy3-7/melting-curve match the catalog; values 20 to 60 °C in 180 s, -16 to 0 °C in 20 kJ, flat to 220 kJ agree with tasks and solutions; names and terms consistent across languages.
+- Intro lists eight tasks and fits s7 and s8.
+- fi-easy: short sentences, assumptions split into separate sentences, terms as in the Finnish version, no new hard words (NOTES.md §12 level).
+- Hash re-checked at the end.
