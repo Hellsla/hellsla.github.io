@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 2314041f626411b2
-SCOPE: delta round 2 (solutions.md, fy8-16-L3-06 only) from a8113c437ee9eb2f
+SCOPE: delta added-exercise from 329dcf806b90ee5f base 110ed2029320
 
 ## Blocking
 None.
