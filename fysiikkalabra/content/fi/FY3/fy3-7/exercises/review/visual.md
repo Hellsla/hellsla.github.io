@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 9fd36711862df6e6
+CONTENT-HASH: 7a9c50335981d2c1
+SCOPE: delta wording from 9fd36711862df6e6 base 64d4935
 
 ## Blocking
 (none)
@@ -8,9 +9,8 @@ CONTENT-HASH: 9fd36711862df6e6
 (none)
 
 ## Checked
-- Round 1, delta (solutions.md, md-paragraphs: words unchanged). No 360 px or 390 px exercise captures exist (1280 px only); layout check at 360 px is clean per the packet.
-- 1280 px with solutions open: ../review/shots/fy3-7-open-exercises-L2-1280-1.png (8-10 solution: Periaate paragraph, Muunnokset box, Sijoitus rows with 565 s to min) and fy3-7-open-tarkista-1280-1.png for the surrounding layout.
-- Breaks at meaningful boundaries, formulas in boxes, equals signs aligned, nothing clipped.
+- Delta, wording only: the diff read in full. The prefix "Esimerkkiaineisto:" is gone; each task now opens with a capital letter and reads as a normal sentence. No numbers, symbols, units or LaTeX changed.
+- Captures: opened fy3-4 L3 part 1 and 4 at 1280 px (content/fi/FY3/fy3-4/review/shots), which show the layout of this kind of task card; the other sets' captures were not opened, because the diff changes only the first words of a text.
 - Hash unchanged at the end.
 
 ## Scores
