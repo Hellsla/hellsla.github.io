@@ -67,7 +67,7 @@ Tehty kaikille kursseille FY1–FY9 (loki §5d: kurssikohtaiset luvut, opit ja l
 Kaksi kuvatehtävää per luku hyväksytty kustannuksesta huolimatta (noin 300 k per luku); FY10:een ja FY14:ään ei. Jokaisessa
 luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka kolmannessa; arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit
 lähde-URL:n kanssa. FY8 on valmis (kaikissa luvuissa 1–16 vähintään kaksi kuvatehtävää; taulukkotehtävä fy8-1:ssä ja fy8-4:ssä, muissa ei
-VERIFIED-riviä; historia loki §6). Jäljellä FY9 (units): malli fy9-liike tehty ja hyväksytty (#708; opettaja 2026-11-18 koordinaattorin ilmoituksen mukaan, loki §6 FY9; s7 ja s8 unitin Sovella-sarjaan, ei jaettua muutosta, uusia kuvia ei; `round.py` ei tunne unit-tunnuksia, kierros käsin: `practice.py packet units/<id>`, `units.py hash`); loput 13 kokonaisuutta samalla mallilla. Kehittäjä jakaa pitkät sijoitusketjut (hc omaksi
+VERIFIED-riviä; historia loki §6). Jäljellä FY9 (units): malli fy9-liike tehty ja hyväksytty (#708; opettaja 2026-11-18 koordinaattorin ilmoituksen mukaan, loki §6 FY9; s7 ja s8 unitin Sovella-sarjaan, ei jaettua muutosta, uusia kuvia ei; kierros: `python scripts/round.py fy9-<id>` ja `--finish` (0j; unitin Sovella-sarja on `figcat`-omistaja `<unit>-sovella`, joten uusi unit-kuva kelpaa)); loput 13 kokonaisuutta samalla mallilla. Kehittäjä jakaa pitkät sijoitusketjut (hc omaksi
 vaiheekseen, energia jouleina ennen eV-muunnosta) jo ensimmäisessä versiossa. Tämä kohta jää, kunnes FY9 on tehty.
 
 ## 8. Virhekäsitys omana komponenttinaan; virhekäsitys ja tiivistelmä avattaviin laatikoihin (opettaja 2026-11-13)
@@ -157,9 +157,6 @@ Päätökset P1–P9: `docs/audits/2026-11-15-oikoluku.md`; raja-arvotehtävien 
 
 ## 19. 45 soveltavaa aineistotehtävää FY1–FY9: tehty (loki §19)
 Kaikki 45 tehty (FY1–FY9, A1–A5). Avoin vain: opettaja avaa Tukesin kaksi linkkiä (FY6 A3, A4) selaimessa ennen yhdistämistä. Poistetaan, kun se on tehty.
-
-## 13. Englanninkieliset käsitekortit FY8 (opettaja 2026-11-13; kohdan 18 jälkeen, ennen kohtaa 15)
-`kortit/en/fy8.json` puuttuu, joten englanninkielisillä FY8-sivuilla ei ole kortteja eikä alleviivauksia. FY6 tehty (PR #702; katselmointi `docs/audits/2026-11-18-en-kortit-fy6-science.md`).
 
 ## 15. Kustannustoimituksellinen lopputarkistus FY1–FY8 (opettaja 2026-11-14, kevennetty 2026-11-16)
 Toiseksi viimeinen: kohtien 17, 18, 13 jälkeen, sen jälkeen 14 ja viimeisenä 16. Ensin pelkkä raportti (`docs/audits/`), korjaukset vasta opettajan luettua. Kevennetty:

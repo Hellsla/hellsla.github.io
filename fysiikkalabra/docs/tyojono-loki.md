@@ -599,6 +599,8 @@ FY7 tehty: FY7-A1…A5 (PR #633, kohdan 5d FY7:n kanssa): fy7-8-L2-10 (A1), fy7-
 käsitekortteja eikä alleviivauksia.
 Järjestys (opettaja 2026-11-15): kohdan 18 jälkeen ja ennen lopputarkistusta (15), jotta tarkistus kattaa myös kortit.
 
+Tehty: FY6 (PR #702: `kortit/en/fy6.json`, 47 korttia, 48 alleviivausta, raportti `docs/audits/2026-11-18-en-kortit-fy6-science.md`) ja FY8 (PR #707: `kortit/en/fy8.json`, 147 korttia, 127 korttia alleviivattu englanninkielisillä FY8-sivuilla, 23 korttia ilman lukua näkyy vain kokoelmassa, raportti `docs/audits/2026-11-18-en-kortit-fy8-science.md`, 13 korjausta tehty). Auki opettajalle: suomenkorttien `fy8-annihilaatio` (sama virhe kuin en-kortissa) ja `fy8-kosminen-inflaatio` (ei FY8-luvun tekstissä; lisää lauseen fy8-16:een tai `luku` nulliksi molempiin tiedostoihin). Kohta 13 poistettu jonosta.
+
 ## [loki] 15. Kustannustoimituksellinen lopputarkistus FY1–FY8 (opettaja 2026-11-14) (kevennetty, opettaja 2026-11-16)
 
 Tavoite: FY1–FY8-oppimateriaali kaupallisen kustantajan julkaisuvalmiutta vastaavalle laatutasolle. Tarkistaja toimii
