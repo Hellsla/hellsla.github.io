@@ -632,7 +632,11 @@ Toinen yleinen virhe on ajatella, että etäisyyden kaksinkertaistaminen puolitt
 
 ## Tiivistelmä
 - Absorboitunut annos on absorboitunut energia massaa kohti, $D = \tfrac{E}{m}$. Sen yksikkö on gray $1\,\text{Gy} = 1\,\tfrac{\text{J}}{\text{kg}}$.
-- Ekvivalenttiannos $H_\text{T} = w_\text{R} D_\text{T}$ ottaa huomioon säteilylajin (alfa $20$, gamma ja beeta $1$). Efektiivinen annos $H_\text{E} = w_{\text{T}1} H_{\text{T}1} + w_{\text{T}2} H_{\text{T}2} + \ldots$ ottaa huomioon kudosten herkkyyden. Molempien yksikkö on sievert $\text{Sv}$.
+- Ekvivalenttiannos $H_\text{T} = w_\text{R} D_\text{T}$ ottaa huomioon säteilylajin (alfa $20$, gamma ja beeta $1$). Efektiivinen annos
+
+    $$H_\text{E} = w_{\text{T}1} H_{\text{T}1} + w_{\text{T}2} H_{\text{T}2} + \ldots$$
+
+    ottaa huomioon kudosten herkkyyden. Molempien yksikkö on sievert $\text{Sv}$.
 - Suomalaisen keskimääräinen efektiivinen annos on noin $5{,}9\,\text{mSv}$ vuodessa (STUK-A263, 2020). Siitä sisäilman radon on noin $4\,\text{mSv}$ eli noin kaksi kolmasosaa.
 - Radonin hajoamistuotteet lähettävät alfasäteilyä keuhkoihin. Asuntojen viitearvo on $300\,\tfrac{\text{Bq}}{\text{m}^3}$.
 - Ulkoiselta säteilyltä suojaudutaan ajalla ($H = \dot{H} t$), etäisyydellä ($\dot{H} \propto \tfrac{1}{r^2}$) ja suojalla. Jokainen puoliintumispaksuus puolittaa gammasäteilyn annosnopeuden.
