@@ -1,8 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c379503b46bd1ab6
+CONTENT-HASH: 389bd4a1d84db983
+
 ## Blocking
 
 ## Polish
+- None.
 
 ## Checked
-batch delta review: muutetut kertauskysymykset (luvut, vastausvaihtoehdot, palaute, uusi konteksti), vastausten laskut ja kuvat/kuvatekstit luettu; ei estäviä.
+batch delta review: Alas changed to Alaspäin in the crane Pysähdy ja mieti answer; consistent with the question and the force-diagram figures. No captures opened (text-only change).
