@@ -23,20 +23,20 @@
       "type": "choice",
       "optional": true,
       "title": "Kertaa: beetahajoaminen",
-      "prompt": "Kilpirauhashoidoissa käytettävä jodi-131 hajoaa beeta miinus -hajoamisella. Mitä ytimelle tapahtuu hajoamisessa?",
+      "prompt": "Sairaalan teknetium-$99\text{m}$ valmistetaan molybdeeni-$99$:stä, joka hajoaa beeta miinus -hajoamisella. Mitä ytimelle tapahtuu hajoamisessa?",
       "choices": [
         {
-          "text": "Ytimen neutroni muuttuu protoniksi. Järjestysluku kasvaa yhdellä, ja jodista tulee ksenonia.",
+          "text": "Ytimen neutroni muuttuu protoniksi. Järjestysluku kasvaa yhdellä, ja molybdeenistä tulee teknetiumia.",
           "correct": true,
-          "feedback": "Oikein. Ytimestä lähtee elektroni ja antineutriino. Massaluku $131$ säilyy, ja järjestysluku kasvaa arvosta $53$ arvoon $54$ (luku *Atomiydin ja radioaktiivinen hajoaminen*). Tänään selviää, *milloin* ytimet hajoavat."
+          "feedback": "Oikein. Ytimestä lähtee elektroni ja antineutriino. Massaluku $99$ säilyy, ja järjestysluku kasvaa arvosta $42$ arvoon $43$ (luku *Atomiydin ja radioaktiivinen hajoaminen*). Tänään selviää, *milloin* ytimet hajoavat."
         },
         {
           "text": "Ydin lähettää alfahiukkasen, joten sen massaluku pienenee neljällä.",
           "feedback": "Tämä kuvaa alfahajoamista. Siinä ytimestä lähtee hiukkanen, jossa on kaksi protonia ja kaksi neutronia. Beeta miinus -hajoamisessa ytimen neutroni muuttuu protoniksi. Massaluku säilyy ja järjestysluku kasvaa yhdellä (luku *Atomiydin ja radioaktiivinen hajoaminen*)."
         },
         {
-          "text": "Atomi menettää yhden elektronin elektroniverhostaan, joten siitä tulee jodi-ioni.",
-          "feedback": "Beetahiukkanen ei tule elektroniverhosta. Se syntyy ytimessä, kun neutroni muuttuu protoniksi. Siksi ydin muuttuu toisen alkuaineen ytimeksi: jodista tulee ksenonia (luku *Atomiydin ja radioaktiivinen hajoaminen*)."
+          "text": "Atomi menettää yhden elektronin elektroniverhostaan, joten siitä tulee molybdeeni-ioni.",
+          "feedback": "Beetahiukkanen ei tule elektroniverhosta. Se syntyy ytimessä, kun neutroni muuttuu protoniksi. Siksi ydin muuttuu toisen alkuaineen ytimeksi: molybdeenistä tulee teknetiumia (luku *Atomiydin ja radioaktiivinen hajoaminen*)."
         },
         {
           "text": "Ydin jakautuu kahdeksi suunnilleen yhtä suureksi ytimeksi.",
