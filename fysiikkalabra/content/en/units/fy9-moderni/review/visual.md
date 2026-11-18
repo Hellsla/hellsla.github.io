@@ -1,21 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: f4531b7790ea5ae7
-SCOPE: delta: new tasks s8 and s9 and the changed intro; older tasks untouched
+CONTENT-HASH: f5355edae2761e52
+SCOPE: delta: round 2, the fixes of round 1 in fy9-moderni-s8 and -s9 (changed passages, 360 px layout); older tasks untouched
+
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
 - (none)
 
 ## Polish
-- [Minor] s9 figure alt text says "recession speed v", the task says "recession velocity v"; align the alt to "velocity" (the figure's own catalogue text, so a later figure-fix).
-- [Minor] s8 and s9 figures at 390 px: tick numbers are small and the pale grid faint; in s9 the x ticks 50 to 300 nearly touch. Shared catalogue figures, not changed here.
-- [Minor] s8 rubric c: the display ends with a comma before "which is more than"; move the clause out of the maths.
+- [Minor] s8 rubric c: the display is still followed by ", which is more than $1.0\,\text{mSv}$"; make it its own sentence.
+- [Minor] s9 figure alt text may still say "speed" where the task says "velocity"; align in a later figure-fix.
+- [Minor] s8 and s9 figures: small ticks and faint grid on a phone; shared catalogue figures.
 
 ## Checked
-- Opened en stage-exercises-390-66 (s8 text, bullets, figure, part list) and -76 (s9 bullets, figure, parts, start of model answer).
-- Read the English text of s8 and s9, all parts and rubric criteria, and the intro. The English is natural and matches the Finnish: same numbers ($18\,\text{cm}$, $1.5\,\text{h}$, $220$, $1.0\,\text{mSv}$, $250\,\text{Mpc}$, $18\,000\,\text{km/s}$, $8400\,\text{km/s}$), decimal point throughout, units upright with thin space, no plain number with unit, "decimal point" not comma.
-- Both figure aria-labels are rendered in English in the built page (preview/en), with matching names ($\dot{H}$, $d$, $v$).
-- Intro says "Nine ... Problems 8 and 9 work with a graph", matching the set. Terms (dose rate, attenuation coefficient, Hubble constant) used consistently.
-- Layout at 390 px: no clipping or overflow in the captures opened.
+- Rebuilt captures for hash f5355edae2761e52 (screenshot.py --lang en, current). Layout confirmed through the same shared components as fi (fi captures 64, 66, 75 opened: parts, aligned rows, answer boxes intact); the English text is cut the same way as the Finnish.
+- Read the English s8 and s9 text and every rubric row: same numbers as fi ($18\,\text{cm}$, $1.5\,\text{h}$, $220$, $1.0\,\text{mSv}$, $250\,\text{Mpc}$, $8400\,\text{km/s}$), decimal point, LaTeX units, results at the data's precision (6.6, 24 cm, 72, 120 Mpc, 1.4 · 10^10 a), question last, no revealed structure, units language-neutral.
+- check_layout.py --width 360 for preview/en/fy9-moderni: OK; known clipped formulas are older rows, none in s8/s9.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish (English language) 5 · accessibility 4

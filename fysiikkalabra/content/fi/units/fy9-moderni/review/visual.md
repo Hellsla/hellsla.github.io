@@ -1,21 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 115941f6cb5f4383
-SCOPE: delta: new tasks s8 and s9 and the changed intro; older tasks untouched
+CONTENT-HASH: 876c08f6ee47b4ec
+SCOPE: delta: round 2, the fixes of round 1 in fy9-moderni-s8 and -s9 (changed passages, 360 px layout); older tasks untouched
+
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
 - (none)
 
 ## Polish
-- [Minor] s8 and s9 figures at 390 px (fy8-13/vaimennus, fy8-16/hubble-t): the catalogue figures scale to about 55 %, so the tick numbers are very small and the pale grid (`#e3dccb`) is hard to see; in s9 the x ticks (50 100 150 200 250 300) nearly touch. The task relies on "ruudukon piste" (250 Mpc; 18 000 km/s). Shared catalogue figures, so no change here; for a later figure-fix: tick numbers every 100 Mpc and a darker grid.
-- [Minor] s8 rubric c, calculation row: the display ends in a comma ($\approx 2{,}2\,\text{mSv},$ then "joka on yli"); move the clause out of the maths.
-- [Minor] s8 rubric a: $\ln(80 : 5{,}0)$ has no units while the model solution has them; harmless.
+- [Minor] s8 rubric c, calculation row: the display is still followed by ", joka on yli $1{,}0\,\text{mSv}$"; move the clause into its own sentence (fi-easy already does).
+- [Minor] s8 and s9 figures (fy8-13/vaimennus, fy8-16/hubble-t): small tick numbers and pale grid at phone width; shared catalogue figures, for a later figure-fix.
+- [Minor] s8 rubric a: $\ln(80 : 5{,}0)$-type unitless rows in the model solution; harmless.
 
 ## Checked
-- Opened (fi) stage-exercises-390-60, -61, -62, -63 (end of s7, start of s8), -64 (s8 text and figure), -65, -66 (model solution a), -71 to -73 (rubric rows), -74, -75, -78 (s9 figure, solution a, d), intro-390.
-- s8 and s9 figure SVGs: aria-label names match the task's ($\dot{H}$, $d$, $v$); axes carry quantity and unit; data points distinct from the fitted line; no answer marked on either figure.
-- Task text does not name the solution structure beyond the given models $\dot{H} = \dot{H}_0 e^{-\mu d}$ and $v = H_0 d$; results rounded to the data's precision (6,6 µSv/h, 24 cm, 72, 1,4 · 10^10 a); calculation chains as aligned rows; unit fields language-neutral (1/cm, µSv/h, km/s/Mpc, a).
-- Intro: "Yhdeksän ... Tehtävissä 8 ja 9 työskennellään kuvaajan kanssa" matches the set and reads fluently.
-- No horizontal overflow or clipped formula visible at 390 px in the opened captures; check_layout result taken as given.
+- Rebuilt captures for hash 876c08f6ee47b4ec (screenshot.py, current stamp). Opened fi stage-exercises-390-64 (s8 task parts, links, start of model solution), -66 (s8 b: aligned substitution rows, answer box, järkevyys) and -75 (s9 a and b: fractions, answer box, units).
+- Read the changed s8 and s9 text in fi tasks.json: situation first, question last, no revealed solution structure; results rounded to the data's precision (6,6 µSv/h, 24 cm, 72, 117 -> 120 Mpc, 1,4 · 10^10 a); calculation chains as aligned rows; unit fields language-neutral (1/cm, µSv/h, km/s/Mpc, a).
+- check_layout.py fy9-moderni --width 360: OK; the only known clipped formulas on the page are older ones (fy9-moderni rows with 1,342 · 10^20 and 6,626 · 10^-34), none in s8 or s9.
+- No separate 360 px captures exist (captures are 390 px); 360 taken from check_layout.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 5 · accessibility 4

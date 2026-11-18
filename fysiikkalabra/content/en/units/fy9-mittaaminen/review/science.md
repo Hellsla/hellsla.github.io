@@ -1,19 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 0da2cfcc91630694
-SCOPE: delta: round 2, the fixes of round 1 in fy9-mittaaminen-s7 and -s8 (s8 solutions, rubric, answers.py, the s8-kuvaaja model graph); older tasks s1-s6 untouched (not re-judged).
-Round 2: delta against the version round 1 reviewed (fix round 1).
+VERDICT: PASS
+CONTENT-HASH: 2996fa9824b493d6
+SCOPE: delta: round 3, the fixes of round 2 in fy9-mittaaminen-s7 and -s8 (s8 a rubric criterion 5, s7 c formula rows); older tasks s1-s6 untouched (not re-judged).
+Round 3: delta against the version round 2 reviewed (fix round 2).
 
 ## Blocking
-1. **A, s8 a, round-1 item 2 is fixed only in the solution.** The en model answer now says: "It is small, and because the line is not forced through the origin, it does not affect the slope." This is correct. The 5th rubric criterion of a (tasks.json, tag `graph`) still reads "The constant term of the line is about $0.01\,\text{m}$, the size of the reading uncertainty, so it is not significant." I recomputed every line through all the $\pm 0.01\,\text{m}$ bars. Each crosses the $s$ axis between $+0.0033$ and $+0.012\,\text{m}$, so zero is excluded. The criterion awards a point for a wrong conclusion, and it contradicts the model answer. Reword it, for example: "The constant term (about $0.01\,\text{m}$) is small, the size of the reading uncertainty, and does not affect the slope because the line is not forced through the origin." The same item is open in fi and fi-easy.
+None.
 
 ## Polish
-- The headings `### Yleisiä virheitä` and `### Hyväksytään myös` in the en solutions are still in Finnish. This is carried from round 1; it is fine if the renderer maps them to the English labels.
-- s8 c: the interval $10.19\ldots10.48\,\text{m/s}^2$ (the limiting lines) differs slightly from $10.35 \pm 0.15$ ($10.20\ldots10.50$). Both are defensible.
+- s8 a, criterion 5: the added range ("every line through the $\pm 0.01\,\text{m}$ ranges of the points crosses the $s$ axis between $+0.003\ldots{+}0.012\,\text{m}$, and no line through the origin fits") is correct, but the model answer (solutions.md row 812) does not show it. The grader should not require it. Add it to the model answer or mark it as extra. Wording: "between $+0.003$ and $+0.012\,\text{m}$" reads better than "between $+0.003\ldots{+}0.012$".
+- s7 c, rubric detail 3: $\tfrac{1.2}{30.0} \approx 4.1\,\%$ is arithmetically $4.0\,\%$. The solution (row 727) uses $1.22$, so write $\tfrac{1.22}{30.0}$. The result $\pm 0.6\,\text{cm}$ does not change.
+- Carried from earlier rounds: the `### Yleisiä virheitä` and `### Hyväksytään myös` headings are Finnish in the en solutions. The interval $10.19\ldots10.48$ versus $10.35 \pm 0.15$ in s8 c: both are defensible.
 
 ## Checked
-- Round-1 item 1 is fixed in the en solution c ("if the real frame interval is longer than the assumed $0.05\,\text{s}$, the times are underestimated and the calculated $g$ is too large"; $1.027 \cdot 0.05\,\text{s} = 0.0514\,\text{s}$, about $2.7\,\%$, lower frame rate), in the rubric `error_sources` detail and in answers.py `c-tscale` ($\sqrt{g/9.81}$). "Shorter than assumed" and $0.0487$ no longer appear.
-- The polish is fixed: the substitution uses $2 \cdot 5.177\,\text{m/s}^2 = 10.35$, and so does the rubric detail.
-- My script (scratchpad s8r2.py): least-squares slope $5.175$, intercept $0.0100\,\text{m}$, largest residual $0.008\,\text{m}$. Read slope $5.177$, limiting slopes $5.094$/$5.242$, $\Delta g = 0.147$, difference $0.54$ ($5.5\,\%$, $3.7\Delta g$), interval $0.0514\,\text{s}$. All match the en text, with the same numbers as fi and decimal points throughout.
-- Precision: $(10.35 \pm 0.15)\,\text{m/s}^2$ and the check value $0.83\,\text{m}$ fit the data. The task text does not name $t^2$ (no structure revealed). Calculation chains are in aligned rows. The unit fields `N/m`, `cm` and `m/s^2` are language-neutral.
-- The figure alt text matches the solution (slope $5.18$, intercept about $0.01\,\text{m}$, circled points). The physics wording of the fix is accurate.
-- `practice.py check` OK for en (8 tasks, 116 points). The hash is the same at the start and the end.
+- Round-2 item 1 is fixed in the en tasks.json. s8 a criterion 5 no longer says "so it is not significant". It now says the term is small, the size of the reading uncertainty, that zero is excluded, and that it does not affect the slope because the line is not forced through the origin. Recomputed (scratchpad s8r2.py): intercepts of the admissible lines are $+0.0033\ldots+0.012\,\text{m}$, so the rounding to $0.003$ is right. The criterion agrees with the model answer, and the numbers are the same as in fi.
+- s7 c, rubric detail 2: the chain is now an `aligned` block with real newlines ($4.5\,\text{N}/30.0\,\text{N/m} = 0.150\,\text{m} = 15.0\,\text{cm}$), with aligned rows and the same chain as the solution. Recomputed: $\Delta k = (31.27-28.83)/2 = 1.22\,\text{N/m}$, $\Delta x = 0.61\,\text{cm}$, $x_\text{min}/x_\text{max} = 14.4/15.6\,\text{cm}$.
+- s7 b detail (when the line may be forced through the origin): correct physics and a faithful translation.
+- Decimal points throughout. The unit fields are language-neutral.
+- `practice.py check`: OK for en (8 tasks, 116 points). The hash is $2996fa9824b493d6$ at the start and at the end.
