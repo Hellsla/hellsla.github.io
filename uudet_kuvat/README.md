@@ -27,3 +27,23 @@ Jokaisessa zipissä:
 
 Kuvat eivät ole vielä sivustolla. Ne viedään Ruukkilabraan vasta, kun julkaisuputki osaa käyttää kuvatiedostoa
 kuvan pohjana (jaettu muutos, oma työjonon kohtansa). Kuvaajia ei piirretty uudelleen.
+
+## Vaihdettavuuden tarkistus (18.11.2026)
+
+`VAIHDETTAVUUS.tsv`: jokainen 662 hyväksytystä kuvasta tarkistettu julkaistuilta sivuilta (suomi ja englanti;
+selkosuomen kuvat ovat samat kuin suomen). Yhtään estettä vaihtamiselle ei löytynyt: yksikään kuva ei piirry selaimessa,
+skripti ei muuta yhtäkään, eikä missään ole animaatiota, valittavia osia tai tekstiä, joka katoaisi.
+
+Huomiot:
+
+- FY8:n kuvat ovat pienempiä kuin muiden moduulien (26 kaaviota 832 px, `fy8-2/greenhouse` 566 px), koska ne
+  pienennettiin alkuperäisen kokoon. Pienentämättömät versiot kannattaa pyytää ennen käyttöä.
+- 50 kuvaa on monivalintatehtävien vastausvaihtoehtoja (13 tehtävää). Jokaisessa tehtävässä kaikki vaihtoehdot vaihtuvat.
+  FY3:n luvun 1 tehtävässä kolmessa vaihtoehdossa on tumma kehys ja neljännessä (`pick-weight-only`) ei: nämä neljä
+  kannattaa piirrättää uudelleen ilman kehystä, ettei ulkoasu vihjaa vastausta.
+- Kolmessa FY9:n voimakuviossa kuvasuhde poikkeaa alkuperäisestä 1–4 % (`fy9-voimat/nimeton-1`, `-3`, `-9`).
+- Englanninkielisiä merkintöjä ei verrattu 91 kuvassa (FY10 ja kuvauksesta tunnistettavat kuvat), ja kuvissa
+  `fy2-7/district`, `fy2-7/grid` ja `fy2-7/storage` englanninkielinen versio poikkeaa hieman suomenkielisestä.
+- Opettajan yleisohje 17.11.2026: jos kuva on osa vuorovaikutteista elementtiä, sitä ei korvata.
+
+Tarkistus on tekninen. Fysiikan sisältöä ja mittasuhteita koskevat huomiot ovat kunkin paketin `PAATOS.txt`-tiedostossa.
