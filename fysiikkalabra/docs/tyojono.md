@@ -159,6 +159,7 @@ Päätökset P1–P9: `docs/audits/2026-11-15-oikoluku.md`; raja-arvotehtävien 
 Kaikki 45 tehty (FY1–FY9, A1–A5). Avoin vain: opettaja avaa Tukesin kaksi linkkiä (FY6 A3, A4) selaimessa ennen yhdistämistä. Poistetaan, kun se on tehty.
 
 ## 15. Kustannustoimituksellinen lopputarkistus FY1–FY8 (opettaja 2026-11-14, kevennetty 2026-11-16)
+Varattu: claude/15-lopputarkistus
 Toiseksi viimeinen: kohtien 17, 18, 13 jälkeen, sen jälkeen 14 ja viimeisenä 16. Ensin pelkkä raportti (`docs/audits/`), korjaukset vasta opettajan luettua. Kevennetty:
 (1) automaattiset läpikäynnit (concepts.py, coverage.py --all, physics_phrases, check_a11y; yksi raportti); (2) otos: täysi tarkistus yhdelle luvulle per kurssi, raportti opettajalle;
 (3) laajennus vain, jos otos löytää kriittisiä virheitä. LOPS 2019 vertailuperusta; julkaistuja oppikirjoja ei käytetä; virheitä ei oleteta; tunnisteita, vastauksia ja tallennusmuotoja
