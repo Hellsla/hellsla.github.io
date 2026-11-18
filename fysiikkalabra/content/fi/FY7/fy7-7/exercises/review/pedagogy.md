@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: fe2328407c0d03bc
+CONTENT-HASH: 782a75dc3a8da30e
 
 ## Blocking
 - none
@@ -8,6 +8,6 @@ CONTENT-HASH: fe2328407c0d03bc
 - none
 
 ## Checked
-- Kaava steps rewritten as aligned law-to-formula chains (U_0 = sqrt2 U, e_0 = NBA2πf, P = UI, ratio derivations); numbers and answers unchanged.
-- Paragraph splits in Vastaus/Mallivastaus keep the wording; no paragraph over about 120 words.
-- Language checked: fi. Hash fe2328407c0d03bc at start and end.
+- Diff relabels the deviation row as poikkeama on the left side; the chain now shows what it computes (house rule), content unchanged.
+- Sijoitus b) matches the Kaava form; answer unchanged.
+- Language checked: fi. Hash 782a75dc3a8da30e at start and end.

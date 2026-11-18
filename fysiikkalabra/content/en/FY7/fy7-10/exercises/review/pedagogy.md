@@ -1,13 +1,12 @@
-VERDICT: PASS
-CONTENT-HASH: a7668408ca578cbc
-SCOPE: delta added-exercise from 2dbe4b29223aeaef base 8f23aa7ae3bd
+VERDICT: FAIL
+CONTENT-HASH: 187203d7c3aa1a04
 
 ## Blocking
-- none
+- exercises/solutions.md:75 (fy7-10 glass-slab time exercise, Formula) — the subscripts `t_\text{lasi}` and `t_\text{ilma}` are Finnish (glass, air) left in the English text, and neither is defined in the solution — rename to `t_\text{glass}` and `t_\text{air}` (check that the Substitution step uses the same names).
 
 ## Polish
-- none
+- Earlier polish items from round 0 still stand where not yet done.
 
 ## Checked
-- L1-09 (MAFY lookup, 36.2 deg) and L2-09 (k = 1.50, 22.5 deg) verified; answer 22.48 consistent with the solution.
-- Language checked: en. Hash a7668408ca578cbc at start; unchanged at end.
+- Delta only: Formula step now runs basic law, derived formula, simplification, then substitution in the other changed solutions; each line follows from the previous.
+- Refraction/speed/wavelength derivations (n = c/v, lambda = lambda0/n) are correct and complete.
