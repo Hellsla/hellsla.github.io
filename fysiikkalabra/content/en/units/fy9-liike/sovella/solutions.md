@@ -456,3 +456,216 @@ A_\text{c} &= 1.10 \cdot (-4.44\,\text{m/s}^2) \\
 \end{aligned}
 $$ and then $a_\text{c} = 2A_\text{c}$.
 - In part b the comparison as relative numbers: a difference of about $9.5\,\%$, an uncertainty of about $1\,\%$.
+
+## fy9-liike-s7
+
+### a)
+**Given:** a $(t,x)$ graph in which $x$ increases to the right; the first phase is the first straight line of the graph
+**Find:** the velocity $v_1$ in the first phase
+**Principle:** In uniform motion the $(t,x)$ graph is a straight line, and its slope is the velocity (chapter *Position, velocity and uniform motion as graphs*).
+**Reading the graph:** Two points far apart are read from the first line: $(0\,\text{s};\ 4\,\text{m})$ and $(4\,\text{s};\ 16\,\text{m})$.
+**Formula:** $v = \dfrac{\Delta x}{\Delta t} = \dfrac{x_2 - x_1}{t_2 - t_1}$
+**Conversions:** None needed: the positions are in metres and the times in seconds.
+**Substitution:** $$
+\begin{aligned}
+v_1 &= \dfrac{16\,\text{m} - 4\,\text{m}}{4\,\text{s} - 0\,\text{s}} \\
+&= \dfrac{12\,\text{m}}{4\,\text{s}} \\
+&= 3.0\,\text{m/s}
+\end{aligned}
+$$
+**Answer:** $v_1 = 3.0\,\text{m/s}$ to the right. The result has two significant figures, like the values read from the graph.
+**Reasonableness:** The cart advances $12\,\text{m}$ in four seconds, that is $3.0\,\text{m}$ every second. This is about $11\,\text{km/h}$, a reasonable velocity for a motorised cart.
+
+### b)
+**Given:** the $(t,x)$ graph and the moment $8\,\text{s}$
+**Find:** the velocity $v$ at $8\,\text{s}$ and the direction of the motion
+**Principle:** The moment $8\,\text{s}$ lies in the third phase, where the graph is a falling straight line. There the velocity is constant and equal to the slope of the line (chapter *Position, velocity and uniform motion as graphs*). A falling line means that the position $x$ decreases, so the velocity is negative.
+**Reading the graph:** Two points far apart are read from the third line: $(6\,\text{s};\ 16\,\text{m})$ and $(10\,\text{s};\ 8\,\text{m})$.
+**Formula:** $v = \dfrac{\Delta x}{\Delta t} = \dfrac{x_2 - x_1}{t_2 - t_1}$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+v_3 &= \dfrac{8\,\text{m} - 16\,\text{m}}{10\,\text{s} - 6\,\text{s}} \\
+&= \dfrac{-8\,\text{m}}{4\,\text{s}} \\
+&= -2.0\,\text{m/s}
+\end{aligned}
+$$
+**Answer:** $v = -2.0\,\text{m/s}$. The minus sign means that the cart moves to the left, against the direction of the $x$ axis; its speed is $2.0\,\text{m/s}$. The velocity is the same during the whole phase, so it is this at $8\,\text{s}$ too.
+**Reasonableness:** In the third phase the cart moves back: the position decreases by $8\,\text{m}$ in four seconds. The graph falls, so the sign must be negative. The line is less steep than in the first phase ($2.0\,\text{m/s} < 3.0\,\text{m/s}$), which can be seen in the graph.
+
+### c)
+**Given:** the position $x = 12\,\text{m}$; in the first phase $x_0 = 4\,\text{m}$ at $0\,\text{s}$ and $v_1 = 3.0\,\text{m/s}$; in the third phase $x_0 = 16\,\text{m}$ at $6\,\text{s}$ and $v_3 = -2.0\,\text{m/s}$
+**Find:** the moments $t_1$ and $t_2$ at which the cart is at the position $12\,\text{m}$
+**Principle:** According to the graph the position $12\,\text{m}$ is passed in two phases: in the first the position rises from $4\,\text{m}$ to $16\,\text{m}$, and in the third it falls from $16\,\text{m}$ to $8\,\text{m}$. In the second phase the cart stays at $16\,\text{m}$ all the time. In each phase the motion is uniform, so the position is $x = x_0 + v\,(t - t_0)$ (chapter *Position, velocity and uniform motion as graphs*).
+**Reading the graph:** The velocities and starting points come from reading the graph in parts a and b: the first line starts at the point $(0\,\text{s};\ 4\,\text{m})$ and the third at $(6\,\text{s};\ 16\,\text{m})$.
+**Formula:** $x = x_0 + v\,(t - t_0)$, so $t = t_0 + \dfrac{x - x_0}{v}$
+**Conversions:** None needed: the positions are in metres and the times in seconds.
+**Substitution:** $$
+\begin{aligned}
+t_1 &= 0\,\text{s} + \dfrac{12\,\text{m} - 4\,\text{m}}{3.0\,\text{m/s}} \\
+&= \dfrac{8\,\text{m}}{3.0\,\text{m/s}} \\
+&\approx 2.67\,\text{s}
+\end{aligned}
+$$; $$
+\begin{aligned}
+t_2 &= 6\,\text{s} + \dfrac{12\,\text{m} - 16\,\text{m}}{-2.0\,\text{m/s}} \\
+&= 6\,\text{s} + 2.0\,\text{s} \\
+&= 8.0\,\text{s}
+\end{aligned}
+$$
+**Answer:** The cart is at the position $12\,\text{m}$ for the first time at $t_1 \approx 2.7\,\text{s}$ and for the second time at $t_2 = 8.0\,\text{s}$. Two significant figures are enough because the values read are two-digit numbers.
+**Reasonableness:** The moment $2.7\,\text{s}$ is in the time interval $0\ldots 4\,\text{s}$ of the first phase and $8.0\,\text{s}$ in the interval $6\ldots 10\,\text{s}$ of the third. A check: $$
+\begin{aligned}
+x(8.0\,\text{s}) &= 16\,\text{m} \\
+&- 2.0\,\text{m/s} \cdot 2.0\,\text{s} \\
+&= 12\,\text{m}
+\end{aligned}
+$$.
+
+### d)
+**Given:** the initial position $x = 4\,\text{m}$ at $0\,\text{s}$ and the final position $x = 8\,\text{m}$ at $10\,\text{s}$; the changes of position in the phases are $+12\,\text{m}$, $0\,\text{m}$ and $-8\,\text{m}$
+**Find:** the average velocity $v_\text{mean}$, why it differs from the average speed and which is greater
+**Principle:** The average velocity is the displacement divided by the time, and the displacement is only the difference between the final and initial positions (chapter *Position, velocity and uniform motion as graphs*). The average speed divides the distance travelled, which collects all the motion whatever its direction. When the cart moves part of the way back, the two differ.
+**Reading the graph:** The first point of the graph is $(0\,\text{s};\ 4\,\text{m})$ and the last $(10\,\text{s};\ 8\,\text{m})$.
+**Formula:** $v_\text{mean} = \dfrac{\Delta x}{\Delta t} = \dfrac{x_\text{final} - x_\text{initial}}{t_\text{final} - t_\text{initial}}$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+v_\text{mean} &= \dfrac{8\,\text{m} - 4\,\text{m}}{10\,\text{s} - 0\,\text{s}} \\
+&= \dfrac{4\,\text{m}}{10\,\text{s}} \\
+&= +0.40\,\text{m/s}
+\end{aligned}
+$$
+**Answer:** $v_\text{mean} = +0.40\,\text{m/s}$, that is $0.40\,\text{m/s}$ to the right. The average velocity is small because in the last phase the cart goes back, so the change of position is only $4\,\text{m}$. The average speed is greater here: $2.0\,\text{m/s}$.
+**Reasonableness:** The distance travelled is $$
+\begin{aligned}
+s &= 12\,\text{m} + 0\,\text{m} + 8\,\text{m} \\
+&= 20\,\text{m}
+\end{aligned}
+$$ and the average speed is $$
+\begin{aligned}
+v_\text{speed} &= \dfrac{20\,\text{m}}{10\,\text{s}} \\
+&= 2.0\,\text{m/s}
+\end{aligned}
+$$ The average speed is always at least the magnitude of the average velocity, and they are equal only if the cart does not change direction. Here the cart changes direction, so the average speed ($2.0\,\text{m/s}$) is greater than the magnitude of the average velocity ($0.40\,\text{m/s}$).
+
+### Yleisiä virheitä
+- The velocity is taken as the value $x/t$ of the graph, for example $16\,\text{m} : 4\,\text{s} = 4.0\,\text{m/s}$, although the graph starts from $4\,\text{m}$, not from zero.
+- In part b the velocity is given as positive, or the times and positions are subtracted in a different order, so the sign goes wrong.
+- In part c only one moment is found, or the second is calculated with $t = x : v$ without the initial position and the initial moment, which gives $12\,\text{m} : (-2.0\,\text{m/s}) = -6\,\text{s}$.
+- In part d the average velocity is calculated as the mean of the velocities of the phases, $(3.0 + 0 - 2.0)\,\text{m/s} : 3$, or from the distance travelled; both give a wrong result.
+
+### Hyväksytään myös
+- In part c the second moment can be solved from the equation of the third line, $$
+\begin{aligned}
+x &= 16\,\text{m} \\
+&- 2.0\,\text{m/s} \cdot (t - 6\,\text{s})
+\end{aligned}
+$$.
+- In part d the average velocity can be read from the graph as the slope of the line through the first and last points.
+
+## fy9-liike-s8
+
+### a)
+**Given:** the lines of the graph: A goes from the point $(0\,\text{s};\ 4\,\text{m})$ to the point $(8\,\text{s};\ 20\,\text{m})$ and B from $(0\,\text{s};\ 20\,\text{m})$ to $(8\,\text{s};\ 4\,\text{m})$; $x$ increases in the direction in which A walks
+**Find:** the velocities $v_\text{A}$ and $v_\text{B}$ with their signs
+**Principle:** In uniform motion the slope of the line in the $(t,x)$ graph is the velocity, and the sign tells the direction: a rising line is positive and a falling one negative (chapter *Position, velocity and uniform motion as graphs*).
+**Reading the graph:** The end points of each line are far apart, so the positions are read from them: A $4\,\text{m}$ and $20\,\text{m}$, B $20\,\text{m}$ and $4\,\text{m}$; the time interval is $0\ldots 8\,\text{s}$.
+**Formula:** $v = \dfrac{\Delta x}{\Delta t} = \dfrac{x_2 - x_1}{t_2 - t_1}$
+**Conversions:** None needed: the positions are in metres and the times in seconds.
+**Substitution:** $$
+\begin{aligned}
+v_\text{A} &= \dfrac{20\,\text{m} - 4\,\text{m}}{8\,\text{s} - 0\,\text{s}} \\
+&= \dfrac{16\,\text{m}}{8\,\text{s}} \\
+&= 2.0\,\text{m/s}
+\end{aligned}
+$$; $$
+\begin{aligned}
+v_\text{B} &= \dfrac{4\,\text{m} - 20\,\text{m}}{8\,\text{s} - 0\,\text{s}} \\
+&= \dfrac{-16\,\text{m}}{8\,\text{s}} \\
+&= -2.0\,\text{m/s}
+\end{aligned}
+$$
+**Answer:** $v_\text{A} = +2.0\,\text{m/s}$ and $v_\text{B} = -2.0\,\text{m/s}$. A walks in the direction of the $x$ axis and B against it; two significant figures like the values read.
+**Reasonableness:** Each walks $16\,\text{m}$ in eight seconds, so the speed is $2.0\,\text{m/s} = 7.2\,\text{km/h}$, brisk walking. The signs of the velocities are opposite, which fits a situation in which the walkers approach each other.
+
+### b)
+**Given:** $x_{0\text{A}} = 4\,\text{m}$, $v_\text{A} = 2.0\,\text{m/s}$, $x_{0\text{B}} = 20\,\text{m}$ and $v_\text{B} = -2.0\,\text{m/s}$ from part a
+**Find:** the positions as functions of time and the moment of meeting $t$
+**Principle:** In uniform motion the position is $x = x_0 + v\,t$ (chapter *Position, velocity and uniform motion as graphs*). The walkers meet when their positions are the same at the same moment (chapter *Comparing the motions of two bodies*), that is, when the lines cross.
+**Formula:** $x_\text{A} = x_{0\text{A}} + v_\text{A}\,t$ and $x_\text{B} = x_{0\text{B}} + v_\text{B}\,t$. The condition for meeting $x_\text{A} = x_\text{B}$ gives $x_{0\text{A}} + v_\text{A}\,t = x_{0\text{B}} + v_\text{B}\,t$, so $t\,(v_\text{A} - v_\text{B}) = x_{0\text{B}} - x_{0\text{A}}$ and $t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$
+**Conversions:** None needed.
+**Substitution:** The positions are $x_\text{A} = 4\,\text{m} + 2.0\,\text{m/s} \cdot t$ and $x_\text{B} = 20\,\text{m} - 2.0\,\text{m/s} \cdot t$. The moment of meeting: $$
+\begin{aligned}
+t &= \dfrac{20\,\text{m} - 4\,\text{m}}{2.0\,\text{m/s} - (-2.0\,\text{m/s})} \\
+&= \dfrac{16\,\text{m}}{4.0\,\text{m/s}} \\
+&= 4.0\,\text{s}
+\end{aligned}
+$$
+**Answer:** The walkers meet at $t = 4.0\,\text{s}$, two significant figures like the values read.
+**Reasonableness:** At the start the distance between the walkers is $20\,\text{m} - 4\,\text{m} = 16\,\text{m}$, and it shrinks at $$
+\begin{aligned}
+v &= 2.0\,\text{m/s} + 2.0\,\text{m/s} \\
+&= 4.0\,\text{m/s}
+\end{aligned}
+$$, so $16\,\text{m} : 4.0\,\text{m/s} = 4.0\,\text{s}$. The moment is within the time interval $0\ldots 8\,\text{s}$ of the graph.
+
+### c)
+**Given:** the equation $x_\text{A} = 4\,\text{m} + 2.0\,\text{m/s} \cdot t$ from part a and the moment $t = 4.0\,\text{s}$ from part b
+**Find:** the place of meeting $x$
+**Principle:** At the moment of meeting both positions are the same, so the position can be calculated with either equation.
+**Formula:** $x = x_{0\text{A}} + v_\text{A}\,t$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+x &= 4\,\text{m} + 2.0\,\text{m/s} \cdot 4.0\,\text{s} \\
+&= 4\,\text{m} + 8.0\,\text{m} \\
+&= 12\,\text{m}
+\end{aligned}
+$$
+**Answer:** The walkers meet at the position $x = 12\,\text{m}$, two significant figures like the values read.
+**Reasonableness:** A check with B's equation: $x_\text{B} = 20\,\text{m} - 2.0\,\text{m/s} \cdot 4.0\,\text{s} = 12\,\text{m}$, the same position. The place is halfway between the starting positions $4\,\text{m}$ and $20\,\text{m}$, because the magnitudes of the velocities are equal.
+
+### d)
+**Find:** how the moment and the place of meeting would change if $v_\text{B} = -1.0\,\text{m/s}$
+**Principle:** The condition for meeting $x_\text{A} = x_\text{B}$ is the same as before. Only B's line changes: it becomes gentler because the magnitude of B's velocity decreases, but it still starts from $20\,\text{m}$ (chapter *Comparing the motions of two bodies*).
+**Model answer:** In the graph B's line would be gentler and would turn less downwards, so it would cross A's line later and higher. By calculation: the condition $$
+\begin{aligned}
+x_\text{A} &= x_\text{B} \\
+4\,\text{m} + 2.0\,\text{m/s} \cdot t &= 20\,\text{m} \\
+&\quad - 1.0\,\text{m/s} \cdot t
+\end{aligned}
+$$ gives $t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$, that is $$
+\begin{aligned}
+t &= \dfrac{20\,\text{m} - 4\,\text{m}}{2.0\,\text{m/s} - (-1.0\,\text{m/s})} \\
+&= \dfrac{16\,\text{m}}{3.0\,\text{m/s}} \\
+&\approx 5.3\,\text{s}
+\end{aligned}
+$$ The position is $$
+\begin{aligned}
+x &= 4\,\text{m} + 2.0\,\text{m/s} \cdot 5.33\,\text{s} \\
+&\approx 4\,\text{m} + 10.7\,\text{m} \\
+&\approx 14.7\,\text{m}
+\end{aligned}
+$$ The meeting would therefore happen later ($5.3\,\text{s} > 4.0\,\text{s}$) and nearer B's starting position ($14.7\,\text{m} > 12\,\text{m}$). The distance of $16\,\text{m}$ now shrinks more slowly, at $3.0\,\text{m/s}$ instead of $4.0\,\text{m/s}$, and A has time to walk farther before the meeting. The moment $5.3\,\text{s}$ is still within the time interval $0\ldots 8\,\text{s}$ of the graph.
+
+### Yleisiä virheitä
+- The sign of B's velocity is forgotten ($v_\text{B} = +2.0\,\text{m/s}$), so the equation $4 + 2t = 20 + 2t$ has no solution, or the moment of meeting comes out wrong.
+- The moment of meeting is calculated by dividing the whole distance $16\,\text{m}$ by one velocity only ($16\,\text{m} : 2.0\,\text{m/s} = 8\,\text{s}$), although the distance shrinks with both velocities.
+- The place of meeting is given as the moment of meeting or as the distance A has walked ($8.0\,\text{m}$), although the position also includes the initial position $4\,\text{m}$.
+- In part d it is assumed that the walkers would still meet at the same moment or in the middle, although the velocities are no longer equal in magnitude.
+
+### Hyväksytään myös
+- In part b the equation $$
+\begin{aligned}
+x_\text{A} &= x_\text{B} \\
+4\,\text{m} + 2.0\,\text{m/s} \cdot t &= 20\,\text{m} \\
+&\quad - 2.0\,\text{m/s} \cdot t
+\end{aligned}
+$$ can be solved directly: $4.0\,\text{m/s} \cdot t = 16\,\text{m}$.
+- In part d the moment of meeting can also be calculated from the distance: $$
+\begin{aligned}
+t &= 16\,\text{m} : (2.0 + 1.0)\,\text{m/s} \\
+&\approx 5.3\,\text{s}
+\end{aligned}
+$$.
