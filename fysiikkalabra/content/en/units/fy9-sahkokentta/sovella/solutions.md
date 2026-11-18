@@ -508,3 +508,186 @@ F &= N \cdot \tfrac{2d}{v} \cdot e\tfrac{U}{d} \\
 &\approx 87.5\,\text{mN}
 \end{aligned}
 $$.
+
+## fy9-sahkokentta-s7
+
+### a)
+**Given:** the $V(x)$ graph; the field between the plates is uniform and $x$ is measured from the negative plate
+**Find:** the strength $E$ of the electric field and the direction of the field
+**Principle:** In a uniform field the potential changes steadily with distance, and the field strength is the change in potential divided by the distance (chapter *Potential energy and potential in an electric field*). The field points in the direction in which the potential decreases.
+**Reading the graph:** Two points far apart are read: $(1.0\,\text{cm};\ 50\,\text{V})$ and $(5.0\,\text{cm};\ 250\,\text{V})$.
+**Formula:** $E = \dfrac{|\Delta V|}{\Delta x} = \dfrac{|V_2 - V_1|}{x_2 - x_1}$
+**Conversions:** $1.0\,\text{cm} = 0.010\,\text{m}$ and $5.0\,\text{cm} = 0.050\,\text{m}$.
+**Substitution:** $$
+\begin{aligned}
+E &= \dfrac{250\,\text{V} - 50\,\text{V}}{0.050\,\text{m} - 0.010\,\text{m}} \\
+&= \dfrac{200\,\text{V}}{0.040\,\text{m}} \\
+&= 5000\,\text{V/m}
+\end{aligned}
+$$
+**Answer:** $E = 5.0\,\text{kV/m}$. The field points from the positive plate to the negative plate, because the potential decreases in that direction: against the $x$ axis. The result has two significant figures, like the values read from the graph.
+**Reasonableness:** Over the whole gap $250\,\text{V} : 0.050\,\text{m} = 5.0\,\text{kV/m}$, the same result, as it must be in a uniform field. The field is far smaller than the breakdown field of air, about $3\,\text{MV/m}$.
+
+### b)
+**Given:** $E = 5.0\,\text{kV/m}$ from part a; the charge of the alpha particle is $q = +2e = 2 \cdot 1.602 \cdot 10^{-19}\,\text{C}$ and its mass is $m = 6.645 \cdot 10^{-27}\,\text{kg}$; only the electric force acts
+**Find:** the acceleration $a$ and its direction
+**Principle:** In a uniform field the electric force on a charge is $F = qE$ (chapter *Uniform electric field*). On a positive charge the force is in the direction of the field. When only this force acts, Newton's second law $F = ma$ gives the acceleration (chapter *Newton's second law*).
+**Formula:** $qE = ma$, so $a = \dfrac{qE}{m} = \dfrac{2eE}{m}$
+**Conversions:** $E = 5.0\,\text{kV/m} = 5.0 \cdot 10^{3}\,\text{V/m} = 5.0 \cdot 10^{3}\,\text{N/C}$.
+**Substitution:** $$
+\begin{aligned}
+F &= 2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 5.0 \cdot 10^{3}\,\text{N/C} \\
+&= 1.602 \cdot 10^{-15}\,\text{N}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+a &= \dfrac{1.602 \cdot 10^{-15}\,\text{N}}{6.645 \cdot 10^{-27}\,\text{kg}} \\
+&\approx 2.41 \cdot 10^{11}\,\text{m/s}^2
+\end{aligned}
+$$
+**Answer:** $a \approx 2.4 \cdot 10^{11}\,\text{m/s}^2$, in the direction of the field, that is towards the negative plate ($x$ decreases). Two significant figures, like the field strength.
+**Reasonableness:** The weight of the particle $mg = 6.645 \cdot 10^{-27}\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 6.5 \cdot 10^{-26}\,\text{N}$ is about $2 \cdot 10^{10}$ times smaller than the electric force, so gravity can be ignored. The large acceleration is due to the small mass of the particle.
+
+### c)
+**Given:** the alpha particle starts from rest at $x = 4.0\,\text{cm}$; $q = 2e$ and $m$ as in part b; only the electric force does work
+**Find:** the speed $v$ at $x = 2.0\,\text{cm}$
+**Principle:** Only the electric force does work, so by the energy principle the decrease of potential energy becomes kinetic energy: $\tfrac12 mv^2 = q\,\Delta V$ (chapter *Potential energy and potential in an electric field*). A positive particle moves towards a lower potential, so its potential energy decreases.
+**Reading the graph:** From the graph: $V(4.0\,\text{cm}) = 200\,\text{V}$ and $V(2.0\,\text{cm}) = 100\,\text{V}$.
+**Formula:** $\tfrac12 mv^2 = 2e\,(V_\text{start} - V_\text{end})$, so $v = \sqrt{\dfrac{4e\,(V_\text{start} - V_\text{end})}{m}}$
+**Conversions:** Not needed: the potentials are in volts.
+**Substitution:** $$
+\begin{aligned}
+\Delta V &= 200\,\text{V} - 100\,\text{V} = 100\,\text{V} \\
+E_\text{k} &= 2e\,\Delta V = 2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 100\,\text{V} \\
+&= 3.204 \cdot 10^{-17}\,\text{J}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+v &= \sqrt{\dfrac{2 \cdot 3.204 \cdot 10^{-17}\,\text{J}}{6.645 \cdot 10^{-27}\,\text{kg}}} \\
+&= \sqrt{9.64 \cdot 10^{9}\,\text{m}^2/\text{s}^2} \\
+&\approx 9.8 \cdot 10^{4}\,\text{m/s}
+\end{aligned}
+$$
+**Answer:** $v \approx 98\,\text{km/s}$, that is $9.8 \cdot 10^{4}\,\text{m/s}$. Two significant figures, like the potentials read from the graph.
+**Reasonableness:** Check with work: $W = Fs = 1.602 \cdot 10^{-15}\,\text{N} \cdot 0.020\,\text{m} = 3.2 \cdot 10^{-17}\,\text{J}$, the same as $E_\text{k}$. The speed is only about $0.03\,\%$ of the speed of light, so classical calculation is valid.
+
+### d)
+**Given:** the new zero level is at the positive plate; with the old choice $V(5.0\,\text{cm}) = 250\,\text{V}$ and $V(4.0\,\text{cm}) = 200\,\text{V}$
+**Find:** the potential at $x = 4.0\,\text{cm}$ with the new choice, and whether $E$ and the speed in part c change
+**Principle:** Choosing the zero level shifts all potentials by the same amount, but the potential differences stay the same (chapter *Potential energy and potential in an electric field*). The field strength and the change in energy depend only on potential differences.
+**Reading the graph:** With the new choice the potential of the positive plate is $0\,\text{V}$, so all the old values decrease by $250\,\text{V}$.
+**Formula:** $V_\text{new} = V_\text{old} - 250\,\text{V}$
+**Conversions:** Not needed.
+**Substitution:** $$
+\begin{aligned}
+V_\text{new}(4.0\,\text{cm}) &= 200\,\text{V} - 250\,\text{V} \\
+&= -50\,\text{V}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+V_\text{new}(2.0\,\text{cm}) &= 100\,\text{V} - 250\,\text{V} \\
+&= -150\,\text{V}
+\end{aligned}
+$$
+**Answer:** $V = -50\,\text{V}$. The field strength does not change, because the line of the potential moves down but its slope stays the same. The potential difference between $4.0\,\text{cm}$ and $2.0\,\text{cm}$ is still $-50\,\text{V} - (-150\,\text{V}) = 100\,\text{V}$, so the gain in kinetic energy and the speed $98\,\text{km/s}$ stay the same.
+**Reasonableness:** The voltage between the plates is still $0\,\text{V} - (-250\,\text{V}) = 250\,\text{V}$. What matters physically is the potential difference, not the value of the potential.
+
+### Yleisiä virheitä
+- In part a the field is calculated by dividing $250\,\text{V}$ by $5.0$ without converting the unit, which gives $50\,\text{V/cm}$, and the unit is not changed to $\text{V/m}$.
+- In part b the charge $e$ is used instead of $2e$, which gives half the correct acceleration, or gravity is included although it is negligible.
+- In part c a single potential value, such as $200\,\text{V}$, is substituted instead of the potential difference $\Delta V$.
+- In part d it is thought that moving the zero level changes the field or the speed, or the sign of the potential is forgotten.
+
+### Hyväksytään myös
+- In part a the field strength can be calculated from the whole line: $\dfrac{250\,\text{V}}{0.050\,\text{m}}$.
+- In part c the speed can also be calculated from the acceleration and the distance: $v^2 = 2as$ with the acceleration of part b and $s = 0.020\,\text{m}$.
+
+## fy9-sahkokentta-s8
+
+### a)
+**Given:** source voltage $U = 6.0\,\text{V}$, series resistor $R = 220\,\Omega$ and the characteristic curve of the LED; the LED and the resistor are in series
+**Find:** the current $I$ in the circuit
+**Principle:** In series the current is the same everywhere, and the voltage of the source divides between the resistor and the LED: $U = U_\text{R} + U_\text{D}$ (chapter *Kirchhoff's laws and potential in a circuit*). The voltage of the resistor is $U_\text{R} = RI$ (chapter *Resistance and Ohm's law*). The voltage of the LED is read from the characteristic curve.
+**Reading the graph:** In the current range $5\ldots 30\,\text{mA}$ the curve is almost vertical at $U_\text{D} \approx 2.2\,\text{V}$ (for example the point $(2.2\,\text{V};\ 10\,\text{mA})$). So the voltage of the LED is about $2.2\,\text{V}$ in this range whatever the exact current; the range is checked at the end.
+**Formula:** $U = RI + U_\text{D}$, so $I = \dfrac{U - U_\text{D}}{R}$
+**Conversions:** Not needed: the voltages are in volts and the resistance in ohms; the current is converted to milliamperes at the end.
+**Substitution:** $$
+\begin{aligned}
+U_\text{R} &= 6.0\,\text{V} - 2.2\,\text{V} = 3.8\,\text{V} \\
+I &= \dfrac{3.8\,\text{V}}{220\,\Omega} \\
+&= 0.01727\,\text{A} \\
+&\approx 17\,\text{mA}
+\end{aligned}
+$$
+**Answer:** $I \approx 17\,\text{mA}$. The result has two significant figures, like the given values and the voltage read from the graph.
+**Reasonableness:** The current $17\,\text{mA}$ is in the range $5\ldots 30\,\text{mA}$ where the voltage of the curve is $2.2\,\text{V}$, and below the permitted $30\,\text{mA}$. The assumption and the result agree.
+
+### b)
+**Given:** $U = 6.0\,\text{V}$, $U_\text{R} = 3.8\,\text{V}$ and $I = 17.27\,\text{mA}$ from part a
+**Find:** the power $P_\text{R}$ of the resistor and its fraction of the electric power of the source
+**Principle:** Electric power is voltage times current, $P = UI$ (chapter *Electric power and the heating of a resistor*). In the resistor electrical energy becomes internal energy. The power of the source is $UI$, and since the current is the same, the fraction is the ratio of the voltages.
+**Formula:** $P_\text{R} = U_\text{R} I$ and the fraction $= \dfrac{P_\text{R}}{UI} = \dfrac{U_\text{R}}{U}$
+**Conversions:** $I = 17.27\,\text{mA} = 0.01727\,\text{A}$.
+**Substitution:** $$
+\begin{aligned}
+P_\text{R} &= 3.8\,\text{V} \cdot 0.01727\,\text{A} \\
+&= 0.0656\,\text{W} \\
+&\approx 66\,\text{mW}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+\dfrac{P_\text{R}}{P} &= \dfrac{3.8\,\text{V}}{6.0\,\text{V}} \\
+&= 0.633 \\
+&\approx 63\,\%
+\end{aligned}
+$$
+**Answer:** $P_\text{R} \approx 66\,\text{mW}$, and about $63\,\%$ of the power of the source becomes internal energy in the resistor. Two significant figures, like the given values.
+**Reasonableness:** The power of the LED is $2.2\,\text{V} \cdot 0.01727\,\text{A} \approx 38\,\text{mW}$ and the power of the source $6.0\,\text{V} \cdot 0.01727\,\text{A} \approx 104\,\text{mW}$. The sum $66\,\text{mW} + 38\,\text{mW} = 104\,\text{mW}$ matches, and the LED's share is $37\,\%$. An ordinary $0.25\,\text{W}$ resistor easily withstands a power of $66\,\text{mW}$.
+
+### c)
+**Given:** $U = 6.0\,\text{V}$, $U_\text{D} \approx 2.2\,\text{V}$ from the graph and the largest permitted current $I_\text{max} = 30\,\text{mA}$
+**Find:** the smallest series resistor $R_\text{min}$
+**Principle:** The circuit is the same as in part a: $U = RI + U_\text{D}$. The smaller the resistance, the larger the current, so the smallest permitted resistance corresponds to the largest permitted current (chapter *Resistance and Ohm's law*).
+**Reading the graph:** Even at the largest current $30\,\text{mA}$ the curve is almost vertical at $U_\text{D} \approx 2.2\,\text{V}$.
+**Formula:** $R_\text{min} = \dfrac{U - U_\text{D}}{I_\text{max}}$
+**Conversions:** $30\,\text{mA} = 0.030\,\text{A}$.
+**Substitution:** $$
+\begin{aligned}
+R_\text{min} &= \dfrac{6.0\,\text{V} - 2.2\,\text{V}}{0.030\,\text{A}} \\
+&= \dfrac{3.8\,\text{V}}{0.030\,\text{A}} \\
+&\approx 127\,\Omega
+\end{aligned}
+$$
+**Answer:** The resistor must be at least about $130\,\Omega$. The result is rounded up, because a smaller resistor would let too large a current through; two significant figures, like the given values.
+**Reasonableness:** The original $220\,\Omega$ is larger than $130\,\Omega$, and its current $17\,\text{mA}$ is below $30\,\text{mA}$, which agrees. With $130\,\Omega$ the current would be $3.8\,\text{V} : 130\,\Omega \approx 29\,\text{mA}$, below the permitted value.
+
+### d)
+**Given:** the characteristic curve of the LED; the currents $5\,\text{mA}$ and $20\,\text{mA}$
+**Find:** the resistance $R_\text{D} = U_\text{D}/I$ of the LED at both currents and a conclusion about Ohm's law
+**Principle:** Resistance is the ratio of voltage to current, $R = U/I$ (chapter *Resistance and Ohm's law*). Ohm's law holds, that is the resistance is constant, only if the voltage and the current are directly proportional, that is the $(U, I)$ graph is a straight line through the origin.
+**Reading the graph:** The voltage is read from the curve at both currents: at $5\,\text{mA}$ and at $20\,\text{mA}$, $U_\text{D} \approx 2.2\,\text{V}$.
+**Formula:** $R_\text{D} = \dfrac{U_\text{D}}{I}$
+**Conversions:** $5\,\text{mA} = 0.005\,\text{A}$ and $20\,\text{mA} = 0.020\,\text{A}$.
+**Substitution:** $$
+\begin{aligned}
+R_\text{D}(5\,\text{mA}) &= \dfrac{2.2\,\text{V}}{0.005\,\text{A}} \\
+&= 440\,\Omega
+\end{aligned}
+$$; $$
+\begin{aligned}
+R_\text{D}(20\,\text{mA}) &= \dfrac{2.2\,\text{V}}{0.020\,\text{A}} \\
+&= 110\,\Omega
+\end{aligned}
+$$
+**Answer:** $R_\text{D} \approx 440\,\Omega$ at $5\,\text{mA}$ and $110\,\Omega$ at $20\,\text{mA}$. The resistance is not constant but falls to a quarter when the current is four times as large, so the LED does not obey Ohm's law: the curve is not a straight line through the origin. When the current changes a lot, the voltage stays almost the same, so an LED cannot be connected directly to a voltage source: even a small difference between the voltage of the source and that of the LED would cause a large current. The series resistor takes the excess voltage and sets the current.
+**Reasonableness:** The current became four times as large ($5\,\text{mA} \to 20\,\text{mA}$) and the voltage stayed the same, so the resistance must fall to a quarter: $440\,\Omega : 4 = 110\,\Omega$.
+
+### Yleisiä virheitä
+- In part a the current is calculated as $I = 6.0\,\text{V} : 220\,\Omega \approx 27\,\text{mA}$, forgetting that part of the source voltage is across the LED.
+- In part b the power of the resistor is calculated as $P = UI$ with the whole source voltage $6.0\,\text{V}$, which gives the power of the whole circuit, $104\,\text{mW}$.
+- In part c the smallest resistor is rounded down, although then the current could exceed the permitted value.
+- In part d the resistance is calculated at one current only and assumed constant, or it is said that the LED obeys Ohm's law because the voltage and the current increase together.
+
+### Hyväksytään myös
+- In part a the current can also be solved from the loop rule: $6.0\,\text{V} - RI - U_\text{D} = 0$.
+- In part d the voltage can be read a little more precisely ($2.17\,\text{V}$ and $2.23\,\text{V}$), which gives resistances of about $430\,\Omega$ and $110\,\Omega$; the reading accuracy here is about $0.05\,\text{V}$.

@@ -458,3 +458,168 @@ $$ Se on noin $35$ nanogrammaa.
 - b-kohdassa suhde toisin päin, $\tfrac{E_\text{l}}{E_\text{f}} \approx 0{,}651$, kun se on tulkittu oikein: polttoaineeseen tuotu energia oli noin $65\,\%$ vapautuneesta energiasta.
 - c-kohdassa lämpötilan muutos suoraan celsiusasteina, $\Delta T = 80\,{}^\circ\text{C}$. Lämpötilaero on sama kelvineinä ja celsiusasteina.
 - c-kohdassa vastaus kolmella merkitsevällä numerolla, $9{,}40\,\text{kg}$, kun lämpötilat on tulkittu tarkoiksi arvoiksi.
+
+## fy9-moderni-s8
+
+### a)
+**Annettu:** kuvaaja annosnopeudesta $\dot{H}$ seinän paksuuden $d$ funktiona ja malli $\dot{H} = \dot{H}_0\,e^{-\mu d}$
+**Kysytty:** vaimennuskerroin $\mu$
+**Periaate:** Gammasäteily vaimenee aineessa eksponentiaalisesti. Jokainen yhtä suuri lisäys seinän paksuuteen pienentää annosnopeutta samalla kertoimella (luku *Säteilyannos ja säteilyturvallisuus Suomessa*). Kerroin $\mu$ ratkaistaan kahden kuvaajan pisteen avulla.
+**Kuvaajan lukeminen:** Kuvaajalta luetaan kaksi pistettä, jotka ovat kaukana toisistaan: $(0\,\text{cm};\ 80\,\mu\text{Sv/h})$ ja $(20\,\text{cm};\ 5{,}0\,\mu\text{Sv/h})$. Ensimmäinen on annosnopeus ilman seinää, $\dot{H}_0 = 80\,\mu\text{Sv/h}$.
+**Kaava:** $\dot{H} = \dot{H}_0\,e^{-\mu d}$, joten $\dfrac{\dot{H}_0}{\dot{H}} = e^{\mu d}$ ja $\mu = \dfrac{\ln(\dot{H}_0 / \dot{H})}{d}$
+**Muunnokset:** Muunnoksia ei tarvita. Paksuus on senttimetreinä ja annosnopeudet ovat mikrosieverteinä tunnissa. Kertoimen $\mu$ yksikkö on $1/\text{cm}$.
+**Sijoitus:** $$
+\begin{aligned}
+\mu &= \dfrac{\ln(80\,\mu\text{Sv/h} : 5{,}0\,\mu\text{Sv/h})}{20\,\text{cm}} \\
+&= \dfrac{\ln 16}{20\,\text{cm}} \\
+&= \dfrac{2{,}773}{20\,\text{cm}} \\
+&\approx 0{,}14\,\dfrac{1}{\text{cm}}
+\end{aligned}
+$$
+**Vastaus:** $\mu \approx 0{,}14\,\dfrac{1}{\text{cm}}$. Tuloksessa on kaksi merkitsevää numeroa, kuten kuvaajasta luetuissa arvoissa. Seuraavissa kohdissa käytetään tarkempaa arvoa $\mu = 0{,}1386\,\dfrac{1}{\text{cm}}$. Silloin pyöristys ei kasva.
+**Järkevyys:** Puoliintumispaksuus on $\dfrac{\ln 2}{\mu} \approx 5{,}0\,\text{cm}$. Kuvaajassa annosnopeus on kohdassa $5\,\text{cm}$ noin $40\,\mu\text{Sv/h}$ eli puolet alkuarvosta. Se sopii tulokseen.
+
+### b)
+**Annettu:** $\dot{H}_0 = 80\,\mu\text{Sv/h}$, $\mu = 0{,}1386\,\dfrac{1}{\text{cm}}$ ja $d = 18\,\text{cm}$
+**Kysytty:** annosnopeus $\dot{H}$ seinän takana
+**Periaate:** Malli $\dot{H} = \dot{H}_0\,e^{-\mu d}$ pätee koko kuvaajan alueella (luku *Säteilyannos ja säteilyturvallisuus Suomessa*). Paksuus $18\,\text{cm}$ on kuvaajan alueella, joten mallia voi käyttää suoraan.
+**Kaava:** $\dot{H} = \dot{H}_0\,e^{-\mu d}$
+**Muunnokset:** Muunnoksia ei tarvita. Eksponentilla $\mu d$ ei ole yksikköä.
+**Sijoitus:** $$
+\begin{aligned}
+\dot{H} &= 80\,\mu\text{Sv/h} \cdot e^{-0{,}1386\,\text{1/cm} \cdot 18\,\text{cm}} \\
+&= 80\,\mu\text{Sv/h} \cdot e^{-2{,}495} \\
+&= 80\,\mu\text{Sv/h} \cdot 0{,}0825 \\
+&\approx 6{,}6\,\mu\text{Sv/h}
+\end{aligned}
+$$
+**Vastaus:** $\dot{H} \approx 6{,}6\,\mu\text{Sv/h}$. Tuloksessa on kaksi merkitsevää numeroa, kuten annosnopeudessa $80\,\mu\text{Sv/h}$ ja paksuudessa $18\,\text{cm}$.
+**Järkevyys:** Seinä on $18\,\text{cm} : 5{,}0\,\text{cm} = 3{,}6$ puoliintumispaksuutta. Annosnopeus on $80 \cdot 0{,}5^{3{,}6} \approx 6{,}6\,\mu\text{Sv/h}$. Se on kuvaajalla kohtien $15\,\text{cm}$ ($10\,\mu\text{Sv/h}$) ja $20\,\text{cm}$ ($5{,}0\,\mu\text{Sv/h}$) välissä, kuten pitääkin.
+
+### c)
+**Annettu:** $\dot{H} = 6{,}6\,\mu\text{Sv/h}$ b-kohdasta, oleskelu $1{,}5\,\text{h}$ työpäivässä ja $220$ työpäivää, enimmäisannos $1{,}0\,\text{mSv}$ vuodessa
+**Kysytty:** vuosiannos $H$ ja sen vertailu enimmäisannokseen
+**Periaate:** Kun annosnopeus on vakio, annos on annosnopeus kerrottuna oleskeluajalla (luku *Säteilyannos ja säteilyturvallisuus Suomessa*).
+**Kaava:** $H = \dot{H}\,t$, missä $t = 1{,}5\,\text{h} \cdot 220$
+**Muunnokset:** $1\,\text{mSv} = 1000\,\mu\text{Sv}$.
+**Sijoitus:** $$
+\begin{aligned}
+t &= 1{,}5\,\text{h} \cdot 220 \\
+&= 330\,\text{h}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+H &= 6{,}6\,\mu\text{Sv/h} \cdot 330\,\text{h} \\
+&\approx 2180\,\mu\text{Sv} \\
+&\approx 2{,}2\,\text{mSv}
+\end{aligned}
+$$
+**Vastaus:** Henkilön vuosiannos on noin $2{,}2\,\text{mSv}$. Se on yli kaksi kertaa niin suuri kuin enimmäisannos $1{,}0\,\text{mSv}$. Enimmäisannos ylittyy, joten seinä on liian ohut.
+**Järkevyys:** Oleskeluaika on $330\,\text{h}$ eli noin $4\,\%$ vuoden tunneista. Annosnopeus on noin $6{,}6\,\mu\text{Sv/h}$. Annos on millisievertien luokkaa. Se sopii tällaisen seinän taakse.
+
+### d)
+**Annettu:** $\dot{H}_0 = 80\,\mu\text{Sv/h}$, $\mu = 0{,}1386\,\dfrac{1}{\text{cm}}$, $t = 330\,\text{h}$ ja enimmäisannos $1{,}0\,\text{mSv}$
+**Kysytty:** pienin seinän paksuus $d$, jolla vuosiannos ei ylitä rajaa
+**Periaate:** Suurin sallittu annosnopeus on enimmäisannos jaettuna oleskeluajalla. Seinän paksuus ratkaistaan sen avulla eksponentiaalisesta mallista (luku *Säteilyannos ja säteilyturvallisuus Suomessa*).
+**Kaava:** $\dot{H}_\text{max} = \dfrac{H_\text{max}}{t}$. Ehto $\dot{H}_0\,e^{-\mu d} = \dot{H}_\text{max}$ antaa $d = \dfrac{\ln(\dot{H}_0 / \dot{H}_\text{max})}{\mu}$
+**Muunnokset:** $1{,}0\,\text{mSv} = 1000\,\mu\text{Sv}$.
+**Sijoitus:** $$
+\begin{aligned}
+\dot{H}_\text{max} &= \dfrac{1000\,\mu\text{Sv}}{330\,\text{h}} \\
+&= 3{,}03\,\mu\text{Sv/h}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+d &= \dfrac{\ln(80\,\mu\text{Sv/h} : 3{,}03\,\mu\text{Sv/h})}{0{,}1386\,\text{1/cm}} \\
+&= \dfrac{3{,}273}{0{,}1386\,\text{1/cm}} \\
+&= 23{,}6\,\text{cm}
+\end{aligned}
+$$
+**Vastaus:** Seinän pitää olla vähintään $24\,\text{cm}$ paksu. Tulos pyöristetään ylöspäin. Paksuus $23\,\text{cm}$ antaisi annosnopeuden $3{,}3\,\mu\text{Sv/h}$ ja annoksen, joka on yli $1{,}0\,\text{mSv}$. Tuloksessa on kaksi merkitsevää numeroa kuten lähtötiedoissa.
+**Järkevyys:** Paksuus $24\,\text{cm}$ on kuvaajan alueella, koska kuvaaja päättyy kohtaan $25\,\text{cm}$. Kuvaajalla annosnopeus on siinä noin $2{,}9\,\mu\text{Sv/h}$. Se on alle rajan $3{,}03\,\mu\text{Sv/h}$. Seinän pitää olla paksumpi kuin nykyinen $18\,\text{cm}$, koska nykyinen seinä ylitti rajan.
+**Oletukset:** Malli olettaa, että annosnopeus on vakio, eikä se ota sirontaa huomioon. Seinästä ja ympäristöstä sironnut säteily antaa lisäannoksen. Lähteen aktiivisuuskaan ei pysy vakiona. Siksi oikea seinä kannattaa tehdä tulosta paksummaksi, esimerkiksi $25\,\text{cm}$ tai enemmän.
+
+### Yleisiä virheitä
+- a-kohdassa suhteesta ei oteta logaritmia vaan lasketaan pelkkä osamäärä: $\mu = 16 / 20\,\text{cm} = 0{,}80\,\text{1/cm}$. Toinen virhe on kääntää suhde ylösalaisin. Silloin $\mu$ tulee negatiiviseksi.
+- b-kohdassa annosnopeus lasketaan lineaarisesti: $80\,\mu\text{Sv/h} - 18 \cdot 3{,}0\,\mu\text{Sv/h}$. Tai $e$:n eksponentin etumerkki unohdetaan.
+- c-kohdassa annosnopeus kerrotaan vain yhden työpäivän ajalla $1{,}5\,\text{h}$. Tai $\mu\text{Sv}$ ja $\text{mSv}$ sekoitetaan: $6{,}6 \cdot 330 = 2178\,\text{mSv}$.
+- d-kohdassa vuosiraja $1{,}0\,\text{mSv}$ käytetään annosnopeutena $1{,}0\,\mu\text{Sv/h}$. Silloin paksuudeksi tulee $31{,}6\,\text{cm}$. Se on väärä arvo kuvaajan ulkopuolella.
+
+### Hyväksytään myös
+- a-kohdassa kaksi muuta kaukana toisistaan olevaa kuvaajan pistettä antaa saman tuloksen. Esimerkiksi $(0\,\text{cm};\ 80\,\mu\text{Sv/h})$ ja $(15\,\text{cm};\ 10\,\mu\text{Sv/h})$ antavat $\mu = \ln 8 / 15\,\text{cm} = 0{,}139\,\text{1/cm}$.
+- b-kohdassa puoliintumispaksuuden avulla: $80\,\mu\text{Sv/h} \cdot 0{,}5^{18/5{,}0} \approx 6{,}6\,\mu\text{Sv/h}$.
+- d-kohdassa paksuus voidaan lukea suoraan kuvaajalta kohdasta, jossa annosnopeus on $3{,}0\,\mu\text{Sv/h}$, jos luku on noin $24\,\text{cm}$.
+
+## fy9-moderni-s9
+
+### a)
+**Annettu:** kuvaaja galaksien etääntymisnopeudesta $v$ etäisyyden $d$ funktiona ja origon kautta kulkeva sovitettu suora; Hubblen laki $v = H_0\,d$
+**Kysytty:** Hubblen vakio $H_0$
+**Periaate:** Hubblen lain mukaan etääntymisnopeus on suoraan verrannollinen etäisyyteen. Siksi suora kulkee origon kautta, ja sen kulmakerroin on $H_0$ (luku *Maailmankaikkeuden kehitys*).
+**Kuvaajan lukeminen:** Suoralta luetaan kaksi pistettä, jotka ovat kaukana toisistaan: origo $(0\,\text{Mpc};\ 0\,\text{km/s})$ ja ruudukon piste $(250\,\text{Mpc};\ 18\,000\,\text{km/s})$.
+**Kaava:** $H_0 = \dfrac{v}{d} = \dfrac{v_2 - v_1}{d_2 - d_1}$
+**Muunnokset:** Muunnoksia ei tarvita. Yksiköt $\text{km/s}$ ja $\text{Mpc}$ ovat Hubblen vakion tavallinen yksikkö.
+**Sijoitus:** $$
+\begin{aligned}
+H_0 &= \dfrac{18\,000\,\text{km/s} - 0\,\text{km/s}}{250\,\text{Mpc} - 0\,\text{Mpc}} \\
+&= 72\,\dfrac{\text{km/s}}{\text{Mpc}}
+\end{aligned}
+$$
+**Vastaus:** $H_0 = 72\,\dfrac{\text{km/s}}{\text{Mpc}}$. Tuloksessa on kaksi merkitsevää numeroa, kuten ruudukon pisteen arvoissa.
+**Järkevyys:** Galaksi, joka on $1\,\text{Mpc}$ päässä, etääntyisi vain nopeudella $72\,\text{km/s}$. Se on hidasta avaruuden mittakaavassa. Kuvaajan pisteet ovat suoran lähellä, joten kulmakerroin kuvaa koko aineistoa.
+
+### b)
+**Annettu:** $v = 8400\,\text{km/s}$ ja $H_0 = 72\,\dfrac{\text{km/s}}{\text{Mpc}}$ a-kohdasta
+**Kysytty:** galaksin etäisyys $d$
+**Periaate:** Hubblen laki $v = H_0\,d$ pätee myös uudelle galaksille. Etäisyys ratkaistaan siitä (luku *Maailmankaikkeuden kehitys*).
+**Kaava:** $d = \dfrac{v}{H_0}$
+**Muunnokset:** Muunnoksia ei tarvita. Yksiköt $\text{km/s}$ supistuvat, ja jäljelle jää $\text{Mpc}$.
+**Sijoitus:** $$
+\begin{aligned}
+d &= \dfrac{8400\,\text{km/s}}{72\,\tfrac{\text{km/s}}{\text{Mpc}}} \\
+&= 116{,}7\,\text{Mpc}
+\end{aligned}
+$$
+**Vastaus:** $d \approx 1{,}2 \cdot 10^{2}\,\text{Mpc}$ eli noin $120\,\text{Mpc}$. Tuloksessa on kaksi merkitsevää numeroa, kuten nopeudessa $8400\,\text{km/s}$ ja Hubblen vakiossa.
+**Järkevyys:** Etäisyys $117\,\text{Mpc}$ on kuvaajan alueella. Kuvaajan suora antaa etäisyydellä $120\,\text{Mpc}$ nopeuden noin $8600\,\text{km/s}$. Se on lähellä annettua nopeutta $8400\,\text{km/s}$, joten tulos on oikean suuruinen.
+
+### c)
+**Annettu:** $H_0 = 72\,\dfrac{\text{km/s}}{\text{Mpc}}$, $1\,\text{Mpc} = 3{,}086 \cdot 10^{19}\,\text{km}$ ja $1\,\text{a} = 3{,}156 \cdot 10^{7}\,\text{s}$
+**Kysytty:** aika $t$, jonka galaksit ovat etääntyneet toisistaan
+**Periaate:** Oletetaan, että galaksi on liikkunut koko ajan samalla nopeudella $v$ ja lähtenyt samasta paikasta kuin muut. Silloin se on kulkenut matkan $d = v\,t$. Hubblen lain mukaan $v = H_0\,d$, joten $t = d / v = 1 / H_0$. Aika on sama kaikille galakseille (luku *Maailmankaikkeuden kehitys*).
+**Kaava:** $t = \dfrac{d}{v} = \dfrac{1}{H_0}$
+**Muunnokset:** $H_0$ muunnetaan yksikköön $1/\text{s}$. Yksi $\text{Mpc}$ on $3{,}086 \cdot 10^{19}\,\text{km}$, joten $\text{km}$ supistuu.
+**Sijoitus:** $$
+\begin{aligned}
+H_0 &= \dfrac{72\,\text{km/s}}{3{,}086 \cdot 10^{19}\,\text{km}} \\
+&= 2{,}333 \cdot 10^{-18}\,\dfrac{1}{\text{s}}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+t &= \dfrac{1}{2{,}333 \cdot 10^{-18}\,\text{1/s}} \\
+&= 4{,}286 \cdot 10^{17}\,\text{s}
+\end{aligned}
+$$ ja vuosina $$
+\begin{aligned}
+t &= \dfrac{4{,}286 \cdot 10^{17}\,\text{s}}{3{,}156 \cdot 10^{7}\,\text{s/a}} \\
+&= 1{,}358 \cdot 10^{10}\,\text{a}
+\end{aligned}
+$$
+**Vastaus:** $t \approx 1{,}4 \cdot 10^{10}\,\text{a}$ eli noin $14$ miljardia vuotta. Tuloksessa on kaksi merkitsevää numeroa, koska $H_0$ on annettu kahdella merkitsevällä numerolla.
+**Järkevyys:** Tulos on samaa suuruusluokkaa kuin maailmankaikkeuden iän nykyarvio, noin $14$ miljardia vuotta. Arvio on karkea, koska laajenemisnopeus ei ole pysynyt vakiona. Se antaa silti oikean suuruusluokan.
+
+### d)
+**Kysytty:** miksi havainto kaikkien kaukaisten galaksien etääntymisestä ei tee Linnunradasta keskipistettä
+**Periaate:** Havainto kertoo etäisyyksien muutoksesta. Se ei kerro paikasta, josta liike alkoi. Laajenevassa avaruudessa Hubblen laki näyttää samalta kaikkialla (luku *Maailmankaikkeuden kehitys*).
+**Mallivastaus:** Kuvaajan mukaan nopeus on suoraan verrannollinen etäisyyteen. Kaksi kertaa kauempana oleva galaksi etääntyy kaksi kertaa nopeammin. Sama suhde havaittaisiin mistä tahansa galaksista katsoen. Jokainen havaitsija näkee kaikkien muiden etääntyvän itsestään, ja hän luulisi olevansa keskipiste. Galaksit eivät liiku avaruuden läpi pois jostain tietystä pisteestä. Avaruus itse laajenee, ja etäisyydet kaikkien galaksien välillä kasvavat samalla tavalla. Laajenemisella ei siis ole keskipistettä, ja Linnunrata on vain yksi paikka muiden joukossa. Vertauksena toimivat ilmapallon pintaan piirretyt pisteet. Kun palloa täytetään, jokaisesta pisteestä katsoen muut pisteet etääntyvät.
+
+### Yleisiä virheitä
+- a-kohdassa kulmakerroin luetaan yhdestä mittauspisteestä eikä suoralta. Tai $H_0$ lasketaan väärin päin: $250 : 18\,000 = 0{,}014$.
+- b-kohdassa etäisyys lasketaan kertomalla: $d = v \cdot H_0 = 8400 \cdot 72 = 6{,}0 \cdot 10^{5}\,\text{Mpc}$. Tai tulos annetaan kilometreinä.
+- c-kohdassa $H_0$:ta ei muunneta yksikköön $1/\text{s}$. Silloin tulokseksi tulee $1 / 72 = 0{,}014$ ilman järkevää yksikköä. Tai megaparsekit ja kilometrit eivät supistu oikein.
+- d-kohdassa sanotaan, että galaksit etääntyvät meistä, joten olemme keskipisteessä. Tai väitetään galaksien liikkuvan avaruuden läpi kuin räjähdyksen sirpaleet.
+
+### Hyväksytään myös
+- a-kohdassa kulmakerroin kahdesta muusta suoran pisteestä, jotka ovat kaukana toisistaan. Esimerkiksi $(125\,\text{Mpc};\ 9000\,\text{km/s})$ ja $(250\,\text{Mpc};\ 18\,000\,\text{km/s})$, jos luku on $72\,\tfrac{\text{km/s}}{\text{Mpc}}$.
+- c-kohdassa tulos $13{,}6$ miljardia vuotta tai $1{,}36 \cdot 10^{10}\,\text{a}$, kun lopputulos on pyöristetty sopivasti.
+- d-kohdassa ilmapallovertaus tai muu vastaava, kun perustelussa on, että laajeneminen näyttää samalta kaikissa paikoissa.

@@ -400,3 +400,160 @@ kaksi merkitsevää numeroa kuten jarrutusmatkoissa ja kulmakertoimessa.
 ### Hyväksytään myös
 - b-kohdassa kulmakertoimen voi määrittää laskimen sovituksesta origon kautta ($k \approx 0{,}121\,\text{s}^2/\text{m}$, $a \approx 4{,}15\,\text{m/s}^2$) tai muusta kaukaisesta suoran pisteestä. Hidastuvuudet $4{,}0\text{–}4{,}4\,\text{m/s}^2$ hyväksytään, samoin c-kohdan kertoimet $0{,}41\text{–}0{,}45$.
 - d-kohdassa vastaus $10{,}25\,\%$ tai "noin $10\,\%$".
+
+## fy9-kokeellisuus-s7
+
+### a)
+**Annettu:** kuvaajassa viisi mittauspistettä: tukivoima $N = 5\,\text{N}\ldots 25\,\text{N}$ ja kitkavoima $F_\mu = 1{,}1\,\text{N}\ldots 5{,}4\,\text{N}$; jousivaa'an asteikkoväli $0{,}1\,\text{N}$
+**Kysytty:** näkyykö systemaattista virhettä ja mitä kuvaaja kertoo satunnaisesta vaihtelusta
+**Periaate:** Liukukitkavoima on suoraan verrannollinen tukivoimaan: $F_\mu = \mu N$. Siksi pisteiden pitäisi olla suoralla, joka kulkee origon kautta. Systemaattinen virhe on sama joka kerta, ja se siirtää kaikkia pisteitä samaan suuntaan. Satunnainen virhe vaihtelee arvaamattomasti, ja se hajottaa pisteitä molempiin suuntiin (luku *Mittaaminen ja mittauksen luotettavuus*).
+**Kuvaajan lukeminen:** Pisteet ovat lähes suoralla, joka kulkee origon kautta. Pisteiden poikkeamat suorasta ovat enintään noin $0{,}1\,\text{N}$, ja poikkeamat ovat välillä ylös ja välillä alas.
+**Mallivastaus:** Systemaattista virhettä ei näy. Jos jousivaaka olisi nollattu väärin, suora leikkaisi pystyakselin origon ylä- tai alapuolella. Silloin kaikki pisteet olisivat saman matkan päässä oikeasta paikastaan. Tässä suora kulkee origosta, joten nollakohta on kunnossa.
+
+Pisteiden hajonta suoran molemmin puolin on satunnaista vaihtelua. Syynä voi olla esimerkiksi vaa'an lukeman heiluminen vedettäessä. Hajonta on samaa suuruusluokkaa kuin asteikkoväli $0{,}1\,\text{N}$.
+**Järkevyys:** Kun tukivoima on $0\,\text{N}$, kitkavoima on nolla, joten suoran täytyy kulkea origon kautta. Poikkeamat ovat noin $2\,\%$ suurimmasta kitkavoimasta, joten vaihtelu on pientä.
+
+### b)
+**Annettu:** pisteet $(5\,\text{N};\ 1{,}1\,\text{N})$, $(10\,\text{N};\ 2{,}1\,\text{N})$, $(15\,\text{N};\ 3{,}3\,\text{N})$, $(20\,\text{N};\ 4{,}2\,\text{N})$ ja $(25\,\text{N};\ 5{,}4\,\text{N})$
+**Kysytty:** liukukitkakerroin $\mu$ ja sen virhearvio $\Delta\mu$
+**Periaate:** Liukukitkavoima $F_\mu = \mu N$. Pisteet ovat origon kautta kulkevalla suoralla, joten kerroin on kunkin pisteen suhde $F_\mu : N$ ja se on myös suoran kulmakerroin. Yksittäinen suhde vaihtelee mittausvirheen takia. Siksi tulos on suhteiden keskiarvo, ja virhearvio on vaihteluvälin puolikas.
+**Kuvaajan lukeminen:** Kunkin pisteen koordinaatit on luettu kuvaajalta, ja ne ovat annettuina yllä.
+**Kaava:** $\mu = \dfrac{F_\mu}{N}$ ja $\Delta\mu = \dfrac{\mu_\text{max} - \mu_\text{min}}{2}$
+**Muunnokset:** Ei tarvita: voimat ovat newtoneina.
+**Sijoitus:** $$
+\begin{aligned}
+\mu_1 &= \dfrac{1{,}1\,\text{N}}{5\,\text{N}} = 0{,}22 \\
+\mu_2 &= \dfrac{2{,}1\,\text{N}}{10\,\text{N}} = 0{,}21 \\
+\mu_3 &= \dfrac{3{,}3\,\text{N}}{15\,\text{N}} = 0{,}22 \\
+\mu_4 &= \dfrac{4{,}2\,\text{N}}{20\,\text{N}} = 0{,}21 \\
+\mu_5 &= \dfrac{5{,}4\,\text{N}}{25\,\text{N}} = 0{,}216
+\end{aligned}
+$$ $$
+\begin{aligned}
+\mu &= \dfrac{0{,}22 + 0{,}21 + 0{,}22 + 0{,}21 + 0{,}216}{5} \\
+&= 0{,}215 \\
+\Delta\mu &= \dfrac{0{,}22 - 0{,}21}{2} \\
+&= 0{,}005
+\end{aligned}
+$$
+**Vastaus:** $\mu = 0{,}215 \pm 0{,}005$. Tulos kirjoitetaan samalla desimaalilla kuin virhearvio. Virhearviossa on yksi merkitsevä numero.
+**Järkevyys:** Puun ja pöydän liukukitkakerroin on tyypillisesti $0{,}2\text{–}0{,}4$, joten tulos on järkevä. Virhearvio $0{,}005 : 0{,}215 \approx 2\,\%$ on pieni, koska kaikki viisi pisteen suhdetta ovat lähellä toisiaan.
+
+### c)
+**Annettu:** nollavirhe $F_0 = 0{,}3\,\text{N}$, vaa'an lukema $F_\text{lukema} = 2{,}4\,\text{N}$ ja tukivoima $N = 10\,\text{N}$
+**Kysytty:** ryhmän saama kerroin $\mu_\text{ryhmä}$, oikea kerroin $\mu$, virheen suuruus prosentteina ja nollavirheen vaikutus kulmakertoimeen
+**Periaate:** Kuormittamattomana vaaka näytti $0{,}3\,\text{N}$. Siksi jokaisessa lukemassa on $0{,}3\,\text{N}$ liikaa. Tämä on systemaattinen virhe, joka on joka kerta yhtä suuri. Oikea kitkavoima on lukema miinus nollavirhe.
+**Kaava:** $\mu_\text{ryhmä} = \dfrac{F_\text{lukema}}{N}$, $\mu = \dfrac{F_\text{lukema} - F_0}{N}$ ja virhe $\dfrac{\mu_\text{ryhmä} - \mu}{\mu} \cdot 100\,\%$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+\mu_\text{ryhmä} &= \dfrac{2{,}4\,\text{N}}{10\,\text{N}} \\
+&= 0{,}24 \\
+\mu &= \dfrac{2{,}4\,\text{N} - 0{,}3\,\text{N}}{10\,\text{N}} \\
+&= 0{,}21 \\
+\text{virhe} &= \dfrac{0{,}24 - 0{,}21}{0{,}21} \cdot 100\,\% \\
+&\approx 14\,\%
+\end{aligned}
+$$
+**Vastaus:** Ryhmän kerroin on $0{,}24$, oikea kerroin $0{,}21$ ja virhe noin $14\,\%$ oikeasta arvosta. Kerroin kirjoitetaan kahdella merkitsevällä numerolla, kuten lukemat.
+**Järkevyys:** Oikea arvo $0{,}21$ sopii a- ja b-kohdan mittaussarjaan ($0{,}215 \pm 0{,}005$). Virhe on suurin, kun kitkavoima on pieni, koska vakio $0{,}3\,\text{N}$ on silloin suuri osuus lukemasta.
+**Nollavirhe ja kulmakerroin:** Nollavirhe lisää jokaiseen kitkavoimaan saman $0{,}3\,\text{N}$, joten kuvaajan suora siirtyy ylöspäin mutta pysyy yhtä jyrkkänä. Kulmakerroin $\dfrac{\Delta F}{\Delta N}$ lasketaan erotuksena, ja vakio kumoutuu. Siksi sovitetun suoran kulmakertoimesta saatava $\mu$ ei muutu. Suora vain leikkaisi pystyakselin kohdassa $0{,}3\,\text{N}$, ja siitä nollavirhe huomattaisiin.
+
+### d)
+**Kysytty:** kaksi mittauksen luotettavuutta heikentävää asiaa ja kokeen parannukset
+**Periaate:** Arvioidaan, mitkä virhelähteet vaikuttavat tulokseen eniten ja miten kutakin voi pienentää (luku *Mittaaminen ja mittauksen luotettavuus*).
+**Mallivastaus:** Ensimmäinen heikkous on vetonopeuden vaihtelu. Liukukitka mitataan vain, kun palikka liukuu tasaista vauhtia. Jos veto nykii, vaa'an lukema heiluu ja lukeman arviointi on epävarmaa. Parannus: käytetään voima-anturia ja tasaista vetolaitetta tai luetaan lukema vasta, kun nopeus on tasainen.
+
+Toinen heikkous on, että jokaisella tukivoimalla on vain yksi mittaus ja asteikkoväli on $0{,}1\,\text{N}$. Lukeman epävarmuus on noin puolet asteikkovälistä, $0{,}05\,\text{N}$, ja pienellä tukivoimalla se on suuri osa tuloksesta. $$
+\begin{aligned}
+\dfrac{0{,}05\,\text{N}}{1{,}1\,\text{N}} &\approx 5\,\% \quad (N = 5\,\text{N}) \\
+\dfrac{0{,}05\,\text{N}}{5{,}4\,\text{N}} &\approx 1\,\% \quad (N = 25\,\text{N})
+\end{aligned}
+$$ Parannus: jokainen mittaus toistetaan kolme kertaa ja lasketaan keskiarvo, mittauspisteitä lisätään ja suuria tukivoimia käytetään enemmän, jolloin suhteellinen virhe pienenee.
+
+### Yleisiä virheitä
+- a-kohdassa pisteiden hajonta sekoitetaan systemaattiseen virheeseen: satunnainen vaihtelu ei siirrä kaikkia pisteitä samaan suuntaan.
+- b-kohdassa kerroin lasketaan vain yhdestä pisteestä tai kuvaajan kulmakerroin luetaan väärin, esimerkiksi $\Delta N : \Delta F$.
+- b-kohdan tulos kirjoitetaan epävarmuuden kannalta liian monella numerolla ($0{,}2152$) tai virhearvioksi otetaan yksittäisen pisteen poikkeama.
+- c-kohdassa nollavirhe lisätään lukemaan eikä vähennetä siitä, tai prosenttiosuus lasketaan virheellisestä arvosta ($0{,}03 : 0{,}24 \approx 13\,\%$) eikä oikeasta.
+- c-kohdassa väitetään, että nollavirhe muuttaa kulmakerrointa, vaikka se siirtää vain suoran paikkaa.
+
+### Hyväksytään myös
+- b-kohdassa $\mu$ voidaan lukea sovitetulta suoralta, esimerkiksi pisteestä $(25\,\text{N};\ 5{,}4\,\text{N})$ saadaan $0{,}216$. Kertoimet $0{,}21\text{–}0{,}22$ hyväksytään, ja virhearvio $\pm 0{,}01$, jos se on perusteltu ääriviivoilla.
+- d-kohdassa muut perustellut virhelähteet, esimerkiksi pöydän pinnan pölyisyys.
+
+## fy9-kokeellisuus-s8
+
+### a)
+**Annettu:** kuvaajan sovitettu suora; $B = \mu_0 n I$ ja $\mu_0 = 4\pi \cdot 10^{-7}\,\text{Vs/(Am)}$
+**Kysytty:** suoran kulmakerroin $k$ ja kierrostiheys $n$
+**Periaate:** Kaavassa $B = \mu_0 n I$ kenttä on suoraan verrannollinen virtaan, joten $(I, B)$-kuvaajan suoran kulmakerroin on $k = \mu_0 n$ (luku *Virtajohtimen ja käämin magneettikenttä*).
+**Kuvaajan lukeminen:** Sovitetulta suoralta luetaan kaksi kaukana toisistaan olevaa pistettä: $(1{,}0\,\text{A};\ 2{,}5\,\text{mT})$ ja $(2{,}5\,\text{A};\ 6{,}2\,\text{mT})$.
+**Kaava:** $k = \dfrac{\Delta B}{\Delta I}$ ja $n = \dfrac{k}{\mu_0}$
+**Muunnokset:** $1\,\text{mT} = 10^{-3}\,\text{T}$, joten $k$ muutetaan yksikköön $\text{T/A}$.
+**Sijoitus:** $$
+\begin{aligned}
+k &= \dfrac{6{,}2\,\text{mT} - 2{,}5\,\text{mT}}{2{,}5\,\text{A} - 1{,}0\,\text{A}} \\
+&= 2{,}47\,\text{mT/A} \\
+&= 2{,}47 \cdot 10^{-3}\,\text{T/A}
+\end{aligned}
+$$ $$
+\begin{aligned}
+n &= \dfrac{2{,}47 \cdot 10^{-3}\,\text{T/A}}{4\pi \cdot 10^{-7}\,\text{Vs/(Am)}} \\
+&\approx 1{,}96 \cdot 10^{3}\,\text{1/m}
+\end{aligned}
+$$
+**Vastaus:** $n \approx 2{,}0 \cdot 10^{3}\,\text{1/m}$ eli noin $20$ kierrosta senttimetrillä. Kaksi merkitsevää numeroa, koska luetut arvot ovat kaksi- tai kolminumeroisia.
+**Järkevyys:** Tavallisessa koekäämissä on kymmeniä kierroksia senttimetrillä, joten luku on sopiva. Yksikkö: $\text{T/A} : \text{Vs/(Am)} = \text{1/m}$, koska $1\,\text{T} = 1\,\text{Vs/m}^2$.
+
+### b)
+**Annettu:** $B = 12\,\text{mT}$; kulmakerroin $k = 2{,}47\,\text{mT/A}$ a-kohdasta; suurin mitattu virta $2{,}5\,\text{A}$
+**Kysytty:** tarvittava virta $I$ ja tuloksen luotettavuus
+**Periaate:** Suora kulkee käytännössä origon kautta, joten $B = kI$.
+**Kaava:** $I = \dfrac{B}{k}$
+**Muunnokset:** Ei tarvita: sekä $B$ että $k$ ovat millitesloina.
+**Sijoitus:** $$
+\begin{aligned}
+I &= \dfrac{12\,\text{mT}}{2{,}47\,\text{mT/A}} \\
+&\approx 4{,}9\,\text{A}
+\end{aligned}
+$$
+**Vastaus:** Tarvittava virta on noin $4{,}9\,\text{A}$, kaksi merkitsevää numeroa kuten luetuissa arvoissa.
+**Järkevyys:** Virta on $4{,}9 : 2{,}5 \approx 2$ kertaa suurin mitattu virta, joten tulos on ekstrapolointi eli arvio mittausalueen ulkopuolelle. Kuvaaja ei kerro, pysyykö riippuvuus suorana: suuri virta lämmittää käämin johdinta ja kasvattaa sen resistanssia, ja virtalähde ei välttämättä jaksa antaa tällaista virtaa. Tulos on siis vain arvio, ja se tarkistetaan mittaamalla.
+
+### c)
+**Annettu:** nollalukema $B_0 = 0{,}04\,\text{mT}$ virralla $0\,\text{A}$
+**Kysytty:** nollalukeman suhteellinen osuus kentästä virroilla $0{,}50\,\text{A}$ ja $2{,}5\,\text{A}$, virheen tyyppi ja vaikutus kulmakertoimeen
+**Periaate:** Virheen suhteellinen osuus on virhe jaettuna mittaustuloksella (luku *Mittaaminen ja mittauksen luotettavuus*). Virhe, joka on aina yhtä suuri eikä riipu virrasta, on systemaattinen.
+**Kuvaajan lukeminen:** Virralla $0{,}50\,\text{A}$ kenttä on $B \approx 1{,}3\,\text{mT}$ ja virralla $2{,}5\,\text{A}$ se on $B \approx 6{,}2\,\text{mT}$.
+**Kaava:** $\dfrac{B_0}{B} \cdot 100\,\%$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+\dfrac{B_0}{B(0{,}50\,\text{A})} &= \dfrac{0{,}04\,\text{mT}}{1{,}3\,\text{mT}} \\
+&\approx 3\,\% \\
+\dfrac{B_0}{B(2{,}5\,\text{A})} &= \dfrac{0{,}04\,\text{mT}}{6{,}2\,\text{mT}} \\
+&\approx 0{,}6\,\%
+\end{aligned}
+$$
+**Vastaus:** Nollalukema on noin $3\,\%$ kentästä virralla $0{,}50\,\text{A}$ ja noin $0{,}6\,\%$ virralla $2{,}5\,\text{A}$. Tulokset on pyöristetty yhteen merkitsevään numeroon, koska nollalukeman $0{,}04\,\text{mT}$ tarkkuus on yksi numero. Virhe on systemaattinen: se on vakio, samansuuntainen eikä riipu virrasta. Syynä voi olla esimerkiksi Maan magneettikenttä tai anturin nollapisteen virhe. Vakio siirtää kaikkia pisteitä yhtä paljon, joten suoran kulmakerroin ei muutu ja vain leikkauskohta pystyakselilla siirtyy.
+**Järkevyys:** Osuus pienenee, kun kenttä kasvaa, koska sama vakio on pienempi osa suuresta lukemasta. Pienellä virralla virhe vaikuttaisi tulokseen eniten, jos tulos laskettaisiin yhdestä pisteestä.
+
+### d)
+**Kysytty:** sopiiko malli $B \propto I$ mittaukseen ja miten koetta parannetaan
+**Periaate:** Mallin sopivuutta arvioidaan sen perusteella, ovatko pisteet suoralla ja onko poikkeama satunnaista. Virhelähteille etsitään keinot pienentää niitä (luku *Mittaaminen ja mittauksen luotettavuus*).
+**Mallivastaus:** Pisteet ovat lähes suoralla ja poikkeavat siitä vain vähän, välillä ylös ja välillä alas. Malli $B \propto I$ sopii siis virta-alueelle $0\text{–}2{,}5\,\text{A}$, ja satunnainen vaihtelu on pientä. Malli pätee vain käämin keskellä, jossa kenttä on lähes tasainen, ja vain pitkälle käämille, jonka sisällä ei ole rautaa.
+
+Systemaattinen virhe, nollalukema $0{,}04\,\text{mT}$, poistetaan mittaamalla lukema virran ollessa nolla ja vähentämällä se kaikista lukemista. Toinen keino on kääntää virran suunta ja laskea $B$ lukemien erotuksen puolikkaana. Silloin vakiokenttä kumoutuu.
+
+Toinen heikkous on, että jokaisella virralla on vain yksi lukema. Mittaukset toistetaan ja otetaan keskiarvo. Lisäksi virta lämmittää käämiä ja muuttaa sen resistanssia, joten virta pidetään päällä vain lyhyen aikaa kunkin lukeman ajan.
+
+### Yleisiä virheitä
+- a-kohdassa kulmakerroin luetaan mittauspisteistä, jotka ovat lähekkäin, tai suoran jyrkkyys lasketaan yksikössä $\text{mT/A}$ ilman muunnosta teslaksi, jolloin $n$ tulee $1000$ kertaa liian suureksi.
+- b-kohdassa virraksi lasketaan $12 : 6{,}2 \cdot 2{,}5\,\text{A}$ tai tuloksen luotettavuutta ei arvioida, vaikka tulos on mittausalueen ulkopuolella.
+- c-kohdassa nollalukema pidetään satunnaisena virheenä, tai väitetään, että se muuttaa kulmakerrointa.
+- d-kohdassa virhelähteen nimeämisestä puuttuu sen vaikutus tulokseen tai parannus.
+
+### Hyväksytään myös
+- a-kohdassa kulmakertoimeksi $2{,}4\text{–}2{,}5\,\text{mT/A}$ ja kierrostiheydeksi $1{,}9 \cdot 10^3\text{–}2{,}0 \cdot 10^3\,\text{1/m}$.
+- b-kohdassa $4{,}8\text{–}5{,}0\,\text{A}$, kun kulmakerroin on luettu muista suoran pisteistä.

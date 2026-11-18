@@ -662,3 +662,160 @@ $$.
 - In part b, a $(\tfrac{1}{V}, p)$ graph is drawn and the line is forced through the origin; the air space of the tube then does not show.
 - In part c, the temperature is substituted in degrees Celsius, or the volume in millilitres and the pressure in kilopascals without conversion, so the amount of substance is wrong by a factor of a thousand.
 - In part d, assumptions are listed without saying in which direction they would change the result.
+
+## fy9-mittaaminen-s7
+
+### a)
+**Given:** the six measured points $(x,\,F_\text{v})$ of the graph, where $x$ is the extension of the spring and $F_\text{v}$ the force stretching it; the uncertainty of reading the extension is $0.2\,\text{cm}$ and the forces are known exactly
+**Find:** the spring constant $k$ with its uncertainty in $\text{N/m}$
+**Principle:** The spring force is directly proportional to the extension, $F_\text{v} = kx$, so the slope of the line fitted to the $(x,\,F_\text{v})$ graph is $k$ (chapter *Spring force and spring energy*). The uncertainty is estimated from the steepest and shallowest lines that still pass through all the $\pm 0.2\,\text{cm}$ horizontal ranges of the points (chapter *Measuring and the reliability of a measurement*).
+**Reading the graph:** Two points far apart are read from the line fitted to the points: $(1.0\,\text{cm};\ 0.30\,\text{N})$ and $(10.0\,\text{cm};\ 3.00\,\text{N})$. The slopes of the limiting lines are read in the same way: the shallowest line corresponds to a spring constant of $28.8\,\text{N/m}$ and the steepest to $31.3\,\text{N/m}$.
+**Formula:** $k = \dfrac{\Delta F_\text{v}}{\Delta x} = \dfrac{F_2 - F_1}{x_2 - x_1}$ and $\Delta k = \dfrac{k_\text{max} - k_\text{min}}{2}$
+**Conversions:** $1\,\text{cm} = 0.01\,\text{m}$, so $0.300\,\text{N/cm} = 30.0\,\text{N/m}$.
+**Substitution:** $$
+\begin{aligned}
+k &= \dfrac{3.00\,\text{N} - 0.30\,\text{N}}{10.0\,\text{cm} - 1.0\,\text{cm}} \\
+&= \dfrac{2.70\,\text{N}}{9.0\,\text{cm}} \\
+&= 0.300\,\text{N/cm} \\
+&= 30.0\,\text{N/m}
+\end{aligned}
+$$; $$
+\begin{aligned}
+\Delta k &= \dfrac{31.27\,\text{N/m} - 28.83\,\text{N/m}}{2} \\
+&= 1.22\,\text{N/m}
+\end{aligned}
+$$
+**Answer:** $k = (30.0 \pm 1.2)\,\text{N/m}$. The uncertainty has two digits because its first digit is $1$, and the spring constant is given to the same decimal.
+**Reasonableness:** The quotient $F_\text{v}/x$ of every point is between $28.8\ldots 30.6\,\text{N/m}$, for example $0.49\,\text{N} : 0.017\,\text{m} = 28.8\,\text{N/m}$, and it fits within the calculated range $28.8\ldots 31.3\,\text{N/m}$. A spring that stretches $10\,\text{cm}$ under a force of three newtons (a mass of about $0.3\,\text{kg}$) is an ordinary laboratory spring.
+
+### b)
+**Given:** the graph and lines of part a; the intercept of the fitted line on the $F_\text{v}$ axis is $-0.002\,\text{N}$; the limiting lines cross the $x$ axis at $-0.20\,\text{cm}$ and $+0.27\,\text{cm}$
+**Find:** whether the line passes through the origin, and what an intercept of $+0.30\,\text{N}$ would mean
+**Principle:** In an ideal spring the force and the extension are directly proportional, so an unloaded spring ($F_\text{v} = 0$) has not stretched ($x = 0$) and the line passes through the origin (chapter *Spring force and spring energy*). The significance of a constant term is judged by comparing it with the uncertainty (chapter *Graphing and fitting a straight line*).
+**Model answer:** *Data.* The intercept $-0.002\,\text{N}$ of the fitted line is practically zero, and every line compatible with the uncertainties of the points crosses the $x$ axis between $-0.20\ldots{+}0.27\,\text{cm}$. Zero is within this range, so the data do not require a constant term.
+
+*Physics.* An unloaded spring has not stretched, so the line of an ideal spring passes through the origin. Physics and data give the same result.
+
+*An intercept of $+0.30\,\text{N}$.* The line would be $F_\text{v} = 0.30\,\text{N} + kx$. The spring would need a force of about $0.30\,\text{N}$ before it begins to stretch, for example because the coils are pressed against each other, or the zero of the extension would have been read wrongly. The corresponding intercept on the $x$ axis would be $$
+\begin{aligned}
+x_0 &= -\dfrac{0.30\,\text{N}}{0.300\,\text{N/cm}} \\
+&= -1.0\,\text{cm}
+\end{aligned}
+$$, clearly more than the reading uncertainty $0.2\,\text{cm}$, so it would show in the data.
+
+*Conclusion.* In these data forcing the line through the origin is justified. If a constant term stood out from the uncertainty, the line must not be forced through the origin, because the slope and the spring constant would be distorted.
+
+### c)
+**Given:** force $F_\text{v} = 4.5\,\text{N}$ and the spring constant of part a, $k = (30.0 \pm 1.2)\,\text{N/m}$
+**Find:** the extension $x$ with its uncertainty and the reliability of the result
+**Principle:** For the spring force $F_\text{v} = kx$ (chapter *Spring force and spring energy*), so the extension is the force divided by the spring constant. The uncertainty follows from the relative uncertainty of the spring constant, because the force is known exactly.
+**Formula:** $x = \dfrac{F_\text{v}}{k}$ and $\dfrac{\Delta x}{x} = \dfrac{\Delta k}{k}$
+**Conversions:** $1\,\text{m} = 100\,\text{cm}$.
+**Substitution:** $$
+\begin{aligned}
+x &= \dfrac{4.5\,\text{N}}{30.0\,\text{N/m}} \\
+&= 0.150\,\text{m} \\
+&= 15.0\,\text{cm}
+\end{aligned}
+$$; $$
+\begin{aligned}
+\Delta x &= 15.0\,\text{cm} \cdot \dfrac{1.22\,\text{N/m}}{30.0\,\text{N/m}} \\
+&= 0.61\,\text{cm}
+\end{aligned}
+$$
+**Answer:** $x = (15.0 \pm 0.6)\,\text{cm}$. The result is given to the decimal of the uncertainty, $0.6\,\text{cm}$.
+**Reasonableness:** With the limiting spring constants the extension is $4.5\,\text{N} : 31.27\,\text{N/m} = 14.4\,\text{cm}$ and $4.5\,\text{N} : 28.83\,\text{N/m} = 15.6\,\text{cm}$, the same range as $15.0 \pm 0.6\,\text{cm}$. The result is, however, an extrapolation: the extension is about $1.5$ times the largest measured one ($9.8\,\text{cm}$) and the force is greater than the largest measured one ($2.94\,\text{N}$). The spring may exceed its elastic limit, and the graph does not tell whether it stays linear. The stated uncertainty describes only the uncertainty of the slope, so the real uncertainty is larger.
+
+### Yleisiä virheitä
+- In part a the slope is read from a single point, for example $0.49\,\text{N} : 1.7\,\text{cm}$, or the unit is left as $\text{N/cm}$.
+- In part a the reading uncertainty of the extension, $0.2\,\text{cm}$, is given as the uncertainty of the spring constant.
+- In part b it is only said that the line "passes through the origin", without justifying it with physics or comparing the constant term with the uncertainty.
+- In part c the result is given without a warning about extrapolation, or the uncertainty is given too precisely.
+
+### Hyväksytään myös
+- In part a a calculator fit: $k = 30.0\,\text{N/m}$ (when $x$ is fitted as a function of the force) or $29.9\,\text{N/m}$ (when the force is fitted as a function of the extension). An uncertainty $\Delta k = 1.0$–$1.5\,\text{N/m}$ is accepted.
+- In part c the extension is read straight from the line of the graph by extending it, provided the uncertainty of the extension is mentioned.
+
+## fy9-mittaaminen-s8
+
+### a)
+**Given:** nine measured points $(t,\,s)$, $t = 0\ldots 0.40\,\text{s}$ at intervals of $0.05\,\text{s}$; the ball is released at $t = 0$
+**Find:** a graph whose slope gives $g$, and the fitted line
+**Principle:** When a ball falls from rest the acceleration is constant (chapter *Acceleration and uniformly accelerated motion*), so $s = \tfrac{1}{2}gt^2$. Therefore $s$ is directly proportional to $t^2$. When $s$ is put on the vertical axis and $t^2$ on the horizontal axis, the points lie on a straight line whose slope is $\tfrac{1}{2}g$ (chapter *Graphing and fitting a straight line*). In a $(t,s)$ graph the points form a curve from which no slope can be read.
+**Reading the graph:** The time is squared for each point, and the points $(t^2,\,s)$ are marked in the graph:
+
+| $t\ (\text{s})$ | $0$ | $0.05$ | $0.10$ | $0.15$ | $0.20$ | $0.25$ | $0.30$ | $0.35$ | $0.40$ |
+|---|---|---|---|---|---|---|---|---|---|
+| $t^2\ (\text{s}^2)$ | $0$ | $0.0025$ | $0.0100$ | $0.0225$ | $0.0400$ | $0.0625$ | $0.0900$ | $0.1225$ | $0.1600$ |
+| $s\ (\text{m})$ | $0.002$ | $0.018$ | $0.065$ | $0.128$ | $0.223$ | $0.338$ | $0.477$ | $0.646$ | $0.832$ |
+
+One straight line is fitted to the points. The line is not forced through the origin, but the constant term of the fit can be examined.
+**Formula:** $s = \tfrac{1}{2}g\,t^2 + s_0$, so $s$ is a linear function of $t^2$.
+**Conversions:** None needed: the distances are in metres and the times in seconds.
+**Substitution:** For example at $0.40\,\text{s}$ $$
+\begin{aligned}
+t^2 &= (0.40\,\text{s})^2 \\
+&= 0.16\,\text{s}^2
+\end{aligned}
+$$ The constant term of the fitted line, $s_0 \approx 0.01\,\text{m}$, is as large as the reading uncertainty of the distance, $0.01\,\text{m}$, so it is not significant: the data agree with uniformly accelerated motion.
+**Answer:** The graph is a $(t^2,\,s)$ graph, and the line fitted to the points is $s \approx 5.18\,\text{m/s}^2 \cdot t^2 + 0.01\,\text{m}$.
+**Reasonableness:** The points lie well on a line: the vertical differences between the line and the points are at most about $0.008\,\text{m}$, less than the reading uncertainty $0.01\,\text{m}$. This supports the model $s \propto t^2$.
+
+### b)
+**Given:** the $(t^2,\,s)$ line of part a; the reading uncertainty of the distance is $0.01\,\text{m}$
+**Find:** the acceleration of free fall $g$ with its uncertainty in $\text{m/s}^2$
+**Principle:** The slope of the line is $\tfrac{1}{2}g$ (chapter *Acceleration and uniformly accelerated motion*). The uncertainty is estimated from the steepest and shallowest lines that still pass through all the $\pm 0.01\,\text{m}$ vertical ranges of the points (chapter *Measuring and the reliability of a measurement*).
+**Reading the graph:** Two points far apart are read from the line: $(0.020\,\text{s}^2;\ 0.113\,\text{m})$ and $(0.150\,\text{s}^2;\ 0.786\,\text{m})$. The slopes of the limiting lines are $5.09\,\text{m/s}^2$ (shallowest) and $5.24\,\text{m/s}^2$ (steepest).
+**Formula:** $a_\text{k} = \dfrac{\Delta s}{\Delta (t^2)} = \dfrac{1}{2}g$, so $g = 2a_\text{k}$ and $\Delta g = 2 \cdot \dfrac{a_\text{max} - a_\text{min}}{2}$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+a_\text{k} &= \dfrac{0.786\,\text{m} - 0.113\,\text{m}}{0.150\,\text{s}^2 - 0.020\,\text{s}^2} \\
+&= \dfrac{0.673\,\text{m}}{0.130\,\text{s}^2} \\
+&= 5.18\,\text{m/s}^2
+\end{aligned}
+$$; $$
+\begin{aligned}
+g &= 2 \cdot 5.18\,\text{m/s}^2 \\
+&= 10.35\,\text{m/s}^2
+\end{aligned}
+$$; $$
+\begin{aligned}
+\Delta g &= 5.241\,\text{m/s}^2 - 5.094\,\text{m/s}^2 \\
+&= 0.147\,\text{m/s}^2
+\end{aligned}
+$$
+**Answer:** $g = (10.35 \pm 0.15)\,\text{m/s}^2$. The uncertainty has two digits because its first digit is $1$, and the result is given to the same decimal.
+**Reasonableness:** The order of magnitude is right: in free fall the acceleration is about $10\,\text{m/s}^2$. Check at $0.40\,\text{s}$: $s = \tfrac{1}{2} \cdot 10.35\,\text{m/s}^2 \cdot (0.40\,\text{s})^2 = 0.83\,\text{m}$, the same as the measured $0.832\,\text{m}$.
+
+### c)
+**Given:** the measured result $g = (10.35 \pm 0.15)\,\text{m/s}^2$ and the local value $9.81\,\text{m/s}^2$
+**Find:** the comparison with the local value and the possible causes of the difference
+**Principle:** A measured result is compared with a known value through its uncertainty: if the known value lies within the uncertainty range of the result, the difference may be due to random variation. Otherwise a systematic error is looked for (chapter *Measuring and the reliability of a measurement*).
+**Model answer:** *Comparison.* The difference is $$
+\begin{aligned}
+10.35\,\text{m/s}^2 - 9.81\,\text{m/s}^2 &= 0.54\,\text{m/s}^2 \\
+&\approx 5.5\,\%
+\end{aligned}
+$$ that is $0.54 : 0.147 \approx 3.7$ times the uncertainty. The value $9.81\,\text{m/s}^2$ is outside the uncertainty range $10.19\ldots 10.48\,\text{m/s}^2$, so the difference is not explained by random reading error. The measurement probably has a systematic error.
+
+*Air resistance.* Air resistance opposes the motion of the ball, so it would decrease the measured acceleration. The measured value is, however, too large, so air resistance does not explain the difference.
+
+*Possible causes.* An error in the scale: if the distances were measured from the video with a scale in which length is overestimated by about $5.5\,\%$, $g$ is overestimated too. An error in the time scale: since $g$ is proportional to $\dfrac{s}{t^2}$, a $2.6\,\%$ error in the time is enough: $$
+\begin{aligned}
+\sqrt{\dfrac{9.81}{10.35}} &= 0.974 \\
+0.974 \cdot 0.05\,\text{s} &= 0.0487\,\text{s}
+\end{aligned}
+$$ so the real frame interval would be $0.0487\,\text{s}$ instead of the assumed $0.05\,\text{s}$. The frame rate may have differed from the nominal one.
+
+*Improvements.* The scale is calibrated with a known length in the plane of the falling line, the frame rate is checked and the drop is repeated several times.
+
+### Yleisiä virheitä
+- In part a a $(t,s)$ graph is drawn and a line is fitted to it although the points form a curve, or the points are joined with a broken line.
+- In part b the slope is taken directly as $g$ ($5.18\,\text{m/s}^2$) and not multiplied by two, or the slope is read from neighbouring points.
+- In part b the uncertainty is forgotten, or the result is given with too many digits, for example $10.354\,\text{m/s}^2$.
+- In part c a result that is too large is explained by air resistance although it would make the result smaller, or the difference is called "measurement error" without assessing its size relative to the uncertainty.
+
+### Hyväksytään myös
+- In part a the $(t^2,\,s)$ graph can also be drawn with $s$ on the horizontal axis; the slope is then $\tfrac{2}{g}$.
+- In part b a calculator fit gives $g = 10.35\,\text{m/s}^2$; values $10.2$–$10.5\,\text{m/s}^2$ and an uncertainty $0.1$–$0.2\,\text{m/s}^2$ are accepted.

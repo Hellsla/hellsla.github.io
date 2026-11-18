@@ -1,5 +1,5 @@
 {
-  "intro": "Seitsemän ylioppilaskokeen tyylistä tehtävää kokoaa yhteen tunnin asiat: fotonit, atomit, ytimet ja säteilyn. Ratkaise tehtävät samalla tavalla kuin kokeessa. Nimeä ilmiö ja malli, ja perustele, miksi malli sopii tilanteeseen. Ratkaise kysytty suure ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis. Viimeinen tehtävä on soveltava aineistotehtävä. Sen lähde avautuu tehtävän linkistä.",
+  "intro": "Yhdeksän ylioppilaskokeen tyylistä tehtävää kokoaa yhteen tunnin asiat: fotonit, atomit, ytimet ja säteilyn. Ratkaise tehtävät samalla tavalla kuin kokeessa. Nimeä ilmiö ja malli, ja perustele, miksi malli sopii tilanteeseen. Ratkaise kysytty suure ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis. Tehtävä 7 on soveltava aineistotehtävä. Sen lähde avautuu tehtävän linkistä. Tehtävissä 8 ja 9 työskennellään kuvaajan kanssa.",
   "tasks": [
     {
       "id": "fy9-moderni-s1",
@@ -966,6 +966,277 @@
         "math": "fy3-6",
         "transfer": "fy3-15",
         "communication": "fy8-11"
+      }
+    },
+    {
+      "id": "fy9-moderni-s8",
+      "title": "Betoniseinä säteilylähteen huoneen vieressä",
+      "source": "example",
+      "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä.",
+      "skills": [
+        "fy8-13",
+        "fy8-9",
+        "fy1-4"
+      ],
+      "figure": "fy8-13/vaimennus",
+      "text": "Isotooppilaboratorion käytävän ja gammasäteilylähteen huoneen välissä on betoniseinä. Kuvassa on gammasäteilyn annosnopeus $\\dot{H}$ käytävän puolella. Se on esitetty seinän paksuuden $d$ funktiona. Annosnopeus pienenee eksponentiaalisesti: $\\dot{H} = \\dot{H}_0\\,e^{-\\mu d}$. Tässä $\\dot{H}_0$ on annosnopeus ilman seinää. Luku $\\mu$ on betonin vaimennuskerroin.\n\n- seinän paksuus on $18\\,\\text{cm}$\n- käytävässä seinän takana on henkilö $1{,}5\\,\\text{h}$ työpäivässä, ja työpäiviä on $220$ vuodessa\n- henkilö ei ole säteilytyöntekijä, joten hänen vuosiannoksensa saa olla enintään $1{,}0\\,\\text{mSv}$\n- annosnopeus on vakio, eikä muita säteilylähteitä oteta huomioon",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Määritä kuvaajan avulla betonin vaimennuskerroin $\\mu$.",
+          "answer": {
+            "value": 0.139,
+            "unit": "1/cm",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kuvaajalta luetaan kaksi pistettä, jotka ovat kaukana toisistaan. Esimerkiksi $(0\\,\\text{cm};\\ 80\\,\\mu\\text{Sv/h})$ ja $(20\\,\\text{cm};\\ 5{,}0\\,\\mu\\text{Sv/h})$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\dot{H} = \\dot{H}_0\\,e^{-\\mu d}$, joten $\\mu = \\dfrac{\\ln(\\dot{H}_0 / \\dot{H})}{d}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\n\\mu &= \\dfrac{\\ln(80 : 5{,}0)}{20\\,\\text{cm}} \\\\\n&= \\dfrac{2{,}77}{20\\,\\text{cm}} \\\\\n&\\approx 0{,}14\\,\\dfrac{1}{\\text{cm}}\n\\end{aligned}\n$$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri on annosnopeus käytävässä seinän takana?",
+          "answer": {
+            "value": 6.6,
+            "unit": "µSv/h",
+            "tolerance": 0.05
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\dot{H} = \\dot{H}_0\\,e^{-\\mu d}$, kun $d = 18\\,\\text{cm}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\n\\dot{H} &= 80\\,\\mu\\text{Sv/h} \\cdot e^{-0{,}1386 \\cdot 18} \\\\\n&= 80\\,\\mu\\text{Sv/h} \\cdot 0{,}0825 \\\\\n&\\approx 6{,}6\\,\\mu\\text{Sv/h}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\dot{H} \\approx 6{,}6\\,\\mu\\text{Sv/h}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuren annoksen henkilö saa käytävässä vuodessa? Ylittyykö enimmäisannos?",
+          "answer": {
+            "value": 2.18,
+            "unit": "mSv",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "annos $H = \\dot{H}\\,t$, kun annosnopeus on vakio. Oleskeluaika vuodessa on $t = 1{,}5\\,\\text{h} \\cdot 220$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$H = 6{,}6\\,\\mu\\text{Sv/h} \\cdot 330\\,\\text{h} \\approx 2{,}2\\,\\text{mSv}$. Se on enemmän kuin $1{,}0\\,\\text{mSv}$."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Vertaa annosta enimmäisannokseen $1{,}0\\,\\text{mSv}$: annos on noin kaksi kertaa niin suuri, joten raja ylittyy."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka paksu seinän pitää vähintään olla, jotta vuosiannos ei ylitä enimmäisannosta?",
+          "answer": {
+            "value": 23.6,
+            "unit": "cm",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Paksuus ratkaistaan ehdosta $\\dot{H} \\cdot t \\le 1{,}0\\,\\text{mSv}$: $d = \\dfrac{\\ln(\\dot{H}_0 / \\dot{H}_\\text{max})}{\\mu}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\dot{H}_\\text{max} = 1000\\,\\mu\\text{Sv} : 330\\,\\text{h} \\approx 3{,}0\\,\\mu\\text{Sv/h}$ ja $d \\approx 23{,}6\\,\\text{cm}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$d \\approx 24\\,\\text{cm}$. Tulos pyöristetään ylöspäin, koska $23\\,\\text{cm}$ antaisi vielä liian suuren annoksen."
+            },
+            {
+              "text": "Nimeää oletuksen ja kertoo, miten se vaikuttaa tulokseen: annosnopeus on vakio eikä sirontaa oteta huomioon. Siksi oikea seinä kannattaa tehdä tulosta paksummaksi.",
+              "tag": "transfer",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy8-13",
+        "math": "fy8-9",
+        "transfer": "fy8-13",
+        "communication": "fy8-13"
+      }
+    },
+    {
+      "id": "fy9-moderni-s9",
+      "title": "Galaksien etääntyminen ja maailmankaikkeuden ikä",
+      "source": "example",
+      "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä.",
+      "skills": [
+        "fy8-16",
+        "fy1-4",
+        "fy1-2"
+      ],
+      "figure": "fy8-16/hubble-t",
+      "text": "Tähtitieteilijä on mitannut yhdeksän galaksin etääntymisnopeuden $v$ ja etäisyyden $d$. Kuvassa on mittauspisteet. Niihin on sovitettu suora, joka kulkee origon kautta. Hubblen lain mukaan $v = H_0\\,d$. Tässä $H_0$ on Hubblen vakio.\n\n- suora kulkee ruudukon pisteen $d = 250\\,\\text{Mpc}$, $v = 18\\,000\\,\\text{km/s}$ kautta\n- $1\\,\\text{Mpc} = 3{,}086 \\cdot 10^{19}\\,\\text{km}$ ja $1\\,\\text{a} = 3{,}156 \\cdot 10^{7}\\,\\text{s}$\n- tähtitieteilijä havaitsee uuden galaksin, joka etääntyy meistä nopeudella $8400\\,\\text{km/s}$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Määritä kuvaajan avulla Hubblen vakio $H_0$.",
+          "answer": {
+            "value": 72,
+            "unit": "km/s/Mpc",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Suoralta luetaan kaksi pistettä, jotka ovat kaukana toisistaan: origo ja $(250\\,\\text{Mpc};\\ 18\\,000\\,\\text{km/s})$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$v = H_0\\,d$, joten $H_0 = \\dfrac{v}{d}$. Se on suoran kulmakerroin."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$H_0 = \\dfrac{18\\,000\\,\\text{km/s}}{250\\,\\text{Mpc}} = 72\\,\\dfrac{\\text{km/s}}{\\text{Mpc}}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka kaukana uusi galaksi on?",
+          "answer": {
+            "value": 117,
+            "unit": "Mpc",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$d = \\dfrac{v}{H_0}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$d = \\dfrac{8400\\,\\text{km/s}}{72\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}} \\approx 117\\,\\text{Mpc}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$d \\approx 120\\,\\text{Mpc}$. Tuloksessa on kaksi merkitsevää numeroa kuten nopeudessa."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Arvioi, kuinka kauan galaksit ovat etääntyneet toisistaan. Oleta, että jokainen galaksi on liikkunut koko ajan samalla nopeudella. Anna vastaus vuosina.",
+          "answer": {
+            "value": 13580000000,
+            "unit": "a",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Galaksi on kulkenut matkan $d$ vakionopeudella $v$. Aika on $t = \\dfrac{d}{v} = \\dfrac{1}{H_0}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Muuntaa $H_0$:n yksikköön $1/\\text{s}$: $H_0 = 72\\,\\text{km/s} : (3{,}086 \\cdot 10^{19}\\,\\text{km}) \\approx 2{,}33 \\cdot 10^{-18}\\,\\dfrac{1}{\\text{s}}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nt &= \\dfrac{1}{2{,}333 \\cdot 10^{-18}\\,\\text{1/s}} \\\\\n&= 4{,}29 \\cdot 10^{17}\\,\\text{s}\n\\end{aligned}\n$$ Vuosina $4{,}29 \\cdot 10^{17}\\,\\text{s} : (3{,}156 \\cdot 10^{7}\\,\\text{s/a}) \\approx 1{,}36 \\cdot 10^{10}\\,\\text{a}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$t \\approx 1{,}4 \\cdot 10^{10}\\,\\text{a}$. Tuloksessa on kaksi merkitsevää numeroa."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Selitä, miksi havainto, että kaikki kaukaiset galaksit etääntyvät meistä, ei tarkoita, että Linnunrata olisi maailmankaikkeuden keskipiste.",
+          "criteria": [
+            {
+              "text": "Selittää, että kuvaajan mukaan nopeus on suoraan verrannollinen etäisyyteen. Sama laki havaittaisiin mistä tahansa galaksista katsoen: jokainen galaksi näkee muiden etääntyvän itsestään.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää, että galaksit eivät liiku avaruuden läpi pois jostain pisteestä. Avaruus itse laajenee, ja etäisyydet kaikkien galaksien välillä kasvavat.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Päättelee, että laajenemisella ei ole keskipistettä. Linnunrata ei ole erityisasemassa, koska havainto on sama kaikissa paikoissa."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy8-16",
+        "math": "fy8-16",
+        "concept": "fy8-16",
+        "communication": "fy8-16"
       }
     }
   ]

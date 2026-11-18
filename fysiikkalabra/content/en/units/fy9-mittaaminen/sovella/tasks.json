@@ -1,5 +1,5 @@
 {
-  "intro": "Six problems in the style of the matriculation exam bring together the skills of measuring, uncertainty and graphs. Decide yourself how the data should be presented and what is read from the graph, and justify the precision of the result. The last problem combines measuring with the ideal gas law.",
+  "intro": "Eight problems in the style of the matriculation exam bring together the skills of measuring, uncertainty and graphs. Decide yourself how the data should be presented and what is read from the graph, and justify the precision of the result. Two problems start from a ready graph, and one combines measuring with the ideal gas law.",
   "tasks": [
     {
       "id": "fy9-mittaaminen-s1",
@@ -813,6 +813,246 @@
         "graph": "fy1-4",
         "concept": "fy3-9",
         "transfer": "fy3-10"
+      }
+    },
+    {
+      "id": "fy9-mittaaminen-s7",
+      "title": "Calibrating a spring",
+      "source": "example",
+      "source_note": "Invented example data: the numbers have been computed from a model, and a little random variation has been added as in a measurement.",
+      "skills": [
+        "fy1-3",
+        "fy1-4",
+        "fy5-8"
+      ],
+      "figure": "fy5-8/mittaus",
+      "text": "A student calibrates a spring by hanging different masses on it in turn. She measures the extension $x$ of the spring with a ruler and plots the stretching force $F_\\text{v}$ against the extension. The uncertainty of reading the extension is estimated to be $0.2\\,\\text{cm}$; the forces are known exactly.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 5,
+          "text": "Fit a straight line to the points and determine the spring constant $k$ of the spring with its uncertainty.",
+          "answer": {
+            "value": 30.0,
+            "unit": "N/m",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "One straight line through the points, and the steepest and shallowest line that still pass through all the $\\pm 0.2\\,\\text{cm}$ horizontal ranges of the points have been estimated next to the drawn line."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The spring force is directly proportional to the extension, $F_\\text{v} = kx$, so $k = \\dfrac{\\Delta F_\\text{v}}{\\Delta x}$; centimetres are converted to metres."
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The slope is read from two points of the line that are far apart, for example $(1.0\\,\\text{cm};\\ 0.30\\,\\text{N})$ and $(10.0\\,\\text{cm};\\ 3.00\\,\\text{N})$: $0.300\\,\\text{N/cm} = 30.0\\,\\text{N/m}$."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The spring constants of the limiting lines are about $28.8\\,\\text{N/m}$ and $31.3\\,\\text{N/m}$, so the uncertainty is about $1.2\\,\\text{N/m}$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$k = (30.0 \\pm 1.2)\\,\\text{N/m}$: two digits in the uncertainty because its first digit is $1$, and the spring constant to the same decimal."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 4,
+          "text": "Should the fitted line pass through the origin? Justify with how a spring works and with the data. What would it mean if the line of the spring crossed the $F_\\text{v}$ axis at $+0.30\\,\\text{N}$?",
+          "criteria": [
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "The data fit a line through the origin: the intercept of the fitted line is practically zero, and every line compatible with the uncertainties of the points crosses the $x$ axis between $-0.20\\ldots{+}0.27\\,\\text{cm}$, which includes zero."
+            },
+            {
+              "text": "An unloaded spring has no force on it and is not stretched, so the $F_\\text{v} = kx$ of an ideal spring passes through the origin.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "An intercept of $+0.30\\,\\text{N}$ would mean that the spring already needs a force of about $0.30\\,\\text{N}$ before it stretches (for example the coils are pressed against each other), or that the zero of the extension has been read wrongly. The corresponding intercept on the $x$ axis would be about $-1.0\\,\\text{cm}$, clearly more than the reading uncertainty $0.2\\,\\text{cm}$.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "In these data forcing the line through the origin is justified. If a constant term stood out from the uncertainty, the line must not be forced through the origin, because the slope would be distorted."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "The spring is stretched with a force of $4.5\\,\\text{N}$. Estimate how much the spring extends and comment on the reliability of the result.",
+          "answer": {
+            "value": 15.0,
+            "unit": "cm",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$x = \\dfrac{F_\\text{v}}{k}$, where $k$ is the value of part a; the force is in newtons and the spring constant in $\\text{N/m}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$x = \\dfrac{4.5\\,\\text{N}}{30.0\\,\\text{N/m}} = 0.150\\,\\text{m} = 15.0\\,\\text{cm}$"
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The relative uncertainty $\\tfrac{1.2}{30.0} \\approx 4.1\\,\\%$ gives $\\Delta x \\approx 0.6\\,\\text{cm}$, that is $x = (15.0 \\pm 0.6)\\,\\text{cm}$."
+            },
+            {
+              "text": "Assesses the reliability: the force $4.5\\,\\text{N}$ and the extension $15\\,\\text{cm}$ are outside the range of the graph ($2.94\\,\\text{N}$ and $9.8\\,\\text{cm}$), so the result is an extrapolation. The spring may exceed its elastic limit, and the stated uncertainty comes only from the slope, so the real uncertainty is larger.",
+              "tag": "graph",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "experiment": "fy1-3",
+        "math": "fy5-8",
+        "communication": "fy1-4"
+      }
+    },
+    {
+      "id": "fy9-mittaaminen-s8",
+      "title": "A steel ball dropped, filmed on video",
+      "source": "example",
+      "source_note": "Invented example data: the numbers have been computed from a model, and a little random variation has been added as in a measurement.",
+      "skills": [
+        "fy1-4",
+        "fy1-6",
+        "fy4-2"
+      ],
+      "figure": "fy4-2/fall-points",
+      "text": "A steel ball is dropped from a height and filmed on video. From the video the distance $s$ the ball has fallen is measured at nine moments $t$ in the range $0\\ldots 0.40\\,\\text{s}$, at intervals of $0.05\\,\\text{s}$; at $t = 0$ the ball leaves the holder. The uncertainty of reading the distance is estimated to be $0.01\\,\\text{m}$; the times are known exactly from the frame rate. The graph shows the measured points.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 5,
+          "text": "Present the data as a graph from whose slope the acceleration of free fall can be obtained, and fit a straight line to the points. Justify your choice of graph.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "$t^2\\ (\\text{s}^2)$ on the horizontal axis and $s\\ (\\text{m})$ on the vertical axis, evenly spaced scales."
+            },
+            {
+              "key": "graph_points",
+              "points": 1,
+              "detail": "$t^2$ has been calculated correctly for each time: $0$, $0.0025$, $0.0100$, $0.0225$, $0.0400$, $0.0625$, $0.0900$, $0.1225$ and $0.1600\\,\\text{s}^2$, and the points are marked as separate points."
+            },
+            {
+              "text": "Justifies: the ball falls from rest with uniform acceleration, $s = \\tfrac{1}{2}gt^2$, so $s$ is directly proportional to $t^2$ and the graph is a straight line whose slope is $\\tfrac{1}{2}g$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "graph_fit",
+              "points": 1,
+              "detail": "One straight line through the points; the line is not forced through the origin and the points are not joined with a broken line."
+            },
+            {
+              "text": "The constant term of the line is about $0.01\\,\\text{m}$, the size of the reading uncertainty, so it is not significant.",
+              "tag": "graph",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Determine the acceleration of free fall $g$ with its uncertainty from the graph.",
+          "answer": {
+            "value": 10.35,
+            "unit": "m/s^2",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The slope is read from two points of the line that are far apart, for example $(0.020\\,\\text{s}^2;\\ 0.113\\,\\text{m})$ and $(0.150\\,\\text{s}^2;\\ 0.786\\,\\text{m})$: about $5.18\\,\\text{m/s}^2$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The slope is $\\tfrac{1}{2}g$, so $g = 2 \\cdot \\dfrac{\\Delta s}{\\Delta t^2}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$g = 2 \\cdot 5.18\\,\\text{m/s}^2 \\approx 10.35\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "The steepest and shallowest lines through all the $\\pm 0.01\\,\\text{m}$ ranges of the points: slopes about $5.09$ and $5.24\\,\\text{m/s}^2$, so $\\Delta g \\approx 0.15\\,\\text{m/s}^2$."
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$g = (10.35 \\pm 0.15)\\,\\text{m/s}^2$: two digits in the uncertainty because its first digit is $1$, and the result to the same decimal."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "The local value of the acceleration of free fall is $9.81\\,\\text{m/s}^2$. Compare the measured result with it and assess what the difference may be due to.",
+          "criteria": [
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The difference is $0.54\\,\\text{m/s}^2$, about $5.5\\,\\%$ and more than three times the uncertainty; the value $9.81\\,\\text{m/s}^2$ is outside the uncertainty range $10.19\\ldots 10.48\\,\\text{m/s}^2$, so the difference is not explained by random reading error but points to a systematic error."
+            },
+            {
+              "text": "Air resistance would decrease the measured acceleration, not increase it, so it does not explain a result that is too large.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "A possible systematic error: an error of about $5.5\\,\\%$ in the length scale, or a frame interval about $2.6\\,\\%$ shorter than assumed ($0.0487\\,\\text{s}$ instead of $0.05\\,\\text{s}$)."
+            },
+            {
+              "text": "Proposes a check: calibrating the scale with a known length in the plane of the falling line, checking the frame rate, and repeated drops.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "experiment": "fy1-3",
+        "math": "fy4-2",
+        "communication": "fy1-3"
       }
     }
   ]

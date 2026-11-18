@@ -115,5 +115,47 @@ out.update({"fy9-mittaaminen-s6-pV-first": round(pV[0]), "fy9-mittaaminen-s6-pV-
             # the solution reads (4,0 1/MPa; 8,6 ml) and (12,0 1/MPa; 29,5 ml) off the drawn line
             "fy9-mittaaminen-s6-C-read": round((29.5 - 8.6) / 8.0, 4), "fy9-mittaaminen-s6-n-read": round((29.5 - 8.6) / 8.0 / (R * T6), 7)})
 
+# s7: a spring calibrated with hanging masses (fy5-8/mittaus; values read from the figure): x in cm, F_v in N.
+# The force is exact, the extension is read with +-0,2 cm, so the line x(F) is fitted and its slope is inverted: k = 1/slope.
+x7 = [1.7, 3.2, 5.0, 6.4, 8.3, 9.8]                           # cm
+F7 = [0.49, 0.98, 1.47, 1.96, 2.45, 2.94]                     # N
+dx7 = 0.2                                                     # cm
+sl7, x0_7 = fit(F7, x7)                                       # cm/N and cm
+k7 = 100 / sl7                                                # N/m
+(sl7lo, x0_7lo), (sl7hi, x0_7hi) = extremes(F7, x7, [dx7] * 6, 2.0, 5.0, 0.001)   # shallowest and steepest x(F) line
+k7min, k7max = 100 / sl7hi, 100 / sl7lo                       # N/m: the steepest x(F) line is the softest spring
+dk7 = (k7max - k7min) / 2
+kf7, F0_7 = fit(x7, F7)                                       # F on x, the intercept in N
+F_off = 0.30                                                  # N: the hypothetical offset of part b
+x_off = -F_off / (k7 / 100)                                   # cm: where that line would cross the x axis
+F_load = 4.5                                                  # N
+x_load = F_load / k7 * 100                                    # cm
+dx_load = x_load * dk7 / k7
+out.update({"fy9-mittaaminen-s7-a": round(k7, 3), "fy9-mittaaminen-s7-slope": round(sl7, 4), "fy9-mittaaminen-s7-kmin": round(k7min, 3),
+            "fy9-mittaaminen-s7-kmax": round(k7max, 3), "fy9-mittaaminen-s7-dk": round(dk7, 3),
+            "fy9-mittaaminen-s7-slope-lo": round(sl7lo, 3), "fy9-mittaaminen-s7-slope-hi": round(sl7hi, 3),
+            "fy9-mittaaminen-s7-x0": round(x0_7, 3), "fy9-mittaaminen-s7-x0-lo": round(x0_7lo, 3), "fy9-mittaaminen-s7-x0-hi": round(x0_7hi, 3),
+            "fy9-mittaaminen-s7-F0": round(F0_7, 4), "fy9-mittaaminen-s7-b-xoff": round(x_off, 3),
+            "fy9-mittaaminen-s7-c": round(x_load, 3), "fy9-mittaaminen-s7-c-dx": round(dx_load, 3),
+            "fy9-mittaaminen-s7-c-xmin": round(F_load / k7max * 100, 3), "fy9-mittaaminen-s7-c-xmax": round(F_load / k7min * 100, 3),
+            "fy9-mittaaminen-s7-c-ratio": round(x_load / max(x7), 3)})
+
+# s8: a steel ball falls, 9 video frames at 0,05 s (fy4-2/fall-points; values read from the figure); s read with +-0,01 m.
+t8 = [0.00, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40]
+s8 = [0.002, 0.018, 0.065, 0.128, 0.223, 0.338, 0.477, 0.646, 0.832]
+t8sq = [t_ * t_ for t_ in t8]                                 # s^2
+a8, s0_8 = fit(t8sq, s8)                                      # s = (g/2) t^2 + s0: slope in m/s^2
+(a8lo, s0_8lo), (a8hi, s0_8hi) = extremes(t8sq, s8, [0.01] * 9, 3.0, 8.0, 0.001)
+g8 = 2 * a8; dg8 = (a8hi - a8lo)            # = 2 * (a8hi - a8lo) / 2
+g8lo, g8hi = 2 * a8lo, 2 * a8hi
+diff8 = g8 - 9.81
+out.update({"fy9-mittaaminen-s8-b": round(g8, 3), "fy9-mittaaminen-s8-slope": round(a8, 4), "fy9-mittaaminen-s8-s0": round(s0_8, 4),
+            "fy9-mittaaminen-s8-slope-lo": round(a8lo, 3), "fy9-mittaaminen-s8-slope-hi": round(a8hi, 3),
+            "fy9-mittaaminen-s8-s0-lo": round(s0_8lo, 4), "fy9-mittaaminen-s8-s0-hi": round(s0_8hi, 4),
+            "fy9-mittaaminen-s8-dg": round(dg8, 3), "fy9-mittaaminen-s8-g-lo": round(g8lo, 3), "fy9-mittaaminen-s8-g-hi": round(g8hi, 3),
+            "fy9-mittaaminen-s8-t2-last": round(t8sq[-1], 4), "fy9-mittaaminen-s8-c-diff": round(diff8, 3),
+            "fy9-mittaaminen-s8-c-rel": round(diff8 / 9.81 * 100, 2), "fy9-mittaaminen-s8-c-times": round(diff8 / dg8, 2),
+            "fy9-mittaaminen-s8-c-tscale": round((9.81 / g8) ** 0.5, 4)})
+
 out = {k_: v_ for k_, v_ in out.items() if not isinstance(v_, list)}
 print(json.dumps(out))

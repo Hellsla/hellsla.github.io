@@ -662,3 +662,160 @@ $$.
 - b-kohdassa piirretään $(\tfrac{1}{V}, p)$-kuvaaja, ja suora pakotetaan kulkemaan origon kautta. Silloin letkun ilmatila ei näy.
 - c-kohdassa lämpötila sijoitetaan celsiusasteina. Tai tilavuus sijoitetaan millilitroina ja paine kilopascaleina ilman muunnosta. Silloin ainemäärä on tuhat kertaa väärin.
 - d-kohdassa luetellaan oletuksia, mutta ei kerrota, mihin suuntaan ne muuttaisivat tulosta.
+
+## fy9-mittaaminen-s7
+
+### a)
+**Annettu:** kuvaajan kuusi mittauspistettä $(x,\,F_\text{v})$, kun $x$ on jousen venymä ja $F_\text{v}$ jousta venyttävä voima; venymän lukemisen epävarmuus on $0{,}2\,\text{cm}$ ja voimat tunnetaan tarkasti
+**Kysytty:** jousivakio $k$ epävarmuuksineen yksikössä $\text{N/m}$
+**Periaate:** Jousivoima on suoraan verrannollinen venymään: $F_\text{v} = kx$. Siksi $(x,\,F_\text{v})$-kuvaajan suoran kulmakerroin on $k$ (luku *Jousivoima ja jousen energia*). Epävarmuus arvioidaan kahdesta rajasuorasta. Jyrkin ja loivin rajasuora kulkevat vielä kaikkien pisteiden $\pm 0{,}2\,\text{cm}$:n vaakavälien kautta (luku *Mittaaminen ja mittauksen luotettavuus*).
+**Kuvaajan lukeminen:** Sovitetulta suoralta luetaan kaksi pistettä, jotka ovat kaukana toisistaan: $(1{,}0\,\text{cm};\ 0{,}30\,\text{N})$ ja $(10{,}0\,\text{cm};\ 3{,}00\,\text{N})$. Rajasuorien kulmakertoimet luetaan samalla tavalla. Loivin suora antaa jousivakion $28{,}8\,\text{N/m}$ ja jyrkin $31{,}3\,\text{N/m}$.
+**Kaava:** $k = \dfrac{\Delta F_\text{v}}{\Delta x} = \dfrac{F_2 - F_1}{x_2 - x_1}$ ja $\Delta k = \dfrac{k_\text{max} - k_\text{min}}{2}$
+**Muunnokset:** $1\,\text{cm} = 0{,}01\,\text{m}$, joten $0{,}300\,\text{N/cm} = 30{,}0\,\text{N/m}$.
+**Sijoitus:** $$
+\begin{aligned}
+k &= \dfrac{3{,}00\,\text{N} - 0{,}30\,\text{N}}{10{,}0\,\text{cm} - 1{,}0\,\text{cm}} \\
+&= \dfrac{2{,}70\,\text{N}}{9{,}0\,\text{cm}} \\
+&= 0{,}300\,\text{N/cm} \\
+&= 30{,}0\,\text{N/m}
+\end{aligned}
+$$; $$
+\begin{aligned}
+\Delta k &= \dfrac{31{,}27\,\text{N/m} - 28{,}83\,\text{N/m}}{2} \\
+&= 1{,}22\,\text{N/m}
+\end{aligned}
+$$
+**Vastaus:** $k = (30{,}0 \pm 1{,}2)\,\text{N/m}$. Epävarmuudessa on kaksi numeroa, koska sen ensimmäinen numero on $1$. Jousivakiossa on sama määrä desimaaleja.
+**Järkevyys:** Jokaisen pisteen osamäärä $F_\text{v}/x$ on välillä $28{,}8\ldots 30{,}6\,\text{N/m}$. Esimerkiksi $0{,}49\,\text{N} : 0{,}017\,\text{m} = 28{,}8\,\text{N/m}$. Osamäärät mahtuvat väliin $28{,}8\ldots 31{,}3\,\text{N/m}$. Jousi venyy $10\,\text{cm}$ kolmen newtonin voimalla. Se on tavallinen laboratoriojousi.
+
+### b)
+**Annettu:** a-kohdan kuvaaja ja suorat; sovitetun suoran leikkaus $F_\text{v}$-akselilla on $-0{,}002\,\text{N}$; rajasuorat leikkaavat $x$-akselin kohdissa $-0{,}20\,\text{cm}$ ja $+0{,}27\,\text{cm}$
+**Kysytty:** kulkeeko suora origon kautta, ja mitä leikkaus $+0{,}30\,\text{N}$ tarkoittaisi
+**Periaate:** Ideaalisessa jousessa voima ja venymä ovat suoraan verrannollisia. Kuormittamaton jousi ($F_\text{v} = 0$) ei ole venynyt ($x = 0$), joten suora kulkee origon kautta (luku *Jousivoima ja jousen energia*). Vakiotermi on merkitsevä vain, jos se on suurempi kuin epävarmuus (luku *Graafinen esitys ja suoran sovittaminen*).
+**Mallivastaus:** *Aineisto.* Sovitetun suoran leikkaus $-0{,}002\,\text{N}$ on käytännössä nolla. Kaikki suorat, jotka sopivat pisteiden epävarmuuksiin, leikkaavat $x$-akselin välillä $-0{,}20\ldots{+}0{,}27\,\text{cm}$. Nolla kuuluu tälle välille. Aineisto ei siis vaadi vakiotermiä.
+
+*Fysiikka.* Kuormittamaton jousi ei ole venynyt, joten ideaalisen jousen suora kulkee origon kautta. Fysiikka ja aineisto antavat saman tuloksen.
+
+*Leikkaus $+0{,}30\,\text{N}$.* Suora olisi $F_\text{v} = 0{,}30\,\text{N} + kx$. Jousi tarvitsisi noin $0{,}30\,\text{N}$:n voiman, ennen kuin se alkaa venyä. Syynä voisi olla, että kierrokset ovat puristuneina toisiaan vasten. Toinen syy voisi olla, että venymän nollakohta on luettu väärin. Suoran leikkaus $x$-akselilla olisi $$
+\begin{aligned}
+x_0 &= -\dfrac{0{,}30\,\text{N}}{0{,}300\,\text{N/cm}} \\
+&= -1{,}0\,\text{cm}
+\end{aligned}
+$$, selvästi enemmän kuin lukemisen epävarmuus $0{,}2\,\text{cm}$. Se näkyisi siis aineistossa.
+
+*Johtopäätös.* Tässä aineistossa suoran saa pakottaa origon kautta. Jos vakiotermi erottuisi epävarmuudesta, suoraa ei saisi pakottaa origon kautta. Silloin kulmakerroin ja jousivakio menisivät väärin.
+
+### c)
+**Annettu:** voima $F_\text{v} = 4{,}5\,\text{N}$ ja a-kohdan jousivakio $k = (30{,}0 \pm 1{,}2)\,\text{N/m}$
+**Kysytty:** venymä $x$ epävarmuuksineen ja tuloksen luotettavuus
+**Periaate:** Jousivoimalle pätee $F_\text{v} = kx$ (luku *Jousivoima ja jousen energia*). Venymä on siis voima jaettuna jousivakiolla. Voima tunnetaan tarkasti, joten epävarmuus tulee jousivakion suhteellisesta epävarmuudesta.
+**Kaava:** $x = \dfrac{F_\text{v}}{k}$ ja $\dfrac{\Delta x}{x} = \dfrac{\Delta k}{k}$
+**Muunnokset:** $1\,\text{m} = 100\,\text{cm}$.
+**Sijoitus:** $$
+\begin{aligned}
+x &= \dfrac{4{,}5\,\text{N}}{30{,}0\,\text{N/m}} \\
+&= 0{,}150\,\text{m} \\
+&= 15{,}0\,\text{cm}
+\end{aligned}
+$$; $$
+\begin{aligned}
+\Delta x &= 15{,}0\,\text{cm} \cdot \dfrac{1{,}22\,\text{N/m}}{30{,}0\,\text{N/m}} \\
+&= 0{,}61\,\text{cm}
+\end{aligned}
+$$
+**Vastaus:** $x = (15{,}0 \pm 0{,}6)\,\text{cm}$. Tulos on ilmoitettu samaan desimaaliin kuin epävarmuus.
+**Järkevyys:** Rajajousivakioilla venymä on $4{,}5\,\text{N} : 31{,}27\,\text{N/m} = 14{,}4\,\text{cm}$ ja $4{,}5\,\text{N} : 28{,}83\,\text{N/m} = 15{,}6\,\text{cm}$. Väli on sama kuin $15{,}0 \pm 0{,}6\,\text{cm}$. Tulos on kuitenkin ekstrapolointia. Venymä on noin $1{,}5$-kertainen suurimpaan mitattuun ($9{,}8\,\text{cm}$) verrattuna. Voima on suurempi kuin suurin mitattu ($2{,}94\,\text{N}$). Jousi voi ylittää kimmorajansa. Kuvaaja ei kerro, pysyykö jousi lineaarisena. Epävarmuus kertoo vain kulmakertoimen epävarmuudesta, joten todellinen epävarmuus on suurempi.
+
+### Yleisiä virheitä
+- a-kohdassa kulmakerroin luetaan yhdestä pisteestä, esimerkiksi $0{,}49\,\text{N} : 1{,}7\,\text{cm}$, tai yksikkö jää arvoon $\text{N/cm}$.
+- a-kohdassa epävarmuudeksi merkitään venymän lukemisen epävarmuus $0{,}2\,\text{cm}$ jousivakion epävarmuutena.
+- b-kohdassa sanotaan vain, että suora "kulkee origon kautta", perustelematta fysiikalla tai vertaamatta vakiotermiä epävarmuuteen.
+- c-kohdassa tulos annetaan ilman varoitusta ekstrapoloinnista tai epävarmuus ilmoitetaan liian tarkkana.
+
+### Hyväksytään myös
+- a-kohdassa laskimen sovitus: $k = 30{,}0\,\text{N/m}$ (kun sovitetaan $x$ voiman funktiona) tai $29{,}9\,\text{N/m}$ (kun sovitetaan voima venymän funktiona). Epävarmuus $\Delta k = 1{,}0$–$1{,}5\,\text{N/m}$ hyväksytään.
+- c-kohdassa venymä lasketaan suoraan kuvaajan suoralta jatkamalla sitä, kunhan jatkamisen epävarmuus mainitaan.
+
+## fy9-mittaaminen-s8
+
+### a)
+**Annettu:** yhdeksän mittauspistettä $(t,\,s)$, $t = 0\ldots 0{,}40\,\text{s}$ välein $0{,}05\,\text{s}$; kuula irtoaa hetkellä $t = 0$
+**Kysytty:** kuvaaja, jonka kulmakertoimesta $g$ saadaan, ja sovitettu suora
+**Periaate:** Levosta lähtevän kuulan kiihtyvyys on vakio (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*). Siksi $s = \tfrac{1}{2}gt^2$, ja $s$ on suoraan verrannollinen suureeseen $t^2$. Kun pystyakselilla on $s$ ja vaaka-akselilla $t^2$, pisteet ovat suoralla. Suoran kulmakerroin on $\tfrac{1}{2}g$ (luku *Graafinen esitys ja suoran sovittaminen*). $(t,s)$-kuvaajassa pisteet ovat käyrällä, josta kulmakerrointa ei voi lukea.
+**Kuvaajan lukeminen:** Jokainen aika korotetaan toiseen potenssiin. Sitten pisteet $(t^2,\,s)$ merkitään kuvaajaan:
+
+| $t\ (\text{s})$ | $0$ | $0{,}05$ | $0{,}10$ | $0{,}15$ | $0{,}20$ | $0{,}25$ | $0{,}30$ | $0{,}35$ | $0{,}40$ |
+|---|---|---|---|---|---|---|---|---|---|
+| $t^2\ (\text{s}^2)$ | $0$ | $0{,}0025$ | $0{,}0100$ | $0{,}0225$ | $0{,}0400$ | $0{,}0625$ | $0{,}0900$ | $0{,}1225$ | $0{,}1600$ |
+| $s\ (\text{m})$ | $0{,}002$ | $0{,}018$ | $0{,}065$ | $0{,}128$ | $0{,}223$ | $0{,}338$ | $0{,}477$ | $0{,}646$ | $0{,}832$ |
+
+Pisteisiin sovitetaan yksi suora. Suoraa ei pakoteta origon kautta. Näin nähdään, onko sovituksen vakiotermi merkitsevä.
+**Kaava:** $s = \tfrac{1}{2}g\,t^2 + s_0$, joten $s$ on $t^2$:n lineaarinen funktio.
+**Muunnokset:** Ei tarvita: matkat ovat metreinä ja ajat sekunteina.
+**Sijoitus:** Esimerkiksi ajalla $0{,}40\,\text{s}$ $$
+\begin{aligned}
+t^2 &= (0{,}40\,\text{s})^2 \\
+&= 0{,}16\,\text{s}^2
+\end{aligned}
+$$ Sovitetun suoran vakiotermi $s_0 \approx 0{,}01\,\text{m}$ on yhtä suuri kuin matkan lukemisen epävarmuus $0{,}01\,\text{m}$. Se ei siis ole merkitsevä. Aineisto sopii tasaisesti kiihtyvään liikkeeseen.
+**Vastaus:** Kuvaaja on $(t^2,\,s)$-kuvaaja, ja pisteisiin sovitettu suora on $s \approx 5{,}18\,\text{m/s}^2 \cdot t^2 + 0{,}01\,\text{m}$.
+**Järkevyys:** Pisteet ovat hyvin suoralla. Suoran ja pisteiden pystyerot ovat enintään noin $0{,}008\,\text{m}$. Se on alle lukemisen epävarmuuden $0{,}01\,\text{m}$. Tulos tukee mallia $s \propto t^2$.
+
+### b)
+**Annettu:** a-kohdan $(t^2,\,s)$-suora; matkan lukemisen epävarmuus $0{,}01\,\text{m}$
+**Kysytty:** putoamiskiihtyvyys $g$ epävarmuuksineen yksikössä $\text{m/s}^2$
+**Periaate:** Suoran kulmakerroin on $\tfrac{1}{2}g$ (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*). Epävarmuus arvioidaan jyrkimmästä ja loivimmasta suorasta. Ne kulkevat vielä kaikkien pisteiden $\pm 0{,}01\,\text{m}$:n pystyvälien kautta (luku *Mittaaminen ja mittauksen luotettavuus*).
+**Kuvaajan lukeminen:** Suoralta luetaan kaksi kaukana toisistaan olevaa pistettä: $(0{,}020\,\text{s}^2;\ 0{,}113\,\text{m})$ ja $(0{,}150\,\text{s}^2;\ 0{,}786\,\text{m})$. Rajasuorien kulmakertoimet ovat $5{,}09\,\text{m/s}^2$ (loivin) ja $5{,}24\,\text{m/s}^2$ (jyrkin).
+**Kaava:** $a_\text{k} = \dfrac{\Delta s}{\Delta (t^2)} = \dfrac{1}{2}g$, joten $g = 2a_\text{k}$ ja $\Delta g = 2 \cdot \dfrac{a_\text{max} - a_\text{min}}{2}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+a_\text{k} &= \dfrac{0{,}786\,\text{m} - 0{,}113\,\text{m}}{0{,}150\,\text{s}^2 - 0{,}020\,\text{s}^2} \\
+&= \dfrac{0{,}673\,\text{m}}{0{,}130\,\text{s}^2} \\
+&= 5{,}18\,\text{m/s}^2
+\end{aligned}
+$$; $$
+\begin{aligned}
+g &= 2 \cdot 5{,}18\,\text{m/s}^2 \\
+&= 10{,}35\,\text{m/s}^2
+\end{aligned}
+$$; $$
+\begin{aligned}
+\Delta g &= 5{,}241\,\text{m/s}^2 - 5{,}094\,\text{m/s}^2 \\
+&= 0{,}147\,\text{m/s}^2
+\end{aligned}
+$$
+**Vastaus:** $g = (10{,}35 \pm 0{,}15)\,\text{m/s}^2$. Epävarmuudessa on kaksi numeroa, koska sen ensimmäinen numero on $1$. Tuloksessa on sama määrä desimaaleja.
+**Järkevyys:** Suuruusluokka on oikea. Vapaassa pudotuksessa kiihtyvyys on noin $10\,\text{m/s}^2$. Tarkistus ajalla $0{,}40\,\text{s}$: $s = \tfrac{1}{2} \cdot 10{,}35\,\text{m/s}^2 \cdot (0{,}40\,\text{s})^2 = 0{,}83\,\text{m}$, sama kuin mitattu $0{,}832\,\text{m}$.
+
+### c)
+**Annettu:** mittaustulos $g = (10{,}35 \pm 0{,}15)\,\text{m/s}^2$ ja paikallinen arvo $9{,}81\,\text{m/s}^2$
+**Kysytty:** tuloksen vertailu paikalliseen arvoon ja eron mahdolliset syyt
+**Periaate:** Mittaustulosta verrataan tunnettuun arvoon epävarmuuden avulla. Jos tunnettu arvo kuuluu tuloksen epävarmuusväliin, ero voi johtua satunnaisvaihtelusta. Muuten etsitään systemaattista virhettä (luku *Mittaaminen ja mittauksen luotettavuus*).
+**Mallivastaus:** *Vertailu.* Ero on $$
+\begin{aligned}
+10{,}35\,\text{m/s}^2 - 9{,}81\,\text{m/s}^2 &= 0{,}54\,\text{m/s}^2 \\
+&\approx 5{,}5\,\%
+\end{aligned}
+$$ Ero on $0{,}54 : 0{,}147 \approx 3{,}7$-kertainen epävarmuuteen verrattuna. Arvo $9{,}81\,\text{m/s}^2$ on epävarmuusvälin $10{,}19\ldots 10{,}48\,\text{m/s}^2$ ulkopuolella. Satunnainen lukemisvirhe ei siis selitä eroa. Mittauksessa on todennäköisesti systemaattinen virhe.
+
+*Ilmanvastus.* Ilmanvastus vastustaa kuulan liikettä. Se pienentäisi mitattua kiihtyvyyttä. Mitattu arvo on kuitenkin liian suuri, joten ilmanvastus ei selitä eroa.
+
+*Mahdolliset syyt.* Mittakaavan virhe: jos videon mittakaava yliarvioi pituudet noin $5{,}5\,\%$, myös $g$ on liian suuri. Aikaskaalan virhe: $g$ on verrannollinen suureeseen $\dfrac{s}{t^2}$, joten ajan $2{,}6\,\%$:n virhe riittää: $$
+\begin{aligned}
+\sqrt{\dfrac{9{,}81}{10{,}35}} &= 0{,}974 \\
+0{,}974 \cdot 0{,}05\,\text{s} &= 0{,}0487\,\text{s}
+\end{aligned}
+$$ Kuvaväli olisi siis todellisuudessa $0{,}0487\,\text{s}$ eikä oletettu $0{,}05\,\text{s}$. Kuvataajuus on voinut poiketa nimellisestä.
+
+*Parannukset.* Mittakaava kalibroidaan tunnetulla pituudella kuulan putoamissuoran tasossa. Kuvataajuus tarkistetaan. Pudotus toistetaan useita kertoja.
+
+### Yleisiä virheitä
+- a-kohdassa piirretään $(t,s)$-kuvaaja ja sovitetaan siihen suora, vaikka pisteet muodostavat käyrän, tai pisteet yhdistetään murtoviivaksi.
+- b-kohdassa kulmakerroin otetaan suoraan $g$:ksi ($5{,}18\,\text{m/s}^2$) eikä kerrota kahdella, tai kulmakerroin luetaan vierekkäisistä pisteistä.
+- b-kohdassa epävarmuus unohtuu, tai tulos annetaan liian monella numerolla, esimerkiksi $10{,}354\,\text{m/s}^2$.
+- c-kohdassa selitetään liian suuri tulos ilmanvastuksella, vaikka se pienentäisi tulosta, tai ero todetaan "mittausvirheeksi" arvioimatta sen suuruutta epävarmuuteen nähden.
+
+### Hyväksytään myös
+- a-kohdassa kuvaaja $(t^2,\,s)$ voidaan piirtää myös niin, että $s$ on vaaka-akselilla; kulmakerroin on silloin $\tfrac{2}{g}$.
+- b-kohdassa laskimen sovitus antaa $g = 10{,}35\,\text{m/s}^2$; arvot $10{,}2$–$10{,}5\,\text{m/s}^2$ ja epävarmuus $0{,}1$–$0{,}2\,\text{m/s}^2$ hyväksytään.

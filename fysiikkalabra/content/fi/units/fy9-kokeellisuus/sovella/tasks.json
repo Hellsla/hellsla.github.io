@@ -1,5 +1,5 @@
 {
- "intro": "Kuusi tehtävää kokeellisesta työstä: kaksi koesuunnitelmaa, raportin arviointi, mittausaineisto kuvaajana, laskutehtävä epävarmuuksineen ja moduuleja yhdistävä tehtävä.",
+ "intro": "Kahdeksan tehtävää kokeellisesta työstä: kaksi koesuunnitelmaa, raportin arviointi, mittausaineisto kuvaajana, laskutehtävä epävarmuuksineen ja moduuleja yhdistävä tehtävä.",
  "tasks": [
   {
    "id": "fy9-kokeellisuus-s1",
@@ -718,6 +718,298 @@
     "graph": "fy1-4",
     "concept": "fy4-6",
     "experiment": "fy1-3",
+    "communication": "fy1-8"
+   }
+  },
+  {
+   "id": "fy9-kokeellisuus-s7",
+   "title": "Liukukitkan mittaus",
+   "source": "example",
+   "source_note": "Tilanne ja mittausaineisto ovat keksittyjä esimerkkejä.",
+   "skills": [
+    "fy4-6",
+    "fy1-3",
+    "fy1-4"
+   ],
+   "figure": "fy4-6/mittaus",
+   "text": "Ryhmä mittasi puupalikan liukukitkavoiman $F_\\mu$ pöydällä usealla tukivoiman $N$ arvolla. Palikkaa vedettiin jousivaa'alla vaakasuoraan tasaisella nopeudella, ja tukivoimaa muutettiin lisäämällä palikan päälle punnuksia. Jousivaa'an asteikkoväli on $0{,}1\\,\\text{N}$. Kuvaajassa ovat mittauspisteet.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "word",
+     "points": 3,
+     "text": "Tarkastele kuvaajaa. Onko aineistossa merkkejä systemaattisesta virheestä? Mitä kuvaajan perusteella voi sanoa satunnaisesta vaihtelusta?",
+     "criteria": [
+      {
+       "text": "Toteaa, että pisteet ovat lähes suoralla, joka kulkee origon kautta, joten kitkavoima on suoraan verrannollinen tukivoimaan: $F_\\mu = \\mu N$.",
+       "tag": "graph",
+       "points": 1
+      },
+      {
+       "text": "Päättelee, ettei kuvaajassa näy systemaattista virhettä: suora ei ole siirtynyt pystyakselilla. Esimerkiksi väärin nollattu jousivaaka siirtäisi kaikkia pisteitä saman verran ylös tai alas.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "text": "Toteaa, että pisteet poikkeavat suorasta noin $0{,}1\\,\\text{N}$ tai vähemmän, välillä ylös ja välillä alas, ja pitää sitä satunnaisena vaihteluna.",
+       "tag": "experiment",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä liukukitkakerroin ja sen virhearvio kuvaajan perusteella.",
+     "answer": {
+      "value": 0.215,
+      "unit": "",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kunkin pisteen tukivoima ja kitkavoima luetaan kuvaajalta: $(5\\,\\text{N};\\ 1{,}1\\,\\text{N})$, $(10\\,\\text{N};\\ 2{,}1\\,\\text{N})$, $(15\\,\\text{N};\\ 3{,}3\\,\\text{N})$, $(20\\,\\text{N};\\ 4{,}2\\,\\text{N})$ ja $(25\\,\\text{N};\\ 5{,}4\\,\\text{N})$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$F_\\mu = \\mu N$, joten $\\mu = \\dfrac{F_\\mu}{N}$ eli kuvaajan suoran kulmakerroin."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Pisteiden suhteet $F_\\mu : N$ ovat $0{,}22$; $0{,}21$; $0{,}22$; $0{,}21$ ja $0{,}216$, joten keskiarvo on $0{,}215$. Myös sovitetun suoran kulmakerroin $0{,}21\\text{–}0{,}22$ kelpaa."
+      },
+      {
+       "key": "uncertainty",
+       "points": 1,
+       "detail": "Virhearvio on vaihteluvälin puolikas, $\\dfrac{0{,}22 - 0{,}21}{2} = 0{,}005$, joten $\\mu = 0{,}215 \\pm 0{,}005$. Ääriviivojen avulla arvioitu $\\pm 0{,}01$ kelpaa."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Toinen ryhmä käytti samaa palikkaa ja pöytää, mutta heidän jousivaakansa näytti kuormittamattomana $0{,}3\\,\\text{N}$, eikä ryhmä huomioinut sitä. Kun tukivoima oli $10\\,\\text{N}$, vaaka näytti $2{,}4\\,\\text{N}$. Laske kitkakerroin, jonka ryhmä sai tästä lukemasta, ja oikea kitkakerroin sekä virheen suuruus prosentteina oikeasta arvosta. Selitä myös, miksi nollavirhe ei vaikuttaisi kulmakertoimeen, jos kerroin määritettäisiin koko mittaussarjasta sovitetun suoran avulla.",
+     "answer": [
+      {
+       "name": "mu_wrong",
+       "value": 0.24,
+       "unit": "",
+       "tolerance": 0.03
+      },
+      {
+       "name": "mu_right",
+       "value": 0.21,
+       "unit": "",
+       "tolerance": 0.03
+      },
+      {
+       "name": "err",
+       "value": 14,
+       "unit": "%",
+       "tolerance": 0.1
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Oikea kitkavoima on lukema miinus nollavirhe, $F_\\mu = F_\\text{lukema} - F_0$, ja $\\mu = \\dfrac{F_\\mu}{N}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Ryhmän kerroin $\\dfrac{2{,}4\\,\\text{N}}{10\\,\\text{N}} = 0{,}24$ ja oikea kerroin $\\dfrac{2{,}4\\,\\text{N} - 0{,}3\\,\\text{N}}{10\\,\\text{N}} = 0{,}21$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Virhe on $\\dfrac{0{,}24 - 0{,}21}{0{,}21} \\approx 14\\,\\%$ oikeasta arvosta."
+      },
+      {
+       "text": "Selittää: nollavirhe siirtää jokaista pistettä pystysuunnassa saman verran, joten suoran kulmakerroin $\\dfrac{\\Delta F}{\\Delta N}$ ei muutu. Vain suoran leikkauskohta pystyakselilla muuttuu.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Arvioi mittausmenetelmää: nimeä kaksi tuloksen luotettavuutta heikentävää asiaa ja kerro, miten kokeen toteutusta parannettaisiin.",
+     "criteria": [
+      {
+       "key": "error_sources",
+       "points": 2,
+       "detail": "Kaksi todellista heikkoutta ja niiden vaikutus, esimerkiksi: vetonopeus ei pysy täsmälleen vakiona, jolloin vaa'an lukema heiluu; jokaisella tukivoimalla on vain yksi mittaus; asteikkoväli $0{,}1\\,\\text{N}$ tekee pienen tukivoiman suhteellisesta virheestä suuren ($0{,}05\\,\\text{N} : 1{,}1\\,\\text{N} \\approx 5\\,\\%$ pisteessä $N = 5\\,\\text{N}$); pöydän pöly tai kosteus."
+      },
+      {
+       "text": "Kertoo kummallekin heikkoudelle parannuksen, esimerkiksi: toista mittaus kolme kertaa ja laske keskiarvo, käytä voima-anturia tai tasaista veto-laitetta, lisää mittauspisteitä ja laajenna tukivoiman aluetta, pyyhi pöytä ennen mittausta.",
+       "tag": "experiment",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "links": {
+    "graph": "fy1-4",
+    "experiment": "fy1-3",
+    "math": "fy4-6",
+    "concept": "fy4-6",
+    "communication": "fy1-8"
+   }
+  },
+  {
+   "id": "fy9-kokeellisuus-s8",
+   "title": "Käämin magneettikenttä ja virhelähteet",
+   "source": "example",
+   "source_note": "Tilanne ja mittausaineisto ovat keksittyjä esimerkkejä.",
+   "skills": [
+    "fy7-3",
+    "fy1-4",
+    "fy1-3"
+   ],
+   "figure": "fy7-3/coil-fit",
+   "text": "Ryhmä tutki pitkän ilmasydämisen käämin magneettikenttää. Käämin keskelle asetettiin magneettikenttäanturi, ja käämin virtaa $I$ muutettiin virtalähteellä. Kuvaajassa ovat anturin mittaama magneettivuon tiheys $B$ ja mittauspisteisiin sovitettu suora. Käämin kierrostiheys eli kierrosten lukumäärä pituusyksikköä kohti on $n$, ja käämin keskellä pätee $B = \\mu_0 n I$, missä $\\mu_0 = 4\\pi \\cdot 10^{-7}\\,\\text{Vs/(Am)}$.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä kuvaajan suoran kulmakerroin ja sen avulla käämin kierrostiheys $n$.",
+     "answer": {
+      "value": 1960,
+      "unit": "1/m",
+      "tolerance": 0.04
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kulmakerroin luetaan sovitetulta suoralta kahdesta kaukana toisistaan olevasta pisteestä, esimerkiksi $(1{,}0\\,\\text{A};\\ 2{,}5\\,\\text{mT})$ ja $(2{,}5\\,\\text{A};\\ 6{,}2\\,\\text{mT})$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$B = \\mu_0 n I$, joten suoran kulmakerroin on $k = \\mu_0 n$ ja $n = \\dfrac{k}{\\mu_0}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$k = \\dfrac{6{,}2\\,\\text{mT} - 2{,}5\\,\\text{mT}}{2{,}5\\,\\text{A} - 1{,}0\\,\\text{A}} = 2{,}47\\,\\text{mT/A} = 2{,}47 \\cdot 10^{-3}\\,\\text{T/A}$ ja $n = \\dfrac{2{,}47 \\cdot 10^{-3}\\,\\text{T/A}}{4\\pi \\cdot 10^{-7}\\,\\text{Vs/(Am)}} \\approx 1{,}96 \\cdot 10^{3}\\,\\text{1/m}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Millitesla on muunnettu teslaksi. Kulmakertoimessa on kaksi merkitsevää numeroa, joten $n \\approx 2{,}0 \\cdot 10^{3}\\,\\text{1/m}$ eli noin $20$ kierrosta senttimetrillä."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 3,
+     "text": "Ryhmä haluaa tuottaa käämin keskelle kentän $B = 12\\,\\text{mT}$. Mikä virta tarvitaan kuvaajan perusteella? Onko tulos luotettava?",
+     "answer": {
+      "value": 4.9,
+      "unit": "A",
+      "tolerance": 0.04
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$B = kI$ ja suora kulkee käytännössä origon kautta, joten $I = \\dfrac{B}{k}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$I = \\dfrac{12\\,\\text{mT}}{2{,}47\\,\\text{mT/A}} \\approx 4{,}9\\,\\text{A}$"
+      },
+      {
+       "text": "Huomaa, että tulos on ekstrapolointia: suurin mitattu virta oli $2{,}5\\,\\text{A}$ ja tarvittava virta on noin kaksinkertainen. Ei voi tietää, pysyykö riippuvuus suorana, esimerkiksi käämin lämmetessä, joten tulos on vain arvio ja se on tarkistettava mittaamalla.",
+       "tag": "graph",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kun käämin virta oli nolla, anturi näytti silti lukeman $0{,}04\\,\\text{mT}$. Laske, kuinka monta prosenttia tämä lukema on kuvaajasta luetuista kentän arvoista virroilla $0{,}50\\,\\text{A}$ ja $2{,}5\\,\\text{A}$. Minkä tyyppinen virhe on kyseessä, ja miten se vaikuttaa kulmakertoimeen?",
+     "answer": [
+      {
+       "name": "r05",
+       "value": 3.1,
+       "unit": "%",
+       "tolerance": 0.1
+      },
+      {
+       "name": "r25",
+       "value": 0.65,
+       "unit": "%",
+       "tolerance": 0.1
+      }
+     ],
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Luetaan $B \\approx 1{,}3\\,\\text{mT}$, kun $I = 0{,}50\\,\\text{A}$, ja $B \\approx 6{,}2\\,\\text{mT}$, kun $I = 2{,}5\\,\\text{A}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\dfrac{0{,}04\\,\\text{mT}}{1{,}3\\,\\text{mT}} \\approx 3\\,\\%$ ja $\\dfrac{0{,}04\\,\\text{mT}}{6{,}2\\,\\text{mT}} \\approx 0{,}6\\,\\%$."
+      },
+      {
+       "text": "Nimeää virheen systemaattiseksi: se on vakio, ei riipu virrasta ja on aina samansuuntainen. Syynä voi olla esimerkiksi Maan magneettikenttä tai anturin nollapisteen virhe.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "text": "Toteaa, että vakio siirtää kaikkia pisteitä yhtä paljon, joten kulmakerroin ei muutu ja vain suoran leikkauskohta pystyakselilla siirtyy. Yksittäisestä pisteestä laskettuna virhe olisi suhteellisesti suurempi pienellä virralla.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Arvioi kokeen suunnittelua. Sopiiko malli $B \\propto I$ mittaukseen, ja miten kokeen toteutusta parannettaisiin?",
+     "criteria": [
+      {
+       "text": "Toteaa, että pisteet ovat lähes suoralla ja poikkeavat siitä vain vähän kumpaankin suuntaan, joten malli sopii virta-alueelle $0\\text{–}2{,}5\\,\\text{A}$ ja satunnainen vaihtelu on pientä.",
+       "tag": "graph",
+       "points": 1
+      },
+      {
+       "text": "Kertoo, miten systemaattinen virhe poistetaan: nollakohta mitataan virran ollessa nolla ja vähennetään kaikista lukemista, tai virta käännetään ja lasketaan $B$ lukemien erotuksen puolikkaana.",
+       "tag": "experiment",
+       "points": 1
+      },
+      {
+       "text": "Nimeää toisen heikkouden ja parannuksen, esimerkiksi: jokaisella virralla vain yksi lukema, joten toista mittaukset; virta lämmittää käämiä ja muuttaa sen resistanssia, joten pidä virta päällä vain lyhyen ajan; anturin täytyy olla käämin keskellä.",
+       "tag": "experiment",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "links": {
+    "graph": "fy1-4",
+    "experiment": "fy1-3",
+    "math": "fy7-3",
+    "concept": "fy7-3",
     "communication": "fy1-8"
    }
   }

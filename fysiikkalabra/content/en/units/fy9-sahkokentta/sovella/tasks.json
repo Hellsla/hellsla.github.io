@@ -1,5 +1,5 @@
 {
-  "intro": "Six matriculation-exam-style tasks bring together the charges, the electric field, potential, the capacitor, semiconductors and electrical safety of the lesson. Solve them as in the exam: draw a free-body diagram or a circuit where needed, justify which principle you use and why it applies, solve for the asked quantity before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready.",
+  "intro": "Eight matriculation-exam-style tasks bring together the charges, the electric field, potential, the capacitor, semiconductors and electrical safety of the lesson. Solve them as in the exam: draw a free-body diagram or a circuit where needed, justify which principle you use and why it applies, solve for the asked quantity before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready.",
   "tasks": [
     {
       "id": "fy9-sahkokentta-s1",
@@ -841,6 +841,324 @@
         "math": "fy6-12",
         "transfer": "fy4-9",
         "communication": "fy4-9"
+      }
+    },
+    {
+      "id": "fy9-sahkokentta-s7",
+      "title": "An alpha particle between two plates",
+      "source": "example",
+      "source_note": "The set-up and the numbers are an invented example. An alpha particle is a helium nucleus.",
+      "skills": [
+        "fy6-12",
+        "fy6-11",
+        "fy4-4",
+        "fy4-7"
+      ],
+      "figure": "fy6-12/ex-vgraph",
+      "text": "Two large metal plates are parallel in a vacuum, and there is a uniform electric field between them. The graph shows the potential $V$ as a function of the distance $x$, where $x$ is measured from the negative plate. An alpha particle (a helium nucleus, charge $+2e$) is between the plates, and only the electric force acts on it.\n\n- elementary charge $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$\n- mass of the alpha particle $6.645 \\cdot 10^{-27}\\,\\text{kg}$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Determine the strength of the electric field between the plates and state the direction of the field.",
+          "answer": {
+            "value": 5.0,
+            "unit": "kV/m",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Two points far apart are read, for example $(1.0\\,\\text{cm};\\ 50\\,\\text{V})$ and $(5.0\\,\\text{cm};\\ 250\\,\\text{V})$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "In a uniform field $E = \\dfrac{|\\Delta V|}{\\Delta x}$: the field is the magnitude of the slope of the potential graph."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E = \\dfrac{200\\,\\text{V}}{0.040\\,\\text{m}} = 5.0\\,\\text{kV/m}$, two significant figures."
+            },
+            {
+              "text": "States the direction: the field points from the positive plate to the negative plate, in the direction in which the potential decreases, that is against the $x$ axis.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "What is the acceleration of the alpha particle? In which direction does it accelerate?",
+          "answer": {
+            "value": 241100000000.0,
+            "unit": "m/s²",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Justifies that the electric force $F = qE$ acts on the alpha particle in the direction of the field, because the charge is positive, and applies Newton's second law. Gravity is negligible.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a = \\dfrac{F}{m} = \\dfrac{2eE}{m}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$F = 2 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{C} \\cdot 5.0 \\cdot 10^{3}\\,\\text{N/C} \\approx 1.6 \\cdot 10^{-15}\\,\\text{N}$ and $a \\approx 2.4 \\cdot 10^{11}\\,\\text{m/s}^2$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$a \\approx 2.4 \\cdot 10^{11}\\,\\text{m/s}^2$ with two significant figures like the field strength; the direction is towards the negative plate, so $x$ decreases."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "The alpha particle is released from rest at $x = 4.0\\,\\text{cm}$. What is its speed at $x = 2.0\\,\\text{cm}$?",
+          "answer": {
+            "value": 98.2,
+            "unit": "km/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Justifies with the energy principle: only the electric force does work, so the decrease $q\\Delta V$ of the potential energy becomes kinetic energy.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The potentials are read: $V(4.0\\,\\text{cm}) = 200\\,\\text{V}$ and $V(2.0\\,\\text{cm}) = 100\\,\\text{V}$, so $\\Delta V = 100\\,\\text{V}$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tfrac12 mv^2 = 2e\\,\\Delta V$, so $v = \\sqrt{\\dfrac{4e\\,\\Delta V}{m}}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v = \\sqrt{\\dfrac{2 \\cdot 3.204 \\cdot 10^{-17}\\,\\text{J}}{6.645 \\cdot 10^{-27}\\,\\text{kg}}} \\approx 98\\,\\text{km/s}$, two significant figures."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "The zero level is now chosen at the positive plate instead of the negative plate. What is the potential at $x = 4.0\\,\\text{cm}$ after this choice? Do the strength of the electric field and the speed in part c change?",
+          "answer": {
+            "value": -50.0,
+            "unit": "V",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Justifies that moving the zero level changes all potentials by the same amount but not the potential differences. The line of the graph moves down and its slope stays the same, so $E$ does not change.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$V = 200\\,\\text{V} - 250\\,\\text{V} = -50\\,\\text{V}$"
+            },
+            {
+              "text": "Concludes that the speed does not change, because the gain in kinetic energy depends on the potential difference $\\Delta V = 100\\,\\text{V}$, not on the choice of the zero level.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy6-12",
+        "math": "fy6-12",
+        "concept": "fy6-12",
+        "transfer": "fy6-11",
+        "communication": "fy6-12"
+      }
+    },
+    {
+      "id": "fy9-sahkokentta-s8",
+      "title": "A green indicator light",
+      "source": "example",
+      "source_note": "The circuit and the numbers are an invented example. The characteristic curve is typical of a green LED.",
+      "skills": [
+        "fy6-14",
+        "fy6-3",
+        "fy6-6",
+        "fy6-5"
+      ],
+      "figure": "fy6-14/ex-led",
+      "text": "A small indicator light has a green LED connected in series with a $220\\,\\Omega$ series resistor to a $6.0\\,\\text{V}$ DC voltage source. The graph shows the characteristic curve of the LED: the current $I$ of the LED as a function of its voltage $U_\\text{D}$. The largest permitted current of the LED is $30\\,\\text{mA}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "What is the current in the circuit?",
+          "answer": {
+            "value": 17.27,
+            "unit": "mA",
+            "tolerance": 0.06
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Notes that in the current range $5\\ldots 30\\,\\text{mA}$ the curve is almost vertical: $U_\\text{D} \\approx 2.2\\,\\text{V}$, for example the point $(2.2\\,\\text{V};\\ 10\\,\\text{mA})$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "In series the current is the same and $U = U_\\text{R} + U_\\text{D}$ with $U_\\text{R} = RI$, so $I = \\dfrac{U - U_\\text{D}}{R}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$I = \\dfrac{6.0\\,\\text{V} - 2.2\\,\\text{V}}{220\\,\\Omega} \\approx 17\\,\\text{mA}$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The current $17\\,\\text{mA}$ is in the range where $U_\\text{D} \\approx 2.2\\,\\text{V}$, and below the permitted $30\\,\\text{mA}$."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "What is the power of the resistor? What fraction of the electric power of the source becomes internal energy in the resistor?",
+          "answer": [
+            {
+              "name": "P",
+              "value": 65.64,
+              "unit": "mW",
+              "tolerance": 0.06
+            },
+            {
+              "name": "share",
+              "value": 63.33,
+              "unit": "%",
+              "tolerance": 0.04
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$P_\\text{R} = U_\\text{R} I$; since the current is the same, the fraction is $\\dfrac{P_\\text{R}}{P} = \\dfrac{U_\\text{R}}{U}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$P_\\text{R} = 3.8\\,\\text{V} \\cdot 0.01727\\,\\text{A} \\approx 66\\,\\text{mW}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Fraction $= \\dfrac{3.8\\,\\text{V}}{6.0\\,\\text{V}} \\approx 63\\,\\%$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The powers add up: LED $38\\,\\text{mW}$ + resistor $66\\,\\text{mW}$ $\\approx$ source $104\\,\\text{mW}$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "The resistor is replaced by another one, and the source voltage stays the same. What is the smallest series resistor with which the current does not exceed the permitted current?",
+          "answer": {
+            "value": 126.7,
+            "unit": "Ω",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The smallest resistance corresponds to the largest current: $R_\\text{min} = \\dfrac{U - U_\\text{D}}{I_\\text{max}}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$R_\\text{min} = \\dfrac{3.8\\,\\text{V}}{0.030\\,\\text{A}} \\approx 127\\,\\Omega$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "The result is rounded up to be safe: the resistor is at least $130\\,\\Omega$, because a smaller one would let too large a current through."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "Read from the graph the voltage of the LED at the currents $5\\,\\text{mA}$ and $20\\,\\text{mA}$ and calculate the resistance $U_\\text{D}/I$ of the LED at both currents. What do the results tell about the LED and Ohm's law?",
+          "answer": [
+            {
+              "name": "R5",
+              "value": 440.0,
+              "unit": "Ω",
+              "tolerance": 0.1
+            },
+            {
+              "name": "R20",
+              "value": 110.0,
+              "unit": "Ω",
+              "tolerance": 0.1
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "At both currents, $5\\,\\text{mA}$ and $20\\,\\text{mA}$, the voltage is read from the curve: $U_\\text{D} \\approx 2.2\\,\\text{V}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\dfrac{2.2\\,\\text{V}}{0.005\\,\\text{A}} = 440\\,\\Omega$ and $\\dfrac{2.2\\,\\text{V}}{0.020\\,\\text{A}} = 110\\,\\Omega$"
+            },
+            {
+              "text": "Concludes that the resistance of the LED is not constant: it falls to a quarter when the current is four times as large. The LED does not obey Ohm's law, because the curve is not a straight line through the origin.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Explains that the voltage hardly changes while the current changes a lot. That is why an LED cannot be connected directly to a voltage source: a series resistor takes the excess voltage and sets the current.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy6-14",
+        "math": "fy6-14",
+        "concept": "fy6-14",
+        "transfer": "fy6-5",
+        "communication": "fy6-14"
       }
     }
   ]
