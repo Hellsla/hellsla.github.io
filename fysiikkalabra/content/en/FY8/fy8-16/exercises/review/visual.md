@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 9b35050b83c355e9
-SCOPE: delta reflow from 1ba7c51de2546285 base cf5f907
+CONTENT-HASH: 7e098a62279429a4
+SCOPE: delta added-exercise from 9b35050b83c355e9 base 110ed2029320
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] L3-06 solution, Reasonableness — the display equation still splits the sentence ("Check by multiplying:" / "the same as 0.10 c"); put the check and remark in one inline chain or end the sentence before the block.
+- [Minor] hubble-t (L2-09, L3-06) — x-axis ticks 100, 150, 200, 250, 300 are close together at phone width; use 0, 100, 200, 300 if the figure is next opened.
+- [Minor] L3-06 Answer — "Two significant figures in b)" sits in one paragraph with the c) text and the closing remark on separate lines; a short gap before c) would read more evenly.
 
 ## Checked
-- Contact-sheet level triage skipped; opened open-exercise captures at 1280 px (fy8-1 L2-3, fy8-5 L2-5, fy8-7 1, fy8-13 L3-4, fy8-16 L2-6): aligned blocks, equals signs aligned, sentence marks inside the last row, no clipping, layout intact.
-- No 390 px open-exercise capture exists in the packet (only stage-exercises-390); the other formulas of this lesson were checked from the source breaks, not from a capture.
+- Opened (in content/en/FY8/fy8-16/review/shots/) open-exercises-L3-1280-8 (L3-06 task, figure, answer field), -9 (solution up to substitution) and -10 (changed Answer, the z < 0.1 remark, Reasonableness).
+- The changed text renders cleanly: units upright with thin space, 0.10 c and z < 0.1 in KaTeX, answer chip 4.2 · 10^2 Mpc matches the text, the sig-fig explanation is clear and consistent with the data.
+- L2-09 captures not reopened: the diff touches only the L3-06 solution text; the figure is unchanged.
 - Hash re-run at the end: unchanged.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
