@@ -1,16 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: 322aab7bd04d5c61
+VERDICT: FAIL
+CONTENT-HASH: c5ba678147e84a10
 
 ## Blocking
-- none
+- [Major] review/shots/fy7-11-open-exercises-1280-5.png (11-5 Kaava) — visual verification incomplete: the only exercise captures are 1280 px, and the capture (stamp current for this hash) still shows the first row as one line, $\delta_k = (\alpha-\beta) + (180^\circ-2\beta) + (\alpha-\beta)$, although the source now has the `&+` split; the 352 px width at which the 7 px clipping occurred is not captured — the fix cannot be confirmed — add a 352/360 px open-solution capture of 11-5 (or explain the renderer re-joining the rows) and re-run.
 
 ## Polish
-- [Minor] Kaava blocks (shared) — display blocks use `aligned` rows with the = signs aligned; very tight vertical spacing between fraction rows (e.g. fy7-16 L3 `v = c/n`, `t = L/v`), readable but cramped — shared component line-height tweak if wanted.
-- [Minor] Phone width — the packet has no exercise captures at 390 px (exercise captures are 1280 px only); phone wrapping of the aligned Kaava blocks was not judged from a capture (check_layout 360/390 ok per packet).
+- none (11-5 at 1280 px: aligned block, solution sections, Sijoitus, Vastaus and Järkevyys render cleanly).
 
 ## Checked
-- review/shots (lesson folder) fy7-11-open-exercises-1280-3.png (11-3, 11-4 start), -5.png (11-5 Kaava: aligned δ_k / θ chain, clean)
-- Delta: the changed Kaava blocks (aligned, one equation per row, aligned on =, $$\begin{aligned}$$ source form); the layout around them survived: Annettu/Kysytty/Periaate/Kaava/Muunnokset/Sijoitus/Vastaus/Järkevyys order intact, blocks inside the card, nothing clipped at 664 px.
+- content/fi/FY7/fy7-11/review/shots/fy7-11-open-exercises-1280-5.png (11-5 Kaava block, whole solution); stamp.txt matches the hash.
+- Delta is one Kaava row; no 390/352 px exercise capture exists.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

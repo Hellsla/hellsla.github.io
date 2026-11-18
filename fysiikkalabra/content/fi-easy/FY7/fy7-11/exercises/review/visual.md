@@ -1,14 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: cbcc16dada8a4f00
+VERDICT: FAIL
+CONTENT-HASH: 494809aa821182e9
 
 ## Blocking
-- none
+- [Major] review/shots/fy7-11-open-exercises-1280-5.png (11-5 Kaava) — visual verification incomplete: the only exercise captures are 1280 px, and the capture (stamp current for this hash) still shows the first row as one line, $\delta_k = (\alpha-\beta) + (180^\circ-2\beta) + (\alpha-\beta)$, although the source now has the `&+` split; the 352 px width at which the 7 px clipping occurred is not captured — the fix cannot be confirmed — add a 352/360 px open-solution capture of 11-5 (or explain the renderer re-joining the rows) and re-run.
 
 ## Polish
-- none
+- none (11-5 at 1280 px: aligned block, solution sections, Sijoitus, Vastaus and Järkevyys render cleanly).
 
 ## Checked
-- Delta (work queue 8g: Kaava step rewritten into aligned display blocks, fi-easy). Opened full-size at 1280 px with solutions open: fy7-11-open-exercises-L2-1280-3 (prism Kaava with sin α₂ block) and -4 (n = c : v Kaava beside the graph task). Formulas render and align, the order principle, symbolic steps, then substitution holds, blocks sit inside the solution card with no clipping, overflow or red KaTeX. The neighbouring blocks are unaffected. No figures changed. No 390 px solution capture exists in this packet, so the phone wrap of the longest chains was not judged.
+- content/fi-easy/FY7/fy7-11/review/shots/fy7-11-open-exercises-1280-5.png (11-5 Kaava block, whole solution); stamp.txt matches the hash.
+- Delta is one Kaava row; no 390/352 px exercise capture exists.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
