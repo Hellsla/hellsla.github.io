@@ -69,7 +69,7 @@
         },
         {
           "text": "The wool is positive but less charged, because part of the charge turned into heat.",
-          "feedback": "Charge does not turn into heat or disappear. According to the conservation of charge, the total charge of an isolated system stays the same, so the charge of the wool is equal in magnitude to that of the rod."
+          "feedback": "Charge does not turn into anything else or disappear. According to the conservation of charge, the total charge of an isolated system stays the same, so the charge of the wool is equal in magnitude to that of the rod."
         }
       ]
     },

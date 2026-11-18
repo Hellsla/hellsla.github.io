@@ -123,7 +123,7 @@
 **Periaate:** Varaus säilyy. Hierottaessa elektroneja siirtyy kappaleesta toiseen, mutta niitä ei synny eikä katoa. Neutraalien kappaleiden yhteinen varaus on alussa nolla. Sen on oltava nolla myös hieromisen jälkeen. Sauva on saanut ylimääräisiä elektroneja ja on negatiivinen. Villa on menettänyt yhtä monta elektronia ja on positiivinen.
 **Mallivastaus:** Oikea väite on se, jonka mukaan villan varaus on positiivinen ja yhtä suuri kuin sauvan varaus, koska elektroneja siirtyi villasta sauvaan. Väite, jonka mukaan villa jäisi neutraaliksi, on väärä. Sauvan saamat elektronit eivät synny tyhjästä. Väite lämpönä katoavasta varauksesta on väärä.
 
-Varaus ei muutu lämmöksi vaan säilyy. Väite, jonka mukaan myös villa olisi negatiivinen, on väärä. Molemmat kappaleet eivät voi saada elektroneja, ellei niitä tule jostain.
+Varaus säilyy. Väite, jonka mukaan myös villa olisi negatiivinen, on väärä. Molemmat kappaleet eivät voi saada elektroneja, ellei niitä tule jostain.
 
 ## fy6-10-L1-07
 **Kysytty:** mitä sähköiselle voimalle tapahtuu, kun varausten etäisyys kaksinkertaistetaan
