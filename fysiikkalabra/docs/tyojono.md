@@ -66,6 +66,7 @@ vaatii tiede- ja pedagogiikkakatselmoinnin (rivitys luokittuu `numbers`/`wording
 opiskelijan laskut ja lauseen sisäiset ketjut fy3-4, fy3-5, fy3-12, fy3-15 sekä fy3-10:n `\dfrac`).
 
 ## 6. Kuvatehtävät ja taulukkotehtävät FY9 (opettaja 2026-11-13…15)
+FY9 A tehty (claude/fy9-a-kuvatehtavat, #714): fy9-voimat s7–s8, fy9-ympyraliike s8–s9, fy9-sailymislait s7–s8, fy9-energia s8–s9; FY9 B on toisen työntekijän.
 FY9 C tehty (PR #717, claude/fy9-c-kuvatehtavat): fy9-sahkokentta s7–s8, fy9-magnetismi-valo s8–s9, fy9-moderni s8–s9, fy9-mittaaminen s7–s8, fy9-kokeellisuus s7–s8 (loki §6 FY9 C); koordinaattori kirjaa rivin yhteen kohtaan A:n ja B:n kanssa.
 Kaksi kuvatehtävää per luku hyväksytty kustannuksesta huolimatta (noin 300 k per luku); FY10:een ja FY14:ään ei. Jokaisessa
 luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka kolmannessa; arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit
