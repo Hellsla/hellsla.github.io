@@ -81,14 +81,6 @@ Teoria-vaiheeseen toistuva osa: väite yhdellä lauseella, sitten miksi se ei p�
 "Yleinen virhekäsitys" ja Tiivistelmä omiin suljettuihin `<details>`-laatikkoihinsa (näppäimistöllä avattavat); sivupohjan
 muutos, ei katselmointeja; tarkista käsitekorttien alleviivaus ja sirut laatikon sisällä (`test_home.py`). Sisältötyö luku kerrallaan sen jälkeen.
 
-## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
-Varattu: claude/fy9-8c (FY9)
-Sääntö NOTES.md §3 "Paragraphs in stages and steps", luokka `md-paragraphs` (tiede ja pedagogiikka carry, visual delta), lint varoittaa.
-Tehty: FY1, FY2 (luvut ja Sovella, claude/fy2-lapikaynti, PR #676; FY2:n esimerkkikokeessa ei ollut jaettavaa), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana), FY7 (Sovella ja koe mukana, 0f-PR #681), FY3 (luvut 1–16, Sovella ja koe, 0f-PR #686), FY8 (luvut 1–16, Sovella ja koe, 0f-PR claude/fy8-0f), FY10 (ei jaettavaa: kurssilla on vain tutkimukset ja TVT-ohjeet, joissa ei ole esimerkkien vaiheita eikä ratkaisujen vaiheita, ei `<!-- vaihe -->`-rivejä eikä Annettu/Kysytty-vaiheita; pitkät kappaleet ovat ohjeproosaa säännön ulkopuolella; vain suomeksi, tutkimuksista ei ole käännöksiä). Jäljellä
-järjestyksessä FY9. Kurssi kerrallaan, kaikki kielet
-(`/quality-audit --fix`), kuten loki §8c. Sääntö osamerkeille: katko osamerkin eteen, ei osan keskelle. Kohta 0f: tehdään kurssin
-muiden avointen kohtien kanssa samassa PR:ssä.
-
 ## 8e. Kuvien asettelu (opettaja 2026-11-13) — toteutetaan kohdan 11 U3:n osana
 Turha pystyväli kuvan vierellä, kuva ja pieni taulukko tai kaksi pientä taulukkoa vierekkäin, kuva aina selittämänsä kappaleen
 viereen, valokuva kuvateksteineen oikealle palstalle (`build.py fig_rows`, site.css, `check_layout.py`). Ennen/jälkeen-kuvat: fy3-8, fy4-3, fy1-1 (1280, 1440, 1920 px). Täysi kuvaus: loki §8e.
