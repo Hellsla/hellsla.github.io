@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 81e6e90b2880123c
-SCOPE: delta: en s7/s8 tasks.json and solutions.md, "kinetic friction" changed to "sliding friction" (house term, matches s2); rest stands under the round 1 PASS, language en.
+CONTENT-HASH: ae4685c645f11ec8
+SCOPE: delta: s7 and s8 Järkevyys/Reasonableness weight calculations changed from inline to aligned display chains (CI 360 px fix), language en; everything else stands under the previous PASS.
 
 ## Blocking
 - (none)
 
 ## Polish
-- s7 b) Järkevyys and s7 d) Sijoitus carry three-figure intermediates (37.5 %, 3.75 N, -22.5 J) from two-figure data; answers are rounded to two figures, so this is only a check chain. Optional.
-- s8 b) shows 12.56 m/s in the chain and the answer 13 m/s, and c) then uses the unrounded 12.56; the Vastaus lines say why. Readable as is.
+- Earlier Polish stands (recorded in the previous report, unchanged by this delta).
+- Optional: the chain is two rows (G = mg, then m · g with numbers and units) with the result on the second; reads fine.
 
 ## Checked
-- Diff of the fix commit: every changed line in en tasks.json and solutions.md differs only by kinetic friction becoming sliding friction (task s7 text, Principle, Reasonableness, Given, d Principle); no other meaning, number, figure or line-break change.
-- Grammar: "coefficient of sliding friction", "the sliding friction force", "the sliding friction" read fluently; no "kinetic friction" remains; consistent with s2.
-- Layout unchanged: same block and line structure, wording length nearly equal, so round 1 360 px and 390 px checks stand.
-- Round 1 Polish stays recorded; no new issue.
-- Hash at start and end: 81e6e90b2880123c.
+- s7 (G = 2,0 kg · 9,81 m/s² = 19,6 N) and s8 (G = 0,43 kg · 9,81 m/s² = 4,2 N): numbers, symbol G, units and decimal form per language (en) identical in meaning to the old inline text; arithmetic correct (19,62; 4,218).
+- Sentences continue after the display block with ", so/joten" as in the existing s3 c) and s5 pattern; no sentence broken awkwardly, rows start with the quantity, units upright with thin space.
+- Diff of commit 57e959f176 for this unit touches only these two paragraphs per language; nothing new appears.
+- Hash at start and end same (ae4685c645f11ec8).
