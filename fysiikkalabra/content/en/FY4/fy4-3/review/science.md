@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f423b35a43a32521
+CONTENT-HASH: fd4f31b681b40a8c
 
 ## Blocking
 
 ## Polish
-- The correct option still says "the object" where the prompt and the other options now say "the stone". This is wording only.
+- "Why does a shopping cart stop…": the answer says "friction and air resistance"; for a rolling cart the main brake is rolling resistance (wheel and bearing friction). Acceptable at this level (C), consistent with the bicycle sentence just above.
 
 ## Checked
-batch delta review: the curling-stone recast of the retrieval question. A rising straight (t,x) line means constant velocity, exactly one option is correct, and the feedback on the rest line and the curve is right.
+batch delta review: three new "Stop and think" blocks (ball in flight: Earth and air only, no force from the hand; cart stops because of friction and air resistance, otherwise constant velocity, matches the first law as stated; kick: equal and opposite reaction on the foot, different objects) judged against the surrounding theory and the force guardrails; no numbers to recompute; no captures opened.
