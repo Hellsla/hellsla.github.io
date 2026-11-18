@@ -686,7 +686,12 @@ $$; $$
 \end{aligned}
 $$
 **Vastaus:** $k = (30{,}0 \pm 1{,}2)\,\text{N/m}$. Epävarmuudessa on kaksi numeroa, koska sen ensimmäinen numero on $1$. Jousivakiossa on sama määrä desimaaleja.
-**Järkevyys:** Jokaisen pisteen osamäärä $F_\text{v}/x$ on välillä $28{,}8\ldots 30{,}6\,\text{N/m}$. Esimerkiksi $0{,}49\,\text{N} : 0{,}017\,\text{m} = 28{,}8\,\text{N/m}$. Osamäärät mahtuvat väliin $28{,}8\ldots 31{,}3\,\text{N/m}$. Jousi venyy $10\,\text{cm}$ kolmen newtonin voimalla (noin $0{,}3\,\text{kg}$:n massa). Se on tavallinen laboratoriojousi.
+**Järkevyys:** Jokaisen pisteen osamäärä $F_\text{v}/x$ on välillä $28{,}8\ldots 30{,}6\,\text{N/m}$. Esimerkiksi $$
+\begin{aligned}
+k &= 0{,}49\,\text{N} : 0{,}017\,\text{m} \\
+&= 28{,}8\,\text{N/m}
+\end{aligned}
+$$. Osamäärät mahtuvat väliin $28{,}8\ldots 31{,}3\,\text{N/m}$. Jousi venyy $10\,\text{cm}$ kolmen newtonin voimalla (noin $0{,}3\,\text{kg}$:n massa). Se on tavallinen laboratoriojousi.
 
 ### b)
 **Annettu:** a-kohdan kuvaaja ja suorat; sovitetun suoran leikkaus $F_\text{v}$-akselilla on $-0{,}002\,\text{N}$; rajasuorat leikkaavat $x$-akselin kohdissa $-0{,}20\,\text{cm}$ ja $+0{,}27\,\text{cm}$
@@ -724,7 +729,17 @@ $$; $$
 \end{aligned}
 $$
 **Vastaus:** $x = (15{,}0 \pm 0{,}6)\,\text{cm}$. Tulos on ilmoitettu samaan desimaaliin kuin epävarmuus.
-**Järkevyys:** Rajajousivakioilla venymä on $4{,}5\,\text{N} : 31{,}27\,\text{N/m} = 14{,}4\,\text{cm}$ ja $4{,}5\,\text{N} : 28{,}83\,\text{N/m} = 15{,}6\,\text{cm}$. Väli on sama kuin $15{,}0 \pm 0{,}6\,\text{cm}$. Tulos on kuitenkin ekstrapolointia. Venymä on noin $1{,}5$-kertainen suurimpaan mitattuun ($9{,}8\,\text{cm}$) verrattuna. Voima on suurempi kuin suurin mitattu ($2{,}94\,\text{N}$). Jousi voi ylittää kimmorajansa. Kuvaaja ei kerro, pysyykö jousi lineaarisena. Epävarmuus kertoo vain kulmakertoimen epävarmuudesta, joten todellinen epävarmuus on suurempi.
+**Järkevyys:** Rajajousivakioilla venymä on $$
+\begin{aligned}
+x_\text{min} &= 4{,}5\,\text{N} : 31{,}27\,\text{N/m} \\
+&= 14{,}4\,\text{cm}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+x_\text{max} &= 4{,}5\,\text{N} : 28{,}83\,\text{N/m} \\
+&= 15{,}6\,\text{cm}
+\end{aligned}
+$$. Väli on sama kuin $15{,}0 \pm 0{,}6\,\text{cm}$. Tulos on kuitenkin ekstrapolointia. Venymä on noin $1{,}5$-kertainen suurimpaan mitattuun ($9{,}8\,\text{cm}$) verrattuna. Voima on suurempi kuin suurin mitattu ($2{,}94\,\text{N}$). Jousi voi ylittää kimmorajansa. Kuvaaja ei kerro, pysyykö jousi lineaarisena. Epävarmuus kertoo vain kulmakertoimen epävarmuudesta, joten todellinen epävarmuus on suurempi.
 
 ### Yleisiä virheitä
 - a-kohdassa kulmakerroin luetaan yhdestä pisteestä, esimerkiksi $0{,}49\,\text{N} : 1{,}7\,\text{cm}$, tai yksikkö jää arvoon $\text{N/cm}$.

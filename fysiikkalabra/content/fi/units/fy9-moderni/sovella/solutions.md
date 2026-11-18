@@ -546,8 +546,18 @@ $$
 - d-kohdassa vuosiannosraja $1{,}0\,\text{mSv}$ käytetään annosnopeutena $1{,}0\,\mu\text{Sv/h}$, jolloin paksuudeksi tulee $31{,}6\,\text{cm}$, eli kuvaajan ulkopuolinen väärä arvo.
 
 ### Hyväksytään myös
-- a-kohdassa kaksi muuta kaukana toisistaan olevaa kuvaajan pistettä, esimerkiksi $(0\,\text{cm};\ 80\,\mu\text{Sv/h})$ ja $(15\,\text{cm};\ 10\,\mu\text{Sv/h})$, antavat saman tuloksen $\mu = \ln 8 / 15\,\text{cm} = 0{,}139\,\text{1/cm}$.
-- b-kohdassa puoliintumispaksuuden kautta: $80\,\mu\text{Sv/h} \cdot 0{,}5^{18/5{,}0} \approx 6{,}6\,\mu\text{Sv/h}$.
+- a-kohdassa kaksi muuta kaukana toisistaan olevaa kuvaajan pistettä, esimerkiksi $(0\,\text{cm};\ 80\,\mu\text{Sv/h})$ ja $(15\,\text{cm};\ 10\,\mu\text{Sv/h})$, antavat saman tuloksen $$
+\begin{aligned}
+\mu &= \ln 8 / 15\,\text{cm} \\
+&= 0{,}139\,\text{1/cm}
+\end{aligned}
+$$.
+- b-kohdassa puoliintumispaksuuden kautta: $$
+\begin{aligned}
+\dot{H} &= 80\,\mu\text{Sv/h} \cdot 0{,}5^{18/5{,}0} \\
+&\approx 6{,}6\,\mu\text{Sv/h}
+\end{aligned}
+$$.
 - d-kohdassa $d$ voidaan lukea suoraan kuvaajalta kohdasta, jossa annosnopeus on $3{,}0\,\mu\text{Sv/h}$, kun luku on noin $24\,\text{cm}$.
 
 ## fy9-moderni-s9
@@ -615,7 +625,13 @@ $$
 
 ### Yleisiä virheitä
 - a-kohdassa kulmakerroin luetaan yhdestä mittauspisteestä eikä suoralta, tai $H_0$ lasketaan jakamalla $d / v$ väärin päin ($250 : 18\,000 = 0{,}014$).
-- b-kohdassa etäisyydeksi lasketaan $d = v \cdot H_0 = 8400 \cdot 72 = 6{,}0 \cdot 10^{5}\,\text{Mpc}$, tai tulos annetaan kilometreinä.
+- b-kohdassa etäisyydeksi lasketaan $$
+\begin{aligned}
+d &= v \cdot H_0 \\
+&= 8400 \cdot 72 \\
+&= 6{,}0 \cdot 10^{5}\,\text{Mpc}
+\end{aligned}
+$$, tai tulos annetaan kilometreinä.
 - c-kohdassa $H_0$:ta ei muunneta yksikköön $1/\text{s}$, jolloin tulokseksi tulee $1 / 72 = 0{,}014$ ilman järkevää yksikköä, tai megaparsekeja ja kilometrejä ei supisteta oikein.
 - d-kohdassa sanotaan, että galaksit etääntyvät meistä, joten olemme keskipisteessä, tai väitetään galaksien liikkuvan avaruuden läpi kuin räjähdyksen sirpaleet.
 

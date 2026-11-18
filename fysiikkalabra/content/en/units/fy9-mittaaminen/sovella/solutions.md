@@ -686,7 +686,12 @@ $$; $$
 \end{aligned}
 $$
 **Answer:** $k = (30.0 \pm 1.2)\,\text{N/m}$. The uncertainty has two digits because its first digit is $1$, and the spring constant is given to the same decimal.
-**Reasonableness:** The quotient $F_\text{v}/x$ of every point is between $28.8\ldots 30.6\,\text{N/m}$, for example $0.49\,\text{N} : 0.017\,\text{m} = 28.8\,\text{N/m}$, and it fits within the calculated range $28.8\ldots 31.3\,\text{N/m}$. A spring that stretches $10\,\text{cm}$ under a force of three newtons (a mass of about $0.3\,\text{kg}$) is an ordinary laboratory spring.
+**Reasonableness:** The quotient $F_\text{v}/x$ of every point is between $28.8\ldots 30.6\,\text{N/m}$, for example $$
+\begin{aligned}
+k &= 0.49\,\text{N} : 0.017\,\text{m} \\
+&= 28.8\,\text{N/m}
+\end{aligned}
+$$, and it fits within the calculated range $28.8\ldots 31.3\,\text{N/m}$. A spring that stretches $10\,\text{cm}$ under a force of three newtons (a mass of about $0.3\,\text{kg}$) is an ordinary laboratory spring.
 
 ### b)
 **Given:** the graph and lines of part a; the intercept of the fitted line on the $F_\text{v}$ axis is $-0.002\,\text{N}$; the limiting lines cross the $x$ axis at $-0.20\,\text{cm}$ and $+0.27\,\text{cm}$
@@ -724,7 +729,17 @@ $$; $$
 \end{aligned}
 $$
 **Answer:** $x = (15.0 \pm 0.6)\,\text{cm}$. The result is given to the same decimal as the uncertainty.
-**Reasonableness:** With the limiting spring constants the extension is $4.5\,\text{N} : 31.27\,\text{N/m} = 14.4\,\text{cm}$ and $4.5\,\text{N} : 28.83\,\text{N/m} = 15.6\,\text{cm}$, the same range as $15.0 \pm 0.6\,\text{cm}$. The result is, however, an extrapolation: the extension is about $1.5$ times the largest measured one ($9.8\,\text{cm}$) and the force is greater than the largest measured one ($2.94\,\text{N}$). The spring may exceed its elastic limit, and the graph does not tell whether it stays linear. The stated uncertainty describes only the uncertainty of the slope, so the real uncertainty is larger.
+**Reasonableness:** With the limiting spring constants the extension is $$
+\begin{aligned}
+x_\text{min} &= 4.5\,\text{N} : 31.27\,\text{N/m} \\
+&= 14.4\,\text{cm}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+x_\text{max} &= 4.5\,\text{N} : 28.83\,\text{N/m} \\
+&= 15.6\,\text{cm}
+\end{aligned}
+$$, the same range as $15.0 \pm 0.6\,\text{cm}$. The result is, however, an extrapolation: the extension is about $1.5$ times the largest measured one ($9.8\,\text{cm}$) and the force is greater than the largest measured one ($2.94\,\text{N}$). The spring may exceed its elastic limit, and the graph does not tell whether it stays linear. The stated uncertainty describes only the uncertainty of the slope, so the real uncertainty is larger.
 
 ### Yleisiä virheitä
 - In part a the slope is read from a single point, for example $0.49\,\text{N} : 1.7\,\text{cm}$, or the unit is left as $\text{N/cm}$.

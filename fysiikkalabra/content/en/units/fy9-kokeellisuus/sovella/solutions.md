@@ -428,7 +428,10 @@ two significant figures as in the braking distances and the slope.
 \end{aligned}
 $$ $$
 \begin{aligned}
-\mu &= \dfrac{0.22 + 0.21 + 0.22 + 0.21 + 0.216}{5} \\
+\textstyle\sum\mu &= 0.22 + 0.21 + 0.22 \\
+&\quad + 0.21 + 0.216 \\
+&= 1.076 \\
+\mu &= \dfrac{1.076}{5} \\
 &= 0.215 \\
 \Delta\mu &= \dfrac{0.22 - 0.21}{2} \\
 &= 0.005

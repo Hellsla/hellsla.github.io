@@ -914,7 +914,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$F = 2 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 5{,}0 \\cdot 10^{3}\\,\\text{N/C} \\approx 1{,}6 \\cdot 10^{-15}\\,\\text{N}$ ja $a \\approx 2{,}4 \\cdot 10^{11}\\,\\text{m/s}^2$"
+              "detail": "$$\n\\begin{aligned}\nF &= 2 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\\\\n&\\quad \\cdot 5{,}0 \\cdot 10^{3}\\,\\text{N/C} \\\\\n&\\approx 1{,}6 \\cdot 10^{-15}\\,\\text{N}\n\\end{aligned}\n$$ ja $a \\approx 2{,}4 \\cdot 10^{11}\\,\\text{m/s}^2$"
             },
             {
               "key": "units_precision",
@@ -952,7 +952,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$v = \\sqrt{\\dfrac{2 \\cdot 3{,}204 \\cdot 10^{-17}\\,\\text{J}}{6{,}645 \\cdot 10^{-27}\\,\\text{kg}}} \\approx 98\\,\\text{km/s}$, kaksi merkitsevää numeroa."
+              "detail": "$E_\\text{k} = 3{,}204 \\cdot 10^{-17}\\,\\text{J}$; $v = \\sqrt{2E_\\text{k}/m} \\approx 98\\,\\text{km/s}$, kaksi merkitsevää numeroa."
             }
           ]
         },
@@ -1068,7 +1068,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$P_\\text{R} = 3{,}8\\,\\text{V} \\cdot 0{,}01727\\,\\text{A} \\approx 66\\,\\text{mW}$"
+              "detail": "$$\n\\begin{aligned}\nP_\\text{R} &= 3{,}8\\,\\text{V} \\cdot 0{,}01727\\,\\text{A} \\\\\n&\\approx 66\\,\\text{mW}\n\\end{aligned}\n$$"
             },
             {
               "key": "calculation",

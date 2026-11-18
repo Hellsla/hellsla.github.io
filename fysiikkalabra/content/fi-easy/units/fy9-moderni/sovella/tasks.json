@@ -1056,7 +1056,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$H = 6{,}6\\,\\mu\\text{Sv/h} \\cdot 330\\,\\text{h} \\approx 2{,}2\\,\\text{mSv}$. Se on enemmän kuin $1{,}0\\,\\text{mSv}$."
+              "detail": "$$\n\\begin{aligned}\nH &= 6{,}6\\,\\mu\\text{Sv/h} \\cdot 330\\,\\text{h} \\\\\n&\\approx 2{,}2\\,\\text{mSv}\n\\end{aligned}\n$$. Se on enemmän kuin $1{,}0\\,\\text{mSv}$."
             },
             {
               "key": "conclusion",
@@ -1084,7 +1084,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\dot{H}_\\text{max} = 1000\\,\\mu\\text{Sv} : 330\\,\\text{h} \\approx 3{,}0\\,\\mu\\text{Sv/h}$ ja $d \\approx 23{,}6\\,\\text{cm}$."
+              "detail": "$$\n\\begin{aligned}\n\\dot{H}_\\text{max} &= 1000\\,\\mu\\text{Sv} : 330\\,\\text{h} \\\\\n&\\approx 3{,}0\\,\\mu\\text{Sv/h}\n\\end{aligned}\n$$ ja $d \\approx 23{,}6\\,\\text{cm}$."
             },
             {
               "key": "units_precision",
@@ -1194,12 +1194,12 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "Muuntaa $H_0$:n yksikköön $1/\\text{s}$: $H_0 = 72\\,\\text{km/s} : (3{,}086 \\cdot 10^{19}\\,\\text{km}) \\approx 2{,}33 \\cdot 10^{-18}\\,\\dfrac{1}{\\text{s}}$."
+              "detail": "Muuntaa $H_0$:n yksikköön $1/\\text{s}$: $$\n\\begin{aligned}\nH_0 &= 72\\,\\text{km/s} : (3{,}086 \\cdot 10^{19}\\,\\text{km}) \\\\\n&\\approx 2{,}33 \\cdot 10^{-18}\\,\\dfrac{1}{\\text{s}}\n\\end{aligned}\n$$."
             },
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$$\n\\begin{aligned}\nt &= \\dfrac{1}{2{,}333 \\cdot 10^{-18}\\,\\text{1/s}} \\\\\n&= 4{,}29 \\cdot 10^{17}\\,\\text{s}\n\\end{aligned}\n$$ Vuosina $4{,}29 \\cdot 10^{17}\\,\\text{s} : (3{,}156 \\cdot 10^{7}\\,\\text{s/a}) \\approx 1{,}36 \\cdot 10^{10}\\,\\text{a}$."
+              "detail": "$$\n\\begin{aligned}\nt &= \\dfrac{1}{2{,}333 \\cdot 10^{-18}\\,\\text{1/s}} \\\\\n&= 4{,}29 \\cdot 10^{17}\\,\\text{s}\n\\end{aligned}\n$$ Vuosina $$\n\\begin{aligned}\nt &= 4{,}29 \\cdot 10^{17}\\,\\text{s} : (3{,}156 \\cdot 10^{7}\\,\\text{s/a}) \\\\\n&\\approx 1{,}36 \\cdot 10^{10}\\,\\text{a}\n\\end{aligned}\n$$."
             },
             {
               "key": "units_precision",

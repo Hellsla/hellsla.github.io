@@ -546,8 +546,18 @@ $$
 - In part d the annual limit $1.0\,\text{mSv}$ is used as the dose rate $1.0\,\mu\text{Sv/h}$, which gives the thickness $31.6\,\text{cm}$, a wrong value outside the graph.
 
 ### Hyväksytään myös
-- In part a two other points of the graph that are far apart, for example $(0\,\text{cm};\ 80\,\mu\text{Sv/h})$ and $(15\,\text{cm};\ 10\,\mu\text{Sv/h})$, give the same result $\mu = \ln 8 / 15\,\text{cm} = 0.139\,\text{1/cm}$.
-- In part b through the half-value layer: $80\,\mu\text{Sv/h} \cdot 0.5^{18/5.0} \approx 6.6\,\mu\text{Sv/h}$.
+- In part a two other points of the graph that are far apart, for example $(0\,\text{cm};\ 80\,\mu\text{Sv/h})$ and $(15\,\text{cm};\ 10\,\mu\text{Sv/h})$, give the same result $$
+\begin{aligned}
+\mu &= \ln 8 / 15\,\text{cm} \\
+&= 0.139\,\text{1/cm}
+\end{aligned}
+$$.
+- In part b through the half-value layer: $$
+\begin{aligned}
+\dot{H} &= 80\,\mu\text{Sv/h} \cdot 0.5^{18/5.0} \\
+&\approx 6.6\,\mu\text{Sv/h}
+\end{aligned}
+$$.
 - In part d the thickness may be read directly from the graph at the point where the dose rate is $3.0\,\mu\text{Sv/h}$, if the value is about $24\,\text{cm}$.
 
 ## fy9-moderni-s9
@@ -615,7 +625,13 @@ $$
 
 ### Yleisiä virheitä
 - In part a the slope is read from one data point instead of the line, or $H_0$ is calculated upside down, $250 : 18\,000 = 0.014$.
-- In part b the distance is calculated as $d = v \cdot H_0 = 8400 \cdot 72 = 6.0 \cdot 10^{5}\,\text{Mpc}$, or the result is given in kilometres.
+- In part b the distance is calculated as $$
+\begin{aligned}
+d &= v \cdot H_0 \\
+&= 8400 \cdot 72 \\
+&= 6.0 \cdot 10^{5}\,\text{Mpc}
+\end{aligned}
+$$, or the result is given in kilometres.
 - In part c $H_0$ is not converted to $1/\text{s}$, which gives $1 / 72 = 0.014$ with no sensible unit, or the megaparsecs and kilometres are not cancelled correctly.
 - In part d it is said that the galaxies recede from us, so we are at the centre, or the galaxies are claimed to move through space like the fragments of an explosion.
 

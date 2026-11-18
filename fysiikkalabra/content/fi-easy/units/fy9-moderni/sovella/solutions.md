@@ -546,8 +546,18 @@ $$
 - d-kohdassa vuosiraja $1{,}0\,\text{mSv}$ käytetään annosnopeutena $1{,}0\,\mu\text{Sv/h}$. Silloin paksuudeksi tulee $31{,}6\,\text{cm}$. Se on väärä arvo kuvaajan ulkopuolella.
 
 ### Hyväksytään myös
-- a-kohdassa kaksi muuta kaukana toisistaan olevaa kuvaajan pistettä antaa saman tuloksen. Esimerkiksi $(0\,\text{cm};\ 80\,\mu\text{Sv/h})$ ja $(15\,\text{cm};\ 10\,\mu\text{Sv/h})$ antavat $\mu = \ln 8 / 15\,\text{cm} = 0{,}139\,\text{1/cm}$.
-- b-kohdassa puoliintumispaksuuden avulla: $80\,\mu\text{Sv/h} \cdot 0{,}5^{18/5{,}0} \approx 6{,}6\,\mu\text{Sv/h}$.
+- a-kohdassa kaksi muuta kaukana toisistaan olevaa kuvaajan pistettä antaa saman tuloksen. Esimerkiksi $(0\,\text{cm};\ 80\,\mu\text{Sv/h})$ ja $(15\,\text{cm};\ 10\,\mu\text{Sv/h})$ antavat $$
+\begin{aligned}
+\mu &= \ln 8 / 15\,\text{cm} \\
+&= 0{,}139\,\text{1/cm}
+\end{aligned}
+$$.
+- b-kohdassa puoliintumispaksuuden avulla: $$
+\begin{aligned}
+\dot{H} &= 80\,\mu\text{Sv/h} \cdot 0{,}5^{18/5{,}0} \\
+&\approx 6{,}6\,\mu\text{Sv/h}
+\end{aligned}
+$$.
 - d-kohdassa paksuus voidaan lukea suoraan kuvaajalta kohdasta, jossa annosnopeus on $3{,}0\,\mu\text{Sv/h}$, jos luku on noin $24\,\text{cm}$.
 
 ## fy9-moderni-s9
@@ -615,7 +625,13 @@ $$
 
 ### Yleisiä virheitä
 - a-kohdassa kulmakerroin luetaan yhdestä mittauspisteestä eikä suoralta. Tai $H_0$ lasketaan väärin päin: $250 : 18\,000 = 0{,}014$.
-- b-kohdassa etäisyys lasketaan kertomalla: $d = v \cdot H_0 = 8400 \cdot 72 = 6{,}0 \cdot 10^{5}\,\text{Mpc}$. Tai tulos annetaan kilometreinä.
+- b-kohdassa etäisyys lasketaan kertomalla: $$
+\begin{aligned}
+d &= v \cdot H_0 \\
+&= 8400 \cdot 72 \\
+&= 6{,}0 \cdot 10^{5}\,\text{Mpc}
+\end{aligned}
+$$. Tai tulos annetaan kilometreinä.
 - c-kohdassa $H_0$:ta ei muunneta yksikköön $1/\text{s}$. Silloin tulokseksi tulee $1 / 72 = 0{,}014$ ilman järkevää yksikköä. Tai megaparsekit ja kilometrit eivät supistu oikein.
 - d-kohdassa sanotaan, että galaksit etääntyvät meistä, joten olemme keskipisteessä. Tai väitetään galaksien liikkuvan avaruuden läpi kuin räjähdyksen sirpaleet.
 

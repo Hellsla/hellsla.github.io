@@ -902,7 +902,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$k = \\dfrac{6{,}2\\,\\text{mT} - 2{,}5\\,\\text{mT}}{2{,}5\\,\\text{A} - 1{,}0\\,\\text{A}} = 2{,}47\\,\\text{mT/A} = 2{,}47 \\cdot 10^{-3}\\,\\text{T/A}$. Sitten $n = \\dfrac{2{,}47 \\cdot 10^{-3}\\,\\text{T/A}}{4\\pi \\cdot 10^{-7}\\,\\text{Vs/(Am)}} \\approx 1{,}96 \\cdot 10^{3}\\,\\text{1/m}$."
+              "detail": "$$\n\\begin{aligned}\nk &= \\dfrac{6{,}2\\,\\text{mT} - 2{,}5\\,\\text{mT}}{2{,}5\\,\\text{A} - 1{,}0\\,\\text{A}} \\\\\n&= 2{,}47\\,\\text{mT/A} \\\\\n&= 2{,}47 \\cdot 10^{-3}\\,\\text{T/A}\n\\end{aligned}\n$$ Sitten $$\n\\begin{aligned}\nn &= \\dfrac{2{,}47 \\cdot 10^{-3}\\,\\text{T/A}}{4\\pi \\cdot 10^{-7}\\,\\text{Vs/(Am)}} \\\\\n&\\approx 1{,}96 \\cdot 10^{3}\\,\\text{1/m}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",

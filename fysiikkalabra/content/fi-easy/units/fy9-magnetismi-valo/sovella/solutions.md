@@ -618,7 +618,8 @@ Kulmien lukemisessa on satunnaista virhettä, ja pisteet ovat suoran molemmin pu
 \end{aligned}
 $$ ja $$
 \begin{aligned}
-\lvert e_3 \rvert &= 120 \cdot \dfrac{3{,}0 \cdot 10^{-3}\,\text{Wb}}{0{,}20\,\text{s}} \\
+\lvert e_3 \rvert &= 120 \cdot \dfrac{\lvert\Delta\Phi_3\rvert}{0{,}20\,\text{s}} \\
+&= 120 \cdot \dfrac{3{,}0 \cdot 10^{-3}\,\text{Wb}}{0{,}20\,\text{s}} \\
 &= 120 \cdot 0{,}015\,\text{V} \\
 &= 1{,}8\,\text{V}
 \end{aligned}
@@ -652,7 +653,7 @@ $$
 Vuo on nolla hetkellä $t = \dfrac{5{,}0\,\text{mWb}}{20\,\text{mWb/s}} = 0{,}25\,\text{s}$. Silloin vuon muutosnopeus on sama $-20\,\text{mWb/s}$ kuin ennen ja jälkeen. Induktiojännite on edelleen $2{,}4\,\text{V}$. Jännite riippuu vuon muutosnopeudesta eikä vuon arvosta. Siksi virran suunta ei muutu, vaikka vuon etumerkki vaihtuu.
 
 ### Yleisiä virheitä
-- a-kohdassa lasketaan vuon muutokseksi $5{,}0\,\text{mWb} - 3{,}0\,\text{mWb} = 2{,}0\,\text{mWb}$ tai käytetään vain loppuarvoa $3{,}0\,\text{mWb}$, vaikka vuo vaihtaa etumerkkiä; oikea muutos on $8{,}0\,\text{mWb}$.
+- a-kohdassa lasketaan vuon muutokseksi $5{,}0\,\text{mWb} - 3{,}0\,\text{mWb}$ tai käytetään vain loppuarvoa $3{,}0\,\text{mWb}$, vaikka vuo vaihtaa etumerkkiä; oikea muutos on $8{,}0\,\text{mWb}$.
 - a-kohdassa $\text{mWb}$ jää muuntamatta yksiköksi $\text{Wb}$, jolloin jännite on tuhannesosa oikeasta.
 - b-kohdassa lasketaan energia koko ajalta yhdellä jännitteellä tai otetaan väli $0{,}40$–$0{,}60\,\text{s}$ mukaan nollasta poikkeavalla jännitteellä.
 - c-kohdassa sanotaan, että virran suunta vaihtuu, kun vuo on nolla, tai että virta on nolla silloin; virta riippuu muutosnopeudesta, ei vuon arvosta.

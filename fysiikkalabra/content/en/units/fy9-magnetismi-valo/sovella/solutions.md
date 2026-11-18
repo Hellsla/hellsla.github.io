@@ -618,7 +618,8 @@ A single data point contains the random error of reading the angles, and the poi
 \end{aligned}
 $$ and $$
 \begin{aligned}
-\lvert e_3 \rvert &= 120 \cdot \dfrac{3.0 \cdot 10^{-3}\,\text{Wb}}{0.20\,\text{s}} \\
+\lvert e_3 \rvert &= 120 \cdot \dfrac{\lvert\Delta\Phi_3\rvert}{0.20\,\text{s}} \\
+&= 120 \cdot \dfrac{3.0 \cdot 10^{-3}\,\text{Wb}}{0.20\,\text{s}} \\
 &= 120 \cdot 0.015\,\text{V} \\
 &= 1.8\,\text{V}
 \end{aligned}
@@ -652,7 +653,7 @@ $$
 The flux is zero at $t = \dfrac{5.0\,\text{mWb}}{20\,\text{mWb/s}} = 0.25\,\text{s}$. At that moment the rate of change of the flux is the same $-20\,\text{mWb/s}$ as before and after, and the induced voltage is still $2.4\,\text{V}$. The voltage depends on the rate of change of the flux, not on its value, so the direction of the current does not change although the sign of the flux does.
 
 ### Yleisiä virheitä
-- In part a the change of flux is calculated as $5.0\,\text{mWb} - 3.0\,\text{mWb} = 2.0\,\text{mWb}$, or only the final value $3.0\,\text{mWb}$ is used, although the flux changes its sign; the correct change is $8.0\,\text{mWb}$.
+- In part a the change of flux is calculated as $5.0\,\text{mWb} - 3.0\,\text{mWb}$, or only the final value $3.0\,\text{mWb}$ is used, although the flux changes its sign; the correct change is $8.0\,\text{mWb}$.
 - In part a $\text{mWb}$ is not converted to $\text{Wb}$, so the voltage is a thousandth of the correct one.
 - In part b the energy is calculated for the whole time with one voltage, or the interval $0.40$–$0.60\,\text{s}$ is included with a nonzero voltage.
 - In part c it is said that the direction of the current changes when the flux is zero, or that the current is zero then; the current depends on the rate of change, not on the value of the flux.

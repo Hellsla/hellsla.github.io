@@ -913,7 +913,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$x = \\dfrac{4{,}5\\,\\text{N}}{30{,}0\\,\\text{N/m}} = 0{,}150\\,\\text{m} = 15{,}0\\,\\text{cm}$"
+              "detail": "$$\\n\\begin{aligned}\\nx &= \\dfrac{4{,}5\\,\\text{N}}{30{,}0\\,\\text{N/m}} \\\\\\n&= 0{,}150\\,\\text{m} \\\\\\n&= 15{,}0\\,\\text{cm}\\n\\end{aligned}\\n$$"
             },
             {
               "key": "uncertainty",

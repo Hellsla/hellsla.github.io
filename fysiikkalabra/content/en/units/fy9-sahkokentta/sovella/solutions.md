@@ -526,7 +526,7 @@ E &= \dfrac{250\,\text{V} - 50\,\text{V}}{0.050\,\text{m} - 0.010\,\text{m}} \\
 \end{aligned}
 $$
 **Answer:** $E = 5.0\,\text{kV/m}$. The field points from the positive plate to the negative plate, because the potential decreases in that direction: against the $x$ axis. The result has two significant figures, like the values read from the graph.
-**Reasonableness:** Over the whole gap $250\,\text{V} : 0.050\,\text{m} = 5.0\,\text{kV/m}$, the same result, as it must be in a uniform field. The field is far smaller than the breakdown field of air, about $3\,\text{MV/m}$.
+**Reasonableness:** Over the whole gap $250\,\text{V} : 0.050\,\text{m}$ = $5.0\,\text{kV/m}$, the same result, as it must be in a uniform field. The field is far smaller than the breakdown field of air, about $3\,\text{MV/m}$.
 
 ### b)
 **Given:** $E = 5.0\,\text{kV/m}$ from part a; the charge of the alpha particle is $q = +2e = 2 \cdot 1.602 \cdot 10^{-19}\,\text{C}$ and its mass is $m = 6.645 \cdot 10^{-27}\,\text{kg}$; only the electric force acts
@@ -546,7 +546,7 @@ a &= \dfrac{1.602 \cdot 10^{-15}\,\text{N}}{6.645 \cdot 10^{-27}\,\text{kg}} \\
 \end{aligned}
 $$
 **Answer:** $a \approx 2.4 \cdot 10^{11}\,\text{m/s}^2$, in the direction of the field, that is towards the negative plate ($x$ decreases). Two significant figures, like the field strength.
-**Reasonableness:** The weight of the particle $mg = 6.645 \cdot 10^{-27}\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 6.5 \cdot 10^{-26}\,\text{N}$ is about $2 \cdot 10^{10}$ times smaller than the electric force, so gravity can be ignored. The large acceleration is due to the small mass of the particle.
+**Reasonableness:** The weight of the particle $mg \approx 6.5 \cdot 10^{-26}\,\text{N}$ is about $2 \cdot 10^{10}$ times smaller than the electric force, so gravity can be ignored. The large acceleration is due to the small mass of the particle.
 
 ### c)
 **Given:** the alpha particle starts from rest at $x = 4.0\,\text{cm}$; $q = 2e$ and $m$ as in part b; only the electric force does work
@@ -557,8 +557,11 @@ $$
 **Conversions:** Not needed: the potentials are in volts.
 **Substitution:** $$
 \begin{aligned}
-\Delta V &= 200\,\text{V} - 100\,\text{V} = 100\,\text{V} \\
-E_\text{k} &= 2e\,\Delta V = 2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 100\,\text{V} \\
+\Delta V &= 200\,\text{V} - 100\,\text{V} \\
+&= 100\,\text{V} \\
+E_\text{k} &= 2e\,\Delta V \\
+&= 2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \\
+&\quad \cdot 100\,\text{V} \\
 &= 3.204 \cdot 10^{-17}\,\text{J}
 \end{aligned}
 $$ and $$
@@ -642,7 +645,7 @@ $$ and $$
 \end{aligned}
 $$
 **Answer:** $P_\text{R} \approx 66\,\text{mW}$, and about $63\,\%$ of the power of the source becomes internal energy in the resistor. Two significant figures, like the given values.
-**Reasonableness:** The power of the LED is $2.2\,\text{V} \cdot 0.01727\,\text{A} \approx 38\,\text{mW}$ and the power of the source $6.0\,\text{V} \cdot 0.01727\,\text{A} \approx 104\,\text{mW}$. The sum $66\,\text{mW} + 38\,\text{mW} = 104\,\text{mW}$ matches, and the LED's share is $37\,\%$. An ordinary $0.25\,\text{W}$ resistor easily withstands a power of $66\,\text{mW}$.
+**Reasonableness:** The power of the LED is $U_\text{D} I \approx 38\,\text{mW}$ and the power of the source $UI \approx 104\,\text{mW}$. The sum $66\,\text{mW}$ + $38\,\text{mW}$ = $104\,\text{mW}$ matches, and the LED's share is $37\,\%$. An ordinary $0.25\,\text{W}$ resistor easily withstands a power of $66\,\text{mW}$.
 
 ### c)
 **Given:** $U = 6.0\,\text{V}$, $U_\text{D} \approx 2.2\,\text{V}$ from the graph and the largest permitted current $I_\text{max} = 30\,\text{mA}$

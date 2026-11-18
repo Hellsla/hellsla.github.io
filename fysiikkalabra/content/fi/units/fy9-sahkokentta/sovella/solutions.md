@@ -526,7 +526,7 @@ E &= \dfrac{250\,\text{V} - 50\,\text{V}}{0{,}050\,\text{m} - 0{,}010\,\text{m}}
 \end{aligned}
 $$
 **Vastaus:** $E = 5{,}0\,\text{kV/m}$. Kenttä osoittaa positiivisesta levystä negatiiviseen, koska potentiaali pienenee siihen suuntaan: $x$-akselia vastaan. Tuloksessa on kaksi merkitsevää numeroa kuten luetuissa arvoissa.
-**Järkevyys:** Koko levyvälillä $250\,\text{V} : 0{,}050\,\text{m} = 5{,}0\,\text{kV/m}$, sama tulos, kuten homogeenisessa kentässä pitääkin. Kenttä on selvästi pienempi kuin ilman läpilyöntikenttä, noin $3\,\text{MV/m}$.
+**Järkevyys:** Koko levyvälillä $250\,\text{V} : 0{,}050\,\text{m}$ = $5{,}0\,\text{kV/m}$, sama tulos, kuten homogeenisessa kentässä pitääkin. Kenttä on selvästi pienempi kuin ilman läpilyöntikenttä, noin $3\,\text{MV/m}$.
 
 ### b)
 **Annettu:** $E = 5{,}0\,\text{kV/m}$ a-kohdasta; alfahiukkasen varaus $q = +2e = 2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C}$ ja massa $m = 6{,}645 \cdot 10^{-27}\,\text{kg}$; vain sähköinen voima
@@ -546,7 +546,7 @@ a &= \dfrac{1{,}602 \cdot 10^{-15}\,\text{N}}{6{,}645 \cdot 10^{-27}\,\text{kg}}
 \end{aligned}
 $$
 **Vastaus:** $a \approx 2{,}4 \cdot 10^{11}\,\text{m/s}^2$, kentän suuntaan eli kohti negatiivista levyä ($x$ pienenee). Kaksi merkitsevää numeroa kuten kentän voimakkuudessa.
-**Järkevyys:** Hiukkasen paino $mg = 6{,}645 \cdot 10^{-27}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 6{,}5 \cdot 10^{-26}\,\text{N}$ on noin $2 \cdot 10^{10}$ kertaa pienempi kuin sähköinen voima, joten painovoiman voi jättää huomiotta. Suuri kiihtyvyys johtuu hiukkasen pienestä massasta.
+**Järkevyys:** Hiukkasen paino $mg \approx 6{,}5 \cdot 10^{-26}\,\text{N}$ on noin $2 \cdot 10^{10}$ kertaa pienempi kuin sähköinen voima, joten painovoiman voi jättää huomiotta. Suuri kiihtyvyys johtuu hiukkasen pienestä massasta.
 
 ### c)
 **Annettu:** alfahiukkanen lähtee levosta kohdasta $x = 4{,}0\,\text{cm}$; $q = 2e$ ja $m$ kuten b-kohdassa; vain sähköinen voima tekee työtä
@@ -557,8 +557,11 @@ $$
 **Muunnokset:** Ei tarvita: potentiaalit ovat voltteina.
 **Sijoitus:** $$
 \begin{aligned}
-\Delta V &= 200\,\text{V} - 100\,\text{V} = 100\,\text{V} \\
-E_\text{k} &= 2e\,\Delta V = 2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 100\,\text{V} \\
+\Delta V &= 200\,\text{V} - 100\,\text{V} \\
+&= 100\,\text{V} \\
+E_\text{k} &= 2e\,\Delta V \\
+&= 2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \\
+&\quad \cdot 100\,\text{V} \\
 &= 3{,}204 \cdot 10^{-17}\,\text{J}
 \end{aligned}
 $$ ja $$
@@ -642,7 +645,7 @@ $$ ja $$
 \end{aligned}
 $$
 **Vastaus:** $P_\text{R} \approx 66\,\text{mW}$ ja noin $63\,\%$ lähteen tehosta muuttuu vastuksessa sisäenergiaksi. Kaksi merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** LEDin teho on $2{,}2\,\text{V} \cdot 0{,}01727\,\text{A} \approx 38\,\text{mW}$ ja lähteen teho $6{,}0\,\text{V} \cdot 0{,}01727\,\text{A} \approx 104\,\text{mW}$. Summa $66\,\text{mW} + 38\,\text{mW} = 104\,\text{mW}$ täsmää, ja LEDin osuus on $37\,\%$. Tavallinen $0{,}25\,\text{W}$:n vastus kestää $66\,\text{mW}$:n tehon hyvin.
+**Järkevyys:** LEDin teho on $U_\text{D} I \approx 38\,\text{mW}$ ja lähteen teho $UI \approx 104\,\text{mW}$. Summa $66\,\text{mW}$ + $38\,\text{mW}$ = $104\,\text{mW}$ täsmää, ja LEDin osuus on $37\,\%$. Tavallinen $0{,}25\,\text{W}$:n vastus kestää $66\,\text{mW}$:n tehon hyvin.
 
 ### c)
 **Annettu:** $U = 6{,}0\,\text{V}$, $U_\text{D} \approx 2{,}2\,\text{V}$ kuvaajasta ja suurin sallittu virta $I_\text{max} = 30\,\text{mA}$
