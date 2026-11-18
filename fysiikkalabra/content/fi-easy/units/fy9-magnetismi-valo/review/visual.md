@@ -1,16 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 39e4f9f03c069ab1
-Round 2: delta against the version round 1 reviewed (whitespace-only fixes in s7).
+VERDICT: FAIL
+CONTENT-HASH: 77f6edd72ebe61ef
+SCOPE: delta: new tasks s8, s9 and intro; older tasks untouched
 
 ## Blocking
-- (none)
+- [Major] s9 b) mallivastaus, Sijoitus (fi-easy exercises-390-78) — rivi `= 0,72 W · 0,40 s + 0,405 W · 0,20 s` leikkautuu oikeasta reunasta 390 px:ssä (viimeinen `s` katkeaa; 360 px:ssä pahemmin) — selkeän suomen lukija ei voi lukea leikkautunutta kaavaa — siirrä `+ 0,405 W · 0,20 s` omalle tasatulle rivilleen tai laske W₁ ja W₃ erikseen ennen yhteenlaskua.
 
 ## Polish
-- C. s7 a) **Vastaus**: the interval is written "$2{,}9976 \cdot 10^8\,\text{m/s}$ … $2{,}9980 \cdot 10^8\,\text{m/s}$"; three dots read as an omission. Clearer: "välin $2{,}9976 \cdot 10^8\,\text{m/s}$:sta $2{,}9980 \cdot 10^8\,\text{m/s}$:iin". (Carried from round 1; round-1 Polish B is resolved.)
-- D. s7 e) **Mallivastaus**, second paragraph (about 75 words, 22 lines at 390 px): readable; a further break before "Magneettinen voima on kohtisuorassa liikesuuntaa vastaan, joten se ei tee työtä." would separate bending from energy. Optional.
+- [Minor] s9 b) — välitulos 0,405 W kolmella numerolla, Järkevyys sanoo 0,41 W; yhtenäistä.
+- [Minor] s9 b) Kysytty/Annettu — "0–/0,80 s" ja "0,40–/0,60 s" katkeavat viivan kohdalta (kuvassa 390-77); käytä erottamatonta väliä.
+- [Minor] s9 b) Järkevyys — yksikköketjun toinen `= J` jää irralliseksi riviksi.
 
 ## Checked
-- Hash at start and end: 39e4f9f03c069ab1. Captures re-made (177). `git diff -w` against c502cb9e26: only the paragraph breaks in sovella/solutions.md s7 e); no word changed.
-- Opened at full size: stage-exercises-390-60, -61, -62, -63; stage-exercises-1280-44.
-- s7 e) Mallivastaus: four separate paragraphs with normal paragraph spacing (aineisto / voima ja rata, ei työtä / vahva kenttä ja suprajohtavuus / säde ei laskettavissa klassisesti), at 390 and 1280 px; none exceeds a phone screen.
-- Nothing clipped at 390 px ($P = RI^2$, $RI^2 = 0$, $r = \tfrac{mv}{qB}$ inline intact); Yleisiä virheitä, Hyväksytään myös and the rubric with its aligned calculation rows follow unchanged.
+- fi-easy exercises-390-77, -78 (s9 a:n loppu, b koko ratkaisu); s8 ja s9 tehtävätekstit paketista: lauseet lyhyitä ja yksiasiaisia (esim. "Valo tulee ilmasta akryylilevyyn."), samat luvut, yksiköt ja symbolit kuin suomessa, kuvien nimet vastaavat tekstiä, unit-kentät kieliriippumattomia, kielen taso sopii S2-lukijalle.
+- s8-kuvan ja johdannon ulkoasu suomenkielisistä kuvista (jaettu rakenne); 1280 px ei avattu.
+
+## Scores
+illustrations 4 · typography 3 · Finnish 4 · accessibility 4
