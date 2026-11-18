@@ -109,10 +109,6 @@ FY8 tehty (0f-PR claude/fy8-0f: fy8-1, 2, 4–16; `docs/audits/2026-11-18-8j-FY8
 Jäljellä FY1:n fy1-1 ja fy1-8 (kertaus paljastaisi Ennusta-vastauksen; kysymys opettajalle, FY1-audit) ja fy2-1. Sääntö: `herata`-vaiheen retrieval-`choice` kysyy pohjatietoa saman ilmiön kautta. Lopuksi sivupohjan muutos:
 Pohdinnan järjestys ilmiö → kertaustehtävä → pohdintakysymys (`inquiry.py`/js; kirjataan `docs/inquiry.md`:hen).
 
-## 8k. Opettajan hyväksymä tekstimuutos ohittaa katselmoinnin (opettaja 2026-11-13)
-Uusi kategoria `teacher-text` kuten `teacher-figure`: `reviews.py approve-text <id> [--lang]` kirjaa hyväksytyn diffin (esim. `docs/teacher-text.tsv`),
-`scope` antaa none/carry, `verify` johtaa uudelleen. Vain opettajan nimenomaisesta hyväksynnästä. Jaettu (`scripts/reviews.py`, testit): yksin.
-
 ## 8l-b. "Esimerkkiaineisto" pois otsikoista (opettaja 2026-11-16)
 `caption-label` tunnistaa kaikki muodot (#658); poistettu FY1, FY2, FY4, FY6, FY7, FY8 (fy8-2, fi, fi-easy, en; 0f-PR claude/fy8-0f). FY5 tehty (0f-PR #671). Jäljellä muut kurssit:
 otsikot `reviews.caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]`; tehdään kurssin muiden töiden mukana (0f).
