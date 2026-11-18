@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 36c15f8b62d12e9c
+CONTENT-HASH: 4cff2c272ce8d199 at start; 401f1bd1abe3a5d4 at end (no lesson file differs from HEAD, lesson.md line 417 unchanged; the render was re-run after the change with the same result)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] Tiivistelmä, Δm formula at 390 px — the closing "." sits inside the formula box flush against its right edge, so it reads as a dot attached to $m_\text{atomi}$ — leave it, or move the period out of the display block if a later edit touches this.
 
 ## Checked
-- Delta round 1: Kertaa-prompt of the alfa-decay task reworded (inquiry.json); lesson.md only re-cut into paragraphs, figures teacher-approved.
-- Opened open-ennusta-1280, stage-ennusta-390-2, theory-1280-1 (paragraph cuts, formula blocks, table, figure start intact). Inline maths of the new prompt is LaTeX; the sentences are fluent and the added helium-4 line reads naturally before the question.
+- Delta round 4 (only the Tiivistelmä Δm formula moved to its own display line).
+- The shipped captures show Tiivistelmä closed, so I opened the box myself in a 390 px render of the page (own capture, scratchpad vis/v10.png): the formula is complete on its own line, not clipped (scrollWidth = clientWidth, page width 390), the bullets before and after are intact.
+- Also opened stage-selita-390-5, stage-selita-390-6 and theory-1280-4: layout of the surrounding theory survived.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4
