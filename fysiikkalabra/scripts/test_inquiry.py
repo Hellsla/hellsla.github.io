@@ -561,7 +561,7 @@ check("the worked example's box says 'Esimerkki 1: <name>', with no heading abov
 check("the other boxes of Esimerkit are numbered examples too", re.search(r'id="sovella".*?Esimerkki 2: ', page_html, re.S) is not None)
 check("Itsearvio numbers its tasks from the exit ticket on: 1. Pohdintatehtävä, 2. … (teacher 2026-11-06)", re.search(r'id="tarkista".*?<h3>1\. Pohdintatehtävä</h3>.*?<h3>2\. (?:Käsite|Lasku|Selitys)tehtävä', page_html, re.S) is not None)
 check("Itsearvio names its tasks by kind (Käsitetehtävä, Laskutehtävä, Selitystehtävä)", re.search(r'id="tarkista".*?(?:Käsitetehtävä|Laskutehtävä|Selitystehtävä)', page_html, re.S) is not None)
-check("unplaced sections land in Teoriatiivistelmä", page_html.index('class="theory-h">Tiivistelmä') < page_html.index('id="sovella"'))
+check("unplaced sections land in Teoriatiivistelmä", page_html.index('<details class="theory-box"><summary>Tiivistelmä</summary>') < page_html.index('id="sovella"'))   # a closed box since work queue 8
 tk = page_html[page_html.index('<section class="stage" id="tarkista"'):]
 check("the exit ticket opens Tarkista osaamisesi, with no nav link of its own", tk.index('id="exit"') < tk.index('</section>') and tk.index('id="exit"') < tk.index('class="activity act-choice')
       and '<a href="#exit"' not in page_html)
