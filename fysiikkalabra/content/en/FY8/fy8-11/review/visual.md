@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f042f38356a8f6fc
+CONTENT-HASH: b0b181d973d0fac2
 
 ## Blocking
 - none
@@ -8,10 +8,9 @@ CONTENT-HASH: f042f38356a8f6fc
 - none
 
 ## Checked
-- Delta (en): coal heating value 24 → 29 MJ/kg and the numbers that follow (Why question 3.4 → 2.8 tonnes; hook 14 000 → 12 000 tonnes; the closing paragraph of the reaction-energy section with the MAFY range).
-- Opened: top-390 (Why line with $2.8$, hero intact), intro-1280 (Why on two lines, illustration beside the goals card), stage-herata-390 (hook: $12\,000$ with a thin space, decimal point convention kept, no overflow), stage-selita-390-5 and theory-1280-3 (edited paragraph: $29\,\tfrac{\text{MJ}}{\text{kg}}$ and $25$–$32\,\tfrac{\text{MJ}}{\text{kg}}$ render with upright stacked units, the parenthesis closes after the unit, line spacing holds around the inline fractions; the balance figure above and the next heading keep their spacing).
-- English: "(the MAFY tables give 25–32 MJ/kg)" reads naturally and the sentence stays one clear statement.
-- lesson-answers.py is not rendered; not judged.
+- Delta (en): the optional Pohdinta card "Review: mass defect" now names uranium-235 with $92$ protons and $143$ neutrons (prompt and feedback $235$).
+- Opened stage-herata-390 (card closed, title unchanged, layout intact), stage-tarkista-390-1 and open-tarkista-1280-1 (surrounding page, nothing shifted).
+- The opened card has no capture (the screenshot set keeps it closed), so the two new inline numbers were judged from source: plain inline maths, no unit, no overflow risk; English reads naturally.
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

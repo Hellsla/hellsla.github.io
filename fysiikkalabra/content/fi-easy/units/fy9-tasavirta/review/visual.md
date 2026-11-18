@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 9298f8fbb6e98905
-SCOPE: delta (round 2): new Sovella tasks s7 (lamp curve, fy6-3/lamp-curve) and s8 (three resistors, fy6-4/siirto-mixed), their solutions, and the changed intro; s1-s6 not re-judged. Cut like fi (same text structure); check_layout 360 px OK; judged by fidelity to fi captures.
+CONTENT-HASH: 683e4a80b5d04cff
+SCOPE: delta: reworded VASTAUS lines of s8 b and c (sovella/solutions.md); s8 a answer box glanced; rest unchanged since the previous review.
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] s8 d rubric criterion (calculation): the aligned row starts "U = 12 V" without the subscript (should be U_1, the voltage over the 60 ohm resistor) and carries a hand-made break (\quad - 0,15 A * 20 ohm); not blocking, the model answer names U_1.
-- [Minor] figures fy6-3/lamp-curve and fy6-4/siirto-mixed at 360 px: tick numbers and resistor labels about 10 px; legible, reading 0,21 A off the lamp graph is tight. Shared figures, no change asked here.
+(none)
 
 ## Checked
-- Round 1: s7 text now says battery internal resistance and wires are neglected (verified in the task text and in the fy9 page capture); s8 d solution now has a Kaava line (verified in solutions and capture). Both fixed.
-- Captures (fi, 390 px): s7 and s8 task cards with figures, opened model answers (aligned calc rows, Jarkevyys boxes, Yleisia virheita, Hyvaksytaan myos), rubric rows; intro text. Contact sheets 7 and 8, parts 52 and 70 at full size.
-- check_layout 360 px: OK for fi, en and fi-easy. Units LaTeX with thin space, decimal comma (fi, fi-easy) and point (en), no overflow or clipping.
+- Rebuilt preview/fi-easy/fy9-tasavirta.html; 390 px element captures of the opened s8 answer boxes a, b and c (solutions open).
+- s8 b: the box now reads "Virrat ovat I_60 = 0,10 A (60 Ω:n vastus) ja I_30 = 0,20 A (30 Ω:n vastus). Kaksi merkitsevää numeroa kuten a-kohdan virta." Both quantities and the sentence are intact.
+- s8 c: the box now reads "Tehot ovat P_20 = 1,8 W (20 Ω:n vastus) ja P = 3,6 W (koko kytkentä), ..." and is complete.
+- s8 a reads correctly: "Paristosta kulkee virta I = 0,30 A, ...". s8 d has no separate VASTAUS box in the capture list; not re-opened.
+- check_layout.py fy9-tasavirta --width 360: OK for fi-easy (also fi and en).
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

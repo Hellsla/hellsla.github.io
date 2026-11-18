@@ -22,26 +22,26 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: energiatasot ja fotoni",
+      "title": "Kertaa: energiatasot ja ionisaatio",
       "optional": true,
-      "prompt": "Vetyatomin elektroni siirtyy tasolta $E_3 = -1{,}51\\,\\text{eV}$ tasolle $E_2 = -3{,}40\\,\\text{eV}$. Kuinka suuri on syntyvän fotonin energia?",
+      "prompt": "Savuilmaisimen kammiossa alfahiukkanen ionisoi ilman atomeja eli irrottaa niistä elektroneja. Pelkistetyssä esimerkissä atomi on vety. Sen perustilan energia on $E_1 = -13{,}6\\,\\text{eV}$. Kuinka paljon energiaa tarvitaan elektronin irrottamiseen atomista?",
       "choices": [
         {
-          "text": "$1{,}89\\,\\text{eV}$, koska fotonin energia on tasojen erotus.",
+          "text": "$13{,}6\\,\\text{eV}$, koska elektroni nostetaan tasolta $E_1$ energiaan $0\\,\\text{eV}$.",
           "correct": true,
-          "feedback": "Oikein (luku *Vetyatomin energiatasot ja Bohrin malli*): $$\n\\begin{aligned}\nhf &= E_3 - E_2 \\\\\n&= -1{,}51\\,\\text{eV} + 3{,}40\\,\\text{eV} \\\\\n&= 1{,}89\\,\\text{eV}\n\\end{aligned}\n$$. Tämä on vedyn punainen viiva. Tässä luvussa sama periaate siirretään atomiytimeen."
+          "feedback": "Oikein (luku *Vetyatomin energiatasot ja Bohrin malli*): $$\n\\begin{aligned}\n\\Delta E &= 0 - E_1 \\\\\n&= 0 - (-13{,}6\\,\\text{eV}) \\\\\n&= 13{,}6\\,\\text{eV}\n\\end{aligned}\n$$. Tässä luvussa sama periaate, energiatasojen erotus, siirretään atomiytimeen."
         },
         {
-          "text": "$1{,}51\\,\\text{eV}$, koska fotoni saa lähtötason energian.",
-          "feedback": "Fotoni ei kanna yhden tason energiaa vaan tasojen erotuksen: $E_3 - E_2 = 1{,}89\\,\\text{eV}$."
+          "text": "$10{,}2\\,\\text{eV}$, koska elektroni nostetaan tasolle $n = 2$.",
+          "feedback": "Taso $n = 2$ on yhä sidottu tila. Siihen nostamiseen riittää energia $10{,}2\\,\\text{eV}$. Ionisaatiossa elektroni irtoaa kokonaan, joten energia on $0 - (-13{,}6\\,\\text{eV}) = 13{,}6\\,\\text{eV}$."
         },
         {
-          "text": "$4{,}91\\,\\text{eV}$, koska energiat lasketaan yhteen.",
-          "feedback": "Energia säilyy. Atomin energia pienenee arvosta $-1{,}51\\,\\text{eV}$ arvoon $-3{,}40\\,\\text{eV}$. Fotoni vie siis erotuksen $1{,}89\\,\\text{eV}$, ei summaa."
+          "text": "$27{,}2\\,\\text{eV}$, koska elektronin ja ytimen energiat lasketaan yhteen.",
+          "feedback": "Perustilan energia $-13{,}6\\,\\text{eV}$ on jo elektronin ja ytimen yhteinen energia. Irrottamiseen tarvitaan vain erotus $0 - (-13{,}6\\,\\text{eV}) = 13{,}6\\,\\text{eV}$, ei summaa."
         },
         {
-          "text": "$3{,}40\\,\\text{eV}$, koska fotoni saa lopputason energian.",
-          "feedback": "Lopputason energia ei ole fotonin energia. Fotonin energia on tasojen erotus $E_3 - E_2 = 1{,}89\\,\\text{eV}$."
+          "text": "$0\\,\\text{eV}$, koska vapaan elektronin energia on nolla.",
+          "feedback": "Vapaan elektronin energia on $0\\,\\text{eV}$. Sidotun elektronin energia on $-13{,}6\\,\\text{eV}$. Irrottamiseen tarvitaan näiden erotus $13{,}6\\,\\text{eV}$."
         }
       ]
     },

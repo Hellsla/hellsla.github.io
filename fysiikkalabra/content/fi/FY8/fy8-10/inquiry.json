@@ -24,7 +24,7 @@
       "type": "choice",
       "optional": true,
       "title": "Kertaa: alfahajoaminen",
-      "prompt": "Polonium-210 ${}^{210}_{84}\\text{Po}$ hajoaa alfahajoamisella. Mikä tytärydin syntyy?",
+      "prompt": "Helium-4-ydin on sama hiukkanen kuin alfahiukkanen. Polonium-210 ${}^{210}_{84}\\text{Po}$ lähettää hajotessaan yhden helium-4-ytimen. Mikä tytärydin syntyy?",
       "choices": [
         {
           "text": "${}^{206}_{82}\\text{Pb}$ eli lyijy-206",

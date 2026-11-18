@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 2e8b28968f4ffbc5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: e93d49c1575801b6
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- Retrieval: $1{,}2\cdot10^{15}$ Hz has two significant figures while $254\,\text{nm}$ has three; $1{,}18\cdot10^{15}\,\text{Hz}$ (as in lesson-answers.py) would match the data.
 
 ## Checked
-- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).
+batch delta review: UV-C 254 nm retrieval recomputed (c/λ = 1,18e15 Hz, red 4,61e14 Hz), all three options and feedback, lesson-answers.py rows, link to the lesson's UV-C lamp.

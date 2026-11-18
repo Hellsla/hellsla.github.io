@@ -163,7 +163,9 @@ $$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}7647 \cdo
 ## fy8-7-L1-06
 **Kysytty:** mikä erottaa stimuloidun emission spontaanista emissiosta
 **Periaate:** Molemmissa viritetty atomi putoaa ylemmältä tasolta $E_2$ alemmalle tasolle $E_1$. Se lähettää fotonin, jonka energia on $E_2 - E_1$. Ero on siinä, mikä emission laukaisee ja millainen syntyvä fotoni on.
-**Mallivastaus:** Spontaanissa emissiossa atomi lähettää fotonin itsestään. Fotonin suunnalla tai vaiheella ei ole yhteyttä muihin fotoneihin, joten suunta on satunnainen. Stimuloidussa emissiossa atomiin osuu fotoni, jonka energia on $E_2 - E_1$. Se saa atomin lähettämään uuden fotonin. Uusi fotoni lähtee samaan suuntaan ja samassa vaiheessa kuin saapuva fotoni. Saapuva fotoni jatkaa matkaansa. Siksi stimuloitu emissio vahvistaa valoa ja tekee siitä suuntautunutta ja koherenttia. Koherentti valo tarkoittaa, että aallot ovat samassa vaiheessa. Atomi ei absorboi fotonia stimuloidussa emissiossa. Sen energia ei nouse kummassakaan tapahtumassa. Syntyvän fotonin energia on kummassakin sama $E_2 - E_1$.
+**Mallivastaus:** Spontaanissa emissiossa atomi lähettää fotonin itsestään. Fotonin suunnalla tai vaiheella ei ole yhteyttä muihin fotoneihin, joten suunta on satunnainen. Stimuloidussa emissiossa atomiin osuu fotoni, jonka energia on $E_2 - E_1$. Se saa atomin lähettämään uuden fotonin. Uusi fotoni lähtee samaan suuntaan ja samassa vaiheessa kuin saapuva fotoni. Saapuva fotoni jatkaa matkaansa.
+
+Siksi stimuloitu emissio vahvistaa valoa ja tekee siitä suuntautunutta ja koherenttia. Koherentti valo tarkoittaa, että aallot ovat samassa vaiheessa. Atomi ei absorboi fotonia stimuloidussa emissiossa. Sen energia ei nouse kummassakaan tapahtumassa. Syntyvän fotonin energia on kummassakin sama $E_2 - E_1$.
 
 ## fy8-7-L1-07
 **Annettu:** laserin teho $P = 5{,}0\,\text{mW}$, aallonpituus $\lambda = 532\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
@@ -184,7 +186,9 @@ $$ ja $P\lambda = 5{,}0 \cdot 10^{-3}\,\text{W} \cdot 532 \cdot 10^{-9}\,\text{m
 ## fy8-7-L1-08
 **Kysytty:** mitä populaatioinversio tarkoittaa
 **Periaate:** Saapuva fotoni, jonka energia on $E_2 - E_1$, voi tehdä kahta asiaa. Se voi absorboitua alemmalla tasolla olevaan atomiin. Tai se voi saada ylemmällä tasolla olevan atomin lähettämään uuden fotonin. Kumpi tapahtuu useammin, riippuu siitä, kummalla tasolla on enemmän atomeja.
-**Mallivastaus:** Populaatioinversio on tila, jossa ylemmällä lasertasolla on enemmän atomeja kuin alemmalla, $N_2 > N_1$. Silloin stimuloituja emissioita tapahtuu enemmän kuin absorptioita. Läpi kulkeva valo vahvistuu. Tavallisesti tilanne on päinvastainen: lähes kaikki atomit ovat alemmalla tasolla. Silloin absorptio voittaa ja valo heikkenee. Inversio ei tarkoita sitä, että fotonien suunnat olisivat samat tai että taso olisi toisin päin. Se tarkoittaa sitä, miten atomit jakautuvat tasoille. Inversio saadaan pumppaamalla atomeja ylemmälle tasolle.
+**Mallivastaus:** Populaatioinversio on tila, jossa ylemmällä lasertasolla on enemmän atomeja kuin alemmalla, $N_2 > N_1$. Silloin stimuloituja emissioita tapahtuu enemmän kuin absorptioita. Läpi kulkeva valo vahvistuu. Tavallisesti tilanne on päinvastainen: lähes kaikki atomit ovat alemmalla tasolla. Silloin absorptio voittaa ja valo heikkenee.
+
+Inversio ei tarkoita sitä, että fotonien suunnat olisivat samat tai että taso olisi toisin päin. Se tarkoittaa sitä, miten atomit jakautuvat tasoille. Inversio saadaan pumppaamalla atomeja ylemmälle tasolle.
 
 ## fy8-7-L1-09
 **Kysytty:** mitkä viidestä väitteestä laserista ja kvanttipisteistä A ja B ovat tosia.
@@ -234,8 +238,14 @@ hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 &\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
 &= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
-$$. Pisteen $2{,}0\,\text{nm}$ fotonin energia on $\dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{486 \cdot 10^{-9}\,\text{m}} = 4{,}0875 \cdot 10^{-19}\,\text{J} = 2{,}551\,\text{eV}$. Samalla tavalla pisteille $3{,}0$; $4{,}0$; $5{,}0$ ja $6{,}0\,\text{nm}$ saadaan $2{,}344\,\text{eV}$, $2{,}164\,\text{eV}$, $2{,}063\,\text{eV}$ ja $2{,}010\,\text{eV}$. b) Energia-aukko pienenee, kun piste kasvaa. Mitä pienempi piste, sitä suurempi energia-aukko. Muutos hidastuu koon kasvaessa. Välillä $2{,}0 \to 3{,}0\,\text{nm}$ energia-aukko pienenee $0{,}207\,\text{eV}$. Välillä $5{,}0 \to 6{,}0\,\text{nm}$ se pienenee vain $0{,}053\,\text{eV}$. Energia-aukko ei siis ole suoraan verrannollinen pisteen kokoon, eikä riippuvuus ole lineaarinen. c) $\Delta E = 2{,}5514\,\text{eV} - 2{,}0097\,\text{eV} = 0{,}5417\,\text{eV}$
+$$. Pisteen $2{,}0\,\text{nm}$ fotonin energia on $\dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{486 \cdot 10^{-9}\,\text{m}} = 4{,}0875 \cdot 10^{-19}\,\text{J} = 2{,}551\,\text{eV}$. Samalla tavalla pisteille $3{,}0$; $4{,}0$; $5{,}0$ ja $6{,}0\,\text{nm}$ saadaan $2{,}344\,\text{eV}$, $2{,}164\,\text{eV}$, $2{,}063\,\text{eV}$ ja $2{,}010\,\text{eV}$.
+
+b) Energia-aukko pienenee, kun piste kasvaa. Mitä pienempi piste, sitä suurempi energia-aukko. Muutos hidastuu koon kasvaessa. Välillä $2{,}0 \to 3{,}0\,\text{nm}$ energia-aukko pienenee $0{,}207\,\text{eV}$. Välillä $5{,}0 \to 6{,}0\,\text{nm}$ se pienenee vain $0{,}053\,\text{eV}$. Energia-aukko ei siis ole suoraan verrannollinen pisteen kokoon, eikä riippuvuus ole lineaarinen.
+
+c) $\Delta E = 2{,}5514\,\text{eV} - 2{,}0097\,\text{eV} = 0{,}5417\,\text{eV}$
+
 **Vastaus:** $0{,}54\,\text{eV}$. Aallonpituudet on annettu kolmella merkitsevällä numerolla. Erotus ilmoitetaan sadasosien tarkkuudella.
+
 **Järkevyys:** Pienin piste lähettää lyhyintä aallonpituutta, $486\,\text{nm}$. Suurin piste lähettää pisintä, $617\,\text{nm}$. Näin kvanttipisteillä kuuluu olla. Erotus $0{,}54\,\text{eV}$ on noin $27\,\%$ suurimman pisteen energia-aukosta $2{,}01\,\text{eV}$. Pienimmän pisteen aallonpituus on $\tfrac{486}{617} = 79\,\%$ suurimman aallonpituudesta. Nämä sopivat yhteen.
 
 ## fy8-7-L2-06
@@ -245,14 +255,22 @@ $$. Pisteen $2{,}0\,\text{nm}$ fotonin energia on $\dfrac{1{,}9865 \cdot 10^{-25
 **Kuvaajan lukeminen:** Taulukosta: diodien aallonpituudet kasvavat A:sta D:hen. Tehot pienenevät A:sta D:hen.
 **Kaava:** $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$
 **Muunnokset:** $P = 10\,\text{mW} = 10 \cdot 10^{-3}\,\text{W}$ ja niin edelleen. $\lambda = 405\,\text{nm} = 405 \cdot 10^{-9}\,\text{m}$ ja niin edelleen.
-**Sijoitus:** a) $hc = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Diodi A: $\tfrac{N}{t} = \dfrac{10 \cdot 10^{-3}\,\text{W} \cdot 405 \cdot 10^{-9}\,\text{m}}{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 2{,}039 \cdot 10^{16}\,\tfrac{1}{\text{s}}$. Samalla tavalla diodille B $1{,}571 \cdot 10^{16}\,\tfrac{1}{\text{s}}$, diodille C $1{,}636 \cdot 10^{16}\,\tfrac{1}{\text{s}}$ ja diodille D $1{,}973 \cdot 10^{16}\,\tfrac{1}{\text{s}}$. b) Järjestys fotonivuon mukaan on A, D, C, B. Tehon mukaan järjestys on A, B, C, D. Diodi B on tehokkaampi kuin C ja D. Sen fotonit kantavat kuitenkin enemmän energiaa kuin C:n ja D:n fotonit. Siksi sama teho riittää vähemmälle määrälle fotoneja. c) Suurin fotonivuo on diodilla A ja pienin diodilla B, joten suhde on $\dfrac{2{,}039 \cdot 10^{16}\,\tfrac{1}{\text{s}}}{1{,}571 \cdot 10^{16}\,\tfrac{1}{\text{s}}} = 1{,}298$
+**Sijoitus:** a) $hc = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Diodi A: $\tfrac{N}{t} = \dfrac{10 \cdot 10^{-3}\,\text{W} \cdot 405 \cdot 10^{-9}\,\text{m}}{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 2{,}039 \cdot 10^{16}\,\tfrac{1}{\text{s}}$. Samalla tavalla diodille B $1{,}571 \cdot 10^{16}\,\tfrac{1}{\text{s}}$, diodille C $1{,}636 \cdot 10^{16}\,\tfrac{1}{\text{s}}$ ja diodille D $1{,}973 \cdot 10^{16}\,\tfrac{1}{\text{s}}$.
+
+b) Järjestys fotonivuon mukaan on A, D, C, B. Tehon mukaan järjestys on A, B, C, D. Diodi B on tehokkaampi kuin C ja D. Sen fotonit kantavat kuitenkin enemmän energiaa kuin C:n ja D:n fotonit. Siksi sama teho riittää vähemmälle määrälle fotoneja.
+
+c) Suurin fotonivuo on diodilla A ja pienin diodilla B, joten suhde on $\dfrac{2{,}039 \cdot 10^{16}\,\tfrac{1}{\text{s}}}{1{,}571 \cdot 10^{16}\,\tfrac{1}{\text{s}}} = 1{,}298$
+
 **Vastaus:** $1{,}3$. Diodin A fotonivuo on siis noin $1{,}3$-kertainen diodin B fotonivuoon verrattuna. Vastauksessa on kaksi merkitsevää numeroa, kuten tehojen $6{,}0$, $5{,}0$ ja $4{,}0\,\text{mW}$ arvoissa.
+
 **Järkevyys:** Suhde on yli yksi, koska A on suurimman fotonivuon diodi. Tehojen suhde on $\tfrac{10}{6{,}0} = 1{,}67$ ja aallonpituuksien suhde $\tfrac{405}{520} = 0{,}779$. Lisäksi $1{,}67 \cdot 0{,}779 = 1{,}3$, kuten pitää. Yksikkö kumoutuu, joten tulos on pelkkä luku.
 
 ## fy8-7-L2-07
 **Kysytty:** mikä oppilaan päättelyssä on virheellistä
 **Periaate:** Stimuloidussa emissiossa fotonien määrä kasvaa yhdellä. Energian säilymislaki on silti voimassa: uuden fotonin energia on otettava jostain. Se otetaan viritetyn atomin energiasta, jonka atomi on saanut pumppauksesta.
-**Mallivastaus:** Oppilas on oikeassa siinä, että tapahtuman jälkeen fotoneja on kaksi. Virhe on päätellä siitä, että energia syntyy tyhjästä. Uuden fotonin energia $E_2 - E_1$ tulee atomista, joka putoaa ylemmältä tasolta alemmalle. Atomin energia pienenee täsmälleen tämän verran, ja sama energia siirtyy valoon. Saapuva fotoni ei anna energiaansa pois vaan jatkaa matkaansa. Valon energia kasvaa siis vain sen verran kuin atomi menettää energiaa. Atomit on viritetty aiemmin pumppauksella. Laserista ulos tuleva energia on siksi enintään pumpatun energian suuruinen. Fotoni ei jakaudu kahtia. Peilit eivät selitä energian lisääntymistä. Valon kvanttiluonne sallii sen, että fotonien määrä kasvaa.
+**Mallivastaus:** Oppilas on oikeassa siinä, että tapahtuman jälkeen fotoneja on kaksi. Virhe on päätellä siitä, että energia syntyy tyhjästä. Uuden fotonin energia $E_2 - E_1$ tulee atomista, joka putoaa ylemmältä tasolta alemmalle. Atomin energia pienenee täsmälleen tämän verran, ja sama energia siirtyy valoon. Saapuva fotoni ei anna energiaansa pois vaan jatkaa matkaansa.
+
+Valon energia kasvaa siis vain sen verran kuin atomi menettää energiaa. Atomit on viritetty aiemmin pumppauksella. Laserista ulos tuleva energia on siksi enintään pumpatun energian suuruinen. Fotoni ei jakaudu kahtia. Peilit eivät selitä energian lisääntymistä. Valon kvanttiluonne sallii sen, että fotonien määrä kasvaa.
 
 ## fy8-7-L3-04
 **Annettu:** pumppausvalon aallonpituus $\lambda_\text{p} = 976\,\text{nm}$ ja teho $P_\text{p} = 20{,}0\,\text{W}$, laservalon aallonpituus $\lambda_\text{L} = 1070\,\text{nm}$ ja teho $P_\text{L} = 15{,}0\,\text{W}$, kaikki pumppausvalo absorboituu, loput energiasta on lämpöä, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
@@ -289,11 +307,22 @@ d) Energiahyötysuhde on $\tfrac{15{,}0\,\text{W}}{20{,}0\,\text{W}} = 0{,}750 =
 **Annettu:** pumppausvalon aallonpituus $\lambda_\text{p} = 808\,\text{nm}$, laservalon aallonpituus $\lambda_\text{L} = 1064\,\text{nm}$ ja lähtötehot pumppaustehon funktiona (taulukko)
 **Kysytty:** laserfotonien määrä lisäpumppausfotonia kohti kynnyksen yläpuolella, $\tfrac{\Delta N_\text{L}}{\Delta N_\text{p}}$
 **Periaate:** Kynnyksen yläpuolella lähtöteho kasvaa suoraan pumppaustehon mukana. Pisteet asettuvat siis suoralle. Teho on fotonien määrä kerrottuna fotonin energialla. Tehojen muutoksesta saadaan fotonien lukumäärien muutos, kun kummankin teho jaetaan oman fotoninsa energialla. Kynnyksen alapuolella valo ei vahvistu enempää kuin sitä häviää peilin läpi ja muualle. Inversio on välttämätön ehto, mutta kynnys on vahvistuksen ja häviöiden tasapaino.
-**Kuvaajan lukeminen:** Taulukon pisteet $(10;\ 0{,}0)$, $(20;\ 0{,}1)$, $(30;\ 2{,}1)$, $(40;\ 6{,}1)$, $(50;\ 10{,}0)$, $(60;\ 13{,}9)$ ja $(70;\ 18{,}1)$ piirretään koordinaatistoon ($P_\text{p}$ milliwatteina vaaka-akselille, $P_\text{L}$ milliwatteina pystyakselille). Pisteet $P_\text{p} \geq 30\,\text{mW}$ asettuvat suoralle pientä vaihtelua lukuun ottamatta. Kaksi ensimmäistä pistettä ovat lähellä nollaa. Sovitetun suoran yhtälö on $P_\text{L} = 0{,}398 \cdot P_\text{p} - 9{,}86\,\text{mW}$. Suora leikkaa vaaka-akselin, kun $P_\text{L} = 0$, eli $P_\text{p} = \tfrac{9{,}86\,\text{mW}}{0{,}398} = 24{,}8\,\text{mW}$. Kynnysteho on siis noin $25\,\text{mW}$. Suoran kulmakerroin on $\tfrac{\Delta P_\text{L}}{\Delta P_\text{p}} = 0{,}398$. Esimerkiksi pisteiden $(30;\ 2{,}1)$ ja $(70;\ 18{,}1)$ kautta kulmakerroin on $\tfrac{16{,}0\,\text{mW}}{40\,\text{mW}} = 0{,}40$.
+**Kuvaajan lukeminen:** Taulukon pisteet $(10;\ 0{,}0)$, $(20;\ 0{,}1)$, $(30;\ 2{,}1)$, $(40;\ 6{,}1)$, $(50;\ 10{,}0)$, $(60;\ 13{,}9)$ ja $(70;\ 18{,}1)$ piirretään koordinaatistoon ($P_\text{p}$ milliwatteina vaaka-akselille, $P_\text{L}$ milliwatteina pystyakselille). Pisteet $P_\text{p} \geq 30\,\text{mW}$ asettuvat suoralle pientä vaihtelua lukuun ottamatta. Kaksi ensimmäistä pistettä ovat lähellä nollaa. Sovitetun suoran yhtälö on $P_\text{L} = 0{,}398 \cdot P_\text{p} - 9{,}86\,\text{mW}$. Suora leikkaa vaaka-akselin, kun $P_\text{L} = 0$, eli $P_\text{p} = \tfrac{9{,}86\,\text{mW}}{0{,}398} = 24{,}8\,\text{mW}$.
+
+Kynnysteho on siis noin $25\,\text{mW}$. Suoran kulmakerroin on $\tfrac{\Delta P_\text{L}}{\Delta P_\text{p}} = 0{,}398$. Esimerkiksi pisteiden $(30;\ 2{,}1)$ ja $(70;\ 18{,}1)$ kautta kulmakerroin on $\tfrac{16{,}0\,\text{mW}}{40\,\text{mW}} = 0{,}40$.
+
 **Kaava:** $\Delta P_\text{L} = \dfrac{\Delta N_\text{L}}{t} \cdot \dfrac{hc}{\lambda_\text{L}}$ ja $\Delta P_\text{p} = \dfrac{\Delta N_\text{p}}{t} \cdot \dfrac{hc}{\lambda_\text{p}}$, joten $\dfrac{\Delta N_\text{L}}{\Delta N_\text{p}} = \dfrac{\Delta P_\text{L}}{\Delta P_\text{p}} \cdot \dfrac{\lambda_\text{L}}{\lambda_\text{p}}$
+
 **Muunnokset:** Ei tarvita. Tehot ovat samassa yksikössä ja aallonpituudet samassa yksikössä, ja $hc$ supistuu pois.
-**Sijoitus:** c) $\dfrac{\Delta N_\text{L}}{\Delta N_\text{p}} = 0{,}398 \cdot \dfrac{1064\,\text{nm}}{808\,\text{nm}} = 0{,}398 \cdot 1{,}3168 = 0{,}524$. d) Neodyymilaserissa alempi lasertaso tyhjenee heti. Inversio syntyy siksi jo pienelläkin pumppauksella. Kynnyksen alapuolella vahvistus on silti pienempi kuin häviöt. Häviöitä aiheuttavat peilin läpi ulos pääsevä valo, sironta ja absorptio. Silloin laservärähtely ei käynnisty. Aine lähettää vain heikkoa spontaania valoa joka suuntaan, ja $P_\text{L} \approx 0$. Kynnyksellä vahvistus on yhtä suuri kuin häviöt. Kynnyksen yläpuolella lisäpumppaus muuttuu laservaloksi.
+
+**Sijoitus:** c) $\dfrac{\Delta N_\text{L}}{\Delta N_\text{p}} = 0{,}398 \cdot \dfrac{1064\,\text{nm}}{808\,\text{nm}} = 0{,}398 \cdot 1{,}3168 = 0{,}524$.
+
+d) Neodyymilaserissa alempi lasertaso tyhjenee heti. Inversio syntyy siksi jo pienelläkin pumppauksella. Kynnyksen alapuolella vahvistus on silti pienempi kuin häviöt. Häviöitä aiheuttavat peilin läpi ulos pääsevä valo, sironta ja absorptio. Silloin laservärähtely ei käynnisty. Aine lähettää vain heikkoa spontaania valoa joka suuntaan, ja $P_\text{L} \approx 0$. Kynnyksellä vahvistus on yhtä suuri kuin häviöt.
+
+Kynnyksen yläpuolella lisäpumppaus muuttuu laservaloksi.
+
 **Vastaus:** $0{,}52$ laserfotonia lisäpumppausfotonia kohti. Vastauksessa on kaksi merkitsevää numeroa, koska sovituksen hajonta (toleranssi $6\,\%$) ei tue useampaa. Kynnysteho $25\,\text{mW}$ ja kulmakerroin $0{,}40$ eivät kuulu vastauslaatikkoon.
+
 **Järkevyys:** Luku on alle yksi, koska kukin pumppausfotoni tuottaa enintään yhden laserfotonin. Arvo $0{,}52$ on siis mahdollinen. Kulmakertoimen enimmäisarvo olisi $\tfrac{808}{1064} = 0{,}76$, ja todellinen $0{,}40$ on sen alla. Lisäksi $0{,}52 \cdot 0{,}76 = 0{,}40$, kuten pitää.
 
 ## fy8-7-L1-10

@@ -7,7 +7,11 @@
 **Kuvaajan lukeminen:** Kuvasta luetaan perustila $0$, alempi viritystila $1{,}97\,\text{eV}$ ja ylempi viritystila $4{,}19\,\text{eV}$. Tasojen erotukset ovat $4{,}19\,\text{eV} - 1{,}97\,\text{eV} = 2{,}22\,\text{eV}$, $1{,}97\,\text{eV} - 0 = 1{,}97\,\text{eV}$ ja $4{,}19\,\text{eV} - 0 = 4{,}19\,\text{eV}$.
 **Kaava:** $E = hf = \dfrac{hc}{\lambda}$, josta kolmannelle siirtymälle $\lambda_3 = \dfrac{hc}{E_3}$
 **Muunnokset:** $\lambda_\text{v} = 557{,}7 \cdot 10^{-9}\,\text{m}$ ja $\lambda_\text{p} = 630{,}0 \cdot 10^{-9}\,\text{m}$. Elektronivoltit muunnetaan sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$: $E_3 = 4{,}19 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 6{,}712 \cdot 10^{-19}\,\text{J}$.
-**Sijoitus:** Vihreä: $$\begin{aligned} E_\text{v} &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{557{,}7 \cdot 10^{-9}\,\text{m}} \\ &= 3{,}562 \cdot 10^{-19}\,\text{J} \\ &= \dfrac{3{,}562 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} \\ &= 2{,}22\,\text{eV} \end{aligned}$$, joten vihreä valo syntyy siirtymässä ylemmästä viritystilasta alempaan. Punainen: samalla tavalla $E_\text{p} = 3{,}153 \cdot 10^{-19}\,\text{J} = 1{,}97\,\text{eV}$, joten punainen valo syntyy siirtymässä alemmasta viritystilasta perustilaan. Kolmas siirtymä: $$\begin{aligned} \lambda_3 &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{6{,}712 \cdot 10^{-19}\,\text{J}} \\ &= 2{,}959 \cdot 10^{-7}\,\text{m} \end{aligned}$$
+**Sijoitus:** Vihreä: $$\begin{aligned} E_\text{v} &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{557{,}7 \cdot 10^{-9}\,\text{m}} \\ &= 3{,}562 \cdot 10^{-19}\,\text{J} \\ &= \dfrac{3{,}562 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} \\ &= 2{,}22\,\text{eV} \end{aligned}$$, joten vihreä valo syntyy siirtymässä ylemmästä viritystilasta alempaan.
+
+Punainen: samalla tavalla $E_\text{p} = 3{,}153 \cdot 10^{-19}\,\text{J} = 1{,}97\,\text{eV}$, joten punainen valo syntyy siirtymässä alemmasta viritystilasta perustilaan.
+
+Kolmas siirtymä: $$\begin{aligned} \lambda_3 &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{6{,}712 \cdot 10^{-19}\,\text{J}} \\ &= 2{,}959 \cdot 10^{-7}\,\text{m} \end{aligned}$$
 **Vastaus:** Vihreä valo syntyy siirtymässä ylemmästä viritystilasta alempaan ja punainen alemmasta viritystilasta perustilaan. Kolmannen siirtymän aallonpituus on $\lambda_3 \approx 296\,\text{nm}$, kolme merkitsevää numeroa kuten energiatasoissa. Se on ultraviolettisäteilyä, jota silmä ei näe. Lisäksi tämä siirtymä on paljon epätodennäköisempi kuin vihreän valon siirtymä, joten sen viiva on heikko: kaikki energiatasojen erotukset eivät näy voimakkaina spektriviivoina.
 **Järkevyys:** Suurin energiaero antaa lyhimmän aallonpituuden, ja $296\,\text{nm}$ on lyhyempi kuin näkyvän valon alaraja noin $380\,\text{nm}$. Näkyvän valon fotonien energiat ovat $1{,}7$–$3{,}3\,\text{eV}$, ja molemmat revontulten värit osuvat tälle välille, mutta $4{,}19\,\text{eV}$ ei osu.
 
@@ -26,7 +30,9 @@
 **Periaate:** Atomin energia voi olla vain tiettyjä arvoja. Viritetty atomi voi luopua energiastaan kahdella tavalla: lähettämällä fotonin tai törmäyksessä, jossa energia siirtyy toiselle hiukkaselle. Kumpi tapahtuu ensin, riippuu viritystilan keskimääräisestä elinajasta ja siitä, kuinka usein atomi törmää.
 **Mallivastaus:** *Spektriviivat.* Happiatomin energia voi olla vain energiatasojen arvoja. Kun atomi siirtyy tasolta toiselle, syntyvän fotonin energia on tasojen erotus, ja siitä seuraa tietty aallonpituus. Siksi kaasun valossa on vain näitä aallonpituuksia eli erillisiä spektriviivoja eikä jatkuvaa spektriä.
 
-*Korkeus ja värit.* Alempi viritystila, joka tuottaa punaisen valon, purkautuu fotonina keskimäärin vasta noin $110\,\text{s}$:n kuluttua. $100$–$150\,\text{km}$:n korkeudella ilma on niin tiheää, että viritetty atomi törmää muihin hiukkasiin moneen kertaan jo paljon lyhyemmässä ajassa. Törmäys purkaa viritystilan: energia siirtyy toiselle hiukkaselle, eikä fotonia synny. Yli $200\,\text{km}$:n korkeudella ilma on hyvin harvaa ja törmäyksiä on vähän, joten moni atomi ehtii lähettää punaisen fotonin.
+*Korkeus ja värit.* Alempi viritystila, joka tuottaa punaisen valon, purkautuu fotonina keskimäärin vasta noin $110\,\text{s}$:n kuluttua. $100$–$150\,\text{km}$:n korkeudella ilma on niin tiheää, että viritetty atomi törmää muihin hiukkasiin moneen kertaan jo paljon lyhyemmässä ajassa. Törmäys purkaa viritystilan: energia siirtyy toiselle hiukkaselle, eikä fotonia synny.
+
+Yli $200\,\text{km}$:n korkeudella ilma on hyvin harvaa ja törmäyksiä on vähän, joten moni atomi ehtii lähettää punaisen fotonin.
 
 Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lähettää vihreän fotonin ennen törmäystä myös tiheämmässä ilmassa. Punainen valo vaatii siis harvan ilman, ja siksi se näkyy revontulten yläosassa.
 
@@ -190,7 +196,11 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
   <circle cx="103" cy="363.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
 </svg>
 
-**Mallivastaus:** Pisteet eivät asetu origon kautta kulkevalle suoralle. Kaukaisimman pisteen kautta piirretty origosuora kulkee lähimpien pisteiden yläpuolella, ja pisteet muodostavat alaspäin kaartuvan käyrän. Saman näkee taulukon tulosta $Rr^2$: oletuksen mukaan se olisi vakio, mutta satunnaisvaihtelua lukuun ottamatta se kasvaa etäisyyden kasvaessa noin $12\,000$:sta $29\,000$:een. Pulssitaajuus siis kasvaa lähdettä lähestyttäessä hitaammin kuin $\tfrac{1}{r^2}$. Oletus ei sellaisenaan päde ainakaan lähellä lähdettä, joten jokin sen osista on väärä: esimerkiksi etäisyys ei ole oikea etäisyys lähteestä siihen kohtaan, jossa säteily havaitaan.
+**Mallivastaus:** Pisteet eivät asetu origon kautta kulkevalle suoralle. Kaukaisimman pisteen kautta piirretty origosuora kulkee lähimpien pisteiden yläpuolella, ja pisteet muodostavat alaspäin kaartuvan käyrän.
+
+Saman näkee taulukon tulosta $Rr^2$: oletuksen mukaan se olisi vakio, mutta satunnaisvaihtelua lukuun ottamatta se kasvaa etäisyyden kasvaessa noin $12\,000$:sta $29\,000$:een.
+
+Pulssitaajuus siis kasvaa lähdettä lähestyttäessä hitaammin kuin $\tfrac{1}{r^2}$. Oletus ei sellaisenaan päde ainakaan lähellä lähdettä, joten jokin sen osista on väärä: esimerkiksi etäisyys ei ole oikea etäisyys lähteestä siihen kohtaan, jossa säteily havaitaan.
 
 ### b)
 **Kysytty:** kuvaaja, jonka pisteiden pitäisi mallin $R = \dfrac{K}{(r + d)^2}$ mukaan olla suoralla, ja siitä matka $d$
@@ -297,7 +307,13 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
   <foreignObject x="165" y="364.5" width="112" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(-1{,}3;\ 0)$</span></div></foreignObject>
 </svg>
 
-**Mallivastaus:** Pisteet asettuvat hyvin suoralle, joten malli kuvaa mittausta koko välillä. Suoraa jatketaan katkoviivana $r$-akselille, jonka se leikkaa kohdassa $r = -1{,}3\,\text{cm}$. Leikkauskohdan voi myös laskea kahdesta suoralta mittausalueelta luetusta pisteestä $(2{,}0\,\text{cm};\ 1{,}86 \cdot 10^{-2}\,\sqrt{\text{min}})$ ja $(20{,}0\,\text{cm};\ 12{,}0 \cdot 10^{-2}\,\sqrt{\text{min}})$. Suoran kulmakerroin on $$\begin{aligned} k &= \dfrac{(12{,}0 - 1{,}86) \cdot 10^{-2}\,\sqrt{\text{min}}}{20{,}0\,\text{cm} - 2{,}0\,\text{cm}} \\ &= 5{,}63 \cdot 10^{-3}\,\tfrac{\sqrt{\text{min}}}{\text{cm}} \end{aligned}$$, joten suora leikkaa $r$-akselin kohdassa $$\begin{aligned} r &= 2{,}0\,\text{cm} - \dfrac{1{,}86 \cdot 10^{-2}\,\sqrt{\text{min}}}{k} \\ &= -1{,}3\,\text{cm} \end{aligned}$$. Siten $d \approx 1{,}3\,\text{cm}$. Putken tehollinen havaintokohta on siis noin senttimetrin ikkunan takana, mikä sopii GM-putken rakenteeseen. Silmämääräisesti sovitetuista suorista saadaan tyypillisesti $d = 1{,}0$–$1{,}6\,\text{cm}$. Kulmakertoimesta saadaan $K = \dfrac{1}{k^2} = 3{,}15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}$.
+**Mallivastaus:** Pisteet asettuvat hyvin suoralle, joten malli kuvaa mittausta koko välillä. Suoraa jatketaan katkoviivana $r$-akselille, jonka se leikkaa kohdassa $r = -1{,}3\,\text{cm}$.
+
+Leikkauskohdan voi myös laskea kahdesta suoralta mittausalueelta luetusta pisteestä $(2{,}0\,\text{cm};\ 1{,}86 \cdot 10^{-2}\,\sqrt{\text{min}})$ ja $(20{,}0\,\text{cm};\ 12{,}0 \cdot 10^{-2}\,\sqrt{\text{min}})$. Suoran kulmakerroin on $$\begin{aligned} k &= \dfrac{(12{,}0 - 1{,}86) \cdot 10^{-2}\,\sqrt{\text{min}}}{20{,}0\,\text{cm} - 2{,}0\,\text{cm}} \\ &= 5{,}63 \cdot 10^{-3}\,\tfrac{\sqrt{\text{min}}}{\text{cm}} \end{aligned}$$, joten suora leikkaa $r$-akselin kohdassa $$\begin{aligned} r &= 2{,}0\,\text{cm} - \dfrac{1{,}86 \cdot 10^{-2}\,\sqrt{\text{min}}}{k} \\ &= -1{,}3\,\text{cm} \end{aligned}$$.
+
+Siten $d \approx 1{,}3\,\text{cm}$. Putken tehollinen havaintokohta on siis noin senttimetrin ikkunan takana, mikä sopii GM-putken rakenteeseen. Silmämääräisesti sovitetuista suorista saadaan tyypillisesti $d = 1{,}0$–$1{,}6\,\text{cm}$.
+
+Kulmakertoimesta saadaan $K = \dfrac{1}{k^2} = 3{,}15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}$.
 
 ### c)
 **Kysytty:** $2{,}0\,\text{cm}$:n ja $20\,\text{cm}$:n nettopulssitaajuuksien epävarmuus, epävarmempi piste ja parannukset
@@ -335,7 +351,9 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
 ### a)
 **Kysytty:** miksi vapaa neutroni hajoaa mutta protoni ei, mitä kvarkeille tapahtuu ja mikä vuorovaikutus aiheuttaa sen
 **Periaate:** Vapaa hiukkanen voi hajota itsestään vain, jos tuotteiden yhteismassa on pienempi kuin sen oma massa: massojen erotus vapautuu tuotteiden liike-energiaksi. Neutroni on $udd$ ja protoni $uud$.
-**Mallivastaus:** *Massat.* Neutronin hajoamisessa syntyy protoni, elektroni ja elektronin antineutriino: $n \rightarrow p + e^- + \bar{\nu}_e$. Varaus säilyy, koska $0 = (+e) + (-e) + 0$. Massojen erotus on $$\begin{aligned} &939{,}565\,\tfrac{\text{MeV}}{c^2} - 938{,}272\,\tfrac{\text{MeV}}{c^2} \\ &- 0{,}511\,\tfrac{\text{MeV}}{c^2} \\ &= 0{,}782\,\tfrac{\text{MeV}}{c^2} \end{aligned}$$, kun antineutriinon hyvin pieni massa jätetään pois. Neutroni on siis raskaampi kuin tuotteet yhteensä, ja hajoamisessa vapautuu noin $0{,}782\,\text{MeV}$ energiaa. Protoni on kevyempi kuin neutroni, joten vapaa protoni ei voi muuttua neutroniksi: siihen tarvittaisiin energiaa.
+**Mallivastaus:** *Massat.* Neutronin hajoamisessa syntyy protoni, elektroni ja elektronin antineutriino: $n \rightarrow p + e^- + \bar{\nu}_e$. Varaus säilyy, koska $0 = (+e) + (-e) + 0$. Massojen erotus on $$\begin{aligned} &939{,}565\,\tfrac{\text{MeV}}{c^2} - 938{,}272\,\tfrac{\text{MeV}}{c^2} \\ &- 0{,}511\,\tfrac{\text{MeV}}{c^2} \\ &= 0{,}782\,\tfrac{\text{MeV}}{c^2} \end{aligned}$$, kun antineutriinon hyvin pieni massa jätetään pois.
+
+Neutroni on siis raskaampi kuin tuotteet yhteensä, ja hajoamisessa vapautuu noin $0{,}782\,\text{MeV}$ energiaa. Protoni on kevyempi kuin neutroni, joten vapaa protoni ei voi muuttua neutroniksi: siihen tarvittaisiin energiaa.
 
 *Kvarkit ja vuorovaikutus.* Neutronin ($udd$) yksi $d$-kvarkki muuttuu $u$-kvarkiksi, jolloin syntyy protoni ($uud$). Kvarkin lajin muuttaa vain heikko vuorovaikutus. Sen välittäjähiukkanen $W^-$ syntyy $d$-kvarkin muuttuessa ja muuttuu heti elektroniksi ja antineutriinoksi.
 
@@ -364,7 +382,9 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
 **Periaate:** Lasketaan sama aika suhteella $1 : 5$: nukleoneja on nyt $6$ jokaista alkuperäistä neutronia kohti. Tuloksen herkkyys kertoo, kuinka luotettava menetelmä on.
 **Mallivastaus:** *Lasku.* Neutroneja on jäljellä $N_n = \dfrac{6}{1 + 7{,}16} = 0{,}735$, joten $\dfrac{t}{T_{1/2}} = \dfrac{\lg \tfrac{1}{0{,}735}}{\lg 2} = 0{,}444$ ja $t = 0{,}444 \cdot 609\,\text{s} = 270\,\text{s}$. Ytimet syntyisivät noin $271\,\text{s}$ eli noin $4{,}5\,\text{min}$ alkuräjähdyksen jälkeen.
 
-*Arvio.* Väite on väärä: aika lähes kaksinkertaistuu, vaikka alkusuhde muuttui vain vähän. Syy on se, että aika riippuu siitä, kuinka suuri osa neutroneista ehtii hajota. Suhteella $1 : 6$ neutroneista hajoaa vain noin $14\,\%$, suhteella $1 : 5$ noin $26\,\%$. Kun hajoava osuus on näin pieni, pienikin muutos alkusuhteessa muuttaa sitä ja samalla aikaa suhteessa paljon. Menetelmä antaa oikean suuruusluokan, muutamia minuutteja, mutta ei tarkkaa aikaa.
+*Arvio.* Väite on väärä: aika lähes kaksinkertaistuu, vaikka alkusuhde muuttui vain vähän. Syy on se, että aika riippuu siitä, kuinka suuri osa neutroneista ehtii hajota.
+
+Suhteella $1 : 6$ neutroneista hajoaa vain noin $14\,\%$, suhteella $1 : 5$ noin $26\,\%$. Kun hajoava osuus on näin pieni, pienikin muutos alkusuhteessa muuttaa sitä ja samalla aikaa suhteessa paljon. Menetelmä antaa oikean suuruusluokan, muutamia minuutteja, mutta ei tarkkaa aikaa.
 
 *Oletukset.* c-kohdan tulos edellyttää, että hetken $1\,\text{s}$ jälkeen neutroneja muuttui protoneiksi vain vapaan neutronin hajoamisessa eikä muissa reaktioissa, että ytimet syntyivät käytännössä yhdellä hetkellä ja että lähes kaikki neutronit päätyivät helium-4:ään.
 

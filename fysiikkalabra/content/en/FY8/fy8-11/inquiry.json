@@ -24,7 +24,7 @@
       "type": "choice",
       "optional": true,
       "title": "Review: mass defect",
-      "prompt": "The mass of a helium-4 nucleus is smaller than the sum of the masses of its two protons and two neutrons. What does this mass defect tell?",
+      "prompt": "The mass of a uranium-235 nucleus is smaller than the sum of the masses of its $92$ protons and $143$ neutrons. What does this mass defect tell?",
       "choices": [
         {
           "text": "Assembling the nucleus released energy, so taking it apart requires the same amount of energy.",
@@ -33,7 +33,7 @@
         },
         {
           "text": "Some of the nucleons have turned into energy, so the nucleus has fewer nucleons than expected.",
-          "feedback": "A helium nucleus has four nucleons, and none has disappeared. The mass is smaller because the nucleons are bound to each other, and the mass corresponding to the binding energy left the nucleus when it was formed (chapter *Mass defect and nuclear binding energy*)."
+          "feedback": "A uranium nucleus has $235$ nucleons, and none has disappeared. The mass is smaller because the nucleons are bound to each other, and the mass corresponding to the binding energy left the nucleus when it was formed (chapter *Mass defect and nuclear binding energy*)."
         },
         {
           "text": "There is an error in the measurements, because mass is always conserved in all reactions.",
