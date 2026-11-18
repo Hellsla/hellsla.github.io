@@ -169,7 +169,7 @@ Raportti tehty (#721, `docs/audits/2026-11-18-lopputarkistus-FY1-FY8.md`). **Hyv
 
 ## 20. Opettajan päätökset 2026-11-18 klo 18.33 (koordinaattorin chatissa, "mennään ehdotustesi mukaisesti")
 Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jälkeen; tämä rivi on hyväksynnän kirjaus (sääntö 5).
-- FY8: `kortit/fi/fy8.json` fy8-annihilaatio korjataan kuten en-kortti (#707); fy8-kosminen-inflaatio: lisätään luvun fy8-16 tekstiin lause kosmisesta inflaatiosta (kaikki kielet); fy8-12 yksikkö "1/min" → min⁻¹. #718:n jälkeen.
+- FY8 (`Varattu: claude/fy8-kortit-inflaatio`): `kortit/fi/fy8.json` fy8-annihilaatio korjataan kuten en-kortti (#707); fy8-kosminen-inflaatio: lisätään luvun fy8-16 tekstiin lause kosmisesta inflaatiosta (kaikki kielet); fy8-12 yksikkö "1/min" → min⁻¹. #718:n jälkeen.
 - FY3: 8l-b "Esimerkkiaineisto:" pois myös tehtävien `text`-kentistä (fy3-4, 6, 7, 8, 10, 11, 13; kaikki kielet; delta-katselmoinnit). #724:n jälkeen.
 - 8j: fy1-1, fy1-8 ja fy2-1 ohitetaan (ei kertaustehtävää).
 - 5d: FY5:n 16 ja FY6:n 25 jäljellä olevaa riviä jäävät listalle (myös fy5-7 `x = A \sin(…)`).
