@@ -62,7 +62,7 @@
 **Annettu:** tulokulma ilmassa $\alpha_1 = 40{,}0^\circ$, taitekulma muovissa $\alpha_2 = 25{,}4^\circ$, ilman taitekerroin $n_1 = 1{,}00$, $c = 3{,}00 \cdot 10^{8}\,\text{m/s}$
 **Kysytty:** valon nopeus muovissa $v$ muodossa $\ldots \cdot 10^{8}\,\text{m/s}$
 **Periaate:** Molemmat kulmat ja ilman taitekerroin tunnetaan, joten taittumislaista saadaan muovin taitekerroin. Taitekerroin kertoo, kuinka monta kertaa hitaammin valo etenee muovissa kuin tyhjiössä, $n = c : v$.
-**Kaava:** $n_1 \sin\alpha_1 = n_2 \sin\alpha_2$, josta $n_2 = \dfrac{n_1 \sin\alpha_1}{\sin\alpha_2}$, ja $v = \dfrac{c}{n_2}$
+**Kaava:** $$\begin{aligned} n_1 \sin\alpha_1 &= n_2 \sin\alpha_2 \\ n_2 &= \frac{n_1 \sin\alpha_1}{\sin\alpha_2} \\ n_2 &= \frac{c}{v} \\ v &= \frac{c}{n_2} \end{aligned}$$
 **Muunnokset:** Niitä ei tarvita. Kulmat ovat asteina, taitekertoimet ovat yksikköttömiä, ja nopeus saadaan samassa yksikössä kuin $c$.
 **Sijoitus:** $n_2 = \dfrac{1{,}00 \cdot \sin 40{,}0^\circ}{\sin 25{,}4^\circ} = \dfrac{0{,}6428}{0{,}4289} = 1{,}4986$ ja $v = \dfrac{3{,}00 \cdot 10^{8}\,\text{m/s}}{1{,}4986} = 2{,}002 \cdot 10^{8}\,\text{m/s}$
 **Vastaus:** $v \approx 2{,}00 \cdot 10^{8}\,\text{m/s}$. Vastaukseksi kirjoitetaan $2{,}00$. Vastauksessa on kolme merkitsevää numeroa, koska kulmat on annettu kolmella.
@@ -72,7 +72,7 @@
 **Annettu:** lasin paksuus $d = 2{,}0\,\text{cm}$, lasin taitekerroin $n = 1{,}52$, valon nopeus ilmassa $c = 3{,}00 \cdot 10^{8}\,\text{m/s}$
 **Kysytty:** kulkuaikojen erotus $\Delta t$ pikosekunteina
 **Periaate:** Valo etenee lasissa nopeudella $v = c : n$. Saman matkan kulkeminen kestää siksi lasissa kauemmin kuin ilmassa. Kulkuaika on matka jaettuna nopeudella. Valo tulee kohtisuoraan, joten se ei taitu ja kulkee lasissa matkan $d$.
-**Kaava:** $\Delta t = \dfrac{d}{v} - \dfrac{d}{c}$, missä $v = \dfrac{c}{n}$, joten $\Delta t = \dfrac{n d}{c} - \dfrac{d}{c} = \dfrac{(n - 1)\, d}{c}$
+**Kaava:** $$\begin{aligned} t_\text{lasi} &= \frac{d}{v} \\ t_\text{ilma} &= \frac{d}{c} \\ \Delta t &= t_\text{lasi} - t_\text{ilma} \\ v &= \frac{c}{n} \\ \Delta t &= \frac{n d}{c} - \frac{d}{c} \\ &= \frac{(n - 1)\, d}{c} \end{aligned}$$
 **Muunnokset:** $d = 2{,}0\,\text{cm} = 2{,}0 \cdot 0{,}01\,\text{m} = 0{,}020\,\text{m}$. Lopuksi $1\,\text{ps} = 10^{-12}\,\text{s}$.
 **Sijoitus:** $\Delta t = \dfrac{(1{,}52 - 1) \cdot 0{,}020\,\text{m}}{3{,}00 \cdot 10^{8}\,\text{m/s}} = 3{,}467 \cdot 10^{-11}\,\text{s} = 34{,}67\,\text{ps}$
 **Vastaus:** $\Delta t \approx 35\,\text{ps}$. Vastauksessa on kaksi merkitsevää numeroa, koska paksuus $2{,}0\,\text{cm}$ on annettu kahdella.
@@ -113,7 +113,7 @@
 **Annettu:** valon nopeus aineessa A $v_1 = 2{,}25 \cdot 10^{8}\,\text{m/s}$, aineessa B $v_2 = 1{,}97 \cdot 10^{8}\,\text{m/s}$, tulokulma $\alpha_1 = 40{,}0^\circ$
 **Kysytty:** taitekulma $\alpha_2$ asteina
 **Periaate:** Taittumislaki $n_1 \sin\alpha_1 = n_2 \sin\alpha_2$ ja taitekertoimen määritelmä $n = c : v$ antavat yhdessä $\dfrac{\sin\alpha_1}{v_1} = \dfrac{\sin\alpha_2}{v_2}$. Kulmien sinien suhde on siis sama kuin nopeuksien suhde. Valo hidastuu, kun se siirtyy aineeseen B, joten se taittuu kohti normaalia.
-**Kaava:** $\dfrac{c}{v_1}\sin\alpha_1 = \dfrac{c}{v_2}\sin\alpha_2$, josta $\sin\alpha_2 = \dfrac{v_2 \sin\alpha_1}{v_1}$
+**Kaava:** $$\begin{aligned} n_1 \sin\alpha_1 &= n_2 \sin\alpha_2 \\ n &= \frac{c}{v} \\ \frac{c}{v_1}\sin\alpha_1 &= \frac{c}{v_2}\sin\alpha_2 \\ \sin\alpha_2 &= \frac{v_2 \sin\alpha_1}{v_1} \end{aligned}$$
 **Muunnokset:** Niitä ei tarvita. Nopeudet ovat samassa yksikössä, joten ne supistuvat.
 **Sijoitus:** $\sin\alpha_2 = \dfrac{1{,}97 \cdot 10^{8}\,\text{m/s} \cdot \sin 40{,}0^\circ}{2{,}25 \cdot 10^{8}\,\text{m/s}} = 0{,}8756 \cdot 0{,}6428 = 0{,}5628$, joten $\alpha_2 = 34{,}249^\circ$
 **Vastaus:** $\alpha_2 \approx 34{,}2^\circ$. Vastauksessa on kolme merkitsevää numeroa, koska nopeudet ja tulokulma on annettu kolmella.
@@ -130,7 +130,7 @@ Toinen vaihtoehto sanoo, että säde jatkaa samaan suuntaan. Sen väite taajuude
 **Annettu:** aallonpituus ilmassa $\lambda_0 = 633\,\text{nm}$, lasin taitekerroin $n = 1{,}52$, ilman taitekerroin $1{,}00$, taajuus $f$ ei muutu rajapinnassa
 **Kysytty:** aallonpituus lasissa $\lambda$ nanometreinä
 **Periaate:** Taajuus pysyy rajapinnassa samana, mutta valon nopeus muuttuu. Aallolle pätee $v = f\lambda$. Siksi aallonpituus on suoraan verrannollinen nopeuteen. Ilmassa $v_0 = c : 1{,}00 \approx c$ ja lasissa $v = c : n$. Nopeus ja aallonpituus pienenevät siis taitekertoimen verran.
-**Kaava:** $\lambda_0 = \dfrac{v_0}{f}$ ja $\lambda = \dfrac{v}{f}$, joten $\dfrac{\lambda}{\lambda_0} = \dfrac{v}{v_0} = \dfrac{1}{n}$ ja $\lambda = \dfrac{\lambda_0}{n}$
+**Kaava:** $$\begin{aligned} \lambda_0 &= \frac{v_0}{f} \\ \lambda &= \frac{v}{f} \\ \frac{\lambda}{\lambda_0} &= \frac{v}{v_0} \\ &= \frac{c : n}{c} \\ &= \frac{1}{n} \\ \lambda &= \frac{\lambda_0}{n} \end{aligned}$$
 **Muunnokset:** Niitä ei tarvita. Aallonpituus lasketaan nanometreinä, koska taitekerroin on yksikötön.
 **Sijoitus:** $\lambda = \dfrac{633\,\text{nm}}{1{,}52} = 416{,}4\,\text{nm}$
 **Vastaus:** $\lambda \approx 416\,\text{nm}$. Vastauksessa on kolme merkitsevää numeroa, koska aallonpituus ja taitekerroin on annettu kolmella.

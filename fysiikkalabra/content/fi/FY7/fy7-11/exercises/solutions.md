@@ -32,7 +32,7 @@
 **Annettu:** prisman huippukulma $A = 60{,}0^\circ$, tulokulma $\alpha_1 = 45{,}0^\circ$, lähtevän säteen taitekulma $\alpha_4 = 52{,}0^\circ$
 **Kysytty:** poikkeamakulma $\delta$ asteina
 **Periaate:** Prismassa säde kääntyy ensimmäisessä pinnassa kulman $\alpha_1 - \alpha_2$ ja toisessa kulman $\alpha_4 - \alpha_3$. Koska prisman geometriasta $\alpha_2 + \alpha_3 = A$, kokonaiskääntymä riippuu vain ulkopuolisista kulmista ja huippukulmasta.
-**Kaava:** $\delta = \alpha_1 + \alpha_4 - A$
+**Kaava:** $$\begin{aligned} \delta &= (\alpha_1 - \alpha_2) + (\alpha_4 - \alpha_3) \\ \alpha_2 + \alpha_3 &= A \\ \delta &= \alpha_1 + \alpha_4 - (\alpha_2 + \alpha_3) \\ &= \alpha_1 + \alpha_4 - A \end{aligned}$$
 **Muunnokset:** Ei tarvita: kaikki kulmat ovat asteina.
 **Sijoitus:** $\delta = 45{,}0^\circ + 52{,}0^\circ - 60{,}0^\circ = 37{,}0^\circ$
 **Vastaus:** $37{,}0^\circ$, kulmien tarkkuudella yksi desimaali.
@@ -42,7 +42,7 @@
 **Annettu:** tulokulma pisaran pinnalla $\alpha = 55{,}0^\circ$, taitekulma $\beta = 38{,}0^\circ$, yksi heijastus pisaran takapinnasta
 **Kysytty:** kulma $\theta$ vastapisteen suunnasta asteina
 **Periaate:** Säde kääntyy tulokohdassa kulman $\alpha - \beta$, heijastuksessa kulman $180^\circ - 2\beta$ ja lähtökohdassa kulman $\alpha - \beta$. Kokonaiskääntymä on $180^\circ + 2\alpha - 4\beta$, joten valo lähtee kulmassa $180^\circ$ miinus kääntymä siihen suuntaan nähden, josta auringonvalo tuli.
-**Kaava:** $\theta = 4\beta - 2\alpha$
+**Kaava:** $$\begin{aligned} \delta_\text{k} &= (\alpha - \beta) + (180^\circ - 2\beta) + (\alpha - \beta) \\ &= 180^\circ + 2\alpha - 4\beta \\ \theta &= 180^\circ - \delta_\text{k} \\ &= 4\beta - 2\alpha \end{aligned}$$
 **Muunnokset:** Ei tarvita: kulmat ovat asteina.
 **Sijoitus:** $\theta = 4 \cdot 38{,}0^\circ - 2 \cdot 55{,}0^\circ = 152{,}0^\circ - 110{,}0^\circ = 42{,}0^\circ$
 **Vastaus:** $42{,}0^\circ$, kulmien tarkkuudella yksi desimaali.
@@ -52,7 +52,7 @@
 **Annettu:** kuidun pituus $L = 5{,}00\,\text{km}$, punaisen taitekerroin $n_\text{p} = 1{,}5143$, violetin $n_\text{v} = 1{,}5302$, valon nopeus tyhjiössä $c = 3{,}00 \cdot 10^8\,\text{m/s}$
 **Kysytty:** saapumisaikojen ero $\Delta t$ nanosekunteina
 **Periaate:** Tehtävän oletuksen mukaan kumpikin väri etenee lasissa nopeudella $v = c : n$; todellinen lyhyt välähdys etenee hieman hitaammin ryhmänopeudella, mutta se jätetään tässä huomiotta. Taitekerroin riippuu aallonpituudesta. Violetin taitekerroin on suurempi, joten violetti kulkee hitaammin ja saapuu myöhemmin. Kumpikin väri kulkee saman matkan tasaisella nopeudella, joten kulkuaika on $t = L : v$.
-**Kaava:** $v = \dfrac{c}{n}$ ja $t = \dfrac{L}{v} = \dfrac{L n}{c}$, joten $\Delta t = t_\text{v} - t_\text{p} = \dfrac{L n_\text{v}}{c} - \dfrac{L n_\text{p}}{c}$
+**Kaava:** $$\begin{aligned} v &= \frac{c}{n} \\ t &= \frac{L}{v} \\ &= \frac{L n}{c} \\ \Delta t &= t_\text{v} - t_\text{p} \\ &= \frac{L n_\text{v}}{c} - \frac{L n_\text{p}}{c} \end{aligned}$$
 **Muunnokset:** $L = 5{,}00\,\text{km} = 5{,}00 \cdot 1000\,\text{m} = 5000\,\text{m}$. Lopuksi $1\,\text{s} = 10^9\,\text{ns}$.
 **Sijoitus:** $t_\text{v} = \dfrac{5000\,\text{m} \cdot 1{,}5302}{3{,}00 \cdot 10^8\,\text{m/s}} = 2{,}55033 \cdot 10^{-5}\,\text{s}$ ja $t_\text{p} = \dfrac{5000\,\text{m} \cdot 1{,}5143}{3{,}00 \cdot 10^8\,\text{m/s}} = 2{,}52383 \cdot 10^{-5}\,\text{s}$, joten $$\begin{aligned} \Delta t &= 2{,}55033 \cdot 10^{-5}\,\text{s} \\ &- 2{,}52383 \cdot 10^{-5}\,\text{s} \\ &= 2{,}650 \cdot 10^{-7}\,\text{s} \\ &= 265\,\text{ns} \end{aligned}$$
 **Vastaus:** $265\,\text{ns}$, kolme merkitsevää numeroa kuten taitekertoimien erotuksessa $0{,}0159$ ja pituudessa $5{,}00\,\text{km}$.
@@ -93,7 +93,7 @@
 **Annettu:** huippukulma $A = 50{,}0^\circ$, tulokulma $\alpha_1 = 45{,}0^\circ$, punaisen taitekerroin $n_\text{p} = 1{,}5143$, violetin $n_\text{v} = 1{,}5302$, prisma ilmassa
 **Kysytty:** lähtevien säteiden välinen kulma $\Delta\delta = \delta_\text{v} - \delta_\text{p}$ asteina
 **Periaate:** Kumpikin väri taittuu kummassakin pinnassa omalla taitekertoimellaan, koska taitekerroin riippuu aallonpituudesta. Molemmat värit tulevat samasta suunnasta, joten lähtevien säteiden välinen kulma on poikkeamakulmien erotus. Prisman geometriasta $\alpha_2 + \alpha_3 = A$ ja $\delta = \alpha_1 + \alpha_4 - A$.
-**Kaava:** $\sin\alpha_2 = \dfrac{\sin\alpha_1}{n}$, $\alpha_3 = A - \alpha_2$, $\sin\alpha_4 = n \sin\alpha_3$ ja $\delta = \alpha_1 + \alpha_4 - A$, joten $\Delta\delta = \alpha_{4,\text{v}} - \alpha_{4,\text{p}}$
+**Kaava:** $$\begin{aligned} \sin\alpha_2 &= \frac{\sin\alpha_1}{n} \\ \alpha_3 &= A - \alpha_2 \\ \sin\alpha_4 &= n \sin\alpha_3 \\ \delta &= \alpha_1 + \alpha_4 - A \\ \Delta\delta &= \delta_\text{v} - \delta_\text{p} \\ &= \alpha_{4,\text{v}} - \alpha_{4,\text{p}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: kulmat ovat asteina, ja taitekertoimet ovat yksikköttömiä.
 **Sijoitus:** Punainen: $\sin\alpha_2 = \dfrac{\sin 45{,}0^\circ}{1{,}5143} = 0{,}46695$, $\alpha_2 = 27{,}84^\circ$, $\alpha_3 = 50{,}0^\circ - 27{,}84^\circ = 22{,}16^\circ$, $\sin\alpha_4 = 1{,}5143 \cdot \sin 22{,}16^\circ = 0{,}57119$, $\alpha_4 = 34{,}83^\circ$. Violetti: $\sin\alpha_2 = \dfrac{\sin 45{,}0^\circ}{1{,}5302} = 0{,}46210$, $\alpha_2 = 27{,}52^\circ$, $\alpha_3 = 22{,}48^\circ$, $\sin\alpha_4 = 1{,}5302 \cdot \sin 22{,}48^\circ = 0{,}58509$, $\alpha_4 = 35{,}81^\circ$. $\Delta\delta = 35{,}81^\circ - 34{,}83^\circ = 0{,}98^\circ$
 **Vastaus:** $0{,}98^\circ$ sadasosa-asteiksi pyöristetyillä välituloksilla (tarkoilla välituloksilla $0{,}966^\circ \approx 0{,}97^\circ$), kaksi merkitsevää numeroa, koska tulos on kahden lähes yhtä suuren kulman erotus.
@@ -185,7 +185,7 @@ Kulma vastapisteestä on $\theta = 180^\circ$ miinus kääntymä, joten pienempi
 **Annettu:** taulukon kuusi riviä $(\alpha,\ \theta_\text{liuos})$ ja $(\alpha,\ \theta_\text{vesi})$, yksi heijastus pisaran takapinnasta, veden taitekerroin punaiselle $1{,}3315$
 **Kysytty:** liuoksen taitekerroin $n$ (yksikötön) rivien keskiarvona sekä pisaroiden suurimpien kulmien $\theta$ ero ja kaarien keskinäinen sijainti
 **Periaate:** Pisarassa $\theta = 4\beta - 2\alpha$, joten kun $\alpha$ ja $\theta$ tunnetaan, taitekulma on $\beta = (\theta + 2\alpha) : 4$. Taitekerroin saadaan taittumislaista ilmasta pisaraan, ja koska mittauspisteissä on pientä vaihtelua, otetaan kaikkien rivien keskiarvo.
-**Kaava:** $\beta = \dfrac{\theta + 2\alpha}{4}$ ja $\sin\alpha = n\sin\beta$, josta $n = \dfrac{\sin\alpha}{\sin\beta}$
+**Kaava:** $$\begin{aligned} \theta &= 4\beta - 2\alpha \\ \beta &= \frac{\theta + 2\alpha}{4} \\ \sin\alpha &= n \sin\beta \\ n &= \frac{\sin\alpha}{\sin\beta} \end{aligned}$$
 **Muunnokset:** Ei tarvita: kulmat ovat asteina, ja taitekerroin on yksikötön.
 **Sijoitus:** $\alpha = 40{,}0^\circ$: $\beta = \dfrac{29{,}35^\circ + 2 \cdot 40{,}0^\circ}{4} = 27{,}337^\circ$, $n = \dfrac{\sin 40{,}0^\circ}{\sin 27{,}337^\circ} = 1{,}3997$; $\alpha = 50{,}0^\circ$: $\beta = \dfrac{32{,}67^\circ + 2 \cdot 50{,}0^\circ}{4} = 33{,}168^\circ$, $n = \dfrac{\sin 50{,}0^\circ}{\sin 33{,}168^\circ} = 1{,}4002$; $\alpha = 55{,}0^\circ$: $\beta = \dfrac{33{,}26^\circ + 2 \cdot 55{,}0^\circ}{4} = 35{,}815^\circ$, $n = \dfrac{\sin 55{,}0^\circ}{\sin 35{,}815^\circ} = 1{,}3999$; $\alpha = 58{,}0^\circ$: $\beta = \dfrac{33{,}10^\circ + 2 \cdot 58{,}0^\circ}{4} = 37{,}275^\circ$, $n = \dfrac{\sin 58{,}0^\circ}{\sin 37{,}275^\circ} = 1{,}4002$; $\alpha = 62{,}0^\circ$: $\beta = \dfrac{32{,}41^\circ + 2 \cdot 62{,}0^\circ}{4} = 39{,}102^\circ$, $n = \dfrac{\sin 62{,}0^\circ}{\sin 39{,}102^\circ} = 1{,}3999$; $\alpha = 66{,}0^\circ$: $\beta = \dfrac{30{,}91^\circ + 2 \cdot 66{,}0^\circ}{4} = 40{,}727^\circ$, $n = \dfrac{\sin 66{,}0^\circ}{\sin 40{,}727^\circ} = 1{,}4002$.
 
