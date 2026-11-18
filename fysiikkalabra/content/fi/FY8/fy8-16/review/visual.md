@@ -1,15 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 7de14996d957cb7c
+CONTENT-HASH: 9ee1c56b9a430097
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Delta round 4, long formulas re-set as aligned blocks. Judged from source: the diff only re-sets one display block (first row the left-hand side alone, each + or - term whole); the same shared aligned renderer was seen in fy8-1 captures, so the layout is as there; not opened separately.
-- Words, numbers and units unchanged by the diff.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: the new paragraph on cosmic inflation is fluent Finnish, hedged ("hypoteesin mukaan", "ei ole havaittu"), under 120 words, with the term in bold; opened fig-row-1280 (the first theory figure beside its paragraph), layout intact.

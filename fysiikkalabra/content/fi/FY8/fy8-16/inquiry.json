@@ -24,7 +24,7 @@
       "type": "choice",
       "optional": true,
       "title": "Kertaa: absorptioviivat",
-      "prompt": "Kun valkoinen valo kulkee vetykaasun läpi, spektriin jää tummia viivoja täsmälleen tietyille aallonpituuksille. Miksi juuri niille?",
+      "prompt": "Kaukaisen galaksin valo kulkee vetykaasun läpi, ja spektriin jää tummia viivoja täsmälleen tietyille aallonpituuksille. Miksi juuri niille?",
       "choices": [
         {
           "text": "Vetyatomi absorboi vain fotoneja, joiden energia on kahden sen energiatason erotus.",

@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 0a14917be2b6beb5
+CONTENT-HASH: 84c862db6d19599b
 
 ## Blocking
 
 ## Polish
-- None.
 
 ## Checked
-batch delta review: half-value thickness paragraph is more accurate (energy and material dependence) and consistent with the table and the 662 keV note; no task relies on 'higher energy always penetrates more'.
+batch delta review: the only change is the unit in the Substitution step of the half-value-thickness solution, from a stacked fraction to min^-1; it matches the graph's axis unit and the rate unit used elsewhere, the numbers and steps are unchanged.

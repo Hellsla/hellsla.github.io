@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: cf5c9debf0427a60
-Round 2: delta against the version round 1 reviewed (fix round 1).
+CONTENT-HASH: 88634686642ae585
+SCOPE: delta: round 1 fixes (s8 d 7360 N -> 7400 N in criterion and model answer; en: s9 b criterion translation, "centripetal acceleration" in s8 and figure alt); s1-s7 not re-judged.
 
 ## Blocking
-- (none)
+- (none) Previous Blocking items resolved.
 
 ## Polish
-- (none)
+- Round 1 Polish items stay recorded (s9 b 331 N vs 330 N intermediate wording).
+
 
 ## Checked
-- s7 a Periaate: the range 370–460 km is now described as the band the station is kept in over a long time, not the variation within one orbit; its width 90 km is 90/6771 = 1,3 % of the orbit radius, so the circular model is justified. Correct and more careful than before.
-- s7 b Järkevyys: 4π²r/T² = 8,773 m/s² against γM/r² = 8,69 m/s², difference 0,9 %; now attributed to the rounded period and the chosen model altitude together. Right: the period that fits 400 km is 92,4 min.
-- s7 e: the angle θ is now defined (from the Earth's centre, between the station's direction at the shadow edge and the direction away from the Sun); for a cylindrical shadow of radius R this gives r sin θ = R, θ = 70,2°, shadow share 2θ/360° = 39 % = 36 min, 84 kW / 0,61 = 138 kW ≈ 140 kW. The condition "kun Aurinko on ratatasossa" is stated.
-- `python scripts/practice.py check units/fy9-ympyraliike`: OK (7 tasks, 110 points). Hash equal at start and end.
+- 7400 N now in tasks.json s8 d and solutions.md line 606; 7400 = 0,50 * 1500 * 9,81 = 7357 rounded to two figures; ratio 4500/7400 = 61 % unchanged, v_max and answers unaffected.
+- No leftover 7360 in task files (only in review notes).
+- Hash unchanged at end of review; practice.py check OK for fi, en, fi-easy (9 tasks, 142 points).
+- No new physics or terms introduced by the change.
+

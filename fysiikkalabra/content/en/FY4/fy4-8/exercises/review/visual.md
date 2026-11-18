@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a1abd9e471f7dbc9
+CONTENT-HASH: 9cc204efa1efbd97
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] sol-fy4-8-L2-10-390.png (Answer, part e) — the Answer's sub-parts are paragraphs now, but e) still carries a long run of factors in one block — optionally split at "The injuries depend…".
+- [Minor] solutions.md, sled bar-chart task Principle ("By the energy principle ...") still uses the old name while its Formula line says "Work-energy principle"; one name per equation would be tidier.
+- [Minor] Round 1 polish (bounce task commas, "so ... so" stacks) unchanged; optional.
 
 ## Checked
-- Delta (md-paragraphs): opened shots/sol-fy4-8-L2-03 in full; the closing parts (where the model-answer and reasonableness breaks sit; earlier parts not opened) of sol-fy4-8-L1-06, L1-08, L2-05, L2-06, L3-01, L3-02, L3-04 and L3-05; and sol-fy4-8-L2-10 in 1800 px parts 3-4 (-390.png, cropped). L1-06 and L1-08: the correction and the sign remark are separate things. L2-06: the single-measurement check stands apart from the graph reasoning. L2-10: sub-parts a)-e) and the closing remarks are in separate paragraphs. Spacing even, nothing clipped, formulas intact. Words unchanged. Hash re-run before writing: unchanged.
+- Round 3 delta (solutions.md: bounce task "The decrease of the mechanical energy in the first bounce is"; sled task "so W equals ..."). Opened content/en/FY4/fy4-8/review/shots/fy4-8-open-exercises-L3-1280-8.png (bounce task Formula, Substitution, Answer) and fy4-8-open-exercises-L2-1280-12.png and -13.png (sled task Formula and Substitution).
+- Also opened fy4-8-open-exercises-L3-1280-6.png, -7.png and L2-1280-14.png, -15.png, -16.png (neighbouring tasks, layout).
+- Wording reads correctly, formulas split with "equals" do not clip or overlap, layout intact. Hash unchanged at end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish (English) 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

@@ -1,21 +1,26 @@
 VERDICT: PASS
-CONTENT-HASH: 21ead76999d37875
-SCOPE: delta added-exercise from daa17f1403857258 base abdc9e095e4f
+CONTENT-HASH: 95fdb7a6565fcd50
+
+Mode: full
+
 ## Blocking
-(none)
+None.
+
 ## Polish
-- exercises.json fy4-10-L2-10 d — no part asks for the limits of the model, which the model answer then gives unasked ("Tarkistus ja rajoitukset") — end d with "Mitä simulaatio jättää huomiotta oikeaan törmäyskokeeseen verrattuna?"
-- exercises.json fy4-10-L2-10 — the slider's word "elastisuus" is not the chapter's term; tie them in the task: "… kun elastisuus on $100\,\%$ (kimmoisa törmäys)" and "… $0\,\%$ (täysin kimmoton törmäys)".
-- solutions.md fy4-10-L2-10 c — "sitä enemmän liike-energiaa häviää" contradicts the course's own warning that energy does not vanish — "sitä enemmän liike-energiaa muuttuu muuksi energiaksi".
-- solutions.md fy4-10-L2-10 c — the closing paragraph is about 130 words and holds two things (the rounding of $-0{,}26\,\text{kg}\cdot\text{m/s}$ and the conclusion); start a new paragraph at "Liike-energia sen sijaan pienenee".
-- exercises.json fy4-10-L2-10 and solutions.md — "luettu 16. marraskuuta 2026" / "16.11.2026" is a day after this review round (15.11.2026); write the date actually read.
+- solutions.md fy4-10-L2-03 Järkevyys — "Osuus on alle 100 %, joten törmäys on kimmoton, mutta ... ei ole täysin kimmoton" is self-contradictory. Corrected sentence: "Osuus on alle 100 %, joten törmäys ei ole kimmoisa, mutta vaunut erkanevat toisistaan, joten se ei ole täysin kimmotonkaan."
+- fy4-10-L3-03 — "astronautin massa avaruuspukuineen on 120 kg" does not say whether the tool is included; the solution takes 120 kg as the astronaut after the throw. Add "ilman työkalua" to the task text.
+- solutions.md fy4-10-L3-04 — the section for part c) is headed "Mallivastaus virheestä" although the task has no student error (that heading fits L2-07 and L3-05); rename it "Mallivastaus c)".
+- fy4-10-L2-10 — the model solution quotes PhET default values (0,50 kg, 1,50 kg, version 1.1.25, rounded readouts) that I could not check offline; it is correct arithmetic from those values (p = -0,25; E_k 0,44, 0,12, 0,02 J). Science reviewer should confirm the defaults. The task depends on an external site, which is declared with a reading date.
+
 ## Checked
-- Round 1, delta: only fy4-10-L2-10 judged; the other 23 tasks as passed.
-- Applied and the source is necessary: the student produces the data in the simulation, with the settings named (view, the three boxes, wall off, positive direction).
-- Four parts in order: record signed velocities (a) → compute $p$ and $E_\text{k}$ and compare with the display (b) → vary one variable, elasticity, with the same start values (c) → explain with Newton III why one quantity is conserved and the other not (d). Variable control is explicit; no overlap (c observes, d explains).
-- The investigation can refute a wrong expectation: a student who expects kinetic energy to be conserved sees 0,44 J fall to 0,12 J and 0,02 J.
-- Level 2: data to work with, six short calculations of one formula each; only this chapter's laws and $E_\text{k}$.
-- Model answer followable: method stated for any start values, then a dated example with the defaults, every sum in symbols before numbers, the rounding difference $-0{,}26$ vs $-0{,}25$ explained instead of hidden.
-- Fits the set: the only task where the student generates the collision data; does not repeat the worked example (coupling wagons).
-- Open task with a text answer; nothing disclosed before the student acts.
-- Finnish and case endings correct; situation and instructions first, parts last.
+- Opened exercises.json (L1 01-08, L2 01-10, L3 01-06) and solutions.md in full, plus the packet's figure descriptions (ex-vt-kaarryt: A 0,8 → 0,2 m/s, B -0,4 → 0,6 m/s; ex-xt-tarra: 0,60 m/s then 0,20 m/s), which give m_B = 0,30 kg (L2-09) and 0,60 kg, ΔE = 0,036 J (L3-06) without stating them.
+- Counts 8/10/6 meet 5/4/3; the set covers inelastic and elastic collisions, explosions and recoil, two-phase problems (L3-01 pendulum, L3-04 skid marks), data and graph reading (L2-05, L2-06, L2-09, L3-05, L3-06), error analysis (L2-07, L2-08, L3-05), simulation (L2-10).
+- Kaava steps: every solution starts from p_ennen = p_jälkeen (or ΣF = ma / energy principle in the second phase) with the system and positive direction chosen first, and solves symbolically before substituting.
+- Recomputed: 0,050; 0,50; 0,90; 3,55; 0,20; 0,343; 1,8; 0,028; 717 J; 70,8 %; 15 000 kg; 73,4 %; 46,7 %; 0,50; 0,60; 0,30; 20,2 cm; -2,0; 120 s; 79,4 km/h (72,5 to 85,8 for μ 0,50 to 0,70); 1,175 N; 0,036 J. All inside tolerances.
+- L3-05: extrapolation to t = 0 gives 1,00 m/s and p = 0,600; the first data point loses 0,07 kg·m/s to friction, which matches F·t; a good, well-explained trap.
+- Wrong options in L1-06 and L2-08 name concrete misconceptions; the energy-into-internal-energy wording follows the house rule.
+- Finnish: grammar, glossary (liikemäärä, kimmoton, kimmoisa, sisäenergia), cases after units correct.
+- Captures not opened; relied on the packet's layout checks.
+
+## Scores
+Level fit 4/5; task wording 4/5; solution completeness 5/5; Finnish 4/5; phone usability 4/5.

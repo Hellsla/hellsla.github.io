@@ -254,6 +254,8 @@ Punasiirtymä syntyy, kun avaruuden laajeneminen venyttää valon aallonpituutta
 ### Alkuräjähdys
 Jos galaksit loittonevat toisistaan nyt, ne olivat aiemmin lähempänä toisiaan. Kun laajenemista seurataan taaksepäin, päädytään tilaan, jossa koko nykyinen havaittava maailmankaikkeus oli hyvin tiheä ja kuuma. Tästä tilasta alkanutta laajenemista sanotaan **alkuräjähdykseksi**. Se tapahtui noin $13{,}8$ miljardia vuotta sitten. Nimestä huolimatta alkuräjähdys ei ollut räjähdys, jossa aine lensi jostakin pisteestä tyhjään avaruuteen. Se tapahtui kaikkialla, ja avaruus itse alkoi laajeta. Laajetessaan maailmankaikkeus jäähtyi. Jäähtyminen määrää, missä järjestyksessä ytimet, atomit, tähdet ja galaksit syntyivät.
 
+Yhden hypoteesin mukaan maailmankaikkeus laajeni aivan alussa, sekunnin murto-osassa, erittäin nopeasti. Tätä vaihetta sanotaan **kosmiseksi inflaatioksi**. Sillä selitetään, miksi maailmankaikkeus on suurissa mittakaavoissa niin tasainen. Inflaatiota ei ole kuitenkaan suoraan havaittu.
+
 <svg data-fig="aikajana" viewBox="0 0 600 380" role="img" aria-label="Aikajana, ei mittakaavassa: maailmankaikkeuden kehitys ylhäältä alas. Pystysuora palkki muuttuu punaisesta siniseksi, kun maailmankaikkeus jäähtyy. Aika nolla: alkuräjähdys, jolloin kaikki on kuumaa ja tiheää. 3–20 minuuttia: ensimmäiset ytimet, vety ja helium. 380 000 vuotta: atomit syntyvät ja taustasäteily lähtee liikkeelle. Noin 200 miljoonaa vuotta: ensimmäiset tähdet. 9,2 miljardia vuotta: Aurinko ja Maa syntyvät. 13,8 miljardia vuotta: nyt. Taustasäteilyn lämpötila on 2,7 kelviniä." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy816-cool" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c92a2a"/><stop offset="0.45" stop-color="#ffc078"/><stop offset="1" stop-color="#1971c2"/></linearGradient></defs>
   <rect x="52" y="24" width="16" height="332" rx="8" fill="url(#fy816-cool)" stroke="#1f2933" stroke-width="2"/>
@@ -518,7 +520,9 @@ Galaksin spektrissä vedyn punainen $\text{H}\alpha$-viiva näkyy aallonpituudel
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Laboratorion aallonpituus on $\lambda_0 = 656{,}3\,\text{nm}$ ja galaksin valosta mitattu aallonpituus $\lambda = 679{,}3\,\text{nm}$. Etäisyys on $d = 150\,\text{Mpc}$ ja valon nopeus $c = 2{,}998 \cdot 10^{5}\,\text{km/s}$. Kysytään etääntymisnopeutta $v$ ja Hubblen vakiota $H_0$.
+**Tunnetut ja kysytty.** Laboratorion aallonpituus on $\lambda_0 = 656{,}3\,\text{nm}$ ja galaksin valosta mitattu aallonpituus $\lambda = 679{,}3\,\text{nm}$. Etäisyys on $d = 150\,\text{Mpc}$ ja valon nopeus $c = 2{,}998 \cdot 10^{5}\,\text{km/s}$.
+
+Kysytään etääntymisnopeutta $v$ ja Hubblen vakiota $H_0$.
 
 <!-- vaihe -->
 

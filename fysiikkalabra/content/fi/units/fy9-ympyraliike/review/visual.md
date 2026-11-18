@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 53b02751f63afd8a
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: c415a4f87c3b7043
+SCOPE: delta: round 1 fixes since previous visual review: 7400 N in s8 d) (tasks.json and solutions.md), en translation fixes, en term "centripetal acceleration"; fi. Tasks s1-s7 not re-judged.
 
 ## Blocking
-- (none)
+None. The previous Blocking item (s8 d greatest friction 7360 N, three figures against two-figure data) is resolved: tasks.json rubric and solutions.md line 606 now read $\approx 7400\,\text{N}$; no 7360 remains in the language. 4500 N and 61 % unchanged and consistent.
 
 ## Polish
-- B s7 e) Mallivastaus: the sentence that defines $\theta$ is hard to parse. Clearer: "Kun Aurinko on ratatasossa, varjon reuna on suunnassa, joka poikkeaa Auringosta poispäin osoittavasta suunnasta kulman $\theta$ verran. Sille pätee $\sin\theta = \tfrac{R}{r}$, joten $\theta \approx 70{,}2^\circ$." The paragraph (about 130 words) also reads better split before "Varjossa paneelit eivät tuota sähköä, …".
-- B s7 a) Annettu: at 390 px the range breaks as "370 / –460 km". One formula keeps it together: `$370\text{–}460\,\text{km}$`.
-- C s7 e): a sentence starts with a lowercase letter ("d-kohdan $84\,\text{kW}$ on keskiarvo"). "Kohdan d teho $84\,\text{kW}$ on keskiarvo, …".
+Round 1 Polish items (s9 a long Periaate paragraph; s9 d / s8 d display-block joins) remain recorded, not re-raised.
 
 ## Checked
-- Captures current for this hash. Opened: stage-exercises-390-52, -54…59, -62 (s7 card, source link, data list, solutions a–e, common mistakes, rubric c–e), stage-exercises-1280-40, contact-7.
-- s7: `=` aligned in every chain; answer boxes ($a_\text{n} \approx 8{,}8\,\text{m/s}^2$, $P \approx 84\,\text{kW}$) intact; $\overline{G}$, $\overline{N}$ with overlines; "$92\,\text{min}$:ssa", "$370$–$460\,\text{km}$:n" correct; nothing clipped or scrolled at 390 px.
-- Item 18: s3 a) "laskevalle käyrälle" read in the diff.
+- Grep for 7360 across tasks.json and solutions.md: no hits; 7400 present in both files.
+- Diff of the Sovella files against the previous commit: only the intended lines changed; no new math, figure reference or layout change.
+- Display-block structure around the edited line unchanged, so the rendering at 390 px is as judged in round 1.
+- Content hash at start and end identical: c415a4f87c3b7043.

@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: bcdc97b32687d881
+CONTENT-HASH: 20fe97b046c6acc0
 
 ## Blocking
-(none)
 
 ## Polish
-- 'nuklidi' is used in two places without explanation; say 'ydinlaji eli nuklidi'.
-- Line after the changed paragraph still says 'Huippu on rauta-56:n kohdalla' while the revised text says rauta ja nikkeli; align or explain (rauta-56 is the best-known near-peak).
-- 'keskimäärin' repeated; fine, but the feedback option text is now sound.
+- The new paragraph introduces "kosminen inflaatio" and "hypoteesi" without a short gloss for hypoteesi; fine for age 16-19 but could say "ehdotettu selitys".
+- The term is not elsewhere in the lesson, so it is not examined; good, the paragraph says it is not directly observed.
 
 ## Checked
-batch delta review: batch delta review: lesson, feedback option and optional model answer.
+batch delta review: new 3-sentence paragraph after the Big Bang paragraph; short, one idea, clear, honest about status (hypothesis, not observed), no conflict with tasks or solutions.

@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 7fdde13b611ba03f
+CONTENT-HASH: 310dab2b8cd66f1a
+SCOPE: delta md-paragraphs,numbers,paragraphs,reflow,typography from 7fdde13b611ba03f base cabadc3
 ## Blocking
 (none)
 ## Polish
-- solutions.md fy4-14-L2-08 (Järkevyys) — the added sentence is about 40 words and names "kuvaajan hyppääjät" without saying which graph — split it: "Rajanopeus $48\,\text{m/s}$ on pienempi kuin noin $53\,\text{m/s}$, jonka luvun teorian kuvaajan malli antaisi samalle massalle. Tämä hyppääjä putoaa leveämmässä asennossa, joten hänen poikkipinta-alansa ja ilmanvastuksensa ovat suuremmat."
+- solutions.md, the raindrop/pollen-grain task with $v = \sqrt{2gh}$ (Kaava b) — the sentence "Ilman ilmanvastusta $\Sigma F = G = mg$ ja $\Sigma F = ma$, joten $a = g$" comes after $v^2 = 2gh$ although $a = g$ is used in it; move it before: "b) Ilman ilmanvastusta $\Sigma F = mg = ma$, joten $a = g$. Putoaminen on tasaisesti kiihtyvää…". On the page (capture 9) the a) and b) parts also run together in one paragraph; start b) on its own line.
+- solutions.md, the skydiver-graph task, Järkevyys — the earlier polish stands: "luvun kuvaajan malli … kuin kuvaajan hyppääjät" does not say which graph; write "luvun teoriakuvaajan malli" and "teoriakuvaajan hyppääjä". Four one-sentence paragraphs read choppy; keep the first two and the last two together.
+- solutions.md, the vertical-throw task ($\Delta a = 2F_\text{v}/m$) — the Kaava line is about 90 words; fine, but a line break between "Nousussa" and "Laskussa" would make the two cases easy to compare.
 ## Checked
-- Round 1, delta: only the diff judged; the rest of the set as passed.
-- fy4-14-L1-03 Järkevyys: the estimate $2\,\text{N} : 0{,}6\,\text{kg}$ is now written as about $3{,}3\,\text{m/s}^2$, which is what the division gives; it still supports the answer $3{,}52\,\text{m/s}^2$ as a rough check.
-- fy4-14-L2-08 Järkevyys: the new sentence explains why the data's terminal speed differs from the chapter's model instead of leaving a silent mismatch; it uses only ideas the chapter teaches (terminal speed, cross-section) and discloses nothing before the student has tried (it sits behind the solution).
-- answers.py: a comment value for the check only; the task's answer, unit and tolerance are unchanged.
-- Captions without "(esimerkkiaineisto)": the teacher's approved change; the task texts still say what the data is.
-- Hash unchanged at the end of the review.
+- Round 1, delta: the Kaava rewrites and paragraph splits judged; numbers, answers, tasks and ids unchanged.
+- Every rewritten Kaava now starts from $\Sigma F = ma$ (with $a = 0$ at terminal speed), names the forces and the positive direction, then the derived formula; $F_\text{v} = m(g - a)$ is derived, not stated.
+- Sign conventions consistent: positive down in the throw task (up-moving: weight and drag both down; down-moving: drag up), forward-positive in the horizontal tasks.
+- The unfinished-looking "$\Sigma F = mg - F_\text{v}$" Kaava (task with the magnitude) now shows where it comes from ($G = mg$).
+- Splitting the Mallivastaus into three paragraphs separates the initial phase, the terminal phase and the two rejected claims; each is one idea.
+- Finnish in the changed lines correct; glossary terms kept.
+- Captures opened: content/fi/FY4/fy4-14/review/shots/fy4-14-open-exercises-L3-1280-9.png and -10.png (Kaava, Sijoitus and Järkevyys render, nothing clipped); phone widths judged from the text.

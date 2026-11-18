@@ -117,7 +117,9 @@ $$. $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.204 \cdot 10^
 ## fy8-3-L2-04
 **Given:** wavelength of the photon $\lambda = 80.0\,\text{nm}$, ionisation energy of hydrogen from the ground state $E_\text{ion} = 13.6\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Asked:** the kinetic energy $E_\text{k}$ of the freed electron in electron volts
-**Principle:** Energy is conserved. Of the energy of the photon, the ionisation energy is used to free the electron, and the rest stays as the kinetic energy of the free electron. In ionisation the energy of the photon does not have to correspond to the difference of any pair of levels, as long as it is at least the ionisation energy.
+**Principle:** Energy is conserved. Of the energy of the photon, the ionisation energy is used to free the electron, and the rest stays as the kinetic energy of the free electron.
+
+In ionisation the energy of the photon does not have to correspond to the difference of any pair of levels, as long as it is at least the ionisation energy.
 **Formula:** $\dfrac{hc}{\lambda} = E_\text{ion} + E_\text{k}$, so $E_\text{k} = \dfrac{hc}{\lambda} - E_\text{ion}$
 **Conversions:** $\lambda = 80.0 \cdot 10^{-9}\,\text{m}$; the energy of the photon is converted to electron volts by dividing by $1.602 \cdot 10^{-19}\,\text{J}$.
 **Substitution:** The product $$
@@ -133,7 +135,9 @@ $$. $\dfrac{hc}{\lambda} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{80.
 ## fy8-3-L3-01
 **Given:** kinetic energy of the colliding electrons $12.5\,\text{eV}$, atoms in the ground state $n = 1$, $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$
 **Asked:** the number of different wavelengths that the excited atoms can emit
-**Principle:** In a collision an atom can take only the energy that takes it to some higher level, so we find which levels are at most $12.5\,\text{eV}$ from the ground state. We assume that each atom receives energy from one collision while in the ground state; an electron hitting an already excited atom again could raise it higher, but that is not considered here. From an excited state the atom can return directly or through intermediate levels, and each different pair of levels gives its own wavelength.
+**Principle:** In a collision an atom can take only the energy that takes it to some higher level, so we find which levels are at most $12.5\,\text{eV}$ from the ground state.
+
+We assume that each atom receives energy from one collision while in the ground state; an electron hitting an already excited atom again could raise it higher, but that is not considered here. From an excited state the atom can return directly or through intermediate levels, and each different pair of levels gives its own wavelength.
 **Formula:** excitation energy $E_n - E_1 = 13.6\,\text{eV} - \dfrac{13.6\,\text{eV}}{n^2}$; a level can be reached if $E_n - E_1 \leq 12.5\,\text{eV}$
 **Conversions:** Not needed, because all energies are in electron volts.
 **Substitution:** $E_2 - E_1 = 13.6\,\text{eV} - 3.40\,\text{eV} = 10.2\,\text{eV}$, $E_3 - E_1 = 13.6\,\text{eV} - 1.511\,\text{eV} = 12.09\,\text{eV}$ and $E_4 - E_1 = 13.6\,\text{eV} - 0.850\,\text{eV} = 12.75\,\text{eV}$. Levels $2$ and $3$ can be reached, level $4$ cannot, because $12.75\,\text{eV} > 12.5\,\text{eV}$. The possible transitions are $3 \to 1$, $3 \to 2$ and $2 \to 1$.
@@ -164,12 +168,20 @@ $$. $E_4 - E_3 = -\dfrac{54.4\,\text{eV}}{16} + \dfrac{54.4\,\text{eV}}{9} = 2.6
 **Conversions:** Not needed, because all energies are in electron volts.
 **Substitution:** $hf = -3.40\,\text{eV} - (-13.6\,\text{eV}) = 10.2\,\text{eV}$, ionisation requires $0 - (-3.40\,\text{eV}) = 3.40\,\text{eV}$, and $E_\text{k} = 10.2\,\text{eV} - 3.40\,\text{eV} = 6.80\,\text{eV}$
 **Answer:** It is enough; the kinetic energy is $6.8\,\text{eV}$. The difference is given to one decimal place, like the energy of the photon, $10.2\,\text{eV}$.
-**Reasonableness:** The photon of a transition ending in the ground state is ultraviolet and much more energetic than visible light, and from state $n = 2$ the electron comes free with just $3.40\,\text{eV}$, so ionisation is to be expected. The same photon could not ionise an atom in the ground state, because $10.2\,\text{eV} < 13.6\,\text{eV}$; it could only excite it to level $2$.
+**Reasonableness:** The photon of a transition ending in the ground state is ultraviolet and much more energetic than visible light, and from state $n = 2$ the electron comes free with just $3.40\,\text{eV}$, so ionisation is to be expected.
+
+The same photon could not ionise an atom in the ground state, because $10.2\,\text{eV} < 13.6\,\text{eV}$; it could only excite it to level $2$.
 
 ## fy8-3-L1-06
 **Asked:** which of the four transitions $5 \to 4$, $3 \to 2$, $2 \to 1$ and $4 \to 1$ emits the photon with the shortest wavelength.
-**Principle:** The energy of the photon is the difference between the energies of the initial and final levels, and the wavelength is inversely proportional to the energy, $\lambda = \tfrac{hc}{E_\text{u} - E_\text{l}}$. The shortest wavelength therefore belongs to the transition with the greatest energy difference. The levels of the hydrogen atom, $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, are closer together the higher up they are, so the number of the level alone does not decide. The differences are $E_5 - E_4 = 0.306\,\text{eV}$, $E_3 - E_2 = 1.89\,\text{eV}$, $E_2 - E_1 = 10.2\,\text{eV}$ and $E_4 - E_1 = 12.75\,\text{eV}$.
-**Model answer:** The shortest wavelength is produced in the transition from level $4$ to the ground state, because its energy difference between the levels is the greatest of the four and the wavelength is then about $97.3\,\text{nm}$. The transition from the highest level $5$ to level $4$ gives the smallest energy difference, because the upper levels are close to each other. The transition $3 \to 2$ produces visible light, whose wavelength is long compared with ultraviolet. The transition $2 \to 1$ also ends in the ground state, but its energy difference is smaller than that of the transition $4 \to 1$.
+**Principle:** The energy of the photon is the difference between the energies of the initial and final levels, and the wavelength is inversely proportional to the energy, $\lambda = \tfrac{hc}{E_\text{u} - E_\text{l}}$. The shortest wavelength therefore belongs to the transition with the greatest energy difference.
+
+The levels of the hydrogen atom, $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, are closer together the higher up they are, so the number of the level alone does not decide. The differences are $E_5 - E_4 = 0.306\,\text{eV}$, $E_3 - E_2 = 1.89\,\text{eV}$, $E_2 - E_1 = 10.2\,\text{eV}$ and $E_4 - E_1 = 12.75\,\text{eV}$.
+**Model answer:** The shortest wavelength is produced in the transition from level $4$ to the ground state, because its energy difference between the levels is the greatest of the four and the wavelength is then about $97.3\,\text{nm}$.
+
+The transition from the highest level $5$ to level $4$ gives the smallest energy difference, because the upper levels are close to each other. The transition $3 \to 2$ produces visible light, whose wavelength is long compared with ultraviolet.
+
+The transition $2 \to 1$ also ends in the ground state, but its energy difference is smaller than that of the transition $4 \to 1$.
 
 ## fy8-3-L1-07
 **Given:** the transitions end on level $n = 1$, $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
@@ -200,7 +212,9 @@ $$. $E_2 - E_1 = -\dfrac{13.6\,\text{eV}}{4} + 13.6\,\text{eV} = 10.2\,\text{eV}
 ## fy8-3-L2-05
 **Given:** the four Balmer lines of the table ($n = 3, 4, 5, 6$ and $\lambda = 656.7$; $486.1$; $434.5$; $410.2\,\text{nm}$), $E_n = -\tfrac{E_\text{ion}}{n^2}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Asked:** the ionisation energy $E_\text{ion}$ of hydrogen in electron volts
-**Principle:** The energy of the photon is the difference between the levels, $hf = E_n - E_2 = \tfrac{E_\text{ion}}{4} - \tfrac{E_\text{ion}}{n^2}$. The frequency is therefore a linear function of $\tfrac{1}{n^2}$, $f = \tfrac{E_\text{ion}}{4h} - \tfrac{E_\text{ion}}{h} \cdot \tfrac{1}{n^2}$, and the slope of the line is $-\tfrac{E_\text{ion}}{h}$. Because of measurement uncertainty the points do not usually lie exactly on a straight line, so a line is fitted and the slope is read from the line, not from two neighbouring points.
+**Principle:** The energy of the photon is the difference between the levels, $hf = E_n - E_2 = \tfrac{E_\text{ion}}{4} - \tfrac{E_\text{ion}}{n^2}$. The frequency is therefore a linear function of $\tfrac{1}{n^2}$, $f = \tfrac{E_\text{ion}}{4h} - \tfrac{E_\text{ion}}{h} \cdot \tfrac{1}{n^2}$, and the slope of the line is $-\tfrac{E_\text{ion}}{h}$.
+
+Because of measurement uncertainty the points do not usually lie exactly on a straight line, so a line is fitted and the slope is read from the line, not from two neighbouring points.
 **Reading the graph:** The frequencies $f = \tfrac{c}{\lambda}$ are $456.5$; $616.7$; $690.0$ and $730.9\,\text{THz}$ at $\tfrac{1}{n^2} = 0.111$; $0.0625$; $0.0400$ and $0.0278$. The line fitted to the points passes, within the measured range, through the points $(0.0300;\ 723.3\,\text{THz})$ and $(0.1100;\ 460.2\,\text{THz})$, so the slope is $k = \dfrac{460.2\,\text{THz} - 723.3\,\text{THz}}{0.1100 - 0.0300} = -3289\,\text{THz}$.
 **Formula:** $k = -\dfrac{E_\text{ion}}{h}$, so $E_\text{ion} = -h k$
 **Conversions:** $k = -3289\,\text{THz} = -3.289 \cdot 10^{15}\,\text{Hz}$, and joules are converted to electron volts by dividing by $1.602 \cdot 10^{-19}\,\text{J}$.
@@ -214,7 +228,9 @@ E_\text{ion} &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 \end{aligned}
 $$
 **Answer:** $13.6\,\text{eV}$. The points lie on a straight line because the frequency is a linear function of $\tfrac{1}{n^2}$. Three significant figures; the uncertainty of the wavelengths, $\pm 0.5\,\text{nm}$, is less than $0.2\,\%$ of the wavelength, so it does not limit the third figure.
-**Reasonableness:** Extending the line to the vertical axis is extrapolation outside the measured range, which is allowed because the model is linear. The constant term of the line, $822\,\text{THz}$, corresponds to the energy $h \cdot 822\,\text{THz} = 3.40\,\text{eV}$, which is $\tfrac{13.6\,\text{eV}}{4}$, and the corresponding wavelength $\tfrac{c}{822\,\text{THz}} \approx 365\,\text{nm}$ is the limit of the Balmer series. The result is the same as the ionisation energy of hydrogen from the ground state, known to be $13.6\,\text{eV}$.
+**Reasonableness:** Extending the line to the vertical axis is extrapolation outside the measured range, which is allowed because the model is linear. The constant term of the line, $822\,\text{THz}$, corresponds to the energy $h \cdot 822\,\text{THz} = 3.40\,\text{eV}$, which is $\tfrac{13.6\,\text{eV}}{4}$, and the corresponding wavelength $\tfrac{c}{822\,\text{THz}} \approx 365\,\text{nm}$ is the limit of the Balmer series.
+
+The result is the same as the ionisation energy of hydrogen from the ground state, known to be $13.6\,\text{eV}$.
 
 ## fy8-3-L2-06
 **Given:** levels of the imaginary atom from the diagram, atom in the ground state $E_1$, wavelengths of the photons $300$; $413$; $500$; $207$ and $248\,\text{nm}$, tolerance of the match $\pm 0.05\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
@@ -242,12 +258,16 @@ $$, photon $413\,\text{nm}$: $3.00\,\text{eV}$, photon $500\,\text{nm}$: $2.48\,
 ## fy8-3-L2-07
 **Given:** transition $n = 5 \to n = 1$, $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, the student's result $340\,\text{eV}$
 **Asked:** a) the student's error, b) the energy $hf$ of the photon in electron volts
-**Principle:** The student's error is twofold. The claim about the size of the orbit may be true in the Bohr model, where the radius grows as $n^2$, but the energy of the photon does not depend on the size of the orbit but on the difference between the energies of the levels, $hf = E_\text{u} - E_\text{l}$. In addition, the energy of a level does not grow as $n^2$ but decreases: $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$ approaches zero as $n$ grows. The student's result $340\,\text{eV}$ would be greater than the ionisation energy of the atom, $13.6\,\text{eV}$, which is impossible for a transition from a bound level.
+**Principle:** The student's error is twofold. The claim about the size of the orbit may be true in the Bohr model, where the radius grows as $n^2$, but the energy of the photon does not depend on the size of the orbit but on the difference between the energies of the levels, $hf = E_\text{u} - E_\text{l}$.
+
+In addition, the energy of a level does not grow as $n^2$ but decreases: $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$ approaches zero as $n$ grows. The student's result $340\,\text{eV}$ would be greater than the ionisation energy of the atom, $13.6\,\text{eV}$, which is impossible for a transition from a bound level.
 **Formula:** $hf = E_5 - E_1$
 **Conversions:** Not needed, because the energies and the answer are in electron volts.
 **Substitution:** $hf = -\dfrac{13.6\,\text{eV}}{25} - \left(-13.6\,\text{eV}\right) = -0.544\,\text{eV} + 13.6\,\text{eV} = 13.056\,\text{eV}$
 **Answer:** a) The energy of the photon is the difference between the energies of the levels and is not proportional to the size of the orbit, and the result $340\,\text{eV}$ would exceed the ionisation energy. b) $13.1\,\text{eV}$, three significant figures, as in the value $13.6\,\text{eV}$.
-**Reasonableness:** The result is below the ionisation energy $13.6\,\text{eV}$, as it must be in a transition from a bound level to the ground state. The absolute value of the energy of level $n = 5$ is only $\tfrac{1}{25}$ of the ground-state value, so the energy difference is almost the whole ionisation energy: $13.06\,\text{eV}$ is $96\,\%$ of $13.6\,\text{eV}$. The corresponding wavelength is about $95.0\,\text{nm}$, ultraviolet.
+**Reasonableness:** The result is below the ionisation energy $13.6\,\text{eV}$, as it must be in a transition from a bound level to the ground state. The absolute value of the energy of level $n = 5$ is only $\tfrac{1}{25}$ of the ground-state value, so the energy difference is almost the whole ionisation energy: $13.06\,\text{eV}$ is $96\,\%$ of $13.6\,\text{eV}$.
+
+The corresponding wavelength is about $95.0\,\text{nm}$, ultraviolet.
 
 ## fy8-3-L2-08
 **Find:** how the wavelength of the photon changes when the transition $4 \to 3$ of the hydrogen atom (wavelength $\lambda_1$) is replaced by the transition $6 \to 3$ (wavelength $\lambda_2$), that is the ratio $\lambda_2 : \lambda_1$.
@@ -278,7 +298,9 @@ $\lambda_2 = 1240\,\text{eV}\,\text{nm} : 1.1333\,\text{eV}$
 
 $\lambda_2 \approx 1094\,\text{nm}$
 
-Both are infrared of the Paschen series. An increase to $1.7$ times would be obtained if the dependence were read the wrong way round. A decrease to about $0.44$ times would be obtained if the ratio of the energies of the initial levels, $0.38 : 0.85$, were taken instead of the ratio of the energy differences. The same final level does not make the wavelengths the same, because the photon energy also depends on the initial level.
+Both are infrared of the Paschen series. An increase to $1.7$ times would be obtained if the dependence were read the wrong way round. A decrease to about $0.44$ times would be obtained if the ratio of the energies of the initial levels, $0.38 : 0.85$, were taken instead of the ratio of the energy differences.
+
+The same final level does not make the wavelengths the same, because the photon energy also depends on the initial level.
 
 ## fy8-3-L2-09
 **Given:** a table of lines of hydrogen from NIST; $1\,\text{Å} = 0.1\,\text{nm}$; $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$. The choice is yours; as an example, the visible lines whose air wavelengths on 16 November 2026 were $6562.8518\,\text{Å}$ (red) and $4861.3615\,\text{Å}$ (blue-green).
@@ -306,14 +328,22 @@ $$\begin{aligned}
 &= 13.6\,\text{eV} \cdot \frac{3}{16} = 2.550\,\text{eV}
 \end{aligned}$$
 
-**Part d):** The photon energy $1.889\,\text{eV}$ of the red line matches the transition $3 \to 2$, and $2.551\,\text{eV}$ of the blue-green line matches $4 \to 2$. The model gives the wavelengths $656.5\,\text{nm}$ and $486.3\,\text{nm}$, which differ from the table by less than $0.1\,\%$ ($656.3\,\text{nm}$ is an air wavelength, and the simple model with $13.6\,\text{eV}$ is not exact), so the match holds. A line spectrum arises because the energy levels of the atom are quantised: the electron can only move from one level to another, so the photon's energy is always the difference of some pair of levels. Only certain energies, and so certain wavelengths, are possible, and the spectrum is not continuous. If you choose other lines of the table, for example $434.0\,\text{nm}$, they match the transitions $5 \to 2$ and $6 \to 2$ in the same way.
+**Part d):** The photon energy $1.889\,\text{eV}$ of the red line matches the transition $3 \to 2$, and $2.551\,\text{eV}$ of the blue-green line matches $4 \to 2$.
+
+The model gives the wavelengths $656.5\,\text{nm}$ and $486.3\,\text{nm}$, which differ from the table by less than $0.1\,\%$ ($656.3\,\text{nm}$ is an air wavelength, and the simple model with $13.6\,\text{eV}$ is not exact), so the match holds.
+
+A line spectrum arises because the energy levels of the atom are quantised: the electron can only move from one level to another, so the photon's energy is always the difference of some pair of levels. Only certain energies, and so certain wavelengths, are possible, and the spectrum is not continuous.
+
+If you choose other lines of the table, for example $434.0\,\text{nm}$, they match the transitions $5 \to 2$ and $6 \to 2$ in the same way.
 **Answer:** $\Delta E_{3 \to 2} = 1.89\,\text{eV}$, three significant figures like the constant $13.6\,\text{eV}$. The measured line's energy $1.889\,\text{eV}$ is the same, so the answer does not depend on which of the table's parallel values you chose.
 **Reasonableness:** Red light is the low-energy end of the visible range, and $1.9\,\text{eV}$ is the right order of magnitude. A round-number estimate: $\tfrac{1240\,\text{eV nm}}{656\,\text{nm}} \approx 1.89\,\text{eV}$. The difference is smaller than the ionisation energy $13.6\,\text{eV}$, as it must be between bound levels, and the transition $4 \to 2$ gives a larger energy, that is a shorter wavelength, than $3 \to 2$.
 
 ## fy8-3-L3-04
 **Given:** emission lines $\lambda = 1876$; $1282$ and $1094\,\text{nm}$ ($\pm 1\,\text{nm}$), $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, all lines end on the same level, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Asked:** the minimum frequency $f_\text{ion}$ in terahertz at which a photon ionises the atom from the level on which the transitions end
-**Principle:** The energy of the photon of each line is the difference between the energies of the initial and final levels, $\tfrac{hc}{\lambda} = E_\text{u} - E_m$, where $m$ is the common final level. We try a final level: the upper level is $E_\text{u} = E_m + \tfrac{hc}{\lambda}$, and from it $n_\text{u} = \sqrt{\tfrac{13.6\,\text{eV}}{-E_\text{u}}}$, which must be an integer. Ionisation from state $m$ requires the energy $0 - E_m$, and the energy of the photon is $hf$.
+**Principle:** The energy of the photon of each line is the difference between the energies of the initial and final levels, $\tfrac{hc}{\lambda} = E_\text{u} - E_m$, where $m$ is the common final level. We try a final level: the upper level is $E_\text{u} = E_m + \tfrac{hc}{\lambda}$, and from it $n_\text{u} = \sqrt{\tfrac{13.6\,\text{eV}}{-E_\text{u}}}$, which must be an integer.
+
+Ionisation from state $m$ requires the energy $0 - E_m$, and the energy of the photon is $hf$.
 **Formula:** $\dfrac{hc}{\lambda} = E_\text{u} - E_m$ and for ionisation $h f_\text{ion} = 0 - E_m$, so $f_\text{ion} = \dfrac{13.6\,\text{eV}}{m^2 h}$
 **Conversions:** The energies of the photons are calculated in joules and converted to electron volts by dividing by $1.602 \cdot 10^{-19}\,\text{J}$. The ionisation energy is converted to joules by multiplying by $1.602 \cdot 10^{-19}\,\text{J}$, and finally $1\,\text{THz} = 10^{12}\,\text{Hz}$.
 **Substitution:** The product $hc = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. The energies of the photons are $\tfrac{hc}{\lambda} = 0.6610\,\text{eV}$, $0.9672\,\text{eV}$ and $1.1335\,\text{eV}$.
@@ -325,15 +355,25 @@ $$\begin{aligned}
 
 Ionisation from state $3$ requires $1.5111\,\text{eV} = 1.5111 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 2.4209 \cdot 10^{-19}\,\text{J}$ and $f_\text{ion} = \dfrac{2.4209 \cdot 10^{-19}\,\text{J}}{6.626 \cdot 10^{-34}\,\text{J}\,\text{s}} = 3.653 \cdot 10^{14}\,\text{Hz} = 365.3\,\text{THz}$
 **Answer:** $365\,\text{THz}$, that is $3.65 \cdot 10^{14}\,\text{Hz}$, three significant figures, as in the value $13.6\,\text{eV}$; the uncertainty of the wavelengths, $\pm 1\,\text{nm}$, is less than $0.1\,\%$. The limit corresponds to the wavelength $\tfrac{c}{f_\text{ion}} \approx 821\,\text{nm}$, which is near infrared.
-**Reasonableness:** The threshold wavelength $821\,\text{nm}$ is shorter than any of the observed lines ($1094$–$1876\,\text{nm}$), as it should be for a series: the shortest possible wavelength of a series corresponds to a transition from an infinitely high level. The line $4 \to 3$ is the longest of the series and has the smallest energy, $0.661\,\text{eV}$, so this also agrees.
+**Reasonableness:** The threshold wavelength $821\,\text{nm}$ is shorter than any of the observed lines ($1094$–$1876\,\text{nm}$), as it should be for a series: the shortest possible wavelength of a series corresponds to a transition from an infinitely high level.
+
+The line $4 \to 3$ is the longest of the series and has the smallest energy, $0.661\,\text{eV}$, so this also agrees.
 
 ## fy8-3-L3-05
 **Given:** lines $\lambda = 102.6$; $121.6$; $486.1$; $656.3$ and $1875\,\text{nm}$ ($\pm 1\,\text{nm}$), atoms in the ground state, $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Asked:** the wavelength $\lambda_\text{L}$ of the ultraviolet source in nanometres
-**Principle:** The energy of the photon of each line is the difference between levels, and energy is conserved. Once the lines have been identified, the highest initial level is the level to which the atoms were excited; the photon raised the atom from the ground state to this level, so the energy of the photon of the source is the difference between its energy and that of the ground state. If the excitation level were higher, the gas would also emit lines starting from it.
+**Principle:** The energy of the photon of each line is the difference between levels, and energy is conserved.
+
+Once the lines have been identified, the highest initial level is the level to which the atoms were excited; the photon raised the atom from the ground state to this level, so the energy of the photon of the source is the difference between its energy and that of the ground state.
+
+If the excitation level were higher, the gas would also emit lines starting from it.
 **Formula:** $\dfrac{hc}{\lambda_\text{L}} = E_\text{u} - E_1$, so $\lambda_\text{L} = \dfrac{hc}{E_\text{u} - E_1}$
 **Conversions:** The energies of the photons are converted from joules to electron volts by dividing by $1.602 \cdot 10^{-19}\,\text{J}$; finally $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Substitution:** The product $hc = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. The energies of the lines are $12.09$; $10.20$; $2.551$; $1.889$ and $0.661\,\text{eV}$. They correspond to the differences between pairs of levels $E_3 - E_1 = 12.09\,\text{eV}$, $E_2 - E_1 = 10.20\,\text{eV}$, $E_4 - E_2 = 2.55\,\text{eV}$, $E_3 - E_2 = 1.889\,\text{eV}$ and $E_4 - E_3 = 0.661\,\text{eV}$. So the lines are the transitions $3 \to 1$, $2 \to 1$, $4 \to 2$, $3 \to 2$ and $4 \to 3$. The highest initial level is $n = 4$. From level $n = 5$ there would be lines $\lambda = 95.0$; $434$; $1282$ or $4052\,\text{nm}$, but none of them is in the table, so the atoms were not excited higher than level $n = 4$. The direct transition $4 \to 1$ emits the wavelength of the source, $97.3\,\text{nm}$, which was filtered out, so it is not in the table. The energy of the photon of the source is $E_4 - E_1 = 13.6\,\text{eV} - \dfrac{13.6\,\text{eV}}{16} = 12.75\,\text{eV} = 12.75 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 2.0426 \cdot 10^{-18}\,\text{J}$ and $\lambda_\text{L} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2.0426 \cdot 10^{-18}\,\text{J}} = 9.725 \cdot 10^{-8}\,\text{m} = 97.25\,\text{nm}$
+**Substitution:** The product $hc = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. The energies of the lines are $12.09$; $10.20$; $2.551$; $1.889$ and $0.661\,\text{eV}$. They correspond to the differences between pairs of levels $E_3 - E_1 = 12.09\,\text{eV}$, $E_2 - E_1 = 10.20\,\text{eV}$, $E_4 - E_2 = 2.55\,\text{eV}$, $E_3 - E_2 = 1.889\,\text{eV}$ and $E_4 - E_3 = 0.661\,\text{eV}$. So the lines are the transitions $3 \to 1$, $2 \to 1$, $4 \to 2$, $3 \to 2$ and $4 \to 3$.
+
+The highest initial level is $n = 4$. From level $n = 5$ there would be lines $\lambda = 95.0$; $434$; $1282$ or $4052\,\text{nm}$, but none of them is in the table, so the atoms were not excited higher than level $n = 4$.
+
+The direct transition $4 \to 1$ emits the wavelength of the source, $97.3\,\text{nm}$, which was filtered out, so it is not in the table. The energy of the photon of the source is $E_4 - E_1 = 13.6\,\text{eV} - \dfrac{13.6\,\text{eV}}{16} = 12.75\,\text{eV} = 12.75 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 2.0426 \cdot 10^{-18}\,\text{J}$ and $\lambda_\text{L} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2.0426 \cdot 10^{-18}\,\text{J}} = 9.725 \cdot 10^{-8}\,\text{m} = 97.25\,\text{nm}$
 **Answer:** $97.3\,\text{nm}$, three significant figures, as in the value $13.6\,\text{eV}$.
 **Reasonableness:** The energy of the photon of the source, $12.75\,\text{eV}$, is smaller than the ionisation energy $13.6\,\text{eV}$, so the atoms are not ionised, and the wavelength is shorter than the shortest observed line, $102.6\,\text{nm}$. The sum of the energies of the photons of the cascade $4 \to 3 \to 2 \to 1$ is $$
 \begin{aligned}

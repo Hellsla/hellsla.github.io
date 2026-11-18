@@ -25,16 +25,16 @@
       "type": "choice",
       "title": "Kertaa: taajuus ja aallonpituus",
       "optional": true,
-      "prompt": "Valo etenee tyhjiössä aina samalla nopeudella $c$. Violetin valon aallonpituus on noin $400\\,\\text{nm}$ ja punaisen noin $650\\,\\text{nm}$. Kumman valon taajuus on suurempi?",
+      "prompt": "Valo etenee tyhjiössä aina samalla nopeudella $c$. Sinkkilevyä valaisevan UV-C-lampun aallonpituus on noin $254\\,\\text{nm}$ ja punaisen lampun noin $650\\,\\text{nm}$. Kumman lampun valon taajuus on suurempi?",
       "choices": [
         {
-          "text": "Violetin, koska lyhyempi aallonpituus tarkoittaa suurempaa taajuutta.",
+          "text": "UV-C-valon, koska lyhyempi aallonpituus tarkoittaa suurempaa taajuutta.",
           "correct": true,
-          "feedback": "Oikein. Aaltoliikkeen perusyhtälöstä $c = f\\lambda$ saadaan $f = \\tfrac{c}{\\lambda}$ (luku *Aaltojen synty ja eteneminen*), joten lyhyempi aallonpituus antaa suuremman taajuuden. Violetin valon taajuus on noin $7{,}5 \\cdot 10^{14}\\,\\text{Hz}$ ja punaisen noin $4{,}6 \\cdot 10^{14}\\,\\text{Hz}$."
+          "feedback": "Oikein. Aaltoliikkeen perusyhtälöstä $c = f\\lambda$ saadaan $f = \\tfrac{c}{\\lambda}$ (luku *Aaltojen synty ja eteneminen*), joten lyhyempi aallonpituus antaa suuremman taajuuden. UV-C-valon taajuus on noin $1{,}2 \\cdot 10^{15}\\,\\text{Hz}$ ja punaisen noin $4{,}6 \\cdot 10^{14}\\,\\text{Hz}$."
         },
         {
-          "text": "Punaisen, koska pidempi aalto värähtelee useammin.",
-          "feedback": "Kun aallon nopeus on sama, pidempi aalto ehtii värähtää sekunnissa *harvemmin*: $f = \\tfrac{c}{\\lambda}$. Punaisen valon taajuus on siksi pienempi kuin violetin."
+          "text": "Punaisen valon, koska pidempi aalto värähtelee useammin.",
+          "feedback": "Kun aallon nopeus on sama, pidempi aalto ehtii värähtää sekunnissa *harvemmin*: $f = \\tfrac{c}{\\lambda}$. Punaisen valon taajuus on siksi pienempi kuin UV-C-valon."
         },
         {
           "text": "Taajuudet ovat yhtä suuret, koska kumpikin etenee valon nopeudella.",

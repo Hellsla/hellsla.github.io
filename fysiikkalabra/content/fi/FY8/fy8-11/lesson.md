@@ -632,7 +632,9 @@ $$. Atomimassat ovat: uraani-235 $235{,}0439282\,\text{u}$, barium-141 $140{,}91
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Atomimassat $m_\text{U} = 235{,}0439282\,\text{u}$, $m_\text{Ba} = 140{,}9144033\,\text{u}$, $m_\text{Kr} = 91{,}9261731\,\text{u}$ ja $m_\text{n} = 1{,}0086649\,\text{u}$. Kysytään reaktioenergiaa $Q$ megaelektronivoltteina.
+**Tunnetut ja kysytty.** Atomimassat $m_\text{U} = 235{,}0439282\,\text{u}$, $m_\text{Ba} = 140{,}9144033\,\text{u}$, $m_\text{Kr} = 91{,}9261731\,\text{u}$ ja $m_\text{n} = 1{,}0086649\,\text{u}$.
+
+Kysytään reaktioenergiaa $Q$ megaelektronivoltteina.
 
 <!-- vaihe -->
 

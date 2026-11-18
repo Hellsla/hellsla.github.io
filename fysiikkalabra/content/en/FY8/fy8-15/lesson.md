@@ -419,7 +419,9 @@ A free neutron decays by the reaction $n \to p + e^- + \bar{\nu}_e$. Show that t
 
 <!-- vaihe -->
 
-**Given and asked.** The reaction $n \to p + e^- + \bar{\nu}_e$ and the numbers $q$, $B$ and $L$ from the table. The masses are $m_n = 939.565\,\tfrac{\text{MeV}}{c^2}$, $m_p = 938.272\,\tfrac{\text{MeV}}{c^2}$ and $m_e = 0.511\,\tfrac{\text{MeV}}{c^2}$. We are asked whether $q$, $B$ and $L$ are conserved, and for the released energy $Q$ in megaelectronvolts.
+**Given and asked.** The reaction $n \to p + e^- + \bar{\nu}_e$ and the numbers $q$, $B$ and $L$ from the table. The masses are $m_n = 939.565\,\tfrac{\text{MeV}}{c^2}$, $m_p = 938.272\,\tfrac{\text{MeV}}{c^2}$ and $m_e = 0.511\,\tfrac{\text{MeV}}{c^2}$.
+
+We are asked whether $q$, $B$ and $L$ are conserved, and for the released energy $Q$ in megaelectronvolts.
 
 <!-- vaihe -->
 
@@ -465,7 +467,9 @@ A free neutron decays by the reaction $n \to p + e^- + \bar{\nu}_e$. Show that t
 
 <!-- vaihe -->
 
-**Reasonableness.** The neutron is $1.293\,\tfrac{\text{MeV}}{c^2}$ heavier than the proton. The electron is also in the final state, so its mass $0.511\,\tfrac{\text{MeV}}{c^2}$ has already been subtracted from the difference, and a little under one megaelectronvolt remains. This is of the same order of magnitude as the energies of the beta decays of nuclei in the chapter *The atomic nucleus and radioactive decay*. Without the antineutrino the lepton number at the end would be $1$, so the antineutrino has to be produced.
+**Reasonableness.** The neutron is $1.293\,\tfrac{\text{MeV}}{c^2}$ heavier than the proton. The electron is also in the final state, so its mass $0.511\,\tfrac{\text{MeV}}{c^2}$ has already been subtracted from the difference, and a little under one megaelectronvolt remains.
+
+This is of the same order of magnitude as the energies of the beta decays of nuclei in the chapter *The atomic nucleus and radioactive decay*. Without the antineutrino the lepton number at the end would be $1$, so the antineutrino has to be produced.
 
 ## Common misconception
 Many people think that the mass of the proton is the sum of the masses of its three quarks, just as the mass of a house is the sum of the masses of its bricks. However, the masses of the quarks are only about $1\,\%$ of the mass of the proton. Most of the mass of the proton is the energy of the strong interaction that binds the quarks, $m = \tfrac{E}{c^2}$. This is also why quarks cannot be pulled out like bricks: the energy spent on pulling them out creates new hadrons.

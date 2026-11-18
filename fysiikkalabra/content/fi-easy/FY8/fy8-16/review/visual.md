@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 0912e2a035aed477
+CONTENT-HASH: 20fe97b046c6acc0
 
 ## Blocking
 
 ## Polish
+- [Minor] lesson.md, new inflation paragraph: for S2 readers "hypoteesin" and "suurissa mittakaavoissa" could be glossed in a few words (e.g. "hypoteesi eli tieteellinen olettamus").
 
 ## Checked
-- No capture opened; the v block judged from source, the same block type seen aligned in fy8-1 theory-1280-2.
-- Delta judged: formula lifted into an aligned block, first row the left-hand side alone; words, numbers and units unchanged.
+batch delta review: new Finnish paragraph on kosminen inflaatio (short, one idea, bold term, no plain quantities); fig-row-1280 capture opened, layout intact; typography re-sets render cleanly.

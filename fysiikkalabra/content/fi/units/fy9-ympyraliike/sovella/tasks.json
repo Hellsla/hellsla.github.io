@@ -1,970 +1,1268 @@
 {
- "intro": "Seitsemän ylioppilaskokeen tyylistä tehtävää kokoaa tunnin tasapainon, ympyräliikkeen ja gravitaation. Ratkaise ne kuten kokeessa: piirrä voimakuvio, perustele, mitä ehtoa käytät ja miksi se pätee, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis. Viimeinen tehtävä on soveltava aineistotehtävä, jonka aineisto avautuu tehtävän linkistä.",
- "tasks": [
-  {
-   "id": "fy9-ympyraliike-s1",
-   "title": "Veneen traileri ja aisapaino",
-   "source": "example",
-   "source_note": "Trailerin, veneen ja ohjeen luvut ovat keksitty esimerkki. Suuruusluokat vastaavat pientä veneenkuljetustraileria.",
-   "skills": [
-    "fy5-2",
-    "fy5-1",
-    "fy4-5"
-   ],
-   "text": "Perhe vie $4{,}6\\,\\text{m}$:n alumiiniveneen mökille yksiakselisella trailerilla. Trailerin vetoaisa on kiinni auton vetokoukussa, ja kytkin kohdistaa vetoaisaan pystysuoran voiman. Tämän voiman suuruutta massana ilmaistuna kutsutaan aisapainoksi. Trailerin ohjeen mukaan aisapainon pitäisi olla $50\\text{–}75\\,\\text{kg}$. Traileri seisoo vaakasuoralla pihalla, ja vetoaisa on vaakasuorassa.\n\nVaakasuorat etäisyydet on mitattu trailerin akselista eteenpäin, kohti vetokoukkua:\n\n- trailerin massa $165\\,\\text{kg}$, painopiste $0{,}58\\,\\text{m}$ akselin edessä\n- veneen ja perämoottorin massa yhteensä $430\\,\\text{kg}$, yhteinen painopiste $0{,}12\\,\\text{m}$ akselin edessä\n- kytkin $3{,}25\\,\\text{m}$ akselin edessä",
-   "parts": [
+  "intro": "Yhdeksän ylioppilaskokeen tyylistä tehtävää kokoaa tunnin tasapainon, ympyräliikkeen ja gravitaation. Ratkaise ne kuten kokeessa: piirrä voimakuvio, perustele, mitä ehtoa käytät ja miksi se pätee, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis. Tehtävä 7 on soveltava aineistotehtävä, jonka aineisto avautuu tehtävän linkistä.",
+  "tasks": [
     {
-     "id": "a",
-     "kind": "calc",
-     "points": 5,
-     "text": "Piirrä trailerin ja veneen voimakuvio. Kuinka suuri on kytkimen vetoaisaan kohdistama pystysuora voima? Mikä on aisapaino?",
-     "answer": [
-      {
-       "name": "F",
-       "value": 444.6,
-       "unit": "N",
-       "tolerance": 0.03
-      },
-      {
-       "name": "m",
-       "value": 45.32,
-       "unit": "kg",
-       "tolerance": 0.03
+      "id": "fy9-ympyraliike-s1",
+      "title": "Veneen traileri ja aisapaino",
+      "source": "example",
+      "source_note": "Trailerin, veneen ja ohjeen luvut ovat keksitty esimerkki. Suuruusluokat vastaavat pientä veneenkuljetustraileria.",
+      "skills": [
+        "fy5-2",
+        "fy5-1",
+        "fy4-5"
+      ],
+      "text": "Perhe vie $4{,}6\\,\\text{m}$:n alumiiniveneen mökille yksiakselisella trailerilla. Trailerin vetoaisa on kiinni auton vetokoukussa, ja kytkin kohdistaa vetoaisaan pystysuoran voiman. Tämän voiman suuruutta massana ilmaistuna kutsutaan aisapainoksi. Trailerin ohjeen mukaan aisapainon pitäisi olla $50\\text{–}75\\,\\text{kg}$. Traileri seisoo vaakasuoralla pihalla, ja vetoaisa on vaakasuorassa.\n\nVaakasuorat etäisyydet on mitattu trailerin akselista eteenpäin, kohti vetokoukkua:\n\n- trailerin massa $165\\,\\text{kg}$, painopiste $0{,}58\\,\\text{m}$ akselin edessä\n- veneen ja perämoottorin massa yhteensä $430\\,\\text{kg}$, yhteinen painopiste $0{,}12\\,\\text{m}$ akselin edessä\n- kytkin $3{,}25\\,\\text{m}$ akselin edessä",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Piirrä trailerin ja veneen voimakuvio. Kuinka suuri on kytkimen vetoaisaan kohdistama pystysuora voima? Mikä on aisapaino?",
+          "answer": [
+            {
+              "name": "F",
+              "value": 444.6,
+              "unit": "N",
+              "tolerance": 0.03
+            },
+            {
+              "name": "m",
+              "value": 45.32,
+              "unit": "kg",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Kappaleena traileri ja vene: painot $\\overline{G}_\\text{t}$ ja $\\overline{G}_\\text{v}$ painopisteistä alas, akselin tukivoima $\\overline{N}$ ja kytkimen voima $\\overline{F}$ ylös."
+            },
+            {
+              "text": "Perustelee momenttipisteen: akselin suhteen tukivoiman $N$ varsi on nolla.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\n&F \\cdot 3{,}25\\,\\text{m} \\\\\n&= m_\\text{t} g \\cdot 0{,}58\\,\\text{m} \\\\\n&+ m_\\text{v} g \\cdot 0{,}12\\,\\text{m}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\n&F \\cdot 3{,}25\\,\\text{m} \\\\\n&= (165 \\cdot 0{,}58 + 430 \\cdot 0{,}12)\\,\\text{kg} \\\\\n&\\cdot \\text{m} \\cdot 9{,}81\\,\\text{m/s}^2\n\\end{aligned}\n$$, joten $F \\approx 445\\,\\text{N}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F \\approx 440\\,\\text{N}$ ja aisapaino $F : g \\approx 45\\,\\text{kg}$ kahdella merkitsevällä numerolla, alle ohjeen $50\\,\\text{kg}$:n"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuren voiman maa kohdistaa trailerin pyöriin?",
+          "answer": {
+            "value": 5.392,
+            "unit": "kN",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Etenemisen suhteen $N + F = (m_\\text{t} + m_\\text{v})g$, joten $N = (m_\\text{t} + m_\\text{v})g - F$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nN &= 595\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\\n&- 445\\,\\text{N} \\\\\n&\\approx 5390\\,\\text{N}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Pyörät kantavat noin $92\\,\\%$ painosta, koska yhteinen painopiste on lähellä akselia."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Venettä voi siirtää trailerilla eteenpäin. Kuinka paljon venettä on siirrettävä, jotta aisapaino on $60\\,\\text{kg}$?",
+          "answer": {
+            "value": 11.09,
+            "unit": "cm",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "text": "Perustelee, että siirto muuttaa vain veneen painon vartta, ja aisapainon $60\\,\\text{kg}$ voima on $60\\,\\text{kg} \\cdot g$.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\n&60\\,\\text{kg} \\cdot g \\cdot 3{,}25\\,\\text{m} \\\\\n&= m_\\text{t} g \\cdot 0{,}58\\,\\text{m} \\\\\n&+ m_\\text{v} g\\,(0{,}12\\,\\text{m} + \\Delta x)\n\\end{aligned}\n$$, joten $g$ supistuu"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\n\\Delta x &= \\dfrac{195\\,\\text{kg} \\cdot \\text{m} - 147{,}3\\,\\text{kg} \\cdot \\text{m}}{430\\,\\text{kg}} \\\\\n&\\approx 0{,}111\\,\\text{m}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$\\Delta x \\approx 11\\,\\text{cm}$ eteenpäin, kaksi merkitsevää numeroa"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Mökkimatkaa varten veneen perään, $1{,}40\\,\\text{m}$ akselin taakse, lastataan $30\\,\\text{kg}$ polttoainetta ja varusteita. Miten aisapaino muuttuu a-kohdan tilanteesta? Miksi liian pieni tai negatiivinen aisapaino on vaarallinen?",
+          "criteria": [
+            {
+              "text": "Perustelee momenttiehdolla, että akselin takana oleva kuorma pienentää aisapainoa: $30\\,\\text{kg} \\cdot 1{,}40\\,\\text{m} : 3{,}25\\,\\text{m} \\approx 13\\,\\text{kg}$, jolloin aisapaino on noin $32\\,\\text{kg}$.",
+              "tag": "math",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Liian pieni aisapaino keventää vetokoukkua; jos yhteinen painopiste siirtyy akselin taakse, aisapaino on negatiivinen ja kytkin joutuu pitämään vetoaisaa alhaalla, jolloin traileri nostaa auton takapäätä ja takapyörien pito heikkenee."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy5-2",
+        "math": "fy5-2",
+        "transfer": "fy5-1",
+        "communication": "fy5-2"
       }
-     ],
-     "criteria": [
-      {
-       "key": "fbd_forces",
-       "points": 1,
-       "detail": "Kappaleena traileri ja vene: painot $\\overline{G}_\\text{t}$ ja $\\overline{G}_\\text{v}$ painopisteistä alas, akselin tukivoima $\\overline{N}$ ja kytkimen voima $\\overline{F}$ ylös."
-      },
-      {
-       "text": "Perustelee momenttipisteen: akselin suhteen tukivoiman $N$ varsi on nolla.",
-       "tag": "concept",
-       "points": 1
-      },
-      {
-       "key": "equation",
-       "points": 1,
-       "detail": "$$\n\\begin{aligned}\n&F \\cdot 3{,}25\\,\\text{m} \\\\\n&= m_\\text{t} g \\cdot 0{,}58\\,\\text{m} \\\\\n&+ m_\\text{v} g \\cdot 0{,}12\\,\\text{m}\n\\end{aligned}\n$$"
-      },
-      {
-       "key": "calculation",
-       "points": 1,
-       "detail": "$$\n\\begin{aligned}\n&F \\cdot 3{,}25\\,\\text{m} \\\\\n&= (165 \\cdot 0{,}58 + 430 \\cdot 0{,}12)\\,\\text{kg} \\\\\n&\\cdot \\text{m} \\cdot 9{,}81\\,\\text{m/s}^2\n\\end{aligned}\n$$, joten $F \\approx 445\\,\\text{N}$"
-      },
-      {
-       "key": "units_precision",
-       "points": 1,
-       "detail": "$F \\approx 440\\,\\text{N}$ ja aisapaino $F : g \\approx 45\\,\\text{kg}$ kahdella merkitsevällä numerolla, alle ohjeen $50\\,\\text{kg}$:n"
-      }
-     ]
     },
     {
-     "id": "b",
-     "kind": "calc",
-     "points": 3,
-     "text": "Kuinka suuren voiman maa kohdistaa trailerin pyöriin?",
-     "answer": {
-      "value": 5.392,
-      "unit": "kN",
-      "tolerance": 0.02
-     },
-     "criteria": [
-      {
-       "key": "equation",
-       "points": 1,
-       "detail": "Etenemisen suhteen $N + F = (m_\\text{t} + m_\\text{v})g$, joten $N = (m_\\text{t} + m_\\text{v})g - F$"
-      },
-      {
-       "key": "calculation",
-       "points": 1,
-       "detail": "$$\n\\begin{aligned}\nN &= 595\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\\n&- 445\\,\\text{N} \\\\\n&\\approx 5390\\,\\text{N}\n\\end{aligned}\n$$"
-      },
-      {
-       "key": "reasonableness",
-       "points": 1,
-       "detail": "Pyörät kantavat noin $92\\,\\%$ painosta, koska yhteinen painopiste on lähellä akselia."
+      "id": "fy9-ympyraliike-s2",
+      "title": "Sääsatelliitti napojen yli",
+      "source": "example",
+      "source_note": "Satelliitti ja sen luvut ovat keksitty esimerkki. Korkeus ja massa vastaavat todellisia napaa kiertäviä sääsatelliitteja.",
+      "skills": [
+        "fy5-6",
+        "fy5-5",
+        "fy5-3"
+      ],
+      "text": "Eurooppalainen sääsatelliitti kiertää Maata lähes ympyrärataa, joka kulkee napojen yli. Maan pinnalla oleva vastaanottoasema Pohjois-Suomessa saa sen mittaukset monella peräkkäisellä kierroksella, koska satelliitti ohittaa pohjoisnavan joka kierroksella.\n\n- satelliitin massa $4100\\,\\text{kg}$, radan korkeus maanpinnasta $830\\,\\text{km}$\n- Maan massa $5{,}97 \\cdot 10^{24}\\,\\text{kg}$ ja säde $6371\\,\\text{km}$\n- Maa pyörähtää akselinsa ympäri kerran $23\\,\\text{h}\\;56\\,\\text{min}$:ssa\n- gravitaatiovakio $$\n\\gamma = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}\n$$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kuinka suuri on satelliitin ratanopeus? Kuinka pitkä on sen kiertoaika minuutteina?",
+          "answer": [
+            {
+              "name": "v",
+              "value": 7.438,
+              "unit": "km/s",
+              "tolerance": 0.02
+            },
+            {
+              "name": "T",
+              "value": 101.4,
+              "unit": "min",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "text": "Perustelee, että Maan gravitaatiovoima on satelliitin ainoa voima ja siis keskipisteeseen osoittava kokonaisvoima.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\gamma\\dfrac{Mm}{r^2} = m\\dfrac{v^2}{r}$, joten $v = \\sqrt{\\dfrac{\\gamma M}{r}}$, ja $T = \\dfrac{2\\pi r}{v}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$r = R + h = 7201\\,\\text{km}$; $v \\approx 7440\\,\\text{m/s}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nT &= \\dfrac{2\\pi \\cdot 7{,}201 \\cdot 10^{6}\\,\\text{m}}{7438\\,\\text{m/s}} \\\\\n&\\approx 6083\\,\\text{s} \\\\\n&\\approx 101\\,\\text{min}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 7{,}44\\,\\text{km/s}$ ja $T \\approx 101\\,\\text{min}$ kolmella merkitsevällä numerolla"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri gravitaatiovoima satelliittiin vaikuttaa radalla? Kuinka monta prosenttia se on satelliitin painosta maanpinnalla?",
+          "answer": {
+            "value": 31.5,
+            "unit": "kN",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$F = \\gamma\\dfrac{Mm}{(R + h)^2}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nF &= \\dfrac{3{,}984 \\cdot 10^{14} \\cdot 4100}{(7{,}201 \\cdot 10^{6})^2}\\,\\text{N} \\\\\n&\\approx 31{,}5\\,\\text{kN}\n\\end{aligned}\n$$, kun $\\gamma M = 3{,}984 \\cdot 10^{14}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}}$"
+            },
+            {
+              "text": "Vertaa painoon $mg \\approx 40{,}2\\,\\text{kN}$: voima on noin $78\\,\\%$ painosta, sama kuin $\\left(\\tfrac{R}{R + h}\\right)^2$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F \\approx 31{,}5\\,\\text{kN}$ kolmella merkitsevällä numerolla ja osuus noin $78\\,\\%$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Satelliitin radan taso pysyy avaruudessa lähes paikallaan, ja Maa pyörii sen alla. Kuinka monta astetta Maa kiertyy yhden satelliitin kierroksen aikana? Kuinka pitkän matkan päiväntasaajan kohta siirtyy samassa ajassa?",
+          "answer": [
+            {
+              "name": "deg",
+              "value": 25.41,
+              "unit": "°",
+              "tolerance": 0.02
+            },
+            {
+              "name": "km",
+              "value": 2826,
+              "unit": "km",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Kiertymä on $360^\\circ \\cdot \\dfrac{T}{T_\\text{Maa}}$ ja päiväntasaajan kohdan matka $2\\pi R \\cdot \\dfrac{T}{T_\\text{Maa}}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\dfrac{6083\\,\\text{s}}{86\\,160\\,\\text{s}} \\cdot 360^\\circ \\approx 25{,}4^\\circ$ ja $$\n\\begin{aligned}\n&2\\pi \\cdot 6371\\,\\text{km} \\cdot 0{,}0706 \\\\\n&\\approx 2830\\,\\text{km}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$25{,}4^\\circ$ ja noin $2830\\,\\text{km}$ kolmella merkitsevällä numerolla"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Opiskelija ehdottaa: ”Siirretään sääsatelliitti geostationaariselle radalle, niin se näkee Suomen koko ajan.” Arvioi, miksi napojen yli kiertävää rataa käytetään silti tarkkoihin mittauksiin pohjoisilta alueilta. Geostationaarinen rata on $35\\,800\\,\\text{km}$:n korkeudella päiväntasaajan yläpuolella.",
+          "criteria": [
+            {
+              "text": "Perustelee etäisyydellä: geostationaarinen rata on yli $40$ kertaa kauempana kuin $830\\,\\text{km}$, joten samalla laitteella yksityiskohdat näkyvät paljon epätarkempina.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "text": "Perustelee radan paikalla: geostationaarinen rata on päiväntasaajan tasossa, joten se näkee Suomen hyvin vinosta kulmasta eikä napa-alueita lainkaan; napojen yli kiertävä satelliitti kulkee jokaisella kierroksella pohjoisen yli.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Ehdotuksessa on hyvä puoli, jatkuva näkyvyys, mutta tarkkoihin pohjoisiin mittauksiin matala napojen yli kulkeva rata sopii paremmin."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy5-6",
+        "math": "fy5-6",
+        "transfer": "fy5-3",
+        "communication": "fy5-6"
       }
-     ]
     },
     {
-     "id": "c",
-     "kind": "calc",
-     "points": 4,
-     "text": "Venettä voi siirtää trailerilla eteenpäin. Kuinka paljon venettä on siirrettävä, jotta aisapaino on $60\\,\\text{kg}$?",
-     "answer": {
-      "value": 11.09,
-      "unit": "cm",
-      "tolerance": 0.04
-     },
-     "criteria": [
-      {
-       "text": "Perustelee, että siirto muuttaa vain veneen painon vartta, ja aisapainon $60\\,\\text{kg}$ voima on $60\\,\\text{kg} \\cdot g$.",
-       "tag": "transfer",
-       "points": 1
-      },
-      {
-       "key": "equation",
-       "points": 1,
-       "detail": "$$\n\\begin{aligned}\n&60\\,\\text{kg} \\cdot g \\cdot 3{,}25\\,\\text{m} \\\\\n&= m_\\text{t} g \\cdot 0{,}58\\,\\text{m} \\\\\n&+ m_\\text{v} g\\,(0{,}12\\,\\text{m} + \\Delta x)\n\\end{aligned}\n$$, joten $g$ supistuu"
-      },
-      {
-       "key": "calculation",
-       "points": 1,
-       "detail": "$$\n\\begin{aligned}\n\\Delta x &= \\dfrac{195\\,\\text{kg} \\cdot \\text{m} - 147{,}3\\,\\text{kg} \\cdot \\text{m}}{430\\,\\text{kg}} \\\\\n&\\approx 0{,}111\\,\\text{m}\n\\end{aligned}\n$$"
-      },
-      {
-       "key": "units_precision",
-       "points": 1,
-       "detail": "$\\Delta x \\approx 11\\,\\text{cm}$ eteenpäin, kaksi merkitsevää numeroa"
+      "id": "fy9-ympyraliike-s3",
+      "title": "Keskeisvoima pyörivällä alustalla",
+      "source": "example",
+      "source_note": "Aineisto on keksitty esimerkki: voimat on laskettu ympyräliikkeen liikeyhtälöstä, ja niihin on lisätty mittausten kaltaista vaihtelua.",
+      "skills": [
+        "fy5-4",
+        "fy5-3",
+        "fy1-4"
+      ],
+      "text": "Fysiikan tunnilla tutkittiin pyörivää alustaa. Alustalla on kiskot, joilla pieni kärry kulkee lähes kitkatta. Kärry on kiinni langalla, joka kulkee alustan pyörimisakselilla olevaan voima-anturiin. Kärryn painopisteen etäisyys akselista pidettiin koko ajan samana, $0{,}250\\,\\text{m}$, ja kärryn massa punnittiin: $0{,}200\\,\\text{kg}$. Alustaa pyöritettiin moottorilla tasaisesti eri nopeuksilla. Kymmenen kierroksen aika mitattiin sekuntikellolla, ja voima luettiin anturin näytöltä.\n\n| $10T\\ (\\text{s})$ | $F\\ (\\text{N})$ |\n|---|---|\n| $6{,}0$ | $5{,}42$ |\n| $7{,}0$ | $4{,}07$ |\n| $8{,}0$ | $3{,}05$ |\n| $9{,}5$ | $2{,}21$ |\n| $11{,}0$ | $1{,}65$ |\n| $13{,}0$ | $1{,}19$ |\n| $15{,}0$ | $0{,}88$ |",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "graph",
+          "points": 4,
+          "text": "Esitä langan voima kierrosajan funktiona kuvaajana. Perustele, miksi pisteisiin ei sovi suora.",
+          "criteria": [
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "Vaaka-akselilla kierrosaika $T\\ (\\text{s})$, ei kymmenen kierroksen aika; pystyakselilla $F\\ (\\text{N})$."
+            },
+            {
+              "key": "graph_points",
+              "points": 1
+            },
+            {
+              "text": "Perustelee kuvaajan kaarevuudella ja fysiikalla: voima pienenee nopeammin kuin kierrosaika kasvaa, ja nopea pyöriminen vaatii paljon suuremman voiman, koska normaalikiihtyvyys kasvaa nopeuden neliön mukaan.",
+              "tag": "graph",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "graph",
+          "points": 6,
+          "text": "Muodosta aineistosta suure, jonka funktiona langan voiman kuvaaja on suora, kun kärryn massa ja etäisyys akselista pysyvät samoina. Perustele valintasi. Esitä kuvaaja ja sovita pisteisiin suora.",
+          "criteria": [
+            {
+              "text": "Perustelee linearisoinnin: $F = m\\tfrac{v^2}{r}$ ja $v = \\tfrac{2\\pi r}{T}$ antavat $F = 4\\pi^2 mr \\cdot \\tfrac{1}{T^2}$, joten $F$ on suoraan verrannollinen suureeseen $\\tfrac{1}{T^2}$.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Laskee taulukkoon kierrosajat $T$ ja suureen $\\tfrac{1}{T^2}$ arvot oikein yksikköineen.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "graph_axes",
+              "points": 1,
+              "detail": "Vaaka-akselilla $\\tfrac{1}{T^2}\\ (\\tfrac{1}{\\text{s}^2})$, pystyakselilla $F\\ (\\text{N})$."
+            },
+            {
+              "key": "graph_fit",
+              "points": 2,
+              "detail": "Sovitettu suora kulkee pisteiden läpi lähes origon kautta; pisteet eivät yleensä ole tarkalleen suoralla."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Määritä suoran kulmakerroin. Määritä sen avulla kärryn massa ja vertaa tulosta punnittuun massaan.",
+          "answer": {
+            "value": 0.1976,
+            "unit": "kg",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kulmakerroin luetaan kahdesta kaukana toisistaan olevasta suoran pisteestä, esimerkiksi $(0{,}50; 1{,}01)$ ja $(2{,}50; 4{,}91)$: $k \\approx 1{,}95\\,\\text{N}\\cdot\\text{s}^2$."
+            },
+            {
+              "text": "Tulkitsee kulmakertoimen: mallin mukaan $k = 4\\pi^2 mr$.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$m = \\dfrac{k}{4\\pi^2 r}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$m = \\dfrac{1{,}95\\,\\text{N}\\cdot\\text{s}^2}{4\\pi^2 \\cdot 0{,}250\\,\\text{m}} \\approx 0{,}198\\,\\text{kg}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$m \\approx 0{,}198\\,\\text{kg}$, noin $1\\,\\%$ punnittua massaa pienempi: tulokset sopivat yhteen mittausten tarkkuudella"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 5,
+          "text": "Valmistajan mukaan lanka kestää enintään $8{,}0\\,\\text{N}$:n voiman. Mikä on lyhin kierrosaika, jolla alustaa saa pyörittää tällä kärryllä ja etäisyydellä? Arvioi, kuinka luotettava ennuste on.",
+          "answer": {
+            "value": 0.4948,
+            "unit": "s",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Suoralta: $F = k \\cdot \\tfrac{1}{T^2}$, joten $T_\\text{min} = \\sqrt{\\dfrac{k}{F_\\text{max}}}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$T_\\text{min} = \\sqrt{\\dfrac{1{,}95\\,\\text{N}\\cdot\\text{s}^2}{8{,}0\\,\\text{N}}} \\approx 0{,}49\\,\\text{s}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$T_\\text{min} \\approx 0{,}49\\,\\text{s}$ eli noin $2$ kierrosta sekunnissa, kaksi merkitsevää numeroa"
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Ennuste on ekstrapolointi mitatun alueen ulkopuolelle: $\\tfrac{1}{T^2} \\approx 4{,}1\\,\\tfrac{1}{\\text{s}^2}$, kun suurin mitattu arvo on $2{,}8\\,\\tfrac{1}{\\text{s}^2}$. Se pätee, jos malli pysyy voimassa."
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Käsin ajastetun kymmenen kierroksen epävarmuus on noin $0{,}2\\,\\text{s}$; turvallisuuden vuoksi lyhyintä kierrosaikaa ei kannata käyttää, vaan jätetään varmuusmarginaali."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy1-4",
+        "concept": "fy5-4",
+        "math": "fy5-4",
+        "transfer": "fy5-4",
+        "experiment": "fy1-3"
       }
-     ]
     },
     {
-     "id": "d",
-     "kind": "word",
-     "points": 3,
-     "text": "Mökkimatkaa varten veneen perään, $1{,}40\\,\\text{m}$ akselin taakse, lastataan $30\\,\\text{kg}$ polttoainetta ja varusteita. Miten aisapaino muuttuu a-kohdan tilanteesta? Miksi liian pieni tai negatiivinen aisapaino on vaarallinen?",
-     "criteria": [
-      {
-       "text": "Perustelee momenttiehdolla, että akselin takana oleva kuorma pienentää aisapainoa: $30\\,\\text{kg} \\cdot 1{,}40\\,\\text{m} : 3{,}25\\,\\text{m} \\approx 13\\,\\text{kg}$, jolloin aisapaino on noin $32\\,\\text{kg}$.",
-       "tag": "math",
-       "points": 2
-      },
-      {
-       "key": "conclusion",
-       "points": 1,
-       "detail": "Liian pieni aisapaino keventää vetokoukkua; jos yhteinen painopiste siirtyy akselin taakse, aisapaino on negatiivinen ja kytkin joutuu pitämään vetoaisaa alhaalla, jolloin traileri nostaa auton takapäätä ja takapyörien pito heikkenee."
+      "id": "fy9-ympyraliike-s4",
+      "title": "Pyörivä avaruusasema",
+      "source": "example",
+      "source_note": "Avaruusaseman suunnitelma ja sen luvut ovat keksitty esimerkki.",
+      "skills": [
+        "fy5-4",
+        "fy5-6",
+        "fy5-3"
+      ],
+      "text": "Pitkillä avaruuslennoilla painottomuus heikentää astronauttien luustoa ja lihaksia. Tiedeartikkelissa esitellään suunnitelma renkaan muotoisesta avaruusasemasta, joka kiertää Maata noin $400\\,\\text{km}$:n korkeudella ja pyörii samalla tasaisesti oman akselinsa ympäri. Renkaan säde on $110\\,\\text{m}$, ja astronautit kävelevät renkaan ulkoseinän sisäpinnalla, joka toimii lattiana.\n\nMaan gravitaatio vaikuttaa asemaan ja kaikkeen sen sisällä samalla tavalla, joten aseman sisäisiä liikkeitä tarkasteltaessa sen voi jättää huomiotta.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 5,
+          "text": "Artikkelissa lukee: ”Nykyisillä asemilla astronautit leijuvat, koska $400\\,\\text{km}$:n korkeudella ei enää ole painovoimaa.” Arvioi väite.",
+          "criteria": [
+            {
+              "text": "Laskee tai arvioi, että gravitaatiokentän voimakkuus $400\\,\\text{km}$:n korkeudella on $\\gamma\\tfrac{M}{(R + h)^2} \\approx 8{,}7\\,\\text{m/s}^2$ eli lähes $90\\,\\%$ maanpinnan arvosta.",
+              "tag": "math",
+              "points": 2
+            },
+            {
+              "text": "Selittää, että gravitaatio on aseman ja astronautin ainoa voima ja pitää ne radallaan: ilman sitä asema jatkaisi suoraan.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää painottomuuden vapaana putoamisena: asema ja astronautti saavat saman kiihtyvyyden, joten lattia ei paina astronauttia ja tukivoima on nolla.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Väite on väärä: painovoima vaikuttaa, mutta astronautit putoavat vapaasti yhdessä aseman kanssa."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Selitä, miksi astronautti tuntee pyörivän renkaan lattialla seisoessaan olevansa painava. Mihin suuntaan hänelle on ”alas”? Arvioi kierrosaika, jolla lattia painaa astronauttia yhtä suurella voimalla kuin Maan pinta.",
+          "criteria": [
+            {
+              "text": "Selittää, että astronautti kulkee ympyrärataa renkaan mukana, joten häneen vaikuttavan kokonaisvoiman on osoitettava renkaan keskipisteeseen: sen antaa lattian tukivoima $N = m\\tfrac{v^2}{r}$.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Selittää, että lattian painallus jalkapohjiin tuntuu samalta kuin painon tukeminen Maan pinnalla, joten ”alas” on poispäin renkaan keskipisteestä; ulospäin vaikuttavaa keskipakoisvoimaa ei ole.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "text": "Arvioi kierrosajan ehdosta $\\tfrac{v^2}{r} = g$ ja $v = \\tfrac{2\\pi r}{T}$: $T = 2\\pi\\sqrt{\\tfrac{r}{g}} \\approx 21\\,\\text{s}$ eli noin kolme kierrosta minuutissa.",
+              "tag": "math",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Astronautti pitää avainta kädessään ja päästää siitä irti. Kuvaa ja selitä, miten avain liikkuu aseman ulkopuolelta katsottuna ja miltä sen liike näyttää astronautista.",
+          "criteria": [
+            {
+              "text": "Selittää, että irrottuaan avaimeen ei vaikuta voimaa (Maan gravitaatio jätetään huomiotta), joten se jatkaa suoraviivaisesti sillä nopeudella, joka sillä oli irtoamishetkellä: radan tangentin suuntaan.",
+              "tag": "concept",
+              "points": 2
+            },
+            {
+              "text": "Selittää, että lattia kääntyy avaimen alla, kunnes avain osuu lattiaan; astronautista avain näyttää putoavan ”alas” kohti lattiaa.",
+              "tag": "transfer",
+              "points": 2
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Mikään voima ei työnnä avainta ulospäin; avain ei kiihdy, vaan lattia tulee sitä vastaan."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy5-4",
+        "math": "fy5-6",
+        "communication": "fy5-4",
+        "transfer": "fy5-3"
       }
-     ]
+    },
+    {
+      "id": "fy9-ympyraliike-s5",
+      "title": "Kiven massa metrimitalla",
+      "source": "example",
+      "source_note": "Raportti ja sen luvut ovat keksitty esimerkki.",
+      "skills": [
+        "fy5-2",
+        "fy5-1",
+        "fy1-3",
+        "fy1-8"
+      ],
+      "text": "Opiskelija määritti kiven massan metrimitan ja tunnetun punnuksen avulla. Ote hänen raportistaan:\n\n> Asetin metrimitan vaakasuoraan tukiterän päälle. Terä oli mitan kohdassa $40{,}0\\,\\text{cm}$, koska siinä mitta pysyi parhaiten paikallaan. Ripustin $200\\,\\text{g}$:n punnuksen kohtaan $10{,}0\\,\\text{cm}$ ja kiven langalla terän toiselle puolelle. Siirtelin kiveä, kunnes mitta pysyi vaakasuorassa: kohta oli $82{,}0\\,\\text{cm}$. Momenttiehdosta $$\n\\begin{aligned}\n&m_\\text{k} \\cdot 42{,}0\\,\\text{cm} \\\\\n&= 200\\,\\text{g} \\cdot 30{,}0\\,\\text{cm}\n\\end{aligned}\n$$, joten $m_\\text{k} = 142{,}857\\,\\text{g}$. Keittiövaaka näytti kivelle $113\\,\\text{g}$. Ero johtuu tukiterän kitkasta.\n\nMetrimitta on tasapaksu, ja sen massa on $120\\,\\text{g}$. Lankojen massat ovat merkityksettömän pieniä.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Laske kiven massa raportin mittauksista. Vertaa tulosta keittiövaa'an lukemaan.",
+          "answer": {
+            "value": 114.3,
+            "unit": "g",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Huomaa, että metrimitan paino vaikuttaa sen painopisteessä kohdassa $50{,}0\\,\\text{cm}$, $10{,}0\\,\\text{cm}$ terän oikealla puolella, ja kiertää mittaa samaan suuntaan kuin kivi.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Momenttiehto terän suhteen: $$\n\\begin{aligned}\n&m_\\text{p} g \\cdot 30{,}0\\,\\text{cm} \\\\\n&= m_\\text{k} g \\cdot 42{,}0\\,\\text{cm} \\\\\n&+ m_\\text{m} g \\cdot 10{,}0\\,\\text{cm}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\n&m_\\text{k} \\cdot 42{,}0\\,\\text{cm} \\\\\n&= 200\\,\\text{g} \\cdot 30{,}0\\,\\text{cm} \\\\\n&- 120\\,\\text{g} \\cdot 10{,}0\\,\\text{cm}\n\\end{aligned}\n$$, joten $m_\\text{k} \\approx 114\\,\\text{g}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$m_\\text{k} \\approx 114\\,\\text{g}$ kolmella merkitsevällä numerolla"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Tulos poikkeaa vaa'an lukemasta vain noin $1\\,\\%$, joten oikein laskettu tulos sopii mittauksen tarkkuuteen."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "word",
+          "points": 5,
+          "text": "Arvioi raportin johtopäätöstä ja mittauksen luotettavuutta. Nimeä raportin puutteet ja perustele ne.",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 2,
+              "detail": "Pääsyy on systemaattinen laskuvirhe: metrimitan oman painon momentti jäi pois, koska tukipiste ei ollut mitan painopisteessä. Se selittää lähes koko $26\\,\\%$:n eron."
+            },
+            {
+              "text": "Perustelee, että kitka ei selitä eroa: terän kitka tekisi tasapainokohdasta hieman epätarkan molempiin suuntiin, mutta ei aiheuttaisi suurta yhdensuuntaista virhettä, eikä raportti esitä kitkalle perustetta.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Raportista puuttuu epävarmuus: tasapainokohdan lukeminen noin $\\pm 0{,}5\\,\\text{cm}$ antaa massaan noin $\\pm 1{,}5\\,\\text{g}$, joten $142{,}857\\,\\text{g}$ ilmoittaa liikaa numeroita."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Johtopäätös on väärä: ero johtuu mallista, josta puuttui metrimitan paino, ja mittaus tehtiin vain kerran."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 5,
+          "text": "Suunnittele parannettu koe, jolla kiven massa saadaan luotettavasti samoilla välineillä. Kerro, mitä mitataan, mitä pidetään vakiona ja miten tulos määritetään.",
+          "criteria": [
+            {
+              "text": "Poistaa tai ottaa huomioon metrimitan painon momentin: tuki mitan painopisteeseen $50{,}0\\,\\text{cm}$, tai mitan paino mukaan momenttiehtoon.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "text": "Toistaa mittauksen useilla punnuksen paikoilla tai punnuksilla ja etsii joka kerta kiven tasapainokohdan; tukipiste ja kiven lanka pysyvät samoina.",
+              "tag": "experiment",
+              "points": 2
+            },
+            {
+              "text": "Määrittää tuloksen kuvaajasta: esimerkiksi punnuksen momentti $m_\\text{p} d_\\text{p}$ kiven varren $d_\\text{k}$ funktiona on suora, jonka kulmakerroin on $m_\\text{k}$ ja vakiotermi mitan painon momentti.",
+              "tag": "graph",
+              "points": 1
+            },
+            {
+              "key": "uncertainty",
+              "points": 1,
+              "detail": "Arvioi epävarmuuden pisteiden hajonnasta tai jyrkimmästä ja loivimmasta suorasta, ja vertaa tulosta vaa'an lukemaan epävarmuuksineen."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy5-2",
+        "math": "fy5-2",
+        "experiment": "fy1-8",
+        "graph": "fy1-4",
+        "communication": "fy1-3"
+      }
+    },
+    {
+      "id": "fy9-ympyraliike-s6",
+      "title": "Vuoristoradan silmukka",
+      "source": "example",
+      "source_note": "Vuoristorata ja sen luvut ovat keksitty esimerkki. Silmukka on mallinnettu ympyräksi.",
+      "skills": [
+        "fy5-4",
+        "fy4-8",
+        "fy4-7"
+      ],
+      "text": "Huvipuiston uudessa vuoristoradassa vaunu lähtee levosta lähtömäen huipulta ja laskee silmukan pohjalle. Silmukka on pystysuora, ja suunnittelija mallintaa sen ympyräksi. Lähtömäen huippu on $30{,}0\\,\\text{m}$ silmukan pohjan yläpuolella, ja ympyrän säde on $10{,}0\\,\\text{m}$. Mittausten mukaan kitka ja ilmanvastus muuttavat matkalla lähtömäestä silmukan pohjalle $12\\,\\%$ vaunun mekaanisesta energiasta sisäenergiaksi. Silmukassa energiaa muuttuu niin vähän, että sitä ei oteta huomioon. Matkustajan massa on $60{,}0\\,\\text{kg}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri on vaunun nopeus silmukan pohjalla?",
+          "answer": {
+            "value": 22.76,
+            "unit": "m/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Perustelee energiaperiaatteen: potentiaalienergiasta $88\\,\\%$ muuttuu liike-energiaksi, koska $12\\,\\%$ muuttuu sisäenergiaksi.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tfrac12 mv_\\text{p}^2 = 0{,}88 \\cdot mgh$, joten $v_\\text{p} = \\sqrt{2 \\cdot 0{,}88 \\cdot gh}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nv_\\text{p} &= \\sqrt{2 \\cdot 0{,}88 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 30{,}0\\,\\text{m}} \\\\\n&\\approx 22{,}8\\,\\text{m/s}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v_\\text{p} \\approx 22{,}8\\,\\text{m/s}$ eli noin $82\\,\\text{km/h}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suurella voimalla istuin painaa matkustajaa silmukan pohjalla? Kuinka moninkertainen voima on matkustajan painoon verrattuna?",
+          "answer": {
+            "value": 3696,
+            "unit": "N",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Matkustajaan vaikuttavat paino $\\overline{G}$ alas ja istuimen tukivoima $\\overline{N}$ ylös kohti silmukan keskipistettä; keskipakoisvoimaa ei piirretä."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$N - mg = m\\dfrac{v_\\text{p}^2}{r}$, joten $N = m\\left(g + \\dfrac{v_\\text{p}^2}{r}\\right)$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nN &= 60{,}0\\,\\text{kg} \\\\\n&\\cdot (9{,}81 + 51{,}8)\\,\\text{m/s}^2 \\\\\n&\\approx 3700\\,\\text{N}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$N \\approx 3{,}70\\,\\text{kN}$, noin $6{,}3$-kertainen painoon verrattuna"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Kuinka suuri on vaunun nopeus silmukan huipulla? Painaako istuin matkustajaa huipulla, ja kuinka suurella voimalla?",
+          "answer": [
+            {
+              "name": "v",
+              "value": 11.21,
+              "unit": "m/s",
+              "tolerance": 0.02
+            },
+            {
+              "name": "N",
+              "value": 164.8,
+              "unit": "N",
+              "tolerance": 0.04
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\tfrac12 mv_\\text{p}^2 = \\tfrac12 mv_\\text{h}^2 + mg \\cdot 2r$ ja huipulla $N + mg = m\\dfrac{v_\\text{h}^2}{r}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nv_\\text{h} &= \\sqrt{518\\,\\text{m}^2/\\text{s}^2 - 392\\,\\text{m}^2/\\text{s}^2} \\\\\n&\\approx 11{,}2\\,\\text{m/s}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nN &= 60{,}0\\,\\text{kg} \\\\\n&\\cdot (12{,}56 - 9{,}81)\\,\\text{m/s}^2 \\\\\n&\\approx 165\\,\\text{N}\n\\end{aligned}\n$$"
+            },
+            {
+              "text": "Tulkitsee tuloksen: $N > 0$, joten istuin painaa matkustajaa huipullakin, mutta vain noin $0{,}28$-kertaisella voimalla painoon verrattuna; ehto $v_\\text{h}^2 \\ge gr$ täyttyy.",
+              "tag": "transfer",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Nykyaikaiset silmukat eivät ole ympyröitä: niiden kaarevuussäde on huipulla pieni ja alaosassa suuri. Selitä tulostesi avulla, miksi tällainen muoto on matkustajalle parempi.",
+          "criteria": [
+            {
+              "text": "Selittää alaosan: suurempi kaarevuussäde pienentää normaalikiihtyvyyttä $\\tfrac{v^2}{r}$ ja siten istuimen voimaa, jonka ympyrämallissa laskettiin olevan yli kuusinkertainen painoon nähden.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää huipun: pienellä säteellä ehto $v^2 \\ge gr$ täyttyy pienemmälläkin nopeudella, joten silmukasta voi tehdä korkeamman tai lähtömäestä matalamman ilman, että matkustaja irtoaa istuimesta.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Muoto tasoittaa istuimen voimaa silmukan eri kohdissa."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy5-4",
+        "math": "fy4-8",
+        "transfer": "fy5-4",
+        "communication": "fy5-4"
+      }
+    },
+    {
+      "id": "fy9-ympyraliike-s7",
+      "title": "Miten kansainvälinen avaruusasema pysyy radallaan?",
+      "source": "statistics",
+      "source_note": "NASA, International Space Station (https://www.nasa.gov/reference/international-space-station/). Tarkistettu 16.11.2026.",
+      "skills": [
+        "fy5-3",
+        "fy5-4",
+        "fy5-6",
+        "fy6-7"
+      ],
+      "text": "Kansainvälisellä avaruusasemalla (ISS) astronautit leijuvat, ja asema saa sähkönsä aurinkopaneeleista. Avaa NASAn sivu [International Space Station](https://www.nasa.gov/reference/international-space-station/) ja etsi siitä aseman lentokorkeus (*altitude*) ja aurinkopaneelien (*solar arrays*) vuodessa tuottama sähköenergia. Tarvitset niitä a- ja d-kohdassa.\n\nMallinna aseman rata ympyräksi näillä tiedoilla:\n\n- radan korkeus maanpinnasta $400\\,\\text{km}$\n- kiertoaika $92\\,\\text{min}$\n- Maan säde $6371\\,\\text{km}$\n- putoamiskiihtyvyys maanpinnalla $g = 9{,}81\\,\\text{m/s}^2$",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Millä korkeudella asema aineiston mukaan kiertää Maata? Sopiiko mallin korkeus $400\\,\\text{km}$ aineistoon? Laske aseman ratanopeus mallin avulla.",
+          "answer": {
+            "value": 7.707,
+            "unit": "km/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Lukee aineistosta, että asema kiertää $370$–$460\\,\\text{km}$:n korkeudella (tarkistettu 16.11.2026), ja toteaa, että mallin $400\\,\\text{km}$ on tällä välillä.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$v = \\dfrac{2\\pi r}{T}$, missä $r = R + h$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$r = 6771\\,\\text{km}$ ja $T = 5520\\,\\text{s}$; $$\n\\begin{aligned}\nv &= \\dfrac{2\\pi \\cdot 6{,}771 \\cdot 10^{6}\\,\\text{m}}{5520\\,\\text{s}} \\\\\n&\\approx 7707\\,\\text{m/s}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx 7{,}7\\,\\text{km/s}$ kahdella merkitsevällä numerolla kuten kiertoajassa $92\\,\\text{min}$"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Laske aseman normaalikiihtyvyys. Kuinka monta prosenttia se on putoamiskiihtyvyydestä maanpinnalla?",
+          "answer": {
+            "value": 8.773,
+            "unit": "m/s^2",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a_\\text{n} = \\dfrac{v^2}{r} = \\dfrac{4\\pi^2 r}{T^2}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\na_\\text{n} &= \\dfrac{4\\pi^2 \\cdot 6{,}771 \\cdot 10^{6}\\,\\text{m}}{(5520\\,\\text{s})^2} \\\\\n&\\approx 8{,}77\\,\\text{m/s}^2\n\\end{aligned}\n$$"
+            },
+            {
+              "text": "Ilmoittaa tuloksen $a_\\text{n} \\approx 8{,}8\\,\\text{m/s}^2$ ja vertaa: $\\tfrac{a_\\text{n}}{g} \\approx 0{,}89$ eli normaalikiihtyvyys on noin $89\\,\\%$ putoamiskiihtyvyydestä maanpinnalla.",
+              "tag": "math",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 3,
+          "text": "Astronautti leijuu aseman sisällä koskematta seiniin tai lattiaan. Mikä voima antaa hänelle b-kohdan normaalikiihtyvyyden? Selitä liikeyhtälön avulla, miksi hän on painoton, vaikka Maan gravitaatio vaikuttaa häneen.",
+          "criteria": [
+            {
+              "text": "Toteaa, että astronautti kiertää samaa rataa samalla nopeudella kuin asema ja että Maan gravitaatiovoima on häneen vaikuttava ainoa voima: se osoittaa radan keskipisteeseen ja antaa normaalikiihtyvyyden, $G = ma_\\text{n}$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Selittää painottomuuden liikeyhtälöllä: jos lattia tukisi astronauttia, olisi $G - N = ma_\\text{n}$. Koska gravitaatio yksin antaa saman kiihtyvyyden astronautille ja asemalle, $N = 0$: ne putoavat vapaasti yhdessä, eikä mikään paina astronauttia.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Painottomuus tarkoittaa tukivoiman puuttumista, ei gravitaation puuttumista: b-kohdan mukaan gravitaatio on radalla lähes yhtä voimakas kuin maanpinnalla."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka paljon sähköenergiaa aseman aurinkopaneelit voivat aineiston mukaan tuottaa vuodessa? Laske tätä vastaava keskimääräinen sähköteho.",
+          "answer": {
+            "value": 83.9,
+            "unit": "kW",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Lukee aineistosta, että aurinkopaneelit voivat tuottaa $735\\,000\\,\\text{kWh}$ sähköenergiaa vuodessa (tarkistettu 16.11.2026).",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$P = \\dfrac{E}{t}$ ja $t = 365 \\cdot 24\\,\\text{h} = 8760\\,\\text{h}$; $$\n\\begin{aligned}\nP &= \\dfrac{735\\,000\\,\\text{kWh}}{8760\\,\\text{h}} \\\\\n&\\approx 83{,}9\\,\\text{kW}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$P \\approx 84\\,\\text{kW}$; yksikkö $\\tfrac{\\text{kWh}}{\\text{h}} = \\text{kW}$, ja kaksi merkitsevää numeroa riittää, koska aineiston arvo on pyöristetty"
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 2,
+          "text": "Selitä aseman radan ja kiertoajan avulla, miksi asema tarvitsee aurinkopaneelien lisäksi akkuja. Miksi d-kohdan keskimääräinen teho ei yksin kerro, riittääkö sähkö joka hetki?",
+          "criteria": [
+            {
+              "text": "Selittää, että asema kulkee Maan varjon läpi noin $92\\,\\text{min}$:n välein eli lähes joka kierroksella. Varjossa paneelit eivät tuota sähköä, mutta laitteet tarvitsevat sitä koko ajan.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Akut ladataan auringonvalossa ja ne syöttävät laitteita varjossa. Keskimääräinen teho peittää vaihtelun: tuotanto on varjossa nolla ja valossa keskiarvoa suurempi."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy5-6",
+        "math": "fy5-4",
+        "transfer": "fy5-6",
+        "communication": "fy6-7"
+      }
+    },
+    {
+      "id": "fy9-ympyraliike-s8",
+      "title": "Auto ajaa kaarteessa",
+      "source": "example",
+      "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä.",
+      "skills": [
+        "fy5-4",
+        "fy4-6",
+        "fy1-4"
+      ],
+      "figure": "fy5-4/kuvaaja-a",
+      "text": "Auto ajaa tasaisella nopeudella vaakasuoran, ympyrän muotoisen kaarteen läpi. Kaarteen sädettä ei ole annettu. Kuvaajassa on auton normaalikiihtyvyys ratanopeuden funktiona tässä kaarteessa. Auton massa on $1200\\,\\text{kg}$. Märällä tiellä renkaiden ja tien välinen lepokitkakerroin on $0{,}50$, ja renkaat eivät liu'u.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Määritä kaarteen säde kuvaajan avulla.",
+          "answer": {
+            "value": 75.0,
+            "unit": "m",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kuvaajalle merkitty piste luetaan apuviivoilta: $v = 15\\,\\text{m/s}$ ja $a_\\text{n} = 3{,}0\\,\\text{m/s}^2$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Ympyräradalla $a_\\text{n} = \\dfrac{v^2}{r}$, joten $r = \\dfrac{v^2}{a_\\text{n}}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nr &= \\dfrac{(15\\,\\text{m/s})^2}{3{,}0\\,\\text{m/s}^2} \\\\\n&= 75\\,\\text{m}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$r = 75\\,\\text{m}$, kaksi merkitsevää numeroa kuten luetuissa arvoissa"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Piirrä auton voimakuvio. Kuinka suuri kitkavoima tarvitaan, kun auto ajaa kaarteen nopeudella $15\\,\\text{m/s}$?",
+          "answer": {
+            "value": 3.6,
+            "unit": "kN",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Kappaleena auto: paino $\\overline{G}$ alas, tukivoima $\\overline{N}$ ylös ja renkaiden lepokitka $\\overline{F}$ vaakasuorassa kohti kaarteen keskipistettä. Keskipakoisvoimaa ei piirretä."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Vaakasuunnassa ainoa voima on kitka, joten $\\Sigma F = ma_\\text{n}$ antaa $F = ma_\\text{n}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nF &= 1200\\,\\text{kg} \\cdot 3{,}0\\,\\text{m/s}^2 \\\\\n&= 3600\\,\\text{N} \\\\\n&\\approx 3{,}6\\,\\text{kN}\n\\end{aligned}\n$$, kaksi merkitsevää numeroa"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kuinka suurella nopeudella auto voi enintään ajaa kaarteen märällä tiellä liukumatta? Anna vastaus myös yksikössä $\\text{km/h}$.",
+          "answer": {
+            "value": 19.18,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Perustelee: auton pystykiihtyvyys on nolla, joten $N = mg$, ja lepokitka on enintään $$\n\\begin{aligned}\nF_\\text{max} &= \\mu_\\text{s} N \\\\\n&= \\mu_\\text{s} mg\n\\end{aligned}\n$$. Rajatilanteessa kitka on suurin mahdollinen.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\Sigma F = ma_\\text{n}$ rajatilanteessa: $\\mu_\\text{s} mg = \\dfrac{mv^2}{r}$, joten $v_\\text{max} = \\sqrt{\\mu_\\text{s} g r}$ ja massa supistuu."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nv_\\text{max} &= \\sqrt{0{,}50 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 75\\,\\text{m}} \\\\\n&\\approx 19{,}2\\,\\text{m/s}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v_\\text{max} \\approx 19\\,\\text{m/s}$ eli noin $69\\,\\text{km/h}$, kaksi merkitsevää numeroa"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Suurin kitka $\\mu_\\text{s} g$ antaa kuvaajan mukaan $a_\\text{n} \\approx 4{,}9\\,\\text{m/s}^2$ nopeudella noin $19\\,\\text{m/s}$, ja $15\\,\\text{m/s}$ on sitä pienempi."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Auto kuormataan matkustajilla ja tavaroilla, ja sen massa on $1500\\,\\text{kg}$. Miten kuorma vaikuttaa kaarteen suurimpaan nopeuteen märällä tiellä? Muuttuuko kuvaaja? Perustele laskemalla.",
+          "criteria": [
+            {
+              "text": "Perustelee, että massa supistuu liikeyhtälöstä $\\mu_\\text{s} mg = \\dfrac{mv^2}{r}$, joten suurin nopeus $$\n\\begin{aligned}\n\\sqrt{\\mu_\\text{s} g r} &\\approx 19\\,\\text{m/s}\n\\end{aligned}\n$$ ei muutu.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Laskee kitkavoimat: tarvittava kitka nopeudella $15\\,\\text{m/s}$ on $$\n\\begin{aligned}\n1500\\,\\text{kg} \\cdot 3{,}0\\,\\text{m/s}^2 &= 4500\\,\\text{N}\n\\end{aligned}\n$$ ja suurin mahdollinen $$\n\\begin{aligned}\n0{,}50 \\cdot 1500\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 &\\approx 7400\\,\\text{N}\n\\end{aligned}\n$$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Kuvaaja ei muutu, koska $a_\\text{n} = \\dfrac{v^2}{r}$ ei riipu massasta. Raskaampi auto tarvitsee suuremman kitkavoiman, mutta renkaat antavat sitä suhteessa yhtä paljon enemmän, joten suurin nopeus pysyy samana."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy5-4",
+        "concept": "fy5-4",
+        "math": "fy5-4",
+        "transfer": "fy4-6",
+        "communication": "fy5-4"
+      }
+    },
+    {
+      "id": "fy9-ympyraliike-s9",
+      "title": "Kyltti seinän tangossa",
+      "source": "example",
+      "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä.",
+      "skills": [
+        "fy5-2",
+        "fy5-1",
+        "fy4-5"
+      ],
+      "figure": "fy5-2/kyltti",
+      "text": "Kahvilan kyltti riippuu vaakasuoran tangon päästä. Tanko on kiinnitetty seinään saranalla, ja tangon uloimmasta päästä lähtee vaijeri seinään. Kuvassa on tangon pituus ja vaijerin kulma. Kyltin massa on $18\\,\\text{kg}$. Tanko on tasa-aineinen ja sen massa on $3{,}0\\,\\text{kg}$. Vaijerin massa jätetään huomiotta. Kokonaisuus on levossa.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 6,
+          "text": "Piirrä tangon ja kyltin voimakuvio. Kuinka suuri voima vaijerissa on?",
+          "answer": {
+            "value": 382.6,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Kappaleena tanko ja kyltti: kyltin paino $\\overline{G}_\\text{s}$ tangon päästä alas, tangon paino $\\overline{G}_\\text{t}$ keskeltä alas, vaijerin voima $\\overline{T}$ päästä vinosti ylös seinää kohti ja saranan voima $\\overline{F}_\\text{s}$ saranasta."
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kuvasta luetaan tangon pituus $L = 1{,}20\\,\\text{m}$ ja vaijerin ja tangon välinen kulma $\\theta = 30{,}0^\\circ$."
+            },
+            {
+              "text": "Perustelee momenttipisteen: saranan suhteen saranan voiman varsi on nolla, ja kappale on levossa, joten momenttien summa on nolla.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nT L\\sin\\theta &= m_\\text{s} g L \\\\\n&+ m_\\text{t} g\\,\\tfrac{L}{2}\n\\end{aligned}\n$$, joten $L$ supistuu."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nT &= \\dfrac{(18\\,\\text{kg} + 1{,}5\\,\\text{kg}) \\cdot 9{,}81\\,\\text{m/s}^2}{\\sin 30{,}0^\\circ} \\\\\n&\\approx 383\\,\\text{N}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$T \\approx 380\\,\\text{N}$, kaksi merkitsevää numeroa kuten massoissa"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kuinka suuri on saranan tankoon kohdistama voima?",
+          "answer": {
+            "value": 331.7,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Voimien summa on nolla: vaakasuunnassa $H = T\\cos\\theta$ ja pystysuunnassa $V = (m_\\text{s} + m_\\text{t})g - T\\sin\\theta$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$H \\approx 331\\,\\text{N}$ poispäin seinästä ja $V \\approx 14{,}7\\,\\text{N}$ ylöspäin."
+            },
+            {
+              "text": "Laskee komponenteista suuruuden: $$\n\\begin{aligned}\nF_\\text{s} &= \\sqrt{H^2 + V^2} \\\\\n&\\approx 332\\,\\text{N}\n\\end{aligned}\n$$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F_\\text{s} \\approx 330\\,\\text{N}$, suunta noin $2{,}5^\\circ$ vaakasuoran yläpuolella poispäin seinästä, kaksi merkitsevää numeroa"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Tarkistus kyltin päästä otetuilla momenteilla: $V L = m_\\text{t} g\\,\\tfrac{L}{2}$, joten $$\n\\begin{aligned}\nV &= \\tfrac12 \\cdot 3{,}0\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\\n&\\approx 14{,}7\\,\\text{N}\n\\end{aligned}\n$$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Vaijeri kestää enintään $600\\,\\text{N}$:n voiman. Kuinka suuri on suurin kyltin massa, jota vaijeri vielä pitää?",
+          "answer": {
+            "value": 29.08,
+            "unit": "kg",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Momenttiehdosta $$\n\\begin{aligned}\nm_\\text{s} &= \\dfrac{T_\\text{max}\\sin\\theta}{g} - \\tfrac12 m_\\text{t}\n\\end{aligned}\n$$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nm_\\text{s} &= \\dfrac{600\\,\\text{N} \\cdot 0{,}500}{9{,}81\\,\\text{m/s}^2} - 1{,}5\\,\\text{kg} \\\\\n&\\approx 29{,}1\\,\\text{kg}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$m_\\text{s} \\approx 29\\,\\text{kg}$, kaksi merkitsevää numeroa"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Vaijeri kiinnitetään seinään korkeammalle niin, että vaijerin ja tangon välinen kulma on $45^\\circ$. Miten vaijerin voima muuttuu a-kohdasta? Perustele laskemalla ja selitä, miksi muutos on tämän suuntainen.",
+          "criteria": [
+            {
+              "text": "Perustelee momenttiehdolla: vaijerin voiman pystykomponentti $T\\sin\\theta \\approx 191\\,\\text{N}$ ei riipu kulmasta, joten suuremmalla kulmalla koko voima $T$ on pienempi.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Laskee $$\n\\begin{aligned}\nT &= \\dfrac{191{,}3\\,\\text{N}}{\\sin 45^\\circ} \\\\\n&\\approx 270\\,\\text{N}\n\\end{aligned}\n$$, noin $29\\,\\%$ pienempi kuin $380\\,\\text{N}$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Kun vaijeri on jyrkempi, suurempi osa sen voimasta kantaa painoa ylöspäin. Samalla vaakakomponentti $T\\cos 45^\\circ \\approx 191\\,\\text{N}$ ja saranan voima pienenevät."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy5-2",
+        "concept": "fy5-2",
+        "math": "fy5-2",
+        "transfer": "fy5-1",
+        "communication": "fy5-2"
+      }
     }
-   ],
-   "links": {
-    "concept": "fy5-2",
-    "math": "fy5-2",
-    "transfer": "fy5-1",
-    "communication": "fy5-2"
-   }
-  },
-  {
-   "id": "fy9-ympyraliike-s2",
-   "title": "Sääsatelliitti napojen yli",
-   "source": "example",
-   "source_note": "Satelliitti ja sen luvut ovat keksitty esimerkki. Korkeus ja massa vastaavat todellisia napaa kiertäviä sääsatelliitteja.",
-   "skills": [
-    "fy5-6",
-    "fy5-5",
-    "fy5-3"
-   ],
-   "text": "Eurooppalainen sääsatelliitti kiertää Maata lähes ympyrärataa, joka kulkee napojen yli. Maan pinnalla oleva vastaanottoasema Pohjois-Suomessa saa sen mittaukset monella peräkkäisellä kierroksella, koska satelliitti ohittaa pohjoisnavan joka kierroksella.\n\n- satelliitin massa $4100\\,\\text{kg}$, radan korkeus maanpinnasta $830\\,\\text{km}$\n- Maan massa $5{,}97 \\cdot 10^{24}\\,\\text{kg}$ ja säde $6371\\,\\text{km}$\n- Maa pyörähtää akselinsa ympäri kerran $23\\,\\text{h}\\;56\\,\\text{min}$:ssa\n- gravitaatiovakio $$\n\\gamma = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}\n$$",
-   "parts": [
-    {
-     "id": "a",
-     "kind": "calc",
-     "points": 5,
-     "text": "Kuinka suuri on satelliitin ratanopeus? Kuinka pitkä on sen kiertoaika minuutteina?",
-     "answer": [
-      {
-       "name": "v",
-       "value": 7.438,
-       "unit": "km/s",
-       "tolerance": 0.02
-      },
-      {
-       "name": "T",
-       "value": 101.4,
-       "unit": "min",
-       "tolerance": 0.02
-      }
-     ],
-     "criteria": [
-      {
-       "text": "Perustelee, että Maan gravitaatiovoima on satelliitin ainoa voima ja siis keskipisteeseen osoittava kokonaisvoima.",
-       "tag": "concept",
-       "points": 1
-      },
-      {
-       "key": "equation",
-       "points": 1,
-       "detail": "$\\gamma\\dfrac{Mm}{r^2} = m\\dfrac{v^2}{r}$, joten $v = \\sqrt{\\dfrac{\\gamma M}{r}}$, ja $T = \\dfrac{2\\pi r}{v}$"
-      },
-      {
-       "key": "calculation",
-       "points": 1,
-       "detail": "$r = R + h = 7201\\,\\text{km}$; $v \\approx 7440\\,\\text{m/s}$"
-      },
-      {
-       "key": "calculation",
-       "points": 1,
-       "detail": "$$\n\\begin{aligned}\nT &= \\dfrac{2\\pi \\cdot 7{,}201 \\cdot 10^{6}\\,\\text{m}}{7438\\,\\text{m/s}} \\\\\n&\\approx 6083\\,\\text{s} \\\\\n&\\approx 101\\,\\text{min}\n\\end{aligned}\n$$"
-      },
-      {
-       "key": "units_precision",
-       "points": 1,
-       "detail": "$v \\approx 7{,}44\\,\\text{km/s}$ ja $T \\approx 101\\,\\text{min}$ kolmella merkitsevällä numerolla"
-      }
-     ]
-    },
-    {
-     "id": "b",
-     "kind": "calc",
-     "points": 4,
-     "text": "Kuinka suuri gravitaatiovoima satelliittiin vaikuttaa radalla? Kuinka monta prosenttia se on satelliitin painosta maanpinnalla?",
-     "answer": {
-      "value": 31.5,
-      "unit": "kN",
-      "tolerance": 0.02
-     },
-     "criteria": [
-      {
-       "key": "equation",
-       "points": 1,
-       "detail": "$F = \\gamma\\dfrac{Mm}{(R + h)^2}$"
-      },
-      {
-       "key": "calculation",
-       "points": 1,
-       "detail": "$$\n\\begin{aligned}\nF &= \\dfrac{3{,}984 \\cdot 10^{14} \\cdot 4100}{(7{,}201 \\cdot 10^{6})^2}\\,\\text{N} \\\\\n&\\approx 31{,}5\\,\\text{kN}\n\\end{aligned}\n$$, kun $\\gamma M = 3{,}984 \\cdot 10^{14}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}}$"
-      },
-      {
-       "text": "Vertaa painoon $mg \\approx 40{,}2\\,\\text{kN}$: voima on noin $78\\,\\%$ painosta, sama kuin $\\left(\\tfrac{R}{R + h}\\right)^2$.",
-       "tag": "math",
-       "points": 1
-      },
-      {
-       "key": "units_precision",
-       "points": 1,
-       "detail": "$F \\approx 31{,}5\\,\\text{kN}$ kolmella merkitsevällä numerolla ja osuus noin $78\\,\\%$"
-      }
-     ]
-    },
-    {
-     "id": "c",
-     "kind": "calc",
-     "points": 3,
-     "text": "Satelliitin radan taso pysyy avaruudessa lähes paikallaan, ja Maa pyörii sen alla. Kuinka monta astetta Maa kiertyy yhden satelliitin kierroksen aikana? Kuinka pitkän matkan päiväntasaajan kohta siirtyy samassa ajassa?",
-     "answer": [
-      {
-       "name": "deg",
-       "value": 25.41,
-       "unit": "°",
-       "tolerance": 0.02
-      },
-      {
-       "name": "km",
-       "value": 2826,
-       "unit": "km",
-       "tolerance": 0.02
-      }
-     ],
-     "criteria": [
-      {
-       "key": "equation",
-       "points": 1,
-       "detail": "Kiertymä on $360^\\circ \\cdot \\dfrac{T}{T_\\text{Maa}}$ ja päiväntasaajan kohdan matka $2\\pi R \\cdot \\dfrac{T}{T_\\text{Maa}}$"
-      },
-      {
-       "key": "calculation",
-       "points": 1,
-       "detail": "$\\dfrac{6083\\,\\text{s}}{86\\,160\\,\\text{s}} \\cdot 360^\\circ \\approx 25{,}4^\\circ$ ja $$\n\\begin{aligned}\n&2\\pi \\cdot 6371\\,\\text{km} \\cdot 0{,}0706 \\\\\n&\\approx 2830\\,\\text{km}\n\\end{aligned}\n$$"
-      },
-      {
-       "key": "units_precision",
-       "points": 1,
-       "detail": "$25{,}4^\\circ$ ja noin $2830\\,\\text{km}$ kolmella merkitsevällä numerolla"
-      }
-     ]
-    },
-    {
-     "id": "d",
-     "kind": "word",
-     "points": 3,
-     "text": "Opiskelija ehdottaa: ”Siirretään sääsatelliitti geostationaariselle radalle, niin se näkee Suomen koko ajan.” Arvioi, miksi napojen yli kiertävää rataa käytetään silti tarkkoihin mittauksiin pohjoisilta alueilta. Geostationaarinen rata on $35\\,800\\,\\text{km}$:n korkeudella päiväntasaajan yläpuolella.",
-     "criteria": [
-      {
-       "text": "Perustelee etäisyydellä: geostationaarinen rata on yli $40$ kertaa kauempana kuin $830\\,\\text{km}$, joten samalla laitteella yksityiskohdat näkyvät paljon epätarkempina.",
-       "tag": "transfer",
-       "points": 1
-      },
-      {
-       "text": "Perustelee radan paikalla: geostationaarinen rata on päiväntasaajan tasossa, joten se näkee Suomen hyvin vinosta kulmasta eikä napa-alueita lainkaan; napojen yli kiertävä satelliitti kulkee jokaisella kierroksella pohjoisen yli.",
-       "tag": "concept",
-       "points": 1
-      },
-      {
-       "key": "conclusion",
-       "points": 1,
-       "detail": "Ehdotuksessa on hyvä puoli, jatkuva näkyvyys, mutta tarkkoihin pohjoisiin mittauksiin matala napojen yli kulkeva rata sopii paremmin."
-      }
-     ]
-    }
-   ],
-   "links": {
-    "concept": "fy5-6",
-    "math": "fy5-6",
-    "transfer": "fy5-3",
-    "communication": "fy5-6"
-   }
-  },
-  {
-   "id": "fy9-ympyraliike-s3",
-   "title": "Keskeisvoima pyörivällä alustalla",
-   "source": "example",
-   "source_note": "Aineisto on keksitty esimerkki: voimat on laskettu ympyräliikkeen liikeyhtälöstä, ja niihin on lisätty mittausten kaltaista vaihtelua.",
-   "skills": [
-    "fy5-4",
-    "fy5-3",
-    "fy1-4"
-   ],
-   "text": "Fysiikan tunnilla tutkittiin pyörivää alustaa. Alustalla on kiskot, joilla pieni kärry kulkee lähes kitkatta. Kärry on kiinni langalla, joka kulkee alustan pyörimisakselilla olevaan voima-anturiin. Kärryn painopisteen etäisyys akselista pidettiin koko ajan samana, $0{,}250\\,\\text{m}$, ja kärryn massa punnittiin: $0{,}200\\,\\text{kg}$. Alustaa pyöritettiin moottorilla tasaisesti eri nopeuksilla. Kymmenen kierroksen aika mitattiin sekuntikellolla, ja voima luettiin anturin näytöltä.\n\n| $10T\\ (\\text{s})$ | $F\\ (\\text{N})$ |\n|---|---|\n| $6{,}0$ | $5{,}42$ |\n| $7{,}0$ | $4{,}07$ |\n| $8{,}0$ | $3{,}05$ |\n| $9{,}5$ | $2{,}21$ |\n| $11{,}0$ | $1{,}65$ |\n| $13{,}0$ | $1{,}19$ |\n| $15{,}0$ | $0{,}88$ |",
-   "parts": [
-    {
-     "id": "a",
-     "kind": "graph",
-     "points": 4,
-     "text": "Esitä langan voima kierrosajan funktiona kuvaajana. Perustele, miksi pisteisiin ei sovi suora.",
-     "criteria": [
-      {
-       "key": "graph_axes",
-       "points": 1,
-       "detail": "Vaaka-akselilla kierrosaika $T\\ (\\text{s})$, ei kymmenen kierroksen aika; pystyakselilla $F\\ (\\text{N})$."
-      },
-      {
-       "key": "graph_points",
-       "points": 1
-      },
-      {
-       "text": "Perustelee kuvaajan kaarevuudella ja fysiikalla: voima pienenee nopeammin kuin kierrosaika kasvaa, ja nopea pyöriminen vaatii paljon suuremman voiman, koska normaalikiihtyvyys kasvaa nopeuden neliön mukaan.",
-       "tag": "graph",
-       "points": 2
-      }
-     ]
-    },
-    {
-     "id": "b",
-     "kind": "graph",
-     "points": 6,
-     "text": "Muodosta aineistosta suure, jonka funktiona langan voiman kuvaaja on suora, kun kärryn massa ja etäisyys akselista pysyvät samoina. Perustele valintasi. Esitä kuvaaja ja sovita pisteisiin suora.",
-     "criteria": [
-      {
-       "text": "Perustelee linearisoinnin: $F = m\\tfrac{v^2}{r}$ ja $v = \\tfrac{2\\pi r}{T}$ antavat $F = 4\\pi^2 mr \\cdot \\tfrac{1}{T^2}$, joten $F$ on suoraan verrannollinen suureeseen $\\tfrac{1}{T^2}$.",
-       "tag": "concept",
-       "points": 2
-      },
-      {
-       "text": "Laskee taulukkoon kierrosajat $T$ ja suureen $\\tfrac{1}{T^2}$ arvot oikein yksikköineen.",
-       "tag": "math",
-       "points": 1
-      },
-      {
-       "key": "graph_axes",
-       "points": 1,
-       "detail": "Vaaka-akselilla $\\tfrac{1}{T^2}\\ (\\tfrac{1}{\\text{s}^2})$, pystyakselilla $F\\ (\\text{N})$."
-      },
-      {
-       "key": "graph_fit",
-       "points": 2,
-       "detail": "Sovitettu suora kulkee pisteiden läpi lähes origon kautta; pisteet eivät yleensä ole tarkalleen suoralla."
-      }
-     ]
-    },
-    {
-     "id": "c",
-     "kind": "calc",
-     "points": 5,
-     "text": "Määritä suoran kulmakerroin. Määritä sen avulla kärryn massa ja vertaa tulosta punnittuun massaan.",
-     "answer": {
-      "value": 0.1976,
-      "unit": "kg",
-      "tolerance": 0.04
-     },
-     "criteria": [
-      {
-       "key": "graph_read",
-       "points": 1,
-       "detail": "Kulmakerroin luetaan kahdesta kaukana toisistaan olevasta suoran pisteestä, esimerkiksi $(0{,}50; 1{,}01)$ ja $(2{,}50; 4{,}91)$: $k \\approx 1{,}95\\,\\text{N}\\cdot\\text{s}^2$."
-      },
-      {
-       "text": "Tulkitsee kulmakertoimen: mallin mukaan $k = 4\\pi^2 mr$.",
-       "tag": "graph",
-       "points": 1
-      },
-      {
-       "key": "equation",
-       "points": 1,
-       "detail": "$m = \\dfrac{k}{4\\pi^2 r}$"
-      },
-      {
-       "key": "calculation",
-       "points": 1,
-       "detail": "$m = \\dfrac{1{,}95\\,\\text{N}\\cdot\\text{s}^2}{4\\pi^2 \\cdot 0{,}250\\,\\text{m}} \\approx 0{,}198\\,\\text{kg}$"
-      },
-      {
-       "key": "units_precision",
-       "points": 1,
-       "detail": "$m \\approx 0{,}198\\,\\text{kg}$, noin $1\\,\\%$ punnittua massaa pienempi: tulokset sopivat yhteen mittausten tarkkuudella"
-      }
-     ]
-    },
-    {
-     "id": "d",
-     "kind": "calc",
-     "points": 5,
-     "text": "Valmistajan mukaan lanka kestää enintään $8{,}0\\,\\text{N}$:n voiman. Mikä on lyhin kierrosaika, jolla alustaa saa pyörittää tällä kärryllä ja etäisyydellä? Arvioi, kuinka luotettava ennuste on.",
-     "answer": {
-      "value": 0.4948,
-      "unit": "s",
-      "tolerance": 0.04
-     },
-     "criteria": [
-      {
-       "key": "equation",
-       "points": 1,
-       "detail": "Suoralta: $F = k \\cdot \\tfrac{1}{T^2}$, joten $T_\\text{min} = \\sqrt{\\dfrac{k}{F_\\text{max}}}$"
-      },
-      {
-       "key": "calculation",
-       "points": 1,
-       "detail": "$T_\\text{min} = \\sqrt{\\dfrac{1{,}95\\,\\text{N}\\cdot\\text{s}^2}{8{,}0\\,\\text{N}}} \\approx 0{,}49\\,\\text{s}$"
-      },
-      {
-       "key": "units_precision",
-       "points": 1,
-       "detail": "$T_\\text{min} \\approx 0{,}49\\,\\text{s}$ eli noin $2$ kierrosta sekunnissa, kaksi merkitsevää numeroa"
-      },
-      {
-       "key": "assumptions",
-       "points": 1,
-       "detail": "Ennuste on ekstrapolointi mitatun alueen ulkopuolelle: $\\tfrac{1}{T^2} \\approx 4{,}1\\,\\tfrac{1}{\\text{s}^2}$, kun suurin mitattu arvo on $2{,}8\\,\\tfrac{1}{\\text{s}^2}$. Se pätee, jos malli pysyy voimassa."
-      },
-      {
-       "key": "uncertainty",
-       "points": 1,
-       "detail": "Käsin ajastetun kymmenen kierroksen epävarmuus on noin $0{,}2\\,\\text{s}$; turvallisuuden vuoksi lyhyintä kierrosaikaa ei kannata käyttää, vaan jätetään varmuusmarginaali."
-      }
-     ]
-    }
-   ],
-   "links": {
-    "graph": "fy1-4",
-    "concept": "fy5-4",
-    "math": "fy5-4",
-    "transfer": "fy5-4",
-    "experiment": "fy1-3"
-   }
-  },
-  {
-   "id": "fy9-ympyraliike-s4",
-   "title": "Pyörivä avaruusasema",
-   "source": "example",
-   "source_note": "Avaruusaseman suunnitelma ja sen luvut ovat keksitty esimerkki.",
-   "skills": [
-    "fy5-4",
-    "fy5-6",
-    "fy5-3"
-   ],
-   "text": "Pitkillä avaruuslennoilla painottomuus heikentää astronauttien luustoa ja lihaksia. Tiedeartikkelissa esitellään suunnitelma renkaan muotoisesta avaruusasemasta, joka kiertää Maata noin $400\\,\\text{km}$:n korkeudella ja pyörii samalla tasaisesti oman akselinsa ympäri. Renkaan säde on $110\\,\\text{m}$, ja astronautit kävelevät renkaan ulkoseinän sisäpinnalla, joka toimii lattiana.\n\nMaan gravitaatio vaikuttaa asemaan ja kaikkeen sen sisällä samalla tavalla, joten aseman sisäisiä liikkeitä tarkasteltaessa sen voi jättää huomiotta.",
-   "parts": [
-    {
-     "id": "a",
-     "kind": "word",
-     "points": 5,
-     "text": "Artikkelissa lukee: ”Nykyisillä asemilla astronautit leijuvat, koska $400\\,\\text{km}$:n korkeudella ei enää ole painovoimaa.” Arvioi väite.",
-     "criteria": [
-      {
-       "text": "Laskee tai arvioi, että gravitaatiokentän voimakkuus $400\\,\\text{km}$:n korkeudella on $\\gamma\\tfrac{M}{(R + h)^2} \\approx 8{,}7\\,\\text{m/s}^2$ eli lähes $90\\,\\%$ maanpinnan arvosta.",
-       "tag": "math",
-       "points": 2
-      },
-      {
-       "text": "Selittää, että gravitaatio on aseman ja astronautin ainoa voima ja pitää ne radallaan: ilman sitä asema jatkaisi suoraan.",
-       "tag": "concept",
-       "points": 1
-      },
-      {
-       "text": "Selittää painottomuuden vapaana putoamisena: asema ja astronautti saavat saman kiihtyvyyden, joten lattia ei paina astronauttia ja tukivoima on nolla.",
-       "tag": "concept",
-       "points": 1
-      },
-      {
-       "key": "conclusion",
-       "points": 1,
-       "detail": "Väite on väärä: painovoima vaikuttaa, mutta astronautit putoavat vapaasti yhdessä aseman kanssa."
-      }
-     ]
-    },
-    {
-     "id": "b",
-     "kind": "word",
-     "points": 5,
-     "text": "Selitä, miksi astronautti tuntee pyörivän renkaan lattialla seisoessaan olevansa painava. Mihin suuntaan hänelle on ”alas”? Arvioi kierrosaika, jolla lattia painaa astronauttia yhtä suurella voimalla kuin Maan pinta.",
-     "criteria": [
-      {
-       "text": "Selittää, että astronautti kulkee ympyrärataa renkaan mukana, joten häneen vaikuttavan kokonaisvoiman on osoitettava renkaan keskipisteeseen: sen antaa lattian tukivoima $N = m\\tfrac{v^2}{r}$.",
-       "tag": "concept",
-       "points": 2
-      },
-      {
-       "text": "Selittää, että lattian painallus jalkapohjiin tuntuu samalta kuin painon tukeminen Maan pinnalla, joten ”alas” on poispäin renkaan keskipisteestä; ulospäin vaikuttavaa keskipakoisvoimaa ei ole.",
-       "tag": "communication",
-       "points": 1
-      },
-      {
-       "text": "Arvioi kierrosajan ehdosta $\\tfrac{v^2}{r} = g$ ja $v = \\tfrac{2\\pi r}{T}$: $T = 2\\pi\\sqrt{\\tfrac{r}{g}} \\approx 21\\,\\text{s}$ eli noin kolme kierrosta minuutissa.",
-       "tag": "math",
-       "points": 2
-      }
-     ]
-    },
-    {
-     "id": "c",
-     "kind": "word",
-     "points": 5,
-     "text": "Astronautti pitää avainta kädessään ja päästää siitä irti. Kuvaa ja selitä, miten avain liikkuu aseman ulkopuolelta katsottuna ja miltä sen liike näyttää astronautista.",
-     "criteria": [
-      {
-       "text": "Selittää, että irrottuaan avaimeen ei vaikuta voimaa (Maan gravitaatio jätetään huomiotta), joten se jatkaa suoraviivaisesti sillä nopeudella, joka sillä oli irtoamishetkellä: radan tangentin suuntaan.",
-       "tag": "concept",
-       "points": 2
-      },
-      {
-       "text": "Selittää, että lattia kääntyy avaimen alla, kunnes avain osuu lattiaan; astronautista avain näyttää putoavan ”alas” kohti lattiaa.",
-       "tag": "transfer",
-       "points": 2
-      },
-      {
-       "key": "conclusion",
-       "points": 1,
-       "detail": "Mikään voima ei työnnä avainta ulospäin; avain ei kiihdy, vaan lattia tulee sitä vastaan."
-      }
-     ]
-    }
-   ],
-   "links": {
-    "concept": "fy5-4",
-    "math": "fy5-6",
-    "communication": "fy5-4",
-    "transfer": "fy5-3"
-   }
-  },
-  {
-   "id": "fy9-ympyraliike-s5",
-   "title": "Kiven massa metrimitalla",
-   "source": "example",
-   "source_note": "Raportti ja sen luvut ovat keksitty esimerkki.",
-   "skills": [
-    "fy5-2",
-    "fy5-1",
-    "fy1-3",
-    "fy1-8"
-   ],
-   "text": "Opiskelija määritti kiven massan metrimitan ja tunnetun punnuksen avulla. Ote hänen raportistaan:\n\n> Asetin metrimitan vaakasuoraan tukiterän päälle. Terä oli mitan kohdassa $40{,}0\\,\\text{cm}$, koska siinä mitta pysyi parhaiten paikallaan. Ripustin $200\\,\\text{g}$:n punnuksen kohtaan $10{,}0\\,\\text{cm}$ ja kiven langalla terän toiselle puolelle. Siirtelin kiveä, kunnes mitta pysyi vaakasuorassa: kohta oli $82{,}0\\,\\text{cm}$. Momenttiehdosta $$\n\\begin{aligned}\n&m_\\text{k} \\cdot 42{,}0\\,\\text{cm} \\\\\n&= 200\\,\\text{g} \\cdot 30{,}0\\,\\text{cm}\n\\end{aligned}\n$$, joten $m_\\text{k} = 142{,}857\\,\\text{g}$. Keittiövaaka näytti kivelle $113\\,\\text{g}$. Ero johtuu tukiterän kitkasta.\n\nMetrimitta on tasapaksu, ja sen massa on $120\\,\\text{g}$. Lankojen massat ovat merkityksettömän pieniä.",
-   "parts": [
-    {
-     "id": "a",
-     "kind": "calc",
-     "points": 5,
-     "text": "Laske kiven massa raportin mittauksista. Vertaa tulosta keittiövaa'an lukemaan.",
-     "answer": {
-      "value": 114.3,
-      "unit": "g",
-      "tolerance": 0.02
-     },
-     "criteria": [
-      {
-       "text": "Huomaa, että metrimitan paino vaikuttaa sen painopisteessä kohdassa $50{,}0\\,\\text{cm}$, $10{,}0\\,\\text{cm}$ terän oikealla puolella, ja kiertää mittaa samaan suuntaan kuin kivi.",
-       "tag": "concept",
-       "points": 1
-      },
-      {
-       "key": "equation",
-       "points": 1,
-       "detail": "Momenttiehto terän suhteen: $$\n\\begin{aligned}\n&m_\\text{p} g \\cdot 30{,}0\\,\\text{cm} \\\\\n&= m_\\text{k} g \\cdot 42{,}0\\,\\text{cm} \\\\\n&+ m_\\text{m} g \\cdot 10{,}0\\,\\text{cm}\n\\end{aligned}\n$$"
-      },
-      {
-       "key": "calculation",
-       "points": 1,
-       "detail": "$$\n\\begin{aligned}\n&m_\\text{k} \\cdot 42{,}0\\,\\text{cm} \\\\\n&= 200\\,\\text{g} \\cdot 30{,}0\\,\\text{cm} \\\\\n&- 120\\,\\text{g} \\cdot 10{,}0\\,\\text{cm}\n\\end{aligned}\n$$, joten $m_\\text{k} \\approx 114\\,\\text{g}$"
-      },
-      {
-       "key": "units_precision",
-       "points": 1,
-       "detail": "$m_\\text{k} \\approx 114\\,\\text{g}$ kolmella merkitsevällä numerolla"
-      },
-      {
-       "key": "reasonableness",
-       "points": 1,
-       "detail": "Tulos poikkeaa vaa'an lukemasta vain noin $1\\,\\%$, joten oikein laskettu tulos sopii mittauksen tarkkuuteen."
-      }
-     ]
-    },
-    {
-     "id": "b",
-     "kind": "word",
-     "points": 5,
-     "text": "Arvioi raportin johtopäätöstä ja mittauksen luotettavuutta. Nimeä raportin puutteet ja perustele ne.",
-     "criteria": [
-      {
-       "key": "error_sources",
-       "points": 2,
-       "detail": "Pääsyy on systemaattinen laskuvirhe: metrimitan oman painon momentti jäi pois, koska tukipiste ei ollut mitan painopisteessä. Se selittää lähes koko $26\\,\\%$:n eron."
-      },
-      {
-       "text": "Perustelee, että kitka ei selitä eroa: terän kitka tekisi tasapainokohdasta hieman epätarkan molempiin suuntiin, mutta ei aiheuttaisi suurta yhdensuuntaista virhettä, eikä raportti esitä kitkalle perustetta.",
-       "tag": "experiment",
-       "points": 1
-      },
-      {
-       "key": "uncertainty",
-       "points": 1,
-       "detail": "Raportista puuttuu epävarmuus: tasapainokohdan lukeminen noin $\\pm 0{,}5\\,\\text{cm}$ antaa massaan noin $\\pm 1{,}5\\,\\text{g}$, joten $142{,}857\\,\\text{g}$ ilmoittaa liikaa numeroita."
-      },
-      {
-       "key": "conclusion",
-       "points": 1,
-       "detail": "Johtopäätös on väärä: ero johtuu mallista, josta puuttui metrimitan paino, ja mittaus tehtiin vain kerran."
-      }
-     ]
-    },
-    {
-     "id": "c",
-     "kind": "word",
-     "points": 5,
-     "text": "Suunnittele parannettu koe, jolla kiven massa saadaan luotettavasti samoilla välineillä. Kerro, mitä mitataan, mitä pidetään vakiona ja miten tulos määritetään.",
-     "criteria": [
-      {
-       "text": "Poistaa tai ottaa huomioon metrimitan painon momentin: tuki mitan painopisteeseen $50{,}0\\,\\text{cm}$, tai mitan paino mukaan momenttiehtoon.",
-       "tag": "experiment",
-       "points": 1
-      },
-      {
-       "text": "Toistaa mittauksen useilla punnuksen paikoilla tai punnuksilla ja etsii joka kerta kiven tasapainokohdan; tukipiste ja kiven lanka pysyvät samoina.",
-       "tag": "experiment",
-       "points": 2
-      },
-      {
-       "text": "Määrittää tuloksen kuvaajasta: esimerkiksi punnuksen momentti $m_\\text{p} d_\\text{p}$ kiven varren $d_\\text{k}$ funktiona on suora, jonka kulmakerroin on $m_\\text{k}$ ja vakiotermi mitan painon momentti.",
-       "tag": "graph",
-       "points": 1
-      },
-      {
-       "key": "uncertainty",
-       "points": 1,
-       "detail": "Arvioi epävarmuuden pisteiden hajonnasta tai jyrkimmästä ja loivimmasta suorasta, ja vertaa tulosta vaa'an lukemaan epävarmuuksineen."
-      }
-     ]
-    }
-   ],
-   "links": {
-    "concept": "fy5-2",
-    "math": "fy5-2",
-    "experiment": "fy1-8",
-    "graph": "fy1-4",
-    "communication": "fy1-3"
-   }
-  },
-  {
-   "id": "fy9-ympyraliike-s6",
-   "title": "Vuoristoradan silmukka",
-   "source": "example",
-   "source_note": "Vuoristorata ja sen luvut ovat keksitty esimerkki. Silmukka on mallinnettu ympyräksi.",
-   "skills": [
-    "fy5-4",
-    "fy4-8",
-    "fy4-7"
-   ],
-   "text": "Huvipuiston uudessa vuoristoradassa vaunu lähtee levosta lähtömäen huipulta ja laskee silmukan pohjalle. Silmukka on pystysuora, ja suunnittelija mallintaa sen ympyräksi. Lähtömäen huippu on $30{,}0\\,\\text{m}$ silmukan pohjan yläpuolella, ja ympyrän säde on $10{,}0\\,\\text{m}$. Mittausten mukaan kitka ja ilmanvastus muuttavat matkalla lähtömäestä silmukan pohjalle $12\\,\\%$ vaunun mekaanisesta energiasta sisäenergiaksi. Silmukassa energiaa muuttuu niin vähän, että sitä ei oteta huomioon. Matkustajan massa on $60{,}0\\,\\text{kg}$.",
-   "parts": [
-    {
-     "id": "a",
-     "kind": "calc",
-     "points": 4,
-     "text": "Kuinka suuri on vaunun nopeus silmukan pohjalla?",
-     "answer": {
-      "value": 22.76,
-      "unit": "m/s",
-      "tolerance": 0.02
-     },
-     "criteria": [
-      {
-       "text": "Perustelee energiaperiaatteen: potentiaalienergiasta $88\\,\\%$ muuttuu liike-energiaksi, koska $12\\,\\%$ muuttuu sisäenergiaksi.",
-       "tag": "concept",
-       "points": 1
-      },
-      {
-       "key": "equation",
-       "points": 1,
-       "detail": "$\\tfrac12 mv_\\text{p}^2 = 0{,}88 \\cdot mgh$, joten $v_\\text{p} = \\sqrt{2 \\cdot 0{,}88 \\cdot gh}$"
-      },
-      {
-       "key": "calculation",
-       "points": 1,
-       "detail": "$$\n\\begin{aligned}\nv_\\text{p} &= \\sqrt{2 \\cdot 0{,}88 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 30{,}0\\,\\text{m}} \\\\\n&\\approx 22{,}8\\,\\text{m/s}\n\\end{aligned}\n$$"
-      },
-      {
-       "key": "units_precision",
-       "points": 1,
-       "detail": "$v_\\text{p} \\approx 22{,}8\\,\\text{m/s}$ eli noin $82\\,\\text{km/h}$"
-      }
-     ]
-    },
-    {
-     "id": "b",
-     "kind": "calc",
-     "points": 4,
-     "text": "Kuinka suurella voimalla istuin painaa matkustajaa silmukan pohjalla? Kuinka moninkertainen voima on matkustajan painoon verrattuna?",
-     "answer": {
-      "value": 3696,
-      "unit": "N",
-      "tolerance": 0.02
-     },
-     "criteria": [
-      {
-       "key": "fbd_forces",
-       "points": 1,
-       "detail": "Matkustajaan vaikuttavat paino $\\overline{G}$ alas ja istuimen tukivoima $\\overline{N}$ ylös kohti silmukan keskipistettä; keskipakoisvoimaa ei piirretä."
-      },
-      {
-       "key": "equation",
-       "points": 1,
-       "detail": "$N - mg = m\\dfrac{v_\\text{p}^2}{r}$, joten $N = m\\left(g + \\dfrac{v_\\text{p}^2}{r}\\right)$"
-      },
-      {
-       "key": "calculation",
-       "points": 1,
-       "detail": "$$\n\\begin{aligned}\nN &= 60{,}0\\,\\text{kg} \\\\\n&\\cdot (9{,}81 + 51{,}8)\\,\\text{m/s}^2 \\\\\n&\\approx 3700\\,\\text{N}\n\\end{aligned}\n$$"
-      },
-      {
-       "key": "units_precision",
-       "points": 1,
-       "detail": "$N \\approx 3{,}70\\,\\text{kN}$, noin $6{,}3$-kertainen painoon verrattuna"
-      }
-     ]
-    },
-    {
-     "id": "c",
-     "kind": "calc",
-     "points": 4,
-     "text": "Kuinka suuri on vaunun nopeus silmukan huipulla? Painaako istuin matkustajaa huipulla, ja kuinka suurella voimalla?",
-     "answer": [
-      {
-       "name": "v",
-       "value": 11.21,
-       "unit": "m/s",
-       "tolerance": 0.02
-      },
-      {
-       "name": "N",
-       "value": 164.8,
-       "unit": "N",
-       "tolerance": 0.04
-      }
-     ],
-     "criteria": [
-      {
-       "key": "equation",
-       "points": 1,
-       "detail": "$\\tfrac12 mv_\\text{p}^2 = \\tfrac12 mv_\\text{h}^2 + mg \\cdot 2r$ ja huipulla $N + mg = m\\dfrac{v_\\text{h}^2}{r}$"
-      },
-      {
-       "key": "calculation",
-       "points": 1,
-       "detail": "$$\n\\begin{aligned}\nv_\\text{h} &= \\sqrt{518\\,\\text{m}^2/\\text{s}^2 - 392\\,\\text{m}^2/\\text{s}^2} \\\\\n&\\approx 11{,}2\\,\\text{m/s}\n\\end{aligned}\n$$"
-      },
-      {
-       "key": "calculation",
-       "points": 1,
-       "detail": "$$\n\\begin{aligned}\nN &= 60{,}0\\,\\text{kg} \\\\\n&\\cdot (12{,}56 - 9{,}81)\\,\\text{m/s}^2 \\\\\n&\\approx 165\\,\\text{N}\n\\end{aligned}\n$$"
-      },
-      {
-       "text": "Tulkitsee tuloksen: $N > 0$, joten istuin painaa matkustajaa huipullakin, mutta vain noin $0{,}28$-kertaisella voimalla painoon verrattuna; ehto $v_\\text{h}^2 \\ge gr$ täyttyy.",
-       "tag": "transfer",
-       "points": 1
-      }
-     ]
-    },
-    {
-     "id": "d",
-     "kind": "word",
-     "points": 3,
-     "text": "Nykyaikaiset silmukat eivät ole ympyröitä: niiden kaarevuussäde on huipulla pieni ja alaosassa suuri. Selitä tulostesi avulla, miksi tällainen muoto on matkustajalle parempi.",
-     "criteria": [
-      {
-       "text": "Selittää alaosan: suurempi kaarevuussäde pienentää normaalikiihtyvyyttä $\\tfrac{v^2}{r}$ ja siten istuimen voimaa, jonka ympyrämallissa laskettiin olevan yli kuusinkertainen painoon nähden.",
-       "tag": "concept",
-       "points": 1
-      },
-      {
-       "text": "Selittää huipun: pienellä säteellä ehto $v^2 \\ge gr$ täyttyy pienemmälläkin nopeudella, joten silmukasta voi tehdä korkeamman tai lähtömäestä matalamman ilman, että matkustaja irtoaa istuimesta.",
-       "tag": "transfer",
-       "points": 1
-      },
-      {
-       "key": "conclusion",
-       "points": 1,
-       "detail": "Muoto tasoittaa istuimen voimaa silmukan eri kohdissa."
-      }
-     ]
-    }
-   ],
-   "links": {
-    "concept": "fy5-4",
-    "math": "fy4-8",
-    "transfer": "fy5-4",
-    "communication": "fy5-4"
-   }
-  },
-  {
-   "id": "fy9-ympyraliike-s7",
-   "title": "Miten kansainvälinen avaruusasema pysyy radallaan?",
-   "source": "statistics",
-   "source_note": "NASA, International Space Station (https://www.nasa.gov/reference/international-space-station/). Tarkistettu 16.11.2026.",
-   "skills": [
-    "fy5-3",
-    "fy5-4",
-    "fy5-6",
-    "fy6-7"
-   ],
-   "text": "Kansainvälisellä avaruusasemalla (ISS) astronautit leijuvat, ja asema saa sähkönsä aurinkopaneeleista. Avaa NASAn sivu [International Space Station](https://www.nasa.gov/reference/international-space-station/) ja etsi siitä aseman lentokorkeus (*altitude*) ja aurinkopaneelien (*solar arrays*) vuodessa tuottama sähköenergia. Tarvitset niitä a- ja d-kohdassa.\n\nMallinna aseman rata ympyräksi näillä tiedoilla:\n\n- radan korkeus maanpinnasta $400\\,\\text{km}$\n- kiertoaika $92\\,\\text{min}$\n- Maan säde $6371\\,\\text{km}$\n- putoamiskiihtyvyys maanpinnalla $g = 9{,}81\\,\\text{m/s}^2$",
-   "parts": [
-    {
-     "id": "a",
-     "kind": "calc",
-     "points": 4,
-     "text": "Millä korkeudella asema aineiston mukaan kiertää Maata? Sopiiko mallin korkeus $400\\,\\text{km}$ aineistoon? Laske aseman ratanopeus mallin avulla.",
-     "answer": {
-      "value": 7.707,
-      "unit": "km/s",
-      "tolerance": 0.02
-     },
-     "criteria": [
-      {
-       "text": "Lukee aineistosta, että asema kiertää $370$–$460\\,\\text{km}$:n korkeudella (tarkistettu 16.11.2026), ja toteaa, että mallin $400\\,\\text{km}$ on tällä välillä.",
-       "tag": "transfer",
-       "points": 1
-      },
-      {
-       "key": "equation",
-       "points": 1,
-       "detail": "$v = \\dfrac{2\\pi r}{T}$, missä $r = R + h$"
-      },
-      {
-       "key": "calculation",
-       "points": 1,
-       "detail": "$r = 6771\\,\\text{km}$ ja $T = 5520\\,\\text{s}$; $$\n\\begin{aligned}\nv &= \\dfrac{2\\pi \\cdot 6{,}771 \\cdot 10^{6}\\,\\text{m}}{5520\\,\\text{s}} \\\\\n&\\approx 7707\\,\\text{m/s}\n\\end{aligned}\n$$"
-      },
-      {
-       "key": "units_precision",
-       "points": 1,
-       "detail": "$v \\approx 7{,}7\\,\\text{km/s}$ kahdella merkitsevällä numerolla kuten kiertoajassa $92\\,\\text{min}$"
-      }
-     ]
-    },
-    {
-     "id": "b",
-     "kind": "calc",
-     "points": 3,
-     "text": "Laske aseman normaalikiihtyvyys. Kuinka monta prosenttia se on putoamiskiihtyvyydestä maanpinnalla?",
-     "answer": {
-      "value": 8.773,
-      "unit": "m/s^2",
-      "tolerance": 0.02
-     },
-     "criteria": [
-      {
-       "key": "equation",
-       "points": 1,
-       "detail": "$a_\\text{n} = \\dfrac{v^2}{r} = \\dfrac{4\\pi^2 r}{T^2}$"
-      },
-      {
-       "key": "calculation",
-       "points": 1,
-       "detail": "$$\n\\begin{aligned}\na_\\text{n} &= \\dfrac{4\\pi^2 \\cdot 6{,}771 \\cdot 10^{6}\\,\\text{m}}{(5520\\,\\text{s})^2} \\\\\n&\\approx 8{,}77\\,\\text{m/s}^2\n\\end{aligned}\n$$"
-      },
-      {
-       "text": "Ilmoittaa tuloksen $a_\\text{n} \\approx 8{,}8\\,\\text{m/s}^2$ ja vertaa: $\\tfrac{a_\\text{n}}{g} \\approx 0{,}89$ eli normaalikiihtyvyys on noin $89\\,\\%$ putoamiskiihtyvyydestä maanpinnalla.",
-       "tag": "math",
-       "points": 1
-      }
-     ]
-    },
-    {
-     "id": "c",
-     "kind": "word",
-     "points": 3,
-     "text": "Astronautti leijuu aseman sisällä koskematta seiniin tai lattiaan. Mikä voima antaa hänelle b-kohdan normaalikiihtyvyyden? Selitä liikeyhtälön avulla, miksi hän on painoton, vaikka Maan gravitaatio vaikuttaa häneen.",
-     "criteria": [
-      {
-       "text": "Toteaa, että astronautti kiertää samaa rataa samalla nopeudella kuin asema ja että Maan gravitaatiovoima on häneen vaikuttava ainoa voima: se osoittaa radan keskipisteeseen ja antaa normaalikiihtyvyyden, $G = ma_\\text{n}$.",
-       "tag": "concept",
-       "points": 1
-      },
-      {
-       "text": "Selittää painottomuuden liikeyhtälöllä: jos lattia tukisi astronauttia, olisi $G - N = ma_\\text{n}$. Koska gravitaatio yksin antaa saman kiihtyvyyden astronautille ja asemalle, $N = 0$: ne putoavat vapaasti yhdessä, eikä mikään paina astronauttia.",
-       "tag": "concept",
-       "points": 1
-      },
-      {
-       "key": "conclusion",
-       "points": 1,
-       "detail": "Painottomuus tarkoittaa tukivoiman puuttumista, ei gravitaation puuttumista: b-kohdan mukaan gravitaatio on radalla lähes yhtä voimakas kuin maanpinnalla."
-      }
-     ]
-    },
-    {
-     "id": "d",
-     "kind": "calc",
-     "points": 3,
-     "text": "Kuinka paljon sähköenergiaa aseman aurinkopaneelit voivat aineiston mukaan tuottaa vuodessa? Laske tätä vastaava keskimääräinen sähköteho.",
-     "answer": {
-      "value": 83.9,
-      "unit": "kW",
-      "tolerance": 0.02
-     },
-     "criteria": [
-      {
-       "text": "Lukee aineistosta, että aurinkopaneelit voivat tuottaa $735\\,000\\,\\text{kWh}$ sähköenergiaa vuodessa (tarkistettu 16.11.2026).",
-       "tag": "transfer",
-       "points": 1
-      },
-      {
-       "key": "calculation",
-       "points": 1,
-       "detail": "$P = \\dfrac{E}{t}$ ja $t = 365 \\cdot 24\\,\\text{h} = 8760\\,\\text{h}$; $$\n\\begin{aligned}\nP &= \\dfrac{735\\,000\\,\\text{kWh}}{8760\\,\\text{h}} \\\\\n&\\approx 83{,}9\\,\\text{kW}\n\\end{aligned}\n$$"
-      },
-      {
-       "key": "units_precision",
-       "points": 1,
-       "detail": "$P \\approx 84\\,\\text{kW}$; yksikkö $\\tfrac{\\text{kWh}}{\\text{h}} = \\text{kW}$, ja kaksi merkitsevää numeroa riittää, koska aineiston arvo on pyöristetty"
-      }
-     ]
-    },
-    {
-     "id": "e",
-     "kind": "word",
-     "points": 2,
-     "text": "Selitä aseman radan ja kiertoajan avulla, miksi asema tarvitsee aurinkopaneelien lisäksi akkuja. Miksi d-kohdan keskimääräinen teho ei yksin kerro, riittääkö sähkö joka hetki?",
-     "criteria": [
-      {
-       "text": "Selittää, että asema kulkee Maan varjon läpi noin $92\\,\\text{min}$:n välein eli lähes joka kierroksella. Varjossa paneelit eivät tuota sähköä, mutta laitteet tarvitsevat sitä koko ajan.",
-       "tag": "concept",
-       "points": 1
-      },
-      {
-       "key": "conclusion",
-       "points": 1,
-       "detail": "Akut ladataan auringonvalossa ja ne syöttävät laitteita varjossa. Keskimääräinen teho peittää vaihtelun: tuotanto on varjossa nolla ja valossa keskiarvoa suurempi."
-      }
-     ]
-    }
-   ],
-   "links": {
-    "concept": "fy5-6",
-    "math": "fy5-4",
-    "transfer": "fy5-6",
-    "communication": "fy6-7"
-   }
-  }
- ]
+  ]
 }

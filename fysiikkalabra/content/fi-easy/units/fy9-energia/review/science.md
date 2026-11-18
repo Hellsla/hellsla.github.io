@@ -1,17 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 3c8c8618ecbaa2da
-Round 3: delta against the version round 2 reviewed (one sentence in s7 d).
+CONTENT-HASH: b3bdcca4582a92f4
+SCOPE: delta: the new Sovella itsenäisesti tasks s8 (skater on a half-pipe, figure fy2-1/kitka-pylvaat) and s9 (two devices on an energy meter, figure fy2-3/graph-ab) with solutions, answers.py, and the changed intro sentence (fi-easy); s1-s7 not re-judged.
 
 ## Blocking
 - (none)
 
 ## Polish
-- C (not a finding, for the teacher's information): in the source chart's own data the Opel Grandland (484 km stated, 262 km measured) comes to -45,87 % and the Lucid Air (960 km, 520 km) to -45,83 %, so a student who computes every car from the chart finds the Opel 0,04 percentage points ahead. The sentence is attributed to the report, which makes it true as written; a teacher note or a "noin 46 %" in the solution would forestall the question. The report's text gives 519 km for the Lucid, the chart 520 km (the task uses the chart).
+- s8 a, "Reasonableness" in the model solution: "Sisäenergiaa syntyy suunnilleen yhtä paljon kummallakin osamatkalla, mikä sopii kitkan tasaiseen vaikutukseen" is not supported by the task: the path lengths A-B and B-C are not given, and in the figure's parabola A-B is the shorter arc (about 40 % of the path) yet gets as much (100 J) as B-C. Suggest dropping the clause or saying only that energy is produced on both parts. Same sentence in en and fi-easy.
+- s8: the energies are read from bars on a 100 J grid (700, 300, 500 J) and v is given with two figures "like the mass"; defensible since the bars end on gridlines, but a teacher note that the bar values are exact would forestall the question.
+- s8: the 3,4 m path is not tied to a drop height; the figure is schematic, so no check is possible. Not an error.
 
 ## Checked
-- `git diff c502cb9e26 -- content/*/units/fy9-energia`: three files, one line each, only the s7 d sentence. Nothing else changed.
-- New sentence: "Testin raportin mukaan pisimmälle ajaneen auton toimintamatka jäi suhteellisesti eniten jälkeen ilmoitetusta." Opened the source myself (naf.no, elprix-vinter-2026-rekkeviddetest): "Lucid var også bilen med størst avvik fra WLTP-rekkevidden, med hele 46 prosent." The attribution is accurate, and the same article gives the task's own reasoning (the Lucid had by far the longest time in the coldest surroundings).
-- Recomputed from the task's table: Inster -28,89 %, Tesla -42,93 %, Lucid -45,83 %: the sentence agrees with part a and with the 46 % of the report. From the chart data of all 24 cars the Lucid drove the furthest (520 km) and the mean deviation is 38 %, as the task says.
-- Part d criteria (source use: -7 to -32 degrees C, short-range car stopped at -16 degrees C; conclusion: not the same conditions, no ranking by percentages) and the model answer are unchanged and agree with the new sentence; they need nothing the task does not give. Points 1 + 1 = 2.
-- The round-2 Polish about the claim's scope (en) is settled by the attribution.
-- `practice.py check units/fy9-energia` OK (7 tasks, 105 points). Hash the same at the start and the end.
+- Hashes at start and end identical (b3bdcca4582a92f4); `practice.py check units/fy9-energia` OK (9 tasks, 134 points, all three languages).
+- Recomputed s8: Em 700/600/500 J; dB 100 J, dC 200 J; v = sqrt(1000/45) = 4,71 -> 4,7 m/s; F = 200/3,4 = 58,8 -> 59 N; weight 441 N, 13 %; v0 = sqrt(1400/45) = 5,58 -> 5,6 m/s; 200/700 = 29 %. All match tasks.json, solutions and answers.py. Energy wording follows P1 (internal energy, transferred as heat; "muuttuu lämmöksi" only as a listed mistake).
+- Figure kitka-pylvaat: bars A 700/0, B 300/300, C 0/500 on 100 J gridlines, B placed at height 300/700 of the rim; alt text names A, B, C as the task does; the figure shows no thermal energy or total, so nothing is given away. Task text does not name the method.
+- Recomputed s9: PA 120/80 = 1,5 kW, PB 0,50 kW; 90 h; 135 and 45 kWh; 21,6 -> 22 EUR and 7,2 EUR; E_hyoty = 150*9,81*20 = 29,4 kJ; eta 0,7358 -> 74 %; P_hyoty 368 W; loss 132 W -> 0,13 kW (26 %, eta + 26 % = 100 %). Consistent in all files; accepted alternatives (73,6 %, 132 W) correct.
+- Figure graph-ab: lines through the origin to (80 s; 120 kJ) and (80 s; 40 kJ), labels A and B as in the task, no powers or slope triangle; alt text consistent. Times (3,0 h, 30 days) are exact-ish given with two figures; results rounded to two figures.
+- Intro: "Yhdeksän" / nine / "Kaksi viimeistä" agree with 9 tasks where only s8 and s9 carry a figure; s7 is still the source task. Same in all languages.
+- en and fi-easy: numbers, point splits, criteria and answers identical to fi; only wording differs.
+- Limit: the committed captures (shots.md) show the unit page without the independent tasks, so layout with solutions open at 360 px is not judged here (visual reviewer's role).

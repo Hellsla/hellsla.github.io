@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: b10ed5d904869b22
+CONTENT-HASH: 228beb400ac948b4
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] solutions.md, airbag task — the Formula paragraph is still one block of about 75 words; a break before "For the rigid obstacle" would read lighter (Round 1 polish, unchanged).
 
 ## Checked
-- Opened (this language's own captures, 1280 px, all solutions open) fy4-9-open-exercises-L2-1280-14 (SLAMMD error-sources solution, longest new splits); also read every inserted break in the diff.
-- The new paragraph breaks render as separate paragraphs with even spacing, one thing per paragraph, no formula or row clipped, no awkward cut mid-thought.
-- Delta only (md-paragraphs in solutions.md); hash rechecked, unchanged.
+- Round 2 delta (solutions.md, airbag task: stopping time now $\Delta t_\text{e} = 25\,\text{ms}$ in Formula and Substitution c). Opened content/en/FY4/fy4-9/review/shots/fy4-9-open-exercises-L3-1280-6.png (airbag task Principle, Formula, Conversions, Substitution, Answer).
+- The symbol $\Delta t_\text{e}$ is defined where first used, distinct from the graph's $\Delta t = 10\,\text{ms}$, used consistently in formula, display and substitution; renders with upright unit, nothing clipped. Hash unchanged at end.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

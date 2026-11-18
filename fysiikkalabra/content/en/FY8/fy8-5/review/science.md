@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7874b81a3deef5d7
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: fa562a1451b96017
 
 ## Blocking
 - none
 
 ## Polish
-- The heading on the link to chemistry orbitals is not marked as an extension although the detailed counting exercises are.
+- none
 
 ## Checked
-- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).
+- batch delta review: only a framing sentence (chemistry book electron clouds, electron as a wave) added to the retrieval prompt; options and feedback unchanged and right; other changes reflow and approved formula names; hash same at start and end.

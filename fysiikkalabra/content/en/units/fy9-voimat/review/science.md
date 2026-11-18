@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3549b70070a4db09
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 95310d4f74748abc
+SCOPE: delta: CI 360 px layout fix, sovella tasks.json s7 b) rubric Substitution row split into three aligned rows (en); all else not re-judged.
 
 ## Blocking
 - (none)
 
 ## Polish
-- (none)
+- Earlier Polish items stay recorded; nothing new.
 
 ## Checked
-- inquiry.json diagnostic 6: 'maximum (fully developed) static friction is mu0*N = 90 N'; the answer (40 N, static friction equals the push) is unaffected.
-- solutions.md b) reasonableness: recomputed m*g = 2747 N, m*g*sin 14 = 664.5 N, mu*m*g*cos 14 = 666.3 N, T = 1331 N = 1.3 kN, about half of 2.7 kN. The corrected sentence (a ramp reduces the force, not the work; friction takes much of the gain) is right.
-- s-task limiting angle principle: maximum static friction equals the weight component along the cover at the limiting angle, mu0 = tan(alpha0); correct.
-- No ADDED TASK in this unit's en diff; `python scripts/practice.py check units/fy9-voimat` is OK.
+git diff of unit content: only the s7 b) Substitution detail in tasks.json. Same numbers, order, signs and units: 75.0 kg · (9.81 m/s² − 1.5 m/s²) ≈ 623 N (75 · 8.31 = 623.25). Split into rows "75.0 kg", "· (9.81 m/s²", "− 1.5 m/s²)" with unchanged result row; parenthesis still closes, minus kept. Decimal comma/point correct for the language. No new content.

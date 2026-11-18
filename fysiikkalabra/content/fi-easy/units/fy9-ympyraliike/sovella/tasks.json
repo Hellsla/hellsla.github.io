@@ -1,5 +1,5 @@
 {
-  "intro": "Tässä on seitsemän ylioppilaskokeen tyylistä tehtävää. Ne kokoavat tunnin asiat: tasapainon, ympyräliikkeen ja gravitaation. Ratkaise tehtävät samalla tavalla kuin kokeessa. Piirrä voimakuvio. Perustele, mitä ehtoa käytät ja miksi se pätee. Ratkaise kysytty suure ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis. Viimeinen tehtävä on soveltava aineistotehtävä. Sen aineisto avautuu tehtävän linkistä.",
+  "intro": "Tässä on yhdeksän ylioppilaskokeen tyylistä tehtävää. Ne kokoavat tunnin asiat: tasapainon, ympyräliikkeen ja gravitaation. Ratkaise tehtävät samalla tavalla kuin kokeessa. Piirrä voimakuvio. Perustele, mitä ehtoa käytät ja miksi se pätee. Ratkaise kysytty suure ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis. Tehtävä 7 on soveltava aineistotehtävä. Sen aineisto avautuu tehtävän linkistä.",
   "tasks": [
     {
       "id": "fy9-ympyraliike-s1",
@@ -964,6 +964,304 @@
         "math": "fy5-4",
         "transfer": "fy5-6",
         "communication": "fy6-7"
+      }
+    },
+    {
+      "id": "fy9-ympyraliike-s8",
+      "title": "Auto ajaa kaarteessa",
+      "source": "example",
+      "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä.",
+      "skills": [
+        "fy5-4",
+        "fy4-6",
+        "fy1-4"
+      ],
+      "figure": "fy5-4/kuvaaja-a",
+      "text": "Auto ajaa tasaisella vauhdilla vaakasuoran, ympyrän muotoisen kaarteen läpi. Kaarteen sädettä ei ole annettu. Kuvaajassa on auton normaalikiihtyvyys ratanopeuden funktiona tässä kaarteessa. Auton massa on $1200\\,\\text{kg}$. Märällä tiellä renkaiden ja tien välinen lepokitkakerroin on $0{,}50$. Renkaat eivät liu'u.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Määritä kaarteen säde kuvaajan avulla.",
+          "answer": {
+            "value": 75.0,
+            "unit": "m",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kuvaajalle merkitty piste luetaan apuviivoilta: $v = 15\\,\\text{m/s}$ ja $a_\\text{n} = 3{,}0\\,\\text{m/s}^2$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Ympyräradalla $a_\\text{n} = \\dfrac{v^2}{r}$, joten $r = \\dfrac{v^2}{a_\\text{n}}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nr &= \\dfrac{(15\\,\\text{m/s})^2}{3{,}0\\,\\text{m/s}^2} \\\\\n&= 75\\,\\text{m}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$r = 75\\,\\text{m}$, kaksi merkitsevää numeroa kuten luetuissa arvoissa"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Piirrä auton voimakuvio. Kuinka suuri kitkavoima tarvitaan, kun auto ajaa kaarteen nopeudella $15\\,\\text{m/s}$?",
+          "answer": {
+            "value": 3.6,
+            "unit": "kN",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Kappaleena auto: paino $\\overline{G}$ alas, tukivoima $\\overline{N}$ ylös ja renkaiden lepokitka $\\overline{F}$ vaakasuorassa kohti kaarteen keskipistettä. Keskipakoisvoimaa ei piirretä."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Vaakasuunnassa ainoa voima on kitka, joten $\\Sigma F = ma_\\text{n}$ antaa $F = ma_\\text{n}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nF &= 1200\\,\\text{kg} \\cdot 3{,}0\\,\\text{m/s}^2 \\\\\n&= 3600\\,\\text{N} \\\\\n&\\approx 3{,}6\\,\\text{kN}\n\\end{aligned}\n$$, kaksi merkitsevää numeroa"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kuinka suurella nopeudella auto voi enintään ajaa kaarteen märällä tiellä liukumatta? Anna vastaus myös yksikössä $\\text{km/h}$.",
+          "answer": {
+            "value": 19.18,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Perustelee: auton pystykiihtyvyys on nolla, joten $N = mg$, ja lepokitka on enintään $$\n\\begin{aligned}\nF_\\text{max} &= \\mu_\\text{s} N \\\\\n&= \\mu_\\text{s} mg\n\\end{aligned}\n$$. Rajatilanteessa kitka on suurin mahdollinen.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\Sigma F = ma_\\text{n}$ rajatilanteessa: $\\mu_\\text{s} mg = \\dfrac{mv^2}{r}$, joten $v_\\text{max} = \\sqrt{\\mu_\\text{s} g r}$ ja massa supistuu."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nv_\\text{max} &= \\sqrt{0{,}50 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 75\\,\\text{m}} \\\\\n&\\approx 19{,}2\\,\\text{m/s}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v_\\text{max} \\approx 19\\,\\text{m/s}$ eli noin $69\\,\\text{km/h}$, kaksi merkitsevää numeroa"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Suurin kitka $\\mu_\\text{s} g$ antaa kuvaajan mukaan $a_\\text{n} \\approx 4{,}9\\,\\text{m/s}^2$ nopeudella noin $19\\,\\text{m/s}$, ja $15\\,\\text{m/s}$ on sitä pienempi."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Auto kuormataan matkustajilla ja tavaroilla, ja sen massa on $1500\\,\\text{kg}$. Miten kuorma vaikuttaa kaarteen suurimpaan nopeuteen märällä tiellä? Muuttuuko kuvaaja? Perustele laskemalla.",
+          "criteria": [
+            {
+              "text": "Perustelee, että massa supistuu liikeyhtälöstä $\\mu_\\text{s} mg = \\dfrac{mv^2}{r}$, joten suurin nopeus $$\n\\begin{aligned}\n\\sqrt{\\mu_\\text{s} g r} &\\approx 19\\,\\text{m/s}\n\\end{aligned}\n$$ ei muutu.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Laskee kitkavoimat: tarvittava kitka nopeudella $15\\,\\text{m/s}$ on $$\n\\begin{aligned}\n1500\\,\\text{kg} \\cdot 3{,}0\\,\\text{m/s}^2 &= 4500\\,\\text{N}\n\\end{aligned}\n$$ ja suurin mahdollinen $$\n\\begin{aligned}\n0{,}50 \\cdot 1500\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 &\\approx 7400\\,\\text{N}\n\\end{aligned}\n$$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Kuvaaja ei muutu, koska $a_\\text{n} = \\dfrac{v^2}{r}$ ei riipu massasta. Raskaampi auto tarvitsee suuremman kitkavoiman, mutta renkaat antavat sitä suhteessa yhtä paljon enemmän, joten suurin nopeus pysyy samana."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy5-4",
+        "concept": "fy5-4",
+        "math": "fy5-4",
+        "transfer": "fy4-6",
+        "communication": "fy5-4"
+      }
+    },
+    {
+      "id": "fy9-ympyraliike-s9",
+      "title": "Kyltti seinän tangossa",
+      "source": "example",
+      "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä.",
+      "skills": [
+        "fy5-2",
+        "fy5-1",
+        "fy4-5"
+      ],
+      "figure": "fy5-2/kyltti",
+      "text": "Kahvilan kyltti riippuu vaakasuoran tangon päästä. Tanko on kiinnitetty seinään saranalla. Tangon uloimmasta päästä lähtee vaijeri seinään. Kuvassa on tangon pituus ja vaijerin kulma. Kyltin massa on $18\\,\\text{kg}$. Tanko on tasa-aineinen, ja sen massa on $3{,}0\\,\\text{kg}$. Vaijerin massa jätetään huomiotta. Kaikki on levossa.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 6,
+          "text": "Piirrä tangon ja kyltin voimakuvio. Kuinka suuri voima vaijerissa on?",
+          "answer": {
+            "value": 382.6,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "Kappaleena tanko ja kyltti: kyltin paino $\\overline{G}_\\text{s}$ tangon päästä alas, tangon paino $\\overline{G}_\\text{t}$ keskeltä alas, vaijerin voima $\\overline{T}$ päästä vinosti ylös seinää kohti ja saranan voima $\\overline{F}_\\text{s}$ saranasta."
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "Kuvasta luetaan tangon pituus $L = 1{,}20\\,\\text{m}$ ja vaijerin ja tangon välinen kulma $\\theta = 30{,}0^\\circ$."
+            },
+            {
+              "text": "Perustelee momenttipisteen: saranan suhteen saranan voiman varsi on nolla, ja kappale on levossa, joten momenttien summa on nolla.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nT L\\sin\\theta &= m_\\text{s} g L \\\\\n&+ m_\\text{t} g\\,\\tfrac{L}{2}\n\\end{aligned}\n$$, joten $L$ supistuu."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nT &= \\dfrac{(18\\,\\text{kg} + 1{,}5\\,\\text{kg}) \\cdot 9{,}81\\,\\text{m/s}^2}{\\sin 30{,}0^\\circ} \\\\\n&\\approx 383\\,\\text{N}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$T \\approx 380\\,\\text{N}$, kaksi merkitsevää numeroa kuten massoissa"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Kuinka suuri on saranan tankoon kohdistama voima?",
+          "answer": {
+            "value": 331.7,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Voimien summa on nolla: vaakasuunnassa $H = T\\cos\\theta$ ja pystysuunnassa $V = (m_\\text{s} + m_\\text{t})g - T\\sin\\theta$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$H \\approx 331\\,\\text{N}$ poispäin seinästä ja $V \\approx 14{,}7\\,\\text{N}$ ylöspäin."
+            },
+            {
+              "text": "Laskee komponenteista suuruuden: $$\n\\begin{aligned}\nF_\\text{s} &= \\sqrt{H^2 + V^2} \\\\\n&\\approx 332\\,\\text{N}\n\\end{aligned}\n$$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F_\\text{s} \\approx 330\\,\\text{N}$, suunta noin $2{,}5^\\circ$ vaakasuoran yläpuolella poispäin seinästä, kaksi merkitsevää numeroa"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "Tarkistus kyltin päästä otetuilla momenteilla: $V L = m_\\text{t} g\\,\\tfrac{L}{2}$, joten $$\n\\begin{aligned}\nV &= \\tfrac12 \\cdot 3{,}0\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\\n&\\approx 14{,}7\\,\\text{N}\n\\end{aligned}\n$$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Vaijeri kestää enintään $600\\,\\text{N}$:n voiman. Kuinka suuri on suurin kyltin massa, jota vaijeri vielä pitää?",
+          "answer": {
+            "value": 29.08,
+            "unit": "kg",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Momenttiehdosta $$\n\\begin{aligned}\nm_\\text{s} &= \\dfrac{T_\\text{max}\\sin\\theta}{g} - \\tfrac12 m_\\text{t}\n\\end{aligned}\n$$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nm_\\text{s} &= \\dfrac{600\\,\\text{N} \\cdot 0{,}500}{9{,}81\\,\\text{m/s}^2} - 1{,}5\\,\\text{kg} \\\\\n&\\approx 29{,}1\\,\\text{kg}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$m_\\text{s} \\approx 29\\,\\text{kg}$, kaksi merkitsevää numeroa"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Vaijeri kiinnitetään seinään korkeammalle niin, että vaijerin ja tangon välinen kulma on $45^\\circ$. Miten vaijerin voima muuttuu a-kohdasta? Perustele laskemalla ja selitä, miksi muutos on tämän suuntainen.",
+          "criteria": [
+            {
+              "text": "Perustelee momenttiehdolla: vaijerin voiman pystykomponentti $T\\sin\\theta \\approx 191\\,\\text{N}$ ei riipu kulmasta, joten suuremmalla kulmalla koko voima $T$ on pienempi.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Laskee $$\n\\begin{aligned}\nT &= \\dfrac{191{,}3\\,\\text{N}}{\\sin 45^\\circ} \\\\\n&\\approx 270\\,\\text{N}\n\\end{aligned}\n$$, noin $29\\,\\%$ pienempi kuin $380\\,\\text{N}$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Kun vaijeri on jyrkempi, suurempi osa sen voimasta kantaa painoa ylöspäin. Samalla vaakakomponentti $T\\cos 45^\\circ \\approx 191\\,\\text{N}$ ja saranan voima pienenevät."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy5-2",
+        "concept": "fy5-2",
+        "math": "fy5-2",
+        "transfer": "fy5-1",
+        "communication": "fy5-2"
       }
     }
   ]

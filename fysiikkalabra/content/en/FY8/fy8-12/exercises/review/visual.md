@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 6d921e617ea8865f
-SCOPE: delta added-exercise from 586285323faf3a8f base 5b3ca4f81c77
+CONTENT-HASH: 3c71dfde0dd50970
+
+Round 1 (delta): $\tfrac{1}{\text{min}}$ changed to $\text{min}^{-1}$ in L1-07, L3-02 and the answer-unit fields.
 
 ## Blocking
-(none)
+- None.
 
 ## Polish
-- [Minor] fy8-12-L2-09 — the prompt asks for "pulses per minute" and the language-neutral unit field is `1/min`; L1-07 writes $\tfrac{1}{\text{min}}$ in its text. Optional: match it.
+- [Minor] solutions.md L1-07 Reasonableness — $27\,\tfrac{1}{\text{s}}$ and $1.5\,\tfrac{1}{\text{s}}$ still use the fraction form next to $\text{min}^{-1}$ — write $\text{s}^{-1}$ for one unit style.
 
 ## Checked
-- Round 3 delta: the L2-09 unit field (en) and L1-07 for comparison, read from exercises.json. No new captures opened: a data-field change only; the round 2 captures carry for the layout.
-- `1/min` is plain and language-neutral, with no Finnish word in it. It is acceptable on the English page, and the round 2 blocker is resolved.
+- Opened fy8-12-open-exercises-1280-5 (L1-07: task text, unit box "min⁻¹", Given/Asked/Substitution/Answer/Reasonableness) and fy8-12-open-exercises-L3-2... (12-20 Given/Asked, Answer line). Exponent legible, aligned rows intact, no clipping or overflow, unit box matches the maths. Also 1280-3 and 1280-6 for surrounding layout.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish n/a (en only; fi carried) · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

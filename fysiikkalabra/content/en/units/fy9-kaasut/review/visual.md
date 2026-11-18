@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 2f9de8817eb2638d
-SCOPE: delta (round 2), new Sovella tasks fy9-kaasut-s8 and s9 (text, figures fy3-10/pt-suorat and fy3-11/pv-isobaari, model answers, rubrics) and the changed intro; s1-s7 not re-judged. Language: en.
+CONTENT-HASH: b61fa0a2e8442d35
+SCOPE: delta: new Sovella tasks s7 and s8 (figures from the catalog, aligned calculation rows, LaTeX units, English decimal points) judged at 390 px, check_layout at 360 px; other tasks not re-judged
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] pt-suorat: the two lines are solid from 100 K although data points exist only at 200 K and 400 K; the stretch below 200 K is extrapolation and could be dashed. Description gives the two real points per gas.
-- [Minor] Axis tick labels in both figures render at about 9-10 px at 360 px; legible, figure correctly scaled inside its card.
+- [Minor] solutions.md s8 — new text writes the gas constant as `8.31\,\text{J/(mol K)}` while the same file also uses `\tfrac{\text{J}}{\text{mol}\cdot\text{K}}` and the project writes unit products with `\cdot` — use `\text{J/(mol}\cdot\text{K)}` throughout.
+- [Minor] s8 b) Formula block — the symbolic chain `n_B/n_A = ... = p_B/p_A` and the next row `(n_A−n_B)/n_A = 1 − n_B/n_A` are set in one box with different left edges; give the second its own line starting with the quantity.
 
 ## Checked
-- Round 1 (visual) had no blocking items; the PASS stands. Round-1 content fixes verified in the current text: s9 piston is movable with weights holding the pressure constant (task text and the isobaric graph agree); s9 c answer tolerance 3 % matches the two-significant-figure model answer 1,2 * 10^3 K (1173 K); the intro no longer calls the last task the source task (s8, s9 are plain figure tasks, source note says invented examples); s9 c reasonableness line (4 * 293 K, about 900 C) consistent.
-- Own 360 px captures of s8 and s9 (en page, model answer opened): no horizontal overflow (page scrollWidth 360, task cards 326/326); check_layout --width 360 OK for fi, en, fi-easy.
-- Calculation rows aligned at =, units LaTeX with thin space, litre as \textsf{l}, decimal points (en), boxed answers, fractions legible; the s8 c) chain breaks one step per row without clipping.
-- Figures sit inside the card; aria-label gives the data points and grid step; axes carry quantity and unit; s9 shows the isobar as a horizontal line with direction arrow and end markers.
+- Unit page captures made (screenshot.py fy9-kaasut --lang en); packet read; page opened at 390 px with every box open, tasks s7 and s8 captured as element screenshots (statement, figure, parts, model answer, substitution, answer, reasonableness).
+- check_layout.py fy9-kaasut --width 360: OK for en (known clipped formulas are old rows, none in s7/s8).
+- s7 (nuclear power plant source task, text-only, link to TVO page, assumptions list) and s8 (two vessels, p–T graph with two lines A and B, parts a–c): graph axes and units, distinct colours with line labels, readable rows, formula/substitution/answer order.
+
+## Scores
+illustrations 5 · typography 4 · Finnish (English prose) 4 · accessibility 5

@@ -69,7 +69,9 @@ $$, so $E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{254 \cdot 10^{-9}\
 ## fy8-1-L1-06
 **Find:** what happens to the number of released electrons and to their maximum kinetic energy when the frequency of the light stays the same and the intensity doubles
 **Principle:** Light gives its energy as photons, and one electron absorbs one photon. The photon energy is $E = hf$ and the maximum kinetic energy is $E_\text{k,max} = hf - W$, so it depends only on the frequency and the work function. The intensity tells how many photons hit the surface per second.
-**Model answer:** When the intensity doubles, twice as many photons hit the surface per second, and each photon with enough energy can release one electron. So more electrons are released. The photon energy $hf$ does not change, however, because the frequency is the same, so the maximum kinetic energy $E_\text{k,max} = hf - W$ stays the same. An electron cannot collect energy from several photons, and so a larger number of photons does not make a single electron faster. Faster electrons could be obtained only with a higher frequency, that is a shorter wavelength.
+**Model answer:** When the intensity doubles, twice as many photons hit the surface per second, and each photon with enough energy can release one electron. So more electrons are released. The photon energy $hf$ does not change, however, because the frequency is the same, so the maximum kinetic energy $E_\text{k,max} = hf - W$ stays the same.
+
+An electron cannot collect energy from several photons, and so a larger number of photons does not make a single electron faster. Faster electrons could be obtained only with a higher frequency, that is a shorter wavelength.
 
 ## fy8-1-L1-07
 **Given:** work function of potassium $W = 2.30\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$, wavelength of the red light $650\,\text{nm}$
@@ -92,11 +94,17 @@ $$, which is smaller than $2.30\,\text{eV}$. The threshold wavelength is close t
 ## fy8-1-L1-08
 **Find:** why dim ultraviolet light releases electrons immediately but bright red light releases none
 **Principle:** Light gives its energy as photons, and one electron absorbs one photon entirely. The electron is released if the photon energy $hf$ is at least equal to the work function $W$. The brightness of the light tells only how many photons arrive, not how much energy a single photon carries.
-**Model answer:** The energy of an ultraviolet photon, $3.40\,\text{eV}$, is greater than the work function of sodium, $2.28\,\text{eV}$, so even one photon is enough to release an electron. That is why electrons are released immediately, even if the light is dim and few photons arrive. The energy of a photon of red light, $1.91\,\text{eV}$, is smaller than the work function, so not a single photon is enough to release an electron. An electron cannot collect energy from the combined effect of several photons or by waiting, so brighter red light only brings more photons with too little energy and releases no electrons.
+**Model answer:** The energy of an ultraviolet photon, $3.40\,\text{eV}$, is greater than the work function of sodium, $2.28\,\text{eV}$, so even one photon is enough to release an electron. That is why electrons are released immediately, even if the light is dim and few photons arrive.
+
+The energy of a photon of red light, $1.91\,\text{eV}$, is smaller than the work function, so not a single photon is enough to release an electron.
+
+An electron cannot collect energy from the combined effect of several photons or by waiting, so brighter red light only brings more photons with too little energy and releases no electrons.
 
 ## fy8-1-L1-09
 **Find:** which of the five statements about the electrons released by lamps A and B are true.
-**Principle:** The energy of light is quantised into photons, and one photon gives all its energy to one electron. An electron is released only if the photon energy $hf$ is at least equal to the work function $W$, and the extra energy remains as kinetic energy: $E_\text{k,max} = hf - W$. The intensity tells only how many photons hit the surface per second.
+**Principle:** The energy of light is quantised into photons, and one photon gives all its energy to one electron. An electron is released only if the photon energy $hf$ is at least equal to the work function $W$, and the extra energy remains as kinetic energy: $E_\text{k,max} = hf - W$.
+
+The intensity tells only how many photons hit the surface per second.
 **Model answer:** The photon energy of lamp A is enough for release, and the maximum kinetic energy is
 
 $E_\text{k,max} = hf - W$
@@ -196,8 +204,12 @@ $$, so $\dfrac{hc}{\lambda} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{
 ## fy8-1-L2-05
 **Given:** table $(\lambda, U_\text{s})$, $e = 1.602 \cdot 10^{-19}\,\text{C}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $E_\text{k,max} = eU_\text{s}$
 **Find:** the Planck constant $h$ in the unit $\text{J}\,\text{s}$ (and the threshold frequency $f_0$ and the work function $W$)
-**Principle:** According to the photoelectric equation $hf = W + eU_\text{s}$, the equation $U_\text{s} = \tfrac{h}{e}f - \tfrac{W}{e}$ is the equation of a line in the frequency. The slope of the line is $\tfrac{h}{e}$, and it crosses the frequency axis at the threshold frequency, where $U_\text{s} = 0$. Because of the measurement uncertainty the measurement points are usually not exactly on the same line, so the slope is read from the fitted line.
-**Reading the graph:** The frequencies are $f = \tfrac{c}{\lambda}$: $8.21$, $7.40$, $6.88$, $6.38$ and $5.94$ in the unit $10^{14}\,\text{Hz}$. A line is fitted through the points so that it passes between the points. Two points far apart are chosen on the line, for example $(6.0 \cdot 10^{14}\,\text{Hz};\ 0.179\,\text{V})$ and $(8.0 \cdot 10^{14}\,\text{Hz};\ 1.018\,\text{V})$. The threshold frequency is read at the point where the line crosses the frequency axis.
+**Principle:** According to the photoelectric equation $hf = W + eU_\text{s}$, the equation $U_\text{s} = \tfrac{h}{e}f - \tfrac{W}{e}$ is the equation of a line in the frequency. The slope of the line is $\tfrac{h}{e}$, and it crosses the frequency axis at the threshold frequency, where $U_\text{s} = 0$.
+
+Because of the measurement uncertainty the measurement points are usually not exactly on the same line, so the slope is read from the fitted line.
+**Reading the graph:** The frequencies are $f = \tfrac{c}{\lambda}$: $8.21$, $7.40$, $6.88$, $6.38$ and $5.94$ in the unit $10^{14}\,\text{Hz}$. A line is fitted through the points so that it passes between the points. Two points far apart are chosen on the line, for example $(6.0 \cdot 10^{14}\,\text{Hz};\ 0.179\,\text{V})$ and $(8.0 \cdot 10^{14}\,\text{Hz};\ 1.018\,\text{V})$.
+
+The threshold frequency is read at the point where the line crosses the frequency axis.
 **Formula:** $k = \dfrac{\Delta U_\text{s}}{\Delta f}$ and $k = \dfrac{h}{e}$, so $h = ek$; at the threshold frequency $hf_0 = W$
 **Conversions:** The frequencies were calculated from the wavelengths $\lambda = 365\,\text{nm} = 365 \cdot 10^{-9}\,\text{m}$ etc.; no other conversions are needed.
 **Substitution:** $k = \dfrac{1.018\,\text{V} - 0.179\,\text{V}}{8.0 \cdot 10^{14}\,\text{Hz} - 6.0 \cdot 10^{14}\,\text{Hz}} = 4.195 \cdot 10^{-15}\,\tfrac{\text{V}}{\text{Hz}}$, so $$
@@ -231,7 +243,9 @@ $$, and all the measured wavelengths, $365$–$505\,\text{nm}$, are shorter than
 ## fy8-1-L2-07
 **Given:** points $(6.5 \cdot 10^{14}\,\text{Hz};\ 0.55\,\text{eV})$, $(8.0 \cdot 10^{14}\,\text{Hz};\ 1.17\,\text{eV})$ and $(9.5 \cdot 10^{14}\,\text{Hz};\ 1.79\,\text{eV})$; the student's reading $-2.1\,\text{eV}$
 **Find:** a) the student's error, b) the work function $W$ in electronvolts
-**Principle:** According to the photoelectric equation, $E_\text{k,max} = hf - W$ is a straight line as a function of the frequency. When $f = 0$, $E_\text{k,max} = -W$, so the intersection with the vertical axis gives the negative of the work function. At the threshold frequency $E_\text{k,max} = 0$, so the threshold frequency is read at the point where the line crosses the horizontal axis, that is the frequency axis.
+**Principle:** According to the photoelectric equation, $E_\text{k,max} = hf - W$ is a straight line as a function of the frequency. When $f = 0$, $E_\text{k,max} = -W$, so the intersection with the vertical axis gives the negative of the work function.
+
+At the threshold frequency $E_\text{k,max} = 0$, so the threshold frequency is read at the point where the line crosses the horizontal axis, that is the frequency axis.
 **Reading the graph:** The student's reading $-2.1\,\text{eV}$ is the intersection with the vertical axis, and its unit is the unit of energy, eV, not the unit of frequency, Hz. The threshold frequency is the intersection with the horizontal axis. The slope of the line is calculated from the first and the last point.
 **Formula:** $k = \dfrac{E_3 - E_1}{f_3 - f_1}$; at the threshold frequency $0 = E_1 + k(f_0 - f_1)$, so $f_0 = f_1 - \dfrac{E_1}{k}$, and $W = kf_0$
 **Conversions:** Not needed: the energy is in electronvolts and the frequency in hertz, so the slope is in the unit $\text{eV/Hz}$.
@@ -261,7 +275,9 @@ $$, so its absolute value is the same as $W$, and the student's reading $-2.1\,\
 ## fy8-1-L3-01
 **Given:** work function of sodium $W = 2.28\,\text{eV}$, wavelength $\lambda = 350\,\text{nm}$, mass of the electron $m = 9.109 \cdot 10^{-31}\,\text{kg}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the speed $v$ of the fastest electrons in the unit $\text{m/s}$
-**Principle:** The fastest electrons receive the maximum kinetic energy $E_\text{k,max} = hf - W$ (the photoelectric equation, conservation of energy). The speed is obtained from the kinetic energy $E_\text{k} = \tfrac{1}{2} m v^2$, which holds because the speed remains much smaller than the speed of light (this is checked at the end). The kinetic energy must be in joules for the speed to come out in $\text{m/s}$.
+**Principle:** The fastest electrons receive the maximum kinetic energy $E_\text{k,max} = hf - W$ (the photoelectric equation, conservation of energy). The speed is obtained from the kinetic energy $E_\text{k} = \tfrac{1}{2} m v^2$, which holds because the speed remains much smaller than the speed of light (this is checked at the end).
+
+The kinetic energy must be in joules for the speed to come out in $\text{m/s}$.
 **Formula:** $E_\text{k,max} = \dfrac{hc}{\lambda} - W$ and $\dfrac{1}{2} m v^2 = E_\text{k,max}$, so $v = \sqrt{\dfrac{2 E_\text{k,max}}{m}}$
 **Conversions:** $\lambda = 350\,\text{nm} = 350 \cdot 10^{-9}\,\text{m}$; $W = 2.28\,\text{eV} = 2.28 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.653 \cdot 10^{-19}\,\text{J}$
 **Substitution:** $$
@@ -321,17 +337,27 @@ $$, and it is. The threshold frequency is smaller than both measurement frequenc
 ## fy8-1-L3-04
 **Given:** $\lambda = 400\,\text{nm}$, $P_1 = 1.0\,\text{mW}$, $P_2 = 2.0\,\text{mW}$, saturation currents from the table $I_1 = 0.30\,\mu\text{A}$ and $I_2 = 0.60\,\mu\text{A}$, the current is zero at the voltage $U = -0.80\,\text{V}$ and below it; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$
 **Find:** the quantum efficiency $\eta$, that is the fraction of the photons that release an electron, as a percentage (and $U_\text{s}$ and $W$)
-**Principle:** The stopping voltage is the smallest reverse voltage at which the current is zero, and it stops even the fastest electrons: $eU_\text{s} = E_\text{k,max} = hf - W$. In the saturation current all the released electrons end up at the anode, so the number of electrons per second is $\tfrac{I}{e}$. The number of photons per second is the power divided by the energy of one photon, $\tfrac{hc}{\lambda}$.
+**Principle:** The stopping voltage is the smallest reverse voltage at which the current is zero, and it stops even the fastest electrons: $eU_\text{s} = E_\text{k,max} = hf - W$. In the saturation current all the released electrons end up at the anode, so the number of electrons per second is $\tfrac{I}{e}$.
+
+The number of photons per second is the power divided by the energy of one photon, $\tfrac{hc}{\lambda}$.
 **Formula:** $W = \dfrac{hc}{\lambda} - eU_\text{s}$; $N_\text{f} = \dfrac{P\lambda}{hc}$, $N_\text{e} = \dfrac{I}{e}$ and $\eta = \dfrac{N_\text{e}}{N_\text{f}}$
 **Conversions:** $\lambda = 400\,\text{nm} = 400 \cdot 10^{-9}\,\text{m}$, $P_1 = 1.0 \cdot 10^{-3}\,\text{W}$, $I_1 = 0.30\,\mu\text{A} = 0.30 \cdot 10^{-6}\,\text{A}$; the energy from $\text{J}$ to $\text{eV}$ by dividing by $1.602 \cdot 10^{-19}$
 **Substitution:** a) $U_\text{s} = 0.80\,\text{V}$ and the photon energy is $\tfrac{hc}{\lambda} = \tfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{400 \cdot 10^{-9}\,\text{m}} = 4.966 \cdot 10^{-19}\,\text{J} = 3.100\,\text{eV}$, so $W = 3.100\,\text{eV} - 0.80\,\text{eV} = 2.30\,\text{eV}$. b) $N_\text{f} = \dfrac{1.0 \cdot 10^{-3}\,\text{W}}{4.966 \cdot 10^{-19}\,\text{J}} = 2.014 \cdot 10^{15}\,\tfrac{1}{\text{s}}$ and $N_\text{e} = \dfrac{0.30 \cdot 10^{-6}\,\text{A}}{1.602 \cdot 10^{-19}\,\text{C}} = 1.873 \cdot 10^{12}\,\tfrac{1}{\text{s}}$, so $\eta = \dfrac{1.873 \cdot 10^{12}}{2.014 \cdot 10^{15}} = 9.30 \cdot 10^{-4} = 0.0930\,\%$. c) At the power $P_2$: $N_\text{f} = 4.027 \cdot 10^{15}\,\tfrac{1}{\text{s}}$ and $N_\text{e} = 3.745 \cdot 10^{12}\,\tfrac{1}{\text{s}}$, so $\eta = 0.0930\,\%$ now too.
-**Answer:** $\eta = 0.093\,\%$, two significant figures like the power $1.0\,\text{mW}$ and the current $0.30\,\mu\text{A}$; that is, about one photon in a thousand releases an electron. In addition $U_\text{s} = 0.80\,\text{V}$ and $W = 2.30\,\text{eV}$. The stopping voltage does not change, because one electron absorbs one photon, and its maximum kinetic energy $hf - W$ depends only on the frequency and the work function. Double the power brings twice as many photons but does not change the energy of one photon, so the number of released electrons and the saturation current double, but the kinetic energy of the fastest electrons does not.
-**Reasonableness:** The ratio of the currents, $\tfrac{0.60\,\mu\text{A}}{0.30\,\mu\text{A}} = 2$, is the same as the ratio of the powers, $\tfrac{2.0\,\text{mW}}{1.0\,\text{mW}} = 2$, so the quantum efficiency is the same at both powers. Far fewer electrons are released than photons arrive ($1.9 \cdot 10^{12}$ and $2.0 \cdot 10^{15}$ per second), which fits the fact that most photons do not release an electron, and $\eta$ is below $100\,\%$. The work function $2.30\,\text{eV}$ is close to the values for sodium and potassium.
+**Answer:** $\eta = 0.093\,\%$, two significant figures like the power $1.0\,\text{mW}$ and the current $0.30\,\mu\text{A}$; that is, about one photon in a thousand releases an electron. In addition $U_\text{s} = 0.80\,\text{V}$ and $W = 2.30\,\text{eV}$.
+
+The stopping voltage does not change, because one electron absorbs one photon, and its maximum kinetic energy $hf - W$ depends only on the frequency and the work function.
+
+Double the power brings twice as many photons but does not change the energy of one photon, so the number of released electrons and the saturation current double, but the kinetic energy of the fastest electrons does not.
+**Reasonableness:** The ratio of the currents, $\tfrac{0.60\,\mu\text{A}}{0.30\,\mu\text{A}} = 2$, is the same as the ratio of the powers, $\tfrac{2.0\,\text{mW}}{1.0\,\text{mW}} = 2$, so the quantum efficiency is the same at both powers.
+
+Far fewer electrons are released than photons arrive ($1.9 \cdot 10^{12}$ and $2.0 \cdot 10^{15}$ per second), which fits the fact that most photons do not release an electron, and $\eta$ is below $100\,\%$. The work function $2.30\,\text{eV}$ is close to the values for sodium and potassium.
 
 ## fy8-1-L3-05
 **Given:** work function of potassium $W = 2.30\,\text{eV}$; sources A: $470\,\text{nm}$, $4.0\,\text{mW}$, B: $620\,\text{nm}$, $8.0\,\text{mW}$ and C: $365\,\text{nm}$, $1.0\,\text{mW}$; one electron per thousand photons sufficient for release ($\eta = 0.10\,\%$); $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$
 **Find:** the total current $I$ of the cell in microamperes (and the sources that release electrons, and the stopping voltage $U_\text{s}$)
-**Principle:** A source releases electrons only if its photon energy $\tfrac{hc}{\lambda}$ is at least $W$; power does not make up for photon energy. The number of photons per second of a releasing source is $N_\text{f} = \tfrac{P\lambda}{hc}$, the number of released electrons is $\eta N_\text{f}$ and the current is $I = e \eta N_\text{f}$. The currents of the different sources are added. The stopping voltage is determined by the greatest kinetic energy, so it is given by the greatest photon energy.
+**Principle:** A source releases electrons only if its photon energy $\tfrac{hc}{\lambda}$ is at least $W$; power does not make up for photon energy. The number of photons per second of a releasing source is $N_\text{f} = \tfrac{P\lambda}{hc}$, the number of released electrons is $\eta N_\text{f}$ and the current is $I = e \eta N_\text{f}$.
+
+The currents of the different sources are added. The stopping voltage is determined by the greatest kinetic energy, so it is given by the greatest photon energy.
 **Formula:** $E_\text{f} = \dfrac{hc}{\lambda}$; $I = \dfrac{e \eta P \lambda}{hc}$ for each releasing source; $U_\text{s} = \dfrac{E_\text{f,max} - W}{e}$
 **Conversions:** $\lambda = 470\,\text{nm} = 470 \cdot 10^{-9}\,\text{m}$ etc., $P_\text{A} = 4.0\,\text{mW} = 4.0 \cdot 10^{-3}\,\text{W}$, $\eta = 0.10\,\% = 1.0 \cdot 10^{-3}$; the photon energy from $\text{J}$ to $\text{eV}$ by dividing by $1.602 \cdot 10^{-19}$
 **Substitution:** a) $E_\text{A} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{470 \cdot 10^{-9}\,\text{m}} = 4.227 \cdot 10^{-19}\,\text{J} = 2.64\,\text{eV}$, $E_\text{B} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{620 \cdot 10^{-9}\,\text{m}} = 3.204 \cdot 10^{-19}\,\text{J} = 2.00\,\text{eV}$ and $E_\text{C} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{365 \cdot 10^{-9}\,\text{m}} = 5.443 \cdot 10^{-19}\,\text{J} = 3.40\,\text{eV}$. Sources A and C exceed $2.30\,\text{eV}$, source B does not. b) $$
@@ -349,7 +375,11 @@ I_\text{C} &= \dfrac{1.0 \cdot 10^{-3}\,\text{W}}{5.443 \cdot 10^{-19}\,\text{J}
 &= 2.94 \cdot 10^{-7}\,\text{A}
 \end{aligned}
 $$, so $I = 1.516\,\mu\text{A} + 0 + 0.294\,\mu\text{A} = 1.810\,\mu\text{A}$. c) $U_\text{s} = \dfrac{3.397\,\text{eV} - 2.30\,\text{eV}}{e} = 1.10\,\text{V}$
-**Answer:** $I = 1.8\,\mu\text{A}$, two significant figures like the powers and the fraction $0.10\,\%$. The sources that release electrons are A and C; the stopping voltage is $1.10\,\text{V}$. The photon energy of the red source B, $2.00\,\text{eV}$, is smaller than the work function, so none of its photons releases an electron, even though its power is the greatest and the most photons arrive from it. Power only tells the number of photons, and current is produced only by photons whose energy is sufficient; the stopping voltage, on the other hand, depends on the greatest photon energy, that is on the ultraviolet source C.
+**Answer:** $I = 1.8\,\mu\text{A}$, two significant figures like the powers and the fraction $0.10\,\%$. The sources that release electrons are A and C; the stopping voltage is $1.10\,\text{V}$.
+
+The photon energy of the red source B, $2.00\,\text{eV}$, is smaller than the work function, so none of its photons releases an electron, even though its power is the greatest and the most photons arrive from it.
+
+Power only tells the number of photons, and current is produced only by photons whose energy is sufficient; the stopping voltage, on the other hand, depends on the greatest photon energy, that is on the ultraviolet source C.
 **Reasonableness:** In total $\tfrac{1.810 \cdot 10^{-6}\,\text{A}}{1.602 \cdot 10^{-19}\,\text{C}} = 1.13 \cdot 10^{13}$ electrons are released per second, which is $0.10\,\%$ of the number of photons of sources A and C, $$
 \begin{aligned}
 &9.46 \cdot 10^{15} + 1.84 \cdot 10^{15} \\
@@ -408,8 +438,12 @@ $$. It is larger than the work function of metal A, $2.3\,\text{eV}$, and the li
 **Given:** a reading made by yourself in the simulation, so here are the method and an example reading of 16 November 2026: for sodium, electrons are still released at the wavelength $538\,\text{nm}$ but no longer at $540\,\text{nm}$, so $\lambda_0 \approx 539\,\text{nm}$. A reading made with the slider can differ by a few nanometres. Constants $c = 2.998 \cdot 10^8\,\text{m/s}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ and $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
 **Asked:** a) at which wavelengths electrons are released; b) the threshold frequency $f_0$ and the photon energy $hf_0$ in $\text{eV}$; c) the effect of intensity and frequency on the current and on the greatest kinetic energy; d) why the classical wave model is not enough
 **Principle:** In the photoelectric effect one photon gives all its energy $hf$ to one electron, and the electron is released only if $hf \geq W$. At the threshold frequency $hf_0 = W$, so the photon energy that corresponds to the threshold frequency is the work function of the metal.
-**Reading the graph:** In the current–voltage graph of the simulation the stopping voltage is the battery voltage at which the current becomes zero, and in the energy graph the greatest kinetic energy of the electrons is read from the vertical axis at the chosen wavelength or frequency. At the threshold the line of the energy graph starts from the horizontal axis: the greatest kinetic energy is zero at the frequency $f_0$. The reading of part b) is, however, taken straight from the slider: the longest wavelength at which the current is still larger than zero.
-**Model answer a):** For sodium, electrons are released when the wavelength is shorter than about $540\,\text{nm}$: with green, blue and violet light and with ultraviolet radiation. At longer wavelengths (yellow, orange, red) the current is zero even at the greatest intensity. Other metals need a shorter wavelength: in the model of the simulation the work function is $4.3\,\text{eV}$ for zinc and $6.3\,\text{eV}$ for platinum.
+**Reading the graph:** In the current–voltage graph of the simulation the stopping voltage is the battery voltage at which the current becomes zero, and in the energy graph the greatest kinetic energy of the electrons is read from the vertical axis at the chosen wavelength or frequency.
+
+At the threshold the line of the energy graph starts from the horizontal axis: the greatest kinetic energy is zero at the frequency $f_0$. The reading of part b) is, however, taken straight from the slider: the longest wavelength at which the current is still larger than zero.
+**Model answer a):** For sodium, electrons are released when the wavelength is shorter than about $540\,\text{nm}$: with green, blue and violet light and with ultraviolet radiation. At longer wavelengths (yellow, orange, red) the current is zero even at the greatest intensity.
+
+Other metals need a shorter wavelength: in the model of the simulation the work function is $4.3\,\text{eV}$ for zinc and $6.3\,\text{eV}$ for platinum.
 **Formula:** $c = f_0\lambda_0$, so $f_0 = \dfrac{c}{\lambda_0}$, and the photon energy that corresponds to the threshold frequency is $E = hf_0$. In electronvolts $E = \dfrac{hf_0}{1\,\text{eV}}$.
 **Conversions:** $\lambda_0 = 539\,\text{nm} = 539 \cdot 10^{-9}\,\text{m}$ and $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
 **Substitution:**
@@ -426,8 +460,14 @@ hf_0 &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 5.562 \cdot 10^{14}\,\tex
 &= 2.30\,\text{eV}
 \end{aligned}$$
 
-**Model answer c):** When the intensity is increased and the wavelength stays the same, the current grows, because more photons arrive and more electrons are released. The greatest kinetic energy of the electrons does not change: the stopping voltage stays the same. When the wavelength is made shorter, that is, the frequency is raised, the photon energy $hf$ grows and the greatest kinetic energy $E_\text{k,max} = hf - W$ grows. The intensity does not appear in the equation at all.
-**Model answer d):** By the classical wave model the energy of the light would arrive at the surface evenly, and brighter light would give the electrons more energy. Then light that is bright enough would release electrons at any wavelength, and raising the intensity would raise the kinetic energy. The observations are different: long-wavelength light releases no electrons at any intensity, and the intensity changes only the current, not the greatest kinetic energy. In the photon model energy comes in portions of size $hf$, and one portion is given to one electron. The threshold $hf \geq W$ and the dependence of the kinetic energy on the frequency follow from this.
+**Model answer c):** When the intensity is increased and the wavelength stays the same, the current grows, because more photons arrive and more electrons are released. The greatest kinetic energy of the electrons does not change: the stopping voltage stays the same.
+
+When the wavelength is made shorter, that is, the frequency is raised, the photon energy $hf$ grows and the greatest kinetic energy $E_\text{k,max} = hf - W$ grows. The intensity does not appear in the equation at all.
+**Model answer d):** By the classical wave model the energy of the light would arrive at the surface evenly, and brighter light would give the electrons more energy. Then light that is bright enough would release electrons at any wavelength, and raising the intensity would raise the kinetic energy.
+
+The observations are different: long-wavelength light releases no electrons at any intensity, and the intensity changes only the current, not the greatest kinetic energy. In the photon model energy comes in portions of size $hf$, and one portion is given to one electron.
+
+The threshold $hf \geq W$ and the dependence of the kinetic energy on the frequency follow from this.
 **Answer:** $hf_0 \approx 2.3\,\text{eV}$, two significant figures, because the wavelength is read from the slider to about $\pm 10\,\text{nm}$. Readings of $530\,\text{nm}$–$550\,\text{nm}$ give $2.25\,\text{eV}$–$2.34\,\text{eV}$.
 **Reasonableness:** A quick calculation gives $$\begin{aligned}
 1240\,\text{eV}\,\text{nm} : 539\,\text{nm} &\approx 2.3\,\text{eV}

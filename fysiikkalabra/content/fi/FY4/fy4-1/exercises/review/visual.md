@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 5bc60c403074904b
+CONTENT-HASH: 2e5d53eab6b173d8
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] solutions.md — a few new paragraphs are one sentence that only completes the thought before it (a detached last sentence); they read fine, so joining them is optional.
+- [Minor] fy4-1 L3-05 Kaava — "ja paikka on x = x_0R + v_R t." follows the display t as a separate inline sentence; reads fine, a display line would match the other steps. Optional.
 
 ## Checked
-- Delta, md-paragraphs only (solutions.md). Opened every per-solution capture of this part at 390 px: sol-fy4-1-L1-06-390.png, sol-fy4-1-L1-09-390.png, sol-fy4-1-L3-04-390.png, sol-fy4-1-L3-05-390.png.
-- Each new break separates one thing from another (principle vs remark, check vs next point, answer-option discussion vs reasoning). No cut falls mid-thought, spacing between paragraphs is even and matches the other paragraphs, nothing clipped, formulas intact. Hash unchanged at the end.
+- Delta, solutions.md Kaava steps only (L2-06, L3-04, L3-05); hash unchanged at start and end.
+- Opened fy4-1-open-exercises-L2-1280-7.png (L2-06: x_A = x_B seuraa ..., (v_A - v_B)t = x_0B - x_0A, then display t; subscripts legible, no clipping), fy4-1-open-exercises-L3-1280-5.png and -6.png (L3-04: k display, x = k x_ohj, v = k v_ohj, aligned chain x = k x_0,ohj + k v_ohj t = x_0 + v t, then t; Sijoitus follows), fy4-1-open-exercises-L3-1280-7.png (L3-05: x_R = x_P derivation, display t, x = x_0R + v_R t).
+- Order of Annettu, Kysytty, Periaate, Kuvaajan lukeminen, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys kept; spacing even; decimal commas and units unchanged.
+- 1280 px captures only; 360-1280 px layout checks passed in the packet.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

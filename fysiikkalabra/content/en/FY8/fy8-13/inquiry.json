@@ -24,7 +24,7 @@
       "type": "choice",
       "optional": true,
       "title": "Review: the penetrating power of alpha radiation",
-      "prompt": "Many natural radioactive substances, such as the members of the uranium decay series, emit alpha radiation. Why is an alpha emitter dangerous mainly when it has got inside the body?",
+      "prompt": "There is radioactive dust that emits alpha radiation on the work clothes of a maintenance worker at a nuclear power plant. Why is the dust dangerous mainly when it has got inside the body with the breath?",
       "choices": [
         {
           "text": "The skin stops alpha particles, but inside they give their energy directly to living cells.",

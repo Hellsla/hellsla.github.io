@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 33dfc521a544302e
+CONTENT-HASH: 1ace0703ffbec0e1
 
 ## Blocking
 None.
 
 ## Polish
-- exercises.json L1-07 / solutions.md — the answer is now 230 N (rounded up, tolerance 5 %), so a student who gives 221 N is accepted, which is right. The "round an at-least value up" rule is new to the student; the solution explains it in one sentence, which is enough. Optional: the task could say "give the answer to two significant figures" so the 230 does not surprise anyone who writes 220.
+- solutions.md, Moon-and-Earth ramp task Formula — one line carries the law, the components, the Earth expression for mu and the Moon comparison (about 90 words of symbols). It is correct, but a student who could not solve the task would follow it better with the Moon step on its own line.
+- solutions.md, the limit-angle task Formula ($\mu_0 = \tan\alpha_0$) — $N$ appears in "$mg\sin\alpha_0 = \mu_0 N$" before it is defined; write "$y$: $N = mg\cos\alpha_0$" first, or insert "where $N$ is the normal force".
+- solutions.md, the task with a downhill and a horizontal braking case — the line is long; split the horizontal and the downhill parts into two sentences-with-formula rows.
 
 ## Checked
-- Delta judged in context: kinetic -> sliding friction in texts, solutions and captions of L1-02, L1-03, L1-09, L2-01, L2-02, L2-03, L2-05, L2-06, L2-08, L3-02, L3-03 and L3-04 is consistent and matches the glossary term liukukitka.
-- "Greatest" -> "maximum" static friction in L1-06 and L2-04 is consistent with the glossary (täysin kehittynyt lepokitka); the meaning of the tasks is unchanged.
-- Marker "(example data)" removed from captions (teacher approval 2026-11-15); the task texts still say "example data" where needed, so nothing is claimed as measured.
-- L1-07: 0.45*50*9.81 = 220.7 N; 230 N within tolerance 5 % of the entry 221; the solution explains why 220 N would not be enough.
-- No new task, figure or level change; set mix and counts unchanged.
+- Round 1, delta (work queue 8g): no number, answer, tolerance, task or id changed. I compared every removed line with the added text: all paragraph splits are lossless and in the same order; only the Formula lines and one Substitution differ.
+- Every Formula now opens with $\Sigma\overline{F} = m\overline{a}$ (or the equilibrium case $\overline{a} = \overline{0}$), then the components, then $F_\mu = \mu N$ with $N$ solved, and the mass is shown cancelling; each result (mu = F/(mg), mu = (g sin a - a)/(g cos a), a = g(sin a + mu cos a), a = g(mu cos a - sin a), a = mu g) is correct, including the sign choice for the downhill braking case.
+- The Substitution of the slope-margin task now shows $56.3\,\text{N} - 48.2\,\text{N} = 8.1\,\text{N}$ (same answer, one step more).
+- Static-friction wording (maximum static friction, sliding friction) unchanged and consistent with the glossary.
+- Tasks, levels, counts and figures unchanged.
+- Captures not opened: text-structure change only.

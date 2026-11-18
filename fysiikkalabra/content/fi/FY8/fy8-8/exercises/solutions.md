@@ -57,7 +57,9 @@ $$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{9{,}5383 \cdo
 ## fy8-8-L1-06
 **Kysytty:** mikä hajoaminen kasvattaa järjestyslukua $Z$ yhdellä ja jättää massaluvun $A$ ennalleen
 **Periaate:** Hajoamisyhtälössä massaluku ja varausluku säilyvät. Järjestysluku kasvaa yhdellä vain, kun ytimen neutroni muuttuu protoniksi, ja nukleonien määrä pysyy samana. Käydään hajoamistavat läpi: alfahajoaminen muuttaa $Z$:aa ja $A$:ta ($Z - 2$, $A - 4$), beeta plus -hajoaminen pienentää $Z$:aa, ja gammahajoaminen ei muuta kumpaakaan.
-**Mallivastaus:** Oikea vaihtoehto on beeta miinus -hajoaminen, jossa ytimessä neutroni muuttuu protoniksi ja elektroni lähtee pois. Silloin $Z' = Z + 1$ ja $A' = A$, ja varausluku säilyy, kun elektronin varausluku $-1$ lasketaan mukaan: esimerkiksi ${}^{14}_{6}\text{C} \to {}^{14}_{7}\text{N} + {}^{0}_{-1}\text{e} + \bar{\nu}$ täsmää, koska $14 = 14 + 0$ ja $6 = 7 - 1$. Beeta plus -hajoamisessa protoni muuttuu neutroniksi, joten järjestysluku pienenee yhdellä. Alfahajoaminen pienentää järjestyslukua kahdella ja massalukua neljällä. Gammahajoamisessa ytimestä lähtee vain energiaa, joten kumpikaan luku ei muutu.
+**Mallivastaus:** Oikea vaihtoehto on beeta miinus -hajoaminen, jossa ytimessä neutroni muuttuu protoniksi ja elektroni lähtee pois. Silloin $Z' = Z + 1$ ja $A' = A$, ja varausluku säilyy, kun elektronin varausluku $-1$ lasketaan mukaan: esimerkiksi ${}^{14}_{6}\text{C} \to {}^{14}_{7}\text{N} + {}^{0}_{-1}\text{e} + \bar{\nu}$ täsmää, koska $14 = 14 + 0$ ja $6 = 7 - 1$. Beeta plus -hajoamisessa protoni muuttuu neutroniksi, joten järjestysluku pienenee yhdellä. Alfahajoaminen pienentää järjestyslukua kahdella ja massalukua neljällä.
+
+Gammahajoamisessa ytimestä lähtee vain energiaa, joten kumpikaan luku ei muutu.
 
 ## fy8-8-L1-07
 **Annettu:** emoydin ${}^{226}_{88}\text{Ra}$, alfahajoaminen; alfahiukkanen on ${}^{4}_{2}\text{He}$
@@ -102,7 +104,9 @@ hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 \end{aligned}
 $$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}8796 \cdot 10^{-13}\,\text{J}} = 1{,}0568 \cdot 10^{-12}\,\text{m} = 1{,}0568\,\text{pm}$
 **Vastaus:** $1{,}06\,\text{pm}$, kolme merkitsevää numeroa; tarkemmin $1{,}057\,\text{pm}$, neljä numeroa kuten energiaerossa $1173{,}3\,\text{keV}$.
-**Järkevyys:** Mitattu gammafotoni on $1173{,}2\,\text{keV}$, yksi koboltti-60:n gammaspektrin kahdesta piikistä; ero $0{,}1\,\text{keV}$ tasojen erotukseen $1173{,}3\,\text{keV}$ johtuu lähes kokonaan tasojen pyöristyksestä (tarkka tasojen erotus on $1173{,}24\,\text{keV}$), ja ytimen rekyyli vie vain noin $0{,}01\,\text{keV}$. Ero ei muuta aallonpituutta kolmen numeron tarkkuudella. Se on vähän pienempi kuin toisen fotonin $1332{,}5\,\text{keV}$, joten aallonpituus on vähän pidempi kuin sen $0{,}931\,\text{pm}$, kuten pitää.
+**Järkevyys:** Mitattu gammafotoni on $1173{,}2\,\text{keV}$, yksi koboltti-60:n gammaspektrin kahdesta piikistä; ero $0{,}1\,\text{keV}$ tasojen erotukseen $1173{,}3\,\text{keV}$ johtuu lähes kokonaan tasojen pyöristyksestä (tarkka tasojen erotus on $1173{,}24\,\text{keV}$), ja ytimen rekyyli vie vain noin $0{,}01\,\text{keV}$. Ero ei muuta aallonpituutta kolmen numeron tarkkuudella.
+
+Se on vähän pienempi kuin toisen fotonin $1332{,}5\,\text{keV}$, joten aallonpituus on vähän pidempi kuin sen $0{,}931\,\text{pm}$, kuten pitää.
 
 ## fy8-8-L2-02
 **Annettu:** emoydin ${}^{214}_{83}\text{Bi}$; ensin beeta miinus -hajoaminen, sitten alfahajoaminen
@@ -251,11 +255,18 @@ $$. $\lambda_\text{min} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{
 **Periaate:** Massaluku muuttuu vain alfahajoamisessa, neljä kussakin. Järjestysluku pienenee alfahajoamisessa kahdella ja kasvaa beeta miinus -hajoamisessa yhdellä. Siirtymän tyyppi nähdään siis lukujen $A$ ja $Z$ muutoksesta, ja pitkän ketjun hajoamisten määrät saadaan alku- ja loppuytimen luvuista.
 **Kaava:** $A_\text{alku} - A_\text{loppu} = 4 n_\alpha$ ja $Z_\text{loppu} = Z_\text{alku} - 2 n_\alpha + n_\beta$, joten $n_\beta = Z_\text{loppu} - Z_\text{alku} + 2 n_\alpha$
 **Muunnokset:** Ei tarvita, koska luvut ovat kappalemääriä.
-**Sijoitus:** a) Rn-222 $\to$ Po-218: $A$ pienenee neljällä ja $Z$ kahdella, alfahajoaminen. Po-218 $\to$ Pb-214: $218 - 4 = 214$ ja $84 - 2 = 82$, alfahajoaminen. Pb-214 $\to$ Bi-214 ja Bi-214 $\to$ Po-214: $A$ pysyy ja $Z$ kasvaa $82 \to 83 \to 84$, kaksi beeta miinus -hajoamista. Po-214 $\to$ Pb-210: $214 - 4 = 210$ ja $84 - 2 = 82$, alfahajoaminen. Taulukossa on siis $3$ alfa- ja $2$ beeta miinus -hajoamista.
+**Sijoitus:** a) Rn-222 $\to$ Po-218: $A$ pienenee neljällä ja $Z$ kahdella, alfahajoaminen. Po-218 $\to$ Pb-214: $218 - 4 = 214$ ja $84 - 2 = 82$, alfahajoaminen. Pb-214 $\to$ Bi-214 ja Bi-214 $\to$ Po-214: $A$ pysyy ja $Z$ kasvaa $82 \to 83 \to 84$, kaksi beeta miinus -hajoamista. Po-214 $\to$ Pb-210: $214 - 4 = 210$ ja $84 - 2 = 82$, alfahajoaminen.
+
+Taulukossa on siis $3$ alfa- ja $2$ beeta miinus -hajoamista.
+
 b) Pb-210 $\to$ Pb-206: $n_\alpha = \dfrac{210 - 206}{4} = 1$. Järjestysluku on alussa ja lopussa $82$, joten $82 = 82 - 2 \cdot 1 + n_\beta$ ja $n_\beta = 2$.
+
 c) Koko sarjassa $n_\alpha = \dfrac{222 - 206}{4} = 4$ ja $n_\beta = 82 - 86 + 2 \cdot 4 = 4$. Taulukon ja b-kohdan laskusta: alfahajoamisia $3 + 1 = 4$ ja beeta miinus -hajoamisia $2 + 2 = 4$.
+
 d) Neljä alfahajoamista pienentäisi järjestyslukua $4 \cdot 2 = 8$ ja veisi sen arvoon $86 - 8 = 78$. Lyijyn järjestysluku on $82$, joten järjestyslukua täytyy nostaa $82 - 78 = 4$ beeta miinus -hajoamisella.
+
 **Vastaus:** $4$. Beeta miinus -hajoamisten määrä on tarkka kokonaisluku; alfahajoamisia on myös $4$, yhteensä $8$ hajoamista. Pelkät alfahajoamiset veisivät järjestysluvun arvoon $78$, joten neljä beeta miinus -hajoamista tarvitaan.
+
 **Järkevyys:** Tarkistus: massaluku $222 - 4 \cdot 4 = 206$ ja järjestysluku $86 - 2 \cdot 4 + 4 = 82$ täsmäävät. Sarjan lopussa $$
 \begin{aligned}
 &{}^{210}_{82}\text{Pb} \to {}^{210}_{83}\text{Bi} \to {}^{210}_{84}\text{Po} \\
@@ -279,8 +290,12 @@ $$, joka on viiva $468{,}9\,\text{keV}$, ja $$
 E_3 - E_2 &= 1501{,}4 - 820{,}5 \\
 &= 680{,}9
 \end{aligned}
-$$, joka on viiva $681{,}3\,\text{keV}$. Kaikki viisi viivaa selittyvät, kun mittausepävarmuus on alle $0{,}5\,\text{keV}$. Muu järjestys ei toimi: jos toinen taso olisi $681{,}3\,\text{keV}$, siirtymä $E_2 - E_1 = 330{,}1\,\text{keV}$ puuttuisi taulukosta ja viiva $468{,}9\,\text{keV}$ jäisi selittämättä.
+$$, joka on viiva $681{,}3\,\text{keV}$.
+
+Kaikki viisi viivaa selittyvät, kun mittausepävarmuus on alle $0{,}5\,\text{keV}$. Muu järjestys ei toimi: jos toinen taso olisi $681{,}3\,\text{keV}$, siirtymä $E_2 - E_1 = 330{,}1\,\text{keV}$ puuttuisi taulukosta ja viiva $468{,}9\,\text{keV}$ jäisi selittämättä.
+
 b) Puuttuva siirtymä on ylimmältä tasolta alimmalle viritystasolle: $E_\text{p} = E_3 - E_1 = 1501{,}4 - 351{,}2 = 1150{,}2\,\text{keV}$.
+
 c) $$
 \begin{aligned}
 hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
@@ -288,7 +303,9 @@ hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 &= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
 $$ ja $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}8427 \cdot 10^{-13}\,\text{J}} = 1{,}0780 \cdot 10^{-12}\,\text{m} = 1{,}0780\,\text{pm}$
+
 **Vastaus:** $1{,}08\,\text{pm}$, kolme merkitsevää numeroa. Tasot ovat perustilan yläpuolella $351{,}2$, $820{,}5$ ja $1501{,}4\,\text{keV}$, ja puuttuvan viivan energia on $1150{,}2\,\text{keV}$.
+
 **Järkevyys:** Puuttuva energia $1150{,}2\,\text{keV}$ on pienempi kuin suurin viiva $1501{,}4\,\text{keV}$ ja suurempi kuin viiva $820{,}5\,\text{keV}$. Siksi aallonpituus on pidempi kuin suurimman viivan $0{,}83\,\text{pm}$ ja lyhyempi kuin viivan $820{,}5\,\text{keV}$ aallonpituus $1{,}51\,\text{pm}$. Tulos $1{,}08\,\text{pm}$ on näiden välissä.
 
 ## fy8-8-L2-09
@@ -329,8 +346,12 @@ $$ Tarkistus: siirtymä C $\to$ A on $$
 &- 1332{,}5\,\text{keV} \\
 &= 1173{,}2\,\text{keV}
 \end{aligned}
-$$, ja se on toinen vahva piikki. Kaikki neljä piikkiä selittyvät. Jos A $\to$ perustila olisi $1173{,}2\,\text{keV}$, olisi $E_\text{C} = 1173{,}2 + 826{,}1 + 347{,}1 = 2346{,}4\,\text{keV}$ ja siirtymä C $\to$ A olisi $1173{,}2\,\text{keV}$ eikä $1332{,}5\,\text{keV}$. Piikki $1332{,}5\,\text{keV}$ jäisi selittämättä, joten vaihtoehto ei kelpaa. Tasokaaviossa ovat perustila $0$, A $1332{,}5\,\text{keV}$, B $2158{,}6\,\text{keV}$ ja C $2505{,}7\,\text{keV}$; nuolet C $\to$ B ($347{,}1\,\text{keV}$), B $\to$ A ($826{,}1\,\text{keV}$), C $\to$ A ($1173{,}2\,\text{keV}$) ja A $\to$ perustila ($1332{,}5\,\text{keV}$).
+$$, ja se on toinen vahva piikki. Kaikki neljä piikkiä selittyvät. Jos A $\to$ perustila olisi $1173{,}2\,\text{keV}$, olisi $E_\text{C} = 1173{,}2 + 826{,}1 + 347{,}1 = 2346{,}4\,\text{keV}$ ja siirtymä C $\to$ A olisi $1173{,}2\,\text{keV}$ eikä $1332{,}5\,\text{keV}$.
+
+Piikki $1332{,}5\,\text{keV}$ jäisi selittämättä, joten vaihtoehto ei kelpaa. Tasokaaviossa ovat perustila $0$, A $1332{,}5\,\text{keV}$, B $2158{,}6\,\text{keV}$ ja C $2505{,}7\,\text{keV}$; nuolet C $\to$ B ($347{,}1\,\text{keV}$), B $\to$ A ($826{,}1\,\text{keV}$), C $\to$ A ($1173{,}2\,\text{keV}$) ja A $\to$ perustila ($1332{,}5\,\text{keV}$).
+
 b) Suoran siirtymän fotonin energia on tason C energia: $E_\text{C} = 2505{,}7\,\text{keV}$.
+
 c) $$
 \begin{aligned}
 hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
@@ -345,5 +366,7 @@ $$ ja $$
 &= 0{,}49487\,\text{pm}
 \end{aligned}
 $$
+
 **Vastaus:** $0{,}495\,\text{pm}$, kolme merkitsevää numeroa kuten annetuissa aallonpituuden vakioissa. Tasot ovat $1332{,}5$, $2158{,}6$ ja $2505{,}7\,\text{keV}$ perustilan yläpuolella, ja suoran siirtymän energia on $2505{,}7\,\text{keV}$.
+
 **Järkevyys:** Suoran siirtymän energia on suurempi kuin kumpikaan vahvoista piikeistä ($1332{,}5\,\text{keV}$ ja $1173{,}2\,\text{keV}$), joten aallonpituuden pitää olla lyhyempi kuin niiden aallonpituudet $0{,}93\,\text{pm}$ ja $1{,}06\,\text{pm}$. Tulos $0{,}495\,\text{pm}$ on lyhyempi. Lisäksi $347{,}1 + 826{,}1 = 1173{,}2$, joten kaksi reittiä tasolta C tasolle A antavat saman energian.

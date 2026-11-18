@@ -4,7 +4,7 @@ Ruukkilabra ei kerää tietoja sinusta. Sivustolla ei ole kirjautumista. Sivusto
 
 ## Mitä tallentuu?
 
-Sivusto tallentaa työsi vain tämän laitteen selaimeen. Esimerkiksi ratkaisusi, vastauksesi, mittaustuloksesi, itsearviosi ja edistymisesi tallentuvat. Myös ratkaisuihin liittämäsi kuvat tallentuvat. Näin työ ei katoa, kun suljet sivun. Sivusto ei lähetä tietoja opettajalle itsestään. Opettaja ei näe niitä selaimestasi.
+Sivusto tallentaa työsi vain tämän laitteen selaimeen. Esimerkiksi ratkaisusi, vastauksesi, mittaustuloksesi, itsearviosi ja edistymisesi tallentuvat. Myös ratkaisuihin liittämäsi kuvat tallentuvat. Näin työ ei katoa, kun suljet sivun. Selain tallentaa myös avaamasi sivut tälle laitteelle. Silloin sivut aukeavat ilman nettiä. Sivusto ei lähetä tietoja opettajalle itsestään. Opettaja ei näe niitä selaimestasi.
 
 ## Työtiedosto
 

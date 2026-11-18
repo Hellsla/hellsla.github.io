@@ -76,4 +76,35 @@ out.update({"fy9-voimat-s6-a1": round(a1, 4), "fy9-voimat-s6-a": round(v1, 3), "
             "fy9-voimat-s6-a2": round(a2_6, 4), "fy9-voimat-s6-b": round(s2_6, 2),
             "fy9-voimat-s6-vkmh": round(v1 * 3.6, 1)})
 
+# s7: a skydiver before the canopy opens (fy4-14/hyppy-vt-points; values read from the graph); F_v = k v^2 assumed
+m7 = 75.0
+a7_1 = (18.6 - 0.0) / (2 - 0)                          # secant 0...2 s
+a7_2 = (46.4 - 40.4) / (10 - 6)                        # secant 6...10 s (mid-time 8 s, v = 44,5 m/s read at 8 s)
+G7 = m7 * g
+Fv7 = m7 * (g - a7_2)
+v7 = 44.5
+k7 = Fv7 / v7 ** 2
+vt7 = math.sqrt(G7 / k7)
+m7b = 100.0
+vt7b = math.sqrt(m7b * g / k7)
+out.update({"fy9-voimat-s7-a-a1": round(a7_1, 3), "fy9-voimat-s7-a-a2": round(a7_2, 3), "fy9-voimat-s7-G": round(G7, 2),
+            "fy9-voimat-s7-b": round(Fv7, 2), "fy9-voimat-s7-k": round(k7, 4), "fy9-voimat-s7-c": round(vt7, 2),
+            "fy9-voimat-s7-d": round(vt7b, 2), "fy9-voimat-s7-ratio": round(math.sqrt(m7b / m7), 3),
+            "fy9-voimat-s7-Fv2": round(m7 * (g - a7_1), 1)})
+
+# s8: a person on a force plate in a lift going down (fy4-16/ex-hissi; N read from the graph: 650 N 1,0...3,0 s, 800 N 6,0...8,7 s)
+m8, N8a, N8c = 75.0, 650.0, 800.0
+G8 = m8 * g
+a8a = (N8a - G8) / m8                                  # up positive: negative = accelerating down
+v8 = a8a * (3.0 - 1.0)                                 # at 3,0 s, from rest at 1,0 s
+a8c = (N8c - G8) / m8
+dt8 = 8.7 - 6.0
+v8end = v8 + a8c * dt8                                 # should be about 0
+t8stop = -v8 / a8c
+s8 = 0.5 * (7.7 + 3.0) * abs(v8)                       # trapezium: 1,0...8,7 s, flat top 3,0...6,0 s
+out.update({"fy9-voimat-s8-G": round(G8, 2), "fy9-voimat-s8-a": round(a8a, 4), "fy9-voimat-s8-b": round(v8, 4),
+            "fy9-voimat-s8-c": round(a8c, 4), "fy9-voimat-s8-vend": round(v8end, 3), "fy9-voimat-s8-tstop": round(t8stop, 3),
+            "fy9-voimat-s8-d": round(s8, 3), "fy9-voimat-s8-s1": round(0.5 * abs(v8) * 2.0, 3),
+            "fy9-voimat-s8-s2": round(abs(v8) * 3.0, 3), "fy9-voimat-s8-s3": round(0.5 * abs(v8) * 2.7, 3)})
+
 print(json.dumps(out))

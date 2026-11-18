@@ -84,7 +84,7 @@
       "choices": [
         {
           "text": "The firewood's value is larger, because wood is a fuel and chocolate is only food.",
-          "feedback": "Food is also a store of chemical energy. Convert the chocolate's value to the same unit: $2200\\,\\text{kJ} = 2.2\\,\\text{MJ}$ and $100\\,\\text{g} = 0.100\\,\\text{kg}$, so the value is $2.2\\,\\text{MJ} : 0.100\\,\\text{kg} = 22\\,\\text{MJ/kg}$. That is larger than the $15\\,\\text{MJ/kg}$ of wood."
+          "feedback": "Food is also a store of chemical energy. Convert the chocolate's value to the same unit: $2200\\,\\text{kJ} = 2.2\\,\\text{MJ}$ and $100\\,\\text{g} = 0.100\\,\\text{kg}$, so the value is $$\n\\begin{aligned}\n&2.2\\,\\text{MJ} : 0.100\\,\\text{kg} \\\\\n&= 22\\,\\text{MJ/kg}\n\\end{aligned}\n$$ That is larger than the $15\\,\\text{MJ/kg}$ of wood."
         },
         {
           "text": "The chocolate's value is larger, but the nutrition label and the heating value describe different things.",
@@ -276,7 +276,7 @@
       "hints": [
         "How much energy is released from the gas when it burns? Which law tells you?",
         "The energy released is $E_\\text{in} = Hm$. The efficiency is $\\eta = \\dfrac{E_\\text{useful}}{E_\\text{in}}$ (chapter *Efficiency*), so $E_\\text{useful} = \\eta\\, E_\\text{in}$.",
-        "$E_\\text{in} = 46\\,\\text{MJ/kg} \\cdot 0.230\\,\\text{kg}$ and $E_\\text{useful} = 0.60 \\cdot E_\\text{in}$."
+        "$$\n\\begin{aligned}\nE_\\text{in} &= 46\\,\\text{MJ/kg} \\\\\n&\\cdot 0.230\\,\\text{kg}\n\\end{aligned}\n$$ and $E_\\text{useful} = 0.60 \\cdot E_\\text{in}$."
       ],
       "mistakes": [
         {

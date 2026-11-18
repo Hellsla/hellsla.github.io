@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 686190b8dd680dc9
+CONTENT-HASH: ec97272327f23aa8
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Delta (md-paragraphs, solutions.md only): opened 1280 px open-solution captures of fy1-3 L1 part 6 (task 3-6 model answer) and L3 part 5 (L3-05 area).
-- Each changed Mallivastaus / Vastaus is now several short paragraphs inside the solution card; spacing between paragraphs is even, formulas and the aligned chains unchanged, nothing clipped or overflowing, hierarchy (labelled blocks) intact. Words unchanged, so the Finnish stands as previously passed.
-- Not every changed item had its own capture opened; the change is the same paragraph-break pattern in each.
+- delta: rendered the changed Substitution block at 360 px: the mean's numerator is split over two rows inside the fraction, readable, equals aligned, no clipping; opened the Finnish-comma version too. No figures in the delta; no 360 px capture exists in review/shots, so I rendered the page myself.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

@@ -1,12 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 336593f28b1d9da8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: ca526143ca8f4ef0
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+batch delta review: the retrieval item now uses the UV-C lamp and red lamp of the lesson's own zinc experiment; 254 nm gives about 1.2e15 Hz, answers.py consistent.

@@ -24,7 +24,7 @@
       "type": "choice",
       "optional": true,
       "title": "Kertaa: massavaje",
-      "prompt": "Helium-4-ytimen massa on pienempi kuin sen kahden protonin ja kahden neutronin massojen summa. Mitä tämä massavaje kertoo?",
+      "prompt": "Uraani-235-ytimen massa on pienempi kuin sen $92$ protonin ja $143$ neutronin massojen summa. Mitä tämä massavaje kertoo?",
       "choices": [
         {
           "text": "Ytimen kokoaminen vapautti energiaa, joten sen hajottaminen osiin vaatii saman verran energiaa.",
@@ -33,7 +33,7 @@
         },
         {
           "text": "Osa nukleoneista on muuttunut energiaksi, joten ytimessä on vähemmän nukleoneja kuin luullaan.",
-          "feedback": "Heliumytimessä on neljä nukleonia, eikä yksikään ole hävinnyt. Massa on pienempi, koska nukleonit ovat sitoutuneet toisiinsa, ja sidosenergiaa vastaava massa on poistunut ytimestä sitä muodostettaessa (luku *Massavaje ja ytimen sidosenergia*)."
+          "feedback": "Uraaniytimessä on $235$ nukleonia, eikä yksikään ole hävinnyt. Massa on pienempi, koska nukleonit ovat sitoutuneet toisiinsa, ja sidosenergiaa vastaava massa on poistunut ytimestä sitä muodostettaessa (luku *Massavaje ja ytimen sidosenergia*)."
         },
         {
           "text": "Mittauksissa on virhe, koska massa säilyy aina kaikissa reaktioissa.",

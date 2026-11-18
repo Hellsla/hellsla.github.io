@@ -298,9 +298,9 @@ Mieti ainakin näitä:
 Kirjaa alkuperäiset mittaustulokset taulukkoon heti mittauksen aikana. Kirjaa myös taajuus ja huoneen lämpötila. Laskemasi suureet saavat omat sarakkeensa mitattujen oikealle puolelle.
 
 ::: tuki O
-Voit käyttää esimerkiksi tällaista taulukkoa. Lisää rivejä, jos putkeen mahtuu useampia resonanssikohtia.
+Voit käyttää esimerkiksi tällaista taulukkoa. Lisää rivejä, jos putkeen mahtuu useampia resonanssikohtia. Alaindeksi $\text{pit}$ tarkoittaa ilmapatsaan pidentämistä ja $\text{lyh}$ sen lyhentämistä.
 
-| $n$ | $L$ pidentäen $(\text{m})$ | $L$ lyhentäen $(\text{m})$ | $\bar{L}_n\ (\text{m})$ |
+| $n$ | $L_\text{pit}\ (\text{m})$ | $L_\text{lyh}\ (\text{m})$ | $\bar{L}_n\ (\text{m})$ |
 |---|---|---|---|
 | 1 | | | |
 | 2 | | | |

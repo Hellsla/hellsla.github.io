@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 6e26a08a08a64312
-SCOPE: delta (round 2): new tasks fy9-aallot-s7 and s8 (figures fy5-12/ruudukko-tehtava, fy5-13/kuvio-tehtava) and the changed intro; s1-s6 not re-judged. Language: en; fidelity to fi checked for en and fi-easy.
+CONTENT-HASH: 2ab8e54bc5beb6bd
+SCOPE: delta: en tasks fy9-aallot-s7 (fy5-12/ruudukko-tehtava) and s8 (fy5-13/kuvio-tehtava) in sovella/tasks.json and solutions.md, and the changed intro (git diff 49ba8f9 HEAD); fidelity to fi; s1-s6 not re-judged. Language: en.
 
 ## Blocking
 (none)
 
 ## Polish
-- s7: the task text says the loudness difference from the unequal distances is ignored, yet the c model answer adds "not completely silent because the farther loudspeaker is heard more weakly". Physically right, but mildly at odds with the stated simplification; one clause could say "in practice".
-- s8 d: the model answer could add that off resonance the string settles to a small-amplitude forced vibration at 20 Hz (it says "small amplitude", which is correct).
+- s7 c: the task ignores the loudness difference from unequal distances, yet the model answer adds "not completely silent because the farther loudspeaker is heard slightly more weakly". Physically right; "in practice" would reconcile it with the stated simplification.
 
 ## Checked
-- Round-1 blocking items verified fixed in tasks.json and solutions.md: s7 a (two sf from the 0,50 m square side; counts exact), s7 b (three sf from f = 343 Hz; 343,4 has four), s8 a (0,600 m three sf from L = 1,20 m; loop count exact). s8 c now says tension and mass per unit length. en decimal points are periods throughout.
-- Recomputed: s1 = 12*0,50 = 6,0 m; d = 2,5 m; s2 = sqrt(42,25) = 6,5 m; Δs = 0,50 m (12:5:13 triangle). λ = 343,4/343 = 1,0012 m; Δs/λ = 0,499 (destructive for in-phase sources); next maximum Δs = λ gives f = 343,4/0,50 = 686,8 Hz ≈ 690 Hz (answer 687 Hz, 2 % tolerance), consistent with 2*343 Hz.
-- s8: λ = 2*1,20/4 = 0,600 m; v = 50*0,600 = 30 m/s; f3 = 3*30/(2*1,20) = 37,5 Hz ≈ 38 Hz (2 sf limited by 30 m/s); f1 = 12,5 Hz, f2 = 25 Hz; 20/12,5 = 1,6 loops; λ(20 Hz) = 1,5 m. Speed fixed by tension and linear density, unchanged.
-- MAFY constant: 343,4 m/s at 20 °C stated in the task text; speed of sound 343 m/s at nominal. Standing-wave conditions (nodes at both ends, L = nλ/2, f_n = nv/(2L)) correct. Scope is FY5 interference and standing waves; no content beyond.
-- FY9 wording: command words and "Perustele" used correctly; rubric points s7 4+2+3+3 = 12, s8 3+3+4+3 = 13; criteria sum to part points; practice.py check OK for all three languages (8 tasks, 120 points). Intro says eight tasks, matching.
-- Fidelity: en and fi-easy tasks and solutions carry the same numbers, reasons and conclusions as fi.
-- Content hash 6e26a08a08a64312 at start and end, unchanged.
+- Recomputed in one script: s7 s1 = 12*0.50 = 6.0 m, d = 2.5 m, s2 = sqrt(42.25) = 6.5 m, ds = 0.50 m; lambda = 343.4/343 = 1.0012 m; ds/lambda = 0.50, destructive for in-phase sources; next maximum ds = lambda gives f = 686.8 Hz (answer 687, 690 inside 2 %). s8 lambda = 2*1.20/4 = 0.600 m; v = 30 m/s; f3 = 3*30/2.40 = 37.5 Hz; f1 = 12.5 Hz, f2 = 25 Hz, 20 Hz gives 1.6 loops (lambda 1.5 m), not a natural frequency.
+- Figure source (lessons/FY5/fy5-12, fy5-13 figures.py): S2 five squares above S1, P twelve squares right of S1, square 0.50 m; string 1.20 m in four loops, five nodes. Readings in the solutions match.
+- Physics: interference conditions for in-phase sources; wave speed on a string set by tension and mass per unit length, unchanged when f changes; nodes at both ends, f_n = n v/(2L). Scope FY5. Significant figures justified (exact counts, 0.50 m, 343 Hz).
+- Assessment: criteria sum to part points (s7 4+2+3+3, s8 3+3+4+3); common mistakes are real errors; Hyväksytään myös covers phase wording and ratio routes.
+- Fidelity to fi: ids, figures, points, criteria, answers and tolerances identical; every number in s7/s8 text, criteria and solutions matches fi.
+- Intro: "Eight problems", matches.
+- Hash 2ab8e54bc5beb6bd (units.py hash --lang en) at start and end.

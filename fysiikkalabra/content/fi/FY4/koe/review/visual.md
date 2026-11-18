@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 4a94cb53e481c169
+CONTENT-HASH: 0935f577ae3e5f4c
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+- [Minor] k4 a Kaava at 360 px: the chain "1/2 mv^2 - mu m g s = 0 => mu = v^2/(2gs)" wraps after "=> mu", leaving "mu" at the end of row one and "= v^2/2gs" alone on row two; readable and not clipped, but breaking before the arrow would read better.
+- [Minor] k7 d Kaava: the work-principle line and the a_huippu,2 relation sit in two separate display blocks with a bare "ja" between; fine, optional.
+- [Minor] Several Sijoitus fractions use stacked unit fractions (\tfrac{m}{s}); small but legible at 360 px.
 
 ## Checked
-- Delta 8c (md-paragraphs): git diff origin/main of solutions.md; blank lines only, between sentences; words, numbers, formulas unchanged. Splits: Perustelu of q a/b/c/d, Mallivastaus/Vastaus of the box, uncertainty, impulse, force plate, helmet items (helmet text five paragraphs).
-- Opened FY4-koe-page-390-3.png and -4.png and stage-osa-1-390-2.png (390 px, task part; the solution blocks were not in these frames, so the split paragraphs themselves were judged from the diff, with the Sovella capture stage-fy4-s1-390-4.png as evidence for how continuation paragraphs render in the same solution component: even gaps, label on first paragraph, nothing clipped).
-- Breaks at sentence ends; each paragraph one thought; the helmet reading is clearer split.
+- Rendered the current FY4-koe preview at 360 px with every box open (scrollWidth 360, no horizontal overflow) and looked at the two reworked solutions: k4 a (Annettu, Periaate, Kaava starting from work principle with signed work W = -F_mu s = -mu m g s, Sijoitus rows, Vastaus, Järkevyys) and k7 d (Periaate, Kaava, Muunnokset, Sijoitus with two chains, Vastaus, Järkevyys): signed work present, every row inside its card, nothing clipped (the sticky stage bar overlaps the screenshot only).
+- Captures: contact-7.png (#73-#84: monivalinnat solutions, osa 2 task 2 with graph and rubric), FY4-koe-fig-2-390.png (four force diagrams A-D: colours and labels consistent, \overline notation, friction down the slope), FY4-koe-fig-7-390.png (a-t graph: axes with units, ticks, curve to 9 ms then zero).
+- Packet layout checks and the text packet show no red KaTeX. Hash unchanged. Not every one of the 176 captures was opened; contact sheets and the changed solutions were.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

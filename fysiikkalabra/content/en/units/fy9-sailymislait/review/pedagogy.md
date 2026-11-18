@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f5227f32d90da96e
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: be4185dec3292c87
+SCOPE: delta: CI 360 px fix; s8 d) rubric detail W_air line became a two-row aligned display; en checked.
 
 ## Blocking
 - (none)
 
 ## Polish
-- A solutions.md b) model answer, changed sentence: "about half of the kinetic energy disappeared in test 2" keeps the word the corrected wording is meant to remove; "was converted" would match the sentence's own start.
+- Earlier Polish stays recorded (s7 c explain-question, s8 14 points, s8 d precision, comma after display blocks, s7 d hint); not re-raised.
 
 ## Checked
-- solutions.md b), tasks.json criterion (1 p, still observable) and unit.md common mistake: internal-energy wording carried out consistently; unit.md now names kinetic energy, which is more precise than "energy".
-- Half of kinetic energy lost: m_B/(m_A+m_B) = 0.48, correct.
+- W_air = 27.4 J - 33.9 J ≈ -6.5 J: same numbers, order, sign and units in the two-row display; arithmetic correct (27.4 - 33.9 = -6.5).
+- Connecting word ("and"/"ja"/fi-easy "ja") and the preceding E_p display unchanged; no new text, hints or content added.
+- Hash at start and end identical.
