@@ -1079,7 +1079,9 @@ Kaksoisrakokokeessa käytetään punaista laservaloa, jonka aallonpituus on $633
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** ${\lambda = 633\,\text{nm}}$, ${P = 1{,}0 \cdot 10^{-13}\,\text{W}}$, ${h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}}$ ja ${c = 2{,}998 \cdot 10^8\,\text{m/s}}$. Kysytään fotonien lukumäärää sekunnissa $\tfrac{N}{t}$ ja peräkkäisten fotonien keskimääräistä etäisyyttä $d$.
+**Tunnetut ja kysytty.** ${\lambda = 633\,\text{nm}}$, ${P = 1{,}0 \cdot 10^{-13}\,\text{W}}$, ${h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}}$ ja ${c = 2{,}998 \cdot 10^8\,\text{m/s}}$.
+
+Kysytään fotonien lukumäärää sekunnissa $\tfrac{N}{t}$ ja peräkkäisten fotonien keskimääräistä etäisyyttä $d$.
 
 <!-- vaihe -->
 

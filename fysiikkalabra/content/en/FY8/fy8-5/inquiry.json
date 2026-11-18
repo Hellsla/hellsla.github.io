@@ -24,7 +24,7 @@
       "type": "choice",
       "title": "Review: the electron in a double slit",
       "optional": true,
-      "prompt": "In the double-slit experiment, electrons are sent one at a time, and the screen records every hit. What is observed when thousands of hits have accumulated?",
+      "prompt": "Behind the electron-cloud pictures of a chemistry book is the idea that an electron behaves like a wave. This shows in the double-slit experiment: electrons are sent one at a time, and the screen records every hit. What is observed when thousands of hits have accumulated?",
       "choices": [
         {
           "text": "Each electron hits one spot, but many hits build up a striped interference pattern.",

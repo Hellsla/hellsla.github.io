@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 7ff4568c0902edd0
-SCOPE: delta added-exercise from e73b4e5e83dd72e3 base 5b3ca4f81c77
+CONTENT-HASH: 571f3ed1d3a52ef4
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L1-10 answer box — the same missing unit "1/s" as in fi.
+- [Minor] L1-10 answer box — shows "$6.7 \cdot 10^{15}$" while the unit $\tfrac{1}{\text{s}}$ is only in the solution (as in the previous round).
 
 ## Checked
-- The L2-08 fix: the text reads "just below the horizontal line at $4.0$", no ordinal; matches the figure.
-- Capture L2-1280-10 (L2-08 task with its figure, hint locks and given block): clean.
-- The L3-06 and L1-10 solution text is in the packet; layout as in fi (fi captures opened).
-- Other en solution captures and the 360 px captures not opened.
+- Delta: solutions.md, only paragraph cutting (md-paragraphs), words unchanged.
+- Opened fy8-7-open-exercises-1280-12 (L1-10 solution) and fy8-7-open-exercises-L3-1280-5 (L3 laser solution): the split paragraphs sit cleanly between the Formula, Substitution and Answer blocks, chains aligned, no clipping.
+- Hash the same at start and end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish (English) 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

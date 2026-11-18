@@ -23,25 +23,25 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: valosähköinen ilmiö",
-      "prompt": "Metallilevyä valaistaan valolla, joka irrottaa siitä elektroneja. Aallonpituus pysyy samana, mutta valon intensiteetti kaksinkertaistetaan. Intensiteetti on teho pinta-alaa kohti: se kertoo, kuinka paljon valon energiaa osuu sekunnissa yhtä pinta-alayksikköä kohti. Mitä tapahtuu?",
+      "title": "Kertaa: valon intensiteetti ja fotonit",
+      "prompt": "Kaksoisrakokokeessa laserin valo osuu varjostimelle. Aallonpituus pysyy samana, mutta valon intensiteetti kaksinkertaistetaan. Intensiteetti on teho pinta-alaa kohti: se kertoo, kuinka paljon valon energiaa osuu sekunnissa yhtä pinta-alayksikköä kohti. Mitä varjostimelle osuville fotoneille tapahtuu?",
       "choices": [
         {
-          "text": "Irtoavien elektronien suurin liike-energia kaksinkertaistuu, koska levy saa enemmän energiaa.",
-          "feedback": "Suurin liike-energia riippuu yhden fotonin energiasta $hf$. Se ei riipu valon määrästä (luku *Valosähköinen ilmiö ja fotoni*). Sama aallonpituus tarkoittaa samaa fotonin energiaa. Jokainen elektroni saa siis yhtä paljon energiaa kuin ennenkin."
+          "text": "Jokaisen fotonin energia kaksinkertaistuu, koska varjostin saa enemmän energiaa.",
+          "feedback": "Yhden fotonin energia on $hf$, ja se riippuu vain taajuudesta (luku *Valosähköinen ilmiö ja fotoni*). Sama aallonpituus tarkoittaa samaa fotonin energiaa. Lisää energiaa tulee siksi, että fotoneja on enemmän."
         },
         {
-          "text": "Elektroneja irtoaa sekunnissa noin kaksi kertaa enemmän, mutta niiden suurin liike-energia pysyy samana.",
+          "text": "Fotoneja osuu sekunnissa noin kaksi kertaa enemmän, mutta jokaisen fotonin energia pysyy samana.",
           "correct": true,
-          "feedback": "Oikein. Kaksinkertainen intensiteetti tarkoittaa, että fotoneja tulee sekunnissa kaksi kertaa enemmän. Yksi fotoni irrottaa enintään yhden elektronin. Fotonin energia $hf$ ei muutu (luku *Valosähköinen ilmiö ja fotoni*). Tällä tunnilla katsotaan, miten fotonit käyttäytyvät, kun niitä on hyvin vähän."
+          "feedback": "Oikein. Kaksinkertainen intensiteetti tarkoittaa, että fotoneja tulee sekunnissa kaksi kertaa enemmän. Fotonin energia $hf$ ei muutu (luku *Valosähköinen ilmiö ja fotoni*). Tällä tunnilla katsotaan, miten fotonit käyttäytyvät, kun niitä on hyvin vähän."
         },
         {
-          "text": "Jokaisen fotonin energia kaksinkertaistuu, joten elektronit irtoavat nopeammin.",
-          "feedback": "Fotonin energia on $hf$, ja se riippuu vain taajuudesta. Kun intensiteetti kasvaa, fotoneja on enemmän. Yksittäisen fotonin energia ei kasva."
+          "text": "Fotonien määrä pysyy samana, mutta ne kulkevat nopeammin ja ovat energisempiä.",
+          "feedback": "Fotonit kulkevat tyhjiössä aina valon nopeudella. Niiden energia on $hf$. Kun intensiteetti kasvaa, fotoneja on enemmän. Yksittäisen fotonin energia ei kasva."
         },
         {
-          "text": "Mikään ei muutu, koska intensiteetti ei vaikuta valosähköiseen ilmiöön lainkaan.",
-          "feedback": "Intensiteetti vaikuttaa: se kertoo, kuinka monta fotonia osuu levyyn sekunnissa. Siksi elektroneja irtoaa enemmän. Kunkin elektronin suurin liike-energia ei kuitenkaan muutu."
+          "text": "Mikään ei muutu, koska intensiteetti ei vaikuta fotoneihin lainkaan.",
+          "feedback": "Intensiteetti vaikuttaa: se kertoo, kuinka monta fotonia osuu varjostimelle sekunnissa. Fotoneja on siis enemmän. Kunkin fotonin energia ei kuitenkaan muutu."
         }
       ]
     },

@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: d62cd56855646e0e
+CONTENT-HASH: 36b1ebf16eefaf10
 
 ## Blocking
-(none)
 
 ## Polish
-- none
+- [Minor] Tiivistelmä formula line ends with "…" at the box's right edge at 390 px; fits, scrollWidth 390.
 
 ## Checked
-- Round 2, delta (sentence mark after lifted formula). Opened fi 390 px captures across lessons (fy8-1 example-1, fy8-3 sovella-2, fy8-5 example-1, fy8-8 sovella-2, fy8-11 selita-3, fy8-12 example-2, fy8-14 sovella-1, fy8-16 example-2). No lone "," or "." starts a line after a lifted formula; marks sit inside the formula's last row (e.g. "≈ 10 500 km/s."), text unchanged. Rest of this lesson judged by inference from the shared build, not every capture opened.
+- Delta: own 390 px render of the opened Tiivistelmä (preview/fy8-13.html, scratchpad t2.png; no 390 theory capture in the packet). Formula on its own display line, no clipping; continuation "kudosten herkkyyden. Molempien yksikkö on sievert Sv." reads correctly; all five items are separate bullets (previous Major fixed).
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

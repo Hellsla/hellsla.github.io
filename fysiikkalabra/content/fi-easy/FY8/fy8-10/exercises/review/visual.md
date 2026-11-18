@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 08aaeedc0b23d2ba
-SCOPE: delta added-exercise from 57d2f0609069ab26 base 5b3ca4f81c77
+CONTENT-HASH: 68a4c8c1f1b78bb8
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions 10-24, Periaate — the line breaks right after "(" so "(" ends a row and "117 + 118 = 235)" starts the next; a non-breaking join in the shared renderer would fix it.
+- [Minor] solutions 10-? (the nuclide comparison task), Kysytty — "megaelektronvoltteina" lacks an i — "megaelektronivoltteina".
 
 ## Checked
-- Delta, added exercises 10-9 (L1-09), 10-18 (L2-09), 10-24 (L3-06), fi-easy, 1280 px, solutions open: opened open-exercises-1280-9, L2-1280-12 (and -11 where the task starts), L3-1280-9/10/11 (and 1280-8 for the task text where needed).
-- Figure fy8-10/kayra-points shown in 10-18 and 10-24: axes with E_B/A (MeV) and A, ticks 0 to 250 and 2 to 10, grid lines, distinct markers, nothing clipped; the values read in the solutions (8,5 and 7,6 MeV at A = 120 and 238/235) can be read from it.
-- Maths: aligned rows with equals signs in one column, units upright with thin space, decimal comma/point per language, answer boxes and Järkevyys blocks intact; no plain quantities seen. Hash unchanged at the end.
+- Delta (solutions.md, blank lines only, paragraph cutting): opened fy8-10-open-exercises-1280-2, fy8-10-open-exercises-L2-1280-6 and fy8-10-open-exercises-L3-1280-4 (shots in review/shots), solutions open at 1280 px.
+- Blocks (Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys) separate cleanly; aligned rows with equals signs in one column; units upright with thin space; nothing clipped.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

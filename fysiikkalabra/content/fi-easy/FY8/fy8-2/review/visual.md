@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9860abfa76373e51
+CONTENT-HASH: ff388abbd8793b02
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Delta: one wording change in inquiry.json, the "Sovella uuteen tilanteeseen" task (hint 3 and the 3,06 eV mistake feedback now say "Sisäenergiaksi jää ..." instead of "Lämmöksi jää ...").
-- No capture shows that task's hints at the current hash, so the sentence is judged from source. I opened fy8-2-stage-sovella-390-2 to confirm the surrounding layout.
-- The sentence is fluent Finnish and matches the task's prompt and hint 1 (sisäenergia). The formula $E_1 - E_2$ and the units are LaTeX. No figure, typography or layout change.
+- Delta round 2: the "Kertaa: fotonin energia" prompt (Auringon spektrin punaisessa/violetissa päässä) and the paragraph cuts in lesson.md.
+- Opened fy8-2-stage-tarkista-390-1 (tarkista layout intact) and fy8-2-theory-1280-1 (paragraphs, figure beside text, formulas, captions fine).
+- Prompt wording judged from source: fluent Finnish, numbers and units in LaTeX.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

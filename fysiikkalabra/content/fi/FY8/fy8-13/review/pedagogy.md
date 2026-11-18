@@ -1,12 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 4a01b986bbcaa0f9
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 71e37c03a08734b0
 ## Blocking
 - none
-
 ## Polish
-- none
-
+- The stem says 'hengityksen mukana', which hands over half of the answer; drop it.
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+batch delta review: Retrieval reframed as alpha-active dust on work clothes of a plant worker; authentic and clear, tests penetration versus internal exposure.

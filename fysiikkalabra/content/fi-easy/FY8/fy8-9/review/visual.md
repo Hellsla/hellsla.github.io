@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ee0df94fab51094e
-Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
+CONTENT-HASH: e9f38776eda7db26
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] Pohdinta, "Kertaa: beetahajoaminen" — the box is closed by default, so the new technetium/molybdenum wording is read only when opened; wording itself is fluent and consistent (Tc-99m in the phenomenon, Mo-99 in the recall). No change needed.
 
 ## Checked
-- Source-level read of the diff: Finnish/English wording, LaTeX number+unit typography (thin space, \text units, decimal comma in fi/fi-easy, \cdot), the aligned block with \approx in fy8-9 where applicable; no inline formula wrapping, no new figures. No render made.  Re-checked after the I-131 note was reworded (calculations use 8,02 d; third significant figure): wording and typography fine.
+- Delta: inquiry.json recall question (Mo-99 beta-minus replaces I-131). Opened fy8-9-stage-herata-390 (Pohdinta: recall box sits under the question, layout intact) and fy8-9-stage-ennusta-390-1 (stage untouched, layout survived).
+- Source diff read: $99$, $42$, $43$ LaTeX, "molybdeenistä tulee teknetiumia", "molybdeeni-ioni" correct, glossary terms intact, chapter named not id.
+- Not opened: figures (unchanged, teacher-approved).
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

@@ -467,7 +467,9 @@ In an X-ray image of a forearm, beam A passes through $8.0\,\text{cm}$ of soft t
 
 <!-- vaihe -->
 
-**Given and asked.** Beam A: soft tissue $d_\text{A} = 8.0\,\text{cm}$. Beam B: soft tissue $d_\text{tissue} = 5.0\,\text{cm}$ and bone $d_\text{bone} = 3.0\,\text{cm}$. Half-value thicknesses $d_{1/2}^\text{tissue} = 3.4\,\text{cm}$ and $d_{1/2}^\text{bone} = 1.1\,\text{cm}$. We are asked for the ratio of the intensities ${I_\text{A} : I_\text{B}}$.
+**Given and asked.** Beam A: soft tissue $d_\text{A} = 8.0\,\text{cm}$. Beam B: soft tissue $d_\text{tissue} = 5.0\,\text{cm}$ and bone $d_\text{bone} = 3.0\,\text{cm}$. Half-value thicknesses $d_{1/2}^\text{tissue} = 3.4\,\text{cm}$ and $d_{1/2}^\text{bone} = 1.1\,\text{cm}$.
+
+We are asked for the ratio of the intensities ${I_\text{A} : I_\text{B}}$.
 
 <!-- vaihe -->
 

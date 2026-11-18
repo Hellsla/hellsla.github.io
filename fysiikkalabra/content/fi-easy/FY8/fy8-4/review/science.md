@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 39dba481e40ed11d
+CONTENT-HASH: 6d4f215f45ab5440
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- Photo caption: the better resolution comes from the electrons' much shorter wavelength, not from wave nature alone; "Elektronien aallonpituus on paljon lyhyempi kuin valon" would state the mechanism (same in fi/en; C at this level).
 
 ## Checked
-batch delta review: added meta.json key_concepts (Luvun tärkeät käsitteet) checked term by term against the lesson's own definitions, summary and the physics guardrails; no number, formula or choice changed. Terms: kaksoisrakokoe, Comptonin ilmiö (scattered X-rays have a longer wavelength) and aalto-hiukkasdualismi agree with the lesson.
+batch delta review: rewritten intensity retrieval (one correct option, each distractor's feedback right: E = hf, speed c, more photons), chapter-name references, photo caption, worked-example paragraph split (numbers unchanged).

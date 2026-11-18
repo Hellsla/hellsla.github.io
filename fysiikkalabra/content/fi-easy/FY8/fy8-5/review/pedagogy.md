@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f2c261fc94008078
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: f9ce31430d871420
 
 ## Blocking
-- none
 
 ## Polish
-- The heading on the link to chemistry orbitals is not marked as an extension although the detailed counting exercises are.
+- The new prompt says the electron "käyttäytyy kuin aalto" and that this shows in the double slit, which half-gives the answer (an interference pattern); drop that sentence or make it a neutral lead.
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+batch delta review: prompt context change read; answer not wrong, slightly leading.
