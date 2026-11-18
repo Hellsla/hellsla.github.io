@@ -382,7 +382,7 @@ def boxed_section(piece):
     """A theory section as a closed <details> box: its heading becomes the summary (opens with Enter/Space), the rest the body."""
     m = re.match(r'<h3 class="theory-h">(.*?)</h3>(.*)\Z', piece, flags=re.S)
     if not m: return piece
-    return f'<details class="opt theory-box"><summary>{m.group(1)}</summary><div class="box-body">{m.group(2)}</div></details>'
+    return f'<details class="theory-box"><summary>{m.group(1)}</summary><div class="box-body">{m.group(2)}</div></details>'
 
 
 def named_sections(html):
