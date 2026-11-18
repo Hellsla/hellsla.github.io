@@ -95,7 +95,10 @@ $A = 200\,\text{kBq}$
 
 Samoin hetkellä $2{,}0\,\text{h}$ aktiivisuus on $400\,\text{kBq}$, hetkellä $6{,}0\,\text{h}$ se on $100\,\text{kBq}$ ja hetkellä $8{,}0\,\text{h}$ se on $50\,\text{kBq}$. Kuvaajan C käyrä kulkee näiden pisteiden kautta ja loivenee koko ajan.
 
-Kuvaajassa A aktiivisuus pienenee tasaisesti ja on nolla hetkellä $4{,}0\,\text{h}$: siinä on oletettu, että loput ytimet hajoavat toisessa puoliintumisajassa. Kuvaajassa B käyrä kulkee pisteen $(2{,}0\,\text{h};\ 400\,\text{kBq})$ kautta, mutta jyrkkenee ja osuu nollaan: siinä vanhat ytimet hajoaisivat todennäköisemmin, vaikka ytimellä ei ole muistia. Kuvaajan D käyrä on $A = A_0 e^{-t/T_{1/2}}$, jossa hajoamisvakioksi on otettu $\tfrac{1}{T_{1/2}}$. Hetkellä $2{,}0\,\text{h}$ se antaa $800\,\text{kBq} \cdot e^{-1} \approx 294\,\text{kBq}$ eikä puolta alkuarvosta. Hajoamisvakio on $\lambda = \tfrac{\ln 2}{T_{1/2}}$.
+Kuvaajassa A aktiivisuus pienenee tasaisesti ja on nolla hetkellä $4{,}0\,\text{h}$: siinä on oletettu, että loput ytimet hajoavat toisessa puoliintumisajassa. Kuvaajassa B käyrä kulkee pisteen $(2{,}0\,\text{h};\ 400\,\text{kBq})$ kautta, mutta jyrkkenee ja osuu nollaan: siinä vanhat ytimet hajoaisivat todennäköisemmin, vaikka ytimellä ei ole muistia. Kuvaajan D käyrä on $A = A_0 e^{-t/T_{1/2}}$, jossa hajoamisvakioksi on otettu $\tfrac{1}{T_{1/2}}$.
+
+Hetkellä $2{,}0\,\text{h}$ se antaa $800\,\text{kBq} \cdot e^{-1} \approx 294\,\text{kBq}$ eikä puolta alkuarvosta. Hajoamisvakio on $\lambda = \tfrac{\ln 2}{T_{1/2}}$.
+
 **Kuvaajan lukeminen:** Jokaisesta kuvaajasta luettiin aktiivisuus hetkinä $2{,}0\,\text{h}$, $4{,}0\,\text{h}$ ja $6{,}0\,\text{h}$ ja verrattiin arvoja hajoamislain arvoihin. Lisäksi katsottiin, loiveneeko käyrä ja jääkö se nollan yläpuolelle.
 
 ## fy8-9-L2-01

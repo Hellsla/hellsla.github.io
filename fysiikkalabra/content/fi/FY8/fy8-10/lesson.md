@@ -356,7 +356,9 @@ Laske helium-4-ytimen ${}^{4}_{2}\text{He}$ sidosenergia ja sidosenergia nukleon
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Järjestysluku $Z = 2$, massaluku $A = 4$, joten neutroneja on $N = A - Z = 2$. Atomimassat $m_\text{atomi} = 4{,}002603\,\text{u}$, $m_\text{H} = 1{,}007825\,\text{u}$ ja $m_\text{n} = 1{,}008665\,\text{u}$. Kysytään sidosenergiaa $E_\text{B}$ ja sidosenergiaa nukleonia kohti $\tfrac{E_\text{B}}{A}$ megaelektronivoltteina.
+**Tunnetut ja kysytty.** Järjestysluku $Z = 2$, massaluku $A = 4$, joten neutroneja on $N = A - Z = 2$. Atomimassat $m_\text{atomi} = 4{,}002603\,\text{u}$, $m_\text{H} = 1{,}007825\,\text{u}$ ja $m_\text{n} = 1{,}008665\,\text{u}$.
+
+Kysytään sidosenergiaa $E_\text{B}$ ja sidosenergiaa nukleonia kohti $\tfrac{E_\text{B}}{A}$ megaelektronivoltteina.
 
 <!-- vaihe -->
 

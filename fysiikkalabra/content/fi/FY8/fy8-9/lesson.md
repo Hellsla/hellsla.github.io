@@ -614,7 +614,9 @@ Kilpirauhassyövän hoitoon valmistetun jodi-131-kapselin aktiivisuus on valmist
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Alkuaktiivisuus $A_0 = 550\,\text{MBq}$, puoliintumisaika $T_{1/2} = 8{,}02\,\text{d}$ ja aika $t = 20{,}0\,\text{d}$. Kysytään aktiivisuutta $A$ hetkellä $t$.
+**Tunnetut ja kysytty.** Alkuaktiivisuus $A_0 = 550\,\text{MBq}$, puoliintumisaika $T_{1/2} = 8{,}02\,\text{d}$ ja aika $t = 20{,}0\,\text{d}$.
+
+Kysytään aktiivisuutta $A$ hetkellä $t$.
 
 <!-- vaihe -->
 

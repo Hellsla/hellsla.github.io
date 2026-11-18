@@ -272,7 +272,9 @@ $$\begin{aligned}
 &\phantom{H} \approx 1{,}9\,\text{mSv}
 \end{aligned}$$
 
-Lennoista kertyy vuodessa noin $1{,}9\,\text{mSv}$, joten suuruusluokka on noin $2\,\text{mSv}$. Väärät vaihtoehdot syntyvät tavallisista virheistä: yhden lennon annos on vain $27\,\mu\text{Sv}$ eli noin $0{,}03\,\text{mSv}$, yhden kuukauden annos noin $160\,\mu\text{Sv}$ eli noin $0{,}2\,\text{mSv}$, mikrosievertien jakaminen miljoonalla antaa noin $0{,}002\,\text{mSv}$ ja yksikön muuntamatta jättäminen noin $2000\,\text{mSv}$. Järkevyys: $2\,\text{mSv}$ on noin kolmasosa suomalaisen keskimääräisestä vuosiannoksesta $5{,}9\,\text{mSv}$, joten paljon lentävän ihmisen annos kasvaa selvästi mutta jää samaan suuruusluokkaan. Annos $2000\,\text{mSv}$ olisi satoja kertoja keskimääräistä suurempi, mikä ei ole mahdollista pelkistä lennoista.
+Lennoista kertyy vuodessa noin $1{,}9\,\text{mSv}$, joten suuruusluokka on noin $2\,\text{mSv}$. Väärät vaihtoehdot syntyvät tavallisista virheistä: yhden lennon annos on vain $27\,\mu\text{Sv}$ eli noin $0{,}03\,\text{mSv}$, yhden kuukauden annos noin $160\,\mu\text{Sv}$ eli noin $0{,}2\,\text{mSv}$, mikrosievertien jakaminen miljoonalla antaa noin $0{,}002\,\text{mSv}$ ja yksikön muuntamatta jättäminen noin $2000\,\text{mSv}$.
+
+Järkevyys: $2\,\text{mSv}$ on noin kolmasosa suomalaisen keskimääräisestä vuosiannoksesta $5{,}9\,\text{mSv}$, joten paljon lentävän ihmisen annos kasvaa selvästi mutta jää samaan suuruusluokkaan. Annos $2000\,\text{mSv}$ olisi satoja kertoja keskimääräistä suurempi, mikä ei ole mahdollista pelkistä lennoista.
 
 ## fy8-13-L2-09
 **Annettu:** oma lukema raporteista. Raporttien lukujen mukaan keskimääräinen efektiivinen vuosiannos on $5{,}9\,\text{mSv}$. Esimerkkilukema 16. marraskuuta 2026: sisäilman radon $4\,\text{mSv}$, muu luonnon säteily $1{,}1\,\text{mSv}$ ja lääketieteellinen käyttö $0{,}76\,\text{mSv}$. Kohdassa c) annosnopeus $\dot{H} = 0{,}10\,\mu\text{Sv/h}$ ja aika $t = 8760\,\text{h}$, jonka vuoden tuntimäärä antaa tarkasti.

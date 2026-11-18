@@ -450,7 +450,9 @@ Cesium-137-lähdettä säilytetään lyijysuojassa. Lyijyn puoliintumispaksuus c
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Puoliintumispaksuus $d_{1/2} = 5{,}5\,\text{mm}$ ja intensiteettien suhde ${I : I_0} = 5{,}0\,\% = 0{,}050$. Kysytään lyijykerroksen paksuutta $d$.
+**Tunnetut ja kysytty.** Puoliintumispaksuus $d_{1/2} = 5{,}5\,\text{mm}$ ja intensiteettien suhde ${I : I_0} = 5{,}0\,\% = 0{,}050$.
+
+Kysytään lyijykerroksen paksuutta $d$.
 
 <!-- vaihe -->
 

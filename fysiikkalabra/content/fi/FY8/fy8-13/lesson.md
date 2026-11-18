@@ -584,7 +584,9 @@ Asunnon sisäilman radonin hajoamistuotteet lähettävät alfasäteilyä keuhkoi
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Absorboitunut energia $E = 2{,}0\,\text{mJ}$, keuhkojen massa $m = 1{,}2\,\text{kg}$, alfasäteilyn painotuskerroin $w_\text{R} = 20$ ja keuhkojen painotuskerroin $w_\text{T} = 0{,}12$. Kysytään efektiivistä annosta $H_\text{E}$.
+**Tunnetut ja kysytty.** Absorboitunut energia $E = 2{,}0\,\text{mJ}$, keuhkojen massa $m = 1{,}2\,\text{kg}$, alfasäteilyn painotuskerroin $w_\text{R} = 20$ ja keuhkojen painotuskerroin $w_\text{T} = 0{,}12$.
+
+Kysytään efektiivistä annosta $H_\text{E}$.
 
 <!-- vaihe -->
 
@@ -619,7 +621,9 @@ H_\text{E} = w_\text{T} w_\text{R} \frac{E}{m}
 
 <!-- vaihe -->
 
-**Järkevyys.** Absorboitunut annos on vain noin $1{,}7\,\text{mGy}$, mutta alfasäteilyn kerroin $20$ kasvattaa keuhkojen ekvivalenttiannoksen noin $33\,\text{mSv}$:iin, ja kerroin $0{,}12$ pienentää sen efektiiviseksi annokseksi, joka kuvaa koko kehon säteilyhaittaa. Tasainen jakautuminen on karkea mallioletus: todellisuudessa alfahiukkaset absorboituvat hengitysteiden pinnan ohueen solukerrokseen. Tulos on samaa suuruusluokkaa kuin suomalaisen keskimääräinen radonannos, noin $4\,\text{mSv}$ vuodessa. Esimerkki käsitteli annoksen painotusta; seuraavassa tehtävässä annosta pienennetään ajalla, etäisyydellä ja suojalla.
+**Järkevyys.** Absorboitunut annos on vain noin $1{,}7\,\text{mGy}$, mutta alfasäteilyn kerroin $20$ kasvattaa keuhkojen ekvivalenttiannoksen noin $33\,\text{mSv}$:iin, ja kerroin $0{,}12$ pienentää sen efektiiviseksi annokseksi, joka kuvaa koko kehon säteilyhaittaa. Tasainen jakautuminen on karkea mallioletus: todellisuudessa alfahiukkaset absorboituvat hengitysteiden pinnan ohueen solukerrokseen. Tulos on samaa suuruusluokkaa kuin suomalaisen keskimääräinen radonannos, noin $4\,\text{mSv}$ vuodessa.
+
+Esimerkki käsitteli annoksen painotusta; seuraavassa tehtävässä annosta pienennetään ajalla, etäisyydellä ja suojalla.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että luonnon säteily on vaaratonta ja vain ihmisen tuottama säteily on vaarallista. Elimistö ei kuitenkaan erota, tuleeko alfahiukkanen kellarin radonista vai laboratorion lähteestä: säteilyn alkuperä ei sinänsä määrää sen vaarallisuutta. Efektiivisen annoksen avulla voidaan vertailla altistuksia ja arvioida säteilyhaittoja, mutta sama efektiivinen annos ei takaa täsmälleen samaa yksilöllistä riskiä. Suomalaisen suurin annos tulee luonnon radonista, ja siksi radonin mittaaminen ja korjaaminen on tehokkain tapa pienentää omaa säteilyannosta.

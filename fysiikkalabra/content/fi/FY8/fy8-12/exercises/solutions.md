@@ -171,7 +171,9 @@ $\tfrac{120\,\text{mm}}{34\,\text{mm}} \approx 3{,}53$ (suoja E, alumiini)
 
 Läpi pääsevät osuudet ovat esimerkiksi suojalle A $\left(\tfrac{1}{2}\right)^{2{,}50} \approx 0{,}18$ ja suojalle D $\left(\tfrac{1}{2}\right)^{4{,}94} \approx 0{,}033$. Samoin suojalle B saadaan $12\,\%$, suojalle E $8{,}7\,\%$ ja suojalle C $6{,}3\,\%$. Läpi pääsevän osuuden mukaan suurimmasta pienimpään järjestys on A, B, E, C, D.
 
-Lyijy ei ole tässä paras suoja, vaikka sen puoliintumispaksuus on pienin: $400\,\text{mm}$:n vesikerroksessa on enemmän puoliintumispaksuuksia kuin $22\,\text{mm}$:n lyijylevyssä. Myöskään paksuus yksin ei ratkaise: betoni- ja alumiinisuoja ovat yhtä paksuja, mutta alumiinin puoliintumispaksuus on pienempi, joten se päästää läpi pienemmän osuuden. Järkevyys: rautasuojassa on vain kaksi ja puoli puoliintumispaksuutta, ja $18\,\%$ on neljäsosan $25\,\%$ ja kahdeksasosan $12{,}5\,\%$ välissä, kuten pitää.
+Lyijy ei ole tässä paras suoja, vaikka sen puoliintumispaksuus on pienin: $400\,\text{mm}$:n vesikerroksessa on enemmän puoliintumispaksuuksia kuin $22\,\text{mm}$:n lyijylevyssä. Myöskään paksuus yksin ei ratkaise: betoni- ja alumiinisuoja ovat yhtä paksuja, mutta alumiinin puoliintumispaksuus on pienempi, joten se päästää läpi pienemmän osuuden.
+
+Järkevyys: rautasuojassa on vain kaksi ja puoli puoliintumispaksuutta, ja $18\,\%$ on neljäsosan $25\,\%$ ja kahdeksasosan $12{,}5\,\%$ välissä, kuten pitää.
 
 ## fy8-12-L2-05
 **Annettu:** kymmenen pulssimäärää $10\,\text{s}$:n jaksoissa: $52$, $45$, $49$, $57$, $44$, $48$, $51$, $42$, $50$ ja $46$; satunnaisvaihtelun suuruusluokka $\sqrt{N}$
@@ -226,9 +228,19 @@ ja gammafotonin energian $10^{5}\,\text{eV}$ suhde fotonin energiaan on
 $$\dfrac{10^{5}\,\text{eV}}{1{,}448 \cdot 10^{-5}\,\text{eV}} = 6{,}9 \cdot 10^{9}$$
 
 Suuremmilla gammaenergioilla suhde on vielä suurempi.
-**Mallivastaus c):** Altistus mitattaisiin annosnopeusmittarilla tai GM-putkella, joka asetetaan tuotteen lähelle samalle etäisyydelle kuin missä tuote on ihoon nähden. Etäisyys on valittava tarkoituksella, koska säteilyn voimakkuus pienenee etäisyyden kasvaessa. Ensin mitataan taustasäteily samassa paikassa ilman tuotetta, ja se vähennetään tuotteen kanssa mitatusta pulssi- tai annosnopeudesta, jolloin saadaan nettoarvo. Mittausajan on oltava riittävän pitkä, jotta pulssien satunnaisvaihtelu jää pieneksi. Annos saadaan kertomalla annosnopeus käyttöajalla: yksi vuosi vuorokauden ympäri on $8760\,\text{h}$. Säteilylaji tunnistetaan asettamalla tuotteen ja mittarin väliin paperi, ohut alumiinilevy ja lyijylevy: paperi pysäyttää alfahiukkaset, alumiini beetahiukkaset, ja gammasäteilyä vaimentaa parhaiten lyijy. Uutinen ei kerro, miten RIVM mittasi tuotteet, joten tämä on yleinen menetelmä eikä kuvaus heidän tutkimuksestaan.
-**Mallivastaus d):** Väitetyistä terveysvaikutuksista tarvittaisiin ensin mekanismi, joka sopii fysiikkaan: mikä tuotteessa vuorovaikuttaa kehon kanssa ja miten. Lisäksi tarvittaisiin kontrolloituja sokkotutkimuksia, joissa on oikea ja samannäköinen vaikutukseton tuote eikä tutkittavilla tai tutkijoilla ole tietoa, kumpi on kumpi, riittävän suuri otos ja muiden tutkimusryhmien toistamat tulokset. ”Anti-5G”-väite on fysikaalisesti väärä: pieni riipus ei voi pysäyttää radioaaltoja, jotka tulevat joka suunnasta koko kehoon, eikä 5G-signaali ionisoi, koska sen fotonien energia on pieni. Riipus ei siis suojaa 5G:ltä, mutta se tuo ihon lähelle ionisoivaa säteilyä, ja se on todellinen vaikutus, jonka viranomainen havaitsi. Luokittelu: suojaväite on fysikaalisesti väärä, ja todellinen vaikutus on tuotteen oma ionisoiva säteily.
+
+**Mallivastaus c):** Altistus mitattaisiin annosnopeusmittarilla tai GM-putkella, joka asetetaan tuotteen lähelle samalle etäisyydelle kuin missä tuote on ihoon nähden. Etäisyys on valittava tarkoituksella, koska säteilyn voimakkuus pienenee etäisyyden kasvaessa. Ensin mitataan taustasäteily samassa paikassa ilman tuotetta, ja se vähennetään tuotteen kanssa mitatusta pulssi- tai annosnopeudesta, jolloin saadaan nettoarvo. Mittausajan on oltava riittävän pitkä, jotta pulssien satunnaisvaihtelu jää pieneksi.
+
+Annos saadaan kertomalla annosnopeus käyttöajalla: yksi vuosi vuorokauden ympäri on $8760\,\text{h}$. Säteilylaji tunnistetaan asettamalla tuotteen ja mittarin väliin paperi, ohut alumiinilevy ja lyijylevy: paperi pysäyttää alfahiukkaset, alumiini beetahiukkaset, ja gammasäteilyä vaimentaa parhaiten lyijy. Uutinen ei kerro, miten RIVM mittasi tuotteet, joten tämä on yleinen menetelmä eikä kuvaus heidän tutkimuksestaan.
+
+**Mallivastaus d):** Väitetyistä terveysvaikutuksista tarvittaisiin ensin mekanismi, joka sopii fysiikkaan: mikä tuotteessa vuorovaikuttaa kehon kanssa ja miten.
+
+Lisäksi tarvittaisiin kontrolloituja sokkotutkimuksia, joissa on oikea ja samannäköinen vaikutukseton tuote eikä tutkittavilla tai tutkijoilla ole tietoa, kumpi on kumpi, riittävän suuri otos ja muiden tutkimusryhmien toistamat tulokset. ”Anti-5G”-väite on fysikaalisesti väärä: pieni riipus ei voi pysäyttää radioaaltoja, jotka tulevat joka suunnasta koko kehoon, eikä 5G-signaali ionisoi, koska sen fotonien energia on pieni.
+
+Riipus ei siis suojaa 5G:ltä, mutta se tuo ihon lähelle ionisoivaa säteilyä, ja se on todellinen vaikutus, jonka viranomainen havaitsi. Luokittelu: suojaväite on fysikaalisesti väärä, ja todellinen vaikutus on tuotteen oma ionisoiva säteily.
+
 **Vastaus:** $14\,\mu\text{eV}$, kaksi merkitsevää numeroa. Taajuudessa $3{,}5\,\text{GHz}$ on kaksi merkitsevää numeroa, ja laatikko hyväksyy myös arvon $14{,}5\,\mu\text{eV}$. Radioaaltofotonin energia on noin miljoona kertaa pienempi kuin elektronin irrottamiseen tarvittava energia, joten radioaallot eivät ionisoi, vaikka intensiteetti olisi suuri. Gammafotonit ionisoivat, koska niiden energia on yli $10^{5}\,\text{eV}$.
+
 **Järkevyys:** Suuruusluokka: $6 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 4 \cdot 10^{9}\,\tfrac{1}{\text{s}} \approx 2 \cdot 10^{-24}\,\text{J}$, ja jakaminen luvulla $1{,}6 \cdot 10^{-19}$ antaa noin $1{,}5 \cdot 10^{-5}\,\text{eV}$, kuten laskettiin. Radiotaajuuden fotonin energia on miljoonasosia elektronivoltista, ja yksikään ionisaatioon tarvittava energia ($10\,\text{eV}$ tai enemmän) ei lähelläkään tätä.
 
 ## fy8-12-L3-04

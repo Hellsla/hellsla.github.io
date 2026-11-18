@@ -95,7 +95,12 @@ $A = 200\,\text{kBq}$
 
 Similarly, at the time $2.0\,\text{h}$ the activity is $400\,\text{kBq}$, at $6.0\,\text{h}$ it is $100\,\text{kBq}$ and at $8.0\,\text{h}$ it is $50\,\text{kBq}$. The curve of graph C passes through these points and becomes gentler all the time.
 
-In graph A the activity decreases steadily and is zero at the time $4.0\,\text{h}$: it assumes that the rest of the nuclei decay in the second half-life. In graph B the curve passes through the point $(2.0\,\text{h};\ 400\,\text{kBq})$, but it becomes steeper and hits zero: in it the old nuclei would be more likely to decay, although a nucleus has no memory. The curve of graph D is $A = A_0 e^{-t/T_{1/2}}$, in which the decay constant has been taken as $\tfrac{1}{T_{1/2}}$. At the time $2.0\,\text{h}$ it gives $800\,\text{kBq} \cdot e^{-1} \approx 294\,\text{kBq}$ and not half of the initial value. The decay constant is $\lambda = \tfrac{\ln 2}{T_{1/2}}$.
+In graph A the activity decreases steadily and is zero at the time $4.0\,\text{h}$: it assumes that the rest of the nuclei decay in the second half-life.
+
+In graph B the curve passes through the point $(2.0\,\text{h};\ 400\,\text{kBq})$, but it becomes steeper and hits zero: in it the old nuclei would be more likely to decay, although a nucleus has no memory. The curve of graph D is $A = A_0 e^{-t/T_{1/2}}$, in which the decay constant has been taken as $\tfrac{1}{T_{1/2}}$.
+
+At the time $2.0\,\text{h}$ it gives $800\,\text{kBq} \cdot e^{-1} \approx 294\,\text{kBq}$ and not half of the initial value. The decay constant is $\lambda = \tfrac{\ln 2}{T_{1/2}}$.
+
 **Reading the graph:** From each graph the activity was read at the times $2.0\,\text{h}$, $4.0\,\text{h}$ and $6.0\,\text{h}$, and the values were compared with the values of the decay law. In addition, it was checked whether the curve becomes gentler and whether it stays above zero.
 
 ## fy8-9-L2-01
@@ -158,7 +163,9 @@ In graph A the activity decreases steadily and is zero at the time $4.0\,\text{h
 **Answer:** $60\,\text{s}$, two significant figures. Check: the net count has halved by the time $60\,\text{s}$, because at that point it is $88$ and half of the initial value is $90$.
 **Reasonableness:** a) The result $60\,\text{s}$ fits the table: the net count $88$ is close to half of the initial value, $90$.
 
-**Explanation of part b):** The student halved the measured total pulse count $200$. Of this, $20$ pulses are background, which does not decay, so the total count does not halve in the same time as the net count: when the net count is $90$, the total count is still $110$. The measured count reaches the value $100$ only later, at about $70\,\text{s}$, and the result is too large. The background slows the decrease of the total pulse count and moves the halving of the total count to a later time.
+**Explanation of part b):** The student halved the measured total pulse count $200$. Of this, $20$ pulses are background, which does not decay, so the total count does not halve in the same time as the net count: when the net count is $90$, the total count is still $110$.
+
+The measured count reaches the value $100$ only later, at about $70\,\text{s}$, and the result is too large. The background slows the decrease of the total pulse count and moves the halving of the total count to a later time.
 
 ## fy8-9-L2-07
 **Given:** the sum of the background pulse counts $80$ in ten $10\,\text{s}$ intervals, $340$ pulses in one $10\,\text{s}$ interval with the sample, number of intervals $n = 10$

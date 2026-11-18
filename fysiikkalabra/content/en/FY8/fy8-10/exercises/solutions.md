@@ -253,7 +253,9 @@ $$\begin{aligned}
 &\approx 1559\,\text{MeV}
 \end{aligned}$$
 
-The binding energy is about $1560\,\text{MeV}$, so the closest option is about $1600\,\text{MeV}$. The wrong options come from common mistakes: dividing the mass defect by $931.5$ gives about $0.002\,\text{MeV}$, dividing by the number of nucleons $197$ gives the binding energy per nucleon, about $7.9\,\text{MeV}$, and turning the mass of the whole atom into energy gives about $183\,000\,\text{MeV}$.
+The binding energy is about $1560\,\text{MeV}$, so the closest option is about $1600\,\text{MeV}$.
+
+The wrong options come from common mistakes: dividing the mass defect by $931.5$ gives about $0.002\,\text{MeV}$, dividing by the number of nucleons $197$ gives the binding energy per nucleon, about $7.9\,\text{MeV}$, and turning the mass of the whole atom into energy gives about $183\,000\,\text{MeV}$.
 
 Reasonableness: a binding energy per nucleon of $7.9\,\text{MeV}$ is typical of heavy nuclei, for which it is slightly smaller than the iron value of about $8.8\,\text{MeV}$, and the mass defect $1.674\,\text{u}$ is about $0.8\,\%$ of the mass of the atom.
 

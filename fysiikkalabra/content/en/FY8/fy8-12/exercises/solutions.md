@@ -171,7 +171,9 @@ $\tfrac{120\,\text{mm}}{34\,\text{mm}} \approx 3.53$ (shield E, aluminium)
 
 The fractions that get through are, for example, for shield A $\left(\tfrac{1}{2}\right)^{2.50} \approx 0.18$ and for shield D $\left(\tfrac{1}{2}\right)^{4.94} \approx 0.033$. Similarly, for shield B one gets $12\,\%$, for shield E $8.7\,\%$ and for shield C $6.3\,\%$. According to the fraction that gets through, from largest to smallest, the order is A, B, E, C, D.
 
-Lead is not the best shield here, although its half-value thickness is the smallest: a $400\,\text{mm}$ layer of water contains more half-value thicknesses than a $22\,\text{mm}$ lead plate. The thickness alone does not decide either: the concrete and aluminium shields are equally thick, but the half-value thickness of aluminium is smaller, so it lets through a smaller fraction. Reasonableness: the iron shield has only two and a half half-value thicknesses, and $18\,\%$ is between a quarter, $25\,\%$, and an eighth, $12.5\,\%$, as it should be.
+Lead is not the best shield here, although its half-value thickness is the smallest: a $400\,\text{mm}$ layer of water contains more half-value thicknesses than a $22\,\text{mm}$ lead plate. The thickness alone does not decide either: the concrete and aluminium shields are equally thick, but the half-value thickness of aluminium is smaller, so it lets through a smaller fraction.
+
+Reasonableness: the iron shield has only two and a half half-value thicknesses, and $18\,\%$ is between a quarter, $25\,\%$, and an eighth, $12.5\,\%$, as it should be.
 
 ## fy8-12-L2-05
 **Given:** ten pulse counts in $10\,\text{s}$ periods: $52$, $45$, $49$, $57$, $44$, $48$, $51$, $42$, $50$ and $46$; the order of magnitude of the random variation is $\sqrt{N}$
@@ -218,9 +220,27 @@ E &= hf \\
 \end{aligned}$$
 
 Compared with this, the energy needed to remove an electron, $10\,\text{eV}$, is $\dfrac{10\,\text{eV}}{1.448 \cdot 10^{-5}\,\text{eV}} = 6.9 \cdot 10^{5}$ times as great. The energy of a gamma photon, $10^{5}\,\text{eV}$, is $\dfrac{10^{5}\,\text{eV}}{1.448 \cdot 10^{-5}\,\text{eV}} = 6.9 \cdot 10^{9}$ times as great, and at higher gamma energies the ratio is greater still.
-**Model answer c):** The exposure would be measured with a dose-rate meter or a GM tube placed near the product at the same distance as the product has from the skin. The distance has to be chosen deliberately, because the strength of the radiation decreases as the distance grows. First the background is measured in the same place without the product, and it is subtracted from the pulse rate or dose rate measured with the product, which gives the net value. The measuring time has to be long enough for the random variation of the pulses to stay small. The dose is obtained by multiplying the dose rate by the time of wearing: one year round the clock is $8760\,\text{h}$. The type of radiation is identified by placing a sheet of paper, a thin aluminium plate and a lead plate between the product and the meter: paper stops alpha particles, aluminium beta particles, and lead attenuates gamma radiation best. The news item does not say how RIVM measured the products, so this is a general method and not a description of their study.
-**Model answer d):** For the claimed health effects one would first need a mechanism that agrees with physics: what in the product interacts with the body, and how. One would also need controlled blinded studies with a real product and an identical product with no effect, where neither the subjects nor the researchers know which is which, a large enough sample, and results repeated by other research groups. The “anti-5G” claim is physically false: a small pendant cannot stop radio waves that arrive from every direction on the whole body, and a 5G signal does not ionize, because the energy of its photons is small. So the pendant does not protect against 5G, but it brings ionizing radiation close to the skin, and that is a real effect, which the authority found. Classification: the claim of protection is physically false, and the real effect is the ionizing radiation of the product itself.
+
+**Model answer c):** The exposure would be measured with a dose-rate meter or a GM tube placed near the product at the same distance as the product has from the skin. The distance has to be chosen deliberately, because the strength of the radiation decreases as the distance grows.
+
+First the background is measured in the same place without the product, and it is subtracted from the pulse rate or dose rate measured with the product, which gives the net value. The measuring time has to be long enough for the random variation of the pulses to stay small.
+
+The dose is obtained by multiplying the dose rate by the time of wearing: one year round the clock is $8760\,\text{h}$.
+
+The type of radiation is identified by placing a sheet of paper, a thin aluminium plate and a lead plate between the product and the meter: paper stops alpha particles, aluminium beta particles, and lead attenuates gamma radiation best.
+
+The news item does not say how RIVM measured the products, so this is a general method and not a description of their study.
+
+**Model answer d):** For the claimed health effects one would first need a mechanism that agrees with physics: what in the product interacts with the body, and how.
+
+One would also need controlled blinded studies with a real product and an identical product with no effect, where neither the subjects nor the researchers know which is which, a large enough sample, and results repeated by other research groups.
+
+The “anti-5G” claim is physically false: a small pendant cannot stop radio waves that arrive from every direction on the whole body, and a 5G signal does not ionize, because the energy of its photons is small.
+
+So the pendant does not protect against 5G, but it brings ionizing radiation close to the skin, and that is a real effect, which the authority found. Classification: the claim of protection is physically false, and the real effect is the ionizing radiation of the product itself.
+
 **Answer:** $14\,\mu\text{eV}$, two significant figures. The frequency $3.5\,\text{GHz}$ has two significant figures, and the box also accepts $14.5\,\mu\text{eV}$. The energy of a radio-wave photon is about a million times smaller than the energy needed to remove an electron, so radio waves do not ionize however great the intensity. Gamma photons ionize, because their energy is over $10^{5}\,\text{eV}$.
+
 **Reasonableness:** Order of magnitude: $6 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 4 \cdot 10^{9}\,\tfrac{1}{\text{s}} \approx 2 \cdot 10^{-24}\,\text{J}$, and dividing by $1.6 \cdot 10^{-19}$ gives about $1.5 \cdot 10^{-5}\,\text{eV}$, as calculated. The energy of a radio-frequency photon is millionths of an electronvolt, nowhere near the $10\,\text{eV}$ or more that ionization needs.
 
 ## fy8-12-L3-04

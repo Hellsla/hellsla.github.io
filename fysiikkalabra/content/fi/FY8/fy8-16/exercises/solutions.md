@@ -215,7 +215,9 @@ $$\begin{aligned}
 &\phantom{\frac{d_\text{B}}{d_\text{A}}} = \frac{0{,}030035}{0{,}010056} = 2{,}987
 \end{aligned}$$
 
-Galaksin B etäisyys on noin $3{,}0$-kertainen galaksin A etäisyyteen verrattuna, kaksi merkitsevää numeroa kuten siirtymässä $6{,}6\,\text{nm}$. Molemmat punasiirtymät ovat alle $0{,}1$, joten $v = cz$ pätee. Väärät vaihtoehdot: siirtymien vertaaminen nanometreinä antaa $14{,}6 : 6{,}6 \approx 2{,}2$, mitattujen aallonpituuksien vertaaminen $500{,}7 : 662{,}9 \approx 0{,}76$ ja käänteinen riippuvuus $0{,}010056 : 0{,}030035 \approx 0{,}33$. Järkevyys: galaksin B viiva on siirtynyt noin $3\,\%$ ja galaksin A viiva noin $1\,\%$ omasta aallonpituudestaan, joten B loittonee noin kolme kertaa nopeammin ja on siksi noin kolme kertaa kauempana.
+Galaksin B etäisyys on noin $3{,}0$-kertainen galaksin A etäisyyteen verrattuna, kaksi merkitsevää numeroa kuten siirtymässä $6{,}6\,\text{nm}$. Molemmat punasiirtymät ovat alle $0{,}1$, joten $v = cz$ pätee. Väärät vaihtoehdot: siirtymien vertaaminen nanometreinä antaa $14{,}6 : 6{,}6 \approx 2{,}2$, mitattujen aallonpituuksien vertaaminen $500{,}7 : 662{,}9 \approx 0{,}76$ ja käänteinen riippuvuus $0{,}010056 : 0{,}030035 \approx 0{,}33$.
+
+Järkevyys: galaksin B viiva on siirtynyt noin $3\,\%$ ja galaksin A viiva noin $1\,\%$ omasta aallonpituudestaan, joten B loittonee noin kolme kertaa nopeammin ja on siksi noin kolme kertaa kauempana.
 
 ## fy8-16-L3-04
 **Annettu:** esimerkkiaineisto: ratanopeudet $v_\text{hav}$ ja mallin nopeudet $v_\text{näk}$ seitsemällä etäisyydellä $r = 2$–$30\,\text{kpc}$ taulukossa; $r = 10\,\text{kpc}$: $v_\text{hav} = 207\,\text{km/s}$, $v_\text{näk} = 185\,\text{km/s}$; $r = 30\,\text{kpc}$: $v_\text{hav} = 213\,\text{km/s}$, $v_\text{näk} = 113\,\text{km/s}$
@@ -275,4 +277,5 @@ b) $d = \dfrac{v}{H_0} = \dfrac{2{,}998 \cdot 10^{4}\,\text{km/s}}{72{,}0\,\tfra
 c) Arvio on epävarma, koska pisteet ulottuvat vain noin $285\,\text{Mpc}$:iin ja arvio on noin $1{,}5$-kertainen siihen verrattuna. Jatkaminen olettaa verrannollisuuden pätevän myös kuvan ulkopuolella, mitä pisteet eivät osoita.
 
 Kaava $v = c\,z$ on vain pienen punasiirtymän ($z < 0{,}1$) likiarvo. Suurella punasiirtymällä tulosta ei voi pitää galaksin nopeutena: esimerkiksi $z = 3{,}00$ antaisi $v = 3{,}00\,c$, merkki siitä, että likiarvo ei enää päde.
+
 **Järkevyys:** Tarkistus kertomalla: $72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 416{,}4\,\text{Mpc} = 2{,}998 \cdot 10^{4}\,\text{km/s}$, sama kuin $0{,}10\,c$. Kuvan yläreunan nopeus $21\,000\,\text{km/s}$ vastaa $z = 0{,}070$, joten kuvan kaikki pisteet ovat rajan $0{,}10$ alapuolella ja $v = c\,z$ kelpaa niille. Tulos $416\,\text{Mpc}$ on suurempi kuin akselin $300\,\text{Mpc}$, kuten pitää, koska $21\,000\,\text{km/s}$ on pienempi kuin $29\,980\,\text{km/s}$.
