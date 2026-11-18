@@ -458,7 +458,12 @@ $$. The distance is long but possible on packed snow.
 **Find:** the average accelerations $a_1$ ($0\ldots 2\,\text{s}$) and $a_2$ ($6\ldots 10\,\text{s}$)
 **Principle:** Acceleration is the change in velocity divided by the time (chapter *Acceleration and uniformly accelerated motion*). The average acceleration is the slope of the line joining the points of the $(t,v)$ graph.
 **Reading the graph:** The points are far apart, so the velocities are read from them: $0\ldots 2\,\text{s}$: $0$ and $18.6\,\text{m/s}$; $6\ldots 10\,\text{s}$: $40.4\,\text{m/s}$ and $46.4\,\text{m/s}$.
-**Formula:** $a = \dfrac{\Delta v}{\Delta t} = \dfrac{v_2 - v_1}{t_2 - t_1}$
+**Formula:** $$
+\begin{aligned}
+a &= \dfrac{\Delta v}{\Delta t} \\
+&= \dfrac{v_2 - v_1}{t_2 - t_1}
+\end{aligned}
+$$
 **Conversions:** Not needed: the velocities are in $\text{m/s}$ and the times in seconds.
 **Substitution:** $$
 \begin{aligned}
@@ -496,8 +501,16 @@ F_\text{v} &= 75.0\,\text{kg} \\
 &= 623\,\text{N}
 \end{aligned}
 $$
-**Answer:** $F_\text{v} \approx 6.2 \cdot 10^2\,\text{N}$, two significant figures like the acceleration.
-**Reasonableness:** The weight is $mg = 736\,\text{N}$, and $623\,\text{N} : 736\,\text{N} \approx 0.85$. Air resistance is about $85\,\%$ of the weight, which fits the small acceleration $1.5\,\text{m/s}^2$. If air resistance were zero, the acceleration would be $9.81\,\text{m/s}^2$.
+**Answer:** $$
+\begin{aligned}
+F_\text{v} &\approx 6.2 \cdot 10^2\,\text{N}
+\end{aligned}
+$$, two significant figures like the acceleration.
+**Reasonableness:** The weight is $mg = 736\,\text{N}$, and $$
+\begin{aligned}
+623\,\text{N} : 736\,\text{N} &\approx 0.85
+\end{aligned}
+$$. Air resistance is about $85\,\%$ of the weight, which fits the small acceleration $1.5\,\text{m/s}^2$. If air resistance were zero, the acceleration would be $9.81\,\text{m/s}^2$.
 
 ### c)
 **Given:** $F_\text{v} = 623.25\,\text{N}$ at the speed $v = 44.5\,\text{m/s}$ (the point of the graph at $8\,\text{s}$), $mg = 735.75\,\text{N}$, $F_\text{v} = kv^2$
@@ -510,7 +523,12 @@ F_v 735,8 ylös työntö @ala
 a 0
 v alas
 ```
-**Formula:** At $8\,\text{s}$: $F_\text{v} = kv^2$, so $k = \dfrac{F_\text{v}}{v^2}$. At terminal velocity: $kv_\text{t}^2 = mg$, so $v_\text{t} = \sqrt{\dfrac{mg}{k}} = v\sqrt{\dfrac{mg}{F_\text{v}}}$
+**Formula:** At $8\,\text{s}$: $F_\text{v} = kv^2$, so $k = \dfrac{F_\text{v}}{v^2}$. At terminal velocity: $kv_\text{t}^2 = mg$, so $$
+\begin{aligned}
+v_\text{t} &= \sqrt{\dfrac{mg}{k}} \\
+&= v\sqrt{\dfrac{mg}{F_\text{v}}}
+\end{aligned}
+$$
 **Conversions:** Not needed.
 **Substitution:** $$
 \begin{aligned}
@@ -520,10 +538,19 @@ v_\text{t} &= 44.5\,\text{m/s} \cdot \sqrt{\dfrac{735.75\,\text{N}}{623.25\,\tex
 \end{aligned}
 $$
 **Answer:** $v_\text{t} \approx 48\,\text{m/s}$, two significant figures like the velocity read.
-**Reasonableness:** In the graph the speed is already $47.3\,\text{m/s}$ at $12\,\text{s}$ and still grows slowly ($0.9\,\text{m/s}$ in two seconds), so the terminal velocity is a little larger than this. The estimate $48\,\text{m/s} \approx 174\,\text{km/h}$ is of the right size for a skydiver falling belly down.
+**Reasonableness:** In the graph the speed is already $47.3\,\text{m/s}$ at $12\,\text{s}$ and still grows slowly ($0.9\,\text{m/s}$ in two seconds), so the terminal velocity is a little larger than this. The estimate $$
+\begin{aligned}
+48\,\text{m/s} &\approx 174\,\text{km/h}
+\end{aligned}
+$$ is of the right size for a skydiver falling belly down.
 
 ### d)
-**Given:** $m' = 100\,\text{kg}$, $m = 75.0\,\text{kg}$, from parts b and c $k = \dfrac{623.25\,\text{N}}{(44.5\,\text{m/s})^2} = 0.3147\,\text{kg/m}$
+**Given:** $m' = 100\,\text{kg}$, $m = 75.0\,\text{kg}$, from parts b and c $$
+\begin{aligned}
+k &= \dfrac{623.25\,\text{N}}{(44.5\,\text{m/s})^2} \\
+&= 0.3147\,\text{kg/m}
+\end{aligned}
+$$
 **Find:** the terminal velocity $v_\text{t}'$ of the second skydiver and the comparison
 **Principle:** At terminal velocity air resistance equals the weight, $kv_\text{t}^2 = mg$. The position and the equipment are the same, so $k$ is the same. Air resistance depends on the speed and the position, not on the mass, so a heavier skydiver needs a higher speed to make air resistance as large as his weight.
 **Model answer:** For the terminal velocity $v_\text{t} = \sqrt{\dfrac{mg}{k}}$, so $$
@@ -533,13 +560,23 @@ v_\text{t}' &= \sqrt{\dfrac{m'g}{k}} \\
 &= \sqrt{3117\,\text{m}^2/\text{s}^2} \\
 &= 55.8\,\text{m/s}
 \end{aligned}
-$$ The ratio is $\dfrac{v_\text{t}'}{v_\text{t}} = \sqrt{\dfrac{m'}{m}} = \sqrt{\dfrac{100\,\text{kg}}{75.0\,\text{kg}}} = 1.155$. The heavier skydiver's terminal velocity is about $56\,\text{m/s}$, about $15\,\%$ larger although the mass is $33\,\%$ larger, because the terminal velocity grows with the square root of the mass. The heavier skydiver also reaches the terminal velocity more slowly, because his weight is larger and air resistance has to grow larger.
+$$ The ratio is $$
+\begin{aligned}
+\dfrac{v_\text{t}'}{v_\text{t}} &= \sqrt{\dfrac{m'}{m}} \\
+&= \sqrt{\dfrac{100\,\text{kg}}{75.0\,\text{kg}}} \\
+&= 1.155
+\end{aligned}
+$$. The heavier skydiver's terminal velocity is about $56\,\text{m/s}$, about $15\,\%$ larger although the mass is $33\,\%$ larger, because the terminal velocity grows with the square root of the mass. The heavier skydiver also reaches the terminal velocity more slowly, because his weight is larger and air resistance has to grow larger.
 
 ### Yleisiä virheitä
 - The acceleration is read from one point or from the value of the velocity; acceleration is the change in velocity divided by the time, not the velocity.
 - Air resistance is taken as $mg$ or $ma$; it is $m(g - a)$, because the weight and air resistance act together.
 - The last point of the graph, $47.3\,\text{m/s}$, is taken as the terminal velocity, although the speed still grows.
-- In part d it is claimed that the terminal velocity is proportional to the mass ($100 : 75 \cdot 48\,\text{m/s} \approx 64\,\text{m/s}$), although $v_\text{t} \propto \sqrt{m}$.
+- In part d it is claimed that the terminal velocity is proportional to the mass ($$
+\begin{aligned}
+100 : 75 \cdot 48\,\text{m/s} &\approx 64\,\text{m/s}
+\end{aligned}
+$$), although $v_\text{t} \propto \sqrt{m}$.
 
 ### Hyväksytään myös
 - The numbers of parts a and b with slightly different readings (e.g. $v_\text{8\,s} = 44.6\,\text{m/s}$); the result $a_2$ in the range $1.4\ldots 1.6\,\text{m/s}^2$ and $F_\text{v}$ in the range $600\ldots 650\,\text{N}$.
@@ -575,7 +612,12 @@ $$
 **Given:** $a = -1.14\,\text{m/s}^2$ from part a, the lift at rest at $1.0\,\text{s}$ and the acceleration constant in $1.0\ldots 3.0\,\text{s}$
 **Find:** velocity $v$ at the moment $3.0\,\text{s}$
 **Principle:** With a constant acceleration the velocity changes evenly, $v = v_0 + a\,\Delta t$ (chapter *Acceleration and uniformly accelerated motion*).
-**Reading the graph:** The acceleration lasts from $1.0\,\text{s}$ to $3.0\,\text{s}$, so $\Delta t = 3.0\,\text{s} - 1.0\,\text{s} = 2.0\,\text{s}$.
+**Reading the graph:** The acceleration lasts from $1.0\,\text{s}$ to $3.0\,\text{s}$, so $$
+\begin{aligned}
+\Delta t &= 3.0\,\text{s} - 1.0\,\text{s} \\
+&= 2.0\,\text{s}
+\end{aligned}
+$$.
 **Formula:** $v = v_0 + a\,\Delta t$, and $v_0 = 0$
 **Conversions:** Not needed.
 **Substitution:** $$
@@ -585,13 +627,21 @@ v &= 0 + (-1.14\,\text{m/s}^2) \cdot 2.0\,\text{s} \\
 \end{aligned}
 $$
 **Answer:** $v \approx -2.3\,\text{m/s}$, that is $2.3\,\text{m/s}$ downwards, two significant figures like the time $2.0\,\text{s}$.
-**Reasonableness:** The minus sign fits a lift going down. The speed $2.3\,\text{m/s} \approx 8.2\,\text{km/h}$ is a usual cruising speed of a lift, and it stays the same in $3.0\ldots 6.0\,\text{s}$, because the reading is then $736\,\text{N}$.
+**Reasonableness:** The minus sign fits a lift going down. The speed $$
+\begin{aligned}
+2.3\,\text{m/s} &\approx 8.2\,\text{km/h}
+\end{aligned}
+$$ is a usual cruising speed of a lift, and it stays the same in $3.0\ldots 6.0\,\text{s}$, because the reading is then $736\,\text{N}$.
 
 ### c)
 **Given:** $m = 75.0\,\text{kg}$, $N = 800\,\text{N}$ in the interval $6.0\ldots 8.7\,\text{s}$, $v = -2.29\,\text{m/s}$ at $6.0\,\text{s}$, $g = 9.81\,\text{m/s}^2$; upwards positive
 **Find:** acceleration $a$ and whether the lift stops at $8.7\,\text{s}$
 **Principle:** As in part a: $N - mg = ma$. The reading is now larger than the weight, so the net force and the acceleration point up, opposite to the velocity (the lift slows down).
-**Reading the graph:** In the interval $6.0\ldots 8.7\,\text{s}$ the reading is $800\,\text{N}$; the duration is $8.7\,\text{s} - 6.0\,\text{s} = 2.7\,\text{s}$.
+**Reading the graph:** In the interval $6.0\ldots 8.7\,\text{s}$ the reading is $800\,\text{N}$; the duration is $$
+\begin{aligned}
+8.7\,\text{s} - 6.0\,\text{s} &= 2.7\,\text{s}
+\end{aligned}
+$$.
 **Free-body diagram:** The person as a rectangle: the weight $\overline{G}$ down and the support force $\overline{N}$ up, longer than the weight; the acceleration up, the velocity down.
 ```voimakuvio
 pinta 0
@@ -616,13 +666,25 @@ v_\text{end} &= -2.29\,\text{m/s} \\
 \end{aligned}
 $$
 **Answer:** $a \approx 0.86\,\text{m/s}^2$ upwards. The velocity at the end is zero ($0.02\,\text{m/s}$ is a rounding difference), so the lift stops at the moment $8.7\,\text{s}$.
-**Reasonableness:** The deceleration $0.86\,\text{m/s}^2$ is smaller than the starting acceleration $1.1\,\text{m/s}^2$, so the braking lasts longer ($2.7\,\text{s}$ vs. $2.0\,\text{s}$): $1.14 \cdot 2.0 \approx 0.857 \cdot 2.7$.
+**Reasonableness:** The deceleration $0.86\,\text{m/s}^2$ is smaller than the starting acceleration $1.1\,\text{m/s}^2$, so the braking lasts longer ($2.7\,\text{s}$ vs. $2.0\,\text{s}$): $$
+\begin{aligned}
+1.14 \cdot 2.0 &\approx 0.857 \cdot 2.7
+\end{aligned}
+$$.
 
 ### d)
 **Given:** $|v| = 2.29\,\text{m/s}$ in $3.0\ldots 6.0\,\text{s}$; the speed grows from zero at $1.0\,\text{s}$ to $3.0\,\text{s}$ and decreases to zero by $8.7\,\text{s}$
 **Find:** the distance $s$ travelled by the lift in $1.0\ldots 8.7\,\text{s}$
 **Principle:** The area between the $(t,v)$ graph and the time axis is the distance travelled (chapter *Acceleration and uniformly accelerated motion*). The graph of the magnitude of the velocity is a trapezium, because the acceleration is constant in three periods.
-**Reading the graph:** The long parallel side of the trapezium is the whole motion $8.7\,\text{s} - 1.0\,\text{s} = 7.7\,\text{s}$ and the short one the period of constant velocity $6.0\,\text{s} - 3.0\,\text{s} = 3.0\,\text{s}$; the height is $|v| = 2.29\,\text{m/s}$.
+**Reading the graph:** The long parallel side of the trapezium is the whole motion $$
+\begin{aligned}
+8.7\,\text{s} - 1.0\,\text{s} &= 7.7\,\text{s}
+\end{aligned}
+$$ and the short one the period of constant velocity $$
+\begin{aligned}
+6.0\,\text{s} - 3.0\,\text{s} &= 3.0\,\text{s}
+\end{aligned}
+$$; the height is $|v| = 2.29\,\text{m/s}$.
 **Formula:** $s = \tfrac{1}{2}(t_1 + t_2)\,|v|$, where $t_1$ and $t_2$ are the parallel sides of the trapezium
 **Conversions:** Not needed.
 **Substitution:** $$
@@ -633,12 +695,23 @@ s &= \tfrac{1}{2} \cdot (7.7\,\text{s} + 3.0\,\text{s}) \cdot 2.29\,\text{m/s} \
 \end{aligned}
 $$
 **Answer:** $s \approx 12\,\text{m}$ downwards, two significant figures like the velocity.
-**Reasonableness:** Check period by period: $2.29\,\text{m} + 6.87\,\text{m} + 3.09\,\text{m} = 12.25\,\text{m}$ ($\tfrac{1}{2}\cdot 2.29\,\text{m/s} \cdot 2.0\,\text{s}$, $2.29\,\text{m/s} \cdot 3.0\,\text{s}$ and $\tfrac{1}{2}\cdot 2.29\,\text{m/s} \cdot 2.7\,\text{s}$). About $12\,\text{m}$ corresponds to about four storeys, and it fits a ride of $7.7\,\text{s}$.
+**Reasonableness:** Check period by period: $$
+\begin{aligned}
+s &= 2.29\,\text{m} + 6.87\,\text{m} \\
+&\quad + 3.09\,\text{m} \\
+&= 12.25\,\text{m}
+\end{aligned}
+$$ ($\tfrac{1}{2}\cdot 2.29\,\text{m/s} \cdot 2.0\,\text{s}$, $2.29\,\text{m/s} \cdot 3.0\,\text{s}$ and $\tfrac{1}{2}\cdot 2.29\,\text{m/s} \cdot 2.7\,\text{s}$). About $12\,\text{m}$ corresponds to about four storeys, and it fits a ride of $7.7\,\text{s}$.
 
 ### e)
 **Find:** what the reading of the plate measures and why the reading is $736\,\text{N}$ at rest and at constant velocity
 **Principle:** The plate measures the force with which it supports the person; the force of gravity is the Earth's pull $mg$ and depends only on the mass and the place. By Newton's second law the net force determines the acceleration, not the velocity (chapter *Newton's second law*).
-**Model answer:** The reading is the support force $N$. The force of gravity $mg = 75.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 736\,\text{N}$ does not change when the lift moves. At rest and at constant velocity the acceleration is zero, so $N - mg = 0$ and $N = mg = 736\,\text{N}$; the reading does not depend on whether the lift moves but on whether it accelerates. When the lift starts down, the acceleration points down and $N - mg = ma < 0$, so $N < mg$ and the reading drops to $650\,\text{N}$. The person's feeling of being lighter is real, but the force of gravity did not decrease. In everyday language "weight" often means the reading of the plate, and it does decrease.
+**Model answer:** The reading is the support force $N$. The force of gravity $$
+\begin{aligned}
+mg &= 75.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&= 736\,\text{N}
+\end{aligned}
+$$ does not change when the lift moves. At rest and at constant velocity the acceleration is zero, so $N - mg = 0$ and $N = mg = 736\,\text{N}$; the reading does not depend on whether the lift moves but on whether it accelerates. When the lift starts down, the acceleration points down and $N - mg = ma < 0$, so $N < mg$ and the reading drops to $650\,\text{N}$. The person's feeling of being lighter is real, but the force of gravity did not decrease. In everyday language "weight" often means the reading of the plate, and it does decrease.
 
 ### Yleisiä virheitä
 - The reading $650\,\text{N}$ is taken as the force of gravity, in which case the equation of part a gives zero.

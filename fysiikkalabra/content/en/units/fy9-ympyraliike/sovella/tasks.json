@@ -1003,7 +1003,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$r = \\dfrac{(15\\,\\text{m/s})^2}{3.0\\,\\text{m/s}^2} = 75\\,\\text{m}$"
+              "detail": "$$\n\\begin{aligned}\nr &= \\dfrac{(15\\,\\text{m/s})^2}{3.0\\,\\text{m/s}^2} \\\\\n&= 75\\,\\text{m}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -1036,7 +1036,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$F = 1200\\,\\text{kg} \\cdot 3.0\\,\\text{m/s}^2 = 3600\\,\\text{N} \\approx 3.6\\,\\text{kN}$, two significant figures"
+              "detail": "$$\n\\begin{aligned}\nF &= 1200\\,\\text{kg} \\cdot 3.0\\,\\text{m/s}^2 \\\\\n&= 3600\\,\\text{N} \\\\\n&\\approx 3.6\\,\\text{kN}\n\\end{aligned}\n$$, two significant figures"
             }
           ]
         },
@@ -1052,7 +1052,7 @@
           },
           "criteria": [
             {
-              "text": "Justifies: the vertical acceleration of the car is zero, so $N = mg$, and static friction is at most $F_\\text{max} = \\mu_\\text{s} N = \\mu_\\text{s} mg$. At the limit the friction is as large as it can be.",
+              "text": "Justifies: the vertical acceleration of the car is zero, so $N = mg$, and static friction is at most $$\n\\begin{aligned}\nF_\\text{max} &= \\mu_\\text{s} N \\\\\n&= \\mu_\\text{s} mg\n\\end{aligned}\n$$. At the limit the friction is as large as it can be.",
               "tag": "concept",
               "points": 1
             },
@@ -1064,7 +1064,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$v_\\text{max} = \\sqrt{0.50 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 75\\,\\text{m}} \\approx 19.2\\,\\text{m/s}$"
+              "detail": "$$\n\\begin{aligned}\nv_\\text{max} &= \\sqrt{0.50 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 75\\,\\text{m}} \\\\\n&\\approx 19.2\\,\\text{m/s}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -1085,12 +1085,12 @@
           "text": "The car is loaded with passengers and luggage, and its mass is $1500\\,\\text{kg}$. How does the load affect the greatest speed in the bend on the wet road? Does the graph change? Justify by calculating.",
           "criteria": [
             {
-              "text": "Justifies that the mass cancels from the equation of motion $\\mu_\\text{s} mg = \\dfrac{mv^2}{r}$, so the greatest speed $\\sqrt{\\mu_\\text{s} g r} \\approx 19\\,\\text{m/s}$ does not change.",
+              "text": "Justifies that the mass cancels from the equation of motion $\\mu_\\text{s} mg = \\dfrac{mv^2}{r}$, so the greatest speed $$\n\\begin{aligned}\n\\sqrt{\\mu_\\text{s} g r} &\\approx 19\\,\\text{m/s}\n\\end{aligned}\n$$ does not change.",
               "tag": "concept",
               "points": 1
             },
             {
-              "text": "Calculates the friction forces: the friction needed at $15\\,\\text{m/s}$ is $1500\\,\\text{kg} \\cdot 3.0\\,\\text{m/s}^2 = 4500\\,\\text{N}$ and the greatest possible is $0.50 \\cdot 1500\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 7360\\,\\text{N}$.",
+              "text": "Calculates the friction forces: the friction needed at $15\\,\\text{m/s}$ is $$\n\\begin{aligned}\n1500\\,\\text{kg} \\cdot 3.0\\,\\text{m/s}^2 &= 4500\\,\\text{N}\n\\end{aligned}\n$$ and the greatest possible is $$\n\\begin{aligned}\n0.50 \\cdot 1500\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 &\\approx 7360\\,\\text{N}\n\\end{aligned}\n$$.",
               "tag": "math",
               "points": 1
             },
@@ -1157,7 +1157,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$T = \\dfrac{(18\\,\\text{kg} + 1.5\\,\\text{kg}) \\cdot 9.81\\,\\text{m/s}^2}{\\sin 30.0^\\circ} \\approx 383\\,\\text{N}$"
+              "detail": "$$\n\\begin{aligned}\nT &= \\dfrac{(18\\,\\text{kg} + 1.5\\,\\text{kg}) \\cdot 9.81\\,\\text{m/s}^2}{\\sin 30.0^\\circ} \\\\\n&\\approx 383\\,\\text{N}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -1188,7 +1188,7 @@
               "detail": "$H \\approx 331\\,\\text{N}$ poispäin seinästä ja $V \\approx 14.7\\,\\text{N}$ ylöspäin."
             },
             {
-              "text": "Calculates the magnitude from the components: $F_\\text{s} = \\sqrt{H^2 + V^2} \\approx 332\\,\\text{N}$.",
+              "text": "Calculates the magnitude from the components: $$\n\\begin{aligned}\nF_\\text{s} &= \\sqrt{H^2 + V^2} \\\\\n&\\approx 332\\,\\text{N}\n\\end{aligned}\n$$.",
               "tag": "math",
               "points": 1
             },
@@ -1200,7 +1200,7 @@
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "A check with the moments about the end with the sign: $V L = m_\\text{t} g\\,\\tfrac{L}{2}$, so $V = \\tfrac12 \\cdot 3.0\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 14.7\\,\\text{N}$."
+              "detail": "A check with the moments about the end with the sign: $V L = m_\\text{t} g\\,\\tfrac{L}{2}$, so $$\n\\begin{aligned}\nV &= \\tfrac12 \\cdot 3.0\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\\n&\\approx 14.7\\,\\text{N}\n\\end{aligned}\n$$."
             }
           ]
         },
@@ -1218,12 +1218,12 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "From the moment condition $m_\\text{s} = \\dfrac{T_\\text{max}\\sin\\theta}{g} - \\tfrac12 m_\\text{t}$."
+              "detail": "From the moment condition $$\n\\begin{aligned}\nm_\\text{s} &= \\dfrac{T_\\text{max}\\sin\\theta}{g} - \\tfrac12 m_\\text{t}\n\\end{aligned}\n$$."
             },
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$m_\\text{s} = \\dfrac{600\\,\\text{N} \\cdot 0.500}{9.81\\,\\text{m/s}^2} - 1.5\\,\\text{kg} \\approx 29.1\\,\\text{kg}$"
+              "detail": "$$\n\\begin{aligned}\nm_\\text{s} &= \\dfrac{600\\,\\text{N} \\cdot 0.500}{9.81\\,\\text{m/s}^2} - 1.5\\,\\text{kg} \\\\\n&\\approx 29.1\\,\\text{kg}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -1244,7 +1244,7 @@
               "points": 1
             },
             {
-              "text": "Calculates $T = \\dfrac{191.3\\,\\text{N}}{\\sin 45^\\circ} \\approx 270\\,\\text{N}$, about $29\\,\\%$ smaller than $380\\,\\text{N}$.",
+              "text": "Calculates $$\n\\begin{aligned}\nT &= \\dfrac{191.3\\,\\text{N}}{\\sin 45^\\circ} \\\\\n&\\approx 270\\,\\text{N}\n\\end{aligned}\n$$, about $29\\,\\%$ smaller than $380\\,\\text{N}$.",
               "tag": "math",
               "points": 1
             },

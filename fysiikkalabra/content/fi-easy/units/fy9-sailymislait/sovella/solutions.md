@@ -504,12 +504,39 @@ $$
 **Periaate:** Käytetään energiaperiaatetta (luku *Mekaanisen energian säilyminen ja energiaperiaate*). Liukukitkavoima on $F = \mu N$. Tukivoima rinteellä on $N = mg\cos\alpha$. Siksi kitkavoima on suoraan verrannollinen massaan.
 **Kaava:** $$
 \begin{aligned}
-mgh - \mu mg\cos\alpha \cdot s &= \tfrac12 mv^2 \\
+mgh - Fs &= \tfrac12 mv^2 \\
+F &= \mu mg\cos\alpha \\
 v &= \sqrt{2g\,(h - \mu\cos\alpha \cdot s)}
 \end{aligned}
 $$
 **Muunnokset:** Ei tarvita.
-**Sijoitus:** Massa supistuu, joten nopeus ei riipu massasta. Tarkistus luvuilla: potentiaalienergia on $3{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 2{,}04\,\text{m} = 60\,\text{J}$. Kitkavoima on $\dfrac{3{,}0}{2{,}0} \cdot 2{,}5\,\text{N} = 3{,}75\,\text{N}$, joten kitkan työ on $-3{,}75\,\text{N} \cdot 6{,}0\,\text{m} = -22{,}5\,\text{J}$. Liike-energia alapäässä on $60\,\text{J} - 22{,}5\,\text{J} = 37{,}5\,\text{J}$ ja $$
+**Sijoitus:** Massa supistuu, joten nopeus ei riipu massasta. Tarkistus luvuilla järjestyksessä: potentiaalienergia, kitkavoima, kitkan työ, liike-energia alapäässä ja nopeus.
+$$
+\begin{aligned}
+E_\text{p}' &= 3{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+&\cdot 2{,}04\,\text{m} \\
+&= 60\,\text{J}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+F' &= \dfrac{3{,}0}{2{,}0} \cdot 2{,}5\,\text{N} \\
+&= 3{,}75\,\text{N}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+W' &= -3{,}75\,\text{N} \cdot 6{,}0\,\text{m} \\
+&= -22{,}5\,\text{J}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+E_\text{k}' &= 60\,\text{J} - 22{,}5\,\text{J} \\
+&= 37{,}5\,\text{J}
+\end{aligned}
+$$
+$$
 \begin{aligned}
 v &= \sqrt{\dfrac{2 \cdot 37{,}5\,\text{J}}{3{,}0\,\text{kg}}} \\
 &= 5{,}0\,\text{m/s}
@@ -579,7 +606,13 @@ h &= \dfrac{(12{,}56\,\text{m/s})^2}{2 \cdot 9{,}81\,\text{m/s}^2} \\
 \end{aligned}
 $$
 **Vastaus:** $E_\text{k} \approx 34\,\text{J}$ ja $h \approx 8{,}0\,\text{m}$, kaksi merkitsevää numeroa.
-**Järkevyys:** Tarkistus potentiaalienergialla: $mgh = 0{,}43\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 8{,}04\,\text{m} \approx 33{,}9\,\text{J}$, sama kuin liike-energia. Pallon massa ei vaikuta korkeuteen, vain nopeus.
+**Järkevyys:** Tarkistus potentiaalienergialla: $$
+\begin{aligned}
+E_\text{p} &= 0{,}43\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+&\cdot 8{,}04\,\text{m} \\
+&\approx 33{,}9\,\text{J}
+\end{aligned}
+$$, sama kuin liike-energia. Pallon massa ei vaikuta korkeuteen, vain nopeus.
 
 ### d)
 **Annettu:** $m = 0{,}43\,\text{kg}$, $E_\text{k0} = 33{,}9\,\text{J}$ lähdössä, mitattu korkeus $h_\text{mitattu} = 6{,}5\,\text{m}$, nopeus $0$ korkeimmassa kohdassa
@@ -589,7 +622,8 @@ $$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $$
 \begin{aligned}
-mgh_\text{mitattu} &= 0{,}43\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 6{,}5\,\text{m} \\
+E_\text{p} &= 0{,}43\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+&\cdot 6{,}5\,\text{m} \\
 &= 27{,}4\,\text{J}
 \end{aligned}
 $$ $$

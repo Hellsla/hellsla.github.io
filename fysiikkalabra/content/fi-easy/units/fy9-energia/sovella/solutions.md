@@ -622,4 +622,10 @@ $$
 
 ### Hyväksytään myös
 - c-kohdassa vastaus $73{,}6\,\%$ tai $0{,}74$, ja d-kohdassa $132\,\text{W}$.
-- d-kohdassa teho voidaan laskea myös hyötysuhteesta: $P_\text{häviö} = (1 - \eta)P = 0{,}26 \cdot 0{,}50\,\text{kW} \approx 0{,}13\,\text{kW}$.
+- d-kohdassa teho voidaan laskea myös hyötysuhteesta: $$
+\begin{aligned}
+P_\text{häviö} &= (1 - \eta)P \\
+&= 0{,}26 \cdot 0{,}50\,\text{kW} \\
+&\approx 0{,}13\,\text{kW}
+\end{aligned}
+$$.

@@ -458,7 +458,12 @@ $$. Matka on tamppautuneella lumella pitkä mutta mahdollinen.
 **Kysytty:** keskikiihtyvyydet $a_1$ ($0\ldots 2\,\text{s}$) ja $a_2$ ($6\ldots 10\,\text{s}$)
 **Periaate:** Kiihtyvyys on nopeuden muutos jaettuna ajalla (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*). Keskikiihtyvyys on $(t,v)$-kuvaajan pisteitä yhdistävän suoran kulmakerroin.
 **Kuvaajan lukeminen:** Pisteet ovat kaukana toisistaan, joten niistä luetaan nopeudet: $0\ldots 2\,\text{s}$: $0$ ja $18{,}6\,\text{m/s}$; $6\ldots 10\,\text{s}$: $40{,}4\,\text{m/s}$ ja $46{,}4\,\text{m/s}$.
-**Kaava:** $a = \dfrac{\Delta v}{\Delta t} = \dfrac{v_2 - v_1}{t_2 - t_1}$
+**Kaava:** $$
+\begin{aligned}
+a &= \dfrac{\Delta v}{\Delta t} \\
+&= \dfrac{v_2 - v_1}{t_2 - t_1}
+\end{aligned}
+$$
 **Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja ajat sekunteina.
 **Sijoitus:** $$
 \begin{aligned}
@@ -496,8 +501,16 @@ F_\text{v} &= 75{,}0\,\text{kg} \\
 &= 623\,\text{N}
 \end{aligned}
 $$
-**Vastaus:** $F_\text{v} \approx 6{,}2 \cdot 10^2\,\text{N}$, kaksi merkitsevää numeroa kuten kiihtyvyydessä.
-**Järkevyys:** Paino on $mg = 736\,\text{N}$, ja $623\,\text{N} : 736\,\text{N} \approx 0{,}85$. Ilmanvastus on siis noin $85\,\%$ painosta, mikä sopii pieneen kiihtyvyyteen $1{,}5\,\text{m/s}^2$. Jos ilmanvastus olisi nolla, kiihtyvyys olisi $9{,}81\,\text{m/s}^2$.
+**Vastaus:** $$
+\begin{aligned}
+F_\text{v} &\approx 6{,}2 \cdot 10^2\,\text{N}
+\end{aligned}
+$$, kaksi merkitsevää numeroa kuten kiihtyvyydessä.
+**Järkevyys:** Paino on $mg = 736\,\text{N}$, ja $$
+\begin{aligned}
+623\,\text{N} : 736\,\text{N} &\approx 0{,}85
+\end{aligned}
+$$. Ilmanvastus on siis noin $85\,\%$ painosta, mikä sopii pieneen kiihtyvyyteen $1{,}5\,\text{m/s}^2$. Jos ilmanvastus olisi nolla, kiihtyvyys olisi $9{,}81\,\text{m/s}^2$.
 
 ### c)
 **Annettu:** $F_\text{v} = 623{,}25\,\text{N}$ nopeudella $v = 44{,}5\,\text{m/s}$ (kuvaajan piste hetkellä $8\,\text{s}$), $mg = 735{,}75\,\text{N}$, $F_\text{v} = kv^2$
@@ -510,7 +523,12 @@ F_v 735,8 ylös työntö @ala
 a 0
 v alas
 ```
-**Kaava:** Hetkellä $8\,\text{s}$: $F_\text{v} = kv^2$, joten $k = \dfrac{F_\text{v}}{v^2}$. Rajanopeudella: $kv_\text{r}^2 = mg$, joten $v_\text{r} = \sqrt{\dfrac{mg}{k}} = v\sqrt{\dfrac{mg}{F_\text{v}}}$
+**Kaava:** Hetkellä $8\,\text{s}$: $F_\text{v} = kv^2$, joten $k = \dfrac{F_\text{v}}{v^2}$. Rajanopeudella: $kv_\text{r}^2 = mg$, joten $$
+\begin{aligned}
+v_\text{r} &= \sqrt{\dfrac{mg}{k}} \\
+&= v\sqrt{\dfrac{mg}{F_\text{v}}}
+\end{aligned}
+$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $$
 \begin{aligned}
@@ -520,10 +538,19 @@ v_\text{r} &= 44{,}5\,\text{m/s} \cdot \sqrt{\dfrac{735{,}75\,\text{N}}{623{,}25
 \end{aligned}
 $$
 **Vastaus:** $v_\text{r} \approx 48\,\text{m/s}$, kaksi merkitsevää numeroa kuten luetussa nopeudessa.
-**Järkevyys:** Kuvaajassa nopeus on hetkellä $12\,\text{s}$ jo $47{,}3\,\text{m/s}$ ja kasvaa yhä hitaasti ($0{,}9\,\text{m/s}$ kahdessa sekunnissa), joten rajanopeus on hieman tätä suurempi. Arvio $48\,\text{m/s} \approx 174\,\text{km/h}$ on vatsa alaspäin putoavalle hyppääjälle oikean suuruinen.
+**Järkevyys:** Kuvaajassa nopeus on hetkellä $12\,\text{s}$ jo $47{,}3\,\text{m/s}$ ja kasvaa yhä hitaasti ($0{,}9\,\text{m/s}$ kahdessa sekunnissa), joten rajanopeus on hieman tätä suurempi. Arvio $$
+\begin{aligned}
+48\,\text{m/s} &\approx 174\,\text{km/h}
+\end{aligned}
+$$ on vatsa alaspäin putoavalle hyppääjälle oikean suuruinen.
 
 ### d)
-**Annettu:** $m' = 100\,\text{kg}$, $m = 75{,}0\,\text{kg}$, b- ja c-kohdan arvoista $k = \dfrac{623{,}25\,\text{N}}{(44{,}5\,\text{m/s})^2} = 0{,}3147\,\text{kg/m}$
+**Annettu:** $m' = 100\,\text{kg}$, $m = 75{,}0\,\text{kg}$, b- ja c-kohdan arvoista $$
+\begin{aligned}
+k &= \dfrac{623{,}25\,\text{N}}{(44{,}5\,\text{m/s})^2} \\
+&= 0{,}3147\,\text{kg/m}
+\end{aligned}
+$$
 **Kysytty:** toisen hyppääjän rajanopeus $v_\text{r}'$ ja vertailu
 **Periaate:** Rajanopeudella ilmanvastus on yhtä suuri kuin paino, $kv_\text{r}^2 = mg$. Asento ja varusteet ovat samat, joten $k$ on sama. Ilmanvastus riippuu nopeudesta ja asennosta, ei massasta, joten raskaampi hyppääjä tarvitsee suuremman nopeuden saadakseen ilmanvastuksen yhtä suureksi kuin painonsa.
 **Mallivastaus:** Rajanopeudelle pätee $v_\text{r} = \sqrt{\dfrac{mg}{k}}$, joten $$
@@ -533,13 +560,23 @@ v_\text{r}' &= \sqrt{\dfrac{m'g}{k}} \\
 &= \sqrt{3117\,\text{m}^2/\text{s}^2} \\
 &= 55{,}8\,\text{m/s}
 \end{aligned}
-$$ Suhde on $\dfrac{v_\text{r}'}{v_\text{r}} = \sqrt{\dfrac{m'}{m}} = \sqrt{\dfrac{100\,\text{kg}}{75{,}0\,\text{kg}}} = 1{,}155$. Raskaamman hyppääjän rajanopeus on noin $56\,\text{m/s}$ eli noin $15\,\%$ suurempi, vaikka massa on $33\,\%$ suurempi, koska rajanopeus kasvaa massan neliöjuuren mukana. Raskaampi saavuttaa rajanopeuden myös hitaammin, koska hänen painonsa on suurempi ja ilmanvastuksen on kasvettava suuremmaksi.
+$$ Suhde on $$
+\begin{aligned}
+\dfrac{v_\text{r}'}{v_\text{r}} &= \sqrt{\dfrac{m'}{m}} \\
+&= \sqrt{\dfrac{100\,\text{kg}}{75{,}0\,\text{kg}}} \\
+&= 1{,}155
+\end{aligned}
+$$. Raskaamman hyppääjän rajanopeus on noin $56\,\text{m/s}$ eli noin $15\,\%$ suurempi, vaikka massa on $33\,\%$ suurempi, koska rajanopeus kasvaa massan neliöjuuren mukana. Raskaampi saavuttaa rajanopeuden myös hitaammin, koska hänen painonsa on suurempi ja ilmanvastuksen on kasvettava suuremmaksi.
 
 ### Yleisiä virheitä
 - Kiihtyvyys luetaan yhdestä pisteestä tai nopeuden arvosta; kiihtyvyys on nopeuden muutos jaettuna ajalla, ei nopeus.
 - Ilmanvastukseksi otetaan $mg$ tai $ma$; ilmanvastus on $m(g - a)$, koska paino ja ilmanvastus vaikuttavat yhdessä.
 - Rajanopeudeksi otetaan kuvaajan viimeinen piste $47{,}3\,\text{m/s}$, vaikka nopeus kasvaa vielä.
-- d-kohdassa väitetään, että rajanopeus on verrannollinen massaan ($100 : 75 \cdot 48\,\text{m/s} \approx 64\,\text{m/s}$), vaikka $v_\text{r} \propto \sqrt{m}$.
+- d-kohdassa väitetään, että rajanopeus on verrannollinen massaan ($$
+\begin{aligned}
+100 : 75 \cdot 48\,\text{m/s} &\approx 64\,\text{m/s}
+\end{aligned}
+$$), vaikka $v_\text{r} \propto \sqrt{m}$.
 
 ### Hyväksytään myös
 - a- ja b-kohdan luvut luetuilla arvoilla, jotka poikkeavat vähän (esim. $v_\text{8\,s} = 44{,}6\,\text{m/s}$); tulos $a_2$ välillä $1{,}4\ldots 1{,}6\,\text{m/s}^2$ ja $F_\text{v}$ välillä $600\ldots 650\,\text{N}$.
@@ -575,7 +612,12 @@ $$
 **Annettu:** $a = -1{,}14\,\text{m/s}^2$ a-kohdasta, hissi levossa hetkellä $1{,}0\,\text{s}$ ja kiihtyvyys vakio aikavälillä $1{,}0\ldots 3{,}0\,\text{s}$
 **Kysytty:** nopeus $v$ hetkellä $3{,}0\,\text{s}$
 **Periaate:** Vakiokiihtyvyydellä nopeus muuttuu tasaisesti, $v = v_0 + a\,\Delta t$ (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*).
-**Kuvaajan lukeminen:** Kiihtyvyys kestää hetkestä $1{,}0\,\text{s}$ hetkeen $3{,}0\,\text{s}$, joten $\Delta t = 3{,}0\,\text{s} - 1{,}0\,\text{s} = 2{,}0\,\text{s}$.
+**Kuvaajan lukeminen:** Kiihtyvyys kestää hetkestä $1{,}0\,\text{s}$ hetkeen $3{,}0\,\text{s}$, joten $$
+\begin{aligned}
+\Delta t &= 3{,}0\,\text{s} - 1{,}0\,\text{s} \\
+&= 2{,}0\,\text{s}
+\end{aligned}
+$$.
 **Kaava:** $v = v_0 + a\,\Delta t$, ja $v_0 = 0$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $$
@@ -585,13 +627,21 @@ v &= 0 + (-1{,}14\,\text{m/s}^2) \cdot 2{,}0\,\text{s} \\
 \end{aligned}
 $$
 **Vastaus:** $v \approx -2{,}3\,\text{m/s}$, eli $2{,}3\,\text{m/s}$ alaspäin, kaksi merkitsevää numeroa kuten ajassa $2{,}0\,\text{s}$.
-**Järkevyys:** Miinusmerkki sopii alaspäin kulkevaan hissiin. Nopeus $2{,}3\,\text{m/s} \approx 8{,}2\,\text{km/h}$ on tavallinen hissin matkanopeus, ja se pysyy samana välillä $3{,}0\ldots 6{,}0\,\text{s}$, koska lukema on silloin $736\,\text{N}$.
+**Järkevyys:** Miinusmerkki sopii alaspäin kulkevaan hissiin. Nopeus $$
+\begin{aligned}
+2{,}3\,\text{m/s} &\approx 8{,}2\,\text{km/h}
+\end{aligned}
+$$ on tavallinen hissin matkanopeus, ja se pysyy samana välillä $3{,}0\ldots 6{,}0\,\text{s}$, koska lukema on silloin $736\,\text{N}$.
 
 ### c)
 **Annettu:** $m = 75{,}0\,\text{kg}$, $N = 800\,\text{N}$ aikavälillä $6{,}0\ldots 8{,}7\,\text{s}$, $v = -2{,}29\,\text{m/s}$ hetkellä $6{,}0\,\text{s}$, $g = 9{,}81\,\text{m/s}^2$; ylös positiivinen
 **Kysytty:** kiihtyvyys $a$ ja pysähtyykö hissi hetkellä $8{,}7\,\text{s}$
 **Periaate:** Samoin kuin a-kohdassa: $N - mg = ma$. Lukema on nyt suurempi kuin paino, joten kokonaisvoima ja kiihtyvyys osoittavat ylös, vastakkaiseen suuntaan kuin nopeus (hissi hidastuu).
-**Kuvaajan lukeminen:** Aikavälillä $6{,}0\ldots 8{,}7\,\text{s}$ lukema on $800\,\text{N}$; kesto on $8{,}7\,\text{s} - 6{,}0\,\text{s} = 2{,}7\,\text{s}$.
+**Kuvaajan lukeminen:** Aikavälillä $6{,}0\ldots 8{,}7\,\text{s}$ lukema on $800\,\text{N}$; kesto on $$
+\begin{aligned}
+8{,}7\,\text{s} - 6{,}0\,\text{s} &= 2{,}7\,\text{s}
+\end{aligned}
+$$.
 **Voimakuvio:** Henkilö suorakulmiona: paino $\overline{G}$ alas ja tukivoima $\overline{N}$ ylös, painoa pidempi; kiihtyvyys ylös, nopeus alas.
 ```voimakuvio
 pinta 0
@@ -616,13 +666,25 @@ v_\text{loppu} &= -2{,}29\,\text{m/s} \\
 \end{aligned}
 $$
 **Vastaus:** $a \approx 0{,}86\,\text{m/s}^2$ ylöspäin. Nopeus on lopussa nolla ($0{,}02\,\text{m/s}$ on pyöristysero), joten hissi pysähtyy hetkellä $8{,}7\,\text{s}$.
-**Järkevyys:** Hidastuvuus $0{,}86\,\text{m/s}^2$ on pienempi kuin lähtökiihtyvyys $1{,}1\,\text{m/s}^2$, ja jarrutus kestää siksi pidempään ($2{,}7\,\text{s}$ vs. $2{,}0\,\text{s}$): $1{,}14 \cdot 2{,}0 \approx 0{,}857 \cdot 2{,}7$.
+**Järkevyys:** Hidastuvuus $0{,}86\,\text{m/s}^2$ on pienempi kuin lähtökiihtyvyys $1{,}1\,\text{m/s}^2$, ja jarrutus kestää siksi pidempään ($2{,}7\,\text{s}$ vs. $2{,}0\,\text{s}$): $$
+\begin{aligned}
+1{,}14 \cdot 2{,}0 &\approx 0{,}857 \cdot 2{,}7
+\end{aligned}
+$$.
 
 ### d)
 **Annettu:** $|v| = 2{,}29\,\text{m/s}$ välillä $3{,}0\ldots 6{,}0\,\text{s}$; nopeus kasvaa nollasta hetkestä $1{,}0\,\text{s}$ hetkeen $3{,}0\,\text{s}$ ja pienenee nollaan hetkeen $8{,}7\,\text{s}$
 **Kysytty:** hissin kulkema matka $s$ välillä $1{,}0\ldots 8{,}7\,\text{s}$
 **Periaate:** $(t,v)$-kuvaajan ja aika-akselin väliin jäävä pinta-ala on kuljettu matka (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*). Nopeuden suuruuden kuvaaja on puolisuunnikas, koska kiihtyvyys on kolmella jaksolla vakio.
-**Kuvaajan lukeminen:** Puolisuunnikkaan pitkä kanta on koko liike $8{,}7\,\text{s} - 1{,}0\,\text{s} = 7{,}7\,\text{s}$ ja lyhyt kanta tasaisen nopeuden jakso $6{,}0\,\text{s} - 3{,}0\,\text{s} = 3{,}0\,\text{s}$; korkeus on $|v| = 2{,}29\,\text{m/s}$.
+**Kuvaajan lukeminen:** Puolisuunnikkaan pitkä kanta on koko liike $$
+\begin{aligned}
+8{,}7\,\text{s} - 1{,}0\,\text{s} &= 7{,}7\,\text{s}
+\end{aligned}
+$$ ja lyhyt kanta tasaisen nopeuden jakso $$
+\begin{aligned}
+6{,}0\,\text{s} - 3{,}0\,\text{s} &= 3{,}0\,\text{s}
+\end{aligned}
+$$; korkeus on $|v| = 2{,}29\,\text{m/s}$.
 **Kaava:** $s = \tfrac{1}{2}(t_1 + t_2)\,|v|$, jossa $t_1$ ja $t_2$ ovat puolisuunnikkaan yhdensuuntaiset sivut
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $$
@@ -633,12 +695,23 @@ s &= \tfrac{1}{2} \cdot (7{,}7\,\text{s} + 3{,}0\,\text{s}) \cdot 2{,}29\,\text{
 \end{aligned}
 $$
 **Vastaus:** $s \approx 12\,\text{m}$ alaspäin, kaksi merkitsevää numeroa kuten nopeudessa.
-**Järkevyys:** Tarkistus jaksoittain: $2{,}29\,\text{m} + 6{,}87\,\text{m} + 3{,}09\,\text{m} = 12{,}25\,\text{m}$ ($\tfrac{1}{2}\cdot 2{,}29\,\text{m/s} \cdot 2{,}0\,\text{s}$, $2{,}29\,\text{m/s} \cdot 3{,}0\,\text{s}$ ja $\tfrac{1}{2}\cdot 2{,}29\,\text{m/s} \cdot 2{,}7\,\text{s}$). Noin $12\,\text{m}$ vastaa noin neljää kerrosta, ja se sopii $7{,}7\,\text{s}$ kestävälle ajolle.
+**Järkevyys:** Tarkistus jaksoittain: $$
+\begin{aligned}
+s &= 2{,}29\,\text{m} + 6{,}87\,\text{m} \\
+&\quad + 3{,}09\,\text{m} \\
+&= 12{,}25\,\text{m}
+\end{aligned}
+$$ ($\tfrac{1}{2}\cdot 2{,}29\,\text{m/s} \cdot 2{,}0\,\text{s}$, $2{,}29\,\text{m/s} \cdot 3{,}0\,\text{s}$ ja $\tfrac{1}{2}\cdot 2{,}29\,\text{m/s} \cdot 2{,}7\,\text{s}$). Noin $12\,\text{m}$ vastaa noin neljää kerrosta, ja se sopii $7{,}7\,\text{s}$ kestävälle ajolle.
 
 ### e)
 **Kysytty:** mitä levyn lukema mittaa ja miksi lukema on $736\,\text{N}$ levossa ja tasaisella nopeudella
 **Periaate:** Levy mittaa voimaa, jolla se tukee henkilöä; painovoima on Maan vetovoima $mg$ ja riippuu vain massasta ja paikasta. Newtonin toisen lain mukaan kokonaisvoima määrää kiihtyvyyden, ei nopeutta (luku *Newtonin toinen laki*).
-**Mallivastaus:** Lukema on tukivoima $N$. Painovoima $mg = 75{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 736\,\text{N}$ ei muutu, kun hissi liikkuu. Levossa ja tasaisella nopeudella kiihtyvyys on nolla, joten $N - mg = 0$ ja $N = mg = 736\,\text{N}$; lukema ei riipu siitä, liikkuuko hissi, vaan siitä, kiihtyykö se. Kun hissi lähtee alas, kiihtyvyys osoittaa alas ja $N - mg = ma < 0$, joten $N < mg$ ja lukema pienenee arvoon $650\,\text{N}$. Henkilön tunne siitä, että hän on kevyempi, on todellinen, mutta painovoima ei pienentynyt. Arkikielessä ”paino” tarkoittaa usein levyn lukemaa, ja se pienenee.
+**Mallivastaus:** Lukema on tukivoima $N$. Painovoima $$
+\begin{aligned}
+mg &= 75{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+&= 736\,\text{N}
+\end{aligned}
+$$ ei muutu, kun hissi liikkuu. Levossa ja tasaisella nopeudella kiihtyvyys on nolla, joten $N - mg = 0$ ja $N = mg = 736\,\text{N}$; lukema ei riipu siitä, liikkuuko hissi, vaan siitä, kiihtyykö se. Kun hissi lähtee alas, kiihtyvyys osoittaa alas ja $N - mg = ma < 0$, joten $N < mg$ ja lukema pienenee arvoon $650\,\text{N}$. Henkilön tunne siitä, että hän on kevyempi, on todellinen, mutta painovoima ei pienentynyt. Arkikielessä ”paino” tarkoittaa usein levyn lukemaa, ja se pienenee.
 
 ### Yleisiä virheitä
 - Painovoimaksi otetaan levyn lukema $650\,\text{N}$, jolloin $a$-kohdan yhtälö antaa nollan.

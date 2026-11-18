@@ -902,7 +902,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\Delta E_\\text{int,AB} = 700\\,\\text{J} - (300\\,\\text{J} + 300\\,\\text{J}) = 100\\,\\text{J}$ and $\\Delta E_\\text{int,AC} = 700\\,\\text{J} - 500\\,\\text{J} = 200\\,\\text{J}$"
+              "detail": "$$\n\\begin{aligned}\n\\Delta E_\\text{int,AB} &= 700\\,\\text{J} - (300\\,\\text{J} + 300\\,\\text{J}) \\\\\n&= 100\\,\\text{J} \\\\\n\\Delta E_\\text{int,AC} &= 700\\,\\text{J} - 500\\,\\text{J} \\\\\n&= 200\\,\\text{J}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -1090,7 +1090,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$C_\\text{A} = 135\\,\\text{kWh} \\cdot 0.16\\,\\text{€/kWh} \\approx 22\\,\\text{€}$ and $C_\\text{B} = 45\\,\\text{kWh} \\cdot 0.16\\,\\text{€/kWh} = 7.2\\,\\text{€}$"
+              "detail": "$$\n\\begin{aligned}\nC_\\text{A} &= 135\\,\\text{kWh} \\cdot 0.16\\,\\text{€/kWh} \\\\\n&\\approx 22\\,\\text{€} \\\\\nC_\\text{B} &= 45\\,\\text{kWh} \\cdot 0.16\\,\\text{€/kWh} \\\\\n&= 7.2\\,\\text{€}\n\\end{aligned}\n$$"
             },
             {
               "key": "reasonableness",
@@ -1123,7 +1123,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$E_\\text{useful} = 150\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot 20\\,\\text{m} \\approx 29.4\\,\\text{kJ}$ and $\\eta = \\dfrac{29.4\\,\\text{kJ}}{40\\,\\text{kJ}} = 0.74$"
+              "detail": "$$\n\\begin{aligned}\nE_\\text{useful} &= 150\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot 20\\,\\text{m} \\\\\n&\\approx 29.4\\,\\text{kJ} \\\\\n\\eta &= \\dfrac{29.4\\,\\text{kJ}}{40\\,\\text{kJ}} \\\\\n&= 0.74\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -1151,7 +1151,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$P_\\text{useful} = \\dfrac{29.4\\,\\text{kJ}}{80\\,\\text{s}} \\approx 0.37\\,\\text{kW}$ and $P_\\text{loss} = 0.50\\,\\text{kW} - 0.37\\,\\text{kW} \\approx 0.13\\,\\text{kW}$"
+              "detail": "$$\n\\begin{aligned}\nP_\\text{useful} &= \\dfrac{29.4\\,\\text{kJ}}{80\\,\\text{s}} \\\\\n&\\approx 0.37\\,\\text{kW} \\\\\nP_\\text{loss} &= 0.50\\,\\text{kW} - 0.37\\,\\text{kW} \\\\\n&\\approx 0.13\\,\\text{kW}\n\\end{aligned}\n$$"
             },
             {
               "text": "States that the rest of the energy does not disappear but first becomes internal energy of the motor, gearbox and rope (friction and electrical resistance), which is transferred to the surroundings as heat.",

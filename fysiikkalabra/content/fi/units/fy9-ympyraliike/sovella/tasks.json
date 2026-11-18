@@ -1003,7 +1003,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$r = \\dfrac{(15\\,\\text{m/s})^2}{3{,}0\\,\\text{m/s}^2} = 75\\,\\text{m}$"
+              "detail": "$$\n\\begin{aligned}\nr &= \\dfrac{(15\\,\\text{m/s})^2}{3{,}0\\,\\text{m/s}^2} \\\\\n&= 75\\,\\text{m}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -1036,7 +1036,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$F = 1200\\,\\text{kg} \\cdot 3{,}0\\,\\text{m/s}^2 = 3600\\,\\text{N} \\approx 3{,}6\\,\\text{kN}$, kaksi merkitsevää numeroa"
+              "detail": "$$\n\\begin{aligned}\nF &= 1200\\,\\text{kg} \\cdot 3{,}0\\,\\text{m/s}^2 \\\\\n&= 3600\\,\\text{N} \\\\\n&\\approx 3{,}6\\,\\text{kN}\n\\end{aligned}\n$$, kaksi merkitsevää numeroa"
             }
           ]
         },
@@ -1052,7 +1052,7 @@
           },
           "criteria": [
             {
-              "text": "Perustelee: auton pystykiihtyvyys on nolla, joten $N = mg$, ja lepokitka on enintään $F_\\text{max} = \\mu_\\text{s} N = \\mu_\\text{s} mg$. Rajatilanteessa kitka on suurin mahdollinen.",
+              "text": "Perustelee: auton pystykiihtyvyys on nolla, joten $N = mg$, ja lepokitka on enintään $$\n\\begin{aligned}\nF_\\text{max} &= \\mu_\\text{s} N \\\\\n&= \\mu_\\text{s} mg\n\\end{aligned}\n$$. Rajatilanteessa kitka on suurin mahdollinen.",
               "tag": "concept",
               "points": 1
             },
@@ -1064,7 +1064,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$v_\\text{max} = \\sqrt{0{,}50 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 75\\,\\text{m}} \\approx 19{,}2\\,\\text{m/s}$"
+              "detail": "$$\n\\begin{aligned}\nv_\\text{max} &= \\sqrt{0{,}50 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 75\\,\\text{m}} \\\\\n&\\approx 19{,}2\\,\\text{m/s}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -1085,12 +1085,12 @@
           "text": "Auto kuormataan matkustajilla ja tavaroilla, ja sen massa on $1500\\,\\text{kg}$. Miten kuorma vaikuttaa kaarteen suurimpaan nopeuteen märällä tiellä? Muuttuuko kuvaaja? Perustele laskemalla.",
           "criteria": [
             {
-              "text": "Perustelee, että massa supistuu liikeyhtälöstä $\\mu_\\text{s} mg = \\dfrac{mv^2}{r}$, joten suurin nopeus $\\sqrt{\\mu_\\text{s} g r} \\approx 19\\,\\text{m/s}$ ei muutu.",
+              "text": "Perustelee, että massa supistuu liikeyhtälöstä $\\mu_\\text{s} mg = \\dfrac{mv^2}{r}$, joten suurin nopeus $$\n\\begin{aligned}\n\\sqrt{\\mu_\\text{s} g r} &\\approx 19\\,\\text{m/s}\n\\end{aligned}\n$$ ei muutu.",
               "tag": "concept",
               "points": 1
             },
             {
-              "text": "Laskee kitkavoimat: tarvittava kitka nopeudella $15\\,\\text{m/s}$ on $1500\\,\\text{kg} \\cdot 3{,}0\\,\\text{m/s}^2 = 4500\\,\\text{N}$ ja suurin mahdollinen $0{,}50 \\cdot 1500\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 7360\\,\\text{N}$.",
+              "text": "Laskee kitkavoimat: tarvittava kitka nopeudella $15\\,\\text{m/s}$ on $$\n\\begin{aligned}\n1500\\,\\text{kg} \\cdot 3{,}0\\,\\text{m/s}^2 &= 4500\\,\\text{N}\n\\end{aligned}\n$$ ja suurin mahdollinen $$\n\\begin{aligned}\n0{,}50 \\cdot 1500\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 &\\approx 7360\\,\\text{N}\n\\end{aligned}\n$$.",
               "tag": "math",
               "points": 1
             },
@@ -1157,7 +1157,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$T = \\dfrac{(18\\,\\text{kg} + 1{,}5\\,\\text{kg}) \\cdot 9{,}81\\,\\text{m/s}^2}{\\sin 30{,}0^\\circ} \\approx 383\\,\\text{N}$"
+              "detail": "$$\n\\begin{aligned}\nT &= \\dfrac{(18\\,\\text{kg} + 1{,}5\\,\\text{kg}) \\cdot 9{,}81\\,\\text{m/s}^2}{\\sin 30{,}0^\\circ} \\\\\n&\\approx 383\\,\\text{N}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -1188,7 +1188,7 @@
               "detail": "$H \\approx 331\\,\\text{N}$ poispäin seinästä ja $V \\approx 14{,}7\\,\\text{N}$ ylöspäin."
             },
             {
-              "text": "Laskee komponenteista suuruuden: $F_\\text{s} = \\sqrt{H^2 + V^2} \\approx 332\\,\\text{N}$.",
+              "text": "Laskee komponenteista suuruuden: $$\n\\begin{aligned}\nF_\\text{s} &= \\sqrt{H^2 + V^2} \\\\\n&\\approx 332\\,\\text{N}\n\\end{aligned}\n$$.",
               "tag": "math",
               "points": 1
             },
@@ -1200,7 +1200,7 @@
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "Tarkistus kyltin päästä otetuilla momenteilla: $V L = m_\\text{t} g\\,\\tfrac{L}{2}$, joten $V = \\tfrac12 \\cdot 3{,}0\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 14{,}7\\,\\text{N}$."
+              "detail": "Tarkistus kyltin päästä otetuilla momenteilla: $V L = m_\\text{t} g\\,\\tfrac{L}{2}$, joten $$\n\\begin{aligned}\nV &= \\tfrac12 \\cdot 3{,}0\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\\n&\\approx 14{,}7\\,\\text{N}\n\\end{aligned}\n$$."
             }
           ]
         },
@@ -1218,12 +1218,12 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "Momenttiehdosta $m_\\text{s} = \\dfrac{T_\\text{max}\\sin\\theta}{g} - \\tfrac12 m_\\text{t}$."
+              "detail": "Momenttiehdosta $$\n\\begin{aligned}\nm_\\text{s} &= \\dfrac{T_\\text{max}\\sin\\theta}{g} - \\tfrac12 m_\\text{t}\n\\end{aligned}\n$$."
             },
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$m_\\text{s} = \\dfrac{600\\,\\text{N} \\cdot 0{,}500}{9{,}81\\,\\text{m/s}^2} - 1{,}5\\,\\text{kg} \\approx 29{,}1\\,\\text{kg}$"
+              "detail": "$$\n\\begin{aligned}\nm_\\text{s} &= \\dfrac{600\\,\\text{N} \\cdot 0{,}500}{9{,}81\\,\\text{m/s}^2} - 1{,}5\\,\\text{kg} \\\\\n&\\approx 29{,}1\\,\\text{kg}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -1244,7 +1244,7 @@
               "points": 1
             },
             {
-              "text": "Laskee $T = \\dfrac{191{,}3\\,\\text{N}}{\\sin 45^\\circ} \\approx 270\\,\\text{N}$, noin $29\\,\\%$ pienempi kuin $380\\,\\text{N}$.",
+              "text": "Laskee $$\n\\begin{aligned}\nT &= \\dfrac{191{,}3\\,\\text{N}}{\\sin 45^\\circ} \\\\\n&\\approx 270\\,\\text{N}\n\\end{aligned}\n$$, noin $29\\,\\%$ pienempi kuin $380\\,\\text{N}$.",
               "tag": "math",
               "points": 1
             },

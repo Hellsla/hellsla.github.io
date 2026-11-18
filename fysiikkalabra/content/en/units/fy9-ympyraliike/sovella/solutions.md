@@ -522,7 +522,11 @@ r &= \dfrac{v^2}{a_\text{n}} \\
 \end{aligned}
 $$
 **Answer:** $r = 75\,\text{m}$, two significant figures like the values read.
-**Reasonableness:** Another point of the curve gives the same radius: at $20\,\text{m/s}$ the curve is at $a_\text{n} \approx 5.3\,\text{m/s}^2$, and $\dfrac{(20\,\text{m/s})^2}{5.3\,\text{m/s}^2} \approx 75\,\text{m}$. The radius is plausible for a bend of a road.
+**Reasonableness:** Another point of the curve gives the same radius: at $20\,\text{m/s}$ the curve is at $a_\text{n} \approx 5.3\,\text{m/s}^2$, and $$
+\begin{aligned}
+\dfrac{(20\,\text{m/s})^2}{5.3\,\text{m/s}^2} &\approx 75\,\text{m}
+\end{aligned}
+$$. The radius is plausible for a bend of a road.
 
 ### b)
 **Given:** mass of the car $m = 1200\,\text{kg}$, speed $v = 15\,\text{m/s}$ and the point of the graph $a_\text{n} = 3.0\,\text{m/s}^2$; $g = 9.81\,\text{m/s}^2$
@@ -539,12 +543,22 @@ F &= m a_\text{n} \\
 \end{aligned}
 $$
 **Answer:** $F \approx 3.6\,\text{kN}$ towards the centre of the bend, two significant figures like the acceleration.
-**Reasonableness:** The weight of the car is $mg = 1200\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 11.8\,\text{kN}$, and the friction is about $\dfrac{3.6}{11.8} \approx 31\,\%$ of it. In ordinary driving in a bend the friction is clearly less than the weight, which is plausible.
+**Reasonableness:** The weight of the car is $$
+\begin{aligned}
+mg &= 1200\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&\approx 11.8\,\text{kN}
+\end{aligned}
+$$, and the friction is about $\dfrac{3.6}{11.8} \approx 31\,\%$ of it. In ordinary driving in a bend the friction is clearly less than the weight, which is plausible.
 
 ### c)
 **Given:** coefficient of static friction $\mu_\text{s} = 0.50$, radius $r = 75\,\text{m}$ from part a; $g = 9.81\,\text{m/s}^2$
 **Find:** the greatest speed $v_\text{max}$ at which the car does not slip
-**Principle:** The free-body diagram is the same as in part b. In the vertical direction $N = mg$. Static friction is at most $F_\text{max} = \mu_\text{s} N = \mu_\text{s} mg$ (chapter *Weight, friction and the inclined plane*). The greatest speed is found when the friction is as large as possible. Then the horizontal equation of motion $\Sigma F_x = ma_\text{n}$ is $\mu_\text{s} mg = \dfrac{mv_\text{max}^2}{r}$ (chapter *Centripetal acceleration and the equation of motion in a circle*).
+**Principle:** The free-body diagram is the same as in part b. In the vertical direction $N = mg$. Static friction is at most $$
+\begin{aligned}
+F_\text{max} &= \mu_\text{s} N \\
+&= \mu_\text{s} mg
+\end{aligned}
+$$ (chapter *Weight, friction and the inclined plane*). The greatest speed is found when the friction is as large as possible. Then the horizontal equation of motion $\Sigma F_x = ma_\text{n}$ is $\mu_\text{s} mg = \dfrac{mv_\text{max}^2}{r}$ (chapter *Centripetal acceleration and the equation of motion in a circle*).
 **Formula:** $v_\text{max} = \sqrt{\mu_\text{s} g r}$, because the mass cancels
 **Conversions:** Finally $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** $$
@@ -554,25 +568,44 @@ v_\text{max} &= \sqrt{\mu_\text{s} g r} \\
 &= \sqrt{367.9\,\text{m}^2/\text{s}^2} \\
 &= 19.18\,\text{m/s}
 \end{aligned}
-$$; unit: $\sqrt{\tfrac{\text{m}}{\text{s}^2} \cdot \text{m}} = \tfrac{\text{m}}{\text{s}}$. In kilometres per hour: $$
+$$; unit: $$
+\begin{aligned}
+\sqrt{\tfrac{\text{m}}{\text{s}^2} \cdot \text{m}} &= \tfrac{\text{m}}{\text{s}}
+\end{aligned}
+$$. In kilometres per hour: $$
 \begin{aligned}
 v_\text{max} &= 19.18\,\text{m/s} \cdot 3.6 \\
 &= 69.0\,\text{km/h}
 \end{aligned}
 $$
 **Answer:** $v_\text{max} \approx 19\,\text{m/s}$ or about $69\,\text{km/h}$. Two significant figures like the radius and the coefficient of friction.
-**Reasonableness:** The greatest friction gives the normal acceleration $a_\text{n} = \mu_\text{s} g \approx 4.9\,\text{m/s}^2$. The curve of the graph reaches this value at the speed $\sqrt{4.9 \cdot 75} \approx 19\,\text{m/s}$. At $15\,\text{m/s}$ the friction needed, $3.6\,\text{kN}$, is less than the greatest friction $\mu_\text{s} mg \approx 5.9\,\text{kN}$ (about $61\,\%$ of it), so the car does not slip.
+**Reasonableness:** The greatest friction gives the normal acceleration $$
+\begin{aligned}
+a_\text{n} &= \mu_\text{s} g \\
+&\approx 4.9\,\text{m/s}^2
+\end{aligned}
+$$. The curve of the graph reaches this value at the speed $\sqrt{4.9 \cdot 75} \approx 19\,\text{m/s}$. At $15\,\text{m/s}$ the friction needed, $3.6\,\text{kN}$, is less than the greatest friction $\mu_\text{s} mg \approx 5.9\,\text{kN}$ (about $61\,\%$ of it), so the car does not slip.
 
 ### d)
 **Find:** how the greatest speed and the graph change when $m = 1500\,\text{kg}$
 **Principle:** The equation of motion $\mu_\text{s} mg = \dfrac{mv_\text{max}^2}{r}$ is the same as in part c, and the mass $m$ appears on both sides of it (chapter *Centripetal acceleration and the equation of motion in a circle*, chapter *Weight, friction and the inclined plane*). The radius of the bend and the coefficient of friction do not depend on the mass.
-**Model answer:** The mass cancels, so $v_\text{max} = \sqrt{\mu_\text{s} g r} \approx 19\,\text{m/s}$ does not change. The graph does not change either, because $a_\text{n} = \dfrac{v^2}{r}$ does not depend on the mass. The forces do change. At $15\,\text{m/s}$ the friction needed is $$
+**Model answer:** The mass cancels, so $$
+\begin{aligned}
+v_\text{max} &= \sqrt{\mu_\text{s} g r} \\
+&\approx 19\,\text{m/s}
+\end{aligned}
+$$ does not change. The graph does not change either, because $a_\text{n} = \dfrac{v^2}{r}$ does not depend on the mass. The forces do change. At $15\,\text{m/s}$ the friction needed is $$
 \begin{aligned}
 F &= m a_\text{n} \\
 &= 1500\,\text{kg} \cdot 3.0\,\text{m/s}^2 \\
 &= 4500\,\text{N}
 \end{aligned}
-$$and the greatest possible friction is $\mu_\text{s} mg = 0.50 \cdot 1500\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 7360\,\text{N}$. So the heavier car needs a larger friction force, but the tyres give proportionally as much more: both are proportional to the mass, and the friction needed is still about $61\,\%$ of the greatest. The load does not make the bend more slippery.
+$$and the greatest possible friction is $$
+\begin{aligned}
+\mu_\text{s} mg &= 0.50 \cdot 1500\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&\approx 7360\,\text{N}
+\end{aligned}
+$$. So the heavier car needs a larger friction force, but the tyres give proportionally as much more: both are proportional to the mass, and the friction needed is still about $61\,\%$ of the greatest. The load does not make the bend more slippery.
 
 ### Yleisiä virheitä
 - In part a the numbers are divided the wrong way ($r = a_\text{n} : v^2$), or the speed is not squared.
@@ -581,8 +614,19 @@ $$and the greatest possible friction is $\mu_\text{s} mg = 0.50 \cdot 1500\,\tex
 - In part d it is assumed that a heavier car can go through the bend slower or faster. The mass cancels from the equation of motion, so the speed limit does not depend on it.
 
 ### Hyväksytään myös
-- In part b $F = \dfrac{mv^2}{r} = \dfrac{1200\,\text{kg} \cdot (15\,\text{m/s})^2}{75\,\text{m}} = 3600\,\text{N}$, the same result.
-- In part c the greatest speed can be read from the graph: the curve reaches the value $a_\text{n} = \mu_\text{s} g \approx 4.9\,\text{m/s}^2$ at a speed of about $19\,\text{m/s}$.
+- In part b $$
+\begin{aligned}
+F &= \dfrac{mv^2}{r} \\
+&= \dfrac{1200\,\text{kg} \cdot (15\,\text{m/s})^2}{75\,\text{m}} \\
+&= 3600\,\text{N}
+\end{aligned}
+$$, the same result.
+- In part c the greatest speed can be read from the graph: the curve reaches the value $$
+\begin{aligned}
+a_\text{n} &= \mu_\text{s} g \\
+&\approx 4.9\,\text{m/s}^2
+\end{aligned}
+$$ at a speed of about $19\,\text{m/s}$.
 
 ## fy9-ympyraliike-s9
 
@@ -591,7 +635,15 @@ $$and the greatest possible friction is $\mu_\text{s} mg = 0.50 \cdot 1500\,\tex
 **Find:** the force $T$ of the wire
 **Principle:** Choose the rod and the sign as the body. In the free-body diagram the weight of the sign $\overline{G}_\text{s}$ points down from the end of the rod, the weight of the rod $\overline{G}_\text{t}$ down from the middle of the rod, the force of the wire $\overline{T}$ obliquely up towards the wall from the end of the rod and the force of the hinge $\overline{F}_\text{s}$ at the hinge. The body is at rest, so it is in equilibrium: the sum of the forces and the sum of the moments are zero (chapter *Equilibrium of a body: forces and moments*). The hinge is chosen as the pivot, because about it the lever arm of the unknown force of the hinge is zero. The weight of the rod acts at its centre of gravity, which for a uniform rod is at the middle, at the distance $\tfrac{L}{2}$. The component of the wire force perpendicular to the rod, $T\sin\theta$, turns the rod with the lever arm $L$. The weights turn it the opposite way.
 **Reading the graph:** The length of the rod $L = 1.20\,\text{m}$ and the angle between the wire and the rod $\theta = 30.0^\circ$ are read from the figure.
-**Formula:** The sum of the moments about the hinge is zero: $T L\sin\theta - m_\text{s} g L - m_\text{t} g\,\tfrac{L}{2} = 0$. The length $L$ cancels, and $T = \dfrac{(m_\text{s} + \tfrac12 m_\text{t})\,g}{\sin\theta}$
+**Formula:** The sum of the moments about the hinge is zero: $$
+\begin{aligned}
+T L\sin\theta - m_\text{s} g L - m_\text{t} g\,\tfrac{L}{2} &= 0
+\end{aligned}
+$$. The length $L$ cancels, and $$
+\begin{aligned}
+T &= \dfrac{(m_\text{s} + \tfrac12 m_\text{t})\,g}{\sin\theta}
+\end{aligned}
+$$
 **Conversions:** None needed: the masses are in kilograms.
 **Substitution:** $$
 \begin{aligned}
@@ -608,7 +660,12 @@ $$
 **Given:** from part a $T = 382.6\,\text{N}$ and $\theta = 30.0^\circ$; $m_\text{s} = 18\,\text{kg}$, $m_\text{t} = 3.0\,\text{kg}$, $g = 9.81\,\text{m/s}^2$
 **Find:** the magnitude of the force $F_\text{s}$ of the hinge
 **Principle:** The body is at rest, so the sum of the forces is zero (chapter *Equilibrium of a body: forces and moments*). Choose the $x$ axis away from the wall and the $y$ axis up. The force of the hinge has a horizontal component $H$ and a vertical component $V$, and the force of the wire points, according to the figure, towards the wall and up. In the horizontal direction the wire pulls the rod towards the wall, so the hinge pushes away from the wall.
-**Formula:** $\Sigma F_x = H - T\cos\theta = 0$ and $\Sigma F_y = V + T\sin\theta - (m_\text{s} + m_\text{t})g = 0$; $F_\text{s} = \sqrt{H^2 + V^2}$
+**Formula:** $\Sigma F_x = H - T\cos\theta = 0$ and $$
+\begin{aligned}
+\Sigma F_y &= V + T\sin\theta - (m_\text{s} + m_\text{t})g \\
+&= 0
+\end{aligned}
+$$; $F_\text{s} = \sqrt{H^2 + V^2}$
 **Conversions:** None needed.
 **Substitution:** $$
 \begin{aligned}
@@ -619,7 +676,8 @@ H &= T\cos\theta \\
 $$; $$
 \begin{aligned}
 V &= (m_\text{s} + m_\text{t})\,g - T\sin\theta \\
-&= 21\,\text{kg} \cdot 9.81\,\text{m/s}^2 - 382.6\,\text{N} \cdot 0.500 \\
+&= 21\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&\quad - 382.6\,\text{N} \cdot 0.500 \\
 &= 206.0\,\text{N} - 191.3\,\text{N} \\
 &= 14.7\,\text{N}
 \end{aligned}
@@ -629,15 +687,33 @@ F_\text{s} &= \sqrt{H^2 + V^2} \\
 &= \sqrt{(331.3\,\text{N})^2 + (14.7\,\text{N})^2} \\
 &= 331.7\,\text{N}
 \end{aligned}
-$$. Direction: $\tan\alpha = \dfrac{V}{H} = \dfrac{14.7}{331.3}$, so $\alpha \approx 2.5^\circ$ above the horizontal.
+$$. Direction: $$
+\begin{aligned}
+\tan\alpha &= \dfrac{V}{H} \\
+&= \dfrac{14.7}{331.3}
+\end{aligned}
+$$, so $\alpha \approx 2.5^\circ$ above the horizontal.
 **Answer:** $F_\text{s} \approx 330\,\text{N}$, direction about $2.5^\circ$ above the horizontal, away from the wall. Two significant figures like the force of the wire.
-**Reasonableness:** Take moments about the outer end of the rod: the force of the wire and the weight of the sign then have no lever arm, so $V L = m_\text{t} g\,\tfrac{L}{2}$ and $V = \tfrac12 \cdot 3.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 14.7\,\text{N}$, the same as above. The force of the hinge is almost horizontal, because the wire carries almost the whole weight and the horizontal force $H$ comes from the obliqueness of the wire.
+**Reasonableness:** Take moments about the outer end of the rod: the force of the wire and the weight of the sign then have no lever arm, so $V L = m_\text{t} g\,\tfrac{L}{2}$ and $$
+\begin{aligned}
+V &= \tfrac12 \cdot 3.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&\approx 14.7\,\text{N}
+\end{aligned}
+$$, the same as above. The force of the hinge is almost horizontal, because the wire carries almost the whole weight and the horizontal force $H$ comes from the obliqueness of the wire.
 
 ### c)
 **Given:** $T_\text{max} = 600\,\text{N}$, $\theta = 30.0^\circ$, $m_\text{t} = 3.0\,\text{kg}$; $g = 9.81\,\text{m/s}^2$
 **Find:** the greatest mass $m_\text{s}$ of the sign
 **Principle:** The situation is the same as in part a, and the moment condition about the hinge holds (chapter *Equilibrium of a body: forces and moments*). The greatest mass is found when the force of the wire is the greatest allowed, $T = T_\text{max}$.
-**Formula:** from the moment condition of part a $T_\text{max} \sin\theta = (m_\text{s} + \tfrac12 m_\text{t})\,g$, so $m_\text{s} = \dfrac{T_\text{max}\sin\theta}{g} - \tfrac12 m_\text{t}$
+**Formula:** from the moment condition of part a $$
+\begin{aligned}
+T_\text{max} \sin\theta &= (m_\text{s} + \tfrac12 m_\text{t})\,g
+\end{aligned}
+$$, so $$
+\begin{aligned}
+m_\text{s} &= \dfrac{T_\text{max}\sin\theta}{g} - \tfrac12 m_\text{t}
+\end{aligned}
+$$
 **Conversions:** None needed.
 **Substitution:** $$
 \begin{aligned}
@@ -648,12 +724,26 @@ m_\text{s} &= \dfrac{T_\text{max}\sin\theta}{g} - \tfrac12 m_\text{t} \\
 \end{aligned}
 $$
 **Answer:** $m_\text{s} \approx 29\,\text{kg}$, two significant figures like the given values.
-**Reasonableness:** A check with the formula of part a: $T = \dfrac{(29.08 + 1.5)\,\text{kg} \cdot 9.81\,\text{m/s}^2}{0.500} \approx 600\,\text{N}$. The result is greater than the present $18\,\text{kg}$, as it should be, because in the present situation the force of the wire, $380\,\text{N}$, is below $600\,\text{N}$.
+**Reasonableness:** A check with the formula of part a: $$
+\begin{aligned}
+T &= \dfrac{(29.08 + 1.5)\,\text{kg} \cdot 9.81\,\text{m/s}^2}{0.500} \\
+&\approx 600\,\text{N}
+\end{aligned}
+$$. The result is greater than the present $18\,\text{kg}$, as it should be, because in the present situation the force of the wire, $380\,\text{N}$, is below $600\,\text{N}$.
 
 ### d)
 **Find:** how the force of the wire changes when $\theta' = 45^\circ$
-**Principle:** The moment condition about the hinge is the same as in part a, but the angle is $\theta'$ (chapter *Equilibrium of a body: forces and moments*). It becomes $T\sin\theta' \cdot L = (m_\text{s} + \tfrac12 m_\text{t})\,g L$: the vertical component of the wire force $T\sin\theta'$ is always the same, because the moments of the weights do not change.
-**Model answer:** The vertical component stays at $T\sin\theta = (m_\text{s} + \tfrac12 m_\text{t})g \approx 191\,\text{N}$ whatever the angle. The force of the wire is therefore $$
+**Principle:** The moment condition about the hinge is the same as in part a, but the angle is $\theta'$ (chapter *Equilibrium of a body: forces and moments*). It becomes $$
+\begin{aligned}
+T\sin\theta' \cdot L &= (m_\text{s} + \tfrac12 m_\text{t})\,g L
+\end{aligned}
+$$: the vertical component of the wire force $T\sin\theta'$ is always the same, because the moments of the weights do not change.
+**Model answer:** The vertical component stays at $$
+\begin{aligned}
+T\sin\theta &= (m_\text{s} + \tfrac12 m_\text{t})g \\
+&\approx 191\,\text{N}
+\end{aligned}
+$$ whatever the angle. The force of the wire is therefore $$
 \begin{aligned}
 T &= \dfrac{(m_\text{s} + \tfrac12 m_\text{t})\,g}{\sin\theta'} \\
 &= \dfrac{191.3\,\text{N}}{\sin 45^\circ} \\

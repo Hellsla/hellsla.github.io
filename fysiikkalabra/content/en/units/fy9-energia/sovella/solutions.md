@@ -622,4 +622,10 @@ $$
 
 ### Hyväksytään myös
 - In part c the answer $73.6\,\%$ or $0.74$, and in part d $132\,\text{W}$.
-- In part d the power can also be calculated from the efficiency: $P_\text{loss} = (1 - \eta)P = 0.26 \cdot 0.50\,\text{kW} \approx 0.13\,\text{kW}$.
+- In part d the power can also be calculated from the efficiency: $$
+\begin{aligned}
+P_\text{loss} &= (1 - \eta)P \\
+&= 0.26 \cdot 0.50\,\text{kW} \\
+&\approx 0.13\,\text{kW}
+\end{aligned}
+$$.

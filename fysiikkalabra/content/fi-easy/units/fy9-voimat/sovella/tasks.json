@@ -827,7 +827,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$a_1 = \\dfrac{18{,}6\\,\\text{m/s} - 0}{2\\,\\text{s}} = 9{,}3\\,\\text{m/s}^2$ ja $a_2 = \\dfrac{46{,}4\\,\\text{m/s} - 40{,}4\\,\\text{m/s}}{4\\,\\text{s}} = 1{,}5\\,\\text{m/s}^2$"
+              "detail": "$$\n\\begin{aligned}\na_1 &= \\dfrac{18{,}6\\,\\text{m/s} - 0}{2\\,\\text{s}} \\\\\n&= 9{,}3\\,\\text{m/s}^2\n\\end{aligned}\n$$ ja $$\n\\begin{aligned}\na_2 &= \\dfrac{46{,}4\\,\\text{m/s} - 40{,}4\\,\\text{m/s}}{4\\,\\text{s}} \\\\\n&= 1{,}5\\,\\text{m/s}^2\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -860,12 +860,12 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$F_\\text{v} = 75{,}0\\,\\text{kg} \\cdot (9{,}81\\,\\text{m/s}^2 - 1{,}5\\,\\text{m/s}^2) \\approx 623\\,\\text{N}$"
+              "detail": "$$\n\\begin{aligned}\nF_\\text{v} &= 75{,}0\\,\\text{kg} \\cdot (9{,}81\\,\\text{m/s}^2 - 1{,}5\\,\\text{m/s}^2) \\\\\n&\\approx 623\\,\\text{N}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$F_\\text{v} \\approx 6{,}2 \\cdot 10^2\\,\\text{N}$. Tuloksessa on kaksi merkitsevää numeroa kuten kiihtyvyydessä."
+              "detail": "$$\n\\begin{aligned}\nF_\\text{v} &\\approx 6{,}2 \\cdot 10^2\\,\\text{N}\n\\end{aligned}\n$$. Tuloksessa on kaksi merkitsevää numeroa kuten kiihtyvyydessä."
             },
             {
               "key": "reasonableness",
@@ -888,12 +888,12 @@
             {
               "key": "equation",
               "points": 2,
-              "detail": "Rajanopeudella ilmanvastus on yhtä suuri kuin paino: $kv_\\text{r}^2 = mg$. Hetkellä $8\\,\\text{s}$ pätee $F_\\text{v} = kv^2$. Siksi $v_\\text{r} = v\\sqrt{\\dfrac{mg}{F_\\text{v}}}$."
+              "detail": "Rajanopeudella ilmanvastus on yhtä suuri kuin paino: $kv_\\text{r}^2 = mg$. Hetkellä $8\\,\\text{s}$ pätee $F_\\text{v} = kv^2$. Siksi $$\n\\begin{aligned}\nv_\\text{r} &= v\\sqrt{\\dfrac{mg}{F_\\text{v}}}\n\\end{aligned}\n$$."
             },
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$v_\\text{r} = 44{,}5\\,\\text{m/s} \\cdot \\sqrt{\\dfrac{736\\,\\text{N}}{623\\,\\text{N}}} \\approx 48\\,\\text{m/s}$"
+              "detail": "$$\n\\begin{aligned}\nv_\\text{r} &= 44{,}5\\,\\text{m/s} \\cdot \\sqrt{\\dfrac{736\\,\\text{N}}{623\\,\\text{N}}} \\\\\n&\\approx 48\\,\\text{m/s}\n\\end{aligned}\n$$"
             },
             {
               "key": "reasonableness",
@@ -916,12 +916,12 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "$v_\\text{r} = \\sqrt{\\dfrac{mg}{k}}$, joten $\\dfrac{v_\\text{r}'}{v_\\text{r}} = \\sqrt{\\dfrac{m'}{m}}$"
+              "detail": "$v_\\text{r} = \\sqrt{\\dfrac{mg}{k}}$, joten $$\n\\begin{aligned}\n\\dfrac{v_\\text{r}'}{v_\\text{r}} &= \\sqrt{\\dfrac{m'}{m}}\n\\end{aligned}\n$$"
             },
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$k = \\dfrac{623\\,\\text{N}}{(44{,}5\\,\\text{m/s})^2} \\approx 0{,}31\\,\\text{kg/m}$ ja $v_\\text{r}' = \\sqrt{\\dfrac{100\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2}{0{,}315\\,\\text{kg/m}}} \\approx 56\\,\\text{m/s}$"
+              "detail": "$$\n\\begin{aligned}\nk &= \\dfrac{623\\,\\text{N}}{(44{,}5\\,\\text{m/s})^2} \\\\\n&\\approx 0{,}31\\,\\text{kg/m}\n\\end{aligned}\n$$ ja $$\n\\begin{aligned}\nv_\\text{r}' &= \\sqrt{\\dfrac{100\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2}{0{,}315\\,\\text{kg/m}}} \\\\\n&\\approx 56\\,\\text{m/s}\n\\end{aligned}\n$$"
             },
             {
               "key": "conclusion",
@@ -980,7 +980,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$a = \\dfrac{650\\,\\text{N} - 75{,}0\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2}{75{,}0\\,\\text{kg}} \\approx -1{,}14\\,\\text{m/s}^2$"
+              "detail": "$$\n\\begin{aligned}\na &= \\dfrac{650\\,\\text{N} - 75{,}0\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2}{75{,}0\\,\\text{kg}} \\\\\n&\\approx -1{,}14\\,\\text{m/s}^2\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -1008,7 +1008,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$v = -1{,}14\\,\\text{m/s}^2 \\cdot 2{,}0\\,\\text{s} \\approx -2{,}29\\,\\text{m/s}$"
+              "detail": "$$\n\\begin{aligned}\nv &= -1{,}14\\,\\text{m/s}^2 \\cdot 2{,}0\\,\\text{s} \\\\\n&\\approx -2{,}29\\,\\text{m/s}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -1036,7 +1036,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$a = \\dfrac{800\\,\\text{N} - 735{,}75\\,\\text{N}}{75{,}0\\,\\text{kg}} \\approx 0{,}857\\,\\text{m/s}^2$"
+              "detail": "$$\n\\begin{aligned}\na &= \\dfrac{800\\,\\text{N} - 735{,}75\\,\\text{N}}{75{,}0\\,\\text{kg}} \\\\\n&\\approx 0{,}857\\,\\text{m/s}^2\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -1046,7 +1046,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Nopeuden muutos on $0{,}857\\,\\text{m/s}^2 \\cdot 2{,}7\\,\\text{s} \\approx 2{,}3\\,\\text{m/s}$ ylöspäin. Se kumoaa nopeuden $-2{,}3\\,\\text{m/s}$, joten hissi pysähtyy."
+              "detail": "Nopeuden muutos on $$\n\\begin{aligned}\n0{,}857\\,\\text{m/s}^2 \\cdot 2{,}7\\,\\text{s} &\\approx 2{,}3\\,\\text{m/s}\n\\end{aligned}\n$$ ylöspäin. Se kumoaa nopeuden $-2{,}3\\,\\text{m/s}$, joten hissi pysähtyy."
             }
           ]
         },
@@ -1074,7 +1074,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$s = \\tfrac{1}{2}\\,(7{,}7\\,\\text{s} + 3{,}0\\,\\text{s}) \\cdot 2{,}29\\,\\text{m/s} \\approx 12{,}2\\,\\text{m}$"
+              "detail": "$$\n\\begin{aligned}\ns &= \\tfrac{1}{2}\\,(7{,}7\\,\\text{s} + 3{,}0\\,\\text{s}) \\cdot 2{,}29\\,\\text{m/s} \\\\\n&\\approx 12{,}2\\,\\text{m}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",

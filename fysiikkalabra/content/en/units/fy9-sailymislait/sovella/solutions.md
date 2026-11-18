@@ -504,12 +504,39 @@ $$
 **Principle:** The energy principle (chapter *Conservation of mechanical energy and the energy principle*). The kinetic friction force is $F = \mu N$, and the normal force on the slope is $N = mg\cos\alpha$. Therefore the friction force is directly proportional to the mass.
 **Formula:** $$
 \begin{aligned}
-mgh - \mu mg\cos\alpha \cdot s &= \tfrac12 mv^2 \\
+mgh - Fs &= \tfrac12 mv^2 \\
+F &= \mu mg\cos\alpha \\
 v &= \sqrt{2g\,(h - \mu\cos\alpha \cdot s)}
 \end{aligned}
 $$
 **Conversions:** None needed.
-**Substitution:** The mass cancels, so the speed does not depend on the mass. Check with numbers: the potential energy is $3.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 2.04\,\text{m} = 60\,\text{J}$. The friction force is $\dfrac{3.0}{2.0} \cdot 2.5\,\text{N} = 3.75\,\text{N}$, so the work of friction is $-3.75\,\text{N} \cdot 6.0\,\text{m} = -22.5\,\text{J}$. The kinetic energy at the bottom is $60\,\text{J} - 22.5\,\text{J} = 37.5\,\text{J}$ and $$
+**Substitution:** The mass cancels, so the speed does not depend on the mass. Check with numbers, in order: the potential energy, the friction force, the work of friction, the kinetic energy at the bottom and the speed.
+$$
+\begin{aligned}
+E_\text{p}' &= 3.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&\cdot 2.04\,\text{m} \\
+&= 60\,\text{J}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+F' &= \dfrac{3.0}{2.0} \cdot 2.5\,\text{N} \\
+&= 3.75\,\text{N}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+W' &= -3.75\,\text{N} \cdot 6.0\,\text{m} \\
+&= -22.5\,\text{J}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+E_\text{k}' &= 60\,\text{J} - 22.5\,\text{J} \\
+&= 37.5\,\text{J}
+\end{aligned}
+$$
+$$
 \begin{aligned}
 v &= \sqrt{\dfrac{2 \cdot 37.5\,\text{J}}{3.0\,\text{kg}}} \\
 &= 5.0\,\text{m/s}
@@ -579,7 +606,13 @@ h &= \dfrac{(12.56\,\text{m/s})^2}{2 \cdot 9.81\,\text{m/s}^2} \\
 \end{aligned}
 $$
 **Answer:** $E_\text{k} \approx 34\,\text{J}$ and $h \approx 8.0\,\text{m}$, two significant figures.
-**Reasonableness:** Check with potential energy: $mgh = 0.43\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 8.04\,\text{m} \approx 33.9\,\text{J}$, the same as the kinetic energy. The mass of the ball does not affect the height, only the speed does.
+**Reasonableness:** Check with potential energy: $$
+\begin{aligned}
+E_\text{p} &= 0.43\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&\cdot 8.04\,\text{m} \\
+&\approx 33.9\,\text{J}
+\end{aligned}
+$$, the same as the kinetic energy. The mass of the ball does not affect the height, only the speed does.
 
 ### d)
 **Given:** $m = 0.43\,\text{kg}$, $E_\text{k0} = 33.9\,\text{J}$ at launch, measured height $h_\text{measured} = 6.5\,\text{m}$, speed $0$ at the highest point
@@ -589,7 +622,8 @@ $$
 **Conversions:** None needed.
 **Substitution:** $$
 \begin{aligned}
-mgh_\text{measured} &= 0.43\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 6.5\,\text{m} \\
+E_\text{p} &= 0.43\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&\cdot 6.5\,\text{m} \\
 &= 27.4\,\text{J}
 \end{aligned}
 $$ $$

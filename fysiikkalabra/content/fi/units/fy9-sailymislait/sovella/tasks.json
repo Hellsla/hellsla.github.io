@@ -1043,7 +1043,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$E_\\text{k} = \\tfrac12 \\cdot 0{,}43\\,\\text{kg} \\cdot (12{,}56\\,\\text{m/s})^2 \\approx 33{,}9\\,\\text{J}$"
+       "detail": "$$\n\\begin{aligned}\nE_\\text{k} &= \\tfrac12 \\cdot 0{,}43\\,\\text{kg} \\\\\n&\\cdot (12{,}56\\,\\text{m/s})^2 \\\\\n&\\approx 33{,}9\\,\\text{J}\n\\end{aligned}\n$$"
       },
       {
        "key": "calculation",
@@ -1085,7 +1085,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$mgh = 0{,}43\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 6{,}5\\,\\text{m} \\approx 27{,}4\\,\\text{J}$ ja $W_\\text{ilma} = 27{,}4\\,\\text{J} - 33{,}9\\,\\text{J} \\approx -6{,}5\\,\\text{J}$"
+       "detail": "$$\n\\begin{aligned}\nE_\\text{p} &= 0{,}43\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\\n&\\cdot 6{,}5\\,\\text{m} \\\\\n&\\approx 27{,}4\\,\\text{J}\n\\end{aligned}\n$$ ja $W_\\text{ilma} = 27{,}4\\,\\text{J} - 33{,}9\\,\\text{J} \\approx -6{,}5\\,\\text{J}$"
       },
       {
        "key": "calculation",
