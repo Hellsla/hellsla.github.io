@@ -1,17 +1,20 @@
-VERDICT: PASS
-CONTENT-HASH: 000b72e7ae8c6d61
-Round 2: delta against the version round 1 reviewed (fix round 1).
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+VERDICT: FAIL
+CONTENT-HASH: f4531b7790ea5ae7
+SCOPE: delta: new tasks s8 (A concrete wall) and s9 (The recession of galaxies) and the changed intro; older tasks s1-s7 untouched
 
 ## Blocking
-- (none)
+- **A (causality), s8 d Assumptions:** "and the activity of the source does not stay constant. A real wall should therefore be made thicker". A decaying source gives a *smaller* dose rate over time, so this reason points the other way. Scattering is a correct reason; replace the activity clause with one that really raises the dose (a stronger or replaced source, more time in the corridor) or drop it. Same sentence as in fi.
+- **Assessment (7), s8 d criterion 4 (transfer, 1 p):** d asks only "How thick must the wall be at least". The criterion scores naming an assumption and its effect, which d does not ask, and "the dose rate is constant" is given in the task text. Ask for it in d or move the point.
+- **B (6, consistency), s9 c:** the Principle "moved at the same velocity v all the time and started from the same place as the others" (and the part text "every galaxy has moved at the same velocity", criterion 1 "travelled the distance d") is the explosion-from-a-point picture that s9 d's model answer, its common mistake ("like the fragments of an explosion") and the chapter *The evolution of the universe* reject. State it as distances: "the distances between galaxies have grown from zero at a constant rate", t = d/v = 1/H0.
 
 ## Polish
-- (none)
+- s9 a: the text gives the grid point (250 Mpc; 18 000 km/s), so the graph_read point is earned by copying the text. The alt-text carries the point for non-visual readers; the bullet could go.
+- s9 d criterion 2 requires "space itself expands"; the no-centre argument is criterion 1. Consider accepting criterion 1's argument with any correct expansion picture.
+- s8 a: (20 cm; 5.0 µSv/h) is near the axis of a linear graph; a ±0.5 µSv/h reading gives µ = 0.134-0.144 1/cm, outside the 3 % tolerance. (10 cm; 20 µSv/h) is more robust, or widen the tolerance.
 
 ## Checked
-- s7 d task text (round-1 Blocking): the part now asks for the estimate of electrical energy with the efficiency of a thermal power plant, so the third rubric criterion asks only what the task asks, and the given "about a third" is enough to solve it. Solution "Find" updated to match. Recomputed: 3.15 MJ : 300 MJ = 1.05 %, 2.05 MJ : 300 MJ = 0.68 %, 3.15 MJ : 3 = 1.05 MJ = 0.35 % of 300 MJ. Points 1 + 1 + 1 = 3.
-- s7 c answer: the reason for two significant figures is now the temperature difference 80 K, which is the right reason (the task gives 20 C; 3.15 MJ and 4.19 kJ/(kg K) have three). 3.15e6 J : (4190 J/(kg K) * 80 K) = 9.40 kg; the three-figure answer is still accepted under "Hyväksytään myös".
-- s7 e first criterion: one fitting reason is enough; both examples are correct and in the solution.
-- Task text: the three data rows are now full sentences under "Further information"; values unchanged (4.19 kJ/(kg K), 300 MJ, a third).
-- practice.py check OK (7 tasks, 110 points). Hash the same at the start and the end.
+- Read the en tasks.json entries and solutions of s8 and s9 and the intro in this language's packet. Every number, unit and rounding is the same as in fi (0.14 1/cm, 6.6 µSv/h, 330 h, 2.2 mSv, 3.03 µSv/h, 23.6 -> 24 cm rounded up, 31.6 cm error; 72 km/s/Mpc, 116.7 -> 120 Mpc, 2.333e-18 1/s, 4.286e17 s, 1.358e10 a); the meaning of every criterion, common mistake and accepted method matches fi. Decimal points throughout.
+- One script (scratchpad rc_moderni.py) recomputed all of them from the figures' own data (80 µSv/h, half-value 5.0 cm; H0 = 72, nine points, LS slope 72.4) beside answers.py: all agree.
+- Physics as in fi: exponential attenuation (half-value route accepted), H = Ḣt, 1 mSv public limit; 1/H0 as the Hubble time with the non-constant rate stated. Points 13 and 13; criteria sum to part points.
+- Intro: nine problems match the set. The "Yleisiä virheitä"/"Hyväksytään myös" headings are the parsed fixed headings used by all nine tasks.
+- practice.py check OK; hash the same at start and end.

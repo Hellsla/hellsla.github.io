@@ -794,7 +794,7 @@
      "id": "c",
      "kind": "calc",
      "points": 4,
-     "text": "Toinen ryhmä käytti samaa palikkaa ja pöytää, mutta heidän jousivaakansa näytti kuormittamattomana $0{,}3\\,\\text{N}$, eikä ryhmä huomioinut sitä. Kun tukivoima oli $10\\,\\text{N}$, vaaka näytti $2{,}4\\,\\text{N}$. Laske kitkakerroin, jonka ryhmä sai tästä lukemasta, ja oikea kitkakerroin sekä virheen suuruus prosentteina oikeasta arvosta. Selitä myös, miksi nollavirhe ei vaikuttaisi kulmakertoimeen, jos kerroin määritettäisiin koko mittaussarjasta sovitetun suoran avulla.",
+     "text": "Toinen ryhmä käytti samaa palikkaa ja pöytää, mutta heidän jousivaakansa näytti kuormittamattomana $0{,}3\\,\\text{N}$, eikä ryhmä huomioinut sitä. Kun tukivoima oli $10\\,\\text{N}$, vaaka näytti $2{,}4\\,\\text{N}$. Laske kitkakerroin, jonka ryhmä sai tästä lukemasta, ja oikea kitkakerroin sekä virheen suuruus prosentteina oikeasta arvosta. Perustele lisäksi, miten nollavirhe vaikuttaisi kulmakertoimeen, jos kerroin määritettäisiin koko mittaussarjasta sovitetun suoran avulla.",
      "answer": [
       {
        "name": "mu_wrong",
@@ -850,7 +850,7 @@
        "detail": "Kaksi todellista heikkoutta ja niiden vaikutus, esimerkiksi: vetonopeus ei pysy täsmälleen vakiona, jolloin vaa'an lukema heiluu; jokaisella tukivoimalla on vain yksi mittaus; asteikkoväli $0{,}1\\,\\text{N}$ tekee pienen tukivoiman suhteellisesta virheestä suuren ($0{,}05\\,\\text{N} : 1{,}1\\,\\text{N} \\approx 5\\,\\%$ pisteessä $N = 5\\,\\text{N}$); pöydän pöly tai kosteus."
       },
       {
-       "text": "Kertoo kummallekin heikkoudelle parannuksen, esimerkiksi: toista mittaus kolme kertaa ja laske keskiarvo, käytä voima-anturia tai tasaista veto-laitetta, lisää mittauspisteitä ja laajenna tukivoiman aluetta, pyyhi pöytä ennen mittausta.",
+       "text": "Kertoo kummallekin heikkoudelle parannuksen, esimerkiksi: toista mittaus kolme kertaa ja laske keskiarvo, käytä voima-anturia tai vetolaitetta, lisää mittauspisteitä ja laajenna tukivoiman aluetta, pyyhi pöytä ennen mittausta.",
        "tag": "experiment",
        "points": 1
       }
@@ -933,7 +933,7 @@
        "detail": "$I = \\dfrac{12\\,\\text{mT}}{2{,}47\\,\\text{mT/A}} \\approx 4{,}9\\,\\text{A}$"
       },
       {
-       "text": "Huomaa, että tulos on ekstrapolointia: suurin mitattu virta oli $2{,}5\\,\\text{A}$ ja tarvittava virta on noin kaksinkertainen. Ei voi tietää, pysyykö riippuvuus suorana, esimerkiksi käämin lämmetessä, joten tulos on vain arvio ja se on tarkistettava mittaamalla.",
+       "text": "Huomaa, että tulos on ekstrapolointia: suurin mitattu virta oli $2{,}5\\,\\text{A}$ ja tarvittava virta on noin kaksinkertainen. Käämin ja virtalähteen on kestettävä tällainen virta. Tulos on vain arvio, ja se on tarkistettava mittaamalla.",
        "tag": "graph",
        "points": 1
       }
@@ -998,7 +998,7 @@
        "points": 1
       },
       {
-       "text": "Nimeää toisen heikkouden ja parannuksen, esimerkiksi: jokaisella virralla vain yksi lukema, joten toista mittaukset; virta lämmittää käämiä ja muuttaa sen resistanssia, joten pidä virta päällä vain lyhyen ajan; anturin täytyy olla käämin keskellä.",
+       "text": "Nimeää toisen heikkouden ja parannuksen, esimerkiksi: jokaisella virralla vain yksi lukema, joten toista mittaukset; jos virtalähde säätää jännitettä, virta voi lämpenevässä käämissä ajautua, joten lue virta jokaisella lukemalla ja pidä virta päällä vain lyhyen ajan; anturin täytyy olla käämin keskellä.",
        "tag": "experiment",
        "points": 1
       }

@@ -408,7 +408,7 @@ kaksi merkitsevää numeroa kuten jarrutusmatkoissa ja kulmakertoimessa.
 **Kysytty:** näkyykö systemaattista virhettä ja mitä kuvaaja kertoo satunnaisesta vaihtelusta
 **Periaate:** Liukukitkavoima on suoraan verrannollinen tukivoimaan, $F_\mu = \mu N$, joten pisteiden pitäisi olla origon kautta kulkevalla suoralla. Systemaattinen virhe siirtää kaikkia pisteitä samaan suuntaan, satunnainen virhe hajottaa niitä molempiin suuntiin (luku *Mittaaminen ja mittauksen luotettavuus*).
 **Kuvaajan lukeminen:** Pisteet ovat lähes suoralla, joka kulkee origon kautta. Pisteiden poikkeamat suorasta ovat enintään noin $0{,}1\,\text{N}$, ja poikkeamat ovat välillä ylös ja välillä alas.
-**Mallivastaus:** Systemaattista virhettä ei näy: jos jousivaaka olisi nollattu väärin, suora leikkaisi pystyakselin origon yläpuolella tai alapuolella, ja kaikki pisteet olisivat saman matkan päässä oikeasta paikastaan. Tässä suora kulkee origosta, joten mittaus on vähintään nollakohdan osalta kunnossa. Pisteiden hajonta suoran molemmin puolin on satunnaista vaihtelua, esimerkiksi vaa'an lukeman heilumista vetäessä ja lukemistarkkuutta. Sen suuruus on samaa luokkaa kuin asteikkoväli $0{,}1\,\text{N}$.
+**Mallivastaus:** Systemaattista virhettä ei näy: jos jousivaaka olisi nollattu väärin, suora leikkaisi pystyakselin origon yläpuolella tai alapuolella, ja kaikki pisteet olisivat saman matkan päässä oikeasta paikastaan. Tässä suora kulkee origosta, joten mittaus on vähintään nollakohdan osalta kunnossa. Asteikkovirhe eli väärä jousivaa'an kalibrointi antaisi silti origon kautta kulkevan suoran, joten tämä ei sulje pois kaikkia systemaattisia virheitä. Pisteiden hajonta suoran molemmin puolin on satunnaista vaihtelua, esimerkiksi vaa'an lukeman heilumista vetäessä ja lukemistarkkuutta. Sen suuruus on samaa luokkaa kuin asteikkoväli $0{,}1\,\text{N}$.
 **Järkevyys:** Kun tukivoima on $0\,\text{N}$, kitkavoima on nolla, joten suoran täytyy kulkea origon kautta. Poikkeamat ovat noin $2\,\%$ suurimmasta kitkavoimasta, joten vaihtelu on pientä.
 
 ### b)
@@ -504,7 +504,7 @@ n &= \dfrac{2{,}47 \cdot 10^{-3}\,\text{T/A}}{4\pi \cdot 10^{-7}\,\text{Vs/(Am)}
 &\approx 1{,}96 \cdot 10^{3}\,\text{1/m}
 \end{aligned}
 $$
-**Vastaus:** $n \approx 2{,}0 \cdot 10^{3}\,\text{1/m}$ eli noin $20$ kierrosta senttimetrillä. Kaksi merkitsevää numeroa, koska luetut arvot ovat kaksi- tai kolminumeroisia.
+**Vastaus:** $n \approx 2{,}0 \cdot 10^{3}\,\text{1/m}$ eli noin $20$ kierrosta senttimetrillä. Kaksi merkitsevää numeroa, koska luetut arvot ovat kaksinumeroisia.
 **Järkevyys:** Tavallisessa koekäämissä on kymmeniä kierroksia senttimetrillä, joten luku on sopiva. Yksikkö: $\text{T/A} : \text{Vs/(Am)} = \text{1/m}$, koska $1\,\text{T} = 1\,\text{Vs/m}^2$.
 
 ### b)
@@ -520,7 +520,7 @@ I &= \dfrac{12\,\text{mT}}{2{,}47\,\text{mT/A}} \\
 \end{aligned}
 $$
 **Vastaus:** Tarvittava virta on noin $4{,}9\,\text{A}$, kaksi merkitsevää numeroa kuten luetuissa arvoissa.
-**Järkevyys:** Virta on $4{,}9 : 2{,}5 \approx 2$ kertaa suurin mitattu virta, joten tulos on ekstrapolointia mittausalueen ulkopuolelle. Kuvaaja ei kerro, pysyykö riippuvuus suorana: suuri virta lämmittää käämin johdinta ja kasvattaa sen resistanssia, ja virtalähde ei välttämättä jaksa antaa tällaista virtaa. Tulos on siis arvio, ja se tarkistetaan mittaamalla.
+**Järkevyys:** Virta on $4{,}9 : 2{,}5 \approx 2$ kertaa suurin mitattu virta, joten tulos on ekstrapolointia mittausalueen ulkopuolelle. Mallin $B = \mu_0 n I$ mukaan riippuvuus pysyy suorana, mutta sitä ei ole mitattu tällä alueella. Lisäksi käämin johtimen ja virtalähteen on kestettävä tällainen virta. Tulos on siis arvio, ja se tarkistetaan mittaamalla.
 
 ### c)
 **Annettu:** nollalukema $B_0 = 0{,}04\,\text{mT}$ virralla $0\,\text{A}$
@@ -547,11 +547,11 @@ $$
 
 Systemaattinen virhe, nollalukema $0{,}04\,\text{mT}$, poistetaan mittaamalla lukema virran ollessa nolla ja vähentämällä se kaikista lukemista. Toinen keino on kääntää virran suunta ja laskea $B$ lukemien erotuksen puolikkaana, jolloin vakiokenttä kumoutuu.
 
-Toinen heikkous on, että jokaisella virralla on vain yksi lukema. Mittaukset toistetaan ja otetaan keskiarvo. Lisäksi virta lämmittää käämiä ja muuttaa sen resistanssia, joten virta pidetään päällä vain lyhyen aikaa kunkin lukeman ajan.
+Toinen heikkous on, että jokaisella virralla on vain yksi lukema. Mittaukset toistetaan ja otetaan keskiarvo. Lisäksi lämpenevässä käämissä virta voi ajautua, jos virtalähde säätää jännitettä, tai anturin lukema voi ajautua lämpötilan mukana. Siksi virta luetaan jokaisella lukemalla ja pidetään päällä vain lyhyen aikaa.
 
 ### Yleisiä virheitä
 - a-kohdassa kulmakerroin luetaan mittauspisteistä, jotka ovat lähekkäin, tai suoran jyrkkyys lasketaan yksikössä $\text{mT/A}$ ilman muunnosta teslaksi, jolloin $n$ tulee $1000$ kertaa liian suureksi.
-- b-kohdassa virraksi lasketaan $12 : 6{,}2 \cdot 2{,}5\,\text{A}$ tai tuloksen luotettavuutta ei arvioida, vaikka tulos on mittausalueen ulkopuolella.
+- b-kohdassa kulmakerroin käännetään väärin päin ($I = kB$) tai tuloksen luotettavuutta ei arvioida, vaikka tulos on mittausalueen ulkopuolella.
 - c-kohdassa nollalukema pidetään satunnaisena virheenä, tai väitetään, että se muuttaa kulmakerrointa.
 - d-kohdassa virhelähteen nimeämisestä puuttuu sen vaikutus tulokseen tai parannus.
 

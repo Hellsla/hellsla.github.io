@@ -794,7 +794,7 @@
           "id": "c",
           "kind": "calc",
           "points": 4,
-          "text": "Toinen ryhmä käytti samaa palikkaa ja pöytää. Heidän jousivaakansa näytti kuormittamattomana $0{,}3\\,\\text{N}$, eikä ryhmä ottanut sitä huomioon. Kun tukivoima oli $10\\,\\text{N}$, vaaka näytti $2{,}4\\,\\text{N}$. Laske kitkakerroin, jonka ryhmä sai tästä lukemasta. Laske myös oikea kitkakerroin ja virhe prosentteina oikeasta arvosta. Selitä lisäksi, miksi nollavirhe ei muuttaisi kulmakerrointa, jos kerroin määritettäisiin koko mittaussarjan suoralta.",
+          "text": "Toinen ryhmä käytti samaa palikkaa ja pöytää. Heidän jousivaakansa näytti kuormittamattomana $0{,}3\\,\\text{N}$, eikä ryhmä ottanut sitä huomioon. Kun tukivoima oli $10\\,\\text{N}$, vaaka näytti $2{,}4\\,\\text{N}$. Laske kitkakerroin, jonka ryhmä sai tästä lukemasta. Laske myös oikea kitkakerroin ja virheen suuruus prosentteina oikeasta arvosta. Perustele lisäksi, miten nollavirhe vaikuttaisi kulmakertoimeen, jos kerroin määritettäisiin koko mittaussarjan sovitetulta suoralta.",
           "answer": [
             {
               "name": "mu_wrong",
@@ -933,7 +933,7 @@
               "detail": "$I = \\dfrac{12\\,\\text{mT}}{2{,}47\\,\\text{mT/A}} \\approx 4{,}9\\,\\text{A}$"
             },
             {
-              "text": "Huomaa, että tulos on ekstrapolointia. Suurin mitattu virta oli $2{,}5\\,\\text{A}$, ja tarvittava virta on noin kaksinkertainen. Ei voi tietää, pysyykö riippuvuus suorana, esimerkiksi kun käämi lämpenee. Tulos on vain arvio, ja se pitää tarkistaa mittaamalla.",
+              "text": "Huomaa, että tulos on ekstrapolointia. Suurin mitattu virta oli $2{,}5\\,\\text{A}$, ja tarvittava virta on noin kaksinkertainen. Käämin ja virtalähteen on kestettävä tällainen virta. Tulos on vain arvio, ja se pitää tarkistaa mittaamalla.",
               "tag": "graph",
               "points": 1
             }
@@ -998,7 +998,7 @@
               "points": 1
             },
             {
-              "text": "Nimeää toisen heikkouden ja parannuksen. Esimerkiksi: jokaisella virralla on vain yksi lukema, joten toista mittaukset. Virta lämmittää käämiä ja muuttaa sen resistanssia, joten pidä virta päällä vain lyhyen aikaa. Anturin täytyy olla käämin keskellä.",
+              "text": "Nimeää toisen heikkouden ja parannuksen. Esimerkiksi: jokaisella virralla on vain yksi lukema, joten toista mittaukset. Jos virtalähde säätää jännitettä, virta voi lämpenevässä käämissä ajautua. Siksi lue virta jokaisella lukemalla ja pidä virta päällä vain lyhyen aikaa. Anturin täytyy olla käämin keskellä.",
               "tag": "experiment",
               "points": 1
             }
