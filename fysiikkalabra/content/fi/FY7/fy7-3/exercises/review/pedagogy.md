@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 74e9158eec247049
+CONTENT-HASH: 61af862a9c150717
+SCOPE: delta md-paragraphs,numbers,reflow,typography from 74e9158eec247049 base cabadc3
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- solutions.md fy7-3-L2-06 (Kaava): the derived $I = 2\pi Br/\mu_0$ comes before the law $B = \mu_0 I/(2\pi r)$; put the law first, then solve.
 
 ## Checked
-- Angle markup changed from {}^\\circ to ^\\circ in L2-07 (text, feedback, solution), L3-04 and the L3-04 task text; no numbers changed, wording intact.
-- Caption markers (esimerkkiaineisto) removed; the task still says 'Aineisto on esimerkkiaineisto' in its text, which is fine.
-- Figures coil-fit and wire-graph-task: untouched.
+- Diff is the Kaava step of the model solutions only: each now runs basic law, derived formula, symbolic simplification, then the Sijoitus; no number, unit or answer changes.
+- Aligned Kaava blocks read in order and each row is one step (the packet shows them flattened; solutions.md has the aligned rows).
+- Where a paragraph was split (Mallivastaus, Vastaus, Sijoitus) the content is unchanged and each paragraph is shorter.
+- Solutions stay complete (Annettu, Kysytty, Periaate, Muunnokset, Sijoitus, Järkevyys) and followable.
+- Language checked: fi. Hash 61af862a9c150717 at start and end.

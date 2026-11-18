@@ -66,6 +66,7 @@ vaatii tiede- ja pedagogiikkakatselmoinnin (rivitys luokittuu `numbers`/`wording
 opiskelijan laskut ja lauseen sisäiset ketjut fy3-4, fy3-5, fy3-12, fy3-15 sekä fy3-10:n `\dfrac`).
 
 ## 6. Kuvatehtävät ja taulukkotehtävät FY9 (opettaja 2026-11-13…15)
+FY9 A tehty (claude/fy9-a-kuvatehtavat, #714): fy9-voimat s7–s8, fy9-ympyraliike s8–s9, fy9-sailymislait s7–s8, fy9-energia s8–s9; FY9 B on toisen työntekijän.
 FY9 C tehty (PR #717, claude/fy9-c-kuvatehtavat): fy9-sahkokentta s7–s8, fy9-magnetismi-valo s8–s9, fy9-moderni s8–s9, fy9-mittaaminen s7–s8, fy9-kokeellisuus s7–s8 (loki §6 FY9 C); koordinaattori kirjaa rivin yhteen kohtaan A:n ja B:n kanssa.
 Kaksi kuvatehtävää per luku hyväksytty kustannuksesta huolimatta (noin 300 k per luku); FY10:een ja FY14:ään ei. Jokaisessa
 luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka kolmannessa; arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit
@@ -92,9 +93,10 @@ Turha pystyväli kuvan vierellä, kuva ja pieni taulukko tai kaksi pientä taulu
 viereen, valokuva kuvateksteineen oikealle palstalle (`build.py fig_rows`, site.css, `check_layout.py`). Ennen/jälkeen-kuvat: fy3-8, fy4-3, fy1-1 (1280, 1440, 1920 px). Täysi kuvaus: loki §8e.
 
 ## 8f. Animoitu kuva (opettaja 2026-11-13, pilotti fy3-8)
-Pilotti tehty (#649, `Fig(anim=True)`/`vibrate()`) ja opettajan hyväksymä (commit 615ab0d). **Opettaja 2026-11-18 klo 20.55 ("joo"): laajennetaan muihin lukuihin.** Ensin ehdokasluettelo (luvut, joissa ilmiö on luonnostaan liikettä, esim. FY7 värähtelyt ja aallot, FY3 lämpöliike ja diffuusio, FY6 virta johtimessa) opettajalle, kuvat vasta hyväksynnän jälkeen. Vaatimukset: loki §8f.
+Pilotti tehty (#649, `Fig(anim=True)`/`vibrate()`) ja opettajan hyväksymä (commit 615ab0d). **Opettaja 2026-11-18 klo 20.55 ("joo"): laajennetaan muihin lukuihin.** Ensin ehdokasluettelo (luvut, joissa ilmiö on luonnostaan liikettä, esim. FY7 värähtelyt ja aallot, FY3 lämpöliike ja diffuusio, FY6 virta johtimessa) opettajalle, kuvat vasta hyväksynnän jälkeen. Ehdokasluettelo `docs/audits/2026-11-18-8f-ehdokkaat.md` (#737). **Opettaja 2026-11-18 klo 22.00: tehdään ehdokkaat 1–5 ja 10 (fy5-10 birth ja types, fy5-13 superpositio ja solmut, fy5-7 ympyra ja osat, fy3-9 micro-boyle ja fy3-3 micro-model, fy4-10 vuorovaikutus ja tyypit); still-kuva säilytetään talteen (ei korvata).** Ensin jaettu figlib-primitiivi (travel/drift/orbit) yksin, sitten kuvat kurssi kerrallaan. Vaatimukset: loki §8f.
 
 ## 8g. Mallivastaukset perusperiaatteesta (opettaja 2026-11-13)
+Tehty: FY4 (#727, 2026-11-18; 5d FY4: FY4.tsv:n rivit jäivät, CI-selain näkee 4–6 px:n leikkaukset). FY7 tehty (PR #726, loki §8g FY7). Jäljellä FY5, FY6, FY1–FY3, FY8.
 Tehtävien, Sovellan ja kokeiden mallivastausten Kaava-vaihe alkaa perusyhtälöistä ($\eta = E_\text{hyöty}/E$, $E = Pt$, $Q = rm$, energiatase),
 sitten johdettu kaava, symbolinen sievennys loppuun, vasta sitten sijoitus. Kurssi kerrallaan `/exercises`- ja `/practice`-putkella; yhdistetään saman kurssin
 kesken olevaan tehtäväkatselmointiin (FY5, FY6, FY7), ei rinnakkain.
@@ -106,10 +108,6 @@ FY7 tehty (0f-PR 2: fy7-1, 3–10, 12–14; `docs/audits/2026-11-17-8j-FY7.md`).
 FY8 tehty (0f-PR claude/fy8-0f: fy8-1, 2, 4–16; `docs/audits/2026-11-18-8j-FY8.md`).
 Jäljellä FY1:n fy1-1 ja fy1-8 (kertaus paljastaisi Ennusta-vastauksen; kysymys opettajalle, FY1-audit) ja fy2-1. Sääntö: `herata`-vaiheen retrieval-`choice` kysyy pohjatietoa saman ilmiön kautta. Lopuksi sivupohjan muutos:
 Pohdinnan järjestys ilmiö → kertaustehtävä → pohdintakysymys (`inquiry.py`/js; kirjataan `docs/inquiry.md`:hen).
-
-## 8k. Opettajan hyväksymä tekstimuutos ohittaa katselmoinnin (opettaja 2026-11-13)
-Uusi kategoria `teacher-text` kuten `teacher-figure`: `reviews.py approve-text <id> [--lang]` kirjaa hyväksytyn diffin (esim. `docs/teacher-text.tsv`),
-`scope` antaa none/carry, `verify` johtaa uudelleen. Vain opettajan nimenomaisesta hyväksynnästä. Jaettu (`scripts/reviews.py`, testit): yksin.
 
 ## 8l-b. "Esimerkkiaineisto" pois otsikoista (opettaja 2026-11-16)
 `caption-label` tunnistaa kaikki muodot (#658); poistettu FY1, FY2, FY4, FY6, FY7, FY8 (fy8-2, fi, fi-easy, en; 0f-PR claude/fy8-0f). FY5 tehty (0f-PR #671). Jäljellä muut kurssit:
@@ -174,7 +172,6 @@ Raportti tehty (#721, `docs/audits/2026-11-18-lopputarkistus-FY1-FY8.md`). **Hyv
 
 ## 20. Opettajan päätökset 2026-11-18 klo 18.33 (koordinaattorin chatissa, "mennään ehdotustesi mukaisesti")
 Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jälkeen; tämä rivi on hyväksynnän kirjaus (sääntö 5).
-- FY8: `kortit/fi/fy8.json` fy8-annihilaatio korjataan kuten en-kortti (#707); fy8-kosminen-inflaatio: lisätään luvun fy8-16 tekstiin lause kosmisesta inflaatiosta (kaikki kielet); fy8-12 yksikkö "1/min" → min⁻¹. #718:n jälkeen.
 - FY3: 8l-b "Esimerkkiaineisto:" pois myös tehtävien `text`-kentistä (fy3-4, 6, 7, 8, 10, 11, 13; kaikki kielet; delta-katselmoinnit). #724:n jälkeen.
 - 8j: fy1-1, fy1-8 ja fy2-1 ohitetaan (ei kertaustehtävää).
 - 5d: FY5:n 16 ja FY6:n 25 jäljellä olevaa riviä jäävät listalle (myös fy5-7 `x = A \sin(…)`).
@@ -182,6 +179,8 @@ Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jäl
 - FY6 Sovella: vastauksen paljastavat alakohdat ja ajautumisnopeus/idealisointi korjataan; ei uusia tehtävätyyppejä (ei diodi- eikä Kirchhoff-tehtäviä).
 - Pienet: header-raja 72 rem hyväksytty (jaettu, site.css); kirjavinkeissä suorat Finna-teoslinkit ja "Tiede – luovaa leikkiä" -kirjan suomenkielinen painos, jos löytyy; podcasteille YouTube-linkit sallittu; FY10:n taulukko-otsakkeet 390 px:ssä lyhennetään.
 - 0g PR 2 aloitetaan, kun päivän PR-jono on tyhjä. 8k (teacher-text) toteutetaan.
+- Podcastien YouTube-linkit jätetään pois toistaiseksi (opettaja 2026-11-18 klo 22.00).
+- 11 U2: opettaja 2026-11-18 klo 22.00: toimintarivin järjestys Kirjoita ratkaisu → vastauskenttä → Tarkista ("ensin kirjoitetaan ratkaisu, vasta sitten tarkistetaan"); uudet kuvat opettajalle ennen yhdistämistä.
 - Podcastit-sivun (fi) muu kieli -laatikon teksti (opettaja 2026-11-18 klo 19.00, "käy"): lead "Haluatko kuulla fysiikkaa myös englanniksi?"; text "Tutustu englanninkielisiin fysiikan podcasteihin, dokumentteihin ja opetusvideoihin. Tutut ilmiöt avautuvat uudesta näkökulmasta, ja samalla opit fysiikan sanastoa englanniksi."; link ennallaan.
 - Kirjavinkkien Finna-tietuelinkit ja podcastien YouTube-linkit odottavat: Finna estää koneellisen haun (Cloudflare), YouTube-linkki vaatisi jaetun muutoksen (`media_tips.py`) ja opettajan päätöksen.
 

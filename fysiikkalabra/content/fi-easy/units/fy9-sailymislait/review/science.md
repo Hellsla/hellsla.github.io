@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: dccc950751fa014f
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 4cb6396da76519c3
+SCOPE: delta: s8 d rubric detail (tasks.json): inline "W_air = 27,4 J − 33,9 J ≈ −6,5 J" became a two-row aligned display (= row, ≈ row); same numbers, order, signs, units; rest not re-judged. Language: fi-easy.
 
 ## Blocking
 - (none)
 
 ## Polish
-- (none)
+- Earlier Polish stays recorded: s8 b "47 km/h" vs unrounded 45 km/h ("noin 45 km/h"); s7 d closing air-resistance remark is outside the task's assumption.
 
 ## Checked
-- solutions.md b) model answer, tasks.json criterion and unit.md Yleisiä virheitä: kinetic energy becomes internal energy and sound in an inelastic collision; momentum is not a form of energy and cannot become internal energy. The three places now say the same thing; unit.md's new 'sisäenergiaksi muuttuu liike-energiaa' is more precise than before and agrees with the next bullets.
-- Numbers around the hunk (−12 %, −3 %, 0,01 m/s²) untouched.
-- No added task (last is s6). practice.py check: OK, 6 tasks, 95 points.
+- E_p = 0,43 kg · 9,81 m/s² · 6,5 m ≈ 27,4 J (27,42) unchanged.
+- W_air = 27,4 J − 33,9 J ≈ −6,5 J: same operands, minus sign, unit J; only the line break before "≈" added.
+- Connector word ("ja"/"and") between two display blocks reads fine; nothing new appears.
+- Meaning equal across fi, en, fi-easy.
+- Not judged (visual role): 360 px layout.
+- Hash the same at start and end.

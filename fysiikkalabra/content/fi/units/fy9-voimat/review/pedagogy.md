@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: b3f1ae734e0cf71d
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 33f954faa91767d5
+SCOPE: delta: fi; only change since the previous pass is s7 b) rubric detail (tasks.json), Substitution/Sijoitus row "F_v = 75,0 kg · (9,81 m/s² − 1,5 m/s²)" split into three aligned rows for 360 px; other tasks not re-judged.
 
 ## Blocking
 - (none)
 
 ## Polish
-- C: inquiry.json Lähtötaso 6: the first distractor's feedback says "lepokitkan yläraja" for what the prompt now calls lähtökitka; it works as an explanation of the term, no change needed.
+- Earlier Polish items remain recorded and unchanged; nothing new.
 
 ## Checked
-- inquiry.json Lähtötaso 6 prompt: read with all four options and feedbacks; the new term does not reveal the answer (the 90 N distractor is as tempting as before) and matches the unit's formula name "lähtökitka, eli täysin kehittynyt lepokitka" (unit.md formula table).
-- sovella/solutions.md boat-ramp b) Järkevyys: "luiska pienentää tarvittavaa voimaa, ei työtä, mutta kitka syö siitä hyödystä paljon" corrects the old "keventää työtä" and reads well (665 N and 666 N against 2,7 kN unchanged).
-- solutions.md rajakulma Periaate: lähtökitka wording, formula m·g·sin α0 = μ0·m·g·cos α0 unchanged.
-- Item 19: this unit's diff holds no added task.
+- tasks.json s7 b detail now reads F_v = 75 kg; · (9.81 − 1.5 m/s² split over two lines); ≈ 623 N: same numbers, order, signs and units; 75.0 · 8.31 = 623 N holds.
+- Identical structure in fi, en and fi-easy; no new content, wording or step added.

@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9c560683833c7d8b
-SCOPE: delta added-exercise from 0311e476009c3306 base 8f23aa7ae3bd
+CONTENT-HASH: 1158a87cfa9aa918
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- solutions.md ~217 — the Formula writes $\Phi_\text{min}$ and the Substitution $\Phi_{\min}$; use one form.
 
 ## Checked
-- L2-10 now asks 70 km, beyond the graph: 7 halvings, 0.78 %; L2-09: 4.2 V x 4/6 = 2.8 V; description does not give the line counts.
-- Language checked: en. Hash 9c560683833c7d8b at start; unchanged at end.
+- Delta only: the changed Formula steps run basic law, derived formula, simplification, then substitution.
+- Symbols stay consistent between Formula and Substitution (A, a, L, P_0, P, e_0, Φ_0, N, f, f').
+- No Finnish subscripts or words in the formulas; the subscripts (max, min, in, battery, number of amplifiers) are English.
+- The dB derivation (lg P_0/P = A/10 dB, then 10^(-A/10 dB)) is correct and complete.
+- Language checked: en. Hash 1158a87cfa9aa918 at start and end.

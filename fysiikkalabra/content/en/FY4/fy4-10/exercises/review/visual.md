@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 4c8ce90c378a8e33
+CONTENT-HASH: 7c93a5461c9c4696
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] solutions.md, inelastic energy-loss task Formula: "$v' = ...$; The decrease ..." still has a capital after the semicolon; use a full stop or lower case.
+- [Minor] Round 1 polish (pendulum "equals", 110-word elastic-collision paragraph) unchanged; optional.
 
 ## Checked
-- Opened (this language's own captures, 1280 px, all solutions open) fy4-10-open-exercises-L3-1280-7 and L2-1280-18 (answer-text splits; solution of 14-23); also read every inserted break in the diff.
-- The new paragraph breaks render as separate paragraphs with even spacing, one thing per paragraph, no formula or row clipped, no awkward cut mid-thought.
-- Delta only (md-paragraphs in solutions.md); hash rechecked, unchanged.
+- Round 3 delta (solutions.md, one Formula line: "so $\Delta E$ equals ..."). Opened content/en/FY4/fy4-10/review/shots/fy4-10-open-exercises-L2-1280-3.png (the task's Substitution, Answer, Reasonableness, wrapped $\Delta E$ rows, and the start of the next task).
+- The "equals" split reads well, no clipping, layout intact. Hash unchanged at end.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

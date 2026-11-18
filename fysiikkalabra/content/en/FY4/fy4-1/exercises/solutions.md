@@ -179,7 +179,7 @@ The initial position is read from the intercept of the line: $x_0 \approx 0.49\,
 **Reading the graph:** A line is fitted for A close to the points $(0.0\,\text{s};\, 1.0\,\text{m})$ and $(8.0\,\text{s};\, 13.0\,\text{m})$ and for B close to the points $(0.0\,\text{s};\, 20.0\,\text{m})$ and $(8.0\,\text{s};\, 5.7\,\text{m})$. From these we get $v_\text{A} = \dfrac{13.0\,\text{m} - 1.0\,\text{m}}{8.0\,\text{s}} = 1.5\,\text{m/s}$ and $v_\text{B} = \dfrac{5.7\,\text{m} - 20.0\,\text{m}}{8.0\,\text{s}} \approx -1.8\,\text{m/s}$, and the initial positions are $x_{0\text{A}} = 1.0\,\text{m}$ and $x_{0\text{B}} = 20.0\,\text{m}$.
 
 The speed of cart B is greater ($1.8\,\text{m/s} > 1.5\,\text{m/s}$), but it moves in the negative direction toward A.
-**Formula:** $x_\text{A} = x_{0\text{A}} + v_\text{A}\,t$ and $x_\text{B} = x_{0\text{B}} + v_\text{B}\,t$. From the condition $x_\text{A} = x_\text{B}$ we get
+**Formula:** $x_\text{A} = x_{0\text{A}} + v_\text{A}\,t$ and $x_\text{B} = x_{0\text{B}} + v_\text{B}\,t$. The condition $x_\text{A} = x_\text{B}$ gives $x_{0\text{A}} + v_\text{A}\,t = x_{0\text{B}} + v_\text{B}\,t$, so $(v_\text{A} - v_\text{B})\,t = x_{0\text{B}} - x_{0\text{A}}$ and
 $$t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$$
 **Conversions:** All quantities are in the units $\text{m}$ and $\text{m/s}$, so no conversions are needed. The velocity of B is substituted as negative.
 **Substitution:**
@@ -210,7 +210,7 @@ $$\begin{aligned} v &= \dfrac{5.0\,\text{m} - 14\,\text{m}}{16\,\text{s} - 10\,\
 
 It is found by comparing the true value of a known length with the value of the program, and the correction multiplies the velocity by the same number.
 **Reading the graph:** The points are marked in the $(t, x_\text{prog})$ graph and a line is fitted through them. The line passes close to the points $(0.0\,\text{s};\, 0.31\,\text{m})$ and $(5.0\,\text{s};\, 3.52\,\text{m})$. With them the velocity given by the program is $v_\text{prog} = \dfrac{3.52\,\text{m} - 0.31\,\text{m}}{5.0\,\text{s}} \approx 0.64\,\text{m/s}$ and the initial position of the program is $0.31\,\text{m}$.
-**Formula:** correction factor $k = \dfrac{\ell_\text{true}}{\ell_\text{prog}}$, true velocity $v = k\,v_\text{prog}$ and position $x = k\,(x_{0,\text{prog}} + v_\text{prog}\,t)$
+**Formula:** correction factor $k = \dfrac{\ell_\text{true}}{\ell_\text{prog}}$. All lengths are multiplied by the same number, so $x = k\,x_\text{prog}$ and $v = k\,v_\text{prog}$. The program's position is $x_\text{prog} = x_{0,\text{prog}} + v_\text{prog}\,t$, so $x = k\,x_{0,\text{prog}} + k\,v_\text{prog}\,t = x_0 + v\,t$, where $x_0 = k\,x_{0,\text{prog}}$. Solved for time, $t = \dfrac{x - x_0}{v}$
 **Conversions:** All lengths are in metres and the times in seconds, so no unit conversions are needed.
 **Substitution:**
 
@@ -241,7 +241,7 @@ The error is corrected only by calibrating the scale with a known length from th
 
 The position of the police car is the equation of uniform motion, where the time is counted from its moment of passing. The car catches up with the truck when the positions are equal at the same moment.
 **Reading the graph:** The points are marked in the graph and a line is fitted through them. The line passes close to the points $(0\,\text{s};\, 203\,\text{m})$ and $(40\,\text{s};\, 598\,\text{m})$. From them the velocity of the truck is $v_\text{T} = \dfrac{598\,\text{m} - 203\,\text{m}}{40\,\text{s}} \approx 9.9\,\text{m/s}$ and the initial position $x_{0\text{T}} \approx 203\,\text{m}$.
-**Formula:** truck $x_\text{T} = x_{0\text{T}} + v_\text{T}\,t$ and police car $x_\text{P} = v_\text{P}\,(t - t_0)$. From the condition $x_\text{T} = x_\text{P}$ we get
+**Formula:** truck $x_\text{T} = x_{0\text{T}} + v_\text{T}\,t$ and police car $x_\text{P} = v_\text{P}\,(t - t_0)$. The condition $x_\text{T} = x_\text{P}$ gives $x_{0\text{T}} + v_\text{T}\,t = v_\text{P}\,t - v_\text{P}\,t_0$, so $x_{0\text{T}} + v_\text{P}\,t_0 = (v_\text{P} - v_\text{T})\,t$ and
 $$t = \dfrac{x_{0\text{T}} + v_\text{P}\,t_0}{v_\text{P} - v_\text{T}}$$
 and the position is $x = x_{0\text{T}} + v_\text{T}\,t$.
 **Conversions:** All quantities are in the units $\text{m}$, $\text{s}$ and $\text{m/s}$, so no conversions are needed.

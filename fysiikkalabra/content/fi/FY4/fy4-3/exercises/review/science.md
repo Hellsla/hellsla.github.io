@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: be8b26190b060e32
-
+CONTENT-HASH: b916fcbcac5a7c18
 ## Blocking
 
 ## Polish
+- solutions.md (all "Ensimmäinen laki: $\Sigma F = \dots$" rows) — the lesson's worked example writes the component $\Sigma F_x$; a direction subscript ($\Sigma F_y$ for the vertical cases, $\Sigma F_x$ for the horizontal ones) would match the lesson and the vector form $\Sigma\overline{F} = \overline{0}$ (carried over).
+- solutions.md L3-05 Kaava — "…ensimmäisen lain mukaan $\Sigma F = F_\text{ka} - F_\text{k} = 0$, joten $F_\text{k} = …$": "joten" follows "Nopeus on vakio, joten" in the same sentence; a full stop before the second would read better.
 
 ## Checked
-- L3-05 Periaate: "kärry vetää köyttä yhtä suurella voimalla kuin köysi kärryä. Oppilasta ei vedä kärry vaan köysi." This names the third-law pair correctly (cart and rope) and removes the earlier wrong pairing of the cart with the student. It closes the polish item of the previous rounds.
-- L3-05 Vastaus c): the cart pulls the rope backwards with the same $5{,}1\,\text{N}$ although the cart accelerates; the rope pulls the student's hand backwards and the hand pulls the rope forwards with an equal force. Both are correct interaction pairs. With the rope's mass neglected (stated in the task) the two pairs have the same magnitude, so nothing contradicts the sensor reading at the hand.
-- L2-06 Vastaus a): "pieni ilmanvastus on hyvin pieni" became "ilmanvastus on hyvin pieni". The physics is the same and agrees with the task text ("hyvin pieni ilmanvastus").
-- exercises.json: only the marker (esimerkkiaineisto) left the table captions; the task texts still say the tables are example data.
-- No number, symbol or answer changed: L3-05 b) $10{,}2\,\text{N} : 3 = 3{,}4\,\text{N}$ and L2-06 b) $0{,}500\,\text{m/s} \cdot 6{,}0\,\text{s} = 3{,}0\,\text{m}$ recomputed.
-- Hash be8b26190b060e32 at the start and at the end.
+- Round-1 Blocking fixed: L3-05 Kaava now names the mean with its own symbols, $F_\text{ka} = \dfrac{F_1 + F_2 + F_3}{3}$, then the first law $\Sigma F = F_\text{ka} - F_\text{k} = 0$, so $\Sigma F$ is again the net force as everywhere else in the set; Sijoitus "Lukemien summa $F_1 + F_2 + F_3$ on $10{,}2\,\text{N}$" matches; $3{,}4 + 3{,}5 + 3{,}3 = 10{,}2$, $10{,}2/3 = 3{,}40\,\text{N}$ → $3{,}4\,\text{N}$ (two figures as the readings); answer unchanged.
+- Signs: the rope pulls forward, friction backward; $F_\text{k}$ is friction as named in Kysytty; Periaate (constant speed → net force zero) applies to $t \ge 4{,}0\,\text{s}$, the three rows used.
+- The rest of the diff (first-law openings in L1-01…L3-04, $G_\text{m} = mg$ in L2-04, paragraph splits) as checked in round 1; no answer, tolerance, task or id changed.
+- Capture opened: fy4-3/review/shots/fy4-3-open-exercises-L3-1280-7.png (L3-05 Kaava renders the new mean and first-law rows; no $\Sigma F/n$ left).
+- Hash b916fcbcac5a7c18 at start and end.

@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f44c17044fad7b3b
-SCOPE: delta added-exercise from eb78314c0c339d07 base 8f23aa7ae3bd
+CONTENT-HASH: 454ce7b2aaed25f0
+SCOPE: delta md-paragraphs,numbers,reflow,typography from f44c17044fad7b3b base a5182aa
 
 ## Blocking
 - none
 
 ## Polish
-- fy7-4-L2-09: the question 'Määritä magneettivuon tiheys' is followed by the reading instruction; reorder so the question is last.
+- solutions.md fy7-4-L2-01, L3-02, L1-01 (Kaava): one-line chains; consistent with the 8g form only if the combined formula is shown as derived from the law (as L1-07 now does).
 
 ## Checked
-- L2-09: F_max at 90 deg = 0,45 N, B = 0,30 T, cross-checked with 30 deg (0,225 N); solution explains why 90 deg; figure description gives the same data as the plot without B.
-- Language checked: fi. Hash f44c17044fad7b3b at start and end.
+- Diff is the Kaava step of the model solutions only: each now runs basic law, derived formula, symbolic simplification, then the Sijoitus; no number, unit or answer changes.
+- Aligned Kaava blocks read in order and each row is one step (the packet shows them flattened; solutions.md has the aligned rows).
+- Where a paragraph was split (Mallivastaus, Vastaus, Sijoitus) the content is unchanged and each paragraph is shorter.
+- Solutions stay complete (Annettu, Kysytty, Periaate, Muunnokset, Sijoitus, Järkevyys) and followable.
+- Language checked: fi. Hash 454ce7b2aaed25f0 at start and end.

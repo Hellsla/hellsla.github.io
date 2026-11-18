@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 480116802ef413d9
+CONTENT-HASH: 61af862a9c150717
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] Kaava blocks — the Kaava box spans the full reading width while the Muunnokset and Sijoitus boxes shrink to their content, so the three boxes look slightly uneven; the equals signs align correctly in every row. Shared component, optional.
+- [Minor] Kaava blocks — the long chains (8 to 12 rows) are tall and rows sit tightly; fine at 1280 px, but no 360/390 px exercise captures were in the packet, so phone width is unverified here (check_layout at 360 and 390 px passes).
 
 ## Checked
-- Delta (md-paragraphs): the diff of solutions.md (fi, fy7-3) read word by word: only paragraphs cut in two, words unchanged.
-- Opened fy7-3 L2 part 12 and L3 parts 1-2 (fi). Captures opened at 1280 px, solutions open; paragraph breaks sit between whole thoughts, formula boxes, Vastaus and Järkevyys blocks intact, no clipping or overflow.
+- Delta: Kaava aligned blocks in solutions.md (one equation per row, aligned on =). Opened full-size 1280 px captures of opened solutions (lesson folder review/shots, current for this hash): fy7-3-open-exercises-L3-1280-4 (5-row block with fractions). KaTeX renders without errors, fractions, subscripts and units are legible, no clipping, overflow or red KaTeX, surrounding cards intact.
+- No phone-width exercise captures exist in the packet; not judged beyond the passing check_layout results.
 - Hash identical at start and end.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a · typography 4 · Finnish 5 · accessibility 4

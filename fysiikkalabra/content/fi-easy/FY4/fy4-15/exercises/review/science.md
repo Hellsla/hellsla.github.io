@@ -1,10 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: a6c04be5fc42821b
+CONTENT-HASH: 775b15e10f821e0e
+
 ## Blocking
 
 ## Polish
-1. lessons/FY4/fy4-15/answers.py, L2-01 comment says 96,56 m³/s; the value is 96,53 (the solution's 96,5 is right).
+- content/fi-easy/FY4/fy4-15/exercises/solutions.md (wind Kaava steps @@ -63, -93, -103, -172, -184, -234) — one sentence chains six formulas with "ja … joten … joten …", and the area is appended after the result ("…$= \tfrac12\eta\rho A v^3$, $A = \pi r^2$, josta …"); for S2 readers split it: the reference power, then the efficiency, then the area.
+- solutions.md (@@ -93 and -103, ratio tasks) — the cancellation assumes $\eta$ (and $\rho$, $A$ or $v$) the same in both cases; the Kaava step could say so in four words ("kun $\eta$ ja $A$ pysyvät samoina"), as the brief's lesson does for the cube law.
+- solutions.md (@@ -83, -158) — $t$ in $m = \rho Q t$ and in $E = Pt$ is the same span here, but the chain does not say it; "sama aika $t$" would avoid a doubt.
+- Earlier polish (answers.py L2-01 comment 96,56) still open; not part of this change.
+
 ## Checked
-- Recomputed independently: L1-01 15,9 MW; L1-03 92,0 % ($P_\text{a}/P_\text{o}$); L2-01 96,5 m³/s; L2-02 44,9 %; L2-03 40,7 kW; L2-04 5,73 MWh; L2-05 5,478 → 5,5 GWh; L2-06 18,8 → 19 GWh, May/Aug 4,3; L2-07 242 → 240 kW; L2-08 1,96 MW (distractors 20 kW ∝v, 0,2 MW ∝v², 90 MW unconverted: each right); L3-04 mean $P/v^3$ 1,252 kW s³/m³ → η 39,9 %, 2,75 MW > rated; L3-05 1,036·10⁶ m³, 86 %, 6,00 h.
-- Added tasks: L1-09 (MAFY ρ(0 °C) 1,29–1,293 → 1117–1120 kW, 4 % tolerance covers both), L2-09 (511 kW · 120 h = 61,3 MWh), L2-10 (1637/1017 = 1,61 vs 2,37) read from the V82 points as figures.py lists them; explanations (rated-power limit, pitch control) correct.
-- No $P_\text{s}$ left; answers equal in fi, fi-easy, en.
+- Hash 775b15e10f821e0e at the start and the end; since 062f457c28^ only `**Kaava:**` lines of solutions.md changed (numbers, answers, tolerances, tasks, ids, exercises.json, answers.py unchanged).
+- Hydro chain: $E_\text{p} = mgh$, $m = \rho Q t$, $P_\text{o} = E_\text{p}/t = \rho Q g h$, $\eta = P/P_\text{o}$ → $P = \eta\rho Q g h$: the brief's derivation, assumption of small kinetic energy unchanged from the lesson.
+- Wind chain: $m = \rho A v t$, $E_\text{k} = \tfrac12 mv^2$, $P_\text{tuuli} = \tfrac12\rho A v^3$, $\eta = P/P_\text{tuuli}$ → $P = \tfrac12\eta\rho A v^3$; $\eta$ defined against the undisturbed-wind reference power, as the brief says.
+- Rearrangements right: $Q = P/(\eta\rho g h)$, $\eta = 2P/(\rho A v^3)$, $\eta = 2k/(\rho A)$ with $k = P/v^3$, $E = \eta\rho g h(\sum Q)t$, $P = \tfrac12\eta\rho\pi r^2 v^3$.
+- Every Sijoitus substitutes into the last symbolic form; no number changed.
+- Notation as in the brief ($P_\text{o}$, $P_\text{tuuli}$, $\eta$).
+- Captures: none opened (fi-easy judged from text and the packet).

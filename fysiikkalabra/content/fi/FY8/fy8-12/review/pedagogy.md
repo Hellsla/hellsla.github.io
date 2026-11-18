@@ -1,8 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: a354e4ca44ab66bf
+CONTENT-HASH: 839e9fe5367a7bcf
 ## Blocking
-
 ## Polish
-- none
 ## Checked
-batch delta review: Rn-222 replaces Am-241 in the alpha review; question and options unchanged and still correct; Am-241 stays in the sim model text.
+batch delta review: the solution of the half-value-thickness graph task now writes the unit as min^-1 instead of 1/min; consistent with the task's "pulssia minuutissa", same numbers (800 to 400), steps and answer unchanged.

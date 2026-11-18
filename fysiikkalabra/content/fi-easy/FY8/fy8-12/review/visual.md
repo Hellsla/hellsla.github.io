@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: e716733e7904e15e
+CONTENT-HASH: 88c65d9e13445881
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Delta (radon-222 in the optional Kertaa prompt, paragraph cut): fy8-12-stage-herata-390 (Pohdinta, layout intact, Kertaa box closed), fy8-12-open-ennusta-1280-1 (card layout). The prompt text is plain Finnish, no plain quantity.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review: solution Sijoitus line now uses \text{min}^{-1} (clean unit, no stacked fraction); fig-9 capture opened (graph unchanged, axes and units legible); contact sheets not needed.

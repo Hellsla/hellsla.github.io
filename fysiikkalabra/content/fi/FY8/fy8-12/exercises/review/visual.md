@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 51f1be997aac34e8
+CONTENT-HASH: 15261a26498e83ce
 
 ## Blocking
 (none)
@@ -8,7 +8,9 @@ CONTENT-HASH: 51f1be997aac34e8
 - none
 
 ## Checked
-- Delta: unit "pulssia/min" to "1/min" in L2-09 (answer-field label). Opened fy8-12-open-exercises-L2-1280-13 (task with graph, input "1/min", answer 140 pulssia/min; graph and layout intact) and L3-1280-12 (solutions md-paragraph cuts: chains aligned, answer block set apart).
+- Delta: unit $\tfrac{1}{\text{min}}$ changed to $\text{min}^{-1}$ in L1-07 and L3-02 texts and solutions, answer-field unit "min⁻¹" (also L2-09, not opened).
+- Opened fy8-12-open-exercises-1280-5 (L1-07: task text, field "min⁻¹", Annettu/Kysytty/Sijoitus rows aligned, answer block, Järkevyys; $27\,\tfrac{1}{\text{s}}$ kept as is) and fy8-12-open-exercises-L3-1280-2 (L3-02 beginning: Annettu, Kysytty, Kaava render, no clipping).
+- Layout checks at 360-1280 px clean per packet.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

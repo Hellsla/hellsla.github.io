@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: ec48e7cd49143106
+CONTENT-HASH: e0098bccffc6e74b
 
 ## Blocking
 
 ## Polish
-- The correct option's feedback could add that on a film one reflection also inverts the wave, but only after Ennuste 1; as is, "sama ajatus" leaves no wrong picture (C).
+- lesson.md:369 — "Heijastuksen estävässä pinnoitteessa" differs from the glossary term "heijastuksenestopinnoite"; same meaning, arguably easier for S2 readers (language only, C).
 
 ## Checked
-batch delta review: round-1 finding fixed: the two waves now travel different routes in air, so path difference alone decides (975/650 = 1,5, destructive) and no film reflection is implied; the soap-film sentence is only motivation; the feedback does not reveal Ennuste 1's inversion answer; one correct option; distractor feedback right.
+- Delta round 2: only the Tiivistelmä bullet's opening words changed; physics unchanged: two phase inversions on a coating, thinnest destructive coating d = λ : (4n), MgF2 99,6 nm for 550 nm (550 / (4 · 1,38) = 99,6 nm).
+- Consistent with the soap-film bullet (one inversion) and the theory; same claim as the fi version.
+- Rest of the lesson carried from the round-1 PASS (hash ec48e7cd49143106); no numbers, symbols or inquiry content touched.

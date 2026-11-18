@@ -75,9 +75,9 @@
     {
       "id": "fy8-12-L1-07",
       "level": 1,
-      "text": "A student measures the radiation of a gamma source with a GM counter for $45\\,\\text{s}$ and gets $1215$ pulses. The background radiation has been measured earlier, and it causes $90$ pulses per minute in the counter. How many pulses per minute does the radiation of the source cause? Give the answer in the unit $\\tfrac{1}{\\text{min}}$.",
+      "text": "A student measures the radiation of a gamma source with a GM counter for $45\\,\\text{s}$ and gets $1215$ pulses. The background radiation has been measured earlier, and it causes $90$ pulses per minute in the counter. How many pulses per minute does the radiation of the source cause? Give the answer in the unit $\\text{min}^{-1}$.",
       "answer": 1530,
-      "unit": "1/min",
+      "unit": "min⁻¹",
       "tolerance": 0.02
     },
     {
@@ -336,7 +336,7 @@
         "data"
       ],
       "answer": 141.4,
-      "unit": "1/min",
+      "unit": "min⁻¹",
       "tolerance": 0.02
     }
   ],

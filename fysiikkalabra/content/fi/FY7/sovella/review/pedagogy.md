@@ -1,21 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 35d50fed670b3d0d
+CONTENT-HASH: b1adef22b9b88866
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- Työmäärä: 5 tehtävää, 26 osaa ja noin 90 pistettä on raskas 2 op:n moduulin Sovella-osuudeksi (arvio useita tunteja). Harkitse yhden osan (esim. s3 e tai s2 e) merkitsemistä lisätehtäväksi.
-- Dispositiot: s1 c, s2 a-b ja s3 a-b ovat lähes vihjeitä (levyjen jännite, tehollinen arvo, "14 jaksoa", "kaksi johdinta" annetaan tekstissä). Osat, joissa mallin valinta jää opiskelijalle, ovat d- ja e-kohdat; käsittele a-c-kohtia rauhassa lyhyempinä tai poista yksi vihje (esim. s3:n "kaksi johdinta" voisi päätellä kuvasta).
-- s5 a: tehtävänanto kertoo jo, että pisteisiin sopii origon kautta kulkeva suora. Itse akselien valinta (kλ ja sinθ) jää opiskelijalle, mutta lause voisi olla pelkkä "muodosta kuvaaja, josta hilan voi määrittää".
-- Kattavuus: kuvaajan laatiminen on edelleen "ohut näyttö", koska vain s5 a tekee sen. Aukko on todellinen; tämä tehtävä ei sulje sitä kokonaan. Polarisaatio (LOPS-sisältö) ja sähkömagneettisen säteilyn lähteet ja vaikutukset (tavoite) puuttuvat tehtävistä kokonaan; sano intron tai kattavuusraportin selityksessä, että ne harjoitellaan luvuissa.
-- s2 d: toisen osan (pyörrevirrat valon ollessa pois) pisteytys edellyttää, että opiskelija tietää dynamon rautasydämestä; mainitse tekstissä "rautasydän", se on jo siellä, joten kriteeri on reilu, mutta sana "pieni jarrutus" voisi olla mitattavampi.
-- s4 d: erotus 34 K ja lukuepävarmuus 36 K on sovitettu lähes täsmälleen; hyväksy rubriikissa myös perusteltu vastaus, jossa epävarmuus arvioidaan toisin.
+- fy7-s5 a: "kuvaaja, jonka kaikkiin kuuteen pisteeseen sopii sama origon kautta kulkeva suora" gives away that the model is linear through the origin. The rubric then asks the student to justify the axes (kλ, sin θ), so the demand is reduced. Better: "Muodosta mittauksista kuvaaja, josta hilan viivatiheys voidaan määrittää."
+- fy7-s4 c names the concept ("rajakulma", "heijastuu kokonaan"). Acceptable at this level, but "kuidun ytimen ja kuoren rajapinta" alone would be more independent.
+- fy7-s2 c Kaava: introduces N, B, A, which the task never gives. One line in Periaate saying they are the coil's constants, which cancel, would help.
+- fy7-s4 e Kaava: "Δs = ½λ" is valid only for the destructive condition. Periaate says so, but one more row, "heikennys: Δs = λ/2", would help.
+- Workload: five tasks of 16–17 points and 25 parts is heavy for a 2 op course. Acceptable, but do not add more.
+- Coverage: the gap "kuvaajan laatiminen aineistosta, 2 p" is real in the counter, but fy7-s5 a (5 p) closes it in substance (the counter apparently counts only the tagged criteria). No task covers polarisation, ferromagnetism or the motor and loudspeaker. Not a coverage gap as the file defines it, since all six competencies are covered.
 
 ## Checked
-- Jokainen tehtävä on aito, vieras tilanne (ioni-istutin, napadynamo, kaivoksen liittymä, pyrometri, hilaspektrometri) ja otsikot eivät nimeä kaavaa tai mallia.
-- Osat nousevat vaativuudessa: laskuista perusteluihin ja ehdotuksen arviointiin (insinööri, pyöräilijä, valtuutettu, valssaaja, opiskelija); jokaisessa tehtävässä on arvioitavaksi annettu väite.
-- Pisteytys on täsmällinen eikä anna pisteitä epäolennaisesta; yhteiset kriteerit (graph_*, equation, units_precision) on käytetty oikein ja jokaisessa on tehtäväkohtainen detail.
-- Ratkaisut opettavat: kysytty, periaate, kaava, järkevyys, hyväksytään myös; voimakuvaa edeltää yhtälö (s1 a). Yleiset virheet ovat todellisia (kilovolttien unohtaminen, nollakohtien väli jaksona, halkaisijoiden ero).
-- Tieteellinen sisältö vastaa packetin answers.py-arvoja (725 000 m/s, 2900 V, 846 kW, 362 nm, 589 nm).
-- Vaihtelu: hiukkaset, induktio, sähkönsiirto, lämpösäteily, valokuitu, ohut kalvo, hila; mukana kuvaaja-, epävarmuus- ja mallin pätevyys -tehtäviä.
+- Level: all five tasks are authentic and unfamiliar (ion implanter, hub dynamo, mine grid connection, pyrometer, hydrogen lamp). They have connected parts of rising demand, source material (graph, spectrum, table), and no heading or prompt that names a formula.
+- Variety: charged particles, induction, transmission, thermal radiation with a fibre and a thin film, grating with a graph. The word tasks "Arvioi väitettä" (evaluate a claim) are good misconception tests (s1 e, s2 d, s3 d, s5 d, s5 e).
+- Rubrics: fair, the shared keys are used, and the points total correctly. No points go to irrelevant things.
+- Kaava step (work queue 8g): checked in every task. It runs basic law, then derived formula, then symbolic simplification, and the substitution follows the last symbolic form. Examples are s1 b (W = eU → ΔE_k → v), s3 a (R = ρl/A, P = UI → P_h), s2 e (η → P_otto = Fv → F). The diagram comes before the equations in s1 a. The Kaava step is missing only in word parts, which is fine.
+- Solutions: all seven steps are present and each includes a check of reasonableness. They state the assumptions (s2 c) and give accepted alternatives.
+- Common mistakes: real and specific (a factor of 2 in the period, 2π versus π, one conductor length versus two, the root-two factor, the order of the swapped refractive indices).
+- Physics claims: not judged (science reviewer).

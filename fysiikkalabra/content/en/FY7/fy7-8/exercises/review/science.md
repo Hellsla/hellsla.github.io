@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 439634de4b2d47e2
+CONTENT-HASH: c6b17c0a5ccb80ab
 
 ## Blocking
 
 ## Polish
 
-
 ## Checked
-- Delta round 2: compared with the version passed in round 1 (commit 1ec494e0df) with the row markup stripped: exercises.json is byte-identical and solutions.md differs in one line (L3-04 c) only by row breaks; no number, sign, unit or word changed. answers.py unchanged.
-- solutions.md:191 (L3-04 c, saving): rows are now "$= (43\,440\,\text{MWh} - 13\,140\,\text{MWh})$", "$\cdot 50\,\tfrac{\text{€}}{\text{MWh}}$", "$= 30\,300\,\text{MWh} \cdot 50\,\tfrac{\text{€}}{\text{MWh}}$", "$= 1.515 \cdot 10^{6}\,\text{€}$": the bracket is whole on one row and each relation starts a row; the chain reads correctly.
-- Recomputed: $(43\,440 - 13\,140)\,\text{MWh} = 30\,300\,\text{MWh}$, times $50\,\text{€/MWh}$ gives $1\,515\,000\,\text{€}$; $4.959\,\text{MW} \cdot 8760\,\text{h} = 43\,440\,\text{MWh}$, $1.500\,\text{MW} \cdot 8760\,\text{h} = 13\,140\,\text{MWh}$.
-- Hash identical at start and end.
+- Delta round 1 (work queue 8g, Formula step rewritten as basic law, derived formula, symbolic simplification): hash identical at start and end.
+- 21 Formula steps re-derived ($U_1/U_2 = N_1/N_2$, $P_1 = P_2$, $P_\text{h} = RP^2/U^2$, $R = 0.010\,U^2/P$, $P_2/P_1 = U_2^2/U_1^2$, three-phase $P_\text{h} = 3RI^2 = RP^2/(U^2\cos^2\varphi)$): algebra correct; L3-08's derivation moved from Principle into Formula, as in Finnish.
+- English against Finnish by script: every Formula step's LaTeX is identical to the Finnish `**Kaava:**` once the subscripts are translated (only `text{}` labels differ, e.g. käämi/coil, ka/AVG, raja/limit); no Finnish subscript is left in the English set.
+- Every number in every solution section is the same multiset as in the Finnish one (decimal comma normalised); exercises.json ids, numeric answers, tolerances and figures unchanged and equal to Finnish.
+- The other changed lines are paragraph splits only: removed and added text identical after whitespace normalisation.
+- Substitutions, answers and rounding unchanged from the version passed, so the earlier recomputation stands.

@@ -2,7 +2,7 @@
 **Given:** mass of the magnet $m = 40\,\text{g}$, steady speed, $g = 9.81\,\text{m/s}^2$
 **Find:** the braking force $F$ of the eddy currents in newtons
 **Principle:** The speed is steady, so by Newton's first law the sum of the forces on the magnet is zero. Only the weight downwards and the braking force of the eddy currents upwards act on the magnet, so the braking force equals the weight.
-**Formula:** $F - m g = 0$, so $F = m g$
+**Formula:** $$\begin{aligned} \Sigma F &= 0 \\ F - m g &= 0 \\ F &= m g \end{aligned}$$
 **Conversions:** $m = 40\,\text{g} = 40 \cdot 0.001\,\text{kg} = 0.040\,\text{kg}$
 **Substitution:** $F = 0.040\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 0.3924\,\text{N}$
 **Answer:** $0.39\,\text{N}$, two significant figures like the mass $40\,\text{g}$.
@@ -21,7 +21,7 @@ So the force of the ring always opposes the motion of the magnet, which correspo
 **Given:** mass of the car $m = 450\,\text{kg}$, initial speed $v_1 = 22\,\text{m/s}$, final speed $v_2 = 6.0\,\text{m/s}$, horizontal track
 **Find:** the energy $Q$ converted into internal energy of the copper plates, in kilojoules
 **Principle:** The track is horizontal and other resistances are ignored, so the potential energy does not change and the only change in energy is the decrease in kinetic energy. Energy is conserved: the eddy currents convert the whole decrease in kinetic energy into internal energy of the plates of the brake.
-**Formula:** $Q = \dfrac{m v_1^2}{2} - \dfrac{m v_2^2}{2}$, that is, $Q = \dfrac{m (v_1^2 - v_2^2)}{2}$
+**Formula:** $$\begin{aligned} E_{\text{k},1} &= E_{\text{k},2} + Q \\ \frac{m v_1^2}{2} &= \frac{m v_2^2}{2} + Q \\ Q &= \frac{m v_1^2}{2} - \frac{m v_2^2}{2} \\ &= \frac{m (v_1^2 - v_2^2)}{2} \end{aligned}$$
 **Conversions:** None needed: the quantities are in SI units. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $$\begin{aligned} Q &= \tfrac{1}{2} \cdot 450\,\text{kg} \\ &\cdot \left((22\,\text{m/s})^2 - (6.0\,\text{m/s})^2\right) \\ &= 225\,\text{kg} \cdot 448\,\text{m}^2/\text{s}^2 \\ &= 100\,800\,\text{J} \\ &= 100.8\,\text{kJ} \end{aligned}$$
 **Answer:** $1.0 \cdot 10^2\,\text{kJ}$, that is, about $100\,\text{kJ}$, two significant figures like the final speed $6.0\,\text{m/s}$ and the initial speed $22\,\text{m/s}$.
@@ -31,7 +31,7 @@ So the force of the ring always opposes the motion of the magnet, which correspo
 **Given:** mass of the magnet $m = 25\,\text{g}$, steady speed $v = 0.30\,\text{m/s}$, $g = 9.81\,\text{m/s}^2$
 **Find:** the power $P$ at which the internal energy of the tube increases, in milliwatts
 **Principle:** The speed is steady, so the braking force of the eddy currents equals the weight, $F = m g$. The kinetic energy does not change, so the work done by the braking force, which is the decrease in potential energy, is converted entirely into internal energy of the tube. Power is force times speed.
-**Formula:** $F = m g$ and $P = F v$, so $P = m g v$
+**Formula:** $$\begin{aligned} \Sigma F &= 0 \\ F - m g &= 0 \\ F &= m g \\ P &= F v \\ &= m g v \end{aligned}$$
 **Conversions:** $m = 25\,\text{g} = 25 \cdot 0.001\,\text{kg} = 0.025\,\text{kg}$. Finally $1\,\text{W} = 1000\,\text{mW}$.
 **Substitution:** $P = 0.025\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 0.30\,\text{m/s} = 0.073575\,\text{W} = 73.575\,\text{mW}$
 **Answer:** $74\,\text{mW}$, two significant figures like the mass $25\,\text{g}$ and the speed $0.30\,\text{m/s}$.
@@ -78,7 +78,7 @@ The option in which the lightness of plastic increases gravity is wrong, because
 **Given:** mass of the magnet $m = 20\,\text{g}$, length of the tube $h = 1.50\,\text{m}$, falling time $t = 10\,\text{s}$, almost steady speed, $g = 9.81\,\text{m/s}^2$
 **Find:** the average rate $P$ at which the internal energy of the tube increases, in milliwatts
 **Principle:** The speed is almost steady over the whole distance, so it is obtained from the distance and the time, and the braking force equals the weight. In a steady fall the kinetic energy does not change, so potential energy is converted through the eddy currents into internal energy of the tube at the rate $P = F v$.
-**Formula:** $v = \dfrac{h}{t}$, $F = m g$ and $P = F v$, so $P = m g v$
+**Formula:** $$\begin{aligned} v &= \frac{h}{t} \\ \Sigma F &= 0 \\ F &= m g \\ P &= F v \\ &= m g v \end{aligned}$$
 **Conversions:** $m = 20\,\text{g} = 20 \cdot 0.001\,\text{kg} = 0.020\,\text{kg}$. Finally $1\,\text{W} = 1000\,\text{mW}$.
 **Substitution:** $v = \dfrac{1.50\,\text{m}}{10\,\text{s}} = 0.15\,\text{m/s}$ and $P = 0.020\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 0.15\,\text{m/s} = 0.02943\,\text{W} = 29.43\,\text{mW}$
 **Answer:** $29\,\text{mW}$, two significant figures like the mass $20\,\text{g}$ and the time $10\,\text{s}$.
@@ -90,7 +90,7 @@ The option in which the lightness of plastic increases gravity is wrong, because
 **Principle:** The flux changes steadily, so by the law of induction a constant induced voltage appears in the coil. The coil is closed, so the voltage drives a current through the resistance of the coil by Ohm's law.
 
 By Lenz's law the field of the current opposes the increase in flux, so the end of the coil facing the magnet becomes the same pole as the approaching pole. The magnitude is calculated without the minus sign.
-**Formula:** $e = N \dfrac{\Delta\Phi}{\Delta t}$ and $I = \dfrac{e}{R}$, so $I = \dfrac{N \Delta\Phi}{R \Delta t}$
+**Formula:** $$\begin{aligned} e &= N \frac{\Delta\Phi}{\Delta t} \\ I &= \frac{e}{R} \\ &= \frac{N \Delta\Phi}{R \Delta t} \end{aligned}$$
 **Conversions:** $\Delta\Phi = 3.0\,\text{mWb} = 3.0 \cdot 0.001\,\text{Wb} = 0.0030\,\text{Wb}$
 **Substitution:** $e = 200 \cdot \dfrac{0.0030\,\text{Wb}}{0.20\,\text{s}} = 3.0\,\text{V}$ and $I = \dfrac{3.0\,\text{V}}{15\,\Omega} = 0.20\,\text{A}$
 **Answer:** $0.20\,\text{A}$, two significant figures like the data.
@@ -100,7 +100,7 @@ By Lenz's law the field of the current opposes the increase in flux, so the end 
 **Given:** mass of the magnet $m = 20\,\text{g}$, braking force $F_\text{j} = k v$, where $k = 1.3\,\tfrac{\text{N}\cdot\text{s}}{\text{m}}$, $g = 9.81\,\text{m/s}^2$
 **Find:** the final speed $v_\text{t}$ of the magnet in metres per second
 **Principle:** At first the magnet accelerates, and the braking force grows with the speed. The speed stops growing when the braking force has grown equal to the weight: then the sum of the forces is zero, and the magnet falls at a steady speed.
-**Formula:** $k v_\text{t} = m g$, so $v_\text{t} = \dfrac{m g}{k}$
+**Formula:** $$\begin{aligned} \Sigma F &= 0 \\ m g - k v_\text{t} &= 0 \\ v_\text{t} &= \frac{m g}{k} \end{aligned}$$
 **Conversions:** $m = 20\,\text{g} = 20 \cdot 0.001\,\text{kg} = 0.020\,\text{kg}$
 **Substitution:** $v_\text{t} = \dfrac{0.020\,\text{kg} \cdot 9.81\,\text{m/s}^2}{1.3\,\tfrac{\text{N}\cdot\text{s}}{\text{m}}} = \dfrac{0.1962\,\text{N}}{1.3\,\tfrac{\text{N}\cdot\text{s}}{\text{m}}} = 0.1509\,\text{m/s}$
 **Answer:** $0.15\,\text{m/s}$, two significant figures like the coefficient $1.3\,\tfrac{\text{N}\cdot\text{s}}{\text{m}}$ and the mass $20\,\text{g}$.
@@ -122,7 +122,7 @@ The eddy currents convert this energy into internal energy of the brake and the 
 **Given:** mass of the magnet $m = 20\,\text{g}$, length of the tube $h = 1.00\,\text{m}$, five falling times of the thick-walled tube in the table, mean of the thin-walled tube $4.0\,\text{s}$, $g = 9.81\,\text{m/s}^2$ (example data)
 **Find:** the power $P$ at which the internal energy of the thick-walled tube increases, in milliwatts, and which tube brakes more strongly
 **Principle:** The best estimate of a series of measurements is the mean. The speed is almost steady, so it is obtained from the distance and the time, and the braking force equals the weight. Potential energy is converted through the eddy currents into internal energy at the power $P = F v$.
-**Formula:** $t_{\text{avg}} = \dfrac{\text{sum}}{5}$, $v = \dfrac{h}{t_{\text{avg}}}$ and $P = F v = m g v$
+**Formula:** $$\begin{aligned} t_{\text{AVG}} &= \frac{\text{SUM}}{5} \\ v &= \frac{h}{t_{\text{AVG}}} \\ \Sigma F &= 0 \\ F &= m g \\ P &= F v \\ &= m g v \end{aligned}$$
 **Conversions:** $m = 20\,\text{g} = 20 \cdot 0.001\,\text{kg} = 0.020\,\text{kg}$. Finally $1\,\text{W} = 1000\,\text{mW}$.
 **Substitution:** The sum of the times is $36.6\,\text{s}$, so $t_{\text{avg}} = \dfrac{36.6\,\text{s}}{5} = 7.32\,\text{s}$ and $v = \dfrac{1.00\,\text{m}}{7.32\,\text{s}} = 0.1366\,\text{m/s}$. The power is $$\begin{aligned} P &= 0.020\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot 0.1366\,\text{m/s} \\ &= 0.02680\,\text{W} \\ &= 26.80\,\text{mW} \end{aligned}$$
 **Answer:** $27\,\text{mW}$, two significant figures like the mass $20\,\text{g}$. Part a): $t_{\text{avg}} = 7.32\,\text{s}$ and the average speed $0.14\,\text{m/s}$. Part b): $27\,\text{mW}$.
@@ -149,7 +149,7 @@ The magnet would gain kinetic energy and the ring electrical energy without anyt
 **Given:** number of turns $N = 300$, four measurements $(\Delta t, e)$: $(0.40\,\text{s}, 0.27\,\text{V})$, $(0.25\,\text{s}, 0.41\,\text{V})$, $(0.20\,\text{s}, 0.53\,\text{V})$ and $(0.10\,\text{s}, 1.02\,\text{V})$ (example data)
 **Find:** the change in magnetic flux $\Delta\Phi$ in milliwebers
 **Principle:** By the law of induction the average induced voltage satisfies $e = N \Delta\Phi : \Delta t$, so the product $e \cdot \Delta t = N \Delta\Phi$ is the same in every push, because the number of turns and the change in flux do not change. Because of the random variation of the measurements, the mean of the products gives the best estimate.
-**Formula:** $e \cdot \Delta t = N \Delta\Phi$, so $\Delta\Phi = \dfrac{(e \cdot \Delta t)_{\text{avg}}}{N}$
+**Formula:** $$\begin{aligned} e &= N \frac{\Delta\Phi}{\Delta t} \\ e \cdot \Delta t &= N \Delta\Phi \\ \Delta\Phi &= \frac{e \cdot \Delta t}{N} \\ &= \frac{(e \cdot \Delta t)_{\text{AVG}}}{N} \end{aligned}$$
 **Conversions:** Finally $1\,\text{Wb} = 1000\,\text{mWb}$. The unit $1\,\text{V} \cdot \text{s} = 1\,\text{Wb}$.
 **Substitution:** The products are $0.40\,\text{s} \cdot 0.27\,\text{V} = 0.108\,\text{Wb}$, $0.25\,\text{s} \cdot 0.41\,\text{V} = 0.1025\,\text{Wb}$, $0.20\,\text{s} \cdot 0.53\,\text{V} = 0.106\,\text{Wb}$ and $0.10\,\text{s} \cdot 1.02\,\text{V} = 0.102\,\text{Wb}$. The sum is $0.4185\,\text{Wb}$, so the mean is $0.10463\,\text{Wb}$ and $\Delta\Phi = \dfrac{0.10463\,\text{Wb}}{300} = 3.488 \cdot 10^{-4}\,\text{Wb} = 0.3488\,\text{mWb}$
 **Answer:** $0.35\,\text{mWb}$, two significant figures like the voltages. Part c): the product $e \cdot \Delta t$ is almost the same at all speeds, so $e = \dfrac{N \Delta\Phi}{\Delta t}$, that is, the voltage is inversely proportional to the time.
@@ -163,7 +163,7 @@ When the product is constant, $e = \dfrac{\text{constant}}{\Delta t}$, so the vo
 **Principle:** Energy is conserved. In each drop, the part of the decrease in the potential energy of the magnet that does not remain as kinetic energy is converted through the eddy currents into internal energy of the tube.
 
 No heat is transferred to the surroundings, so all this energy raises the temperature of the tube, and the state of the copper does not change.
-**Formula:** $Q = n \left(m g h - \dfrac{m v^2}{2}\right)$ and $Q = c m_\text{p} \Delta T$, so $\Delta T = \dfrac{n \left(m g h - \frac{m v^2}{2}\right)}{c m_\text{p}}$
+**Formula:** $$\begin{aligned} m g h &= \frac{m v^2}{2} + Q_1 \\ Q &= n Q_1 \\ Q &= c m_\text{p} \Delta T \\ \Delta T &= \frac{Q}{c m_\text{p}} \\ &= \frac{n \left(m g h - \frac{m v^2}{2}\right)}{c m_\text{p}} \end{aligned}$$
 **Conversions:** $m = 20\,\text{g} = 20 \cdot 0.001\,\text{kg} = 0.020\,\text{kg}$
 **Substitution:** $$\begin{aligned} &m g h - \tfrac{1}{2} m v^2 \\ &= 0.020\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot 1.00\,\text{m} \\ &- \tfrac{1}{2} \cdot 0.020\,\text{kg} \cdot (0.15\,\text{m/s})^2 \\ &= 0.19620\,\text{J} - 0.000225\,\text{J} \\ &= 0.195975\,\text{J} \end{aligned}$$, so $Q = 50 \cdot 0.195975\,\text{J} = 9.79875\,\text{J}$ and $\Delta T = \dfrac{9.79875\,\text{J}}{385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.35\,\text{kg}} = 0.07272\,\text{K}$
 **Answer:** $0.073\,\text{K}$, two significant figures like the mass of the tube $0.35\,\text{kg}$ and the mass of the magnet $20\,\text{g}$.
@@ -186,7 +186,7 @@ The same principle applies to the laminated iron core of a transformer.
 **Principle:** By the chapter *Electromagnetic induction*, a voltage $e = v B l$ is induced in a moving rod, because the field is perpendicular to both the rod and its velocity. The rod, the rails and the resistor form a closed circuit, so the voltage drives a current $I = e : R$.
 
 The field exerts a force $F = I l B$ on a current-carrying conductor (chapter *Force on a current-carrying wire: the electric motor and the loudspeaker*), and by Lenz's law it opposes the motion of the rod.
-**Formula:** $e = v B l$, $I = \dfrac{e}{R}$ and $F = I l B$, so $F = \dfrac{(B l)^2 v}{R}$
+**Formula:** $$\begin{aligned} e &= v B l \\ I &= \frac{e}{R} \\ F &= I l B \\ &= \frac{v B l}{R} \cdot l B \\ &= \frac{(B l)^2 v}{R} \end{aligned}$$
 **Conversions:** None needed: the quantities are in SI units.
 **Substitution:** $e = 3.0\,\text{m/s} \cdot 0.50\,\text{T} \cdot 0.40\,\text{m} = 0.60\,\text{V}$, $I = \dfrac{0.60\,\text{V}}{0.20\,\Omega} = 3.0\,\text{A}$ and $F = 3.0\,\text{A} \cdot 0.40\,\text{m} \cdot 0.50\,\text{T} = 0.60\,\text{N}$
 **Answer:** $0.60\,\text{N}$, two significant figures like the data. The force points against the velocity of the rod.
@@ -199,7 +199,7 @@ The field exerts a force $F = I l B$ on a current-carrying conductor (chapter *F
 
 At every moment, by Newton's second law, $m a = m g - k v$. At the terminal speed the kinetic energy does not change, so the decrease in potential energy is converted entirely into internal energy through the eddy currents.
 **Reading the graph:** From the drawn $(t, v)$ graph we read: the last three speeds are $0.73\,\text{m/s}$, $0.75\,\text{m/s}$ and $0.74\,\text{m/s}$, and at the moment $0.10\,\text{s}$ the speed is $0.54\,\text{m/s}$.
-**Formula:** $v_\text{t} = \dfrac{\text{sum}}{3}$, $k = \dfrac{m g}{v_\text{t}}$, $a = g - \dfrac{k v}{m}$ and $P = m g v_\text{t}$
+**Formula:** $$\begin{aligned} v_\text{t} &= \frac{\text{SUM}}{3} \\ \Sigma F &= 0 \text{ at terminal speed} \\ m g - k v_\text{t} &= 0 \\ k &= \frac{m g}{v_\text{t}} \\ m a &= m g - k v \\ a &= g - \frac{k v}{m} \\ P &= F v_\text{t} = m g v_\text{t} \end{aligned}$$
 **Conversions:** $m = 50\,\text{g} = 50 \cdot 0.001\,\text{kg} = 0.050\,\text{kg}$
 **Substitution:** The sum of the speeds is $2.22\,\text{m/s}$, so $v_\text{t} = \dfrac{2.22\,\text{m/s}}{3} = 0.74\,\text{m/s}$. The force is $F = m g = 0.4905\,\text{N}$ and $k = \dfrac{0.4905\,\text{N}}{0.74\,\text{m/s}} = 0.6628\,\tfrac{\text{N}\cdot\text{s}}{\text{m}}$. The acceleration is $$\begin{aligned} a &= 9.81\,\text{m/s}^2 \\ &- \dfrac{0.6628\,\tfrac{\text{N}\cdot\text{s}}{\text{m}} \cdot 0.54\,\text{m/s}}{0.050\,\text{kg}} \\ &= 9.81\,\text{m/s}^2 - 7.158\,\text{m/s}^2 \\ &= 2.652\,\text{m/s}^2 \end{aligned}$$ and the power $P = 0.4905\,\text{N} \cdot 0.74\,\text{m/s} = 0.3630\,\text{W}$
 **Answer:** $2.7\,\text{m/s}^2$, two significant figures like the speeds. In addition $v_\text{t} = 0.74\,\text{m/s}$, $F = 0.49\,\text{N}$, $k \approx 0.66\,\tfrac{\text{N}\cdot\text{s}}{\text{m}}$ and $P = 0.36\,\text{W}$.
@@ -258,7 +258,7 @@ The fact that aluminium conducts electricity well is true, but it only says that
 
 The line in the graph passes through the origin, so $F$ is directly proportional to the speed: $F = kv$. The speed is the one at which the force on the line equals the weight.
 **Reading the graph:** The line passes through the origin, so its slope is found from one point. At the speed $0.20\,\text{m/s}$ the force is $0.32\,\text{N}$, so $k = F : v = 0.32\,\text{N} : 0.20\,\text{m/s} = 1.6\,\text{N}\cdot\text{s/m}$. Another point gives the same: $$\begin{aligned} &0.48\,\text{N} : 0.30\,\text{m/s} \\ &= 1.6\,\text{N}\cdot\text{s/m} \end{aligned}$$.
-**Formula:** $mg = kv$, so $v = \dfrac{mg}{k}$
+**Formula:** $$\begin{aligned} \Sigma F &= 0 \\ m g - k v &= 0 \\ v &= \frac{m g}{k} \end{aligned}$$
 **Conversions:** $m = 45\,\text{g} = 45 \cdot 0.001\,\text{kg} = 0.045\,\text{kg}$
 **Substitution:** $mg = 0.045\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 0.44145\,\text{N}$ and $v = \dfrac{0.44145\,\text{N}}{1.6\,\text{N}\cdot\text{s/m}} = 0.2759\,\text{m/s}$
 **Answer:** $0.28\,\text{m/s}$, two significant figures like the mass $45\,\text{g}$.

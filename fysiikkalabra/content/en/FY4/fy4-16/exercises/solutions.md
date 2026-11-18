@@ -9,7 +9,7 @@ G 686,7
 N 742,7 työntö
 a ylös
 ```
-**Formula:** $N - mg = ma$, so $N = m(g + a)$
+**Formula:** Newton's second law $\Sigma F = ma$. Positive direction up: $\Sigma F = N - G$ and $G = mg$, so $N - mg = ma$ and $N = m(g + a)$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $N = 70.0\,\text{kg}\cdot(9.81 + 0.80)\,\text{m/s}^2 = 70.0\,\text{kg}\cdot 10.61\,\text{m/s}^2 = 742.7\,\text{N}$
 **Answer:** $743\,\text{N}$ upwards, three significant figures like the mass $70.0\,\text{kg}$.
@@ -47,7 +47,7 @@ a alas
 v alas
 ```
 **Principle:** The weight and the normal force of the chute act on the child. The normal force is perpendicular to the motion and does no work, and friction is ignored, so the mechanical energy is conserved. The shape of the chute does not matter, only the height difference.
-**Formula:** Zero level at the end of the chute: $mgh = \tfrac12 mv_2^2$, so $v_2 = \sqrt{2gh}$
+**Formula:** Conservation of mechanical energy $E_\text{initial} = E_\text{final}$. Zero level at the end of the chute: at the start $E_\text{initial} = E_\text{p} = mgh$ and at the end $E_\text{final} = E_\text{k} = \tfrac12 mv_2^2$, so $mgh = \tfrac12 mv_2^2$, $v_2^2 = 2gh$ and $v_2 = \sqrt{2gh}$
 **Conversions:** The quantities are in SI units, so no conversions are needed. The mass is not needed, because it cancels.
 **Substitution:** $v_2 = \sqrt{2\cdot 9.81\,\text{m/s}^2\cdot 3.20\,\text{m}} = \sqrt{62.78\,\text{m}^2/\text{s}^2} = 7.924\,\text{m/s}$
 **Answer:** $7.92\,\text{m/s}$, three significant figures like the height $3.20\,\text{m}$.
@@ -65,7 +65,7 @@ N 100
 F_mu 8 vasen
 a vasen
 ```
-**Formula:** $\tfrac12 mv_1^2 - \mu mg s = 0$, so $s = \dfrac{v_1^2}{2\mu g}$
+**Formula:** Work-energy principle: $E_\text{k,final} = E_\text{k,initial} + W$, where $E_\text{k} = \tfrac12 mv^2$. The work of friction is $W = -F_\mu s$ and $F_\mu = \mu N = \mu mg$, so $0 = \tfrac12 mv_1^2 - \mu mg s$ and $s = \dfrac{v_1^2}{2\mu g}$
 **Conversions:** The quantities are in SI units, so no conversions are needed. The mass cancels.
 **Substitution:** $s = \dfrac{(6.0\,\text{m/s})^2}{2\cdot 0.080\cdot 9.81\,\text{m/s}^2} = \dfrac{36\,\text{m}^2/\text{s}^2}{1.5696\,\text{m/s}^2} = 22.94\,\text{m}$
 **Answer:** $23\,\text{m}$, two significant figures like the speed $6.0\,\text{m/s}$ and the coefficient of friction $0.080$.
@@ -87,7 +87,7 @@ a 0
 akselit -8,53
 komponentit G
 ```
-**Formula:** $y$: $N - mg\cos\alpha = 0$; $x$: $mg\sin\alpha - \mu N = 0$, so $mg\sin\alpha = \mu mg\cos\alpha$, $\tan\alpha = \mu$ and $\alpha = \tan^{-1}\mu$
+**Formula:** The speed is constant, so $\Sigma F = 0$ in both directions, and $F_\mu = \mu N$. $y$: $N - mg\cos\alpha = 0$; $x$: $mg\sin\alpha - F_\mu = 0$, so $mg\sin\alpha = \mu N = \mu mg\cos\alpha$, $\tan\alpha = \mu$ and $\alpha = \tan^{-1}\mu$
 **Conversions:** The coefficient of friction has no unit, and the angle comes in degrees with the calculator in degree mode, so no conversions are needed.
 **Substitution:** $\alpha = \tan^{-1} 0.15 = 8.531^\circ$
 **Answer:** $8.5^\circ$, two significant figures like the coefficient of friction $0.15$.
@@ -104,7 +104,7 @@ G 588,6
 N 652,4 työntö
 a ylös
 ```
-**Formula:** $N - mg = ma$, so $a = \dfrac{N - mg}{m}$. When the reading is $L = \tfrac{N}{g}$, $N = Lg$ and $a = g\left(\dfrac{L}{m} - 1\right)$
+**Formula:** Newton's second law $\Sigma F = ma$. Positive direction up: $N - mg = ma$, so $a = \dfrac{N - mg}{m}$. When the reading is $L = \tfrac{N}{g}$, $N = Lg$ and $a = g\left(\dfrac{L}{m} - 1\right)$
 **Conversions:** The reading is changed into the normal force by multiplying by $g$: $N = 66.5\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 652.4\,\text{N}$.
 **Substitution:** $a = 9.81\,\text{m/s}^2\cdot\left(\dfrac{66.5\,\text{kg}}{60.0\,\text{kg}} - 1\right) = 9.81\,\text{m/s}^2\cdot 0.10833 = 1.063\,\text{m/s}^2$
 **Answer:** $1.06\,\text{m/s}^2$ upwards, three significant figures like the mass $60.0\,\text{kg}$ and the reading $66.5\,\text{kg}$.
@@ -126,7 +126,7 @@ a alas
 akselit -12
 komponentit G
 ```
-**Formula:** Zero level at the foot: $$\begin{aligned} &mgL\sin\alpha \\ &- \mu mg\cos\alpha\cdot L \\ &= \tfrac12 mv_2^2 \end{aligned}$$, so $\mu = \dfrac{gL\sin\alpha - \tfrac12 v_2^2}{gL\cos\alpha}$
+**Formula:** Work-energy principle, zero level at the foot: $E_\text{initial} = E_\text{p} = mgh$ with $h = L\sin\alpha$, and $E_\text{final} = E_\text{k} = \tfrac12 mv_2^2$. The work of friction is $W_\mu = -F_\mu L$, and $F_\mu = \mu N = \mu mg\cos\alpha$. So $E_\text{initial} + W_\mu = E_\text{final}$, that is $$\begin{aligned} &mgL\sin\alpha \\ &- \mu mg\cos\alpha\cdot L \\ &= \tfrac12 mv_2^2 \end{aligned}$$, and $\mu = \dfrac{gL\sin\alpha - \tfrac12 v_2^2}{gL\cos\alpha}$
 **Conversions:** The quantities are in SI units, so no conversions are needed. The mass cancels.
 **Substitution:** The numerator is $$\begin{aligned} &9.81\cdot 18.0\cdot\sin 12.0^\circ\,\tfrac{\text{m}^2}{\text{s}^2} \\ &- \tfrac12\cdot 5.10^2\,\tfrac{\text{m}^2}{\text{s}^2} \\ &= 36.71\,\tfrac{\text{m}^2}{\text{s}^2} - 13.01\,\tfrac{\text{m}^2}{\text{s}^2} \\ &= 23.71\,\tfrac{\text{m}^2}{\text{s}^2} \end{aligned}$$ and the denominator $9.81\cdot 18.0\cdot\cos 12.0^\circ\,\tfrac{\text{m}^2}{\text{s}^2} = 172.72\,\tfrac{\text{m}^2}{\text{s}^2}$, so $\mu = \dfrac{23.71}{172.72} = 0.1373$
 **Answer:** $0.137$, three significant figures like the length of the slope $18.0\,\text{m}$, the angle $12.0^\circ$ and the speed $5.10\,\text{m/s}$.
@@ -143,7 +143,7 @@ a ylös
 v alas
 ```
 **Principle:** By the work–energy principle the change in mechanical energy is the work done by forces other than the weight, here the negative work done by air resistance. Both the kinetic energy and the potential energy decrease, and the change in both is counted.
-**Formula:** Zero level at the height of the final situation: $$\begin{aligned} &\Delta E_\text{mech} \\ &= \left(\tfrac12 mv_2^2 - \tfrac12 mv_1^2\right) \\ &- mgh \end{aligned}$$, and $|\Delta E_\text{mech}| = \dfrac{m\left(v_1^2 - v_2^2\right)}{2} + mgh$
+**Formula:** Mechanical energy $E_\text{mech} = E_\text{k} + E_\text{p}$, where $E_\text{k} = \tfrac12 mv^2$ and $E_\text{p} = mgh$. Zero level at the height of the final situation: $E_\text{initial} = \tfrac12 mv_1^2 + mgh$ and $E_\text{final} = \tfrac12 mv_2^2$. The change is $\Delta E_\text{mech} = E_\text{final} - E_\text{initial}$, so $|\Delta E_\text{mech}| = \dfrac{m\left(v_1^2 - v_2^2\right)}{2} + mgh$
 **Conversions:** We calculate in joules and finally change to kilojoules: $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $|\Delta E_\text{mech}| = \tfrac12\cdot 80.0\,\text{kg}\cdot\left(52.0^2 - 6.0^2\right)\,\text{m}^2/\text{s}^2 + 80.0\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot 145\,\text{m} = 106\,720\,\text{J} + 113\,796\,\text{J} = 220\,516\,\text{J} \approx 221\,\text{kJ}$
 **Answer:** $221\,\text{kJ}$, three significant figures like the mass $80.0\,\text{kg}$ and the speed $52.0\,\text{m/s}$.
@@ -164,7 +164,7 @@ T 8338,5 90
 a 0
 v ylös
 ```
-**Formula:** $T - mg = 0$, so $T = mg$. The work is $W = Th = mgh$, and the power $P = \dfrac{W}{t} = \dfrac{mgh}{t}$
+**Formula:** The speed is constant, so $\Sigma F = 0$: $T - mg = 0$ and $T = mg$. The work is $W = Fs$, here $W = Th = mgh$. The energy is $E = Pt$ and $E = W$, so $P = \dfrac{W}{t} = \dfrac{mgh}{t}$
 **Conversions:** We calculate in watts and finally change to kilowatts: $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** $P = \dfrac{850\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot 12.0\,\text{m}}{15.0\,\text{s}} = \dfrac{100\,062\,\text{J}}{15.0\,\text{s}} = 6670.8\,\text{W} \approx 6.67\,\text{kW}$
 **Answer:** $6.67\,\text{kW}$, three significant figures like the height $12.0\,\text{m}$ and the time $15.0\,\text{s}$.
@@ -190,7 +190,7 @@ N 100
 F_mu 12 vasen
 a vasen
 ```
-**Formula:** Horizontal distances of the parts $x_\text{a}$, $x_\text{b}$ and $x_\text{c}$: $$\begin{aligned} &mgh \\ &- \mu mg(x_\text{a} + x_\text{b} + x_\text{c}) \\ &= 0 \end{aligned}$$, so $x = x_\text{a} + x_\text{b} + x_\text{c} = \dfrac{h}{\mu}$
+**Formula:** Work-energy principle: at the start $E_\text{initial} = mgh$ and at the end, at rest, $E_\text{final} = 0$, and the work of friction is $W_\mu = -F_\mu s$, $F_\mu = \mu N$. On a slope $N = mg\cos\alpha$ and the horizontal part is $x = s\cos\alpha$, on the flat $N = mg$ and $x = s$, so the friction work of every part is $-\mu mg x$. Horizontal distances of the parts $x_\text{a}$, $x_\text{b}$ and $x_\text{c}$: $E_\text{initial} + W_\mu = E_\text{final}$, that is $$\begin{aligned} &mgh \\ &- \mu mg(x_\text{a} + x_\text{b} + x_\text{c}) \\ &= 0 \end{aligned}$$, so $x = x_\text{a} + x_\text{b} + x_\text{c} = \dfrac{h}{\mu}$
 **Conversions:** The quantities are in SI units and the coefficient of friction has no unit, so no conversions are needed.
 **Substitution:** $x = \dfrac{4.50\,\text{m}}{0.120} = 37.5\,\text{m}$
 **Answer:** $37.5\,\text{m}$, three significant figures like the height $4.50\,\text{m}$ and the coefficient of friction $0.120$.
@@ -216,7 +216,7 @@ a alas
 From $1.0\,\text{s}$ to $3.0\,\text{s}$ the curve is on the grid line at $650\,\text{N}$, smaller than the weight, so the lift accelerates downwards for $\Delta t = 2.0\,\text{s}$.
 
 From $6.0\,\text{s}$ on the reading is larger than the weight, so the lift slows down.
-**Formula:** $mg - N = ma$, so $a = g - \dfrac{N}{m}$, and starting from rest $v = a\Delta t = \left(g - \dfrac{N}{m}\right)\Delta t$
+**Formula:** Newton's second law $\Sigma F = ma$. Positive direction down: $mg - N = ma$, so $a = g - \dfrac{N}{m}$. Constant acceleration starting from rest: $v = v_0 + at$ and $v_0 = 0$, so $v = a\Delta t = \left(g - \dfrac{N}{m}\right)\Delta t$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $v = \left(9.81\,\text{m/s}^2 - \dfrac{650\,\text{N}}{75.0\,\text{kg}}\right)\cdot 2.0\,\text{s} = 1.1433\,\text{m/s}^2\cdot 2.0\,\text{s} = 2.287\,\text{m/s}$
 **Answer:** $2.3\,\text{m/s}$ downwards, two significant figures like the time $2.0\,\text{s}$ read from the graph.
@@ -233,7 +233,7 @@ F_v 2124 ylös
 a ylös
 v alas
 ```
-**Formula:** The kinetic energies are $E_{\text{k}0} = \tfrac12 mv_1^2$ and $E_\text{k} = \tfrac12 mv_2^2$. Zero level at the height of the final situation: $E_{\text{k}0} + mgh - F_\text{d} h = E_\text{k}$, so $F_\text{d} = mg + \dfrac{E_{\text{k}0} - E_\text{k}}{h}$
+**Formula:** The kinetic energies are $E_{\text{k}0} = \tfrac12 mv_1^2$ and $E_\text{k} = \tfrac12 mv_2^2$, the potential energy is $E_\text{p} = mgh$ and the work of air resistance is $W_\text{d} = -F_\text{d} h$. Zero level at the height of the final situation: $E_\text{initial} + W_\text{d} = E_\text{final}$, that is $E_{\text{k}0} + mgh - F_\text{d} h = E_\text{k}$, so $F_\text{d} = mg + \dfrac{E_{\text{k}0} - E_\text{k}}{h}$
 **Conversions:** We calculate in newtons and finally change to kilonewtons: $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $E_{\text{k}0} = \tfrac12\cdot 70.0\,\text{kg}\cdot(50.0\,\text{m/s})^2 = 87\,500\,\text{J}$ and $E_\text{k} = \tfrac12\cdot 70.0\,\text{kg}\cdot(6.0\,\text{m/s})^2 = 1260\,\text{J}$, so $$\begin{aligned} &F_\text{d} = 70.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 \\ &+ \dfrac{87\,500\,\text{J} - 1260\,\text{J}}{60.0\,\text{m}} \\ &= 686.7\,\text{N} + 1437.3\,\text{N} \\ &= 2124\,\text{N} \\ &\approx 2.12\,\text{kN} \end{aligned}$$
 **Answer:** $2.12\,\text{kN}$ upwards, three significant figures like the mass $70.0\,\text{kg}$, the speed $50.0\,\text{m/s}$ and the distance $60.0\,\text{m}$.
@@ -289,7 +289,7 @@ a alas
 akselit -30
 komponentit G
 ```
-**Formula:** $y$: $N - mg\cos\alpha = 0$, so $N = mg\cos\alpha$ and $F_\mu = \mu N = \mu mg\cos\alpha$
+**Formula:** Sliding friction $F_\mu = \mu N$. There is no acceleration perpendicular to the slope, so $\Sigma F_y = 0$: $N - mg\cos\alpha = 0$ and $N = mg\cos\alpha$, so $F_\mu = \mu N = \mu mg\cos\alpha$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $N = 20.0\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\cos 30.0\,{}^\circ = 169.9\,\text{N}$, so $F_\mu = 0.200\cdot 169.9\,\text{N} = 33.98\,\text{N}$
 **Answer:** $34.0\,\text{N}$ up the slope. The student's error was to write $N = mg$ on a slope; the correct one is $N = mg\cos\alpha$. Three significant figures like the mass $20.0\,\text{kg}$ and the angle $30.0\,{}^\circ$.
@@ -309,7 +309,7 @@ G 608,2
 N 633 työntö
 a ylös
 ```
-**Formula:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ and $N - mg = ma$, so $N = m(g + a)$
+**Formula:** Acceleration $a = \dfrac{v_2 - v_1}{t_2 - t_1}$. Newton's second law $\Sigma F = ma$, positive direction up: $N - mg = ma$, so $N = m(g + a)$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $a = \dfrac{1.20\,\text{m/s} - 0}{3.0\,\text{s} - 0} = 0.400\,\text{m/s}^2$ and $N = 62.0\,\text{kg}\cdot(9.81 + 0.400)\,\text{m/s}^2 = 62.0\,\text{kg}\cdot 10.21\,\text{m/s}^2 = 633.0\,\text{N}$
 **Answer:** $633\,\text{N}$ upwards, three significant figures like the mass $62.0\,\text{kg}$.
@@ -336,7 +336,7 @@ N 100
 F_mu 8,05 vasen
 a vasen
 ```
-**Formula:** The deceleration is $\left|a\right| = \dfrac{v_1 - v_2}{t_2 - t_1}$, and $\mu mg = m\left|a\right|$, so $\mu = \dfrac{\left|a\right|}{g}$
+**Formula:** The mean speed is $v = \dfrac{\Delta x}{\Delta t}$ and the deceleration $\left|a\right| = \dfrac{v_1 - v_2}{t_2 - t_1}$. In the horizontal direction Newton's second law $\Sigma F = ma$, $F_\mu = \mu N$ and $N = mg$, so $\mu mg = m\left|a\right|$ and $\mu = \dfrac{\left|a\right|}{g}$
 **Conversions:** The quantities are in SI units, so no conversions are needed. The mass cancels.
 **Substitution:** $\left|a\right| = \dfrac{3.62\,\text{m/s} - 0.46\,\text{m/s}}{4.5\,\text{s} - 0.5\,\text{s}} = 0.790\,\text{m/s}^2$ and $\mu = \dfrac{0.790\,\text{m/s}^2}{9.81\,\text{m/s}^2} = 0.0805$
 **Answer:** $0.081$, two significant figures like the distance $0.46\,\text{m}$ of the last second.
@@ -364,7 +364,7 @@ a 0
 akselit -17,8
 komponentit G
 ```
-**Formula:** $y$: $N = mg\cos\alpha$; $x$: $mg\sin\alpha - \mu N = 0$, so $\mu = \tan\alpha$. The mean $\alpha_{\text{mean}} = \dfrac{\text{sum}}{5}$
+**Formula:** The speed is constant, so $\Sigma F = 0$, and $F_\mu = \mu N$. $y$: $N = mg\cos\alpha$; $x$: $mg\sin\alpha - \mu N = 0$, so $mg\sin\alpha = \mu mg\cos\alpha$ and $\mu = \tan\alpha$. The mean $\alpha_{\text{mean}} = \dfrac{\text{sum}}{5}$
 **Conversions:** The angle is in degrees, and the calculator is in degree mode. The coefficient of friction has no unit.
 **Substitution:** a) The sum of the angles is $$\begin{aligned} &17.5\,{}^\circ + 18.0\,{}^\circ + 18.5\,{}^\circ \\ &+ 17.0\,{}^\circ + 18.0\,{}^\circ \\ &= 89.0\,{}^\circ \end{aligned}$$, so $\alpha_{\text{mean}} = \dfrac{89.0\,{}^\circ}{5} = 17.8\,{}^\circ$ and $\mu = \tan 17.8\,{}^\circ = 0.321$. b) From the smallest angle $\tan 17.0\,{}^\circ = 0.306$ and from the largest $\tan 18.5\,{}^\circ = 0.335$, so the half-range is $\dfrac{0.335 - 0.306}{2} \approx 0.015$
 **Answer:** a) $\mu = 0.321$, to three significant figures like the mean angle $17.8\,{}^\circ$. b) The coefficient varies between $0.306 \ldots 0.335$, that is, $\mu \approx 0.32 \pm 0.02$. The variation is about $5\,\%$ of the coefficient; it is a simple estimate of the spread of the measurements.
@@ -400,9 +400,9 @@ N 100
 F_mu 15 vasen
 a vasen
 ```
-**Formula:** The height of the slope is $h = L\sin\alpha$. Zero level at the flat: $$\begin{aligned} &mgL\sin\alpha \\ &- \mu_1 mg\cos\alpha\cdot L \\ &- \mu_2 mgd \\ &= 0 \end{aligned}$$, so $L = \dfrac{\mu_2 d}{\sin\alpha - \mu_1\cos\alpha}$. At the foot of the slope $$\begin{aligned} &mgL\sin\alpha \\ &- \mu_1 mg\cos\alpha\cdot L \\ &= \tfrac12 mv^2 \end{aligned}$$
+**Formula:** Work-energy principle for the whole way, zero level at the flat: at the start $E_\text{initial} = mgh$ with $h = L\sin\alpha$, and at the end, at rest, $E_\text{final} = 0$. The work of friction is $W_\mu = -F_\mu s$ and $F_\mu = \mu N$: on the slope $N = mg\cos\alpha$, on the flat $N = mg$. So $E_\text{initial} + W_{\mu 1} + W_{\mu 2} = E_\text{final}$, that is $$\begin{aligned} &mgL\sin\alpha \\ &- \mu_1 mg\cos\alpha\cdot L \\ &- \mu_2 mgd \\ &= 0 \end{aligned}$$, so $L = \dfrac{\mu_2 d}{\sin\alpha - \mu_1\cos\alpha}$. At the foot of the slope $E_\text{initial} + W_{\mu 1} = E_\text{k}$, that is $$\begin{aligned} &mgL\sin\alpha \\ &- \mu_1 mg\cos\alpha\cdot L \\ &= \tfrac12 mv^2 \end{aligned}$$, so $v = \sqrt{2gL\left(\sin\alpha - \mu_1\cos\alpha\right)}$
 **Conversions:** The quantities are in SI units, and the coefficients of friction have no unit. The mass cancels in both equations.
-**Substitution:** The expression in the denominator is $\sin 14.0\,{}^\circ - 0.060\cdot\cos 14.0\,{}^\circ = 0.2419 - 0.0582 = 0.1837$, so $L = \dfrac{0.150\cdot 20.0\,\text{m}}{0.1837} = 16.33\,\text{m}$. At the foot $v = \sqrt{2gL\left(\sin\alpha - \mu_1\cos\alpha\right)} = \sqrt{2\cdot 9.81\,\tfrac{\text{m}}{\text{s}^2}\cdot 16.33\,\text{m}\cdot 0.1837} = 7.67\,\text{m/s}$
+**Substitution:** The expression in the denominator is $\sin 14.0\,{}^\circ - 0.060\cdot\cos 14.0\,{}^\circ = 0.2419 - 0.0582 = 0.1837$, so $L = \dfrac{0.150\cdot 20.0\,\text{m}}{0.1837} = 16.33\,\text{m}$. At the foot $v = \sqrt{2\cdot 9.81\,\tfrac{\text{m}}{\text{s}^2}\cdot 16.33\,\text{m}\cdot 0.1837} = 7.67\,\text{m/s}$
 **Answer:** b) $16\,\text{m}$, two significant figures like the coefficient of friction $0.060$; c) $7.7\,\text{m/s}$. The mass cancels, because both the weight and the friction are proportional to the mass: a heavier child gets a larger kinetic energy but also a larger friction force, and the speed is the same.
 **Reasonableness:** The height of the slope is $h = 16.33\,\text{m}\cdot\sin 14.0\,{}^\circ = 3.95\,\text{m}$ and the horizontal distance $$\begin{aligned} &16.33\,\text{m}\cdot\cos 14.0\,{}^\circ \\ &= 15.85\,\text{m} \end{aligned}$$.
 
@@ -432,7 +432,7 @@ v alas
 **Reading the graph:** The average speeds are the means of the speeds at the endpoints of the interval, and each interval is $0.5\,\text{s}$.
 
 The highest speed is at the start, $46.0\,\text{m/s}$, and the speed first decreases steeply: over the first interval the speed decreases by $16.2\,\text{m/s}$, over the last half-second interval by only $1.1\,\text{m/s}$. The skydiver moves down all the time, so distance accumulates all the time.
-**Formula:** $h = \sum \dfrac{v_i + v_{i+1}}{2}\,\Delta t$. Zero level at the final height: $E_{\text{k}0} + mgh - F_\text{d} h = E_\text{k}$, so $F_\text{d} = mg + \dfrac{E_{\text{k}0} - E_\text{k}}{h}$. In part c) $mg - F_\text{d} = ma$, so $F_\text{d} = m(g - a)$
+**Formula:** The distance is mean speed times time, $s = v\Delta t$, and in uniformly changing motion the mean speed of an interval is the mean of its end speeds, so $h = \sum \dfrac{v_i + v_{i+1}}{2}\,\Delta t$. Work-energy principle, zero level at the height of the final situation: $E_\text{k} = \tfrac12 mv^2$, $E_\text{p} = mgh$ and the work of air resistance $W_\text{d} = -F_\text{d} h$, $E_\text{initial} + W_\text{d} = E_\text{final}$, that is $E_{\text{k}0} + mgh - F_\text{d} h = E_\text{k}$, so $F_\text{d} = mg + \dfrac{E_{\text{k}0} - E_\text{k}}{h}$. In part c) Newton's second law $\Sigma F = ma$, positive direction down: $mg - F_\text{d} = ma$, so $F_\text{d} = m(g - a)$
 **Conversions:** We calculate in newtons and convert to kilonewtons at the end: $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** a) The distances of the intervals are $18.95\,\text{m}$, $12.475\,\text{m}$, $8.625\,\text{m}$, $6.35\,\text{m}$, $5.00\,\text{m}$ and $4.225\,\text{m}$. The sum is $h = 55.625\,\text{m}$. b) The kinetic energies are $E_{\text{k}0} = \tfrac12\cdot 78.0\,\text{kg}\cdot(46.0\,\text{m/s})^2 = 82\,524\,\text{J}$ and $E_\text{k} = \tfrac12\cdot 78.0\,\text{kg}\cdot(7.9\,\text{m/s})^2 = 2434\,\text{J}$, so $$\begin{aligned} &F_\text{d} = 78.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 \\ &+ \dfrac{82\,524\,\text{J} - 2434\,\text{J}}{55.625\,\text{m}} \\ &= 765.2\,\text{N} + 1439.8\,\text{N} \\ &= 2205\,\text{N} \end{aligned}$$. c) Between $3.0$ and $4.0\,\text{s}$ the speed decreases from $7.9\,\text{m/s}$ to $6.8\,\text{m/s}$, so $a = \dfrac{6.8 - 7.9}{1.0}\,\text{m/s}^2 = -1.1\,\text{m/s}^2$, that is, the acceleration points up, and $F_\text{d} = 78.0\,\text{kg}\cdot(9.81 + 1.1)\,\text{m/s}^2 = 851\,\text{N}$
 **Answer:** b) $2.21\,\text{kN}$ upwards, three significant figures like the mass $78.0\,\text{kg}$ and the speeds; a) $h = 55.6\,\text{m}$; c) the air resistance is larger than the weight, because the speed decreases and the acceleration points up.
@@ -476,7 +476,7 @@ The result is reasonable: the ratio $h : x \approx 0.10$ is almost the same in e
 **Find:** the magnitude of the acceleration $a$ of the lift in $\text{m/s}^2$
 **Principle:** The weight acts on the person downwards and the normal force upwards, and by Newton's second law their sum gives the acceleration. In a lift the reading of the plate equals the weight only when the lift does not accelerate, so the acceleration comes from the difference between the reading and the weight.
 **Reading the graph:** At the start and at a steady speed the reading is about $589\,\text{N}$, the weight of the person. From $9.0\,\text{s}$ on the reading is on the grid line $550\,\text{N}$, smaller than the weight, and stays there until about $12.2\,\text{s}$. Then the acceleration points down: a lift moving up slows down.
-**Formula:** positive direction up, $N - mg = ma$, so $a = \dfrac{N - mg}{m}$
+**Formula:** Newton's second law $\Sigma F = ma$. Positive direction up: $N - mg = ma$, so $a = \dfrac{N - mg}{m}$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $a = \dfrac{550\,\text{N} - 60.0\,\text{kg} \cdot 9.81\,\text{m/s}^2}{60.0\,\text{kg}} = \dfrac{550\,\text{N} - 588.6\,\text{N}}{60.0\,\text{kg}} = -0.643\,\text{m/s}^2$
 **Answer:** the magnitude of the acceleration is $0.643\,\text{m/s}^2$ and its direction is down, three significant figures like the mass $60.0\,\text{kg}$.

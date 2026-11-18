@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 60d062f1085527f6
+CONTENT-HASH: 49a7923421663c15
 
 ## Blocking
 - none
@@ -8,9 +8,8 @@ CONTENT-HASH: 60d062f1085527f6
 - none
 
 ## Checked
-- Delta (md-paragraphs): the diff of solutions.md (en, fy7-3) read word by word: only paragraphs cut in two, words unchanged.
-- Judged from the same solutions layout (fi fy7-3 captures) and the identical paragraph-split diff; en captures of this chapter not opened. Captures opened at 1280 px, solutions open; paragraph breaks sit between whole thoughts, formula boxes, Vastaus and Järkevyys blocks intact, no clipping or overflow.
+- Delta (changed Formula/Kaava blocks, numbers/formulas): opened current full-size captures at 1280 px in the lesson folder review/shots: open-exercises-L3-1280-4. Formula blocks render as aligned display blocks, with equals signs in one column, readable fractions and subscripts, no clipping or overflow, no red KaTeX; the card, the Conversions block and the following Substitution blocks keep their layout. Not every capture was opened; the unopened ones show the same component with other formulas.
 - Hash identical at start and end.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a · typography 5 · Finnish (English) 5 · accessibility 5

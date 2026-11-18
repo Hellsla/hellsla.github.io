@@ -201,9 +201,9 @@ $$.
 $$ and the beta particle about $1.0 \cdot 10^{6} : 34 : 360 \approx 82$ ion pairs; the ratio is about $480$. This is why an alpha particle stops within such a short distance and damages cells in a concentrated way.
 
 ## fy8-12-L3-02
-**Given:** pulse rate without a shield $R_0 = 2400\,\tfrac{1}{\text{min}}$, behind $d_1 = 11.0\,\text{mm}$ of lead $R_1 = 630\,\tfrac{1}{\text{min}}$, background radiation $R_\text{t} = 30\,\tfrac{1}{\text{min}}$
+**Given:** pulse rate without a shield $R_0 = 2400\,\text{min}^{-1}$, behind $d_1 = 11.0\,\text{mm}$ of lead $R_1 = 630\,\text{min}^{-1}$, background radiation $R_\text{t} = 30\,\text{min}^{-1}$
 
-**Asked:** the thickness $d$ of the lead shield at which the pulse rate caused by the source is $30\,\tfrac{1}{\text{min}}$
+**Asked:** the thickness $d$ of the lead shield at which the pulse rate caused by the source is $30\,\text{min}^{-1}$
 
 **Principle:** Lead attenuates only the radiation of the source, so the background is subtracted first: the net pulse rates are $2370$ and $600$ pulses per minute. They follow the attenuation law, so the measurements first give the half-value thickness and with it the required thickness. Both are solved with a logarithm.
 
@@ -213,7 +213,7 @@ $$ and the beta particle about $1.0 \cdot 10^{6} : 34 : 360 \approx 82$ ion pair
 
 **Substitution:** $d_{1/2} = \dfrac{11.0\,\text{mm} \cdot 0.69315}{\ln \tfrac{2370}{600}} = \dfrac{7.6246\,\text{mm}}{1.3737} = 5.5505\,\text{mm}$ and $d = \dfrac{5.5505\,\text{mm} \cdot \ln \tfrac{2370}{30}}{0.69315} = \dfrac{5.5505\,\text{mm} \cdot 4.3694}{0.69315} = 34.989\,\text{mm}$
 
-**Answer:** about $35\,\text{mm}$ of lead, two significant figures, because the reading of the background radiation, $30\,\tfrac{1}{\text{min}}$, has two figures.
+**Answer:** about $35\,\text{mm}$ of lead, two significant figures, because the reading of the background radiation, $30\,\text{min}^{-1}$, has two figures.
 
 **Reasonableness:** The net pulse rate has to be reduced from $2370$ to $30$, that is to about $\tfrac{1}{79}$, and $2^{6} = 64$, $2^{7} = 128$, so a good six half-value thicknesses are needed: $6.3 \cdot 5.55\,\text{mm} \approx 35\,\text{mm}$. The half-value thickness is close to the value for caesium-137, $5.5\,\text{mm}$.
 
@@ -244,9 +244,9 @@ $$ and the beta particle about $1.0 \cdot 10^{6} : 34 : 360 \approx 82$ ion pair
 An aluminium plate, a lead plate and a concrete wall are thicker, so they stop beta particles as well as alpha particles. The speed or the small mass of a particle does not prevent it from losing energy by ionising, and stopping is based on ionisation and not on electric repulsion.
 
 ## fy8-12-L1-07
-**Given:** measuring time $t = 45\,\text{s}$, pulse count $N = 1215$, pulse rate of the background radiation $R_\text{t} = 90\,\tfrac{1}{\text{min}}$
+**Given:** measuring time $t = 45\,\text{s}$, pulse count $N = 1215$, pulse rate of the background radiation $R_\text{t} = 90\,\text{min}^{-1}$
 
-**Asked:** the pulse rate $R$ caused by the radiation of the source in the unit $\tfrac{1}{\text{min}}$
+**Asked:** the pulse rate $R$ caused by the radiation of the source in the unit $\text{min}^{-1}$
 
 **Principle:** A GM counter counts all ionising events, so the measured pulse rate also includes the background radiation. The share of the source is obtained by subtracting the pulse rate of the background from the total pulse rate.
 
@@ -254,11 +254,11 @@ An aluminium plate, a lead plate and a concrete wall are thicker, so they stop b
 
 **Conversions:** $t = 45\,\text{s} = \dfrac{45}{60}\,\text{min} = 0.75\,\text{min}$, so that the pulse rates are in the same unit.
 
-**Substitution:** $R = \dfrac{1215}{0.75\,\text{min}} - 90\,\tfrac{1}{\text{min}} = 1620\,\tfrac{1}{\text{min}} - 90\,\tfrac{1}{\text{min}} = 1530\,\tfrac{1}{\text{min}}$
+**Substitution:** $R = \dfrac{1215}{0.75\,\text{min}} - 90\,\text{min}^{-1} = 1620\,\text{min}^{-1} - 90\,\text{min}^{-1} = 1530\,\text{min}^{-1}$
 
 **Answer:** $1530\,\text{min}^{-1}$, three significant figures like the pulse count $1215$ and the background $90$.
 
-**Reasonableness:** The total pulse rate $1620\,\tfrac{1}{\text{min}}$ is about $27\,\tfrac{1}{\text{s}}$, and the background $90\,\tfrac{1}{\text{min}}$ is only about $1.5\,\tfrac{1}{\text{s}}$. So the background is a small part of the total, and the share of the source, $1530$, is slightly below the total $1620$.
+**Reasonableness:** The total pulse rate $1620\,\text{min}^{-1}$ is about $27\,\tfrac{1}{\text{s}}$, and the background $90\,\text{min}^{-1}$ is only about $1.5\,\tfrac{1}{\text{s}}$. So the background is a small part of the total, and the share of the source, $1530$, is slightly below the total $1620$.
 
 ## fy8-12-L1-08
 **Asked:** why an alpha emitter is fairly harmless outside the skin but dangerous inside the body

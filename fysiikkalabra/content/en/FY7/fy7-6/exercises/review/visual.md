@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: bcba5280a01c2a67
+CONTENT-HASH: 7ac25460a754c064
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] none new; earlier solution-wrapping notes stand.
+- [Minor] Formula blocks — the aligned blocks are numerous and vertically tall on a phone; acceptable, no change needed.
 
 ## Checked
-- Delta, round 2. Opened open-exercises-1280-2, -4 and -5 (en): task 6-6 with the reworded option, its feedback, the Vastaus box and the model answer; neighbours 6-2/6-3/6-5 for layout. en: "tries to keep" reads naturally. Wording only; option fits two lines, nothing clipped, layout survived.
-- Hash identical at start and end.
+- Delta (Formula steps rewritten as aligned display blocks; round 1, lang en). Opened full-size captures in the lesson folder review/shots (current for this hash): fy7-6-open-exercises-L2-1280-6. Equals signs align in one column, fractions and subscripts readable, cards contain the blocks, no clipping, overflow or red KaTeX; Conversions and Substitution blocks keep their layout. No figure captures apply. Unopened captures show the same component with other formulas.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
