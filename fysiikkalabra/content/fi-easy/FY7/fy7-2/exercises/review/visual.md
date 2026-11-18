@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 09ff9ea6d57c44e7
+CONTENT-HASH: d5a2748b4e5bd31f
+SCOPE: delta (Kaava blocks rewritten as aligned display blocks, fi-easy, round 1)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy7-2/r-points — the fitted line is solid to the origin although the data start at 0,5; draw the part below the first point dashed.
-- [Minor] L2-10 — the opening paragraph is long (source, Ilmatieteen laitos page description and question run together); a break before "Mitä revontulet kertovat…" would help S2 readers.
-- [Minor] L2-08 — the 2x2 option grid leaves an empty area beside an opened feedback; shared component.
+- [Minor] Kaava blocks — rows with a fraction (e.g. $F_\text{m} = m\dfrac{v^2}{r}$) sit tight against the next row; shared component line-height, not a content issue.
 
 ## Checked
-- contact-8 (exercise captures #85–#96): L2-08 force diagrams with Finnish feedback, L2-09 graph, L2-10 R number task, level 3
-- open-exercises-L2-1280-12 at full size: graph with decimal-comma ticks (0,5; 1,0 …), `B = 0,20 T`, solution formatting
-- Read all Finnish task texts, choices and feedback: terms explained for S2 (liike-energia, aurinkotuuli, klassinen käsittely, geomagneettinen häiriö); LaTeX units correct.
-- Only 1280 px captures exist for the exercises.
+- fy7-2-open-exercises-1280-1 (Kaava one-line, layout intact); fy7-2-open-exercises-L3-1280-3 (long chain: ΣF = ma_n … f = qB/2πm, five-row derivation aligned).
+- Aligned at `=`, operator spacing correct, subscripts upright, nothing clipped, no horizontal overflow; framed block reads cleanly inside the open solution; prose around the block (e.g. "Vauhti v lähtee pois laskusta, joten T ei riipu vauhdista.") reads fine.
+- Only 1280 px captures exist for exercises.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

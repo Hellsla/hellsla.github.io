@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 9e5f5a952c579ddb
+CONTENT-HASH: d4743ff8db0e733b
+SCOPE: delta (Kaava blocks rewritten as aligned display blocks, fi-easy, round 1)
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions.md (L2-08 Järkevyys) — "− 8,0 mWb : 0,40 s" starts with a minus set as subtraction; write `{-}8{,}0` (earlier note stands).
+- [Minor] Kaava blocks — rows with a fraction (e.g. $F_\text{m} = m\dfrac{v^2}{r}$) sit tight against the next row; shared component line-height, not a content issue.
 
 ## Checked
-- Delta, round 1. Capture fi-easy fy7-5-open-exercises-L3-1280-6 (lesson folder review/shots) full size: the paragraph cuts in Vastaus and Järkevyys read clearly, chains aligned, the task 5-22 table caption has no marker, nothing clipped.
-- Hash identical at start and end.
+- fy7-5-open-exercises-L2-1280-4 (induction bar: e = vBl, e = RI, I = e/R, I = vBl/R aligned).
+- Aligned at `=`, operator spacing correct, subscripts upright, nothing clipped, no horizontal overflow; framed block reads cleanly inside the open solution; prose around the block (e.g. "Vauhti v lähtee pois laskusta, joten T ei riipu vauhdista.") reads fine.
+- Only 1280 px captures exist for exercises.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

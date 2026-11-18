@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 71e5e54c112e7994
+CONTENT-HASH: fe6642a6b2267039
+SCOPE: delta (Kaava blocks rewritten as aligned display blocks, fi-easy, round 1)
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] Carried over from my earlier report (unchanged text): earlier row-break polish items stay as recorded.
+- [Minor] Kaava blocks — rows with a fraction (e.g. $F_\text{m} = m\dfrac{v^2}{r}$) sit tight against the next row; shared component line-height, not a content issue.
 
 ## Checked
-- Delta, round 1: solutions.md only cut into paragraphs, words unchanged.
-- Captures opened (content/fi-easy/FY7/fy7-7/review/shots): fy7-7-open-exercises-L2-1280-12 (Kohta a)-d) and Vastaus; paragraphs short and clear, formulas intact, nothing clipped; the cuts help S2 readers).
-- Layout checks at 360/768/1280 green in the packet.
+- fy7-7-open-exercises-L2-1280-5 (unchanged one-line Kaava beside); fy7-7-open-exercises-L2-1280-8 (four-row ratio chain and poikkeama block aligned).
+- Aligned at `=`, operator spacing correct, subscripts upright, nothing clipped, no horizontal overflow; framed block reads cleanly inside the open solution; prose around the block (e.g. "Vauhti v lähtee pois laskusta, joten T ei riipu vauhdista.") reads fine.
+- Only 1280 px captures exist for exercises.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

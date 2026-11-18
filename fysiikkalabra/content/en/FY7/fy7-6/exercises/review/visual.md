@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6ab5b11aa4a086db
+CONTENT-HASH: 7ac25460a754c064
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] solutions.md, the terminal-speed exercise — the formula block writes $v_\text{r}$ while the Substitution and Answer lines use $v_\text{t}$ — one symbol for one quantity — use the same subscript in both. For science: confirm the symbol is intended.
+- [Minor] Formula blocks — the aligned blocks are numerous and vertically tall on a phone; acceptable, no change needed.
 
 ## Checked
-- Delta (changed Formula/Kaava blocks, numbers/formulas): opened current full-size captures at 1280 px in the lesson folder review/shots: open-exercises-L3-1280-6. Formula blocks render as aligned display blocks, with equals signs in one column, readable fractions and subscripts, no clipping or overflow, no red KaTeX; the card, the Conversions block and the following Substitution blocks keep their layout. Not every capture was opened; the unopened ones show the same component with other formulas.
-- Hash identical at start and end.
+- Delta (Formula steps rewritten as aligned display blocks; round 1, lang en). Opened full-size captures in the lesson folder review/shots (current for this hash): fy7-6-open-exercises-L2-1280-6. Equals signs align in one column, fractions and subscripts readable, cards contain the blocks, no clipping, overflow or red KaTeX; Conversions and Substitution blocks keep their layout. No figure captures apply. Unopened captures show the same component with other formulas.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish (English) 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

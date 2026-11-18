@@ -1,13 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: 6ab5b11aa4a086db
+VERDICT: PASS
+CONTENT-HASH: 7ac25460a754c064
 
 ## Blocking
-- solutions.md:202 (L3 terminal-speed task) — Kaava row uses $v_\text{r}$ (Finnish rajanopeus) while Find, Substitution and Answer use $v_\text{t}$; the symbol changes mid-solution, so a student cannot follow it — change every $v_\text{r}$ in the Formula row to $v_\text{t}$.
+(none)
 
 ## Polish
-- Formula rows use \text{AVG}/\text{SUM}, Substitution rows use t_avg and "sum": unify (lowercase avg/sum).
+- solutions.md:125,127 and 202 — Formula uses t_{\text{AVG}}, \text{SUM}, Substitution uses t_{\text{avg}}, 'sum': unify to lowercase (carried from round 0). Round-1 blocking v_r/v_t is fixed: v_t throughout.
 
 ## Checked
-- Delta: the rewritten Kaava rows (basic law, derived formula, symbolic simplification, then substitution) read in the same order as the Finnish; symbols, signs and steps are consistent with the Substitution rows.
-- English uses the course terms; no Finnish remnants in the formulas.
-- Language checked: en. Hash 6ab5b11aa4a086db at start and end.
+- Delta: Formula rows now run basic law, derived formula, symbolic simplification, then Substitution uses the last symbolic form; symbols match between rows.
+- ΣF=0, mg−kv_t=0, e=vBl→I→F=IlB→(Bl)²v/R, energy balance E_k1=E_k2+Q: symbols consistent with Substitution.
+- No Finnish subscripts in the formulas now.
+- Language checked: en.

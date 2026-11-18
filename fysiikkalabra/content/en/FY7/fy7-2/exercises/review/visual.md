@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 566f2e8eba9b1d57
+CONTENT-HASH: 97abd1d53339d76f
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] Formula blocks — the aligned blocks are numerous and vertically tall on a phone; acceptable, no change needed.
 
 ## Checked
-- Delta (md-paragraphs): solutions.md of fy7-2 (en) cut into paragraphs. Opened a full-size capture of opened solutions at 1280 px (level 2 part 5; lesson folder review/shots, current for this hash). Layout, card containment and spacing survive; formulas, units and number formats unchanged; no clipping, overflow or red KaTeX. No figure captures apply to the changed text.
-- Hash identical at start and end.
+- Delta (Formula steps rewritten as aligned display blocks; round 1, lang en). Opened full-size captures in the lesson folder review/shots (current for this hash): fy7-2-open-exercises-L2-1280-6. Equals signs align in one column, fractions and subscripts readable, cards contain the blocks, no clipping, overflow or red KaTeX; Conversions and Substitution blocks keep their layout. No figure captures apply. Unopened captures show the same component with other formulas.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish (English) 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
