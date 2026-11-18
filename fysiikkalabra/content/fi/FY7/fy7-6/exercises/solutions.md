@@ -19,7 +19,7 @@ Sama tapahtuisi, jos lähestyvä napa olisi N-napa; silloin renkaan magneetin pu
 **Annettu:** vaunun massa $m = 450\,\text{kg}$, alkuvauhti $v_1 = 22\,\text{m/s}$, loppuvauhti $v_2 = 6{,}0\,\text{m/s}$, rata vaakasuora
 **Kysytty:** kuparilevyjen sisäenergiaksi muuttuva energia $Q$ kilojouleina
 **Periaate:** Rata on vaakasuora ja muut vastukset jätetään huomiotta, joten potentiaalienergia ei muutu ja ainoa energian muutos on liike-energian väheneminen. Energia säilyy: pyörrevirrat muuttavat koko liike-energian vähenemisen jarrun levyjen sisäenergiaksi.
-**Kaava:** $$\begin{aligned} E_{\text{k},1} &= E_{\text{k},2} + Q \\ \tfrac{1}{2} m v_1^2 &= \tfrac{1}{2} m v_2^2 + Q \\ Q &= \tfrac{1}{2} m v_1^2 - \tfrac{1}{2} m v_2^2 \\ &= \tfrac{1}{2} m (v_1^2 - v_2^2) \end{aligned}$$
+**Kaava:** $$\begin{aligned} E_{\text{k},1} &= E_{\text{k},2} + Q \\ \frac{m v_1^2}{2} &= \frac{m v_2^2}{2} + Q \\ Q &= \frac{m v_1^2}{2} - \frac{m v_2^2}{2} \\ &= \frac{m (v_1^2 - v_2^2)}{2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: suureet ovat SI-yksiköissä. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $$\begin{aligned} Q &= \tfrac{1}{2} \cdot 450\,\text{kg} \\ &\cdot \left((22\,\text{m/s})^2 - (6{,}0\,\text{m/s})^2\right) \\ &= 225\,\text{kg} \cdot 448\,\text{m}^2/\text{s}^2 \\ &= 100\,800\,\text{J} \\ &= 100{,}8\,\text{kJ} \end{aligned}$$
 **Vastaus:** $1{,}0 \cdot 10^2\,\text{kJ}$ eli noin $100\,\text{kJ}$, kaksi merkitsevää numeroa kuten loppuvauhdissa $6{,}0\,\text{m/s}$ ja alkuvauhdissa $22\,\text{m/s}$.
@@ -140,7 +140,7 @@ Opiskelijan säännöllä rengas vetäisi lähestyvää magneettia, jolloin magn
 **Annettu:** magneetin massa $m = 20\,\text{g}$, putken pituus $h = 1{,}00\,\text{m}$, pudotuksia $n = 50$, vauhti lopussa $v = 0{,}15\,\text{m/s}$, putken massa $m_\text{p} = 0{,}35\,\text{kg}$, kuparin ominaislämpökapasiteetti $c = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** putken lämpötilan nousu $\Delta T$ kelvineinä
 **Periaate:** Energia säilyy. Jokaisessa pudotuksessa magneetin potentiaalienergian vähenemisestä se osa, joka ei jää liike-energiaksi, muuttuu pyörrevirtojen kautta putken sisäenergiaksi. Lämpöä ei siirry ympäristöön, joten koko tämä energia nostaa putken lämpötilaa, ja kuparin olomuoto ei muutu.
-**Kaava:** $$\begin{aligned} m g h &= \tfrac{1}{2} m v^2 + Q_1 \\ Q &= n Q_1 \\ Q &= c m_\text{p} \Delta T \\ \Delta T &= \frac{Q}{c m_\text{p}} \\ &= \frac{n \left(m g h - \tfrac{1}{2} m v^2\right)}{c m_\text{p}} \end{aligned}$$
+**Kaava:** $$\begin{aligned} m g h &= \frac{m v^2}{2} + Q_1 \\ Q &= n Q_1 \\ Q &= c m_\text{p} \Delta T \\ \Delta T &= \frac{Q}{c m_\text{p}} \\ &= \frac{n \left(m g h - \frac{m v^2}{2}\right)}{c m_\text{p}} \end{aligned}$$
 **Muunnokset:** $m = 20\,\text{g} = 20 \cdot 0{,}001\,\text{kg} = 0{,}020\,\text{kg}$
 **Sijoitus:** $$\begin{aligned} &m g h - \tfrac{1}{2} m v^2 \\ &= 0{,}020\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot 1{,}00\,\text{m} \\ &- \tfrac{1}{2} \cdot 0{,}020\,\text{kg} \cdot (0{,}15\,\text{m/s})^2 \\ &= 0{,}19620\,\text{J} - 0{,}000225\,\text{J} \\ &= 0{,}195975\,\text{J} \end{aligned}$$, joten $Q = 50 \cdot 0{,}195975\,\text{J} = 9{,}79875\,\text{J}$ ja $\Delta T = \dfrac{9{,}79875\,\text{J}}{385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}35\,\text{kg}} = 0{,}07272\,\text{K}$
 **Vastaus:** $0{,}073\,\text{K}$, kaksi merkitsevää numeroa kuten putken massassa $0{,}35\,\text{kg}$ ja magneetin massassa $20\,\text{g}$.

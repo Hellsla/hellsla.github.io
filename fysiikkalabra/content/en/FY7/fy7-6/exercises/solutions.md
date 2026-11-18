@@ -21,7 +21,7 @@ So the force of the ring always opposes the motion of the magnet, which correspo
 **Given:** mass of the car $m = 450\,\text{kg}$, initial speed $v_1 = 22\,\text{m/s}$, final speed $v_2 = 6.0\,\text{m/s}$, horizontal track
 **Find:** the energy $Q$ converted into internal energy of the copper plates, in kilojoules
 **Principle:** The track is horizontal and other resistances are ignored, so the potential energy does not change and the only change in energy is the decrease in kinetic energy. Energy is conserved: the eddy currents convert the whole decrease in kinetic energy into internal energy of the plates of the brake.
-**Formula:** $$\begin{aligned} E_{\text{k},1} &= E_{\text{k},2} + Q \\ \tfrac{1}{2} m v_1^2 &= \tfrac{1}{2} m v_2^2 + Q \\ Q &= \tfrac{1}{2} m v_1^2 - \tfrac{1}{2} m v_2^2 \\ &= \tfrac{1}{2} m (v_1^2 - v_2^2) \end{aligned}$$
+**Formula:** $$\begin{aligned} E_{\text{k},1} &= E_{\text{k},2} + Q \\ \frac{m v_1^2}{2} &= \frac{m v_2^2}{2} + Q \\ Q &= \frac{m v_1^2}{2} - \frac{m v_2^2}{2} \\ &= \frac{m (v_1^2 - v_2^2)}{2} \end{aligned}$$
 **Conversions:** None needed: the quantities are in SI units. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $$\begin{aligned} Q &= \tfrac{1}{2} \cdot 450\,\text{kg} \\ &\cdot \left((22\,\text{m/s})^2 - (6.0\,\text{m/s})^2\right) \\ &= 225\,\text{kg} \cdot 448\,\text{m}^2/\text{s}^2 \\ &= 100\,800\,\text{J} \\ &= 100.8\,\text{kJ} \end{aligned}$$
 **Answer:** $1.0 \cdot 10^2\,\text{kJ}$, that is, about $100\,\text{kJ}$, two significant figures like the final speed $6.0\,\text{m/s}$ and the initial speed $22\,\text{m/s}$.
@@ -163,7 +163,7 @@ When the product is constant, $e = \dfrac{\text{constant}}{\Delta t}$, so the vo
 **Principle:** Energy is conserved. In each drop, the part of the decrease in the potential energy of the magnet that does not remain as kinetic energy is converted through the eddy currents into internal energy of the tube.
 
 No heat is transferred to the surroundings, so all this energy raises the temperature of the tube, and the state of the copper does not change.
-**Formula:** $$\begin{aligned} m g h &= \tfrac{1}{2} m v^2 + Q_1 \\ Q &= n Q_1 \\ Q &= c m_\text{p} \Delta T \\ \Delta T &= \frac{Q}{c m_\text{p}} \\ &= \frac{n \left(m g h - \tfrac{1}{2} m v^2\right)}{c m_\text{p}} \end{aligned}$$
+**Formula:** $$\begin{aligned} m g h &= \frac{m v^2}{2} + Q_1 \\ Q &= n Q_1 \\ Q &= c m_\text{p} \Delta T \\ \Delta T &= \frac{Q}{c m_\text{p}} \\ &= \frac{n \left(m g h - \frac{m v^2}{2}\right)}{c m_\text{p}} \end{aligned}$$
 **Conversions:** $m = 20\,\text{g} = 20 \cdot 0.001\,\text{kg} = 0.020\,\text{kg}$
 **Substitution:** $$\begin{aligned} &m g h - \tfrac{1}{2} m v^2 \\ &= 0.020\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot 1.00\,\text{m} \\ &- \tfrac{1}{2} \cdot 0.020\,\text{kg} \cdot (0.15\,\text{m/s})^2 \\ &= 0.19620\,\text{J} - 0.000225\,\text{J} \\ &= 0.195975\,\text{J} \end{aligned}$$, so $Q = 50 \cdot 0.195975\,\text{J} = 9.79875\,\text{J}$ and $\Delta T = \dfrac{9.79875\,\text{J}}{385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.35\,\text{kg}} = 0.07272\,\text{K}$
 **Answer:** $0.073\,\text{K}$, two significant figures like the mass of the tube $0.35\,\text{kg}$ and the mass of the magnet $20\,\text{g}$.
