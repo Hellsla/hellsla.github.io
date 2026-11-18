@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 780f2e62011fe6f0
+CONTENT-HASH: feb3d9ff810a6f9a
+SCOPE: delta (exercises.json L1-06 feedback, solutions.md L1-06 one sentence; wording only)
 
 ## Blocking
 (none)
@@ -8,8 +9,8 @@ CONTENT-HASH: 780f2e62011fe6f0
 (none)
 
 ## Checked
-- Delta (md-paragraphs, round 2): diff of solutions.md (L3-05 Vastaus: "Pallojen etäisyys …" joined, break now before the part label c)).
-- Opened fy6-10-open-exercises-L3-1280-8 at 1280 px: the open solution reads cleanly, spacing even, nothing clipped. No 390 px exercise captures; the 360 px check is green.
+- Diff read in full: two sentences. "Varaus ei häviä eikä synny tyhjästä." and "Väite varauksen häviämisestä on väärä, koska varaus säilyy." Both are fluent, glossary-consistent Finnish with no numbers or symbols, so no maths or unit typography is affected. The new wording also matches the neighbouring sentence "eivät synny tyhjästä" in the same solution.
+- Opened fy6-10-open-exercises-1280-9 and -10 (level 1 solutions, 1280 px): layout intact, nothing clipped. The changed L1-06 solution was not located in the captures; a one-sentence wording change in a paragraph cannot alter layout, and the 360 to 1280 px layout checks are green.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4
