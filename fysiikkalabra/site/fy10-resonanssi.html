@@ -283,13 +283,13 @@
 </ul></div>
 </section><section class="inv-section" id="mittaa"><h2 id="h-mittaa">Mittaa</h2>
 <p>Kirjaa alkuperäiset mittaustulokset taulukkoon heti mittauksen aikana. Kirjaa myös taajuus ja huoneen lämpötila. Laskemasi suureet saavat omat sarakkeensa mitattujen oikealle puolelle.</p>
-<div class="inv-tuki" data-modes="O"><p>Voit käyttää esimerkiksi tällaista taulukkoa. Lisää rivejä, jos putkeen mahtuu useampia resonanssikohtia.</p>
+<div class="inv-tuki" data-modes="O"><p>Voit käyttää esimerkiksi tällaista taulukkoa. Lisää rivejä, jos putkeen mahtuu useampia resonanssikohtia. Alaindeksi $\text{pit}$ tarkoittaa ilmapatsaan pidentämistä ja $\text{lyh}$ sen lyhentämistä.</p>
 <table>
 <thead>
 <tr>
 <th>$n$</th>
-<th>$L$ pi­den­täen $(\text{m})$</th>
-<th>$L$ ly­hen­täen $(\text{m})$</th>
+<th>$L_\text{pit}\ (\text{m})$</th>
+<th>$L_\text{lyh}\ (\text{m})$</th>
 <th>$\bar{L}_n\ (\text{m})$</th>
 </tr>
 </thead>
@@ -436,5 +436,5 @@ d.addEventListener('toggle',function(){if(d.open)open(d);});d.flMathOpen=functio
 renderMathInElement(root,O);flGlueMath(root);};
 window.addEventListener('beforeprint',function(){document.querySelectorAll('details[data-fl-math="wait"]').forEach(function(d){d.flMathOpen();});});</script>
 <script src="vendor/katex/contrib/auto-render.min.js" onload="flMath(document.body)"></script>
-<script src="lesson.js?v=ac4e916e"></script><script src="readaloud.js?v=7e9dade7"></script><script src="investigation.js?v=1c6a4d0d"></script>
+<script src="offline.js?v=b4958ec9" defer></script><script src="lesson.js?v=ac4e916e"></script><script src="readaloud.js?v=7e9dade7"></script><script src="investigation.js?v=1c6a4d0d"></script>
 </body></html>

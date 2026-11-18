@@ -1,6 +1,0 @@
-# Formulas that were clipped on a phone (360 or 390 px, solutions open) when check_layout.py learned to see them (teacher 2026-11-15, work queue 5b).
-# page<TAB>formula. A page may keep them until its text changes; any other clipped formula fails the check. Rows are only ever removed
-# (fix the formula and delete its row; the file with its last row); written by `check_layout.py --write-known`, never by hand.
-en/fy1-3	= \dfrac{1.004 + 1.012 + 1.008 + 1.014 + 1.012}{5}\,\dfrac{\text{g}}{\
-fi-easy/fy1-3	= \dfrac{1{,}004 + 1{,}012 + 1{,}008 + 1{,}014 + 1{,}012}{5}\,\dfrac{\
-fy1-3	= \dfrac{1{,}004 + 1{,}012 + 1{,}008 + 1{,}014 + 1{,}012}{5}\,\dfrac{\

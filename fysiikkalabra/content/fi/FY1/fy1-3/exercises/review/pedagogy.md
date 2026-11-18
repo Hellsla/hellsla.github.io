@@ -1,20 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f08e184ae3cb1022
-SCOPE: delta added-exercise from 52acd1437917e580 base 9df3f06ae3cc
+CONTENT-HASH: 49dfaa86f7573fbd
 
 ## Blocking
 - none
 
 ## Polish
-- solutions.md fy1-3-L2-09 c) — "seuraavaksi neljä Gran Sasson koetta" is odd Finnish and repeats ICARUS; write "Myöhemmin kaikki neljä Gran Sasson koetta (Borexino, ICARUS, LVD ja OPERA) mittasivat valon nopeuteen sopivan kulkuajan."
-- solutions.md fy1-3-L2-09 Järkevyys — "Siksi tulosta pidettiin uskottavana vasta, kun ajoituksen tarkkuus oli varmistettu" is a non sequitur from 40 000; write "Siksi ajoituksen pitää olla hyvin tarkka, ja pienikin systemaattinen virhe riittää tuottamaan tällaisen poikkeaman."
-- exercises.json fy1-3-L2-09 b) — three questions in one part; split the distance question into its own sentence or drop it (c) already uses the 18 m vs 20 cm comparison only in the solution).
-- c) and d) both argue "systematic error beats a single result"; shorten d) to the example.
+- solutions.md fy1-3-L2-09 c) (still open from the earlier report): "seuraavaksi neljä Gran Sasson koetta (Borexino, ICARUS, LVD ja OPERA) mittasi kaikki kulkuajan, joka sopii valon nopeuteen" repeats ICARUS and "sopii"; write "Myöhemmin kaikki neljä Gran Sasson koetta (Borexino, ICARUS, LVD ja OPERA) mittasivat valon nopeuteen sopivan kulkuajan."
+- exercises.json fy1-3-L2-09 b): three questions in one part; split the distance question into its own sentence.
 
 ## Checked
-- Level 2 data/error task on the course's own topic (random vs systematic error); no repeat of L2-01..08 or the worked example.
-- Needs the CERN page (what was measured, accuracy, later findings); progression: interpret, compute, explain, evaluate.
-- Calculation 2,435 ms, 2,46·10^-5 = 0,00246 %, 18 m, 90 times 20 cm: all correct; answer field 0.002464 matches.
-- Random vs systematic reasoning is explained, not just named.
-- Thermometer example in d) is everyday and apt.
-- Four parts, workload fits an hour's lesson.
+- Delta is paragraph splitting in L1-06, L1-07, L2-06, L2-07, L2-08 and L2-09 solutions: words, numbers and units the same, each split falls where the subject changes (result vs. remark, claims vs. precision), so solutions are easier to follow.
+- L1-09 Sijoitus: mean now in its own aligned block (matrix in numerator breaks the sum over two lines); same values, 1,010 g/cm³ and 1,18 % unchanged. Phone readability left to the visual reviewer.
+- L2-09 b) "Matkan mittaus ei siis voinut..." now its own paragraph after the 18 m vs 20 cm comparison; reasoning intact.
+- Levels, counts and tasks unchanged.

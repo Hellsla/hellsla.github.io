@@ -177,9 +177,9 @@ Mieti ja kirjaa vastauksesi ainakin näihin:
 Mittaa kulkuaika jokaisella valitsemallasi matkalla ja toista mittaukset. Kirjaa alkuperäiset mittaustulokset taulukkoon heti mittauksen aikana: jokainen toisto omaan sarakkeeseensa ja niistä laskettu keskiarvo niiden oikealle puolelle. Kirjaa myös ilman lämpötila ja se, miten mittasit matkat.
 
 ::: tuki OO
-Voit käyttää esimerkiksi tällaista taulukkoa. Lisää sarakkeita, jos teet enemmän toistoja.
+Voit käyttää esimerkiksi tällaista taulukkoa. Alaindeksi kertoo mittauksen järjestysnumeron, ja viimeinen sarake on keskiarvo. Lisää sarakkeita, jos teet enemmän toistoja.
 
-| $d\,(\text{m})$ | $t_2 - t_1\,(\text{ms})$, mittaus 1 | $t_2 - t_1\,(\text{ms})$, mittaus 2 | $t_2 - t_1\,(\text{ms})$, mittaus 3 | keskiarvo $(\text{ms})$ |
+| $d\,(\text{m})$ | $(t_2 - t_1)_1\,(\text{ms})$ | $(t_2 - t_1)_2\,(\text{ms})$ | $(t_2 - t_1)_3\,(\text{ms})$ | $\overline{t_2 - t_1}\,(\text{ms})$ |
 |---|---|---|---|---|
 | | | | | |
 | | | | | |

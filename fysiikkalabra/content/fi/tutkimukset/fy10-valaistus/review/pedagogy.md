@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0c6fc092a617add8
+CONTENT-HASH: 22636af73c38c773
 
 ## Blocking
 
@@ -27,3 +27,7 @@ None.
 ## Checked (delta 2026-11-16)
 
 - Text/typography diff read in context: the long paragraph split before the task 'Päättele tästä…'; the thinking prompt and the hypothesis task are now separate paragraphs, which helps. No blocking finding.
+
+## Checked (delta 2026-11-18)
+
+- Read the header-shortening diff. Headers E_kok and E_tausta are explained before the table (lamp on and off), and the next column shows the subtraction, so each reading is clear. No blocking finding.

@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 220e08dbe292bd1b
-Mode: delta
+CONTENT-HASH: 0e09c62e2d91551c
 
 ## Blocking
 - none
 
 ## Polish
-- Kosteus-section: "kuivan puun lämpöarvo on 16,2 MJ/kg" sits beside the table's ilmakuiva 15; one clause "ilmakuiva puu on hieman kosteampaa kuin kuiva puu" would make the small gap obvious. Optional.
+- inquiry.json, chocolate-vs-firewood distractor feedback: the full stop after $22\,\text{MJ/kg}$ was lost in the edit, so the next sentence ("That is larger ..." / "Se on suurempi ...") runs on. Restore the stop (a stop inside the formula or after it, as in the earlier version).
 
 ## Checked
-- Delta review: the sentence "Kuivemmasta puusta saa enemmän energiaa: MAFY-taulukossa kuivan puun lämpöarvo on 16,2 MJ/kg" replaces the earlier 19 MJ/kg claim; direction right (16,2 > 15), source named, consistent with the fi lesson and the exercises.
-- Short S2 sentence, no new term; the moisture explanation (water does not burn, evaporating it uses energy) is intact.
-- Inquiry and figure/formula-name changes are teacher-approved or re-breaks only; not re-judged.
+batch delta review: lesson.md change is presentation only (md-paragraphs, approved figures); the feedback keeps its repair of the misconception (unit conversion shows 22 MJ/kg > 15 MJ/kg); figure captures and 1280 px row unchanged in meaning.

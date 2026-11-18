@@ -43,6 +43,7 @@ katselmoitu sisältö, ja yhdistäminen on opettajan julkaisupäätös. Toteutus
 `docs/figures/catalog.json`, `docs/assessment/<COURSE>.md` ja `docs/coverage/<COURSE>.md` aiheuttavat saman mainin yhdistys -ristiriidan kuin `site/`. CI generoi ne ja tarkistaa vastaavuuden; `figcat.py find` generoi katalogin tarvittaessa paikallisesti. Ensin suunnitelma, kuten 0g (`docs/audits/2026-11-17-0g-site-suunnitelma.md` osa 9). Jaettu muutos: yksin, 0g:n jälkeen.
 
 ## 4. FY10:n tutkimusten ja TVT-ohjeiden korjaukset (opettaja 2026-11-13)
+Varattu: claude/fy10-taulukko-otsakkeet (taulukko-otsakkeet 390 px; opettaja 2026-11-18: otsakkeet lyhennetään)
 Auditointi tehty (#536), Major-korjaukset ja sisältöosa tehty (#549, #645; loki §4). Erä 1 (jaetut komponentit) tehty (PR #709: apulinkit, listojen numerointi, laskurivit listoissa, tyhjät taulukkorivit, 28×28-kaappaukset; loki §4). Jäljellä, opettajan päätettävä: taulukoiden otsakkeet 390 px:ssä, Minor-erä ja yhteinen kuvasääntö (nimiöt vähintään noin 12 px 390 px:ssä,
 mallikuvaajan akseleilla suure ja yksikkö, kaaviokuvan kuvateksti sanoo sen kaaviokuvaksi, malliksi merkitty luonnoskuvaaja).
 Kuviin ei kosketa: opettaja piirtää ne itse.
@@ -59,7 +60,10 @@ Varattu: claude/elevenlabs-readaloud
 
 ## 5d. Leikkautuvat kaavat omalle rivilleen (opettaja 2026-11-15)
 Tehty kaikille kursseille FY1–FY9 (loki §5d: kurssikohtaiset luvut, opit ja listalle jääneet rivit). Jäljellä vain
-`docs/clipped-formulas/`:n tähderivit (FY5 ja FY6 mitattu, loput rivit sisältömuutoksia, loki §5d; FY4 ja FY7 8g:n PR:issä); ne tehdään 0c:n jälkeen ilman täysiä katselmointeja. Menetelmä: loki §5d "Opit".
+`docs/clipped-formulas/`:n tähderivit; ne tehdään 0c:n jälkeen ilman täysiä katselmointeja. Menetelmä: loki §5d "Opit".
+FY1 tehty (#724). FY2: fy2-2 ja fy2-5 tehty (#724); fy2-3, fy2-4, fy2-6, fy2-7 ja fy2-8 (37 riviä) jäävät: niiden korjaus
+vaatii tiede- ja pedagogiikkakatselmoinnin (rivitys luokittuu `numbers`/`wording`), ks. loki §5d. FY3: 23 riviä jää (lainatut
+opiskelijan laskut ja lauseen sisäiset ketjut fy3-4, fy3-5, fy3-12, fy3-15 sekä fy3-10:n `\dfrac`).
 
 ## 6. Kuvatehtävät ja taulukkotehtävät FY9 (opettaja 2026-11-13…15)
 FY9 C tehty (PR #717, claude/fy9-c-kuvatehtavat): fy9-sahkokentta s7–s8, fy9-magnetismi-valo s8–s9, fy9-moderni s8–s9, fy9-mittaaminen s7–s8, fy9-kokeellisuus s7–s8 (loki §6 FY9 C); koordinaattori kirjaa rivin yhteen kohtaan A:n ja B:n kanssa.
@@ -88,7 +92,7 @@ Turha pystyväli kuvan vierellä, kuva ja pieni taulukko tai kaksi pientä taulu
 viereen, valokuva kuvateksteineen oikealle palstalle (`build.py fig_rows`, site.css, `check_layout.py`). Ennen/jälkeen-kuvat: fy3-8, fy4-3, fy1-1 (1280, 1440, 1920 px). Täysi kuvaus: loki §8e.
 
 ## 8f. Animoitu kuva (opettaja 2026-11-13, pilotti fy3-8)
-Pilotti tehty (#649, `Fig(anim=True)`/`vibrate()`); odottaa opettajan hyväksyntää (`reviews.py approve-figures fy3-8` vasta sen jälkeen). Muut luvut vasta hyväksynnän jälkeen. Vaatimukset: loki §8f.
+Pilotti tehty (#649, `Fig(anim=True)`/`vibrate()`) ja opettajan hyväksymä (commit 615ab0d). **Opettaja 2026-11-18 klo 20.55 ("joo"): laajennetaan muihin lukuihin.** Ensin ehdokasluettelo (luvut, joissa ilmiö on luonnostaan liikettä, esim. FY7 värähtelyt ja aallot, FY3 lämpöliike ja diffuusio, FY6 virta johtimessa) opettajalle, kuvat vasta hyväksynnän jälkeen. Vaatimukset: loki §8f.
 
 ## 8g. Mallivastaukset perusperiaatteesta (opettaja 2026-11-13)
 Tehtävien, Sovellan ja kokeiden mallivastausten Kaava-vaihe alkaa perusyhtälöistä ($\eta = E_\text{hyöty}/E$, $E = Pt$, $Q = rm$, energiatase),
@@ -144,6 +148,7 @@ Suunnitelma `docs/FY9_ADAPTIVE_PLAN.md` (#566), hyväksytty P1–P12. PR 1 (YTL/
 PR 9 Abitti 2 -ohje; PR 10 kielimallin selvitys. Ei palvelinta, ei tekoälyrajapintaa; jokainen uusi käyttöliittymäteksti hyväksytään PR kerrallaan. Arvio 2,5–3,5 M tokenia.
 
 ## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
+Varattu: claude/17a-pr1-verkoton (17a PR 1: verkoton käyttö, service worker).
 Ohjeet ja päätökset K1–K9: `docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md`. Jokainen osa oma PR, yksin; uudet käyttöliittymätekstit PR:n kuvauksessa. Tallennusavaimia, tiedostomuotoja ja korttien id:itä ei muuteta.
 Osat: 17a verkoton käyttö (service worker, manifesti, moduuli laitteelle), 17b koko työ yhteen tiedostoon, 17c yleisvirheiden tunnistus, 17d ajoitettu kertaus, 17e luokan yhteenveto, 17f hakemistot ja haku.
 Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, sitten 17f PR 3, 17a PR 3, 17b PR 2. Osien sisältö: loki §17.
