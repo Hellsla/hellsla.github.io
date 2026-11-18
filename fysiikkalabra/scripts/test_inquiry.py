@@ -576,7 +576,8 @@ check("Ennusta shows the first prediction and keeps the others in a closed box (
 check("no old names on the page", not any(x in page_html for x in ("Herätä kiinnostus", "Lähtölippu", ">Selitä<")))
 _ex = json.loads((ROOT / "content/fi/FY3/fy3-2/exercises/exercises.json").read_text()); _lv = [len(_ex[f"level{k}"]) for k in (1, 2, 3)]
 check(f"exercises and exit ticket kept ({'/'.join(map(str, _lv))}, 1 item)", page_html.count('class="level"') == 3 and page_html.count("<li>$(s, F)$-kuvaajassa") == 1
-      and re.findall(r'<span class="count">(\d+) tehtävää', page_html) == [str(n) for n in _lv])
+      and page_html.count('class="core-card"') == 1 and len(re.findall(r'<li id="[^"]+"[^>]* data-level="\d"', page_html)) == sum(_lv)
+      and [int(n) + page_html.split('class="core-card"')[1].split('</ol></div>')[0].count(f'data-level="{k}"') for k, n in enumerate(re.findall(r'<span class="count">(\d+) tehtävää', page_html), 1)] == _lv)
 check("no answer disclosed before commitment", 'class="feedback" data-for="0" hidden' in page_html)
 check("nav lists the stages", '<a href="#herata">' in page_html and '<a href="#tarkista">' in page_html)
 
