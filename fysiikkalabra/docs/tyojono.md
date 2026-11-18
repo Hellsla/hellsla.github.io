@@ -134,11 +134,7 @@ nimien yhtenäistäminen (Toisto / Tauko / Alusta), toistuvien seliterivien pois
 Yleislinja (CLAUDE.md "General UI line"): käyttöliittymään ei lisätä tekstiä. U4 (#561) ja U5 (#582) tehty. U1–U3 jaettuja (`templates/`, `scripts/`, `site.css`, `lang/`):
 yksin, järjestyksessä U1, U2, U3, kohdan 10 PR 5:n jälkeen; ennen/jälkeen-kuvat PR:ään ja pysähdys opettajan hyväksyntään. Fysiikkaan, vastauksiin,
 toleransseihin, tallennusavaimiin ja palautustiedostoon ei kosketa. Täysi määrittely: loki §11.
-- **U1 Ydintehtävät auki Tehtävät-vaiheen alkuun**: luvun ydintehtävät (`build.py core_ids`, tasot 1 ja 2, ei tasoa 3) näkyvät auki otsikon alla yhdessä kortissa,
-  tason merkki **Perus**/**Soveltava** (hyväksytty teksti), muut tehtävät suljetuissa tasolaatikoissa niiden alla; ei uutta otsikkoa, laskuria eikä ohjeriviä;
-  `level_lead_1/2` poistetaan. Ehdot: tehtävä DOM:ssa kerran, id, `data-num`, tarkistus, vihjeet, ratkaisut ja Yritä ensin ennallaan; `palautus_tasks.py` lukee
-  tason uudesta `data-level`-tiedosta; `lesson.js`:n tasolaskuri, pakollisten vastausten sääntö, teorian vieressä -tila ja koko näytön tila päivitetään; toimii ilman JS:ää.
-  Testit: `test_progress`, `test_palautus`, `test_tehty`, `test_writepad`, `test_koko`, `check_layout`, `palautus_tasks.py --check`, `check_a11y`. Samassa PR:ssä CLAUDE.md:n Lesson page 8 korjataan.
+- **U1 Ydintehtävät auki Tehtävät-vaiheen alkuun**: toteutettu (`claude/11-u1-ydintehtavat`), odottaa opettajan hyväksyntää ja yhdistämistä; poistetaan jonosta yhdistettäessä. Luvut, joiden ydintehtävät ovat yhdeltä tasolta: PR:n kuvaus.
 - **U2 Tehtäväkortin järjestys** (U1:n jälkeen): numero ja merkit; tilanne ja kysymys; kuva; vastauskenttä + Tarkista (täytetty päänappi) + Kirjoita ratkaisu; palaute; erotinviivan alla Vihjeet, Vastaus, Näytä ratkaisu, lukko. Ei uusia tekstejä.
 - **U3 Teorian taitto, vaihtoehto B** (kohta 8e): 38 rem:n palsta säilyy; teksti kuvarivin yläreunaan, valokuva viereen, kaksi pientä taulukkoa vierekkäin, korkea kuva alle tai seuraava kappale viereen.
 - Ei tehdä: Aloita-riviä, "Näytä kaikki tehtävät" -toimintoa, etusivun ryhmäotsikoita, marginaalipalstaa tai keskitettyä lukupalstaa, yhden luvun julkaistua pilottia.
