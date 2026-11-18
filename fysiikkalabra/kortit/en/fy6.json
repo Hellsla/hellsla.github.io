@@ -40,9 +40,9 @@
    "luku": "fy6-10",
    "aihe": "fy6-varaus-ja-kentta",
    "kasite": "Coulomb's law",
-   "maaritelma": "The force between two point charges.",
-   "kaava": "F = k\\dfrac{q_1 q_2}{r^2}",
-   "kaava_puhe": "F is k times q one times q two divided by r squared"
+   "maaritelma": "The magnitude of the force between two point charges.",
+   "kaava": "F = k\\dfrac{\\lvert q_1 q_2 \\rvert}{r^2}",
+   "kaava_puhe": "F is k times the absolute value of q one times q two, divided by r squared"
   },
   {
    "id": "fy6-sahkokentta",
@@ -142,7 +142,7 @@
    "luku": "fy6-5",
    "aihe": "fy6-virtapiirit",
    "kasite": "Kirchhoff's voltage law",
-   "maaritelma": "The sum of the voltages around a closed loop is zero."
+   "maaritelma": "The sum of the rises and drops of potential around a closed loop is zero."
   },
   {
    "id": "fy6-lahdejannite",
@@ -312,7 +312,7 @@
    "kasite": "Charging current",
    "maaritelma": "The current driven through a battery by the difference between the charger voltage and the battery's source voltage; the battery charges only when $U_\\text{ch} > E$.",
    "kaava": "I = \\dfrac{U_\\text{ch} - E}{R + R_\\text{s}}",
-   "kaava_puhe": "I is U ch minus E divided by R plus R s"
+   "kaava_puhe": "I is U ch minus E, all divided by R plus R s"
   },
   {
    "id": "fy6-potentiaalienergia",
@@ -342,7 +342,7 @@
    "kasite": "Potential difference",
    "maaritelma": "The difference between the potentials of two points, that is, the voltage between them; the field does work $qU$ on a charge regardless of the path.",
    "kaava": "W_{AB} = q(V_A - V_B) = qU_{AB}",
-   "kaava_puhe": "W A B is q times V A minus V B, which is q times U A B"
+   "kaava_puhe": "W A B is q times the difference V A minus V B, which is q times U A B"
   },
   {
    "id": "fy6-tasapotentiaalipinta",
@@ -358,7 +358,7 @@
    "luku": "fy6-12",
    "aihe": "fy6-varaus-ja-kentta",
    "kasite": "Electronvolt",
-   "maaritelma": "The energy gained by a charge equal to the elementary charge when it moves through a potential difference of $1\\,\\text{V}$.",
+   "maaritelma": "The energy that a charge with the magnitude of the elementary charge gains when it moves through a potential difference of $1\\,\\text{V}$.",
    "kaava": "1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}",
    "kaava_puhe": "one electronvolt is 1.602 times 10 to the power minus 19 joules"
   },
@@ -368,7 +368,7 @@
    "luku": "fy6-15",
    "aihe": "fy6-sahkoenergia-ja-komponentit",
    "kasite": "Fuse",
-   "maaritelma": "A protective device at the start of a circuit that cuts the current before too large a current heats the wire dangerously."
+   "maaritelma": "A protective device at the start of a circuit that cuts the current before too large a current heats the cable dangerously."
   },
   {
    "id": "fy6-suojamaadoitus",
@@ -384,7 +384,7 @@
    "luku": "fy6-15",
    "aihe": "fy6-sahkoenergia-ja-komponentit",
    "kasite": "Residual current device",
-   "maaritelma": "A protective device that compares the currents in the live and neutral conductors and cuts the current when the difference exceeds, usually, $30\\,\\text{mA}$."
+   "maaritelma": "A protective device that compares the currents in the line and neutral conductors and cuts the current when their difference exceeds the tripping current, usually $30\\,\\text{mA}$."
   },
   {
    "id": "fy6-suojausluokka",
@@ -392,7 +392,7 @@
    "luku": "fy6-15",
    "aihe": "fy6-sahkoenergia-ja-komponentit",
    "kasite": "Protection class",
-   "maaritelma": "The class marked on a device's plate that tells how it is protected: I protective earthing, II double insulation, III protective extra-low voltage."
+   "maaritelma": "The class marked on a device's rating plate that tells how it is protected: I protective earthing, II double insulation, III protective extra-low voltage."
   },
   {
    "id": "fy6-askeljannite",
@@ -436,7 +436,7 @@
    "kasite": "Charging time",
    "maaritelma": "The time it takes to charge a battery at constant power, when the losses of charging are taken into account with an efficiency.",
    "kaava": "t = \\dfrac{W_\\text{battery}}{\\eta P}",
-   "kaava_puhe": "t is W battery divided by eta times P"
+   "kaava_puhe": "t is W battery divided by the product of eta and P"
   }
  ]
 }
