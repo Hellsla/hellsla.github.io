@@ -254,7 +254,9 @@ Vetylampun punainen viiva syntyy, kun vetyatomin elektroni siirtyy tasolta $n = 
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Ylempi taso $n = 3$, alempi taso $n = 2$, tasojen energiat $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$. Kysytään fotonin aallonpituutta $\lambda$.
+**Tunnetut ja kysytty.** Ylempi taso $n = 3$, alempi taso $n = 2$, tasojen energiat $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$.
+
+Kysytään fotonin aallonpituutta $\lambda$.
 
 <!-- vaihe -->
 
