@@ -1061,6 +1061,47 @@ expect("0e ... a row of another language does not count", "fi-layout" in en0("sc
 (t / "docs/clipped-formulas/FY3.tsv").unlink(); git(t, "checkout", "-q", "--", "content")
 expect("0e (f) an en visual FAIL for its current hash is never overridden", "fi-layout" not in out, out)
 
+# 8k. a text change the teacher read and approved (work queue 8k): `approve-text` records the exact file before and after
+# with the source of the approval; the change is then "teacher-text" (none for all three), carry records it, any later edit
+# changes the hash so the row no longer applies, and verify rejects a carry that relied on it
+t = project(); init_git(t); L = t / "content/fi/FY3" / LESSON; p = L / "lesson.md"
+for n in ("science", "pedagogy", "visual"): report(t, n)
+src_md = p.read_text(); numline = next(l for l in src_md.splitlines() if re.search(r"\d", l) and not l.lstrip().startswith(("<", "#", "-", "`", "|", "{")) and len(l.split()) > 6)
+edited = src_md.replace(numline, numline + " Lisälause 12 kg:sta.", 1); p.write_text(edited)
+out = run(t, "reviews.py", "scope", LESSON)[1]
+expect("8k: a text change nobody approved is reviewed as usual", "science: none" not in out and "teacher-text" not in out, out)
+code, out = run(t, "reviews.py", "approve-text", LESSON, "--base", "HEAD")
+expect("8k: approve-text without the source of the approval refuses and writes nothing", code != 0 and "source" in out and not (t / "docs/teacher-text.tsv").exists(), out)
+code, out = run(t, "reviews.py", "approve-text", LESSON, "--base", "HEAD", "--source", "opettaja 2026-11-18, koordinaattorin kautta")
+tsv = t / "docs/teacher-text.tsv"
+expect("8k: approve-text records the file with its source", code == 0 and tsv.is_file() and "opettaja 2026-11-18, koordinaattorin kautta" in tsv.read_text() and f"{LESSON}\tcontent/fi/FY3/{LESSON}/lesson.md" in tsv.read_text(), out)
+expect("8k: the rows are well formed", run(t, "reviews.py", "verify")[1].count("ERROR") == 0, run(t, "reviews.py", "verify")[1])
+out = run(t, "reviews.py", "scope", LESSON)[1]
+expect("8k: the approved change: none for all three reviewers, category teacher-text", out.count(": none") == 3 and "teacher-text" in out, out)
+code, out = run(t, "reviews.py", "approve-text", LESSON, "--base", "HEAD", "--source", "uudelleen")
+expect("8k: approving the same change twice adds no row", "0 text change(s) recorded" in out and tsv.read_text().count(f"{LESSON}\t") == 1, out)
+run(t, "reviews.py", "carry", LESSON)
+expect("8k: carry records teacher-text for all three reviewers", (L / "review/carry.tsv").read_text().count("teacher-text") == 3, (L / "review/carry.tsv").read_text())
+git(t, "add", "."); git(t, "commit", "-qm", "approved text change")
+expect("8k: verify accepts the carry while the text is as approved", run(t, "reviews.py", "verify")[0] == 0, run(t, "reviews.py", "verify")[1])
+p.write_text(edited.replace("12 kg", "13 kg", 1))
+out = run(t, "reviews.py", "scope", LESSON)[1]
+expect("8k: an edit made after the approval is no longer approved (reviewed as usual)", "science: none" not in out and "teacher-text" not in out, out)
+expect("8k: ... and the chapter is a draft again: the carry holds for the approved text only", ": draft" in state(t) and "science=stale" in state(t), state(t))
+p.write_text(edited)
+tsv_ok = tsv.read_text(); tsv.unlink()
+out = run(t, "reviews.py", "verify")
+expect("8k: verify rejects a carry in use whose approval row is gone", out[0] != 0 and "covers changes it must review" in out[1], out[1])
+tsv.write_text(tsv_ok)
+tsv.write_text(tsv.read_text() + "2026-11-18\tfi\tx\tlesson.md\tabc\tdef\t\n")
+out = run(t, "reviews.py", "verify")
+expect("8k: verify rejects a malformed row (hashes, empty source)", out[0] != 0 and "malformed row" in out[1], out[1])
+# the helper: only text files, exact hashes
+import reviews as _r8
+_r8.teacher_text_rows = lambda: {("content/fi/FY3/x/lesson.md", _r8._pres_hash("a"), _r8._pres_hash("b")), ("content/fi/FY3/x/sim.js", _r8._pres_hash("a"), _r8._pres_hash("b"))}
+expect("8k: text_approved: exactly the approved before and after", _r8.text_approved("content/fi/FY3/x/lesson.md", "a", "b") and not _r8.text_approved("content/fi/FY3/x/lesson.md", "a", "c") and not _r8.text_approved("content/fi/FY3/y/lesson.md", "a", "b"))
+expect("8k: ... never code (a sim.js row covers nothing)", not _r8.text_approved("content/fi/FY3/x/sim.js", "a", "b") and not _r8.text_eligible("lessons/FY3/x/answers.py") and not _r8.text_eligible("tests/sims/x.json"))
+
 expect("real project untouched", snapshot() == REAL)
 print("\n" + ("all review tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
 sys.exit(1 if failures else 0)
