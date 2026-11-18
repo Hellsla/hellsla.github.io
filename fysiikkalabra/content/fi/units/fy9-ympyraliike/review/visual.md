@@ -1,17 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 6b1b4c290d7b688d
-SCOPE: delta: Sovella itsenäisesti tasks s8 (Auto ajaa kaarteessa, figure fy5-4/kuvaaja-a) and s9 (Kyltti seinän tangossa, figure fy5-2/kyltti) with solutions, rubric and answers, and the changed intro sentence ("Yhdeksän ... tehtävää"), fi. Tasks s1-s7 not re-judged.
+VERDICT: PASS
+CONTENT-HASH: c415a4f87c3b7043
+SCOPE: delta: round 1 fixes since previous visual review: 7400 N in s8 d) (tasks.json and solutions.md), en translation fixes, en term "centripetal acceleration"; fi. Tasks s1-s7 not re-judged.
 
 ## Blocking
-- B s8 d) Mallivastaus and rubric (tasks.json s8 d, solutions.md "### d)", line about 606): the greatest friction is given as `{\approx 7360\,\text{N}}` (three figures) although the data ($\mu_\text{s} = 0{,}50$) has two. Round to the data's precision: $0{,}50 \cdot 1500\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 7400\,\text{N}$ (or $7{,}4\,\text{kN}$). The "4500 N" beside it is right. The 61 % ratio and the 5,9 kN of part c are already two-figure. Language-neutral: the same line in all three languages.
+None. The previous Blocking item (s8 d greatest friction 7360 N, three figures against two-figure data) is resolved: tasks.json rubric and solutions.md line 606 now read $\approx 7400\,\text{N}$; no 7360 remains in the language. 4500 N and 61 % unchanged and consistent.
 
 ## Polish
-- B s9 a) Periaate: one paragraph of about 115 words (hinge choice, centre of mass, torque of $T\sin\theta$, directions of rotation). Split before "Tangon paino vaikuttaa painopisteestä" and again before "Vaijerin voimasta tankoa vastaan ...".
-- C s9 d) Mallivastaus: the last chain (H') ends a display block and "Aiemmin $331\,\text{N}$" starts the next sentence with no full stop; s8 d) has "$$ja suurin" with no space after a display block. Both render acceptably at 390 px but the source joins are fragile; end the display with a full stop or move the text into its own sentence.
+Round 1 Polish items (s9 a long Periaate paragraph; s9 d / s8 d display-block joins) remain recorded, not re-raised.
 
 ## Checked
-- Opened in the Finnish captures (current for this hash, stamp 6b1b4c290d7b688d): contact-8 and -9, stage-exercises-390-63 (s8 card and graph), -73 (s9 card and figure), 1280-48 (s8 a solution), 1280-56 (s9 a solution).
-- s8: graph has quantity and unit on both axes, readable ticks, the marked point (15 m/s, 3,0 m/s²) with dashed guides, curve distinct from the marker; alt text uses the task's names (auto, kaarre, normaalikiihtyvyys, ratanopeus). Answer box $r = 75\,\text{m}$, $F \approx 3{,}6\,\text{kN}$, $v_\text{max} \approx 19\,\text{m/s}$ (69 km/h) rounded to two figures; chains aligned at `=`, nothing clipped with solutions open at 390.
-- s9: figure alt names kyltti, tanko, vaijeri match the task; hinge, wire angle and length are shown; answers $380\,\text{N}$, $330\,\text{N}$, $29\,\text{kg}$ rounded to two figures; aligned chains and fractions intact at 390 and 1280.
-- Task texts do not reveal the structure (no "kolme vaihetta", no "kahdesti"); questions are last. Unit is language-neutral: ids, figures, numbers and answers identical across fi, en, fi-easy.
-- Hash at start and end: 6b1b4c290d7b688d (unchanged).
+- Grep for 7360 across tasks.json and solutions.md: no hits; 7400 present in both files.
+- Diff of the Sovella files against the previous commit: only the intended lines changed; no new math, figure reference or layout change.
+- Display-block structure around the edited line unchanged, so the rendering at 390 px is as judged in round 1.
+- Content hash at start and end identical: c415a4f87c3b7043.

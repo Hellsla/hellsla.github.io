@@ -631,10 +631,10 @@ $$ at a speed of about $19\,\text{m/s}$.
 ## fy9-ympyraliike-s9
 
 ### a)
-**Given:** mass of the sign $m_\text{s} = 18\,\text{kg}$, mass of the rod $m_\text{t} = 3.0\,\text{kg}$, length of the rod $L = 1.20\,\text{m}$ and the angle between the wire and the rod $\theta = 30.0^\circ$; $g = 9.81\,\text{m/s}^2$
-**Find:** the force $T$ of the wire
-**Principle:** Choose the rod and the sign as the body. In the free-body diagram the weight of the sign $\overline{G}_\text{s}$ points down from the end of the rod, the weight of the rod $\overline{G}_\text{t}$ down from the middle of the rod, the force of the wire $\overline{T}$ obliquely up towards the wall from the end of the rod and the force of the hinge $\overline{F}_\text{s}$ at the hinge. The body is at rest, so it is in equilibrium: the sum of the forces and the sum of the moments are zero (chapter *Equilibrium of a body: forces and moments*). The hinge is chosen as the pivot, because about it the lever arm of the unknown force of the hinge is zero. The weight of the rod acts at its centre of gravity, which for a uniform rod is at the middle, at the distance $\tfrac{L}{2}$. The component of the wire force perpendicular to the rod, $T\sin\theta$, turns the rod with the lever arm $L$. The weights turn it the opposite way.
-**Reading the graph:** The length of the rod $L = 1.20\,\text{m}$ and the angle between the wire and the rod $\theta = 30.0^\circ$ are read from the figure.
+**Given:** mass of the sign $m_\text{s} = 18\,\text{kg}$, mass of the rod $m_\text{t} = 3.0\,\text{kg}$, length of the rod $L = 1.20\,\text{m}$ and the angle between the cable and the rod $\theta = 30.0^\circ$; $g = 9.81\,\text{m/s}^2$
+**Find:** the force $T$ of the cable
+**Principle:** Choose the rod and the sign as the body. In the free-body diagram the weight of the sign $\overline{G}_\text{s}$ points down from the end of the rod, the weight of the rod $\overline{G}_\text{t}$ down from the middle of the rod, the force of the cable $\overline{T}$ obliquely up towards the wall from the end of the rod and the force of the hinge $\overline{F}_\text{s}$ at the hinge. The body is at rest, so it is in equilibrium: the sum of the forces and the sum of the moments are zero (chapter *Equilibrium of a body: forces and moments*). The hinge is chosen as the pivot, because about it the lever arm of the unknown force of the hinge is zero. The weight of the rod acts at its centre of gravity, which for a uniform rod is at the middle, at the distance $\tfrac{L}{2}$. The component of the cable force perpendicular to the rod, $T\sin\theta$, turns the rod with the lever arm $L$. The weights turn it the opposite way.
+**Reading the graph:** The length of the rod $L = 1.20\,\text{m}$ and the angle between the cable and the rod $\theta = 30.0^\circ$ are read from the figure.
 **Formula:** The sum of the moments about the hinge is zero: $$
 \begin{aligned}
 T L\sin\theta - m_\text{s} g L - m_\text{t} g\,\tfrac{L}{2} &= 0
@@ -654,12 +654,12 @@ T &= \dfrac{(m_\text{s} + \tfrac12 m_\text{t})\,g}{\sin\theta} \\
 \end{aligned}
 $$
 **Answer:** $T \approx 380\,\text{N}$, two significant figures like the masses.
-**Reasonableness:** The vertical component of the wire force is $T\sin\theta = 191\,\text{N}$, which corresponds to the mass $19.5\,\text{kg}$, the mass of the sign and half of the rod. The wire is oblique ($\sin 30.0^\circ = 0.500$), so its force is greater than the weight alone, about $380\,\text{N}$.
+**Reasonableness:** The vertical component of the cable force is $T\sin\theta = 191\,\text{N}$, which corresponds to the mass $19.5\,\text{kg}$, the mass of the sign and half of the rod. The cable is oblique ($\sin 30.0^\circ = 0.500$), so its force is greater than the weight alone, about $380\,\text{N}$.
 
 ### b)
 **Given:** from part a $T = 382.6\,\text{N}$ and $\theta = 30.0^\circ$; $m_\text{s} = 18\,\text{kg}$, $m_\text{t} = 3.0\,\text{kg}$, $g = 9.81\,\text{m/s}^2$
 **Find:** the magnitude of the force $F_\text{s}$ of the hinge
-**Principle:** The body is at rest, so the sum of the forces is zero (chapter *Equilibrium of a body: forces and moments*). Choose the $x$ axis away from the wall and the $y$ axis up. The force of the hinge has a horizontal component $H$ and a vertical component $V$, and the force of the wire points, according to the figure, towards the wall and up. In the horizontal direction the wire pulls the rod towards the wall, so the hinge pushes away from the wall.
+**Principle:** The body is at rest, so the sum of the forces is zero (chapter *Equilibrium of a body: forces and moments*). Choose the $x$ axis away from the wall and the $y$ axis up. The force of the hinge has a horizontal component $H$ and a vertical component $V$, and the force of the cable points, according to the figure, towards the wall and up. In the horizontal direction the cable pulls the rod towards the wall, so the hinge pushes away from the wall.
 **Formula:** $\Sigma F_x = H - T\cos\theta = 0$ and $$
 \begin{aligned}
 \Sigma F_y &= V + T\sin\theta - (m_\text{s} + m_\text{t})g \\
@@ -693,18 +693,18 @@ $$. Direction: $$
 &= \dfrac{14.7}{331.3}
 \end{aligned}
 $$, so $\alpha \approx 2.5^\circ$ above the horizontal.
-**Answer:** $F_\text{s} \approx 330\,\text{N}$, direction about $2.5^\circ$ above the horizontal, away from the wall. Two significant figures like the force of the wire.
-**Reasonableness:** Take moments about the outer end of the rod: the force of the wire and the weight of the sign then have no lever arm, so $V L = m_\text{t} g\,\tfrac{L}{2}$ and $$
+**Answer:** $F_\text{s} \approx 330\,\text{N}$, direction about $2.5^\circ$ above the horizontal, away from the wall. Two significant figures like the force of the cable.
+**Reasonableness:** Take moments about the outer end of the rod: the force of the cable and the weight of the sign then have no lever arm, so $V L = m_\text{t} g\,\tfrac{L}{2}$ and $$
 \begin{aligned}
 V &= \tfrac12 \cdot 3.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
 &\approx 14.7\,\text{N}
 \end{aligned}
-$$, the same as above. The force of the hinge is almost horizontal, because the wire carries almost the whole weight and the horizontal force $H$ comes from the obliqueness of the wire.
+$$, the same as above. The force of the hinge is almost horizontal, because the cable carries almost the whole weight and the horizontal force $H$ comes from the obliqueness of the cable.
 
 ### c)
 **Given:** $T_\text{max} = 600\,\text{N}$, $\theta = 30.0^\circ$, $m_\text{t} = 3.0\,\text{kg}$; $g = 9.81\,\text{m/s}^2$
 **Find:** the greatest mass $m_\text{s}$ of the sign
-**Principle:** The situation is the same as in part a, and the moment condition about the hinge holds (chapter *Equilibrium of a body: forces and moments*). The greatest mass is found when the force of the wire is the greatest allowed, $T = T_\text{max}$.
+**Principle:** The situation is the same as in part a, and the moment condition about the hinge holds (chapter *Equilibrium of a body: forces and moments*). The greatest mass is found when the force of the cable is the greatest allowed, $T = T_\text{max}$.
 **Formula:** from the moment condition of part a $$
 \begin{aligned}
 T_\text{max} \sin\theta &= (m_\text{s} + \tfrac12 m_\text{t})\,g
@@ -729,41 +729,41 @@ $$
 T &= \dfrac{(29.08 + 1.5)\,\text{kg} \cdot 9.81\,\text{m/s}^2}{0.500} \\
 &\approx 600\,\text{N}
 \end{aligned}
-$$. The result is greater than the present $18\,\text{kg}$, as it should be, because in the present situation the force of the wire, $380\,\text{N}$, is below $600\,\text{N}$.
+$$. The result is greater than the present $18\,\text{kg}$, as it should be, because in the present situation the force of the cable, $380\,\text{N}$, is below $600\,\text{N}$.
 
 ### d)
-**Find:** how the force of the wire changes when $\theta' = 45^\circ$
+**Find:** how the force of the cable changes when $\theta' = 45^\circ$
 **Principle:** The moment condition about the hinge is the same as in part a, but the angle is $\theta'$ (chapter *Equilibrium of a body: forces and moments*). It becomes $$
 \begin{aligned}
 T\sin\theta' \cdot L &= (m_\text{s} + \tfrac12 m_\text{t})\,g L
 \end{aligned}
-$$: the vertical component of the wire force $T\sin\theta'$ is always the same, because the moments of the weights do not change.
+$$: the vertical component of the cable force $T\sin\theta'$ is always the same, because the moments of the weights do not change.
 **Model answer:** The vertical component stays at $$
 \begin{aligned}
 T\sin\theta &= (m_\text{s} + \tfrac12 m_\text{t})g \\
 &\approx 191\,\text{N}
 \end{aligned}
-$$ whatever the angle. The force of the wire is therefore $$
+$$ whatever the angle. The force of the cable is therefore $$
 \begin{aligned}
 T &= \dfrac{(m_\text{s} + \tfrac12 m_\text{t})\,g}{\sin\theta'} \\
 &= \dfrac{191.3\,\text{N}}{\sin 45^\circ} \\
 &= \dfrac{191.3\,\text{N}}{0.7071} \\
 &= 270.5\,\text{N}
 \end{aligned}
-$$. The force decreases by about $29\,\%$ ($380\,\text{N} \to 270\,\text{N}$). The reason: when the wire is steeper, a larger share of its force points upwards, so the force need not be as large to give the same vertical component. At the same time the horizontal component decreases: $$
+$$. The force decreases by about $29\,\%$ ($380\,\text{N} \to 270\,\text{N}$). The reason: when the cable is steeper, a larger share of its force points upwards, so the force need not be as large to give the same vertical component. At the same time the horizontal component decreases: $$
 \begin{aligned}
 H' &= T\cos 45^\circ \\
 &= 270.5\,\text{N} \cdot 0.7071 \\
 &= 191.3\,\text{N}
 \end{aligned}
-$$ Before it was $331\,\text{N}$, so the force of the hinge also decreases. Fixing the wire higher thus strains both the wire and the hinge less.
+$$ Before it was $331\,\text{N}$, so the force of the hinge also decreases. Fixing the cable higher thus strains both the cable and the hinge less.
 
 ### Yleisiä virheitä
 - In part a the weight of the rod is taken at the end of the rod or its moment is forgotten. The weight of a uniform rod acts at the middle, with the lever arm $\tfrac{L}{2}$.
-- In part a the lever arm of the wire force is taken as $L$ with no angle. Only the component perpendicular to the rod, $T\sin\theta$, turns the rod, or the lever arm is $L\sin\theta$.
+- In part a the lever arm of the cable force is taken as $L$ with no angle. Only the component perpendicular to the rod, $T\sin\theta$, turns the rod, or the lever arm is $L\sin\theta$.
 - In part b only the horizontal or the vertical component is taken as the force of the hinge. The force is the vector sum of both components.
-- In part d it is assumed that a steeper wire increases the force. The vertical component stays the same, so the whole force decreases.
+- In part d it is assumed that a steeper cable increases the force. The vertical component stays the same, so the whole force decreases.
 
 ### Hyväksytään myös
 - In part b $V$ can be calculated with the moments about the outer end of the rod: $V L = m_\text{t} g\,\tfrac{L}{2}$, and $H = T\cos\theta$.
-- In part a the moments can also be calculated with the horizontal and vertical components of the wire force: the lever arm of the vertical component is $L$ and that of the horizontal component is zero, the same result.
+- In part a the moments can also be calculated with the horizontal and vertical components of the cable force: the lever arm of the vertical component is $L$ and that of the horizontal component is zero, the same result.

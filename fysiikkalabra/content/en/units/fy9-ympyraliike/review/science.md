@@ -1,19 +1,17 @@
 VERDICT: FAIL
-CONTENT-HASH: e9bf2efc3c9791b6
-SCOPE: delta: new tasks s8 and s9 (text, solutions, criteria), answers.py s8/s9, changed intro sentence; s1-s7 not re-judged.
+CONTENT-HASH: 0230c0b74297e942
+SCOPE: delta: round 1 fixes (s8 d 7360 N -> 7400 N; en: s9 b criterion translation, "centripetal acceleration" in s8 and figure alt); s1-s7 not re-judged.
 
 ## Blocking
-- s9 b rubric (tasks.json, criterion 2) is untranslated Finnish: "$H \approx 331\,\text{N}$ poispäin seinästä ja $V \approx 14.7\,\text{N}$ ylöspäin." Should read "... away from the wall and ... upwards."
-- Alt text names differ from the task's names: the s9 figure (content/en/FY5/fy5-2/figures.json, shared with the chapter) says "cable" (and the label "vaijeri" -> "cable") while the task says "wire"; the s8 graph alt says "centripetal acceleration" while the task says "normal acceleration". Align to the task's terms ("wire", "normal acceleration"; the chapter's own en text should be checked for the same terms before changing the shared file).
+- Still open from round 1 (part 2): the s9 figure (content/en/FY5/fy5-2/figures.json, line 22 alt "A cable runs from the outer end of the rod..." and label line 25 "vaijeri": "cable") says "cable" while the s9 task, solutions and criteria say "wire". Align to "wire" (shared chapter file; the FY5 lesson.md has neither term, so no conflict there).
+- Resolved: s9 b criterion translated; s8 "centripetal acceleration" now matches the FY5 lesson term.
 
 ## Polish
-- s8 d: 7360 N has more figures than the data (0.50); use about 7.4 kN / 7400 N.
+- Round 1 Polish items stay recorded (s9 b 331 N vs 330 N).
+- Unit chart (unit.md line 175, figures.json glossary) still says "normal acceleration"; outside this delta, the FY5 lesson accepts it as a synonym.
 
 ## Checked
-- s8 recomputed: r = 15^2/3,0 = 75 m; second graph point 20 m/s, 5,3 m/s^2 -> 75 m (curve a = v^2/75 in figures.py); F = 1200*3,0 = 3,6 kN; mu g = 4,905; v_max = 19,18 m/s = 69,0 km/h; F_max = 5,89 kN, need/max = 61 %; d: 4500 N and 7357 N, ratio unchanged. Physics sound (static friction, no centrifugal force, mass cancels).
-- s9 recomputed: T = 19,5*9,81/0,500 = 382,6 N; H = 331,3 N; V = 14,7 N; F_s = 331,7 N at 2,5 deg; end-moment check V = m_t g/2 = 14,7 N; m_s,max = 29,08 kg; d: T = 270,5 N (-29 %), H' = 191,3 N, hinge force falls (about 192 N). Direction of change and explanation correct.
-- Task text does not reveal solution structure (no 'phases', 'twice', no 'use moments about the hinge'); s9 d "perustele laskemalla ja selitä" is neutral.
-- Points: s8 4+3+5+3 = 15, s9 6+5+3+3 = 17; `practice.py check units/fy9-ympyraliike` OK for fi, en, fi-easy (9 tasks, 142 points). answers.py s8/s9 blocks match tasks.json values.
-- Intro: nine tasks, equilibrium/circular motion/gravitation, task 7 note: correct.
-- Figures fy5-4/kuvaaja-a (point 15 m/s, 3,0) and fy5-2/kyltti (L 1,20 m, 30,0 deg) match the task data.
-- Gap: captures (shots.md) contain no screenshot of s8/s9 (the sovella stage captures show the older worked examples); 360 px layout with solutions open not judged by me, left to the visual reviewer / check_layout.py. Calculation chains are written as aligned rows in the source.
+- 7400 N in tasks.json s8 d and solutions.md line 606 (7357 to two figures); 61 % ratio, v_max unchanged. No 7360 left in task files.
+- No Finnish remnants in en sovella tasks.json.
+- practice.py check OK for fi, en, fi-easy (9 tasks, 142 points); hash unchanged at end.
+- No new physics or terms introduced.

@@ -1121,13 +1121,13 @@
         "fy4-5"
       ],
       "figure": "fy5-2/kyltti",
-      "text": "The sign of a café hangs from the end of a horizontal rod. The rod is fixed to the wall with a hinge, and a wire runs from the outer end of the rod to the wall. The figure shows the length of the rod and the angle of the wire. The mass of the sign is $18\\,\\text{kg}$. The rod is uniform and its mass is $3.0\\,\\text{kg}$. The mass of the wire is neglected. Everything is at rest.",
+      "text": "The sign of a café hangs from the end of a horizontal rod. The rod is fixed to the wall with a hinge, and a cable runs from the outer end of the rod to the wall. The figure shows the length of the rod and the angle of the cable. The mass of the sign is $18\\,\\text{kg}$. The rod is uniform and its mass is $3.0\\,\\text{kg}$. The mass of the cable is neglected. Everything is at rest.",
       "parts": [
         {
           "id": "a",
           "kind": "calc",
           "points": 6,
-          "text": "Draw the free-body diagram of the rod and the sign. How large is the force in the wire?",
+          "text": "Draw the free-body diagram of the rod and the sign. How large is the force in the cable?",
           "answer": {
             "value": 382.6,
             "unit": "N",
@@ -1137,12 +1137,12 @@
             {
               "key": "fbd_forces",
               "points": 1,
-              "detail": "The body is the rod and the sign: the weight of the sign $\\overline{G}_\\text{s}$ down from the end of the rod, the weight of the rod $\\overline{G}_\\text{t}$ down from its middle, the force of the wire $\\overline{T}$ obliquely up towards the wall from the end and the force of the hinge $\\overline{F}_\\text{s}$ at the hinge."
+              "detail": "The body is the rod and the sign: the weight of the sign $\\overline{G}_\\text{s}$ down from the end of the rod, the weight of the rod $\\overline{G}_\\text{t}$ down from its middle, the force of the cable $\\overline{T}$ obliquely up towards the wall from the end and the force of the hinge $\\overline{F}_\\text{s}$ at the hinge."
             },
             {
               "key": "graph_read",
               "points": 1,
-              "detail": "The length of the rod $L = 1.20\\,\\text{m}$ and the angle between the wire and the rod $\\theta = 30.0^\\circ$ are read from the figure."
+              "detail": "The length of the rod $L = 1.20\\,\\text{m}$ and the angle between the cable and the rod $\\theta = 30.0^\\circ$ are read from the figure."
             },
             {
               "text": "Justifies the pivot: about the hinge the lever arm of the hinge force is zero, and the body is at rest, so the sum of the moments is zero.",
@@ -1208,7 +1208,7 @@
           "id": "c",
           "kind": "calc",
           "points": 3,
-          "text": "The wire withstands a force of at most $600\\,\\text{N}$. What is the greatest mass of the sign that the wire still holds?",
+          "text": "The cable withstands a force of at most $600\\,\\text{N}$. What is the greatest mass of the sign that the cable still holds?",
           "answer": {
             "value": 29.08,
             "unit": "kg",
@@ -1236,10 +1236,10 @@
           "id": "d",
           "kind": "word",
           "points": 3,
-          "text": "The wire is fixed to the wall higher up so that the angle between the wire and the rod is $45^\\circ$. How does the force in the wire change from part a? Justify by calculating and explain why the change is in this direction.",
+          "text": "The cable is fixed to the wall higher up so that the angle between the cable and the rod is $45^\\circ$. How does the force in the cable change from part a? Justify by calculating and explain why the change is in this direction.",
           "criteria": [
             {
-              "text": "Justifies with the moment condition: the vertical component of the wire force $T\\sin\\theta \\approx 191\\,\\text{N}$ does not depend on the angle, so at a greater angle the whole force $T$ is smaller.",
+              "text": "Justifies with the moment condition: the vertical component of the cable force $T\\sin\\theta \\approx 191\\,\\text{N}$ does not depend on the angle, so at a greater angle the whole force $T$ is smaller.",
               "tag": "concept",
               "points": 1
             },
@@ -1251,7 +1251,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "When the wire is steeper, a larger share of its force carries the weight upwards. At the same time the horizontal component $T\\cos 45^\\circ \\approx 191\\,\\text{N}$ and the force of the hinge decrease."
+              "detail": "When the cable is steeper, a larger share of its force carries the weight upwards. At the same time the horizontal component $T\\cos 45^\\circ \\approx 191\\,\\text{N}$ and the force of the hinge decrease."
             }
           ]
         }
