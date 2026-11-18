@@ -33,7 +33,7 @@
         },
         {
           "text": "$10{,}2\\,\\text{eV}$, koska elektroni nostetaan tasolle $n = 2$.",
-          "feedback": "Taso $n = 2$ on yhä sidottu tila. Siihen nostamiseen riittää energia $-3{,}40\\,\\text{eV} + 13{,}6\\,\\text{eV} = 10{,}2\\,\\text{eV}$. Ionisaatiossa elektroni irtoaa kokonaan, joten energia on $0 - (-13{,}6\\,\\text{eV}) = 13{,}6\\,\\text{eV}$."
+          "feedback": "Taso $n = 2$ on yhä sidottu tila. Siihen nostamiseen riittää energia $10{,}2\\,\\text{eV}$. Ionisaatiossa elektroni irtoaa kokonaan, joten energia on $0 - (-13{,}6\\,\\text{eV}) = 13{,}6\\,\\text{eV}$."
         },
         {
           "text": "$27{,}2\\,\\text{eV}$, koska elektronin ja ytimen energiat lasketaan yhteen.",

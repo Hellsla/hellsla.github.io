@@ -33,7 +33,7 @@
         },
         {
           "text": "$10.2\\,\\text{eV}$, because the electron is lifted to the level $n = 2$.",
-          "feedback": "The level $n = 2$ is still a bound state, and lifting the electron there takes the energy $-3.40\\,\\text{eV} + 13.6\\,\\text{eV} = 10.2\\,\\text{eV}$. In ionisation the electron is detached completely, so the energy is $0 - (-13.6\\,\\text{eV}) = 13.6\\,\\text{eV}$."
+          "feedback": "The level $n = 2$ is still a bound state, and lifting the electron there takes the energy $10.2\\,\\text{eV}$. In ionisation the electron is detached completely, so the energy is $0 - (-13.6\\,\\text{eV}) = 13.6\\,\\text{eV}$."
         },
         {
           "text": "$27.2\\,\\text{eV}$, because the energies of the electron and the nucleus are added.",
