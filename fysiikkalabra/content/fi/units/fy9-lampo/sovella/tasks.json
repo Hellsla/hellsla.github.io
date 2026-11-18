@@ -762,7 +762,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$c = \\dfrac{100\\,\\text{W} \\cdot 180\\,\\text{s}}{0{,}50\\,\\text{kg} \\cdot 40\\,\\text{K}} = 900\\,\\text{J/(kg}\\cdot\\text{K)}$"
+       "detail": "$$\n\\begin{aligned}\nc &= \\dfrac{100\\,\\text{W} \\cdot 180\\,\\text{s}}{0{,}50\\,\\text{kg} \\cdot 40\\,\\text{K}} \\\\\n&= 900\\,\\text{J/(kg}\\cdot\\text{K)}\n\\end{aligned}\n$$"
       },
       {
        "key": "units_precision",
@@ -795,7 +795,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$t = \\dfrac{900\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}50\\,\\text{kg} \\cdot 80\\,\\text{K}}{100\\,\\text{W}} = 360\\,\\text{s}$"
+       "detail": "$$\n\\begin{aligned}\nt &= \\dfrac{900\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}50\\,\\text{kg} \\cdot 80\\,\\text{K}}{100\\,\\text{W}} \\\\\n&= 360\\,\\text{s}\n\\end{aligned}\n$$"
       },
       {
        "key": "units_precision",
@@ -873,7 +873,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$c = \\dfrac{20\\,000\\,\\text{J}}{0{,}60\\,\\text{kg} \\cdot 16\\,\\text{K}} \\approx 2083\\,\\text{J/(kg}\\cdot\\text{K)}$"
+       "detail": "$$\n\\begin{aligned}\nc &= \\dfrac{20\\,000\\,\\text{J}}{0{,}60\\,\\text{kg} \\cdot 16\\,\\text{K}} \\\\\n&\\approx 2083\\,\\text{J/(kg}\\cdot\\text{K)}\n\\end{aligned}\n$$"
       },
       {
        "key": "units_precision",
@@ -944,7 +944,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$c_\\text{v} m\\,\\Delta T = 4{,}18\\,\\text{kJ/(kg}\\cdot\\text{K)} \\cdot 0{,}60\\,\\text{kg} \\cdot 20\\,\\text{K} \\approx 50\\,\\text{kJ}$ ja $Q \\approx 220\\,\\text{kJ} + 50\\,\\text{kJ}$"
+       "detail": "$$\n\\begin{aligned}\nc_\\text{v} m\\,\\Delta T &= 4{,}18\\,\\text{kJ/(kg}\\cdot\\text{K)} \\\\\n&\\cdot 0{,}60\\,\\text{kg} \\cdot 20\\,\\text{K} \\\\\n&\\approx 50\\,\\text{kJ}\n\\end{aligned}\n$$ ja $$\n\\begin{aligned}\nQ &\\approx 220\\,\\text{kJ} + 50\\,\\text{kJ} \\\\\n&\\approx 270\\,\\text{kJ}\n\\end{aligned}\n$$"
       },
       {
        "key": "units_precision",
@@ -972,7 +972,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$m_\\text{s} = \\dfrac{(120 - 20)\\,\\text{kJ}}{333\\,\\text{kJ/kg}} \\approx 0{,}30\\,\\text{kg}$"
+       "detail": "$$\n\\begin{aligned}\nm_\\text{s} &= \\dfrac{(120 - 20)\\,\\text{kJ}}{333\\,\\text{kJ/kg}} \\\\\n&\\approx 0{,}30\\,\\text{kg}\n\\end{aligned}\n$$"
       },
       {
        "key": "reasonableness",

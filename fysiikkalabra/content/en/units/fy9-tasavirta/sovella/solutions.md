@@ -537,7 +537,13 @@ $$
 - In part d the power of the resistor is calculated as $R I^2$ with a wrong current, or the share of the lamp is divided by the power of the resistor ($0.75 : 0.25 = 3.0$) instead of the total power.
 
 ### Hyväksytään myös
-- In part c the resistance of the resistor can also be calculated from the resistance of the whole circuit: $R = \dfrac{E}{I} - R_\text{L} = 16\,\Omega - 12\,\Omega = 4.0\,\Omega$.
+- In part c the resistance of the resistor can also be calculated from the resistance of the whole circuit: $$
+\begin{aligned}
+R &= \dfrac{E}{I} - R_\text{L} \\
+&= 16\,\Omega - 12\,\Omega \\
+&= 4.0\,\Omega
+\end{aligned}
+$$.
 - In part d the power of the battery can also be calculated as the sum of the powers $P_\text{L} + P_\text{R}$.
 
 ## fy9-tasavirta-s8
@@ -610,7 +616,13 @@ P &= 12\,\text{V} \cdot 0.30\,\text{A} \\
 \end{aligned}
 $$
 **Answer:** The power of the $20\,\Omega$ resistor is $P_{20} = 1.8\,\text{W}$ and that of the whole connection $P = 3.6\,\text{W}$, two significant figures like the current.
-**Reasonableness:** The powers of the other resistors are $60\,\Omega \cdot (0.10\,\text{A})^2 = 0.60\,\text{W}$ and $30\,\Omega \cdot (0.20\,\text{A})^2 = 1.2\,\text{W}$. Together $1.8\,\text{W} + 0.60\,\text{W} + 1.2\,\text{W} = 3.6\,\text{W}$, the same as the power of the battery.
+**Reasonableness:** The powers of the other resistors are $60\,\Omega \cdot (0.10\,\text{A})^2 = 0.60\,\text{W}$ and $30\,\Omega \cdot (0.20\,\text{A})^2 = 1.2\,\text{W}$. Together $$
+\begin{aligned}
+P &= 1.8\,\text{W} + 0.60\,\text{W} \\
+&\quad + 1.2\,\text{W} \\
+&= 3.6\,\text{W}
+\end{aligned}
+$$, the same as the power of the battery.
 
 ### d)
 **Given:** the $30\,\Omega$ resistor is removed; $E = 12\,\text{V}$, $R_3 = 20\,\Omega$ and $R_1 = 60\,\Omega$; before, $P_{60} = 0.60\,\text{W}$ and $I = 0.30\,\text{A}$

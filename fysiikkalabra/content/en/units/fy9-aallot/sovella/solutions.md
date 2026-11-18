@@ -506,7 +506,13 @@ $$
 - In part a the distance to the loudspeaker $S_2$ is taken as the sum of the squares, $12 + 5 = 17$ squares ($8{,}5\,\text{m}$), although the distance runs diagonally straight to $\text{P}$.
 - In part a the numbers of squares are not converted to metres, or the path difference is calculated as $s_1 + s_2$.
 - In part c it is thought that a small path difference always means a loud sound; what matters is the ratio of the path difference to the wavelength.
-- In part d the frequency is calculated as $f = v : \lambda = 343{,}4\,\text{m/s} : 1{,}00\,\text{m} \approx 343\,\text{Hz}$, the original frequency, although the path difference is then only half a wavelength.
+- In part d the frequency is calculated as $$
+\begin{aligned}
+f &= v : \lambda \\
+&= 343.4\,\text{m/s} : 1.00\,\text{m} \\
+&\approx 343\,\text{Hz}
+\end{aligned}
+$$, the original frequency, although the path difference is then only half a wavelength.
 
 ### Hyväksytään myös
 - In part c the answer in the form "the phase difference is $180^\circ$" or "the path difference is $\left(n + \tfrac{1}{2}\right)\lambda$ with $n = 0$".

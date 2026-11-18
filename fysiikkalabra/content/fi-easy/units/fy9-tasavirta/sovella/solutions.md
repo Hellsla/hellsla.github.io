@@ -537,7 +537,13 @@ $$
 - d-kohdassa vastuksen tehoksi lasketaan $R I^2$ väärällä virralla, tai lampun osuus jaetaan vastuksen tehosta ($0{,}75 : 0{,}25 = 3{,}0$) eikä kokonaistehosta.
 
 ### Hyväksytään myös
-- c-kohdassa vastuksen resistanssi voidaan laskea myös koko piirin resistanssista: $R = \dfrac{E}{I} - R_\text{L} = 16\,\Omega - 12\,\Omega = 4{,}0\,\Omega$.
+- c-kohdassa vastuksen resistanssi voidaan laskea myös koko piirin resistanssista: $$
+\begin{aligned}
+R &= \dfrac{E}{I} - R_\text{L} \\
+&= 16\,\Omega - 12\,\Omega \\
+&= 4{,}0\,\Omega
+\end{aligned}
+$$.
 - d-kohdassa pariston teho voidaan laskea myös tehojen summana $P_\text{L} + P_\text{R}$.
 
 ## fy9-tasavirta-s8
@@ -610,7 +616,13 @@ P &= 12\,\text{V} \cdot 0{,}30\,\text{A} \\
 \end{aligned}
 $$
 **Vastaus:** $20\,\Omega$:n vastuksen teho on $P_{20} = 1{,}8\,\text{W}$ ja koko kytkennän teho $P = 3{,}6\,\text{W}$, kaksi merkitsevää numeroa kuten virta.
-**Järkevyys:** Muiden vastusten tehot ovat $60\,\Omega \cdot (0{,}10\,\text{A})^2 = 0{,}60\,\text{W}$ ja $30\,\Omega \cdot (0{,}20\,\text{A})^2 = 1{,}2\,\text{W}$. Yhteensä $1{,}8\,\text{W} + 0{,}60\,\text{W} + 1{,}2\,\text{W} = 3{,}6\,\text{W}$, sama kuin pariston teho.
+**Järkevyys:** Muiden vastusten tehot ovat $60\,\Omega \cdot (0{,}10\,\text{A})^2 = 0{,}60\,\text{W}$ ja $30\,\Omega \cdot (0{,}20\,\text{A})^2 = 1{,}2\,\text{W}$. Yhteensä $$
+\begin{aligned}
+P &= 1{,}8\,\text{W} + 0{,}60\,\text{W} \\
+&\quad + 1{,}2\,\text{W} \\
+&= 3{,}6\,\text{W}
+\end{aligned}
+$$, sama kuin pariston teho.
 
 ### d)
 **Annettu:** $30\,\Omega$:n vastus poistetaan; $E = 12\,\text{V}$, $R_3 = 20\,\Omega$ ja $R_1 = 60\,\Omega$; aiemmin $P_{60} = 0{,}60\,\text{W}$ ja $I = 0{,}30\,\text{A}$

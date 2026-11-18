@@ -506,7 +506,13 @@ $$
 - a-kohdassa kaiuttimen $S_2$ matkaksi otetaan ruutujen summa $12 + 5 = 17$ ruutua ($8{,}5\,\text{m}$), vaikka matka kulkee vinosti suoraan pisteeseen $\text{P}$.
 - a-kohdassa ruutujen lukumäärät jätetään muuntamatta metreiksi, tai matkaeroksi lasketaan $s_1 + s_2$.
 - c-kohdassa ajatellaan, että pieni matkaero tarkoittaa aina voimakasta ääntä; ratkaisevaa on matkaeron suhde aallonpituuteen.
-- d-kohdassa lasketaan $f = v : \lambda = 343{,}4\,\text{m/s} : 1{,}00\,\text{m} \approx 343\,\text{Hz}$ eli alkuperäinen taajuus, vaikka matkaero on silloin vain puoli aallonpituutta.
+- d-kohdassa lasketaan $$
+\begin{aligned}
+f &= v : \lambda \\
+&= 343{,}4\,\text{m/s} : 1{,}00\,\text{m} \\
+&\approx 343\,\text{Hz}
+\end{aligned}
+$$ eli alkuperäinen taajuus, vaikka matkaero on silloin vain puoli aallonpituutta.
 
 ### Hyväksytään myös
 - c-kohdassa vastaus muodossa "vaihe-ero on $180^\circ$" tai "matkaero on $\left(n + \tfrac{1}{2}\right)\lambda$, kun $n = 0$".

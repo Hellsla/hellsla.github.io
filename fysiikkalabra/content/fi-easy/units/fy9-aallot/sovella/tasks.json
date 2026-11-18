@@ -836,7 +836,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$s_1 = 6{,}0\\,\\text{m}$, $s_2 = \\sqrt{(6{,}0\\,\\text{m})^2 + (2{,}5\\,\\text{m})^2} = 6{,}5\\,\\text{m}$ ja $\\Delta s = 0{,}50\\,\\text{m}$."
+              "detail": "$s_1 = 6{,}0\\,\\text{m}$, $$\n\\begin{aligned}\ns_2 &= \\sqrt{(6{,}0\\,\\text{m})^2 + (2{,}5\\,\\text{m})^2} \\\\\n&= 6{,}5\\,\\text{m}\n\\end{aligned}\n$$ ja $\\Delta s = 0{,}50\\,\\text{m}$."
             },
             {
               "key": "units_precision",

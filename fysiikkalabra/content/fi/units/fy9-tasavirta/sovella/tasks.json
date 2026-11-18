@@ -1046,7 +1046,7 @@
       {
        "key": "calculation",
        "points": 2,
-       "detail": "$U_\\text{p} = 12\\,\\text{V} - 0{,}30\\,\\text{A} \\cdot 20\\,\\Omega = 6{,}0\\,\\text{V}$, $I_{60} = \\dfrac{6{,}0\\,\\text{V}}{60\\,\\Omega} = 0{,}10\\,\\text{A}$ ja $I_{30} = \\dfrac{6{,}0\\,\\text{V}}{30\\,\\Omega} = 0{,}20\\,\\text{A}$"
+       "detail": "$$\n\\begin{aligned}\nU_\\text{p} &= 12\\,\\text{V} \\\\\n&\\quad - 0{,}30\\,\\text{A} \\cdot 20\\,\\Omega \\\\\n&= 6{,}0\\,\\text{V}\n\\end{aligned}\n$$, $I_{60} = \\dfrac{6{,}0\\,\\text{V}}{60\\,\\Omega} = 0{,}10\\,\\text{A}$ ja $I_{30} = \\dfrac{6{,}0\\,\\text{V}}{30\\,\\Omega} = 0{,}20\\,\\text{A}$"
       },
       {
        "key": "units_precision",
@@ -1098,7 +1098,7 @@
       {
        "key": "reasonableness",
        "points": 1,
-       "detail": "Vastusten tehot ovat yhdessä pariston teho: $1{,}8\\,\\text{W} + 0{,}60\\,\\text{W} + 1{,}2\\,\\text{W} = 3{,}6\\,\\text{W}$."
+       "detail": "Vastusten tehot ovat yhdessä pariston teho: $$\n\\begin{aligned}\nP &= 1{,}8\\,\\text{W} + 0{,}60\\,\\text{W} \\\\\n&\\quad + 1{,}2\\,\\text{W} \\\\\n&= 3{,}6\\,\\text{W}\n\\end{aligned}\n$$."
       }
      ]
     },
@@ -1116,7 +1116,7 @@
       {
        "key": "calculation",
        "points": 2,
-       "detail": "$R = 20\\,\\Omega + 60\\,\\Omega = 80\\,\\Omega$, $I = \\dfrac{12\\,\\text{V}}{80\\,\\Omega} = 0{,}15\\,\\text{A}$, $U = 12\\,\\text{V} - 0{,}15\\,\\text{A} \\cdot 20\\,\\Omega = 9{,}0\\,\\text{V}$ ja $P = \\dfrac{(9{,}0\\,\\text{V})^2}{60\\,\\Omega} = 1{,}35\\,\\text{W}$"
+       "detail": "$R = 20\\,\\Omega + 60\\,\\Omega = 80\\,\\Omega$, $I = \\dfrac{12\\,\\text{V}}{80\\,\\Omega} = 0{,}15\\,\\text{A}$, $$\n\\begin{aligned}\nU &= 12\\,\\text{V} \\\\\n&\\quad - 0{,}15\\,\\text{A} \\cdot 20\\,\\Omega \\\\\n&= 9{,}0\\,\\text{V}\n\\end{aligned}\n$$ ja $P = \\dfrac{(9{,}0\\,\\text{V})^2}{60\\,\\Omega} = 1{,}35\\,\\text{W}$"
       },
       {
        "key": "conclusion",

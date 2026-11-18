@@ -651,7 +651,13 @@ p_2 &= 100\,\text{kPa} \cdot \dfrac{253{,}15\,\text{K}}{400\,\text{K}} \\
 \end{aligned}
 $$
 **Vastaus:** $p_2 \approx 63\,\text{kPa}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kuvaajasta luetuissa arvoissa.
-**Järkevyys:** Lämpötila $253\,\text{K}$ on kuvaajan pisteiden $200\,\text{K}$ ja $400\,\text{K}$ välissä, joten paineen on oltava pisteiden $50\,\text{kPa}$ ja $100\,\text{kPa}$ välissä. Tarkistus tilanyhtälöllä: $p_2 = \dfrac{n_\text{A}RT_2}{V} = \dfrac{0{,}0602\,\text{mol} \cdot 8{,}31\,\text{J/(mol K)} \cdot 253{,}15\,\text{K}}{2{,}0 \cdot 10^{-3}\,\text{m}^3} = 63\,\text{kPa}$.
+**Järkevyys:** Lämpötila $253\,\text{K}$ on kuvaajan pisteiden $200\,\text{K}$ ja $400\,\text{K}$ välissä, joten paineen on oltava pisteiden $50\,\text{kPa}$ ja $100\,\text{kPa}$ välissä. Tarkistus tilanyhtälöllä: $$
+\begin{aligned}
+p_2 &= \dfrac{n_\text{A}RT_2}{V} \\
+&= \dfrac{0{,}0602\,\text{mol} \cdot 8{,}31\,\text{J/(mol K)} \cdot 253{,}15\,\text{K}}{2{,}0 \cdot 10^{-3}\,\text{m}^3} \\
+&= 63\,\text{kPa}
+\end{aligned}
+$$
 
 ### Yleisiä virheitä
 - a-kohdassa tilavuutta ei muuteta kuutiometreiksi ($2{,}0\,\textsf{l}$ sijoitetaan lukuna $2{,}0$) tai painetta ei muuteta pascaleiksi, jolloin ainemääräksi tulee väärä kymmenpotenssi.

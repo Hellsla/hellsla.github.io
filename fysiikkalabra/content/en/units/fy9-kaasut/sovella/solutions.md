@@ -647,7 +647,13 @@ p_2 &= 100\,\text{kPa} \cdot \dfrac{253.15\,\text{K}}{400\,\text{K}} \\
 \end{aligned}
 $$
 **Answer:** $p_2 \approx 63\,\text{kPa}$, two significant figures like the values read from the graph.
-**Reasonableness:** The temperature $253\,\text{K}$ is between the graph points $200\,\text{K}$ and $400\,\text{K}$, so the pressure must be between $50\,\text{kPa}$ and $100\,\text{kPa}$. Check with the ideal gas law: $p_2 = \dfrac{n_\text{A}RT_2}{V} = \dfrac{0.0602\,\text{mol} \cdot 8.31\,\text{J/(mol K)} \cdot 253.15\,\text{K}}{2.0 \cdot 10^{-3}\,\text{m}^3} = 63\,\text{kPa}$.
+**Reasonableness:** The temperature $253\,\text{K}$ is between the graph points $200\,\text{K}$ and $400\,\text{K}$, so the pressure must be between $50\,\text{kPa}$ and $100\,\text{kPa}$. Check with the ideal gas law: $$
+\begin{aligned}
+p_2 &= \dfrac{n_\text{A}RT_2}{V} \\
+&= \dfrac{0.0602\,\text{mol} \cdot 8.31\,\text{J/(mol K)} \cdot 253.15\,\text{K}}{2.0 \cdot 10^{-3}\,\text{m}^3} \\
+&= 63\,\text{kPa}
+\end{aligned}
+$$
 
 ### Yleisiä virheitä
 - In part a the volume is not converted to cubic metres ($2.0\,\textsf{l}$ is substituted as the number $2.0$) or the pressure is not converted to pascals, which gives the wrong power of ten.
