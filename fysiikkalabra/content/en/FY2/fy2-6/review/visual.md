@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: f18834b72c71945e
+CONTENT-HASH: 33efb676f250b11c
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: diff rewrites the recap task (12 GW, 3 h, 36 GWh); quantities all LaTeX with units, decimal point in English; opened fy2-6-fig-row-1280.png, layout fine.
+- delta (calculation chains re-broken into aligned rows): opened fy2-6-example-390-1/-2, stage-sovella-390-1 (worked example steps 3-7), open-tarkista-1280-3 (hints, solution and reasonableness open). Equals signs aligned, units upright with thin space, decimal point consistent, answer boxed; nothing clipped, no overflow.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
