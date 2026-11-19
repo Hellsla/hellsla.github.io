@@ -430,6 +430,12 @@ At every step, part of the energy turns into thermal energy, which is transferre
   <foreignObject x="70" y="317.5" width="460" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{the width of the arrow shows the amount of energy}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Of the $500\,\text{kJ}$ from the porridge, the muscles turn $120\,\text{kJ}$ into motion. How much energy turns into thermal energy, and has it disappeared afterwards?
+---
+$500\,\text{kJ} - 120\,\text{kJ} = 380\,\text{kJ}$ turns into thermal energy. The energy has not disappeared; it has spread to the surroundings as thermal energy.
+```
+
 ### Joule
 The symbol of energy is $E$ and its unit is the joule, whose symbol is J. One joule is a small amount of energy: it is roughly what is needed to lift an apple of about $0.1\,\text{kg}$ by one metre. In this chapter you learn the size of the joule through examples.
 
@@ -448,6 +454,12 @@ Everyday energies are large numbers when given in joules, so we use prefixes (ch
 where J is the joule, kJ the kilojoule, MJ the megajoule, GJ the gigajoule and TJ the terajoule. So a megajoule contains $1000 \cdot 1000\,\text{J} = 1\,000\,000\,\text{J}$.
 
 A conversion is done by replacing the prefix with its value: $2.5\,\text{kJ} = 2.5 \cdot 1000\,\text{J} = 2500\,\text{J}$. In the other direction, the number is written using the prefix: $3000\,\text{J} = 3 \cdot 1000\,\text{J} = 3\,\text{kJ}$. Energies are added together only in the same unit, so they are first converted to the same unit.
+
+```pysahdy
+How many joules is $4.2\,\text{kJ}$? How many megajoules is $3000\,\text{kJ}$?
+---
+$4.2\,\text{kJ} = 4.2 \cdot 1000\,\text{J} = 4200\,\text{J}$. Since $1\,\text{MJ} = 1000\,\text{kJ}$, $3000\,\text{kJ} = 3\,\text{MJ}$.
+```
 
 The orders of magnitude of everyday energies are collected in the figure, where each step is a factor of ten (chapter *Physics as a science and the scales of the universe*). When the orders of magnitude of two energies are very different, one division is enough for the comparison: the ratio of the $32\,\text{MJ}$ of a litre of petrol to the $10\,\text{MJ}$ of a day's food is $32\,\text{MJ} : 10\,\text{MJ} \approx 3$.
 
@@ -496,6 +508,12 @@ The orders of magnitude of everyday energies are collected in the figure, where 
   <foreignObject x="205.5" y="213.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{match}$</div></foreignObject>
   <foreignObject x="205.5" y="241.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1\,\text{kJ}$</div></foreignObject>
 </svg>
+
+```pysahdy
+The energy of a petrol tank is about $1.6\,\text{GJ}$ and that of a day's food about $10\,\text{MJ}$. How many times as large is the tank's energy compared with the food's?
+---
+First the same unit: $1.6\,\text{GJ} = 1600\,\text{MJ}$. The ratio is $1600\,\text{MJ} : 10\,\text{MJ} = 160$, so the tank holds about 160 times as much energy.
+```
 
 The amount of energy does not yet tell how fast the energy is used. That is described in the next chapter, *Power*.
 

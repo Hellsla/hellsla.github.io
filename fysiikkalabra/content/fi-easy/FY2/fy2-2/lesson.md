@@ -430,6 +430,12 @@ Joka vaiheessa osa energiasta muuttuu lämpöenergiaksi. Lämpöenergia siirtyy 
   <foreignObject x="70" y="317.5" width="460" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{nuolen leveys kuvaa energian määrää}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Puurosta saatavasta $500\,\text{kJ}$:sta lihakset muuttavat liikkeeksi $120\,\text{kJ}$. Kuinka paljon energiaa muuttuu lämpöenergiaksi? Onko se sen jälkeen kadonnut?
+---
+Lämpöenergiaksi muuttuu $500\,\text{kJ} - 120\,\text{kJ} = 380\,\text{kJ}$. Energiaa ei ole kadonnut. Se on hajaantunut lämpöenergiana ympäristöön.
+```
+
 ### Joule
 Energian symboli on $E$. Energian yksikkö on joule, ja sen merkki on J. Yksi joule on pieni energia. Sen verran energiaa tarvitaan suunnilleen siihen, että nostat omenan metrin verran ylöspäin. Omena painaa noin $0{,}1\,\text{kg}$. Tässä luvussa opit joulen suuruuden esimerkkien avulla.
 
@@ -448,6 +454,12 @@ Arjen energiat ovat jouleina isoja lukuja. Siksi käytetään etuliitteitä (luk
 missä J on joule, kJ kilojoule, MJ megajoule, GJ gigajoule ja TJ terajoule. Megajoulessa on siis $1000 \cdot 1000\,\text{J} = 1\,000\,000\,\text{J}$.
 
 Muunnos tehdään näin: korvaa etuliite sen arvolla. Esimerkki: $2{,}5\,\text{kJ} = 2{,}5 \cdot 1000\,\text{J} = 2500\,\text{J}$. Toiseen suuntaan luku kirjoitetaan etuliitteen avulla: $3000\,\text{J} = 3 \cdot 1000\,\text{J} = 3\,\text{kJ}$. Energioita lasketaan yhteen vain samassa yksikössä. Muunna ne siis ensin samaan yksikköön.
+
+```pysahdy
+Kuinka monta joulea on $4{,}2\,\text{kJ}$? Kuinka monta megajoulea on $3000\,\text{kJ}$?
+---
+$4{,}2\,\text{kJ} = 4{,}2 \cdot 1000\,\text{J} = 4200\,\text{J}$. Koska $1\,\text{MJ} = 1000\,\text{kJ}$, niin $3000\,\text{kJ} = 3\,\text{MJ}$.
+```
 
 Arjen energioiden suuruusluokat on koottu kuvaan. Kuvassa jokainen väli on kymmenkertainen (luku *Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet*). Joskus kahden energian suuruusluokka on hyvin erilainen. Silloin vertailuun riittää yksi jakolasku. Esimerkki: bensiinilitran $32\,\text{MJ}$ ja päivän ruoan $10\,\text{MJ}$ suhde on $32\,\text{MJ} : 10\,\text{MJ} \approx 3$.
 
@@ -496,6 +508,12 @@ Arjen energioiden suuruusluokat on koottu kuvaan. Kuvassa jokainen väli on kymm
   <foreignObject x="205.5" y="213.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{tulitikku}$</div></foreignObject>
   <foreignObject x="205.5" y="241.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1\,\text{kJ}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Bensiinitankin energia on noin $1{,}6\,\text{GJ}$. Päivän ruoan energia on noin $10\,\text{MJ}$. Kuinka moninkertainen tankin energia on ruoan energiaan verrattuna?
+---
+Muunna ensin samaan yksikköön: $1{,}6\,\text{GJ} = 1600\,\text{MJ}$. Suhde on $1600\,\text{MJ} : 10\,\text{MJ} = 160$. Tankissa on noin 160-kertainen energia.
+```
 
 Energian määrä ei vielä kerro, kuinka nopeasti energiaa käytetään. Sitä kuvataan seuraavassa luvussa *Teho*.
 
