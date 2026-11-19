@@ -179,6 +179,7 @@ Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jäl
 Jaettu, yksin, #740:n, #733:n ja kohdan 22 jälkeen (opettaja 2026-11-19: kohta 22 ensin). (1) Erillissivujen otsakkeen tunnuskuvat (esim. Kuuntele ja katso -sivun kuulokkeet) piirretään alkuperäisen Ruukkilabra-logon tyyliin: ahjo (alasin) ja sen päällä sivun aihe (kuulokkeet, kirja …), logon värit ja viivat. (2) Sivustosta-sivun vasemman yläkulman logo on sama kuin Ahjo-jaksojen sivuilla. Ennen/jälkeen-kuvat opettajalle ja pysähdys hyväksyntään ennen yhdistämistä; ei uusia tekstejä.
 
 ## 22. Tehtävän pieni taulukko ja kuva vierekkäin leveällä näytöllä (opettaja 2026-11-19 klo 07.20, kuvakaappaus fy8-3)
+Varattu: claude/22-taulukko-kuva
 Jaettu (build.py / site.css), yksin, #740:n ja #733:n jälkeen ennen kohtaa 21 (opettaja 2026-11-19). Kun tehtäväkortissa on pieni taulukko ja kuva peräkkäin ja ne mahtuvat, ne asettuvat vierekkäin leveällä näytöllä (sääntö "Figures, photos and small tables beside what they explain"); puhelimella allekkain. Samalla taulukon otsikko ei rivity kapeaksi eikä taulukkolaatikkoon jää tyhjää oikeaa reunaa. Malli fy8-3 (fotonit A–E ja energiatasot). check_layout.py-tarkistus uudelle asettelulle; ennen/jälkeen-kuvat 1280 ja 390 px opettajalle.
 
 ## 14. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13; juuri ennen vihkoja)
