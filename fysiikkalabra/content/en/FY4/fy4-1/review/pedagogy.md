@@ -1,20 +1,24 @@
 VERDICT: PASS
-CONTENT-HASH: 1cf14977abadfecb
+CONTENT-HASH: a0fd0f4f94f97709
 
 ## Blocking
+(none)
 
 ## Polish
-- lesson.md (Ydinajatus, 1st Pysähdy ja mieti) — the question restates the hook and the paragraph just above, and the answer is a near-copy of the paragraph's last sentence: recall, not thinking. Fix: ask for a transfer, e.g. "Cyclist rides 2 km to the shop and 3 km on, then back to the shop: distance, displacement?" (then the sign of the displacement is practised).
-- lesson.md (after the (t,x) paragraph, 2nd box) — good misconception, but the paragraph already states the answer ("nouseva viiva ei tarkoita ylämäkeä"), and Yleinen virhekäsitys repeats it a third time. Fix: drop the sentence from the paragraph (keep it in the box) or move the box before the clarifying sentence so the student has to decide first.
-- lesson.md (Kaava section) — no box where the real sticking point is: x0 versus v and the two-far-apart-points slope. Fix: add one box after x = x0 + vt, "Two carts with the same velocity but different x0: how do the lines differ?" (answer: parallel, shifted). Keep the total at three boxes.
-- lesson.md — the boxes sit in Teoria, after the experiments (Koe 2 already answers the x0 case), so only the first two topics are consolidated, not predicted; acceptable, but the wording "Liikkuuko ... johonkin muuhun suuntaan" gives a vague third option. Fix: "Mihin suuntaan kappale liikkuu x-akselilla?".
-- inquiry.json "prior" — items name "peruskoulusta" but FY4 builds on FY1's Tasainen liike chapter; add the chapter reference "(luku *...*)" per CLAUDE.md.
+- inquiry.json (pred-1..3, exp-1..3, data, edestakainen) — three predictions, three guided experiments and two interpret tasks, then example, error item, transfer, exercises, three checks and exit ticket, is more than one hour; the core path allows 1-2 predictions — fix: mark pred-3/exp-3 or the "data" task optional, or fold exp-1/exp-2 into one comparison.
+- inquiry.json pred-1 — "B is faster than A, so which graph?" is close to a restatement of the answer; weak argument before evidence — fix: give the carts' times to a fixed distance (e.g. B takes 5 s, A 10 s) and ask for the graph.
+- lesson.md:128 — the night-photo of light trails is not tied to any later task or to position/velocity, so it is decoration — fix: add a sentence linking it (streak length per exposure time ~ speed) or drop it.
+- lesson.md:141 and glossary — formula uses $v_\text{k}$ while the glossary term keskinopeus uses $v_\text{ka}$ — fix: align the symbol with the glossary or MAFY.
+- inquiry.json "data" — the tolerance 0.03 on 1.5 m/s is tight for reading a point off the graph (19 m vs 18.5 m gives 1.44) — fix: widen to about 0.1.
 
 ## Checked
-- Pysähdy ja mieti boxes: 2, each one idea, placed right after the paragraph and figure it concerns, answer closed and short; help a 16–19-year-old check understanding without gating anything.
-- Same two boxes, same placement and answers in fi, en and fi-easy; wording matches the language (fi-easy short sentences, vauhti explained).
-- Path: hook, retrieval, 3 predictions with misconception feedback, sim, 3 experiments that can refute, noisy-data task, theory, reflect, staged example, transfer, exercises, checks, exit ticket: one lesson's work.
-- Experiments: numeric and choice questions repair misconceptions (sign, x0 vs v, adjacent points).
-- Check-3 criteria observable and match the question; exit ticket tests sign, slope, distance versus displacement.
-- Example staged in seven steps, symbolic first; figures placed beside their paragraphs; opening question answered.
-- Hash unchanged at end.
+- Path: prior velocity (v = s/t) retrieval on the cyclist, then displacement vs distance, sign, slope; the Why question is answered in the theory, reflect and check-3.
+- Slot goals met (uniform motion, graphs from data with a fitted line, vector notation with overline once); nothing beyond them.
+- Predictions committed first; each wrong option's feedback repairs its misconception; experiments (two table rows, velocity computed by the student) can refute each prediction.
+- Simulation (390 px capture): little text on canvas, usage/assumptions/calculation behind closed boxes, model values named as such.
+- Worked example: seven stages, symbols before numbers, reasonableness check; figure to scale.
+- Data task: fitted line from noisy points, neighbouring-point and wrong-division mistakes addressed.
+- Back-and-forth task separates distance, speed and average velocity well.
+- Checks: concept check uses misconception distractors; explain criteria are observable and match the model answer.
+- Exit ticket tests sign of displacement, slope reading and distance vs displacement.
+- English reads correctly; units are in LaTeX. Exercises not judged (reviewed apart).

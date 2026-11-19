@@ -1,18 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 537c39155ae612d6
+CONTENT-HASH: c1dfda2de74048f1
+
 ## Blocking
 (none)
+
 ## Polish
-- lesson.md, Hissi pysahdy box (and Laskuvarjo, Kelkkamäki boxes; English text) — all three boxes ask a question whose answer the paragraph directly above has just stated ("a = 0 ... sama kuin kotona"; "mekaanisen energian muutos on ilmanvastuksen työ"; "kitka vie vähemmän energiaa jyrkässä"). The student can answer by copying a sentence, so the box tests reading, not understanding; the Hissi question also duplicates pred-1 and check-1 (same situation, same 2,0 m/s). Fix: ask something not yet said. Hissi: the lift slows to a stop on the way up, what does the scale show? (the case in Yleinen virhekäsitys and pred-1's third phase). Laskuvarjo: "Mitä tapahtuisi, jos ilmanvastusta ei olisi: mihin potentiaalienergia menisi?" (it is the Järkevyys line of the transfer task). Kelkkamäki: move the box after "Miksi pulkat pysähtyvät yhtä kauas" and ask for the /\mu$ implication, e.g. "Mitä tapahtuu pysähtymismatkalle, jos kitkakerroin kaksinkertaistuu?"
-- lesson.md, Kelkkamäki answer — "kitka vaikuttaa pitemmän matkan" gives only the length; the paragraph above says the friction force is also larger on the gentle slope (larger $\cos\alpha$). Say both, or the answer contradicts the paragraph's "tukivoima ja kitka pienempiä jyrkässä" reasoning by omission.
-- lesson.md, placement — all three boxes sit in Ydinajatus; the lesson's hardest reasoning (why \mu = -\mu m g x$ depends on the horizontal distance, \cos\alpha = x_1$) in "Kitkan työ riippuu vaakasuorasta matkasta" has none. A "why does the slope angle drop out?" box there would help more than the elevator one (the reflect task asks it only as optional).
-- Answer boxes open without any commitment (consistent with self-check use). Add one line saying "Vastaa ensin itse" or accept; the Pysähdy label itself is clear and the box is readable at 390 px (capture #16).
-- Answer wording: the answer should show the reasoning pattern, not only the verdict; the Hissi answer does, the Laskuvarjo answer repeats the paragraph's words.
+- inquiry.json hook — "Through the window you can see a skydiver" is implausible from inside a lift and distracts from the retrieval of the two ideas — name the skydiver as a separate scene ("Elsewhere, a skydiver ...").
+- inquiry.json pred-2 — the steep-faster answer is guessable by intuition; the table refutes the "equally fast" and "gentle faster" options well, but the prompt could ask the student to say first how much of the friction work depends on the slope length, to give the justification something to argue about.
+- lesson.md Parachute — the skydiver situation has no data or investigation (only theory, the transfer task and check 3); acceptable for one lesson, but one more optional item would balance the three situations.
+- Workload — hook with three situations, 2 predictions, 2 data tasks, draw task, transfer, 3 checks and exit ticket is close to the limit of one lesson; the optional flags (retrieval, reflect) are the right relief.
+- lesson.md Sledding hill — "friction does more work on the gentle slope: longer slope" in the stop-and-think box is stated with the slope length, while the formula section later uses horizontal distance; add "(longer horizontal distance)" so the two agree.
+
 ## Checked
-- Boxes at 390 px (stage Teoria captures): legible, closed answer, no clipping, short.
-- Questions are one-sentence, situation first, question last; units in LaTeX.
-- Table values (x1+x2=60 m, v) and worked example (8,69 m/s), check 2 (48,3 kg), siirto (95,6 kJ) recomputed: correct.
-- Inquiry path, predictions reveal after Teoria, figures with descriptions, FBD draw task and distractor feedback fine.
-- Staged example, one step per stage; exit ticket tests the core choice of tool.
-- Workload fits one lesson; prerequisites aligned.
-- English version carries the same three boxes with the same placement, so the same findings apply.
+- Learning path: prerequisites (fy4-4, fy4-8) are retrieved and the opening question is answered only after the data task and the theory; goals (equation of motion, work-energy, free-body diagram first) all met.
+- Predictions: both can be refuted by the graph and the table (checked table values for x1, v, x2 at 6.0 m and 0.10: consistent); each wrong option's feedback repairs its misconception.
+- Data tasks need the graph/table; the graph is legible at 390 px; the table data are labelled model values.
+- Free-body diagram plan: a `draw` task with model figure and criteria, `equations` tasks, every solution diagram before equations.
+- Worked example staged in seven steps; check-2 and transfer numbers verified; mistakes values match real errors.
+- Checks: multiple choice with misconception distractors; explain criteria observable.
+- Exit ticket tests the core idea (tool choice, normal force work, mass independence).
+- Figure "kolme" legible at 390 px, colour backed by symbols and line style.
+- Exercise set not judged (reviewed apart).
