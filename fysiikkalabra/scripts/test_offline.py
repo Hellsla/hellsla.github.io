@@ -35,12 +35,12 @@ expect("site/sw.js is at the root and has no placeholder left", (SITE / "sw.js")
 expect("site/offline.js is at the root", (SITE / "offline.js").is_file())
 missing = [str(p.relative_to(SITE)) for p in SITE.rglob("*.html") if "vendor" not in p.relative_to(SITE).parts
            and "<main" in p.read_text(errors="ignore") and "offline.js" not in p.read_text(errors="ignore")
-           and p.relative_to(SITE).parts[0] not in ("laskuri", "tyokalut")]   # the standalone tools are single files, not the site's pages
+           and p.relative_to(SITE).parts[0] not in ("laskuri", "prosessi", "tyokalut")]   # the standalone tools are single files, not the site's pages
 expect("every page with the shared header or the lesson template loads offline.js", not missing, missing[:5])
 
 # manifest and icons (17a PR 2)
 import json, struct
-for d in [SITE] + [x for x in sorted(SITE.iterdir()) if x.is_dir() and (x / "index.html").is_file() and x.name not in ("vendor", "sims", "pics", "brand", "laskuri", "tyokalut")]:
+for d in [SITE] + [x for x in sorted(SITE.iterdir()) if x.is_dir() and (x / "index.html").is_file() and x.name not in ("vendor", "sims", "pics", "brand", "laskuri", "prosessi", "tyokalut")]:
     try: m = json.loads((d / "manifest.webmanifest").read_text())
     except (OSError, ValueError): m = None
     nm = d.name if d != SITE else "root"
