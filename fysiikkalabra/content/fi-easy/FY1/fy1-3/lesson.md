@@ -385,8 +385,20 @@ Virheet jaetaan kolmeen lajiin: karkeaan virheeseen, satunnaisvirheeseen ja syst
   <line x1="24" y1="206" x2="576" y2="206" stroke="#6b7480" stroke-width="1.25" stroke-linecap="butt" stroke-dasharray="5 4"/>
 </svg>
 
+```pysahdy
+Mittaat saman pituuden 20 kertaa ja lasket keskiarvon. Mittarin nollakohta on väärässä. Poistaako keskiarvo virheen?
+---
+Ei poista. Systemaattinen virhe siirtää jokaista tulosta samaan suuntaan. Siksi myös keskiarvo on väärässä. Virheen huomaa, kun vertaa tulosta tunnettuun arvoon.
+```
+
 ### Toistettavuus ja oikeellisuus
 Mittauksen luotettavuutta kuvataan kahdella asialla. **Toistettavuus** kertoo, kuinka lähelle toisiaan toistetut mittaukset osuvat. Satunnaisvirhe heikentää toistettavuutta. **Oikeellisuus** kertoo, kuinka lähellä keskiarvo on oikeaa arvoa. Systemaattinen virhe heikentää oikeellisuutta. Mittaus voi olla toistettava mutta ei oikea, kuten kuvan alempi sarja. Luotettavassa mittauksessa on molemmat.
+
+```pysahdy
+Mittaussarjan tulokset ovat lähellä toisiaan, mutta niiden keskiarvo on kaukana oikeasta arvosta. Onko mittaus toistettava? Onko se oikea?
+---
+Mittaus on toistettava, koska tulokset ovat lähellä toisiaan. Se ei ole oikea, koska keskiarvo on kaukana oikeasta arvosta. Syynä on systemaattinen virhe.
+```
 
 <figure class="unit-photo"><img src="pics/fy1/ligo-hanford.webp" alt="Aavikko, jossa pitkä betoniputki johtaa isolle rakennukselle."><figcaption>LIGO-tutkimuslaitos Hanfordissa Yhdysvalloissa. Sen kilometrien pituiset varret huomaavat pituuden muutoksia, jotka ovat paljon atomiydintä pienempiä.</figcaption></figure>
 
@@ -430,6 +442,12 @@ missä $\Delta x$ on virhearvio, $x_\text{max}$ suurin ja $x_\text{min}$ pienin 
   <foreignObject x="397" y="229.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\bar{t} + \Delta t$</div></foreignObject>
   <foreignObject x="221" y="263" width="158" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Ajanotossa saadaan tulokset $4{,}2\,\text{s}$, $4{,}6\,\text{s}$ ja $4{,}4\,\text{s}$. Mikä on virhearvio $\Delta t$? Miten tulos kirjoitetaan?
+---
+Virhearvio on vaihteluvälin puolikas: $\Delta t = \frac{4{,}6\,\text{s} - 4{,}2\,\text{s}}{2} = 0{,}2\,\text{s}$. Keskiarvo on $4{,}4\,\text{s}$. Tulos on $4{,}4\,\text{s} \pm 0{,}2\,\text{s}$.
+```
 
 Vaihteluvälin puolikas on yksinkertainen arvio tulosten hajonnasta. Se ei ole yleinen tapa määrittää mittausepävarmuutta. Se ei paljasta systemaattista virhettä. Systemaattinen virhe siirtää kaikkia tuloksia samaan suuntaan. Jos kaikki tulokset ovat samat, hajontaa ei näy. Epävarmuus ei silti ole nolla. Silloin arvioidaan lukeman epävarmuus, kuten alla.
 

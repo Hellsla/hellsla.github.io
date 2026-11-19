@@ -152,6 +152,12 @@ The difference comes from how tightly the matter is packed inside the volume. Th
 
 When you measure pieces of different sizes made of the same substance, you notice a regularity: twice the volume gives twice the mass, and half the volume gives half the mass. So mass is **directly proportional** to volume, which means the ratio $m : V$ stays the same. That constant ratio is the density of the substance.
 
+```pysahdy
+The volume of an object made of one substance triples. What happens to its mass and to the density of the substance?
+---
+The mass triples, but the density stays the same because the ratio $m : V$ does not change.
+```
+
 If the measurement results are plotted in a coordinate system with volume on the horizontal axis and mass on the vertical axis, the points lie, within the measurement uncertainty, on a straight line through the origin (chapter *Graphs and fitting a straight line*). The slope of the line is the density.
 
 ### Density tells you what the substance is
@@ -159,6 +165,12 @@ If the measurement results are plotted in a coordinate system with volume on the
 Every pure substance has its own density in a given state of matter and at a given temperature and pressure, so density is like a fingerprint of the substance: once the mass and volume of an object have been measured, the calculated density can be compared with table values. The conclusion is not certain. Measurement results always contain uncertainty (chapter *Measuring and the reliability of a measurement*), and some substances have almost the same density, so the result only tells you which substances the object may be made of.
 
 <figure class="unit-photo"><img src="pics/fy1/blue-iceberg.webp" alt="A pale blue iceberg with an odd shape floats on grey water under a partly cloudy sky."><figcaption>An iceberg in a glacier lagoon in Iceland. Ice floats in water because its density is smaller than that of water.</figcaption></figure>
+
+```pysahdy
+Two objects are made of the same substance. One has a mass of $200\,\text{g}$ and the other $50\,\text{g}$. What can you say about their density and volume?
+---
+The density is the same. The heavier object has four times the volume, because mass is directly proportional to volume.
+```
 
 ## Formula: Density
 
@@ -322,6 +334,12 @@ A reading of a measuring cylinder contains uncertainty, for example because the 
 ### The mass of a container in a measurement
 
 If a liquid is measured in a container and the balance shows the total mass of the container and the liquid, the line fitted to the measurement points does not pass through the origin: the mass $m_0$ of the empty container is included. The total mass follows a linear model $m_\text{tot} = \rho V + m_0$. The density is still the slope of the line, and the constant term $m_0$ is the intercept of the line on the vertical axis, that is, the mass of the empty container. The total mass is not directly proportional to volume, but the mass of the liquid itself is.
+
+```pysahdy
+You measure a liquid in a container and plot the total mass against volume. The line crosses the vertical axis at $45\,\text{g}$. What does this value tell you?
+---
+It is the mass $m_0$ of the empty container. The density of the liquid is given by the slope of the line.
+```
 
 ## Worked example
 

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-fig="tyypit" viewBox="0 0 600 434" role="img" aria-label="Kaavakuva, liikemäärät mittakaavassa: kolme tapahtumaa kahdelle samanmassaiselle vaunulle, vasemmalla ennen ja oikealla jälkeen. Ylimpänä kimmoisa törmäys: ennen vaunulla 1 on liikemäärä oikealle ja vaunu 2 on levossa, jälkeen vaunu 1 on levossa ja vaunulla 2 on sama liikemäärä; liike-energia säilyy. Keskellä täysin kimmoton törmäys: vaunut tarttuvat yhteen, ja yhteinen liikemäärä on yhtä suuri kuin ennen; liike-energia pienenee. Alimpana räjähdys: ennen vaunut ovat yhdessä levossa ja kokonaisliikemäärä on nolla, jälkeen vaunuilla on yhtä suuret vastakkaissuuntaiset liikemäärät; liike-energia kasvaa."  style="max-width:100%;font-size:24px">
+  <defs><style>@keyframes fa-fy410-tyypit-0{0%{transform:translate(0px,0px);opacity:1}34.783%{transform:translate(80px,0px);opacity:1}90%{transform:translate(80px,0px);opacity:1}92%{transform:translate(80px,0px);opacity:0}94%{transform:translate(0px,0px);opacity:0}96%{transform:translate(0px,0px);opacity:1}100%{transform:translate(0px,0px);opacity:1}}@keyframes fa-fy410-tyypit-1{0%{transform:translate(0px,0px);opacity:1}34.783%{transform:translate(0px,0px);opacity:1}46.783%{transform:translate(27.6px,0px);opacity:1}90%{transform:translate(27.6px,0px);opacity:1}92%{transform:translate(27.6px,0px);opacity:0}94%{transform:translate(0px,0px);opacity:0}96%{transform:translate(0px,0px);opacity:1}100%{transform:translate(0px,0px);opacity:1}}@keyframes fa-fy410-tyypit-2{0%{transform:translate(0px,0px);opacity:1}2%{transform:translate(0px,0px);opacity:1}4%{transform:translate(0px,0px);opacity:0}96%{transform:translate(0px,0px);opacity:0}98%{transform:translate(0px,0px);opacity:1}100%{transform:translate(0px,0px);opacity:1}}@keyframes fa-fy410-tyypit-3{0%{transform:translate(0px,0px);opacity:1}34.783%{transform:translate(80px,0px);opacity:1}46.783%{transform:translate(93.8px,0px);opacity:1}90%{transform:translate(93.8px,0px);opacity:1}92%{transform:translate(93.8px,0px);opacity:0}94%{transform:translate(0px,0px);opacity:0}96%{transform:translate(0px,0px);opacity:1}100%{transform:translate(0px,0px);opacity:1}}@keyframes fa-fy410-tyypit-4{0%{transform:translate(0px,0px);opacity:1}34.783%{transform:translate(0px,0px);opacity:1}46.783%{transform:translate(13.8px,0px);opacity:1}90%{transform:translate(13.8px,0px);opacity:1}92%{transform:translate(13.8px,0px);opacity:0}94%{transform:translate(0px,0px);opacity:0}96%{transform:translate(0px,0px);opacity:1}100%{transform:translate(0px,0px);opacity:1}}@keyframes fa-fy410-tyypit-5{0%{transform:translate(0px,0px);opacity:1}2%{transform:translate(0px,0px);opacity:1}4%{transform:translate(0px,0px);opacity:0}96%{transform:translate(0px,0px);opacity:0}98%{transform:translate(0px,0px);opacity:1}100%{transform:translate(0px,0px);opacity:1}}@keyframes fa-fy410-tyypit-6{0%{transform:translate(0px,0px);opacity:1}34.783%{transform:translate(0px,0px);opacity:1}46.783%{transform:translate(-13.8px,0px);opacity:1}90%{transform:translate(-13.8px,0px);opacity:1}92%{transform:translate(-13.8px,0px);opacity:0}94%{transform:translate(0px,0px);opacity:0}96%{transform:translate(0px,0px);opacity:1}100%{transform:translate(0px,0px);opacity:1}}@keyframes fa-fy410-tyypit-7{0%{transform:translate(0px,0px);opacity:1}34.783%{transform:translate(0px,0px);opacity:1}46.783%{transform:translate(13.8px,0px);opacity:1}90%{transform:translate(13.8px,0px);opacity:1}92%{transform:translate(13.8px,0px);opacity:0}94%{transform:translate(0px,0px);opacity:0}96%{transform:translate(0px,0px);opacity:1}100%{transform:translate(0px,0px);opacity:1}}@keyframes fa-fy410-tyypit-8{0%{transform:translate(0px,0px);opacity:1}34.783%{transform:translate(0px,0px);opacity:1}36.783%{transform:translate(0px,0px);opacity:0}96%{transform:translate(0px,0px);opacity:0}98%{transform:translate(0px,0px);opacity:1}100%{transform:translate(0px,0px);opacity:1}}@keyframes fa-fy410-tyypit-9{0%{transform:translate(0px,0px);opacity:1}2%{transform:translate(0px,0px);opacity:1}4%{transform:translate(0px,0px);opacity:0}96%{transform:translate(0px,0px);opacity:0}98%{transform:translate(0px,0px);opacity:1}100%{transform:translate(0px,0px);opacity:1}}</style></defs>
+  <foreignObject x="90" y="45.5" width="420" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kimmoisa: } E_\text{k}\ \text{säilyy}$</div></foreignObject>
+  <line x1="40" y1="152" x2="270" y2="152" stroke="#8a96a3" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="330" y1="152" x2="560" y2="152" stroke="#8a96a3" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="282" y1="132" x2="309" y2="132" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M318,132 L308,136.5 L308,127.5 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <g class="fa-k" style="--fa-n:fa-fy410-tyypit-0;--fa-t:10s;--fa-d:-0s">
+  <rect x="65" y="122" width="50" height="30" rx="4" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="71" y="146" width="38" height="6" fill="#8a96a3"/>
+  </g>
+  <g class="fa-k" style="--fa-n:fa-fy410-tyypit-1;--fa-t:10s;--fa-d:-0s">
+  <rect x="195" y="122" width="50" height="30" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="201" y="146" width="38" height="6" fill="#8a96a3"/>
+  </g>
+  <g class="fa-k" style="--fa-n:fa-fy410-tyypit-2;--fa-t:10s;--fa-d:-0s">
+  <line x1="70" y1="106" x2="167" y2="106" stroke="#7048e8" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M180,106 L166,112.5 L166,99.5 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <rect x="335" y="122" width="50" height="30" rx="4" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="341" y="146" width="38" height="6" fill="#8a96a3"/>
+  <rect x="425" y="122" width="50" height="30" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="431" y="146" width="38" height="6" fill="#8a96a3"/>
+  <line x1="440" y1="106" x2="537" y2="106" stroke="#7048e8" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M550,106 L536,112.5 L536,99.5 Z" fill="#7048e8" stroke-linejoin="round"/>
+  </g>
+  <line x1="20" y1="170" x2="580" y2="170" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <foreignObject x="90" y="175.5" width="420" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{täysin kimmoton: } E_\text{k}\ \text{pienenee}$</div></foreignObject>
+  <line x1="40" y1="282" x2="270" y2="282" stroke="#8a96a3" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="330" y1="282" x2="560" y2="282" stroke="#8a96a3" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="282" y1="262" x2="309" y2="262" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M318,262 L308,266.5 L308,257.5 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <g class="fa-k" style="--fa-n:fa-fy410-tyypit-3;--fa-t:10s;--fa-d:-0s">
+  <rect x="65" y="252" width="50" height="30" rx="4" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="71" y="276" width="38" height="6" fill="#8a96a3"/>
+  </g>
+  <g class="fa-k" style="--fa-n:fa-fy410-tyypit-4;--fa-t:10s;--fa-d:-0s">
+  <rect x="195" y="252" width="50" height="30" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="201" y="276" width="38" height="6" fill="#8a96a3"/>
+  </g>
+  <g class="fa-k" style="--fa-n:fa-fy410-tyypit-5;--fa-t:10s;--fa-d:-0s">
+  <line x1="70" y1="236" x2="167" y2="236" stroke="#7048e8" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M180,236 L166,242.5 L166,229.5 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <rect x="395" y="252" width="50" height="30" rx="4" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="401" y="276" width="38" height="6" fill="#8a96a3"/>
+  <rect x="445" y="252" width="50" height="30" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="451" y="276" width="38" height="6" fill="#8a96a3"/>
+  <line x1="390" y1="236" x2="487" y2="236" stroke="#7048e8" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M500,236 L486,242.5 L486,229.5 Z" fill="#7048e8" stroke-linejoin="round"/>
+  </g>
+  <line x1="20" y1="300" x2="580" y2="300" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <foreignObject x="90" y="305.5" width="420" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{räjähdys: } E_\text{k}\ \text{kasvaa}$</div></foreignObject>
+  <line x1="40" y1="412" x2="270" y2="412" stroke="#8a96a3" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="330" y1="412" x2="560" y2="412" stroke="#8a96a3" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="282" y1="392" x2="309" y2="392" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M318,392 L308,396.5 L308,387.5 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <g class="fa-k" style="--fa-n:fa-fy410-tyypit-6;--fa-t:10s;--fa-d:-0s">
+  <rect x="105" y="382" width="50" height="30" rx="4" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="111" y="406" width="38" height="6" fill="#8a96a3"/>
+  </g>
+  <g class="fa-k" style="--fa-n:fa-fy410-tyypit-7;--fa-t:10s;--fa-d:-0s">
+  <rect x="155" y="382" width="50" height="30" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="161" y="406" width="38" height="6" fill="#8a96a3"/>
+  </g>
+  <g class="fa-k" style="--fa-n:fa-fy410-tyypit-8;--fa-t:10s;--fa-d:-0s">
+  <path d="M150,397 L152.5,392 L157.5,402 L160,397" fill="none" stroke="#6c757d" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+  <g class="fa-k" style="--fa-n:fa-fy410-tyypit-9;--fa-t:10s;--fa-d:-0s">
+  <foreignObject x="113.5" y="349.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$p_\text{kok} = 0$</div></foreignObject>
+  <rect x="345" y="382" width="50" height="30" rx="4" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="351" y="406" width="38" height="6" fill="#8a96a3"/>
+  <rect x="495" y="382" width="50" height="30" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="501" y="406" width="38" height="6" fill="#8a96a3"/>
+  <line x1="390" y1="366" x2="337" y2="366" stroke="#7048e8" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M324,366 L338,359.5 L338,372.5 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <line x1="500" y1="366" x2="553" y2="366" stroke="#7048e8" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M566,366 L552,372.5 L552,359.5 Z" fill="#7048e8" stroke-linejoin="round"/>
+  </g>
+  <foreignObject x="120" y="3.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{ennen}$</div></foreignObject>
+  <foreignObject x="397.5" y="3.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{jälkeen}$</div></foreignObject>
+</svg>

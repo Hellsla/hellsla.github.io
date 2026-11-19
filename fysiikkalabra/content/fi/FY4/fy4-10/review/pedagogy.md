@@ -1,18 +1,24 @@
 VERDICT: PASS
-CONTENT-HASH: 4b9821a3c9098151
+CONTENT-HASH: 338baa44a2d54eaa
 
 ## Blocking
+(none)
 
 ## Polish
-- lesson.md "Pysähdy ja mieti" 1 and 2 (auto, tarranauha) — each question is answered in the sentences directly above it ("Törmäävät autot taas kokevat tien kitkan… impulssi jää merkityksettömän pieneksi"; "Toinen puoli muuttuu … sisäenergiaksi"), so the student only recalls what was just read. Fix: ask before the explaining sentences, or turn them into a prediction/transfer ("Mitä jos vaunut olisivat nelinkertaisen raskaita?", "Kuinka monta prosenttia energiasta muuttuu, kun m2 = 3 m1?").
-- lesson.md "Vastaus alun kysymykseen" — the squaring step ($2v_1'v_2'=0$) and "ei voi kulkea toisen läpi" are the real reasoning jump of the opening question, but no Pysähdy box sits there. Fix: move one box here ("Miksi lyöntipallo ei voi jatkaa, vaikka $v_1'=v$, $v_2'=0$ on…? Mitä tulo $v_1'v_2'=0$ kertoo?").
-- lesson.md "Miksi kokonaisliikemäärä säilyy" — "Se, minkä toinen vaunu saa liikemäärää, on täsmälleen se, minkä toinen menettää" is clumsy. Fix: "Toinen vaunu saa liikemäärää täsmälleen sen verran kuin toinen menettää."
-- Box 3 (luistelija) is the best of the set (new transfer, uses the law); keep it. Four boxes in one chapter is the upper limit; do not add more.
+- inquiry.json check-3 (Selitä) — the model answer repeats the lesson's section "Vastaus alun kysymykseen" almost word for word, so the check is recall, not a new situation. Fix: ask about a new pair, e.g. a /bin/bash{,}20\,\text{kg}$ ball hitting a /bin/bash{,}60\,\text{kg}$ ball at rest.
+- inquiry.json siirto prompt — "nopeudella $2{,}4\,\text{m/s}$ laituriin (maahan) nähden" is clumsy. Fix: "nopeudella $2{,}4\,\text{m/s}$ maahan nähden".
+- inquiry.json hook — "Jos punainen pallo olisi raskas keilapallo, lyöntipallo kimpoaisi takaisin" gives away the mass dependence that exp-2 is meant to reveal. Fix: put it in the question as "entä jos...?" or drop it.
+- lesson.md "Täysin kimmoton törmäys" — the sticky-cart example (0,40 kg, 0,60 m/s) is the same as pred-1 and exp-1 and gives the result before the experiment is done. Fix: it is behind the prediction gate, so move it to the worked example or change its numbers.
+- fig "tyypit" (390 px) — in the explosion row, the label \text{kok}=0$ sits tight against the carts and is pale. Fix: raise it and darken it.
 
 ## Checked
-- Learning path: prerequisites (impulse, energy) used, opening question answered, no 2D collisions.
-- Pysähdy boxes: closed answer, wording works at 390 and 1280 px (captures), placed after the paragraph they test, not blocking reading.
-- Predictions refutable by experiments; feedback repairs misconceptions (energy conserved, sign errors).
-- Worked example: seven stages, numbers correct (38,3 kJ to 32,5 kJ).
-- Exit ticket and checks test the core idea; Finnish case forms fine.
-- Workload one lesson (exp-3, pred-3 optional).
+- Learning path follows from fy4-9 impulse and Newton III: system, internal and external forces, the conservation condition, collision types, explosion.
+- The opening question is answered by the elastic derivation v_1'v_2'=0$ in the lesson, and check-3 asks it again.
+- Predictions can be refuted: the sim's model values, with buffer forces computed from compression, give the figures the feedback quotes (0,30 m/s; 0,80/0,20/-0,12 m/s; 0,63 and 1,26 m/s). I recomputed them.
+- Variable control: only m2 varies in exp-1 to exp-3, and the others are locked. The experiment questions' distractors are misconception-based (no sign, energy conserved, braking removes momentum).
+- Core path is one hour: exp-3, reflect, Etsi virhe and pred-3 are optional.
+- The worked example has seven stages with sensible numbers (38,3 to 32,5 kJ, 15 %). Its same-direction case differs from the check-2 and virhe tasks (opposite directions).
+- The siirto hints go from system to explosion to formula, and the mistake values (2,4; 0,706; 5,76) are real errors.
+- Figures: the hero, vuorovaikutus and tyypit are legible at 390 px with meaningful colour. The simulation at 390 px has Käyttöohje, Mallin oletukset and Laskennan selitys behind closed boxes and a short visible text.
+- Finnish and glossary terms (kimmoisa, kimmoton, räjähdys, sisäenergia) are correct. The exit ticket tests the condition and a new explosion case.
+- The exercise set was not judged (reviewed separately).

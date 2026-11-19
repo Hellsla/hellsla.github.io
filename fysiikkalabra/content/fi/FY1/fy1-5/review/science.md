@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: c2b79b7bc2f57488
+CONTENT-HASH: 1523636504cab4b6
 
 ## Blocking
 
 ## Polish
-- The prompt says "eri etäisyyksillä" / "at different distances" without naming from what; "etäisyys Maasta" (distance from Earth) would match the signal path. The slope is then 1/c, about 3,3 ns/m; not required at this level.
 
 ## Checked
-batch delta review: retrieval choice rewritten to signal travel time vs distance in (s,t); slope = Δt:Δs (time per unit distance, 1/c) is the one correct option; intercept and "length of the line" distractors wrong with correct feedback; consistent with the chapter on straight-line fitting.
+- delta review: exit-ticket.json:8 model answer now writes $s = s_0 + vt$, the lesson's symbols; no $x_0$ or $x = $ remains in exit-ticket.json, lesson.md or inquiry.json (grep). The earlier polish item is resolved.
+- recomputed in python: $s(2\,\text{s}) = 4\,\text{m} + 3\,\text{m/s} \cdot 2\,\text{s} = 10\,\text{m}$; distance covered $3\,\text{m} \to 6\,\text{m}$; numbers and units unchanged and consistent.
+- the answer still separates paikka from matka as the glossary does ($\Delta s = s - s_0$ proportional to $t$, position not, since $s_0 \ne 0$).
+- content hash identical at the start and the end of the review.

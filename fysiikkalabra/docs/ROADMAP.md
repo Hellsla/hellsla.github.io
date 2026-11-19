@@ -63,6 +63,10 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
 13. English concept cards for FY6 and FY8 (queue: later, the teacher's decision; teacher 2026-11-15: after step 18 and before the final review, step 15).
 15. Editorial final review of FY1–FY8 (queue 15, teacher 2026-11-14): after steps 17, 18 and 13 and every other step except 14 and the booklets (teacher 2026-11-15); a report first, course by course, with verified
     errors, possible problems and optional improvements apart; no source changes until the teacher has read it.
+24. New figures on the site (queue 24, teacher 2026-11-19; 662 figures approved 15–18.11): part 1 (the shared pipeline
+    change and the FY2 pilot, alone, stops for the teacher's approval) right after queue 23 (process page) and before
+    queue 0g PR 2; parts 2–11 (FY1, FY3–FY10, FY14) one module at a time after part 1, alongside the shared items that
+    follow; the teacher looks at each module once on the finished page and merges. Before the booklets (step 16).
 14. Ahjo and LUMA-tutor onto the shared unit template (`jaksot.py` blocks, as Kilparobotiikka). Shared files,
     so alone. Teacher 2026-11-15: just before the booklets (step 16).
 16. Last (teacher 2026-11-14; after steps 17 and 18, teacher 2026-11-15: no proofreading after the booklets): printed A5 booklets for FY1–FY8 in the current compact layout (`print_book.py --publish`): FY1–FY4 again, FY5–FY8

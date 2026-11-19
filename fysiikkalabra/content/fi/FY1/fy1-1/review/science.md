@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 10dada60177789aa
+CONTENT-HASH: 3bed8018ff6ce0ef
 
 ## Blocking
-- none
 
 ## Polish
-- none
+
 
 ## Checked
-- batch delta review: the reworded opening of "Kohdetyyppejä, ei portaita" now names nebulae, neutron stars and black holes as object types found inside galaxies among the stars. That matches the scope note ("object types, not levels") and the paragraphs after it, and it is a fair FY1 simplification (C). No number or symbol changed, and the teacher-approved figures are not judged. The hash was the same at the start and the end.
+batch delta review: three new pysahdy blocks (4,2·10^5 m → 10^6 m by the chapter's coefficient-3 rule; 4 ly = 3,8·10^16 m recomputed; EM vs gravity explanation matches the theory paragraph) and the knowns split into a list; values unchanged.

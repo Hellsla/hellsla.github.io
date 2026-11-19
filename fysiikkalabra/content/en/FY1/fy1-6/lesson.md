@@ -519,6 +519,12 @@ When an object is released from rest, its speed increases. **Free fall** is fall
 
 The change in speed per unit of time is called **acceleration**. The acceleration of a freely falling object is the **acceleration of free fall** $g = 9.81\,\text{m/s}^2$. The unit $\text{m/s}^2$ is read "metres per second squared", that is, "metres per second per second": speed is measured in $\text{m/s}$, and it changes by this amount every second. So the number $g$ is not a speed but the rate at which the speed increases.
 
+```pysahdy
+An object falls freely from rest, and its speed after three seconds is $29.4\,\text{m/s}$. What is its speed after four seconds?
+---
+The speed increases by $9.81\,\text{m/s}$ every second, so it is about $39.2\,\text{m/s}$.
+```
+
 ### Mass does not affect falling
 When there is no air resistance, all objects fall with the same acceleration regardless of their mass. In a vacuum a hammer and a feather fall equally fast, and a ball with a mass of $5\,\text{kg}$ has at every moment the same speed as a ball with a mass of $1\,\text{kg}$. The reason is explained later in connection with forces. In this chapter it is taken as an experimental result that you investigate yourself.
 
@@ -573,6 +579,12 @@ When there is no air resistance, all objects fall with the same acceleration reg
 </svg>
 
 In air the situation is different. Air slows a light, wide object, such as a feather or a sheet of paper, clearly more than a small, dense object, such as a stone or a steel ball. This is why at home a feather falls more slowly than a hammer. The difference is caused by the air, not by mass as such.
+
+```pysahdy
+In free fall all objects have the same $g$. Why does a feather still fall more slowly than a hammer at home?
+---
+Air slows a light, wide object more than a small, dense one. The difference is caused by the air, not by mass as such.
+```
 
 ## Formula: Speed in free fall
 Acceleration tells how fast the velocity changes: it is the change in velocity divided by the time interval in which the change happens. When the acceleration is constant, the change in velocity is the acceleration times the time interval:
@@ -638,6 +650,12 @@ where $v$ is the downward speed ($\text{m/s}$), $g = 9.81\,\text{m/s}^2$ is the 
 </svg>
 
 So the $(t, v)$ graph of a falling object is a rising straight line through the origin. Its slope $\tfrac{\Delta v}{\Delta t}$ is the acceleration of free fall, so $g$ can be found from the graph by reading two points far apart. Because the acceleration is constant, $\Delta v = g\,\Delta t$ holds for any time interval: the speed of an object moving downwards increases by $9.81\,\text{m/s}$ every second even when the object did not start from rest.
+
+```pysahdy
+The downward speed of an object is $5.0\,\text{m/s}$ at some moment. What is its speed $2.0\,\text{s}$ later when there is no air resistance?
+---
+The acceleration is constant, so $\Delta v = g\,\Delta t \approx 19.6\,\text{m/s}$ and the speed is about $25\,\text{m/s}$. The object does not need to start from rest.
+```
 
 <figure class="unit-photo"><img src="pics/fy1/bouncing-ball-strobe.webp" alt="Images of a bouncing yellow ball in two arcs on a black background. Near the bottom of the arcs the images are further apart than at the top."><figcaption>A bouncing ball photographed at equal time intervals. As the ball falls it speeds up, so the gaps between successive images grow.</figcaption></figure>
 

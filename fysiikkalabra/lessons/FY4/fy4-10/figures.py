@@ -31,6 +31,27 @@ def spring(f, xa, xb, y, turns=5, amp=7, color=IRON):
     f.path("M" + " L".join(f"{n(a)},{n(b)}" for a, b in pts), stroke=color, w=2.5)
 
 
+def fade(f, T, on=((0, 0.1), (0.9, 1.0))):
+    """Animated (work queue 8f): what belongs to the still's one moment is visible only in the `on` windows of the
+    cycle (fractions); the still (t = 0) is unchanged."""
+    pts = [(0, 0, 0, 0, 1)]
+    for a, b in on:
+        if a > 0: pts += [(a - 0.02, 0, 0, 0, 0), (a, 0, 0, 0, 1)]
+        if b < 1: pts += [(b, 0, 0, 0, 1), (b + 0.02, 0, 0, 0, 0)]
+    if pts[-1][0] < 1: pts.append((1, 0, 0, 0, 1))
+    pts = sorted({p[0]: p for p in pts[::-1]}.values())
+    return f.motion(pts, T)
+
+
+def run_frames(path):
+    """Animated (8f): frames (t, dx) of a glider that follows `path` (list of (t, dx), t rising from 0 to under 0.9) from
+    its drawn place, rests, fades out at 0.9, is back at the drawn place at 0.94 and fades in by 0.96 (the loop's end
+    is the still)."""
+    end = path[-1]
+    fr = [(t, dx, 0, 0, 1) for t, dx in path] + [(0.9, end[1], 0, 0, 1), (0.92, end[1], 0, 0, 0), (0.94, 0, 0, 0, 0), (0.96, 0, 0, 0, 1)]
+    return fr + [(1, 0, 0, 0, 1)]
+
+
 def vuorovaikutus():
     """Ydinajatus: during the collision the gliders push each other with equal and opposite forces for the same time,
     so their momentum changes are equal and opposite."""
@@ -38,24 +59,41 @@ def vuorovaikutus():
             "jousipuskuri on puristunut. Ylhäällä punaiset voimanuolet: vaunu 1 työntää vaunua 2 oikealle voimalla F, ja vaunu 2 "
             "työntää vaunua 1 vasemmalle yhtä suurella vastakkaissuuntaisella voimalla −F. Molemmat voimat vaikuttavat saman ajan Δt. "
             "Alhaalla violetit nuolet ovat liikemäärien muutokset: vaunun 1 muutos Δp1 = −FΔt osoittaa vasemmalle ja vaunun 2 "
-            "muutos Δp2 = FΔt oikealle, yhtä pitkinä. Niiden summa on nolla.")
+            "muutos Δp2 = FΔt oikealle, yhtä pitkinä. Niiden summa on nolla.", anim=True)
+    T = 8.0
+    D = 90                                   # the distance the gliders run before and after the contact (figure units)
     ty = 150
     track(f, 30, 570, ty)
-    glider(f, 210, ty, 150, 64, SAND_LIGHT); glider(f, 400, ty, 150, 64, ALUMINIUM)
-    f.tex(250, ty - 46, "1", "middle", INK, 24); f.tex(360, ty - 46, "2", "middle", INK, 24)
+    # animated (8f): glider 1 comes in from the left and stops at the still's place (t 0.56..0.9, then rests: contact);
+    # glider 2 leaves to the right at the same speed (t 0.1..0.44); both vanish at 0.5 and are back at 0.56 at their
+    # starting places. Equal masses, so the velocities are exchanged; the force arrows, the spring and the momentum
+    # arrows exist only while the gliders are in contact (t 0.9..1.1), so they never look like a lasting state.
+    v = 0.34
+    f.motion([(0, 0, 0, 0, 1), (0.5, 0, 0, 0, 1), (0.52, 0, 0, 0, 0), (0.54, -D, 0, 0, 0), (0.56, -D, 0, 0, 1), (0.9, 0, 0, 0, 1),
+              (1, 0, 0, 0, 1)], T)
+    glider(f, 210, ty, 150, 64, SAND_LIGHT); f.tex(250, ty - 46, "1", "middle", INK, 24)
+    f.end()
+    f.motion([(0, 0, 0, 0, 1), (0.1, 0, 0, 0, 1), (0.44, D, 0, 0, 1), (0.5, D, 0, 0, 1), (0.52, D, 0, 0, 0), (0.54, 0, 0, 0, 0),
+              (0.56, 0, 0, 0, 1), (1, 0, 0, 0, 1)], T)
+    glider(f, 400, ty, 150, 64, ALUMINIUM); f.tex(360, ty - 46, "2", "middle", INK, 24)
+    f.end()
+    fade(f, T)
     spring(f, 285, 325, ty - 22, 3, 8)
     # forces from the contact: on 2 to the right, on 1 to the left
     f.arrow(325, ty - 22, 440, ty - 22, RED, 4, 15); f.arrow(285, ty - 22, 170, ty - 22, RED, 4, 15)
     f.tex(505, 60, r"\overline{F}", "middle", RED); f.tex(95, 60, r"-\overline{F}", "middle", RED)
     f.line(497, 74, 440, ty - 28, RED, 1.5); f.line(103, 74, 170, ty - 28, RED, 1.5)
+    f.end()
     f.tex(300, 40, r"\Delta t", "middle")
     f.line(20, 196, 580, 196, RULE, 2, "6 6")
     # momentum changes, to scale with each other
+    fade(f, T)
     f.arrow(300, 236, 170, 236, PURPLE, 5, 16); f.arrow(300, 236, 430, 236, PURPLE, 5, 16)
     f.line(300, 222, 300, 250, INK, 2)
     f.tex(160, 272, r"\Delta\overline{p}_1 = -\overline{F}\,\Delta t", "middle", PURPLE)
     f.tex(440, 272, r"\Delta\overline{p}_2 = \overline{F}\,\Delta t", "middle", PURPLE)
     f.tex(300, 314, r"\Delta\overline{p}_1 + \Delta\overline{p}_2 = \overline{0}", "middle")
+    f.end()
     return f.svg()
 
 
@@ -92,7 +130,11 @@ def tyypit():
             "ennen ja oikealla jälkeen. Ylimpänä kimmoisa törmäys: ennen vaunulla 1 on liikemäärä oikealle ja vaunu 2 on levossa, jälkeen "
             "vaunu 1 on levossa ja vaunulla 2 on sama liikemäärä; liike-energia säilyy. Keskellä täysin kimmoton törmäys: vaunut tarttuvat "
             "yhteen, ja yhteinen liikemäärä on yhtä suuri kuin ennen; liike-energia pienenee. Alimpana räjähdys: ennen vaunut ovat yhdessä "
-            "levossa ja kokonaisliikemäärä on nolla, jälkeen vaunuilla on yhtä suuret vastakkaissuuntaiset liikemäärät; liike-energia kasvaa.")
+            "levossa ja kokonaisliikemäärä on nolla, jälkeen vaunuilla on yhtä suuret vastakkaissuuntaiset liikemäärät; liike-energia kasvaa.", anim=True)
+    T = 10.0
+    S = 230                                   # figure units per cycle: the speed of the incoming glider (animation, 8f)
+    tc = 80 / S                               # the contact (the gap of the rows 1 and 2 is 80 units)
+    hold = ((0, 0.02), (0.98, 1))             # the still's marks are gone while the gliders run
     rows = [(r"\text{kimmoisa: } E_\text{k}\ \text{säilyy}", 152), (r"\text{täysin kimmoton: } E_\text{k}\ \text{pienenee}", 282),
             (r"\text{räjähdys: } E_\text{k}\ \text{kasvaa}", 412)]
     P = 110                                   # px of the momentum arrow p
@@ -102,20 +144,34 @@ def tyypit():
         f.line(40, y, 270, y, METAL_EDGE, 3); f.line(330, y, 560, y, METAL_EDGE, 3)
         f.arrow(282, y - 20, 318, y - 20, MUTED, 2.5, 10)
         if k == 0:
-            glider(f, 90, y, 50, 30, SAND_LIGHT); glider(f, 220, y, 50, 30, ALUMINIUM)
+            f.motion(run_frames([(0, 0), (tc, 80)]), T); glider(f, 90, y, 50, 30, SAND_LIGHT); f.end()
+            f.motion(run_frames([(0, 0), (tc, 0), (tc + 0.12, S * 0.12)]), T); glider(f, 220, y, 50, 30, ALUMINIUM); f.end()
+            fade(f, T, hold)
             f.arrow(70, y - 46, 70 + P, y - 46, PURPLE, 4, 14)
             glider(f, 360, y, 50, 30, SAND_LIGHT); glider(f, 450, y, 50, 30, ALUMINIUM)
             f.arrow(440, y - 46, 440 + P, y - 46, PURPLE, 4, 14)
+            f.end()
         elif k == 1:
-            glider(f, 90, y, 50, 30, SAND_LIGHT); glider(f, 220, y, 50, 30, ALUMINIUM)
+            h = S * 0.12 / 2                   # stuck together: half the speed
+            f.motion(run_frames([(0, 0), (tc, 80), (tc + 0.12, 80 + h)]), T); glider(f, 90, y, 50, 30, SAND_LIGHT); f.end()
+            f.motion(run_frames([(0, 0), (tc, 0), (tc + 0.12, h)]), T); glider(f, 220, y, 50, 30, ALUMINIUM); f.end()
+            fade(f, T, hold)
             f.arrow(70, y - 46, 70 + P, y - 46, PURPLE, 4, 14)
             glider(f, 420, y, 50, 30, SAND_LIGHT); glider(f, 470, y, 50, 30, ALUMINIUM)
             f.arrow(390, y - 46, 390 + P, y - 46, PURPLE, 4, 14)
+            f.end()
         else:
-            glider(f, 130, y, 50, 30, SAND_LIGHT); glider(f, 180, y, 50, 30, ALUMINIUM); spring(f, 150, 160, y - 15, 1, 5)
+            ex = S * 0.12 / 2                  # the gliders fly apart at equal speeds; the spring's push is over at once
+            f.motion(run_frames([(0, 0), (tc, 0), (tc + 0.12, -ex)]), T); glider(f, 130, y, 50, 30, SAND_LIGHT); f.end()
+            f.motion(run_frames([(0, 0), (tc, 0), (tc + 0.12, ex)]), T); glider(f, 180, y, 50, 30, ALUMINIUM); f.end()
+            fade(f, T, ((0, tc), (0.98, 1)))
+            spring(f, 150, 160, y - 15, 1, 5)
+            f.end()
+            fade(f, T, hold)
             f.tex(155, y - 48, r"p_\text{kok} = 0", "middle", PURPLE)
             glider(f, 370, y, 50, 30, SAND_LIGHT); glider(f, 520, y, 50, 30, ALUMINIUM)
             f.arrow(390, y - 46, 390 - 0.6 * P, y - 46, PURPLE, 4, 14); f.arrow(500, y - 46, 500 + 0.6 * P, y - 46, PURPLE, 4, 14)
+            f.end()
     f.tex(155, 18, r"\text{ennen}", "middle", MUTED); f.tex(445, 18, r"\text{jälkeen}", "middle", MUTED)
     return f.svg()
 

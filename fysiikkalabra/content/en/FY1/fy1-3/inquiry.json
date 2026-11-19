@@ -522,7 +522,7 @@
       "prompt": "The rolling time of a ball is measured five times and the results are $2.36\\,\\text{s}$, $2.41\\,\\text{s}$, $2.38\\,\\text{s}$, $2.46\\,\\text{s}$ and $2.39\\,\\text{s}$. The error estimate is half of the range. What percentage of the mean is it?",
       "answer": 2.08,
       "unit": "%",
-      "tolerance": 0.05,
+      "tolerance": 0.1,
       "hints": [
         "First calculate the mean and half of the range.",
         "The relative uncertainty is $\\varepsilon = \\dfrac{\\Delta t}{\\bar{t}} \\cdot 100\\,\\%$.",

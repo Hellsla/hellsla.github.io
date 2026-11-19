@@ -394,6 +394,12 @@ A research question is a question that a measurement can answer: "How does the t
 
 A **hypothesis** is a reasoned, testable prediction that answers the research question. For example: "The car moves along the track at constant speed, so the distance it travels is directly proportional to time, $s = vt$." A hypothesis must lead to something measurable that could turn out to be wrong. The prediction "the car goes somehow" is not a hypothesis, because no measurement can disprove it.
 
+```pysahdy
+The prediction is: "If the distance doubles, the travel time doubles." Is it a valid hypothesis, and why?
+---
+Yes. It leads to something measurable, and a measurement could show it wrong if the time does not double.
+```
+
 ### Variables
 A **variable** is a quantity or other factor that can vary in an investigation. In an experiment you change one variable, measure another and keep everything else the same:
 
@@ -402,6 +408,12 @@ A **variable** is a quantity or other factor that can vary in an investigation. 
 - **controlled variables**: stay the same throughout the experiment, here the car, the batteries, the surface and the way of starting.
 
 If two variables change at the same time, for example the distance and the batteries, you cannot tell what caused the change in the result. That is why an experiment is fair only when just the independent variable changes.
+
+```pysahdy
+A group changes the distance and, at the same time, puts new batteries in the toy car. The time gets shorter. Can the group tell what caused it?
+---
+No. Two variables changed at the same time, so the cause cannot be determined. Only the independent variable may change.
+```
 
 <svg data-fig="setup" data-style="house" viewBox="0 0 600 414" role="img" aria-label="Diagram of the experimental set-up: a battery toy car runs on a table from a start line to a finish line with a chequered flag. A tape measure with a scale in metres runs along the edge of the table, and the gap between the start line and the finish line is the independent variable, the distance s. A stopwatch measures the time t, which is the dependent variable. The car, the surface and the batteries are kept constant. The scale is accurate: 150 units in the picture correspond to one metre." style="max-width:100%;font-size:24px">
   <foreignObject x="24" y="13.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{independent: } s$</div></foreignObject>
@@ -598,6 +610,12 @@ where $\varepsilon$ is the relative uncertainty (often given as a percentage), $
   <foreignObject x="304" y="188.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\varepsilon \le 5\,\%$</div></foreignObject>
   <foreignObject x="184" y="73.5" width="180" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\varepsilon = \dfrac{0.2\,\text{s}}{t}$</div></foreignObject>
 </svg>
+
+```pysahdy
+The uncertainty of the time is $0.2\,\text{s}$ and the relative uncertainty may be at most $2.0\,\%$. How long a time must be measured at least?
+---
+The time must be at least $t = \Delta t/\varepsilon_\text{max}$, so $t = 0.2\,\text{s}/0.020 = 10\,\text{s}$.
+```
 
 The required distance follows from the model of uniform motion $s = vt$. If the measurement is made at several distances, a straight line is fitted to the data points (chapter *Graphing and fitting a straight line*). When $t$ is on the horizontal axis and $s$ on the vertical axis, the slope of the line is the speed $v$. The shortest valid distance is the one at which the relative uncertainty just stays within the chosen limit $\varepsilon_\text{max}$. On a shorter distance the relative uncertainty exceeds this limit, and the result is too imprecise.
 

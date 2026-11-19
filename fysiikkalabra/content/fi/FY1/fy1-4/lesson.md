@@ -220,10 +220,22 @@ Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälle
 
 Hyvä sovitus on lähellä kaikkia pisteitä, eikä se painotu yhden pisteen mukaan. Pisteitä on suoran molemmin puolin suunnilleen yhtä monta, ja ylä- ja alapuolen poikkeamat suunnilleen kumoavat toisensa. Suoran ei tarvitse kulkea yhdenkään pisteen kautta. Jos jokin piste on selvästi muita kauempana suorasta, sen syy kannattaa selvittää, eikä pistettä suljeta automaattisesti pois.
 
+```pysahdy
+Kuudesta mittauspisteestä viisi asettuu hyvin suoralle, mutta yksi on selvästi kauempana. Poistatko sen heti sovituksesta?
+---
+Et. Piste voi paljastaa mittausvirheen tai uuden ilmiön, joten sen syy kannattaa selvittää ennen kuin pistettä jätetään pois.
+```
+
 ### Lineaarinen malli
 Jos pisteet asettuvat likimain suoralle, suureiden riippuvuutta kuvaa lineaarinen malli, jonka yhtälö on suoran yhtälö. Kulmakerroin kertoo, kuinka paljon pystysuure muuttuu, kun vaakasuure kasvaa yhden yksikön, ja vakiotermi kertoo pystysuureen arvon, kun vaakasuure on nolla. Lineaarinen malli on fysikaalinen malli eli mittauksiin perustuva yksinkertaistettu kuvaus ilmiöstä: kuvaaja on sen graafinen malli ja suoran yhtälö sen matemaattinen malli, ja koska yhtälö antaa lukuarvoja, malli on kvantitatiivinen.
 
 Kun vakiotermi on nolla, suora kulkee origon kautta ja suureet ovat suoraan verrannolliset: kaksinkertainen $x$ antaa kaksinkertaisen $y$:n. Mittaukset tukevat mallia vain mitatulla alueella, joten arvon arvioiminen mitattujen pisteiden väliltä (interpolointi) on perusteltua. Jos suoraa jatketaan mitatun alueen ulkopuolelle (ekstrapolointi), oletetaan, että riippuvuus pysyy samanlaisena, ja tulos on vain arvio. Jos pisteet kaareutuvat systemaattisesti suoran ympärillä, esimerkiksi päiden pisteet ovat suoran yläpuolella ja keskikohdan pisteet sen alapuolella, lineaarinen malli ei sovi.
+
+```pysahdy
+Jännitettä mitattiin välillä $x = 2\ldots 10$. Kummassa arvossa tulos on luotettavampi, kun $x = 6$ vai kun $x = 30$?
+---
+Kun $x = 6$. Se on mitatulla alueella (interpolointi). Kohdassa $x = 30$ suoraa jatketaan alueen ulkopuolelle (ekstrapolointi), ja tulos on vain arvio.
+```
 
 ## Kaava: Suoran yhtälö
 Lineaarisen mallin kuvaaja on suora, jonka yhtälö on
@@ -289,6 +301,12 @@ missä $\Delta y$ on pisteiden välinen $y$:n muutos ja $\Delta x$ niiden välin
 Kaksi asiaa vaikuttaa tulokseen. Pisteet luetaan sovitetulta suoralta eikä mittauspisteistä, ja ne valitaan kaukana toisistaan, jolloin lukemavirhe vaikuttaa kulmakertoimeen vähän. Vakiotermi $b$ luetaan suoran ja pystyakselin leikkauskohdasta tai lasketaan yhdestä suoran pisteestä: $b = y_1 - kx_1$. Jos $x$ halutaan, kun $y$ tunnetaan, yhtälö ratkaistaan: $x = \tfrac{y - b}{k}$.
 
 Kulmakertoimen merkki kertoo suunnan. Positiivisella kulmakertoimella suora nousee, negatiivisella laskee. Kulmakertoimella on yleensä fysikaalinen merkitys: matka-aikakuvaajassa se on nopeus, ja massa-tilavuuskuvaajassa se on tiheys.
+
+```pysahdy
+Matka-aikakuvaajan sovitettu suora kulkee pisteiden $(2{,}0\,\text{s};\ 3{,}0\,\text{m})$ ja $(6{,}0\,\text{s};\ 11{,}0\,\text{m})$ kautta. Mikä on kulmakerroin ja mitä se kertoo?
+---
+$k = \frac{\Delta y}{\Delta x} = \frac{8{,}0\,\text{m}}{4{,}0\,\text{s}} = 2{,}0\,\text{m/s}$. Matka-aikakuvaajassa kulmakerroin on nopeus.
+```
 
 ## Esimerkki
 Vedenkeittimen veden lämpötilaa $T$ mitattiin joka minuutti:

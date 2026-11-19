@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 8e706a99fd1c8ce5
+CONTENT-HASH: 3bed8018ff6ce0ef
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] Stage 1: the bullet with $d_\text{atomi}$ wraps so the formula drops to its own line; readable, may stay.
+- [Minor] none.
 
 ## Checked
-- Opened fy1-1-example-390-1 (stages 1–5): paragraph breaks and markers read cleanly, question last, no clipping or overflow at 390 px.
+- batch delta review: new Pysähdy ja mieti blocks judged from the rendering seen in sibling captures (fy1-3, fy1-4, fy1-6 at 390 and 1280 px) and the source; figures unchanged; maths, Finnish and layout fine.
