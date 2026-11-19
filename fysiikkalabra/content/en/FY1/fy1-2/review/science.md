@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: db3c0de40d1f1fa7
+CONTENT-HASH: e7465931349db26a
 
 ## Blocking
 
 ## Polish
-None.
+
 
 ## Checked
-batch delta review: 10¹³ m : 10³ = 10¹⁰ km, recomputed; 10¹⁶ (added exponents), 10¹³ (no change), 10⁴ (13:3) wrong with correct feedback; Voyager 2 at about 140 AU ≈ 2·10¹³ m, order 10¹³ right.
+batch delta review: three new checks (number without unit; 2.5 m = 2500 mm, value grows for a smaller unit; four light-years and light-year as a unit of length); recomputed, consistent with the text.

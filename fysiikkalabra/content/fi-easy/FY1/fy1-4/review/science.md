@@ -1,17 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 7df5b94dcfb37116
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 33db7ef8ef38a233
 
 ## Blocking
-- none
 
 ## Polish
-- Koe 2 / Ennuste 2 feedback for the 78,5 g option: the one-point extrapolation 78,5 g − 16 g ≈ 63 g (62,5 g) differs slightly from the ~61 g best constant term stated in the correct option's feedback (with k locked at 0,80 g/ml the best b is 117,3 − 56 = 61,3 g). Not introduced by this change (previously 63 g as well) and the feedback's point stands; optional: "noin 62–63 g, lähellä parhaan suoran arvoa 61 g".
+- New interpolation box: "Jännite mitattiin välillä $x = 2\ldots 10$" names a quantity (jännite) but uses a bare $x$ without unit; "Mittaukset tehtiin välillä ..." or a voltage with its unit would read cleaner (not blocking).
 
 ## Checked
-- inquiry.json: slope 0,80 g/ml now matches the locked k of Koe 2 (LSQ slope of the data is 0,787, so 0,79 and 0,80 are both fair); 20 ml · 0,80 g/ml = 16 g, 78,5 − 16 ≈ 63 g recomputed
-- "kuvaa kärryn tasaista liikettä" matches data set 1 (kärry radalla); "sovitetaan suora eikä yhdistetä murtoviivaksi" correct
-- one-point s : t feedback ("each value is off by its own point's error") correct; units now upright ($\text{km/h}$, $\text{s/m}$), solution notation $s\ (\text{km})$
-- lesson.md: "poikkeamat suunnilleen kumoavat toisensa", "kauempana suorasta": both improve accuracy; table headers $t\ (\text{min})$, $T\ (^\circ\text{C})$ fine
-- lang sims.fy1-4: no change; no figures.py or sim change
-- fi-easy: same changes as fi, meaning preserved
+batch delta review: three new pysahdy boxes (outlier not removed automatically, cause first, matches guardrail; interpolation vs extrapolation; slope (11,0-3,0) m/(6,0-2,0) s = 2,0 m/s recomputed, slope = speed) and the worked example's question moved to its own paragraph.

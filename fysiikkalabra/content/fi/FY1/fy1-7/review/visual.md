@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: b0951191567d27b3
+CONTENT-HASH: 2c4bced98370c675
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] inquiry.json, last choice feedback — "Muunsit tilavuuden kuin pituuden" is clumsy — "Muunsit tilavuuden samoin kuin pituuden, kertomalla vain luvulla $10^{-2}$."
+- [Minor] none.
 
 ## Checked
-- batch delta review (fi, round 2, fy1-7): changed unit-conversion recap task read in full (units, $\cdot10^{-5}$, aligned chain, decimal comma); captures opened: stage-herata-390 (recap box closed, nothing clipped); figures unchanged.
+- batch delta review: new Pysähdy ja mieti blocks judged from the rendering seen in sibling captures (fy1-3, fy1-4, fy1-6) and the source; units in LaTeX; figures unchanged.

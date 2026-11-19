@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 5b2315184f4eeef6
+CONTENT-HASH: c54d27e2f917e557
 
 ## Blocking
-- none
 
 ## Polish
-- none
+
 
 ## Checked
-- batch delta review: the new sentences ("Sumut, neutronitähdet ja mustat aukot ovat kohteiden tyyppejä. Niitä on galaksien sisällä tähtien joukossa.") say what the Finnish main version says, and they are right at this level (C). No number or symbol changed. The hash was the same at the start and the end.
+batch delta review: three new pysahdy boxes (4,2·10^5 m -> 10^6 m by the lesson's coefficient-3 rule; 4 valovuotta = 3,8·10^16 m recomputed; gravity vs electromagnetism via neutrality and always-attractive gravity, matches theory) and the worked example's knowns split into a list (same values).

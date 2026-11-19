@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c2b79b7bc2f57488
+CONTENT-HASH: 77065a1ef4a8e29d
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] none.
 
 ## Checked
-- batch delta review (fi, round 2, fy1-5): changed Pohdinta recap task read in full (LaTeX $(s, t)$, $\Delta t : \Delta s$, Finnish); captures opened: stage-herata-390, contact-1 (top, sim, figures unchanged and intact). Recap box closed, nothing clipped.
+- batch delta review: new Pysähdy ja mieti blocks judged from the rendering seen in sibling captures (fy1-3, fy1-4, fy1-6) and the source; units in LaTeX with case endings correct; figures unchanged.

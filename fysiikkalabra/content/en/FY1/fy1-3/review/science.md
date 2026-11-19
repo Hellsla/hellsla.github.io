@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f5d92ee6b70e1813
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: d2c20fc1e0f44698
 
 ## Blocking
-- none
 
 ## Polish
-- none
+
 
 ## Checked
-- Uncertainty definition shortened to 'arvio siitä, kuinka suuri mittausvirhe voi olla': correct and consistent with the rest of the section.
-- Rounding example now 3,18 s +- 0,12 s (unit on both): correct notation; 'numeroita, joihin epävarmuuden vuoksi ei voi luottaa' states the reason correctly.
-- Added sentence: a precise but miscalibrated instrument gives tightly grouped readings in the wrong place: correct picture of good repeatability with systematic error.
-- Explain model answer (repeatability = closeness of repeated results to each other, accuracy = closeness to true value) is correct and matches en/fi-easy.
-- The en text says the same as the Finnish fix.
+batch delta review: three new checks (zero-point systematic error not removed by the mean; repeatable but not accurate; half range 0.2 s, mean 4.4 s, 4.4 s ± 0.2 s, framed as an error estimate as the lesson and worked example call it) and the split Given-and-find stage; recomputed, in line with the measurement guardrails.
