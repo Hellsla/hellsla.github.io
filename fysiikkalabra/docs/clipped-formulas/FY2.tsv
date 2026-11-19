@@ -2,47 +2,16 @@
 # page<TAB>formula. A page may keep them until its text changes; any other clipped formula fails the check. Rows are only ever removed
 # (fix the formula and delete its row; the file with its last row); written by `check_layout.py --write-known`, never by hand.
 en/fy2-3	E = P\,t = 2.0\,\text{kW} \cdot 90 = 180\,\text{kWh}
-en/fy2-3	P_1 = 6.0\,\text{kWh} : 3.0\,\text{h} = 2.0\,\text{kW}
-en/fy2-3	P_2 = 6.0\,\text{kWh} : 1.5\,\text{h} = 4.0\,\text{kW}
-en/fy2-4	E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}
-en/fy2-6	E = 1.6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h}
-en/fy2-6	P = 20.2 \cdot 10^{9}\,\text{kWh} : 8760\,\text{h}
-en/fy2-7	0.048 = 0.048 \cdot 100\,\% = 4.8\,\%
 en/fy2-8	m = 820\,\text{g/kWh} \cdot 2.0\,\text{kWh} = 1640
-fi-easy/fy2-3	0{,}05\,\text{kW} \cdot 1500\,\text{h} = 75\,\text{kWh}
-fi-easy/fy2-3	200\,000\,\text{J} : 100\,\text{s} = 2000\,\text{W}
 fi-easy/fy2-3	E = P\,t = 2{,}0\,\text{kW} \cdot 90 = 180\,\text{kWh}
-fi-easy/fy2-3	P_1 = 6{,}0\,\text{kWh} : 3{,}0\,\text{h} = 2{,}0\,\text{kW}
-fi-easy/fy2-3	P_2 = 6{,}0\,\text{kWh} : 1{,}5\,\text{h} = 4{,}0\,\text{kW}
-fi-easy/fy2-4	200\,\text{kW} - 180\,\text{kW} = 20\,\text{kW}
-fi-easy/fy2-4	500\,000\,\text{J} : 1200\,\text{W} = 417\,\text{s}
-fi-easy/fy2-4	E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}
-fi-easy/fy2-6	3{,}5\,\text{GW} \cdot 168\,\text{h} = 588\,\text{GWh}
 fi-easy/fy2-6	= 219\,000\,\text{MWh}
 fi-easy/fy2-6	= 525\,600\,\text{MWh}
-fi-easy/fy2-6	E = 1{,}6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h}
-fi-easy/fy2-6	P = 20{,}2 \cdot 10^{9}\,\text{kWh} : 8760\,\text{h}
-fi-easy/fy2-7	0{,}04 \cdot 500\,\text{MWh} = 20\,\text{MWh}
-fi-easy/fy2-7	16\,\text{MW} : 0{,}0625\,\text{MW} = 256
-fi-easy/fy2-7	4{,}0\,\% \cdot 125\,\text{MW} = 5{,}0\,\text{MW}
 fi-easy/fy2-8	= 2\,952\,000 \cdot 10^{-6}\,\text{t}
 fi-easy/fy2-8	= 74\,\text{g/MJ} \cdot 30\,\textsf{l} \cdot 36\,\text{MJ/}\textsf{l} 
 fi-easy/fy2-8	m = 820\,\text{g/kWh} \cdot 2{,}0\,\text{kWh} = 1640
-fy2-3	0{,}05\,\text{kW} \cdot 1500\,\text{h} = 75\,\text{kWh}
-fy2-3	200\,000\,\text{J} : 100\,\text{s} = 2000\,\text{W}
 fy2-3	E = P\,t = 2{,}0\,\text{kW} \cdot 90 = 180\,\text{kWh}
-fy2-3	P_1 = 6{,}0\,\text{kWh} : 3{,}0\,\text{h} = 2{,}0\,\text{kW}
-fy2-3	P_2 = 6{,}0\,\text{kWh} : 1{,}5\,\text{h} = 4{,}0\,\text{kW}
-fy2-4	200\,\text{kW} - 180\,\text{kW} = 20\,\text{kW}
-fy2-4	500\,000\,\text{J} : 1200\,\text{W} = 417\,\text{s}
-fy2-4	E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}
-fy2-6	3{,}5\,\text{GW} \cdot 168\,\text{h} = 588\,\text{GWh}
 fy2-6	= 219\,000\,\text{MWh}
 fy2-6	= 525\,600\,\text{MWh}
-fy2-6	E = 1{,}6 \cdot 10^{6}\,\text{kW} \cdot 8760\,\text{h}
-fy2-6	P = 20{,}2 \cdot 10^{9}\,\text{kWh} : 8760\,\text{h}
-fy2-7	16\,\text{MW} : 0{,}0625\,\text{MW} = 256
-fy2-7	4{,}0\,\% \cdot 125\,\text{MW} = 5{,}0\,\text{MW}
 fy2-8	= 2\,952\,000 \cdot 10^{-6}\,\text{t}
 fy2-8	= 74\,\text{g/MJ} \cdot 30\,\textsf{l} \cdot 36\,\text{MJ/}\textsf{l} 
 fy2-8	m = 820\,\text{g/kWh} \cdot 2{,}0\,\text{kWh} = 1640
