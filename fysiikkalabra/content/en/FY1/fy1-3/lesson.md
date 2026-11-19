@@ -385,8 +385,20 @@ A **systematic error** is almost the same in direction and size in every measure
   <line x1="24" y1="206" x2="576" y2="206" stroke="#6b7480" stroke-width="1.25" stroke-linecap="butt" stroke-dasharray="5 4"/>
 </svg>
 
+```pysahdy
+You measure the same length 20 times and calculate the mean. The instrument's zero point is wrong. Does the mean remove the error?
+---
+No. A systematic error shifts every result in the same direction, so the mean is just as far off. The error is found by comparing with a known value.
+```
+
 ### Repeatability and accuracy
 The reliability of a measurement is described by two things. **Repeatability** tells how close to each other repeated measurements land, and it is weakened by random error. **Accuracy** tells how close the mean is to the true value, and it is weakened by systematic error. A measurement can be repeatable but not accurate, like the lower series in the figure. A reliable measurement has both.
+
+```pysahdy
+The results of a measurement series lie tightly together, but their mean is far from the true value. Is the measurement repeatable, and is it accurate?
+---
+It is repeatable, because the results land close to each other. It is not accurate, because the mean is far from the true value. The cause is a systematic error.
+```
 
 <figure class="unit-photo"><img src="pics/fy1/ligo-hanford.webp" alt="A desert landscape where a long concrete tube leads to a large blue and white building. On the right another long low tube runs to the horizon."><figcaption>The LIGO gravitational-wave detector at Hanford, USA. Its arms, kilometres long, detect changes in length far smaller than an atomic nucleus.</figcaption></figure>
 
@@ -430,6 +442,12 @@ where $\Delta x$ is the error estimate, $x_\text{max}$ is the largest and $x_\te
   <foreignObject x="397" y="229.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\bar{t} + \Delta t$</div></foreignObject>
   <foreignObject x="221" y="263" width="158" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$</div></foreignObject>
 </svg>
+
+```pysahdy
+A timing gives the results $4.2\,\text{s}$, $4.6\,\text{s}$ and $4.4\,\text{s}$. What is the error estimate $\Delta t$, and how is the result written?
+---
+The error estimate is half the range: $\Delta t = \frac{4.6\,\text{s} - 4.2\,\text{s}}{2} = 0.2\,\text{s}$. The mean is $4.4\,\text{s}$, so the result is $4.4\,\text{s} \pm 0.2\,\text{s}$.
+```
 
 Half of the range is a simple estimate of the scatter of the results, not a general method for finding the measurement uncertainty. It does not reveal a systematic error, which shifts all results in the same direction. If all the results are the same, no scatter shows, but the uncertainty is still not zero: then the reading uncertainty is estimated, as below.
 
