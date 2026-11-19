@@ -546,5 +546,5 @@ Laskuissa jaksonaika ja taajuus menevät helposti sekaisin. Mitä pidempi jakson
 - Jaksollinen liike toistuu samanlaisena yhtä pitkin väliajoin. Värähtelyliikkeessä kappale liikkuu edestakaisin tasapainoaseman molemmin puolin.
 - Poikkeama $x$ on etäisyys tasapainoasemasta etumerkin kanssa. Amplitudi $A$ on suurin poikkeama. Ääriasemien välinen etäisyys on $2A$.
 - Jaksonaika $T$ on yhden täyden värähdyksen kesto. Taajuus $f = \tfrac{1}{T}$ on värähdysten määrä aikayksikössä. Yksikkö on $1\,\text{Hz} = 1\,\tfrac{1}{\text{s}}$.
-- Jos ajanotto alkaa tasapainoaseman ohituksesta positiiviseen suuntaan, sinimuotoista värähtelyä kuvaa $x = A \sin\left(\tfrac{2\pi t}{T}\right) = A \sin(2\pi f t)$. Argumentti on radiaaneina.
+- Jos ajanotto alkaa tasapainoaseman ohituksesta positiiviseen suuntaan, sinimuotoista värähtelyä kuvaa $$\begin{aligned} x &= A \sin\left(\tfrac{2\pi t}{T}\right) \\ &= A \sin(2\pi f t) \end{aligned}$$. Argumentti on radiaaneina.
 - Sinifunktion sovittamisessa amplitudi ja jaksonaika valitaan niin, että käyrä kulkee mittauspisteiden joukon keskeltä. Jaksonaika luetaan usean värähdyksen ajasta.

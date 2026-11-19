@@ -544,5 +544,5 @@ In calculations the period and the frequency are easily mixed up. The longer the
 - Periodic motion repeats in the same way at equal intervals of time. In an oscillation an object moves back and forth on both sides of the equilibrium position.
 - The displacement $x$ is the distance from the equilibrium position, with a sign. The amplitude $A$ is the greatest displacement, and the distance between the extreme positions is $2A$.
 - The period $T$ is the duration of one full oscillation, and the frequency $f = \tfrac{1}{T}$ is the number of oscillations per unit time; the unit is $1\,\text{Hz} = 1\,\tfrac{1}{\text{s}}$.
-- When timing starts at a pass through the equilibrium position in the positive direction, a sinusoidal oscillation is described by $x = A \sin\left(\tfrac{2\pi t}{T}\right) = A \sin(2\pi f t)$, with the argument in radians.
+- When timing starts at a pass through the equilibrium position in the positive direction, a sinusoidal oscillation is described by $$\begin{aligned} x &= A \sin\left(\tfrac{2\pi t}{T}\right) \\ &= A \sin(2\pi f t) \end{aligned}$$, with the argument in radians.
 - In fitting a sine function the amplitude and the period are chosen so that the curve goes through the middle of the set of measured points; the period is read from the duration of several oscillations.

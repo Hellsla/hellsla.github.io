@@ -61,12 +61,12 @@
 ## fy5-13-L2-02
 **Annettu:** äänirauta, jonka taajuus on $f = 440\,\text{Hz}$. Lyhin resonoiva ilmapatsas on $L = 19{,}3\,\text{cm}$ pitkä, ja sen alapään sulkee veden pinta.
 **Kysytty:** äänen nopeus ilmassa $v$ metreinä sekunnissa
-**Periaate:** Veden pinnalla ilma ei pääse liikkumaan, joten siellä on siirtymän solmu. Putken avoimessa suussa on kupu. Ääni voimistuu ensimmäisen kerran, kun ilmapatsaan pituus vastaa suljetun putken perustaajuutta. Silloin solmusta kupuun on neljännes aallonpituutta. Nopeus saadaan aallon perusyhtälöstä.
+**Periaate:** Veden pinnalla ilma ei pääse liikkumaan, joten siellä on siirtymän solmu. Putken avoimessa suussa on kupu. Ääni voimistuu ensimmäisen kerran, kun ilmapatsaan pituus vastaa suljetun putken perustaajuutta. Silloin solmusta kupuun on neljännes aallonpituutta. Putken pääkorjausta ei huomioida. Nopeus saadaan aallon perusyhtälöstä.
 **Kaava:** $L = \dfrac{\lambda}{4}$ ja $v = f\lambda$, josta $v = 4 L f$
 **Muunnokset:** $L = 19{,}3\,\text{cm} = 0{,}193\,\text{m}$
 **Sijoitus:** $v = 4 \cdot 0{,}193\,\text{m} \cdot 440\,\text{Hz} = 0{,}772\,\text{m} \cdot 440\,\text{Hz} = 339{,}68\,\text{m/s}$
 **Vastaus:** $340\,\text{m/s}$. Vastauksessa on kolme merkitsevää numeroa, koska ilmapatsaan pituudessa $19{,}3\,\text{cm}$ on kolme numeroa.
-**Järkevyys:** Tulos on äänen nopeus ilmassa huoneenlämmössä, noin $340\,\text{m/s}$. Seuraava resonanssi olisi kolmen neljänneksen kohdalla, $\tfrac{3\lambda}{4} = 0{,}579\,\text{m}$. Mittauksessa kannattaa verrata kahta resonanssia. Silloin päästään eroon pääkorjauksen virheestä, joka tekee lyhimmästä ilmapatsaasta hieman todellista neljännestä lyhyemmän.
+**Järkevyys:** Tulos on äänen nopeus ilmassa huoneenlämmössä, noin $340\,\text{m/s}$. Seuraava resonanssi olisi kolmen neljänneksen kohdalla, $\tfrac{3\lambda}{4} = 0{,}579\,\text{m}$. Todellisessa mittauksessa pääkorjaus tekee lyhimmästä ilmapatsaasta hieman todellista neljännestä lyhyemmän. Tässä tehtävässä sitä ei huomioida.
 
 ## fy5-13-L2-03
 **Annettu:** molemmista päistä avoin putki, jonka kolmas ominaistaajuus on $f_3 = 1530\,\text{Hz}$. Äänen nopeus ilmassa on $v = 340\,\text{m/s}$.
