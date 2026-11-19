@@ -1,0 +1,3 @@
+# Intended removals of published pages from site/ (scripts/check_site_removals.py, work queue 20).
+# One row per page: <path relative to fysiikkalabra/> <TAB> <reason>. Add it in the pull request that removes the page;
+# delete the row after that pull request is merged. Without a row a pull request that deletes a site/ page fails CI.
