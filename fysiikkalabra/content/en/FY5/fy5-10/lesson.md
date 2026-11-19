@@ -138,6 +138,12 @@ When the end of a rope is flicked upwards, the hand pulls the nearest point of t
 
 A mechanical wave needs a medium, such as a rope, a spring, water or air. One flick makes a **pulse**, a single hump that travels along the rope. When the hand is moved steadily up and down, a periodic wave forms, in which crests and troughs repeat. Every point of the rope then vibrates with the same frequency $f$ as the hand. Period $T$, frequency $f$ and amplitude $A$ mean the same as in the chapter *Describing oscillation: period, frequency and amplitude*. When the wave reaches the end of the rope, it is reflected back; reflection is studied in the chapter *A wave meets an obstacle or a gap*.
 
+```pysahdy
+A hand shakes the end of a rope with frequency $2.0\,\text{Hz}$. With what frequency does a point of the rope one metre from the hand vibrate?
+---
+It vibrates with the same frequency, $2.0\,\text{Hz}$. Every point of the rope vibrates with the same frequency as the hand, even though it starts moving a little later.
+```
+
 ### Transverse and longitudinal waves
 Waves are divided into two kinds according to the direction in which the particles of the medium vibrate. In a **transverse wave** the particles vibrate perpendicular to the direction of travel of the wave: the points of the rope move up and down while the wave travels horizontally. In a **longitudinal wave** the particles vibrate parallel to the direction of travel. When the end of a long coil spring is pushed back and forth, compressions form in the spring, where the coils are close together, and rarefactions, where they are far apart. The compressions and rarefactions travel along, but each coil only swings back and forth around its own place. Sound in air, for example, is a longitudinal wave.
 
@@ -349,6 +355,12 @@ Waves are divided into two kinds according to the direction in which the particl
   </g>
 </svg>
 
+```pysahdy
+The end of a coil spring is pushed back and forth. In which direction do the coils vibrate compared with the direction in which the wave travels?
+---
+Parallel to the direction of travel. The wave is therefore longitudinal: the compressions travel along, but each coil only swings back and forth in place.
+```
+
 ## Formula: The fundamental equation of wave motion
 The **wavelength** $\lambda$ is the distance between two successive crests or two successive compressions. It is the shortest distance between two points that move in exactly the same way. When the source makes one full vibration, that is, during one period $T$, the wave travels exactly one wavelength. The four moments in the figure show how each quarter of a period takes the wave a quarter of a wavelength further.
 
@@ -399,6 +411,12 @@ So the speed of the wave is the wavelength divided by the period. Since the freq
 wave equation :: v = \frac{\lambda}{T} = f\lambda
 ```
 where $v$ is the speed of propagation of the wave ($\text{m/s}$), $\lambda$ the wavelength ($\text{m}$), $T$ the period ($\text{s}$) and $f$ the frequency ($\text{Hz}$). The units agree, because $1\,\text{Hz} = 1\,\text{s}^{-1}$, so $1\,\text{Hz} \cdot 1\,\text{m} = 1\,\text{m/s}$. The speed of a pulse can also be measured directly: a pulse travels at a steady speed in the same medium, so $v = \tfrac{s}{t}$, where $s$ is the distance and $t$ the time it takes.
+
+```pysahdy
+A wave has wavelength $0.50\,\text{m}$ and period $0.25\,\text{s}$. What is the speed of the wave?
+---
+The speed is $v = \tfrac{\lambda}{T}$, so $\tfrac{0.50\,\text{m}}{0.25\,\text{s}} = 2.0\,\text{m/s}$.
+```
 
 ### The speed depends on the medium, the frequency on the source
 The speed of a wave is determined by the properties of the medium. In a taut rope a wave travels faster than in a slack one, and sound travels in air at $20\,{}^\circ\text{C}$ at about $343\,\text{m/s}$ but in water at about $1500\,\text{m/s}$. The frequency is determined by the source: it is the frequency of the vibration of the hand, the end of the spring or the loudspeaker. In an ideal rope the speed of the wave is determined by the tension and the mass per unit length of the rope, so it does not depend on the frequency or on a small amplitude; likewise in air the speed of sound practically does not depend on the frequency. This is not a general law for all waves: the speed of water surface waves, for example, can depend on the wavelength, and such a wave is called dispersive. The very long wave of a tsunami, again, travels the faster the deeper the sea is. When the same rope is shaken more rapidly, the speed stays the same and the wavelength gets shorter: doubling the frequency halves the wavelength. When a wave passes from one medium to another, the frequency stays the same, but the speed and the wavelength change.

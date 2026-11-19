@@ -259,6 +259,12 @@ Luvussa *Momentti: voiman kiertävä vaikutus* opittiin, että voima kiertää k
 ### Painopiste
 Maan vetovoima vaikuttaa kappaleen jokaiseen osaan. Painon momenttia laskettaessa koko paino voidaan kuitenkin ajatella yhteen pisteeseen. Se on kappaleen **painopiste**. Tasa-aineisen ja symmetrisen kappaleen, kuten tasapaksun lankun, painopiste on keskellä. Siksi voimakuviossa paino piirretään lähtemään painopisteestä. Kahden kappaleen yhteinen painopiste on niiden painopisteiden välissä, lähempänä raskaampaa kappaletta. Jos kappale tuetaan yhdestä kohdasta, se pysyy paikallaan vain, kun painopiste on tukikohdan pystysuoralla. Muuten painon momentti tukikohdan suhteen kiertää kappaletta.
 
+```pysahdy
+Tasapaksua lankkua kannatellaan yhdestä kohdasta. Mihin kohtaan tuen pitää osua, jotta lankku pysyy vaakasuorassa? Miksi?
+---
+Tuen pitää olla lankun keskellä eli painopisteen alla. Silloin painon varsi on nolla. Paino ei silloin kierrä lankkua.
+```
+
 ### Milloin kappale kaatuu
 Paikallaan olevan kappaleen **tukipinta** on alue, jonka kappaleen ja alustan kosketuskohdat rajaavat. Laatikolla se on laatikon pohja. Tuolilla se on alue jalkojen välissä. Kaatumista arvioidaan pystysuoralla suoralla, joka kulkee painopisteen kautta. Kun suora osuu tukipinnan kohdalle, painon momentti tukipinnan reunan suhteen kääntää kappaleen takaisin alustan varaan. Silloin kappale pysyy pystyssä. Jos suora osuu tukipinnan ulkopuolelle, painon momentti alemman reunan suhteen kiertää kappaletta reunan yli. Silloin kappale kaatuu. Siksi matala ja leveä kappale kestää suuremman kallistuksen kuin korkea ja kapea. Kaatuminen on kiertymistä reunan ympäri. Liukuminen on sitä, että koko kappale siirtyy alustaa pitkin. Kitka estää liukumisen. Kuvan laatikot ovat samalla kaltevalla tasolla, ja kitka estää niitä liukumasta. Ne voivat siis vain pysyä paikallaan tai kaatua.
 
@@ -324,6 +330,12 @@ Paikallaan olevan kappaleen **tukipinta** on alue, jonka kappaleen ja alustan ko
   <path d="M285.5,84.5 L286.5,71 L296.5,77 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="431.5" y="33.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\text{kaatuu}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Kaltevalla tasolla oleva laatikko kaatuu, vaikka kitka estää sen liukumisen. Mistä riippuu, kaatuuko laatikko?
+---
+Laatikko kaatuu, jos painopisteen kautta kulkeva pystysuora osuu tukipinnan ulkopuolelle. Silloin painon momentti kiertää laatikon alemman reunan yli.
+```
 
 ## Kaava: Tasapainoehdot
 Kappale on tasapainossa, kun voimien summa on nolla ja voimien momenttien summa on nolla:
@@ -405,6 +417,12 @@ Tässä $N_1$ ja $N_2$ ovat tukivoimat ($\text{N}$) ja $r_1$ ja $r_2$ ovat tukie
   <foreignObject x="338.5" y="39.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$r_2$</div></foreignObject>
   <foreignObject x="428.5" y="77.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lankku}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Tasa-aineinen lankku on kahden tuen varassa. Tuet ovat $0{,}40\,\text{m}$ ja $1{,}20\,\text{m}$:n päässä painopisteestä. Kantaako kumpikin tuki puolet painosta?
+---
+Ei kanna. Pätee $N_1 r_1 = N_2 r_2$. Lähempi tuki kantaa kolminkertaisen voiman eli $\tfrac{3}{4}$ painosta. Kauempi tuki kantaa $\tfrac{1}{4}$.
+```
 
 ### Yhteinen painopiste
 Kahden kappaleen massat ovat $m_1$ ja $m_2$. Niiden yhteinen painopiste on kohdassa

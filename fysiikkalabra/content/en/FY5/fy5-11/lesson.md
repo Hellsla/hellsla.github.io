@@ -945,6 +945,12 @@ A wave is easiest to describe from above. A **wavefront** is a line that joins t
   <line x1="540" y1="304" x2="536" y2="252" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
+```pysahdy
+The circular wave made by a stone dropped into water has circles as its wavefronts. In which direction do the rays point relative to a wavefront?
+---
+The rays point away from the source and are perpendicular to the wavefront at every point, because a ray shows the direction of propagation.
+```
+
 ### Reflection from the end of a rope
 When a wave arrives at a boundary of the medium, it is reflected: part of it or the whole wave returns. In a rope you can see this from a single pulse. If the end of the rope is tied to a wall, the end cannot move. An upward pulse pulls the fastening up, and the wall pulls the rope down with an equally large force. So **a pulse reflected from a fixed end is inverted**: it returns pointing downwards. If the end of the rope is a ring that slides without friction along a rod, the end swings up with the pulse and nothing pulls it down. **A pulse reflected from a free end is not inverted** but returns with the same sign.
 
@@ -1000,6 +1006,12 @@ When a wave arrives at a boundary of the medium, it is reflected: part of it or 
 ### Huygens' principle
 In the 17th century the Dutchman Christiaan Huygens presented a principle with which the propagation of a wave can be worked out by drawing. According to **Huygens' principle**, every point of a wavefront acts as the source of a new small circular wave, a wavelet. The wavelets travel at the same speed as the original wave, and after a moment the new wavefront is the line that touches all the wavelets, their envelope. In open water the envelope of the wavelets is again a straight line, so a plane wave continues straight. When part of the front stops at an obstacle or bounces off a wall, the remaining wavelets tell where the wave goes.
 
+```pysahdy
+A wave travels at $0.30\,\text{m/s}$. What is the radius of the circle a wavelet has drawn after $2.0\,\text{s}$?
+---
+A wavelet travels at the same speed as the original wave, so the radius is $0.30\,\text{m/s} \cdot 2.0\,\text{s} = 0.60\,\text{m}$. The new wavefront touches all these circles.
+```
+
 ### Diffraction
 When a wave passes through a slit or past an obstacle, it also bends behind the obstacle, into the region that a straight ray does not reach. This is called **diffraction**, or bending of the wave. Huygens' principle explains it: the points of the front at the slit are sources of wavelets, and the wavelets of the outermost points spread sideways. The width of the slit is denoted by $b$. If the slit is many wavelengths wide, the front continues almost straight at the slit and curves only at the edges. When the slit is clearly narrower than the wavelength, that is $b < \lambda$, the wavelets at the slit are as if from one point, and the wave spreads as a semicircle over the whole area behind the slit. Already when the slit is about as wide as the wavelength, $b \approx \lambda$, the wave spreads a lot.
 
@@ -1034,6 +1046,12 @@ When a wave passes through a slit or past an obstacle, it also bends behind the 
 <figure class="unit-photo"><img src="pics/fy5/ripple-model-single-slit.webp" alt="A computed picture of a water surface seen from above. On the left there are vertical light and dark stripes. In the middle there is a vertical barrier with a narrow slit. On the right of the barrier, semicircular rings spread from the slit and fill the whole right side."><figcaption>A computed model picture of a ripple tank seen from above: the light stripes are crests and the dark ones troughs. A plane wave from the left passes through a slit one wavelength wide, and behind the slit the wave spreads in semicircles over the whole region. In reality the wave behind the slit is weaker; for clarity the picture shows it with the same contrast, and the wave reflected from the barrier is not drawn.</figcaption></figure>
 
 The same holds for an obstacle. An obstacle narrower than the wavelength, like a pier post, leaves hardly any shadow behind it, because the wave bends around it. Behind an obstacle much wider than the wavelength there is a sheltered region. So diffraction is strong when the width of the slit or obstacle is of the order of the wavelength or smaller. Sound bends from a door into a corridor, because the wavelength of speech is of the order of a metre, as wide as the doorway.
+
+```pysahdy
+Sea waves have a wavelength of $20\,\text{m}$ and a pier post is $0.50\,\text{m}$ wide. Is there a clear calm region behind the post?
+---
+No. The post is much narrower than the wavelength, so the wave bends around it and meets again behind it.
+```
 
 ## Formula: Law of reflection
 When a wave hits a flat surface, such as a wall or a sea wall, the **normal** of the surface, that is the line perpendicular to the surface, is drawn at the point of impact. Angles are always measured from the normal: the angle of incidence is the angle between the incoming ray and the normal, and the angle of reflection is the angle between the reflected ray and the normal. The law of reflection is

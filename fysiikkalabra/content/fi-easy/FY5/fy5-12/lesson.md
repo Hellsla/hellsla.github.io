@@ -123,6 +123,12 @@ Superpositio näkyy selvimmin narussa. Narun molemmista päistä lähetetään k
   <path d="M402,374 L413,369 L413,379 Z" fill="#7048e8" stroke-linejoin="round"/>
 </svg>
 
+```pysahdy
+Kaksi pulssia kohtaa narussa. Toinen vie narua ylös $3{,}0\,\text{cm}$ ja toinen alas $2{,}0\,\text{cm}$. Kuinka suuri on narun poikkeama, kun pulssit kohtaavat?
+---
+Poikkeamat lasketaan yhteen etumerkkeineen: $y = 3{,}0\,\text{cm} + (-2{,}0\,\text{cm}) = 1{,}0\,\text{cm}$ ylöspäin. Pulssit eivät kumoa toisiaan kokonaan, koska ne eivät ole yhtä suuret.
+```
+
 Aaltojen yhteisvaikutusta samassa kohdassa sanotaan **interferenssiksi**. Joskus aallot vahvistavat toisiaan, ja summa-aallon poikkeama kasvaa. Silloin interferenssi on **vahvistava**. Joskus aallot heikentävät toisiaan. Silloin interferenssi on **heikentävä**. Luvussa *Aaltojen synty ja eteneminen* aallon poikkeama muuttui paikan ja ajan mukaan. Superpositioperiaate pätee jokaisessa kohdassa ja jokaisella hetkellä erikseen.
 
 ### Kaksi samassa vaiheessa olevaa lähdettä
@@ -150,6 +156,12 @@ Aallot kohtaavat altaan jokaisessa kohdassa. Joissakin kohdissa harja kohtaa ain
   <foreignObject x="480.5" y="7.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\Delta s = \lambda$</div></foreignObject>
   <foreignObject x="155.5" y="7.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{solmuviiva}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Aaltoaltaassa vesi on levossa solmuviivalla. Silti kummankin lähteen aallot etenevät sen kautta koko ajan. Miksi vesi ei liiku?
+---
+Solmuviivalla toisen aallon harja tulee aina yhtä aikaa toisen aallon pohjan kanssa. Silloin poikkeamien summa on koko ajan nolla.
+```
 
 ## Kaava: Vahvistavan ja heikentävän interferenssin ehto
 Pisteessä P interferenssi on vahvistava tai heikentävä. Sen ratkaisee, kuinka paljon pidemmän matkan toinen aalto on kulkenut. **Matkaero** on lähteiden etäisyyksien erotus pisteestä P:
@@ -217,6 +229,12 @@ Summa-aallon amplitudi on silloin amplitudien erotus. Yhtä suuret amplitudit ku
 Jokaista lukua $n = 1, 2, \ldots$ vastaa kuviossa yksi viiva keskinormaalin kummallakin puolella. Keskinormaali on suora, jonka jokainen piste on yhtä kaukana molemmista lähteistä. Vahvistavassa tapauksessa luku $n = 0$ vastaa keskinormaalia itseään. Heikentävässä tapauksessa se vastaa kahta solmuviivaa, jotka ovat lähimpänä keskinormaalia. Keskinormaalilla matkaero on nolla. Siellä interferenssi on vahvistava kaikilla taajuuksilla. Matkaero ei voi olla suurempi kuin lähteiden välinen etäisyys $d$, koska kolmion yksi sivu on lyhyempi kuin kahden muun sivun summa. Siksi viivoja on vain rajallinen määrä. Kun aallonpituus pienenee eli taajuus kasvaa, ehdot täyttyvät pienemmillä matkaeroilla. Silloin viivat tihenevät.
 
 Ratkaisevaa on siis matkaeron ja aallonpituuden suhde $\tfrac{\Delta s}{\lambda}$. Matkaero yksin ei ratkaise. Sama piste voi olla yhdellä taajuudella hiljainen ja toisella taajuudella voimakkaan äänen kohta. Heikentävä interferenssi ei hävitä energiaa. Solmuviivoille siirtyy vähemmän energiaa ja vahvistavan interferenssin kohtiin vastaavasti enemmän.
+
+```pysahdy
+Heikentävässä interferenssissä kaksi yhtä suurta aaltoa kumoaa toisensa solmuviivalla. Onko energia silloin hävinnyt?
+---
+Ei ole. Solmuviivoille siirtyy vähemmän energiaa ja vahvistavan interferenssin kohtiin vastaavasti enemmän.
+```
 
 ## Fourier-analyysi
 Superpositioperiaate toimii myös toiseen suuntaan. Jokaisen jaksollisen signaalin voi esittää siniaaltojen summana. Jaksollinen signaali toistuu samanlaisena yhä uudelleen. Esimerkiksi soittimen ääni on jaksollinen. Siniaaltojen taajuudet ovat signaalin perustaajuuden monikertoja. Niiden amplitudit kertovat, kuinka voimakkaita siniaallot ovat. **Fourier-muunnos** on laskentamenetelmä, joka etsii signaalista nämä taajuudet ja amplitudit. Tulos esitetään **spektrinä**. Vaaka-akselilla on taajuus ja pystyakselilla kunkin taajuuden amplitudi.

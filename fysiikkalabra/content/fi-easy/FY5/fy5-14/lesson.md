@@ -460,6 +460,12 @@ missä $f_n$ on sarjan $n$:s taajuus (Hz) ja $f_1$ on perustaajuus (Hz). Äänen
   <line x1="12" y1="196" x2="588" y2="196" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
 </svg>
 
+```pysahdy
+Huilu ja viulu soittavat saman sävelen, mutta äänet kuulostavat erilaisilta. Mikä äänissä on samaa ja mikä erilaista?
+---
+Äänenkorkeus on sama, koska perustaajuus on sama. Soinnin ero tulee yläsävelistä: ne ovat eri soittimilla eri voimakkaita.
+```
+
 ### FFT-spektri
 Mikrofoni mittaa ilmanpaineen vaihtelua ajan funktiona. Mittausohjelma laskee mittaussarjasta äänen spektrin eli FFT-kuvaajan (*Fast Fourier Transform*, nopea Fourier-muunnos). Spektri näyttää, mitä taajuuksia äänessä on ja kuinka voimakkaina ne ovat. Jokainen äänen siniaaltoinen osa näkyy piikkinä omalla taajuudellaan. Luvussa *Aaltojen yhteisvaikutus: superpositio ja interferenssi* monimutkainen aalto koottiin samalla tavalla siniaaltojen summana. Soittimen spektrissä piikit ovat harmonisen sarjan taajuuksilla. Vierekkäisten piikkien väli on siis perustaajuus. Perustaajuus on yleensä myös alimman piikin taajuus. Korkein piikki ei aina ole perustaajuuden kohdalla.
 
@@ -492,6 +498,12 @@ missä $f_\text{H}$ on huojuntataajuus (Hz) ja $f_1$ ja $f_2$ ovat äänten taaj
   <path d="M124,282 V290 H342 V282" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <foreignObject x="216.5" y="301.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$T_\text{H}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Kaksi kitaran kieltä soi yhtä aikaa taajuuksilla $220\,\text{Hz}$ ja $224\,\text{Hz}$. Kuinka monta voimakasta hetkeä kuullaan sekunnissa?
+---
+Huojuntataajuus on $|220\,\text{Hz} - 224\,\text{Hz}| = 4\,\text{Hz}$. Voimakkaita hetkiä kuullaan siis neljä sekunnissa. Kahden hetken väli on $0{,}25\,\text{s}$.
+```
 
 Huojuntaa käytetään soittimien virittämiseen. Kun kieltä kiristetään kohti viritysäänen taajuutta, huojunta hidastuu. Huojunta lakkaa, kun taajuudet ovat samat. Huojunta erottuu selvästi, kun taajuusero on enintään noin $10\,\text{Hz}$. Suuremmalla erolla korva kuulee karhean äänen tai kaksi eri ääntä.
 
@@ -553,6 +565,12 @@ Ajatellaan, että äänilähde liikkuu. Jokainen aaltorintama lähtee siitä koh
   <foreignObject x="16" y="3.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{lähde liikkuu}$</span></div></foreignObject>
   <foreignObject x="16" y="225.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{kuulija liikkuu}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Miksi liikkuvan äänilähteen edessä aallonpituus on lyhyempi kuin sen takana?
+---
+Lähde liikkuu eteenpäin edellisen rintaman perässä. Edessä rintamat jäävät siksi lähemmäs toisiaan. Takana ne ovat kauempana toisistaan.
+```
 
 ### Dopplerin ilmiö, kun kuulija liikkuu
 Nyt lähde on paikallaan ja kuulija liikkuu. Aallonpituus ei muutu. Kuulija kuitenkin kohtaa aaltorintamia useammin, kun hän kulkee niitä vastaan. Rintamat lähestyvät häntä silloin nopeudella $v + v_\text{H}$. Kun kuulija loittonee, rintamat saavuttavat hänet nopeudella $v - v_\text{H}$. Kuultu taajuus on rintamien kohtaamistiheys. Siksi se on lähestyttäessä suurempi ja loitottaessa pienempi kuin $f_0$.

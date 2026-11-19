@@ -194,6 +194,12 @@ Gravitation is an interaction, so Newton's third law applies to it. The Earth pu
 
 The difference is in the accelerations. By Newton's second law the acceleration of a body is $a = \tfrac{F}{m}$. When a force of about $1.96\,\text{N}$ acts on an apple of $0.20\,\text{kg}$, the acceleration of the apple is about $9.8\,\text{m/s}^2$. The same force gives the Earth, whose mass is $5.97 \cdot 10^{24}\,\text{kg}$, an acceleration of about $3 \cdot 10^{-25}\,\text{m/s}^2$. The Earth really does move towards the apple, but so little that it cannot be measured.
 
+```pysahdy
+The Earth and the Moon attract each other with equal gravitational forces. Which one accelerates more?
+---
+The Moon. The acceleration is $a = \tfrac{F}{m}$, and with the same force the body with the smaller mass, the Moon, accelerates more than the Earth.
+```
+
 ## Formula: Newton's law of gravitation
 The gravitational force between two bodies is greater the greater the masses of the bodies, and smaller the farther apart they are. Newton's law of gravitation says that the force is directly proportional to each mass and inversely proportional to the square of the distance (an inverse-square law):
 
@@ -227,6 +233,12 @@ where $F$ is the magnitude of the gravitational force acting on each body (N), $
 </svg>
 
 The law holds as such for point masses. It also holds for uniform spheres and other spherically symmetric bodies, such as planets and stars, when $r$ is measured between the centres: such a body attracts outside bodies as if its whole mass were at its centre. The distance of a person standing on the Earth's surface from the Earth's centre is therefore the radius of the Earth.
+
+```pysahdy
+A person stands on the Earth's surface. Which distance $r$ goes into the law of gravitation when the force between the Earth and the person is calculated?
+---
+The distance from the Earth's centre, that is the radius of the Earth, about $6378\,\text{km}$. The distance from the surface ($0\,\text{m}$) is wrong, because $r$ is measured between the centres.
+```
 
 The distance is squared in the formula. When the distance doubles, the force falls to a quarter, and when the distance triples, to a ninth. When one mass doubles, the force doubles too. The gravitational force decreases quickly as the distance grows, but it never becomes exactly zero. The graph shows the force when the mass of each body is $10\,\text{t}$.
 
@@ -277,6 +289,12 @@ The distance is squared in the formula. When the distance doubles, the force fal
   <foreignObject x="306" y="77.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$m_1 = m_2 = 10\,\text{t}$</span></div></foreignObject>
   <foreignObject x="325" y="115.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$2r \;\Rightarrow\; \tfrac{1}{4}F$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+According to the graph the force is $417\,\mu\text{N}$ when the distance is $4\,\text{m}$. What is it when the distance is $8\,\text{m}$?
+---
+The distance doubles, so the force falls to a quarter: $417\,\mu\text{N} : 4 \approx 104\,\mu\text{N}$. The graph shows the same value.
+```
 
 ## Weight and the gravitational field {Painovoima ja gravitaatiokenttä}
 The weight $G = mg$ of a body is the gravitational force the Earth exerts on it. When the mass of the Earth is $M$ and its radius $R$, the law of gravitation gives the same force, so $mg = \gamma \tfrac{Mm}{R^2}$. The mass $m$ of the body cancels, and the acceleration due to gravity is left as $g = \gamma \tfrac{M}{R^2}$. This is why all bodies fall with the same acceleration on the Earth's surface when air resistance is ignored: a greater force acts on a heavier body, but it is also harder to accelerate.

@@ -259,6 +259,12 @@ In the chapter *Moment: the turning effect of a force* we learned that a force r
 ### Centre of mass
 The Earth's gravitational pull acts on every part of a body. When the moment of the weight is calculated, however, the whole weight can be thought to act at a single point, the **centre of mass** of the body. The centre of mass of a uniform, symmetrical body, such as a plank of constant thickness, is at its middle. This is why the weight is drawn in a free-body diagram starting from the centre of mass. The common centre of mass of two bodies is between their centres of mass, nearer the heavier body. When a body is supported at one point, it stays in place only if the centre of mass is on the vertical line through the point of support: otherwise the moment of the weight about the point of support rotates the body.
 
+```pysahdy
+A plank of constant thickness is held up at one point. Where must the support be placed for the plank to stay horizontal, and why?
+---
+At the middle of the plank, below the centre of mass. The lever arm of the weight is then zero, so the weight does not rotate the plank.
+```
+
 ### When a body topples
 The **support area** of a body at rest is the region bounded by the points where the body touches the ground: for a box its base, for a chair the area between its legs. Toppling is judged with the vertical line through the centre of mass, the vertical projection of the centre of mass. When the line falls within the support area, the moment of the weight about the edge of the support area turns the body back onto the ground, and the body stays upright. If the line falls outside the support area, the moment of the weight about the lower edge rotates the body over the edge, and the body topples. A low, wide body therefore withstands a greater tilt than a tall, narrow one. Toppling is rotation about an edge, whereas sliding is the motion of the whole body along the surface, and friction prevents sliding. The boxes in the figure are on the same inclined plane, and friction prevents them from sliding, so they can only stay put or topple.
 
@@ -324,6 +330,12 @@ The **support area** of a body at rest is the region bounded by the points where
   <path d="M285.5,84.5 L286.5,71 L296.5,77 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="431.5" y="33.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\text{topples}$</div></foreignObject>
 </svg>
+
+```pysahdy
+A box on an inclined plane topples even though friction prevents it from sliding. What decides whether the box topples?
+---
+The box topples if the vertical line through its centre of mass falls outside the support area. The moment of the weight about the lower edge then rotates the box over the edge.
+```
 
 ## Formula: Equilibrium conditions
 A body is in equilibrium when both the sum of the forces and the sum of the moments of the forces are zero:
@@ -405,6 +417,12 @@ where $N_1$ and $N_2$ are the support forces ($\text{N}$) and $r_1$ and $r_2$ th
   <foreignObject x="338.5" y="39.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$r_2$</div></foreignObject>
   <foreignObject x="435" y="77.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{plank}$</div></foreignObject>
 </svg>
+
+```pysahdy
+A uniform plank rests on two supports. The supports are $0.40\,\text{m}$ and $1.20\,\text{m}$ from the centre of mass. Does each support carry half of the weight?
+---
+No. Since $N_1 r_1 = N_2 r_2$, the nearer support carries three times the force, which is $\tfrac{3}{4}$ of the weight, and the farther support carries $\tfrac{1}{4}$.
+```
 
 ### Common centre of mass
 For two bodies of masses $m_1$ and $m_2$, the common centre of mass is at
