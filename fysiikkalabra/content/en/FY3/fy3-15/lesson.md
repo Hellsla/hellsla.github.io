@@ -214,7 +214,7 @@ where $\eta_1$, $\eta_2$ and $\eta_3$ are the efficiencies of the steps (boiler,
 ```pysahdy
 Three steps have the efficiencies $0.90$, $0.40$ and $0.95$. What is the efficiency of the whole chain?
 ---
-The efficiencies are multiplied: $\eta = 0.90 \cdot 0.40 \cdot 0.95 = 0.342 \approx 0.34$, that is $34\,\%$. It is less than that of the weakest step, $0.40$.
+The efficiencies are multiplied: $\eta \approx 0.34$ ($0.90 \cdot 0.40 \cdot 0.95$), that is $34\,\%$. It is less than that of the weakest step, $0.40$.
 ```
 
 In a combined heat and power plant both electricity and district heating are obtained as useful output, so the overall efficiency is

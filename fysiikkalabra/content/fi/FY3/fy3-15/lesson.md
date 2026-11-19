@@ -214,7 +214,7 @@ missä $\eta_1$, $\eta_2$ ja $\eta_3$ ovat vaiheiden hyötysuhteet (kattila, hö
 ```pysahdy
 Kolmen vaiheen hyötysuhteet ovat $0{,}90$, $0{,}40$ ja $0{,}95$. Mikä on koko ketjun hyötysuhde?
 ---
-Hyötysuhteet kerrotaan: $\eta = 0{,}90 \cdot 0{,}40 \cdot 0{,}95 = 0{,}342 \approx 0{,}34$ eli $34\,\%$. Se on pienempi kuin heikoimman vaiheen hyötysuhde $0{,}40$.
+Hyötysuhteet kerrotaan: $\eta \approx 0{,}34$ ($0{,}90 \cdot 0{,}40 \cdot 0{,}95$) eli $34\,\%$. Se on pienempi kuin heikoimman vaiheen hyötysuhde $0{,}40$.
 ```
 
 Yhteistuotantolaitoksessa hyödyksi saadaan sekä sähkö että kaukolämpö, joten kokonaishyötysuhde on
