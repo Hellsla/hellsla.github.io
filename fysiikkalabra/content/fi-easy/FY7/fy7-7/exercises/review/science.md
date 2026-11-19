@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f6e65494f2f5a858
+CONTENT-HASH: fe6642a6b2267039
 
 ## Blocking
 
 ## Polish
-- solutions.md:132 (Kaava row of the deviation, not changed in this round) — the factor $\cdot 100\,\%$ still starts its own row after the fraction; it reads correctly, but one row would match the substitution row below it.
+- solutions.md (deviation row, part b of the frequency-doubling task) — the factor $\cdot 100\,\%$ still begins its own aligned row in the Kaava step. It reads correctly, but one row would match the Sijoitus. This is unchanged from the previous round.
 
 ## Checked
-- Delta round 2: compared with the version passed in round 1 (commit 1ec494e0df) with the row markup (aligned, row breaks, alignment marks, formula delimiters) stripped: exercises.json and solutions.md are character-identical apart from that markup; no number, sign, unit or word changed. answers.py unchanged.
-- L2-07 task text: the quoted student calculation now reads $I = P : U$ $= 60\,\text{W} : 163\,\text{V}$ $= 0{,}37\,\text{A}$ as three adjacent formulas inside the quotation; same chain, same planted error, $60 : 163 = 0{,}368$.
-- solutions.md:113 (share of nominal power): rows are now "$= \dfrac{2{,}254 \cdot 10^{9}\,\text{W}}{8358 \cdot 10^{6}\,\text{W}} \cdot 100\,\%$" and "$= 26{,}97\,\%$"; the factor $100\,\%$ stays with its fraction. Recomputed: $19{,}8 \cdot 10^{12}\,\text{Wh} : 8784\,\text{h} = 2{,}254 \cdot 10^{9}\,\text{W}$, share $26{,}97\,\%$.
-- solutions.md:134 (deviation): rows "$= \dfrac{|8{,}2\,\text{V} - 8{,}0\,\text{V}|}{8{,}2\,\text{V}} \cdot 100\,\%$" and "$= 2{,}44\,\%$"; recomputed $2{,}44\,\%$. Each row starts with its relation and the chain reads correctly.
-- Hash identical at start and end.
+- Hash identical at start and end (fe6642a6b2267039), the same as the packet's.
+- On disk, each rewritten Kaava step is an aligned block, one relation per row. Each one starts from the basic law: U = U₀ : √2, f = 1 : T, e₀ = NBA·2πf, P = UI, Ohm's law I = U : R. Each one simplifies symbolically to the form its unchanged Sijoitus substitutes into.
+- Ratio tasks (peak value at f₂, wind-turbine U₂): writing e₀ (or U) for both frequencies and dividing gives f₂ : f₁. The condition that N, B and A stay the same is stated in the Periaate.
+- Power task: P = UI with I = U : R gives P = U² : R = U₀² : (2R), which is correct for a resistive load.
+- Recomputed in one script: 162,6 V; 0,1273 T; 9,003 Hz; 8,2 V and 2,44 %; 0,2609 A; 20 W; 414 V; B = 0,3404 T and 6,67 V; 2,0 mV and 0,50 mV. All agree with the unchanged substitutions and answers.
+- The split paragraphs (graph options B–D, the PhET task's Periaate and parts c and d, the part c uncertainty argument) change no word, number or sign. Their physics is as passed before.

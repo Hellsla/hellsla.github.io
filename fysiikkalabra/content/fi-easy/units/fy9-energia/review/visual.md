@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 53922420ae14da95
-Round 2: delta against the version round 1 reviewed (whitespace-only fixes in s7).
+CONTENT-HASH: 79ff0bd6c42ae048
 
 ## Blocking
-- (none)
+(none)
 
 ## Polish
-- B. sovella/solutions.md, s5-b **Mallivastaus** ("Ryhmän johtopäätös ei ole perusteltu. … - *Teho arvokilvestä.* …"): the list still starts on the line right after the lead sentence (untouched, earlier passed text; not changed in this round); an empty line before the first "- " row makes it a real list, as now in s7.
-- C. The s7 source line shows "Tarkistettu 16.11.2026" inside the link; the other units show only the source name. Harmless.
+(none)
 
 ## Checked
-- Hash at start and end: 53922420ae14da95. Captures re-made (163). `git diff -w` against c502cb9e26: two blank lines in sovella/solutions.md and the s7 d sentence round 1 already read; nothing else.
-- Opened at full size: stage-exercises-390-56, -57, -58, -59; stage-exercises-1280-40.
-- s7 c) Mallivastaus: lead paragraph, then a real three-item bulleted list (Lämpöoppi, Sähköoppi, Mekaniikka) with indented items and a gap between them, then the closing paragraph "Kaikki tämä energia…"; no raw "- " marker left. Each item fits well within a phone screen.
-- s7 e) Mallivastaus: lead paragraph, three bullets (Olosuhteet vaihtelevat, Hajontaa ei tunneta, Parempi testi), closing paragraph "Testi antaa silti…".
-- Nothing clipped at 390 px (inline fractions, $-32\,{}^\circ\text{C}$:ssa, $75\,\text{kWh}$:n intact); Yleisiä virheitä, part d) and the card frames around the answers are where they were.
+- Diff origin/main...HEAD for content/fi-easy/units/fy9-energia (excluding review/): only sovella/solutions.md changed, 30 insertions and 9 deletions; each change is a paragraph break inside a Mallivastaus or inquiry-solution field. Words, maths, units and figures unchanged. Breaks fall at sensible thought boundaries (a conclusion or a new line of argument); no break sits inside a display equation. The break after "Mallivastaus:" before a bullet list is a normal list start.
+- Opened captures: fy9-energia-stage-sovella-1280-5.png and fy9-energia-stage-sovella-390-6.png (Finnish shots dir, current layout of the Sovella stage: cards, hints, closed Näytä ratkaisu button, no clipping or overflow). These show the solutions closed, so the new breaks themselves were judged from the diff, not seen rendered.
+- Read the earlier Sovella visual report as evidence; it passed the same change.
+- Content hash rerun at the end: 79ff0bd6c42ae048 (unchanged).
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

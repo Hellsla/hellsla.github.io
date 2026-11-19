@@ -141,12 +141,16 @@ $$, fotonin energia on $\tfrac{hc}{\lambda} = \tfrac{1{,}9865 \cdot 10^{-25}\,\t
 ## fy8-5-L1-06
 **Kysytty:** mikä on aaltomallin orbitaalin tärkein ero Bohrin mallin rataan.
 **Periaate:** Aaltomallissa elektronin tilaa kuvaa seisova aalto, joka levittäytyy ytimen ympärille. Aalto kertoo, kuinka todennäköisesti elektroni havaitaan kussakin kohdassa. Orbitaali piirretään alueena, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä, yleensä $90\,\%$.
-**Mallivastaus:** Orbitaali ei ole rata vaan alue, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä. Elektronille ei voi piirtää reittiä. Bohrin mallissa elektronilla on tarkka rata. Aaltomallissa mittaus antaa aina yhden pisteen. Orbitaali kuvaa vasta monen mittauksen jakaumaa. Väite, että orbitaali olisi epätarkka rata, on väärä, koska rataa ei ole lainkaan. Pallopinta ei kelpaa, koska mittaustulokset hajaantuvat eri etäisyyksille. Pilvi ei myöskään tarkoita, että elektroni olisi levinnyt osiin. Jokaisessa mittauksessa havaitaan kokonainen elektroni yhdessä kohdassa.
+**Mallivastaus:** Orbitaali ei ole rata vaan alue, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä. Elektronille ei voi piirtää reittiä. Bohrin mallissa elektronilla on tarkka rata. Aaltomallissa mittaus antaa aina yhden pisteen. Orbitaali kuvaa vasta monen mittauksen jakaumaa. Väite, että orbitaali olisi epätarkka rata, on väärä, koska rataa ei ole lainkaan.
+
+Pallopinta ei kelpaa, koska mittaustulokset hajaantuvat eri etäisyyksille. Pilvi ei myöskään tarkoita, että elektroni olisi levinnyt osiin. Jokaisessa mittauksessa havaitaan kokonainen elektroni yhdessä kohdassa.
 
 ## fy8-5-L1-07
 **Kysytty:** mitä $5000$ mittauksen pistepilvi kuvaa.
 **Periaate:** Todennäköisyystulkinnan mukaan aalto ei kerro hiukkasen paikkaa. Aalto kertoo, kuinka todennäköisesti hiukkanen havaitaan kussakin kohdassa. Yksi mittaus antaa yhden satunnaisen tuloksen. Jakauma näkyy vasta monesta mittauksesta.
-**Mallivastaus:** Pilvi kuvaa mittaustulosten jakaumaa. Pisteitä on eniten siellä, missä elektroni havaitaan todennäköisimmin. Siksi pilvi on tiheimmillään ytimen lähellä. Jokainen piste on oma mittaustulos, joka ei riipu muista. Pisteet eivät siis ole elektronin reitti. Sumenemisselitys ei kelpaa, koska jokainen mittaus löytää elektronin tarkasti yhdestä kohdasta. Pilvi syntyy vasta, kun tulokset kertyvät. Elektroni ei myöskään hajoa osiin. Jokaisessa mittauksessa havaitaan kokonainen elektroni.
+**Mallivastaus:** Pilvi kuvaa mittaustulosten jakaumaa. Pisteitä on eniten siellä, missä elektroni havaitaan todennäköisimmin. Siksi pilvi on tiheimmillään ytimen lähellä. Jokainen piste on oma mittaustulos, joka ei riipu muista. Pisteet eivät siis ole elektronin reitti. Sumenemisselitys ei kelpaa, koska jokainen mittaus löytää elektronin tarkasti yhdestä kohdasta. Pilvi syntyy vasta, kun tulokset kertyvät.
+
+Elektroni ei myöskään hajoa osiin. Jokaisessa mittauksessa havaitaan kokonainen elektroni.
 
 ## fy8-5-L1-08
 **Annettu:** alikuori $4\text{f}$. F-alikuorella on seitsemän orbitaalia. Orbitaalilla on enintään kaksi elektronia.
@@ -219,7 +223,10 @@ a) Aallonpituudet ovat $1{,}60\,\text{m}$, $0{,}80\,\text{m}$ ja $0{,}533\,\text
 
 b) Taajuudet ovat $40\,\text{Hz}$, $80\,\text{Hz}$ ja $120\,\text{Hz}$.
 
-c) Kun solmuja on enemmän, kieleen mahtuu enemmän kupuja. Silloin aallonpituus lyhenee ja taajuus kasvaa. Aallonpituudet $1{,}60\,\text{m}$, $0{,}80\,\text{m}$ ja $0{,}533\,\text{m}$ antavat taajuudet $40\,\text{Hz}$, $80\,\text{Hz}$ ja $120\,\text{Hz}$. Atomin elektronin tilaa kuvaa myös seisova aalto. Siksi vain tietyt aallon muodot ovat mahdollisia ja energia on kvantittunut (energia voi saada vain tiettyjä arvoja). Vetyatomissa mitä enemmän solmuja, sitä suurempi energia. Kielellä mitä enemmän solmuja, sitä suurempi taajuus.
+c) Kun solmuja on enemmän, kieleen mahtuu enemmän kupuja. Silloin aallonpituus lyhenee ja taajuus kasvaa. Aallonpituudet $1{,}60\,\text{m}$, $0{,}80\,\text{m}$ ja $0{,}533\,\text{m}$ antavat taajuudet $40\,\text{Hz}$, $80\,\text{Hz}$ ja $120\,\text{Hz}$. Atomin elektronin tilaa kuvaa myös seisova aalto. Siksi vain tietyt aallon muodot ovat mahdollisia ja energia on kvantittunut (energia voi saada vain tiettyjä arvoja).
+
+Vetyatomissa mitä enemmän solmuja, sitä suurempi energia. Kielellä mitä enemmän solmuja, sitä suurempi taajuus.
+
 **Järkevyys:** Tilassa $m = 2$ aallonpituus $0{,}80\,\text{m}$ on yhtä suuri kuin kielen pituus. Sen taajuus $\dfrac{64\,\text{m/s}}{0{,}80\,\text{m}} = 80\,\text{Hz}$ on lukujen $40\,\text{Hz}$ ja $120\,\text{Hz}$ välissä. Taajuudet $40\,\text{Hz}$, $80\,\text{Hz}$ ja $120\,\text{Hz}$ ovat peräkkäisiä perustaajuuden $40\,\text{Hz}$ monikertoja, kuten kupujen lukumäärän mukaan pitääkin.
 
 ## fy8-5-L2-07
@@ -231,8 +238,12 @@ c) Kun solmuja on enemmän, kieleen mahtuu enemmän kupuja. Silloin aallonpituus
 **Annettu:** aallonpituudet $\lambda$ ovat $657{,}1\,\text{nm}$, $485{,}4\,\text{nm}$, $433{,}5\,\text{nm}$ ja $410{,}6\,\text{nm}$. Loppukuori on $n = 2$. Energiatasot ovat $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$. Lisäksi $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$ ja $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
 **Kysytty:** a) fotonien energiat $E_\text{f}$, b) alkukuorten numerot $n$, c) kuvaajan suoran kulmakerroin, d) kuorelta $n = 7$ lähtevän viivan aallonpituus
 **Periaate:** Atomin energia pienenee tilojen energioiden erotuksen verran. Sama energia lähtee fotonina: $E_\text{f} = \tfrac{hc}{\lambda} = E_n - E_2$. Kun energiatasokaava sijoitetaan tähän, saadaan $E_\text{f} = 13{,}6\,\text{eV} \cdot \left(\tfrac{1}{4} - \tfrac{1}{n^2}\right)$. Jos pisteet piirretään tämän yhtälön mukaan, ne asettuvat suoralle. Suoran kulmakerroin on energiatasokaavan vakio.
-**Kuvaajan lukeminen:** Vaaka-akselin arvot ovat $\tfrac{1}{4} - \tfrac{1}{n^2} = 0{,}139$, $0{,}188$, $0{,}210$ ja $0{,}222$ kuorille $n = 3, 4, 5, 6$. Pystyakselin arvot ovat kohdan a) energiat. Pisteet asettuvat likimain suoralle, joka kulkee origon kautta. Mittauspisteet vaihtelevat hieman suoran ympärillä. Tarkistuksena lasketaan kulmakerroin ensimmäisen ja viimeisen pisteen $(0{,}1389;\ 1{,}887\,\text{eV})$ ja $(0{,}2222;\ 3{,}020\,\text{eV})$ kautta: $\dfrac{3{,}020\,\text{eV} - 1{,}887\,\text{eV}}{0{,}2222 - 0{,}1389} = 13{,}6\,\text{eV}$. Kaikkiin pisteisiin sovitettu suora antaa kulmakertoimen $13{,}62\,\text{eV}$ ja vakiotermin $-0{,}003\,\text{eV}$. Vastauksena käytetään tätä kulmakerrointa.
+**Kuvaajan lukeminen:** Vaaka-akselin arvot ovat $\tfrac{1}{4} - \tfrac{1}{n^2} = 0{,}139$, $0{,}188$, $0{,}210$ ja $0{,}222$ kuorille $n = 3, 4, 5, 6$. Pystyakselin arvot ovat kohdan a) energiat. Pisteet asettuvat likimain suoralle, joka kulkee origon kautta. Mittauspisteet vaihtelevat hieman suoran ympärillä. Tarkistuksena lasketaan kulmakerroin ensimmäisen ja viimeisen pisteen $(0{,}1389;\ 1{,}887\,\text{eV})$ ja $(0{,}2222;\ 3{,}020\,\text{eV})$ kautta: $\dfrac{3{,}020\,\text{eV} - 1{,}887\,\text{eV}}{0{,}2222 - 0{,}1389} = 13{,}6\,\text{eV}$.
+
+Kaikkiin pisteisiin sovitettu suora antaa kulmakertoimen $13{,}62\,\text{eV}$ ja vakiotermin $-0{,}003\,\text{eV}$. Vastauksena käytetään tätä kulmakerrointa.
+
 **Kaava:** $E_\text{f} = \dfrac{hc}{\lambda}$, $\ \dfrac{1}{n^2} = \dfrac{1}{4} - \dfrac{E_\text{f}}{13{,}6\,\text{eV}}$ ja kulmakerroin $k = \dfrac{\Delta E_\text{f}}{\Delta\left(\tfrac{1}{4} - \tfrac{1}{n^2}\right)}$
+
 **Muunnokset:** Aallonpituus $657{,}1\,\text{nm} = 657{,}1 \cdot 10^{-9}\,\text{m}$, ja samoin muut. Tulo $$
 \begin{aligned}
 hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
@@ -240,8 +251,21 @@ hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 &= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
 $$. Joulet muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}$.
-**Sijoitus:** a) Ensimmäiselle viivalle $E_\text{f} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{657{,}1 \cdot 10^{-9}\,\text{m}} = 3{,}0231 \cdot 10^{-19}\,\text{J} = 1{,}887\,\text{eV}$. Muille viivoille saadaan samoin $2{,}555\,\text{eV}$, $2{,}860\,\text{eV}$ ja $3{,}020\,\text{eV}$. b) Ensimmäiselle viivalle $\dfrac{1}{n^2} = \dfrac{1}{4} - \dfrac{1{,}887\,\text{eV}}{13{,}6\,\text{eV}} = 0{,}2500 - 0{,}1388 = 0{,}1112$, joten $n = \sqrt{\dfrac{1}{0{,}1112}} = 3{,}00$. Muille viivoille saadaan samoin $n = 4{,}01$, $5{,}02$ ja $5{,}98$. d) Kuorelta $n = 7$ lähtevän fotonin energia on $13{,}6\,\text{eV} \cdot \left(\tfrac{1}{4} - \tfrac{1}{49}\right) = 3{,}122\,\text{eV} = 5{,}002 \cdot 10^{-19}\,\text{J}$. Aallonpituus on $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{5{,}002 \cdot 10^{-19}\,\text{J}} = 3{,}971 \cdot 10^{-7}\,\text{m} = 397{,}1\,\text{nm}$.
-**Vastaus:** a) $1{,}887\,\text{eV}$, $2{,}555\,\text{eV}$, $2{,}860\,\text{eV}$ ja $3{,}020\,\text{eV}$. b) Alkukuoret ovat $n = 3, 4, 5$ ja $6$. Luku $n$ on kuoren numero, joten sen on oltava kokonaisluku. Lasketut arvot $3{,}00$, $4{,}01$, $5{,}02$ ja $5{,}98$ poikkeavat kokonaisluvuista vain mittausepävarmuuden verran. c) Kulmakerroin on $13{,}6\,\text{eV}$. Se on energiatasokaavan vakio eli vetyatomin perustilan energian itseisarvo. d) Aallonpituus on noin $397\,\text{nm}$.
+
+**Sijoitus:** a) Ensimmäiselle viivalle $E_\text{f} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{657{,}1 \cdot 10^{-9}\,\text{m}} = 3{,}0231 \cdot 10^{-19}\,\text{J} = 1{,}887\,\text{eV}$. Muille viivoille saadaan samoin $2{,}555\,\text{eV}$, $2{,}860\,\text{eV}$ ja $3{,}020\,\text{eV}$.
+
+b) Ensimmäiselle viivalle $\dfrac{1}{n^2} = \dfrac{1}{4} - \dfrac{1{,}887\,\text{eV}}{13{,}6\,\text{eV}} = 0{,}2500 - 0{,}1388 = 0{,}1112$, joten $n = \sqrt{\dfrac{1}{0{,}1112}} = 3{,}00$. Muille viivoille saadaan samoin $n = 4{,}01$, $5{,}02$ ja $5{,}98$.
+
+d) Kuorelta $n = 7$ lähtevän fotonin energia on $13{,}6\,\text{eV} \cdot \left(\tfrac{1}{4} - \tfrac{1}{49}\right) = 3{,}122\,\text{eV} = 5{,}002 \cdot 10^{-19}\,\text{J}$. Aallonpituus on $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{5{,}002 \cdot 10^{-19}\,\text{J}} = 3{,}971 \cdot 10^{-7}\,\text{m} = 397{,}1\,\text{nm}$.
+
+**Vastaus:** a) $1{,}887\,\text{eV}$, $2{,}555\,\text{eV}$, $2{,}860\,\text{eV}$ ja $3{,}020\,\text{eV}$.
+
+b) Alkukuoret ovat $n = 3, 4, 5$ ja $6$. Luku $n$ on kuoren numero, joten sen on oltava kokonaisluku. Lasketut arvot $3{,}00$, $4{,}01$, $5{,}02$ ja $5{,}98$ poikkeavat kokonaisluvuista vain mittausepävarmuuden verran.
+
+c) Kulmakerroin on $13{,}6\,\text{eV}$. Se on energiatasokaavan vakio eli vetyatomin perustilan energian itseisarvo.
+
+d) Aallonpituus on noin $397\,\text{nm}$.
+
 **Järkevyys:** Kulmakerroin $13{,}6\,\text{eV}$ on sama kuin energiatasokaavan vakio. Suora kulkee origon kautta, kuten yhtälö $E_\text{f} = 13{,}6\,\text{eV} \cdot \left(\tfrac{1}{4} - \tfrac{1}{n^2}\right)$ vaatii. Ennustettu aallonpituus $397\,\text{nm}$ on lyhyempi kuin neljännen viivan $410{,}6\,\text{nm}$. Viivat tihenevät kohti rajaa, jossa $n \to \infty$. Silloin $E_\text{f} = \tfrac{13{,}6\,\text{eV}}{4} = 3{,}40\,\text{eV}$ ja $\lambda = 365\,\text{nm}$. Viivat ovat erillisiä, koska elektronin sallitut tilat ovat seisovia aaltoja ja energia on kvantittunut.
 
 ## fy8-5-L3-05
@@ -257,7 +281,16 @@ hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 &= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
 $$. Kohdassa c) $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}3642 \cdot 10^{-19}\,\text{J}} = 5{,}905 \cdot 10^{-7}\,\text{m} = 590{,}5\,\text{nm}$. Kohdassa d) $\lambda_\text{max} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{8{,}2343 \cdot 10^{-19}\,\text{J}} = 2{,}412 \cdot 10^{-7}\,\text{m} = 241{,}2\,\text{nm}$.
-**Vastaus:** a) Atomissa on $11$ elektronia. Konfiguraatio on $1\text{s}^2\,2\text{s}^2\,2\text{p}^6\,3\text{s}^1$. Kuoret $n = 1$ ja $n = 2$ täyttyvät ($2 + 8 = 10$ elektronia). Yhdestoista elektroni menee seuraavaksi alimpaan orbitaaliin $3\text{s}$. Uloimmalla kuorella on siis vain yksi elektroni. b) Valenssielektroni on litiumissa kuorella $n = 2$, natriumissa kuorella $n = 3$ ja kaliumissa kuorella $n = 4$. Mitä ylempi kuori on, sitä kauempana ytimestä elektroni on. Elektronin ja ytimen välissä on yhä useampi täysi kuori, ja sen elektronit hylkivät valenssielektronia. Ytimen varaus kasvaa lukujen $3$, $11$ ja $19$ mukaan. Ionisaatioenergia silti pienenee arvoista $5{,}39\,\text{eV}$ ja $5{,}14\,\text{eV}$ arvoon $4{,}34\,\text{eV}$. Kuoren kasvun vaikutus on siis suurempi kuin ytimen varauksen. Vetyatomin kaava $\tfrac{13{,}6\,\text{eV}}{n^2}$ antaisi samalla tavalla pienenevät arvot $3{,}40\,\text{eV}$, $1{,}51\,\text{eV}$ ja $0{,}85\,\text{eV}$. Alkalimetalleilla arvot ovat suurempia, koska sisäkuorten elektronit eivät peitä ytimen varausta kokonaan. Valenssielektroniin vaikuttaa siis suurempi varaus kuin vedyssä. c) Fotonin aallonpituus on $590\,\text{nm}$. Vastauksessa on kolme merkitsevää numeroa, kuten luvussa $2{,}10\,\text{eV}$. d) Ionisaatioon kelpaa fotoni, jonka aallonpituus on enintään $241\,\text{nm}$. Fotonin energia $2{,}10\,\text{eV}$ on pienempi kuin $E_\text{i} = 5{,}14\,\text{eV}$. Kohdan c) fotoni ei siis riitä irrottamaan elektronia. Se vain siirtää elektronin tilalle $3\text{p}$.
+**Vastaus:** a) Atomissa on $11$ elektronia. Konfiguraatio on $1\text{s}^2\,2\text{s}^2\,2\text{p}^6\,3\text{s}^1$. Kuoret $n = 1$ ja $n = 2$ täyttyvät ($2 + 8 = 10$ elektronia). Yhdestoista elektroni menee seuraavaksi alimpaan orbitaaliin $3\text{s}$. Uloimmalla kuorella on siis vain yksi elektroni.
+
+b) Valenssielektroni on litiumissa kuorella $n = 2$, natriumissa kuorella $n = 3$ ja kaliumissa kuorella $n = 4$. Mitä ylempi kuori on, sitä kauempana ytimestä elektroni on. Elektronin ja ytimen välissä on yhä useampi täysi kuori, ja sen elektronit hylkivät valenssielektronia. Ytimen varaus kasvaa lukujen $3$, $11$ ja $19$ mukaan.
+
+Ionisaatioenergia silti pienenee arvoista $5{,}39\,\text{eV}$ ja $5{,}14\,\text{eV}$ arvoon $4{,}34\,\text{eV}$. Kuoren kasvun vaikutus on siis suurempi kuin ytimen varauksen. Vetyatomin kaava $\tfrac{13{,}6\,\text{eV}}{n^2}$ antaisi samalla tavalla pienenevät arvot $3{,}40\,\text{eV}$, $1{,}51\,\text{eV}$ ja $0{,}85\,\text{eV}$. Alkalimetalleilla arvot ovat suurempia, koska sisäkuorten elektronit eivät peitä ytimen varausta kokonaan. Valenssielektroniin vaikuttaa siis suurempi varaus kuin vedyssä.
+
+c) Fotonin aallonpituus on $590\,\text{nm}$. Vastauksessa on kolme merkitsevää numeroa, kuten luvussa $2{,}10\,\text{eV}$.
+
+d) Ionisaatioon kelpaa fotoni, jonka aallonpituus on enintään $241\,\text{nm}$. Fotonin energia $2{,}10\,\text{eV}$ on pienempi kuin $E_\text{i} = 5{,}14\,\text{eV}$. Kohdan c) fotoni ei siis riitä irrottamaan elektronia. Se vain siirtää elektronin tilalle $3\text{p}$.
+
 **Järkevyys:** Aallonpituus $590\,\text{nm}$ on näkyvän valon alueella, keltaisen valon kohdalla. Natriumlamppu hohtaa keltaisena. Energiat sopivat yhteen: ionisoiva fotoni tarvitsee energian $5{,}14\,\text{eV}$. Se on $\tfrac{5{,}14}{2{,}10} = 2{,}45$ kertaa viritysfotonin energia. Aallonpituus on vastaavasti $\tfrac{590{,}5\,\text{nm}}{241{,}2\,\text{nm}} = 2{,}45$ kertaa niin pitkä. Ionisaatioraja $241\,\text{nm}$ on ultraviolettia, kuten pitääkin.
 
 ## fy8-5-L2-08

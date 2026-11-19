@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: a6741e28bf576004
+CONTENT-HASH: 19c370b7c9fc0c25
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] solutions.md — a few new paragraphs are one sentence that only completes the thought before it (a detached last sentence); they read fine, so joining them is optional.
+- [Minor] solutions.md, police-car task Formula: after the display `t = ...` the line "and the position is $x = x_{0\text{T}} + v_\text{T}\,t$." continues the sentence as a lower-case fragment; reads as a detached tail. Optional: make it its own sentence.
+- [Minor] solutions.md, scale-error task Formula: the last clause "Solved for time, $t = ...$" has no end punctuation; the paragraph is long (about 75 words) but one idea.
 
 ## Checked
-- Delta, md-paragraphs only (solutions.md). Opened every per-solution capture of this part at 390 px: sol-fy4-1-L1-06-390.png, sol-fy4-1-L1-07-390.png, sol-fy4-1-L1-08-390.png, sol-fy4-1-L1-09-390.png, sol-fy4-1-L2-06-390.png, sol-fy4-1-L2-07-390.png, sol-fy4-1-L2-09-390.png, sol-fy4-1-L3-03-390.png, sol-fy4-1-L3-04-390.png, sol-fy4-1-L3-05-390.png.
-- Each new break separates one thing from another (principle vs remark, check vs next point, answer-option discussion vs reasoning). No cut falls mid-thought, spacing between paragraphs is even and matches the other paragraphs, nothing clipped, formulas intact. Hash unchanged at the end.
+- Delta (solutions.md, three Formula steps), judged from the text: the basic equations come first, then the derived formula, symbolic steps in order (cart meeting: x_A = x_B gives (v_A - v_B)t = x_0B - x_0A; scale error: x = k x_prog gives x = x_0 + vt, t = (x - x_0)/v; police: gives x_0T + v_P t_0 = (v_P - v_T)t). Steps are correct and the notation matches the Substitution rows. Substitution rows untouched.
+- No per-solution captures exist for this part (en: text and packet). Opened content/en/FY4/fy4-1/review/shots/fy4-1-open-exercises-L2-1280-6.png: the solution layout (FORMULA/SUBSTITUTION/ANSWER blocks, display formulas) survives, nothing clipped. Hash unchanged at the end.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

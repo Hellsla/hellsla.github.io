@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 93b9dfdf9bb9d0be
+CONTENT-HASH: b2cf1eb8c1dfe229
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+
 
 ## Checked
-- batch delta review: opened example-390 captures (fi, fy4-9); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.
+batch delta review: Pysähdy ja mieti -ruudut (suljettu ja vastaus auki) 360 px ja 1280 px renderöitynä esikatselusta; teksti, KaTeX ja asettelu kunnossa, ei ylivuotoa.

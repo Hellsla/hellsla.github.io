@@ -19,10 +19,11 @@ Added beside the pages: CNAME (the custom domain), .nojekyll (serve the files as
 sitemap.xml (robots.txt refuses AI crawlers), LICENSE (all rights reserved). Then two gates, and the script exits 1 (nothing is pushed) if either fails:
 - privacy: no published text file may name the teacher's other sites (hellsla.github.io, github.com/Hellsla);
   Ruukkilabra must never lead to them (teacher 2026-11-04);
+- service worker: sw.js and offline.js are at the root (work queue 17a PR 1);
 - links: every relative href/src in the pages and every url() in the stylesheets resolves to a file inside the
   published root (font fallbacks .woff/.ttf of KaTeX, which browsers never fetch beside .woff2, are only counted).
 """
-import argparse, os, pathlib, re, shutil, sys, urllib.parse
+import argparse, json, os, pathlib, re, shutil, sys, urllib.parse
 
 DOMAIN = "ruukkilab.fi"
 BASE = f"https://{DOMAIN}/"
@@ -144,6 +145,32 @@ def check_canonical(out):
     return bad
 
 
+def check_worker(out):
+    """The service worker (work queue 17a PR 1) must be published at the root, where its scope covers every language, with
+    the script that registers it; a worker that is not at the root would cover only a folder."""
+    bad = []
+    sw = out / "sw.js"
+    if not sw.is_file() or not sw.read_text(errors="ignore").strip():
+        bad.append("sw.js is missing or empty at the root")
+    elif "__FL_BUILD__" in sw.read_text(errors="ignore"):
+        bad.append("sw.js still has its build placeholder")
+    if not (out / "offline.js").is_file():
+        bad.append("offline.js is missing at the root")
+    langs = [out] + [d for d in out.iterdir() if d.is_dir() and (d / "index.html").is_file() and d.name not in ("vendor", "sims", "pics", "brand", "laskuri", "tyokalut")]
+    for d in langs:                      # the manifest of each language (17a PR 2): start page and icons exist
+        m = d / "manifest.webmanifest"
+        try:
+            j = json.loads(m.read_text())
+            if not (d / j["start_url"]).is_file(): bad.append(f"{m.relative_to(out)}: start_url {j['start_url']} is not a page")
+            bad += [f"{m.relative_to(out)}: icon {i['src']} is missing" for i in j["icons"] if not (d / i["src"]).resolve().is_file()]
+        except (OSError, ValueError, KeyError):
+            bad.append(f"{m.relative_to(out)}: manifest.webmanifest is missing or unreadable")
+    for p in out.rglob("sw.js"):
+        if p != sw and ".git" not in p.parts:
+            bad.append(f"{p.relative_to(out)}: a second worker file (only the root sw.js is published)")
+    return bad
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("out", type=pathlib.Path)
@@ -162,16 +189,18 @@ def main():
     n = write_extras(out)
     privacy, canon = check_privacy(out), check_canonical(out)
     missing, fallback = check_links(out)
+    worker = check_worker(out)
     print(f"deploy_site: {n} pages, models/ {'from ' + str(a.models) if a.models else 'kept as it was'}"
           f"; {recordings} recordings{' from ' + str(a.audio) if a.audio else ' (none: no --audio)'}"
           f"; {fallback} KaTeX font fallbacks (.woff/.ttf beside .woff2) not published, as before")
     for title, items in (("names another site of the teacher (privacy rule 2026-11-04)", privacy),
-                         ("canonical address is not on " + DOMAIN, canon), ("broken relative link", missing)):
+                         ("canonical address is not on " + DOMAIN, canon), ("broken relative link", missing),
+                         ("service worker (sw.js at the root, offline.js)", worker)):
         for i in items[:50]:
             print(f"FAIL {title}: {i}")
         if len(items) > 50:
             print(f"FAIL ... and {len(items) - 50} more")
-    if privacy or canon or missing:
+    if privacy or canon or missing or worker:
         sys.exit(1)
     print("deploy_site: PASS")
 

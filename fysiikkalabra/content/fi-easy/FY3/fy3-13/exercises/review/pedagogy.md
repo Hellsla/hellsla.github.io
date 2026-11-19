@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a3814c3da1cb87c6
+CONTENT-HASH: ed43d45a98e99e92
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-1. L2-09 solution: state the slope (0.275 kPa/°C) and result (about -273 °C) in the reading step so the 5 % tolerance is checkable.
+(none)
 
 ## Checked
-- Round 2 delta judged in context (round-1 findings addressed).
-- Only solution wording changed: L2-09 now says the axis does not reach zero pressure, so the zero point is calculated from the slope, tolerance 5 %; L2-10 'lähes suoralla' matches the data (not exactly collinear). The figure shows five points, description lists them and does not give the answer. Reading level of the fi-easy wording is fine.
-- Axis ends at -150 °C, so extrapolation by calculation is really needed; consistent with the lab goal (absolute zero by extrapolation).
+- Delta judged in context: the prefix "Esimerkkiaineisto:" removed from task texts; every sentence still begins correctly with a capital letter and the situation stays first, the question last.
+- L2-08 multiple choice and the L3 data tasks keep their situation and question; no loss of meaning.
+- No numbers, symbols, answers or levels changed; the data and figures the tasks need are unchanged.
+- Solutions.md changed only in presentation; steps and model answers are unchanged.
+- Finnish: grammar and reading level unchanged and fine for fi-easy.

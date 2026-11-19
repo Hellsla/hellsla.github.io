@@ -270,6 +270,12 @@
 ### Liikemäärä: massa ja nopeus yhdessä
 Luvussa *Newtonin toinen laki* opit, että voima muuttaa kappaleen nopeutta ja että raskaan kappaleen nopeuden muuttaminen vaatii suuremman voiman kuin kevyen. Liikkuvan kappaleen pysäyttämiseen tai kiihdyttämiseen vaikuttavat siis sekä massa että nopeus. Niiden tuloa sanotaan **liikemääräksi**. Kevyellä ja nopealla jalkapallolla voi olla yhtä suuri liikemäärä kuin raskaalla ja hitaalla keilapallolla. Liikemäärä on vektori, jolla on sama suunta kuin nopeudella. Suoraviivaisessa liikkeessä valitaan positiivinen suunta, ja vastakkaiseen suuntaan liikkuvan kappaleen liikemäärä on negatiivinen.
 
+```pysahdy
+Jalkapallolla ja keilapallolla on yhtä suuri liikemäärä. Kumpi liikkuu suuremmalla nopeudella ja miksi?
+---
+Jalkapallo, koska sen massa on pienempi. Liikemäärä on $mv$, joten yhtä suuri tulo vaatii pienemmällä massalla suuremman nopeuden.
+```
+
 <svg data-fig="liikemaara" viewBox="0 0 600 370" role="img" aria-label="Kaavakuva, nuolet mittakaavassa: kolme palloa x-akselilla, jonka positiivinen suunta on oikealle. Ylhäällä 0,45 kilogramman jalkapallo liikkuu oikealle nopeudella 20 metriä sekunnissa: pitkä sininen nopeusnuoli ja violetti liikemääränuoli, liikemäärä 9,0 kilogrammametriä sekunnissa. Keskellä 6,0 kilogramman keilapallo liikkuu oikealle nopeudella 1,5 metriä sekunnissa: hyvin lyhyt nopeusnuoli mutta yhtä pitkä liikemääränuoli kuin jalkapallolla, sillä liikemäärä on sama 9,0. Alhaalla jalkapallo liikkuu vasemmalle nopeudella 10 metriä sekunnissa: nuolet osoittavat vasemmalle, ja liikemäärä on miinus 4,5 kilogrammametriä sekunnissa." style="max-width:100%;font-size:24px">
   <defs><clipPath id="fy49-liikemaara-c0"><circle cx="70" cy="62" r="22"/></clipPath><clipPath id="fy49-liikemaara-c1"><circle cx="336" cy="274" r="22"/></clipPath></defs>
   <circle cx="70" cy="62" r="22" fill="#ffffff"/>
@@ -380,8 +386,20 @@ Sama pätee pysäyttämiseen. Kun liikkuva kappale pysäytetään, sen liikemä�
   <foreignObject x="210" y="176" width="258" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{yhtä suuret pinta-alat}$</span></div></foreignObject>
 </svg>
 
+```pysahdy
+Kärry pysähtyy kovaan ja pehmeään puskuriin. Miksi pehmeä puskuri kohdistaa kärryyn pienemmän voiman?
+---
+Kummassakin tapauksessa liikemäärän muutos ja impulssi ovat yhtä suuret. Pehmeä puskuri pysäyttää kärryn pidemmässä ajassa, joten voiman riittää olla pienempi.
+```
+
 ### Kimpoaminen muuttaa liikemäärää enemmän kuin pysähtyminen
 Jos kappale ei vain pysähdy vaan kimpoaa takaisin, sen liikemäärä muuttuu enemmän. Kun pallo osuu seinään ja kimpoaa suoraan takaisin yhtä suurella vauhdilla, sen liikemäärä muuttuu arvosta $mv$ arvoon $-mv$. Muutos on $-2mv$, ja sen suuruus on kaksi kertaa niin suuri kuin pysähtyessä. Seinän on siis annettava kimpoavalle pallolle kaksinkertainen impulssi. Liikemäärän muutosta laskettaessa etumerkit ovat välttämättömiä, sillä myös pelkkä liikkeen suunnan muuttuminen muuttaa liikemäärää.
+
+```pysahdy
+Pallo osuu seinään ja kimpoaa takaisin samalla vauhdilla. Miksi seinän impulssi on suurempi kuin jos pallo vain pysähtyisi?
+---
+Liikemäärä muuttuu arvosta $mv$ arvoon $-mv$, eli muutos on $-2mv$. Se on kaksi kertaa niin suuri kuin pysähtyessä, joten myös impulssi on kaksinkertainen.
+```
 
 ### Vastaus alun kysymykseen
 Hyppääjä osuu alustaan samalla nopeudella, oli alusta kova tai pehmeä, ja pysähtyy kummassakin tapauksessa. Hänen liikemääränsä muutos on siis sama, joten myös häneen kohdistuvan kokonaisvoiman impulssi on sama. Alustan voima on tätä kokonaisvoimaa painon verran suurempi, mutta sekin pienenee, kun pysähtymisaika pitenee. Paksu patja painuu kasaan kymmenien senttimetrien matkalta, joten pysähtyminen kestää monta kertaa kauemmin kuin kovalla maalla, jossa keho pysähtyy muutamassa senttimetrissä. Koska impulssi on voima kertaa aika, pidempi pysähtymisaika tarkoittaa pienempää keskimääräistä kokonaisvoimaa ja siksi myös pienempää alustan keskimääräistä voimaa. Pienempi voima rasittaa kehoa vähemmän, joten loukkaantumisen riski pienenee. Samasta syystä alastulossa koukistetaan polvia, nyrkkeilyhanskat ovat pehmustettuja ja pyöräilykypärän sisällä on kasaan painuvaa vaahtomuovia.

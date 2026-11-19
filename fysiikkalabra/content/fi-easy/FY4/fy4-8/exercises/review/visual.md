@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 9eaa6f05c461b162
+CONTENT-HASH: 3b35764bb6843951
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] sol-fy4-8-L2-10-390.png (Vastaus, b) — a stray space before the hyphen in "2² = 4 -kertaisen" (the maths ends, then a word space, then the compound ending); write "$2^2 = 4$-kertaisen".
+- [Minor] solutions.md Kaava — 'Siis' still opens many consecutive sentences (mechanical); vary or join with 'joten'.
+- [Minor] friction-from-bars Kaava — 'Siis W on sama kuin ...' then 'Siis -F s on sama kuin ...' repeats the idea; optional.
 
 ## Checked
-- Delta (md-paragraphs): opened shots/sol-fy4-8-L1-06-390.png in full, sol-fy4-8-L2-06-390.png in two 1800 px parts (11-15, the vaunu table task) and sol-fy4-8-L2-10-390.png in parts 2-4 (part 1, the task statement, not opened). L1-06: the model answer is split at the steep/gentle-slide point, one thing each. L2-10: Annettu, Periaate, Vastaus sub-parts a)-e) and the closing remarks are in separate paragraphs, spacing even, nothing clipped. Words unchanged. Hash re-run before writing: unchanged.
+- Opened (content/fi-easy/FY4/fy4-8/review/shots/): fy4-8-open-exercises-L3-1280-8.png (11-24 ball Kaava: 'mekaanisen energian pieneneminen', ΔE = mg(h0 - h1) reads cleanly, chain on its own lines, nothing clipped), fy4-8-open-exercises-L3-1280-7.png (task 11-24 text and table), fy4-8-open-exercises-L3-1280-6.png and -5.png (neighbouring Kaava/Sijoitus layout intact).
+- The friction-from-bars Kaava hunk ('W on sama kuin') read in the diff; plain wording, formulas inline and short.
+- No layout regression, no plain-text quantities in the changed lines.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

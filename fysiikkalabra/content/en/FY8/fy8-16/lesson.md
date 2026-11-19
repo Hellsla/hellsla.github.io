@@ -254,6 +254,8 @@ Redshift arises when the expansion of space stretches the wavelength of light as
 ### The Big Bang
 If galaxies are receding from each other now, they were closer to each other in the past. Following the expansion backwards leads to a state in which the whole present observable universe was very dense and hot. The expansion that began from this state is called the **Big Bang**. It happened about $13.8$ billion years ago. Despite its name, the Big Bang was not an explosion in which matter flew into empty space from some point: it happened everywhere, and space itself began to expand. As the universe expanded, it cooled, and the cooling determines the order in which nuclei, atoms, stars and galaxies formed.
 
+According to one hypothesis, the universe expanded extremely rapidly at the very beginning, within a fraction of a second. This phase is called **cosmic inflation**. It is used to explain why the universe is so uniform on large scales; inflation has not, however, been observed directly.
+
 <svg data-fig="aikajana" viewBox="0 0 600 380" role="img" aria-label="Timeline, not to scale: the evolution of the universe from top to bottom. A vertical bar changes from red to blue as the universe cools. Time zero: the Big Bang, a hot and dense state. 3–20 minutes: the first nuclei, hydrogen and helium. 380 000 years: atoms form and the background radiation is released. About 200 million years: the first stars. 9.2 billion years: the Sun and the Earth form. 13.8 billion years: now, the temperature of the background radiation is 2.7 kelvins." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy816-cool" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c92a2a"/><stop offset="0.45" stop-color="#ffc078"/><stop offset="1" stop-color="#1971c2"/></linearGradient></defs>
   <rect x="52" y="24" width="16" height="332" rx="8" fill="url(#fy816-cool)" stroke="#1f2933" stroke-width="2"/>
@@ -518,7 +520,9 @@ In the spectrum of a galaxy, the red $\text{H}\alpha$ line of hydrogen, whose wa
 
 <!-- vaihe -->
 
-**Given and asked.** The laboratory wavelength is $\lambda_0 = 656.3\,\text{nm}$, the wavelength measured from the light of the galaxy is $\lambda = 679.3\,\text{nm}$, the distance is $d = 150\,\text{Mpc}$ and the speed of light is $c = 2.998 \cdot 10^{5}\,\text{km/s}$. We are asked for the recession speed $v$ and the Hubble constant $H_0$.
+**Given and asked.** The laboratory wavelength is $\lambda_0 = 656.3\,\text{nm}$, the wavelength measured from the light of the galaxy is $\lambda = 679.3\,\text{nm}$, the distance is $d = 150\,\text{Mpc}$ and the speed of light is $c = 2.998 \cdot 10^{5}\,\text{km/s}$.
+
+We are asked for the recession speed $v$ and the Hubble constant $H_0$.
 
 <!-- vaihe -->
 

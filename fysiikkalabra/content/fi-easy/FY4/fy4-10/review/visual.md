@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: b4b98c6081277e23
+CONTENT-HASH: c44200e4363c7ccd
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- batch delta review: opened example-390 captures (fi-easy, fy4-10); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.
+batch delta review: opened fy4-10-theory-1280-1.png (box on tien kitka and säilymislaki, between the figure paragraph and Törmäysten lajit) and fy4-10-theory-1280-2.png (boxes on tarranauha and luistelija). Boxes render cleanly, figures intact, Finnish natural.

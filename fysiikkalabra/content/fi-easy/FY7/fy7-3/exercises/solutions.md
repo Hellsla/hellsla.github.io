@@ -67,7 +67,7 @@
 **Annettu:** virta $I = 2{,}0\,\text{A}$ molemmissa; käämissä $N = 250$ ja $l = 10\,\text{cm}$; johtimen etäisyys $r = 2{,}0\,\text{cm}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** suhde $B_\text{käämi} : B_\text{johdin}$
 **Periaate:** Käämin keskikenttä lasketaan pitkän käämin kaavalla. Johtimen kenttä lasketaan pitkän suoran johtimen kaavalla. Lopuksi lasketaan kenttien suhde.
-**Kaava:** $B_\text{käämi} = \mu_0 \dfrac{N I}{l}$ ja $B_\text{johdin} = \dfrac{\mu_0 I}{2\pi r}$
+**Kaava:** $$\begin{aligned} B_\text{käämi} &= \mu_0 \dfrac{N I}{l} \\ B_\text{johdin} &= \dfrac{\mu_0 I}{2\pi r} \\ B_\text{käämi} : B_\text{johdin} &= \dfrac{B_\text{käämi}}{B_\text{johdin}} \end{aligned}$$
 **Muunnokset:** $l = 0{,}10\,\text{m}$ ja $r = 0{,}020\,\text{m}$.
 **Sijoitus:** $B_\text{käämi} = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \dfrac{250 \cdot 2{,}0\,\text{A}}{0{,}10\,\text{m}} = 6{,}283 \cdot 10^{-3}\,\text{T}$ ja $B_\text{johdin} = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 2{,}0\,\text{A}}{2\pi \cdot 0{,}020\,\text{m}} = 2{,}0 \cdot 10^{-5}\,\text{T}$, joten $\dfrac{B_\text{käämi}}{B_\text{johdin}} = \dfrac{6{,}283 \cdot 10^{-3}\,\text{T}}{2{,}0 \cdot 10^{-5}\,\text{T}} = 314$
 **Vastaus:** noin $310$ kertaa. Vastauksessa on kaksi merkitsevää numeroa, koska virrassa $2{,}0\,\text{A}$ ja etäisyydessä $2{,}0\,\text{cm}$ on kaksi.
@@ -77,7 +77,7 @@
 **Annettu:** tavoitekenttä $B = 20\,\text{mT}$, kierroksia $N = 1200$, pituus $l = 0{,}30\,\text{m}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** käämin virta $I$ ampeereina
 **Periaate:** Käämi on pitkä, joten sen sisällä $B = \mu_0 \tfrac{N I}{l}$. Kenttä on suoraan verrannollinen virtaan. Tarvittavan virran saat ratkaisemalla kaavasta $I$.
-**Kaava:** $B = \mu_0 \dfrac{N I}{l}$, josta $I = \dfrac{B l}{N \mu_0}$
+**Kaava:** $$\begin{aligned} B &= \mu_0 \dfrac{N I}{l} \\ I &= \dfrac{B l}{N \mu_0} \end{aligned}$$
 **Muunnokset:** $B = 20\,\text{mT} = 20 \cdot 10^{-3}\,\text{T}$; pituus on jo metreinä.
 **Sijoitus:** $I = \dfrac{20 \cdot 10^{-3}\,\text{T} \cdot 0{,}30\,\text{m}}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 1200} = 3{,}979\,\text{A}$
 **Vastaus:** $4{,}0\,\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, koska kentässä $20\,\text{mT}$ ja pituudessa $0{,}30\,\text{m}$ on kaksi.
@@ -87,7 +87,7 @@
 **Annettu:** pitkä suora johdin, virta $I = 6{,}0\,\text{A}$, kentän suuruus $B = 14\,\mu\text{T}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** etäisyys $r$ senttimetreinä
 **Periaate:** Pitkän suoran johtimen kenttä heikkenee kääntäen verrannollisesti etäisyyteen. Siksi kenttä on $14\,\mu\text{T}$ vain yhdellä etäisyydellä. Se ratkaistaan suoran johtimen kaavasta.
-**Kaava:** $B = \dfrac{\mu_0 I}{2\pi r}$, josta $r = \dfrac{\mu_0 I}{2\pi B}$
+**Kaava:** $$\begin{aligned} B &= \dfrac{\mu_0 I}{2\pi r} \\ r &= \dfrac{\mu_0 I}{2\pi B} \end{aligned}$$
 **Muunnokset:** $B = 14\,\mu\text{T} = 14 \cdot 10^{-6}\,\text{T}$; lopuksi $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $r = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 6{,}0\,\text{A}}{2\pi \cdot 14 \cdot 10^{-6}\,\text{T}} = 0{,}0857\,\text{m} = 8{,}57\,\text{cm}$
 **Vastaus:** $8{,}6\,\text{cm}$. Vastauksessa on kaksi merkitsevää numeroa, koska virrassa $6{,}0\,\text{A}$ ja kentässä $14\,\mu\text{T}$ on kaksi.
@@ -97,7 +97,7 @@
 **Annettu:** langan pituus $L = 25\,\text{m}$, putken halkaisija $d = 4{,}0\,\text{cm}$, käämin pituus $l = 0{,}20\,\text{m}$, virta $I = 2{,}0\,\text{A}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** magneettivuon tiheys $B$ käämin keskellä millitesloina
 **Periaate:** Ensin lasketaan kierrosten määrä. Yhteen kierrokseen kuluu lankaa putken ympärysmitan $\pi d$ verran. Käämi on viisi kertaa niin pitkä kuin paksu, joten sen keskellä voi käyttää pitkän käämin kaavaa.
-**Kaava:** $N = \dfrac{L}{\pi d}$ ja $B = \mu_0 \dfrac{N I}{l}$, josta $B = \dfrac{\mu_0 L I}{\pi d\, l}$
+**Kaava:** $$\begin{aligned} N &= \dfrac{L}{\pi d} \\ B &= \mu_0 \dfrac{N I}{l} \\ &= \mu_0 \dfrac{L I}{\pi d\, l} \\ &= \dfrac{\mu_0 L I}{\pi d\, l} \end{aligned}$$
 **Muunnokset:** $d = 4{,}0 \cdot 0{,}01\,\text{m} = 0{,}040\,\text{m}$; lopuksi $1\,\text{mT} = 10^{-3}\,\text{T}$.
 **Sijoitus:** $N = \dfrac{25\,\text{m}}{\pi \cdot 0{,}040\,\text{m}} = 198{,}9$ ja $B = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \dfrac{198{,}9 \cdot 2{,}0\,\text{A}}{0{,}20\,\text{m}} = 2{,}50 \cdot 10^{-3}\,\text{T}$
 **Vastaus:** $2{,}5\,\text{mT}$. Vastauksessa on kaksi merkitsevää numeroa, koska langan pituudessa $25\,\text{m}$ ja halkaisijassa $4{,}0\,\text{cm}$ on kaksi.
@@ -107,7 +107,7 @@
 **Annettu:** kaksi pitkää yhdensuuntaista johdinta, etäisyys $d = 10\,\text{cm}$, virrat $I = 10\,\text{A}$ vastakkaisiin suuntiin; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** magneettivuon tiheys $B$ johtimien puolivälissä mikrotesloina
 **Periaate:** Kenttien vektorit lasketaan yhteen. Oikean käden säännön mukaan vastakkaissuuntaisten virtojen kentät osoittavat johtimien välissä samaan suuntaan. Kun peukalo osoittaa toisessa johtimessa ylös ja toisessa alas, sormet kiertävät johtimien välissä samaan suuntaan. Puolivälissä kumpikin johdin on $5{,}0\,\text{cm}$:n päässä. Kentät ovat siis yhtä suuret ja vahvistavat toisiaan.
-**Kaava:** $B = 2 \cdot \dfrac{\mu_0 I}{2\pi r}$, missä $r = \dfrac{d}{2}$, eli $B = \dfrac{\mu_0 I}{\pi r}$
+**Kaava:** $$\begin{aligned} r &= \dfrac{d}{2} \\ B_1 &= \dfrac{\mu_0 I}{2\pi r} \\ B &= 2 B_1 \\ &= 2 \cdot \dfrac{\mu_0 I}{2\pi r} \\ &= \dfrac{\mu_0 I}{\pi r} \end{aligned}$$
 **Muunnokset:** $r = 5{,}0 \cdot 0{,}01\,\text{m} = 0{,}050\,\text{m}$; lopuksi $1\,\mu\text{T} = 10^{-6}\,\text{T}$.
 **Sijoitus:** $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 10\,\text{A}}{\pi \cdot 0{,}050\,\text{m}} = 8{,}0 \cdot 10^{-5}\,\text{T} = 80\,\mu\text{T}$
 **Vastaus:** $80\,\mu\text{T}$. Vastauksessa on kaksi merkitsevää numeroa, koska virroissa $10\,\text{A}$ ja etäisyydessä $10\,\text{cm}$ on kaksi.
@@ -118,7 +118,7 @@
 **Kysytty:** tyhjiön permeabiliteetin arvio $\mu_0$ yksikössä $\mu\text{Vs/(Am)}$
 **Periaate:** Pitkän käämin kaavan $B = \mu_0 \tfrac{N}{l} I$ mukaan $B$ on suoraan verrannollinen virtaan. Kulmakerroin on $A = \mu_0 \tfrac{N}{l}$. Vakiotermi kertoo anturin nollakohdasta ja Maan kentästä. Suora piirretään pisteiden joukon keskeltä. Kulmakerroin lasketaan suoran pisteistä, ei mittauspisteistä.
 **Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle. Suoran molemmille puolille jää pisteitä. Sovitettu suora kulkee likimain pisteiden $(0\,\text{A};\ 0{,}06\,\text{mT})$ ja $(3{,}0\,\text{A};\ 7{,}59\,\text{mT})$ kautta. Ne on luettu suoralta kaukana toisistaan. Kulmakerroin on $A = \dfrac{7{,}59\,\text{mT} - 0{,}06\,\text{mT}}{3{,}0\,\text{A} - 0\,\text{A}} = 2{,}51\,\tfrac{\text{mT}}{\text{A}}$.
-**Kaava:** $A = \mu_0 \dfrac{N}{l}$, josta $\mu_0 = \dfrac{A l}{N}$
+**Kaava:** $$\begin{aligned} A &= \mu_0 \dfrac{N}{l} \\ \mu_0 &= \dfrac{A l}{N} \end{aligned}$$
 **Muunnokset:** $A = 2{,}51\,\tfrac{\text{mT}}{\text{A}} = 2{,}51 \cdot 10^{-3}\,\tfrac{\text{T}}{\text{A}}$; lopuksi $1\,\mu\text{Vs/(Am)} = 10^{-6}\,\tfrac{\text{Vs}}{\text{Am}}$.
 **Sijoitus:** $\mu_0 = \dfrac{2{,}51 \cdot 10^{-3}\,\tfrac{\text{T}}{\text{A}} \cdot 0{,}300\,\text{m}}{600} = 1{,}26 \cdot 10^{-6}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Vastaus:** $1{,}26\,\mu\text{Vs/(Am)}$. Vastauksessa on kolme merkitsevää numeroa, koska kulmakertoimessa ja pituudessa $0{,}300\,\text{m}$ on kolme. Silmämääräinen sovitus vaihtelee. Siksi noin $1{,}21\text{–}1{,}31\,\mu\text{Vs/(Am)}$ ($\pm 4\,\%$) on hyvä vastaus.
@@ -147,7 +147,7 @@ Silloin myös siitä laskettu $\mu_0$ jää liian pieneksi. Maan kenttä lisää
 **Annettu:** johdin $r = 5{,}0\,\text{cm}$ kompassin yläpuolella, neulan kääntymiskulma $\alpha = 30^\circ$, Maan kentän vaakakomponentti $B_\text{h} = 14\,\mu\text{T}$; johtimen kenttä $B_\text{j}$ on kohtisuorassa $B_\text{h}$:ta vastaan; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** johtimen virta $I$ ampeereina
 **Periaate:** Kompassin neula kääntyy kokonaiskentän suuntaan. Kokonaiskenttä on kahden kohtisuoran kentän vektorisumma. Siksi neulan kääntymiskulmalle pätee $\tan \alpha = B_\text{j} : B_\text{h}$. Johdin on pitkä ja suora, joten sen kentästä saadaan virta suoran johtimen kaavalla.
-**Kaava:** $\tan \alpha = \dfrac{B_\text{j}}{B_\text{h}}$ ja $B_\text{j} = \dfrac{\mu_0 I}{2\pi r}$, josta $I = \dfrac{2\pi r B_\text{h} \tan \alpha}{\mu_0}$
+**Kaava:** $$\begin{aligned} \tan \alpha &= \dfrac{B_\text{j}}{B_\text{h}} \\ B_\text{j} &= \dfrac{\mu_0 I}{2\pi r} \\ \dfrac{\mu_0 I}{2\pi r} &= B_\text{h} \tan \alpha \\ I &= \dfrac{2\pi r B_\text{h} \tan \alpha}{\mu_0} \end{aligned}$$
 **Muunnokset:** $r = 5{,}0 \cdot 0{,}01\,\text{m} = 0{,}050\,\text{m}$ ja $B_\text{h} = 14 \cdot 10^{-6}\,\text{T}$.
 **Sijoitus:** $B_\text{j} = 14 \cdot 10^{-6}\,\text{T} \cdot \tan 30^\circ = 8{,}083 \cdot 10^{-6}\,\text{T}$ ja $I = \dfrac{2\pi \cdot 0{,}050\,\text{m} \cdot 8{,}083 \cdot 10^{-6}\,\text{T}}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}} = 2{,}02\,\text{A}$
 **Vastaus:** $2{,}0\,\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, koska etäisyydessä $5{,}0\,\text{cm}$ ja kentässä $14\,\mu\text{T}$ on kaksi.
@@ -157,7 +157,7 @@ Silloin myös siitä laskettu $\mu_0$ jää liian pieneksi. Maan kenttä lisää
 **Annettu:** magneettikuvauslaitteen käämi, $B = 1{,}5\,\text{T}$, pituus $l = 1{,}6\,\text{m}$, kierroksen halkaisija $d = 1{,}0\,\text{m}$, virta $I = 400\,\text{A}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** langan kokonaispituus $L$ kilometreinä
 **Periaate:** Tehtävässä käämi oletetaan pitkäksi. Siksi kierrosten määrä ratkaistaan kaavasta $B = \mu_0 \tfrac{N I}{l}$. Jokaiseen kierrokseen kuluu lankaa ympärysmitan $\pi d$ verran. Langan pituus on siis kierrosten määrä kertaa ympärysmitta.
-**Kaava:** $N = \dfrac{B l}{\mu_0 I}$ ja $L = N \pi d$, josta $L = \dfrac{\pi d B l}{\mu_0 I}$
+**Kaava:** $$\begin{aligned} B &= \mu_0 \dfrac{N I}{l} \\ N &= \dfrac{B l}{\mu_0 I} \\ L &= N \pi d \\ &= \dfrac{\pi d B l}{\mu_0 I} \end{aligned}$$
 **Muunnokset:** Ei tarvita ennen sijoitusta, koska kaikki suureet ovat SI-yksiköissä. Lopuksi $1\,\text{km} = 1000\,\text{m}$.
 **Sijoitus:** $N = \dfrac{1{,}5\,\text{T} \cdot 1{,}6\,\text{m}}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 400\,\text{A}} = 4775$ ja $L = 4775 \cdot \pi \cdot 1{,}0\,\text{m} = 15\,000\,\text{m} = 15\,\text{km}$
 **Vastaus:** noin $15\,\text{km}$. Vastauksessa on kaksi merkitsevää numeroa, koska kentässä $1{,}5\,\text{T}$ ja halkaisijassa $1{,}0\,\text{m}$ on kaksi.
@@ -169,7 +169,7 @@ Arvio on karkea, koska todellinen käämi ei ole pitkä paksuuteensa verrattuna.
 **Annettu:** kaksi pitkää yhdensuuntaista johdinta, etäisyys $d = 10\,\text{cm}$, samansuuntaiset virrat $I_1 = 4{,}0\,\text{A}$ ja $I_2 = 6{,}0\,\text{A}$
 **Kysytty:** kentän nollakohdan etäisyys $x$ johtimesta, jossa kulkee virta $I_1$, senttimetreinä
 **Periaate:** Oikean käden säännön mukaan samansuuntaisten virtojen kentät osoittavat johtimien välissä vastakkaisiin suuntiin. Jossakin välin kohdassa ne kumoavat toisensa. Siellä kenttien suuruudet ovat yhtä suuret. Heikomman virran johtimen on oltava lähempänä, jotta sen kenttä on yhtä vahva.
-**Kaava:** $\dfrac{\mu_0 I_1}{2\pi x} = \dfrac{\mu_0 I_2}{2\pi (d - x)}$, josta $I_1 (d - x) = I_2 x$ ja $x = \dfrac{I_1 d}{I_1 + I_2}$
+**Kaava:** $$\begin{aligned} B_1 &= B_2 \\ \dfrac{\mu_0 I_1}{2\pi x} &= \dfrac{\mu_0 I_2}{2\pi (d - x)} \\ I_1 (d - x) &= I_2 x \\ I_1 d &= (I_1 + I_2) x \\ x &= \dfrac{I_1 d}{I_1 + I_2} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Vakio $\mu_0$ ja luku $2\pi$ supistuvat. Kun $d$ sijoitetaan senttimetreinä, $x$ tulee senttimetreinä.
 **Sijoitus:** $x = \dfrac{4{,}0\,\text{A} \cdot 10\,\text{cm}}{4{,}0\,\text{A} + 6{,}0\,\text{A}} = 4{,}0\,\text{cm}$
 **Vastaus:** $4{,}0\,\text{cm}$ $4{,}0\,\text{A}$:n johtimesta. Vastauksessa on kaksi merkitsevää numeroa, koska virroissa on kaksi.
@@ -182,7 +182,7 @@ Arvio on karkea, koska todellinen käämi ei ole pitkä paksuuteensa verrattuna.
 
 Kentät $B_\text{h}$ ja $B_\text{j}$ ovat kohtisuorassa toisiaan vastaan, joten $\tan \alpha = B_\text{j} : B_\text{h}$. Johdin on pitkä ja suora, joten $B_\text{j} = \tfrac{\mu_0 I}{2\pi h}$. Yhdistämällä saadaan $\tan \alpha = \tfrac{\mu_0}{2\pi h B_\text{h}} \cdot I = k I$. Siis $\tan \alpha$ on suoraan verrannollinen virtaan, jos $B_\text{j}$ on. Suoran kulmakertoimesta $k$ saadaan $B_\text{h}$.
 **Kuvaajan lukeminen:** Tangentit ovat $0{,}315$, $0{,}625$, $0{,}949$, $1{,}235$ ja $1{,}570$. Suhteet $\tan \alpha : I$ ovat $0{,}315$, $0{,}312$, $0{,}316$, $0{,}309$ ja $0{,}314\,\tfrac{1}{\text{A}}$. Ne ovat vakioita noin $2\,\%$:n tarkkuudella. Pisteet asettuvat origon kautta kulkevalle suoralle. Siksi johtimen kenttä on suoraan verrannollinen virtaan. Suoran kulmakerroin on $k = 0{,}313\,\tfrac{1}{\text{A}}$.
-**Kaava:** $k = \dfrac{\mu_0}{2\pi h B_\text{h}}$, josta $B_\text{h} = \dfrac{\mu_0}{2\pi h k}$
+**Kaava:** $$\begin{aligned} \tan \alpha &= \dfrac{B_\text{j}}{B_\text{h}} \\ B_\text{j} &= \dfrac{\mu_0 I}{2\pi h} \\ \tan \alpha &= \dfrac{\mu_0 I}{2\pi h B_\text{h}} \\ &= k I \\ k &= \dfrac{\mu_0}{2\pi h B_\text{h}} \\ B_\text{h} &= \dfrac{\mu_0}{2\pi h k} \end{aligned}$$
 **Muunnokset:** $h = 4{,}0 \cdot 0{,}01\,\text{m} = 0{,}040\,\text{m}$; lopuksi $1\,\mu\text{T} = 10^{-6}\,\text{T}$.
 **Sijoitus:** $B_\text{h} = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}}{2\pi \cdot 0{,}040\,\text{m} \cdot 0{,}313\,\tfrac{1}{\text{A}}} = 1{,}60 \cdot 10^{-5}\,\text{T}$
 **Vastaus:** $16\,\mu\text{T}$. Vastauksessa on kaksi merkitsevää numeroa, koska korkeudessa $4{,}0\,\text{cm}$ ja kulmissa on kaksi.
@@ -195,7 +195,7 @@ Kun virta on suuri, johtimen kenttä on paljon suurempi kuin $B_\text{h}$. Sillo
 **Annettu:** langan pituus $L = 30\,\text{m}$, metallin halkaisija $0{,}50\,\text{mm}$, eristeineen $d_\text{e} = 0{,}55\,\text{mm}$, $\rho = 1{,}7 \cdot 10^{-8}\,\Omega\,\text{m}$, putken halkaisija $d = 3{,}0\,\text{cm}$, jännite $U = 6{,}0\,\text{V}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Kysytty:** magneettivuon tiheys $B$ käämin keskellä millitesloina
 **Periaate:** Yhden kierroksen langan pituus on $\pi d$. Tiiviissä kerroksessa jokainen kierros vie pituutta eristeellisen langan paksuuden $d_\text{e}$ verran. Virran rajoittaa langan resistanssi: $R = \rho L : A$ ja $I = U : R$ (FY6). Käämi oletetaan pitkäksi, joten kenttä on $B = \mu_0 \tfrac{N I}{l}$.
-**Kaava:** $N = \dfrac{L}{\pi d}$, $l = N d_\text{e}$, $A = \pi \left(\dfrac{d_\text{m}}{2}\right)^2$, $R = \dfrac{\rho L}{A}$, $I = \dfrac{U}{R}$ ja $B = \mu_0 \dfrac{N I}{l}$
+**Kaava:** $$\begin{aligned} N &= \dfrac{L}{\pi d} \\ l &= N d_\text{e} \\ A &= \pi \left(\dfrac{d_\text{m}}{2}\right)^2 \\ R &= \dfrac{\rho L}{A} \\ I &= \dfrac{U}{R} \\ B &= \mu_0 \dfrac{N I}{l} \end{aligned}$$
 **Muunnokset:** $d = 0{,}030\,\text{m}$, $d_\text{e} = 0{,}55 \cdot 10^{-3}\,\text{m}$ ja metallin halkaisija $d_\text{m} = 0{,}50 \cdot 10^{-3}\,\text{m}$; lopuksi $1\,\text{mT} = 10^{-3}\,\text{T}$.
 **Sijoitus:** a) $N = \dfrac{30\,\text{m}}{\pi \cdot 0{,}030\,\text{m}} = 318$ ja $l = 318{,}3 \cdot 0{,}55 \cdot 10^{-3}\,\text{m} = 0{,}175\,\text{m}$. Pituus on noin $5{,}8$-kertainen halkaisijaan nähden, joten käämi on riittävän pitkä. b) $A = \pi \cdot (0{,}25 \cdot 10^{-3}\,\text{m})^2 = 1{,}96 \cdot 10^{-7}\,\text{m}^2$, $R = \dfrac{1{,}7 \cdot 10^{-8}\,\Omega\,\text{m} \cdot 30\,\text{m}}{1{,}96 \cdot 10^{-7}\,\text{m}^2} = 2{,}60\,\Omega$ ja $I = \dfrac{6{,}0\,\text{V}}{2{,}60\,\Omega} = 2{,}31\,\text{A}$. c) $B = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \dfrac{318{,}3 \cdot 2{,}31\,\text{A}}{0{,}175\,\text{m}} = 5{,}28 \cdot 10^{-3}\,\text{T} = 5{,}28\,\text{mT}$
 **Vastaus:** $5{,}3\,\text{mT}$. Vastauksessa on kaksi merkitsevää numeroa, koska jännitteessä $6{,}0\,\text{V}$ ja halkaisijassa $3{,}0\,\text{cm}$ on kaksi.
@@ -236,7 +236,7 @@ Kenttä kasvaa siis noin $1{,}5\,\text{mT}$:sta noin $2{,}3\,\text{mT}$:iin. Jos
 **Kysytty:** kierrosten lukumäärä $N$
 **Periaate:** Pitkän käämin sisällä $B = \mu_0 \dfrac{N I}{l}$. Kenttä $B$ on siis suoraan verrannollinen virtaan $I$, ja $(I, B)$-pisteet ovat suoralla. Suoran kulmakerroin on $k = \mu_0 N : l$. Kierrosluvun voi laskea siitä.
 **Kuvaajan lukeminen:** Sovitettu suora lähtee origosta ja kulkee pisteen $(2{,}0\,\text{A};\ 5{,}0\,\text{mT})$ kautta. Kulmakerroin on $k = \Delta B : \Delta I = 5{,}0\,\text{mT} : 2{,}0\,\text{A} = 2{,}5\,\tfrac{\text{mT}}{\text{A}}$. Viimeinen mittauspiste antaa $6{,}2\,\text{mT} : 2{,}5\,\text{A} = 2{,}5\,\tfrac{\text{mT}}{\text{A}}$, joten suora sopii pisteisiin hyvin.
-**Kaava:** $k = \dfrac{\mu_0 N}{l}$, josta $N = \dfrac{k\,l}{\mu_0}$
+**Kaava:** $$\begin{aligned} k &= \dfrac{\mu_0 N}{l} \\ N &= \dfrac{k\,l}{\mu_0} \end{aligned}$$
 **Muunnokset:** $k = 2{,}5\,\tfrac{\text{mT}}{\text{A}} = 2{,}5 \cdot 10^{-3}\,\tfrac{\text{T}}{\text{A}}$
 **Sijoitus:** $N = \dfrac{2{,}5 \cdot 10^{-3}\,\tfrac{\text{T}}{\text{A}} \cdot 0{,}250\,\text{m}}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}} = 497$
 **Vastaus:** Käämissä on noin $5{,}0 \cdot 10^2$ kierrosta (laskettu $497$), kaksi merkitsevää numeroa, koska luettu kulmakerroin on kahden numeron tarkkuudella.
@@ -247,7 +247,7 @@ Kenttä kasvaa siis noin $1{,}5\,\text{mT}$:sta noin $2{,}3\,\text{mT}$:iin. Jos
 **Kysytty:** johtimen virta $I$ ampeereina
 **Periaate:** Pitkän suoran johtimen kenttä on $B = \dfrac{\mu_0 I}{2\pi r}$. Luetaan kuvaajasta yksi piste $(r, B)$. Sitten virta ratkaistaan kaavasta.
 **Kuvaajan lukeminen:** Etäisyydellä $r = 2{,}0\,\text{cm}$ käyrä on kolmannella vaakaviivalla, ja ruudukon väli on $20\,\mu\text{T}$, joten $B = 3 \cdot 20\,\mu\text{T} = 60\,\mu\text{T}$. Tarkistus: etäisyydellä $1{,}0\,\text{cm}$ kenttä on $120\,\mu\text{T}$ ja etäisyydellä $4{,}0\,\text{cm}$ se on $30\,\mu\text{T}$, joten $B$ on kääntäen verrannollinen etäisyyteen.
-**Kaava:** $B = \dfrac{\mu_0 I}{2\pi r}$, josta $I = \dfrac{2\pi r B}{\mu_0}$
+**Kaava:** $$\begin{aligned} B &= \dfrac{\mu_0 I}{2\pi r} \\ I &= \dfrac{2\pi r B}{\mu_0} \end{aligned}$$
 **Muunnokset:** $r = 2{,}0\,\text{cm} = 0{,}020\,\text{m}$ ja $B = 60\,\mu\text{T} = 60 \cdot 10^{-6}\,\text{T}$
 **Sijoitus:** $I = \dfrac{2\pi \cdot 0{,}020\,\text{m} \cdot 60 \cdot 10^{-6}\,\text{T}}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}} = 6{,}0\,\text{A}$
 **Vastaus:** $6{,}0\,\text{A}$, kaksi merkitsevää numeroa, koska luettu kenttä on $60\,\mu\text{T}$.

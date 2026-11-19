@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 9f19bcb0fe992f4e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: c16091df49761101
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).
+batch delta review: retrieval choice rewritten to UV-C 254 nm vs red 650 nm; recomputed f = c/λ: 1,18·10^15 Hz (shown 1,2·10^15) and 4,61·10^14 Hz, matching lesson-answers.py; exactly one correct option, the two distractors' feedback is still right after the change.

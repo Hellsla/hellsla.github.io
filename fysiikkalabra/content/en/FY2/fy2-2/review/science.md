@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: f280a71c44e26ce3
+CONTENT-HASH: 4c8f8d638f0ac27d
 
 ## Blocking
 
 ## Polish
 
-
 ## Checked
-batch delta review: retrieval choice car -> cyclist: wording only; correct option and feedback unchanged in physics (kinetic energy turns into other forms, total conserved); exactly one correct option; teacher-approved figures not judged.
+batch delta review: the "Find the error" prompt's chain only moved into an aligned display block; same numbers, units and the same deliberate error (dividing by 1000 instead of multiplying, 2.5 kJ = 2500 J); choices and feedback unchanged, exactly one correct option remains.

@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: bf4b51f0a89d39a6
+CONTENT-HASH: 4ae44fd1881f3ac4
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- batch delta review, en: opened example-390-1 (stage 3 block); the other changed blocks judged from the diff/source only (rows broken before each + or -, first row left-hand side alone, no clipping seen in the capture sampled). Hash re-run at the end: unchanged.
+batch delta review: read the added cosmic-inflation paragraph in lesson.md (about 45 words, bold term, fluent English, no number or symbol outside maths, sits in "The Big Bang" before the timeline figure); opened fy8-16-fig-4-390 (timeline, legible, unclipped). The added paragraph separates the Big Bang text from the timeline figure it explains only marginally; acceptable.

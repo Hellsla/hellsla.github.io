@@ -135,7 +135,7 @@ Kalvo ei absorboi valoa; sen läpi valo kulkee ja kumoutuu vain heijastuksessa. 
 **Kysytty:** elektronin ominaisvaraus $e / m_\text{e}$
 **Periaate:** Jännite $U$ antaa elektronille liike-energian, ja magneettinen voima toimii ympyräliikkeen keskeisvoimana. Yhdistämällä nämä saadaan $r^2$ jännitteen suoraksi funktioksi, jolloin suoran kulmakerroin kertoo ominaisvarauksen.
 **Kuvaajan lukeminen:** Suoralta luetaan kaukana toisistaan olevat pisteet $(80\,\text{V};\ 1{,}4 \cdot 10^{-3}\,\text{m}^2)$ ja $(240\,\text{V};\ 4{,}3 \cdot 10^{-3}\,\text{m}^2)$.
-**Kaava:** energiasta $eU = \tfrac{1}{2} m_\text{e} v^2$ saadaan $v = \sqrt{\tfrac{2eU}{m_\text{e}}}$, ja magneettisesta voimasta $F_\text{m} = |q| v B \sin\alpha$ (kulma $90^\circ$) ympyräliikkeessä $evB = \tfrac{m_\text{e} v^2}{r}$, joten $r = \tfrac{m_\text{e} v}{eB}$. Neliöimällä $r^2 = \dfrac{2m_\text{e}}{eB^2}\,U$, jolloin kulmakerroin $k = \dfrac{2m_\text{e}}{eB^2}$ ja $\dfrac{e}{m_\text{e}} = \dfrac{2}{B^2 k}$.
+**Kaava:** $$\begin{aligned} eU &= \tfrac{1}{2} m_\text{e} v^2 \\ F_\text{m} &= |q| v B \sin 90^\circ = evB \\ evB &= \dfrac{m_\text{e} v^2}{r} \\ v &= \sqrt{\dfrac{2eU}{m_\text{e}}} \\ r &= \dfrac{m_\text{e} v}{eB} \\ r^2 &= \dfrac{m_\text{e}^2 v^2}{e^2 B^2} = \dfrac{2m_\text{e}}{eB^2}\,U \\ k &= \dfrac{2m_\text{e}}{eB^2} \\ \dfrac{e}{m_\text{e}} &= \dfrac{2}{B^2 k} \end{aligned}$$
 **Muunnokset:** $B = 0{,}80\,\text{mT} = 0{,}80 \cdot 10^{-3}\,\text{T}$. Kuvaajasta luetut $r^2$:n arvot ovat jo neliömetreinä, ja kerroin $10^{-3}$ pidetään laskussa mukana.
 **Sijoitus:** $k = \dfrac{(4{,}3 - 1{,}4) \cdot 10^{-3}\,\text{m}^2}{(240 - 80)\,\text{V}} = 1{,}81 \cdot 10^{-5}\,\text{m}^2/\text{V}$, ja $B^2 = (0{,}80 \cdot 10^{-3}\,\text{T})^2 = 6{,}4 \cdot 10^{-7}\,\text{T}^2$, joten $$\begin{aligned} B^2 k &= 6{,}4 \cdot 10^{-7}\,\text{T}^2 \\ &\cdot 1{,}81 \cdot 10^{-5}\,\text{m}^2/\text{V} \\ &= 1{,}16 \cdot 10^{-11}\,\text{T}^2\text{m}^2/\text{V} \end{aligned}$$ ja $\dfrac{e}{m_\text{e}} = \dfrac{2}{1{,}16 \cdot 10^{-11}\,\text{T}^2\text{m}^2/\text{V}}$ $\approx 1{,}7 \cdot 10^{11}\,\text{C/kg}$
 **Vastaus:** Elektronin ominaisvaraus on noin $1{,}7 \cdot 10^{11}\,\text{C/kg}$ (pienimmän neliösumman sovitus antaa $1{,}74 \cdot 10^{11}\,\text{C/kg}$).
@@ -145,7 +145,7 @@ Kalvo ei absorboi valoa; sen läpi valo kulkee ja kumoutuu vain heijastuksessa. 
 **Annettu:** viisi pistettä virhepalkkeineen, $B = 0{,}80\,\text{mT}$, $e / m_\text{e} \approx 1{,}74 \cdot 10^{11}\,\text{C/kg}$
 **Kysytty:** ominaisvarauksen epävarmuus ja sopusointu tunnetun arvon kanssa
 **Periaate:** Piirretään jyrkin ja loivin suora, jotka vielä kulkevat kaikkien virhepalkkien sisällä. Ominaisvaraus on kääntäen verrannollinen kulmakertoimeen, joten jyrkin suora antaa pienimmän ja loivin suurimman arvon; epävarmuus on niiden eron puolikas.
-**Kaava:** $\Delta\dfrac{e}{m_\text{e}} = \dfrac{(e/m_\text{e})_\text{max} - (e/m_\text{e})_\text{min}}{2}$, missä $\dfrac{e}{m_\text{e}} = \dfrac{2}{B^2 k}$
+**Kaava:** $$\begin{aligned} \dfrac{e}{m_\text{e}} &= \dfrac{2}{B^2 k} \\ \left(\dfrac{e}{m_\text{e}}\right)_\text{min} &= \dfrac{2}{B^2 k_\text{max}} \\ \left(\dfrac{e}{m_\text{e}}\right)_\text{max} &= \dfrac{2}{B^2 k_\text{min}} \\ \Delta\dfrac{e}{m_\text{e}} &= \dfrac{(e/m_\text{e})_\text{max} - (e/m_\text{e})_\text{min}}{2} \end{aligned}$$
 **Muunnokset:** Kulmakertoimet lasketaan yksikössä $\text{m}^2/\text{V}$.
 **Sijoitus:** Jyrkin suora kulkee pisteiden $(80\,\text{V};\ 1{,}368 \cdot 10^{-3}\,\text{m}^2)$ ja $(200\,\text{V};\ 3{,}599 \cdot 10^{-3}\,\text{m}^2)$ kautta (kulmakerroin $1{,}859 \cdot 10^{-5}\,\text{m}^2/\text{V}$), loivin pisteiden $(80\,\text{V};\ 1{,}520 \cdot 10^{-3}\,\text{m}^2)$ ja $(240\,\text{V};\ 4{,}224 \cdot 10^{-3}\,\text{m}^2)$ kautta ($1{,}690 \cdot 10^{-5}\,\text{m}^2/\text{V}$).
 
@@ -173,7 +173,7 @@ Kun $B^2 = 6{,}4 \cdot 10^{-7}\,\text{T}^2$, jyrkimmälle suoralle $B^2 k = 1{,}
 **Annettu:** $l = 0{,}30\,\text{m}$, $v = 2{,}5\,\text{m/s}$, $B = 0{,}40\,\text{T}$
 **Kysytty:** sauvaan indusoituva jännite $e$
 **Periaate:** Sauvan liikkuessa silmukan pinta-ala kasvaa, ja silmukan läpi kulkeva magneettivuo muuttuu. Faradayn induktiolain mukaan muutos indusoi jännitteen.
-**Kaava:** magneettivuo $\Phi = BA$ ja käämiin indusoituva jännite $|e| = N\dfrac{\Delta\Phi}{\Delta t}$ yhdellä kierroksella $N = 1$. Ajassa $\Delta t$ pinta-ala kasvaa $\Delta A = lv\Delta t$, joten $\Delta\Phi = Blv\Delta t$ ja $e = vBl$.
+**Kaava:** $$\begin{aligned} \Phi &= BA \\ |e| &= N\dfrac{\Delta\Phi}{\Delta t},\ N = 1 \\ \Delta A &= lv\Delta t \\ \Delta\Phi &= B\Delta A = Blv\Delta t \\ e &= \dfrac{\Delta\Phi}{\Delta t} = vBl \end{aligned}$$
 **Muunnokset:** Ei tarvita; kaikki ovat SI-yksiköissä.
 **Sijoitus:** $e = 2{,}5\,\text{m/s} \cdot 0{,}40\,\text{T} \cdot 0{,}30\,\text{m} = 0{,}30\,\text{V}$
 **Vastaus:** Sauvaan indusoituu jännite $0{,}30\,\text{V}$ (kaksi merkitsevää numeroa, kuten lähtötiedoissa).
@@ -190,7 +190,7 @@ Sama saadaan voimasta sauvan varauksiin: $\overline{v}$ oikealle ja $\overline{B
 **Annettu:** $e = 0{,}30\,\text{V}$, $R = 0{,}60\,\Omega$, $l = 0{,}30\,\text{m}$, $B = 0{,}40\,\text{T}$, $v = 2{,}5\,\text{m/s}$
 **Kysytty:** virta $I$, magneettinen voima $F$ ja vetoteho $P$
 **Periaate:** Virta syntyy kohdan a jännitteestä vastuksen läpi. Virrallinen sauva magneettikentässä kokee voiman, ja vakionopeudella vetävä voima on yhtä suuri kuin se. Voima kertaa nopeus antaa vetotehon.
-**Kaava:** $I = \dfrac{e}{R}$, suoraan johtimeen kohdistuva magneettinen voima $F = I l B \sin\alpha$ kulmalla $\alpha = 90^\circ$, eli $F = IlB$, ja $P = Fv$ (hetkellinen teho)
+**Kaava:** $$\begin{aligned} I &= \dfrac{e}{R} \\ F &= IlB\sin 90^\circ = IlB \\ P &= Fv \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $I = \dfrac{0{,}30\,\text{V}}{0{,}60\,\Omega} = 0{,}50\,\text{A}$, $F = 0{,}50\,\text{A} \cdot 0{,}30\,\text{m} \cdot 0{,}40\,\text{T} = 0{,}060\,\text{N}$ ja $P = 0{,}060\,\text{N} \cdot 2{,}5\,\text{m/s} = 0{,}15\,\text{W}$
 **Vastaus:** Virta on $0{,}50\,\text{A}$, magneettinen voima $0{,}060\,\text{N}$ ja vetoteho $0{,}15\,\text{W}$.
@@ -229,7 +229,7 @@ Sähköteho $eI = 0{,}30\,\text{V} \cdot 0{,}50\,\text{A} = 0{,}15\,\text{W}$ mu
 **Annettu:** $e_0 = 17{,}5\,\text{V}$, $N = 90$, $A = 0{,}0150\,\text{m}^2$, $f = 40\,\text{Hz}$
 **Kysytty:** vuontiheys $B$
 **Periaate:** Pyörivässä käämissä magneettivuo $\Phi = BA\cos(2\pi f t)$ muuttuu sinimuotoisesti, ja induktiolain mukaan jännitteen huippuarvo on vuon muutosnopeuden huippu.
-**Kaava:** generaattorissa käämiin indusoituvan sinimuotoisen vaihtojännitteen huippuarvo $e_0 = NBA \cdot 2\pi f$, josta $B = \dfrac{e_0}{NA \cdot 2\pi f}$
+**Kaava:** $$\begin{aligned} \Phi &= BA\cos(2\pi f t) \\ e &= -N\dfrac{\text{d}\Phi}{\text{d}t} = NBA \cdot 2\pi f \sin(2\pi f t) \\ e_0 &= NBA \cdot 2\pi f \\ B &= \dfrac{e_0}{NA \cdot 2\pi f} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $B = \dfrac{17{,}5\,\text{V}}{90 \cdot 0{,}0150\,\text{m}^2 \cdot 2\pi \cdot 40\,\text{Hz}} = \dfrac{17{,}5\,\text{V}}{339{,}3\,\text{m}^2/\text{s}}$ $= 0{,}0516\,\text{T}$
 **Vastaus:** Vuontiheys on noin $0{,}052\,\text{T}$.
@@ -239,7 +239,7 @@ Sähköteho $eI = 0{,}30\,\text{V} \cdot 0{,}50\,\text{A} = 0{,}15\,\text{W}$ mu
 **Annettu:** $N_1 = 150$, $U_1 = 12{,}37\,\text{V}$ (kohdan a tulos lisänumerolla), $U_2 = 230\,\text{V}$, $P = 46\,\text{W}$
 **Kysytty:** toisiokäämin kierrosluku $N_2$ ja ensiövirta $I_1$
 **Periaate:** Ideaalisessa muuntajassa jännitteet suhtautuvat kuten kierrosluvut ja virrat käänteisesti. Toisiovirta saadaan kuorman tehosta.
-**Kaava:** muuntaja $\dfrac{U_1}{U_2} = \dfrac{N_1}{N_2} = \dfrac{I_2}{I_1}$, josta $N_2 = \dfrac{N_1 U_2}{U_1}$ ja $I_1 = \dfrac{I_2 U_2}{U_1}$, ja kuormalle $I_2 = \dfrac{P}{U_2}$
+**Kaava:** $$\begin{aligned} \dfrac{U_1}{U_2} &= \dfrac{N_1}{N_2} = \dfrac{I_2}{I_1} \\ I_2 &= \dfrac{P}{U_2} \\ N_2 &= \dfrac{N_1 U_2}{U_1} \\ I_1 &= \dfrac{I_2 U_2}{U_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $N_2 = \dfrac{150 \cdot 230\,\text{V}}{12{,}37\,\text{V}} = 2789$, $I_2 = \dfrac{46\,\text{W}}{230\,\text{V}} = 0{,}200\,\text{A}$ ja $I_1 = \dfrac{0{,}200\,\text{A} \cdot 230\,\text{V}}{12{,}37\,\text{V}} = 3{,}72\,\text{A}$
 **Vastaus:** Toisiossa tarvitaan noin $2790$ kierrosta, ja ensiökäämin virta on noin $3{,}7\,\text{A}$.
@@ -264,7 +264,7 @@ Samalla teholla $P = UI$ suuremman jännitteen virta on pienempi, ja johdon häv
 **Annettu:** $\lambda = 532\,\text{nm}$, $L = 1{,}500\,\text{m}$, $k = 1$, $x = 0{,}243\,\text{m}$
 **Kysytty:** hilaväli $d$
 **Periaate:** Maksimin suuntakulma saadaan suorakulmaisesta kolmiosta, jonka kateetit ovat $x$ ja $L$. Maksimi syntyy, kun matkaero vierekkäisistä raoista on kokonaisluku aallonpituuksia.
-**Kaava:** $\tan\theta = \dfrac{x}{L}$ ja hilayhtälö $d\sin\theta = k\lambda$, josta $d = \dfrac{k\lambda}{\sin\theta}$
+**Kaava:** $$\begin{aligned} \tan\theta &= \dfrac{x}{L} \\ d\sin\theta &= k\lambda \\ d &= \dfrac{k\lambda}{\sin\theta} \end{aligned}$$
 **Muunnokset:** $532\,\text{nm} = 5{,}32 \cdot 10^{-7}\,\text{m}$
 **Sijoitus:** $\tan\theta = \dfrac{0{,}243\,\text{m}}{1{,}500\,\text{m}} = 0{,}162$, joten $\theta = 9{,}20^\circ$ ja $d = \dfrac{1 \cdot 5{,}32 \cdot 10^{-7}\,\text{m}}{\sin 9{,}20^\circ} = 3{,}33 \cdot 10^{-6}\,\text{m}$
 **Vastaus:** Hilaväli on noin $3{,}33\,\mu\text{m}$ (kolme merkitsevää numeroa, kuten mittauksessa).
@@ -274,7 +274,7 @@ Samalla teholla $P = UI$ suuremman jännitteen virta on pienempi, ja johdon häv
 **Annettu:** $x = 0{,}243$, $0{,}503$ ja $0{,}822\,\text{m}$ kertaluvuilla $1$, $2$ ja $3$, $\Delta x = 2\,\text{mm}$
 **Kysytty:** hilaväli kustakin kertaluvusta, parhaana arviona ja luotettavin kertaluku
 **Periaate:** Jokaisesta maksimista voi laskea hilavälin. Lukemaepävarmuus etenee tulokseen: siirretään $x$ arvon $\pm\Delta x$ verran ja katsotaan, kuinka paljon $d$ muuttuu.
-**Kaava:** $d = \dfrac{k\lambda}{\sin\theta}$, $\theta = \arctan\dfrac{x}{L}$, ja $\Delta d = \dfrac{d_{x-\Delta x} - d_{x+\Delta x}}{2}$
+**Kaava:** $$\begin{aligned} d\sin\theta &= k\lambda \\ \theta &= \arctan\dfrac{x}{L} \\ d &= \dfrac{k\lambda}{\sin\theta} \\ \Delta d &= \dfrac{d_{x-\Delta x} - d_{x+\Delta x}}{2} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $k = 1$: $d = 3{,}327\,\mu\text{m}$, $k = 2$: $\theta = 18{,}54^\circ$, $d = \dfrac{2 \cdot 0{,}532\,\mu\text{m}}{\sin 18{,}54^\circ} = 3{,}347\,\mu\text{m}$ ja $k = 3$: $\theta = 28{,}72^\circ$, $d = \dfrac{3 \cdot 0{,}532\,\mu\text{m}}{\sin 28{,}72^\circ} = 3{,}321\,\mu\text{m}$. Keskiarvo $\dfrac{3{,}327 + 3{,}347 + 3{,}321}{3}\,\mu\text{m} = 3{,}33\,\mu\text{m}$. Epävarmuudet ovat $\pm 27\,\text{nm}$, $\pm 12\,\text{nm}$ ja $\pm 6\,\text{nm}$ eli $0{,}8\,\%$, $0{,}4\,\%$ ja $0{,}2\,\%$.
 **Vastaus:** Hilaväli on parhaana arviona $3{,}33\,\mu\text{m}$ (noin $300$ viivaa/mm). Kertaluku $k = 3$ antaa luotettavimman tuloksen.
@@ -284,7 +284,7 @@ Samalla teholla $P = UI$ suuremman jännitteen virta on pienempi, ja johdon häv
 **Annettu:** $d = 3{,}33\,\mu\text{m}$, $\lambda = 532\,\text{nm}$
 **Kysytty:** suurin kertaluku $k_\text{max}$
 **Periaate:** Maksimi suunnassa $\theta$ edellyttää $\sin\theta \le 1$.
-**Kaava:** $d\sin\theta = k\lambda$, joten $\sin\theta = \dfrac{k\lambda}{d} \le 1$ ja $k \le \dfrac{d}{\lambda}$
+**Kaava:** $$\begin{aligned} d\sin\theta &= k\lambda \\ \sin\theta &= \dfrac{k\lambda}{d} \le 1 \\ k &\le \dfrac{d}{\lambda} \end{aligned}$$
 **Muunnokset:** $3{,}33\,\mu\text{m} = 3330\,\text{nm}$
 **Sijoitus:** $k \le \dfrac{3330\,\text{nm}}{532\,\text{nm}} = 6{,}26$
 **Vastaus:** Suurin kertaluku on $k_\text{max} = 6$, koska kertaluvun on oltava kokonaisluku. Maksimeja syntyy kaikkiaan $13$ ($k = -6, \ldots, 6$).
@@ -309,7 +309,7 @@ Korkeammilla kertaluvuilla hajaantuminen on leveämpää ja spektrit menevät p�
 **Annettu:** $P = 12\,\text{MW}$, $R = 4{,}8\,\Omega$, siirtojännite $20\,\text{kV}$ (A) tai $110\,\text{kV}$ (B)
 **Kysytty:** kaapelin häviöiden osuus tuotetusta tehosta kummassakin vaihtoehdossa
 **Periaate:** Siirrettävä teho ja siirtojännite määräävät kaapelissa kulkevan virran. Kaapelin resistanssissa virta muuttaa osan sähköenergiasta kaapelin sisäenergiaksi, ja häviöteho riippuu virran neliöstä. Siksi lasketaan virta ja häviöteho kummallekin jännitteelle.
-**Kaava:** $P = UI$, josta $I = \dfrac{P}{U}$, ja häviöteho $P_\text{h} = RI^2$
+**Kaava:** $$\begin{aligned} P &= UI \\ I &= \dfrac{P}{U} \\ P_\text{h} &= RI^2 \end{aligned}$$
 **Muunnokset:** $12\,\text{MW} = 12 \cdot 10^{6}\,\text{W}$, $20\,\text{kV} = 20 \cdot 10^{3}\,\text{V}$ ja $110\,\text{kV} = 110 \cdot 10^{3}\,\text{V}$
 **Sijoitus:** A: $I = \dfrac{12 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}} = 600\,\text{A}$ ja $P_\text{h} = 4{,}8\,\Omega \cdot (600\,\text{A})^2 = 1{,}728 \cdot 10^{6}\,\text{W}$, osuus $\dfrac{1{,}728\,\text{MW}}{12\,\text{MW}} = 0{,}144$. B: $I = \dfrac{12 \cdot 10^{6}\,\text{W}}{110 \cdot 10^{3}\,\text{V}} = 109{,}1\,\text{A}$ ja $P_\text{h} = 4{,}8\,\Omega \cdot (109{,}1\,\text{A})^2 = 5{,}71 \cdot 10^{4}\,\text{W}$, osuus $0{,}0048$
 **Vastaus:** Vaihtoehdossa A virta on $600\,\text{A}$ ja häviöteho noin $1{,}7\,\text{MW}$ eli $14\,\%$ tehosta. Vaihtoehdossa B virta on noin $109\,\text{A}$ ja häviöteho noin $57\,\text{kW}$ eli $0{,}48\,\%$. Ero johtuu siitä, että jännite on $5{,}5$-kertainen, virta $5{,}5$ kertaa pienempi ja häviöteho virran neliön mukaan $30$ kertaa pienempi.
@@ -319,7 +319,7 @@ Korkeammilla kertaluvuilla hajaantuminen on leveämpää ja spektrit menevät p�
 **Annettu:** $U_1 = 20\,\text{kV}$, $U_2 = 110\,\text{kV}$, $N_2 = 2750$, $P = 12\,\text{MW}$
 **Kysytty:** $20\,\text{kV}$:n puolen kierrosluku $N_1$ ja virta $I_1$
 **Periaate:** Ideaalisessa muuntajassa jännitteet suhtautuvat kuten kierrosluvut ja teho säilyy.
-**Kaava:** muuntaja $\dfrac{U_1}{U_2} = \dfrac{N_1}{N_2} = \dfrac{I_2}{I_1}$, josta $N_1 = \dfrac{N_2 U_1}{U_2}$ ja ensiövirralle $I_1 = \dfrac{P}{U_1}$
+**Kaava:** $$\begin{aligned} \dfrac{U_1}{U_2} &= \dfrac{N_1}{N_2} = \dfrac{I_2}{I_1} \\ N_1 &= \dfrac{N_2 U_1}{U_2} \\ P &= U_1 I_1 \\ I_1 &= \dfrac{P}{U_1} \end{aligned}$$
 **Muunnokset:** Kilovolttien suhde riittää.
 **Sijoitus:** $N_1 = \dfrac{2750 \cdot 20\,\text{kV}}{110\,\text{kV}} = 500$ ja $I_1 = \dfrac{12 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}} = 600\,\text{A}$
 **Vastaus:** Ensiökäämissä on $500$ kierrosta ja ensiövirta on $600\,\text{A}$.
@@ -329,7 +329,7 @@ Korkeammilla kertaluvuilla hajaantuminen on leveämpää ja spektrit menevät p�
 **Annettu:** $P_\text{h,A} = 1{,}728\,\text{MW}$, $P_\text{h,B} = 57{,}1\,\text{kW}$, $4000\,\text{h}$, $50\,\text{€/MWh}$, lisäkustannus $3{,}0\,\text{M€}$
 **Kysytty:** vuosisäästö ja takaisinmaksuaika
 **Periaate:** Häviöenergia on häviöteho kerrottuna ajalla, ja sen arvo saadaan hinnalla. Takaisinmaksuaika on lisäkustannus jaettuna vuosisäästöllä.
-**Kaava:** $E = P_\text{h} t$, säästö $= (E_\text{A} - E_\text{B}) \cdot \text{hinta}$ ja takaisinmaksuaika $= \dfrac{\text{lisäkustannus}}{\text{säästö}}$
+**Kaava:** Merkitään hintaa $p$, lisäkustannusta $K$ ja säästöä $S$. $$\begin{aligned} E &= P_\text{h} t \\ S &= (E_\text{A} - E_\text{B})\,p \\ t_\text{takaisin} &= \dfrac{K}{S} \end{aligned}$$
 **Muunnokset:** $$\begin{aligned} &1{,}728\,\text{MW} \cdot 4000\,\text{h} \\ &= 6912\,\text{MWh} \end{aligned}$$ ja $$\begin{aligned} &0{,}0571\,\text{MW} \cdot 4000\,\text{h} \\ &= 228{,}5\,\text{MWh} \end{aligned}$$
 **Sijoitus:** säästö $$\begin{aligned} &= (6912\,\text{MWh} - 228{,}5\,\text{MWh}) \\ &\cdot 50\,\text{€/MWh} \\ &= 334\,200\,\text{€} \end{aligned}$$ ja takaisinmaksuaika $= \dfrac{3{,}0 \cdot 10^{6}\,\text{€}}{334\,200\,\text{€/a}} = 8{,}98\,\text{a}$
 **Vastaus:** Vaihtoehto B säästää noin $3{,}3 \cdot 10^{5}\,\text{€}$ vuodessa ja muuntajat maksavat itsensä takaisin noin $9{,}0$ vuodessa.

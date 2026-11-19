@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: aae9dd26b4f53cb2
+CONTENT-HASH: 185e6302bbcff16e
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- batch delta review: rewording of the braking retrieval task (car to cyclist), no numbers; opened fy2-8 fig-row-1280 and fy2-4 sim-390 captures as layout sample; diff text read for typography and Finnish, no figure or layout change.
+- batch delta review: rendered the optional 'Find the error' prompt at 390 px (display aligned chain on two rows, decimal comma, options intact); opened sim-390 and fig-row-1280.

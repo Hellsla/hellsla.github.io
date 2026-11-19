@@ -24,7 +24,7 @@
       "type": "choice",
       "title": "Review: beta minus decay",
       "optional": true,
-      "prompt": "A carbon-14 nucleus decays by beta minus decay: ${}^{14}_{6}\\text{C} \\to {}^{14}_{7}\\text{N} + e^- + \\bar{\\nu}$. What happens in the nucleus?",
+      "prompt": "A carbon-14 nucleus decays by beta minus decay: ${}^{14}_{6}\\text{C} \\to {}^{14}_{7}\\text{N} + e^- + \\bar{\\nu}$. The event is the same as the decay of a free neutron. What happens in the nucleus?",
       "choices": [
         {
           "text": "One neutron turns into a proton, and an electron and an antineutrino are produced.",

@@ -165,6 +165,12 @@ Jarrut hidastavat pyörien pyörimistä, mutta autoa hidastaa tie. Vaakasuoralla
 
 Kitkalla on yläraja, joka riippuu renkaiden ja tien pinnasta. Kuivalla asfaltilla hidastuvuus voi olla noin $9\,\text{m/s}^2$, ja tätä arvoa käyttää myös Liikenneturvan laskuri. Märällä, lumisella ja jäisellä tiellä kitka ja siksi hidastuvuus ovat pienempiä, jäällä vain murto-osa kuivan tien arvosta. Lukkiutumattomat jarrut (ABS) estävät pyöriä lukkiutumasta. Pyörivän renkaan pinta ei liu'u tien suhteen, joten renkaaseen vaikuttaa lepokitka, joka voi olla suurempi kuin liukuvan renkaan liukukitka, ja auto pysyy ohjattavana.
 
+```pysahdy
+Miksi auton jarrutusmatka on jäisellä tiellä pidempi kuin kuivalla asfaltilla, vaikka jarrupoljinta painetaan täysillä?
+---
+Jäällä kitka on pienempi, joten hidastuvuus on pienempi. Auton pysäyttäminen kestää silloin kauemmin ja auto ehtii kulkea pidemmän matkan.
+```
+
 ### Nopeus kasvattaa jarrutusmatkaa jyrkästi
 Reaktiomatka on suoraan verrannollinen nopeuteen: kaksinkertaisella nopeudella auto kulkee reaktioajassa kaksinkertaisen matkan. Jarrutusmatka kasvaa jyrkemmin. Kun hidastuvuus on sama, kaksinkertaisen nopeuden pysäyttäminen kestää kaksi kertaa kauemmin, ja koko tämän ajan auto liikkuu kaksi kertaa nopeammin. Jarrutusmatka on siksi neljä kertaa pidempi. Kuvassa reaktioaika on $1{,}0\,\text{s}$ ja hidastuvuus $9{,}0\,\text{m/s}^2$ kummallakin nopeudella.
 
@@ -236,6 +242,12 @@ Reaktiomatka on suoraan verrannollinen nopeuteen: kaksinkertaisella nopeudella a
 
 Tästä saadaan vastaus alun kysymyksen ensimmäiseen osaan. Kun nopeus kaksinkertaistuu $50\,\text{km/h}$:sta $100\,\text{km/h}$:iin, reaktiomatka kaksinkertaistuu $13{,}9\,\text{m}$:stä $27{,}8\,\text{m}$:iin, mutta jarrutusmatka nelinkertaistuu $10{,}7\,\text{m}$:stä $42{,}9\,\text{m}$:iin. Pysähtymismatka kasvaa siksi $24{,}6\,\text{m}$:stä $70{,}6\,\text{m}$:iin, lähes kolminkertaiseksi.
 
+```pysahdy
+Kuljettaja jarruttaa pysähdyksiin nopeudesta $40\,\text{km/h}$ eikä nopeudesta $80\,\text{km/h}$. Miten jarrutusmatka muuttuu, kun hidastuvuus on sama?
+---
+Se lyhenee neljäsosaan. Pysäyttäminen kestää vain puolet ajasta, ja auto liikkuu koko ajan puolta hitaammin.
+```
+
 ### Sama liikemäärän muutos, eri törmäysaika
 Jos este on lähempänä kuin pysähtymismatka, auto törmää. Nokkakolarissa auton keula rypistyy, ja auto pysähtyy noin sekunnin kymmenesosassa. Kun matkustaja pysähtyy auton mukana, hänen liikemääränsä $p = mv$ muuttuu arvosta $mv$ nollaan. Samanmassaisen matkustajan liikemäärän muutos on sama turvavyön kanssa ja ilman, kun hän pysähtyy samasta alkunopeudesta samaan loppunopeuteen: alku- ja loppunopeus määräävät liikemäärän muutoksen. Todellisessa onnettomuudessa turvavyöttömän matkustajan liike ei kuitenkaan välttämättä pääty auton pysähtyessä, sillä hän voi esimerkiksi lentää tuulilasin läpi. Kun liikemäärän muutos on sama, vain sitä, kuinka pitkä on **törmäysaika** $\Delta t$ eli aika, jossa matkustaja pysähtyy, voidaan muuttaa. Luvussa *Liikemäärä ja impulssi* opit, että liikemäärän muutos on yhtä suuri kuin impulssi $\overline{I} = \overline{F}\,\Delta t$. Mitä pidempi törmäysaika, sitä pienempi voima riittää samaan liikemäärän muutokseen.
 
@@ -284,6 +296,12 @@ Jos este on lähempänä kuin pysähtymismatka, auto törmää. Nokkakolarissa a
 </svg>
 
 Ilman turvavyötä matkustaja jatkaa liikettään lähes alkuperäisellä nopeudella, kun auto hidastuu hänen ympärillään: Newtonin ensimmäisen lain mukaan mikään voima ei vielä hidasta häntä. Hän osuu ohjauspyörään, kojelautaan tai tuulilasiin ja pysähtyy sekunnin sadasosissa. **Turvavyö** kiinnittää matkustajan autoon, joten hän hidastuu auton rypistyvän keulan mukana. Vyö myös venyy hieman ja jakaa voiman lantion, rintakehän ja olkapään vahvoille luille. Turvatyyny täyttyy sekunnin sadasosissa ja ottaa vastaan pään ja ylävartalon. Se pidentää pysähtymisaikaa ja jakaa voiman suurelle alalle, joten paine kehoon on pienempi. Turvatyyny on suunniteltu toimimaan yhdessä turvavyön kanssa, ei sen sijasta.
+
+```pysahdy
+Auto pysähtyy törmäyksessä. Miksi vyötön matkustaja jatkaa eteenpäin, vaikka mikään ei työnnä häntä?
+---
+Mikään voima ei hidasta häntä, joten Newtonin ensimmäisen lain mukaan hän jatkaa liikettä entisellä nopeudella, kun auto pysähtyy hänen ympärillään.
+```
 
 <figure class="unit-photo"><img src="pics/fy4/side-impact-crash-test.webp" alt="Keltainen pikkuauto testihallissa, sen kylki painunut sisään ja korissa mittausmerkkejä."><figcaption>Vuoden 2014 Chevrolet Spark Yhdysvaltain liikenneturvallisuusviraston (NHTSA) sivutörmäystestin jälkeen. Auton kylki on painunut sisään.</figcaption></figure>
 

@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 12315fb70075c238
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: ec2edc61b407e7f1
 
 ## Blocking
-- (none)
+(none)
 
 ## Polish
-- (none)
+- [Minor] Only contact sheet 5 was opened for this language; other changed solution blocks were judged from the diff text and the earlier Sovella visual report, not each capture.
 
 ## Checked
-- Hunks: solutions.md b) Mallivastaus, tasks.json first criterion of b, unit.md Yleisiä virheitä ("sisäenergiaksi muuttuu liike-energiaa", which is also more exact than the old "energiaa"). All three say the same thing in the same words.
-- Captures opened: `fy9-sailymislait-stage-exercises-390-36.png`, `-390-39.png`, `fy9-sailymislait-stage-selita-390-7.png`, `fy9-sailymislait-stage-selita-1280-6.png`: the bullet, the model answer and the rubric row render whole.
-- The changed places were found in the built `fi` page by their position in each stage; the contact sheets were not used for triage. No figure and no added task in this unit's diff; the rest stands under the previous PASS.
+- Diff origin/main...HEAD (excluding review/): paragraph breaks only in sovella/solutions.md and the inquiry.json solution field; words, maths and figures unchanged. Display formulas stay intact; the break falls after the sentence that closes them.
+- contact-5.png (fi): Sovella tasks 3.3-4 and 3.3-5 with open model answers (#54-#60): the new breaks give short paragraphs with even spacing, display formulas stay inside the cards, no clipping, overflow or orphaned formula fragment.
+- Read the earlier Sovella visual report (PASS) as evidence; it agrees.
+- Not opened: other contact sheets, full-size captures, figures (unchanged).
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

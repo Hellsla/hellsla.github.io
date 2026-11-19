@@ -289,7 +289,9 @@ A violet laser pointer emits light with a wavelength of $405\,\text{nm}$. The li
 
 <!-- vaihe -->
 
-**Given and asked.** Wavelength $\lambda = 405\,\text{nm}$, work function $W = 2.28\,\text{eV}$, Planck constant $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, speed of light $c = 2.998 \cdot 10^8\,\text{m/s}$ and $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$. The maximum kinetic energy $E_\text{k,max}$ is asked.
+**Given and asked.** Wavelength $\lambda = 405\,\text{nm}$, work function $W = 2.28\,\text{eV}$, Planck constant $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, speed of light $c = 2.998 \cdot 10^8\,\text{m/s}$ and $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
+
+The maximum kinetic energy $E_\text{k,max}$ is asked.
 
 <!-- vaihe -->
 

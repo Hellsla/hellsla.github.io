@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 53b02751f63afd8a
-Round 2: delta against the version round 1 reviewed (fix round 1).
+CONTENT-HASH: c415a4f87c3b7043
+SCOPE: delta: round 1 fixes (s8 d 7360 N -> 7400 N in criterion and model answer; en: s9 b criterion translation, "centripetal acceleration" in s8 and figure alt); s1-s7 not re-judged.
 
 ## Blocking
-- (none)
+- (none) Previous Blocking items resolved.
 
 ## Polish
-- C: s7 b reasonableness: with h = 400 km the consistent period is 92,4 min, so the rounding of T alone gives the whole 0,9 % difference (T = 92 min would fit h = 380 km). "ja malliin valitulla korkeudella yhdessä" is defensible (the pair T, h is not exactly consistent) but adds nothing; optional.
+- Round 1 Polish items stay recorded (s9 b 331 N vs 330 N intermediate wording).
+
 
 ## Checked
-- s7 a principle: the new sentence says the 370-460 km interval is where the altitude is kept over time, not a variation within one orbit; correct, and 90 km / 6771 km = 1,3 % still supports the circular model.
-- s7 b reasonableness recomputed: a_n = 4 pi^2 r / T^2 = 8,773 m/s^2; gamma M / r^2 = 8,694 m/s^2; difference 0,9 %. The new wording is not wrong (see Polish).
-- s7 e: the shadow-edge angle is now defined from the Earth's centre against the direction pointing away from the Sun, with sin(theta) = R/r: correct for a cylindrical shadow with the Sun in the orbital plane (perpendicular distance r sin(theta) = R). theta = 70,2 deg, 2 theta / 360 deg = 39,0 %, 35,9 min, 84 kW / 0,61 = 138, about 140 kW: unchanged and right.
-- `practice.py check` OK (7 tasks, 110 points).
+- 7400 N now in tasks.json s8 d and solutions.md line 606; 7400 = 0,50 * 1500 * 9,81 = 7357 rounded to two figures; ratio 4500/7400 = 61 % unchanged, v_max and answers unaffected.
+- No leftover 7360 in task files (only in review notes).
+- Hash unchanged at end of review; practice.py check OK for fi, en, fi-easy (9 tasks, 142 points).
+- No new physics or terms introduced by the change.
+

@@ -265,7 +265,9 @@ Ympyröidyt kohdat ovat ne kaksi suoran pistettä, joista b-kohdan kulmakerroin 
 ### c)
 **Kysytty:** vaunun voimakuvio, kun $F = 1{,}20\,\text{N}$, ja kuvion yhteys b-kohdan malliin
 **Periaate:** Vaunuun vaikuttavat Maa (paino), rata (tukivoima ja kitka) ja lanka (veto). Lanka on vaakasuora. Siksi pystysuunnassa vaikuttavat vain paino ja tukivoima, ja ne kumoavat toisensa.
-**Mallivastaus:** Vaunu piirretään suorakulmioksi. Paino $\overline{G}$ lähtee keskipisteestä alas, ja tukivoima $\overline{N}$ lähtee alapinnasta ylös. Ne ovat yhtä pitkät. Langan veto $\overline{T}$ lähtee kiinnityskohdasta eteenpäin. Kitka $\overline{F}_\mu$ lähtee alapinnan takakulmasta taaksepäin. Kitka on noin viidesosa vedosta. Kiihtyvyys merkitään erikseen kuvion viereen. Vaakasuorat voimat on piirretty omassa mittakaavassaan, koska ne ovat paljon pienempiä kuin paino.
+**Mallivastaus:** Vaunu piirretään suorakulmioksi. Paino $\overline{G}$ lähtee keskipisteestä alas, ja tukivoima $\overline{N}$ lähtee alapinnasta ylös. Ne ovat yhtä pitkät. Langan veto $\overline{T}$ lähtee kiinnityskohdasta eteenpäin. Kitka $\overline{F}_\mu$ lähtee alapinnan takakulmasta taaksepäin. Kitka on noin viidesosa vedosta. Kiihtyvyys merkitään erikseen kuvion viereen.
+
+Vaakasuorat voimat on piirretty omassa mittakaavassaan, koska ne ovat paljon pienempiä kuin paino.
 ```voimakuvio
 pinta 0
 G 8,35
@@ -306,17 +308,23 @@ $$.
 ### a)
 **Kysytty:** mikä voima kiihdyttää kävelijää eteenpäin ja miksi peilijäällä on vaikeaa lähteä liikkeelle
 **Periaate:** Kappaleen liiketilaa muuttavat vain ulkoiset voimat, jotka vaikuttavat siihen (Newtonin toinen laki). Voima ja vastavoima vaikuttavat eri kappaleisiin (kolmas laki). Lepokitka on enintään $\mu_0 N$.
-**Mallivastaus:** Kun Ella astuu, hänen jalkansa työntää maata taaksepäin. Kolmannen lain mukaan maa työntää jalkaa eteenpäin yhtä suurella voimalla. Tämä voima on maan lepokitka. Jalka pyrkii liukumaan taaksepäin maan suhteen, ja kitka estää sen. Lepokitka on ainoa vaakasuora ulkoinen voima. Siksi juuri se kiihdyttää Ellaa eteenpäin. Ellan lihasten voimat ovat hänen sisäisiä voimiaan. Ne eivät yksin voi muuttaa koko kehon liiketilaa. Peilijäällä lepokitkakerroin on pieni. Siksi kitkan yläraja $\mu_0 N$ on pieni. Jos jalka työntää taaksepäin lujemmin kuin kitka pystyy vastustamaan, jalka liukuu. Siksi suurin mahdollinen kiihtyvyys jää pieneksi. Jäällä kävellään lyhyin askelin, ja jalka asetetaan melkein pystysuoraan.
+**Mallivastaus:** Kun Ella astuu, hänen jalkansa työntää maata taaksepäin. Kolmannen lain mukaan maa työntää jalkaa eteenpäin yhtä suurella voimalla. Tämä voima on maan lepokitka. Jalka pyrkii liukumaan taaksepäin maan suhteen, ja kitka estää sen. Lepokitka on ainoa vaakasuora ulkoinen voima. Siksi juuri se kiihdyttää Ellaa eteenpäin.
+
+Ellan lihasten voimat ovat hänen sisäisiä voimiaan. Ne eivät yksin voi muuttaa koko kehon liiketilaa. Peilijäällä lepokitkakerroin on pieni. Siksi kitkan yläraja $\mu_0 N$ on pieni. Jos jalka työntää taaksepäin lujemmin kuin kitka pystyy vastustamaan, jalka liukuu. Siksi suurin mahdollinen kiihtyvyys jää pieneksi. Jäällä kävellään lyhyin askelin, ja jalka asetetaan melkein pystysuoraan.
 
 ### b)
 **Kysytty:** pitääkö väite ”moottori työntää autoa eteenpäin” paikkansa
 **Periaate:** Auton liikettä muuttavat vain ulkoiset voimat, jotka vaikuttavat autoon. Moottori on auton osa. Siksi sen voimat pyöriin ja koriin ovat sisäisiä voimia, jotka kumoavat toisensa (kolmas laki).
-**Mallivastaus:** Väite on vain osittain oikein. Moottori pyörittää etupyöriä. Moottori ei kuitenkaan voi yksin työntää koko autoa, koska se on auton sisällä. Pyörivä rengas pyrkii liukumaan taaksepäin tien pinnan suhteen. Tien lepokitka vastustaa tätä liukumista, ja siksi kitka osoittaa eteenpäin. Tämä tien voima vetäviin pyöriin on ulkoinen voima, joka kiihdyttää autoa. Siksi auto ei pääse liikkeelle peilijäällä, vaikka moottori kävisi täysillä. Pyörät vain sutivat eli pyörivät paikallaan, koska kitka ei riitä.
+**Mallivastaus:** Väite on vain osittain oikein. Moottori pyörittää etupyöriä. Moottori ei kuitenkaan voi yksin työntää koko autoa, koska se on auton sisällä. Pyörivä rengas pyrkii liukumaan taaksepäin tien pinnan suhteen. Tien lepokitka vastustaa tätä liukumista, ja siksi kitka osoittaa eteenpäin.
+
+Tämä tien voima vetäviin pyöriin on ulkoinen voima, joka kiihdyttää autoa. Siksi auto ei pääse liikkeelle peilijäällä, vaikka moottori kävisi täysillä. Pyörät vain sutivat eli pyörivät paikallaan, koska kitka ei riitä.
 
 ### c)
 **Kysytty:** kiihtyvän auton voimakuvio, kun ilmanvastus ja vierimisvastus otetaan huomioon
 **Periaate:** Autoon vaikuttavat Maa (paino), tie (tukivoima, lepokitka vetäviin pyöriin ja vierimisvastus) ja ilma (ilmanvastus). Auto kiihtyy, joten kokonaisvoima osoittaa eteenpäin.
-**Mallivastaus:** Auto piirretään suorakulmioksi. Paino $\overline{G}$ lähtee keskipisteestä alas, ja tukivoima $\overline{N}$ lähtee alapinnasta ylös. Ne ovat yhtä pitkät. Tien lepokitka vetäviin pyöriin $\overline{F}_\mu$ lähtee alapinnan etukulmasta eteenpäin. Vierimisvastus $\overline{F}_\text{r}$ ja ilmanvastus $\overline{F}_\text{v}$ osoittavat taaksepäin. Eteenpäin osoittava kitka on suurempi kuin vastukset, koska auto kiihtyy. Nopeus ja kiihtyvyys merkitään kuvion viereen. Suuruudet ovat vain esimerkkejä. Vaakasuorat voimat on piirretty omassa mittakaavassaan. Tukivoiman voi jakaa myös kahdeksi tukivoimaksi: etupyörien $\overline{N}_1$ ja takapyörien $\overline{N}_2$.
+**Mallivastaus:** Auto piirretään suorakulmioksi. Paino $\overline{G}$ lähtee keskipisteestä alas, ja tukivoima $\overline{N}$ lähtee alapinnasta ylös. Ne ovat yhtä pitkät. Tien lepokitka vetäviin pyöriin $\overline{F}_\mu$ lähtee alapinnan etukulmasta eteenpäin. Vierimisvastus $\overline{F}_\text{r}$ ja ilmanvastus $\overline{F}_\text{v}$ osoittavat taaksepäin.
+
+Eteenpäin osoittava kitka on suurempi kuin vastukset, koska auto kiihtyy. Nopeus ja kiihtyvyys merkitään kuvion viereen. Suuruudet ovat vain esimerkkejä. Vaakasuorat voimat on piirretty omassa mittakaavassaan. Tukivoiman voi jakaa myös kahdeksi tukivoimaksi: etupyörien $\overline{N}_1$ ja takapyörien $\overline{N}_2$.
 ```voimakuvio
 pinta 0
 G 100
@@ -336,7 +344,9 @@ v oikea
 a_\text{max} &\approx 0{,}8 \cdot 9{,}81\,\text{m/s}^2 \\
 &\approx 8\,\text{m/s}^2
 \end{aligned}
-$$, ja jäällä $0{,}1 \cdot 9{,}81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, kun vastuksia ei oteta huomioon. Etuvetoisessa autossa eteenpäin vievä lepokitka vaikuttaa vain vetäviin etupyöriin. Niiden tukivoima on vain osa auton painosta, esimerkiksi noin puolet. Silloin suurin kiihdyttävä voima on $\mu_0 N_\text{etu} < \mu_0 mg$, ja suurin kiihtyvyys on pienempi. Jäällä etuvetoinen auto voi siis kiihtyä enintään alle $1\,\text{m/s}^2$.
+$$, ja jäällä $0{,}1 \cdot 9{,}81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, kun vastuksia ei oteta huomioon.
+
+Etuvetoisessa autossa eteenpäin vievä lepokitka vaikuttaa vain vetäviin etupyöriin. Niiden tukivoima on vain osa auton painosta, esimerkiksi noin puolet. Silloin suurin kiihdyttävä voima on $\mu_0 N_\text{etu} < \mu_0 mg$, ja suurin kiihtyvyys on pienempi. Jäällä etuvetoinen auto voi siis kiihtyä enintään alle $1\,\text{m/s}^2$.
 
 ### Yleisiä virheitä
 - Kävelijää tai autoa ”työntävät” lihakset tai moottori. Silloin sisäinen voima esitetään ulkoisena voimana.
@@ -349,7 +359,9 @@ $$, ja jäällä $0{,}1 \cdot 9{,}81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, kun
 ### a)
 **Annettu:** rajakulmat $22^\circ$, $24^\circ$, $21^\circ$, $23^\circ$ ja $33^\circ$; mittauksessa 5 kirjaa nostettiin nykäisten
 **Kysytty:** lepokitkakerroin $\mu_0$ ja sen epävarmuus
-**Periaate:** Rajakulmalla painon kannen suuntainen komponentti on yhtä suuri kuin lähtökitka eli täysin kehittynyt lepokitka. Tukivoima on painon kohtisuora komponentti (luku *Paino, kitka ja kalteva taso*). Mittaus 5 jätetään pois, koska raporttiin on kirjattu karkea virhe eli selvä virhe mittauksen tekemisessä. Nopea nosto painaa kantta hetken puhelinta vasten. Silloin tukivoima ja lepokitkan yläraja kasvavat hetkeksi. Lisäksi kulma luetaan liian myöhään. Siksi $33^\circ$ ei ole liukumisen raja. Tulosta ei poistettaisi pelkästään siksi, että se poikkeaa muista.
+**Periaate:** Rajakulmalla painon kannen suuntainen komponentti on yhtä suuri kuin lähtökitka eli täysin kehittynyt lepokitka. Tukivoima on painon kohtisuora komponentti (luku *Paino, kitka ja kalteva taso*).
+
+Mittaus 5 jätetään pois, koska raporttiin on kirjattu karkea virhe eli selvä virhe mittauksen tekemisessä. Nopea nosto painaa kantta hetken puhelinta vasten. Silloin tukivoima ja lepokitkan yläraja kasvavat hetkeksi. Lisäksi kulma luetaan liian myöhään. Siksi $33^\circ$ ei ole liukumisen raja. Tulosta ei poistettaisi pelkästään siksi, että se poikkeaa muista.
 **Kaava:** $mg\sin\alpha_0 = \mu_0 mg\cos\alpha_0$, joten $\mu_0 = \tan\alpha_0$. Rajakulmana käytetään hyväksyttyjen mittausten keskiarvoa $\alpha_\text{ka} = \dfrac{\alpha_1 + \alpha_2 + \alpha_3 + \alpha_4}{4}$, joten $\mu_0 = \tan\alpha_\text{ka}$. Epävarmuus on puolet vaihteluvälistä: $\Delta\mu_0 = \dfrac{\tan\alpha_\text{max} - \tan\alpha_\text{min}}{2}$.
 **Muunnokset:** Ei tarvita. Kulmat ovat asteina, eikä kertoimella ole yksikköä.
 **Sijoitus:** $\alpha_\text{ka} = \dfrac{22^\circ + 24^\circ + 21^\circ + 23^\circ}{4} = 22{,}5^\circ$ ja $\mu_0 = \tan 22{,}5^\circ = 0{,}414$. Hajonnan rajat: $\tan 21^\circ = 0{,}384$ ja $\tan 24^\circ = 0{,}445$
@@ -440,7 +452,9 @@ $$. Matka on pitkä, mutta tamppautuneella eli tiiviiksi painetulla lumella se o
 ### c)
 **Kysytty:** liukuuko raskas isä pidemmälle kuin kevyet lapset mallissa ja silloin, kun ilmanvastus otetaan huomioon
 **Periaate:** Mallissa kaikki voimat ovat verrannollisia massaan. Siksi massa supistuu liikeyhtälöistä. Ilmanvastus riippuu nopeudesta sekä laskijan koosta ja asennosta. Se ei riipu massasta (luku *Ilmanvastus ja putoaminen ilmassa*).
-**Mallivastaus:** a- ja b-kohdan mallissa $a_1 = g(\sin\alpha - \mu\cos\alpha)$ ja $a_2 = -\mu g$. Massa ei siis vaikuta nopeuteen eikä liukumatkaan. Isä ja lapset pysähtyvät samaan kohtaan. Todellisuudessa ilmanvastus $F_\text{v}$ hidastaa jokaista lisää. Se muuttaa laskijan kiihtyvyyttä määrällä $F_\text{v} : m$. Isä on suurempi kuin lapsi. Siksi isän ilmanvastus on samalla nopeudella vähän suurempi. Isän massa on kuitenkin paljon suurempi. Siksi ilmanvastus on pienempi osa hänen painostaan. Isän hidastuvuus kasvaa siis vähemmän, ja hän liukuu todennäköisesti pidemmälle. Väite voi siis pitää paikkansa. Syy on kuitenkin ilmanvastus. Syy ei ole se, että raskas laskija painaisi liukuria eteenpäin. Myös asento, liukurin pohja ja lumen kohta vaikuttavat tulokseen.
+**Mallivastaus:** a- ja b-kohdan mallissa $a_1 = g(\sin\alpha - \mu\cos\alpha)$ ja $a_2 = -\mu g$. Massa ei siis vaikuta nopeuteen eikä liukumatkaan. Isä ja lapset pysähtyvät samaan kohtaan. Todellisuudessa ilmanvastus $F_\text{v}$ hidastaa jokaista lisää. Se muuttaa laskijan kiihtyvyyttä määrällä $F_\text{v} : m$. Isä on suurempi kuin lapsi. Siksi isän ilmanvastus on samalla nopeudella vähän suurempi. Isän massa on kuitenkin paljon suurempi. Siksi ilmanvastus on pienempi osa hänen painostaan.
+
+Isän hidastuvuus kasvaa siis vähemmän, ja hän liukuu todennäköisesti pidemmälle. Väite voi siis pitää paikkansa. Syy on kuitenkin ilmanvastus. Syy ei ole se, että raskas laskija painaisi liukuria eteenpäin. Myös asento, liukurin pohja ja lumen kohta vaikuttavat tulokseen.
 
 ### Yleisiä virheitä
 - Rinteessä kitkaksi otetaan $\mu mg$, vaikka $N = mg\cos\alpha$.
@@ -450,3 +464,274 @@ $$. Matka on pitkä, mutta tamppautuneella eli tiiviiksi painetulla lumella se o
 
 ### Hyväksytään myös
 - a- ja b-kohdan ratkaisu työn ja energian avulla, kun tulokset ovat samat ($v^2 = 2gL(\sin\alpha - \mu\cos\alpha)$ ja $\mu mg s_2 = \tfrac{1}{2}mv^2$).
+
+## fy9-voimat-s7
+
+### a)
+**Annettu:** kuvaajan pisteet $(0\,\text{s};\ 0\,\text{m/s})$, $(2\,\text{s};\ 18{,}6\,\text{m/s})$, $(6\,\text{s};\ 40{,}4\,\text{m/s})$ ja $(10\,\text{s};\ 46{,}4\,\text{m/s})$; nopeus alaspäin, positiivinen suunta alas
+**Kysytty:** keskikiihtyvyydet $a_1$ ($0\ldots 2\,\text{s}$) ja $a_2$ ($6\ldots 10\,\text{s}$)
+**Periaate:** Kiihtyvyys on nopeuden muutos jaettuna ajalla (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*). Keskikiihtyvyys on sen suoran kulmakerroin, joka yhdistää kaksi $(t,v)$-kuvaajan pistettä.
+**Kuvaajan lukeminen:** Pisteet ovat kaukana toisistaan, joten niistä luetaan nopeudet: $0\ldots 2\,\text{s}$: $0$ ja $18{,}6\,\text{m/s}$; $6\ldots 10\,\text{s}$: $40{,}4\,\text{m/s}$ ja $46{,}4\,\text{m/s}$.
+**Kaava:** $$
+\begin{aligned}
+a &= \dfrac{\Delta v}{\Delta t} \\
+&= \dfrac{v_2 - v_1}{t_2 - t_1}
+\end{aligned}
+$$
+**Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja ajat sekunteina.
+**Sijoitus:** $$
+\begin{aligned}
+a_1 &= \dfrac{18{,}6\,\text{m/s} - 0}{2\,\text{s} - 0} \\
+&= 9{,}3\,\text{m/s}^2
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+a_2 &= \dfrac{46{,}4\,\text{m/s} - 40{,}4\,\text{m/s}}{10\,\text{s} - 6\,\text{s}} \\
+&= \dfrac{6{,}0\,\text{m/s}}{4\,\text{s}} \\
+&= 1{,}5\,\text{m/s}^2
+\end{aligned}
+$$
+**Vastaus:** $a_1 \approx 9{,}3\,\text{m/s}^2$ ja $a_2 \approx 1{,}5\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten luetuissa nopeuksissa.
+**Järkevyys:** Heti hypyn jälkeen ilmanvastus on vielä pieni. Silloin kiihtyvyys on lähellä putoamiskiihtyvyyttä $9{,}81\,\text{m/s}^2$. Myöhemmin ilmanvastus on kasvanut lähelle painoa, ja kiihtyvyys on pieni. Kuvaaja loivenee, ja se sopii tähän.
+
+### b)
+**Annettu:** $m = 75{,}0\,\text{kg}$, $a_2 = 1{,}5\,\text{m/s}^2$ välillä $6\ldots 10\,\text{s}$ eli keskiarvona hetkellä $8\,\text{s}$, $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** ilmanvastus $F_\text{v}$ hetkellä $8\,\text{s}$
+**Periaate:** Hyppääjään vaikuttavat paino alas ja ilmanvastus ylös. Newtonin toisen lain mukaan kokonaisvoima on massa kertaa kiihtyvyys (luku *Newtonin toinen laki*, luku *Ilmanvastus ja putoaminen ilmassa*).
+**Voimakuvio:** Hyppääjä suorakulmiona, $y$-akseli alas. Paino $\overline{G}$ keskipisteestä alas, ilmanvastus $\overline{F}_\text{v}$ alapinnasta ylös ja hieman painoa lyhyempi, kiihtyvyys ja nopeus alas.
+```voimakuvio
+G 735,8
+F_v 623,3 ylös työntö @ala
+a alas
+v alas
+```
+**Kaava:** Alas positiivinen: $mg - F_\text{v} = ma$, joten $F_\text{v} = m(g - a)$
+**Muunnokset:** Ei tarvita, suureet ovat perusyksiköissä.
+**Sijoitus:** $$
+\begin{aligned}
+F_\text{v} &= 75{,}0\,\text{kg} \\
+&\quad \cdot (9{,}81\,\text{m/s}^2 \\
+&\qquad - 1{,}5\,\text{m/s}^2) \\
+&= 75{,}0\,\text{kg} \cdot 8{,}31\,\text{m/s}^2 \\
+&= 623\,\text{N}
+\end{aligned}
+$$
+**Vastaus:** $$
+\begin{aligned}
+F_\text{v} &\approx 6{,}2 \cdot 10^2\,\text{N}
+\end{aligned}
+$$, kaksi merkitsevää numeroa kuten kiihtyvyydessä.
+**Järkevyys:** Paino on $mg = 736\,\text{N}$, ja $$
+\begin{aligned}
+623\,\text{N} : 736\,\text{N} &\approx 0{,}85
+\end{aligned}
+$$. Ilmanvastus on siis noin $85\,\%$ painosta. Se sopii pieneen kiihtyvyyteen $1{,}5\,\text{m/s}^2$. Jos ilmanvastus olisi nolla, kiihtyvyys olisi $9{,}81\,\text{m/s}^2$.
+
+### c)
+**Annettu:** $F_\text{v} = 623{,}25\,\text{N}$ nopeudella $v = 44{,}5\,\text{m/s}$ (kuvaajan piste hetkellä $8\,\text{s}$), $mg = 735{,}75\,\text{N}$, $F_\text{v} = kv^2$
+**Kysytty:** rajanopeus $v_\text{r}$
+**Periaate:** Rajanopeudella kiihtyvyys on nolla. Silloin ilmanvastus on yhtä suuri kuin paino (luku *Ilmanvastus ja putoaminen ilmassa*). Kerroin $k$ pysyy samana, koska asento on sama.
+**Voimakuvio:** Hyppääjä suorakulmiona: paino $\overline{G}$ alas ja ilmanvastus $\overline{F}_\text{v}$ ylös, yhtä pitkät; kiihtyvyys on nolla ja nopeus alas.
+```voimakuvio
+G 735,8
+F_v 735,8 ylös työntö @ala
+a 0
+v alas
+```
+**Kaava:** Hetkellä $8\,\text{s}$: $F_\text{v} = kv^2$, joten $k = \dfrac{F_\text{v}}{v^2}$. Rajanopeudella: $kv_\text{r}^2 = mg$, joten $$
+\begin{aligned}
+v_\text{r} &= \sqrt{\dfrac{mg}{k}} \\
+&= v\sqrt{\dfrac{mg}{F_\text{v}}}
+\end{aligned}
+$$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+v_\text{r} &= 44{,}5\,\text{m/s} \cdot \sqrt{\dfrac{735{,}75\,\text{N}}{623{,}25\,\text{N}}} \\
+&= 44{,}5\,\text{m/s} \cdot 1{,}0865 \\
+&= 48{,}4\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** $v_\text{r} \approx 48\,\text{m/s}$, kaksi merkitsevää numeroa kuten luetussa nopeudessa.
+**Järkevyys:** Kuvaajassa nopeus on hetkellä $12\,\text{s}$ jo $47{,}3\,\text{m/s}$. Se kasvaa yhä hitaasti ($0{,}9\,\text{m/s}$ kahdessa sekunnissa). Siksi rajanopeus on hieman tätä suurempi. Arvio $$
+\begin{aligned}
+48\,\text{m/s} &\approx 174\,\text{km/h}
+\end{aligned}
+$$ on oikean suuruinen vatsa alaspäin putoavalle hyppääjälle.
+
+### d)
+**Annettu:** $m' = 100\,\text{kg}$, $m = 75{,}0\,\text{kg}$, b- ja c-kohdan arvoista $$
+\begin{aligned}
+k &= \dfrac{623{,}25\,\text{N}}{(44{,}5\,\text{m/s})^2} \\
+&= 0{,}3147\,\text{kg/m}
+\end{aligned}
+$$
+**Kysytty:** toisen hyppääjän rajanopeus $v_\text{r}'$ ja vertailu
+**Periaate:** Rajanopeudella ilmanvastus on yhtä suuri kuin paino: $kv_\text{r}^2 = mg$. Asento ja varusteet ovat samat, joten $k$ on sama. Ilmanvastus riippuu nopeudesta ja asennosta. Se ei riipu massasta. Siksi raskaampi hyppääjä tarvitsee suuremman nopeuden, jotta ilmanvastus on yhtä suuri kuin hänen painonsa.
+**Mallivastaus:** Rajanopeudelle pätee $v_\text{r} = \sqrt{\dfrac{mg}{k}}$, joten $$
+\begin{aligned}
+v_\text{r}' &= \sqrt{\dfrac{m'g}{k}} \\
+&= \sqrt{\dfrac{100\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{0{,}3147\,\text{kg/m}}} \\
+&= \sqrt{3117\,\text{m}^2/\text{s}^2} \\
+&= 55{,}8\,\text{m/s}
+\end{aligned}
+$$ Suhde on $$
+\begin{aligned}
+\dfrac{v_\text{r}'}{v_\text{r}} &= \sqrt{\dfrac{m'}{m}} \\
+&= \sqrt{\dfrac{100\,\text{kg}}{75{,}0\,\text{kg}}} \\
+&= 1{,}155
+\end{aligned}
+$$. Raskaamman hyppääjän rajanopeus on noin $56\,\text{m/s}$ eli noin $15\,\%$ suurempi. Massa on kuitenkin $33\,\%$ suurempi, koska rajanopeus kasvaa massan neliöjuuren mukana. Raskaampi hyppääjä saavuttaa rajanopeuden myös hitaammin. Hänen painonsa on suurempi, joten ilmanvastuksen on kasvettava suuremmaksi.
+
+### Yleisiä virheitä
+- Kiihtyvyys luetaan yhdestä pisteestä tai nopeuden arvosta. Kiihtyvyys on kuitenkin nopeuden muutos jaettuna ajalla, ei nopeus.
+- Ilmanvastukseksi otetaan $mg$ tai $ma$. Ilmanvastus on kuitenkin $m(g - a)$, koska paino ja ilmanvastus vaikuttavat yhdessä.
+- Rajanopeudeksi otetaan kuvaajan viimeinen piste $47{,}3\,\text{m/s}$, vaikka nopeus kasvaa vielä.
+- d-kohdassa väitetään, että rajanopeus on verrannollinen massaan ($100 : 75 \cdot 48\,\text{m/s} \approx 64\,\text{m/s}$), vaikka $v_\text{r} \propto \sqrt{m}$.
+
+### Hyväksytään myös
+- a- ja b-kohdan luvut luetuilla arvoilla, jotka poikkeavat vähän (esim. $v_\text{8\,s} = 44{,}6\,\text{m/s}$); tulos $a_2$ välillä $1{,}4\ldots 1{,}6\,\text{m/s}^2$ ja $F_\text{v}$ välillä $600\ldots 650\,\text{N}$.
+
+## fy9-voimat-s8
+
+### a)
+**Annettu:** $m = 75{,}0\,\text{kg}$, lukema $N = 650\,\text{N}$ aikavälillä $1{,}0\ldots 3{,}0\,\text{s}$ (kuvaajan vaakasuora kohta), $g = 9{,}81\,\text{m/s}^2$; ylös positiivinen
+**Kysytty:** kiihtyvyys $a$
+**Periaate:** Henkilöön vaikuttavat paino alas ja levyn tukivoima ylös. Levyn lukema on tukivoima. Newtonin toisen lain mukaan kokonaisvoima on massa kertaa kiihtyvyys (luku *Newtonin toinen laki*, luku *Soveltava tunti: hissi, laskuvarjo ja kelkkamäki*).
+**Kuvaajan lukeminen:** Aikavälillä $1{,}0\ldots 3{,}0\,\text{s}$ lukema on vakio $650\,\text{N}$, ja ennen sitä ja sen jälkeen $736\,\text{N}$.
+**Voimakuvio:** Henkilö suorakulmiona, $y$-akseli ylös. Paino $\overline{G}$ keskipisteestä alas ja tukivoima $\overline{N}$ alapinnasta ylös, hieman painoa lyhyempi; kiihtyvyys osoittaa alas.
+```voimakuvio
+pinta 0
+G 735,8
+N 650
+a alas
+v alas
+```
+**Kaava:** Ylös positiivinen: $N - mg = ma$, joten $a = \dfrac{N - mg}{m}$
+**Muunnokset:** Ei tarvita, suureet ovat perusyksiköissä.
+**Sijoitus:** $$
+\begin{aligned}
+a &= \dfrac{650\,\text{N} - 75{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{75{,}0\,\text{kg}} \\
+&= \dfrac{650\,\text{N} - 735{,}75\,\text{N}}{75{,}0\,\text{kg}} \\
+&= -1{,}14\,\text{m/s}^2
+\end{aligned}
+$$
+**Vastaus:** $a \approx -1{,}1\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten lukemassa $650\,\text{N}$. Miinusmerkki kertoo, että kiihtyvyys osoittaa alas.
+**Järkevyys:** Lukema on pienempi kuin paino $736\,\text{N}$, joten kokonaisvoima osoittaa alas. Kiihtyvyys $1{,}1\,\text{m/s}^2$ on noin $12\,\%$ putoamiskiihtyvyydestä. Se on tavallinen hissin lähtökiihtyvyys.
+
+### b)
+**Annettu:** $a = -1{,}14\,\text{m/s}^2$ a-kohdasta, hissi levossa hetkellä $1{,}0\,\text{s}$ ja kiihtyvyys vakio aikavälillä $1{,}0\ldots 3{,}0\,\text{s}$
+**Kysytty:** nopeus $v$ hetkellä $3{,}0\,\text{s}$
+**Periaate:** Vakiokiihtyvyydellä nopeus muuttuu tasaisesti, $v = v_0 + a\,\Delta t$ (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*).
+**Kuvaajan lukeminen:** Kiihtyvyys kestää hetkestä $1{,}0\,\text{s}$ hetkeen $3{,}0\,\text{s}$, joten $$
+\begin{aligned}
+\Delta t &= 3{,}0\,\text{s} - 1{,}0\,\text{s} \\
+&= 2{,}0\,\text{s}
+\end{aligned}
+$$.
+**Kaava:** $v = v_0 + a\,\Delta t$, ja $v_0 = 0$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+v &= 0 + (-1{,}14\,\text{m/s}^2) \cdot 2{,}0\,\text{s} \\
+&= -2{,}29\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** $v \approx -2{,}3\,\text{m/s}$, eli $2{,}3\,\text{m/s}$ alaspäin, kaksi merkitsevää numeroa kuten ajassa $2{,}0\,\text{s}$.
+**Järkevyys:** Miinusmerkki sopii alaspäin kulkevaan hissiin. Nopeus $$
+\begin{aligned}
+2{,}3\,\text{m/s} &\approx 8{,}2\,\text{km/h}
+\end{aligned}
+$$ on tavallinen hissin matkanopeus. Nopeus pysyy samana välillä $3{,}0\ldots 6{,}0\,\text{s}$, koska lukema on silloin $736\,\text{N}$.
+
+### c)
+**Annettu:** $m = 75{,}0\,\text{kg}$, $N = 800\,\text{N}$ aikavälillä $6{,}0\ldots 8{,}7\,\text{s}$, $v = -2{,}29\,\text{m/s}$ hetkellä $6{,}0\,\text{s}$, $g = 9{,}81\,\text{m/s}^2$; ylös positiivinen
+**Kysytty:** kiihtyvyys $a$ ja pysähtyykö hissi hetkellä $8{,}7\,\text{s}$
+**Periaate:** Kuten a-kohdassa: $N - mg = ma$. Lukema on nyt suurempi kuin paino. Siksi kokonaisvoima ja kiihtyvyys osoittavat ylös, vastakkaiseen suuntaan kuin nopeus. Hissi hidastuu.
+**Kuvaajan lukeminen:** Aikavälillä $6{,}0\ldots 8{,}7\,\text{s}$ lukema on $800\,\text{N}$; kesto on $$
+\begin{aligned}
+8{,}7\,\text{s} - 6{,}0\,\text{s} &= 2{,}7\,\text{s}
+\end{aligned}
+$$.
+**Voimakuvio:** Henkilö suorakulmiona: paino $\overline{G}$ alas ja tukivoima $\overline{N}$ ylös, painoa pidempi; kiihtyvyys ylös, nopeus alas.
+```voimakuvio
+pinta 0
+G 735,8
+N 800
+a ylös
+v alas
+```
+**Kaava:** $a = \dfrac{N - mg}{m}$ ja nopeuden muutos $\Delta v = a\,\Delta t$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+a &= \dfrac{800\,\text{N} - 735{,}75\,\text{N}}{75{,}0\,\text{kg}} \\
+&= 0{,}857\,\text{m/s}^2
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+v_\text{loppu} &= -2{,}29\,\text{m/s} \\
+&\quad + 0{,}857\,\text{m/s}^2 \cdot 2{,}7\,\text{s} \\
+&= -2{,}29\,\text{m/s} + 2{,}31\,\text{m/s} \\
+&\approx 0
+\end{aligned}
+$$
+**Vastaus:** $a \approx 0{,}86\,\text{m/s}^2$ ylöspäin. Nopeus on lopussa nolla ($0{,}02\,\text{m/s}$ on pyöristysero), joten hissi pysähtyy hetkellä $8{,}7\,\text{s}$.
+**Järkevyys:** Hidastuvuus $0{,}86\,\text{m/s}^2$ on pienempi kuin lähtökiihtyvyys $1{,}1\,\text{m/s}^2$. Siksi jarrutus kestää pidempään ($2{,}7\,\text{s}$ eikä $2{,}0\,\text{s}$): $$
+\begin{aligned}
+1{,}14 \cdot 2{,}0 &\approx 0{,}857 \cdot 2{,}7
+\end{aligned}
+$$.
+
+### d)
+**Annettu:** $|v| = 2{,}29\,\text{m/s}$ välillä $3{,}0\ldots 6{,}0\,\text{s}$; nopeus kasvaa nollasta hetkestä $1{,}0\,\text{s}$ hetkeen $3{,}0\,\text{s}$ ja pienenee nollaan hetkeen $8{,}7\,\text{s}$
+**Kysytty:** hissin kulkema matka $s$ välillä $1{,}0\ldots 8{,}7\,\text{s}$
+**Periaate:** $(t,v)$-kuvaajan ja aika-akselin väliin jäävä pinta-ala on kuljettu matka (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*). Kiihtyvyys on vakio kolmella jaksolla, joten nopeuden suuruuden kuvaaja on puolisuunnikas.
+**Kuvaajan lukeminen:** Puolisuunnikkaan pitkä kanta on koko liike $$
+\begin{aligned}
+8{,}7\,\text{s} - 1{,}0\,\text{s} &= 7{,}7\,\text{s}
+\end{aligned}
+$$ ja lyhyt kanta tasaisen nopeuden jakso $$
+\begin{aligned}
+6{,}0\,\text{s} - 3{,}0\,\text{s} &= 3{,}0\,\text{s}
+\end{aligned}
+$$; korkeus on $|v| = 2{,}29\,\text{m/s}$.
+**Kaava:** $s = \tfrac{1}{2}(t_1 + t_2)\,|v|$, jossa $t_1$ ja $t_2$ ovat puolisuunnikkaan yhdensuuntaiset sivut
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+s &= \tfrac{1}{2} \cdot (7{,}7\,\text{s} + 3{,}0\,\text{s}) \cdot 2{,}29\,\text{m/s} \\
+&= 5{,}35\,\text{s} \cdot 2{,}29\,\text{m/s} \\
+&= 12{,}2\,\text{m}
+\end{aligned}
+$$
+**Vastaus:** $s \approx 12\,\text{m}$ alaspäin, kaksi merkitsevää numeroa kuten nopeudessa.
+**Järkevyys:** Tarkistus jaksoittain: $$
+\begin{aligned}
+s &= 2{,}29\,\text{m} + 6{,}87\,\text{m} \\
+&\quad + 3{,}09\,\text{m} \\
+&= 12{,}25\,\text{m}
+\end{aligned}
+$$ ($\tfrac{1}{2}\cdot 2{,}29\,\text{m/s} \cdot 2{,}0\,\text{s}$, $2{,}29\,\text{m/s} \cdot 3{,}0\,\text{s}$ ja $\tfrac{1}{2}\cdot 2{,}29\,\text{m/s} \cdot 2{,}7\,\text{s}$). Noin $12\,\text{m}$ vastaa noin neljää kerrosta, ja se sopii $7{,}7\,\text{s}$ kestävälle ajolle.
+
+### e)
+**Kysytty:** mitä levyn lukema mittaa ja miksi lukema on $736\,\text{N}$ levossa ja tasaisella nopeudella
+**Periaate:** Levy mittaa voimaa, jolla se tukee henkilöä. Painovoima on Maan vetovoima $mg$, ja se riippuu vain massasta ja paikasta. Newtonin toisen lain mukaan kokonaisvoima määrää kiihtyvyyden, ei nopeutta (luku *Newtonin toinen laki*).
+**Mallivastaus:** Lukema on tukivoima $N$. Painovoima $$
+\begin{aligned}
+mg &= 75{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+&= 736\,\text{N}
+\end{aligned}
+$$ ei muutu, kun hissi liikkuu. Levossa ja tasaisella nopeudella kiihtyvyys on nolla, joten $N - mg = 0$ ja $N = mg = 736\,\text{N}$. Lukema ei riipu siitä, liikkuuko hissi. Se riippuu siitä, kiihtyykö hissi.
+
+Kun hissi lähtee alas, kiihtyvyys osoittaa alas ja $N - mg = ma < 0$. Silloin $N < mg$, ja lukema pienenee arvoon $650\,\text{N}$. Henkilön tunne siitä, että hän on kevyempi, on todellinen. Painovoima ei kuitenkaan pienentynyt. Arkikielessä ”paino” tarkoittaa usein levyn lukemaa, ja se pienenee.
+
+### Yleisiä virheitä
+- Painovoimaksi otetaan levyn lukema $650\,\text{N}$, jolloin $a$-kohdan yhtälö antaa nollan.
+- Kiihtyvyyden etumerkki sekoitetaan: ylös valitaan positiiviseksi, mutta lasketaan $mg - N$. Silloin kiihtyvyys tulee positiivisena.
+- Nopeus lasketaan kaavalla $v = a\,t$ ajalla $3{,}0\,\text{s}$. Kiihtyvyys kestää kuitenkin vain välin $1{,}0\ldots 3{,}0\,\text{s}$ ($\Delta t = 2{,}0\,\text{s}$).
+- Matkaksi lasketaan vain tasaisen nopeuden jakso ($2{,}29\,\text{m/s} \cdot 3{,}0\,\text{s}$), ja kiihtyvät jaksot unohdetaan.
+
+### Hyväksytään myös
+- Painovoima luetaan kuvaajasta ($736\,\text{N}$) laskun $75{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2$ sijaan; tulokset ovat samat kahden merkitsevän numeron tarkkuudella.
+- d-kohdassa matka jaksoittain summaamalla, kun tulos on sama ($12\,\text{m}$).

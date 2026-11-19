@@ -35,7 +35,9 @@ $$. Se on noin yhtä suuri kuin putoamiskiihtyvyys. Jarrutus tuntuu voimakkaana 
 ### d)
 **Kysytty:** pitävätkö valvojan väite ja sen perustelu paikkansa
 **Periaate:** Ilman vastusvoimia mekaaninen energia säilyy ja massa supistuu pois: $v = \sqrt{2gh}$. Vastusvoimien työ $W_\text{muut}$ pienentää mekaanista energiaa (luku *Mekaanisen energian säilyminen ja energiaperiaate*).
-**Mallivastaus:** Perustelu on väärä. Painovoima vetää kevyttä laskijaa heikommin. Kevyen laskijan liikkeelle saamiseen tarvitaan kuitenkin samassa suhteessa vähemmän energiaa. Ilman vastusvoimia massa supistuu pois energiayhtälöstä, ja kaikki tulisivat perille nopeudella $\sqrt{2gh} \approx 26{,}6\,\text{m/s}$. Havainto voi silti pitää paikkansa vastusvoimien takia. Ilmanvastus riippuu laskijan koosta ja asennosta, mutta se ei ole verrannollinen massaan. Laskijan mekaaninen energia on verrannollinen massaan. Siksi ilmanvastus vie kevyen laskijan mekaanisesta energiasta suuremman osuuden, ja hän tulee perille hitaammin. Syy on siis ilmanvastus, ei heikompi painovoima.
+**Mallivastaus:** Perustelu on väärä. Painovoima vetää kevyttä laskijaa heikommin. Kevyen laskijan liikkeelle saamiseen tarvitaan kuitenkin samassa suhteessa vähemmän energiaa. Ilman vastusvoimia massa supistuu pois energiayhtälöstä, ja kaikki tulisivat perille nopeudella $\sqrt{2gh} \approx 26{,}6\,\text{m/s}$. Havainto voi silti pitää paikkansa vastusvoimien takia.
+
+Ilmanvastus riippuu laskijan koosta ja asennosta, mutta se ei ole verrannollinen massaan. Laskijan mekaaninen energia on verrannollinen massaan. Siksi ilmanvastus vie kevyen laskijan mekaanisesta energiasta suuremman osuuden, ja hän tulee perille hitaammin. Syy on siis ilmanvastus, ei heikompi painovoima.
 
 ### Yleisiä virheitä
 - a-kohdassa kirjoitetaan $v = 2gh$, ja neliöjuuri unohtuu. Silloin myös yksikkö on väärä, $\text{m}^2\text{/s}^2$.
@@ -98,7 +100,9 @@ $$. Matka on lyhyt, koska kivellä on jäljellä vain noin $6\,\%$ alkuperäises
 ### d)
 **Kysytty:** miksi harjattu kivi liukuu pidemmälle, vaikka harjat eivät koske kiveen
 **Periaate:** Energiaperiaatteen mukaan kitka tekee negatiivisen työn $-\mu mgs$. Liukumatka on $s = \dfrac{v^2}{2\mu g}$ (luku *Mekaanisen energian säilyminen ja energiaperiaate*).
-**Mallivastaus:** Kun kivi päästetään irti, sillä on tietty liike-energia $\tfrac12 mv^2$. Kun kivi liukuu, liike-energia muuttuu kiven ja jään sisäenergiaksi. Tämä tapahtuu kitkan tekemän negatiivisen työn kautta. Jokainen metri vie liike-energiaa määrän $\mu mg$. Harjaus pienentää kitkakerrointa. Silloin metriä kohti kuluu vähemmän liike-energiaa, ja sama liike-energia riittää pidemmälle matkalle. Matka on kääntäen verrannollinen kitkakertoimeen. Harjaus ei siis lisää kiven energiaa, eikä kiven tarvitse koskea harjaan. Harjaus vain muuttaa jäätä kiven edessä niin, että kitkan työ metriä kohti pienenee.
+**Mallivastaus:** Kun kivi päästetään irti, sillä on tietty liike-energia $\tfrac12 mv^2$. Kun kivi liukuu, liike-energia muuttuu kiven ja jään sisäenergiaksi. Tämä tapahtuu kitkan tekemän negatiivisen työn kautta. Jokainen metri vie liike-energiaa määrän $\mu mg$.
+
+Harjaus pienentää kitkakerrointa. Silloin metriä kohti kuluu vähemmän liike-energiaa, ja sama liike-energia riittää pidemmälle matkalle. Matka on kääntäen verrannollinen kitkakertoimeen. Harjaus ei siis lisää kiven energiaa, eikä kiven tarvitse koskea harjaan. Harjaus vain muuttaa jäätä kiven edessä niin, että kitkan työ metriä kohti pienenee.
 
 ### Yleisiä virheitä
 - a-kohdassa energiaperiaatteeseen otetaan potentiaalienergia, vaikka jää on vaakasuora. Toinen virhe on vähentää nopeudet ennen kuin ne korotetaan toiseen: $(2{,}40 - 0{,}62)^2$ ei ole sama kuin $2{,}40^2 - 0{,}62^2$.
@@ -302,7 +306,9 @@ Ympyröidyt kohdat ovat suoran kaksi pistettä. Niistä luetaan c-kohdan kulmake
 ### a)
 **Kysytty:** pitääkö väite 1 paikkansa, ja mistä tuulivoimalan teho riippuu
 **Periaate:** Tuulen teho on sen ilman liike-energia, joka virtaa roottorin läpi sekunnissa. Voimala muuttaa siitä osuuden $\eta$ sähköksi: $P = \tfrac12 \eta \rho A v^3$ (luku *Vesi- ja tuulivoima energian muuntajina*).
-**Mallivastaus:** Väite on väärä, koska siinä oletetaan, että teho on verrannollinen tuulen nopeuteen. Teho riippuu nopeudesta kahdella tavalla. Ensinnäkin jokaisella ilmakilogrammalla on liike-energiaa $\tfrac12 v^2$, ja se kasvaa nopeuden neliössä. Toiseksi roottorin läpi virtaa sekunnissa ilmaa massa $\rho A v$, ja se kasvaa nopeuden mukana. Siksi teho on verrannollinen nopeuden kuutioon. Kun nopeus kasvaa $6\,\text{m/s}$:sta $9\,\text{m/s}$:iin, teho kasvaa kertoimella $\dfrac{P_2}{P_1} = \left(\dfrac{v_2}{v_1}\right)^3 = \left(\tfrac{9}{6}\right)^3 = 3{,}375$. Teho kasvaa siis noin $240\,\%$ eikä $50\,\%$. Tämä pätee, kun hyötysuhde pysyy suunnilleen samana ja voimala ei vielä käy nimellisteholla. Nimellistehon yläpuolella lapoja käännetään, ja tehoa rajoitetaan.
+**Mallivastaus:** Väite on väärä, koska siinä oletetaan, että teho on verrannollinen tuulen nopeuteen. Teho riippuu nopeudesta kahdella tavalla. Ensinnäkin jokaisella ilmakilogrammalla on liike-energiaa $\tfrac12 v^2$, ja se kasvaa nopeuden neliössä. Toiseksi roottorin läpi virtaa sekunnissa ilmaa massa $\rho A v$, ja se kasvaa nopeuden mukana.
+
+Siksi teho on verrannollinen nopeuden kuutioon. Kun nopeus kasvaa $6\,\text{m/s}$:sta $9\,\text{m/s}$:iin, teho kasvaa kertoimella $\dfrac{P_2}{P_1} = \left(\dfrac{v_2}{v_1}\right)^3 = \left(\tfrac{9}{6}\right)^3 = 3{,}375$. Teho kasvaa siis noin $240\,\%$ eikä $50\,\%$. Tämä pätee, kun hyötysuhde pysyy suunnilleen samana ja voimala ei vielä käy nimellisteholla. Nimellistehon yläpuolella lapoja käännetään, ja tehoa rajoitetaan.
 
 ### b)
 **Kysytty:** pitääkö väite 2 paikkansa, ja mikä on vesivoimalan energiaketju
@@ -312,7 +318,11 @@ Ympyröidyt kohdat ovat suoran kaksi pistettä. Niistä luetaan c-kohdan kulmake
 &1000\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 9{,}0\,\text{m} \\
 &\approx 88\,\text{kJ}
 \end{aligned}
-$$. Putkessa potentiaalienergia muuttuu liike-energiaksi. Virtaava vesi pyörittää turbiinia, ja turbiini pyörittää generaattoria. Generaattori muuttaa liikkeen energian sähköksi. Veden energia on peräisin auringosta. Auringon säteily haihduttaa vettä. Vesi nousee ilmaan ja sataa ylemmäs valuma-alueelle. Sama vesi ei siis kierrä voimalan läpi itsestään, vaan aurinko ”nostaa” sen joka kerta uudelleen. Kaikki energia, jonka vesi menettää, ei muutu sähköksi. Putken ja turbiinin kitka sekä generaattorin lämpeneminen muuttavat osan energiasta sisäenergiaksi. Lisäksi alaveteen virtaavalla vedellä on vielä liike-energiaa. Siksi hyötysuhde on alle $100\,\%$, tässä $90\,\%$.
+$$. Putkessa potentiaalienergia muuttuu liike-energiaksi. Virtaava vesi pyörittää turbiinia, ja turbiini pyörittää generaattoria. Generaattori muuttaa liikkeen energian sähköksi.
+
+Veden energia on peräisin auringosta. Auringon säteily haihduttaa vettä. Vesi nousee ilmaan ja sataa ylemmäs valuma-alueelle. Sama vesi ei siis kierrä voimalan läpi itsestään, vaan aurinko ”nostaa” sen joka kerta uudelleen.
+
+Kaikki energia, jonka vesi menettää, ei muutu sähköksi. Putken ja turbiinin kitka sekä generaattorin lämpeneminen muuttavat osan energiasta sisäenergiaksi. Lisäksi alaveteen virtaavalla vedellä on vielä liike-energiaa. Siksi hyötysuhde on alle $100\,\%$, tässä $90\,\%$.
 
 ### c)
 **Kysytty:** pitääkö väite 3 paikkansa, ja kuinka suuri on voimalan nykyinen sähköteho
@@ -324,7 +334,9 @@ P &= 0{,}90 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 120\,\tfrac{\text{m}
 &\approx 9{,}54 \cdot 10^{6}\,\text{W} \\
 &\approx 9{,}5\,\text{MW}
 \end{aligned}
-$$. Teho on suoraan verrannollinen sekä virtaamaan $Q$ että putouskorkeuteen $h$. Kun pato korotetaan $9\,\text{m}$:stä $12\,\text{m}$:iin, putouskorkeus kasvaa kertoimella $\dfrac{P'}{P} = \dfrac{h'}{h} = \tfrac{12}{9} = \tfrac43$ eli kolmanneksella. Teho kasvaa samassa suhteessa noin $12{,}7\,\text{MW}$:iin. Jos virtaama kasvaisi kolmanneksella, teho kasvaisi täsmälleen yhtä paljon. Väite pitää siis paikkansa, kun hyötysuhde pysyy samana eikä korotus muuta joen virtaamaa. Käytännössä virtaama riippuu sateista ja valuma-alueesta. Siksi virtaamaa ei voi kasvattaa, mutta korkeutta voi.
+$$. Teho on suoraan verrannollinen sekä virtaamaan $Q$ että putouskorkeuteen $h$. Kun pato korotetaan $9\,\text{m}$:stä $12\,\text{m}$:iin, putouskorkeus kasvaa kertoimella $\dfrac{P'}{P} = \dfrac{h'}{h} = \tfrac{12}{9} = \tfrac43$ eli kolmanneksella. Teho kasvaa samassa suhteessa noin $12{,}7\,\text{MW}$:iin.
+
+Jos virtaama kasvaisi kolmanneksella, teho kasvaisi täsmälleen yhtä paljon. Väite pitää siis paikkansa, kun hyötysuhde pysyy samana eikä korotus muuta joen virtaamaa. Käytännössä virtaama riippuu sateista ja valuma-alueesta. Siksi virtaamaa ei voi kasvattaa, mutta korkeutta voi.
 
 ### Yleisiä virheitä
 - a-kohdassa oletetaan, että teho on verrannollinen nopeuden neliöön, koska liike-energia on $\tfrac12 mv^2$. Silloin unohtuu, että myös sekunnissa virtaava ilmamäärä kasvaa.
@@ -346,12 +358,20 @@ $$. Teho on suoraan verrannollinen sekä virtaamaan $Q$ että putouskorkeuteen $
 ### b)
 **Kysytty:** onko ryhmän johtopäätös perusteltu, ja mistä mittausten ero johtuu
 **Periaate:** Kokonaisliikemäärä säilyy, kun ulkoisten voimien impulssi on niin pieni, ettei sillä ole merkitystä (luku *Liikemäärän säilyminen ja yksiulotteiset törmäykset*). Kimmottomassa törmäyksessä muuttuu liike-energiaa, ei liikemäärää. Systemaattinen virhe siirtää kaikkia tuloksia samaan suuntaan (luku *Mittaaminen ja mittauksen luotettavuus*).
-**Mallivastaus:** Johtopäätös ei ole perusteltu. Kimmottomassa törmäyksessä sisäenergiaksi ja ääneksi muuttuu liike-energiaa. Tässäkin kokeessa 2 katosi noin puolet liike-energiasta. Liikemäärä ei ole energian laji, eikä se voi muuttua sisäenergiaksi. Ero johtuu todennäköisesti siitä, miten mitattiin. Yhteinen nopeus mitattiin vasta $0{,}40$–$0{,}80\,\text{m}$ törmäyskohdan jälkeen. Tavallisella radalla vierimisvastus hidastaa kärryjä koko ajan. Vierimisvastus on ulkoinen voima. Sen impulssi pienentää liikemäärää sinä aikana, kun kärryt kulkevat mittausalueelle. Tätä selitystä tukee kaksi asiaa. Ensinnäkin ero on systemaattinen, sillä liikemäärä pieneni kaikissa kokeissa. Toiseksi suhteellinen ero on suurin hitaimmassa kokeessa ($-12\,\%$) ja pienin nopeimmassa ($-3\,\%$). Hitaat kärryt viipyvät matkalla kauemmin, ja vakiosuuruinen vastusvoima pienentää pientä nopeutta suhteessa enemmän. Hidastuvuuden ei tarvitse olla suuri: kokeessa 2 ero vastaa vain noin $0{,}01\,\text{m/s}^2$:n hidastuvuutta. Aineisto ei siis osoita, että liikemäärä ei säily.
+**Mallivastaus:** Johtopäätös ei ole perusteltu. Kimmottomassa törmäyksessä sisäenergiaksi ja ääneksi muuttuu liike-energiaa. Tässäkin kokeessa 2 katosi noin puolet liike-energiasta. Liikemäärä ei ole energian laji, eikä se voi muuttua sisäenergiaksi. Ero johtuu todennäköisesti siitä, miten mitattiin. Yhteinen nopeus mitattiin vasta $0{,}40$–$0{,}80\,\text{m}$ törmäyskohdan jälkeen. Tavallisella radalla vierimisvastus hidastaa kärryjä koko ajan.
+
+Vierimisvastus on ulkoinen voima. Sen impulssi pienentää liikemäärää sinä aikana, kun kärryt kulkevat mittausalueelle. Tätä selitystä tukee kaksi asiaa. Ensinnäkin ero on systemaattinen, sillä liikemäärä pieneni kaikissa kokeissa. Toiseksi suhteellinen ero on suurin hitaimmassa kokeessa ($-12\,\%$) ja pienin nopeimmassa ($-3\,\%$).
+
+Hitaat kärryt viipyvät matkalla kauemmin, ja vakiosuuruinen vastusvoima pienentää pientä nopeutta suhteessa enemmän. Hidastuvuuden ei tarvitse olla suuri: kokeessa 2 ero vastaa vain noin $0{,}01\,\text{m/s}^2$:n hidastuvuutta. Aineisto ei siis osoita, että liikemäärä ei säily.
 
 ### c)
 **Kysytty:** parannettu koejärjestely, jolla voi testata liikemäärän säilymistä
 **Periaate:** Säilymislakia voi testata vain silloin, kun ulkoisten voimien vaikutus mittausten välillä on pieni ja mittausten epävarmuus tunnetaan (luvut *Liikemäärän säilyminen ja yksiulotteiset törmäykset* ja *Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi*).
-**Mallivastaus:** Nopeudet mitataan mahdollisimman läheltä törmäystä. Esimerkiksi valoportit sijoitetaan juuri ennen törmäyskohtaa ja heti sen jälkeen. Toinen tapa on piirtää videoanalyysillä kummankin kärryn $(t, v)$-kuvaaja ja lukea nopeudet törmäyshetkellä suorien jatkeilta. Vierimisvastuksen vaikutus pienennetään. Voidaan käyttää ilmatyynyrataa, tai rataa voidaan kallistaa hieman niin, että yksin työnnetty kärry liikkuu tasaisella nopeudella. Kärryjen massat punnitaan vaa'alla tarranauhojen kanssa. Jokainen koe toistetaan monta kertaa. Nopeuden ja massan epävarmuudesta arvioidaan, kuinka suuri liikemäärien ero voi olla pelkän mittausepävarmuuden takia. Lisäksi massoja ja nopeuksia vaihdellaan. Jos liikemäärä säilyy kaikissa kokeissa epävarmuuden rajoissa, tulos tukee säilymislakia. Samoista mittauksista lasketaan myös liike-energia ennen ja jälkeen. Muuttunutta osuutta verrataan teoreettiseen arvoon $\dfrac{m_\text{B}}{m_\text{A} + m_\text{B}} = 48\,\%$. Näin raportti erottaa liikemäärän ja energian.
+**Mallivastaus:** Nopeudet mitataan mahdollisimman läheltä törmäystä. Esimerkiksi valoportit sijoitetaan juuri ennen törmäyskohtaa ja heti sen jälkeen. Toinen tapa on piirtää videoanalyysillä kummankin kärryn $(t, v)$-kuvaaja ja lukea nopeudet törmäyshetkellä suorien jatkeilta.
+
+Vierimisvastuksen vaikutus pienennetään. Voidaan käyttää ilmatyynyrataa, tai rataa voidaan kallistaa hieman niin, että yksin työnnetty kärry liikkuu tasaisella nopeudella. Kärryjen massat punnitaan vaa'alla tarranauhojen kanssa. Jokainen koe toistetaan monta kertaa. Nopeuden ja massan epävarmuudesta arvioidaan, kuinka suuri liikemäärien ero voi olla pelkän mittausepävarmuuden takia.
+
+Lisäksi massoja ja nopeuksia vaihdellaan. Jos liikemäärä säilyy kaikissa kokeissa epävarmuuden rajoissa, tulos tukee säilymislakia. Samoista mittauksista lasketaan myös liike-energia ennen ja jälkeen. Muuttunutta osuutta verrataan teoreettiseen arvoon $\dfrac{m_\text{B}}{m_\text{A} + m_\text{B}} = 48\,\%$. Näin raportti erottaa liikemäärän ja energian.
 
 ### Yleisiä virheitä
 - a-kohdassa törmäyksen jälkeinen liikemäärä lasketaan vain kärryn A massalla, vaikka kärryt liikkuvat yhdessä.
@@ -435,3 +455,229 @@ $$
 
 ### Hyväksytään myös
 - c-kohdassa voi laskea pelkällä liike-energialla, $F = \dfrac{15\,675\,\text{J}}{0{,}018\,\text{m}} \approx 0{,}87\,\text{MN}$, jos ratkaisussa todetaan, että painon osuus jätetään pienenä pois.
+
+## fy9-sailymislait-s7
+
+### a)
+**Annettu:** $m = 2{,}0\,\text{kg}$; kuvaajasta alun potentiaalienergia $E_{\text{p}0} = 40\,\text{J}$ (vihreän palkin yläreuna); nollataso on rinteen alapää; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** lähtökorkeus $h$ alapäähän nähden
+**Periaate:** Potentiaalienergia on massa kertaa putoamiskiihtyvyys kertaa korkeus nollatasosta (luku *Liike-energia, potentiaalienergia ja mekaaninen energia*). Alussa kelkka on levossa. Siksi koko mekaaninen energia on potentiaalienergiaa.
+**Kuvaajan lukeminen:** Vihreä palkki ulottuu $40\,\text{J}$:iin, joten $E_{\text{p}0} = 40\,\text{J}$.
+**Kaava:** $E_{\text{p}0} = mgh$, joten $h = \dfrac{E_{\text{p}0}}{mg}$
+**Muunnokset:** Ei tarvita: energia on jouleina ja massa kilogrammoina.
+**Sijoitus:** $$
+\begin{aligned}
+h &= \dfrac{40\,\text{J}}{2{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2} \\
+&= \dfrac{40\,\text{J}}{19{,}62\,\text{N}} \\
+&= 2{,}04\,\text{m}
+\end{aligned}
+$$
+**Vastaus:** $h \approx 2{,}0\,\text{m}$, kaksi merkitsevää numeroa kuten luetut energiat ja massa.
+**Järkevyys:** Rinteen pituus on $6{,}0\,\text{m}$ ja korkeusero $2{,}0\,\text{m}$. Rinteen kaltevuuskulma on $\arcsin\dfrac{2{,}04\,\text{m}}{6{,}0\,\text{m}} \approx 20^\circ$. Se on tavallinen kelkkamäki.
+
+### b)
+**Annettu:** $E_{\text{p}0} = 40\,\text{J}$, lopun liike-energia $E_\text{k} = 25\,\text{J}$ (sinisen palkin yläreuna), rinteen pituus $s = 6{,}0\,\text{m}$; alussa $E_\text{k0} = 0$ ja lopussa $E_\text{p} = 0$
+**Kysytty:** kitkavoiman työ $W_\text{kitka}$ ja kitkavoiman suuruus $F$
+**Periaate:** Kelkkaan vaikuttavat paino, tukivoima ja liukukitka. Tukivoima on kohtisuorassa liikettä vastaan, joten se ei tee työtä. Kitka muuttaa mekaanista energiaa. Siksi käytetään energiaperiaatetta (luku *Mekaanisen energian säilyminen ja energiaperiaate*): alkuenergia ja muiden voimien työ ovat yhteensä loppuenergia. Liukukitka on liikettä vastaan, joten sen työ on negatiivinen: $W_\text{kitka} = -Fs$.
+**Kuvaajan lukeminen:** Sininen palkki ulottuu $25\,\text{J}$:iin, joten $E_\text{k} = 25\,\text{J}$. Kitkan työtä ei ole piirretty.
+**Kaava:** $E_{\text{p}0} + W_\text{kitka} = E_\text{k}$, joten $W_\text{kitka} = E_\text{k} - E_{\text{p}0}$; ja $W_\text{kitka} = -Fs$, joten $F = \dfrac{-W_\text{kitka}}{s}$
+**Muunnokset:** Ei tarvita: $1\,\text{J} = 1\,\text{N m}$.
+**Sijoitus:** $$
+\begin{aligned}
+W_\text{kitka} &= 25\,\text{J} - 40\,\text{J} \\
+&= -15\,\text{J}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+F &= \dfrac{15\,\text{J}}{6{,}0\,\text{m}} \\
+&= 2{,}5\,\text{N}
+\end{aligned}
+$$
+**Vastaus:** $W_\text{kitka} = -15\,\text{J}$ ja $F = 2{,}5\,\text{N}$, kaksi merkitsevää numeroa. Kitkan työ on negatiivinen, koska kitka on liikettä vastaan. Energiaa muuttui sisäenergiaksi $15\,\text{J}$. Sisäenergia siirtyy lämpönä ympäristöön.
+**Järkevyys:** Kitka vei $\dfrac{15\,\text{J}}{40\,\text{J}} = 37{,}5\,\%$ alun energiasta. Kelkan paino on $$
+\begin{aligned}
+G &= mg \\
+&= 2{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+&= 19{,}6\,\text{N}
+\end{aligned}
+$$, joten kitkavoima on noin $13\,\%$ painosta. Liukukitkakerroin on $\mu = \dfrac{F}{mg\cos\alpha} \approx 0{,}14$ (kaltevuuskulma $\alpha \approx 20^\circ$). Se on mahdollinen lumisella tai kostealla rinteellä.
+
+### c)
+**Annettu:** $m = 2{,}0\,\text{kg}$, $E_\text{k} = 25\,\text{J}$ alapäässä, $E_{\text{p}0} = 40\,\text{J}$
+**Kysytty:** nopeus $v$ alapäässä ja nopeus $v_0$, joka olisi ilman kitkaa
+**Periaate:** Alapäässä kaikki jäljellä oleva mekaaninen energia on liike-energiaa (luku *Liike-energia, potentiaalienergia ja mekaaninen energia*). Ilman kitkaa vain paino tekisi työtä. Silloin mekaaninen energia säilyisi, ja alun potentiaalienergia muuttuisi kokonaan liike-energiaksi.
+**Kaava:** $E_\text{k} = \tfrac12 mv^2$, joten $v = \sqrt{\dfrac{2E_\text{k}}{m}}$; ilman kitkaa $E_{\text{p}0} = \tfrac12 mv_0^2$, joten $v_0 = \sqrt{\dfrac{2E_{\text{p}0}}{m}}$
+**Muunnokset:** Ei tarvita: $1\,\text{J} = 1\,\text{kg m}^2/\text{s}^2$.
+**Sijoitus:** $$
+\begin{aligned}
+v &= \sqrt{\dfrac{2 \cdot 25\,\text{J}}{2{,}0\,\text{kg}}} \\
+&= \sqrt{25\,\text{m}^2/\text{s}^2} \\
+&= 5{,}0\,\text{m/s}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+v_0 &= \sqrt{\dfrac{2 \cdot 40\,\text{J}}{2{,}0\,\text{kg}}} \\
+&= \sqrt{40\,\text{m}^2/\text{s}^2} \\
+&= 6{,}3\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** $v = 5{,}0\,\text{m/s}$ ja ilman kitkaa $v_0 \approx 6{,}3\,\text{m/s}$. Kitka pienentää nopeutta noin $21\,\%$. Osa potentiaalienergiasta muuttuu sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Silloin liike-energiaa jää vähemmän.
+**Järkevyys:** Nopeus ilman kitkaa on $6{,}3\,\text{m/s} \approx 23\,\text{km/h}$, ja kitkan kanssa $5{,}0\,\text{m/s} = 18\,\text{km/h}$. Kitkallinen nopeus on pienempi, kuten pitääkin. Nopeus ilman kitkaa on yhtä suuri kuin vapaassa pudotuksessa korkeudelta $2{,}0\,\text{m}$: $\sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 2{,}04\,\text{m}} \approx 6{,}3\,\text{m/s}$.
+
+### d)
+**Annettu:** uusi massa $m' = 3{,}0\,\text{kg}$; sama rinne ($h = 2{,}04\,\text{m}$, $s = 6{,}0\,\text{m}$, $\alpha \approx 20^\circ$) ja sama liukukitkakerroin $\mu$
+**Kysytty:** kelkan nopeus alapäässä
+**Periaate:** Käytetään energiaperiaatetta (luku *Mekaanisen energian säilyminen ja energiaperiaate*). Liukukitkavoima on $F = \mu N$. Tukivoima rinteellä on $N = mg\cos\alpha$. Siksi kitkavoima on suoraan verrannollinen massaan.
+**Kaava:** $$
+\begin{aligned}
+mgh - Fs &= \tfrac12 mv^2 \\
+F &= \mu mg\cos\alpha \\
+v &= \sqrt{2g\,(h - \mu\cos\alpha \cdot s)}
+\end{aligned}
+$$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** Massa supistuu, joten nopeus ei riipu massasta. Tarkistus luvuilla järjestyksessä: potentiaalienergia, kitkavoima, kitkan työ, liike-energia alapäässä ja nopeus.
+$$
+\begin{aligned}
+E_\text{p}' &= 3{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+&\cdot 2{,}04\,\text{m} \\
+&= 60\,\text{J}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+F' &= \dfrac{3{,}0}{2{,}0} \cdot 2{,}5\,\text{N} \\
+&= 3{,}75\,\text{N}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+W' &= -3{,}75\,\text{N} \cdot 6{,}0\,\text{m} \\
+&= -22{,}5\,\text{J}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+E_\text{k}' &= 60\,\text{J} - 22{,}5\,\text{J} \\
+&= 37{,}5\,\text{J}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+v &= \sqrt{\dfrac{2 \cdot 37{,}5\,\text{J}}{3{,}0\,\text{kg}}} \\
+&= 5{,}0\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** Nopeus ei muutu, vaan on edelleen $5{,}0\,\text{m/s}$. Painavampi kelkka menettää kitkaan enemmän energiaa ($22{,}5\,\text{J} > 15\,\text{J}$). Sillä on kuitenkin alussa myös enemmän energiaa ($60\,\text{J} > 40\,\text{J}$). Molemmat kasvavat samassa suhteessa.
+**Järkevyys:** Vapaassa pudotuksessa raskas ja kevyt kappale saavuttavat saman nopeuden, kun vastus on pieni. Tässä kitka noudattaa samaa sääntöä, koska sekin kasvaa massan mukana. Todellisuudessa ilmanvastus ei kasva massan mukana. Silloin raskaampi kelkka olisi hieman nopeampi.
+
+### Yleisiä virheitä
+- a-kohdassa korkeudeksi lasketaan rinteen pituus $6{,}0\,\text{m}$ tai potentiaalienergia jaetaan pelkällä massalla.
+- b-kohdassa kitkan työksi merkitään $+15\,\text{J}$ tai laskussa unohdetaan, että kitkan työ jaetaan matkalla; $15\,\text{J} : 6{,}0\,\text{m} = 2{,}5\,\text{N}$ on voima, ei energia.
+- c-kohdassa nopeus lasketaan alun energiasta $40\,\text{J}$ eikä lopun liike-energiasta $25\,\text{J}$, jolloin kitka jää huomiotta.
+- d-kohdassa oletetaan, että painavampi kelkka kulkee nopeammin tai hitaammin, vaikka massa supistuu yhtälöstä.
+
+### Hyväksytään myös
+- b-kohdassa kitkavoima voidaan ratkaista myös liike-energian muutoksesta ja potentiaalienergian muutoksesta erikseen: $F s = E_{\text{p}0} - E_\text{k}$.
+- d-kohdassa riittää symbolinen päättely, jossa massa supistuu energiayhtälöstä, kunhan tulos todetaan.
+
+## fy9-sailymislait-s8
+
+### a)
+**Annettu:** $(t,F)$-kuvaaja: voima kasvaa nollasta arvoon $900\,\text{N}$ ja palaa nollaan hetkellä $12\,\text{ms}$; kuvaajan alku on $t = 0$
+**Kysytty:** impulssi $I$
+**Periaate:** Voiman impulssi on voiman ja ajan kuvaajan ja aika-akselin väliin jäävä pinta-ala (luku *Liikemäärä ja impulssi*). Kuvaaja on kolmio, ja voiman suunta pysyy samana. Siksi impulssi on kolmion pinta-ala.
+**Kuvaajan lukeminen:** Kolmion korkeus on $F_\text{max} = 900\,\text{N}$ ja kanta $\Delta t = 12\,\text{ms}$.
+**Kaava:** $I = \tfrac12 F_\text{max}\,\Delta t$
+**Muunnokset:** $12\,\text{ms} = 12 \cdot 10^{-3}\,\text{s} = 0{,}012\,\text{s}$
+**Sijoitus:** $$
+\begin{aligned}
+I &= \tfrac12 \cdot 900\,\text{N} \cdot 0{,}012\,\text{s} \\
+&= 5{,}4\,\text{N s}
+\end{aligned}
+$$
+**Vastaus:** $I = 5{,}4\,\text{N s}$ ylöspäin, kaksi merkitsevää numeroa kuten kestossa $12\,\text{ms}$.
+**Järkevyys:** Keskivoima on $\dfrac{900\,\text{N}}{2} = 450\,\text{N}$ ja se vaikuttaa $0{,}012\,\text{s}$, joten $450\,\text{N} \cdot 0{,}012\,\text{s} = 5{,}4\,\text{N s}$. Pallon paino on vain $$
+\begin{aligned}
+G &= mg \\
+&= 0{,}43\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+&= 4{,}2\,\text{N}
+\end{aligned}
+$$, joten sen jättäminen huomiotta potkun aikana on perusteltua.
+
+### b)
+**Annettu:** $m = 0{,}43\,\text{kg}$, alkunopeus $0$, impulssi $I = 5{,}4\,\text{N s}$
+**Kysytty:** lähtönopeus $v$
+**Periaate:** Voiman impulssi on kappaleen liikemäärän muutos (luku *Liikemäärä ja impulssi*). Potkun aikana pallon liikemäärää muuttaa vain jalan voima. Painovoima ja ilmanvastus ovat merkityksettömiä.
+**Kaava:** $I = \Delta p = mv - 0$, joten $v = \dfrac{I}{m}$
+**Muunnokset:** $1\,\text{N s} = 1\,\text{kg m/s}$
+**Sijoitus:** $$
+\begin{aligned}
+v &= \dfrac{5{,}4\,\text{kg m/s}}{0{,}43\,\text{kg}} \\
+&= 12{,}56\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** $v \approx 13\,\text{m/s}$ ylöspäin, kaksi merkitsevää numeroa kuten massa ja impulssi.
+**Järkevyys:** $13\,\text{m/s}$ on noin $47\,\text{km/h}$. Se on tavallinen nopeus pehmeälle potkulle; kovat laukaukset ovat yli $25\,\text{m/s}$.
+
+### c)
+**Annettu:** $m = 0{,}43\,\text{kg}$, $v = 12{,}56\,\text{m/s}$ potkun jälkeen, nollataso potkun korkeudella
+**Kysytty:** liike-energia $E_\text{k}$ ja korkeus $h$ ilman ilmanvastusta
+**Periaate:** Heti potkun jälkeen pallolla on vain liike-energiaa. Kun ilmanvastus jätetään pois, vain paino tekee työtä. Silloin mekaaninen energia säilyy (luku *Mekaanisen energian säilyminen ja energiaperiaate*). Korkeimmassa kohdassa nopeus on nolla.
+**Kaava:** $E_\text{k} = \tfrac12 mv^2$; $\tfrac12 mv^2 = mgh$, joten $h = \dfrac{v^2}{2g}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+E_\text{k} &= \tfrac12 \cdot 0{,}43\,\text{kg} \cdot (12{,}56\,\text{m/s})^2 \\
+&= 33{,}9\,\text{J}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+h &= \dfrac{(12{,}56\,\text{m/s})^2}{2 \cdot 9{,}81\,\text{m/s}^2} \\
+&= 8{,}04\,\text{m}
+\end{aligned}
+$$
+**Vastaus:** $E_\text{k} \approx 34\,\text{J}$ ja $h \approx 8{,}0\,\text{m}$, kaksi merkitsevää numeroa.
+**Järkevyys:** Tarkistus potentiaalienergialla: $$
+\begin{aligned}
+E_\text{p} &= 0{,}43\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+&\cdot 8{,}04\,\text{m} \\
+&\approx 33{,}9\,\text{J}
+\end{aligned}
+$$, sama kuin liike-energia. Pallon massa ei vaikuta korkeuteen, vain nopeus.
+
+### d)
+**Annettu:** $m = 0{,}43\,\text{kg}$, $E_\text{k0} = 33{,}9\,\text{J}$ lähdössä, mitattu korkeus $h_\text{mitattu} = 6{,}5\,\text{m}$, nopeus $0$ korkeimmassa kohdassa
+**Kysytty:** ilmanvastuksen työ $W_\text{ilma}$ ja keskimääräinen ilmanvastus $F$
+**Periaate:** Ilmanvastus on liikettä vastaan, joten mekaaninen energia ei säily. Käytetään energiaperiaatetta (luku *Mekaanisen energian säilyminen ja energiaperiaate*): alkuenergia ja ilmanvastuksen työ ovat yhteensä loppuenergia. Ylhäällä liike-energia on nolla ja potentiaalienergia on $mgh_\text{mitattu}$. Ilmanvastuksen työ on negatiivinen: $W_\text{ilma} = -Fh_\text{mitattu}$. Tässä $F$ on voiman keskiarvo koko nousun ajalta.
+**Kaava:** $E_\text{k0} + W_\text{ilma} = mgh_\text{mitattu}$, joten $W_\text{ilma} = mgh_\text{mitattu} - E_\text{k0}$ ja $F = \dfrac{-W_\text{ilma}}{h_\text{mitattu}}$
+**Muunnokset:** Ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+E_\text{p} &= 0{,}43\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+&\cdot 6{,}5\,\text{m} \\
+&= 27{,}4\,\text{J}
+\end{aligned}
+$$ $$
+\begin{aligned}
+W_\text{ilma} &= 27{,}4\,\text{J} - 33{,}9\,\text{J} \\
+&= -6{,}5\,\text{J}
+\end{aligned}
+$$ $$
+\begin{aligned}
+F &= \dfrac{6{,}5\,\text{J}}{6{,}5\,\text{m}} \\
+&= 1{,}0\,\text{N}
+\end{aligned}
+$$
+**Vastaus:** $W_\text{ilma} \approx -6{,}5\,\text{J}$ ja $F \approx 1{,}0\,\text{N}$. Mekaanista energiaa on noin $19\,\%$ vähemmän kuin ilman ilmanvastusta. Se on muuttunut ilman ja pallon sisäenergiaksi. Sisäenergia siirtyy lämpönä ympäristöön.
+**Järkevyys:** Keskimääräinen ilmanvastus on noin neljäsosa pallon painosta ($4{,}2\,\text{N}$). Se on pieni mutta mitattavissa. Nousu jää $8{,}0\,\text{m} - 6{,}5\,\text{m} = 1{,}5\,\text{m}$ matalammaksi kuin ilman ilmanvastusta.
+
+### Yleisiä virheitä
+- a-kohdassa pinta-ala lasketaan suorakulmiona $900\,\text{N} \cdot 12\,\text{ms}$ tai millisekunteja ei muunneta sekunneiksi.
+- b-kohdassa impulssi jaetaan jalan voimalla tai ajalla massan sijaan.
+- c-kohdassa korkeus lasketaan impulssista suoraan tai potentiaalienergiana ilman liike-energian laskemista; $h = v^2 : 2g$ riittää.
+- d-kohdassa ilmanvastuksen työksi kirjataan positiivinen luku tai työ jaetaan väärällä matkalla, esimerkiksi $8{,}0\,\text{m}$:llä.
+
+### Hyväksytään myös
+- a-kohdassa impulssi voidaan laskea ruutuja laskemalla: yksi ruutu on $100\,\text{N} \cdot 2\,\text{ms} = 0{,}2\,\text{N s}$ ja kolmion pinta-ala on noin $27$ ruutua eli $5{,}4\,\text{N s}$.
+- d-kohdassa $W_\text{ilma}$ voidaan laskea myös liike-energian ja potentiaalienergian erotuksena, kunhan etumerkki on negatiivinen.

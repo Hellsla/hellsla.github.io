@@ -1,10 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 279004589efb99eb
+CONTENT-HASH: 0915c3b0a0fb6632
+Mode: delta
+Round: 1
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] Pohdinta card — the option "Hiekan sisäenergia pysyy samana, koska energia säilyy." and the feedback are clear; the reference "(luku *Sisäenergia, lämpömäärä ja energian säilyminen*)" is italic and wraps over four lines on a phone, fine but long.
+None.
 
 ## Checked
-batch delta review: Pohdinta card (Kertaa: lämpö ja sisäenergia) with feedback open at 390 px (correct answer, "$\Delta U = Q$" in option and feedback render) and stage-herata-390. Captures made by me from preview/fi-easy. 1280 px capture of this lesson not opened (same shared card as the 1280 px captures opened for fy3-1, 3, 7, 12); nothing clipped at 390 px.
+- Delta: Tiivistelmä bullet now "$Q = c m \Delta T$, kun olomuoto ei muutu"; correct, plain Finnish, maths unchanged. Layout judged in fy3-6-stage-selita-390-4 (Tiivistelmä box, rest of the page intact, nothing clipped).
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

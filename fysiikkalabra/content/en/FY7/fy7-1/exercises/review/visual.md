@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c973cd2e82c55105
+CONTENT-HASH: f08a4401ce1280bb
 
 ## Blocking
 - none
@@ -8,7 +8,7 @@ CONTENT-HASH: c973cd2e82c55105
 - none
 
 ## Checked
-- Delta (md-paragraphs): solutions.md of fy7-1 (en) cut into paragraphs. Opened full-size captures of opened solutions at 1280 px (level 1 part 3, level 2 part 5; lesson folder review/shots, current for this hash). Layout, card containment and spacing survive; formulas, units and number formats unchanged; no clipping, overflow or red KaTeX. No figure captures apply to the changed text.
+- Delta (changed Formula/Kaava blocks, numbers/formulas): opened current full-size captures at 1280 px in the lesson folder review/shots: open-exercises-1280-2, open-exercises-L2-1280-8, open-exercises-L3-1280-5. Formula blocks render as aligned display blocks, with equals signs in one column, readable fractions and subscripts, no clipping or overflow, no red KaTeX; the card, the Conversions block and the following Substitution blocks keep their layout. Not every capture was opened; the unopened ones show the same component with other formulas.
 - Hash identical at start and end.
 
 ## Scores

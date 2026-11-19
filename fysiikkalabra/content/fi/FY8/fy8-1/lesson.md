@@ -289,7 +289,9 @@ Violetti laserosoitin lähettää valoa, jonka aallonpituus on $405\,\text{nm}$.
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Aallonpituus $\lambda = 405\,\text{nm}$, irrotustyö $W = 2{,}28\,\text{eV}$, Planckin vakio $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, valon nopeus $c = 2{,}998 \cdot 10^8\,\text{m/s}$ ja $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$. Kysytään suurinta liike-energiaa $E_\text{k,max}$.
+**Tunnetut ja kysytty.** Aallonpituus $\lambda = 405\,\text{nm}$, irrotustyö $W = 2{,}28\,\text{eV}$, Planckin vakio $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, valon nopeus $c = 2{,}998 \cdot 10^8\,\text{m/s}$ ja $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
+
+Kysytään suurinta liike-energiaa $E_\text{k,max}$.
 
 <!-- vaihe -->
 

@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 8067d7cd885e25ec
-Mode: delta (the one changed bullet in solutions.md, fy6-s3 common errors, since the PASS for 3cbb4ca9b49e5be1)
+CONTENT-HASH: 78dc8c2332232d74
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- lessons/FY6/sovella/answers.py — the new drift rate $0{,}005\,\text{V/min}$ (s1 d solution) is the one solution number answers.py does not compute — add `"fy6-s1-d-drift": 0.03 / 6`.
+- solutions.md fy6-s3 c **Kysytty** still says "on paljon pienempi kuin b-kohdan tulos"; harmless behind the button, but it could follow the new task wording ("poikkeaa").
 
 ## Checked
-- fy6-s3 common errors, changed bullet: the misconception it describes ("energia häviää / hukkuu") is a real wrong idea and contradicts energy conservation; the correction (the work of the field not left as kinetic energy goes to the air, whose internal energy rises, and is transferred as heat to the surroundings) is right physics at this level (drag work stirs the air, the flow dissipates into internal energy; C, not a finding) and follows guardrail P1 (no "muuttuu lämmöksi"). The old bullet named "muuttuu lämmöksi" as the error and then corrected it with "lämpönä"; the new one removes that mixed message.
-- Internal consistency: agrees with the c-part solution ("Energia ei häviä, vaan se siirtyy ilmaan") and the rubric criterion ("energia ei häviä vaan siirtyy ilmaan"); no number touched.
-- Recomputed s3 for context with my own formulas: E = U/d = 3,0·10⁵ V/m (0,10 of 3 MV/m), F = qE = 1,8·10⁻⁷ N, mg = 3,92·10⁻⁹ N (F/G = 45,9), W = qU = 3,6·10⁻⁸ J, v = √(2qU/m) = 13,4 m/s, Ek(5,0 m/s) = 5,0·10⁻⁹ J = 13,9 % of W, Coulomb force at 1,0 mm 3,24·10⁻⁹ N (1,8 % of F, 0,82 × weight): all agree with answers.py and the solution.
-- physics_phrases.py on content/fi/FY6/sovella: 0 sentences; practice.py check FY6: OK, 4 tasks, 60 points (fi, en, fi-easy).
-- Hash 8067d7cd885e25ec at start and end.
+- One script recomputed every number from the task data: s1 fit (−1,194 V/A, 4,598 V, max residual 0,020 V), E 4,60 V, R_s 1,2 Ω, I 0,50 A, P 2,0 W, share 13 %, scatter 0,08 Ω, drift 0,06 Ω; s2 2,5 A, 16,7 W (30 W balance), 1,76 A/10,6 V/18,7 W/2,5 W, 4,29 A/8,6 V/15 W; s3 1,8e-7 N, mg 2,2 %, E/E_b 0,10, 13,4 m/s, 5,0e-9 J/14 %/3,1e-8 J, 3,2e-9 N (1,8 %, 0,82 mg); s4 14,85 J, 6,86 J/46 % vs 27 %, 26,4 A, 6,9 kW, 0,30 A. All agree with tasks.json and answers.py.
+- s1 drift: definition (slow change of U with time at unchanged current) is right and matches the task text; rate 0,03 V over six ~1 min readings ≈ 0,005 V/min is consistent, and the worst-case last point ~0,03 V low → slope ≤ 0,06 Ω follows from it.
+- s1 idealisation: model $U = E - R_\text{s} I$ assumes E and R_s constant; discharge lowers E (steeper line, R_s high), warming usually lowers R_s (direction uncertain) — correct, and the error_sources detail now states it.
+- s2 b without "todellisuudessa": still asks the power at the real lamp voltage; answer 16,7 W and rubric (loop rule, 10,0 V) unchanged and consistent.
+- s3 b "Kerro oletuksesi": only the no-drag, no-weight energy model is computable from the data, so the expected 13 m/s is unique; the new rubric clause asks for exactly that assumption; a) already justifies dropping weight.
+- s3 c "poikkeaa" no longer gives away the direction; criteria (drag, 14 %, energy to air, b as upper limit) still match.
+- s4 b reworded: the relative-voltage comparison (27 %) is now asked, and the reasonableness criterion asks exactly that; no answer revealed.
+- Energy wording: "ilman sisäenergia kasvaa ja siirtyy lämpönä" follows P1; scope inside FY6; points per part sum to the criteria.

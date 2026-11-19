@@ -1,20 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 14133f61d46cf6d3
-Round: 4
-Mode: delta
+CONTENT-HASH: 95be45143ff21cc8
 
 ## Blocking
 (none)
-
-## Fixed
-(none; no translation edits were needed)
 
 ## Polish
 (none)
 
 ## Checked
-- New task fy3-4-L1-09 compared with the reviewed Finnish: same id, level, kind, unit, tolerance, answer and choice/reason order; exactly one correct option in each list, same as fi.
-- Recomputed: rho g h = 1000*9.81*1000 = 9.81e6 Pa; 10^5 = 10 m of water, 10^6 = 100 m, 10^8 = 10 km. Correct answer 10^7 Pa (rho g h = 9.81e6 Pa, nearer 1e7 than 1e6); all numbers and formulas in text, feedback and solution equal the Finnish.
-- Distractor feedback physics agrees with fi (same misconception named, same numbers).
-- Language: fi-easy follows NOTES.md section 12 (same physics, clearer Finnish, terms kept and explained, short sentences).
-- check_i18n.py shows nothing for fy3-4; build.py fy3-4 succeeds.
+- Delta: the fi-easy text lacks the prefix 'Esimerkkiaineisto:' and caption suffixes; every other character of the changed task texts and captions compared by script: identical, no number or symbol changed.
+- New L1-10 recomputed: 1020*9,81*25,0 = 250 155 Pa; p = 101 + 250,2 = 351,2 kPa (MAFY sea water 1,02e3 kg/m3; 4 % tolerance covers 1025/1030). Solution, answers.py agree.
+- New L2-08 recomputed from the figure points (0;100) and (10;250): k = 15 kPa/m, rho = 15000/9,81 = 1529 kg/m3. The figure gives the points on gridlines and does not state the density. Solution's accepted range 1450-1600 matches the 4 % tolerance. A's slope 10 kPa/m gives 1020, consistent with the sanity check.
+- Hash same at start and end.

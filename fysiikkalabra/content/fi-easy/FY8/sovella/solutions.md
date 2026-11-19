@@ -26,7 +26,9 @@
 **Periaate:** Atomin energia voi olla vain tiettyjä arvoja. Viritetty atomi voi luopua energiastaan kahdella tavalla. Se voi lähettää fotonin, tai se voi törmätä toiseen hiukkaseen ja siirtää energiansa sille. Kumpi tapahtuu ensin, riippuu kahdesta asiasta: viritystilan keskimääräisestä elinajasta ja siitä, kuinka usein atomi törmää.
 **Mallivastaus:** *Spektriviivat.* Happiatomin energia voi olla vain energiatasojen arvoja. Kun atomi siirtyy tasolta toiselle, syntyvän fotonin energia on tasojen erotus. Erotuksesta seuraa tietty aallonpituus. Siksi kaasun valossa on vain näitä aallonpituuksia eli erillisiä spektriviivoja. Spektri ei ole jatkuva.
 
-*Korkeus ja värit.* Alempi viritystila tuottaa punaisen valon. Se purkautuu fotonina keskimäärin vasta noin $110\,\text{s}$:n kuluttua. Korkeudella $100$–$150\,\text{km}$ ilma on niin tiheää, että viritetty atomi törmää muihin hiukkasiin moneen kertaan jo paljon lyhyemmässä ajassa. Törmäys purkaa viritystilan: energia siirtyy toiselle hiukkaselle, eikä fotonia synny. Yli $200\,\text{km}$:n korkeudella ilma on hyvin harvaa ja törmäyksiä on vähän. Moni atomi ehtii silloin lähettää punaisen fotonin.
+*Korkeus ja värit.* Alempi viritystila tuottaa punaisen valon. Se purkautuu fotonina keskimäärin vasta noin $110\,\text{s}$:n kuluttua. Korkeudella $100$–$150\,\text{km}$ ilma on niin tiheää, että viritetty atomi törmää muihin hiukkasiin moneen kertaan jo paljon lyhyemmässä ajassa. Törmäys purkaa viritystilan: energia siirtyy toiselle hiukkaselle, eikä fotonia synny.
+
+Yli $200\,\text{km}$:n korkeudella ilma on hyvin harvaa ja törmäyksiä on vähän. Moni atomi ehtii silloin lähettää punaisen fotonin.
 
 Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa. Moni atomi lähettää siis vihreän fotonin ennen törmäystä myös tiheämmässä ilmassa. Punainen valo tarvitsee harvan ilman. Siksi se näkyy revontulten yläosassa.
 
@@ -98,7 +100,11 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa. Moni atomi lähettä
 ### e)
 **Annettu:** aktiivisuus $A = 10\,\text{Bq}$, aika $t = 1\,\text{a}$, a-kohdan $Q = 8{,}961 \cdot 10^{-13}\,\text{J}$, keuhkojen massa $m = 1{,}2\,\text{kg}$, $w_\text{R} = 20$ ja $w_\text{T} = 0{,}12$
 **Kysytty:** efektiivinen annos $H_\text{E}$ vuodessa ja vertailu keskimääräiseen vuosiannokseen
-**Periaate:** Alfahiukkaset pysähtyvät muutaman solun matkalle. Jokaisen hajoamisen energia jää siis keuhkokudokseen. Aktiivisuus on hajoamisia sekunnissa. Puoliintumisaika $87{,}7\,\text{a}$ on niin pitkä, että aktiivisuus pysyy vuoden ajan likimain vakiona. Absorboitunut annos on kudokseen jäänyt energia jaettuna kudoksen massalla. Alfasäteilyn painotuskerroin antaa keuhkojen ekvivalenttiannoksen. Säteilyn painotuskerroin kertoo, kuinka monta kertaa enemmän säteilylaji vaurioittaa soluja kuin gammasäteily. Vain keuhkot säteilytetään, joten efektiivinen annos saadaan keuhkojen kudoksen painotuskertoimella. Kudoksen painotuskerroin kertoo, kuinka herkkä kudos on säteilylle eli kuinka suuri osa koko kehon riskistä tulee tästä kudoksesta. Efektiivinen annos kertoo säteilyn koko elimistölle aiheuttaman haitan.
+**Periaate:** Alfahiukkaset pysähtyvät muutaman solun matkalle. Jokaisen hajoamisen energia jää siis keuhkokudokseen. Aktiivisuus on hajoamisia sekunnissa. Puoliintumisaika $87{,}7\,\text{a}$ on niin pitkä, että aktiivisuus pysyy vuoden ajan likimain vakiona.
+
+Absorboitunut annos on kudokseen jäänyt energia jaettuna kudoksen massalla. Alfasäteilyn painotuskerroin antaa keuhkojen ekvivalenttiannoksen. Säteilyn painotuskerroin kertoo, kuinka monta kertaa enemmän säteilylaji vaurioittaa soluja kuin gammasäteily.
+
+Vain keuhkot säteilytetään, joten efektiivinen annos saadaan keuhkojen kudoksen painotuskertoimella. Kudoksen painotuskerroin kertoo, kuinka herkkä kudos on säteilylle eli kuinka suuri osa koko kehon riskistä tulee tästä kudoksesta. Efektiivinen annos kertoo säteilyn koko elimistölle aiheuttaman haitan.
 **Kaava:** $E = AtQ$, $D = \dfrac{E}{m}$, $H_\text{T} = w_\text{R} D$ ja $H_\text{E} = w_\text{T} H_\text{T}$
 **Muunnokset:** Aika sekunteina on $t = 365{,}25 \cdot 24 \cdot 3600\,\text{s} = 3{,}156 \cdot 10^{7}\,\text{s}$
 **Sijoitus:** $$\begin{aligned} E &= 10\,\tfrac{1}{\text{s}} \cdot 3{,}156 \cdot 10^{7}\,\text{s} \\ &\cdot 8{,}961 \cdot 10^{-13}\,\text{J} \\ &= 2{,}83 \cdot 10^{-4}\,\text{J} \end{aligned}$$, $D = \dfrac{2{,}83 \cdot 10^{-4}\,\text{J}}{1{,}2\,\text{kg}} = 2{,}36 \cdot 10^{-4}\,\text{Gy}$, $H_\text{T} = 20 \cdot 2{,}36 \cdot 10^{-4}\,\text{Gy} = 4{,}71 \cdot 10^{-3}\,\text{Sv}$ ja $H_\text{E} = 0{,}12 \cdot 4{,}71 \cdot 10^{-3}\,\text{Sv} = 5{,}66 \cdot 10^{-4}\,\text{Sv}$
@@ -123,7 +129,11 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa. Moni atomi lähettä
 
 ### a)
 **Kysytty:** kuvaaja, jonka pisteiden pitäisi oletuksen mukaan olla origon kautta kulkevalla suoralla, ja päätelmä siitä
-**Kuvaaja:** Taustan pulssitaajuus on $R_\text{t} = \dfrac{112}{5{,}0\,\text{min}} = 22{,}4\,\tfrac{1}{\text{min}}$. Se vähennetään jokaisesta lukemasta. Näin saadaan lähteen nettopulssitaajuus $R$. Oletetaan, että lähde on pistemäinen ja säteily leviää tasaisesti kaikkiin suuntiin. Silloin fotonit jakautuvat etäisyydellä $r$ pallon pinnalle, jonka ala on $4\pi r^2$. Putken ikkunaan osuu osuus, joka on verrannollinen suureeseen $\tfrac{1}{r^2}$. Oletuksen mukaan siis $R = \dfrac{K}{r^2}$. Vaaka-akselille valitaan $\tfrac{1}{r^2}$ ja pystyakselille $R$.
+**Kuvaaja:** Taustan pulssitaajuus on $R_\text{t} = \dfrac{112}{5{,}0\,\text{min}} = 22{,}4\,\tfrac{1}{\text{min}}$. Se vähennetään jokaisesta lukemasta. Näin saadaan lähteen nettopulssitaajuus $R$.
+
+Oletetaan, että lähde on pistemäinen ja säteily leviää tasaisesti kaikkiin suuntiin. Silloin fotonit jakautuvat etäisyydellä $r$ pallon pinnalle, jonka ala on $4\pi r^2$. Putken ikkunaan osuu osuus, joka on verrannollinen suureeseen $\tfrac{1}{r^2}$.
+
+Oletuksen mukaan siis $R = \dfrac{K}{r^2}$. Vaaka-akselille valitaan $\tfrac{1}{r^2}$ ja pystyakselille $R$.
 
 | $r\ (\text{cm})$ | $1/r^2\ (1/\text{cm}^2)$ | $R\ (1/\text{min})$ | $Rr^2\ (10^{3}\,\tfrac{\text{cm}^2}{\text{min}})$ |
 |---|---|---|---|
@@ -190,7 +200,11 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa. Moni atomi lähettä
   <circle cx="103" cy="363.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
 </svg>
 
-**Mallivastaus:** Pisteet eivät ole origon kautta kulkevalla suoralla. Kaukaisimman pisteen kautta piirretty origosuora kulkee lähimpien pisteiden yläpuolella. Pisteet muodostavat alaspäin kaartuvan käyrän. Saman näkee taulukon tulosta $Rr^2$. Oletuksen mukaan tulon pitäisi olla vakio. Satunnaisvaihtelua lukuun ottamatta se kuitenkin kasvaa etäisyyden kasvaessa noin $12\,000$:sta $29\,000$:een. Pulssitaajuus kasvaa siis lähdettä lähestyttäessä hitaammin kuin $\tfrac{1}{r^2}$. Oletus ei päde sellaisenaan ainakaan lähellä lähdettä. Jokin sen osa on siis väärä. Esimerkiksi mitattu etäisyys ei ole oikea etäisyys lähteestä siihen kohtaan, jossa säteily havaitaan.
+**Mallivastaus:** Pisteet eivät ole origon kautta kulkevalla suoralla. Kaukaisimman pisteen kautta piirretty origosuora kulkee lähimpien pisteiden yläpuolella. Pisteet muodostavat alaspäin kaartuvan käyrän.
+
+Saman näkee taulukon tulosta $Rr^2$. Oletuksen mukaan tulon pitäisi olla vakio. Satunnaisvaihtelua lukuun ottamatta se kuitenkin kasvaa etäisyyden kasvaessa noin $12\,000$:sta $29\,000$:een.
+
+Pulssitaajuus kasvaa siis lähdettä lähestyttäessä hitaammin kuin $\tfrac{1}{r^2}$. Oletus ei päde sellaisenaan ainakaan lähellä lähdettä. Jokin sen osa on siis väärä. Esimerkiksi mitattu etäisyys ei ole oikea etäisyys lähteestä siihen kohtaan, jossa säteily havaitaan.
 
 ### b)
 **Kysytty:** kuvaaja, jonka pisteiden pitäisi mallin $R = \dfrac{K}{(r + d)^2}$ mukaan olla suoralla, ja siitä matka $d$
@@ -297,7 +311,13 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa. Moni atomi lähettä
   <foreignObject x="165" y="364.5" width="112" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(-1{,}3;\ 0)$</span></div></foreignObject>
 </svg>
 
-**Mallivastaus:** Pisteet asettuvat hyvin suoralle. Malli kuvaa siis mittausta koko välillä. Suoraa jatketaan katkoviivana $r$-akselille, jonka se leikkaa kohdassa $r = -1{,}3\,\text{cm}$. Leikkauskohdan voi myös laskea kahdesta suoralta mittausalueelta luetusta pisteestä $(2{,}0\,\text{cm};\ 1{,}86 \cdot 10^{-2}\,\sqrt{\text{min}})$ ja $(20{,}0\,\text{cm};\ 12{,}0 \cdot 10^{-2}\,\sqrt{\text{min}})$. Suoran kulmakerroin on $$\begin{aligned} k &= \dfrac{(12{,}0 - 1{,}86) \cdot 10^{-2}\,\sqrt{\text{min}}}{20{,}0\,\text{cm} - 2{,}0\,\text{cm}} \\ &= 5{,}63 \cdot 10^{-3}\,\tfrac{\sqrt{\text{min}}}{\text{cm}} \end{aligned}$$, joten suora leikkaa $r$-akselin kohdassa $$\begin{aligned} r &= 2{,}0\,\text{cm} - \dfrac{1{,}86 \cdot 10^{-2}\,\sqrt{\text{min}}}{k} \\ &= -1{,}3\,\text{cm} \end{aligned}$$. Siten $d \approx 1{,}3\,\text{cm}$. Putken tehollinen havaintokohta on siis noin senttimetrin ikkunan takana. Tämä sopii GM-putken rakenteeseen. Silmällä sovitetuista suorista saadaan tyypillisesti $d = 1{,}0$–$1{,}6\,\text{cm}$. Kulmakertoimesta saadaan $K = \dfrac{1}{k^2} = 3{,}15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}$.
+**Mallivastaus:** Pisteet asettuvat hyvin suoralle. Malli kuvaa siis mittausta koko välillä. Suoraa jatketaan katkoviivana $r$-akselille, jonka se leikkaa kohdassa $r = -1{,}3\,\text{cm}$.
+
+Leikkauskohdan voi myös laskea kahdesta suoralta mittausalueelta luetusta pisteestä $(2{,}0\,\text{cm};\ 1{,}86 \cdot 10^{-2}\,\sqrt{\text{min}})$ ja $(20{,}0\,\text{cm};\ 12{,}0 \cdot 10^{-2}\,\sqrt{\text{min}})$. Suoran kulmakerroin on $$\begin{aligned} k &= \dfrac{(12{,}0 - 1{,}86) \cdot 10^{-2}\,\sqrt{\text{min}}}{20{,}0\,\text{cm} - 2{,}0\,\text{cm}} \\ &= 5{,}63 \cdot 10^{-3}\,\tfrac{\sqrt{\text{min}}}{\text{cm}} \end{aligned}$$, joten suora leikkaa $r$-akselin kohdassa $$\begin{aligned} r &= 2{,}0\,\text{cm} - \dfrac{1{,}86 \cdot 10^{-2}\,\sqrt{\text{min}}}{k} \\ &= -1{,}3\,\text{cm} \end{aligned}$$.
+
+Siten $d \approx 1{,}3\,\text{cm}$. Putken tehollinen havaintokohta on siis noin senttimetrin ikkunan takana. Tämä sopii GM-putken rakenteeseen.
+
+Silmällä sovitetuista suorista saadaan tyypillisesti $d = 1{,}0$–$1{,}6\,\text{cm}$. Kulmakertoimesta saadaan $K = \dfrac{1}{k^2} = 3{,}15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}$.
 
 ### c)
 **Kysytty:** $2{,}0\,\text{cm}$:n ja $20\,\text{cm}$:n nettopulssitaajuuksien epävarmuus, epävarmempi piste ja parannukset
@@ -335,7 +355,9 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa. Moni atomi lähettä
 ### a)
 **Kysytty:** miksi vapaa neutroni hajoaa mutta protoni ei, mitä kvarkeille tapahtuu ja mikä vuorovaikutus aiheuttaa sen
 **Periaate:** Vapaa hiukkanen voi hajota itsestään vain, jos tuotteiden yhteismassa on pienempi kuin hiukkasen oma massa. Massojen erotus vapautuu tuotteiden liike-energiaksi. Neutronissa on kvarkit $udd$ ja protonissa $uud$.
-**Mallivastaus:** *Massat.* Kun neutroni hajoaa, syntyy protoni, elektroni ja elektronin antineutriino: $n \rightarrow p + e^- + \bar{\nu}_e$. Varaus säilyy eli pysyy samana, koska $0 = (+e) + (-e) + 0$. Massojen erotus on $$\begin{aligned} &939{,}565\,\tfrac{\text{MeV}}{c^2} - 938{,}272\,\tfrac{\text{MeV}}{c^2} \\ &- 0{,}511\,\tfrac{\text{MeV}}{c^2} \\ &= 0{,}782\,\tfrac{\text{MeV}}{c^2} \end{aligned}$$, kun antineutriinon hyvin pieni massa jätetään pois. Neutroni on siis raskaampi kuin tuotteet yhteensä, ja hajoamisessa vapautuu noin $0{,}782\,\text{MeV}$ energiaa. Protoni on kevyempi kuin neutroni. Vapaa protoni ei siksi voi muuttua neutroniksi, koska siihen tarvittaisiin energiaa.
+**Mallivastaus:** *Massat.* Kun neutroni hajoaa, syntyy protoni, elektroni ja elektronin antineutriino: $n \rightarrow p + e^- + \bar{\nu}_e$. Varaus säilyy eli pysyy samana, koska $0 = (+e) + (-e) + 0$. Massojen erotus on $$\begin{aligned} &939{,}565\,\tfrac{\text{MeV}}{c^2} - 938{,}272\,\tfrac{\text{MeV}}{c^2} \\ &- 0{,}511\,\tfrac{\text{MeV}}{c^2} \\ &= 0{,}782\,\tfrac{\text{MeV}}{c^2} \end{aligned}$$, kun antineutriinon hyvin pieni massa jätetään pois.
+
+Neutroni on siis raskaampi kuin tuotteet yhteensä, ja hajoamisessa vapautuu noin $0{,}782\,\text{MeV}$ energiaa. Protoni on kevyempi kuin neutroni. Vapaa protoni ei siksi voi muuttua neutroniksi, koska siihen tarvittaisiin energiaa.
 
 *Kvarkit ja vuorovaikutus.* Neutronin ($udd$) yksi $d$-kvarkki muuttuu $u$-kvarkiksi, jolloin syntyy protoni ($uud$). Vain heikko vuorovaikutus voi muuttaa kvarkin lajin. Sen välittäjähiukkanen $W^-$ syntyy, kun $d$-kvarkki muuttuu. Se muuttuu heti elektroniksi ja antineutriinoksi.
 
@@ -364,7 +386,11 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa. Moni atomi lähettä
 **Periaate:** Lasketaan sama aika suhteella $1 : 5$. Nukleoneja on nyt $6$ jokaista alkuperäistä neutronia kohti. Jos tulos muuttuu paljon, menetelmä ei ole kovin luotettava.
 **Mallivastaus:** *Lasku.* Neutroneja on jäljellä $N_n = \dfrac{6}{1 + 7{,}16} = 0{,}735$, joten $\dfrac{t}{T_{1/2}} = \dfrac{\lg \tfrac{1}{0{,}735}}{\lg 2} = 0{,}444$ ja $t = 0{,}444 \cdot 609\,\text{s} = 270\,\text{s}$. Ytimet syntyisivät noin $271\,\text{s}$ eli noin $4{,}5\,\text{min}$ alkuräjähdyksen jälkeen.
 
-*Arvio.* Väite on väärä. Aika lähes kaksinkertaistuu, vaikka alkusuhde muuttui vain vähän. Syy on se, että aika riippuu siitä, kuinka suuri osa neutroneista ehtii hajota. Suhteella $1 : 6$ neutroneista hajoaa vain noin $14\,\%$ ja suhteella $1 : 5$ noin $26\,\%$. Hajoava osuus on pieni. Siksi pieni muutos alkusuhteessa muuttaa hajoavaa osuutta ja samalla aikaa suhteessa paljon. Menetelmä antaa oikean suuruusluokan eli muutaman minuutin, mutta ei tarkkaa aikaa.
+*Arvio.* Väite on väärä. Aika lähes kaksinkertaistuu, vaikka alkusuhde muuttui vain vähän. Syy on se, että aika riippuu siitä, kuinka suuri osa neutroneista ehtii hajota.
+
+Suhteella $1 : 6$ neutroneista hajoaa vain noin $14\,\%$ ja suhteella $1 : 5$ noin $26\,\%$.
+
+Hajoava osuus on pieni. Siksi pieni muutos alkusuhteessa muuttaa hajoavaa osuutta ja samalla aikaa suhteessa paljon. Menetelmä antaa oikean suuruusluokan eli muutaman minuutin, mutta ei tarkkaa aikaa.
 
 *Oletukset.* C-kohdan tulos edellyttää kolme asiaa. Ensinnäkin hetken $1\,\text{s}$ jälkeen neutronit muuttuivat protoneiksi vain vapaan neutronin hajoamisessa eikä muissa reaktioissa. Toiseksi ytimet syntyivät käytännössä yhdellä hetkellä. Kolmanneksi lähes kaikki neutronit päätyivät helium-4:ään.
 
@@ -400,7 +426,9 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa. Moni atomi lähettä
 
 *Käynnistyminen.* Kun pohjavettä tunkeutui malmiin, se hidasti fissiossa syntyvät nopeat neutronit. Hitaat neutronit aiheuttivat uusia uraani-235:n fissioita. Kun kasvukerroin nousi ykköseen, ketjureaktio käynnistyi.
 
-*Sammuminen.* Fissioiden energia muuttui malmin sisäenergiaksi, ja malmi kuumeni niin, että vesi kiehui pois. Ilman hidastinta neutronit pysyivät nopeina. Kasvukerroin putosi alle ykkösen, ja ketjureaktio sammui. Kun malmi jäähtyi, vettä virtasi takaisin ja reaktio käynnistyi uudelleen. Tämä selittää havaitut jaksot: noin puoli tuntia toimintaa ja parin tunnin tauko. Reaktori säätyi siis itse. Kevytvesireaktorissa tapahtuu samaa: kiehuminen heikentää veden kykyä hidastaa neutroneja.
+*Sammuminen.* Fissioiden energia muuttui malmin sisäenergiaksi, ja malmi kuumeni niin, että vesi kiehui pois. Ilman hidastinta neutronit pysyivät nopeina. Kasvukerroin putosi alle ykkösen, ja ketjureaktio sammui.
+
+Kun malmi jäähtyi, vettä virtasi takaisin ja reaktio käynnistyi uudelleen. Tämä selittää havaitut jaksot: noin puoli tuntia toimintaa ja parin tunnin tauko. Reaktori säätyi siis itse. Kevytvesireaktorissa tapahtuu samaa: kiehuminen heikentää veden kykyä hidastaa neutroneja.
 
 ### c)
 **Annettu:** Oklon teho $P_\text{O} = 100\,\text{kW}$, aika $t_\text{O} = 150\,000\,\text{a}$ ja Olkiluoto 3:n lämpöteho $P_\text{OL3} = 4300\,\text{MW}$

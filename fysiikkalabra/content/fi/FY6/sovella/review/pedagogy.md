@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 8067d7cd885e25ec
-Mode: delta (one bullet in solutions.md since the last PASS)
+CONTENT-HASH: 78dc8c2332232d74
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- s3 b "Kerro oletuksesi" still hints that an assumption exists, but the student must still name it (weight, air resistance) and justify the energy principle; acceptable.
+- s4 b "selitä ero" signals that the fractions differ; the student must still show why (E ~ U^2). Acceptable, could be "Vertaa ja selitä mahdollinen ero".
+- Drift: defined in the task text, rate (about 0.005 V/min) and idealisation (E and R_s constant) stated in solution and rubric detail, at an 16-19-year-old level.
 
 ## Checked
-- fy6-s3 common mistakes: the bullet now names a real misconception ("energy vanishes/is lost") and repairs it (energy goes to the air as internal energy, then to the surroundings as heat). The earlier wording "turns into heat" was not a mistake to correct. Task demand, rubric, workload and variety are unchanged from the previous PASS.
+- s3 b/c: b no longer states "no air resistance"; c "poikkeaa" no longer says smaller; the answer to c is not given by b.
+- s2 b: "todellisuudessa" removed; a does not reveal b.
+- s1: drift defined before use; solution adds the rate and idealisation; arithmetic consistent (0.03 V / 6 min).
+- Task types, levels, rubric and workload unchanged.

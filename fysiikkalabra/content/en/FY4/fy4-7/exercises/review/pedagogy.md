@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 43ecc7d869e0221e
+CONTENT-HASH: 9b74a742cd52d2d6
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-1. exercises/solutions.md:348 — "More than half of the vehicles exceed the limit, and that is why the mean speed is above the limit" does not follow (a share over one half fixes the median, not the mean) — write "which fits a mean speed above the limit".
-2. exercises/solutions.md:348 — parts a–d of L2-10 all sit under Substitution, the conclusions of d included — a blank line between the parts (as in fy4-8-L2-10) would make the long solution easier to scan.
-3. exercises/solutions.md (L1-01) — "240 kJ, two significant figures like the mass 1200 kg", while fy4-8-L2-10 counts 1500 kg as four figures — use one convention for trailing zeros across the chapters.
+- solutions.md, braking-distance task Formula — "$v_0 = s_\text{r} / t_\text{r}$" is introduced to justify $s_\text{r} = v_0 t_\text{r}$, which reads circularly; if $v_0$ is given in the task, say "the reaction distance is $s_\text{r} = v_0 t_\text{r}$ because the motion is uniform" and drop the first equation. Check against the Given line.
+- solutions.md, the bouncing-ball Formula — still ends in a verbal "the share ... is obtained from the ratio of the heights"; write the ratio $\dfrac{h_4}{h_0}$ so the symbolic chain reaches the end before substitution.
 
 ## Checked
-- Full review; hash 43ecc7d869e0221e at start and end. The packet's exercise brief was empty, so "nothing the lesson does not teach" was judged from the glossary, the slot's goals and the tasks themselves.
-- New L2-10 (Fintraffic speeds): applied and authentic; the table carries the source's figures and the link lets the student check them; the task says the PDF is in Finnish.
-- Four parts, no overlap: a) read cumulative shares (38.0 / 48.2 / 13.8 %) and compare road types, b) kinetic energy at 80 and 92 km/h (+32 %), c) stopping distances (13.3 m), d) conclusion and what the data cannot say.
-- Only kinetic energy and uniform / uniformly decelerated motion (chapter Acceleration and uniformly accelerated motion); nothing beyond FY4.
-- Solution: braking distance derived from v0 + a t = 0, not quoted; symbols first, conversions shown, check by two estimates; facts taken from the source are marked as such.
-- Workload is at the upper end of level 2 but each part is one or two steps; answer box 13.3 m, the stated 13 m is inside the tolerance.
-- 1280 px captures of L2-10 (table, link, derivation, parts a–b): nothing clipped, table readable.
-- Rest of the set: levels 9/10/5, distractors of L1-06/08/09 misconception-based, data tasks L2-05/07, L3-04/05 follow the bank plan; situation first, question last.
+- Round 1, delta (work queue 8g): no number, answer, tolerance, task or id changed; I compared removed and added lines, and the paragraph splits are lossless and in the same order.
+- Energy-balance Formulas now start from $E_\text{mech} = E_\text{k} + E_\text{p}$ and the balance $E_\text{mech,1} = E_\text{mech,2} + E_\text{other}$ (or the bounce analogue) before the working form; the algebra is correct, and the wording "other energy" keeps the internal-energy rule intact (no "turns into heat").
+- Graph task: $E_\text{k} = \tfrac{1}{2} m v^2$ is stated before the slope $k = m/2$ and $m = 2k$; correct.
+- Part a) of the data task: the long Substitution paragraph is split into one finding per paragraph; the percentages (38.0, 48.2, 13.8) are unchanged and consistent.
+- Tasks, levels, counts and figures unchanged.
+- Captures not opened: text-structure change only.

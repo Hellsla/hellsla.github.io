@@ -2,7 +2,7 @@
 **Annettu:** veden taitekerroin $n_1 = 1{,}33$, ilman taitekerroin $n_2 = 1{,}00$
 **Kysytty:** veden ja ilman rajapinnan rajakulma $\alpha_\text{r}$ asteina
 **Periaate:** Lampun valo tulee vedestä ilmaan. Se tulee siis aineesta, jonka taitekerroin on suurempi, aineeseen, jonka taitekerroin on pienempi. Siksi rajakulma on olemassa. Rajakulmassa taitekulma on $90^\circ$, joten rajakulman sini saadaan taittumislaista $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$.
-**Kaava:** $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$, josta $\alpha_\text{r} = \sin^{-1}\dfrac{n_2}{n_1}$
+**Kaava:** $$\begin{aligned} n_1 \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ \alpha_\text{r} &= \sin^{-1}\frac{n_2}{n_1} \end{aligned}$$
 **Muunnokset:** Niitä ei tarvita. Taitekertoimet ovat yksiköttömiä lukuja, ja kulma saadaan asteina.
 **Sijoitus:** $\alpha_\text{r} = \sin^{-1}\dfrac{1{,}00}{1{,}33} = \sin^{-1} 0{,}7519 = 48{,}75^\circ$
 **Vastaus:** $48{,}8^\circ$, kolme merkitsevää numeroa kuten taitekertoimet $1{,}33$ ja $1{,}00$.
@@ -12,7 +12,7 @@
 **Annettu:** timantin taitekerroin $n_1 = 2{,}42$, ilman taitekerroin $n_2 = 1{,}00$
 **Kysytty:** timantin ja ilman rajapinnan rajakulma $\alpha_\text{r}$ asteina
 **Periaate:** Valo tulee timantista ilmaan. Se tulee siis aineesta, jonka taitekerroin on suurempi, aineeseen, jonka taitekerroin on pienempi. Siksi rajakulma on olemassa. Rajakulmassa taitekulma on $90^\circ$. Taittumislaista $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$ saadaan rajakulman sini.
-**Kaava:** $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$, josta $\alpha_\text{r} = \sin^{-1}\dfrac{n_2}{n_1}$
+**Kaava:** $$\begin{aligned} n_1 \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ \alpha_\text{r} &= \sin^{-1}\frac{n_2}{n_1} \end{aligned}$$
 **Muunnokset:** Niitä ei tarvita. Taitekertoimet ovat yksiköttömiä lukuja.
 **Sijoitus:** $\alpha_\text{r} = \sin^{-1}\dfrac{1{,}00}{2{,}42} = \sin^{-1} 0{,}4132 = 24{,}41^\circ$
 **Vastaus:** $24{,}4^\circ$, kolme merkitsevää numeroa kuten taitekertoimet.
@@ -22,7 +22,7 @@
 **Annettu:** lasin taitekerroin $n_1 = 1{,}52$, veden taitekerroin $n_2 = 1{,}33$
 **Kysytty:** lasin ja veden rajapinnan rajakulma $\alpha_\text{r}$ asteina, kun valo tulee lasista veteen
 **Periaate:** Lasin taitekerroin on suurempi kuin veden. Siksi lasista veteen tulevalla valolla on rajakulma. Rajakulmassa taitekulma on $90^\circ$. Taittumislaista $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$ saadaan rajakulman sini.
-**Kaava:** $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$, josta $\alpha_\text{r} = \sin^{-1}\dfrac{n_2}{n_1}$
+**Kaava:** $$\begin{aligned} n_1 \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ \alpha_\text{r} &= \sin^{-1}\frac{n_2}{n_1} \end{aligned}$$
 **Muunnokset:** Niitä ei tarvita. Taitekertoimet ovat yksiköttömiä lukuja.
 **Sijoitus:** $\alpha_\text{r} = \sin^{-1}\dfrac{1{,}33}{1{,}52} = \sin^{-1} 0{,}8750 = 61{,}04^\circ$
 **Vastaus:** $61{,}0^\circ$, kolme merkitsevää numeroa kuten taitekertoimet.
@@ -52,7 +52,7 @@
 **Annettu:** ytimen taitekerroin $n_1 = 1{,}47$, ytimen ja kuoren rajapinnan rajakulma $\alpha_\text{r} = 82{,}0^\circ$
 **Kysytty:** kuoren taitekerroin $n_2$
 **Periaate:** Valo tulee ytimestä kuoreen, ja rajakulmassa taitekulma on $90^\circ$. Taittumislaista $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$ saadaan yhteys rajakulman ja taitekertoimien välille. Siitä voidaan ratkaista kuoren taitekerroin.
-**Kaava:** $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$, josta $n_2 = n_1 \sin\alpha_\text{r}$
+**Kaava:** $$\begin{aligned} n_1 \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ n_2 &= n_1 \sin\alpha_\text{r} \end{aligned}$$
 **Muunnokset:** Niitä ei tarvita. Taitekertoimet ovat yksiköttömiä, ja kulma on asteina.
 **Sijoitus:** $n_2 = 1{,}47 \cdot \sin 82{,}0^\circ = 1{,}47 \cdot 0{,}9903 = 1{,}456$
 **Vastaus:** $1{,}46$, kolme merkitsevää numeroa kuten ytimen taitekerroin $1{,}47$ ja kulma $82{,}0^\circ$.
@@ -62,7 +62,7 @@
 **Annettu:** tulokulma prisman lyhyelle sivutahkolle (kateettitahkolle) $\alpha = 45^\circ$, prisman ulkopuolella ilmaa $n_2 = 1{,}00$
 **Kysytty:** prisman lasin pienin taitekerroin $n$, jolla valo kokonaisheijastuu
 **Periaate:** Valo kokonaisheijastuu lasista ilmaan, kun tulokulma on suurempi kuin rajakulma tai yhtä suuri. Siksi rajakulma saa olla enintään $45^\circ$. Rajakulma pienenee, kun lasin taitekerroin kasvaa. Pienin sallittu taitekerroin on siis se, jolla rajakulma on täsmälleen $45^\circ$.
-**Kaava:** $\sin\alpha_\text{r} = \dfrac{n_2}{n}$, josta rajalla $\alpha_\text{r} = \alpha$ saadaan $n = \dfrac{n_2}{\sin\alpha}$
+**Kaava:** $$\begin{aligned} n \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n} \\ \alpha_\text{r} &= \alpha \\ \sin\alpha &= \frac{n_2}{n} \\ n &= \frac{n_2}{\sin\alpha} \end{aligned}$$
 **Muunnokset:** Niitä ei tarvita. Taitekertoimet ovat yksiköttömiä.
 **Sijoitus:** $n = \dfrac{1{,}00}{\sin 45^\circ} = \dfrac{1{,}00}{0{,}7071} = 1{,}414$
 **Vastaus:** vähintään $1{,}41$, kolme merkitsevää numeroa kuten ilman taitekerroin $1{,}00$.
@@ -72,7 +72,7 @@
 **Annettu:** muovin ja ilman rajapinnan rajakulma $\alpha_\text{r} = 42{,}0^\circ$, ilman taitekerroin $n_2 = 1{,}00$, valon nopeus tyhjiössä $c = 3{,}00 \cdot 10^8\,\text{m/s}$
 **Kysytty:** valon nopeus $v$ muovissa kilometreinä sekunnissa
 **Periaate:** Rajakulmasta saadaan muovin taitekerroin, koska rajakulmassa taitekulma ilmassa on $90^\circ$. Taitekerroin taas kertoo, kuinka monta kertaa hitaammin valo etenee muovissa kuin tyhjiössä.
-**Kaava:** $\sin\alpha_\text{r} = \dfrac{n_2}{n}$, josta $n = \dfrac{n_2}{\sin\alpha_\text{r}}$, ja $v = \dfrac{c}{n}$
+**Kaava:** $$\begin{aligned} n \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n} \\ n &= \frac{n_2}{\sin\alpha_\text{r}} \\ v &= \frac{c}{n} \\ &= \frac{c \sin\alpha_\text{r}}{n_2} \end{aligned}$$
 **Muunnokset:** Lopuksi $1\,\text{km} = 1000\,\text{m}$.
 **Sijoitus:** $n = \dfrac{1{,}00}{\sin 42{,}0^\circ} = \dfrac{1{,}00}{0{,}6691} = 1{,}494$ ja $v = \dfrac{3{,}00 \cdot 10^8\,\text{m/s}}{1{,}494} = 2{,}007 \cdot 10^8\,\text{m/s} = 2{,}007 \cdot 10^5\,\text{km/s}$
 **Vastaus:** $2{,}01 \cdot 10^5\,\text{km/s}$, kolme merkitsevää numeroa kuten rajakulma $42{,}0^\circ$.
@@ -82,7 +82,7 @@
 **Annettu:** kuidun pituus $s = 250\,\text{km}$, lasin taitekerroin $n = 1{,}46$, valon nopeus tyhjiössä $c = 3{,}00 \cdot 10^8\,\text{m/s}$
 **Kysytty:** valopulssin kulkuaika $t$ millisekunteina
 **Periaate:** Lasissa valo etenee tasaisella nopeudella $v = c : n$. Pulssi kulkee kuidun akselin suuntaisesti, joten sen matka on kuidun pituus. Kulkuaika on matka jaettuna nopeudella.
-**Kaava:** $v = \dfrac{c}{n}$ ja $t = \dfrac{s}{v}$, josta $t = \dfrac{n s}{c}$
+**Kaava:** $$\begin{aligned} v &= \frac{c}{n} \\ t &= \frac{s}{v} \\ &= \frac{n s}{c} \end{aligned}$$
 **Muunnokset:** $s = 250\,\text{km} = 250 \cdot 1000\,\text{m} = 2{,}50 \cdot 10^5\,\text{m}$. Lopuksi $1\,\text{s} = 1000\,\text{ms}$.
 **Sijoitus:** $t = \dfrac{1{,}46 \cdot 2{,}50 \cdot 10^5\,\text{m}}{3{,}00 \cdot 10^8\,\text{m/s}} = 1{,}217 \cdot 10^{-3}\,\text{s} = 1{,}217\,\text{ms}$
 **Vastaus:** $1{,}22\,\text{ms}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}46$ ja kuidun pituus $250\,\text{km}$.
@@ -92,7 +92,7 @@
 **Annettu:** lampun syvyys $h = 1{,}80\,\text{m}$, veden taitekerroin $n_1 = 1{,}33$, ilman taitekerroin $n_2 = 1{,}00$
 **Kysytty:** sen ympyrän säde $r$, jolta valoa tulee ulos vedenpinnasta
 **Periaate:** Mitä kauempana lampun yläpuolelta säde osuu vedenpintaan, sitä suurempi on sen tulokulma. Valoa pääsee ilmaan vain, kun tulokulma on pienempi kuin rajakulma. Suuremmilla tulokulmilla valo kokonaisheijastuu. Ympyrän reunalla säde osuu pintaan juuri rajakulmassa. Pinnan normaali on pystysuora, joten syvyys, ympyrän säde ja valonsäde muodostavat suorakulmaisen kolmion.
-**Kaava:** $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$ ja $\tan\alpha_\text{r} = \dfrac{r}{h}$, josta $r = h \tan\alpha_\text{r}$
+**Kaava:** $$\begin{aligned} n_1 \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ \tan\alpha_\text{r} &= \frac{r}{h} \\ r &= h \tan\alpha_\text{r} \end{aligned}$$
 **Muunnokset:** Niitä ei tarvita. Syvyys on metreinä, ja säde saadaan metreinä.
 **Sijoitus:** $\alpha_\text{r} = \sin^{-1}\dfrac{1{,}00}{1{,}33} = 48{,}75^\circ$ ja $r = 1{,}80\,\text{m} \cdot \tan 48{,}75^\circ = 1{,}80\,\text{m} \cdot 1{,}140 = 2{,}053\,\text{m}$
 **Vastaus:** $2{,}05\,\text{m}$, kolme merkitsevää numeroa kuten syvyys $1{,}80\,\text{m}$ ja taitekerroin $1{,}33$.
@@ -102,7 +102,7 @@
 **Annettu:** ytimen taitekerroin $n_1 = 1{,}480$, kuoren taitekerroin $n_2 = 1{,}460$, kuidun pituus $L = 1{,}00\,\text{km}$, valon nopeus tyhjiössä $c = 3{,}00 \cdot 10^8\,\text{m/s}$
 **Kysytty:** siksakkia ja akselin suuntaisesti kulkevan valon saapumisaikojen ero $\Delta t$ nanosekunteina
 **Periaate:** Molemmat valot etenevät ytimessä samalla nopeudella $v = c : n_1$. Siksakkia kulkevan valon matka on kuitenkin pidempi. Kun säde osuu seinään rajakulmassa, se kulkee akseliin nähden kulmassa $90^\circ - \alpha_\text{r}$. Kun säde etenee akselin suunnassa matkan $\Delta x$, sen oma matka on $\Delta x : \sin\alpha_\text{r}$. Koko matka on siis $L : \sin\alpha_\text{r}$.
-**Kaava:** $t_1 = \dfrac{n_1 L}{c}$, $t_2 = \dfrac{n_1 L}{c \sin\alpha_\text{r}}$ ja $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$, josta $\Delta t = t_2 - t_1 = \dfrac{n_1 L}{c}\left(\dfrac{n_1}{n_2} - 1\right)$
+**Kaava:** $$\begin{aligned} t_1 &= \frac{L}{v} \\ &= \frac{n_1 L}{c} \\ t_2 &= \frac{L}{v \sin\alpha_\text{r}} \\ &= \frac{n_1 L}{c \sin\alpha_\text{r}} \\ \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ \Delta t &= t_2 - t_1 \\ &= \frac{n_1 L}{c}\left(\frac{n_1}{n_2} - 1\right) \end{aligned}$$
 **Muunnokset:** $L = 1{,}00\,\text{km} = 1{,}00 \cdot 1000\,\text{m}$. Lopuksi $1\,\text{s} = 10^9\,\text{ns}$.
 **Sijoitus:** $$\begin{aligned} &\Delta t \\ &= \dfrac{1{,}480 \cdot 1000\,\text{m}}{3{,}00 \cdot 10^8\,\text{m/s}} \cdot \left(\dfrac{1{,}480}{1{,}460} - 1\right) \\ &= 4{,}933 \cdot 10^{-6}\,\text{s} \cdot 0{,}01370 \\ &= 6{,}758 \cdot 10^{-8}\,\text{s} \\ &= 67{,}58\,\text{ns} \end{aligned}$$
 **Vastaus:** $68\,\text{ns}$, kaksi merkitsevää numeroa, koska taitekertoimien erotus $1{,}480 - 1{,}460 = 0{,}020$ on kahden merkitsevän numeron tarkkuudella.
@@ -127,7 +127,7 @@
 **Annettu:** akryylin taitekerroin $n_1 = 1{,}49$, veden taitekerroin $n_2 = 1{,}33$
 **Kysytty:** akryylin ja veden rajapinnan rajakulma $\alpha_\text{r}$ asteina
 **Periaate:** Valo tulee akryylistä veteen eli suuremman taitekertoimen aineesta pienempään, joten rajakulma on olemassa. Rajakulmassa taitekulma on $90^\circ$. Siksi taittumislaista $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$ saadaan rajakulman sini.
-**Kaava:** $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$, josta $\alpha_\text{r} = \sin^{-1}\dfrac{n_2}{n_1}$
+**Kaava:** $$\begin{aligned} n_1 \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ \alpha_\text{r} &= \sin^{-1}\frac{n_2}{n_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: taitekertoimet ovat yksiköttömiä lukuja, ja kulma saadaan asteina.
 **Sijoitus:** $\alpha_\text{r} = \sin^{-1}\dfrac{1{,}33}{1{,}49} = \sin^{-1} 0{,}8926 = 63{,}20^\circ$
 **Vastaus:** $63{,}2^\circ$, kolme merkitsevää numeroa kuten taitekertoimet.
@@ -137,7 +137,7 @@
 **Annettu:** lasin taitekerroin $n = 1{,}45$, aika $t = 0{,}500\,\text{ms}$, valon nopeus tyhjiössä $c = 3{,}00 \cdot 10^8\,\text{m/s}$
 **Kysytty:** pulssin kulkema matka $s$ kilometreinä
 **Periaate:** Lasissa valo etenee tasaisella nopeudella $v = c : n$. Pulssi kulkee kuidun akselin suuntaisesti, joten sen matka on nopeus kerrottuna ajalla.
-**Kaava:** $v = \dfrac{c}{n}$ ja $s = v t$, josta $s = \dfrac{c t}{n}$
+**Kaava:** $$\begin{aligned} v &= \frac{c}{n} \\ s &= v t \\ &= \frac{c t}{n} \end{aligned}$$
 **Muunnokset:** $t = 0{,}500\,\text{ms} = 0{,}500 \cdot 10^{-3}\,\text{s}$. Lopuksi $1\,\text{km} = 1000\,\text{m}$.
 **Sijoitus:** $s = \dfrac{3{,}00 \cdot 10^8\,\text{m/s} \cdot 0{,}500 \cdot 10^{-3}\,\text{s}}{1{,}45} = 1{,}034 \cdot 10^5\,\text{m} = 103{,}4\,\text{km}$
 **Vastaus:** $103\,\text{km}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}45$, aika $0{,}500\,\text{ms}$ ja valon nopeus.
@@ -147,7 +147,7 @@
 **Annettu:** taulukon rajakulmat $41{,}8^\circ$, $42{,}6^\circ$, $41{,}5^\circ$, $42{,}3^\circ$ ja $42{,}0^\circ$; ilman taitekerroin $n_2 = 1{,}00$; taulukkoarvot: akryyli $1{,}49$ ja polystyreeni $1{,}59$
 **Kysytty:** muovin taitekerroin $n$ rajakulman keskiarvosta, mittausten hajonta ja muovin tunnistus
 **Periaate:** Valo tulee muovista ilmaan eli suuremman taitekertoimen aineesta pienempään. Siksi rajakulmassa $n \sin\alpha_\text{r} = n_2 \sin 90^\circ$. Toistetun mittauksen tulos on keskiarvo. Puolet vaihteluvälistä on yksinkertainen arvio mittaussarjan hajonnasta. Hajonta kertoo, millä välillä taitekertoimen arvo on todennäköisesti.
-**Kaava:** $\sin\alpha_\text{r} = \dfrac{n_2}{n}$, josta $n = \dfrac{n_2}{\sin\alpha_\text{r}}$
+**Kaava:** $$\begin{aligned} n \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n} \\ n &= \frac{n_2}{\sin\alpha_\text{r}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: kulmat ovat asteina, ja taitekerroin on yksikötön.
 **Sijoitus:** Mittausten summa on $$\begin{aligned} &41{,}8^\circ + 42{,}6^\circ + 41{,}5^\circ \\ &+ 42{,}3^\circ + 42{,}0^\circ \\ &= 210{,}2^\circ \end{aligned}$$, joten keskiarvo on $\alpha_\text{r} = 210{,}2^\circ : 5 = 42{,}04^\circ$, joten $n = \dfrac{1{,}00}{\sin 42{,}04^\circ} = \dfrac{1{,}00}{0{,}6696} = 1{,}493$. Hajonta on $\tfrac{1}{2} \cdot (42{,}6^\circ - 41{,}5^\circ) = 0{,}55^\circ$. Ääriarvoja vastaavat taitekertoimet ovat $n = 1{,}00 : \sin 42{,}6^\circ = 1{,}477$ ja $n = 1{,}00 : \sin 41{,}5^\circ = 1{,}509$.
 **Vastaus:** $n \approx 1{,}49$, kolme merkitsevää numeroa kuten rajakulmat. Taitekerroin on todennäköisesti välillä $1{,}48\ldots 1{,}51$. Akryylin arvo $1{,}49$ kuuluu tälle välille, mutta polystyreenin $1{,}59$ ei. Pala on siis todennäköisesti akryylia.
@@ -180,7 +180,7 @@ b) Valo taittuu normaalia kohti, ja taitekulma saadaan taittumislaista.
 **Annettu:** ilman taitekerroin $n_0 = 1{,}00$; kuidun A taitekertoimet $n_1 = 1{,}48$ ja $n_2 = 1{,}46$, kuidun B $n_1 = 1{,}50$ ja $n_2 = 1{,}47$, kuidun C $n_1 = 1{,}46$ ja $n_2 = 1{,}45$
 **Kysytty:** vastaanottokulma $\theta_\text{max}$ kuiduille B, A ja C asteina sekä vertailu suhteella $\dfrac{n_1}{n_2} - 1$
 **Periaate:** Ytimessä etenevä säde pysyy kuidussa, kun se kokonaisheijastuu ytimen ja kuoren rajapinnassa. Silloin se osuu rajapintaan vähintään rajakulmassa $\alpha_\text{r}$, jolle $\sin\alpha_\text{r} = n_2 : n_1$. Säde kulkee rajapintaa pitkin kulmassa $\varphi = 90^\circ - \alpha_\text{r}$ akseliin nähden. Suurin sallittu kulma akseliin nähden on siis $\varphi_\text{max} = 90^\circ - \alpha_\text{r}$. Päätypinnalla säde taittuu ilmasta ytimeen. Mitä suurempi $\varphi$ saa olla, sitä suurempi tulokulma $\theta$ voi olla.
-**Kaava:** $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$, $\varphi_\text{max} = 90^\circ - \alpha_\text{r}$ ja $n_0 \sin\theta_\text{max} = n_1 \sin\varphi_\text{max}$, josta $\theta_\text{max} = \sin^{-1}\left(n_1 \cos\alpha_\text{r}\right) = \sin^{-1}\sqrt{n_1^2 - n_2^2}$
+**Kaava:** $$\begin{aligned} \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ \varphi_\text{max} &= 90^\circ - \alpha_\text{r} \\ n_0 \sin\theta_\text{max} &= n_1 \sin\varphi_\text{max} \\ &= n_1 \cos\alpha_\text{r} \\ \theta_\text{max} &= \sin^{-1}\left(n_1 \cos\alpha_\text{r}\right) \\ &= \sin^{-1}\sqrt{n_1^2 - n_2^2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: taitekertoimet ovat yksiköttömiä, ja kulmat ovat asteina.
 **Sijoitus:** Kuidulle B $\alpha_\text{r} = \sin^{-1}\dfrac{1{,}47}{1{,}50} = 78{,}52^\circ$, $\varphi_\text{max} = 90^\circ - 78{,}52^\circ = 11{,}48^\circ$ ja $\sin\theta_\text{max} = 1{,}50 \cdot \sin 11{,}48^\circ = 0{,}2985$, joten $\theta_\text{max} = 17{,}37^\circ$. Kuiduille A ja C lyhyemmällä kaavalla: $\theta_\text{max} = \sin^{-1}\sqrt{1{,}48^2 - 1{,}46^2} = \sin^{-1} 0{,}2425 = 14{,}03^\circ$ ja $\theta_\text{max} = \sin^{-1}\sqrt{1{,}46^2 - 1{,}45^2} = \sin^{-1} 0{,}1706 = 9{,}82^\circ$. Viiveluvut ovat A: $\dfrac{1{,}48}{1{,}46} - 1 = 0{,}0137$, B: $\dfrac{1{,}50}{1{,}47} - 1 = 0{,}0204$ ja C: $\dfrac{1{,}46}{1{,}45} - 1 = 0{,}0069$.
 **Vastaus:** kuidun B vastaanottokulma on $17{,}4^\circ$, kolme merkitsevää numeroa kuten taitekertoimet. Taitekertoimien erotus $n_1 - n_2 = 0{,}03$ on yhden merkitsevän numeron luku, joten tulos on herkkä taitekertoimien pyöristykselle. Kuiduille A ja C vastaanottokulmat ovat $14{,}0^\circ$ ja $9{,}8^\circ$.
@@ -194,7 +194,7 @@ Kuidulla B taitekertoimien ero on suurin. Siksi sekä vastaanottokulma että vii
 **Periaate:** Mutkaan tuleva akselin suuntainen säde jatkaa suoraan ja osuu ulkoreunan rajapintaan. Mitataan etäisyydet mutkan keskipisteestä $\text{O}$. Ulkoreunan säde on $R + a$. Sisäreunan vierestä kulkevan säteen etäisyys keskipisteestä on $R - a$. Säde on kohtisuorassa mutkan alkukohdan sädettä vastaan. Siksi keskipisteestä säteen reitille piirretty kohtisuora on pituudeltaan $R - a$.
 
 Suorakulmaisessa kolmiossa hypotenuusa on ulkoreunan säde $R + a$. Tulokulman $\alpha$ sini on $\sin\alpha = (R - a) : (R + a)$. Tämä on pienin kaikista tulokulmista, koska muiden säteiden reitit ovat kauempana keskipisteestä. Sisäreunan vierestä kulkeva säde vuotaa siis ulos ensimmäisenä. Kokonaisheijastukseen vaaditaan $\alpha \ge \alpha_\text{r}$, jolle $\sin\alpha_\text{r} = n_2 : n_1$.
-**Kaava:** raja-arvolla $\dfrac{R - a}{R + a} = \dfrac{n_2}{n_1}$, josta $n_1 (R - a) = n_2 (R + a)$ ja $R_\text{min} = a\,\dfrac{n_1 + n_2}{n_1 - n_2}$
+**Kaava:** $$\begin{aligned} \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ \sin\alpha &= \frac{R - a}{R + a} \\ \alpha &= \alpha_\text{r} \\ \frac{R - a}{R + a} &= \frac{n_2}{n_1} \\ n_1 (R - a) &= n_2 (R + a) \\ R_\text{min} &= a\,\frac{n_1 + n_2}{n_1 - n_2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $R_\text{min}$ saadaan samassa yksikössä kuin $a$, millimetreinä.
 **Sijoitus:** $R_\text{min} = 0{,}50\,\text{mm} \cdot \dfrac{1{,}49 + 1{,}40}{1{,}49 - 1{,}40} = 0{,}50\,\text{mm} \cdot \dfrac{2{,}89}{0{,}09} = 0{,}50\,\text{mm} \cdot 32{,}11 = 16{,}06\,\text{mm}$
 **Vastaus:** $16\,\text{mm}$ ($16{,}1\,\text{mm}$). Tarkkuutta rajoittaa taitekertoimien erotus $n_1 - n_2 = 0{,}09$. Jyrkemmässä mutkassa osa valosta vuotaa kuoreen.
@@ -228,7 +228,7 @@ Jos taitekertoimet vaihtavat paikkaa, rajakulman siniksi tulee $1{,}33$, ja näy
 **Kysytty:** safiirin ja ilman rajakulma $\alpha_\text{r}$ asteina
 **Periaate:** Valo tulee safiirista ilmaan. Safiirin taitekerroin on suurempi kuin ilman, joten rajakulma on olemassa. Kuvaajan käyrä näyttää juuri tämän riippuvuuden, joten rajakulman voi lukea käyrältä. Lukeman voi tarkistaa kaavalla $\sin\alpha_\text{r} = n_2 : n_1$.
 **Kuvaajan lukeminen:** Vaaka-akselilla kohdasta $n_1 = 1{,}77$ nousee pystysuora viiva käyrään. Käyrän pisteestä mennään vaakasuoraan pystyakselille ja luetaan kulma ruudukon viivoilta. Se on viivojen $30^\circ$ ja $35^\circ$ välissä, aivan lähellä $35^\circ$:n viivaa. Luku on $\alpha_\text{r} \approx 34^\circ$ (lukematarkkuus noin $\pm 1^\circ$).
-**Kaava:** $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$, josta $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$ ja $\alpha_\text{r} = \sin^{-1}\dfrac{n_2}{n_1}$
+**Kaava:** $$\begin{aligned} n_1 \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \frac{n_2}{n_1} \\ \alpha_\text{r} &= \sin^{-1}\frac{n_2}{n_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: taitekertoimilla ei ole yksikköä, ja kulma luetaan asteina.
 **Sijoitus:** Tarkistus: $\alpha_\text{r} = \sin^{-1}\dfrac{1{,}00}{1{,}77} = \sin^{-1} 0{,}5650 = 34{,}40^\circ$
 **Vastaus:** $34^\circ$, niin tarkasti kuin kuvaajan voi lukea. Laskettu arvo on $34{,}4^\circ$. Safiirin ja ilman rajapinnassa valo kokonaisheijastuu, kun tulokulma on suurempi kuin noin $34^\circ$.

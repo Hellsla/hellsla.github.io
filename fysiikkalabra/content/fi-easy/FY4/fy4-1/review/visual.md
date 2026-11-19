@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: be9abeb8c69e694e
+CONTENT-HASH: 96e2f61e28b89e60
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- batch delta review: opened example-390 captures (fi-easy, fy4-1); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.
+batch delta review: opened fy4-1-theory-1280-1.png (first Pysähdy ja mieti box, pyöräilijä, beside figures) and fy4-1-theory-1280-2.png (second box, (t,x)-kuvaaja) and fy4-1-theory-1280-3.png. Boxes render in the green card with closed Vastaus, no clipping, figures unaffected, Finnish natural, maths in LaTeX.

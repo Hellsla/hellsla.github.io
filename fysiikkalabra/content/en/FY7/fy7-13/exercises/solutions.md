@@ -52,7 +52,7 @@
 **Given:** wavelength $\lambda = 450\,\text{nm}$, line density $N = 600$ lines per millimetre
 **Find:** the number of dots of light that form on the screen
 **Principle:** Each maximum is one dot of light. According to the grating equation $\sin\theta = k\lambda : d$, and since the sine is at most $1$, a maximum forms only for orders for which $k\lambda < d$. On each side of the central maximum there are equally many maxima.
-**Formula:** $d = \dfrac{1\,\text{mm}}{N}$ and $k < \dfrac{d}{\lambda}$; the number of dots is $2k_\text{max} + 1$, where $k_\text{max}$ is the largest whole number that satisfies the condition.
+**Formula:** $$\begin{aligned} d &= \frac{1\,\text{mm}}{N} \\ d\sin\theta &= k\lambda \\ k\lambda &= d\sin\theta < d \\ k &< \frac{d}{\lambda} \end{aligned}$$ The number of dots is $2k_\text{max} + 1$, where $k_\text{max}$ is the largest whole number that satisfies the condition.
 **Conversions:** $$\begin{aligned} d &= 1 \cdot 10^{-3}\,\text{m} : 600 \\ &= 1.667 \cdot 10^{-6}\,\text{m} \end{aligned}$$ and $450\,\text{nm} = 450 \cdot 10^{-9}\,\text{m}$.
 **Substitution:** $\dfrac{d}{\lambda} = \dfrac{1.667 \cdot 10^{-6}\,\text{m}}{450 \cdot 10^{-9}\,\text{m}} = 3.70$, so $k_\text{max} = 3$ and the number of dots is $2 \cdot 3 + 1 = 7$.
 **Answer:** $7$ dots of light: the central maximum and the orders $\pm 1$, $\pm 2$ and $\pm 3$. The answer is a whole number, so no rounding is needed.
@@ -62,7 +62,7 @@
 **Given:** wavelength $\lambda = 650\,\text{nm}$, line density $N = 100$ lines per millimetre, distance of the screen $L = 2.50\,\text{m}$, order $k = 1$
 **Find:** the distance $x$ of the first maximum from the central maximum in centimetres
 **Principle:** Light arrives perpendicular to the grating, so the angle of the maximum comes from the grating equation. The screen is perpendicular to the beam, so the position of the maximum comes from the right-angled triangle whose legs are $L$ and $x$.
-**Formula:** $d = \dfrac{1\,\text{mm}}{N}$, $d\sin\theta = k\lambda$ and $\tan\theta = \dfrac{x}{L}$, so $\theta = \sin^{-1}\dfrac{k\lambda}{d}$ and $x = L\tan\theta$
+**Formula:** $$\begin{aligned} d &= \frac{1\,\text{mm}}{N} \\ d\sin\theta &= k\lambda \\ \tan\theta &= \frac{x}{L} \\ x &= L\tan\theta \\ &= L\tan\bigl(\sin^{-1}\frac{k\lambda}{d}\bigr) \end{aligned}$$
 **Conversions:** $d = 1 \cdot 10^{-3}\,\text{m} : 100 = 1.00 \cdot 10^{-5}\,\text{m}$, $650\,\text{nm} = 650 \cdot 10^{-9}\,\text{m}$ and finally $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** $\theta = \sin^{-1}\dfrac{650 \cdot 10^{-9}\,\text{m}}{1.00 \cdot 10^{-5}\,\text{m}} = \sin^{-1} 0.0650 = 3.727^\circ$ and $x = 2.50\,\text{m} \cdot \tan 3.727^\circ = 2.50\,\text{m} \cdot 0.06514 = 0.1628\,\text{m} = 16.28\,\text{cm}$
 **Answer:** $16.3\,\text{cm}$, three significant figures like the distance $2.50\,\text{m}$.
@@ -72,7 +72,7 @@
 **Given:** wavelength $\lambda = 532\,\text{nm}$, distance of the screen $L = 1.00\,\text{m}$, separation of the maxima $\pm 1$ $66.8\,\text{cm}$, order $k = 1$
 **Find:** the line density $N$ of the grating, that is the number of lines per millimetre
 **Principle:** The maxima are symmetric on both sides of the central maximum, so the first maximum is half of the separation of the dots from the central maximum. The angle comes from the right-angled triangle, the grating spacing from the grating equation and the line density from the grating spacing.
-**Formula:** $\tan\theta = \dfrac{x}{L}$, $d\sin\theta = k\lambda$ and $d = \dfrac{1\,\text{mm}}{N}$, so $d = \dfrac{k\lambda}{\sin\theta}$ and $N = \dfrac{1\,\text{mm}}{d}$
+**Formula:** $$\begin{aligned} \tan\theta &= \frac{x}{L} \\ d\sin\theta &= k\lambda \\ d &= \frac{k\lambda}{\sin\theta} \\ d &= \frac{1\,\text{mm}}{N} \\ N &= \frac{1\,\text{mm}}{d} \end{aligned}$$
 **Conversions:** $x = 66.8\,\text{cm} : 2 = 33.4\,\text{cm} = 33.4 \cdot 0.01\,\text{m} = 0.334\,\text{m}$, $532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$ and $1\,\text{mm} = 1 \cdot 10^{-3}\,\text{m}$.
 **Substitution:** $\theta = \tan^{-1}\dfrac{0.334\,\text{m}}{1.00\,\text{m}} = 18.47^\circ$, $d = \dfrac{532 \cdot 10^{-9}\,\text{m}}{\sin 18.47^\circ} = \dfrac{532 \cdot 10^{-9}\,\text{m}}{0.3168} = 1.679 \cdot 10^{-6}\,\text{m}$ and $N = \dfrac{1 \cdot 10^{-3}\,\text{m}}{1.679 \cdot 10^{-6}\,\text{m}} = 595.5$
 **Answer:** about $596$ lines per millimetre, three significant figures like the distances. The grating is probably the manufacturer's $600$-line-per-millimetre grating, and the difference is due to measurement uncertainty.
@@ -82,7 +82,7 @@
 **Given:** wavelengths $\lambda_\text{v} = 400\,\text{nm}$ (violet edge) and $\lambda_\text{r} = 700\,\text{nm}$ (red edge), line density $N = 300$ lines per millimetre, distance of the screen $L = 1.00\,\text{m}$, order $k = 1$
 **Find:** the width $\Delta x$ of the first-order spectrum on the screen in centimetres
 **Principle:** Each wavelength is deviated to its own angle according to the grating equation, so the spectrum begins at the maximum of violet light and ends at the maximum of red light. Each position comes from a right-angled triangle, and the width is their difference.
-**Formula:** $d = \dfrac{1\,\text{mm}}{N}$, $\theta = \sin^{-1}\dfrac{k\lambda}{d}$, $x = L\tan\theta$ and $\Delta x = x_\text{r} - x_\text{v}$
+**Formula:** $$\begin{aligned} d &= \frac{1\,\text{mm}}{N} \\ d\sin\theta &= k\lambda \\ \tan\theta &= \frac{x}{L} \\ x_\text{v} &= L\tan\bigl(\sin^{-1}\frac{k\lambda_\text{v}}{d}\bigr) \\ x_\text{r} &= L\tan\bigl(\sin^{-1}\frac{k\lambda_\text{r}}{d}\bigr) \\ \Delta x &= x_\text{r} - x_\text{v} \end{aligned}$$
 **Conversions:** $$\begin{aligned} d &= 1 \cdot 10^{-3}\,\text{m} : 300 \\ &= 3.333 \cdot 10^{-6}\,\text{m} \end{aligned}$$, wavelengths $400 \cdot 10^{-9}\,\text{m}$ and $700 \cdot 10^{-9}\,\text{m}$, finally $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** $\theta_\text{v} = \sin^{-1}\dfrac{400 \cdot 10^{-9}\,\text{m}}{3.333 \cdot 10^{-6}\,\text{m}} = \sin^{-1} 0.120 = 6.892^\circ$, $\theta_\text{r} = \sin^{-1} 0.210 = 12.12^\circ$, $x_\text{v} = 1.00\,\text{m} \cdot \tan 6.892^\circ = 0.1209\,\text{m}$, $x_\text{r} = 1.00\,\text{m} \cdot \tan 12.12^\circ = 0.2148\,\text{m}$ and $\Delta x = 0.2148\,\text{m} - 0.1209\,\text{m} = 0.0939\,\text{m} = 9.39\,\text{cm}$
 **Answer:** $9.39\,\text{cm}$, three significant figures like the distance $1.00\,\text{m}$ and the wavelengths.
@@ -92,7 +92,7 @@
 **Given:** wavelength of the second order ($k = 2$) $\lambda_2 = 700\,\text{nm}$, third order $k = 3$, wavelengths of white light $400$–$700\,\text{nm}$
 **Find:** the wavelength $\lambda_3$ whose third-order maximum is in the same direction, and what this tells about the spectra
 **Principle:** In the same direction $\theta$ the left-hand side $d\sin\theta$ of the grating equation is the same for both wavelengths, so the right-hand sides are equal too. The grating spacing is not needed, because it cancels: the result holds for every grating.
-**Formula:** $d\sin\theta = 2\lambda_2$ and $d\sin\theta = 3\lambda_3$, so $3\lambda_3 = 2\lambda_2$ and $\lambda_3 = \dfrac{2\lambda_2}{3}$
+**Formula:** $$\begin{aligned} d\sin\theta &= 2\lambda_2 \\ d\sin\theta &= 3\lambda_3 \\ 3\lambda_3 &= 2\lambda_2 \\ \lambda_3 &= \frac{2\lambda_2}{3} \end{aligned}$$
 **Conversions:** Not needed: the wavelengths stay in nanometres, because the unit cancels in the ratio $2 : 3$.
 **Substitution:** $\lambda_3 = \dfrac{2 \cdot 700\,\text{nm}}{3} = 466.7\,\text{nm}$
 **Answer:** $467\,\text{nm}$, three significant figures like the wavelength $700\,\text{nm}$. Blue $467\,\text{nm}$ is present in white light, and the third-order spectrum begins from violet, $400\,\text{nm}$, at an even smaller angle. So the red end of the second-order spectrum and the violet and blue part of the third-order spectrum overlap.
@@ -104,7 +104,7 @@
 **Principle:** The evenly spaced tracks of a CD act as a reflection grating: for light arriving perpendicularly the reflected maxima obey the same grating equation as in a transmission grating, and $d$ is the track spacing.
 
 The screen is parallel to the disc, that is perpendicular to the incident beam, so the angle comes from a right-angled triangle. The maximum is half of the separation of the dots from the hole.
-**Formula:** $\tan\theta = \dfrac{x}{L}$ and $d\sin\theta = k\lambda$, so $d = \dfrac{k\lambda}{\sin\theta}$
+**Formula:** $$\begin{aligned} \tan\theta &= \frac{x}{L} \\ d\sin\theta &= k\lambda \\ d &= \frac{k\lambda}{\sin\theta} \end{aligned}$$
 **Conversions:** $x = 89\,\text{mm} : 2 = 44.5\,\text{mm} = 4.45\,\text{cm}$; for the angle it is enough that $x$ and $L$ are in the same unit. $650\,\text{nm} = 0.650\,\mu\text{m}$.
 **Substitution:** $\theta = \tan^{-1}\dfrac{4.45\,\text{cm}}{10.0\,\text{cm}} = \tan^{-1} 0.445 = 23.99^\circ$ and $d = \dfrac{1 \cdot 0.650\,\mu\text{m}}{\sin 23.99^\circ} = \dfrac{0.650\,\mu\text{m}}{0.4066} = 1.599\,\mu\text{m}$
 **Answer:** $1.6\,\mu\text{m}$, two significant figures like the separation of the dots $89\,\text{mm}$.
@@ -114,7 +114,7 @@ The screen is parallel to the disc, that is perpendicular to the incident beam, 
 **Given:** wavelength of the red laser $\lambda_\text{r} = 650\,\text{nm}$, distance of the screen $L = 1.00\,\text{m}$, distance of the first maximum of red $x_\text{r} = 19.9\,\text{cm}$ and of green $x_\text{g} = 16.2\,\text{cm}$, order $k = 1$
 **Find:** the wavelength $\lambda_\text{g}$ of the green laser in nanometres
 **Principle:** The grating is the same for both lasers, so the measurement of the red laser, whose wavelength is known, first gives the grating spacing; that is, the grating is calibrated. After that the wavelength of green light comes from the same grating equation. The angles come from right-angled triangles, because the screen is perpendicular to the beam.
-**Formula:** $\tan\theta = \dfrac{x}{L}$ and $d\sin\theta = k\lambda$, so $d = \dfrac{\lambda_\text{r}}{\sin\theta_\text{r}}$ and $\lambda_\text{g} = d\sin\theta_\text{g}$
+**Formula:** $$\begin{aligned} \tan\theta &= \frac{x}{L} \\ d\sin\theta &= k\lambda \\ d &= \frac{\lambda_\text{r}}{\sin\theta_\text{r}} \\ \lambda_\text{g} &= d\sin\theta_\text{g} \end{aligned}$$
 **Conversions:** $x_\text{r} = 19.9 \cdot 0.01\,\text{m} = 0.199\,\text{m}$, $x_\text{g} = 0.162\,\text{m}$ and $650\,\text{nm} = 650 \cdot 10^{-9}\,\text{m}$.
 **Substitution:** $\theta_\text{r} = \tan^{-1}\dfrac{0.199\,\text{m}}{1.00\,\text{m}} = 11.25^\circ$, $d = \dfrac{650 \cdot 10^{-9}\,\text{m}}{\sin 11.25^\circ} = \dfrac{650 \cdot 10^{-9}\,\text{m}}{0.1952} = 3.330 \cdot 10^{-6}\,\text{m}$, $\theta_\text{g} = \tan^{-1} 0.162 = 9.202^\circ$ and $\lambda_\text{g} = 3.330 \cdot 10^{-6}\,\text{m} \cdot \sin 9.202^\circ = 3.330 \cdot 10^{-6}\,\text{m} \cdot 0.1599 = 5.326 \cdot 10^{-7}\,\text{m} = 532.6\,\text{nm}$
 **Answer:** $533\,\text{nm}$, three significant figures like the distances $19.9\,\text{cm}$ and $16.2\,\text{cm}$.
@@ -133,7 +133,7 @@ The option that the slit shortens the wavelength and moves the maxima further ou
 **Given:** line density $N = 500$ lines per millimetre, wavelength $\lambda = 532\,\text{nm}$, order $k = 2$
 **Find:** the angle $\theta$ of the second-order maximum in degrees
 **Principle:** The light hits the grating perpendicularly, so the direction of the maximum follows the grating equation. The grating spacing is first obtained from the line density, and in the second-order maximum the path difference of adjacent slits is two wavelengths.
-**Formula:** $d = \dfrac{1\,\text{mm}}{N}$ and $d\sin\theta = k\lambda$, so $\theta = \sin^{-1}\dfrac{k\lambda}{d}$
+**Formula:** $$\begin{aligned} d &= \frac{1\,\text{mm}}{N} \\ d\sin\theta &= k\lambda \\ \sin\theta &= \frac{k\lambda}{d} \\ \theta &= \sin^{-1}\frac{k\lambda}{d} \end{aligned}$$
 **Conversions:** $d = 1 \cdot 10^{-3}\,\text{m} : 500 = 2.00 \cdot 10^{-6}\,\text{m}$ and $532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$.
 **Substitution:** $\theta = \sin^{-1}\dfrac{2 \cdot 532 \cdot 10^{-9}\,\text{m}}{2.00 \cdot 10^{-6}\,\text{m}} = \sin^{-1} 0.532 = 32.14^\circ$
 **Answer:** $32.1^\circ$, three significant figures like the wavelength.
@@ -143,7 +143,7 @@ The option that the slit shortens the wavelength and moves the maxima further ou
 **Given:** wavelength $\lambda = 589\,\text{nm}$, line density $N = 400$ lines per millimetre
 **Find:** the highest order $k_\text{max}$ for which a maximum forms
 **Principle:** The sine is at most $1$, so a maximum forms only for orders for which $k\lambda < d$. The largest integer that satisfies the condition is the highest order.
-**Formula:** $d = \dfrac{1\,\text{mm}}{N}$ and $k < \dfrac{d}{\lambda}$
+**Formula:** $$\begin{aligned} d &= \frac{1\,\text{mm}}{N} \\ d\sin\theta &= k\lambda \\ k\lambda &= d\sin\theta < d \\ k &< \frac{d}{\lambda} \end{aligned}$$
 **Conversions:** $d = 1 \cdot 10^{-3}\,\text{m} : 400 = 2.50 \cdot 10^{-6}\,\text{m}$ and $589\,\text{nm} = 589 \cdot 10^{-9}\,\text{m}$.
 **Substitution:** $\dfrac{d}{\lambda} = \dfrac{2.50 \cdot 10^{-6}\,\text{m}}{589 \cdot 10^{-9}\,\text{m}} = 4.24$, so $k < 4.24$ and $k_\text{max} = 4$
 **Answer:** $4$, an integer, so no rounding is needed.
@@ -156,7 +156,7 @@ The option that the slit shortens the wavelength and moves the maxima further ou
 **Reading the graph:** From the $x_k$ of the table we calculate $\theta_k = \tan^{-1}(x_k : L)$ and $\sin\theta_k$: the values are $0.0629$, $0.1250$, $0.1914$, $0.2516$, $0.3176$, $0.3801$, $0.4429$ and $0.5081$. The points are close to a straight line through the origin.
 
 The least-squares line through the origin (with a calculator or a spreadsheet) gives a slope of $0.06337$, and the line drawn by hand likewise about $0.063$; an individual point deviates slightly from the line because of measurement error.
-**Formula:** $d = \dfrac{1\,\text{mm}}{N}$ and slope $a = \dfrac{\lambda}{d}$, so $\lambda = a\,d$
+**Formula:** $$\begin{aligned} d &= \frac{1\,\text{mm}}{N} \\ \sin\theta_k &= \frac{\lambda}{d}\,k \\ a &= \frac{\lambda}{d} \\ \lambda &= a\,d \end{aligned}$$
 **Conversions:** $d = 1 \cdot 10^{-3}\,\text{m} : 100 = 1.00 \cdot 10^{-5}\,\text{m}$ and finally $1\,\text{nm} = 1 \cdot 10^{-9}\,\text{m}$.
 **Substitution:** $\lambda = 0.06337 \cdot 1.00 \cdot 10^{-5}\,\text{m} = 6.337 \cdot 10^{-7}\,\text{m} = 633.7\,\text{nm}$
 **Answer:** $634\,\text{nm}$, three significant figures like the distance $L$. The wavelength of a red laser is usually about $630$–$650\,\text{nm}$, so the result fits.
@@ -168,7 +168,7 @@ The least-squares line through the origin (with a calculator or a spreadsheet) g
 **Principle:** From the triangle of the screen we get $\tan\theta = x : L$, not $\sin\theta = x : L$. The sine and the tangent are almost equal only for small angles, and here the angle is almost $19^\circ$.
 
 The correct wavelength is calculated from the sine of the angle, and the error is the difference between the student's result and the correct one relative to the correct result.
-**Formula:** $d = \dfrac{1\,\text{mm}}{N}$, $\tan\theta = \dfrac{x}{L}$, $\lambda = d\sin\theta$ and error $\dfrac{\lambda_\text{st} - \lambda}{\lambda} \cdot 100\,\%$
+**Formula:** $$\begin{aligned} d &= \frac{1\,\text{mm}}{N} \\ \tan\theta &= \frac{x}{L} \\ \lambda &= d\sin\theta \\ \text{error} &= \frac{\lambda_\text{st} - \lambda}{\lambda} \cdot 100\,\% \end{aligned}$$
 **Conversions:** $x = 33.7\,\text{cm} = 0.337\,\text{m}$ and $$\begin{aligned} d &= 1 \cdot 10^{-3}\,\text{m} : 600 \\ &= 1.667 \cdot 10^{-6}\,\text{m} \end{aligned}$$.
 **Substitution:** $\theta = \tan^{-1}\dfrac{0.337\,\text{m}}{1.00\,\text{m}} = 18.62^\circ$, $\lambda = 1.667 \cdot 10^{-6}\,\text{m} \cdot \sin 18.62^\circ = 1.667 \cdot 10^{-6}\,\text{m} \cdot 0.3193 = 5.323 \cdot 10^{-7}\,\text{m} = 532.3\,\text{nm}$ and error $$\begin{aligned} &= \dfrac{561.7\,\text{nm} - 532.3\,\text{nm}}{532.3\,\text{nm}} \cdot 100\,\% \\ &= 5.53\,\% \end{aligned}$$
 **Answer:** $5.5\,\%$, two significant figures. The student's error: the student used $\sin\theta \approx x : L$, although the triangle of the screen gives $\tan\theta = x : L$, and the angle is too large for the small-angle approximation. The correct wavelength is $532\,\text{nm}$, and the student's $562\,\text{nm}$ is too large.
@@ -221,7 +221,7 @@ With the same $d$ and wavelength the directions of the maxima are the same.
 **Reading the graph:** In the graph $I(x)$ there is a peak $I = 1.00$ at the central maximum $x = 0.0\,\text{mm}$, a minimum $I = 0.00$ at $2.5\,\text{mm}$ and the next peak $I = 1.00$ at $5.0\,\text{mm}$; the readings at $4.5\,\text{mm}$ and $5.5\,\text{mm}$ ($0.91$ and $0.89$) are almost equal.
 
 So the first-order maximum is at $x_1 = 5.0\,\text{mm}$. The next peak in the table is at $10.0\,\text{mm}$ ($I = 1.00$, the readings at $9.5\,\text{mm}$ and $10.5\,\text{mm}$ are $0.91$ and $0.89$), and between them the minimum is at $7.5\,\text{mm}$ ($I = 0.00$).
-**Formula:** $\tan\theta = \dfrac{x}{L}$ and $d\sin\theta = k\lambda$, so $\lambda = \dfrac{d\sin\theta}{k}$ and $x_k = L\tan\theta_k$
+**Formula:** $$\begin{aligned} \tan\theta &= \frac{x}{L} \\ d\sin\theta &= k\lambda \\ \lambda &= \frac{d\sin\theta}{k} \\ x_k &= L\tan\theta_k \end{aligned}$$
 **Conversions:** $d = 0.250\,\text{mm} = 2.50 \cdot 10^{-4}\,\text{m}$ and $x_1 = 5.0\,\text{mm} = 5.0 \cdot 10^{-3}\,\text{m}$.
 **Substitution:** a) $\theta_1 = \tan^{-1}\dfrac{5.0 \cdot 10^{-3}\,\text{m}}{2.00\,\text{m}} = \tan^{-1} 0.00250 = 0.143^\circ$ and $\lambda = 2.50 \cdot 10^{-4}\,\text{m} \cdot \sin 0.143^\circ = 2.50 \cdot 10^{-4}\,\text{m} \cdot 0.00250 = 6.25 \cdot 10^{-7}\,\text{m} = 625\,\text{nm}$.
 
@@ -241,7 +241,7 @@ A grating spacing of $0.250\,\text{mm}$ means only $4$ lines per millimetre, so 
 **Principle:** The evenly spaced tracks of a DVD act as a reflection grating: the reflected maxima of perpendicularly incident light follow the grating equation $d\sin\theta = k\lambda$.
 
 The cardboard is parallel to the disc, that is perpendicular to the incident beam, so the angle is obtained from a right triangle. A maximum is half of the distance $2x$ away from the hole.
-**Formula:** $x = \dfrac{2x}{2}$, $\tan\theta = \dfrac{x}{L}$ and $d\sin\theta = k\lambda$, so $d = \dfrac{\lambda}{\sin\theta}$
+**Formula:** $$\begin{aligned} x &= \frac{2x}{2} \\ \tan\theta &= \frac{x}{L} \\ d\sin\theta &= k\lambda \\ d &= \frac{\lambda}{\sin\theta} \end{aligned}$$
 **Conversions:** $532\,\text{nm} = 0.532\,\mu\text{m}$; for the angle it is enough that $x$ and $L$ are in the same unit (centimetres).
 **Substitution:** a) The angles are $\theta_1 = \tan^{-1}\dfrac{4.15}{4.0} = 46.05^\circ$, $\theta_2 = \tan^{-1}\dfrac{6.25}{6.0} = 46.17^\circ$, $\theta_3 = \tan^{-1}\dfrac{8.35}{8.0} = 46.23^\circ$ and $\theta_4 = \tan^{-1}\dfrac{10.45}{10.0} = 46.26^\circ$. From them $d_1 = \dfrac{0.532\,\mu\text{m}}{\sin 46.05^\circ} = 0.7389\,\mu\text{m}$, $d_2 = 0.7375\,\mu\text{m}$, $d_3 = 0.7368\,\mu\text{m}$ and $d_4 = 0.7363\,\mu\text{m}$. The sum is $2.9495\,\mu\text{m}$, so $d_\text{avg} = 2.9495\,\mu\text{m} : 4 = 0.7374\,\mu\text{m}$.
 
@@ -259,7 +259,7 @@ Two dots of light are seen on the cardboard (the maxima $k = \pm 1$); the zeroth
 **Given:** line density $N = 600$ lines per millimetre, order $k = 1$; the wavelength of the yellow helium line is looked up in the MAFY table *Spektriviivoja*: $\lambda = 587.56\,\text{nm}$
 **Asked:** the angle $\theta$ of the first-order maximum in degrees
 **Principle:** The light hits the grating perpendicularly, so the direction of a maximum follows the grating equation. The grating spacing is first obtained from the line density, and in the first order the path difference of neighbouring slits is one wavelength.
-**Formula:** $d = \dfrac{1\,\text{mm}}{N}$ and $d\sin\theta = k\lambda$, so $\theta = \sin^{-1}\dfrac{k\lambda}{d}$
+**Formula:** $$\begin{aligned} d &= \frac{1\,\text{mm}}{N} \\ d\sin\theta &= k\lambda \\ \sin\theta &= \frac{k\lambda}{d} \\ \theta &= \sin^{-1}\frac{k\lambda}{d} \end{aligned}$$
 **Conversions:** $$\begin{aligned} d &= 1 \cdot 10^{-3}\,\text{m} : 600 \\ &= 1.667 \cdot 10^{-6}\,\text{m} \end{aligned}$$ and $587.56\,\text{nm} = 587.56 \cdot 10^{-9}\,\text{m}$.
 **Substitution:** $\theta = \sin^{-1}\dfrac{1 \cdot 587.56 \cdot 10^{-9}\,\text{m}}{1.667 \cdot 10^{-6}\,\text{m}} = \sin^{-1} 0.3525 = 20.64^\circ$
 **Answer:** $20.6^\circ$, three significant figures like the line density.
@@ -272,7 +272,7 @@ Two dots of light are seen on the cardboard (the maxima $k = \pm 1$); the zeroth
 **Reading the figure:** The distance $L$ is read from the dimension line at the bottom of the figure: $L = 1.20\,\text{m}$. The second-order maximum is the one of the two light spots on a side that is farther from the central maximum.
 
 Its position is read on the scale: the spot is between $60\,\text{cm}$ and $80\,\text{cm}$, near the middle at $70\,\text{cm}$, so $x_2 \approx 70.0\,\text{cm}$ (reading accuracy about $\pm 1\,\text{cm}$). The first-order spot is closer to the central maximum.
-**Formula:** $d = \dfrac{1\,\text{mm}}{N}$, $\tan\theta_2 = \dfrac{x_2}{L}$ and $d\sin\theta_2 = 2\lambda$, so $\lambda = \dfrac{d\sin\theta_2}{2}$
+**Formula:** $$\begin{aligned} d &= \frac{1\,\text{mm}}{N} \\ \tan\theta_2 &= \frac{x_2}{L} \\ d\sin\theta_2 &= 2\lambda \\ \lambda &= \frac{d\sin\theta_2}{2} \end{aligned}$$
 **Conversions:** $d = 1 \cdot 10^{-3}\,\text{m} : 400 = 2.50 \cdot 10^{-6}\,\text{m}$ and $x_2 = 70.0\,\text{cm} = 0.700\,\text{m}$.
 **Substitution:** $\theta_2 = \tan^{-1}\dfrac{0.700\,\text{m}}{1.20\,\text{m}} = 30.26^\circ$ and $\lambda = \dfrac{2.50 \cdot 10^{-6}\,\text{m} \cdot \sin 30.26^\circ}{2} = \dfrac{2.50 \cdot 10^{-6}\,\text{m} \cdot 0.5039}{2} = 6.30 \cdot 10^{-7}\,\text{m} = 630\,\text{nm}$
 **Answer:** $630\,\text{nm}$, three significant figures like the distance $L$ and the line density.
@@ -283,7 +283,7 @@ Its position is read on the scale: the spot is between $60\,\text{cm}$ and $80\,
 **Asked:** the line density $N$ of the grating in lines per millimetre
 **Principle:** Red is deviated most, so the outer edge of the spectrum is the first-order maximum of red. Its angle follows from the right-angled triangle on the screen through the tangent, the grating spacing from the grating equation, and the line density is the reciprocal of the spacing.
 **Reading the figure:** The white central maximum is at the zero of the scale. The outer edge of the spectrum is the red edge; it is on the scale between $15\,\text{cm}$ and $20\,\text{cm}$, a little under $18\,\text{cm}$: $x \approx 17.8\,\text{cm}$ (reading accuracy about $\pm 0.3\,\text{cm}$). The inner edge is violet at about $10\,\text{cm}$.
-**Formula:** $\tan\theta = \dfrac{x}{L}$, $d\sin\theta = k\lambda$ and $N = \dfrac{1}{d}$ (lines per unit length), so $N = \dfrac{\sin\theta}{k\lambda}$
+**Formula:** $$\begin{aligned} \tan\theta &= \frac{x}{L} \\ d\sin\theta &= k\lambda \\ d &= \frac{k\lambda}{\sin\theta} \\ N &= \frac{1}{d} \\ &= \frac{\sin\theta}{k\lambda} \end{aligned}$$ Here $N$ is the number of lines per unit length.
 **Conversions:** $x = 17.8\,\text{cm} = 0.178\,\text{m}$, $700\,\text{nm} = 7.00 \cdot 10^{-7}\,\text{m}$ and $1\,\text{mm} = 1 \cdot 10^{-3}\,\text{m}$.
 **Substitution:** $\theta = \tan^{-1}\dfrac{0.178\,\text{m}}{1.00\,\text{m}} = 10.09^\circ$, $d = \dfrac{7.00 \cdot 10^{-7}\,\text{m}}{\sin 10.09^\circ} = \dfrac{7.00 \cdot 10^{-7}\,\text{m}}{0.1752} = 3.99 \cdot 10^{-6}\,\text{m}$ and $N = \dfrac{1 \cdot 10^{-3}\,\text{m}}{3.99 \cdot 10^{-6}\,\text{m}} = 250$ lines per millimetre
 **Answer:** $250$ lines per millimetre, three significant figures like the distance $L$ and the read position.

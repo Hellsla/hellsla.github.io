@@ -34,8 +34,8 @@ a["visible-eV-700"] = eV(700); a["visible-eV-380"] = eV(380)   # 1,77 and 3,26 e
 a["cdse-bulk-nm"] = hc / (1.74 * e) * 1e9                  # bulk CdSe gap 1,74 eV -> 713 nm
 # misconception: a 1 mW red pointer and a 1 mW violet pointer, photon energies
 a["mis-650"] = eV(650); a["mis-405"] = eV(405)             # 1,91 eV, 3,06 eV
-# inquiry: kertaus (hydrogen 3 -> 2 gives 1,89 eV, 656 nm)
-a["kert-656-eV"] = eV(656)                                 # 1,89 eV
+# inquiry: kertaus (helium-neon laser, neon atom E2 -> E1)
+a["kert-633-eV"] = eV(633)                                 # 1,96 eV: He-Ne-laserin kertaustehtävä (herata), lambda = 633 nm
 # sim: koe-1 (three levels, mirrors), koe-2 (two levels), koe-3 (no mirrors)
 for P in (0.5, 1.0, 1.5, 2.0, 3.0, 4.0, 5.0):
     n2, n1, Po = model(P); a[f"koe1-{P}-n2"] = n2; a[f"koe1-{P}-P"] = Po

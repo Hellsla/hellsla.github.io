@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 184cd46dbf825fee
+CONTENT-HASH: ec33d47475c75d06
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] worked example stages 3 and 7: a sentence continues after a display equation ("antaa yllä olevan juuren.", "ja pyöräilijän …"); acceptable, but a full sentence after the display would read cleaner.
 
 ## Checked
-- batch delta review: opened example-390 captures (fi-easy, fy4-12); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.
+batch delta review: opened fy4-12-theory-1280-1.png (first box on pyöräilijät and $x_\text{A} = x_\text{B}$, before the kohtaaminen figure). Box and figures render cleanly, maths set in LaTeX. The second box (yhdensuuntaiset viivat, $50\,\text{m}$) was not opened.

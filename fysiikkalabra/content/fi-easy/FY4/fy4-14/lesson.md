@@ -80,6 +80,12 @@ Kun kappale liikkuu ilmassa tai vedessä, sen täytyy työntää ilmaa tai vett�
 
 Ilmanvastus on erilainen kuin liukukitka, koska sen suuruus muuttuu, kun nopeus muuttuu. Jos kappale on paikallaan ilman suhteen, ilmanvastusta ei ole lainkaan. Kun kappaleen nopeus ilman suhteen kasvaa, ilmanvastus kasvaa nopeasti. Kun nopeus on sama, ilmanvastus on sitä suurempi, mitä suurempi on kappaleen poikkipinta-ala. Ilmanvastus on myös suurempi, jos ilma pääsee huonosti virtaamaan kappaleen ohi. Samalla nopeudella vastus on vedessä paljon suurempi kuin ilmassa, koska vesi on tiheämpää.
 
+```pysahdy
+Hyppääjä lähtee ilman suhteen levosta, vaikka hänen ympärillään on ilmaa. Miksi ilmanvastusta ei ole heti hypyn jälkeen?
+---
+Ilmanvastus riippuu nopeudesta ilman suhteen. Heti hypyn jälkeen nopeus on nolla. Ilmanvastus alkaa vasta, kun nopeus kasvaa.
+```
+
 ### Pudotuksen kolme vaihetta
 Hyppääjä lähtee ilman suhteen levosta (koneen vauhti jätetään huomiotta). Heti hypyn jälkeen ilmanvastusta ei siis vielä ole. Ainoa voima on paino, ja hyppääjä kiihtyy alaspäin putoamiskiihtyvyydellä $g$. Kun nopeus kasvaa, ilmanvastus kasvaa. Paino pysyy samana, joten kokonaisvoima pienenee. Silloin myös kiihtyvyys pienenee: nopeus kasvaa yhä hitaammin. Lopulta ilmanvastus on yhtä suuri kuin paino. Silloin kokonaisvoima on nolla, kiihtyvyys on nolla ja nopeus pysyy vakiona, kuten Newtonin ensimmäinen laki sanoo. Tätä nopeutta sanotaan **rajanopeudeksi**.
 
@@ -163,6 +169,12 @@ Hyppääjä lähtee ilman suhteen levosta (koneen vauhti jätetään huomiotta).
   <foreignObject x="465" y="406" width="70" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$F_\text{v} = G$</div></foreignObject>
 </svg>
 
+```pysahdy
+Hyppääjä putoaa rajanopeudella. Miksi hänen nopeutensa ei silloin enää muutu, vaikka paino vetää häntä yhä alas?
+---
+Ilmanvastus on yhtä suuri kuin paino. Kokonaisvoima on nolla ja kiihtyvyys on nolla. Siksi nopeus pysyy samana.
+```
+
 ### Rajanopeus riippuu massasta ja muodosta
 Rajanopeudella ilmanvastus on yhtä suuri kuin paino. Raskaamman hyppääjän paino on suurempi. Siksi hänen nopeutensa ehtii kasvaa suuremmaksi, ennen kuin ilmanvastus on yhtä suuri kuin paino. Kuvaajassa putoavat samassa asennossa $60\,\text{kg}$:n ja $100\,\text{kg}$:n hyppääjät. Heidän käyränsä alkavat yhtä jyrkkinä, mutta ne tasaantuvat eri nopeuksiin. Mallin arvoina nopeudet ovat noin $48\,\text{m/s}$ ja $61\,\text{m/s}$. Hyppääjä, joka sukeltaa pää edellä, on kapeampi ja virtaviivaisempi. Hänen poikkipinta-alansa on pienempi, joten hänen rajanopeutensa on suurempi.
 
@@ -222,6 +234,12 @@ Rajanopeudella ilmanvastus on yhtä suuri kuin paino. Raskaamman hyppääjän pa
 </svg>
 
 Tästä saadaan vastaus alun kysymykseen. Paino vetää hyppääjää alas koko ajan. Kun nopeus kasvaa, ilmanvastus kasvaa, kunnes se kumoaa painon. Sen jälkeen nopeus ei enää muutu. Jos ilmanvastusta ei olisi, kaikki kappaleet putoaisivat samalla kiihtyvyydellä $g$. Ilmassa kevyt ja laaja kappale, kuten paperiarkki tai sulka, saavuttaa pienen rajanopeuden hyvin pian. Siksi se putoaa hitaasti.
+
+```pysahdy
+Miksi paperiarkki putoaa ilmassa hitaammin kuin saman painoinen, kokoon rutistettu paperipallo?
+---
+Laaja arkki saa samalla nopeudella suuremman ilmanvastuksen. Ilmanvastus on siksi jo pienellä nopeudella yhtä suuri kuin paino. Arkin rajanopeus on pienempi.
+```
 
 ## Kaava: Liikeyhtälö ilmanvastuksen kanssa
 Ilmanvastus on yksi kappaleeseen vaikuttavista voimista, joten liike noudattaa Newtonin toista lakia. Ilmassa putoavaan tai nousevaan kappaleeseen vaikuttavat paino ja ilmanvastus:

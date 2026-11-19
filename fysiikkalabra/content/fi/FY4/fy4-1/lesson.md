@@ -339,11 +339,23 @@ Kun kappale siirtyy paikasta $x_1$ paikkaan $x_2$, sen **siirtymä** on paikan m
   <foreignObject x="233.5" y="285.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta x = x_2 - x_1 = 0$</div></foreignObject>
 </svg>
 
+```pysahdy
+Pyöräilijä ajaa kaupalle ja takaisin. Miksi hänen siirtymänsä on nolla, vaikka hän on ajanut kilometrejä?
+---
+Siirtymä kertoo vain alku- ja loppupaikan eron, ja ne ovat samat. Matka on reitin pituus, joten se on silti neljä kilometriä.
+```
+
 **Nopeus** kertoo, kuinka nopeasti ja mihin suuntaan paikka muuttuu. Se on myös vektorisuure, ja sen etumerkki kertoo suunnan. Nopeuden itseisarvo $|v|$ on vauhti. Tasaisessa liikkeessä nopeus pysyy vakiona: paikka muuttuu yhtä paljon jokaisessa yhtä pitkässä aikavälissä.
 
 <figure class="unit-photo"><img src="pics/fy4/highway-light-trails.webp" alt="Kaartuva moottoritie yöllä: punaisia ja valkoisia valojuovia, katuvaloja ja lumiset pientareet."><figcaption>Pitkällä valotusajalla otetussa yökuvassa ajoneuvojen valot piirtävät juovia. Punaiset juovat ovat takavaloja, valkoiset ajovaloja.</figcaption></figure>
 
 Liike voidaan esittää **$(t,x)$-kuvaajana**, jossa vaaka-akselilla on aika ja pystyakselilla paikka. Tasaisen liikkeen kuvaaja on suora. Suoran kulmakerroin on nopeus. Mitä suurempi kulmakertoimen itseisarvo on, sitä suurempi on kappaleen vauhti, ja kulmakertoimen etumerkki kertoo liikkeen suunnan: nouseva suora tarkoittaa liikettä positiiviseen suuntaan, laskeva suora liikettä negatiiviseen suuntaan ja vaakasuora suora paikallaan oloa. Kuvaaja ei ole kuva kappaleen radasta: nouseva viiva ei tarkoita ylämäkeä, vaan sitä, että paikka kasvaa.
+
+```pysahdy
+Paikka–aika-kuvaajassa suora laskee oikealle. Liikkuuko kappale ylämäkeen, alamäkeen vai johonkin muuhun suuntaan?
+---
+Kuvaaja ei kuvaa rataa. Laskeva suora tarkoittaa, että paikka $x$ pienenee eli kappale liikkuu negatiiviseen suuntaan.
+```
 
 ## Kaava: Keskinopeus ja tasaisen liikkeen yhtälö
 Kun paikka muuttuu aikavälillä $\Delta t = t_2 - t_1$ määrän $\Delta x$, keskinopeus on siirtymä jaettuna ajalla:

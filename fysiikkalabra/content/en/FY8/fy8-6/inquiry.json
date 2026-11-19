@@ -23,22 +23,22 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Review: the energy of a photon",
+      "title": "Review: the frequency of light",
       "optional": true,
-      "prompt": "The wavelength of red light is $630\\,\\text{nm}$ and that of blue light $470\\,\\text{nm}$. Which light has a photon of greater energy?",
+      "prompt": "The wavelength of the light of a red LED is $630\\,\\text{nm}$ and that of a blue LED $470\\,\\text{nm}$. Which LED's light has the greater frequency?",
       "choices": [
         {
-          "text": "Blue, because a shorter wavelength gives the photon greater energy.",
+          "text": "Blue, because the speed of light is the same and a shorter wavelength means a greater frequency.",
           "correct": true,
-          "feedback": "Correct. The energy of a photon is $E = \\tfrac{hc}{\\lambda}$ (chapter *The photoelectric effect and the photon*). The energy of a photon of blue light is about $$\n\\begin{aligned}\n&1240\\,\\text{eV}\\,\\text{nm} : 470\\,\\text{nm} \\\\\n&\\approx 2.64\\,\\text{eV}\n\\end{aligned}\n$$ and that of red light about $$\n\\begin{aligned}\n&1240\\,\\text{eV}\\,\\text{nm} : 630\\,\\text{nm} \\\\\n&\\approx 1.97\\,\\text{eV}\n\\end{aligned}\n$$."
+          "feedback": "Correct. For a wave $c = f\\lambda$ (chapter *Electromagnetic radiation and the black-body spectrum*), so the frequency is $f = \\tfrac{c}{\\lambda}$ and a shorter wavelength gives a greater frequency. The frequency of blue light is about $6.38 \\cdot 10^{14}\\,\\text{Hz}$ and that of red light about $4.76 \\cdot 10^{14}\\,\\text{Hz}$."
         },
         {
-          "text": "Red, because a longer wave carries more energy with it.",
-          "feedback": "The energy of a photon is $E = \\tfrac{hc}{\\lambda}$: it *decreases* when the wavelength grows. The energy of a red photon is about $1.97\\,\\text{eV}$ and that of a blue one about $2.64\\,\\text{eV}$."
+          "text": "Red, because a longer wave contains more oscillation.",
+          "feedback": "Frequency and wavelength are inversely proportional, $f = \\tfrac{c}{\\lambda}$: when the wavelength grows, the frequency *decreases*. The frequency of red light is about $4.76 \\cdot 10^{14}\\,\\text{Hz}$ and that of blue light about $6.38 \\cdot 10^{14}\\,\\text{Hz}$."
         },
         {
-          "text": "Equal, because both photons travel at the same speed of light.",
-          "feedback": "The same speed does not mean the same energy. The energy of a photon depends on the frequency, $E = hf$, and the frequency of blue light, whose wavelength is shorter, is greater, so the energy of its photon is greater."
+          "text": "Equal, because both lights travel at the same speed of light.",
+          "feedback": "The same speed does not mean the same frequency. When the speed is the same, the frequency depends on the wavelength, $f = \\tfrac{c}{\\lambda}$, and the frequency of blue light, whose wavelength is shorter, is greater."
         }
       ]
     },

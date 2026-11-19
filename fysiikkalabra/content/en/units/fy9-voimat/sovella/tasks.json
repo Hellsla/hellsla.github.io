@@ -1,5 +1,5 @@
 {
-  "intro": "Six matriculation-exam-style tasks bring together the lesson's Newton's laws, free-body diagrams, friction, the inclined plane, connected bodies and air resistance. Solve them as in the exam: draw the free-body diagram before the equations, justify the choice of model, solve for the required quantity before substituting numbers and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is finished.",
+  "intro": "Eight matriculation-exam-style tasks bring together the lesson's Newton's laws, free-body diagrams, friction, the inclined plane, connected bodies and air resistance. Solve them as in the exam: draw the free-body diagram before the equations, justify the choice of model, solve for the required quantity before substituting numbers and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is finished.",
   "tasks": [
     {
       "id": "fy9-voimat-s1",
@@ -779,6 +779,339 @@
         "concept": "fy4-14",
         "transfer": "fy4-6",
         "communication": "fy4-14"
+      }
+    },
+    {
+      "id": "fy9-voimat-s7",
+      "title": "A skydiver before the canopy opens",
+      "source": "example",
+      "source_note": "The situation and the numbers are invented examples.",
+      "skills": [
+        "fy4-14",
+        "fy4-4",
+        "fy4-2"
+      ],
+      "figure": "fy4-14/hyppy-vt-points",
+      "text": "The mass of a skydiver with the equipment is $75\\,\\text{kg}$. She jumps from an aeroplane and falls belly down before she opens the canopy. The graph shows her speed downwards as a function of time. Assume that the magnitude of air resistance is directly proportional to the square of the speed, $F_\\text{v} = kv^2$, and that her position stays the same. Choose downwards as the positive direction.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Calculate the skydiver's average acceleration in the time intervals $0\\ldots 2\\,\\text{s}$ and $6\\ldots 10\\,\\text{s}$.",
+          "answer": [
+            {
+              "name": "a1",
+              "value": 9.3,
+              "unit": "m/s^2",
+              "tolerance": 0.03
+            },
+            {
+              "name": "a2",
+              "value": 1.5,
+              "unit": "m/s^2",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The velocities are read from points far apart: $(0\\,\\text{s};\\ 0\\,\\text{m/s})$ and $(2\\,\\text{s};\\ 18.6\\,\\text{m/s})$, and $(6\\,\\text{s};\\ 40.4\\,\\text{m/s})$ and $(10\\,\\text{s};\\ 46.4\\,\\text{m/s})$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a = \\dfrac{\\Delta v}{\\Delta t}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\na_1 &= \\dfrac{18.6\\,\\text{m/s} - 0}{2\\,\\text{s}} \\\\\n&= 9.3\\,\\text{m/s}^2\n\\end{aligned}\n$$ and $$\n\\begin{aligned}\na_2 &= \\dfrac{46.4\\,\\text{m/s} - 40.4\\,\\text{m/s}}{4\\,\\text{s}} \\\\\n&= 1.5\\,\\text{m/s}^2\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$a_1 \\approx 9.3\\,\\text{m/s}^2$ and $a_2 \\approx 1.5\\,\\text{m/s}^2$, two significant figures like the velocities read; the acceleration decreases because air resistance grows."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "Estimate the magnitude of air resistance at the moment $8\\,\\text{s}$ using the average acceleration $a_2$ of part a.",
+          "answer": {
+            "value": 623.25,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "Downwards positive: $mg - F_\\text{v} = ma$"
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$F_\\text{v} = m(g - a)$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nF_\\text{v} &= 75.0\\,\\text{kg} \\\\\n&\\quad \\cdot (9.81\\,\\text{m/s}^2 \\\\\n&\\qquad - 1.5\\,\\text{m/s}^2) \\\\\n&\\approx 623\\,\\text{N}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nF_\\text{v} &\\approx 6.2 \\cdot 10^2\\,\\text{N}\n\\end{aligned}\n$$, two significant figures like the acceleration"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The weight is $736\\,\\text{N}$ and air resistance about $85\\,\\%$ of it, which fits a small acceleration."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Estimate the skydiver's terminal velocity.",
+          "answer": {
+            "value": 48.35,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 2,
+              "detail": "At terminal velocity air resistance equals the weight: $kv_\\text{t}^2 = mg$. At $8\\,\\text{s}$, $F_\\text{v} = kv^2$ holds, so $$\n\\begin{aligned}\nv_\\text{t} &= v\\sqrt{\\dfrac{mg}{F_\\text{v}}}\n\\end{aligned}\n$$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nv_\\text{r} &= 44.5\\,\\text{m/s} \\cdot \\sqrt{\\dfrac{736\\,\\text{N}}{623\\,\\text{N}}} \\\\\n&\\approx 48\\,\\text{m/s}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The speed in the graph is $47.3\\,\\text{m/s}$ at $12\\,\\text{s}$ and still slowly rising; the estimate $48\\,\\text{m/s}$ is a little larger, as it should be."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 4,
+          "text": "A second skydiver has a mass of $100\\,\\text{kg}$ with the equipment, and falls in the same position with the same kind of equipment without a canopy. Compare his terminal velocity with that of the first skydiver. Justify by calculation.",
+          "criteria": [
+            {
+              "text": "At terminal velocity air resistance equals the weight, $kv_\\text{t}^2 = mg$. The position is the same, so $k$ is the same; a heavier skydiver needs a larger air resistance, that is a higher speed.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$v_\\text{t} = \\sqrt{\\dfrac{mg}{k}}$, so $$\n\\begin{aligned}\n\\dfrac{v_\\text{t}'}{v_\\text{t}} &= \\sqrt{\\dfrac{m'}{m}}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nk &= \\dfrac{623\\,\\text{N}}{(44.5\\,\\text{m/s})^2} \\\\\n&\\approx 0.31\\,\\text{kg/m}\n\\end{aligned}\n$$ and $$\n\\begin{aligned}\nv_\\text{r}' &= \\sqrt{\\dfrac{100\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2}{0.315\\,\\text{kg/m}}} \\\\\n&\\approx 56\\,\\text{m/s}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The heavier skydiver's terminal velocity is about $56\\,\\text{m/s}$, about $15\\,\\%$ larger although the mass is $33\\,\\%$ larger: the speed grows with the square root of the mass."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy4-14",
+        "math": "fy4-4",
+        "concept": "fy4-14",
+        "communication": "fy4-14"
+      }
+    },
+    {
+      "id": "fy9-voimat-s8",
+      "title": "A lift and a force plate",
+      "source": "example",
+      "source_note": "The situation and the numbers are invented examples.",
+      "skills": [
+        "fy4-16",
+        "fy4-4",
+        "fy4-2"
+      ],
+      "figure": "fy4-16/ex-hissi",
+      "text": "A person with a mass of $75.0\\,\\text{kg}$ stands on a force plate in a lift that goes downwards and is at rest before it leaves and at the end. The graph shows the reading $N$ of the plate as a function of time. The reading is the support force of the plate on the person. Choose upwards as the positive direction.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 5,
+          "text": "Calculate the acceleration of the lift in the time interval $1.0\\ldots 3.0\\,\\text{s}$.",
+          "answer": {
+            "value": -1.1433,
+            "unit": "m/s^2",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The reading is $N = 650\\,\\text{N}$ in this interval."
+            },
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "Upwards positive: $N - mg = ma$"
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$a = \\dfrac{N - mg}{m}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\na &= \\dfrac{650\\,\\text{N} - 75.0\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2}{75.0\\,\\text{kg}} \\\\\n&\\approx -1.14\\,\\text{m/s}^2\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$a \\approx -1.1\\,\\text{m/s}^2$; the minus sign tells that the acceleration points down."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Calculate the velocity of the lift at the moment $3.0\\,\\text{s}$ and tell its direction.",
+          "answer": {
+            "value": -2.2867,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The lift is at rest at $1.0\\,\\text{s}$ and the acceleration is constant: $v = a\\,\\Delta t$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nv &= -1.14\\,\\text{m/s}^2 \\cdot 2.0\\,\\text{s} \\\\\n&\\approx -2.29\\,\\text{m/s}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v \\approx -2.3\\,\\text{m/s}$, that is $2.3\\,\\text{m/s}$ downwards"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Calculate the acceleration of the lift in the time interval $6.0\\ldots 8.7\\,\\text{s}$ and use it to show that the lift stops at the moment $8.7\\,\\text{s}$.",
+          "answer": {
+            "value": 0.8567,
+            "unit": "m/s^2",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_equations",
+              "points": 1,
+              "detail": "Upwards positive: $N - mg = ma$, where $N = 800\\,\\text{N}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\na &= \\dfrac{800\\,\\text{N} - 735.75\\,\\text{N}}{75.0\\,\\text{kg}} \\\\\n&\\approx 0.857\\,\\text{m/s}^2\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$a \\approx 0.86\\,\\text{m/s}^2$ upwards"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The change in velocity is $$\n\\begin{aligned}\n0.857\\,\\text{m/s}^2 \\cdot 2.7\\,\\text{s} &\\approx 2.3\\,\\text{m/s}\n\\end{aligned}\n$$ upwards; it cancels the velocity $-2.3\\,\\text{m/s}$, so the lift stops."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 4,
+          "text": "How far does the lift travel downwards in the time interval $1.0\\ldots 8.7\\,\\text{s}$?",
+          "answer": {
+            "value": 12.234,
+            "unit": "m",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The magnitude of the velocity is $2.3\\,\\text{m/s}$ in $3.0\\ldots 6.0\\,\\text{s}$; it grows evenly from zero and decreases evenly to zero, so the $(t,v)$ graph is a trapezium whose parallel sides are $7.7\\,\\text{s}$ and $3.0\\,\\text{s}$ long."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The distance is the area under the graph: $s = \\tfrac{1}{2}(t_1 + t_2)\\,|v|$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\ns &= \\tfrac{1}{2}\\,(7.7\\,\\text{s} + 3.0\\,\\text{s}) \\cdot 2.29\\,\\text{m/s} \\\\\n&\\approx 12.2\\,\\text{m}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$s \\approx 12\\,\\text{m}$, two significant figures like the acceleration"
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "The person says: \"When the lift started down, my weight decreased.\" Explain what the reading of the plate measures and why the reading is $736\\,\\text{N}$ both at rest and at constant velocity.",
+          "criteria": [
+            {
+              "text": "The reading is the support force $N$, not the force of gravity; the force of gravity $mg = 736\\,\\text{N}$ does not change when the lift moves.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "At rest and at constant velocity the acceleration is zero, so $N - mg = 0$ and $N = mg$; the reading depends on the acceleration, not the velocity.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The reading decreased because the lift accelerated downwards ($N < mg$); the feeling of being lighter is real, but the force of gravity did not decrease."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy4-16",
+        "math": "fy4-4",
+        "concept": "fy4-16",
+        "communication": "fy4-16"
       }
     }
   ]

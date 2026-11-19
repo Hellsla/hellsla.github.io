@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: d58e8eff79450b0f
+CONTENT-HASH: ed43d45a98e99e92
+Mode: delta
+Round: 1
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+None.
 
 ## Checked
-- Delta (md-paragraphs): open solutions at 1280 px, L2 parts 10 and 12 and L3 part 6 (L2-06 and L2-07 and L3-04 areas): split model-answer paragraphs read well, formulas and aligned rows intact, no clipping.
-- Other changed solutions are the same kind of split by diff; not each opened.
+- Delta: changed task texts (prefix "Esimerkkiaineisto:" removed, each text now opens with a capital); read in the diff. Layout judged in fy3-13-open-exercises-L3-1280-1 (task text, answer row, open solution, no clipping).
+- Wording only: the new openings read naturally; maths and units unchanged and in LaTeX.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

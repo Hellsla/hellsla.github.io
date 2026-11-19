@@ -41,7 +41,7 @@ F 38 oikea
 F_mu 20 vasen
 a oikea
 ```
-**Kaava:** Vaakasuunnassa $F - F_\mu = ma$, joten $a = \dfrac{F - F_\mu}{m}$
+**Kaava:** Newtonin toinen laki on $\Sigma F = ma$. Vaakasuunnassa kokonaisvoima on $\Sigma F = F - F_\mu$, joten $F - F_\mu = ma$ ja $a = \dfrac{F - F_\mu}{m}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{38\,\text{N} - 20\,\text{N}}{12\,\text{kg}} = \dfrac{18\,\text{N}}{12\,\text{kg}} = 1{,}5\,\text{m/s}^2$
 **Vastaus:** $1{,}5\,\text{m/s}^2$ vedon suuntaan, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -57,7 +57,7 @@ T 78,48 ylös
 G 78,48
 a 0
 ```
-**Kaava:** $T - mg = 0$, joten $T = mg$
+**Kaava:** Newtonin toinen laki on $\Sigma F = ma$, ja tasaisessa liikkeessä $a = 0$, joten $\Sigma F = 0$. Kokonaisvoima on $\Sigma F = T - G$ ja paino on $G = mg$, joten $T - mg = 0$ ja $T = mg$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** $T = 8{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 78{,}48\,\text{N}$
 **Vastaus:** $78\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $8{,}0\,\text{kg}$.
@@ -83,7 +83,7 @@ G 8829
 T 7479 ylös
 a alas
 ```
-**Kaava:** $mg - T = ma$, joten $T = m(g - a)$
+**Kaava:** Newtonin toinen laki on $\Sigma F = ma$. Kun alas on positiivinen suunta, kokonaisvoima on $\Sigma F = G - T$ ja paino on $G = mg$, joten $mg - T = ma$ ja $T = m(g - a)$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $T = 900\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 1{,}5\,\text{m/s}^2) = 900\,\text{kg}\cdot 8{,}31\,\text{m/s}^2 = 7479\,\text{N}$
 **Vastaus:** $7500\,\text{N}$ eli $7{,}5\,\text{kN}$, kaksi merkitsevää numeroa kuten kiihtyvyydessä $1{,}5\,\text{m/s}^2$.
@@ -100,7 +100,7 @@ G 1177,2
 a ylös
 v alas
 ```
-**Kaava:** Kiihtyvyyden suuruus $a = \dfrac{|v - v_0|}{\Delta t}$ ylöspäin, ja $T - mg = ma$, joten $T = m(g + a)$
+**Kaava:** Kiihtyvyyden suuruus on $a = \dfrac{|v - v_0|}{\Delta t}$ ylöspäin. Newtonin toinen laki on $\Sigma F = ma$. Kun ylös on positiivinen suunta, kokonaisvoima on $\Sigma F = T - G$ ja paino on $G = mg$, joten $T - mg = ma$ ja $T = m(g + a)$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{2{,}0\,\text{m/s}}{2{,}0\,\text{s}} = 1{,}0\,\text{m/s}^2$ ja $T = 120\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 + 1{,}0\,\text{m/s}^2) = 120\,\text{kg}\cdot 10{,}81\,\text{m/s}^2 = 1297{,}2\,\text{N}$
 **Vastaus:** $1300\,\text{N}$ eli $1{,}3\,\text{kN}$, kaksi merkitsevää numeroa kuten nopeudessa $2{,}0\,\text{m/s}$ ja ajassa $2{,}0\,\text{s}$.
@@ -119,7 +119,7 @@ F_a 60 oikea
 F_b 45 vasen
 a oikea
 ```
-**Kaava:** $F_\text{a} - F_\text{b} = ma$, joten $a = \dfrac{F_\text{a} - F_\text{b}}{m}$
+**Kaava:** Newtonin toinen laki on $\Sigma F = ma$. Vastakkaisten vaakavoimien kokonaisvoima on $\Sigma F = F_\text{a} - F_\text{b}$, joten $F_\text{a} - F_\text{b} = ma$ ja $a = \dfrac{F_\text{a} - F_\text{b}}{m}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{60\,\text{N} - 45\,\text{N}}{30\,\text{kg}} = \dfrac{15\,\text{N}}{30\,\text{kg}} = 0{,}50\,\text{m/s}^2$
 **Vastaus:** $0{,}50\,\text{m/s}^2$ suuremman vedon suuntaan, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -136,7 +136,7 @@ G 588,6
 N 529,74
 a alas
 ```
-**Kaava:** $N - mg = ma$, joten $a = \dfrac{N - mg}{m}$
+**Kaava:** Newtonin toinen laki on $\Sigma F = ma$. Kun ylös on positiivinen suunta, kokonaisvoima on $\Sigma F = N - G$ ja paino on $G = mg$, joten $N - mg = ma$ ja $a = \dfrac{N - mg}{m}$
 **Muunnokset:** Vaa'an lukema muunnetaan voimaksi: $N = 54{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 529{,}74\,\text{N}$.
 **Sijoitus:** $a = \dfrac{529{,}74\,\text{N} - 60{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2}{60{,}0\,\text{kg}} = \dfrac{529{,}74\,\text{N} - 588{,}6\,\text{N}}{60{,}0\,\text{kg}} = -0{,}981\,\text{m/s}^2$
 **Vastaus:** $0{,}98\,\text{m/s}^2$ alaspäin, kaksi merkitsevää numeroa, koska lukemien erotus $6{,}0\,\text{kg}$ on kahden numeron tarkkuudella.
@@ -146,7 +146,7 @@ a alas
 **Annettu:** tyhjän auton massa $m_1 = 10\,\text{t}$, lastatun $m_2 = 25\,\text{t}$, nopeuden muutos $\Delta v = 36\,\text{km/h}$, tyhjän auton aika $\Delta t_1 = 8{,}0\,\text{s}$, sama kokonaisvoima
 **Kysytty:** lastatun auton kiihdytysaika $\Delta t_2$ yksikössä $\text{s}$
 **Periaate:** Tyhjän auton kiihdytyksestä saadaan kokonaisvoima Newtonin toisella lailla. Sama kokonaisvoima antaa suuremmalle massalle pienemmän kiihtyvyyden, ja pienemmällä kiihtyvyydellä sama nopeuden muutos vie pidemmän ajan.
-**Kaava:** $\Sigma F = m_1 \dfrac{\Delta v}{\Delta t_1}$ ja $\Sigma F = m_2 \dfrac{\Delta v}{\Delta t_2}$, joten $\Delta t_2 = \dfrac{m_2 \Delta v}{\Sigma F}$
+**Kaava:** Newtonin toinen laki on $\Sigma F = ma$ ja kiihtyvyys on $a = \dfrac{\Delta v}{\Delta t}$, joten $\Sigma F = m_1 \dfrac{\Delta v}{\Delta t_1}$ ja $\Sigma F = m_2 \dfrac{\Delta v}{\Delta t_2}$. Toisesta saadaan $\Delta t_2 = \dfrac{m_2 \Delta v}{\Sigma F}$
 **Muunnokset:** $36\,\text{km/h} = 36 : 3{,}6\,\text{m/s} = 10\,\text{m/s}$, $10\,\text{t} = 10\,000\,\text{kg}$ ja $25\,\text{t} = 25\,000\,\text{kg}$
 **Sijoitus:** $\Sigma F = 10\,000\,\text{kg}\cdot\dfrac{10\,\text{m/s}}{8{,}0\,\text{s}} = 12\,500\,\text{N}$ ja $\Delta t_2 = \dfrac{25\,000\,\text{kg}\cdot 10\,\text{m/s}}{12\,500\,\text{N}} = 20\,\text{s}$
 **Vastaus:** $20\,\text{s}$, kaksi merkitsevää numeroa kuten ajassa $8{,}0\,\text{s}$.
@@ -164,7 +164,7 @@ N 294,3
 F_mu 18 vasen
 a vasen
 ```
-**Kaava:** $-F_\mu = ma$ ja $a = \dfrac{v - v_0}{\Delta t}$, joten $\Delta t = \dfrac{m(v_0 - v)}{F_\mu}$
+**Kaava:** Newtonin toinen laki on $\Sigma F = ma$, ja kokonaisvoima on kitka $\Sigma F = -F_\mu$. Kiihtyvyys on $a = \dfrac{v - v_0}{\Delta t}$, joten $-F_\mu = m\dfrac{v - v_0}{\Delta t}$ ja $\Delta t = \dfrac{m(v_0 - v)}{F_\mu}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Delta t = \dfrac{30\,\text{kg}\cdot(4{,}0\,\text{m/s} - 0)}{18\,\text{N}} = \dfrac{120\,\text{kg}\cdot\text{m/s}}{18\,\text{N}} = 6{,}67\,\text{s}$
 **Vastaus:** $6{,}7\,\text{s}$, kaksi merkitsevää numeroa kuten lähtötiedoissa $4{,}0\,\text{m/s}$, $18\,\text{N}$ ja $30\,\text{kg}$.
@@ -202,7 +202,7 @@ Väite nollasta kokonaisvoimasta pätisi vain tasaisessa nousussa. Väite, jonka
 **Kysytty:** kärryn massa $m$ yksikössä $\text{kg}$
 **Periaate:** Kitka on pieni, joten vetovoima on kokonaisvoima, ja Newtonin toisen lain mukaan $a = \dfrac{1}{m}F$. Kiihtyvyys on verrannollinen voimaan, joten kuvaajan suora kulkee origon kautta (ei voimaa, ei kiihtyvyyttä) ja sen kulmakerroin on $\dfrac{1}{m}$.
 **Kuvaajan lukeminen:** Pisteet piirretään $(F, a)$-koordinaatistoon ja pisteiden lomaan sovitetaan suora origon kautta. Suoralta luetaan piste $F = 1{,}00\,\text{N}$, $a = 2{,}01\,\text{m/s}^2$. Kulmakerroin lasketaan origon ja tämän pisteen avulla, ei kahdesta vierekkäisestä mittauspisteestä.
-**Kaava:** $k = \dfrac{a}{F} = \dfrac{1}{m}$, joten $m = \dfrac{1}{k}$
+**Kaava:** Newtonin toinen laki on $\Sigma F = ma$, ja kitkattomana $\Sigma F = F$, joten $a = \dfrac{1}{m}F$. Suoran kulmakerroin on $k = \dfrac{a}{F} = \dfrac{1}{m}$, joten $m = \dfrac{1}{k}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, ja $\dfrac{\text{m/s}^2}{\text{N}} = \dfrac{1}{\text{kg}}$, joten muunnoksia ei tarvita.
 **Sijoitus:** $k = \dfrac{2{,}01\,\text{m/s}^2 - 0\,\text{m/s}^2}{1{,}00\,\text{N} - 0\,\text{N}} = 2{,}01\,\tfrac{1}{\text{kg}}$ ja $m = \dfrac{1}{2{,}01\,\tfrac{1}{\text{kg}}} = 0{,}4975\,\text{kg}$
 **Vastaus:** $0{,}50\,\text{kg}$, kaksi merkitsevää numeroa, koska kulmakerroin luetaan kuvaajasta noin kahden numeron tarkkuudella.
@@ -213,7 +213,7 @@ Väite nollasta kokonaisvoimasta pätisi vain tasaisessa nousussa. Väite, jonka
 **Kysytty:** vetävän voiman suuruus $F$ yksikössä $\text{N}$
 **Periaate:** Vakiovoimalla $a = F \cdot \dfrac{1}{m}$, joten kiihtyvyys on verrannollinen massan käänteislukuun $\dfrac{1}{m}$. Käänteisluvun avulla käyrä $(m, a)$ muuttuu suoraksi, ja suoran kulmakerroin on voima $F$. Suora kulkee origon kautta, koska hyvin suurella massalla kiihtyvyys olisi lähes nolla. Kulmakertoimen ja suoran mielekkyyden edellytys on, että vain massa muuttuu: vetävän voiman, alustan ja kitkan pitää pysyä samoina.
 **Kuvaajan lukeminen:** Käänteisluvut ovat $5{,}0$, $3{,}3$, $2{,}5$, $2{,}0$ ja $1{,}7\,\tfrac{1}{\text{kg}}$. Pisteet $(1/m, a)$ asettuvat suoralle, ja suoralta luetaan pisteet $(0, 0)$ ja $(5{,}0\,\tfrac{1}{\text{kg}}, 6{,}0\,\text{m/s}^2)$.
-**Kaava:** $a = F \cdot \dfrac{1}{m}$, joten kulmakerroin $k = \dfrac{\Delta a}{\Delta(1/m)} = F$
+**Kaava:** Newtonin toinen laki on $\Sigma F = ma$, ja kitkattomana $\Sigma F = F$, joten $a = F \cdot \dfrac{1}{m}$. Kulmakerroin on $k = \dfrac{\Delta a}{\Delta(1/m)} = F$
 **Muunnokset:** Suureet ovat SI-yksiköissä, ja $\text{kg}\cdot\dfrac{\text{m}}{\text{s}^2} = \text{N}$, joten muunnoksia ei tarvita.
 **Sijoitus:** $F = k = \dfrac{6{,}0\,\text{m/s}^2 - 0\,\text{m/s}^2}{5{,}0\,\tfrac{1}{\text{kg}} - 0\,\tfrac{1}{\text{kg}}} = 1{,}2\,\text{N}$
 **Vastaus:** a) kulmakerroin on vetävä voima $F$; b) vakioina pidettiin vetävä voima, rata ja kitka, vain massa muuttui. Voiman suuruus on $1{,}2\,\text{N}$, kaksi merkitsevää numeroa kuten kiihtyvyyksien lukemissa.
@@ -230,7 +230,7 @@ G 8044
 a ylös
 v alas
 ```
-**Kaava:** $T - mg = ma$, joten $T = m(g + a)$
+**Kaava:** Newtonin toinen laki on $\Sigma F = ma$. Kun ylös on positiivinen suunta, kokonaisvoima on $\Sigma F = T - G$ ja paino on $G = mg$, joten $T - mg = ma$ ja $T = m(g + a)$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $$\begin{aligned} &T \\ &= 820\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 \\ &+ 1{,}20\,\text{m/s}^2) \\ &= 820\,\text{kg}\cdot 11{,}01\,\text{m/s}^2 \\ &= 9028{,}2\,\text{N} \end{aligned}$$
 **Vastaus:** $9030\,\text{N}$ eli $9{,}03\,\text{kN}$, kolme merkitsevää numeroa kuten kiihtyvyydessä $1{,}20\,\text{m/s}^2$. Opiskelijan virhe oli ottaa kiihtyvyyden suunnaksi liikkeen suunta alas: kiihtyvyys osoittaa ylös, koska elementti hidastuu.
@@ -241,7 +241,7 @@ v alas
 **Kysytty:** kitkavoiman suuruus $F_\mu$ yksikössä $\text{N}$ (lisäksi kärryn massa $m$)
 **Periaate:** Liikkuvaan kärryyn vaikuttaa vetovoima liikkeen suuntaan ja kitka sitä vastaan, joten Newtonin toisen lain mukaan $F - F_\mu = ma$ eli $a = \dfrac{1}{m}F - \dfrac{F_\mu}{m}$. Kuvaaja on suora, jonka kulmakerroin on $\dfrac{1}{m}$. Suora ei kulje origon kautta, koska osa vetovoimasta kuluu kitkan voittamiseen: kiihtyvyys on nolla, kun $F = F_\mu$, joten suora leikkaa $F$-akselin kitkavoiman kohdalla.
 **Kuvaajan lukeminen:** Pisteiden lomaan sovitetaan suora. Suoralta luetaan kaksi pistettä kaukana toisistaan: $(2{,}0\,\text{N}, 0{,}41\,\text{m/s}^2)$ ja $(6{,}0\,\text{N}, 2{,}40\,\text{m/s}^2)$. Kulmakerroin lasketaan niistä, ja leikkauskohta $F$-akselilla saadaan ensimmäisestä pisteestä kulmakertoimella.
-**Kaava:** $k = \dfrac{\Delta a}{\Delta F} = \dfrac{1}{m}$, joten $m = \dfrac{1}{k}$, ja leikkauskohdassa $a = 0$, joten $F_\mu = F_1 - \dfrac{a_1}{k}$
+**Kaava:** Newtonin toinen laki on $\Sigma F = ma$, ja kokonaisvoima on $\Sigma F = F - F_\mu$, joten $a = \dfrac{1}{m}F - \dfrac{F_\mu}{m}$. Kulmakerroin on $k = \dfrac{\Delta a}{\Delta F} = \dfrac{1}{m}$, joten $m = \dfrac{1}{k}$. Pisteessä $(F_1, a_1)$ pätee $a_1 = k(F_1 - F_\mu)$, joten $F_\mu = F_1 - \dfrac{a_1}{k}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $k = \dfrac{2{,}40\,\text{m/s}^2 - 0{,}41\,\text{m/s}^2}{6{,}0\,\text{N} - 2{,}0\,\text{N}} = 0{,}4975\,\tfrac{1}{\text{kg}}$, $m = \dfrac{1}{0{,}4975\,\tfrac{1}{\text{kg}}} = 2{,}01\,\text{kg}$ ja $F_\mu = 2{,}0\,\text{N} - \dfrac{0{,}41\,\text{m/s}^2}{0{,}4975\,\tfrac{1}{\text{kg}}} = 1{,}18\,\text{N}$
 **Vastaus:** $1{,}2\,\text{N}$ ($1{,}18\,\text{N}$ ennen pyöristystä), kaksi merkitsevää numeroa. Kärryn massa on noin $2{,}0\,\text{kg}$. Pisteet eivät ole täsmälleen suoralla mittauksen satunnaisvaihtelun vuoksi, joten tulos on arvio.
@@ -259,7 +259,7 @@ G 686,7
 a alas
 v ylös
 ```
-**Kaava:** $v_{\max} = a_1\Delta t_1$, $a_3 = \dfrac{0 - v_{\max}}{\Delta t_3}$ ja $N - mg = ma_3$, joten $N = m(g + a_3)$
+**Kaava:** Kiihtyvyys on $a = \dfrac{\Delta v}{\Delta t}$, joten $v_{\max} = a_1\Delta t_1$ ja $a_3 = \dfrac{0 - v_{\max}}{\Delta t_3}$. Newtonin toinen laki on $\Sigma F = ma_3$. Kun ylös on positiivinen suunta, kokonaisvoima on $\Sigma F = N - G$ ja paino on $G = mg$, joten $N - mg = ma_3$ ja $N = m(g + a_3)$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Vaiheen 3 kesto on $\Delta t_3 = 13{,}0\,\text{s} - 9{,}0\,\text{s} = 4{,}0\,\text{s}$.
 **Sijoitus:** $v_{\max} = 1{,}0\,\text{m/s}^2 \cdot 3{,}0\,\text{s} = 3{,}0\,\text{m/s}$ ja $a_3 = \dfrac{0 - 3{,}0\,\text{m/s}}{4{,}0\,\text{s}} = -0{,}75\,\text{m/s}^2$. Tukivoima on $$\begin{aligned} &N \\ &= 70\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 \\ &- 0{,}75\,\text{m/s}^2) \\ &= 70\,\text{kg}\cdot 9{,}06\,\text{m/s}^2 \\ &= 634{,}2\,\text{N} \end{aligned}$$
 **Vastaus:** $630\,\text{N}$ ($634\,\text{N}$ ennen pyöristystä), kaksi merkitsevää numeroa kuten massassa $70\,\text{kg}$ ja kiihtyvyydessä. Suurin nopeus on $3{,}0\,\text{m/s}$ ja kiihtyvyys vaiheessa 3 on $0{,}75\,\text{m/s}^2$ alaspäin. Tukivoima on painoa $mg = 686{,}7\,\text{N}$ pienempi, koska kokonaisvoima ja kiihtyvyys osoittavat alas.
@@ -308,7 +308,7 @@ Kiihtyvyys on $2{,}0\,\text{m/s}^2$ työntövoiman suuntaan, kaksi merkitsevää
 **Kysytty:** kärryn A kiihtyvyys $a$ yksikössä $\text{m/s}^2$
 **Periaate:** Newtonin toisen lain mukaan $\Sigma F = ma$. Massa on kärryn oma ominaisuus ja sama kaikilla voimilla, joten se saadaan kuvaajan pisteestä ja kiihtyvyys uudelle voimalle sen avulla.
 **Kuvaajan lukeminen:** Kärryn A suora on jyrkempi (tummanharmaa). Sen oikeanpuoleinen piste on ruudukon risteyksessä: $\Sigma F_1 = 3{,}0\,\text{N}$ ja $a_1 = 6{,}0\,\text{m/s}^2$. Voima $2{,}4\,\text{N}$ on mittapisteiden välissä, joten kiihtyvyys lasketaan massan kautta.
-**Kaava:** Massa $m = \dfrac{\Sigma F_1}{a_1}$, ja kiihtyvyys uudelle voimalle $a = \dfrac{\Sigma F}{m}$
+**Kaava:** Newtonin toinen laki on $\Sigma F = ma$, joten massa on $m = \dfrac{\Sigma F_1}{a_1}$. Kiihtyvyys uudelle voimalle on $a = \dfrac{\Sigma F}{m}$
 **Muunnokset:** Voimat ovat newtoneina ja kiihtyvyydet yksikössä $\text{m/s}^2$, joten muunnoksia ei tarvita.
 **Sijoitus:** $m = \dfrac{3{,}0\,\text{N}}{6{,}0\,\text{m/s}^2} = 0{,}50\,\text{kg}$ ja $a = \dfrac{2{,}4\,\text{N}}{0{,}50\,\text{kg}} = 4{,}8\,\text{m/s}^2$
 **Vastaus:** $4{,}8\,\text{m/s}^2$ voiman suuntaan, kaksi merkitsevää numeroa kuten voimassa $2{,}4\,\text{N}$.

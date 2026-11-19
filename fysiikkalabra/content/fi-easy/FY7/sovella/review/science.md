@@ -1,23 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 7627be825e67e9d3
+CONTENT-HASH: 97c516b0e2108e09
 
 ## Blocking
 None.
 
 ## Polish
-- fy7-s2 c: the answer is 11,4 km/h with a tolerance of 0,03, but the solution's own rounded answer "≈ 11 km/h" (and the lower end of "Hyväksytään myös 11–12 km/h") is 3,6 % away. Widen the tolerance to 0,05 or give the answer as 11,4 km/h.
-- fy7-s2 d (criterion 3 and the model answer): in a hub dynamo the magnet ring turns with the hub shell, so the field in the shell barely changes and the shell is a poor example of where eddy currents arise. The alternating flux runs through the stationary core and the other stator metal parts. Name those parts instead of "napaan".
-- fy7-s4 c Järkevyys: "linssi, joka kokoaa valon kapeaksi keilaksi" is vague. The point is that the light has to reach the fibre's end face inside a cone of half-angle ≈ 13,8°.
-- fy7-s2 e Järkevyys: "hitaammin ajettaessa sama teho vaatii suuremman voiman" holds only if the lamp's power stays 3 W at lower speed. Add "jos valon teho pysyy samana".
+- fy7-s2 c, Periaate and Kaava: $e_0 = NBA \cdot 2\pi f$ is the rotating-coil formula. The claw-pole hub dynamo needs only $e_0 \propto f$ (Faraday: the flux changes faster), and the solution uses only that. The constant $\kappa = 28NBA : (\sqrt{2}D)$ gives $N$, $B$ and $A$ a meaning they do not have in this geometry. A sentence saying only the proportionality is used would avoid that (C, not a finding).
+- fy7-s4 a: the solution claims three significant figures because the peak is "on a gridline", but $\lambda_\text{max} = 2{,}0\,\mu\text{m}$ is read to about $\pm 0{,}05\,\mu\text{m}$ (2,5 %). Two figures ($1{,}4 \cdot 10^3\,\text{K}$) or "three, with the uncertainty judged in d" is more honest. The tolerance accepts either.
+- fy7-s4 c: "kolme merkitsevää numeroa, kuten taitekertoimissa". $\theta$ depends on $n_1^2 - n_2^2$, so its real precision is lower. This does not affect the answer check.
 
 ## Checked
-One script recomputed every number from the task data with my own formulas. All of them agree with answers.py and the solutions, mistakes included:
-- s1: v, E, U_s, B, r₁₀, Δx = 7,24 cm, v₁₀ and the ratio 0,910.
-- s2: f, U, v = 5,236 m/s, v_min, F = 0,955 N.
-- s3: R = 9,40 Ω, both losses, U_k, the area and diameter, the masses, F/l and G/l.
-- s4: 1449 K, ±36 K, α_r, θ (= arcsin √(n₁² − n₂²)), d = 362 nm and the visible maxima and minima.
-- s5: the slope through the origin is 6,003·10⁻⁴ 1/nm, every angle comes back to its rounded value, λ = 589 ± 3 nm, and the He/Na angles agree in both orders.
-
-Physics: the force directions (upper plate positive, the analyser bends the beam the same way), the pole count, e₀ ∝ f, Lenz drag with P = Fv, repulsion of opposite currents under AC, the black-body peak and emissivity, the phase changes at both reflections, the visible tail of Planck's curve, and grating vs. prism.
-
-Scope is FY7 only, with no self-induction. Points equal the criteria sums, and each criterion asks only what its part asks. The figures are correct, and the s5 data is declared as simulated. The hash was the same at the start and the end.
+- Kaava steps (work queue 8g) in all 25 parts: each starts from its basic law (energy principle, $F_\text{s} = F_\text{m}$, $F_\text{m} = ma_\text{r}$, $v = s/\Delta t$, $\eta = P_\text{valo}/P_\text{otto}$, $R = \rho l/A$ with $P = UI$, Kirchhoff's voltage sum, $B = \mu_0 I/(2\pi r)$ with $F = IlB$, $m = \rho V$, Snell at $90^\circ$, $\Delta s = 2nd$, slope $= 1/d$). Each simplifies symbolically to the form the numbers are put into. The derived forms are algebraically correct, and $\kappa$ is correct.
+- One script recomputed every number from the task text with my own formulas: $v$, $U_\text{s}$, $B$, $\Delta x$, $v_{10}$, the 0,91 ratio; $f$, $U$, 18,8 and 11,4 km/h, 0,95 N, the >250 km/h error case, the 9 N hill; $R$, 846 kW, 28,0 kW, 17,18 kV, 4540 mm², 7,6 cm, 20 t and 613 t, 0,012 and 8,53 N/m, 3,97 N/m; 1449 K / 1176 °C, ±36 K, $\alpha_\text{r} = 80{,}44^\circ$, $\theta = 13{,}84^\circ$ (also from $\sqrt{n_1^2-n_2^2}$), 362 nm, 1000 nm with strong 500 nm and weak 667/400 nm; the six hydrogen angles match $d = 1666{,}7\,\text{nm}$ to 0,1°, fitted slope 6,003·10⁻⁴ 1/nm, 589,1 nm, ±3 nm, He–Na 0,053° and 0,140°, ±1,0 nm. All agree with the text, the answers and answers.py.
+- Physics: force directions and plate polarity, the analyser bending up, and the Lenz and eddy-current reasoning in s2 d. Repulsion between opposite AC currents, and the grey-body claim (peak not shifted). Both reflections inverting at 1,00→1,38→1,50, and grating against prisma dispersion. All correct, and the stated model assumptions are in the task texts.
+- Scope: within FY7. There is no self-induction (s2 c's "jää käämiin itseensä" names no mechanism), and no photon.
+- Rubrics: every criterion matches its task and solution. Points add up (16 + 16 + 17 + 17 + 17). Other methods are listed under Hyväksytään myös. Invented data is declared in source_note. Figures: the Planck peak is at 1,9998 µm, and the implanter arc and force figure are correct.

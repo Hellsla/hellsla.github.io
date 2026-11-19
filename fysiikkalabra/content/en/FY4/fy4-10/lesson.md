@@ -128,6 +128,12 @@ When cart 1 pushes cart 2 with a force $\overline{F}$, by Newton's third law car
 
 This reasoning works only when external forces do not change the momentum. On a horizontal air track the weight and the normal force cancel each other, and friction is very small. Colliding cars, on the other hand, do feel the friction of the road, but the collision lasts only a fraction of a second. The forces of the bumpers are then much larger than friction, so the impulse of friction during the collision remains negligibly small. This gives the **law of conservation of momentum**: when the sum of the external forces acting on a system is zero, or their impulse during the collision is negligibly small, the total momentum of the system is conserved.
 
+```pysahdy
+In a collision of two cars, road friction acts on the cars. Why can the total momentum still be treated as conserved?
+---
+The collision lasts only a fraction of a second, and the forces between the bumpers are much greater than friction. The impulse of friction is then negligibly small.
+```
+
 ### Types of collisions
 Momentum is conserved in every collision when the condition of the conservation law is met. Kinetic energy is not always conserved. A collision is **elastic** if the total kinetic energy of the objects after the collision is equal to that before it. Steel balls, billiard balls and carts with spring bumpers collide almost elastically. A collision is **inelastic** if some of the kinetic energy changes into other forms of energy. The objects then change shape, and kinetic energy becomes their internal energy and sound. When the objects stick together and move on together, the collision is **perfectly inelastic**, and the kinetic energy decreases the most: the largest possible part of it is transformed into other forms of energy.
 
@@ -226,8 +232,20 @@ Momentum is conserved in every collision when the condition of the conservation 
 
 In the figure, carts of equal mass stick together with hook-and-loop tape. The total momentum is the same before and after, but now the same momentum is shared by twice the mass, so the common velocity is half of the original. Kinetic energy $\tfrac12 mv^2$ is not conserved: twice the mass and half the velocity give half of the original kinetic energy. The other half becomes internal energy of the tape and the carts.
 
+```pysahdy
+In a perfectly inelastic collision the carts stick together. Where does the kinetic energy that "disappears" go?
+---
+It does not vanish but becomes internal energy of the tape and the carts. Total energy is conserved even though kinetic energy decreases.
+```
+
 ### An explosion
 In an **explosion**, a system that is at rest or moving together breaks into parts because of internal forces: a spring is released between carts, skaters push each other away, or gunpowder pushes a bullet and a rifle apart. If the system is at rest at first, its total momentum is zero and stays zero. When a system at rest breaks into two parts, the parts get momenta of equal magnitude in opposite directions, and the lighter part gets the greater velocity. This is why a rifle kicks backwards when the bullet goes forwards. If there are more parts, the vector sum of their momenta is zero, but the momenta of the individual parts can differ in magnitude. Kinetic energy increases in an explosion, because energy of the spring, the muscles or the gunpowder is changed into kinetic energy.
+
+```pysahdy
+A skater stands at rest on ice and throws a heavy ball forward. Why does the skater slide backward?
+---
+The ball gains momentum forwards, and the total momentum of the system stays zero. So the skater gains an equal momentum backwards.
+```
 
 ### The answer to the opening question
 Billiard balls have equal masses, and their collision is almost elastic. When the velocity of the cue ball is $v$, conservation of momentum says that the sum of the velocities of the balls stays the same: $v_1' + v_2' = v$. Conservation of kinetic energy says that the sum of the squares of the velocities stays the same: $v_1'^2 + v_2'^2 = v^2$. Squaring the first condition and subtracting the second gives $2 v_1' v_2' = 0$, so one of the balls is at rest after the collision. The cue ball cannot pass through the other ball, so it stops, and the other ball moves on with velocity $v$. In reality the balls also spin and the collision is not perfectly elastic, so the cue ball may keep moving a little.
@@ -393,6 +411,6 @@ Another mistake is to forget the signs. When objects move towards each other, th
 ## Summary
 - The total momentum of a system is conserved when the sum of the external forces is zero or their impulse during the collision or explosion is negligibly small: $\overline{p}_1 + \overline{p}_2 = \overline{p}_1' + \overline{p}_2'$.
 - Conservation follows from Newton's third law: the internal forces in a collision are equally large and opposite and act for the same time, so the changes in the momenta of the objects cancel each other.
-- In one dimension we choose a positive direction, and velocities are signed: $m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'$.
+- In one dimension we choose a positive direction, and velocities are signed: $$\begin{aligned} &m_1 v_1 + m_2 v_2 \\ &= m_1 v_1' + m_2 v_2' \end{aligned}$$
 - In an elastic collision, kinetic energy is also conserved. In an inelastic collision some of the kinetic energy changes into internal energy, and in a perfectly inelastic collision the objects move on together with a common velocity.
 - In an explosion, the total momentum of a system at rest stays zero: when it splits into two parts, the parts get momenta of equal magnitude in opposite directions, and kinetic energy increases.

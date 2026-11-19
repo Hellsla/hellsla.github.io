@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e0a16a3552a3a84f
+CONTENT-HASH: ae9268d2c79b7c5f
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] solutions.md — 'Kirjoita Newtonin toinen laki ...' (imperative) opens about 14 Kaava lines while the rest of each solution is descriptive; and 'Kun lasket yhtälöt yhteen' switches to the second person — keep one voice, e.g. 'Newtonin toinen laki kummallekin kappaleelle: ...'.
 
 ## Checked
-- Delta (md-paragraphs, solutions.md), each changed solution at 390 px: sol-fy4-13-L1-06-390.png (Mallivastaus in three paragraphs) and sol-fy4-13-L3-04-390.png (Järkevyys and the Voimakuvio split).
-- Breaks fall between separate points; spacing even, nothing clipped, formulas intact.
+- Opened fy4-13-open-exercises-L2-1280-6 (Atwood-type solution with voimakuvio figure: Kaava, Sijoitus chain, Vastaus, Järkevyys all intact, vectors \overline{T}, \overline{G} and figure unchanged).
+- Read all 19 changed lines.
+- Delta only (Kaava lines of solutions.md rewritten as basic equation, derived formula, symbolic simplification; numbers, answers and ids untouched). Hash rechecked at the end, unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

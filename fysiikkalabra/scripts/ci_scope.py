@@ -19,7 +19,7 @@ counted page by page. The whole site is tested by the weekly run and by a manual
 Run workflow), and by a push to main whose comparison commit is not known. A push to main is scoped like a pull
 request, against the commit main had before the push (github.event.before), so every commit of the push counts.
 The review system's own files (scripts/reviews.py, review_packet.py, their tests, docs/presentation-only.tsv,
-docs/teacher-figures.tsv) change no page: their unit tests and `reviews.py verify` run in every run.
+docs/teacher-figures.tsv, docs/teacher-text.tsv) change no page: their unit tests and `reviews.py verify` run in every run.
 "full" remains for: a file that decides what publishes (docs/visual-baseline.tsv), and an asset no lesson uses.
   content/<lang>/<COURSE>/<id>/**, lessons/<COURSE>/<id>/**   that page (sovella -> <COURSE>-sovella), any language
   tests/sims/<id>.json                                         that page
@@ -46,6 +46,7 @@ docs/teacher-figures.tsv) change no page: their unit tests and `reviews.py verif
                                                                rendered into the pages, and their site/ diff names them
   docs/*.md and docs/<dir>/**, *.md outside content/, tests/models/**, news/ newsletter/ tips/   nothing
   docs/visual-baseline.tsv                                     full (decides what publishes)
+  templates/sw.js, templates/offline.js, site/sw.js, site/offline.js                shared (every page registers the worker): smoke; scripts/test_offline.py runs in every run
   scripts/, templates/, other site/ files (site.css, lesson.js, vendor/ ...), curriculum.json, competencies.json,
   glossary.json, local-courses.json, the workflow file                                             full
 The site/ rows are sound because CI fails unless the committed site/ is exactly a fresh render of the sources:

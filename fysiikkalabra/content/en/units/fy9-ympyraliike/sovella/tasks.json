@@ -1,5 +1,5 @@
 {
-  "intro": "Seven matriculation-exam-style problems bring together the equilibrium, circular motion and gravitation of the lesson. Solve them as in the exam: draw a free-body diagram, justify which condition you use and why it holds, solve for the unknown quantity before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready. The last problem is an applied source-based task whose source opens from the link in the task.",
+  "intro": "Nine matriculation-exam-style problems bring together the equilibrium, circular motion and gravitation of the lesson. Solve them as in the exam: draw a free-body diagram, justify which condition you use and why it holds, solve for the unknown quantity before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready. Problem 7 is an applied source-based task whose source opens from the link in the task.",
   "tasks": [
     {
       "id": "fy9-ympyraliike-s1",
@@ -964,6 +964,304 @@
         "math": "fy5-4",
         "transfer": "fy5-6",
         "communication": "fy6-7"
+      }
+    },
+    {
+      "id": "fy9-ympyraliike-s8",
+      "title": "A car on a bend",
+      "source": "example",
+      "source_note": "The situation and the numbers are invented examples.",
+      "skills": [
+        "fy5-4",
+        "fy4-6",
+        "fy1-4"
+      ],
+      "figure": "fy5-4/kuvaaja-a",
+      "text": "A car drives at a constant speed through a level, circular bend. The radius of the bend is not given. The graph shows the centripetal acceleration of the car as a function of its speed along this bend. The mass of the car is $1200\\,\\text{kg}$. On a wet road the coefficient of static friction between the tyres and the road is $0.50$, and the tyres do not slip.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 4,
+          "text": "Determine the radius of the bend with the help of the graph.",
+          "answer": {
+            "value": 75.0,
+            "unit": "m",
+            "tolerance": 0.04
+          },
+          "criteria": [
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The marked point of the graph is read from the guide lines: $v = 15\\,\\text{m/s}$ and $a_\\text{n} = 3.0\\,\\text{m/s}^2$."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "On a circular path $a_\\text{n} = \\dfrac{v^2}{r}$, so $r = \\dfrac{v^2}{a_\\text{n}}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nr &= \\dfrac{(15\\,\\text{m/s})^2}{3.0\\,\\text{m/s}^2} \\\\\n&= 75\\,\\text{m}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$r = 75\\,\\text{m}$, two significant figures like the values read"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Draw the free-body diagram of the car. How large a friction force is needed when the car goes through the bend at the speed $15\\,\\text{m/s}$?",
+          "answer": {
+            "value": 3.6,
+            "unit": "kN",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "The body is the car: the weight $\\overline{G}$ down, the normal force $\\overline{N}$ up and the static friction of the tyres $\\overline{F}$ horizontally towards the centre of the bend. No centrifugal force is drawn."
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "In the horizontal direction the only force is friction, so $\\Sigma F = ma_\\text{n}$ gives $F = ma_\\text{n}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nF &= 1200\\,\\text{kg} \\cdot 3.0\\,\\text{m/s}^2 \\\\\n&= 3600\\,\\text{N} \\\\\n&\\approx 3.6\\,\\text{kN}\n\\end{aligned}\n$$, two significant figures"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 5,
+          "text": "What is the greatest speed at which the car can go through the bend on the wet road without slipping? Give the answer also in $\\text{km/h}$.",
+          "answer": {
+            "value": 19.18,
+            "unit": "m/s",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "text": "Justifies: the vertical acceleration of the car is zero, so $N = mg$, and static friction is at most $$\n\\begin{aligned}\nF_\\text{max} &= \\mu_\\text{s} N \\\\\n&= \\mu_\\text{s} mg\n\\end{aligned}\n$$. At the limit the friction is as large as it can be.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\Sigma F = ma_\\text{n}$ at the limit: $\\mu_\\text{s} mg = \\dfrac{mv^2}{r}$, so $v_\\text{max} = \\sqrt{\\mu_\\text{s} g r}$ and the mass cancels."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nv_\\text{max} &= \\sqrt{0.50 \\cdot 9.81\\,\\text{m/s}^2 \\cdot 75\\,\\text{m}} \\\\\n&\\approx 19.2\\,\\text{m/s}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$v_\\text{max} \\approx 19\\,\\text{m/s}$ or about $69\\,\\text{km/h}$, two significant figures"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "The greatest friction $\\mu_\\text{s} g$ gives $a_\\text{n} \\approx 4.9\\,\\text{m/s}^2$ at about $19\\,\\text{m/s}$ in the graph, and $15\\,\\text{m/s}$ is less than that."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "The car is loaded with passengers and luggage, and its mass is $1500\\,\\text{kg}$. How does the load affect the greatest speed in the bend on the wet road? Does the graph change? Justify by calculating.",
+          "criteria": [
+            {
+              "text": "Justifies that the mass cancels from the equation of motion $\\mu_\\text{s} mg = \\dfrac{mv^2}{r}$, so the greatest speed $$\n\\begin{aligned}\n\\sqrt{\\mu_\\text{s} g r} &\\approx 19\\,\\text{m/s}\n\\end{aligned}\n$$ does not change.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Calculates the friction forces: the friction needed at $15\\,\\text{m/s}$ is $$\n\\begin{aligned}\n1500\\,\\text{kg} \\cdot 3.0\\,\\text{m/s}^2 &= 4500\\,\\text{N}\n\\end{aligned}\n$$ and the greatest possible is $$\n\\begin{aligned}\n0.50 \\cdot 1500\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 &\\approx 7400\\,\\text{N}\n\\end{aligned}\n$$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The graph does not change, because $a_\\text{n} = \\dfrac{v^2}{r}$ does not depend on the mass. A heavier car needs a larger friction force, but the tyres give proportionally as much more, so the greatest speed stays the same."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy5-4",
+        "concept": "fy5-4",
+        "math": "fy5-4",
+        "transfer": "fy4-6",
+        "communication": "fy5-4"
+      }
+    },
+    {
+      "id": "fy9-ympyraliike-s9",
+      "title": "A sign on a wall bracket",
+      "source": "example",
+      "source_note": "The situation and the numbers are invented examples.",
+      "skills": [
+        "fy5-2",
+        "fy5-1",
+        "fy4-5"
+      ],
+      "figure": "fy5-2/kyltti",
+      "text": "The sign of a café hangs from the end of a horizontal rod. The rod is fixed to the wall with a hinge, and a cable runs from the outer end of the rod to the wall. The figure shows the length of the rod and the angle of the cable. The mass of the sign is $18\\,\\text{kg}$. The rod is uniform and its mass is $3.0\\,\\text{kg}$. The mass of the cable is neglected. Everything is at rest.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 6,
+          "text": "Draw the free-body diagram of the rod and the sign. How large is the force in the cable?",
+          "answer": {
+            "value": 382.6,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "fbd_forces",
+              "points": 1,
+              "detail": "The body is the rod and the sign: the weight of the sign $\\overline{G}_\\text{s}$ down from the end of the rod, the weight of the rod $\\overline{G}_\\text{t}$ down from its middle, the force of the cable $\\overline{T}$ obliquely up towards the wall from the end and the force of the hinge $\\overline{F}_\\text{s}$ at the hinge."
+            },
+            {
+              "key": "graph_read",
+              "points": 1,
+              "detail": "The length of the rod $L = 1.20\\,\\text{m}$ and the angle between the cable and the rod $\\theta = 30.0^\\circ$ are read from the figure."
+            },
+            {
+              "text": "Justifies the pivot: about the hinge the lever arm of the hinge force is zero, and the body is at rest, so the sum of the moments is zero.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nT L\\sin\\theta &= m_\\text{s} g L \\\\\n&+ m_\\text{t} g\\,\\tfrac{L}{2}\n\\end{aligned}\n$$, so $L$ cancels."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nT &= \\dfrac{(18\\,\\text{kg} + 1.5\\,\\text{kg}) \\cdot 9.81\\,\\text{m/s}^2}{\\sin 30.0^\\circ} \\\\\n&\\approx 383\\,\\text{N}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$T \\approx 380\\,\\text{N}$, two significant figures like the masses"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 5,
+          "text": "How large is the force that the hinge exerts on the rod?",
+          "answer": {
+            "value": 331.7,
+            "unit": "N",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The sum of the forces is zero: horizontally $H = T\\cos\\theta$ and vertically $V = (m_\\text{s} + m_\\text{t})g - T\\sin\\theta$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$H \\approx 331\\,\\text{N}$ away from the wall and $V \\approx 14.7\\,\\text{N}$ upwards."
+            },
+            {
+              "text": "Calculates the magnitude from the components: $$\n\\begin{aligned}\nF_\\text{s} &= \\sqrt{H^2 + V^2} \\\\\n&\\approx 332\\,\\text{N}\n\\end{aligned}\n$$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$F_\\text{s} \\approx 330\\,\\text{N}$, direction about $2.5^\\circ$ above the horizontal, away from the wall, two significant figures"
+            },
+            {
+              "key": "reasonableness",
+              "points": 1,
+              "detail": "A check with the moments about the end with the sign: $V L = m_\\text{t} g\\,\\tfrac{L}{2}$, so $$\n\\begin{aligned}\nV &= \\tfrac12 \\cdot 3.0\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\\n&\\approx 14.7\\,\\text{N}\n\\end{aligned}\n$$."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "The cable withstands a force of at most $600\\,\\text{N}$. What is the greatest mass of the sign that the cable still holds?",
+          "answer": {
+            "value": 29.08,
+            "unit": "kg",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "From the moment condition $$\n\\begin{aligned}\nm_\\text{s} &= \\dfrac{T_\\text{max}\\sin\\theta}{g} - \\tfrac12 m_\\text{t}\n\\end{aligned}\n$$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nm_\\text{s} &= \\dfrac{600\\,\\text{N} \\cdot 0.500}{9.81\\,\\text{m/s}^2} - 1.5\\,\\text{kg} \\\\\n&\\approx 29.1\\,\\text{kg}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$m_\\text{s} \\approx 29\\,\\text{kg}$, two significant figures"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "The cable is fixed to the wall higher up so that the angle between the cable and the rod is $45^\\circ$. How does the force in the cable change from part a? Justify by calculating and explain why the change is in this direction.",
+          "criteria": [
+            {
+              "text": "Justifies with the moment condition: the vertical component of the cable force $T\\sin\\theta \\approx 191\\,\\text{N}$ does not depend on the angle, so at a greater angle the whole force $T$ is smaller.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Calculates $$\n\\begin{aligned}\nT &= \\dfrac{191.3\\,\\text{N}}{\\sin 45^\\circ} \\\\\n&\\approx 270\\,\\text{N}\n\\end{aligned}\n$$, about $29\\,\\%$ smaller than $380\\,\\text{N}$.",
+              "tag": "math",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "When the cable is steeper, a larger share of its force carries the weight upwards. At the same time the horizontal component $T\\cos 45^\\circ \\approx 191\\,\\text{N}$ and the force of the hinge decrease."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "graph": "fy5-2",
+        "concept": "fy5-2",
+        "math": "fy5-2",
+        "transfer": "fy5-1",
+        "communication": "fy5-2"
       }
     }
   ]

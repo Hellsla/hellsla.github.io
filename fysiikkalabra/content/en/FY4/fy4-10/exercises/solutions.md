@@ -2,7 +2,7 @@
 **Given:** $m_1 = 0.40\,\text{kg}$, $v_1 = +0.50\,\text{m/s}$ (to the right), $m_2 = 0.25\,\text{kg}$, $v_2 = -0.60\,\text{m/s}$ (to the left); the positive direction is to the right
 **Find:** the total momentum $p_\text{tot}$ with its sign in $\text{kg}\cdot\text{m/s}$
 **Principle:** The total momentum of the system is the vector sum of the momenta of the carts. In one dimension it is the sum of the signed momenta: the velocity and momentum of the cart moving to the left are negative.
-**Formula:** $p_\text{tot} = m_1 v_1 + m_2 v_2$
+**Formula:** $p = mv$, and the total momentum of the system is the sum of the parts' momenta, so $p_\text{tot} = m_1 v_1 + m_2 v_2$
 **Conversions:** The masses are in kilograms and the velocities in $\text{m/s}$, so no conversions are needed.
 **Substitution:** $p_\text{tot} = (0.40 \cdot 0.50 + 0.25 \cdot (-0.60))\,\text{kg}\cdot\text{m/s} = (0.20 - 0.15)\,\text{kg}\cdot\text{m/s} = 0.050\,\text{kg}\cdot\text{m/s}$
 **Answer:** $0.050\,\text{kg}\cdot\text{m/s}$, that is, to the right, two significant figures like the masses and velocities.
@@ -12,7 +12,7 @@
 **Given:** $m_1 = 0.50\,\text{kg}$, $v_1 = 0.80\,\text{m/s}$, $m_2 = 0.30\,\text{kg}$, $v_2 = 0$; the carts stick together
 **Find:** the common velocity $v'$ in $\text{m/s}$
 **Principle:** We choose both carts as the system and the direction of motion of cart 1 as the positive direction. The air track is horizontal, so the weight and the normal force cancel each other, and friction is neglected. The total momentum is conserved. The carts move on together, so the collision is perfectly inelastic.
-**Formula:** $$\begin{aligned} &m_1 v_1 + m_2 v_2 \\ &= (m_1 + m_2)\,v' \end{aligned}$$, and $v_2 = 0$, so $v' = \dfrac{m_1 v_1}{m_1 + m_2}$
+**Formula:** $p_\text{before} = p_\text{after}$, where $p = mv$ and the total momentum is the sum of the parts, so $m_1 v_1 + m_2 v_2 = (m_1 + m_2)\,v'$, and $v_2 = 0$, so $v' = \dfrac{m_1 v_1}{m_1 + m_2}$
 **Conversions:** The masses are in kilograms and the velocity in $\text{m/s}$, so no conversions are needed.
 **Substitution:** $v' = \dfrac{0.50\,\text{kg} \cdot 0.80\,\text{m/s}}{0.50\,\text{kg} + 0.30\,\text{kg}} = \dfrac{0.40\,\text{kg}\cdot\text{m/s}}{0.80\,\text{kg}} = 0.50\,\text{m/s}$
 **Answer:** $0.50\,\text{m/s}$ in the original direction of motion of cart 1, two significant figures like the data.
@@ -24,7 +24,7 @@
 **Principle:** We choose both skaters as the system and the direction of motion of the lighter skater as the positive direction. The skaters push each other with internal forces, the weight and the normal force of the ice cancel each other, and friction is neglected.
 
 The total momentum is conserved, and it is zero at first, so the situation is an explosion.
-**Formula:** $0 = m_1 v_1' + m_2 v_2'$, so $v_1' = -\dfrac{m_2 v_2'}{m_1}$
+**Formula:** $p_\text{before} = p_\text{after}$, where $p = mv$ and $p_\text{before} = 0$, so $0 = m_1 v_1' + m_2 v_2'$, so $v_1' = -\dfrac{m_2 v_2'}{m_1}$
 **Conversions:** The masses are in kilograms and the velocity in $\text{m/s}$, so no conversions are needed.
 **Substitution:** $v_1' = -\dfrac{45\,\text{kg} \cdot 1.2\,\text{m/s}}{60\,\text{kg}} = -\dfrac{54\,\text{kg}\cdot\text{m/s}}{60\,\text{kg}} = -0.90\,\text{m/s}$
 **Answer:** $0.90\,\text{m/s}$ in the direction opposite to the lighter skater, two significant figures like the velocity $1.2\,\text{m/s}$ and the masses.
@@ -34,7 +34,7 @@ The total momentum is conserved, and it is zero at first, so the situation is an
 **Given:** $m_\text{A} = 0.16\,\text{kg}$, $v_\text{A} = +4.0\,\text{m/s}$, $m_\text{B} = 0.20\,\text{kg}$, $v_\text{B} = 0$, velocity of puck A after the collision $v_\text{A}' = -0.44\,\text{m/s}$ (back)
 **Find:** the velocity of puck B $v_\text{B}'$ in $\text{m/s}$
 **Principle:** We choose both pucks as the system and the original direction of motion of puck A as the positive direction. On an air hockey table the weight and the normal force of the air cushion cancel each other and friction is neglected, so the total momentum is conserved. The velocity of puck A moving back is negative.
-**Formula:** $$\begin{aligned} &m_\text{A} v_\text{A} + m_\text{B} v_\text{B} = m_\text{A} v_\text{A}' \\ &+ m_\text{B} v_\text{B}' \end{aligned}$$, and $v_\text{B} = 0$, so $v_\text{B}' = \dfrac{m_\text{A} v_\text{A} - m_\text{A} v_\text{A}'}{m_\text{B}}$
+**Formula:** $p_\text{before} = p_\text{after}$, where $p = mv$ and the total momentum is the sum of the parts, so $m_\text{A} v_\text{A} + m_\text{B} v_\text{B} = m_\text{A} v_\text{A}' + m_\text{B} v_\text{B}'$, and $v_\text{B} = 0$, so $v_\text{B}' = \dfrac{m_\text{A} v_\text{A} - m_\text{A} v_\text{A}'}{m_\text{B}}$
 **Conversions:** The masses are in kilograms and the velocities in $\text{m/s}$, so no conversions are needed.
 **Substitution:** $v_\text{B}' = \dfrac{0.16 \cdot 4.0 - 0.16 \cdot (-0.44)}{0.20}\,\text{m/s} = \dfrac{0.64 + 0.0704}{0.20}\,\text{m/s} = 3.552\,\text{m/s}$
 **Answer:** $3.6\,\text{m/s}$ in the original direction of motion of puck A, two significant figures like the velocities $4.0\,\text{m/s}$ and $0.44\,\text{m/s}$.
@@ -44,7 +44,7 @@ The total momentum is conserved, and it is zero at first, so the situation is an
 **Given:** $m_1 = m_2 = 0.30\,\text{kg}$, $v_1 = +0.60\,\text{m/s}$ (to the right), $v_2 = -0.20\,\text{m/s}$ (to the left); the carts stick together
 **Find:** the common velocity $v'$ in $\text{m/s}$
 **Principle:** We choose both carts as the system and the right as the positive direction. The weight and the normal force cancel each other and friction is neglected, so the total momentum is conserved. The carts move on together, so the collision is perfectly inelastic.
-**Formula:** $$\begin{aligned} &m_1 v_1 + m_2 v_2 \\ &= (m_1 + m_2)\,v' \end{aligned}$$, so $v' = \dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$
+**Formula:** $p_\text{before} = p_\text{after}$, where $p = mv$ and the total momentum is the sum of the parts, so $m_1 v_1 + m_2 v_2 = (m_1 + m_2)\,v'$, so $v' = \dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$
 **Conversions:** The masses are in kilograms and the velocities in $\text{m/s}$, so no conversions are needed.
 **Substitution:** $v' = \dfrac{0.30 \cdot 0.60 + 0.30 \cdot (-0.20)}{0.60}\,\text{m/s} = \dfrac{0.18 - 0.06}{0.60}\,\text{m/s} = 0.20\,\text{m/s}$
 **Answer:** $0.20\,\text{m/s}$ to the right, two significant figures like the data.
@@ -56,7 +56,7 @@ The total momentum is conserved, and it is zero at first, so the situation is an
 **Principle:** We choose the bullet and the rifle as the system and the direction of flight of the bullet as the positive direction. In the shot, compressed air pushes the bullet forwards and the rifle backwards with equally large forces, which are internal forces.
 
 The impulse of the shooter's support is neglected for the short time of the shot, so the total momentum is conserved. It is zero at first, so the shot is an explosion.
-**Formula:** $0 = m_\text{bullet} v_\text{bullet}' + m_\text{rifle} v_\text{rifle}'$, so $v_\text{rifle}' = -\dfrac{m_\text{bullet} v_\text{bullet}'}{m_\text{rifle}}$
+**Formula:** $p_\text{before} = p_\text{after}$, where $p = mv$ and $p_\text{before} = 0$, so $0 = m_\text{bullet} v_\text{bullet}' + m_\text{rifle} v_\text{rifle}'$, so $v_\text{rifle}' = -\dfrac{m_\text{bullet} v_\text{bullet}'}{m_\text{rifle}}$
 **Conversions:** $m_\text{bullet} = 0.50\,\text{g} = 0.50 \cdot 10^{-3}\,\text{kg}$
 **Substitution:** $v_\text{rifle}' = -\dfrac{0.50 \cdot 10^{-3}\,\text{kg} \cdot 180\,\text{m/s}}{3.2\,\text{kg}} = -\dfrac{0.090\,\text{kg}\cdot\text{m/s}}{3.2\,\text{kg}} = -0.028125\,\text{m/s}$
 **Answer:** $0.028\,\text{m/s}$, that is, about $2.8\,\text{cm/s}$ backwards, two significant figures like the mass of the bullet $0.50\,\text{g}$ and the mass of the rifle $3.2\,\text{kg}$.
@@ -68,7 +68,7 @@ The impulse of the shooter's support is neglected for the short time of the shot
 **Principle:** We choose both players as the system. The weight and the normal force of the ice cancel each other and friction is neglected during the collision, so the total momentum is conserved. The players move on together, so the collision is perfectly inelastic, and kinetic energy is not conserved.
 
 The common velocity follows from the law of conservation of momentum, and with it the kinetic energy after the collision is calculated.
-**Formula:** $m_1 v_1 = (m_1 + m_2)\,v'$, so $v' = \dfrac{m_1 v_1}{m_1 + m_2}$, and $$\begin{aligned} &\Delta E = \tfrac12 m_1 v_1^2 \\ &- \tfrac12 (m_1 + m_2)\,v'^2 \end{aligned}$$
+**Formula:** $p_\text{before} = p_\text{after}$, where $p = mv$ and $v_2 = 0$, so $m_1 v_1 = (m_1 + m_2)\,v'$, so $v' = \dfrac{m_1 v_1}{m_1 + m_2}$; The decrease of kinetic energy, changed into other forms, is $\Delta E = E_\text{k,before} - E_\text{k,after}$, where $E_\text{k} = \tfrac12 mv^2$, so $\Delta E$ equals $\tfrac12 m_1 v_1^2 - \tfrac12 (m_1 + m_2)\,v'^2$
 **Conversions:** The masses are in kilograms and the velocity in $\text{m/s}$, so no conversions are needed.
 **Substitution:** $v' = \dfrac{85\,\text{kg} \cdot 6.0\,\text{m/s}}{160\,\text{kg}} = 3.1875\,\text{m/s}$ and $$\begin{aligned} &\Delta E \\ &= \tfrac12 \cdot 85\,\text{kg} \cdot (6.0\,\text{m/s})^2 \\ &- \tfrac12 \cdot 160\,\text{kg} \\ &\cdot (3.1875\,\text{m/s})^2 \\ &= 1530\,\text{J} - 812.8\,\text{J} \\ &= 717.2\,\text{J} \end{aligned}$$
 **Answer:** $720\,\text{J}$, that is, about $0.72\,\text{kJ}$, two significant figures like the velocity $6.0\,\text{m/s}$ and the masses.
@@ -82,7 +82,7 @@ The energy becomes deformation of the equipment and the body, internal energy an
 **Principle:** We choose both carts as the system and the original direction of motion of the lighter cart as the positive direction. The weight and the normal force cancel each other and friction is neglected, so the total momentum is conserved.
 
 It gives the velocity of the heavier cart, and then the kinetic energies before and after are compared. Kinetic energy is not necessarily conserved, so it cannot be used as an equation.
-**Formula:** $m_1 v_1 = m_1 v_1' + m_2 v_2'$, so $v_2' = \dfrac{m_1 v_1 - m_1 v_1'}{m_2}$, and the fraction is $\dfrac{\tfrac12 m_1 v_1'^2 + \tfrac12 m_2 v_2'^2}{\tfrac12 m_1 v_1^2} \cdot 100\,\%$
+**Formula:** $p_\text{before} = p_\text{after}$, where $p = mv$ and $v_2 = 0$, so $m_1 v_1 = m_1 v_1' + m_2 v_2'$, so $v_2' = \dfrac{m_1 v_1 - m_1 v_1'}{m_2}$; the kinetic energy is $E_\text{k} = \tfrac12 mv^2$, so the remaining fraction is $\dfrac{E_\text{k,after}}{E_\text{k,before}} \cdot 100\,\% = \dfrac{\tfrac12 m_1 v_1'^2 + \tfrac12 m_2 v_2'^2}{\tfrac12 m_1 v_1^2} \cdot 100\,\%$
 **Conversions:** The masses are in kilograms and the velocities in $\text{m/s}$, so no conversions are needed.
 **Substitution:** $v_2' = \dfrac{0.20 \cdot 0.60 - 0.20 \cdot (-0.10)}{0.40}\,\text{m/s} = 0.35\,\text{m/s}$, kinetic energy before $\tfrac12 \cdot 0.20 \cdot 0.60^2\,\text{J} = 0.036\,\text{J}$ and after $$\begin{aligned} &(\tfrac12 \cdot 0.20 \cdot 0.10^2 \\ &+ \tfrac12 \cdot 0.40 \cdot 0.35^2)\,\text{J} \\ &= 0.0255\,\text{J} \end{aligned}$$, so the fraction is $$\begin{aligned} &0.0255 : 0.036 \cdot 100\,\% \\ &= 70.8\,\% \end{aligned}$$
 **Answer:** $71\,\%$, two significant figures like the velocities and masses.
@@ -94,7 +94,7 @@ It gives the velocity of the heavier cart, and then the kinetic energies before 
 **Principle:** We choose both cars as the system and the direction of the moving car as the positive direction. The weight and the normal force of the rails cancel each other, and the impulse of rolling resistance is negligibly small during the short coupling, so the total momentum is conserved.
 
 The cars move on together, so the collision is perfectly inelastic.
-**Formula:** $m_1 v_1 = (m_1 + m_2)\,v'$, so $m_2 = \dfrac{m_1 (v_1 - v')}{v'}$
+**Formula:** $p_\text{before} = p_\text{after}$, where $p = mv$ and $v_2 = 0$, so $m_1 v_1 = (m_1 + m_2)\,v'$, and $m_2 = \dfrac{m_1 (v_1 - v')}{v'}$
 **Conversions:** The mass is in kilograms and the velocities in $\text{m/s}$, so no conversions are needed.
 **Substitution:** $m_2 = \dfrac{30\,000\,\text{kg} \cdot (1.8 - 1.2)\,\text{m/s}}{1.2\,\text{m/s}} = \dfrac{30\,000\,\text{kg} \cdot 0.6}{1.2} = 15\,000\,\text{kg}$
 **Answer:** $15\,000\,\text{kg}$, two significant figures like the velocities $1.8\,\text{m/s}$ and $1.2\,\text{m/s}$.
@@ -108,7 +108,7 @@ The cars move on together, so the collision is perfectly inelastic.
 In the horizontal direction the external forces do not change the momentum, so the horizontal momentum is conserved, and the collision is perfectly inelastic.
 
 (2) The swing: only the weight does work on the block and the bullet, because the force of the string is perpendicular to the motion and air resistance is neglected, so the mechanical energy is conserved. Kinetic energy cannot be used across the collision, because the collision is inelastic.
-**Formula:** $mv = (m + M)\,v'$, so $v' = \dfrac{mv}{m + M}$, and $\tfrac12 (m + M)\,v'^2 = (m + M)\,gh$, so $h = \dfrac{v'^2}{2 \cdot g}$
+**Formula:** In the collision $p_\text{before} = p_\text{after}$, where $p = mv$ and the block is at rest at first, so $mv = (m + M)\,v'$ and $v' = \dfrac{mv}{m + M}$. In the swing the mechanical energy is conserved: $E_\text{k,start} + E_\text{p,start}$ equals $E_\text{k,end} + E_\text{p,end}$, where $E_\text{k} = \tfrac12 mv^2$ and $E_\text{p} = mgh$, so $\tfrac12 (m + M)\,v'^2 + 0$ equals $0 + (m + M)\,gh$ and $h = \dfrac{v'^2}{2 \cdot g}$
 **Conversions:** $m = 10\,\text{g} = 0.010\,\text{kg}$, and finally $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** $v' = \dfrac{0.010\,\text{kg} \cdot 400\,\text{m/s}}{2.010\,\text{kg}} = 1.990\,\text{m/s}$ and $h = \dfrac{(1.990\,\text{m/s})^2}{2 \cdot 9.81\,\text{m/s}^2} = 0.2019\,\text{m} = 20.19\,\text{cm}$
 **Answer:** $20\,\text{cm}$, two significant figures like the mass of the bullet $10\,\text{g}$ and the mass of the block $2.0\,\text{kg}$.
@@ -124,7 +124,7 @@ Only $\tfrac{1}{201}$ of the original $800\,\text{J}$ of the bullet's kinetic en
 The forces of the explosion are internal and much greater than the weight and air resistance, and the explosion lasts a very short time, so the impulse of the external forces is negligibly small and the total momentum is conserved.
 
 The system is moving before the explosion, so the total momentum is not zero but $Mv$.
-**Formula:** $Mv = m_1 v_1' + m_2 v_2'$, so $v_2' = \dfrac{Mv - m_1 v_1'}{m_2}$
+**Formula:** $p_\text{before} = p_\text{after}$, where $p = mv$, so $Mv = m_1 v_1' + m_2 v_2'$, and $v_2' = \dfrac{Mv - m_1 v_1'}{m_2}$
 **Conversions:** The masses are in kilograms and the velocities in $\text{m/s}$, so no conversions are needed.
 **Substitution:** $v_2' = \dfrac{0.90 \cdot 12 - 0.30 \cdot 40}{0.60}\,\text{m/s} = \dfrac{10.8 - 12.0}{0.60}\,\text{m/s} = -2.0\,\text{m/s}$
 **Answer:** $-2.0\,\text{m/s}$, that is, $2.0\,\text{m/s}$ downwards, two significant figures like the data.
@@ -140,7 +140,7 @@ Gravity acts on both the astronaut and the tool, but they are in the same free f
 The total momentum relative to the station is conserved, and it is zero at first: the throw is an explosion. The astronaut gets a momentum as large as the tool's, in the opposite direction, that is, towards the station.
 
 (2) After the throw, no forces other than gravity act on the astronaut, and it is the same free fall as the station's, so the astronaut moves at a constant velocity.
-**Formula:** $0 = M v_\text{a}' + m v_\text{t}'$, where $v_\text{t}' = -4.0\,\text{m/s}$, so $v_\text{a}' = -\dfrac{m v_\text{t}'}{M}$, and in uniform motion $t = \dfrac{s}{v_\text{a}'}$
+**Formula:** $p_\text{before} = p_\text{after}$, where $p = mv$ and $p_\text{before} = 0$, so $0 = M v_\text{a}' + m v_\text{t}'$, where $v_\text{t}' = -4.0\,\text{m/s}$, so $v_\text{a}' = -\dfrac{m v_\text{t}'}{M}$; in uniform motion $v = \dfrac{s}{t}$, so $t = \dfrac{s}{v_\text{a}'}$
 **Conversions:** The masses are in kilograms, the distance in metres and the velocity in $\text{m/s}$, so no conversions are needed.
 **Substitution:** $v_\text{a}' = -\dfrac{3.0\,\text{kg} \cdot (-4.0\,\text{m/s})}{120\,\text{kg}} = 0.10\,\text{m/s}$ and $t = \dfrac{12.0\,\text{m}}{0.10\,\text{m/s}} = 120\,\text{s}$
 **Answer:** $120\,\text{s}$, that is, about $2.0\,\text{min}$, two significant figures like the mass and velocity of the tool.
@@ -163,7 +163,7 @@ The statement that kinetic energy increases does not hold, because the common ve
 The forces of the throw are internal forces, the weight and the normal force of the ice cancel each other and friction is neglected, so the total momentum is conserved.
 
 It is zero at first, so the throw is an explosion: the skater gets a momentum as large as the ball's, in the opposite direction.
-**Formula:** $0 = m v_\text{p}' + M v_\text{lu}'$, so $v_\text{lu}' = -\dfrac{m v_\text{p}'}{M}$
+**Formula:** $p_\text{before} = p_\text{after}$, where $p = mv$ and $p_\text{before} = 0$, so $0 = m v_\text{p}' + M v_\text{lu}'$, so $v_\text{lu}' = -\dfrac{m v_\text{p}'}{M}$
 **Conversions:** The masses are in kilograms and the velocity in $\text{m/s}$, so no conversions are needed.
 **Substitution:** $v_\text{lu}' = -\dfrac{2.0\,\text{kg} \cdot 6.0\,\text{m/s}}{35\,\text{kg}} = -\dfrac{12\,\text{kg}\cdot\text{m/s}}{35\,\text{kg}} = -0.342857\,\text{m/s}$
 **Answer:** $0.34\,\text{m/s}$ in the direction opposite to the flight of the ball, two significant figures like the mass and velocity of the ball.
@@ -175,7 +175,7 @@ It is zero at first, so the throw is an explosion: the skater gets a momentum as
 **Principle:** We choose the direction of motion of the cue ball as the positive direction. Friction is neglected, so the total momentum is conserved, and the collision is elastic, so kinetic energy is also conserved.
 
 When an object hits an object of equal mass at rest head-on elastically, the objects exchange velocities: the cue ball stops and the target ball sets off with the velocity of the cue ball.
-**Formula:** $m v_1 = m v_1' + m v_2'$ and $\tfrac12 m v_1^2 = \tfrac12 m v_1'^2 + \tfrac12 m v_2'^2$, so $v_1' = 0$ and $v_2' = v_1$
+**Formula:** $p_\text{before} = p_\text{after}$, where $p = mv$, so $m v_1 = m v_1' + m v_2'$, and in an elastic collision $E_\text{k,before} = E_\text{k,after}$, where $E_\text{k} = \tfrac12 mv^2$, so $\tfrac12 m v_1^2 = \tfrac12 m v_1'^2 + \tfrac12 m v_2'^2$. The mass $m$ cancels: $v_1 = v_1' + v_2'$ and $v_1^2 = v_1'^2 + v_2'^2$. Squaring the first equation gives $v_1^2 = v_1'^2 + 2 v_1' v_2' + v_2'^2$, so $v_1' v_2' = 0$. The hitting ball cannot pass through the target ball, so $v_1' = 0$ and $v_2' = v_1$
 **Conversions:** The mass is in kilograms and the velocity in $\text{m/s}$, so no conversions are needed.
 **Substitution:** $v_2' = v_1 = 1.8\,\text{m/s}$
 **Answer:** $1.8\,\text{m/s}$ in the original direction of motion of the cue ball, two significant figures like the velocity.
@@ -186,7 +186,7 @@ When an object hits an object of equal mass at rest head-on elastically, the obj
 **Find:** a) conservation of momentum, b) classification of experiments 1 and 2, c) the fraction of kinetic energy remaining in experiment 3 as a percentage
 **Principle:** We choose the original direction of motion of cart A as the positive direction. The weight and the normal force cancel each other and friction is neglected, so the total momentum is conserved. The collision is elastic if kinetic energy is also conserved, perfectly inelastic if the objects stick together, and otherwise partially elastic.
 **Reading the graph:** A row of the table gives the velocities before and after in one experiment. In all experiments cart A arrives at $0.60\,\text{m/s}$ and B is at rest, so the experiments differ only in the velocities after the collision.
-**Formula:** $p = m_\text{A} v_\text{A} + m_\text{B} v_\text{B}$, $E_\text{k} = \tfrac12 m_\text{A} v_\text{A}^2 + \tfrac12 m_\text{B} v_\text{B}^2$ and the remaining fraction $\dfrac{E_\text{k}'}{E_\text{k}} \cdot 100\,\%$
+**Formula:** $p = mv$, so the total momentum is $p = m_\text{A} v_\text{A} + m_\text{B} v_\text{B}$, and momentum is conserved if $p_\text{before} = p_\text{after}$; $E_\text{k} = \tfrac12 mv^2$, so $E_\text{k} = \tfrac12 m_\text{A} v_\text{A}^2 + \tfrac12 m_\text{B} v_\text{B}^2$, and the remaining fraction $\dfrac{E_\text{k}'}{E_\text{k}} \cdot 100\,\%$
 **Conversions:** The masses are in kilograms and the velocities in $\text{m/s}$, so no conversions are needed.
 **Substitution:** a) Before, in all experiments, $p = 0.50 \cdot 0.60\,\text{kg}\cdot\text{m/s} = 0.300\,\text{kg}\cdot\text{m/s}$. After, experiment 1: $(0.50 \cdot 0.16 + 0.30 \cdot 0.74)\,\text{kg}\cdot\text{m/s} = 0.302\,\text{kg}\cdot\text{m/s}$, experiment 2: $$\begin{aligned} &0.80 \cdot 0.37\,\text{kg}\cdot\text{m/s} \\ &= 0.296\,\text{kg}\cdot\text{m/s} \end{aligned}$$ and experiment 3: $$\begin{aligned} &(0.125 + 0.174)\,\text{kg}\cdot\text{m/s} \\ &= 0.299\,\text{kg}\cdot\text{m/s} \end{aligned}$$.
 
@@ -203,7 +203,7 @@ Experiment 2 is perfectly inelastic, because the carts stick together and only $
 **Find:** a) the velocities, b) conservation of momentum, c) the remaining fraction of kinetic energy as a percentage
 **Principle:** We choose right as the positive direction. In uniform motion the velocity is the change in position divided by the change in time, and it is read from the table separately before and after the collision. Friction is neglected, so the total momentum is conserved, and the kinetic energies are compared before and after.
 **Reading the graph:** Before the collision the position of A increases and the position of B stays the same, so B is at rest. After the collision the positions of both increase, so both move to the right. The velocity is the change in position divided by the change in time: $v_\text{A} = \dfrac{0.51\,\text{m} - 0.00\,\text{m}}{1.0\,\text{s}} = 0.51\,\text{m/s}$, $v_\text{B} = 0$, $v_\text{A}' = \dfrac{1.21\,\text{m} - 1.10\,\text{m}}{1.0\,\text{s}} = 0.11\,\text{m/s}$ and $v_\text{B}' = \dfrac{1.54\,\text{m} - 1.27\,\text{m}}{1.0\,\text{s}} = 0.27\,\text{m/s}$.
-**Formula:** $p = m_\text{A} v_\text{A} + m_\text{B} v_\text{B}$, $E_\text{k} = \tfrac12 m_\text{A} v_\text{A}^2 + \tfrac12 m_\text{B} v_\text{B}^2$ and the fraction $\dfrac{E_\text{k}'}{E_\text{k}} \cdot 100\,\%$
+**Formula:** $p = mv$, so the total momentum is $p = m_\text{A} v_\text{A} + m_\text{B} v_\text{B}$, and momentum is conserved if $p_\text{before} = p_\text{after}$; $E_\text{k} = \tfrac12 mv^2$, so $E_\text{k} = \tfrac12 m_\text{A} v_\text{A}^2 + \tfrac12 m_\text{B} v_\text{B}^2$, and the fraction $\dfrac{E_\text{k}'}{E_\text{k}} \cdot 100\,\%$
 **Conversions:** The masses are in kilograms, the positions in metres and the times in seconds, so no conversions are needed.
 **Substitution:** b) Before, $p = 0.40 \cdot 0.51\,\text{kg}\cdot\text{m/s} = 0.204\,\text{kg}\cdot\text{m/s}$ and after, $$\begin{aligned} &p' \\ &= (0.40 \cdot 0.11 \\ &+ 0.60 \cdot 0.27)\,\text{kg}\cdot\text{m/s} \\ &= (0.044 \\ &+ 0.162)\,\text{kg}\cdot\text{m/s} \\ &= 0.206\,\text{kg}\cdot\text{m/s} \end{aligned}$$.
 
@@ -217,7 +217,7 @@ c) The kinetic energy before is $\tfrac12 \cdot 0.40 \cdot 0.51^2\,\text{J} = 0.
 **Principle:** We choose both carts as the system and right as the positive direction. The weight and the normal force cancel each other and friction is neglected, so the total momentum is conserved. The carts move on together, so the collision is perfectly inelastic.
 
 Momentum is a vector quantity, so the velocity of the cart moving to the left is negative.
-**Formula:** $$\begin{aligned} &m_1 v_1 + m_2 v_2 \\ &= (m_1 + m_2)\,v' \end{aligned}$$, so $v' = \dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$
+**Formula:** $p_\text{before} = p_\text{after}$, where $p = mv$ and the total momentum is the sum of the parts, so $m_1 v_1 + m_2 v_2 = (m_1 + m_2)\,v'$, so $v' = \dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$
 **Conversions:** The masses are in kilograms and the velocities in $\text{m/s}$, so no conversions are needed.
 **Substitution:** $v' = \dfrac{0.60 \cdot 0.80 + 0.20 \cdot (-0.40)}{0.60 + 0.20}\,\text{m/s} = \dfrac{0.48 - 0.08}{0.80}\,\text{m/s} = 0.50\,\text{m/s}$
 **Answer:** $0.50\,\text{m/s}$ to the right, two significant figures like the initial data.
@@ -259,7 +259,7 @@ The weight and the normal force cancel each other, so $N = (m_\text{A} + m_\text
 (2) The collision: we choose the direction of motion of car A as the positive direction. Friction and air resistance are neglected for the short time of the collision, so the total momentum is conserved.
 
 The cars stick together, so the collision is perfectly inelastic, and kinetic energy cannot be used across the collision.
-**Formula:** $\tfrac12 (m_\text{A} + m_\text{B})\,v'^2 = \mu\,(m_\text{A} + m_\text{B})\,g\,s$, so $v' = \sqrt{2 \mu g s}$, and $m_\text{A} v_\text{A} = (m_\text{A} + m_\text{B})\,v'$, so $v_\text{A} = \dfrac{(m_\text{A} + m_\text{B})\,v'}{m_\text{A}}$
+**Formula:** In the sliding the kinetic energy changes into the work done by friction: $E_\text{k} = W$, where $E_\text{k} = \tfrac12 mv^2$, $W = F_\mu s$, $F_\mu = \mu N$ and $N = (m_\text{A} + m_\text{B})\,g$, so $\tfrac12 (m_\text{A} + m_\text{B})\,v'^2 = \mu\,(m_\text{A} + m_\text{B})\,g\,s$ and $v' = \sqrt{2 \mu g s}$. In the collision $p_\text{before} = p_\text{after}$, where $p = mv$ and $v_\text{B} = 0$, so $m_\text{A} v_\text{A} = (m_\text{A} + m_\text{B})\,v'$ and $v_\text{A} = \dfrac{(m_\text{A} + m_\text{B})\,v'}{m_\text{A}}$
 **Conversions:** $m_\text{A} + m_\text{B} = 1100\,\text{kg} + 1400\,\text{kg} = 2500\,\text{kg}$, and finally $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** a) $v' = \sqrt{2 \cdot 0.60 \cdot 9.81\,\text{m/s}^2 \cdot 8.0\,\text{m}} = \sqrt{94.18}\,\text{m/s} = 9.704\,\text{m/s}$. The mass cancels out of the equation.
 
@@ -285,7 +285,7 @@ The weight and the normal force cancel each other, so according to the equation 
 
 The law of conservation of momentum can be used only across the collision, so we need the velocity immediately after the collision, not the velocity at a later moment. It is obtained by extending the line of the graph back to the moment $t = 0$.
 **Reading the graph:** The velocity in the table decreases uniformly, so the $(t,v)$ graph is a descending line, and its slope is the deceleration. The slope through the first and last points is $a = \dfrac{0.41\,\text{m/s} - 0.88\,\text{m/s}}{0.30\,\text{s} - 0.06\,\text{s}} = -1.96\,\text{m/s}^2$, so the magnitude of the deceleration is $1.96\,\text{m/s}^2$. The line intersects the vertical axis at $v_0 = 0.88\,\text{m/s} + 1.96\,\text{m/s}^2 \cdot 0.06\,\text{s} = 1.00\,\text{m/s}$.
-**Formula:** $F_\mu = (m_\text{A} + m_\text{B})\,\lvert a \rvert$ and conservation of momentum in the collision $m_\text{A} v_\text{A} = (m_\text{A} + m_\text{B})\,v_0$
+**Formula:** The equation of motion is $\Sigma F = ma$, and only friction acts in the horizontal direction, so $-F_\mu = (m_\text{A} + m_\text{B})\,a$ and $F_\mu = (m_\text{A} + m_\text{B})\,\lvert a \rvert$. In the collision $p_\text{before} = p_\text{after}$, where $p = mv$ and $v_\text{B} = 0$, so $m_\text{A} v_\text{A} = (m_\text{A} + m_\text{B})\,v_0$
 **Conversions:** $m_\text{A} + m_\text{B} = 0.40\,\text{kg} + 0.20\,\text{kg} = 0.60\,\text{kg}$. No other conversions are needed.
 **Substitution:** b) $F_\mu = 0.60\,\text{kg} \cdot 1.96\,\text{m/s}^2 = 1.175\,\text{N}$
 
@@ -303,7 +303,7 @@ The decrease in momentum the student observed was due to the impulse of friction
 **Find:** the mass of glider B, $m_\text{B}$, in $\text{kg}$
 **Principle:** During the collision the force between the gliders is an internal force, and the impulse of friction during the short collision is negligible, so the total momentum is conserved. Directions are taken into account with signs.
 **Reading the graph:** At the collision, $2.0\,\text{s}$, the velocities change. Before: $v_\text{A} = 0.8\,\text{m/s}$ and $v_\text{B} = -0.4\,\text{m/s}$ (glider B moves to the left, so its velocity is negative). After: $v_\text{A}' = 0.2\,\text{m/s}$ and $v_\text{B}' = 0.6\,\text{m/s}$.
-**Formula:** $$\begin{aligned} &m_\text{A} v_\text{A} + m_\text{B} v_\text{B} = m_\text{A} v_\text{A}' \\ &+ m_\text{B} v_\text{B}' \end{aligned}$$, so $m_\text{B} = \dfrac{m_\text{A}(v_\text{A} - v_\text{A}')}{v_\text{B}' - v_\text{B}}$
+**Formula:** $p_\text{before} = p_\text{after}$, where $p = mv$ and the total momentum is the sum of the parts, so $m_\text{A} v_\text{A} + m_\text{B} v_\text{B} = m_\text{A} v_\text{A}' + m_\text{B} v_\text{B}'$, so $m_\text{B} = \dfrac{m_\text{A}(v_\text{A} - v_\text{A}')}{v_\text{B}' - v_\text{B}}$
 **Conversions:** None needed: all quantities are in SI units.
 **Substitution:** $m_\text{B} = \dfrac{0.50\,\text{kg} \cdot (0.8 - 0.2)\,\text{m/s}}{(0.6 - (-0.4))\,\text{m/s}} = \dfrac{0.30\,\text{kg}\cdot\text{m/s}}{1.0\,\text{m/s}} = 0.30\,\text{kg}$
 **Answer:** $0.30\,\text{kg}$, two significant figures like the mass $0.50\,\text{kg}$.
@@ -314,7 +314,7 @@ The decrease in momentum the student observed was due to the impulse of friction
 **Find:** the decrease of kinetic energy $\Delta E_\text{k}$ in the collision in $\text{J}$
 **Principle:** The slope of a position–time graph is the velocity. During the collision the impulse of friction is negligible, so momentum is conserved, and it gives the mass of glider B. The kinetic energies are calculated before and after, and their difference is the energy changed into other forms in the collision.
 **Reading the graph:** Glider A moves from position $0$ to $0.60\,\text{m}$ in $1.0\,\text{s}$, so $v = \dfrac{0.60\,\text{m}}{1.0\,\text{s}} = 0.60\,\text{m/s}$. The collision happens at $1.0\,\text{s}$ at the position $0.60\,\text{m}$, where glider B is at rest. Together the gliders move from $0.60\,\text{m}$ to $1.00\,\text{m}$ in $2.0\,\text{s}$, so $v' = \dfrac{0.40\,\text{m}}{2.0\,\text{s}} = 0.20\,\text{m/s}$.
-**Formula:** $m_\text{A} v = (m_\text{A} + m_\text{B})\,v'$, so $m_\text{B} = m_\text{A}\left(\dfrac{v}{v'} - 1\right)$; $\Delta E_\text{k} = \tfrac{1}{2} m_\text{A} v^2 - \tfrac{1}{2}(m_\text{A} + m_\text{B})\,v'^2$
+**Formula:** $p_\text{before} = p_\text{after}$, where $p = mv$ and $v_\text{B} = 0$, so $m_\text{A} v = (m_\text{A} + m_\text{B})\,v'$, so $m_\text{B} = m_\text{A}\left(\dfrac{v}{v'} - 1\right)$; the decrease of kinetic energy is $\Delta E_\text{k} = E_\text{k,before} - E_\text{k,after}$, where $E_\text{k} = \tfrac12 mv^2$, so $\Delta E_\text{k} = \tfrac{1}{2} m_\text{A} v^2 - \tfrac{1}{2}(m_\text{A} + m_\text{B})\,v'^2$
 **Conversions:** None needed: all quantities are in SI units.
 **Substitution:** $m_\text{B} = 0.30\,\text{kg} \cdot \left(\dfrac{0.60}{0.20} - 1\right) = 0.60\,\text{kg}$ and $$\begin{aligned} &\Delta E_\text{k} \\ &= \tfrac{1}{2} \cdot 0.30\,\text{kg} \\ &\cdot (0.60\,\text{m/s})^2 \\ &- \tfrac{1}{2} \cdot 0.90\,\text{kg} \\ &\cdot (0.20\,\text{m/s})^2 \\ &= 0.054\,\text{J} - 0.018\,\text{J} \\ &= 0.036\,\text{J} \end{aligned}$$
 **Answer:** $0.036\,\text{J}$, two significant figures like the mass $0.30\,\text{kg}$.

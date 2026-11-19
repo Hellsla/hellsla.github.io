@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 6b72ecc43124ac3e
+CONTENT-HASH: a0a4d834902f878c
+SCOPE: delta wording from 6b72ecc43124ac3e base 64d4935
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Delta round 1 (md-paragraphs): model answers of L2-06, L2-07, L3-04 and L3-05 and the Järkevyys of the data task, now split into short paragraphs. Opened the 1280 px captures L2-1280-7, L2-1280-14 and L3-1280-9. The L3-05 model answer (c) renders as three short paragraphs followed by Järkevyys. The paragraph breaks sit inside the solution cards, nothing is clipped, and the maths is intact.
-- I did not open the captures with L2-06, L2-07 and L3-04 themselves. The layout is the same shared component, and the change is plain paragraph breaks.
+- Delta, wording only: the diff read in full. The prefix "Esimerkkiaineisto:" is gone; each task now opens with a capital letter and reads as a normal sentence. No numbers, symbols, units or LaTeX changed.
+- Captures: opened fy3-4 L3 part 1 and 4 at 1280 px (content/fi/FY3/fy3-4/review/shots), which show the layout of this kind of task card; the other sets' captures were not opened, because the diff changes only the first words of a text.
 - Hash unchanged at the end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

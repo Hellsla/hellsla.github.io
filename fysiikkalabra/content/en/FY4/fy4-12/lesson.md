@@ -255,6 +255,12 @@ The motions of two bodies can be compared only when both positions are measured 
 
 The bodies **meet** when they are at the same place at the same moment, that is, $x_\text{A} = x_\text{B}$. A meeting always raises two questions: when does it happen, and where? If the bodies come from opposite directions, they meet each other. If the one behind catches up with the one ahead and passes it, this is **overtaking**. The physics is the same in both: the positions are equal.
 
+```pysahdy
+Two cyclists ride in the same direction, one ahead of the other. How do you know the one behind has reached the other?
+---
+Their positions are equal at the same moment: $x_\text{A} = x_\text{B}$. After that, the one who came from behind is ahead.
+```
+
 <svg data-fig="tilanne" viewBox="0 0 600 420" role="img" aria-label="Formula figure, to scale, with two bodies on the same x-axis. At the top, at t = 0, body A is at 0 m and moves to the right at 3.0 m/s, and body B is at 60 m and moves to the left at 2.0 m/s. At the bottom, at t = 12 s, both are at 36 m: the bodies have met. The velocity arrows are blue and of different lengths." style="max-width:100%;font-size:24px">
   <line x1="32" y1="168" x2="516" y2="168" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M528,168 L515,174 L515,162 Z" fill="#1f2933" stroke-linejoin="round"/>
@@ -371,6 +377,12 @@ In a $(t,x)$ graph, each motion is its own line in the same coordinate system. T
 </svg>
 
 A meeting does not mean that the bodies have the same velocity. At the intersection the lines have different slopes, because the velocities of the bodies are different. If two uniformly moving bodies had equal velocities, the lines would be parallel and the distance between the bodies would stay the same, so they would not meet if they started from different places. In overtaking, the body coming from behind is faster than the one being overtaken at the moment of meeting.
+
+```pysahdy
+Two cars drive in the same direction at the same velocity, one $50\,\text{m}$ ahead. Do they meet?
+---
+No. The distance stays $50\,\text{m}$, because the lines in the graph are parallel and do not intersect.
+```
 
 ## Formula: Meeting condition
 The time and place of a meeting are found by writing the position of each body as a function of time and setting the positions equal:

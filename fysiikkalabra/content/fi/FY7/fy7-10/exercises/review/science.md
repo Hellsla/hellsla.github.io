@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 3f1a684d0e3d8b8e
-SCOPE: delta added-exercise from 0103d8f31883bc59 base 8f23aa7ae3bd
+CONTENT-HASH: dc09b0ce9519b96f
 
 ## Blocking
 
 ## Polish
-- lessons/FY7/fy7-10/answers.py:51–52 — the comment still says "slope k = 0,596 / 0,40 = 1,49 = n" and computes an unused `k`, while line 53 (and the solution) use n = 1,50 — drop the dead line or reword the comment to the solution's readings 0,30 / 0,90 → 1,50.
+- lessons/FY7/fy7-10/answers.py:51–52 — the comment still says "slope k = 0,596 / 0,40 = 1,49 = n" and computes an unused `k`, while line 53 and the solution use n = 1,50 (carried) — drop the dead line or reword the comment.
 
 ## Checked
-- Delta round 3: L1-09 and L2-09 (added exercises); hash identical at start and end.
-- Round-2 polish fixed: L2-09 answers.py now uses n = 1,50: asin(sin 35,0° / 1,50) = asin(0,3824) = 22,481° = stored 22.48145, matching the solution's 22,5°.
-- fit figure: least-squares line of the plotted data has slope 1,4895, intercept −0,004, so it passes 0,294 at 0,20 and 0,890 at 0,60; readings 0,30 / 0,90 are right to the grid's precision, and the 3 % tolerance covers k = 1,49 too (22,64°).
-- L2-09 physics: sin α₁ = (n₂/n₁) sin α₂, slope = n₂ with n₁ = 1,00; read from the line, not raw points (guardrail).
-- L1-09: MAFY water 1,333; sin α₂ = 0,7880 / 1,333 = 0,5912, α₂ = 36,24° = answers.py; refraction toward the normal; three figures from 52,0°.
+- Delta: four Kaava steps rewritten as aligned chains (solutions.md:65, 75, 116, 133; the packet's diff shows them with the aligned markup stripped, the file on disk has proper `aligned` rows), three paragraphs split, caption marker removed; no number, answer, Muunnokset or Sijoitus changed; hash identical at start and end.
+- solutions.md:65: $n_1\sin\alpha_1 = n_2\sin\alpha_2 \Rightarrow n_2 = n_1\sin\alpha_1/\sin\alpha_2$; $n_2 = c/v \Rightarrow v = c/n_2$: correct.
+- solutions.md:75: $t_\text{lasi} = d/v$, $t_\text{ilma} = d/c$, $v = c/n$, $\Delta t = nd/c - d/c = (n-1)d/c$: correct (normal incidence, path $d$, air $n = 1{,}00$ as the Periaate says).
+- solutions.md:116: Snell with $n = c/v$ gives $(c/v_1)\sin\alpha_1 = (c/v_2)\sin\alpha_2 \Rightarrow \sin\alpha_2 = v_2\sin\alpha_1/v_1$: correct.
+- solutions.md:133: same $f$, $\lambda = v/f$, $\lambda/\lambda_0 = v/v_0 = (c/n)/c = 1/n$ with air $v_0 \approx c$: correct.
+- Paragraph splits (refraction model answer, apparent-depth Periaate and Vastaus): text identical, physics unchanged.
+- Every chain's last symbolic form is the one the unchanged Sijoitus substitutes into.

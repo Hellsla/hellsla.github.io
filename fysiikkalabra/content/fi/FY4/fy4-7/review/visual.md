@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 21b526c9a5a94a47
+CONTENT-HASH: 313f6528beb5e31c
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] Pysähdy-kysymys "Moninkertaiseksi sen liike-energia muuttuu?" — lause on kömpelö — kirjoita "Kuinka moninkertaiseksi sen liike-energia muuttuu?".
 
 ## Checked
-- batch delta review: opened example-390 captures (fi, fy4-7); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.
+batch delta review: Pysähdy ja mieti -ruudut (suljettu ja vastaus auki) 360 px ja 1280 px renderöitynä esikatselusta; teksti, KaTeX ja asettelu kunnossa, ei ylivuotoa.

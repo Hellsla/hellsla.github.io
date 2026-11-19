@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ed757328214f6988
+CONTENT-HASH: 310dab2b8cd66f1a
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] solutions.md Kaava lines — "..., joten ..., joten ..." chains repeat "joten"; optional smoother "ja".
 
 ## Checked
-- Delta (md-paragraphs, solutions.md), each changed solution at 390 px: sol-fy4-14-L2-07-390.png (Mallivastaus: slowing / terminal speed / the two wrong claims) and sol-fy4-14-L2-08-390.png (Järkevyys in four one-thought paragraphs: weight vs drag, acceleration, start, terminal speed).
-- Breaks fall between separate points; spacing even, nothing clipped, formulas and the step labels intact.
+- fy4-14-open-exercises-L2-1280-6.png (9-14 foam ball): table, Annettu/Kysytty layout intact, nothing clipped; the changed Kaava lines read in the diff (basic equations, then derived formula), numbers unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

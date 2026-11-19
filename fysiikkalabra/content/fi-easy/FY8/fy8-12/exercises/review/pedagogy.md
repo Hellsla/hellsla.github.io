@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 727ba94e22099e77
-SCOPE: delta added-exercise from 0afbb0e960a7159d base 5b3ca4f81c77
+CONTENT-HASH: 81b5cf5d2daaa058
 
 ## Blocking
 
 ## Polish
 
-- L2-09 and L3-07 share the figure fy8-12/tuntematon and the read-d1/2 step; L3-07 still adds extrapolation and a safety decision, so the level difference is real. Optional: a second graph for L3 for variety.
-- fi-easy L2-09/L3-07 Principle: "vaimenee tasaisesti" can read as linear; better "jokainen puoliintumispaksuus puolittaa pulssitaajuuden".
+- exercises.json L1-07 text, L2-09 unit, solutions.md — `min^{-1}` is less familiar to S2 students than "1/min"; the task already says "pulssia minuutissa", so the meaning stays clear. Optional: add "(pulssia minuutissa)" to the unit sentence once.
 
 ## Checked
 
-- Round 1 blocking fixed: L3-07 now uses 1/50 (ln 50/ln 2 = 5,6439, d = 67,7 mm), no longer the worked example's 5,0 % = 1/20.
-- L3-07 answer 68 mm correct, rounded up for "at most" (house rule); tolerance 2 % covers 67,73; sanity check 1/32 and 1/64 brackets 1/50.
-- L3-07 conclusion "48 mm is not enough" is consistent: R(48 mm) = 50 > 16 pulses/min.
-- L2-09 answer 141,4 = 800*2^-2,5; solution has all seven parts, graph read with a check point (24 mm, 200).
-- Situation first, question last; the figure description gives 800 at 0 and the range, not d1/2 or the answers.
-- Set mix: L2 now 9 and L3 7 exercises, kinds graph/data/reasoning/model fit the plan (d1/2 from a graph).
-- Round 3 delta: only L2-09 unit pulssia/min -> 1/min; language-neutral, consistent with the other count-rate exercises, answer and solution unchanged. Hash unchanged at start and end.
+- Diff is a unit notation change only (1/min and \tfrac{1}{\text{min}} to min⁻¹) in L1-07, L2-09, L3-02 and their solutions; answers 1530, 141,4 and tolerances unchanged.
+- Notation is consistent between task text, `unit` field and solution (Annettu, Kysytty, Sijoitus, Järkevyys), and with the MAFY-style `\text{min}^{-1}`.
+- The rest of the solutions.md diff is blank-line reflow between the seven labelled parts; no step, number or sign changed. All seven parts remain in L1-01 to L3-02.
+- Level, situation-first/question-last form and the figure description (no answer disclosed) are unchanged.
+- Hash 81b5cf5d2daaa058 at start; to be rechecked at end.

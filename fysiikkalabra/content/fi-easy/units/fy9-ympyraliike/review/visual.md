@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: cf5c9debf0427a60
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 1f0addc601804c04
 
 ## Blocking
-- (none)
+- none
 
 ## Polish
-- A. sovella/solutions.md, s7 e) **Mallivastaus**: "Kun Aurinko on ratatasossa, asema on varjon reunalla tietyssä kohdassa. Siinä aseman suunta poikkeaa Auringosta poispäin osoittavasta suunnasta kulman $\theta$, kun katsotaan Maan keskipisteestä." is heavy for selkeä suomi. Clearer: "Oletetaan, että Aurinko on ratatasossa. Ajattele kahta suuntaa Maan keskipisteestä: suoraan Auringosta poispäin ja kohti asemaa, kun asema on varjon reunalla. Suuntien välinen kulma on $\theta$."
-- B. s7 e) **Mallivastaus**: one paragraph of about 200 words; an empty line before "Varjossa paneelit eivät tuota sähköä." separates the geometry from the conclusion.
-- C. s7 a) **Annettu**: the range "$370$–$460\,\text{km}$" breaks after "370" at 390 px (capture 390-55). One formula `$370\text{–}460\,\text{km}$` keeps it together.
+- none
 
 ## Checked
-- Hash at start and end: cf5c9debf0427a60. Captures current (reused).
-- Opened at full size: stage-exercises-390-54 … -63 (the whole s7: card, source link, data list, parts a–e, all solutions, common mistakes, accepted answers, rubric to c); stage-exercises-1280-41, -43; contact sheet 7.
-- s7: source link visible and correct; `aligned` rows have `=` in one column at 390 and 1280 px; vectors $\overline{G}$, $\overline{N}$ with an overline; $\sqrt{\tfrac{\gamma M}{r}}$ and $\tfrac{2\theta}{360^\circ}$ render cleanly; nothing clipped or scrolled; boxed answers ($a_\text{n} \approx 8{,}8\,\text{m/s}^2$, $P \approx 84\,\text{kW}$) set apart correctly.
-- Language: case endings correct ($92\,\text{min}$:ssa, $92\,\text{min}$:n välein, $460\,\text{km}$:n korkeudella); normaalikiihtyvyys used throughout.
-- Item 18 sentences (s1-d "lähtökitka eli täysin kehittynyt lepokitka pienenisi", s3-a "Pisteet ovat laskevalla käyrällä"): judged from the diff, correct and fluent.
+- Read the diff origin/main...HEAD for fi-easy (sovella/solutions.md, inquiry.json, excluding review/): only blank lines inserted inside long Periaate, Mallivastaus, Kuvaaja, Järkevyys and inquiry model fields (24 breaks); words, maths and figures unchanged; every break falls between sentences, none inside a formula or display block, and the paragraphs stay under about 120 words.
+- Opened review/shots/contact-17.png (fi-easy): Sovella model-solution pages show the split paragraphs with normal spacing, no clipping or overflow, labelled blocks and formula rows intact.
+- Opened review/shots/fy9-ympyraliike-stage-sovella-390-4.png (fi): 390 px solution layout readable, formulas not clipped.
+- Read the earlier Sovella visual report (fi-easy, PASS) as evidence; the inquiry model change was judged from the diff only, no capture of that field opened.
+- Hash at end equals hash at start.

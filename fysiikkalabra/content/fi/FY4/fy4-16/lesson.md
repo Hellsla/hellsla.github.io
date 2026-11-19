@@ -227,11 +227,29 @@ Tämän luvun tehtävät ratkeavat kahdella työkalulla, ja kumpikin alkaa samas
 ### Hissi: vaaka mittaa tukivoimaa
 Kylpyhuonevaaka ei mittaa painoa vaan tukivoimaa $N$, jolla se työntää seisojaa ylöspäin. Lukema näkyy kilogrammoina, koska vaaka jakaa voiman luvulla $9{,}81\,\text{m/s}^2$. Hississä paikallaan seisovaan ihmiseen vaikuttavat vain paino ja tukivoima. Kun positiivinen suunta on ylös, liikeyhtälö on $N - mg = ma$, joten $N = m(g + a)$. Kun hissi lähtee ylös ja kiihtyy $1{,}0\,\text{m/s}^2$, $60{,}0\,\text{kg}$:n ihmisen tukivoima on $649\,\text{N}$ eli pyöristettynä $650\,\text{N}$ kuten kuvaajassa, ja vaaka näyttää $66\,\text{kg}$. Tasaisella nopeudella $a = 0$, ja vaaka näyttää saman kuin kotona, liikkuipa hissi ylös tai alas. Lukema riippuu siis kiihtyvyydestä, ei nopeudesta.
 
+```pysahdy
+Hissi liikkuu ylöspäin tasaisella nopeudella $2{,}0\,\text{m/s}$. Näyttääkö vaaka silloin enemmän, vähemmän vai saman kuin paikallaan seisoessa? Perustele.
+---
+Saman. Nopeus on vakio, joten $a = 0$ ja $N = mg$. Vaa'an lukema riippuu kiihtyvyydestä, ei nopeudesta.
+```
+
 ### Laskuvarjo: rajanopeudella mekaaninen energia pienenee
 Varjon varassa laskeutuva hyppääjä putoaa pian rajanopeudella eli tasaisella nopeudella (luku *Ilmanvastus ja putoaminen ilmassa*). Liikeyhtälön mukaan kiihtyvyys on nolla, joten ilmanvastus on yhtä suuri kuin paino, $F_\text{v} = mg$. Energian kannalta liike-energia ei muutu, mutta potentiaalienergia pienenee koko ajan. Energiaperiaatteen mukaan mekaanisen energian muutos on ilmanvastuksen tekemä työ. Se on negatiivinen, koska ilmanvastus osoittaa liikettä vastaan: korkeuden $h$ matkalla $W_\text{v} = -F_\text{v} h = -mgh$. Kun $80\,\text{kg}$:n hyppääjä laskeutuu $100\,\text{m}$, noin $78\,\text{kJ}$ mekaanista energiaa muuttuu ilman liikkeeksi ja lopulta sisäenergiaksi. Kumpikin työkalu kertoo saman asian omalla tavallaan.
 
+```pysahdy
+Hyppääjän liike-energia ei muutu rajanopeudella. Mihin mekaaninen energia silloin menee?
+---
+Potentiaalienergia pienenee korkeuden mukana. Ilmanvastus tekee negatiivisen työn, ja energia muuttuu ilman liikkeeksi ja lopulta sisäenergiaksi.
+```
+
 ### Kelkkamäki: kitka vie energiaa koko matkalla
 Pulkka liukuu suoraa rinnettä alas. Voimakuviosta nähdään, että painon rinnettä vastaan kohtisuora komponentti ja tukivoima kumoavat toisensa, joten $N = mg\cos\alpha$, kuten luvussa *Paino, kitka ja kalteva taso*. Liukukitka on silloin $F_\mu = \mu mg\cos\alpha$. Tukivoima ei tee työtä, koska se on kohtisuorassa liikettä vastaan. Paino tekee rinteessä työn $mgh$, ja kitka tekee negatiivisen työn $-F_\mu L$, kun rinteen pituus on $L$. Yhtä korkeassa mäessä tukivoima ja kitka ovat jyrkässä rinteessä pienempiä ja rinne on lyhyempi, joten kitka vie vähemmän energiaa ja pulkka on juurella nopeampi. Tasaisella pulkka liukuu, kunnes kitka on muuttanut kaiken liike-energian sisäenergiaksi.
+
+```pysahdy
+Kaksi pulkkaa lähtee yhtä korkealta, toinen jyrkältä ja toinen loivalta rinteeltä. Kummassa rinteessä kitka tekee suuremman työn ja miksi?
+---
+Loivassa. Rinne on pidempi, joten kitka vaikuttaa pitemmän matkan ja vie enemmän energiaa kuin jyrkässä rinteessä.
+```
 
 ## Kaava: Liikeyhtälö ja energiaperiaate
 Soveltavan tehtävän ensimmäinen työkalu on Newtonin toinen laki:

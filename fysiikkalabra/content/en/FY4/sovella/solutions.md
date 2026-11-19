@@ -187,7 +187,7 @@ akselit -4
 komponentit G
 ```
 **Reading the graph:** The line of wax A passes through the points $(0\,\text{s};\ 2.10\,\text{m/s})$ and $(8\,\text{s};\ 5.22\,\text{m/s})$, so $a_\text{A} = \dfrac{3.12\,\text{m/s}}{8\,\text{s}} = 0.39\,\text{m/s}^2$. The line of wax B passes through the points $(0\,\text{s};\ 1.90\,\text{m/s})$ and $(8\,\text{s};\ 3.86\,\text{m/s})$, so $a_\text{B} = \dfrac{1.96\,\text{m/s}}{8\,\text{s}} = 0.245\,\text{m/s}^2$.
-**Formula:** $y$: $N - mg\cos\alpha = 0$, so $N = mg\cos\alpha$. $x$: $mg\sin\alpha - \mu N = ma$, that is, $mg\sin\alpha - \mu mg\cos\alpha = ma$. The mass cancels, and $\mu = \dfrac{g\sin\alpha - a}{g\cos\alpha}$.
+**Formula:** Newton's second law $\Sigma F = ma$ and sliding friction $F_\mu = \mu N$. $y$: $N - mg\cos\alpha = 0$, so $N = mg\cos\alpha$. $x$: $mg\sin\alpha - \mu N = ma$, that is, $mg\sin\alpha - \mu mg\cos\alpha = ma$. The mass cancels: $g\sin\alpha - \mu g\cos\alpha = a$, and $\mu = \dfrac{g\sin\alpha - a}{g\cos\alpha}$.
 **Conversions:** Not needed, the accelerations are in the unit $\text{m/s}^2$.
 **Substitution:** $g\sin\alpha = 9.81\,\text{m/s}^2 \cdot \sin 4.0^\circ = 0.684\,\text{m/s}^2$ and $g\cos\alpha = 9.81\,\text{m/s}^2 \cdot \cos 4.0^\circ = 9.786\,\text{m/s}^2$. $\mu_\text{A} = \dfrac{(0.684 - 0.39)\,\text{m/s}^2}{9.786\,\text{m/s}^2} = 0.030$ and $\mu_\text{B} = \dfrac{(0.684 - 0.245)\,\text{m/s}^2}{9.786\,\text{m/s}^2} = 0.045$
 **Answer:** $\mu_\text{A} \approx 0.030$ and $\mu_\text{B} \approx 0.045$. The coefficient of friction has no unit. Two significant figures, because the slopes are read from the graph to about two figures.
@@ -305,7 +305,7 @@ In the slower run B air resistance has a smaller effect, so wax A glides better 
 **Principle:** The instructor's figure is obtained when friction and air resistance are not taken into account. Then only the weight and the force of the cable through the trolley act on the rider.
 
 The force of the cable is perpendicular to the cable, that is, to the motion, so it does no work. Only the weight does work, so the mechanical energy is conserved: potential energy changes into kinetic energy. The shape and length of the cable then do not affect the final speed, only the height difference.
-**Formula:** $mgh = \tfrac{1}{2}mv^2$, so $v = \sqrt{2gh}$
+**Formula:** Conservation of mechanical energy $E_{\text{p}0} + E_{\text{k}0} = E_\text{p} + E_\text{k}$, where $E_\text{p} = mgh$ and $E_\text{k} = \tfrac{1}{2}mv^2$. At the start platform $E_{\text{k}0} = 0$ and at the start of the brake (zero level) $E_\text{p} = 0$, so $mgh = \tfrac{1}{2}mv^2$. The mass cancels: $v^2 = 2gh$, and $v = \sqrt{2gh}$
 **Conversions:** Not needed in the calculation. For comparison $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** $v = \sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot 15.0\,\text{m}} = \sqrt{294.3}\,\text{m/s} = 17.2\,\text{m/s}$ and $17.2 \cdot 3.6\,\text{km/h} = 61.8\,\text{km/h}$
 **Answer:** $v \approx 17.2\,\text{m/s} \approx 62\,\text{km/h}$, three significant figures like the height $15.0\,\text{m}$. The instructor's claim is thus based on a model in which mechanical energy is conserved.
@@ -317,7 +317,7 @@ The force of the cable is perpendicular to the cable, that is, to the motion, so
 **Principle:** The measured $11.2\,\text{m/s} \approx 40\,\text{km/h}$ is much smaller than the $17.2\,\text{m/s}$ of part a, so mechanical energy is not conserved. The friction of the trolley wheels and air resistance oppose the motion for the whole distance and do negative work.
 
 By the work–energy principle $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$. The zero level is chosen to be the beginning of the brake, where the speed was measured. When the combined effect of the resisting forces is described by an average force $F_\text{res}$ pointing against the direction of motion, its work is $W = -F_\text{res}\,s$.
-**Formula:** $mgh - F_\text{res}\,s = \tfrac{1}{2}mv^2$, so $F_\text{res} = \dfrac{mgh - \tfrac{1}{2}mv^2}{s}$
+**Formula:** The energy principle of mechanics $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$, where $E_\text{p} = mgh$, $E_\text{k} = \tfrac{1}{2}mv^2$ and $W = -F_\text{res}\,s$. At the start platform $E_{\text{k}0} = 0$ and at the start of the brake $E_\text{p} = 0$, so $mgh - F_\text{res}\,s = \tfrac{1}{2}mv^2$, and $F_\text{res} = \dfrac{mgh - \tfrac{1}{2}mv^2}{s}$
 **Conversions:** Not needed, all quantities are in base units.
 **Substitution:** $E_{\text{p}0} = 62\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 15.0\,\text{m} = 9123\,\text{J}$ and $E_\text{k} = \tfrac{1}{2} \cdot 62\,\text{kg} \cdot (11.2\,\text{m/s})^2 = 3889\,\text{J}$. $F_\text{res} = \dfrac{9123\,\text{J} - 3889\,\text{J}}{180\,\text{m}} = \dfrac{5234\,\text{J}}{180\,\text{m}} = 29.1\,\text{N}$
 **Answer:** $F_\text{res} \approx 29\,\text{N}$, two significant figures like the mass $62\,\text{kg}$.
@@ -327,7 +327,7 @@ By the work–energy principle $E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} +
 **Given:** $m = 95\,\text{kg}$, $h = 15.0\,\text{m}$, $s = 180\,\text{m}$ and the work of the resisting force from part b, $F_\text{res}\,s = 5234\,\text{J}$ ($F_\text{res} \approx 29\,\text{N}$)
 **Find:** the speed $v$ of the heavier rider at the beginning of the brake with the instructor's assumption
 **Principle:** The same energy principle as in part b, but now the unknown is the speed. According to the assumption the work of the resisting force is the same as for the light rider, but the potential energy is larger in proportion to the mass.
-**Formula:** $mgh - F_\text{res}\,s = \tfrac{1}{2}mv^2$, so $v = \sqrt{\dfrac{2\,(mgh - F_\text{res}\,s)}{m}}$
+**Formula:** The energy principle of mechanics as in part b: $mgh - F_\text{res}\,s = \tfrac{1}{2}mv^2$. Solving $v^2 = \dfrac{2\,(mgh - F_\text{res}\,s)}{m}$, so $v = \sqrt{\dfrac{2\,(mgh - F_\text{res}\,s)}{m}}$
 **Conversions:** Not needed.
 **Substitution:** $mgh = 95\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 15.0\,\text{m} = 13\,979\,\text{J}$ and from part b $F_\text{res}\,s = 5234\,\text{J}$, so $E_\text{k} = 13\,979\,\text{J} - 5234\,\text{J} = 8745\,\text{J}$. $v = \sqrt{\dfrac{2 \cdot 8745\,\text{J}}{95\,\text{kg}}} = \sqrt{184.1}\,\text{m/s} = 13.6\,\text{m/s}$
 **Answer:** $v \approx 14\,\text{m/s}$ (more precisely $13.6\,\text{m/s} \approx 49\,\text{km/h}$). Two significant figures, because the mass $95\,\text{kg}$ and the resisting force $29\,\text{N}$ are known to two figures.
@@ -368,7 +368,7 @@ Actually designing the brake requires separate safety margins, a load analysis a
 **Principle:** After the collision the cars move as one object with the mass $m = m_\text{A} + m_\text{B}$. The road is horizontal, so there is no acceleration in the vertical direction and the normal force is equal to the weight, $N = mg$. The wheels are locked, so the sliding friction is $F_\mu = \mu N = \mu mg$, and it is the only horizontal force.
 
 Friction does negative work until the kinetic energy has been used up (the work–energy principle). Newton's second law gives the same result: the deceleration is $\mu g$.
-**Formula:** $\tfrac{1}{2}mv'^2 - \mu mg\,s = 0$, so $v' = \sqrt{2\mu g s}$
+**Formula:** The energy principle $E_{\text{k}0} + W = E_\text{k}$, where $E_{\text{k}0} = \tfrac{1}{2}mv'^2$, $E_\text{k} = 0$ and the work of friction is $W = -F_\mu s = -\mu mg\,s$. So $\tfrac{1}{2}mv'^2 - \mu mg\,s = 0$. The mass cancels: $v'^2 = 2\mu g s$, and $v' = \sqrt{2\mu g s}$
 **Conversions:** Not needed. The masses cancel, so they are not needed in this part.
 **Substitution:** $v' = \sqrt{2 \cdot 0.75 \cdot 9.81\,\text{m/s}^2 \cdot 4.2\,\text{m}} = \sqrt{61.8}\,\text{m/s} = 7.86\,\text{m/s}$
 **Answer:** $v' \approx 7.9\,\text{m/s}$, two significant figures like the distance $4.2\,\text{m}$ and the coefficient of friction $0.75$.
@@ -511,7 +511,7 @@ The external force, the friction of the road, is much smaller than the collision
   <foreignObject x="574" y="235.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$+$</div></foreignObject>
 </svg>
 
-**Formula:** $$\begin{aligned} &m_\text{B}v_\text{B} + m_\text{A} \cdot 0 \\ &= (m_\text{A} + m_\text{B})\,v' \end{aligned}$$, so $v_\text{B} = \dfrac{(m_\text{A} + m_\text{B})\,v'}{m_\text{B}}$
+**Formula:** Conservation of momentum $p_\text{before} = p_\text{after}$, where $p = mv$ and car A is at first at rest: $$\begin{aligned} &m_\text{B}v_\text{B} + m_\text{A} \cdot 0 \\ &= (m_\text{A} + m_\text{B})\,v' \end{aligned}$$, so $v_\text{B} = \dfrac{(m_\text{A} + m_\text{B})\,v'}{m_\text{B}}$
 **Conversions:** For comparison $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** $v_\text{B} = \dfrac{2950\,\text{kg} \cdot 7.86\,\text{m/s}}{1700\,\text{kg}} = 13.6\,\text{m/s}$ and $13.6 \cdot 3.6\,\text{km/h} = 49\,\text{km/h}$
 **Answer:** $v_\text{B} \approx 14\,\text{m/s}$ (more precisely $13.6\,\text{m/s} \approx 49\,\text{km/h}$). Two significant figures, because the sliding distance $4.2\,\text{m}$ and the coefficient of friction $0.75$ are known to two figures. The account is not true: according to the model, the speed of car B just before the collision was about $49\,\text{km/h}$, about $9\,\text{km/h}$ over the limit.
@@ -523,7 +523,7 @@ The external force, the friction of the road, is much smaller than the collision
 **Principle:** The driver is at first at rest and after the collision moves with the car at the speed $v'$.
 
 In the horizontal direction the driver's momentum is changed by the force of the seat back, so by the impulse principle its impulse is equal to the change in the driver's momentum. The force is not constant, so the average force is calculated.
-**Formula:** $F_\text{avg}\,\Delta t = m\,\Delta v$, so $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$, and the comparison $\dfrac{F_\text{avg}}{mg}$
+**Formula:** The impulse principle $I = F_\text{avg}\,\Delta t = \Delta p$, where $\Delta p = m\,\Delta v$. So $F_\text{avg}\,\Delta t = m\,\Delta v$, and $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$, and the comparison $\dfrac{F_\text{avg}}{mg}$
 **Conversions:** Not needed.
 **Substitution:** $F_\text{avg} = \dfrac{68\,\text{kg} \cdot 7.86\,\text{m/s}}{0.12\,\text{s}} = 4455\,\text{N}$ and $\dfrac{F_\text{avg}}{mg} = \dfrac{4455\,\text{N}}{68\,\text{kg} \cdot 9.81\,\text{m/s}^2} = \dfrac{4455\,\text{N}}{667\,\text{N}} = 6.7$
 **Answer:** $F_\text{avg} \approx 4.5\,\text{kN}$, that is, about $6.7$ times the driver's weight. Two significant figures like the duration of the collision $0.12\,\text{s}$.

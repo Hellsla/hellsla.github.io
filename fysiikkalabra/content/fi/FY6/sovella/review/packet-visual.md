@@ -1,5 +1,5 @@
 # Packet: FY6-sovella (Sovella itsenäisesti, fi)
-Role: **visual** (`.claude/agents/visual-editorial-reviewer.md`). Mode: **full**. Content hash now: `8067d7cd885e25ec`.
+Role: **visual** (`.claude/agents/visual-editorial-reviewer.md`). Mode: **full**. Content hash now: `78dc8c2332232d74`.
 House rules: `CLAUDE.md` (in your context). This is not a lesson: no inquiry stages, no exercises; judge the page as the Sovella itsenäisesti it is (an investigation: the student's working instructions by working mode, the figures and set-up sketches, the data tables and graphs, the teacher's notes; a guide: the screenshots of the software are the school's own and are judged for legibility and fit, not redrawn).
 
 ## Your standard (docs/EDITORIAL_QUALITY_STANDARD.md: severity and dimensions 7–10)
@@ -208,7 +208,7 @@ whitespace anywhere.
       "title": "Taskulampun paristo",
       "source": "example",
       "source_note": "Mittaustulokset on laadittu tehtävää varten, mutta ne ovat samaa suuruusluokkaa kuin uuden litteän taskulamppupariston mittauksessa.",
-      "text": "Oppilas tutkii uutta litteää taskulamppuparistoa, jonka kyljessä lukee $4{,}5\\,\\text{V}$. Hän kytkee paristoon säädettävän vastuksen ja ampeerimittarin sekä jännitemittarin suoraan pariston napoihin (kuva). Hän säätää vastuksesta virran ja lukee sitä vastaavan napajännitteen $U$. Mittarit näyttävät virran $0{,}01\\,\\text{A}$:n ja jännitteen $0{,}01\\,\\text{V}$:n tarkkuudella. Oppilas mittasi virran kasvavassa järjestyksessä, ja piiri oli kytkettynä kunkin lukeman ajan noin minuutin. Paristo lämpeni mittausten aikana hieman, ja jännite näytti laskevan hitaasti myös silloin, kun virtaa ei muutettu. Sarjan jälkeen oppilas mittasi jännitteen vielä kerran virralla $0{,}10\\,\\text{A}$: lukema oli $4{,}45\\,\\text{V}$ eli $0{,}03\\,\\text{V}$ pienempi kuin sarjan alussa.\n\nMittaustulokset (virta $I$, napajännite $U$):\n\n- $I = 0{,}10\\,\\text{A}$, $U = 4{,}48\\,\\text{V}$\n- $I = 0{,}20\\,\\text{A}$, $U = 4{,}37\\,\\text{V}$\n- $I = 0{,}30\\,\\text{A}$, $U = 4{,}22\\,\\text{V}$\n- $I = 0{,}40\\,\\text{A}$, $U = 4{,}13\\,\\text{V}$\n- $I = 0{,}50\\,\\text{A}$, $U = 3{,}99\\,\\text{V}$\n- $I = 0{,}60\\,\\text{A}$, $U = 3{,}89\\,\\text{V}$",
+      "text": "Oppilas tutkii uutta litteää taskulamppuparistoa, jonka kyljessä lukee $4{,}5\\,\\text{V}$. Hän kytkee paristoon säädettävän vastuksen ja ampeerimittarin sekä jännitemittarin suoraan pariston napoihin (kuva). Hän säätää vastuksesta virran ja lukee sitä vastaavan napajännitteen $U$. Mittarit näyttävät virran $0{,}01\\,\\text{A}$:n ja jännitteen $0{,}01\\,\\text{V}$:n tarkkuudella. Oppilas mittasi virran kasvavassa järjestyksessä, ja piiri oli kytkettynä kunkin lukeman ajan noin minuutin. Paristo lämpeni mittausten aikana hieman, ja jännite näytti laskevan hitaasti myös silloin, kun virtaa ei muutettu. Tätä jännitteen hidasta muutosta ajan kuluessa kutsutaan ajautumaksi. Sarjan jälkeen oppilas mittasi jännitteen vielä kerran virralla $0{,}10\\,\\text{A}$: lukema oli $4{,}45\\,\\text{V}$ eli $0{,}03\\,\\text{V}$ pienempi kuin sarjan alussa.\n\nMittaustulokset (virta $I$, napajännite $U$):\n\n- $I = 0{,}10\\,\\text{A}$, $U = 4{,}48\\,\\text{V}$\n- $I = 0{,}20\\,\\text{A}$, $U = 4{,}37\\,\\text{V}$\n- $I = 0{,}30\\,\\text{A}$, $U = 4{,}22\\,\\text{V}$\n- $I = 0{,}40\\,\\text{A}$, $U = 4{,}13\\,\\text{V}$\n- $I = 0{,}50\\,\\text{A}$, $U = 3{,}99\\,\\text{V}$\n- $I = 0{,}60\\,\\text{A}$, $U = 3{,}89\\,\\text{V}$",
       "figure": "fy6-sovella/fy6-s1-circuit",
       "parts": [
         {
@@ -326,7 +326,7 @@ whitespace anywhere.
             {
               "key": "error_sources",
               "points": 1,
-              "detail": "Pariston purkautuminen laskee jännitettä sarjan aikana, joten myöhemmin mitatut jännitteet (suuremmat virrat) ovat liian pieniä: suora on liian jyrkkä ja $R_\\text{s}$ tulee liian suureksi (systemaattinen virhe). Koska virtaa kasvatettiin vain yhteen suuntaan, ajan vaikutus sekoittuu kulmakertoimeen. Lämpeneminen muuttaa myös $R_\\text{s}$:ää mittauksen aikana (yleensä pienentää sitä), joten sen suunta on epävarma."
+              "detail": "Malli on idealisoitu tässä: se olettaa, että $E$ ja $R_\\text{s}$ pysyvät vakioina koko mittauksen ajan. Pariston purkautuminen laskee jännitettä sarjan aikana, joten myöhemmin mitatut jännitteet (suuremmat virrat) ovat liian pieniä: suora on liian jyrkkä ja $R_\\text{s}$ tulee liian suureksi (systemaattinen virhe). Koska virtaa kasvatettiin vain yhteen suuntaan, ajan vaikutus sekoittuu kulmakertoimeen. Lämpeneminen muuttaa myös $R_\\text{s}$:ää mittauksen aikana (yleensä pienentää sitä), joten sen suunta on epävarma."
             },
             {
               "key": "uncertainty",
@@ -399,7 +399,7 @@ whitespace anywhere.
           "id": "b",
           "kind": "calc",
           "points": 3,
-          "text": "Kuinka suuri teho lamppuun A todellisuudessa siirtyy? Vertaa tulosta lampun nimellistehoon.",
+          "text": "Kuinka suuri teho lamppuun A siirtyy? Vertaa tulosta lampun nimellistehoon.",
           "answer": {
             "value": 16.7,
             "unit": "W",
@@ -537,7 +537,7 @@ whitespace anywhere.
           "id": "b",
           "kind": "calc",
           "points": 4,
-          "text": "Kuinka suurella nopeudella pisara osuu työkappaleeseen, kun ilmanvastusta ei oteta huomioon?",
+          "text": "Kuinka suurella nopeudella pisara osuu työkappaleeseen? Kerro oletuksesi.",
           "answer": {
             "value": 13.4,
             "unit": "m/s",
@@ -545,7 +545,7 @@ whitespace anywhere.
           },
           "criteria": [
             {
-              "text": "Valitsee energiaperiaatteen: sähkökentän tekemä työ $qU$ kasvattaa pisaran liike-energiaa, kun paino ja ilmanvastus jätetään pois; kentän voimakkuutta tai kiihtyvyyttä ei tarvita.",
+              "text": "Valitsee energiaperiaatteen: sähkökentän tekemä työ $qU$ kasvattaa pisaran liike-energiaa, kun paino ja ilmanvastus jätetään pois, ja sanoo tämän oletuksen; kentän voimakkuutta tai kiihtyvyyttä ei tarvita.",
               "tag": "transfer",
               "points": 1
             },
@@ -570,7 +570,7 @@ whitespace anywhere.
           "id": "c",
           "kind": "word",
           "points": 4,
-          "text": "Mittauksessa pisaroiden osumanopeudeksi saadaan noin $5{,}0\\,\\text{m/s}$. Selitä, miksi se on paljon pienempi kuin b-kohdan tulos, ja päättele, minne sähkökentän tekemä työ jää.",
+          "text": "Mittauksessa pisaroiden osumanopeudeksi saadaan noin $5{,}0\\,\\text{m/s}$. Selitä, miksi mitattu nopeus poikkeaa b-kohdan tuloksesta, ja päättele, minne sähkökentän tekemä työ jää.",
           "criteria": [
             {
               "text": "Tunnistaa, että b-kohdan malli jätti ilmanvastuksen pois: ilma vastustaa pisaran liikettä, ja nopeuden kasvaessa ilmanvastus kasvaa, kunnes se on likimain yhtä suuri kuin sähkövoima.",
@@ -674,7 +674,7 @@ whitespace anywhere.
           "id": "b",
           "kind": "calc",
           "points": 4,
-          "text": "Kuinka suuri energia siirtyi salamaan? Kuinka suuri osa varastoidusta energiasta tämä on, ja miksi osuus on suurempi kuin jännitteen pieneneminen?",
+          "text": "Kuinka suuri energia siirtyi salamaan? Kuinka suuri osa varastoidusta energiasta tämä on? Vertaa osuutta jännitteen suhteelliseen pienenemiseen ja selitä ero.",
           "answer": [
             {
               "name": "E",
@@ -843,7 +843,7 @@ Lämpeneminen muuttaa myös $R_\text{s}$:ää mittauksen aikana (yleensä pienen
 
 Lähdejännitteeseen vaikutus on pieni, koska pienimmällä virralla mitattiin ensin tuoreella paristolla.
 
-*Ajautuman suuruus.* Uusi mittaus virralla $0{,}10\,\text{A}$ antoi $4{,}45\,\text{V}$ eli $0{,}03\,\text{V}$ vähemmän kuin sarjan alussa. Pahimmillaan viimeinen piste on siis noin $0{,}03\,\text{V}$ liian alhaalla, ja kulmakerroin on liian suuri enintään $\dfrac{0{,}03\,\text{V}}{0{,}50\,\text{A}} = 0{,}06\,\Omega$.
+*Ajautuman suuruus.* Ajautuma tarkoittaa jännitteen hidasta muutosta ajan kuluessa silloin, kun virta pysyy samana, ja ajautumisnopeus on jännitteen muutos aikayksikössä. Ajautuma osoittaa, että malli on idealisoitu: se käsittelee $E$:tä ja $R_\text{s}$:ää vakioina, vaikka todellinen paristo purkautuu ja lämpenee mittauksen aikana. Uusi mittaus virralla $0{,}10\,\text{A}$ antoi $4{,}45\,\text{V}$ eli $0{,}03\,\text{V}$ vähemmän kuin sarjan alussa. Sarjassa oli kuusi lukemaa, kukin noin minuutin ajan, joten ajautumisnopeus on noin $\dfrac{0{,}03\,\text{V}}{6\,\text{min}} \approx 0{,}005\,\text{V/min}$. Pahimmillaan viimeinen piste on siis noin $0{,}03\,\text{V}$ liian alhaalla, ja kulmakerroin on liian suuri enintään $\dfrac{0{,}03\,\text{V}}{0{,}50\,\text{A}} = 0{,}06\,\Omega$.
 
 *Epävarmuus.* Pisteet poikkeavat sovitetusta suorasta enintään $0{,}02\,\text{V}$. Jos suoran toinen pää nousee ja toinen laskee tämän verran, kulmakerroin muuttuu $\dfrac{2 \cdot 0{,}02\,\text{V}}{0{,}50\,\text{A}} = 0{,}08\,\Omega$ eli $R_\text{s} = (1{,}20 \pm 0{,}08)\,\Omega$. Epävarmuus on pyöristetty yhteen merkitsevään numeroon.
 
@@ -938,7 +938,7 @@ Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvi
 
 ### b)
 **Annettu:** $q = 6{,}0 \cdot 10^{-13}\,\text{C}$, $U = 6{,}0 \cdot 10^{4}\,\text{V}$, $m = 4{,}0 \cdot 10^{-10}\,\text{kg}$ ja pisara lähtee levosta
-**Kysytty:** pisaran nopeus $v$ osuessaan työkappaleeseen, kun ilmanvastusta ei oteta huomioon
+**Kysytty:** pisaran nopeus $v$ osuessaan työkappaleeseen; oletus: paino ja ilmanvastus jätetään pois
 **Periaate:** Sähkökentän pisaraan tekemä työ on varaus kertaa potentiaaliero, $W = qU$, ja se kasvattaa pisaran liike-energiaa. Paino ja ilmanvastus jätetään pois, joten muita voimia ei ole. Tällä tavalla riittää tietää potentiaaliero, eikä kentän voimakkuutta tai kiihtyvyyttä tarvita.
 **Kaava:** $q U = \dfrac{1}{2} m v^2$, josta $v = \sqrt{\dfrac{2 q U}{m}}$
 **Muunnokset:** Ei tarvita, kaikki suureet ovat perusyksiköissä; $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
@@ -1037,7 +1037,7 @@ Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvi
 ## Figure inventory (inline figures; the captures `fig-N-390` show them in page order)
 - `content/fi/FY6/sovella/solutions.md:24–91` [fy6-s1-graph] in “a)”: Kuvaaja: pariston napajännite U voltteina virran I funktiona ampeereina. Kuusi mustaa pistettä virroilla 0,10–0,60 A; jännite pienenee arvosta 4,48 V arvoon 3,89 V. Pisteisiin on sovitettu suora, joka kulkee pisteiden lo — labels: $0{,}1$ · $0{,}2$ · $0{,}3$ · $0{,}4$ · $0{,}5$ · $0{,}6$ · $0{,}7$ · $0{,}8$ · $3{,}8$ · $4{,}0$ · $4{,}2$ · $4{,}4$ · $4{,}6$ · $4{,}8$ · $I\ (\text{A})$ · $U\ (\text{V})$ · $3{,}6$ · $0$ · <span style="background:#ffffff;padding:0 5px;border-radius:3px">$\Delta I = 0{,}50\,\text{A}$</span> · <spa
 
-## Screenshots (STALE or MISSING: run `python3 scripts/screenshot.py FY6-sovella --if-stale` first and use the list it writes to review/shots.md; paths relative to the folder that holds review/; contact sheets first, then the captures your judgement needs at full size)
+## Screenshots (current: they show the content hash above; paths relative to the folder that holds review/; contact sheets first, then the captures your judgement needs at full size)
 | file | shows | px | ≈ tokens |
 |---|---|---|---|
 | review/shots/contact-1.png | contact sheet: captures #1–#12 | 1260×1932 | 3245 |
@@ -1048,10 +1048,9 @@ Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvi
 | review/shots/contact-6.png | contact sheet: captures #61–#72 | 1260×1932 | 3245 |
 | review/shots/contact-7.png | contact sheet: captures #73–#84 | 1260×1932 | 3245 |
 | review/shots/contact-8.png | contact sheet: captures #85–#96 | 1260×1932 | 3245 |
-| review/shots/contact-9.png | contact sheet: captures #97–#108 | 1260×1932 | 3245 |
+| review/shots/contact-9.png | contact sheet: captures #97–#108 | 1260×1224 | 2056 |
 | review/shots/contact-10.png | contact sheet: captures #109–#120 | 1260×1224 | 2056 |
-| review/shots/contact-11.png | contact sheet: captures #121–#132 | 1260×1224 | 2056 |
-| review/shots/contact-12.png | contact sheet: captures #133–#135 | 1260×416 | 698 |
+| review/shots/contact-11.png | contact sheet: captures #121–#123 | 1260×416 | 698 |
 | review/shots/FY6-sovella-top-390.png | #1 first screen at 390 px | 390×844 | 438 |
 | review/shots/FY6-sovella-page-390-1.png | #2 the whole page at 390 px, every box open (teacher's notes included) (part 1/42) | 366×1408 | 687 |
 | review/shots/FY6-sovella-page-390-2.png | #3 the whole page at 390 px, every box open (teacher's notes included) (part 2/42) | 366×1408 | 687 |
@@ -1094,99 +1093,87 @@ Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvi
 | review/shots/FY6-sovella-page-390-39.png | #40 the whole page at 390 px, every box open (teacher's notes included) (part 39/42) | 366×1408 | 687 |
 | review/shots/FY6-sovella-page-390-40.png | #41 the whole page at 390 px, every box open (teacher's notes included) (part 40/42) | 366×1408 | 687 |
 | review/shots/FY6-sovella-page-390-41.png | #42 the whole page at 390 px, every box open (teacher's notes included) (part 41/42) | 366×1408 | 687 |
-| review/shots/FY6-sovella-page-390-42.png | #43 the whole page at 390 px, every box open (teacher's notes included) (part 42/42) | 366×378 | 184 |
+| review/shots/FY6-sovella-page-390-42.png | #43 the whole page at 390 px, every box open (teacher's notes included) (part 42/42) | 366×910 | 444 |
 | review/shots/FY6-sovella-fig-1-390.png | #44 figure 1 in “1Taskulampun paristo 15 pistettä”: Kytkentäkaavio, ei mittakaavassa: pariston mittaus. Vasemmalla on tutkittava paristo, plus | 332×182 | 80 |
-| review/shots/FY6-sovella-fig-2-390.png | #45 figure 2 in “1Taskulampun paristo 15 pistettä”:  | 28×28 | 1 |
-| review/shots/FY6-sovella-fig-3-390.png | #46 figure 3 in “Mallivastaus”: Kuvaaja: pariston napajännite U voltteina virran I funktiona ampeereina. Kuusi mustaa pist | 306×202 | 82 |
-| review/shots/FY6-sovella-fig-4-390.png | #47 figure 4 in “Mallivastaus”:  | 28×28 | 1 |
-| review/shots/FY6-sovella-fig-5-390.png | #48 figure 5 in “2Mökin pihavalot 15 pistettä”: Kytkentäkaavio, ei mittakaavassa: mökin valaistus. Vasemmalla on 12 voltin akku, plusnapa  | 332×182 | 80 |
-| review/shots/FY6-sovella-fig-6-390.png | #49 figure 6 in “2Mökin pihavalot 15 pistettä”:  | 28×28 | 1 |
-| review/shots/FY6-sovella-fig-7-390.png | #50 figure 7 in “3Ruiskumaalaus 16 pistettä”: Kaaviokuva, ei mittakaavassa: ruiskumaalauksen sähkökenttä. Ylhäällä on vaakasuora suutinl | 332×203 | 89 |
-| review/shots/FY6-sovella-fig-8-390.png | #51 figure 8 in “3Ruiskumaalaus 16 pistettä”:  | 28×28 | 1 |
-| review/shots/FY6-sovella-fig-9-390.png | #52 figure 9 in “Mallivastaus”:  | 69×59 | 5 |
-| review/shots/FY6-sovella-fig-10-390.png | #53 figure 10 in “Mallivastaus”:  | 128×60 | 10 |
-| review/shots/FY6-sovella-fig-11-390.png | #54 figure 11 in “Mallivastaus”:  | 96×29 | 3 |
-| review/shots/FY6-sovella-fig-13-390.png | #55 figure 13 in “Mallivastaus”:  | 169×39 | 8 |
-| review/shots/FY6-sovella-fig-14-390.png | #56 figure 14 in “Hyväksytään myös”:  | 57×30 | 2 |
-| review/shots/FY6-sovella-fig-15-390.png | #57 figure 15 in “Yleisiä virheitä”:  | 57×30 | 2 |
-| review/shots/FY6-sovella-fig-16-390.png | #58 figure 16 in “Pisteytys ja itsearviointi”:  | 69×59 | 5 |
-| review/shots/FY6-sovella-fig-17-390.png | #59 figure 17 in “Pisteytys ja itsearviointi”:  | 153×71 | 14 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-1.png | #60 inquiry stage Taskulampun paristo 15 pistettä (part 1/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-2.png | #61 inquiry stage Taskulampun paristo 15 pistettä (part 2/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-3.png | #62 inquiry stage Taskulampun paristo 15 pistettä (part 3/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-4.png | #63 inquiry stage Taskulampun paristo 15 pistettä (part 4/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-5.png | #64 inquiry stage Taskulampun paristo 15 pistettä (part 5/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-6.png | #65 inquiry stage Taskulampun paristo 15 pistettä (part 6/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-7.png | #66 inquiry stage Taskulampun paristo 15 pistettä (part 7/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-8.png | #67 inquiry stage Taskulampun paristo 15 pistettä (part 8/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-9.png | #68 inquiry stage Taskulampun paristo 15 pistettä (part 9/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-10.png | #69 inquiry stage Taskulampun paristo 15 pistettä (part 10/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-11.png | #70 inquiry stage Taskulampun paristo 15 pistettä (part 11/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-12.png | #71 inquiry stage Taskulampun paristo 15 pistettä (part 12/12) | 366×128 | 62 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-1.png | #72 inquiry stage Mökin pihavalot 15 pistettä (part 1/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-2.png | #73 inquiry stage Mökin pihavalot 15 pistettä (part 2/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-3.png | #74 inquiry stage Mökin pihavalot 15 pistettä (part 3/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-4.png | #75 inquiry stage Mökin pihavalot 15 pistettä (part 4/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-5.png | #76 inquiry stage Mökin pihavalot 15 pistettä (part 5/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-6.png | #77 inquiry stage Mökin pihavalot 15 pistettä (part 6/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-7.png | #78 inquiry stage Mökin pihavalot 15 pistettä (part 7/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-8.png | #79 inquiry stage Mökin pihavalot 15 pistettä (part 8/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-9.png | #80 inquiry stage Mökin pihavalot 15 pistettä (part 9/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-10.png | #81 inquiry stage Mökin pihavalot 15 pistettä (part 10/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-11.png | #82 inquiry stage Mökin pihavalot 15 pistettä (part 11/11) | 366×1084 | 528 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-1.png | #83 inquiry stage Ruiskumaalaus 16 pistettä (part 1/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-2.png | #84 inquiry stage Ruiskumaalaus 16 pistettä (part 2/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-3.png | #85 inquiry stage Ruiskumaalaus 16 pistettä (part 3/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-4.png | #86 inquiry stage Ruiskumaalaus 16 pistettä (part 4/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-5.png | #87 inquiry stage Ruiskumaalaus 16 pistettä (part 5/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-6.png | #88 inquiry stage Ruiskumaalaus 16 pistettä (part 6/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-7.png | #89 inquiry stage Ruiskumaalaus 16 pistettä (part 7/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-8.png | #90 inquiry stage Ruiskumaalaus 16 pistettä (part 8/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-9.png | #91 inquiry stage Ruiskumaalaus 16 pistettä (part 9/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-10.png | #92 inquiry stage Ruiskumaalaus 16 pistettä (part 10/10) | 366×1147 | 559 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-1.png | #93 inquiry stage Kameran salama 14 pistettä (part 1/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-2.png | #94 inquiry stage Kameran salama 14 pistettä (part 2/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-3.png | #95 inquiry stage Kameran salama 14 pistettä (part 3/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-4.png | #96 inquiry stage Kameran salama 14 pistettä (part 4/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-5.png | #97 inquiry stage Kameran salama 14 pistettä (part 5/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-6.png | #98 inquiry stage Kameran salama 14 pistettä (part 6/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-7.png | #99 inquiry stage Kameran salama 14 pistettä (part 7/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-8.png | #100 inquiry stage Kameran salama 14 pistettä (part 8/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-9.png | #101 inquiry stage Kameran salama 14 pistettä (part 9/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-10.png | #102 inquiry stage Kameran salama 14 pistettä (part 10/10) | 366×216 | 105 |
-| review/shots/FY6-sovella-top-1280.png | #103 first screen at 1280 px | 1280×900 | 1536 |
-| review/shots/FY6-sovella-page-1280-1.png | #104 the whole page at 1280 px, every box open (teacher's notes included) (part 1/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-2.png | #105 the whole page at 1280 px, every box open (teacher's notes included) (part 2/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-3.png | #106 the whole page at 1280 px, every box open (teacher's notes included) (part 3/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-4.png | #107 the whole page at 1280 px, every box open (teacher's notes included) (part 4/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-5.png | #108 the whole page at 1280 px, every box open (teacher's notes included) (part 5/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-6.png | #109 the whole page at 1280 px, every box open (teacher's notes included) (part 6/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-7.png | #110 the whole page at 1280 px, every box open (teacher's notes included) (part 7/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-8.png | #111 the whole page at 1280 px, every box open (teacher's notes included) (part 8/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-9.png | #112 the whole page at 1280 px, every box open (teacher's notes included) (part 9/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-10.png | #113 the whole page at 1280 px, every box open (teacher's notes included) (part 10/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-11.png | #114 the whole page at 1280 px, every box open (teacher's notes included) (part 11/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-12.png | #115 the whole page at 1280 px, every box open (teacher's notes included) (part 12/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-13.png | #116 the whole page at 1280 px, every box open (teacher's notes included) (part 13/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-14.png | #117 the whole page at 1280 px, every box open (teacher's notes included) (part 14/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-15.png | #118 the whole page at 1280 px, every box open (teacher's notes included) (part 15/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-16.png | #119 the whole page at 1280 px, every box open (teacher's notes included) (part 16/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-17.png | #120 the whole page at 1280 px, every box open (teacher's notes included) (part 17/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-18.png | #121 the whole page at 1280 px, every box open (teacher's notes included) (part 18/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-19.png | #122 the whole page at 1280 px, every box open (teacher's notes included) (part 19/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-20.png | #123 the whole page at 1280 px, every box open (teacher's notes included) (part 20/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-21.png | #124 the whole page at 1280 px, every box open (teacher's notes included) (part 21/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-22.png | #125 the whole page at 1280 px, every box open (teacher's notes included) (part 22/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-23.png | #126 the whole page at 1280 px, every box open (teacher's notes included) (part 23/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-24.png | #127 the whole page at 1280 px, every box open (teacher's notes included) (part 24/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-25.png | #128 the whole page at 1280 px, every box open (teacher's notes included) (part 25/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-26.png | #129 the whole page at 1280 px, every box open (teacher's notes included) (part 26/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-27.png | #130 the whole page at 1280 px, every box open (teacher's notes included) (part 27/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-28.png | #131 the whole page at 1280 px, every box open (teacher's notes included) (part 28/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-29.png | #132 the whole page at 1280 px, every box open (teacher's notes included) (part 29/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-30.png | #133 the whole page at 1280 px, every box open (teacher's notes included) (part 30/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-31.png | #134 the whole page at 1280 px, every box open (teacher's notes included) (part 31/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-32.png | #135 the whole page at 1280 px, every box open (teacher's notes included) (part 32/32) | 1160×354 | 547 |
+| review/shots/FY6-sovella-fig-2-390.png | #45 figure 2 in “Mallivastaus”: Kuvaaja: pariston napajännite U voltteina virran I funktiona ampeereina. Kuusi mustaa pist | 306×202 | 82 |
+| review/shots/FY6-sovella-fig-3-390.png | #46 figure 3 in “2Mökin pihavalot 15 pistettä”: Kytkentäkaavio, ei mittakaavassa: mökin valaistus. Vasemmalla on 12 voltin akku, plusnapa  | 332×182 | 80 |
+| review/shots/FY6-sovella-fig-4-390.png | #47 figure 4 in “3Ruiskumaalaus 16 pistettä”: Kaaviokuva, ei mittakaavassa: ruiskumaalauksen sähkökenttä. Ylhäällä on vaakasuora suutinl | 332×203 | 89 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-1.png | #48 inquiry stage Taskulampun paristo 15 pistettä (part 1/12) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-2.png | #49 inquiry stage Taskulampun paristo 15 pistettä (part 2/12) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-3.png | #50 inquiry stage Taskulampun paristo 15 pistettä (part 3/12) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-4.png | #51 inquiry stage Taskulampun paristo 15 pistettä (part 4/12) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-5.png | #52 inquiry stage Taskulampun paristo 15 pistettä (part 5/12) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-6.png | #53 inquiry stage Taskulampun paristo 15 pistettä (part 6/12) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-7.png | #54 inquiry stage Taskulampun paristo 15 pistettä (part 7/12) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-8.png | #55 inquiry stage Taskulampun paristo 15 pistettä (part 8/12) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-9.png | #56 inquiry stage Taskulampun paristo 15 pistettä (part 9/12) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-10.png | #57 inquiry stage Taskulampun paristo 15 pistettä (part 10/12) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-11.png | #58 inquiry stage Taskulampun paristo 15 pistettä (part 11/12) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-12.png | #59 inquiry stage Taskulampun paristo 15 pistettä (part 12/12) | 366×579 | 282 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-1.png | #60 inquiry stage Mökin pihavalot 15 pistettä (part 1/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-2.png | #61 inquiry stage Mökin pihavalot 15 pistettä (part 2/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-3.png | #62 inquiry stage Mökin pihavalot 15 pistettä (part 3/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-4.png | #63 inquiry stage Mökin pihavalot 15 pistettä (part 4/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-5.png | #64 inquiry stage Mökin pihavalot 15 pistettä (part 5/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-6.png | #65 inquiry stage Mökin pihavalot 15 pistettä (part 6/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-7.png | #66 inquiry stage Mökin pihavalot 15 pistettä (part 7/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-8.png | #67 inquiry stage Mökin pihavalot 15 pistettä (part 8/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-9.png | #68 inquiry stage Mökin pihavalot 15 pistettä (part 9/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-10.png | #69 inquiry stage Mökin pihavalot 15 pistettä (part 10/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-11.png | #70 inquiry stage Mökin pihavalot 15 pistettä (part 11/11) | 366×1084 | 528 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-1.png | #71 inquiry stage Ruiskumaalaus 16 pistettä (part 1/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-2.png | #72 inquiry stage Ruiskumaalaus 16 pistettä (part 2/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-3.png | #73 inquiry stage Ruiskumaalaus 16 pistettä (part 3/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-4.png | #74 inquiry stage Ruiskumaalaus 16 pistettä (part 4/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-5.png | #75 inquiry stage Ruiskumaalaus 16 pistettä (part 5/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-6.png | #76 inquiry stage Ruiskumaalaus 16 pistettä (part 6/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-7.png | #77 inquiry stage Ruiskumaalaus 16 pistettä (part 7/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-8.png | #78 inquiry stage Ruiskumaalaus 16 pistettä (part 8/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-9.png | #79 inquiry stage Ruiskumaalaus 16 pistettä (part 9/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-10.png | #80 inquiry stage Ruiskumaalaus 16 pistettä (part 10/10) | 366×1201 | 586 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-1.png | #81 inquiry stage Kameran salama 14 pistettä (part 1/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-2.png | #82 inquiry stage Kameran salama 14 pistettä (part 2/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-3.png | #83 inquiry stage Kameran salama 14 pistettä (part 3/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-4.png | #84 inquiry stage Kameran salama 14 pistettä (part 4/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-5.png | #85 inquiry stage Kameran salama 14 pistettä (part 5/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-6.png | #86 inquiry stage Kameran salama 14 pistettä (part 6/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-7.png | #87 inquiry stage Kameran salama 14 pistettä (part 7/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-8.png | #88 inquiry stage Kameran salama 14 pistettä (part 8/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-9.png | #89 inquiry stage Kameran salama 14 pistettä (part 9/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-10.png | #90 inquiry stage Kameran salama 14 pistettä (part 10/10) | 366×244 | 119 |
+| review/shots/FY6-sovella-top-1280.png | #91 first screen at 1280 px | 1280×900 | 1536 |
+| review/shots/FY6-sovella-page-1280-1.png | #92 the whole page at 1280 px, every box open (teacher's notes included) (part 1/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-2.png | #93 the whole page at 1280 px, every box open (teacher's notes included) (part 2/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-3.png | #94 the whole page at 1280 px, every box open (teacher's notes included) (part 3/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-4.png | #95 the whole page at 1280 px, every box open (teacher's notes included) (part 4/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-5.png | #96 the whole page at 1280 px, every box open (teacher's notes included) (part 5/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-6.png | #97 the whole page at 1280 px, every box open (teacher's notes included) (part 6/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-7.png | #98 the whole page at 1280 px, every box open (teacher's notes included) (part 7/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-8.png | #99 the whole page at 1280 px, every box open (teacher's notes included) (part 8/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-9.png | #100 the whole page at 1280 px, every box open (teacher's notes included) (part 9/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-10.png | #101 the whole page at 1280 px, every box open (teacher's notes included) (part 10/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-11.png | #102 the whole page at 1280 px, every box open (teacher's notes included) (part 11/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-12.png | #103 the whole page at 1280 px, every box open (teacher's notes included) (part 12/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-13.png | #104 the whole page at 1280 px, every box open (teacher's notes included) (part 13/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-14.png | #105 the whole page at 1280 px, every box open (teacher's notes included) (part 14/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-15.png | #106 the whole page at 1280 px, every box open (teacher's notes included) (part 15/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-16.png | #107 the whole page at 1280 px, every box open (teacher's notes included) (part 16/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-17.png | #108 the whole page at 1280 px, every box open (teacher's notes included) (part 17/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-18.png | #109 the whole page at 1280 px, every box open (teacher's notes included) (part 18/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-19.png | #110 the whole page at 1280 px, every box open (teacher's notes included) (part 19/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-20.png | #111 the whole page at 1280 px, every box open (teacher's notes included) (part 20/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-21.png | #112 the whole page at 1280 px, every box open (teacher's notes included) (part 21/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-22.png | #113 the whole page at 1280 px, every box open (teacher's notes included) (part 22/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-23.png | #114 the whole page at 1280 px, every box open (teacher's notes included) (part 23/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-24.png | #115 the whole page at 1280 px, every box open (teacher's notes included) (part 24/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-25.png | #116 the whole page at 1280 px, every box open (teacher's notes included) (part 25/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-26.png | #117 the whole page at 1280 px, every box open (teacher's notes included) (part 26/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-27.png | #118 the whole page at 1280 px, every box open (teacher's notes included) (part 27/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-28.png | #119 the whole page at 1280 px, every box open (teacher's notes included) (part 28/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-29.png | #120 the whole page at 1280 px, every box open (teacher's notes included) (part 29/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-30.png | #121 the whole page at 1280 px, every box open (teacher's notes included) (part 30/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-31.png | #122 the whole page at 1280 px, every box open (teacher's notes included) (part 31/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-32.png | #123 the whole page at 1280 px, every box open (teacher's notes included) (part 32/32) | 1160×587 | 907 |
 
 ## Report: write `content/fi/FY6/sovella/review/visual.md` with the Write tool (format and severities: .claude/agents/visual-editorial-reviewer.md), under 400 words; a report only in your reply is not recorded: the gate reads the file
 Line 1 `VERDICT: PASS` or `VERDICT: FAIL`; line 2 `CONTENT-HASH: <output of python3 scripts/practice.py hash FY6>` run at the start and again at the end. Then `## Blocking` (FAIL if and only if non-empty; `[Critical|Major] file/figure — problem — why it matters — fix`), `## Polish` (at most five `[Minor]`), `## Checked` (the captures you opened; at most ten lines), `## Scores` (illustrations · typography · Finnish · accessibility, 1–5). A PASS needs the captures: if you could not look, FAIL with `visual verification incomplete`. Never edit any file but your report.

@@ -51,7 +51,7 @@ Positiiviseen ioniin vaikuttava sähköinen voima on sähkökentän suuntainen, 
 **Annettu:** kiihdytysjännite $U = 30{,}0\,\text{kV}$, ionin varaus $e = 1{,}602 \cdot 10^{-19}\,\text{C}$ ja massa $m_{11} = 1{,}8281 \cdot 10^{-26}\,\text{kg}$; ionin liike-energia ennen kiihdytystä on mitättömän pieni
 **Kysytty:** ionin nopeus $v$ kiihdytyksen jälkeen
 **Periaate:** Kiihdytysvälin sähkökenttä tekee ioniin työn $W = eU$. Koska ionin liike-energia ennen kiihdytystä on mitättömän pieni eikä muita voimia ole, työ muuttuu kokonaan ionin liike-energiaksi (energiaperiaate).
-**Kaava:** $eU = \tfrac{1}{2} m_{11} v^2$, josta $v = \sqrt{\dfrac{2eU}{m_{11}}}$
+**Kaava:** $$\begin{aligned} W &= eU \\ W &= \Delta E_\text{k} = \tfrac{1}{2} m_{11} v^2 \\ eU &= \tfrac{1}{2} m_{11} v^2 \\ v^2 &= \dfrac{2eU}{m_{11}} \\ v &= \sqrt{\dfrac{2eU}{m_{11}}} \end{aligned}$$
 **Muunnokset:** $U = 30{,}0\,\text{kV} = 30{,}0 \cdot 10^{3}\,\text{V}$
 **Sijoitus:** $v = \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 30{,}0 \cdot 10^{3}\,\text{V}}{1{,}8281 \cdot 10^{-26}\,\text{kg}}} = \sqrt{5{,}258 \cdot 10^{11}\,\tfrac{\text{m}^2}{\text{s}^2}} = 7{,}251 \cdot 10^{5}\,\text{m/s}$
 **Vastaus:** $v \approx 7{,}25 \cdot 10^{5}\,\text{m/s}$, kolme merkitsevää numeroa kuten kiihdytysjännitteessä.
@@ -61,7 +61,7 @@ Positiiviseen ioniin vaikuttava sähköinen voima on sähkökentän suuntainen, 
 **Annettu:** $v = 7{,}251 \cdot 10^{5}\,\text{m/s}$ (b-kohta), $B_\text{s} = 0{,}200\,\text{T}$ ja levyjen etäisyys $d = 2{,}00\,\text{cm}$
 **Kysytty:** levyjen välinen jännite $U_\text{s}$
 **Periaate:** Ioni kulkee suoraan, kun sähköinen voima $eE$ ja magneettinen voima $evB_\text{s}$ ovat yhtä suuret (a-kohta). Levyjen välinen sähkökenttä on homogeeninen, joten sen voimakkuus on levyjen välinen jännite jaettuna levyjen etäisyydellä.
-**Kaava:** $eE = evB_\text{s}$, joten $E = vB_\text{s}$. Kun $E = U_\text{s} : d$, saadaan $U_\text{s} = Ed = vB_\text{s}d$.
+**Kaava:** $$\begin{aligned} F_\text{s} &= F_\text{m} \\ eE &= evB_\text{s} \\ E &= vB_\text{s} \\ U_\text{s} &= Ed = vB_\text{s}d \end{aligned}$$
 **Muunnokset:** $d = 2{,}00\,\text{cm} = 0{,}0200\,\text{m}$
 **Sijoitus:** $E = 7{,}251 \cdot 10^{5}\,\text{m/s} \cdot 0{,}200\,\text{T} = 1{,}450 \cdot 10^{5}\,\text{V/m}$ ja $U_\text{s} = 1{,}450 \cdot 10^{5}\,\text{V/m} \cdot 0{,}0200\,\text{m} = 2900\,\text{V}$
 **Vastaus:** $U_\text{s} \approx 2{,}90\,\text{kV}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
@@ -73,7 +73,7 @@ Positiiviseen ioniin vaikuttava sähköinen voima on sähkökentän suuntainen, 
 **Periaate:** Magneettinen voima on kohtisuorassa nopeutta vastaan, joten se ei muuta vauhtia vaan kääntää liikkeen suuntaa. Homogeenisessa kentässä ioni kulkee tasaista ympyräliikettä, ja magneettinen voima on sen keskeisvoima.
 
 Valitsimen jälkeen kaikilla ioneilla on sama nopeus, joten radan säde on suoraan verrannollinen ionin massaan. Puoliympyrän jälkeen ioni osuu seinään halkaisijan $2r$ päähän tulokohdasta, joten kahden ionilajin osumakohtien etäisyys on niiden halkaisijoiden erotus.
-**Kaava:** $evB = \dfrac{m v^2}{r}$, josta $B = \dfrac{m_{11} v}{e r}$. Samalla nopeudella ja kentällä $r_{10} = \dfrac{m_{10} v}{eB} = \dfrac{m_{10}}{m_{11}}\,r$, ja osumakohtien etäisyys on $\Delta x = 2r - 2r_{10} = 2(r - r_{10})$.
+**Kaava:** $$\begin{aligned} F_\text{m} &= m a_\text{r} \\ evB &= \dfrac{m_{11} v^2}{r} \\ B &= \dfrac{m_{11} v}{e r} \\ r_{10} &= \dfrac{m_{10} v}{eB} = \dfrac{m_{10}}{m_{11}}\,r \\ \Delta x &= 2r - 2r_{10} = 2(r - r_{10}) \end{aligned}$$
 **Muunnokset:** $r = 40{,}0\,\text{cm} = 0{,}400\,\text{m}$
 **Sijoitus:** $mv = 1{,}8281 \cdot 10^{-26}\,\text{kg} \cdot 7{,}251 \cdot 10^{5}\,\text{m/s} = 1{,}3256 \cdot 10^{-20}\,\text{kg} \cdot \text{m/s}$, joten $B = \dfrac{1{,}3256 \cdot 10^{-20}\,\text{kg} \cdot \text{m/s}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}400\,\text{m}} = 0{,}2069\,\text{T}$. Boori-10-ionien säde on $r_{10} = \dfrac{1{,}6627}{1{,}8281} \cdot 0{,}400\,\text{m} = 0{,}3638\,\text{m}$, joten $\Delta x = 2 \cdot (0{,}400\,\text{m} - 0{,}3638\,\text{m}) = 0{,}0724\,\text{m}$
 **Vastaus:** $B \approx 0{,}207\,\text{T}$ ja $\Delta x \approx 7{,}2\,\text{cm}$: boori-10-ionit osuisivat seinään noin $7\,\text{cm}$ lähemmäs ionien tulokohtaa kuin rako. Kentässä kolme merkitsevää numeroa kuten lähtötiedoissa; etäisyys on kahden lähes yhtä suuren luvun erotus, joten siihen jää kaksi.
@@ -120,7 +120,7 @@ Silloin sen liike-energia on $\tfrac{1}{2} m_{10} v^2$, kun boori-11-ionin on $\
 **Annettu:** $f = 33{,}3\,\text{Hz}$ (a-kohta), $14$ jännitteen jaksoa pyörän kierrosta kohti ja pyörän halkaisija $D = 0{,}70\,\text{m}$
 **Kysytty:** pyöräilijän vauhti $v$
 **Periaate:** Magneettirenkaassa on $14$ pohjois- ja etelänavan paria. Kun yksi napapari ohittaa käämin, vuo käämin läpi tekee yhden kokonaisen vaihtelun, joten jännitteessä on $14$ jaksoa yhtä pyörän kierrosta kohti. Pyörän pyörimistaajuus on siksi $14$ kertaa pienempi kuin jännitteen taajuus. Kun pyörä vierii luistamatta, se etenee yhdellä kierroksella kehänsä pituuden $\pi D$.
-**Kaava:** $f_\text{p} = \dfrac{f}{14}$ ja $v = \pi D f_\text{p} = \pi D \cdot \dfrac{f}{14}$
+**Kaava:** $$\begin{aligned} f_\text{p} &= \dfrac{f}{14} \\ v &= \dfrac{s}{\Delta t} = \dfrac{\pi D}{T_\text{p}} = \pi D f_\text{p} \\ v &= \pi D \cdot \dfrac{f}{14} \end{aligned}$$
 **Muunnokset:** Vastaus muutetaan lopuksi: $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
 **Sijoitus:** $f_\text{p} = \dfrac{33{,}3\,\text{Hz}}{14} = 2{,}381\,\text{Hz}$ ja $v = \pi \cdot 0{,}70\,\text{m} \cdot 2{,}381\,\tfrac{1}{\text{s}} = 5{,}236\,\text{m/s} = 5{,}236 \cdot 3{,}6\,\text{km/h} = 18{,}8\,\text{km/h}$
 **Vastaus:** $v \approx 5{,}2\,\text{m/s} \approx 19\,\text{km/h}$, kaksi merkitsevää numeroa kuten halkaisijassa ja jaksonajassa.
@@ -130,7 +130,7 @@ Silloin sen liike-energia on $\tfrac{1}{2} m_{10} v^2$, kun boori-11-ionin on $\
 **Annettu:** tyhjäkäynnin tehollinen jännite $U = 9{,}90\,\text{V}$ vauhdilla $v = 5{,}236\,\text{m/s}$ (a- ja b-kohta), valon nimellisjännite $U_\text{valo} = 6{,}0\,\text{V}$
 **Kysytty:** pienin vauhti $v_\text{min}$, jolla tehollinen jännite on vähintään $6{,}0\,\text{V}$
 **Periaate:** Generaattorin jännitteen huippuarvo on $e_0 = NBA \cdot 2\pi f$. Käämin kierrokset, magneettien kenttä ja pinta-ala pysyvät samoina, joten huippuarvo ja sen mukana tehollinen arvo ovat suoraan verrannollisia taajuuteen. Taajuus on puolestaan suoraan verrannollinen pyörän pyörimistaajuuteen ja vauhtiin. Siksi tehollinen jännite on suoraan verrannollinen vauhtiin: kun ajetaan hitaammin, magneetit ohittavat käämin hitaammin ja vuo muuttuu hitaammin.
-**Kaava:** $\dfrac{v_\text{min}}{v} = \dfrac{U_\text{valo}}{U}$, josta $v_\text{min} = v \cdot \dfrac{U_\text{valo}}{U}$
+**Kaava:** $$\begin{aligned} U &= \dfrac{e_0}{\sqrt{2}} = \dfrac{NBA \cdot 2\pi f}{\sqrt{2}} \\ f &= 14 f_\text{p} = \dfrac{14 v}{\pi D} \\ U &= \kappa v, \quad \kappa = \dfrac{28\,NBA}{\sqrt{2}\,D} \\ \dfrac{U_\text{valo}}{U} &= \dfrac{\kappa v_\text{min}}{\kappa v} = \dfrac{v_\text{min}}{v} \\ v_\text{min} &= v \cdot \dfrac{U_\text{valo}}{U} \end{aligned}$$
 **Muunnokset:** Vastaus muutetaan lopuksi kilometreiksi tunnissa: $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
 **Sijoitus:** $v_\text{min} = 5{,}236\,\text{m/s} \cdot \dfrac{6{,}0\,\text{V}}{9{,}90\,\text{V}} = 3{,}17\,\text{m/s} = 3{,}17 \cdot 3{,}6\,\text{km/h} = 11{,}4\,\text{km/h}$
 **Vastaus:** $v_\text{min} \approx 3{,}2\,\text{m/s} \approx 11\,\text{km/h}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -149,7 +149,7 @@ Silloin sen liike-energia on $\tfrac{1}{2} m_{10} v^2$, kun boori-11-ionin on $\
 **Annettu:** valon teho $P_\text{valo} = 3{,}0\,\text{W}$, dynamon hyötysuhde $\eta = 60\,\% = 0{,}60$, vauhti $v = 5{,}236\,\text{m/s}$ (b-kohta) sekä ilmanvastus ja vierimisvastus yhteensä noin $10\,\text{N}$
 **Kysytty:** dynamon jarruttava lisävoima $F$ ja sen merkitys
 **Periaate:** Dynamo muuttaa pyöräilijän työtä sähköenergiaksi. Valoon menee hyötysuhteen verran dynamon ottamasta tehosta, joten dynamon ottama teho on $P_\text{valo} : \eta$. Kun jarruttava voima vaikuttaa vauhdilla $v$ liikkuvaan pyörään, sen tekemän työn teho on $P = Fv$, kuten pyörrevirtajarrussa.
-**Kaava:** $P_\text{otto} = \dfrac{P_\text{valo}}{\eta}$ ja $P_\text{otto} = Fv$, joten $F = \dfrac{P_\text{valo}}{\eta v}$
+**Kaava:** $$\begin{aligned} \eta &= \dfrac{P_\text{valo}}{P_\text{otto}} \\ P_\text{otto} &= \dfrac{P_\text{valo}}{\eta} \\ P_\text{otto} &= Fv \\ Fv &= \dfrac{P_\text{valo}}{\eta} \\ F &= \dfrac{P_\text{valo}}{\eta v} \end{aligned}$$
 **Muunnokset:** Ei tarvita: teho on watteina ja vauhti metreinä sekunnissa.
 **Sijoitus:** $P_\text{otto} = \dfrac{3{,}0\,\text{W}}{0{,}60} = 5{,}0\,\text{W}$ ja $F = \dfrac{5{,}0\,\text{W}}{5{,}236\,\text{m/s}} = 0{,}955\,\text{N}$
 **Vastaus:** $F \approx 0{,}95\,\text{N}$, kaksi merkitsevää numeroa kuten valon tehossa ja hyötysuhteessa.
@@ -174,7 +174,7 @@ Silloin sen liike-energia on $\tfrac{1}{2} m_{10} v^2$, kun boori-11-ionin on $\
 **Annettu:** sähköaseman johtoon syöttämä teho $P = 6{,}0\,\text{MW}$, siirtojännite $U = 20\,\text{kV}$, johdon pituus $25\,\text{km}$, kaksi johdinta, poikkipinta-ala $A = 150\,\text{mm}^2$ ja resistiivisyys $\rho = 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m}$
 **Kysytty:** johdon häviöteho $P_\text{h}$ ja sen osuus johtoon syötetystä tehosta
 **Periaate:** Virta kulkee kaivokselle toista johdinta pitkin ja palaa toista pitkin, joten yksinkertaistetussa kaksijohtimisessa mallissa virtapiirin johtimien pituus on $2 \cdot 25\,\text{km}$. Resistanssi saadaan resistiivisyydestä, pituudesta ja poikkipinta-alasta. Siirrettävä teho on jännitteen ja virran tulo, joten virta on teho jaettuna jännitteellä. Johdon resistanssissa sisäenergiaksi muuttuva teho on resistanssin ja virran neliön tulo.
-**Kaava:** $R = \rho \dfrac{l}{A}$, $I = \dfrac{P}{U}$ ja $P_\text{h} = R I^2$
+**Kaava:** $$\begin{aligned} R &= \rho \dfrac{l}{A} \\ P &= UI \\ I &= \dfrac{P}{U} \\ P_\text{h} &= R I^2 = \rho \dfrac{l}{A} \left(\dfrac{P}{U}\right)^2 \end{aligned}$$
 **Muunnokset:** $l = 2 \cdot 25\,\text{km} = 5{,}0 \cdot 10^{4}\,\text{m}$, $A = 150\,\text{mm}^2 = 150 \cdot 10^{-6}\,\text{m}^2$, $P = 6{,}0 \cdot 10^{6}\,\text{W}$ ja $U = 20 \cdot 10^{3}\,\text{V}$
 **Sijoitus:** $$
 \begin{aligned}
@@ -191,7 +191,7 @@ $\approx 5{,}2\,\text{MW}$.
 **Annettu:** a-kohdan tiedot ja resistanssi $R = 9{,}40\,\Omega$, siirtojännite $U = 110\,\text{kV}$
 **Kysytty:** häviöteho $P_\text{h}$
 **Periaate:** Sama teho siirretään $110 : 20 = 5{,}5$-kertaisella jännitteellä, joten virta on $5{,}5$ kertaa pienempi. Häviöteho on verrannollinen virran neliöön, joten se pienenee $5{,}5^2 \approx 30$-kertaisesti. Johtimet ovat samat, joten resistanssi on sama kuin a-kohdassa.
-**Kaava:** $P_\text{h} = R I^2 = R\left(\dfrac{P}{U}\right)^2$
+**Kaava:** $$\begin{aligned} P &= UI \\ I &= \dfrac{P}{U} \\ P_\text{h} &= R I^2 = R\left(\dfrac{P}{U}\right)^2 \end{aligned}$$
 **Muunnokset:** $U = 110\,\text{kV} = 110 \cdot 10^{3}\,\text{V}$
 **Sijoitus:** $I = \dfrac{6{,}0 \cdot 10^{6}\,\text{W}}{110 \cdot 10^{3}\,\text{V}} = 54{,}5\,\text{A}$ ja $P_\text{h} = 9{,}40\,\Omega \cdot (54{,}5\,\text{A})^2 = 27\,970\,\text{W}$. Osuus on $28{,}0\,\text{kW} : 6000\,\text{kW} \approx 0{,}47\,\%$.
 **Vastaus:** $P_\text{h} \approx 28\,\text{kW}$ eli noin $0{,}5\,\%$, kaksi merkitsevää numeroa kuten tehossa.
@@ -201,7 +201,7 @@ $\approx 5{,}2\,\text{MW}$.
 **Annettu:** $20\,\text{kV}$:n johdossa virta $I = 300\,\text{A}$ ja resistanssi $R = 9{,}40\,\Omega$ (a-kohta); sallittu poikkeama $10\,\%$
 **Kysytty:** kaivokselle jäävä jännite $U_\text{k}$ ja kelpaako se
 **Periaate:** Sähköasema pitää johdon alkupäässä jännitteen $20\,\text{kV}$. Johtimien resistanssin yli on jännitehäviö, joka on resistanssin ja virran tulo. Kaivokselle jää siirtojännitteen ja jännitehäviön erotus.
-**Kaava:** $U_\text{k} = U - RI$
+**Kaava:** $$\begin{aligned} U &= U_\text{R} + U_\text{k} \\ U_\text{R} &= RI \\ U_\text{k} &= U - U_\text{R} = U - RI \end{aligned}$$
 **Muunnokset:** $U = 20\,\text{kV} = 20\,000\,\text{V}$
 **Sijoitus:** $RI = 9{,}40\,\Omega \cdot 300\,\text{A} = 2820\,\text{V}$ ja $U_\text{k} = 20\,000\,\text{V} - 2820\,\text{V} = 17\,180\,\text{V}$. Poikkeama on $2820\,\text{V} : 20\,000\,\text{V} \approx 14\,\%$.
 **Vastaus:** $U_\text{k} \approx 17{,}2\,\text{kV}$, mikä on noin $14\,\%$ nimellisarvoa pienempi. Se ei kelpaa, koska poikkeama on yli $10\,\%$. Kolme merkitsevää numeroa, jotta poikkeaman voi verrata rajaan.
@@ -226,7 +226,7 @@ $\approx 5{,}2\,\text{MW}$.
 Kenttä on kohtisuorassa toista johdinta vastaan, joten siihen kohdistuu voima $F = IlB$. Oikean käden säännön mukaan vastakkaissuuntaiset virrat hylkivät toisiaan. Vaihtovirralla virrat vaihtavat suuntaa yhtä aikaa, joten ne ovat aina vastakkaissuuntaiset ja johtimet hylkivät toisiaan koko ajan.
 
 Johtimen metrin paino saadaan sen massasta, joka on tiheyden ja tilavuuden tulo.
-**Kaava:** $B = \dfrac{\mu_0 I}{2\pi r}$ ja $F = IlB$, joten $\dfrac{F}{l} = \dfrac{\mu_0 I^2}{2\pi r}$. Painoa varten $\dfrac{G}{l} = \rho_\text{Al} A g$.
+**Kaava:** $$\begin{aligned} B &= \dfrac{\mu_0 I}{2\pi r} \\ F &= IlB \\ \dfrac{F}{l} &= IB = \dfrac{\mu_0 I^2}{2\pi r} \\ m &= \rho_\text{Al} V = \rho_\text{Al} A l \\ G &= mg \\ \dfrac{G}{l} &= \rho_\text{Al} A g \end{aligned}$$
 **Muunnokset:** $I_\text{k} = 8{,}0\,\text{kA} = 8{,}0 \cdot 10^{3}\,\text{A}$ ja $A = 150\,\text{mm}^2 = 150 \cdot 10^{-6}\,\text{m}^2$
 **Sijoitus:** Normaalikäytössä $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 300\,\text{A}}{2\pi \cdot 1{,}5\,\text{m}} = 4{,}0 \cdot 10^{-5}\,\text{T}$ ja $\dfrac{F}{l} = 300\,\text{A} \cdot 4{,}0 \cdot 10^{-5}\,\text{T} = 0{,}012\,\text{N/m}$. Oikosulussa $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 8{,}0 \cdot 10^{3}\,\text{A}}{2\pi \cdot 1{,}5\,\text{m}} = 1{,}067 \cdot 10^{-3}\,\text{T}$ ja $\dfrac{F}{l} = 8{,}0 \cdot 10^{3}\,\text{A} \cdot 1{,}067 \cdot 10^{-3}\,\text{T} = 8{,}53\,\text{N/m}$. Johtimen paino metriä kohti on $$
 \begin{aligned}
@@ -307,7 +307,7 @@ Päätypinta on kohtisuorassa sivupintaa vastaan, joten päätypinnan normaali o
   <foreignObject x="366" y="139.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\alpha_\text{r}$</div></foreignObject>
 </svg>
 
-**Kaava:** $n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ$, joten $\sin\alpha_\text{r} = \dfrac{n_2}{n_1}$. Päätypinnalla $1{,}00 \cdot \sin\theta = n_1 \sin\beta$, missä $\beta = 90^\circ - \alpha_\text{r}$, joten $\sin\theta = n_1 \sin(90^\circ - \alpha_\text{r})$.
+**Kaava:** $$\begin{aligned} n_1 \sin\alpha_\text{r} &= n_2 \sin 90^\circ \\ \sin\alpha_\text{r} &= \dfrac{n_2}{n_1} \\ 1{,}00 \cdot \sin\theta &= n_1 \sin\beta \\ \beta &= 90^\circ - \alpha_\text{r} \\ \sin\theta &= n_1 \sin(90^\circ - \alpha_\text{r}) \\ \theta &= \arcsin\bigl(n_1 \sin(90^\circ - \alpha_\text{r})\bigr) \end{aligned}$$
 **Muunnokset:** Ei tarvita: taitekertoimet ovat yksiköttömiä, ja kulmat ovat asteina.
 **Sijoitus:** $\sin\alpha_\text{r} = \dfrac{1{,}42}{1{,}44} = 0{,}9861$, joten $\alpha_\text{r} = 80{,}44^\circ$. Silloin $\beta = 90^\circ - 80{,}44^\circ = 9{,}56^\circ$ ja $\sin\theta = 1{,}44 \cdot \sin 9{,}56^\circ = 1{,}44 \cdot 0{,}1661 = 0{,}2392$, joten $\theta = 13{,}84^\circ$.
 **Vastaus:** $\alpha_\text{r} \approx 80{,}4^\circ$ ja $\theta \approx 13{,}8^\circ$, kolme merkitsevää numeroa kuten taitekertoimissa.
@@ -332,7 +332,7 @@ Päätypinta on kohtisuorassa sivupintaa vastaan, joten päätypinnan normaali o
 Kun valo tulee kohtisuoraan, alapinnasta heijastunut aalto kulkee lisämatkan $2d$ kalvossa, jossa aallonpituus on $\lambda : n$, joten matkaero on $2nd$ ilman aallonpituuksina. Kumpikin heijastus tapahtuu suuremman taitekertoimen ainetta vasten ($1{,}00 \to 1{,}38 \to 1{,}50$), joten kumpikin kääntää aallon ja käännökset kumoavat toisensa.
 
 Silloin aallot heikentävät toisiaan, kun $2nd = (k + \tfrac{1}{2})\lambda$, ja vahvistavat toisiaan, kun $2nd = k\lambda$. Ohuin heikentävä kalvo saadaan arvolla $k = 0$.
-**Kaava:** $2nd = \tfrac{1}{2}\lambda$, josta $d = \dfrac{\lambda}{4n}$
+**Kaava:** $$\begin{aligned} \Delta s &= 2nd \\ \Delta s &= \tfrac{1}{2}\lambda \\ 2nd &= \tfrac{1}{2}\lambda \\ d &= \dfrac{\lambda}{4n} \end{aligned}$$
 **Muunnokset:** $\lambda = 2{,}0\,\mu\text{m} = 2{,}0 \cdot 10^{-6}\,\text{m}$
 **Sijoitus:** $d = \dfrac{2{,}0 \cdot 10^{-6}\,\text{m}}{4 \cdot 1{,}38} = 3{,}62 \cdot 10^{-7}\,\text{m} = 362\,\text{nm}$
 **Vastaus:** Ohuin kalvo on $d \approx 0{,}36\,\mu\text{m}$ eli noin $360\,\text{nm}$ paksu, kaksi merkitsevää numeroa kuten aallonpituudessa. Vihertävä heijastus ei ole merkki väärästä kalvosta, vaan se kuuluu infrapunalle suunnitellulle kalvolle.
@@ -454,7 +454,7 @@ Esimerkiksi toisen kertaluvun punaiselle viivalle $k\lambda = 2 \cdot 656{,}28\,
 **Kysytty:** hilan viivatiheys eli viivojen lukumäärä millimetrillä
 **Periaate:** Suoran kulmakerroin on mallin mukaan $\tfrac{1}{d}$, missä $d$ on hilavakio eli vierekkäisten rakojen etäisyys. Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä; toinen niistä voi olla origo, koska suora kulkee sen kautta. Viivatiheys on millimetri jaettuna hilavakiolla.
 **Kuvaajan lukeminen:** Suoralta luetaan piste $(1300\,\text{nm};\ 0{,}780)$, joka on kaukana origosta. Kulmakerroin on $0{,}780 : 1300\,\text{nm} = 6{,}00 \cdot 10^{-4}\,\tfrac{1}{\text{nm}}$.
-**Kaava:** $\dfrac{1}{d} = \text{kulmakerroin}$, joten $d = \dfrac{1}{\text{kulmakerroin}}$, ja viivatiheys on $N = \dfrac{1\,\text{mm}}{d}$.
+**Kaava:** $$\begin{aligned} a &= \dfrac{\Delta \sin\theta}{\Delta (k\lambda)} = \dfrac{1}{d} \\ d &= \dfrac{1}{a} \\ N &= \dfrac{1\,\text{mm}}{d} \end{aligned}$$
 **Muunnokset:** $1\,\text{mm} = 10^{6}\,\text{nm}$
 **Sijoitus:** $d = \dfrac{1}{6{,}00 \cdot 10^{-4}\,\tfrac{1}{\text{nm}}} = 1667\,\text{nm}$ ja $N = \dfrac{10^{6}\,\text{nm}}{1667\,\text{nm}} = 600$
 **Vastaus:** $d \approx 1{,}67\,\mu\text{m}$, joten hilassa on noin $600$ viivaa millimetrillä, kolme merkitsevää numeroa kuten kuvaajalta luetussa pisteessä.

@@ -339,11 +339,23 @@ When an object moves from the position $x_1$ to the position $x_2$, its **displa
   <foreignObject x="233.5" y="285.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta x = x_2 - x_1 = 0$</div></foreignObject>
 </svg>
 
+```pysahdy
+A cyclist rides to the shop and back. Why is the displacement zero even though the cyclist has ridden several kilometres?
+---
+Displacement depends only on the difference between the initial and final positions, and they are the same. The distance is the length of the route, so it is still four kilometres.
+```
+
 **Velocity** tells how fast and in which direction the position changes. It is also a vector quantity, and its sign tells the direction. The absolute value of the velocity $|v|$ is the speed. In uniform motion the velocity stays constant: the position changes by the same amount in every time interval of equal length.
 
 <figure class="unit-photo"><img src="pics/fy4/highway-light-trails.webp" alt="A curving motorway at night: red and white streaks of light, street lamps and snowy verges."><figcaption>In a night photo with a long exposure time, vehicle lights draw streaks. The red streaks are rear lights, the white ones headlights.</figcaption></figure>
 
 Motion can be shown as a **$(t,x)$ graph**, with time on the horizontal axis and position on the vertical axis. The graph of uniform motion is a straight line. The slope of the line is the velocity. The greater the absolute value of the slope, the greater the speed of the object, and the sign of the slope tells the direction of the motion: a rising line means motion in the positive direction, a falling line motion in the negative direction and a horizontal line being at rest. The graph is not a picture of the path of the object: a rising line does not mean uphill, but that the position increases.
+
+```pysahdy
+In a position–time graph a straight line slopes downwards to the right. Is the object moving uphill, downhill or in some other way?
+---
+The graph does not show the path. A falling line means that the position $x$ decreases, so the object moves in the negative direction.
+```
 
 ## Formula: Average velocity and the equation of uniform motion
 When the position changes by $\Delta x$ during the time interval $\Delta t = t_2 - t_1$, the average velocity is the displacement divided by the time:

@@ -173,7 +173,12 @@ $$.
 **Annettu:** taulukon ruoat: kaurapuuro $250\,\text{g}$ ($300\,\text{kJ}$ sadassa grammassa), banaani $120\,\text{g}$ ($400\,\text{kJ}$) ja appelsiinimehu $200\,\text{g}$ ($190\,\text{kJ}$); kävelyn kulutus $220\,\text{kJ}$ kilometriä kohti
 **Kysytty:** aamupalan energia $E$ megajouleina ja sitä vastaava kävelymatka $s$ kilometreinä
 **Periaate:** Jokaisen ruoan energia saadaan kertomalla sen massa sadan gramman energialla ja jakamalla sadalla grammalla. Sitten energiat lasketaan yhteen samassa yksikössä. Kävelymatka saadaan, kun energia jaetaan kilometrin energialla. Jokainen kilometri kuluttaa saman energian.
-**Kaava:** $E_\text{ruoka} = \dfrac{m}{100\,\text{g}} \cdot E_{100}$, $E = E_\text{puuro} + E_\text{banaani} + E_\text{mehu}$ ja $s = E : E_\text{km}$
+**Kaava:** $E_\text{ruoka} = \dfrac{m}{100\,\text{g}} \cdot E_{100}$, $$
+\begin{aligned}
+E &= E_\text{puuro} + E_\text{banaani} \\
+&+ E_\text{mehu}
+\end{aligned}
+$$ ja $s = E : E_\text{km}$
 **Muunnokset:** Lasketaan kilojouleina ja muunnetaan lopuksi: $1\,\text{MJ} = 1000\,\text{kJ}$.
 **Sijoitus:** $E_\text{puuro} = 2{,}5 \cdot 300\,\text{kJ} = 750\,\text{kJ}$, $E_\text{banaani} = 1{,}2 \cdot 400\,\text{kJ} = 480\,\text{kJ}$ ja $E_\text{mehu} = 2{,}0 \cdot 190\,\text{kJ} = 380\,\text{kJ}$. Summa on $1610\,\text{kJ} = 1{,}6\,\text{MJ}$. Siis $s = 1610\,\text{kJ} : 220\,\text{kJ/km} = 7{,}3\,\text{km}$.
 **Vastaus:** Kävelymatka on noin $7{,}3\,\text{km}$ ja aamupalan energia noin $1{,}6\,\text{MJ}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tiedoissa.
@@ -183,7 +188,10 @@ $$.
 **Annettu:** aamupala $0{,}85\,\text{MJ}$, lounas $1200\,\text{kJ}$ ja välipala $450\,\text{kJ}$; oppilaan tulos $1650{,}85\,\text{kJ}$
 **Kysytty:** oppilaan virhe ja oikea energia $E$ megajouleina
 **Periaate:** Energioita lasketaan yhteen vain samassa yksikössä. Etuliite on kerroin. Energiat $0{,}85\,\text{MJ}$ ja $1200\,\text{kJ}$ eivät ole samaa kokoluokkaa, vaikka niiden lukuarvot laskee yhteen. Oppilas laski lukuarvot yhteen ja kirjoitti summaan vain yhden yksikön.
-**Kaava:** $E = E_\text{aamu} + E_\text{lounas} + E_\text{väli}$
+**Kaava:** $$\begin{aligned} E &= E_\text{aamu} + E_\text{lounas} \\
+&+ E_\text{väli}
+\end{aligned}
+$$
 **Muunnokset:** Muunnetaan kilojoulet megajouleiksi: $1200\,\text{kJ} = 1200 : 1000\,\text{MJ} = 1{,}2\,\text{MJ}$ ja $450\,\text{kJ} = 0{,}45\,\text{MJ}$.
 **Sijoitus:** $E = 0{,}85\,\text{MJ} + 1{,}2\,\text{MJ} + 0{,}45\,\text{MJ} = 2{,}5\,\text{MJ}$
 **Vastaus:** Oikea energia on $2{,}5\,\text{MJ}$. Oppilaan $1650{,}85\,\text{kJ}$ on vain $1{,}65\,\text{MJ}$. Se on liian pieni. Oppilaan laskussa aamupalan $0{,}85\,\text{MJ}$ on muuttunut luvuksi $0{,}85\,\text{kJ}$. Se on tuhannesosa todellisesta arvosta ($850\,\text{kJ}$).

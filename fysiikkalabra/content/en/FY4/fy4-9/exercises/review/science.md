@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: af8705ea9b13dc3c
-SCOPE: delta added-exercise from 070b5689fcb10cb3 base abdc9e095e4f
-
+CONTENT-HASH: 228beb400ac948b4
 ## Blocking
 
 ## Polish
-- exercises.json (L2-09, text) — "about $5\,\text{min}$": the coordinator's record gives only 3–5 minutes for the series and the video itself was not watched — "a few minutes" would promise nothing unverified.
+- content/en/FY4/fy4-9/exercises/solutions.md:201 (L3-04) — the subscript in $\Delta t_\text{e}$ comes from Finnish *este*; in English a reader expects e.g. $\Delta t_\text{o}$ (obstacle) or $\Delta t_\text{rigid}$.
+- content/en/FY4/fy4-9/exercises/solutions.md:202 (L3-04) — Conversions omits $\Delta t_\text{e} = 25\,\text{ms} = 0.025\,\text{s}$, which the Substitution uses; add it beside $10\,\text{ms} = 0.010\,\text{s}$.
+- content/en/FY4/fy4-9/exercises/solutions.md:201 (L3-04) — older text: $I = \Delta t \cdot \Sigma F$ writes the sum of the interior readings with the net-force symbol; e.g. $I = \Delta t\,(F_1 + F_2 + \dots + F_9)$.
 
 ## Checked
-- Hash identical at start and end (af8705ea9b13dc3c).
-- Added exercise L2-09 only, judged as in a full review.
-- Part a: a scale measures the supporting force; in free fall with the station the reading is zero while mass and gravity remain. Correct.
-- Part b: stated source facts (SLAMMD, known force on an astronaut attached to the arm, mass from the acceleration with Newton's second law) agree with the coordinator's record; no scene of the video is described; the student is told to compare with the video.
-- $m = F/a$ and $m = F\,\Delta t/\Delta v$ shown as the same law; the condition (the push is the only significant force along the motion, so it is the net force) is stated.
-- Part c recomputed: $20.0 \cdot 0.50 / 0.125 = 80\,\text{kg}$ ($a = 0.25\,\text{m/s}^2$, $F/a = 80\,\text{kg}$); second method $10.0 \cdot 0.40 / 0.050 = 80\,\text{kg}$ from the third law and equal impulses, no later-chapter law needed. Numbers labelled as example values, not measured data.
-- Part d recomputed: $\Delta v = 0.130\,\text{m/s}$ is 4 % too large, $m = 76.9 \to 77\,\text{kg}$, 3.8 % too small; random and systematic error kept apart.
-- Written task, string answer, no numeric field; scope inside FY4 (Newton's laws, impulse).
+- Captures opened: none (one Formula and one Substitution change; judged from the diff in context).
+- Round 1 Blocking fixed: the rigid-obstacle stopping time now has its own symbol $\Delta t_\text{e} = 25\,\text{ms}$, distinct from the trapezoid width $\Delta t = 10\,\text{ms}$; $F_\text{avg} = I/\Delta t_\text{e}$ is solved symbolically and the Substitution uses the same symbol.
+- c) $981\,\text{N·s} / 0.025\,\text{s} = 39\,240\,\text{N} \approx 39\,\text{kN}$, unchanged; a) $981\,\text{N·s}$ and b) $14.01\,\text{m/s} = 50.45\,\text{km/h}$ unchanged.
+- Sign convention unchanged and consistent: $-I = \Delta p = 0 - mv_0$, $I$ the magnitude.
+- Reasonableness ($981/0.100 = 9.81\,\text{kN} < 17.4\,\text{kN}$) still uses the airbag time and is right.
+- Hash identical at start and end.

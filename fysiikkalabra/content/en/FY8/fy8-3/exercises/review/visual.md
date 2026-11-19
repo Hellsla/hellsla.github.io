@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e622704b652606af
+CONTENT-HASH: 39773138f0ef70fd
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy8-3-L2-09 solution, Formula — the rendered formula block starts with $\lambda = \lambda_\text{Å} \cdot 0.1\,\tfrac{\text{nm}}{\text{Å}}$, then a separate boxed pair; reads slightly fragmented — put the three formulas as one aligned group.
+(none)
 
 ## Checked
-- Captures fy8-3-open-exercises-L2-1280-12 (task 3-17 text with source link, parts a–d, answer box), -13 and -14 (whole solution). Fractions, Å, arrows 3 → 2, units, decimal point all render cleanly; no clipping. Removed "(example data)" in the captions of other exercises is wording only; checked that they read well. Delta: only the added exercise and caption wording; no 390 px capture of exercises exists.
+- Delta (solutions.md, md-paragraphs). Opened open-exercises-L2-1280-12 and -14 (3-17 task text, parts, solution paragraphs split by part, aligned blocks, answer box, reasonableness): fractions, units, arrows render cleanly, no clipping. The earlier Minor on 3-17 part c now reads as two separate aligned blocks, fine. No 390 px exercise captures exist. Hash re-run at the end: unchanged.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

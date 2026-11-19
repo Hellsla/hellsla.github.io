@@ -1,5 +1,6 @@
 ok   lint
 ok   latex
+ok   i18n (en 0 error(s); fi-easy 0 error(s))
 ok   build
 ok   inquiry (62 passed, 0 failed)
 ok   answer positions
@@ -8,4 +9,4 @@ ok   layout 390 px
 ok   layout 768 px
 ok   layout 1280 px
 browser for the layout: mcr.microsoft.com/playwright/python:v1.65.0-noble
-fy2-5: reviewed (science=PASS (carried over: md-paragraphs,teacher-figure,typography), pedagogy=PASS (carried over: md-paragraphs,teacher-figure,typography), visual=PASS); exercises: reviewed (science=PASS (carried over: caption-label,md-paragraphs,typography), pedagogy=PASS (carried over: caption-label,md-paragraphs,typography), visual=PASS (carried over: caption-label))
+fy2-5: draft (science=stale, pedagogy=stale, visual=stale); exercises: reviewed (science=PASS (carried over: caption-label,md-paragraphs,typography), pedagogy=PASS (carried over: caption-label,md-paragraphs,typography), visual=PASS (carried over: caption-label))

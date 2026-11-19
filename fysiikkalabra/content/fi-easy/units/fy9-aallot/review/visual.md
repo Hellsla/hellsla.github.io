@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6e26a08a08a64312
-SCOPE: delta (round 2): new Sovella tasks fy9-aallot-s7 and s8 (task, figures fy5-12/ruudukko-tehtava and fy5-13/kuvio-tehtava, solutions) and the changed intro; s1-s6 not re-judged. Judged from the fi captures; fi-easy has the same cut as fi (58 labelled blocks per set, same formulas and rows); check_layout.py --width 360 OK for fi, en, fi-easy.
+CONTENT-HASH: 487d83df3bf17103
 
 ## Blocking
-(none) Round 1 had no blocking items; the significant-figure reasons in s7 a, s7 b, s8 a now read correctly (two, three, three figures with the reason named); en uses decimal points, fi and fi-easy decimal commas.
+(none)
 
 ## Polish
-- [Minor] s8 figure at 390 px: ruler tick labels are small and "1,20" sits against the pulley post; L is repeated in the task text, so reading is not blocked.
-- [Minor] s7 solution a: the Vastaus box frames only s_1; s_2 and Delta s are plain text below it.
-- [Minor] s7 Sijoitus rows end with a stray semicolon after each aligned block.
+(none)
 
 ## Checked
-- exercises-390-50, 51, 57, 58 (s7 task, figure, solution; s8 task, figure, parts and solution a); calculation rows aligned on '=', no clipping at 360-390 px; units in LaTeX with thin space.
-- Not opened: 1280 captures, s1-s6.
+- Read `git diff origin/main...HEAD` for fi-easy (excluding review/): only sovella/solutions.md and inquiry.json, 36 insertions / 12 deletions. Changes are paragraph breaks (blank line inserted between sentences of Periaate and Mallivastaus fields); words, maths, units and figures unchanged. A display-math block that opens mid-paragraph stays in the later paragraph, so no formula is split by the new break.
+- Read the previous Sovella visual report (PASS) as evidence.
+- Opened fi-easy 390 px (sovella-390-2) from review/shots/: Sovella task cards render cleanly, KaTeX and units intact, no clipping or overflow, one reading column.
+- Not opened: captures of the solution panels with the solution button open, so the rendered paragraph spacing inside solutions rests on the diff and the earlier Sovella report, not on my own view.

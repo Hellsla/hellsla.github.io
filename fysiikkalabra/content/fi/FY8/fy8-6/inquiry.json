@@ -23,22 +23,22 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: fotonin energia",
+      "title": "Kertaa: valon taajuus",
       "optional": true,
-      "prompt": "Punaisen valon aallonpituus on $630\\,\\text{nm}$ ja sinisen $470\\,\\text{nm}$. Kumman valon fotonilla on suurempi energia?",
+      "prompt": "Punaisen LEDin valon aallonpituus on $630\\,\\text{nm}$ ja sinisen LEDin $470\\,\\text{nm}$. Kumman LEDin valon taajuus on suurempi?",
       "choices": [
         {
-          "text": "Sinisen, koska lyhyempi aallonpituus antaa fotonille suuremman energian.",
+          "text": "Sinisen, koska valon nopeus on sama ja lyhyempi aallonpituus tarkoittaa suurempaa taajuutta.",
           "correct": true,
-          "feedback": "Oikein. Fotonin energia on $E = \\tfrac{hc}{\\lambda}$ (luku *Valosähköinen ilmiö ja fotoni*). Sinisen valon fotonin energia on noin $$\n\\begin{aligned}\n&1240\\,\\text{eV}\\,\\text{nm} : 470\\,\\text{nm} \\\\\n&\\approx 2{,}64\\,\\text{eV}\n\\end{aligned}\n$$ ja punaisen noin $$\n\\begin{aligned}\n&1240\\,\\text{eV}\\,\\text{nm} : 630\\,\\text{nm} \\\\\n&\\approx 1{,}97\\,\\text{eV}\n\\end{aligned}\n$$."
+          "feedback": "Oikein. Aallolle $c = f\\lambda$ (luku *Sähkömagneettinen säteily ja mustan kappaleen spektri*), joten taajuus on $f = \\tfrac{c}{\\lambda}$ ja lyhyempi aallonpituus antaa suuremman taajuuden. Sinisen valon taajuus on noin $6{,}38 \\cdot 10^{14}\\,\\text{Hz}$ ja punaisen noin $4{,}76 \\cdot 10^{14}\\,\\text{Hz}$."
         },
         {
-          "text": "Punaisen, koska pidempi aalto kuljettaa mukanaan enemmän energiaa.",
-          "feedback": "Fotonin energia on $E = \\tfrac{hc}{\\lambda}$: se *pienenee*, kun aallonpituus kasvaa. Punaisen fotonin energia on noin $1{,}97\\,\\text{eV}$, sinisen noin $2{,}64\\,\\text{eV}$."
+          "text": "Punaisen, koska pidempi aalto sisältää enemmän värähtelyä.",
+          "feedback": "Taajuus ja aallonpituus ovat kääntäen verrannolliset, $f = \\tfrac{c}{\\lambda}$: aallonpituuden kasvaessa taajuus *pienenee*. Punaisen valon taajuus on noin $4{,}76 \\cdot 10^{14}\\,\\text{Hz}$ ja sinisen noin $6{,}38 \\cdot 10^{14}\\,\\text{Hz}$."
         },
         {
-          "text": "Yhtä suuri, koska molemmat fotonit etenevät samalla valon nopeudella.",
-          "feedback": "Sama nopeus ei tarkoita samaa energiaa. Fotonin energia riippuu taajuudesta, $E = hf$, ja lyhyempiaaltoisen sinisen valon taajuus on suurempi, joten sen fotonin energia on suurempi."
+          "text": "Yhtä suuri, koska molemmat valot etenevät samalla valon nopeudella.",
+          "feedback": "Sama nopeus ei tarkoita samaa taajuutta. Kun nopeus on sama, taajuus riippuu aallonpituudesta, $f = \\tfrac{c}{\\lambda}$, ja lyhyempiaaltoisen sinisen valon taajuus on suurempi."
         }
       ]
     },

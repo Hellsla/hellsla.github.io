@@ -167,7 +167,7 @@ Alkupaikka luetaan kohdasta, jossa suora leikkaa paikka-akselin: $x_0 \approx 0{
 **Kysytty:** kumpi kärry on nopeampi ja hetki $t$, jolloin kärryt ovat samassa paikassa, yksikössä $\text{s}$
 **Periaate:** Kummankin kärryn pisteet ovat suoralla. Suoran kulmakerroin on nopeus ja leikkauskohta paikka-akselilla on alkupaikka. Kärryt ovat samassa paikassa, kun suorat leikkaavat. Silloin paikat ovat yhtä suuret samalla hetkellä.
 **Kuvaajan lukeminen:** A:lle sovitetaan suora pisteiden $(0{,}0\,\text{s};\, 1{,}0\,\text{m})$ ja $(8{,}0\,\text{s};\, 13{,}0\,\text{m})$ läheltä. B:lle sovitetaan suora pisteiden $(0{,}0\,\text{s};\, 20{,}0\,\text{m})$ ja $(8{,}0\,\text{s};\, 5{,}7\,\text{m})$ läheltä. Näistä saadaan $v_\text{A} = \dfrac{13{,}0\,\text{m} - 1{,}0\,\text{m}}{8{,}0\,\text{s}} = 1{,}5\,\text{m/s}$ ja $v_\text{B} = \dfrac{5{,}7\,\text{m} - 20{,}0\,\text{m}}{8{,}0\,\text{s}} \approx -1{,}8\,\text{m/s}$. Alkupaikat ovat $x_{0\text{A}} = 1{,}0\,\text{m}$ ja $x_{0\text{B}} = 20{,}0\,\text{m}$. Kärryn B vauhti on suurempi ($1{,}8\,\text{m/s} > 1{,}5\,\text{m/s}$), mutta se kulkee A:ta kohti negatiiviseen suuntaan.
-**Kaava:** $x_\text{A} = x_{0\text{A}} + v_\text{A}\,t$ ja $x_\text{B} = x_{0\text{B}} + v_\text{B}\,t$. Ehdosta $x_\text{A} = x_\text{B}$ saadaan
+**Kaava:** $x_\text{A} = x_{0\text{A}} + v_\text{A}\,t$ ja $x_\text{B} = x_{0\text{B}} + v_\text{B}\,t$. Kärryt ovat samassa paikassa, kun $x_\text{A} = x_\text{B}$. Silloin $x_{0\text{A}} + v_\text{A}\,t = x_{0\text{B}} + v_\text{B}\,t$, joten $(v_\text{A} - v_\text{B})\,t = x_{0\text{B}} - x_{0\text{A}}$ ja
 $$t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$$
 **Muunnokset:** Kaikki suureet ovat yksiköissä $\text{m}$ ja $\text{m/s}$, joten muunnoksia ei tarvita. B:n nopeus sijoitetaan negatiivisena.
 **Sijoitus:**
@@ -194,7 +194,7 @@ $$\begin{aligned} v &= \dfrac{5{,}0\,\text{m} - 14\,\text{m}}{16\,\text{s} - 10\
 **Kysytty:** kärryn todellinen nopeus $v$ yksikössä $\text{m/s}$, hetki jolloin todellinen paikka on $6{,}0\,\text{m}$, ja ennusteen luotettavuus
 **Periaate:** Tasaisessa liikkeessä pisteet ovat suoralla, ja nopeus on suoran kulmakerroin. Mittakaavavirhe kertoo kaikki ohjelman antamat pituudet samalla luvulla. Luku saadaan vertaamalla tunnetun pituuden todellista arvoa ohjelman arvoon. Korjaus kertoo myös nopeuden samalla luvulla.
 **Kuvaajan lukeminen:** Pisteet merkitään $(t, x_\text{ohj})$-kuvaajaan, ja niiden läpi sovitetaan suora. Suora kulkee lähellä pisteitä $(0{,}0\,\text{s};\, 0{,}31\,\text{m})$ ja $(5{,}0\,\text{s};\, 3{,}52\,\text{m})$. Niiden avulla ohjelman antama nopeus on $v_\text{ohj} = \dfrac{3{,}52\,\text{m} - 0{,}31\,\text{m}}{5{,}0\,\text{s}} \approx 0{,}64\,\text{m/s}$ ja ohjelman alkupaikka on $0{,}31\,\text{m}$.
-**Kaava:** korjauskerroin $k = \dfrac{\ell_\text{tod}}{\ell_\text{ohj}}$, todellinen nopeus $v = k\,v_\text{ohj}$ ja paikka $x = k\,(x_{0,\text{ohj}} + v_\text{ohj}\,t)$
+**Kaava:** korjauskerroin $k = \dfrac{\ell_\text{tod}}{\ell_\text{ohj}}$. Kaikki pituudet kasvavat samalla luvulla, joten $x = k\,x_\text{ohj}$ ja $v = k\,v_\text{ohj}$. Ohjelman paikka on $x_\text{ohj} = x_{0,\text{ohj}} + v_\text{ohj}\,t$, joten $x = k\,x_{0,\text{ohj}} + k\,v_\text{ohj}\,t = x_0 + v\,t$, missä $x_0 = k\,x_{0,\text{ohj}}$. Kun tästä ratkaistaan aika, saadaan $t = \dfrac{x - x_0}{v}$
 **Muunnokset:** Kaikki pituudet ovat metreinä ja ajat sekunteina, joten yksikkömuunnoksia ei tarvita.
 **Sijoitus:**
 
@@ -217,7 +217,7 @@ Siksi mittausten toistaminen ei poista sitä keskiarvossa. Satunnaisvirhe taas h
 **Kysytty:** paikka $x$, jossa poliisiauto saavuttaa rekan, yksikössä $\text{m}$, sekä ennusteen luotettavuus
 **Periaate:** Rekan liike on tasaista. Siksi sen $(t, x)$-pisteet sovitetaan suoralla, jonka kulmakerroin on nopeus ja leikkauskohta paikka-akselilla on alkupaikka. Poliisiauton paikka saadaan tasaisen liikkeen yhtälöstä, jossa aika lasketaan sen ohitushetkestä. Auto saavuttaa rekan, kun paikat ovat yhtä suuret samalla hetkellä.
 **Kuvaajan lukeminen:** Pisteet merkitään kuvaajaan, ja suora sovitetaan niiden läpi. Suora kulkee lähellä pisteitä $(0\,\text{s};\, 203\,\text{m})$ ja $(40\,\text{s};\, 598\,\text{m})$. Niistä rekan nopeus on $v_\text{R} = \dfrac{598\,\text{m} - 203\,\text{m}}{40\,\text{s}} \approx 9{,}9\,\text{m/s}$ ja alkupaikka on $x_{0\text{R}} \approx 203\,\text{m}$.
-**Kaava:** rekka $x_\text{R} = x_{0\text{R}} + v_\text{R}\,t$ ja poliisiauto $x_\text{P} = v_\text{P}\,(t - t_0)$. Ehdosta $x_\text{R} = x_\text{P}$ saadaan
+**Kaava:** rekka $x_\text{R} = x_{0\text{R}} + v_\text{R}\,t$ ja poliisiauto $x_\text{P} = v_\text{P}\,(t - t_0)$. Poliisiauto saavuttaa rekan, kun $x_\text{R} = x_\text{P}$. Silloin $x_{0\text{R}} + v_\text{R}\,t = v_\text{P}\,t - v_\text{P}\,t_0$, joten $x_{0\text{R}} + v_\text{P}\,t_0 = (v_\text{P} - v_\text{R})\,t$ ja
 $$t = \dfrac{x_{0\text{R}} + v_\text{P}\,t_0}{v_\text{P} - v_\text{R}}$$
 ja paikka on $x = x_{0\text{R}} + v_\text{R}\,t$.
 **Muunnokset:** Kaikki suureet ovat yksiköissä $\text{m}$, $\text{s}$ ja $\text{m/s}$, joten muunnoksia ei tarvita.
