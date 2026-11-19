@@ -175,6 +175,7 @@ Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jäl
 - Kirjavinkkien Finna-tietuelinkit ja podcastien YouTube-linkit odottavat: Finna estää koneellisen haun (Cloudflare), YouTube-linkki vaatisi jaetun muutoksen (`media_tips.py`) ja opettajan päätöksen.
 
 ## 21. Sivujen tunnuskuvat Ruukki-logon tyyliin (opettaja 2026-11-19 klo 07.10, kuvakaappaukset koordinaattorin chatissa)
+Varattu: claude/21-tunnuskuvat
 Jaettu, yksin, #740:n, #733:n ja kohdan 22 jälkeen (opettaja 2026-11-19: kohta 22 ensin). (1) Erillissivujen otsakkeen tunnuskuvat (esim. Kuuntele ja katso -sivun kuulokkeet) piirretään alkuperäisen Ruukkilabra-logon tyyliin: ahjo (alasin) ja sen päällä sivun aihe (kuulokkeet, kirja …), logon värit ja viivat. (2) Sivustosta-sivun vasemman yläkulman logo on sama kuin Ahjo-jaksojen sivuilla. Ennen/jälkeen-kuvat opettajalle ja pysähdys hyväksyntään ennen yhdistämistä; ei uusia tekstejä.
 
 ## 22. Tehtävän pieni taulukko ja kuva vierekkäin leveällä näytöllä (opettaja 2026-11-19 klo 07.20, kuvakaappaus fy8-3)
