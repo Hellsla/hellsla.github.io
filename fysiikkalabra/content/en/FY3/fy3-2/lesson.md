@@ -120,6 +120,12 @@ In everyday language, work often means effort. In physics, work has a more preci
 
 When you carry a backpack horizontally at a steady speed, your force supporting the backpack points upwards, but the backpack is displaced horizontally. The force is perpendicular to the displacement, so the mechanical work done by this force is zero. Your muscles still use energy to hold the backpack up.
 
+```pysahdy
+You hold a heavy book still in your outstretched hand. Does the supporting force of your hand do work?
+---
+No. The book does not move, so there is no displacement and no mechanical work is done.
+```
+
 <svg data-fig="carry-lift" viewBox="0 0 600 320" role="img" aria-label="Diagram of two situations. On the left a backpack is carried sideways: the supporting force F points up but the motion is sideways, so the force does no work, W = 0. On the right the backpack is lifted up: the force F and the motion are in the same direction, so the force does work W = F s." style="max-width:100%;font-size:24px">
   <foreignObject x="52.5" y="15.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{carried sideways}$</div></foreignObject>
   <foreignObject x="396" y="15.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lifted up}$</div></foreignObject>
@@ -149,6 +155,12 @@ When you carry a backpack horizontally at a steady speed, your force supporting 
 </svg>
 
 Work is a way of transferring energy. James Prescott Joule showed this in the 1840s by letting a falling weight turn a paddle wheel in water. The weight did work, and the water warmed by a measurable amount even though it was not heated: the work increased the internal energy of the water. In the experiments the warming of the water turned out to be proportional to the product of the weight and the falling distance, that is, the product of force and distance. This experimental result justifies the definition of work $W = Fs$ (formula below). The same warming can also be produced by heating, so work and heat are two ways of transferring energy, and both are measured in the same unit, the joule.
+
+```pysahdy
+In Joule's experiment the water was not heated, but it got warmer. What caused this?
+---
+The work done by the falling weight turned the paddle wheel and increased the internal energy of the water.
+```
 
 <svg data-fig="joule" viewBox="0 0 600 340" role="img" aria-label="Diagram of Joule&#x27;s experiment. A falling weight pulls a string that passes over a pulley and turns a paddle wheel in a vessel of water. The force of the weight does work over the falling distance h, and the paddle wheel warms the water: work increases the internal energy of the water." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy32-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
@@ -280,6 +292,12 @@ Power is work divided by the time it takes. In motion at a steady speed, where t
 power :: P = \frac{W}{t} = F v
 ```
 where $P$ is the power (W), $t$ is the time (s) and $v$ is the speed (m/s). One watt is one joule per second: $1\,\text{W} = 1\,\text{J/s}$.
+
+```pysahdy
+A machine does $600\,\text{J}$ of work in $20\,\text{s}$. What is the power of the machine?
+---
+$P = W/t = 600\,\text{J}/20\,\text{s} = 30\,\text{W}$.
+```
 
 ## Worked example
 A spring is stretched $20\,\text{cm}$. The stretching force increases steadily from zero to 40 newtons, as the graph shows. How much work does the stretching force do?

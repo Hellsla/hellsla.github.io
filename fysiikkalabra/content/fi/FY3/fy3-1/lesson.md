@@ -153,6 +153,12 @@ Voiman voi mitata voimamittarilla. Siinä on jousi, joka venyy sitä enemmän, m
 
 Venymä on suoraan verrannollinen voimaan, kun jousta ei venytetä liikaa: kaksinkertainen voima venyttää jousta kaksinkertaisen matkan. Kuvaaja (voima, venymä) on siis suora, joka kulkee origon kautta, kuten FY1:n suoraan verrannollisissa malleissa, esimerkiksi tasaisen liikkeen $s = v t$. Jos $5{,}0\,\text{N}$ venyttää jousta $2{,}0\,\text{cm}$, niin $10\,\text{N}$ venyttää sitä $4{,}0\,\text{cm}$ ja $2{,}5\,\text{N}$ venyttää sitä $1{,}0\,\text{cm}$.
 
+```pysahdy
+Jousi venyy $3{,}0\,\text{cm}$, kun siihen vaikuttaa $4{,}0\,\text{N}$:n voima. Kuinka paljon se venyy $12\,\text{N}$:n voimalla?
+---
+Venymä on suoraan verrannollinen voimaan. Voima on kolminkertainen, joten venymä on $3 \cdot 3{,}0\,\text{cm} = 9{,}0\,\text{cm}$.
+```
+
 <svg data-fig="force-extension" viewBox="0 0 600 330" role="img" aria-label="Kuvaaja mittakaavassa: jousen venymä x senttimetreinä voiman F funktiona, kun F on 0–11 N. Mittauspisteet 2,5 N ja 1,0 cm, 5,0 N ja 2,0 cm sekä 10 N ja 4,0 cm ovat samalla origon kautta kulkevalla suoralla; katkoviivat näyttävät pisteiden arvot akseleilla." style="max-width:100%;font-size:24px">
   <line x1="179.5" y1="290" x2="179.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="267.5" y1="290" x2="267.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -206,6 +212,12 @@ Asteikko kalibroidaan ripustamalla jouseen samanlaisia pieniä kappaleita, joide
 
 Kappaleen paino on Maan ja kappaleen välisen vuorovaikutuksen voimakkuuden mitta. Se on voima, ja sen yksikkö on newton. Massa on aivan eri asia: se kertoo, kuinka paljon ainetta kappaleessa on, ja sen yksikkö on kilogramma. Massa on sama kaikkialla, mutta paino riippuu siitä, missä kappale on. Kuu on paljon pienempi taivaankappale kuin Maa, ja Kuun ja astronautin välinen vuorovaikutus on heikompi kuin Maan ja astronautin, joten astronautti painaa Kuussa vähemmän.
 
+```pysahdy
+Astronautin massa on Maassa $80\,\text{kg}$. Mikä on hänen massansa Kuussa, ja mitä hänen painolleen tapahtuu?
+---
+Massa on sama $80\,\text{kg}$, koska massa kertoo aineen määrän. Paino pienenee, koska Kuun ja astronautin välinen vuorovaikutus on heikompi.
+```
+
 <figure class="unit-photo"><img src="pics/fy3/iss-cupola.webp" alt="Astronautti leijuu ilmassa avaruusaseman ikkunakupolissa. Ikkunoista näkyy Maa ja pilviä."><figcaption>Astronautti Jessica Watkins leijuu kansainvälisen avaruusaseman Cupola-ikkunan edessä vuonna 2022. Maa vetää häntä puoleensa myös siellä, mutta asema ja astronautti putoavat yhdessä Maan ympäri.</figcaption></figure>
 
 ## Kaava: Paino
@@ -225,6 +237,12 @@ missä $G$ on paino (N), $m$ massa (kg) ja $g$ putoamiskiihtyvyys (m/s²), Maan 
 Kuun $g$ on noin Maan arvon kuudesosa ($1{,}62 : 9{,}81 \approx 0{,}17 \approx 1 : 6$), joten sama massa painaa Kuussa noin kuudesosan siitä, mitä Maassa. Tämä vastaa alun kysymykseen astronautista.
 
 Kuvaajassa paino on piirretty massan funktiona. Jokaisella taivaankappaleella paino on suoraan verrannollinen massaan, joten kuvaaja on origon kautta kulkeva suora. Mitä suurempi $g$, sitä jyrkempi suora: samalla massalla paino on Jupiterissa suurin ja Kuussa pienin.
+
+```pysahdy
+Miksi Jupiterin suora on jyrkempi kuin Kuun suora?
+---
+Jupiterissa $g$ on suurempi, joten sama massa painaa siellä enemmän. Siksi paino kasvaa massan mukana nopeammin.
+```
 
 <svg data-fig="weight-mass" viewBox="0 0 600 336" role="img" aria-label="Kuvaaja mittakaavassa: paino G newtoneina massan m funktiona, kun m on 0–100 kg. Neljä origon kautta kulkevaa suoraa, jyrkimmästä loivimpaan: Jupiter (suora jatkuu kuvan yläreunan yli), Maa (100 kg painaa 981 N), Mars (371 N) ja Kuu (162 N)." style="max-width:100%;font-size:24px">
   <line x1="185" y1="300" x2="185" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

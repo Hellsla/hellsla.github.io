@@ -53,6 +53,12 @@ When a force is spread over a surface, its effect depends on how large an area i
 ### Where does pressure come from?
 According to the micro model, the pressure of a gas comes from particles colliding with the walls of the container. The pressure of a liquid comes from the weight of the liquid itself: above every layer of water there is more water pressing down on it. The deeper you go, the more water there is above you and the greater the pressure. In a liquid at rest, a horizontal surface of area $A$ below the surface carries the weight of the column of water above it. The height of the column is the depth $h$ and its volume is $V = Ah$. Density $\rho$ is mass per volume ($m = \rho V$), so the mass of the column is $\rho A h$ and its weight is $G = mg = \rho A h g$. Pressure is weight divided by area, so the area cancels and what is left is $\rho g h$. The pressure produced by the weight of a liquid is called hydrostatic pressure. It does not depend on the shape of the container or on the total amount of water, only on the depth and the density of the liquid.
 
+```pysahdy
+Why is the pressure greater deeper down than near the surface of a liquid?
+---
+There is more liquid above, and its weight presses on the layer harder.
+```
+
 <svg data-fig="water-column" viewBox="0 0 600 300" role="img" aria-label="A column of water whose base has area A and whose height is the depth h. The weight of the column, G = ρAhg, presses the base downwards, and the pressure is the weight divided by the area, p = G/A = ρgh: the area cancels. Schematic diagram, not to scale." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy34-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
   <rect x="30" y="50" width="340" height="230" fill="url(#fy34-water)" fill-opacity="0.55"/>
@@ -77,10 +83,22 @@ According to the micro model, the pressure of a gas comes from particles collidi
 
 Pressure is not a force but the ratio of force to area, and in a liquid at rest the pressure acts equally in every direction. If the pressure sideways were smaller than downwards, the water would flow sideways and would not stay at rest. If you make holes at several heights in the side of a bottle, the water squirts out hardest from the lowest hole, because the pressure grows with depth. The force caused by pressure is always perpendicular to the surface: on the vertical wall of a dam the force points horizontally, and on a diver's body it acts from all sides. That is why here we can treat the force as just a magnitude; the direction comes from the surface.
 
+```pysahdy
+A bottle has holes in its side at several heights. From which hole does the water squirt out most strongly, and why?
+---
+From the lowest hole, because there is the most water above it and the pressure is greatest.
+```
+
 <figure class="unit-photo"><img src="pics/fy3/scuba-diver.webp" alt="A diver in dark blue water, with air bubbles rising above towards the bright surface."><figcaption>A diver deep under water. The bubbles of exhaled air rise towards the surface.</figcaption></figure>
 
 ### Atmospheric pressure and gauge pressure
 Atmospheric pressure, the pressure of the atmosphere, already acts on the surface of the water. At sea level it is about $101\,\text{kPa}$. It is the weight of the column of air per unit area. Atmospheric pressure also acts on the surface of the water and is transmitted through the water to depth. Under water the total pressure is therefore the sum of atmospheric pressure and hydrostatic pressure. At a depth of ten metres the hydrostatic pressure is already about the same as one atmosphere.
+
+```pysahdy
+What is the total pressure at a depth of $10\,\text{m}$ in water, approximately?
+---
+Atmospheric pressure is about $101\,\text{kPa}$ and hydrostatic pressure about $98\,\text{kPa}$, so the total pressure is about $200\,\text{kPa}$.
+```
 
 This answers the opening question. Atmospheric pressure acts on both sides of the dam wall, so the wall is loaded only by the gauge pressure of the water, that is, the part of the pressure that is greater than atmospheric pressure. The gauge pressure is zero at the top and grows steadily with depth: at a depth of 30 metres it is about $290\,\text{kPa}$, so every square metre of the wall feels a force of about $290\,\text{kN}$. The lower part of the wall must therefore withstand a much greater force than the upper part, and the wall is built thick at the bottom.
 

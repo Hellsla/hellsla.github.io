@@ -53,6 +53,12 @@ Kun voima jakautuu pinnalle, sen vaikutus riippuu pinta-alasta eli siitä, kuink
 ### Mistä paine syntyy?
 Kaasun paine syntyy mikromallin mukaan hiukkasten törmäyksistä astian seinämään. Nesteen paine syntyy nesteen omasta painosta. Jokaisen vesikerroksen yllä on vettä, ja se vesi painaa kerrosta. Mitä syvemmällä ollaan, sitä enemmän vettä on yläpuolella. Silloin paine on myös suurempi.
 
+```pysahdy
+Miksi paine on suurempi syvemmällä kuin lähellä nesteen pintaa?
+---
+Syvemmällä on enemmän nestettä yläpuolella. Sen paino painaa kerrosta enemmän.
+```
+
 Tarkastellaan nestettä, joka on levossa. Pinnan alla on vaakasuora pinta, jonka pinta-ala on $A$. Siihen kohdistuu sen yläpuolella olevan vesipatsaan paino. Patsaan korkeus on syvyys $h$ ja tilavuus on $V = Ah$. Tiheys $\rho$ on massa tilavuutta kohti ($m = \rho V$). Siksi patsaan massa on $\rho A h$ ja paino on $G = mg = \rho A h g$. Paine on paino jaettuna alalla. Pinta-ala supistuu pois eli häviää jakolaskussa, ja jäljelle jää $\rho g h$. Nesteen painosta syntyvää painetta sanotaan hydrostaattiseksi paineeksi. Se ei riipu astian muodosta eikä veden kokonaismäärästä. Se riippuu vain syvyydestä ja nesteen tiheydestä.
 
 <svg data-fig="water-column" viewBox="0 0 600 300" role="img" aria-label="Vesipatsas, jonka pohjan pinta-ala on A ja korkeus on syvyys h. Patsaan paino G = ρAhg painaa pohjaa alaspäin. Paine on paino jaettuna alalla, p = G/A = ρgh. Pinta-ala supistuu pois. Kaaviokuva, ei mittakaavassa." style="max-width:100%;font-size:24px">
@@ -79,10 +85,22 @@ Tarkastellaan nestettä, joka on levossa. Pinnan alla on vaakasuora pinta, jonka
 
 Paine ei ole voima. Paine on voiman ja alan suhde. Levossa olevassa nesteessä paine vaikuttaa joka suuntaan yhtä suurena. Jos paine sivulle olisi pienempi kuin alaspäin, vesi valuisi sivuun. Silloin vesi ei pysyisi levossa. Tee pullon kylkeen reikiä usealle korkeudelle. Alimmasta reiästä vesi suihkuaa voimakkaimmin, koska paine kasvaa syvyyden mukana. Paineen aiheuttama voima on aina kohtisuorassa pintaa vastaan. Padon pystysuoraan seinään voima osoittaa vaakasuoraan. Sukeltajan kehoon voima vaikuttaa joka puolelta. Siksi voima voidaan tässä laskea pelkkänä suuruutena. Suunta tulee pinnasta.
 
+```pysahdy
+Pullon kyljessä on reikiä usealla korkeudella. Mistä reiästä vesi suihkuaa voimakkaimmin? Miksi?
+---
+Alimmasta reiästä. Siellä on eniten vettä yläpuolella. Siksi paine on siellä suurin.
+```
+
 <figure class="unit-photo"><img src="pics/fy3/scuba-diver.webp" alt="Sukeltaja tummansinisessä vedessä. Ilmakuplat nousevat kohti pintaa."><figcaption>Sukeltaja syvällä veden alla. Ilmakuplat nousevat kohti pintaa.</figcaption></figure>
 
 ### Ilmanpaine ja ylipaine
 Veden pinnalla vaikuttaa jo ilmakehän paine eli ilmanpaine. Merenpinnan tasolla se on noin $101\,\text{kPa}$. Ilmanpaine on ilmapatsaan paino pinta-alaa kohti. Ilmanpaine vaikuttaa myös veden pintaan, ja vesi siirtää sen myös syvemmälle. Veden alla kokonaispaine on siis ilmanpaineen ja hydrostaattisen paineen summa. Kymmenen metrin syvyydessä hydrostaattinen paine on jo suunnilleen yhden ilmanpaineen suuruinen.
+
+```pysahdy
+Mikä on kokonaispaine $10\,\text{m}$:n syvyydessä vedessä noin?
+---
+Ilmanpaine on noin $101\,\text{kPa}$. Hydrostaattinen paine on noin $98\,\text{kPa}$. Kokonaispaine on siis noin $200\,\text{kPa}$.
+```
 
 Tämä vastaa alun kysymykseen. Ilmanpaine vaikuttaa padon muuriin molemmilta puolilta. Siksi muuria kuormittaa eli rasittaa vain veden ylipaine. Ylipaine on paineen se osa, joka on suurempi kuin ilmanpaine. Ylipaine on yläreunassa nolla, ja se kasvaa syvyyden mukana tasaisesti. 30 metrin syvyydessä ylipaine on noin $290\,\text{kPa}$. Silloin jokaiseen muurin neliömetriin kohdistuu noin $290\,\text{kN}$:n voima. Muurin alaosan on siis kestettävä paljon suurempi voima kuin yläosan. Siksi muuri tehdään pohjalta paksuksi.
 
