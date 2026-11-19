@@ -1,7 +1,7 @@
 """Small decorative illustrations for the tip pages (Kuuntele ja katso, Kirjavinkit; teacher 2026-11-18, 4c).
 Inline SVG, 48 x 48, the module-icon family: thin forest-green outlines, one terracotta accent, no text, aria-hidden.
 They wait for the teacher's approval like every new figure (docs/teacher-figures.tsv; nobody marks them approved but the teacher)."""
-G, A, T = "#1a4d2e", "#b8532f", "#ecf5ee"
+G, A, T = "#1a4d2e", "#b8532f", "#ecf5ee"   # the module icons' colours (the page tops use the logo's: _LG, _LC)
 _S = f'fill="none" stroke="{G}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"'
 _L = f'stroke="{G}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"'
 _ACC = f'fill="none" stroke="{A}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"'
@@ -11,6 +11,20 @@ _DOT = f'fill="{A}" stroke="none"'
 def _atom(cx, cy, rx, ry, nucleus=2.6, orbits=(0, 60, 120)):
     o = "".join(f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" transform="rotate({a} {cx} {cy})"/>' for a in orbits)
     return f'<g {_S}>{o}</g><circle cx="{cx}" cy="{cy}" r="{nucleus}" {_DOT}/>'
+
+# The original logo's forge (anvil) as the base, its paths copied unchanged from assets/shared/brand/ruukkilabra-symboli.svg
+# (teacher 2026-11-19, work queue 21): the page's subject stands on it, the logo's green and copper door. The colours are
+# custom properties with the logo's values as fallback, so a theme can restyle them.
+_LG, _LC = "var(--logo-green,#1A4B2E)", "var(--logo-copper,#B85F2A)"
+_FORGE = ('M190 680H1058C1076 680 1087 693 1087 708C1087 758 1040 813 985 852C941 885 919 912 919 963V1057C919 1072 906 1082 892 1082H777'
+          'C762 1082 751 1071 751 1057V937C751 863 691 803 619 803C545 803 487 864 487 939V1057C487 1072 476 1082 461 1082H349C333 1082 325 1071 325 1057'
+          'V961C325 915 307 885 262 852C204 810 161 758 161 708C161 693 173 680 190 680Z')
+_DOOR = "M511 1082V945C511 879 558 830 620 830C683 830 729 880 729 945V1082Z"
+
+
+def _anvil(subject):
+    return (subject + '<g transform="translate(5.5 29) scale(.04) translate(-161 -680)">'
+            f'<path d="{_FORGE}" style="fill:{_LG}"/><path d="{_DOOR}" style="fill:{_LC}"/></g>')
 
 
 ART = {
@@ -36,11 +50,11 @@ ART = {
             f'<path d="M24 42v3M17 41l-2 2.5M31 41l2 2.5" {_ACC} stroke-width="1.8"/>'),
     "FY8": _atom(24, 24, 19, 7) + f'<g {_DOT}><circle cx="43" cy="24" r="2.2"/><circle cx="14.5" cy="7.5" r="2.2"/><circle cx="14.5" cy="40.5" r="2.2"/></g>',
     # the page tops
-    "listen": (f'<path d="M9 29v-5a15 15 0 0 1 30 0v5" {_S} stroke-width="2.6"/>'
-               f'<rect x="5" y="27" width="10" height="15" rx="4" fill="{T}" {_L}/><rect x="33" y="27" width="10" height="15" rx="4" fill="{T}" {_L}/>'
-               + _atom(24, 33, 7, 2.8, 2.2, (0, 60, 120))),
-    "read": (f'<path d="M5 38q9-4 19 0 10-4 19 0v6q-9-4-19 0-10-4-19 0z" fill="{T}" {_L}/><path d="M24 38v6" {_S}/>'
-             + _atom(24, 17, 12, 4.5, 2.4, (0, 60, 120)) + f'<path d="M6 12q3-3 6 0M36 8q3-3 6 0" {_ACC} stroke-width="1.8"/>'),
+    "listen": _anvil(f'<path d="M10 26v-5a14 14 0 0 1 28 0v5" {_S} stroke-width="2.2"/>'
+                     f'<rect x="6" y="20" width="8" height="9" rx="3" fill="{T}" {_L}/><rect x="34" y="20" width="8" height="9" rx="3" fill="{T}" {_L}/>'
+                     f'<circle cx="24" cy="22" r="1.8" {_DOT}/><path d="M19.5 18.5q-2.5 3.5 0 7M28.5 18.5q2.5 3.5 0 7" {_ACC} stroke-width="1.8"/>'),
+    "read": _anvil(f'<path d="M5 26V9q9-2 19 3 10-5 19-3v17q-9-2-19 3-10-5-19-3z" fill="{T}" {_L} stroke-width="2.2"/><path d="M24 12v17" {_S}/>'
+                   f'<path d="M9 15q5-1 11 1M9 19.5q5-1 11 1M28 16q6-2 11-1M28 20.5q6-2 11-1" {_ACC} stroke-width="1.8"/>'),
 }
 
 
