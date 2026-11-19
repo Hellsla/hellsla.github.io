@@ -163,7 +163,7 @@
         "hints": [
           "Häviöiden osuus on häviöenergian osuus otetusta energiasta. Valitse yksi taulukon rivi. Lue siitä $E_\\text{h}$ ja $E_\\text{o}$.",
           "Osuus on $\\dfrac{E_\\text{h}}{E_\\text{o}}$. Muuta suhdeluku prosenteiksi kertomalla se luvulla $100\\,\\%$.",
-          "Esimerkiksi rivillä $t = 10\\,\\text{s}$ otettu energia on $600\\,000\\,\\text{J}$ ja häviöenergia $450\\,000\\,\\text{J}$. Silloin $450\\,000 : 600\\,000 = 0{,}75$."
+          "Esimerkiksi rivillä $t = 10\\,\\text{s}$ otettu energia on $600\\,\\text{kJ}$ ja häviöenergia $450\\,\\text{kJ}$. Silloin $450 : 600 = 0{,}75$."
         ],
         "mistakes": [
           {

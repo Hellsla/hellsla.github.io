@@ -163,7 +163,7 @@
         "hints": [
           "The share of losses is the share of the loss energy in the energy taken. Choose one row of the table and read $E_\\text{h}$ and $E_\\text{o}$ from it.",
           "The share is $\\dfrac{E_\\text{h}}{E_\\text{o}}$. Convert the ratio to a percentage by multiplying it by $100\\,\\%$.",
-          "For example, in the row $t = 10\\,\\text{s}$ the energy taken is $600\\,000\\,\\text{J}$ and the loss energy $450\\,000\\,\\text{J}$, so $450\\,000 : 600\\,000 = 0.75$."
+          "For example, in the row $t = 10\\,\\text{s}$ the energy taken is $600\\,\\text{kJ}$ and the loss energy $450\\,\\text{kJ}$, so $450 : 600 = 0.75$."
         ],
         "mistakes": [
           {
