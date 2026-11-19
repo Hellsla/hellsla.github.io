@@ -1,7 +1,7 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy3-9` writes them into lesson.md."""
 import math
 from figlib import Fig, Axes, INK, MUTED, WHITE, RULE, GLASS, HEAT, HEAT_LIGHT, HOT, HOT_LIGHT, COLD, COLD_LIGHT, \
-    ALUMINIUM, IRON, WATER, fi
+    ALUMINIUM, IRON, WATER, fi, bounce_speed
 import herolib as H
 
 
@@ -12,19 +12,34 @@ def star(f, cx, cy, r=8):
     return f.path("M" + " L".join(f"{x:g},{y:g}" for x, y in pts) + " Z", fill=INK)
 
 
-def particle(f, x, y, vx, vy, length, color=HOT):
+def fade(f, T):
+    """Animated (work queue 8f): the marks that belong to the still's one moment (velocity arrows, hit marks) are
+    gone while the particles run, and back at the loop's end; the still is unchanged."""
+    return f.motion([(0, 0, 0, 0, 1), (0.03, 0, 0, 0, 0), (0.97, 0, 0, 0, 0), (1, 0, 0, 0, 1)], T)
+
+
+def particle(f, x, y, vx, vy, length, color=HOT, run=None):
+    """run = (box, vx, vy, period): the particle (not its arrow) bounces about in box while the figure plays."""
+    if run: f.drift(x, y, run[0], run[1], run[2], run[3], 6.5)
     f.circle(x, y, 6.5, color)
+    if run: f.end()
     L = math.hypot(vx, vy)
     ux, uy = vx / L, vy / L
+    if run: fade(f, run[3])
     f.arrow(x + ux * 8, y + uy * 8, x + ux * (8 + length), y + uy * (8 + length), HEAT, 2.5, 10)
+    if run: f.end()
 
 
 def micro_boyle():
     f = Fig("fy39-micro", 332, "Mikromalli Boylen laista, kaaviokuva. Vasemmalla sylinterissä on kahdeksan kaasuhiukkasta "
             "tilavuudessa V ja paineessa p. Oikealla samat kahdeksan hiukkasta on puristettu mäntää painamalla puoleen "
             "tilavuuteen V/2 samassa lämpötilassa. Nopeusnuolet ovat yhtä pitkät, mutta männän ja pohjan osumamerkkejä "
-            "on kaksi kertaa niin monta, joten paine on 2p. Kaasutilan korkeudet ovat suhteessa 2 : 1.")
+            "on kaksi kertaa niin monta, joten paine on 2p. Kaasutilan korkeudet ovat suhteessa 2 : 1.", anim=True)
     dy = 14
+    T = 8.0
+    # one bounce pattern per particle: (k along x, k along y in the big cylinder); the squeezed one has twice the y-bounces at the same speed
+    ks = [(1, 2), (2, 1), (1, 1), (2, 2), (1, 2), (2, 1), (3, 1), (1, 1)]
+    signs = [(-1, 1), (1, -1), (1, 1), (-1, -1), (-1, 1), (1, -1), (1, 1), (1, -1)]
     # (x offset in cylinder, y in cylinder, direction): left cylinder, gas 30..250 -> 220 high; right one is squeezed to 110 high
     parts = [(28, 56, -20, 7), (75, 44, 20, -7), (125, 60, 18, 10), (52, 120, -2, -8), (100, 110, -9, 10),
              (145, 144, 5, -12), (30, 176, 20, 8), (118, 180, 20, -4)]
@@ -36,13 +51,20 @@ def micro_boyle():
         f.line(x0 + 80, 6 + dy, x0 + 80, top - 14 + dy, INK, 4)
         f.line(x0 + 55, 6 + dy, x0 + 105, 6 + dy, INK, 5, cap="round")
         scale = h / 220
-        for px, py, vx, vy in parts:
+        # the room of the particles' centres: the gas space less a particle radius; the squeezed one gets 3.25 px more each way
+        # so that both cylinders' y-room is exactly 207 : 103.5 and the speeds can be equal (drift_track)
+        pad = 0 if top == 30 else 3.25
+        box = (x0, top + dy - pad, x0 + 160, 250 + dy + pad)
+        for (px, py, vx, vy), (kx, ky), (sx, sy) in zip(parts, ks, signs):
             y = top + 12 + (py - 30) * scale if top != 30 else py + 0
-            particle(f, x0 + px, y + dy, vx, vy, 20)
+            run = (box, sx * bounce_speed(160, T, kx, 6.5), sy * bounce_speed(box[3] - box[1], T, ky * (1 if top == 30 else 2), 6.5), T)
+            particle(f, x0 + px, y + dy, vx, vy, 20, run=run)
+        fade(f, T)
         for hx in hits_top:
             star(f, x0 + hx, top + 7 + dy)
         for hx in hits_bot:
             star(f, x0 + hx, 243 + dy)
+        f.end()
     star(f, 222, 52 + dy)
     f.tex(238, 52 + dy, r"\text{osuma}", "start")
     f.line(218, 200 + dy, 296, 200 + dy, MUTED, 4)

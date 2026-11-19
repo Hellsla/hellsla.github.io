@@ -74,7 +74,7 @@ with sync_playwright() as p:
     expect("a task whose every number answer is checked is remembered as checked", bool(t2) and isinstance(chk.get(t2, {}).get("done"), str), (t2, chk))
     # a task with a choice: Vastaa counts it once every part is answered
     t3 = q.evaluate("(skip) => { const li = [...document.querySelectorAll('#exercises li[id]')].find((l) => !skip.includes(l.id) && l.querySelector('fieldset.choice') && !l.querySelector('form.check, fieldset.tf, fieldset.order')); if (!li) return '';"
-                    " li.querySelectorAll('fieldset.choice').forEach((fs) => { fs.querySelector('input[type=radio]').checked = true; fs.querySelector('button').click(); }); return li.id; }", [t1, t2])
+                    " li.querySelectorAll('fieldset.choice').forEach((fs) => { fs.querySelector('input[type=radio]').checked = true; fs.querySelector('button.commit').click(); }); return li.id; }", [t1, t2])
     chk = q.evaluate("JSON.parse(localStorage.getItem('ruukkilabra:tarkistettu') || '{}')")
     expect("a multiple-choice task answered with Vastaa is remembered as checked", bool(t3) and isinstance(chk.get(t3, {}).get("done"), str), (t3, chk))
     # the module pages

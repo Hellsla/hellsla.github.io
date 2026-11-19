@@ -822,7 +822,9 @@ def exercise_html(e, solution_html, read=None, core=False, num=None, level=None)
     model = figcat.figure_html(e["model_figure"], T.lang, read) if e.get("model_figure") else ""   # a drawing task's model diagram, inside the solution
     sol = f'<details class="solution"><summary>{T("lesson.solution")}</summary>{model}<div class="steps">{solution_html}</div></details>' if solution_html else ""
     fig = figcat.figure_html(e["figure"], T.lang, read) if e.get("figure") else ""   # a figure by its id (scripts/figcat.py)
-    fig = (data_table(e["data"]) if e.get("data") else "") + fig + (exercise_choice(e) if e.get("choices") or e.get("statements") or e.get("order") else "")
+    if e.get("data") and fig: fig = f'<div class="data-fig">{data_table(e["data"])}{fig}</div>'   # a small table and a figure in a row: side by side where both fit, stacked on a phone (work queue 22, teacher 2026-11-19)
+    else: fig = (data_table(e["data"]) if e.get("data") else "") + fig
+    fig = fig + (exercise_choice(e) if e.get("choices") or e.get("statements") or e.get("order") else "")
     # an exercise's own hints (teacher 2026-11-12, e.g. a MAFY table task: the table's name): closed boxes under the
     # task, opened by a tap, a click or the keyboard, never by hovering (a phone has no pointer to hover with)
     hints = e.get("hints") or []
@@ -1595,8 +1597,8 @@ def build_language(lang):
     hero = ('<header class="about-hero"><img class="about-logo" src="brand/kiviruukin-lukio-oikea-valkoinen.svg" alt="Kiviruukin lukio" width="175" height="100">'
             + (h1.group(1) if h1 else "") + '</header>')
     about_body = hero + (about_body[h1.end():] if h1 else about_body)
-    (out / ABOUT).write_text(page(T("site.about"), f'<article class="about">{about_body}</article>',
-                                  f'<a href="index.html">{T("site.name")}</a> › {T("site.about")}', ABOUT, T("site.about_lead"), main_class="reading about-page"))
+    (out / ABOUT).write_text(ahjo.kiviruukki_mark(page(T("site.about"), f'<article class="about">{about_body}</article>',
+                                  f'<a href="index.html">{T("site.name")}</a> › {T("site.about")}', ABOUT, T("site.about_lead"), main_class="reading about-page")))
     if FORMS and lang in SUBMISSION_LANGS:   # Palautukset (teacher 2026-11-06): where the chapters have the button
         (out / FORMS_PAGE).write_text(page(forms_title(), forms_page_body(), f'<a href="index.html">{T("site.name")}</a> › {esc(forms_title())}',
                                            FORMS_PAGE, T("site.returns_desc"), main_class="reading return-page"))

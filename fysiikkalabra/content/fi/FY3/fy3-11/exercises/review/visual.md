@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: c6cf825435b84022
-SCOPE: delta wording from 3962664527ed4eb6 base 64d4935
+CONTENT-HASH: f719262d2793f4c5
+SCOPE: delta wording from c6cf825435b84022 base 6153818
 
 ## Blocking
 (none)
@@ -9,9 +9,8 @@ SCOPE: delta wording from 3962664527ed4eb6 base 64d4935
 (none)
 
 ## Checked
-- Delta, wording only: the diff read in full. The prefix "Esimerkkiaineisto:" is gone; each task now opens with a capital letter and reads as a normal sentence. No numbers, symbols, units or LaTeX changed.
-- Captures: opened fy3-4 L3 part 1 and 4 at 1280 px (content/fi/FY3/fy3-4/review/shots), which show the layout of this kind of task card; the other sets' captures were not opened, because the diff changes only the first words of a text.
-- Hash unchanged at the end.
+- Delta: only the Answer line of L2-04 in solutions.md. Vastaus-rivi: syy johtaa, lause sujuva ja yksiselitteinen; termit (merkitsevä numero) oikein; LaTeX-yksiköt kunnossa.
+- Opened content/en/FY3/fy3-11/review/shots/fy3-11-open-exercises-L2-1280-4.png and -5.png, -6.png (layout around the change intact). No phone capture of the solution opened; the change is plain prose, no new formula row.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

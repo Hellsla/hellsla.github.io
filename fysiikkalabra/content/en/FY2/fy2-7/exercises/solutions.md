@@ -59,7 +59,12 @@ $$ is $4.0\,\%$ of the sent energy, which is a usual loss for an electricity gri
 **Conversions:** $\eta = 100\,\% - 4.0\,\% = 96.0\,\% = 96.0 : 100 = 0.960$.
 **Substitution:** $P_\text{arrived} = 0.960 \cdot 125\,\text{MW} = 120.0\,\text{MW}$
 **Answer:** $120\,\text{MW}$, three significant figures as in the sent power $125\,\text{MW}$.
-**Reasonableness:** The power lost is $4.0\,\% \cdot 125\,\text{MW} = 5.0\,\text{MW}$, and $$
+**Reasonableness:** The power lost is $$
+\begin{aligned}
+&4.0\,\% \cdot 125\,\text{MW} \\
+&= 5.0\,\text{MW}
+\end{aligned}
+$$, and $$
 \begin{aligned}
 &120.0\,\text{MW} + 5.0\,\text{MW} \\
 &= 125\,\text{MW}
@@ -200,7 +205,12 @@ Voltage does not add energy, and the loss still does not disappear completely: a
 **Find:** the share of the sent energy that is lost, as a percentage
 **Principle:** The loss is the difference between the sent and the arrived energy, and the share of the loss is calculated from the sent energy.
 **Formula:** $E_\text{loss} = E_\text{sent} - E_\text{arrived}$, and the share $p = \dfrac{E_\text{loss}}{E_\text{sent}}$
-**Conversions:** The quotient is a decimal number, which is converted into a percentage by multiplying by one hundred: $0.048 = 0.048 \cdot 100\,\% = 4.8\,\%$.
+**Conversions:** The quotient is a decimal number, which is converted into a percentage by multiplying by one hundred: $$
+\begin{aligned}
+0.048 &= 0.048 \cdot 100\,\% \\
+&= 4.8\,\%
+\end{aligned}
+$$.
 **Substitution:** $E_\text{loss} = 250\,\text{MWh} - 238\,\text{MWh} = 12\,\text{MWh}$, and $p = \dfrac{12\,\text{MWh}}{250\,\text{MWh}} = 0.048 = 4.8\,\%$
 **Answer:** $4.8\,\%$, two significant figures, because the difference $12\,\text{MWh}$ is a two-digit number.
 **Reasonableness:** Four per cent of $250\,\text{MWh}$ would be $10\,\text{MWh}$, and the loss $12\,\text{MWh}$ is slightly greater, so $4.8\,\%$ is of the right size. Also $$
@@ -253,7 +263,12 @@ Justification: at a higher voltage the same power is transmitted with a smaller 
 
 When the voltage doubles, the current halves, and the loss decreases faster than the current: a current half as great gives a quarter of the loss.
 
-**Reasonableness:** The voltage increases sixteen-fold between $20\,\text{kV}$ and $320\,\text{kV}$, and the loss power becomes $16\,\text{MW} : 0.0625\,\text{MW} = 256$ times smaller. The result is smaller than $0.25\,\text{MW}$ but positive, as it should be, and it continues the pattern of the table.
+**Reasonableness:** The voltage increases sixteen-fold between $20\,\text{kV}$ and $320\,\text{kV}$, and the loss power becomes $$
+\begin{aligned}
+&16\,\text{MW} : 0.0625\,\text{MW} \\
+&= 256
+\end{aligned}
+$$ times smaller. The result is smaller than $0.25\,\text{MW}$ but positive, as it should be, and it continues the pattern of the table.
 
 ## fy2-7-L2-07
 **Find:** which answer corrects the claim “electricity travels at the speed of light, so there are no losses”.

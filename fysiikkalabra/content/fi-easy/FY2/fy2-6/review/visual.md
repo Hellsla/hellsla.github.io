@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 46e3caa7a34295c6
+CONTENT-HASH: 20b141f946cfd677
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: retrieval task 2 kW to 12 GW, 36 GWh, LaTeX units and case ending 12 GW:ssa; opened fy2-8 fig-row-1280 and fy2-4 sim-390 captures as layout sample; diff text read for typography and Finnish, no figure or layout change.
+- delta (calculation chains re-broken into aligned rows): opened fy2-6-example-390-1/-2, stage-sovella-390-1 (worked example steps 3-7), open-tarkista-1280-3 (hints, solution and reasonableness open). Equals signs aligned, units upright with thin space, decimal comma, answer boxed; nothing clipped, no overflow.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

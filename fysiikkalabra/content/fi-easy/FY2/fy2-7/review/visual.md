@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 18d3ea7dbe6b16e4
+CONTENT-HASH: 616f468a87cead68
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: retrieval prompt gained a district-heating context sentence; opened fy2-8 fig-row-1280 and fy2-4 sim-390 captures as layout sample; diff text read for typography and Finnish, no figure or layout change.
+- Delta (inquiry.json chains re-broken into rows): opened fi-easy open-tarkista-1280 part 3 (Laskutehtävä solution: aligned SIJOITUS rows, boxed VASTAUS, JÄRKEVYYS block). Rows align at "=", nothing clipped, layout intact.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

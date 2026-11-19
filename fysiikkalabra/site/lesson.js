@@ -351,6 +351,10 @@
     const head = document.createElement('div'); head.className = 'ex-head';
     const num = li.querySelector(':scope > .ex-num'); if (num) head.append(num);   // the running number "6-3" first (build.py number_label)
     li.querySelectorAll(':scope > .ex-core').forEach((tag) => head.append(tag));   // Annettu (an assigned task, tehty.js), Ydintehtävä, Syventävä
+    // U2 (teacher 2026-11-14, work queue 11): the number and the marks stay on top; the things the student opens
+    // (Vihjeet, Vastaus, Näytä ratkaisu, the lock) go below a rule at the end of the card, after the answer controls.
+    const foot = document.createElement('div'); foot.className = 'ex-foot';
+    const hints = li.querySelector(':scope > .hints'); if (hints) foot.append(hints);
     boxes.forEach((d, i) => {
       d.id = d.id || `${li.id}-${d.classList.contains('answer') ? 'answer' : 'solution'}`;
       const b = document.createElement('button'); b.type = 'button'; b.className = 'ex-toggle';
@@ -358,8 +362,9 @@
       const sync = () => b.setAttribute('aria-expanded', String(d.open));
       b.addEventListener('click', () => { d.open = !d.open; });
       d.addEventListener('toggle', sync); sync();
-      head.append(b);
+      foot.append(b);
     });
+    boxes[0].before(foot);
     li.prepend(head); li.classList.add('ex-js');
   });
 
@@ -372,7 +377,7 @@
   // (padstore.js, IndexedDB, loaded with the editor): saved a moment after each change, restored when the editor
   // opens, with export/import of a backup file and deletion. Nothing is sent anywhere.
   const PAD_TASKS = [   // [the task, its part the editor goes in, what it goes before]
-    ['#exercises li[id]', (t) => t.querySelector(':scope > .task') && t, (box) => box.querySelector(':scope > form.check, :scope > details.answer')],   // write first, then check (teacher 2026-11-01)
+    ['#exercises li[id]', (t) => t.querySelector(':scope > .task') && t, (box) => box.querySelector(':scope > form.check, :scope > .ex-foot, :scope > details.answer')],   // Kirjoita ratkaisu first, then the answer field and Tarkista (U2); the foot (Vihjeet, Vastaus, ...) after both
     ['section.practice-task[id]', (t) => t.querySelector(':scope > .task-card'), (box) => box.querySelector(':scope > details.reveal')],
     // an exam task and a review (FY9) task are their own card (practice.py exam_task); one with only choices gets none (teacher 2026-11-06, "lisää kaikkiin materiaaleihin")
     ['div.practice-task[id]', (t) => (!t.querySelector(':scope > ol.parts') || t.querySelector(':scope > ol.parts > li:not(:has(.choices))')) && t, (box) => box.querySelector(':scope > details.reveal')],
@@ -564,8 +569,10 @@
     // and Poista ratkaisu sit beside Piilota editori while the editor is open (teacher 2026-11-06).
     {
       const row = document.createElement('div'); row.className = 'ex-row';
-      li.insertBefore(row, open); row.append(open, box);
-      if (before && before.matches('form.check')) row.append(before);
+      li.insertBefore(row, open);
+      const acts = [...li.querySelectorAll(':scope > fieldset .choice-actions')].pop();   // a task of choices, true/false or ordering: Kirjoita ratkaisu on the row of the last Vastaa, before it; the editor below the choices
+      if (before && before.matches('form.check')) row.append(open, box, before);   // write first, then the field and Tarkista (teacher 2026-11-18)
+      else { if (acts) acts.prepend(open); else row.append(open); row.append(box); }
     }
     // a written solution in the editor opens the task's answer (part 8; it replaced the tick "Olen tehnyt ratkaisun")
     let told = false;
@@ -777,7 +784,7 @@
     if (OPEN_ALL || !boxes.length) return () => {};
     const notes = [], buttons = [];
     const note = () => { const n = lockNote(msg(why)); notes.push(n); return n; };
-    const head = boxes[0].parentElement.querySelector(':scope > .ex-head');
+    const head = boxes[0].parentElement.querySelector(':scope > .ex-foot');
     boxes.forEach((d) => {
       d.open = false; d.dataset.locked = '1';
       const sum = d.querySelector(':scope > summary'); sum.setAttribute('aria-disabled', 'true');

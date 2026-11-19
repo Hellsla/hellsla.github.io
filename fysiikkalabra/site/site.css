@@ -666,9 +666,16 @@ form.check output[data-state=close]{color:#7a5a00;font-weight:600}form.check out
 .ex-row>.pad{flex:1 1 100%;min-width:0;margin:0}
 .ex-row>.pad-head{margin:0;flex:0 1 auto}.ex-row>.pad-head[hidden]{display:none}
 .pad-saverow{display:flex;flex-wrap:wrap;align-items:baseline;gap:.2rem 1.2rem;margin-top:.3rem}.pad-saverow>.pad-save,.pad-saverow>.pad-saved{margin:0}.pad-saverow>.pad-saved[open]{flex-basis:100%}
-.ex-row>form.check{flex:1 1 18rem;min-width:0;margin:0}
-.ex-row form.check button{background:var(--surface);color:var(--accent-deep)}
-.ex-row form.check button:hover{background:var(--accent-soft)}
+/* U2 (work queue 11): Kirjoita ratkaisu (outlined), then the field, its unit and Tarkista (filled, last) wrap as one row; the open editor takes a row between them, the feedback comes under Tarkista */
+.ex-row>form.check{flex:1 1 18rem;min-width:0;margin:0}   /* the field, unit and Tarkista stay together; the feedback is under them */
+#exercises .pad-open{background:var(--surface);color:var(--accent-deep)}
+#exercises .pad-open:hover,#exercises .pad-open[aria-expanded=true]{background:var(--accent-soft);border-color:var(--accent-deep);color:var(--accent-deep)}
+#exercises .choice-actions .pad-open{margin:0}
+/* what the student opens (Vihjeet, Vastaus, Näytä ratkaisu, the lock) sits under a rule at the end of the card */
+.ex-foot{display:flex;flex-wrap:wrap;align-items:center;gap:.1rem 1rem;margin:.7rem 0 .2rem;padding-top:.3rem;border-top:1px solid var(--line)}
+.ex-foot .hints{display:contents}.ex-foot .hints details{margin:0}.ex-foot .hints details[open]{flex:1 1 100%;margin:.2rem 0}
+.ex-foot .hints summary{display:inline-flex;align-items:center;min-height:40px;cursor:pointer}
+@media print{.ex-foot{border-top:0}}
 .pad{margin:0 0 .8rem;position:relative}
 .pad .rich-text-editor{min-height:7.5rem;padding:.6rem .75rem;background:var(--surface);border:1px solid #767676;border-radius:var(--inner-radius);font-size:var(--fs-inner);line-height:1.6;color:var(--ink);font-family:var(--sans);overflow-wrap:anywhere;scroll-margin-top:9rem}
 .pad .rich-text-editor:focus{outline:2px solid var(--accent);outline-offset:2px;border-color:var(--accent)}
@@ -892,6 +899,11 @@ table.exp-table{min-width:min(100%,17rem)}   /* teacher 2026-11-13: the reading 
 table.exp-table caption{hyphens:none;overflow-wrap:normal;word-break:normal}   /* a phone may wrap at a word boundary only */
 @media (min-width:30rem){.experiment table.exp-table caption{white-space:nowrap}}   /* the caption sets the table's least width, so a narrow table (two short columns) still shows "Simulaation lukemat" on one row */
 @media (min-width:48rem){table.exp-table th:first-child,table.exp-table td:first-child{min-width:4.5rem}table.exp-table th:not(:first-child),table.exp-table td:not(:first-child){min-width:3rem}}   /* a phone's table with four columns must not outgrow its box */
+/* work queue 22 (teacher 2026-11-19, fy8-3): a small data table and a figure in one task are a row (build.py exercise_li): side by side where both fit, the figure then taking the rest of the width, stacked where they do not (a phone). The table is as wide as its caption and columns, with no empty strip at its right edge (the 17 rem floor above is for a simulation's reading table), and its caption does not wrap to a narrow column. */
+.data-fig{display:flex;flex-wrap:wrap;align-items:flex-start;column-gap:1.25rem;row-gap:0;margin:.6rem 0 1rem}
+.data-fig>table.exp-table{flex:0 0 auto;min-width:0;margin:.6rem 0 .3rem}
+.data-fig>.fig{flex:1 1 17rem;min-width:0;margin:.6rem 0 0}
+.data-fig>table.exp-table{width:max-content;max-width:100%}.data-fig>table.exp-table caption{hyphens:none;overflow-wrap:normal;word-break:normal}   /* as wide as its caption on one row where that fits the box, else the caption wraps at a word boundary (a long data caption on a 360 px phone must not widen the table, CI 2026-11-19); a table outside a .data-fig is unchanged */
 .exp-status,.explain-status{font-size:var(--fs-ui);color:var(--ink-2);margin:.3rem 0 0;min-height:1.3em}
 .exp-question{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line-2)}
 .hints{margin:.4rem 0 .2rem}.hints details{margin:.2rem 0}
@@ -1263,12 +1275,15 @@ dialog.zoom-dlg::backdrop{background:rgba(14,17,22,.78)}
    starts and ends where the group is drawn, so starting and pausing never jump; paused shows the still again. */
 @keyframes fa-vib{0%,50%,100%{transform:none;animation-timing-function:ease-out}25%{transform:translateX(var(--fa-a));animation-timing-function:ease-in}75%{transform:translateX(calc(-1 * var(--fa-a)));animation-timing-function:ease-in}}
 svg.fig-anim.is-playing .fa-vib{animation:fa-vib var(--fa-t,2s) var(--fa-d,0s) infinite}
+/* The shared primitives (figlib motion(), oscillate(), travel(), drift(), orbit(), collide()): the generated @keyframes
+   named in --fa-n carry the whole path, so one rule runs them all; linear, because the keyframes are dense enough. */
+svg.fig-anim.is-playing .fa-k{animation:var(--fa-n) var(--fa-t,2s) var(--fa-d,0s) linear infinite}
 .fa-ctl{display:flex;justify-content:center;margin:.35rem 0 0}
 .fa-play{display:inline-flex;align-items:center;gap:.45rem;min-height:40px;padding:.3rem .9rem;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--accent-deep);font:inherit;font-size:15px;cursor:pointer}
 .fa-play:hover{border-color:var(--accent)}.fa-play:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .fa-play .fa-ico{display:inline-block;width:1.3em;text-align:center;font-size:1em;line-height:1}
-@media (prefers-reduced-motion:reduce){svg.fig-anim .fa-vib{animation:none!important}.fa-ctl{display:none}}
-@media print{svg.fig-anim .fa-vib{animation:none!important}.fa-ctl{display:none!important}}
+@media (prefers-reduced-motion:reduce){svg.fig-anim .fa-vib,svg.fig-anim .fa-k{animation:none!important}.fa-ctl{display:none}}
+@media print{svg.fig-anim .fa-vib,svg.fig-anim .fa-k{animation:none!important}.fa-ctl{display:none!important}}
 /* Read aloud (readaloud.js, teacher 2026-11-03): Kuuntele / Tauko at the right end of the stage bar, its menu (speed,
    voice) and its note floating under the bar, and where the reading is: the block tinted, the sentence and the word
    highlighted (CSS Custom Highlight API, the page itself is not changed). Outline and shadow only, so the layout never moves. */
