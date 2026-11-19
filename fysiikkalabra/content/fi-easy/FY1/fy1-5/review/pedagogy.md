@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c9fca46ff3b1933d
+CONTENT-HASH: db42d5950f2c3f51
 
 ## Blocking
-
+(none)
 
 ## Polish
-- The (s, t) axes are the reverse of the lesson's (t, s) convention; the correct feedback says so only implicitly. One sentence noting that the speed is the inverse of this slope would prevent confusion.
-- The statement that the points lie on a line hints at Ennuste 1 (a line), but it was there before and does not give the through-origin shape or any value.
+(none)
 
 ## Checked
-batch delta review: Kertaa task against Ennuste 1 and 2: no answer disclosed; slope feedback consistent.
+- Delta (exit-ticket.json item 2): $x = x_0 + vt$ is now $s = s_0 + vt$, so the notation matches the lesson text and glossary (tasainen liike: s = s0 + vt). My round 2 polish item 1 is resolved.
+- Arithmetic unchanged and correct: 4 m + 3 m/s · 2 s = 10 m; the 14 m error is the "double the position" misconception and the answer names it.
+- Round 2 polish item 2 was a false alarm: the source already carries the units ($3\,\text{m} \to 6\,\text{m}$).
+- The change touches only a symbol, no wording, so Finnish and the reading level stand as approved.
+- Hash at start and end: db42d5950f2c3f51.

@@ -394,6 +394,12 @@ Tutkimuskysymys on kysymys, johon mittaus voi vastata. Esimerkki on "Miten lelua
 
 **Hypoteesi** on perusteltu ja testattava ennuste, joka vastaa tutkimuskysymykseen. Esimerkiksi: "Auto liikkuu radalla vakionopeudella. Siksi sen kulkema matka on suoraan verrannollinen aikaan, $s = vt$." Hypoteesista pitää seurata jotain mitattavaa. Sen pitää myös voida osoittautua vääräksi. Ennuste "auto kulkee jotenkin" ei ole hypoteesi, koska mikään mittaus ei voi kumota sitä eli osoittaa sitä vääräksi.
 
+```pysahdy
+Ennuste on: "Jos matka kaksinkertaistuu, kulkuaika kaksinkertaistuu." Kelpaako se hypoteesiksi? Miksi?
+---
+Kelpaa. Siitä seuraa jotain mitattavaa. Mittaus voi myös näyttää sen vääräksi, jos aika ei kaksinkertaistu.
+```
+
 ### Muuttujat
 **Muuttuja** on suure tai muu asia, joka voi vaihdella tutkimuksessa. Kokeessa tehdään kolme asiaa. Yhtä muuttujaa muutetaan, toista mitataan ja kaikki muut pidetään samoina:
 
@@ -402,6 +408,12 @@ Tutkimuskysymys on kysymys, johon mittaus voi vastata. Esimerkki on "Miten lelua
 - **vakioitavat muuttujat**: ne pysyvät samoina koko kokeen ajan, tässä auto, paristot, alusta ja lähtötapa.
 
 Joskus kaksi muuttujaa muuttuu yhtä aikaa, esimerkiksi matka ja paristot. Silloin ei voi päätellä, mikä muutti tulosta. Siksi koe on reilu vasta, kun vain muutettava muuttuja vaihtuu.
+
+```pysahdy
+Ryhmä vaihtaa matkaa. Samalla se vaihtaa leluautoon uudet paristot. Aika lyhenee. Voiko ryhmä päätellä, mikä sen aiheutti?
+---
+Ei voi. Kaksi muuttujaa muuttui yhtä aikaa. Silloin syytä ei voi päätellä. Vain muutettava muuttuja saa vaihtua.
+```
 
 <svg data-fig="setup" data-style="house" viewBox="0 0 600 414" role="img" aria-label="Kaavakuva kokeen asetelmasta. Leluauto toimii paristoilla. Se ajaa pöydällä lähtöviivalta maaliviivalle. Maalissa on ruutulippu. Pöydän reunassa on mittanauha, jonka asteikko on metreinä. Lähtöviivan ja maaliviivan väli on muutettava muuttuja, matka s. Sekuntikello mittaa aikaa t. Aika on mitattava muuttuja. Vakioina pysyvät auto, alusta ja paristot. Asteikko on mittakaavassa: 150 yksikköä kuvassa vastaa metriä." style="max-width:100%;font-size:24px">
   <foreignObject x="24" y="13.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{muutettava: } s$</div></foreignObject>
@@ -613,6 +625,12 @@ missä $\varepsilon$ on suhteellinen epävarmuus (ilmoitetaan usein prosentteina
   <foreignObject x="304" y="188.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\varepsilon \le 5\,\%$</div></foreignObject>
   <foreignObject x="184" y="73.5" width="180" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\varepsilon = \dfrac{0{,}2\,\text{s}}{t}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Ajan epävarmuus on $0{,}2\,\text{s}$. Suhteellinen epävarmuus saa olla enintään $2{,}0\,\%$. Kuinka pitkä aika pitää vähintään mitata?
+---
+Aika pitää olla vähintään $t = \Delta t/\varepsilon_\text{max}$, joten $t = 0{,}2\,\text{s}/0{,}020 = 10\,\text{s}$.
+```
 
 Tarvittava matka saadaan tasaisen liikkeen mallista $s = vt$. Jos mittaus tehdään usealla matkalla, mittauspisteisiin sovitetaan suora (luku *Graafinen esitys ja suoran sovittaminen*). Aika $t$ on vaaka-akselilla ja matka $s$ pystyakselilla. Silloin suoran kulmakerroin on nopeus $v$. Lyhin kelvollinen matka on se, jolla suhteellinen epävarmuus vielä pysyy valitussa rajassa $\varepsilon_\text{max}$. Lyhyemmällä matkalla suhteellinen epävarmuus ylittää tämän rajan. Silloin tulos on liian epätarkka.
 

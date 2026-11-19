@@ -295,6 +295,12 @@ Tasainen liike on liikettä suoraa pitkin vakionopeudella. Kappale kulkee yhtä 
 ### Suoraan verrannollisuus
 Kaksi suuretta ovat suoraan verrannollisia, jos niiden suhde eli osamäärä on aina sama. Oletetaan, että tasainen liike alkaa nollakohdasta. Silloin paikka $s$ on sama kuin kuljettu matka. Paikka ja aika $t$ ovat suoraan verrannollisia. Kaksinkertainen aika antaa kaksinkertaisen matkan. Suhde $s : t$ on nopeus $v$. $(t, s)$-kuvaajassa tämä näkyy suorana, joka kulkee origon kautta.
 
+```pysahdy
+Kärry lähtee nollakohdasta. Se kulkee $3\,\text{s}$:ssa $6\,\text{m}$. Kuinka pitkän matkan se kulkee $9\,\text{s}$:ssa samalla nopeudella?
+---
+Aika on kolme kertaa pidempi. Siksi myös matka on kolme kertaa pidempi: $18\,\text{m}$. Matka on suoraan verrannollinen aikaan.
+```
+
 ### Lineaarinen malli
 Tasainen liike on malli, ei todellisuus. Pyöräilijä polkee epätasaisesti. Voyager 2 hidastuu hieman Auringon vetovoiman takia. Malli on silti hyvä, kun nopeus muuttuu tarkasteltavana aikana vain vähän. Mallin kuvaaja on suora. Suoraa kuvaa lineaarinen malli: paikka muuttuu yhtä paljon jokaista sekuntia kohti. Mallilla lasketut arvot ovat mallin arvoja. Niitä verrataan mittauksiin.
 
@@ -356,8 +362,20 @@ missä $\Delta s$ on paikan muutos (m) ja $\Delta t$ sen aikaväli (s). Suora le
   <foreignObject x="448" y="93.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s = s_0 + vt$</div></foreignObject>
 </svg>
 
+```pysahdy
+Kaksi kappaletta liikkuu samalla nopeudella. Toinen lähtee nollakohdasta ja toinen paikasta $5\,\text{m}$. Miten niiden $(t, s)$-suorat eroavat toisistaan?
+---
+Suorat ovat yhdensuuntaiset, koska kulmakerroin eli nopeus on sama. Toinen suora leikkaa $s$-akselin kohdassa $5\,\text{m}$. Se on siirtynyt ylös.
+```
+
 ### Yksiköt
 Muunna ensin yksiköt yhteensopiviksi, yleensä SI-yksiköiksi. Tee muunnos sijoittamalla yksikön paikalle sen arvo. Esimerkiksi $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{h} = 3600\,\text{s}$. Siksi $72\,\text{km/h} = \tfrac{72\cdot1000\,\text{m}}{3600\,\text{s}} = 20\,\text{m/s}$. Samoin $1\,\text{min} = 60\,\text{s}$. Aurinkokunnan etäisyyksiä ilmoitetaan usein tähtitieteellisinä yksikköinä. Yksikkö $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$ on suunnilleen Maan ja Auringon keskietäisyys.
+
+```pysahdy
+Auto ajaa nopeudella $90\,\text{km/h}$. Kuinka monta metriä se kulkee sekunnissa?
+---
+Sijoitetaan $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{h} = 3600\,\text{s}$. Silloin $90\,\text{km/h} = \tfrac{90\cdot1000\,\text{m}}{3600\,\text{s}} = 25\,\text{m/s}$. Auto kulkee sekunnissa $25\,\text{m}$.
+```
 
 ## Esimerkki
 Voyager 2 -luotain ylitti heliopaussin 5. marraskuuta 2018. Silloin sen etäisyys Auringosta oli $s_0 = 119{,}0\,\text{AU}$ (Burlaga ym. 2019, Nature Astronomy). Luotaimen nopeus Aurinkoon nähden oli silloin $v = 15{,}341\,\text{km/s}$ (NASA/JPL). Oletetaan nopeus vakioksi. Kuinka kaukana Auringosta luotain on mallin mukaan 5. marraskuuta 2026?

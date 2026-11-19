@@ -388,6 +388,12 @@ Fysiikka kuvaa maailmaa mitattavilla ominaisuuksilla, joita kutsutaan **suureiks
   <foreignObject x="373" y="255.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$\text{yksikkö}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Kaverisi kertoo kynän pituudeksi pelkän luvun 12. Miksi tämä ei ole fysiikassa kelvollinen mittaustulos?
+---
+Lukuarvo ilman yksikköä ei kerro mitään: 12 voisi tarkoittaa senttimetrejä, tunteja tai kilogrammoja.
+```
+
 ### SI-järjestelmä
 Jotta metri olisi sama metri kaikkialla maailmassa, tiedeyhteisö on sopinut yhteisestä yksikköjärjestelmästä, **SI-järjestelmästä**. Sillä on seitsemän perussuuretta, ja jokaiselle on oma perusyksikkönsä. Kaikki muut suureet johdetaan niistä: nopeus on pituus jaettuna ajalla, joten sen yksikkö on $\text{m/s}$, ja pinta-alan yksikkö on $\text{m}^2$.
 
@@ -475,6 +481,12 @@ Metri sopii huoneen mittaamiseen mutta ei atomille eikä Neptunukselle. Siksi yk
 
 Kun siirrytään pienempään yksikköön, lukuarvo kasvaa: $4{,}2\,\text{km} = 4{,}2\cdot10^{3}\,\text{m} = 4200\,\text{m}$. Kun siirrytään suurempaan, lukuarvo pienenee. Suure pysyy samana, vain sen kirjoitustapa muuttuu.
 
+```pysahdy
+Kuinka monta millimetriä on $2{,}5\,\text{m}$? Kasvaako vai pieneneekö lukuarvo?
+---
+Millimetri on pienempi yksikkö kuin metri ($1\,\text{mm} = 10^{-3}\,\text{m}$), joten lukuarvo kasvaa: $2{,}5\,\text{m} = 2500\,\text{mm}$.
+```
+
 ### Jokaiselle mittakaavalle oma yksikkö
 Yksikkö valitaan niin, että lukuarvo on helppo lukea. Luvussa *Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet* nähtiin, että aineen ja maailmankaikkeuden rakenteet ovat kymmenpotenssien portailla. Jokaiselle portaalle on kätevä yksikkö:
 
@@ -504,6 +516,12 @@ Yksikköä vaihdettaessa suure ei muutu, vain sen kirjoitustapa. Muunnos tehdä�
 Toiseen suuntaan $1\,\text{m} = 0{,}001\,\text{km}$, joten $350\,\text{m} = 350\cdot0{,}001\,\text{km} = 0{,}35\,\text{km}$. Tulosta kannattaa aina järkeillä: pienemmässä yksikössä lukuarvo on suurempi, koska pieniä yksiköitä tarvitaan enemmän. Pinta-alassa yksikkö on kahden pituuden tulo, joten $$\begin{aligned} 1\,\text{km}^2 &= 1000\,\text{m}\cdot1000\,\text{m} \\ &= 10^{6}\,\text{m}^2 \end{aligned}$$.
 
 Tähtitieteessä kilometri on liian pieni yksikkö. **Astronominen yksikkö** $\text{AU}$ on sovittu pituusyksikkö, joka vastaa likimain Maan ja Auringon keskimääräistä etäisyyttä: $$\begin{aligned} 1\,\text{AU} &= 149\,597\,870{,}7\,\text{km} \\ &\approx 1{,}496\cdot10^{8}\,\text{km} \end{aligned}$$. Valovuosi on sekin pituusyksikkö eikä aikayksikkö: se on matka, jonka valo kulkee tyhjiössä vuodessa, noin $9{,}46\cdot10^{12}\,\text{km}$.
+
+```pysahdy
+Tähden valo kulkee Maahan neljä vuotta. Kuinka kaukana tähti on valovuosina, ja onko valovuosi aikayksikkö?
+---
+Tähti on neljän valovuoden päässä. Valovuosi on pituusyksikkö: se on matka, jonka valo kulkee tyhjiössä vuodessa.
+```
 
 Etäisyyden voi ilmoittaa myös sillä ajalla, jonka valo tarvitsee sen kulkemiseen. Valo etenee tyhjiössä tasaisella nopeudella $c$, joten sen kulkema matka on nopeus kertaa aika, $s = ct$. Kulkuaika saadaan, kun tämä kaava ratkaistaan ajan suhteen:
 

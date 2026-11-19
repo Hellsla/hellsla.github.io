@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: b0951191567d27b3
+CONTENT-HASH: 2c4bced98370c675
 
 ## Blocking
 
 ## Polish
-None.
+
 
 ## Checked
-batch delta review: retrieval choice now V = a³ = (4,0·10⁻² m)³ = 6,4·10⁻⁵ m³, recomputed; distractors 64 (no conversion), 6,4·10⁻³ (area factor 10⁻⁴), 0,64 (length factor 10⁻²) each match their feedback; two significant figures from 4,0 cm; side 4,0 cm agrees with the lesson text; lesson-answers.py prints 6,4e-05.
+batch delta review: four new pysahdy blocks (volume tripled → mass tripled, density unchanged; 200 g vs 50 g same material → same density, fourfold volume; intercept 45 g = empty container mass m0, density from slope, consistent with m_yht = ρV + m0).

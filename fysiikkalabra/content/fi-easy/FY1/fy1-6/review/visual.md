@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: aea6f326f3889386
+CONTENT-HASH: 8577b79765a947c4
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- batch delta review (fi-easy, fy1-6): changed hammer task read in full (units in LaTeX, decimal comma, aligned feedback chain); layout judged from en fy1-6 herata-390 (task and options render cleanly) and fi-easy herata captures.
+batch delta review: the diff only adds "Pysähdy ja mieti" blocks; opened the rendered block in fy1-1 (stage-selita-390-2) and fy1-4 (theory-1280-1): green card, label, question and closed Vastaus read well, no clipping, numbers with units in LaTeX, Finnish natural; figures untouched.

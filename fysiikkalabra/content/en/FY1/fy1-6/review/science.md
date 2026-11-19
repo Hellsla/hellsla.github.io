@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: dc5ea3042f2d6581
+CONTENT-HASH: cdb5bffd5c73d8e5
 
 ## Blocking
 
 ## Polish
-- The 0,93 m/s distractor: t/s has the unit s/m, not m/s; the feedback could say so as the 1,8 option does for m·s.
+- The feather check opens with "In free fall all objects have the same g"; "Without air resistance" would match the lesson's own condition more exactly (C, not blocking).
 
 ## Checked
-batch delta review: Moon hammer 1,4 m in 1,3 s agrees with g = 1,62 m/s² (t = √(2h/g) = 1,31 s); v = s/t = 1,08 → 1,1 m/s, recomputed; mistakes s·t = 1,82, t/s = 0,93, s+t = 2,7 match their feedback; average-speed caveat for changing speed stated; lesson-answers.py prints 1,0769.
+batch delta review: three new checks (29.4 -> 39.2 m/s after 4 s; feather vs hammer caused by air; 5.0 m/s + g*2.0 s = 24.6 -> 25 m/s, two figures from the data, no air resistance stated); recomputed.

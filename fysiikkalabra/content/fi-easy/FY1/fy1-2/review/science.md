@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 4e8a63f52d7e0aa7
+CONTENT-HASH: 6b9912005af1d152
 
 ## Blocking
 
 ## Polish
-None.
+
 
 ## Checked
-batch delta review: 10¹³ m : 10³ = 10¹⁰ km, recomputed; 10¹⁶ (added exponents), 10¹³ (no change), 10⁴ (13:3) wrong with correct feedback; Voyager 2 at about 140 AU ≈ 2·10¹³ m, order 10¹³ right.
+batch delta review: three new pysahdy boxes (number without unit; 2,5 m = 2500 mm with 1 mm = 10^-3 m; light-year as a length unit, 4 years of travel = 4 valovuotta), consistent with the theory.

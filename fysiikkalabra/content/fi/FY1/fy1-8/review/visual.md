@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f27e1b5a92d037fc
+CONTENT-HASH: 259fae214dbc0e89
 
 ## Blocking
 - none
@@ -8,4 +8,7 @@ CONTENT-HASH: f27e1b5a92d037fc
 - none
 
 ## Checked
-- Opened fy1-8-example-390-1 (stages 1–5): paragraph breaks and markers read cleanly, question last, no clipping or overflow at 390 px.
+- Delta: three new "Pysähdy ja mieti" boxes (hypoteesi, muuttujat, suhteellinen epävarmuus). Opened theory-1280-1, theory-1280-3 and stage-selita-390-1 and -4: boxes sit after the paragraph they test, question last, answers closed under "Vastaus", numbers and units in LaTeX ($0{,}2\,\text{s}$, $2{,}0\,\%$), no clipping or overflow at 390 or 1280 px, figures (setup, epävarmuus) still beside their paragraphs.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

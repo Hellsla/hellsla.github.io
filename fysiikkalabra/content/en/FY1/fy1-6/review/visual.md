@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: dc5ea3042f2d6581
+CONTENT-HASH: cdb5bffd5c73d8e5
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: dc5ea3042f2d6581
 - none
 
 ## Checked
-- batch delta review (en, fy1-6): captures opened: stage-herata-390 (the task shows $1.4\,\text{m}$, $1.3\,\text{s}$ and the four options as whole rows, nothing clipped; units upright with thin space); feedback chain read in source.
+batch delta review: contact sheets (page 2 of fy1-1, fy1-2, fy1-4, fy1-6; the added "Stop and think" boxes render as a tinted box with a closed Answer disclosure, readable at 390 px, maths rendered, no clipping, layout around them intact); other lessons judged from the diff plus the same shared component, the figures unchanged.

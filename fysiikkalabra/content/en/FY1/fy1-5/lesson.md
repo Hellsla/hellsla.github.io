@@ -295,6 +295,12 @@ Uniform motion is motion along a straight line at constant speed: in equal inter
 ### Direct proportionality
 Two quantities are directly proportional if their ratio is always the same. When uniform motion starts from the zero point, the position $s$, which here equals the distance travelled, and the time $t$ are directly proportional: double the time gives double the distance, and the ratio $s : t$ is the speed $v$. In a $(t, s)$ graph this shows as a straight line through the origin.
 
+```pysahdy
+A trolley starts from the zero point and travels $6\,\text{m}$ in $3\,\text{s}$. How far does it travel in $9\,\text{s}$ at the same speed?
+---
+The time becomes three times as long, so the distance also becomes three times as long: $18\,\text{m}$. The distance is directly proportional to time.
+```
+
 ### Linear model
 Uniform motion is a model, not reality. A cyclist pedals unevenly, and Voyager 2 slows down slightly because of the Sun's gravity. The model is still good when the speed changes only a little during the time being considered. Its graph is a straight line, and a straight line is described by a linear model: the position changes by the same amount every second. Values calculated with the model are model values, which are compared with measurements.
 
@@ -356,8 +362,20 @@ where $\Delta s$ is the change in position (m) and $\Delta t$ is its time interv
   <foreignObject x="448" y="93.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s = s_0 + vt$</div></foreignObject>
 </svg>
 
+```pysahdy
+Two objects move at the same speed. One starts from the zero point and the other from position $5\,\text{m}$. How do their $(t, s)$ lines differ?
+---
+The lines are parallel, because the slope, which is the speed, is the same. The second line crosses the $s$-axis at $5\,\text{m}$, so it is shifted up.
+```
+
 ### Units
 Always convert to compatible units (usually SI units) before substituting: substitute the value of the unit in its place. For example $1\,\text{km} = 1000\,\text{m}$ and $1\,\text{h} = 3600\,\text{s}$, so $72\,\text{km/h} = \tfrac{72\cdot1000\,\text{m}}{3600\,\text{s}} = 20\,\text{m/s}$. In the same way $1\,\text{min} = 60\,\text{s}$. Distances on the scale of the Solar System are often given in astronomical units: $1\,\text{AU} = 149\,597\,870.7\,\text{km}$ is roughly the mean distance between the Earth and the Sun.
+
+```pysahdy
+A car drives at $90\,\text{km/h}$. How many metres does it travel in one second?
+---
+Substitute $1\,\text{km} = 1000\,\text{m}$ and $1\,\text{h} = 3600\,\text{s}$: $90\,\text{km/h} = \tfrac{90\cdot1000\,\text{m}}{3600\,\text{s}} = 25\,\text{m/s}$. The car travels $25\,\text{m}$ in one second.
+```
 
 ## Worked example
 Voyager 2 crossed the heliopause on 5 November 2018 at a distance of $s_0 = 119.0\,\text{AU}$ from the Sun (Burlaga et al. 2019, Nature Astronomy). The speed of the probe relative to the Sun at the crossing was $v = 15.341\,\text{km/s}$ (NASA/JPL). Assume the speed is constant. According to the model, how far from the Sun is the probe on 5 November 2026?
