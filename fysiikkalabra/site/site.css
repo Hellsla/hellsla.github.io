@@ -896,7 +896,7 @@ table.exp-table caption{hyphens:none;overflow-wrap:normal;word-break:normal}   /
 .data-fig{display:flex;flex-wrap:wrap;align-items:flex-start;column-gap:1.25rem;row-gap:0;margin:.6rem 0 1rem}
 .data-fig>table.exp-table{flex:0 0 auto;min-width:0;margin:.6rem 0 .3rem}
 .data-fig>.fig{flex:1 1 17rem;min-width:0;margin:.6rem 0 0}
-table.exp-table.ex-data{min-width:0}table.exp-table.ex-data caption{hyphens:none;overflow-wrap:normal;word-break:normal;white-space:nowrap}   /* a data caption is one row at any width (a long one scrolls with its table rather than wrapping to the width of two columns) */
+.data-fig>table.exp-table{width:max-content;max-width:100%}.data-fig>table.exp-table caption{hyphens:none;overflow-wrap:normal;word-break:normal}   /* as wide as its caption on one row where that fits the box, else the caption wraps at a word boundary (a long data caption on a 360 px phone must not widen the table, CI 2026-11-19); a table outside a .data-fig is unchanged */
 .exp-status,.explain-status{font-size:var(--fs-ui);color:var(--ink-2);margin:.3rem 0 0;min-height:1.3em}
 .exp-question{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line-2)}
 .hints{margin:.4rem 0 .2rem}.hints details{margin:.2rem 0}
