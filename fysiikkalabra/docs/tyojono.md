@@ -166,7 +166,7 @@ Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jäl
 - 8j: fy1-1, fy1-8 ja fy2-1 ohitetaan (ei kertaustehtävää).
 - 5d: FY5:n 16 ja FY6:n 25 jäljellä olevaa riviä jäävät listalle (myös fy5-7 `x = A \sin(…)`).
 - Pysähdy ja mieti: FY1:n luvut tehty (PR #760, kaikki kielet, katselmoitu); seuraavaksi FY2, kurssi kerrallaan.
-- Pysähdy ja mieti: FY2 (luvut 1–8) varattu. Varattu: claude/20-pysahdy-fy2
+- Pysähdy ja mieti: FY2 (luvut 1–8) kesken, PR #765. Luvut 1–3 ja 5–8 katselmoitu (PASS, kaikki kielet); fy2-4: kolme katselmointikierrosta käytetty, viimeinen korjaus (johtopäätöksen kriteeri koskee hehkulamppua) odottaa vahvistuskatselmointia, ja `site/` rakennetaan sen jälkeen. Varattu: claude/20-pysahdy-fy2
 - Pysähdy ja mieti: FY4:n luvut tehty (PR #745, kaikki kielet, katselmoitu); **opettaja 2026-11-19 aamulla ("kaikki ok"): laajennetaan muihin kursseihin**, kurssi kerrallaan saman kurssin keskeneräisen PR:n jälkeen.
 - FY6 Sovella: vastauksen paljastavat alakohdat ja ajautumisnopeus/idealisointi korjataan; ei uusia tehtävätyyppejä (ei diodi- eikä Kirchhoff-tehtäviä).
 - Pienet: header-raja 72 rem hyväksytty (jaettu, site.css; tehty jo f19810c, 2026-11-17); kirjavinkeissä suorat Finna-teoslinkit ja "Tiede – luovaa leikkiä" -kirjan suomenkielinen painos, jos löytyy; podcasteille YouTube-linkit sallittu; FY10:n taulukko-otsakkeet 390 px:ssä lyhennetään.
