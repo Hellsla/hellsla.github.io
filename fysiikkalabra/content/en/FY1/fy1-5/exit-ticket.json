@@ -5,6 +5,6 @@
   },
   {
     "q": "A trolley starts at $4\\,\\text{m}$ and moves at $3\\,\\text{m/s}$. At $1\\,\\text{s}$ it is at $7\\,\\text{m}$. Is it at $14\\,\\text{m}$ at $2\\,\\text{s}$? Justify.",
-    "a": "No. The position is $x = x_0 + vt = 4\\,\\text{m} + 3\\,\\text{m/s} \\cdot 2\\,\\text{s} = 10\\,\\text{m}$. Only the distance travelled doubles ($3\\,\\text{m} \\to 6\\,\\text{m}$), because the starting position is not zero."
+    "a": "No. The position is $s = s_0 + vt = 4\\,\\text{m} + 3\\,\\text{m/s} \\cdot 2\\,\\text{s} = 10\\,\\text{m}$. Only the distance travelled doubles ($3\\,\\text{m} \\to 6\\,\\text{m}$), because the starting position is not zero."
   }
 ]

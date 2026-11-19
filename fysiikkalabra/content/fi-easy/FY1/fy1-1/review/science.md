@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: c54d27e2f917e557
+CONTENT-HASH: b7e68c872ff2292c
 
 ## Blocking
 
 ## Polish
-
+- content/fi-easy/FY1/fy1-1/lesson.md:46 — "Tätä pienempää kokoa ei voi tutkia nykyisillä malleilla ja mittauksilla." is true as stated (C), but read alone it can suggest that sizes just above the Planck length can be measured. Real measurements reach only about $10^{-19}\,\text{m}$, and the Finnish text gives the actual reason (quantum gravity is expected to matter there) — optional: "Nykyiset fysiikan mallit eivät todennäköisesti toimi näin pienessä mittakaavassa. Niin pientä kokoa ei voi mitata."
 
 ## Checked
-batch delta review: three new pysahdy boxes (4,2·10^5 m -> 10^6 m by the lesson's coefficient-3 rule; 4 valovuotta = 3,8·10^16 m recomputed; gravity vs electromagnetism via neutrality and always-attractive gravity, matches theory) and the worked example's knowns split into a list (same values).
+- delta: the two inquiry prompts now include "Yksi suuruusluokka tarkoittaa kymmenkertaista kokoa". This agrees with lesson.md:46 (the exponent goes up by one, the number becomes ten times larger) and with the glossary entry *suuruusluokka*. No numbers or answers changed, and exactly one option is still correct.
+- delta: the new Planck-length sentence does not contradict the sim's `model` box ("luonnonvakioista laskettu suure") or the next sentence (not measured directly, calculated from natural constants). The value $1{,}6\cdot10^{-35}\,\text{m}$ is unchanged.
+- hash b7e68c872ff2292c, the same at the start and at the end of the review.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c54d27e2f917e557
+CONTENT-HASH: b7e68c872ff2292c
 
 ## Blocking
 (none)
@@ -8,4 +8,9 @@ CONTENT-HASH: c54d27e2f917e557
 (none)
 
 ## Checked
-batch delta review: the diff only adds "Pysähdy ja mieti" blocks; opened the rendered block in fy1-1 (stage-selita-390-2) and fy1-4 (theory-1280-1): green card, label, question and closed Vastaus read well, no clipping, numbers with units in LaTeX, Finnish natural; figures untouched.
+delta round 2: opened theory-1280-1 (#48): the reworded Planckin pituus sentence ("Tätä pienempää kokoa ei voi tutkia nykyisillä malleilla ja mittauksilla.") reads fluent and uses the glossary terms (malli, mittaus); paragraph is about 90 words, the scale-axis figure beside it is untouched and the layout held (text and figure about as tall, no gap, no clipping).
+Opened stage-ennusta-390-1 (#15) and open-ennusta-1280-1 (#53): both added sentences "Yksi suuruusluokka tarkoittaa kymmenkertaista kokoa." sit between the situation and the question, so the question stays last; prompts wrap cleanly at 390 px, numbers with units in LaTeX, options and Lisää ennusteita box unaffected.
+Figures and approved figure bodies unchanged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -5,6 +5,6 @@
   },
   {
     "q": "Vaunu lähtee paikasta $4\\,\\text{m}$. Se liikkuu nopeudella $3\\,\\text{m/s}$. Hetkellä $1\\,\\text{s}$ se on paikassa $7\\,\\text{m}$. Onko se hetkellä $2\\,\\text{s}$ paikassa $14\\,\\text{m}$? Perustele.",
-    "a": "Ei ole. Paikka on $x = x_0 + vt = 4\\,\\text{m} + 3\\,\\text{m/s} \\cdot 2\\,\\text{s} = 10\\,\\text{m}$. Vain kuljettu matka kaksinkertaistuu ($3\\,\\text{m} \\to 6\\,\\text{m}$). Alkupaikka ei ole nolla."
+    "a": "Ei ole. Paikka on $s = s_0 + vt = 4\\,\\text{m} + 3\\,\\text{m/s} \\cdot 2\\,\\text{s} = 10\\,\\text{m}$. Vain kuljettu matka kaksinkertaistuu ($3\\,\\text{m} \\to 6\\,\\text{m}$). Alkupaikka ei ole nolla."
   }
 ]
