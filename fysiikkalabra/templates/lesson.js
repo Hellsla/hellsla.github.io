@@ -570,7 +570,7 @@
     {
       const row = document.createElement('div'); row.className = 'ex-row';
       li.insertBefore(row, open);
-      const acts = li.querySelector(':scope > fieldset.choice .choice-actions');   // a task of choices: Kirjoita ratkaisu beside Vastaa, the editor below the choices
+      const acts = [...li.querySelectorAll(':scope > fieldset .choice-actions')].pop();   // a task of choices, true/false or ordering: Kirjoita ratkaisu on the row of the last Vastaa, before it; the editor below the choices
       if (before && before.matches('form.check')) row.append(open, box, before);   // write first, then the field and Tarkista (teacher 2026-11-18)
       else { if (acts) acts.prepend(open); else row.append(open); row.append(box); }
     }

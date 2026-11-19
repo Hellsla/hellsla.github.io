@@ -116,6 +116,10 @@ with sync_playwright() as pw:
         row = pg.evaluate("""() => [...document.querySelectorAll('#exercises li[id]')].every(li => !li.querySelector('form.check') || li.querySelector(':scope > .ex-row > .pad-open + .pad + form.check'))
             && document.querySelectorAll('label.solved').length === 0""")
         expect(f"{page}: '{T('js.pad_write')}' and the answer box (input, unit, Tarkista) on one row; no tick 'Olen tehnyt ratkaisun' (teacher 2026-11-06)", row)
+        acts = pg.evaluate("""() => [...document.querySelectorAll('#exercises li[id]:has(fieldset .choice-actions)')].every(li => {
+            const a = [...li.querySelectorAll(':scope > fieldset .choice-actions')].pop(), o = a.querySelector('.pad-open'), c = a.querySelector('button.commit');
+            return o && c && o.nextElementSibling === c; })""")
+        expect(f"{page}: a task of choices, true/false or ordering has '{T('js.pad_write')}' on the row of its last Vastaa, before it (teacher 2026-11-19)", acts)
         head = pg.evaluate("""() => [...document.querySelectorAll('#exercises li[id]')].every(li => {
             const h = li.querySelector(':scope > .ex-foot'), t = h && [...h.querySelectorAll('.ex-toggle')], d = [...li.querySelectorAll(':scope > details.answer, :scope > details.solution')];
             return h && h.classList.contains('ex-foot') && t.length === d.length && t.every((b, i) => b.getAttribute('aria-controls') === d[i].id && b.textContent === d[i].querySelector('summary').textContent)
