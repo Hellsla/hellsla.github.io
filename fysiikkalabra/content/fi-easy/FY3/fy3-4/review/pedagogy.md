@@ -1,11 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 6e9a9085dad716e1
+VERDICT: FAIL
+CONTENT-HASH: 1995c2cb6557e473
 
 ## Blocking
-- none
+- inquiry.json koe 1 `question` (vastaus 9,81 kPa) + simulaation lukemat (390 px) — lukemat näyttävät "kulmakerroin $\rho g$ = 9,81 kPa/m" ja "Kokonaispaine on 1,97 kertaa ilmanpaine" heti kun sim aukeaa, joten tehtävä "lue se mittauksistasi" ratkeaa ilman mittausta ja ennuste 1 on valmiina; kulmakertoimen luku datasta (slotin vakiotermisuora) jää harjoittelematta — korjaus: poista kulmakerroin- ja suhderivi lukemista (jätä Laskennan selitykseen) tai näytä ne vasta kun kokeen rivit on kirjattu.
 
 ## Polish
-- The new photo (diver, bubbles) sits after the paragraph on pressure direction, which does not mention a diver's depth; its caption is fine but it is decoration here. Move it beside the diver example or the Tiivistelmä if the visual reviewer agrees.
+- inquiry.json (ennuste 3, kolme palautetta) — "Teoriatiivistelmässä"; vaihe on nimeltään Teoria.
+- inquiry.json (ennuste 1, koe 1, johtopäätös) — "mittauksesi" simulaation arvoista; kirjoita "mallin arvot".
+- lesson.md (Esimerkki, Järkevyys) — sukeltajan kehoa koskeva loppukappale ei kuulu tarkistukseen; poista tai siirrä.
+- Selkeä suomi — tarkista "ylipaine" ja "hydrostaattinen paine" selitetty heti ensimmäisellä kerralla (Ydinajatus), ei vasta Kaava-osassa.
 
 ## Checked
-batch delta review, round 1: the retrieval asks the weight of a 3000 kg water column above the diver (the hook's diver and "yläpuolella oleva vesi"), the prior G = mg. Distractors are the mass/weight mix, dividing by g and the unit kg; feedback repairs each. It does not give p = ρgh, the depth dependence or the pressure-versus-weight answer of Ennuste 1 to 3, nor the open question. The split paragraphs and photo alt text read clearly.
+- Sama rakenne kuin suomenkielisessä; polku fy3-1 ja fy3-3 → p = F/A → p = p₀ + ρgh.
+- Padon kysymys vastataan sitoutumisen jälkeen; ennusteiden harhaoptiot aitoja.
+- Kokeissa oikea muuttuja lukittu; esimerkki seitsemässä vaiheessa.
+- Tarkistukset (anturin asento, astian muoto, kulmakerroin, selitys) mittaavat käsitteitä.
+- Puhelin: sim luettava 390 px:llä.
