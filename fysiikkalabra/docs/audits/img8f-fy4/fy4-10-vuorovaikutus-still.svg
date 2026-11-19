@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-fig="vuorovaikutus" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva, ei mittakaavassa: kaksi ilmatyynyradan vaunua törmäyksen aikana. Vaunujen väliin jäävä jousipuskuri on puristunut. Ylhäällä punaiset voimanuolet: vaunu 1 työntää vaunua 2 oikealle voimalla F, ja vaunu 2 työntää vaunua 1 vasemmalle yhtä suurella vastakkaissuuntaisella voimalla −F. Molemmat voimat vaikuttavat saman ajan Δt. Alhaalla violetit nuolet ovat liikemäärien muutokset: vaunun 1 muutos Δp1 = −FΔt osoittaa vasemmalle ja vaunun 2 muutos Δp2 = FΔt oikealle, yhtä pitkinä. Niiden summa on nolla."  style="max-width:100%;font-size:24px">
+  <defs><style>@keyframes fa-fy410-vv-0{0%{transform:translate(0px,0px);opacity:1}50%{transform:translate(0px,0px);opacity:1}52%{transform:translate(0px,0px);opacity:0}54%{transform:translate(-90px,0px);opacity:0}56%{transform:translate(-90px,0px);opacity:1}90%{transform:translate(0px,0px);opacity:1}100%{transform:translate(0px,0px);opacity:1}}@keyframes fa-fy410-vv-1{0%{transform:translate(0px,0px);opacity:1}10%{transform:translate(0px,0px);opacity:1}44%{transform:translate(90px,0px);opacity:1}50%{transform:translate(90px,0px);opacity:1}52%{transform:translate(90px,0px);opacity:0}54%{transform:translate(0px,0px);opacity:0}56%{transform:translate(0px,0px);opacity:1}100%{transform:translate(0px,0px);opacity:1}}@keyframes fa-fy410-vv-2{0%{transform:translate(0px,0px);opacity:1}10%{transform:translate(0px,0px);opacity:1}12%{transform:translate(0px,0px);opacity:0}88%{transform:translate(0px,0px);opacity:0}90%{transform:translate(0px,0px);opacity:1}100%{transform:translate(0px,0px);opacity:1}}@keyframes fa-fy410-vv-3{0%{transform:translate(0px,0px);opacity:1}10%{transform:translate(0px,0px);opacity:1}12%{transform:translate(0px,0px);opacity:0}88%{transform:translate(0px,0px);opacity:0}90%{transform:translate(0px,0px);opacity:1}100%{transform:translate(0px,0px);opacity:1}}</style></defs>
+  <rect x="30" y="150" width="540" height="14" rx="2" fill="#c4ccd4" stroke="#8a96a3" stroke-width="2"/>
+  <circle cx="44" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="62" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="80" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="98" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="116" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="134" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="152" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="170" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="188" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="206" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="224" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="242" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="260" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="278" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="296" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="314" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="332" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="350" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="368" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="386" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="404" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="422" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="440" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="458" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="476" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="494" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="512" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="530" cy="157" r="1.8" fill="#8a96a3"/>
+  <circle cx="548" cy="157" r="1.8" fill="#8a96a3"/>
+  <g class="fa-k" style="--fa-n:fa-fy410-vv-0;--fa-t:8s;--fa-d:-0s">
+  <rect x="135" y="86" width="150" height="64" rx="4" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="141" y="144" width="138" height="6" fill="#8a96a3"/>
+  <foreignObject x="240" y="89.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1$</div></foreignObject>
+  </g>
+  <g class="fa-k" style="--fa-n:fa-fy410-vv-1;--fa-t:8s;--fa-d:-0s">
+  <rect x="325" y="86" width="150" height="64" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <rect x="331" y="144" width="138" height="6" fill="#8a96a3"/>
+  <foreignObject x="350" y="89.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2$</div></foreignObject>
+  </g>
+  <g class="fa-k" style="--fa-n:fa-fy410-vv-2;--fa-t:8s;--fa-d:-0s">
+  <path d="M285,128 L288.5,120 L295,136 L301.5,120 L308.5,136 L315,120 L321.5,136 L325,128" fill="none" stroke="#6c757d" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="325" y1="128" x2="426" y2="128" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M440,128 L425,135 L425,121 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <line x1="285" y1="128" x2="184" y2="128" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M170,128 L185,121 L185,135 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="488.5" y="45.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
+  <foreignObject x="72.5" y="45.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$-\overline{F}$</div></foreignObject>
+  <line x1="497" y1="74" x2="440" y2="122" stroke="#c92a2a" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="103" y1="74" x2="170" y2="122" stroke="#c92a2a" stroke-width="1.5" stroke-linecap="butt"/>
+  </g>
+  <foreignObject x="283.5" y="25.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta t$</div></foreignObject>
+  <line x1="20" y1="196" x2="580" y2="196" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <g class="fa-k" style="--fa-n:fa-fy410-vv-3;--fa-t:8s;--fa-d:-0s">
+  <line x1="300" y1="236" x2="185" y2="236" stroke="#7048e8" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M170,236 L186,229 L186,243 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <line x1="300" y1="236" x2="415" y2="236" stroke="#7048e8" stroke-width="5" stroke-linecap="butt"/>
+  <path d="M430,236 L414,243 L414,229 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <line x1="300" y1="222" x2="300" y2="250" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="87.5" y="257.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$\Delta\overline{p}_1 = -\overline{F}\,\Delta t$</div></foreignObject>
+  <foreignObject x="373.5" y="257.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$\Delta\overline{p}_2 = \overline{F}\,\Delta t$</div></foreignObject>
+  <foreignObject x="221" y="299.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta\overline{p}_1 + \Delta\overline{p}_2 = \overline{0}$</div></foreignObject>
+  </g>
+</svg>
