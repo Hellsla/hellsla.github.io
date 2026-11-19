@@ -25,6 +25,8 @@ In each state it reports:
              shorter one (a card that grows beside a short one; a figure beside a much longer text). The simulation
              and the worked example's problem are sticky beside their column and are not counted.
   small      reading text under 17 px (a phone never gets smaller text) or a control under 40 px tall
+  datafig    a small table beside a figure (.data-fig): stacked although both fit, overlapping, its caption wrapped to a
+             narrow column, or an empty strip at the table's right edge (work queue 22, teacher 2026-11-19)
   heading    a stage heading hidden under the sticky navigation after following its link (closed state only)
 Each finding names where it is (work queue 5, 2026-11-16): the nearest block with an id (the task "#fy8-1-L2-08", the
 stage "#teoria"), the open box, the solution step and the element ("at #fy8-1-L2-08 > details.solution > step
@@ -227,6 +229,20 @@ JS = """() => {
       const hi = Math.max(...hs), lo = Math.min(...hs);
       if (hi - lo > 240 * K && lo < 0.55 * hi) out.push({at: W(g), what: 'gap', over: Math.round(hi - lo), text: `${name(g)}: ${Math.round(hi - lo)} px empty beside the shorter column`});
     }
+  }
+  // datafig: a small table and a figure of one task (.data-fig, work queue 22) sit side by side when both fit and stacked when
+  // they do not; the table's caption is one row and the table has no empty strip at its right edge
+  for (const d of document.querySelectorAll('main .data-fig')) {
+    const t = d.querySelector(':scope > table'), f = d.querySelector(':scope > .fig');
+    if (!t || !f || !V(t) || !V(f)) continue;
+    const dr = R(d), tr = R(t), fr = R(f), room = dr.width - tr.width - 20 * K - 17 * 16 * K;   // the row's width less the table, the gap and the figure's least width
+    const side = Math.abs(tr.top - fr.top) < 4;
+    if (room >= 0 && !side) out.push({at: W(d), what: 'datafig', over: Math.round(room), text: `${name(d)}: table and figure are stacked although both fit side by side (${Math.round(room)} px to spare)`});
+    if (side && fr.left < tr.right - 1) out.push({at: W(d), what: 'datafig', over: Math.round(tr.right - fr.left), text: `${name(d)}: table and figure overlap`});
+    const cap = t.querySelector('caption');
+    if (cap && R(cap).height > 2.2 * parseFloat(getComputedStyle(cap).lineHeight || 20)) out.push({at: W(t), what: 'datafig', over: Math.round(R(cap).height), text: `${name(t)}: the caption wraps to ${Math.round(R(cap).height)} px`});
+    const last = Math.max(...[...t.querySelectorAll('th, td')].map((c) => R(c).right));
+    if (tr.right - last > 12 * K) out.push({at: W(t), what: 'datafig', over: Math.round(tr.right - last), text: `${name(t)}: ${Math.round(tr.right - last)} px empty at the table's right edge`});
   }
   // small: reading text keeps its size on a phone, and every control is big enough to hit
   for (const t of document.querySelectorAll('.act-theory > p, .act-theory .fig-text > p, .act-theory li, p.task, fieldset.choice legend, ul.choices label, .hook p, .learn li, details.solution .steps p:not(.sol-label)')) {

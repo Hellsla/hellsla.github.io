@@ -899,6 +899,11 @@ table.exp-table{min-width:min(100%,17rem)}   /* teacher 2026-11-13: the reading 
 table.exp-table caption{hyphens:none;overflow-wrap:normal;word-break:normal}   /* a phone may wrap at a word boundary only */
 @media (min-width:30rem){.experiment table.exp-table caption{white-space:nowrap}}   /* the caption sets the table's least width, so a narrow table (two short columns) still shows "Simulaation lukemat" on one row */
 @media (min-width:48rem){table.exp-table th:first-child,table.exp-table td:first-child{min-width:4.5rem}table.exp-table th:not(:first-child),table.exp-table td:not(:first-child){min-width:3rem}}   /* a phone's table with four columns must not outgrow its box */
+/* work queue 22 (teacher 2026-11-19, fy8-3): a small data table and a figure in one task are a row (build.py exercise_li): side by side where both fit, the figure then taking the rest of the width, stacked where they do not (a phone). The table is as wide as its caption and columns, with no empty strip at its right edge (the 17 rem floor above is for a simulation's reading table), and its caption does not wrap to a narrow column. */
+.data-fig{display:flex;flex-wrap:wrap;align-items:flex-start;column-gap:1.25rem;row-gap:0;margin:.6rem 0 1rem}
+.data-fig>table.exp-table{flex:0 0 auto;min-width:0;margin:.6rem 0 .3rem}
+.data-fig>.fig{flex:1 1 17rem;min-width:0;margin:.6rem 0 0}
+.data-fig>table.exp-table{width:max-content;max-width:100%}.data-fig>table.exp-table caption{hyphens:none;overflow-wrap:normal;word-break:normal}   /* as wide as its caption on one row where that fits the box, else the caption wraps at a word boundary (a long data caption on a 360 px phone must not widen the table, CI 2026-11-19); a table outside a .data-fig is unchanged */
 .exp-status,.explain-status{font-size:var(--fs-ui);color:var(--ink-2);margin:.3rem 0 0;min-height:1.3em}
 .exp-question{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line-2)}
 .hints{margin:.4rem 0 .2rem}.hints details{margin:.2rem 0}
