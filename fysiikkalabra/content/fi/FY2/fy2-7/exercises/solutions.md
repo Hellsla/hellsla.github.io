@@ -197,7 +197,12 @@ $$ ja $1350 : 20 \approx 68$, joten tulos on oikean suuruinen. Pieni putkiston h
 **Kysytty:** häviön osuus lähtevästä energiasta prosentteina
 **Periaate:** Häviö on lähtevän ja perille tulevan energian erotus, ja häviön osuus lasketaan lähtevästä energiasta.
 **Kaava:** $E_\text{häviö} = E_\text{lähtö} - E_\text{perille}$, ja osuus $p = \dfrac{E_\text{häviö}}{E_\text{lähtö}}$
-**Muunnokset:** Osamäärä on desimaaliluku, joka muutetaan prosentiksi kertomalla sadalla: $0{,}048 = 0{,}048 \cdot 100\,\% = 4{,}8\,\%$.
+**Muunnokset:** Osamäärä on desimaaliluku, joka muutetaan prosentiksi kertomalla sadalla: $$
+\begin{aligned}
+0{,}048 &= 0{,}048 \cdot 100\,\% \\
+&= 4{,}8\,\%
+\end{aligned}
+$$.
 **Sijoitus:** $E_\text{häviö} = 250\,\text{MWh} - 238\,\text{MWh} = 12\,\text{MWh}$, ja $p = \dfrac{12\,\text{MWh}}{250\,\text{MWh}} = 0{,}048 = 4{,}8\,\%$
 **Vastaus:** $4{,}8\,\%$, kaksi merkitsevää numeroa, koska erotus $12\,\text{MWh}$ on kahden numeron luku.
 **Järkevyys:** Neljä prosenttia luvusta $250\,\text{MWh}$ olisi $10\,\text{MWh}$, ja häviö $12\,\text{MWh}$ on hieman suurempi, joten $4{,}8\,\%$ on oikeaa suuruusluokkaa. Lisäksi $$

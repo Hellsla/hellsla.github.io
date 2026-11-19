@@ -111,7 +111,12 @@ $$.
 **Conversions:** $1.2\,\text{kW} = 1.2 \cdot 1000\,\text{W} = 1200\,\text{W}$, $0.50\,\text{MJ} = 0.50 \cdot 10^{6}\,\text{J} = 500\,000\,\text{J}$ and $20\,\% = 20 \cdot 0.01 = 0.20$.
 **Substitution:** $t = \dfrac{500\,000\,\text{J}}{0.20 \cdot 1200\,\text{W}} = \dfrac{500\,000\,\text{J}}{240\,\text{W}} = 2083\,\text{s}$
 **Answer:** $2083\,\text{s}$ or about $2.1 \cdot 10^{3}\,\text{s}$, two significant figures, as in the given values.
-**Reasonableness:** The useful power is only $240\,\text{W}$, so $0.50\,\text{MJ}$ takes more than half an hour: $2083\,\text{s} : 60 = 35\,\text{min}$. If the efficiency were $100\,\%$, it would take $500\,000\,\text{J} : 1200\,\text{W} = 417\,\text{s}$, and a time five times as long corresponds to an efficiency of $20\,\%$.
+**Reasonableness:** The useful power is only $240\,\text{W}$, so $0.50\,\text{MJ}$ takes more than half an hour: $2083\,\text{s} : 60 = 35\,\text{min}$. If the efficiency were $100\,\%$, it would take $$
+\begin{aligned}
+&500\,000\,\text{J} : 1200\,\text{W} \\
+&= 417\,\text{s}
+\end{aligned}
+$$, and a time five times as long corresponds to an efficiency of $20\,\%$.
 
 ## fy2-4-L3-03
 **Given:** from the figure, the electrical energy entering the motor $E_\text{o} = 240\,\text{J}$, and the thicknesses of the arrows in squares: incoming arrow $d_\text{o} = 8$ squares, useful energy arrow $d_\text{a} = 2$ squares and loss arrow $d_\text{h} = 6$ squares
@@ -150,7 +155,12 @@ Efficiency is at most $100\,\%$. In real devices it is usually below $100\,\%$, 
 **Conversions:** A percentage is converted to a number by substituting $1\,\% = 0.01$: $90\,\% = 90 \cdot 0.01 = 0.90$. The power does not need converting, because the answer is requested in kilowatts.
 **Substitution:** $P_\text{o} = \dfrac{180\,\text{kW}}{0.90} = 200\,\text{kW}$
 **Answer:** $200\,\text{kW}$ or $2.0 \cdot 10^{2}\,\text{kW}$, two significant figures, as in the efficiency $90\,\%$.
-**Reasonableness:** The power taken is larger than the useful power, as it should be. Check: $0.90 \cdot 200\,\text{kW} = 180\,\text{kW}$, and the loss power is $200\,\text{kW} - 180\,\text{kW} = 20\,\text{kW}$, that is, $10\,\%$ of the power taken.
+**Reasonableness:** The power taken is larger than the useful power, as it should be. Check: $0.90 \cdot 200\,\text{kW} = 180\,\text{kW}$, and the loss power is $$
+\begin{aligned}
+&200\,\text{kW} - 180\,\text{kW} \\
+&= 20\,\text{kW}
+\end{aligned}
+$$, that is, $10\,\%$ of the power taken.
 
 ## fy2-4-L2-05
 **Given:** from the table, the power taken $P_\text{o}$ and the light power $P_\text{a}$ of the lamps: incandescent lamp $60\,\text{W}$ and $3.0\,\text{W}$, halogen lamp $40\,\text{W}$ and $2.8\,\text{W}$, fluorescent lamp $18\,\text{W}$ and $3.6\,\text{W}$, LED lamp $9.0\,\text{W}$ and $2.7\,\text{W}$

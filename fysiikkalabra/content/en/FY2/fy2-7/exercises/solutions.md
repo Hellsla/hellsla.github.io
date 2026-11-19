@@ -59,7 +59,12 @@ $$ is $4.0\,\%$ of the sent energy, which is a usual loss for an electricity gri
 **Conversions:** $\eta = 100\,\% - 4.0\,\% = 96.0\,\% = 96.0 : 100 = 0.960$.
 **Substitution:** $P_\text{arrived} = 0.960 \cdot 125\,\text{MW} = 120.0\,\text{MW}$
 **Answer:** $120\,\text{MW}$, three significant figures as in the sent power $125\,\text{MW}$.
-**Reasonableness:** The power lost is $4.0\,\% \cdot 125\,\text{MW} = 5.0\,\text{MW}$, and $$
+**Reasonableness:** The power lost is $$
+\begin{aligned}
+&4.0\,\% \cdot 125\,\text{MW} \\
+&= 5.0\,\text{MW}
+\end{aligned}
+$$, and $$
 \begin{aligned}
 &120.0\,\text{MW} + 5.0\,\text{MW} \\
 &= 125\,\text{MW}
@@ -258,7 +263,12 @@ Justification: at a higher voltage the same power is transmitted with a smaller 
 
 When the voltage doubles, the current halves, and the loss decreases faster than the current: a current half as great gives a quarter of the loss.
 
-**Reasonableness:** The voltage increases sixteen-fold between $20\,\text{kV}$ and $320\,\text{kV}$, and the loss power becomes $16\,\text{MW} : 0.0625\,\text{MW} = 256$ times smaller. The result is smaller than $0.25\,\text{MW}$ but positive, as it should be, and it continues the pattern of the table.
+**Reasonableness:** The voltage increases sixteen-fold between $20\,\text{kV}$ and $320\,\text{kV}$, and the loss power becomes $$
+\begin{aligned}
+&16\,\text{MW} : 0.0625\,\text{MW} \\
+&= 256
+\end{aligned}
+$$ times smaller. The result is smaller than $0.25\,\text{MW}$ but positive, as it should be, and it continues the pattern of the table.
 
 ## fy2-7-L2-07
 **Find:** which answer corrects the claim “electricity travels at the speed of light, so there are no losses”.
