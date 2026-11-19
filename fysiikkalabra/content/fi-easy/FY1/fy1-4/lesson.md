@@ -220,10 +220,22 @@ Oikeissa mittaussarjoissa mittauspisteet eivät yleensä ole täsmälleen samall
 
 Hyvä sovitus on lähellä kaikkia pisteitä. Se ei kallistu yhden pisteen suuntaan. Pisteitä on suoran molemmin puolin suunnilleen yhtä monta. Ylä- ja alapuolen poikkeamat kumoavat suunnilleen toisensa. Suoran ei tarvitse kulkea yhdenkään pisteen kautta. Jos jokin piste on selvästi muita kauempana suorasta, selvitä sen syy. Älä jätä pistettä pois automaattisesti.
 
+```pysahdy
+Kuudesta mittauspisteestä viisi on hyvin suoralla, mutta yksi on selvästi kauempana. Poistatko sen heti?
+---
+En. Piste voi näyttää mittausvirheen tai uuden ilmiön. Selvitä ensin syy. Vasta sitten päätä, mitä pisteelle tehdään.
+```
+
 ### Lineaarinen malli
 Pisteet voivat asettua likimain suoralle. Silloin suureiden riippuvuutta kuvaa lineaarinen malli. Mallin yhtälö on suoran yhtälö. Kulmakerroin kertoo, kuinka paljon pystysuure muuttuu, kun vaakasuure kasvaa yhden yksikön. Vakiotermi kertoo pystysuureen arvon, kun vaakasuure on nolla. Lineaarinen malli on fysikaalinen malli. Se on mittauksiin perustuva yksinkertaistettu kuvaus ilmiöstä. Kuvaaja on sen graafinen malli, ja suoran yhtälö on sen matemaattinen malli. Yhtälö antaa lukuarvoja, joten malli on kvantitatiivinen.
 
 Vakiotermi voi olla nolla. Silloin suora kulkee origon kautta ja suureet ovat suoraan verrannolliset: kaksinkertainen $x$ antaa kaksinkertaisen $y$:n. Mittaukset tukevat mallia vain mitatulla alueella. Sen ulkopuolelta mittaukset eivät kerro mitään. Mitattujen pisteiden väliltä voi arvioida arvoja mallin avulla. Sitä kutsutaan interpoloinniksi. Suoraa voi jatkaa mitatun alueen ulkopuolelle. Sitä kutsutaan ekstrapoloinniksi. Silloin oletetaan, että riippuvuus pysyy samanlaisena. Tulos on vain arvio. Pisteet voivat kaareutua systemaattisesti suoran ympärillä. Esimerkiksi päiden pisteet ovat suoran yläpuolella ja keskikohdan pisteet sen alapuolella. Silloin lineaarinen malli ei sovi.
+
+```pysahdy
+Jännite mitattiin välillä $x = 2\ldots 10$. Kummassa arvossa tulos on luotettavampi: kun $x = 6$ vai kun $x = 30$?
+---
+Kun $x = 6$. Se on mitatulla alueella (interpolointi). Kohdassa $x = 30$ suoraa jatketaan mitatun alueen ulkopuolelle (ekstrapolointi). Silloin tulos on vain arvio.
+```
 
 ## Kaava: Suoran yhtälö
 Lineaarisen mallin kuvaaja on suora. Suoran yhtälö on
@@ -289,6 +301,12 @@ Tässä $\Delta y$ on pisteiden välinen $y$:n muutos. $\Delta x$ on pisteiden v
 Kaksi asiaa vaikuttaa tulokseen. Ensimmäinen: lue pisteet sovitetulta suoralta, älä mittauspisteistä. Toinen: valitse pisteet kaukana toisistaan. Silloin lukemavirhe vaikuttaa kulmakertoimeen vähän. Vakiotermi $b$ luetaan suoran ja pystyakselin leikkauskohdasta. Sen voi myös laskea yhdestä suoran pisteestä: $b = y_1 - kx_1$. Joskus $y$ tunnetaan ja halutaan $x$. Silloin ratkaise yhtälöstä: $x = \tfrac{y - b}{k}$.
 
 Kulmakertoimen merkki kertoo suunnan. Kun kulmakerroin on positiivinen, suora nousee. Kun kulmakerroin on negatiivinen, suora laskee. Kulmakertoimella on yleensä fysikaalinen merkitys. Matka-aikakuvaajassa se on nopeus. Massa-tilavuuskuvaajassa se on tiheys.
+
+```pysahdy
+Matka-aikakuvaajan suora kulkee pisteiden $(2{,}0\,\text{s};\ 3{,}0\,\text{m})$ ja $(6{,}0\,\text{s};\ 11{,}0\,\text{m})$ kautta. Mikä on kulmakerroin ja mitä se kertoo?
+---
+$k = \frac{\Delta y}{\Delta x} = \frac{8{,}0\,\text{m}}{4{,}0\,\text{s}} = 2{,}0\,\text{m/s}$. Matka-aikakuvaajassa kulmakerroin on nopeus.
+```
 
 ## Esimerkki
 Vedenkeittimen veden lämpötilaa $T$ mitattiin joka minuutti. Tulokset ovat taulukossa:
