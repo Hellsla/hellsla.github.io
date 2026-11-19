@@ -24,7 +24,7 @@ and the map of checks `fysiikkalabra/docs/QUALITY.md`.
    is invisible to other sessions, so an item is taken by an open pull request: before starting, look at the open pull
    requests; make your first commit mark the item `Varattu: <branch>` and open the draft pull request right away. The
    pull request that finishes the item removes it from the queue.
-3. **Normally at most three workers at a time, each on a different course; when the teacher says the work is urgent, no limit** (teacher 2026-11-15). Teacher 2026-11-16: for now at most five workers at a time. Work on one course runs one after another
+3. **Normally at most three workers at a time, each on a different course; when the teacher says the work is urgent, no limit** (teacher 2026-11-15). Teacher 2026-11-19: for now at most three workers at a time (was five, 2026-11-16). Work on one course runs one after another
    (the same files). A change to anything shared (`fysiikkalabra/scripts/`, `templates/`, `site/site.css`,
    `curriculum.json`, `local-courses.json`, `lang/`, `.github/workflows/`, `.claude/`) runs alone and merges first.
 4. **Merge order.** Shared-file changes first, then content in the order the queue lists it. Before the teacher
