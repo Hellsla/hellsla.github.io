@@ -33,6 +33,9 @@ def dimension(f, x1, x2, y, label, color=INK, above=True):
     f.tex((x1 + x2) / 2, y - 20 if above else y + 22, label, "middle", color)
 
 
+WAVE_PERIOD = 3.0       # seconds the animation takes for one wave period (work queue 8f)
+
+
 def types():
     """Ydinajatus: a transverse wave on a rope (points move up and down) and a longitudinal wave on a spring
     (coils move to and fro along it, compressions and rarefactions); both travel to the right."""
@@ -41,7 +44,8 @@ def types():
             "että kohta liikkuu ylös ja alas eli kohtisuoraan etenemissuuntaa vastaan. Alhaalla pitkittäinen aalto: pitkän "
             "kierrejousen kierrokset ovat paikoin tiheässä (tihentymä) ja paikoin harvassa (harvennus). Yhden kierroksen "
             "yllä vaakasuora kaksipäinen nuoli näyttää, että kierros liikkuu edestakaisin jousen suuntaisesti. Sininen nuoli "
-            "osoittaa tämänkin aallon etenemissuunnan oikealle.")
+            "osoittaa tämänkin aallon etenemissuunnan oikealle.", anim=True)
+    P = WAVE_PERIOD
     # --- transverse ---
     f.tex(24, 24, r"\text{poikittainen aalto}", "start")
     f.arrow(440, 24, 560, 24, COLD, 3.5, 16)
@@ -49,10 +53,12 @@ def types():
     y0, A, lam, xs = 112, 40, 200, 60
     yf = lambda x: y0 - A * math.sin(2 * math.pi * (x - xs) / lam)
     f.line(xs, y0, 580, y0, RULE, 1.5, "6 5")
-    f.path(rope_path(yf, xs, 576), stroke=ROPE, w=5, extra='stroke-linecap="round"')
-    for k in range(0, 21):
+    f.travel(lam, P, clip=(xs - 3, y0 - A - 12, 576 - xs + 6, 2 * A + 24))      # the shape moves right one wavelength per period
+    f.path(rope_path(yf, xs - lam, 576), stroke=ROPE, w=5, extra='stroke-linecap="round"')
+    f.end()
+    for k in range(0, 21):                                                  # every dot only goes up and down: matter stays
         x = xs + k * 25
-        f.circle(x, yf(x), 3.5, INK)
+        f.oscillate(A, -(x - xs) / lam, P, "y"); f.circle(x, yf(x), 3.5, INK); f.end()
     for x in (110, 260, 410):                                           # at a crest, a zero crossing and a trough
         double_arrow(f, x, y0 - A - 10, x, y0 + A + 10)
     f.tex(110, 184, r"\text{kohdan liike}", "middle")
@@ -68,15 +74,19 @@ def types():
         x0 = xsL + k * step
         x = x0 + a * math.sin(2 * math.pi * (x0 - xsL) / lamL)
         col, w = (INK, 3) if k == 4 else (SPRING, 2.5)                   # coil 4 is the one whose motion is marked
+        f.oscillate(-a, -(x0 - xsL) / lamL, P, "x")                      # each coil to and fro along the spring, the crowding travels
         f.add(f'<ellipse cx="{n(x)}" cy="{yc}" rx="5" ry="30" fill="none" stroke="{col}" stroke-width="{w}"/>')
+        f.end()
     # compressions where the coils crowd (x0 − xs = λ/2 + nλ), rarefactions between; coil 4 sits at x0 = 120
     xm = 120 + a * math.sin(2 * math.pi * 60 / lamL)
     double_arrow(f, xm - a - 6, 262, xm + a + 6, 262)
     f.tex(xm + a + 14, 262, r"\text{kierroksen liike}", "start")
+    f.motion([(0, 0, 0, 0, 0), (1, 0, 0, 0, 0)], P)                    # the labels name places of the still: gone while the crowding travels
     f.tex(160, 354, r"\text{tihentymä}", "middle")
     f.tex(360, 354, r"\text{tihentymä}", "middle")
     f.tex(260, 384, r"\text{harvennus}", "middle")
     f.tex(460, 384, r"\text{harvennus}", "middle")
+    f.end()
     return f.svg()
 
 
@@ -86,14 +96,36 @@ def birth():
             "neljäsosa jaksonajasta, puolet, kolme neljäsosaa ja koko jaksonaika. Katkoviiva näyttää, mihin asti aalto on "
             "kunakin hetkenä edennyt: neljäsosan aallonpituudesta, puolet, kolme neljäsosaa ja koko aallonpituuden. "
             "Alimman kuvan alla mittajana näyttää, että yhden jaksonajan aikana aalto on edennyt yhden aallonpituuden. "
-            "Rintaman takana naru on levossa.")
+            "Rintaman takana naru on levossa.", anim=True)
     xs, lam, A = 120, 320, 24
+    P = WAVE_PERIOD
     rows = [(r"t = \tfrac{1}{4}T", 0.25, 58), (r"t = \tfrac{1}{2}T", 0.5, 140), (r"t = \tfrac{3}{4}T", 0.75, 222), (r"t = T", 1.0, 304)]
     for label, frac, yr in rows:
         front = xs + frac * lam
         def yf(x, frac=frac, yr=yr):
             u = (x - xs) / lam
             return yr - (A * math.sin(2 * math.pi * (frac - u)) if u <= frac else 0.0)
+        last = frac == 1.0      # animated (work queue 8f): the last row goes on after t = T, the wave front runs on and the loop starts again
+        if last:
+            f.motion([(0, 0, 0, 0, 0), (1, 0, 0, 0, 0)], P)               # the "t = T" label would be wrong while it plays
+            f.tex(98, yr, label, "end"); f.end()
+            # the wave: a sine moving right one wavelength per period, only where the front has been (the cover hides the rest)
+            f.travel(lam, P, clip=(xs, yr - 40, 578 - xs, 80))
+            f.path(rope_path(lambda x: yr - A * math.sin(2 * math.pi * (1 - (x - xs) / lam)), xs - lam, 578), stroke=ROPE, w=5, extra='stroke-linecap="round"')
+            f.end()
+            # the cover, the quiet rope and the front line run right at the wave's speed: the wave is born again at the end of the loop
+            f.motion([(0, 0, 0, 0, 1), (1, lam, 0, 0, 1)], P, clip=(xs, yr - 40, 578 - xs, 80))
+            f.rect(front, yr - 40, 700 - front, 80, WHITE, None, 0)
+            f.line(front, yr - 36, front, yr + 36, MUTED, 1.5, "6 5")
+            f.line(front, yr, 578 + lam, yr, ROPE, 5, None, "round")
+            f.end()
+            f.oscillate(-A, 0.0, P, "y")
+            f.rect(xs - 16, yr - 9, 16, 18, SAND_DARK, INK, 2, 3)         # the hand's handle
+            f.end()
+            f.oscillate(-A, 0.5, P, "y")
+            f.circle(xs + lam / 2, yr, 6.5, INK, WHITE, 2)               # one marked particle: it only goes up and down
+            f.end()
+            continue
         f.tex(98, yr, label, "end")
         f.line(front, yr - 36, front, yr + 36, MUTED, 1.5, "6 5")
         f.path(rope_path(yf, xs, 576), stroke=ROPE, w=5, extra='stroke-linecap="round"')
