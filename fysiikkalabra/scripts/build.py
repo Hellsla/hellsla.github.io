@@ -1595,8 +1595,8 @@ def build_language(lang):
     hero = ('<header class="about-hero"><img class="about-logo" src="brand/kiviruukin-lukio-oikea-valkoinen.svg" alt="Kiviruukin lukio" width="175" height="100">'
             + (h1.group(1) if h1 else "") + '</header>')
     about_body = hero + (about_body[h1.end():] if h1 else about_body)
-    (out / ABOUT).write_text(page(T("site.about"), f'<article class="about">{about_body}</article>',
-                                  f'<a href="index.html">{T("site.name")}</a> › {T("site.about")}', ABOUT, T("site.about_lead"), main_class="reading about-page"))
+    (out / ABOUT).write_text(ahjo.kiviruukki_mark(page(T("site.about"), f'<article class="about">{about_body}</article>',
+                                  f'<a href="index.html">{T("site.name")}</a> › {T("site.about")}', ABOUT, T("site.about_lead"), main_class="reading about-page")))
     if FORMS and lang in SUBMISSION_LANGS:   # Palautukset (teacher 2026-11-06): where the chapters have the button
         (out / FORMS_PAGE).write_text(page(forms_title(), forms_page_body(), f'<a href="index.html">{T("site.name")}</a> › {esc(forms_title())}',
                                            FORMS_PAGE, T("site.returns_desc"), main_class="reading return-page"))
