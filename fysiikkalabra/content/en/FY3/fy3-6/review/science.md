@@ -1,9 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 42f2aff774125b61
+CONTENT-HASH: cecd453e60ccc521
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-batch delta review: new herata retrieval choice (sunlit sand, no work, ΔU = Q) checked against the guardrails: heat as energy in transfer, a body has internal energy not heat, ΔU = Q only when W = 0 (stated in the prompt); exactly one correct option, the three distractors (sand "contains heat", temperature before transfer, ΔU = 0 from conservation) really wrong and their feedback right; consistent with Internal energy, heat and conservation of energy; it does not reveal Ennusta pred-1 (sand vs water, specific heat capacity) or pred-2 (mixing temperature); lesson.md changes are paragraphing and teacher-approved figures.
+- Delta: the summary bullet now reads "Q = cmΔT when the state of matter does not change". This is the correct condition for Q = cmΔT (guardrail: state a law's conditions where it is used) and agrees with the theory text I passed earlier.
+- No other word, number or symbol changed; the rest of the lesson stands as approved.
+- Hash identical at start and end.

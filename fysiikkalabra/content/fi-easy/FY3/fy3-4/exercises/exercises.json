@@ -197,7 +197,7 @@
       "kind": [
         "data"
       ],
-      "text": "Esimerkkiaineisto: sukeltaja mittasi järvessä painemittarilla paineen eri syvyyksillä. Pisteisiin sovitetun suoran kulmakerroin on tietokoneella laskettuna $9{,}78\\,\\tfrac{\\text{kPa}}{\\text{m}}$. Suora kulkee pisteiden keskipisteen $(h_{\\text{ka}}, p_{\\text{ka}})$ kautta. Keskipiste on pisteiden keskiarvo. Mittarin lukeman epävarmuus on $\\pm 0{,}5\\,\\text{kPa}$.\n\na) Laske veden tiheys $\\rho$ kulmakertoimesta.\n\nb) Laske taulukon keskipiste. Laske sen avulla suoran vakiotermi eli ilmanpaine $p_0$ pinnalla.\n\nVastauskenttään tulee kohdan b) ilmanpaine kilopascaleina.",
+      "text": "Sukeltaja mittasi järvessä painemittarilla paineen eri syvyyksillä. Pisteisiin sovitetun suoran kulmakerroin on tietokoneella laskettuna $9{,}78\\,\\tfrac{\\text{kPa}}{\\text{m}}$. Suora kulkee pisteiden keskipisteen $(h_{\\text{ka}}, p_{\\text{ka}})$ kautta. Keskipiste on pisteiden keskiarvo. Mittarin lukeman epävarmuus on $\\pm 0{,}5\\,\\text{kPa}$.\n\na) Laske veden tiheys $\\rho$ kulmakertoimesta.\n\nb) Laske taulukon keskipiste. Laske sen avulla suoran vakiotermi eli ilmanpaine $p_0$ pinnalla.\n\nVastauskenttään tulee kohdan b) ilmanpaine kilopascaleina.",
       "answer": 99.7,
       "unit": "kPa",
       "tolerance": 0.02,
@@ -242,7 +242,7 @@
         "data",
         "reasoning"
       ],
-      "text": "Esimerkkiaineisto: neljä erimuotoista lasiastiaa täytettiin vedellä $0{,}300\\,\\text{m}$:n korkeuteen. Astian pohjalla olevalla painemittarilla mitattiin ylipaine. Mittarin lukeman epävarmuus on $\\pm 0{,}1\\,\\text{kPa}$. Veden tiheys on $1000\\,\\text{kg/m}^3$.\n\na) Laske hydrostaattinen paine syvyydellä $0{,}300\\,\\text{m}$. Tarkista, sopiiko tulos taulukon mittauksiin.\n\nb) Selitä, miksi pohjan paine on lähes sama kaikissa astioissa, vaikka vettä on eri määrä.\n\nVastauskenttään tulee kohdan a) tulos kilopascaleina.",
+      "text": "Neljä erimuotoista lasiastiaa täytettiin vedellä $0{,}300\\,\\text{m}$:n korkeuteen. Astian pohjalla olevalla painemittarilla mitattiin ylipaine. Mittarin lukeman epävarmuus on $\\pm 0{,}1\\,\\text{kPa}$. Veden tiheys on $1000\\,\\text{kg/m}^3$.\n\na) Laske hydrostaattinen paine syvyydellä $0{,}300\\,\\text{m}$. Tarkista, sopiiko tulos taulukon mittauksiin.\n\nb) Selitä, miksi pohjan paine on lähes sama kaikissa astioissa, vaikka vettä on eri määrä.\n\nVastauskenttään tulee kohdan a) tulos kilopascaleina.",
       "answer": 2.94,
       "unit": "kPa",
       "tolerance": 0.02,
@@ -284,7 +284,7 @@
         "experiment",
         "data"
       ],
-      "text": "Esimerkkiaineisto: U-putkimanometrin toinen haara on avoin ilmakehään. Toinen haara on yhdistetty suljettuun kaasusäiliöön. Putkessa on vettä, jonka tiheys on $1000\\,\\text{kg/m}^3$. Nestepintojen korkeusero luettiin kolme kertaa. Kaasun puoleinen vedenpinta oli avoimen haaran pintaa alempana. Ilmanpaine on $101\\,\\text{kPa}$.\n\na) Laske korkeuseron keskiarvo $\\Delta h_{\\text{ka}}$.\n\nb) Laske kaasun ylipaine ilmanpaineeseen verrattuna.\n\nc) Laske kaasun kokonaispaine. Perustele, miksi kaasun puoleinen pinta on alempana.\n\nVastauskenttään tulee kohdan b) tulos kilopascaleina.",
+      "text": "U-putkimanometrin toinen haara on avoin ilmakehään. Toinen haara on yhdistetty suljettuun kaasusäiliöön. Putkessa on vettä, jonka tiheys on $1000\\,\\text{kg/m}^3$. Nestepintojen korkeusero luettiin kolme kertaa. Kaasun puoleinen vedenpinta oli avoimen haaran pintaa alempana. Ilmanpaine on $101\\,\\text{kPa}$.\n\na) Laske korkeuseron keskiarvo $\\Delta h_{\\text{ka}}$.\n\nb) Laske kaasun ylipaine ilmanpaineeseen verrattuna.\n\nc) Laske kaasun kokonaispaine. Perustele, miksi kaasun puoleinen pinta on alempana.\n\nVastauskenttään tulee kohdan b) tulos kilopascaleina.",
       "answer": 1.42,
       "unit": "kPa",
       "tolerance": 0.02,
@@ -353,7 +353,7 @@
         "reasoning",
         "model"
       ],
-      "text": "Esimerkkiaineisto: kesällä järvessä on lämpötilakerroksia, ja veden tiheys riippuu lämpötilasta. Ryhmä asensi järveen painemittarin $20{,}0\\,\\text{m}$:n syvyyteen. Taulukossa ovat veden kerrokset pinnasta alaspäin. Painemittarin lukeman epävarmuus on $\\pm 0{,}5\\,\\text{kPa}$. Ilmanpaine jätetään huomiotta ja $g = 9{,}81\\,\\text{m/s}^2$.\n\na) Laske mittarin kohdalla hydrostaattinen paine. Ota jokaisen kerroksen oma tiheys huomioon.\n\nb) Laske sama paine olettamalla koko vesipatsaan tiheydeksi $1000\\,\\text{kg/m}^3$. Laske, kuinka paljon suurempi tämä tulos on kuin kohdassa a).\n\nc) Näkyykö ero mittarin lukemassa? Muuta mittarin ylipaine syvyydeksi tiheydellä $1000\\,\\text{kg/m}^3$. Laske, kuinka paljon syvyys tulisi väärin. Vertaa tulosta epävarmuutta vastaavaan syvyyteen.\n\nVastauskenttään tulee kohdan b) ero kilopascaleina.",
+      "text": "Kesällä järvessä on lämpötilakerroksia, ja veden tiheys riippuu lämpötilasta. Ryhmä asensi järveen painemittarin $20{,}0\\,\\text{m}$:n syvyyteen. Taulukossa ovat veden kerrokset pinnasta alaspäin. Painemittarin lukeman epävarmuus on $\\pm 0{,}5\\,\\text{kPa}$. Ilmanpaine jätetään huomiotta ja $g = 9{,}81\\,\\text{m/s}^2$.\n\na) Laske mittarin kohdalla hydrostaattinen paine. Ota jokaisen kerroksen oma tiheys huomioon.\n\nb) Laske sama paine olettamalla koko vesipatsaan tiheydeksi $1000\\,\\text{kg/m}^3$. Laske, kuinka paljon suurempi tämä tulos on kuin kohdassa a).\n\nc) Näkyykö ero mittarin lukemassa? Muuta mittarin ylipaine syvyydeksi tiheydellä $1000\\,\\text{kg/m}^3$. Laske, kuinka paljon syvyys tulisi väärin. Vertaa tulosta epävarmuutta vastaavaan syvyyteen.\n\nVastauskenttään tulee kohdan b) ero kilopascaleina.",
       "answer": 0.12,
       "unit": "kPa",
       "tolerance": 0.04,
@@ -395,7 +395,7 @@
         "data",
         "reasoning"
       ],
-      "text": "Esimerkkiaineisto: padon pystysuora betonimuuri pidättää $20{,}0\\,\\text{m}$:n syvyistä vettä. Tarkastellaan muurin yhden metrin levyistä kaistaa. Kaista jaetaan neljään yhtä korkeaan osaan. Osan ala on sen korkeus kertaa leveys. Ilmanpaine vaikuttaa muuriin molemmin puolin, joten se jätetään huomiotta. Paine kasvaa syvyyden mukana lineaarisesti. Siksi osaan kohdistuva voima lasketaan näin: osan ylä- ja alareunan paineiden keskiarvo kerrotaan osan alalla. Veden tiheys on $1000\\,\\text{kg/m}^3$ ja $g = 9{,}81\\,\\text{m/s}^2$.\n\na) Laske veden paine jokaisen osan ylä- ja alareunassa.\n\nb) Laske veden voima ylimpään ja alimpaan osaan.\n\nc) Laske kaikkien osien voimien summa. Tarkista se laskemalla koko kaistan voima. Käytä koko muurin ylä- ja alareunan paineiden keskiarvoa.\n\nd) Perustele voimien suhteella, miksi padon muuri tehdään alaosastaan paksummaksi kuin yläosastaan.\n\nVastauskenttään tulee kohdan b) alimpaan osaan kohdistuva voima kilonewtoneina.",
+      "text": "Padon pystysuora betonimuuri pidättää $20{,}0\\,\\text{m}$:n syvyistä vettä. Tarkastellaan muurin yhden metrin levyistä kaistaa. Kaista jaetaan neljään yhtä korkeaan osaan. Osan ala on sen korkeus kertaa leveys. Ilmanpaine vaikuttaa muuriin molemmin puolin, joten se jätetään huomiotta. Paine kasvaa syvyyden mukana lineaarisesti. Siksi osaan kohdistuva voima lasketaan näin: osan ylä- ja alareunan paineiden keskiarvo kerrotaan osan alalla. Veden tiheys on $1000\\,\\text{kg/m}^3$ ja $g = 9{,}81\\,\\text{m/s}^2$.\n\na) Laske veden paine jokaisen osan ylä- ja alareunassa.\n\nb) Laske veden voima ylimpään ja alimpaan osaan.\n\nc) Laske kaikkien osien voimien summa. Tarkista se laskemalla koko kaistan voima. Käytä koko muurin ylä- ja alareunan paineiden keskiarvoa.\n\nd) Perustele voimien suhteella, miksi padon muuri tehdään alaosastaan paksummaksi kuin yläosastaan.\n\nVastauskenttään tulee kohdan b) alimpaan osaan kohdistuva voima kilonewtoneina.",
       "answer": 858,
       "unit": "kN",
       "tolerance": 0.02,

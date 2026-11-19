@@ -1,6 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: b7de1d98afc92688
+CONTENT-HASH: 4eb10b82e664384c
 ## Blocking
 ## Polish
+- lesson.md:201 — "pyörii navan mukana kiinteiden käämien ympäri, joten magneetti pyörii käämien suhteen" repeats itself; shorter: "rengasmagneetti pyörii navan mukana kiinteiden käämien ympäri, ja käämien läpi kulkeva kenttä muuttuu".
 ## Checked
-batch delta review (round 3): Pohdinta retrieval option 1 now gives only the value and the perpendicularity, so the formula no longer sits in the correct choice and appears only in feedback; the wrong option's feedback chain is split into short rows, first row symbolic, units kept, same numbers; still consistent with the task and its other feedback.
+delta round 1: exit ticket question now says the flux turns smoothly at its peak, so the tangent argument in the answer is justified and the gap (a flat graph at a kink) is closed; answer still repairs "large flux means large voltage".
+Napadynamo sentence now matches a real hub dynamo (outer ring magnet, fixed coils) and still supports the point that nothing changes when the wheel stands.
+No change to figures, inquiry or exercises; earlier PASS stands.

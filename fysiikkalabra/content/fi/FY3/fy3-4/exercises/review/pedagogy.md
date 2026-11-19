@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: de002e4a7676e5f2
-SCOPE: delta added-exercise from 89a47ad1ed9999a9 base 81db4a6fd727
+CONTENT-HASH: 6f13f68dfd1b633e
+SCOPE: delta caption-label,reflow,wording from de002e4a7676e5f2 base b5600a63ddae086b6cc3d3008ca7ed5c2f0deb34
 ## Blocking
 (none)
 ## Polish
-- fy3-4-L1-10 repeats the structure of L1-03 (lake bottom, p = p0 + rho g h); only the lookup is new. Fine as the table task, but the sea vs lake change is small.
-- solutions.md fy3-4-L2-08 Vastaus — accepted range 1450–1600 does not match tolerance 0,04 around 1529 (1468–1590); align them.
-- L2-08 uses the figure of L2-03 (same lines); reading a slope is a different skill, so no blocking repeat.
+(none)
 ## Checked
-- L1-10: lookup of sea water density with only the table name as hint; the principle (surface pressure plus rho g h) explained before the numbers; sanity estimate included.
-- L2-08: figure needed (stem gives no data); description lists points of both lines, not the densities; answer needs slope divided by g, a level-2 step with a unit argument.
-- Solution reads the graph first, converts kPa/m to Pa/m, and checks against liquid A.
-- Within FY3-4 scope; Finnish fine.
+- Delta judged in context: the prefix "Esimerkkiaineisto:" removed from task texts; no numbers, symbols, data or questions changed.
+- Each task now opens with the situation (e.g. a sentence starting with the subject in Finnish nominative/partitive), grammatical without the prefix; the question still comes last.
+- Solutions.md changes are presentation only (reflow / paragraphs); levels, figures and answer fields untouched.
