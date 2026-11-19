@@ -33,7 +33,7 @@
         {
           "text": "$Q_2 = 520\\,\\text{MJ}$",
           "correct": true,
-          "feedback": "Oikein: $Q_2 = Q_1 - W = 800\\,\\text{MJ} - 280\\,\\text{MJ} = 520\\,\\text{MJ}$. Koneen hyötysuhde on $\\eta = W/Q_1 = 0{,}35$. Tällä tunnilla lasket samalla tavalla koko voimalaitoksen ja sen vaiheiden hyötysuhteen."
+          "feedback": "Oikein: $$\n\\begin{aligned}\nQ_2 &= Q_1 - W \\\\\n&= 800\\,\\text{MJ} - 280\\,\\text{MJ} \\\\\n&= 520\\,\\text{MJ}\n\\end{aligned}\n$$. Koneen hyötysuhde on $\\eta = W/Q_1 = 0{,}35$. Tällä tunnilla lasket samalla tavalla koko voimalaitoksen ja sen vaiheiden hyötysuhteen."
         },
         {
           "text": "$Q_2 = 280\\,\\text{MJ}$",
