@@ -200,6 +200,7 @@ kuvatiedoston, hyväksyntä `approve-figures`, siirto `teacher-figure`; merkinn�
 jää kuvioinnin päällä (opettaja 15.11.; `merkinnoin/` näyttää lopputuloksen); `check_layout.py`, `test_notation.py`,
 `ci_scope.py` (uusi tiedostolaji), NOTES.md §3. Pilotti FY2 (20 kuvaa) ennen/jälkeen kaikilla kielillä; erikseen
 `fy2-7/district`, `fy2-7/grid`, `fy2-7/storage` (en poikkeaa fi:stä).
+**Osa 1 + FY2-pilotti (#768) hyväksytty: opettaja 2026-11-20 klo 01.4x ("I approve")**, ennen/jälkeen-kuvat docs/audits/img24/.
 Osat 2–11: FY1, FY3–FY10, FY14 yksi moduuli kerrallaan, oma ketju ja luonnos-PR; kuvat lukuihin kaikilla kielillä,
 `approve-figures`, build, tarkistukset; opettaja katsoo moduulin kerran valmiilta sivulta ennen yhdistämistä.
 Huomiot: FY3 seitsemän kuvaa tunnistetaan kuvauksesta (`~lesson-N`); FY5 `fy5-10/types` "harvennus" → "harventuma" (opettaja 2026-11-19 klo 19.12: harventuma kaikkialla)
