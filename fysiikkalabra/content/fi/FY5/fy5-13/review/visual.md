@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: dc3f62700100266d
+CONTENT-HASH: eb8a72b4ee6e40f2
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Delta: the two animated figures (superpositio, solmut) now play by CSS; wording unchanged.
-- Opened fig-2-390 (superposition), fig-3-390 (nodes and antinodes), fig-row-1280 (figure beside its paragraph with "Pysäytä animaatio" button).
-- Captures show playing frames: the t = ... row labels are hidden by design (animated, still has them), curves mid-cycle; the legend (tuleva, heijastunut, summa), S nodes, wall and K / S / lambda labels read cleanly, nothing clipped. Stage of the still was judged from the SVG source (labels remain in the still, wrapped in animated groups only).
-- Layout survives at 390 and 1280 px; a pause control is present (still under reduced motion per the coordinator's note).
+- Delta (round 2): wording only in inquiry.json (calc, Koe 2 intro, tutki model text); no figure, number or formula changed.
+- Opened fy5-13-exp-koe-2-390-1 (Koe 2 intro "missä kupu huippuja tarkasteltaessa?"): reads naturally, quantities in LaTeX with units, no clipping, sim and graph intact.
+- Layout checks clean at 360-1280 px per packet; hash unchanged at start and end.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4
