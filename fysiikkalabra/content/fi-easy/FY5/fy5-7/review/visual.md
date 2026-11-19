@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: d779bef07c6b3e4a
+CONTENT-HASH: faab333e7dcf81ff
 
 ## Blocking
 
 ## Polish
-- [Minor] Summary formula block at 360 px: the aligned block is followed by a separate line "Argumentti on radiaaneina." with a gap; acceptable, no change required.
 
 ## Checked
-- fig-row-1280 (osat, animated, still judged: x = 0, A arrows, dashed extremes, spring and pendulum clear), fig-4-390 (ympyra, still with the point on the circle and graph point), fig-3-390 and fig-5-390 (kuvaaja, sovitus: axes, units, T and A marks unchanged and legible).
-- Summary (Tiivistelmä) opened at 360 px in a fresh render: the two-row aligned x = A sin(2πt/T) = A sin(2πft) block fits, nothing clipped, scrollWidth 360.
-- Text diff read; no wording or number changes beyond the figure and reflow.
+- Delta round 2: the only change is "tehtävissä" to "laskutehtävissä" in the sentence on the phase constant C (Graphical Analysis Pro paragraph); read in the packet diff. The wording is natural Finnish and makes the scope clear (calculation tasks, not the experiments). No formula, number or layout element changed.
+- Opened fy5-7-lab-1280.png (experiments and simulation) to confirm the surrounding layout is intact. The changed sentence is not in that capture, and I opened no capture of the paragraph itself. It is one plain sentence with no markup that can break.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
