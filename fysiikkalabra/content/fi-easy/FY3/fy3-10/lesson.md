@@ -233,7 +233,7 @@ Tässä $N$ on hiukkasten lukumäärä, $m$ massa (g tai kg) ja $M$ moolimassa (
 ```pysahdy
 Heliumin moolimassa on $4{,}00\,\text{g/mol}$. Kuinka monta moolia on $8{,}0\,\text{g}$ heliumia?
 ---
-Ainemäärä on $n = m/M = 8{,}0\,\text{g}/4{,}00\,\text{g/mol} = 2{,}0\,\text{mol}$.
+Ainemäärä on $n = m/M$, joten $n = 8{,}0\,\text{g}/4{,}00\,\text{g/mol} = 2{,}0\,\text{mol}$.
 ```
 
 Ideaalikaasu on mikromalli. Mallissa hiukkaset ovat pistemäisiä. Ne vaikuttavat toisiinsa ja astian seinämiin vain törmätessään. Siksi mallissa ei tarvitse ottaa huomioon hiukkasten välisten vuorovaikutusten energiaa. Kelvinlämpötila on suoraan verrannollinen hiukkasten keskimääräiseen liike-energiaan. Paine syntyy, kun hiukkaset osuvat seinämiin. Paine kasvaa kolmella tavalla:

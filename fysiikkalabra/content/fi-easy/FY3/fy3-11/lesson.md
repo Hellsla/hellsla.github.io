@@ -67,7 +67,7 @@ Kun kaasu laajenee ja työntää mäntää, se tekee työtä. Kaasu painaa mänt
 ```pysahdy
 Kaasun paine on $100\,\text{kPa}$. Kaasu laajenee tilavuuden $0{,}010\,\text{m}^3$ verran. Paine pysyy vakiona. Kuinka suuren työn kaasu tekee?
 ---
-$W = p\,\Delta V = 100\,000\,\text{Pa} \cdot 0{,}010\,\text{m}^3 = 1{,}0\,\text{kJ}$.
+$W = p\,\Delta V$, joten $W = 1{,}0\,\text{kJ}$ ($100\,000\,\text{Pa} \cdot 0{,}010\,\text{m}^3$).
 ```
 
 ### Lämpövoimakone toistaa liikettään

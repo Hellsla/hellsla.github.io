@@ -231,7 +231,7 @@ where $N$ is the number of particles, $m$ is the mass (g or kg) and $M$ is the m
 ```pysahdy
 The molar mass of helium is $4.00\,\text{g/mol}$. How many moles are there in $8.0\,\text{g}$ of helium?
 ---
-The amount of substance is $n = m/M = 8.0\,\text{g}/4.00\,\text{g/mol} = 2.0\,\text{mol}$.
+The amount of substance is $n = m/M$, so $n = 8.0\,\text{g}/4.00\,\text{g/mol} = 2.0\,\text{mol}$.
 ```
 
 The ideal gas is a microscopic model. In it, the particles are thought of as points, and they interact with each other and with the walls of the container only when they collide. So the energy of the interactions between the particles is negligible in the model, and the temperature in kelvins is directly proportional to the mean kinetic energy of the particles. Pressure comes from collisions with the walls. It grows when there are more particles, when they move faster (that is, the temperature is higher) or when the volume is smaller. Real gases follow the model well in ordinary conditions. The model starts to fail at high pressures and low temperatures, when the particles are close together and the attraction between them condenses the gas into a liquid.

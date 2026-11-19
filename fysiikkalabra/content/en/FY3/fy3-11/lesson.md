@@ -67,7 +67,7 @@ When a gas expands and pushes a piston, it does work. The gas pushes the piston 
 ```pysahdy
 The pressure of a gas is $100\,\text{kPa}$, and it expands by a volume of $0.010\,\text{m}^3$. The pressure stays constant. How much work does the gas do?
 ---
-$W = p\,\Delta V = 100\,000\,\text{Pa} \cdot 0.010\,\text{m}^3 = 1.0\,\text{kJ}$.
+$W = p\,\Delta V$, so $W = 1.0\,\text{kJ}$ ($100\,000\,\text{Pa} \cdot 0.010\,\text{m}^3$).
 ```
 
 ### A heat engine repeats its motion
