@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 448eb73bf6862c33
+CONTENT-HASH: 40335a70ce72a5eb
 
 ## Blocking
 
 ## Polish
-- solutions.md (L3-06) — "Kevyempi 20 g:n magneetti putoaisi hitaammin" with the same k still holds only for a magnet of the same strength and size (carried from the previous report) — add "yhtä voimakas".
+- solutions.md:236 and :215 — after $\Sigma F = 0$ the next row is $F = m g$ directly, while :194 and :208 show $F - m g = 0$ between them — add the force-balance row for the same chain everywhere.
+- solutions.md (L3-06) — "Kevyempi 20 g:n magneetti putoaisi hitaammin" with the same k holds only for a magnet of the same strength and size (carried) — add "yhtä voimakas".
 
 ## Checked
-- Delta: L1-06 answer and correct option changed from "pitää vuon ennallaan" to "pyrkii pitämään vuon ennallaan"; hash identical at start and end.
-- The new wording is right physics: the induced field opposes the decrease of flux but does not keep it constant (the flux still falls); the old wording overstated Lenz's law (A-type error now removed).
-- `answer` matches the `correct: true` option text word for word; exactly one option is correct.
-- Distractors stay wrong for the right reasons (field vs. change of flux; flux increasing; ferromagnetism not needed); their feedback already used "pyrkii pitämään", so feedback, answer and solutions.md:47 now say the same.
-- Correct option's feedback: flux same direction as the magnet's field in the ring's centre, S pole facing the N pole, attraction opposes the receding motion: correct.
-- solutions.md diff is presentation only (paragraphs, reflow); no number, symbol or unit changed.
+- Delta: only the Kaava steps rewritten as aligned chains from the basic law; no number, answer, Muunnokset or Sijoitus changed; hash identical at start and end.
+- Constant-speed tasks: $\Sigma F = 0$, $F - mg = 0$ (brake up, weight down) gives $F = mg$; $P = Fv = mgv$: correct signs and algebra.
+- Terminal-speed tasks: $mg - kv_\text{t} = 0 \Rightarrow v_\text{t} = mg/k$; graph task $m a = m g - k v$, $a = g - kv/m$, $P = F v_\text{r} = m g v_\text{r}$: correct.
+- Horizontal brake: $E_{k,1} = E_{k,2} + Q \Rightarrow Q = m(v_1^2 - v_2^2)/2$: correct energy balance.
+- Coil current: $e = N\Delta\Phi/\Delta t$ (magnitude, sign handled by Lenz as the Periaate says), $I = e/R = N\Delta\Phi/(R\Delta t)$: correct.
+- Data task: $e\,\Delta t = N\Delta\Phi \Rightarrow \Delta\Phi = (e\Delta t)_\text{ka}/N$: correct rearrangement.
+- Heating task: $mgh = mv^2/2 + Q_1$, $Q = nQ_1 = c m_\text{p}\Delta T$; final form equals the old one; no change of state stated in Periaate.
+- Rod on rails: $F = IlB = (vBl/R)\,lB = (Bl)^2 v/R$: correct.
+- Every chain's last symbolic form is the one the unchanged Sijoitus substitutes into.

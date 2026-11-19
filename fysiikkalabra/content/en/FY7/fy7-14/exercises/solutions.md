@@ -12,7 +12,7 @@
 **Given:** wavelength in air $\lambda = 633\,\text{nm}$, refractive index of magnesium fluoride $n = 1.38$
 **Find:** the wavelength in magnesium fluoride $\lambda_n$ in nanometres
 **Principle:** In a material light travels at the speed $v = c : n$, but its frequency $f$ does not change at an interface. Since $\lambda = v : f$, the wavelength shortens in the same ratio as the speed, that is, by the factor $n$.
-**Formula:** $\lambda_n = \dfrac{v}{f} = \dfrac{c}{nf}$, so $\lambda_n = \dfrac{\lambda}{n}$
+**Formula:** $$\begin{aligned} \lambda_n &= \frac{v}{f} \\ v &= \frac{c}{n} \\ \lambda_n &= \frac{c}{nf} \\ \lambda &= \frac{c}{f} \\ \lambda_n &= \frac{\lambda}{n} \end{aligned}$$
 **Conversions:** Not needed: the wavelength is in nanometres, and the refractive index has no unit.
 **Substitution:** $\lambda_n = \dfrac{633\,\text{nm}}{1.38} = 458.70\,\text{nm}$
 **Answer:** $459\,\text{nm}$, three significant figures like the wavelength $633\,\text{nm}$ and the refractive index $1.38$.
@@ -22,7 +22,7 @@
 **Given:** refractive index of the coating $n = 1.38$, of the glass $1.52$, wavelength $\lambda = 500\,\text{nm}$, normal incidence
 **Find:** the thickness $d$ of the thinnest reflection-reducing coating, in nanometres
 **Principle:** Both reflections occur at a material of higher refractive index ($1.00 \to 1.38 \to 1.52$), so both waves are inverted, and the inversions cancel each other. The waves then weaken each other when $2nd = (k + \tfrac{1}{2})\lambda$, and the thinnest coating is given by $k = 0$.
-**Formula:** $2nd = \tfrac{1}{2}\lambda$, so $d = \dfrac{\lambda}{4n}$
+**Formula:** $$\begin{aligned} 2nd &= (k + \tfrac{1}{2})\lambda \\ k = 0:\ 2nd &= \tfrac{1}{2}\lambda \\ d &= \frac{\lambda}{4n} \end{aligned}$$
 **Conversions:** Not needed: the wavelength and the thickness are both in nanometres.
 **Substitution:** $d = \dfrac{500\,\text{nm}}{4 \cdot 1.38} = 90.580\,\text{nm}$
 **Answer:** $90.6\,\text{nm}$, three significant figures like the refractive index $1.38$ and the wavelength $500\,\text{nm}$.
@@ -32,7 +32,7 @@
 **Given:** refractive index of the soap film $n = 1.33$, air on both sides, wavelength $\lambda = 600\,\text{nm}$, normal incidence
 **Find:** the thickness $d$ of the thinnest strongly reflecting film, in nanometres
 **Principle:** The reflection from the upper surface, from air into the film, inverts the wave; the reflection from the lower surface, from the film into air, does not. Because of the single inversion, the waves strengthen each other when $2nd = (k + \tfrac{1}{2})\lambda$, and the thinnest such film is given by $k = 0$.
-**Formula:** $2nd = \tfrac{1}{2}\lambda$, so $d = \dfrac{\lambda}{4n}$
+**Formula:** $$\begin{aligned} 2nd &= (k + \tfrac{1}{2})\lambda \\ k = 0:\ 2nd &= \tfrac{1}{2}\lambda \\ d &= \frac{\lambda}{4n} \end{aligned}$$
 **Conversions:** Not needed: the wavelength and the thickness are both in nanometres.
 **Substitution:** $d = \dfrac{600\,\text{nm}}{4 \cdot 1.33} = 112.78\,\text{nm}$
 **Answer:** $113\,\text{nm}$, three significant figures like the refractive index $1.33$ and the wavelength $600\,\text{nm}$.
@@ -44,7 +44,7 @@
 **Principle:** The more the refractive indices at an interface differ, the stronger the reflected wave is. When the waves reflected from the upper and lower surfaces of the coating are equally strong, they can cancel each other completely.
 
 At normal incidence this happens when the refractive index of the coating is the square root of the refractive index of the lens material, as stated in the chapter: then $1.00 : n_\text{c} = n_\text{c} : n_\text{plastic}$.
-**Formula:** $n_\text{c} = \sqrt{n_\text{plastic}}$
+**Formula:** $$\begin{aligned} \frac{1{,}00}{n_\text{c}} &= \frac{n_\text{c}}{n_\text{plastic}} \\ n_\text{c}^2 &= n_\text{plastic} \\ n_\text{c} &= \sqrt{n_\text{plastic}} \end{aligned}$$
 **Conversions:** Not needed: the refractive indices have no unit.
 **Substitution:** $n_\text{c} = \sqrt{1.60} = 1.2649$
 **Answer:** $1.26$, three significant figures like the refractive index $1.60$.
@@ -67,7 +67,7 @@ That is why there is one shift of half a wavelength in the reflections, and for 
 **Principle:** At the upper surface the light arrives from air into oil ($1.00 \to 1.47$), so the refractive index increases and the wave is inverted. At the lower surface the light arrives from oil into water ($1.47 \to 1.33$), so the refractive index decreases and the wave is not inverted.
 
 There is one inversion, so the waves reinforce each other when $2nd = (k + \tfrac{1}{2})\lambda$, and the thinnest film is obtained with $k = 0$.
-**Formula:** $2n_\text{oil}d = \tfrac{1}{2}\lambda$, so $d = \dfrac{\lambda}{4n_\text{oil}}$
+**Formula:** $$\begin{aligned} 2n_\text{oil}d &= (k + \tfrac{1}{2})\lambda \\ k = 0:\ 2n_\text{oil}d &= \tfrac{1}{2}\lambda \\ d &= \frac{\lambda}{4n_\text{oil}} \end{aligned}$$
 **Conversions:** Not needed: the wavelength and the thickness are both in nanometres.
 **Substitution:** $d = \dfrac{570\,\text{nm}}{4 \cdot 1.47} = 96.94\,\text{nm}$
 **Answer:** $96.9\,\text{nm}$, three significant figures like the refractive index $1.47$ and the wavelength $570\,\text{nm}$.
@@ -77,7 +77,7 @@ There is one inversion, so the waves reinforce each other when $2nd = (k + \tfra
 **Given:** refractive index of the soap film $n = 1.33$, thickness $d = 300\,\text{nm}$, wavelength in air $\lambda = 532\,\text{nm}$, normal incidence
 **Find:** the number of wavelengths that fit into the path difference, $\Delta s : \lambda$
 **Principle:** At normal incidence the path difference between the waves reflected from the two surfaces of the film is $\Delta s = 2nd$. When it is divided by the wavelength measured in air, we get how many wavelengths fit into the path difference.
-**Formula:** $\Delta s = 2nd$ and number $= \dfrac{\Delta s}{\lambda}$
+**Formula:** $$\begin{aligned} \Delta s &= 2nd \\ \frac{\Delta s}{\lambda} &= \frac{2nd}{\lambda} \end{aligned}$$
 **Conversions:** Not needed: the thickness and the wavelength are both in nanometres.
 **Substitution:** $\Delta s = 2 \cdot 1.33 \cdot 300\,\text{nm} = 798\,\text{nm}$, so $\dfrac{\Delta s}{\lambda} = \dfrac{798\,\text{nm}}{532\,\text{nm}} = 1.5$
 **Answer:** $1.5$ wavelengths, two significant figures like the thickness $300\,\text{nm}$.
@@ -107,7 +107,7 @@ The expression $\lambda : 2$ uses the wavelength in air, and the expression $n\l
 **Given:** refractive index of the soap film $n = 1.33$, thickness $d = 240\,\text{nm}$, air on both sides, visible light $400$–$700\,\text{nm}$
 **Find:** the wavelength $\lambda$ missing from the reflected light, in nanometres
 **Principle:** The reflection from the upper surface, from air into the film, inverts the wave; the reflection from the lower surface, from the film into air, does not. Because of the single inversion, the waves weaken each other when the path difference is a whole number of wavelengths, $2nd = k\lambda$. We calculate $\lambda$ for $k = 1, 2$ and choose the visible one.
-**Formula:** $2nd = k\lambda$, so $\lambda = \dfrac{2nd}{k}$
+**Formula:** $$\begin{aligned} 2nd &= k\lambda \\ \lambda &= \frac{2nd}{k} \end{aligned}$$
 **Conversions:** Not needed: the thickness and the wavelength are both in nanometres.
 **Substitution:** $k = 1$: $\lambda = \dfrac{2 \cdot 1.33 \cdot 240\,\text{nm}}{1} = 638.4\,\text{nm}$; for $k = 2$ we get $319.2\,\text{nm}$, which is ultraviolet.
 **Answer:** $638\,\text{nm}$, three significant figures like the refractive index $1.33$ and the thickness $240\,\text{nm}$.
@@ -119,7 +119,7 @@ The thickness is $1.2$ times as great, and $1.2 \cdot 532\,\text{nm}$ is $638.4\
 **Given:** refractive index of the coating $n = 1.38$, thickness $d = 110\,\text{nm}$, refractive index of the glass $1.52$, visible light $400$–$700\,\text{nm}$
 **Find:** the most weakly reflected wavelength $\lambda$ in nanometres
 **Principle:** Both reflections occur at a material of higher refractive index ($1.00 \to 1.38 \to 1.52$), so the inversions cancel each other. The waves weaken each other when $2nd = (k + \tfrac{1}{2})\lambda$. We calculate $\lambda$ for $k = 0, 1$ and choose the visible one.
-**Formula:** $2nd = (k + \tfrac{1}{2})\lambda$, so $\lambda = \dfrac{2nd}{k + \frac{1}{2}}$
+**Formula:** $$\begin{aligned} 2nd &= (k + \tfrac{1}{2})\lambda \\ \lambda &= \frac{2nd}{k + \frac{1}{2}} \end{aligned}$$
 **Conversions:** Not needed: the thickness and the wavelength are both in nanometres.
 **Substitution:** $k = 0$: $\lambda = \dfrac{2 \cdot 1.38 \cdot 110\,\text{nm}}{0.5} = \dfrac{303.6\,\text{nm}}{0.5} = 607.2\,\text{nm}$; for $k = 1$ we get $303.6\,\text{nm} : 1.5 = 202.4\,\text{nm}$, which is ultraviolet.
 **Answer:** $607\,\text{nm}$, three significant figures like the thickness $110\,\text{nm}$ and the refractive index $1.38$.
@@ -129,7 +129,7 @@ The thickness is $1.2$ times as great, and $1.2 \cdot 532\,\text{nm}$ is $638.4\
 **Given:** refractive index of the coating $n = 1.38$, of the glass $1.52$, wavelength $\lambda = 520\,\text{nm}$, normal incidence
 **Find:** the thickness $d$ of the second thinnest destructive coating, in nanometres
 **Principle:** Both reflections invert the wave ($1.00 \to 1.38 \to 1.52$), so the inversions cancel each other, and the waves weaken each other when $2nd = (k + \tfrac{1}{2})\lambda$. The thinnest coating is $k = 0$, so the second thinnest is given by $k = 1$.
-**Formula:** $2nd = (1 + \tfrac{1}{2})\lambda$, so $d = \dfrac{3\lambda}{4n}$
+**Formula:** $$\begin{aligned} 2nd &= (k + \tfrac{1}{2})\lambda \\ k = 1:\ 2nd &= \tfrac{3}{2}\lambda \\ d &= \frac{3\lambda}{4n} \end{aligned}$$
 **Conversions:** Not needed: the wavelength and the thickness are both in nanometres.
 **Substitution:** $d = \dfrac{3 \cdot 520\,\text{nm}}{4 \cdot 1.38} = \dfrac{1560\,\text{nm}}{5.52} = 282.61\,\text{nm}$
 **Answer:** $283\,\text{nm}$, three significant figures like the refractive index $1.38$ and the wavelength $520\,\text{nm}$.
@@ -141,7 +141,7 @@ The thickness is $1.2$ times as great, and $1.2 \cdot 532\,\text{nm}$ is $638.4\
 **Principle:** The reflection from the upper surface, from air into the layer ($1.00 \to 2.30$), inverts the wave. At the lower surface the light is reflected from the layer into the glass ($2.30 \to 1.52$), that is, at a material of lower refractive index, so the wave is not inverted.
 
 Because of the single inversion, the conditions are the same as in a soap film: the waves strengthen each other when $2nd = (k + \tfrac{1}{2})\lambda$, and the thinnest layer is given by $k = 0$.
-**Formula:** $2nd = \tfrac{1}{2}\lambda$, so $d = \dfrac{\lambda}{4n}$
+**Formula:** $$\begin{aligned} 2nd &= (k + \tfrac{1}{2})\lambda \\ k = 0:\ 2nd &= \tfrac{1}{2}\lambda \\ d &= \frac{\lambda}{4n} \end{aligned}$$
 **Conversions:** Not needed: the wavelength and the thickness are both in nanometres.
 **Substitution:** $d = \dfrac{550\,\text{nm}}{4 \cdot 2.30} = 59.783\,\text{nm}$
 **Answer:** $59.8\,\text{nm}$, three significant figures like the refractive index $2.30$ and the wavelength $550\,\text{nm}$.
@@ -154,7 +154,7 @@ Because of the single inversion, the conditions are the same as in a soap film: 
 
 The order is deduced from the slope: with $k = 0$ we get $n = \tfrac{1}{4} \cdot$ slope and with $k = 1$ we get $n = 0.75 \cdot$ slope. The refractive index must suit soapy water, about $1.3$.
 **Reading the graph:** The points lie on a rising line with points on both sides of it, and the line passes close to the origin. The fitted line passes approximately through the points $(90\,\text{nm};\ 482\,\text{nm})$ and $(130\,\text{nm};\ 692\,\text{nm})$. They are read from the line and chosen far apart.
-**Formula:** slope $a = \dfrac{\Delta\lambda}{\Delta d}$ and $a = \dfrac{2n}{k + \frac{1}{2}}$, so with $k = 0$ we get $n = \dfrac{a}{4}$
+**Formula:** $$\begin{aligned} a &= \frac{\Delta\lambda}{\Delta d} \\ \lambda &= \frac{2n}{k + \frac{1}{2}}\,d \\ a &= \frac{2n}{k + \frac{1}{2}} \\ k = 0:\ a &= 4n \\ n &= \frac{a}{4} \end{aligned}$$
 **Conversions:** Not needed: the thickness and the wavelength are both in nanometres, and the slope has no unit.
 **Substitution:** $a = \dfrac{692\,\text{nm} - 482\,\text{nm}}{130\,\text{nm} - 90\,\text{nm}} = \dfrac{210\,\text{nm}}{40\,\text{nm}} = 5.25$. With $k = 1$ we would get $n = 0.75 \cdot 5.25 = 3.9$, which is far from the refractive index of soapy water. With $k = 0$ we get $n = \dfrac{5.25}{4} = 1.31$.
 **Answer:** $1.3$, two significant figures, because the line is fitted by eye. A fit by eye varies, so about $1.26$–$1.37$ is a good answer.
@@ -166,7 +166,7 @@ The order is deduced from the slope: with $k = 0$ we get $n = \tfrac{1}{4} \cdot
 **Principle:** The student calculated the path difference correctly but forgot the shift of half a wavelength in the reflection. The reflection at the upper surface from air into the film inverts the wave, and the reflection at the lower surface from the film into air does not.
 
 When the path difference is a whole wavelength, the other wave is in opposite phase because of the inversion, so the waves weaken each other: $2nd = k\lambda$ is the condition for weakening. The waves of red light, $665\,\text{nm}$, weaken each other, and the film does not look red. The wavelength reflected most strongly is the one for which $2nd = (k + \tfrac{1}{2})\lambda$.
-**Formula:** $2nd = (k + \tfrac{1}{2})\lambda$, so $\lambda = \dfrac{2nd}{k + \frac{1}{2}}$
+**Formula:** $$\begin{aligned} 2nd &= (k + \tfrac{1}{2})\lambda \\ \lambda &= \frac{2nd}{k + \frac{1}{2}} \end{aligned}$$
 **Conversions:** Not needed: the thickness and the wavelength are both in nanometres.
 **Substitution:** $k = 1$: $\lambda = \dfrac{665\,\text{nm}}{1.5} = 443.3\,\text{nm}$. With $k = 0$ we get $1330\,\text{nm}$ (infrared) and with $k = 2$ we get $266\,\text{nm}$ (ultraviolet), so they are not visible light.
 **Answer:** $443\,\text{nm}$, three significant figures like the refractive index $1.33$ and the thickness $250\,\text{nm}$.
@@ -177,7 +177,7 @@ When the path difference is a whole wavelength, the other wave is in opposite ph
 **Find:** the wavelength for which the coating is designed and the thickness $d$ of the coating in nanometres; also the reason for the purple colour of the lens
 **Principle:** The coating is designed for the wavelength at which the reflection is smallest. The reflection at each surface of the coating inverts the wave ($1.00 \to 1.38 \to 1.52$), so the waves weaken each other when $2nd = (k + \tfrac{1}{2})\lambda$. For the thinnest coating $k = 0$ and $d = \dfrac{\lambda}{4n}$.
 **Reading the graph:** The graph is cup-shaped: the reflection decreases from $1.84\,\%$ towards the middle, is smallest, $1.26\,\%$, at the wavelength $540\,\text{nm}$, and increases again to $1.64\,\%$ at the wavelength $700\,\text{nm}$. So the smallest reflection is at the wavelength $\lambda = 540\,\text{nm}$.
-**Formula:** $d = \dfrac{\lambda}{4n}$
+**Formula:** $$\begin{aligned} 2nd &= (k + \tfrac{1}{2})\lambda \\ k = 0:\ 2nd &= \tfrac{1}{2}\lambda \\ d &= \frac{\lambda}{4n} \end{aligned}$$
 **Conversions:** Not needed: the wavelength and the thickness are both in nanometres.
 **Substitution:** $d = \dfrac{540\,\text{nm}}{4 \cdot 1.38} = 97.83\,\text{nm}$
 **Answer:** $97.8\,\text{nm}$, three significant figures like the refractive index $1.38$ and the wavelength $540\,\text{nm}$. The coating is designed for the green wavelength $540\,\text{nm}$.
@@ -194,7 +194,7 @@ The coating does not cancel all wavelengths equally well, as stated in the chapt
 **Find:** by what percentage the coating reduces the reflection of uncoated glass at the point where the reflection is smallest
 **Principle:** No light is lost in the coating: destructive interference reduces the reflected share. The smallest reflection marks the wavelength for which the coating is designed. The share removed follows from comparing the reflection of the coated lens $R_\text{coat}$ with the reflection of uncoated glass $R_0$ at the same wavelength.
 **Reading the graph:** The reflection of uncoated glass is the horizontal black line, and $R_0 \approx 4.3\,\%$ is read from it. The green curve is cup-shaped. At its bottom, at about $500\,\text{nm}$, $R_\text{coat} \approx 1.3\,\%$ is read. The bottom is the lowest point of the curve, and the line is above it.
-**Formula:** share removed $= \dfrac{R_0 - R_\text{coat}}{R_0} = 1 - \dfrac{R_\text{coat}}{R_0}$
+**Formula:** $$\begin{aligned} \text{share removed} &= \frac{R_0 - R_\text{coat}}{R_0} \\ &= 1 - \frac{R_\text{coat}}{R_0} \end{aligned}$$
 **Conversions:** Not needed: both shares are read in percent, and the ratio has no unit.
 **Substitution:** $\text{removed share} = 1 - \dfrac{R_\text{coated}}{R_0} = 1 - \dfrac{1.3\,\%}{4.3\,\%} = 1 - 0.302 = 0.698 = 69.8\,\%$
 **Answer:** about $70\,\%$, two significant figures like the values read from the graph. The uncertainty of reading the graph affects the third figure.
@@ -208,7 +208,7 @@ This is expected: the refractive index of $\text{MgF}_2$, $1.38$, is larger than
 **Principle:** The reflection from the upper surface inverts the wave and that from the lower surface does not, so the waves weaken each other when $2nd = k\lambda$. The black top is the value $k = 0$, where the film is much thinner than the wavelength.
 
 The film thickens downwards, so the next dark bands are in order $k = 1$ and $k = 2$; at the second dark band $k = 2$. The bright bands lie between the dark ones.
-**Formula:** $2nd = 2\lambda$, so $d = \dfrac{\lambda}{n}$
+**Formula:** $$\begin{aligned} 2nd &= k\lambda \\ k = 2:\ 2nd &= 2\lambda \\ d &= \frac{\lambda}{n} \end{aligned}$$
 **Conversions:** Not needed: the wavelength and the thickness are both in nanometres.
 **Substitution:** $d = \dfrac{589\,\text{nm}}{1.33} = 442.86\,\text{nm}$
 **Answer:** $443\,\text{nm}$, three significant figures like the refractive index $1.33$ and the wavelength $589\,\text{nm}$.
@@ -218,7 +218,7 @@ The film thickens downwards, so the next dark bands are in order $k = 1$ and $k 
 **Given:** eight surfaces, each of which reflects $1.3\,\%$ of the light arriving at it; the glass does not absorb light, and reflected light does not return to the sensor
 **Find:** the percentage of light that gets through the objective
 **Principle:** Light does not disappear in the coating: what is not reflected goes through the surface. Through each surface therefore passes $98.7\,\%$ of the light arriving at it, since $100\,\% - 1.3\,\% = 98.7\,\%$. The next surface receives only the light that passed the previous one, so the fractions are multiplied together eight times.
-**Formula:** $\dfrac{I_\text{out}}{I_0} = (1 - R)^8$
+**Formula:** $$\begin{aligned} I_1 &= (1 - R)I_0 \\ I_8 &= (1 - R)I_7 = \ldots \\ \frac{I_\text{out}}{I_0} &= (1 - R)^8 \end{aligned}$$
 **Conversions:** $R = 1.3\,\% = 0.013$. Finally the fraction is multiplied by one hundred to give a percentage.
 **Substitution:** $\dfrac{I_\text{out}}{I_0} = (1 - 0.013)^8 = 0.987^8 = 0.9006 = 90.06\,\%$
 **Answer:** $90\,\%$, two significant figures like the reflected fraction $1.3\,\%$.
@@ -228,7 +228,7 @@ The film thickens downwards, so the next dark bands are in order $k = 1$ and $k 
 **Given:** refractive index of the soap film $n = 1.33$, air on both sides, most strongly reflected wavelengths $\lambda_1 = 630\,\text{nm}$ and $\lambda_2 = 450\,\text{nm}$, none between them
 **Find:** the thickness $d$ of the film in nanometres
 **Principle:** There is one inverting reflection, so the waves strengthen each other when $2nd = (k + \tfrac{1}{2})\lambda$. The same thickness strengthens both wavelengths. The shorter wavelength fits into the path difference more times, and since there are no others between them, its order is greater by one: $(k + \tfrac{1}{2})\lambda_1 = (k + \tfrac{3}{2})\lambda_2$. From this we first solve $k$ and then $d$.
-**Formula:** $(k + \tfrac{1}{2})\lambda_1 = (k + \tfrac{3}{2})\lambda_2$, so $k = \dfrac{\tfrac{3}{2}\lambda_2 - \tfrac{1}{2}\lambda_1}{\lambda_1 - \lambda_2}$; thickness $d = \dfrac{(k + \frac{1}{2})\lambda_1}{2n}$
+**Formula:** $$\begin{aligned} (k + \tfrac{1}{2})\lambda_1 &= (k + \tfrac{3}{2})\lambda_2 \\ k(\lambda_1 - \lambda_2) &= \tfrac{3}{2}\lambda_2 - \tfrac{1}{2}\lambda_1 \\ k &= \frac{\tfrac{3}{2}\lambda_2 - \tfrac{1}{2}\lambda_1}{\lambda_1 - \lambda_2} \\ 2nd &= (k + \tfrac{1}{2})\lambda_1 \\ d &= \frac{(k + \frac{1}{2})\lambda_1}{2n} \end{aligned}$$
 **Conversions:** Not needed: the wavelengths and the thickness are all in nanometres.
 **Substitution:** $k = \dfrac{1.5 \cdot 450\,\text{nm} - 0.5 \cdot 630\,\text{nm}}{630\,\text{nm} - 450\,\text{nm}} = \dfrac{360\,\text{nm}}{180\,\text{nm}} = 2$, so $d = \dfrac{2.5 \cdot 630\,\text{nm}}{2 \cdot 1.33} = \dfrac{1575\,\text{nm}}{2.66} = 592.11\,\text{nm}$
 **Answer:** $592\,\text{nm}$, three significant figures like the refractive index $1.33$ and the wavelengths.
@@ -248,7 +248,7 @@ The path difference is at first $2.5$ wavelengths, so the first weakening during
 c) In a very thin film the path difference is almost zero, but one reflection has been inverted.
 
 The air–oil interface reflects more strongly than the oil–water interface, so the waves do not cancel each other completely.
-**Formula:** $\lambda = \dfrac{2nd}{k + \frac{1}{2}}$ (reflected most strongly) and $d = \dfrac{k\lambda}{2n}$ (destructive interference)
+**Formula:** $$\begin{aligned} 2nd &= (k + \tfrac{1}{2})\lambda \\ \lambda &= \frac{2nd}{k + \frac{1}{2}} \\ 2nd &= k\lambda \\ d &= \frac{k\lambda}{2n} \end{aligned}$$
 **Conversions:** Not needed: the thickness and the wavelengths are both in nanometres.
 **Substitution:** a) The path difference is $2nd = 2 \cdot 1.47 \cdot 450\,\text{nm} = 1323\,\text{nm}$. With $k = 0$ we get $2646\,\text{nm}$ and with $k = 1$ we get $882\,\text{nm}$, both infrared. With $k = 2$ we get $\lambda = \dfrac{1323\,\text{nm}}{2.5} = 529.2\,\text{nm}$, and with $k = 3$ we get $378\,\text{nm}$, which is ultraviolet. In the visible range only $529\,\text{nm}$, green, is therefore reflected strongly.
 
@@ -283,7 +283,7 @@ c) Over the distance $L$ there are $\dfrac{L}{\Delta x}$ fringes in all, and for
 **Reading the graph:** The points lie on a rising line with points on both sides of it, and the line passes almost through the origin. The fitted line passes approximately through the points $(0;\ 0.05\,\text{mm})$ and $(8;\ 15.2\,\text{mm})$.
 
 The point $(0;\ 0.05\,\text{mm})$ is where the fitted line crosses the vertical axis and is not a measurement. The points are read from the line and chosen far apart. The slope is the fringe spacing $\Delta x$.
-**Formula:** $\Delta x = \dfrac{x_2 - x_1}{k_2 - k_1}$, $\Delta d = \dfrac{\lambda}{2}$ and $D = \dfrac{L}{\Delta x} \cdot \dfrac{\lambda}{2}$
+**Formula:** $$\begin{aligned} \Delta x &= \frac{x_2 - x_1}{k_2 - k_1} \\ 2d &= k\lambda \\ \Delta d &= \frac{\lambda}{2} \\ D &= \frac{L}{\Delta x} \cdot \Delta d \\ &= \frac{L}{\Delta x} \cdot \frac{\lambda}{2} \end{aligned}$$
 **Conversions:** $\dfrac{\lambda}{2} = \dfrac{589\,\text{nm}}{2} = 294.5\,\text{nm} = 0.2945\,\mu\text{m}$, because $1\,\mu\text{m} = 1000\,\text{nm}$. The distances $L$ and $\Delta x$ are both in millimetres, so their ratio has no unit.
 **Substitution:** $\Delta x = \dfrac{15.2\,\text{mm} - 0.05\,\text{mm}}{8 - 0} = 1.894\,\text{mm}$. The thickness increases by $294.5\,\text{nm}$ from one fringe to the next. Over the distance $L$ there are $\dfrac{80\,\text{mm}}{1.894\,\text{mm}} = 42.24$ fringes, so $D = 42.24 \cdot 0.2945\,\mu\text{m} = 12.44\,\mu\text{m} \approx 12\,\mu\text{m}$.
 **Answer:** $12\,\mu\text{m}$, two significant figures, because the distance $L = 80\,\text{mm}$ is given with two digits and the line is fitted by eye. A fit by eye varies, so about $11.9$–$12.9\,\mu\text{m}$ is a good answer.
@@ -296,7 +296,7 @@ The point $(0;\ 0.05\,\text{mm})$ is where the fitted line crosses the vertical 
 
 Of two neighbouring extremes, the shorter wavelength fits into the path difference more times, so for the longer-wavelength maximum next to the minimum $k' = k - 1$. First $k$ is solved, then $d$.
 **Reading the graph:** In the visible range the curve has one minimum and one maximum to the right of it. The minimum is almost zero at $\lambda_\text{min} \approx 466\,\text{nm}$. The maximum is highest, about $7.7\,\%$, at $\lambda_\text{max} \approx 621\,\text{nm}$.
-**Formula:** $k\lambda_\text{min} = (k - \tfrac{1}{2})\lambda_\text{max}$, so $k = \dfrac{\lambda_\text{max}}{2(\lambda_\text{max} - \lambda_\text{min})}$; thickness $d = \dfrac{k\lambda_\text{min}}{2n}$
+**Formula:** $$\begin{aligned} 2nd &= k\lambda_\text{min} \\ 2nd &= (k - \tfrac{1}{2})\lambda_\text{max} \\ k\lambda_\text{min} &= (k - \tfrac{1}{2})\lambda_\text{max} \\ k &= \frac{\lambda_\text{max}}{2(\lambda_\text{max} - \lambda_\text{min})} \\ d &= \frac{k\lambda_\text{min}}{2n} \end{aligned}$$
 **Conversions:** Not needed: the wavelengths and the thickness are both in nanometres.
 **Substitution:** $k = \dfrac{621\,\text{nm}}{2 \cdot (621\,\text{nm} - 466\,\text{nm})} = \dfrac{621}{310} = 2.003 \approx 2$, so $d = \dfrac{2 \cdot 466\,\text{nm}}{2 \cdot 1.33} = 350.4\,\text{nm}$
 **Answer:** $k = 2$ and $d \approx 350\,\text{nm}$, three significant figures like the refractive index $1.33$. The order must be a whole number, so it is rounded, and a reading error affects the thickness only a little.

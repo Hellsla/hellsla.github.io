@@ -22,7 +22,7 @@
 **Annettu:** ensiöjännite $U_1 = 20\,\text{kV}$, toisiojännite $U_2 = 400\,\text{V}$, toisiovirta $I_2 = 250\,\text{A}$, ideaalinen muuntaja
 **Kysytty:** ensiövirta $I_1$ ampeereina
 **Periaate:** Ideaalinen muuntaja ei kuluta energiaa, joten teho säilyy, $U_1 I_1 = U_2 I_2$. Siksi virrat suhtautuvat kääntäen kuten jännitteet.
-**Kaava:** $\dfrac{U_1}{U_2} = \dfrac{I_2}{I_1}$, josta $I_1 = \dfrac{I_2 U_2}{U_1}$
+**Kaava:** $$\begin{aligned} P_1 &= P_2 \\ U_1 I_1 &= U_2 I_2 \\ I_1 &= \frac{U_2 I_2}{U_1} \end{aligned}$$
 **Muunnokset:** $U_1 = 20\,\text{kV} = 20 \cdot 1000\,\text{V} = 20\,000\,\text{V}$, jotta jännitteet ovat samassa yksikössä.
 **Sijoitus:** $I_1 = \dfrac{250\,\text{A} \cdot 400\,\text{V}}{20\,000\,\text{V}} = 5{,}0\,\text{A}$
 **Vastaus:** $5{,}0\,\text{A}$, kaksi merkitsevää numeroa kuten jännitteessä $20\,\text{kV}$.
@@ -52,7 +52,7 @@
 **Annettu:** teho $P = 50\,\text{MW}$, siirtojännite $U = 110\,\text{kV}$, johtimien resistanssi $R = 4{,}0\,\Omega$
 **Kysytty:** johdossa sisäenergiaksi muuttuva teho $P_\text{h}$ kilowatteina
 **Periaate:** Tehtävässä käytetään yksinkertaistettua kaksijohtimista mallia. Johtoa lämmittää sen virta, ja häviöteho on $P_\text{h} = R I^2$. Virta saadaan tehosta ja siirtojännitteestä, koska $P = U I$. Siirtojännite ei ole jännite johdon resistanssin yli. Siksi häviötä ei lasketa lausekkeella $U^2 : R$.
-**Kaava:** $P = U I$, josta $I = \dfrac{P}{U}$, ja $P_\text{h} = R I^2$
+**Kaava:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ &= \frac{R P^2}{U^2} \end{aligned}$$
 **Muunnokset:** $P = 50\,\text{MW} = 50 \cdot 10^{6}\,\text{W}$ ja $U = 110\,\text{kV} = 110 \cdot 10^{3}\,\text{V}$. Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** $I = \dfrac{50 \cdot 10^{6}\,\text{W}}{110 \cdot 10^{3}\,\text{V}} = 454{,}5\,\text{A}$ ja $P_\text{h} = 4{,}0\,\Omega \cdot (454{,}5\,\text{A})^2 = 826\,400\,\text{W} = 826{,}4\,\text{kW}$
 **Vastaus:** $8{,}3 \cdot 10^{2}\,\text{kW}$ eli noin $830\,\text{kW}$, kaksi merkitsevää numeroa kuten teho $50\,\text{MW}$ ja resistanssi $4{,}0\,\Omega$.
@@ -72,7 +72,7 @@
 **Annettu:** teho $P = 100\,\text{MW}$, siirtojännite $U = 220\,\text{kV}$, johtimien resistanssi $R = 4{,}8\,\Omega$
 **Kysytty:** häviötehon osuus $P_\text{h} : P$ prosentteina
 **Periaate:** Tehtävässä käytetään yksinkertaistettua kaksijohtimista mallia. Johtoa lämmittää virta, ja häviöteho on $P_\text{h} = R I^2$. Virta saadaan siirrettävästä tehosta ja siirtojännitteestä, $P = U I$. Lopuksi häviötehoa verrataan siirrettävään tehoon.
-**Kaava:** $I = \dfrac{P}{U}$, $P_\text{h} = R I^2$ ja osuus $\dfrac{P_\text{h}}{P}$
+**Kaava:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ &= \frac{R P^2}{U^2} \\ \frac{P_\text{h}}{P} &= \frac{R P}{U^2} \end{aligned}$$
 **Muunnokset:** $P = 100\,\text{MW} = 100 \cdot 10^{6}\,\text{W}$ ja $U = 220\,\text{kV} = 220 \cdot 10^{3}\,\text{V}$.
 **Sijoitus:** $I = \dfrac{100 \cdot 10^{6}\,\text{W}}{220 \cdot 10^{3}\,\text{V}} = 454{,}5\,\text{A}$, $P_\text{h} = 4{,}8\,\Omega \cdot (454{,}5\,\text{A})^2 = 0{,}9917 \cdot 10^{6}\,\text{W}$ ja $\dfrac{P_\text{h}}{P} = \dfrac{0{,}9917 \cdot 10^{6}\,\text{W}}{100 \cdot 10^{6}\,\text{W}} = 0{,}009917 = 0{,}9917\,\%$
 **Vastaus:** $0{,}99\,\%$, kaksi merkitsevää numeroa kuten resistanssissa $4{,}8\,\Omega$.
@@ -98,7 +98,7 @@ $$, mikä sopii mittauspisteiden $3{,}1\,\text{W}$ ($2{,}0\,\text{A}$) ja $7{,}4
 **Annettu:** generaattorin teho $P = 150\,\text{MW}$ ja jännite $20\,\text{kV}$, ideaalinen muuntaja nostaa jännitteen arvoon $U = 400\,\text{kV}$, johtimien resistanssi $R = 8{,}0\,\Omega$
 **Kysytty:** häviötehon osuus $P_\text{h} : P$ prosentteina
 **Periaate:** Tehtävässä käytetään yksinkertaistettua kaksijohtimista mallia. Ideaalinen muuntaja ei kuluta energiaa, joten johtoon lähtee koko teho $150\,\text{MW}$, mutta jännitteellä $400\,\text{kV}$. Johdon virta määräytyy siirtojännitteestä, ei generaattorin jännitteestä. Johtoa lämmittää tämä virta teholla $P_\text{h} = R I^2$.
-**Kaava:** $I = \dfrac{P}{U}$, $P_\text{h} = R I^2$ ja osuus $\dfrac{P_\text{h}}{P}$
+**Kaava:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ &= \frac{R P^2}{U^2} \\ \frac{P_\text{h}}{P} &= \frac{R P}{U^2} \end{aligned}$$
 **Muunnokset:** $P = 150\,\text{MW} = 150 \cdot 10^{6}\,\text{W}$ ja $U = 400\,\text{kV} = 400 \cdot 10^{3}\,\text{V}$.
 **Sijoitus:** $I = \dfrac{150 \cdot 10^{6}\,\text{W}}{400 \cdot 10^{3}\,\text{V}} = 375\,\text{A}$, $P_\text{h} = 8{,}0\,\Omega \cdot (375\,\text{A})^2 = 1{,}125 \cdot 10^{6}\,\text{W}$ ja $\dfrac{P_\text{h}}{P} = \dfrac{1{,}125 \cdot 10^{6}\,\text{W}}{150 \cdot 10^{6}\,\text{W}} = 0{,}0075 = 0{,}75\,\%$
 **Vastaus:** $0{,}75\,\%$, kaksi merkitsevää numeroa kuten resistanssissa $8{,}0\,\Omega$.
@@ -108,7 +108,7 @@ $$, mikä sopii mittauspisteiden $3{,}1\,\text{W}$ ($2{,}0\,\text{A}$) ja $7{,}4
 **Annettu:** siirtojännite $U = 400\,\text{kV}$, siirrettävä teho $P = 400\,\text{MW}$, häviö enintään $1{,}0\,\%$ eli $P_\text{h} \le 0{,}010\,P$
 **Kysytty:** johtimien suurin sallittu resistanssi $R$ ohmeina
 **Periaate:** Tehtävässä käytetään yksinkertaistettua kaksijohtimista mallia. Häviöteho on $P_\text{h} = R I^2$, ja virta $I = P : U$. Yhdistämällä saadaan $P_\text{h} = R P^2 : U^2$. Kun häviö saa olla enintään tietty osuus tehosta, resistanssi saa olla enintään se arvo, jolla häviö on täsmälleen tämä osuus.
-**Kaava:** $\dfrac{R P^2}{U^2} = 0{,}010\,P$, josta $R = \dfrac{0{,}010\,U^2}{P}$
+**Kaava:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ &= \frac{R P^2}{U^2} \\ P_\text{h} &= 0{,}010\,P \\ \frac{R P^2}{U^2} &= 0{,}010\,P \\ R &= \frac{0{,}010\,U^2}{P} \end{aligned}$$
 **Muunnokset:** $U = 400\,\text{kV} = 400 \cdot 10^{3}\,\text{V}$ ja $P = 400\,\text{MW} = 400 \cdot 10^{6}\,\text{W}$.
 **Sijoitus:** $R = \dfrac{0{,}010 \cdot (400 \cdot 10^{3}\,\text{V})^2}{400 \cdot 10^{6}\,\text{W}} = \dfrac{1{,}6 \cdot 10^{9}\,\text{V}^2}{4{,}0 \cdot 10^{8}\,\text{W}} = 4{,}0\,\Omega$
 **Vastaus:** enintään $4{,}0\,\Omega$, kaksi merkitsevää numeroa kuten osuudessa $1{,}0\,\%$.
@@ -118,7 +118,7 @@ $$, mikä sopii mittauspisteiden $3{,}1\,\text{W}$ ($2{,}0\,\text{A}$) ja $7{,}4
 **Annettu:** alkuperäinen siirtojännite $U_1 = 220\,\text{kV}$, uusi siirtojännite $U_2 = 400\,\text{kV}$, resistanssi $R$ ja häviön osuus pysyvät samoina
 **Kysytty:** kuinka moninkertainen teho $P_2 : P_1$ voidaan siirtää
 **Periaate:** Tehtävässä käytetään yksinkertaistettua kaksijohtimista mallia. Häviöteho on $P_\text{h} = R I^2$ ja virta $I = P : U$, joten häviön osuus on $P_\text{h} : P = R P : U^2$. Kun $R$ ja osuus pysyvät samoina, teho $P$ on verrannollinen jännitteen neliöön $U^2$.
-**Kaava:** $\dfrac{R P_1}{U_1^2} = \dfrac{R P_2}{U_2^2}$, josta $\dfrac{P_2}{P_1} = \dfrac{U_2^2}{U_1^2}$
+**Kaava:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ \frac{P_\text{h}}{P} &= \frac{R P}{U^2} \\ \frac{R P_1}{U_1^2} &= \frac{R P_2}{U_2^2} \\ \frac{P_2}{P_1} &= \frac{U_2^2}{U_1^2} \end{aligned}$$
 **Muunnokset:** Niitä ei tarvita. Jännitteiden suhteessa kilovoltit supistuvat.
 **Sijoitus:** $\dfrac{P_2}{P_1} = \dfrac{(400\,\text{kV})^2}{(220\,\text{kV})^2} = (1{,}818)^2 = 3{,}306$
 **Vastaus:** noin $3{,}3$-kertainen teho, kaksi merkitsevää numeroa kuten jännitteessä $220\,\text{kV}$.
@@ -133,7 +133,7 @@ $$, mikä sopii mittauspisteiden $3{,}1\,\text{W}$ ($2{,}0\,\text{A}$) ja $7{,}4
 **Annettu:** häviöteho ensin $P_\text{h,1} = 840\,\text{kW}$, siirtojännite kaksinkertaistuu, $U_2 = 2U_1$, teho $P$ ja resistanssi $R$ pysyvät samoina
 **Kysytty:** uusi häviöteho $P_\text{h,2}$ kilowatteina
 **Periaate:** Johdon virta on $I = P : U$. Häviöteho on $P_\text{h} = R I^2 = R P^2 : U^2$. Kun $P$ ja $R$ pysyvät samoina, häviöteho on kääntäen verrannollinen jännitteen neliöön. Kaksinkertainen jännite puolittaa virran. Häviö riippuu virran neliöstä.
-**Kaava:** $P_\text{h} = \dfrac{R P^2}{U^2}$, josta $\dfrac{P_\text{h,2}}{P_\text{h,1}} = \dfrac{U_1^2}{U_2^2}$ ja $P_\text{h,2} = P_\text{h,1} \cdot \dfrac{U_1^2}{U_2^2}$
+**Kaava:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ &= \frac{R P^2}{U^2} \\ P_\text{h,1} &= \frac{R P^2}{U_1^2} \\ P_\text{h,2} &= \frac{R P^2}{U_2^2} \\ \frac{P_\text{h,2}}{P_\text{h,1}} &= \frac{U_1^2}{U_2^2} \\ P_\text{h,2} &= P_\text{h,1} \cdot \frac{U_1^2}{U_2^2} \end{aligned}$$
 **Muunnokset:** Niitä ei tarvita. Häviöteho on kilowatteina, ja jännitteiden suhde on yksikötön.
 **Sijoitus:** $P_\text{h,2} = 840\,\text{kW} \cdot \dfrac{U_1^2}{(2U_1)^2} = 840\,\text{kW} \cdot \dfrac{1}{4} = 210\,\text{kW}$
 **Vastaus:** $210\,\text{kW}$, kaksi merkitsevää numeroa kuten häviötehossa $840\,\text{kW}$.
@@ -186,7 +186,7 @@ Toisioteho taas kasvaa. Pienellä kuormalla lähes vakio häviö on suuri osa en
 **Annettu:** vakio teho $P = 200\,\text{MW}$, matka $150\,\text{km}$, johtimien yhteinen resistanssi $0{,}040\,\Omega$ johdon kilometriä kohti, aika $t = 8760\,\text{h}$, jännitteet $U_\text{A} = 220\,\text{kV}$ ja $U_\text{B} = 400\,\text{kV}$, sähkön hinta $50\,\text{€/MWh}$
 **Kysytty:** vaihtoehdon B vuosittainen säästö häviöenergian arvossa miljoonina euroina sekä perustelu
 **Periaate:** Tehtävässä käytetään yksinkertaistettua kaksijohtimista mallia. Johdon virta määräytyy siirtojännitteestä, $I = P : U$. Johtimissa sisäenergiaksi muuttuva teho on $P_\text{h} = R I^2$. Sama teho kulkee korkeammalla jännitteellä pienemmällä virralla, joten häviö on pienempi. Teho on vakio, joten häviöenergia on häviöteho kerrottuna ajalla, $E = P_\text{h} t$. Säästö on energioiden erotus kerrottuna hinnalla.
-**Kaava:** $R = 0{,}040\,\tfrac{\Omega}{\text{km}} \cdot s$, $I = \dfrac{P}{U}$, $P_\text{h} = R I^2$, $E = P_\text{h} t$ sekä
+**Kaava:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ &= \frac{R P^2}{U^2} \\ E &= P_\text{h} t \end{aligned}$$
 
 $$\text{säästö} = (E_\text{A} - E_\text{B}) \cdot \text{hinta}$$
 **Muunnokset:** $P = 200\,\text{MW} = 200 \cdot 10^{6}\,\text{W}$, $U_\text{A} = 220 \cdot 10^{3}\,\text{V}$ ja $U_\text{B} = 400 \cdot 10^{3}\,\text{V}$. Häviöteho muutetaan lopuksi megawateiksi, $1\,\text{MW} = 10^{6}\,\text{W}$.
@@ -230,7 +230,7 @@ Se on enemmän kuin voimala tuottaa. Lauseke $U^2 : R$ siirtojännitteellä anta
 **Kysytty:** johtimien yhteenlaskettu resistanssi $R$ ohmeina
 **Periaate:** Tehtävässä käytetään yksinkertaistettua kaksijohtimista mallia. Virta lämmittää johtoa, ja häviöteho on $P_\text{h} = R I^2$. Virran saa tehosta ja jännitteestä, $P = U I$. Luet käyrältä yhden pisteen. Osuudesta saat häviötehon, ja häviötehosta saat resistanssin.
 **Kuvaajan lukeminen:** Käyrä kulkee ruudukon pisteen ($200\,\text{kV}$; $3{,}0\,\%$) kautta. Jännitteellä $200\,\text{kV}$ sisäenergiaksi muuttuu $3{,}0\,\%$ siirrettävästä tehosta.
-**Kaava:** $I = \dfrac{P}{U}$ ja $P_\text{h} = R I^2$, josta $R = \dfrac{P_\text{h}}{I^2}$, missä $P_\text{h} = 0{,}030\,P$
+**Kaava:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ P_\text{h} &= 0{,}030\,P \\ R &= \frac{P_\text{h}}{I^2} \end{aligned}$$
 **Muunnokset:** $200\,\text{MW} = 200 \cdot 10^{6}\,\text{W}$, $200\,\text{kV} = 200 \cdot 10^{3}\,\text{V}$ ja $3{,}0\,\% = 0{,}030$.
 **Sijoitus:** $P_\text{h} = 0{,}030 \cdot 200 \cdot 10^{6}\,\text{W} = 6{,}0 \cdot 10^{6}\,\text{W}$
 
@@ -246,9 +246,7 @@ $R = \dfrac{6{,}0 \cdot 10^{6}\,\text{W}}{(1000\,\text{A})^2} = 6{,}0\,\Omega$
 **Periaate:** Kolmivaihejohdossa on kolme vaihejohdinta. Kun johto on tasaisesti kuormitettu, sen pätöteho on $P = \sqrt{3}\,UI\cos\varphi$. Tässä $U$ on pääjännite eli vaihejohtimien välinen jännite ja $I$ on yhden vaihejohtimen virta. Teho ja tehokerroin ovat kummallakin jännitteellä samat. Siksi virran suuruus riippuu vain jännitteestä.
 
 Jokaisessa kolmesta vaihejohtimesta virta $I$ kulkee resistanssin $R$ läpi. Silloin johtimessa muuttuu sisäenergiaksi teho $RI^2$. Kolmessa johtimessa häviöteho on yhteensä $P_\text{h} = 3RI^2$. Siirtojännite ei ole johtimen resistanssin yli oleva jännite. Siksi lauseketta $U^2 : R$ ei voi käyttää.
-**Kaava:** $P = \sqrt{3}\,UI\cos\varphi$, josta $I = \dfrac{P}{\sqrt{3}\,U\cos\varphi}$. Kun virta sijoitetaan yhtälöön $P_\text{h} = 3RI^2$, saadaan
-
-$$\begin{aligned} P_\text{h} &= 3R \cdot \dfrac{P^2}{3U^2\cos^2\varphi} \\ &= \dfrac{RP^2}{U^2\cos^2\varphi} \end{aligned}$$
+**Kaava:** $$\begin{aligned} P &= \sqrt{3}\,U I \cos\varphi \\ I &= \frac{P}{\sqrt{3}\,U\cos\varphi} \\ P_\text{h} &= 3 R I^2 \\ &= 3R \cdot \frac{P^2}{3U^2\cos^2\varphi} \\ &= \frac{R P^2}{U^2\cos^2\varphi} \end{aligned}$$
 
 Kun $\cos\varphi = 1$, $I = \dfrac{P}{\sqrt{3}\,U}$ ja $P_\text{h} = \dfrac{RP^2}{U^2}$
 **Muunnokset:** $P = 200\,\text{MW} = 200 \cdot 10^{6}\,\text{W}$, $U_{110} = 110\,\text{kV} = 110 \cdot 10^{3}\,\text{V}$ ja $U_{400} = 400\,\text{kV} = 400 \cdot 10^{3}\,\text{V}$. Häviöteho muutetaan lopuksi megawateiksi, $1\,\text{MW} = 10^{6}\,\text{W}$.

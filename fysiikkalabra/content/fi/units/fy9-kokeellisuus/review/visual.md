@@ -1,20 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: d1d051db0ddc4117
-SCOPE: delta: round 2, the fixes of round 1 in fy9-kokeellisuus-s7, -s8; older tasks untouched
-Round 2: delta against the version round 1 reviewed (fix round 1).
+CONTENT-HASH: 48e89c0f5164036c
 
 ## Blocking
-- (none) Round 1 had no Blocking items.
+(none)
 
 ## Polish
-- [Minor] s7 figure at 360 px: small dots and tick numbers (about 9 px); legible, expand button present. May wait.
-- [Minor] for science: s8 figure origin drawn as a measured point while c speaks of a 0,04 mT zero reading; confirm intended.
+(none)
 
 ## Checked
-- Round-1 Polish "veto-laitetta" is fixed: tasks.json s7 rubric now reads "voima-anturia tai vetolaitetta".
-- Own Chrome capture of cards 1.3-7 and 1.3-8 at 360 px, every box open (scratchpad `fi-s7-360.png`, `fi-s8-360.png`, top of s7 read at full size): width 328 px, no clipping or horizontal overflow, parts in one column, LaTeX units with decimal comma.
-- Nothing newly broken: results rounded to the data's precision, aligned calculation rows, language-neutral unit fields and alt-text names matching the task text were as in round 1 and the text around them is unchanged.
-- Hash re-checked at the end: d1d051db0ddc4117 (unchanged).
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+- Read `git diff origin/main...HEAD` for this language (excluding review/): only paragraph breaks (blank line / \n\n) in sovella/solutions.md (3 solutions: kallistus/veto method, vaihtoehtoinen tapa/öljyn häviöt, kapeampi mittalasi/ylivuotoastia) and one inquiry.json model answer. Words, maths, units and figures unchanged. Each split falls at a sentence boundary that starts a new idea (alternative method, second way), so the paragraphs are shorter and clearer, none cuts a formula or list.
+- Read the earlier Sovella visual report as evidence.
+- Opened captures review/shots/fy9-kokeellisuus-stage-sovella-390-1.png and -sovella-1280-2.png (fi shots): layout, KaTeX, cards, hints intact, no clipping or overflow. The solutions are behind locked buttons and are not visible in these captures, so the split paragraphs themselves were judged from the source diff, not rendered. Paragraph spacing is the shared component's, already seen in other solutions.
+- Translations checked by diff to match the Finnish cut (same places); only the Finnish captures were opened.

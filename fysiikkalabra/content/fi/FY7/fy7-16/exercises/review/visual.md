@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 8368f1e935156427
+CONTENT-HASH: 828149724ec250da
 
 ## Blocking
-- none
 
 ## Polish
 - none
 
 ## Checked
-- Delta (md-paragraphs): solutions.md of fy7-16 (fi) cut into paragraphs. Opened a full-size capture of opened solutions at 1280 px (level 2 part 5; lesson folder review/shots, current for this hash). Layout, card containment and spacing survive; formulas, units and decimal commas unchanged; no clipping, overflow or red KaTeX. No figure captures apply to the changed text.
-- Hash identical at start and end.
+- fy7-16-open-exercises-L3-1280-2 (16-20 opening; the changed Kaava block of 16-... in L3 not fully visible, source read: four aligned rows).
+- No 360/390 px exercise capture in the packet (only stage-exercises-390, solutions collapsed); the 360/390/768 px layout checks are in the packet and ok. Judged at 1280 px.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 5

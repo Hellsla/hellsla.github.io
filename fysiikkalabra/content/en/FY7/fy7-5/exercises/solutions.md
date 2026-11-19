@@ -22,7 +22,7 @@
 **Given:** length of the rod $l = 0.25\,\text{m}$, speed $v = 2.0\,\text{m/s}$, magnetic flux density $B = 0.40\,\text{T}$; the rod, the velocity and the field are mutually perpendicular
 **Find:** induced voltage $e$ between the ends of the rod in volts
 **Principle:** The electrons that move with the rod experience a magnetic force $evB$ along the rod, so electrons collect at one end of the rod. The shift stops when the electric field $E = vB$ that appears cancels the magnetic force, and the voltage between the ends is $El$.
-**Formula:** $e = vBl$
+**Formula:** $$\begin{aligned} F_\text{m} &= |q|vB \\ F_\text{s} &= |q|E \\ F_\text{s} &= F_\text{m} \Rightarrow E = vB \\ e &= El \\ e &= vBl \end{aligned}$$
 **Conversions:** None needed: all quantities are in SI units, and $\tfrac{\text{m}}{\text{s}} \cdot \text{T} \cdot \text{m} = \text{V}$.
 **Substitution:** $e = 2.0\,\text{m/s} \cdot 0.40\,\text{T} \cdot 0.25\,\text{m} = 0.20\,\text{V}$
 **Answer:** $0.20\,\text{V}$, two significant figures like the given values.
@@ -32,7 +32,7 @@
 **Given:** number of turns $N = 150$, average induced voltage $|e| = 0.45\,\text{V}$, time $\Delta t = 0.12\,\text{s}$
 **Find:** change in the magnetic flux through one turn $\Delta\Phi$ in milliwebers
 **Principle:** The voltage appears because the flux decreases as the magnet is pulled away. According to Faraday's law, the average voltage is the change in flux divided by the time, multiplied by the number of turns, so when the voltage, the time and the number of turns are known, the change in flux can be solved.
-**Formula:** $|e| = N\dfrac{\Delta\Phi}{\Delta t}$, so $\Delta\Phi = \dfrac{|e|\,\Delta t}{N}$
+**Formula:** $$\begin{aligned} |e| &= N\dfrac{\Delta\Phi}{\Delta t} \\ \Delta\Phi &= \dfrac{|e|\,\Delta t}{N} \end{aligned}$$
 **Conversions:** The given values are in SI units, and $\text{V}\cdot\text{s} = \text{Wb}$. The answer is converted to milliwebers: $1\,\text{Wb} = 1000\,\text{mWb}$.
 **Substitution:** $\Delta\Phi = \dfrac{0.45\,\text{V} \cdot 0.12\,\text{s}}{150} = \dfrac{0.054\,\text{V}\cdot\text{s}}{150} = 3.6 \cdot 10^{-4}\,\text{Wb} = 0.36\,\text{mWb}$
 **Answer:** $0.36\,\text{mWb}$, two significant figures like the voltage and the time.
@@ -42,7 +42,7 @@
 **Given:** induced voltage $e = 12\,\text{mV}$, length of the rod in the field $l = 0.30\,\text{m}$, magnetic flux density $B = 0.080\,\text{T}$, velocity perpendicular to the rod and the field
 **Find:** speed of the rod $v$ in metres per second
 **Principle:** The magnetic force on the electrons of the moving rod moves them to one end of the rod, and a voltage $e = vBl$ appears between the ends. The voltage is proportional to the speed, so the speed can be solved from the measured voltage.
-**Formula:** $e = vBl$, so $v = \dfrac{e}{Bl}$
+**Formula:** $$\begin{aligned} e &= vBl \\ v &= \dfrac{e}{Bl} \end{aligned}$$
 **Conversions:** $e = 12\,\text{mV} = 12 \cdot 0.001\,\text{V} = 0.012\,\text{V}$
 **Substitution:** $v = \dfrac{0.012\,\text{V}}{0.080\,\text{T} \cdot 0.30\,\text{m}} = \dfrac{0.012\,\text{V}}{0.024\,\text{T}\cdot\text{m}} = 0.50\,\text{m/s}$
 **Answer:** $0.50\,\text{m/s}$, two significant figures like the given values.
@@ -52,7 +52,7 @@
 **Given:** magnetic flux density $B = 0.80\,\text{T}$ perpendicular to the plane of the loop, area at first $A_1 = 200\,\text{cm}^2$ and at the end $A_2 = 50\,\text{cm}^2$, time $\Delta t = 0.25\,\text{s}$, one turn $N = 1$
 **Find:** magnitude of the induced voltage $|e|$ in the loop in millivolts
 **Principle:** The field stays the same, but the area of the loop decreases, so the flux $\Phi = BA$ through the loop decreases. The change in flux produces a voltage according to Faraday's law. The area decreases steadily, so the voltage is constant.
-**Formula:** $\Delta\Phi = B(A_1 - A_2)$ and $|e| = N\dfrac{\Delta\Phi}{\Delta t}$, so $|e| = \dfrac{B(A_1 - A_2)}{\Delta t}$ when $N = 1$
+**Formula:** $$\begin{aligned} \Phi &= BA \\ \Delta\Phi &= B(A_1 - A_2) \\ |e| &= N\dfrac{\Delta\Phi}{\Delta t} \\ |e| &= \dfrac{B(A_1 - A_2)}{\Delta t} \quad (N = 1) \end{aligned}$$
 **Conversions:** $A_1 = 200\,\text{cm}^2 = 200 \cdot (0.01\,\text{m})^2 = 0.0200\,\text{m}^2$ and $A_2 = 50\,\text{cm}^2 = 50 \cdot (0.01\,\text{m})^2 = 0.0050\,\text{m}^2$
 **Substitution:** $A_1 - A_2 = 0.0200\,\text{m}^2 - 0.0050\,\text{m}^2 = 0.0150\,\text{m}^2$ and $|e| = \dfrac{0.80\,\text{T} \cdot 0.0150\,\text{m}^2}{0.25\,\text{s}} = \dfrac{0.012\,\text{Wb}}{0.25\,\text{s}} = 0.048\,\text{V} = 48\,\text{mV}$
 **Answer:** $48\,\text{mV}$, two significant figures like the field $0.80\,\text{T}$ and the time $0.25\,\text{s}$.
@@ -77,7 +77,7 @@ In the interval $0.50$–$0.60\,\text{s}$ the flux decreases from $4.0\,\text{mW
 **Principle:** An induced voltage $e = vBl$ appears between the ends of the moving rod, because a magnetic force acts on the electrons of the rod. The rod, the rails and the resistor form a closed circuit in which the rod acts as the voltage source.
 
 The resistance of the rest of the circuit is small, so the whole voltage is across the resistor, and the current follows from Ohm's law.
-**Formula:** $e = vBl$ and $I = \dfrac{e}{R}$, so $I = \dfrac{vBl}{R}$
+**Formula:** $$\begin{aligned} e &= vBl \\ e &= RI \\ I &= \dfrac{e}{R} \\ I &= \dfrac{vBl}{R} \end{aligned}$$
 **Conversions:** None needed: all quantities are in SI units.
 **Substitution:** $e = 3.0\,\text{m/s} \cdot 0.50\,\text{T} \cdot 0.40\,\text{m} = 0.60\,\text{V}$ and $I = \dfrac{0.60\,\text{V}}{2.0\,\Omega} = 0.30\,\text{A}$
 **Answer:** $0.30\,\text{A}$, two significant figures like the given values.
@@ -87,7 +87,7 @@ The resistance of the rest of the circuit is small, so the whole voltage is acro
 **Given:** side of the coil $l = 5.0\,\text{cm}$, number of turns $N = 20$, speed $v = 0.25\,\text{m/s}$, magnetic flux density $B = 0.30\,\text{T}$ perpendicular to the plane of the coil
 **Find:** induced voltage $|e|$ in millivolts while the coil is entering the field
 **Principle:** When the coil enters the field, the part of its area that is in the field grows steadily, so the flux through each turn grows steadily and the voltage is constant. In the time $\Delta t$ the coil moves a distance $v\Delta t$, so the flux grows by $\Delta\Phi = Bl \cdot v\Delta t$.
-**Formula:** $|e| = N\dfrac{\Delta\Phi}{\Delta t} = N\dfrac{Bl \cdot v\Delta t}{\Delta t}$, so $|e| = NBlv$
+**Formula:** $$\begin{aligned} \Phi &= BA \\ \Delta\Phi &= Bl \cdot v\Delta t \\ |e| &= N\dfrac{\Delta\Phi}{\Delta t} \\ |e| &= N\dfrac{Bl \cdot v\Delta t}{\Delta t} \\ |e| &= NBlv \end{aligned}$$
 **Conversions:** $l = 5.0\,\text{cm} = 5.0 \cdot 0.01\,\text{m} = 0.050\,\text{m}$
 **Substitution:** $|e| = 20 \cdot 0.30\,\text{T} \cdot 0.050\,\text{m} \cdot 0.25\,\text{m/s} = 0.075\,\text{V} = 75\,\text{mV}$
 **Answer:** $75\,\text{mV}$, two significant figures like the given values.
@@ -121,7 +121,7 @@ $$
 **Given:** number of turns $N = 100$, area $A = 0.020\,\text{m}^2$, plane of the coil at first perpendicular to the field, half-turn in the time $\Delta t = 0.10\,\text{s}$, average voltage $|e| = 2.0\,\text{mV}$
 **Find:** magnetic flux density $B$ of the Earth's magnetic field in microteslas
 **Principle:** At first the flux through one turn is $\Phi_1 = BA$. After a half-turn the same field passes through the turn from the opposite direction, so the flux is $\Phi_2 = -BA$. The magnitude of the change in flux is therefore $\Delta\Phi = 2BA$, and according to Faraday's law the average voltage is $N \cdot 2BA : \Delta t$.
-**Formula:** $|e| = N\dfrac{2BA}{\Delta t}$, so $B = \dfrac{|e|\,\Delta t}{2NA}$
+**Formula:** $$\begin{aligned} \Phi_1 &= BA \\ \Phi_2 &= -BA \\ |\Delta\Phi| &= 2BA \\ |e| &= N\dfrac{\Delta\Phi}{\Delta t} \\ |e| &= N\dfrac{2BA}{\Delta t} \\ B &= \dfrac{|e|\,\Delta t}{2NA} \end{aligned}$$
 **Conversions:** $|e| = 2.0\,\text{mV} = 2.0 \cdot 10^{-3}\,\text{V}$; the answer is converted to microteslas: $1\,\text{T} = 10^{6}\,\mu\text{T}$
 **Substitution:** $B = \dfrac{2.0 \cdot 10^{-3}\,\text{V} \cdot 0.10\,\text{s}}{2 \cdot 100 \cdot 0.020\,\text{m}^2} = \dfrac{2.0 \cdot 10^{-4}\,\text{V}\cdot\text{s}}{4.0\,\text{m}^2} = 5.0 \cdot 10^{-5}\,\text{T} = 50\,\mu\text{T}$
 **Answer:** $50\,\mu\text{T}$, two significant figures like the voltage $2.0\,\text{mV}$.
@@ -133,7 +133,7 @@ $$
 **Principle:** Faraday's law implies that the product of the voltage and the duration of a short interval is $N$ times the change in flux. When the intervals of the pulse are added up, the area between the voltage graph $(t, e)$ and the time axis is $N\Delta\Phi$.
 
 At the end of the pulse the voltage is zero, because the flux is at its greatest and no longer growing; the magnet is then in the middle of the coil. The flux has grown from zero to this value, so $\Delta\Phi = \Phi$.
-**Formula:** the area of the triangle is $N\Phi = \tfrac{1}{2} e_0 \Delta t$, so $\Phi = \dfrac{e_0 \Delta t}{2 \cdot N}$
+**Formula:** $$\begin{aligned} |A| &= N\Phi \\ |A| &= \tfrac{1}{2} e_0 \Delta t \\ N\Phi &= \tfrac{1}{2} e_0 \Delta t \\ \Phi &= \dfrac{e_0 \Delta t}{2 \cdot N} \end{aligned}$$
 **Conversions:** $\Delta t = 40\,\text{ms} = 40 \cdot 0.001\,\text{s} = 0.040\,\text{s}$; the answer is converted to milliwebers: $1\,\text{Wb} = 1000\,\text{mWb}$
 **Substitution:** $\Phi = \dfrac{0.90\,\text{V} \cdot 0.040\,\text{s}}{2 \cdot 300} = \dfrac{0.036\,\text{V}\cdot\text{s}}{600} = 6.0 \cdot 10^{-5}\,\text{Wb} = 0.060\,\text{mWb}$
 **Answer:** $0.060\,\text{mWb}$, two significant figures like the peak value $0.90\,\text{V}$ and the duration $40\,\text{ms}$.
@@ -150,7 +150,7 @@ When the magnet is moved, the flux changes and the meter shows a voltage, the gr
 **Given:** number of turns of the first coil $N_1 = 120$ and voltage $e_1 = 0.90\,\text{V}$; number of turns of the second coil $N_2 = 300$; the coils are otherwise similar and the magnet moves in the same way
 **Find:** induced voltage $e_2$ of the second coil in volts
 **Principle:** The coils have the same area and the magnet moves in the same way, so the rate of change of the flux through one turn, $\Delta\Phi : \Delta t$, is the same in both. The turns are in series, so the voltage is directly proportional to the number of turns.
-**Formula:** $e_1 = N_1\dfrac{\Delta\Phi}{\Delta t}$ and $e_2 = N_2\dfrac{\Delta\Phi}{\Delta t}$, so $e_2 = \dfrac{N_2}{N_1}\,e_1$
+**Formula:** $$\begin{aligned} e_1 &= N_1\dfrac{\Delta\Phi}{\Delta t} \\ e_2 &= N_2\dfrac{\Delta\Phi}{\Delta t} \\ \dfrac{e_2}{e_1} &= \dfrac{N_2}{N_1} \\ e_2 &= \dfrac{N_2}{N_1}\,e_1 \end{aligned}$$
 **Conversions:** Not needed: the numbers of turns are plain numbers, and the voltage is in volts.
 **Substitution:** $e_2 = \dfrac{300}{120} \cdot 0.90\,\text{V} = 2.5 \cdot 0.90\,\text{V} = 2.25\,\text{V} \approx 2.3\,\text{V}$
 **Answer:** $2.3\,\text{V}$, two significant figures like the voltage $0.90\,\text{V}$.
@@ -160,7 +160,7 @@ When the magnet is moved, the flux changes and the meter shows a voltage, the gr
 **Given:** length of the rod $l = 0.50\,\text{m}$, speed $v = 0.60\,\text{m/s}$, induced voltage $e = 18\,\text{mV}$; the rod, the velocity and the field are mutually perpendicular
 **Find:** magnetic flux density $B$ in teslas
 **Principle:** A magnetic force acts on the electrons of the moving rod, and a voltage $e = vBl$ appears between the ends of the rod. The voltage is directly proportional to the magnetic flux density, so $B$ can be solved from the measured voltage.
-**Formula:** $e = vBl$, so $B = \dfrac{e}{vl}$
+**Formula:** $$\begin{aligned} e &= vBl \\ B &= \dfrac{e}{vl} \end{aligned}$$
 **Conversions:** $e = 18\,\text{mV} = 18 \cdot 0.001\,\text{V} = 0.018\,\text{V}$
 **Substitution:** $B = \dfrac{0.018\,\text{V}}{0.60\,\text{m/s} \cdot 0.50\,\text{m}} = \dfrac{0.018\,\text{V}}{0.30\,\text{m}^2/\text{s}} = 0.060\,\text{T}$
 **Answer:** $0.060\,\text{T}$, two significant figures like the given values.
@@ -184,7 +184,7 @@ In the interval $0.30$–$0.40\,\text{s}$ the flux hardly changes ($0.01\,\text{
 **Find:** magnetic flux density $B$ in teslas
 **Principle:** The voltage of the moving rod is $e = vBl$. When $B$ and $l$ stay the same, $e$ is directly proportional to the speed $v$, so the $(v, e)$ points lie on a straight line through the origin whose slope is $Bl$. The points deviate slightly from the line because of measurement errors.
 **Reading the graph:** The fitted line passes from the origin between the points (for example through the point $(0.60\,\text{m/s};\ 18\,\text{mV})$ and the origin). The slope of the line is $k = \Delta e : \Delta v = 18\,\text{mV} : 0.60\,\text{m/s} = 30\,\tfrac{\text{mV}}{\text{m/s}}$. The quotients $e : v$ of all the points are between $29$ and $31\,\tfrac{\text{mV}}{\text{m/s}}$, so the line describes the data well.
-**Formula:** $k = Bl$, so $B = \dfrac{k}{l}$
+**Formula:** $$\begin{aligned} e &= vBl \\ e &= kv \\ k &= Bl \\ B &= \dfrac{k}{l} \end{aligned}$$
 **Conversions:** $k = 30\,\tfrac{\text{mV}}{\text{m/s}} = 30 \cdot 0.001\,\tfrac{\text{V}}{\text{m/s}} = 0.030\,\tfrac{\text{V}}{\text{m/s}}$
 **Substitution:** $B = \dfrac{0.030\,\text{V}\cdot\text{s/m}}{0.20\,\text{m}} = 0.15\,\text{T}$
 **Answer:** $0.15\,\text{T}$, two significant figures like the length $0.20\,\text{m}$ and the slope.
@@ -204,7 +204,7 @@ The formula $e = vBl$ may be used only when the three directions are perpendicul
 **Find:** a) acceleration $a$ of the cart ($\text{m/s}^2$) and the justification for the growth of the voltage; b) distance $s$ travelled by the cart in $1.2\,\text{s}$
 **Principle:** The rod, the velocity and the field are perpendicular, so the voltage between the ends of the rod is $e = vBl$. The cart accelerates steadily from rest, so $v = at$. It follows that $e = aBl \cdot t$: the voltage is directly proportional to time, and the slope of the line through the $(t, e)$ points is $k = aBl$.
 **Reading the graph:** The quotients $e : t$ are $0.160$, $0.163$, $0.163$, $0.166$, $0.163$ and $0.165\,\tfrac{\text{V}}{\text{s}}$, so the voltage really grows in direct proportion to time. The slope of the line fitted through the origin is $k = 0.164\,\tfrac{\text{V}}{\text{s}}$ (least-squares fit), and it suits all the quotients $0.160$–$0.166\,\tfrac{\text{V}}{\text{s}}$.
-**Formula:** a) $k = aBl$, so $a = \dfrac{k}{Bl}$. b) The distance in uniformly accelerated motion from rest is $s = \tfrac{1}{2}at^2$.
+**Formula:** a) $$\begin{aligned} e &= vBl \\ v &= at \\ e &= aBl \cdot t \\ k &= aBl \\ a &= \dfrac{k}{Bl} \end{aligned}$$ b) $$\begin{aligned} s &= \tfrac{1}{2}at^2 \end{aligned}$$
 **Conversions:** $1\,\text{mV} = 0.001\,\text{V}$, so $k$ is in SI units.
 **Substitution:** a) $a = \dfrac{0.164\,\text{V/s}}{0.25\,\text{T} \cdot 0.40\,\text{m}} = \dfrac{0.164\,\text{V/s}}{0.100\,\text{T}\cdot\text{m}} = 1.64\,\text{m/s}^2$. b) $s = \tfrac{1}{2} \cdot 1.64\,\text{m/s}^2 \cdot (1.2\,\text{s})^2 = 1.18\,\text{m}$
 **Answer:** a) $a = 1.6\,\text{m/s}^2$, two significant figures like the field and the length. b) $s \approx 1.2\,\text{m}$.
@@ -219,7 +219,7 @@ During the first pulse the flux grows from zero to its greatest value, and at th
 **Reading the graph:** The area is estimated with the trapezoid rule: the area of each $4\,\text{ms}$ interval is the average of the voltages at the ends of the interval times $0.004\,\text{s}$.
 
 The voltages of the first pulse are $-0.02$, $0.09$, $0.63$, $1.77$, $1.77$, $0.60$ and $0.03\,\text{V}$. The sum gives the absolute value of the area $$\begin{aligned} |A_\text{a}| &= 0.004\,\text{s} \cdot (\tfrac{1}{2}(-0.02) \\ &+ 0.09 + 0.63 + 1.77 + 1.77 \\ &+ 0.60 + \tfrac{1}{2}\cdot 0.03)\,\text{V} \\ &= 0.004\,\text{s} \cdot 4.865\,\text{V} \\ &= 0.01946\,\text{V}\cdot\text{s} \end{aligned}$$.
-**Formula:** $|A_\text{a}| = N\Phi$, so $\Phi = \dfrac{|A_\text{a}|}{N}$
+**Formula:** $$\begin{aligned} e\,\Delta t &= -N\Delta\Phi \\ |A_\text{a}| &= N\Phi \\ \Phi &= \dfrac{|A_\text{a}|}{N} \end{aligned}$$
 **Conversions:** $1\,\text{ms} = 0.001\,\text{s}$; the answer is converted to milliwebers: $1\,\text{Wb} = 1000\,\text{mWb}$; $\text{V}\cdot\text{s} = \text{Wb}$.
 **Substitution:** a) $\Phi = \dfrac{0.01946\,\text{V}\cdot\text{s}}{250} = 7.78 \cdot 10^{-5}\,\text{Wb} = 0.0778\,\text{mWb}$. b) Calculated in the same way, the area of the second pulse ($24$–$48\,\text{ms}$) is $-0.01968\,\text{V}\cdot\text{s}$, so $\Phi = 0.01968\,\text{V}\cdot\text{s} : 250 = 0.0787\,\text{mWb}$.
 **Answer:** a) $\Phi \approx 0.078\,\text{mWb}$, two significant figures, because the voltages are given to two decimal places and the area is an estimate. b) The second pulse gives $0.079\,\text{mWb}$, the same flux.

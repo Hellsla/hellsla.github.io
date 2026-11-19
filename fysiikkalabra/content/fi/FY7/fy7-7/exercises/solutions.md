@@ -12,7 +12,7 @@
 **Annettu:** jännitteen tehollinen arvo $U = 115\,\text{V}$, taajuus $400\,\text{Hz}$
 **Kysytty:** jännitteen huippuarvo $U_0$ voltteina
 **Periaate:** Vaihtojännite ilmoitetaan tehollisarvona. Sinimuotoisen jännitteen tehollinen arvo on huippuarvo jaettuna luvulla $\sqrt{2}$, joten huippuarvo on $\sqrt{2}$-kertainen. Taajuus ei vaikuta tähän suhteeseen.
-**Kaava:** $U = \dfrac{U_0}{\sqrt{2}}$, josta $U_0 = \sqrt{2} \cdot U$
+**Kaava:** $$\begin{aligned} U &= \dfrac{U_0}{\sqrt{2}} \\ U_0 &= \sqrt{2} \cdot U \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $U_0 = \sqrt{2} \cdot 115\,\text{V} = 162{,}63\,\text{V}$
 **Vastaus:** $163\,\text{V}$, kolme merkitsevää numeroa kuten jännitteessä $115\,\text{V}$.
@@ -88,7 +88,7 @@
 **Kysytty:** magneettivuon tiheys $B$ tesloina
 **Periaate:** Käämi pyörii tasaisesti homogeenisessa kentässä, joten sen jännite on sinimuotoinen ja huippuarvo on $e_0 = NBA \cdot 2\pi f$. Kuvaajasta saadaan huippuarvo ja jaksonaika, ja jaksonajasta pyörimistaajuus $f = 1 : T$.
 **Kuvaajan lukeminen:** Käyrän huiput ovat ruudukon viivalla $12\,\text{V}$ (hetkillä $10\,\text{ms}$ ja $50\,\text{ms}$), joten $e_0 = 12\,\text{V}$. Käyrä on nolla ja nousee hetkillä $0\,\text{ms}$, $40\,\text{ms}$ ja $80\,\text{ms}$, joten yksi jakso kestää $T = 40\,\text{ms}$.
-**Kaava:** $f = \dfrac{1}{T}$ ja $e_0 = NBA \cdot 2\pi f$, josta $B = \dfrac{e_0}{NA \cdot 2\pi f} = \dfrac{e_0 T}{NA \cdot 2\pi}$
+**Kaava:** $$\begin{aligned} f &= \dfrac{1}{T} \\ e_0 &= NBA \cdot 2\pi f \\ B &= \dfrac{e_0}{NA \cdot 2\pi f} \\ &= \dfrac{e_0 T}{NA \cdot 2\pi} \end{aligned}$$
 **Muunnokset:** $T = 40\,\text{ms} = 40 \cdot 0{,}001\,\text{s} = 0{,}040\,\text{s}$ ja $A = 30\,\text{cm}^2 = 30 \cdot 0{,}0001\,\text{m}^2 = 0{,}0030\,\text{m}^2$
 **Sijoitus:** $f = \dfrac{1}{0{,}040\,\text{s}} = 25\,\text{Hz}$ ja $B = \dfrac{12\,\text{V}}{200 \cdot 0{,}0030\,\text{m}^2 \cdot 2\pi \cdot 25\,\tfrac{1}{\text{s}}} = \dfrac{12\,\text{V}}{94{,}25\,\tfrac{\text{m}^2}{\text{s}}} = 0{,}1273\,\text{T}$
 **Vastaus:** $0{,}13\,\text{T}$, kaksi merkitsevää numeroa, koska kuvaajasta luetut arvot $12\,\text{V}$ ja $40\,\text{ms}$ ovat kahden numeron tarkkuudella.
@@ -98,7 +98,7 @@
 **Annettu:** jännitteen tehollinen arvo $U = 12\,\text{V}$, kierroksia $N = 200$, pinta-ala $A = 0{,}0050\,\text{m}^2$, magneettivuon tiheys $B = 0{,}30\,\text{T}$
 **Kysytty:** pyörimistaajuus $f$ hertseinä
 **Periaate:** Pyörivän käämin jännite on sinimuotoinen, ja sen huippuarvo on $e_0 = NBA \cdot 2\pi f$. Annettu $12\,\text{V}$ on tehollinen arvo, joten huippuarvo on $\sqrt{2}$-kertainen. Huippuarvon kaavasta ratkaistaan pyörimistaajuus.
-**Kaava:** $e_0 = \sqrt{2} \cdot U$ ja $e_0 = NBA \cdot 2\pi f$, josta $f = \dfrac{\sqrt{2} \cdot U}{NBA \cdot 2\pi}$
+**Kaava:** $$\begin{aligned} e_0 &= \sqrt{2} \cdot U \\ e_0 &= NBA \cdot 2\pi f \\ \sqrt{2} \cdot U &= NBA \cdot 2\pi f \\ f &= \dfrac{\sqrt{2} \cdot U}{NBA \cdot 2\pi} \end{aligned}$$
 **Muunnokset:** Ei tarvita: suureet ovat SI-yksiköissä.
 **Sijoitus:** $e_0 = \sqrt{2} \cdot 12\,\text{V} = 16{,}97\,\text{V}$ ja $f = \dfrac{16{,}97\,\text{V}}{200 \cdot 0{,}30\,\text{T} \cdot 0{,}0050\,\text{m}^2 \cdot 2\pi} = \dfrac{16{,}97\,\text{V}}{1{,}885\,\text{V}\cdot\text{s}} = 9{,}003\,\text{Hz}$
 **Vastaus:** $9{,}0\,\text{Hz}$, kaksi merkitsevää numeroa kuten jännitteessä $12\,\text{V}$ ja kentässä $0{,}30\,\text{T}$.
@@ -129,9 +129,9 @@
 **Annettu:** pyörimistaajuus $f_1 = 5{,}0\,\text{Hz}$ ja huippuarvo $e_{0,1} = 4{,}1\,\text{V}$; pyörimistaajuus $f_2 = 10{,}0\,\text{Hz}$ ja mitattu huippuarvo $e_{0,2} = 8{,}0\,\text{V}$; $N$, $B$ ja $A$ samat
 **Kysytty:** a) ennustettu huippuarvo taajuudella $f_2$, b) mittauksen poikkeama ennusteesta prosentteina, c) taajuuden muutos ja mittauksen sopivuus
 **Periaate:** Huippuarvo $e_0 = NBA \cdot 2\pi f$ on suoraan verrannollinen pyörimistaajuuteen, kun $N$, $B$ ja $A$ pysyvät samoina. Kaksinkertainen pyörimistaajuus antaa siis kaksinkertaisen huippuarvon. Poikkeama lasketaan ennusteen ja mittauksen erotuksena suhteessa ennusteeseen.
-**Kaava:** $e_{0,2} = e_{0,1} \cdot \dfrac{f_2}{f_1}$ ja poikkeama $$\begin{aligned} &= \dfrac{|e_{0,\text{ennuste}} - e_{0,\text{mitattu}}|}{e_{0,\text{ennuste}}} \\ &\cdot 100\,\% \end{aligned}$$
+**Kaava:** $$\begin{aligned} e_{0,1} &= NBA \cdot 2\pi f_1 \\ e_{0,2} &= NBA \cdot 2\pi f_2 \\ \dfrac{e_{0,2}}{e_{0,1}} &= \dfrac{f_2}{f_1} \\ e_{0,2} &= e_{0,1} \cdot \dfrac{f_2}{f_1} \end{aligned}$$ ja $$\begin{aligned} \text{poikkeama} &= \dfrac{|e_{0,\text{ennuste}} - e_{0,\text{mitattu}}|}{e_{0,\text{ennuste}}} \\ &\cdot 100\,\% \end{aligned}$$
 **Muunnokset:** Ei tarvita: suhde $f_2 : f_1$ on lukuarvo.
-**Sijoitus:** a) $e_{0,\text{ennuste}} = 4{,}1\,\text{V} \cdot \dfrac{10{,}0\,\text{Hz}}{5{,}0\,\text{Hz}} = 8{,}2\,\text{V}$. b) Poikkeama $$\begin{aligned} &= \dfrac{|8{,}2\,\text{V} - 8{,}0\,\text{V}|}{8{,}2\,\text{V}} \cdot 100\,\% \\ &= 2{,}44\,\% \end{aligned}$$
+**Sijoitus:** a) $e_{0,\text{ennuste}} = 4{,}1\,\text{V} \cdot \dfrac{10{,}0\,\text{Hz}}{5{,}0\,\text{Hz}} = 8{,}2\,\text{V}$. b) $$\begin{aligned} \text{poikkeama} &= \dfrac{|8{,}2\,\text{V} - 8{,}0\,\text{V}|}{8{,}2\,\text{V}} \cdot 100\,\% \\ &= 2{,}44\,\% \end{aligned}$$
 **Vastaus:** Poikkeama on $2{,}4\,\%$. c) Jännitteen taajuus on sama kuin pyörimistaajuus, joten sekin kaksinkertaistuu: jaksonaika puolittuu arvosta $200\,\text{ms}$ arvoon $100\,\text{ms}$. Kunkin huippuarvon lukemisen epävarmuus on $\pm 0{,}1\,\text{V}$. Ennuste $2 \cdot 4{,}1\,\text{V}$ kaksinkertaistaa lukeman epävarmuuden ($\pm 0{,}2\,\text{V}$), ja mitatun arvon epävarmuus $\pm 0{,}1\,\text{V}$ lisäksi, joten yhteensä epävarmuus on noin $\pm 0{,}3\,\text{V}$.
 
 Erotus $0{,}2\,\text{V}$ on tätä pienempi, joten mittaus ei poikkea ennusteesta enempää kuin lukematarkkuus sallii: eroa verrannollisuudesta ei voida osoittaa, ja mittaus on sopusoinnussa ennusteen kanssa.
@@ -141,7 +141,7 @@ Erotus $0{,}2\,\text{V}$ on tätä pienempi, joten mittaus ei poikkea ennusteest
 **Annettu:** lampun teho $P = 60\,\text{W}$, verkkojännite $230\,\text{V}$; oppilaan ratkaisussa $230\,\text{V}$ on tulkittu huippuarvoksi ja virraksi on saatu $0{,}37\,\text{A}$
 **Kysytty:** a) oppilaan virhe, b) lampun virran tehollinen arvo $I$ ampeereina
 **Periaate:** Verkkojännite $230\,\text{V}$ on jo tehollinen arvo, koska vaihtojännite ilmoitetaan tehollisarvona. Hehkulamppu on resistiivinen kuorma, joten keskimääräinen teho lasketaan tehollisarvoista kuten tasavirralla, $P = UI$, joten virran tehollinen arvo saadaan suoraan tehosta ja tehollisesta jännitteestä. Huippuarvolla ei tarvitse laskea mitään.
-**Kaava:** $P = UI$, josta $I = \dfrac{P}{U}$
+**Kaava:** $$\begin{aligned} P &= UI \\ I &= \dfrac{P}{U} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $I = \dfrac{60\,\text{W}}{230\,\text{V}} = 0{,}2609\,\text{A}$
 **Vastaus:** a) Oppilas piti verkkojännitettä huippuarvona ja jakoi sen luvulla $\sqrt{2}$, vaikka pistorasian jännite on jo tehollinen arvo. Tehollinen jännite on siis $230\,\text{V}$, ei $163\,\text{V}$, ja liian pienellä jännitteellä virta tuli liian suureksi. b) Virran tehollinen arvo on $0{,}26\,\text{A}$, kaksi merkitsevää numeroa kuten tehossa $60\,\text{W}$.
@@ -161,7 +161,7 @@ Erotus $0{,}2\,\text{V}$ on tätä pienempi, joten mittaus ei poikkea ennusteest
 **Annettu:** generaattorin jännitteen huippuarvo $U_0 = 40\,\text{V}$, vastus $R = 40\,\Omega$, generaattorin resistanssi mitätön
 **Kysytty:** vastuksen keskimääräinen teho $P$ watteina
 **Periaate:** Generaattorin resistanssi on mitätön, joten koko jännite on vastuksen yli. Keskimääräinen teho lasketaan tehollisarvoilla kuten tasavirralla: $P = UI$, ja Ohmin lain mukaan $I = U : R$, joten $P = U^2 : R$. Huippuarvolla laskettu teho olisi vain hetkellinen huipputeho.
-**Kaava:** $U = \dfrac{U_0}{\sqrt{2}}$ ja $P = UI = \dfrac{U^2}{R} = \dfrac{U_0^2}{2R}$
+**Kaava:** $$\begin{aligned} U &= \dfrac{U_0}{\sqrt{2}} \\ P &= UI \\ I &= \dfrac{U}{R} \\ P &= \dfrac{U^2}{R} \\ &= \dfrac{U_0^2}{2R} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $U = \dfrac{40\,\text{V}}{\sqrt{2}} = 28{,}28\,\text{V}$ ja $P = \dfrac{(28{,}28\,\text{V})^2}{40\,\Omega} = \dfrac{800\,\text{V}^2}{40\,\Omega} = 20\,\text{W}$
 **Vastaus:** $20\,\text{W}$, kaksi merkitsevää numeroa kuten jännitteessä $40\,\text{V}$ ja resistanssissa $40\,\Omega$.
@@ -171,7 +171,7 @@ Erotus $0{,}2\,\text{V}$ on tätä pienempi, joten mittaus ei poikkea ennusteest
 **Annettu:** tehollinen jännite $U_1 = 690\,\text{V}$ pyörimisnopeudella $15$ kierrosta minuutissa, uusi pyörimisnopeus $9{,}0$ kierrosta minuutissa, magneetit ja käämit samat
 **Kysytty:** uusi tehollinen jännite $U_2$ voltteina
 **Periaate:** Generaattorin huippujännite on $e_0 = NBA \cdot 2\pi f$. Kun $N$, $B$ ja $A$ pysyvät samoina, huippujännite ja samalla tehollinen arvo $U = e_0 : \sqrt{2}$ ovat suoraan verrannollisia pyörimistaajuuteen. Suoravetoisessa voimalassa generaattori pyörii samaa tahtia kuin roottori, joten taajuus on verrannollinen roottorin kierroksiin minuutissa.
-**Kaava:** $\dfrac{U_2}{U_1} = \dfrac{f_2}{f_1}$, josta $U_2 = U_1 \cdot \dfrac{f_2}{f_1}$
+**Kaava:** $$\begin{aligned} U_1 &= \dfrac{e_{0,1}}{\sqrt{2}} = \dfrac{NBA \cdot 2\pi f_1}{\sqrt{2}} \\ U_2 &= \dfrac{NBA \cdot 2\pi f_2}{\sqrt{2}} \\ \dfrac{U_2}{U_1} &= \dfrac{f_2}{f_1} \\ U_2 &= U_1 \cdot \dfrac{f_2}{f_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: suhteessa kierrokset minuutissa supistuvat, joten niitä ei tarvitse muuntaa hertseiksi.
 **Sijoitus:** $U_2 = 690\,\text{V} \cdot \dfrac{9{,}0}{15} = 690\,\text{V} \cdot 0{,}60 = 414\,\text{V}$
 **Vastaus:** noin $410\,\text{V}$, kaksi merkitsevää numeroa kuten pyörimisnopeuksissa $15$ ja $9{,}0$ kierrosta minuutissa.
@@ -181,7 +181,7 @@ Erotus $0{,}2\,\text{V}$ on tätä pienempi, joten mittaus ei poikkea ennusteest
 **Annettu:** pullodynamon käämissä kierroksia $N = 240$, pinta-ala $A = 6{,}0\,\text{cm}^2$, taulukon kuusi mittapistettä $(f, e_0)$
 **Kysytty:** a) suoran $e_0 = kf + c$ kulmakerroin $k$, b) magneettivuon tiheys $B$ ja perustelu suoran origokulusta, c) huippuarvo taajuudella $22\,\text{Hz}$ ja vakiotermin merkitys
 **Periaate:** Huippuarvo $e_0 = NBA \cdot 2\pi f$ on pyörimistaajuuden lineaarinen funktio, jonka kulmakerroin on $k = NBA \cdot 2\pi$. Mittapisteisiin sovitetaan suora laskimen lineaarisella sovituksella (tai silmämääräisesti), ja kulmakertoimesta ratkaistaan $B$. Pyörimättömässä käämissä jännite on nolla, joten suoran pitäisi kulkea origon kautta. Pullodynamon rulla pyörii rengasta vasten, ja taajuus $f$ on rullan ja käämin pyörimistaajuus.
-**Kaava:** $k = NBA \cdot 2\pi$, josta $B = \dfrac{k}{NA \cdot 2\pi}$
+**Kaava:** $$\begin{aligned} k &= NBA \cdot 2\pi \\ B &= \dfrac{k}{NA \cdot 2\pi} \end{aligned}$$
 **Muunnokset:** $A = 6{,}0\,\text{cm}^2 = 6{,}0 \cdot 0{,}0001\,\text{m}^2 = 6{,}0 \cdot 10^{-4}\,\text{m}^2$
 **Sijoitus:** a) Kahden ääripisteen tarkistus: $k \approx \dfrac{(9{,}1 - 1{,}4)\,\text{V}}{(30 - 5)\,\text{Hz}} = 0{,}308\,\tfrac{\text{V}}{\text{Hz}}$. Laskimen sovitus antaa $k = 0{,}308\,\tfrac{\text{V}}{\text{Hz}} = 0{,}308\,\text{V}\cdot\text{s}$ ja $c = -0{,}107\,\text{V}$. b) $B = \dfrac{0{,}308\,\text{V}\cdot\text{s}}{240 \cdot 6{,}0 \cdot 10^{-4}\,\text{m}^2 \cdot 2\pi} = \dfrac{0{,}308\,\text{V}\cdot\text{s}}{0{,}9048\,\text{m}^2} = 0{,}3404\,\text{T}$. c) $e_0 = 0{,}308\,\tfrac{\text{V}}{\text{Hz}} \cdot 22\,\text{Hz} - 0{,}107\,\text{V} = 6{,}67\,\text{V}$; ilman vakiotermiä tulos olisi $6{,}78\,\text{V}$.
 **Vastaus:** b) $B \approx 0{,}34\,\text{T}$, kaksi merkitsevää numeroa kuten käämin pinta-alassa. Kaavassa $e_0$ on suoraan verrannollinen taajuuteen, joten jännitteen pitäisi olla nolla, kun $f = 0$. Vakiotermi $c = -0{,}11\,\text{V}$ on pieni ja johtuu todennäköisesti mittausvirheestä, kuten oskilloskoopin nollakohdasta tai lukematarkkuudesta ($\pm 0{,}1\,\text{V}$). c) $e_0 \approx 6{,}7\,\text{V}$. Vakiotermi muuttaa ennustetta vain $1{,}6\,\%$, joten sillä ei ole merkitystä.

@@ -22,7 +22,7 @@
 **Annettu:** Maan kentän vaakakomponentti $B_\text{h} = 14\,\mu\text{T}$ pohjoiseen, magneetin kenttä $B_\text{m} = 48\,\mu\text{T}$ itään
 **Kysytty:** vaakasuoran kokonaiskentän suuruus $B$ mikrotesloina
 **Periaate:** Kokonaiskenttä on kenttien vektorisumma. Pohjoiseen ja itään osoittavat kentät ovat kohtisuorassa toisiaan vastaan, joten ne ovat suorakulmaisen kolmion kateetit ja kokonaiskenttä on hypotenuusa.
-**Kaava:** $B = \sqrt{B_\text{h}^2 + B_\text{m}^2}$
+**Kaava:** $$\begin{aligned} \overline{B} &= \overline{B}_\text{h} + \overline{B}_\text{m} \\ B^2 &= B_\text{h}^2 + B_\text{m}^2 \\ B &= \sqrt{B_\text{h}^2 + B_\text{m}^2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: molemmat kentät ovat mikrotesloina.
 **Sijoitus:** $B = \sqrt{(14\,\mu\text{T})^2 + (48\,\mu\text{T})^2} = \sqrt{196 + 2304}\,\mu\text{T} = \sqrt{2500}\,\mu\text{T} = 50\,\mu\text{T}$
 **Vastaus:** $50\,\mu\text{T}$, kaksi merkitsevää numeroa kuten kentissä.
@@ -52,7 +52,7 @@
 **Annettu:** magnetometrin komponentit $B_x = 12\,\mu\text{T}$, $B_y = -5{,}0\,\mu\text{T}$ ja $B_z = -48\,\mu\text{T}$, kohtisuorassa toisiaan vastaan
 **Kysytty:** Maan magneettikentän magneettivuon tiheys $B$ mikrotesloina
 **Periaate:** Kenttä on komponenttiensa vektorisumma. Kahden kohtisuoran komponentin summa saadaan Pythagoraan lauseella, ja kun tulokseen lisätään vielä kolmas kohtisuora komponentti, sama lause antaa kolmen komponentin neliöiden summan. Etumerkki kertoo vain suunnan, ja neliöinti poistaa sen.
-**Kaava:** $B^2 = B_x^2 + B_y^2 + B_z^2$, josta $B = \sqrt{B_x^2 + B_y^2 + B_z^2}$
+**Kaava:** $$\begin{aligned} \overline{B} &= \overline{B}_x + \overline{B}_y + \overline{B}_z \\ B^2 &= B_x^2 + B_y^2 + B_z^2 \\ B &= \sqrt{B_x^2 + B_y^2 + B_z^2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: kaikki komponentit ovat mikrotesloina.
 **Sijoitus:** $$\begin{aligned} B^2 &= (12\,\mu\text{T})^2 + (-5{,}0\,\mu\text{T})^2 \\ &+ (-48\,\mu\text{T})^2 \\ &= 2473\,(\mu\text{T})^2 \end{aligned}$$, joten $B = \sqrt{2473}\,\mu\text{T} = 49{,}73\,\mu\text{T}$
 **Vastaus:** $50\,\mu\text{T}$, kaksi merkitsevää numeroa kuten komponenteissa $12\,\mu\text{T}$ ja $48\,\mu\text{T}$.
@@ -72,7 +72,7 @@
 **Annettu:** etäisyydellä $10\,\text{cm}$ neulan kulma $\theta_1 = 60^\circ$, etäisyydellä $20\,\text{cm}$ kulma $\theta_2 = 10^\circ$; magneetin kenttä on kohtisuorassa Maan kentän vaakakomponenttia $B_\text{h}$ vastaan
 **Kysytty:** kenttien suhde $k = B_1 : B_2$, paljas luku
 **Periaate:** Kun magneetin kenttä on kohtisuorassa Maan kentän vaakakomponenttia vastaan, neulan kulmalle pätee $\tan\theta = B_\text{m} : B_\text{h}$, joten $B_\text{m} = B_\text{h}\tan\theta$. Maan kenttä on molemmissa kohdissa sama, joten se supistuu suhteesta eikä sitä tarvitse tietää.
-**Kaava:** $B_1 = B_\text{h}\tan\theta_1$ ja $B_2 = B_\text{h}\tan\theta_2$, joten $k = \dfrac{B_1}{B_2} = \dfrac{\tan\theta_1}{\tan\theta_2}$
+**Kaava:** $$\begin{aligned} \tan\theta_1 &= \frac{B_1}{B_\text{h}} \\ \tan\theta_2 &= \frac{B_2}{B_\text{h}} \\ k &= \frac{B_1}{B_2} \\ &= \frac{B_\text{h}\tan\theta_1}{B_\text{h}\tan\theta_2} \\ &= \frac{\tan\theta_1}{\tan\theta_2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: suhde on paljas luku, eivätkä etäisyydet esiinny laskussa.
 **Sijoitus:** $k = \dfrac{\tan 60^\circ}{\tan 10^\circ} = \dfrac{1{,}732}{0{,}1763} = 9{,}82$
 **Vastaus:** noin $9{,}8$ kertaa, kahdella merkitsevällä numerolla kuten kulmat $60^\circ$ ja $10^\circ$.
@@ -82,7 +82,7 @@
 **Annettu:** magneetti pohjoisnapa pohjoiseen, kompassi magneetin itäpuolella keskikohdan kohdalla, magneetin kenttä siellä $B_\text{m} = 25\,\mu\text{T}$, Maan kentän vaakakomponentti $B_\text{h} = 14\,\mu\text{T}$ pohjoiseen
 **Kysytty:** vaakasuoran kokonaiskentän pohjoiskomponentti $B_y$ mikrotesloina (pohjoinen positiivinen) ja neulan suunta
 **Periaate:** Magneetin ulkopuolella kenttäviivat kulkevat pohjoisnavasta etelänapaan, joten magneetin kyljessä keskikohdan kohdalla kenttä on magneetin suuntainen ja osoittaa pohjoisnavan puolelta etelänavan puolelle eli etelään. Se on vastakkaissuuntainen Maan kentälle, joten kentät lasketaan yhteen etumerkkeineen. Neula kääntyy kokonaiskentän suuntaan, joten komponentin etumerkki kertoo, osoittaako neula pohjoiseen vai etelään.
-**Kaava:** pohjoiseen positiivisena $B_y = B_\text{h} - B_\text{m}$
+**Kaava:** $$\begin{aligned} \overline{B} &= \overline{B}_\text{h} + \overline{B}_\text{m} \\ B_y &= B_\text{h} + (-B_\text{m}) \\ &= B_\text{h} - B_\text{m} \end{aligned}$$
 **Muunnokset:** Ei tarvita: molemmat kentät ovat mikrotesloina.
 **Sijoitus:** $B_y = 14\,\mu\text{T} - 25\,\mu\text{T} = -11\,\mu\text{T}$
 **Vastaus:** $-11\,\mu\text{T}$ eli $11\,\mu\text{T}$ etelään, kaksi merkitsevää numeroa kuten kentissä. Etumerkki on negatiivinen, joten neulan pohjoispää osoittaa etelään: neula on kääntynyt ympäri.
@@ -99,7 +99,7 @@ Se magnetoi nastat ja vetää niitä. Kun liitin kuumennetaan riittävän kuumak
 **Annettu:** Helsinki $B_1 = 53\,\mu\text{T}$ ja $I_1 = 74^\circ$, Longyearbyen $B_2 = 55\,\mu\text{T}$ ja $I_2 = 82{,}5^\circ$ vaakatason alapuolelle
 **Kysytty:** vaakakomponenttien suhde $k = B_\text{h1} : B_\text{h2}$, paljas luku, ja syy kompassin huonompaan toimintaan
 **Periaate:** Kompassin neula kääntyy vain vaakatasossa, joten sitä ohjaa ainoastaan kentän vaakakomponentti $B_\text{h} = B\cos I$. Mitä jyrkemmin kenttä osoittaa maahan, sitä pienempi osa siitä on vaakasuoraa.
-**Kaava:** $k = \dfrac{B_\text{h1}}{B_\text{h2}} = \dfrac{B_1\cos I_1}{B_2\cos I_2}$
+**Kaava:** $$\begin{aligned} B_\text{h1} &= B_1\cos I_1 \\ B_\text{h2} &= B_2\cos I_2 \\ k &= \frac{B_\text{h1}}{B_\text{h2}} \\ &= \frac{B_1\cos I_1}{B_2\cos I_2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: molemmat kentät ovat mikrotesloina, ja yksikkö supistuu.
 **Sijoitus:** $k = \dfrac{53\,\mu\text{T} \cdot \cos 74^\circ}{55\,\mu\text{T} \cdot \cos 82{,}5^\circ} = \dfrac{14{,}6\,\mu\text{T}}{7{,}18\,\mu\text{T}} = 2{,}03$
 **Vastaus:** noin $2{,}0$ kertaa, kaksi merkitsevää numeroa kuten kentissä $53\,\mu\text{T}$ ja $55\,\mu\text{T}$. Longyearbyenissä kenttä on lähes pystysuora, joten sen vaakakomponentti on vain noin puolet Helsingin arvosta.
@@ -134,7 +134,7 @@ Neula on magneetti ja sen kääntää Maan magneettikenttä, ei Maan pyöriminen
 **Annettu:** Maan kentän vaakakomponentti $B_\text{h} = 14\,\mu\text{T}$ pohjoiseen, magneetin kenttä itään; taulukon mittauspisteet $(r;\ \theta)$: $(8{,}0\,\text{cm};\ 73^\circ)$, $(10{,}0\,\text{cm};\ 61^\circ)$, $(12{,}0\,\text{cm};\ 46^\circ)$, $(16{,}0\,\text{cm};\ 24^\circ)$, $(20{,}0\,\text{cm};\ 12^\circ)$ ja $(25{,}0\,\text{cm};\ 7^\circ)$
 **Kysytty:** magneetin kenttä $B_\text{m}$ etäisyydellä $12\,\text{cm}$ sekä kentät etäisyyksillä $8{,}0\,\text{cm}$ ja $16\,\text{cm}$ ja se, onko kenttä kääntäen verrannollinen etäisyyteen
 **Periaate:** Magneetin kenttä osoittaa itään ja Maan kentän vaakakomponentti pohjoiseen, joten ne ovat kohtisuorassa toisiaan vastaan ja neulan kulmalle pätee $\tan\theta = B_\text{m} : B_\text{h}$. Maan kenttä on kaikissa pisteissä sama, joten jokaisen pisteen kenttä saadaan kulmasta. Kääntäen verrannollisessa kentässä etäisyyden kaksinkertaistuminen puolittaisi kentän.
-**Kaava:** $B_\text{m} = B_\text{h}\tan\theta$
+**Kaava:** $$\begin{aligned} \tan\theta &= \frac{B_\text{m}}{B_\text{h}} \\ B_\text{m} &= B_\text{h}\tan\theta \end{aligned}$$
 **Muunnokset:** Ei tarvita: tulos saadaan mikrotesloina kuten $B_\text{h}$.
 **Sijoitus:** a) $B_\text{m}(12\,\text{cm}) = 14\,\mu\text{T} \cdot \tan 46^\circ = 14\,\mu\text{T} \cdot 1{,}036 = 14{,}5\,\mu\text{T}$. b) $B_\text{m}(8{,}0\,\text{cm}) = 14\,\mu\text{T} \cdot \tan 73^\circ = 14\,\mu\text{T} \cdot 3{,}271 = 45{,}8\,\mu\text{T}$ ja $B_\text{m}(16\,\text{cm}) = 14\,\mu\text{T} \cdot \tan 24^\circ = 14\,\mu\text{T} \cdot 0{,}4452 = 6{,}23\,\mu\text{T}$, joten suhde on $\dfrac{45{,}8\,\mu\text{T}}{6{,}23\,\mu\text{T}} = 7{,}3$
 **Vastaus:** a) $14{,}5\,\mu\text{T}$ eli kahdella merkitsevällä numerolla $15\,\mu\text{T}$, koska kulma $46^\circ$ tunnetaan kahden numeron tarkkuudella. b) Kenttä ei ole kääntäen verrannollinen etäisyyteen. Kun etäisyys kaksinkertaistuu $8{,}0\,\text{cm}$:stä $16\,\text{cm}$:iin, kenttä pienenee noin $7{,}3$-kertaisesti eikä vain puoleen. Kenttä heikkenee etäisyyden kasvaessa paljon nopeammin kuin $1/r$.
@@ -144,7 +144,7 @@ Neula on magneetti ja sen kääntää Maan magneettikenttä, ei Maan pyöriminen
 **Annettu:** magnetometrin komponentit $(B_x;\ B_y;\ B_z)$: ikkuna $(11;\ -5{,}0;\ -47)\,\mu\text{T}$, sohva $(12;\ -4{,}0;\ -49)\,\mu\text{T}$ ja työpöytä $(31;\ 14;\ -62)\,\mu\text{T}$; komponentit ovat kohtisuorassa toisiaan vastaan, Maan kenttä huoneessa noin $50\,\mu\text{T}$
 **Kysytty:** kokonaiskenttä $B$ jokaisessa paikassa, erityisesti työpöydän vieressä, sekä paikka, jonka lähellä on rautaa
 **Periaate:** Kenttä on komponenttiensa vektorisumma. Kohtisuorien komponenttien neliöiden summan neliöjuuri on kokonaiskentän suuruus, ja etumerkki katoaa neliöinnissä. Raudan tai teräksen lähellä kenttä poikkeaa Maan kentästä, sillä rauta magnetoituu ja vääristää kenttää.
-**Kaava:** $B = \sqrt{B_x^2 + B_y^2 + B_z^2}$
+**Kaava:** $$\begin{aligned} \overline{B} &= \overline{B}_x + \overline{B}_y + \overline{B}_z \\ B^2 &= B_x^2 + B_y^2 + B_z^2 \\ B &= \sqrt{B_x^2 + B_y^2 + B_z^2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: kaikki komponentit ovat mikrotesloina.
 **Sijoitus:** Ikkuna: $B = \sqrt{11^2 + (-5{,}0)^2 + (-47)^2}\,\mu\text{T} = \sqrt{2355}\,\mu\text{T} = 48{,}5\,\mu\text{T}$. Sohva: $B = \sqrt{12^2 + (-4{,}0)^2 + (-49)^2}\,\mu\text{T} = \sqrt{2561}\,\mu\text{T} = 50{,}6\,\mu\text{T}$. Työpöytä: $B = \sqrt{31^2 + 14^2 + (-62)^2}\,\mu\text{T} = \sqrt{5001}\,\mu\text{T} = 70{,}7\,\mu\text{T}$
 **Vastaus:** a) Työpöydän vieressä kokonaiskenttä on $71\,\mu\text{T}$, kaksi merkitsevää numeroa kuten komponenteissa; ikkunan luona se on $49\,\mu\text{T}$ ja sohvalla $51\,\mu\text{T}$. b) Rautaa tai terästä on todennäköisesti työpöydän lähellä, koska siellä kenttä on noin $20\,\mu\text{T}$ suurempi kuin Maan kenttä $50\,\mu\text{T}$ ja kaikki komponentit poikkeavat ikkunan ja sohvan arvoista. Ikkunan ja sohvan kentät ovat lähellä Maan kenttää.
@@ -164,7 +164,7 @@ Neula on magneetti ja sen kääntää Maan magneettikenttä, ei Maan pyöriminen
 **Annettu:** taulukon paikkakunnat $(B;\ I)$: Helsinki $(53\,\mu\text{T};\ 74^\circ)$, Oulu $(53\,\mu\text{T};\ 76^\circ)$ ja Utsjoki $(52\,\mu\text{T};\ 78^\circ)$; magneetin kenttä kompassin kohdalla $B_\text{m} = 20\,\mu\text{T}$ itään
 **Kysytty:** vaakakomponentti $B_\text{h}$ ja neulan kääntymiskulma $\theta$ kullakin paikkakunnalla sekä selitys kulman kasvulle; vastauskenttään kulma Utsjoella
 **Periaate:** Neula kääntyy vain vaakatasossa, joten Maan kentästä sitä ohjaa vaakakomponentti $B_\text{h} = B\cos I$. Magneetin kenttä itään on kohtisuorassa pohjoiseen osoittavaa vaakakomponenttia vastaan, joten $\tan\theta = B_\text{m} : B_\text{h}$. Mitä pienempi vaakakomponentti on, sitä suurempi kulma samasta magneetista tulee.
-**Kaava:** $B_\text{h} = B\cos I$ ja $\theta = \tan^{-1}\dfrac{B_\text{m}}{B_\text{h}}$
+**Kaava:** $$\begin{aligned} B_\text{h} &= B\cos I \\ \tan\theta &= \frac{B_\text{m}}{B_\text{h}} \\ \theta &= \tan^{-1}\frac{B_\text{m}}{B_\text{h}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: kaikki kentät ovat mikrotesloina.
 **Sijoitus:** Helsinki: $B_\text{h} = 53\,\mu\text{T} \cdot \cos 74^\circ = 14{,}6\,\mu\text{T}$ ja $\theta = \tan^{-1}\dfrac{20\,\mu\text{T}}{14{,}6\,\mu\text{T}} = 53{,}9^\circ$. Oulu: $B_\text{h} = 53\,\mu\text{T} \cdot \cos 76^\circ = 12{,}8\,\mu\text{T}$ ja $\theta = \tan^{-1}\dfrac{20\,\mu\text{T}}{12{,}8\,\mu\text{T}} = 57{,}3^\circ$. Utsjoki: $B_\text{h} = 52\,\mu\text{T} \cdot \cos 78^\circ = 10{,}8\,\mu\text{T}$ ja $\theta = \tan^{-1}\dfrac{20\,\mu\text{T}}{10{,}8\,\mu\text{T}} = 61{,}6^\circ$
 **Vastaus:** a) Vaakakomponentit ovat Helsingissä $15\,\mu\text{T}$, Oulussa $13\,\mu\text{T}$ ja Utsjoella $11\,\mu\text{T}$. b) Utsjoella neula kääntyy $62^\circ$ pohjoisesta itään; Helsingissä kulma on $54^\circ$ ja Oulussa $57^\circ$. c) Koko kenttä on kaikkialla noin $52\text{–}53\,\mu\text{T}$, mutta mitä pohjoisempana ollaan, sitä jyrkemmin kenttä osoittaa maahan ja sitä pienempi osa siitä on vaakasuoraa. Neulaa ohjaa vain vaakakomponentti, joten sama magneetti saa sen kääntymään pohjoisessa enemmän. Kompassi on siis pohjoisessa herkempi häiriöille, koska neulaa ohjaava kenttä on heikompi.
@@ -174,7 +174,7 @@ Neula on magneetti ja sen kääntää Maan magneettikenttä, ei Maan pyöriminen
 **Annettu:** $B_\text{h} = 14\,\mu\text{T}$ pohjoiseen; taulukon mittauspisteet $(r;\ \theta)$: $(12{,}0\,\text{cm};\ 69^\circ)$, $(14{,}0\,\text{cm};\ 56^\circ)$, $(16{,}0\,\text{cm};\ 47^\circ)$, $(20{,}0\,\text{cm};\ 27^\circ)$, $(24{,}0\,\text{cm};\ 18^\circ)$ ja $(30{,}0\,\text{cm};\ 8^\circ)$; magneetin kenttä akselilla on sama etäisyydellä $r$ kummallakin puolella
 **Kysytty:** kentät $B_\text{m}$ ja tulon $B_\text{m} r^3$ vakioisuus, etäisyys $r_0$, jolla vaakasuora kokonaiskenttä on nolla, sekä neulan suunta ennen ja jälkeen sen
 **Periaate:** Kokeessa magneetin kenttä itään on kohtisuorassa Maan kentän vaakakomponenttia vastaan, joten $\tan\theta = B_\text{m} : B_\text{h}$ ja $B_\text{m} = B_\text{h}\tan\theta$. Jos tulo $B_\text{m} r^3$ on likimain vakio $k$, kenttä noudattaa mallia $B_\text{m} = k : r^3$. Kun magneetti käännetään pohjois–eteläsuuntaiseksi ja sen pohjoisnapa on kompassia kohti, kenttä osoittaa napa poispäin eli etelään, vastakkain Maan kentän kanssa. Pohjoiskomponentti on $B_\text{h} - B_\text{m}$, ja se on nolla, kun $B_\text{m} = B_\text{h}$.
-**Kaava:** $B_\text{m} = B_\text{h}\tan\theta$, $k = B_\text{m} r^3$ ja $B_\text{m}(r_0) = B_\text{h}$, josta $r_0 = \sqrt[3]{\dfrac{k}{B_\text{h}}}$
+**Kaava:** $$\begin{aligned} \tan\theta &= \frac{B_\text{m}}{B_\text{h}} \\ B_\text{m} &= B_\text{h}\tan\theta \\ k &= B_\text{m} r^3 \\ B_\text{m}(r_0) &= B_\text{h} \\ \frac{k}{r_0^3} &= B_\text{h} \\ r_0 &= \sqrt[3]{\frac{k}{B_\text{h}}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: kentät ovat mikrotesloina ja etäisyydet senttimetreinä, joten $k$ saadaan yksikössä $\mu\text{T}\cdot\text{cm}^3$ ja $r_0$ senttimetreinä.
 **Sijoitus:** Kentät: $B_\text{m} = 36{,}5$; $20{,}8$; $15{,}0$; $7{,}13$; $4{,}55$ ja $1{,}97\,\mu\text{T}$ etäisyyksillä $12$; $14$; $16$; $20$; $24$ ja $30\,\text{cm}$.
 
@@ -202,7 +202,7 @@ Tulot $B_\text{m} r^3$ ovat $63{,}0$; $57{,}0$; $61{,}5$; $57{,}1$; $62{,}9$ ja 
 **Kysytty:** kenttien suuruudet, kokonaiskenttä $B$ ja neulan kääntymiskulma $\theta$ pohjoisesta itään asteina
 **Periaate:** Neula kääntyy vaakasuoran kokonaiskentän suuntaiseksi. Kentät ovat kohtisuorassa toisiaan vastaan, joten kokonaiskenttä on suorakulmion lävistäjä ja sen suuruus saadaan Pythagoraan lauseella. Pohjoisesta mitatun kulman vastainen kateetti on itään osoittava kenttä ja viereinen kateetti pohjoiseen osoittava kenttä.
 **Kuvaajan lukeminen:** Ruudukon viivat ovat $5\,\mu\text{T}$:n välein. Pohjoiseen osoittava nuoli $\overline{B}_\text{h}$ päättyy kolmanteen vaakaviivaan, joten $B_\text{h} = 3 \cdot 5\,\mu\text{T} = 15\,\mu\text{T}$. Itään osoittava nuoli $\overline{B}_\text{m}$ päättyy neljänteen pystyviivaan, joten $B_\text{m} = 4 \cdot 5\,\mu\text{T} = 20\,\mu\text{T}$.
-**Kaava:** $B = \sqrt{B_\text{h}^2 + B_\text{m}^2}$ ja $\tan\theta = \dfrac{B_\text{m}}{B_\text{h}}$, josta $\theta = \tan^{-1}\dfrac{B_\text{m}}{B_\text{h}}$
+**Kaava:** $$\begin{aligned} \overline{B} &= \overline{B}_\text{h} + \overline{B}_\text{m} \\ B^2 &= B_\text{h}^2 + B_\text{m}^2 \\ B &= \sqrt{B_\text{h}^2 + B_\text{m}^2} \\ \tan\theta &= \frac{B_\text{m}}{B_\text{h}} \\ \theta &= \tan^{-1}\frac{B_\text{m}}{B_\text{h}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: molemmat kentät ovat mikrotesloina, ja yksikkö supistuu kulman laskussa.
 **Sijoitus:** $B = \sqrt{(15\,\mu\text{T})^2 + (20\,\mu\text{T})^2} = \sqrt{625}\,\mu\text{T} = 25\,\mu\text{T}$ ja $\theta = \tan^{-1}\dfrac{20\,\mu\text{T}}{15\,\mu\text{T}} = \tan^{-1} 1{,}333 = 53{,}13^\circ$
 **Vastaus:** Kokonaiskenttä on $25\,\mu\text{T}$ ja neula kääntyy $53^\circ$ pohjoisesta itään, kaksi merkitsevää numeroa kuten kuvasta luetuissa kentissä.
@@ -218,7 +218,7 @@ $$.
 **Kysytty:** vaaka- ja pystykomponentti, magneettivuon tiheys $B$ mikrotesloina ja inklinaatio $I$ asteina
 **Periaate:** Vaaka- ja pystykomponentti ovat kohtisuorassa toisiaan vastaan, ja ne ovat nuolen kärjen koordinaatit lähtöpisteestä mitattuina. Kokonaiskenttä on suorakulmion lävistäjä, ja inklinaatio on kentän ja vaakatason välinen kulma, jonka vastainen kateetti on pystykomponentti.
 **Kuvaajan lukeminen:** Nuolen kärki on kolmannella pystyviivalla pohjoiseen päin ja kymmenennellä vaakaviivalla alaspäin, kun ruudukon viivat ovat $5\,\mu\text{T}$:n välein. Siis $B_\text{h} = 3 \cdot 5\,\mu\text{T} = 15\,\mu\text{T}$ ja $B_\text{v} = 10 \cdot 5\,\mu\text{T} = 50\,\mu\text{T}$.
-**Kaava:** $B = \sqrt{B_\text{h}^2 + B_\text{v}^2}$ ja $\tan I = \dfrac{B_\text{v}}{B_\text{h}}$, josta $I = \tan^{-1}\dfrac{B_\text{v}}{B_\text{h}}$
+**Kaava:** $$\begin{aligned} B^2 &= B_\text{h}^2 + B_\text{v}^2 \\ B &= \sqrt{B_\text{h}^2 + B_\text{v}^2} \\ \tan I &= \frac{B_\text{v}}{B_\text{h}} \\ I &= \tan^{-1}\frac{B_\text{v}}{B_\text{h}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: komponentit ovat mikrotesloina, ja tulos halutaan mikrotesloina.
 **Sijoitus:** $B = \sqrt{(15\,\mu\text{T})^2 + (50\,\mu\text{T})^2} = \sqrt{2725}\,\mu\text{T} = 52{,}2\,\mu\text{T}$ ja $I = \tan^{-1}\dfrac{50\,\mu\text{T}}{15\,\mu\text{T}} = \tan^{-1} 3{,}333 = 73{,}3^\circ$
 **Vastaus:** $B = 52\,\mu\text{T}$ ja $I = 73^\circ$ vaakatason alapuolella, kaksi merkitsevää numeroa kuten kuvasta luetuissa komponenteissa.

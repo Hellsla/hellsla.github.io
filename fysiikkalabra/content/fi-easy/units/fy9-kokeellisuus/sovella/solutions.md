@@ -5,7 +5,9 @@
 **Periaate:** Pito tarkoittaa lepokitkaa. Lepokitka estää kenkää lähtemästä liukumaan. Lähtökitka eli täysin kehittynyt lepokitka on $\mu_0 N$. Se riippuu siis pinnoista ja siitä, kuinka lujaa kenkä painaa lattiaa. Kengät painavat eri paljon. Siksi vertailuun sopii lepokitkakerroin $\mu_0$, joka kuvaa vain pintoja. Reilussa kokeessa muuttuu vain kenkä.
 **Mallivastaus:** *Mitattava suure.* Vertaan kenkien lepokitkakertoimia lattialautaa vasten. Kerroin ei riipu kengän painosta. Siksi voin verrata kenkiä, jotka painavat eri paljon.
 
-*Mittaus (kallistusmenetelmä).* Asetan kengän laudalle. Laitan kengän sisään aina saman punnuksen, esimerkiksi $1\,\text{kg}$. Silloin pohja painuu lautaa vasten kuten pelissä. Nostan laudan toista päätä hitaasti ja tasaisesti, kunnes kenkä alkaa liukua. Juuri sillä hetkellä luen laudan kulman $\alpha_0$ kaltevuusmittarilla. Kulma voi kasvaa niin suureksi, ettei mittaus onnistu. Silloin käytän vetomenetelmää. Lauta on vaakasuorassa, ja vedän kenkää jousivaa'alla vaakasuoraan. Luen suurimman lukeman juuri ennen kuin kenkä lähtee liikkeelle. Silloin punnitsen kengän ja punnuksen massan keittiövaa'alla.
+*Mittaus (kallistusmenetelmä).* Asetan kengän laudalle. Laitan kengän sisään aina saman punnuksen, esimerkiksi $1\,\text{kg}$. Silloin pohja painuu lautaa vasten kuten pelissä. Nostan laudan toista päätä hitaasti ja tasaisesti, kunnes kenkä alkaa liukua. Juuri sillä hetkellä luen laudan kulman $\alpha_0$ kaltevuusmittarilla.
+
+Kulma voi kasvaa niin suureksi, ettei mittaus onnistu. Silloin käytän vetomenetelmää. Lauta on vaakasuorassa, ja vedän kenkää jousivaa'alla vaakasuoraan. Luen suurimman lukeman juuri ennen kuin kenkä lähtee liikkeelle. Silloin punnitsen kengän ja punnuksen massan keittiövaa'alla.
 
 *Vakiona pidetään* sama lauta ja sen sama kohta, puhdas ja kuiva pinta (pyyhin pölyn ennen jokaista mittausta), sama punnus kengän sisällä, sama kengän asento ja yhtä hidas kallistus tai veto. Huoneen lämpötila ja kosteus pysyvät samoina, kun mittaukset tehdään samana päivänä.
 
@@ -75,7 +77,9 @@ Käytän kuvaajan alkuosaa. Kun öljy lämpenee ympäristöä lämpimämmäksi, 
 **Periaate:** Laskussa oletetaan, että koko energia $P\,\Delta t$ lämmittää öljyä. Häviöt ovat systemaattinen virhe, joka vie tulosta aina samaan suuntaan.
 **Mallivastaus:** Osa vastuksen energiasta lämmittää termospulloa ja ympäröivää ilmaa. Siksi öljyn lämpötila nousee hitaammin kuin ilman häviöitä. Kulmakerroin $k$ on siksi liian pieni, ja $c = \tfrac{P}{mk}$ tulee **liian suureksi**. Virhe on systemaattinen, joten mittauksen toistaminen ei poista sitä.
 
-Vaikutusta pienennetään näin: kansi pidetään kiinni ja astia eristettynä, mittaus tehdään lyhyellä lämpötila-alueella ja käytetään vain kuvaajan alkuosaa, kuten b-kohdassa. Toinen tapa on aloittaa muutaman asteen huoneenlämpöä alempaa ja sovittaa suora koko mittaukseen. Silloin öljy saa ympäristöstä alussa suunnilleen yhtä paljon energiaa kuin se menettää lopussa. Lisäksi saman mittauksen voi tehdä vedellä. Veden ominaislämpökapasiteetti tunnetaan. Siksi nähdään, kuinka paljon astia ja häviöt muuttavat tulosta, ja öljyn tulosta voi korjata.
+Vaikutusta pienennetään näin: kansi pidetään kiinni ja astia eristettynä, mittaus tehdään lyhyellä lämpötila-alueella ja käytetään vain kuvaajan alkuosaa, kuten b-kohdassa.
+
+Toinen tapa on aloittaa muutaman asteen huoneenlämpöä alempaa ja sovittaa suora koko mittaukseen. Silloin öljy saa ympäristöstä alussa suunnilleen yhtä paljon energiaa kuin se menettää lopussa. Lisäksi saman mittauksen voi tehdä vedellä. Veden ominaislämpökapasiteetti tunnetaan. Siksi nähdään, kuinka paljon astia ja häviöt muuttavat tulosta, ja öljyn tulosta voi korjata.
 
 ### Yleisiä virheitä
 - Lämpötila mitataan vain alussa ja lopussa, jolloin kuvaajaa ei voi piirtää eikä nähdä, missä häviöt alkavat kasvaa.
@@ -270,7 +274,9 @@ Tiheys yksin ei kuitenkaan todista kivilajia. Taulukon arvot ovat tyypillisiä a
 **Periaate:** Suhteelliset epävarmuudet kertovat, mikä mittaus vaikuttaa tulokseen eniten. Tarkkuutta kannattaa parantaa siinä mittauksessa, jonka suhteellinen epävarmuus on suurin.
 **Mallivastaus:** Massan suhteellinen epävarmuus on $0{,}1\,\text{g} : 187{,}4\,\text{g} \approx 0{,}05\,\%$ ja tilavuuden $2\,\text{cm}^3 : 70\,\text{cm}^3 \approx 3\,\%$. Tilavuus rajoittaa siis tulosta noin 50 kertaa enemmän kuin massa, eikä tarkempi vaaka auttaisi.
 
-Tilavuuden epävarmuutta pienennetään kapeammalla mittalasilla, jonka asteikkoväli on esimerkiksi $1\,\text{m}\textsf{l}$ tai pienempi, jos kivi mahtuu siihen. Toinen tapa on ylivuotoastia. Kivi upotetaan täyteen astiaan. Vesi, joka valuu yli, kerätään ja punnitaan. Silloin $V = \tfrac{m_\text{vesi}}{\rho_\text{vesi}}$. Punnituksen epävarmuus on vain $0{,}1\,\text{g}$. Ylivuotoputkeen ja astian seinämiin jää kuitenkin vettä, ja se tuo suuremman epävarmuuden, noin $0{,}5\,\text{cm}^3$. Siksi tapa on mittalasia tarkempi vain, jos se tehdään huolellisesti. Kiven pinnalta poistetaan ilmakuplat, jotka muuten kasvattaisivat tilavuutta.
+Tilavuuden epävarmuutta pienennetään kapeammalla mittalasilla, jonka asteikkoväli on esimerkiksi $1\,\text{m}\textsf{l}$ tai pienempi, jos kivi mahtuu siihen.
+
+Toinen tapa on ylivuotoastia. Kivi upotetaan täyteen astiaan. Vesi, joka valuu yli, kerätään ja punnitaan. Silloin $V = \tfrac{m_\text{vesi}}{\rho_\text{vesi}}$. Punnituksen epävarmuus on vain $0{,}1\,\text{g}$. Ylivuotoputkeen ja astian seinämiin jää kuitenkin vettä, ja se tuo suuremman epävarmuuden, noin $0{,}5\,\text{cm}^3$. Siksi tapa on mittalasia tarkempi vain, jos se tehdään huolellisesti. Kiven pinnalta poistetaan ilmakuplat, jotka muuten kasvattaisivat tilavuutta.
 
 ### Yleisiä virheitä
 - Kiven tilavuudeksi otetaan loppulukema $190\,\text{m}\textsf{l}$ eikä vedenpinnan nousua.

@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 601522414dcda47b
+CONTENT-HASH: b01ed154ea75eb18
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- L2-07 Mallivastaus: "eikä virhe jakaudu mihinkään" is left over from the old wording and is unclear; delete it.
+- none
 
 ## Checked
-- virhe to epävarmuus change is applied consistently in the task, options, feedback, Kysytty, Periaate and Mallivastaus; fits the lesson's measurement vocabulary.
-- L2-05 answer rounded to two significant figures with the reason (x1 = 5,0 mm); L3-05 punctuation fix; 'punaisen laserin' is more accurate.
+- Added row d = k\lambda / sin theta completes the symbolic chain before Sijoitus (round 1 fix); each Sijoitus step now has its formula.
+- Numbers and answer unchanged.
+- Language checked: fi. Hash b01ed154ea75eb18 at start and end.

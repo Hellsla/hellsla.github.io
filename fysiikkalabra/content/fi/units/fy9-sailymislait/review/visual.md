@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 831c7eb12c2a93c2
-SCOPE: delta: s8 d) rubric detail, inline W_ilma = 27,4 J - 33,9 J = -6,5 J changed to a two-row aligned display (CI 360 px fix), language fi; everything else stands under the previous PASS.
+CONTENT-HASH: ec2edc61b407e7f1
 
 ## Blocking
-- (none)
+(none)
 
 ## Polish
-- Earlier Polish stands (recorded in the previous report, unchanged by this delta).
+- [Minor] Only contact sheet 5 was opened for this language; other changed solution blocks were judged from the diff text and the earlier Sovella visual report, not each capture.
 
 ## Checked
-- Commit e3088dfdb5 diff for this unit touches only the s8 d) detail in tasks.json (fi); same numbers (27.4 J, 33.9 J, -6.5 J), same order, same minus sign and units, same symbol W_ilma, decimal form per language.
-- Arithmetic correct (27.4 - 33.9 = -6.5).
-- Two rows: first W = 27.4 J - 33.9 J, second the approx result; joined to the earlier E_p display with "and/ja/ja" as before; no new content appears.
-- Hash same at start and end (831c7eb12c2a93c2).
+- Diff origin/main...HEAD (excluding review/): paragraph breaks only in sovella/solutions.md and the inquiry.json solution field; words, maths and figures unchanged. Display formulas stay intact; the break falls after the sentence that closes them.
+- contact-5.png (fi): Sovella tasks 3.3-4 and 3.3-5 with open model answers (#54-#60): the new breaks give short paragraphs with even spacing, display formulas stay inside the cards, no clipping, overflow or orphaned formula fragment.
+- Read the earlier Sovella visual report (PASS) as evidence; it agrees.
+- Not opened: other contact sheets, full-size captures, figures (unchanged).
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

@@ -2361,3 +2361,9 @@ details.theory-box[open]{background:var(--surface);border-style:solid;border-col
 details.theory-box[open]>summary{border-bottom:1px solid var(--line-2)}
 @media (max-width:600px){details.theory-box{padding:0 .8rem}}
 details.theory-box{}details.theory-box>.box-body{padding:.9rem .2rem .6rem}details.theory-box>.box-body>:first-child{margin-top:0}
+/* a box (details: Teoria, optional boxes) is one reading column wide (about 616 px inside), too narrow for a figure beside its text: the two-column
+   grid of .fig-row.side squeezed the text to half and its formula spilled over (fy3-6, fy7-14 at 1280 px); inside the
+   box the figure always stands under its text, as in .fig-row.stack */
+details .fig-row.side{display:block;max-width:var(--measure);margin:0 0 .5rem}
+details .fig-row.side>.fig{margin:1.25rem 0 1.75rem}
+details .fig-row.side>.fig svg{max-width:min(100%,32rem)}

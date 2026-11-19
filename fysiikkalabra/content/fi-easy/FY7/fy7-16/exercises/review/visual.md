@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ae56f8bdbdb30518
+CONTENT-HASH: 328f42eda8a13503
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] aligned Kaava blocks — rows with stacked fractions sit tight against the next row (e.g. the dB block); legible, only subtle spacing — optional: a little more row spacing in the shared aligned-block style.
 
 ## Checked
-- Delta (md-paragraphs): solutions.md of fy7-16 (fi-easy) cut into paragraphs. Opened a full-size capture of opened solutions at 1280 px (level 2 part 5; lesson folder review/shots, current for this hash). Layout, card containment and spacing survive; formulas, units and decimal commas unchanged; no clipping, overflow or red KaTeX. No figure captures apply to the changed text.
-- Hash identical at start and end.
+- fy7-16 captures open-exercises-L3-1280-3 (six-row power chain in Kaava, aligned, nothing clipped) and open-exercises-L2-1280-9 (four-row dB Kaava, equals signs aligned).
+- Delta: the other changed Kaava blocks use the same markup; layout around them survived.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

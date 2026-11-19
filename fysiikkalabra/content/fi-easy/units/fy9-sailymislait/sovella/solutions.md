@@ -35,7 +35,9 @@ $$. Se on noin yhtä suuri kuin putoamiskiihtyvyys. Jarrutus tuntuu voimakkaana 
 ### d)
 **Kysytty:** pitävätkö valvojan väite ja sen perustelu paikkansa
 **Periaate:** Ilman vastusvoimia mekaaninen energia säilyy ja massa supistuu pois: $v = \sqrt{2gh}$. Vastusvoimien työ $W_\text{muut}$ pienentää mekaanista energiaa (luku *Mekaanisen energian säilyminen ja energiaperiaate*).
-**Mallivastaus:** Perustelu on väärä. Painovoima vetää kevyttä laskijaa heikommin. Kevyen laskijan liikkeelle saamiseen tarvitaan kuitenkin samassa suhteessa vähemmän energiaa. Ilman vastusvoimia massa supistuu pois energiayhtälöstä, ja kaikki tulisivat perille nopeudella $\sqrt{2gh} \approx 26{,}6\,\text{m/s}$. Havainto voi silti pitää paikkansa vastusvoimien takia. Ilmanvastus riippuu laskijan koosta ja asennosta, mutta se ei ole verrannollinen massaan. Laskijan mekaaninen energia on verrannollinen massaan. Siksi ilmanvastus vie kevyen laskijan mekaanisesta energiasta suuremman osuuden, ja hän tulee perille hitaammin. Syy on siis ilmanvastus, ei heikompi painovoima.
+**Mallivastaus:** Perustelu on väärä. Painovoima vetää kevyttä laskijaa heikommin. Kevyen laskijan liikkeelle saamiseen tarvitaan kuitenkin samassa suhteessa vähemmän energiaa. Ilman vastusvoimia massa supistuu pois energiayhtälöstä, ja kaikki tulisivat perille nopeudella $\sqrt{2gh} \approx 26{,}6\,\text{m/s}$. Havainto voi silti pitää paikkansa vastusvoimien takia.
+
+Ilmanvastus riippuu laskijan koosta ja asennosta, mutta se ei ole verrannollinen massaan. Laskijan mekaaninen energia on verrannollinen massaan. Siksi ilmanvastus vie kevyen laskijan mekaanisesta energiasta suuremman osuuden, ja hän tulee perille hitaammin. Syy on siis ilmanvastus, ei heikompi painovoima.
 
 ### Yleisiä virheitä
 - a-kohdassa kirjoitetaan $v = 2gh$, ja neliöjuuri unohtuu. Silloin myös yksikkö on väärä, $\text{m}^2\text{/s}^2$.
@@ -98,7 +100,9 @@ $$. Matka on lyhyt, koska kivellä on jäljellä vain noin $6\,\%$ alkuperäises
 ### d)
 **Kysytty:** miksi harjattu kivi liukuu pidemmälle, vaikka harjat eivät koske kiveen
 **Periaate:** Energiaperiaatteen mukaan kitka tekee negatiivisen työn $-\mu mgs$. Liukumatka on $s = \dfrac{v^2}{2\mu g}$ (luku *Mekaanisen energian säilyminen ja energiaperiaate*).
-**Mallivastaus:** Kun kivi päästetään irti, sillä on tietty liike-energia $\tfrac12 mv^2$. Kun kivi liukuu, liike-energia muuttuu kiven ja jään sisäenergiaksi. Tämä tapahtuu kitkan tekemän negatiivisen työn kautta. Jokainen metri vie liike-energiaa määrän $\mu mg$. Harjaus pienentää kitkakerrointa. Silloin metriä kohti kuluu vähemmän liike-energiaa, ja sama liike-energia riittää pidemmälle matkalle. Matka on kääntäen verrannollinen kitkakertoimeen. Harjaus ei siis lisää kiven energiaa, eikä kiven tarvitse koskea harjaan. Harjaus vain muuttaa jäätä kiven edessä niin, että kitkan työ metriä kohti pienenee.
+**Mallivastaus:** Kun kivi päästetään irti, sillä on tietty liike-energia $\tfrac12 mv^2$. Kun kivi liukuu, liike-energia muuttuu kiven ja jään sisäenergiaksi. Tämä tapahtuu kitkan tekemän negatiivisen työn kautta. Jokainen metri vie liike-energiaa määrän $\mu mg$.
+
+Harjaus pienentää kitkakerrointa. Silloin metriä kohti kuluu vähemmän liike-energiaa, ja sama liike-energia riittää pidemmälle matkalle. Matka on kääntäen verrannollinen kitkakertoimeen. Harjaus ei siis lisää kiven energiaa, eikä kiven tarvitse koskea harjaan. Harjaus vain muuttaa jäätä kiven edessä niin, että kitkan työ metriä kohti pienenee.
 
 ### Yleisiä virheitä
 - a-kohdassa energiaperiaatteeseen otetaan potentiaalienergia, vaikka jää on vaakasuora. Toinen virhe on vähentää nopeudet ennen kuin ne korotetaan toiseen: $(2{,}40 - 0{,}62)^2$ ei ole sama kuin $2{,}40^2 - 0{,}62^2$.
@@ -302,7 +306,9 @@ Ympyröidyt kohdat ovat suoran kaksi pistettä. Niistä luetaan c-kohdan kulmake
 ### a)
 **Kysytty:** pitääkö väite 1 paikkansa, ja mistä tuulivoimalan teho riippuu
 **Periaate:** Tuulen teho on sen ilman liike-energia, joka virtaa roottorin läpi sekunnissa. Voimala muuttaa siitä osuuden $\eta$ sähköksi: $P = \tfrac12 \eta \rho A v^3$ (luku *Vesi- ja tuulivoima energian muuntajina*).
-**Mallivastaus:** Väite on väärä, koska siinä oletetaan, että teho on verrannollinen tuulen nopeuteen. Teho riippuu nopeudesta kahdella tavalla. Ensinnäkin jokaisella ilmakilogrammalla on liike-energiaa $\tfrac12 v^2$, ja se kasvaa nopeuden neliössä. Toiseksi roottorin läpi virtaa sekunnissa ilmaa massa $\rho A v$, ja se kasvaa nopeuden mukana. Siksi teho on verrannollinen nopeuden kuutioon. Kun nopeus kasvaa $6\,\text{m/s}$:sta $9\,\text{m/s}$:iin, teho kasvaa kertoimella $\dfrac{P_2}{P_1} = \left(\dfrac{v_2}{v_1}\right)^3 = \left(\tfrac{9}{6}\right)^3 = 3{,}375$. Teho kasvaa siis noin $240\,\%$ eikä $50\,\%$. Tämä pätee, kun hyötysuhde pysyy suunnilleen samana ja voimala ei vielä käy nimellisteholla. Nimellistehon yläpuolella lapoja käännetään, ja tehoa rajoitetaan.
+**Mallivastaus:** Väite on väärä, koska siinä oletetaan, että teho on verrannollinen tuulen nopeuteen. Teho riippuu nopeudesta kahdella tavalla. Ensinnäkin jokaisella ilmakilogrammalla on liike-energiaa $\tfrac12 v^2$, ja se kasvaa nopeuden neliössä. Toiseksi roottorin läpi virtaa sekunnissa ilmaa massa $\rho A v$, ja se kasvaa nopeuden mukana.
+
+Siksi teho on verrannollinen nopeuden kuutioon. Kun nopeus kasvaa $6\,\text{m/s}$:sta $9\,\text{m/s}$:iin, teho kasvaa kertoimella $\dfrac{P_2}{P_1} = \left(\dfrac{v_2}{v_1}\right)^3 = \left(\tfrac{9}{6}\right)^3 = 3{,}375$. Teho kasvaa siis noin $240\,\%$ eikä $50\,\%$. Tämä pätee, kun hyötysuhde pysyy suunnilleen samana ja voimala ei vielä käy nimellisteholla. Nimellistehon yläpuolella lapoja käännetään, ja tehoa rajoitetaan.
 
 ### b)
 **Kysytty:** pitääkö väite 2 paikkansa, ja mikä on vesivoimalan energiaketju
@@ -312,7 +318,11 @@ Ympyröidyt kohdat ovat suoran kaksi pistettä. Niistä luetaan c-kohdan kulmake
 &1000\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 9{,}0\,\text{m} \\
 &\approx 88\,\text{kJ}
 \end{aligned}
-$$. Putkessa potentiaalienergia muuttuu liike-energiaksi. Virtaava vesi pyörittää turbiinia, ja turbiini pyörittää generaattoria. Generaattori muuttaa liikkeen energian sähköksi. Veden energia on peräisin auringosta. Auringon säteily haihduttaa vettä. Vesi nousee ilmaan ja sataa ylemmäs valuma-alueelle. Sama vesi ei siis kierrä voimalan läpi itsestään, vaan aurinko ”nostaa” sen joka kerta uudelleen. Kaikki energia, jonka vesi menettää, ei muutu sähköksi. Putken ja turbiinin kitka sekä generaattorin lämpeneminen muuttavat osan energiasta sisäenergiaksi. Lisäksi alaveteen virtaavalla vedellä on vielä liike-energiaa. Siksi hyötysuhde on alle $100\,\%$, tässä $90\,\%$.
+$$. Putkessa potentiaalienergia muuttuu liike-energiaksi. Virtaava vesi pyörittää turbiinia, ja turbiini pyörittää generaattoria. Generaattori muuttaa liikkeen energian sähköksi.
+
+Veden energia on peräisin auringosta. Auringon säteily haihduttaa vettä. Vesi nousee ilmaan ja sataa ylemmäs valuma-alueelle. Sama vesi ei siis kierrä voimalan läpi itsestään, vaan aurinko ”nostaa” sen joka kerta uudelleen.
+
+Kaikki energia, jonka vesi menettää, ei muutu sähköksi. Putken ja turbiinin kitka sekä generaattorin lämpeneminen muuttavat osan energiasta sisäenergiaksi. Lisäksi alaveteen virtaavalla vedellä on vielä liike-energiaa. Siksi hyötysuhde on alle $100\,\%$, tässä $90\,\%$.
 
 ### c)
 **Kysytty:** pitääkö väite 3 paikkansa, ja kuinka suuri on voimalan nykyinen sähköteho
@@ -324,7 +334,9 @@ P &= 0{,}90 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 120\,\tfrac{\text{m}
 &\approx 9{,}54 \cdot 10^{6}\,\text{W} \\
 &\approx 9{,}5\,\text{MW}
 \end{aligned}
-$$. Teho on suoraan verrannollinen sekä virtaamaan $Q$ että putouskorkeuteen $h$. Kun pato korotetaan $9\,\text{m}$:stä $12\,\text{m}$:iin, putouskorkeus kasvaa kertoimella $\dfrac{P'}{P} = \dfrac{h'}{h} = \tfrac{12}{9} = \tfrac43$ eli kolmanneksella. Teho kasvaa samassa suhteessa noin $12{,}7\,\text{MW}$:iin. Jos virtaama kasvaisi kolmanneksella, teho kasvaisi täsmälleen yhtä paljon. Väite pitää siis paikkansa, kun hyötysuhde pysyy samana eikä korotus muuta joen virtaamaa. Käytännössä virtaama riippuu sateista ja valuma-alueesta. Siksi virtaamaa ei voi kasvattaa, mutta korkeutta voi.
+$$. Teho on suoraan verrannollinen sekä virtaamaan $Q$ että putouskorkeuteen $h$. Kun pato korotetaan $9\,\text{m}$:stä $12\,\text{m}$:iin, putouskorkeus kasvaa kertoimella $\dfrac{P'}{P} = \dfrac{h'}{h} = \tfrac{12}{9} = \tfrac43$ eli kolmanneksella. Teho kasvaa samassa suhteessa noin $12{,}7\,\text{MW}$:iin.
+
+Jos virtaama kasvaisi kolmanneksella, teho kasvaisi täsmälleen yhtä paljon. Väite pitää siis paikkansa, kun hyötysuhde pysyy samana eikä korotus muuta joen virtaamaa. Käytännössä virtaama riippuu sateista ja valuma-alueesta. Siksi virtaamaa ei voi kasvattaa, mutta korkeutta voi.
 
 ### Yleisiä virheitä
 - a-kohdassa oletetaan, että teho on verrannollinen nopeuden neliöön, koska liike-energia on $\tfrac12 mv^2$. Silloin unohtuu, että myös sekunnissa virtaava ilmamäärä kasvaa.
@@ -346,12 +358,20 @@ $$. Teho on suoraan verrannollinen sekä virtaamaan $Q$ että putouskorkeuteen $
 ### b)
 **Kysytty:** onko ryhmän johtopäätös perusteltu, ja mistä mittausten ero johtuu
 **Periaate:** Kokonaisliikemäärä säilyy, kun ulkoisten voimien impulssi on niin pieni, ettei sillä ole merkitystä (luku *Liikemäärän säilyminen ja yksiulotteiset törmäykset*). Kimmottomassa törmäyksessä muuttuu liike-energiaa, ei liikemäärää. Systemaattinen virhe siirtää kaikkia tuloksia samaan suuntaan (luku *Mittaaminen ja mittauksen luotettavuus*).
-**Mallivastaus:** Johtopäätös ei ole perusteltu. Kimmottomassa törmäyksessä sisäenergiaksi ja ääneksi muuttuu liike-energiaa. Tässäkin kokeessa 2 katosi noin puolet liike-energiasta. Liikemäärä ei ole energian laji, eikä se voi muuttua sisäenergiaksi. Ero johtuu todennäköisesti siitä, miten mitattiin. Yhteinen nopeus mitattiin vasta $0{,}40$–$0{,}80\,\text{m}$ törmäyskohdan jälkeen. Tavallisella radalla vierimisvastus hidastaa kärryjä koko ajan. Vierimisvastus on ulkoinen voima. Sen impulssi pienentää liikemäärää sinä aikana, kun kärryt kulkevat mittausalueelle. Tätä selitystä tukee kaksi asiaa. Ensinnäkin ero on systemaattinen, sillä liikemäärä pieneni kaikissa kokeissa. Toiseksi suhteellinen ero on suurin hitaimmassa kokeessa ($-12\,\%$) ja pienin nopeimmassa ($-3\,\%$). Hitaat kärryt viipyvät matkalla kauemmin, ja vakiosuuruinen vastusvoima pienentää pientä nopeutta suhteessa enemmän. Hidastuvuuden ei tarvitse olla suuri: kokeessa 2 ero vastaa vain noin $0{,}01\,\text{m/s}^2$:n hidastuvuutta. Aineisto ei siis osoita, että liikemäärä ei säily.
+**Mallivastaus:** Johtopäätös ei ole perusteltu. Kimmottomassa törmäyksessä sisäenergiaksi ja ääneksi muuttuu liike-energiaa. Tässäkin kokeessa 2 katosi noin puolet liike-energiasta. Liikemäärä ei ole energian laji, eikä se voi muuttua sisäenergiaksi. Ero johtuu todennäköisesti siitä, miten mitattiin. Yhteinen nopeus mitattiin vasta $0{,}40$–$0{,}80\,\text{m}$ törmäyskohdan jälkeen. Tavallisella radalla vierimisvastus hidastaa kärryjä koko ajan.
+
+Vierimisvastus on ulkoinen voima. Sen impulssi pienentää liikemäärää sinä aikana, kun kärryt kulkevat mittausalueelle. Tätä selitystä tukee kaksi asiaa. Ensinnäkin ero on systemaattinen, sillä liikemäärä pieneni kaikissa kokeissa. Toiseksi suhteellinen ero on suurin hitaimmassa kokeessa ($-12\,\%$) ja pienin nopeimmassa ($-3\,\%$).
+
+Hitaat kärryt viipyvät matkalla kauemmin, ja vakiosuuruinen vastusvoima pienentää pientä nopeutta suhteessa enemmän. Hidastuvuuden ei tarvitse olla suuri: kokeessa 2 ero vastaa vain noin $0{,}01\,\text{m/s}^2$:n hidastuvuutta. Aineisto ei siis osoita, että liikemäärä ei säily.
 
 ### c)
 **Kysytty:** parannettu koejärjestely, jolla voi testata liikemäärän säilymistä
 **Periaate:** Säilymislakia voi testata vain silloin, kun ulkoisten voimien vaikutus mittausten välillä on pieni ja mittausten epävarmuus tunnetaan (luvut *Liikemäärän säilyminen ja yksiulotteiset törmäykset* ja *Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi*).
-**Mallivastaus:** Nopeudet mitataan mahdollisimman läheltä törmäystä. Esimerkiksi valoportit sijoitetaan juuri ennen törmäyskohtaa ja heti sen jälkeen. Toinen tapa on piirtää videoanalyysillä kummankin kärryn $(t, v)$-kuvaaja ja lukea nopeudet törmäyshetkellä suorien jatkeilta. Vierimisvastuksen vaikutus pienennetään. Voidaan käyttää ilmatyynyrataa, tai rataa voidaan kallistaa hieman niin, että yksin työnnetty kärry liikkuu tasaisella nopeudella. Kärryjen massat punnitaan vaa'alla tarranauhojen kanssa. Jokainen koe toistetaan monta kertaa. Nopeuden ja massan epävarmuudesta arvioidaan, kuinka suuri liikemäärien ero voi olla pelkän mittausepävarmuuden takia. Lisäksi massoja ja nopeuksia vaihdellaan. Jos liikemäärä säilyy kaikissa kokeissa epävarmuuden rajoissa, tulos tukee säilymislakia. Samoista mittauksista lasketaan myös liike-energia ennen ja jälkeen. Muuttunutta osuutta verrataan teoreettiseen arvoon $\dfrac{m_\text{B}}{m_\text{A} + m_\text{B}} = 48\,\%$. Näin raportti erottaa liikemäärän ja energian.
+**Mallivastaus:** Nopeudet mitataan mahdollisimman läheltä törmäystä. Esimerkiksi valoportit sijoitetaan juuri ennen törmäyskohtaa ja heti sen jälkeen. Toinen tapa on piirtää videoanalyysillä kummankin kärryn $(t, v)$-kuvaaja ja lukea nopeudet törmäyshetkellä suorien jatkeilta.
+
+Vierimisvastuksen vaikutus pienennetään. Voidaan käyttää ilmatyynyrataa, tai rataa voidaan kallistaa hieman niin, että yksin työnnetty kärry liikkuu tasaisella nopeudella. Kärryjen massat punnitaan vaa'alla tarranauhojen kanssa. Jokainen koe toistetaan monta kertaa. Nopeuden ja massan epävarmuudesta arvioidaan, kuinka suuri liikemäärien ero voi olla pelkän mittausepävarmuuden takia.
+
+Lisäksi massoja ja nopeuksia vaihdellaan. Jos liikemäärä säilyy kaikissa kokeissa epävarmuuden rajoissa, tulos tukee säilymislakia. Samoista mittauksista lasketaan myös liike-energia ennen ja jälkeen. Muuttunutta osuutta verrataan teoreettiseen arvoon $\dfrac{m_\text{B}}{m_\text{A} + m_\text{B}} = 48\,\%$. Näin raportti erottaa liikemäärän ja energian.
 
 ### Yleisiä virheitä
 - a-kohdassa törmäyksen jälkeinen liikemäärä lasketaan vain kärryn A massalla, vaikka kärryt liikkuvat yhdessä.
