@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1df2c1aee33c64a1
-Mode: full (translation review against the reviewed Finnish set, new task L2-08)
-Round 2
+CONTENT-HASH: 9bdcb25618c858ae
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- solutions.md fy5-13-L1-09 — carried over from the previous report. I could not check the MAFY values 971 m/s (He, 0 °C) and 331,5 m/s (air, 0 °C) here. The ±4 % tolerance covers small differences between tables.
 
 ## Checked
-- New task fy5-13-L2-08 compared with content/fi: id, kind tags, correct flag, choice count and order, answer, tolerance and unit identical; every number and formula identical (decimal comma to comma kept).
-- Recomputed: L2-08 pipes, f1 = v/2L open; closed L/2 gives v/(4*L/2) = v/2L, unchanged; distractors x2 (closed as open), /2 (plug only), x4 (plug reversed).
-- Solution keeps all lead-ins, the symbolic step before numbers and the explanation of each distractor.
-- fi-easy follows NOTES.md section 12: shorter sentences, terms explained, same physics.
-- check_i18n: nothing for fy5-13; build.py fy5-13 succeeds.
+- Delta, L2-02: the task now says "Putken pääkorjausta ei huomioida", and the solution's Periaate says the same. The model's assumption is now stated in the task, as the guardrail asks.
+- The new Järkevyys sentence has the right physics. The end correction places the antinode just above the mouth, so the shortest column is a little shorter than a true quarter wavelength. Neglecting the correction gives a slightly low v.
+- Recomputed: v = 4Lf = 4 · 0,193 m · 440 Hz = 339,68 m/s, rounded to 340 m/s (three figures, limited by 19,3 cm). This agrees with `answer` 339.68. The next resonance is 3λ/4 = 0,579 m.
+- The removed advice to compare two resonances leaves no gap. L2-06 still teaches that method.
+- No numbers or symbols changed elsewhere. All other items of the previous PASS stand.
+- The hash was the same at the start and the end.

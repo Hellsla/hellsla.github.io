@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 1d5f9df3a4fed506
-SCOPE: delta added-exercise from c716085d5bc703dc base 81db4a6fd727
+CONTENT-HASH: 9af6d9f3ec3711d8
 
 ## Blocking
 
 ## Polish
-- exercises.json (L2-09 ja L2-04) — samassa kuvassa on L2-04:ssä f = 100 Hz ja v = 60 m/s, mutta L2-09:ssä v = 75,0 m/s. Ristiriitaa ei ole, koska kuvassa ei ole lukuja punnuksesta tai kireydestä. Sivulause "kun punnus on raskaampi" tekisi kuitenkin eron selväksi.
+- exercises.json fy5-13-L3-04 a) (unchanged from round 1): "pysyy mittausepävarmuuden rajoissa vakiona" names an uncertainty the task never gives. "pysyy likimain vakiona" would ask only for what the data gives.
+- solutions.md L1-09 (unchanged from round 1): confirm helium 971 m/s and air 331,5 m/s against the MAFY table. The ±4 % tolerance covers the usual differences.
 
 ## Checked
-- Hash oli sama alussa ja lopussa. Arvioin vain tehtävät L1-09 ja L2-09 (kierros 3).
-- L2-09:ssä kysytään nyt taajuuden nousua seuraavaan silmukkamäärään. Kuvasta luetaan L = 1,20 m ja n = 4, joten f₄ = 125 Hz ja f₅ = 156,25 Hz, ja nousu on v/(2L) = 31,25 Hz. Tulos on sama kuin answers.py:ssä. Ratkaisussa erotus muodostetaan symbolisesti ennen sijoitusta.
-- Toistoa ei ole: L2-04 kysyy samasta kuvasta aallon nopeutta. L3-02 päättelee perustaajuuden kahdesta annetusta taajuudesta, eikä siinä lueta kuvaa. Kuvaa ei käytetä inquiry.json:ssa.
-- Merkitsevät numerot: vastaus 31,3 Hz on kolmen numeron tarkkuudella kuten 75,0 m/s ja 1,20 m. Arvo on 0,2 %:n päässä tarkasta arvosta 31,25, joten se on toleranssin 2 % sisällä.
-- L1-09: (971 − 331,5)/1,00 = 639,5 Hz. MAFY-arvot (helium 971 m/s, ilma 0 °C 331,5 m/s) ovat VERIFIED-riveiltä, ja toleranssi on 4 %.
-- Järkevyystarkistukset ovat oikein: peräkkäisten ominaistaajuuksien erotus on f₁. Heliumin ääni on 2,93-kertainen, eli noin 1,55 oktaavia.
+- exercises.json fy5-13-L2-02: the added "Putken pääkorjausta ei huomioida." states the model's assumption in the task, as the guardrails ask. It fixes my round 1 polish item and agrees with the chapter and with L2-06.
+- solutions.md L2-02, Periaate: the same assumption is stated, so the solution uses the task's model.
+- solutions.md L2-02, Järkevyys: the end correction makes the shortest air column a little shorter than λ/4 (λ/4 = L + e), and the direction is right. The removed claim that two resonances cancel the correction was true, but it is not needed here, and L2-06 still teaches it.
+- Recomputed: v = 4Lf = 4 · 0,193 m · 440 Hz = 339,68 m/s, which rounds to 340 m/s with three figures; 3λ/4 = 0,579 m. Both agree with answers.py and the solution.
+- No other number, symbol or option changed, so the round 1 recomputations still hold.
+- Hash 9af6d9f3ec3711d8 at the start and at the end.

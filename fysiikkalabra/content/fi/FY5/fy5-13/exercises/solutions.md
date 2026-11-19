@@ -61,12 +61,12 @@
 ## fy5-13-L2-02
 **Annettu:** äänirauta $f = 440\,\text{Hz}$; lyhin resonoiva ilmapatsas $L = 19{,}3\,\text{cm}$, alapäästään veden pinnan sulkema
 **Kysytty:** äänen nopeus ilmassa $v$ metreinä sekunnissa
-**Periaate:** Veden pinnalla ilma ei pääse liikkumaan, joten siellä on siirtymän solmu, ja putken avoimessa suussa on kupu. Ääni voimistuu ensimmäisen kerran, kun ilmapatsaan pituus vastaa suljetun putken perustaajuutta, eli solmusta kupuun on neljännes aallonpituutta. Nopeus saadaan aallon perusyhtälöstä.
+**Periaate:** Veden pinnalla ilma ei pääse liikkumaan, joten siellä on siirtymän solmu, ja putken avoimessa suussa on kupu. Ääni voimistuu ensimmäisen kerran, kun ilmapatsaan pituus vastaa suljetun putken perustaajuutta, eli solmusta kupuun on neljännes aallonpituutta. Putken pääkorjausta ei huomioida. Nopeus saadaan aallon perusyhtälöstä.
 **Kaava:** $L = \dfrac{\lambda}{4}$ ja $v = f\lambda$, josta $v = 4 L f$
 **Muunnokset:** $L = 19{,}3\,\text{cm} = 0{,}193\,\text{m}$
 **Sijoitus:** $v = 4 \cdot 0{,}193\,\text{m} \cdot 440\,\text{Hz} = 0{,}772\,\text{m} \cdot 440\,\text{Hz} = 339{,}68\,\text{m/s}$
 **Vastaus:** $340\,\text{m/s}$, kolme merkitsevää numeroa kuten ilmapatsaan pituudessa $19{,}3\,\text{cm}$.
-**Järkevyys:** Tulos on äänen nopeus ilmassa huoneenlämmössä, noin $340\,\text{m/s}$. Seuraava resonanssi olisi kolmen neljänneksen kohdalla, $\tfrac{3\lambda}{4} = 0{,}579\,\text{m}$; vertaamalla kahta resonanssia mittauksessa päästään eroon pääkorjauksen virheestä, joka tekee lyhimmästä ilmapatsaasta hieman todellista neljännestä lyhyemmän.
+**Järkevyys:** Tulos on äänen nopeus ilmassa huoneenlämmössä, noin $340\,\text{m/s}$. Seuraava resonanssi olisi kolmen neljänneksen kohdalla, $\tfrac{3\lambda}{4} = 0{,}579\,\text{m}$; todellisessa mittauksessa pääkorjaus tekee lyhimmästä ilmapatsaasta hieman todellista neljännestä lyhyemmän, mutta tässä tehtävässä sitä ei huomioida.
 
 ## fy5-13-L2-03
 **Annettu:** molemmista päistä avoin putki, kolmas ominaistaajuus $f_3 = 1530\,\text{Hz}$; äänen nopeus ilmassa $v = 340\,\text{m/s}$

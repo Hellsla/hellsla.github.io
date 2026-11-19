@@ -63,12 +63,12 @@
 **Find:** the speed of sound in air $v$ in metres per second
 **Principle:** At the water surface the air cannot move, so there is a displacement node, and at the open mouth of the tube there is an antinode.
 
-The sound is first amplified when the length of the air column corresponds to the fundamental frequency of a closed tube, that is, a quarter of a wavelength from the node to the antinode. The speed follows from the basic wave equation.
+The sound is first amplified when the length of the air column corresponds to the fundamental frequency of a closed tube, that is, a quarter of a wavelength from the node to the antinode. The end correction of the tube is ignored. The speed follows from the basic wave equation.
 **Formula:** $L = \dfrac{\lambda}{4}$ and $v = f\lambda$, so $v = 4 L f$
 **Conversions:** $L = 19.3\,\text{cm} = 0.193\,\text{m}$
 **Substitution:** $v = 4 \cdot 0.193\,\text{m} \cdot 440\,\text{Hz} = 0.772\,\text{m} \cdot 440\,\text{Hz} = 339.68\,\text{m/s}$
 **Answer:** $340\,\text{m/s}$, three significant figures as in the length of the air column $19.3\,\text{cm}$.
-**Reasonableness:** The result is the speed of sound in air at room temperature, about $340\,\text{m/s}$. The next resonance would be at three quarters, $\tfrac{3\lambda}{4} = 0.579\,\text{m}$; by comparing two resonances in a measurement the error of the end correction is eliminated, which makes the shortest air column slightly shorter than the true quarter wavelength.
+**Reasonableness:** The result is the speed of sound in air at room temperature, about $340\,\text{m/s}$. The next resonance would be at three quarters, $\tfrac{3\lambda}{4} = 0.579\,\text{m}$; in a real measurement the end correction makes the shortest air column slightly shorter than the true quarter wavelength, but this task ignores it.
 
 ## fy5-13-L2-03
 **Given:** tube open at both ends, third natural frequency $f_3 = 1530\,\text{Hz}$; speed of sound in air $v = 340\,\text{m/s}$

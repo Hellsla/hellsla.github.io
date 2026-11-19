@@ -107,6 +107,10 @@ jobs:
       - name: one Playwright version in requirements-ci.txt, the workflow's images and the instructions (scripts/ci_env.py, work queue 5)
         run: python scripts/ci_env.py check
       - run: python scripts/lint_lesson.py --all
+      - name: a pull request removes no published page from site/ without a row in docs/site-removals.tsv (work queue 20; test on every run)
+        run: |
+          python scripts/test_check_site_removals.py
+          if [ "${{ github.event_name }}" = pull_request ]; then python scripts/check_site_removals.py "origin/${{ github.base_ref }}"; fi
       - name: every worked example and exercise has a complete model solution (teacher 2026-10-27)
         run: python scripts/check_solutions.py --all
       - name: known physics errors are not taught as fact again (docs/physics-guardrails.md, teacher 2026-10-28)

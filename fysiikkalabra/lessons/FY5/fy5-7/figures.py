@@ -124,14 +124,22 @@ def osat():
             "ylimmässä ja alimmassa asemassa. Tasapainoasemasta kumpaankin ääriasemaan on yhtä pitkä nuoli, jonka merkintä on A. "
             "Pystysuora akseli x osoittaa ylöspäin. Oikealla heiluri: punnus riippuu langasta, ja tasapainoasemassa lanka on "
             "pystysuorassa katkoviivan x = 0 kohdalla. Katkoviivoin piirretyt punnukset ovat ääriasemissa vasemmalla ja oikealla, "
-            "ja tasapainoasemasta kumpaankin on vaakasuora nuoli A.")
+            "ja tasapainoasemasta kumpaankin on vaakasuora nuoli A.", anim=True)
+    P = 3.0
     # left: a weight on a spring, x up
     cx, yeq, amp = 120, 190, 80
     f.rect(52, 18, 136, 12, METAL_EDGE, INK, 2, 2)
     for k in range(8): f.line(58 + 16 * k, 18, 50 + 16 * k, 8, INK, 1.5)
+    L0 = yeq - 20 - 30                                  # animated (work queue 8f): the spring is as long as the weight's place says
+    kf = "".join(f"{round(i / 48 * 100, 3):g}%{{transform:scaleY({1 - amp / L0 * math.sin(2 * PI * i / 48):.4f})}}" for i in range(49))
+    f._kf.append(f"@keyframes fa-fy57-spring{{{kf}}}")
+    f.add(f'<g class="fa-k" style="--fa-n:fa-fy57-spring;--fa-t:{P:g}s;--fa-d:0s;transform-origin:{cx}px 30px;transform-box:view-box">')
     spring(f, cx, 30, yeq - 20)
+    f.add("</g>")
     weight(f, cx, yeq - amp, ghost=True); weight(f, cx, yeq + amp, ghost=True)
+    f.oscillate(-amp, 0.0, P, "y")                      # x up: the weight goes up first
     weight(f, cx, yeq)
+    f.end()
     f.line(30, yeq, 240, yeq, MUTED, 1.5, "7 6")
     f.tex(244, yeq, r"x = 0", "start")
     for y2 in (yeq - amp, yeq + amp):
@@ -149,8 +157,10 @@ def osat():
         bx, by = pvx + sgn * Lp * math.sin(th), pvy + Lp * math.cos(th)
         f.line(pvx, pvy, bx, by, MUTED, 2, "6 5")
         f.add(f'<circle cx="{n(bx)}" cy="{n(by)}" r="17" fill="{WHITE}" fill-opacity="0.6" stroke="{MUTED}" stroke-width="2" stroke-dasharray="6 5"/>')
+    f.motion([(i / 48, 0, 0, math.degrees(th) * math.sin(2 * PI * i / 48), 1) for i in range(49)], P, rotate_about=(pvx, pvy))
     f.line(pvx, pvy, pvx, pvy + Lp, INK, 2.5)
     f.circle(pvx, pvy + Lp, 18, IRON, INK, 2.5)
+    f.end()
     f.circle(pvx, pvy, 5, INK)
     dx = Lp * math.sin(th); yb = 290
     for sgn in (-1, 1):
@@ -212,13 +222,18 @@ def ympyra():
             "vaakasuorasta säteestä kulman 2 pii t per T. Pisteen korkeus ympyrän keskipisteen tasosta on x. Vaakasuora "
             "katkoviiva vie saman korkeuden oikealle kuvaajaan, jossa x on piirretty ajan t funktiona yhden kierrosajan T "
             "ajalta: sinikäyrä saa arvon A hetkellä neljäsosa T, arvon nolla hetkellä puoli T, arvon miinus A hetkellä kolme "
-            "neljäsosaa T ja taas nollan hetkellä T.")
+            "neljäsosaa T ja taas nollan hetkellä T.", anim=True)
     cx, cy, R, deg = 136, 176, 108, 125
+    P = 4.0
     f.circle(cx, cy, R, "none", INK, 2.5)
     f.line(cx - R - 10, cy, cx + R + 10, cy, MUTED, 1.5, "6 5")
     a = math.radians(deg); px, py = cx + R * math.cos(a), cy - R * math.sin(a)
+    f.orbit(cx, cy, P)                                  # animated (work queue 8f): the radius and the point turn once in T
     f.line(cx, cy, px, py, INK, 2)
+    f.end()
     f.circle(cx, cy, 4, INK)
+    hide = lambda: f.motion([(0, 0, 0, 0, 0), (1, 0, 0, 0, 0)], P)      # what belongs to the frozen angle only: gone while it turns
+    hide()
     # the turned angle (from the horizontal radius) and its label inside the circle, clear of the outline and the arc
     arc = [(cx + 26 * math.cos(math.radians(d)), cy - 26 * math.sin(math.radians(d))) for d in range(0, deg + 1, 5)]
     f.path("M" + " L".join(f"{n(x)},{n(y)}" for x, y in arc), stroke=INK, w=2)
@@ -228,7 +243,10 @@ def ympyra():
     # the height x of the point; x stands right of the vertical segment
     f.line(px, cy, px, py, INK, 4)
     f.tex(px + 12, cy - 34, "x", "start")
+    f.end()
+    f.orbit(cx, cy, P)
     f.circle(px, py, 8, INK)
+    f.end()
     # the turning direction
     ar = [(cx + (R + 12) * math.cos(math.radians(d)), cy - (R + 12) * math.sin(math.radians(d))) for d in range(138, 173, 4)]
     f.path("M" + " L".join(f"{n(x)},{n(y)}" for x, y in ar), stroke=MUTED, w=2.5)
@@ -253,8 +271,18 @@ def ympyra():
     pts = [(X(k / 120), Y(math.sin(2 * PI * k / 120))) for k in range(121)]
     f.path("M" + " L".join(f"{n(x)},{n(y)}" for x, y in pts), stroke=INK, w=3)
     u0 = deg / 360
+    hide()
     f.line(px + 10, py, X(u0) - 8, py, MUTED, 1.5, "6 5")
+    f.end()
+    N = 60                                              # the graph's point runs along the curve, one period, then starts again
+    fr = []
+    for i in range(N + 1):
+        u = (u0 + i / N) % 1.0 if i < N else u0
+        wrap = (u0 + i / N) >= 1.0 and (u0 + (i - 1) / N) < 1.0 or (u0 + (i + 1) / N) >= 1.0 and (u0 + i / N) < 1.0
+        fr.append((i / N, X(u) - X(u0), Y(math.sin(2 * PI * u)) - py, 0, 0 if wrap else 1))
+    f.motion(fr, P)
     f.circle(X(u0), py, 7, INK, WHITE, 2)
+    f.end()
     return f.svg()
 
 

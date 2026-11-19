@@ -1,9 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 45415083d364e5c2
+CONTENT-HASH: ea654eb5479b015a
+ROUND: 2
 
 ## Blocking
+(none)
 
 ## Polish
+- [Minor] lesson.md, theory symbol list — the units "(Hz)", "(m/s)", "(m)" after the symbols are plain text; untouched text, so only Minor — write them as LaTeX units ($\text{Hz}$ etc.) when next edited.
 
 ## Checked
-batch delta review: the only change is the worked example's "Tunnetut ja kysytty" stage split into two paragraphs (knowns, then the question last); worked-example captures (390 px) of fy5-1, 2, 4, 5, 14 opened, the split reads cleanly, formulas and units unchanged and rendered correctly, nothing clipped.
+- fig-1 to fig-5 at 390 px (guitar illustration, superposition in three moments, standing wave with S/K and λ/2, λ/4, string modes n=1..3, tube modes): clean, nothing clipped, colours and strokes consistent, labels LaTeX, S/K and the wavelength brackets readable.
+- theory-1280-2 and -3 (formula blocks aligned, figures beside their paragraphs, order of figure after text kept); example-390-1 (knowns and question in separate paragraphs, formulas and units rendered correctly).
+- open-exercises L2-3 and L3-3 at 1280 (solutions open, aligned chains, units upright, the new "pääkorjaus ei huomioida" sentence reads naturally).
+- The Finnish prose changes in the diff are split paragraphs and added clarifying sentences; the wording is fluent and consistent with the glossary.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
