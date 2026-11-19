@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e550e957002f8c9e
+CONTENT-HASH: e052ca6a29b7d89e
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: e550e957002f8c9e
 - none
 
 ## Checked
-- batch delta review (en, fy1-7): changed unit-conversion recap task read in full ($6.4\cdot10^{-5}\,\text{m}^3$, aligned chain, English); layout judged from the herata-390 pattern (en fy1-1/fy1-6 opened); figures unchanged.
+batch delta review: contact sheets (page 2 of fy1-1, fy1-2, fy1-4, fy1-6; the added "Stop and think" boxes render as a tinted box with a closed Answer disclosure, readable at 390 px, maths rendered, no clipping, layout around them intact); other lessons judged from the diff plus the same shared component, the figures unchanged.

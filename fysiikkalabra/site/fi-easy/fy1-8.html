@@ -563,6 +563,8 @@
 <h4>Tutkimuskysymys ja hypoteesi</h4>
 <p><span class="kc-mark kc-plain" data-kortti="fy1-tutkimuskysymys">Tutkimuskysymys</span> on kysymys, johon mittaus voi vastata. Esimerkki on "Miten leluauton kulkuaika riippuu ajomatkan pituudesta?" Kysymys "Mikä auto on paras?" ei kelpaa, koska sitä ei voi mitata.</p>
 <p><strong class="kc-mark" data-kortti="fy1-hypoteesi">Hypoteesi</strong> on perusteltu ja testattava ennuste, joka vastaa tutkimuskysymykseen. Esimerkiksi: "Auto liikkuu radalla vakionopeudella. Siksi sen kulkema matka on suoraan verrannollinen aikaan, $s = vt$." Hypoteesista pitää seurata jotain mitattavaa. Sen pitää myös voida osoittautua vääräksi. Ennuste "auto kulkee jotenkin" ei ole hypoteesi, koska mikään mittaus ei voi kumota sitä eli osoittaa sitä vääräksi.</p>
+<aside class="stop-think"><p class="stop-think-label">Pysähdy ja mieti</p><p class="stop-think-q">Ennuste on: "Jos matka kaksinkertaistuu, kulkuaika kaksinkertaistuu." Kelpaako se hypoteesiksi? Miksi?</p><details class="stop-think-a"><summary>Vastaus</summary><p>Kelpaa. Siitä seuraa jotain mitattavaa. Mittaus voi myös näyttää sen vääräksi, jos aika ei kaksinkertaistu.</p></details></aside>
+
 <h4>Muuttujat</h4>
 <p><strong>Muuttuja</strong> on suure tai muu asia, joka voi vaihdella tutkimuksessa. Kokeessa tehdään kolme asiaa. Yhtä muuttujaa muutetaan, toista mitataan ja kaikki muut pidetään samoina:</p>
 <ul>
@@ -570,7 +572,10 @@
 <li><strong>mitattava muuttuja</strong>: sen arvo luetaan mittarista, tässä aika $t$</li>
 <li><strong>vakioitavat muuttujat</strong>: ne pysyvät samoina koko kokeen ajan, tässä auto, paristot, alusta ja lähtötapa.</li>
 </ul>
-<div class="fig-row stack"><div class="fig-text"><p>Joskus kaksi muuttujaa muuttuu yhtä aikaa, esimerkiksi matka ja paristot. Silloin ei voi päätellä, mikä muutti tulosta. Siksi koe on reilu vasta, kun vain muutettava muuttuja vaihtuu.</p></div><div class="fig"><svg width="600" data-fig="setup" data-style="house" viewBox="0 0 600 414" role="img" aria-label="Kaavakuva kokeen asetelmasta. Leluauto toimii paristoilla. Se ajaa pöydällä lähtöviivalta maaliviivalle. Maalissa on ruutulippu. Pöydän reunassa on mittanauha, jonka asteikko on metreinä. Lähtöviivan ja maaliviivan väli on muutettava muuttuja, matka s. Sekuntikello mittaa aikaa t. Aika on mitattava muuttuja. Vakioina pysyvät auto, alusta ja paristot. Asteikko on mittakaavassa: 150 yksikköä kuvassa vastaa metriä." style="max-width:100%;font-size:24px">
+<p>Joskus kaksi muuttujaa muuttuu yhtä aikaa, esimerkiksi matka ja paristot. Silloin ei voi päätellä, mikä muutti tulosta. Siksi koe on reilu vasta, kun vain muutettava muuttuja vaihtuu.</p>
+<aside class="stop-think"><p class="stop-think-label">Pysähdy ja mieti</p><p class="stop-think-q">Ryhmä vaihtaa matkaa. Samalla se vaihtaa leluautoon uudet paristot. Aika lyhenee. Voiko ryhmä päätellä, mikä sen aiheutti?</p><details class="stop-think-a"><summary>Vastaus</summary><p>Ei voi. Kaksi muuttujaa muuttui yhtä aikaa. Silloin syytä ei voi päätellä. Vain muutettava muuttuja saa vaihtua.</p></details></aside>
+
+<p><svg width="600" data-fig="setup" data-style="house" viewBox="0 0 600 414" role="img" aria-label="Kaavakuva kokeen asetelmasta. Leluauto toimii paristoilla. Se ajaa pöydällä lähtöviivalta maaliviivalle. Maalissa on ruutulippu. Pöydän reunassa on mittanauha, jonka asteikko on metreinä. Lähtöviivan ja maaliviivan väli on muutettava muuttuja, matka s. Sekuntikello mittaa aikaa t. Aika on mitattava muuttuja. Vakioina pysyvät auto, alusta ja paristot. Asteikko on mittakaavassa: 150 yksikköä kuvassa vastaa metriä." style="max-width:100%;font-size:24px">
   <foreignObject x="24" y="13.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{muutettava: } s$</div></foreignObject>
   <foreignObject x="24" y="47.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{mitattava: } t$</div></foreignObject>
   <foreignObject x="24" y="81.5" width="420" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{vakiona: auto, alusta, paristot}$</div></foreignObject>
@@ -682,7 +687,7 @@
   <line x1="72" y1="326" x2="72" y2="338" stroke="#6b7480" stroke-width="1.25"/>
   <line x1="372" y1="326" x2="372" y2="338" stroke="#6b7480" stroke-width="1.25"/>
   <foreignObject x="168" y="337.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$s = 2{,}00\,\text{m}$</div></foreignObject>
-</svg></div></div>
+</svg></p>
 <h4>Suunnittelu ennen mittausta</h4>
 <p>Ennen suunnittelua hankitaan taustatietoa ilmiöstä ja menetelmistä. Lähdettä arvioidaan lähdekriittisesti: kuka tiedon on tuottanut ja miksi, miten se perustellaan, onko se ajantasaista ja tukevatko muut lähteet sitä.</p>
 <p>Suunnitelma vastaa ennen mittausta näihin kysymyksiin:</p>
@@ -798,6 +803,8 @@ t &\ge \frac{\Delta t}{\varepsilon_\text{max}}
   <foreignObject x="304" y="188.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\varepsilon \le 5\,\%$</div></foreignObject>
   <foreignObject x="184" y="73.5" width="180" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\varepsilon = \dfrac{0{,}2\,\text{s}}{t}$</div></foreignObject>
 </svg></div></div>
+<aside class="stop-think"><p class="stop-think-label">Pysähdy ja mieti</p><p class="stop-think-q">Ajan epävarmuus on $0{,}2\,\text{s}$. Suhteellinen epävarmuus saa olla enintään $2{,}0\,\%$. Kuinka pitkä aika pitää vähintään mitata?</p><details class="stop-think-a"><summary>Vastaus</summary><p>Aika pitää olla vähintään $t = \Delta t/\varepsilon_\text{max}$, joten $t = 0{,}2\,\text{s}/0{,}020 = 10\,\text{s}$.</p></details></aside>
+
 <p>Tarvittava matka saadaan tasaisen liikkeen mallista $s = vt$. Jos mittaus tehdään usealla matkalla, mittauspisteisiin sovitetaan suora (luku <em>Graafinen esitys ja suoran sovittaminen</em>). Aika $t$ on vaaka-akselilla ja matka $s$ pystyakselilla. Silloin suoran kulmakerroin on nopeus $v$. Lyhin kelvollinen matka on se, jolla suhteellinen epävarmuus vielä pysyy valitussa rajassa $\varepsilon_\text{max}$. Lyhyemmällä matkalla suhteellinen epävarmuus ylittää tämän rajan. Silloin tulos on liian epätarkka.</p>
 <details class="theory-box"><summary>Yleinen virhekäsitys</summary><div class="box-body">
 <p>Moni ajattelee, että tutkimus on epäonnistunut, jos mittaus ei tue hypoteesia. Näin ei ole. Jos mittaus kumoaa hypoteesin, tutkija tietää jotakin, mitä hän ei aiemmin tiennyt. Epäonnistunut tutkimus on sellainen, josta ei voi päätellä mitään. Silloin muuttujia ei ole hallittu tai mittaukset ovat liian epävarmoja.</p>

@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 6c0403aa3ed115df
+CONTENT-HASH: f5b4bdd7b0b1cd9b
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] lesson.md Pysähdy answer for k: inline `\frac` chain should be `\tfrac`.
 
 ## Checked
-- Opened fy1-4-example-390-1 and -3 (stage 1 new Kysytään paragraph, stage 7); paragraphs read cleanly, nothing clipped.
+- batch delta review: opened fy1-4-stage-selita-390-2 and fy1-4-theory-1280-2 (Pysähdy block with x = 2…10 renders cleanly at both widths, aligned in the reading column); other blocks from source.

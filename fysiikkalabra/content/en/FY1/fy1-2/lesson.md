@@ -388,6 +388,12 @@ Physics describes the world with measurable properties called **quantities**: le
   <foreignObject x="373" y="255.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$\text{unit}$</div></foreignObject>
 </svg>
 
+```pysahdy
+A friend gives the length of a pencil as just the number 12. Why is this not a valid measurement result in physics?
+---
+A numerical value without a unit tells you nothing: 12 could mean centimetres, hours or kilograms.
+```
+
 ### The SI system
 So that a metre is the same metre everywhere in the world, the scientific community has agreed on a common system of units, the **SI system**. It has seven base quantities, and each has its own base unit. All other quantities are derived from them: speed is length divided by time, so its unit is $\text{m/s}$, and the unit of area is $\text{m}^2$.
 
@@ -475,6 +481,12 @@ The metre is good for measuring a room but not an atom or Neptune. That is why a
 
 When you move to a smaller unit, the numerical value grows: $4.2\,\text{km} = 4.2\cdot10^{3}\,\text{m} = 4200\,\text{m}$. When you move to a larger unit, the numerical value gets smaller. The quantity stays the same, only the way of writing it changes.
 
+```pysahdy
+How many millimetres is $2.5\,\text{m}$? Does the numerical value grow or shrink?
+---
+A millimetre is a smaller unit than a metre ($1\,\text{mm} = 10^{-3}\,\text{m}$), so the numerical value grows: $2.5\,\text{m} = 2500\,\text{mm}$.
+```
+
 ### A unit for every scale
 A unit is chosen so that the numerical value is easy to read. In the chapter *Physics as a science and the scales of the universe* you saw that the structures of matter and of the universe lie on steps of powers of ten. Each step has a convenient unit:
 
@@ -504,6 +516,12 @@ When you change a unit, the quantity does not change, only the way of writing it
 In the other direction $1\,\text{m} = 0.001\,\text{km}$, so $350\,\text{m} = 350\cdot0.001\,\text{km} = 0.35\,\text{km}$. Always check the result by reasoning: in a smaller unit the numerical value is greater, because more of the small units are needed. For area, the unit is a product of two lengths, so $$\begin{aligned} 1\,\text{km}^2 &= 1000\,\text{m}\cdot1000\,\text{m} \\ &= 10^{6}\,\text{m}^2 \end{aligned}$$.
 
 In astronomy the kilometre is too small a unit. The **astronomical unit** $\text{AU}$ is an agreed unit of length that is close to the mean distance between the Earth and the Sun: $$\begin{aligned} 1\,\text{AU} &= 149\,597\,870.7\,\text{km} \\ &\approx 1.496\cdot10^{8}\,\text{km} \end{aligned}$$. The light-year is also a unit of length, not of time: it is the distance light travels in a vacuum in a year, about $9.46\cdot10^{12}\,\text{km}$.
+
+```pysahdy
+Light from a star takes four years to reach the Earth. How far away is the star in light-years, and is a light-year a unit of time?
+---
+The star is four light-years away. A light-year is a unit of length: the distance light travels in a vacuum in one year.
+```
 
 A distance can also be given as the time light needs to travel it. Light travels in a vacuum at a constant speed $c$, so the distance it covers is speed times time, $s = ct$. The travel time is obtained by solving this formula for time:
 

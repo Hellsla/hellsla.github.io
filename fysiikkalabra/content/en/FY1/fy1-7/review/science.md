@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e550e957002f8c9e
+CONTENT-HASH: e052ca6a29b7d89e
 
 ## Blocking
 
 ## Polish
-None.
+
 
 ## Checked
-batch delta review: retrieval choice now V = a³ = (4,0·10⁻² m)³ = 6,4·10⁻⁵ m³, recomputed; distractors 64 (no conversion), 6,4·10⁻³ (area factor 10⁻⁴), 0,64 (length factor 10⁻²) each match their feedback; two significant figures from 4,0 cm; side 4,0 cm agrees with the lesson text; lesson-answers.py prints 6,4e-05.
+batch delta review: three new checks (tripled volume -> tripled mass, same density; 200 g vs 50 g of one substance -> same density, four times the volume; intercept 45 g = empty container mass, density = slope); recomputed, consistent with the theory.

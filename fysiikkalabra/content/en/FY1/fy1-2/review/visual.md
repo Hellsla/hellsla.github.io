@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: db3c0de40d1f1fa7
+CONTENT-HASH: e7465931349db26a
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: db3c0de40d1f1fa7
 - none
 
 ## Checked
-- batch delta review (en, fy1-2): changed recap task (powers of ten, units, colon division) read in full; layout judged from the unchanged stage-herata pattern (en fy1-1/fy1-6 herata-390 opened); no figure changed.
+batch delta review: contact sheets (page 2 of fy1-1, fy1-2, fy1-4, fy1-6; the added "Stop and think" boxes render as a tinted box with a closed Answer disclosure, readable at 390 px, maths rendered, no clipping, layout around them intact); other lessons judged from the diff plus the same shared component, the figures unchanged.

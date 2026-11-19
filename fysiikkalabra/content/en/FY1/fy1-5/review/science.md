@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e56a91a4c5ea9518
+CONTENT-HASH: 6f329e9d073562f2
 
 ## Blocking
 
 ## Polish
-- The prompt says "eri etäisyyksillä" / "at different distances" without naming from what; "etäisyys Maasta" (distance from Earth) would match the signal path. The slope is then 1/c, about 3,3 ns/m; not required at this level.
+- content/en/FY1/fy1-5/exit-ticket.json:8 — "distance travelled" could carry the lesson's symbol, $\Delta s$ ($3\,\text{m} \to 6\,\text{m}$), linking it to "only the distance $\Delta s$ is directly proportional to time" (lesson.md:319).
 
 ## Checked
-batch delta review: retrieval choice rewritten to signal travel time vs distance in (s,t); slope = Δt:Δs (time per unit distance, 1/c) is the one correct option; intercept and "length of the line" distractors wrong with correct feedback; consistent with the chapter on straight-line fitting.
+- Delta: round-2 blocking item fixed; exit-ticket item 2 now writes $s = s_0 + vt$, the lesson's symbols (lesson.md "Formula: Uniform motion").
+- Finnish exit-ticket.json:8 carries the same $s = s_0 + vt$ fix.
+- Recomputed: $4 + 3\cdot1 = 7\,\text{m}$, $4 + 3\cdot2 = 10\,\text{m}$, distance $3\,\text{m} \to 6\,\text{m}$; answer "No" correct.
+- Reasoning (position not proportional to time when $s_0 \neq 0$, distance is) matches lesson.md:319 and the inquiry's direct-proportionality misconception.
+- Item 1 unchanged (90 km/h, 20 min → 30 km).
+- Content hash unchanged at start and end.

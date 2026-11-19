@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c9fca46ff3b1933d
+CONTENT-HASH: db42d5950f2c3f51
 
 ## Blocking
 
 ## Polish
-- The prompt says "eri etäisyyksillä" / "at different distances" without naming from what; "etäisyys Maasta" (distance from Earth) would match the signal path. The slope is then 1/c, about 3,3 ns/m; not required at this level.
 
 ## Checked
-batch delta review: retrieval choice rewritten to signal travel time vs distance in (s,t); slope = Δt:Δs (time per unit distance, 1/c) is the one correct option; intercept and "length of the line" distractors wrong with correct feedback; consistent with the chapter on straight-line fitting.
+- delta review: exit-ticket.json item 2 answer now writes $s = s_0 + vt$ instead of $x = x_0 + vt$ (the earlier polish item, resolved).
+- Symbol now matches lesson.md and inquiry.json; no $x_0$ left in exit-ticket.json or lesson.md.
+- Numbers unchanged: 4 m + 3 m/s · 2 s = 10 m; answer "Ei ole" and the reason (alkupaikka ei ole nolla; matka 3 m → 6 m doubles) still correct.
+- Units and LaTeX of the changed line consistent.
+- Content hash the same at start and end.

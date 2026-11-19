@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 833965bdf6c81a22
+CONTENT-HASH: 6147fa631487e5da
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] none.
 
 ## Checked
-- batch delta review: opened fy1-2-stage-herata-390 (Pohdinta with the changed Kertaa item closed box); feedback text read in the diff; no clipping, math renders.
+- batch delta review: new Pysähdy ja mieti blocks judged from the rendering seen in sibling captures (fy1-3, fy1-4, fy1-6 at 390 and 1280 px) and the source; figures unchanged; maths, Finnish and layout fine.

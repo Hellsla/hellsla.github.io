@@ -220,10 +220,22 @@ In real data sets the data points do not usually lie exactly on one straight lin
 
 A good fit is close to all the points and does not lean towards any single point. There are roughly as many points on each side of the line, and the deviations above and below roughly cancel each other. The line does not have to pass through any point. If one point is clearly further from the line than the others, it is worth finding out why, and you do not drop the point automatically.
 
+```pysahdy
+Five of six data points lie close to a line, but one is clearly further away. Do you remove it from the fit straight away?
+---
+No. The point may reveal a measurement error or a new phenomenon, so you find out why before deciding to leave it out.
+```
+
 ### Linear model
 If the points lie roughly along a straight line, the relationship between the quantities is described by a linear model, whose equation is the equation of a straight line. The slope tells you how much the vertical quantity changes when the horizontal quantity increases by one unit, and the constant term tells you the value of the vertical quantity when the horizontal quantity is zero. A linear model is a physical model, a simplified description of a phenomenon based on measurements: the graph is its graphical model and the equation of the line its mathematical model, and because the equation gives numerical values, the model is quantitative.
 
 When the constant term is zero, the line passes through the origin and the quantities are directly proportional: doubling $x$ doubles $y$. The measurements support the model only in the range that was measured, so estimating a value between the measured points (interpolation) is justified. If the line is extended beyond the measured range (extrapolation), you assume that the relationship stays the same, and the result is only an estimate. If the points curve systematically around the line, for example the points at the ends are above the line and the points in the middle below it, the linear model does not fit.
+
+```pysahdy
+A voltage was measured for $x = 2\ldots 10$. Which result is more reliable, the one at $x = 6$ or the one at $x = 30$?
+---
+The one at $x = 6$. It lies within the measured range (interpolation). At $x = 30$ the line is extended beyond that range (extrapolation), so the result is only an estimate.
+```
 
 ## Formula: Equation of a straight line
 The graph of a linear model is a straight line with the equation
@@ -289,6 +301,12 @@ where $\Delta y$ is the change in $y$ between the points and $\Delta x$ the chan
 Two things affect the result. Read the points from the fitted line and not from the data points, and choose them far apart, so that the reading error has only a small effect on the slope. Read the constant term $b$ from the point where the line crosses the vertical axis, or calculate it from one point on the line: $b = y_1 - kx_1$. If you want $x$ when $y$ is known, solve the equation: $x = \tfrac{y - b}{k}$.
 
 The sign of the slope tells you the direction. With a positive slope the line rises, and with a negative slope it falls. The slope usually has a physical meaning: in a distance–time graph it is the speed, and in a mass–volume graph it is the density.
+
+```pysahdy
+The fitted line of a distance–time graph passes through the points $(2.0\,\text{s};\ 3.0\,\text{m})$ and $(6.0\,\text{s};\ 11.0\,\text{m})$. What is the slope, and what does it tell you?
+---
+$k = \frac{\Delta y}{\Delta x} = \frac{8.0\,\text{m}}{4.0\,\text{s}} = 2.0\,\text{m/s}$. In a distance–time graph the slope is the speed.
+```
 
 ## Worked example
 The temperature $T$ of the water in a kettle was measured every minute:

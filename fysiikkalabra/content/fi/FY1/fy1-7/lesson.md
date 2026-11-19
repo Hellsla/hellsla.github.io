@@ -152,6 +152,12 @@ Ero syntyy siitä, kuinka tiiviisti ainetta on tilavuuden sisällä. Tätä kuva
 
 Kun mitataan saman aineen erikokoisia paloja, havaitaan säännönmukaisuus: kaksinkertainen tilavuus antaa kaksinkertaisen massan, ja puolet tilavuudesta antaa puolet massasta. Massa on siis **suoraan verrannollinen** tilavuuteen, eli suhde $m : V$ pysyy samana. Tuo vakio suhde on aineen tiheys.
 
+```pysahdy
+Samasta aineesta tehdyn kappaleen tilavuus kolminkertaistuu. Mitä tapahtuu kappaleen massalle ja aineen tiheydelle?
+---
+Massa kolminkertaistuu, mutta tiheys pysyy samana, koska suhde $m : V$ ei muutu.
+```
+
 Jos mittaustulokset piirretään koordinaatistoon, jossa vaaka-akselilla on tilavuus ja pystyakselilla massa, pisteet asettuvat mittausepävarmuuden rajoissa origon kautta kulkevalle suoralle (luku *Graafinen esitys ja suoran sovittaminen*). Suoran kulmakerroin on tiheys.
 
 ### Tiheys kertoo, mistä aineesta on kyse
@@ -159,6 +165,12 @@ Jos mittaustulokset piirretään koordinaatistoon, jossa vaaka-akselilla on tila
 Jokaisella puhtaalla aineella on tietyssä olomuodossa, lämpötilassa ja paineessa oma tiheytensä, joten tiheys on kuin aineen sormenjälki: kun kappaleen massa ja tilavuus on mitattu, laskettua tiheyttä voidaan verrata taulukkoarvoihin. Päättely ei ole varma. Mittaustuloksissa on aina epävarmuutta (luku *Mittaaminen ja mittauksen luotettavuus*), ja joillakin aineilla on lähes sama tiheys, joten tulos kertoo vain, mitä aineita kappale voi olla.
 
 <figure class="unit-photo"><img src="pics/fy1/blue-iceberg.webp" alt="Vaaleansininen, omituisen muotoinen jäävuori kelluu harmaalla vedellä puolipilvisen taivaan alla."><figcaption>Jäävuori jäätikköjärvellä Islannissa. Jää kelluu vedessä, koska sen tiheys on pienempi kuin veden.</figcaption></figure>
+
+```pysahdy
+Kaksi kappaletta on tehty samasta aineesta. Toisen massa on $200\,\text{g}$ ja toisen $50\,\text{g}$. Mitä voit sanoa niiden tiheydestä ja tilavuudesta?
+---
+Tiheys on sama. Raskaamman kappaleen tilavuus on nelinkertainen, koska massa on suoraan verrannollinen tilavuuteen.
+```
 
 ## Kaava: Tiheys
 
@@ -322,6 +334,12 @@ Mittalasin lukemassa on epävarmuutta, esimerkiksi siitä, että asteikko luetaa
 ### Astian massa mittauksessa
 
 Jos nestettä mitataan astiassa ja vaaka näyttää astian ja nesteen yhteismassan, mittauspisteisiin sovitettu suora ei kulje origon kautta: tyhjänkin astian massa $m_0$ on mukana. Kokonaismassa noudattaa lineaarista mallia $m_\text{yht} = \rho V + m_0$. Tiheys on silti suoran kulmakerroin, ja vakiotermi $m_0$ on suoran ja pystyakselin leikkauskohta eli tyhjän astian massa. Kokonaismassa ei ole suoraan verrannollinen tilavuuteen, mutta nesteen oma massa on.
+
+```pysahdy
+Mittaat nestettä astiassa ja piirrät kokonaismassan tilavuuden funktiona. Suora leikkaa pystyakselin kohdassa $45\,\text{g}$. Mitä tämä luku kertoo?
+---
+Se on tyhjän astian massa $m_0$. Nesteen tiheys saadaan suoran kulmakertoimesta.
+```
 
 ## Esimerkki
 

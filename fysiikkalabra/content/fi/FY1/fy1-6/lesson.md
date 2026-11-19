@@ -519,6 +519,12 @@ Kun kappale päästetään putoamaan levosta, sen nopeus kasvaa. **Vapaa pudotus
 
 Nopeuden muutosta aikayksikköä kohti kutsutaan **kiihtyvyydeksi**. Vapaasti putoavan kappaleen kiihtyvyys on **putoamiskiihtyvyys** $g = 9{,}81\,\text{m/s}^2$. Yksikkö $\text{m/s}^2$ luetaan "metriä sekunnissa toiseen" eli "metriä sekunnissa sekunnissa": nopeus mitataan yksiköllä $\text{m/s}$, ja se muuttuu joka sekunti tämän verran. Luku $g$ ei siis ole nopeus vaan nopeuden kasvunopeus.
 
+```pysahdy
+Kappale putoaa vapaasti levosta, ja sen nopeus on kolmen sekunnin kuluttua $29{,}4\,\text{m/s}$. Mikä on nopeus neljän sekunnin kuluttua?
+---
+Nopeus kasvaa joka sekunti $9{,}81\,\text{m/s}$, joten se on noin $39{,}2\,\text{m/s}$.
+```
+
 ### Massa ei vaikuta putoamiseen
 Kun ilmanvastusta ei ole, kaikki kappaleet putoavat samalla kiihtyvyydellä riippumatta massastaan. Tyhjiössä vasara ja höyhen putoavat yhtä nopeasti, ja kuulalla, jonka massa on $5\,\text{kg}$, on joka hetki sama nopeus kuin kuulalla, jonka massa on $1\,\text{kg}$. Syy selitetään myöhemmin voimien yhteydessä. Tässä luvussa se otetaan koetulokseksi, jonka tutkit itse.
 
@@ -573,6 +579,12 @@ Kun ilmanvastusta ei ole, kaikki kappaleet putoavat samalla kiihtyvyydellä riip
 </svg>
 
 Ilmassa tilanne on toinen. Ilma hidastaa kevyttä ja leveää kappaletta, kuten höyhentä tai paperiarkkia, selvästi enemmän kuin pientä ja tiheää kappaletta, kuten kiveä tai teräskuulaa. Siksi kotona höyhen putoaa hitaammin kuin vasara. Eron aiheuttaa ilma, ei massa sellaisenaan.
+
+```pysahdy
+Vapaassa pudotuksessa kaikilla kappaleilla on sama $g$. Miksi höyhen kuitenkin putoaa kotona hitaammin kuin vasara?
+---
+Ilma hidastaa kevyttä ja leveää kappaletta enemmän kuin pientä ja tiheää. Eron aiheuttaa ilma, ei massa sellaisenaan.
+```
 
 ## Kaava: Vapaan pudotuksen nopeus
 Kiihtyvyys kertoo, kuinka nopeasti nopeus muuttuu: se on nopeuden muutos jaettuna aikavälillä, jossa muutos tapahtuu. Kun kiihtyvyys on vakio, nopeuden muutos on kiihtyvyys kertaa aikaväli:
@@ -638,6 +650,12 @@ missä $v$ on nopeus alaspäin ($\text{m/s}$), $g = 9{,}81\,\text{m/s}^2$ putoam
 </svg>
 
 Putoavan kappaleen $(t, v)$-kuvaaja on siis origon kautta kulkeva nouseva suora. Sen kulmakerroin $\tfrac{\Delta v}{\Delta t}$ on putoamiskiihtyvyys, joten $g$ saadaan kuvaajasta lukemalla siltä kaksi kaukana toisistaan olevaa pistettä. Koska kiihtyvyys on vakio, mille tahansa aikavälille pätee $\Delta v = g\,\Delta t$: alaspäin liikkuvan kappaleen nopeus kasvaa sekunnissa $9{,}81\,\text{m/s}$ myös silloin, kun kappale ei lähtenyt levosta.
+
+```pysahdy
+Alaspäin liikkuvan kappaleen nopeus on jollakin hetkellä $5{,}0\,\text{m/s}$. Mikä on nopeus $2{,}0\,\text{s}$ myöhemmin, kun ilmanvastusta ei ole?
+---
+Kiihtyvyys on vakio, joten $\Delta v = g\,\Delta t \approx 19{,}6\,\text{m/s}$ ja nopeus on noin $25\,\text{m/s}$. Kappaleen ei tarvitse lähteä levosta.
+```
 
 <figure class="unit-photo"><img src="pics/fy1/bouncing-ball-strobe.webp" alt="Mustalla taustalla pomppivan keltaisen pallon kuvat kahtena kaarena. Kaarien alaosissa pallon kuvat ovat kauempana toisistaan kuin huipulla."><figcaption>Pomppiva pallo on kuvattu yhtä pitkin aikavälein. Pudotessaan pallo kiihtyy, joten peräkkäisten kuvien välit kasvavat.</figcaption></figure>
 
