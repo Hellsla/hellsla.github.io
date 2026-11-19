@@ -28,7 +28,7 @@
       "choices": [
         {
           "text": "$Q_2 = 1080\\,\\text{MJ}$",
-          "feedback": "Laskit lämmöt yhteen: $Q_1 + W$. Koneesta ulos tuleva energia ei voi olla suurempi kuin sinne tullut. Energian säilymisestä saadaan $Q_1 = W + Q_2$. Siis $Q_2 = Q_1 - W = 800\\,\\text{MJ} - 280\\,\\text{MJ} = 520\\,\\text{MJ}$."
+          "feedback": "Laskit lämmöt yhteen: $Q_1 + W$. Koneesta ulos tuleva energia ei voi olla suurempi kuin sinne tullut. Energian säilymisestä saadaan $Q_1 = W + Q_2$. Siis $$\n\\begin{aligned}\nQ_2 &= Q_1 - W \\\\\n&= 800\\,\\text{MJ} - 280\\,\\text{MJ} \\\\\n&= 520\\,\\text{MJ}\n\\end{aligned}\n$$."
         },
         {
           "text": "$Q_2 = 520\\,\\text{MJ}$",
