@@ -156,7 +156,7 @@ def check_worker(out):
         bad.append("sw.js still has its build placeholder")
     if not (out / "offline.js").is_file():
         bad.append("offline.js is missing at the root")
-    langs = [out] + [d for d in out.iterdir() if d.is_dir() and (d / "index.html").is_file() and d.name not in ("vendor", "sims", "pics", "brand", "laskuri", "tyokalut")]
+    langs = [out] + [d for d in out.iterdir() if d.is_dir() and (d / "index.html").is_file() and d.name not in ("vendor", "sims", "pics", "brand", "laskuri", "prosessi", "tyokalut")]
     for d in langs:                      # the manifest of each language (17a PR 2): start page and icons exist
         m = d / "manifest.webmanifest"
         try:

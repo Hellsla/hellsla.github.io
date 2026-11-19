@@ -62,6 +62,8 @@ if (ROOT / "assets/shared/ahjo/aloitus").is_dir():             # Ahjo's starter 
     shutil.copytree(ROOT / "assets/shared/ahjo/aloitus", SITE / "ahjo-aloitus", dirs_exist_ok=True)
 if (ROOT / "assets/shared/laskuri").is_dir():                 # the school's standalone countdown page, ruukkilab.fi/laskuri (teacher 2026-11-10)
     shutil.copytree(ROOT / "assets/shared/laskuri", SITE / "laskuri", dirs_exist_ok=True)
+if (ROOT / "assets/shared/prosessi").is_dir():                # the process page, ruukkilab.fi/prosessi (teacher 2026-11-19, work queue 23); no link from other pages
+    shutil.copytree(ROOT / "assets/shared/prosessi", SITE / "prosessi", dirs_exist_ok=True)
 if (ROOT / "assets/shared/brand").is_dir():                   # the Ruukkilabra logos and favicon (scripts/brand_logos.py); test copies may leave them out
     shutil.copytree(ROOT / "assets/shared/brand", SITE / "brand", dirs_exist_ok=True)
 if (ROOT / "assets/units").is_dir():                          # the local courses' unit components (scripts/units.py)
