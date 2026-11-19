@@ -1,6 +1,6 @@
 ok   lint
 ok   latex
-FAIL i18n
+ok   i18n (en 0 error(s); fi-easy 0 error(s))
 ok   build
 ok   inquiry (55 passed, 0 failed)
 ok   answer positions
@@ -9,4 +9,4 @@ ok   layout 390 px
 ok   layout 768 px
 ok   layout 1280 px
 browser for the layout: mcr.microsoft.com/playwright/python:v1.65.0-noble
-fy2-7: reviewed (science=PASS, pedagogy=PASS, visual=PASS); exercises: draft (science=stale, pedagogy=stale, visual=stale)
+fy2-7: draft (science=stale, pedagogy=stale, visual=stale); exercises: draft (science=stale, pedagogy=stale, visual=stale)
