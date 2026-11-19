@@ -1,8 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 42f2aff774125b61
+CONTENT-HASH: cecd453e60ccc521
 ## Blocking
+(none)
+
 ## Polish
-- The first distractor ("the sand contains heat") and its feedback ("an object does not have heat") touch the same misconception as the wrong option in Ennusta 1 ("sand stores a lot of heat"). The student who meets the correction here is half-answered before predicting. Choose a different slip for the recap, for example the sign or the direction of the transfer.
-- The correct option and the hook ask different things (ΔU = Q versus what decides the temperature rise); the recap does not point at the question "how much?", so end the feedback with one sentence that opens it.
+(none)
+
 ## Checked
-batch delta review: herata recap moved to sand in the Sun, the same sand as in Ennusta 1; clear and in good language; it does not reveal the answers of Ennusta 1 or 2 (no c, no ΔT); the figure and md-paragraph changes are presentation only.
+- Summary bullet now reads "Q = cm\Delta T when the state of matter does not change": correct for FY3 (the lesson separates heating from phase change, which fy3-7 treats), it prepares the student for the latent-heat lesson, adds no new concept or symbol and does not disclose any inquiry answer. Hash unchanged at end of review.

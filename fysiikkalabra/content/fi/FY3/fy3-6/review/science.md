@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 04842bd55c702318
+CONTENT-HASH: 434b0afa5f8f9b51
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: the new retrieval choice `kertaus` (sun on the sand, no work) has exactly one correct option: heat raises the internal energy by the same amount, ΔU = Q. This agrees with the first law in the chapter *Sisäenergia, lämpömäärä ja energian säilyminen*. Each distractor is really wrong, and its feedback says why: "hiekassa on lämpöä" (a body has internal energy, not heat), "lämpötila nousee ensin" (the transferred energy raises the internal energy and so the temperature), and "sisäenergia pysyy samana koska energia säilyy" (conservation does not hold one body's energy fixed). Counting absorbed sunlight as heat suits the level (C). The choice fits the hook's beach. It does not reveal Ennuste 1 (water against sand, specific heat) or Ennuste 2 (the mixing temperature below 55 °C), because it holds no c, mass or temperatures. The lesson.md changes are approved figures and presentation only.
+- Diff: the summary bullet now reads "Q = c m ΔT, kun olomuoto ei muutu". This is the condition the formula section and the guardrail require (Q = cmΔT holds only while the state does not change; melting, boiling and freezing need s or r).
+- It agrees with the rest of the lesson and with the Periaate texts of the exercise set; it adds no number or symbol and creates no contradiction with the mixing-temperature bullet (no change of state there either).
+- Rest of the lesson unchanged since my PASS; hash same at start and end.

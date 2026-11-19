@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 04d69d93df57f5dd
+CONTENT-HASH: 99eb4d66484055c9
 Mode: delta
 Round: 1
 
@@ -10,9 +10,8 @@ None.
 None.
 
 ## Checked
-- Diff: exercises/solutions.md, paragraph breaks only, words unchanged. No 360 px captures exist; judged at 390 px in the lesson captures and at 1280 px.
-- 1280 px with solutions open: fy3-7-open-exercises-1280-3.png (task 8-3 solution: Muunnokset paragraph, Sijoitus rows, Vastaus, Järkevyys blocks; no overflow), fy3-7-open-tarkista-1280-1.png (open Vastaus and feedback).
-- 390 px: fy3-7-example-390-2.png, fy3-7-stage-sovella-390-2.png (shared solution layout holds, no clipping).
+- Delta: changed task texts (prefix "Esimerkkiaineisto:" removed, each text now opens with a capital); read in the diff. Layout judged from the shared open-exercise rendering (fy3-4 and fy3-13 L3 captures opened; same component).
+- Wording only: the new openings read naturally; maths and units unchanged and in LaTeX.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

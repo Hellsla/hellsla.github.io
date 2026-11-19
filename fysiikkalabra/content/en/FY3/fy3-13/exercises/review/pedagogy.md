@@ -1,13 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: b7e48a8781d7529c
-
+CONTENT-HASH: dfd1516d90e6637f
 ## Blocking
-None.
+(none)
 
 ## Polish
-1. L2-09 solution: state the slope (0.275 kPa/°C) and result (about -273 °C) in the reading step so the 5 % tolerance is checkable.
+(none)
 
 ## Checked
-- Round 2 delta judged in context (round-1 findings addressed).
-- Only solution wording changed: L2-09 now says the axis does not reach zero pressure, so the zero point is calculated from the slope, tolerance 5 %; L2-10 'lähes suoralla' matches the data (not exactly collinear). The figure shows five points, description lists them and does not give the answer.
-- Axis ends at -150 °C, so extrapolation by calculation is really needed; consistent with the lab goal (absolute zero by extrapolation).
+- Delta: the prefix "Example data:" removed from task texts; each task still opens with the situation and ends with its question, no number or symbol changed, the first word is capitalised and the sentence reads whole. The tasks are not touched otherwise. Hash unchanged at end of review.
