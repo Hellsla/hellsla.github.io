@@ -251,12 +251,24 @@ The turning effect is decided by the **line of action** of the force, the straig
   <foreignObject x="319" y="264.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{line of action}$</div></foreignObject>
 </svg>
 
+```pysahdy
+A spanner is pulled obliquely to its handle. Is the lever arm then as long as the distance from the gripping point to the axis?
+---
+No. The lever arm is the perpendicular distance to the line of action, so for an oblique pull it is shorter than the distance to the gripping point.
+```
+
 ## Formula: Moment of a force
 The moment of a force about the axis of rotation is the product of the magnitude of the force and its lever arm:
 ```kaavat
 moment of a force :: M = F r
 ```
 where $M$ is the moment of the force ($\text{Nm}$), $F$ the magnitude of the force ($\text{N}$) and $r$ the lever arm of the force, that is the perpendicular distance from the axis of rotation to the line of action ($\text{m}$). The unit of moment is the newton metre $\text{Nm}$. It is not the same thing as the unit of energy, the joule, even though both are a product of a newton and a metre: in a moment the distance is perpendicular to the force, in work it is a displacement in the direction of the force.
+
+```pysahdy
+A force of $30\,\text{N}$ pulls perpendicular to a spanner handle at a distance of $0.40\,\text{m}$ from the centre of the nut. What is the moment of the force?
+---
+The force is perpendicular, so the lever arm is $0.40\,\text{m}$. The moment is $30\,\text{N}\cdot 0.40\,\text{m} = 12\,\text{Nm}$.
+```
 
 ### Direction of rotation and sign
 In addition to its magnitude, a moment has a direction of rotation. In this book a moment that rotates anticlockwise is positive and a moment that rotates clockwise is negative. When several forces act on a body, their moments are added together with their signs. The result is the **net moment**:
@@ -289,6 +301,12 @@ where $\Sigma M$ is the net moment ($\text{Nm}$) and $M_1$, $M_2$, … are the m
   <foreignObject x="366" y="275.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$M < 0$</div></foreignObject>
   <foreignObject x="334" y="185.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$O$</div></foreignObject>
 </svg>
+
+```pysahdy
+The moments $+8\,\text{Nm}$ and $-5\,\text{Nm}$ act on a disc at rest that can rotate about its axis. Which way does the disc start to turn, and why?
+---
+The net moment is $+3\,\text{Nm}$. It is positive, so the disc starts to turn anticlockwise.
+```
 
 ### The lever arm of an oblique force
 Often the distance $d$ of the point of application from the axis of rotation is known, together with the angle $\alpha$ that the force makes with the line from the axis to the point of application (for example, the extension of the handle of the spanner). The axis, the point of application and the foot of the lever arm form a right-angled triangle whose hypotenuse is $d$. The lever arm is the side opposite the angle $\alpha$:

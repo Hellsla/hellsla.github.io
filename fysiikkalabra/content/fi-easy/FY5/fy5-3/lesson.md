@@ -161,6 +161,12 @@ Nopeus on vektori $\overline{v}$. Vektorilla on suuruus ja suunta. Nopeus osoitt
   <foreignObject x="380" y="207.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\overline{v}_1 \neq \overline{v}_2$</div></foreignObject>
 </svg>
 
+```pysahdy
+Kappale kiertää ympyrää vastapäivään. Se on juuri radan ylimmässä kohdassa. Mihin suuntaan nopeus osoittaa?
+---
+Vasemmalle. Nopeus osoittaa radan tangentin suuntaan. Tangentti on kohtisuorassa pystysuoraa sädettä vastaan. Siksi nopeus on vaakasuora ja osoittaa kiertosuuntaan.
+```
+
 ### Kun naru katkeaa
 Naruun sidottu kiekko kiertää jäällä tappia. Naru vetää kiekkoa kohti tappia. Se kääntää kiekon liikkeen suuntaa koko ajan. Oletetaan, että naru katkeaa. Silloin kiekkoon ei enää vaikuta vaakasuunnassa voimaa. Jään kitka on pieni. Pystysuorat voimat ovat paino ja jään tukivoima, ja ne kumoavat toisensa. Newtonin ensimmäisen lain mukaan kiekko jatkaa silloin tasaista suoraviivaista liikettä. Sen nopeus on sama kuin katkeamishetkellä. Kiekko lähtee siis radan tangentin suuntaan. Se ei lähde suoraan poispäin tapista. Samoin pyörivän sateenvarjon reunasta irtoavat vesipisarat lähtevät tangentin suuntaan.
 
@@ -230,6 +236,12 @@ Nopeuden muutoksen $\Delta\overline{v}$ näkee, kun piirtää kaksi peräkkäist
   <foreignObject x="366" y="297.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\overline{v}_2 = \overline{v}_1 + \Delta\overline{v}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Kappale kiertää ympyrää tasaisella vauhdilla. Onko sen kiihtyvyys nolla?
+---
+Ei ole. Vauhti pysyy samana, mutta nopeuden suunta muuttuu koko ajan. Silloin nopeus muuttuu, ja kappale kiihtyy.
+```
+
 ## Kaava: Ratanopeus
 Tasaista ympyräliikettä kuvaa **kierrosaika** $T$. Se on aika, jossa kappale kiertää radan kerran. Kierrosajan käänteisluku on **pyörimistaajuus** $f$. Se kertoo, kuinka monta kierrosta kappale tekee aikayksikössä:
 ```kaavat
@@ -275,6 +287,12 @@ Kaavasta näkyy alun kysymyksen vastaus. Karusellin kaikki kohdat tekevät kierr
   <foreignObject x="440" y="161.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s_\text{B} = 2\,s_\text{A}$</div></foreignObject>
   <foreignObject x="440" y="217.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v_\text{B} = 2\,v_\text{A}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Kappale kiertää ympyrää. Säde on $2{,}0\,\text{m}$ ja yksi kierros kestää $4{,}0\,\text{s}$. Mikä on ratanopeus?
+---
+Ratanopeus on $v = \tfrac{2\pi r}{T}$. Lasketaan: $\tfrac{2\pi \cdot 2{,}0\,\text{m}}{4{,}0\,\text{s}} \approx 3{,}1\,\text{m/s}$.
+```
 
 ## Esimerkki
 Pesukoneen rummun halkaisija on $46\,\text{cm}$. Linkouksessa rumpu pyörii $1200$ kierrosta minuutissa. Kuinka suuri on rummun seinää vasten painuneen sukan ratanopeus?
