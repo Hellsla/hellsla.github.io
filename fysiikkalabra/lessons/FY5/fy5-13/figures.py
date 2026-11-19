@@ -16,14 +16,27 @@ def poly(f, pts, color, w=3, dash=None, extra=""):
     return f.add(f'<polyline points="{p}" fill="none" stroke="{color}" stroke-width="{w:g}" stroke-linejoin="round" stroke-linecap="round"{d}{(" " + extra) if extra else ""}/>')
 
 
-def lens(f, x0, x1, yc, amp, shape, steps=160, fill=WATER_LIGHT, line=WAVE, dashed_other=True):
+def lens(f, x0, x1, yc, amp, shape, steps=160, fill=WATER_LIGHT, line=WAVE, dashed_other=True, animated=False):
     """The swing of a standing wave between its two extreme shapes: light fill between +env and −env, one extreme
     solid, the other dashed. shape(u) for u in [0, 1] gives the signed shape (−1 … 1)."""
     up = [(x0 + (x1 - x0) * i / steps, yc - amp * shape(i / steps)) for i in range(steps + 1)]
     dn = [(x, 2 * yc - y) for x, y in up]
     f.add(f'<polygon points="{" ".join(f"{n(x)},{n(y)}" for x, y in up + dn[::-1])}" fill="{fill}" fill-opacity="0.55"/>')
-    poly(f, up, line, 3)
+    if not animated: poly(f, up, line, 3)           # animated: the solid curve is the swinging one the caller draws on top
     if dashed_other: poly(f, dn, line, 2, "7 6")
+
+
+SWING = 3.0     # seconds per wave period in the animations (work queue 8f)
+
+
+def swing(f, d, yc, scale0, factor, color, w, name):
+    """A curve drawn as the unit shape d scaled in y about the line y = yc, and scaled by factor(s) in the animation, s the
+    fraction of a period (an absolute CSS transform, so the factor may be 0 at the still, like the sum at t = T/4). Still:
+    the same curve as without animation. Lesson-local; figlib's primitives only translate and turn."""
+    kf = "".join(f"{round(i / 48 * 100, 3):g}%{{transform:scaleY({factor(i / 48):.4f})}}" for i in range(49))
+    f._kf.append(f"@keyframes {name}{{{kf}}}")
+    f.add(f'<path d="{d}" fill="none" stroke="{color}" stroke-width="{w:g}" stroke-linejoin="round" vector-effect="non-scaling-stroke" class="fa-k" '
+          f'style="transform:scaleY({scale0:.4f});--fa-n:{name};--fa-t:{SWING:g}s;--fa-d:0s;transform-origin:0px {n(yc)}px;transform-box:view-box"/>')
 
 
 def clamp(f, x, yc, side):
@@ -43,7 +56,7 @@ def superposition():
             "amplitudi ja aallonpituus. Sininen yhtenäinen viiva on niiden summa eli narun todellinen muoto. Ylimmällä "
             "hetkellä tuleva ja heijastunut aalto ovat päällekkäin ja summa on suurimmillaan, keskimmäisellä pienempi ja alimmalla nolla, kun aallot kumoavat toisensa. "
             "Mustat pisteet merkitsevät kohtia, joissa summa on joka hetkellä nolla: ne ovat puolen aallonpituuden välein, "
-            "ja yksi niistä on seinän kohdalla.")
+            "ja yksi niistä on seinän kohdalla.", anim=True)
     x0, x1 = 112, 540
     lam = (x1 - x0) / 2
     amp = 22
@@ -60,11 +73,20 @@ def superposition():
         for k in range(5): f.line(x1 + 6, yc - 34 + 16 * k, x1 + 16, yc - 26 + 16 * k, GRAIN, 1.5)
         k = 2 * math.pi / lam
         pts = lambda fn: [(x0 + (x1 - x0) * i / 200, yc - fn((x1 - (x0 + (x1 - x0) * i / 200)))) for i in range(201)]
-        poly(f, pts(lambda s: amp * math.sin(wt + k * s)), INC, 2.5, "8 6")
-        poly(f, pts(lambda s: -amp * math.sin(wt - k * s)), REF, 3, "2 5")
-        poly(f, pts(lambda s: 2 * amp * math.cos(wt) * math.sin(k * s)), WAVE, 3.5)
+        win = (x0 - 4, yc - 2 * amp - 6, x1 - x0 + 8, 4 * amp + 12)
+        def run(fn, lo, hi, dx):                                       # the curve fn(s) for x in [lo, hi], moving dx per period
+            q = [(lo + (hi - lo) * i / 240, yc - fn(x1 - (lo + (hi - lo) * i / 240))) for i in range(241)]
+            return q
+        ph = lambda t: wt + 2 * math.pi * t                            # the phase after the fraction t of a period
+        f.travel(lam, SWING, clip=win)                                 # the wave towards the wall (orange) moves right
+        poly(f, run(lambda s: amp * math.sin(wt + k * s), x0 - lam, x1, lam), INC, 2.5, "8 6"); f.end()
+        f.travel(-lam, SWING, clip=win)                                # the reflected wave (violet) moves left
+        poly(f, run(lambda s: -amp * math.sin(wt - k * s), x0, x1 + lam, -lam), REF, 3, "2 5"); f.end()
+        d = "M" + " L".join(f"{n(x0 + (x1 - x0) * i / 200)},{n(yc - 2 * amp * math.sin(k * (x1 - (x0 + (x1 - x0) * i / 200))))}" for i in range(201))
+        swing(f, d, yc, math.cos(wt), lambda t: math.cos(ph(t)), WAVE, 3.5, f"fa-fy513-sup-{yc}")   # the sum swings in place
         for m in range(5): f.circle(x1 - m * lam / 2, yc, 5.5, INK, WHITE, 1.5)
-        f.tex(16, yc, lab, "start")
+        f.motion([(0, 0, 0, 0, 0), (1, 0, 0, 0, 0)], SWING)             # the row's time label is wrong while it plays
+        f.tex(16, yc, lab, "start"); f.end()
     for m in range(5): f.tex(x1 - m * lam / 2, 364, r"\text{S}", "middle")
     return f.svg()
 
@@ -74,11 +96,13 @@ def nodes():
             "hetkellä ja sininen katkoviiva puolen jaksonajan päästä; vaalea alue niiden välissä on alue, jossa naru liikkuu. "
             "Mustat pisteet S ovat solmuja, joissa naru ei liiku. Niiden puolivälissä ovat kuvut K, joissa liike on "
             "suurin. Kahden vierekkäisen solmun etäisyys on merkitty puoleksi aallonpituudeksi ja solmun etäisyys "
-            "viereisestä kuvusta neljännekseksi aallonpituudesta.")
+            "viereisestä kuvusta neljännekseksi aallonpituudesta.", anim=True)
     x0, x1, yc, amp = 60, 540, 160, 66
     lam = (x1 - x0) / 2
     f.line(x0 - 20, yc, x1 + 20, yc, RULE, 1.5, "4 5")
-    lens(f, x0, x1, yc, amp, lambda u: math.sin(2 * math.pi * u * 2))
+    lens(f, x0, x1, yc, amp, lambda u: math.sin(2 * math.pi * u * 2), animated=True)
+    d = "M" + " L".join(f"{n(x0 + (x1 - x0) * i / 160)},{n(yc - amp * math.sin(2 * math.pi * 2 * i / 160))}" for i in range(161))
+    swing(f, d, yc, 1.0, lambda t: math.cos(2 * math.pi * t), WAVE, 3, "fa-fy513-nodes")        # the string swings between the two extremes
     for m in range(5):
         x = x0 + m * lam / 2
         f.circle(x, yc, 6, INK, WHITE, 2)

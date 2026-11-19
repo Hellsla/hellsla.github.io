@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 514563bbc45f9e15
-ROUND: 1 (delta: md-paragraphs / typography in solutions.md; en)
+CONTENT-HASH: b9c26731e5db9e1f
+ROUND: 2 (delta: L2-02 wording, en)
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Own reading of review/shots in content/en/FY5/fy5-13/review/shots (newer than solutions.md): open-exercises captures at 1280 px (levels 1, 2, 3, sampled across the changed solutions; this set's sample: fy5-13 L1-6, L2-6, L3-4; fy5-14 L2-5; fy5-15 L2-8; fy5-16 L2-6; fy5-17 L2-9).
-- Split Principle and Reasonableness paragraphs read as separate blocks inside the solution card, each on its own, spacing even, no empty gaps, no clipped formulas, calculation rows aligned, no KaTeX errors seen.
-- Wording unchanged by the diff (paragraph cuts only); no figures changed.
+- Delta: exercises.json and solutions.md, task 13-11 (L2-02): added sentence "The end correction of the tube is ignored." in the task and the solution principle; reasonableness rewritten.
+- Opened open-exercises-L2-1280-2 and -3: task text, solution rows, and the reworked reasonableness block render cleanly, KaTeX intact, nothing clipped, neighbouring tasks unaffected.
+- The reasonableness sentence is clear and consistent with the task.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

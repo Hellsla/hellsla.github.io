@@ -1,6 +1,12 @@
 """Figures of this lesson (scripts/figlib.py); `python scripts/figures.py fy3-3` writes them into lesson.md."""
-from figlib import (Fig, Axes, INK, MUTED, WHITE, RULE, GLASS, COLD, HOT, HEAT, WATER, ALUMINIUM, METAL_EDGE, IRON, fi)
+from figlib import (Fig, Axes, INK, MUTED, WHITE, RULE, GLASS, COLD, HOT, HEAT, WATER, ALUMINIUM, METAL_EDGE, IRON, fi, bounce_speed)
 import herolib as H
+
+
+def fade(f, T):
+    """Animated (work queue 8f): what belongs to the still's one moment (the velocity arrows) is gone while the
+    particles run, and back at the loop's end; the still is unchanged."""
+    return f.motion([(0, 0, 0, 0, 1), (0.03, 0, 0, 0, 0), (0.97, 0, 0, 0, 0), (1, 0, 0, 0, 1)], T)
 
 
 def system():
@@ -49,7 +55,8 @@ def system():
 def micro_model():
     f = Fig("fy33-micro", 300, "Kaaviokuva kaasun mikromallista: kaksi samankokoista suljettua astiaa, joissa on yhtä monta "
             "hiukkasta. Kylmässä kaasussa nopeutta kuvaavat nuolet ovat lyhyitä, kuumassa pitkiä, ja kuuman kaasun paine "
-            "p2 on suurempi kuin kylmän kaasun paine p1.")
+            "p2 on suurempi kuin kylmän kaasun paine p1.", anim=True)
+    T = 8.0
     cold = [(95, 105, 111, 121), (210, 100, 191, 111), (155, 155, 177, 155), (85, 190, 101, 174), (215, 200, 194, 192),
             (140, 215, 162, 219)]
     hot = [(385, 105, 416, 136), (500, 100, 462, 122), (445, 155, 489, 155), (375, 190, 406, 159), (505, 200, 464, 185),
@@ -57,10 +64,20 @@ def micro_model():
     for x, title in ((40, r"\text{kylmä kaasu}"), (330, r"\text{kuuma kaasu}")):
         f.tex(x + 115, 40, title, "middle")
         f.rect(x, 62, 230, 180, GLASS, INK, 3, 6)
-    for pts, col in ((cold, COLD), (hot, HOT)):
-        for x, y, x2, y2 in pts:
+    # animated (work queue 8f): same walls, same number of particles; the hot one runs faster
+    # (k = bounces over the room in T: cold 1 or 2, hot 2 or 3), so the hits on the wall are more frequent
+    kc = [(1, 1), (1, 2), (2, 1), (1, 1), (2, 1), (1, 2)]
+    kh = [(2, 2), (2, 3), (3, 2), (2, 2), (3, 2), (2, 3)]
+    sg = [(1, 1), (-1, 1), (1, -1), (-1, -1), (-1, 1), (1, -1)]
+    for (pts, col, ks, x0) in ((cold, COLD, kc, 40), (hot, HOT, kh, 330)):
+        box = (x0, 62, x0 + 230, 242)
+        for (x, y, x2, y2), (kx, ky), (sx, sy) in zip(pts, ks, sg):
+            fade(f, T)
             f.arrow(x, y, x2, y2, INK, 2.5, 10)
+            f.end()
+            f.drift(x, y, box, sx * bounce_speed(230, T, kx, 7), sy * bounce_speed(180, T, ky, 7), T, 7)
             f.circle(x, y, 7, col, WHITE, 1.5)
+            f.end()
     f.tex(155, 272, "p_1", "middle")
     f.tex(445, 272, r"p_2 \gt p_1", "middle", w=130)
     return f.svg()

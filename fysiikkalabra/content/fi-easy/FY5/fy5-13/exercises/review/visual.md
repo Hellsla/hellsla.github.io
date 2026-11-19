@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 6d85201359144229
-ROUND: 1
+CONTENT-HASH: 9bdcb25618c858ae
+ROUND: 2
 
 ## Blocking
 (none)
 
 ## Polish
-(none) The delta only splits long solution paragraphs into shorter ones; the words, formulas and units are unchanged, and the split points fall at natural boundaries.
+(none) The delta adds "Putken pääkorjausta ei huomioida." to L2-02 and the same remark to its solution; the sentence is clear and fits the task's situation, and the Järkevyys block now reads logically.
 
 ## Checked
-- Delta (solutions.md only: paragraph splits). Captures opened in content/fi-easy/FY5/fy5-13/review/shots/: fy5-13-open-exercises-L3-1280-5, -6, -7 (L3-04 and L3-05, both changed solutions: a) / b) / c) paragraphs, Järkevyys in two paragraphs, Lisäksi paragraph).
-- Paragraphs now read as separate blocks with normal spacing, display chains stay on one row with thin-spaced units and decimal comma, nothing clipped, no overflow, no KaTeX error visible.
-- Not every changed paragraph was opened individually; they use the same shared solution component, so the sampled captures stand for them.
+- open-exercises-L2-1280-3 (L2-02 solution end, Järkevyys block with the new wording; L2-03 solution layout) and open-exercises-L3-1280-3 (L3 closed-tube task): formulas, units and aligned chains render correctly, nothing clipped.
+- The figure change (kuvio-tehtava code, animated flag) is figure code only; fig-4 and fig-5 captures (390 px) show the tube and string figures unchanged and clean.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

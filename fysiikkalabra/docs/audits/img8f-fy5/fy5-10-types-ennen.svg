@@ -1,0 +1,91 @@
+<svg viewBox="0 0 600 412" role="img" aria-label="Kaavakuva, ei mittakaavassa. Ylhäällä poikittainen aalto: naru on siniaallon muotoinen, ja sininen nuoli osoittaa aallon etenemissuunnan oikealle. Kolmessa narun kohdassa pystysuora kaksipäinen nuoli näyttää, että kohta liikkuu ylös ja alas eli kohtisuoraan etenemissuuntaa vastaan. Alhaalla pitkittäinen aalto: pitkän kierrejousen kierrokset ovat paikoin tiheässä (tihentymä) ja paikoin harvassa (harvennus). Yhden kierroksen yllä vaakasuora kaksipäinen nuoli näyttää, että kierros liikkuu edestakaisin jousen suuntaisesti. Sininen nuoli osoittaa tämänkin aallon etenemissuunnan oikealle." style="max-width:100%;font-size:24px">
+  <foreignObject x="24" y="9.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{poikittainen aalto}$</div></foreignObject>
+  <line x1="440" y1="24" x2="545" y2="24" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
+  <path d="M560,24 L544,31 L544,17 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="412" y="9.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$v$</div></foreignObject>
+  <line x1="60" y1="112" x2="580" y2="112" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <path d="M60,112 L63,108 L66,104.5 L69,101 L72,97.5 L75,94 L78,90.5 L81,87.5 L84,84.5 L87,82 L90,79.5 L93,77.5 L96,76 L99,74.5 L102,73.5 L105,72.5 L108,72 L111,72 L114,72.5 L117,73 L120,74 L123,75.5 L126,77 L129,79 L132,81 L135,83.5 L138,86.5 L141,89.5 L144,92.5 L147,96 L150,99.5 L153,103.5 L156,107 L159,110.5 L162,114.5 L165,118.5 L168,122 L171,125.5 L174,129 L177,132.5 L180,135.5 L183,138.5 L186,141 L189,143.5 L192,146 L195,147.5 L198,149 L201,150.5 L204,151.5 L207,152 L210,152 L213,152 L216,151.5 L219,150.5 L222,149 L225,147.5 L228,146 L231,143.5 L234,141 L237,138.5 L240,135.5 L243,132.5 L246,129 L249,125.5 L252,122 L255,118.5 L258,114.5 L261,110.5 L264,107 L267,103.5 L270,99.5 L273,96 L276,92.5 L279,89.5 L282,86.5 L285,83.5 L288,81 L291,79 L294,77 L297,75.5 L300,74 L303,73 L306,72.5 L309,72 L312,72 L315,72.5 L318,73.5 L321,74.5 L324,76 L327,77.5 L330,79.5 L333,82 L336,84.5 L339,87.5 L342,90.5 L345,94 L348,97.5 L351,101 L354,104.5 L357,108 L360,112 L363,116 L366,119.5 L369,123 L372,126.5 L375,130 L378,133.5 L381,136.5 L384,139.5 L387,142 L390,144.5 L393,146.5 L396,148 L399,149.5 L402,150.5 L405,151.5 L408,152 L411,152 L414,151.5 L417,151 L420,150 L423,148.5 L426,147 L429,145 L432,143 L435,140.5 L438,137.5 L441,134.5 L444,131.5 L447,128 L450,124.5 L453,120.5 L456,117 L459,113.5 L462,109.5 L465,105.5 L468,102 L471,98.5 L474,95 L477,91.5 L480,88.5 L483,85.5 L486,83 L489,80.5 L492,78 L495,76.5 L498,75 L501,73.5 L504,72.5 L507,72 L510,72 L513,72 L516,72.5 L519,73.5 L522,75 L525,76.5 L528,78 L531,80.5 L534,83 L537,85.5 L540,88.5 L543,91.5 L546,95 L549,98.5 L552,102 L555,105.5 L558,109.5 L561,113.5 L564,117 L567,120.5 L570,124.5 L573,128 L576,131.5" fill="none" stroke="#a97a35" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="60" cy="112" r="3.5" fill="#1f2933"/>
+  <circle cx="85" cy="83.5" r="3.5" fill="#1f2933"/>
+  <circle cx="110" cy="72" r="3.5" fill="#1f2933"/>
+  <circle cx="135" cy="83.5" r="3.5" fill="#1f2933"/>
+  <circle cx="160" cy="112" r="3.5" fill="#1f2933"/>
+  <circle cx="185" cy="140.5" r="3.5" fill="#1f2933"/>
+  <circle cx="210" cy="152" r="3.5" fill="#1f2933"/>
+  <circle cx="235" cy="140.5" r="3.5" fill="#1f2933"/>
+  <circle cx="260" cy="112" r="3.5" fill="#1f2933"/>
+  <circle cx="285" cy="83.5" r="3.5" fill="#1f2933"/>
+  <circle cx="310" cy="72" r="3.5" fill="#1f2933"/>
+  <circle cx="335" cy="83.5" r="3.5" fill="#1f2933"/>
+  <circle cx="360" cy="112" r="3.5" fill="#1f2933"/>
+  <circle cx="385" cy="140.5" r="3.5" fill="#1f2933"/>
+  <circle cx="410" cy="152" r="3.5" fill="#1f2933"/>
+  <circle cx="435" cy="140.5" r="3.5" fill="#1f2933"/>
+  <circle cx="460" cy="112" r="3.5" fill="#1f2933"/>
+  <circle cx="485" cy="83.5" r="3.5" fill="#1f2933"/>
+  <circle cx="510" cy="72" r="3.5" fill="#1f2933"/>
+  <circle cx="535" cy="83.5" r="3.5" fill="#1f2933"/>
+  <circle cx="560" cy="112" r="3.5" fill="#1f2933"/>
+  <line x1="110" y1="112" x2="110" y2="73" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M110,62 L115.5,74 L104.5,74 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="110" y1="112" x2="110" y2="151" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M110,162 L104.5,150 L115.5,150 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="260" y1="112" x2="260" y2="73" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M260,62 L265.5,74 L254.5,74 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="260" y1="112" x2="260" y2="151" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M260,162 L254.5,150 L265.5,150 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="410" y1="112" x2="410" y2="73" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M410,62 L415.5,74 L404.5,74 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="410" y1="112" x2="410" y2="151" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M410,162 L404.5,150 L415.5,150 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="37.5" y="169.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kohdan liike}$</div></foreignObject>
+  <line x1="12" y1="208" x2="588" y2="208" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <foreignObject x="24" y="211.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{pitkittäinen aalto}$</div></foreignObject>
+  <line x1="440" y1="226" x2="545" y2="226" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
+  <path d="M560,226 L544,233 L544,219 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <foreignObject x="412" y="211.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$v$</div></foreignObject>
+  <line x1="54" y1="304" x2="572" y2="304" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
+  <ellipse cx="60" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="82.5" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="103" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="121" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="135" cy="304" rx="5" ry="30" fill="none" stroke="#1f2933" stroke-width="3"/>
+  <ellipse cx="146.5" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="155" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="162.5" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="170.5" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="180.5" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="194" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="210.5" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="230.5" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="252.5" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="275" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="296.5" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="315" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="331" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="343" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="352.5" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="360" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="367.5" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="377" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="389" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="405" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="423.5" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="445" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="467.5" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="489.5" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="509.5" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="526" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="539.5" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="549.5" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <ellipse cx="557.5" cy="304" rx="5" ry="30" fill="none" stroke="#8a96a3" stroke-width="2.5"/>
+  <line x1="135" y1="262" x2="124" y2="262" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M113,262 L125,256.5 L125,267.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="135" y1="262" x2="146" y2="262" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M157,262 L145,267.5 L145,256.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="165" y="247.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kierroksen liike}$</div></foreignObject>
+  <foreignObject x="100" y="339.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tihentymä}$</div></foreignObject>
+  <foreignObject x="300" y="339.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tihentymä}$</div></foreignObject>
+  <foreignObject x="200" y="369.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{harvennus}$</div></foreignObject>
+  <foreignObject x="400" y="369.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{harvennus}$</div></foreignObject>
+</svg>
