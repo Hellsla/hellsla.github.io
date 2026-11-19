@@ -1,15 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 01c407c00c981925
+VERDICT: PASS
+CONTENT-HASH: 8e0939a59d68304b
 
 ## Blocking
-- content/fi-easy/FY1/fy1-3/inquiry.json:545 (check-2 solution, **Vastaus**) — A: "$2{,}1\,\%$. Siinä on kaksi merkitsevää numeroa, koska lähtöarvoissa on kolme" gives the wrong limiting datum and breaks the lesson's own rounding rule. The relative uncertainty is limited by the virhearvio $\Delta t = 0{,}05\,\text{s}$, not by the five measured times; the subtraction $2{,}46\,\text{s} - 2{,}36\,\text{s} = 0{,}10\,\text{s}$ already keeps only two figures, so "three in the data" does not hold. The lesson rounds a virhearvio to one significant figure (two if the first digit is 1) (lesson.md:454, :586), and its worked example gives the relative uncertainty with as many figures as the virhearvio (lesson.md:544: "$3{,}8\,\%$ … kaksi merkitsevää numeroa, kuten virhearviossa"). With $\Delta t = 0{,}05\,\text{s}$ that gives $2\,\%$, as in the version I passed. The Finnish version has the same sentence and its science review fails it on the same grounds. — fix: restore "$2\,\%$. Siinä on yksi merkitsevä numero, kuten virhearviossa $0{,}05\,\text{s}$ (laskimen arvo $2{,}08\,\%$)." If the change was made because the answer check rejects a typed 2 (`answer` 2.08, `tolerance` 0.05), widen the tolerance (for example 0.1) instead of changing the rounding reason; keep fi, en and fi-easy the same.
 
 ## Polish
-- inquiry.json:545 — if $2{,}1\,\%$ is wanted on purpose, write the virhearvio as $0{,}050\,\text{s}$ (from $0{,}10\,\text{s}/2$), give that as the reason and state the exception next to the rule at lesson.md:454; a larger change than the fix above.
+- content/fi-easy/FY1/fy1-3/lesson.md:412 — "Hajonta on sama asia kuin satunnaisvirheen suuruus." equates two different things (guardrails: hajonta = how widely repeated results spread; satunnaisvirhe = one reading's random deviation). Category C at this level, but sharper wording would be: "Hajonta kertoo, kuinka suuri satunnaisvirhe on."
+- content/fi-easy/FY1/fy1-3/inquiry.json:check-2 — answer key 2.08 with relative tolerance 0.1 accepts both the typed $2\,\%$ (shown answer) and $2{,}1\,\%$; fine. Keep fi, en and fi-easy on the same tolerance.
 
 ## Checked
-- Hash 01c407c00c981925 at the start and the end.
-- Recomputed: mean $12{,}00\,\text{s}/5 = 2{,}40\,\text{s}$, $\Delta t = 0{,}05\,\text{s}$, $\varepsilon = 2{,}083\,\%$; lesson-answers.py `inq-check2` = 2,08 matches the key 2.08 (its comment still says "shown answer 2 %").
-- The diff changes only the Vastaus sentence; Annettu, Periaate, Kaava, Sijoitus and Järkevyys unchanged and correct.
-- Rounding rule lesson.md:454/586 and worked example lesson.md:544 compared with the new sentence: they disagree (above).
-- Mistake values 4,2 / 0,05 / 0,021 and their feedback still correct.
+- Hash 8e0939a59d68304b at the start and the end.
+- Round-2 Blocking item resolved: check-2 Vastaus is again "$2\,\%$ … yksi merkitsevä numero, kuten virhearviossa $0{,}05\,\text{s}$ (laskimen arvo $2{,}08\,\%$)", consistent with the rounding rule and the worked example; tolerance widened to 0.1 (relative, docs/inquiry.md) so 2 passes; mistakes 4,2 / 0,05 / 0,021 stay outside the tolerance.
+- Recomputed in one Python call from the sim's G series: exp-1 n=1 error $-0{,}22\,\text{s}$, n=40 error $-0{,}0005\,\text{s}$, half-range 0,25 to 0,26 s; exp-2 n=40 mean 2,6995 s, difference 0,30 s; exp-3 half-ranges 0,085 s and 0,525 s, ratio 6,18 → 6,2 (mistake 6 outside 3 % tolerance).
+- Worked example: sum 19,09 s, mean 3,1817 s → 3,18 s, Δt 0,12 s, ε 3,77 % → 3,8 %; interval 3,06–3,30 s covers five of six, correct.
+- Karkea: outlier 4,31 s shifts mean by 0,17 s ("noin 0,2 s"), Δt 0,09 s → 0,62 s (about sevenfold); correct.
+- Siirto: (28,0 g − 0,8 g)/5 = 5,44 g; mistakes 5,6 / 27,2 / 4,8 / 28 correct.
+- Exit ticket: 20,4 g − 0,5 g = 19,9 g; 0,09/4,52 = 1,99 % → 2 %.
+- sim.js reading model $t_i = T + \Delta t_\text{sys} + \Delta t_\text{sat} g_i$ rounded to 0,01 s matches lesson-answers.py and the model box.
+- Error types, outlier handling, resolution vs uncertainty, half-range as a course-level scatter estimate (not the mean's uncertainty) follow the guardrails' wording.
+- Ice-water data: mean 1,5 °C, half-range 0,1 °C, systematic error identified only by the known reference; distractor feedback correct.

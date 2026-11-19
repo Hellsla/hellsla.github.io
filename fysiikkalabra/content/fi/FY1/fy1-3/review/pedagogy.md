@@ -1,14 +1,23 @@
-VERDICT: FAIL
-CONTENT-HASH: 8499e7663496ab66
+VERDICT: PASS
+CONTENT-HASH: 25b3b9bd9015b47f
 
 ## Blocking
-- inquiry.json:545 (task "3. Laskeminen", solution, Vastaus) — the stated reason for the rounding is wrong and contradicts the lesson's own rule. "kaksi merkitsevää numeroa, koska lähtöarvoissa on kolme" does not follow (three-figure data would give three figures, 2,08 %, or the rule would give the error estimate's figures), and lesson.md:454, 544 and 586 teach that the uncertainty is given with the figures of the error estimate (here 0,05 s has one: 2 %; in the worked example 0,12 s has two: 3,8 %). Rule 7(6) asks for the reason for the number of figures, and a student who cannot solve the task reads a false one. Fix: "**Vastaus:** $2{,}1\,\text{\%}$ (laskimen arvo $2{,}08\,\%$). Suhteellinen epävarmuus on karkea arvio, joten kaksi merkitsevää numeroa riittää; myös $2\,\%$ on oikein, koska virhearvio $0{,}05\,\text{s}$ on yhden numeron arvio." (Keep `answer` 2.08 and tolerance 0.05, which accept 2,1 but not 2; or raise the tolerance to 0.1 so that 2 % is accepted as the text says.) Write units as $2{,}1\,\%$ in LaTeX.
 
 ## Polish
-- inquiry.json:545 — the earlier version (2 %) matched the lesson's rule but failed the checker's tolerance (|2 - 2,08| > 0,05); the real inconsistency is rule vs tolerance. Align the two, as in the fix above, instead of changing the reason.
+- lesson.md:231 and inquiry.json (task "siirto", hint 3 and solution) — display math `$$...$$` sits mid-sentence and is followed by ", joten" or "." — end the sentence before the display block or use inline math, so the sentence does not break around the block.
+- inquiry.json pred-1, first option — "vaikka yksittäiset tulokset heittelevät edelleen" already states half of what exp-1's question asks (the range does not shrink). Predictions reopen after the investigation, so this is not wrong; consider ending the option at "Keskiarvo lähestyy oikeaa aikaa" and leaving the scatter to the other options.
+- inquiry.json exp-2 question, hint 3 — "Jos keskiarvo on 2,70 s" gives the table value the student was asked to read. Acceptable as the last hint; rewrite as "Lue rivin $n = 40$ keskiarvo ja vähennä siitä $2{,}40\,\text{s}$" if you want the reading kept.
+- Workload — three experiments (one optional), a data task, a rough-error task, a transfer task, three checks and an exit ticket, beyond the slot's goals (rough error, resolution, relative uncertainty, rounding rule). Everything is reachable and optional pieces are marked; if time is short, trim exp-3 or the rounding paragraph first.
+- inquiry.json check-c2 — "Resoluutio ja epävarmuus" assumes resoluutio from lesson.md:180 only; it is not in the lesson's glossary list above. Add resoluutio and oikeellisuus to glossary.json if not already there.
 
 ## Checked
-- Diff is one line: the Vastaus of the numeric task changed from 2 % to 2,1 %; Annettu, Periaate, Kaava, Sijoitus, Järkevyys unchanged and consistent (mean 2,40 s, Δt 0,05 s, 2,08 %).
-- Prompt, hints and mistake feedback (4,2; 0,05; 0,021) still fit the answer 2,08.
-- Worked example's rounding rule (lesson.md:454, 544) read for consistency with the new line; this is the conflict above.
-- Rest of the lesson not re-judged; the earlier PASS holds for it.
+- Opening question (ten results from one clock; how to trust a result and spot a shared fault) is answered by the experiments, the theory and the reflect task, only after the student has predicted.
+- Retrieval item ties to the same phenomenon (2,40 s on the clock) and its wrong options repair real misconceptions.
+- Predictions refutable by exp-1 and exp-2; feedback names the evidence; options are not lettered in references.
+- Worked example: staged, symbolic first; sum 19,09 s, mean 3,18 s, 0,12 s, 3,8 % and the interval check (five of six) all agree.
+- Rough-error choice numbers verified (shift of the mean about 0,2 s; estimate 0,09 s to 0,62 s).
+- Aineisto (thermometer in ice water) mean 1,5 and half-range 0,1 verified; it tests the systematic-error idea on a table.
+- Transfer task (5,44 g) and its mistake values (5,6; 27,2; 4,8; 28) match the solution; check-2 answer 2,08 with tolerance 0,1 accepts the stated 2 %, now consistent with the rounding rule.
+- Exit ticket tests the core idea (dominant error, why averaging works for one only, relative uncertainty); solutions complete.
+- Finnish read: no case or glossary errors found; model values are called model values in sim text and conclusion.
+- Captures not opened; the packet's mechanics checks cover phone layout.
