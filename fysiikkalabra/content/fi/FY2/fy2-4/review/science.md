@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 12d8ba386bbe77ca
+CONTENT-HASH: 5a0b887af3361976
 
 ## Blocking
+- None.
 
 ## Polish
-- inquiry.json:396 — the feedback says the heating of "johdot" is useful. That is true only for the cord inside the room. Losses in the supply line lie outside the boundary set at the socket, so this is a fair simplification (C). — optional: "patterin ja sen johdon lämpeneminen huoneessa".
+- None.
 
 ## Checked
-- koe-1 intro (inquiry.json:117): removing the stated 25 % changes no physics. It still says the efficiency is a model input, not measured. The intro still locks P_o = 60 kW and varies only t. The typical 25 % stays in the prediction feedback (lines 62–75) and the sim's model box (line 113), so the text stays consistent.
-- koe-1 conclusion (inquiry.json:257–258): recomputed in my own script. 60 kW · 10 s = 600 kJ, E_a = 150 kJ. 60 kW · 20 s = 1200 kJ, E_a = 300 kJ. P_a = 15 kW and the losses are 75 %. All agree with the model answer.
-- Removing the run-time question and its criterion is sound. The model's efficiency is constant by assumption, so "does not depend on run time" would be circular as a conclusion from the experiment. The remaining "aika supistuu" reasoning and the model-assumption caveat are correct.
-- The remaining criteria (inquiry.json:259–262) ask only what the new prompt asks.
-- check-patteri, new 50 % distractor (inquiry.json:395–396): it is really wrong, and its feedback names the right mechanism (the heat is the useful output, about 100 %). The guardrail says a resistance heater is practically 100 %. Exactly one option is correct (line 386). The other distractors' feedback is unchanged and right.
-- The content hash was the same at the start and the end (12d8ba386bbe77ca).
+- Delta review, round 4: the only new change is johtopäätös criterion 3 (inquiry.json:262). The round-3 changes in the diff (ennuste-1 and koe-1 `optional`, the koe-1 hint in kJ, the johtopäätös rewritten for koe-2) are as I checked them before.
+- The criterion is fixed. It now asks for the lamp's efficiency (about 5 %, only a small share useful). That is what koe-2's table gives and what the prompt's "annoin laskun luvuilla" leads to. It no longer needs the optional engine experiment.
+- The model answer meets all three criteria: η as the useful share, with numbers; time cancels; 5 % with 95 % losses.
+- Recomputed: η = 0,05 at P_o = 40 W gives t = 10 s: 400 J and 20 J, and t = 20 s: 800 J and 40 J. Both ratios are 5 % = 2 W : 40 W. This matches sim.js (`lamppu` eta 0.05).
+- koe-1 hint: 0,75 · 60 kW · 10 s = 450 kJ of 600 kJ, giving 0,75. Right.
+- Physics of the criterion: "pieni osa hyötyä" agrees with the glossary's definition of hyötysuhde and with the lesson's lamp numbers. It states no new claim that would need a condition.
+- The content hash was the same at the start and the end.

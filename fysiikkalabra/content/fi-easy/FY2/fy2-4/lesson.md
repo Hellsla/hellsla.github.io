@@ -87,6 +87,12 @@ Energian kulkua laitteen läpi voi havainnollistaa energiavirtakuviolla eli Sank
 ### Häviö määräytyy laitteen tarkoituksesta
 Vedenkeittimessä lämpö on hyötyä, kun se lämmittää veden. Lämpö on häviötä, kun se karkaa keittimen kyljistä huoneeseen. Hehkulampun lämpö lasketaan häviöksi. Näin on silloinkin, kun lamppu lämmittää huonetta talvella, koska lampun hyödyksi on määritelty valo. Se, mikä on hyötyä, riippuu siis laitteen tarkoituksesta eli siitä, mihin laitetta käytetään. Hyötysuhteen arvoon vaikuttaa, mikä määritellään hyödyksi ja mitkä osat lasketaan kuuluviksi laitteeseen.
 
+```pysahdy
+Sähkölämmittimen tarkoitus on lämmittää huonetta. Onko sen tuottama lämpö hyötyä vai häviötä?
+---
+Se on hyötyä, koska lämmittimen hyödyksi on määritelty lämpö. Sama lämpö olisi häviötä laitteessa, jonka tarkoitus on esimerkiksi valaista.
+```
+
 ### Hyötysuhde kertoo hyödyn osuuden
 Hyötysuhde on hyötyenergian osuus laitteeseen otetusta energiasta. Hyötysuhde on enintään $100\,\%$, koska energia säilyy. Hyötyä ei voi saada enemmän kuin energiaa otetaan. Todellisissa laitteissa hyötysuhde jää usein alle $100\,\%$. Syy on, että osa otetusta energiasta ei päädy määriteltyyn hyödylliseen käyttötarkoitukseen. Se muuttuu esimerkiksi kitkassa tai johtimissa lämmöksi, ja lämpö leviää ympäristöön. Jos laitteen hyöty on muuta kuin lämpöä, hyötysuhde vaihtelee paljon. Sähkömoottori pääsee noin $90\,\%$:iin, mutta lamppu ja polttomoottori jäävät selvästi alle $100\,\%$:n. Sähkölämmittimessä hyöty on itse lämpö. Käytännössä kaikki sähköenergia muuttuu huonetta lämmittäväksi lämmöksi, joten hyötysuhde on lähes $100\,\%$. Ihanteellisen, häviöttömän laitteen hyötysuhde olisi $100\,\%$. Laitteiden hyötysuhteet vaihtelevat paljon:
 
@@ -100,6 +106,12 @@ Hyötysuhde on hyötyenergian osuus laitteeseen otetusta energiasta. Hyötysuhde
 | aurinkopaneeli: sähkö | $20\,\%$ |
 
 Taulukon arvot ovat tyypillisiä pyöristettyjä arvoja. Ne eivät ole minkään tietyn laitteen mittauksia. Todellinen hyötysuhde riippuu laitteen mallista ja käyttötilanteesta. Bensiinimoottorin arvo on tyypillinen tasaisessa maantieajossa. Kaupunkiajossa ja muulla pienellä kuormalla hyötysuhde on selvästi pienempi. Sähkömoottorin hyötysuhde muuttuu vähän, kun moottori käy lähellä tehoa, jolle se on suunniteltu.
+
+```pysahdy
+Valmistaja sanoo, että laitteen hyötysuhde on $120\,\%$. Miksi tämä ei voi olla totta?
+---
+Energia säilyy. Laite ei voi antaa hyötyenergiaa enemmän kuin se ottaa energiaa. Siksi hyötysuhde on enintään $100\,\%$.
+```
 
 ## Kaava: Hyötysuhde
 Hyötysuhde $\eta$ (eeta) on hyötyenergian ja laitteeseen otetun energian suhde. Kun laite käy tasaisella teholla, saman suhteen saa myös tehoista:
@@ -124,6 +136,13 @@ Energian säilyminen jakaa laitteeseen otetun energian hyötyenergiaan ja hävi�
 E_\text{o} = E_\text{a} + E_\text{h}
 ```
 Sama pätee tehoille, $P_\text{o} = P_\text{a} + P_\text{h}$. Kun hyötysuhde tunnetaan, hyötyenergia on $E_\text{a} = \eta \cdot E_\text{o}$. Otettu energia on silloin $E_\text{o} = \tfrac{E_\text{a}}{\eta}$.
+
+```pysahdy
+Laite ottaa energiaa $50\,\text{J}$ ja antaa hyötyenergiaa $20\,\text{J}$. Paljonko häviöitä syntyy ja mikä on hyötysuhde?
+---
+Häviöt ovat $E_\text{h} = 50\,\text{J} - 20\,\text{J} = 30\,\text{J}$.
+Hyötysuhde on $20\,\text{J} : 50\,\text{J} = 0{,}40$ eli $40\,\%$.
+```
 
 ### Kahden lampun vertailu
 Lamppu, jonka hyötysuhde on pieni, tarvitsee saman hyödyn saamiseen suuremman tehon. Valotehoon $3\,\text{W}$ hehkulamppu tarvitsee $60\,\text{W}$, mutta ledilamppu vain $10\,\text{W}$. Syy on hyötysuhteissa: ne ovat $5\,\%$ ja $30\,\%$. Kuviossa nuolten paksuudet ovat samassa mittakaavassa. Vihreät valotehon nuolet ovat yhtä paksut. Hehkulampun tuleva nuoli on kuusi kertaa paksumpi.

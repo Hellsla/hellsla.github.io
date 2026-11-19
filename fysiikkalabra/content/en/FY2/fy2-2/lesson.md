@@ -1,6 +1,6 @@
 # Energy transformations and the joule
 
-> **Why** does the motion of a bicycle ultimately come from the Sun, and how can the amount of energy be given as a single number?
+> **Why** does a bicycle move, where does its energy ultimately come from and how can the amount of energy be given as a single number?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: the Sun shines on a golden field of grain. Orange arrows run from the Sun to the grain, from the grain to bread and from the bread to a cyclist riding on a road: the energy of the motion comes from the Sun." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy22h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy22h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy22h-field" gradientUnits="userSpaceOnUse" x1="0" y1="370" x2="0" y2="500"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#e9c98a"/></linearGradient><linearGradient id="fy22h-road" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6c757d"/><stop offset="1" stop-color="#1f2933"/></linearGradient><linearGradient id="fy22h-board" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy22h-bread" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#b8622d"/></linearGradient></defs>
@@ -430,10 +430,16 @@ At every step, part of the energy turns into thermal energy, which is transferre
   <foreignObject x="70" y="317.5" width="460" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{the width of the arrow shows the amount of energy}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Of the $500\,\text{kJ}$ from the porridge, the muscles turn $120\,\text{kJ}$ into motion. How much energy turns into thermal energy, and has it disappeared afterwards?
+---
+$500\,\text{kJ} - 120\,\text{kJ} = 380\,\text{kJ}$ turns into thermal energy. The energy has not disappeared; it has spread to the surroundings as thermal energy.
+```
+
 ### Joule
 The symbol of energy is $E$ and its unit is the joule, whose symbol is J. One joule is a small amount of energy: it is roughly what is needed to lift an apple of about $0.1\,\text{kg}$ by one metre. In this chapter you learn the size of the joule through examples.
 
-<figure class="unit-photo"><img src="pics/fy2/artemis-i-launch.webp" alt="A rocket lifts off from its launch pad at night above a bright flame and a huge cloud of smoke."><figcaption>Launch of the Artemis I rocket in Florida in November 2022. The chemical energy of the fuel turns into the rocket's kinetic energy, heat, light and sound.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy2/artemis-i-launch.webp" alt="A rocket lifts off from its launch pad at night above a bright flame and a huge cloud of smoke."><figcaption>Launch of the Artemis I rocket in Florida in November 2022. The chemical energy of the fuel turns into the rocket's kinetic energy, thermal energy, light and sound.</figcaption></figure>
 
 ## Formula: Unit of energy and its multiples
 Everyday energies are large numbers when given in joules, so we use prefixes (chapter *Quantities, units and the SI system*): kilo (k), mega (M), giga (G) and tera (T). Each of them is a thousand times the previous one:
@@ -449,9 +455,15 @@ where J is the joule, kJ the kilojoule, MJ the megajoule, GJ the gigajoule and T
 
 A conversion is done by replacing the prefix with its value: $2.5\,\text{kJ} = 2.5 \cdot 1000\,\text{J} = 2500\,\text{J}$. In the other direction, the number is written using the prefix: $3000\,\text{J} = 3 \cdot 1000\,\text{J} = 3\,\text{kJ}$. Energies are added together only in the same unit, so they are first converted to the same unit.
 
-The orders of magnitude of everyday energies are collected in the figure, where each step is a factor of ten (chapter *Physics as a science and the scales of the universe*). When the orders of magnitude of two energies are very different, one division is enough for the comparison: the ratio of the $32\,\text{MJ}$ of a litre of petrol to the $10\,\text{MJ}$ of a day's food is $32\,\text{MJ} : 10\,\text{MJ} \approx 3$.
+```pysahdy
+How many joules is $4.2\,\text{kJ}$? How many megajoules is $3000\,\text{kJ}$?
+---
+$4.2\,\text{kJ} = 4.2 \cdot 1000\,\text{J} = 4200\,\text{J}$. Since $1\,\text{MJ} = 1000\,\text{kJ}$, $3000\,\text{kJ} = 3\,\text{MJ}$.
+```
 
-<svg data-fig="tikapuut" viewBox="0 0 600 372" role="img" aria-label="Scale diagram: energy in joules on a power-of-ten scale from 1 J to 10 TJ and beyond. Each step is a factor of ten. An apple lifted one metre is about 1 J, a burning match about 1 kJ, a day&#x27;s food about 10 MJ, a 50-litre petrol tank about 1.6 GJ, and the Olkiluoto 3 nuclear power plant produces about 140 TJ of electricity in a day." style="max-width:100%;font-size:24px">
+The orders of magnitude of everyday energies are collected in the figure, where each small step is a factor of ten and each marked step a factor of 1000 (chapter *Physics as a science and the scales of the universe*). When the orders of magnitude of two energies are very different, one division is enough for the comparison: the ratio of the $32\,\text{MJ}$ of a litre of petrol to the $10\,\text{MJ}$ of a day's food is $32\,\text{MJ} : 10\,\text{MJ} \approx 3$.
+
+<svg data-fig="tikapuut" viewBox="0 0 600 372" role="img" aria-label="Scale diagram: energy in joules on a power-of-ten scale from 1 J to 10 TJ and beyond. Each small step is a factor of ten and each marked step a factor of 1000. An apple lifted one metre is about 1 J, a burning match about 1 kJ, a day&#x27;s food about 10 MJ, a 50-litre petrol tank about 1.6 GJ, and the Olkiluoto 3 nuclear power plant produces about 140 TJ of electricity in a day." style="max-width:100%;font-size:24px">
   <line x1="66" y1="292" x2="574" y2="292" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M586,292 L573,298 L573,286 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="96" y1="292" x2="96" y2="303" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -474,7 +486,7 @@ The orders of magnitude of everyday energies are collected in the figure, where 
   <foreignObject x="250" y="307.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1\,\text{MJ}$</div></foreignObject>
   <foreignObject x="350" y="307.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1\,\text{GJ}$</div></foreignObject>
   <foreignObject x="449.5" y="307.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1\,\text{TJ}$</div></foreignObject>
-  <foreignObject x="130" y="339.5" width="340" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{each step is a factor of 10}$</div></foreignObject>
+  <foreignObject x="80" y="339.5" width="440" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{small step 10 times, large step 1000 times}$</div></foreignObject>
   <line x1="96" y1="30" x2="96" y2="292" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <circle cx="96" cy="292" r="7" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="106" y="27.5" width="234" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{apple lifted one metre}$</div></foreignObject>
@@ -496,6 +508,12 @@ The orders of magnitude of everyday energies are collected in the figure, where 
   <foreignObject x="205.5" y="213.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{match}$</div></foreignObject>
   <foreignObject x="205.5" y="241.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1\,\text{kJ}$</div></foreignObject>
 </svg>
+
+```pysahdy
+The energy of a petrol tank is about $1.6\,\text{GJ}$ and that of a day's food about $10\,\text{MJ}$. How many times as large is the tank's energy compared with the food's?
+---
+First the same unit: $1.6\,\text{GJ} = 1600\,\text{MJ}$. The ratio is $1600\,\text{MJ} : 10\,\text{MJ} = 160$, so the tank holds about 160 times as much energy.
+```
 
 The amount of energy does not yet tell how fast the energy is used. That is described in the next chapter, *Power*.
 
@@ -537,7 +555,7 @@ E_\text{heat} &= E_\text{start} - E_\text{motion} \\
 
 <!-- vaihe -->
 
-**Result.** The thermal energy produced is $340\,\text{kJ}$. The result is rounded to two significant figures, because the initial energy $0.45\,\text{MJ}$ is given with two significant figures. The $110\,\text{kJ}$ given as a whole number is taken as exact, so the precision is limited by the initial energy.
+**Result.** The thermal energy produced is $340\,\text{kJ}$. In a subtraction the least precise datum decides: $0.45\,\text{MJ} = 450\,\text{kJ}$ is known to the nearest ten kilojoules, so the difference is given to the nearest ten kilojoules and rounded to $340\,\text{kJ}$.
 
 <!-- vaihe -->
 

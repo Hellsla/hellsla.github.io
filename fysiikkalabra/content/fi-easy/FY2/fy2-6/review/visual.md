@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 20b141f946cfd677
+CONTENT-HASH: 100941ca46644142
 
 ## Blocking
+(none)
 
 ## Polish
+- (none)
 
 ## Checked
-- delta (calculation chains re-broken into aligned rows): opened fy2-6-example-390-1/-2, stage-sovella-390-1 (worked example steps 3-7), open-tarkista-1280-3 (hints, solution and reasonableness open). Equals signs aligned, units upright with thin space, decimal comma, answer boxed; nothing clipped, no overflow.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review: the diff only adds Pysähdy ja mieti blocks; opened fy2-1 stage-selita-390-2 and theory-1280-1 and fy2-3 theory-1280-2 (block style, KaTeX maths, Vastaus details, spacing and placement are consistent and clean at both widths); the other lessons' blocks use the same component and the source holds no markdown or plain-quantity problems; figures unchanged and not re-opened.

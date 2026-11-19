@@ -1,13 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: eda4ea09580287e0
+CONTENT-HASH: 2474e1ec80a119e6
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] inquiry.json, Johtopäätös (Tutki) — the Johtopäätös heading "mistä hyötysuhde riippuu" is left, but the prompt no longer asks whether time changed; consider the heading "Johtopäätös: mitä koe kertoi" (optional).
+(none)
 
 ## Checked
-- Delta (inquiry.json text only): opened fy2-4-stage-tutki-390-1/-2 (new Koe 1 intro, shortened Johtopäätös prompt, sim, controls, table) and stage-tarkista-390-1 (layout around the check tasks). No figure or layout change; diff text read for typography (LaTeX units, thin spaces, colon division) and Finnish (the new intro and the radiator option and feedback read naturally, "Ei osu" is plain and clear).
+- Delta round 4 (inquiry.json only: one self-check criterion changed from the petrol engine's losses to the incandescent lamp's efficiency, about $5\,\%$).
+- The changed line: formula and unit in LaTeX ($5\,\%$ with a thin space), plain wording, two short sentences, glossary term hyötysuhde used consistently, no mechanical phrasing.
+- Opened stage-tarkista-390-3 and open-tarkista-1280-4: the self-assessment card and the task cards above it kept their layout, with no clipping or overflow.
+- Opened open-exit-1280: the exit ticket's model answer already gives the same lamp figure (about $5\,\%$), so the changed criterion matches the page.
+- No figure changed, so no figure captures were reopened.
+- `reviews.py hash fy2-4` without `--lang` gives the Finnish hash (5a0b887af3361976); the fi-easy hash is the one above, run at the start and the end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

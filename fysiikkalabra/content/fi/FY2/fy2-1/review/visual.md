@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e16c4424075d4d4d
+CONTENT-HASH: 83e63bdbda6f62a9
 
 ## Blocking
-- none
+- none (round 1 Major, literal asterisks in the first pysahdy question, is fixed)
 
 ## Polish
-- none (paragraph breaks only; no new findings)
+- [Minor] third pysahdy: plain straight quotes around "tyhjenee"; Finnish typographic quotes (”tyhjenee”) would match the rest, optional.
 
 ## Checked
-- fy2-1-example-390-1.png: stage 1/7 Tunnetut ja kysytty split into three paragraphs, reads cleanly, stage 2 and formula blocks intact.
-- Delta only: one text cut into paragraphs, words unchanged. KaTeX renders, units upright with thin space, no clipping or overflow, spacing between paragraphs matches the rest of the page.
+- theory-1280-1..3 (all three boxes in place, figures kept their position after the paragraphs, layout survived).
+- Opened state: built preview/fy2-1.html rendered in Chrome at 1280 and 390 px with every Vastaus open; boxes 1-3 read: no stray markup, $50\,\text{J}$ rendered upright with thin space, no clipping.
+- Figures unchanged (diff adds only the three text blocks).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

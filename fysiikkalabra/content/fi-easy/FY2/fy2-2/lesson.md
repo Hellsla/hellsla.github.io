@@ -1,6 +1,6 @@
 # Energian muuntuminen ja yksikkö joule
 
-> **Miksi** polkupyörän liike on lopulta peräisin Auringosta, ja miten energian määrän voi kertoa yhdellä luvulla?
+> **Miksi** polkupyörä liikkuu, mistä sen energia on lopulta peräisin ja miten energian määrän voi kertoa yhdellä luvulla?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: Aurinko paistaa kultaiselle viljapellolle. Oranssit nuolet kulkevat Auringosta viljaan, viljasta leipään ja leivästä pyöräilijään. Pyöräilijä ajaa maantiellä. Liikkeen energia on siis peräisin Auringosta." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy22h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy22h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy22h-field" gradientUnits="userSpaceOnUse" x1="0" y1="370" x2="0" y2="500"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#e9c98a"/></linearGradient><linearGradient id="fy22h-road" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6c757d"/><stop offset="1" stop-color="#1f2933"/></linearGradient><linearGradient id="fy22h-board" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy22h-bread" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#b8622d"/></linearGradient></defs>
@@ -430,10 +430,16 @@ Joka vaiheessa osa energiasta muuttuu lämpöenergiaksi. Lämpöenergia siirtyy 
   <foreignObject x="70" y="317.5" width="460" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{nuolen leveys kuvaa energian määrää}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Puurosta saatavasta $500\,\text{kJ}$:sta lihakset muuttavat liikkeeksi $120\,\text{kJ}$. Kuinka paljon energiaa muuttuu lämpöenergiaksi? Onko se sen jälkeen kadonnut?
+---
+Lämpöenergiaksi muuttuu $500\,\text{kJ} - 120\,\text{kJ} = 380\,\text{kJ}$. Energiaa ei ole kadonnut. Se on hajaantunut lämpöenergiana ympäristöön.
+```
+
 ### Joule
 Energian symboli on $E$. Energian yksikkö on joule, ja sen merkki on J. Yksi joule on pieni energia. Sen verran energiaa tarvitaan suunnilleen siihen, että nostat omenan metrin verran ylöspäin. Omena painaa noin $0{,}1\,\text{kg}$. Tässä luvussa opit joulen suuruuden esimerkkien avulla.
 
-<figure class="unit-photo"><img src="pics/fy2/artemis-i-launch.webp" alt="Raketti nousee yöllä. Sen alla on kirkas liekki ja iso savupilvi."><figcaption>Artemis I -raketti lähti Floridasta marraskuussa 2022. Polttoaineen kemiallinen energia muuttuu liike-energiaksi, lämmöksi, valoksi ja ääneksi.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy2/artemis-i-launch.webp" alt="Raketti nousee yöllä. Sen alla on kirkas liekki ja iso savupilvi."><figcaption>Artemis I -raketti lähti Floridasta marraskuussa 2022. Polttoaineen kemiallinen energia muuttuu liike-energiaksi, lämpöenergiaksi, valoksi ja ääneksi.</figcaption></figure>
 
 ## Kaava: Energian yksikkö ja kerrannaisyksiköt
 Arjen energiat ovat jouleina isoja lukuja. Siksi käytetään etuliitteitä (luku *Suureet, yksiköt ja SI-järjestelmä*): kilo (k), mega (M), giga (G) ja tera (T). Jokainen etuliite on tuhatkertainen edelliseen verrattuna:
@@ -449,9 +455,15 @@ missä J on joule, kJ kilojoule, MJ megajoule, GJ gigajoule ja TJ terajoule. Meg
 
 Muunnos tehdään näin: korvaa etuliite sen arvolla. Esimerkki: $2{,}5\,\text{kJ} = 2{,}5 \cdot 1000\,\text{J} = 2500\,\text{J}$. Toiseen suuntaan luku kirjoitetaan etuliitteen avulla: $3000\,\text{J} = 3 \cdot 1000\,\text{J} = 3\,\text{kJ}$. Energioita lasketaan yhteen vain samassa yksikössä. Muunna ne siis ensin samaan yksikköön.
 
-Arjen energioiden suuruusluokat on koottu kuvaan. Kuvassa jokainen väli on kymmenkertainen (luku *Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet*). Joskus kahden energian suuruusluokka on hyvin erilainen. Silloin vertailuun riittää yksi jakolasku. Esimerkki: bensiinilitran $32\,\text{MJ}$ ja päivän ruoan $10\,\text{MJ}$ suhde on $32\,\text{MJ} : 10\,\text{MJ} \approx 3$.
+```pysahdy
+Kuinka monta joulea on $4{,}2\,\text{kJ}$? Kuinka monta megajoulea on $3000\,\text{kJ}$?
+---
+$4{,}2\,\text{kJ} = 4{,}2 \cdot 1000\,\text{J} = 4200\,\text{J}$. Koska $1\,\text{MJ} = 1000\,\text{kJ}$, niin $3000\,\text{kJ} = 3\,\text{MJ}$.
+```
 
-<svg data-fig="tikapuut" viewBox="0 0 600 372" role="img" aria-label="Kuvaaja mittakaavassa: energia jouleina kymmenpotenssiasteikolla 1 J:sta 10 TJ:iin ja yli. Jokainen väli on kymmenkertainen. Omena metrin ylös on noin 1 J. Palava tulitikku on noin 1 kJ. Päivän ruoka on noin 10 MJ. 50 litran bensiinitankki on noin 1,6 GJ. Ydinvoimala Olkiluoto 3 tuottaa vuorokaudessa noin 140 TJ sähköä." style="max-width:100%;font-size:24px">
+Arjen energioiden suuruusluokat on koottu kuvaan. Kuvassa jokainen pieni väli on kymmenkertainen ja jokainen merkitty väli tuhatkertainen (luku *Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet*). Joskus kahden energian suuruusluokka on hyvin erilainen. Silloin vertailuun riittää yksi jakolasku. Esimerkki: bensiinilitran $32\,\text{MJ}$ ja päivän ruoan $10\,\text{MJ}$ suhde on $32\,\text{MJ} : 10\,\text{MJ} \approx 3$.
+
+<svg data-fig="tikapuut" viewBox="0 0 600 372" role="img" aria-label="Kuvaaja mittakaavassa: energia jouleina kymmenpotenssiasteikolla 1 J:sta 10 TJ:iin ja yli. Jokainen pieni väli on kymmenkertainen ja jokainen merkitty väli tuhatkertainen. Omena metrin ylös on noin 1 J. Palava tulitikku on noin 1 kJ. Päivän ruoka on noin 10 MJ. 50 litran bensiinitankki on noin 1,6 GJ. Ydinvoimala Olkiluoto 3 tuottaa vuorokaudessa noin 140 TJ sähköä." style="max-width:100%;font-size:24px">
   <line x1="66" y1="292" x2="574" y2="292" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M586,292 L573,298 L573,286 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="96" y1="292" x2="96" y2="303" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -474,7 +486,7 @@ Arjen energioiden suuruusluokat on koottu kuvaan. Kuvassa jokainen väli on kymm
   <foreignObject x="250" y="307.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1\,\text{MJ}$</div></foreignObject>
   <foreignObject x="350" y="307.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1\,\text{GJ}$</div></foreignObject>
   <foreignObject x="449.5" y="307.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1\,\text{TJ}$</div></foreignObject>
-  <foreignObject x="130" y="339.5" width="340" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{jokainen väli on 10-kertainen}$</div></foreignObject>
+  <foreignObject x="80" y="339.5" width="440" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{pieni väli ×10, merkitty väli ×1000}$</div></foreignObject>
   <line x1="96" y1="30" x2="96" y2="292" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <circle cx="96" cy="292" r="7" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="106" y="27.5" width="234" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{omena metrin ylös}$</div></foreignObject>
@@ -496,6 +508,12 @@ Arjen energioiden suuruusluokat on koottu kuvaan. Kuvassa jokainen väli on kymm
   <foreignObject x="205.5" y="213.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{tulitikku}$</div></foreignObject>
   <foreignObject x="205.5" y="241.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1\,\text{kJ}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Bensiinitankin energia on noin $1{,}6\,\text{GJ}$. Päivän ruoan energia on noin $10\,\text{MJ}$. Kuinka moninkertainen tankin energia on ruoan energiaan verrattuna?
+---
+Muunna ensin samaan yksikköön: $1{,}6\,\text{GJ} = 1600\,\text{MJ}$. Suhde on $1600\,\text{MJ} : 10\,\text{MJ} = 160$. Tankissa on noin 160-kertainen energia.
+```
 
 Energian määrä ei vielä kerro, kuinka nopeasti energiaa käytetään. Sitä kuvataan seuraavassa luvussa *Teho*.
 
@@ -539,7 +557,7 @@ E_\text{lämpö} &= E_\text{alussa} - E_\text{liike} \\
 
 <!-- vaihe -->
 
-**Tulos.** Lämpöenergiaksi muuttuu $340\,\text{kJ}$. Tulos on pyöristetty kahden merkitsevän numeron tarkkuuteen. Alkuenergia $0{,}45\,\text{MJ}$ on nimittäin annettu kahdella merkitsevällä numerolla. Kokonaislukuna annettu $110\,\text{kJ}$ on tarkka arvo. Siksi tarkkuuden ratkaisee alkuenergia.
+**Tulos.** Lämpöenergiaksi muuttuu $340\,\text{kJ}$. Vähennyslaskussa tarkkuuden ratkaisee epätarkin tieto. Alkuenergia $0{,}45\,\text{MJ} = 450\,\text{kJ}$ on tunnettu kymmenen kilojoulen tarkkuudella. Siksi erotus ilmoitetaan kymmenen kilojoulen tarkkuudella ja pyöristetään tulokseen $340\,\text{kJ}$.
 
 <!-- vaihe -->
 

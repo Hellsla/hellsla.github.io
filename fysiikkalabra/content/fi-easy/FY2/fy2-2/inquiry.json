@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Aamulla syöt kaurapuuron ja lähdet pyörällä kouluun. Polkimet pyörivät ja vauhti pysyy yllä. Renkaat lämpenevät. Perillä jarrutat ja pysähdyt. Kaura kasvoi pellolla kesän ajan, ja koko ajan sen päällä paistoi Aurinko.",
+      "text": "Aamulla syöt kaurapuuron ja lähdet pyörällä kouluun. Polkimet pyörivät ja vauhti pysyy yllä. Renkaat lämpenevät. Perillä jarrutat ja pysähdyt. Kaura kasvoi pellolla kesän ajan.",
       "question": "Mistä pyörän liikkeen energia on peräisin? Mihin se lopulta menee, kun pysähdyt?"
     },
     {
@@ -201,7 +201,7 @@
         "koe-2"
       ],
       "prompt": "Vastaa taulukoidesi ja energiaketjun perusteella kolmeen kysymykseen. Ensimmäinen: kumpi oli suurempi, litra bensiiniä vai päivän ruoka, ja kuinka moninkertainen? Toinen: miten Auringosta tunnissa tuleva energia vertautui ihmiskunnan vuoden energiankäyttöön? Kolmas: mihin muotoon ketjun energia lopulta päätyy?",
-      "model": "Litra bensiiniä oli noin $32\\,\\text{MJ}$ ja päivän ruoka noin $10\\,\\text{MJ}$. Bensiinissä on siis noin $32\\,\\text{MJ} : 10\\,\\text{MJ} \\approx 3$ kertaa enemmän energiaa. Tunnin auringonsäteily Maahan ja ihmiskunnan vuoden energiankäyttö olivat taulukossa kumpikin noin $620\\,\\text{EJ}$ eli $6{,}2 \\cdot 10^{20}\\,\\text{J}$. Ne ovat siis samaa suuruusluokkaa. Energiaketjussa energia säilyy. Suuri osa muuttuu kuitenkin joka vaiheessa lämpöenergiaksi, joka hajaantuu ympäristöön. Arvot ovat pyöristettyjä suuruusluokkia, osin arvioita.",
+      "model": "Litra bensiiniä oli noin $32\\,\\text{MJ}$ ja päivän ruoka noin $10\\,\\text{MJ}$. Bensiinissä on siis noin $32\\,\\text{MJ} : 10\\,\\text{MJ} \\approx 3$ kertaa enemmän energiaa. Tunnin auringonsäteily Maahan ja ihmiskunnan vuoden energiankäyttö olivat taulukossa kumpikin noin $620\\,\\text{EJ}$ eli $6{,}2 \\cdot 10^{20}\\,\\text{J}$. Ne ovat siis samaa suuruusluokkaa. Energiaketjussa energia säilyy. Energia muuttuu kuitenkin joka vaiheessa toiseen muotoon, ja jokaisessa vaiheessa osa päätyy lämpöenergiaksi, joka hajaantuu ympäristöön. Arvot ovat pyöristettyjä suuruusluokkia, osin arvioita.",
       "criteria": [
         "Vertasin bensiiniä ja ruokaa luvuilla ja sanoin, kuinka moninkertainen ero on.",
         "Sanoin, että Auringon tunti ja ihmiskunnan vuosi ovat samaa suuruusluokkaa.",
@@ -302,11 +302,11 @@
       "choices": [
         {
           "text": "Akun energia on kulunut videon katselussa loppuun, joten sitä ei ole enää olemassa.",
-          "feedback": "Energia ei kulu loppuun. Akun kemiallinen energia on muuttunut valoksi, ääneksi ja lämpöenergiaksi. Lopulta kaikki on hajaantunut lämpönä ympäristöön."
+          "feedback": "Energia ei kulu loppuun. Akun kemiallinen energia on muuttunut valoksi, ääneksi ja lämpöenergiaksi. Lopulta lähes kaikki on hajaantunut lämpönä ympäristöön."
         },
         {
           "text": "Akun $54\\,\\text{kJ}$ on muuttunut lähes kokonaan lämpöenergiaksi. Energiaa ei ole hävinnyt.",
-          "feedback": "Oikein. Kemiallinen energia muuttuu sähköksi, valoksi, ääneksi ja lämpöenergiaksi. Lopulta kaikki päätyy lämpönä ympäristöön. Energia säilyy.",
+          "feedback": "Oikein. Kemiallinen energia muuttuu sähköksi, valoksi, ääneksi ja lämpöenergiaksi. Lopulta lähes kaikki päätyy lämpönä ympäristöön. Energia säilyy.",
           "correct": true
         },
         {

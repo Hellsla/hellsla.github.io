@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ac3a2d181dd00dac
+CONTENT-HASH: 2ce2deed1bc1b212
 
 ## Blocking
+(none)
 
 ## Polish
+- (none)
 
 ## Checked
-- batch delta review: retrieval task reworded to kettle and lamp, feedback text; opened fy2-8 fig-row-1280 and fy2-4 sim-390 captures as layout sample; diff text read for typography and Finnish, no figure or layout change.
+batch delta review: the diff only adds Pysähdy ja mieti blocks; opened fy2-1 stage-selita-390-2 and theory-1280-1 and fy2-3 theory-1280-2 (block style, KaTeX maths, Vastaus details, spacing and placement are consistent and clean at both widths); the other lessons' blocks use the same component and the source holds no markdown or plain-quantity problems; figures unchanged and not re-opened.

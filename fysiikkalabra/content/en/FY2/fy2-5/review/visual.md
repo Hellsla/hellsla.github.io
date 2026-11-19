@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 53ebde5f1231272f
+CONTENT-HASH: e490e2b95fed37e2
 
 ## Blocking
-- none
 
 ## Polish
 - none
 
 ## Checked
-- batch delta review: rendered the changed feedback of the chocolate/firewood prediction at 390 px (display chain in two rows, colon division, sentence continues after it); opened the prediction capture; nothing clipped.
+batch delta review: new stop-and-think blocks checked in the shared rendering (fy2-4 theory-1280-3, fy2-3 stage-selita-390-3 opened at 1280 and 390 px): closed card, formulas with units in LaTeX, no clipping, layout intact; diff text read for plain quantities and notation (none).
