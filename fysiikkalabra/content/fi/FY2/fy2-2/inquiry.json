@@ -201,7 +201,7 @@
         "koe-2"
       ],
       "prompt": "Kirjoita taulukoidesi ja energiaketjun perusteella: kumpi oli suurempi, litra bensiiniä vai päivän ruoka, ja kuinka moninkertainen? Kuinka Auringosta tuleva tunnin energia vertautui ihmiskunnan vuoden energiankäyttöön? Mihin muotoon ketjun energia lopulta päätyy?",
-      "model": "Litra bensiiniä oli noin $32\\,\\text{MJ}$ ja päivän ruoka noin $10\\,\\text{MJ}$, joten bensiinissä on noin $32\\,\\text{MJ} : 10\\,\\text{MJ} \\approx 3$ kertaa enemmän energiaa. Tunnin auringonsäteily Maahan ja ihmiskunnan vuoden energiankäyttö olivat taulukossa kumpikin noin $620\\,\\text{EJ}$ eli $6{,}2 \\cdot 10^{20}\\,\\text{J}$, joten ne ovat samaa suuruusluokkaa. Energiaketjussa energia säilyy, mutta suuri osa muuttuu joka vaiheessa lämpöenergiaksi, joka hajaantuu ympäristöön. Arvot ovat pyöristettyjä suuruusluokkia, osin arvioita.",
+      "model": "Litra bensiiniä oli noin $32\\,\\text{MJ}$ ja päivän ruoka noin $10\\,\\text{MJ}$, joten bensiinissä on noin $32\\,\\text{MJ} : 10\\,\\text{MJ} \\approx 3$ kertaa enemmän energiaa. Tunnin auringonsäteily Maahan ja ihmiskunnan vuoden energiankäyttö olivat taulukossa kumpikin noin $620\\,\\text{EJ}$ eli $6{,}2 \\cdot 10^{20}\\,\\text{J}$, joten ne ovat samaa suuruusluokkaa. Energiaketjussa energia säilyy ja muuttuu joka vaiheessa toiseen muotoon, ja jokaisessa vaiheessa osa päätyy lämpöenergiaksi, joka hajaantuu ympäristöön. Arvot ovat pyöristettyjä suuruusluokkia, osin arvioita.",
       "criteria": [
         "Vertasin bensiiniä ja ruokaa luvuilla ja sanoin, kuinka moninkertainen ero on.",
         "Sanoin, että Auringon tunti ja ihmiskunnan vuosi ovat samaa suuruusluokkaa.",
@@ -302,11 +302,11 @@
       "choices": [
         {
           "text": "Akun energia on kulunut videon katselussa loppuun, joten sitä ei ole enää olemassa.",
-          "feedback": "Energia ei kulu loppuun. Akun kemiallinen energia on muuttunut valoksi, ääneksi ja lämpöenergiaksi, ja lopulta kaikki on hajaantunut lämpönä ympäristöön."
+          "feedback": "Energia ei kulu loppuun. Akun kemiallinen energia on muuttunut valoksi, ääneksi ja lämpöenergiaksi, ja lopulta lähes kaikki on hajaantunut lämpönä ympäristöön."
         },
         {
           "text": "Akun $54\\,\\text{kJ}$ on muuttunut lähes kokonaan lämpöenergiaksi, eikä energiaa ole hävinnyt.",
-          "feedback": "Oikein. Kemiallinen energia muuttuu sähköksi, valoksi, ääneksi ja lämpöenergiaksi, ja lopulta kaikki päätyy lämpönä ympäristöön. Energia säilyy.",
+          "feedback": "Oikein. Kemiallinen energia muuttuu sähköksi, valoksi, ääneksi ja lämpöenergiaksi, ja lopulta lähes kaikki päätyy lämpönä ympäristöön. Energia säilyy.",
           "correct": true
         },
         {

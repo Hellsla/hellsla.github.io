@@ -1,11 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 9e80b63c08550553
+VERDICT: PASS
+CONTENT-HASH: 1ddf58d36f93523a
+SCOPE: delta numbers,structure,typography,wording from 9e80b63c08550553 base a0f318f
 
 ## Blocking
-- [Major] lesson.md, first pysahdy block (Kuuma kahvikuppi) / fy2-1-theory-1280-1.png, fy2-1-stage-selita-390-2.png — the question shows literal asterisks "*lämpö*" because markdown is not processed inside the stop-think aside — visible markup noise in new text — remove the asterisks (write: sana lämpö) or use a non-markdown emphasis.
+- (none) The round-1 Major is fixed: "lämpö" in the first Pysähdy block is plain text, no stray asterisks at 390 or 1280 px.
 
 ## Polish
-- (none)
+- [Minor] lesson.md, third Pysähdy block and the "kuluu" paragraph — straight quotes "tyhjenee", "kuluu" — use Finnish typographic quotes if the project uses them elsewhere.
 
 ## Checked
-batch delta review: the diff only adds Pysähdy ja mieti blocks; opened fy2-1 stage-selita-390-2 and theory-1280-1 and fy2-3 theory-1280-2 (block style, KaTeX maths, Vastaus details, spacing and placement are consistent and clean at both widths); the other lessons' blocks use the same component and the source holds no markdown or plain-quantity problems; figures unchanged and not re-opened.
+- Opened fy2-1-theory-1280-1, -2, -3 and fy2-1-stage-selita-390-2, -3, -5: all three new Pysähdy ja mieti blocks at 1280 and 390 px.
+- Blocks sit after the paragraph they belong to; the $50\,\text{J}$ maths renders; each Vastaus is closed and clean; the figures are unchanged and the layout around them is intact.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

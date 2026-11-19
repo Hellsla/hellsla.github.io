@@ -201,7 +201,7 @@
         "koe-2"
       ],
       "prompt": "Write, on the basis of your tables and the energy chain: which was greater, a litre of petrol or a day's food, and by what factor? How did the energy from the Sun in one hour compare with the energy use of humankind in a year? What form does the energy of the chain finally end up in?",
-      "model": "A litre of petrol was about $32\\,\\text{MJ}$ and a day's food about $10\\,\\text{MJ}$, so petrol contains about $32\\,\\text{MJ} : 10\\,\\text{MJ} \\approx 3$ times as much energy. The solar radiation reaching the Earth in an hour and the energy use of humankind in a year were each about $620\\,\\text{EJ}$, that is, $6.2 \\cdot 10^{20}\\,\\text{J}$, in the table, so they are of the same order of magnitude. In an energy chain, energy is conserved, but a large part turns into thermal energy at every step and spreads into the surroundings. The values are rounded orders of magnitude, partly estimates.",
+      "model": "A litre of petrol was about $32\\,\\text{MJ}$ and a day's food about $10\\,\\text{MJ}$, so petrol contains about $32\\,\\text{MJ} : 10\\,\\text{MJ} \\approx 3$ times as much energy. The solar radiation reaching the Earth in an hour and the energy use of humankind in a year were each about $620\\,\\text{EJ}$, that is, $6.2 \\cdot 10^{20}\\,\\text{J}$, in the table, so they are of the same order of magnitude. In an energy chain, energy is conserved and is transformed at every step, and at each step some of it ends up as thermal energy, which spreads into the surroundings. The values are rounded orders of magnitude, partly estimates.",
       "criteria": [
         "I compared petrol and food using numbers and said by what factor they differ.",
         "I said that an hour of the Sun and a year of humankind are of the same order of magnitude.",
@@ -302,11 +302,11 @@
       "choices": [
         {
           "text": "The energy of the battery has run out while watching the video, so it no longer exists.",
-          "feedback": "Energy does not run out. The chemical energy of the battery has turned into light, sound and thermal energy, and in the end everything has spread as heat into the surroundings."
+          "feedback": "Energy does not run out. The chemical energy of the battery has turned into light, sound and thermal energy, and in the end almost everything has spread as heat into the surroundings."
         },
         {
           "text": "The $54\\,\\text{kJ}$ of the battery has turned almost entirely into thermal energy, and no energy has been lost.",
-          "feedback": "Correct. Chemical energy turns into electricity, light, sound and thermal energy, and in the end everything ends up as heat in the surroundings. Energy is conserved.",
+          "feedback": "Correct. Chemical energy turns into electricity, light, sound and thermal energy, and in the end almost everything ends up as heat in the surroundings. Energy is conserved.",
           "correct": true
         },
         {

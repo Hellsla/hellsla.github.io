@@ -1,23 +1,22 @@
-VERDICT: FAIL
-CONTENT-HASH: d93d5c1b070185fc
+VERDICT: PASS
+CONTENT-HASH: 5b69d428d62913d9
 
 ## Blocking
-- lesson.md:3 (Miksi), hero aria-label, inquiry.json hook — the opening question "mistä pyörän energia on peräisin" is answered before the student commits: the Miksi box says "liike on lopulta peräisin Auringosta", the hero arrows run Aurinko → vilja → pyöräilijä, and the hook ends "koko ajan sen päällä paistoi Aurinko". Fix: write Miksi as a question ("Mistä pyöräilijän energia on peräisin ja mihin se menee, kun hän pysähtyy?"), drop the Sun sentence from the hook (or add a committed choice before it) and keep the hero's Sun route out of the first screen or neutral.
-- lesson.md figure "tikapuut" (fig-4 capture, text line "jokainen väli on kymmenkertainen") — ticks 1 J, 1 kJ, 1 MJ, 1 GJ, 1 TJ are thousandfold apart, yet the figure label and aria say each interval is tenfold; the sim ladder is truly tenfold (10 MJ, 100 MJ). A student reading the figure learns a wrong scale. Fix: "jokainen merkitty väli on tuhatkertainen" (or draw the tenfold ticks), and keep "kymmenkertainen" for the sim.
+(none)
 
 ## Polish
-- inquiry.json ketju-lampo hint 2 — "Veteen ei päätynyt energia on alkuenergian ja … erotus" is ungrammatical; "Muualle kuin veteen päätynyt energia on alkuenergian ja veteen siirtyneen energian erotus."
-- inquiry.json ketju solution — "Tämä on enemmän kuin veteen jäänyt energia, kuten voimalaitoksissa" is vague; say the lost share is 66 % of the fuel energy.
-- inquiry.json ennuste-2 prompt — "ihmisten voimalat ovat pieniä pisteitä" nudges the answer "tuhat vuotta"; drop the clause.
-- Experiments koe-1/koe-2 only read two table values; the refutation is real but thin. Acceptable for an orders-of-magnitude lesson.
-- Joule intro uses lifting an apple (work) without naming work; fine for FY2, but say "noin" is a rounded model value.
+- inquiry.json hook and lesson.md hero — the opening question ("mistä energia on peräisin") is answered before commitment: the hook says "Kaura kasvoi pellolla" and the hero's Sun→grain→bread→cyclist arrows and aria-label show the chain. The hero is required by the house rules, so only the hook sentence should go (or the question gets a commitment before the hero is reached).
+- inquiry.json `johtopaatos` `after` — lists koe-1 and koe-2 only, but criterion 3 (chain ends as heat) rests on `ketju`. Add `ketju` to `after`, or move that criterion to the `pohdi` reflect.
+- inquiry.json `ketju-lampo` — the table's middle rows are not needed (100 − 34); the task is a plain subtraction. Ask for the step with the biggest loss, or the share lost, so the table is read.
+- lesson.md:118 — "Kuvan esimerkissä puuron 800 kJ" stands under the ketju figure, but the 800 kJ is in the next figure (sailyminen). Write "Seuraavan kuvan esimerkissä". The Artemis photo (l.133) sits under the apple/1 J paragraph and teaches no magnitude; give the caption a ladder value or move it next to the ladder.
+- inquiry.json `ketju-lampo` hint 2 — "Veteen ei päätynyt energia on …" is clumsy; write "Muualle kuin veteen päätynyt energia on alkuenergian ja veteen siirtyneen energian erotus."
 
 ## Checked
-- Course scope: no E_k, E_p formulas, W=Fs or chain efficiencies; slot goals met.
-- Predictions can be refuted by the sim table; option feedback repairs the misconception and gives the evidence.
-- Workload: optional items keep the core path to one lesson.
-- Worked example staged in seven steps with units converted and reasonableness check; solutions follow the seven-part form.
-- Transfer task has three hints and real common-mistake feedback (51000, 351).
-- Checks test concepts with misconception distractors; explain criteria observable.
-- Sim 390 px: readable, controls on own rows, text behind boxes; Finnish reads well.
-- Exit ticket tests unit and conservation. Exercises not judged (separate set).
+- Path: prerequisites (energy forms, prefixes, powers of ten) are named and used; no E_k or E_p expressions, no W = Fs; scope matches the FY2 slot.
+- Both predictions can be refuted by the ladder values. Their wrong-option feedback names the evidence, gated on commitment. Solar 6,2·10^20 J/h and human use 620 EJ are consistent.
+- The sim is a magnitude lookup, but the comparison across 40 decades is what the lesson teaches. It is legible at 390 px (readout and source clear; koe-2 labels sit close but readable).
+- Figures: ketju and ladder are uncluttered, with colour plus labels; the ladder's last point (140 TJ) lies past the last tick, which the caption covers.
+- Worked example has seven stages, one step each, symbolic before numbers, significant figures justified.
+- Misconception feedback is specific: the 7000 and 1000 options, the 51000 value and the 60 MJ mistake each name the slip.
+- Workload fits one lesson (optional items trimmed); exit ticket tests the core idea (joule, conservation).
+- Finnish and terms (lämpöenergia, liike-energia) fit FY2; checks and numeric tasks fit their levels. Exercises not judged here.

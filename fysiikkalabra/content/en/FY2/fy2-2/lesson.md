@@ -439,7 +439,7 @@ $500\,\text{kJ} - 120\,\text{kJ} = 380\,\text{kJ}$ turns into thermal energy. Th
 ### Joule
 The symbol of energy is $E$ and its unit is the joule, whose symbol is J. One joule is a small amount of energy: it is roughly what is needed to lift an apple of about $0.1\,\text{kg}$ by one metre. In this chapter you learn the size of the joule through examples.
 
-<figure class="unit-photo"><img src="pics/fy2/artemis-i-launch.webp" alt="A rocket lifts off from its launch pad at night above a bright flame and a huge cloud of smoke."><figcaption>Launch of the Artemis I rocket in Florida in November 2022. The chemical energy of the fuel turns into the rocket's kinetic energy, heat, light and sound.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy2/artemis-i-launch.webp" alt="A rocket lifts off from its launch pad at night above a bright flame and a huge cloud of smoke."><figcaption>Launch of the Artemis I rocket in Florida in November 2022. The chemical energy of the fuel turns into the rocket's kinetic energy, thermal energy, light and sound.</figcaption></figure>
 
 ## Formula: Unit of energy and its multiples
 Everyday energies are large numbers when given in joules, so we use prefixes (chapter *Quantities, units and the SI system*): kilo (k), mega (M), giga (G) and tera (T). Each of them is a thousand times the previous one:
@@ -555,7 +555,7 @@ E_\text{heat} &= E_\text{start} - E_\text{motion} \\
 
 <!-- vaihe -->
 
-**Result.** The thermal energy produced is $340\,\text{kJ}$. The result is rounded to two significant figures, because the initial energy $0.45\,\text{MJ}$ is given with two significant figures. The $110\,\text{kJ}$ given as a whole number is taken as exact, so the precision is limited by the initial energy.
+**Result.** The thermal energy produced is $340\,\text{kJ}$. In a subtraction the least precise datum decides: $0.45\,\text{MJ} = 450\,\text{kJ}$ is known to the nearest ten kilojoules, so the difference is given to the nearest ten kilojoules and rounded to $340\,\text{kJ}$.
 
 <!-- vaihe -->
 

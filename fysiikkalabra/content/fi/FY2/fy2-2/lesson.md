@@ -439,7 +439,7 @@ Lämpöenergiaksi muuttuu $500\,\text{kJ} - 120\,\text{kJ} = 380\,\text{kJ}$. En
 ### Joule
 Energian symboli on $E$ ja yksikkö joule, jonka merkki on J. Yksi joule on pieni energia: se on suunnilleen se, mitä tarvitaan noin $0{,}1\,\text{kg}$:n omenan nostamiseen metrin verran. Tässä luvussa joulen suuruus opitaan esimerkkien avulla.
 
-<figure class="unit-photo"><img src="pics/fy2/artemis-i-launch.webp" alt="Raketti nousee yöllä laukaisualustalta kirkkaan liekin ja valtavan savupilven saattelemana."><figcaption>Artemis I -raketin laukaisu Floridassa marraskuussa 2022. Polttoaineen kemiallinen energia muuttuu raketin liike-energiaksi, lämmöksi, valoksi ja ääneksi.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy2/artemis-i-launch.webp" alt="Raketti nousee yöllä laukaisualustalta kirkkaan liekin ja valtavan savupilven saattelemana."><figcaption>Artemis I -raketin laukaisu Floridassa marraskuussa 2022. Polttoaineen kemiallinen energia muuttuu raketin liike-energiaksi, lämpöenergiaksi, valoksi ja ääneksi.</figcaption></figure>
 
 ## Kaava: Energian yksikkö ja kerrannaisyksiköt
 Arjen energiat ovat jouleina isoja lukuja, joten käytetään etuliitteitä (luku *Suureet, yksiköt ja SI-järjestelmä*): kilo (k), mega (M), giga (G) ja tera (T). Jokainen niistä on tuhatkertainen edelliseen verrattuna:
@@ -557,7 +557,7 @@ E_\text{lämpö} &= E_\text{alussa} - E_\text{liike} \\
 
 <!-- vaihe -->
 
-**Tulos.** Lämpöenergiaksi muuttuu $340\,\text{kJ}$. Tulos on pyöristetty kahden merkitsevän numeron tarkkuuteen, koska alkuenergia $0{,}45\,\text{MJ}$ on annettu kahdella merkitsevällä numerolla. Kokonaislukuna annettu $110\,\text{kJ}$ tulkitaan tarkaksi arvoksi, joten tarkkuutta rajoittaa alkuenergia.
+**Tulos.** Lämpöenergiaksi muuttuu $340\,\text{kJ}$. Vähennyslaskussa tarkkuuden ratkaisee epätarkin tieto: $0{,}45\,\text{MJ} = 450\,\text{kJ}$ on tunnettu kymmenen kilojoulen tarkkuudella, joten erotus ilmoitetaan kymmenen kilojoulen tarkkuudella ja pyöristetään tulokseen $340\,\text{kJ}$.
 
 <!-- vaihe -->
 

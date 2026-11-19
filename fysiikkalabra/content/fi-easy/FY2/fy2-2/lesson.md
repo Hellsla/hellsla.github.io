@@ -439,7 +439,7 @@ Lämpöenergiaksi muuttuu $500\,\text{kJ} - 120\,\text{kJ} = 380\,\text{kJ}$. En
 ### Joule
 Energian symboli on $E$. Energian yksikkö on joule, ja sen merkki on J. Yksi joule on pieni energia. Sen verran energiaa tarvitaan suunnilleen siihen, että nostat omenan metrin verran ylöspäin. Omena painaa noin $0{,}1\,\text{kg}$. Tässä luvussa opit joulen suuruuden esimerkkien avulla.
 
-<figure class="unit-photo"><img src="pics/fy2/artemis-i-launch.webp" alt="Raketti nousee yöllä. Sen alla on kirkas liekki ja iso savupilvi."><figcaption>Artemis I -raketti lähti Floridasta marraskuussa 2022. Polttoaineen kemiallinen energia muuttuu liike-energiaksi, lämmöksi, valoksi ja ääneksi.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy2/artemis-i-launch.webp" alt="Raketti nousee yöllä. Sen alla on kirkas liekki ja iso savupilvi."><figcaption>Artemis I -raketti lähti Floridasta marraskuussa 2022. Polttoaineen kemiallinen energia muuttuu liike-energiaksi, lämpöenergiaksi, valoksi ja ääneksi.</figcaption></figure>
 
 ## Kaava: Energian yksikkö ja kerrannaisyksiköt
 Arjen energiat ovat jouleina isoja lukuja. Siksi käytetään etuliitteitä (luku *Suureet, yksiköt ja SI-järjestelmä*): kilo (k), mega (M), giga (G) ja tera (T). Jokainen etuliite on tuhatkertainen edelliseen verrattuna:
@@ -557,7 +557,7 @@ E_\text{lämpö} &= E_\text{alussa} - E_\text{liike} \\
 
 <!-- vaihe -->
 
-**Tulos.** Lämpöenergiaksi muuttuu $340\,\text{kJ}$. Tulos on pyöristetty kahden merkitsevän numeron tarkkuuteen. Alkuenergia $0{,}45\,\text{MJ}$ on nimittäin annettu kahdella merkitsevällä numerolla. Kokonaislukuna annettu $110\,\text{kJ}$ on tarkka arvo. Siksi tarkkuuden ratkaisee alkuenergia.
+**Tulos.** Lämpöenergiaksi muuttuu $340\,\text{kJ}$. Vähennyslaskussa tarkkuuden ratkaisee epätarkin tieto. Alkuenergia $0{,}45\,\text{MJ} = 450\,\text{kJ}$ on tunnettu kymmenen kilojoulen tarkkuudella. Siksi erotus ilmoitetaan kymmenen kilojoulen tarkkuudella ja pyöristetään tulokseen $340\,\text{kJ}$.
 
 <!-- vaihe -->
 

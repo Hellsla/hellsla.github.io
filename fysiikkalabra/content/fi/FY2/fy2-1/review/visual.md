@@ -1,11 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: b8cc95e8a8957bfd
+VERDICT: PASS
+CONTENT-HASH: 83e63bdbda6f62a9
 
 ## Blocking
-- [Major] fy2-1 lesson.md, first `pysahdy` block (theory-1280-1 capture) — the question shows literal asterisks "*lämpö*": the stop-and-think text is not run through markdown emphasis — visible stray markup in new text — drop the asterisks (or set the word in `\textit{}`-free plain words / use the same emphasis the page supports).
+- none (round 1 Major, literal asterisks in the first pysahdy question, is fixed)
 
 ## Polish
-- none
+- [Minor] third pysahdy: plain straight quotes around "tyhjenee"; Finnish typographic quotes (”tyhjenee”) would match the rest, optional.
 
 ## Checked
-- batch delta review: opened fy2-1-theory-1280-1, fig-row-1280; diff adds three pysahdy blocks; figures unchanged.
+- theory-1280-1..3 (all three boxes in place, figures kept their position after the paragraphs, layout survived).
+- Opened state: built preview/fy2-1.html rendered in Chrome at 1280 and 390 px with every Vastaus open; boxes 1-3 read: no stray markup, $50\,\text{J}$ rendered upright with thin space, no clipping.
+- Figures unchanged (diff adds only the three text blocks).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
