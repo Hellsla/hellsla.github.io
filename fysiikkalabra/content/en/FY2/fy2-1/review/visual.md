@@ -1,11 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: a902ad1753485a32
+VERDICT: PASS
+CONTENT-HASH: bde6c9a1099ffc1f
 
 ## Blocking
-- [Major] lesson.md, new "Stop and think" block in Key idea (fy2-1-theory-1280-1.png) — the question is written `*heat*` and the page shows literal asterisks ("the physics word *heat* mean...") because the question text is not markdown-rendered — visible markup in new text — drop the asterisks (the word is already glossary-linked above) or use plain text.
-
-## Polish
 - none
 
+## Polish
+- [Minor] lesson.md, Law of conservation of energy — the "Stop and think" block about the 50 J friction loss now sits between the skateboarder paragraph and its bar-chart figure, so the figure no longer follows the paragraph it explains — move the block after the figure.
+
 ## Checked
-batch delta review: opened fy2-1 theory-1280-1 and stage-selita-390-1; the new stop-and-think block renders as a closed, readable green card with the Answer toggle, layout intact; the other two new blocks share the same component and contain correct LaTeX units.
+- Delta round 2: opened fy2-1-theory-1280-1, -2, -3 and fy2-1-stage-selita-390-3.
+- The earlier Major (literal asterisks around heat) is fixed: the question reads "the physics word heat mean" in plain text.
+- All three new "Stop and think" cards render as closed green cards with an Answer toggle. The 50 J is set as KaTeX with an upright unit.
+- Neighbouring figures, table and layout are intact at 1280 and 390 px.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

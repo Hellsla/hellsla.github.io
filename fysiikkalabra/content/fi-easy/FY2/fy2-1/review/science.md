@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9e80b63c08550553
+CONTENT-HASH: 1ddf58d36f93523a
 
 ## Blocking
 
@@ -7,4 +7,5 @@ CONTENT-HASH: 9e80b63c08550553
 - None.
 
 ## Checked
-batch delta review: three new pysahdy blocks (heat as energy in transfer due to a temperature difference; isolated system: 50 J mechanical to 50 J lämpöenergia; battery energy not lost, transferred as heat) agree with the guardrails and FY2's lämpöenergia; worked-example stage 1 only split into paragraphs, numbers unchanged.
+- delta review: lesson.md:115, the pysahdy question only lost the italics around "lämpö"; the question still asks what the physics word "lämpö" means, and the answer (energy in transfer because of a temperature difference; the cup's lämpöenergia falls) is unchanged and fits the guardrail "heat is energy in transfer" and FY2's lämpöenergia.
+- No numbers, symbols or other content changed; the hash was the same at the start and at the end.

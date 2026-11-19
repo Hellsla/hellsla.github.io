@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8b7fc3f905554b7f
+CONTENT-HASH: d1b8cf415123c2e3
 
 ## Blocking
 
@@ -7,4 +7,9 @@ CONTENT-HASH: 8b7fc3f905554b7f
 - none
 
 ## Checked
-- batch delta review: diff adds pysahdy blocks only; checked the rendered block style in fy2-2 theory-1280-2 (maths, units, openable Vastaus fine) and fig-row-1280 for fy2-5 and fy2-8; the other lessons' own captures not individually opened, no literal markup in their block sources.
+- Delta of inquiry.json only (hint sentence removed from Ennuste 1, two optional flags removed, Tutki conclusion prompt reworded).
+- Opened fy2-4-stage-ennusta-390-1, fy2-4-open-ennusta-1280, fy2-4-stage-tutki-390-1, fy2-4-exp-koe-2-390-2: layout, maths and units fine; the simulation readout shows P_a, so "Lue simulaation näytöstä hyötyteho" is accurate.
+- The reworded conclusion question was not found in a capture; its source is LaTeX-clean (colon ratio).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
