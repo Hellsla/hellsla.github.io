@@ -127,6 +127,12 @@ An important reason is that the specific heat capacity of water is exceptionally
   <foreignObject x="427" y="317" width="170" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$c = 800\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$</div></foreignObject>
 </svg>
 
+```pysahdy
+The same amount of energy is transferred to equal masses of water and sand. Which warms up more, and why?
+---
+The sand. Its specific heat capacity is about one fifth of that of water, so the same energy raises its temperature about five times as much.
+```
+
 When a hot and a cold object are put into one insulated container, heat is transferred from the hotter to the colder one until both have the same temperature. This state is called thermal equilibrium. Energy is conserved: the heat given out by the hot object is equal to the heat received by the cold one. An insulated container in which this is measured is called a calorimeter, and the measurement is called a calorimetric measurement. With it you can determine the specific heat capacity of an unknown substance when the specific heat capacity of water is known.
 
 <svg data-fig="calorimeter" viewBox="0 0 600 432" role="img" aria-label="Calorimeter before and after thermal equilibrium, schematic, not to scale. Before: an insulated container holds 0.300 kg of water at 20.0 °C, and above it a 0.200 kg metal object at 100.0 °C hangs from a thread. After: the object is in the water, and both the water and the object are at a temperature of 24.5 °C. The heat given out by the metal is equal to the heat received by the water." style="max-width:100%;font-size:24px">
@@ -174,6 +180,12 @@ heat capacity :: C = c m
 ```
 tells how many joules it takes to raise the temperature of the object by one kelvin. $C$ is the heat capacity (J/K), $c$ the specific heat capacity and $m$ the mass. An object with a large heat capacity warms and cools slowly.
 
+```pysahdy
+The heat capacity of an object is $C = 300\,\text{J/K}$. How much energy is needed to warm it by $4.0\,\text{K}$?
+---
+The heat capacity gives the energy per kelvin, so $300\,\text{J/K} \cdot 4.0\,\text{K} = 1200\,\text{J}$ is needed.
+```
+
 In an insulated container, energy is conserved when the heat capacity of the container itself is ignored. The heat given out by the hot object $1$ is equal to the heat received by the cold object $2$:
 ```latex
 Q_\text{given out} = Q_\text{received}
@@ -199,6 +211,12 @@ When the equation is divided on both sides by the sum $c_1 m_1 + c_2 m_2$, you g
 T = \frac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}
 ```
 So the equilibrium temperature is a weighted mean of the initial temperatures, where the weights are the heat capacities $c_1 m_1$ and $c_2 m_2$ of the objects. You get the ordinary mean only when the heat capacities are equal.
+
+```pysahdy
+In an insulated container, equal masses of the same liquid at $20\,{}^\circ\text{C}$ and $60\,{}^\circ\text{C}$ are mixed. What is the equilibrium temperature?
+---
+The heat capacities are equal, so the equilibrium temperature is the ordinary mean: $(20\,{}^\circ\text{C} + 60\,{}^\circ\text{C})/2 = 40\,{}^\circ\text{C}$.
+```
 
 | Substance | $c$ (J/(kg·K)) |
 | --- | --- |

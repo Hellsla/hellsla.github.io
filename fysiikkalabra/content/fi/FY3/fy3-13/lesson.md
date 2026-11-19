@@ -139,9 +139,21 @@ Suljetussa jäykässä astiassa kaasun tilavuus ja ainemäärä eivät muutu, jo
 
 Kun mittaustulokset piirretään kuvaajaan, pisteet asettuvat lähes suoralle: paine kasvaa lähes yhtä paljon jokaista celsiusastetta kohti. Todellisissa mittaussarjoissa pisteet eivät silti yleensä ole täsmälleen samalla suoralla mittausepävarmuuden vuoksi. Mittausepävarmuus kuvaa mittaustulokseen liittyvää epävarmuutta. Se ei yleensä tarkoita ehdotonta suurinta mahdollista poikkeamaa oikeasta arvosta. Tässä paineen lukeman epävarmuudeksi on arvioitu $\pm 1\,\text{kPa}$. Valmistajan mittarille ilmoittama virheraja on eri asia: se on laitteen ominaisuus, ja mittauksen epävarmuuteen vaikuttavat lisäksi esimerkiksi lukeminen ja hauteen lämpötilan tasaantuminen. Suora piirretään siksi pisteiden joukon keskeltä niin, että se kulkee epävarmuusvälien kautta, ei välttämättä jokaisen pisteen kautta.
 
+```pysahdy
+Suora piirretään pisteparven keskeltä. Pitääkö sen kulkea jokaisen pisteen kautta?
+---
+Ei. Sen pitää kulkea epävarmuuspalkkien kautta, ei välttämättä jokaisen pisteen, koska mittausepävarmuus saa pisteet hajoamaan.
+```
+
 <figure class="unit-photo"><img src="pics/fy3/liquid-nitrogen-dish.webp" alt="Käsi pitelee lasimaljaa, jossa on nestemäistä typpeä. Maljan ympäriltä valuu valkoista sumua tummaa taustaa vasten."><figcaption>Nestemäistä typpeä lasimaljassa tiedefestivaalilla vuonna 2025. Valkoinen sumu on kylmän typpihöyryn ympärille tiivistyneitä vesipisaroita.</figcaption></figure>
 
 Suoraa jatketaan mittausalueen ulkopuolelle kohti kylmempää, kunnes paine on nolla. Tätä sanotaan ekstrapoloinniksi: tulos saadaan alueelta, jolla ei ole mitattu mitään. Mikromallin mukaan paine syntyy hiukkasten törmäyksistä seinään. Ideaalikaasun mallissa paine olisi nolla siinä lämpötilassa, jossa hiukkasten keskimääräinen liike-energia on pienimmillään. Lämpötila, jossa suora osuu nollapaineeseen, on kokeen antama arvio absoluuttiselle nollapisteelle. Se on vain arvio: todellinen kaasu nesteytyy jo ennen sitä, ja jatke on malli.
+
+```pysahdy
+Miksi lämpötila, jossa suora osuu nollapaineeseen, on vain arvio absoluuttisesta nollapisteestä?
+---
+Se saadaan ekstrapoloimalla alueelle, jolla ei ole mitattu mitään, ja todellinen kaasu nesteytyy jo ennen tuota pistettä. Jatke on malli.
+```
 
 ## Kaava: Nollapaineen lämpötila
 Mittausalueella kaasun paine on lämpötilan lineaarinen funktio:
@@ -209,6 +221,12 @@ missä $\theta_{0,\text{max}}$ on suurempi (vähemmän negatiivinen) ja $\theta_
 </svg>
 
 Kuva on piirretty mittakaavassa. Ääriviivat kulkevat lähellä toisiaan mittausalueella mutta eroavat ekstrapoloitaessa, joten epävarmuus kasvaa jatkettaessa. Epävarmuutta pienentävät tarkempi painemittari, useampi mittauspiste ja leveämpi mittausalue. Kun tulos tunnetaan, kelvinasteikon nollapiste asetetaan siihen: lämpötila kelvineinä on $T = \theta - \theta_0$.
+
+```pysahdy
+Ääriviivat eroavat toisistaan, kun suoraa jatketaan. Mitä se tarkoittaa lämpötilan $\theta_0$ epävarmuudelle?
+---
+Mitä pidemmälle suoraa jatketaan, sitä suurempi lämpötilan $\theta_0$ epävarmuus on.
+```
 
 ## Esimerkki
 Esimerkkiaineistossa on suljetun pullon ilman paine seitsemässä lämpötilassa, kuten kaasulämpömittarilla mitattaisiin. Arvot on laskettu ideaalikaasumallista ja niihin on lisätty mittausepätarkkuutta vastaavaa hajontaa; ne eivät ole oikean mittauksen tuloksia. Paineen lukeman epävarmuudeksi on arvioitu $\pm 1\,\text{kPa}$.

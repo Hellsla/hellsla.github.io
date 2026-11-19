@@ -228,6 +228,12 @@ where $N$ is the number of particles, $m$ is the mass (g or kg) and $M$ is the m
   <foreignObject x="20" y="281.5" width="560" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{in each container }n = 1.00\,\text{mol},\ \text{same }p, T$</div></foreignObject>
 </svg>
 
+```pysahdy
+The molar mass of helium is $4.00\,\text{g/mol}$. How many moles are there in $8.0\,\text{g}$ of helium?
+---
+The amount of substance is $n = m/M = 8.0\,\text{g}/4.00\,\text{g/mol} = 2.0\,\text{mol}$.
+```
+
 The ideal gas is a microscopic model. In it, the particles are thought of as points, and they interact with each other and with the walls of the container only when they collide. So the energy of the interactions between the particles is negligible in the model, and the temperature in kelvins is directly proportional to the mean kinetic energy of the particles. Pressure comes from collisions with the walls. It grows when there are more particles, when they move faster (that is, the temperature is higher) or when the volume is smaller. Real gases follow the model well in ordinary conditions. The model starts to fail at high pressures and low temperatures, when the particles are close together and the attraction between them condenses the gas into a liquid.
 
 ## Formula: Equation of state of an ideal gas
@@ -244,6 +250,12 @@ Precise measurements give the value $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\
 ideal gas law :: pV = nRT
 ```
 where $p$ is the absolute pressure of the gas, $V$ the volume, $n$ the amount of substance, $R$ the molar gas constant and $T$ the temperature in kelvins. The type of gas does not appear in the equation at all. A temperature $\theta$ given in degrees Celsius is converted to kelvins by adding $273.15$ to the numerical value.
+
+```pysahdy
+Two balloons of the same size are at the same pressure and temperature, one with helium and one with air. Do they contain the same amount of gas?
+---
+Yes. The type of gas does not appear in the equation $pV = nRT$, so the same $p$, $V$ and $T$ mean the same amount of substance $n$. The masses differ because the molar masses differ.
+```
 
 When the value of the gas constant
 ```latex
@@ -409,6 +421,12 @@ When you solve the equation of state for pressure, you see that the pressure dou
   <foreignObject x="473.5" y="211.5" width="103" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$N,\ T,\ V/2$</div></foreignObject>
   <foreignObject x="508.5" y="251.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2p$</div></foreignObject>
 </svg>
+
+```pysahdy
+The temperature of a gas in kelvins doubles and its volume doubles. The number of particles stays the same. What happens to the pressure?
+---
+The pressure does not change, because $p \propto NT/V$ and the two factors of 2 cancel.
+```
 
 In the simulation you can investigate this at the particle level: change the number of particles, the temperature and the volume, and compare the pressure measured at the walls with the prediction of the equation of state, which you calculate yourself. Collisions between the particles do not change the pressure on average, so they have been left out of the simulation. In the simulation the pressure is shown relative to a reference state ($p/p_\text{ref}$), not in pascals. The reference state is $N = 100$ particles, $T = 300\,\text{K}$ and the full volume ($V = 100\,\%$); in it $p/p_\text{ref} = 1$, and the value 2 means twice the reference pressure. The number of particles $N$ represents the amount of gas.
 

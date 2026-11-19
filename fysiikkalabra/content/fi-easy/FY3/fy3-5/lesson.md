@@ -48,6 +48,12 @@ Luvussa *Työ ja energia* opit, että työ siirtää energiaa. Joulen koe näytt
 
 Systeemin sisäenergia $U$ on kahden energian summa. Ensimmäinen on hiukkasten liike-energia. Toinen on hiukkasten välisten vuorovaikutusten energia. (Systeemi on se kappale tai aine, jota tutkit.) Luvussa *Energialajit ja energian säilyminen* tätä energiaa kutsuttiin lämpöenergiaksi. Tarkempi nimi on sisäenergia. Lämpötila kuvaa hiukkasten lämpöliikkeen voimakkuutta. Kaasussa lämpötila kertoo hiukkasten keskimääräisestä liike-energiasta. Kun aineen lämpötila nousee eikä olomuoto muutu, hiukkasten liike voimistuu ja sisäenergia kasvaa. Lämpötila ja sisäenergia eivät silti ole sama asia. Kun olomuoto muuttuu, sisäenergia muuttuu, vaikka lämpötila pysyy samana. Esimerkiksi puhdas jää sulaa normaalipaineessa. Silloin sisäenergia kasvaa, mutta lämpötila pysyy $0\,{}^\circ\text{C}$:ssa. Sisäenergia riippuu myös aineen määrästä. Iso järvi sisältää paljon enemmän sisäenergiaa kuin kuppi kuumaa teetä, vaikka järvi on kylmempi.
 
+```pysahdy
+Puhdas jää sulaa normaalipaineessa. Mitä sen sisäenergialle ja lämpötilalle tapahtuu?
+---
+Sisäenergia kasvaa. Lämpötila pysyy $0\,{}^\circ\text{C}$:ssa. Lämpötila ja sisäenergia eivät ole sama asia.
+```
+
 Systeemin sisäenergiaa voi muuttaa kahdella tavalla.
 
 Ensimmäinen tapa on työ. Pumpun mäntä puristaa ilmaa. Silloin ympäristö tekee kaasuun työtä, ja kaasun sisäenergia kasvaa. Liikkuva mäntä osuu hiukkasiin kuin maila palloon, ja hiukkaset kimpoavat nopeampina. Simulaatiossa tämän näkee hiukkastasolla. Siksi pumppu kuumenee.
@@ -90,6 +96,12 @@ Toinen tapa on lämpö. Kaksi eri lämpötilassa olevaa kappaletta koskettaa toi
   <foreignObject x="432" y="43.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Q$</div></foreignObject>
   <foreignObject x="344.5" y="261.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kuumasta kylmään}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Joku sanoo, että kuumassa teekupissa on paljon lämpöä. Onko väite fysiikan kannalta oikein?
+---
+Ei ole. Kupissa on sisäenergiaa. Lämpö on energian siirtymistä kuumemmasta kylmempään. Kappaleella ei ole lämpöä.
+```
 
 Energia säilyy. Oletetaan, että systeemin liike- ja potentiaalienergia eivät muutu. Kun systeemiin siirtyy energiaa lämpönä tai työnä, sen sisäenergia kasvaa täsmälleen siirtyneen energian verran. Kun energiaa siirtyy pois, sisäenergia pienenee yhtä paljon. Tämä on termodynamiikan ensimmäinen pääsääntö. Se on energian säilymisen laki kirjoitettuna lämmölle ja työlle.
 
@@ -154,6 +166,12 @@ Kaikki termit ovat jouleja. Työn yksikkö oli sama luvussa *Työ ja energia*. M
   <foreignObject x="58.5" y="269.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ympäristö tekee työn}$</div></foreignObject>
   <foreignObject x="363.5" y="269.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kaasu tekee työn}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Kaasu laajenee ja työntää mäntää. Silloin se tekee ympäristöön työn $30\,\text{J}$. Kaasuun ei siirry lämpöä eikä siitä siirry pois. Kuinka paljon kaasun sisäenergia muuttuu?
+---
+Kaasu tekee työn ympäristöön, joten $W = -30\,\text{J}$. Lämpöä ei siirry, joten $Q = 0$. Siis $\Delta U = Q + W = -30\,\text{J}$. Sisäenergia pienenee $30\,\text{J}$.
+```
 
 ## Esimerkki
 Pumpun sylinterissä on ilmaa. Mäntää painetaan alas. Ympäristö tekee ilmaan työn $150\,\text{J}$. Samalla kuumenevasta ilmasta siirtyy sylinterin seinien kautta ympäristöön lämpömäärä $40\,\text{J}$. Kuinka paljon ilman sisäenergia muuttuu?

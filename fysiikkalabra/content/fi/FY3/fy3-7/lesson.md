@@ -148,7 +148,19 @@ Sulaminen ja höyrystyminen vaativat energiaa, mutta eivät nosta lämpötilaa. 
 
 Samasta syystä kiehuva vesi pysyy $100\,{}^\circ\text{C}$:ssa, vaikka liesi on täysillä: siirtyvä energia höyrystää vettä eikä nosta sen lämpötilaa. Höyry vie noin 1700 kertaa enemmän tilaa kuin vesi, joten laajetessaan se työntää ympäröivää ilmaa. Pieni osa höyrystämiseen tarvittavasta energiasta kuluu tähän työhön, ja suurin osa kasvattaa molekyylien välistä vuorovaikutusenergiaa. Mitä suurempi teho, sitä nopeammin vesi kiehuu pois, mutta ei sitä kuumemmaksi. Veden höyrystyessä sitoutunut energia vapautuu takaisin, kun höyry tiivistyy, ja siksi 100-asteinen höyry polttaa pahemmin kuin 100-asteinen vesi.
 
+```pysahdy
+Kattilassa vesi kiehuu. Liesi säädetään suuremmalle teholle. Mitä veden lämpötilalle tapahtuu?
+---
+Lämpötila ei muutu vaan pysyy noin $100\,{}^\circ\text{C}$:ssa. Suurempi teho höyrystää veden nopeammin.
+```
+
 Sulamiseen ja höyrystymiseen tarvittava lämpömäärä on suoraan verrannollinen massaan. Kertoimet ovat aineelle ominaisia: ominaissulamislämpö $s$ kertoo, kuinka paljon energiaa yhden kilogramman sulattaminen vaatii, ja ominaishöyrystymislämpö $r$, kuinka paljon yhden kilogramman höyrystäminen vaatii. Vedelle $s = 334\,\text{kJ/kg}$ ja $r = 2260\,\text{kJ/kg}$. Höyrystäminen vaatii siis lähes seitsemän kertaa enemmän energiaa kuin sulattaminen ja yli viisi kertaa enemmän kuin veden lämmittäminen $0\,{}^\circ\text{C}$:sta $100\,{}^\circ\text{C}$:seen.
+
+```pysahdy
+Veden ominaissulamislämpö on $s = 334\,\text{kJ/kg}$. Kuinka paljon energiaa tarvitaan $0{,}50\,\text{kg}$:n jään sulattamiseen?
+---
+Energia on verrannollinen massaan, joten tarvitaan $0{,}50\,\text{kg} \cdot 334\,\text{kJ/kg} = 167\,\text{kJ}$.
+```
 
 Kiehumispiste riippuu paineesta. Faasikaavio esittää, missä olomuodossa aine on kussakin lämpötilassa ja paineessa: sen käyrät yhdistävät sulamis-, kiehumis- ja sublimoitumispisteet eri paineissa. Vuorella, jossa ilmanpaine on pienempi, vesi kiehuu alle $100\,{}^\circ\text{C}$:n lämpötilassa, ja painekattilassa paine nostaa kiehumispisteen yli $100\,{}^\circ\text{C}$:n, jolloin ruoka kypsyy nopeammin.
 
@@ -181,6 +193,12 @@ Kiehumispiste riippuu paineesta. Faasikaavio esittää, missä olomuodossa aine 
   <foreignObject x="281.5" y="70.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{neste}$</div></foreignObject>
   <foreignObject x="380" y="260" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kaasu}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Miksi ruoka kypsyy painekattilassa nopeammin kuin avoimessa kattilassa?
+---
+Paine nostaa kiehumispisteen yli $100\,{}^\circ\text{C}$:n, joten vesi on kuumempaa.
+```
 
 ## Kaava: Sulamis- ja höyrystymislämpö
 Massan $m$ sulattamiseen tai höyrystämiseen tarvittava lämpömäärä on

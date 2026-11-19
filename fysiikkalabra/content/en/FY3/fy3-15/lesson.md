@@ -101,6 +101,12 @@ In a condensing power plant the chain is fuel, boiler, turbine and condenser, ge
 
 The biggest loss is not mainly caused by friction or poor technology. Most of it is the waste heat of the steam cycle, which a heat engine cannot avoid completely: part of the heat must be released to a colder environment, as was seen in the chapter Work done by a gas and the heat engine. A hydropower plant, a wind turbine and a solar panel are not heat engines, so they do not have this compulsory loss: the efficiency of a hydropower plant is about $90\,\%$, of a wind turbine $40$–$45\,\%$ and of a solar panel about $20\,\%$. However, the denominator of these numbers is the power of flowing water, wind or radiation and not bought fuel, so they cannot be compared directly with the efficiency of a combustion plant.
 
+```pysahdy
+A wind turbine has an efficiency of $40\,\%$, the same as the condensing power plant in the figure. Can the two numbers be compared directly?
+---
+No. The efficiency of a wind turbine is relative to the power of the wind, not to bought fuel, and the turbine is not a heat engine.
+```
+
 In combined heat and power production the heat of the condenser is led into the district heating network. For the water to warm up enough, the steam is condensed at a higher temperature, and less electricity is obtained from the turbine. The graph shows an example plant with a fuel power of $400\,\text{MW}$: as the district heating power grows, the electric power decreases a little, but the waste heat decreases much more. In the graph the vertical distance across a layer is power, and the total height of the three layers is always $400\,\text{MW}$.
 
 <svg viewBox="0 0 600 380" role="img" aria-label="Stacked area graph of a combined heat and power plant with a fuel power of 400 MW. The horizontal axis shows the district heating power 0–250 MW and the vertical axis shows power. As the district heating power grows from zero to 232 MW, the electric power decreases from 160 MW to 120 MW, district heating grows and waste heat decreases from 240 MW to 48 MW. The total height of the three layers is always 400 MW. The graph is to scale, and the dependence of electricity and heat is approximately a straight line." style="max-width:100%;font-size:24px">
@@ -145,6 +151,12 @@ In combined heat and power production the heat of the condenser is led into the 
 </svg>
 
 The overall efficiency rises in combined production to as much as 85–$90\,\%$, but electricity and heat are not equally valuable. Electricity can be used for anything, and it can be transmitted hundreds of kilometres. District heating is mainly used for heating buildings and domestic hot water, but it can also be used, for example, to produce cooling and in industrial heat processes. Its network reaches only a town. In summer the need for district heating is usually smaller than in winter. The ratio of electric to thermal power of a plant, and how it is run, depend on the type of plant and on the energy demand.
+
+```pysahdy
+A combined heat and power plant has an overall efficiency of $85\,\%$. Is its output as valuable as $85\,\%$ in electricity?
+---
+No. Electricity can be used for anything and transmitted far, but district heating is mainly for heating buildings and reaches only a town.
+```
 
 <figure class="unit-photo"><img src="pics/fy3/nesjavellir.webp" alt="White power plant buildings in a green valley among mountains, with a tall white cloud rising from one of them."><figcaption>The Nesjavellir geothermal power plant in Iceland produces electricity and district heat. The cloud rising from the plant is condensed water vapour that carries waste heat to the surroundings.</figcaption></figure>
 
@@ -198,6 +210,12 @@ where $\eta_1$, $\eta_2$ and $\eta_3$ are the efficiencies of the steps (boiler,
   <foreignObject x="460" y="196" width="120" height="38"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{loss}$</div></foreignObject>
   <foreignObject x="460" y="234" width="120" height="38"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$12\,\text{MW}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Three steps have the efficiencies $0.90$, $0.40$ and $0.95$. What is the efficiency of the whole chain?
+---
+The efficiencies are multiplied: $\eta = 0.90 \cdot 0.40 \cdot 0.95 = 0.342 \approx 0.34$, that is $34\,\%$. It is less than that of the weakest step, $0.40$.
+```
 
 In a combined heat and power plant both electricity and district heating are obtained as useful output, so the overall efficiency is
 ```latex
