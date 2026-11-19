@@ -354,6 +354,12 @@ Saman tehon voi siirtää kahdella tavalla. Voi käyttää pientä jännitettä 
 
 Muuntaja nostaa jännitteen voimalaitoksella. Se laskee jännitteen takaisin käyttäjän lähellä. Hyvässä muuntajassa häviö on hyvin pieni.
 
+```pysahdy
+Kaksi voimalinjaa siirtää saman tehon. Toisessa jännite on suuri ja toisessa pieni. Kummassa linjassa johtimet lämpenevät enemmän?
+---
+Pienemmän jännitteen linjassa. Siellä virta on suurempi. Suuri virta lämmittää johdinta enemmän.
+```
+
 <figure class="unit-photo"><img src="pics/fy2/muurame-transformer.webp" alt="Iso muuntaja sähköasemalla aidan takana."><figcaption>Sähköaseman muuntaja Muuramessa. Muuntaja laskee voimajohdon korkean jännitteen pienemmäksi.</figcaption></figure>
 
 ### Kaukolämpö
@@ -394,6 +400,12 @@ Sähköverkossa osa sähköenergiasta muuttuu johtimissa ja muissa laitteissa si
 
 Suomessa sähköverkon häviöt olivat vuonna 2024 noin $4\,\%$ sähkön kulutuksesta. Kulutus oli noin $83\,\text{TWh}$ (Energiateollisuus, Sähkövuosi 2024). Tässä luvussa kulutusta käytetään sähköverkon lähtevänä energiana. Siksi $4\,\%$ on osuus siitä. Kaukolämmön verkkoon hankittiin vuonna 2024 noin $36\,\text{TWh}$. Asiakkaille käytettiin noin $32{,}7\,\text{TWh}$. Siis noin $9\,\%$ jäi matkalle (Energiateollisuus, Kaukolämpötilasto 2024). Osuus on laskettu erotuksesta, joten se on arvio. Kaukolämmön häviö on suhteessa suurempi, koska kuuma vesi on ympäristöä selvästi lämpimämpää. Mitä suurempi lämpötilaero ympäristöön on, sitä enemmän lämpöä karkaa. Lämpöä pääsee eristeen läpi koko putkiston pituudella.
 
+```pysahdy
+Verkkoon syötetään $100\,\text{GWh}$ energiaa. Käyttäjille tulee $91\,\text{GWh}$. Kuinka suuri siirtohäviö on? Katosiko häviöön mennyt energia?
+---
+Häviö on $9\,\text{GWh}$, eli $9\,\%$ syötetystä energiasta. Energia ei kadonnut. Se siirtyi lämpönä ympäristöön.
+```
+
 ### Energian siirtäminen ajassa: varastointi
 
 Energiaa siirretään myös ajassa. Tuulivoimaa ja aurinkosähköä syntyy silloin, kun tuulee tai paistaa. Sähköä tarvitaan kuitenkin muulloinkin. Varasto ottaa energiaa vastaan silloin, kun sitä on liikaa. Se luovuttaa energian myöhemmin.
@@ -430,6 +442,12 @@ Energiaa siirretään myös ajassa. Tuulivoimaa ja aurinkosähköä syntyy sillo
 </svg>
 
 Akkuun energia varastoituu kemialliseksi energiaksi. Pumppuvoimalassa vettä pumpataan ylempään altaaseen. Alas valuva vesi pyörittää voimalaitoksen koneita. Lämpövarastossa kuuma vesi säilyy eristetyssä säiliössä. Sitä käytetään esimerkiksi kaukolämpöverkossa. Sähköä ei varastoida suuria määriä sellaisenaan. Sähkö muutetaan toiseksi energialajiksi ja takaisin. Jokaisessa muunnoksessa osa energiasta muuttuu lämmöksi.
+
+```pysahdy
+Pumppuvoimalassa vesi pumpataan ylemmäs altaaseen. Myöhemmin vesi päästetään virtaamaan alas. Missä muodossa energia on varastossa? Saadaanko kaikki energia takaisin sähköksi?
+---
+Energia on varastossa ylemmän altaan veden potentiaalienergiana. Kaikkea ei saada takaisin. Jokaisessa muunnoksessa osa energiasta muuttuu lämmöksi.
+```
 
 ## Kaava: Siirtohäviö
 
