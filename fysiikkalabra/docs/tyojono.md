@@ -7,7 +7,7 @@ Tämä on ainoa työjono (opettaja 2026-11-13): ei GitHub Issuesia eikä erillis
 `docs/ROADMAP.md`:n järjestyksessä. Kohdan ottava ketju katsoo ensin avoimet pull requestit, merkitsee kohtaan
 ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta muut ketjut näkevät varauksen
 (repon juuren `CLAUDE.md`). Saman kurssin kohdat tehdään peräkkäin, eri kurssien yleensä enintään kolme rinnakkain
-(nyt enintään viisi, opettaja 2026-11-16); kun opettaja sanoo työn kiireelliseksi, ei ylärajaa (opettaja 2026-11-15).
+(nyt enintään kolme, opettaja 2026-11-19: "pudota tekijöiden määrä" → "kolme"); kun opettaja sanoo työn kiireelliseksi, ei ylärajaa (opettaja 2026-11-15).
 Jonon pitää pysyä lyhyenä (alle 200 riviä): tässä on vain se, mitä tekijä tarvitsee aloittaakseen; täysi vanha teksti,
 tehdyt kurssit ja opit ovat `docs/tyojono-loki.md`:ssä ("loki §N"), kirjatut päätökset `docs/decisions/tyojono-paatokset.md`:ssä.
 
@@ -85,7 +85,8 @@ Turha pystyväli kuvan vierellä, kuva ja pieni taulukko tai kaksi pientä taulu
 viereen, valokuva kuvateksteineen oikealle palstalle (`build.py fig_rows`, site.css, `check_layout.py`). Ennen/jälkeen-kuvat: fy3-8, fy4-3, fy1-1 (1280, 1440, 1920 px). Täysi kuvaus: loki §8e.
 
 ## 8f. Animoitu kuva (opettaja 2026-11-13, pilotti fy3-8)
-Pilotti tehty (#649, `Fig(anim=True)`/`vibrate()`) ja opettajan hyväksymä (commit 615ab0d). **Opettaja 2026-11-18 klo 20.55 ("joo"): laajennetaan muihin lukuihin.** Ensin ehdokasluettelo (luvut, joissa ilmiö on luonnostaan liikettä, esim. FY7 värähtelyt ja aallot, FY3 lämpöliike ja diffuusio, FY6 virta johtimessa) opettajalle, kuvat vasta hyväksynnän jälkeen. Ehdokasluettelo `docs/audits/2026-11-18-8f-ehdokkaat.md` (#737). **Opettaja 2026-11-18 klo 22.00: tehdään ehdokkaat 1–5 ja 10 (fy5-10 birth ja types, fy5-13 superpositio ja solmut, fy5-7 ympyra ja osat, fy3-9 micro-boyle ja fy3-3 micro-model, fy4-10 vuorovaikutus ja tyypit); still-kuva säilytetään talteen (ei korvata).** Ensin jaettu figlib-primitiivi (travel/drift/orbit) yksin, sitten kuvat kurssi kerrallaan. Vaatimukset: loki §8f.
+Varattu: claude/8f-primitiivit (jaettu osa: figlib-primitiivit, ei sisältölukuja)
+Pilotti tehty (#649, `Fig(anim=True)`/`vibrate()`) ja opettajan hyväksymä (commit 615ab0d). **Opettaja 2026-11-18 klo 20.55 ("joo"): laajennetaan muihin lukuihin.** Ensin ehdokasluettelo (luvut, joissa ilmiö on luonnostaan liikettä, esim. FY7 värähtelyt ja aallot, FY3 lämpöliike ja diffuusio, FY6 virta johtimessa) opettajalle, kuvat vasta hyväksynnän jälkeen. Ehdokasluettelo `docs/audits/2026-11-18-8f-ehdokkaat.md` (#737). **Opettaja 2026-11-18 klo 22.00: tehdään ehdokkaat 1–5 ja 10 (fy5-10 birth ja types, fy5-13 superpositio ja solmut, fy5-7 ympyra ja osat, fy3-9 micro-boyle ja fy3-3 micro-model, fy4-10 vuorovaikutus ja tyypit); still-kuva säilytetään talteen (ei korvata).** Ensin jaettu figlib-primitiivi (travel/drift/orbit) yksin (#740; **demo hyväksytty: opettaja 2026-11-19 aamulla, "kaikki ok"**), sitten kuvat kurssi kerrallaan: FY5 → FY3 → FY4. Vaatimukset: loki §8f.
 
 ## 8g. Mallivastaukset perusperiaatteesta (opettaja 2026-11-13)
 Tehty: FY4 (#727, 2026-11-18; 5d FY4: FY4.tsv:n rivit jäivät, CI-selain näkee 4–6 px:n leikkaukset). FY7 tehty (PR #726, loki §8g FY7). Jäljellä FY5, FY6, FY1–FY3, FY8.
@@ -138,7 +139,7 @@ Suunnitelma `docs/FY9_ADAPTIVE_PLAN.md` (#566), hyväksytty P1–P12. PR 1 (YTL/
 PR 9 Abitti 2 -ohje; PR 10 kielimallin selvitys. Ei palvelinta, ei tekoälyrajapintaa; jokainen uusi käyttöliittymäteksti hyväksytään PR kerrallaan. Arvio 2,5–3,5 M tokenia.
 
 ## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
-17a PR 1 tehty (#720). Varattu: claude/17a-pr2-verkoton (17a PR 2: manifesti ja pysyvä tallennus; WebKit-lähteen tarkistus avoin, webkit.org estetty).
+17a PR 1 tehty (#720). Varattu: claude/17a-pr2-verkoton (17a PR 2: manifesti ja pysyvä tallennus; WebKit-lähteen tarkistus avoin; webkit.org sallittu ympäristöön 2026-11-19, opettajan luvalla).
 Ohjeet ja päätökset K1–K9: `docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md`. Jokainen osa oma PR, yksin; uudet käyttöliittymätekstit PR:n kuvauksessa. Tallennusavaimia, tiedostomuotoja ja korttien id:itä ei muuteta.
 Osat: 17a verkoton käyttö (service worker, manifesti, moduuli laitteelle), 17b koko työ yhteen tiedostoon, 17c yleisvirheiden tunnistus, 17d ajoitettu kertaus, 17e luokan yhteenveto, 17f hakemistot ja haku.
 Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, sitten 17f PR 3, 17a PR 3, 17b PR 2. Osien sisältö: loki §17.
@@ -164,13 +165,14 @@ Raportti tehty (#721, `docs/audits/2026-11-18-lopputarkistus-FY1-FY8.md`). **Hyv
 Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jälkeen; tämä rivi on hyväksynnän kirjaus (sääntö 5).
 - 8j: fy1-1, fy1-8 ja fy2-1 ohitetaan (ei kertaustehtävää).
 - 5d: FY5:n 16 ja FY6:n 25 jäljellä olevaa riviä jäävät listalle (myös fy5-7 `x = A \sin(…)`).
-- Pysähdy ja mieti: FY4:n luvut tehty (PR #745, kaikki kielet, katselmoitu); laajennus muihin kursseihin vain opettajan päätöksellä.
+- Pysähdy ja mieti: FY4:n luvut tehty (PR #745, kaikki kielet, katselmoitu); **opettaja 2026-11-19 aamulla ("kaikki ok"): laajennetaan muihin kursseihin**, kurssi kerrallaan saman kurssin keskeneräisen PR:n jälkeen.
 - FY6 Sovella: vastauksen paljastavat alakohdat ja ajautumisnopeus/idealisointi korjataan; ei uusia tehtävätyyppejä (ei diodi- eikä Kirchhoff-tehtäviä).
 - Pienet: header-raja 72 rem hyväksytty (jaettu, site.css); kirjavinkeissä suorat Finna-teoslinkit ja "Tiede – luovaa leikkiä" -kirjan suomenkielinen painos, jos löytyy; podcasteille YouTube-linkit sallittu; FY10:n taulukko-otsakkeet 390 px:ssä lyhennetään.
 - 0g PR 2 aloitetaan, kun päivän PR-jono on tyhjä. 8k (teacher-text) toteutetaan.
 - Podcastien YouTube-linkit jätetään pois toistaiseksi (opettaja 2026-11-18 klo 22.00).
-- 11 U2: opettaja 2026-11-18 klo 22.00: toimintarivin järjestys Kirjoita ratkaisu → vastauskenttä → Tarkista ("ensin kirjoitetaan ratkaisu, vasta sitten tarkistetaan"); uudet kuvat opettajalle ennen yhdistämistä.
+- 11 U2: opettaja 2026-11-18 klo 22.00: toimintarivin järjestys Kirjoita ratkaisu → vastauskenttä → Tarkista ("ensin kirjoitetaan ratkaisu, vasta sitten tarkistetaan"); uudet kuvat opettajalle ennen yhdistämistä. **Kuvat hyväksytty: opettaja 2026-11-19 aamulla ("kaikki ok").**
 - Podcastit-sivun (fi) muu kieli -laatikon teksti (opettaja 2026-11-18 klo 19.00, "käy"): lead "Haluatko kuulla fysiikkaa myös englanniksi?"; text "Tutustu englanninkielisiin fysiikan podcasteihin, dokumentteihin ja opetusvideoihin. Tutut ilmiöt avautuvat uudesta näkökulmasta, ja samalla opit fysiikan sanastoa englanniksi."; link ennallaan.
+- Opettajan päätökset 2026-11-19 aamulla (koordinaattorin chatissa, "Kaikki ok"): FY3 fy3-8 ensimmäisen tehtävän sanamuoto "1,000 kg vettä tilavuus" → "1,000 kg:n vesimäärän tilavuus" ja fy3-11:n merkitsevien numeroiden ohje (480 kW) täsmennetään (FY3:n seuraava PR); jaetut yksi kerrallaan: header 72 rem → CI-tarkistus site/-sivujen poistolle → 0g PR 2; rinnalla 5d FY2 (37) ja FY3 (23) riviä.
 - Kirjavinkkien Finna-tietuelinkit ja podcastien YouTube-linkit odottavat: Finna estää koneellisen haun (Cloudflare), YouTube-linkki vaatisi jaetun muutoksen (`media_tips.py`) ja opettajan päätöksen.
 
 ## 14. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13; juuri ennen vihkoja)
