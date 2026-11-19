@@ -1,6 +1,6 @@
 ok   lint
 ok   latex
-ok   i18n (en 0 error(s); fi-easy 0 error(s))
+FAIL i18n
 ok   build
 ok   sims
 ok   inquiry (114 passed, 0 failed)
@@ -10,4 +10,4 @@ ok   layout 390 px
 ok   layout 768 px
 ok   layout 1280 px
 browser for the layout: mcr.microsoft.com/playwright/python:v1.65.0-noble
-fy2-4: draft (science=stale, pedagogy=stale, visual=stale); exercises: reviewed (science=PASS (carried over: reflow), pedagogy=PASS (carried over: reflow), visual=PASS)
+fy2-4: reviewed (science=PASS, pedagogy=PASS, visual=PASS); exercises: draft (science=stale, pedagogy=stale, visual=stale)

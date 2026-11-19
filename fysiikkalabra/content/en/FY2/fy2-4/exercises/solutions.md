@@ -245,7 +245,12 @@ $$, as they should be. The typical efficiency of an LED lamp is about $30\,\%$. 
 **Principle:** Efficiency is the share of the useful energy in the energy taken, $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, so it is at most $100\,\%$. The calculation can be checked line by line: the unit conversions, the energy at steady power $E = P \cdot t$, the conservation of energy $E_\text{o} = E_\text{a} + E_\text{h}$, and the direction of the ratio.
 **Model answer:** Line 1: $2.5\,\text{kW} = 2500\,\text{W}$ and $4.0\,\text{min} = 240\,\text{s}$ are correct.
 Line 2: $E_\text{o} = 2500\,\text{W} \cdot 240\,\text{s}$, that is $E_\text{o} = 600\,000\,\text{J} = 600\,\text{kJ}$ is correct.
-Line 3: $E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}$ is correct.
+Line 3: $$
+\begin{aligned}
+E_\text{h} &= 600\,\text{kJ} - 360\,\text{kJ} \\
+&= 240\,\text{kJ}
+\end{aligned}
+$$ is correct.
 Line 4 is wrong, because the energies have been divided the wrong way round. The correct calculation is $$
 \begin{aligned}
 \eta &= \dfrac{E_\text{a}}{E_\text{o}} \\

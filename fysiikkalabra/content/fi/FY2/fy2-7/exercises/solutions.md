@@ -54,7 +54,12 @@ $$ on $4{,}0\,\%$ lähtevästä, mikä on sähköverkon tavallinen häviö.
 **Muunnokset:** $\eta = 100\,\% - 4{,}0\,\% = 96{,}0\,\% = 96{,}0 : 100 = 0{,}960$.
 **Sijoitus:** $P_\text{perille} = 0{,}960 \cdot 125\,\text{MW} = 120{,}0\,\text{MW}$
 **Vastaus:** $120\,\text{MW}$, kolme merkitsevää numeroa kuten lähtötehossa $125\,\text{MW}$.
-**Järkevyys:** Häviöteho on $4{,}0\,\% \cdot 125\,\text{MW} = 5{,}0\,\text{MW}$, ja $$
+**Järkevyys:** Häviöteho on $$
+\begin{aligned}
+&4{,}0\,\% \cdot 125\,\text{MW} \\
+&= 5{,}0\,\text{MW}
+\end{aligned}
+$$, ja $$
 \begin{aligned}
 &120{,}0\,\text{MW} + 5{,}0\,\text{MW} \\
 &= 125\,\text{MW}
@@ -240,7 +245,12 @@ $$.
 **Muunnokset:** Ei tarvita: jännitteet ovat kilovoltteina ja tehot megawatteina. Jännite $320\,\text{kV}$ on kaksinkertainen jännitteeseen $160\,\text{kV}$ verrattuna.
 **Sijoitus:** $k = \dfrac{16\,\text{MW}}{4{,}0\,\text{MW}} = \dfrac{4{,}0\,\text{MW}}{1{,}0\,\text{MW}} = \dfrac{1{,}0\,\text{MW}}{0{,}25\,\text{MW}} = 4{,}0$, joten $P_\text{häviö,320} = \dfrac{0{,}25\,\text{MW}}{4{,}0} = 0{,}0625\,\text{MW}$
 **Vastaus:** noin $0{,}063\,\text{MW}$, kaksi merkitsevää numeroa kuten taulukon arvossa $0{,}25\,\text{MW}$. Kun jännite kaksinkertaistetaan, häviöteho on neljäsosa. Perustelu: suuremmalla jännitteellä sama teho siirtyy pienemmällä virralla, ja pienempi virta lämmittää johtimia vähemmän. Kun jännite kaksinkertaistuu, virta puolittuu, ja häviö pienenee virtaa nopeammin: puolet pienempi virta antaa neljäsosan häviöstä.
-**Järkevyys:** Jännite kasvaa välillä $20\,\text{kV}$–$320\,\text{kV}$ kuusitoistakertaiseksi, ja häviöteho pienenee $16\,\text{MW} : 0{,}0625\,\text{MW} = 256$-kertaiseksi. Tulos on pienempi kuin $0{,}25\,\text{MW}$ mutta positiivinen, kuten pitääkin, ja se jatkaa taulukon kuviota.
+**Järkevyys:** Jännite kasvaa välillä $20\,\text{kV}$–$320\,\text{kV}$ kuusitoistakertaiseksi, ja häviöteho pienenee $$
+\begin{aligned}
+&16\,\text{MW} : 0{,}0625\,\text{MW} \\
+&= 256
+\end{aligned}
+$$-kertaiseksi. Tulos on pienempi kuin $0{,}25\,\text{MW}$ mutta positiivinen, kuten pitääkin, ja se jatkaa taulukon kuviota.
 
 ## fy2-7-L2-07
 **Kysytty:** mikä vastaus korjaa väitteen ”sähkö kulkee valon nopeudella, joten häviöitä ei ole”.

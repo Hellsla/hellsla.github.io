@@ -200,7 +200,12 @@ Voltage does not add energy, and the loss still does not disappear completely: a
 **Find:** the share of the sent energy that is lost, as a percentage
 **Principle:** The loss is the difference between the sent and the arrived energy, and the share of the loss is calculated from the sent energy.
 **Formula:** $E_\text{loss} = E_\text{sent} - E_\text{arrived}$, and the share $p = \dfrac{E_\text{loss}}{E_\text{sent}}$
-**Conversions:** The quotient is a decimal number, which is converted into a percentage by multiplying by one hundred: $0.048 = 0.048 \cdot 100\,\% = 4.8\,\%$.
+**Conversions:** The quotient is a decimal number, which is converted into a percentage by multiplying by one hundred: $$
+\begin{aligned}
+0.048 &= 0.048 \cdot 100\,\% \\
+&= 4.8\,\%
+\end{aligned}
+$$.
 **Substitution:** $E_\text{loss} = 250\,\text{MWh} - 238\,\text{MWh} = 12\,\text{MWh}$, and $p = \dfrac{12\,\text{MWh}}{250\,\text{MWh}} = 0.048 = 4.8\,\%$
 **Answer:** $4.8\,\%$, two significant figures, because the difference $12\,\text{MWh}$ is a two-digit number.
 **Reasonableness:** Four per cent of $250\,\text{MWh}$ would be $10\,\text{MWh}$, and the loss $12\,\text{MWh}$ is slightly greater, so $4.8\,\%$ is of the right size. Also $$

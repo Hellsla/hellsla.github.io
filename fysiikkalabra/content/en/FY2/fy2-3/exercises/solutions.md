@@ -257,9 +257,19 @@ The assumptions that affect the result: the four measured periods are representa
 ## fy2-3-L2-08
 **Find:** how the power $P$ of the stove changes when the same energy $E$ is transformed in half of the time.
 **Principle:** The stove transforms energy steadily, so power is energy divided by time, $P = E : t$. The energy is the same both times, so only the time affects the power, and the time is in the denominator of the quotient.
-**Model answer:** The first time $P_1 = 6.0\,\text{kWh} : 3.0\,\text{h} = 2.0\,\text{kW}$.
+**Model answer:** The first time $$
+\begin{aligned}
+P_1 &= 6.0\,\text{kWh} : 3.0\,\text{h} \\
+&= 2.0\,\text{kW}
+\end{aligned}
+$$.
 
-The second time $P_2 = 6.0\,\text{kWh} : 1.5\,\text{h} = 4.0\,\text{kW}$.
+The second time $$
+\begin{aligned}
+P_2 &= 6.0\,\text{kWh} : 1.5\,\text{h} \\
+&= 4.0\,\text{kW}
+\end{aligned}
+$$.
 
 So the power doubles: $$
 \begin{aligned}
