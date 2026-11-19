@@ -6,7 +6,8 @@
   python scripts/reviews.py scope <id> [--exercises]   per reviewer: none, delta or full, from what changed since its PASS
   python scripts/reviews.py check-report <id> [--lang en] [--exercises]   a report's own hash and a well-formed SCOPE line (also in verify)
   python scripts/reviews.py carry <id> [--exercises]   record that a reviewer's PASS carries over a change it need not see
-  python scripts/reviews.py approve-figures <id> …     record that the teacher approved the lesson's figures as drawn now
+  python scripts/reviews.py approve-figures <id> … [--images]   record that the teacher approved the lesson's figures as drawn now
+                                             (--images: only those drawn on a picture file, scripts/figimage.py)
   python scripts/reviews.py carry-item investigation|sovella|koe|unit|guide <id> [--lang en]
                                              the same carry for an investigation, a unit or a TVT guide (its id), a
                                              Sovella set or an example exam (the course, FY4): only over figures the
@@ -317,6 +318,7 @@ def entries(folder, src, part="lesson"):
     out = [(n, at(n), False) for n in PARTS[part]]
     texts = courses.EXERCISE_FILES if part == "exercises" else courses.LESSON_TEXTS if part == "lesson" else courses.TEXT_FILES
     refs = courses.pic_refs_in(src.read(at(n)) for n in texts)
+    refs = [r for r in refs if not figimage.is_base(r) or src.read(f"assets/{r}", True) is not None]   # a figure's picture that this version of the lesson does not have is no entry: an older commit hashes as it did before work queue 24
     if part != "all":                                  # figures a task refers to by id (scripts/figcat.py): their drawing code, and their words in a translation
         for fid in figcat.refs_in(" ".join(src.read(at(n)) or "" for n in FIGURE_TEXTS[part])):
             out.append((f"figure:{fid}", f"figure:{fid}", False))
@@ -1309,11 +1311,13 @@ def approved(fid):
     except Exception: return False
 
 
-def approve_figures(lid):
-    """Append a row for every figure of lesson `lid` (its figures.py, as drawn now) that has none for its current drawing."""
+def approve_figures(lid, images_only=False):
+    """Append a row for every figure of lesson `lid` (its figures.py, as drawn now) that has none for its current drawing.
+    images_only: only the figures drawn on a picture file (a row in lessons/<COURSE>/ASETTELU.tsv, scripts/figimage.py;
+    work queue 24: the hash covers the picture's bytes), so the other figures of the lesson stay as they were."""
     rows = teacher_figures(); folder = find_lesson(lid)
     mod = figcat.module(str(courses.code_dir(folder)))
-    new = [(f"{lid}/{name}", figure_hash(f"{lid}/{name}")) for name in getattr(mod, "FIGURES", {})]
+    new = [(f"{lid}/{name}", figure_hash(f"{lid}/{name}")) for name in getattr(mod, "FIGURES", {}) if not images_only or figimage.row(f"{lid}/{name}")]
     new = [(fid, h) for fid, h in new if h not in rows.get(fid, set())]
     if not TEACHER_FIGURES.is_file():
         TEACHER_FIGURES.write_text("# Figures the teacher approved as drawn (teacher 2026-11-10; scripts/reviews.py \"figures the teacher approved\").\n"
@@ -2409,7 +2413,7 @@ if __name__ == "__main__":
         errs = report_problems(find_lesson(a[1]), part); print("\n".join(errs) or "reports ok"); sys.exit(1 if errs else 0)
     elif a[0] == "carry": carry(find_lesson(a[1]), part)
     elif a[0] == "carry-item": item_carry(a[1], a[2], globals().get("LANG", i18n.SOURCE))
-    elif a[0] == "approve-figures": [approve_figures(x) for x in a[1:]]
+    elif a[0] == "approve-figures": [approve_figures(x, "--images" in a) for x in a[1:] if x != "--images"]
     elif a[0] == "approve-text":
         opt = lambda k: a[a.index(k) + 1] if k in a and a.index(k) + 1 < len(a) else None
         src_ = opt("--source")

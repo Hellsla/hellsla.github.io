@@ -12,7 +12,8 @@ ASETTELU.tsv (tab separated, one row per figure; the teacher's layout file with 
   tyyppi             diagram | illustration
   tiedosto           the file in assets/pics/<course>/ (WebP, at most 1600 px)
   x y leveys korkeus the picture's place in the figure's units; empty: the whole figure (an opening illustration)
-  siirrot            {"1": [dx, dy], ...} the labels moved, by their order in the figure (1 = the first label drawn)
+  siirrot            {"1": [dx, dy], ...} the labels moved, by their order in the figure, counted from 0 (0 = the first
+                     label drawn, the first Fig.tex call; checked against the teacher's merkinnoin/ pictures)
   ilman taustaa      [n, ...] the labels whose white background (Fig.tex bg=True) is dropped because the picture is
                      one flat colour under them; a label over a pattern (squared paper, hatching) keeps it
                      (teacher 2026-11-15; `figimage.py flat <COURSE>` writes the column from the pixels)
@@ -60,8 +61,9 @@ def layout(code):
 def code_of(fid):
     """The module a figure id belongs to (fy2-4/grid -> FY2), or None (a Sovella set, a unit, an investigation)."""
     owner = (fid or "").split("/")[0]
-    try: return courses.course_of(owner)
-    except Exception: return None
+    m = re.match(r"^([a-z]+)(\d+)-[0-9][0-9a-z]*$", owner)        # a lesson of a module (not fy5-sovella, a unit or an investigation)
+    code = f"{m.group(1).upper()}{m.group(2)}" if m else None
+    return code if code in courses.curriculum() else None
 
 
 def row(fid):
@@ -104,7 +106,7 @@ def source(fid, read=None):
     f = layout_file(r["code"]); rel = f.relative_to(ROOT).as_posix()
     text = (read(rel) if read else f.read_text(encoding="utf-8")) or ""
     mine = next((l for l in text.splitlines() if l.split("\t")[0] == fid), "")
-    return mine, courses.pic_source(pic(fid))
+    return (mine, courses.pic_source(pic(fid))) if mine else None      # a version that has no row for it hashes as it did before work queue 24
 
 
 def apply(svg, fid):
@@ -117,7 +119,7 @@ def apply(svg, fid):
     x, y, w, h = r["box"] or (0, 0, *map(float, re.search(r'viewBox="0 0 ([\d.]+) ([\d.]+)"', head.group(0)).groups()))
     num = lambda v: f"{v:.1f}".rstrip("0").rstrip(".")
     out = [head.group(0), f'  <image href="{pic(fid)}" x="{num(x)}" y="{num(y)}" width="{num(w)}" height="{num(h)}" preserveAspectRatio="none"/>']
-    for i, lab in enumerate(labels, 1):
+    for i, lab in enumerate(labels):
         dx, dy = r["shift"].get(i, (0, 0))
         if dx or dy:
             lab = re.sub(r'\bx="(-?[\d.]+)"', lambda m: f'x="{num(float(m.group(1)) + dx)}"', lab, count=1)
@@ -169,7 +171,7 @@ def flat(code):
         if r["box"] is None: continue
         svg = figcat.render(fid, raw=True)
         im = Image.open(courses.pic_source(pic(fid))).convert("L"); sx, sy = im.width / r["box"][2], im.height / r["box"][3]
-        for i, lab in enumerate(LABEL.findall(svg), 1):
+        for i, lab in enumerate(LABEL.findall(svg)):
             if not WHITE_BG.search(lab): continue
             g = lambda k: float(re.search(rf'\b{k}="(-?[\d.]+)"', lab).group(1))
             dx, dy = r["shift"].get(i, (0, 0))

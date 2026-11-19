@@ -122,6 +122,26 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   scale (ΔT 20 px and 105 px for c 4190 and 800). Gradients and patterns go in the figure's own `<defs>` with ids
   prefixed by the lesson (`fy36-water`), because two figures share one page. A filled path makes an arrow (a gradient
   on a vertical line's stroke does not render). Leave room: labels outside the shapes, a dashed rule between panels.
+- **A picture file as the base of a figure** (work queue 24, teacher 2026-11-19: the 662 figures redrawn and approved
+  15.–18.11.; `scripts/figimage.py`). A module's `lessons/<COURSE>/ASETTELU.tsv` has one row per figure (id, type, file,
+  x, y, width and height in the figure's own units, label shifts, labels without background). The file is a WebP of at
+  most 1600 px in `assets/pics/<course>/<owner>-<name>.webp` (all modules together under 100 MB: `figimage.py size`,
+  `test_figimage.py`). `figures.py` stays the source of the words: `scripts/figures.py` and `figcat.render` draw the
+  figure as before and then `figimage.apply` swaps the shapes for one `<image href="pics/<course>/…">` at the row's
+  place, keeping every label (a LaTeX `foreignObject`, in the order they are drawn, moved by the row's shifts, counted
+  from 0: label 0 is the first `Fig.tex` call), the `viewBox`, `aria-label` and `data-fig`. Rules: the picture carries no text and no
+  label is drawn in it; an opening illustration has no row place (x, y empty: the whole figure) and no labels; the
+  drawing is not changed, and a figure that does not fit its picture goes to the teacher (a new drawing needs a new
+  approval). A label's white background (`Fig.tex(bg=True)`) is dropped where the picture is one flat colour under it
+  and kept over a pattern such as squared paper (teacher 2026-11-15; `figimage.py flat <COURSE>` writes the column from
+  the pixels, the teacher's `merkinnoin/` pictures show the result). The same path serves a task's `"figure": "<id>"`
+  and the `en/` and `fi-easy/` pages (`build.py` copies the picture from its reference in the texts, `rebase` gives
+  it `../`). Review: the picture is a picture of the lesson, so its bytes are in the content hash (`courses.pic_refs_in`
+  finds `href="pics/…"` and a figure's picture by its id); `reviews.py approve-figures <id>` hashes the SVG and the
+  picture's bytes, and a changed approved picture or layout row is the carry category `teacher-figure`.
+  `lint_lesson.py` takes a figure on a picture as a coloured figure (`<text>` and LaTeX rules unchanged);
+  `check_layout.py` reports `svg-image` when the file does not load or does not fill its figure; `ci_scope.py` maps
+  `ASETTELU.tsv` to the pages of its figures.
 - **Opening illustration** (2026-10-26, teacher chose flat vector style; samples fy3-6, fy3-7). Every chapter opens
   (teacher 2026-10-29; `lint_lesson.py` errors without one) with a wide illustration of its Miksi scene right under the question: `Fig(..., width=1200, hero=True)` in
   figures.py (`data-fig="hero"`), 1200 × 600, figure palette plus the paper `#f6f1e6`, flat shapes, no text, the

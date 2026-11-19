@@ -17,6 +17,7 @@ In each state it reports:
              2026-11-08: long words break at soft hyphens, scripts/tablefit.py), a calculation row whose left
              side runs into its right side or wraps although the chain has room (2026-10-31)
   svg-text   a figure label that overlaps another label or leaves the figure (NOTES 3)
+  svg-image  the picture file of a figure drawn on one (scripts/figimage.py) did not load, or does not fill its figure's width
   column     a column whose content spills into its neighbour
   text       text wider than a reading column (44rem, about 80 characters)
   overlap    two blocks of the same group drawn over each other (task cards, figure units, solution steps, options)
@@ -181,6 +182,11 @@ JS = """() => {
     if (!r.width || !V(s) || s.closest('.kx-wide, .eq-chain')) continue;   // a root sign inside a wide formula's own scrolling line (lesson.js kx-wide) scrolls with it; a picture in a closed <details> has a box but is not drawn (content-visibility), and the 'open' state measures it once it shows (2026-11-11: the root sign of a display formula in fy1-4's closed sim box, laid out at the closed box's width)
     const card = s.closest('.kc-card'), lim = card ? card.getBoundingClientRect().right : vw;   // a concept card's own box is the limit
     if (r.right > lim + 1) out.push({at: W(s), what: 'svg', over: Math.round(r.right - lim), text: s.getAttribute('aria-label') || ''});
+    for (const im of s.querySelectorAll('image')) {      // a figure drawn on a picture file (scripts/figimage.py, work queue 24): the file loaded, and it fills the figure's place
+      const b = im.getBoundingClientRect();
+      if (!((window.__figimg || {})[im.getAttribute('href')] > 0)) out.push({at: W(s), what: 'svg-image', over: 0, text: 'the picture did not load: ' + im.getAttribute('href')});
+      else if (b.left < r.left - 3 || b.right > r.right + 3 || b.width < r.width * 0.3) out.push({at: W(s), what: 'svg-image', over: Math.round(Math.max(r.left - b.left, b.right - r.right)), text: 'the picture is not in its figure: ' + im.getAttribute('href')});
+    }
     const T = [...s.querySelectorAll('text'), ...s.querySelectorAll('foreignObject')].map((t) => ({t: t.textContent.trim().slice(0, 40), b: (t.querySelector('.katex, div') || t).getBoundingClientRect()})).filter((x) => x.t);
     // the 1 px allowance in the page's own scale (K), like the overlap below; an enlarged drawing is also placed on whole
     // pixels again, which moved a label 0.09 px past K (FY4-sovella, 0.92 px at 1280 px, 1.27 px at 1920 px), so the
@@ -287,6 +293,7 @@ with sync_playwright() as pw:
         page = b.new_page(viewport={"width": width, "height": 800})
         page.goto(page_file.as_uri())
         page.evaluate("document.fonts.ready.then(() => true)")   # measure with the page's own fonts, not a fallback
+        page.evaluate("""Promise.all([...document.querySelectorAll('main svg image')].map((i) => new Promise((ok) => { const m = new Image(); m.onload = () => ok([i.getAttribute('href'), m.naturalWidth]); m.onerror = () => ok([i.getAttribute('href'), 0]); m.src = new URL(i.getAttribute('href'), document.baseURI).href; }))).then((r) => { window.__figimg = Object.fromEntries(r); return true; })""")   # which picture files of figures drawn on one (scripts/figimage.py) load: the "svg-image" check
         page.wait_for_timeout(400)
         found = [dict(f, state="closed") for f in page.evaluate(HEADINGS)]
         for state, js in OPEN.items():

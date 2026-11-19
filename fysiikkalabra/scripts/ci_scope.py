@@ -22,6 +22,8 @@ The review system's own files (scripts/reviews.py, review_packet.py, their tests
 docs/teacher-figures.tsv, docs/teacher-text.tsv) change no page: their unit tests and `reviews.py verify` run in every run.
 "full" remains for: a file that decides what publishes (docs/visual-baseline.tsv), and an asset no lesson uses.
   content/<lang>/<COURSE>/<id>/**, lessons/<COURSE>/<id>/**   that page (sovella -> <COURSE>-sovella), any language
+  lessons/<COURSE>/ASETTELU.tsv                                the pages of the figures it lists and the pages that show one
+                                                               (the picture layout, scripts/figimage.py; work queue 24)
   tests/sims/<id>.json                                         that page
   assets/sims/..., assets/pics/..., assets/shared/{sims,pics}/  the lessons that use it (courses.deps());
                                                                used by none, or by an investigation or guide -> full
@@ -89,6 +91,13 @@ def scope(base, built=None):
         if n == "docs/visual-baseline.tsv": return "full", f"{n}: decides what publishes"
         m = re.fullmatch(rf"content/{LANG}/([^/]+)/([^/]+)/.+", n) or re.fullmatch(r"lessons/([^/]+)/([^/]+)/.+", n)
         if m: add(page_of(*m.groups()), n); continue
+        m = re.fullmatch(r"lessons/([^/]+)/ASETTELU\.tsv", n)      # the picture layout of a module (scripts/figimage.py): the pages of the figures it lists, and every page that shows one
+        if m:
+            import figimage
+            for fid in figimage.layout(m.group(1)):
+                add(fid.split("/")[0], n)
+                for u in deps.get(figimage.pic(fid), []): add(u, n)
+            continue
         m = re.fullmatch(r"tests/sims/([^/]+)\.json", n)
         if m: add(m.group(1), n); continue
         m = re.fullmatch(rf"site/(?:{LANG}/)?([^/]+)\.html", n) or re.fullmatch(r"site/([^/]+)-sim\.js", n)
