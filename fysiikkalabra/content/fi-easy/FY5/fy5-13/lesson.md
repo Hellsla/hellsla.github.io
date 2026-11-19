@@ -255,6 +255,12 @@ Kahden solmun välinen osa narusta liikkuu kokonaisena samaan suuntaan. Viereine
   <foreignObject x="320" y="291.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\tfrac{\lambda}{4}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Seisovan aallon kaksi vierekkäistä solmua on $0{,}30\,\text{m}$ päässä toisistaan. Mikä on aallonpituus?
+---
+Vierekkäisten solmujen etäisyys on puoli aallonpituutta. Siksi $\lambda = 2 \cdot 0{,}30\,\text{m} = 0{,}60\,\text{m}$.
+```
+
 ### Ominaistaajuudet
 Kitaran kielen kumpikin pää on kiinni, joten kumpikin pää on solmu. Seisova aalto syntyy vain, jos kielen pituudelle mahtuu kokonainen määrä puolikkaita aallonpituuksia. Muilla aallonpituuksilla edestakaisin kulkevat aallot ovat eri kierroksilla eri vaiheessa, ja ne kumoavat suurelta osin toisensa. Taajuuksia, joilla seisova aalto syntyy, sanotaan kielen **ominaistaajuuksiksi**. Kun kieltä herätetään ominaistaajuudella, jokainen heijastuskierros vahvistaa liikettä. Amplitudi kasvaa silloin suureksi. Tätä ilmiötä sanotaan **resonanssiksi**.
 
@@ -354,6 +360,12 @@ Tässä $f_n$ on $n$:s ominaistaajuus (Hz), $v$ on aallon nopeus kielessä (m/s)
 ### Soitin ja sävelkorkeus
 Kaava kertoo, miten kielisoittimen sävelkorkeutta muutetaan. Kun soittaja painaa kielen otelautaa vasten, kielen värähtelevä osa $L$ lyhenee. Silloin perustaajuus kasvaa. Kun kieltä kiristetään virityskoneistolla, aallon nopeus $v$ kielessä kasvaa. Silloin perustaajuus nousee. Paksussa ja raskaassa kielessä aalto etenee hitaammin kuin ohuessa, kun kireys on sama. Siksi bassokielet soivat matalalta. Kielen värähtely saa kaikukopan ja ilman värähtelemään samalla taajuudella. Kuuluvan äänen taajuus on siis sama kuin kielen värähtelyn taajuus.
 
+```pysahdy
+Kaksi kitaran kieltä on yhtä pitkiä ja yhtä kireällä, mutta toinen on paksumpi. Miksi paksumpi kieli soi matalammalta?
+---
+Paksussa kielessä aalto etenee hitaammin. Silloin nopeus $v$ on pienempi. Siksi myös perustaajuus $f_1 = \tfrac{v}{2L}$ on pienempi.
+```
+
 ### Ilmapatsas putkessa
 Huilussa ja urkupillissä seisova aalto syntyy putken sisällä olevaan ilmaan. Ääni on pitkittäistä aaltoliikettä, joten ilma värähtelee putken suunnassa. Putken suljetussa päässä ilma ei pääse liikkumaan, joten siellä on siirtymän solmu. Avoimessa päässä ilma pääsee liikkumaan vapaasti, joten siellä on siirtymän kupu. Todellisuudessa kupu on hieman putken suun ulkopuolella. Tämä niin sanottu pääkorjaus jätetään tässä huomiotta. Äänen nopeutena ilmassa käytetään tässä luvussa $v = 340\,\text{m/s}$.
 
@@ -414,6 +426,12 @@ Suljetulla putkella on siis vain parittomat ominaistaajuudet $f_1$, $3f_1$, $5f_
   <foreignObject x="16" y="355.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$f_3$</div></foreignObject>
   <foreignObject x="450" y="355.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$L = \tfrac{3\lambda}{4}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Putki on toisesta päästä suljettu. Sen perustaajuus on $100\,\text{Hz}$. Onko seuraava ominaistaajuus $200\,\text{Hz}$?
+---
+Ei ole. Suljetulla putkella on vain parittomat ominaistaajuudet. Seuraava on siis $3 \cdot 100\,\text{Hz} = 300\,\text{Hz}$.
+```
 
 ## Esimerkki
 Kitaran A-kielen värähtelevä osa satulasta tallaan on $0{,}650\,\text{m}$ pitkä. Kielen perustaajuus on $110\,\text{Hz}$. Kuinka suuri on aallon nopeus kielessä? Kuinka pitkäksi värähtelevä osa on lyhennettävä painamalla kieli otelautaa vasten, jotta perustaajuus on $165\,\text{Hz}$? Kielen kireys ei muutu painettaessa.

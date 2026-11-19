@@ -569,7 +569,7 @@ Kun äänilähde liikkuu, jokainen aaltorintama lähtee siitä kohdasta, jossa l
 ```pysahdy
 Miksi liikkuvan äänilähteen edessä aallonpituus on lyhyempi kuin sen takana?
 ---
-Lähde etenee seuraavan rintaman lähtöhetkeen mennessä edellisen rintaman suuntaan. Edessä rintamat jäävät siksi lähemmäs toisiaan, ja takana ne ovat kauempana toisistaan.
+Lähde liikkuu eteenpäin edellisen rintaman perässä, joten edessä rintamat jäävät lähemmäs toisiaan. Takana lähde on liikkunut rintamista poispäin, ja niiden väli kasvaa.
 ```
 
 ### Dopplerin ilmiö, kun kuulija liikkuu
