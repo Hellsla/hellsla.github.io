@@ -15,7 +15,7 @@ checks that `lesson-answers.py` (the numbers of the lesson text and inquiry.json
 import json, math, pathlib, re, subprocess, sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status
-import courses, i18n, kaavat
+import courses, figimage, i18n, kaavat
 import check_solutions as solution_rules
 import physics_phrases
 from courses import ROOT
@@ -208,6 +208,7 @@ def check_figures(L, text):
         if sizes and min(sizes) < 24: L.page("lesson.md", line, f"figure text at {min(sizes):g} px; use 24 px or more so it reads at 13 px on a 360 px phone (NOTES 3)")
         for t in re.finditer(r"<text\b[^>]*>(.*?)</text>", svg, flags=re.S):
             L.page("lesson.md", line + svg.count("\n", 0, t.start()), f"figure label in <text>: every label in a figure is LaTeX in a fig-tex foreignObject, words as \\text{{}} (teacher's rule 2026-10-26, NOTES 3): {re.sub(r'<[^>]+>', '', t.group(1)).strip()[:40]}")
+        if "<image " in svg[:600]: continue            # a picture as the figure's base (scripts/figimage.py, work queue 24): drawn in colour, not a monochrome sketch; its labels were checked above
         colours = {c.lower() for c in re.findall(r"#[0-9a-fA-F]{6}\b", svg)}
         if not colours: L.page("lesson.md", line, "monochrome figure (currentColor only): draw it as a textbook illustration with the figure palette, materials you can recognise and colour that carries meaning (NOTES 3)")
         elif colours - PALETTE - (house_tints(colours) if 'data-style="house"' in svg[:400] else set()):
@@ -666,7 +667,7 @@ def check_pictures(L, folder):
     slug = courses.course(courses.course_of(folder.name))["slug"]
     for ref in courses.pic_refs(folder):
         if not courses.pic_source(ref).is_file(): L.err("lesson", 1, f"picture {ref} not found: put it in assets/{ref}")
-        elif not (ref.startswith(f"pics/{slug}/") or ref.startswith("shared/pics/")):
+        elif not (ref.startswith(f"pics/{slug}/") or ref.startswith("shared/pics/") or figimage.is_base(ref)):   # the base of another module's figure (fy2-4/grid in FY9) is its owner's picture
             L.err("lesson", 1, f"picture {ref} belongs to another course; use assets/pics/{slug}/ or, when it is genuinely shared, assets/shared/pics/")
 
 

@@ -129,7 +129,7 @@ version last reviewed, published_exercises) until a new carry or a review. Pedag
 """
 import collections, datetime, difflib, functools, hashlib, html, json, os, pathlib, re, subprocess, sys, tempfile
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import courses, figcat, figlib, i18n, inquiry, kaavat
+import courses, figcat, figimage, figlib, i18n, inquiry, kaavat
 
 ROOT = courses.ROOT
 REVIEWS = ("science", "pedagogy", "visual")      # the three independent reviewers (visual & editorial since 2026-10-31)
@@ -1283,7 +1283,10 @@ def figure_hash(fid):
         if f is None: raise
         fn = figcat.module(str(f.parent)).FIGURES[name]
         _own_language(f.read_text()); svg = fn()
-    return hashlib.sha256(svg.encode()).hexdigest()[:16]
+    h = hashlib.sha256(svg.encode())
+    base = figimage.pic(fid)
+    if base and courses.pic_source(base).is_file(): h.update(courses.pic_source(base).read_bytes())   # a picture as the base: the file is part of what the teacher approved (work queue 24)
+    return h.hexdigest()[:16]
 
 
 @functools.lru_cache(maxsize=None)
@@ -2013,6 +2016,8 @@ def changes(folder, base, part="lesson", split=False, new=None):
         if not binary and presentation_change(old, new, rel):   # where or how the sim draws, the exact change of the file approved (one row for every language): the visual reviewer sees the diff
             cats.add("presentation-only"); n += 1
             diff += list(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), f"a/{rel}", f"b/{rel}", lineterm="", n=2)); continue
+        if binary and (ids := figimage.bases().get(rel[7:], [])) and all(approved(f) for f in ids):   # the picture a teacher-approved figure is drawn on (its hash covers the file)
+            cats.add("teacher-figure"); diff.append(f"--- {rel}: picture of a figure approved by the teacher"); continue
         if binary: cats.add("simulation" if "/sims/" in f"/{rel}" else "photo" if _is_photo(rel) else "figure"); diff.append(f"--- {rel}: binary file {'added' if a is None else 'removed' if b is None else 'changed'}"); continue
         lines = list(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), f"a/{rel}", f"b/{rel}", lineterm="", n=2))
         if not binary and rb and FBD_SPEC.search(rb):         # drawn force diagrams: the science reviewer checks each spec
