@@ -23,7 +23,7 @@ sitemap.xml (robots.txt refuses AI crawlers), LICENSE (all rights reserved). The
 - links: every relative href/src in the pages and every url() in the stylesheets resolves to a file inside the
   published root (font fallbacks .woff/.ttf of KaTeX, which browsers never fetch beside .woff2, are only counted).
 """
-import argparse, os, pathlib, re, shutil, sys, urllib.parse
+import argparse, json, os, pathlib, re, shutil, sys, urllib.parse
 
 DOMAIN = "ruukkilab.fi"
 BASE = f"https://{DOMAIN}/"
@@ -156,6 +156,15 @@ def check_worker(out):
         bad.append("sw.js still has its build placeholder")
     if not (out / "offline.js").is_file():
         bad.append("offline.js is missing at the root")
+    langs = [out] + [d for d in out.iterdir() if d.is_dir() and (d / "index.html").is_file() and d.name not in ("vendor", "sims", "pics", "brand", "laskuri", "tyokalut")]
+    for d in langs:                      # the manifest of each language (17a PR 2): start page and icons exist
+        m = d / "manifest.webmanifest"
+        try:
+            j = json.loads(m.read_text())
+            if not (d / j["start_url"]).is_file(): bad.append(f"{m.relative_to(out)}: start_url {j['start_url']} is not a page")
+            bad += [f"{m.relative_to(out)}: icon {i['src']} is missing" for i in j["icons"] if not (d / i["src"]).resolve().is_file()]
+        except (OSError, ValueError, KeyError):
+            bad.append(f"{m.relative_to(out)}: manifest.webmanifest is missing or unreadable")
     for p in out.rglob("sw.js"):
         if p != sw and ".git" not in p.parts:
             bad.append(f"{p.relative_to(out)}: a second worker file (only the root sw.js is published)")
