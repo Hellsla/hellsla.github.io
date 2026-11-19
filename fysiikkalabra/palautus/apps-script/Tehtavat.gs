@@ -891,15 +891,18 @@ var RL_COURSE = {
    "self": [
     {
      "id": "tavoite-1",
-     "label": "Osaan kuvata kaasun tilan lämpötilan, paineen ja tilavuuden avulla."
+     "label": "Osaan kuvata kaasun tilan lämpötilan, paineen ja tilavuuden avulla.",
+     "label_en": "I can describe the state of a gas with its temperature, pressure and volume."
     },
     {
      "id": "tavoite-2",
-     "label": "Ymmärrän hiukkasmallin avulla, mitä paine ja lämpötila ovat."
+     "label": "Ymmärrän hiukkasmallin avulla, mitä paine ja lämpötila ovat.",
+     "label_en": "I understand with the particle model what pressure and temperature are."
     },
     {
      "id": "tavoite-3",
-     "label": "Pystyn perustelemaan, miksi lämpötiloja verrataan kelvineinä."
+     "label": "Pystyn perustelemaan, miksi lämpötiloja verrataan kelvineinä.",
+     "label_en": "I can justify why temperatures are compared in kelvins."
     }
    ],
    "title_en": "Thermodynamic system, state variables and temperature"
