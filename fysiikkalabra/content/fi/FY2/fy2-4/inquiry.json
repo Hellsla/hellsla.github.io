@@ -259,7 +259,7 @@
       "criteria": [
         "Sanoin, että hyötysuhde on hyötyenergian (tai -tehon) osuus otetusta energiasta (tai tehosta), ja annoin laskun luvuilla.",
         "Selitin, miksi energioista ja tehoista laskettu hyötysuhde on sama (aika supistuu).",
-        "Sanoin, että bensiinimoottorin häviöt ovat suuri osa otetusta tehosta ja että ne ovat lämpöä."
+        "Sanoin, että hehkulampun hyötysuhde on noin $5\\,\\%$, eli vain pieni osa otetusta energiasta on hyötyä."
       ]
     },
     {

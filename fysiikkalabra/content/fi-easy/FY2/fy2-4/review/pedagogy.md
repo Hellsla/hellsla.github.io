@@ -1,23 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 1d22b92ccc00686b
+CONTENT-HASH: 6e4ee6b95a982499
 
 ## Blocking
+(none)
 
 ## Polish
-- inquiry.json simulaatio `model` — the closed "Mallin oletukset" box lists every device's η, so a student can open it before the reveal and read the answer to ennuste-1. The wording is now honest (model values; koe-1 intro says the sim computes with a given η), and ennuste-2 with koe-2 is arguable (ratio from E = Pt in the student's own table), so this no longer blocks. Better still: move the η list under the reveal, or start from a ranking of devices.
-- inquiry.json koe-1 question — the student computes E_h : E_o (75 %) and flips to η, although the lesson is about η. Ask for E_a : E_o directly (25 %).
-- lesson.md:114 — the paragraph "Hyötysuhde kertoo hyödyn osuuden" is about 170 words and holds four ideas. Split it before "Sähkölämmittimessä" and before the table.
-- Selkeä suomi — explain "verrannollinen" (lesson.md:102: "nuolen paksuus kasvaa samassa suhteessa kuin energia"); give an example for lesson.md:105 "mitkä osat lasketaan kuuluviksi laitteeseen".
-- lesson.md:165 — "Valotehoon $3\,\text{W}$ hehkulamppu tarvitsee" should be "Valotehon $3\,\text{W}$ saamiseen hehkulamppu tarvitsee".
+- inquiry.json johtopaatos `criteria` 3 — asks for the petrol engine's losses, but the question and model answer are about koe-2's lamp, and koe-1 is optional, so a core-path student never saw the engine; self-assessment cannot be done — replace with "Sanoin, että loput otetusta energiasta (tässä $95\,\%$) on häviöitä, enimmäkseen lämpöä."
+- ennuste-2 / koe-2 — the model has constant eta, so the experiment cannot refute "hyötysuhde pienenee"; the feedback says so honestly and the argument is the derivation, so this is acceptable. Better: say in koe-2 `intro` that the table checks the arithmetic of E = P·t and that the real lamp is a separate claim, so the student does not take the table as evidence about real lamps.
+- lesson.md "Hyötysuhde kertoo hyödyn osuuden" (first paragraph, about 150 words) — over the 120-word limit and mixes definition, bound and examples; split after "...yli 100 %".
+- lesson.md "Kahden lampun vertailu" — the paragraph says "Kuviossa" and the valovirta paragraph comes before the figure; move the valovirta note after the figure (or into a closed box) so the figure sits right after the paragraph it explains.
+- check-patteri — the tarkistus set holds four items (two concept checks, a calculation, an explain); `check-patteri` could be marked optional to keep workload to one hour.
 
 ## Checked
-- Path: energy conservation, joule and power lead to η = E_a/E_o = P_a/P_o and the energy balance. There are no chain efficiencies or Carnot, so it stays within the slot.
-- The opening question is answered in the theory only after the committed predictions. Retrieval (E = Pt) fits the lamp phenomenon.
-- Round 1 blocking (ennuste-1 not refutable): ennuste-2 and koe-2 are now core, not optional. The feedback and the koe-1 intro admit that the model fixes η, and the "Vihje" in the prompt is gone.
-- Ennuste-2 wording makes sense when reopened after the experiment. Its distractors are misconception-based (η grows with time, η falls as the lamp heats), and the feedback repairs them with E = Pt.
-- koe-1 and koe-2 lock device and P_o and vary only t, with at least three rows.
-- Worked example: seven stages, one step each, symbolic first, with a plausibility check. It repeats neither the siirto task nor the exercises.
-- Etsi virhe, check 1 and the heater check each have a misconception-based distractor with named feedback. The energy "disappears" and "heat is always loss" errors are covered.
-- Siirto (solar panel): three hints, mistake values 1250 and 15000, complete solution. The explain criteria are observable.
-- The exit ticket tests the core idea (η from energies and powers, and power is not efficiency).
-- Workload is slightly high (two predictions, two experiments, siirto, three checks) but fits one lesson. The Finnish uses glossary terms.
+- Path: retrieval (E = P·t), prediction, experiment, theory, staged example (7 stages), error-spotting, transfer; slot goals (η = E_a/E_o = P_a/P_o, Sankey, losses) covered, no FY3 content (no chain of efficiencies).
+- Hook question is answered only after commitment; predictions' wrong options carry repairing feedback with the lamp or engine evidence.
+- Misconceptions targeted: energy "disappears", heater heat as loss, big power = high efficiency, eta over 100 %, time raises eta.
+- Figures (fig-3 and sim at 390 px capture): legible, arrow thicknesses to scale, colour with text labels; alt text gives the numbers without a spoiler.
+- Sim: text behind Käyttöohje/Mallin oletukset/Laskennan selitys, lead short; model values labelled "tyypillinen arvo", constant-eta limitation stated.
+- Exit ticket tests the core idea (η from energies, from power, power is not efficiency).
+- Finnish: glossary terms used (hyötysuhde, hyötyenergia, häviöt), number+unit cases correct, Sankey explained; reading level suits fi-easy.
+- Distractors in tarkistus-1 are misconception based; numeric mistakes (inverted ratio, losses share) have specific feedback.
+- Exercises not judged (reviewed apart).
