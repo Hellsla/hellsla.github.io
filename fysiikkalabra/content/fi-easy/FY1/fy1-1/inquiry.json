@@ -55,7 +55,7 @@
         "after": "exp-1",
         "min": 3
       },
-      "prompt": "Vetyatomin halkaisija on noin $1{,}1\\cdot10^{-10}\\,\\text{m}$. Atomin keskellä on ydin. Vetyatomilla ydin on yksi protoni. Montako suuruusluokkaa atomi on ydintään suurempi?",
+      "prompt": "Vetyatomin halkaisija on noin $1{,}1\\cdot10^{-10}\\,\\text{m}$. Atomin keskellä on ydin. Vetyatomilla ydin on yksi protoni. Yksi suuruusluokka tarkoittaa kymmenkertaista kokoa. Montako suuruusluokkaa atomi on ydintään suurempi?",
       "choices": [
         {
           "text": "Noin yksi suuruusluokka. Ydin täyttää ison osan atomista, kuten atomin kuvissa usein näyttää.",
@@ -86,7 +86,7 @@
         "after": "exp-2",
         "min": 4
       },
-      "prompt": "Aurinkokunnan planeetat kiertävät Aurinkoa Neptunuksen rataa myöten. Aurinko on yksi Linnunradan tähdistä. Montako suuruusluokkaa Linnunrata on Aurinkokunnan planeettojen aluetta suurempi?",
+      "prompt": "Aurinkokunnan planeetat kiertävät Aurinkoa Neptunuksen rataa myöten. Aurinko on yksi Linnunradan tähdistä. Yksi suuruusluokka tarkoittaa kymmenkertaista kokoa. Montako suuruusluokkaa Linnunrata on Aurinkokunnan planeettojen aluetta suurempi?",
       "choices": [
         {
           "text": "Noin kaksi suuruusluokkaa. Aurinkokunta täyttää huomattavan osan Linnunradasta.",
