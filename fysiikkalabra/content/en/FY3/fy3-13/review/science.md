@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: d1f1fb338173b790
+CONTENT-HASH: 260912de672c0248
+
 ## Blocking
-(none)
+
 ## Polish
-(none)
+- lesson.md, liquid-nitrogen caption — "water droplets condensed around the cold nitrogen vapour": more exact is "water droplets condensed from the air's water vapour cooled by the cold nitrogen vapour".
+
 ## Checked
-- Delta review of the English translation against the reviewed Finnish: only the figure label 'measurement range' was widened (foreignObject x 300->240, width 152->212) in lesson.md and inquiry.json; text identical to the Finnish label meaning.
-- Physics, numbers, units, symbols, answers and structure unchanged from the previous PASS; no Finnish words left; English natural.
+- batch delta review (en): line through uncertainty bars, not every point; extrapolation and liquefaction make θ0 an estimate; limit lines diverge so uncertainty grows; worked-example splits keep −276 ± 18 °C, −259/−295 °C, k values; new photo caption; recomputed in one script; hash same at start and end.

@@ -1,7 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 2c3322a79e19d9eb
+CONTENT-HASH: 3e391cca246b9c8f
+
 ## Blocking
+
 ## Polish
-- The recap states that the spring's stretch is directly proportional to the force. That is the premise of the later "scale of a force meter" task (5,6 cm), so it hands over its method. Acceptable as retrieval, but let the interpret task ask the student to justify the proportionality.
+- inquiry.json (exit ticket) — tests only spring proportionality, not mass vs weight; add a mass/weight item.
+- sim stage — the readout "Mass is the same everywhere. Only weight changes…" and the four-body bar chart disclose the answer to prediction 2 as soon as the sim opens; move the sentence behind "Model assumptions".
+- lesson.md ISS caption — "fall around the Earth together" is FY4-level and may confuse; say plainly that weight still exists there.
+
 ## Checked
-batch delta review: herata recap now runs through the force-meter spring of the phenomenon; clear for 16-19-year-olds; it does not reveal Ennusta 1 (mass triples) or 2 (Jupiter); distractors (adding, same number, doubling) are real proportionality errors and each feedback repairs them; no change to tasks or solutions.
+- Faithful translation of the Finnish structure: same stages, seven-stage example, figures, predictions, locks.
+- Prerequisite (direct proportionality, FY1) used and retrieved; Moon question answered after commitment.
+- Slot scope kept: no motion, no Newton's laws.
+- Misconception-based distractors with repairing feedback; checks cover concept, graph slope, explanation with criteria.
+- Terms: weight / mass / force meter used consistently; reading level suits 16–19.
+- Phone: sim and experiment card legible at 390 px.

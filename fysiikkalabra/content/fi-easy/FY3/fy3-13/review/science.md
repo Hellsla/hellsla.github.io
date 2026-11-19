@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d05795d001598a6f
+CONTENT-HASH: e171e52e35710cd8
 
 ## Blocking
-(none)
 
 ## Polish
-- none
 
 ## Checked
-- batch delta review, round 2 (diff cc7b2aeb..debc61a4): mittausepävarmuus key concept now an estimate, not a guaranteed limit, matching the guardrail and lesson; no other content changed.
+- batch delta review (fi-easy): line through uncertainty bars, not every point; extrapolation and liquefaction make θ0 an estimate; limit lines diverge so uncertainty grows; worked-example splits keep −276 ± 18 °C, −259/−295 °C, k values; new photo caption; recomputed in one script; hash same at start and end.
