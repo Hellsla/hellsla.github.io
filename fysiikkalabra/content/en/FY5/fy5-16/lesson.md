@@ -125,6 +125,12 @@ Hearing damage arises in the cochlea of the inner ear. There the hair cells chan
   <foreignObject x="354" y="49.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{threshold of pain}$</div></foreignObject>
 </svg>
 
+```pysahdy
+There is no pain at a concert, even though the sound is loud. Does that mean hearing is not being damaged?
+---
+No. Pain begins only at a level of about $120\,\text{dB}$, but the hair cells are strained already at much lower levels, and they do not regenerate.
+```
+
 ### Dose: level and time
 
 The dose that harms hearing builds up in the same way as energy: what matters is how much energy the sound brings to the ear during the whole exposure. In the chapter *Intensity and the decibel scale* we learned that a rise of $3\,\text{dB}$ in the intensity level corresponds to roughly a doubling of the intensity. When the intensity doubles, twice as much energy reaches the ear every second, so the same dose is reached in half the time. That is why a noise level only a few decibels higher can shorten many times over the time in which the same dose builds up.
@@ -198,6 +204,12 @@ where $L$ is the A-weighted noise level at the ear (in calculations simply dB), 
   <foreignObject x="421.5" y="260.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$0.25$</div></foreignObject>
   <foreignObject x="296" y="79.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$+3\,\text{dB} \;\Rightarrow\; t : 2$</div></foreignObject>
 </svg>
+
+```pysahdy
+The noise level at the ear is $109\,\text{dB}$. How long does it take for the dose corresponding to the upper action value to build up?
+---
+Now $n = (109\,\text{dB} - 85\,\text{dB}) : 3\,\text{dB} = 8$. The reference time is $8\,\text{h} : 2^8 \approx 1.9\,\text{min}$.
+```
 
 The reference time is not a permitted or safe time but a calculated reference value. Staying below the reference dose does not guarantee that an individual's hearing is safe, because people's hearing withstands noise in different ways, and it does not remove the employer's other duties: they begin already at the lower action value $80\,\text{dB(A)}$. Exposure should be kept clearly below the reference dose. The noise level at the ear is obtained with the rules of the chapter *Intensity and the decibel scale*: two equally strong sources raise the level by about $3\,\text{dB}$, and doubling the distance from a point source lowers the level in an open space by about $6\,\text{dB}$. A hearing protector lowers the level reaching the ear by its attenuation, when it is well fitted.
 
@@ -325,6 +337,12 @@ When a sound source falls silent, reflections can still be heard for a moment. T
   <foreignObject x="262" y="111.5" width="332" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\text{panels in the ceiling: } T = 0.6\,\text{s}$</div></foreignObject>
   <foreignObject x="401" y="185.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$90\,\text{dB} - 60\,\text{dB}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Why does a canteen with hard walls and a long reverberation time feel noisy, even though nobody speaks louder than elsewhere?
+---
+The reflections muddle the syllables of speech together. People therefore raise their voices over each other, and the noise level rises.
+```
 
 ## Active noise cancelling {Vastamelu}
 
