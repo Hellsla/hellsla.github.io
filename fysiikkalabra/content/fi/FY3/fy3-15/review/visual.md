@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1d9e0f1eb113954f
+CONTENT-HASH: cddbd1ad2aba0845
 
 ## Blocking
 - none
@@ -8,7 +8,7 @@ CONTENT-HASH: 1d9e0f1eb113954f
 - none
 
 ## Checked
-- Delta (base 631b939, reflow): rendered inquiry stage Pohdinta, correct option (520 MJ) feedback, at 360, 390 and 1280 px (no horizontal overflow, scrollWidth = viewport). The three-row aligned chain reads well, equals signs aligned, the full stop sits inside the display after 520 MJ, and the following sentence starts on its own line with normal spacing. Nothing clipped.
+- Delta (base 25e92e4, reflow): rendered Kertaus (Pohdinta/kertaus) feedbacks of the first (wrong) and correct options, all open, at 360 and 1280 px (fi). Both chains read well: equals signs aligned, units upright with thin space, the full stop sits inside the display after 520 MJ and the following text starts on its own line normally. No horizontal overflow (scrollWidth = viewport), feedback boxes not clipped.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4
