@@ -104,8 +104,8 @@ def ketju():
 
 
 def tikapuut():
-    f = Fig("fy22-tikapuut", 372, "Kuvaaja mittakaavassa: energia jouleina kymmenpotenssiasteikolla 1 J:sta 10 TJ:iin ja yli. Jokainen väli on "
-            "kymmenkertainen. Omena metrin ylös on noin 1 J, palava tulitikku noin 1 kJ, päivän ruoka noin 10 MJ, 50 litran bensiinitankki "
+    f = Fig("fy22-tikapuut", 372, "Kuvaaja mittakaavassa: energia jouleina kymmenpotenssiasteikolla 1 J:sta 10 TJ:iin ja yli. Jokainen pieni väli on "
+            "kymmenkertainen ja jokainen merkitty väli tuhatkertainen. Omena metrin ylös on noin 1 J, palava tulitikku noin 1 kJ, päivän ruoka noin 10 MJ, 50 litran bensiinitankki "
             "noin 1,6 GJ ja ydinvoimala Olkiluoto 3 tuottaa vuorokaudessa noin 140 TJ sähköä.")
     x0, dx, y0 = 96, 33.2, 292
     X = lambda k: x0 + k * dx
@@ -115,7 +115,7 @@ def tikapuut():
         f.line(X(k), y0, X(k), y0 + (11 if major else 6), INK, 2 if major else 1.5)
     for k, lab in ((0, r"1\,\text{J}"), (3, r"1\,\text{kJ}"), (6, r"1\,\text{MJ}"), (9, r"1\,\text{GJ}"), (12, r"1\,\text{TJ}")):
         f.tex(X(k), y0 + 30, lab, "middle", w=90)
-    f.tex(300, 354, r"\text{jokainen väli on 10-kertainen}", "middle", MUTED, w=340)
+    f.tex(300, 354, r"\text{pieni väli 10-kertainen, iso 1000-kertainen}", "middle", MUTED, w=440)
     # each label in two lines (name, value) in its own row: a leader never crosses a label (teacher 2026-11-11,
     # illustration audit); omena and Olkiluoto share the top row, the rows step down from there
     items = [(0, 0, r"\text{omena metrin ylös}", r"1\,\text{J}", "start", 234), (14.14, 0, r"\text{Olkiluoto 3, vrk}", r"140\,\text{TJ}", "end", 208),
