@@ -666,9 +666,16 @@ form.check output[data-state=close]{color:#7a5a00;font-weight:600}form.check out
 .ex-row>.pad{flex:1 1 100%;min-width:0;margin:0}
 .ex-row>.pad-head{margin:0;flex:0 1 auto}.ex-row>.pad-head[hidden]{display:none}
 .pad-saverow{display:flex;flex-wrap:wrap;align-items:baseline;gap:.2rem 1.2rem;margin-top:.3rem}.pad-saverow>.pad-save,.pad-saverow>.pad-saved{margin:0}.pad-saverow>.pad-saved[open]{flex-basis:100%}
-.ex-row>form.check{flex:1 1 18rem;min-width:0;margin:0}
-.ex-row form.check button{background:var(--surface);color:var(--accent-deep)}
-.ex-row form.check button:hover{background:var(--accent-soft)}
+/* U2 (work queue 11): Kirjoita ratkaisu (outlined), then the field, its unit and Tarkista (filled, last) wrap as one row; the open editor takes a row between them, the feedback comes under Tarkista */
+.ex-row>form.check{flex:1 1 18rem;min-width:0;margin:0}   /* the field, unit and Tarkista stay together; the feedback is under them */
+#exercises .pad-open{background:var(--surface);color:var(--accent-deep)}
+#exercises .pad-open:hover,#exercises .pad-open[aria-expanded=true]{background:var(--accent-soft);border-color:var(--accent-deep);color:var(--accent-deep)}
+#exercises .choice-actions .pad-open{margin:0}
+/* what the student opens (Vihjeet, Vastaus, Näytä ratkaisu, the lock) sits under a rule at the end of the card */
+.ex-foot{display:flex;flex-wrap:wrap;align-items:center;gap:.1rem 1rem;margin:.7rem 0 .2rem;padding-top:.3rem;border-top:1px solid var(--line)}
+.ex-foot .hints{display:contents}.ex-foot .hints details{margin:0}.ex-foot .hints details[open]{flex:1 1 100%;margin:.2rem 0}
+.ex-foot .hints summary{display:inline-flex;align-items:center;min-height:40px;cursor:pointer}
+@media print{.ex-foot{border-top:0}}
 .pad{margin:0 0 .8rem;position:relative}
 .pad .rich-text-editor{min-height:7.5rem;padding:.6rem .75rem;background:var(--surface);border:1px solid #767676;border-radius:var(--inner-radius);font-size:var(--fs-inner);line-height:1.6;color:var(--ink);font-family:var(--sans);overflow-wrap:anywhere;scroll-margin-top:9rem}
 .pad .rich-text-editor:focus{outline:2px solid var(--accent);outline-offset:2px;border-color:var(--accent)}

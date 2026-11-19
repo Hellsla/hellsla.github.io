@@ -3,7 +3,7 @@
    Written to site/sw.js by scripts/build.py (the build hash below is the hash of the shared scripts, so a new release
    is a new file and the browser replaces the old worker). To remove a broken worker see docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md
    "Hätäkatkaisu": publish templates/sw-kill.js as sw.js (build with FL_SW_KILL=1).
-   build: 90dd4269f0b0 */
+   build: f851fa585997 */
 "use strict";
 const SCHEMA = "1";
 const PREFIX = "fl-sw-";                      // only caches with this prefix are ours: fl-tts-supertonic3-v1 (read aloud) is never touched

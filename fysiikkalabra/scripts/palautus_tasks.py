@@ -68,7 +68,7 @@ def courses_with_button():
 EXTRACT = r"""(id) => {
   const page = document;
   const strip = (root) => {
-    root.querySelectorAll('.ex-num,.ex-core,.task-skills,.pts,form,details,.pad-open,.pad,.feedback,button,script,style,.ex-head,.zoom-btn,legend').forEach((e) => e.remove());
+    root.querySelectorAll('.ex-num,.ex-core,.task-skills,.pts,form,details,.pad-open,.pad,.feedback,button,script,style,.ex-head,.ex-foot,.zoom-btn,legend').forEach((e) => e.remove());
     root.querySelectorAll('input, select').forEach((e) => e.remove());   // an ordering task's rank menus too: the items stay, the answer is the student's (a11y CI 2026-11-08)
     // lesson.js flFitMath moves the punctuation after a formula wider than the column into the formula (.kx-punct), and
     // which formulas are too wide depends on the machine's fonts: put the mark back after the formula, so the grading
