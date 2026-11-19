@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: de9c2d202575d00e
+CONTENT-HASH: 9ce9f1634468bcd8
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions.md 7-4 and 7-6 Reasonableness: the display block sits mid-sentence ("the loss power becomes [box] times smaller"), splitting the clause over three lines. Optional: keep the sentence whole and put the chain after it.
 
 ## Checked
-Delta (reflow of calculation chains in solutions.md). Opened en open-exercises-1280-3 (7-4 Reasonableness area) and L2-1280-7 (7-6 Reasonableness): chains render as aligned boxes, no clipping, cards intact.
+- Full review of the exercise set, presentation focus (only chains were re-broken): opened en 1280 px exercise captures with every solution open, L2 part 2 (task 7-12) and L3 part 3 (task 7-22 and its predecessor). Chains render as rows aligned at "=", fractions in display, answer boxed, reasonableness set apart, no clipping; same component in all other tasks.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
