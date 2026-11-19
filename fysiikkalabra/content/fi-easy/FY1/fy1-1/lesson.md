@@ -93,6 +93,12 @@ Fysiikan kohteiden koot ovat valtavan erilaisia. Protoni on noin $1{,}7\cdot10^{
 
 **Suuruusluokka** kertoo luvun koon suunnilleen. Se on kymmenpotenssi, joka on kymmenpotenssien akselilla lähimpänä lukua. Jos kerroin on alle noin 3, suuruusluokka on $10^{n}$. Jos kerroin on yli noin 3, suuruusluokka on $10^{n+1}$. Esimerkiksi luvun 170 suuruusluokka on 100 eli $10^{2}$. Toinen esimerkki: ihmisen pituus $1{,}7\,\text{m}$ on suuruusluokkaa $10^{0}\,\text{m}$. Mount Everestin korkeus $8{,}8\cdot10^{3}\,\text{m}$ on suuruusluokkaa $10^{4}\,\text{m}$.
 
+```pysahdy
+Kappaleen pituus on $4{,}2\cdot10^{5}\,\text{m}$. Mikä on sen suuruusluokka?
+---
+Kerroin 4,2 on yli 3. Siksi suuruusluokka on seuraava kymmenpotenssi, $10^{6}\,\text{m}$.
+```
+
 Kohteiden koot ovat pyöristettyjä arvoja. Ihmiset, muurahaiset ja galaksit eivät ole kaikki samankokoisia. Siksi vertailuun riittää usein suuruusluokka. Luvuista kannattaa myös kysyä, kuinka tarkkoja ne ovat.
 
 ## Kaava: Kuinka monta kertaa suurempi?
@@ -145,6 +151,12 @@ Kymmenpotenssien avulla suhteen voi arvioida myös päässä. Jokainen askel kym
 ### Valovuosi on pituuden yksikkö
 
 Tähtien väliset etäisyydet ovat niin suuria, että metri on epäkäytännöllinen. **Valovuosi** on matka, jonka valo kulkee tyhjiössä yhdessä vuodessa. Se on noin $9{,}46\cdot10^{15}\,\text{m}$. Valovuosi on siis pituus eikä aika. Valon kulkuaikoja ja tähtitieteen pituusyksiköitä käsitellään tarkemmin luvussa *Suureet, yksiköt ja SI-järjestelmä*.
+
+```pysahdy
+Tähti on neljän valovuoden päässä. Kertooko tämä aikaa vai pituutta?
+---
+Pituutta eli etäisyyttä. Valovuosi on matka, jonka valo kulkee yhdessä vuodessa. Neljä valovuotta on noin $3{,}8\cdot10^{16}\,\text{m}$.
+```
 
 ## Aineen rakenne
 
@@ -404,6 +416,12 @@ Rakenteet pysyvät koossa ja muuttuvat **vuorovaikutusten** takia. Kaikki tunnet
 ### Mittakaava ratkaisee, mikä vuorovaikutus hallitsee
 
 Samat neljä vuorovaikutusta toimivat kaikkialla, ytimen sisältä galaksijoukkoihin. Mittakaava ratkaisee, mikä niistä hallitsee. Vahva ja heikko vuorovaikutus ulottuvat vain ytimen mittakaavaan. Hiukkasten välillä sähkömagneettinen vuorovaikutus on valtavasti gravitaatiota voimakkaampi. Suuret kappaleet ovat kuitenkin lähes neutraaleja. Niissä on yhtä paljon positiivista ja negatiivista varausta, joten varausten vaikutukset kumoavat toisensa eli yhdessä ne ovat lähes nolla. Gravitaatio on hiukkasten välillä heikoin. Se on kuitenkin aina vetävä, ja se kasvaa massan mukana. Siksi planeettojen, tähtien ja galaksien mittakaavassa gravitaatio hallitsee.
+
+```pysahdy
+Hiukkasten välillä sähkömagneettinen vuorovaikutus on paljon voimakkaampi kuin gravitaatio. Miksi gravitaatio silti hallitsee planeettojen välillä?
+---
+Suuret kappaleet ovat lähes neutraaleja. Niiden positiivinen ja negatiivinen varaus kumoavat toisensa. Gravitaatio on aina vetävä, ja se kasvaa massan mukana.
+```
 
 ## Esimerkki
 

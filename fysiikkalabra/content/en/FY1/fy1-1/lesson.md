@@ -93,6 +93,12 @@ The objects of physics come in hugely different sizes: a proton is about $1.7\cd
 
 The **order of magnitude** is the power of ten that is closest to the number on the axis of powers of ten. If the factor is below about 3, the order of magnitude is $10^{n}$, and if it is above about 3, the order of magnitude is $10^{n+1}$. For example, a person's height $1.7\,\text{m}$ is of the order $10^{0}\,\text{m}$, but the height of Mount Everest, $8.8\cdot10^{3}\,\text{m}$, is of the order $10^{4}\,\text{m}$.
 
+```pysahdy
+An object has a length of $4.2\cdot10^{5}\,\text{m}$. What is its order of magnitude?
+---
+The factor 4.2 is above about 3, so the order of magnitude is the next power of ten, $10^{6}\,\text{m}$.
+```
+
 The sizes of objects are rounded values: people, ants and galaxies are not all the same size. That is why the order of magnitude is often enough for a comparison, and it is worth asking how accurate the numbers are.
 
 ## Formula: How many times larger?
@@ -145,6 +151,12 @@ Powers of ten let you estimate the ratio in your head. Each step from one power 
 ### A light-year is a unit of length
 
 Distances between stars are so large that the metre is impractical. A **light-year** is the distance that light travels in a vacuum in one year, about $9.46\cdot10^{15}\,\text{m}$. So it is a length, not a time. Light travel times and the astronomical units of length are covered in more detail in the chapter *Quantities, units and the SI system*.
+
+```pysahdy
+A star is four light-years away. What kind of quantity does this describe: time or length?
+---
+Length, that is, distance. A light-year is the distance light travels in one year, so four light-years is about $3.8\cdot10^{16}\,\text{m}$.
+```
 
 ## The structure of matter {Aineen rakenne}
 
@@ -404,6 +416,12 @@ Structures stay together and change because of **interactions**. All known inter
 ### Scale decides which interaction dominates
 
 The same four interactions act everywhere, from inside the nucleus to clusters of galaxies, but the scale decides which of them dominates. The strong and weak interactions reach only the scale of the nucleus. Between particles the electromagnetic interaction is enormously stronger than gravity, but large objects are almost neutral: their positive and negative charges cancel each other's effect. Between particles gravity is the weakest, but it is always attractive and grows with mass. That is why gravity dominates on the scale of planets, stars and galaxies.
+
+```pysahdy
+Between two particles the electromagnetic interaction is much stronger than gravity. Why does gravity still dominate between planets?
+---
+Large objects are almost neutral, so their positive and negative charges cancel each other's effect. Gravity is always attractive and grows with mass.
+```
 
 ## Worked example
 
