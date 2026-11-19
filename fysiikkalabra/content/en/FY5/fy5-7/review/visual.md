@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 81e49d728f012b1b
+CONTENT-HASH: 37a367455b7f811a
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fy5-7 summary — the aligned x = A sin(2πt/T) / = A sin(2πft) block has a large gap above and below the card at 360 px; harmless.
+(none new)
 
 ## Checked
-- fig-2-390 (osat still: spring and pendulum, equal A arrows, x = 0 line, labels legible, nothing clipped), fig-4-390 (ympyra still: angle arc and 2πt/T hidden in the captured playing frame, as approved; circle, dot, graph axes, T/4–T ticks legible), theory-1280-2 (both figures beside their paragraphs, pause button present, fig-5 unchanged).
-- Own 360 px capture of the summary bullet: the two-row aligned formula fits, equals signs aligned, nothing clipped, scrollWidth 360 (no overflow).
+- Delta round 2: the only change since the round-1 PASS is "tasks" to "calculation tasks" in the sentence on the phase constant C (packet line 245). I judged it in the packet source text.
+- No captures reopened: the change is wording only, with no figure, layout or notation effect. The round-1 figure and capture judgements stand.
+- The sentence reads naturally. It is more precise because it separates the calculation tasks from the fitting tasks. The notation $C = 0$ and $t = 0$ is unchanged and in LaTeX.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
