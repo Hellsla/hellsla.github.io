@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 0e09c62e2d91551c
+CONTENT-HASH: ff800d0f36e83f8c
 
 ## Blocking
 
 ## Polish
-- inquiry.json, firewood distractor feedback: the edit dropped the full stop after `$22\,\text{MJ/kg}$`, so two sentences now run together; restore the period.
+- None.
 
 ## Checked
-batch delta review: distractor feedback recomputed (2200 kJ = 2.2 MJ, 100 g = 0.100 kg, 2.2 MJ / 0.100 kg = 22 MJ/kg > 15 MJ/kg); physics unchanged and still says why the option is wrong; lesson.md changes are teacher-approved figures and paragraph presentation only.
+batch delta review: 43 MJ : 15 MJ/kg = 2,87 kg -> 2,9 kg (more than 1,0 kg, correct); pellet 17 MJ/kg matches the lesson's table, 17 x 0,250 = 4,25 -> about 4,3 MJ (two figures, from H); wet vs dry wood reasons (water does not burn, energy to evaporate it) match the theory.

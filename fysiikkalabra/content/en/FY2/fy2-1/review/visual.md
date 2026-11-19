@@ -1,15 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 86941d4b433a6dc4
+VERDICT: FAIL
+CONTENT-HASH: a902ad1753485a32
 
 ## Blocking
-- none
+- [Major] lesson.md, new "Stop and think" block in Key idea (fy2-1-theory-1280-1.png) — the question is written `*heat*` and the page shows literal asterisks ("the physics word *heat* mean...") because the question text is not markdown-rendered — visible markup in new text — drop the asterisks (the word is already glossary-linked above) or use plain text.
 
 ## Polish
-- none (paragraph breaks only; no new findings)
+- none
 
 ## Checked
-- en fy2-1-example-390-1.png: stage 1/7 Given and find split into three paragraphs, intact.
-- Delta only: one text cut into paragraphs, words unchanged. KaTeX renders, units upright with thin space, no clipping or overflow, spacing between paragraphs matches the rest of the page.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review: opened fy2-1 theory-1280-1 and stage-selita-390-1; the new stop-and-think block renders as a closed, readable green card with the Answer toggle, layout intact; the other two new blocks share the same component and contain correct LaTeX units.

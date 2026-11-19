@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 185e6302bbcff16e
+CONTENT-HASH: 5fb9d8dbc016b5a6
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- (none)
 
 ## Checked
-- batch delta review: rendered the optional 'Find the error' prompt at 390 px (display aligned chain on two rows, decimal comma, options intact); opened sim-390 and fig-row-1280.
+batch delta review: the diff only adds Pysähdy ja mieti blocks; opened fy2-1 stage-selita-390-2 and theory-1280-1 and fy2-3 theory-1280-2 (block style, KaTeX maths, Vastaus details, spacing and placement are consistent and clean at both widths); the other lessons' blocks use the same component and the source holds no markdown or plain-quantity problems; figures unchanged and not re-opened.

@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: a20e0bf2a6486d4c
+CONTENT-HASH: 7271ddebfadc1e8f
 
 ## Blocking
 
 ## Polish
+- none
 
 ## Checked
-- batch delta review: opened fy2-8-stage-herata-390 (Pohdinta intact, retrieval task in its closed optional box); the reworded coal-plant options read naturally, `\text{C} + \text{O}_2 \rightarrow \text{CO}_2` unchanged.
+- batch delta review: diff adds pysahdy blocks only; checked the rendered block style in fy2-2 theory-1280-2 (maths, units, openable Vastaus fine) and fig-row-1280 for fy2-5 and fy2-8; the other lessons' own captures not individually opened, no literal markup in their block sources.

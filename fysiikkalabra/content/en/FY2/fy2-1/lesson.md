@@ -113,7 +113,7 @@ Thermal energy also depends on the amount of substance, so it is not the same th
 Potential energy and kinetic energy together make up **mechanical energy**, $E_\text{mech} = E_\text{p} + E_\text{k}$.
 
 ```pysahdy
-A hot coffee cup cools down on the table. What does the physics word *heat* mean in this situation?
+A hot coffee cup cools down on the table. What does the physics word heat mean in this situation?
 ---
 Heat is energy that transfers from the cup to the cooler air because of the temperature difference. At the same time the cup's thermal energy decreases.
 ```

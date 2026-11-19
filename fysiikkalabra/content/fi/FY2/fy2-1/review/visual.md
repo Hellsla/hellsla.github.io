@@ -1,15 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: e16c4424075d4d4d
+VERDICT: FAIL
+CONTENT-HASH: b8cc95e8a8957bfd
 
 ## Blocking
-- none
+- [Major] fy2-1 lesson.md, first `pysahdy` block (theory-1280-1 capture) — the question shows literal asterisks "*lämpö*": the stop-and-think text is not run through markdown emphasis — visible stray markup in new text — drop the asterisks (or set the word in `\textit{}`-free plain words / use the same emphasis the page supports).
 
 ## Polish
-- none (paragraph breaks only; no new findings)
+- none
 
 ## Checked
-- fy2-1-example-390-1.png: stage 1/7 Tunnetut ja kysytty split into three paragraphs, reads cleanly, stage 2 and formula blocks intact.
-- Delta only: one text cut into paragraphs, words unchanged. KaTeX renders, units upright with thin space, no clipping or overflow, spacing between paragraphs matches the rest of the page.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: opened fy2-1-theory-1280-1, fig-row-1280; diff adds three pysahdy blocks; figures unchanged.

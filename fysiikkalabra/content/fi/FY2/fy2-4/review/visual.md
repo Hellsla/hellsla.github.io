@@ -1,13 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 12d8ba386bbe77ca
+CONTENT-HASH: 8b7fc3f905554b7f
 
 ## Blocking
 
 ## Polish
+- none
 
 ## Checked
-- Delta (inquiry.json only): opened fy2-4-exp-koe-1-390-1 (changed Koe 1 intro: LaTeX $60\,\text{kW}$, $E_\text{o}$ etc. render, new sentence reads fluently, layout intact), fy2-4-open-tarkista-1280-2 (changed retrieval option "Noin $50\,\%$..." with new feedback: options whole rows, LaTeX numbers, feedback opens inside the card) and -3 (surrounding layout fine).
-- Reflection prompt/model answer: diff text read; maths is correct LaTeX with \cdot and colon division; criteria list consistent with the shortened prompt.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: diff adds pysahdy blocks only; checked the rendered block style in fy2-2 theory-1280-2 (maths, units, openable Vastaus fine) and fig-row-1280 for fy2-5 and fy2-8; the other lessons' own captures not individually opened, no literal markup in their block sources.

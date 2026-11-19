@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 170aae94d76fb428
+CONTENT-HASH: 1ec7d2d4885a7b64
 
 ## Blocking
+(none)
 
 ## Polish
+- (none)
 
 ## Checked
-- batch delta review: retrieval task petrol to coal boiler, wording and feedback; opened fy2-8 fig-row-1280 and fy2-4 sim-390 captures as layout sample; diff text read for typography and Finnish, no figure or layout change.
+batch delta review: the diff only adds Pysähdy ja mieti blocks; opened fy2-1 stage-selita-390-2 and theory-1280-1 and fy2-3 theory-1280-2 (block style, KaTeX maths, Vastaus details, spacing and placement are consistent and clean at both widths); the other lessons' blocks use the same component and the source holds no markdown or plain-quantity problems; figures unchanged and not re-opened.

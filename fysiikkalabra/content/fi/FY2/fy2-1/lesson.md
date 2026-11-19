@@ -113,7 +113,7 @@ Lämpöenergia riippuu myös aineen määrästä, joten se ei ole sama asia kuin
 Potentiaalienergia ja liike-energia yhdessä ovat **mekaaninen energia**, $E_\text{mek} = E_\text{p} + E_\text{k}$.
 
 ```pysahdy
-Kuuma kahvikuppi jäähtyy pöydällä. Mitä fysiikan sana *lämpö* tarkoittaa tässä tilanteessa?
+Kuuma kahvikuppi jäähtyy pöydällä. Mitä fysiikan sana lämpö tarkoittaa tässä tilanteessa?
 ---
 Lämpö on energiaa, joka siirtyy kupista viileämpään ilmaan lämpötilaeron vuoksi. Samalla kupin lämpöenergia pienenee.
 ```

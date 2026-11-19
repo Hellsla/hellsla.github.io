@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 4c8f8d638f0ac27d
+CONTENT-HASH: aa39003094c32bf1
 
 ## Blocking
-- none
 
 ## Polish
 - none
 
 ## Checked
-- batch delta review: rendered the optional 'Find the error' prompt at 390 px (display aligned chain on two rows, decimal point, options intact); opened sim-390 and fig-row-1280.
+batch delta review: new stop-and-think blocks checked in the shared rendering (fy2-4 theory-1280-3, fy2-3 stage-selita-390-3 opened at 1280 and 390 px): closed card, formulas with units in LaTeX, no clipping, layout intact; diff text read for plain quantities and notation (none).

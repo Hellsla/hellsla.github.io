@@ -1,15 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 1927aecb996a4001
+VERDICT: FAIL
+CONTENT-HASH: 9e80b63c08550553
 
 ## Blocking
-- none
+- [Major] lesson.md, first pysahdy block (Kuuma kahvikuppi) / fy2-1-theory-1280-1.png, fy2-1-stage-selita-390-2.png — the question shows literal asterisks "*lämpö*" because markdown is not processed inside the stop-think aside — visible markup noise in new text — remove the asterisks (write: sana lämpö) or use a non-markdown emphasis.
 
 ## Polish
-- none (paragraph breaks only; no new findings)
+- (none)
 
 ## Checked
-- fi-easy fy2-1-example-390-1.png: stage 1/7 Tunnetut ja kysytty split into four paragraphs, intact.
-- Delta only: one text cut into paragraphs, words unchanged. KaTeX renders, units upright with thin space, no clipping or overflow, spacing between paragraphs matches the rest of the page.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review: the diff only adds Pysähdy ja mieti blocks; opened fy2-1 stage-selita-390-2 and theory-1280-1 and fy2-3 theory-1280-2 (block style, KaTeX maths, Vastaus details, spacing and placement are consistent and clean at both widths); the other lessons' blocks use the same component and the source holds no markdown or plain-quantity problems; figures unchanged and not re-opened.

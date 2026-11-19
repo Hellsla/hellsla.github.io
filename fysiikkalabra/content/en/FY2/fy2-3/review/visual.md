@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 8bdbae88002e5802
+CONTENT-HASH: 6a3d9aac2c78af03
 
 ## Blocking
 
 ## Polish
+- none
 
 ## Checked
-batch delta review: diff is inquiry.json review-task wording only (figures and layout unchanged); opened the 1280 px theory-figure captures of fy2-4 and fy2-6 to confirm the layout survived; changed text is natural English.
+batch delta review: new stop-and-think blocks checked in the shared rendering (fy2-4 theory-1280-3, fy2-3 stage-selita-390-3 opened at 1280 and 390 px): closed card, formulas with units in LaTeX, no clipping, layout intact; diff text read for plain quantities and notation (none).
