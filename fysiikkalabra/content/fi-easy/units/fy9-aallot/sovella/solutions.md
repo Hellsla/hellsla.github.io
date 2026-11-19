@@ -30,7 +30,9 @@ $$. Kitarassa toinen nauha on noin $7\,\text{cm}$:n päässä satulasta, joten t
 ### c)
 **Annettu:** $6$ huojahdusta $4{,}0$ sekunnissa, vertailuääni $110{,}0\,\text{Hz}$; kiristäminen hidastaa huojuntaa
 **Kysytty:** kielen taajuus $f_\text{kieli}$ ennen kiristämistä
-**Periaate:** Kun kaksi ääntä on lähes samantaajuisia, niiden huojuntataajuus on taajuuksien erotus (luku *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*). Huojunta kertoo vain eron. Se ei kerro, kumpi taajuus on suurempi. Suunta päätellään kiristämisestä. Kireämmässä kielessä aalto etenee nopeammin, ja taajuus $f = \tfrac{v}{2L}$ nousee (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*). Taajuus nousi ja huojunta hidastui. Siis taajuusero pieneni. Siksi kielen taajuus oli alle $110{,}0\,\text{Hz}$.
+**Periaate:** Kun kaksi ääntä on lähes samantaajuisia, niiden huojuntataajuus on taajuuksien erotus (luku *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*).
+
+Huojunta kertoo vain eron. Se ei kerro, kumpi taajuus on suurempi. Suunta päätellään kiristämisestä. Kireämmässä kielessä aalto etenee nopeammin, ja taajuus $f = \tfrac{v}{2L}$ nousee (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*). Taajuus nousi ja huojunta hidastui. Siis taajuusero pieneni. Siksi kielen taajuus oli alle $110{,}0\,\text{Hz}$.
 **Kaava:** $f_\text{h} = \dfrac{N}{t}$ ja $f_\text{h} = |f_\text{kieli} - f_\text{vert}|$, joten $f_\text{kieli} = f_\text{vert} - f_\text{h}$
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $f_\text{h} = \dfrac{6}{4{,}0\,\text{s}} = 1{,}5\,\text{Hz}$, joten $f_\text{kieli} = 110{,}0\,\text{Hz} - 1{,}5\,\text{Hz} = 108{,}5\,\text{Hz}$
@@ -40,7 +42,9 @@ $$. Kitarassa toinen nauha on noin $7\,\text{cm}$:n päässä satulasta, joten t
 ### d)
 **Kysytty:** miksi kieli soi oktaavia korkeammalta, kun sitä kosketetaan kevyesti keskikohdasta
 **Periaate:** Kun kieli on kiinnitetty kummastakin päästä, sen ominaistaajuudet ovat $f_n = n f_1$. Ominaistaajuudella $f_n$ kielessä on $n$ kupua. Kosketus estää kielen liikkeen siinä kohdassa. Siksi siihen tulee solmu (luku *Seisova aalto: solmut, kuvut ja ominaistaajuudet*).
-**Mallivastaus:** Kun kieli soi vapaasti, se värähtelee yhtä aikaa perustaajuudella ja yläsävelillä. Yläsävelet ovat perustaajuutta korkeampia ominaistaajuuksia. Perustaajuudella keskikohta on kupu. Siksi sormi vaimentaa perustaajuuden ja kaikki parittomat ominaistaajuudet, joilla keskikohdassa on kupu. Jäljelle jäävät ominaistaajuudet $n = 2, 4, 6, \ldots$ Niillä keskikohdassa on solmu, joten sormi ei estä niiden liikettä. Alin niistä on $f_2 = 2f_1 = 220\,\text{Hz}$. Kieli värähtelee kahtena kupuna, ja kaksinkertainen taajuus kuulostaa oktaavia korkeammalta. Sormen voi nostaa pois. Kieli soi edelleen samalla tavalla, koska seisova aalto jatkuu.
+**Mallivastaus:** Kun kieli soi vapaasti, se värähtelee yhtä aikaa perustaajuudella ja yläsävelillä. Yläsävelet ovat perustaajuutta korkeampia ominaistaajuuksia. Perustaajuudella keskikohta on kupu. Siksi sormi vaimentaa perustaajuuden ja kaikki parittomat ominaistaajuudet, joilla keskikohdassa on kupu. Jäljelle jäävät ominaistaajuudet $n = 2, 4, 6, \ldots$ Niillä keskikohdassa on solmu, joten sormi ei estä niiden liikettä.
+
+Alin niistä on $f_2 = 2f_1 = 220\,\text{Hz}$. Kieli värähtelee kahtena kupuna, ja kaksinkertainen taajuus kuulostaa oktaavia korkeammalta. Sormen voi nostaa pois. Kieli soi edelleen samalla tavalla, koska seisova aalto jatkuu.
 
 ### Yleisiä virheitä
 - a-kohdassa aallonpituudeksi otetaan kielen pituus. Silloin $v = f_1 L \approx 71\,\text{m/s}$. Perustaajuudella kuitenkin $L = \tfrac{\lambda}{2}$.
@@ -82,7 +86,9 @@ $$, koska nopeus on sama.
 ### c)
 **Annettu:** pulssin taajuus $f_0 = 30{,}0\,\text{kHz}$, lepakon nopeus $v_\text{l} = 6{,}0\,\text{m/s}$ kohti seinää, äänen nopeus $v = 340\,\text{m/s}$, seinä on paikallaan
 **Kysytty:** taajuus $f$, jolla lepakko kuulee kaiun
-**Periaate:** Dopplerin ilmiö tapahtuu kahdesti (luku *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*). Lepakko on ensin lähde ja sitten kuulija. Sen nopeus on $v_\text{l}$. Ensin lepakko on liikkuva lähde, ja seinä on paikallaan oleva vastaanottaja. Lähestyvän lähteen edessä aallonpituus lyhenee. Sitten seinä heijastaa taajuuden, jonka se vastaanotti. Seinä on nyt paikallaan oleva lähde. Lepakko on nyt kuulija, joka lähestyy seinää. Siksi lepakko kohtaa aaltorintamat useammin. Kummassakin vaiheessa lähestyminen nostaa taajuutta.
+**Periaate:** Dopplerin ilmiö tapahtuu kahdesti (luku *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*). Lepakko on ensin lähde ja sitten kuulija. Sen nopeus on $v_\text{l}$.
+
+Ensin lepakko on liikkuva lähde, ja seinä on paikallaan oleva vastaanottaja. Lähestyvän lähteen edessä aallonpituus lyhenee. Sitten seinä heijastaa taajuuden, jonka se vastaanotti. Seinä on nyt paikallaan oleva lähde. Lepakko on nyt kuulija, joka lähestyy seinää. Siksi lepakko kohtaa aaltorintamat useammin. Kummassakin vaiheessa lähestyminen nostaa taajuutta.
 **Kaava:** $f_\text{s} = f_0 \cdot \dfrac{v}{v - v_\text{l}}$ ja $f = f_\text{s} \cdot \dfrac{v + v_\text{l}}{v}$, joten $f = f_0 \cdot \dfrac{v + v_\text{l}}{v - v_\text{l}}$
 **Muunnokset:** Taajuus pysyy yksikössä $\text{kHz}$, koska nopeuksien suhteella ei ole yksikköä.
 **Sijoitus:** $f_\text{s} = 30{,}0\,\text{kHz} \cdot \dfrac{340\,\text{m/s}}{334\,\text{m/s}} = 30{,}54\,\text{kHz}$ ja $f = 30{,}54\,\text{kHz} \cdot \dfrac{346\,\text{m/s}}{340\,\text{m/s}} = 31{,}08\,\text{kHz}$
@@ -94,7 +100,9 @@ $$. Kuultu taajuus on suurempi kuin $f_0$, kuten lähestyessä pitää olla.
 ### d)
 **Kysytty:** miksi hyttystä ei voisi havaita äänellä, jonka taajuus on $3\,\text{kHz}$
 **Periaate:** Diffraktio eli aallon taipuminen on voimakasta, kun este on aallonpituuden suuruinen tai pienempi. Silloin aalto taipuu esteen ympäri, eikä esteen taakse jää varjoa (luku *Aalto kohtaa esteen tai raon*). Aallonpituus on $\lambda = \tfrac{v}{f}$.
-**Mallivastaus:** Taajuudella $3\,\text{kHz}$ aallonpituus olisi $\tfrac{340\,\text{m/s}}{3000\,\text{Hz}} \approx 11\,\text{cm}$. Se on yli kaksikymmentä kertaa hyttysen pituus $5\,\text{mm}$. Näin pieni este ei juuri muuta pitkän aallon etenemistä. Aalto taipuu esteen ympäri, eikä hyttysestä palaa kaikua tai varjoa, jonka voisi havaita. Ultraäänen aallonpituus $11\,\text{mm}$ on hyttysen kokoluokkaa. Siksi hyttynen heijastaa ultraäänestä kaiun, jonka lepakko voi havaita. Lepakko voi myös erottaa kohteet, jotka ovat lähellä toisiaan. Siksi lepakko käyttää ultraääntä: lyhyt aallonpituus on välttämätön, jotta pieni saalis voidaan havaita.
+**Mallivastaus:** Taajuudella $3\,\text{kHz}$ aallonpituus olisi $\tfrac{340\,\text{m/s}}{3000\,\text{Hz}} \approx 11\,\text{cm}$. Se on yli kaksikymmentä kertaa hyttysen pituus $5\,\text{mm}$. Näin pieni este ei juuri muuta pitkän aallon etenemistä. Aalto taipuu esteen ympäri, eikä hyttysestä palaa kaikua tai varjoa, jonka voisi havaita.
+
+Ultraäänen aallonpituus $11\,\text{mm}$ on hyttysen kokoluokkaa. Siksi hyttynen heijastaa ultraäänestä kaiun, jonka lepakko voi havaita. Lepakko voi myös erottaa kohteet, jotka ovat lähellä toisiaan. Siksi lepakko käyttää ultraääntä: lyhyt aallonpituus on välttämätön, jotta pieni saalis voidaan havaita.
 
 ### Yleisiä virheitä
 - b-kohdassa etäisyys lasketaan $d = vt \approx 4{,}1\,\text{m}$ ilman, että se jaetaan kahdella.
@@ -292,7 +300,9 @@ $$. Kuultu taajuus on suurempi kuin $f_0$, kuten lähestyessä pitää olla.
 ### a)
 **Kysytty:** pitääkö väite 1 paikkansa, ja mikä on taso talojen kohdalla
 **Periaate:** Pistemäisen lähteen teho jakautuu pallon pinnalle. Siksi $I = \tfrac{P}{4\pi r^2}$. Tasojen erotus on $L_2 - L_1 = 10\,\text{dB} \cdot \lg \tfrac{I_2}{I_1}$ (luku *Intensiteetti ja desibeliasteikko*).
-**Mallivastaus:** Väite on väärä. Kun etäisyys kaksinkertaistuu, intensiteetti putoaa neljäsosaan. Silloin taso pienenee $10\,\text{dB} \cdot \lg 4 \approx 6\,\text{dB}$, eikä se puolitu. $40\,\text{m}$:n päässä taso on noin $100\,\text{dB}$. Desibeliasteikko on logaritminen. Siksi desibelilukemaa ei voi jakaa samalla tavalla kuin intensiteettiä. Talojen kohdalla etäisyys on $20$-kertainen. Siksi intensiteetti on $\tfrac{1}{400}$-osa, ja taso on $$
+**Mallivastaus:** Väite on väärä. Kun etäisyys kaksinkertaistuu, intensiteetti putoaa neljäsosaan. Silloin taso pienenee $10\,\text{dB} \cdot \lg 4 \approx 6\,\text{dB}$, eikä se puolitu. $40\,\text{m}$:n päässä taso on noin $100\,\text{dB}$. Desibeliasteikko on logaritminen. Siksi desibelilukemaa ei voi jakaa samalla tavalla kuin intensiteettiä.
+
+Talojen kohdalla etäisyys on $20$-kertainen. Siksi intensiteetti on $\tfrac{1}{400}$-osa, ja taso on $$
 \begin{aligned}
 &106\,\text{dB} - 10\,\text{dB} \cdot \lg 400 \\
 &\approx 106\,\text{dB} - 26\,\text{dB} \\
@@ -303,7 +313,9 @@ $$. Se on yhtä kova kuin vilkkaalla kadulla. Malli on karkea arvio. Ilma ja maa
 ### b)
 **Kysytty:** pitääkö väite 2 paikkansa, ja miksi aidan taakse kuuluu eniten matalia ääniä
 **Periaate:** Diffraktio on voimakasta, kun este on aallonpituuden suuruinen tai pienempi (luku *Aalto kohtaa esteen tai raon*). Aallonpituus on $\lambda = \tfrac{v}{f}$.
-**Mallivastaus:** Havainto pitää paikkansa, mutta perustelu on väärä. Matalat äänet kuuluvat aidan taakse, koska ne taipuvat aidan yli. Esimerkiksi $60\,\text{Hz}$:n bassoäänen aallonpituus on $\tfrac{340\,\text{m/s}}{60\,\text{Hz}} \approx 5{,}7\,\text{m}$. Se on paljon pidempi kuin aita. Siksi aalto taipuu aidan taakse ja heikkenee vain vähän. Korkean $4\,\text{kHz}$:n äänen aallonpituus on vain noin $9\,\text{cm}$. Siksi korkealle äänelle jää äänivarjo $2\,\text{m}$:n aidan taakse. Bassot eivät välttämättä ole voimakkaampia. Matalat ja korkeat äänet voivat olla yhtä voimakkaita, kun ne lähtevät, mutta aita vaimentaa korkeat äänet. Siksi aita suojaa lähinnä korkeilta ääniltä. Jos bassoja halutaan vähentää, pitää toimia lähteessä. Esimerkiksi tasoa voi rajoittaa, tai kaiuttimet voi suunnata pois taloista.
+**Mallivastaus:** Havainto pitää paikkansa, mutta perustelu on väärä. Matalat äänet kuuluvat aidan taakse, koska ne taipuvat aidan yli. Esimerkiksi $60\,\text{Hz}$:n bassoäänen aallonpituus on $\tfrac{340\,\text{m/s}}{60\,\text{Hz}} \approx 5{,}7\,\text{m}$. Se on paljon pidempi kuin aita. Siksi aalto taipuu aidan taakse ja heikkenee vain vähän. Korkean $4\,\text{kHz}$:n äänen aallonpituus on vain noin $9\,\text{cm}$. Siksi korkealle äänelle jää äänivarjo $2\,\text{m}$:n aidan taakse.
+
+Bassot eivät välttämättä ole voimakkaampia. Matalat ja korkeat äänet voivat olla yhtä voimakkaita, kun ne lähtevät, mutta aita vaimentaa korkeat äänet. Siksi aita suojaa lähinnä korkeilta ääniltä. Jos bassoja halutaan vähentää, pitää toimia lähteessä. Esimerkiksi tasoa voi rajoittaa, tai kaiuttimet voi suunnata pois taloista.
 
 ### c)
 **Kysytty:** pitääkö väite 3 paikkansa, sallittu altistusaika ja kuulonsuojainten vaikutus
@@ -315,7 +327,9 @@ $$. Se on yhtä kova kuin vilkkaalla kadulla. Malli on karkea arvio. Ilma ja maa
 &= 0{,}25\,\text{h} \\
 &= 15\,\text{min}
 \end{aligned}
-$$. ”Vain $15\,\text{dB}$” tarkoittaa, että intensiteetti on $10^{1{,}5} \approx 32$-kertainen. Siksi kuulolle haitallinen annos kertyy noin $\tfrac{1}{32}$-osassa ajasta. Neljän tunnin konsertti ilman suojaimia on siis moninkertainen annos. Hyvin asetetuilla $20\,\text{dB}$:n suojaimilla taso korvalla on noin $80\,\text{dB}$. Se on alle $85\,\text{dB}$:n. Siksi neljä tuntia on nyrkkisäännön rajoissa, kun suojaimia pidetään koko ajan. Nyrkkisääntö on arvio, ei takuu. Eri ihmisten kuulo kestää melua eri tavoin.
+$$.
+
+”Vain $15\,\text{dB}$” tarkoittaa, että intensiteetti on $10^{1{,}5} \approx 32$-kertainen. Siksi kuulolle haitallinen annos kertyy noin $\tfrac{1}{32}$-osassa ajasta. Neljän tunnin konsertti ilman suojaimia on siis moninkertainen annos. Hyvin asetetuilla $20\,\text{dB}$:n suojaimilla taso korvalla on noin $80\,\text{dB}$. Se on alle $85\,\text{dB}$:n. Siksi neljä tuntia on nyrkkisäännön rajoissa, kun suojaimia pidetään koko ajan. Nyrkkisääntö on arvio, ei takuu. Eri ihmisten kuulo kestää melua eri tavoin.
 
 ### Yleisiä virheitä
 - a-kohdassa intensiteetti lasketaan kääntäen verrannolliseksi etäisyyteen. Silloin pudotus on $3\,\text{dB}$ jokaista kaksinkertaistumista kohti. Tai desibelit jaetaan samalla tavalla kuin intensiteetit.
@@ -327,7 +341,9 @@ $$. ”Vain $15\,\text{dB}$” tarkoittaa, että intensiteetti on $10^{1{,}5} \a
 ### a)
 **Annettu:** etäisyys seinään $d = 85{,}0\,\text{m}$, viisi kaiun aikaa $0{,}45\,\text{s}$, $0{,}52\,\text{s}$, $0{,}41\,\text{s}$, $0{,}55\,\text{s}$ ja $0{,}47\,\text{s}$
 **Kysytty:** äänen nopeus $v$ keskiarvosta ja sen epävarmuus $\Delta v$
-**Periaate:** Ääni kulkee seinään ja takaisin tasaisella nopeudella. Matka on $2d$ (luku *Soveltava luku: ultraäänikuvaus ja maanjäristysaallot*). Kun mittaus toistetaan monta kertaa, paras arvio on keskiarvo. Vaihteluvälin puolikas on karkea arvio hajonnasta eli siitä, kuinka paljon tulokset vaihtelevat. Tässä se valitaan tuloksen epävarmuudeksi (luku *Mittaaminen ja mittauksen luotettavuus*). Matkan epävarmuus on pieni. Siksi ajan suhteellinen epävarmuus on myös nopeuden suhteellinen epävarmuus.
+**Periaate:** Ääni kulkee seinään ja takaisin tasaisella nopeudella. Matka on $2d$ (luku *Soveltava luku: ultraäänikuvaus ja maanjäristysaallot*).
+
+Kun mittaus toistetaan monta kertaa, paras arvio on keskiarvo. Vaihteluvälin puolikas on karkea arvio hajonnasta eli siitä, kuinka paljon tulokset vaihtelevat. Tässä se valitaan tuloksen epävarmuudeksi (luku *Mittaaminen ja mittauksen luotettavuus*). Matkan epävarmuus on pieni. Siksi ajan suhteellinen epävarmuus on myös nopeuden suhteellinen epävarmuus.
 **Kaava:** $\bar{t} = \dfrac{t_1 + \ldots + t_5}{5}$, $v = \dfrac{2d}{\bar{t}}$, $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$ ja $\Delta v = v \cdot \dfrac{\Delta t}{\bar{t}}$
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\bar{t} = \dfrac{2{,}40\,\text{s}}{5} = 0{,}48\,\text{s}$, $v = \dfrac{2 \cdot 85{,}0\,\text{m}}{0{,}48\,\text{s}} = 354{,}2\,\text{m/s}$, $\Delta t = \dfrac{0{,}55\,\text{s} - 0{,}41\,\text{s}}{2} = 0{,}07\,\text{s}$ ja $\Delta v = 354{,}2\,\tfrac{\text{m}}{\text{s}} \cdot \dfrac{0{,}07\,\text{s}}{0{,}48\,\text{s}} = 51{,}6\,\text{m/s}$
@@ -342,12 +358,20 @@ $$. ”Vain $15\,\text{dB}$” tarkoittaa, että intensiteetti on $10^{1{,}5} \a
 &343\,\text{m/s} - 0{,}6\,\tfrac{\text{m/s}}{{}^\circ\text{C}} \cdot 15\,{}^\circ\text{C} \\
 &\approx 334\,\text{m/s}
 \end{aligned}
-$$. Ryhmän tulos $(350 \pm 50)\,\text{m/s}$ kattaa sekä $334\,\text{m/s}$:n että $343\,\text{m/s}$:n. Siksi mittaus ei pysty erottamaan niitä. Mittaus ei osoita mitään eroa, eikä varsinkaan sitä eroa, jonka ryhmä väittää. Tärkein virhelähde on käsiajanotto. Reaktioaika on sekunnin kymmenesosien luokkaa, kun kello käynnistetään ja pysäytetään. Se on yhtä suuri kuin tulosten vaihtelu $0{,}14\,\text{s}$. Lisäksi viive ei välttämättä ole sama molemmissa päissä. Kaiun kulkuaika on vain noin $0{,}5\,\text{s}$. Siksi jo $0{,}02\,\text{s}$:n systemaattinen viive muuttaa tulosta $4\,\%$. Matkan $85{,}0\,\text{m}$ epävarmuus on merkityksetön. Oikea johtopäätös on tämä: nopeus oli noin $350\,\text{m/s}$, ja epävarmuus oli suuri. Kylmässä ilmassa ääni kulkee hitaammin, ei nopeammin.
+$$. Ryhmän tulos $(350 \pm 50)\,\text{m/s}$ kattaa sekä $334\,\text{m/s}$:n että $343\,\text{m/s}$:n. Siksi mittaus ei pysty erottamaan niitä. Mittaus ei osoita mitään eroa, eikä varsinkaan sitä eroa, jonka ryhmä väittää.
+
+Tärkein virhelähde on käsiajanotto. Reaktioaika on sekunnin kymmenesosien luokkaa, kun kello käynnistetään ja pysäytetään. Se on yhtä suuri kuin tulosten vaihtelu $0{,}14\,\text{s}$. Lisäksi viive ei välttämättä ole sama molemmissa päissä. Kaiun kulkuaika on vain noin $0{,}5\,\text{s}$. Siksi jo $0{,}02\,\text{s}$:n systemaattinen viive muuttaa tulosta $4\,\%$. Matkan $85{,}0\,\text{m}$ epävarmuus on merkityksetön.
+
+Oikea johtopäätös on tämä: nopeus oli noin $350\,\text{m/s}$, ja epävarmuus oli suuri. Kylmässä ilmassa ääni kulkee hitaammin, ei nopeammin.
 
 ### c)
 **Kysytty:** suunnitelma mittaukselle, jolla lämpötilan vaikutus äänen nopeuteen havaitaan
 **Periaate:** Lämpötiloissa $5\,{}^\circ\text{C}$ ja $20\,{}^\circ\text{C}$ nopeudet ovat $334\,\text{m/s}$ ja $343\,\text{m/s}$. Ne eroavat noin $3\,\%$. Siksi mittauksen suhteellisen epävarmuuden on oltava selvästi pienempi, noin $1\,\%$ (luvut *Mittaaminen ja mittauksen luotettavuus* ja *Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi*).
-**Mallivastaus:** Ajanotosta poistetaan reaktioaika. Puhelimen tai tietokoneen mikrofoni tallentaa sekä lyönnin että kaiun. Aikaero luetaan äänen $(t, p)$-kuvaajasta kahden piikin alkukohdista. Silloin aika voidaan lukea noin millisekunnin tarkkuudella. Toinen tapa on käyttää kahta mikrofonia, jotka ovat tunnetun matkan päässä toisistaan ja samassa tallentimessa. Mittaus tehdään useilla etäisyyksillä, esimerkiksi $40$–$120\,\text{m}$. Kulkumatka $2d$ piirretään ajan funktiona. Suoran kulmakerroin on äänen nopeus. Jos laitteessa on vakioviive, se näkyy vakiotermissä eikä vääristä nopeutta. Tarkkuustavoite: kun kulkuaika on $0{,}5\,\text{s}$, ajan epävarmuuden on oltava alle $5\,\text{ms}$. Se onnistuu tallenteesta mutta ei sekuntikellolla. Lämpötila mitataan jokaisen mittaussarjan aikana. Sarja toistetaan eri lämpötiloissa, esimerkiksi syksyllä ja keväällä. Silloin lämpötila on ainoa tekijä, joka muuttuu. Mitataan tyynellä säällä tai kumpaankin suuntaan, jotta tuuli ei muuta tulosta. Jokainen mittaus toistetaan monta kertaa. Nopeudet ilmoitetaan epävarmuuksineen, jotta eroa voidaan verrata epävarmuuteen.
+**Mallivastaus:** Ajanotosta poistetaan reaktioaika. Puhelimen tai tietokoneen mikrofoni tallentaa sekä lyönnin että kaiun. Aikaero luetaan äänen $(t, p)$-kuvaajasta kahden piikin alkukohdista. Silloin aika voidaan lukea noin millisekunnin tarkkuudella. Toinen tapa on käyttää kahta mikrofonia, jotka ovat tunnetun matkan päässä toisistaan ja samassa tallentimessa.
+
+Mittaus tehdään useilla etäisyyksillä, esimerkiksi $40$–$120\,\text{m}$. Kulkumatka $2d$ piirretään ajan funktiona. Suoran kulmakerroin on äänen nopeus. Jos laitteessa on vakioviive, se näkyy vakiotermissä eikä vääristä nopeutta. Tarkkuustavoite: kun kulkuaika on $0{,}5\,\text{s}$, ajan epävarmuuden on oltava alle $5\,\text{ms}$. Se onnistuu tallenteesta mutta ei sekuntikellolla.
+
+Lämpötila mitataan jokaisen mittaussarjan aikana. Sarja toistetaan eri lämpötiloissa, esimerkiksi syksyllä ja keväällä. Silloin lämpötila on ainoa tekijä, joka muuttuu. Mitataan tyynellä säällä tai kumpaankin suuntaan, jotta tuuli ei muuta tulosta. Jokainen mittaus toistetaan monta kertaa. Nopeudet ilmoitetaan epävarmuuksineen, jotta eroa voidaan verrata epävarmuuteen.
 
 ### Yleisiä virheitä
 - a-kohdassa nopeus lasketaan $v = \tfrac{d}{\bar{t}} \approx 177\,\text{m/s}$. Silloin unohdetaan, että kaiku kulkee matkan kahdesti.

@@ -81,13 +81,6 @@ Teoria-vaiheeseen toistuva osa: väite yhdellä lauseella, sitten miksi se ei p�
 "Yleinen virhekäsitys" ja Tiivistelmä omiin suljettuihin `<details>`-laatikkoihinsa (näppäimistöllä avattavat); sivupohjan
 muutos, ei katselmointeja; tarkista käsitekorttien alleviivaus ja sirut laatikon sisällä (`test_home.py`). Sisältötyö luku kerrallaan sen jälkeen.
 
-## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
-Sääntö NOTES.md §3 "Paragraphs in stages and steps", luokka `md-paragraphs` (tiede ja pedagogiikka carry, visual delta), lint varoittaa.
-Tehty: FY1, FY2 (luvut ja Sovella, claude/fy2-lapikaynti, PR #676; FY2:n esimerkkikokeessa ei ollut jaettavaa), FY4, FY5 (Sovella ja koe mukana, 0f-PR #671), FY6 (Sovella ja koe mukana), FY7 (Sovella ja koe mukana, 0f-PR #681), FY3 (luvut 1–16, Sovella ja koe, 0f-PR #686), FY8 (luvut 1–16, Sovella ja koe, 0f-PR claude/fy8-0f), FY10 (ei jaettavaa: kurssilla on vain tutkimukset ja TVT-ohjeet, joissa ei ole esimerkkien vaiheita eikä ratkaisujen vaiheita, ei `<!-- vaihe -->`-rivejä eikä Annettu/Kysytty-vaiheita; pitkät kappaleet ovat ohjeproosaa säännön ulkopuolella; vain suomeksi, tutkimuksista ei ole käännöksiä). Jäljellä
-järjestyksessä FY9. Kurssi kerrallaan, kaikki kielet
-(`/quality-audit --fix`), kuten loki §8c. Sääntö osamerkeille: katko osamerkin eteen, ei osan keskelle. Kohta 0f: tehdään kurssin
-muiden avointen kohtien kanssa samassa PR:ssä.
-
 ## 8e. Kuvien asettelu (opettaja 2026-11-13) — toteutetaan kohdan 11 U3:n osana
 Turha pystyväli kuvan vierellä, kuva ja pieni taulukko tai kaksi pientä taulukkoa vierekkäin, kuva aina selittämänsä kappaleen
 viereen, valokuva kuvateksteineen oikealle palstalle (`build.py fig_rows`, site.css, `check_layout.py`). Ennen/jälkeen-kuvat: fy3-8, fy4-3, fy1-1 (1280, 1440, 1920 px). Täysi kuvaus: loki §8e.
@@ -146,7 +139,7 @@ Suunnitelma `docs/FY9_ADAPTIVE_PLAN.md` (#566), hyväksytty P1–P12. PR 1 (YTL/
 PR 9 Abitti 2 -ohje; PR 10 kielimallin selvitys. Ei palvelinta, ei tekoälyrajapintaa; jokainen uusi käyttöliittymäteksti hyväksytään PR kerrallaan. Arvio 2,5–3,5 M tokenia.
 
 ## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
-Varattu: claude/17a-pr1-verkoton (17a PR 1: verkoton käyttö, service worker).
+17a PR 1 tehty (#720). Varattu: claude/17a-pr2-verkoton (17a PR 2: manifesti ja pysyvä tallennus; WebKit-lähteen tarkistus avoin, webkit.org estetty).
 Ohjeet ja päätökset K1–K9: `docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md`. Jokainen osa oma PR, yksin; uudet käyttöliittymätekstit PR:n kuvauksessa. Tallennusavaimia, tiedostomuotoja ja korttien id:itä ei muuteta.
 Osat: 17a verkoton käyttö (service worker, manifesti, moduuli laitteelle), 17b koko työ yhteen tiedostoon, 17c yleisvirheiden tunnistus, 17d ajoitettu kertaus, 17e luokan yhteenveto, 17f hakemistot ja haku.
 Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, sitten 17f PR 3, 17a PR 3, 17b PR 2. Osien sisältö: loki §17.
@@ -165,13 +158,14 @@ Toiseksi viimeinen: kohtien 17, 18, 13 jälkeen, sen jälkeen 14 ja viimeisenä 
 (3) laajennus vain, jos otos löytää kriittisiä virheitä. LOPS 2019 vertailuperusta; julkaistuja oppikirjoja ei käytetä; virheitä ei oleteta; tunnisteita, vastauksia ja tallennusmuotoja
 ei muuteta ilman todettua virhettä; lähdekoodia ei muokata. Raportin rakenne ja kahdeksan tarkistuskohtaa: loki §15.
 Raportti tehty (#721, `docs/audits/2026-11-18-lopputarkistus-FY1-FY8.md`). **Hyväksytty: opettaja 2026-11-18 klo 18.33** (koordinaattorin chatissa, "mennään ehdotustesi mukaisesti"): korjataan kaikki raportin löydökset, kurssi kerrallaan omissa PR:issään saman kurssin keskeneräisen PR:n jälkeen:
-- FY2–FY3: fy2-4 M1 (check-patteri-vaihtoehto), M2 ja M3 (ennuste-1/koe-1, johtopäätös); fy3-6 Tiivistelmään "kun olomuoto ei muutu". #724:n jälkeen.
+- FY2: fy2-4 M1, M2, M3 tehty ja katselmoitu (PR #738, 9 katselmointia PASS).
+- FY3 (kesken, budjetti ylittyi #738:ssa): fy3-6 Tiivistelmään "kun olomuoto ei muutu" (fi, fi-easy, en; yksi rivi `lesson.md`). Uusi työ, oma katselmointikierros.
 - FY4: fy4-4 M4 (lesson.md "480 kg tarkka arvo"). #727:n jälkeen.
 - FY6: fy6-5 kirjoitusvirhe "sisäenergiakseen" (FY6 Sovella-hionnan PR:ssä).
 
 ## 20. Opettajan päätökset 2026-11-18 klo 18.33 (koordinaattorin chatissa, "mennään ehdotustesi mukaisesti")
 Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jälkeen; tämä rivi on hyväksynnän kirjaus (sääntö 5).
-- FY3: 8l-b "Esimerkkiaineisto:" pois myös tehtävien `text`-kentistä (fy3-4, 6, 7, 8, 10, 11, 13; kaikki kielet; delta-katselmoinnit). #724:n jälkeen.
+- FY3 (ei aloitettu #738:ssa, tee fy3-6:n kanssa): 8l-b "Esimerkkiaineisto:" pois myös tehtävien `text`-kentistä (fy3-4, 6, 7, 8, 10, 11, 13; kaikki kielet; delta-katselmoinnit). #724:n jälkeen.
 - 8j: fy1-1, fy1-8 ja fy2-1 ohitetaan (ei kertaustehtävää).
 - 5d: FY5:n 16 ja FY6:n 25 jäljellä olevaa riviä jäävät listalle (myös fy5-7 `x = A \sin(…)`).
 - Pysähdy ja mieti: laajennus ensin FY4:n muihin lukuihin (#727:n jälkeen).

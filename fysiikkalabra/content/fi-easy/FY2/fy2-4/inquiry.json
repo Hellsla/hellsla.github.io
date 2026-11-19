@@ -118,7 +118,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Koe 1: bensiinimoottori",
-      "intro": "Testaa ennuste 1. Laite on auton bensiinimoottori. Sen otettu teho on lukittu arvoon $60\\,\\text{kW}$, koska oikean moottorin hyötysuhde riippuu kuormasta. Muuta vain aikaa $t$. Kirjaa vähintään kolme mittausta. Katso energioita $E_\\text{o}$, $E_\\text{a}$ ja $E_\\text{h}$. Mallin hyötysuhde $25\\,\\%$ on tyypillinen arvo, jonka malli saa lähtötietona. Simulaatio ei mittaa sitä moottorista. Se laskee sen avulla energiat.",
+      "intro": "Testaa ennuste 1. Laite on auton bensiinimoottori. Sen otettu teho on lukittu arvoon $60\\,\\text{kW}$, koska oikean moottorin hyötysuhde riippuu kuormasta. Muuta vain aikaa $t$. Kirjaa vähintään kolme mittausta. Katso energioita $E_\\text{o}$, $E_\\text{a}$ ja $E_\\text{h}$. Simulaatio ei mittaa hyötysuhdetta moottorista. Se laskee energiat tyypillisellä hyötysuhteella, jonka se saa lähtötietona.",
       "initial": {
         "laite": "auto",
         "Po": 60000,
@@ -254,11 +254,10 @@
       "after": [
         "koe-1"
       ],
-      "prompt": "Kirjoita taulukkosi perusteella: Miten hyötysuhde lasketaan energioista ja tehoista? Muuttuiko se, kun käyntiaika muuttui? Miksi? Mitä koe kertoi bensiinimoottorista?",
-      "model": "Kokeessa 1 bensiinimoottori otti tasaisen tehon $60\\,\\text{kW}$. Energiat kasvoivat ajan mukana. Kun $t = 10\\,\\text{s}$, $E_\\text{o} = 600\\,\\text{kJ}$ ja $E_\\text{a} = 150\\,\\text{kJ}$. Kun $t = 20\\,\\text{s}$, $E_\\text{o} = 1200\\,\\text{kJ}$ ja $E_\\text{a} = 300\\,\\text{kJ}$. Suhde $E_\\text{a} : E_\\text{o} = 25\\,\\%$ pysyi samana, koska tasaisella teholla $E = P \\cdot t$ ja aika supistuu. Sama suhde saadaan tehoista: $15\\,\\text{kW} : 60\\,\\text{kW} = 25\\,\\%$. Loput $75\\,\\%$ oli häviöitä, enimmäkseen lämpöä. Hyötysuhde ei siis riipu käyntiajasta, kun laite käy tasaisesti. Arvot ovat simulaation mallin arvoja. Mallissa hyötysuhde on vakio myös silloin, kun otettu teho muuttuu. Se on kuitenkin mallin oletus. Todellisen moottorin hyötysuhde riippuu kuormasta.",
+      "prompt": "Kirjoita taulukkosi perusteella: Miten hyötysuhde lasketaan energioista ja tehoista? Mitä koe kertoi bensiinimoottorista?",
+      "model": "Kokeessa 1 bensiinimoottori otti tasaisen tehon $60\\,\\text{kW}$. Energiat kasvoivat ajan mukana. Kun $t = 10\\,\\text{s}$, $E_\\text{o} = 600\\,\\text{kJ}$ ja $E_\\text{a} = 150\\,\\text{kJ}$. Kun $t = 20\\,\\text{s}$, $E_\\text{o} = 1200\\,\\text{kJ}$ ja $E_\\text{a} = 300\\,\\text{kJ}$. Suhde $E_\\text{a} : E_\\text{o} = 25\\,\\%$ pysyi samana, koska tasaisella teholla $E = P \\cdot t$ ja aika supistuu. Sama suhde saadaan tehoista: $15\\,\\text{kW} : 60\\,\\text{kW} = 25\\,\\%$. Loput $75\\,\\%$ oli häviöitä, enimmäkseen lämpöä. Arvot ovat simulaation mallin arvoja. Mallissa hyötysuhde on vakio myös silloin, kun otettu teho muuttuu. Se on kuitenkin mallin oletus. Todellisen moottorin hyötysuhde riippuu kuormasta.",
       "criteria": [
         "Sanoin, että hyötysuhde on hyötyenergian (tai hyötytehon) osuus otetusta energiasta (tai tehosta). Annoin laskun luvuilla.",
-        "Totesin, että hyötysuhde ei muuttunut, kun käyntiaika muuttui.",
         "Selitin, miksi energioista ja tehoista laskettu hyötysuhde on sama (aika supistuu).",
         "Sanoin, että bensiinimoottorin häviöt ovat suuri osa otetusta tehosta. Sanoin myös, että ne ovat lämpöä."
       ]
@@ -393,8 +392,8 @@
           "feedback": "Hehkulampussa lämpö on häviötä, koska lampun tehtävä on valaista. Patterin tehtävä on lämmittää. Siksi sama lämpö on patterin hyötyä. Patterin hyötysuhde on lähes $100\\,\\%$."
         },
         {
-          "text": "Alle $100\\,\\%$, koska minkään laitteen hyötysuhde ei voi olla $100\\,\\%$.",
-          "feedback": "Hyötysuhde on enintään $100\\,\\%$. Se ei ole aina sen alle. Todellisissa laitteissa se jää usein alle, kun osa energiasta ei mene hyötykäyttöön. Patterissa käytännössä kaikki sähköenergia muuttuu huoneen lämmöksi."
+          "text": "Noin $50\\,\\%$, koska johdot ja patteri lämpenevät ja osa energiasta menee hukkaan.",
+          "feedback": "Ei osu. Patterin tehtävä on tuottaa lämpöä. Siksi patterin ja johtojen lämpeneminen on hyötyä eikä häviötä. Huoneeseen siirtyy käytännössä kaikki otettu sähköenergia. Hyötysuhde on lähes $100\\,\\%$."
         },
         {
           "text": "Yli $100\\,\\%$, koska lämpöä syntyy enemmän kuin sähköä kuluu.",

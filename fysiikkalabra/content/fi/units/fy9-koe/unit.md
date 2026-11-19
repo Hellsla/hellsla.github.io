@@ -269,7 +269,9 @@ Esimerkin vaiheet ovat samat kuin mallivastausten otsikot: *Tunnetut ja kysytty*
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Veden massa $m = 145\,\text{kg}$, alkulämpötila $T_1 = 10{,}0\,{}^\circ\text{C}$, loppulämpötila $T_2 = 38{,}0\,{}^\circ\text{C}$ ja taulukosta veden ominaislämpökapasiteetti $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$. Kysytään lämpömäärää $Q$ kilowattitunteina.
+**Tunnetut ja kysytty.** Veden massa $m = 145\,\text{kg}$, alkulämpötila $T_1 = 10{,}0\,{}^\circ\text{C}$, loppulämpötila $T_2 = 38{,}0\,{}^\circ\text{C}$ ja taulukosta veden ominaislämpökapasiteetti $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$.
+
+Kysytään lämpömäärää $Q$ kilowattitunteina.
 
 <!-- vaihe -->
 

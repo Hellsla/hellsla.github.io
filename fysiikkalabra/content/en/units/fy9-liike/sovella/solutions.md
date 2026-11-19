@@ -274,7 +274,9 @@ $$, as the reasoning of part c requires. Ball A is still rising, because its hig
   <foreignObject x="87" y="274.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$\text{braking dist.}$</div></foreignObject>
 </svg>
 
-**Model answer:** The points show two stages. At the moments $0$, $4$ and $8\,\text{s}$ the velocity stays at about $90\,\text{km/h}$: the variation of $\pm 1\,\text{km/h}$ is the size of the app's uncertainty, so the train moves uniformly, and a horizontal straight line is drawn for these points. From $12\,\text{s}$ on, the velocity decreases by roughly the same amount every four seconds, so the train brakes uniformly, and a falling straight line is fitted to these points so that the points lie on both sides of it. The first three points are not included in the braking line, because they belong to a different stage and would tilt the line the wrong way. The falling line is extended as a dashed line to the time axis for part c.
+**Model answer:** The points show two stages. At the moments $0$, $4$ and $8\,\text{s}$ the velocity stays at about $90\,\text{km/h}$: the variation of $\pm 1\,\text{km/h}$ is the size of the app's uncertainty, so the train moves uniformly, and a horizontal straight line is drawn for these points.
+
+From $12\,\text{s}$ on, the velocity decreases by roughly the same amount every four seconds, so the train brakes uniformly, and a falling straight line is fitted to these points so that the points lie on both sides of it. The first three points are not included in the braking line, because they belong to a different stage and would tilt the line the wrong way. The falling line is extended as a dashed line to the time axis for part c.
 
 ### b)
 **Given:** the braking line of part a; the points $(12\,\text{s};\ 85\,\text{km/h})$ and $(40\,\text{s};\ 20\,\text{km/h})$ are read from it

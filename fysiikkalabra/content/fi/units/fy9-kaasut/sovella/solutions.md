@@ -34,7 +34,9 @@ p_\text{c} &= 101\,\text{kPa} + 562\,\text{kPa} \\
 \end{aligned}
 $$, sylinteriin tuleva tilavuus $\Delta V = 37{,}7\,\textsf{l}$; lämpötila vakio
 **Kysytty:** säiliön mittarin lukema $\Delta p_2$ yhden noston jälkeen ja riittääkö ilma toiseen nostoon
-**Periaate:** Ilmaa ei katoa: säiliön ilma jakautuu säiliöön ja sylinteriin. Vakiolämpötilassa saman ilmamäärän tulo $pV$ pysyy samana (luku *Kaasujen tilanmuutokset ja Boylen laki*), joten säiliön alkuperäisen ilman $pV$ on säiliöön jäävän ja sylinteriin siirtyneen ilman $pV$:n summa. Laskuissa käytetään kokonaispaineita. Ilma virtaa vain suuremmasta paineesta pienempään, joten nosto jatkuu vain niin kauan kuin säiliön paine on vähintään $p_\text{c}$.
+**Periaate:** Ilmaa ei katoa: säiliön ilma jakautuu säiliöön ja sylinteriin. Vakiolämpötilassa saman ilmamäärän tulo $pV$ pysyy samana (luku *Kaasujen tilanmuutokset ja Boylen laki*), joten säiliön alkuperäisen ilman $pV$ on säiliöön jäävän ja sylinteriin siirtyneen ilman $pV$:n summa.
+
+Laskuissa käytetään kokonaispaineita. Ilma virtaa vain suuremmasta paineesta pienempään, joten nosto jatkuu vain niin kauan kuin säiliön paine on vähintään $p_\text{c}$.
 **Kaava:** $p_1V_\text{s} = p_2V_\text{s} + p_\text{c}\,\Delta V$, joten $p_2 = p_1 - \dfrac{p_\text{c}\,\Delta V}{V_\text{s}}$ ja $\Delta p_2 = p_2 - p_0$
 **Muunnokset:** Kokonaispaine aluksi $p_1 = 900\,\text{kPa} + 101\,\text{kPa} = 1001\,\text{kPa}$. Litrat supistuvat.
 **Sijoitus:** $$
@@ -55,7 +57,9 @@ $$.
 &\dfrac{(751{,}0 - 663{,}1)\,\text{kPa} \cdot 100\,\textsf{l}}{663{,}1\,\text{kPa}} \\
 &\approx 13{,}3\,\textsf{l}
 \end{aligned}
-$$ eli lava on noussut noin $13{,}3\,\textsf{l} : 31{,}4\,\textsf{l/m} \approx 0{,}42\,\text{m}$. Lava pysähtyy siihen, kunnes kompressori käynnistyy. Malli olettaa lämpötilan vakioksi. Todellisuudessa säiliöstä purkautuva ilma jäähtyy laajetessaan, joten paine on hetkellisesti vielä laskettua pienempi ja nosto jää aikaisemmin kesken.
+$$ eli lava on noussut noin $13{,}3\,\textsf{l} : 31{,}4\,\textsf{l/m} \approx 0{,}42\,\text{m}$.
+
+Lava pysähtyy siihen, kunnes kompressori käynnistyy. Malli olettaa lämpötilan vakioksi. Todellisuudessa säiliöstä purkautuva ilma jäähtyy laajetessaan, joten paine on hetkellisesti vielä laskettua pienempi ja nosto jää aikaisemmin kesken.
 **Järkevyys:** Yksi nosto vie säiliön paineesta $250\,\text{kPa}$, eli neljänneksen, koska sylinteriin siirtyvän ilman $pV$ on $663 \cdot 37{,}7 \approx 25\,000\,\text{kPa}\cdot\textsf{l}$ ja säiliön alkuperäinen $pV$ on noin $100\,000\,\text{kPa}\cdot\textsf{l}$.
 
 ### Yleisiä virheitä
@@ -310,8 +314,12 @@ $$. Ero johtuu siitä, että kulmakertoimen kautta laskettu tulos ei käytä ole
 
 ### d)
 **Kysytty:** miten hauteen ulkopuolelle jäävä $1{,}5\,\text{ml}$:n ilmamäärä muuttaa suoraa ja nollapisteen arviota, ja poistavatko toistot virheen
-**Periaate:** Letkun ilma pysyy huoneenlämmössä ja samassa paineessa, joten sen tilavuus ei muutu hauteen lämmetessä. Ryhmän kirjaama tilavuus on hauteessa olevan ilman tilavuus ja letkun vakiotilavuus yhteensä, koska he lisäsivät letkun $1{,}5\,\text{ml}$ jokaiseen lukemaan. Vain hauteessa oleva ilma noudattaa lakia $V \propto T$. Systemaattinen virhe siirtää kaikkia tuloksia samaan suuntaan, eikä sitä voi poistaa toistamalla (luku *Absoluuttisen nollapisteen määrittäminen*).
-**Mallivastaus:** Jokaiseen kirjattuun tilavuuteen tulee sama lisä $1{,}5\,\text{ml}$, joten suora siirtyy ylöspäin mutta sen kulmakerroin ei muutu: kulmakertoimen määrää vain hauteessa oleva ilma. Nollakohta on silloin $\theta_0 = -\dfrac{V_0 + 1{,}5\,\text{ml}}{k}$, eli arvio siirtyy kylmemmäksi noin $\dfrac{1{,}5\,\text{ml}}{0{,}135\,\text{ml}/{}^\circ\text{C}} \approx 11\,\text{K}$: tämän ryhmän tulos olisi noin $-290\,{}^\circ\text{C}$. Virhe on systemaattinen, joten useammat toistot tai useampi mittauspiste eivät poista sitä. Koko ilmamäärä on pidettävä hauteessa, tai letkun vakiotilavuus jätetään pois kokonaistilavuudesta: ruiskun ilman ainemäärä pysyy silloinkin vakiona, joten pelkät asteikon lukemat noudattavat lakia $V \propto T$ ja antavat oikean nollakohdan.
+**Periaate:** Letkun ilma pysyy huoneenlämmössä ja samassa paineessa, joten sen tilavuus ei muutu hauteen lämmetessä. Ryhmän kirjaama tilavuus on hauteessa olevan ilman tilavuus ja letkun vakiotilavuus yhteensä, koska he lisäsivät letkun $1{,}5\,\text{ml}$ jokaiseen lukemaan.
+
+Vain hauteessa oleva ilma noudattaa lakia $V \propto T$. Systemaattinen virhe siirtää kaikkia tuloksia samaan suuntaan, eikä sitä voi poistaa toistamalla (luku *Absoluuttisen nollapisteen määrittäminen*).
+**Mallivastaus:** Jokaiseen kirjattuun tilavuuteen tulee sama lisä $1{,}5\,\text{ml}$, joten suora siirtyy ylöspäin mutta sen kulmakerroin ei muutu: kulmakertoimen määrää vain hauteessa oleva ilma. Nollakohta on silloin $\theta_0 = -\dfrac{V_0 + 1{,}5\,\text{ml}}{k}$, eli arvio siirtyy kylmemmäksi noin $\dfrac{1{,}5\,\text{ml}}{0{,}135\,\text{ml}/{}^\circ\text{C}} \approx 11\,\text{K}$: tämän ryhmän tulos olisi noin $-290\,{}^\circ\text{C}$.
+
+Virhe on systemaattinen, joten useammat toistot tai useampi mittauspiste eivät poista sitä. Koko ilmamäärä on pidettävä hauteessa, tai letkun vakiotilavuus jätetään pois kokonaistilavuudesta: ruiskun ilman ainemäärä pysyy silloinkin vakiona, joten pelkät asteikon lukemat noudattavat lakia $V \propto T$ ja antavat oikean nollakohdan.
 
 ### Yleisiä virheitä
 - Kuvaajan pisteet yhdistetään murtoviivaksi tai suora pakotetaan kulkemaan origon kautta, vaikka vaaka-akseli on celsiusasteina.
@@ -329,7 +337,9 @@ $$. Ero johtuu siitä, että kulmakertoimen kautta laskettu tulos ei käytä ole
 ### a)
 **Kysytty:** mikä esitteessä pitää paikkansa ja mikä ei
 **Periaate:** Energian säilymislaki sallii vain muutokset, joissa energia ei synny eikä katoa (luku *Sisäenergia, lämpömäärä ja energian säilyminen*). Lämpövoimakoneelle on lisäksi raja: se voi muuttaa lämpöä työksi vain, jos se luovuttaa osan lämmöstä kylmempään ympäristöön (luku *Kaasun tekemä työ ja lämpövoimakone*).
-**Mallivastaus:** Esitteen energiaa koskeva osa pitää: meren sisäenergia voisi energian puolesta muuttua laivan liikkeeksi, ja jos meri jäähtyy saman verran kuin työtä tehdään, energia säilyy. Moottori ei silti voi toimia. Lämpövoimakone tekee työtä vain, kun lämpöä siirtyy kuumasta kylmempään ja osa siitä luovutetaan kylmempään ympäristöön. Esitteen moottorilla on vain yksi lämpötila, $15\,{}^\circ\text{C}$:n meri, eikä mitään kylmempää, jonne lämpö voisi mennä. Kaikkea lämpöä ei voi muuttaa työksi, olipa kone kuinka kitkaton tahansa. Esitteen väite, ettei moottori riko yhtään luonnonlakia, on siis väärä, eikä hanketta kannata rahoittaa.
+**Mallivastaus:** Esitteen energiaa koskeva osa pitää: meren sisäenergia voisi energian puolesta muuttua laivan liikkeeksi, ja jos meri jäähtyy saman verran kuin työtä tehdään, energia säilyy. Moottori ei silti voi toimia. Lämpövoimakone tekee työtä vain, kun lämpöä siirtyy kuumasta kylmempään ja osa siitä luovutetaan kylmempään ympäristöön.
+
+Esitteen moottorilla on vain yksi lämpötila, $15\,{}^\circ\text{C}$:n meri, eikä mitään kylmempää, jonne lämpö voisi mennä. Kaikkea lämpöä ei voi muuttaa työksi, olipa kone kuinka kitkaton tahansa. Esitteen väite, ettei moottori riko yhtään luonnonlakia, on siis väärä, eikä hanketta kannata rahoittaa.
 
 ### b)
 **Annettu:** merivedestä otettu lämpöteho $P_1 = 500\,\text{kW}$, työteho $P_W = 30\,\text{kW}$; meri $3\,{}^\circ\text{C}$, pakkasilma $-20\,{}^\circ\text{C}$
@@ -346,7 +356,9 @@ $$. Kone ei riko lakeja, koska se luovuttaa lähes kaiken lämmön kylmempään.
 ### c)
 **Kysytty:** miksi lämpöpumppu voi lämmittää hyttejä merivedellä, vaikka esitteen moottori ei voi toimia
 **Periaate:** Lämpöpumppu toimii päinvastoin kuin lämpövoimakone: se käyttää sähköenergiaa ja siirtää sen avulla lämpöä kylmästä lämpimään. Sisälle luovutettu lämpö on ulkoa otetun lämmön ja sähköenergian summa (luku *Kaasun tekemä työ ja lämpövoimakone*).
-**Mallivastaus:** Lämpöpumppu ei muuta lämpöä työksi. Se siirtää lämpöä kylmästä $3\,{}^\circ\text{C}$:n merivedestä lämpimiin hytteihin, ja siihen tarvitaan työtä, tässä sähkötehoa $10\,\text{kW}$. Energia säilyy: hytteihin tulee merivedestä otettu $35\,\text{kW} - 10\,\text{kW} = 25\,\text{kW}$ ja sähkön $10\,\text{kW}$, yhteensä $35\,\text{kW}$. Suhde $35 : 10 = 3{,}5$ on lämpökerroin eikä hyötysuhde: se voi olla yli $1$, koska suurin osa lämmöstä siirretään merestä eikä tehdä sähköstä. Mitään ei synny tyhjästä. Ero esitteen moottoriin on suunnassa ja hinnassa: lämpöpumppu tarvitsee ulkopuolista työtä siirtääkseen lämpöä kylmästä lämpimään, kun taas esitteen moottori lupaa työtä merestä ilman kylmempää ympäristöä.
+**Mallivastaus:** Lämpöpumppu ei muuta lämpöä työksi. Se siirtää lämpöä kylmästä $3\,{}^\circ\text{C}$:n merivedestä lämpimiin hytteihin, ja siihen tarvitaan työtä, tässä sähkötehoa $10\,\text{kW}$. Energia säilyy: hytteihin tulee merivedestä otettu $35\,\text{kW} - 10\,\text{kW} = 25\,\text{kW}$ ja sähkön $10\,\text{kW}$, yhteensä $35\,\text{kW}$.
+
+Suhde $35 : 10 = 3{,}5$ on lämpökerroin eikä hyötysuhde: se voi olla yli $1$, koska suurin osa lämmöstä siirretään merestä eikä tehdä sähköstä. Mitään ei synny tyhjästä. Ero esitteen moottoriin on suunnassa ja hinnassa: lämpöpumppu tarvitsee ulkopuolista työtä siirtääkseen lämpöä kylmästä lämpimään, kun taas esitteen moottori lupaa työtä merestä ilman kylmempää ympäristöä.
 
 ### Yleisiä virheitä
 - a-kohdassa todetaan vain, että ”energiaa ei synny tyhjästä”, vaikka esite ei väitäkään niin: virhe on toisessa rajassa, kylmemmän ympäristön puuttumisessa.
@@ -369,6 +381,7 @@ $$. Kone ei riko lakeja, koska se luovuttaa lähes kaiken lämmön kylmempään.
 **Kysytty:** onko johtopäätös perusteltu, tärkeimmät virhelähteet ja niiden vaikutuksen suunta
 **Periaate:** Johtopäätös on perusteltu vain, jos ero taulukkoarvoon on suurempi kuin tuloksen epävarmuus (luku *Mittaaminen ja mittauksen luotettavuus*). Virhelähteen vaikutus arvioidaan laskemalla tulos uudelleen muutetulla arvolla. Moolimassa on $\Delta m : \Delta n$, joten liian suuri $\Delta n$ tai liian pieni $\Delta m$ pienentää tulosta.
 **Mallivastaus:** Johtopäätös ei ole perusteltu. Tulos on yhden mittauksen varassa, ja tärkeimmät virhelähteet vievät sitä samaan suuntaan, alaspäin.
+
 - *Lämmin ilma.* Pumpattu ilma lämpenee puristuessaan, ja mittari luettiin heti. Lämpimän ilman paine on suurempi kuin samalla ilmamäärällä huoneenlämmössä, joten $\Delta n$ laskettiin liian suureksi ja tulos liian pieneksi. Jos ilma oli $30\,{}^\circ\text{C}$:ista, tulos olisi noin $27\,\text{g/mol}$.
 - *Pumpun mittari.* Se mittaa letkun painetta pumppauksen aikana ja on tehty karkeaan käyttöön. Jos pullon todellinen ylipaine oli $10\,\text{kPa}$ pienempi, tulos olisi $27\,\text{g/mol}$; virhe voi olla kumpaan suuntaan tahansa.
 - *Karkaava ilma.* Pumppua irrotettaessa ja venttiilin kautta karkaa ilmaa ennen punnitusta, joten $\Delta m$ on liian pieni ja tulos liian pieni.
@@ -380,6 +393,7 @@ Vaa'an tarkkuus $0{,}01\,\text{g}$ on alle $1\,\%$ massan kasvusta $3{,}28\,\tex
 **Kysytty:** koesuunnitelma, jolla ilman moolimassa saadaan luotettavammin
 **Periaate:** Suureet mitataan mahdollisimman suoraan ja silloin, kun oletukset pätevät (sama lämpötila ennen ja jälkeen). Mittaus toistetaan usealla arvolla, ja tulos määritetään kuvaajan kulmakertoimesta, jolloin yksittäisen mittauksen virhe painaa vähemmän (luku *Graafinen esitys ja suoran sovittaminen*).
 **Mallivastaus:**
+
 - *Tilavuus.* Pullon tilavuus mitataan täyttämällä se vedellä ja punnitsemalla vesi ($1\,\text{g} \approx 1\,\text{ml}$).
 - *Paine ja lämpötila.* Pulloon liitetään tarkka painemittari, ja ylipaine luetaan vasta, kun pullo on seissyt muutaman minuutin ja ilma on jäähtynyt huoneenlämpöön. Huoneen lämpötila mitataan lämpömittarilla.
 - *Massa.* Pullo punnitaan heti painelukeman jälkeen niin, ettei venttiiliin kosketa välissä.
@@ -401,7 +415,9 @@ Jos pisteet ovat suoralla mutta suora ei kulje origon kautta, se paljastaa syste
 ### a)
 **Annettu:** lasilevyn mitat $2{,}40\,\text{m}$, $1{,}20\,\text{m}$ ja $10\,\text{mm}$, tiheys $\rho = 2500\,\text{kg/m}^3$, laikan sisähalkaisija $d = 300\,\text{mm}$, kiihtyvyys ylös $a = 1{,}2\,\text{m/s}^2$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** levyn voimakuvio ja pienin alipaine $\Delta p$ laikan alla kilopascaleina
-**Periaate:** Ulkoilma painaa levyä joka puolelta, mutta laikan alla paine on $\Delta p$ pienempi. Siksi ulkoilman voima levyn alapintaan on laikan kohdalla $\Delta p\,A$ suurempi kuin ilman voima yläpintaan, ja nettovoima $F_\text{p} = \Delta p\,A$ osoittaa kohtisuoraan pintaa vastaan eli ylös (luku *Paine ja hydrostaattinen paine*). Lisäksi levyyn vaikuttavat paino ja laikan reunan tukivoima, joka painaa levyä alas. Pienimmällä alipaineella reunan tukivoima on nolla: levy on irtoamisen rajalla. Levy kiihtyy ylös, joten Newtonin toisen lain mukaan voimien summa on $ma$ ylöspäin (luku *Newtonin toinen laki*).
+**Periaate:** Ulkoilma painaa levyä joka puolelta, mutta laikan alla paine on $\Delta p$ pienempi. Siksi ulkoilman voima levyn alapintaan on laikan kohdalla $\Delta p\,A$ suurempi kuin ilman voima yläpintaan, ja nettovoima $F_\text{p} = \Delta p\,A$ osoittaa kohtisuoraan pintaa vastaan eli ylös (luku *Paine ja hydrostaattinen paine*).
+
+Lisäksi levyyn vaikuttavat paino ja laikan reunan tukivoima, joka painaa levyä alas. Pienimmällä alipaineella reunan tukivoima on nolla: levy on irtoamisen rajalla. Levy kiihtyy ylös, joten Newtonin toisen lain mukaan voimien summa on $ma$ ylöspäin (luku *Newtonin toinen laki*).
 
 <svg data-fig="fy9-kaasut-s6-vaaka" viewBox="0 0 420 270" role="img" aria-label="Voimakuvio: vaakasuora lasilevy kapeana suorakulmiona, kun nosto kiihtyy ylöspäin ja alipaine on pienin mahdollinen. Laikka on harmaana levyn yläpinnan keskellä. Paino G lähtee levyn keskipisteestä suoraan alas. Paine-eron voima F p lähtee levyn yläpinnasta laikan kohdalta ylös, ja se on painoa pidempi, koska levy kiihtyy ylöspäin. Laikan reunan tukivoima on tässä rajatapauksessa nolla. Erillään oranssi kiihtyvyysnuoli a ylöspäin." style="max-width:100%;font-size:24px">
   <rect x="144" y="113" width="72" height="12" rx="4" fill="#6b7480" stroke="#1f2933" stroke-width="1.5"/>
@@ -435,7 +451,9 @@ $$, joten kiihtyvyys lisää tarvetta noin $12\,\%$, kuten suhde $1{,}2 : 9{,}81
 ### b)
 **Annettu:** $m = 72{,}0\,\text{kg}$, $A = 0{,}070\,69\,\text{m}^2$, $a = 1{,}2\,\text{m/s}^2$ ylös, kuivan lasin lepokitkakerroin $\mu_0 = 0{,}60$
 **Kysytty:** pystysuoran levyn voimakuvio ja pienin alipaine $\Delta p$
-**Periaate:** Paine-eron voima on kohtisuorassa lasin pintaa vastaan, ja nyt pinta on pystysuora, joten voima $F_\text{p} = \Delta p\,A$ on vaakasuora ja painaa levyä laikkaa vasten. Laikan reuna työntää levyä takaisin tukivoimalla $N$. Vaakasuunnassa levy ei kiihdy, joten $N = F_\text{p}$. Painoa ja kiihdyttävää voimaa vastaan levyä kannattaa vain laikan reunan lepokitka, joka on enintään $\mu_0 N$ (luku *Paino, kitka ja kalteva taso*). Pienimmällä alipaineella lepokitka on suurimmillaan.
+**Periaate:** Paine-eron voima on kohtisuorassa lasin pintaa vastaan, ja nyt pinta on pystysuora, joten voima $F_\text{p} = \Delta p\,A$ on vaakasuora ja painaa levyä laikkaa vasten. Laikan reuna työntää levyä takaisin tukivoimalla $N$.
+
+Vaakasuunnassa levy ei kiihdy, joten $N = F_\text{p}$. Painoa ja kiihdyttävää voimaa vastaan levyä kannattaa vain laikan reunan lepokitka, joka on enintään $\mu_0 N$ (luku *Paino, kitka ja kalteva taso*). Pienimmällä alipaineella lepokitka on suurimmillaan.
 
 <svg data-fig="fy9-kaasut-s6-pysty" viewBox="0 0 420 400" role="img" aria-label="Voimakuvio: pystyasentoon käännetty lasilevy kapeana pystysuorana suorakulmiona, laikka levyn vasemmalla pinnalla, harmaana. Paino G keskipisteestä suoraan alas. Paine-eron voima F p työntää levyä oikealta vaakasuoraan vasemmalle kohti laikkaa. Laikan reunan tukivoima N työntää levyä vasemmalta vaakasuoraan oikealle; se on yhtä suuri kuin F p. Lepokitka F μ0 lähtee levyn vasemmasta yläkulmasta ylös, ja se on painoa pidempi, koska levy kiihtyy ylöspäin. N on noin 1,7 kertaa kitkan pituinen, koska kitka on pienimmillä alipaineella 0,60 kertaa tukivoima. Erillään oranssi kiihtyvyysnuoli a ylöspäin." style="max-width:100%;font-size:24px">
   <rect x="176" y="160" width="12" height="100" rx="4" fill="#6b7480" stroke="#1f2933" stroke-width="1.5"/>
@@ -564,7 +582,9 @@ $$ joten $$
 &= 11{,}3\,\text{K}
 \end{aligned}
 $$
-**Vastaus:** $\Delta T \approx 11\,\text{K}$ eli merivesi lämpenee noin $11\,{}^\circ\text{C}$. Vastauksessa on kaksi merkitsevää numeroa kuten lämpötehossa ja merivesivirtauksessa $57\,\tfrac{\text{m}^3}{\text{s}}$. Todellinen lämpeneminen on hieman pienempi, koska pieni osa lämmöstä siirtyy ympäristöön muuta kautta kuin lauhduttimessa: tulos on yläraja-arvio. Meriveden suola muuttaa tulosta vain vähän, sillä suolaisen veden tiheys on hieman suurempi ja ominaislämpökapasiteetti hieman pienempi kuin puhtaan veden.
+**Vastaus:** $\Delta T \approx 11\,\text{K}$ eli merivesi lämpenee noin $11\,{}^\circ\text{C}$. Vastauksessa on kaksi merkitsevää numeroa kuten lämpötehossa ja merivesivirtauksessa $57\,\tfrac{\text{m}^3}{\text{s}}$. Todellinen lämpeneminen on hieman pienempi, koska pieni osa lämmöstä siirtyy ympäristöön muuta kautta kuin lauhduttimessa: tulos on yläraja-arvio.
+
+Meriveden suola muuttaa tulosta vain vähän, sillä suolaisen veden tiheys on hieman suurempi ja ominaislämpökapasiteetti hieman pienempi kuin puhtaan veden.
 **Järkevyys:** Yksikkö on oikea, sillä $\text{W} : \tfrac{\text{W}}{\text{K}} = \text{K}$. Sekunnissa virtaa $57\,000\,\text{kg}$ vettä, joten kilogrammaa kohti siirtyy $$
 \begin{aligned}
 &2{,}7 \cdot 10^{9}\,\text{J} : 57\,000\,\text{kg} \\
@@ -575,16 +595,24 @@ $$ ja $47\,\text{kJ} : 4{,}19\,\text{kJ/K} \approx 11\,\text{K}$. Noin kymmenen 
 ### d)
 **Kysytty:** miksi kaikkea reaktorin lämpöä ei voi muuttaa sähköenergiaksi
 **Periaate:** Lämpövoimakone ottaa kuumasta lähteestä lämmön $Q_1$, tekee työn $W$ ja luovuttaa lämmön $Q_2$ kylmempään ympäristöön, ja energian säilymisen mukaan $W = Q_1 - Q_2$. Mitä pienempi lämpötilaero $T_1 - T_2$ on kuuman lähteen lämpötilaan $T_1$ nähden, sitä pienemmän osan lämmöstä kone voi muuttaa työksi (luku *Kaasun tekemä työ ja lämpövoimakone*).
-**Mallivastaus:** Ydinvoimalaitos on lämpövoimakone. Reaktorin lämmöllä tehdään höyryä, jonka lämpötila on aineiston mukaan (16.11.2026) $290\,{}^\circ\text{C}$. Höyry tekee työtä turbiinissa, ja generaattori muuttaa työn sähköenergiaksi. Höyry tekee työtä vain, kun se laajenee turbiinin läpi kohti pienempää painetta ja lämpötilaa. Siksi turbiinin jälkeen höyryn on luovutettava lämpöä kylmempään: lauhduttimessa lämpö $Q_2$ siirtyy meriveteen, jonka lämpötila on noin $10\,{}^\circ\text{C}$. Lämpö siirtyy itsestään vain kuumemmasta kylmempään, eikä lämpöä $Q_2$ voi palauttaa kuumaan höyryyn tekemättä työtä. Työksi saadaan siis enintään $W = Q_1 - Q_2$, ja $Q_2$ on aina suurempi kuin nolla. Kitkan ja muiden häviöiden poistaminen ei muuta tätä, sillä $Q_2$ ei ole häviö vaan koneen toiminnan ehto.
+**Mallivastaus:** Ydinvoimalaitos on lämpövoimakone. Reaktorin lämmöllä tehdään höyryä, jonka lämpötila on aineiston mukaan (16.11.2026) $290\,{}^\circ\text{C}$. Höyry tekee työtä turbiinissa, ja generaattori muuttaa työn sähköenergiaksi. Höyry tekee työtä vain, kun se laajenee turbiinin läpi kohti pienempää painetta ja lämpötilaa. Siksi turbiinin jälkeen höyryn on luovutettava lämpöä kylmempään: lauhduttimessa lämpö $Q_2$ siirtyy meriveteen, jonka lämpötila on noin $10\,{}^\circ\text{C}$.
 
-Lämpötilat kertovat, miksi $Q_2$ on suuri. Kelvineinä höyry on $T_1 = (290 + 273)\,\text{K} = 563\,\text{K}$ ja merivesi $T_2 \approx 283\,\text{K}$. Lämpötilaero $280\,\text{K}$ on vain noin puolet kuuman lähteen lämpötilasta, joten suuri osa lämmöstä on luovutettava mereen. Todellisen laitoksen kitka, virtaushäviöt ja oma sähkönkulutus pienentävät sähkön osuutta vielä lisää, $37\,\%$:iin. Hyötysuhde paranisi, jos höyry olisi kuumempaa, mutta painevesireaktorissa höyryn lämpötilaa rajoittavat veden paine ja materiaalien kestävyys.
+Lämpö siirtyy itsestään vain kuumemmasta kylmempään, eikä lämpöä $Q_2$ voi palauttaa kuumaan höyryyn tekemättä työtä. Työksi saadaan siis enintään $W = Q_1 - Q_2$, ja $Q_2$ on aina suurempi kuin nolla. Kitkan ja muiden häviöiden poistaminen ei muuta tätä, sillä $Q_2$ ei ole häviö vaan koneen toiminnan ehto.
+
+Lämpötilat kertovat, miksi $Q_2$ on suuri. Kelvineinä höyry on $T_1 = (290 + 273)\,\text{K} = 563\,\text{K}$ ja merivesi $T_2 \approx 283\,\text{K}$. Lämpötilaero $280\,\text{K}$ on vain noin puolet kuuman lähteen lämpötilasta, joten suuri osa lämmöstä on luovutettava mereen.
+
+Todellisen laitoksen kitka, virtaushäviöt ja oma sähkönkulutus pienentävät sähkön osuutta vielä lisää, $37\,\%$:iin. Hyötysuhde paranisi, jos höyry olisi kuumempaa, mutta painevesireaktorissa höyryn lämpötilaa rajoittavat veden paine ja materiaalien kestävyys.
 
 ### e)
 **Kysytty:** mereen siirtyvän lämmön vaikutus ympäristöön ja syyt, jotka rajoittavat lämmön hyödyntämistä
 **Periaate:** Lämpönä siirtyvä energia kasvattaa vastaanottavan aineen sisäenergiaa, jolloin sen lämpötila nousee (luku *Sisäenergia, lämpömäärä ja energian säilyminen*). Lämpö siirtyy itsestään vain kuumemmasta kylmempään, ja lämpövoimakoneen työ pienenee, kun sen kylmän puolen lämpötila nousee (luku *Kaasun tekemä työ ja lämpövoimakone*).
-**Mallivastaus:** Mereen siirtyy lämpöä teholla $2700\,\text{MW}$, vuorokaudessa noin $65\,\text{GWh}$. Energia ei katoa: se kasvattaa meriveden sisäenergiaa. Jäähdytysvesi palaa mereen noin $11\,\text{K}$ lämpimämpänä ja sekoittuu ympäröivään veteen, joten meri lämpenee selvästi vain purkupaikan lähellä. Siellä meri voi pysyä talvella sulana, jää on heikkoa ja kasvukausi pitenee. Lämpimämpi vesi muuttaa eliöiden elinoloja: osa lajeista hyötyy ja osa kärsii, ja levien kasvu voi lisääntyä. Koko merialueen lämpötilaan vaikutus on pieni, koska lämpö leviää suureen vesimäärään ja siirtyy siitä edelleen ilmaan.
+**Mallivastaus:** Mereen siirtyy lämpöä teholla $2700\,\text{MW}$, vuorokaudessa noin $65\,\text{GWh}$. Energia ei katoa: se kasvattaa meriveden sisäenergiaa. Jäähdytysvesi palaa mereen noin $11\,\text{K}$ lämpimämpänä ja sekoittuu ympäröivään veteen, joten meri lämpenee selvästi vain purkupaikan lähellä.
 
-Lämpöä on paljon, mutta se on matalassa lämpötilassa. Jäähdytysvesi on vain noin $11\,\text{K}$ merta lämpimämpää, eli noin $21\,{}^\circ\text{C}$. Lämpö siirtyy itsestään vain kylmempään, joten tällä vedellä ei voi lämmittää kaukolämpöverkon vettä, jonka on oltava selvästi kuumempaa, jotta se lämmittää rakennuksia ja käyttövettä. Jos lämpö otettaisiin talteen kuumempana, höyry pitäisi ottaa turbiinista aikaisemmin. Silloin lämpövoimakoneen kylmän puolen lämpötila nousisi, lämpötilaero pienenisi ja laitos tuottaisi vähemmän sähköä. Lisäksi suuret lämmön käyttäjät ovat kaukana laitoksesta: pitkä siirtoputki on kallis, ja matkalla osa lämmöstä siirtyy ympäristöön. Siksi suurin osa lämmöstä johdetaan mereen, vaikka energiamäärä on suuri.
+Siellä meri voi pysyä talvella sulana, jää on heikkoa ja kasvukausi pitenee. Lämpimämpi vesi muuttaa eliöiden elinoloja: osa lajeista hyötyy ja osa kärsii, ja levien kasvu voi lisääntyä. Koko merialueen lämpötilaan vaikutus on pieni, koska lämpö leviää suureen vesimäärään ja siirtyy siitä edelleen ilmaan.
+
+Lämpöä on paljon, mutta se on matalassa lämpötilassa. Jäähdytysvesi on vain noin $11\,\text{K}$ merta lämpimämpää, eli noin $21\,{}^\circ\text{C}$. Lämpö siirtyy itsestään vain kylmempään, joten tällä vedellä ei voi lämmittää kaukolämpöverkon vettä, jonka on oltava selvästi kuumempaa, jotta se lämmittää rakennuksia ja käyttövettä.
+
+Jos lämpö otettaisiin talteen kuumempana, höyry pitäisi ottaa turbiinista aikaisemmin. Silloin lämpövoimakoneen kylmän puolen lämpötila nousisi, lämpötilaero pienenisi ja laitos tuottaisi vähemmän sähköä. Lisäksi suuret lämmön käyttäjät ovat kaukana laitoksesta: pitkä siirtoputki on kallis, ja matkalla osa lämmöstä siirtyy ympäristöön. Siksi suurin osa lämmöstä johdetaan mereen, vaikka energiamäärä on suuri.
 
 ### Yleisiä virheitä
 - a-kohdassa hyötysuhde lasketaan väärin päin, $4300 : 1600$, tai jaetaan sähköteho mereen siirtyvällä lämpöteholla $2700\,\text{MW}$.

@@ -35,7 +35,9 @@ $$. Se riittää lähes kolmeksi päiväksi.
 ### c)
 **Kysytty:** onko naapurin päätelmä paneelien vuorokauden energiasta oikea
 **Periaate:** Teho kertoo, kuinka nopeasti energiaa muuntuu. Energia on teho kertaa aika (luku *Teho*). Paneelin nimellisteho on suurin teho, jonka paneeli antaa kirkkaassa auringonpaisteessa.
-**Mallivastaus:** Väite on väärä, koska siinä teho ja energia menevät sekaisin. Kilowatti on tehon yksikkö, ja kilowattitunti on energian yksikkö. $1{,}2\,\text{kW}$ tarkoittaa, että paneelit voivat tuottaa enintään $1{,}2\,\text{kWh}$ *tunnissa*. Vuorokauden energia on keskiteho kertaa aika. Se riippuu siitä, kuinka kauan ja kuinka voimakkaasti aurinko paistaa. Aineiston mukaan paneelit tuottivat aurinkoisena päivänä $5{,}4\,\text{kWh}$. Se vastaa $5{,}4\,\text{kWh} : 1{,}2\,\text{kW} = 4{,}5$ tuntia täydellä teholla. Pilvisenä päivänä tuotanto oli $1{,}5\,\text{kWh}$. Se vastasi vain noin tuntia täydellä teholla. Naapurin luku on sattumalta lähellä pilvisen päivän tuotantoa, mutta päättely on väärä.
+**Mallivastaus:** Väite on väärä, koska siinä teho ja energia menevät sekaisin. Kilowatti on tehon yksikkö, ja kilowattitunti on energian yksikkö. $1{,}2\,\text{kW}$ tarkoittaa, että paneelit voivat tuottaa enintään $1{,}2\,\text{kWh}$ *tunnissa*. Vuorokauden energia on keskiteho kertaa aika. Se riippuu siitä, kuinka kauan ja kuinka voimakkaasti aurinko paistaa.
+
+Aineiston mukaan paneelit tuottivat aurinkoisena päivänä $5{,}4\,\text{kWh}$. Se vastaa $5{,}4\,\text{kWh} : 1{,}2\,\text{kW} = 4{,}5$ tuntia täydellä teholla. Pilvisenä päivänä tuotanto oli $1{,}5\,\text{kWh}$. Se vastasi vain noin tuntia täydellä teholla. Naapurin luku on sattumalta lähellä pilvisen päivän tuotantoa, mutta päättely on väärä.
 
 ### Yleisiä virheitä
 - Jääkaapin keskiteho kerrotaan vain muutamalla tunnilla, koska kompressori ei käy koko ajan. Keskiteho ottaa tämän kuitenkin jo huomioon.
@@ -86,7 +88,9 @@ $$.
 ### d)
 **Kysytty:** miksi kokonaishyötysuhde pienenee kesällä, kun kaukolämpöä tarvitaan vähän
 **Periaate:** Hyötysuhde riippuu siitä, mitä lasketaan hyödyksi (luku *Hyötysuhde*). Lämpövoimakone ei voi muuttaa kaikkea lämpöä sähköksi. Osa lämmöstä täytyy luovuttaa eli antaa kylmempään ympäristöön (luku *Energiantuotanto ja voimalaitosten hyötysuhde*).
-**Mallivastaus:** Kun voimala tuottaa sähköä, höyrykierrosta täytyy aina poistaa lämpöä lauhduttimessa. Talvella tällä lämmöllä lämmitetään kaukolämpövettä, ja lämpö lasketaan hyödyksi. Siksi kokonaishyötysuhde on noin $90\,\%$. Kesällä kaukolämpöä tarvitaan vain käyttöveteen. Siksi suurin osa lauhduttimen lämmöstä täytyy luovuttaa ympäristöön hukkalämpönä, esimerkiksi jäähdytysveteen. Jos sähköteho pysyy $30\,\text{MW}$:ssa, polttoainetta kuluu yhä suunnilleen saman verran. Hyötyä on kuitenkin vähemmän. Siksi kokonaishyötysuhde pienenee ja lähestyy sähköhyötysuhdetta. Tämän takia yhteistuotantovoimalaa käytetään lämmön tarpeen mukaan. Kesällä sitä käytetään pienemmällä teholla tai ei ollenkaan, ja sähkö tuotetaan muualla.
+**Mallivastaus:** Kun voimala tuottaa sähköä, höyrykierrosta täytyy aina poistaa lämpöä lauhduttimessa. Talvella tällä lämmöllä lämmitetään kaukolämpövettä, ja lämpö lasketaan hyödyksi. Siksi kokonaishyötysuhde on noin $90\,\%$. Kesällä kaukolämpöä tarvitaan vain käyttöveteen. Siksi suurin osa lauhduttimen lämmöstä täytyy luovuttaa ympäristöön hukkalämpönä, esimerkiksi jäähdytysveteen.
+
+Jos sähköteho pysyy $30\,\text{MW}$:ssa, polttoainetta kuluu yhä suunnilleen saman verran. Hyötyä on kuitenkin vähemmän. Siksi kokonaishyötysuhde pienenee ja lähestyy sähköhyötysuhdetta. Tämän takia yhteistuotantovoimalaa käytetään lämmön tarpeen mukaan. Kesällä sitä käytetään pienemmällä teholla tai ei ollenkaan, ja sähkö tuotetaan muualla.
 
 ### Yleisiä virheitä
 - Tonnit tunnissa jaetaan suoraan tunnilla ilman muunnoksia. Silloin teho saadaan yksikössä $\text{MJ/h}$, ja sitä verrataan megawatteihin.
@@ -220,7 +224,9 @@ $$
 ### d)
 **Kysytty:** ulkolämpötila, jossa lämmitystä ei mallin mukaan tarvita, ja miksi se ei ole $21\,{}^\circ\text{C}$
 **Periaate:** Kun lämmitystä ei tarvita, kulutus on pelkkä muu sähkönkulutus $E_\text{muu} = 12\,\text{kWh}$, joten suoralta $E = E_0 + kT$ ratkaistaan $T = \dfrac{E_\text{muu} - E_0}{k}$. Energia säilyy. Kaikki sähköenergia, jota käytetään sisällä, muuttuu lopulta talon sisäenergiaksi. Myös ihmiset ja auringon säteily tuovat taloon energiaa (luku *Energialajit ja energian säilyminen*).
-**Mallivastaus:** Jatketulta suoralta luetaan, että kulutus laskee muun kulutuksen tasolle $12\,\text{kWh}$ noin lämpötilassa $16$–$17\,{}^\circ\text{C}$. Suoran yhtälöstä saadaan $T = \dfrac{E_\text{muu} - E_0}{k} = \dfrac{12\,\text{kWh} - 93\,\text{kWh}}{-4{,}9\,\text{kWh}/{}^\circ\text{C}} = 16{,}5\,{}^\circ\text{C}$. Talo tarvitsee lämmitystä siis vasta, kun ulkona on kylmempää. Lämpötila on noin $4\,\text{K}$ alempi kuin sisälämpötila $21\,{}^\circ\text{C}$. Syy on se, että valaistuksen, ruoanlaiton ja laitteiden sähköenergia muuttuu talossa sisäenergiaksi. Lisäksi asukkaat lämmittävät taloa, ja ikkunoista tuleva auringon säteily tuo lisää energiaa. Nämä korvaavat lämpöhäviöt, kun lämpötilaero on pieni. Siksi lämmittimiä tarvitaan vain loppuun. Tulos on suuntaa antava eli vain suunnilleen oikea. Se perustuu talvipäivien suoraan, jota jatketaan pitkälle mitatun alueen ulkopuolelle. Lisäksi aineisto ei erottele aurinkoa ja tuulta.
+**Mallivastaus:** Jatketulta suoralta luetaan, että kulutus laskee muun kulutuksen tasolle $12\,\text{kWh}$ noin lämpötilassa $16$–$17\,{}^\circ\text{C}$. Suoran yhtälöstä saadaan $T = \dfrac{E_\text{muu} - E_0}{k} = \dfrac{12\,\text{kWh} - 93\,\text{kWh}}{-4{,}9\,\text{kWh}/{}^\circ\text{C}} = 16{,}5\,{}^\circ\text{C}$. Talo tarvitsee lämmitystä siis vasta, kun ulkona on kylmempää. Lämpötila on noin $4\,\text{K}$ alempi kuin sisälämpötila $21\,{}^\circ\text{C}$. Syy on se, että valaistuksen, ruoanlaiton ja laitteiden sähköenergia muuttuu talossa sisäenergiaksi.
+
+Lisäksi asukkaat lämmittävät taloa, ja ikkunoista tuleva auringon säteily tuo lisää energiaa. Nämä korvaavat lämpöhäviöt, kun lämpötilaero on pieni. Siksi lämmittimiä tarvitaan vain loppuun. Tulos on suuntaa antava eli vain suunnilleen oikea. Se perustuu talvipäivien suoraan, jota jatketaan pitkälle mitatun alueen ulkopuolelle. Lisäksi aineisto ei erottele aurinkoa ja tuulta.
 
 ### Yleisiä virheitä
 - Pisteet yhdistetään murtoviivaksi päivämäärien järjestyksessä. Silloin kuvaaja ei näytä, miten kulutus riippuu lämpötilasta.
@@ -237,12 +243,15 @@ $$
 ### a)
 **Kysytty:** riittävätkö kaksi tuulivoimalaa ja akku korvaamaan dieselvoimalan
 **Periaate:** Vuoden energia on keskiteho kertaa vuoden tunnit (luku *Energiantuotantotavat ja niiden vertailu*). Sähköverkossa tuotannon täytyy kuitenkin olla yhtä suuri kuin kulutus joka hetki. Siksi energian lisäksi täytyy tarkastella tehoa ja varastoa.
-**Mallivastaus:** Tuulivoimaloiden keskiteho on $P_\text{ka} = k\,N\,P_\text{nim}$ ja vuoden energia $E = P_\text{ka}\,t$, missä keskiteho on osuus $k = 0{,}30$ nimellistehosta, voimaloita on $N = 2$ ja nimellisteho on $P_\text{nim} = 1{,}0\,\text{MW}$. Keskiteho on $0{,}30 \cdot 2 \cdot 1{,}0\,\text{MW} = 0{,}60\,\text{MW}$. Vuodessa ne tuottavat siis $0{,}60\,\text{MW} \cdot 8760\,\text{h} \approx 5{,}3\,\text{GWh}$. Se on enemmän kuin saaren kulutus $3{,}0\,\text{GWh}$. Väitteen ensimmäinen osa pitää siis paikkansa vuoden energian kohdalla. Sähköä ei kuitenkaan tuoteta tasaisesti koko vuoden aikana. Kun on tyyntä, tuulivoimalat eivät tuota mitään. Täysi akku kattaa talven huippukulutuksen vain $2{,}0\,\text{MWh} : 1{,}2\,\text{MW} \approx 1{,}7$ tuntia. Tyyni pakkasjakso voi kuitenkin kestää päiviä. Siksi dieselvoimalaa ei voi purkaa, ellei saarelle saada muuta säätövoimaa tai yhteyttä mantereen sähköverkkoon. Säätövoima on sähköntuotantoa, jonka tehoa voi muuttaa tarpeen mukaan.
+**Mallivastaus:** Tuulivoimaloiden keskiteho on $P_\text{ka} = k\,N\,P_\text{nim}$ ja vuoden energia $E = P_\text{ka}\,t$, missä keskiteho on osuus $k = 0{,}30$ nimellistehosta, voimaloita on $N = 2$ ja nimellisteho on $P_\text{nim} = 1{,}0\,\text{MW}$. Keskiteho on $0{,}30 \cdot 2 \cdot 1{,}0\,\text{MW} = 0{,}60\,\text{MW}$. Vuodessa ne tuottavat siis $0{,}60\,\text{MW} \cdot 8760\,\text{h} \approx 5{,}3\,\text{GWh}$. Se on enemmän kuin saaren kulutus $3{,}0\,\text{GWh}$. Väitteen ensimmäinen osa pitää siis paikkansa vuoden energian kohdalla.
+
+Sähköä ei kuitenkaan tuoteta tasaisesti koko vuoden aikana. Kun on tyyntä, tuulivoimalat eivät tuota mitään. Täysi akku kattaa talven huippukulutuksen vain $2{,}0\,\text{MWh} : 1{,}2\,\text{MW} \approx 1{,}7$ tuntia. Tyyni pakkasjakso voi kuitenkin kestää päiviä. Siksi dieselvoimalaa ei voi purkaa, ellei saarelle saada muuta säätövoimaa tai yhteyttä mantereen sähköverkkoon. Säätövoima on sähköntuotantoa, jonka tehoa voi muuttaa tarpeen mukaan.
 
 ### b)
 **Kysytty:** vaihtoehtojen vertailu vähintään kolmella perusteella ja perusteltu suositus
 **Periaate:** Tuotantotapoja verrataan samoilla perusteilla: säädettävyys ja toimitusvarmuus, päästöt, polttoaineen kuljetus ja varastointi sekä hinta (luvut *Energiantuotantotavat ja niiden vertailu* ja *Energiantuotanto, ympäristö ja ilmastonmuutos*).
 **Mallivastaus:**
+
 - *Säädettävyys ja toimitusvarmuus.* Dieselvoimalan tehoa voi säätää, ja se riittää huippuun ($1{,}5\,\text{MW} > 1{,}2\,\text{MW}$). Tuulivoima riippuu säästä, eikä akku riitä pitkän tyynen ajan yli. Kaapeli tuo saarelle koko mantereen verkon säätövoiman, ja sen $5\,\text{MW}$ riittää huippuun.
 - *Päästöt.* Diesel tuottaa noin $2100\,\text{t}$ hiilidioksidia vuodessa (c-kohta). Tuulivoiman elinkaaren päästöt ovat siitä vain pieni osa. Kaapelin sähkön päästöt riippuvat siitä, miten sähkö tuotetaan mantereella.
 - *Kuljetus ja häviöt.* Diesel täytyy tuoda laivalla. Se on kallista, ja jäinen talvi voi estää kuljetuksen. Kaapelin siirtohäviö on vain noin $3\,\%$. Kun saari tarvitsee $3{,}0\,\text{GWh}$, mantereelta lähetetään noin $3{,}1\,\text{GWh}$.
@@ -260,7 +269,9 @@ m &= e \cdot E \\
 &\cdot 10^{6}\,\text{kWh} \\
 &= 2{,}1 \cdot 10^{9}\,\text{g}
 \end{aligned}
-$$. Sijoitetaan $1\,\text{g} = 10^{-6}\,\text{t}$. Päästö on noin $2100\,\text{t}$ hiilidioksidia vuodessa. Tuulivoimala ei polta mitään, kun se on käytössä. Sen teräksen ja betonin valmistus, kuljetus, rakentaminen ja purku aiheuttavat kuitenkin päästöjä. Siksi elinkaaren päästökerroin on muutamia kymmeniä grammoja kilowattituntia kohti tai vähemmän. Se ei ole nolla. Väite on siis epätarkka. Tuulivoima on vähäpäästöistä, ja sen päästöt ovat vain pieni osa dieselin päästöistä. Täysin päästötöntä se ei kuitenkaan ole.
+$$. Sijoitetaan $1\,\text{g} = 10^{-6}\,\text{t}$. Päästö on noin $2100\,\text{t}$ hiilidioksidia vuodessa. Tuulivoimala ei polta mitään, kun se on käytössä. Sen teräksen ja betonin valmistus, kuljetus, rakentaminen ja purku aiheuttavat kuitenkin päästöjä.
+
+Siksi elinkaaren päästökerroin on muutamia kymmeniä grammoja kilowattituntia kohti tai vähemmän. Se ei ole nolla. Väite on siis epätarkka. Tuulivoima on vähäpäästöistä, ja sen päästöt ovat vain pieni osa dieselin päästöistä. Täysin päästötöntä se ei kuitenkaan ole.
 
 ### Yleisiä virheitä
 - a-kohdassa tuulivoimaloiden vuoden energia lasketaan nimellisteholla ($2{,}0\,\text{MW} \cdot 8760\,\text{h} = 17{,}5\,\text{GWh}$). Silloin keskitehoa ei oteta huomioon.
@@ -284,6 +295,7 @@ $$. Sijoitetaan $1\,\text{g} = 10^{-6}\,\text{t}$. Päästö on noin $2100\,\tex
 **Kysytty:** onko johtopäätös perusteltu, mitkä ovat mittauksen tärkeimmät virhelähteet ja mihin suuntaan ne muuttavat tulosta
 **Periaate:** Johtopäätös on perusteltu vain, jos ero väitettyyn arvoon on suurempi kuin tuloksen epävarmuus (luku *Mittaaminen ja mittauksen luotettavuus*). Virhelähteen vaikutus arvioidaan niin, että tulos lasketaan uudelleen muutetulla arvolla.
 **Mallivastaus:** Ryhmän johtopäätös ei ole perusteltu. Tuloksen epävarmuus on useita prosenttiyksiköitä, ja mittaus tehtiin vain kerran.
+
 - *Teho arvokilvestä.* Arvokilven teho on nimellisarvo. Sitä ei ole mitattu. Todellinen teho riippuu verkkojännitteestä. Jos teho olisi $2100\,\text{W}$, hyötysuhteeksi tulisi $87\,\%$. Jos teho olisi yli $2200\,\text{W}$, tulos olisi alle $83\,\%$. Sähköenergia pitäisi mitata energiamittarilla.
 - *Loppulämpötila.* Kun keitin sammui, vesi kiehui eli se oli noin $100\,{}^\circ\text{C}$. Lämpötila mitattiin kuitenkin vasta sen jälkeen, kun kansi oli avattu. Mittaus antaa liian pienen lämpötilaeron ja siksi liian pienen hyötysuhteen. Jos loppulämpötila olisi $100\,{}^\circ\text{C}$, tulos olisi $88\,\%$.
 - *Vesimäärä.* Kannun asteikko on epätarkka. Jos vettä oli $1{,}05\,\text{kg}$, tulos olisi $88\,\%$. Jos vettä oli $0{,}95\,\text{kg}$, tulos olisi $79\,\%$. Vesi pitäisi punnita.
@@ -295,6 +307,7 @@ Loppulämpötila luettiin myöhään, ja se pienentää tulosta varmasti. Arvoki
 **Kysytty:** koesuunnitelma, jolla selvitetään, riippuuko hyötysuhde vesimäärästä
 **Periaate:** Kokeessa muutetaan vain yhtä muuttujaa, vesimäärää. Muut asiat pidetään samoina. Suureet mitataan mahdollisimman suoraan. Mittaukset toistetaan, jotta nähdään, kuinka paljon tulokset vaihtelevat sattumalta (luku *Mittaaminen ja mittauksen luotettavuus*).
 **Mallivastaus:**
+
 - *Muuttujat.* Muutettava suure on veden massa, esimerkiksi $0{,}50\,\text{kg}$, $0{,}75\,\text{kg}$, $1{,}0\,\text{kg}$, $1{,}25\,\text{kg}$ ja $1{,}5\,\text{kg}$. Nämä asiat pidetään samoina: sama keitin, sama alkulämpötila (vesi samasta astiasta), kansi kiinni ja keittimen alkulämpötila. Kannun annetaan jäähtyä huoneenlämpöiseksi mittausten välissä, tai kannu huuhdellaan kylmällä vedellä.
 - *Mittaukset.* Vesi punnitaan vaa'alla. Keitin kytketään energiamittarin kautta. Energiamittari näyttää sähköenergian suoraan. Lämmitys lopetetaan ennen kuin vesi kiehuu, esimerkiksi kun sekoitetun veden lämpötila on $80\,{}^\circ\text{C}$. Silloin höyrystyminen ei vääristä tulosta. Lämpötila mitataan heti, kun keitin on sammutettu, ja vettä sekoitetaan samalla.
 - *Toistot ja tulokset.* Jokainen vesimäärä mitataan kolme kertaa. Hyötysuhde lasketaan kaavalla $\eta = \tfrac{cm\Delta T}{E}$. Tulokset esitetään kuvaajana, jossa hyötysuhde on vesimäärän funktiona. Kuvaajassa näytetään myös toistojen hajonta eli se, kuinka paljon tulokset vaihtelevat.
@@ -360,7 +373,9 @@ $$. Tulos on sama kuin hyötysuhteiden tulo. Noin neljännes energiasta muuttuu 
 ### d)
 **Kysytty:** pitääkö väite ”voimala tuottaa joka päivä $216\,\text{MWh}$ sähköä” paikkansa, ja miksi voimala voi silti olla hyödyllinen
 **Periaate:** Energia säilyy. Voimala voi antaa sähkönä enintään sen energian, joka siihen on varastoitu pumppaamalla. Häviöiden takia se antaa vähemmän (luku *Energialajit ja energian säilyminen*). Varasto siirtää energiaa ajassa eli säilyttää sitä myöhempää käyttöä varten (luku *Energian siirtäminen: sähkö ja lämpö*).
-**Mallivastaus:** Väite on harhaanjohtava eli se antaa väärän kuvan. Pumppuvoimala ei tuota energiaa, vaan se varastoi energiaa. Jokaisella täytöllä ja tyhjennyksellä voimala ottaa verkosta noin $289\,\text{MWh}$ ja antaa takaisin noin $216\,\text{MWh}$. Noin $73\,\text{MWh}$ muuttuu siis sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Voimala on silti hyödyllinen, koska se siirtää energiaa ajassa. Allas täytetään, kun sähköä on paljon ja se on halpaa, esimerkiksi tuulisena yönä. Allas tyhjennetään kulutushuipun aikana tai tyynellä säällä, kun sähköä on vähän. Vesivoimalana se on myös nopeasti säädettävää tehoa. Sellaista tarvitaan tuulivoiman rinnalla, koska tuulivoima riippuu säästä. Oikea muotoilu olisi: ”Voimala antaa verkkoon $216\,\text{MWh}$ ottamaansa $289\,\text{MWh}$:a myöhemmin, silloin kun sähköä tarvitaan.”
+**Mallivastaus:** Väite on harhaanjohtava eli se antaa väärän kuvan. Pumppuvoimala ei tuota energiaa, vaan se varastoi energiaa. Jokaisella täytöllä ja tyhjennyksellä voimala ottaa verkosta noin $289\,\text{MWh}$ ja antaa takaisin noin $216\,\text{MWh}$. Noin $73\,\text{MWh}$ muuttuu siis sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Voimala on silti hyödyllinen, koska se siirtää energiaa ajassa.
+
+Allas täytetään, kun sähköä on paljon ja se on halpaa, esimerkiksi tuulisena yönä. Allas tyhjennetään kulutushuipun aikana tai tyynellä säällä, kun sähköä on vähän. Vesivoimalana se on myös nopeasti säädettävää tehoa. Sellaista tarvitaan tuulivoiman rinnalla, koska tuulivoima riippuu säästä. Oikea muotoilu olisi: ”Voimala antaa verkkoon $216\,\text{MWh}$ ottamaansa $289\,\text{MWh}$:a myöhemmin, silloin kun sähköä tarvitaan.”
 
 ### Yleisiä virheitä
 - a-kohdassa massa lasketaan suoraan tilavuudesta ilman tiheyttä, tai kilometrejä ei muunneta metreiksi.
@@ -400,7 +415,9 @@ Lucid Air: $$
 &= -0{,}458
 \end{aligned}
 $$
-**Vastaus:** Mitattu toimintamatka oli lyhyempi kuin ilmoitettu: Hyundai Insterillä $28{,}9\,\%$, Tesla Model Y:llä $42{,}9\,\%$ ja Lucid Airilla $45{,}8\,\%$. Pyöristettyinä luvut ovat noin $29\,\%$, $43\,\%$ ja $46\,\%$. Kolme merkitsevää numeroa vastaa kaaviosta luettuja matkoja. Vertailuun riittävät kokonaiset prosentit. Vertailu osoittaa, että jokainen auto ajoi pakkasessa selvästi lyhyemmän matkan kuin ilmoitettu. Poikkeama oli eri autoilla erilainen: noin $30\,\%$:sta lähes puoleen.
+**Vastaus:** Mitattu toimintamatka oli lyhyempi kuin ilmoitettu: Hyundai Insterillä $28{,}9\,\%$, Tesla Model Y:llä $42{,}9\,\%$ ja Lucid Airilla $45{,}8\,\%$. Pyöristettyinä luvut ovat noin $29\,\%$, $43\,\%$ ja $46\,\%$.
+
+Kolme merkitsevää numeroa vastaa kaaviosta luettuja matkoja. Vertailuun riittävät kokonaiset prosentit. Vertailu osoittaa, että jokainen auto ajoi pakkasessa selvästi lyhyemmän matkan kuin ilmoitettu. Poikkeama oli eri autoilla erilainen: noin $30\,\%$:sta lähes puoleen.
 **Järkevyys:** Kolmen auton poikkeamien keskiarvo on $39{,}2\,\%$. Se on lähellä kaikkien autojen keskiarvoa $38\,\%$, jonka aineisto ilmoittaa. Yksi valituista autoista on keskiarvon alapuolella ja kaksi sen yläpuolella. Näin pitääkin olla, kun mukana on sekä lyhyen että pitkän toimintamatkan autoja.
 
 ### b)
@@ -419,7 +436,9 @@ E_{100,\text{k}} &= \dfrac{75\,\text{kWh} \cdot 100\,\text{km}}{279\,\text{km}} 
 \end{aligned}
 $$
 **Vastaus:** Kulutus on leudolla säällä noin $17\,\text{kWh}$ ja pakkasella noin $27\,\text{kWh}$ sataa kilometriä kohti. Tuloksissa on kaksi merkitsevää numeroa kuten akkuenergiassa $75\,\text{kWh}$ ja lyhenemisessä $38\,\%$. Oletus ei pidä tarkasti paikkaansa, koska kylmästä akusta saadaan vähemmän energiaa kuin lämpimästä. Osa toimintamatkan lyhenemisestä johtuu siis pienemmästä energiasta eikä kulutuksen kasvusta. Siksi todellinen kulutus kasvaa vähemmän kuin malli antaa.
-**Järkevyys:** Mallissa kulutus kasvaa kertoimella $\tfrac{1}{0{,}62} \approx 1{,}6$. Kasvu on enemmän kuin $38\,\%$, koska sama energia jaetaan lyhyemmälle matkalle. Aineiston mitatut kulutukset ovat $21{,}2\,\text{kWh}$ ja $21{,}6\,\text{kWh}$ sataa kilometriä kohti. Ne ovat samaa suuruusluokkaa eli suunnilleen samankokoisia kuin mallin $27\,\text{kWh}$, mutta pienempiä. Mitatut kulutukset ovat kuitenkin muiden autojen kulutuksia, eivät mallin auton. Siksi ne kertovat vain suuruusluokan. Energia matkaa kohti on myös voima, koska $W = Fs$: $$
+**Järkevyys:** Mallissa kulutus kasvaa kertoimella $\tfrac{1}{0{,}62} \approx 1{,}6$. Kasvu on enemmän kuin $38\,\%$, koska sama energia jaetaan lyhyemmälle matkalle. Aineiston mitatut kulutukset ovat $21{,}2\,\text{kWh}$ ja $21{,}6\,\text{kWh}$ sataa kilometriä kohti. Ne ovat samaa suuruusluokkaa eli suunnilleen samankokoisia kuin mallin $27\,\text{kWh}$, mutta pienempiä.
+
+Mitatut kulutukset ovat kuitenkin muiden autojen kulutuksia, eivät mallin auton. Siksi ne kertovat vain suuruusluokan. Energia matkaa kohti on myös voima, koska $W = Fs$: $$
 \begin{aligned}
 \dfrac{E}{s} &= \dfrac{75 \cdot 1000\,\text{W} \cdot 3600\,\text{s}}{450 \cdot 1000\,\text{m}} \\
 &= 600\,\text{N}
@@ -441,7 +460,9 @@ Kaikki tämä energia otetaan samasta akusta: lämmitykseen kulunut energia, aku
 ### d)
 **Kysytty:** miksi pisimmälle ajaneen auton suurimmasta poikkeamasta ei voi päätellä, että auto kestää pakkasta huonommin kuin muut
 **Periaate:** Kahta mittaustulosta voi verrata vain, jos ne on mitattu samoissa olosuhteissa. Jos olosuhteet muuttuvat samalla kuin tutkittava kohde, erosta ei voi päätellä, kumpi sen aiheutti (luku *Mittaaminen ja mittauksen luotettavuus*).
-**Mallivastaus:** Autot eivät ajaneet samoissa olosuhteissa. Aineiston mukaan (tarkistettu 16.11.2026) lämpötila laski reitin varrella Oslon noin $-7\,{}^\circ\text{C}$:sta Folldalin $-32\,{}^\circ\text{C}$:seen. Hyundai Insterin toimintamatka on lyhyt. Se pysähtyi jo kohdassa, jossa oli $-16\,{}^\circ\text{C}$. Se ajoi siis koko matkansa reitin leudommassa alkupäässä. Lucid Air ajoi $520\,\text{km}$ eli pisimmälle. Siksi se ajoi suuren osan matkastaan reitin kylmimmällä osuudella ja oli pakkasessa pisimpään. Sen lämmitys otti akusta energiaa pisimmän ajan ja suurimmalla lämpötilaerolla. Suuri prosentti kertoo siis ainakin osittain olosuhteista eikä vain autosta. Autoja ei voi asettaa järjestykseen pakkasenkestävyyden mukaan vertaamalla prosentteja suoraan.
+**Mallivastaus:** Autot eivät ajaneet samoissa olosuhteissa. Aineiston mukaan (tarkistettu 16.11.2026) lämpötila laski reitin varrella Oslon noin $-7\,{}^\circ\text{C}$:sta Folldalin $-32\,{}^\circ\text{C}$:seen. Hyundai Insterin toimintamatka on lyhyt. Se pysähtyi jo kohdassa, jossa oli $-16\,{}^\circ\text{C}$. Se ajoi siis koko matkansa reitin leudommassa alkupäässä.
+
+Lucid Air ajoi $520\,\text{km}$ eli pisimmälle. Siksi se ajoi suuren osan matkastaan reitin kylmimmällä osuudella ja oli pakkasessa pisimpään. Sen lämmitys otti akusta energiaa pisimmän ajan ja suurimmalla lämpötilaerolla. Suuri prosentti kertoo siis ainakin osittain olosuhteista eikä vain autosta. Autoja ei voi asettaa järjestykseen pakkasenkestävyyden mukaan vertaamalla prosentteja suoraan.
 
 ### e)
 **Kysytty:** miksi yksi talvitesti ei riitä ennustamaan tietyn auton toimintamatkaa kaikissa talviolosuhteissa, ja miten testiä voisi parantaa

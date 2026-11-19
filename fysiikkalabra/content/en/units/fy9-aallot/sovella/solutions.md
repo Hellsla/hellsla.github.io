@@ -30,7 +30,9 @@ $$. On a guitar the second fret is about $7\,\text{cm}$ from the nut, so the res
 ### c)
 **Given:** $6$ beats in $4.0$ seconds, reference note $110.0\,\text{Hz}$; tightening makes the beats slower
 **Find:** the frequency of the string $f_\text{string}$ before tightening
-**Principle:** The beat frequency of two sounds of almost the same frequency is the difference of the frequencies (chapter *Sound as a wave: pitch, timbre and the Doppler effect*). The beats tell only the difference, not its direction, so the direction is deduced from the tightening: in a tighter string the wave travels faster, and the frequency $f = \tfrac{v}{2L}$ rises (chapter *Standing waves: nodes, antinodes and natural frequencies*). When the frequency rose and the beats became slower, the frequency difference became smaller, so the frequency of the string was below $110.0\,\text{Hz}$.
+**Principle:** The beat frequency of two sounds of almost the same frequency is the difference of the frequencies (chapter *Sound as a wave: pitch, timbre and the Doppler effect*).
+
+The beats tell only the difference, not its direction, so the direction is deduced from the tightening: in a tighter string the wave travels faster, and the frequency $f = \tfrac{v}{2L}$ rises (chapter *Standing waves: nodes, antinodes and natural frequencies*). When the frequency rose and the beats became slower, the frequency difference became smaller, so the frequency of the string was below $110.0\,\text{Hz}$.
 **Formula:** $f_\text{h} = \dfrac{N}{t}$ and $f_\text{h} = |f_\text{string} - f_\text{ref}|$, so $f_\text{string} = f_\text{ref} - f_\text{h}$
 **Conversions:** The quantities are in base units, so no conversions are needed.
 **Substitution:** $f_\text{h} = \dfrac{6}{4.0\,\text{s}} = 1.5\,\text{Hz}$, so $f_\text{string} = 110.0\,\text{Hz} - 1.5\,\text{Hz} = 108.5\,\text{Hz}$
@@ -40,7 +42,9 @@ $$. On a guitar the second fret is about $7\,\text{cm}$ from the nut, so the res
 ### d)
 **Find:** why a string lightly touched at its midpoint sounds an octave higher
 **Principle:** The natural frequencies of a string fixed at both ends are $f_n = n f_1$, and at the natural frequency $f_n$ the string has $n$ antinodes. The touch stops the motion of the string at that point, so a node forms there (chapter *Standing waves: nodes, antinodes and natural frequencies*).
-**Model answer:** A freely sounding string vibrates at the fundamental frequency and at the overtones at the same time. At the fundamental frequency the midpoint is an antinode, so the finger damps the fundamental and all the odd natural frequencies, which have an antinode at the midpoint. What remains are the natural frequencies $n = 2, 4, 6, \ldots$, which have a node at the midpoint, because the finger does not stop their motion. The lowest of them is $f_2 = 2f_1 = 220\,\text{Hz}$: the string vibrates in two segments, with an antinode in each half, and twice the frequency sounds an octave higher. The finger can be lifted, and the string still sounds the same way, because the standing wave goes on.
+**Model answer:** A freely sounding string vibrates at the fundamental frequency and at the overtones at the same time. At the fundamental frequency the midpoint is an antinode, so the finger damps the fundamental and all the odd natural frequencies, which have an antinode at the midpoint. What remains are the natural frequencies $n = 2, 4, 6, \ldots$, which have a node at the midpoint, because the finger does not stop their motion.
+
+The lowest of them is $f_2 = 2f_1 = 220\,\text{Hz}$: the string vibrates in two segments, with an antinode in each half, and twice the frequency sounds an octave higher. The finger can be lifted, and the string still sounds the same way, because the standing wave goes on.
 
 ### Yleisiä virheitä
 - In part a the length of the string is taken as the wavelength, so that $v = f_1 L \approx 71\,\text{m/s}$; at the fundamental frequency $L = \tfrac{\lambda}{2}$.
@@ -82,7 +86,9 @@ $$, because the speed is the same.
 ### c)
 **Given:** frequency of the pulse $f_0 = 30.0\,\text{kHz}$, speed of the bat $v_\text{b} = 6.0\,\text{m/s}$ towards the wall, speed of sound $v = 340\,\text{m/s}$, the wall at rest
 **Find:** the frequency $f$ of the echo the bat hears
-**Principle:** The Doppler effect happens twice (chapter *Sound as a wave: pitch, timbre and the Doppler effect*). The bat is first the source and then the listener, and its speed is $v_\text{b}$. First the bat is a moving source and the wall a receiver at rest: in front of an approaching source the wavelength becomes shorter. The wall reflects the frequency it receives as a source at rest, and the bat is now a listener that approaches it and meets the wavefronts more often. In both stages approaching raises the frequency.
+**Principle:** The Doppler effect happens twice (chapter *Sound as a wave: pitch, timbre and the Doppler effect*). The bat is first the source and then the listener, and its speed is $v_\text{b}$.
+
+First the bat is a moving source and the wall a receiver at rest: in front of an approaching source the wavelength becomes shorter. The wall reflects the frequency it receives as a source at rest, and the bat is now a listener that approaches it and meets the wavefronts more often. In both stages approaching raises the frequency.
 **Formula:** $f_\text{s} = f_0 \cdot \dfrac{v}{v - v_\text{b}}$ and $f = f_\text{s} \cdot \dfrac{v + v_\text{b}}{v}$, so $f = f_0 \cdot \dfrac{v + v_\text{b}}{v - v_\text{b}}$
 **Conversions:** The frequency stays in the unit $\text{kHz}$, because the ratio of the speeds has no unit.
 **Substitution:** $f_\text{s} = 30.0\,\text{kHz} \cdot \dfrac{340\,\text{m/s}}{334\,\text{m/s}} = 30.54\,\text{kHz}$ and $f = 30.54\,\text{kHz} \cdot \dfrac{346\,\text{m/s}}{340\,\text{m/s}} = 31.08\,\text{kHz}$
@@ -94,7 +100,9 @@ $$. The heard frequency is greater than $f_0$, as it should be when approaching.
 ### d)
 **Find:** why a mosquito could not be detected with a $3\,\text{kHz}$ sound
 **Principle:** Diffraction is strong when the obstacle is about the wavelength or smaller: the wave bends round the obstacle and leaves no shadow (chapter *A wave meets an obstacle or a gap*). The wavelength is $\lambda = \tfrac{v}{f}$.
-**Model answer:** At the frequency $3\,\text{kHz}$ the wavelength would be $\tfrac{340\,\text{m/s}}{3000\,\text{Hz}} \approx 11\,\text{cm}$, more than twenty times the length of the mosquito, $5\,\text{mm}$. Such a small obstacle hardly changes the travel of a long wave: the wave bends round it, and no detectable echo or shadow comes back from the mosquito. The wavelength of the ultrasound, $11\,\text{mm}$, is of the order of the mosquito's size, so the mosquito reflects a detectable echo from it, and the bat can also tell apart targets that are close together. That is why the bat uses ultrasound: a short wavelength is a condition for detecting small prey.
+**Model answer:** At the frequency $3\,\text{kHz}$ the wavelength would be $\tfrac{340\,\text{m/s}}{3000\,\text{Hz}} \approx 11\,\text{cm}$, more than twenty times the length of the mosquito, $5\,\text{mm}$. Such a small obstacle hardly changes the travel of a long wave: the wave bends round it, and no detectable echo or shadow comes back from the mosquito.
+
+The wavelength of the ultrasound, $11\,\text{mm}$, is of the order of the mosquito's size, so the mosquito reflects a detectable echo from it, and the bat can also tell apart targets that are close together. That is why the bat uses ultrasound: a short wavelength is a condition for detecting small prey.
 
 ### Yleisiä virheitä
 - In part b the distance is calculated as $d = vt \approx 4.1\,\text{m}$ without dividing by two.
@@ -292,7 +300,9 @@ $$. The heard frequency is greater than $f_0$, as it should be when approaching.
 ### a)
 **Find:** whether claim 1 is true and what the level is at the houses
 **Principle:** The power of a point source spreads over the surface of a sphere, so $I = \tfrac{P}{4\pi r^2}$, and the difference of the levels is $L_2 - L_1 = 10\,\text{dB} \cdot \lg \tfrac{I_2}{I_1}$ (chapter *Intensity and the decibel scale*).
-**Model answer:** The claim is false. When the distance doubles, the intensity drops to a quarter, and the level falls by $10\,\text{dB} \cdot \lg 4 \approx 6\,\text{dB}$, not by half: $40\,\text{m}$ away the level is about $100\,\text{dB}$. The decibel scale is logarithmic, so a decibel reading cannot be divided like an intensity. At the houses the distance is $20$ times as large, so the intensity is $\tfrac{1}{400}$ and the level is $$
+**Model answer:** The claim is false. When the distance doubles, the intensity drops to a quarter, and the level falls by $10\,\text{dB} \cdot \lg 4 \approx 6\,\text{dB}$, not by half: $40\,\text{m}$ away the level is about $100\,\text{dB}$. The decibel scale is logarithmic, so a decibel reading cannot be divided like an intensity.
+
+At the houses the distance is $20$ times as large, so the intensity is $\tfrac{1}{400}$ and the level is $$
 \begin{aligned}
 &106\,\text{dB} - 10\,\text{dB} \cdot \lg 400 \\
 &\approx 106\,\text{dB} - 26\,\text{dB} \\
@@ -303,7 +313,9 @@ $$, the level of a busy street. The model is a rough estimate: the air and the t
 ### b)
 **Find:** whether claim 2 is true and why mostly low sounds are heard behind the fence
 **Principle:** Diffraction is strong when the obstacle is about the wavelength or smaller (chapter *A wave meets an obstacle or a gap*). The wavelength is $\lambda = \tfrac{v}{f}$.
-**Model answer:** The observation is true, but the reasoning is wrong. Low sounds are heard behind the fence because they bend over the fence. For example, the wavelength of a $60\,\text{Hz}$ bass sound is $\tfrac{340\,\text{m/s}}{60\,\text{Hz}} \approx 5.7\,\text{m}$, much longer than the fence, so the wave bends behind the fence almost without weakening. The wavelength of a high $4\,\text{kHz}$ sound is only about $9\,\text{cm}$, so it is left with a sound shadow behind the $2\,\text{m}$ fence. The bass sounds are not necessarily louder: even if the low and high sounds were equally loud when they leave, the fence weakens the high ones. That is why the fence protects mainly against high sounds, and reducing the bass needs measures at the source, for example limiting the level or pointing the loudspeakers away from the houses.
+**Model answer:** The observation is true, but the reasoning is wrong. Low sounds are heard behind the fence because they bend over the fence. For example, the wavelength of a $60\,\text{Hz}$ bass sound is $\tfrac{340\,\text{m/s}}{60\,\text{Hz}} \approx 5.7\,\text{m}$, much longer than the fence, so the wave bends behind the fence almost without weakening. The wavelength of a high $4\,\text{kHz}$ sound is only about $9\,\text{cm}$, so it is left with a sound shadow behind the $2\,\text{m}$ fence.
+
+The bass sounds are not necessarily louder: even if the low and high sounds were equally loud when they leave, the fence weakens the high ones. That is why the fence protects mainly against high sounds, and reducing the bass needs measures at the source, for example limiting the level or pointing the loudspeakers away from the houses.
 
 ### c)
 **Find:** whether claim 3 is true, the permitted exposure time and the effect of hearing protectors
@@ -315,7 +327,9 @@ $$, the level of a busy street. The model is a rough estimate: the air and the t
 &= 0.25\,\text{h} \\
 &= 15\,\text{min}
 \end{aligned}
-$$. "Only $15\,\text{dB}$" means $10^{1.5} \approx 32$ times the intensity, so a dose harmful to hearing builds up in about $\tfrac{1}{32}$ of the time. A four-hour concert without protectors is therefore many times the dose. With well-fitted $20\,\text{dB}$ protectors the level at the ear is about $80\,\text{dB}$, below $85\,\text{dB}$, so four hours is within the rule of thumb when the protectors are worn the whole time. The rule of thumb is an estimate, not a guarantee: different people's hearing tolerates noise differently.
+$$.
+
+"Only $15\,\text{dB}$" means $10^{1.5} \approx 32$ times the intensity, so a dose harmful to hearing builds up in about $\tfrac{1}{32}$ of the time. A four-hour concert without protectors is therefore many times the dose. With well-fitted $20\,\text{dB}$ protectors the level at the ear is about $80\,\text{dB}$, below $85\,\text{dB}$, so four hours is within the rule of thumb when the protectors are worn the whole time. The rule of thumb is an estimate, not a guarantee: different people's hearing tolerates noise differently.
 
 ### Yleisiä virheitä
 - In part a the intensity is calculated as inversely proportional to the distance, so that the drop is $3\,\text{dB}$ per doubling, or the decibels are divided like intensities.
@@ -327,7 +341,9 @@ $$. "Only $15\,\text{dB}$" means $10^{1.5} \approx 32$ times the intensity, so a
 ### a)
 **Given:** distance to the wall $d = 85.0\,\text{m}$, five echo times $0.45\,\text{s}$, $0.52\,\text{s}$, $0.41\,\text{s}$, $0.55\,\text{s}$ and $0.47\,\text{s}$
 **Find:** the speed of sound $v$ from the mean and its uncertainty $\Delta v$
-**Principle:** The sound travels to the wall and back, the distance $2d$, at a constant speed (chapter *Applied chapter: ultrasound imaging and earthquake waves*). The best estimate from repeated measurements is the mean, and half the range is a rough estimate of the spread, which is chosen here as the uncertainty of the result (chapter *Measuring and the reliability of a measurement*). The uncertainty of the distance is small, so the relative uncertainty of the time is also the relative uncertainty of the speed.
+**Principle:** The sound travels to the wall and back, the distance $2d$, at a constant speed (chapter *Applied chapter: ultrasound imaging and earthquake waves*).
+
+The best estimate from repeated measurements is the mean, and half the range is a rough estimate of the spread, which is chosen here as the uncertainty of the result (chapter *Measuring and the reliability of a measurement*). The uncertainty of the distance is small, so the relative uncertainty of the time is also the relative uncertainty of the speed.
 **Formula:** $\bar{t} = \dfrac{t_1 + \ldots + t_5}{5}$, $v = \dfrac{2d}{\bar{t}}$, $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$ and $\Delta v = v \cdot \dfrac{\Delta t}{\bar{t}}$
 **Conversions:** The quantities are in base units, so no conversions are needed.
 **Substitution:** $\bar{t} = \dfrac{2.40\,\text{s}}{5} = 0.48\,\text{s}$, $v = \dfrac{2 \cdot 85.0\,\text{m}}{0.48\,\text{s}} = 354.2\,\text{m/s}$, $\Delta t = \dfrac{0.55\,\text{s} - 0.41\,\text{s}}{2} = 0.07\,\text{s}$ and $\Delta v = 354.2\,\tfrac{\text{m}}{\text{s}} \cdot \dfrac{0.07\,\text{s}}{0.48\,\text{s}} = 51.6\,\text{m/s}$
@@ -342,12 +358,20 @@ $$. "Only $15\,\text{dB}$" means $10^{1.5} \approx 32$ times the intensity, so a
 &343\,\text{m/s} - 0.6\,\tfrac{\text{m/s}}{{}^\circ\text{C}} \cdot 15\,{}^\circ\text{C} \\
 &\approx 334\,\text{m/s}
 \end{aligned}
-$$. The group's result $(350 \pm 50)\,\text{m/s}$ covers both $334\,\text{m/s}$ and $343\,\text{m/s}$, so the measurement cannot tell them apart and shows no difference at all, least of all the one the group claims. The most important source of error is hand timing: the reaction time on starting and stopping is of the order of tenths of a second, as large as the variation of the results $0.14\,\text{s}$, and the delay is not necessarily the same at both ends. When the travel time of the echo is only about $0.5\,\text{s}$, even a systematic delay of $0.02\,\text{s}$ changes the result by $4\,\%$. The uncertainty of the distance $85.0\,\text{m}$ is insignificant. The correct conclusion is that the speed was about $350\,\text{m/s}$ with a large uncertainty, and that sound travels more slowly in cold air, not faster.
+$$. The group's result $(350 \pm 50)\,\text{m/s}$ covers both $334\,\text{m/s}$ and $343\,\text{m/s}$, so the measurement cannot tell them apart and shows no difference at all, least of all the one the group claims.
+
+The most important source of error is hand timing: the reaction time on starting and stopping is of the order of tenths of a second, as large as the variation of the results $0.14\,\text{s}$, and the delay is not necessarily the same at both ends. When the travel time of the echo is only about $0.5\,\text{s}$, even a systematic delay of $0.02\,\text{s}$ changes the result by $4\,\%$. The uncertainty of the distance $85.0\,\text{m}$ is insignificant.
+
+The correct conclusion is that the speed was about $350\,\text{m/s}$ with a large uncertainty, and that sound travels more slowly in cold air, not faster.
 
 ### c)
 **Find:** a plan for a measurement in which the effect of temperature on the speed of sound can be detected
 **Principle:** The speeds at the temperatures $5\,{}^\circ\text{C}$ and $20\,{}^\circ\text{C}$, $334\,\text{m/s}$ and $343\,\text{m/s}$, differ by about $3\,\%$, so the relative uncertainty of the measurement must be clearly smaller, about $1\,\%$ (chapters *Measuring and the reliability of a measurement* and *Your own experimental investigation: planning, carrying out and reporting*).
-**Model answer:** The reaction time is removed from the timing. A phone or computer microphone records both the strike and the echo, and the time difference is read from the $(t, p)$ graph of the sound at the starts of the two peaks; the time can then be read to about a millisecond. Another way is two microphones a known distance apart on the same recorder. The measurement is made at several distances, for example $40$–$120\,\text{m}$, and the distance travelled $2d$ is plotted as a function of time: the slope of the line is the speed of sound, and a possible constant delay of the device shows in the constant term and does not distort the speed. Precision target: for a travel time of $0.5\,\text{s}$ the uncertainty of the time must be below $5\,\text{ms}$, which is possible from a recording but not with a stopwatch. The temperature is measured during each series of measurements, and the series is repeated at different temperatures, for example in autumn and in spring, so that the temperature is the only factor that changes. The measurements are made in calm weather or in both directions, so that the wind does not change the result, each measurement is repeated several times, and the speeds are given with their uncertainties, so that the difference can be compared with the uncertainty.
+**Model answer:** The reaction time is removed from the timing. A phone or computer microphone records both the strike and the echo, and the time difference is read from the $(t, p)$ graph of the sound at the starts of the two peaks; the time can then be read to about a millisecond. Another way is two microphones a known distance apart on the same recorder.
+
+The measurement is made at several distances, for example $40$–$120\,\text{m}$, and the distance travelled $2d$ is plotted as a function of time: the slope of the line is the speed of sound, and a possible constant delay of the device shows in the constant term and does not distort the speed. Precision target: for a travel time of $0.5\,\text{s}$ the uncertainty of the time must be below $5\,\text{ms}$, which is possible from a recording but not with a stopwatch.
+
+The temperature is measured during each series of measurements, and the series is repeated at different temperatures, for example in autumn and in spring, so that the temperature is the only factor that changes. The measurements are made in calm weather or in both directions, so that the wind does not change the result, each measurement is repeated several times, and the speeds are given with their uncertainties, so that the difference can be compared with the uncertainty.
 
 ### Yleisiä virheitä
 - In part a the speed is calculated as $v = \tfrac{d}{\bar{t}} \approx 177\,\text{m/s}$, forgetting that the echo travels the distance twice.

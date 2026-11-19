@@ -260,6 +260,8 @@ kappale yli ~60 sanaa tai useita virkkeitä eri asioista), sitten korjataan kurs
 (typografia/kappalejako: odotettavasti visual delta, muut carry). Ensin pilotti yhdellä luvulla (fy3-13) opettajan
 nähtäväksi.
 
+FY9 tehty (claude/fy9-8c): 16 kokonaisuutta (content/<kieli>/units/fy9-*) kolmella kielellä, ratkaisujen vaiheet ja mallivastaukset (`sovella/solutions.md`, tehtävien `inquiry.json`-ratkaisut, koe-yksikön esimerkki); sanat samat, vain kappalejako. Tiede ja pedagogiikka carry (`md-paragraphs`), ulkoasu katselmoitu yksikkötasolla jokaiselle kielelle oman kielen hashilla (`units.py hash`); Sovellalla ei ole omaa kaappausta, joten arviot tehtiin yksikön sivun kaappauksista ja diffistä. Opit: yksikön katselmointiraportti kuuluu kansioon `review/`, ei `sovella/review/`; `practice.py packet` -paketin hash ei ole yksikön hash.
+
 ### [loki] 8c-1. md-paragraphs myös Sovellaan, kokeisiin, yksiköihin ja tutkimuksiin (jaettu, koordinaattori 2026-11-16)
 
 FY1:n työssä (#650) kaksi aukkoa `reviews.py`:ssä. (1) `carry-item` ei tuntenut luokkaa `md-paragraphs`: Sovellan,
