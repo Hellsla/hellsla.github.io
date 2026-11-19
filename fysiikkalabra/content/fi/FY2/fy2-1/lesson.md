@@ -112,6 +112,12 @@ Lämpöenergia riippuu myös aineen määrästä, joten se ei ole sama asia kuin
 
 Potentiaalienergia ja liike-energia yhdessä ovat **mekaaninen energia**, $E_\text{mek} = E_\text{p} + E_\text{k}$.
 
+```pysahdy
+Kuuma kahvikuppi jäähtyy pöydällä. Mitä fysiikan sana *lämpö* tarkoittaa tässä tilanteessa?
+---
+Lämpö on energiaa, joka siirtyy kupista viileämpään ilmaan lämpötilaeron vuoksi. Samalla kupin lämpöenergia pienenee.
+```
+
 <svg data-fig="energialajit" viewBox="0 0 600 396" role="img" aria-label="Kaavakuva: energialajit esimerkein. Mekaaninen energia on potentiaalienergiaa (kallion reunalla oleva pallo) ja liike-energiaa (vierivä pallo). Lisäksi kuvassa ovat lämpöenergia (kuuma kahvikuppi), kemiallinen energia (paristo), säteilyenergia (Aurinko), sähköenergia (salama) ja ydinenergia (atomiydin). Kuva on kaavamainen, ei mittakaavassa." style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy21-pot" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#6c757d"/></radialGradient><radialGradient id="fy21-kin" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#6c757d"/></radialGradient></defs>
   <line x1="30" y1="44" x2="270" y2="44" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -234,6 +240,12 @@ missä $E_\text{alussa}$ on systeemin kaikkien energialajien energioiden summa a
 
 Summaan kuuluvat kaikki energialajit, myös lämpöenergia. Kun skeittari liukuu half-pipen reunalta pohjalle ja kitka vaikuttaa, mekaaninen energia $E_\text{p} + E_\text{k}$ pienenee, mutta lämpöenergia $E_\text{lämpö}$ kasvaa saman verran. Summa $E_\text{p} + E_\text{k} + E_\text{lämpö}$ ei muutu. Kitka ei siis luo energiaa: se muuttaa mekaanista energiaa lämpöenergiaksi, ja renkaat, ramppi ja ilma lämpenevät hieman.
 
+```pysahdy
+Skeittarin mekaaninen energia pienenee kitkan takia $50\,\text{J}$. Mitä tapahtuu lämpöenergialle, jos systeemi on eristetty?
+---
+Lämpöenergia kasvaa $50\,\text{J}$. Kokonaisenergia ei muutu, koska energiaa ei synny eikä katoa.
+```
+
 <svg data-fig="sailyminen" viewBox="0 0 600 380" role="img" aria-label="Kaavakuva: skeittari half-pipessä kolmella hetkellä ja kunkin hetken energiat pylväinä. Alussa skeittari on reunalla levossa, ja koko energia 800 J on potentiaalienergiaa. Välillä potentiaalienergiaa on 300 J, liike-energiaa 450 J ja lämpöenergiaa 50 J. Pohjalla potentiaalienergiaa ei ole, liike-energiaa on 700 J ja lämpöenergiaa 100 J. Pylväiden korkeus on mittakaavassa, ja jokaisen pylvään kokonaiskorkeus vastaa 800 joulea eli kaikilla hetkillä energiaa on yhtä paljon." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy21-hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#c92a2a"/><line x1="0" y1="0" x2="0" y2="8" stroke="#f2a69c" stroke-width="3"/></pattern></defs>
   <path d="M10,38 L20,38 Q100,146 180,38 L190,38 L190,106 L10,106 Z" fill="#c4ccd4" stroke-linejoin="round"/>
@@ -273,6 +285,12 @@ Summaan kuuluvat kaikki energialajit, myös lämpöenergia. Kun skeittari liukuu
 
 ### Energian kuluttaminen on energian muuttumista
 Arkikielessä energiaa "kuluu", mutta fysiikassa se ei lopu. Kun laite kuluttaa energiaa, se muuttaa energiaa muodosta toiseen. Useimmiten suurin osa muuttuu lämpöenergiaksi, joka siirtyy lämpönä ympäristöön ja jota on vaikea käyttää enää hyödyksi. Lyhyesti sanotaan usein, että energia "muuttuu lämmöksi". Siksi energiaa kannattaa säästää, vaikka sitä ei voi hävittää.
+
+```pysahdy
+Puhelimen akku "tyhjenee", kun käytät puhelinta. Mihin akun energia on mennyt?
+---
+Se ei ole kadonnut. Energia on muuttunut muuhun muotoon, esimerkiksi valoksi ja lämpöenergiaksi, ja suurin osa siirtyy lämpönä ympäristöön.
+```
 
 ## Esimerkki
 Skeittari lähtee levosta half-pipen reunalta. Reunalla hänen potentiaalienergiansa on $840\,\text{J}$, kun nollataso on half-pipen pohja. Pohjalla hänen liike-energiansa on $0{,}72\,\text{kJ}$. Skeittari, half-pipe ja ympäristö muodostavat eristetyn systeemin. Kuinka paljon kitka on muuttanut energiaa lämpöenergiaksi laskun aikana?

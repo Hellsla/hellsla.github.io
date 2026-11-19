@@ -112,6 +112,12 @@ Lämpöenergia riippuu myös aineen määrästä. Siksi se ei ole sama asia kuin
 
 Potentiaalienergia ja liike-energia yhdessä ovat **mekaaninen energia**, $E_\text{mek} = E_\text{p} + E_\text{k}$.
 
+```pysahdy
+Kuuma kahvikuppi jäähtyy pöydällä. Mitä fysiikan sana *lämpö* tarkoittaa tässä tilanteessa?
+---
+Lämpö on energiaa, joka siirtyy kupista viileämpään ilmaan. Syynä on lämpötilaero eli se, että kuppi on lämpimämpi kuin ilma. Kupin lämpöenergia pienenee.
+```
+
 <svg data-fig="energialajit" viewBox="0 0 600 396" role="img" aria-label="Kaavakuva: energialajit ja esimerkki jokaisesta. Mekaaninen energia on potentiaalienergiaa ja liike-energiaa. Potentiaalienergian esimerkki on pallo kallion reunalla. Liike-energian esimerkki on vierivä pallo. Kuvassa ovat myös lämpöenergia (kuuma kahvikuppi), kemiallinen energia (paristo), säteilyenergia (Aurinko), sähköenergia (salama) ja ydinenergia (atomiydin). Kuva on kaavamainen. Se ei ole mittakaavassa." style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy21-pot" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#6c757d"/></radialGradient><radialGradient id="fy21-kin" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#6c757d"/></radialGradient></defs>
   <line x1="30" y1="44" x2="270" y2="44" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -234,6 +240,12 @@ Tässä $E_\text{alussa}$ on systeemin kaikkien energialajien energioiden summa 
 
 Summaan kuuluvat kaikki energialajit, myös lämpöenergia. Skeittari liukuu half-pipen reunalta pohjalle, ja kitka vaikuttaa. Silloin mekaaninen energia $E_\text{p} + E_\text{k}$ pienenee. Lämpöenergia $E_\text{lämpö}$ kasvaa saman verran. Summa $E_\text{p} + E_\text{k} + E_\text{lämpö}$ ei muutu. Kitka ei siis luo energiaa. Se muuttaa mekaanista energiaa lämpöenergiaksi. Renkaat, ramppi ja ilma lämpenevät hieman.
 
+```pysahdy
+Skeittarin mekaaninen energia pienenee kitkan takia $50\,\text{J}$. Mitä tapahtuu lämpöenergialle, jos systeemi on eristetty? Eristetty tarkoittaa, että energiaa ei tule ulkopuolelta eikä lähde pois.
+---
+Lämpöenergia kasvaa $50\,\text{J}$. Kokonaisenergia pysyy samana, koska energiaa ei synny eikä katoa.
+```
+
 <svg data-fig="sailyminen" viewBox="0 0 600 380" role="img" aria-label="Kaavakuva: skeittari half-pipessä kolmella hetkellä. Jokaisen hetken energiat näkyvät pylväinä. Alussa skeittari on levossa reunalla. Silloin koko energia 800 J on potentiaalienergiaa. Välillä potentiaalienergiaa on 300 J, liike-energiaa 450 J ja lämpöenergiaa 50 J. Pohjalla potentiaalienergiaa ei ole. Liike-energiaa on 700 J ja lämpöenergiaa 100 J. Pylväiden korkeus on mittakaavassa. Jokaisen pylvään kokonaiskorkeus vastaa 800 joulea. Kaikilla hetkillä energiaa on siis yhtä paljon." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy21-hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#c92a2a"/><line x1="0" y1="0" x2="0" y2="8" stroke="#f2a69c" stroke-width="3"/></pattern></defs>
   <path d="M10,38 L20,38 Q100,146 180,38 L190,38 L190,106 L10,106 Z" fill="#c4ccd4" stroke-linejoin="round"/>
@@ -273,6 +285,12 @@ Summaan kuuluvat kaikki energialajit, myös lämpöenergia. Skeittari liukuu hal
 
 ### Energian kuluttaminen on energian muuttumista
 Arkikielessä energiaa "kuluu". Fysiikassa energia ei kuitenkaan lopu. Kun laite kuluttaa energiaa, se muuttaa energiaa muodosta toiseen. Useimmiten suurin osa muuttuu lämpöenergiaksi. Lämpöenergia siirtyy lämpönä ympäristöön, ja sitä on vaikea käyttää enää hyödyksi. Lyhyesti sanotaan usein, että energia "muuttuu lämmöksi". Siksi energiaa kannattaa säästää, vaikka sitä ei voi hävittää.
+
+```pysahdy
+Puhelimen akku "tyhjenee", kun käytät puhelinta. Mihin akun energia on mennyt?
+---
+Se ei ole kadonnut. Energia on muuttunut toiseen muotoon, esimerkiksi valoksi ja lämpöenergiaksi. Suurin osa siirtyy lämpönä ympäristöön.
+```
 
 ## Esimerkki
 Skeittari lähtee levosta half-pipen reunalta. Reunalla hänen potentiaalienergiansa on $840\,\text{J}$, kun nollataso on half-pipen pohja. Pohjalla hänen liike-energiansa on $0{,}72\,\text{kJ}$. Skeittari, half-pipe ja ympäristö muodostavat eristetyn systeemin. Kuinka paljon kitka on muuttanut energiaa lämpöenergiaksi laskun aikana?
