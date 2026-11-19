@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1fcd163f97f4b029
+CONTENT-HASH: 95be45143ff21cc8
 Mode: delta
 Round: 1
 
@@ -7,11 +7,11 @@ Round: 1
 None.
 
 ## Polish
-- [Minor] Only shared captures examined; no per-exercise check of fy3-4.
+None.
 
 ## Checked
-- Delta formulas judged from the same shared rendering in fy3-1 and fy3-8 captures; no fy3-4-specific capture opened.
-- Judged: nothing clipped, equals signs in one column, no break inside a number or unit, joined rows on wide screens, punctuation kept with the display formula.
+- Delta: changed task texts (prefix "Esimerkkiaineisto:" removed, each text now opens with a capital); read in the diff. Layout judged in fy3-4-open-exercises-L3-1280-1 (task text, answer row, open solution, no clipping).
+- Wording only: the new openings read naturally; maths and units unchanged and in LaTeX.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

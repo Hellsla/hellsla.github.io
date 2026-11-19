@@ -11,6 +11,10 @@
                                              the same carry for an investigation, a unit or a TVT guide (its id), a
                                              Sovella set or an example exam (the course, FY4): only over figures the
                                              teacher approved as drawn
+  python scripts/reviews.py approve-text <id> [--lang en] [--exercises] [--base <ref>] --source "<approval>"
+                                             record the text changes of a chapter since <base> (default origin/main) the
+                                             teacher read and approved, file by file, with the source of the approval
+                                             (asked for when omitted; docs/teacher-text.tsv): category teacher-text
   python scripts/reviews.py approve-presentation <sim.js> [<base-ref>]   show a simulation file's change since <base-ref>
                                              (default origin/main) and, when it only places or draws, record it for the
                                              teacher's approval (docs/presentation-only.tsv)
@@ -134,6 +138,8 @@ VISUAL_GATE = True    # the activation switch of the third mandatory review (tea
 BASELINE = ROOT / "docs" / "visual-baseline.tsv"   # what was published before the gate: hash-bound, rows only ever removed
 BASELINE_COLS = ["kind", "lang", "id", "part", "hash", "date"]
 PRESENTATION = ROOT / "docs" / "presentation-only.tsv"      # simulation changes that only place or draw, approved diff by diff (teacher 2026-11-11)
+TEACHER_TEXT = ROOT / "docs" / "teacher-text.tsv"   # text changes the teacher read and approved, file by file (teacher 2026-11-13, work queue 8k)
+TEACHER_TEXT_COLS = ["date", "lang", "id", "file", "before", "after", "source"]
 TEACHER_FIGURES = ROOT / "docs" / "teacher-figures.tsv"   # figures the teacher approved as drawn (teacher 2026-11-10)
 CONTENT = ("meta.json", "lesson.md", "exercises.json", "solutions.md", "answers.py", "exit-ticket.json", "sim.js", "sim-spec.md", "inquiry.json")
 EXERCISE_CONTENT = ("exercises.json", "solutions.md", "answers.py")
@@ -176,6 +182,7 @@ RULES = {                       # category: (science, pedagogy, visual)
     "caption-label":  ("none",  "none", "none"),    # the marker "esimerkkiaineisto" / "example data" taken out of table captions, every other character as it was (teacher 2026-11-15, "Voisiko taulukoista ottaa pois tuon (esimerkkiaineisto)"; without parentheses too, 2026-11-16 "joo poistetaan")
     "mafy-symbols":   ("none",  "none", "none"),    # FY9 formulas and symbols made MAFY's by the teacher's exact replacements (docs/fy9/mafy-tunnukset.tsv; teacher 2026-11-12, "treenataan yo-kokeisiin")
     "teacher-figure": ("none",  "none", "none"),    # a figure the teacher approved as drawn (docs/teacher-figures.tsv, its exact Finnish SVG), its words in a translation, a task given it by "figure": the layout is check_layout's (teacher 2026-11-10)
+    "teacher-text":   ("none",  "none", "none"),    # a text change the teacher read and approved (docs/teacher-text.tsv: the exact file before and after, the source of the approval); layout is check_layout's (teacher 2026-11-13, work queue 8k)
     "split":          ("none",  "none", "none"),    # passed as one lesson before the split; this part's files moved, unchanged (answers.py: line for line)
     "figure-words-added": ("none", "none", "none"),   # a translation's figures.json only gained entries (a new figure variant for a task); every existing entry as it was (teacher 2026-11-12)
     "reflow":         ("none",  "none", "delta"),    # a calculation chain only re-broken into rows (same numbers, signs and units in the same order; line breaks or =-rows differ): the visual reviewer always looks again (teacher 2026-11-15)
@@ -197,6 +204,7 @@ WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing el
        "simulation": "the simulation's code changed", "figure": "a figure or picture changed",
        "illustration": "the illustrations only",
        "teacher-figure": "figures the teacher approved as drawn (docs/teacher-figures.tsv)",
+       "teacher-text": "a text change the teacher read and approved (docs/teacher-text.tsv)",
        "caption-label": "the marker \"esimerkkiaineisto\" taken out of table captions, nothing else (teacher 2026-11-15, 2026-11-16)",
        "mafy-symbols": "formulas and symbols made MAFY's by the teacher's exact replacements (docs/fy9/mafy-tunnukset.tsv)",
        "formula-names": "formula names the teacher approved (docs/*/kaavanimet.tsv)",
@@ -1655,6 +1663,75 @@ def approve_presentation(rel, base="origin/main", note=""):
     print(f"\nrecorded in {PRESENTATION.relative_to(ROOT)}: {rel} {row[1]} -> {row[2]}")
 
 
+# ------------------------------------------------------------ a text change the teacher approved (work queue 8k)
+# Like a figure the teacher approved as drawn: when the teacher has read a change of a lesson text (lesson.md, solutions.md,
+# a JSON text) and said it is right, `approve-text` records the exact file before and after (hashes of the text as
+# written) and the source of the approval. The change is then the category "teacher-text", which no reviewer must see.
+# Any other change in the chapter is classified as usual, and an edit made after the approval changes the hash, so the
+# row no longer matches and `verify` (verify_carries) rejects a carry that relied on it.
+
+def text_eligible(rel):
+    """A file a teacher's text approval can cover: a lesson or exercise text, never code, a simulation, a test or a picture."""
+    return rel.endswith((".md", ".json")) and not rel.startswith(("figure:", "tests/", "assets/")) and "/sims/" not in f"/{rel}"
+
+
+@functools.lru_cache(maxsize=None)
+def teacher_text_rows():
+    """{(file, hash before, hash after)} from docs/teacher-text.tsv."""
+    rows = set()
+    if TEACHER_TEXT.is_file():
+        for l in TEACHER_TEXT.read_text().splitlines():
+            c = l.split("\t")
+            if len(c) >= 6 and not l.startswith(("#", "date\t")): rows.add((c[3], c[4], c[5]))
+    return rows
+
+
+def text_approved(rel, a, b):
+    """The change of the text file `rel` from source text `a` to `b` is exactly one the teacher approved."""
+    return text_eligible(rel) and (rel, _pres_hash(a), _pres_hash(b)) in teacher_text_rows()
+
+
+def approve_text(lid, base="origin/main", source="", part="lesson"):
+    """Show every text change of lesson `lid` (`part`) since `base` and record each, with the source of the teacher's approval."""
+    if not source.strip(): sys.exit("approve-text: the source of the teacher's approval is required (--source \"<who said what, when>\"); only the teacher's explicit approval counts")
+    folder, old, new = find_lesson(lid), Commit(base), WorkTree()
+    paths = sorted({(rel, b) for _, rel, b in entries(folder, old, part) + entries(folder, new, part)})
+    lang, found = courses.lang_of(folder), []
+    for rel, binary in paths:
+        if binary or not text_eligible(rel): continue
+        a, b = old.source(rel, binary), new.source(rel, binary)
+        if (a or "") == (b or ""): continue
+        print("\n".join(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), f"a/{rel}", f"b/{rel}", lineterm="", n=2)))
+        found.append((rel, _pres_hash(a), _pres_hash(b)))
+    if not found: sys.exit(f"{lid}: no text change since {base}")
+    new_rows = [r for r in found if r not in teacher_text_rows()]
+    TEACHER_TEXT.parent.mkdir(parents=True, exist_ok=True)
+    if new_rows and not TEACHER_TEXT.is_file():
+        TEACHER_TEXT.write_text("# Text changes the teacher read and approved (teacher 2026-11-13, work queue 8k; scripts/reviews.py \"a text change the teacher approved\").\n"
+                                "# One row per approved change of a file: the hashes of the text before and after, and the source of the approval.\n"
+                                "# Written by `python scripts/reviews.py approve-text <id> [--lang <l>] --source \"...\"` only after the teacher has\n"
+                                "# explicitly approved the change; any edit made after it needs a new approval or the reviews.\n"
+                                + "\t".join(TEACHER_TEXT_COLS) + "\n")
+    with TEACHER_TEXT.open("a") as f:
+        for rel, x, y in new_rows: f.write("\t".join((datetime.date.today().isoformat(), lang, lid, rel, x, y, " ".join(source.split()))) + "\n")
+    teacher_text_rows.cache_clear()
+    print(f"\n{lid}: {len(new_rows)} text change(s) recorded as approved in {TEACHER_TEXT.relative_to(ROOT)} ({len(found) - len(new_rows)} already recorded)")
+
+
+def verify_teacher_text():
+    """Errors for malformed rows of docs/teacher-text.tsv (the carries that rely on a row are re-derived by verify_carries)."""
+    errs = []
+    if not TEACHER_TEXT.is_file(): return errs
+    rel = TEACHER_TEXT.relative_to(ROOT).as_posix()
+    for l in TEACHER_TEXT.read_text().splitlines():
+        if not l.strip() or l.startswith(("#", "date\t")): continue
+        c = l.split("\t")
+        if len(c) != len(TEACHER_TEXT_COLS) or not re.fullmatch(r"[0-9a-f]{16}", c[4]) or not re.fullmatch(r"[0-9a-f]{16}", c[5]) \
+                or not c[6].strip() or not text_eligible(c[3]) or c[4] == c[5]:
+            errs.append(f"{rel}: malformed row (date, lang, id, file, before, after, source of the approval): {l}")
+    return errs
+
+
 MATH_SPAN = re.compile(r"\$\$.+?\$\$|\$[^$\n]+?\$|\$[^$]+?\$", re.S)
 ALIGNED = re.compile(r"\\begin\{aligned\}(.*?)\\end\{aligned\}", re.S)
 
@@ -1896,6 +1973,8 @@ def changes(folder, base, part="lesson", split=False, new=None):
             if ra != rb and split_from(ra, rb): diff.append(f"--- {rel}: taken line for line from answers.py"); continue
         a, b = _view(ra, rel, binary), _view(rb, rel, binary)
         if a == b: continue
+        if not binary and text_approved(rel, ra, rb):          # the teacher read this exact change of the text (docs/teacher-text.tsv)
+            cats.add("teacher-text"); diff.append(f"--- {rel}: text change approved by the teacher"); continue
         if rel.startswith("figure:") and approved(rel[7:]):     # an approved figure a task refers to
             cats.add("teacher-figure"); diff.append(f"--- {rel}: drawing approved by the teacher"); continue
         if not binary and TEACHER_FIGURES.is_file():
@@ -2326,6 +2405,11 @@ if __name__ == "__main__":
     elif a[0] == "carry": carry(find_lesson(a[1]), part)
     elif a[0] == "carry-item": item_carry(a[1], a[2], globals().get("LANG", i18n.SOURCE))
     elif a[0] == "approve-figures": [approve_figures(x) for x in a[1:]]
+    elif a[0] == "approve-text":
+        opt = lambda k: a[a.index(k) + 1] if k in a and a.index(k) + 1 < len(a) else None
+        src_ = opt("--source")
+        if src_ is None and sys.stdin.isatty(): src_ = input("Source of the teacher's approval (who approved what, when): ")
+        approve_text(a[1], opt("--base") or "origin/main", src_ or "", part)
     elif a[0] == "approve-presentation": approve_presentation(a[1], *(a[2:3] or ["origin/main"]), note=" ".join(a[3:]))
     elif a[0] == "impact": impact(a[1] if len(a) > 1 else "origin/main")
     elif a[0] == "baseline": baseline_init() if a[1:2] == ["init"] else baseline_report()
@@ -2340,6 +2424,6 @@ if __name__ == "__main__":
         for lang in sorted(set(i18n.languages()) | set(_units.languages())):
             for kind, iid in items(lang):
                 for e in verify_item_carries(kind, iid, lang): print("ERROR", e); bad += 1
-        for e in verify_baseline(): print("ERROR", e); bad += 1
+        for e in verify_baseline() + verify_teacher_text(): print("ERROR", e); bad += 1
         sys.exit(1 if bad else 0)
     else: sys.exit(__doc__)

@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 448eb73bf6862c33
+CONTENT-HASH: 40335a70ce72a5eb
 
 ## Blocking
 
 ## Polish
-- [Minor] none new; earlier solution-wrapping notes stand.
+- [Minor] fy7-6 Kaava, rajavauhti task: row "ΣF = 0 rajavauhdilla" mixes a condition word into the equation column; fine but could go in Periaate.
+- [Minor] No 390/360 px exercise captures were in the packet; the blocks are short (max 8 rows, none wide), so no wrap risk seen at 1280.
 
 ## Checked
-- Delta, round 2. Opened open-exercises-1280-2, -4 and -5 (fi): task 6-6 with the reworded option, its feedback, the Vastaus box and the model answer; neighbours 6-2/6-3/6-5 for layout. fi: "pyrkii pitämään" is natural, matches the model answer. Wording only; option fits two lines, nothing clipped, layout survived.
+- Delta, hash current. Opened open-exercises-1280-1 (6-1 Kaava, 3 rows, = aligned, nothing clipped) and open-exercises-L3-1280-5 (7-row Kaava incl. fractions, aligned on =, readable, layout survived).
 - Hash identical at start and end.
 
 ## Scores

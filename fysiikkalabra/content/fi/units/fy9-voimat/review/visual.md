@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: b3f1ae734e0cf71d
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 369cc4ab4a3dead4
 
 ## Blocking
-- (none)
+(none)
 
 ## Polish
-- C `sovella/solutions.md` b) Järkevyys: "kitka syö siitä hyödystä paljon" is slightly colloquial; "mutta kitka vie suuren osan tästä hyödystä" would match the register of the rest.
+- [Minor] sovella/solutions.md s5 a) — the break leaves the sentence on measurement 5 as a lone paragraph between the Periaate and Kaava lines; optionally keep it inside Periaate. Not needed.
 
 ## Checked
-- Hunks: inquiry.json Lähtötaso 6 prompt; solutions.md b) Järkevyys ("luiska pienentää tarvittavaa voimaa, ei työtä") and the Periaate of the phone-cover task ("yhtä suuri kuin lähtökitka eli täysin kehittynyt lepokitka"). Grammar and terms correct; the wrong option "$90\,\text{N}$, koska lepokitka on $\mu_0 N$" stays wrong on purpose.
-- Captures opened: `fy9-voimat-stage-ennusta-390-3.png`, `fy9-voimat-stage-exercises-390-4.png`, `-390-34.png`, `-390-35.png`, `fy9-voimat-stage-exercises-1280-26.png`: prompt and options whole at 390 px, formulas not clipped.
-- The changed places were found in the built `fi` page by their position in each stage; the contact sheets were not used for triage. No figure and no added task in this unit's diff; the rest stands under the previous PASS.
+- Diff origin/main...HEAD for fi (word-level): only blank-line paragraph breaks in sovella/solutions.md and the inquiry.json model field; words, maths, figures unchanged.
+- Every new break falls at a sentence boundary outside inline/display maths (before a voimakuvio fence, after a closing $$, between equilibrium and changed-situation parts); no split chain; paragraphs under about 120 words.
+- Read the previous Sovella visual report (PASS) as evidence.
+- Opened captures: fi/review/shots/fy9-voimat-stage-sovella-390-5.png (fi) and en/.../sovella-1280-3.png (en), the same page structure for all languages: tasks, hints, Näytä ratkaisu cards readable, nothing clipped, no horizontal overflow.
+- Gap: I did not open the captures of the opened model solutions with the new breaks specifically in fi; the captures seen show the closed/just-opened solution start. Figures unchanged and not re-inspected.

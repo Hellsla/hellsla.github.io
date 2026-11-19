@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 5d62dc395f4148da
-SCOPE: delta added-exercise from 820217f747566fa9 base 8f23aa7ae3bd
+CONTENT-HASH: 799cb028f0c08717
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- solutions.md fy7-10-L1-07 Kaava — `\frac{c : n}{c}` mixes a colon into a fraction — write `\frac{c/n}{c}` or drop the row.
 
 ## Checked
-- L1-09: 36,2 deg verified, MAFY lookup; L2-09: k = 1,50, 22,5 deg now consistent with answer 22,48.
-- Language checked: fi-easy. Hash 5d62dc395f4148da at start; unchanged at end.
+- Kaava step of every solution: basic law first, derived form, symbolic simplification, then Sijoitus (diff and current solutions.md); aligned blocks render one equation per row (packet diff shows them flattened).
+- Language checked: fi-easy. Hash 799cb028f0c08717 at start; unchanged at end.

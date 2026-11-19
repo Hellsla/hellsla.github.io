@@ -80,6 +80,12 @@ When an object moves through air or water, it has to push the medium out of its 
 
 Air resistance differs from sliding friction in that it depends on speed. Air resistance does not act at all on an object that is at rest relative to the air, and it grows quickly when the speed of the object relative to the air grows. At the same speed, air resistance is greater the larger the cross-sectional area of the object and the worse the air can flow past it. At the same speed, the resistance in water is much greater than in air, because water is denser.
 
+```pysahdy
+The skydiver leaves the plane at rest relative to the air, even though there is air all around. Why is there no air resistance right after the jump?
+---
+Air resistance depends on the speed relative to the air, and right after the jump that speed is zero. Only as the speed grows does the air start to resist the motion.
+```
+
 ### The three stages of a fall
 The skydiver starts from rest relative to the air (the speed of the plane is ignored), so right after the jump there is no air resistance yet. The only force is the weight, and the skydiver accelerates downward with the free-fall acceleration $g$. As the speed grows, air resistance grows. The weight stays the same, so the net force becomes smaller, and the acceleration becomes smaller with it: the speed grows more and more slowly. Finally the air resistance is equal to the weight. Then the net force is zero, the acceleration is zero and the speed stays constant, as Newton's first law says. This speed is called the **terminal velocity**.
 
@@ -163,6 +169,12 @@ The skydiver starts from rest relative to the air (the speed of the plane is ign
   <foreignObject x="465" y="406" width="70" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$F_\text{v} = G$</div></foreignObject>
 </svg>
 
+```pysahdy
+A skydiver falls at terminal velocity. Why does the speed no longer change, even though the weight still pulls down?
+---
+Air resistance equals the weight, so the net force and the acceleration are zero. The speed stays constant.
+```
+
 ### Terminal velocity depends on mass and shape
 At terminal velocity, air resistance is equal to the weight. A heavier skydiver has a greater weight, so the speed has time to grow greater before air resistance has grown to the size of the weight. In the graph, the curves of a $60\,\text{kg}$ and a $100\,\text{kg}$ skydiver falling in the same position start equally steep, but they level off at different speeds, in the values of the model at about $48\,\text{m/s}$ and $61\,\text{m/s}$. A skydiver diving head first has a smaller cross-sectional area and a more streamlined shape, so the terminal velocity is greater.
 
@@ -222,6 +234,12 @@ At terminal velocity, air resistance is equal to the weight. A heavier skydiver 
 </svg>
 
 This gives the answer to the question at the start. The weight pulls the skydiver down all the time, but as the speed grows, air resistance grows until it cancels the weight. After that the speed no longer changes. Without air resistance, all objects would fall with the same acceleration $g$. In air, a light and wide object, such as a sheet of paper or a feather, reaches a small terminal velocity very soon and therefore falls slowly.
+
+```pysahdy
+Why does a sheet of paper fall more slowly in air than a crumpled paper ball of the same weight?
+---
+At the same speed the wide sheet gets a greater air resistance, so air resistance grows to equal its weight already at a small speed. The sheet's terminal velocity is therefore smaller.
+```
 
 ## Formula: Equation of motion with air resistance
 Air resistance is one of the forces acting on an object, so the motion follows Newton's second law. An object falling or rising through air is acted on by its weight and by air resistance:

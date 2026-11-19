@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 30bab5b7eaa001b7
+CONTENT-HASH: 6f13f68dfd1b633e
+SCOPE: delta wording from 30bab5b7eaa001b7 base 7db523c
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy3-4-L3-04 Sijoitus a) — "$\rho_i d_i$ -summa" has a space before the hyphen; write "$\rho_i d_i$-summa".
+(none)
 
 ## Checked
-- Round 1, delta (reflow into display/aligned rows). Opened at 1280 px: fy3-4 L3 captures 5 and 6 (L3-04 Sijoitus a)-c), Vastaus, Järkevyys).
-- Equals signs in one column, no row breaks inside a number or unit, closing punctuation stays inside the box (no orphan comma or period), nothing clipped. No 390 px exercise captures exist (only the closed Tehtävät stage); the 360 px layout check is clean.
+- Delta, wording only: the diff read in full. The prefix "Esimerkkiaineisto:" is gone; each task now opens with a capital letter and reads as a normal sentence. No numbers, symbols, units or LaTeX changed.
+- Captures: opened fy3-4 L3 part 1 and 4 at 1280 px (content/fi/FY3/fy3-4/review/shots), which show the layout of this kind of task card; the other sets' captures were not opened, because the diff changes only the first words of a text.
 - Hash unchanged at the end.
 
 ## Scores

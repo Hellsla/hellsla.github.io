@@ -29,12 +29,24 @@
 &: 3 \\
 &= 13{,}96\,\text{s}
 \end{aligned}
-$$ ja epävarmuus $(14{,}12 - 13{,}80)\,\text{s} : 2 = 0{,}16\,\text{s}$, joten Miran aika on $(13{,}96 \pm 0{,}16)\,\text{s}$ ja Liisan $(13{,}71 \pm 0{,}19)\,\text{s}$. Liisan väli on $13{,}52$–$13{,}90\,\text{s}$ ja Miran $13{,}80$–$14{,}12\,\text{s}$, joten välit menevät päällekkäin. Ero $0{,}25\,\text{s}$ on samaa suuruusluokkaa kuin epävarmuudet. Näillä mittauksilla ei siis voida osoittaa, että Liisa oli nopeampi, vaikka hänen keskiarvonsa on pienempi. Se ei kuitenkaan tarkoita, että juoksijat olisivat yhtä nopeita: eron osoittaminen vaatisi tarkemman ajanoton, esimerkiksi maalikameran.
+$$ ja epävarmuus $(14{,}12 - 13{,}80)\,\text{s} : 2 = 0{,}16\,\text{s}$, joten Miran aika on $(13{,}96 \pm 0{,}16)\,\text{s}$ ja Liisan $(13{,}71 \pm 0{,}19)\,\text{s}$.
+
+Liisan väli on $13{,}52$–$13{,}90\,\text{s}$ ja Miran $13{,}80$–$14{,}12\,\text{s}$, joten välit menevät päällekkäin. Ero $0{,}25\,\text{s}$ on samaa suuruusluokkaa kuin epävarmuudet. Näillä mittauksilla ei siis voida osoittaa, että Liisa oli nopeampi, vaikka hänen keskiarvonsa on pienempi.
+
+Se ei kuitenkaan tarkoita, että juoksijat olisivat yhtä nopeita: eron osoittaminen vaatisi tarkemman ajanoton, esimerkiksi maalikameran.
 
 ### d)
 **Kysytty:** käsiajanoton systemaattiset virhelähteet, voiko virheen suunnan päätellä varmasti ja miksi keskiarvo ei välttämättä poista systemaattista virhettä
 **Periaate:** Systemaattinen virhe siirtää jokaista tulosta samaan suuntaan. Sitä ei näe tulosten hajonnasta, ja toistaminen tai keskiarvo ei poista sitä. Satunnaisvirheen vaikutus sen sijaan yleensä pienenee, kun tuloksia keskiarvoistetaan.
-**Mallivastaus:** Ajanottaja käynnistää kellon vasta, kun hän on nähnyt lipun laskevan ja reagoinut siihen. Kello käynnistyy siksi viiveen $\tau_\text{k}$ myöhässä, tyypillisesti sekunnin kymmenyksiä. Myös pysäyttämiseen liittyy viive $\tau_\text{p}$. Maaliintulon ajanottaja näkee ennalta, joten tämä viive voi olla lyhyempi, mutta hän voi myös pysäyttää kellon hieman liian aikaisin tai myöhässä. Mitattu aika on $t_\text{mitattu} = t_\text{tod} + \tau_\text{p} - \tau_\text{k}$, missä $t_\text{tod}$ on todellinen aika. Mitattu aika on siis todellista lyhyempi, jos $\tau_\text{k} > \tau_\text{p}$, ja pidempi, jos $\tau_\text{p} > \tau_\text{k}$. Tehtävän tiedoista viiveitä ei tunneta, joten suuntaa ei voi päätellä varmasti. Todennäköisintä on, että lähtöviive on suurempi, jolloin aika on hieman liian lyhyt ja a-kohdan nopeus liian suuri. Kolme ajanottajaa toimii samalla tavalla, joten viiveiden keskimääräinen osa on kaikilla samansuuntainen. Se on systemaattinen virhe, joka säilyy myös keskiarvossa. Keskiarvo pienentää yleensä vain satunnaisvirheen eli kellojen välisen vaihtelun vaikutusta. Systemaattisen virheen poistaa esimerkiksi sähköinen ajanotto, joka käynnistyy lähtömerkistä itse.
+**Mallivastaus:** Ajanottaja käynnistää kellon vasta, kun hän on nähnyt lipun laskevan ja reagoinut siihen. Kello käynnistyy siksi viiveen $\tau_\text{k}$ myöhässä, tyypillisesti sekunnin kymmenyksiä.
+
+Myös pysäyttämiseen liittyy viive $\tau_\text{p}$. Maaliintulon ajanottaja näkee ennalta, joten tämä viive voi olla lyhyempi, mutta hän voi myös pysäyttää kellon hieman liian aikaisin tai myöhässä.
+
+Mitattu aika on $t_\text{mitattu} = t_\text{tod} + \tau_\text{p} - \tau_\text{k}$, missä $t_\text{tod}$ on todellinen aika. Mitattu aika on siis todellista lyhyempi, jos $\tau_\text{k} > \tau_\text{p}$, ja pidempi, jos $\tau_\text{p} > \tau_\text{k}$.
+
+Tehtävän tiedoista viiveitä ei tunneta, joten suuntaa ei voi päätellä varmasti. Todennäköisintä on, että lähtöviive on suurempi, jolloin aika on hieman liian lyhyt ja a-kohdan nopeus liian suuri.
+
+Kolme ajanottajaa toimii samalla tavalla, joten viiveiden keskimääräinen osa on kaikilla samansuuntainen. Se on systemaattinen virhe, joka säilyy myös keskiarvossa. Keskiarvo pienentää yleensä vain satunnaisvirheen eli kellojen välisen vaihtelun vaikutusta. Systemaattisen virheen poistaa esimerkiksi sähköinen ajanotto, joka käynnistyy lähtömerkistä itse.
 
 ### Hyväksytään myös
 - b-kohdassa nopeuden suhteellinen epävarmuus ajan ja matkan suhteellisten epävarmuuksien summana: $\tfrac{0{,}19}{13{,}71} + \tfrac{0{,}3}{100{,}0} \approx 0{,}0169$, jolloin $$
@@ -311,7 +323,11 @@ $$. Pienemmässä yksikössä lukuarvo kasvaa.
   <foreignObject x="120.5" y="83.5" width="164" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px">$k \approx 0{,}919\,\tfrac{\text{g}}{\text{ml}}$</div></foreignObject>
 </svg>
 
-**Mallivastaus:** Pisteet ovat likimain suoralla, joten malliksi sopii suora $m = kV + b$. Suoraa ei pakoteta origon kautta, koska vaaka punnitsee myös mittalasin: kun nestettä ei ole, massa ei ole nolla. Rivin $60\,\text{ml}$ piste on noin $10\,\text{g}$ suoran yläpuolella, mikä on yli kymmenkertainen muiden pisteiden poikkeamiin nähden. Sen massa $183{,}4\,\text{g}$ sopisi suoralle tilavuudella noin $70\,\text{ml}$, ja muistiinpanon mukaan lukema kirjattiin jälkikäteen muistista. Poikkeamalle on siis löytynyt todennäköinen syy, karkea virhe, joten piste jätetään pois sovituksesta. Poisjättö ja sen syy kirjataan raporttiin. Pistettä ei olisi saanut poistaa pelkästään siksi, että se poikkeaa muista; parasta olisi toistaa mittaus.
+**Mallivastaus:** Pisteet ovat likimain suoralla, joten malliksi sopii suora $m = kV + b$. Suoraa ei pakoteta origon kautta, koska vaaka punnitsee myös mittalasin: kun nestettä ei ole, massa ei ole nolla.
+
+Rivin $60\,\text{ml}$ piste on noin $10\,\text{g}$ suoran yläpuolella, mikä on yli kymmenkertainen muiden pisteiden poikkeamiin nähden. Sen massa $183{,}4\,\text{g}$ sopisi suoralle tilavuudella noin $70\,\text{ml}$, ja muistiinpanon mukaan lukema kirjattiin jälkikäteen muistista.
+
+Poikkeamalle on siis löytynyt todennäköinen syy, karkea virhe, joten piste jätetään pois sovituksesta. Poisjättö ja sen syy kirjataan raporttiin. Pistettä ei olisi saanut poistaa pelkästään siksi, että se poikkeaa muista; parasta olisi toistaa mittaus.
 
 ### c)
 **Annettu:** b-kohdan sovitettu suora
@@ -342,7 +358,9 @@ $$. Pienemmässä yksikössä lukuarvo kasvaa.
 **Kaava:** $m = \rho V$
 **Muunnokset:** $V = 1{,}50\,\text{l} = 1{,}50 \cdot 1000\,\text{cm}^3 = 1500\,\text{cm}^3$, ja lopuksi $1000\,\text{g} = 1\,\text{kg}$.
 **Sijoitus:** $m = 0{,}919\,\tfrac{\text{g}}{\text{cm}^3} \cdot 1500\,\text{cm}^3 = 1378\,\text{g} = 1{,}378\,\text{kg}$
-**Vastaus:** $m \approx 1{,}38\,\text{kg}$. Tiheys tunnetaan d-kohdan mukaan noin $1{,}3\,\%$:n tarkkuudella, joten tulos on $(1{,}38 \pm 0{,}02)\,\text{kg}$ ja epävarmuus ulottuu kolmanteen numeroon, kuten tilavuudessakin $1{,}50\,\text{l}$. Tilavuus on $15$-kertainen mitattuun alueeseen verrattuna, mutta laskussa ei jatketa mittalasin suoraa vaan käytetään tiheyttä, joka on aineen ominaisuus ja pysyy samana samassa lämpötilassa. Siksi tulos on fysikaalisesti perusteltu, kunhan öljyn lämpötila on sama kuin mittauksessa.
+**Vastaus:** $m \approx 1{,}38\,\text{kg}$. Tiheys tunnetaan d-kohdan mukaan noin $1{,}3\,\%$:n tarkkuudella, joten tulos on $(1{,}38 \pm 0{,}02)\,\text{kg}$ ja epävarmuus ulottuu kolmanteen numeroon, kuten tilavuudessakin $1{,}50\,\text{l}$.
+
+Tilavuus on $15$-kertainen mitattuun alueeseen verrattuna, mutta laskussa ei jatketa mittalasin suoraa vaan käytetään tiheyttä, joka on aineen ominaisuus ja pysyy samana samassa lämpötilassa. Siksi tulos on fysikaalisesti perusteltu, kunhan öljyn lämpötila on sama kuin mittauksessa.
 **Järkevyys:** Saman tilavuuden vesi painaisi $1{,}50\,\text{kg}$, ja öljy on noin $8\,\%$ kevyempää, joten $1{,}38\,\text{kg}$ on oikean suuruinen.
 
 ### Hyväksytään myös
@@ -367,7 +385,9 @@ $$. Massaan sisältyy mittalasi.
 ### a)
 **Kysytty:** aineistossa näkyvät virhelajit perusteluineen
 **Periaate:** Systemaattinen virhe siirtää tuloksia samaan suuntaan, satunnaisvirhe näkyy toistojen vaihteluna ja karkea virhe yksittäisenä muista selvästi poikkeavana tuloksena.
-**Mallivastaus:** *Systemaattinen virhe.* Jokainen lukema on suurempi kuin punnuksen tunnettu massa, ja ero toistuu samanlaisena joka punnituksessa. Lukemien keskiarvot ovat noin $101{,}7$, $204{,}3$, $510{,}3$ ja $1020{,}3\,\text{g}$, joten virhe on noin $2$, $4$, $10$ ja $20\,\text{g}$. Virhe kasvaa samassa suhteessa kuin massa, noin $2\,\%$: $20\,\text{g} : 1000\,\text{g} = 0{,}02$. Koska tyhjä vaaka näyttää $0\,\text{g}$, nollakohta on oikein ja virhe on suhteellinen.
+**Mallivastaus:** *Systemaattinen virhe.* Jokainen lukema on suurempi kuin punnuksen tunnettu massa, ja ero toistuu samanlaisena joka punnituksessa.
+
+Lukemien keskiarvot ovat noin $101{,}7$, $204{,}3$, $510{,}3$ ja $1020{,}3\,\text{g}$, joten virhe on noin $2$, $4$, $10$ ja $20\,\text{g}$. Virhe kasvaa samassa suhteessa kuin massa, noin $2\,\%$: $20\,\text{g} : 1000\,\text{g} = 0{,}02$. Koska tyhjä vaaka näyttää $0\,\text{g}$, nollakohta on oikein ja virhe on suhteellinen.
 
 *Satunnaisvirhe.* Saman punnuksen kolme lukemaa eroavat toisistaan enintään $1\,\text{g}$. Vaihtelu on samaa suuruusluokkaa kuin näytön resoluutio $1\,\text{g}$.
 
@@ -376,13 +396,17 @@ $$. Massaan sisältyy mittalasi.
 ### b)
 **Kysytty:** onko väite $(765 \pm 0{,}5)\,\text{g}$ oikein, ja parempi arvio jauhojen massasta
 **Periaate:** Resoluutio on pienin näytössä näkyvä muutos. Se ei kerro systemaattisesta virheestä, joten epävarmuus voi olla paljon resoluutiota suurempi. Tunnettu systemaattinen virhe korjataan.
-**Mallivastaus:** Väite ei pidä. Puolikas resoluutiosta, $0{,}5\,\text{g}$, kertoo vain, kuinka tarkasti näytön voi lukea. a-kohdan mukaan vaaka näyttää noin $2\,\%$ liikaa, ja toistot vaihtelevat noin $1\,\text{g}$. Vaaka näyttää massasta $m$ lukeman $m_\text{lukema} = k\,m$, missä $k$ on punnuksilta saatu suhde $1020\,\text{g} : 1000\,\text{g} = 1{,}02$. Korjattu massa on siis $$
+**Mallivastaus:** Väite ei pidä. Puolikas resoluutiosta, $0{,}5\,\text{g}$, kertoo vain, kuinka tarkasti näytön voi lukea. a-kohdan mukaan vaaka näyttää noin $2\,\%$ liikaa, ja toistot vaihtelevat noin $1\,\text{g}$.
+
+Vaaka näyttää massasta $m$ lukeman $m_\text{lukema} = k\,m$, missä $k$ on punnuksilta saatu suhde $1020\,\text{g} : 1000\,\text{g} = 1{,}02$. Korjattu massa on siis $$
 \begin{aligned}
 m &= \dfrac{m_\text{lukema}}{k} \\
 &= 765\,\text{g} : 1{,}02 \\
 &= 750\,\text{g}
 \end{aligned}
-$$. Epävarmuutta lisäävät toistojen vaihtelu ja se, että korjauskerroin tunnetaan vain noin tuhannesosan tarkkuudella, mikä tekee $765\,\text{g}$:n lukemassa alle grammaa. Parempi arvio on noin $(750 \pm 2)\,\text{g}$. Ystävän tulos on siis noin $15\,\text{g}$ liian suuri, ja sen epävarmuus on liian pieni.
+$$.
+
+Epävarmuutta lisäävät toistojen vaihtelu ja se, että korjauskerroin tunnetaan vain noin tuhannesosan tarkkuudella, mikä tekee $765\,\text{g}$:n lukemassa alle grammaa. Parempi arvio on noin $(750 \pm 2)\,\text{g}$. Ystävän tulos on siis noin $15\,\text{g}$ liian suuri, ja sen epävarmuus on liian pieni.
 
 ### c)
 **Kysytty:** kuvaajan muoto, mitä siitä näkee virheen laadusta, ja miksi toistaminen ei auta
@@ -393,7 +417,9 @@ k &= (1020{,}3\,\text{g} - 101{,}7\,\text{g}) \\
 &: (1000{,}0\,\text{g} - 100{,}0\,\text{g}) \\
 &\approx 1{,}02
 \end{aligned}
-$$ eikä $1$, ja vakiotermi on nolla. Vakiotermi nolla kertoo, että nollakohta on oikein, ja kulmakerroin $1{,}02$ kertoo, että vaaka näyttää jokaisesta massasta $2\,\%$ liikaa. Kuvaajan pisteet ovat hyvin tarkasti suoralla, koska satunnaisvaihtelu, noin $1\,\text{g}$, on pieni.
+$$ eikä $1$, ja vakiotermi on nolla.
+
+Vakiotermi nolla kertoo, että nollakohta on oikein, ja kulmakerroin $1{,}02$ kertoo, että vaaka näyttää jokaisesta massasta $2\,\%$ liikaa. Kuvaajan pisteet ovat hyvin tarkasti suoralla, koska satunnaisvaihtelu, noin $1\,\text{g}$, on pieni.
 
 Toistaminen vaimentaa satunnaisvirheen vaikutusta keskiarvossa, koska liian suuret ja liian pienet lukemat kumoavat osittain toisensa. Systemaattinen virhe on kuitenkin joka punnituksessa sama, joten keskiarvo on yhtä paljon väärin kuin yksittäinen lukema. Virhe korjataan jakamalla lukemat kulmakertoimella $1{,}02$ tai kalibroimalla vaaka punnuksen avulla.
 
@@ -474,7 +500,9 @@ Toistaminen vaimentaa satunnaisvirheen vaikutusta keskiarvossa, koska liian suur
   <foreignObject x="258.5" y="274.5" width="164" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$v = k \approx 0{,}48\,\tfrac{\text{m}}{\text{s}}$</div></foreignObject>
 </svg>
 
-**Mallivastaus:** Kuusi pistettä on lähellä yhtä suoraa, joten auto liikkui tasaisesti ja paikka on lineaarinen ajan funktio, $x = vt + x_0$. Nopeus on suoran kulmakerroin $v = \dfrac{x_2 - x_1}{t_2 - t_1}$. Piste $t = 1{,}5\,\text{s}$ on noin $0{,}25\,\text{m}$ suoran yläpuolella, lähes samassa paikassa kuin piste $t = 2{,}0\,\text{s}$, joten se on todennäköisesti merkitty väärään kuvaan. Piste tarkistetaan videolta. Jos virhe löytyy, se korjataan tai piste jätetään pois ja syy kirjataan.
+**Mallivastaus:** Kuusi pistettä on lähellä yhtä suoraa, joten auto liikkui tasaisesti ja paikka on lineaarinen ajan funktio, $x = vt + x_0$. Nopeus on suoran kulmakerroin $v = \dfrac{x_2 - x_1}{t_2 - t_1}$.
+
+Piste $t = 1{,}5\,\text{s}$ on noin $0{,}25\,\text{m}$ suoran yläpuolella, lähes samassa paikassa kuin piste $t = 2{,}0\,\text{s}$, joten se on todennäköisesti merkitty väärään kuvaan. Piste tarkistetaan videolta. Jos virhe löytyy, se korjataan tai piste jätetään pois ja syy kirjataan.
 
 Suoraa ei pakoteta origon kautta. Siltä luetaan kaksi kaukana toisistaan olevaa pistettä, $(0\,\text{s};\ 0{,}36\,\text{m})$ ja $(3{,}0\,\text{s};\ 1{,}79\,\text{m})$, joten nopeus on $$
 \begin{aligned}
@@ -524,7 +552,11 @@ $$ ja viimeisellä $$
 &81{,}8\,\text{kPa} \cdot 30\,\text{ml} \\
 &= 2454\,\text{kPa} \cdot \text{ml}
 \end{aligned}
-$$. Välirivien tulot kasvavat tasaisesti rivi riviltä, ja koko kasvu on $(2454 - 2269) : 2269 \approx 8\,\%$. Paineet on annettu kymmenesosakilopascalin tarkkuudella, ja tulo kasvaa joka rivillä samaan suuntaan. Satunnaisvirhe vaihtelisi sattumanvaraisesti, joten tasainen $8\,\%$:n kasvu ei johdu siitä. Väite ei siis päde ruiskun lukemaan $V$. Tulon kasvu viittaa siihen, että ilman todellinen tilavuus on lukemaa suurempi: osa ilmasta on letkussa ja anturissa, ja sen osuus on suurin, kun ruiskun tilavuus on pieni.
+$$. Välirivien tulot kasvavat tasaisesti rivi riviltä, ja koko kasvu on $(2454 - 2269) : 2269 \approx 8\,\%$.
+
+Paineet on annettu kymmenesosakilopascalin tarkkuudella, ja tulo kasvaa joka rivillä samaan suuntaan. Satunnaisvirhe vaihtelisi sattumanvaraisesti, joten tasainen $8\,\%$:n kasvu ei johdu siitä. Väite ei siis päde ruiskun lukemaan $V$.
+
+Tulon kasvu viittaa siihen, että ilman todellinen tilavuus on lukemaa suurempi: osa ilmasta on letkussa ja anturissa, ja sen osuus on suurin, kun ruiskun tilavuus on pieni.
 
 ### b)
 **Kysytty:** kuvaaja, jossa riippuvuus on suoraviivainen, ja siihen sovitettu suora
@@ -809,7 +841,13 @@ $$, siis sama väli kuin $15{,}0 \pm 0{,}6\,\text{cm}$. Tulos on kuitenkin ekstr
   <foreignObject x="121.5" y="92" width="226" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$\tfrac{1}{2}g = k \approx 5{,}18\,\text{m/s}^2$</div></foreignObject>
 </svg>
 
-**Mallivastaus:** Pisteet asettuvat hyvin suoralle, joten malli $s \propto t^2$ sopii aineistoon. Suora ei ole pakotettu origon kautta. Sen vakiotermi on noin $0{,}01\,\text{m}$ eli suunnilleen matkan lukemisen epävarmuuden $0{,}01\,\text{m}$ suuruinen. Se on pieni, ja koska suoraa ei ole pakotettu origon kautta, se ei vaikuta kulmakertoimeen. Suoran ja pisteiden pystyerot ovat enintään noin $0{,}008\,\text{m}$, alle lukemisen epävarmuuden. Kuvaajan suora on $s \approx 5{,}18\,\text{m/s}^2 \cdot t^2 + 0{,}01\,\text{m}$. $(t,s)$-kuvaajassa pisteet muodostaisivat käyrän, josta kulmakerrointa ei voisi lukea, ja pisteiden yhdistäminen murtoviivaksi seuraisi mittausvirheitäkin.
+**Mallivastaus:** Pisteet asettuvat hyvin suoralle, joten malli $s \propto t^2$ sopii aineistoon.
+
+Suora ei ole pakotettu origon kautta. Sen vakiotermi on noin $0{,}01\,\text{m}$ eli suunnilleen matkan lukemisen epävarmuuden $0{,}01\,\text{m}$ suuruinen. Se on pieni, ja koska suoraa ei ole pakotettu origon kautta, se ei vaikuta kulmakertoimeen.
+
+Suoran ja pisteiden pystyerot ovat enintään noin $0{,}008\,\text{m}$, alle lukemisen epävarmuuden. Kuvaajan suora on $s \approx 5{,}18\,\text{m/s}^2 \cdot t^2 + 0{,}01\,\text{m}$.
+
+$(t,s)$-kuvaajassa pisteet muodostaisivat käyrän, josta kulmakerrointa ei voisi lukea, ja pisteiden yhdistäminen murtoviivaksi seuraisi mittausvirheitäkin.
 
 ### b)
 **Annettu:** a-kohdan $(t^2,\,s)$-suora; matkan lukemisen epävarmuus $0{,}01\,\text{m}$
@@ -851,7 +889,9 @@ $$ eli $0{,}54 : 0{,}147 \approx 3{,}7$-kertainen epävarmuuteen verrattuna. Arv
 
 *Ilmanvastus.* Ilmanvastus vastustaa kuulan liikettä, joten se pienentäisi mitattua kiihtyvyyttä. Mitattu arvo on kuitenkin liian suuri, joten ilmanvastus ei selitä eroa.
 
-*Mahdolliset syyt.* Mittakaavan virhe: jos matkat on mitattu videolta mittakaavalla, jossa pituus on yliarvioitu noin $5{,}5\,\%$, myös $g$ on yliarvioitu. Aikaskaalan virhe: $g = 2s/t^2$, joten jos todellinen kuvaväli on oletettua $0{,}05\,\text{s}$ pidempi, ajat on aliarvioitu ja laskettu $g$ on liian suuri. Jotta mitattu $10{,}35\,\text{m/s}^2$ olisi todellisuudessa $9{,}81\,\text{m/s}^2$, kuvavälin pitäisi olla $$
+*Mahdolliset syyt.* Mittakaavan virhe: jos matkat on mitattu videolta mittakaavalla, jossa pituus on yliarvioitu noin $5{,}5\,\%$, myös $g$ on yliarvioitu.
+
+Aikaskaalan virhe: $g = 2s/t^2$, joten jos todellinen kuvaväli on oletettua $0{,}05\,\text{s}$ pidempi, ajat on aliarvioitu ja laskettu $g$ on liian suuri. Jotta mitattu $10{,}35\,\text{m/s}^2$ olisi todellisuudessa $9{,}81\,\text{m/s}^2$, kuvavälin pitäisi olla $$
 \begin{aligned}
 \sqrt{\dfrac{10{,}35}{9{,}81}} &= 1{,}027 \\
 1{,}027 \cdot 0{,}05\,\text{s} &= 0{,}0514\,\text{s}

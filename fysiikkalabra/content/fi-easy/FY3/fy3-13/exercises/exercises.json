@@ -165,7 +165,7 @@
       "kind": [
         "data"
       ],
-      "text": "Esimerkkiaineisto: suljetun pullon ilman paine mitattiin viidessä lämpötilassa. Paineen lukeman epävarmuus on $\\pm 1{,}0\\,\\text{kPa}$. Pisteisiin sovitettu paras suora kulkee pisteiden keskipisteen $(\\theta_{\\text{ka}}, p_{\\text{ka}})$ kautta. Sen kulmakerroin on tietokoneella laskettuna $0{,}363\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}$.\n\na) Laske taulukon keskipiste $(\\theta_{\\text{ka}}, p_{\\text{ka}})$. Keskipisteen koordinaatit ovat lämpötilojen ja paineiden keskiarvot.\n\nb) Laske sovitetun suoran nollapaineen lämpötila $\\theta_0$.\n\nVastauskenttään tulee kohdan b) tulos celsiusasteina.",
+      "text": "Suljetun pullon ilman paine mitattiin viidessä lämpötilassa. Paineen lukeman epävarmuus on $\\pm 1{,}0\\,\\text{kPa}$. Pisteisiin sovitettu paras suora kulkee pisteiden keskipisteen $(\\theta_{\\text{ka}}, p_{\\text{ka}})$ kautta. Sen kulmakerroin on tietokoneella laskettuna $0{,}363\\,\\tfrac{\\text{kPa}}{{}^\\circ\\text{C}}$.\n\na) Laske taulukon keskipiste $(\\theta_{\\text{ka}}, p_{\\text{ka}})$. Keskipisteen koordinaatit ovat lämpötilojen ja paineiden keskiarvot.\n\nb) Laske sovitetun suoran nollapaineen lämpötila $\\theta_0$.\n\nVastauskenttään tulee kohdan b) tulos celsiusasteina.",
       "answer": -274,
       "unit": "°C",
       "tolerance": 0.02,
@@ -206,7 +206,7 @@
         "data",
         "reasoning"
       ],
-      "text": "Esimerkkiaineisto: kaksi ryhmää tutki samaa suljetun pullon ilman painemittausta. Paineen lukeman epävarmuus on $\\pm 1{,}0\\,\\text{kPa}$. Ryhmä A sovitti suoran kaikkiin kuuteen pisteeseen. Nollapaineen lämpötilaksi tuli $-270\\,{}^\\circ\\text{C}$. Ryhmä B käytti vain kahta alinta lämpötilaa, $20\\,{}^\\circ\\text{C}$ ja $35\\,{}^\\circ\\text{C}$. Se piirsi suoran niiden kautta.\n\na) Laske ryhmän B nollapaineen lämpötila $\\theta_0$.\n\nb) Selitä, miksi ryhmän B tulos eroaa ryhmän A tuloksesta.\n\nVastauskenttään tulee kohdan a) tulos celsiusasteina.",
+      "text": "Kaksi ryhmää tutki samaa suljetun pullon ilman painemittausta. Paineen lukeman epävarmuus on $\\pm 1{,}0\\,\\text{kPa}$. Ryhmä A sovitti suoran kaikkiin kuuteen pisteeseen. Nollapaineen lämpötilaksi tuli $-270\\,{}^\\circ\\text{C}$. Ryhmä B käytti vain kahta alinta lämpötilaa, $20\\,{}^\\circ\\text{C}$ ja $35\\,{}^\\circ\\text{C}$. Se piirsi suoran niiden kautta.\n\na) Laske ryhmän B nollapaineen lämpötila $\\theta_0$.\n\nb) Selitä, miksi ryhmän B tulos eroaa ryhmän A tuloksesta.\n\nVastauskenttään tulee kohdan a) tulos celsiusasteina.",
       "answer": -302,
       "unit": "°C",
       "tolerance": 0.02,
@@ -251,7 +251,7 @@
         "error",
         "data"
       ],
-      "text": "Esimerkkiaineisto: ryhmä lämmitti pulloon suljettua ilmaa ja mittasi paineen neljässä lämpötilassa. Paineen lukeman epävarmuus on $\\pm 0{,}5\\,\\text{kPa}$. Ryhmä epäilee, että pullon korkki vuotaa. Ryhmä piirsi suoran taulukon ensimmäisen ja viimeisen pisteen kautta. Se jatkoi suoraa kohtaan $p = 0$.\n\na) Laske ryhmän saama nollapaineen lämpötila $\\theta_0$.\n\nb) Tukeeko taulukko epäilyä? Perustele kulmakertoimien avulla. Selitä, miksi vuoto vääristää tulosta.\n\nVastauskenttään tulee kohdan a) tulos celsiusasteina.",
+      "text": "Ryhmä lämmitti pulloon suljettua ilmaa ja mittasi paineen neljässä lämpötilassa. Paineen lukeman epävarmuus on $\\pm 0{,}5\\,\\text{kPa}$. Ryhmä epäilee, että pullon korkki vuotaa. Ryhmä piirsi suoran taulukon ensimmäisen ja viimeisen pisteen kautta. Se jatkoi suoraa kohtaan $p = 0$.\n\na) Laske ryhmän saama nollapaineen lämpötila $\\theta_0$.\n\nb) Tukeeko taulukko epäilyä? Perustele kulmakertoimien avulla. Selitä, miksi vuoto vääristää tulosta.\n\nVastauskenttään tulee kohdan a) tulos celsiusasteina.",
       "answer": -370,
       "unit": "°C",
       "tolerance": 0.02,
@@ -284,7 +284,7 @@
     {
       "id": "fy3-13-L2-08",
       "level": 2,
-      "text": "Esimerkkiaineisto: suljetun jäykän pullon ilman paine mitattiin viidessä lämpötilassa. Jokaisen paineen lukeman epävarmuus on $\\Delta p = 1{,}0\\,\\text{kPa}$. Lämpötilan epävarmuus on niin pieni, että se jätetään huomiotta.\n\nMinkä seuraavista päätelmistä taulukon aineisto tukee?",
+      "text": "Suljetun jäykän pullon ilman paine mitattiin viidessä lämpötilassa. Jokaisen paineen lukeman epävarmuus on $\\Delta p = 1{,}0\\,\\text{kPa}$. Lämpötilan epävarmuus on niin pieni, että se jätetään huomiotta.\n\nMinkä seuraavista päätelmistä taulukon aineisto tukee?",
       "kind": [
         "data",
         "reasoning"
@@ -392,7 +392,7 @@
         "data",
         "reasoning"
       ],
-      "text": "Esimerkkiaineisto: kaksi ryhmää määritti absoluuttisen nollapisteen suljetun kaasun paineesta. Kumpikin mittasi paineen kahdessa lämpötilassa. Paineen epävarmuus on kummassakin $\\pm 1{,}0\\,\\text{kPa}$. Lämpötilan epävarmuus jätetään huomiotta. Jyrkin ääriviiva kulkee alemman pisteen epävarmuusjanan alapään ja ylemmän pisteen epävarmuusjanan yläpään kautta. Loivin kulkee päinvastoin.\n\na) Laske kummankin sarjan jyrkimmän ja loivimman ääriviivan nollapaineen lämpötila. Laske niiden avulla epävarmuus $\\Delta\\theta_0$.\n\nb) Päättele laskujesi perusteella, miten mittausalueen leveys vaikuttaa epävarmuuteen. Tarkista, sopiiko kummankin sarjan tulos yhteen arvon $-273{,}15\\,{}^\\circ\\text{C}$ kanssa.\n\nVastauskenttään tulee sarjan B epävarmuus $\\Delta\\theta_0$ kohdasta a) celsiusasteina.",
+      "text": "Kaksi ryhmää määritti absoluuttisen nollapisteen suljetun kaasun paineesta. Kumpikin mittasi paineen kahdessa lämpötilassa. Paineen epävarmuus on kummassakin $\\pm 1{,}0\\,\\text{kPa}$. Lämpötilan epävarmuus jätetään huomiotta. Jyrkin ääriviiva kulkee alemman pisteen epävarmuusjanan alapään ja ylemmän pisteen epävarmuusjanan yläpään kautta. Loivin kulkee päinvastoin.\n\na) Laske kummankin sarjan jyrkimmän ja loivimman ääriviivan nollapaineen lämpötila. Laske niiden avulla epävarmuus $\\Delta\\theta_0$.\n\nb) Päättele laskujesi perusteella, miten mittausalueen leveys vaikuttaa epävarmuuteen. Tarkista, sopiiko kummankin sarjan tulos yhteen arvon $-273{,}15\\,{}^\\circ\\text{C}$ kanssa.\n\nVastauskenttään tulee sarjan B epävarmuus $\\Delta\\theta_0$ kohdasta a) celsiusasteina.",
       "answer": 10.7,
       "unit": "°C",
       "tolerance": 0.03,
@@ -435,7 +435,7 @@
         "data",
         "reasoning"
       ],
-      "text": "Esimerkkiaineisto: suljetun pullon ilman paine mitattiin viidessä lämpötilassa kaasulämpömittarin kalibroimiseksi. Pullo vietiin pakastimeen. Sen paineeksi luettiin $94{,}0\\,\\text{kPa}$. Paineen lukeman epävarmuus on $\\pm 1{,}0\\,\\text{kPa}$. Oleta, että paine on lämpötilan lineaarinen funktio myös taulukon alueen ulkopuolella.\n\na) Määritä pakastimen lämpötila $\\theta$ kalibrointisuoralla. Laske suoran kulmakerroin taulukon ensimmäisestä ja viimeisestä pisteestä.\n\nb) Laske painelukeman epävarmuudesta $\\pm 1{,}0\\,\\text{kPa}$ johtuva lämpötilan epävarmuus.\n\nc) Perustele, miksi tulos on ekstrapolointia. Perustele myös, miksi se on silti luotettavampi kuin nollapisteen määritys samalla suoralla.\n\nVastauskenttään tulee kohdan a) tulos celsiusasteina.",
+      "text": "Suljetun pullon ilman paine mitattiin viidessä lämpötilassa kaasulämpömittarin kalibroimiseksi. Pullo vietiin pakastimeen. Sen paineeksi luettiin $94{,}0\\,\\text{kPa}$. Paineen lukeman epävarmuus on $\\pm 1{,}0\\,\\text{kPa}$. Oleta, että paine on lämpötilan lineaarinen funktio myös taulukon alueen ulkopuolella.\n\na) Määritä pakastimen lämpötila $\\theta$ kalibrointisuoralla. Laske suoran kulmakerroin taulukon ensimmäisestä ja viimeisestä pisteestä.\n\nb) Laske painelukeman epävarmuudesta $\\pm 1{,}0\\,\\text{kPa}$ johtuva lämpötilan epävarmuus.\n\nc) Perustele, miksi tulos on ekstrapolointia. Perustele myös, miksi se on silti luotettavampi kuin nollapisteen määritys samalla suoralla.\n\nVastauskenttään tulee kohdan a) tulos celsiusasteina.",
       "answer": -17.5,
       "unit": "°C",
       "tolerance": 0.03,

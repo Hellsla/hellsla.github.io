@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ff2b281d95d55b1f
+CONTENT-HASH: 5ced1989809b1ca6
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solution block of 13-18 and 13-19 — the heading "Kuvaajan lukeminen" names a graph, but the task shows a figure — use "Kuvan lukeminen".
-- [Minor] 13-18 solution — x₂ = 70,0 cm with reading accuracy ±1 cm suggests more precision than the reading; "noin 70 cm" would be consistent (answer tolerance unaffected).
-- [Minor] 13-17 feedback — "13,0 cm:stä" is correct, and the long sentences in the feedback could be split, but nothing is unclear.
+- [Minor] aligned Kaava blocks — rows with stacked fractions sit tight against the next row (the fraction bar nearly touches the line below); legible, only subtle spacing — optional: a little more row spacing in the shared aligned-block style.
 
 ## Checked
-- contact-8 (exercise captures #85–#96) for layout and text.
-- open-exercises-L2-1280-12: setup-q (spots at their true places, L dimension line, LaTeX labels in Finnish, decimal comma) and the solution's opening rows.
-- spectrum-q in contact-8 (#92/#93): scale, edges, labels in Finnish.
-- Text of every task in the packet: clear short sentences, one instruction per sentence, key terms (hilavakio, viivatiheys, keskimaksimi) used consistently, "$2{,}00\,\text{m}$:n" case forms correct, data tables with LaTeX headers.
+- fy7-13 captures open-exercises-1280-3, -5 and open-exercises-L2-1280-2, -3, -4, -12 (Kaava blocks of 13-11 and 13-12: five-row aligned blocks, equals signs aligned; unchanged one-line Kaava rows beside them).
+- Delta: the changed Kaava blocks render as aligned display blocks; the surrounding Periaate/Muunnokset/Sijoitus layout survived; no clipping or overflow, units and decimal commas as before.
+- The 13-12 Kaava block was not matched to a capture of every changed solution; the other changed blocks use the same markup.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

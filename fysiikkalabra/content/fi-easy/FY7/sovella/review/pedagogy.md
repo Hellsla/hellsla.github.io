@@ -1,22 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 7627be825e67e9d3
+CONTENT-HASH: 97c516b0e2108e09
 
 ## Blocking
 None.
 
 ## Polish
-- Workload: 5 tasks, 83 points, 25 parts (16-17 points each). Each task is 25-35 min, so the set is about 2.5 h; heavy for a 2 op course. Consider trimming one part from s3 (a/b/c overlap) and s4 (three topics: blackbody, fibre, thin film).
-- s5 a: the prompt says "kaikkiin kuuteen pisteeseen sopii sama origon kautta kulkeva suora". That gives away the model and the fit; the axes choice (k lambda against sin theta) is then the only transfer. Say only "Muodosta mittauksista kuvaaja, josta voit määrittää hilan ominaisuuden" and let the student choose the linearisation.
-- s1 text names "nopeusvalitsin" and "analysointimagneetti" and explains each role; s4 c says "heijastuu kokonaan". Acceptable as context, but the student's model choice (E : B, evB = mv²/r, total reflection) is partly named. Use plainer wording in the prompt.
-- s3 has no source to interpret (no figure, table, or graph); it is pure computation plus judgement. s3 d rubric asks for the mass of aluminium (20 t, 610 t) though the prompt does not ask for it; add "arvioi myös materiaalin määrä".
-- s2 d rubric point 3 (eddy-current drag with the lamp off) is a fair real effect but beyond what the chapter forces; make clear in the solution that bearing friction is also present, so not "no braking" but "small extra braking".
-- Rubric points are tagged by competency; s4 a and s2 a graph_read rows are good. Coverage gap "graph building" is closed by s5 a (5 p), though thinly; fine.
+1. fy7-s3 e) solution, Järkevyys: the last paragraphs are garbled. "Voima on siis noin 710-kertainen: 8,53 : 3,97 ≈ 2,1 kertaa johtimen paino" mixes two ratios (short circuit against normal use, short circuit against weight) in one sentence, and a stray paragraph break splits the check. Split it into: current 27 times larger, force 710 times larger; then, separately, 2,1 times the weight.
+2. fy7-s3 Yleisiä virheitä, last item ("virtaa ei korota toiseen potenssiin ...") does not name a mistake a student makes and reads as a reason. Rewrite it as the mistake: "Voimaa pidetään suoraan verrannollisena virtaan, vaikka sekä kenttä että voima riippuvat virrasta."
+3. Workload: five tasks of five parts (about 85 points) is a lot for a 2 op course in fi-easy. fy7-s4 joins a spectrum, a fibre, a thermocouple and a thin film. Consider dropping s4 a) or e), or flagging a recommended subset.
+4. fy7-s2 c) Kaava introduces the constant κ = 28NBA/(√2 D) with no number behind it. It is correct, but heavy for fi-easy. A shorter line, "U ∝ v, joten U_valo : U = v_min : v", would do.
+5. fy7-s4 a) text and part a) ask for celsius degrees but the Kaava line only mentions the conversion in prose. Put t = T − 273 into the symbolic chain.
+6. fy7-s5 a) "Mallin mukaan ... origon kautta kulkeva suora" gives the model away. The student only picks the axes (kλ and sin θ), which is still real work, but the sentence could say "sopii sama suora" without "origon kautta".
 
 ## Checked
-- All five tasks: authentic situation, connected parts rising in demand (read, calculate, evaluate a claim), most end with an "Arvioi" part with a mistaken claim (s1 e, s2 d, s3 d, s4 d, s5 d/e) which is good independent reasoning.
-- Rubrics: points sum to part points, criteria observable, no points for irrelevant things; shared keys used.
-- Solutions: seven-step form, symbols before numbers, reasonableness; accepted alternatives listed.
-- Common mistakes are real (kV not converted, half period, sqrt2 multiplied, radius vs diameter difference, wrong phase-flip count).
-- Variety: particle in fields, generator, transmission and wires, spectrum and fibre and film, grating data; sources labelled.
-- docs/coverage/FY7.md: only gap "graph building" is real and addressed by s5 a.
-- fi-easy language: short sentences, terms explained, units in LaTeX.
+- Kaava step (queue 8g): every Kaava line goes from the basic law, to the derived formula, to symbolic simplification, and only then to Sovella. Examples: s1 b W=eU → ½mv² → v; s2 e η → P=Fv → F; s3 a R, P=UI → P_h; s3 c U=U_R+U_k; s4 e Δs=2nd → d. The substitution uses the last symbolic form, and every Sijoitus row starts with the quantity. This holds throughout.
+- Independent application: authentic, unfamiliar contexts (ion implanter, hub dynamo, mine line, rolling-mill pyrometer, hydrogen lamp). Every task has data or a graph to read, connected parts of rising demand, and an evaluate-a-claim part (s1 e, s2 d, s3 d, s4 d, s5 d and e). No heading names the model.
+- Rubrics: specific, with no points for irrelevant things. Points match the criteria, and "Hyväksytään myös" is sensible.
+- Common mistakes are real (kV not converted, half-period as period, length 25 km instead of 2·25 km, wrong film reflection rule).
+- Variety: a graph task (s5), an uncertainty task (s4 d, s5 d), a force-diagram answer (s1 a), and word and calc parts mixed.
+- Prior-knowledge fit: the links point to the right chapters.
+- Language: clear Finnish, plain sentences.
+- Not judged: docs/coverage/FY7.md is not in the packet, so its gaps are unchecked.

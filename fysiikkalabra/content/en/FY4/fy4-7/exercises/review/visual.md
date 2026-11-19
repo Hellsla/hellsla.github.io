@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 7757653e106c92be
+CONTENT-HASH: 9b74a742cd52d2d6
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] sol-fy4-7-L2-10-390.png (Substitution, parts c and d) — the sub-parts run on as lines with no paragraph gap, and the part d) conclusions form a ~120-word block — give "The data does not show…" and "The data says nothing about…" their own paragraphs.
+- [Minor] solutions.md, bounce task Formula: "From the energy balance, the energy changed is ..." names a balance that is not written out ($E_\text{mech,0} = E_\text{mech,4} + \Delta E$); writing it once, as the other tasks of this set now do, would make the line self-contained.
+- [Minor] solutions.md, stopping-distance task Formula: the paragraph is long (about 90 words) before the display block; within the limit, optional to break after the reaction-distance sentence.
 
 ## Checked
-- Delta (md-paragraphs): opened shots/sol-fy4-7-L1-06, L1-08 and L1-09 in full, sol-fy4-7-L2-10 in 1800 px parts 3-5 (parts 1-2, task and Given, not opened), and the closing part of sol-fy4-7-L3-02, L3-03, L3-04 and L3-05 (-390.png; their earlier parts not opened). L1: model answer plus one rejected claim per paragraph. L2-10: Substitution, Answer and Reasonableness break at sensible points. L3: the reasonableness remarks split from the check. Spacing even, nothing clipped. Words unchanged. Hash re-run before writing: unchanged.
+- Delta (solutions.md, five Formula lines), judged from the text. The energy balance, $E_\text{mech} = E_\text{k} + E_\text{p}$ and the definition of $E_\text{k}$ now come before the combined forms; the symbolic step is complete ($\Delta E = mg(h_0 - h_4)$, $s_\text{b} = -v_0^2/(2a)$ derived in an aligned block with equals signs in one column, $m = 2k$ from the slope of the $(v^2, E_\text{k})$ graph). Substitution rows unchanged and consistent. Notation uniform ($E_\text{k}$, $E_\text{p}$, $E_\text{mech}$, \tfrac inline, \dfrac for fractions).
+- No per-solution captures exist (en: text and packet). Opened content/en/FY4/fy4-1/review/shots/fy4-1-open-exercises-L2-1280-6.png as the layout reference for solution blocks; changed lines are inline chains of the same kind. Hash unchanged at the end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish (English) 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

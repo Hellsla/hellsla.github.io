@@ -1,20 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 727ba94e22099e77
-SCOPE: delta added-exercise from 0afbb0e960a7159d base 5b3ca4f81c77
+CONTENT-HASH: 81b5cf5d2daaa058
 
 ## Blocking
 
 ## Polish
-- exercises.json (fy8-12-L2-09, text) — the task ends "Anna vastaus pulsseina minuutissa", while the unit field is 1/min. The two are physically the same because a pulse count has no dimension. For consistency with L1-07, the sentence could say "yksikössä $\tfrac{1}{\text{min}}$". This is optional.
-- solutions.md (fy8-12-L2-09, Periaate) — "Gammasäteily vaimenee tasaisesti" could be misread as linear decay. The next clause states the right rule (each half-value layer halves the rate), so this is C, not an error. "vaimenee samassa suhteessa" would be clearer.
+- solutions.md (fy8-12-L1-07, L3-02 Järkevyys): $\text{min}^{-1}$ now sits next to $\tfrac{1}{\text{s}}$ in the same sentence ("$1620\,\text{min}^{-1}$ on noin $27\,\tfrac{1}{\text{s}}$"). This is physically correct. Writing both rates the same way ($\text{s}^{-1}$) would only be more consistent. Optional.
 
 ## Checked
-- Hash 727ba94e22099e77 at the start and the end.
-- The figure's data match the tasks: figures.py takes R0 = 800 and d½ = 12 mm from lesson-answers.py (CHK_R0, CHK_D). Readings of 400 at 12 mm, 200 at 24 mm and 50 at 48 mm are all correct values of the curve.
-- I recomputed L2-09 myself: $800 \cdot 0{,}5^{2{,}5} = 800 \cdot 0{,}17678 = 141{,}42$ per minute, the same as answers.py and the stored 141,4. Tolerance 0,02 accepts 138,6–144,2, which includes the two-figure answer 140 (−1,0 %).
-- L2-09 reasonableness check: 200 at 24 mm and 100 at 36 mm, and 141 lies between them. The check is correct, and it claims only "between", not linear interpolation.
-- I recomputed L3-07: the allowed rate is $800/50 = 16$ per minute. $d = 12\,\text{mm}\cdot\ln 50/\ln 2 = 12 \cdot 3{,}9120/0{,}69315 = 67{,}73\,\text{mm}$, the same as answers.py. Every intermediate value is correct.
-- L3-07 conclusion and rounding: 48 mm gives $800 \cdot (1/2)^4 = 50 > 16$, so 48 mm is not enough, as the solution says. Rounding up to 68 mm is right for an "enintään" limit on the rate (P7), and two figures follow the 12 mm read off the graph. Tolerance 0,02 accepts 66,6–69,4.
-- L3-07 bracket check: $1/32 > 1/50 > 1/64$, so the thickness lies between 60 mm and 72 mm. This is a real check of the model.
-- Model and conditions: the law is used only for gamma radiation and net rates, and the background is said to be removed. Extrapolating past the graph's 48 mm uses the exponential law the lesson states. The narrow-beam caveat is a level-appropriate simplification (C).
-- Both solutions are complete. Each has all seven parts, with the formula solved in symbols before substitution and the graph reading shown.
+- Hash 81b5cf5d2daaa058 (`reviews.py hash fy8-12 --exercises --lang fi-easy`) at the start and the end.
+- The whole diff is covered by a script. It joined every removed line and every added line, collapsed the whitespace and swapped `\tfrac{1}{\text{min}}` for `\text{min}^{-1}` and `"1/min"` for `"min⁻¹"`. After that, the removed text and the added text are identical (7208 characters each). No word, number, sign or formula changed. The rest of the diff only cuts paragraphs and adds blank lines.
+- Unit change: $\tfrac{1}{\text{min}} \to \text{min}^{-1}$ in L1-07 (task text and unit field) and in L2-09 (unit field). The two forms are the same unit. The answers 1530 and 141,4 and the tolerances 0,02 are unchanged. The task text and the unit field now agree in L1-07.
+- I recomputed the numbers the changed lines touch: L1-07 $1215/0{,}75\,\text{min} - 90\,\text{min}^{-1} = 1530\,\text{min}^{-1}$. L3-02 $d_{1/2} = 11{,}0\,\text{mm}\cdot\ln 2/\ln(2370/600) = 5{,}55\,\text{mm}$ and $d = 34{,}99\,\text{mm} \to 35\,\text{mm}$. L2-09 $800\cdot 0{,}5^{2{,}5} = 141{,}4$. L1-05 $hc/E = 9{,}8412\cdot 10^{-8}\,\text{m}$. All four agree with answers.py and the solutions.
+- Split paragraphs (L2 Järkevyys moved to its own paragraph; the beta/gamma model answer; the RIVM a, c, d model answers; L3 d) uncertainty; Comptonin/parinmuodostus b, c): the words are in the same order and no causal step was lost. Each "koska" stays in the same paragraph as its claim.
+- L1-05: the blank lines inside the `$$ … \begin{aligned}` block are the same as in the Finnish version. In the fi-easy preview they render as one display block, so the physics shown is unchanged.

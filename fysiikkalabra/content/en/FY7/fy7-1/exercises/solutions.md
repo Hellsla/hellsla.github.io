@@ -22,7 +22,7 @@
 **Given:** horizontal component of the Earth's field $B_\text{h} = 14\,\mu\text{T}$ towards the north, field of the magnet $B_\text{m} = 48\,\mu\text{T}$ towards the east
 **Find:** magnitude $B$ of the horizontal total field in microtesla
 **Principle:** The total field is the vector sum of the fields. Fields pointing north and east are perpendicular to each other, so they are the legs of a right-angled triangle and the total field is the hypotenuse.
-**Formula:** $B = \sqrt{B_\text{h}^2 + B_\text{m}^2}$
+**Formula:** $$\begin{aligned} \overline{B} &= \overline{B}_\text{h} + \overline{B}_\text{m} \\ B^2 &= B_\text{h}^2 + B_\text{m}^2 \\ B &= \sqrt{B_\text{h}^2 + B_\text{m}^2} \end{aligned}$$
 **Conversions:** Not needed: both fields are in microtesla.
 **Substitution:** $B = \sqrt{(14\,\mu\text{T})^2 + (48\,\mu\text{T})^2} = \sqrt{196 + 2304}\,\mu\text{T} = \sqrt{2500}\,\mu\text{T} = 50\,\mu\text{T}$
 **Answer:** $50\,\mu\text{T}$, two significant figures like the fields.
@@ -56,7 +56,7 @@ The same follows from the poles: the north pole of the magnet repels the north e
 **Given:** components from the magnetometer $B_x = 12\,\mu\text{T}$, $B_y = -5.0\,\mu\text{T}$ and $B_z = -48\,\mu\text{T}$, perpendicular to each other
 **Find:** magnetic flux density $B$ of the Earth's magnetic field in microtesla
 **Principle:** The field is the vector sum of its components. The sum of two perpendicular components is given by the Pythagorean theorem, and when a third perpendicular component is added, the same theorem gives the sum of the squares of the three components. The sign gives only the direction, and squaring removes it.
-**Formula:** $B^2 = B_x^2 + B_y^2 + B_z^2$, so $B = \sqrt{B_x^2 + B_y^2 + B_z^2}$
+**Formula:** $$\begin{aligned} \overline{B} &= \overline{B}_x + \overline{B}_y + \overline{B}_z \\ B^2 &= B_x^2 + B_y^2 + B_z^2 \\ B &= \sqrt{B_x^2 + B_y^2 + B_z^2} \end{aligned}$$
 **Conversions:** Not needed: all components are in microtesla.
 **Substitution:** $$\begin{aligned} B^2 &= (12\,\mu\text{T})^2 + (-5.0\,\mu\text{T})^2 \\ &+ (-48\,\mu\text{T})^2 \\ &= 2473\,(\mu\text{T})^2 \end{aligned}$$, so $B = \sqrt{2473}\,\mu\text{T} = 49.73\,\mu\text{T}$
 **Answer:** $50\,\mu\text{T}$, two significant figures like the components $12\,\mu\text{T}$ and $48\,\mu\text{T}$.
@@ -76,7 +76,7 @@ The same follows from the poles: the north pole of the magnet repels the north e
 **Given:** at a distance of $10\,\text{cm}$ the angle of the needle is $\theta_1 = 60^\circ$, at a distance of $20\,\text{cm}$ the angle is $\theta_2 = 10^\circ$; the field of the magnet is perpendicular to the horizontal component $B_\text{h}$ of the Earth's field
 **Find:** ratio of the fields $k = B_1 : B_2$, a plain number
 **Principle:** When the field of the magnet is perpendicular to the horizontal component of the Earth's field, the angle of the needle satisfies $\tan\theta = B_\text{m} : B_\text{h}$, so $B_\text{m} = B_\text{h}\tan\theta$. The Earth's field is the same at both positions, so it cancels from the ratio and need not be known.
-**Formula:** $B_1 = B_\text{h}\tan\theta_1$ and $B_2 = B_\text{h}\tan\theta_2$, so $k = \dfrac{B_1}{B_2} = \dfrac{\tan\theta_1}{\tan\theta_2}$
+**Formula:** $$\begin{aligned} \tan\theta_1 &= \frac{B_1}{B_\text{h}} \\ \tan\theta_2 &= \frac{B_2}{B_\text{h}} \\ k &= \frac{B_1}{B_2} \\ &= \frac{B_\text{h}\tan\theta_1}{B_\text{h}\tan\theta_2} \\ &= \frac{\tan\theta_1}{\tan\theta_2} \end{aligned}$$
 **Conversions:** Not needed: the ratio is a plain number, and the distances do not appear in the calculation.
 **Substitution:** $k = \dfrac{\tan 60^\circ}{\tan 10^\circ} = \dfrac{1.732}{0.1763} = 9.82$
 **Answer:** about $9.8$ times, to two significant figures like the angles $60^\circ$ and $10^\circ$.
@@ -88,7 +88,7 @@ The same follows from the poles: the north pole of the magnet repels the north e
 **Principle:** Outside the magnet the field lines run from the north pole to the south pole, so at the side of the magnet at the level of its middle the field is parallel to the magnet and points from the north-pole end to the south-pole end, that is towards the south.
 
 It is opposite to the Earth's field, so the fields are added together with their signs. The needle turns to point along the total field, so the sign of the component tells whether the needle points north or south.
-**Formula:** with north positive, $B_y = B_\text{h} - B_\text{m}$
+**Formula:** $$\begin{aligned} \overline{B} &= \overline{B}_\text{h} + \overline{B}_\text{m} \\ B_y &= B_\text{h} + (-B_\text{m}) \\ &= B_\text{h} - B_\text{m} \end{aligned}$$
 **Conversions:** Not needed: both fields are in microtesla.
 **Substitution:** $B_y = 14\,\mu\text{T} - 25\,\mu\text{T} = -11\,\mu\text{T}$
 **Answer:** $-11\,\mu\text{T}$, that is $11\,\mu\text{T}$ towards the south, two significant figures like the fields. The sign is negative, so the north end of the needle points south: the needle has turned round.
@@ -109,7 +109,7 @@ When the clip cools, the domains form again but in random directions, so the cli
 **Given:** Helsinki $B_1 = 53\,\mu\text{T}$ and $I_1 = 74^\circ$, Longyearbyen $B_2 = 55\,\mu\text{T}$ and $I_2 = 82.5^\circ$ below the horizontal
 **Find:** ratio of the horizontal components $k = B_\text{h1} : B_\text{h2}$, a plain number, and the reason why a compass works worse
 **Principle:** A compass needle turns only in the horizontal plane, so it is steered only by the horizontal component of the field, $B_\text{h} = B\cos I$. The more steeply the field points into the ground, the smaller the horizontal part of it.
-**Formula:** $k = \dfrac{B_\text{h1}}{B_\text{h2}} = \dfrac{B_1\cos I_1}{B_2\cos I_2}$
+**Formula:** $$\begin{aligned} B_\text{h1} &= B_1\cos I_1 \\ B_\text{h2} &= B_2\cos I_2 \\ k &= \frac{B_\text{h1}}{B_\text{h2}} \\ &= \frac{B_1\cos I_1}{B_2\cos I_2} \end{aligned}$$
 **Conversions:** Not needed: both fields are in microtesla, and the unit cancels.
 **Substitution:** $k = \dfrac{53\,\mu\text{T} \cdot \cos 74^\circ}{55\,\mu\text{T} \cdot \cos 82.5^\circ} = \dfrac{14.6\,\mu\text{T}}{7.18\,\mu\text{T}} = 2.03$
 **Answer:** about $2.0$ times, two significant figures like the fields $53\,\mu\text{T}$ and $55\,\mu\text{T}$. In Longyearbyen the field is almost vertical, so its horizontal component is only about half of the value in Helsinki.
@@ -152,7 +152,7 @@ The correct option is the one that deduces the name of the pole from the attract
 **Principle:** The field of the magnet points east and the horizontal component of the Earth's field north, so they are perpendicular to each other and the angle of the needle satisfies $\tan\theta = B_\text{m} : B_\text{h}$.
 
 The Earth's field is the same at all points, so the field at each point is obtained from the angle. In an inversely proportional field, doubling the distance would halve the field.
-**Formula:** $B_\text{m} = B_\text{h}\tan\theta$
+**Formula:** $$\begin{aligned} \tan\theta &= \frac{B_\text{m}}{B_\text{h}} \\ B_\text{m} &= B_\text{h}\tan\theta \end{aligned}$$
 **Conversions:** Not needed: the result is obtained in microtesla like $B_\text{h}$.
 **Substitution:** a) $B_\text{m}(12\,\text{cm}) = 14\,\mu\text{T} \cdot \tan 46^\circ = 14\,\mu\text{T} \cdot 1.036 = 14.5\,\mu\text{T}$. b) $B_\text{m}(8.0\,\text{cm}) = 14\,\mu\text{T} \cdot \tan 73^\circ = 14\,\mu\text{T} \cdot 3.271 = 45.8\,\mu\text{T}$ and $B_\text{m}(16\,\text{cm}) = 14\,\mu\text{T} \cdot \tan 24^\circ = 14\,\mu\text{T} \cdot 0.4452 = 6.23\,\mu\text{T}$, so the ratio is $\dfrac{45.8\,\mu\text{T}}{6.23\,\mu\text{T}} = 7.3$
 **Answer:** a) $14.5\,\mu\text{T}$, that is, $15\,\mu\text{T}$ with two significant figures, because the angle $46^\circ$ is known to two figures.
@@ -166,7 +166,7 @@ The field decreases with increasing distance: $45.8\,\mu\text{T}$, $14.5\,\mu\te
 **Given:** components of the magnetometer $(B_x;\ B_y;\ B_z)$: window $(11;\ -5.0;\ -47)\,\mu\text{T}$, sofa $(12;\ -4.0;\ -49)\,\mu\text{T}$ and desk $(31;\ 14;\ -62)\,\mu\text{T}$; the components are perpendicular to each other, the Earth's field in the room is about $50\,\mu\text{T}$
 **Find:** total field $B$ in each place, especially next to the desk, and the place where there is iron nearby
 **Principle:** The field is the vector sum of its components. The square root of the sum of the squares of perpendicular components is the magnitude of the total field, and the sign disappears in squaring. Near iron or steel the field differs from the Earth's field, because iron becomes magnetised and distorts the field.
-**Formula:** $B = \sqrt{B_x^2 + B_y^2 + B_z^2}$
+**Formula:** $$\begin{aligned} \overline{B} &= \overline{B}_x + \overline{B}_y + \overline{B}_z \\ B^2 &= B_x^2 + B_y^2 + B_z^2 \\ B &= \sqrt{B_x^2 + B_y^2 + B_z^2} \end{aligned}$$
 **Conversions:** Not needed: all components are in microtesla.
 **Substitution:** Window: $B = \sqrt{11^2 + (-5.0)^2 + (-47)^2}\,\mu\text{T} = \sqrt{2355}\,\mu\text{T} = 48.5\,\mu\text{T}$. Sofa: $B = \sqrt{12^2 + (-4.0)^2 + (-49)^2}\,\mu\text{T} = \sqrt{2561}\,\mu\text{T} = 50.6\,\mu\text{T}$. Desk: $B = \sqrt{31^2 + 14^2 + (-62)^2}\,\mu\text{T} = \sqrt{5001}\,\mu\text{T} = 70.7\,\mu\text{T}$
 **Answer:** a) Next to the desk the total field is $71\,\mu\text{T}$, two significant figures like the components; by the window it is $49\,\mu\text{T}$ and on the sofa $51\,\mu\text{T}$.
@@ -188,7 +188,7 @@ b) There is probably iron or steel near the desk, because there the field is abo
 **Given:** towns of the table $(B;\ I)$: Helsinki $(53\,\mu\text{T};\ 74^\circ)$, Oulu $(53\,\mu\text{T};\ 76^\circ)$ and Utsjoki $(52\,\mu\text{T};\ 78^\circ)$; field of the magnet at the compass $B_\text{m} = 20\,\mu\text{T}$ towards the east
 **Find:** horizontal component $B_\text{h}$ and turning angle $\theta$ of the needle in each town, and an explanation for the growth of the angle; the angle in Utsjoki is the value for the answer field
 **Principle:** The needle turns only in the horizontal plane, so of the Earth's field it is steered by the horizontal component $B_\text{h} = B\cos I$. The field of the magnet towards the east is perpendicular to the horizontal component pointing north, so $\tan\theta = B_\text{m} : B_\text{h}$. The smaller the horizontal component, the greater the angle from the same magnet.
-**Formula:** $B_\text{h} = B\cos I$ and $\theta = \tan^{-1}\dfrac{B_\text{m}}{B_\text{h}}$
+**Formula:** $$\begin{aligned} B_\text{h} &= B\cos I \\ \tan\theta &= \frac{B_\text{m}}{B_\text{h}} \\ \theta &= \tan^{-1}\frac{B_\text{m}}{B_\text{h}} \end{aligned}$$
 **Conversions:** Not needed: all fields are in microtesla.
 **Substitution:** Helsinki: $B_\text{h} = 53\,\mu\text{T} \cdot \cos 74^\circ = 14.6\,\mu\text{T}$ and $\theta = \tan^{-1}\dfrac{20\,\mu\text{T}}{14.6\,\mu\text{T}} = 53.9^\circ$. Oulu: $B_\text{h} = 53\,\mu\text{T} \cdot \cos 76^\circ = 12.8\,\mu\text{T}$ and $\theta = \tan^{-1}\dfrac{20\,\mu\text{T}}{12.8\,\mu\text{T}} = 57.3^\circ$. Utsjoki: $B_\text{h} = 52\,\mu\text{T} \cdot \cos 78^\circ = 10.8\,\mu\text{T}$ and $\theta = \tan^{-1}\dfrac{20\,\mu\text{T}}{10.8\,\mu\text{T}} = 61.6^\circ$
 **Answer:** a) The horizontal components are $15\,\mu\text{T}$ in Helsinki, $13\,\mu\text{T}$ in Oulu and $11\,\mu\text{T}$ in Utsjoki. b) In Utsjoki the needle turns $62^\circ$ from north towards east; in Helsinki the angle is $54^\circ$ and in Oulu $57^\circ$. c) The total field is about $52\text{–}53\,\mu\text{T}$ everywhere, but the further north one goes, the more steeply the field points into the ground and the smaller the part of it that is horizontal. The needle is steered only by the horizontal component, so the same magnet turns it more in the north. A compass is therefore more sensitive to disturbances in the north, because the field that steers the needle is weaker.
@@ -202,7 +202,7 @@ The $B_\text{h} = 10.8\,\mu\text{T}$ of Utsjoki is smaller than the $20\,\mu\tex
 **Principle:** In the experiment the field of the magnet towards the east is perpendicular to the horizontal component of the Earth's field, so $\tan\theta = B_\text{m} : B_\text{h}$ and $B_\text{m} = B_\text{h}\tan\theta$. If the product $B_\text{m} r^3$ is approximately a constant $k$, the field follows the model $B_\text{m} = k : r^3$.
 
 When the magnet is turned to the north–south direction with its north pole towards the compass, the field points away from the pole, that is, south, opposite to the Earth's field. The north component is $B_\text{h} - B_\text{m}$, and it is zero when $B_\text{m} = B_\text{h}$.
-**Formula:** $B_\text{m} = B_\text{h}\tan\theta$, $k = B_\text{m} r^3$ and $B_\text{m}(r_0) = B_\text{h}$, from which $r_0 = \sqrt[3]{\dfrac{k}{B_\text{h}}}$
+**Formula:** $$\begin{aligned} \tan\theta &= \frac{B_\text{m}}{B_\text{h}} \\ B_\text{m} &= B_\text{h}\tan\theta \\ k &= B_\text{m} r^3 \\ B_\text{m}(r_0) &= B_\text{h} \\ \frac{k}{r_0^3} &= B_\text{h} \\ r_0 &= \sqrt[3]{\frac{k}{B_\text{h}}} \end{aligned}$$
 **Conversions:** Not needed: the fields are in microtesla and the distances in centimetres, so $k$ is obtained in the unit $\mu\text{T}\cdot\text{cm}^3$ and $r_0$ in centimetres.
 **Substitution:** Fields: $B_\text{m} = 36.5$; $20.8$; $15.0$; $7.13$; $4.55$ and $1.97\,\mu\text{T}$ at distances $12$; $14$; $16$; $20$; $24$ and $30\,\text{cm}$. The products $B_\text{m} r^3$ are $63.0$; $57.0$; $61.5$; $57.1$; $62.9$ and $53.1$ in the unit $10^3\,\mu\text{T}\cdot\text{cm}^3$.
 
@@ -232,7 +232,7 @@ Outside the magnet the field lines go from the north pole to the south pole and 
 **Find:** the magnitudes of the fields, the total field $B$ and the angle of deflection $\theta$ of the needle from north towards east in degrees
 **Principle:** The needle turns to point along the horizontal total field. The fields are perpendicular to each other, so the total field is the diagonal of a rectangle and its magnitude follows from the Pythagorean theorem. The side opposite the angle measured from north is the field pointing east, and the adjacent side is the field pointing north.
 **Reading the graph:** The grid lines are $5\,\mu\text{T}$ apart. The arrow $\overline{B}_\text{h}$ pointing north ends at the third horizontal line, so $B_\text{h} = 3 \cdot 5\,\mu\text{T} = 15\,\mu\text{T}$. The arrow $\overline{B}_\text{m}$ pointing east ends at the fourth vertical line, so $B_\text{m} = 4 \cdot 5\,\mu\text{T} = 20\,\mu\text{T}$.
-**Formula:** $B = \sqrt{B_\text{h}^2 + B_\text{m}^2}$ and $\tan\theta = \dfrac{B_\text{m}}{B_\text{h}}$, so $\theta = \tan^{-1}\dfrac{B_\text{m}}{B_\text{h}}$
+**Formula:** $$\begin{aligned} \overline{B} &= \overline{B}_\text{h} + \overline{B}_\text{m} \\ B^2 &= B_\text{h}^2 + B_\text{m}^2 \\ B &= \sqrt{B_\text{h}^2 + B_\text{m}^2} \\ \tan\theta &= \frac{B_\text{m}}{B_\text{h}} \\ \theta &= \tan^{-1}\frac{B_\text{m}}{B_\text{h}} \end{aligned}$$
 **Conversions:** Not needed: both fields are in microtesla, and the unit cancels in the angle.
 **Substitution:** $B = \sqrt{(15\,\mu\text{T})^2 + (20\,\mu\text{T})^2} = \sqrt{625}\,\mu\text{T} = 25\,\mu\text{T}$ and $\theta = \tan^{-1}\dfrac{20\,\mu\text{T}}{15\,\mu\text{T}} = \tan^{-1} 1.333 = 53.13^\circ$
 **Answer:** The total field is $25\,\mu\text{T}$ and the needle turns $53^\circ$ from north towards east, two significant figures like the fields read from the figure.
@@ -248,7 +248,7 @@ $$.
 **Find:** the horizontal and vertical components, the magnetic flux density $B$ in microtesla and the inclination $I$ in degrees
 **Principle:** The horizontal and vertical components are perpendicular to each other, and they are the coordinates of the arrow tip measured from its starting point. The total field is the diagonal of a rectangle, and the inclination is the angle between the field and the horizontal, whose opposite side is the vertical component.
 **Reading the graph:** The arrow tip is on the third vertical line towards the north and on the tenth horizontal line downwards, when the grid lines are $5\,\mu\text{T}$ apart. So $B_\text{h} = 3 \cdot 5\,\mu\text{T} = 15\,\mu\text{T}$ and $B_\text{v} = 10 \cdot 5\,\mu\text{T} = 50\,\mu\text{T}$.
-**Formula:** $B = \sqrt{B_\text{h}^2 + B_\text{v}^2}$ and $\tan I = \dfrac{B_\text{v}}{B_\text{h}}$, so $I = \tan^{-1}\dfrac{B_\text{v}}{B_\text{h}}$
+**Formula:** $$\begin{aligned} B^2 &= B_\text{h}^2 + B_\text{v}^2 \\ B &= \sqrt{B_\text{h}^2 + B_\text{v}^2} \\ \tan I &= \frac{B_\text{v}}{B_\text{h}} \\ I &= \tan^{-1}\frac{B_\text{v}}{B_\text{h}} \end{aligned}$$
 **Conversions:** Not needed: the components are in microtesla, and the result is wanted in microtesla.
 **Substitution:** $B = \sqrt{(15\,\mu\text{T})^2 + (50\,\mu\text{T})^2} = \sqrt{2725}\,\mu\text{T} = 52.2\,\mu\text{T}$ and $I = \tan^{-1}\dfrac{50\,\mu\text{T}}{15\,\mu\text{T}} = \tan^{-1} 3.333 = 73.3^\circ$
 **Answer:** $B = 52\,\mu\text{T}$ and $I = 73^\circ$ below the horizontal, two significant figures like the components read from the figure.

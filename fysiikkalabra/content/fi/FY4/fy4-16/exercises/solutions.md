@@ -9,7 +9,7 @@ G 686,7
 N 742,7 työntö
 a ylös
 ```
-**Kaava:** $N - mg = ma$, joten $N = m(g + a)$
+**Kaava:** Newtonin toinen laki $\Sigma F = ma$. Positiivinen suunta ylös: $\Sigma F = N - G$ ja $G = mg$, joten $N - mg = ma$ ja $N = m(g + a)$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $N = 70{,}0\,\text{kg}\cdot(9{,}81 + 0{,}80)\,\text{m/s}^2 = 70{,}0\,\text{kg}\cdot 10{,}61\,\text{m/s}^2 = 742{,}7\,\text{N}$
 **Vastaus:** $743\,\text{N}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $70{,}0\,\text{kg}$.
@@ -43,7 +43,7 @@ a alas
 v alas
 ```
 **Periaate:** Lapseen vaikuttavat paino ja kourun tukivoima. Tukivoima on kohtisuorassa liikettä vastaan eikä tee työtä, ja kitka jätetään huomiotta, joten mekaaninen energia säilyy. Kourun muodolla ei ole merkitystä, vain korkeuserolla.
-**Kaava:** Nollataso kourun loppuun: $mgh = \tfrac12 mv_2^2$, joten $v_2 = \sqrt{2gh}$
+**Kaava:** Mekaanisen energian säilyminen $E_\text{alku} = E_\text{loppu}$. Nollataso kourun loppuun: alussa $E_\text{alku} = E_\text{p} = mgh$ ja lopussa $E_\text{loppu} = E_\text{k} = \tfrac12 mv_2^2$, joten $mgh = \tfrac12 mv_2^2$, $v_2^2 = 2gh$ ja $v_2 = \sqrt{2gh}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Massaa ei tarvita, koska se supistuu pois.
 **Sijoitus:** $v_2 = \sqrt{2\cdot 9{,}81\,\text{m/s}^2\cdot 3{,}20\,\text{m}} = \sqrt{62{,}78\,\text{m}^2/\text{s}^2} = 7{,}924\,\text{m/s}$
 **Vastaus:** $7{,}92\,\text{m/s}$, kolme merkitsevää numeroa kuten korkeudessa $3{,}20\,\text{m}$.
@@ -61,7 +61,7 @@ N 100
 F_mu 8 vasen
 a vasen
 ```
-**Kaava:** $\tfrac12 mv_1^2 - \mu mg s = 0$, joten $s = \dfrac{v_1^2}{2\mu g}$
+**Kaava:** Energiaperiaate: $E_\text{k,loppu} = E_\text{k,alku} + W$, kun $E_\text{k} = \tfrac12 mv^2$. Kitkan työ on $W = -F_\mu s$ ja $F_\mu = \mu N = \mu mg$, joten $0 = \tfrac12 mv_1^2 - \mu mg s$ ja $s = \dfrac{v_1^2}{2\mu g}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Massa supistuu pois.
 **Sijoitus:** $s = \dfrac{(6{,}0\,\text{m/s})^2}{2\cdot 0{,}080\cdot 9{,}81\,\text{m/s}^2} = \dfrac{36\,\text{m}^2/\text{s}^2}{1{,}5696\,\text{m/s}^2} = 22{,}94\,\text{m}$
 **Vastaus:** $23\,\text{m}$, kaksi merkitsevää numeroa kuten nopeudessa $6{,}0\,\text{m/s}$ ja kitkakertoimessa $0{,}080$.
@@ -81,7 +81,7 @@ a 0
 akselit -8,53
 komponentit G
 ```
-**Kaava:** $y$: $N - mg\cos\alpha = 0$; $x$: $mg\sin\alpha - \mu N = 0$, joten $mg\sin\alpha = \mu mg\cos\alpha$, $\tan\alpha = \mu$ ja $\alpha = \tan^{-1}\mu$
+**Kaava:** Vakionopeus, joten $\Sigma F = 0$ molemmissa suunnissa, ja $F_\mu = \mu N$. $y$: $N - mg\cos\alpha = 0$; $x$: $mg\sin\alpha - F_\mu = 0$, joten $mg\sin\alpha = \mu N = \mu mg\cos\alpha$, $\tan\alpha = \mu$ ja $\alpha = \tan^{-1}\mu$
 **Muunnokset:** Kitkakerroin on yksikötön, ja kulma saadaan asteina laskimen asteasetuksella, joten muunnoksia ei tarvita.
 **Sijoitus:** $\alpha = \tan^{-1} 0{,}15 = 8{,}531^\circ$
 **Vastaus:** $8{,}5^\circ$, kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}15$.
@@ -98,7 +98,7 @@ G 588,6
 N 652,4 työntö
 a ylös
 ```
-**Kaava:** $N - mg = ma$, joten $a = \dfrac{N - mg}{m}$. Kun lukema on $L = \tfrac{N}{g}$, $N = Lg$ ja $a = g\left(\dfrac{L}{m} - 1\right)$
+**Kaava:** Newtonin toinen laki $\Sigma F = ma$. Positiivinen suunta ylös: $N - mg = ma$, joten $a = \dfrac{N - mg}{m}$. Kun lukema on $L = \tfrac{N}{g}$, $N = Lg$ ja $a = g\left(\dfrac{L}{m} - 1\right)$
 **Muunnokset:** Lukema muutetaan tukivoimaksi kertomalla luvulla $g$: $N = 66{,}5\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 652{,}4\,\text{N}$.
 **Sijoitus:** $a = 9{,}81\,\text{m/s}^2\cdot\left(\dfrac{66{,}5\,\text{kg}}{60{,}0\,\text{kg}} - 1\right) = 9{,}81\,\text{m/s}^2\cdot 0{,}10833 = 1{,}063\,\text{m/s}^2$
 **Vastaus:** $1{,}06\,\text{m/s}^2$ ylöspäin, kolme merkitsevää numeroa kuten massassa $60{,}0\,\text{kg}$ ja lukemassa $66{,}5\,\text{kg}$.
@@ -118,7 +118,7 @@ a alas
 akselit -12
 komponentit G
 ```
-**Kaava:** Nollataso juurelle: $$\begin{aligned} &mgL\sin\alpha \\ &- \mu mg\cos\alpha\cdot L \\ &= \tfrac12 mv_2^2 \end{aligned}$$, joten $\mu = \dfrac{gL\sin\alpha - \tfrac12 v_2^2}{gL\cos\alpha}$
+**Kaava:** Energiaperiaate, nollataso juurelle: $E_\text{alku} = E_\text{p} = mgh$, kun $h = L\sin\alpha$, ja $E_\text{loppu} = E_\text{k} = \tfrac12 mv_2^2$. Kitkan työ on $W_\mu = -F_\mu L$, ja $F_\mu = \mu N = \mu mg\cos\alpha$. Siis $E_\text{alku} + W_\mu = E_\text{loppu}$, eli $$\begin{aligned} &mgL\sin\alpha \\ &- \mu mg\cos\alpha\cdot L \\ &= \tfrac12 mv_2^2 \end{aligned}$$, joten $\mu = \dfrac{gL\sin\alpha - \tfrac12 v_2^2}{gL\cos\alpha}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Massa supistuu pois.
 **Sijoitus:** Osoittaja on $$\begin{aligned} &9{,}81\cdot 18{,}0\cdot\sin 12{,}0^\circ\,\tfrac{\text{m}^2}{\text{s}^2} \\ &- \tfrac12\cdot 5{,}10^2\,\tfrac{\text{m}^2}{\text{s}^2} \\ &= 36{,}71\,\tfrac{\text{m}^2}{\text{s}^2} - 13{,}01\,\tfrac{\text{m}^2}{\text{s}^2} \\ &= 23{,}71\,\tfrac{\text{m}^2}{\text{s}^2} \end{aligned}$$ ja nimittäjä $9{,}81\cdot 18{,}0\cdot\cos 12{,}0^\circ\,\tfrac{\text{m}^2}{\text{s}^2} = 172{,}72\,\tfrac{\text{m}^2}{\text{s}^2}$, joten $\mu = \dfrac{23{,}71}{172{,}72} = 0{,}1373$
 **Vastaus:** $0{,}137$, kolme merkitsevää numeroa kuten rinteen pituudessa $18{,}0\,\text{m}$, kulmassa $12{,}0^\circ$ ja nopeudessa $5{,}10\,\text{m/s}$.
@@ -135,7 +135,7 @@ a ylös
 v alas
 ```
 **Periaate:** Energiaperiaatteen mukaan mekaanisen energian muutos on muiden voimien kuin painon tekemä työ, tässä ilmanvastuksen negatiivinen työ. Sekä liike-energia että potentiaalienergia pienenevät, ja molempien muutos lasketaan mukaan.
-**Kaava:** Nollataso lopputilanteen korkeudelle: $$\begin{aligned} &\Delta E_\text{mek} \\ &= \left(\tfrac12 mv_2^2 - \tfrac12 mv_1^2\right) \\ &- mgh \end{aligned}$$, ja $|\Delta E_\text{mek}| = \dfrac{m\left(v_1^2 - v_2^2\right)}{2} + mgh$
+**Kaava:** Mekaaninen energia $E_\text{mek} = E_\text{k} + E_\text{p}$, kun $E_\text{k} = \tfrac12 mv^2$ ja $E_\text{p} = mgh$. Nollataso lopputilanteen korkeudelle: $E_\text{alku} = \tfrac12 mv_1^2 + mgh$ ja $E_\text{loppu} = \tfrac12 mv_2^2$. Muutos $\Delta E_\text{mek} = E_\text{loppu} - E_\text{alku}$, joten $|\Delta E_\text{mek}| = \dfrac{m\left(v_1^2 - v_2^2\right)}{2} + mgh$
 **Muunnokset:** Lasketaan jouleina ja muutetaan lopuksi kilojouleiksi: $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $|\Delta E_\text{mek}| = \tfrac12\cdot 80{,}0\,\text{kg}\cdot\left(52{,}0^2 - 6{,}0^2\right)\,\text{m}^2/\text{s}^2 + 80{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot 145\,\text{m} = 106\,720\,\text{J} + 113\,796\,\text{J} = 220\,516\,\text{J} \approx 221\,\text{kJ}$
 **Vastaus:** $221\,\text{kJ}$, kolme merkitsevää numeroa kuten massassa $80{,}0\,\text{kg}$ ja nopeudessa $52{,}0\,\text{m/s}$.
@@ -152,7 +152,7 @@ T 8338,5 90
 a 0
 v ylös
 ```
-**Kaava:** $T - mg = 0$, joten $T = mg$. Työ on $W = Th = mgh$, ja teho $P = \dfrac{W}{t} = \dfrac{mgh}{t}$
+**Kaava:** Vakionopeus, joten $\Sigma F = 0$: $T - mg = 0$ ja $T = mg$. Työ $W = Fs$, tässä $W = Th = mgh$. Energia $E = Pt$ ja $E = W$, joten $P = \dfrac{W}{t} = \dfrac{mgh}{t}$
 **Muunnokset:** Lasketaan watteina ja muutetaan lopuksi kilowateiksi: $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** $P = \dfrac{850\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot 12{,}0\,\text{m}}{15{,}0\,\text{s}} = \dfrac{100\,062\,\text{J}}{15{,}0\,\text{s}} = 6670{,}8\,\text{W} \approx 6{,}67\,\text{kW}$
 **Vastaus:** $6{,}67\,\text{kW}$, kolme merkitsevää numeroa kuten korkeudessa $12{,}0\,\text{m}$ ja ajassa $15{,}0\,\text{s}$.
@@ -176,7 +176,7 @@ N 100
 F_mu 12 vasen
 a vasen
 ```
-**Kaava:** Osien vaakamatkat $x_\text{a}$, $x_\text{b}$ ja $x_\text{c}$: $$\begin{aligned} &mgh \\ &- \mu mg(x_\text{a} + x_\text{b} + x_\text{c}) \\ &= 0 \end{aligned}$$, joten $x = x_\text{a} + x_\text{b} + x_\text{c} = \dfrac{h}{\mu}$
+**Kaava:** Energiaperiaate: alussa $E_\text{alku} = mgh$ ja lopussa levossa $E_\text{loppu} = 0$, ja kitkan työ on $W_\mu = -F_\mu s$, $F_\mu = \mu N$. Rinteessä $N = mg\cos\alpha$ ja vaakasuora osuus on $x = s\cos\alpha$, tasaisella $N = mg$ ja $x = s$, joten jokaisen osan kitkatyö on $-\mu mg x$. Osien vaakamatkat $x_\text{a}$, $x_\text{b}$ ja $x_\text{c}$: $E_\text{alku} + W_\mu = E_\text{loppu}$, eli $$\begin{aligned} &mgh \\ &- \mu mg(x_\text{a} + x_\text{b} + x_\text{c}) \\ &= 0 \end{aligned}$$, joten $x = x_\text{a} + x_\text{b} + x_\text{c} = \dfrac{h}{\mu}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, ja kitkakerroin on yksikötön, joten muunnoksia ei tarvita.
 **Sijoitus:** $x = \dfrac{4{,}50\,\text{m}}{0{,}120} = 37{,}5\,\text{m}$
 **Vastaus:** $37{,}5\,\text{m}$, kolme merkitsevää numeroa kuten korkeudessa $4{,}50\,\text{m}$ ja kitkakertoimessa $0{,}120$.
@@ -194,7 +194,7 @@ N 650 työntö
 a alas
 ```
 **Kuvaajan lukeminen:** Paino on $75{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 735{,}75\,\text{N}$, ja lukema on sen suuruinen levossa ja tasaisella nopeudella. Hetkestä $1{,}0\,\text{s}$ hetkeen $3{,}0\,\text{s}$ käyrä on $650\,\text{N}$:n ruudukkoviivalla, painoa pienempi, joten hissi kiihtyy alaspäin $\Delta t = 2{,}0\,\text{s}$. Hetkestä $6{,}0\,\text{s}$ alkaen lukema on painoa suurempi, joten hissi hidastuu.
-**Kaava:** $mg - N = ma$, joten $a = g - \dfrac{N}{m}$, ja levosta lähtiessä $v = a\Delta t = \left(g - \dfrac{N}{m}\right)\Delta t$
+**Kaava:** Newtonin toinen laki $\Sigma F = ma$. Positiivinen suunta alas: $mg - N = ma$, joten $a = g - \dfrac{N}{m}$. Vakiokiihtyvyys levosta lähtien: $v = v_0 + at$ ja $v_0 = 0$, joten $v = a\Delta t = \left(g - \dfrac{N}{m}\right)\Delta t$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $v = \left(9{,}81\,\text{m/s}^2 - \dfrac{650\,\text{N}}{75{,}0\,\text{kg}}\right)\cdot 2{,}0\,\text{s} = 1{,}1433\,\text{m/s}^2\cdot 2{,}0\,\text{s} = 2{,}287\,\text{m/s}$
 **Vastaus:** $2{,}3\,\text{m/s}$ alaspäin, kaksi merkitsevää numeroa kuten kuvaajasta luetussa ajassa $2{,}0\,\text{s}$.
@@ -211,7 +211,7 @@ F_v 2124 ylös
 a ylös
 v alas
 ```
-**Kaava:** Liike-energiat ovat $E_{\text{k}0} = \tfrac12 mv_1^2$ ja $E_\text{k} = \tfrac12 mv_2^2$. Nollataso lopputilanteen korkeudelle: $E_{\text{k}0} + mgh - F_\text{v} h = E_\text{k}$, joten $F_\text{v} = mg + \dfrac{E_{\text{k}0} - E_\text{k}}{h}$
+**Kaava:** Liike-energiat ovat $E_{\text{k}0} = \tfrac12 mv_1^2$ ja $E_\text{k} = \tfrac12 mv_2^2$, potentiaalienergia $E_\text{p} = mgh$ ja ilmanvastuksen työ $W_\text{v} = -F_\text{v} h$. Nollataso lopputilanteen korkeudelle: $E_\text{alku} + W_\text{v} = E_\text{loppu}$, eli $E_{\text{k}0} + mgh - F_\text{v} h = E_\text{k}$, joten $F_\text{v} = mg + \dfrac{E_{\text{k}0} - E_\text{k}}{h}$
 **Muunnokset:** Lasketaan newtoneina ja muutetaan lopuksi kilonewtoneiksi: $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** $E_{\text{k}0} = \tfrac12\cdot 70{,}0\,\text{kg}\cdot(50{,}0\,\text{m/s})^2 = 87\,500\,\text{J}$ ja $E_\text{k} = \tfrac12\cdot 70{,}0\,\text{kg}\cdot(6{,}0\,\text{m/s})^2 = 1260\,\text{J}$, joten $$\begin{aligned} &F_\text{v} = 70{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\ &+ \dfrac{87\,500\,\text{J} - 1260\,\text{J}}{60{,}0\,\text{m}} \\ &= 686{,}7\,\text{N} + 1437{,}3\,\text{N} \\ &= 2124\,\text{N} \\ &\approx 2{,}12\,\text{kN} \end{aligned}$$
 **Vastaus:** $2{,}12\,\text{kN}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $70{,}0\,\text{kg}$, nopeudessa $50{,}0\,\text{m/s}$ ja matkassa $60{,}0\,\text{m}$.
@@ -250,7 +250,7 @@ a alas
 akselit -30
 komponentit G
 ```
-**Kaava:** $y$: $N - mg\cos\alpha = 0$, joten $N = mg\cos\alpha$ ja $F_\mu = \mu N = \mu mg\cos\alpha$
+**Kaava:** Liukukitka $F_\mu = \mu N$. Kohtisuoraan rinnettä ei kiihtyvyyttä, joten $\Sigma F_y = 0$: $N - mg\cos\alpha = 0$ ja $N = mg\cos\alpha$, joten $F_\mu = \mu N = \mu mg\cos\alpha$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $N = 20{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\cos 30{,}0\,{}^\circ = 169{,}9\,\text{N}$, joten $F_\mu = 0{,}200\cdot 169{,}9\,\text{N} = 33{,}98\,\text{N}$
 **Vastaus:** $34{,}0\,\text{N}$ rinnettä ylös. Oppilaan virhe oli kirjoittaa $N = mg$ rinteellä; oikein $N = mg\cos\alpha$. Kolme merkitsevää numeroa kuten massassa $20{,}0\,\text{kg}$ ja kulmassa $30{,}0\,{}^\circ$.
@@ -268,7 +268,7 @@ G 608,2
 N 633 työntö
 a ylös
 ```
-**Kaava:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ ja $N - mg = ma$, joten $N = m(g + a)$
+**Kaava:** Kiihtyvyys $a = \dfrac{v_2 - v_1}{t_2 - t_1}$. Newtonin toinen laki $\Sigma F = ma$, positiivinen suunta ylös: $N - mg = ma$, joten $N = m(g + a)$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{1{,}20\,\text{m/s} - 0}{3{,}0\,\text{s} - 0} = 0{,}400\,\text{m/s}^2$ ja $N = 62{,}0\,\text{kg}\cdot(9{,}81 + 0{,}400)\,\text{m/s}^2 = 62{,}0\,\text{kg}\cdot 10{,}21\,\text{m/s}^2 = 633{,}0\,\text{N}$
 **Vastaus:** $633\,\text{N}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $62{,}0\,\text{kg}$.
@@ -287,7 +287,7 @@ N 100
 F_mu 8,05 vasen
 a vasen
 ```
-**Kaava:** Hidastuvuus on $\left|a\right| = \dfrac{v_1 - v_2}{t_2 - t_1}$, ja $\mu mg = m\left|a\right|$, joten $\mu = \dfrac{\left|a\right|}{g}$
+**Kaava:** Keskinopeus $v = \dfrac{\Delta x}{\Delta t}$ ja hidastuvuus $\left|a\right| = \dfrac{v_1 - v_2}{t_2 - t_1}$. Vaakasuunnassa Newtonin toinen laki $\Sigma F = ma$, $F_\mu = \mu N$ ja $N = mg$, joten $\mu mg = m\left|a\right|$ ja $\mu = \dfrac{\left|a\right|}{g}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Massa supistuu pois.
 **Sijoitus:** $\left|a\right| = \dfrac{3{,}62\,\text{m/s} - 0{,}46\,\text{m/s}}{4{,}5\,\text{s} - 0{,}5\,\text{s}} = 0{,}790\,\text{m/s}^2$ ja $\mu = \dfrac{0{,}790\,\text{m/s}^2}{9{,}81\,\text{m/s}^2} = 0{,}0805$
 **Vastaus:** $0{,}081$, kaksi merkitsevää numeroa kuten viimeisen sekunnin matkassa $0{,}46\,\text{m}$.
@@ -307,7 +307,7 @@ a 0
 akselit -17,8
 komponentit G
 ```
-**Kaava:** $y$: $N = mg\cos\alpha$; $x$: $mg\sin\alpha - \mu N = 0$, joten $\mu = \tan\alpha$. Keskiarvo $\alpha_{\text{ka}} = \dfrac{\text{summa}}{5}$
+**Kaava:** Tasainen nopeus, joten $\Sigma F = 0$, ja $F_\mu = \mu N$. $y$: $N = mg\cos\alpha$; $x$: $mg\sin\alpha - \mu N = 0$, joten $mg\sin\alpha = \mu mg\cos\alpha$ ja $\mu = \tan\alpha$. Keskiarvo $\alpha_{\text{ka}} = \dfrac{\text{summa}}{5}$
 **Muunnokset:** Kulma on asteina, ja laskimen asteasetus on päällä. Kitkakerroin on yksikötön.
 **Sijoitus:** a) Kulmien summa on $$\begin{aligned} &17{,}5\,{}^\circ + 18{,}0\,{}^\circ + 18{,}5\,{}^\circ \\ &+ 17{,}0\,{}^\circ + 18{,}0\,{}^\circ \\ &= 89{,}0\,{}^\circ \end{aligned}$$, joten $\alpha_{\text{ka}} = \dfrac{89{,}0\,{}^\circ}{5} = 17{,}8\,{}^\circ$ ja $\mu = \tan 17{,}8\,{}^\circ = 0{,}321$. b) Pienimmästä kulmasta $\tan 17{,}0\,{}^\circ = 0{,}306$ ja suurimmasta $\tan 18{,}5\,{}^\circ = 0{,}335$, joten vaihteluvälin puolikas on $\dfrac{0{,}335 - 0{,}306}{2} \approx 0{,}015$
 **Vastaus:** a) $\mu = 0{,}321$, kolmen merkitsevän numeron tarkkuudella kuten keskiarvokulma $17{,}8\,{}^\circ$. b) Kerroin vaihtelee välillä $0{,}306 \ldots 0{,}335$, eli $\mu \approx 0{,}32 \pm 0{,}02$. Vaihtelu on noin $5\,\%$ kertoimesta; se on yksinkertainen arvio mittausten hajonnasta.
@@ -331,9 +331,9 @@ N 100
 F_mu 15 vasen
 a vasen
 ```
-**Kaava:** Rinteen korkeus on $h = L\sin\alpha$. Nollataso tasaiselle: $$\begin{aligned} &mgL\sin\alpha \\ &- \mu_1 mg\cos\alpha\cdot L \\ &- \mu_2 mgd \\ &= 0 \end{aligned}$$, joten $L = \dfrac{\mu_2 d}{\sin\alpha - \mu_1\cos\alpha}$. Rinteen juurella $$\begin{aligned} &mgL\sin\alpha \\ &- \mu_1 mg\cos\alpha\cdot L \\ &= \tfrac12 mv^2 \end{aligned}$$
+**Kaava:** Energiaperiaate koko matkalle, nollataso tasaiselle: alussa $E_\text{alku} = mgh$, kun $h = L\sin\alpha$, ja lopussa levossa $E_\text{loppu} = 0$. Kitkan työ on $W_\mu = -F_\mu s$ ja $F_\mu = \mu N$: rinteessä $N = mg\cos\alpha$, tasaisella $N = mg$. Siis $E_\text{alku} + W_{\mu 1} + W_{\mu 2} = E_\text{loppu}$, eli $$\begin{aligned} &mgL\sin\alpha \\ &- \mu_1 mg\cos\alpha\cdot L \\ &- \mu_2 mgd \\ &= 0 \end{aligned}$$, joten $L = \dfrac{\mu_2 d}{\sin\alpha - \mu_1\cos\alpha}$. Rinteen juurella $E_\text{alku} + W_{\mu 1} = E_\text{k}$, eli $$\begin{aligned} &mgL\sin\alpha \\ &- \mu_1 mg\cos\alpha\cdot L \\ &= \tfrac12 mv^2 \end{aligned}$$, joten $v = \sqrt{2gL\left(\sin\alpha - \mu_1\cos\alpha\right)}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, ja kitkakertoimet ovat yksikköttömiä. Massa supistuu pois molemmista yhtälöistä.
-**Sijoitus:** Sulkulauseke on $\sin 14{,}0\,{}^\circ - 0{,}060\cdot\cos 14{,}0\,{}^\circ = 0{,}2419 - 0{,}0582 = 0{,}1837$, joten $L = \dfrac{0{,}150\cdot 20{,}0\,\text{m}}{0{,}1837} = 16{,}33\,\text{m}$. Juurella $v = \sqrt{2gL\left(\sin\alpha - \mu_1\cos\alpha\right)} = \sqrt{2\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}\cdot 16{,}33\,\text{m}\cdot 0{,}1837} = 7{,}67\,\text{m/s}$
+**Sijoitus:** Sulkulauseke on $\sin 14{,}0\,{}^\circ - 0{,}060\cdot\cos 14{,}0\,{}^\circ = 0{,}2419 - 0{,}0582 = 0{,}1837$, joten $L = \dfrac{0{,}150\cdot 20{,}0\,\text{m}}{0{,}1837} = 16{,}33\,\text{m}$. Juurella $v = \sqrt{2\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}\cdot 16{,}33\,\text{m}\cdot 0{,}1837} = 7{,}67\,\text{m/s}$
 **Vastaus:** b) $16\,\text{m}$, kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}060$; c) $7{,}7\,\text{m/s}$. Massa supistuu pois, koska sekä paino että kitka ovat verrannollisia massaan: raskaampi lapsi saa suuremman liike-energian mutta myös suuremman kitkavoiman, ja nopeus on sama.
 **Järkevyys:** Rinteen korkeus on $h = 16{,}33\,\text{m}\cdot\sin 14{,}0\,{}^\circ = 3{,}95\,\text{m}$ ja vaakamatka $$\begin{aligned} &16{,}33\,\text{m}\cdot\cos 14{,}0\,{}^\circ \\ &= 15{,}85\,\text{m} \end{aligned}$$. Kitka kuluttaa rinteessä korkeuden verran $0{,}060\cdot 15{,}85\,\text{m} = 0{,}95\,\text{m}$ ja tasaisella $0{,}150\cdot 20{,}0\,\text{m} = 3{,}00\,\text{m}$, yhteensä $3{,}95\,\text{m}$ kuten pitää. Tasaisella pysähtymismatka on $\dfrac{v^2}{2\mu_2 g} = \dfrac{(7{,}67\,\text{m/s})^2}{2\cdot 0{,}150\cdot 9{,}81\,\text{m/s}^2} = 20{,}0\,\text{m}$. Rinne liukuu, koska $\tan 14{,}0\,{}^\circ = 0{,}249 > \mu_1$. Laskettu suurin pituus $16{,}3\,\text{m}$ pätee vain tehtävän oletuksilla.
 
@@ -351,7 +351,7 @@ a ylös
 v alas
 ```
 **Kuvaajan lukeminen:** Keskinopeudet ovat välin päätepisteiden nopeuksien keskiarvoja, ja kukin väli on $0{,}5\,\text{s}$. Suurin nopeus on alussa, $46{,}0\,\text{m/s}$, ja nopeus pienenee ensin jyrkästi: ensimmäisellä välillä nopeus pienenee $16{,}2\,\text{m/s}$, viimeisellä puolen sekunnin välillä enää $1{,}1\,\text{m/s}$. Hyppääjä liikkuu koko ajan alas, joten matkaa kertyy koko ajan.
-**Kaava:** $h = \sum \dfrac{v_i + v_{i+1}}{2}\,\Delta t$. Nollataso lopputilanteen korkeudelle: $E_{\text{k}0} + mgh - F_\text{v} h = E_\text{k}$, joten $F_\text{v} = mg + \dfrac{E_{\text{k}0} - E_\text{k}}{h}$. Kohdassa c) $mg - F_\text{v} = ma$, joten $F_\text{v} = m(g - a)$
+**Kaava:** Matka on keskinopeus kertaa aika, $s = v\Delta t$, ja tasaisesti muuttuvassa liikkeessä välin keskinopeus on päätenopeuksien keskiarvo, joten $h = \sum \dfrac{v_i + v_{i+1}}{2}\,\Delta t$. Energiaperiaate, nollataso lopputilanteen korkeudelle: $E_\text{k} = \tfrac12 mv^2$, $E_\text{p} = mgh$ ja ilmanvastuksen työ $W_\text{v} = -F_\text{v} h$, $E_\text{alku} + W_\text{v} = E_\text{loppu}$, eli $E_{\text{k}0} + mgh - F_\text{v} h = E_\text{k}$, joten $F_\text{v} = mg + \dfrac{E_{\text{k}0} - E_\text{k}}{h}$. Kohdassa c) Newtonin toinen laki $\Sigma F = ma$, positiivinen suunta alas: $mg - F_\text{v} = ma$, joten $F_\text{v} = m(g - a)$
 **Muunnokset:** Lasketaan newtoneina ja muutetaan lopuksi kilonewtoneiksi: $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** a) Välien matkat ovat $18{,}95\,\text{m}$, $12{,}475\,\text{m}$, $8{,}625\,\text{m}$, $6{,}35\,\text{m}$, $5{,}00\,\text{m}$ ja $4{,}225\,\text{m}$. Summa on $h = 55{,}625\,\text{m}$. b) Liike-energiat ovat $E_{\text{k}0} = \tfrac12\cdot 78{,}0\,\text{kg}\cdot(46{,}0\,\text{m/s})^2 = 82\,524\,\text{J}$ ja $E_\text{k} = \tfrac12\cdot 78{,}0\,\text{kg}\cdot(7{,}9\,\text{m/s})^2 = 2434\,\text{J}$, joten $$\begin{aligned} &F_\text{v} = 78{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\ &+ \dfrac{82\,524\,\text{J} - 2434\,\text{J}}{55{,}625\,\text{m}} \\ &= 765{,}2\,\text{N} + 1439{,}8\,\text{N} \\ &= 2205\,\text{N} \end{aligned}$$. c) Välillä $3{,}0$–$4{,}0\,\text{s}$ nopeus pienenee $7{,}9\,\text{m/s}$:sta $6{,}8\,\text{m/s}$:iin, joten $a = \dfrac{6{,}8 - 7{,}9}{1{,}0}\,\text{m/s}^2 = -1{,}1\,\text{m/s}^2$ eli kiihtyvyys osoittaa ylös ja $F_\text{v} = 78{,}0\,\text{kg}\cdot(9{,}81 + 1{,}1)\,\text{m/s}^2 = 851\,\text{N}$
 **Vastaus:** b) $2{,}21\,\text{kN}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $78{,}0\,\text{kg}$ ja nopeuksissa; a) $h = 55{,}6\,\text{m}$; c) ilmanvastus on painoa suurempi, koska nopeus pienenee ja kiihtyvyys osoittaa ylös.
@@ -385,7 +385,7 @@ Matka $80\,\text{m}$ korkeudelta $8{,}00\,\text{m}$ olisi mittausalueen ulkopuol
 **Kysytty:** hissin kiihtyvyyden suuruus $a$ yksikössä $\text{m/s}^2$
 **Periaate:** Ihmiseen vaikuttavat paino alas ja tukivoima ylös, ja niiden summa antaa kiihtyvyyden Newtonin toisen lain mukaan. Hississä paino on levyn lukema vain, kun hissi ei kiihdy, joten kiihtyvyys saadaan lukeman ja painon erotuksesta.
 **Kuvaajan lukeminen:** Alussa ja tasaisessa liikkeessä lukema on noin $589\,\text{N}$, ihmisen paino. Hetkestä $9{,}0\,\text{s}$ alkaen lukema on ruudukkoviivalla $550\,\text{N}$, painoa pienempi, ja pysyy siinä noin hetkeen $12{,}2\,\text{s}$. Silloin kiihtyvyys osoittaa alas: ylöspäin liikkuva hissi hidastaa.
-**Kaava:** positiivinen suunta ylös, $N - mg = ma$, joten $a = \dfrac{N - mg}{m}$
+**Kaava:** Newtonin toinen laki $\Sigma F = ma$. Positiivinen suunta ylös: $N - mg = ma$, joten $a = \dfrac{N - mg}{m}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{550\,\text{N} - 60{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{60{,}0\,\text{kg}} = \dfrac{550\,\text{N} - 588{,}6\,\text{N}}{60{,}0\,\text{kg}} = -0{,}643\,\text{m/s}^2$
 **Vastaus:** kiihtyvyyden suuruus on $0{,}643\,\text{m/s}^2$ ja suunta alas, kolme merkitsevää numeroa kuten massassa $60{,}0\,\text{kg}$.

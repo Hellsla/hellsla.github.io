@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: cd9e21b2902c37f6
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: b30a3481b4ee561b
+SCOPE: delta: CI 360 px layout fix, sovella tasks.json s7 b) rubric Substitution row split into three aligned rows (fi-easy); all else not re-judged.
 
 ## Blocking
 - (none)
 
 ## Polish
-- (none)
+- Earlier Polish items stay recorded; nothing new.
 
 ## Checked
-- inquiry.json lt-6: prompt now 'Lähtökitka eli täysin kehittynyt lepokitka on μ0N = 90 N'; correct option still 40 N (rest, net force zero), the three distractors wrong, feedbacks ('lepokitkan yläraja') consistent with the new term.
-- solutions.md boat ramp Järkevyys: 'Luiska pienentää tarvittavaa voimaa, ei työtä' is correct (T ≈ 1,3 kN against weight 2,7 kN; work per height is not reduced, with friction it grows). Agrees with 665 N and 666 N.
-- Limit-angle Periaate: mg sin α0 = μ0 mg cos α0 with fully developed static friction: correct.
-- No added task (last is s6). practice.py check: OK, 6 tasks, 95 points.
+git diff of unit content: only the s7 b) Substitution detail in tasks.json. Same numbers, order, signs and units: 75.0 kg · (9.81 m/s² − 1.5 m/s²) ≈ 623 N (75 · 8.31 = 623.25). Split into rows "75.0 kg", "· (9.81 m/s²", "− 1.5 m/s²)" with unchanged result row; parenthesis still closes, minus kept. Decimal comma/point correct for the language. No new content.

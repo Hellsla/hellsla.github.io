@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7f39f4ee4541f539
+CONTENT-HASH: 78fe811ae66ec3a7
 
 ## Blocking
 
+
 ## Polish
+- Tennis ball and steel ball: "yhtä aikaa" holds approximately; "lähes yhtä aikaa" would match the stated condition "ilmanvastus on pieni" exactly (C, optional).
 
 ## Checked
-batch delta review: stone 1,2 m in 0,50 s agrees with ½g t² = 1,23 m; v_k = 2,4 m/s, distractors 0,60 / 1,2 / 0,42 recomputed, feedback right; 'noin 5 m/s' for the first second (4,9 m/s) right; one correct option; answers.py runs.
+batch delta review: three new blocks: a < 0 with v < 0 gives increasing speed (same sign) correct; secant slope of a (t,x) curve = mean velocity between the points, not instantaneous, correct; free fall independent of mass under small air resistance correct. Knowns/question split changes no number.

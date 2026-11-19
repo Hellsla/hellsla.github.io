@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1e3321925072288a
-SCOPE: delta added-exercise from c8098ef2208d19ac base b2eac257e05e
+CONTENT-HASH: 8c2fdbff3af2f488
 
 ## Blocking
 (none)
 
 ## Polish
-- a) depends on a live page (91 vs 115.8 mm); the solution handles this well. Optional: tell the student which of the two values to prefer.
+(none)
 
 ## Checked
-- fy3-8-L2-10 is level 2: situation first, questions in parts a-d, a numeric answer field for one part, source given with a read date.
-- Fits the slot's goals and the set's mix (data/experiment/reasoning); it does not repeat the worked example or another exercise.
-- The solution is stepwise (given, find, principle, formula, conversions, substitution, reasonableness) and the open parts have model answers.
-- Source-based task fulfils the teacher's brief: the source is interpreted, the lesson's formula is applied, the model's limits are judged.
-- The language version matches the English/Finnish content; easy Finnish has short sentences and glossed terms (checked in the packet).
-- Phone: calculations are in short aligned lines; I did not open captures (the new exercise is not in them).
+- Delta judged in context: the prefix "Esimerkkiaineisto:" removed from task texts; every sentence still begins correctly with a capital letter and the situation stays first, the question last.
+- Tables remain introduced by the first sentence (Taulukossa on ..., Ryhmä mittasi ...).
+- No numbers, symbols, answers or levels changed; the data and figures the tasks need are unchanged.
+- Solutions.md changed only in presentation; steps and model answers are unchanged.
+- Finnish: grammar and reading level unchanged and fine for fi-easy.

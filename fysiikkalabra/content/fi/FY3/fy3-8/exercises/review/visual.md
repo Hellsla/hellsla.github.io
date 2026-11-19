@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f210f1541bd7cf89
+CONTENT-HASH: df1aa72edd405367
+SCOPE: delta wording from f210f1541bd7cf89 base 64d4935
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] fy3-8 first task, "Taulukossa on $1{,}000\,\text{kg}$ vettä tilavuus eri lämpötiloissa" — ungrammatical (already so before); now the first words of the text. Write "Taulukossa on $1{,}000\,\text{kg}$:n vesimäärän tilavuus eri lämpötiloissa."
 
 ## Checked
-- Round 1, delta (solutions.md, md-paragraphs: words unchanged). No 360 px or 390 px exercise captures exist (1280 px only); layout check at 360 px is clean per the packet.
-- 1280 px with solutions open: ../review/shots/fy3-8-open-exercises-L2-1280-1.png (10-10: conversions with each sentence after its box, fractions legible, answer set apart) and fy3-8-open-tarkista-1280-1.png for the surrounding layout.
-- Breaks at meaningful boundaries, formulas in boxes, equals signs aligned, nothing clipped.
+- Delta, wording only: the diff read in full. The prefix "Esimerkkiaineisto:" is gone; each task now opens with a capital letter and reads as a normal sentence. No numbers, symbols, units or LaTeX changed.
+- Captures: opened fy3-4 L3 part 1 and 4 at 1280 px (content/fi/FY3/fy3-4/review/shots), which show the layout of this kind of task card; the other sets' captures were not opened, because the diff changes only the first words of a text.
 - Hash unchanged at the end.
 
 ## Scores

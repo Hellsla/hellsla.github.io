@@ -1,9 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 98bb3d4af340cc2c
+CONTENT-HASH: b407c9a6b098018a
 ## Blocking
-
 ## Polish
-- Kysymyksen toinen virke on kömpelö: 'vyön kanssa venyvä vyö'. Parempi: 'Vyön kanssa venyvä vyö pysäyttää hänet.'
-
+- Second Pysähdy box: now unambiguous ("jarruttaa pysähdyksiin nopeudesta 40 km/h eikä 80 km/h") and its answer (one quarter) is correct. Ending the answer with the numbers it implies (0{,}7\,\text{m}$ vs 2{,}9\,\text{m}$) would let the student check the reasoning, not only the direction.
+- First and third Pysähdy boxes mostly restate the sentence just above them; a prediction (braking distance if friction is a sixth, which exp-3 then tests) would demand more.
+- No Pysähdy box at the hardest reasoning, the derivation of s_j = v0²/(2a) or the cancelling of mass in a = μg.
 ## Checked
-batch delta review: muutetut kertauskysymykset (luvut, vastausvaihtoehdot, palaute, uusi konteksti), vastausten laskut ja kuvat/kuvatekstit luettu; ei estäviä.
+- Round-1 blocking fixed in this language version (same three boxes, same meaning as the Finnish text).
+- Learning path from fy4-6 and fy4-10: opening question answered in two labelled places in Ydinajatus.
+- Predictions precede the evidence; exp-1 and exp-2 can refute pred-1 and pred-2 (model values named as such).
+- Variable control: one varied parameter, the rest locked; min 2 runs before reveal.
+- Worked example in seven stages, one step each; phone-usable per captures and tests.
+- Exit ticket and check-3 criteria observable; check-1 distractors are real misconceptions (40 %, 20 %).
+- Workload about one lesson (optional items marked).

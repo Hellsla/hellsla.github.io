@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5d18f1d6857e0da4
+CONTENT-HASH: 4b9821a3c9098151
 
 ## Blocking
 
+
 ## Polish
+- None.
 
 ## Checked
-batch delta review: cue 60 N for 0,0050 s: Δp = 0,30 kg·m/s; 60/0,0050 = 12 000 distractor and 'mass unknown' distractor with right feedback; 'other horizontal forces small' stated; Newton's cradle photo and caption match the image; answers.py runs.
+batch delta review: three new blocks: friction impulse negligible during a short collision with large bumper forces, consistent with the stated conservation condition; perfectly inelastic: lost kinetic energy into internal energy, total energy conserved, correct; skater throwing a ball from rest: total momentum stays zero, equal and opposite momentum, correct (small ice friction is the lesson's setting).

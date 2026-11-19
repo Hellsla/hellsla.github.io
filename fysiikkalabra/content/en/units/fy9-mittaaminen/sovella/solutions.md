@@ -29,12 +29,24 @@
 &: 3 \\
 &= 13.96\,\text{s}
 \end{aligned}
-$$ and the uncertainty $(14.12 - 13.80)\,\text{s} : 2 = 0.16\,\text{s}$, so Mira's time is $(13.96 \pm 0.16)\,\text{s}$ and Liisa's $(13.71 \pm 0.19)\,\text{s}$. Liisa's interval is $13.52$–$13.90\,\text{s}$ and Mira's $13.80$–$14.12\,\text{s}$, so the intervals overlap. The difference $0.25\,\text{s}$ is of the same order of magnitude as the uncertainties. So these measurements cannot show that Liisa was faster, although her mean is smaller. This does not, however, mean that the runners are equally fast: showing a difference would require more precise timing, for example a photo-finish camera.
+$$ and the uncertainty $(14.12 - 13.80)\,\text{s} : 2 = 0.16\,\text{s}$, so Mira's time is $(13.96 \pm 0.16)\,\text{s}$ and Liisa's $(13.71 \pm 0.19)\,\text{s}$.
+
+Liisa's interval is $13.52$–$13.90\,\text{s}$ and Mira's $13.80$–$14.12\,\text{s}$, so the intervals overlap. The difference $0.25\,\text{s}$ is of the same order of magnitude as the uncertainties. So these measurements cannot show that Liisa was faster, although her mean is smaller.
+
+This does not, however, mean that the runners are equally fast: showing a difference would require more precise timing, for example a photo-finish camera.
 
 ### d)
 **Find:** the systematic sources of error in hand timing, whether the direction of the error can be concluded for certain and why the mean does not necessarily remove a systematic error
 **Principle:** A systematic error shifts every result in the same direction. It cannot be seen from the spread of the results, and repetition or the mean does not remove it. The effect of random error, on the other hand, usually decreases when the results are averaged.
-**Model answer:** The timekeeper starts the watch only after seeing the flag drop and reacting to it. The watch therefore starts with a delay $\tau_\text{start}$, typically a few tenths of a second. Stopping the watch also has a delay $\tau_\text{stop}$. The timekeeper sees the finish coming, so this delay can be shorter, but the watch may also be stopped slightly too early or too late. The measured time is $t_\text{meas} = t_\text{true} + \tau_\text{stop} - \tau_\text{start}$, where $t_\text{true}$ is the true time. The measured time is thus shorter than the true time if $\tau_\text{start} > \tau_\text{stop}$, and longer if $\tau_\text{stop} > \tau_\text{start}$. The delays are not known from the information in the problem, so the direction cannot be concluded for certain. Most likely the start delay is larger, so the time is slightly too short and the speed in part a too large. The three timekeepers work in the same way, so the average part of the delays is in the same direction for all of them. It is a systematic error, and it remains in the mean as well. The mean usually reduces only the effect of random error, that is, the variation between the watches. The systematic error is removed, for example, by electronic timing that starts itself from the start signal.
+**Model answer:** The timekeeper starts the watch only after seeing the flag drop and reacting to it. The watch therefore starts with a delay $\tau_\text{start}$, typically a few tenths of a second.
+
+Stopping the watch also has a delay $\tau_\text{stop}$. The timekeeper sees the finish coming, so this delay can be shorter, but the watch may also be stopped slightly too early or too late.
+
+The measured time is $t_\text{meas} = t_\text{true} + \tau_\text{stop} - \tau_\text{start}$, where $t_\text{true}$ is the true time. The measured time is thus shorter than the true time if $\tau_\text{start} > \tau_\text{stop}$, and longer if $\tau_\text{stop} > \tau_\text{start}$.
+
+The delays are not known from the information in the problem, so the direction cannot be concluded for certain. Most likely the start delay is larger, so the time is slightly too short and the speed in part a too large.
+
+The three timekeepers work in the same way, so the average part of the delays is in the same direction for all of them. It is a systematic error, and it remains in the mean as well. The mean usually reduces only the effect of random error, that is, the variation between the watches. The systematic error is removed, for example, by electronic timing that starts itself from the start signal.
 
 ### Hyväksytään myös
 - In part b, the relative uncertainty of the speed as the sum of the relative uncertainties of the time and the distance: $\tfrac{0.19}{13.71} + \tfrac{0.3}{100.0} \approx 0.0169$, so $$
@@ -311,7 +323,11 @@ $$. In a smaller unit the number grows.
   <foreignObject x="120.5" y="83.5" width="164" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px">$k \approx 0.919\,\tfrac{\text{g}}{\text{ml}}$</div></foreignObject>
 </svg>
 
-**Model answer:** The points are approximately on a straight line, so the line $m = kV + b$ suits as the model. The line is not forced through the origin, because the balance also weighs the measuring cylinder: when there is no liquid, the mass is not zero. The point of the row $60\,\text{ml}$ is about $10\,\text{g}$ above the line, which is more than ten times the deviations of the other points. Its mass $183.4\,\text{g}$ would fit the line at a volume of about $70\,\text{ml}$, and according to the note the reading was written down afterwards from memory. A likely cause, a gross error, has thus been found for the deviation, so the point is left out of the fit. The omission and its reason are recorded in the report. The point should not have been removed just because it differs from the others; the best thing would be to repeat the measurement.
+**Model answer:** The points are approximately on a straight line, so the line $m = kV + b$ suits as the model. The line is not forced through the origin, because the balance also weighs the measuring cylinder: when there is no liquid, the mass is not zero.
+
+The point of the row $60\,\text{ml}$ is about $10\,\text{g}$ above the line, which is more than ten times the deviations of the other points. Its mass $183.4\,\text{g}$ would fit the line at a volume of about $70\,\text{ml}$, and according to the note the reading was written down afterwards from memory.
+
+A likely cause, a gross error, has thus been found for the deviation, so the point is left out of the fit. The omission and its reason are recorded in the report. The point should not have been removed just because it differs from the others; the best thing would be to repeat the measurement.
 
 ### c)
 **Given:** the fitted line of part b
@@ -342,7 +358,9 @@ $$. In a smaller unit the number grows.
 **Formula:** $m = \rho V$
 **Conversions:** $V = 1.50\,\text{l} = 1.50 \cdot 1000\,\text{cm}^3 = 1500\,\text{cm}^3$, and finally $1000\,\text{g} = 1\,\text{kg}$.
 **Substitution:** $m = 0.919\,\tfrac{\text{g}}{\text{cm}^3} \cdot 1500\,\text{cm}^3 = 1378\,\text{g} = 1.378\,\text{kg}$
-**Answer:** $m \approx 1.38\,\text{kg}$. According to part d the density is known to about $1.3\,\%$, so the result is $(1.38 \pm 0.02)\,\text{kg}$ and the uncertainty reaches the third digit, as does the volume $1.50\,\text{l}$. The volume is $15$ times the measured range, but the calculation does not extend the line of the measuring cylinder; it uses the density, which is a property of the substance and stays the same at the same temperature. Therefore the result is physically justified, as long as the temperature of the oil is the same as in the measurement.
+**Answer:** $m \approx 1.38\,\text{kg}$. According to part d the density is known to about $1.3\,\%$, so the result is $(1.38 \pm 0.02)\,\text{kg}$ and the uncertainty reaches the third digit, as does the volume $1.50\,\text{l}$.
+
+The volume is $15$ times the measured range, but the calculation does not extend the line of the measuring cylinder; it uses the density, which is a property of the substance and stays the same at the same temperature. Therefore the result is physically justified, as long as the temperature of the oil is the same as in the measurement.
 **Reasonableness:** The same volume of water would weigh $1.50\,\text{kg}$, and oil is about $8\,\%$ lighter, so $1.38\,\text{kg}$ has the right size.
 
 ### Hyväksytään myös
@@ -367,7 +385,9 @@ $$. The mass includes the measuring cylinder.
 ### a)
 **Find:** the types of error seen in the data, with justifications
 **Principle:** A systematic error shifts the results in the same direction, a random error shows as variation between repetitions, and a gross error as a single result clearly different from the others.
-**Model answer:** *Systematic error.* Every reading is larger than the known mass of the weight, and the difference repeats in the same way in every weighing. The means of the readings are about $101.7$, $204.3$, $510.3$ and $1020.3\,\text{g}$, so the error is about $2$, $4$, $10$ and $20\,\text{g}$. The error grows in the same proportion as the mass, about $2\,\%$: $20\,\text{g} : 1000\,\text{g} = 0.02$. Because the empty scale shows $0\,\text{g}$, the zero point is right and the error is relative.
+**Model answer:** *Systematic error.* Every reading is larger than the known mass of the weight, and the difference repeats in the same way in every weighing.
+
+The means of the readings are about $101.7$, $204.3$, $510.3$ and $1020.3\,\text{g}$, so the error is about $2$, $4$, $10$ and $20\,\text{g}$. The error grows in the same proportion as the mass, about $2\,\%$: $20\,\text{g} : 1000\,\text{g} = 0.02$. Because the empty scale shows $0\,\text{g}$, the zero point is right and the error is relative.
 
 *Random error.* The three readings of the same weight differ from each other by at most $1\,\text{g}$. The variation is of the same order of magnitude as the display resolution $1\,\text{g}$.
 
@@ -376,13 +396,17 @@ $$. The mass includes the measuring cylinder.
 ### b)
 **Find:** whether the claim $(765 \pm 0.5)\,\text{g}$ is right, and a better estimate of the mass of the flour
 **Principle:** The resolution is the smallest change shown on the display. It says nothing about systematic error, so the uncertainty can be much larger than the resolution. A known systematic error is corrected.
-**Model answer:** The claim does not hold. Half the resolution, $0.5\,\text{g}$, only tells how precisely the display can be read. According to part a, the scale shows about $2\,\%$ too much, and the repetitions vary by about $1\,\text{g}$. The scale shows $m_\text{reading} = k\,m$ for a mass $m$, where $k$ is the ratio given by the weights, $1020\,\text{g} : 1000\,\text{g} = 1.02$. The corrected mass is therefore $$
+**Model answer:** The claim does not hold. Half the resolution, $0.5\,\text{g}$, only tells how precisely the display can be read. According to part a, the scale shows about $2\,\%$ too much, and the repetitions vary by about $1\,\text{g}$.
+
+The scale shows $m_\text{reading} = k\,m$ for a mass $m$, where $k$ is the ratio given by the weights, $1020\,\text{g} : 1000\,\text{g} = 1.02$. The corrected mass is therefore $$
 \begin{aligned}
 m &= \dfrac{m_\text{reading}}{k} \\
 &= 765\,\text{g} : 1.02 \\
 &= 750\,\text{g}
 \end{aligned}
-$$. The uncertainty is increased by the variation of the repetitions and by the fact that the correction factor is known only to about a thousandth, which makes less than a gram in the reading $765\,\text{g}$. A better estimate is about $(750 \pm 2)\,\text{g}$. So the friend's result is about $15\,\text{g}$ too large, and its uncertainty is too small.
+$$.
+
+The uncertainty is increased by the variation of the repetitions and by the fact that the correction factor is known only to about a thousandth, which makes less than a gram in the reading $765\,\text{g}$. A better estimate is about $(750 \pm 2)\,\text{g}$. So the friend's result is about $15\,\text{g}$ too large, and its uncertainty is too small.
 
 ### c)
 **Find:** the shape of the graph, what it shows about the kind of error, and why repetition does not help
@@ -393,7 +417,9 @@ k &= (1020.3\,\text{g} - 101.7\,\text{g}) \\
 &: (1000.0\,\text{g} - 100.0\,\text{g}) \\
 &\approx 1.02
 \end{aligned}
-$$ and not $1$, and the constant term is zero. A constant term of zero tells that the zero point is right, and the slope $1.02$ tells that the scale shows $2\,\%$ too much for every mass. The points of the graph are very precisely on the line, because the random variation, about $1\,\text{g}$, is small.
+$$ and not $1$, and the constant term is zero.
+
+A constant term of zero tells that the zero point is right, and the slope $1.02$ tells that the scale shows $2\,\%$ too much for every mass. The points of the graph are very precisely on the line, because the random variation, about $1\,\text{g}$, is small.
 
 Repetition reduces the effect of random error in the mean, because readings that are too large and too small partly cancel each other. A systematic error, however, is the same in every weighing, so the mean is just as wrong as a single reading. The error is corrected by dividing the readings by the slope $1.02$ or by calibrating the scale with a weight.
 
@@ -474,7 +500,9 @@ Repetition reduces the effect of random error in the mean, because readings that
   <foreignObject x="258.5" y="274.5" width="164" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$v = k \approx 0.48\,\tfrac{\text{m}}{\text{s}}$</div></foreignObject>
 </svg>
 
-**Model answer:** Six points are close to one straight line, so the car moved uniformly and the position is a linear function of time, $x = vt + x_0$. The speed is the slope of the line, $v = \dfrac{x_2 - x_1}{t_2 - t_1}$. The point $t = 1.5\,\text{s}$ is about $0.25\,\text{m}$ above the line, almost at the same position as the point $t = 2.0\,\text{s}$, so it has probably been marked in the wrong frame. The point is checked from the video. If an error is found, it is corrected, or the point is left out and the reason recorded.
+**Model answer:** Six points are close to one straight line, so the car moved uniformly and the position is a linear function of time, $x = vt + x_0$. The speed is the slope of the line, $v = \dfrac{x_2 - x_1}{t_2 - t_1}$.
+
+The point $t = 1.5\,\text{s}$ is about $0.25\,\text{m}$ above the line, almost at the same position as the point $t = 2.0\,\text{s}$, so it has probably been marked in the wrong frame. The point is checked from the video. If an error is found, it is corrected, or the point is left out and the reason recorded.
 
 The line is not forced through the origin. Two points of it far apart are read, $(0\,\text{s};\ 0.36\,\text{m})$ and $(3.0\,\text{s};\ 1.79\,\text{m})$, so the speed is $$
 \begin{aligned}
@@ -524,7 +552,11 @@ $$ and on the last $$
 &81.8\,\text{kPa} \cdot 30\,\text{ml} \\
 &= 2454\,\text{kPa} \cdot \text{ml}
 \end{aligned}
-$$. The products of the rows in between grow steadily row by row, and the total growth is $(2454 - 2269) : 2269 \approx 8\,\%$. The pressures are given to a tenth of a kilopascal, and the product grows in the same direction on every row. A random error would vary haphazardly, so the steady growth of $8\,\%$ is not caused by it. So the claim does not hold for the syringe reading $V$. The growth of the product suggests that the true volume of the air is larger than the reading: part of the air is in the tube and the sensor, and its share is largest when the volume of the syringe is small.
+$$. The products of the rows in between grow steadily row by row, and the total growth is $(2454 - 2269) : 2269 \approx 8\,\%$.
+
+The pressures are given to a tenth of a kilopascal, and the product grows in the same direction on every row. A random error would vary haphazardly, so the steady growth of $8\,\%$ is not caused by it. So the claim does not hold for the syringe reading $V$.
+
+The growth of the product suggests that the true volume of the air is larger than the reading: part of the air is in the tube and the sensor, and its share is largest when the volume of the syringe is small.
 
 ### b)
 **Find:** a graph in which the relationship is linear, and a straight line fitted to it
@@ -809,7 +841,13 @@ $$, the same range as $15.0 \pm 0.6\,\text{cm}$. The result is, however, an extr
   <foreignObject x="121.5" y="92" width="226" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$\tfrac{1}{2}g = k \approx 5.18\,\text{m/s}^2$</div></foreignObject>
 </svg>
 
-**Model answer:** The points lie well on a straight line, so the model $s \propto t^2$ fits the data. The line is not forced through the origin. Its constant term is about $0.01\,\text{m}$, roughly the size of the reading uncertainty of the distance, $0.01\,\text{m}$. It is small, and because the line is not forced through the origin, it does not affect the slope. The vertical differences between the line and the points are at most about $0.008\,\text{m}$, less than the reading uncertainty. The line of the graph is $s \approx 5.18\,\text{m/s}^2 \cdot t^2 + 0.01\,\text{m}$. In a $(t,s)$ graph the points would form a curve from which no slope could be read, and joining the points with a broken line would follow the measurement errors too.
+**Model answer:** The points lie well on a straight line, so the model $s \propto t^2$ fits the data.
+
+The line is not forced through the origin. Its constant term is about $0.01\,\text{m}$, roughly the size of the reading uncertainty of the distance, $0.01\,\text{m}$. It is small, and because the line is not forced through the origin, it does not affect the slope.
+
+The vertical differences between the line and the points are at most about $0.008\,\text{m}$, less than the reading uncertainty. The line of the graph is $s \approx 5.18\,\text{m/s}^2 \cdot t^2 + 0.01\,\text{m}$.
+
+In a $(t,s)$ graph the points would form a curve from which no slope could be read, and joining the points with a broken line would follow the measurement errors too.
 
 ### b)
 **Given:** the $(t^2,\,s)$ line of part a; the reading uncertainty of the distance is $0.01\,\text{m}$
@@ -851,7 +889,9 @@ $$ that is $0.54 : 0.147 \approx 3.7$ times the uncertainty. The value $9.81\,\t
 
 *Air resistance.* Air resistance opposes the motion of the ball, so it would decrease the measured acceleration. The measured value is, however, too large, so air resistance does not explain the difference.
 
-*Possible causes.* An error in the scale: if the distances were measured from the video with a scale in which length is overestimated by about $5.5\,\%$, $g$ is overestimated too. An error in the time scale: $g = 2s/t^2$, so if the real frame interval is longer than the assumed $0.05\,\text{s}$, the times are underestimated and the calculated $g$ is too large. For the measured $10.35\,\text{m/s}^2$ to really be $9.81\,\text{m/s}^2$, the frame interval would have to be $$
+*Possible causes.* An error in the scale: if the distances were measured from the video with a scale in which length is overestimated by about $5.5\,\%$, $g$ is overestimated too.
+
+An error in the time scale: $g = 2s/t^2$, so if the real frame interval is longer than the assumed $0.05\,\text{s}$, the times are underestimated and the calculated $g$ is too large. For the measured $10.35\,\text{m/s}^2$ to really be $9.81\,\text{m/s}^2$, the frame interval would have to be $$
 \begin{aligned}
 \sqrt{\dfrac{10.35}{9.81}} &= 1.027 \\
 1.027 \cdot 0.05\,\text{s} &= 0.0514\,\text{s}

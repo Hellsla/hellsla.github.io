@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 05e43588749f3641
+CONTENT-HASH: a0fd0f4f94f97709
 
 ## Blocking
 
 ## Polish
-- `inquiry.json` retrieval, the 0 km/h feedback: "The cyclist was moving all the time" sits oddly with the hook, where she stops to buy milk. Something like "She travelled 4.0 km" would make the same point without the conflict. This is not an error: the average speed is still distance over total time.
+- The prompt says "several kilometres" and the answer "four kilometres"; it fits the 2 km + 2 km figure above, but the prompt could say four kilometres too.
 
 ## Checked
-batch delta review: the new retrieval question (cyclist 4.0 km in 16 min). Recomputed 15, 7.5 and 0.25 km/h. Exactly one option is correct, each distractor's feedback names its real mistake, and the question matches the hook (odometer, app, 2.0 km to the shop) and lesson-answers.py.
+batch delta review: two stop-and-think prompts (displacement vs distance; falling (t,x) line = negative direction, not a path) agree with the theory and the round-trip figure.

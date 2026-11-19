@@ -52,7 +52,7 @@
 **Given:** mass of the car $m = 1200\,\text{kg}$, initial velocity $v_0 = 54\,\text{km/h}$, final velocity $v = 0$, stopping time $\Delta t = 3.0\,\text{s}$; air resistance is neglected
 **Find:** the average braking force $F_\text{avg}$ in $\text{kN}$
 **Principle:** The road is horizontal, so the weight of the car and the normal force of the road cancel each other, and the horizontal net force is the braking friction force of the road. By the impulse–momentum principle its impulse equals the change in the car's momentum. The positive direction is the direction of motion of the car.
-**Formula:** $F\,\Delta t = mv - mv_0 = -mv_0$, so the magnitude of the force is $F_\text{avg} = \dfrac{mv_0}{\Delta t}$
+**Formula:** $I = \Delta p$, $I = F\,\Delta t$ and $p = mv$, so $F\,\Delta t = mv - mv_0 = -mv_0$, and the magnitude of the force is $F_\text{avg} = \dfrac{mv_0}{\Delta t}$
 **Conversions:** $v_0 = 54\,\text{km/h} = \dfrac{54\,\text{m}}{3.6\,\text{s}} = 15\,\text{m/s}$
 **Substitution:** $F_\text{avg} = \dfrac{1200\,\text{kg} \cdot 15\,\text{m/s}}{3.0\,\text{s}} = \dfrac{18\,000\,\text{kg}\cdot\text{m/s}}{3.0\,\text{s}} = 6000\,\text{N}$
 **Answer:** $6.0\,\text{kN}$, two significant figures like the velocity $54\,\text{km/h}$ and the time $3.0\,\text{s}$.
@@ -62,7 +62,7 @@
 **Given:** mass of the ball $m = 46\,\text{g}$, initial velocity $v_0 = 0$, final velocity $v = 70\,\text{m/s}$, contact time $\Delta t = 0.50\,\text{ms}$; the effect of the weight is neglected
 **Find:** the average force of the club $F_\text{avg}$ in $\text{kN}$
 **Principle:** During the hit the force of the club is the net force on the ball, when the effect of the weight is neglected. By the impulse–momentum principle the impulse of the force of the club equals the change in the ball's momentum.
-**Formula:** $F_\text{avg}\,\Delta t = mv - mv_0 = mv$, so $F_\text{avg} = \dfrac{mv}{\Delta t}$
+**Formula:** $I = \Delta p$, $I = F\,\Delta t$ and $p = mv$, so $F_\text{avg}\,\Delta t = mv - mv_0 = mv$, so $F_\text{avg} = \dfrac{mv}{\Delta t}$
 **Conversions:** $m = 46\,\text{g} = 0.046\,\text{kg}$ and $\Delta t = 0.50\,\text{ms} = 0.00050\,\text{s}$
 **Substitution:** $F_\text{avg} = \dfrac{0.046\,\text{kg} \cdot 70\,\text{m/s}}{0.00050\,\text{s}} = \dfrac{3.22\,\text{kg}\cdot\text{m/s}}{0.00050\,\text{s}} = 6440\,\text{N}$
 **Answer:** $6.4\,\text{kN}$, two significant figures like the mass $46\,\text{g}$, the velocity $70\,\text{m/s}$ and the time $0.50\,\text{ms}$.
@@ -82,7 +82,7 @@
 **Given:** mass of the puck $m = 0.17\,\text{kg}$, initial velocity $v_0 = 8.0\,\text{m/s}$, average force of the stick $F = 120\,\text{N}$ in the direction of motion, contact time $\Delta t = 0.025\,\text{s}$; friction from the ice is neglected
 **Find:** the velocity of the puck $v$ after the hit in $\text{m/s}$
 **Principle:** When friction is neglected, the force of the stick is the horizontal net force on the puck. By the impulse–momentum principle its impulse equals the change in the puck's momentum. The force is in the direction of motion, so the momentum increases.
-**Formula:** $F\,\Delta t = mv - mv_0$, so $v = v_0 + \dfrac{F\,\Delta t}{m}$
+**Formula:** $I = \Delta p$, $I = F\,\Delta t$ and $p = mv$, so $F\,\Delta t = mv - mv_0$, so $v = v_0 + \dfrac{F\,\Delta t}{m}$
 **Conversions:** The quantities are in SI units, so no conversions are needed; $\tfrac{\text{N}\cdot\text{s}}{\text{kg}} = \text{m/s}$.
 **Substitution:** $v = 8.0\,\text{m/s} + \dfrac{120\,\text{N} \cdot 0.025\,\text{s}}{0.17\,\text{kg}} = 8.0\,\text{m/s} + 17.65\,\text{m/s} = 25.65\,\text{m/s}$
 **Answer:** $26\,\text{m/s}$, two significant figures like the velocity $8.0\,\text{m/s}$, the mass $0.17\,\text{kg}$ and the time $0.025\,\text{s}$.
@@ -93,7 +93,7 @@
 **Find:** the velocity of the sled $v$ after the push in $\text{m/s}$
 **Principle:** When friction is neglected, the pushing force is the horizontal net force on the sled; the weight and the normal force of the snow cancel each other. By the impulse–momentum principle the impulse of the pushing force equals the change in momentum. The force changes, so the impulse is read from the area of the graph.
 **Reading the graph:** The force rises from zero to $60\,\text{N}$ by $0.20\,\text{s}$, stays at $60\,\text{N}$ until $0.80\,\text{s}$ and falls to zero at $1.00\,\text{s}$. Under the graph is a trapezoid with height $60\,\text{N}$ and parallel sides $1.00\,\text{s}$ (base) and $0.60\,\text{s}$ (top). The area is the height times the average of the sides.
-**Formula:** $I = F_\text{max} \cdot \dfrac{t_\text{base} + t_\text{top}}{2}$ and $I = mv - mv_0$, so $v = v_0 + \dfrac{I}{m}$
+**Formula:** The impulse is the area of the trapezoid, $I = F_\text{max} \cdot \dfrac{t_\text{base} + t_\text{top}}{2}$. From the impulse principle $I = \Delta p = mv - mv_0$, so $v = v_0 + \dfrac{I}{m}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $I = 60\,\text{N} \cdot \dfrac{(1.00 + 0.60)\,\text{s}}{2} = 48\,\text{N}\cdot\text{s}$ and $v = 1.0\,\text{m/s} + \dfrac{48\,\text{N}\cdot\text{s}}{24\,\text{kg}} = 1.0\,\text{m/s} + 2.0\,\text{m/s} = 3.0\,\text{m/s}$
 **Answer:** $3.0\,\text{m/s}$, two significant figures like the mass $24\,\text{kg}$ and the velocity $1.0\,\text{m/s}$.
@@ -105,7 +105,7 @@
 **Principle:** In the horizontal direction only the force of the belt acts on the passenger, so it is the net force. By the impulse–momentum principle the impulse of the force of the belt equals the change in the passenger's momentum.
 
 When the force and the time are at their greatest, the momentum to be stopped, and so the initial velocity, is also at its greatest.
-**Formula:** $F\,\Delta t = mv_0 - 0$, so $v_0 = \dfrac{F\,\Delta t}{m}$
+**Formula:** $I = \Delta p$, $I = F\,\Delta t$ and $p = mv$, so $F\,\Delta t = mv_0 - 0$, so $v_0 = \dfrac{F\,\Delta t}{m}$
 **Conversions:** $F = 10\,\text{kN} = 10\,000\,\text{N}$; finally the answer is converted to $\text{km/h}$ by multiplying by $3.6$, since $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** $v_0 = \dfrac{10\,000\,\text{N} \cdot 0.12\,\text{s}}{75\,\text{kg}} = \dfrac{1200\,\text{N}\cdot\text{s}}{75\,\text{kg}} = 16\,\text{m/s} = 16 \cdot 3.6\,\text{km/h} = 57.6\,\text{km/h}$
 **Answer:** $58\,\text{km/h}$, two significant figures like the mass $75\,\text{kg}$ and the time $0.12\,\text{s}$.
@@ -117,7 +117,7 @@ When the force and the time are at their greatest, the momentum to be stopped, a
 **Principle:** The force of the wall is the horizontal net force on the ball, and by the impulse–momentum principle its impulse is the change in the ball's momentum.
 
 By Newton's third law the ball pushes the wall with a force equal in magnitude to the force of the wall on the ball. The positive direction is chosen towards the wall: $v_0 = 8.0\,\text{m/s}$, for the clay ball $v = 0$ and for the rubber ball $v = -6.0\,\text{m/s}$.
-**Formula:** The magnitude of the force is $F = \dfrac{m\,|v - v_0|}{\Delta t}$, so $\Delta F = \dfrac{m(v_0 + v_\text{r})}{\Delta t} - \dfrac{mv_0}{\Delta t} = \dfrac{m v_\text{r}}{\Delta t}$, where $v_\text{r} = 6.0\,\text{m/s}$ is the outgoing speed of the rubber ball
+**Formula:** $I = \Delta p$, $I = F\,\Delta t$ and $p = mv$, so $F\,\Delta t = m\,|v - v_0|$, so $F = \dfrac{m\,|v - v_0|}{\Delta t}$. The difference is $\Delta F = F_\text{r} - F_\text{c} = \dfrac{m(v_0 + v_\text{r})}{\Delta t} - \dfrac{mv_0}{\Delta t} = \dfrac{m v_\text{r}}{\Delta t}$, where $F_\text{r}$ is the force of the rubber ball, $F_\text{c}$ that of the clay ball and $v_\text{r} = 6.0\,\text{m/s}$ is the outgoing speed of the rubber ball
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $\Delta F = \dfrac{0.20\,\text{kg} \cdot 6.0\,\text{m/s}}{0.020\,\text{s}} = \dfrac{1.2\,\text{kg}\cdot\text{m/s}}{0.020\,\text{s}} = 60\,\text{N}$
 **Answer:** $60\,\text{N}$, two significant figures like the mass $0.20\,\text{kg}$ and the velocity $6.0\,\text{m/s}$.
@@ -138,7 +138,7 @@ The statement about zero is wrong, because the momentum is zero only when the ve
 **Given:** mass of the stone $m = 20\,\text{kg}$, initial velocity $v_0 = 0$, impulse of the pushing force $I = 36\,\text{N}\cdot\text{s}$; friction from the ice is neglected
 **Find:** the velocity of the stone $v$ after the push in $\text{m/s}$
 **Principle:** When friction is neglected, the pushing force is the horizontal net force on the stone; the weight and the normal force from the ice cancel each other. By the impulse–momentum principle its impulse equals the change in momentum.
-**Formula:** $I = mv - mv_0$ and $v_0 = 0$, so $v = \dfrac{I}{m}$
+**Formula:** $I = \Delta p = mv - mv_0$ and $v_0 = 0$, so $v = \dfrac{I}{m}$
 **Conversions:** The quantities are in SI units, so no conversions are needed; $\tfrac{\text{N}\cdot\text{s}}{\text{kg}} = \text{m/s}$.
 **Substitution:** $v = \dfrac{36\,\text{N}\cdot\text{s}}{20\,\text{kg}} = 1.8\,\text{m/s}$
 **Answer:** $1.8\,\text{m/s}$, two significant figures like the mass $20\,\text{kg}$ and the impulse $36\,\text{N}\cdot\text{s}$.
@@ -158,7 +158,7 @@ The statement about zero is wrong, because the momentum is zero only when the ve
 **Given:** mass of the ball $m = 0.43\,\text{kg}$, initial velocity $v_0 = 0$; the velocities $v$ and contact times $\Delta t$ of five kicks in the table (example data); the effect of the weight is neglected
 **Find:** the average force the foot gives the ball $F_\text{avg}$ in $\text{N}$
 **Principle:** The measurements contain small random variation, so the means $v_\text{k}$ and $\Delta t_\text{avg}$ are used. During the kick the force of the foot is the net force on the ball, when the effect of the weight is neglected. By the impulse–momentum principle its impulse equals the change in the ball's momentum.
-**Formula:** $F_\text{avg}\,\Delta t_\text{avg} = mv_\text{k} - 0$, so $F_\text{avg} = \dfrac{mv_\text{k}}{\Delta t_\text{avg}}$
+**Formula:** $I = \Delta p$, $I = F\,\Delta t$ and $p = mv$, so $F_\text{avg}\,\Delta t_\text{avg} = mv_\text{k} - 0$, so $F_\text{avg} = \dfrac{mv_\text{k}}{\Delta t_\text{avg}}$
 **Conversions:** The sum of the velocities is $110.0\,\text{m/s}$, so $v_\text{k} = \dfrac{110.0\,\text{m/s}}{5} = 22.0\,\text{m/s}$. The sum of the contact times is $51.0\,\text{ms}$, so $\Delta t_\text{avg} = \dfrac{51.0\,\text{ms}}{5} = 10.2\,\text{ms} = 0.0102\,\text{s}$.
 **Substitution:** $F_\text{avg} = \dfrac{0.43\,\text{kg} \cdot 22.0\,\text{m/s}}{0.0102\,\text{s}} = \dfrac{9.46\,\text{kg}\cdot\text{m/s}}{0.0102\,\text{s}} = 927\,\text{N}$
 **Answer:** $9.3 \cdot 10^2\,\text{N}$, two significant figures like the mass $0.43\,\text{kg}$.
@@ -170,7 +170,7 @@ The statement about zero is wrong, because the momentum is zero only when the ve
 **Principle:** On an air track the weight and the normal force from the track cancel each other, so the horizontal net force is the force of the bumper. By the impulse–momentum principle its impulse equals the change in the cart's momentum.
 
 The cart stops from the same velocity with every bumper, so the change in momentum is the same every time.
-**Formula:** $F_\text{avg}\,\Delta t = 0 - mv_0$, so the magnitude of the force is $F_\text{avg} = \dfrac{mv_0}{\Delta t}$
+**Formula:** $I = \Delta p$, $I = F\,\Delta t$ and $p = mv$, so $F_\text{avg}\,\Delta t = 0 - mv_0$, and the magnitude of the force is $F_\text{avg} = \dfrac{mv_0}{\Delta t}$
 **Conversions:** $6.0\,\text{ms} = 0.0060\,\text{s}$ and $80\,\text{ms} = 0.080\,\text{s}$; the magnitude of the change in momentum is $mv_0 = 0.50\,\text{kg} \cdot 0.80\,\text{m/s} = 0.40\,\text{kg}\cdot\text{m/s}$
 **Substitution:** a) $F_\text{avg} = \dfrac{0.40\,\text{kg}\cdot\text{m/s}}{0.0060\,\text{s}} = 67\,\text{N}$ and b) $F_\text{avg} = \dfrac{0.40\,\text{kg}\cdot\text{m/s}}{0.080\,\text{s}} = 5.0\,\text{N}$
 **Answer:** b) $5.0\,\text{N}$; in part a the force of the metal bumper is $67\,\text{N}$. The results are given to two significant figures like the mass and the velocity.
@@ -187,7 +187,7 @@ By the impulse–momentum principle the impulse equals the change in momentum. T
 **Reading the graph:** The points are plotted in the $(t, F)$ coordinate system and joined with a broken line, so seven trapezoids lie under the graph. The width of each is $10\,\text{ms}$ and the heights are the values of adjacent measurements.
 
 At the end points $F = 0$, so the sum of the areas of the trapezoids is $\Delta t$ times the sum of the forces at the interior points. The sum of the interior points is $144.0\,\text{N}$.
-**Formula:** $I = \Delta t \cdot \Sigma F$ and $I = m\,\Delta v$, so $\Delta v = \dfrac{I}{m}$
+**Formula:** The impulse is the area under the graph, $I = \Delta t \cdot \Sigma F$. From the impulse principle $I = \Delta p = m\,\Delta v$, so $\Delta v = \dfrac{I}{m}$
 **Conversions:** $\Delta t = 10\,\text{ms} = 0.010\,\text{s}$
 **Substitution:** $I = 0.010\,\text{s} \cdot 144.0\,\text{N} = 1.44\,\text{N}\cdot\text{s}$ and $\Delta v = \dfrac{1.44\,\text{N}\cdot\text{s}}{0.50\,\text{kg}} = 2.88\,\text{m/s}$
 **Answer:** $2.9\,\text{m/s}$, two significant figures like the mass $0.50\,\text{kg}$ and the velocity $1.50\,\text{m/s}$ rounded.
@@ -198,9 +198,9 @@ At the end points $F = 0$, so the sum of the areas of the trapezoids is $\Delta 
 **Find:** b) the velocity of the dummy $v_0$ before the collision in $\text{km/h}$; a) the impulse as an area; c) the average force on hitting a rigid obstacle and the role of the airbag
 **Principle:** The force of the airbag is the horizontal net force on the dummy. The force varies, so its impulse is the area under the $(t, F)$ graph. By the impulse–momentum principle the impulse equals the change in the dummy's momentum. The positive direction is the direction of travel, and the force points the opposite way, so the impulse is negative.
 **Reading the graph:** The points are joined with a broken line, so ten trapezoids, each $10\,\text{ms}$ wide, lie under it. At the end points $F = 0$, so the area is $\Delta t$ times the sum of the interior points, $98.1\,\text{kN}$. The greatest force is $17.4\,\text{kN}$.
-**Formula:** $-I = 0 - mv_0$, so $v_0 = \dfrac{I}{m}$, where $I$ is the magnitude of the impulse of the force
+**Formula:** The impulse is the area under the graph, $I = \Delta t \cdot \Sigma F$. From the impulse principle $-I = \Delta p = 0 - mv_0$, so $v_0 = \dfrac{I}{m}$, where $I$ is the magnitude of the impulse of the force. For the rigid obstacle the stopping time is $\Delta t_\text{e} = 25\,\text{ms}$ and $I = F_\text{avg}\,\Delta t_\text{e}$, so $F_\text{avg} = \dfrac{I}{\Delta t_\text{e}}$
 **Conversions:** $\Delta t = 10\,\text{ms} = 0.010\,\text{s}$, $98.1\,\text{kN} = 98\,100\,\text{N}$ and $1\,\text{m/s} = 3.6\,\text{km/h}$
-**Substitution:** a) $I = 0.010\,\text{s} \cdot 98\,100\,\text{N} = 981\,\text{N}\cdot\text{s}$. b) $v_0 = \dfrac{981\,\text{N}\cdot\text{s}}{70\,\text{kg}} = 14.01\,\text{m/s} = 14.01 \cdot 3.6\,\text{km/h} = 50.45\,\text{km/h}$. c) The same change in momentum was stopped in $0.025\,\text{s}$: $F_\text{avg} = \dfrac{981\,\text{N}\cdot\text{s}}{0.025\,\text{s}} = 39\,240\,\text{N}$.
+**Substitution:** a) $I = 0.010\,\text{s} \cdot 98\,100\,\text{N} = 981\,\text{N}\cdot\text{s}$. b) $v_0 = \dfrac{981\,\text{N}\cdot\text{s}}{70\,\text{kg}} = 14.01\,\text{m/s} = 14.01 \cdot 3.6\,\text{km/h} = 50.45\,\text{km/h}$. c) The same change in momentum was stopped in $\Delta t_\text{e} = 0.025\,\text{s}$: $F_\text{avg} = \dfrac{981\,\text{N}\cdot\text{s}}{0.025\,\text{s}} = 39\,240\,\text{N}$.
 **Answer:** b) $50\,\text{km/h}$, two significant figures like the mass $70\,\text{kg}$. In parts a and c the impulse is $9.8 \cdot 10^2\,\text{N}\cdot\text{s}$ and the average force with a rigid obstacle is $39\,\text{kN}$.
 **Reasonableness:** The velocity $50\,\text{km/h}$ is a typical crash-test velocity. The average force of the airbag $\dfrac{981\,\text{N}\cdot\text{s}}{0.100\,\text{s}} = 9.81\,\text{kN}$ is smaller than the greatest force $17.4\,\text{kN}$, as it should be.
 
@@ -212,7 +212,7 @@ Justification for c: with a rigid obstacle the average force $39\,\text{kN}$ is 
 **Principle:** In the air the acceleration of the ball is $g$ downwards, so the velocity before the hit follows from the falling time and the velocity after the bounce from the rising time, because the ball is at rest at the highest point. The positive direction is up.
 
 During the contact the force of the floor $N$ upwards and the weight $G = mg$ downwards act on the ball, so the net force is $N - G$. By the impulse–momentum principle its impulse equals the change in the ball's momentum.
-**Formula:** $v_1 = -g\,t_\text{fall}$ and $v_2 = g\,t_\text{rise}$; $(N_\text{avg} - mg)\,\Delta t = mv_2 - mv_1$, so $N_\text{avg} = mg + \dfrac{m(v_2 - v_1)}{\Delta t}$
+**Formula:** For uniformly accelerated motion $v = v_0 + at$ and $a = -g$, so in the fall $v_1 = -g\,t_\text{fall}$ and in the rise to the top $0 = v_2 - g\,t_\text{rise}$, that is $v_2 = g\,t_\text{rise}$. From the impulse principle $I = \Delta p$, $I = \Sigma F\,\Delta t$, $\Sigma F = N_\text{avg} - mg$ and $p = mv$ we get $(N_\text{avg} - mg)\,\Delta t = mv_2 - mv_1$, so $N_\text{avg} = mg + \dfrac{m(v_2 - v_1)}{\Delta t}$
 **Conversions:** The falling time is $0.500\,\text{s}$, the contact time $\Delta t = 0.512\,\text{s} - 0.500\,\text{s} = 0.012\,\text{s}$ and the rising time $0.912\,\text{s} - 0.512\,\text{s} = 0.400\,\text{s}$.
 **Substitution:** a) $v_1 = -9.81\,\text{m/s}^2 \cdot 0.500\,\text{s} = -4.905\,\text{m/s}$ and $v_2 = 9.81\,\text{m/s}^2 \cdot 0.400\,\text{s} = 3.924\,\text{m/s}$. b) The change in momentum is $$\begin{aligned} &m(v_2 - v_1) \\ &= 0.60\,\text{kg} \\ &\cdot (3.924 + 4.905)\,\text{m/s} \\ &= 5.297\,\text{kg}\cdot\text{m/s} \end{aligned}$$, and the weight is $mg = 0.60\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 5.886\,\text{N}$. So $N_\text{avg} = 5.886\,\text{N} + \dfrac{5.297\,\text{N}\cdot\text{s}}{0.012\,\text{s}} = 5.886\,\text{N} + 441.5\,\text{N} = 447.3\,\text{N}$. c) For the clay ball $v_2 = 0$, so $$\begin{aligned} &N_\text{avg} = 5.886\,\text{N} \\ &+ \dfrac{0.60\,\text{kg} \cdot 4.905\,\text{m/s}}{0.012\,\text{s}} \\ &= 5.886\,\text{N} + 245.3\,\text{N} \\ &= 251.1\,\text{N} \end{aligned}$$.
 **Answer:** b) $4.5 \cdot 10^2\,\text{N}$, two significant figures like the mass $0.60\,\text{kg}$ and the contact time $0.012\,\text{s}$. The velocities in part a are $-4.9\,\text{m/s}$ and $+3.9\,\text{m/s}$, and for the clay ball of part c the force is $2.5 \cdot 10^2\,\text{N}$.

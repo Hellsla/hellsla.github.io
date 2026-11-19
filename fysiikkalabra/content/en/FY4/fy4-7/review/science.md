@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: cc2ac867e9ff6f7b
+CONTENT-HASH: 81bfa5835752fa5e
 
 ## Blocking
 
 ## Polish
-- None.
 
 ## Checked
-batch delta review: the halfpipe retrieval question (3.0 m/s straight up). Recomputed 0.46, 0.92, 0.31 and 0.15 (h = v²/2g, the same as hook-h3 on the frictionless ramp), with the dimension remarks right and exactly one option correct. The roller-coaster photo makes no physics claim.
+batch delta review: four prompts: 3^2 = 9; friction is non-conservative and turns kinetic energy into internal energy (guardrail wording); frictionless ramp -30 J E_k gives +30 J E_p, mechanical energy constant.

@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: beea806e1660b981
+CONTENT-HASH: 491e676514350911
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] Kaava blocks — none beyond the work-queue form; the aligned display blocks render with equals signs in one column.
 
 ## Checked
-- Delta (md-paragraphs): solutions.md of fy7-1 (fi-easy) cut into paragraphs. Opened full-size captures of opened solutions at 1280 px (level 1 part 3, level 2 part 5; lesson folder review/shots, current for this hash). Layout, card containment and spacing survive; formulas, units and decimal commas unchanged; no clipping, overflow or red KaTeX. No figure captures apply to the changed text.
-- Hash identical at start and end.
+- Delta (round 1, fi-easy, 8g Kaava blocks): opened open-exercises-1280-3 and open-exercises-L2-1280-3 (task 1-3 new three-row Kaava; neighbours).
+- Changed Kaava blocks render as aligned display blocks in a card, = column aligned, fractions and roots legible, units and the order principle -> equation -> substitution kept; Sijoitus, Vastaus and Järkevyys layout unchanged; nothing clipped at 1280 px.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

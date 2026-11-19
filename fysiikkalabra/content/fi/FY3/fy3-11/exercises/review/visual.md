@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3962664527ed4eb6
+CONTENT-HASH: c6cf825435b84022
+SCOPE: delta wording from 3962664527ed4eb6 base 64d4935
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy3-11-open-exercises-L2-1280-1.png, 13-10 Muunnokset — a one-word paragraph "joten" between two display boxes; acceptable, optional: "joten" could join the next display's lead-in.
+(none)
 
 ## Checked
-- Round 1, delta (md-paragraphs): solutions.md only, paragraphs cut, words unchanged. No 360 px captures exist; 390 px used.
-- 1280 px with solutions open: fy3-11-open-exercises-1280-1.png (13-1: Muunnokset text, Sijoitus rows aligned, answer set apart, Järkevyys unit chain); fy3-11-open-exercises-L2-1280-1.png (13-10); fy3-11-open-tarkista-1280-1.png (model answers in cards).
-- 390 px: fy3-11-stage-exercises-390.png (level cards readable); fy3-11-example-390-1.png (stage paragraph structure).
-- Hash same at start and end.
+- Delta, wording only: the diff read in full. The prefix "Esimerkkiaineisto:" is gone; each task now opens with a capital letter and reads as a normal sentence. No numbers, symbols, units or LaTeX changed.
+- Captures: opened fy3-4 L3 part 1 and 4 at 1280 px (content/fi/FY3/fy3-4/review/shots), which show the layout of this kind of task card; the other sets' captures were not opened, because the diff changes only the first words of a text.
+- Hash unchanged at the end.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

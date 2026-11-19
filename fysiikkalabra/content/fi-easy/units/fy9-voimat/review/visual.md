@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: cd9e21b2902c37f6
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 58568037df090f6a
 
 ## Blocking
-- (none)
+(none)
 
 ## Polish
-- (none)
+- [Minor] sovella/solutions.md s5 a) — the break leaves the sentence on measurement 5 as a lone paragraph between the Periaate and Kaava lines; optionally keep it inside Periaate. Not needed.
 
 ## Checked
-- Hunks: inquiry.json Lähtötaso 6 prompt; solutions.md Järkevyys of the winch task and Periaate of the limit-angle task.
-- Opened `fy9-voimat-stage-ennusta-390-3.png`: the prompt reads "Lähtökitka eli täysin kehittynyt lepokitka on $\mu_0 N = 90\,\text{N}$" on two lines, the four options unchanged and whole.
-- Opened `fy9-voimat-stage-exercises-390-4.png`: "Luiska pienentää tarvittavaa voimaa, ei työtä. Kitka vie tästä hyödystä kuitenkin paljon." inside the Järkevyys block, $2{,}7\,\text{kN}$ KaTeX, nothing clipped.
-- Opened `fy9-voimat-stage-exercises-390-36.png`: "…on yhtä suuri kuin lähtökitka eli täysin kehittynyt lepokitka."; Kaava and Sijoitus under it intact.
-- The term is worded the same in all three places and as in the unit's theory.
-- Page overflow at 390 and 1280 px, every box open: 0 px.
+- Diff origin/main...HEAD for fi-easy (word-level): only blank-line paragraph breaks in sovella/solutions.md and the inquiry.json model field; words, maths, figures unchanged.
+- Every new break falls at a sentence boundary outside inline/display maths (before a voimakuvio fence, after a closing $$, between equilibrium and changed-situation parts); no split chain; paragraphs under about 120 words.
+- Read the previous Sovella visual report (PASS) as evidence.
+- Opened captures: fi-easy/review/shots/fy9-voimat-stage-sovella-390-5.png (fi) and en/.../sovella-1280-3.png (en), the same page structure for all languages: tasks, hints, Näytä ratkaisu cards readable, nothing clipped, no horizontal overflow.
+- Gap: I did not open the captures of the opened model solutions with the new breaks specifically in fi-easy; the captures seen show the closed/just-opened solution start. Figures unchanged and not re-inspected.

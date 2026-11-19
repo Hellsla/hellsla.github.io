@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: ce981cbb7ceb9e3a
-SCOPE: delta: round 3, the fix of round 2 in s7 (Jousen kalibrointi) c criterion `calculation`; s8 grading panel re-checked; 360 px
-Round 3: delta against the version round 2 reviewed (fix round 2).
+CONTENT-HASH: bdc685a98f31ec78
 
 ## Blocking
-(none) The round-2 Major (literal backslash-n in the s7 c formula, red KaTeX error) is fixed in the fi-easy file: real newlines, three aligned rows render.
+- none
 
 ## Polish
-- [Minor] s7/s8 Sijoitus boxes end in ";" or ","; same as older tasks, optional.
+- [Minor] sovella/solutions.md s3 d) — pre-existing, not in this diff: text after the framed answer starts with a lowercase fragment; begin the sentence properly.
 
 ## Checked
-- Rebuilt fy9-mittaaminen and rendered preview/fi-easy/fy9-mittaaminen.html in headless Chrome at 360 px with every details element open (s7 and s8 grading panels included): 0 `katex-error` elements, 375 formulas rendered; 0 errors without opening too.
-- DOM of the s7 c block read: `x &= \dfrac{4{,}5\,\text{N}}{30{,}0\,\text{N/m}}` etc. present, no raw `\n` text. Hash re-run: ce981cbb7ceb9e3a.
-- Round-2 card and figure checks stand; only JSON line breaks changed.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+- Read git diff origin/main...HEAD for fi-easy (sovella/solutions.md only, 52 insertions, 12 deletions): paragraph breaks only; words, maths, figures unchanged. Read the earlier sovella/review/visual.md as evidence.
+- Opened fi-easy stage-exercises-390-6 (s1 d: model answer in short paragraphs, display block in Also accepted intact) and -31 (s3 start of next task; other changed spots not separately opened here).
+- Paragraphs are readable at 390 px, no clipping, no stray empty paragraphs, display math blocks unbroken. Hash re-run at the end: unchanged.

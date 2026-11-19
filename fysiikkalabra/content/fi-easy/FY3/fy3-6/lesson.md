@@ -330,7 +330,7 @@ Kuuma vesi on vasemmalla puolella, kuten yleisessä yhtälössä. Viimeisen ryhm
 Kolmas virhe on muuntaa $\Delta T$ kelvineiksi lisäämällä 273. Lämpötilan muutos on sama kummallakin asteikolla.
 
 ## Tiivistelmä
-- Lämpömäärä on verrannollinen massaan ja lämpötilan muutokseen: $Q = c m \Delta T$. Ominaislämpökapasiteetti $c$ riippuu aineesta. Vedellä se on suuri, $4190\,\text{J/(kg}\cdot\text{K)}$.
+- Lämpömäärä on verrannollinen massaan ja lämpötilan muutokseen: $Q = c m \Delta T$, kun olomuoto ei muutu. Ominaislämpökapasiteetti $c$ riippuu aineesta. Vedellä se on suuri, $4190\,\text{J/(kg}\cdot\text{K)}$.
 - Lämpökapasiteetti $C = cm$ kertoo, kuinka monta joulea koko kappaleen lämmittäminen yhdellä kelvinillä vaatii.
 - Eristetyssä astiassa kuuman luovuttama lämpömäärä on yhtä suuri kuin kylmän vastaanottama: $$\begin{aligned} &c_1 m_1 (T_1 - T) \\ &= c_2 m_2 (T - T_2) \end{aligned}$$. Tasapainolämpötila $T$ ratkaistaan keräämällä $T$:n termit samalle puolelle. Se on lämpökapasiteeteilla painotettu keskiarvo. Se ei yleensä ole alkulämpötilojen tavallinen keskiarvo.
 - Kalorimetrisellä mittauksella määritetään tuntemattoman aineen ominaislämpökapasiteetti veden avulla.

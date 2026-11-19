@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7bec1da5aa5477b3
-
+CONTENT-HASH: a0a4d834902f878c
+SCOPE: delta caption-label,md-paragraphs,reflow,wording from 7bec1da5aa5477b3 base b5600a63ddae086b6cc3d3008ca7ed5c2f0deb34
 ## Blocking
-None.
-
+(none)
 ## Polish
-1. L2-09 solution: state the slope (0.275 kPa/°C) and result (about -273 °C) in the reading step so the 5 % tolerance is checkable.
-
+(none)
 ## Checked
-- Round 2 delta judged in context (round-1 findings addressed).
-- Only solution wording changed: L2-09 now says the axis does not reach zero pressure, so the zero point is calculated from the slope, tolerance 5 %; L2-10 'lähes suoralla' matches the data (not exactly collinear). The figure shows five points, description lists them and does not give the answer.
-- Axis ends at -150 °C, so extrapolation by calculation is really needed; consistent with the lab goal (absolute zero by extrapolation).
+- Delta judged in context: the prefix "Esimerkkiaineisto:" removed from task texts; no numbers, symbols, data or questions changed.
+- Each task now opens with the situation (e.g. a sentence starting with the subject in Finnish nominative/partitive), grammatical without the prefix; the question still comes last.
+- Solutions.md changes are presentation only (reflow / paragraphs); levels, figures and answer fields untouched.

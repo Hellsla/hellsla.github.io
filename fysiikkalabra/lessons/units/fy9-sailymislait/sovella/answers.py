@@ -99,4 +99,36 @@ out.update({f"{S}-s6-a": round(v6, 3), f"{S}-s6-Ep": round(M6 * g * h6, 1), f"{S
             f"{S}-s6-c": round(F_soil / 1000, 2), f"{S}-s6-weight": round((M6 + mp) * g, 1),
             f"{S}-s6-Q1": round(Q1, 1), f"{S}-s6-dT1": round(dT1, 4), f"{S}-s6-d": round(n_blows * dT1, 2)})
 
+# s7: the sled on a slope (example data; E_p0 = 40 J and E_k = 25 J read from fy4-8/palkit-asteikko)
+m7, Ep7, Ek7, L7 = 2.0, 40.0, 25.0, 6.0
+h7 = Ep7 / (m7 * g)
+W7 = Ek7 - Ep7                                      # J, the work of friction (negative)
+F7 = -W7 / L7                                       # N, friction force
+v7 = math.sqrt(2 * Ek7 / m7)
+v7_free = math.sqrt(2 * Ep7 / m7)
+alpha7 = math.asin(h7 / L7)
+mu7 = F7 / (m7 * g * math.cos(alpha7))
+m7b = 3.0
+Ep7b = m7b * g * h7
+Ek7b = Ep7b + (-mu7 * m7b * g * math.cos(alpha7) * L7)
+v7b = math.sqrt(2 * Ek7b / m7b)
+out.update({f"{S}-s7-a": round(h7, 3), f"{S}-s7-b-W": round(W7, 2), f"{S}-s7-b-F": round(F7, 3),
+            f"{S}-s7-c-v": round(v7, 3), f"{S}-s7-c-v0": round(v7_free, 3), f"{S}-s7-share": round(100 * -W7 / Ep7, 1),
+            f"{S}-s7-alpha": round(math.degrees(alpha7), 1), f"{S}-s7-mu": round(mu7, 3),
+            f"{S}-s7-d": round(v7b, 3), f"{S}-s7-d-Ep": round(Ep7b, 2), f"{S}-s7-d-W": round(Ek7b - Ep7b, 2), f"{S}-s7-d-Ek": round(Ek7b, 2),
+            f"{S}-s7-d-v": round(v7b, 3), f"{S}-s7-red": round(100 * (1 - v7 / v7_free), 1)})
+
+# s8: the kick on a football (example data; the triangle 900 N, 12 ms read from fy4-9/tarkistus-kolmio)
+m8, F8, T8, h8obs = 0.43, 900.0, 0.012, 6.5
+I8 = 0.5 * F8 * T8
+v8 = I8 / m8
+Ek8 = 0.5 * m8 * v8 ** 2
+h8 = v8 ** 2 / (2 * g)
+W8 = m8 * g * h8obs - Ek8                           # J, the work of air resistance (negative)
+Fa8 = -W8 / h8obs
+out.update({f"{S}-s8-a": round(I8, 3), f"{S}-s8-b": round(v8, 3), f"{S}-s8-c-Ek": round(Ek8, 2), f"{S}-s8-c-h": round(h8, 3),
+            f"{S}-s8-d-W": round(W8, 2), f"{S}-s8-d-F": round(Fa8, 3), f"{S}-s8-Fmean": round(F8 / 2, 1),
+            f"{S}-s8-share": round(100 * -W8 / Ek8, 1), f"{S}-s8-Epobs": round(m8 * g * h8obs, 2),
+            f"{S}-s8-weight": round(m8 * g, 2), f"{S}-s8-sq": round(0.2 * 27, 1)})
+
 print(json.dumps(out))

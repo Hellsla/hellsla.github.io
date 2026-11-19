@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: cb76d2c58d1c9cb6
+CONTENT-HASH: 7b9ce6d0e94df4b8
 
 ## Blocking
 - none
 
 ## Polish
-- Edellisen kierroksen huomio ei kuulunut tähän muutokseen: L2-09/L2-10:n kysymys ei ole viimeisenä; voi korjata myöhemmin.
+- none
 
 ## Checked
-batch delta review: kulmamerkin typografia tehtävissä, palautteessa ja ratkaisuissa (antureiden kallistus, johdin ja kompassi); sisältö ja luvut ennallaan; esimerkkiaineisto-merkintä ohjeistuksen mukaan. Hash sama alussa ja lopussa.
+- Delta (Kaava-vaihe): perusyhtälö tai peruslaki ensin, sitten johdettu kaava, symbolinen sieventäminen ja vasta sitten sijoitus; järjestys on looginen ja seurattavissa.
+- Kaavarivit ovat samat kuin suomenkielisessä, jo hyväksytyssä versiossa; muuttuneet rivit eivät muuta lukuja, yksiköitä tai vastauksia.
+- Sijoitus käyttää viimeistä symbolista muotoa; Periaate-vaihe ja Kaava-vaihe täsmäävät.
+- Selkeä suomi: ei uusia vaikeita sanoja; Mallivastausten kappalejako parantaa luettavuutta.
+- Hash sama alussa ja lopussa.

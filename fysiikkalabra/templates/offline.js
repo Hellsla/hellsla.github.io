@@ -1,6 +1,15 @@
 /* Registers the service worker (work queue 17a PR 1). Only on https and localhost: not file://, not preview/.
    After the first install the page tells the worker which files it has already loaded, so the page works offline at once. */
 (function () {
+  // Persistent storage (work queue 17a PR 2): once the student has made a first attempt (event fl:attempt, lesson.js) the page asks the
+  // browser to keep the site's data. Only where the request shows no permission prompt (a prompt would be new interface): Chromium and
+  // Safari decide silently; Firefox asks the user, so it is left out. Nothing is stored by this and nothing is shown.
+  if (navigator.storage && navigator.storage.persist && !/Firefox\//.test(navigator.userAgent)) {
+    document.addEventListener("fl:attempt", function ask() {
+      document.removeEventListener("fl:attempt", ask);
+      try { navigator.storage.persisted().then(function (p) { return p || navigator.storage.persist(); }).catch(function () {}); } catch (e) { /* none */ }
+    });
+  }
   var s = document.currentScript;
   if (!s || !("serviceWorker" in navigator)) return;
   var h = location.hostname;

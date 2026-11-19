@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a33c7f3328ffbc31
+CONTENT-HASH: 483bfc161f1dcff8
+
 ## Blocking
 
+
 ## Polish
+- None.
 
 ## Checked
-- The diff changes one clause in lesson.md: "koska lanka on kappaleiden välinen sisäinen voima" became "koska langan jännitysvoima on kappaleiden välinen sisäinen voima". A string is not a force, so the new wording is the correct one.
-- The physics holds: for the system of cart and weight the tension acts on the two bodies with equal magnitude and, along the string's direction of motion, in opposite senses, so it cancels when the two equations of motion are added. This rests on the massless string and frictionless pulley the section already assumes. (C)
-- The clause agrees with the equations around it: two unknowns $a$ and $T$, two equations, $T$ eliminated by adding, then $T$ solved. No number, symbol or formula changed.
-- Hash a33c7f3328ffbc31 at the start and at the end.
+batch delta review: two new blocks: T₁ and T₂ act on different bodies and are not a third-law pair; the reaction to T₁ is the cart's pull on the string, correct; a = m₂g/(m₁+m₂) falls when m₁ grows, correct. Inquiry change presentation only; knowns/question split changes no number.

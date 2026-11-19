@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e7f8269acb1357b3
+CONTENT-HASH: c5ba678147e84a10
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy7-11-L3-05 task text — the caption still reads "(esimerkkiaineisto)" in the capture while exercises.json says the marker was taken out; recheck that the capture matches the committed text (not judged further, teacher's decision).
+- none
 
 ## Checked
-- Delta (md-paragraphs and the caption marker). Opened fy7-11-open-exercises-L3-1280-5 and -8: task 11-20 with its table, the Sijoitus and Kaava blocks of the prism task (aligned formulas, boxes) render without overflow or clipping. The new paragraphs after Sijoitus and Mallivastaus sit as separate blocks in the card; not every one was located by position.
-- Wording unchanged by the diff, fluent.
+- content/fi/FY7/fy7-11/review/shots/fy7-11-open-exercises-1280-5.png (regenerated 18:3x, stamp matches hash): 11-5 Kaava block. At 1280 px the capture shows the first row on one line ($\delta_\text{k} = (\alpha-\beta) + (180^\circ-2\beta) + (\alpha-\beta)$), i.e. the renderer joins the `&+` continuation when it fits; equals signs aligned, four rows, nothing clipped, Sijoitus/Vastaus/Järkevyys intact.
+- Phone width not captured (exercise captures exist at 1280 only); judged from the coordinator's `check_layout.py fy7-11 --width 352` pass on the rebuilt page in this language, which failed by 7 px before the split. That is deterministic evidence, not my own look.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

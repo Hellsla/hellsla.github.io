@@ -71,7 +71,7 @@ The direction of circulation does not depend on the material of the wire but on 
 **Given:** current $I = 2.0\,\text{A}$ in both; coil $N = 250$ and $l = 10\,\text{cm}$; distance from the wire $r = 2.0\,\text{cm}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Find:** the ratio $B_\text{coil} : B_\text{wire}$
 **Principle:** The field at the centre of the coil is calculated with the formula for a long coil and the field of the wire with the formula for a long straight wire. Finally the ratio of the fields is calculated.
-**Formula:** $B_\text{coil} = \mu_0 \dfrac{N I}{l}$ and $B_\text{wire} = \dfrac{\mu_0 I}{2\pi r}$
+**Formula:** $$\begin{aligned} B_\text{coil} &= \mu_0 \dfrac{N I}{l} \\ B_\text{wire} &= \dfrac{\mu_0 I}{2\pi r} \\ B_\text{coil} : B_\text{wire} &= \dfrac{B_\text{coil}}{B_\text{wire}} \end{aligned}$$
 **Conversions:** $l = 0.10\,\text{m}$ and $r = 0.020\,\text{m}$.
 **Substitution:** $B_\text{coil} = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \dfrac{250 \cdot 2.0\,\text{A}}{0.10\,\text{m}} = 6.283 \cdot 10^{-3}\,\text{T}$ and $B_\text{wire} = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 2.0\,\text{A}}{2\pi \cdot 0.020\,\text{m}} = 2.0 \cdot 10^{-5}\,\text{T}$, so $\dfrac{B_\text{coil}}{B_\text{wire}} = \dfrac{6.283 \cdot 10^{-3}\,\text{T}}{2.0 \cdot 10^{-5}\,\text{T}} = 314$
 **Answer:** about $310$ times, two significant figures like the current $2.0\,\text{A}$ and the distance $2.0\,\text{cm}$.
@@ -81,7 +81,7 @@ The direction of circulation does not depend on the material of the wire but on 
 **Given:** target field $B = 20\,\text{mT}$, turns $N = 1200$, length $l = 0.30\,\text{m}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Find:** current $I$ of the coil in amperes
 **Principle:** The coil is long, so inside it $B = \mu_0 \tfrac{N I}{l}$. The field is directly proportional to the current, so the required current is found by solving $I$ from the formula.
-**Formula:** $B = \mu_0 \dfrac{N I}{l}$, from which $I = \dfrac{B l}{N \mu_0}$
+**Formula:** $$\begin{aligned} B &= \mu_0 \dfrac{N I}{l} \\ I &= \dfrac{B l}{N \mu_0} \end{aligned}$$
 **Conversions:** $B = 20\,\text{mT} = 20 \cdot 10^{-3}\,\text{T}$; the length is already in metres.
 **Substitution:** $I = \dfrac{20 \cdot 10^{-3}\,\text{T} \cdot 0.30\,\text{m}}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 1200} = 3.979\,\text{A}$
 **Answer:** $4.0\,\text{A}$, two significant figures like the field $20\,\text{mT}$ and the length $0.30\,\text{m}$.
@@ -91,7 +91,7 @@ The direction of circulation does not depend on the material of the wire but on 
 **Given:** long straight wire, current $I = 6.0\,\text{A}$, magnitude of the field $B = 14\,\mu\text{T}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Find:** distance $r$ in centimetres
 **Principle:** The field of a long straight wire weakens in inverse proportion to the distance, so the field is $14\,\mu\text{T}$ at exactly one distance. It is solved from the formula for a straight wire.
-**Formula:** $B = \dfrac{\mu_0 I}{2\pi r}$, from which $r = \dfrac{\mu_0 I}{2\pi B}$
+**Formula:** $$\begin{aligned} B &= \dfrac{\mu_0 I}{2\pi r} \\ r &= \dfrac{\mu_0 I}{2\pi B} \end{aligned}$$
 **Conversions:** $B = 14\,\mu\text{T} = 14 \cdot 10^{-6}\,\text{T}$; finally $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** $r = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 6.0\,\text{A}}{2\pi \cdot 14 \cdot 10^{-6}\,\text{T}} = 0.0857\,\text{m} = 8.57\,\text{cm}$
 **Answer:** $8.6\,\text{cm}$, two significant figures like the current $6.0\,\text{A}$ and the field $14\,\mu\text{T}$.
@@ -101,7 +101,7 @@ The direction of circulation does not depend on the material of the wire but on 
 **Given:** length of wire $L = 25\,\text{m}$, diameter of the tube $d = 4.0\,\text{cm}$, length of the coil $l = 0.20\,\text{m}$, current $I = 2.0\,\text{A}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Find:** magnetic flux density $B$ at the centre of the coil in millitesla
 **Principle:** First we calculate the number of turns: one turn uses a length of wire equal to the circumference $\pi d$ of the tube. The coil is five times as long as it is wide, so the formula for a long coil can be used at its centre.
-**Formula:** $N = \dfrac{L}{\pi d}$ and $B = \mu_0 \dfrac{N I}{l}$, so $B = \dfrac{\mu_0 L I}{\pi d\, l}$
+**Formula:** $$\begin{aligned} N &= \dfrac{L}{\pi d} \\ B &= \mu_0 \dfrac{N I}{l} \\ &= \mu_0 \dfrac{L I}{\pi d\, l} \\ &= \dfrac{\mu_0 L I}{\pi d\, l} \end{aligned}$$
 **Conversions:** $d = 4.0 \cdot 0.01\,\text{m} = 0.040\,\text{m}$; finally $1\,\text{mT} = 10^{-3}\,\text{T}$.
 **Substitution:** $N = \dfrac{25\,\text{m}}{\pi \cdot 0.040\,\text{m}} = 198.9$ and $B = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \dfrac{198.9 \cdot 2.0\,\text{A}}{0.20\,\text{m}} = 2.50 \cdot 10^{-3}\,\text{T}$
 **Answer:** $2.5\,\text{mT}$, two significant figures like the length of wire $25\,\text{m}$ and the diameter $4.0\,\text{cm}$.
@@ -113,7 +113,7 @@ The direction of circulation does not depend on the material of the wire but on 
 **Principle:** The vectors of the fields are added. By the right-hand rule, the fields of currents in opposite directions point the same way between the wires: when the thumb points up in one wire and down in the other, the fingers curl in the same direction between the wires.
 
 Midway, each wire is $5.0\,\text{cm}$ away, so the fields are equal and strengthen each other.
-**Formula:** $B = 2 \cdot \dfrac{\mu_0 I}{2\pi r}$, where $r = \dfrac{d}{2}$, so $B = \dfrac{\mu_0 I}{\pi r}$
+**Formula:** $$\begin{aligned} r &= \dfrac{d}{2} \\ B_1 &= \dfrac{\mu_0 I}{2\pi r} \\ B &= 2 B_1 \\ &= 2 \cdot \dfrac{\mu_0 I}{2\pi r} \\ &= \dfrac{\mu_0 I}{\pi r} \end{aligned}$$
 **Conversions:** $r = 5.0 \cdot 0.01\,\text{m} = 0.050\,\text{m}$; finally $1\,\mu\text{T} = 10^{-6}\,\text{T}$.
 **Substitution:** $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 10\,\text{A}}{\pi \cdot 0.050\,\text{m}} = 8.0 \cdot 10^{-5}\,\text{T} = 80\,\mu\text{T}$
 **Answer:** $80\,\mu\text{T}$, two significant figures like the currents $10\,\text{A}$ and the distance $10\,\text{cm}$.
@@ -126,7 +126,7 @@ Midway, each wire is $5.0\,\text{cm}$ away, so the fields are equal and strength
 
 The line is drawn through the middle of the set of points, and the slope is calculated from points of the line, not from measurement points.
 **Reading the graph:** The points lie on a rising straight line with points on both sides of it. The fitted line passes approximately through the points $(0\,\text{A};\ 0.06\,\text{mT})$ and $(3.0\,\text{A};\ 7.59\,\text{mT})$, which have been read from the line far apart. The slope is $A = \dfrac{7.59\,\text{mT} - 0.06\,\text{mT}}{3.0\,\text{A} - 0\,\text{A}} = 2.51\,\tfrac{\text{mT}}{\text{A}}$.
-**Formula:** $A = \mu_0 \dfrac{N}{l}$, from which $\mu_0 = \dfrac{A l}{N}$
+**Formula:** $$\begin{aligned} A &= \mu_0 \dfrac{N}{l} \\ \mu_0 &= \dfrac{A l}{N} \end{aligned}$$
 **Conversions:** $A = 2.51\,\tfrac{\text{mT}}{\text{A}} = 2.51 \cdot 10^{-3}\,\tfrac{\text{T}}{\text{A}}$; finally $1\,\mu\text{Vs/(Am)} = 10^{-6}\,\tfrac{\text{Vs}}{\text{Am}}$.
 **Substitution:** $\mu_0 = \dfrac{2.51 \cdot 10^{-3}\,\tfrac{\text{T}}{\text{A}} \cdot 0.300\,\text{m}}{600} = 1.26 \cdot 10^{-6}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Answer:** $1.26\,\mu\text{Vs/(Am)}$, three significant figures like the slope and the length $0.300\,\text{m}$. Fitting by eye varies, so about $1.21\text{–}1.31\,\mu\text{Vs/(Am)}$ ($\pm 4\,\%$) is a good answer.
@@ -163,7 +163,7 @@ The Earth's field adds a constant term to the reading, which is removed by zeroi
 **Given:** wire at $r = 5.0\,\text{cm}$ above the compass, deflection of the needle $\alpha = 30^\circ$, horizontal component of the Earth's field $B_\text{h} = 14\,\mu\text{T}$; the field of the wire $B_\text{w}$ is perpendicular to $B_\text{h}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Find:** current $I$ in the wire in amperes
 **Principle:** The compass needle turns to point along the total field. The total field is the vector sum of two perpendicular fields, so for the deflection of the needle $\tan \alpha = B_\text{w} : B_\text{h}$. The wire is long and straight, so the current is found from its field with the formula for a straight wire.
-**Formula:** $\tan \alpha = \dfrac{B_\text{w}}{B_\text{h}}$ and $B_\text{w} = \dfrac{\mu_0 I}{2\pi r}$, from which $I = \dfrac{2\pi r B_\text{h} \tan \alpha}{\mu_0}$
+**Formula:** $$\begin{aligned} \tan \alpha &= \dfrac{B_\text{w}}{B_\text{h}} \\ B_\text{w} &= \dfrac{\mu_0 I}{2\pi r} \\ \dfrac{\mu_0 I}{2\pi r} &= B_\text{h} \tan \alpha \\ I &= \dfrac{2\pi r B_\text{h} \tan \alpha}{\mu_0} \end{aligned}$$
 **Conversions:** $r = 5.0 \cdot 0.01\,\text{m} = 0.050\,\text{m}$ and $B_\text{h} = 14 \cdot 10^{-6}\,\text{T}$.
 **Substitution:** $B_\text{w} = 14 \cdot 10^{-6}\,\text{T} \cdot \tan 30^\circ = 8.083 \cdot 10^{-6}\,\text{T}$ and $I = \dfrac{2\pi \cdot 0.050\,\text{m} \cdot 8.083 \cdot 10^{-6}\,\text{T}}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}} = 2.02\,\text{A}$
 **Answer:** $2.0\,\text{A}$, two significant figures like the distance $5.0\,\text{cm}$ and the field $14\,\mu\text{T}$.
@@ -173,7 +173,7 @@ The Earth's field adds a constant term to the reading, which is removed by zeroi
 **Given:** coil of an MRI scanner, $B = 1.5\,\text{T}$, length $l = 1.6\,\text{m}$, diameter of a turn $d = 1.0\,\text{m}$, current $I = 400\,\text{A}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Find:** total length of wire $L$ in kilometres
 **Principle:** The problem assumes the coil is long, so the number of turns is solved from $B = \mu_0 \tfrac{N I}{l}$. Each turn uses a length of wire equal to the circumference $\pi d$, so the length of the wire is the number of turns times the circumference.
-**Formula:** $N = \dfrac{B l}{\mu_0 I}$ and $L = N \pi d$, so $L = \dfrac{\pi d B l}{\mu_0 I}$
+**Formula:** $$\begin{aligned} B &= \mu_0 \dfrac{N I}{l} \\ N &= \dfrac{B l}{\mu_0 I} \\ L &= N \pi d \\ &= \dfrac{\pi d B l}{\mu_0 I} \end{aligned}$$
 **Conversions:** None needed before substitution: all quantities are in SI units. Finally $1\,\text{km} = 1000\,\text{m}$.
 **Substitution:** $N = \dfrac{1.5\,\text{T} \cdot 1.6\,\text{m}}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 400\,\text{A}} = 4775$ and $L = 4775 \cdot \pi \cdot 1.0\,\text{m} = 15\,000\,\text{m} = 15\,\text{km}$
 **Answer:** about $15\,\text{km}$, two significant figures like the field $1.5\,\text{T}$ and the diameter $1.0\,\text{m}$.
@@ -185,7 +185,7 @@ The estimate is rough, because a real coil is not long compared with its width. 
 **Given:** two long parallel wires, distance $d = 10\,\text{cm}$, currents in the same direction $I_1 = 4.0\,\text{A}$ and $I_2 = 6.0\,\text{A}$
 **Find:** distance $x$ of the point where the field is zero from the wire carrying current $I_1$, in centimetres
 **Principle:** By the right-hand rule, the fields of currents in the same direction point in opposite directions between the wires, so at some point between them they cancel. There the magnitudes of the fields are equal. The wire with the weaker current must be nearer, so that its field is equally strong.
-**Formula:** $\dfrac{\mu_0 I_1}{2\pi x} = \dfrac{\mu_0 I_2}{2\pi (d - x)}$, from which $I_1 (d - x) = I_2 x$ and $x = \dfrac{I_1 d}{I_1 + I_2}$
+**Formula:** $$\begin{aligned} B_1 &= B_2 \\ \dfrac{\mu_0 I_1}{2\pi x} &= \dfrac{\mu_0 I_2}{2\pi (d - x)} \\ I_1 (d - x) &= I_2 x \\ I_1 d &= (I_1 + I_2) x \\ x &= \dfrac{I_1 d}{I_1 + I_2} \end{aligned}$$
 **Conversions:** None needed: $\mu_0$ and $2\pi$ cancel, and when $d$ is substituted in centimetres, $x$ comes out in centimetres.
 **Substitution:** $x = \dfrac{4.0\,\text{A} \cdot 10\,\text{cm}}{4.0\,\text{A} + 6.0\,\text{A}} = 4.0\,\text{cm}$
 **Answer:** $4.0\,\text{cm}$ from the $4.0\,\text{A}$ wire, two significant figures like the currents.
@@ -200,7 +200,7 @@ The fields $B_\text{h}$ and $B_\text{w}$ are perpendicular to each other, so $\t
 **Reading the graph:** The tangents are $0.315$, $0.625$, $0.949$, $1.235$ and $1.570$. The ratios $\tan \alpha : I$ are $0.315$, $0.312$, $0.316$, $0.309$ and $0.314\,\tfrac{1}{\text{A}}$, that is constant to within about $2\,\%$.
 
 The points lie on a line through the origin, so the field of the wire is directly proportional to the current. The slope of the line is $k = 0.313\,\tfrac{1}{\text{A}}$.
-**Formula:** $k = \dfrac{\mu_0}{2\pi h B_\text{h}}$, from which $B_\text{h} = \dfrac{\mu_0}{2\pi h k}$
+**Formula:** $$\begin{aligned} \tan \alpha &= \dfrac{B_\text{w}}{B_\text{h}} \\ B_\text{w} &= \dfrac{\mu_0 I}{2\pi h} \\ \tan \alpha &= \dfrac{\mu_0 I}{2\pi h B_\text{h}} \\ &= k I \\ k &= \dfrac{\mu_0}{2\pi h B_\text{h}} \\ B_\text{h} &= \dfrac{\mu_0}{2\pi h k} \end{aligned}$$
 **Conversions:** $h = 4.0 \cdot 0.01\,\text{m} = 0.040\,\text{m}$; finally $1\,\mu\text{T} = 10^{-6}\,\text{T}$.
 **Substitution:** $B_\text{h} = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}}{2\pi \cdot 0.040\,\text{m} \cdot 0.313\,\tfrac{1}{\text{A}}} = 1.60 \cdot 10^{-5}\,\text{T}$
 **Answer:** $16\,\mu\text{T}$, two significant figures like the height $4.0\,\text{cm}$ and the angles.
@@ -213,7 +213,7 @@ When the current is large, the field of the wire is much greater than $B_\text{h
 **Given:** length of the wire $L = 30\,\text{m}$, diameter of the metal $0.50\,\text{mm}$, with insulation $d_\text{i} = 0.55\,\text{mm}$, $\rho = 1.7 \cdot 10^{-8}\,\Omega\,\text{m}$, diameter of the tube $d = 3.0\,\text{cm}$, voltage $U = 6.0\,\text{V}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Find:** magnetic flux density $B$ at the centre of the coil in millitesla
 **Principle:** The length of wire in one turn is $\pi d$, and in a tight layer each turn takes up a length equal to the thickness $d_\text{i}$ of the insulated wire. The current is limited by the resistance of the wire, $R = \rho L : A$ and $I = U : R$ (FY6). The coil is assumed to be long, so the field is $B = \mu_0 \tfrac{N I}{l}$.
-**Formula:** $N = \dfrac{L}{\pi d}$, $l = N d_\text{i}$, $A = \pi \left(\dfrac{d_\text{m}}{2}\right)^2$, $R = \dfrac{\rho L}{A}$, $I = \dfrac{U}{R}$ and $B = \mu_0 \dfrac{N I}{l}$
+**Formula:** $$\begin{aligned} N &= \dfrac{L}{\pi d} \\ l &= N d_\text{i} \\ A &= \pi \left(\dfrac{d_\text{m}}{2}\right)^2 \\ R &= \dfrac{\rho L}{A} \\ I &= \dfrac{U}{R} \\ B &= \mu_0 \dfrac{N I}{l} \end{aligned}$$
 **Conversions:** $d = 0.030\,\text{m}$, $d_\text{i} = 0.55 \cdot 10^{-3}\,\text{m}$ and the diameter of the metal $d_\text{m} = 0.50 \cdot 10^{-3}\,\text{m}$; finally $1\,\text{mT} = 10^{-3}\,\text{T}$.
 **Substitution:** a) $N = \dfrac{30\,\text{m}}{\pi \cdot 0.030\,\text{m}} = 318$ and $l = 318.3 \cdot 0.55 \cdot 10^{-3}\,\text{m} = 0.175\,\text{m}$. The length is about $5.8$ times the diameter, so the coil is long enough. b) $A = \pi \cdot (0.25 \cdot 10^{-3}\,\text{m})^2 = 1.96 \cdot 10^{-7}\,\text{m}^2$, $R = \dfrac{1.7 \cdot 10^{-8}\,\Omega\,\text{m} \cdot 30\,\text{m}}{1.96 \cdot 10^{-7}\,\text{m}^2} = 2.60\,\Omega$ and $I = \dfrac{6.0\,\text{V}}{2.60\,\Omega} = 2.31\,\text{A}$. c) $B = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \dfrac{318.3 \cdot 2.31\,\text{A}}{0.175\,\text{m}} = 5.28 \cdot 10^{-3}\,\text{T} = 5.28\,\text{mT}$
 **Answer:** $5.3\,\text{mT}$, two significant figures like the voltage $6.0\,\text{V}$ and the diameter $3.0\,\text{cm}$.
@@ -256,7 +256,7 @@ So the field grows from about $1.5\,\text{mT}$ to about $2.3\,\text{mT}$. Tripli
 **Find:** number of turns $N$
 **Principle:** Inside a long coil $B = \mu_0 \dfrac{N I}{l}$, so $B$ is directly proportional to the current $I$ and the points $(I, B)$ lie on a line whose slope is $k = \mu_0 N : l$. The number of turns follows from the slope.
 **Reading the graph:** The fitted line passes through the origin and the point $(2.0\,\text{A};\ 5.0\,\text{mT})$. The slope is $k = \Delta B : \Delta I = 5.0\,\text{mT} : 2.0\,\text{A} = 2.5\,\tfrac{\text{mT}}{\text{A}}$. The last measured point gives $6.2\,\text{mT} : 2.5\,\text{A} = 2.5\,\tfrac{\text{mT}}{\text{A}}$, so the line describes the points well.
-**Formula:** $k = \dfrac{\mu_0 N}{l}$, so $N = \dfrac{k\,l}{\mu_0}$
+**Formula:** $$\begin{aligned} k &= \dfrac{\mu_0 N}{l} \\ N &= \dfrac{k\,l}{\mu_0} \end{aligned}$$
 **Conversions:** $k = 2.5\,\tfrac{\text{mT}}{\text{A}} = 2.5 \cdot 10^{-3}\,\tfrac{\text{T}}{\text{A}}$
 **Substitution:** $N = \dfrac{2.5 \cdot 10^{-3}\,\tfrac{\text{T}}{\text{A}} \cdot 0.250\,\text{m}}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}} = 497$
 **Answer:** The coil has about $5.0 \cdot 10^2$ turns (calculated $497$), two significant figures like the slope that was read.
@@ -267,7 +267,7 @@ So the field grows from about $1.5\,\text{mT}$ to about $2.3\,\text{mT}$. Tripli
 **Find:** current $I$ of the wire in amperes
 **Principle:** The field of a long straight wire is $B = \dfrac{\mu_0 I}{2\pi r}$. When one point $(r, B)$ of the graph is read, the current can be solved from the formula.
 **Reading the graph:** At the distance $r = 2.0\,\text{cm}$ the curve is at the third horizontal line, the grid spacing being $20\,\mu\text{T}$, so $B = 3 \cdot 20\,\mu\text{T} = 60\,\mu\text{T}$. Check: at $1.0\,\text{cm}$ the field is $120\,\mu\text{T}$ and at $4.0\,\text{cm}$ it is $30\,\mu\text{T}$, so $B$ is inversely proportional to the distance.
-**Formula:** $B = \dfrac{\mu_0 I}{2\pi r}$, so $I = \dfrac{2\pi r B}{\mu_0}$
+**Formula:** $$\begin{aligned} B &= \dfrac{\mu_0 I}{2\pi r} \\ I &= \dfrac{2\pi r B}{\mu_0} \end{aligned}$$
 **Conversions:** $r = 2.0\,\text{cm} = 0.020\,\text{m}$ and $B = 60\,\mu\text{T} = 60 \cdot 10^{-6}\,\text{T}$
 **Substitution:** $I = \dfrac{2\pi \cdot 0.020\,\text{m} \cdot 60 \cdot 10^{-6}\,\text{T}}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}} = 6.0\,\text{A}$
 **Answer:** $6.0\,\text{A}$, two significant figures like the field that was read, $60\,\mu\text{T}$.

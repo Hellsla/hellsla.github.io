@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 0371c6763dbac2c3
+CONTENT-HASH: 160fd80f4f33f7f3
+
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Diff: two uniform motions give a linear equation; distinct position lines intersect at most once (parallel distinct lines: never), identical lines mean the bodies coincide throughout — correct and complete.
-- Quadratic case with acceleration (up to two intersections) unchanged and correct.
-- Consistent with the bus–runner prediction options (inquiry.json:316–320) and the overtaking example; no other passage claims "always exactly once".
+batch delta review: two prompts: catching up means x_A = x_B at the same moment; equal velocities give parallel (t,x) lines, the 50 m gap stays, no meeting. No higher-line-ahead wording. Inquiry change is presentation only.

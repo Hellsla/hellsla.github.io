@@ -128,6 +128,12 @@ Vaunu 1 työntää vaunua 2 voimalla $\overline{F}$. Newtonin kolmannen lain muk
 
 Tämä päättely toimii vain, jos ulkoiset voimat eivät muuta liikemäärää. Vaakasuoralla ilmatyynyradalla paino ja tukivoima kumoavat toisensa. Kitka on hyvin pieni. Törmäävät autot taas kokevat tien kitkan. Törmäys kestää kuitenkin vain sekunnin murto-osan. Silloin puskurien voimat ovat paljon suurempia kuin kitka. Kitkan impulssi jää siksi törmäyksen aikana niin pieneksi, ettei sillä ole merkitystä. Tästä saadaan **liikemäärän säilymislaki**: kun systeemiin vaikuttavien ulkoisten voimien summa on nolla tai niiden impulssi on törmäyksen aikana merkityksettömän pieni, systeemin kokonaisliikemäärä säilyy.
 
+```pysahdy
+Auton törmäyksessä tien kitka vaikuttaa autoihin. Miksi kokonaisliikemäärää voi silti pitää säilyvänä?
+---
+Törmäys kestää vain sekunnin murto-osan. Puskurien voimat ovat paljon suurempia kuin kitka. Kitkan impulssi on siksi hyvin pieni.
+```
+
 ### Törmäysten lajit
 Liikemäärä säilyy jokaisessa törmäyksessä, kun säilymislain ehto täyttyy. Liike-energia ei säily aina. Törmäys on **kimmoisa**, jos kappaleiden yhteinen liike-energia on törmäyksen jälkeen yhtä suuri kuin ennen sitä. Teräskuulat, biljardipallot ja jousipuskurilla varustetut vaunut törmäävät lähes kimmoisasti. Törmäys on **kimmoton**, jos osa liike-energiasta muuttuu muiksi energiamuodoiksi. Kappaleet muuttavat silloin muotoaan. Liike-energiaa muuttuu niiden sisäenergiaksi ja ääneksi. Joskus kappaleet jäävät kiinni toisiinsa ja jatkavat yhdessä. Silloin törmäys on **täysin kimmoton**, ja liike-energia pienenee mahdollisimman paljon. Silloin mahdollisimman suuri osa siitä muuttuu muiksi energiamuodoiksi.
 
@@ -226,8 +232,20 @@ Liikemäärä säilyy jokaisessa törmäyksessä, kun säilymislain ehto täytty
 
 Kuvassa samanmassaiset vaunut tarttuvat yhteen tarranauhalla. Kokonaisliikemäärä on sama ennen ja jälkeen. Nyt sama liikemäärä jakautuu kaksinkertaiselle massalle, joten yhteinen nopeus on puolet alkuperäisestä. Liike-energia $\tfrac12 mv^2$ ei säily: kaksinkertainen massa ja puolet nopeudesta antavat puolet alkuperäisestä liike-energiasta. Toinen puoli muuttuu tarranauhan ja vaunujen sisäenergiaksi.
 
+```pysahdy
+Vaunut tarttuvat yhteen. Minne liike-energia menee, kun se pienenee?
+---
+Se ei katoa. Se muuttuu tarranauhan ja vaunujen sisäenergiaksi. Kokonaisenergia säilyy.
+```
+
 ### Räjähdys
 **Räjähdyksessä** levossa oleva tai yhdessä liikkuva systeemi hajoaa osiin sisäisten voimien vaikutuksesta. Esimerkkejä ovat jousi, joka laukeaa vaunujen välissä, luistelijat, jotka työntävät toisiaan, ja ruuti, joka työntää luotia ja kivääriä. Jos systeemi on aluksi levossa, sen kokonaisliikemäärä on nolla ja pysyy nollana. Kun levossa oleva systeemi hajoaa kahdeksi osaksi, osat saavat yhtä suuret liikemäärät vastakkaisiin suuntiin. Kevyempi osa saa suuremman nopeuden. Siksi kivääri potkaisee taaksepäin, kun luoti lähtee eteenpäin. Jos osia on useampia, niiden liikemäärien vektorisumma on nolla. Yksittäisten osien liikemäärät voivat silloin olla erisuuruisia. Räjähdyksessä liike-energia kasvaa, koska jousen, lihasten tai ruudin energiaa muuttuu liike-energiaksi.
+
+```pysahdy
+Luistelija seisoo jäällä ja heittää raskaan pallon eteenpäin. Miksi hän liukuu itse taaksepäin?
+---
+Pallo saa liikemäärän eteenpäin. Kokonaisliikemäärä pysyy nollana. Siksi luistelija saa yhtä suuren liikemäärän taaksepäin.
+```
 
 ### Vastaus alun kysymykseen
 Biljardipallot ovat yhtä raskaita, ja niiden törmäys on lähes kimmoisa. Lyöntipallon nopeus on $v$. Liikemäärän säilymisestä seuraa, että pallojen nopeuksien summa pysyy samana: $v_1' + v_2' = v$. Liike-energian säilymisestä seuraa, että nopeuksien neliöiden summa pysyy samana: $v_1'^2 + v_2'^2 = v^2$. Korotetaan ensimmäinen ehto toiseen potenssiin ja vähennetään siitä toinen ehto. Saadaan $2 v_1' v_2' = 0$, joten toinen palloista on törmäyksen jälkeen levossa. Lyöntipallo ei voi kulkea toisen pallon läpi, joten se pysähtyy. Toinen pallo jatkaa nopeudella $v$. Oikeassa pelissä pallot myös pyörivät, eikä törmäys ole täysin kimmoisa. Siksi lyöntipallo voi jäädä hiukan liikkeeseen.
@@ -395,6 +413,6 @@ Toinen virhe on unohtaa etumerkit. Jos kappaleet liikkuvat toisiaan kohti, niide
 ## Tiivistelmä
 - Systeemin kokonaisliikemäärä säilyy, kun ulkoisten voimien summa on nolla. Se säilyy myös, kun ulkoisten voimien impulssi on törmäyksen tai räjähdyksen aikana niin pieni, ettei sillä ole merkitystä: $\overline{p}_1 + \overline{p}_2 = \overline{p}_1' + \overline{p}_2'$.
 - Säilyminen seuraa Newtonin kolmannesta laista. Törmäyksen sisäiset voimat ovat yhtä suuret ja vastakkaissuuntaiset, ja ne vaikuttavat saman ajan. Siksi kappaleiden liikemäärien muutokset kumoavat toisensa.
-- Yhdessä ulottuvuudessa valitaan positiivinen suunta, ja nopeuksilla on etumerkit: $m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'$.
+- Yhdessä ulottuvuudessa valitaan positiivinen suunta, ja nopeuksilla on etumerkit: $$\begin{aligned} &m_1 v_1 + m_2 v_2 \\ &= m_1 v_1' + m_2 v_2' \end{aligned}$$
 - Kimmoisassa törmäyksessä myös liike-energia säilyy. Kimmottomassa törmäyksessä osa liike-energiasta muuttuu sisäenergiaksi. Täysin kimmottomassa törmäyksessä kappaleet jatkavat yhdessä yhteisellä nopeudella.
 - Räjähdyksessä levossa olevan systeemin kokonaisliikemäärä pysyy nollana. Kun systeemi hajoaa kahdeksi osaksi, osat saavat yhtä suuret liikemäärät vastakkaisiin suuntiin. Liike-energia kasvaa.

@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f5227f32d90da96e
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: e2850c8561d2923e
 
 ## Blocking
-- (none)
+(none)
 
 ## Polish
-- (none)
+- [Minor] Only contact sheet 5 was opened for this language; other changed solution blocks were judged from the diff text and the earlier Sovella visual report, not each capture.
 
 ## Checked
-- Hunks: unit.md Common mistakes (first item), solutions.md b) Model answer, tasks.json rubric criterion b. "converted into internal energy" is used in all three, and the unit.md sentence now names kinetic energy.
-- Captures opened: `fy9-sailymislait-stage-selita-390-7` (Common mistakes list), `fy9-sailymislait-stage-exercises-390-37` (b Principle and the start of the model answer), `-390-40` (rubric b).
-- No formula in the changed sentences; wrapping and the rubric's point buttons are intact.
+- Diff origin/main...HEAD (excluding review/): paragraph breaks only in sovella/solutions.md and the inquiry.json solution field; words, maths and figures unchanged. Display formulas stay intact; the break falls after the sentence that closes them.
+- contact-5.png (en): Sovella tasks 3.3-4 and 3.3-5 with open model answers (#54-#60): the new breaks give short paragraphs with even spacing, display formulas stay inside the cards, no clipping, overflow or orphaned formula fragment.
+- Read the earlier Sovella visual report (PASS) as evidence; it agrees.
+- Not opened: other contact sheets, full-size captures, figures (unchanged).
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

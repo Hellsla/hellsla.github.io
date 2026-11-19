@@ -484,6 +484,12 @@ Acceleration is a vector quantity $\overline{a}$, like velocity $\overline{v}$, 
   <line x1="24" y1="196" x2="576" y2="196" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="8 6"/>
 </svg>
 
+```pysahdy
+A cart moves in the negative direction and its acceleration is $a < 0$. Does its speed increase or decrease?
+---
+It increases, because the velocity and the acceleration point the same way (both are negative).
+```
+
 ### Uniformly accelerated motion and the $(t,v)$ graph
 Motion is **uniformly accelerated** when the acceleration stays constant: the velocity changes by the same amount in every time interval of equal length. Then the **$(t,v)$ graph**, with time on the horizontal axis and velocity on the vertical axis, is a straight line. The slope of the line is the acceleration. A rising line means a positive acceleration, a horizontal line uniform motion and a falling line a negative acceleration.
 
@@ -543,8 +549,20 @@ When the velocity grows, the position changes more in each second than in the on
   <foreignObject x="85" y="73" width="58" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v = \dfrac{\Delta x}{\Delta t}$</div></foreignObject>
 </svg>
 
+```pysahdy
+You draw a straight line through two points of a $(t,x)$ curve. What does the slope of the line tell you?
+---
+It gives the average velocity between the two points, not the instantaneous velocity at either point.
+```
+
 ### Free fall
 When air resistance is small, all objects fall with the same acceleration regardless of mass. This **acceleration of free fall** is $g = 9.81\,\text{m/s}^2$ at the Earth's surface, directed downwards. The velocity of a dropped stone therefore grows by about $9.8\,\text{m/s}$ every second. That is why the stone travels a longer distance in each second than in the one before: the distances that an object starting from rest covers in successive intervals of equal length are in the ratio $1 : 3 : 5 : 7$.
+
+```pysahdy
+You drop a tennis ball and a steel ball from the same height, and air resistance is small. Which one hits the ground first?
+---
+They hit the ground at the same time, because the acceleration of free fall does not depend on mass.
+```
 
 ## Formula: Equations of uniformly accelerated motion
 The average acceleration is the change in velocity divided by the time it took:

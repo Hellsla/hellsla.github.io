@@ -37,7 +37,11 @@
   <foreignObject x="344.5" y="112" width="23" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$\alpha$</div></foreignObject>
 </svg>
 
-**Periaate:** Valitaan kappaleeksi toinen pallo. Siihen vaikuttaa kolme voimaa: paino $\overline{G}$ alas, langan jännitysvoima $\overline{T}$ lankaa pitkin kohti koukkua ja toisen pallon sähköinen voima $\overline{F}_\text{s}$. Pallot ovat samalla korkeudella. Siksi sähköinen voima on vaakasuora ja osoittaa poispäin toisesta pallosta: samanmerkkiset varaukset hylkivät eli työntävät toisiaan. Pallo on levossa, joten voimien summa on nolla. Langan voiman vaakakomponentti kumoaa sähköisen voiman, ja pystykomponentti kumoaa painon. Langan kulma $\alpha$ pystysuorasta saadaan geometriasta. Pallo on nimittäin puolen etäisyyden päässä siitä pystysuorasta, joka kulkee koukun kautta (luku *Voimakuvio ja voimien yhteisvaikutus*).
+**Periaate:** Valitaan kappaleeksi toinen pallo. Siihen vaikuttaa kolme voimaa: paino $\overline{G}$ alas, langan jännitysvoima $\overline{T}$ lankaa pitkin kohti koukkua ja toisen pallon sähköinen voima $\overline{F}_\text{s}$.
+
+Pallot ovat samalla korkeudella. Siksi sähköinen voima on vaakasuora ja osoittaa poispäin toisesta pallosta: samanmerkkiset varaukset hylkivät eli työntävät toisiaan. Pallo on levossa, joten voimien summa on nolla. Langan voiman vaakakomponentti kumoaa sähköisen voiman, ja pystykomponentti kumoaa painon.
+
+Langan kulma $\alpha$ pystysuorasta saadaan geometriasta. Pallo on nimittäin puolen etäisyyden päässä siitä pystysuorasta, joka kulkee koukun kautta (luku *Voimakuvio ja voimien yhteisvaikutus*).
 **Kaava:** $T\sin\alpha = F_\text{s}$ ja $T\cos\alpha = mg$, joten $F_\text{s} = mg\tan\alpha$, missä $\sin\alpha = \dfrac{r/2}{L}$
 **Muunnokset:** $m = 0{,}50\,\text{g} = 0{,}50 \cdot 0{,}001\,\text{kg} = 5{,}0 \cdot 10^{-4}\,\text{kg}$. Pituuksien suhteeseen ei tarvita muunnosta. Lopuksi $1\,\text{N} = 1000\,\text{mN}$.
 **Sijoitus:** $\sin\alpha = \dfrac{4{,}0\,\text{cm}}{40{,}0\,\text{cm}} = 0{,}100$, joten $\alpha = 5{,}74^\circ$ ja $\tan\alpha = 0{,}1005$. Paino on $mg = 5{,}0 \cdot 10^{-4}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 4{,}905 \cdot 10^{-3}\,\text{N}$, joten $F_\text{s} = 4{,}905 \cdot 10^{-3}\,\text{N} \cdot 0{,}1005 = 4{,}930 \cdot 10^{-4}\,\text{N} = 0{,}493\,\text{mN}$
@@ -146,7 +150,15 @@ $$. Energia on pieni. Marginaali eli turvavara läpilyöntiin on kuitenkin vain 
 ### d)
 **Kysytty:** mihin energia meni, ja voiko irrotetun kondensaattorin levyihin koskea
 **Periaate:** Energia säilyy. Jos kondensaattorin energia pienenee, kondensaattori on tehnyt työtä tai energia on muuttunut toiseen muotoon. Irrotetun kondensaattorin varaus ja jännite säilyvät, kunnes kondensaattori puretaan (luku *Kondensaattori ja sen energia*).
-**Mallivastaus:** Kondensaattorin energia pieneni noin $1{,}87\,\text{mJ}$:sta $0{,}33\,\text{mJ}$:iin. Siis noin $1{,}5\,\text{mJ}$ siirtyi muualle. Lasi polarisoituu levyjen kentässä. Lasin pinta, joka on positiivista levyä vasten, saa negatiivisen varauksen. Vastakkainen pinta saa positiivisen varauksen. Levyjen varaukset vetävät näitä pintavarauksia. Siksi kenttä vetää lasilevyä levyjen väliin ja tekee sille positiivista työtä. Jos lasia työnnetään hitaasti, käsi joutuu jarruttamaan sitä. Silloin energia siirtyy käteen ja lopulta sisäenergiaksi. Jos lasi pääsee liikkumaan vapaasti, se saa liike-energiaa. Liike-energia muuttuu kitkassa sisäenergiaksi. Opiskelijan väite on väärä. Kun lähde irrotetaan, kondensaattori ei purkaudu. Levyillä on yhä varaus $0{,}83\,\mu\text{C}$, ja niiden välillä on noin $800\,\text{V}$:n jännite. Ennen kuin lasi työnnettiin väliin, jännite oli jopa $4{,}5\,\text{kV}$. Kun levyihin koskee, varaus purkautuu kehon kautta. Tämän kondensaattorin energia on pieni. Suurempien kondensaattorien isku voi kuitenkin olla vaarallinen. Siksi kondensaattori puretaan aina ensin eristetyllä purkauskapulalla tai vastuksen kautta. Vasta sitten levyihin kosketaan.
+**Mallivastaus:** Kondensaattorin energia pieneni noin $1{,}87\,\text{mJ}$:sta $0{,}33\,\text{mJ}$:iin. Siis noin $1{,}5\,\text{mJ}$ siirtyi muualle.
+
+Lasi polarisoituu levyjen kentässä. Lasin pinta, joka on positiivista levyä vasten, saa negatiivisen varauksen. Vastakkainen pinta saa positiivisen varauksen. Levyjen varaukset vetävät näitä pintavarauksia. Siksi kenttä vetää lasilevyä levyjen väliin ja tekee sille positiivista työtä.
+
+Jos lasia työnnetään hitaasti, käsi joutuu jarruttamaan sitä. Silloin energia siirtyy käteen ja lopulta sisäenergiaksi. Jos lasi pääsee liikkumaan vapaasti, se saa liike-energiaa. Liike-energia muuttuu kitkassa sisäenergiaksi.
+
+Opiskelijan väite on väärä. Kun lähde irrotetaan, kondensaattori ei purkaudu. Levyillä on yhä varaus $0{,}83\,\mu\text{C}$, ja niiden välillä on noin $800\,\text{V}$:n jännite. Ennen kuin lasi työnnettiin väliin, jännite oli jopa $4{,}5\,\text{kV}$. Kun levyihin koskee, varaus purkautuu kehon kautta.
+
+Tämän kondensaattorin energia on pieni. Suurempien kondensaattorien isku voi kuitenkin olla vaarallinen. Siksi kondensaattori puretaan aina ensin eristetyllä purkauskapulalla tai vastuksen kautta. Vasta sitten levyihin kosketaan.
 
 ### Yleisiä virheitä
 - Levyn pinta-alaksi otetaan sivun pituus, tai senttimetrejä ja millimetrejä ei muunneta metreiksi.
@@ -219,11 +231,21 @@ $$. Energia on pieni. Marginaali eli turvavara läpilyöntiin on kuitenkin vain 
   <foreignObject x="267" y="164.5" width="117" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#6b7480">$\text{ei suora}$</div></foreignObject>
 </svg>
 
-**Mallivastaus:** Pisteet ovat käyrällä, joka kaartuu alaspäin ja loivenee, kun etäisyys kasvaa. Jos kapasitanssi olisi kääntäen verrannollinen etäisyyteen, kaksinkertainen etäisyys puolittaisi sen. Aineistossa kuitenkin $1{,}0\,\text{mm} \to 2{,}0\,\text{mm}$ antaa $375\,\text{pF} \to 199\,\text{pF}$. Suhde on $0{,}53$. Lisäksi $3{,}0\,\text{mm} \to 6{,}0\,\text{mm}$ antaa $140\,\text{pF} \to 82\,\text{pF}$. Suhde on $0{,}59$. Suhde on aina yli puolen, ja se kasvaa, kun etäisyys kasvaa. Käyrä ei siis lähesty nollaa vaan noin $20\,\text{pF}$:n arvoa. Pelkkä kääntäen verrannollisuus ei sovi aineistoon. Kapasitanssissa näyttää olevan vakio-osa, joka ei riipu levyjen etäisyydestä.
+**Mallivastaus:** Pisteet ovat käyrällä, joka kaartuu alaspäin ja loivenee, kun etäisyys kasvaa. Jos kapasitanssi olisi kääntäen verrannollinen etäisyyteen, kaksinkertainen etäisyys puolittaisi sen.
+
+Aineistossa kuitenkin $1{,}0\,\text{mm} \to 2{,}0\,\text{mm}$ antaa $375\,\text{pF} \to 199\,\text{pF}$. Suhde on $0{,}53$. Lisäksi $3{,}0\,\text{mm} \to 6{,}0\,\text{mm}$ antaa $140\,\text{pF} \to 82\,\text{pF}$. Suhde on $0{,}59$. Suhde on aina yli puolen, ja se kasvaa, kun etäisyys kasvaa. Käyrä ei siis lähesty nollaa vaan noin $20\,\text{pF}$:n arvoa.
+
+Pelkkä kääntäen verrannollisuus ei sovi aineistoon. Kapasitanssissa näyttää olevan vakio-osa, joka ei riipu levyjen etäisyydestä.
 
 ### b)
 **Kysytty:** suure, jonka funktiona kapasitanssin kuvaaja on suora, perustelu, kuvaaja ja sovitettu suora
-**Kuvaaja:** Levykondensaattorin kapasitanssi on $C = \dfrac{\varepsilon_0\varepsilon_\text{r}A}{d} = \varepsilon_0\varepsilon_\text{r}A \cdot \dfrac{1}{d}$. Ilmalle $\varepsilon_\text{r} \approx 1{,}0$, ja $A$ pysyy samana. Siksi levyjen kapasitanssi on suoraan verrannollinen suureeseen $\tfrac{1}{d}$. Mittari mittaa lisäksi johtojensa ja oman kapasitanssinsa. Se ei riipu etäisyydestä. Siksi mallina on suora $C = k \cdot \tfrac{1}{d} + b$. Lasketaan taulukkoon: $\tfrac{1}{d}$ on $1{,}00$, $0{,}667$, $0{,}500$, $0{,}333$, $0{,}250$, $0{,}200$ ja $0{,}167\,\tfrac{1}{\text{mm}}$. Vaaka-akselilla on $\tfrac{1}{d}\ (\tfrac{1}{\text{mm}})$, ja pystyakselilla on $C\ (\text{pF})$. Pisteisiin sovitetaan suora. Suora kulkee pisteiden läpi niin, että pisteitä jää molemmille puolille. Suoraa jatketaan pystyakselille.
+**Kuvaaja:** Levykondensaattorin kapasitanssi on $C = \dfrac{\varepsilon_0\varepsilon_\text{r}A}{d} = \varepsilon_0\varepsilon_\text{r}A \cdot \dfrac{1}{d}$. Ilmalle $\varepsilon_\text{r} \approx 1{,}0$, ja $A$ pysyy samana. Siksi levyjen kapasitanssi on suoraan verrannollinen suureeseen $\tfrac{1}{d}$.
+
+Mittari mittaa lisäksi johtojensa ja oman kapasitanssinsa. Se ei riipu etäisyydestä. Siksi mallina on suora $C = k \cdot \tfrac{1}{d} + b$.
+
+Lasketaan taulukkoon: $\tfrac{1}{d}$ on $1{,}00$, $0{,}667$, $0{,}500$, $0{,}333$, $0{,}250$, $0{,}200$ ja $0{,}167\,\tfrac{1}{\text{mm}}$.
+
+Vaaka-akselilla on $\tfrac{1}{d}\ (\tfrac{1}{\text{mm}})$, ja pystyakselilla on $C\ (\text{pF})$. Pisteisiin sovitetaan suora. Suora kulkee pisteiden läpi niin, että pisteitä jää molemmille puolille. Suoraa jatketaan pystyakselille.
 
 <svg data-fig="fy9-sahkokentta-s3-lin" viewBox="0 0 600 440" role="img" aria-label="Kuvaaja: kapasitanssi C pikofaradeina suureen yksi jaettuna d funktiona yksikössä yksi jaettuna millimetri. Kuvaajassa on seitsemän mustaa pistettä välillä 0,17–1,00. Kapasitanssit ovat 82 pF:stä 375 pF:iin. Pisteisiin on sovitettu nouseva suora. Suoraa on jatkettu katkoviivana pystyakselille. Se leikkaa pystyakselin noin 22 pF:n kohdalla eikä kulje origon kautta. Suoralta on ympyröity kaksi pistettä, (0,20; 93) ja (1,00; 376). Niistä luetaan kulmakerroin, joka on noin 354 pF kertaa millimetri." style="max-width:100%;font-size:30px">
   <line x1="136.5" y1="380" x2="136.5" y2="76" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -324,7 +346,11 @@ b &= 93\,\text{pF} \\
 \end{aligned}
 $$
 **Vastaus:** $b \approx 22\,\text{pF}$. Vastauksessa on kaksi merkitsevää numeroa. Se on kahden samaa suuruusluokkaa olevan luvun erotus. Tällaisen erotuksen suhteellinen epävarmuus on suurempi kuin kummankaan luvun.
-**Järkevyys:** Vakiotermi on johtojen ja mittarin oma kapasitanssi. Johdot ovat lähellä toisiaan ja mittarin liittimiä. Mittari mittaa niiden kapasitanssin levyjen kapasitanssin lisäksi. Mittajohtojen kapasitanssi on yleensä kymmeniä pikofaradeja. Malli toimii mitatulla alueella. Suurinkin etäisyys $6{,}0\,\text{mm}$ on nimittäin vain $3\,\%$ levyn sivusta $200\,\text{mm}$. Jos etäisyys olisi senttimetrejä, reunojen kaartuva kenttä kasvattaisi kapasitanssia suuremmaksi kuin mallin arvo. Pienimmillä etäisyyksillä taas välikappaleiden paksuus ja levyjen taipuminen ovat epävarmoja, esimerkiksi $\pm 0{,}1\,\text{mm}$. Se on $10\,\%$ etäisyydestä $1{,}0\,\text{mm}$. Siksi kulmakerroin kannattaa määrittää koko suoralta eikä yhdestä pisteestä.
+**Järkevyys:** Vakiotermi on johtojen ja mittarin oma kapasitanssi. Johdot ovat lähellä toisiaan ja mittarin liittimiä. Mittari mittaa niiden kapasitanssin levyjen kapasitanssin lisäksi. Mittajohtojen kapasitanssi on yleensä kymmeniä pikofaradeja.
+
+Malli toimii mitatulla alueella. Suurinkin etäisyys $6{,}0\,\text{mm}$ on nimittäin vain $3\,\%$ levyn sivusta $200\,\text{mm}$. Jos etäisyys olisi senttimetrejä, reunojen kaartuva kenttä kasvattaisi kapasitanssia suuremmaksi kuin mallin arvo.
+
+Pienimmillä etäisyyksillä taas välikappaleiden paksuus ja levyjen taipuminen ovat epävarmoja, esimerkiksi $\pm 0{,}1\,\text{mm}$. Se on $10\,\%$ etäisyydestä $1{,}0\,\text{mm}$. Siksi kulmakerroin kannattaa määrittää koko suoralta eikä yhdestä pisteestä.
 
 ### Yleisiä virheitä
 - Kapasitanssi piirretään etäisyyden funktiona, ja kulmakerroin luetaan kaarevasta kuvaajasta.
@@ -342,7 +368,9 @@ $$
 ### a)
 **Kysytty:** arvio väitteestä, että lintu on johtimella turvassa siksi, että sen jalat eristävät
 **Periaate:** Kehon läpi kulkee virta vain, jos kehon kahden kohdan välillä on jännite eli potentiaaliero. Johtimen kahden kohdan välinen jännite saadaan Ohmin laista. Siihen tarvitaan kohtien välisen johtimen resistanssi ja virta (luvut *Sähköturvallisuus kotona ja työssä* ja *Potentiaalienergia ja potentiaali sähkökentässä*).
-**Mallivastaus:** Linnun jalat ovat noin $5\,\text{cm}$:n päässä toisistaan. Jalkojen välisen johtimen resistanssi on $$
+**Mallivastaus:** Linnun jalat ovat noin $5\,\text{cm}$:n päässä toisistaan.
+
+Jalkojen välisen johtimen resistanssi on $$
 \begin{aligned}
 &0{,}30\,\tfrac{\Omega}{\text{km}} \cdot 0{,}05 \cdot 10^{-3}\,\text{km} \\
 &= 1{,}5 \cdot 10^{-5}\,\Omega
@@ -353,17 +381,35 @@ U &= RI \\
 &= 1{,}5 \cdot 10^{-5}\,\Omega \cdot 100\,\text{A} \\
 &= 1{,}5\,\text{mV}
 \end{aligned}
-$$. Näin pieni jännite ei aja linnun kehon läpi virtaa, joka tuntuisi. Lintu on kyllä lähes samassa potentiaalissa kuin johdin, noin $12\,\text{kV}$ maahan nähden. (Linjan $20\,\text{kV}$ on vaihejohtimien välinen jännite.) Potentiaali yksin ei kuitenkaan ole vaarallinen. Virta tarvitsee kaksi kohtaa, joiden potentiaalit ovat erisuuret. Lintu ei koske maahan, pylvääseen eikä toiseen johtimeen. Siksi sen kehon läpi ei kulje virtaa. Väitteen johtopäätös on oikea, mutta perustelu on väärä. Lintu olisi turvassa, vaikka sen jalat johtaisivat sähköä hyvin. Lintu joutuu vaaraan, jos se koskettaa siivellään samaan aikaan toista johdinta tai pylvään maadoitettua osaa.
+$$. Näin pieni jännite ei aja linnun kehon läpi virtaa, joka tuntuisi.
+
+Lintu on kyllä lähes samassa potentiaalissa kuin johdin, noin $12\,\text{kV}$ maahan nähden. (Linjan $20\,\text{kV}$ on vaihejohtimien välinen jännite.) Potentiaali yksin ei kuitenkaan ole vaarallinen. Virta tarvitsee kaksi kohtaa, joiden potentiaalit ovat erisuuret. Lintu ei koske maahan, pylvääseen eikä toiseen johtimeen. Siksi sen kehon läpi ei kulje virtaa.
+
+Väitteen johtopäätös on oikea, mutta perustelu on väärä. Lintu olisi turvassa, vaikka sen jalat johtaisivat sähköä hyvin. Lintu joutuu vaaraan, jos se koskettaa siivellään samaan aikaan toista johdinta tai pylvään maadoitettua osaa.
 
 ### b)
 **Kysytty:** miksi kalastaja voi saada iskun koskematta johtimeen, ja pienin ilmaväli, jonka läpi sähkö voi lyödä
 **Periaate:** Ilma on eriste vain silloin, kun sähkökenttä on pienempi kuin ilman läpilyöntilujuus. Tasaisessa kentässä ilmaväli $d$ kestää jännitteen $E_\text{max} d$ (luvut *Kondensaattori ja sen energia* ja *Sähköturvallisuus kotona ja työssä*).
-**Mallivastaus:** Hiilikuitu johtaa sähköä. Kun kalastaja seisoo maassa, vavan kärki on lähes maan potentiaalissa. Siksi kärjen ja johtimen välisen ilmavälin yli on koko johtimen ja maan välinen jännite, noin $12\,\text{kV}$. Linjan nimellisjännite $20\,\text{kV}$ on kahden vaihejohtimen välinen jännite. Yksi johdin on maahan nähden $\tfrac{20\,\text{kV}}{\sqrt{3}} \approx 12\,\text{kV}$:n jännitteessä. Tasaisen kentän mallilla pienin väli, jonka läpi sähkö lyö, on $d = \tfrac{U}{E_\text{max}} = \tfrac{12 \cdot 10^{3}\,\text{V}}{3 \cdot 10^{6}\,\text{V/m}} \approx 4\,\text{mm}$. Arvio on turvaetäisyyden alaraja. Se ei ole turvallinen etäisyys. Ohuen johtimen ja vavan kärjen lähellä kenttä on paljon voimakkaampi kuin $\tfrac{U}{d}$. Lisäksi kostea ilma, lika ja siima heikentävät eristystä. Siksi valokaari voi syttyä myös selvästi pidemmän välin yli. Läpilyönnin jälkeen ilma johtaa. Virta kulkee valokaaren, vavan ja kalastajan kehon kautta maahan. Jos virtatien resistanssi on esimerkiksi $10\,\text{k}\Omega$, $12\,\text{kV}$ ajaa kehon läpi noin $1{,}2\,\text{A}$:n virran. Se on kymmeniä kertoja suurempi kuin noin $50\,\text{mA}$, joka riittää aiheuttamaan kammiovärinän. Kammiovärinä tarkoittaa, että sydän ei enää pumppaa verta. Siksi johtojen alla ei kalasteta eikä lennätetä leijaa. Johtimia ei lähestytä millään esineellä.
+**Mallivastaus:** Hiilikuitu johtaa sähköä. Kun kalastaja seisoo maassa, vavan kärki on lähes maan potentiaalissa. Siksi kärjen ja johtimen välisen ilmavälin yli on koko johtimen ja maan välinen jännite, noin $12\,\text{kV}$.
+
+Linjan nimellisjännite $20\,\text{kV}$ on kahden vaihejohtimen välinen jännite. Yksi johdin on maahan nähden $\tfrac{20\,\text{kV}}{\sqrt{3}} \approx 12\,\text{kV}$:n jännitteessä. Tasaisen kentän mallilla pienin väli, jonka läpi sähkö lyö, on $d = \tfrac{U}{E_\text{max}} = \tfrac{12 \cdot 10^{3}\,\text{V}}{3 \cdot 10^{6}\,\text{V/m}} \approx 4\,\text{mm}$.
+
+Arvio on turvaetäisyyden alaraja. Se ei ole turvallinen etäisyys. Ohuen johtimen ja vavan kärjen lähellä kenttä on paljon voimakkaampi kuin $\tfrac{U}{d}$. Lisäksi kostea ilma, lika ja siima heikentävät eristystä. Siksi valokaari voi syttyä myös selvästi pidemmän välin yli.
+
+Läpilyönnin jälkeen ilma johtaa. Virta kulkee valokaaren, vavan ja kalastajan kehon kautta maahan. Jos virtatien resistanssi on esimerkiksi $10\,\text{k}\Omega$, $12\,\text{kV}$ ajaa kehon läpi noin $1{,}2\,\text{A}$:n virran. Se on kymmeniä kertoja suurempi kuin noin $50\,\text{mA}$, joka riittää aiheuttamaan kammiovärinän. Kammiovärinä tarkoittaa, että sydän ei enää pumppaa verta.
+
+Siksi johtojen alla ei kalasteta eikä lennätetä leijaa. Johtimia ei lähestytä millään esineellä.
 
 ### c)
 **Kysytty:** miksi maahan pudonneen johtimen lähelle ei saa mennä, miten alueelta poistutaan, ja miksi lehmä on suuremmassa vaarassa kuin ihminen
 **Periaate:** Kun virta johtuu maahan, se leviää maaperään. Maan potentiaali pienenee, kun etäisyys kosketuskohdasta kasvaa. Kahden kohdan välinen jännite on niiden potentiaalien erotus (luku *Sähköturvallisuus kotona ja työssä*).
-**Mallivastaus:** Kun johdin koskettaa maata, virta kulkee maaperän kautta. Maan potentiaali on suurin kosketuskohdassa. Siellä se on lähes johtimen jännite. Kauempana potentiaali on pienempi. Kahden kohdan välillä on siis jännite. Jännite on suurin lähellä kosketuskohtaa, koska siellä potentiaali muuttuu jyrkimmin. Jos ihminen seisoo jalat erillään, jalkojen välillä on askeljännite. Silloin virta kulkee toista jalkaa ylös ja toista alas. Askeljännite on sitä suurempi, mitä lähempänä kosketuskohtaa ollaan ja mitä pidempi askel on. Siksi pudonnutta johdinta ei lähestytä. Jos on jo lähellä, alueelta poistutaan lyhyin askelin jalat yhdessä tai tasajalkaa hyppien. Silloin jalat ovat lähes samassa potentiaalissa. Vahingosta ilmoitetaan hätänumeroon $112$. Alueelle ei palata, ennen kuin verkkoyhtiö on katkaissut virran. Lehmän etujalkojen ja takajalkojen väli on yli metrin. Siksi niiden välillä on paljon suurempi jännite kuin ihmisen lyhyen askeleen yli. Lisäksi virta kulkee lehmän etujaloista takajalkoihin rintakehän ja sydämen kautta. Siksi jo pienempi jännite on vaarallinen.
+**Mallivastaus:** Kun johdin koskettaa maata, virta kulkee maaperän kautta. Maan potentiaali on suurin kosketuskohdassa. Siellä se on lähes johtimen jännite. Kauempana potentiaali on pienempi. Kahden kohdan välillä on siis jännite. Jännite on suurin lähellä kosketuskohtaa, koska siellä potentiaali muuttuu jyrkimmin.
+
+Jos ihminen seisoo jalat erillään, jalkojen välillä on askeljännite. Silloin virta kulkee toista jalkaa ylös ja toista alas. Askeljännite on sitä suurempi, mitä lähempänä kosketuskohtaa ollaan ja mitä pidempi askel on.
+
+Siksi pudonnutta johdinta ei lähestytä. Jos on jo lähellä, alueelta poistutaan lyhyin askelin jalat yhdessä tai tasajalkaa hyppien. Silloin jalat ovat lähes samassa potentiaalissa. Vahingosta ilmoitetaan hätänumeroon $112$. Alueelle ei palata, ennen kuin verkkoyhtiö on katkaissut virran.
+
+Lehmän etujalkojen ja takajalkojen väli on yli metrin. Siksi niiden välillä on paljon suurempi jännite kuin ihmisen lyhyen askeleen yli. Lisäksi virta kulkee lehmän etujaloista takajalkoihin rintakehän ja sydämen kautta. Siksi jo pienempi jännite on vaarallinen.
 
 ### Yleisiä virheitä
 - Linnun turvallisuus selitetään sillä, että lintu ei ole maadoitettu. Vastauksessa ei mainita, että jalkojen välillä ei ole jännitettä.
@@ -394,12 +440,26 @@ $$
 ### b)
 **Kysytty:** arvio raportin johtopäätöksestä ja mittauksen luotettavuudesta
 **Periaate:** Johtopäätös on luotettava vain, jos teho on mitattu oikein, valon teho tunnetaan ja tuloksen epävarmuus on arvioitu (luvut *Puolijohteet, diodi, LED ja aurinkokenno* ja *Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi*).
-**Mallivastaus:** Raportin tärkein virhe on systemaattinen. Tyhjäkäynnissä virta on nolla, ja oikosulussa jännite on nolla. Siksi paneelin teho on kummassakin tilanteessa nolla. Tulo $U_\text{t}I_\text{k} = 1{,}28\,\text{W}$ on suurempi kuin mikään teho, jonka paneeli todella antaa. Opiskelijan oma taulukko näyttää, että suurin teho on $0{,}99\,\text{W}$. Siksi hyötysuhde on noin $16\,\%$ eikä $21\,\%$. Toinen puute on se, että valon voimakkuutta ei mitattu. Arvo $1000\,\text{W/m}^2$ on vain oletus. Todellinen arvo riippuu auringon korkeudesta, paneelin kulmasta auringon säteisiin nähden ja ohuista pilvistä. Toukokuussa Suomessa se voi olla selvästi pienempi. Raportista puuttuu myös tieto siitä, mihin suuntaan paneeli osoitti ja mikä sen lämpötila oli. Kolmanneksi raportissa ei ole epävarmuutta. $21{,}35\,\%$ ilmoittaa neljä numeroa, vaikka pinta-ala on annettu kahdella numerolla ja valon voimakkuus on arvio. Johtopäätös, että paneeli on parempi kuin valmistaja ilmoittaa, on väärä. Oikein laskettu hyötysuhde on noin $16\,\%$. Se sopii valmistajan arvoon $15\,\%$ mittausten tarkkuudella.
+**Mallivastaus:** Raportin tärkein virhe on systemaattinen.
+
+Tyhjäkäynnissä virta on nolla, ja oikosulussa jännite on nolla. Siksi paneelin teho on kummassakin tilanteessa nolla. Tulo $U_\text{t}I_\text{k} = 1{,}28\,\text{W}$ on suurempi kuin mikään teho, jonka paneeli todella antaa. Opiskelijan oma taulukko näyttää, että suurin teho on $0{,}99\,\text{W}$. Siksi hyötysuhde on noin $16\,\%$ eikä $21\,\%$.
+
+Toinen puute on se, että valon voimakkuutta ei mitattu. Arvo $1000\,\text{W/m}^2$ on vain oletus. Todellinen arvo riippuu auringon korkeudesta, paneelin kulmasta auringon säteisiin nähden ja ohuista pilvistä. Toukokuussa Suomessa se voi olla selvästi pienempi. Raportista puuttuu myös tieto siitä, mihin suuntaan paneeli osoitti ja mikä sen lämpötila oli.
+
+Kolmanneksi raportissa ei ole epävarmuutta. $21{,}35\,\%$ ilmoittaa neljä numeroa, vaikka pinta-ala on annettu kahdella numerolla ja valon voimakkuus on arvio.
+
+Johtopäätös, että paneeli on parempi kuin valmistaja ilmoittaa, on väärä. Oikein laskettu hyötysuhde on noin $16\,\%$. Se sopii valmistajan arvoon $15\,\%$ mittausten tarkkuudella.
 
 ### c)
 **Kysytty:** parannettu koe, jolla hyötysuhde saadaan luotettavasti
 **Periaate:** Hyötysuhteeseen tarvitaan suurin sähköteho ja samaan aikaan paneelille tuleva valon teho. Suurin teho löytyy luotettavasti vain, kun teho mitataan monella kuormalla ja huippu etsitään kuvaajasta (luvut *Puolijohteet, diodi, LED ja aurinkokenno* ja *Graafinen esitys ja suoran sovittaminen*).
-**Mallivastaus:** Paneeli asetetaan kohtisuoraan auringon säteitä vastaan. Valon voimakkuus mitataan säteilymittarilla paneelin tasossa juuri ennen mittaussarjaa ja sen jälkeen. Paneeliin kytketään säädettävä vastus. Jännite ja virta mitataan esimerkiksi $15$–$20$ kuormalla. Mittauksia tehdään tiheimmin tehon huipun ympäriltä, noin $20$–$35\,\Omega$:n alueelta. Mittaus tehdään nopeasti, jotta valon voimakkuus ja paneelin lämpötila pysyvät mahdollisimman samoina. Sarja toistetaan. Jokaisesta pisteestä lasketaan $P = UI$. Tehon kuvaaja piirretään jännitteen funktiona. Suurin teho luetaan kuvaajan huipusta. Hyötysuhde lasketaan $\eta = \tfrac{P_\text{max}}{GA}$. Pinta-ala mitataan viivaimella kennojen osalta. Epävarmuus arvioidaan valon voimakkuuden, pinta-alan ja tehon epävarmuuksista sekä toistojen hajonnasta. Tulosta verrataan valmistajan arvoon epävarmuuksineen.
+**Mallivastaus:** Paneeli asetetaan kohtisuoraan auringon säteitä vastaan. Valon voimakkuus mitataan säteilymittarilla paneelin tasossa juuri ennen mittaussarjaa ja sen jälkeen.
+
+Paneeliin kytketään säädettävä vastus. Jännite ja virta mitataan esimerkiksi $15$–$20$ kuormalla. Mittauksia tehdään tiheimmin tehon huipun ympäriltä, noin $20$–$35\,\Omega$:n alueelta. Mittaus tehdään nopeasti, jotta valon voimakkuus ja paneelin lämpötila pysyvät mahdollisimman samoina. Sarja toistetaan.
+
+Jokaisesta pisteestä lasketaan $P = UI$. Tehon kuvaaja piirretään jännitteen funktiona. Suurin teho luetaan kuvaajan huipusta. Hyötysuhde lasketaan $\eta = \tfrac{P_\text{max}}{GA}$. Pinta-ala mitataan viivaimella kennojen osalta.
+
+Epävarmuus arvioidaan valon voimakkuuden, pinta-alan ja tehon epävarmuuksista sekä toistojen hajonnasta. Tulosta verrataan valmistajan arvoon epävarmuuksineen.
 
 ### Yleisiä virheitä
 - Teho lasketaan tyhjäkäyntijännitteen ja oikosulkuvirran tulona.
@@ -429,7 +489,11 @@ $$ ja $E = \dfrac{1100\,\text{V}}{0{,}0010\,\text{m}} = 1{,}1 \cdot 10^{6}\,\tex
 ### b)
 **Annettu:** ionisuihkun virta $I = 1{,}60\,\text{A}$; a-kohdasta $v = 4{,}021 \cdot 10^{4}\,\text{m/s}$; $m = 2{,}180 \cdot 10^{-25}\,\text{kg}$; $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
 **Kysytty:** työntövoima $F$, jonka ionisuihku antaa satelliitille
-**Periaate:** Virta on varaus, joka kulkee aikayksikössä. Siksi virta kertoo, montako ionia moottori lähettää sekunnissa. Ajassa $\Delta t$ lähtee ioneja, joiden massa on $\Delta m$. Ne saavat nopeuden $v$ lähes levosta. Impulssiperiaatteen mukaan niiden liikemäärän muutos $\Delta m \cdot v$ on yhtä suuri kuin impulssi $F\,\Delta t$. Sen antaa voima, jolla moottori vaikuttaa ioneihin. Newtonin kolmannen lain mukaan ionit vaikuttavat moottoriin yhtä suurella vastakkaissuuntaisella voimalla. Tämä voima työntää satelliittia (luvut *Liikemäärä ja impulssi* ja *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*).
+**Periaate:** Virta on varaus, joka kulkee aikayksikössä. Siksi virta kertoo, montako ionia moottori lähettää sekunnissa.
+
+Ajassa $\Delta t$ lähtee ioneja, joiden massa on $\Delta m$. Ne saavat nopeuden $v$ lähes levosta. Impulssiperiaatteen mukaan niiden liikemäärän muutos $\Delta m \cdot v$ on yhtä suuri kuin impulssi $F\,\Delta t$. Sen antaa voima, jolla moottori vaikuttaa ioneihin.
+
+Newtonin kolmannen lain mukaan ionit vaikuttavat moottoriin yhtä suurella vastakkaissuuntaisella voimalla. Tämä voima työntää satelliittia (luvut *Liikemäärä ja impulssi* ja *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*).
 **Kaava:** $N = \dfrac{I}{e}$, $\dfrac{\Delta m}{\Delta t} = Nm$ ja $F\,\Delta t = \Delta m \cdot v$, joten $F = \dfrac{\Delta m}{\Delta t}\,v = \dfrac{Imv}{e}$
 **Muunnokset:** $1\,\text{A} = 1\,\text{C/s}$. Lopuksi $1\,\text{N} = 1000\,\text{mN}$.
 **Sijoitus:** $N = \dfrac{1{,}60\,\text{C/s}}{1{,}602 \cdot 10^{-19}\,\text{C}} = 9{,}988 \cdot 10^{18}\,\tfrac{1}{\text{s}}$, $$
@@ -491,7 +555,13 @@ $$. Se on yhtä suuri kuin ionien liike-energia sekunnissa, $$
 &\cdot (4{,}021 \cdot 10^{4}\,\tfrac{\text{m}}{\text{s}})^2 \\
 &= 1{,}76\,\text{kW}
 \end{aligned}
-$$. Näin energian säilyminen vaatii. Paneelien $2{,}5\,\text{kW}$ riittää siis suihkulle. Loput $0{,}7\,\text{kW}$ käytetään ionisointiin, neutralointiin ja satelliitin muihin laitteisiin. Työntövoima on $F = \tfrac{\Delta m}{\Delta t}\,v$ ja teho $P = \tfrac12 \tfrac{\Delta m}{\Delta t}\,v^2$, joten $F = \tfrac{2P}{v}$. Kun teho on annettu, suuri ionien nopeus antaa pienen työntövoiman, vain $87{,}5\,\text{mN}$. Toisaalta suuri nopeus tarkoittaa, että jokainen ajomassan kilogramma antaa paljon liikemäärää. Ajomassa on aine, jota moottori heittää ulos. Siksi ksenonia kuluu vähän. Ionimoottori ei sovi laukaisuun eikä nopeisiin liikkeisiin. Se on kuitenkin hyvä pitkiin ratamuutoksiin, jotka kestävät viikkoja tai kuukausia, koska se säästää kymmeniä kilogrammoja massaa.
+$$. Näin energian säilyminen vaatii.
+
+Paneelien $2{,}5\,\text{kW}$ riittää siis suihkulle. Loput $0{,}7\,\text{kW}$ käytetään ionisointiin, neutralointiin ja satelliitin muihin laitteisiin.
+
+Työntövoima on $F = \tfrac{\Delta m}{\Delta t}\,v$ ja teho $P = \tfrac12 \tfrac{\Delta m}{\Delta t}\,v^2$, joten $F = \tfrac{2P}{v}$. Kun teho on annettu, suuri ionien nopeus antaa pienen työntövoiman, vain $87{,}5\,\text{mN}$.
+
+Toisaalta suuri nopeus tarkoittaa, että jokainen ajomassan kilogramma antaa paljon liikemäärää. Ajomassa on aine, jota moottori heittää ulos. Siksi ksenonia kuluu vähän. Ionimoottori ei sovi laukaisuun eikä nopeisiin liikkeisiin. Se on kuitenkin hyvä pitkiin ratamuutoksiin, jotka kestävät viikkoja tai kuukausia, koska se säästää kymmeniä kilogrammoja massaa.
 
 ### Yleisiä virheitä
 - a-kohdassa ionin massana käytetään elektronin massaa, tai kilovoltteja ei muunneta volteiksi.
@@ -682,7 +752,9 @@ R_\text{D}(20\,\text{mA}) &= \dfrac{2{,}2\,\text{V}}{0{,}020\,\text{A}} \\
 &= 110\,\Omega
 \end{aligned}
 $$
-**Vastaus:** $R_\text{D} \approx 440\,\Omega$ virralla $5\,\text{mA}$ ja $110\,\Omega$ virralla $20\,\text{mA}$. Resistanssi ei ole vakio. Se pienenee neljäsosaan, kun virta nelinkertaistuu. LED ei noudata Ohmin lakia, koska käyrä ei ole suora, joka kulkee origon kautta. Jännite pysyy lähes samana, vaikka virta muuttuu paljon. Siksi LEDiä ei voi kytkeä suoraan jännitelähteeseen: pieni jännite-ero aiheuttaisi suuren virran. Etuvastus ottaa ylimääräisen jännitteen ja määrää virran.
+**Vastaus:** $R_\text{D} \approx 440\,\Omega$ virralla $5\,\text{mA}$ ja $110\,\Omega$ virralla $20\,\text{mA}$. Resistanssi ei ole vakio. Se pienenee neljäsosaan, kun virta nelinkertaistuu. LED ei noudata Ohmin lakia, koska käyrä ei ole suora, joka kulkee origon kautta.
+
+Jännite pysyy lähes samana, vaikka virta muuttuu paljon. Siksi LEDiä ei voi kytkeä suoraan jännitelähteeseen: pieni jännite-ero aiheuttaisi suuren virran. Etuvastus ottaa ylimääräisen jännitteen ja määrää virran.
 **Järkevyys:** Virta nelinkertaistui ($5\,\text{mA} \to 20\,\text{mA}$) ja jännite pysyi samana. Siksi resistanssin pitää pienentyä neljäsosaan: $440\,\Omega : 4 = 110\,\Omega$.
 
 ### Yleisiä virheitä

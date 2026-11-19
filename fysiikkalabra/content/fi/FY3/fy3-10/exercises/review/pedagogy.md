@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f34c27af88a25519
+CONTENT-HASH: 1203ef63fbdd9fa6
+SCOPE: delta caption-label,md-paragraphs,reflow,wording from f34c27af88a25519 base ac369417c8610d798a13d1be354cfa6dc1e8dce8
 ## Blocking
 (none)
 ## Polish
-- solutions.md ~222 — check exercises.json tolerance for the ratio task accepts 1,67 as well as 1,7 (students may give either).
+(none)
 ## Checked
-- Delta: sig-fig reasoning now names the limiting values (60 kPa, 40 kPa) and says 2,00 l does not limit; 7,5 vs 7,4 m3 cross-check consistent; ratio 1,7 (calculated 1,667) agrees with the exercise.
-- Judged from the diff text; captures not opened.
+- Delta judged in context: the prefix "Esimerkkiaineisto:" removed from task texts; no numbers, symbols, data or questions changed.
+- Each task now opens with the situation (e.g. a sentence starting with the subject in Finnish nominative/partitive), grammatical without the prefix; the question still comes last.
+- Solutions.md changes are presentation only (reflow / paragraphs); levels, figures and answer fields untouched.

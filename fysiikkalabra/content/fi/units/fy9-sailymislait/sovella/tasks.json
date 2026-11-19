@@ -1,5 +1,5 @@
 {
- "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa tunnin mekaanisen energian ja liikemäärän. Ratkaise ne kuten kokeessa: perustele, minkä säilymislain valitset ja miksi se pätee tilanteessa, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+ "intro": "Kahdeksan ylioppilaskokeen tyylistä tehtävää kokoaa tunnin mekaanisen energian ja liikemäärän. Ratkaise ne kuten kokeessa: perustele, minkä säilymislain valitset ja miksi se pätee tilanteessa, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
  "tasks": [
   {
    "id": "fy9-sailymislait-s1",
@@ -782,6 +782,328 @@
    "links": {
     "math": "fy4-10",
     "concept": "fy4-10",
+    "transfer": "fy4-8"
+   }
+  },
+  {
+   "id": "fy9-sailymislait-s7",
+   "title": "Kelkka rinteessä",
+   "source": "example",
+   "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä.",
+   "skills": [
+    "fy4-8",
+    "fy4-7",
+    "fy4-6"
+   ],
+   "figure": "fy4-8/palkit-asteikko",
+   "text": "Opiskelija tutkii, miten kelkka liukuu suoraa rinnettä alas. Kelkan massa on $2{,}0\\,\\text{kg}$, ja se lähtee liikkeelle levosta. Rinteen pituus on $6{,}0\\,\\text{m}$, ja liukukitkakerroin on sama koko matkalla. Ilmanvastus on merkityksetön. Rinteen alapää on potentiaalienergian nollataso. Kuvaajassa ovat kelkan potentiaalienergia $E_{\\text{p}0}$ alussa ja liike-energia $E_\\text{k}$ lopussa.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Määritä kelkan lähtökorkeus rinteen alapäähän nähden.",
+     "answer": {
+      "value": 2.039,
+      "unit": "m",
+      "tolerance": 0.06
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Alun potentiaalienergia luetaan vihreän palkin yläreunasta: $E_{\\text{p}0} = 40\\,\\text{J}$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$E_{\\text{p}0} = mgh$, josta $h = \\dfrac{E_{\\text{p}0}}{mg}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\nh &= \\dfrac{40\\,\\text{J}}{2{,}0\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2} \\\\\n&\\approx 2{,}0\\,\\text{m}\n\\end{aligned}\n$$"
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 5,
+     "text": "Laske kitkavoiman tekemä työ ja kitkavoiman suuruus.",
+     "answer": [
+      {
+       "name": "W",
+       "value": -15.0,
+       "unit": "J",
+       "tolerance": 0.5
+      },
+      {
+       "name": "F",
+       "value": 2.5,
+       "unit": "N",
+       "tolerance": 0.1
+      }
+     ],
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Lopun liike-energia luetaan sinisen palkin yläreunasta: $E_\\text{k} = 25\\,\\text{J}$. Alussa liike-energia on nolla ja lopussa potentiaalienergia on nolla."
+      },
+      {
+       "key": "equation",
+       "points": 2,
+       "detail": "Energiaperiaate: $E_{\\text{p}0} + W_\\text{kitka} = E_\\text{k}$, joten $W_\\text{kitka} = E_\\text{k} - E_{\\text{p}0}$. Kitkavoima vastustaa liikettä: $W_\\text{kitka} = -F s$, joten $F = \\dfrac{-W_\\text{kitka}}{s}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$W_\\text{kitka} = 25\\,\\text{J} - 40\\,\\text{J} = -15\\,\\text{J}$ ja $F = \\dfrac{15\\,\\text{J}}{6{,}0\\,\\text{m}} = 2{,}5\\,\\text{N}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$W_\\text{kitka} = -15\\,\\text{J}$ ja $F = 2{,}5\\,\\text{N}$; työ on negatiivinen, koska kitkavoima on liikettä vastaan."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 3,
+     "text": "Laske kelkan nopeus rinteen alapäässä. Kuinka suuri nopeus olisi ilman kitkaa?",
+     "answer": [
+      {
+       "name": "v",
+       "value": 5.0,
+       "unit": "m/s",
+       "tolerance": 0.1
+      },
+      {
+       "name": "v0",
+       "value": 6.325,
+       "unit": "m/s",
+       "tolerance": 0.1
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Alapäässä $E_\\text{k} = \\tfrac12 mv^2$, joten $v = \\sqrt{\\dfrac{2E_\\text{k}}{m}}$. Ilman kitkaa mekaaninen energia säilyisi: $E_{\\text{p}0} = \\tfrac12 mv_0^2$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$v = \\sqrt{\\dfrac{2 \\cdot 25\\,\\text{J}}{2{,}0\\,\\text{kg}}} = 5{,}0\\,\\text{m/s}$ ja $v_0 = \\sqrt{\\dfrac{2 \\cdot 40\\,\\text{J}}{2{,}0\\,\\text{kg}}} \\approx 6{,}3\\,\\text{m/s}$"
+      },
+      {
+       "text": "Päättelee, että kitka pienentää nopeutta noin $21\\,\\%$: osa potentiaalienergiasta muuttuu sisäenergiaksi, joka siirtyy lämpönä ympäristöön, joten liike-energiaa jää vähemmän.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kelkan tilalle vaihdetaan samanlainen kelkka, jonka massa on $3{,}0\\,\\text{kg}$. Rinne ja liukukitkakerroin pysyvät samoina. Mitä tapahtuu nopeudelle rinteen alapäässä? Perustele laskemalla.",
+     "answer": {
+      "value": 5.0,
+      "unit": "m/s",
+      "tolerance": 0.1
+     },
+     "criteria": [
+      {
+       "text": "Perustelee, että liukukitkavoima $F = \\mu N = \\mu mg\\cos\\alpha$ on suoraan verrannollinen massaan, samoin kuin potentiaalienergia $mgh$. Sekä energian lähde että kitkan työ kasvavat samassa suhteessa.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$mgh - \\mu mg\\cos\\alpha \\cdot s = \\tfrac12 mv^2$, jossa massa supistuu: $v = \\sqrt{2g\\,(h - \\mu\\cos\\alpha \\cdot s)}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Uusi potentiaalienergia on $60\\,\\text{J}$ ja kitkan työ $-22{,}5\\,\\text{J}$, joten $E_\\text{k} = 37{,}5\\,\\text{J}$ ja $v = \\sqrt{\\dfrac{2 \\cdot 37{,}5\\,\\text{J}}{3{,}0\\,\\text{kg}}} = 5{,}0\\,\\text{m/s}$."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Nopeus ei muutu: se on edelleen $5{,}0\\,\\text{m/s}$, koska massa ei vaikuta nopeuteen, kun ilmanvastus on merkityksetön. Raskaampi kelkka kuluttaa liike-energiaa enemmän, mutta sillä on myös enemmän energiaa."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "graph": "fy4-8",
+    "math": "fy4-8",
+    "concept": "fy4-8",
+    "communication": "fy4-8"
+   }
+  },
+  {
+   "id": "fy9-sailymislait-s8",
+   "title": "Jalkapallon potku",
+   "source": "example",
+   "source_note": "Tilanne ja luvut ovat keksittyjä esimerkkejä.",
+   "skills": [
+    "fy4-9",
+    "fy4-7",
+    "fy4-8"
+   ],
+   "figure": "fy4-9/tarkistus-kolmio",
+   "text": "Jalkapalloa potkaistaan suoraan ylöspäin, ja pallo on aluksi levossa. Pallon massa on $0{,}43\\,\\text{kg}$. Kuvaajassa on voima, jolla jalka potkaisee palloa, ajan funktiona. Potku on niin lyhyt, että painovoima ja ilmanvastus voidaan jättää huomiotta sen aikana. Nollataso on pallon korkeus potkun hetkellä.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Määritä jalan palloon kohdistama impulssi.",
+     "answer": {
+      "value": 5.4,
+      "unit": "N s",
+      "tolerance": 0.2
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kuvaajan kolmion korkeus on $900\\,\\text{N}$ ja kanta $12\\,\\text{ms}$ eli $0{,}012\\,\\text{s}$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Impulssi on voiman ja ajan kuvaajan ja aika-akselin väliin jäävä pinta-ala: kolmiolle $I = \\tfrac12 F_\\text{max}\\,\\Delta t$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\nI &= \\tfrac12 \\cdot 900\\,\\text{N} \\cdot 0{,}012\\,\\text{s} \\\\\n&= 5{,}4\\,\\text{N s}\n\\end{aligned}\n$$, ylöspäin"
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka suurella nopeudella pallo lähtee potkusta?",
+     "answer": {
+      "value": 12.558,
+      "unit": "m/s",
+      "tolerance": 0.4
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Impulssi on liikemäärän muutos: $I = \\Delta p = mv - 0$, joten $v = \\dfrac{I}{m}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$v = \\dfrac{5{,}4\\,\\text{N s}}{0{,}43\\,\\text{kg}} = 12{,}56\\,\\text{m/s}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$v \\approx 13\\,\\text{m/s}$ kahdella merkitsevällä numerolla, ylöspäin."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Laske pallon liike-energia heti potkun jälkeen ja korkeus, jolle pallo nousisi ilman ilmanvastusta.",
+     "answer": [
+      {
+       "name": "Ek",
+       "value": 33.91,
+       "unit": "J",
+       "tolerance": 1.0
+      },
+      {
+       "name": "h",
+       "value": 8.038,
+       "unit": "m",
+       "tolerance": 0.3
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$E_\\text{k} = \\tfrac12 mv^2$. Ilman ilmanvastusta mekaaninen energia säilyy: $\\tfrac12 mv^2 = mgh$, joten $h = \\dfrac{v^2}{2g}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\nE_\\text{k} &= \\tfrac12 \\cdot 0{,}43\\,\\text{kg} \\\\\n&\\cdot (12{,}56\\,\\text{m/s})^2 \\\\\n&\\approx 33{,}9\\,\\text{J}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$h = \\dfrac{(12{,}56\\,\\text{m/s})^2}{2 \\cdot 9{,}81\\,\\text{m/s}^2} \\approx 8{,}04\\,\\text{m}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$E_\\text{k} \\approx 34\\,\\text{J}$ ja $h \\approx 8{,}0\\,\\text{m}$ kahdella merkitsevällä numerolla."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 4,
+     "text": "Todellisessa potkussa pallo nousee korkeimmillaan $6{,}5\\,\\text{m}$:n korkeuteen. Laske ilmanvastuksen tekemä työ ja ilmanvastuksen keskimääräinen suuruus nousun aikana. Mitä energialle tapahtuu?",
+     "answer": [
+      {
+       "name": "W",
+       "value": -6.49,
+       "unit": "J",
+       "tolerance": 0.5
+      },
+      {
+       "name": "F",
+       "value": 0.998,
+       "unit": "N",
+       "tolerance": 0.1
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Energiaperiaate: $E_\\text{k0} + W_\\text{ilma} = mgh_\\text{mitattu}$, joten $W_\\text{ilma} = mgh_\\text{mitattu} - E_\\text{k0}$. Keskimääräinen voima: $F = \\dfrac{-W_\\text{ilma}}{h_\\text{mitattu}}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\nE_\\text{p} &= 0{,}43\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\\n&\\cdot 6{,}5\\,\\text{m} \\\\\n&\\approx 27{,}4\\,\\text{J}\n\\end{aligned}\n$$ ja $$\n\\begin{aligned}\nW_\\text{ilma} &= 27{,}4\\,\\text{J} - 33{,}9\\,\\text{J} \\\\\n&\\approx -6{,}5\\,\\text{J}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$F = \\dfrac{6{,}5\\,\\text{J}}{6{,}5\\,\\text{m}} \\approx 1{,}0\\,\\text{N}$"
+      },
+      {
+       "text": "Selittää, että mekaanista energiaa on noin $19\\,\\%$ vähemmän kuin ilman ilmanvastusta. Se on muuttunut ilman ja pallon sisäenergiaksi, joka siirtyy lämpönä ympäristöön.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "links": {
+    "graph": "fy4-9",
+    "math": "fy4-9",
+    "concept": "fy4-8",
     "transfer": "fy4-8"
    }
   }

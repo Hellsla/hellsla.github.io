@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 41504aa51101b8ee
+CONTENT-HASH: 631ccc6ac2265706
 
 ## Blocking
 
 ## Polish
-- None.
 
 ## Checked
-batch delta review: Ratio (10/5)² = 4 for one cubic metre of air (fixed mass, so E_k ∝ v² is right); the cube-in-power distractor feedback stays correct; one correct option.
+batch delta review: cards (edited version): loss card now says internal energy transferred as heat to the surroundings (P1 wording) plus outlet kinetic energy; same flow and double head give double power (mgh per m³, ratio 2,0); 100 - 90 = 10 MW; wind card agrees with the text; split stage.

@@ -484,6 +484,12 @@ Kiihtyvyys on vektorisuure $\overline{a}$ kuten nopeus $\overline{v}$, ja suorav
   <line x1="24" y1="196" x2="576" y2="196" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="8 6"/>
 </svg>
 
+```pysahdy
+Kärry liikkuu negatiiviseen suuntaan ja sen kiihtyvyys on $a < 0$. Kasvaako vai pieneneekö kärryn vauhti?
+---
+Vauhti kasvaa, koska nopeus ja kiihtyvyys ovat samansuuntaiset (molemmat negatiivisia).
+```
+
 ### Tasaisesti kiihtyvä liike ja $(t,v)$-kuvaaja
 Liike on **tasaisesti kiihtyvää**, kun kiihtyvyys pysyy vakiona: nopeus muuttuu yhtä paljon jokaisessa yhtä pitkässä aikavälissä. Silloin **$(t,v)$-kuvaaja**, jossa vaaka-akselilla on aika ja pystyakselilla nopeus, on suora. Suoran kulmakerroin on kiihtyvyys. Nouseva suora tarkoittaa positiivista kiihtyvyyttä, vaakasuora tasaista liikettä ja laskeva suora negatiivista kiihtyvyyttä.
 
@@ -543,8 +549,20 @@ Kun nopeus kasvaa, paikka muuttuu jokaisessa sekunnissa enemmän kuin edellisess
   <foreignObject x="85" y="73" width="58" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v = \dfrac{\Delta x}{\Delta t}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Vedät suoran $(t,x)$-käyrän kahden pisteen kautta. Mitä suoran kulmakerroin kertoo?
+---
+Se kertoo keskinopeuden pisteiden välillä, ei hetkellistä nopeutta kummassakaan pisteessä.
+```
+
 ### Vapaa pudotus
 Kun ilmanvastus on pieni, kaikki kappaleet putoavat samalla kiihtyvyydellä massasta riippumatta. Tämä **putoamiskiihtyvyys** on Maan pinnalla $g = 9{,}81\,\text{m/s}^2$ ja suunnattu alaspäin. Pudotetun kiven nopeus kasvaa siis joka sekunti noin $9{,}8\,\text{m/s}$. Siksi kivi kulkee jokaisessa sekunnissa pidemmän matkan kuin edellisessä: levosta lähtevän kappaleen peräkkäisinä yhtä pitkinä aikaväleinä kulkemat matkat suhtautuvat kuin $1 : 3 : 5 : 7$.
+
+```pysahdy
+Pudotat tennispallon ja teräskuulan samalta korkeudelta, ja ilmanvastus on pieni. Kumpi osuu maahan ensin?
+---
+Ne osuvat maahan yhtä aikaa, koska putoamiskiihtyvyys ei riipu massasta.
+```
 
 ## Kaava: Tasaisesti kiihtyvän liikkeen yhtälöt
 Keskikiihtyvyys on nopeuden muutos jaettuna siihen kuluneella ajalla:

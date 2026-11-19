@@ -23,7 +23,9 @@
 ### c)
 **Find:** whether the efficiency of the stove is only about $30\,\%$
 **Principle:** Efficiency is the useful energy obtained divided by the energy used. It depends on what is counted as useful and where the boundary of the system is drawn. In an electric resistor practically all the electrical energy becomes internal energy.
-**Model answer:** The stove is an electric resistor, so practically all the electrical energy it uses, $18\,\text{MJ}$, becomes internal energy of the sauna. About $29\,\%$ of it is in the stones, but the rest heats the air, the benches and the walls of the sauna, and only part of it leaks out through the walls and the ventilation. In heating a sauna, the warming of the air and the walls is also useful, so the figure of part b is the stones' share of the energy, not the efficiency of the stove. The claim does not hold: as a heater of the sauna the stove has an efficiency of almost $100\,\%$, and the only waste is the energy transferred out of the sauna.
+**Model answer:** The stove is an electric resistor, so practically all the electrical energy it uses, $18\,\text{MJ}$, becomes internal energy of the sauna. About $29\,\%$ of it is in the stones, but the rest heats the air, the benches and the walls of the sauna, and only part of it leaks out through the walls and the ventilation.
+
+In heating a sauna, the warming of the air and the walls is also useful, so the figure of part b is the stones' share of the energy, not the efficiency of the stove. The claim does not hold: as a heater of the sauna the stove has an efficiency of almost $100\,\%$, and the only waste is the energy transferred out of the sauna.
 
 ### d)
 **Given:** mass of the water $m = 1.2\,\text{kg}$ (density of water $1\,\tfrac{\text{kg}}{\text{l}}$), initial temperature $18\,{}^\circ\text{C}$, $c_\text{v} = 4.19\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$, $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$; the steam forms at $100\,{}^\circ\text{C}$
@@ -45,7 +47,9 @@ $$
 ### e)
 **Find:** why the skin feels as if it were burning after water is thrown on the stove, although the air temperature hardly rises
 **Principle:** Steam condenses when it meets a surface cooler than itself. Condensation releases the same energy that was needed for the evaporation.
-**Model answer:** The water vapour formed on the stove spreads into the air of the sauna and meets the skin, whose temperature is only about $35$–$40\,{}^\circ\text{C}$. The vapour condenses into water on the skin, and for every kilogram that condenses about $2.3\,\text{MJ}$ of energy is released and transferred to the skin. The skin therefore receives a lot of energy in a short time, although the air temperature in the sauna hardly changes. In addition, moist skin does not cool by sweating, because sweat does not evaporate as well into humid air. That is why the steam feels burning.
+**Model answer:** The water vapour formed on the stove spreads into the air of the sauna and meets the skin, whose temperature is only about $35$–$40\,{}^\circ\text{C}$. The vapour condenses into water on the skin, and for every kilogram that condenses about $2.3\,\text{MJ}$ of energy is released and transferred to the skin.
+
+The skin therefore receives a lot of energy in a short time, although the air temperature in the sauna hardly changes. In addition, moist skin does not cool by sweating, because sweat does not evaporate as well into humid air. That is why the steam feels burning.
 
 ### Yleisiä virheitä
 - In part a the final temperature $280\,{}^\circ\text{C}$, or $553\,\text{K}$ in kelvins, is taken as the change in temperature, although the formula needs the change $\Delta T = 265\,\text{K}$.
@@ -63,7 +67,9 @@ $$
 ### a)
 **Find:** the free-body diagram of the box during braking, when the box stays at rest relative to the bed
 **Principle:** Only the interactions acting on the box are drawn in the free-body diagram: the Earth (weight) and the bed (normal force and friction). The box slows down together with the trailer, so its acceleration points backwards, and by Newton's second law the net force must point in the same direction.
-**Model answer:** The forces on the box are the weight $\overline{G}$ down, the normal force $\overline{N}$ of the bed up and the static friction $\overline{F}_{\mu 0}$ of the bed horizontally backwards, that is against the direction of travel of the car. The box does not accelerate vertically, so $N = G$. The only horizontal force is static friction, and it must point backwards, because it slows the box down as much as the brakes slow down the trailer. There is no forward “force of motion”: the box would continue moving forwards if there were no friction.
+**Model answer:** The forces on the box are the weight $\overline{G}$ down, the normal force $\overline{N}$ of the bed up and the static friction $\overline{F}_{\mu 0}$ of the bed horizontally backwards, that is against the direction of travel of the car. The box does not accelerate vertically, so $N = G$.
+
+The only horizontal force is static friction, and it must point backwards, because it slows the box down as much as the brakes slow down the trailer. There is no forward “force of motion”: the box would continue moving forwards if there were no friction.
 
 <svg data-fig="fy9-harjoituskoe-s2-fbd" viewBox="0 0 600 330" role="img" aria-label="Free-body diagram: a toolbox as a rectangle on the horizontal bed of a trailer, while the trailer brakes and moves to the right. The weight G points from the centre of the box straight down, the normal force N from the bottom surface straight up and is as long as the weight, and the static friction F μ0 points from the lower left corner of the bottom surface to the left, that is backwards. Above the box a blue velocity arrow v points to the right and an orange acceleration arrow a to the left." style="max-width:100%;font-size:24px">
   <line x1="150" y1="241" x2="520" y2="241" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
@@ -131,7 +137,9 @@ $$
 ### d)
 **Find:** whether increasing the mass of the box helps to keep the box in place
 **Principle:** The maximum (fully developed) static friction is $\mu_0 N = \mu_0 mg$, and the force $ma$ is needed to slow the box down. Both are proportional to the mass.
-**Model answer:** A heavier box presses on the bed harder, so the maximum possible static friction $\mu_0 mg$ increases. But a heavier box also needs a greater force $ma$ to slow it down, and this increases in the same proportion. The mass cancels from the condition $ma \le \mu_0 mg$, so the greatest allowed deceleration $a_\text{max} = \mu_0 g$ does not depend on the mass. The suggestion therefore does not help. Methods that work are tying the box to the bed with straps, or increasing the coefficient of friction, for example with a rubber non-slip mat under the box.
+**Model answer:** A heavier box presses on the bed harder, so the maximum possible static friction $\mu_0 mg$ increases. But a heavier box also needs a greater force $ma$ to slow it down, and this increases in the same proportion.
+
+The mass cancels from the condition $ma \le \mu_0 mg$, so the greatest allowed deceleration $a_\text{max} = \mu_0 g$ does not depend on the mass. The suggestion therefore does not help. Methods that work are tying the box to the bed with straps, or increasing the coefficient of friction, for example with a rubber non-slip mat under the box.
 
 ### Yleisiä virheitä
 - A forward force that “carries the box forwards” is drawn in the free-body diagram, or the friction is drawn forwards.
@@ -186,7 +194,9 @@ $$ and $\dfrac{\Delta L}{L_0} = \dfrac{-3.62 \cdot 10^{-4}\,\text{m}}{1.31\,\tex
 ### d)
 **Find:** how the note of the stopped pipe differs from the note of the open pipe
 **Principle:** The nodes and antinodes of the standing wave are set by the ends of the pipe: at a closed end the air cannot move, so there is a node there, and at an open end there is an antinode.
-**Model answer:** The stopped pipe has a node at its closed end and an antinode at its open end, so in the fundamental mode the length of the pipe is only a quarter of a wavelength: $\lambda_1 = 4L$. The fundamental frequency is $f_1 = \tfrac{v}{4L} = \tfrac{343.2\,\text{m/s}}{4 \cdot 1.31\,\text{m}} \approx 65.5\,\text{Hz}$, half the fundamental frequency of the open pipe, so the note is an octave lower. In addition, a stopped pipe can produce only the odd multiples of the fundamental frequency, $3f_1, 5f_1, \ldots$ ($197\,\text{Hz}$, $328\,\text{Hz}$, …), because there must always be a node at the closed end. An open pipe produces all the multiples. That is why the timbre of the stopped pipe is different: softer and more hollow-sounding.
+**Model answer:** The stopped pipe has a node at its closed end and an antinode at its open end, so in the fundamental mode the length of the pipe is only a quarter of a wavelength: $\lambda_1 = 4L$. The fundamental frequency is $f_1 = \tfrac{v}{4L} = \tfrac{343.2\,\text{m/s}}{4 \cdot 1.31\,\text{m}} \approx 65.5\,\text{Hz}$, half the fundamental frequency of the open pipe, so the note is an octave lower.
+
+In addition, a stopped pipe can produce only the odd multiples of the fundamental frequency, $3f_1, 5f_1, \ldots$ ($197\,\text{Hz}$, $328\,\text{Hz}$, …), because there must always be a node at the closed end. An open pipe produces all the multiples. That is why the timbre of the stopped pipe is different: softer and more hollow-sounding.
 
 ### Yleisiä virheitä
 - In part a a quarter wavelength is used for the open pipe, which makes the frequency $65.5\,\text{Hz}$.
@@ -250,7 +260,9 @@ $$
 ### e)
 **Find:** why a cord on a reel heats up more and why that is dangerous
 **Principle:** The temperature of the cord rises until it transfers as much power to the surroundings as is produced in it. The transfer of heat depends on how much of the surface is freely in contact with the air.
-**Model answer:** The same heating power, about $110\,\text{W}$, is produced in the cord whether it is on the reel or spread out. A cord that is spread out gives off heat to the air from its whole surface, so it warms only a little. On a reel the turns lie tightly on top of each other: they heat each other, and only the outer surface of the reel gives off heat to the air. The temperature therefore rises much higher before the power given off equals the power produced. The resistance of copper increases as the temperature rises, which adds a little to the heating. Hot insulation can soften and melt, which causes a short circuit or a fire. That is why an extension cord is unwound completely when a large load is connected to it.
+**Model answer:** The same heating power, about $110\,\text{W}$, is produced in the cord whether it is on the reel or spread out. A cord that is spread out gives off heat to the air from its whole surface, so it warms only a little. On a reel the turns lie tightly on top of each other: they heat each other, and only the outer surface of the reel gives off heat to the air.
+
+The temperature therefore rises much higher before the power given off equals the power produced. The resistance of copper increases as the temperature rises, which adds a little to the heating. Hot insulation can soften and melt, which causes a short circuit or a fire. That is why an extension cord is unwound completely when a large load is connected to it.
 
 ### Yleisiä virheitä
 - In part a only the length of one conductor, $25.0\,\text{m}$, is used, which halves the resistance.
@@ -346,7 +358,9 @@ $$
 ### d)
 **Find:** why the method is not suitable for wood that is $200\,000$ years old, nor for wood that is ten years old
 **Principle:** The method can date a sample only if the change in activity is clearly greater than the measurement uncertainty and the remaining activity can be distinguished from the background radiation.
-**Model answer:** In $200\,000$ years $\tfrac{200\,000\,\text{a}}{5730\,\text{a}} \approx 35$ half-lives pass, and $\left(\tfrac{1}{2}\right)^{35} \approx 3 \cdot 10^{-11}$ of the original carbon-14 nuclei remain. The activity of the sample is so small that it cannot be distinguished from the background radiation, so the age cannot be determined. In ten years the activity decreases by only $1 - \left(\tfrac{1}{2}\right)^{10/5730} \approx 0.1\,\%$, while the uncertainty of the measurement is about $2\,\%$. The change is lost in the uncertainty. In addition, the nuclear weapons tests of the 1950s and 1960s increased the carbon-14 content of the air, so the assumption of a constant initial activity does not hold for young samples. The method works when the age is from hundreds of years to a few tens of thousands of years.
+**Model answer:** In $200\,000$ years $\tfrac{200\,000\,\text{a}}{5730\,\text{a}} \approx 35$ half-lives pass, and $\left(\tfrac{1}{2}\right)^{35} \approx 3 \cdot 10^{-11}$ of the original carbon-14 nuclei remain. The activity of the sample is so small that it cannot be distinguished from the background radiation, so the age cannot be determined. In ten years the activity decreases by only $1 - \left(\tfrac{1}{2}\right)^{10/5730} \approx 0.1\,\%$, while the uncertainty of the measurement is about $2\,\%$. The change is lost in the uncertainty.
+
+In addition, the nuclear weapons tests of the 1950s and 1960s increased the carbon-14 content of the air, so the assumption of a constant initial activity does not hold for young samples. The method works when the age is from hundreds of years to a few tens of thousands of years.
 
 ### Yleisiä virheitä
 - In part a the daughter nucleus is written as boron, or the mass number decreases, although the mass number is conserved in beta decay.
@@ -404,7 +418,9 @@ $$. The bounce halves the speed, and $\left(\tfrac{2.66}{5.42}\right)^2 = 0.24$,
 ### d)
 **Find:** the precision with which the bounce height can be read from the video, and two ways to improve the measurement
 **Principle:** At the highest point the velocity of the ball is zero, so its position changes little between frames. The position of the camera and the scale decides whether the height is read correctly.
-**Model answer:** The interval between frames is $\tfrac{1}{30}\,\text{s}$. Near the highest point the ball moves slowly: $\tfrac{1}{30}\,\text{s}$ after the highest point it has fallen only $\tfrac{1}{2} \cdot 9.81\,\text{m/s}^2 \cdot \left(\tfrac{1}{30}\,\text{s}\right)^2 \approx 5\,\text{mm}$, so the highest frame shows the peak to within a few millimetres. The reading is, however, made less precise by the blurred edge of the ball and by the ball being in front of the tape measure. Overall the bounce height is obtained to a precision of about $1\,\text{cm}$. The largest source of error is parallax: if the camera is above or below the peak, the ball appears to be at the wrong reading. The measurement is improved by placing the camera at the height of the peak and further away, by putting the tape measure right behind the path of the ball, and by repeating the drops and using the mean.
+**Model answer:** The interval between frames is $\tfrac{1}{30}\,\text{s}$. Near the highest point the ball moves slowly: $\tfrac{1}{30}\,\text{s}$ after the highest point it has fallen only $\tfrac{1}{2} \cdot 9.81\,\text{m/s}^2 \cdot \left(\tfrac{1}{30}\,\text{s}\right)^2 \approx 5\,\text{mm}$, so the highest frame shows the peak to within a few millimetres. The reading is, however, made less precise by the blurred edge of the ball and by the ball being in front of the tape measure.
+
+Overall the bounce height is obtained to a precision of about $1\,\text{cm}$. The largest source of error is parallax: if the camera is above or below the peak, the ball appears to be at the wrong reading. The measurement is improved by placing the camera at the height of the peak and further away, by putting the tape measure right behind the path of the ball, and by repeating the drops and using the mean.
 
 ### Yleisiä virheitä
 - In part a several variables are changed at the same time, for example the drop height and the temperature.
@@ -422,7 +438,9 @@ $$. The bounce halves the speed, and $\left(\tfrac{2.66}{5.42}\right)^2 = 0.24$,
 ### a)
 **Find:** why the stack of filters finally falls at a constant speed
 **Principle:** Newton's second law: the acceleration is the net force divided by the mass. Air resistance increases as the speed increases, while the weight stays the same.
-**Model answer:** The forces on the stack are the weight $\overline{G}$ downwards and the air resistance $\overline{F}_\text{v}$ upwards. Just after the release the speed is small, so the air resistance is small and the net force points down: the stack accelerates downwards and its speed increases. As the speed increases, the air resistance increases, so the net force and the acceleration decrease. Finally the air resistance is equal to the weight. Then the net force is zero, the acceleration is zero and, by Newton's first law, the stack continues at a steady speed, the terminal speed.
+**Model answer:** The forces on the stack are the weight $\overline{G}$ downwards and the air resistance $\overline{F}_\text{v}$ upwards. Just after the release the speed is small, so the air resistance is small and the net force points down: the stack accelerates downwards and its speed increases.
+
+As the speed increases, the air resistance increases, so the net force and the acceleration decrease. Finally the air resistance is equal to the weight. Then the net force is zero, the acceleration is zero and, by Newton's first law, the stack continues at a steady speed, the terminal speed.
 
 ### b)
 **Given:** $N = 4$ filters, mass of one filter $m = 1.20\,\text{g}$, $g = 9.81\,\text{m/s}^2$
@@ -447,7 +465,9 @@ $$. The bounce halves the speed, and $\left(\tfrac{2.66}{5.42}\right)^2 = 0.24$,
 | $5$ | $58.9$ | $5.71$ |
 | $6$ | $70.6$ | $6.45$ |
 
-If Aino's model held, the points $(v, F_\text{v})$ would lie on a line through the origin. They curve upwards, however, and the line fitted to them, $F_\text{v} = 38.6\,\tfrac{\text{mN} \cdot \text{s}}{\text{m}} \cdot v - 31.9\,\text{mN}$, would cross the speed axis at $0.83\,\text{m/s}$: the model would claim that no air resistance at all acts on a stack moving more slowly than this, which is impossible. To test Eetu's model, $F_\text{v}$ is plotted as a function of the square of the speed $v^2$. The line passes through the origin, because the air resistance is zero at rest.
+If Aino's model held, the points $(v, F_\text{v})$ would lie on a line through the origin. They curve upwards, however, and the line fitted to them, $F_\text{v} = 38.6\,\tfrac{\text{mN} \cdot \text{s}}{\text{m}} \cdot v - 31.9\,\text{mN}$, would cross the speed axis at $0.83\,\text{m/s}$: the model would claim that no air resistance at all acts on a stack moving more slowly than this, which is impossible.
+
+To test Eetu's model, $F_\text{v}$ is plotted as a function of the square of the speed $v^2$. The line passes through the origin, because the air resistance is zero at rest.
 
 <svg data-fig="fy9-harjoituskoe-s8-graph" viewBox="0 0 600 430" role="img" aria-label="Graph: air resistance F v in millinewtons as a function of the square of the constant speed v². Six measured points between 1.1 and 6.5 m²/s² and between 12 and 71 mN lie on a line through the origin. The point (6.00 m²/s²; 64.2 mN) has been read from the line with dashed lines. The slope is about 10.7 mN·s²/m², that is 0.0107 kg/m." style="max-width:100%;font-size:24px">
   <line x1="138.5" y1="380" x2="138.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -532,7 +552,9 @@ If Aino's model held, the points $(v, F_\text{v})$ would lie on a line through t
 **Formula:** $kv_{10}^2 = Nmg$, so $v_{10} = \sqrt{\dfrac{Nmg}{k}}$
 **Conversions:** None needed.
 **Substitution:** $v_{10} = \sqrt{\dfrac{10 \cdot 1.20 \cdot 10^{-3}\,\text{kg} \cdot 9.81\,\text{m/s}^2}{0.01070\,\text{kg/m}}} = \sqrt{11.00\,\text{m}^2/\text{s}^2} = 3.317\,\text{m/s}$
-**Answer:** $v_{10} \approx 3.3\,\text{m/s}$, two significant figures, because the prediction is an extrapolation and its uncertainty is larger than that of the measurements. The prediction lies outside the measured range ($v \le 2.54\,\text{m/s}$), so it assumes that the model holds at higher speeds too. In the same setup a heavier stack needs a longer distance to reach its terminal speed, and a drop of $2.5\,\text{m}$ may not be enough: the measured speed could be smaller than predicted.
+**Answer:** $v_{10} \approx 3.3\,\text{m/s}$, two significant figures, because the prediction is an extrapolation and its uncertainty is larger than that of the measurements. The prediction lies outside the measured range ($v \le 2.54\,\text{m/s}$), so it assumes that the model holds at higher speeds too.
+
+In the same setup a heavier stack needs a longer distance to reach its terminal speed, and a drop of $2.5\,\text{m}$ may not be enough: the measured speed could be smaller than predicted.
 **Reasonableness:** The speed increases with the square root of the mass: $\sqrt{\tfrac{10}{6}} \cdot 2.54\,\text{m/s} \approx 3.3\,\text{m/s}$, which agrees with the result.
 
 ### Yleisiä virheitä
@@ -650,12 +672,16 @@ If Aino's model held, the points $(v, F_\text{v})$ would lie on a line through t
 ### e)
 **Find:** whether the claims of the press release about the temperature at the bottom and the heating power hold
 **Principle:** The claims are compared with the model based on the measurements and with the calculation of part d, and it is stated what each claim would require.
-**Model answer:** According to the measurements in the test well, the temperature of the rock at a depth of $6.0\,\text{km}$ is about $110\,{}^\circ\text{C}$. The claim “over $120\,{}^\circ\text{C}$” would require the temperature to rise faster in the unmeasured range $3$–$6\,\text{km}$ than in the test well; with the same rise, $120\,{}^\circ\text{C}$ would be reached only at a depth of about $6.6\,\text{km}$. With the planned water flow the heating power comes out at about $6.3\,\text{MW}$. A power of $10\,\text{MW}$ would require, with the same temperature rise, a water flow of $\tfrac{10 \cdot 10^6\,\text{W}}{4190\,\text{J/(kg K)} \cdot 50\,\text{K}} \approx 48\,\tfrac{\text{kg}}{\text{s}}$ or a larger temperature difference. Neither claim therefore follows from the given data: they are too optimistic unless there are other measurements from deeper down or some other change in the plan.
+**Model answer:** According to the measurements in the test well, the temperature of the rock at a depth of $6.0\,\text{km}$ is about $110\,{}^\circ\text{C}$. The claim “over $120\,{}^\circ\text{C}$” would require the temperature to rise faster in the unmeasured range $3$–$6\,\text{km}$ than in the test well; with the same rise, $120\,{}^\circ\text{C}$ would be reached only at a depth of about $6.6\,\text{km}$.
+
+With the planned water flow the heating power comes out at about $6.3\,\text{MW}$. A power of $10\,\text{MW}$ would require, with the same temperature rise, a water flow of $\tfrac{10 \cdot 10^6\,\text{W}}{4190\,\text{J/(kg K)} \cdot 50\,\text{K}} \approx 48\,\tfrac{\text{kg}}{\text{s}}$ or a larger temperature difference. Neither claim therefore follows from the given data: they are too optimistic unless there are other measurements from deeper down or some other change in the plan.
 
 ### f)
 **Find:** how radioactive decay heats the rock
 **Principle:** In decay, binding energy of the nucleus is released as kinetic energy of particles and radiation, which is transferred to the surrounding matter.
-**Model answer:** When a uranium, thorium or potassium-40 nucleus in the rock decays, energy is released as the energy of the alpha or beta particles produced, of the daughter nucleus and of the gamma radiation. The particles and the radiation collide with the atoms of the surrounding rock and give up their energy within millimetres or centimetres. The motion of the particles of the rock increases, that is the internal energy and the temperature of the rock increase. Decays happen continuously everywhere in the rock, so the rock produces heat all the time.
+**Model answer:** When a uranium, thorium or potassium-40 nucleus in the rock decays, energy is released as the energy of the alpha or beta particles produced, of the daughter nucleus and of the gamma radiation. The particles and the radiation collide with the atoms of the surrounding rock and give up their energy within millimetres or centimetres.
+
+The motion of the particles of the rock increases, that is the internal energy and the temperature of the rock increase. Decays happen continuously everywhere in the rock, so the rock produces heat all the time.
 
 ### Yleisiä virheitä
 - In part a the line is forced through the origin, which makes the slope and the extrapolation too large.
@@ -782,7 +808,9 @@ The line is not forced through the origin, because the spring itself also oscill
 ### e)
 **Find:** whether the period doubles when the mass is doubled
 **Principle:** The periods in the data for masses of which one is twice the other are compared with each other and with the model $T \propto \sqrt{m + m_\text{j}}$.
-**Model answer:** In the data the mass doubles, for example, from $0.300\,\text{kg}$ to $0.600\,\text{kg}$, and the period increases from $0.713\,\text{s}$ to $0.990\,\text{s}$, that is only by a factor of $\tfrac{0.990}{0.713} \approx 1.39$. The claim is wrong: the period is proportional to the square root of the oscillating mass, so without the mass of the spring doubling the mass would increase the period by a factor of $\sqrt{2} \approx 1.41$. When the effect of the spring's mass from part c, $m_\text{j} \approx 0.020\,\text{kg}$, is added to both masses, the model gives $\sqrt{0.620 : 0.320} \approx 1.39$, which agrees with the data. The difference is therefore due to the spring's own mass, which does not double.
+**Model answer:** In the data the mass doubles, for example, from $0.300\,\text{kg}$ to $0.600\,\text{kg}$, and the period increases from $0.713\,\text{s}$ to $0.990\,\text{s}$, that is only by a factor of $\tfrac{0.990}{0.713} \approx 1.39$. The claim is wrong: the period is proportional to the square root of the oscillating mass, so without the mass of the spring doubling the mass would increase the period by a factor of $\sqrt{2} \approx 1.41$.
+
+When the effect of the spring's mass from part c, $m_\text{j} \approx 0.020\,\text{kg}$, is added to both masses, the model gives $\sqrt{0.620 : 0.320} \approx 1.39$, which agrees with the data. The difference is therefore due to the spring's own mass, which does not double.
 
 ### Yleisiä virheitä
 - In part a $T$ is plotted as a function of the mass and a straight line is fitted to the curved set of points.

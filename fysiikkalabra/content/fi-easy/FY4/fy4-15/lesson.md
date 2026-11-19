@@ -226,6 +226,12 @@ Vesi- ja tuulivoimala eivät tee energiaa tyhjästä. Ne muuttavat veden tai ilm
 ### Teho kertoo energiaa sekunnissa
 Voimalaa kuvataan sen teholla. Teho kertoo, kuinka paljon energiaa voimala muuntaa sekunnissa. Yksi kuutiometri vettä on $1000\,\text{kg}$. Kun se putoaa Imatran putouskorkeuden $24\,\text{m}$, sen potentiaalienergiaa vapautuu $mgh \approx 235\,\text{kJ}$. Jos turbiinien läpi virtaa sekunnissa satoja kuutiometrejä, teho on satoja megawatteja. Teho kasvaa siis kahdesta syystä. Se kasvaa, kun sekunnissa putoaa enemmän vettä. Se kasvaa myös, kun vesi putoaa korkeammalta. Vuoksen vesi virtaa ensin Tainionkosken ja sitten Imatran voimalaitoksen läpi. Siksi virtaama eli sekunnissa virtaava vesimäärä on molemmissa sama. Imatran putouskorkeus on noin kolme kertaa suurempi, ja niin on sen tehokin.
 
+```pysahdy
+Kaksi voimalaa saa yhtä paljon vettä sekunnissa. Toisen putouskorkeus on kaksi kertaa suurempi. Kumman teho on suurempi ja kuinka paljon?
+---
+Sen voimalan teho, jonka putouskorkeus on suurempi. Teho on kaksinkertainen, koska jokaisen putoavan kuutiometrin energia $mgh$ on kaksi kertaa suurempi.
+```
+
 ### Hyötysuhde
 Kaikki veden menettämä energia ei muutu sähköksi. Vesi hankaa putken seiniä. Turbiini ja generaattori lämpenevät. Alaveteen purkautuvalla vedellä on vielä vähän liike-energiaa. Voimalan **hyötysuhde** kertoo, kuinka suuri osa otetusta tehosta tulee sähkönä ulos. Se on antotyön $W_\text{a}$ ja ottotyön $W_\text{o}$ suhde. Se on myös antotehon $P_\text{a}$ ja ottotehon $P_\text{o}$ suhde. Voimalassa antoteho on voimalan antama sähköteho:
 ```kaavat
@@ -233,8 +239,20 @@ hyötysuhde :: \eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{
 ```
 missä $\eta$ (eta) on hyötysuhde. Se ilmoitetaan desimaalilukuna tai prosentteina. Hyötysuhde on enintään $100\,\%$. Todellisissa laitteissa se jää usein alle $100\,\%$, koska osa otetusta energiasta ei päädy haluttuun käyttöön, tässä sähköksi. Suuren vesivoimalan hyötysuhde on noin $90\,\%$.
 
+```pysahdy
+Voimala ottaa vedestä tehon $100\,\text{MW}$ ja antaa sähkötehon $90\,\text{MW}$. Mihin loput $10\,\text{MW}$ menevät?
+---
+Energiaa ei katoa. Suurin osa muuttuu sisäenergiaksi, kun vesi hankaa ja laitteet lämpenevät. Sisäenergia siirtyy lämpönä ympäristöön. Osa jää alaveteen virtaavan veden liike-energiaksi.
+```
+
 ### Tuulen liike-energia
 Tuulivoimalassa energian lähde on liikkuvan ilman liike-energia $E_\text{k} = \tfrac{1}{2}mv^2$. Tuuli painaa roottorin lapoja ja pyörittää roottoria. Ilma hidastuu, kun se ohittaa roottorin. Roottori ei voi pysäyttää ilmaa kokonaan, koska ilman on päästävä virtaamaan pois roottorin takaa. Siksi edes ihanteellinen roottori ei saa talteen kuin noin $59\,\%$ siitä tehosta, jonka häiriötön tuuli tuo roottorin pyyhkäisemän alueen läpi. Todellisen tuulivoimalan osuus on alle puolet. Ilma on kevyttä: kuutiometrin massa on vain noin $1{,}25\,\text{kg}$. Siksi tuulivoimalan roottorin on oltava suuri. Silloin sen läpi virtaa sekunnissa paljon ilmaa.
+
+```pysahdy
+Ilmassa on paljon energiaa. Miksi tuulivoimalan roottori on silti valtava?
+---
+Ilma on kevyttä. Iso roottori päästää sekunnissa läpi paljon ilmaa, ja vain niin energiaa saadaan talteen tarpeeksi.
+```
 
 <figure class="unit-photo"><img src="pics/fy4/middelgrunden-wind-farm.webp" alt="Valkoisia tuulivoimaloita meren rannalla. Edessä on merta ja veneitä."><figcaption>Merituulipuisto Kööpenhaminan edustalla Tanskassa.</figcaption></figure>
 

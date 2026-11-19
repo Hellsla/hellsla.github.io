@@ -201,9 +201,9 @@ $$.
 $$ ja beetahiukkanen noin $1{,}0 \cdot 10^{6} : 34 : 360 \approx 82$ ioniparia; suhde on noin $480$. Siksi alfahiukkanen pysähtyy niin lyhyelle matkalle ja vaurioittaa soluja keskittyneesti.
 
 ## fy8-12-L3-02
-**Annettu:** pulssitaajuus ilman suojaa $R_0 = 2400\,\tfrac{1}{\text{min}}$, lyijyn $d_1 = 11{,}0\,\text{mm}$ takana $R_1 = 630\,\tfrac{1}{\text{min}}$, taustasäteily $R_\text{t} = 30\,\tfrac{1}{\text{min}}$
+**Annettu:** pulssitaajuus ilman suojaa $R_0 = 2400\,\text{min}^{-1}$, lyijyn $d_1 = 11{,}0\,\text{mm}$ takana $R_1 = 630\,\text{min}^{-1}$, taustasäteily $R_\text{t} = 30\,\text{min}^{-1}$
 
-**Kysytty:** lyijysuojan paksuus $d$, jolla lähteen aiheuttama pulssitaajuus on $30\,\tfrac{1}{\text{min}}$
+**Kysytty:** lyijysuojan paksuus $d$, jolla lähteen aiheuttama pulssitaajuus on $30\,\text{min}^{-1}$
 
 **Periaate:** Lyijy vaimentaa vain lähteen säteilyä, joten tausta vähennetään ensin: nettopulssitaajuudet ovat $2370$ ja $600$ pulssia minuutissa. Ne noudattavat vaimenemislakia, joten mittauksista saadaan ensin puoliintumispaksuus ja sen avulla tarvittava paksuus. Molemmat ratkaistaan logaritmin avulla.
 
@@ -213,7 +213,7 @@ $$ ja beetahiukkanen noin $1{,}0 \cdot 10^{6} : 34 : 360 \approx 82$ ioniparia; 
 
 **Sijoitus:** $d_{1/2} = \dfrac{11{,}0\,\text{mm} \cdot 0{,}69315}{\ln \tfrac{2370}{600}} = \dfrac{7{,}6246\,\text{mm}}{1{,}3737} = 5{,}5505\,\text{mm}$ ja $d = \dfrac{5{,}5505\,\text{mm} \cdot \ln \tfrac{2370}{30}}{0{,}69315} = \dfrac{5{,}5505\,\text{mm} \cdot 4{,}3694}{0{,}69315} = 34{,}989\,\text{mm}$
 
-**Vastaus:** noin $35\,\text{mm}$ lyijyä, kaksi merkitsevää numeroa, koska taustasäteilyn lukema $30\,\tfrac{1}{\text{min}}$ on kahden numeron tarkkuudella.
+**Vastaus:** noin $35\,\text{mm}$ lyijyä, kaksi merkitsevää numeroa, koska taustasäteilyn lukema $30\,\text{min}^{-1}$ on kahden numeron tarkkuudella.
 
 **Järkevyys:** Nettopulssitaajuus pitää pienentää $2370$:stä $30$:een eli noin $\tfrac{1}{79}$:aan, ja $2^{6} = 64$, $2^{7} = 128$, joten tarvitaan reilut kuusi puoliintumispaksuutta: $6{,}3 \cdot 5{,}55\,\text{mm} \approx 35\,\text{mm}$. Puoliintumispaksuus on lähellä cesium-137:n arvoa $5{,}5\,\text{mm}$.
 
@@ -242,9 +242,9 @@ $$ ja beetahiukkanen noin $1{,}0 \cdot 10^{6} : 34 : 360 \approx 82$ ioniparia; 
 **Mallivastaus:** Paperiarkki on oikea suoja, koska alfahiukkanen luovuttaa energiansa tiheän ionisaation vuoksi jo ohuessa paperikerroksessa, kun taas beetahiukkanen ionisoi harvemmin ja osa siitä pääsee paperin läpi. Alumiinilevy, lyijylevy ja betoniseinä ovat paksumpia, joten ne pysäyttävät alfahiukkasten lisäksi myös beetahiukkaset. Hiukkasen nopeus tai kevyt massa ei estä sitä menettämästä energiaa ionisoimalla, ja pysäyttäminen perustuu ionisaatioon eikä sähköiseen hylkimiseen.
 
 ## fy8-12-L1-07
-**Annettu:** mittausaika $t = 45\,\text{s}$, pulssimäärä $N = 1215$, taustasäteilyn pulssitaajuus $R_\text{t} = 90\,\tfrac{1}{\text{min}}$
+**Annettu:** mittausaika $t = 45\,\text{s}$, pulssimäärä $N = 1215$, taustasäteilyn pulssitaajuus $R_\text{t} = 90\,\text{min}^{-1}$
 
-**Kysytty:** lähteen säteilyn aiheuttama pulssitaajuus $R$ yksikössä $\tfrac{1}{\text{min}}$
+**Kysytty:** lähteen säteilyn aiheuttama pulssitaajuus $R$ yksikössä $\text{min}^{-1}$
 
 **Periaate:** GM-mittari laskee kaikki ionisoivat tapahtumat, joten mitattuun pulssitaajuuteen sisältyy myös taustasäteily. Lähteen osuus saadaan vähentämällä taustan pulssitaajuus kokonaispulssitaajuudesta.
 
@@ -252,11 +252,11 @@ $$ ja beetahiukkanen noin $1{,}0 \cdot 10^{6} : 34 : 360 \approx 82$ ioniparia; 
 
 **Muunnokset:** $t = 45\,\text{s} = \dfrac{45}{60}\,\text{min} = 0{,}75\,\text{min}$, jotta pulssitaajuudet ovat samassa yksikössä.
 
-**Sijoitus:** $R = \dfrac{1215}{0{,}75\,\text{min}} - 90\,\tfrac{1}{\text{min}} = 1620\,\tfrac{1}{\text{min}} - 90\,\tfrac{1}{\text{min}} = 1530\,\tfrac{1}{\text{min}}$
+**Sijoitus:** $R = \dfrac{1215}{0{,}75\,\text{min}} - 90\,\text{min}^{-1} = 1620\,\text{min}^{-1} - 90\,\text{min}^{-1} = 1530\,\text{min}^{-1}$
 
 **Vastaus:** $1530\,\text{min}^{-1}$, kolme merkitsevää numeroa kuten pulssimäärässä $1215$ ja taustassa $90$.
 
-**Järkevyys:** Kokonaispulssitaajuus $1620\,\tfrac{1}{\text{min}}$ on noin $27\,\tfrac{1}{\text{s}}$, ja tausta $90\,\tfrac{1}{\text{min}}$ on vain noin $1{,}5\,\tfrac{1}{\text{s}}$. Tausta on siis pieni osa kokonaisluvusta, ja lähteen osuus $1530$ on hieman kokonaisluvun $1620$ alapuolella.
+**Järkevyys:** Kokonaispulssitaajuus $1620\,\text{min}^{-1}$ on noin $27\,\tfrac{1}{\text{s}}$, ja tausta $90\,\text{min}^{-1}$ on vain noin $1{,}5\,\tfrac{1}{\text{s}}$. Tausta on siis pieni osa kokonaisluvusta, ja lähteen osuus $1530$ on hieman kokonaisluvun $1620$ alapuolella.
 
 ## fy8-12-L1-08
 **Kysytty:** miksi alfasäteilijä on ihon ulkopuolella melko vaaraton mutta elimistön sisällä vaarallinen

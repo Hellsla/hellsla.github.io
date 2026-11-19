@@ -134,7 +134,7 @@ Since time and current increase together, the effect of time is mixed with the s
 
 Warming also changes $R_\text{int}$ during the measurement (usually it makes it smaller), so the direction of its effect is uncertain. The effect on the source voltage is small, because the smallest current was measured first with a fresh battery.
 
-*The size of the drift.* The new measurement at a current of $0.10\,\text{A}$ gave $4.45\,\text{V}$, that is $0.03\,\text{V}$ less than at the beginning of the series. At worst the last point is therefore about $0.03\,\text{V}$ too low, and the slope is too large by at most $\dfrac{0.03\,\text{V}}{0.50\,\text{A}} = 0.06\,\Omega$.
+*The size of the drift.* Drift means a slow change of the voltage with time while the current stays the same, and the drift rate is the change of the voltage per unit of time. The drift shows that the model is idealised: it treats $E$ and $R_\text{int}$ as constants, although a real battery discharges and warms up during the measurement. The new measurement at a current of $0.10\,\text{A}$ gave $4.45\,\text{V}$, that is $0.03\,\text{V}$ less than at the beginning of the series. The series had six readings of about a minute each, so the drift rate is about $\dfrac{0.03\,\text{V}}{6\,\text{min}} \approx 0.005\,\text{V/min}$. At worst the last point is therefore about $0.03\,\text{V}$ too low, and the slope is too large by at most $\dfrac{0.03\,\text{V}}{0.50\,\text{A}} = 0.06\,\Omega$.
 
 *Uncertainty.* The points deviate from the fitted line by at most $0.02\,\text{V}$. If one end of the line rises and the other falls by this much, the slope changes by $\dfrac{2 \cdot 0.02\,\text{V}}{0.50\,\text{A}} = 0.08\,\Omega$, that is, $R_\text{int} = (1.20 \pm 0.08)\,\Omega$. The uncertainty has been rounded to one significant figure.
 
@@ -241,7 +241,7 @@ The significance of the weight is assessed by comparing it with the electric for
 
 ### b)
 **Given:** $q = 6.0 \cdot 10^{-13}\,\text{C}$, $U = 6.0 \cdot 10^{4}\,\text{V}$, $m = 4.0 \cdot 10^{-10}\,\text{kg}$ and the droplet leaves from rest
-**Find:** the speed $v$ of the droplet when it hits the workpiece, when air resistance is not taken into account
+**Find:** the speed $v$ of the droplet when it hits the workpiece; assumption: weight and air resistance are left out
 **Principle:** The work done by the electric field on the droplet is the charge times the potential difference, $W = qU$, and it increases the kinetic energy of the droplet.
 
 Weight and air resistance are left out, so there are no other forces. In this way it is enough to know the potential difference, and the strength of the field or the acceleration is not needed.

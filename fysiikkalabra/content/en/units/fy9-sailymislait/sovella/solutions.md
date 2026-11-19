@@ -35,7 +35,9 @@ $$, about the same as the acceleration of free fall. It feels like a strong but 
 ### d)
 **Find:** whether the attendant's claim and its reasoning are correct
 **Principle:** Without resistive forces mechanical energy is conserved and the mass cancels: $v = \sqrt{2gh}$. The work $W_\text{other}$ done by the resistive forces reduces the mechanical energy (chapter *Conservation of mechanical energy and the work–energy principle*).
-**Model answer:** The reasoning is wrong. Gravity does pull a light rider less strongly, but setting a lighter rider in motion takes proportionally less energy: without resistive forces the mass cancels out of the energy equation, and everyone would arrive at the speed $\sqrt{2gh} \approx 26.6\,\text{m/s}$. The observation may still be true because of the resistive forces. Air resistance depends on the size and posture of the rider but is not proportional to the mass. Of the mechanical energy of a light rider, which is proportional to the mass, air resistance therefore takes a larger share, and the rider arrives more slowly. So the cause is air resistance, not weaker gravity.
+**Model answer:** The reasoning is wrong. Gravity does pull a light rider less strongly, but setting a lighter rider in motion takes proportionally less energy: without resistive forces the mass cancels out of the energy equation, and everyone would arrive at the speed $\sqrt{2gh} \approx 26.6\,\text{m/s}$. The observation may still be true because of the resistive forces.
+
+Air resistance depends on the size and posture of the rider but is not proportional to the mass. Of the mechanical energy of a light rider, which is proportional to the mass, air resistance therefore takes a larger share, and the rider arrives more slowly. So the cause is air resistance, not weaker gravity.
 
 ### Yleisiä virheitä
 - In part a, $v = 2gh$ is written and the square root forgotten, which also makes the unit wrong, $\text{m}^2\text{/s}^2$.
@@ -98,7 +100,9 @@ $$ agrees. The distance is short, because the stone has only about $6\,\%$ of th
 ### d)
 **Find:** why a swept stone slides further, even though the brooms do not touch the stone
 **Principle:** By the work–energy principle friction does the negative work $-\mu mgs$, and the sliding distance is $s = \dfrac{v^2}{2\mu g}$ (chapter *Conservation of mechanical energy and the work–energy principle*).
-**Model answer:** At the moment of release the stone has a certain kinetic energy $\tfrac12 mv^2$, and as it slides this is transformed, through the negative work done by friction, into internal energy of the stone and the ice. Each metre takes the amount $\mu mg$ of kinetic energy. When sweeping reduces the coefficient of friction, less kinetic energy is used per metre, so the same kinetic energy lasts for a longer distance: the distance is inversely proportional to the coefficient of friction. So sweeping does not add energy to the stone, and the stone does not need to touch the broom: sweeping only changes the ice in front of the stone so that the work done by friction per metre is smaller.
+**Model answer:** At the moment of release the stone has a certain kinetic energy $\tfrac12 mv^2$, and as it slides this is transformed, through the negative work done by friction, into internal energy of the stone and the ice. Each metre takes the amount $\mu mg$ of kinetic energy.
+
+When sweeping reduces the coefficient of friction, less kinetic energy is used per metre, so the same kinetic energy lasts for a longer distance: the distance is inversely proportional to the coefficient of friction. So sweeping does not add energy to the stone, and the stone does not need to touch the broom: sweeping only changes the ice in front of the stone so that the work done by friction per metre is smaller.
 
 ### Yleisiä virheitä
 - In part a, potential energy is included in the work–energy principle even though the ice is horizontal, or the speeds are subtracted before squaring: $(2.40 - 0.62)^2$ is not the same as $2.40^2 - 0.62^2$.
@@ -302,7 +306,9 @@ The circled places are the two points of the line from which the slope of part c
 ### a)
 **Find:** whether claim 1 is correct, and what the power of a wind turbine depends on
 **Principle:** The power of the wind is the kinetic energy of the air flowing through the rotor per second, and the turbine converts the share $\eta$ of it into electricity: $P = \tfrac12 \eta \rho A v^3$ (chapter *Hydro and wind power as energy converters*).
-**Model answer:** The claim is wrong, because it assumes the power is proportional to the wind speed. The power depends on the speed in two ways. Each kilogram of air has the kinetic energy $\tfrac12 v^2$, which grows with the square of the speed. In addition, the mass of air $\rho A v$ flows through the rotor every second, and it grows with the speed. That is why the power is proportional to the cube of the speed. When the speed increases from $6\,\text{m/s}$ to $9\,\text{m/s}$, the power increases by a factor of $\dfrac{P_2}{P_1} = \left(\dfrac{v_2}{v_1}\right)^3 = \left(\tfrac{9}{6}\right)^3 = 3.375$, that is, by about $240\,\%$ and not by $50\,\%$. This holds when the efficiency stays roughly the same and the turbine is not yet running at its rated power; above it the blades are turned and the power is limited.
+**Model answer:** The claim is wrong, because it assumes the power is proportional to the wind speed. The power depends on the speed in two ways. Each kilogram of air has the kinetic energy $\tfrac12 v^2$, which grows with the square of the speed. In addition, the mass of air $\rho A v$ flows through the rotor every second, and it grows with the speed.
+
+That is why the power is proportional to the cube of the speed. When the speed increases from $6\,\text{m/s}$ to $9\,\text{m/s}$, the power increases by a factor of $\dfrac{P_2}{P_1} = \left(\dfrac{v_2}{v_1}\right)^3 = \left(\tfrac{9}{6}\right)^3 = 3.375$, that is, by about $240\,\%$ and not by $50\,\%$. This holds when the efficiency stays roughly the same and the turbine is not yet running at its rated power; above it the blades are turned and the power is limited.
 
 ### b)
 **Find:** whether claim 2 is correct, and what the energy chain of a hydropower plant is
@@ -312,7 +318,11 @@ The circled places are the two points of the line from which the slope of part c
 &1000\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 9.0\,\text{m} \\
 &\approx 88\,\text{kJ}
 \end{aligned}
-$$ in a fall of $9.0\,\text{m}$. In the penstock the potential energy is transformed into kinetic energy, the flowing water turns the turbine, and the turbine turns the generator, which converts the energy of motion into electricity. The energy of the water comes from the Sun: solar radiation evaporates water, which rises into the air and falls as rain at a higher level in the catchment area. So the same water does not circulate through the plant by itself; the Sun “lifts” it again every time. Not all the energy the water loses is converted into electricity: friction in the penstock and the turbine and the heating of the generator transform part of it into internal energy, and the water discharged into the tailwater still has kinetic energy. That is why the efficiency is below $100\,\%$, here $90\,\%$.
+$$ in a fall of $9.0\,\text{m}$. In the penstock the potential energy is transformed into kinetic energy, the flowing water turns the turbine, and the turbine turns the generator, which converts the energy of motion into electricity.
+
+The energy of the water comes from the Sun: solar radiation evaporates water, which rises into the air and falls as rain at a higher level in the catchment area. So the same water does not circulate through the plant by itself; the Sun “lifts” it again every time.
+
+Not all the energy the water loses is converted into electricity: friction in the penstock and the turbine and the heating of the generator transform part of it into internal energy, and the water discharged into the tailwater still has kinetic energy. That is why the efficiency is below $100\,\%$, here $90\,\%$.
 
 ### c)
 **Find:** whether claim 3 is correct, and what the present electric power of the plant is
@@ -324,7 +334,9 @@ P &= 0.90 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 120\,\tfrac{\text{m}^3
 &\approx 9.54 \cdot 10^{6}\,\text{W} \\
 &\approx 9.5\,\text{MW}
 \end{aligned}
-$$. The power is directly proportional both to the flow rate $Q$ and to the head $h$. Raising the dam from $9\,\text{m}$ to $12\,\text{m}$ increases the head by a factor of $\dfrac{P'}{P} = \dfrac{h'}{h} = \tfrac{12}{9} = \tfrac43$, that is, by a third, and the power in the same ratio to about $12.7\,\text{MW}$. A flow rate a third larger would increase the power by exactly the same amount. So the claim is correct, provided the efficiency stays the same and raising the dam does not change the flow rate of the river. In practice the flow rate depends on the rainfall and the catchment area, so it cannot be increased, but the height can.
+$$. The power is directly proportional both to the flow rate $Q$ and to the head $h$. Raising the dam from $9\,\text{m}$ to $12\,\text{m}$ increases the head by a factor of $\dfrac{P'}{P} = \dfrac{h'}{h} = \tfrac{12}{9} = \tfrac43$, that is, by a third, and the power in the same ratio to about $12.7\,\text{MW}$.
+
+A flow rate a third larger would increase the power by exactly the same amount. So the claim is correct, provided the efficiency stays the same and raising the dam does not change the flow rate of the river. In practice the flow rate depends on the rainfall and the catchment area, so it cannot be increased, but the height can.
 
 ### Yleisiä virheitä
 - In part a, the power is assumed to be proportional to the square of the speed, because the kinetic energy is $\tfrac12 mv^2$; this forgets that the amount of air flowing per second also increases.
@@ -346,12 +358,20 @@ $$. The power is directly proportional both to the flow rate $Q$ and to the head
 ### b)
 **Find:** whether the group's conclusion is justified, and what the difference between the measurements is due to
 **Principle:** The total momentum is conserved when the impulse of the external forces is negligible (chapter *Conservation of momentum and one-dimensional collisions*). In an inelastic collision it is kinetic energy that is transformed, not momentum. A systematic error shifts all the results in the same direction (chapter *Measuring and the reliability of a measurement*).
-**Model answer:** The conclusion is not justified. What is converted into internal energy and sound in an inelastic collision is kinetic energy: here too about half of the kinetic energy disappeared in test 2. Momentum is not a form of energy, and it cannot be converted into internal energy. The difference is most likely due to the way of measuring. The common velocity was measured only $0.40$–$0.80\,\text{m}$ after the point of collision, and on an ordinary track rolling resistance slows the trolleys down all the time. Rolling resistance is an external force, so its impulse reduces the momentum while the trolleys travel to the measuring range. This is supported by the difference being systematic, since the momentum decreased in every test, and by the relative difference being largest in the slowest test ($-12\,\%$) and smallest in the fastest ($-3\,\%$). Slow trolleys spend longer on the way, and a resistive force of constant magnitude reduces a small velocity relatively more. The deceleration need not be large: in test 2 the difference corresponds to a deceleration of only about $0.01\,\text{m/s}^2$. So the data do not show that momentum is not conserved.
+**Model answer:** The conclusion is not justified. What is converted into internal energy and sound in an inelastic collision is kinetic energy: here too about half of the kinetic energy disappeared in test 2. Momentum is not a form of energy, and it cannot be converted into internal energy. The difference is most likely due to the way of measuring. The common velocity was measured only $0.40$–$0.80\,\text{m}$ after the point of collision, and on an ordinary track rolling resistance slows the trolleys down all the time.
+
+Rolling resistance is an external force, so its impulse reduces the momentum while the trolleys travel to the measuring range. This is supported by the difference being systematic, since the momentum decreased in every test, and by the relative difference being largest in the slowest test ($-12\,\%$) and smallest in the fastest ($-3\,\%$).
+
+Slow trolleys spend longer on the way, and a resistive force of constant magnitude reduces a small velocity relatively more. The deceleration need not be large: in test 2 the difference corresponds to a deceleration of only about $0.01\,\text{m/s}^2$. So the data do not show that momentum is not conserved.
 
 ### c)
 **Find:** an improved experimental setup for testing conservation of momentum
 **Principle:** A conservation law can be tested only when the effect of external forces between the measurements is small and the uncertainty of the measurements is known (chapters *Conservation of momentum and one-dimensional collisions* and *Your own experimental investigation: planning, carrying out and reporting*).
-**Model answer:** The velocities are measured as close to the collision as possible: for example light gates just before and just after the point of collision, or video analysis is used to draw a $(t, v)$ graph of each trolley and the velocities at the moment of collision are read from the extensions of the lines. The effect of rolling resistance is reduced by using an air track or by tilting the track slightly so that a trolley pushed on its own moves at a constant speed. The masses of the trolleys are weighed on a balance together with their hook-and-loop strips. Each test is repeated several times, and the uncertainty of the velocity and the mass is used to estimate how large a difference between the momenta can arise from measurement uncertainty alone. In addition, the masses and velocities are varied: if momentum is conserved in all tests within the uncertainty, the result supports the conservation law. From the same measurements the kinetic energy before and after is calculated, and the transformed share is compared with the theoretical value $\dfrac{m_\text{B}}{m_\text{A} + m_\text{B}} = 48\,\%$, so that the report distinguishes momentum from energy.
+**Model answer:** The velocities are measured as close to the collision as possible: for example light gates just before and just after the point of collision, or video analysis is used to draw a $(t, v)$ graph of each trolley and the velocities at the moment of collision are read from the extensions of the lines.
+
+The effect of rolling resistance is reduced by using an air track or by tilting the track slightly so that a trolley pushed on its own moves at a constant speed. The masses of the trolleys are weighed on a balance together with their hook-and-loop strips. Each test is repeated several times, and the uncertainty of the velocity and the mass is used to estimate how large a difference between the momenta can arise from measurement uncertainty alone.
+
+In addition, the masses and velocities are varied: if momentum is conserved in all tests within the uncertainty, the result supports the conservation law. From the same measurements the kinetic energy before and after is calculated, and the transformed share is compared with the theoretical value $\dfrac{m_\text{B}}{m_\text{A} + m_\text{B}} = 48\,\%$, so that the report distinguishes momentum from energy.
 
 ### Yleisiä virheitä
 - In part a, the momentum after the collision is calculated with the mass of trolley A only, even though the trolleys move together.
@@ -435,3 +455,229 @@ $$
 
 ### Hyväksytään myös
 - In part c with the kinetic energy alone, $F = \dfrac{15\,675\,\text{J}}{0.018\,\text{m}} \approx 0.87\,\text{MN}$, if the solution states that the contribution of the weight is left out as small.
+
+## fy9-sailymislait-s7
+
+### a)
+**Given:** $m = 2.0\,\text{kg}$; from the graph the initial potential energy $E_{\text{p}0} = 40\,\text{J}$ (top of the green bar); the zero level is the bottom of the slope; $g = 9.81\,\text{m/s}^2$
+**Find:** the starting height $h$ above the bottom
+**Principle:** The gravitational potential energy is mass times gravitational acceleration times height above the zero level (chapter *Kinetic energy, potential energy and mechanical energy*). At the start the sled is at rest, so all of its mechanical energy is potential energy.
+**Reading the graph:** The green bar reaches $40\,\text{J}$, so $E_{\text{p}0} = 40\,\text{J}$.
+**Formula:** $E_{\text{p}0} = mgh$, so $h = \dfrac{E_{\text{p}0}}{mg}$
+**Conversions:** None needed: the energy is in joules and the mass in kilograms.
+**Substitution:** $$
+\begin{aligned}
+h &= \dfrac{40\,\text{J}}{2.0\,\text{kg} \cdot 9.81\,\text{m/s}^2} \\
+&= \dfrac{40\,\text{J}}{19.62\,\text{N}} \\
+&= 2.04\,\text{m}
+\end{aligned}
+$$
+**Answer:** $h \approx 2.0\,\text{m}$, two significant figures like the energies read from the graph and the mass.
+**Reasonableness:** The slope is $6.0\,\text{m}$ long and the height difference $2.0\,\text{m}$, so the angle of the slope is $\arcsin\dfrac{2.04\,\text{m}}{6.0\,\text{m}} \approx 20^\circ$. This is an ordinary sledding hill.
+
+### b)
+**Given:** $E_{\text{p}0} = 40\,\text{J}$, final kinetic energy $E_\text{k} = 25\,\text{J}$ (top of the blue bar), length of the slope $s = 6.0\,\text{m}$; at the start $E_\text{k0} = 0$ and at the end $E_\text{p} = 0$
+**Find:** the work $W_\text{friction}$ of the friction force and the magnitude $F$ of the friction force
+**Principle:** The forces on the sled are the weight, the normal force and the sliding friction. The normal force is perpendicular to the motion, so it does no work. Friction changes the mechanical energy, so the energy principle is used (chapter *Conservation of mechanical energy and the energy principle*): the initial energy plus the work of the other forces equals the final energy. The sliding friction force is against the motion, so its work is negative: $W_\text{friction} = -Fs$.
+**Reading the graph:** The blue bar reaches $25\,\text{J}$, so $E_\text{k} = 25\,\text{J}$. The work of friction is not drawn.
+**Formula:** $E_{\text{p}0} + W_\text{friction} = E_\text{k}$, so $W_\text{friction} = E_\text{k} - E_{\text{p}0}$; and $W_\text{friction} = -Fs$, so $F = \dfrac{-W_\text{friction}}{s}$
+**Conversions:** None needed: $1\,\text{J} = 1\,\text{N m}$.
+**Substitution:** $$
+\begin{aligned}
+W_\text{friction} &= 25\,\text{J} - 40\,\text{J} \\
+&= -15\,\text{J}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+F &= \dfrac{15\,\text{J}}{6.0\,\text{m}} \\
+&= 2.5\,\text{N}
+\end{aligned}
+$$
+**Answer:** $W_\text{friction} = -15\,\text{J}$ and $F = 2.5\,\text{N}$, two significant figures. The work of friction is negative because friction is against the motion. $15\,\text{J}$ of energy became internal energy, which is transferred to the surroundings as heat.
+**Reasonableness:** Friction took $\dfrac{15\,\text{J}}{40\,\text{J}} = 37.5\,\%$ of the initial energy. The weight of the sled is $$
+\begin{aligned}
+G &= mg \\
+&= 2.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&= 19.6\,\text{N}
+\end{aligned}
+$$, so the friction force is about $13\,\%$ of the weight. The coefficient of sliding friction is $\mu = \dfrac{F}{mg\cos\alpha} \approx 0.14$ (angle of the slope $\alpha \approx 20^\circ$), which is possible on a snowy or wet slope.
+
+### c)
+**Given:** $m = 2.0\,\text{kg}$, $E_\text{k} = 25\,\text{J}$ at the bottom, $E_{\text{p}0} = 40\,\text{J}$
+**Find:** the speed $v$ at the bottom and the speed $v_0$ there would be without friction
+**Principle:** At the bottom all the remaining mechanical energy is kinetic energy (chapter *Kinetic energy, potential energy and mechanical energy*). Without friction only the weight would do work, so the mechanical energy would be conserved and all of the initial potential energy would become kinetic energy.
+**Formula:** $E_\text{k} = \tfrac12 mv^2$, so $v = \sqrt{\dfrac{2E_\text{k}}{m}}$; without friction $E_{\text{p}0} = \tfrac12 mv_0^2$, so $v_0 = \sqrt{\dfrac{2E_{\text{p}0}}{m}}$
+**Conversions:** None needed: $1\,\text{J} = 1\,\text{kg m}^2/\text{s}^2$.
+**Substitution:** $$
+\begin{aligned}
+v &= \sqrt{\dfrac{2 \cdot 25\,\text{J}}{2.0\,\text{kg}}} \\
+&= \sqrt{25\,\text{m}^2/\text{s}^2} \\
+&= 5.0\,\text{m/s}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+v_0 &= \sqrt{\dfrac{2 \cdot 40\,\text{J}}{2.0\,\text{kg}}} \\
+&= \sqrt{40\,\text{m}^2/\text{s}^2} \\
+&= 6.3\,\text{m/s}
+\end{aligned}
+$$
+**Answer:** $v = 5.0\,\text{m/s}$ and without friction $v_0 \approx 6.3\,\text{m/s}$. Friction reduces the speed by about $21\,\%$: part of the potential energy becomes internal energy, which is transferred to the surroundings as heat, and less kinetic energy remains.
+**Reasonableness:** The speed without friction is $6.3\,\text{m/s} \approx 23\,\text{km/h}$ and with friction $5.0\,\text{m/s} = 18\,\text{km/h}$. The speed with friction is lower, as it should be. The speed without friction equals that of a free fall from a height of $2.0\,\text{m}$: $\sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot 2.04\,\text{m}} \approx 6.3\,\text{m/s}$.
+
+### d)
+**Given:** new mass $m' = 3.0\,\text{kg}$; the same slope ($h = 2.04\,\text{m}$, $s = 6.0\,\text{m}$, $\alpha \approx 20^\circ$) and the same coefficient of sliding friction $\mu$
+**Find:** the speed of the sled at the bottom
+**Principle:** The energy principle (chapter *Conservation of mechanical energy and the energy principle*). The sliding friction force is $F = \mu N$, and the normal force on the slope is $N = mg\cos\alpha$. Therefore the friction force is directly proportional to the mass.
+**Formula:** $$
+\begin{aligned}
+mgh - Fs &= \tfrac12 mv^2 \\
+F &= \mu mg\cos\alpha \\
+v &= \sqrt{2g\,(h - \mu\cos\alpha \cdot s)}
+\end{aligned}
+$$
+**Conversions:** None needed.
+**Substitution:** The mass cancels, so the speed does not depend on the mass. Check with numbers, in order: the potential energy, the friction force, the work of friction, the kinetic energy at the bottom and the speed.
+$$
+\begin{aligned}
+E_\text{p}' &= 3.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&\cdot 2.04\,\text{m} \\
+&= 60\,\text{J}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+F' &= \dfrac{3.0}{2.0} \cdot 2.5\,\text{N} \\
+&= 3.75\,\text{N}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+W' &= -3.75\,\text{N} \cdot 6.0\,\text{m} \\
+&= -22.5\,\text{J}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+E_\text{k}' &= 60\,\text{J} - 22.5\,\text{J} \\
+&= 37.5\,\text{J}
+\end{aligned}
+$$
+$$
+\begin{aligned}
+v &= \sqrt{\dfrac{2 \cdot 37.5\,\text{J}}{3.0\,\text{kg}}} \\
+&= 5.0\,\text{m/s}
+\end{aligned}
+$$
+**Answer:** The speed does not change: it is still $5.0\,\text{m/s}$. The heavier sled loses more energy to friction ($22.5\,\text{J} > 15\,\text{J}$), but it also has more energy at the start ($60\,\text{J} > 40\,\text{J}$), and both grow in the same ratio.
+**Reasonableness:** As in a free fall, a heavy and a light object reach the same speed when the resistance is small. Here friction follows the same rule because it also grows with the mass. In reality air resistance does not grow with the mass, so the heavier sled would be slightly faster.
+
+### Yleisiä virheitä
+- In part a) the length of the slope $6.0\,\text{m}$ is used as the height, or the potential energy is divided by the mass alone.
+- In part b) the work of friction is written as $+15\,\text{J}$, or the energy $15\,\text{J}$ is not divided by the distance; $15\,\text{J} : 6.0\,\text{m} = 2.5\,\text{N}$ is a force, not an energy.
+- In part c) the speed is calculated from the initial energy $40\,\text{J}$ instead of the final kinetic energy $25\,\text{J}$, so friction is ignored.
+- In part d) it is assumed that the heavier sled is faster or slower, although the mass cancels from the equation.
+
+### Hyväksytään myös
+- In part b) the friction force can also be solved from the changes in kinetic and potential energy separately: $F s = E_{\text{p}0} - E_\text{k}$.
+- In part d) a symbolic argument in which the mass cancels from the energy equation is enough, as long as the result is stated.
+
+## fy9-sailymislait-s8
+
+### a)
+**Given:** the $(t,F)$ graph: the force rises from zero to $900\,\text{N}$ and returns to zero at $12\,\text{ms}$; the graph starts at $t = 0$
+**Find:** the impulse $I$
+**Principle:** The impulse of a force is the area between the force-time graph and the time axis (chapter *Momentum and impulse*). The graph is a triangle and the direction of the force stays the same, so the impulse is the area of the triangle.
+**Reading the graph:** The height of the triangle is $F_\text{max} = 900\,\text{N}$ and its base $\Delta t = 12\,\text{ms}$.
+**Formula:** $I = \tfrac12 F_\text{max}\,\Delta t$
+**Conversions:** $12\,\text{ms} = 12 \cdot 10^{-3}\,\text{s} = 0.012\,\text{s}$
+**Substitution:** $$
+\begin{aligned}
+I &= \tfrac12 \cdot 900\,\text{N} \cdot 0.012\,\text{s} \\
+&= 5.4\,\text{N s}
+\end{aligned}
+$$
+**Answer:** $I = 5.4\,\text{N s}$ upwards, two significant figures like the duration $12\,\text{ms}$.
+**Reasonableness:** The mean force is $\dfrac{900\,\text{N}}{2} = 450\,\text{N}$ and it acts for $0.012\,\text{s}$, so $450\,\text{N} \cdot 0.012\,\text{s} = 5.4\,\text{N s}$. The weight of the ball is only $$
+\begin{aligned}
+G &= mg \\
+&= 0.43\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&= 4.2\,\text{N}
+\end{aligned}
+$$, so ignoring it during the kick is justified.
+
+### b)
+**Given:** $m = 0.43\,\text{kg}$, initial speed $0$, impulse $I = 5.4\,\text{N s}$
+**Find:** the launch speed $v$
+**Principle:** The impulse-momentum theorem: the impulse of the force equals the change in the momentum of the body (chapter *Momentum and impulse*). During the kick only the force of the foot changes the momentum of the ball, because gravity and air resistance are negligible.
+**Formula:** $I = \Delta p = mv - 0$, so $v = \dfrac{I}{m}$
+**Conversions:** $1\,\text{N s} = 1\,\text{kg m/s}$
+**Substitution:** $$
+\begin{aligned}
+v &= \dfrac{5.4\,\text{kg m/s}}{0.43\,\text{kg}} \\
+&= 12.56\,\text{m/s}
+\end{aligned}
+$$
+**Answer:** $v \approx 13\,\text{m/s}$ upwards, two significant figures like the mass and the impulse.
+**Reasonableness:** $13\,\text{m/s}$ is about $47\,\text{km/h}$. This is an ordinary speed for a soft kick; hard shots exceed $25\,\text{m/s}$.
+
+### c)
+**Given:** $m = 0.43\,\text{kg}$, $v = 12.56\,\text{m/s}$ after the kick, zero level at the height of the kick
+**Find:** the kinetic energy $E_\text{k}$ and the height $h$ without air resistance
+**Principle:** Right after the kick the ball has only kinetic energy. When air resistance is left out, only the weight does work, so the mechanical energy is conserved (chapter *Conservation of mechanical energy and the energy principle*). At the highest point the speed is zero.
+**Formula:** $E_\text{k} = \tfrac12 mv^2$; $\tfrac12 mv^2 = mgh$, so $h = \dfrac{v^2}{2g}$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+E_\text{k} &= \tfrac12 \cdot 0.43\,\text{kg} \cdot (12.56\,\text{m/s})^2 \\
+&= 33.9\,\text{J}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+h &= \dfrac{(12.56\,\text{m/s})^2}{2 \cdot 9.81\,\text{m/s}^2} \\
+&= 8.04\,\text{m}
+\end{aligned}
+$$
+**Answer:** $E_\text{k} \approx 34\,\text{J}$ and $h \approx 8.0\,\text{m}$, two significant figures.
+**Reasonableness:** Check with potential energy: $$
+\begin{aligned}
+E_\text{p} &= 0.43\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&\cdot 8.04\,\text{m} \\
+&\approx 33.9\,\text{J}
+\end{aligned}
+$$, the same as the kinetic energy. The mass of the ball does not affect the height, only the speed does.
+
+### d)
+**Given:** $m = 0.43\,\text{kg}$, $E_\text{k0} = 33.9\,\text{J}$ at launch, measured height $h_\text{measured} = 6.5\,\text{m}$, speed $0$ at the highest point
+**Find:** the work $W_\text{air}$ of air resistance and the mean air resistance $F$
+**Principle:** Air resistance is against the motion, so the mechanical energy is not conserved. The energy principle is used (chapter *Conservation of mechanical energy and the energy principle*): the initial energy plus the work of air resistance equals the final energy. At the top the kinetic energy is zero and the potential energy is $mgh_\text{measured}$. The work of air resistance is negative: $W_\text{air} = -Fh_\text{measured}$, where $F$ is the average of the force over the whole rise.
+**Formula:** $E_\text{k0} + W_\text{air} = mgh_\text{measured}$, so $W_\text{air} = mgh_\text{measured} - E_\text{k0}$ and $F = \dfrac{-W_\text{air}}{h_\text{measured}}$
+**Conversions:** None needed.
+**Substitution:** $$
+\begin{aligned}
+E_\text{p} &= 0.43\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&\cdot 6.5\,\text{m} \\
+&= 27.4\,\text{J}
+\end{aligned}
+$$ $$
+\begin{aligned}
+W_\text{air} &= 27.4\,\text{J} - 33.9\,\text{J} \\
+&= -6.5\,\text{J}
+\end{aligned}
+$$ $$
+\begin{aligned}
+F &= \dfrac{6.5\,\text{J}}{6.5\,\text{m}} \\
+&= 1.0\,\text{N}
+\end{aligned}
+$$
+**Answer:** $W_\text{air} \approx -6.5\,\text{J}$ and $F \approx 1.0\,\text{N}$. The mechanical energy is about $19\,\%$ lower than without air resistance. It has become internal energy of the air and the ball, which is transferred to the surroundings as heat.
+**Reasonableness:** The mean air resistance is about a quarter of the weight of the ball ($4.2\,\text{N}$). It is small but measurable. The rise ends $8.0\,\text{m} - 6.5\,\text{m} = 1.5\,\text{m}$ lower than without air resistance.
+
+### Yleisiä virheitä
+- In part a) the area is calculated as a rectangle $900\,\text{N} \cdot 12\,\text{ms}$, or the milliseconds are not converted to seconds.
+- In part b) the impulse is divided by the force of the foot or by the time instead of the mass.
+- In part c) the height is calculated directly from the impulse, or as a potential energy without first calculating the kinetic energy; $h = v^2 : 2g$ is enough.
+- In part d) the work of air resistance is written as a positive number, or it is divided by the wrong distance, for example $8.0\,\text{m}$.
+
+### Hyväksytään myös
+- In part a) the impulse can be found by counting squares: one square is $100\,\text{N} \cdot 2\,\text{ms} = 0.2\,\text{N s}$ and the area of the triangle is about $27$ squares, that is $5.4\,\text{N s}$.
+- In part d) $W_\text{air}$ can also be calculated as the difference of the kinetic and potential energies, as long as the sign is negative.

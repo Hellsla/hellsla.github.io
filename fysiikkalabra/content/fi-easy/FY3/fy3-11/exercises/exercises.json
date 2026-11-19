@@ -164,7 +164,7 @@
     {
       "id": "fy3-11-L2-05",
       "level": 2,
-      "text": "Esimerkkiaineisto: dieselgeneraattorin koeajossa mitattiin neljällä eri kuormalla moottorin mekaaninen teho $P$. Mitattiin myös polttoaineen kulutus $q_m$ kilogrammaa tunnissa. Dieselpolttoaineen lämpöarvo on $43\\,\\text{MJ/kg}$. Millä kuormalla moottorin hyötysuhde on suurin? Hyötysuhde kertoo, kuinka suuri osa polttoaineen energiasta muuttuu hyödylliseksi työksi. Anna vastaukseksi tämä suurin hyötysuhde prosentteina.",
+      "text": "Dieselgeneraattorin koeajossa mitattiin neljällä eri kuormalla moottorin mekaaninen teho $P$. Mitattiin myös polttoaineen kulutus $q_m$ kilogrammaa tunnissa. Dieselpolttoaineen lämpöarvo on $43\\,\\text{MJ/kg}$. Millä kuormalla moottorin hyötysuhde on suurin? Hyötysuhde kertoo, kuinka suuri osa polttoaineen energiasta muuttuu hyödylliseksi työksi. Anna vastaukseksi tämä suurin hyötysuhde prosentteina.",
       "kind": [
         "data"
       ],
@@ -232,7 +232,7 @@
     {
       "id": "fy3-11-L2-07",
       "level": 2,
-      "text": "Esimerkkiaineisto: koulun ilmalämpöpumpun toimintaa seurattiin neljän vuorokauden ajan. Ilmalämpöpumppu ottaa lämpöä ulkoilmasta. Jokaisesta vuorokaudesta mitattiin pumpun käyttämä sähköenergia $W$ ja sisälle luovutettu lämpö $Q_1$. Kuinka paljon lämpöä pumppu otti ulkoilmasta kaikkiaan näiden neljän vuorokauden aikana? Anna vastaus kilowattitunteina.",
+      "text": "Koulun ilmalämpöpumpun toimintaa seurattiin neljän vuorokauden ajan. Ilmalämpöpumppu ottaa lämpöä ulkoilmasta. Jokaisesta vuorokaudesta mitattiin pumpun käyttämä sähköenergia $W$ ja sisälle luovutettu lämpö $Q_1$. Kuinka paljon lämpöä pumppu otti ulkoilmasta kaikkiaan näiden neljän vuorokauden aikana? Anna vastaus kilowattitunteina.",
       "kind": [
         "data"
       ],
@@ -373,7 +373,7 @@
     {
       "id": "fy3-11-L3-04",
       "level": 3,
-      "text": "Esimerkkiaineisto: omakotitalon lämmitystä suunnitellaan lämpöpumpulla. Taulukossa on talon kuukausittainen lämmöntarve $Q$ talvikaudella. Siinä on myös pumpun lämpökerroin $\\varepsilon$ kunkin kuukauden keskimääräisessä ulkolämpötilassa. Lämpökerroin kertoo, kuinka moninkertaisen lämmön pumppu luovuttaa sähköön verrattuna. Lämmöntarve katetaan kokonaan pumpulla.\n\na) Laske sähköenergia $W$, jonka pumppu käyttää kunkin kuukauden aikana, ja kaikkien kuukausien yhteenlaskettu sähköenergia.\n\nb) Laske kauden keskimääräinen lämpökerroin $\\varepsilon_\\text{kausi}$. Se kertoo koko kauden luovutetun lämmön suhteen koko kauden sähköenergiaan.\n\nc) Selitä, miksi kauden lämpökerrointa ei saa laskea kuukausien lämpökertoimien tavallisena keskiarvona. Laske myös, kuinka paljon sähköä pumppu säästää verrattuna suoraan sähkölämmitykseen, jossa kaikki lämpö tulee sähköstä.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "text": "Omakotitalon lämmitystä suunnitellaan lämpöpumpulla. Taulukossa on talon kuukausittainen lämmöntarve $Q$ talvikaudella. Siinä on myös pumpun lämpökerroin $\\varepsilon$ kunkin kuukauden keskimääräisessä ulkolämpötilassa. Lämpökerroin kertoo, kuinka moninkertaisen lämmön pumppu luovuttaa sähköön verrattuna. Lämmöntarve katetaan kokonaan pumpulla.\n\na) Laske sähköenergia $W$, jonka pumppu käyttää kunkin kuukauden aikana, ja kaikkien kuukausien yhteenlaskettu sähköenergia.\n\nb) Laske kauden keskimääräinen lämpökerroin $\\varepsilon_\\text{kausi}$. Se kertoo koko kauden luovutetun lämmön suhteen koko kauden sähköenergiaan.\n\nc) Selitä, miksi kauden lämpökerrointa ei saa laskea kuukausien lämpökertoimien tavallisena keskiarvona. Laske myös, kuinka paljon sähköä pumppu säästää verrattuna suoraan sähkölämmitykseen, jossa kaikki lämpö tulee sähköstä.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
       "kind": [
         "data",
         "model"
@@ -426,7 +426,7 @@
     {
       "id": "fy3-11-L3-05",
       "level": 3,
-      "text": "Esimerkkiaineisto: pystysuorassa sylinterissä on ilmaa. Kevyesti liikkuva mäntä sulkee sylinterin. Sylinterin poikkipinta-ala on $A = 200\\,\\text{cm}^2$. Mittausten mukaan ilman paine pysyy vakiona, $p = 125\\,\\text{kPa}$. Ilmaa lämmitetään sähkövastuksella, jonka teho on $260\\,\\text{W}$. Oletetaan, että kaikki vastuksen luovuttama energia siirtyy ilmaan lämpönä. Taulukossa on männän korkeus $h$ sylinterin pohjasta mitattuna lämmityksen aikana.\n\na) Laske ilmaan neljässä sekunnissa siirtynyt lämpö $Q$ ja ilman tekemä työ $W$. Käytä taulukon alku- ja loppuarvoa.\n\nb) Laske ilman sisäenergian muutos $\\Delta U$.\n\nc) Laske, kuinka suuri osa lämmöstä muuttui työksi. Perustele, miksi tällainen yksittäinen laajeneminen ei vielä ole lämpövoimakone.\n\nKirjoita vastauslaatikkoon kohdan b) tulos kilojouleina.",
+      "text": "Pystysuorassa sylinterissä on ilmaa. Kevyesti liikkuva mäntä sulkee sylinterin. Sylinterin poikkipinta-ala on $A = 200\\,\\text{cm}^2$. Mittausten mukaan ilman paine pysyy vakiona, $p = 125\\,\\text{kPa}$. Ilmaa lämmitetään sähkövastuksella, jonka teho on $260\\,\\text{W}$. Oletetaan, että kaikki vastuksen luovuttama energia siirtyy ilmaan lämpönä. Taulukossa on männän korkeus $h$ sylinterin pohjasta mitattuna lämmityksen aikana.\n\na) Laske ilmaan neljässä sekunnissa siirtynyt lämpö $Q$ ja ilman tekemä työ $W$. Käytä taulukon alku- ja loppuarvoa.\n\nb) Laske ilman sisäenergian muutos $\\Delta U$.\n\nc) Laske, kuinka suuri osa lämmöstä muuttui työksi. Perustele, miksi tällainen yksittäinen laajeneminen ei vielä ole lämpövoimakone.\n\nKirjoita vastauslaatikkoon kohdan b) tulos kilojouleina.",
       "kind": [
         "data",
         "model"

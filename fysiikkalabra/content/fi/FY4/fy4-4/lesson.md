@@ -619,7 +619,7 @@ Kysytään kiihtyvyyttä $a$ ja sen suuntaa.
 
 <!-- vaihe -->
 
-**Tulos.** Kiihtyvyys on $a \approx 1{,}02\,\text{m/s}^2$ ylöspäin. Siinä on kolme merkitsevää numeroa kuten jännitysvoimassa $5{,}20\,\text{kN}$ ja putoamiskiihtyvyydessä $9{,}81\,\text{m/s}^2$. Kokonaisluku $480\,\text{kg}$ tulkitaan tarkaksi arvoksi, joten se ei rajoita tarkkuutta.
+**Tulos.** Kiihtyvyys on $a \approx 1{,}02\,\text{m/s}^2$ ylöspäin. Kaikissa lähtöarvoissa on kolme merkitsevää numeroa: massa $480\,\text{kg}$, jännitysvoima $5{,}20\,\text{kN}$ ja putoamiskiihtyvyys $9{,}81\,\text{m/s}^2$. Siksi tuloksessakin on kolme merkitsevää numeroa.
 
 <!-- vaihe -->
 

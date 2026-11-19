@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 3d77db712e00ae54
+CONTENT-HASH: 75065823e5630611
 
 ## Blocking
 - none
 
 ## Polish
-- none new (earlier L3-06 polish stands as before).
+- none
 
 ## Checked
-- L1-06: "yrittää pitää vuon ennallaan" is plain Finnish and states Lenz's law as a tendency; answer and option text match, and the feedback stays consistent.
-- Reading level suits the easy version.
-- solutions.md changed in presentation only.
-- Language checked: fi-easy. Hash 3d77db712e00ae54 at start and end.
+- Delta (Kaava-vaihe): perusyhtälö tai peruslaki ensin, sitten johdettu kaava, symbolinen sieventäminen ja vasta sitten sijoitus; järjestys on looginen ja seurattavissa.
+- Kaavarivit ovat samat kuin suomenkielisessä, jo hyväksytyssä versiossa; muuttuneet rivit eivät muuta lukuja, yksiköitä tai vastauksia.
+- Sijoitus käyttää viimeistä symbolista muotoa; Periaate-vaihe ja Kaava-vaihe täsmäävät.
+- Selkeä suomi: ei uusia vaikeita sanoja; Mallivastausten kappalejako parantaa luettavuutta.
+- Hash sama alussa ja lopussa.

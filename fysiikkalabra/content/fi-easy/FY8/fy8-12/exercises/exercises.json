@@ -75,9 +75,9 @@
     {
       "id": "fy8-12-L1-07",
       "level": 1,
-      "text": "Opiskelija mittaa gammalähteen säteilyä GM-mittarilla $45\\,\\text{s}$:n ajan ja saa $1215$ pulssia. Taustasäteily on mitattu aiemmin. Se aiheuttaa mittarissa $90$ pulssia minuutissa. Kuinka monta pulssia minuutissa lähteen säteily aiheuttaa? Anna vastaus yksikössä $\\tfrac{1}{\\text{min}}$.",
+      "text": "Opiskelija mittaa gammalähteen säteilyä GM-mittarilla $45\\,\\text{s}$:n ajan ja saa $1215$ pulssia. Taustasäteily on mitattu aiemmin. Se aiheuttaa mittarissa $90$ pulssia minuutissa. Kuinka monta pulssia minuutissa lähteen säteily aiheuttaa? Anna vastaus yksikössä $\\text{min}^{-1}$.",
       "answer": 1530,
-      "unit": "1/min",
+      "unit": "min⁻¹",
       "tolerance": 0.02
     },
     {
@@ -336,7 +336,7 @@
         "data"
       ],
       "answer": 141.4,
-      "unit": "1/min",
+      "unit": "min⁻¹",
       "tolerance": 0.02
     }
   ],

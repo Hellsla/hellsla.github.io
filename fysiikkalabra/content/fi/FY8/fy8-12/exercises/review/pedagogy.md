@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 0e64d48ba9795111
-SCOPE: delta added-exercise from 844ef976147dad75 base 5b3ca4f81c77
+CONTENT-HASH: 15261a26498e83ce
+SCOPE: delta answers,md-paragraphs,numbers,typography from 0e64d48ba9795111 base 64d4935c5ce5
 
 ## Blocking
 
 ## Polish
 
-- L2-09 and L3-07 share the figure fy8-12/tuntematon and the read-d1/2 step; L3-07 still adds extrapolation and a safety decision, so the level difference is real. Optional: a second graph for L3 for variety.
-
+- solutions.md (L2-09) writes the rate as `pulssia/min` while the `unit` field is now `min⁻¹` (L1-07 and L2-03 use `min^{-1}`). Optional: use `\text{min}^{-1}` in the L2-09 solution.
+- L2-09 and L3-07 share the figure fy8-12/tuntematon and the read-d1/2 step; L3-07 adds extrapolation and a safety decision, so the level difference is real. Optional: a second graph for L3.
 
 ## Checked
 
-- Round 1 blocking fixed: L3-07 now uses 1/50 (ln 50/ln 2 = 5,6439, d = 67,7 mm), no longer the worked example's 5,0 % = 1/20.
-- L3-07 answer 68 mm correct, rounded up for "at most" (house rule); tolerance 2 % covers 67,73; sanity check 1/32 and 1/64 brackets 1/50.
-- L3-07 conclusion "48 mm is not enough" is consistent: R(48 mm) = 50 > 16 pulses/min.
-- L2-09 answer 141,4 = 800*2^-2,5; solution has all seven parts, graph read with a check point (24 mm, 200).
-- Situation first, question last; the figure description gives 800 at 0 and the range, not d1/2 or the answers.
-- Set mix: L2 now 9 and L3 7 exercises, kinds graph/data/reasoning/model fit the plan (d1/2 from a graph).
-- Round 3 delta: only L2-09 unit pulssia/min -> 1/min; language-neutral, consistent with the other count-rate exercises, answer and solution unchanged. Hash unchanged at start and end.
+- Diff since the passed version: L1-07 text and unit and L2-09 unit changed from 1/min to min⁻¹; answers 1530 and 141,4 unchanged and consistent with the solutions; notation matches the other count-rate exercises.
+- solutions.md diff is blank-line reflow only; all stages remain, symbolic before numeric, reasonableness checks intact.
+- Earlier checks still stand: L3-07 uses 1/50 (not the worked example's 1/20), answer 68 mm rounded up for "at most", conclusion consistent; L2-09 answer 141,4 = 800*2^-2,5; figure description gives no answer; set mix of levels and kinds fits the plan.
+- Hash unchanged at start and end (15261a26498e83ce).

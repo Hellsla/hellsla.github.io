@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: dfdef7affccf750c
+CONTENT-HASH: 5a83a1470bbeb991
 
 ## Blocking
 
 ## Polish
-- None.
 
 ## Checked
-batch delta review: the cue-ball retrieval question: Δp = 60 N · 0.0050 s = 0.30 kg·m/s, and the quotient is 12 000. The statement that the mass is not needed is right, the stated small other horizontal forces make FΔt the net impulse, and the Newton's cradle caption is right.
+batch delta review: four prompts: friction impulse negligible in a short collision (as the law's condition says); lost kinetic energy becomes internal energy of tape and carts; skater recoil from zero total momentum (ice, friction small). All consistent with the theory.

@@ -74,9 +74,9 @@
 **Given:** initial velocity $v_0 = 15.0\,\text{m/s}$ upwards, acceleration of free fall from the table $g = 9.81\,\text{m/s}^2$ downwards; air resistance is small
 **Find:** the height of the rise $h$ from the point of release in metres
 **Principle:** Take upwards as the positive direction, so the acceleration is $-g$ during the whole flight. At the highest point the velocity is zero for a moment. First solve the time of the rise from the condition $v = 0$, then the height from the equation of position.
-**Formula:** $v = v_0 - g\,t = 0$, so $t = \dfrac{v_0}{g}$, and the height is $h = v_0\,t - \dfrac{g\,t^2}{2}$
+**Formula:** Upwards positive: $v = v_0 - g\,t$ and $y = y_0 + v_0\,t - \tfrac{1}{2}\,g\,t^2$. At the highest point $v = 0$, so $t = \dfrac{v_0}{g}$. The height is $h = y - y_0 = v_0\,t - \tfrac{1}{2}\,g\,t^2 = \dfrac{v_0^2}{g} - \dfrac{v_0^2}{2g}$, that is, $h = \dfrac{v_0^2}{2g}$
 **Conversions:** All quantities are in SI units. No conversions are needed.
-**Substitution:** $t = \dfrac{15.0\,\text{m/s}}{9.81\,\text{m/s}^2} \approx 1.529\,\text{s}$ and $$\begin{aligned} &h = 15.0\,\text{m/s} \cdot 1.529\,\text{s} \\ &- \tfrac{1}{2} \cdot 9.81\,\text{m/s}^2 \\ &\cdot (1.529\,\text{s})^2 \\ &\approx 22.94\,\text{m} - 11.47\,\text{m} \\ &\approx 11.47\,\text{m} \end{aligned}$$
+**Substitution:** $t = \dfrac{15.0\,\text{m/s}}{9.81\,\text{m/s}^2} \approx 1.529\,\text{s}$ and $h = \dfrac{(15.0\,\text{m/s})^2}{2 \cdot 9.81\,\text{m/s}^2} = \dfrac{225\,\text{m}^2/\text{s}^2}{19.62\,\text{m/s}^2} \approx 11.47\,\text{m}$
 **Answer:** $11.5\,\text{m}$, three significant figures like the initial velocity $15.0\,\text{m/s}$.
 **Reasonableness:** During the rise the velocity decreases steadily from $15.0\,\text{m/s}$ to zero, so the average velocity is $7.5\,\text{m/s}$ and $7.5\,\text{m/s} \cdot 1.529\,\text{s} \approx 11.5\,\text{m}$. A height of about three storeys is plausible for a hard throw.
 
@@ -104,7 +104,7 @@
 **Given:** acceleration $0 \to 15.0\,\text{m/s}$ in $t_1 = 20.0\,\text{s}$, constant speed $v = 15.0\,\text{m/s}$ for $t_2 = 60.0\,\text{s}$, braking to zero in $t_3 = 15.0\,\text{s}$
 **Find:** the distance between the stations $s$ in metres
 **Principle:** The train always moves in the same direction, so the distance is the area under the $(t,v)$ graph. The graph is a triangle (accelerating), a rectangle (constant speed) and a triangle (braking). The accelerations do not need to be calculated, because the areas come directly from the velocity and the times.
-**Formula:** $s = \tfrac{1}{2}\,v\,t_1 + v\,t_2 + \tfrac{1}{2}\,v\,t_3$
+**Formula:** The distance is the area under the $(t,v)$ graph: a triangle $\tfrac{1}{2}\,v\,t_1$ while speeding up, a rectangle $v\,t_2$ at constant velocity and a triangle $\tfrac{1}{2}\,v\,t_3$ while braking. So $s = \tfrac{1}{2}\,v\,t_1 + v\,t_2 + \tfrac{1}{2}\,v\,t_3$
 **Conversions:** The velocity is in $\text{m/s}$ and the times in seconds, so the result comes out in metres. No conversions are needed.
 **Substitution:** $$\begin{aligned} &s = \tfrac{1}{2} \cdot 15.0\,\text{m/s} \cdot 20.0\,\text{s} \\ &+ 15.0\,\text{m/s} \cdot 60.0\,\text{s} \\ &+ \tfrac{1}{2} \cdot 15.0\,\text{m/s} \cdot 15.0\,\text{s} \\ &= 150\,\text{m} + 900\,\text{m} \\ &+ 112.5\,\text{m} \\ &= 1162.5\,\text{m} \end{aligned}$$
 **Answer:** $1160\,\text{m}$ or $1.16\,\text{km}$, three significant figures like the velocity and the times. The result $1162.5\,\text{m}$ is rounded to three significant figures, so the zero at the end of the number is not significant; in kilometres this is clearer.
@@ -114,7 +114,7 @@
 **Given:** the fitted polynomial $$\begin{aligned} &y = -4.86\,\tfrac{\text{m}}{\text{s}^2} \cdot t^2 \\ &+ 3.10\,\tfrac{\text{m}}{\text{s}} \cdot t + 1.20\,\text{m} \end{aligned}$$, upwards positive; the moment $t = 0.500\,\text{s}$
 **Find:** the ball's velocity $v$ with its sign in $\text{m/s}$ at $0.500\,\text{s}$
 **Principle:** The polynomial is compared with the equation of position of uniformly accelerated motion, $y = y_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2$. From the coefficients we read the initial velocity $v_0 = 3.10\,\text{m/s}$ and $\tfrac{1}{2}\,a = -4.86\,\text{m/s}^2$, so $a = -9.72\,\text{m/s}^2$. The velocity then comes from the equation $v = v_0 + a\,t$.
-**Formula:** From the coefficients of the polynomial $y = A\,t^2 + B\,t + C$ we get $v_0 = B$ and $a = 2A$, so $v = B + 2A\,t$
+**Formula:** The equation of position is $y = y_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2$ and the velocity $v = v_0 + a\,t$. From the coefficients of the polynomial $y = A\,t^2 + B\,t + C$ we get $v_0 = B$ and $a = 2A$, so $v = B + 2A\,t$
 **Conversions:** The coefficients are in SI units and the time in seconds. No conversions are needed.
 **Substitution:** $$\begin{aligned} &v = 3.10\,\text{m/s} \\ &+ 2 \cdot (-4.86\,\text{m/s}^2) \\ &\cdot 0.500\,\text{s} \\ &= 3.10\,\text{m/s} - 4.86\,\text{m/s} \\ &= -1.76\,\text{m/s} \end{aligned}$$
 **Answer:** $-1.76\,\text{m/s}$, three significant figures, because the coefficients of the polynomial and the moment $0.500\,\text{s}$ are given to three significant figures. The negative sign means that the ball is already moving downwards.
@@ -134,7 +134,7 @@ It is not zero, because the velocity changes, and it has no vertical component, 
 **Find:** the distance travelled $\Delta x$ in metres
 **Principle:** The scooter moves in the same direction the whole time, so the distance is the area between the $(t,v)$ graph and the time axis. Under the graph there is a rectangle (height $v_1$) with a triangle (height $v_2 - v_1$) on top of it, that is, a trapezoid.
 **Reading the graph:** The endpoints of the line are at intersections of grid lines: the starting point $(0;\, 2.0\,\text{m/s})$ and the end point $(5.0\,\text{s};\, 7.0\,\text{m/s})$.
-**Formula:** $\Delta x = v_1\,t + \tfrac{1}{2}\,(v_2 - v_1)\,t$, that is, the average of the velocities times the time
+**Formula:** The distance is the area under the $(t,v)$ graph: a rectangle $v_1\,t$ with a triangle $\tfrac{1}{2}\,(v_2 - v_1)\,t$ on top. So $\Delta x = v_1\,t + \tfrac{1}{2}\,(v_2 - v_1)\,t$, that is, the average of the velocities times the time
 **Conversions:** The velocities are in $\text{m/s}$ and the time in seconds, so the result comes out in metres. No conversions are needed.
 **Substitution:** $$\begin{aligned} &\Delta x = 2.0\,\text{m/s} \cdot 5.0\,\text{s} \\ &+ \tfrac{1}{2} \cdot 5.0\,\text{m/s} \cdot 5.0\,\text{s} \\ &= 10\,\text{m} + 12.5\,\text{m} \\ &= 22.5\,\text{m} \end{aligned}$$
 **Answer:** $22.5\,\text{m}$, three significant figures, because the values read are exactly on grid lines.
@@ -165,7 +165,7 @@ The depth of the well is therefore about $20\,\text{m}$. The mass is not needed,
 **Find:** the cart's acceleration $a$ in $\text{m/s}^2$
 **Principle:** The cart starts from rest and accelerates uniformly, so $x = \tfrac{1}{2}\,a\,t^2$. Then $x$ is directly proportional to $t^2$: when the $(t^2,x)$ graph is plotted, the points are on a line whose slope is $k = \tfrac{1}{2}\,a$. In this way fitting a curve becomes fitting a line.
 **Reading the graph:** Calculate $t^2$ for each moment: $0$, $0.16$, $0.64$, $1.44$, $2.56$ and $4.00$ (unit $\text{s}^2$). The points $(t^2,x)$ fit a line, and the slope of the fitted line is $k \approx 0.577\,\text{m/s}^2$.
-**Formula:** $a = 2k$
+**Formula:** Starting from rest, $x = \tfrac{1}{2}\,a\,t^2$, so $x = k\,t^2$ and the slope of the $(t^2,x)$ line is $k = \tfrac{1}{2}\,a$. So $a = 2k$
 **Conversions:** The slope is in $\text{m} : \text{s}^2 = \text{m/s}^2$, so no conversions are needed.
 **Substitution:** $a = 2 \cdot 0.577\,\text{m/s}^2 \approx 1.15\,\text{m/s}^2$. Check with the end point: $k \approx 2.32\,\text{m} : 4.00\,\text{s}^2 = 0.58\,\text{m/s}^2$, so $a \approx 1.16\,\text{m/s}^2$.
 **Answer:** $1.15\,\text{m/s}^2$, three significant figures like the fitted slope; the scatter of the measurements, however, limits the accuracy to about two significant figures.
@@ -189,7 +189,7 @@ Light gates are better suited to a situation where constant acceleration is alre
 
 The distance is the area under the $(t,v)$ graph, and when the velocity is assumed to change uniformly within each interval, the area of each interval is a trapezoid: the average of the velocities times $2.0\,\text{s}$.
 **Reading the graph:** The velocities of the table are read as $(t,v)$ points: $(0;\, 0)$, $(2.0\,\text{s};\, 36\,\text{km/h})$, $(4.0\,\text{s};\, 62\,\text{km/h})$, $(6.0\,\text{s};\, 83\,\text{km/h})$ and $(8.0\,\text{s};\, 100\,\text{km/h})$. The graph rises but curves towards a gentler slope.
-**Formula:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ and $\Delta s = \dfrac{v_1 + v_2}{2} \cdot \Delta t$; the total distance is the sum of the distances of the intervals
+**Formula:** The acceleration is $a = \dfrac{\Delta v}{\Delta t} = \dfrac{v_2 - v_1}{t_2 - t_1}$. The distance is the area under the $(t,v)$ graph: in an interval a rectangle $v_1\,\Delta t$ and a triangle $\tfrac{1}{2}\,(v_2 - v_1)\,\Delta t$, so $\Delta s = \dfrac{v_1 + v_2}{2} \cdot \Delta t$; the total distance is the sum of the distances of the intervals
 **Conversions:** Convert the velocities to $\text{m/s}$: $v = \dfrac{v_{\text{km/h}}}{3.6}$. The values are $0$, $10.0$, $17.2$, $23.1$ and $27.8\,\text{m/s}$.
 **Substitution:** a) The accelerations are ($\text{m/s}^2$) $\dfrac{10.0 - 0}{2.0} = 5.0$, $\dfrac{17.2 - 10.0}{2.0} = 3.6$, $\dfrac{23.1 - 17.2}{2.0} \approx 2.9$ and $\dfrac{27.8 - 23.1}{2.0} \approx 2.4$. b) The distances of the intervals are $10.0\,\text{m}$, $27.2\,\text{m}$, $40.3\,\text{m}$ and $50.8\,\text{m}$. Their sum is $128.3\,\text{m}$.
 **Answer:** a) The acceleration is not constant: it decreases in every interval from $5.0\,\text{m/s}^2$ to $2.4\,\text{m/s}^2$, so the $(t,v)$ graph curves towards a gentler slope and is not a straight line. The change is much larger than the inaccuracy of the reading. b) The distance is about $128\,\text{m}$, three significant figures like the conversion of the velocities. The graph is convex upwards, so the straight chord of each interval runs below the curve and the real distance is slightly greater than the calculated one.

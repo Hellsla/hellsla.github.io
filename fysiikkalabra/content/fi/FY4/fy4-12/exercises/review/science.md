@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: bc0ea52e2d8d623c
-
+CONTENT-HASH: 0e7961781cc75498
 ## Blocking
 
 ## Polish
-- solutions.md:199 (L2-08) — "x_A = 160 m − 64 m" skips the substitution. Insert "x_A = 20 m/s · 8,0 s + ½ · (−2,0 m/s²) · (8,0 s)²" first.
-- solutions.md:207 (L2-08) — the "Kuvaajan lukeminen" block comes after the Mallivastaus. Elsewhere it comes before the calculation, so move it up.
+- solutions.md (bus not reached, $s_\text{min} = 4{,}0\,\text{m}$) Kaava — "Sijoitetaan tämä välimatkaan ja sievennetään" jumps straight to $s_\text{min} = -x_{0\text{R}} - \dfrac{v^2}{2a}$. Fix: show the one middle row $\tfrac12 a (v/a)^2 - x_{0\text{R}} - v^2/a$ so the student can follow the simplification.
+- solutions.md (graph task, $t = 5{,}0\,\text{s}$) Kaava — ends without a full stop after "leikkauspisteen vaakakoordinaattina"; several other Kaava rows lack it as well.
 
 ## Checked
-- New task L2-08 (Kuvaajan valinta), recomputed: v_A = 20 − 2,0t is 0 at 10 s and 12 m/s at 4,0 s. Meeting: 20t − t² = 12t gives t = 8,0 s, before the car stops, with x = 96 m for both.
-- Option figures in figures.py match their descriptions: pick-kaari (v = 20 − 0,2t², 15 m/s at 5 s, crossing at √40 ≈ 6,3 s), pick-kohtaus (20 − t, crossing at 8 s, 10 m/s at 10 s) and pick-alku (12 → 0 at 6 s, then 0). Each description is complete: axes, grid and every value.
-- The distractors catch the lesson's warned mistakes: the (t, v) crossing read as the meeting (2), the same place read as the same speed (4), and the curved shape of a (t, x) graph (1). Exactly one option is right.
-- Sign convention: a = −2,0 m/s² with positive along the motion, as in the brief. The task stays within fy4-1, fy4-2 and fy4-12.
-- The options can't be told apart by form ("Kuvaaja 1–4"). The correct feedback states the lines without hinting at a reason stage.
-- Guardrail higher-line-ahead: not touched, since only (t, v) graphs appear.
-- Inline formulas are split with "eli". I checked them and the figures from the text and code only, with no render (no screenshots yet).
-- answers.py comment agrees; the rest of the set is unchanged since the PASS. Hash is the same at the start and at the end.
+- Captures: none opened (judged from text; the diff is text-only).
+- Every rewritten Kaava now starts from $x = x_0 + v\,t$ or $x = x_0 + v_0 t + \tfrac12 a t^2$ (the brief's MAFY forms), writes each body's position, sets $x_\text{A} = x_\text{B}$ and solves symbolically; each solved form is right and is the one substituted.
+- Sign handling: where $v_\text{B}$ is negative the substitution now reads $v_\text{A} - (-v)$, consistent with the general form ($t = 4{,}0$, $5{,}0$, $3{,}75$, $9{,}0$, $7{,}0\,\text{s}$ unchanged).
+- Trains and scooter: $v_2$, $v$ named as speeds with $x = D - v\,t$; correct.
+- Bus: first meeting the smaller root $(v - \sqrt{v^2 + 2 a x_{0\text{R}}})/a = 2{,}0\,\text{s}$; no-meeting case: $s_\text{min} = -x_{0\text{R}} - v^2/(2a) = 20 - 16 = 4{,}0\,\text{m}$, recomputed.
+- Gap of $10\,\text{m}$: $(v_\text{A} - v_\text{B})t = x_{0\text{B}} - s$ gives $3{,}75\,\text{s}$; right.
+- Largest gap: $t = v_\text{A}/a_\text{B} = 6{,}0\,\text{s}$, $\tfrac12 a_\text{B} t^2 = \tfrac12 v_\text{A} t$, so $36\,\text{m}$; right.
+- Overtaking and delayed-start car: $x_\text{h} - x_\text{k} = \tfrac12 a t^2$; $\tau$ substitution right.
+- exercises.json: only the "esimerkkiaineisto" marker removed from captions (teacher 2026-11-15/16); no value, answer, tolerance or id changed.
+- Hash 0e7961781cc75498 at the start and at the end.
