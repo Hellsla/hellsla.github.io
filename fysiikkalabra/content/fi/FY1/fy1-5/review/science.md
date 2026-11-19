@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c2b79b7bc2f57488
+CONTENT-HASH: 77065a1ef4a8e29d
 
 ## Blocking
 
 ## Polish
-- The prompt says "eri etäisyyksillä" / "at different distances" without naming from what; "etäisyys Maasta" (distance from Earth) would match the signal path. The slope is then 1/c, about 3,3 ns/m; not required at this level.
+
 
 ## Checked
-batch delta review: retrieval choice rewritten to signal travel time vs distance in (s,t); slope = Δt:Δs (time per unit distance, 1/c) is the one correct option; intercept and "length of the line" distractors wrong with correct feedback; consistent with the chapter on straight-line fitting.
+batch delta review: three new pysahdy blocks (6 m in 3 s → 18 m in 9 s, start at origin stated; equal speeds give parallel lines, 5 m intercept; 90 km/h = 25 m/s recomputed by unit substitution).

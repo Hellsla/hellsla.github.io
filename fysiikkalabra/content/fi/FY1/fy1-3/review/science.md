@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: cfa35f6889715ef5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 2e675a488ebf4890
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- The half-range pysahdy could say, as the theory paragraph below it does, that the half-range describes the scatter of single results (C, not blocking).
 
 ## Checked
-- Uncertainty definition shortened to 'arvio siitä, kuinka suuri mittausvirhe voi olla': correct and consistent with the rest of the section.
-- Rounding example now 3,18 s +- 0,12 s (unit on both): correct notation; 'numeroita, joihin epävarmuuden vuoksi ei voi luottaa' states the reason correctly.
-- Added sentence: a precise but miscalibrated instrument gives tightly grouped readings in the wrong place: correct picture of good repeatability with systematic error.
-- Explain model answer (repeatability = closeness of repeated results to each other, accuracy = closeness to true value) is correct and matches en/fi-easy.
+batch delta review: three new pysahdy blocks (zero-offset error not removed by averaging, true; tight but biased series is repeatable but not correct; 4,2/4,6/4,4 s → mean 4,4 s, half-range 0,2 s recomputed, uses the chapter's own 'virhearvio' term) and the knowns/question split.
