@@ -822,7 +822,9 @@ def exercise_html(e, solution_html, read=None, core=False, num=None, level=None)
     model = figcat.figure_html(e["model_figure"], T.lang, read) if e.get("model_figure") else ""   # a drawing task's model diagram, inside the solution
     sol = f'<details class="solution"><summary>{T("lesson.solution")}</summary>{model}<div class="steps">{solution_html}</div></details>' if solution_html else ""
     fig = figcat.figure_html(e["figure"], T.lang, read) if e.get("figure") else ""   # a figure by its id (scripts/figcat.py)
-    fig = (data_table(e["data"]) if e.get("data") else "") + fig + (exercise_choice(e) if e.get("choices") or e.get("statements") or e.get("order") else "")
+    if e.get("data") and fig: fig = f'<div class="data-fig">{data_table(e["data"])}{fig}</div>'   # a small table and a figure in a row: side by side where both fit, stacked on a phone (work queue 22, teacher 2026-11-19)
+    else: fig = (data_table(e["data"]) if e.get("data") else "") + fig
+    fig = fig + (exercise_choice(e) if e.get("choices") or e.get("statements") or e.get("order") else "")
     # an exercise's own hints (teacher 2026-11-12, e.g. a MAFY table task: the table's name): closed boxes under the
     # task, opened by a tap, a click or the keyboard, never by hovering (a phone has no pointer to hover with)
     hints = e.get("hints") or []
