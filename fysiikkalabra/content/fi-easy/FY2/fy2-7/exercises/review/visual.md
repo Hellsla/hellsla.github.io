@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: c6de768105a70af4
+CONTENT-HASH: ddb9ea3646cc9276
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions.md L3-05 Vastaus: the break falls after "Suurempi teho vaatii suuremman virran." so the first sentence of the reasoning is split from its continuation. Move the break before "Suurempi teho vaatii suuremman virran.".
-- [Minor] solutions.md L2-05 Vastaus: the break falls after the first sentence of "Selitys:"; the label and its continuation end up in different paragraphs. Start the new paragraph with "Selitys:" before the first sentence.
 
 ## Checked
-Delta (solution paragraph breaks). Opened fi-easy open-exercises-L2-1280-6, -14 and L3-1280-6, -8: L3-04 and L2-10 breaks fine, layout intact; two breaks as in Polish.
+- Full review of the exercise set, presentation focus (only chains were re-broken): opened fi-easy 1280 px exercise captures with every solution open, L2 part 2 (task 7-12) and L3 part 3 (tasks 7-21/7-22). Chains render as rows aligned at "=", decimal comma, answer boxed, JÄRKEVYYS block set apart, no clipping.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

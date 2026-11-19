@@ -61,8 +61,7 @@ Varattu: claude/elevenlabs-readaloud
 ## 5d. Leikkautuvat kaavat omalle rivilleen (opettaja 2026-11-15)
 Tehty kaikille kursseille FY1–FY9 (loki §5d: kurssikohtaiset luvut, opit ja listalle jääneet rivit). Jäljellä vain
 `docs/clipped-formulas/`:n tähderivit; ne tehdään 0c:n jälkeen ilman täysiä katselmointeja. Menetelmä: loki §5d "Opit".
-FY1 tehty (#724). FY2: fy2-2 ja fy2-5 tehty (#724); fy2-3, fy2-4, fy2-6, fy2-7 ja fy2-8 (37 riviä) jäävät: niiden korjaus
-vaatii tiede- ja pedagogiikkakatselmoinnin (rivitys luokittuu `numbers`/`wording`), ks. loki §5d. FY3: 23 riviä jää (lainatut
+FY1 tehty (#724). FY2 tehty (#749): jäljellä 14 riviä (lainatut opiskelijan laskut exercises.json:ssa fy2-3, fy2-8; fy2-6:n ja fy2-8:n Järkevyys-ketjujen jatkorivit). FY3: 23 riviä jää (lainatut
 opiskelijan laskut ja lauseen sisäiset ketjut fy3-4, fy3-5, fy3-12, fy3-15 sekä fy3-10:n `\dfrac`).
 
 ## 6. Kuvatehtävät ja taulukkotehtävät FY9 (opettaja 2026-11-13…15)

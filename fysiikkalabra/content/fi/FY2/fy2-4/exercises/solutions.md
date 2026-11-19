@@ -111,7 +111,12 @@ $$.
 **Muunnokset:** $1{,}2\,\text{kW} = 1{,}2 \cdot 1000\,\text{W} = 1200\,\text{W}$, $0{,}50\,\text{MJ} = 0{,}50 \cdot 10^{6}\,\text{J} = 500\,000\,\text{J}$ ja $20\,\% = 20 \cdot 0{,}01 = 0{,}20$.
 **Sijoitus:** $t = \dfrac{500\,000\,\text{J}}{0{,}20 \cdot 1200\,\text{W}} = \dfrac{500\,000\,\text{J}}{240\,\text{W}} = 2083\,\text{s}$
 **Vastaus:** $2083\,\text{s}$ eli noin $2{,}1 \cdot 10^{3}\,\text{s}$, kaksi merkitsevää numeroa kuten annetuissa tiedoissa.
-**Järkevyys:** Hyötyteho on vain $240\,\text{W}$, joten $0{,}50\,\text{MJ}$ vie aikaa yli puoli tuntia: $2083\,\text{s} : 60 = 35\,\text{min}$. Jos hyötysuhde olisi $100\,\%$, aikaa kuluisi $500\,000\,\text{J} : 1200\,\text{W} = 417\,\text{s}$, ja viisinkertainen aika vastaa hyötysuhdetta $20\,\%$.
+**Järkevyys:** Hyötyteho on vain $240\,\text{W}$, joten $0{,}50\,\text{MJ}$ vie aikaa yli puoli tuntia: $2083\,\text{s} : 60 = 35\,\text{min}$. Jos hyötysuhde olisi $100\,\%$, aikaa kuluisi $$
+\begin{aligned}
+&500\,000\,\text{J} : 1200\,\text{W} \\
+&= 417\,\text{s}
+\end{aligned}
+$$, ja viisinkertainen aika vastaa hyötysuhdetta $20\,\%$.
 
 ## fy2-4-L3-03
 **Annettu:** kuvasta moottoriin tuleva sähköenergia $E_\text{o} = 240\,\text{J}$ sekä nuolten paksuudet ruutuina: tuleva nuoli $d_\text{o} = 8$ ruutua, hyötyenergian nuoli $d_\text{a} = 2$ ruutua ja häviöiden nuoli $d_\text{h} = 6$ ruutua
@@ -150,7 +155,12 @@ Hyötysuhde on enintään $100\,\%$. Todellisissa laitteissa se jää usein alle
 **Muunnokset:** Prosentti muunnetaan luvuksi sijoittamalla $1\,\% = 0{,}01$: $90\,\% = 90 \cdot 0{,}01 = 0{,}90$. Tehoa ei tarvitse muuntaa, koska vastaus pyydetään kilowatteina.
 **Sijoitus:** $P_\text{o} = \dfrac{180\,\text{kW}}{0{,}90} = 200\,\text{kW}$
 **Vastaus:** $200\,\text{kW}$ eli $2{,}0 \cdot 10^{2}\,\text{kW}$, kaksi merkitsevää numeroa kuten hyötysuhteessa $90\,\%$.
-**Järkevyys:** Otettu teho on suurempi kuin hyötyteho, kuten pitääkin. Tarkistus: $0{,}90 \cdot 200\,\text{kW} = 180\,\text{kW}$, ja häviöteho on $200\,\text{kW} - 180\,\text{kW} = 20\,\text{kW}$ eli $10\,\%$ otetusta.
+**Järkevyys:** Otettu teho on suurempi kuin hyötyteho, kuten pitääkin. Tarkistus: $0{,}90 \cdot 200\,\text{kW} = 180\,\text{kW}$, ja häviöteho on $$
+\begin{aligned}
+&200\,\text{kW} - 180\,\text{kW} \\
+&= 20\,\text{kW}
+\end{aligned}
+$$ eli $10\,\%$ otetusta.
 
 ## fy2-4-L2-05
 **Annettu:** taulukosta lamppujen otettu teho $P_\text{o}$ ja valoteho $P_\text{a}$: hehkulamppu $60\,\text{W}$ ja $3{,}0\,\text{W}$, halogeenilamppu $40\,\text{W}$ ja $2{,}8\,\text{W}$, loistelamppu $18\,\text{W}$ ja $3{,}6\,\text{W}$, ledilamppu $9{,}0\,\text{W}$ ja $2{,}7\,\text{W}$
@@ -245,7 +255,12 @@ $$, kuten pitääkin. Ledilampun tyypillinen hyötysuhde on noin $30\,\%$. Koko 
 **Periaate:** Hyötysuhde on hyötyenergian osuus otetusta energiasta, $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, joten se on enintään $100\,\%$. Laskun voi tarkistaa rivi riviltä: yksikkömuunnokset, tasaisen tehon energia $E = P \cdot t$, energian säilyminen $E_\text{o} = E_\text{a} + E_\text{h}$ ja suhteen suunta.
 **Mallivastaus:** Rivi 1: $2{,}5\,\text{kW} = 2500\,\text{W}$ ja $4{,}0\,\text{min} = 240\,\text{s}$ ovat oikein.
 Rivi 2: $E_\text{o} = 2500\,\text{W} \cdot 240\,\text{s}$, eli $E_\text{o} = 600\,000\,\text{J} = 600\,\text{kJ}$ on oikein.
-Rivi 3: $E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}$ on oikein.
+Rivi 3: $$
+\begin{aligned}
+E_\text{h} &= 600\,\text{kJ} - 360\,\text{kJ} \\
+&= 240\,\text{kJ}
+\end{aligned}
+$$ on oikein.
 Rivi 4 on väärin, koska energiat on jaettu väärinpäin. Oikein $$
 \begin{aligned}
 \eta &= \dfrac{E_\text{a}}{E_\text{o}} \\

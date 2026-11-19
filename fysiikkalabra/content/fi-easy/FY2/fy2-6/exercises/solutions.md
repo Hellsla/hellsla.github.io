@@ -345,7 +345,12 @@ P_\text{su} &= 8{,}4 - 3{,}5 - 5{,}4 = -0{,}5
 \end{aligned}
 $$. Kerrottuna luvulla $24\,\text{h}$ se antaa viikon kulutuksen $1615\,\text{GWh}$.
 
-Ydinvoima tuottaa $3{,}5\,\text{GW} \cdot 168\,\text{h} = 588\,\text{GWh}$ ja tuulivoima $489{,}6\,\text{GWh}$. Muiden energia on siis $$
+Ydinvoima tuottaa $$
+\begin{aligned}
+&3{,}5\,\text{GW} \cdot 168\,\text{h} \\
+&= 588\,\text{GWh}
+\end{aligned}
+$$ ja tuulivoima $489{,}6\,\text{GWh}$. Muiden energia on siis $$
 \begin{aligned}
 &1615 - 588 - 490 \\
 &= 537\,\text{GWh}

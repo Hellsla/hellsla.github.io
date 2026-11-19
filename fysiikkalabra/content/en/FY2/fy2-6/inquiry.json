@@ -86,7 +86,7 @@
         "hints": [
           "The average power is found by dividing the energy by time: $P = E : t$.",
           "First convert terawatt-hours to kilowatt-hours: $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$.",
-          "$P = 20.2 \\cdot 10^{9}\\,\\text{kWh} : 8760\\,\\text{h}$, and finally $1\\,\\text{GW} = 10^{6}\\,\\text{kW}$."
+          "$$\n\\begin{aligned}\n&P \\\\\n&= 20.2 \\cdot 10^{9}\\,\\text{kWh} : 8760\\,\\text{h}\n\\end{aligned}\n$$, and finally $1\\,\\text{GW} = 10^{6}\\,\\text{kW}$."
         ],
         "mistakes": [
           {
@@ -246,7 +246,7 @@
       "hints": [
         "The power and the time are known, so the energy is found by multiplying them together.",
         "Convert the power to kilowatts: $$\n1600\\,\\text{MW} = 1600 \\cdot 1000\\,\\text{kW}\n$$. The product is then in kilowatt-hours.",
-        "$E = 1.6 \\cdot 10^{6}\\,\\text{kW} \\cdot 8760\\,\\text{h}$, and finally $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$."
+        "$$\n\\begin{aligned}\n&E \\\\\n&= 1.6 \\cdot 10^{6}\\,\\text{kW} \\cdot 8760\\,\\text{h}\n\\end{aligned}\n$$, and finally $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$."
       ],
       "mistakes": [
         {
