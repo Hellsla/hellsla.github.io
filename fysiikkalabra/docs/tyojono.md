@@ -175,6 +175,9 @@ Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jäl
 - Opettajan päätökset 2026-11-19 aamulla (koordinaattorin chatissa, "Kaikki ok"): FY3 fy3-8 ensimmäisen tehtävän sanamuoto "1,000 kg vettä tilavuus" → "1,000 kg:n vesimäärän tilavuus" ja fy3-11:n merkitsevien numeroiden ohje (480 kW) täsmennetään (FY3:n seuraava PR); jaetut yksi kerrallaan: header 72 rem → CI-tarkistus site/-sivujen poistolle → 0g PR 2; rinnalla 5d FY2 (37) ja FY3 (23) riviä.
 - Kirjavinkkien Finna-tietuelinkit ja podcastien YouTube-linkit odottavat: Finna estää koneellisen haun (Cloudflare), YouTube-linkki vaatisi jaetun muutoksen (`media_tips.py`) ja opettajan päätöksen.
 
+## 21. Sivujen tunnuskuvat Ruukki-logon tyyliin (opettaja 2026-11-19 klo 07.10, kuvakaappaukset koordinaattorin chatissa)
+Jaettu, yksin, #740:n ja #733:n jälkeen. (1) Erillissivujen otsakkeen tunnuskuvat (esim. Kuuntele ja katso -sivun kuulokkeet) piirretään alkuperäisen Ruukkilabra-logon tyyliin: ahjo (alasin) ja sen päällä sivun aihe (kuulokkeet, kirja …), logon värit ja viivat. (2) Sivustosta-sivun vasemman yläkulman logo on sama kuin Ahjo-jaksojen sivuilla. Ennen/jälkeen-kuvat opettajalle ja pysähdys hyväksyntään ennen yhdistämistä; ei uusia tekstejä.
+
 ## 14. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13; juuri ennen vihkoja)
 Siirretään `ahjo.py` ja `lumatutor.py` jaksopohjan lohkoiksi niin, että sivut pysyvät tavulleen samoina kuten Kilparobotiikassa; puuttuvat lohkot yhteiseen kirjastoon. Jaettu: yksin.
 
