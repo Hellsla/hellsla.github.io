@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 976c9972cd44f994
+CONTENT-HASH: 93b99db3b9e06085
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions.md:256 — the leading minus of `− 8.0 mWb : 0.40 s` is spaced like a subtraction; `{-}8.0` would set it as a sign (earlier note stands).
+- [Minor] Formula blocks — the aligned blocks are numerous and vertically tall on a phone; acceptable, no change needed.
 
 ## Checked
-- Delta, round 1. Captures en fy7-5-open-exercises-L3-1280-6 (the L3 cart-acceleration solution, Substitution, Answer, Reasonableness, and the next task 5-22) full size: paragraph cuts keep the order and layout, chains aligned, nothing clipped.
-- Hash identical at start and end.
+- Delta (Formula steps rewritten as aligned display blocks; round 1, lang en). Opened full-size captures in the lesson folder review/shots (current for this hash): fy7-5-open-exercises-1280-5. Equals signs align in one column, fractions and subscripts readable, cards contain the blocks, no clipping, overflow or red KaTeX; Conversions and Substitution blocks keep their layout. No figure captures apply. Unopened captures show the same component with other formulas.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

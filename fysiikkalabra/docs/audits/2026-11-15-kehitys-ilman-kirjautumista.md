@@ -103,6 +103,20 @@ WebKitin omasta dokumentaatiosta ja kirjaa lähteen tähän tiedostoon ennen kui
   verkkolistalla. Mitään ei perustella sillä: PR 1 ei tee oletusta siitä, että kotivalikkoon asennettu sivusto säilyy. Tarkistus tehdään
   PR 2:n alussa (WebKitin blogi "Full Third-Party Cookie Blocking and More", 7 päivän raja ja kotivalikon poikkeus) ja lähde kirjataan tähän.
 
+### 17a PR 2: toteutus (työntekijä 2026-11-18)
+
+- **Manifesti:** `build.py` kirjoittaa `manifest.webmanifest` jokaisen kielen kansioon (`site/`, `site/en/`, `site/fi-easy/`): `start_url` `index.html`
+  (kielen etusivu), `scope` `./`, `display` `standalone`, nimet ovat sivuston omia merkkijonoja (`site.name`, `site.subtitle`), ei uutta tekstiä.
+  Molemmat sivupohjat linkittävät sen (`rebase` jättää linkin kielen omaksi) ja `theme-color` oli jo. `deploy_site.py` ja `test_offline.py` tarkistavat
+  manifestin, kuvakkeet (koko PNG:n otsikosta) ja linkin joka sivulla.
+- **Kuvakkeet:** `scripts/brand_icons.py` tekee `assets/shared/brand/ruukkilabra-192.png`, `-512.png` ja `-maskable-512.png` suoraan
+  `ruukkilabra-symboli.svg`:stä sivun taustavärille (reunus 12 %, maskable 26 %); logoa ei piirretty uudelleen.
+- **Pysyvä tallennus:** `offline.js` kutsuu `navigator.storage.persist()` kerran ensimmäisen `fl:attempt`-tapahtuman jälkeen. Firefox jätetään pois, koska se
+  näyttää lupakyselyn (uutta käyttöliittymää); Chromium ja Safari päättävät ilman kyselyä. Mitään ei tallenneta eikä näytetä. Testi stubbaa `persist()`.
+- **Ei tehty:** asennuspainiketta ei ole (selaimen oma "Lisää kotivalikkoon"). Tietosuoja-sivuun ei lisätty tekstiä.
+- **WebKit-lähde (avoin):** webkit.org vastaa 403 (ei ympäristön verkkolistalla; ei kierretty). Safarin 7 päivän rajaa ja kotivalikon poikkeusta ei siis
+  ole tarkistettu eikä mitään perustella sillä. Koordinaattori: lisää `webkit.org` verkkolistalle tai tarkistuta lähde muualla; kirjaa lähde tähän.
+
 ## 17b. Koko työ yhteen tiedostoon
 
 **Miksi:** moduulin työtiedosto on jo olemassa, mutta kolmen moduulin opiskelija tallentaa kolme tiedostoa, eikä

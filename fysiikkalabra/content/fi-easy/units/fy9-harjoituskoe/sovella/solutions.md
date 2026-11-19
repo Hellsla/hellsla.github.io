@@ -23,7 +23,9 @@
 ### c)
 **Kysytty:** onko kiukaan hyötysuhde vain noin $30\,\%$
 **Periaate:** Hyötysuhde on hyödyksi saatu energia jaettuna käytetyllä energialla. Se riippuu siitä, mikä lasketaan hyödyksi ja mihin systeemin raja vedetään. Systeemi on se osa maailmaa, jota tarkastellaan. Sähkövastuksessa melkein kaikki sähköenergia muuttuu sisäenergiaksi.
-**Mallivastaus:** Kiuas on sähkövastus. Siksi melkein kaikki sähköenergia, jonka kiuas käyttää, eli $18\,\text{MJ}$, muuttuu saunan sisäenergiaksi. Noin $29\,\%$ energiasta on kivissä. Loppu energia lämmittää saunan ilmaa, lauteita ja seiniä. Vain osa energiasta vuotaa ulos seinien ja ilmanvaihdon kautta. Kun saunaa lämmitetään, myös ilman ja seinien lämpeneminen on hyötyä. Siksi b-kohdan luku kertoo kivien osuuden energiasta. Se ei ole kiukaan hyötysuhde. Väite ei pidä paikkaansa. Kiukaan hyötysuhde saunan lämmittäjänä on lähes $100\,\%$. Hukkaan menee vain se energia, joka siirtyy saunasta ulos.
+**Mallivastaus:** Kiuas on sähkövastus. Siksi melkein kaikki sähköenergia, jonka kiuas käyttää, eli $18\,\text{MJ}$, muuttuu saunan sisäenergiaksi. Noin $29\,\%$ energiasta on kivissä. Loppu energia lämmittää saunan ilmaa, lauteita ja seiniä. Vain osa energiasta vuotaa ulos seinien ja ilmanvaihdon kautta.
+
+Kun saunaa lämmitetään, myös ilman ja seinien lämpeneminen on hyötyä. Siksi b-kohdan luku kertoo kivien osuuden energiasta. Se ei ole kiukaan hyötysuhde. Väite ei pidä paikkaansa. Kiukaan hyötysuhde saunan lämmittäjänä on lähes $100\,\%$. Hukkaan menee vain se energia, joka siirtyy saunasta ulos.
 
 ### d)
 **Annettu:** veden massa $m = 1{,}2\,\text{kg}$ (veden tiheys $1\,\tfrac{\text{kg}}{\text{l}}$), alkulämpötila $18\,{}^\circ\text{C}$, $c_\text{v} = 4{,}19\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$, $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$; höyryn lämpötila on syntyessään $100\,{}^\circ\text{C}$
@@ -45,7 +47,9 @@ $$
 ### e)
 **Kysytty:** miksi iho tuntuu polttavan löylyn jälkeen, vaikka ilman lämpötila ei juuri nouse
 **Periaate:** Höyry tiivistyy eli muuttuu vedeksi, kun se osuu pintaan, joka on höyryä viileämpi. Tiivistymisessä vapautuu yhtä paljon energiaa kuin höyrystymiseen tarvittiin.
-**Mallivastaus:** Löylyssä syntyy vesihöyryä. Höyry leviää saunan ilmaan ja osuu ihoon. Ihon lämpötila on vain noin $35$–$40\,{}^\circ\text{C}$. Höyry tiivistyy iholla vedeksi. Jokaista tiivistyvää kilogrammaa kohti vapautuu noin $2{,}3\,\text{MJ}$ energiaa, ja tämä energia siirtyy ihoon. Siksi iho saa lyhyessä ajassa paljon energiaa, vaikka saunan ilman lämpötila ei juuri muutu. Lisäksi kostea iho ei jäähdy hikoilemalla, koska hiki ei haihdu kosteaan ilmaan yhtä hyvin. Siksi löyly tuntuu polttavalta.
+**Mallivastaus:** Löylyssä syntyy vesihöyryä. Höyry leviää saunan ilmaan ja osuu ihoon. Ihon lämpötila on vain noin $35$–$40\,{}^\circ\text{C}$. Höyry tiivistyy iholla vedeksi. Jokaista tiivistyvää kilogrammaa kohti vapautuu noin $2{,}3\,\text{MJ}$ energiaa, ja tämä energia siirtyy ihoon.
+
+Siksi iho saa lyhyessä ajassa paljon energiaa, vaikka saunan ilman lämpötila ei juuri muutu. Lisäksi kostea iho ei jäähdy hikoilemalla, koska hiki ei haihdu kosteaan ilmaan yhtä hyvin. Siksi löyly tuntuu polttavalta.
 
 ### Yleisiä virheitä
 - a-kohdassa lämpötilan muutokseksi otetaan loppulämpötila $280\,{}^\circ\text{C}$ tai kelvineinä $553\,\text{K}$. Kaavaan tarvitaan kuitenkin muutos $\Delta T = 265\,\text{K}$.
@@ -63,7 +67,9 @@ $$
 ### a)
 **Kysytty:** laatikon voimakuvio jarrutuksen aikana, kun laatikko pysyy paikallaan lavan suhteen
 **Periaate:** Voimakuvioon piirretään vain ne vuorovaikutukset, jotka kohdistuvat eli osuvat laatikkoon: Maa (paino) ja lava (tukivoima ja kitka). Laatikko hidastuu yhdessä kärryn kanssa. Siksi laatikon kiihtyvyys osoittaa taaksepäin. Newtonin II lain mukaan kokonaisvoiman täytyy osoittaa samaan suuntaan.
-**Mallivastaus:** Laatikkoon vaikuttavat nämä voimat: paino $\overline{G}$ alaspäin, lavan tukivoima $\overline{N}$ ylöspäin ja lavan lepokitka $\overline{F}_{\mu 0}$ vaakasuoraan taaksepäin eli auton kulkusuuntaa vastaan. Pystysuunnassa laatikko ei kiihdy, joten $N = G$. Ainoa vaakasuora voima on lepokitka. Sen täytyy osoittaa taaksepäin, koska se hidastaa laatikkoa yhtä paljon kuin jarrut hidastavat kärryä. Eteenpäin osoittavaa ”liikkeen voimaa” ei ole. Jos kitkaa ei olisi, laatikko jatkaisi liikettä eteenpäin.
+**Mallivastaus:** Laatikkoon vaikuttavat nämä voimat: paino $\overline{G}$ alaspäin, lavan tukivoima $\overline{N}$ ylöspäin ja lavan lepokitka $\overline{F}_{\mu 0}$ vaakasuoraan taaksepäin eli auton kulkusuuntaa vastaan. Pystysuunnassa laatikko ei kiihdy, joten $N = G$.
+
+Ainoa vaakasuora voima on lepokitka. Sen täytyy osoittaa taaksepäin, koska se hidastaa laatikkoa yhtä paljon kuin jarrut hidastavat kärryä. Eteenpäin osoittavaa ”liikkeen voimaa” ei ole. Jos kitkaa ei olisi, laatikko jatkaisi liikettä eteenpäin.
 
 <svg data-fig="fy9-harjoituskoe-s2-fbd" viewBox="0 0 600 330" role="img" aria-label="Voimakuvio: työkalulaatikko on suorakulmio peräkärryn vaakasuoralla lavalla. Kärry jarruttaa ja liikkuu oikealle. Paino G osoittaa laatikon keskipisteestä suoraan alaspäin. Tukivoima N osoittaa alapinnasta suoraan ylöspäin, ja se on yhtä pitkä kuin paino. Lepokitka F μ0 osoittaa alapinnan vasemmasta kulmasta vasemmalle eli taaksepäin. Laatikon yläpuolella sininen nopeusnuoli v osoittaa oikealle ja oranssi kiihtyvyysnuoli a vasemmalle." style="max-width:100%;font-size:24px">
   <line x1="150" y1="241" x2="520" y2="241" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
@@ -131,7 +137,9 @@ $$
 ### d)
 **Kysytty:** auttaako laatikon massan kasvattaminen pitämään laatikon paikallaan
 **Periaate:** Lähtökitka eli täysin kehittynyt lepokitka on $\mu_0 N = \mu_0 mg$. Laatikon hidastamiseen tarvitaan voima $ma$. Molemmat ovat verrannollisia massaan.
-**Mallivastaus:** Raskaampi laatikko painaa lavaa enemmän. Siksi suurin mahdollinen lepokitka $\mu_0 mg$ kasvaa. Raskaamman laatikon hidastamiseen tarvitaan kuitenkin myös suurempi voima $ma$. Tämä voima kasvaa samassa suhteessa. Massa supistuu eli häviää ehdosta $ma \le \mu_0 mg$. Siksi suurin sallittu hidastuvuus $a_\text{max} = \mu_0 g$ ei riipu massasta. Ehdotus ei siis auta. Toimivia keinoja ovat nämä: laatikko sidotaan lavaan liinoilla, tai kitkakerrointa suurennetaan, esimerkiksi laatikon alle laitetaan kuminen liukueste.
+**Mallivastaus:** Raskaampi laatikko painaa lavaa enemmän. Siksi suurin mahdollinen lepokitka $\mu_0 mg$ kasvaa. Raskaamman laatikon hidastamiseen tarvitaan kuitenkin myös suurempi voima $ma$. Tämä voima kasvaa samassa suhteessa.
+
+Massa supistuu eli häviää ehdosta $ma \le \mu_0 mg$. Siksi suurin sallittu hidastuvuus $a_\text{max} = \mu_0 g$ ei riipu massasta. Ehdotus ei siis auta. Toimivia keinoja ovat nämä: laatikko sidotaan lavaan liinoilla, tai kitkakerrointa suurennetaan, esimerkiksi laatikon alle laitetaan kuminen liukueste.
 
 ### Yleisiä virheitä
 - Voimakuvioon piirretään voima, joka osoittaa eteenpäin ja ”vie laatikkoa eteenpäin”, tai kitka piirretään osoittamaan eteenpäin.
@@ -186,7 +194,9 @@ $$ ja $\dfrac{\Delta L}{L_0} = \dfrac{-3{,}62 \cdot 10^{-4}\,\text{m}}{1{,}31\,\
 ### d)
 **Kysytty:** miten tulpatun pillin sävel eroaa avoimen pillin sävelestä
 **Periaate:** Putken päät määräävät, missä seisovan aallon solmut ja kuvut ovat. Suljetussa päässä ilma ei pääse liikkumaan, joten siellä on solmu. Avoimessa päässä on kupu.
-**Mallivastaus:** Tulpatun pillin suljetussa päässä on solmu ja avoimessa päässä kupu. Siksi perusvärähtelyssä pillin pituus on vain neljäsosa aallonpituudesta: $\lambda_1 = 4L$. Perustaajuus on $f_1 = \tfrac{v}{4L} = \tfrac{343{,}2\,\text{m/s}}{4 \cdot 1{,}31\,\text{m}} \approx 65{,}5\,\text{Hz}$. Se on puolet avoimen pillin perustaajuudesta, joten sävel on oktaavin matalampi. Lisäksi tulpatussa pillissä voi syntyä vain perustaajuuden parittomia kerrannaisia $3f_1, 5f_1, \ldots$ ($197\,\text{Hz}$, $328\,\text{Hz}$, …). Syy on se, että suljetussa päässä täytyy aina olla solmu. Avoimessa pillissä syntyvät kaikki kerrannaiset. Siksi tulpatun pillin sointiväri eli äänen laatu on erilainen. Ääni on pehmeämpi ja kuulostaa ontommalta.
+**Mallivastaus:** Tulpatun pillin suljetussa päässä on solmu ja avoimessa päässä kupu. Siksi perusvärähtelyssä pillin pituus on vain neljäsosa aallonpituudesta: $\lambda_1 = 4L$. Perustaajuus on $f_1 = \tfrac{v}{4L} = \tfrac{343{,}2\,\text{m/s}}{4 \cdot 1{,}31\,\text{m}} \approx 65{,}5\,\text{Hz}$. Se on puolet avoimen pillin perustaajuudesta, joten sävel on oktaavin matalampi.
+
+Lisäksi tulpatussa pillissä voi syntyä vain perustaajuuden parittomia kerrannaisia $3f_1, 5f_1, \ldots$ ($197\,\text{Hz}$, $328\,\text{Hz}$, …). Syy on se, että suljetussa päässä täytyy aina olla solmu. Avoimessa pillissä syntyvät kaikki kerrannaiset. Siksi tulpatun pillin sointiväri eli äänen laatu on erilainen. Ääni on pehmeämpi ja kuulostaa ontommalta.
 
 ### Yleisiä virheitä
 - a-kohdassa avoimelle putkelle käytetään neljäsosa-aallonpituutta. Silloin taajuudeksi tulee $65{,}5\,\text{Hz}$.
@@ -250,7 +260,9 @@ $$
 ### e)
 **Kysytty:** miksi kelalla oleva johto lämpenee enemmän ja miksi se on vaarallista
 **Periaate:** Johdon lämpötila nousee, kunnes johdosta siirtyy ympäristöön yhtä suuri teho kuin johdossa syntyy. Lämmön siirtyminen riippuu siitä, kuinka suuri osa pinnasta koskettaa vapaasti ilmaa.
-**Mallivastaus:** Johdossa syntyy sama lämpöteho, noin $110\,\text{W}$, oli johto kelalla tai auki. Auki levitetty johto luovuttaa eli antaa lämpöä ilmaan koko pinnaltaan. Siksi se lämpenee vain vähän. Kelalla kierrokset ovat tiiviisti toistensa päällä. Ne lämmittävät toisiaan, ja vain kelan ulkopinta luovuttaa lämpöä ilmaan. Siksi lämpötila nousee paljon korkeammaksi, ennen kuin luovutettu teho on yhtä suuri kuin syntyvä teho. Kuparin resistanssi kasvaa, kun lämpötila nousee. Se lisää lämpenemistä vähän. Kuuma eristys voi pehmetä ja sulaa. Silloin syntyy oikosulku tai tulipalo. Siksi jatkojohto kelataan kokonaan auki, kun siihen kytketään suuri kuorma.
+**Mallivastaus:** Johdossa syntyy sama lämpöteho, noin $110\,\text{W}$, oli johto kelalla tai auki. Auki levitetty johto luovuttaa eli antaa lämpöä ilmaan koko pinnaltaan. Siksi se lämpenee vain vähän. Kelalla kierrokset ovat tiiviisti toistensa päällä. Ne lämmittävät toisiaan, ja vain kelan ulkopinta luovuttaa lämpöä ilmaan.
+
+Siksi lämpötila nousee paljon korkeammaksi, ennen kuin luovutettu teho on yhtä suuri kuin syntyvä teho. Kuparin resistanssi kasvaa, kun lämpötila nousee. Se lisää lämpenemistä vähän. Kuuma eristys voi pehmetä ja sulaa. Silloin syntyy oikosulku tai tulipalo. Siksi jatkojohto kelataan kokonaan auki, kun siihen kytketään suuri kuorma.
 
 ### Yleisiä virheitä
 - a-kohdassa käytetään vain yhden johtimen pituutta $25{,}0\,\text{m}$. Silloin resistanssi on vain puolet oikeasta.
@@ -346,7 +358,9 @@ $$
 ### d)
 **Kysytty:** miksi menetelmä ei sovi $200\,000$ vuotta vanhaan eikä kymmenen vuotta vanhaan puuhun
 **Periaate:** Menetelmällä voi ajoittaa vain, jos kaksi ehtoa toteutuu. Aktiivisuuden muutoksen täytyy olla selvästi suurempi kuin mittausepävarmuus. Jäljellä olevan aktiivisuuden täytyy myös erottua taustasäteilystä.
-**Mallivastaus:** $200\,000$ vuodessa kuluu $\tfrac{200\,000\,\text{a}}{5730\,\text{a}} \approx 35$ puoliintumisaikaa. Alkuperäisistä hiili-14-ytimistä on jäljellä $\left(\tfrac{1}{2}\right)^{35} \approx 3 \cdot 10^{-11}$. Näytteen aktiivisuus on niin pieni, että sitä ei voi erottaa taustasäteilystä. Siksi ikää ei voi määrittää. Kymmenessä vuodessa aktiivisuus pienenee vain $1 - \left(\tfrac{1}{2}\right)^{10/5730} \approx 0{,}1\,\%$. Mittauksen epävarmuus on noin $2\,\%$. Muutos on siis paljon pienempi kuin epävarmuus, eikä sitä huomaa. Lisäksi 1950- ja 1960-luvuilla tehtiin ydinasekokeita. Ne lisäsivät hiili-14:n määrää ilmassa. Siksi nuorille näytteille ei voi olettaa, että alkuaktiivisuus on aina sama. Menetelmä toimii, kun ikä on muutamasta sadasta vuodesta muutamaan kymmeneen tuhanteen vuoteen.
+**Mallivastaus:** $200\,000$ vuodessa kuluu $\tfrac{200\,000\,\text{a}}{5730\,\text{a}} \approx 35$ puoliintumisaikaa. Alkuperäisistä hiili-14-ytimistä on jäljellä $\left(\tfrac{1}{2}\right)^{35} \approx 3 \cdot 10^{-11}$. Näytteen aktiivisuus on niin pieni, että sitä ei voi erottaa taustasäteilystä. Siksi ikää ei voi määrittää. Kymmenessä vuodessa aktiivisuus pienenee vain $1 - \left(\tfrac{1}{2}\right)^{10/5730} \approx 0{,}1\,\%$. Mittauksen epävarmuus on noin $2\,\%$. Muutos on siis paljon pienempi kuin epävarmuus, eikä sitä huomaa.
+
+Lisäksi 1950- ja 1960-luvuilla tehtiin ydinasekokeita. Ne lisäsivät hiili-14:n määrää ilmassa. Siksi nuorille näytteille ei voi olettaa, että alkuaktiivisuus on aina sama. Menetelmä toimii, kun ikä on muutamasta sadasta vuodesta muutamaan kymmeneen tuhanteen vuoteen.
 
 ### Yleisiä virheitä
 - a-kohdassa tytärytimeksi kirjoitetaan boori, tai massaluku pienenee. Beetahajoamisessa massaluku kuitenkin säilyy.
@@ -404,7 +418,9 @@ $$. Pomppu puolittaa nopeuden. Liike-energiaa jää $\left(\tfrac{2{,}66}{5{,}42
 ### d)
 **Kysytty:** kuinka tarkasti pomppukorkeuden voi lukea videolta ja kaksi keinoa parantaa mittausta
 **Periaate:** Lakipisteessä pallon nopeus on nolla. Siksi pallon paikka muuttuu kuvien välillä vähän. Kameran ja asteikon paikka ratkaisee, luetaanko korkeus oikein.
-**Mallivastaus:** Kahden kuvan välinen aika on $\tfrac{1}{30}\,\text{s}$. Lakipisteen lähellä pallo liikkuu hitaasti. Kun lakipisteestä on kulunut $\tfrac{1}{30}\,\text{s}$, pallo on pudonnut vain $\tfrac{1}{2} \cdot 9{,}81\,\text{m/s}^2 \cdot \left(\tfrac{1}{30}\,\text{s}\right)^2 \approx 5\,\text{mm}$. Siksi ylin kuva näyttää huipun muutaman millimetrin tarkkuudella. Lukeminen on kuitenkin epätarkkaa, koska pallon reuna on epäterävä ja pallo on mittanauhan edessä. Kaiken kaikkiaan pomppukorkeus saadaan noin $1\,\text{cm}$:n tarkkuudella. Suurin virheen syy on parallaksi. Jos kamera on huipun ylä- tai alapuolella, pallo näyttää olevan väärän lukeman kohdalla. Mittausta voi parantaa näin: kamera asetetaan huipun korkeudelle ja kauemmas, mittanauha viedään aivan pallon radan taakse, ja pudotukset toistetaan ja niistä lasketaan keskiarvo.
+**Mallivastaus:** Kahden kuvan välinen aika on $\tfrac{1}{30}\,\text{s}$. Lakipisteen lähellä pallo liikkuu hitaasti. Kun lakipisteestä on kulunut $\tfrac{1}{30}\,\text{s}$, pallo on pudonnut vain $\tfrac{1}{2} \cdot 9{,}81\,\text{m/s}^2 \cdot \left(\tfrac{1}{30}\,\text{s}\right)^2 \approx 5\,\text{mm}$. Siksi ylin kuva näyttää huipun muutaman millimetrin tarkkuudella. Lukeminen on kuitenkin epätarkkaa, koska pallon reuna on epäterävä ja pallo on mittanauhan edessä.
+
+Kaiken kaikkiaan pomppukorkeus saadaan noin $1\,\text{cm}$:n tarkkuudella. Suurin virheen syy on parallaksi. Jos kamera on huipun ylä- tai alapuolella, pallo näyttää olevan väärän lukeman kohdalla. Mittausta voi parantaa näin: kamera asetetaan huipun korkeudelle ja kauemmas, mittanauha viedään aivan pallon radan taakse, ja pudotukset toistetaan ja niistä lasketaan keskiarvo.
 
 ### Yleisiä virheitä
 - a-kohdassa muutetaan monta muuttujaa samaan aikaan, esimerkiksi pudotuskorkeutta ja lämpötilaa.
@@ -422,7 +438,9 @@ $$. Pomppu puolittaa nopeuden. Liike-energiaa jää $\left(\tfrac{2{,}66}{5{,}42
 ### a)
 **Kysytty:** miksi suodatinpino putoaa lopulta vakionopeudella
 **Periaate:** Newtonin II laki: kiihtyvyys on kokonaisvoima jaettuna massalla. Ilmanvastus kasvaa, kun nopeus kasvaa. Paino pysyy samana.
-**Mallivastaus:** Pinoon vaikuttavat paino $\overline{G}$ alaspäin ja ilmanvastus $\overline{F}_\text{v}$ ylöspäin. Heti pudotuksen jälkeen nopeus on pieni. Siksi ilmanvastus on pieni, ja kokonaisvoima osoittaa alaspäin. Pino kiihtyy alaspäin, ja sen nopeus kasvaa. Kun nopeus kasvaa, ilmanvastus kasvaa. Silloin kokonaisvoima ja kiihtyvyys pienenevät. Lopulta ilmanvastus on yhtä suuri kuin paino. Silloin kokonaisvoima on nolla ja kiihtyvyys on nolla. Newtonin I lain mukaan pino jatkaa liikettä tasaisella nopeudella. Tätä nopeutta kutsutaan rajanopeudeksi.
+**Mallivastaus:** Pinoon vaikuttavat paino $\overline{G}$ alaspäin ja ilmanvastus $\overline{F}_\text{v}$ ylöspäin. Heti pudotuksen jälkeen nopeus on pieni. Siksi ilmanvastus on pieni, ja kokonaisvoima osoittaa alaspäin. Pino kiihtyy alaspäin, ja sen nopeus kasvaa.
+
+Kun nopeus kasvaa, ilmanvastus kasvaa. Silloin kokonaisvoima ja kiihtyvyys pienenevät. Lopulta ilmanvastus on yhtä suuri kuin paino. Silloin kokonaisvoima on nolla ja kiihtyvyys on nolla. Newtonin I lain mukaan pino jatkaa liikettä tasaisella nopeudella. Tätä nopeutta kutsutaan rajanopeudeksi.
 
 ### b)
 **Annettu:** $N = 4$ pussia, yhden pussin massa $m = 1{,}20\,\text{g}$, $g = 9{,}81\,\text{m/s}^2$
@@ -447,7 +465,9 @@ $$. Pomppu puolittaa nopeuden. Liike-energiaa jää $\left(\tfrac{2{,}66}{5{,}42
 | $5$ | $58{,}9$ | $5{,}71$ |
 | $6$ | $70{,}6$ | $6{,}45$ |
 
-Jos Ainon malli pitäisi paikkansa, pisteet $(v, F_\text{v})$ olisivat suoralla, joka kulkee origon kautta. Pisteet kuitenkin kaartuvat ylöspäin. Niihin sovitettu suora on $F_\text{v} = 38{,}6\,\tfrac{\text{mN} \cdot \text{s}}{\text{m}} \cdot v - 31{,}9\,\text{mN}$. Se leikkaisi nopeusakselin kohdassa $0{,}83\,\text{m/s}$. Malli väittäisi siis, että pinoon, joka liikkuu tätä hitaammin, ei vaikuta ilmanvastusta ollenkaan. Se on mahdotonta. Eetun mallia testataan niin, että $F_\text{v}$ piirretään nopeuden neliön $v^2$ funktiona. Suora kulkee origon kautta, koska levossa ilmanvastus on nolla.
+Jos Ainon malli pitäisi paikkansa, pisteet $(v, F_\text{v})$ olisivat suoralla, joka kulkee origon kautta. Pisteet kuitenkin kaartuvat ylöspäin. Niihin sovitettu suora on $F_\text{v} = 38{,}6\,\tfrac{\text{mN} \cdot \text{s}}{\text{m}} \cdot v - 31{,}9\,\text{mN}$. Se leikkaisi nopeusakselin kohdassa $0{,}83\,\text{m/s}$. Malli väittäisi siis, että pinoon, joka liikkuu tätä hitaammin, ei vaikuta ilmanvastusta ollenkaan. Se on mahdotonta.
+
+Eetun mallia testataan niin, että $F_\text{v}$ piirretään nopeuden neliön $v^2$ funktiona. Suora kulkee origon kautta, koska levossa ilmanvastus on nolla.
 
 <svg data-fig="fy9-harjoituskoe-s8-graph" viewBox="0 0 600 430" role="img" aria-label="Kuvaaja: ilmanvastus F v millinewtoneina vakionopeuden neliön v² funktiona. Kuvaajassa on kuusi mittauspistettä välillä 1,1–6,5 m²/s² ja 12–71 mN. Pisteet ovat suoralla, joka kulkee origon kautta. Suoralta on luettu katkoviivoilla piste (6,00 m²/s²; 64,2 mN). Kulmakerroin on noin 10,7 mN·s²/m² eli 0,0107 kg/m." style="max-width:100%;font-size:24px">
   <line x1="138.5" y1="380" x2="138.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -532,7 +552,9 @@ Jos Ainon malli pitäisi paikkansa, pisteet $(v, F_\text{v})$ olisivat suoralla,
 **Kaava:** $kv_{10}^2 = Nmg$, joten $v_{10} = \sqrt{\dfrac{Nmg}{k}}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $v_{10} = \sqrt{\dfrac{10 \cdot 1{,}20 \cdot 10^{-3}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{0{,}01070\,\text{kg/m}}} = \sqrt{11{,}00\,\text{m}^2/\text{s}^2} = 3{,}317\,\text{m/s}$
-**Vastaus:** $v_{10} \approx 3{,}3\,\text{m/s}$. Tuloksessa on kaksi merkitsevää numeroa, koska ennuste on ekstrapolaatio. Sen epävarmuus on suurempi kuin mittausten epävarmuus. Ennuste on mitatun alueen ($v \le 2{,}54\,\text{m/s}$) ulkopuolella. Siksi siinä oletetaan, että malli pätee myös suuremmilla nopeuksilla. Samassa koejärjestelyssä raskaampi pino tarvitsee pidemmän matkan, ennen kuin se saavuttaa rajanopeuden. $2{,}5\,\text{m}$:n pudotus ei ehkä riitä. Silloin mitattu nopeus voisi olla pienempi kuin ennuste.
+**Vastaus:** $v_{10} \approx 3{,}3\,\text{m/s}$. Tuloksessa on kaksi merkitsevää numeroa, koska ennuste on ekstrapolaatio. Sen epävarmuus on suurempi kuin mittausten epävarmuus. Ennuste on mitatun alueen ($v \le 2{,}54\,\text{m/s}$) ulkopuolella. Siksi siinä oletetaan, että malli pätee myös suuremmilla nopeuksilla.
+
+Samassa koejärjestelyssä raskaampi pino tarvitsee pidemmän matkan, ennen kuin se saavuttaa rajanopeuden. $2{,}5\,\text{m}$:n pudotus ei ehkä riitä. Silloin mitattu nopeus voisi olla pienempi kuin ennuste.
 **Järkevyys:** Nopeus kasvaa massan neliöjuuren mukaan: $\sqrt{\tfrac{10}{6}} \cdot 2{,}54\,\text{m/s} \approx 3{,}3\,\text{m/s}$. Se vastaa tulosta.
 
 ### Yleisiä virheitä
@@ -650,12 +672,16 @@ Jos Ainon malli pitäisi paikkansa, pisteet $(v, F_\text{v})$ olisivat suoralla,
 ### e)
 **Kysytty:** pitävätkö tiedotteen väitteet pohjan lämpötilasta ja lämpötehosta paikkansa
 **Periaate:** Väitteitä verrataan malliin, joka perustuu mittauksiin, ja d-kohdan laskuun. Lisäksi kerrotaan, mitä väite vaatisi.
-**Mallivastaus:** Koekaivon mittausten perusteella kallion lämpötila on $6{,}0\,\text{km}$:n syvyydessä noin $110\,{}^\circ\text{C}$. Väite ”yli $120\,{}^\circ\text{C}$” vaatisi, että lämpötila nousee välillä $3$–$6\,\text{km}$ nopeammin kuin koekaivossa. Tätä väliä ei ole mitattu. Jos lämpötila nousee yhtä nopeasti kuin koekaivossa, $120\,{}^\circ\text{C}$ saavutetaan vasta noin $6{,}6\,\text{km}$:n syvyydessä. Suunnitelman vesivirralla lämpötehoksi saadaan noin $6{,}3\,\text{MW}$. Jos lämpötila nousee yhtä paljon, teho $10\,\text{MW}$ vaatisi vesivirran $\tfrac{10 \cdot 10^6\,\text{W}}{4190\,\text{J/(kg K)} \cdot 50\,\text{K}} \approx 48\,\tfrac{\text{kg}}{\text{s}}$ tai suuremman lämpötilaeron. Kumpikaan väite ei siis seuraa annetuista tiedoista. Väitteet ovat liian optimistisia, jos syvemmältä ei ole muita mittauksia tai suunnitelmassa ei ole muuta muutosta.
+**Mallivastaus:** Koekaivon mittausten perusteella kallion lämpötila on $6{,}0\,\text{km}$:n syvyydessä noin $110\,{}^\circ\text{C}$. Väite ”yli $120\,{}^\circ\text{C}$” vaatisi, että lämpötila nousee välillä $3$–$6\,\text{km}$ nopeammin kuin koekaivossa. Tätä väliä ei ole mitattu. Jos lämpötila nousee yhtä nopeasti kuin koekaivossa, $120\,{}^\circ\text{C}$ saavutetaan vasta noin $6{,}6\,\text{km}$:n syvyydessä.
+
+Suunnitelman vesivirralla lämpötehoksi saadaan noin $6{,}3\,\text{MW}$. Jos lämpötila nousee yhtä paljon, teho $10\,\text{MW}$ vaatisi vesivirran $\tfrac{10 \cdot 10^6\,\text{W}}{4190\,\text{J/(kg K)} \cdot 50\,\text{K}} \approx 48\,\tfrac{\text{kg}}{\text{s}}$ tai suuremman lämpötilaeron. Kumpikaan väite ei siis seuraa annetuista tiedoista. Väitteet ovat liian optimistisia, jos syvemmältä ei ole muita mittauksia tai suunnitelmassa ei ole muuta muutosta.
 
 ### f)
 **Kysytty:** miten radioaktiivinen hajoaminen lämmittää kalliota
 **Periaate:** Hajoamisessa ytimen sidosenergiaa vapautuu. Siitä tulee hiukkasten ja säteilyn liike-energiaa. Tämä energia siirtyy ympärillä olevaan aineeseen.
-**Mallivastaus:** Kallion uraani-, torium- tai kalium-40-ydin hajoaa. Silloin vapautuu energiaa. Energia on syntyvien alfa- tai beetahiukkasten, tytärytimen ja gammasäteilyn energiaa. Hiukkaset ja säteily törmäävät ympärillä olevan kallion atomeihin. Ne luovuttavat eli antavat energiansa jo millimetrien tai senttimetrien matkalla. Kallion hiukkaset alkavat liikkua enemmän. Se tarkoittaa, että kallion sisäenergia ja lämpötila kasvavat. Hajoamisia tapahtuu koko ajan kaikkialla kalliossa. Siksi kallio tuottaa lämpöä koko ajan.
+**Mallivastaus:** Kallion uraani-, torium- tai kalium-40-ydin hajoaa. Silloin vapautuu energiaa. Energia on syntyvien alfa- tai beetahiukkasten, tytärytimen ja gammasäteilyn energiaa. Hiukkaset ja säteily törmäävät ympärillä olevan kallion atomeihin. Ne luovuttavat eli antavat energiansa jo millimetrien tai senttimetrien matkalla.
+
+Kallion hiukkaset alkavat liikkua enemmän. Se tarkoittaa, että kallion sisäenergia ja lämpötila kasvavat. Hajoamisia tapahtuu koko ajan kaikkialla kalliossa. Siksi kallio tuottaa lämpöä koko ajan.
 
 ### Yleisiä virheitä
 - a-kohdassa suora pakotetaan kulkemaan origon kautta. Silloin kulmakerroin ja ekstrapolaatio ovat liian suuria.
@@ -782,7 +808,9 @@ Suoraa ei pakoteta kulkemaan origon kautta, koska myös jousi itse värähtelee.
 ### e)
 **Kysytty:** kaksinkertaistuuko jaksonaika, kun massa kaksinkertaistetaan
 **Periaate:** Verrataan aineiston jaksonaikoja kahdella massalla, joista toinen on kaksi kertaa niin suuri kuin toinen. Verrataan niitä myös malliin $T \propto \sqrt{m + m_\text{j}}$.
-**Mallivastaus:** Aineistossa massa kaksinkertaistuu esimerkiksi $0{,}300\,\text{kg}$:sta $0{,}600\,\text{kg}$:aan. Jaksonaika kasvaa $0{,}713\,\text{s}$:sta $0{,}990\,\text{s}$:iin eli vain $\tfrac{0{,}990}{0{,}713} \approx 1{,}39$-kertaiseksi. Väite on väärä. Jaksonaika on verrannollinen värähtelevän massan neliöjuureen. Jos jousen massaa ei olisi, massan kaksinkertaistuminen kasvattaisi jaksonaikaa $\sqrt{2} \approx 1{,}41$-kertaiseksi. Lisätään kumpaankin massaan c-kohdan jousen massan vaikutus $m_\text{j} \approx 0{,}020\,\text{kg}$. Silloin malli antaa $\sqrt{0{,}620 : 0{,}320} \approx 1{,}39$, ja se vastaa aineistoa. Ero johtuu siis jousen omasta massasta, joka ei kaksinkertaistu.
+**Mallivastaus:** Aineistossa massa kaksinkertaistuu esimerkiksi $0{,}300\,\text{kg}$:sta $0{,}600\,\text{kg}$:aan. Jaksonaika kasvaa $0{,}713\,\text{s}$:sta $0{,}990\,\text{s}$:iin eli vain $\tfrac{0{,}990}{0{,}713} \approx 1{,}39$-kertaiseksi. Väite on väärä. Jaksonaika on verrannollinen värähtelevän massan neliöjuureen. Jos jousen massaa ei olisi, massan kaksinkertaistuminen kasvattaisi jaksonaikaa $\sqrt{2} \approx 1{,}41$-kertaiseksi.
+
+Lisätään kumpaankin massaan c-kohdan jousen massan vaikutus $m_\text{j} \approx 0{,}020\,\text{kg}$. Silloin malli antaa $\sqrt{0{,}620 : 0{,}320} \approx 1{,}39$, ja se vastaa aineistoa. Ero johtuu siis jousen omasta massasta, joka ei kaksinkertaistu.
 
 ### Yleisiä virheitä
 - a-kohdassa piirretään $T$ massan funktiona, ja pisteisiin, jotka ovat käyrällä, sovitetaan suora.

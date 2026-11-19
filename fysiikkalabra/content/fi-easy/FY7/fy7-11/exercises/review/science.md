@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d08eceb1247765e5
+CONTENT-HASH: 494809aa821182e9
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Delta: the diff is one phrase in fy7-11-L3-05, "(esimerkkiaineisto)" removed from the task text. No number, symbol, answer, unit or tolerance changed; solutions.md and answers.py are untouched.
-- The removal makes no claim false: the task states the two refractive indices as given properties of the flint glass and never calls them measured. $1{,}6150$ (red) and $1{,}6498$ (violet) are realistic for a dense flint.
-- L3-05 recomputed from the task text with my own prism model: $A_\text{max}$ is $64{,}98^\circ$ for violet and $66{,}57^\circ$ for red, so violet limits. At $A = 64{,}0^\circ$ the deviations are $56{,}40^\circ$ and $63{,}82^\circ$, so $\Delta\delta = 7{,}417^\circ$, equal to the key (7.417, tolerance 0.05). At $60{,}0^\circ$ the difference is $3{,}91^\circ$.
-- The label still stands in the table task of level 2 (caption "tyypillisiä arvoja, esimerkkiaineisto"); that is a matter of consistent wording, not of physics.
-- Every other task stands as recomputed in the previous report.
-- Hash d08eceb1247765e5 at the start and at the end.
+- Delta: the packet shows the Kaava steps of L1-04, L1-05, L2-01, L3-01 and L3-03 flattened. On disk (solutions.md:35, 45, 55, 96, 186) each is an aligned block with correct row breaks. Each block is identical to the passed Finnish one, including the L1-05 split row `&+ (180^\circ-2\beta)+(\alpha-\beta)`.
+- Derivations are right. L1-04: $\delta = (\alpha_1-\alpha_2)+(\alpha_4-\alpha_3)$ with $\alpha_2+\alpha_3 = A$ gives $\delta = \alpha_1+\alpha_4-A$. L1-05: $\delta_\text{k} = 180^\circ+2\alpha-4\beta$, so $\theta = 4\beta-2\alpha$. L2-01: $\Delta t = L(n_\text{v}-n_\text{p})/c$. L3-03: $\beta = (\theta+2\alpha)/4$ and $n = \sin\alpha/\sin\beta$.
+- Each block ends in the form its Sijoitus step uses. Sijoitus, Vastaus, keys and tolerances are unchanged.
+- Recomputed: $42{,}0^\circ$; $265\,\text{ns}$; L3-01 $\Delta\delta = 0{,}9659^\circ$, matching the stated exact value $0{,}966^\circ$ (the $0{,}98^\circ$ from rounded intermediates is explained in the answer).
+- Model answers of L3-02 (rainbow edges), L3-03 and L3-05 were split into paragraphs only. Every sentence and number is kept.
+- exercises.json: no "esimerkkiaineisto" left. The removal makes no data false: the values are given as typical properties, not as measurements.
+- Hash 494809aa821182e9 at the start and at the end.

@@ -35,7 +35,9 @@ $$, about the same as the acceleration of free fall. It feels like a strong but 
 ### d)
 **Find:** whether the attendant's claim and its reasoning are correct
 **Principle:** Without resistive forces mechanical energy is conserved and the mass cancels: $v = \sqrt{2gh}$. The work $W_\text{other}$ done by the resistive forces reduces the mechanical energy (chapter *Conservation of mechanical energy and the work–energy principle*).
-**Model answer:** The reasoning is wrong. Gravity does pull a light rider less strongly, but setting a lighter rider in motion takes proportionally less energy: without resistive forces the mass cancels out of the energy equation, and everyone would arrive at the speed $\sqrt{2gh} \approx 26.6\,\text{m/s}$. The observation may still be true because of the resistive forces. Air resistance depends on the size and posture of the rider but is not proportional to the mass. Of the mechanical energy of a light rider, which is proportional to the mass, air resistance therefore takes a larger share, and the rider arrives more slowly. So the cause is air resistance, not weaker gravity.
+**Model answer:** The reasoning is wrong. Gravity does pull a light rider less strongly, but setting a lighter rider in motion takes proportionally less energy: without resistive forces the mass cancels out of the energy equation, and everyone would arrive at the speed $\sqrt{2gh} \approx 26.6\,\text{m/s}$. The observation may still be true because of the resistive forces.
+
+Air resistance depends on the size and posture of the rider but is not proportional to the mass. Of the mechanical energy of a light rider, which is proportional to the mass, air resistance therefore takes a larger share, and the rider arrives more slowly. So the cause is air resistance, not weaker gravity.
 
 ### Yleisiä virheitä
 - In part a, $v = 2gh$ is written and the square root forgotten, which also makes the unit wrong, $\text{m}^2\text{/s}^2$.
@@ -98,7 +100,9 @@ $$ agrees. The distance is short, because the stone has only about $6\,\%$ of th
 ### d)
 **Find:** why a swept stone slides further, even though the brooms do not touch the stone
 **Principle:** By the work–energy principle friction does the negative work $-\mu mgs$, and the sliding distance is $s = \dfrac{v^2}{2\mu g}$ (chapter *Conservation of mechanical energy and the work–energy principle*).
-**Model answer:** At the moment of release the stone has a certain kinetic energy $\tfrac12 mv^2$, and as it slides this is transformed, through the negative work done by friction, into internal energy of the stone and the ice. Each metre takes the amount $\mu mg$ of kinetic energy. When sweeping reduces the coefficient of friction, less kinetic energy is used per metre, so the same kinetic energy lasts for a longer distance: the distance is inversely proportional to the coefficient of friction. So sweeping does not add energy to the stone, and the stone does not need to touch the broom: sweeping only changes the ice in front of the stone so that the work done by friction per metre is smaller.
+**Model answer:** At the moment of release the stone has a certain kinetic energy $\tfrac12 mv^2$, and as it slides this is transformed, through the negative work done by friction, into internal energy of the stone and the ice. Each metre takes the amount $\mu mg$ of kinetic energy.
+
+When sweeping reduces the coefficient of friction, less kinetic energy is used per metre, so the same kinetic energy lasts for a longer distance: the distance is inversely proportional to the coefficient of friction. So sweeping does not add energy to the stone, and the stone does not need to touch the broom: sweeping only changes the ice in front of the stone so that the work done by friction per metre is smaller.
 
 ### Yleisiä virheitä
 - In part a, potential energy is included in the work–energy principle even though the ice is horizontal, or the speeds are subtracted before squaring: $(2.40 - 0.62)^2$ is not the same as $2.40^2 - 0.62^2$.
@@ -302,7 +306,9 @@ The circled places are the two points of the line from which the slope of part c
 ### a)
 **Find:** whether claim 1 is correct, and what the power of a wind turbine depends on
 **Principle:** The power of the wind is the kinetic energy of the air flowing through the rotor per second, and the turbine converts the share $\eta$ of it into electricity: $P = \tfrac12 \eta \rho A v^3$ (chapter *Hydro and wind power as energy converters*).
-**Model answer:** The claim is wrong, because it assumes the power is proportional to the wind speed. The power depends on the speed in two ways. Each kilogram of air has the kinetic energy $\tfrac12 v^2$, which grows with the square of the speed. In addition, the mass of air $\rho A v$ flows through the rotor every second, and it grows with the speed. That is why the power is proportional to the cube of the speed. When the speed increases from $6\,\text{m/s}$ to $9\,\text{m/s}$, the power increases by a factor of $\dfrac{P_2}{P_1} = \left(\dfrac{v_2}{v_1}\right)^3 = \left(\tfrac{9}{6}\right)^3 = 3.375$, that is, by about $240\,\%$ and not by $50\,\%$. This holds when the efficiency stays roughly the same and the turbine is not yet running at its rated power; above it the blades are turned and the power is limited.
+**Model answer:** The claim is wrong, because it assumes the power is proportional to the wind speed. The power depends on the speed in two ways. Each kilogram of air has the kinetic energy $\tfrac12 v^2$, which grows with the square of the speed. In addition, the mass of air $\rho A v$ flows through the rotor every second, and it grows with the speed.
+
+That is why the power is proportional to the cube of the speed. When the speed increases from $6\,\text{m/s}$ to $9\,\text{m/s}$, the power increases by a factor of $\dfrac{P_2}{P_1} = \left(\dfrac{v_2}{v_1}\right)^3 = \left(\tfrac{9}{6}\right)^3 = 3.375$, that is, by about $240\,\%$ and not by $50\,\%$. This holds when the efficiency stays roughly the same and the turbine is not yet running at its rated power; above it the blades are turned and the power is limited.
 
 ### b)
 **Find:** whether claim 2 is correct, and what the energy chain of a hydropower plant is
@@ -312,7 +318,11 @@ The circled places are the two points of the line from which the slope of part c
 &1000\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 9.0\,\text{m} \\
 &\approx 88\,\text{kJ}
 \end{aligned}
-$$ in a fall of $9.0\,\text{m}$. In the penstock the potential energy is transformed into kinetic energy, the flowing water turns the turbine, and the turbine turns the generator, which converts the energy of motion into electricity. The energy of the water comes from the Sun: solar radiation evaporates water, which rises into the air and falls as rain at a higher level in the catchment area. So the same water does not circulate through the plant by itself; the Sun “lifts” it again every time. Not all the energy the water loses is converted into electricity: friction in the penstock and the turbine and the heating of the generator transform part of it into internal energy, and the water discharged into the tailwater still has kinetic energy. That is why the efficiency is below $100\,\%$, here $90\,\%$.
+$$ in a fall of $9.0\,\text{m}$. In the penstock the potential energy is transformed into kinetic energy, the flowing water turns the turbine, and the turbine turns the generator, which converts the energy of motion into electricity.
+
+The energy of the water comes from the Sun: solar radiation evaporates water, which rises into the air and falls as rain at a higher level in the catchment area. So the same water does not circulate through the plant by itself; the Sun “lifts” it again every time.
+
+Not all the energy the water loses is converted into electricity: friction in the penstock and the turbine and the heating of the generator transform part of it into internal energy, and the water discharged into the tailwater still has kinetic energy. That is why the efficiency is below $100\,\%$, here $90\,\%$.
 
 ### c)
 **Find:** whether claim 3 is correct, and what the present electric power of the plant is
@@ -324,7 +334,9 @@ P &= 0.90 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 120\,\tfrac{\text{m}^3
 &\approx 9.54 \cdot 10^{6}\,\text{W} \\
 &\approx 9.5\,\text{MW}
 \end{aligned}
-$$. The power is directly proportional both to the flow rate $Q$ and to the head $h$. Raising the dam from $9\,\text{m}$ to $12\,\text{m}$ increases the head by a factor of $\dfrac{P'}{P} = \dfrac{h'}{h} = \tfrac{12}{9} = \tfrac43$, that is, by a third, and the power in the same ratio to about $12.7\,\text{MW}$. A flow rate a third larger would increase the power by exactly the same amount. So the claim is correct, provided the efficiency stays the same and raising the dam does not change the flow rate of the river. In practice the flow rate depends on the rainfall and the catchment area, so it cannot be increased, but the height can.
+$$. The power is directly proportional both to the flow rate $Q$ and to the head $h$. Raising the dam from $9\,\text{m}$ to $12\,\text{m}$ increases the head by a factor of $\dfrac{P'}{P} = \dfrac{h'}{h} = \tfrac{12}{9} = \tfrac43$, that is, by a third, and the power in the same ratio to about $12.7\,\text{MW}$.
+
+A flow rate a third larger would increase the power by exactly the same amount. So the claim is correct, provided the efficiency stays the same and raising the dam does not change the flow rate of the river. In practice the flow rate depends on the rainfall and the catchment area, so it cannot be increased, but the height can.
 
 ### Yleisiä virheitä
 - In part a, the power is assumed to be proportional to the square of the speed, because the kinetic energy is $\tfrac12 mv^2$; this forgets that the amount of air flowing per second also increases.
@@ -346,12 +358,20 @@ $$. The power is directly proportional both to the flow rate $Q$ and to the head
 ### b)
 **Find:** whether the group's conclusion is justified, and what the difference between the measurements is due to
 **Principle:** The total momentum is conserved when the impulse of the external forces is negligible (chapter *Conservation of momentum and one-dimensional collisions*). In an inelastic collision it is kinetic energy that is transformed, not momentum. A systematic error shifts all the results in the same direction (chapter *Measuring and the reliability of a measurement*).
-**Model answer:** The conclusion is not justified. What is converted into internal energy and sound in an inelastic collision is kinetic energy: here too about half of the kinetic energy disappeared in test 2. Momentum is not a form of energy, and it cannot be converted into internal energy. The difference is most likely due to the way of measuring. The common velocity was measured only $0.40$–$0.80\,\text{m}$ after the point of collision, and on an ordinary track rolling resistance slows the trolleys down all the time. Rolling resistance is an external force, so its impulse reduces the momentum while the trolleys travel to the measuring range. This is supported by the difference being systematic, since the momentum decreased in every test, and by the relative difference being largest in the slowest test ($-12\,\%$) and smallest in the fastest ($-3\,\%$). Slow trolleys spend longer on the way, and a resistive force of constant magnitude reduces a small velocity relatively more. The deceleration need not be large: in test 2 the difference corresponds to a deceleration of only about $0.01\,\text{m/s}^2$. So the data do not show that momentum is not conserved.
+**Model answer:** The conclusion is not justified. What is converted into internal energy and sound in an inelastic collision is kinetic energy: here too about half of the kinetic energy disappeared in test 2. Momentum is not a form of energy, and it cannot be converted into internal energy. The difference is most likely due to the way of measuring. The common velocity was measured only $0.40$–$0.80\,\text{m}$ after the point of collision, and on an ordinary track rolling resistance slows the trolleys down all the time.
+
+Rolling resistance is an external force, so its impulse reduces the momentum while the trolleys travel to the measuring range. This is supported by the difference being systematic, since the momentum decreased in every test, and by the relative difference being largest in the slowest test ($-12\,\%$) and smallest in the fastest ($-3\,\%$).
+
+Slow trolleys spend longer on the way, and a resistive force of constant magnitude reduces a small velocity relatively more. The deceleration need not be large: in test 2 the difference corresponds to a deceleration of only about $0.01\,\text{m/s}^2$. So the data do not show that momentum is not conserved.
 
 ### c)
 **Find:** an improved experimental setup for testing conservation of momentum
 **Principle:** A conservation law can be tested only when the effect of external forces between the measurements is small and the uncertainty of the measurements is known (chapters *Conservation of momentum and one-dimensional collisions* and *Your own experimental investigation: planning, carrying out and reporting*).
-**Model answer:** The velocities are measured as close to the collision as possible: for example light gates just before and just after the point of collision, or video analysis is used to draw a $(t, v)$ graph of each trolley and the velocities at the moment of collision are read from the extensions of the lines. The effect of rolling resistance is reduced by using an air track or by tilting the track slightly so that a trolley pushed on its own moves at a constant speed. The masses of the trolleys are weighed on a balance together with their hook-and-loop strips. Each test is repeated several times, and the uncertainty of the velocity and the mass is used to estimate how large a difference between the momenta can arise from measurement uncertainty alone. In addition, the masses and velocities are varied: if momentum is conserved in all tests within the uncertainty, the result supports the conservation law. From the same measurements the kinetic energy before and after is calculated, and the transformed share is compared with the theoretical value $\dfrac{m_\text{B}}{m_\text{A} + m_\text{B}} = 48\,\%$, so that the report distinguishes momentum from energy.
+**Model answer:** The velocities are measured as close to the collision as possible: for example light gates just before and just after the point of collision, or video analysis is used to draw a $(t, v)$ graph of each trolley and the velocities at the moment of collision are read from the extensions of the lines.
+
+The effect of rolling resistance is reduced by using an air track or by tilting the track slightly so that a trolley pushed on its own moves at a constant speed. The masses of the trolleys are weighed on a balance together with their hook-and-loop strips. Each test is repeated several times, and the uncertainty of the velocity and the mass is used to estimate how large a difference between the momenta can arise from measurement uncertainty alone.
+
+In addition, the masses and velocities are varied: if momentum is conserved in all tests within the uncertainty, the result supports the conservation law. From the same measurements the kinetic energy before and after is calculated, and the transformed share is compared with the theoretical value $\dfrac{m_\text{B}}{m_\text{A} + m_\text{B}} = 48\,\%$, so that the report distinguishes momentum from energy.
 
 ### Yleisiä virheitä
 - In part a, the momentum after the collision is calculated with the mass of trolley A only, even though the trolleys move together.

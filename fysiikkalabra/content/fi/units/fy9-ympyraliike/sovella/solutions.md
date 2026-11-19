@@ -3,7 +3,9 @@
 ### a)
 **Annettu:** trailerin massa $m_\text{t} = 165\,\text{kg}$ ja painopiste etäisyydellä $r_\text{t} = 0{,}58\,\text{m}$ akselin edessä; veneen ja moottorin massa $m_\text{v} = 430\,\text{kg}$ ja painopiste etäisyydellä $r_\text{v} = 0{,}12\,\text{m}$ akselin edessä; kytkin etäisyydellä $r_\text{k} = 3{,}25\,\text{m}$ akselin edessä; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** kytkimen vetoaisaan kohdistama pystysuora voima $F$ ja aisapaino $F : g$
-**Periaate:** Valitaan kappaleeksi traileri ja vene yhdessä. Voimakuviossa niihin vaikuttavat trailerin paino $\overline{G}_\text{t}$ ja veneen paino $\overline{G}_\text{v}$ painopisteistä alas, maan tukivoima $\overline{N}$ pyörien kohdalta ylös ja kytkimen voima $\overline{F}$ vetoaisan päästä ylös. Kytkimen vaakasuora voima on levossa nolla. Traileri on levossa, joten se on tasapainossa: voimien summa ja momenttien summa ovat nolla. Momenttipisteeksi valitaan akseli, jolloin tuntemattoman tukivoiman varsi on nolla. Voimat ovat pystysuoria ja etäisyydet vaakasuoria, joten etäisyydet ovat voimien varsia (luku *Kappaleen tasapaino: voimat ja momentit*).
+**Periaate:** Valitaan kappaleeksi traileri ja vene yhdessä. Voimakuviossa niihin vaikuttavat trailerin paino $\overline{G}_\text{t}$ ja veneen paino $\overline{G}_\text{v}$ painopisteistä alas, maan tukivoima $\overline{N}$ pyörien kohdalta ylös ja kytkimen voima $\overline{F}$ vetoaisan päästä ylös. Kytkimen vaakasuora voima on levossa nolla.
+
+Traileri on levossa, joten se on tasapainossa: voimien summa ja momenttien summa ovat nolla. Momenttipisteeksi valitaan akseli, jolloin tuntemattoman tukivoiman varsi on nolla. Voimat ovat pystysuoria ja etäisyydet vaakasuoria, joten etäisyydet ovat voimien varsia (luku *Kappaleen tasapaino: voimat ja momentit*).
 **Kaava:** $F r_\text{k} - m_\text{t} g\, r_\text{t} - m_\text{v} g\, r_\text{v} = 0$, joten $F = \dfrac{(m_\text{t} r_\text{t} + m_\text{v} r_\text{v})\,g}{r_\text{k}}$ ja aisapaino $m_\text{a} = \dfrac{F}{g} = \dfrac{m_\text{t} r_\text{t} + m_\text{v} r_\text{v}}{r_\text{k}}$
 **Muunnokset:** Ei tarvita: massat ovat kilogrammoina ja etäisyydet metreinä.
 **Sijoitus:** Painojen momenttien summa akselin suhteen on $$
@@ -48,7 +50,9 @@ $$, joten $\Delta x = \dfrac{47{,}7\,\text{kg} \cdot \text{m}}{430\,\text{kg}} =
 ### d)
 **Kysytty:** miten akselin taakse lastattu $30\,\text{kg}$ muuttaa aisapainoa, ja miksi liian pieni aisapaino on vaarallinen
 **Periaate:** Akselin takana oleva paino kiertää traileria akselin ympäri vastakkaiseen suuntaan kuin akselin edessä olevat painot, joten se pienentää kytkimen tarvitsemaa momenttia (luku *Kappaleen tasapaino: voimat ja momentit*).
-**Mallivastaus:** Kuorman momentti akselin suhteen on $30\,\text{kg} \cdot g \cdot 1{,}40\,\text{m}$, ja se vähentää kytkimen voiman momenttia. Aisapaino pienenee $\tfrac{30\,\text{kg} \cdot 1{,}40\,\text{m}}{3{,}25\,\text{m}} \approx 13\,\text{kg}$, eli a-kohdan $45\,\text{kg}$:sta noin $32\,\text{kg}$:iin. Jos takana olisi vielä enemmän kuormaa, trailerin ja kuorman yhteinen painopiste siirtyisi akselin taakse. Silloin aisapaino olisi negatiivinen: kytkimen pitäisi vetää vetoaisaa alaspäin, ja traileri nostaisi auton takapäätä. Takapyörien tukivoima ja siten niiden lepokitkan yläraja pienenisivät, jolloin pito jarrutuksessa ja kaarteissa heikkenee. Pieni positiivinen aisapaino pitää trailerin painopisteen akselin edessä. Siksi raskas kuorma lastataan akselin kohdalle tai hieman sen eteen.
+**Mallivastaus:** Kuorman momentti akselin suhteen on $30\,\text{kg} \cdot g \cdot 1{,}40\,\text{m}$, ja se vähentää kytkimen voiman momenttia. Aisapaino pienenee $\tfrac{30\,\text{kg} \cdot 1{,}40\,\text{m}}{3{,}25\,\text{m}} \approx 13\,\text{kg}$, eli a-kohdan $45\,\text{kg}$:sta noin $32\,\text{kg}$:iin. Jos takana olisi vielä enemmän kuormaa, trailerin ja kuorman yhteinen painopiste siirtyisi akselin taakse.
+
+Silloin aisapaino olisi negatiivinen: kytkimen pitäisi vetää vetoaisaa alaspäin, ja traileri nostaisi auton takapäätä. Takapyörien tukivoima ja siten niiden lepokitkan yläraja pienenisivät, jolloin pito jarrutuksessa ja kaarteissa heikkenee. Pieni positiivinen aisapaino pitää trailerin painopisteen akselin edessä. Siksi raskas kuorma lastataan akselin kohdalle tai hieman sen eteen.
 
 ### Yleisiä virheitä
 - Momentit lasketaan kytkimen suhteen, mutta tukivoimaa $N$ ei oteta mukaan, tai momenttiehtoon kirjoitetaan sekä $N$ että sen varsi akselin suhteen.
@@ -111,7 +115,11 @@ $$, $g = 9{,}81\,\text{m/s}^2$
 ### d)
 **Kysytty:** miksi tarkkoihin pohjoisiin mittauksiin käytetään napojen yli kiertävää rataa geostationaarisen sijaan
 **Periaate:** Geostationaarisen satelliitin kiertoaika on Maan pyörähdysaika, joten sen rata on päiväntasaajan yläpuolella tietyllä etäisyydellä. Napojen yli kiertävän radan korkeus voidaan valita (luku *Satelliitit ja planeetat ympyräradalla*).
-**Mallivastaus:** Ehdotuksessa on hyvä puoli: geostationaarinen satelliitti näkee saman alueen koko ajan, joten sillä voi seurata esimerkiksi pilvien liikettä jatkuvasti. Tarkkoihin mittauksiin pohjoisilta alueilta se sopii kuitenkin huonosti kahdesta syystä. Ensinnäkin se on $35\,800\,\text{km}$:n korkeudella eli noin $\tfrac{35\,800}{830} \approx 43$ kertaa korkeammalla kuin napojen yli kiertävä satelliitti, ja vinosti Suomeen katsottuna etäisyys on vielä suurempi, yli $38\,000\,\text{km}$. Siksi samalla mittalaitteella yksityiskohdat näkyvät paljon epätarkempina. Toiseksi geostationaarinen rata on päiväntasaajan tasossa, joten se näkee Suomen hyvin vinosta kulmasta, matalalla horisontin yllä, eikä napa-alueita lainkaan. Napojen yli kiertävä satelliitti kulkee noin $830\,\text{km}$:n korkeudella jokaisella kierroksella pohjoisen alueiden yli. Siksi molempia ratoja käytetään: geostationaarisia jatkuvaan seurantaan ja napojen yli kiertäviä tarkkoihin mittauksiin.
+**Mallivastaus:** Ehdotuksessa on hyvä puoli: geostationaarinen satelliitti näkee saman alueen koko ajan, joten sillä voi seurata esimerkiksi pilvien liikettä jatkuvasti. Tarkkoihin mittauksiin pohjoisilta alueilta se sopii kuitenkin huonosti kahdesta syystä.
+
+Ensinnäkin se on $35\,800\,\text{km}$:n korkeudella eli noin $\tfrac{35\,800}{830} \approx 43$ kertaa korkeammalla kuin napojen yli kiertävä satelliitti, ja vinosti Suomeen katsottuna etäisyys on vielä suurempi, yli $38\,000\,\text{km}$. Siksi samalla mittalaitteella yksityiskohdat näkyvät paljon epätarkempina.
+
+Toiseksi geostationaarinen rata on päiväntasaajan tasossa, joten se näkee Suomen hyvin vinosta kulmasta, matalalla horisontin yllä, eikä napa-alueita lainkaan. Napojen yli kiertävä satelliitti kulkee noin $830\,\text{km}$:n korkeudella jokaisella kierroksella pohjoisen alueiden yli. Siksi molempia ratoja käytetään: geostationaarisia jatkuvaan seurantaan ja napojen yli kiertäviä tarkkoihin mittauksiin.
 
 ### Yleisiä virheitä
 - Radan säteeksi sijoitetaan korkeus $h$ eikä etäisyys Maan keskipisteestä $R + h$.
@@ -186,7 +194,9 @@ $$, $g = 9{,}81\,\text{m/s}^2$
 
 ### b)
 **Kysytty:** suure, jonka funktiona voiman kuvaaja on suora, perustelu, kuvaaja ja sovitettu suora
-**Kuvaaja:** Ympyräliikkeen liikeyhtälöstä $F = m\tfrac{v^2}{r}$ ja ratanopeudesta $v = \tfrac{2\pi r}{T}$ saadaan $F = \dfrac{4\pi^2 mr}{T^2} = 4\pi^2 mr \cdot \dfrac{1}{T^2}$. Kun $m$ ja $r$ ovat vakioita, $F$ on suoraan verrannollinen suureeseen $\tfrac{1}{T^2}$. Lasketaan taulukkoon: $\tfrac{1}{T^2}$ on $2{,}78$, $2{,}04$, $1{,}56$, $1{,}11$, $0{,}83$, $0{,}59$ ja $0{,}44\,\tfrac{1}{\text{s}^2}$. Vaaka-akselilla on $\tfrac{1}{T^2}\ (\tfrac{1}{\text{s}^2})$ ja pystyakselilla $F\ (\text{N})$. Pisteisiin sovitetaan suora, joka kulkee pisteiden läpi niin, että pisteitä jää molemmille puolille.
+**Kuvaaja:** Ympyräliikkeen liikeyhtälöstä $F = m\tfrac{v^2}{r}$ ja ratanopeudesta $v = \tfrac{2\pi r}{T}$ saadaan $F = \dfrac{4\pi^2 mr}{T^2} = 4\pi^2 mr \cdot \dfrac{1}{T^2}$. Kun $m$ ja $r$ ovat vakioita, $F$ on suoraan verrannollinen suureeseen $\tfrac{1}{T^2}$.
+
+Lasketaan taulukkoon: $\tfrac{1}{T^2}$ on $2{,}78$, $2{,}04$, $1{,}56$, $1{,}11$, $0{,}83$, $0{,}59$ ja $0{,}44\,\tfrac{1}{\text{s}^2}$. Vaaka-akselilla on $\tfrac{1}{T^2}\ (\tfrac{1}{\text{s}^2})$ ja pystyakselilla $F\ (\text{N})$. Pisteisiin sovitetaan suora, joka kulkee pisteiden läpi niin, että pisteitä jää molemmille puolille.
 
 <svg data-fig="fy9-ympyraliike-s3-lin" viewBox="0 0 600 440" role="img" aria-label="Kuvaaja: langan voima F newtoneina suureen yksi jaettuna T toiseen funktiona yksikössä yksi jaettuna sekunti toiseen. Seitsemän mustaa pistettä välillä 0,44–2,78, voimat 0,88 N:sta 5,42 N:iin. Pisteisiin on sovitettu nouseva suora, joka kulkee lähes origon kautta. Suoraa on jatkettu katkoviivana voimaan 8,0 N asti, joka on langan kestävyys; se saavutetaan, kun yksi jaettuna T toiseen on noin 4,1. Suoralta on ympyröity kaksi pistettä, (0,50; 1,01) ja (2,50; 4,91), joista luetaan kulmakerroin noin 1,95 N s²." style="max-width:100%;font-size:30px">
   <line x1="128.5" y1="380" x2="128.5" y2="76" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -284,7 +294,9 @@ $$, $g = 9{,}81\,\text{m/s}^2$
 **Muunnokset:** Ei tarvita: $\sqrt{\tfrac{\text{N} \cdot \text{s}^2}{\text{N}}} = \text{s}$.
 **Sijoitus:** $T_\text{min} = \sqrt{\dfrac{1{,}95\,\text{N} \cdot \text{s}^2}{8{,}0\,\text{N}}} = \sqrt{0{,}244\,\text{s}^2} = 0{,}494\,\text{s}$
 **Vastaus:** $T_\text{min} \approx 0{,}49\,\text{s}$ eli noin $2$ kierrosta sekunnissa, kaksi merkitsevää numeroa kuten langan kestävyydessä $8{,}0\,\text{N}$.
-**Järkevyys:** Lyhin mitattu kierrosaika oli $0{,}60\,\text{s}$ ja voima $5{,}42\,\text{N}$. Voima kasvaa kierrosajan neliön käänteisluvun mukaan: $5{,}42\,\text{N} \cdot \left(\tfrac{0{,}60}{0{,}49}\right)^2 \approx 8{,}1\,\text{N}$, joten tulos on johdonmukainen. Ennuste on ekstrapolointi: $\tfrac{1}{T^2} \approx 4{,}1\,\tfrac{1}{\text{s}^2}$, kun suurin mitattu arvo on $2{,}8\,\tfrac{1}{\text{s}^2}$. Se pätee, jos kärry pysyy samalla etäisyydellä eikä lanka veny. Lisäksi kierrosajan epävarmuus on muutaman prosentin luokkaa, joten turvallinen kierrosaika valitaan selvästi pidemmäksi, esimerkiksi vähintään $0{,}6\,\text{s}$.
+**Järkevyys:** Lyhin mitattu kierrosaika oli $0{,}60\,\text{s}$ ja voima $5{,}42\,\text{N}$. Voima kasvaa kierrosajan neliön käänteisluvun mukaan: $5{,}42\,\text{N} \cdot \left(\tfrac{0{,}60}{0{,}49}\right)^2 \approx 8{,}1\,\text{N}$, joten tulos on johdonmukainen. Ennuste on ekstrapolointi: $\tfrac{1}{T^2} \approx 4{,}1\,\tfrac{1}{\text{s}^2}$, kun suurin mitattu arvo on $2{,}8\,\tfrac{1}{\text{s}^2}$.
+
+Se pätee, jos kärry pysyy samalla etäisyydellä eikä lanka veny. Lisäksi kierrosajan epävarmuus on muutaman prosentin luokkaa, joten turvallinen kierrosaika valitaan selvästi pidemmäksi, esimerkiksi vähintään $0{,}6\,\text{s}$.
 
 ### Yleisiä virheitä
 - Vaaka-akselille piirretään kymmenen kierroksen aika eikä kierrosaikaa, jolloin kulmakerroin on sata kertaa liian suuri.
@@ -307,12 +319,18 @@ $$, $g = 9{,}81\,\text{m/s}^2$
 \gamma\tfrac{M}{r^2} &= \tfrac{6{,}674 \cdot 10^{-11} \cdot 5{,}97 \cdot 10^{24}}{(6{,}771 \cdot 10^{6})^2}\,\text{m/s}^2 \\
 &\approx 8{,}7\,\text{m/s}^2
 \end{aligned}
-$$ eli lähes $90\,\%$ maanpinnan arvosta. Juuri gravitaatio pitää aseman radallaan: se on aseman ainoa voima ja kääntää sen nopeuden suuntaa koko ajan. Ilman gravitaatiota asema jatkaisi suoraan pois radaltaan. Astronautit leijuvat, koska asema ja astronautti putoavat vapaasti yhdessä: kumpikin saa saman kiihtyvyyden kohti Maata. Lattia ei siksi paina astronauttia, tukivoima on nolla, ja vaaka näyttäisi nollaa, vaikka paino vaikuttaa koko ajan.
+$$ eli lähes $90\,\%$ maanpinnan arvosta. Juuri gravitaatio pitää aseman radallaan: se on aseman ainoa voima ja kääntää sen nopeuden suuntaa koko ajan.
+
+Ilman gravitaatiota asema jatkaisi suoraan pois radaltaan. Astronautit leijuvat, koska asema ja astronautti putoavat vapaasti yhdessä: kumpikin saa saman kiihtyvyyden kohti Maata. Lattia ei siksi paina astronauttia, tukivoima on nolla, ja vaaka näyttäisi nollaa, vaikka paino vaikuttaa koko ajan.
 
 ### b)
 **Kysytty:** miksi astronautti tuntee itsensä painavaksi pyörivän renkaan lattialla, mihin suuntaan on ”alas”, ja millä kierrosajalla lattian voima vastaa Maan pintaa
 **Periaate:** Renkaan mukana kulkeva astronautti on tasaisessa ympyräliikkeessä, joten häneen vaikuttavien voimien summa osoittaa renkaan keskipisteeseen: $\Sigma F = m\tfrac{v^2}{r}$. Ratanopeus on $v = \tfrac{2\pi r}{T}$ (luvut *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö* ja *Ympyrärata: jaksonaika ja ratanopeus*).
-**Mallivastaus:** Aseman sisällä astronauttiin vaikuttaa vain lattian tukivoima, kun Maan gravitaatio jätetään huomiotta, koska se vaikuttaa asemaan samalla tavalla. Astronautti kulkee renkaan mukana ympyrää, joten hänen kokonaisvoimansa on osoitettava renkaan keskipisteeseen. Ulkoseinä eli lattia painaa siksi hänen jalkapohjiaan kohti keskipistettä voimalla $N = m\tfrac{v^2}{r}$. Sama painallus jalkapohjissa tuntuu Maan pinnalla painon tukemiselta, joten astronautti tuntee itsensä painavaksi, ja ”alas” on poispäin renkaan keskipisteestä, kohti ulkoseinää. Ulospäin vaikuttavaa keskipakoisvoimaa ei ole: ilman lattiaa astronautti jatkaisi suoraan. Lattia painaa yhtä suurella voimalla kuin Maan pinta, kun $\tfrac{v^2}{r} = g$. Kun $v = \tfrac{2\pi r}{T}$, saadaan $$
+**Mallivastaus:** Aseman sisällä astronauttiin vaikuttaa vain lattian tukivoima, kun Maan gravitaatio jätetään huomiotta, koska se vaikuttaa asemaan samalla tavalla. Astronautti kulkee renkaan mukana ympyrää, joten hänen kokonaisvoimansa on osoitettava renkaan keskipisteeseen.
+
+Ulkoseinä eli lattia painaa siksi hänen jalkapohjiaan kohti keskipistettä voimalla $N = m\tfrac{v^2}{r}$. Sama painallus jalkapohjissa tuntuu Maan pinnalla painon tukemiselta, joten astronautti tuntee itsensä painavaksi, ja ”alas” on poispäin renkaan keskipisteestä, kohti ulkoseinää.
+
+Ulospäin vaikuttavaa keskipakoisvoimaa ei ole: ilman lattiaa astronautti jatkaisi suoraan. Lattia painaa yhtä suurella voimalla kuin Maan pinta, kun $\tfrac{v^2}{r} = g$. Kun $v = \tfrac{2\pi r}{T}$, saadaan $$
 \begin{aligned}
 T &= 2\pi\sqrt{\tfrac{r}{g}} \\
 &= 2\pi\sqrt{\tfrac{110\,\text{m}}{9{,}81\,\text{m/s}^2}} \\
@@ -323,7 +341,11 @@ $$, eli rengas pyörii noin kolme kierrosta minuutissa, ja lattian ratanopeus on
 ### c)
 **Kysytty:** avaimen liike irrottamisen jälkeen aseman ulkopuolelta katsottuna ja astronautin näkökulmasta
 **Periaate:** Kun kappaleeseen ei vaikuta voimia, se jatkaa Newtonin ensimmäisen lain mukaan tasaista suoraviivaista liikettä sillä nopeudella, joka sillä oli. Ympyräradalla nopeus on radan tangentin suuntainen (luku *Ympyrärata: jaksonaika ja ratanopeus*).
-**Mallivastaus:** Kädessä avain kiertää ympyrää astronautin mukana, ja käsi antaa sille keskipisteeseen osoittavan voiman. Kun astronautti päästää irti, avaimeen ei enää vaikuta voimia, koska Maan gravitaatio jätetään huomiotta. Ulkopuolelta katsottuna avain jatkaa siksi suoraan radan tangentin suuntaan sillä nopeudella, joka sillä oli irtoamishetkellä. Lattia kuitenkin kaartaa avaimen radan ali, joten suora rata osuu hetken kuluttua lattiaan. Astronautista näyttää siltä, että avain putoaa ”alas” lattialle aivan kuin Maassa. Avain ei kiihdy ulospäin, eikä mikään voima työnnä sitä: lattia tulee sitä vastaan. Koska käsi on lähempänä keskipistettä kuin lattia, käden ratanopeus on hieman pienempi kuin lattian, joten avain osuu lattiaan hieman taaempana kuin suoraan jalkojen kohdalla, pyörimissuuntaa vastaan.
+**Mallivastaus:** Kädessä avain kiertää ympyrää astronautin mukana, ja käsi antaa sille keskipisteeseen osoittavan voiman. Kun astronautti päästää irti, avaimeen ei enää vaikuta voimia, koska Maan gravitaatio jätetään huomiotta.
+
+Ulkopuolelta katsottuna avain jatkaa siksi suoraan radan tangentin suuntaan sillä nopeudella, joka sillä oli irtoamishetkellä. Lattia kuitenkin kaartaa avaimen radan ali, joten suora rata osuu hetken kuluttua lattiaan. Astronautista näyttää siltä, että avain putoaa ”alas” lattialle aivan kuin Maassa.
+
+Avain ei kiihdy ulospäin, eikä mikään voima työnnä sitä: lattia tulee sitä vastaan. Koska käsi on lähempänä keskipistettä kuin lattia, käden ratanopeus on hieman pienempi kuin lattian, joten avain osuu lattiaan hieman taaempana kuin suoraan jalkojen kohdalla, pyörimissuuntaa vastaan.
 
 ### Yleisiä virheitä
 - a-kohdassa painottomuus selitetään sillä, että gravitaatio puuttuu, tai sillä, että keskipakoisvoima kumoaa sen.
@@ -354,12 +376,20 @@ $$, joten $m_\text{k} = \dfrac{4800\,\text{g} \cdot \text{cm}}{42{,}0\,\text{cm}
 ### b)
 **Kysytty:** raportin johtopäätöksen ja luotettavuuden arviointi ja puutteiden perustelut
 **Periaate:** Momenttiehtoon kuuluvat kaikki voimat, joilla on varsi valitun pisteen suhteen. Systemaattinen virhe siirtää tulosta yhteen suuntaan, satunnainen hajottaa tuloksia molempiin suuntiin (luvut *Kappaleen tasapaino: voimat ja momentit* ja *Mittaaminen ja mittauksen luotettavuus*).
-**Mallivastaus:** Raportin johtopäätös on väärä. Suurin puute on laskumallissa: tukiterä ei ollut mitan painopisteessä, joten mitan oma paino vaikutti varrella $10{,}0\,\text{cm}$ ja kiersi mittaa samaan suuntaan kuin kivi. Kun sen momentti jätettiin pois, kiven momentiksi jäi liikaa, ja tulos oli systemaattisesti noin $26\,\%$ liian suuri. Oikealla momenttiehdolla tulos on $114\,\text{g}$, ja ero vaakaan on vain noin $1\,\%$. Kitka ei selitä eroa: terän kitka tekisi tasapainokohdasta hieman epätarkan kumpaankin suuntaan, mutta ei aiheuttaisi suurta yhdensuuntaista virhettä. Lisäksi raportti ei perustele kitkaa millään havainnolla. Mittaus tehtiin vain kerran, joten satunnaisen virheen suuruutta ei voi arvioida. Epävarmuus puuttuu kokonaan, ja tulos $142{,}857\,\text{g}$ ilmoittaa liikaa numeroita: tasapainokohdan lukeminen noin $\pm 0{,}5\,\text{cm}$ tarkkuudella muuttaa massaa noin $\pm 1{,}5\,\text{g}$.
+**Mallivastaus:** Raportin johtopäätös on väärä. Suurin puute on laskumallissa: tukiterä ei ollut mitan painopisteessä, joten mitan oma paino vaikutti varrella $10{,}0\,\text{cm}$ ja kiersi mittaa samaan suuntaan kuin kivi. Kun sen momentti jätettiin pois, kiven momentiksi jäi liikaa, ja tulos oli systemaattisesti noin $26\,\%$ liian suuri.
+
+Oikealla momenttiehdolla tulos on $114\,\text{g}$, ja ero vaakaan on vain noin $1\,\%$. Kitka ei selitä eroa: terän kitka tekisi tasapainokohdasta hieman epätarkan kumpaankin suuntaan, mutta ei aiheuttaisi suurta yhdensuuntaista virhettä.
+
+Lisäksi raportti ei perustele kitkaa millään havainnolla. Mittaus tehtiin vain kerran, joten satunnaisen virheen suuruutta ei voi arvioida. Epävarmuus puuttuu kokonaan, ja tulos $142{,}857\,\text{g}$ ilmoittaa liikaa numeroita: tasapainokohdan lukeminen noin $\pm 0{,}5\,\text{cm}$ tarkkuudella muuttaa massaa noin $\pm 1{,}5\,\text{g}$.
 
 ### c)
 **Kysytty:** parannetun kokeen suunnitelma samoilla välineillä
 **Periaate:** Luotettava tulos saadaan, kun malli sisältää kaikki voimat, mittauksia on useita ja tulos määritetään kuvaajasta sovituksella. Suure, joka pidetään vakiona, kirjataan (luvut *Kappaleen tasapaino: voimat ja momentit* ja *Oma kokeellinen tutkimus: suunnittelu, toteutus ja raportointi*).
-**Mallivastaus:** Yksinkertaisin parannus on asettaa tukiterä mitan painopisteeseen kohtaan $50{,}0\,\text{cm}$, jolloin mitan painon varsi on nolla. Ensin tarkistetaan, että tyhjä mitta pysyy vaakasuorassa. Tukipiste ja kiven lanka pidetään koko kokeen ajan samoina. Punnus ripustetaan vuorotellen esimerkiksi viiteen eri etäisyyteen terästä, ja joka kerta etsitään kiven tasapainokohta ja luetaan sen etäisyys $d_\text{k}$ terästä. Jokainen tasapaino toistetaan kolme kertaa, ja tuloksista lasketaan keskiarvo. Momenttiehdosta $m_\text{p} d_\text{p} = m_\text{k} d_\text{k}$, joten punnuksen momentin $m_\text{p} d_\text{p}$ kuvaaja kiven varren $d_\text{k}$ funktiona on origon kautta kulkeva suora, jonka kulmakerroin on kiven massa. Jos terä jätetään muualle kuin painopisteeseen, suoraan tulee vakiotermi, joka on mitan painon momentti, ja kulmakerroin on silti kiven massa. Epävarmuus arvioidaan pisteiden hajonnasta tai jyrkimmän ja loivimman suoran avulla, ja tulosta verrataan vaa'an lukemaan epävarmuuksineen.
+**Mallivastaus:** Yksinkertaisin parannus on asettaa tukiterä mitan painopisteeseen kohtaan $50{,}0\,\text{cm}$, jolloin mitan painon varsi on nolla. Ensin tarkistetaan, että tyhjä mitta pysyy vaakasuorassa. Tukipiste ja kiven lanka pidetään koko kokeen ajan samoina.
+
+Punnus ripustetaan vuorotellen esimerkiksi viiteen eri etäisyyteen terästä, ja joka kerta etsitään kiven tasapainokohta ja luetaan sen etäisyys $d_\text{k}$ terästä. Jokainen tasapaino toistetaan kolme kertaa, ja tuloksista lasketaan keskiarvo. Momenttiehdosta $m_\text{p} d_\text{p} = m_\text{k} d_\text{k}$, joten punnuksen momentin $m_\text{p} d_\text{p}$ kuvaaja kiven varren $d_\text{k}$ funktiona on origon kautta kulkeva suora, jonka kulmakerroin on kiven massa.
+
+Jos terä jätetään muualle kuin painopisteeseen, suoraan tulee vakiotermi, joka on mitan painon momentti, ja kulmakerroin on silti kiven massa. Epävarmuus arvioidaan pisteiden hajonnasta tai jyrkimmän ja loivimman suoran avulla, ja tulosta verrataan vaa'an lukemaan epävarmuuksineen.
 
 ### Yleisiä virheitä
 - a-kohdassa mitan paino otetaan mukaan, mutta sen varreksi laitetaan $50{,}0\,\text{cm}$ eli etäisyys mitan päästä eikä terästä.
@@ -418,7 +448,9 @@ $$
 ### d)
 **Kysytty:** miksi silmukka, jonka kaarevuussäde on huipulla pieni ja alaosassa suuri, on matkustajalle parempi
 **Periaate:** Istuimen voima riippuu normaalikiihtyvyydestä $\tfrac{v^2}{r}$: pohjalla $N = m\left(g + \tfrac{v^2}{r}\right)$ ja huipulla $N = m\left(\tfrac{v^2}{r} - g\right)$ (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*).
-**Mallivastaus:** Ympyrämallissa matkustaja tuntee pohjalla yli kuusinkertaisen voiman painoonsa nähden, mutta huipulla vain $0{,}28$-kertaisen. Alaosassa nopeus on suurin, joten suuri kaarevuussäde pienentää normaalikiihtyvyyttä $\tfrac{v^2}{r}$ ja istuimen voimaa juuri siellä, missä se olisi muuten rajuin. Huipulla nopeus on pienin, ja ehto $v^2 \ge gr$ määrää, pysyykö matkustaja istuimessa. Pieni kaarevuussäde huipulla täyttää ehdon pienemmälläkin nopeudella, joten silmukasta voidaan tehdä korkeampi tai lähtömäestä matalampi. Muoto tasoittaa siis istuimen voimaa silmukan eri kohdissa: pohjalla se on pienempi ja huipulla varmasti positiivinen.
+**Mallivastaus:** Ympyrämallissa matkustaja tuntee pohjalla yli kuusinkertaisen voiman painoonsa nähden, mutta huipulla vain $0{,}28$-kertaisen. Alaosassa nopeus on suurin, joten suuri kaarevuussäde pienentää normaalikiihtyvyyttä $\tfrac{v^2}{r}$ ja istuimen voimaa juuri siellä, missä se olisi muuten rajuin.
+
+Huipulla nopeus on pienin, ja ehto $v^2 \ge gr$ määrää, pysyykö matkustaja istuimessa. Pieni kaarevuussäde huipulla täyttää ehdon pienemmälläkin nopeudella, joten silmukasta voidaan tehdä korkeampi tai lähtömäestä matalampi. Muoto tasoittaa siis istuimen voimaa silmukan eri kohdissa: pohjalla se on pienempi ja huipulla varmasti positiivinen.
 
 ### Yleisiä virheitä
 - a-kohdassa häviö vähennetään nopeudesta ($0{,}88 \cdot \sqrt{2gh}$) eikä energiasta.
@@ -439,7 +471,9 @@ $$, sama tulos.
 ### a)
 **Annettu:** aineistosta (NASA, tarkistettu 16.11.2026) aseman lentokorkeus $370$–$460\,\text{km}$; mallissa radan korkeus $h = 400\,\text{km}$, kiertoaika $T = 92\,\text{min}$ ja Maan säde $R = 6371\,\text{km}$
 **Kysytty:** sopiiko mallin korkeus aineistoon; ratanopeus $v$
-**Periaate:** Aineiston mukaan asema kiertää Maata $370$–$460\,\text{km}$:n korkeudella. Mallin $400\,\text{km}$ on tällä välillä, joten malli sopii aineistoon. Väli on se, jolla aseman korkeus pidetään ajan mittaan, ei yhden kierroksen aikainen vaihtelu. Välin leveys $90\,\text{km}$ on vain noin $1{,}3\,\%$ radan säteestä, joten ympyrärata on hyvä malli. Tasaisessa ympyräliikkeessä asema kulkee kiertoajassa $T$ radan kehän pituuden $2\pi r$ (luku *Ympyrärata: jaksonaika ja ratanopeus*). Radan säde mitataan Maan keskipisteestä, joten $r = R + h$.
+**Periaate:** Aineiston mukaan asema kiertää Maata $370$–$460\,\text{km}$:n korkeudella. Mallin $400\,\text{km}$ on tällä välillä, joten malli sopii aineistoon. Väli on se, jolla aseman korkeus pidetään ajan mittaan, ei yhden kierroksen aikainen vaihtelu.
+
+Välin leveys $90\,\text{km}$ on vain noin $1{,}3\,\%$ radan säteestä, joten ympyrärata on hyvä malli. Tasaisessa ympyräliikkeessä asema kulkee kiertoajassa $T$ radan kehän pituuden $2\pi r$ (luku *Ympyrärata: jaksonaika ja ratanopeus*). Radan säde mitataan Maan keskipisteestä, joten $r = R + h$.
 **Kaava:** $v = \dfrac{2\pi r}{T} = \dfrac{2\pi(R + h)}{T}$
 **Muunnokset:** $r = 6371\,\text{km} + 400\,\text{km} = 6771\,\text{km} = 6{,}771 \cdot 10^{6}\,\text{m}$ ja $T = 92\,\text{min} = 92 \cdot 60\,\text{s} = 5520\,\text{s}$
 **Sijoitus:** $$
@@ -469,7 +503,11 @@ $$ ja $\dfrac{a_\text{n}}{g} = \dfrac{8{,}773\,\text{m/s}^2}{9{,}81\,\text{m/s}^
 ### c)
 **Kysytty:** mikä voima antaa astronautille normaalikiihtyvyyden ja miksi hän on painoton, vaikka gravitaatio vaikuttaa
 **Periaate:** Newtonin 2. lain mukaan ympyräradalla $\Sigma F = ma_\text{n}$, ja kokonaisvoima osoittaa radan keskipisteeseen (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*). Painottomuus on vapaata putoamista: kappaleeseen vaikuttaa vain gravitaatio, ja tukivoima on nolla (luku *Satelliitit ja planeetat ympyräradalla*).
-**Mallivastaus:** Astronautti kiertää Maata samalla radalla ja samalla nopeudella kuin asema, joten hänellä on sama normaalikiihtyvyys $a_\text{n} \approx 8{,}8\,\text{m/s}^2$ kohti Maan keskipistettä. Häneen ei koske mikään, joten ainoa häneen vaikuttava voima on Maan gravitaatiovoima $\overline{G}$. Se antaa normaalikiihtyvyyden: $G = ma_\text{n}$. Jos lattia tukisi astronauttia voimalla $\overline{N}$, liikeyhtälö olisi $G - N = ma_\text{n}$. Gravitaatio antaa kuitenkin yksin juuri tämän kiihtyvyyden sekä astronautille että asemalle, koska gravitaation antama kiihtyvyys ei riipu massasta. Siksi $N = 0$: asema ja astronautti putoavat vapaasti yhdessä, eikä lattia paina astronauttia. Ihminen tuntee painonsa tukivoimana, joten ilman tukivoimaa hän kokee olevansa painoton. Gravitaatio ei ole kadonnut: b-kohdan mukaan se on radalla lähes yhtä voimakas kuin maanpinnalla. Painottomuus tarkoittaa siis tukivoiman puuttumista, ei gravitaation puuttumista.
+**Mallivastaus:** Astronautti kiertää Maata samalla radalla ja samalla nopeudella kuin asema, joten hänellä on sama normaalikiihtyvyys $a_\text{n} \approx 8{,}8\,\text{m/s}^2$ kohti Maan keskipistettä. Häneen ei koske mikään, joten ainoa häneen vaikuttava voima on Maan gravitaatiovoima $\overline{G}$. Se antaa normaalikiihtyvyyden: $G = ma_\text{n}$.
+
+Jos lattia tukisi astronauttia voimalla $\overline{N}$, liikeyhtälö olisi $G - N = ma_\text{n}$. Gravitaatio antaa kuitenkin yksin juuri tämän kiihtyvyyden sekä astronautille että asemalle, koska gravitaation antama kiihtyvyys ei riipu massasta. Siksi $N = 0$: asema ja astronautti putoavat vapaasti yhdessä, eikä lattia paina astronauttia.
+
+Ihminen tuntee painonsa tukivoimana, joten ilman tukivoimaa hän kokee olevansa painoton. Gravitaatio ei ole kadonnut: b-kohdan mukaan se on radalla lähes yhtä voimakas kuin maanpinnalla. Painottomuus tarkoittaa siis tukivoiman puuttumista, ei gravitaation puuttumista.
 
 ### d)
 **Annettu:** aineistosta (NASA, tarkistettu 16.11.2026) aurinkopaneelien vuodessa tuottama sähköenergia $E = 735\,000\,\text{kWh}$; aika $t = 365\,\text{d}$
@@ -489,7 +527,11 @@ $$
 ### e)
 **Kysytty:** miksi asema tarvitsee akkuja ja miksi keskimääräinen teho ei yksin kerro, riittääkö sähkö joka hetki
 **Periaate:** Aurinkopaneeli tuottaa sähköä vain, kun siihen osuu auringonvaloa. Keskimääräinen teho $P = \tfrac{E}{t}$ ei kerro, miten teho vaihtelee ajan $t$ kuluessa (luku *Sähköenergia kotona*).
-**Mallivastaus:** Asema kiertää Maan $92\,\text{min}$:ssa eli lähes $16$ kertaa vuorokaudessa. Lähes joka kierroksella se kulkee Maan varjon läpi, koska Maa jää Auringon ja aseman väliin. Matalalla radalla varjo peittää suuren osan kierroksesta. Kun Aurinko on ratatasossa, asema on varjon reunalla, kun sen suunta Maan keskipisteestä katsottuna poikkeaa Auringosta poispäin osoittavasta suunnasta kulman $\theta$, jolle $\sin\theta = \tfrac{R}{r}$, joten $\theta \approx 70{,}2^\circ$. Varjossa on silloin osuus $\tfrac{2\theta}{360^\circ} \approx 39\,\%$ kierroksesta eli noin $36\,\text{min}$. Varjossa paneelit eivät tuota sähköä, mutta aseman laitteet tarvitsevat sitä koko ajan. Siksi akut ladataan auringonvalossa, ja varjossa ne syöttävät laitteita. d-kohdan $84\,\text{kW}$ on keskiarvo, joka peittää tämän vaihtelun: tuotanto on varjossa nolla ja valossa keskiarvoa suurempi. Jos asema on varjossa $39\,\%$ ajasta, paneelien on tuotettava valossa keskimäärin $\tfrac{84\,\text{kW}}{0{,}61} \approx 140\,\text{kW}$. Ilman energian varastointia sähkö katkeaisi noin $92\,\text{min}$:n välein.
+**Mallivastaus:** Asema kiertää Maan $92\,\text{min}$:ssa eli lähes $16$ kertaa vuorokaudessa. Lähes joka kierroksella se kulkee Maan varjon läpi, koska Maa jää Auringon ja aseman väliin. Matalalla radalla varjo peittää suuren osan kierroksesta.
+
+Kun Aurinko on ratatasossa, asema on varjon reunalla, kun sen suunta Maan keskipisteestä katsottuna poikkeaa Auringosta poispäin osoittavasta suunnasta kulman $\theta$, jolle $\sin\theta = \tfrac{R}{r}$, joten $\theta \approx 70{,}2^\circ$. Varjossa on silloin osuus $\tfrac{2\theta}{360^\circ} \approx 39\,\%$ kierroksesta eli noin $36\,\text{min}$. Varjossa paneelit eivät tuota sähköä, mutta aseman laitteet tarvitsevat sitä koko ajan.
+
+Siksi akut ladataan auringonvalossa, ja varjossa ne syöttävät laitteita. d-kohdan $84\,\text{kW}$ on keskiarvo, joka peittää tämän vaihtelun: tuotanto on varjossa nolla ja valossa keskiarvoa suurempi. Jos asema on varjossa $39\,\%$ ajasta, paneelien on tuotettava valossa keskimäärin $\tfrac{84\,\text{kW}}{0{,}61} \approx 140\,\text{kW}$. Ilman energian varastointia sähkö katkeaisi noin $92\,\text{min}$:n välein.
 
 ### Yleisiä virheitä
 - a-kohdassa radan säteeksi otetaan korkeus $400\,\text{km}$ eikä $R + h$, tai kiertoaikaa ei muunneta sekunneiksi.
@@ -531,7 +573,9 @@ $$. Säde on uskottava maantien kaarteelle.
 ### b)
 **Annettu:** auton massa $m = 1200\,\text{kg}$, nopeus $v = 15\,\text{m/s}$ ja a-kohdan kuvaajan piste $a_\text{n} = 3{,}0\,\text{m/s}^2$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** kitkavoima $F$
-**Periaate:** Valitaan kappaleeksi auto. Voimakuviossa siihen vaikuttavat paino $\overline{G}$ alas, maan tukivoima $\overline{N}$ ylös ja renkaiden lepokitka $\overline{F}$ vaakasuorassa kohti kaarteen keskipistettä. Kitka on lepokitkaa, koska renkaat eivät liu'u tiellä. Keskipakoisvoimaa ei ole, koska mikään kappale ei vaikuta autoon sellaisella voimalla. Valitaan akseli $x$ kohti keskipistettä ja akseli $y$ ylös. Pystysuunnassa auto ei kiihdy, joten $N - G = 0$. Vaakasuunnassa kiihtyvyys on normaalikiihtyvyys: $\Sigma F_x = ma_\text{n}$ (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*).
+**Periaate:** Valitaan kappaleeksi auto. Voimakuviossa siihen vaikuttavat paino $\overline{G}$ alas, maan tukivoima $\overline{N}$ ylös ja renkaiden lepokitka $\overline{F}$ vaakasuorassa kohti kaarteen keskipistettä. Kitka on lepokitkaa, koska renkaat eivät liu'u tiellä.
+
+Keskipakoisvoimaa ei ole, koska mikään kappale ei vaikuta autoon sellaisella voimalla. Valitaan akseli $x$ kohti keskipistettä ja akseli $y$ ylös. Pystysuunnassa auto ei kiihdy, joten $N - G = 0$. Vaakasuunnassa kiihtyvyys on normaalikiihtyvyys: $\Sigma F_x = ma_\text{n}$ (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*).
 **Kaava:** $\Sigma F_x = F = ma_\text{n}$
 **Muunnokset:** Lopuksi $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** $$
@@ -605,7 +649,9 @@ $$ja suurin mahdollinen kitka on $$
 \mu_\text{s} mg &= 0{,}50 \cdot 1500\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
 &\approx 7400\,\text{N}
 \end{aligned}
-$$. Raskaampi auto tarvitsee siis suuremman kitkavoiman, mutta renkaat antavat sitä yhtä paljon enemmän: molemmat ovat verrannollisia massaan, ja tarvittava kitka on edelleen noin $61\,\%$ suurimmasta. Kuorma ei siis tee kaarteesta liukkaampaa.
+$$.
+
+Raskaampi auto tarvitsee siis suuremman kitkavoiman, mutta renkaat antavat sitä yhtä paljon enemmän: molemmat ovat verrannollisia massaan, ja tarvittava kitka on edelleen noin $61\,\%$ suurimmasta. Kuorma ei siis tee kaarteesta liukkaampaa.
 
 ### Yleisiä virheitä
 - a-kohdassa säteeksi otetaan $a_\text{n} : v^2$ eli luvut jaetaan väärin päin, tai nopeus unohdetaan neliöstä.
@@ -633,7 +679,9 @@ $$ nopeudella noin $19\,\text{m/s}$.
 ### a)
 **Annettu:** kyltin massa $m_\text{s} = 18\,\text{kg}$, tangon massa $m_\text{t} = 3{,}0\,\text{kg}$, tangon pituus $L = 1{,}20\,\text{m}$ ja vaijerin ja tangon välinen kulma $\theta = 30{,}0^\circ$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** vaijerin voima $T$
-**Periaate:** Valitaan kappaleeksi tanko ja kyltti. Voimakuviossa kyltin paino $\overline{G}_\text{s}$ osoittaa tangon päästä alas, tangon paino $\overline{G}_\text{t}$ tangon keskeltä alas, vaijerin voima $\overline{T}$ tangon päästä vinosti ylös seinää kohti ja saranan voima $\overline{F}_\text{s}$ saranasta. Kappale on levossa, joten se on tasapainossa: voimien summa ja momenttien summa ovat nollia (luku *Kappaleen tasapaino: voimat ja momentit*). Momenttipisteeksi valitaan sarana, koska sen suhteen tuntemattoman saranan voiman varsi on nolla. Tangon paino vaikuttaa painopisteestä, joka on tasa-aineisen tangon keskellä etäisyydellä $\tfrac{L}{2}$. Vaijerin voimasta tankoa vastaan kohtisuora komponentti $T\sin\theta$ kiertää tankoa varrella $L$. Painot kiertävät vastakkaiseen suuntaan.
+**Periaate:** Valitaan kappaleeksi tanko ja kyltti. Voimakuviossa kyltin paino $\overline{G}_\text{s}$ osoittaa tangon päästä alas, tangon paino $\overline{G}_\text{t}$ tangon keskeltä alas, vaijerin voima $\overline{T}$ tangon päästä vinosti ylös seinää kohti ja saranan voima $\overline{F}_\text{s}$ saranasta. Kappale on levossa, joten se on tasapainossa: voimien summa ja momenttien summa ovat nollia (luku *Kappaleen tasapaino: voimat ja momentit*).
+
+Momenttipisteeksi valitaan sarana, koska sen suhteen tuntemattoman saranan voiman varsi on nolla. Tangon paino vaikuttaa painopisteestä, joka on tasa-aineisen tangon keskellä etäisyydellä $\tfrac{L}{2}$. Vaijerin voimasta tankoa vastaan kohtisuora komponentti $T\sin\theta$ kiertää tankoa varrella $L$. Painot kiertävät vastakkaiseen suuntaan.
 **Kuvaajan lukeminen:** Kuvasta luetaan tangon pituus $L = 1{,}20\,\text{m}$ ja vaijerin ja tangon välinen kulma $\theta = 30{,}0^\circ$.
 **Kaava:** Momenttien summa saranan suhteen on nolla: $$
 \begin{aligned}

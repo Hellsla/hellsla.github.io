@@ -22,7 +22,7 @@
 **Given:** primary voltage $U_1 = 20\,\text{kV}$, secondary voltage $U_2 = 400\,\text{V}$, secondary current $I_2 = 250\,\text{A}$, ideal transformer
 **Find:** the primary current $I_1$ in amperes
 **Principle:** An ideal transformer does not consume energy, so power is conserved, $U_1 I_1 = U_2 I_2$. Therefore the currents are in inverse proportion to the voltages.
-**Formula:** $\dfrac{U_1}{U_2} = \dfrac{I_2}{I_1}$, so $I_1 = \dfrac{I_2 U_2}{U_1}$
+**Formula:** $$\begin{aligned} P_1 &= P_2 \\ U_1 I_1 &= U_2 I_2 \\ I_1 &= \frac{U_2 I_2}{U_1} \end{aligned}$$
 **Conversions:** $U_1 = 20\,\text{kV} = 20 \cdot 1000\,\text{V} = 20\,000\,\text{V}$, so that the voltages are in the same unit.
 **Substitution:** $I_1 = \dfrac{250\,\text{A} \cdot 400\,\text{V}}{20\,000\,\text{V}} = 5.0\,\text{A}$
 **Answer:** $5.0\,\text{A}$, two significant figures like the voltage $20\,\text{kV}$.
@@ -54,7 +54,7 @@ Each of the three phase conductors carries power at the phase voltage $U : \sqrt
 **Given:** power $P = 50\,\text{MW}$, transmission voltage $U = 110\,\text{kV}$, resistance of the conductors $R = 4.0\,\Omega$
 **Find:** the power $P_\text{h}$ that becomes internal energy in the line, in kilowatts
 **Principle:** The task uses the simplified two-wire model. The line is heated by its current, and the power loss is $P_\text{h} = R I^2$. The current is obtained from the power and the transmission voltage, because $P = U I$. The transmission voltage is not across the resistance of the line, so the loss is not calculated with the expression $U^2 : R$.
-**Formula:** $P = U I$, so $I = \dfrac{P}{U}$, and $P_\text{h} = R I^2$
+**Formula:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ &= \frac{R P^2}{U^2} \end{aligned}$$
 **Conversions:** $P = 50\,\text{MW} = 50 \cdot 10^{6}\,\text{W}$ and $U = 110\,\text{kV} = 110 \cdot 10^{3}\,\text{V}$. Finally $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** $I = \dfrac{50 \cdot 10^{6}\,\text{W}}{110 \cdot 10^{3}\,\text{V}} = 454.5\,\text{A}$ and $P_\text{h} = 4.0\,\Omega \cdot (454.5\,\text{A})^2 = 826\,400\,\text{W} = 826.4\,\text{kW}$
 **Answer:** $8.3 \cdot 10^{2}\,\text{kW}$ or about $830\,\text{kW}$, two significant figures like the power $50\,\text{MW}$ and the resistance $4.0\,\Omega$.
@@ -74,7 +74,7 @@ Each of the three phase conductors carries power at the phase voltage $U : \sqrt
 **Given:** power $P = 100\,\text{MW}$, transmission voltage $U = 220\,\text{kV}$, resistance of the conductors $R = 4.8\,\Omega$
 **Find:** the share of the power loss $P_\text{h} : P$ as a percentage
 **Principle:** The task uses the simplified two-wire model. The line is heated by the current, and the power loss is $P_\text{h} = R I^2$. The current is obtained from the transmitted power and the transmission voltage, $P = U I$. Finally the power loss is compared with the transmitted power.
-**Formula:** $I = \dfrac{P}{U}$, $P_\text{h} = R I^2$ and the share $\dfrac{P_\text{h}}{P}$
+**Formula:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ &= \frac{R P^2}{U^2} \\ \frac{P_\text{h}}{P} &= \frac{R P}{U^2} \end{aligned}$$
 **Conversions:** $P = 100\,\text{MW} = 100 \cdot 10^{6}\,\text{W}$ and $U = 220\,\text{kV} = 220 \cdot 10^{3}\,\text{V}$.
 **Substitution:** $I = \dfrac{100 \cdot 10^{6}\,\text{W}}{220 \cdot 10^{3}\,\text{V}} = 454.5\,\text{A}$, $P_\text{h} = 4.8\,\Omega \cdot (454.5\,\text{A})^2 = 0.9917 \cdot 10^{6}\,\text{W}$ and $\dfrac{P_\text{h}}{P} = \dfrac{0.9917 \cdot 10^{6}\,\text{W}}{100 \cdot 10^{6}\,\text{W}} = 0.009917 = 0.9917\,\%$
 **Answer:** $0.99\,\%$, two significant figures like the resistance $4.8\,\Omega$.
@@ -102,7 +102,7 @@ $$, which fits between the measurement points $3.1\,\text{W}$ ($2.0\,\text{A}$) 
 **Given:** power of the generator $P = 150\,\text{MW}$ and voltage $20\,\text{kV}$, an ideal transformer raises the voltage to $U = 400\,\text{kV}$, resistance of the conductors $R = 8.0\,\Omega$
 **Find:** the share of the power loss $P_\text{h} : P$ as a percentage
 **Principle:** The task uses the simplified two-wire model. An ideal transformer does not consume energy, so the whole power $150\,\text{MW}$ goes into the line, but at the voltage $400\,\text{kV}$. The current of the line is determined by the transmission voltage, not by the voltage of the generator. This current heats the line at the rate $P_\text{h} = R I^2$.
-**Formula:** $I = \dfrac{P}{U}$, $P_\text{h} = R I^2$ and the share $\dfrac{P_\text{h}}{P}$
+**Formula:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ &= \frac{R P^2}{U^2} \\ \frac{P_\text{h}}{P} &= \frac{R P}{U^2} \end{aligned}$$
 **Conversions:** $P = 150\,\text{MW} = 150 \cdot 10^{6}\,\text{W}$ and $U = 400\,\text{kV} = 400 \cdot 10^{3}\,\text{V}$.
 **Substitution:** $I = \dfrac{150 \cdot 10^{6}\,\text{W}}{400 \cdot 10^{3}\,\text{V}} = 375\,\text{A}$, $P_\text{h} = 8.0\,\Omega \cdot (375\,\text{A})^2 = 1.125 \cdot 10^{6}\,\text{W}$ and $\dfrac{P_\text{h}}{P} = \dfrac{1.125 \cdot 10^{6}\,\text{W}}{150 \cdot 10^{6}\,\text{W}} = 0.0075 = 0.75\,\%$
 **Answer:** $0.75\,\%$, two significant figures like the resistance $8.0\,\Omega$.
@@ -112,7 +112,7 @@ $$, which fits between the measurement points $3.1\,\text{W}$ ($2.0\,\text{A}$) 
 **Given:** transmission voltage $U = 400\,\text{kV}$, transmitted power $P = 400\,\text{MW}$, loss at most $1.0\,\%$, that is $P_\text{h} \le 0.010\,P$
 **Find:** the greatest permitted resistance $R$ of the conductors in ohms
 **Principle:** The task uses the simplified two-wire model. The power loss is $P_\text{h} = R I^2$, and the current is $I = P : U$. Combining these gives $P_\text{h} = R P^2 : U^2$. When the loss may be at most a given share of the power, the resistance may be at most the value for which the loss is exactly this share.
-**Formula:** $\dfrac{R P^2}{U^2} = 0.010\,P$, so $R = \dfrac{0.010\,U^2}{P}$
+**Formula:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ &= \frac{R P^2}{U^2} \\ P_\text{h} &= 0.010\,P \\ \frac{R P^2}{U^2} &= 0.010\,P \\ R &= \frac{0.010\,U^2}{P} \end{aligned}$$
 **Conversions:** $U = 400\,\text{kV} = 400 \cdot 10^{3}\,\text{V}$ and $P = 400\,\text{MW} = 400 \cdot 10^{6}\,\text{W}$.
 **Substitution:** $R = \dfrac{0.010 \cdot (400 \cdot 10^{3}\,\text{V})^2}{400 \cdot 10^{6}\,\text{W}} = \dfrac{1.6 \cdot 10^{9}\,\text{V}^2}{4.0 \cdot 10^{8}\,\text{W}} = 4.0\,\Omega$
 **Answer:** at most $4.0\,\Omega$, two significant figures like the share $1.0\,\%$.
@@ -122,7 +122,7 @@ $$, which fits between the measurement points $3.1\,\text{W}$ ($2.0\,\text{A}$) 
 **Given:** original transmission voltage $U_1 = 220\,\text{kV}$, new transmission voltage $U_2 = 400\,\text{kV}$, the resistance $R$ and the share of the loss stay the same
 **Find:** how many times the power $P_2 : P_1$ can be transmitted
 **Principle:** The task uses the simplified two-wire model. The power loss is $P_\text{h} = R I^2$ and the current $I = P : U$, so the share of the loss is $P_\text{h} : P = R P : U^2$. When $R$ and the share stay the same, the power $P$ is proportional to the square of the voltage $U^2$.
-**Formula:** $\dfrac{R P_1}{U_1^2} = \dfrac{R P_2}{U_2^2}$, so $\dfrac{P_2}{P_1} = \dfrac{U_2^2}{U_1^2}$
+**Formula:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ \frac{P_\text{h}}{P} &= \frac{R P}{U^2} \\ \frac{R P_1}{U_1^2} &= \frac{R P_2}{U_2^2} \\ \frac{P_2}{P_1} &= \frac{U_2^2}{U_1^2} \end{aligned}$$
 **Conversions:** Not needed: in the ratio of the voltages the kilovolts cancel.
 **Substitution:** $\dfrac{P_2}{P_1} = \dfrac{(400\,\text{kV})^2}{(220\,\text{kV})^2} = (1.818)^2 = 3.306$
 **Answer:** about $3.3$ times the power, two significant figures like the voltage $220\,\text{kV}$.
@@ -141,7 +141,7 @@ Alternating current changes the flux continuously, which is why a transformer wo
 **Given:** the power loss at first $P_\text{h,1} = 840\,\text{kW}$, the transmission voltage is doubled, $U_2 = 2U_1$, the power $P$ and the resistance $R$ stay the same
 **Find:** the new power loss $P_\text{h,2}$ in kilowatts
 **Principle:** The current of the line is $I = P : U$, and the power loss is $P_\text{h} = R I^2 = R P^2 : U^2$. When $P$ and $R$ stay the same, the power loss is inversely proportional to the square of the voltage. Doubling the voltage halves the current, and the loss depends on the square of the current.
-**Formula:** $P_\text{h} = \dfrac{R P^2}{U^2}$, so $\dfrac{P_\text{h,2}}{P_\text{h,1}} = \dfrac{U_1^2}{U_2^2}$ and $P_\text{h,2} = P_\text{h,1} \cdot \dfrac{U_1^2}{U_2^2}$
+**Formula:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ &= \frac{R P^2}{U^2} \\ P_\text{h,1} &= \frac{R P^2}{U_1^2} \\ P_\text{h,2} &= \frac{R P^2}{U_2^2} \\ \frac{P_\text{h,2}}{P_\text{h,1}} &= \frac{U_1^2}{U_2^2} \\ P_\text{h,2} &= P_\text{h,1} \cdot \frac{U_1^2}{U_2^2} \end{aligned}$$
 **Conversions:** Not needed: the power loss is in kilowatts, and the ratio of the voltages has no unit.
 **Substitution:** $P_\text{h,2} = 840\,\text{kW} \cdot \dfrac{U_1^2}{(2U_1)^2} = 840\,\text{kW} \cdot \dfrac{1}{4} = 210\,\text{kW}$
 **Answer:** $210\,\text{kW}$, two significant figures like the power loss $840\,\text{kW}$.
@@ -198,7 +198,7 @@ The student's result $4600\,\text{W}$ is ten times the primary power $460\,\text
 **Principle:** The task uses the simplified two-wire model. The current of the line is determined by the transmission voltage, $I = P : U$, and the power that becomes internal energy in the conductors is $P_\text{h} = R I^2$. The same power flows with a smaller current at a higher voltage, so the loss is smaller.
 
 Because the power is constant, the lost energy is the power loss multiplied by the time, $E = P_\text{h} t$, and the saving is the difference of the energies multiplied by the price.
-**Formula:** $R = 0.040\,\tfrac{\Omega}{\text{km}} \cdot s$, $I = \dfrac{P}{U}$, $P_\text{h} = R I^2$, $E = P_\text{h} t$ and
+**Formula:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ &= \frac{R P^2}{U^2} \\ E &= P_\text{h} t \end{aligned}$$
 
 $$\text{saving} = (E_\text{A} - E_\text{B}) \cdot \text{price}$$
 **Conversions:** $P = 200\,\text{MW} = 200 \cdot 10^{6}\,\text{W}$, $U_\text{A} = 220 \cdot 10^{3}\,\text{V}$ and $U_\text{B} = 400 \cdot 10^{3}\,\text{V}$. The power loss is finally converted to megawatts, $1\,\text{MW} = 10^{6}\,\text{W}$.
@@ -248,7 +248,7 @@ Reasonableness: the transformer reduces the current to about $29$ times smaller 
 **Find:** the total resistance $R$ of the conductors in ohms
 **Principle:** The task uses the simplified two-wire model. The line is heated by the current, and the power loss is $P_\text{h} = R I^2$. The current follows from the transmitted power and the transmission voltage, $P = U I$. When one point is read from the curve, the share gives the power loss and the power loss gives the resistance.
 **Reading the graph:** The curve passes through the grid point ($200\,\text{kV}$; $3.0\,\%$): at the voltage $200\,\text{kV}$ the power loss is $3.0\,\%$ of the transmitted power.
-**Formula:** $I = \dfrac{P}{U}$ and $P_\text{h} = R I^2$, so $R = \dfrac{P_\text{h}}{I^2}$, where $P_\text{h} = 0.030\,P$
+**Formula:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ P_\text{h} &= 0.030\,P \\ R &= \frac{P_\text{h}}{I^2} \end{aligned}$$
 **Conversions:** $200\,\text{MW} = 200 \cdot 10^{6}\,\text{W}$, $200\,\text{kV} = 200 \cdot 10^{3}\,\text{V}$ and $3.0\,\% = 0.030$.
 **Substitution:** $P_\text{h} = 0.030 \cdot 200 \cdot 10^{6}\,\text{W} = 6.0 \cdot 10^{6}\,\text{W}$
 
@@ -266,9 +266,7 @@ $R = \dfrac{6.0 \cdot 10^{6}\,\text{W}}{(1000\,\text{A})^2} = 6.0\,\Omega$
 In each of the three phase conductors the current $I$ passes through the resistance $R$, and the power $RI^2$ becomes internal energy in the conductor. In three conductors the power loss is $P_\text{h} = 3RI^2$ in all.
 
 The transmission voltage is not the voltage across the resistance of a conductor, so the expression $U^2 : R$ cannot be used.
-**Formula:** $P = \sqrt{3}\,UI\cos\varphi$, from which $I = \dfrac{P}{\sqrt{3}\,U\cos\varphi}$. When the current is substituted into the equation $P_\text{h} = 3RI^2$, the result is
-
-$$\begin{aligned} P_\text{h} &= 3R \cdot \dfrac{P^2}{3U^2\cos^2\varphi} \\ &= \dfrac{RP^2}{U^2\cos^2\varphi} \end{aligned}$$
+**Formula:** $$\begin{aligned} P &= \sqrt{3}\,U I \cos\varphi \\ I &= \frac{P}{\sqrt{3}\,U\cos\varphi} \\ P_\text{h} &= 3 R I^2 \\ &= 3R \cdot \frac{P^2}{3U^2\cos^2\varphi} \\ &= \frac{R P^2}{U^2\cos^2\varphi} \end{aligned}$$
 
 When $\cos\varphi = 1$, $I = \dfrac{P}{\sqrt{3}\,U}$ and $P_\text{h} = \dfrac{RP^2}{U^2}$
 **Conversions:** $P = 200\,\text{MW} = 200 \cdot 10^{6}\,\text{W}$, $U_{110} = 110\,\text{kV} = 110 \cdot 10^{3}\,\text{V}$ and $U_{400} = 400\,\text{kV} = 400 \cdot 10^{3}\,\text{V}$. The power loss is finally converted to megawatts, $1\,\text{MW} = 10^{6}\,\text{W}$.

@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c7bda769a0424595
+CONTENT-HASH: 491e676514350911
 
 ## Blocking
 - none
 
 ## Polish
-- L1 tosi/epätosi -väite: 'Maan sauvamagneettimallin etelänapa' on S2-lukijalle raskas sana; selitä lyhyesti ('Maan kenttää kuvaava sauvamagneettimalli') tai käytä lukuun jo tuttua termiä.
+- none
 
 ## Checked
-batch delta review: kulmamerkin typografia (^\circ) L1-08, L2-07 ja ratkaisut; L3-02 'moni alkeisalue jää järjestykseen' (tarkempi fysiikka, ymmärrettävä, vastaus ja ratkaisu täsmäävät); sauvamagneettimallin etelänapa ja palaute täsmäävät. Hash sama alussa ja lopussa.
+- Delta (Kaava-vaihe): perusyhtälö tai peruslaki ensin, sitten johdettu kaava, symbolinen sieventäminen ja vasta sitten sijoitus; järjestys on looginen ja seurattavissa.
+- Kaavarivit ovat samat kuin suomenkielisessä, jo hyväksytyssä versiossa; muuttuneet rivit eivät muuta lukuja, yksiköitä tai vastauksia.
+- Sijoitus käyttää viimeistä symbolista muotoa; Periaate-vaihe ja Kaava-vaihe täsmäävät.
+- Selkeä suomi: ei uusia vaikeita sanoja; Mallivastausten kappalejako parantaa luettavuutta.
+- Hash sama alussa ja lopussa.

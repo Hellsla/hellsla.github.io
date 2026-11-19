@@ -2,7 +2,7 @@
 **Annettu:** magneetin massa $m = 40\,\text{g}$, vauhti tasainen, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** pyörrevirtojen jarruttava voima $F$ newtoneina
 **Periaate:** Vauhti on tasainen, joten Newtonin ensimmäisen lain mukaan magneettiin vaikuttavien voimien summa on nolla. Magneettiin vaikuttavat vain paino alaspäin ja pyörrevirtojen jarruttava voima ylöspäin, joten jarruttava voima on yhtä suuri kuin paino.
-**Kaava:** $F - m g = 0$, josta $F = m g$
+**Kaava:** $$\begin{aligned} \Sigma F &= 0 \\ F - m g &= 0 \\ F &= m g \end{aligned}$$
 **Muunnokset:** $m = 40\,\text{g} = 40 \cdot 0{,}001\,\text{kg} = 0{,}040\,\text{kg}$
 **Sijoitus:** $F = 0{,}040\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 0{,}3924\,\text{N}$
 **Vastaus:** $0{,}39\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $40\,\text{g}$.
@@ -19,7 +19,7 @@ Sama tapahtuisi, jos lähestyvä napa olisi N-napa; silloin renkaan magneetin pu
 **Annettu:** vaunun massa $m = 450\,\text{kg}$, alkuvauhti $v_1 = 22\,\text{m/s}$, loppuvauhti $v_2 = 6{,}0\,\text{m/s}$, rata vaakasuora
 **Kysytty:** kuparilevyjen sisäenergiaksi muuttuva energia $Q$ kilojouleina
 **Periaate:** Rata on vaakasuora ja muut vastukset jätetään huomiotta, joten potentiaalienergia ei muutu ja ainoa energian muutos on liike-energian väheneminen. Energia säilyy: pyörrevirrat muuttavat koko liike-energian vähenemisen jarrun levyjen sisäenergiaksi.
-**Kaava:** $Q = \dfrac{m v_1^2}{2} - \dfrac{m v_2^2}{2}$, eli $Q = \dfrac{m (v_1^2 - v_2^2)}{2}$
+**Kaava:** $$\begin{aligned} E_{\text{k},1} &= E_{\text{k},2} + Q \\ \frac{m v_1^2}{2} &= \frac{m v_2^2}{2} + Q \\ Q &= \frac{m v_1^2}{2} - \frac{m v_2^2}{2} \\ &= \frac{m (v_1^2 - v_2^2)}{2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: suureet ovat SI-yksiköissä. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $$\begin{aligned} Q &= \tfrac{1}{2} \cdot 450\,\text{kg} \\ &\cdot \left((22\,\text{m/s})^2 - (6{,}0\,\text{m/s})^2\right) \\ &= 225\,\text{kg} \cdot 448\,\text{m}^2/\text{s}^2 \\ &= 100\,800\,\text{J} \\ &= 100{,}8\,\text{kJ} \end{aligned}$$
 **Vastaus:** $1{,}0 \cdot 10^2\,\text{kJ}$ eli noin $100\,\text{kJ}$, kaksi merkitsevää numeroa kuten loppuvauhdissa $6{,}0\,\text{m/s}$ ja alkuvauhdissa $22\,\text{m/s}$.
@@ -29,7 +29,7 @@ Sama tapahtuisi, jos lähestyvä napa olisi N-napa; silloin renkaan magneetin pu
 **Annettu:** magneetin massa $m = 25\,\text{g}$, tasainen vauhti $v = 0{,}30\,\text{m/s}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** teho $P$, jolla putken sisäenergia kasvaa, milliwatteina
 **Periaate:** Vauhti on tasainen, joten pyörrevirtojen jarruttava voima on yhtä suuri kuin paino, $F = m g$. Liike-energia ei muutu, joten jarruttavan voiman työ eli potentiaalienergian väheneminen muuttuu kokonaan putken sisäenergiaksi. Teho on voima kertaa vauhti.
-**Kaava:** $F = m g$ ja $P = F v$, joten $P = m g v$
+**Kaava:** $$\begin{aligned} \Sigma F &= 0 \\ F - m g &= 0 \\ F &= m g \\ P &= F v \\ &= m g v \end{aligned}$$
 **Muunnokset:** $m = 25\,\text{g} = 25 \cdot 0{,}001\,\text{kg} = 0{,}025\,\text{kg}$. Lopuksi $1\,\text{W} = 1000\,\text{mW}$.
 **Sijoitus:** $P = 0{,}025\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 0{,}30\,\text{m/s} = 0{,}073575\,\text{W} = 73{,}575\,\text{mW}$
 **Vastaus:** $74\,\text{mW}$, kaksi merkitsevää numeroa kuten massassa $25\,\text{g}$ ja vauhdissa $0{,}30\,\text{m/s}$.
@@ -72,7 +72,7 @@ Vaihtoehto, jossa muovin keveys kasvattaa painovoimaa, on väärä, koska painov
 **Annettu:** magneetin massa $m = 20\,\text{g}$, putken pituus $h = 1{,}50\,\text{m}$, putoamisaika $t = 10\,\text{s}$, vauhti lähes tasainen, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** putken sisäenergian keskimääräinen kasvuteho $P$ milliwatteina
 **Periaate:** Vauhti on lähes koko matkan tasainen, joten se saadaan matkasta ja ajasta, ja jarruttava voima on yhtä suuri kuin paino. Liike-energia ei tasaisessa putoamisessa muutu, joten potentiaalienergia muuttuu pyörrevirtojen kautta putken sisäenergiaksi teholla $P = F v$.
-**Kaava:** $v = \dfrac{h}{t}$, $F = m g$ ja $P = F v$, joten $P = m g v$
+**Kaava:** $$\begin{aligned} v &= \frac{h}{t} \\ \Sigma F &= 0 \\ F &= m g \\ P &= F v \\ &= m g v \end{aligned}$$
 **Muunnokset:** $m = 20\,\text{g} = 20 \cdot 0{,}001\,\text{kg} = 0{,}020\,\text{kg}$. Lopuksi $1\,\text{W} = 1000\,\text{mW}$.
 **Sijoitus:** $v = \dfrac{1{,}50\,\text{m}}{10\,\text{s}} = 0{,}15\,\text{m/s}$ ja $P = 0{,}020\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 0{,}15\,\text{m/s} = 0{,}02943\,\text{W} = 29{,}43\,\text{mW}$
 **Vastaus:** $29\,\text{mW}$, kaksi merkitsevää numeroa kuten massassa $20\,\text{g}$ ja ajassa $10\,\text{s}$.
@@ -82,7 +82,7 @@ Vaihtoehto, jossa muovin keveys kasvattaa painovoimaa, on väärä, koska painov
 **Annettu:** kierrosten lukumäärä $N = 200$, resistanssi $R = 15\,\Omega$, vuon muutos $\Delta\Phi = 3{,}0\,\text{mWb}$, aika $\Delta t = 0{,}20\,\text{s}$
 **Kysytty:** induktiovirta $I$ ampeereina
 **Periaate:** Vuo muuttuu tasaisesti, joten induktiolain mukaan käämiin syntyy vakiosuuruinen induktiojännite. Käämi on suljettu, joten jännite ajaa käämin resistanssin läpi virran Ohmin lain mukaan. Lenzin lain mukaan virran kenttä vastustaa vuon kasvua, eli käämin magneetin puoleiseen päähän syntyy samanniminen napa kuin lähestyvä napa. Suuruus lasketaan ilman miinusmerkkiä.
-**Kaava:** $e = N \dfrac{\Delta\Phi}{\Delta t}$ ja $I = \dfrac{e}{R}$, joten $I = \dfrac{N \Delta\Phi}{R \Delta t}$
+**Kaava:** $$\begin{aligned} e &= N \frac{\Delta\Phi}{\Delta t} \\ I &= \frac{e}{R} \\ &= \frac{N \Delta\Phi}{R \Delta t} \end{aligned}$$
 **Muunnokset:** $\Delta\Phi = 3{,}0\,\text{mWb} = 3{,}0 \cdot 0{,}001\,\text{Wb} = 0{,}0030\,\text{Wb}$
 **Sijoitus:** $e = 200 \cdot \dfrac{0{,}0030\,\text{Wb}}{0{,}20\,\text{s}} = 3{,}0\,\text{V}$ ja $I = \dfrac{3{,}0\,\text{V}}{15\,\Omega} = 0{,}20\,\text{A}$
 **Vastaus:** $0{,}20\,\text{A}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
@@ -92,7 +92,7 @@ Vaihtoehto, jossa muovin keveys kasvattaa painovoimaa, on väärä, koska painov
 **Annettu:** magneetin massa $m = 20\,\text{g}$, jarruttava voima $F_\text{j} = k v$, missä $k = 1{,}3\,\tfrac{\text{N}\cdot\text{s}}{\text{m}}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** magneetin loppuvauhti $v_\text{t}$ metreinä sekunnissa
 **Periaate:** Aluksi magneetti kiihtyy, ja jarruttava voima kasvaa vauhdin mukana. Vauhti lakkaa kasvamasta, kun jarruttava voima on kasvanut yhtä suureksi kuin paino: silloin voimien summa on nolla, ja magneetti putoaa tasaisella vauhdilla.
-**Kaava:** $k v_\text{t} = m g$, josta $v_\text{t} = \dfrac{m g}{k}$
+**Kaava:** $$\begin{aligned} \Sigma F &= 0 \\ m g - k v_\text{t} &= 0 \\ v_\text{t} &= \frac{m g}{k} \end{aligned}$$
 **Muunnokset:** $m = 20\,\text{g} = 20 \cdot 0{,}001\,\text{kg} = 0{,}020\,\text{kg}$
 **Sijoitus:** $v_\text{t} = \dfrac{0{,}020\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{1{,}3\,\tfrac{\text{N}\cdot\text{s}}{\text{m}}} = \dfrac{0{,}1962\,\text{N}}{1{,}3\,\tfrac{\text{N}\cdot\text{s}}{\text{m}}} = 0{,}1509\,\text{m/s}$
 **Vastaus:** $0{,}15\,\text{m/s}$, kaksi merkitsevää numeroa kuten kertoimessa $1{,}3\,\tfrac{\text{N}\cdot\text{s}}{\text{m}}$ ja massassa $20\,\text{g}$.
@@ -112,7 +112,7 @@ Vaihtoehto, jossa muovin keveys kasvattaa painovoimaa, on väärä, koska painov
 **Annettu:** magneetin massa $m = 20\,\text{g}$, putken pituus $h = 1{,}00\,\text{m}$, paksuseinäisen putken viisi putoamisaikaa taulukossa, ohutseinäisen putken keskiarvo $4{,}0\,\text{s}$, $g = 9{,}81\,\text{m/s}^2$ (esimerkkiaineisto)
 **Kysytty:** paksuseinäisen putken sisäenergian kasvuteho $P$ milliwatteina sekä se, kummassa putkessa jarrutus on voimakkaampi
 **Periaate:** Mittaussarjan paras arvio on keskiarvo. Vauhti on lähes tasainen, joten se saadaan matkasta ja ajasta, ja jarruttava voima on yhtä suuri kuin paino. Potentiaalienergia muuttuu pyörrevirtojen kautta sisäenergiaksi teholla $P = F v$.
-**Kaava:** $t_{\text{ka}} = \dfrac{\text{summa}}{5}$, $v = \dfrac{h}{t_{\text{ka}}}$ ja $P = F v = m g v$
+**Kaava:** $$\begin{aligned} t_{\text{ka}} &= \frac{\text{summa}}{5} \\ v &= \frac{h}{t_{\text{ka}}} \\ \Sigma F &= 0 \\ F &= m g \\ P &= F v \\ &= m g v \end{aligned}$$
 **Muunnokset:** $m = 20\,\text{g} = 20 \cdot 0{,}001\,\text{kg} = 0{,}020\,\text{kg}$. Lopuksi $1\,\text{W} = 1000\,\text{mW}$.
 **Sijoitus:** Aikojen summa on $36{,}6\,\text{s}$, joten $t_{\text{ka}} = \dfrac{36{,}6\,\text{s}}{5} = 7{,}32\,\text{s}$ ja $v = \dfrac{1{,}00\,\text{m}}{7{,}32\,\text{s}} = 0{,}1366\,\text{m/s}$. Teho on $$\begin{aligned} P &= 0{,}020\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot 0{,}1366\,\text{m/s} \\ &= 0{,}02680\,\text{W} \\ &= 26{,}80\,\text{mW} \end{aligned}$$
 **Vastaus:** $27\,\text{mW}$, kaksi merkitsevää numeroa kuten massassa $20\,\text{g}$. Kohta a): $t_{\text{ka}} = 7{,}32\,\text{s}$ ja keskivauhti $0{,}14\,\text{m/s}$. Kohta b): $27\,\text{mW}$. Kohta c): paksuseinäinen putki jarruttaa samalla vauhdilla voimakkaammin, koska tasaisella vauhdilla voima on molemmissa putkissa sama, $m g$, mutta paksuseinäisessä putkessa vauhti on pienempi ($F : v$ on siellä suurempi).
@@ -130,7 +130,7 @@ Opiskelijan säännöllä rengas vetäisi lähestyvää magneettia, jolloin magn
 **Annettu:** kierrosten lukumäärä $N = 300$, neljä mittausta $(\Delta t, e)$: $(0{,}40\,\text{s}, 0{,}27\,\text{V})$, $(0{,}25\,\text{s}, 0{,}41\,\text{V})$, $(0{,}20\,\text{s}, 0{,}53\,\text{V})$ ja $(0{,}10\,\text{s}, 1{,}02\,\text{V})$ (esimerkkiaineisto)
 **Kysytty:** magneettivuon muutos $\Delta\Phi$ milliwebereinä
 **Periaate:** Induktiolain mukaan keskimääräiselle induktiojännitteelle pätee $e = N \Delta\Phi : \Delta t$, joten tulo $e \cdot \Delta t = N \Delta\Phi$ on sama jokaisessa työnnössä, koska kierrosten lukumäärä ja vuon muutos eivät muutu. Mittausten satunnaisvaihtelun vuoksi tulojen keskiarvo antaa parhaan arvion.
-**Kaava:** $e \cdot \Delta t = N \Delta\Phi$, josta $\Delta\Phi = \dfrac{(e \cdot \Delta t)_{\text{ka}}}{N}$
+**Kaava:** $$\begin{aligned} e &= N \frac{\Delta\Phi}{\Delta t} \\ e \cdot \Delta t &= N \Delta\Phi \\ \Delta\Phi &= \frac{e \cdot \Delta t}{N} \\ &= \frac{(e \cdot \Delta t)_{\text{ka}}}{N} \end{aligned}$$
 **Muunnokset:** Lopuksi $1\,\text{Wb} = 1000\,\text{mWb}$. Yksikkö $1\,\text{V} \cdot \text{s} = 1\,\text{Wb}$.
 **Sijoitus:** Tulot ovat $0{,}40\,\text{s} \cdot 0{,}27\,\text{V} = 0{,}108\,\text{Wb}$, $0{,}25\,\text{s} \cdot 0{,}41\,\text{V} = 0{,}1025\,\text{Wb}$, $0{,}20\,\text{s} \cdot 0{,}53\,\text{V} = 0{,}106\,\text{Wb}$ ja $0{,}10\,\text{s} \cdot 1{,}02\,\text{V} = 0{,}102\,\text{Wb}$. Summa on $0{,}4185\,\text{Wb}$, joten keskiarvo on $0{,}10463\,\text{Wb}$ ja $\Delta\Phi = \dfrac{0{,}10463\,\text{Wb}}{300} = 3{,}488 \cdot 10^{-4}\,\text{Wb} = 0{,}3488\,\text{mWb}$
 **Vastaus:** $0{,}35\,\text{mWb}$, kaksi merkitsevää numeroa kuten jännitteissä. Kohta c): tulo $e \cdot \Delta t$ on lähes sama kaikilla nopeuksilla, joten $e = \dfrac{N \Delta\Phi}{\Delta t}$ eli jännite on kääntäen verrannollinen aikaan.
@@ -140,7 +140,7 @@ Opiskelijan säännöllä rengas vetäisi lähestyvää magneettia, jolloin magn
 **Annettu:** magneetin massa $m = 20\,\text{g}$, putken pituus $h = 1{,}00\,\text{m}$, pudotuksia $n = 50$, vauhti lopussa $v = 0{,}15\,\text{m/s}$, putken massa $m_\text{p} = 0{,}35\,\text{kg}$, kuparin ominaislämpökapasiteetti $c = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** putken lämpötilan nousu $\Delta T$ kelvineinä
 **Periaate:** Energia säilyy. Jokaisessa pudotuksessa magneetin potentiaalienergian vähenemisestä se osa, joka ei jää liike-energiaksi, muuttuu pyörrevirtojen kautta putken sisäenergiaksi. Lämpöä ei siirry ympäristöön, joten koko tämä energia nostaa putken lämpötilaa, ja kuparin olomuoto ei muutu.
-**Kaava:** $Q = n \left(m g h - \dfrac{m v^2}{2}\right)$ ja $Q = c m_\text{p} \Delta T$, josta $\Delta T = \dfrac{n \left(m g h - \frac{m v^2}{2}\right)}{c m_\text{p}}$
+**Kaava:** $$\begin{aligned} m g h &= \frac{m v^2}{2} + Q_1 \\ Q &= n Q_1 \\ Q &= c m_\text{p} \Delta T \\ \Delta T &= \frac{Q}{c m_\text{p}} \\ &= \frac{n \left(m g h - \frac{m v^2}{2}\right)}{c m_\text{p}} \end{aligned}$$
 **Muunnokset:** $m = 20\,\text{g} = 20 \cdot 0{,}001\,\text{kg} = 0{,}020\,\text{kg}$
 **Sijoitus:** $$\begin{aligned} &m g h - \tfrac{1}{2} m v^2 \\ &= 0{,}020\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot 1{,}00\,\text{m} \\ &- \tfrac{1}{2} \cdot 0{,}020\,\text{kg} \cdot (0{,}15\,\text{m/s})^2 \\ &= 0{,}19620\,\text{J} - 0{,}000225\,\text{J} \\ &= 0{,}195975\,\text{J} \end{aligned}$$, joten $Q = 50 \cdot 0{,}195975\,\text{J} = 9{,}79875\,\text{J}$ ja $\Delta T = \dfrac{9{,}79875\,\text{J}}{385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}35\,\text{kg}} = 0{,}07272\,\text{K}$
 **Vastaus:** $0{,}073\,\text{K}$, kaksi merkitsevää numeroa kuten putken massassa $0{,}35\,\text{kg}$ ja magneetin massassa $20\,\text{g}$.
@@ -157,7 +157,7 @@ Pyörrevirrat muuttavat heilurin mekaanista energiaa levyn sisäenergiaksi, ja h
 **Annettu:** kiskojen väli eli tangon pituus kentässä $l = 0{,}40\,\text{m}$, resistanssi $R = 0{,}20\,\Omega$, magneettivuon tiheys $B = 0{,}50\,\text{T}$, tangon vauhti $v = 3{,}0\,\text{m/s}$
 **Kysytty:** tankoon kohdistuva jarruttava voima $F$ newtoneina
 **Periaate:** Liikkuvaan tankoon syntyy luvun *Sähkömagneettinen induktio* mukaan jännite $e = v B l$, koska kenttä on kohtisuorassa sekä tankoa että sen nopeutta vastaan. Tanko, kiskot ja vastus muodostavat suljetun piirin, joten jännite ajaa virran $I = e : R$. Kenttä kohdistaa virtajohtimeen voiman $F = I l B$ (luku *Voima virtajohtimeen: sähkömoottori ja kaiutin*), ja Lenzin lain mukaan se vastustaa tangon liikettä.
-**Kaava:** $e = v B l$, $I = \dfrac{e}{R}$ ja $F = I l B$, joten $F = \dfrac{(B l)^2 v}{R}$
+**Kaava:** $$\begin{aligned} e &= v B l \\ I &= \frac{e}{R} \\ F &= I l B \\ &= \frac{v B l}{R} \cdot l B \\ &= \frac{(B l)^2 v}{R} \end{aligned}$$
 **Muunnokset:** Ei tarvita: suureet ovat SI-yksiköissä.
 **Sijoitus:** $e = 3{,}0\,\text{m/s} \cdot 0{,}50\,\text{T} \cdot 0{,}40\,\text{m} = 0{,}60\,\text{V}$, $I = \dfrac{0{,}60\,\text{V}}{0{,}20\,\Omega} = 3{,}0\,\text{A}$ ja $F = 3{,}0\,\text{A} \cdot 0{,}40\,\text{m} \cdot 0{,}50\,\text{T} = 0{,}60\,\text{N}$
 **Vastaus:** $0{,}60\,\text{N}$, kaksi merkitsevää numeroa kuten lähtöarvoissa. Voima osoittaa tangon nopeutta vastaan.
@@ -168,7 +168,7 @@ Pyörrevirrat muuttavat heilurin mekaanista energiaa levyn sisäenergiaksi, ja h
 **Kysytty:** magneetin kiihtyvyys $a$ hetkellä $t = 0{,}10\,\text{s}$ (lisäksi rajavauhti, jarruttava voima, kerroin $k$ ja teho)
 **Periaate:** Vauhti lähestyy tasaista arvoa, joten kiihtyvyys on silloin nolla ja voimien summa on nolla: jarruttava voima on yhtä suuri kuin paino, mistä saadaan $k$. Jokaisella hetkellä Newtonin toisen lain mukaan $m a = m g - k v$. Rajavauhdilla liike-energia ei muutu, joten potentiaalienergian väheneminen muuttuu pyörrevirtojen kautta kokonaan sisäenergiaksi.
 **Kuvaajan lukeminen:** Piirretystä $(t, v)$-kuvaajasta luetaan: kolme viimeistä vauhtia ovat $0{,}73\,\text{m/s}$, $0{,}75\,\text{m/s}$ ja $0{,}74\,\text{m/s}$, ja hetkellä $0{,}10\,\text{s}$ vauhti on $0{,}54\,\text{m/s}$.
-**Kaava:** $v_\text{r} = \dfrac{\text{summa}}{3}$, $k = \dfrac{m g}{v_\text{r}}$, $a = g - \dfrac{k v}{m}$ ja $P = m g v_\text{r}$
+**Kaava:** $$\begin{aligned} v_\text{r} &= \frac{\text{summa}}{3} \\ \Sigma F &= 0 \text{ rajavauhdilla} \\ m g - k v_\text{r} &= 0 \\ k &= \frac{m g}{v_\text{r}} \\ m a &= m g - k v \\ a &= g - \frac{k v}{m} \\ P &= F v_\text{r} = m g v_\text{r} \end{aligned}$$
 **Muunnokset:** $m = 50\,\text{g} = 50 \cdot 0{,}001\,\text{kg} = 0{,}050\,\text{kg}$
 **Sijoitus:** Vauhtien summa on $2{,}22\,\text{m/s}$, joten $v_\text{r} = \dfrac{2{,}22\,\text{m/s}}{3} = 0{,}74\,\text{m/s}$. Voima on $F = m g = 0{,}4905\,\text{N}$ ja $k = \dfrac{0{,}4905\,\text{N}}{0{,}74\,\text{m/s}} = 0{,}6628\,\tfrac{\text{N}\cdot\text{s}}{\text{m}}$. Kiihtyvyys on $$\begin{aligned} a &= 9{,}81\,\text{m/s}^2 \\ &- \dfrac{0{,}6628\,\tfrac{\text{N}\cdot\text{s}}{\text{m}} \cdot 0{,}54\,\text{m/s}}{0{,}050\,\text{kg}} \\ &= 9{,}81\,\text{m/s}^2 - 7{,}158\,\text{m/s}^2 \\ &= 2{,}652\,\text{m/s}^2 \end{aligned}$$ ja teho $P = 0{,}4905\,\text{N} \cdot 0{,}74\,\text{m/s} = 0{,}3630\,\text{W}$
 **Vastaus:** $2{,}7\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten vauhdeissa. Lisäksi $v_\text{r} = 0{,}74\,\text{m/s}$, $F = 0{,}49\,\text{N}$, $k \approx 0{,}66\,\tfrac{\text{N}\cdot\text{s}}{\text{m}}$ ja $P = 0{,}36\,\text{W}$.
@@ -212,7 +212,7 @@ Jos induktiovirta vahvistaisi vuon kasvua, rengas ja käämi vetäisivät toisia
 **Kysytty:** tasainen vauhti $v$, jolla magneetti putoaa, metreinä sekunnissa
 **Periaate:** Kun magneetti putoaa tasaisella vauhdilla, siihen kohdistuvien voimien summa on nolla, joten jarruttava voima on yhtä suuri kuin paino: $F = mg$. Kuvaajan suora kulkee origon kautta, joten $F$ on suoraan verrannollinen vauhtiin: $F = kv$. Vauhti on se, jolla suoran voima on yhtä suuri kuin paino.
 **Kuvaajan lukeminen:** Suora kulkee origon kautta, joten kulmakerroin saadaan yhdestä pisteestä. Vauhdin $0{,}20\,\text{m/s}$ kohdalla voima on $0{,}32\,\text{N}$, joten $k = F : v = 0{,}32\,\text{N} : 0{,}20\,\text{m/s} = 1{,}6\,\text{N}\cdot\text{s/m}$. Toinen piste antaa saman: $$\begin{aligned} &0{,}48\,\text{N} : 0{,}30\,\text{m/s} \\ &= 1{,}6\,\text{N}\cdot\text{s/m} \end{aligned}$$.
-**Kaava:** $mg = kv$, josta $v = \dfrac{mg}{k}$
+**Kaava:** $$\begin{aligned} \Sigma F &= 0 \\ m g - k v &= 0 \\ v &= \frac{m g}{k} \end{aligned}$$
 **Muunnokset:** $m = 45\,\text{g} = 45 \cdot 0{,}001\,\text{kg} = 0{,}045\,\text{kg}$
 **Sijoitus:** $mg = 0{,}045\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 0{,}44145\,\text{N}$ ja $v = \dfrac{0{,}44145\,\text{N}}{1{,}6\,\text{N}\cdot\text{s/m}} = 0{,}2759\,\text{m/s}$
 **Vastaus:** $0{,}28\,\text{m/s}$, kaksi merkitsevää numeroa kuten massassa $45\,\text{g}$.

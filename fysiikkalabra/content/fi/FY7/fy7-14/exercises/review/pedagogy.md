@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9a26cfef32568a85
+CONTENT-HASH: 65d2b5c9fbb96d6a
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- solutions.md fy7-14-L1-05: the first Kaava row $1{,}00 : n_p = n_p : n_\text{muovi}$ is the lesson's condition, not a law; fine as the Periaate gives it, but name it in a word (amplitudien yhtä suuruus).
 
 ## Checked
-- Delta: the only change is the removal of the parenthesis "(esimerkkiaineisto)" from the text of fy7-14-L3-05; no number, symbol, question or answer field changed.
-- The sentence reads correctly without it: "Taulukossa on tummien raitojen etäisyys x koskettumisviivasta. Raita k = 0 on ..."; punctuation and spacing intact.
-- The task still gives every value it needs, the situation comes first and the question last; level 3 demand unchanged.
-- solutions.md never refers to the removed label, so the solution stays consistent with the task; the label on other tasks' data tables is outside this diff and untouched.
-- Language checked: fi. Hash 9a26cfef32568a85 at start and end.
+- Full Kaava rewrite checked in solutions.md (aligned rows): each solution runs basic law, derived formula, then Sijoitus; k = 0 / k = 1 / k = 2 choices stated on their own row.
+- Long Periaate/Sijoitus paragraphs of L3 tasks split into short ones; nothing lost.
+- Graph tasks (coating-curve, soap-curve) keep Kuvaajan lukeminen; values given in Annettu, no answer in the figure descriptions.
+- Levels, worked-example overlap and tasks not re-opened beyond the diff; no change in task texts.
+- Language checked: fi. Hash 65d2b5c9fbb96d6a at start and end.

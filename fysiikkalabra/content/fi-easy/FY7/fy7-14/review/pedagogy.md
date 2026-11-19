@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ec48e7cd49143106
+CONTENT-HASH: e0098bccffc6e74b
+
 ## Blocking
-- None.
+
 ## Polish
-- None.
+
 ## Checked
-batch delta review: Rewritten retrieval: laser, path difference 975 nm = 1,5 lambda in air, weakening; belongs to thin-film colours, retrieves condition without reflection phase jumps, no Ennuste answer disclosed; Finnish clear.
+- Delta is one Tiivistelmä bullet: "Heijastuksenestopinnoitteessa" became "Heijastuksen estävässä pinnoitteessa"; meaning, formula d = λ : (4n) and the MgF2 numbers are unchanged.
+- The new wording is correct, readable Finnish and keeps the term a student meets in the lesson body.
+- No effect on figures, inquiry, exit ticket or the learning path; the earlier pass stands.

@@ -3,7 +3,9 @@
 ### a)
 **Given:** turns $N = 60$, area $A = 0.060\,\text{m}^2$, magnetic flux density $B = 0.50\,\text{T}$, rotation frequency $f = 50\,\text{Hz}$
 **Find:** the peak value $e_0$ and the rms value $U$ of the voltage
-**Principle:** When a coil rotates steadily in a uniform field, the flux through it varies periodically, and by the law of induction a sinusoidal voltage is induced in the coil. The voltage is at its peak when the plane of the coil is parallel to the field, because the flux then changes fastest (chapters *Electromagnetic induction* and *The generator and alternating current*). The rms value is the direct voltage that would give the same average power in a resistor; for a sinusoidal voltage it is the peak value divided by $\sqrt{2}$.
+**Principle:** When a coil rotates steadily in a uniform field, the flux through it varies periodically, and by the law of induction a sinusoidal voltage is induced in the coil. The voltage is at its peak when the plane of the coil is parallel to the field, because the flux then changes fastest (chapters *Electromagnetic induction* and *The generator and alternating current*).
+
+The rms value is the direct voltage that would give the same average power in a resistor; for a sinusoidal voltage it is the peak value divided by $\sqrt{2}$.
 **Formula:** $e_0 = NBA \cdot 2\pi f$ and $U = \dfrac{e_0}{\sqrt{2}}$
 **Conversions:** The quantities are in base units, so no conversions are needed.
 **Substitution:** $$
@@ -85,7 +87,9 @@ $$ and $U = \dfrac{565.5\,\text{V}}{\sqrt{2}} = 399.9\,\text{V}$
 ### d)
 **Find:** why a gently curving fibre guides the light but a sharp bend lets it out
 **Principle:** The light stays in the core when the angle of incidence at the boundary between core and cladding is larger than the critical angle, in this fibre at least $81.8^\circ$ (chapter *Total internal reflection and optical fibre*).
-**Model answer:** In a gentle curve the direction of the boundary changes only a little along the path of the ray, so the ray still hits the boundary almost parallel to it, and the angle of incidence stays larger than the critical angle. The light is totally internally reflected and follows the fibre. In a sharp bend the boundary on the outer side of the curve turns in front of the ray, so the ray hits it more steeply: the angle of incidence falls below $81.8^\circ$, the light refracts into the cladding and leaks out. Because the critical angle is close to $90^\circ$, even a fairly small change in the angle of incidence is enough. That is why a minimum allowed bending radius is given for a fibre cable.
+**Model answer:** In a gentle curve the direction of the boundary changes only a little along the path of the ray, so the ray still hits the boundary almost parallel to it, and the angle of incidence stays larger than the critical angle. The light is totally internally reflected and follows the fibre.
+
+In a sharp bend the boundary on the outer side of the curve turns in front of the ray, so the ray hits it more steeply: the angle of incidence falls below $81.8^\circ$, the light refracts into the cladding and leaks out. Because the critical angle is close to $90^\circ$, even a fairly small change in the angle of incidence is enough. That is why a minimum allowed bending radius is given for a fibre cable.
 
 ### Yleisiä virheitä
 - In part a the refractive indices are swapped, $\sin\alpha_\text{r} = \tfrac{n_1}{n_2} > 1$, or the angle relative to the axis is given as the angle of incidence.
@@ -181,11 +185,19 @@ $$ and $U = \dfrac{565.5\,\text{V}}{\sqrt{2}} = 399.9\,\text{V}$
   <foreignObject x="263" y="169.5" width="148" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#6b7480">$\text{levels off}$</div></foreignObject>
 </svg>
 
-**Model answer:** The field decreases ever more slowly as the distance increases, but it is not inversely proportional to the distance. If it were, doubling the distance would halve the field, but from $2.0\,\text{cm}$ to $4.0\,\text{cm}$ the field decreases only from $132\,\mu\text{T}$ to $72\,\mu\text{T}$, and from $4.0\,\text{cm}$ to $8.0\,\text{cm}$ from $72\,\mu\text{T}$ to $41\,\mu\text{T}$. The product $Br$ also grows: $264$, $270$, $288$, $300$, $328$ and $372\,\mu\text{T} \cdot \text{cm}$. In an inversely proportional relationship it would be constant. So the curve does not approach zero but some positive value: the field seems to contain a part that does not depend on the distance.
+**Model answer:** The field decreases ever more slowly as the distance increases, but it is not inversely proportional to the distance.
+
+If it were, doubling the distance would halve the field, but from $2.0\,\text{cm}$ to $4.0\,\text{cm}$ the field decreases only from $132\,\mu\text{T}$ to $72\,\mu\text{T}$, and from $4.0\,\text{cm}$ to $8.0\,\text{cm}$ from $72\,\mu\text{T}$ to $41\,\mu\text{T}$. The product $Br$ also grows: $264$, $270$, $288$, $300$, $328$ and $372\,\mu\text{T} \cdot \text{cm}$. In an inversely proportional relationship it would be constant.
+
+So the curve does not approach zero but some positive value: the field seems to contain a part that does not depend on the distance.
 
 ### b)
 **Find:** a presentation of the data in which a straight line fits the points, the justification and the fitted line
-**Graph:** The field of a long straight wire is $B = \tfrac{\mu_0 I}{2\pi r} = \tfrac{\mu_0 I}{2\pi} \cdot \tfrac{1}{r}$, so $B$ is directly proportional to the reciprocal of the distance. If there is also a constant field $b$, $B = k \cdot \tfrac{1}{r} + b$, which is still a straight line in the $(\tfrac{1}{r}, B)$ coordinates. Calculate the reciprocals: $50.0$, $33.3$, $25.0$, $16.7$, $12.5$ and $8.33\,\tfrac{1}{\text{m}}$. $\tfrac{1}{r}\ (\tfrac{1}{\text{m}})$ is on the horizontal axis and $B\ (\mu\text{T})$ on the vertical axis. The line is fitted between the points and not forced through the origin, so that a possible constant field shows.
+**Graph:** The field of a long straight wire is $B = \tfrac{\mu_0 I}{2\pi r} = \tfrac{\mu_0 I}{2\pi} \cdot \tfrac{1}{r}$, so $B$ is directly proportional to the reciprocal of the distance. If there is also a constant field $b$, $B = k \cdot \tfrac{1}{r} + b$, which is still a straight line in the $(\tfrac{1}{r}, B)$ coordinates.
+
+Calculate the reciprocals: $50.0$, $33.3$, $25.0$, $16.7$, $12.5$ and $8.33\,\tfrac{1}{\text{m}}$. $\tfrac{1}{r}\ (\tfrac{1}{\text{m}})$ is on the horizontal axis and $B\ (\mu\text{T})$ on the vertical axis.
+
+The line is fitted between the points and not forced through the origin, so that a possible constant field shows.
 
 <svg data-fig="fy9-magnetismi-valo-s3-lin" viewBox="0 0 600 440" role="img" aria-label="Graph: the magnetic flux density B in microteslas as a function of the reciprocal of the distance 1 over r in the unit 1 per metre. Six black points between 8 and 50 per metre, values from 31 to 132 microteslas. A rising straight line is fitted to the points and extended as a dashed line to the vertical axis, which it crosses at about 11 microteslas, clearly above the origin. Two points are circled on the line, (5.0; 23) and (50; 132), from which the slope of about 2.42 microteslas times metre is read." style="max-width:100%;font-size:30px">
   <line x1="126.5" y1="380" x2="126.5" y2="76" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -291,12 +303,18 @@ $$ and $U = \dfrac{565.5\,\text{V}}{\sqrt{2}} = 399.9\,\text{V}$
 ### d)
 **Given:** slope of the line $k \approx 2.42\,\mu\text{T} \cdot \text{m}$ and constant term $b \approx 10.9\,\mu\text{T}$ (from the points read in part c: $23\,\mu\text{T} - 2.422\,\mu\text{T} \cdot \text{m} \cdot 5.0\,\tfrac{1}{\text{m}}$), distance $r = 50\,\text{cm}$, length of the wire $2.0\,\text{m}$
 **Find:** what the constant term tells about the measurement, and the sensor reading $50\,\text{cm}$ away
-**Principle:** The wire's own field is inversely proportional to the distance, so the constant term is a field that depends neither on the current nor on the distance. The sensor stayed in the same orientation and was not zeroed, so its reading includes the component of the Earth's magnetic field in the direction of the sensor and the sensor's own zero offset (chapters *Magnets, the magnetic dipole and the magnetic field* and *Measuring and the reliability of a measurement*). The reading further away is obtained from the equation of the fitted line, but the long-wire model holds only when the distance is much smaller than the length of the wire.
+**Principle:** The wire's own field is inversely proportional to the distance, so the constant term is a field that depends neither on the current nor on the distance.
+
+The sensor stayed in the same orientation and was not zeroed, so its reading includes the component of the Earth's magnetic field in the direction of the sensor and the sensor's own zero offset (chapters *Magnets, the magnetic dipole and the magnetic field* and *Measuring and the reliability of a measurement*). The reading further away is obtained from the equation of the fitted line, but the long-wire model holds only when the distance is much smaller than the length of the wire.
 **Reading the graph:** The line crosses the $B$ axis at about $11\,\mu\text{T}$; from the points read, $b = 23\,\mu\text{T} - 2.422\,\mu\text{T} \cdot \text{m} \cdot 5.0\,\tfrac{1}{\text{m}} = 10.9\,\mu\text{T}$.
 **Formula:** $B = \dfrac{k}{r} + b$
 **Conversions:** $50\,\text{cm} = 50 \cdot 0.01\,\text{m} = 0.50\,\text{m}$
 **Substitution:** $B = \dfrac{2.422\,\mu\text{T} \cdot \text{m}}{0.50\,\text{m}} + 10.9\,\mu\text{T} = 4.84\,\mu\text{T} + 10.9\,\mu\text{T} = 15.7\,\mu\text{T}$
-**Answer:** The constant term of about $11\,\mu\text{T}$ is a constant field independent of the current in the wire: the component of the Earth's magnetic field in the direction of the sensor and the zero offset of the sensor. This can be checked by measuring the reading with the current switched off, when the sensor should show about $11\,\mu\text{T}$. According to the model the sensor would show about $16\,\mu\text{T}$ at $50\,\text{cm}$, two significant figures, because the result depends on the constant term read from the graph. The result is only an estimate, because $50\,\text{cm}$ is outside the measured range ($2$–$12\,\text{cm}$) and the length of the wire, $2.0\,\text{m}$, is no longer much larger than the distance, so the wire's own field is somewhat smaller than $4.8\,\mu\text{T}$.
+**Answer:** The constant term of about $11\,\mu\text{T}$ is a constant field independent of the current in the wire: the component of the Earth's magnetic field in the direction of the sensor and the zero offset of the sensor.
+
+This can be checked by measuring the reading with the current switched off, when the sensor should show about $11\,\mu\text{T}$. According to the model the sensor would show about $16\,\mu\text{T}$ at $50\,\text{cm}$, two significant figures, because the result depends on the constant term read from the graph.
+
+The result is only an estimate, because $50\,\text{cm}$ is outside the measured range ($2$–$12\,\text{cm}$) and the length of the wire, $2.0\,\text{m}$, is no longer much larger than the distance, so the wire's own field is somewhat smaller than $4.8\,\mu\text{T}$.
 **Reasonableness:** In southern Finland the horizontal component of the Earth's field is about $14\,\mu\text{T}$, so a component of $11\,\mu\text{T}$ in the direction of the sensor is plausible. The constant term can also be obtained from two measurements: if $B = \tfrac{k}{r} + b$, then $b = 2B(4.0\,\text{cm}) - B(2.0\,\text{cm}) = 2 \cdot 72\,\mu\text{T} - 132\,\mu\text{T} = 12\,\mu\text{T}$, almost the same.
 
 ### Yleisiä virheitä
@@ -314,17 +332,31 @@ $$ and $U = \dfrac{565.5\,\text{V}}{\sqrt{2}} = 399.9\,\text{V}$
 ### a)
 **Find:** how a rainbow forms and on which edge red is
 **Principle:** The refractive index depends on the wavelength (dispersion): in water the refractive index of violet is the largest and that of red the smallest. In a rainbow light refracts into a drop, reflects from its back surface and refracts out (chapter *Dispersion: the prism and the rainbow*).
-**Model answer:** Sunlight enters a drop, refracts at its front surface, reflects from the back surface of the drop and refracts out again. Because the refractive index of water is $1.331$ for red and $1.343$ for violet, the colours refract by different amounts and leave the drop in slightly different directions. The brightest light leaves at an angle of about $42^\circ$ for red and about $40.6^\circ$ for violet relative to the direction of the antisolar point. The viewer sees red from the drops that are at an angle of $42^\circ$, and violet from drops slightly further in. That is why red is on the outer edge of the arc and violet on the inner edge. For the rainbow the guest's claim is correct: the colours separate because different colours refract by different amounts in water.
+**Model answer:** Sunlight enters a drop, refracts at its front surface, reflects from the back surface of the drop and refracts out again. Because the refractive index of water is $1.331$ for red and $1.343$ for violet, the colours refract by different amounts and leave the drop in slightly different directions. The brightest light leaves at an angle of about $42^\circ$ for red and about $40.6^\circ$ for violet relative to the direction of the antisolar point.
+
+The viewer sees red from the drops that are at an angle of $42^\circ$, and violet from drops slightly further in. That is why red is on the outer edge of the arc and violet on the inner edge.
+
+For the rainbow the guest's claim is correct: the colours separate because different colours refract by different amounts in water.
 
 ### b)
 **Find:** how the colours of a soap bubble arise and why the thinnest spot looks dark
 **Principle:** The waves reflected from the two surfaces of a thin film interfere. At perpendicular incidence their path difference is $2nd$, and a wave is inverted when it reflects off a medium with a larger refractive index (chapter *Thin-film interference*).
-**Model answer:** A bubble is a thin film of soapy water with air on both sides. Part of the light is reflected from the outer surface of the film and part from the inner surface, and these waves interfere. Their path difference $2nd$ depends on the thickness $d$ of the film: at some wavelengths the waves reinforce each other and at others they weaken each other. What remains of white light is a mixture of wavelengths that is seen as a colour, and when the thickness of the film varies, the colour changes in stripes. Only the reflection at the outer surface inverts the wave, because there the light reflects from air off soapy water. Just before bursting the top of the bubble is very thin, $2nd \approx 0$, so the reflected waves are almost in opposite phase and cancel each other at all wavelengths, and the spot looks dark. For the bubble the claim is wrong: the colours arise from interference, not from refraction, and the colour depends on the thickness of the film.
+**Model answer:** A bubble is a thin film of soapy water with air on both sides. Part of the light is reflected from the outer surface of the film and part from the inner surface, and these waves interfere.
+
+Their path difference $2nd$ depends on the thickness $d$ of the film: at some wavelengths the waves reinforce each other and at others they weaken each other. What remains of white light is a mixture of wavelengths that is seen as a colour, and when the thickness of the film varies, the colour changes in stripes.
+
+Only the reflection at the outer surface inverts the wave, because there the light reflects from air off soapy water. Just before bursting the top of the bubble is very thin, $2nd \approx 0$, so the reflected waves are almost in opposite phase and cancel each other at all wavelengths, and the spot looks dark.
+
+For the bubble the claim is wrong: the colours arise from interference, not from refraction, and the colour depends on the thickness of the film.
 
 ### c)
 **Find:** how a CD produces colours, the first-order angles of red and violet, and an assessment of the claim
 **Principle:** Closely spaced tracks repeating at regular intervals act as a reflection grating. The waves reflected from adjacent tracks reinforce each other in the directions for which $d\sin\theta = k\lambda$ (chapter *Interference and diffraction of light*).
-**Model answer:** The surface of a CD has a spiral track whose adjacent turns are $1.6\,\mu\text{m}$ apart. Each track reflects light, and the waves reflected from different tracks reinforce each other only in the directions in which their path difference is a whole number of wavelengths. At perpendicular incidence the first order for red is $\sin\theta = \tfrac{650 \cdot 10^{-9}\,\text{m}}{1.6 \cdot 10^{-6}\,\text{m}} = 0.41$, that is $\theta \approx 24^\circ$, and for violet $\sin\theta = \tfrac{400 \cdot 10^{-9}\,\text{m}}{1.6 \cdot 10^{-6}\,\text{m}} = 0.25$, that is $\theta \approx 14.5^\circ$. So red deviates most, the opposite of a drop and a prism, which shows that the colours arise in a different way. As a whole the guest's claim is wrong. It holds only for the rainbow. The colours of the bubble arise from the interference of the reflections from the two surfaces of the film, and the colours of the CD from the interference of the reflections from many tracks, and no refraction is needed in them.
+**Model answer:** The surface of a CD has a spiral track whose adjacent turns are $1.6\,\mu\text{m}$ apart. Each track reflects light, and the waves reflected from different tracks reinforce each other only in the directions in which their path difference is a whole number of wavelengths.
+
+At perpendicular incidence the first order for red is $\sin\theta = \tfrac{650 \cdot 10^{-9}\,\text{m}}{1.6 \cdot 10^{-6}\,\text{m}} = 0.41$, that is $\theta \approx 24^\circ$, and for violet $\sin\theta = \tfrac{400 \cdot 10^{-9}\,\text{m}}{1.6 \cdot 10^{-6}\,\text{m}} = 0.25$, that is $\theta \approx 14.5^\circ$. So red deviates most, the opposite of a drop and a prism, which shows that the colours arise in a different way.
+
+As a whole the guest's claim is wrong. It holds only for the rainbow. The colours of the bubble arise from the interference of the reflections from the two surfaces of the film, and the colours of the CD from the interference of the reflections from many tracks, and no refraction is needed in them.
 
 ### Yleisiä virheitä
 - In part a it is said that red refracts most because its wavelength is the longest; in water violet refracts most.
@@ -346,7 +378,11 @@ $$ and $U = \dfrac{565.5\,\text{V}}{\sqrt{2}} = 399.9\,\text{V}$
 ### b)
 **Find:** whether the group's conclusions are justified
 **Principle:** The small-angle assumption $\sin\theta \approx \tfrac{x}{L}$ holds only at small angles. The result is compared with the manufacturer's value using the uncertainty, and the number of maxima is limited by the condition $k\lambda < d$ (chapters *Interference and diffraction of light* and *Measuring and the reliability of a measurement*).
-**Model answer:** Neither conclusion is justified. The mistake is in the method of calculation, not in the laser. The small-angle assumption gives from the first order $\tfrac{1.667\,\mu\text{m} \cdot 0.270\,\text{m}}{0.800\,\text{m}} \approx 562\,\text{nm}$, about $6\,\%$ too much, and from the second $692\,\text{nm}$, about $30\,\%$ too much, because the difference between the tangent and the sine grows as the angle grows. Calculated correctly, the result is $532$–$533\,\text{nm}$. If the distances are known to about $0.3\,\text{cm}$, the extreme values for the second order give about $530$–$535\,\text{nm}$, so the result agrees with the manufacturer's value $532\,\text{nm}$. In addition, the laser looked green, which already rules out red light. The third order exists, because $$
+**Model answer:** Neither conclusion is justified. The mistake is in the method of calculation, not in the laser. The small-angle assumption gives from the first order $\tfrac{1.667\,\mu\text{m} \cdot 0.270\,\text{m}}{0.800\,\text{m}} \approx 562\,\text{nm}$, about $6\,\%$ too much, and from the second $692\,\text{nm}$, about $30\,\%$ too much, because the difference between the tangent and the sine grows as the angle grows. Calculated correctly, the result is $532$–$533\,\text{nm}$.
+
+If the distances are known to about $0.3\,\text{cm}$, the extreme values for the second order give about $530$–$535\,\text{nm}$, so the result agrees with the manufacturer's value $532\,\text{nm}$. In addition, the laser looked green, which already rules out red light.
+
+The third order exists, because $$
 \begin{aligned}
 &3\lambda \\
 &= 1.60\,\mu\text{m} \\
@@ -358,7 +394,11 @@ $$, but $\sin\theta_3 = 0.958$, $\theta_3 \approx 73^\circ$ and the maximum is $
 ### c)
 **Find:** how the measurement can be improved
 **Principle:** The relative uncertainty decreases when the measured distance is large compared with the uncertainty of reading it. Systematic errors, such as a crooked set-up, are removed by the measuring method, and the result is given with its uncertainty (chapters *Measuring and the reliability of a measurement* and *Your own experimental investigation: planning, carrying out and reporting*).
-**Model answer:** Measure the distance between the maxima $+k$ and $-k$ on both sides of the central maximum and halve it. Measuring the gap between two light spots is more precise than estimating the centre of the central maximum, and if the distances to the two sides are equal, the beam hits the grating perpendicularly. Use the second order, whose $x$ is large, or increase the distance $L$, so that the reading uncertainty of about $0.3\,\text{cm}$ is a small part of the measured distance. Estimate $\Delta x$ and $\Delta L$, calculate the wavelength with their extreme values and give the result in the form $\lambda \pm \Delta\lambda$, for example $(532 \pm 3)\,\text{nm}$, so that it can be compared with the manufacturer's value. Repeat the measurement, preferably with readings by different people, and use the tangent in the calculation instead of the small-angle assumption. Safety: do not look into the laser beam, do not point it at anyone's eyes, and do not leave reflecting objects in the path of the beam.
+**Model answer:** Measure the distance between the maxima $+k$ and $-k$ on both sides of the central maximum and halve it. Measuring the gap between two light spots is more precise than estimating the centre of the central maximum, and if the distances to the two sides are equal, the beam hits the grating perpendicularly.
+
+Use the second order, whose $x$ is large, or increase the distance $L$, so that the reading uncertainty of about $0.3\,\text{cm}$ is a small part of the measured distance. Estimate $\Delta x$ and $\Delta L$, calculate the wavelength with their extreme values and give the result in the form $\lambda \pm \Delta\lambda$, for example $(532 \pm 3)\,\text{nm}$, so that it can be compared with the manufacturer's value.
+
+Repeat the measurement, preferably with readings by different people, and use the tangent in the calculation instead of the small-angle assumption. Safety: do not look into the laser beam, do not point it at anyone's eyes, and do not leave reflecting objects in the path of the beam.
 
 ### Yleisiä virheitä
 - In part a $\sin\theta = \tfrac{x}{L}$ is used, or $\sin\theta = \tfrac{x}{\sqrt{x^2 + L^2}}$ while forgetting to divide by the order.
@@ -443,12 +483,18 @@ v &= \dfrac{11\,245 \cdot 26\,659\,\text{m}}{1\,\text{s}} \\
 &\approx 2.9978 \cdot 10^{8}\,\text{m/s}
 \end{aligned}
 $$
-**Answer:** The speed of the protons is $v \approx 2.9978 \cdot 10^8\,\text{m/s}$, five significant figures like the figures of the source. Comparison: $$
+**Answer:** The speed of the protons is $v \approx 2.9978 \cdot 10^8\,\text{m/s}$, five significant figures like the figures of the source.
+
+Comparison: $$
 \begin{aligned}
 \dfrac{v}{c} &= \dfrac{2.9978 \cdot 10^{8}\,\text{m/s}}{2.99792458 \cdot 10^{8}\,\text{m/s}} \\
 &\approx 0.99996
 \end{aligned}
-$$ so the speed is practically the speed of light. The calculated difference, about $12\,\text{km/s}$ or $0.004\,\%$, does not however tell how far the protons fall short of the speed of light. The figures of the source are rounded to whole metres and whole turns, and this rounding alone allows the speed the interval $2.9976 \cdot 10^8\,\text{m/s}$ … $2.9980 \cdot 10^8\,\text{m/s}$, which includes the speed of light. From the source one can therefore conclude that the protons travel at the speed of light to the precision of these figures, but the real difference from it cannot be concluded. Because a proton has mass, its speed nevertheless always stays below the speed of light.
+$$ so the speed is practically the speed of light.
+
+The calculated difference, about $12\,\text{km/s}$ or $0.004\,\%$, does not however tell how far the protons fall short of the speed of light. The figures of the source are rounded to whole metres and whole turns, and this rounding alone allows the speed the interval $2.9976 \cdot 10^8\,\text{m/s}$ … $2.9980 \cdot 10^8\,\text{m/s}$, which includes the speed of light.
+
+From the source one can therefore conclude that the protons travel at the speed of light to the precision of these figures, but the real difference from it cannot be concluded. Because a proton has mass, its speed nevertheless always stays below the speed of light.
 **Reasonableness:** Light travels about $300\,000\,\text{km}$ in a second, and a circumference of about $27\,\text{km}$ fits into this distance about $\tfrac{300\,000\,\text{km}}{27\,\text{km}} \approx 11\,000$ times. The $11\,245$ turns per second of the source agree with this.
 
 ### b)
@@ -508,9 +554,13 @@ $$ and $\dfrac{E}{E_\text{k}} = \dfrac{4.357 \cdot 10^{8}\,\text{J}}{5.787 \cdot
 **Principle:** A charged particle moving in a magnetic field experiences a magnetic force that is perpendicular to the velocity of the particle (chapter *Charged particle in electric and magnetic fields*). A force perpendicular to the direction of motion does no work. The magnetic flux density of a coil is proportional to the current in the coil (chapter *Magnetic field of a wire and a coil*), and in a conductor of resistance $R$ electrical energy turns into internal energy at the rate $P = RI^2$ (chapter *Electric power and the heating of a resistor*).
 **Model answer:** According to the source (checked 16 Nov 2026) the $1232$ dipole magnets of the LHC bend the paths of the beams and the $392$ quadrupole magnets focus the beams, the magnets are cooled with superfluid helium to the temperature $1.9\,\text{K}$, and the protons are accelerated in accelerating cavities.
 
-The magnetic force is perpendicular to the velocity of the proton, so it changes only the direction of the velocity: in the field of the dipole magnets the path of a proton, which would otherwise go straight on, bends into an arc of a circle, and the proton stays in the ring. The field of the quadrupole magnets steers protons drifting towards the edges back towards the centre of the beam, so the beam stays narrow. Because the force is perpendicular to the direction of motion, it does no work, and the magnetic field therefore does not increase the energy of the proton. The energy comes from the electric field of the accelerating cavities, which exerts a force on the proton in the direction of its motion and does work on every turn.
+The magnetic force is perpendicular to the velocity of the proton, so it changes only the direction of the velocity: in the field of the dipole magnets the path of a proton, which would otherwise go straight on, bends into an arc of a circle, and the proton stays in the ring. The field of the quadrupole magnets steers protons drifting towards the edges back towards the centre of the beam, so the beam stays narrow.
 
-The larger the energy of the proton, the stronger the field needed to keep it on the same path, and a strong field needs a very large current in the coil. In an ordinary conductor electrical energy would turn into internal energy at the rate $P = RI^2$, which grows as the square of the current: the coils would heat up, and the internal energy would have to be removed continuously by cooling. At the temperature $1.9\,\text{K}$ the conductor of the coils is in the superconducting state, in which its resistance is zero. Then $RI^2 = 0$, and a large current flows in the coil with no power loss. Superconductivity thus makes the strong fields possible, and its price is cooling close to absolute zero.
+Because the force is perpendicular to the direction of motion, it does no work, and the magnetic field therefore does not increase the energy of the proton. The energy comes from the electric field of the accelerating cavities, which exerts a force on the proton in the direction of its motion and does work on every turn.
+
+The larger the energy of the proton, the stronger the field needed to keep it on the same path, and a strong field needs a very large current in the coil. In an ordinary conductor electrical energy would turn into internal energy at the rate $P = RI^2$, which grows as the square of the current: the coils would heat up, and the internal energy would have to be removed continuously by cooling.
+
+At the temperature $1.9\,\text{K}$ the conductor of the coils is in the superconducting state, in which its resistance is zero. Then $RI^2 = 0$, and a large current flows in the coil with no power loss. Superconductivity thus makes the strong fields possible, and its price is cooling close to absolute zero.
 
 The radius of the path cannot be calculated from the expression $r = \tfrac{mv}{qB}$ used in this course with the mass of the proton, because the protons travel at almost the speed of light and classical mechanics does not hold for them (part b).
 
@@ -649,7 +699,11 @@ $$
 ### c)
 **Find:** the direction of the induced current in the different intervals and the effect of the zero value of the flux
 **Principle:** A voltage is induced only when the flux changes, and it depends on the rate of change of the flux (chapter *Electromagnetic induction*). By Lenz's law the magnetic field of the induced current opposes the change of the flux (chapter *Lenz's law and eddy currents*).
-**Model answer:** During $0.40$–$0.60\,\text{s}$ the flux is constant, so the voltage and the current are zero. During $0$–$0.40\,\text{s}$ the flux decreases. The induced current opposes the decrease, so its own magnetic field points in the positive direction of the flux, and the induced voltage is positive. During $0.60$–$0.80\,\text{s}$ the flux increases towards zero. The induced current opposes the increase, so its field points in the negative direction, and the current flows in the opposite direction to that in the first interval ($e = -1.8\,\text{V}$).
+**Model answer:** During $0.40$–$0.60\,\text{s}$ the flux is constant, so the voltage and the current are zero.
+
+During $0$–$0.40\,\text{s}$ the flux decreases. The induced current opposes the decrease, so its own magnetic field points in the positive direction of the flux, and the induced voltage is positive.
+
+During $0.60$–$0.80\,\text{s}$ the flux increases towards zero. The induced current opposes the increase, so its field points in the negative direction, and the current flows in the opposite direction to that in the first interval ($e = -1.8\,\text{V}$).
 
 The flux is zero at $t = \dfrac{5.0\,\text{mWb}}{20\,\text{mWb/s}} = 0.25\,\text{s}$. At that moment the rate of change of the flux is the same $-20\,\text{mWb/s}$ as before and after, and the induced voltage is still $2.4\,\text{V}$. The voltage depends on the rate of change of the flux, not on its value, so the direction of the current does not change although the sign of the flux does.
 

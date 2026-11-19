@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3713c7dc9592420a
+CONTENT-HASH: 0bdd189e90983d9e
 
 ## Blocking
 
 ## Polish
-- [Minor] Carried over from my earlier report (unchanged text): earlier polish items stay as recorded.
+- [Minor] Kaava blocks — none beyond the work-queue form; the aligned display blocks render with equals signs in one column.
 
 ## Checked
-- Delta, round 1: solutions.md only cut into paragraphs, words unchanged.
-- Captures opened (content/fi-easy/FY7/fy7-8/review/shots): fy7-8-open-exercises-L2-1280-15 (Selitys, Mallissa on yksinkertaistuksia, Vastaus 13 MW and Järkevyys; short paragraphs read well for S2 students, formulas intact, nothing clipped).
-- Layout checks at 360/768/1280 green in the packet.
+- Delta (round 1, fi-easy, 8g Kaava blocks): opened open-exercises-L3-1280-5 (task 8-22 5-row Kaava plus the separate savings box).
+- Changed Kaava blocks render as aligned display blocks in a card, = column aligned, fractions and roots legible, units and the order principle -> equation -> substitution kept; Sijoitus, Vastaus and Järkevyys layout unchanged; nothing clipped at 1280 px.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

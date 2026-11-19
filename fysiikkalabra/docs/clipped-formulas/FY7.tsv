@@ -13,47 +13,21 @@ en/FY7-sovella	2700\,\text{kg/m}^3 \cdot 5.0 \cdot 10^{4}\,\text{m} \cdot 150 \c
 en/FY7-sovella	= 1.8281 \cdot 10^{-26}\,\text{kg} \cdot 7.251 \cdot 10^{5}\,\text{m/s
 en/FY7-sovella	= \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 30.0 \cdot
 en/FY7-sovella	m_{10} : m_{11} = 1.6627 : 1.8281 \approx 0.91
-en/fy7-10	0.020\,\text{m} : 3.00 \cdot 10^{8}\,\text{m/s} \approx 67\,\text{ps}
-en/fy7-10	1.3274 + 1.3319 + 1.3344 + 1.3268 = 5.3205
-en/fy7-10	26.0\,\text{mm} \cdot \tan 55.0^\circ = 37.1\,\text{mm}
-en/fy7-10	= 6.0\,\text{mm} \cdot \tan 32.61^\circ + 20.0\,\text{mm} \cdot \tan 3
-en/fy7-10	n_1 \sin\alpha_1 = n_2 \sin\alpha_2 = n_3 \sin\alpha_3
-en/fy7-12	41.8^\circ + 42.6^\circ + 41.5^\circ + 42.3^\circ + 42.0^\circ
 en/fy7-12	= \dfrac{1.480 \cdot 1000\,\text{m}}{3.00 \cdot 10^8\,\text{m/s}} \cdo
 en/fy7-14	2nd = 2 \cdot 1.33 \cdot 250\,\text{nm} = 665\,\text{nm}
-en/fy7-16	0.18\,\text{dB/km} \cdot 1172\,\text{km} = 211\,\text{dB}
-en/fy7-16	= 10 \cdot 2\pi \cdot 1.40 \cdot 10^{5}\,\text{Hz} \cdot 0.40 \cdot 10
-en/fy7-16	= 12\,\text{mm} + 4\,\text{mm} \cdot \dfrac{0.1241 - 0.1061}{0.1241 - 
-en/fy7-16	= 2\pi \cdot 2.5 \cdot 10^{4}\,\text{Hz} \cdot 4.0 \cdot 10^{-3}\,\tex
-en/fy7-16	= 2\pi \cdot 3.0 \cdot 10^{4}\,\text{Hz} \cdot 7.63 \cdot 10^{-5}\,\te
-en/fy7-4	(0.0871\,\text{T} - 0.0834\,\text{T}) : 2 = 0.0018\,\text{T}
-en/fy7-4	0.00090\,\text{kg} \cdot 9.81\,\text{m/s}^2 : (3.0\,\text{A} \cdot 0.0
-en/fy7-4	0.0030\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 0.0294\,\text{N}
-en/fy7-4	4.5\,\text{A} \cdot 0.060\,\text{m} \cdot 0.10\,\text{T} = 0.027\,\tex
 en/fy7-4	= 200\,\text{A} \cdot 100\,\text{m} \cdot 53 \cdot 10^{-6}\,\text{T} \
-en/fy7-4	= 2\pi \cdot 0.010\,\text{m} \cdot 0.0030\,\text{kg} \cdot 9.81\,\text
-en/fy7-6	= 0.020\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 0.1366\,\text{m/s}
-en/fy7-6	= 0.020\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 1.00\,\text{m} - \tf
 en/fy7-6	= 0.19620\,\text{J} - 0.000225\,\text{J}
-en/fy7-6	= 9.81\,\text{m/s}^2 - \dfrac{0.6628\,\tfrac{\text{N}\cdot\text{s}}{\t
-en/fy7-6	= \tfrac{1}{2} \cdot 450\,\text{kg} \cdot \left((22\,\text{m/s})^2 - (
 fi-easy/FY7-sovella	0{,}012\,\text{N/m} \cdot (8000 : 300)^2 \approx 8{,}5\,\text{N/m}
 fi-easy/FY7-sovella	0{,}780 : 1300\,\text{nm} = 6{,}00 \cdot 10^{-4}\,\tfrac{1}{\text{nm}}
 fi-easy/FY7-sovella	2700\,\text{kg/m}^3 \cdot 5{,}0 \cdot 10^{4}\,\text{m} \cdot 150 \cdot
 fi-easy/FY7-sovella	= 1{,}8281 \cdot 10^{-26}\,\text{kg} \cdot 7{,}251 \cdot 10^{5}\,\text
 fi-easy/FY7-sovella	= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 30{,}0 \
 fi-easy/FY7-sovella	m_{10} : m_{11} = 1{,}6627 : 1{,}8281 \approx 0{,}91
-fi-easy/fy7-12	41{,}8^\circ + 42{,}6^\circ + 41{,}5^\circ + 42{,}3^\circ + 42{,}0^\ci
 fi-easy/fy7-12	= \dfrac{1{,}480 \cdot 1000\,\text{m}}{3{,}00 \cdot 10^8\,\text{m/s}} 
 fi-easy/fy7-14	1{,}38 \cdot 458{,}70\,\text{nm} = 633\,\text{nm}
 fi-easy/fy7-14	2nd = 2 \cdot 1{,}33 \cdot 250\,\text{nm} = 665\,\text{nm}
 fi-easy/fy7-2	= \dfrac{9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 3{,}0 \cdot 10^{6}\,\
-fi-easy/fy7-6	0{,}25\,\text{N} \cdot 0{,}3\,\text{m/s} \approx 0{,}075\,\text{W}
-fi-easy/fy7-6	= 0{,}020\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 0{,}1366\,\text{
-fi-easy/fy7-6	= 0{,}020\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}00\,\text{m}
 fi-easy/fy7-6	= 0{,}19620\,\text{J} - 0{,}000225\,\text{J}
-fi-easy/fy7-6	= 9{,}81\,\text{m/s}^2 - \dfrac{0{,}6628\,\tfrac{\text{N}\cdot\text{s}
-fi-easy/fy7-6	= \tfrac{1}{2} \cdot 450\,\text{kg} \cdot \left((22\,\text{m/s})^2 - (
 fy7-14	1{,}38 \cdot 458{,}70\,\text{nm} = 633\,\text{nm}
 fy7-14	2nd = 2 \cdot 1{,}33 \cdot 250\,\text{nm} = 665\,\text{nm}
 fy7-2	= \dfrac{9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 3{,}0 \cdot 10^{6}\,\
