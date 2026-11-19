@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 1ddf58d36f93523a
-SCOPE: delta numbers,structure,typography,wording from 9e80b63c08550553 base a0f318f
 
 ## Blocking
 - (none) The round-1 Major is fixed: "lämpö" in the first Pysähdy block is plain text, no stray asterisks at 390 or 1280 px.
