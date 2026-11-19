@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 98b85659627fb4ea
-
+CONTENT-HASH: 0ab3b882243e0419
 ## Blocking
-- none
 
 ## Polish
-- none
-
+- Tulos-vaiheen loppu "ja pyöristetään tulokseen $340\,\text{kJ}$" on kömpelö, koska erotus $450-110$ on jo tasan $340$; riittäisi "joten erotus ilmoitetaan kymmenen kilojoulen tarkkuudella."
+- Mallivastauksen "toiseen muotoon, ja jokaisessa vaiheessa osa päätyy lämpöenergiaksi" on selkeä ja täsmällinen, mutta toistaa "vaiheessa"; voisi yhdistää yhdeksi lauseeksi.
 ## Checked
-batch delta review: the "Etsi virhe" prompt now shows the wrong conversion as an aligned display block with the question last; numbers and the error (divided by 1000 instead of multiplied) unchanged and consistent with the choices and feedback.
+batch delta review: "lähes kaikki" korjaa liioittelun ja sopii tehtävän ja mallivastauksen kanssa; "lämpöenergiaksi" yhtenäistää termin kuvatekstissä; Tulos-vaiheen tarkkuusperustelu (epätarkin tieto, vähennyslasku) on oikea ja opettavampi kuin aiempi.

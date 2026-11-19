@@ -243,6 +243,12 @@ Sähköä ei voi varastoida suuria määriä suoraan verkkoon, joten tuotannon o
 
 Vesivoimalaitoksessa virtausta lisätään tai vähennetään nopeasti, mutta tuulta ja aurinkoa ei voi käskeä. Ydinvoimalaa ajetaan yleensä tasaisesti lähes täydellä teholla, mutta sen tehoa voi tarvittaessa myös laskea: esimerkiksi Olkiluodon yksiköt ovat vähentäneet tehoaan, kun sähkön hinta on ollut hyvin matala.
 
+```pysahdy
+Illalla sähkön kulutus nousee äkkiä. Kumpi voimala pystyy vastaamaan siihen luotettavammin, vesivoimala vai tuulivoimala?
+---
+Vesivoimala, koska sen virtausta voi säätää nopeasti. Tuulta ei voi käskeä, joten tuulivoimalan teho riippuu säästä.
+```
+
 ### Vertailun kriteerit
 Eri tuotantotapoja vertaillaan samoilla kysymyksillä:
 
@@ -301,8 +307,21 @@ E = P \cdot t
 ```
 missä $E$ on tuotettu energia, $P$ voimalan teho ja $t$ aika. Kun teho on kilowatteina ja aika tunteina, energia on kilowattitunteina. Tavallisessa $365$ vuorokauden vuodessa on $t = 8760\,\text{h}$. Karkausvuodessa on $8784\,\text{h}$. Tämän luvun esimerkkilaskuissa käytetään tavallisen vuoden pituutta, ellei muuta ilmoiteta. Suuret energiat ilmoitetaan usein gigawatti- ja teravattitunteina: $1\,\text{GWh} = 10^{6}\,\text{kWh}$ ja $1\,\text{TWh} = 10^{9}\,\text{kWh}$.
 
+```pysahdy
+Voimala tuottaa vakioteholla $2{,}0\,\text{MW}$ ajan $3\,\text{h}$. Kuinka paljon energiaa se tuottaa?
+---
+Energia on teho kertaa aika: $E = P \cdot t$.
+Siis $E = 2{,}0\,\text{MW} \cdot 3\,\text{h} = 6{,}0\,\text{MWh}$.
+```
+
 ### Nimellisteho ja keskiteho
 Voimalan nimellisteho on suurin teho, jolla se voi toimia. Tuulivoimala ei tuota nimellisteholla koko vuotta, koska tuuli vaihtelee. Keskiteho on vuoden aikana tuotettu energia jaettuna vuoden tuntimäärällä. Keskiteho jaettuna nimellisteholla kertoo, kuinka suuri osa nimellistehosta on keskimäärin käytössä.
+
+```pysahdy
+Tuulivoimalan nimellisteho on $5\,\text{MW}$ ja vuoden keskiteho $1{,}5\,\text{MW}$. Miksi keskiteho on pienempi, ja kuinka suuri osa nimellistehosta se on?
+---
+Tuuli vaihtelee, joten voimala ei tuota nimellisteholla koko ajan. Osuus on $1{,}5\,\text{MW} : 5\,\text{MW} = 0{,}30$.
+```
 
 ### Suuruusluokat
 Yhden voimalan teho voi olla tuhatta kertaa suurempi kuin toisen. Siksi suuruusluokkia vertaillaan kymmenen potensseilla. Kuvan vaaka-akselilla jokainen askel pystyviivalta seuraavalle on kymmenkertainen, joten pisteiden välimatka kertoo, montako kertaa kymmenen teho kasvaa.

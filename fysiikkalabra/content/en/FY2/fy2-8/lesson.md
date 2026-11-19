@@ -123,6 +123,12 @@ The Sun warms the ground by radiating energy to it, as visible light and near-in
 
 So greenhouse gases let sunlight through but slow down the escape of thermal radiation. The ground stays warmer than it would be without them. A simple radiative balance model of the Earth gives an effective radiating temperature of about $-18\,{}^\circ\text{C}$, but the mean surface temperature is about $+15\,{}^\circ\text{C}$. The difference shows how much the **greenhouse effect** matters. The value $-18\,{}^\circ\text{C}$ should not, however, be read as an exact prediction of the surface temperature if the greenhouse gases were removed, because clouds and ice cover, for example, would change too. The natural greenhouse effect keeps the Earth habitable, because without it the water in the oceans would be frozen.
 
+```pysahdy
+What lets greenhouse gases keep the ground warm even though they let sunlight pass through?
+---
+They slow down the escape of the thermal radiation the ground emits, and they radiate part of the energy back down to the ground.
+```
+
 <svg data-fig="greenhouse" viewBox="0 0 600 440" role="img" aria-label="Schematic diagram, not to scale: the greenhouse effect. The Sun&#x27;s radiation (orange arrow), visible light and near-infrared, passes mostly through the atmosphere and warms the ground. The warm ground sends thermal radiation upwards (red arrows), and the greenhouse gases of the atmosphere absorb it. The gases radiate the energy out again: part returns down to the ground and part escapes into space. The thickness of the arrows illustrates direction, not exact energies." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy28-heat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy28-ir" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient><linearGradient id="fy28-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><radialGradient id="fy28-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient></defs>
   <circle cx="76" cy="70" r="51" fill="#ffffff" fill-opacity="0.5"/>
@@ -165,12 +171,24 @@ The greenhouse effect is treated with calculations on the FY3 course in the chap
 ### Fuels link energy and climate
 A fossil fuel, such as coal, oil or natural gas, is chemical energy from ancient living things: coal formed mostly from plants, oil and natural gas from marine plankton. When such a carbon-containing fuel burns completely, its carbon combines with oxygen: $\text{C} + \text{O}_2 \rightarrow \text{CO}_2$. The chemical energy is released as heat (chapter *Fuels and heat of combustion $E = Hm$*), and the carbon dioxide leaves with the flue gases into the atmosphere. The more energy we get by burning carbon-containing fuels, the more carbon dioxide is released. Not every fuel contains carbon: when hydrogen burns, only water is formed.
 
+```pysahdy
+Why does burning hydrogen not add carbon dioxide to the atmosphere?
+---
+Hydrogen contains no carbon, so burning it produces water, not $\text{CO}_2$.
+```
+
 The carbon of a fossil fuel has been underground for millions of years, so burning it adds carbon dioxide to the atmosphere. The carbon of biomass, for example wood, was bound into plants only during the last few decades. Even so, burning biomass is not emission-free: the carbon dioxide from burning stays in the atmosphere until new growth binds it back, which takes decades and requires that the plants really grow back. In addition, growing, harvesting and transport cause their own emissions.
 
 <figure class="unit-photo"><img src="pics/fy2/europe-at-night.webp" alt="Europe at night from above: dense orange points of light on dark land and bright patches of large cities."><figcaption>North-western Europe at night, photographed from the International Space Station in 2011. The lights of the cities can be seen from space.</figcaption></figure>
 
 ### Ways of producing energy are compared by life-cycle emissions
 Emissions come from more than just burning. A power plant must be built from steel, concrete and copper, the fuel must be mined or collected and transported, and in the end the plant is dismantled. That is why ways of producing energy are compared by **life-cycle emissions**: the emissions of all stages are added together and divided by the energy produced over the whole life cycle.
+
+```pysahdy
+A wind turbine burns nothing. Why are its life-cycle emissions still not zero?
+---
+Emissions arise when the turbine is built, transported and dismantled, even though no flue gases form while it produces energy.
+```
 
 For comparison, methane and other greenhouse gases are converted into carbon dioxide equivalents ($\text{CO}_2$-eq.), that is, the amount of carbon dioxide that has the same warming effect.
 

@@ -124,6 +124,12 @@ Sitä, kuinka nopeasti energiaa muuntuu tai siirtyy, kutsutaan **tehoksi**. Teho
 
 Teho ei kerro, kuinka paljon energiaa laite yhteensä käyttää. Sen kertoo vasta teho yhdessä ajan kanssa: pieni teho pitkään voi muuntaa saman energian kuin suuri teho lyhyen hetken. Siksi sähkölasku riippuu sekä laitteen tehosta että käyttöajasta.
 
+```pysahdy
+Laite A on päällä $1\,\text{h}$ teholla $100\,\text{W}$ ja laite B $1\,\text{min}$ teholla $2000\,\text{W}$. Kumpi muuntaa enemmän energiaa?
+---
+Laite A. Sen energia on $100\,\text{W} \cdot 3600\,\text{s} = 360\,\text{kJ}$, kun laitteen B energia on vain $2000\,\text{W} \cdot 60\,\text{s} = 120\,\text{kJ}$.
+```
+
 <figure class="unit-photo"><img src="pics/fy2/offshore-wind-sunset.webp" alt="Neljä tuulivoimalaa meressä horisontissa oranssia auringonlaskun taivasta vasten."><figcaption>Merituulivoimaloita auringonlaskun aikaan. Voimalan teho kertoo, kuinka nopeasti se tuottaa sähköenergiaa. Vuorokaudessa tuotettu energia riippuu myös siitä, kuinka kauan ja kuinka kovaa tuulee.</figcaption></figure>
 
 ## Kaava: Teho
@@ -139,6 +145,12 @@ t &= \frac{E}{P}
 \end{aligned}
 ```
 Tehon yksikkö on watti: $1\,\text{W} = 1\,\text{J/s}$. Etuliitteet toimivat kuten muillakin suureilla (luku *Suureet, yksiköt ja SI-järjestelmä*): $1\,\text{kW} = 1000\,\text{W}$ ja $1\,\text{MW} = 10^{6}\,\text{W}$. Voimalaitosten teho mitataan megawateissa: Olkiluoto 3 -ydinvoimalayksikön sähköteho on noin $1600\,\text{MW}$ (TVO), eli noin $800\,000$ vedenkeittimen verran.
+
+```pysahdy
+Lamppu muuntaa $60\,\text{J}$ energiaa viidessä sekunnissa. Mikä on lampun teho?
+---
+Teho on energia jaettuna ajalla: $P = 60\,\text{J} : 5\,\text{s} = 12\,\text{W}$.
+```
 
 Jos laite muuntaa energiaa tasaisesti, energia ajan funktiona on suora, joka lähtee origosta. Suoran jyrkkyys on teho: mitä suurempi teho, sitä jyrkemmin energia kasvaa. Kuvassa vedenkeittimen suoralla energia kasvaa $40\,\text{kJ}$ aikavälillä $20\,\text{s}$. Sijoitetaan $1\,\text{kJ} = 1000\,\text{J}$: $40\,\text{kJ} = 40 \cdot 1000\,\text{J} = 40\,000\,\text{J}$, joten $P = 40\,000\,\text{J} : 20\,\text{s} = 2000\,\text{W}$.
 
@@ -191,6 +203,12 @@ Sähköenergia laskutetaan kilowattitunteina (kWh). Yksi kilowattitunti on energ
 \end{aligned}
 ```
 Kilowattitunti on siis energian yksikkö, ei tehon. Kaava $E = P\,t$ antaa suoraan kilowattitunteja, kun teho on kilowatteina ja aika tunteina: $\text{kW} \cdot \text{h} = \text{kWh}$.
+
+```pysahdy
+Laite, jonka teho on $2\,\text{kW}$, on päällä kolme tuntia. Montako kilowattituntia sähkölaskuun tulee?
+---
+Energia on teho kertaa aika: $2\,\text{kW} \cdot 3\,\text{h} = 6\,\text{kWh}$.
+```
 
 ### Tyypillisiä tehoja ja sähkölasku
 Taulukossa on kotitalouslaitteiden tyypillisiä tehoja, pyöristettyinä valmistajien ilmoittamista tyyppiarvoista. Oikean laitteen teho on sen arvokilvessä. Jääkaapin teho on kompressorin käydessä, eikä kompressori käy koko ajan.

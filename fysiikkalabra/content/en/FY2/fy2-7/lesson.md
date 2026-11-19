@@ -355,6 +355,12 @@ The same power can be transferred in two ways: with a low voltage and a large el
 
 A transformer raises the voltage at the power plant and lowers it again close to the user. In a good transformer the loss is very small.
 
+```pysahdy
+Two power lines transfer the same power, one with a high voltage and the other with a low voltage. In which line do the wires get hotter?
+---
+In the low-voltage line. There the current is larger, and a larger current heats a wire more.
+```
+
 <figure class="unit-photo"><img src="pics/fy2/muurame-transformer.webp" alt="A large grey-green transformer with insulators and fans at a fenced substation among birch trees."><figcaption>A substation transformer in Muurame, Finland. At a substation the transformer lowers the high voltage of the power line to the voltage of the distribution network.</figcaption></figure>
 
 ### District heating
@@ -396,6 +402,12 @@ In the electricity grid some of the electrical energy is converted into internal
 
 In Finland the losses of the electricity grid in 2024 were about $4\,\%$ of electricity consumption, when consumption was about $83\,\text{TWh}$ (Finnish Energy, Sähkövuosi 2024). In this chapter consumption is used as the energy sent into the electricity grid, so $4\,\%$ is a share of it. About $36\,\text{TWh}$ was supplied to the district heating network in 2024 and about $32.7\,\text{TWh}$ was used by customers, so about $9\,\%$ was left on the way (Finnish Energy, Kaukolämpötilasto 2024; the share is calculated from the difference, so it is an estimate). The loss of district heating is relatively larger because hot water is clearly warmer than its surroundings: the greater the temperature difference to the surroundings, the more heat escapes, and heat gets through the insulation along the whole length of the pipework.
 
+```pysahdy
+$100\,\text{GWh}$ is fed into the network and the users receive $91\,\text{GWh}$. How large is the transmission loss, and did the energy that went into the loss disappear?
+---
+The loss is $9\,\text{GWh}$, or $9\,\%$ of the energy fed in. The energy did not disappear but was transferred as heat to the surroundings.
+```
+
 ### Transferring energy in time: storage
 
 Energy is also transferred in time. Wind power and solar electricity are produced when the wind blows or the sun shines, but electricity is needed at other times too. A store takes in energy when there is too much of it and gives it out later.
@@ -431,6 +443,12 @@ Energy is also transferred in time. Wind power and solar electricity are produce
 </svg>
 
 In a battery the energy is stored as chemical energy. In a pumped-storage power plant water is pumped to an upper reservoir, and the water flowing down turns the machines of the power plant. In a heat store hot water stays in an insulated tank, and it is used for example in the district heating network. Electricity is not stored in large amounts as such but by converting it into another form of energy and back, and in every conversion some of the energy turns into heat.
+
+```pysahdy
+In a pumped-storage power plant water is pumped to an upper reservoir and later allowed to flow down. In what form is the energy stored, and can all of it be got back as electricity?
+---
+The energy is stored as the gravitational potential energy of the water in the upper reservoir. Not all of it comes back, because in every conversion some of the energy turns into heat.
+```
 
 ## Formula: Transmission loss
 

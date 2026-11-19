@@ -112,6 +112,12 @@ Thermal energy also depends on the amount of substance, so it is not the same th
 
 Potential energy and kinetic energy together make up **mechanical energy**, $E_\text{mech} = E_\text{p} + E_\text{k}$.
 
+```pysahdy
+A hot coffee cup cools down on the table. What does the physics word heat mean in this situation?
+---
+Heat is energy that transfers from the cup to the cooler air because of the temperature difference. At the same time the cup's thermal energy decreases.
+```
+
 <svg data-fig="energialajit" viewBox="0 0 600 396" role="img" aria-label="Schematic diagram: forms of energy with examples. Mechanical energy is potential energy (a ball at the edge of a cliff) and kinetic energy (a rolling ball). The picture also shows thermal energy (a hot coffee cup), chemical energy (a battery), radiant energy (the Sun), electrical energy (lightning) and nuclear energy (an atomic nucleus). The picture is schematic, not to scale." style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy21-pot" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#6c757d"/></radialGradient><radialGradient id="fy21-kin" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#6c757d"/></radialGradient></defs>
   <line x1="30" y1="44" x2="270" y2="44" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -234,6 +240,12 @@ where $E_\text{initial}$ is the sum of the energies of all forms of energy in th
 
 The sum includes all forms of energy, thermal energy too. When a skateboarder slides from the edge of a half-pipe to the bottom and friction acts, the mechanical energy $E_\text{p} + E_\text{k}$ decreases, but the thermal energy $E_\text{thermal}$ increases by the same amount. The sum $E_\text{p} + E_\text{k} + E_\text{thermal}$ does not change. So friction does not create energy: it changes mechanical energy into thermal energy, and the wheels, the ramp and the air warm up a little.
 
+```pysahdy
+Friction makes a skateboarder's mechanical energy decrease by $50\,\text{J}$. What happens to the thermal energy if the system is isolated?
+---
+The thermal energy increases by $50\,\text{J}$. The total energy does not change, because energy is neither created nor destroyed.
+```
+
 <svg data-fig="sailyminen" viewBox="0 0 600 380" role="img" aria-label="Schematic diagram: a skateboarder in a half-pipe at three moments, with the energies at each moment as bars. At the start the skateboarder is at rest at the edge, and all the energy, 800 J, is potential energy. In the middle there is 300 J of potential energy, 450 J of kinetic energy and 50 J of thermal energy. At the bottom there is no potential energy, 700 J of kinetic energy and 100 J of thermal energy. The heights of the bars are to scale, and the total height of every bar corresponds to 800 joules, so there is the same amount of energy at every moment." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy21-hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#c92a2a"/><line x1="0" y1="0" x2="0" y2="8" stroke="#f2a69c" stroke-width="3"/></pattern></defs>
   <path d="M10,38 L20,38 Q100,146 180,38 L190,38 L190,106 L10,106 Z" fill="#c4ccd4" stroke-linejoin="round"/>
@@ -273,6 +285,12 @@ The sum includes all forms of energy, thermal energy too. When a skateboarder sl
 
 ### Using up energy is changing energy
 In everyday language energy is "used up", but in physics it does not run out. When a device uses energy, it changes energy from one form to another. Most often the largest part changes into thermal energy, which is transferred as heat into the surroundings and is hard to use any more. In short, people often say that energy "changes into heat". This is why it is worth saving energy even though it cannot be destroyed.
+
+```pysahdy
+A phone battery "runs out" as you use the phone. Where has the battery's energy gone?
+---
+It has not disappeared. The energy has changed into other forms, for example light and thermal energy, and most of it is transferred as heat into the surroundings.
+```
 
 ## Worked example
 A skateboarder starts from rest at the edge of a half-pipe. At the edge her potential energy is $840\,\text{J}$, when the zero level is the bottom of the half-pipe. At the bottom her kinetic energy is $0.72\,\text{kJ}$. The skateboarder, the half-pipe and the surroundings form an isolated system. How much energy has friction changed into thermal energy during the slide?

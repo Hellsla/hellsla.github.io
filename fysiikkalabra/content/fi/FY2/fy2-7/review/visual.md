@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 6ebeaf7d60d2780c
+CONTENT-HASH: ca73ac76c2ec0d87
 
 ## Blocking
 
 ## Polish
+- none
 
 ## Checked
-- Delta (inquiry.json chains re-broken into rows): opened fi open-tarkista-1280 part 3 (Laskutehtävä solution: aligned SIJOITUS rows, boxed VASTAUS, JÄRKEVYYS block). Rows align at "=", nothing clipped, layout intact. Decimal comma correct.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: diff adds pysahdy blocks only; checked the rendered block style in fy2-2 theory-1280-2 (maths, units, openable Vastaus fine) and fig-row-1280 for fy2-5 and fy2-8; the other lessons' own captures not individually opened, no literal markup in their block sources.

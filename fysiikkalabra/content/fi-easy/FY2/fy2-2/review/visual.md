@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 185e6302bbcff16e
+CONTENT-HASH: 09214a4f687ff460
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- batch delta review: rendered the optional 'Find the error' prompt at 390 px (display aligned chain on two rows, decimal comma, options intact); opened sim-390 and fig-row-1280.
+batch delta review: example-390-2 (Tulos, formulas fine, readable), fig-row-1280; changes are wording and units in correct LaTeX.

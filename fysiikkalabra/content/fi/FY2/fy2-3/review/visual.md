@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 395a70d4a5bd17b8
+CONTENT-HASH: bdade215d89493f1
 
 ## Blocking
 
 ## Polish
+- none
 
 ## Checked
-- batch delta review: only the optional retrieval task in inquiry.json changed (wording, no symbols); read the diff, no figure or layout change.
+- batch delta review: diff adds pysahdy blocks only; checked the rendered block style in fy2-2 theory-1280-2 (maths, units, openable Vastaus fine) and fig-row-1280 for fy2-5 and fy2-8; the other lessons' own captures not individually opened, no literal markup in their block sources.

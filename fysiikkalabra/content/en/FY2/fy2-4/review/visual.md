@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ce34af38fb94da7d
+CONTENT-HASH: da144a33e701c6ed
 
 ## Blocking
 
 ## Polish
-- [Minor] inquiry.json conclusion task title "Conclusion: what efficiency depends on" — the prompt no longer asks whether efficiency changed with time, so the title promises more than the task asks — consider "Conclusion: efficiency in the petrol engine".
+- [Minor] exp-koe-2 at 390 px — the "Simulation readings" table caption still wraps to two lines and the header row is narrow — leave to the shared component (unchanged from round 3).
 
 ## Checked
-- Delta (inquiry.json only): opened fy2-4-stage-tutki-390-1 and -2, fy2-4-lab-1280, fy2-4-stage-tarkista-390-1 and -2.
-- Experiment 1 intro: new wording reads fluently, all quantities in LaTeX ($60\,\text{kW}$, $E_\text{o}$ etc.), no layout damage, paragraph short.
-- Recap prompt: shortened prompt renders in its card, textarea and buttons intact.
-- Heater concept task (task 3): replaced option "About $50\,\%$" renders with the maths set properly; options and the Answer button are in order; no clipping at 390 px.
-- Figures unchanged by the diff; not reopened.
+- Delta (inquiry.json only: the third exit-ticket self-check item now reads "I said that the efficiency of the incandescent lamp is about $5\,\%$, so only a small part of the energy taken is useful.").
+- fy2-4-stage-tarkista-390-3: Test and assess at 390 px. The self-assessment block is intact and nothing is clipped.
+- fy2-4-open-exit-1280: the exit ticket at 1280 px with answers open. The layout is intact and the figures are LaTeX with units. The model answer to task 3 gives about $5\,\%$ for the incandescent lamps, which matches the new self-check item.
+- The new item's wording is clean: the value is LaTeX with a thin space and a unit, the sentence is fluent, and it is parallel to the other items.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f580794a34c9dd43
+CONTENT-HASH: 101e7629934e25bd
 
 ## Blocking
-- none
 
 ## Polish
-- content/fi/FY2/fy2-5/inquiry.json (feedback of the choice "Polttopuun luku on suurempi…") — the edit dropped the full stop after "$22\,\text{MJ/kg}$", so "…= 22 MJ/kg Se on suurempi…" now runs two sentences together — put the "." back after the formula.
+- None.
 
 ## Checked
-- batch delta review: the feedback's physics and numbers are unchanged. 2200 kJ = 2,2 MJ, 100 g = 0,100 kg, and 2,2 MJ : 0,100 kg = 22 MJ/kg, which is more than wood's 15 MJ/kg. The choice is still wrong, its feedback still says why, and exactly one option stays correct. The lesson.md changes are paragraph splits only, and its figures are teacher-approved. The hash was the same at the start and at the end.
+batch delta review: 43 MJ / 15 MJ/kg = 2,87 kg -> 2,9 kg (more than 1,0 kg), pellet 17 MJ/kg from the lesson's table x 0,250 kg = 4,25 MJ -> about 4,3 MJ, dry vs wet wood reason matches the paragraph above it. Recomputed in one script; no option or feedback changed.

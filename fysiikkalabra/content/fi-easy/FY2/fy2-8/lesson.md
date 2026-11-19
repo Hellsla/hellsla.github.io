@@ -123,6 +123,12 @@ Aurinko lämmittää maanpintaa. Se lähettää maanpinnalle energiaa säteilyn�
 
 Kasvihuonekaasut päästävät siis auringon säteilyn läpi, mutta hidastavat lämpösäteilyn pääsyä pois. Maanpinta pysyy lämpimämpänä kuin ilman niitä. Maan yksinkertainen **säteilytasapainomalli** olettaa, että Maa lähettää avaruuteen yhtä paljon energiaa kuin se saa Auringolta. Mallin antama lämpötila on Maan **efektiivinen säteilylämpötila**, noin $-18\,{}^\circ\text{C}$. Maanpinnan keskilämpötila on kuitenkin noin $+15\,{}^\circ\text{C}$. Ero näyttää, kuinka tärkeä **kasvihuoneilmiö** on. Luku $-18\,{}^\circ\text{C}$ ei ole tarkka ennuste pinnan lämpötilasta ilman kasvihuonekaasuja. Silloin muuttuisivat myös esimerkiksi pilvet ja jää. Luonnollinen kasvihuoneilmiö pitää maapallon asuttavana. Ilman sitä merien vesi olisi jäässä.
 
+```pysahdy
+Mikä kasvihuonekaasuissa saa maanpinnan pysymään lämpimänä, vaikka ne päästävät auringon säteilyn läpi?
+---
+Ne hidastavat lämpösäteilyn pääsyä pois avaruuteen. Lisäksi ne säteilevät osan energiasta takaisin maanpinnalle.
+```
+
 <svg data-fig="greenhouse" viewBox="0 0 600 440" role="img" aria-label="Periaatekuva, ei mittakaavassa: kasvihuoneilmiö. Auringon säteily (oranssi nuoli) on näkyvää valoa ja lähi-infrapunaa. Se kulkee suurelta osin ilmakehän läpi ja lämmittää maanpinnan. Lämmin maanpinta lähettää lämpösäteilyä ylöspäin (punaiset nuolet). Ilmakehän kasvihuonekaasut imevät sen. Kaasut säteilevät energian uudelleen. Osa energiasta palaa takaisin alas maanpinnalle ja osa karkaa avaruuteen. Nuolten paksuus näyttää suunnan, ei tarkkoja energioita." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy28-heat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy28-ir" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient><linearGradient id="fy28-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><radialGradient id="fy28-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient></defs>
   <circle cx="76" cy="70" r="51" fill="#ffffff" fill-opacity="0.5"/>
@@ -165,12 +171,24 @@ FY3-kurssilla kasvihuoneilmiötä käsitellään myös laskuilla. Se tehdään l
 ### Polttoaineet yhdistävät energian ja ilmaston
 Fossiilinen polttoaine on esimerkiksi kivihiili, öljy tai maakaasu. Se on muinaisten eliöiden kemiallista energiaa. Kivihiili on syntynyt enimmäkseen kasveista. Öljy ja maakaasu ovat syntyneet meren planktonista. Kun tällainen hiiltä sisältävä polttoaine palaa täydellisesti, sen hiili yhtyy hapen kanssa: $\text{C} + \text{O}_2 \rightarrow \text{CO}_2$. Kemiallinen energia vapautuu lämpönä (luku *Polttoaineet ja lämpöarvo $E = Hm$*). Hiilidioksidi poistuu savukaasujen mukana ilmakehään. Mitä enemmän energiaa otetaan polttamalla hiilipitoisia polttoaineita, sitä enemmän hiilidioksidia vapautuu. Kaikissa polttoaineissa ei ole hiiltä. Esimerkiksi vedyn palaessa syntyy vain vettä.
 
+```pysahdy
+Miksi vedyn polttaminen ei lisää ilmakehän hiilidioksidia?
+---
+Vety ei sisällä hiiltä, joten palaessa ei synny $\text{CO}_2$:ta vaan vettä.
+```
+
 Fossiilisen polttoaineen hiili on ollut maan alla miljoonia vuosia. Siksi sen polttaminen lisää ilmakehän hiilidioksidia. Biomassan, esimerkiksi puun, hiili on sitoutunut eli varastoitunut kasveihin vasta vuosikymmenten aikana. Biomassan poltto ei silti ole päästötöntä. Polton hiilidioksidi on ilmakehässä, kunnes uusi kasvu sitoo sen takaisin. Siihen menee vuosikymmeniä, ja kasvien täytyy todella kasvaa uudelleen. Lisäksi viljely, korjuu ja kuljetus aiheuttavat omia päästöjä.
 
 <figure class="unit-photo"><img src="pics/fy2/europe-at-night.webp" alt="Eurooppa yöllä ylhäältä katsottuna. Tummalla maalla on paljon oransseja valoja."><figcaption>Luoteis-Eurooppa yöllä avaruusasemalta kuvattuna vuonna 2011. Kaupunkien valot näkyvät avaruuteen asti.</figcaption></figure>
 
 ### Tuotantotapoja verrataan elinkaaren päästöillä
 Päästöjä syntyy muustakin kuin polttamisesta. Voimala on rakennettava teräksestä, betonista ja kuparista. Polttoaine on kaivettava tai kerättävä ja kuljetettava. Lopuksi voimala puretaan. Siksi tuotantotapoja verrataan **elinkaaren päästöillä**. Elinkaari on voimalan koko ikä rakentamisesta purkamiseen. Silloin kaikkien vaiheiden päästöt lasketaan yhteen. Summa jaetaan energialla, jonka voimala tuottaa koko elinkaarensa aikana.
+
+```pysahdy
+Tuulivoimala ei polta mitään. Miksi sen elinkaaren päästöt eivät silti ole nolla?
+---
+Päästöjä syntyy voimalan rakentamisessa, kuljetuksessa ja purkamisessa. Elinkaari tarkoittaa koko voimalan ikää, ja siihen kuuluvat nämä vaiheet.
+```
 
 Vertailua varten metaani ja muut kasvihuonekaasut muutetaan hiilidioksidiekvivalenteiksi ($\text{CO}_2$-ekv.). Se tarkoittaa sellaista hiilidioksidin määrää, jolla on sama lämmittävä vaikutus.
 

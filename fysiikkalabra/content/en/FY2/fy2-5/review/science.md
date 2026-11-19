@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 53ebde5f1231272f
+CONTENT-HASH: e490e2b95fed37e2
 
 ## Blocking
+(none)
 
 ## Polish
-- inquiry.json, firewood distractor feedback: the edit dropped the full stop after `$22\,\text{MJ/kg}$`, so two sentences now run together; restore the period.
+- Dry/wet question: "Two kilograms of firewood have the same mass" reads as one 2 kg amount; "Two 1 kg pieces of firewood" would be unambiguous.
 
 ## Checked
-batch delta review: distractor feedback recomputed (2200 kJ = 2.2 MJ, 100 g = 0.100 kg, 2.2 MJ / 0.100 kg = 22 MJ/kg > 15 MJ/kg); physics unchanged and still says why the option is wrong; lesson.md changes are teacher-approved figures and paragraph presentation only.
+batch delta review: recomputed 43 MJ : 15 MJ/kg = 2.87 kg ≈ 2.9 kg (more than 1.0 kg), E = Hm = 17 MJ/kg x 0.250 kg = 4.25 MJ ≈ 4.3 MJ (table value 17 MJ/kg confirmed, two figures fit); moisture explanation (non-burning water plus vaporisation energy) matches the lesson text.

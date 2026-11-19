@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 18d3ea7dbe6b16e4
+CONTENT-HASH: 2909876712aaaed8
 
 ## Blocking
 
 ## Polish
-- (none)
+- The power-line pysahdy assumes identical conductors (same resistance); the preceding theory implies it, so a C simplification. Optional: 'samanlaiset johtimet'.
 
 ## Checked
-batch delta review: retrieval prompt gains the district-heating pump context; data 8,0 and 6,0 kWh and the options (0,75 correct; 1,33, 0,25, 2,0 kWh wrong) unchanged and still right; worked example knowns as a list, 245 MWh and 9,0 % unchanged.
+batch delta review: same power at lower voltage means larger current and more heating (correct given the theory); 100 - 91 = 9 GWh = 9 %, energy transferred to surroundings as heat; pumped storage as potential energy of the upper reservoir's water, losses in each conversion (FY2 wording, same as the existing paragraph); inquiry.json presentation only.

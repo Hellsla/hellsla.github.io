@@ -124,6 +124,12 @@ How fast energy is transformed or transferred is called **power**. Power is ener
 
 Power does not tell you how much energy a device uses in total. For that you need power together with time: a low power for a long time can transform the same energy as a high power for a short moment. This is why an electricity bill depends on both the power of the device and how long it is used.
 
+```pysahdy
+Device A runs for $1\,\text{h}$ at $100\,\text{W}$ and device B for $1\,\text{min}$ at $2000\,\text{W}$. Which one transforms more energy?
+---
+Device A. Its energy is $100\,\text{W} \cdot 3600\,\text{s} = 360\,\text{kJ}$, while device B transforms only $2000\,\text{W} \cdot 60\,\text{s} = 120\,\text{kJ}$.
+```
+
 <figure class="unit-photo"><img src="pics/fy2/offshore-wind-sunset.webp" alt="Four wind turbines at sea on the horizon against an orange sunset sky."><figcaption>Offshore wind turbines at sunset. A turbine's power tells how fast it produces electrical energy. The energy produced in a day also depends on how long and how strongly the wind blows.</figcaption></figure>
 
 ## Formula: Power
@@ -139,6 +145,12 @@ t &= \frac{E}{P}
 \end{aligned}
 ```
 The unit of power is the watt: $1\,\text{W} = 1\,\text{J/s}$. Prefixes work as with other quantities (chapter *Quantities, units and the SI system*): $1\,\text{kW} = 1000\,\text{W}$ and $1\,\text{MW} = 10^{6}\,\text{W}$. The power of power plants is measured in megawatts: the electrical power of the Olkiluoto 3 nuclear power unit is about $1600\,\text{MW}$ (TVO), as much as about $800\,000$ kettles.
+
+```pysahdy
+A lamp transforms $60\,\text{J}$ of energy in five seconds. What is the power of the lamp?
+---
+Power is energy divided by time: $P = 60\,\text{J} : 5\,\text{s} = 12\,\text{W}$.
+```
 
 If a device transforms energy steadily, energy as a function of time is a straight line starting from the origin. The slope of the line is the power: the greater the power, the more steeply the energy grows. In the figure, on the kettle's line the energy grows by $40\,\text{kJ}$ in a time interval of $20\,\text{s}$. Substituting $1\,\text{kJ} = 1000\,\text{J}$: $40\,\text{kJ} = 40 \cdot 1000\,\text{J} = 40\,000\,\text{J}$, so $P = 40\,000\,\text{J} : 20\,\text{s} = 2000\,\text{W}$.
 
@@ -191,6 +203,12 @@ Electrical energy is billed in kilowatt-hours (kWh). One kilowatt-hour is the en
 \end{aligned}
 ```
 A kilowatt-hour is therefore a unit of energy, not of power. The formula $E = P\,t$ gives kilowatt-hours directly when power is in kilowatts and time in hours: $\text{kW} \cdot \text{h} = \text{kWh}$.
+
+```pysahdy
+A device with a power of $2\,\text{kW}$ is on for three hours. How many kilowatt-hours appear on the electricity bill?
+---
+Energy is power times time: $2\,\text{kW} \cdot 3\,\text{h} = 6\,\text{kWh}$.
+```
 
 ### Typical powers and the electricity bill
 The table shows typical powers of household appliances, rounded from the typical values given by manufacturers. The power of a real appliance is on its rating plate. The power of a refrigerator is the power while its compressor runs, and the compressor does not run all the time.

@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 98b85659627fb4ea
+CONTENT-HASH: 0ab3b882243e0419
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] Tulos-kappale: "kymmenen kilojoulen tarkkuudella" kahdesti peräkkäin; toisen voisi korvata sanalla "samalla tarkkuudella".
 
 ## Checked
-batch delta review: fy2-2 inquiry 'Etsi virhe' prompt rendered at 390 px (display chain above the question, aligned rows, choices intact); sovella-390-1/2 for the surroundings. Figures untouched by the diff, not reopened.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: fig-row-1280 (kuvan 2 vierus), example-390-2 (Tulos ja Järkevyys); photo caption, inquiry model and feedback wording read in the diff; layout intact, maths renders, no clipping.

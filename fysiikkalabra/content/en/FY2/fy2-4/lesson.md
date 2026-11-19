@@ -87,6 +87,12 @@ The flow of energy through a device can be shown with an energy flow diagram, al
 ### Losses depend on the purpose of the device
 In a kettle, heat is useful when it warms the water, and a loss when it escapes through the sides of the kettle into the room. The heat of an incandescent lamp, on the other hand, is counted as a loss, even if it warms a room in winter, because the benefit of the lamp has been defined as light. So what is useful depends on the purpose of the device, and the value of the efficiency depends on what is defined as useful and what is counted as part of the device.
 
+```pysahdy
+The purpose of an electric heater is to warm a room. Is the heat it produces useful or a loss?
+---
+It is useful, because the benefit of a heater has been defined as heat. The same heat would be a loss in a device whose purpose is, for example, to give light.
+```
+
 ### Efficiency tells the share of the useful part
 Efficiency is the share of useful energy in the energy taken by the device. Efficiency is at most $100\,\%$, because energy is conserved and you cannot get more useful energy out than you put in. In real devices it is often below $100\,\%$, because part of the energy taken does not end up in the defined useful purpose: for example, it becomes heat in friction or in conductors, and the heat spreads into the surroundings. When the purpose of a device is something other than heat, efficiency varies a lot: an electric motor reaches about $90\,\%$, but a lamp and a combustion engine stay clearly below $100\,\%$. In an electric heater the purpose is the heat itself: in practice all the electrical energy becomes heat that warms the room, so the efficiency is almost $100\,\%$. An ideal, lossless device would have an efficiency of $100\,\%$. The efficiencies of devices vary a lot:
 
@@ -100,6 +106,12 @@ Efficiency is the share of useful energy in the energy taken by the device. Effi
 | solar panel: electricity | $20\,\%$ |
 
 The values in the table are typical rounded values, not measurements of any particular device. The real efficiency depends on the model of the device and on the way it is used. The value for the petrol engine is typical for steady motorway driving; in city driving and at other small loads the efficiency is clearly lower. The efficiency of an electric motor changes little when it runs close to the power it was designed for.
+
+```pysahdy
+A manufacturer claims that a device has an efficiency of $120\,\%$. Why cannot the claim be true?
+---
+Energy is conserved, so a device cannot give more useful energy than it takes in. That is why efficiency is at most $100\,\%$.
+```
 
 ## Formula: Efficiency
 Efficiency $\eta$ (eta) is the ratio of the useful energy to the energy taken by the device. When the device runs at constant power, the same ratio is also obtained from powers:
@@ -124,6 +136,13 @@ Conservation of energy divides the energy taken by the device into useful energy
 E_\text{o} = E_\text{a} + E_\text{h}
 ```
 The same holds for powers, $P_\text{o} = P_\text{a} + P_\text{h}$. When the efficiency is known, the useful energy is $E_\text{a} = \eta \cdot E_\text{o}$ and the energy taken is $E_\text{o} = \tfrac{E_\text{a}}{\eta}$.
+
+```pysahdy
+A device takes in energy $50\,\text{J}$ and gives useful energy $20\,\text{J}$. How much is lost, and what is the efficiency?
+---
+The losses are $E_\text{h} = 50\,\text{J} - 20\,\text{J} = 30\,\text{J}$.
+The efficiency is $20\,\text{J} : 50\,\text{J} = 0.40$, or $40\,\%$.
+```
 
 ### Comparing two lamps
 A lamp with a low efficiency needs a higher power to get the same useful output. For a light power of $3\,\text{W}$ an incandescent lamp needs $60\,\text{W}$ but an LED lamp only $10\,\text{W}$, because the efficiencies are $5\,\%$ and $30\,\%$. In the diagram the thicknesses of the arrows are on the same scale: the green arrows of the light power are equally thick, but the incoming arrow of the incandescent lamp is six times thicker.
