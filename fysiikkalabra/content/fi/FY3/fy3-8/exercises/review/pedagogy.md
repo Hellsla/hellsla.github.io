@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 9574c3020bc20cb0
-SCOPE: delta wording from base 6153818
+SCOPE: delta wording from df1aa72edd405367 base 6153818
 ## Blocking
 (none)
 ## Polish

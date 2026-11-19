@@ -59,11 +59,10 @@ Varattu: claude/elevenlabs-readaloud
 äänitetty; FY2 odottaa opettajan päätöstä. Sääntö: `CLAUDE.md` "Parts specified…", `docs/decisions/oppituntisivun-osat.md`. Tarkka toimeksianto: loki §5c.
 
 ## 5d. Leikkautuvat kaavat omalle rivilleen (opettaja 2026-11-15)
-Varattu: claude/fy3-paketti (FY3: fy3-8 sanamuoto, P7-täsmennys, 23 kaavariviä).
 Tehty kaikille kursseille FY1–FY9 (loki §5d: kurssikohtaiset luvut, opit ja listalle jääneet rivit). Jäljellä vain
 `docs/clipped-formulas/`:n tähderivit; ne tehdään 0c:n jälkeen ilman täysiä katselmointeja. Menetelmä: loki §5d "Opit".
-FY1 tehty (#724). FY2 tehty (#749): jäljellä 14 riviä (lainatut opiskelijan laskut exercises.json:ssa fy2-3, fy2-8; fy2-6:n ja fy2-8:n Järkevyys-ketjujen jatkorivit). FY3: 23 riviä jää (lainatut
-opiskelijan laskut ja lauseen sisäiset ketjut fy3-4, fy3-5, fy3-12, fy3-15 sekä fy3-10:n `\dfrac`).
+FY1 tehty (#724). FY2 tehty (#749): jäljellä 14 riviä (lainatut opiskelijan laskut exercises.json:ssa fy2-3, fy2-8; fy2-6:n ja fy2-8:n Järkevyys-ketjujen jatkorivit). FY3: 20 riviä jää (fy3-15:n kolme rivinvaihtoa tehty; lainatut
+opiskelijan laskut ja lauseen sisäiset ketjut fy3-4, fy3-5, fy3-12 sekä fy3-10:n `\dfrac`-rivi, jonka rivittäminen vaatisi sisältömuutoksen; ei tehtävissä pelkällä rivityksellä, koska `$$` irrottaa lauseen sisältä välimerkin ja päätteen, esim. "…kg:n massan").
 
 ## 6. Kuvatehtävät ja taulukkotehtävät FY9 (opettaja 2026-11-13…15)
 FY9 A tehty (claude/fy9-a-kuvatehtavat, #714): fy9-voimat s7–s8, fy9-ympyraliike s8–s9, fy9-sailymislait s7–s8, fy9-energia s8–s9; FY9 B on toisen työntekijän.
@@ -172,7 +171,7 @@ Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jäl
 - Podcastien YouTube-linkit jätetään pois toistaiseksi (opettaja 2026-11-18 klo 22.00).
 - 11 U2: opettaja 2026-11-18 klo 22.00: toimintarivin järjestys Kirjoita ratkaisu → vastauskenttä → Tarkista ("ensin kirjoitetaan ratkaisu, vasta sitten tarkistetaan"); uudet kuvat opettajalle ennen yhdistämistä. **Kuvat hyväksytty: opettaja 2026-11-19 aamulla ("kaikki ok").** Lisäys (opettaja 2026-11-19 klo 07.15, kuvakaappaus): monivalintatehtävissä Kirjoita ratkaisu ja Vastaa samalle riville (Kirjoita ratkaisu ensin); uudet kuvat opettajalle.
 - Podcastit-sivun (fi) muu kieli -laatikon teksti (opettaja 2026-11-18 klo 19.00, "käy"): lead "Haluatko kuulla fysiikkaa myös englanniksi?"; text "Tutustu englanninkielisiin fysiikan podcasteihin, dokumentteihin ja opetusvideoihin. Tutut ilmiöt avautuvat uudesta näkökulmasta, ja samalla opit fysiikan sanastoa englanniksi."; link ennallaan.
-- Opettajan päätökset 2026-11-19 aamulla (koordinaattorin chatissa, "Kaikki ok"): FY3 fy3-8 ensimmäisen tehtävän sanamuoto "1,000 kg vettä tilavuus" → "1,000 kg:n vesimäärän tilavuus" ja fy3-11:n merkitsevien numeroiden ohje (480 kW) täsmennetään (FY3:n seuraava PR); jaetut yksi kerrallaan: header 72 rem → CI-tarkistus site/-sivujen poistolle → 0g PR 2; rinnalla 5d FY2 (37) ja FY3 (23) riviä.
+- Opettajan päätökset 2026-11-19 aamulla (koordinaattorin chatissa, "Kaikki ok"): FY3 FY3 fy3-8 sanamuoto ja fy3-11:n 480 kW:n merkitsevien numeroiden ohje (P7) tehty (FY3-paketti); jaetut yksi kerrallaan: header 72 rem → CI-tarkistus site/-sivujen poistolle → 0g PR 2; rinnalla 5d FY2 (37) ja FY3 (23) riviä.
 - Kirjavinkkien Finna-tietuelinkit ja podcastien YouTube-linkit odottavat: Finna estää koneellisen haun (Cloudflare), YouTube-linkki vaatisi jaetun muutoksen (`media_tips.py`) ja opettajan päätöksen.
 
 ## 21. Sivujen tunnuskuvat Ruukki-logon tyyliin (opettaja 2026-11-19 klo 07.10, kuvakaappaukset koordinaattorin chatissa)
