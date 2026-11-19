@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: bd6bacd79b01be65
-ROUND: 1
+CONTENT-HASH: 9af6d9f3ec3711d8
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions.md fy5-13-L3-04 Sijoitus — part c) still starts mid-paragraph after b); give c) its own paragraph.
-- [Minor] solutions.md 19, 79, 165 — sentence ends in a bare "ja" before the boxed check (carried); optional "ja tarkistus:".
 
 ## Checked
-- fy5-13 open-exercises-L3-1280-5, -6, -7 (L3-04 and L3-05 solutions open, 1280 px): the new paragraph breaks sit inside the cards, boxed chains, Vastaus and Järkevyys blocks are intact, no overflow or clipping.
-- Delta only: paragraph cuts in solutions.md, words, formulas and units unchanged (diff read in full). Captures are current for this hash.
+- Delta (round 2): fy5-13-L2-02 text and solution add "Putken pääkorjausta ei huomioida." and reword the Järkevyys line; no figure, number or formula changed.
+- Wording read in the diff: fluent, quantities in LaTeX with units, the sentence sits before the question as the task form requires; solution order principle, formula, substitution, answer, check intact.
+- Layout checks clean per packet; earlier-passed exercise captures (open-exercises-L2) unaffected by a one-sentence change.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

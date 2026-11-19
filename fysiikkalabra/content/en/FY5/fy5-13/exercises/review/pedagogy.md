@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c171c990ac869bc0
-SCOPE: delta added-exercise from bd646f704080b1bf base 81db4a6fd727
+CONTENT-HASH: b9c26731e5db9e1f
 
 ## Blocking
-(none)
 
 ## Polish
-- fy5-13-L2-09: the text says 'four-loop pattern of the figure'; the solution counts loops (four) correctly, so a student counting nodes (five) is warned by the figure description; fine.
+- Remaining earlier polish (L3-01 single step, L2-04/L2-09 near-duplicates, L1-09 look-up at level 1) is untouched by this diff and still stands.
 
 ## Checked
-- L2-09 (reworked): L and n = 4 read from the figure, then f5 - f4 = v/(2L) = 31.25 Hz (31.3 Hz); the change of loops is a better question than a plain frequency and demands the harmonic idea.
-- The question (by how many hertz) is its own sentence last; the solution is staged and the check (difference = f1) is insightful.
-- Level 2 fits; no repeat of the worked example; answer tolerance 2 % covers 31.3.
+- L2-02 text now states that the end correction is ignored, so the single-length measurement is a fair, closed task and the 339.68 m/s answer is unambiguous.
+- solutions.md L2-02 repeats this in the principle paragraph and the reasonableness line no longer claims two resonances cancel the correction; the muddle I flagged is repaired.
+- The reasonableness line still explains for a student why a real measurement would read slightly short.
+- No numbers, units or answers changed; levels, counts and figure task are as passed.
