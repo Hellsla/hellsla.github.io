@@ -180,6 +180,29 @@ Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jäl
 Varattu: claude/22-taulukko-kuva
 Jaettu (build.py / site.css), yksin, #740:n ja #733:n jälkeen ennen kohtaa 21 (opettaja 2026-11-19). Kun tehtäväkortissa on pieni taulukko ja kuva peräkkäin ja ne mahtuvat, ne asettuvat vierekkäin leveällä näytöllä (sääntö "Figures, photos and small tables beside what they explain"); puhelimella allekkain. Samalla taulukon otsikko ei rivity kapeaksi eikä taulukkolaatikkoon jää tyhjää oikeaa reunaa. Malli fy8-3 (fotonit A–E ja energiatasot). check_layout.py-tarkistus uudelle asettelulle; ennen/jälkeen-kuvat 1280 ja 390 px opettajalle. **Kuvat hyväksytty: opettaja 2026-11-19 klo 12.4x ("hyväksyn kuvat").**
 
+## 24. Uudet kuvat sivustolle (opettaja 2026-11-19; kuvat hyväksytty 15.–18.11.)
+662 Codexin uudelleen piirtämää kuvaa FY1–FY10 ja FY14, opettaja hyväksynyt ja tarkistanut vaihdettaviksi. Lähde: haara
+`claude/dazzling-pasteur-kws2vo`, kansio `uudet_kuvat/` (README, `<MODUULI>-hyvaksytyt-kuvat.zip`: `kuvat/`, `merkinnoin/`,
+`ASETTELU.tsv`, `PAATOS.txt`; `VAIHDETTAVUUS.tsv`). **Haaraa ei yhdistetä mainiin; PNG:t eivät mene mainiin.** Mainin
+`downloads/`-zippejä ei käytetä (poisto opettajan päätös). Vaihdetaan vain `kuvat/`-kuvat; ennalleen kuvaajat, ohitetut ja
+"pidä alkuperäinen" (`PAATOS.txt`); vuorovaikutteisen elementin osaa ei korvata (opettaja 17.11.); monivalinnan
+vaihtoehtokuvat (13 tehtävää, 50 kuvaa) koko tehtävä kerrallaan; `fy2-4/grid` ja `fy7-2/track-sign` FY9:ssä omistajamoduulin
+uudella versiolla. Piirroksia ei muuteta; jos kuva ei toimi sivulla, opettajalle (uusi piirros = uusi hyväksyntä).
+Osa 1 (jaettu, yksin; pysähtyy opettajan hyväksyntään): `figlib.py`/`scripts/figures.py` kuvatiedosto piirroksen pohjaksi,
+merkinnät LaTeX-`foreignObject`eina kuten nyt, asettelu moduulin asettelutiedostosta, sama polku `figcat.py`-tehtäväkuville;
+WebP ≤ ~1600 px `assets/pics/<moduuli>/` (kaikki yhteensä < 100 Mt); `build.py` polut myös `en/` ja `fi-easy/`;
+`lint_lesson.py` (kuvatiedosto ei ole väritön kuva; `<text>`-kielto ja LaTeX ennallaan); `reviews.py` tarkistussumma kattaa
+kuvatiedoston, hyväksyntä `approve-figures`, siirto `teacher-figure`; merkinnän valkoinen tausta pois tasaisella pohjalla,
+jää kuvioinnin päällä (opettaja 15.11.; `merkinnoin/` näyttää lopputuloksen); `check_layout.py`, `test_notation.py`,
+`ci_scope.py` (uusi tiedostolaji), NOTES.md §3. Pilotti FY2 (20 kuvaa) ennen/jälkeen kaikilla kielillä; erikseen
+`fy2-7/district`, `fy2-7/grid`, `fy2-7/storage` (en poikkeaa fi:stä).
+Osat 2–11: FY1, FY3–FY10, FY14 yksi moduuli kerrallaan, oma ketju ja luonnos-PR; kuvat lukuihin kaikilla kielillä,
+`approve-figures`, build, tarkistukset; opettaja katsoo moduulin kerran valmiilta sivulta ennen yhdistämistä.
+Huomiot: FY3 seitsemän kuvaa tunnistetaan kuvauksesta (`~lesson-N`); FY5 `fy5-10/types` "harvennus" → "harventuma"
+(lähde ja `glossary.json` vanhalla sanalla: kysytty opettajalta, muutetaanko kaikkialla); FY8 suurennettu kuvankäsittelyllä
+(pienentämättömät korvaavat, jos opettaja toimittaa); FY9 11 voimakuviota kuvauksesta (`nimeton-N`); FY14 sivut englanniksi;
+`PAATOS.txt`:n mittasuhde- ja yksityiskohtahuomiot hyväksytty sellaisinaan, ei korjata. Opettaja yhdistää kohdan PR:t.
+
 ## 14. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13; juuri ennen vihkoja)
 Siirretään `ahjo.py` ja `lumatutor.py` jaksopohjan lohkoiksi niin, että sivut pysyvät tavulleen samoina kuten Kilparobotiikassa; puuttuvat lohkot yhteiseen kirjastoon. Jaettu: yksin.
 
