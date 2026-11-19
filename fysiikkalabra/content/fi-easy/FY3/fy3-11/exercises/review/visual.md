@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 0fc397895a2ab582
-Mode: delta
-Round: 1
+CONTENT-HASH: 191a6317ef0bbcdc
+SCOPE: delta wording from 0fc397895a2ab582 base 6153818
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-None.
+(none)
 
 ## Checked
-- Delta: changed task texts (prefix "Esimerkkiaineisto:" removed, each text now opens with a capital); read in the diff. Layout judged from the shared open-exercise rendering (fy3-4 and fy3-13 L3 captures opened; same component).
-- Wording only: the new openings read naturally; maths and units unchanged and in LaTeX.
+- Delta: only the Answer line of L2-04 in solutions.md. Vastaus-rivi: lyhyet selkeät lauseet, syy ensin, Siksi-päätelmä; selkeä suomi säilyy.
+- Opened content/en/FY3/fy3-11/review/shots/fy3-11-open-exercises-L2-1280-4.png and -5.png, -6.png (layout around the change intact). No phone capture of the solution opened; the change is plain prose, no new formula row.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
