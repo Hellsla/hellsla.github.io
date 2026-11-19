@@ -186,3 +186,7 @@ Siirretään `ahjo.py` ja `lumatutor.py` jaksopohjan lohkoiksi niin, että sivut
 ## 16. Vihkot FY1–FY8 (opettaja 2026-11-13; jonon viimeinen)
 A5-vihkot kaikille kursseille tiiviillä asettelulla (`python scripts/print_book.py <C> --lang fi|en --publish`); FY1–FY4 tehdään uudelleen, FY5–FY8 uusia. Vasta kohtien 3, 17 ja 18
 jälkeen; rakenna sivusto vihkojen jälkeen (Vihkot-sivu).
+
+## 23. Prosessisivu ruukkilab.fi/prosessi (opettaja 2026-11-19 klo 18.50)
+Varattu: claude/23-prosessisivu
+Opettajan päätös koordinaattorin chatissa: "päivitä ja muuta grafiikat niin että ne vastaavat ruukkilab tilannetta. sitten se voisi olla osoitteessa ruukkilab.fi/prosessi" + "ok". Repon juuren `agent-office/` (pikselitoimisto, 28.10. tilassa) tehdään nykyprosessia kuvaavaksi sivuksi Ruukkilabran omalla ilmeellä (värit, fontit ja logo `templates/site.css`:stä ja `brand/`:sta; tunnuskuvat kuten kohdassa 21, `scripts/page_art.py`). Sivu rakentuu sivuston buildin kautta `site/prosessi/`; ei linkkiä hellsla.github.io:hon, ei seurantaa, ei ulkoisia skriptejä, suhteelliset linkit, ei linkkiä muilta sivuilta ilman opettajan lupaa. Jaettu (`scripts/build.py`, `templates/`): yksin. Ennen/jälkeen-kuvat 1280 ja 390 px kansioon `docs/audits/img23/`, sitten pysähdytään opettajan hyväksyntään.
