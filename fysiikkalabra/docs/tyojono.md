@@ -167,6 +167,8 @@ Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jäl
 - 5d: FY5:n 16 ja FY6:n 25 jäljellä olevaa riviä jäävät listalle (myös fy5-7 `x = A \sin(…)`).
 - Pysähdy ja mieti: FY1:n luvut tehty (PR #760, kaikki kielet, katselmoitu); seuraavaksi FY2, kurssi kerrallaan.
 - Pysähdy ja mieti: FY4:n luvut tehty (PR #745, kaikki kielet, katselmoitu); **opettaja 2026-11-19 aamulla ("kaikki ok"): laajennetaan muihin kursseihin**, kurssi kerrallaan saman kurssin keskeneräisen PR:n jälkeen.
+- Pysähdy ja mieti FY2 (#765): **opettaja 2026-11-19 klo 22.3x ("1 yes"): fy2-4:lle sallitaan neljäs, rajattu katselmointikierros** (tiede ja pedagogia delta, en full) kolmannen kierroksen esteen (johtopäätöksen kriteeri 3) korjauksen vahvistamiseksi; poikkeus lesson.md:n kolmen kierroksen rajaan vain tähän.
+- 23 prosessisivu (#764): opettaja 2026-11-19 klo 22.3x ("2, yes"): sisältö hyväksytty; **klo 22.4x: "the workflow should look like an office"**: työnkulun animaatio piirretään toimistona (kuten hellsla.github.io/agent-office: huoneet ja työpöydät, hahmot kuljettavat paketteja pöydältä toiselle ja CI-koneille). **Toimistoversio hyväksytty: opettaja 2026-11-19 klo 22.5x ("ok dont put more effort into this")**; ei lisätyötä, viimeistellään ja yhdistetään.
 - FY6 Sovella: vastauksen paljastavat alakohdat ja ajautumisnopeus/idealisointi korjataan; ei uusia tehtävätyyppejä (ei diodi- eikä Kirchhoff-tehtäviä).
 - Pienet: header-raja 72 rem hyväksytty (jaettu, site.css; tehty jo f19810c, 2026-11-17); kirjavinkeissä suorat Finna-teoslinkit ja "Tiede – luovaa leikkiä" -kirjan suomenkielinen painos, jos löytyy; podcasteille YouTube-linkit sallittu; FY10:n taulukko-otsakkeet 390 px:ssä lyhennetään.
 - 0g PR 2 aloitetaan, kun päivän PR-jono on tyhjä. 8k (teacher-text) toteutetaan.
@@ -198,7 +200,7 @@ jää kuvioinnin päällä (opettaja 15.11.; `merkinnoin/` näyttää lopputulok
 `fy2-7/district`, `fy2-7/grid`, `fy2-7/storage` (en poikkeaa fi:stä).
 Osat 2–11: FY1, FY3–FY10, FY14 yksi moduuli kerrallaan, oma ketju ja luonnos-PR; kuvat lukuihin kaikilla kielillä,
 `approve-figures`, build, tarkistukset; opettaja katsoo moduulin kerran valmiilta sivulta ennen yhdistämistä.
-Huomiot: FY3 seitsemän kuvaa tunnistetaan kuvauksesta (`~lesson-N`); FY5 `fy5-10/types` "harvennus" → "harventuma"
+Huomiot: FY3 seitsemän kuvaa tunnistetaan kuvauksesta (`~lesson-N`); FY5 `fy5-10/types` "harvennus" → "harventuma" (opettaja 2026-11-19 klo 19.12: harventuma kaikkialla)
 (lähde ja `glossary.json` vanhalla sanalla: kysytty opettajalta, muutetaanko kaikkialla); FY8 suurennettu kuvankäsittelyllä
 (pienentämättömät korvaavat, jos opettaja toimittaa); FY9 11 voimakuviota kuvauksesta (`nimeton-N`); FY14 sivut englanniksi;
 `PAATOS.txt`:n mittasuhde- ja yksityiskohtahuomiot hyväksytty sellaisinaan, ei korjata. Opettaja yhdistää kohdan PR:t.
