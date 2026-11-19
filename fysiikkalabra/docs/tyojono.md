@@ -59,6 +59,7 @@ Varattu: claude/elevenlabs-readaloud
 äänitetty; FY2 odottaa opettajan päätöstä. Sääntö: `CLAUDE.md` "Parts specified…", `docs/decisions/oppituntisivun-osat.md`. Tarkka toimeksianto: loki §5c.
 
 ## 5d. Leikkautuvat kaavat omalle rivilleen (opettaja 2026-11-15)
+Varattu: claude/5d-fy2-tahderivit (FY2:n tähderivit)
 Tehty kaikille kursseille FY1–FY9 (loki §5d: kurssikohtaiset luvut, opit ja listalle jääneet rivit). Jäljellä vain
 `docs/clipped-formulas/`:n tähderivit; ne tehdään 0c:n jälkeen ilman täysiä katselmointeja. Menetelmä: loki §5d "Opit".
 FY1 tehty (#724). FY2: fy2-2 ja fy2-5 tehty (#724); fy2-3, fy2-4, fy2-6, fy2-7 ja fy2-8 (37 riviä) jäävät: niiden korjaus
