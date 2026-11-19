@@ -614,7 +614,7 @@ missä $\varepsilon$ on suhteellinen epävarmuus (ilmoitetaan usein prosentteina
 ```pysahdy
 Ajan epävarmuus on $0{,}2\,\text{s}$ ja suhteellinen epävarmuus saa olla enintään $2{,}0\,\%$. Kuinka pitkä aika vähintään pitää mitata?
 ---
-Ajan pitää olla vähintään $t = \Delta t/\varepsilon_\text{max} = 0{,}2\,\text{s}/0{,}020 = 10\,\text{s}$.
+Ajan pitää olla vähintään $t = \Delta t/\varepsilon_\text{max}$, joten $t = 0{,}2\,\text{s}/0{,}020 = 10\,\text{s}$.
 ```
 
 Tarvittava matka saadaan tasaisen liikkeen mallista $s = vt$. Jos mittaus tehdään usealla matkalla, mittauspisteisiin sovitetaan suora (luku *Graafinen esitys ja suoran sovittaminen*). Kun $t$ on vaaka-akselilla ja $s$ pystyakselilla, suoran kulmakerroin on nopeus $v$. Lyhin kelvollinen matka on se, jolla suhteellinen epävarmuus vielä pysyy valitussa rajassa $\varepsilon_\text{max}$. Sitä lyhyemmällä matkalla suhteellinen epävarmuus ylittää tämän rajan, ja tulos on liian epätarkka.

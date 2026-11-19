@@ -614,7 +614,7 @@ where $\varepsilon$ is the relative uncertainty (often given as a percentage), $
 ```pysahdy
 The uncertainty of the time is $0.2\,\text{s}$ and the relative uncertainty may be at most $2.0\,\%$. How long a time must be measured at least?
 ---
-The time must be at least $t = \Delta t/\varepsilon_\text{max} = 0.2\,\text{s}/0.020 = 10\,\text{s}$.
+The time must be at least $t = \Delta t/\varepsilon_\text{max}$, so $t = 0.2\,\text{s}/0.020 = 10\,\text{s}$.
 ```
 
 The required distance follows from the model of uniform motion $s = vt$. If the measurement is made at several distances, a straight line is fitted to the data points (chapter *Graphing and fitting a straight line*). When $t$ is on the horizontal axis and $s$ on the vertical axis, the slope of the line is the speed $v$. The shortest valid distance is the one at which the relative uncertainty just stays within the chosen limit $\varepsilon_\text{max}$. On a shorter distance the relative uncertainty exceeds this limit, and the result is too imprecise.
