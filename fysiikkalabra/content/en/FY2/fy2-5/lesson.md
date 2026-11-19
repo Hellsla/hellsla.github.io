@@ -162,6 +162,12 @@ Different fuels contain different amounts of chemical energy for their mass. The
 
 <figure class="unit-photo"><img src="pics/fy2/fireplace-wood-burning.webp" alt="Logs burning with bright flames in a fireplace, with glowing embers below them."><figcaption>When wood burns, its chemical energy is released as heat and light.</figcaption></figure>
 
+```pysahdy
+A fireplace needs $43\,\text{MJ}$ of energy from wood. The heat of combustion of the wood is $15\,\text{MJ/kg}$. Must you burn more or less than $1.0\,\text{kg}$ of wood?
+---
+More: one kilogram releases only $15\,\text{MJ}$, so about $2.9\,\text{kg}$ is needed.
+```
+
 Because the heat of combustion is energy per unit of mass, the energy released is directly proportional to the mass of fuel burnt: twice as much fuel releases twice as much energy. This gives the law used to calculate the energy released.
 
 <figure class="unit-photo"><img src="pics/fy2/garzweiler-excavator.webp" alt="A huge steel-lattice excavator in a wide sand-coloured open-pit mine on a cloudy day."><figcaption>A bucket-wheel excavator in the Garzweiler open-pit mine in Germany. The mine produces lignite, a moist coal with a low heating value.</figcaption></figure>
@@ -231,8 +237,20 @@ Sources: firewood ($13\text{–}15\,\text{GJ/t}$, moisture $20\text{–}25\,\%$)
   <foreignObject x="116" y="327.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$0$</div></foreignObject>
 </svg>
 
+```pysahdy
+$250\,\text{g}$ of wood pellets is burned. How much energy is released? Use the value in the table.
+---
+The mass in kilograms is $0.250\,\text{kg}$, because the heat of combustion is energy per kilogram. Then $E = Hm = 17\,\text{MJ/kg}\cdot0.250\,\text{kg}$, which is about $4.3\,\text{MJ}$.
+```
+
 ### Moisture and fuel quality
 Wet wood gives less energy per kilogram than dry wood, because part of its mass is water, which does not burn, and in addition part of the released energy is used to vaporise this water. This is why the firewood in the table is air-dried (moisture $20\text{–}25\,\%$) and the peat is milled peat with a moisture of $40\text{–}50\,\%$. Drier wood gives more: in the MAFY tables the heating value of dry wood is $16.2\,\text{MJ/kg}$.
+
+```pysahdy
+Two kilograms of firewood have the same mass, but one is dry and the other wet. Which one releases more energy, and why?
+---
+The dry one. In wet wood part of the mass is water, which does not burn, and part of the energy goes into evaporating the water.
+```
 
 ### The energy content of food and the heat of combustion
 A nutrition label gives energy per hundred grams, for example $2200\,\text{kJ}$ per $100\,\text{g}$. When you convert the energy to megajoules and the mass to kilograms, you get the energy content of the food per unit of mass, here $e = 22\,\text{MJ/kg}$. Both the energy content of food and the heat of combustion of a fuel can be given in the unit $\text{MJ/kg}$. The nutrition label describes the energy the body can use, whereas the heat of combustion of a fuel describes the energy released in burning. So they are not the same quantity: your body does not get all the energy from food that would be released if it burned, because, for example, part of the food is not absorbed from the intestine. The calculation is still the same as with the heat of combustion: the energy of food is $E = em$.

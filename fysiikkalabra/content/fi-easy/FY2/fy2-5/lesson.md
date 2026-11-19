@@ -162,6 +162,12 @@ Eri polttoaineet sisältävät eri määrän kemiallista energiaa samaa massaa k
 
 <figure class="unit-photo"><img src="pics/fy2/fireplace-wood-burning.webp" alt="Takassa palaa puita kirkkain liekein."><figcaption>Kun puu palaa, sen kemiallinen energia vapautuu lämpönä ja valona.</figcaption></figure>
 
+```pysahdy
+Takassa tarvitaan puusta $43\,\text{MJ}$ energiaa. Puun lämpöarvo on $15\,\text{MJ/kg}$. Pitääkö puuta polttaa enemmän vai vähemmän kuin $1{,}0\,\text{kg}$?
+---
+Enemmän. Yhdestä kilogrammasta vapautuu vain $15\,\text{MJ}$. Siksi puuta tarvitaan noin $2{,}9\,\text{kg}$.
+```
+
 Lämpöarvo on energia massayksikköä kohti. Siksi vapautuva energia on suoraan verrannollinen palaneen polttoaineen massaan: kaksi kertaa enemmän polttoainetta vapauttaa kaksi kertaa enemmän energiaa. Tästä saadaan laki, jolla vapautuva energia lasketaan.
 
 <figure class="unit-photo"><img src="pics/fy2/garzweiler-excavator.webp" alt="Valtava kaivinkone isossa hiekkaisessa kaivoksessa."><figcaption>Kaivinkone Garzweilerin kaivoksessa Saksassa. Kaivoksesta kaivetaan ruskohiiltä. Se on kosteaa, ja sen lämpöarvo on pieni.</figcaption></figure>
@@ -231,8 +237,20 @@ Lähteet: polttopuu ($13\text{–}15\,\text{GJ/t}$, kosteus $20\text{–}25\,\%$
   <foreignObject x="116" y="327.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$0$</div></foreignObject>
 </svg>
 
+```pysahdy
+Poltetaan $250\,\text{g}$ puupellettiä. Kuinka paljon energiaa vapautuu? Käytä taulukon lämpöarvoa.
+---
+Muuta ensin massa kilogrammoiksi: $0{,}250\,\text{kg}$. Lämpöarvo kertoo energian yhtä kilogrammaa kohti. Sitten $E = Hm = 17\,\text{MJ/kg}\cdot0{,}250\,\text{kg}$ eli noin $4{,}3\,\text{MJ}$.
+```
+
 ### Kosteus ja polttoaineen laatu
 Märkä puu antaa kilogrammaa kohti vähemmän energiaa kuin kuiva puu. Syitä on kaksi. Osa puun massasta on vettä, joka ei pala. Lisäksi osa vapautuvasta energiasta kuluu tämän veden höyrystämiseen. Siksi taulukon polttopuu on ilmakuivaa (kosteus $20\text{–}25\,\%$). Turve on jyrsinturvetta, jonka kosteus on $40\text{–}50\,\%$. Kuivemmasta puusta saa enemmän energiaa: MAFY-taulukossa kuivan puun lämpöarvo on $16{,}2\,\text{MJ/kg}$.
+
+```pysahdy
+Kaksi polttopuukiloa painaa yhtä paljon, mutta toinen on kuivaa ja toinen märkää. Kummasta vapautuu enemmän energiaa? Miksi?
+---
+Kuivasta. Märässä puussa osa massasta on vettä, eikä vesi pala. Lisäksi osa energiasta kuluu veden höyrystämiseen eli muuttamiseen vesihöyryksi.
+```
 
 ### Ruoan energiasisältö ja lämpöarvo
 Ravintoarvomerkinnässä energia ilmoitetaan sadalle grammalle, esimerkiksi $2200\,\text{kJ}$ per $100\,\text{g}$. Muuta energia megajouleiksi ja massa kilogrammoiksi. Silloin saadaan ruoan energiasisältö massayksikköä kohti, tässä $e = 22\,\text{MJ/kg}$. Ruoan energiasisältö ja polttoaineen lämpöarvo voidaan ilmoittaa samassa yksikössä $\text{MJ/kg}$. Ravintoarvomerkintä kuvaa energiaa, jonka elimistö pystyy hyödyntämään. Polttoaineen lämpöarvo kuvaa energiaa, joka vapautuu palamisessa. Ne eivät siis ole sama suure. Elimistö ei saa ruoasta kaikkea energiaa, joka vapautuisi, jos ruoka palaisi. Esimerkiksi osa ruoasta ei imeydy suolistosta. Laskutapa on silti sama kuin lämpöarvolla: ruoan energia on $E = em$.
