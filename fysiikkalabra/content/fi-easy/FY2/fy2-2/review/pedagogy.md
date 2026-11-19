@@ -7,7 +7,6 @@ CONTENT-HASH: 3cf4d09f285b2d5a
 ## Polish
 - inquiry.json (koe-1, koe-2) — both experiments only select a table value from the energy ladder, so the "experiment" is a lookup; it can refute the predictions, but is thin as inquiry — acceptable for a quantities lesson, keep Lisää tutkittavaa for comparing more pairs.
 - lesson.md:92 (hero) — the opening picture and its aria-label show the Sun to wheat to bread to cyclist chain and say "Liikkeen energia on siis peräisin Auringosta", i.e. the hook's first answer, before the student has committed. The house rule requires the opening illustration, so shorten the aria-label to what is drawn, without "on siis peräisin Auringosta".
-- lesson.md:119 — "nostat omenan metrin verran" gives a feel for 1 J without the work formula; fine, but add "(noin)" is already there; consider "noin metrin" for naturalness.
 - inquiry.json ketju table — "jäljellä oleva hyödyllinen energia" is first used here; one phrase of explanation ("se osa, joka ei ole vielä muuttunut lämpöenergiaksi ympäristöön") would help S2 readers.
 
 ## Checked
