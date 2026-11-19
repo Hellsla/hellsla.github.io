@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5758b9fa13dffb4c
+CONTENT-HASH: c54d27e2f917e557
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- batch delta review (md-paragraphs): opened the worked-example captures (example-390-*) of fy1-1…fy1-8 (a sample of the second parts); knowns as bulleted lists, remark and question in their own paragraphs with the question last; no clipping, overflow or red KaTeX; Finnish and units in LaTeX fine.
+batch delta review: the diff only adds "Pysähdy ja mieti" blocks; opened the rendered block in fy1-1 (stage-selita-390-2) and fy1-4 (theory-1280-1): green card, label, question and closed Vastaus read well, no clipping, numbers with units in LaTeX, Finnish natural; figures untouched.

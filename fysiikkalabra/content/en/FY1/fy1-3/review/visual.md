@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 25cd63a870aefc73
+CONTENT-HASH: d2c20fc1e0f44698
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] stage 5 first sum row runs flush to the card edge at 390 px (wraps after +, nothing clipped); check at 360 px.
+- [Minor] lesson.md, Stop and think (error estimate) — inline \frac in the answer — use \tfrac inline (house rule).
 
 ## Checked
-batch delta review: opened fy1-3-example-390-1 and -2 (stages 1-7); paragraph breaks and list markers read well (bold lead-ins, knowns in list or own paragraph, question last), formulas aligned, no clipping or overflow.
+batch delta review: contact sheets (page 2 of fy1-1, fy1-2, fy1-4, fy1-6; the added "Stop and think" boxes render as a tinted box with a closed Answer disclosure, readable at 390 px, maths rendered, no clipping, layout around them intact); other lessons judged from the diff plus the same shared component, the figures unchanged.

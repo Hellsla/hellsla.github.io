@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c9fca46ff3b1933d
+CONTENT-HASH: f695f1eeee165b5c
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- batch delta review (fi-easy, fy1-5): changed recap task read in full ($(s, t)$, $\Delta t : \Delta s$, plain Finnish); layout judged from the herata-390 pattern (fi-easy fy1-2/fy1-7 opened); figures unchanged.
+batch delta review: the diff only adds "Pysähdy ja mieti" blocks; opened the rendered block in fy1-1 (stage-selita-390-2) and fy1-4 (theory-1280-1): green card, label, question and closed Vastaus read well, no clipping, numbers with units in LaTeX, Finnish natural; figures untouched.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e56a91a4c5ea9518
+CONTENT-HASH: 4c6ae5f3a16b7571
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: e56a91a4c5ea9518
 - none
 
 ## Checked
-- batch delta review (en, fy1-5): changed recap task ($(s, t)$, $\Delta t : \Delta s$) read in full; layout judged from the herata-390 pattern (en fy1-6 opened); figures unchanged.
+batch delta review: contact sheets (page 2 of fy1-1, fy1-2, fy1-4, fy1-6; the added "Stop and think" boxes render as a tinted box with a closed Answer disclosure, readable at 390 px, maths rendered, no clipping, layout around them intact); other lessons judged from the diff plus the same shared component, the figures unchanged.

@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 78b52b36d1263ae6
+CONTENT-HASH: 9bad1c8d565e8cfc
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] Worked example stage 5: the first row of the sum of the six times runs to the edge of its box at 390 px (existing mathlayout wrap, not caused by this change).
+- [Minor] pysähdy-vastaus: inline-kaava käyttää \frac, kun NOTES §1 vaatii \tfrac inline-tekstissä; vaihda \tfrac.
 
 ## Checked
-- batch delta review (md-paragraphs): opened the worked-example captures (example-390-*) of fy1-1…fy1-8 (a sample of the second parts); knowns as bulleted lists, remark and question in their own paragraphs with the question last; no clipping, overflow or red KaTeX; Finnish and units in LaTeX fine.
+batch delta review: the diff only adds "Pysähdy ja mieti" blocks; opened the rendered block in fy1-1 (stage-selita-390-2) and fy1-4 (theory-1280-1): green card, label, question and closed Vastaus read well, no clipping, numbers with units in LaTeX, Finnish natural; figures untouched.

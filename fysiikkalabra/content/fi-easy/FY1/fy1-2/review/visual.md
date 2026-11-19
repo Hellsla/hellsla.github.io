@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4e8a63f52d7e0aa7
+CONTENT-HASH: 6b9912005af1d152
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- batch delta review (fi-easy, fy1-2): captures opened: stage-herata-390 (recap box closed, nothing clipped); changed task read in full ($10^{13}\,\text{m}$, colon division, clear Finnish).
+batch delta review: the diff only adds "Pysähdy ja mieti" blocks; opened the rendered block in fy1-1 (stage-selita-390-2) and fy1-4 (theory-1280-1): green card, label, question and closed Vastaus read well, no clipping, numbers with units in LaTeX, Finnish natural; figures untouched.
