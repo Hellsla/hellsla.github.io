@@ -3,14 +3,12 @@
 # (fix the formula and delete its row; the file with its last row); written by `check_layout.py --write-known`, never by hand.
 en/fy3-10	= \dfrac{101\,000\,\text{Pa} \cdot 2.80 \cdot 10^3\,\text{m}^3}{8.31\,
 en/fy3-12	P = UA\Delta T = 1.0 \cdot 1.6 \cdot 6\,\text{W} = 9.6\,\text{W}
-en/fy3-15	Q_2 = Q_1 - W = 800\,\text{MJ} - 280\,\text{MJ} = 520\,\text{MJ}
 en/fy3-5	T_2 = T_1 (V_1/V_2)^{\gamma - 1} = 293\,\text{K} \cdot (4/3)^{0.4} \ap
 en/fy3-5	\Delta U = 250\,\text{J} - 90\,\text{J} = 160\,\text{J}
 en/fy3-5	\Delta U = Q + W = 10\,\text{J} + 30\,\text{J} = 40\,\text{J}
 en/fy3-5	\Delta U = Q + W = 250\,\text{J} + 90\,\text{J} = 340\,\text{J}
 fi-easy/fy3-10	= \dfrac{101\,000\,\text{Pa} \cdot 2{,}80 \cdot 10^3\,\text{m}^3}{8{,}
 fi-easy/fy3-12	P = UA\Delta T = 1{,}0 \cdot 1{,}6 \cdot 6\,\text{W} = 9{,}6\,\text{W}
-fi-easy/fy3-15	Q_2 = Q_1 - W = 800\,\text{MJ} - 280\,\text{MJ} = 520\,\text{MJ}
 fi-easy/fy3-4	3230\,\text{N} / 9{,}81\,\text{m/s}^2 \approx 330\,\text{kg}
 fi-easy/fy3-5	T_2 = T_1 (V_1/V_2)^{\gamma - 1} = 293\,\text{K} \cdot (4/3)^{0{,}4} \
 fi-easy/fy3-5	\Delta U = 250\,\text{J} - 90\,\text{J} = 160\,\text{J}
@@ -18,7 +16,6 @@ fi-easy/fy3-5	\Delta U = Q + W = 10\,\text{J} + 30\,\text{J} = 40\,\text{J}
 fi-easy/fy3-5	\Delta U = Q + W = 250\,\text{J} + 90\,\text{J} = 340\,\text{J}
 fy3-10	= \dfrac{101\,000\,\text{Pa} \cdot 2{,}80 \cdot 10^3\,\text{m}^3}{8{,}
 fy3-12	P = UA\Delta T = 1{,}0 \cdot 1{,}6 \cdot 6\,\text{W} = 9{,}6\,\text{W}
-fy3-15	Q_2 = Q_1 - W = 800\,\text{MJ} - 280\,\text{MJ} = 520\,\text{MJ}
 fy3-4	3230\,\text{N} / 9{,}81\,\text{m/s}^2 \approx 330\,\text{kg}
 fy3-5	T_2 = T_1 (V_1/V_2)^{\gamma - 1} = 293\,\text{K} \cdot (4/3)^{0{,}4} \
 fy3-5	\Delta U = 250\,\text{J} - 90\,\text{J} = 160\,\text{J}
