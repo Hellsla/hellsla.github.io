@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 4592c00990b0c5e0
+CONTENT-HASH: d779bef07c6b3e4a
 
 ## Blocking
 
 ## Polish
-- [Minor] Opened feedback of the changed Kertaa task is not in a capture; its LaTeX is well-formed (\tfrac, thin spaces, decimal commas).
+- [Minor] Summary formula block at 360 px: the aligned block is followed by a separate line "Argumentti on radiaaneina." with a gap; acceptable, no change required.
 
 ## Checked
-- batch delta review: stage-herata-390 (changed Kertaa task, Pohdinta text and the curve mention match the new question); text diff read.
+- fig-row-1280 (osat, animated, still judged: x = 0, A arrows, dashed extremes, spring and pendulum clear), fig-4-390 (ympyra, still with the point on the circle and graph point), fig-3-390 and fig-5-390 (kuvaaja, sovitus: axes, units, T and A marks unchanged and legible).
+- Summary (Tiivistelmä) opened at 360 px in a fresh render: the two-row aligned x = A sin(2πt/T) = A sin(2πft) block fits, nothing clipped, scrollWidth 360.
+- Text diff read; no wording or number changes beyond the figure and reflow.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
