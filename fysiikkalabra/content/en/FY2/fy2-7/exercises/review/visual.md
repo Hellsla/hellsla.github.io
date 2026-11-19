@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 176f6ead8d643021
+CONTENT-HASH: 9ce9f1634468bcd8
 
 ## Blocking
 
 ## Polish
-(none)
 
 ## Checked
-Delta (solution paragraph breaks). Opened en open-exercises-1280-2, -3; L2-1280-6, -8, -10, -11, -14; L3-1280-6, -8: breaks (L1-02, L2-05, L2-06, L2-07, L2-10, L3-04, L3-05) fall at sensible points, layout intact.
+- Full review of the exercise set, presentation focus (only chains were re-broken): opened en 1280 px exercise captures with every solution open, L2 part 2 (task 7-12) and L3 part 3 (task 7-22 and its predecessor). Chains render as rows aligned at "=", fractions in display, answer boxed, reasonableness set apart, no clipping; same component in all other tasks.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

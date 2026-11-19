@@ -61,9 +61,8 @@ Varattu: claude/elevenlabs-readaloud
 ## 5d. Leikkautuvat kaavat omalle rivilleen (opettaja 2026-11-15)
 Tehty kaikille kursseille FY1–FY9 (loki §5d: kurssikohtaiset luvut, opit ja listalle jääneet rivit). Jäljellä vain
 `docs/clipped-formulas/`:n tähderivit; ne tehdään 0c:n jälkeen ilman täysiä katselmointeja. Menetelmä: loki §5d "Opit".
-FY1 tehty (#724). FY2: fy2-2 ja fy2-5 tehty (#724); fy2-3, fy2-4, fy2-6, fy2-7 ja fy2-8 (37 riviä) jäävät: niiden korjaus
-vaatii tiede- ja pedagogiikkakatselmoinnin (rivitys luokittuu `numbers`/`wording`), ks. loki §5d. FY3: 23 riviä jää (lainatut
-opiskelijan laskut ja lauseen sisäiset ketjut fy3-4, fy3-5, fy3-12, fy3-15 sekä fy3-10:n `\dfrac`).
+FY1 tehty (#724). FY2 tehty (#749): jäljellä 14 riviä (lainatut opiskelijan laskut exercises.json:ssa fy2-3, fy2-8; fy2-6:n ja fy2-8:n Järkevyys-ketjujen jatkorivit). FY3: 20 riviä jää (fy3-15:n kolme rivinvaihtoa tehty; lainatut
+opiskelijan laskut ja lauseen sisäiset ketjut fy3-4, fy3-5, fy3-12 sekä fy3-10:n `\dfrac`-rivi, jonka rivittäminen vaatisi sisältömuutoksen; ei tehtävissä pelkällä rivityksellä, koska `$$` irrottaa lauseen sisältä välimerkin ja päätteen, esim. "…kg:n massan").
 
 ## 6. Kuvatehtävät ja taulukkotehtävät FY9 (opettaja 2026-11-13…15)
 FY9 A tehty (claude/fy9-a-kuvatehtavat, #714): fy9-voimat s7–s8, fy9-ympyraliike s8–s9, fy9-sailymislait s7–s8, fy9-energia s8–s9; FY9 B on toisen työntekijän.
@@ -130,7 +129,7 @@ Yleislinja (CLAUDE.md "General UI line"): käyttöliittymään ei lisätä tekst
 yksin, järjestyksessä U1, U2, U3, kohdan 10 PR 5:n jälkeen; ennen/jälkeen-kuvat PR:ään ja pysähdys opettajan hyväksyntään. Fysiikkaan, vastauksiin,
 toleransseihin, tallennusavaimiin ja palautustiedostoon ei kosketa. Täysi määrittely: loki §11.
 - **U1 Ydintehtävät auki Tehtävät-vaiheen alkuun**: toteutettu (`claude/11-u1-ydintehtavat`), odottaa opettajan hyväksyntää ja yhdistämistä; poistetaan jonosta yhdistettäessä. Luvut, joiden ydintehtävät ovat yhdeltä tasolta: PR:n kuvaus.
-- **U2 Tehtäväkortin järjestys** (U1:n jälkeen): numero ja merkit; tilanne ja kysymys; kuva; vastauskenttä + Tarkista (täytetty päänappi) + Kirjoita ratkaisu; palaute; erotinviivan alla Vihjeet, Vastaus, Näytä ratkaisu, lukko. Ei uusia tekstejä.
+- **U2 Tehtäväkortin järjestys** (U1 #723 tehty; `Varattu: claude/11-u2-korttijarjestys`): numero ja merkit; tilanne ja kysymys; kuva; vastauskenttä + Tarkista (täytetty päänappi) + Kirjoita ratkaisu; palaute; erotinviivan alla Vihjeet, Vastaus, Näytä ratkaisu, lukko. Ei uusia tekstejä.
 - **U3 Teorian taitto, vaihtoehto B** (kohta 8e): 38 rem:n palsta säilyy; teksti kuvarivin yläreunaan, valokuva viereen, kaksi pientä taulukkoa vierekkäin, korkea kuva alle tai seuraava kappale viereen.
 - Ei tehdä: Aloita-riviä, "Näytä kaikki tehtävät" -toimintoa, etusivun ryhmäotsikoita, marginaalipalstaa tai keskitettyä lukupalstaa, yhden luvun julkaistua pilottia.
 
@@ -170,17 +169,17 @@ Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jäl
 - Pienet: header-raja 72 rem hyväksytty (jaettu, site.css); kirjavinkeissä suorat Finna-teoslinkit ja "Tiede – luovaa leikkiä" -kirjan suomenkielinen painos, jos löytyy; podcasteille YouTube-linkit sallittu; FY10:n taulukko-otsakkeet 390 px:ssä lyhennetään.
 - 0g PR 2 aloitetaan, kun päivän PR-jono on tyhjä. 8k (teacher-text) toteutetaan.
 - Podcastien YouTube-linkit jätetään pois toistaiseksi (opettaja 2026-11-18 klo 22.00).
-- 11 U2: opettaja 2026-11-18 klo 22.00: toimintarivin järjestys Kirjoita ratkaisu → vastauskenttä → Tarkista ("ensin kirjoitetaan ratkaisu, vasta sitten tarkistetaan"); uudet kuvat opettajalle ennen yhdistämistä. **Kuvat hyväksytty: opettaja 2026-11-19 aamulla ("kaikki ok").** Lisäys (opettaja 2026-11-19 klo 07.15, kuvakaappaus): monivalintatehtävissä Kirjoita ratkaisu ja Vastaa samalle riville (Kirjoita ratkaisu ensin); uudet kuvat opettajalle.
+- 11 U2: opettaja 2026-11-18 klo 22.00: toimintarivin järjestys Kirjoita ratkaisu → vastauskenttä → Tarkista ("ensin kirjoitetaan ratkaisu, vasta sitten tarkistetaan"); uudet kuvat opettajalle ennen yhdistämistä. **Kuvat hyväksytty: opettaja 2026-11-19 aamulla ("kaikki ok").** Lisäys (opettaja 2026-11-19 klo 07.15, kuvakaappaus): monivalintatehtävissä Kirjoita ratkaisu ja Vastaa samalle riville (Kirjoita ratkaisu ensin); uudet kuvat opettajalle. **Lisäyksen kuvat hyväksytty: opettaja 2026-11-19 klo 12.4x ("hyväksyn kuvat").**
 - Podcastit-sivun (fi) muu kieli -laatikon teksti (opettaja 2026-11-18 klo 19.00, "käy"): lead "Haluatko kuulla fysiikkaa myös englanniksi?"; text "Tutustu englanninkielisiin fysiikan podcasteihin, dokumentteihin ja opetusvideoihin. Tutut ilmiöt avautuvat uudesta näkökulmasta, ja samalla opit fysiikan sanastoa englanniksi."; link ennallaan.
-- Opettajan päätökset 2026-11-19 aamulla (koordinaattorin chatissa, "Kaikki ok"): FY3 fy3-8 ensimmäisen tehtävän sanamuoto "1,000 kg vettä tilavuus" → "1,000 kg:n vesimäärän tilavuus" ja fy3-11:n merkitsevien numeroiden ohje (480 kW) täsmennetään (FY3:n seuraava PR); jaetut yksi kerrallaan: header 72 rem → CI-tarkistus site/-sivujen poistolle → 0g PR 2; rinnalla 5d FY2 (37) ja FY3 (23) riviä.
+- Opettajan päätökset 2026-11-19 aamulla (koordinaattorin chatissa, "Kaikki ok"): FY3 FY3 fy3-8 sanamuoto ja fy3-11:n 480 kW:n tehtävän ratkaisun perustelu (loppunolla on merkitsevä, ei pyöristysohjetta; P7-sääntöä ei muutettu) tehty (FY3-paketti); jaetut yksi kerrallaan: header 72 rem → CI-tarkistus site/-sivujen poistolle → 0g PR 2; rinnalla 5d FY2 (37) ja FY3 (23) riviä.
 - Kirjavinkkien Finna-tietuelinkit ja podcastien YouTube-linkit odottavat: Finna estää koneellisen haun (Cloudflare), YouTube-linkki vaatisi jaetun muutoksen (`media_tips.py`) ja opettajan päätöksen.
 
 ## 21. Sivujen tunnuskuvat Ruukki-logon tyyliin (opettaja 2026-11-19 klo 07.10, kuvakaappaukset koordinaattorin chatissa)
-Jaettu, yksin, #740:n, #733:n ja kohdan 22 jälkeen (opettaja 2026-11-19: kohta 22 ensin). (1) Erillissivujen otsakkeen tunnuskuvat (esim. Kuuntele ja katso -sivun kuulokkeet) piirretään alkuperäisen Ruukkilabra-logon tyyliin: ahjo (alasin) ja sen päällä sivun aihe (kuulokkeet, kirja …), logon värit ja viivat. (2) Sivustosta-sivun vasemman yläkulman logo on sama kuin Ahjo-jaksojen sivuilla. Ennen/jälkeen-kuvat opettajalle ja pysähdys hyväksyntään ennen yhdistämistä; ei uusia tekstejä.
+Jaettu, yksin, #740:n, #733:n ja kohdan 22 jälkeen (opettaja 2026-11-19: kohta 22 ensin). (1) Erillissivujen otsakkeen tunnuskuvat (esim. Kuuntele ja katso -sivun kuulokkeet) piirretään alkuperäisen Ruukkilabra-logon tyyliin: ahjo (alasin) ja sen päällä sivun aihe (kuulokkeet, kirja …), logon värit ja viivat. (2) Sivustosta-sivun vasemman yläkulman logo on sama kuin Ahjo-jaksojen sivuilla. Ennen/jälkeen-kuvat opettajalle ja pysähdys hyväksyntään ennen yhdistämistä; ei uusia tekstejä. **Kuvat hyväksytty: opettaja 2026-11-19 klo 12.4x ("hyväksyn kuvat").**
 
 ## 22. Tehtävän pieni taulukko ja kuva vierekkäin leveällä näytöllä (opettaja 2026-11-19 klo 07.20, kuvakaappaus fy8-3)
 Varattu: claude/22-taulukko-kuva
-Jaettu (build.py / site.css), yksin, #740:n ja #733:n jälkeen ennen kohtaa 21 (opettaja 2026-11-19). Kun tehtäväkortissa on pieni taulukko ja kuva peräkkäin ja ne mahtuvat, ne asettuvat vierekkäin leveällä näytöllä (sääntö "Figures, photos and small tables beside what they explain"); puhelimella allekkain. Samalla taulukon otsikko ei rivity kapeaksi eikä taulukkolaatikkoon jää tyhjää oikeaa reunaa. Malli fy8-3 (fotonit A–E ja energiatasot). check_layout.py-tarkistus uudelle asettelulle; ennen/jälkeen-kuvat 1280 ja 390 px opettajalle.
+Jaettu (build.py / site.css), yksin, #740:n ja #733:n jälkeen ennen kohtaa 21 (opettaja 2026-11-19). Kun tehtäväkortissa on pieni taulukko ja kuva peräkkäin ja ne mahtuvat, ne asettuvat vierekkäin leveällä näytöllä (sääntö "Figures, photos and small tables beside what they explain"); puhelimella allekkain. Samalla taulukon otsikko ei rivity kapeaksi eikä taulukkolaatikkoon jää tyhjää oikeaa reunaa. Malli fy8-3 (fotonit A–E ja energiatasot). check_layout.py-tarkistus uudelle asettelulle; ennen/jälkeen-kuvat 1280 ja 390 px opettajalle. **Kuvat hyväksytty: opettaja 2026-11-19 klo 12.4x ("hyväksyn kuvat").**
 
 ## 14. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13; juuri ennen vihkoja)
 Siirretään `ahjo.py` ja `lumatutor.py` jaksopohjan lohkoiksi niin, että sivut pysyvät tavulleen samoina kuten Kilparobotiikassa; puuttuvat lohkot yhteiseen kirjastoon. Jaettu: yksin.

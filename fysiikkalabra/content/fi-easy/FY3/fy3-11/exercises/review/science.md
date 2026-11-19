@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 0fc397895a2ab582
+CONTENT-HASH: 191a6317ef0bbcdc
+SCOPE: delta wording from 0fc397895a2ab582 base 6153818
 
 ## Blocking
 (none)
 
 ## Polish
-- L2-04 solution: '480 kW on kolmen numeron arvo, koska loppunolla on merkitsevä' is a convention (a trailing zero without a decimal point is ambiguous); 720 kW is unaffected.
+(none)
 
 ## Checked
-- Delta: prefix and caption suffix removals in L2-05, L3-02, L3-xx compared by script: no number or symbol changed.
-- Solution wording (hukkalämpö siirtyy ympäristöön; paragraph splits) physically right; L2-04 recomputed: P_o = 480/0,400 = 1200 kW, waste 720 kW.
-- New L2-10 recomputed: Q1 = eps W = 4,0*2,5 = 10 kWh; Q2 = (eps-1) W = 7,5 kWh (answer 7,5, 2 % tolerance); balance Q2 + W = Q1.
-- Motiva PDF fetched: quotes in the solution (COP, 'mitä pienempi lämpötilaero', -25 C gives COP 1-2, yearly 1,4-3, 'lämpökerroin 3,0 ... 300 prosenttia') are in the source.
-- Physics of a)-d): COP is not an efficiency, may exceed 1, energy conserved, COP falls with temperature difference and tends to 1; no scope breach.
+- Diff since base 6153818: only the Answer line of L2-04 in solutions.md changed; numbers, units and the answer 720 kW are identical.
+- New wording gives the reason first: the trailing zero of 480 kW is significant (three figures), 40.0 % has three figures, so the answer has three significant figures. This matches house rule P7 (a rated value's trailing zeros are significant unless the task says otherwise; "480 kW: three"); the task text gives 480 kW as the engine's rated mechanical power with no other statement.
+- Recomputed: P_o = 480 kW / 0.400 = 1200 kW, P_waste = 1200 kW - 480 kW = 720 kW; three figures is right for a quotient of two three-figure values.
+- The reasoning is the same as the passed version, only reordered; no new claim, no physics change.
 - Hash same at start and end.

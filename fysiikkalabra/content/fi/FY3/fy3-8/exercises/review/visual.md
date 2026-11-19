@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: df1aa72edd405367
-SCOPE: delta wording from f210f1541bd7cf89 base 64d4935
+CONTENT-HASH: 9574c3020bc20cb0
+SCOPE: delta wording from df1aa72edd405367 base 6153818
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy3-8 first task, "Taulukossa on $1{,}000\,\text{kg}$ vettä tilavuus eri lämpötiloissa" — ungrammatical (already so before); now the first words of the text. Write "Taulukossa on $1{,}000\,\text{kg}$:n vesimäärän tilavuus eri lämpötiloissa."
+- [Minor] fy3-8 task 10-14, table caption "1,000 kg veden tilavuus" — wraps to two lines in a narrow box at 1280 px and is cramped; optional: widen the caption or write "Veden tilavuus (1,000 kg)".
 
 ## Checked
-- Delta, wording only: the diff read in full. The prefix "Esimerkkiaineisto:" is gone; each task now opens with a capital letter and reads as a normal sentence. No numbers, symbols, units or LaTeX changed.
-- Captures: opened fy3-4 L3 part 1 and 4 at 1280 px (content/fi/FY3/fy3-4/review/shots), which show the layout of this kind of task card; the other sets' captures were not opened, because the diff changes only the first words of a text.
+- Delta, wording only: the first task of the water-volume exercise now reads "Taulukossa on $1{,}000\,\text{kg}$:n vesimäärän tilavuus eri lämpötiloissa." The Finnish is grammatical (genitive "kg:n" + "vesimäärän"), and the earlier Polish item is resolved. Numbers, units and LaTeX are unchanged.
+- Built the page (preview/fy3-8.html) and opened captures of the task at 390 px and 1280 px: "1,000 kg:n" renders as a KaTeX number with an upright unit, and ":n" sits directly after it with no gap or break. No horizontal overflow (scrollWidth equals the viewport width). The rest of the card is intact.
+- The other tasks and figures were not reopened: the diff does not touch them.
 - Hash unchanged at the end.
 
 ## Scores

@@ -86,7 +86,7 @@
 **Kaava:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, joten $P_\text{o} = \dfrac{P_\text{a}}{\eta}$ ja $P_\text{hukka} = P_\text{o} - P_\text{a}$
 **Muunnokset:** Hyötysuhde $40{,}0\,\% = \tfrac{40{,}0}{100} = 0{,}400$. Tehot ovat jo kilowatteina, joten muuta muunnosta ei tarvita.
 **Sijoitus:** $P_\text{o} = \dfrac{480\,\text{kW}}{0{,}400} = 1200\,\text{kW}$, joten $P_\text{hukka} = 1200\,\text{kW} - 480\,\text{kW} = 720\,\text{kW}$
-**Vastaus:** $720\,\text{kW}$, kolme merkitsevää numeroa, koska mekaaninen teho $480\,\text{kW}$ (loppunolla on merkitsevä) ja hyötysuhde $40{,}0\,\%$ ovat kolmen numeron arvoja.
+**Vastaus:** $720\,\text{kW}$. Mekaanisen tehon $480\,\text{kW}$ loppunolla on merkitsevä, joten se on kolmen numeron arvo, ja hyötysuhde $40{,}0\,\%$ on myös kolmen numeron arvo. Siksi vastaus annetaan kolmella merkitsevällä numerolla.
 **Järkevyys:** Hukkaan menee $60\,\%$ ja hyödyksi $40\,\%$, joten hukkalämpöä on $\tfrac{60}{40} = 1{,}5$ kertaa niin paljon kuin mekaanista tehoa: $1{,}5 \cdot 480\,\text{kW} = 720\,\text{kW}$. Polttoaineteho on suurempi kuin mekaaninen teho, kuten pitääkin. Osa hukkalämmöstä voidaan käyttää matkustamon lämmittämiseen.
 
 ## fy3-11-L3-01
