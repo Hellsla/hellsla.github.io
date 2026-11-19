@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: a9ee96794bb3dda2
+CONTENT-HASH: 79b492097536ea8f
 
 ## Blocking
 
 ## Polish
-- None.
+- Kelkkamäki card: the answer gives only the longer slope; on the gentle slope the friction force is also larger (cos α larger), as the theory paragraph says; adding it would make the reason complete (W = μ m g × horizontal distance).
 
 ## Checked
-batch delta review: Sled stopping on level snow: ΔE_mek = W of non-weight forces, whole 40 J to internal energy; the normal-force and potential-energy distractors' feedback correct; one correct option.
+batch delta review: cards: constant-speed lift gives a = 0, N = mg (correct); parachute at terminal speed: E_p falls, drag does negative work, energy to air motion and internal energy; gentle slope gives larger friction work (recomputed for 40° vs 15°: 23 vs 73 J/kg-equivalent); split stage.

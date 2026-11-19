@@ -212,6 +212,12 @@ Jotta kaikki voimat tulevat mukaan eikä mitään ylimääräistä eksy laskuun,
 
 Kuvan laatikkoa vedetään narulla vinosti ylöspäin. Narun voima osoittaa sekä eteenpäin että ylöspäin. Ylöspäin osoittava osa kannattelee laatikkoa, joten lattian ei tarvitse tukea sitä yhtä paljon kuin paikallaan seistessä. Siksi tukivoima $N$ on pienempi kuin paino $G$. Nopeutta ei piirretä voimakuvioon, koska nopeus ei ole voima.
 
+```pysahdy
+Jääkiekko liukuu jäällä tasaisesti oikealle. Piirrätkö sen voimakuvioon voiman liikkeen suuntaan?
+---
+Et. Nopeus ei ole voima, eikä mikään toinen kappale työnnä kiekkoa eteenpäin. Voimakuvioon tulevat vain voimat, joilla muut kappaleet vaikuttavat kiekkoon.
+```
+
 ## Voimakuvion piirtäminen
 Voimakuvio piirretään aina samoilla kahdeksalla vaiheella. Ne kannattaa käydä läpi joka kerta, myös silloin, kun tilanne näyttää helpolta.
 
@@ -310,6 +316,12 @@ Voimakuvio piirretään aina samoilla kahdeksalla vaiheella. Ne kannattaa käyd�
 </svg>
 
 Kuvassa on neljä tilannetta, joissa voimien suunnat yllättävät usein. Rinteellä tukivoima on kohtisuorassa rinnettä vastaan eikä pystysuora, ja kitka pitää laatikkoa paikallaan rinteen suuntaisesti. Kattoa vasten painuvaan heliumpalloon katto vaikuttaa alaspäin.
+
+```pysahdy
+Laatikko on paikallaan kaltevalla rinteellä. Osoittaako tukivoima pystysuoraan ylöspäin, ja mikä estää laatikkoa liukumasta alas?
+---
+Ei osoita. Tukivoima on kohtisuorassa rinnettä vastaan. Laatikon pitää paikallaan rinteen suuntaisesti ylöspäin osoittava kitkavoima.
+```
 
 Voimakuviossa kappale on aina pelkistetty suorakulmio, ja jokainen voima lähtee vaikutuskohdastaan: paino keskipisteestä, tukivoima ja kitka kosketuspinnasta ja jännitysvoima narun kiinnityskohdasta. Työntävän voiman nuoli voi myös päättyä kohtaan, johon työntö kohdistuu. Tilannekuvassa kappaleet piirretään sellaisina kuin ne näyttävät, mutta voimakuvioon piirretään vain suorakulmio ja voimat.
 

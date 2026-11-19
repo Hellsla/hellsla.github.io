@@ -227,11 +227,29 @@ The problems of this chapter are solved with two tools, and both start from the 
 ### Lift: a scale measures the normal force
 A bathroom scale does not measure the weight but the normal force $N$ with which it pushes the person standing on it upwards. The reading is shown in kilograms, because the scale divides the force by $9.81\,\text{m/s}^2$. Only the weight and the normal force act on a person standing still in a lift. When the positive direction is up, the equation of motion is $N - mg = ma$, so $N = m(g + a)$. When the lift starts up and accelerates at $1.0\,\text{m/s}^2$, the normal force on a $60.0\,\text{kg}$ person is $649\,\text{N}$, rounded $650\,\text{N}$ as in the graph, and the scale shows $66\,\text{kg}$. At a steady speed $a = 0$, and the scale shows the same as at home, whether the lift moves up or down. So the reading depends on the acceleration, not on the speed.
 
+```pysahdy
+A lift moves upwards at a steady speed of $2.0\,\text{m/s}$. Does the scale then show more, less or the same as when standing still? Explain.
+---
+The same. The speed is constant, so $a = 0$ and $N = mg$. The reading depends on the acceleration, not on the speed.
+```
+
 ### Parachute: at terminal velocity the mechanical energy decreases
 A skydiver descending under a parachute soon falls at terminal velocity, that is, at a steady speed (chapter *Air resistance and falling through air*). By the equation of motion the acceleration is zero, so the air resistance is equal to the weight, $F_\text{d} = mg$. In terms of energy, the kinetic energy does not change, but the potential energy decreases all the time. By the work–energy principle the change in mechanical energy is the work done by air resistance. It is negative, because air resistance points against the motion: over a height $h$, $W_\text{d} = -F_\text{d} h = -mgh$. When an $80\,\text{kg}$ skydiver descends $100\,\text{m}$, about $78\,\text{kJ}$ of mechanical energy is changed into motion of the air and finally into internal energy. Each tool tells the same thing in its own way.
 
+```pysahdy
+At terminal velocity the skydiver's kinetic energy does not change. Where does the mechanical energy go then?
+---
+The potential energy decreases with height. Air resistance does negative work, and the energy is changed into motion of the air and finally into internal energy.
+```
+
 ### Sledding hill: friction takes energy all the way
 A sled slides down a straight slope. The free-body diagram shows that the component of the weight perpendicular to the slope and the normal force cancel each other, so $N = mg\cos\alpha$, as in the chapter *Weight, friction and the inclined plane*. The sliding friction is then $F_\mu = \mu mg\cos\alpha$. The normal force does no work, because it is perpendicular to the motion. On the slope the weight does work $mgh$, and friction does negative work $-F_\mu L$, when the length of the slope is $L$. On a hill of the same height, the normal force and the friction are smaller on a steep slope and the slope is shorter, so friction takes less energy and the sled is faster at the foot. On the flat the sled slides until friction has turned all the kinetic energy into internal energy.
+
+```pysahdy
+Two sleds start from the same height, one down a steep slope and the other down a gentle one. On which slope does friction do more work, and why?
+---
+On the gentle one. The slope is longer, so friction acts over a longer distance and takes more energy than on the steep slope.
+```
 
 ## Formula: Equation of motion and work–energy principle
 The first tool of an applied problem is Newton's second law:

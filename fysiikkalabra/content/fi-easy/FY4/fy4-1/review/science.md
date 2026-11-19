@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: e53dcd34c0df4aa5
+CONTENT-HASH: 96e2f61e28b89e60
 
 ## Blocking
 
 ## Polish
-- None.
 
 ## Checked
-batch delta review: Recomputed 4,0 km / (16/60) h = 15 km/h and the distractors 7,5 km/h (one leg 2,0 km, equal legs since the same road) and 0,25 (km/min); the 0 km/h feedback's app reading 0 m is given in the lesson's opening scenario; exactly one correct option; lesson-answers.py keys match.
+batch delta review: two new pysahdy cards (round trip 4 km agrees with the theory and figure round-trip; falling (t,x) line = negative direction, not downhill) and the split knowns/question stage; no physics changed.

@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 358d805b1ae68646
+CONTENT-HASH: ec33d47475c75d06
+
 ## Blocking
 
 ## Polish
+- Cyclist card: "Sen jälkeen takaa tullut on edellä" holds only for an overtaking (ohitus), i.e. when the rear cyclist is faster at the meeting; the question asks only about reaching the other.
 
 ## Checked
-- Diff: two uniform motions give a linear equation; distinct position lines intersect at most once (parallel distinct lines: never), identical lines mean the bodies coincide throughout — correct and complete.
-- Quadratic case with acceleration (up to two intersections) unchanged and correct.
-- Consistent with the bus–runner prediction options (inquiry.json:316–320) and the overtaking example; no other passage claims "always exactly once".
+batch delta review: cards: meeting condition x_A = x_B; equal speeds and a 50 m gap give parallel lines and no meeting (correct); split stage; formula-name and figure items carried.

@@ -212,6 +212,12 @@ To include every force and to keep anything extra out of the calculation, the fo
 
 In the figure, a box is pulled along by a rope that points obliquely upward. The force of the rope points both forward and upward. The upward part helps to hold the box up, so the floor does not have to support it as much as when the box stands still. That is why the normal force $N$ is smaller than the weight $G$. The velocity is not drawn in the free-body diagram, because velocity is not a force.
 
+```pysahdy
+An ice hockey puck glides steadily to the right on ice. Do you draw a force in the direction of motion in its free-body diagram?
+---
+No. Velocity is not a force, and no other object pushes the puck forward. Only forces that other objects exert on the puck belong in the diagram.
+```
+
 ## Drawing a free-body diagram {Voimakuvion piirtäminen}
 A free-body diagram is always drawn with the same eight steps. They are worth going through every time, even when the situation looks easy.
 
@@ -310,6 +316,12 @@ A free-body diagram is always drawn with the same eight steps. They are worth go
 </svg>
 
 The figure shows four situations in which the directions of the forces often surprise people. On a slope the normal force is perpendicular to the slope, not vertical, and friction holds the box in place along the slope. On a helium balloon pressed against the ceiling the ceiling pushes downward.
+
+```pysahdy
+A box stays at rest on a sloping hill. Does the normal force point straight up, and what keeps the box from sliding down?
+---
+No. The normal force is perpendicular to the slope. The friction force pointing up along the slope holds the box in place.
+```
 
 In a free-body diagram the object is always a simplified rectangle, and each force starts from its point of action: the weight from the centre, the normal force and friction from the contact surface, and the tension from where the rope is attached. The arrow of a pushing force may also end at the point where the push acts. In the situation diagram objects are drawn as they look, but in the free-body diagram only the rectangle and the forces are drawn.
 

@@ -159,15 +159,13 @@ Toiseksi viimeinen: kohtien 17, 18, 13 jälkeen, sen jälkeen 14 ja viimeisenä 
 ei muuteta ilman todettua virhettä; lähdekoodia ei muokata. Raportin rakenne ja kahdeksan tarkistuskohtaa: loki §15.
 Raportti tehty (#721, `docs/audits/2026-11-18-lopputarkistus-FY1-FY8.md`). **Hyväksytty: opettaja 2026-11-18 klo 18.33** (koordinaattorin chatissa, "mennään ehdotustesi mukaisesti"): korjataan kaikki raportin löydökset, kurssi kerrallaan omissa PR:issään saman kurssin keskeneräisen PR:n jälkeen:
 - FY2: fy2-4 M1, M2, M3 tehty ja katselmoitu (PR #738, 9 katselmointia PASS).
-- FY3: fy3-6 Tiivistelmä tehty (PR #742).
-- FY4: fy4-4 M4 (lesson.md "480 kg tarkka arvo"). #727:n jälkeen.
 - FY6: fy6-5 kirjoitusvirhe "sisäenergiakseen" (FY6 Sovella-hionnan PR:ssä).
 
 ## 20. Opettajan päätökset 2026-11-18 klo 18.33 (koordinaattorin chatissa, "mennään ehdotustesi mukaisesti")
 Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jälkeen; tämä rivi on hyväksynnän kirjaus (sääntö 5).
 - 8j: fy1-1, fy1-8 ja fy2-1 ohitetaan (ei kertaustehtävää).
 - 5d: FY5:n 16 ja FY6:n 25 jäljellä olevaa riviä jäävät listalle (myös fy5-7 `x = A \sin(…)`).
-- Pysähdy ja mieti: laajennus ensin FY4:n muihin lukuihin (#727:n jälkeen).
+- Pysähdy ja mieti: FY4:n luvut tehty (PR #745, kaikki kielet, katselmoitu); laajennus muihin kursseihin vain opettajan päätöksellä.
 - FY6 Sovella: vastauksen paljastavat alakohdat ja ajautumisnopeus/idealisointi korjataan; ei uusia tehtävätyyppejä (ei diodi- eikä Kirchhoff-tehtäviä).
 - Pienet: header-raja 72 rem hyväksytty (jaettu, site.css); kirjavinkeissä suorat Finna-teoslinkit ja "Tiede – luovaa leikkiä" -kirjan suomenkielinen painos, jos löytyy; podcasteille YouTube-linkit sallittu; FY10:n taulukko-otsakkeet 390 px:ssä lyhennetään.
 - 0g PR 2 aloitetaan, kun päivän PR-jono on tyhjä. 8k (teacher-text) toteutetaan.

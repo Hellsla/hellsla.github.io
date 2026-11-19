@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 751f62a5dfe3fe03
+CONTENT-HASH: c1dfda2de74048f1
 
 ## Blocking
 
 ## Polish
-- None.
 
 ## Checked
-batch delta review: the sledge recast of the retrieval question: ΔE_mech = W_friction = −40 J on level snow, N does no work, and there is no change in E_p. Exactly one option is correct and each distractor's feedback is right.
+batch delta review: three prompts: steady lift speed gives a = 0 and N = mg; at terminal velocity, drag does negative work -mgh (80 kg, 100 m: 78.5 kJ); gentle slope gives friction work mu*m*g*h/tan(alpha), which is larger, as the answer says (same mu assumed, as in the theory).

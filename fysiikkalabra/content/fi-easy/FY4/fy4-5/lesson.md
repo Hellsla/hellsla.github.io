@@ -214,6 +214,12 @@ Voimat piirretään ensin **voimakuvioon**. Silloin kaikki voimat tulevat mukaan
 
 Kuvassa laatikkoa vedetään narulla vinosti ylöspäin. Narun voima osoittaa eteenpäin ja ylöspäin. Ylöspäin osoittava osa auttaa kannattelemaan laatikkoa. Siksi lattian ei tarvitse tukea laatikkoa yhtä paljon kuin silloin, kun laatikko seisoo paikallaan. Tukivoima $N$ on tässä pienempi kuin paino $G$. Tukivoima on pinnan voima, joka työntää kappaletta pois pinnasta. Nopeutta ei piirretä voimakuvioon. Nopeus ei ole voima.
 
+```pysahdy
+Jääkiekko liukuu jäällä tasaisesti oikealle. Piirrätkö kiekon voimakuvioon voiman liikkeen suuntaan?
+---
+Et. Nopeus ei ole voima. Mikään toinen kappale ei työnnä kiekkoa eteenpäin. Voimakuvioon piirretään vain voimat, joilla muut kappaleet vaikuttavat kiekkoon.
+```
+
 ## Voimakuvion piirtäminen
 Voimakuvio piirretään aina samoilla kahdeksalla vaiheella. Käy ne läpi joka kerta. Tee niin myös silloin, kun tilanne näyttää helpolta.
 
@@ -312,6 +318,12 @@ Voimakuvio piirretään aina samoilla kahdeksalla vaiheella. Käy ne läpi joka 
 </svg>
 
 Kuvassa on neljä tilannetta. Niissä voimien suunnat yllättävät usein. Rinteellä tukivoima on kohtisuorassa rinnettä vastaan. Se ei ole pystysuora. Kitka pitää laatikkoa paikallaan rinteen suuntaisesti. Heliumpallo painuu kattoa vasten. Katto vaikuttaa palloon alaspäin.
+
+```pysahdy
+Laatikko on paikallaan kaltevalla rinteellä. Osoittaako tukivoima pystysuoraan ylös? Mikä estää laatikkoa liukumasta alas?
+---
+Ei osoita. Tukivoima on kohtisuorassa rinnettä vastaan. Rinteen suuntainen kitkavoima osoittaa ylös, ja se pitää laatikon paikallaan.
+```
 
 Voimakuviossa kappale on aina yksinkertainen suorakulmio. Jokainen voima lähtee omasta vaikutuskohdastaan. Paino lähtee keskipisteestä. Tukivoima ja kitka lähtevät kosketuspinnasta. Jännitysvoima lähtee narun kiinnityskohdasta. Työntävän voiman nuoli voi myös päättyä siihen kohtaan, johon työntö kohdistuu. Tilannekuvassa kappaleet piirretään sellaisina kuin ne näyttävät. Voimakuvioon piirretään vain suorakulmio ja voimat.
 

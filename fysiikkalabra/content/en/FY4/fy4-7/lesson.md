@@ -186,6 +186,12 @@ A moving object has **kinetic energy**. When a cart goes up a frictionless ramp,
 
 The square of the speed shows in traffic. When the speed of a car grows from $50\,\text{km/h}$ to $70\,\text{km/h}$, the kinetic energy grows by the factor $\left(\tfrac{70}{50}\right)^2 \approx 2.0$, that is, almost doubles. This is exactly the energy that braking or a collision has to change into other energy.
 
+```pysahdy
+The speed of a car triples. By what factor does its kinetic energy change?
+---
+It becomes nine times as large, because kinetic energy is proportional to the square of the speed and $3^2 = 9$.
+```
+
 ### A conservative force returns the energy
 When a frictionless cart has risen to its highest point on the ramp, it starts back down and is at the foot of the ramp as fast as when it started. Gravity returns as kinetic energy all the energy that changed into potential energy in the rise. In addition, a frictionless object that starts from rest at a height $h$ gets the same speed on the way down, whether it falls straight down or slides down a steep or a gentle ramp: the energy depends only on height, not on the path. A force with these properties is called a **conservative force**. Potential energy is always associated with a conservative force.
 
@@ -229,8 +235,20 @@ When a frictionless cart has risen to its highest point on the ramp, it starts b
 
 Gravitational potential energy is not the only kind of potential energy. A stretched spring, a drawn bow and a compressed trampoline return the energy as kinetic energy: the spring force is conservative, and a stretched spring has **spring potential energy**. The force between electric charges is also conservative. Friction and air resistance, on the other hand, are not conservative. They change kinetic energy into the internal energy of the objects and the air, and this energy does not return as motion even if the object returns to its starting place. That is why no potential energy is associated with friction.
 
+```pysahdy
+A box slides on a floor with friction and stops. Where did its kinetic energy go, and why does it not return as motion?
+---
+It changed into internal energy of the box and the floor. Friction is not a conservative force, so this energy does not return as kinetic energy.
+```
+
 ### Mechanical energy
 The kinetic energy and the potential energy of an object together are its **mechanical energy**. When a cart goes up a frictionless ramp, the kinetic energy decreases and the potential energy grows by the same amount, so the mechanical energy stays the same. When friction acts, part of the mechanical energy changes into internal energy, and the mechanical energy decreases. In the chapter *Conservation of mechanical energy and the work–energy principle* this becomes a tool for calculation.
+
+```pysahdy
+A frictionless cart goes up a ramp, and its kinetic energy decreases by $30\,\text{J}$. What happens to its potential energy and its mechanical energy?
+---
+The potential energy grows by $30\,\text{J}$, so the mechanical energy stays the same.
+```
 
 ## Formula: Kinetic energy and potential energy
 Gravitational potential energy is

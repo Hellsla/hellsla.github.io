@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: a9efce7036c5e5ad
+CONTENT-HASH: c55816dd23499c2c
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- batch delta review: opened example-390 captures (fi-easy, fy4-5); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.
+batch delta review: opened fy4-5-theory-1280-1.png (Pysähdy ja mieti box on jääkiekko / nopeus ei ole voima, after the figure paragraph), fy4-5-theory-1280-2.png and fy4-5-theory-1280-3.png (box on rinne and tukivoima before the closing paragraph). Boxes sit right after the paragraph they test, figures intact, Finnish natural.

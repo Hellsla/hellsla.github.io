@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 6fa0aa5f789b01af
+CONTENT-HASH: 7b7f9a685effd06b
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] none worth listing.
 
 ## Checked
-- batch delta review: opened example-390 captures (fi-easy, fy4-13); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.
+batch delta review (round 2): opened fy4-13-theory-1280-1.png (two Pysähdy ja mieti boxes: T1/T2 and cart mass; overlined vectors render well), fy4-13-theory-1280-2.png, fy4-13-fig-8-390.png. Boxes sit cleanly between paragraph and photo, Vastaus closed, Finnish natural, nothing clipped.

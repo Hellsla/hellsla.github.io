@@ -128,6 +128,12 @@ Kun vaunu 1 työntää vaunua 2 voimalla $\overline{F}$, Newtonin kolmannen lain
 
 Päättely toimii vain, kun ulkoiset voimat eivät muuta liikemäärää. Vaakasuoralla ilmatyynyradalla paino ja tukivoima kumoavat toisensa, ja kitka on hyvin pieni. Törmäävät autot taas kokevat tien kitkan, mutta törmäys kestää vain sekunnin murto-osan. Puskurien voimat ovat silloin paljon suurempia kuin kitka, joten kitkan impulssi jää törmäyksen aikana merkityksettömän pieneksi. Tästä saadaan **liikemäärän säilymislaki**: kun systeemiin vaikuttavien ulkoisten voimien summa on nolla tai niiden impulssi on törmäyksen aikana merkityksettömän pieni, systeemin kokonaisliikemäärä säilyy.
 
+```pysahdy
+Kahden auton törmäyksessä tien kitka vaikuttaa autoihin. Miksi kokonaisliikemäärää voi silti pitää säilyvänä?
+---
+Törmäys kestää vain sekunnin murto-osan, ja puskurien voimat ovat paljon suurempia kuin kitka. Kitkan impulssi jää silloin merkityksettömän pieneksi.
+```
+
 ### Törmäysten lajit
 Liikemäärä säilyy jokaisessa törmäyksessä, kun säilymislain ehto täyttyy. Liike-energia ei säily aina. Törmäys on **kimmoisa**, jos kappaleiden yhteinen liike-energia on törmäyksen jälkeen yhtä suuri kuin ennen sitä. Teräskuulat, biljardipallot ja jousipuskurilla varustetut vaunut törmäävät lähes kimmoisasti. Törmäys on **kimmoton**, jos osa liike-energiasta muuttuu muiksi energiamuodoiksi. Kappaleet muuttavat silloin muotoaan, ja liike-energiaa muuttuu niiden sisäenergiaksi ja ääneksi. Kun kappaleet jäävät kiinni toisiinsa ja jatkavat yhdessä, törmäys on **täysin kimmoton**, ja liike-energia pienenee eniten: suurin mahdollinen osa siitä muuttuu muiksi energiamuodoiksi.
 
@@ -226,8 +232,20 @@ Liikemäärä säilyy jokaisessa törmäyksessä, kun säilymislain ehto täytty
 
 Kuvassa samanmassaiset vaunut tarttuvat yhteen tarranauhalla. Kokonaisliikemäärä on sama ennen ja jälkeen, mutta nyt sama liikemäärä jakautuu kaksinkertaiselle massalle, joten yhteinen nopeus on puolet alkuperäisestä. Liike-energia $\tfrac12 mv^2$ ei säily: kaksinkertainen massa ja puolet nopeudesta antavat puolet alkuperäisestä liike-energiasta. Toinen puoli muuttuu tarranauhan ja vaunujen sisäenergiaksi.
 
+```pysahdy
+Kimmoton törmäys: vaunut tarttuvat yhteen. Mihin liike-energia, joka "katoaa", joutuu?
+---
+Se ei katoa vaan muuttuu tarranauhan ja vaunujen sisäenergiaksi. Kokonaisenergia säilyy, vaikka liike-energia pienenee.
+```
+
 ### Räjähdys
 **Räjähdyksessä** levossa oleva tai yhdessä liikkuva systeemi hajoaa osiin sisäisten voimien vaikutuksesta: jousi laukeaa vaunujen välissä, luistelijat työntävät toisiaan tai ruuti työntää luotia ja kivääriä. Jos systeemi on aluksi levossa, sen kokonaisliikemäärä on nolla ja pysyy nollana. Kun levossa oleva systeemi hajoaa kahdeksi osaksi, osat saavat yhtä suuret ja vastakkaissuuntaiset liikemäärät, ja kevyempi osa saa suuremman nopeuden. Siksi kivääri potkaisee taaksepäin, kun luoti lähtee eteenpäin. Jos osia on useampia, niiden liikemäärien vektorisumma on nolla, mutta yksittäisten osien liikemäärät voivat olla erisuuruisia. Liike-energia kasvaa räjähdyksessä, koska jousen, lihasten tai ruudin energiaa muuttuu liike-energiaksi.
+
+```pysahdy
+Luistelija seisoo levossa jäällä ja heittää raskaan pallon eteenpäin. Miksi hän liukuu itse taaksepäin?
+---
+Pallo saa eteenpäin suuntautuvan liikemäärän, ja systeemin kokonaisliikemäärä pysyy nollana. Siksi luistelija saa yhtä suuren liikemäärän taaksepäin.
+```
 
 ### Vastaus alun kysymykseen
 Biljardipallot ovat yhtä raskaita, ja niiden törmäys on lähes kimmoisa. Kun lyöntipallon nopeus on $v$, liikemäärän säilymisestä seuraa, että pallojen nopeuksien summa pysyy samana: $v_1' + v_2' = v$. Liike-energian säilymisestä seuraa, että nopeuksien neliöiden summa pysyy samana: $v_1'^2 + v_2'^2 = v^2$. Korottamalla ensimmäinen ehto toiseen potenssiin ja vähentämällä toinen ehto saadaan $2 v_1' v_2' = 0$, joten toinen palloista on törmäyksen jälkeen levossa. Lyöntipallo ei voi kulkea toisen läpi, joten se pysähtyy, ja toinen pallo jatkaa nopeudella $v$. Todellisuudessa pallot myös pyörivät ja törmäys ei ole täysin kimmoisa, joten lyöntipallo voi jäädä hiukan liikkeeseen.

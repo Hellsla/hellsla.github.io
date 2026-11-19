@@ -270,6 +270,12 @@
 ### Momentum: mass and velocity together
 In the chapter *Newton's second law* you learned that a force changes the velocity of an object, and that changing the velocity of a heavy object takes a greater force than for a light one. So both the mass and the velocity affect how hard it is to stop or speed up a moving object. Their product is called **momentum**. A light, fast football can have as much momentum as a heavy, slow bowling ball. Momentum is a vector with the same direction as the velocity. In straight-line motion a positive direction is chosen, and the momentum of an object moving in the opposite direction is negative.
 
+```pysahdy
+A football and a bowling ball have the same momentum. Which one moves with the greater speed, and why?
+---
+The football, because its mass is smaller. Momentum is $mv$, so the same product with a smaller mass requires a greater speed.
+```
+
 <svg data-fig="liikemaara" viewBox="0 0 600 370" role="img" aria-label="Diagram with arrows to scale: three balls on an x-axis whose positive direction is to the right. At the top a 0.45 kilogram football moves to the right at 20 metres per second: a long blue velocity arrow and a purple momentum arrow, momentum 9.0 kilogram metres per second. In the middle a 6.0 kilogram bowling ball moves to the right at 1.5 metres per second: a very short velocity arrow but a momentum arrow as long as the football&#x27;s, since the momentum is the same 9.0. At the bottom the football moves to the left at 10 metres per second: the arrows point to the left, and the momentum is minus 4.5 kilogram metres per second." style="max-width:100%;font-size:24px">
   <defs><clipPath id="fy49-liikemaara-c0"><circle cx="70" cy="62" r="22"/></clipPath><clipPath id="fy49-liikemaara-c1"><circle cx="336" cy="274" r="22"/></clipPath></defs>
   <circle cx="70" cy="62" r="22" fill="#ffffff"/>
@@ -380,8 +386,20 @@ The same applies to stopping. When a moving object is stopped, the change in its
   <foreignObject x="272.5" y="176" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{equal areas}$</span></div></foreignObject>
 </svg>
 
+```pysahdy
+A cart stops against a hard and against a soft buffer. Why does the soft buffer exert a smaller force on the cart?
+---
+In both cases the change in momentum and the impulse are equal. The soft buffer stops the cart over a longer time, so a smaller force is enough.
+```
+
 ### Rebounding changes momentum more than stopping
 If an object does not just stop but bounces back, its momentum changes more. When a ball hits a wall and rebounds straight back at the same speed, its momentum changes from $mv$ to $-mv$. The change is $-2mv$, and its magnitude is twice as large as when stopping. So the wall must give a rebounding ball twice the impulse. When calculating a change in momentum the signs are essential, since even a change in the direction of motion alone changes the momentum.
+
+```pysahdy
+A ball hits a wall and rebounds with the same speed. Why is the wall's impulse greater than if the ball just stopped?
+---
+The momentum changes from $mv$ to $-mv$, so the change is $-2mv$. This is twice the change when stopping, so the impulse is also twice as large.
+```
 
 ### The answer to the opening question
 The jumper hits the surface at the same velocity whether it is hard or soft, and stops in both cases. So the change in the jumper's momentum is the same, and so is the impulse of the net force on the jumper. The force of the surface is larger than this net force by the weight, but it too becomes smaller when the stopping time grows. A thick mat is compressed over tens of centimetres, so stopping takes many times longer than on hard ground, where the body stops within a few centimetres. Since impulse is force times time, a longer stopping time means a smaller average net force, and so a smaller average force from the surface too. A smaller force puts less strain on the body, so the risk of injury is lower. This is also why we bend our knees when landing, boxing gloves are padded and a cycling helmet has compressible foam inside.

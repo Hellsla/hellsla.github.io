@@ -296,6 +296,12 @@ In the chapter *Kinetic energy, potential energy and mechanical energy* you lear
 
 Not all the forces acting on the car change its energy. The weight does work when the car goes down or up, and it is exactly this work that turns potential energy into kinetic energy and back. The normal force of the track is perpendicular to the surface of the track and therefore also to the motion, so it does no work. That is why the mechanical energy is conserved when only the weight does work, however twisting the track is. The speed of the car at any point then depends only on how much lower it has descended from the starting point, not on the shape of the track or the mass of the car.
 
+```pysahdy
+Two cars, one twice as heavy as the other, start from rest at the top of the same hill on a frictionless track. Which one is faster at the bottom of the valley?
+---
+They are equally fast. The speed depends only on how far down the car has descended, not on its mass or the shape of the track.
+```
+
 ### Work transfers energy
 In the chapter *Work and energy* you learned that a force does work when an object moves in the direction of the force. Now we also need the sign of the work. A force does positive work when it has a component in the direction of the motion: it increases the energy of the object. A force that opposes the motion, such as friction, does negative work: it decreases the energy of the object. A force perpendicular to the motion, such as the normal force, does no work at all. The unit of work is the same as that of energy, the joule.
 
@@ -340,10 +346,22 @@ In the chapter *Work and energy* you learned that a force does work when an obje
   <foreignObject x="410" y="281.5" width="180" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{perpendicular}$</div></foreignObject>
 </svg>
 
+```pysahdy
+A child slides down a slope on a sled. Does the normal force of the snow do work? What about friction?
+---
+The normal force is perpendicular to the motion, so it does no work. Friction opposes the motion, so it does negative work and decreases the mechanical energy.
+```
+
 ### Friction turns mechanical energy into internal energy
 In a real roller coaster the rolling resistance of the wheels and the air resistance oppose the motion the whole way. They do negative work, and the mechanical energy of the car decreases by exactly this work. Energy does not disappear but turns into internal energy of the wheels, the rails and the air, which warm up slightly. The total energy is always conserved. Mechanical energy is conserved only when there is no friction or air resistance, or when they are so small that they can be ignored.
 
 You remember the difference between the weight, that is gravity, and friction from the chapter *Kinetic energy, potential energy and mechanical energy*: the weight is a **conservative force**. What is new is what follows from this for calculating energy: the work done by the weight depends only on the difference in height, so when an object returns to the same height, it gets back the same energy, whatever route it took. That is why a potential energy can be associated with the weight. The negative work done by friction and air resistance grows with every metre travelled, so it depends on the route. For such a **non-conservative force** a potential energy cannot be defined.
+
+```pysahdy
+A car brakes to a stop. What does its kinetic energy turn into?
+---
+Into internal energy of the brakes, the tyres and the road, which warm up. The energy does not disappear.
+```
 
 ### Answer to the opening question
 A chain lift lifts the train to the top of the first hill. After that the train has only the mechanical energy it got during the lift, and nothing adds to it. The resistive forces decrease it with every metre. If the next hill were as high as the first, the train would not reach its top. Every later hill must be lower than the first and lower than the height that the remaining energy would reach, so that the train still has some kinetic energy at the top.

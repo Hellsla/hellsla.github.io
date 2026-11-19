@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 527b041a30593629
+CONTENT-HASH: 5a83a1470bbeb991
 
 ## Blocking
-None.
 
 ## Polish
-- The Newton's cradle caption could say it is another near-elastic collision (earlier polish, still open).
+- lesson.md "Stop and think" boxes 1 and 2 (car friction, sticky carts) — each question is answered by the sentences right above it, so the student recalls rather than reasons. Fix: ask before the explanation, or make it a transfer ("What if the second cart were three times as heavy?").
+- lesson.md "The answer to the opening question" — the squaring step ($2v_1'v_2'=0$) is the real reasoning jump, yet has no box. Move one box here.
+- Box 3 (skater) is a real transfer and works; keep it. Four boxes is the maximum for one chapter.
+- Pysähdy translation is faithful to the Finnish; only the box heading/answer label wording was checked in the stage capture of the Finnish page (same shared component).
 
 ## Checked
-- Round 3, delta (work queue 8g): only the summary bullet "velocities are signed" changed, to a display aligned block.
-- Formula unchanged: $m_1v_1+m_2v_2 = m_1v_1'+m_2v_2'$, split at the equals sign, so it will not clip at 360 px.
-- Display block inside a bullet is valid in the same form used elsewhere; no wording or number changed.
-- Captures not opened: the change is a typesetting split of one summary line.
+- Learning path, slot goals, no 2D collisions.
+- Pysähdy ("Stop and think") placement after the paragraph tested, answer closed.
+- Predictions refutable; option feedback repairs the misconception.
+- Worked example staged, numbers correct.
+- Exit ticket and checks test the core idea; workload one lesson.

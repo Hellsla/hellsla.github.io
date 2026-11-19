@@ -186,6 +186,12 @@ Liikkuvalla kappaleella on **liike-energiaa**. Kun kärry ajaa kitkatonta ramppi
 
 Nopeuden neliö näkyy liikenteessä. Kun auton nopeus kasvaa $50\,\text{km/h}$:sta $70\,\text{km/h}$:iin, liike-energia kasvaa kertoimella $\left(\tfrac{70}{50}\right)^2 \approx 2{,}0$ eli lähes kaksinkertaiseksi. Juuri tämä energia on jarrutuksessa tai törmäyksessä muutettava muuksi energiaksi.
 
+```pysahdy
+Auton nopeus kolminkertaistuu. Moninkertaiseksi sen liike-energia muuttuu?
+---
+Yhdeksänkertaiseksi, koska liike-energia on verrannollinen nopeuden neliöön ja $3^2 = 9$.
+```
+
 ### Konservatiivinen voima palauttaa energian
 Kun kitkaton kärry on noussut rampissa ylimpään kohtaansa, se lähtee takaisin alas ja on rampin juurella yhtä nopea kuin lähtiessään. Painovoima palauttaa liike-energiaksi kaiken energian, joka nousussa muuttui potentiaalienergiaksi. Lisäksi kitkatta liikkuva kappale, joka lähtee levosta korkeudelta $h$, saa alas tullessaan saman nopeuden, putosi se suoraan tai liukui jyrkkää tai loivaa ramppia: energia riippuu vain korkeudesta, ei reitistä. Voimaa, jolla on nämä ominaisuudet, kutsutaan **konservatiiviseksi voimaksi**. Potentiaalienergia liittyy aina konservatiiviseen voimaan.
 
@@ -229,8 +235,20 @@ Kun kitkaton kärry on noussut rampissa ylimpään kohtaansa, se lähtee takaisi
 
 Painovoiman potentiaalienergia ei ole ainoa potentiaalienergian laji. Venytetty jousi, jännitetty jousipyssy ja painunut trampoliini palauttavat energian liike-energiaksi: jousivoima on konservatiivinen, ja venytetyllä jousella on **jousen potentiaalienergiaa**. Myös sähkövarausten välinen voima on konservatiivinen. Kitka ja ilmanvastus sen sijaan eivät ole konservatiivisia. Ne muuttavat liike-energiaa kappaleiden ja ilman sisäenergiaksi, eikä tämä energia palaa liikkeeksi, vaikka kappale palaisi lähtöpaikkaansa. Siksi kitkaan ei liity potentiaalienergiaa.
 
+```pysahdy
+Laatikko liukuu kitkallisella lattialla ja pysähtyy. Minne sen liike-energia joutui, ja miksi se ei palaa liikkeeksi?
+---
+Se muuttui laatikon ja lattian sisäenergiaksi. Kitka ei ole konservatiivinen voima, joten tämä energia ei palaa liike-energiaksi.
+```
+
 ### Mekaaninen energia
 Kappaleen liike-energia ja potentiaalienergia yhdessä ovat sen **mekaaninen energia**. Kun kärry nousee kitkatonta ramppia, liike-energia pienenee ja potentiaalienergia kasvaa yhtä paljon, joten mekaaninen energia pysyy samana. Kun kitka vaikuttaa, osa mekaanisesta energiasta muuttuu sisäenergiaksi, ja mekaaninen energia pienenee. Luvussa *Mekaanisen energian säilyminen ja energiaperiaate* tästä tulee laskemisen työkalu.
+
+```pysahdy
+Kitkaton kärry nousee rampissa, ja sen liike-energia pienenee $30\,\text{J}$. Mitä tapahtuu potentiaalienergialle ja mekaaniselle energialle?
+---
+Potentiaalienergia kasvaa $30\,\text{J}$, joten mekaaninen energia pysyy samana.
+```
 
 ## Kaava: Liike-energia ja potentiaalienergia
 Painovoiman potentiaalienergia on

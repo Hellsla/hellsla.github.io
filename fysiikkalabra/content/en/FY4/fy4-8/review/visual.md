@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d9dc8894e0d09101
+CONTENT-HASH: 039f025a3dac3e58
 
 ## Blocking
 
 ## Polish
-- None.
 
 ## Checked
-- batch delta review: opened contact sheets en-390-09, en-390-10 (390 px sheets at full height; the 1280 px ones named here) and the diff of the re-broken chains; rows break at relations or operators, equals signs align, nothing clipped, no KaTeX error, surrounding sentences read naturally.
+batch delta review: fy4-8-theory-1280-2 (Stop and think box "A car brakes to a stop": box styling, spacing and KaTeX intact), theory-1280-3, fig-4-390 (energy bars). The sled box's answer is closed in captures; its one-word change ("mechanical energy") is correct English and fits the text around it.
