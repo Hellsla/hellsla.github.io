@@ -1,16 +1,17 @@
-VERDICT: FAIL
+VERDICT: PASS
 CONTENT-HASH: 3efbc288e36bc5e2
 
 ## Blocking
-- [Major] fig "birth" (Aaltoliikkeen perusyhtälö, fig-3-390, theory-1280-2) — the bottom row's label $t = T$ is missing in both captures: its foreignObject (lesson.md line 370) was wrapped in an animation group (`fa-k`, `fa-fy510-birth-0`) and that keyframe (`fa-fy510-birth-0`) holds opacity 0 throughout, so the label is invisible while the animation runs — the row for the whole period is then the only one unlabelled and the text says "neljä hetkeä", so the reader cannot tell which moment it shows — fix: keep the `t = T` label outside every `fa-k`/clip group (static, like the other three labels, x≈53–98, y≈231.5 centred on the row at y≈246; the current y 289.5 is also below the row).
-- [Major] same figure — the λ gauge (about x 132–445 of 600) is shorter than the distance from the source to the dashed front (about 124–495), so in the last row the measure does not equal the distance the wave has advanced in one period, which is exactly the point of the paragraph — fix: draw the gauge from the source x to the front x (and check it in the animated frames and in the reduced-motion still).
+- none
 
 ## Polish
-- [Minor] fig "types", lower half — the label "kierroksen liike" sits on top of the coils at 1280 px (theory-1280-1) — raise it a few px or move it above the arrow.
-- [Minor] fig "types" — "kohdan liike" label sits low, close to the dashed line of the pitkittäinen section; add a little space.
+- [Minor] fig "types" (fig-2-390 / theory-1280-1) — in the poikittainen half the label "kohdan liike" sits low, close to the divider, and "kierroksen liike" almost touches the spring coils; a few px more clearance would help.
+- [Minor] fig "graphs" (fig-4-390) — the x-axis tick labels (0,25 … 1,25 s) and (0,5 … 2,5 m) are small at 390 px; acceptable, but the same size as the axis letters would read better.
 
 ## Checked
-- fig-1, fig-2, fig-3, fig-4 at 390 px; theory-1280-1 and theory-1280-2 (the animated figures beside text, the pause button). Wording diff is not visible in captures beyond the theory paragraph, read in the diff. Other figures and stages unchanged by the diff and not reopened.
+- Opened fig-2-390 (types), fig-3-390 (birth), fig-4-390 (graphs) and theory-1280-1 (types figure beside its paragraph, "Pysäytä animaatio" button visible, layout intact).
+- Round-1 items re-checked in the still (SVG source of data-fig="birth"): the "t = T" label is present (x 53–98, y 289.5); the λ gauge runs x = 120 to 440, from the crest of the last frame to the front dashed at x = 440, so it matches. The capture only showed a playing frame. Animation runs only under .is-playing, none under prefers-reduced-motion or print (site.css 1275–1281).
+- Delta covers the animated versions of "types" and "birth"; wording diff unchanged otherwise. Layout checks green in the packet.
 
 ## Scores
-illustrations 3 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
