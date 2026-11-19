@@ -1,9 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0022b360091baa7e
+CONTENT-HASH: dc3f62700100266d
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: diff only splits the "Tunnetut ja kysytty" paragraph into knowns and question (words unchanged, maths unchanged); worked-example captures of fy5-1, fy5-4 and fy5-14 opened at 390 px: knowns and question read as separate paragraphs, formulas render cleanly, nothing clipped.
+- Delta: the two animated figures (superpositio, solmut) now play by CSS; wording unchanged.
+- Opened fig-2-390 (superposition), fig-3-390 (nodes and antinodes), fig-row-1280 (figure beside its paragraph with "Pysäytä animaatio" button).
+- Captures show playing frames: the t = ... row labels are hidden by design (animated, still has them), curves mid-cycle; the legend (tuleva, heijastunut, summa), S nodes, wall and K / S / lambda labels read cleanly, nothing clipped. Stage of the still was judged from the SVG source (labels remain in the still, wrapped in animated groups only).
+- Layout survives at 390 and 1280 px; a pause control is present (still under reduced motion per the coordinator's note).
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
