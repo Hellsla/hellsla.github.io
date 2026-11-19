@@ -345,7 +345,12 @@ P_\text{Su} &= 8.4 - 3.5 - 5.4 = -0.5
 \end{aligned}
 $$ times $24\,\text{h}$ is the weekly consumption $1615\,\text{GWh}$.
 
-Nuclear power produces $3.5\,\text{GW} \cdot 168\,\text{h} = 588\,\text{GWh}$ and wind power $489.6\,\text{GWh}$, so the energy of the others is $$
+Nuclear power produces $$
+\begin{aligned}
+&3.5\,\text{GW} \cdot 168\,\text{h} \\
+&= 588\,\text{GWh}
+\end{aligned}
+$$ and wind power $489.6\,\text{GWh}$, so the energy of the others is $$
 \begin{aligned}
 &1615 - 588 - 490 \\
 &= 537\,\text{GWh}

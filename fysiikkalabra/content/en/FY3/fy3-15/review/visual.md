@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9d6ae5c44634a68a
+CONTENT-HASH: c33c3c9da850a40f
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] Pohdinta "kertaus", feedback of the correct option and of the last wrong option: at 390 px the inline chain $Q_2 = Q_1 - W = 800\,\text{MJ} - 280\,\text{MJ} = 520\,\text{MJ}$ is clipped at the right edge ("280 M"); the result 520 MJ is lost there but stays in the option text and in the other feedbacks. Known entry in docs/clipped-formulas.tsv, unchanged from before this work; a display or two-row form would be better once the automated test allows it.
+- none
 
 ## Checked
-- Delta round 2: rendered preview (en) at 390 and 1280 px with all four feedbacks of the "kertaus" choice shown. 1280 px: all formulas whole, inline form reads cleanly. 390 px: no page overflow (scrollWidth 390); the two inline chains clip as described; the other feedbacks (wrong first option, display form of the second) are intact. Rest of the lesson unchanged by this delta.
+- Delta (base 25e92e4, reflow): rendered Kertaus (Pohdinta/kertaus) feedbacks of the first (wrong) and correct options, all open, at 360 and 1280 px (en). Both chains read well: equals signs aligned, units upright with thin space, the full stop sits inside the display after 520 MJ and the following text starts on its own line normally. No horizontal overflow (scrollWidth = viewport), feedback boxes not clipped.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

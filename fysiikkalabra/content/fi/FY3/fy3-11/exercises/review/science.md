@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c6cf825435b84022
-SCOPE: delta added-exercise from 9cc21f77dd6113db base 71f5784fca44
+CONTENT-HASH: f719262d2793f4c5
+SCOPE: delta wording from c6cf825435b84022 base 6153818
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- Diff recomputed character by character: the only change in the task texts is the removed prefix "Esimerkkiaineisto: " (first letter capitalised); no number, unit, symbol or condition changed.
-- Data, answers.py, tolerances and solutions are untouched (solutions.md only reflowed), so my earlier PASS recomputation stands.
-- Without the prefix the tasks still state their assumptions and uncertainties; the data are not claimed to be a real measurement beyond what the task text says (teacher-approved removal).
+- Diff since base 6153818: only the Answer line of L2-04 in solutions.md changed; numbers, units and the answer 720 kW are identical.
+- New wording gives the reason first: the trailing zero of 480 kW is significant (three figures), 40.0 % has three figures, so the answer has three significant figures. This matches house rule P7 (a rated value's trailing zeros are significant unless the task says otherwise; "480 kW: three"); the task text gives 480 kW as the engine's rated mechanical power with no other statement.
+- Recomputed: P_o = 480 kW / 0.400 = 1200 kW, P_waste = 1200 kW - 480 kW = 720 kW; three figures is right for a quotient of two three-figure values.
+- The reasoning is the same as the passed version, only reordered; no new claim, no physics change.
 - Hash same at start and end.

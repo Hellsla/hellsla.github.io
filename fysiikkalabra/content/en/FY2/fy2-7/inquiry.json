@@ -250,7 +250,7 @@
         {
           "text": "The percentage was subtracted as megawatt-hours, although the loss of $4\\,\\%$ is $20\\,\\text{MWh}$.",
           "correct": true,
-          "feedback": "Correct. A loss of $4\\,\\%$ means four hundredths of the sent energy, $4 : 100 = 0.04$. The loss is $0.04 \\cdot 500\\,\\text{MWh} = 20\\,\\text{MWh}$ and the energy that arrives is $$\n\\begin{aligned}\n&500\\,\\text{MWh} - 20\\,\\text{MWh} \\\\\n&= 480\\,\\text{MWh}\n\\end{aligned}\n$$. You could have estimated it: when $1\\,\\%$ is $5\\,\\text{MWh}$, four per cent is $20\\,\\text{MWh}$."
+          "feedback": "Correct. A loss of $4\\,\\%$ means four hundredths of the sent energy, $4 : 100 = 0.04$. The loss is $$\n\\begin{aligned}\n&0.04 \\cdot 500\\,\\text{MWh} \\\\\n&= 20\\,\\text{MWh}\n\\end{aligned}\n$$ and the energy that arrives is $$\n\\begin{aligned}\n&500\\,\\text{MWh} - 20\\,\\text{MWh} \\\\\n&= 480\\,\\text{MWh}\n\\end{aligned}\n$$. You could have estimated it: when $1\\,\\%$ is $5\\,\\text{MWh}$, four per cent is $20\\,\\text{MWh}$."
         },
         {
           "text": "The loss should be calculated from the energy that arrives, not from the energy sent into the network.",
