@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: df1aa72edd405367
-SCOPE: delta added-exercise from 07355c9d787832e9 base b2eac257e05e
+CONTENT-HASH: 9574c3020bc20cb0
+SCOPE: delta wording base=6153818
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Diff recomputed character by character: the only change in the task texts is the removed prefix "Esimerkkiaineisto: " (first letter capitalised); no number, unit, symbol or condition changed.
-- Data, answers.py, tolerances and solutions are untouched (solutions.md only reflowed), so my earlier PASS recomputation stands.
-- Without the prefix the tasks still state their assumptions and uncertainties; the data are not claimed to be a real measurement beyond what the task text says (teacher-approved removal).
-- Hash same at start and end.
+- Diff against 6153818: the only change is the first sentence of the water-volume table exercise, "$1{,}000\,\text{kg}$ vettä tilavuus" → "$1{,}000\,\text{kg}$:n vesimäärän tilavuus". The meaning is the same: the volume of a fixed $1{,}000\,\text{kg}$ amount of water at different temperatures. No number, unit, symbol, condition, answer (45), unit string or tolerance changed.
+- The new wording states the physics better: a fixed mass means the volume change reflects only the density change, which is what parts a) and b) need ($\gamma = \Delta V/(V_0 \Delta T)$ with $V_0$ at $4\,{}^\circ\text{C}$). The data, answers.py and solutions are unchanged, so my earlier recomputation still holds.
+- Hash 9574c3020bc20cb0 was the same at the start and the end.
