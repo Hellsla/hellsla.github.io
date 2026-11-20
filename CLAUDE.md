@@ -15,7 +15,8 @@ and the map of checks `fysiikkalabra/docs/QUALITY.md`.
   runs on the model it was created with, which otherwise is the coordinator's own (Opus), and a command's `model:`
   frontmatter does not change it (fy8-5…fy8-8: the orchestration ran on Opus, about 194 k per chapter). Opus or Fable
   orchestration only on the teacher's word; the agents' models stay as `.claude/commands/lesson.md` routes them.
-- **Teacher**: approves figures and content and merges. Nothing else publishes.
+- **Teacher**: approves figures and content. The coordinator merges green pull requests with the teacher's permission
+  (teacher 2026-11-19 "saat yhdistää"; 2026-11-20 this wording approved); nothing is merged without the approval recorded in the queue.
 
 ## Rules
 1. **A red `main` comes first.** Check the latest `fysiikkalabra-ci` run on `main` before starting work. If it failed,
@@ -39,4 +40,5 @@ and the map of checks `fysiikkalabra/docs/QUALITY.md`.
 7. **Cost.** Keep worker sessions short; follow the model routing and budgets in `.claude/commands/lesson.md`. Planning
    and writing that changes no file in this repository belongs in a Claude project, not a Claude Code session.
 
-Never merge a pull request, push to `main` or force-push (`fysiikkalabra/CLAUDE.md` "Never").
+Never push to `main` or force-push (`fysiikkalabra/CLAUDE.md` "Never"). Workers never merge; only the coordinator merges,
+with the teacher's permission as described under Roles.
