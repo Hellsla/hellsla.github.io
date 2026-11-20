@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: bec22c4ab3c51162
+CONTENT-HASH: 4ef10f56ac909cbd
 
 ## Blocking
 
 ## Polish
-- [Minor] Feedback of "internal energy stays the same": "The energy that leaves is transferred as heat to the surroundings and increases their internal energy." reads fluently; no change needed.
+- [Minor] U-value unit `\text{W/(m}^2\text{}\cdot\text{K)}` is an old construct; it renders acceptably (Finnish fy3-12-stage-selita-390-3); a cleaner form can replace it when next edited.
 
 ## Checked
-- batch delta review: own captures of the Pohdinta card (Recap from an earlier lesson) with the changed feedback open on the first (wrong) option and also on the second, 390 px and 1280 px (scratchpad fy3-12-card-390.png, fy3-12-card-1280.png): the reworded prompt ("…no change of state") and the feedback with inline "ΔU = Q + W = −3.0 kJ" fit the column, no clipping, opened card leaves no gap.
+batch delta review: three new Pysähdy blocks read in English from the source; layout verified in the Finnish captures (fy3-12-theory-1280-2, fy3-12-stage-selita-390-3), which share the cut.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

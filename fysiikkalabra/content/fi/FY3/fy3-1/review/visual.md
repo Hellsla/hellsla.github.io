@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 3c3268272cf8b312
+CONTENT-HASH: 8e7998dcffddb28f
 
 ## Blocking
 
 ## Polish
-- [Minor] Pohdinta, Kertaa-kortti: "$5{,}5\,\text{cm}$"-vaihtoehto on ensimmäisenä, oikea viimeisenä; vaihtoehtojen järjestys on kunnossa, ei muutosta.
+- [Minor] fy3-1-stage-selita-390-3 — the new "Pysähdy ja mieti" box is a coloured box (shared component, not a lesson fault); it reads clearly at 390 px, no action.
 
 ## Checked
-batch delta review: Pohdinta-kortti auki ja palaute näkyvissä (väärä vaihtoehto valittu, Vastaa painettu) 390 px ja 1280 px (oma Playwright-kaappaus preview-sivusta, koska valmiissa kuvissa palaute ei ole auki), lisäksi fy3-1-stage-herata-390 ja fy3-1-open-ennusta-1280. Yksiköt (cm, N) KaTeXina ohennetulla välilyönnillä, $3 \cdot 1{,}5\,\text{cm} = 4{,}5\,\text{cm}$ mahtuu riville, ei leikkautumista, palaute korttiin sisällä. Suomi sujuvaa. lesson-answers.py ei näy sivulla.
+batch delta review: three new Pysähdy ja mieti blocks judged in fy3-1-stage-selita-390-3 (390 px) and fy3-1-theory-1280-2 (1280 px); the box, its closed Vastaus, the table and the photo keep their layout; maths with units set in LaTeX, Finnish natural; answers (closed) read from the source.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

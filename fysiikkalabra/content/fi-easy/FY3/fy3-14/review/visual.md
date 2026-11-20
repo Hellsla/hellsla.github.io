@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3d0e239029fd8ba7
+CONTENT-HASH: edb3cdc30114bd92
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] fy3-14 theory — the paragraph "Jos $Q_v \geq Q_j$, kaikki jää sulaa. Silloin…" starts with "Silloin", which points back across a list; repeating the condition would be clearer.
 
 ## Checked
-- Delta (paragraph breaks only, words unchanged). No 360 px captures exist; 390 px used.
-- fy3-14-example-390-2.png: stages 4-6 show one step per paragraph, aligned chains, nothing clipped.
-- fy3-14-stage-selita-390-2.png: notation list, figure, table and numbered final states readable.
-- fy3-14-open-tarkista-1280-2.png: opened feedback and hints, reading column held.
-- fy3-14-open-exercises-L2-1280-5.png: opened solution with split paragraphs, formulas intact.
+batch delta review: four new Pysähdy blocks read in Selkeä suomi from the source; subscripts match the chapter; layout verified in the Finnish captures of the batch, which share the cut.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4
