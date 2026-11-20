@@ -1,19 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 35edad9152364348
+VERDICT: PASS
+CONTENT-HASH: 19f12c96b2b50e2b
 
 ## Blocking
-- [Major] lesson.md, second pysahdy block (after the decibel-scale figure) — the question and answer repeat exercise fy5-15-L1-05 (hundredfold intensity, 20 dB) almost word for word — the chapter's own level-1 exercise is answered before the student reaches it, which the scope note forbids — replace the block with a different question from the same paragraph (for example the intensity is multiplied by 1000, or the level rises by 30 dB), with different numbers from L1-05.
+- none
 
 ## Polish
-- [Minor] third pysahdy block (two machines, one switched off) — gives the 3 dB rule that the L2 two-machine exercise partly asks (67 dB); the numbers differ, so acceptable, but a block about a different case (e.g. 80 dB + 80 dB placed beside a 60 dB source) would give less away.
+- [Minor] third pysahdy block (two machines) — gives the 3 dB rule that an L2 exercise partly asks; numbers differ, so acceptable.
+- [Minor] opened answers: no capture of an open Vastaus at 360 px; relied on the layout 360/390 check (ok).
 
 ## Vanhan sisällön löydökset
 - none
 
 ## Checked
-- theory-1280-1..4 (fi): blocks 1, 2 and 3 rendered closed with the Vastaus summary, left rule, label, spacing and width fit the column; the questions read fluently, block 1 and 3 are answerable from the paragraph just read (the 3 dB rule is stated in Tasojen erotus and the 80+80 = 83 dB example just above).
-- Opened answers and 360 px: not captured separately; relied on the packet's layout 360/390 check (ok); no 360 px capture of the open answer was seen.
-- Language: wording natural, glossary terms (intensiteetti, desibeli, taso) consistent; units LaTeX.
+- theory-1280-1 and theory-1280-4 (fi): all three blocks rendered closed (label, left rule, Vastaus summary, spacing, column width fit); block 1 sits after the point-source paragraph and photo, block 2 after the decibel paragraph and scale figure, block 3 after the summation paragraph and bar figure. Each is answerable from the paragraph just read (inverse-square, 10 dB per tenfold, 3 dB per halving).
+- Second block replaced: now a thousandfold question (30 dB), no longer the L1-05 duplicate; no exercise asks it.
+- Language natural, glossary terms consistent, units and maths in LaTeX ($3 \cdot 10\,\text{dB} = 30\,\text{dB}$ renders correctly).
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4
