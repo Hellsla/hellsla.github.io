@@ -1,23 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: ff3d3e83e6353700
+CONTENT-HASH: 3f85c11d16edeafb
+
+Scope: only the three new "Pysähdy ja mieti" blocks (teacher's note 2026-11-20), language: fi-easy.
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- lesson.md:403 (Nopeus riippuu väliaineesta…) — the paragraph adds dispersion, tsunamis and surface-wave speed, beyond the slot ("v = fλ, poikittainen/pitkittäinen") and heavy for S2 readers; it also leaves the one-idea rule — cut from "Tämä ei kuitenkaan päde kaikkiin aaltoihin" to "dispersiiviseksi/Tsunamin…" and keep the rest.
-- lesson.md:137 (Aalto on etenevä häiriö) — the sentences on gas thermal motion and drifting objects on water surface waves dilute the core idea for a first-time reader; one short sentence "Todellisessa aallossa ainetta voi kulkea vähän" is enough.
-- lesson.md:554 — the stadium-wave figure (`scene`) stands after Tiivistelmä, no text mentions it and it is not in any capture; either place it right after the paragraph on "ei ainetta" with one sentence about it or remove it.
-- inquiry.json hook — "Narussa näkyy kumpu, joka kulkee kohti tolppaa" already says what moves; the Miksi question then is half answered. Say only that the bell rings after a moment.
-- ennuste-1, wrong option 3 feedback — "vaikka koe kestäisi kauan" claims more than the short run shows; say "kokeessa".
+- Block 1 (frequency of a point 1 m from the hand): answerable from the sentence just above ("jokainen kohta värähtelee samalla taajuudella kuin käsi"); good placement after the pulse/periodic-wave paragraph. Does not touch the later predictions (speed and wavelength).
+- Block 2 (coil spring direction): answerable from the paragraph and figure above; the answer repeats the paragraph, it does not pre-empt Koe 1 (which asks for measured displacement of P). Acceptable.
+- Block 3 (v = lambda/T, 0,50 m and 0,25 s): clean numbers, one step, directly after the formula; differs from the worked example (pulse s/t then f) and from Ennuste 2, so nothing later is given away. The answer shows the symbolic form before the numbers.
+- Wording and language: clear, units in LaTeX, decimal comma (point in en). fi-easy answers split into short sentences as required.
+- Optional: block 3 could ask a follow-up-free variant of "the period is" but not needed.
 
 ## Checked
-- Path: prerequisite (T, f, A) used and retrieved; hook, two predictions, three single-variable experiments (locked/vary right), explain with `after` all three; goals of the slot met, reflection returns to the bell. One lesson's workload.
-- Predictions can be refuted: koe-1 gives dxMax 0 / dyMax 5 cm (both wave types), koe-2 gives fλ = v at two or three taajuutta with an independent ruler check of λ, koe-3 isolates jännitys. Distractor feedback names the misconception.
-- Sim at 390 px: picture, controls, readout understandable; model values called model values; explanations behind Käyttöohje / Mallin oletukset / Laskennan selitys.
-- Figures (types, birth, graphs) beside their paragraphs and legible; the (x,y) versus (t,y) contrast is taught, tested (Etsi virhe) and refuted in Tarkista.
-- Worked example: seven stages, symbolic first, pulse then periodic wave, does not repeat the siirto task.
-- Tarkista 2 figure (fy5-10/valokuva): needed to answer, scale readable (crests 0,5/2,0/3,5 m), the description gives no answer; mistakes 1,35 / 0,833 / 5,4 are real slips with repairing feedback.
-- Checks are concept/representation/concept with misconception distractors; exit ticket tests energy-not-matter and f versus λ.
-- Finnish: terms match the glossary, decimal commas, case after unit correct; reading level acceptable for Selkeä suomi apart from the polish items.
-- Note: the packet says check_lesson.py was not run; I did not judge layout checks.
+Physics of all three answers; that each is answerable from the preceding paragraph; placement (after the paragraph or figure it tests, none after the later experiments); nothing given away from Ennuste 1-2, Koe 1-3 or the conclusion; layout checks at 360/390/768/1280 px passed in the packet (no dedicated capture of an opened block exists; I did not open the preview).
+
+## Vanhan sisällön löydökset
+- Ydinajatus, first paragraph: about 190 words, over the 120-word guide.
+- Packet lesson.md ends with a stray closing code fence after the "scene" figure (check it is only a packet artefact).
+- "scene" figure (stadium wave) sits after Tiivistelmä, apart from any paragraph it explains.
+- Ennuste 1 feedback refers to "kokeessa jousessa", wording works only after the experiment (box reopened later; acceptable).
