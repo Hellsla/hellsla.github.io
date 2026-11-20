@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1b79c975716cccf0
+CONTENT-HASH: e9d06d76f1718ba1
 
 Scope (teacher 2026-11-20, round 1): only the three new Pysähdy ja mieti blocks (fi-easy). Placement, physics, answerability and the opened state at 360 px were checked.
 

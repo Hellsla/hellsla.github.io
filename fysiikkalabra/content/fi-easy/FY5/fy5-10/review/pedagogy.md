@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3f85c11d16edeafb
+CONTENT-HASH: 5bbcf551eba0f512
 
 Scope: only the three new "Pysähdy ja mieti" blocks (teacher's note 2026-11-20), language: fi-easy.
 

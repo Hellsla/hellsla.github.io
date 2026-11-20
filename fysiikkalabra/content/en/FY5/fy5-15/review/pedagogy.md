@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 19f12c96b2b50e2b
+CONTENT-HASH: 2f6db9fe9e04be35
 
 Scope (teacher 2026-11-20): only the three "Pysähdy ja mieti" blocks; round 2 delta (block 2 now 1000-fold, 30 dB).
 

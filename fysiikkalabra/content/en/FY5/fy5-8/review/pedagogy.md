@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1b79c975716cccf0
+CONTENT-HASH: 701e0aec24644832
 
 Scope (teacher 2026-11-20, round 1): only the three new Pysähdy ja mieti blocks (en). Placement, physics, answerability and the opened state at 360 px were checked.
 
