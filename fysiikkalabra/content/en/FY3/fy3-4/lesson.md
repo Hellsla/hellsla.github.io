@@ -210,7 +210,7 @@ F &= \rho g h \cdot A
 
 <!-- vaihe -->
 
-**Result.** The total pressure is $p \approx 219\,\text{kPa}$ and the force on the window is $F \approx 1.8\,\text{kN}$. The pressure is given with three significant figures, because the depth $12.0\,\text{m}$ and the atmospheric pressure $101\,\text{kPa}$ are given with three figures. The force is given with two, because the area $150\,\text{cm}^2$ is given with two figures.
+**Result.** The total pressure is $p \approx 219\,\text{kPa}$ and the force on the window is $F \approx 1.77\,\text{kN}$. Both the pressure and the force are given with three significant figures, because the depth $12.0\,\text{m}$, the atmospheric pressure $101\,\text{kPa}$ and the area $150\,\text{cm}^2$ are given with three figures.
 
 <!-- vaihe -->
 

@@ -210,7 +210,7 @@ F &= \rho g h \cdot A
 
 <!-- vaihe -->
 
-**Tulos.** Kokonaispaine on $p \approx 219\,\text{kPa}$ ja ikkunaan kohdistuva voima $F \approx 1{,}8\,\text{kN}$. Paine annetaan kolmella merkitsevällä numerolla, koska syvyys $12{,}0\,\text{m}$ ja ilmanpaine $101\,\text{kPa}$ on annettu kolmella numerolla. Voima annetaan kahdella, koska ala $150\,\text{cm}^2$ on annettu kahdella numerolla.
+**Tulos.** Kokonaispaine on $p \approx 219\,\text{kPa}$ ja ikkunaan kohdistuva voima $F \approx 1{,}77\,\text{kN}$. Sekä paine että voima annetaan kolmella merkitsevällä numerolla, koska syvyys $12{,}0\,\text{m}$, ilmanpaine $101\,\text{kPa}$ ja ala $150\,\text{cm}^2$ on annettu kolmella numerolla.
 
 <!-- vaihe -->
 
