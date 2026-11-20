@@ -186,6 +186,12 @@ Mikromallin mukaan kaasun paine syntyy hiukkasten törmäyksistä astian seinäm
 
 Isotermisessä tilanmuutoksessa paine on siis kääntäen verrannollinen tilavuuteen, ja paineen ja tilavuuden tulo pysyy vakiona. Tätä sanotaan Boylen laiksi. Se vastaa alun kysymykseen: lentokoneen matkustamossa ilmanpaine laskee noin $78\,\text{kPa}$:iin, joten pussin ilma laajenee, kunnes pussi on kireällä. Kireässä pussissa ilman paine pysyy hieman matkustamon painetta suurempana, ja siksi pussi tuntuu kovalta.
 
+```pysahdy
+Kaasun tilavuus pienennetään kolmasosaan, ja lämpötila pysyy samana. Mitä paineelle tapahtuu?
+---
+Paine kolminkertaistuu, koska tulo $pV$ pysyy vakiona.
+```
+
 Boylen laki pätee hyvin ilmaan ja muihin kaasuihin tavallisissa paineissa ja lämpötiloissa. Kaasun määrän täytyy pysyä samana, eikä kaasua saa päästä vuotamaan pois tai tulemaan lisää. Paineena käytetään kaasun kokonaispainetta eikä mittarin näyttämää ylipainetta.
 
 Boylen laki voidaan todentaa kokeellisesti. Ruiskuun suljetaan ilmaa, ja ruisku liitetään painemittariin. Mäntää painetaan vaiheittain, ja jokaisella tilavuudella luetaan paine. Mittaus tehdään hitaasti, jotta ilman lämpötila ehtii palata huoneenlämpöön. Kun tulokset piirretään $(V, p)$-koordinaatistoon, pisteet asettuvat laskevalle kaarelle, josta on vaikea nähdä, onko kyse juuri kääntäen verrannollisuudesta. Siksi taulukkoon lasketaan uusi sarake $1/V$ ja piirretään $p$ $1/V$:n funktiona. Jos laki pätee, pisteet asettuvat mittausepävarmuuden rajoissa origon kautta kulkevalle suoralle, jonka kulmakerroin on vakio $pV$. Kokeile simulaatiossa: tallenna mittauksia eri tilavuuksilla ja valitse ”Piirrä p 1/V:n funktiona”.
@@ -306,6 +312,12 @@ Kun kaasua lämmitetään, sen hiukkaset liikkuvat nopeammin. Jos mäntä pääs
   <path d="M438,297 L448,297 L448,303 L462,290 L448,277 L448,283 L438,283 Z" fill="#e8590c" stroke-linejoin="round"/>
   <foreignObject x="440" y="303.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Q$</div></foreignObject>
 </svg>
+
+```pysahdy
+Jäykässä, suljetussa astiassa oleva kaasu lämpenee. Mikä suure kasvaa, ja miksi?
+---
+Paine kasvaa, koska tilavuus on vakio ja hiukkaset liikkuvat nopeammin.
+```
 
 <figure class="unit-photo"><img src="pics/fy3/barrel-balloon.webp" alt="Tutkijat täyttävät suurta läpinäkyvää kaasupalloa lumisella tasangolla aurinkoisena päivänä."><figcaption>NASAn BARREL-tutkimuspallon täyttö Etelämantereella. Heliumia laitetaan vain pallon yläosaan, koska kaasu laajenee, kun ulkoilman paine pienenee pallon noustessa.</figcaption></figure>
 
@@ -492,6 +504,12 @@ missä $\theta$ on lämpötila celsiusasteina lukuarvona; laskuissa riittää $2
   <circle cx="407.5" cy="418" r="6.5" fill="#2f74b5" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="148.5" y="478.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{jatke}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Kaasun lämpötila nousee vakiotilavuudessa $20\,{}^\circ\text{C}$:sta $40\,{}^\circ\text{C}$:een. Kaksinkertaistuuko paine?
+---
+Ei. Kelvineinä lämpötila nousee $293\,\text{K}$:sta $313\,\text{K}$:iin, joten paine kasvaa vain tekijällä $313/293 \approx 1{,}07$.
+```
 
 ## Esimerkki
 Sipsipussissa on lentokentällä $0{,}80\,\textsf{l}$ ilmaa $101\,\text{kPa}$:n paineessa. Lennon aikana matkustamon paine on $78\,\text{kPa}$. Kuinka suuri on pussissa olevan ilman tilavuus lennolla, kun lämpötila pysyy samana ja pussi pääsee laajenemaan vapaasti?

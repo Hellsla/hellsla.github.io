@@ -6,7 +6,8 @@
   python scripts/reviews.py scope <id> [--exercises]   per reviewer: none, delta or full, from what changed since its PASS
   python scripts/reviews.py check-report <id> [--lang en] [--exercises]   a report's own hash and a well-formed SCOPE line (also in verify)
   python scripts/reviews.py carry <id> [--exercises]   record that a reviewer's PASS carries over a change it need not see
-  python scripts/reviews.py approve-figures <id> …     record that the teacher approved the lesson's figures as drawn now
+  python scripts/reviews.py approve-figures <id> … [--images]   record that the teacher approved the lesson's figures as drawn now
+                                             (--images: only those drawn on a picture file, scripts/figimage.py)
   python scripts/reviews.py carry-item investigation|sovella|koe|unit|guide <id> [--lang en]
                                              the same carry for an investigation, a unit or a TVT guide (its id), a
                                              Sovella set or an example exam (the course, FY4): only over figures the
@@ -129,7 +130,7 @@ version last reviewed, published_exercises) until a new carry or a review. Pedag
 """
 import collections, datetime, difflib, functools, hashlib, html, json, os, pathlib, re, subprocess, sys, tempfile
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import courses, figcat, figlib, i18n, inquiry, kaavat
+import courses, figcat, figimage, figlib, i18n, inquiry, kaavat
 
 ROOT = courses.ROOT
 REVIEWS = ("science", "pedagogy", "visual")      # the three independent reviewers (visual & editorial since 2026-10-31)
@@ -317,6 +318,7 @@ def entries(folder, src, part="lesson"):
     out = [(n, at(n), False) for n in PARTS[part]]
     texts = courses.EXERCISE_FILES if part == "exercises" else courses.LESSON_TEXTS if part == "lesson" else courses.TEXT_FILES
     refs = courses.pic_refs_in(src.read(at(n)) for n in texts)
+    refs = [r for r in refs if not figimage.is_base(r) or src.read(f"assets/{r}", True) is not None]   # a figure's picture that this version of the lesson does not have is no entry: an older commit hashes as it did before work queue 24
     if part != "all":                                  # figures a task refers to by id (scripts/figcat.py): their drawing code, and their words in a translation
         for fid in figcat.refs_in(" ".join(src.read(at(n)) or "" for n in FIGURE_TEXTS[part])):
             out.append((f"figure:{fid}", f"figure:{fid}", False))
@@ -1283,7 +1285,10 @@ def figure_hash(fid):
         if f is None: raise
         fn = figcat.module(str(f.parent)).FIGURES[name]
         _own_language(f.read_text()); svg = fn()
-    return hashlib.sha256(svg.encode()).hexdigest()[:16]
+    h = hashlib.sha256(svg.encode())
+    base = figimage.pic(fid)
+    if base and courses.pic_source(base).is_file(): h.update(courses.pic_source(base).read_bytes())   # a picture as the base: the file is part of what the teacher approved (work queue 24)
+    return h.hexdigest()[:16]
 
 
 @functools.lru_cache(maxsize=None)
@@ -1306,11 +1311,13 @@ def approved(fid):
     except Exception: return False
 
 
-def approve_figures(lid):
-    """Append a row for every figure of lesson `lid` (its figures.py, as drawn now) that has none for its current drawing."""
+def approve_figures(lid, images_only=False):
+    """Append a row for every figure of lesson `lid` (its figures.py, as drawn now) that has none for its current drawing.
+    images_only: only the figures drawn on a picture file (a row in lessons/<COURSE>/ASETTELU.tsv, scripts/figimage.py;
+    work queue 24: the hash covers the picture's bytes), so the other figures of the lesson stay as they were."""
     rows = teacher_figures(); folder = find_lesson(lid)
     mod = figcat.module(str(courses.code_dir(folder)))
-    new = [(f"{lid}/{name}", figure_hash(f"{lid}/{name}")) for name in getattr(mod, "FIGURES", {})]
+    new = [(f"{lid}/{name}", figure_hash(f"{lid}/{name}")) for name in getattr(mod, "FIGURES", {}) if not images_only or figimage.row(f"{lid}/{name}")]
     new = [(fid, h) for fid, h in new if h not in rows.get(fid, set())]
     if not TEACHER_FIGURES.is_file():
         TEACHER_FIGURES.write_text("# Figures the teacher approved as drawn (teacher 2026-11-10; scripts/reviews.py \"figures the teacher approved\").\n"
@@ -2013,6 +2020,8 @@ def changes(folder, base, part="lesson", split=False, new=None):
         if not binary and presentation_change(old, new, rel):   # where or how the sim draws, the exact change of the file approved (one row for every language): the visual reviewer sees the diff
             cats.add("presentation-only"); n += 1
             diff += list(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), f"a/{rel}", f"b/{rel}", lineterm="", n=2)); continue
+        if binary and (ids := figimage.bases().get(rel[7:], [])) and all(approved(f) for f in ids):   # the picture a teacher-approved figure is drawn on (its hash covers the file)
+            cats.add("teacher-figure"); diff.append(f"--- {rel}: picture of a figure approved by the teacher"); continue
         if binary: cats.add("simulation" if "/sims/" in f"/{rel}" else "photo" if _is_photo(rel) else "figure"); diff.append(f"--- {rel}: binary file {'added' if a is None else 'removed' if b is None else 'changed'}"); continue
         lines = list(difflib.unified_diff((a or "").splitlines(), (b or "").splitlines(), f"a/{rel}", f"b/{rel}", lineterm="", n=2))
         if not binary and rb and FBD_SPEC.search(rb):         # drawn force diagrams: the science reviewer checks each spec
@@ -2404,7 +2413,7 @@ if __name__ == "__main__":
         errs = report_problems(find_lesson(a[1]), part); print("\n".join(errs) or "reports ok"); sys.exit(1 if errs else 0)
     elif a[0] == "carry": carry(find_lesson(a[1]), part)
     elif a[0] == "carry-item": item_carry(a[1], a[2], globals().get("LANG", i18n.SOURCE))
-    elif a[0] == "approve-figures": [approve_figures(x) for x in a[1:]]
+    elif a[0] == "approve-figures": [approve_figures(x, "--images" in a) for x in a[1:] if x != "--images"]
     elif a[0] == "approve-text":
         opt = lambda k: a[a.index(k) + 1] if k in a and a.index(k) + 1 < len(a) else None
         src_ = opt("--source")

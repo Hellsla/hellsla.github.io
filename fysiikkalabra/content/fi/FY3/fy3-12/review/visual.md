@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 2ffd1ae3f9d1f45d
+CONTENT-HASH: b5bc07cc2178321b
 
 ## Blocking
 
 ## Polish
-- [Minor] Kertaa aiemmalta tunnilta, uusi palaute — "Pois siirtyvä energia siirtyy lämpönä ympäristöön" toistaa verbin; e.g. "Pois lämpönä ympäristöön siirtyvä energia kasvattaa ympäristön sisäenergiaa." (for science: confirm that this sentence is the intended point about the surroundings.)
+- [Minor] lesson.md U-arvon yksikkö — `\text{W/(m}^2\text{}\cdot\text{K)}` is an old construct and still renders acceptably (fy3-12-stage-selita-390-3); a cleaner `\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}` could replace it when next edited.
 
 ## Checked
-batch delta review (round 2): own captures of the Kertaa card (#pr-tasapaino) with the changed feedback of "Sisäenergia pysyy samana…" open at 390 px and 1280 px (/tmp/claude-0/s/fy3-12-390-0.png, fy3-12-1280-0.png, from preview/fy3-12.html): the reworded prompt ("eikä olomuoto muutu") and the feedback with inline $\Delta U = Q + W = -3{,}0\,\text{kJ}$ render cleanly, units with thin space, no clipping.
+batch delta review: opened fy3-12-theory-1280-2 and fy3-12-stage-selita-390-3: the greenhouse Pysähdy ja mieti box, with its closed Vastaus, sits cleanly before "Ilmastonmuutos"; the other two blocks (säteily, U-arvo) read from the source; figures and formula unchanged.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

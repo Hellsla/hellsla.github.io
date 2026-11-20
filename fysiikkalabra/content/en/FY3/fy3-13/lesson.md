@@ -139,9 +139,21 @@ In a closed rigid container, the volume and the amount of gas do not change, so 
 
 When you plot the measurements on a graph, the points lie almost on a straight line: the pressure rises by almost the same amount for every degree Celsius. In real data sets the points are usually not exactly on one line, because of measurement uncertainty. Measurement uncertainty describes the uncertainty attached to a measurement result. It does not usually mean an absolute maximum possible deviation from the true value. Here the uncertainty of the pressure reading is estimated as $\pm 1\,\text{kPa}$. The error limit that a manufacturer states for a gauge is a different thing: it is a property of the device, and the uncertainty of the measurement is also affected by, for example, reading the scale and the bath temperature settling. So you draw the line through the middle of the group of points, so that it passes through the uncertainty bars, not necessarily through every point.
 
+```pysahdy
+The line is drawn through the middle of the group of points. Must it pass through every point?
+---
+No. It must pass through the uncertainty bars, not necessarily through every point, because measurement uncertainty makes the points scatter.
+```
+
 <figure class="unit-photo"><img src="pics/fy3/liquid-nitrogen-dish.webp" alt="A hand holds a glass dish containing liquid nitrogen. White mist flows from around the dish against a dark background."><figcaption>Liquid nitrogen in a glass dish at a science festival in 2025. The white mist is water droplets condensed around the cold nitrogen vapour.</figcaption></figure>
 
 You extend the line beyond the measurement range towards colder temperatures until the pressure is zero. This is called extrapolation: the result comes from a region where nothing has been measured. According to the microscopic model, pressure comes from particles colliding with the wall. In the ideal gas model, the pressure would be zero at the temperature where the average kinetic energy of the particles is at its lowest. The temperature where the line meets zero pressure is the experiment's estimate of absolute zero. It is only an estimate: a real gas liquefies before that point, and the extension is a model.
+
+```pysahdy
+Why is the temperature where the line meets zero pressure only an estimate of absolute zero?
+---
+It comes from extrapolation, a region where nothing has been measured, and a real gas liquefies before that point. The extension is a model.
+```
 
 ## Formula: Temperature at zero pressure
 Within the measurement range, the pressure of a gas is a linear function of temperature:
@@ -209,6 +221,12 @@ where $\theta_{0,\text{max}}$ is the larger (less negative) and $\theta_{0,\text
 </svg>
 
 The picture is drawn to scale. The limit lines run close to each other in the measurement range but move apart when you extrapolate, so the uncertainty grows as you extend the line. A more precise pressure gauge, more measurement points and a wider measurement range reduce the uncertainty. Once the result is known, the zero of the kelvin scale is placed there: the temperature in kelvins is $T = \theta - \theta_0$.
+
+```pysahdy
+The limit lines move apart when the line is extended. What does this mean for the uncertainty of $\theta_0$?
+---
+The farther the line is extended, the greater the uncertainty of $\theta_0$ becomes.
+```
 
 ## Worked example
 The example data give the pressure of the air in a sealed flask at seven temperatures, as a gas thermometer would measure them. The values have been calculated from the ideal gas model, and scatter corresponding to measurement imprecision has been added; they are not the results of a real measurement. The uncertainty of the pressure reading is estimated as $\pm 1\,\text{kPa}$.

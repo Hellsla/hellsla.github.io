@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a2e084d71b8fd8b3
+CONTENT-HASH: 3b8efcead13c9e9b
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Delta (base 25e92e4, reflow): rendered Kertaus (Pohdinta/kertaus) feedbacks of the first (wrong) and correct options, all open, at 360 and 1280 px (fi-easy). Both chains read well: equals signs aligned, units upright with thin space, the full stop sits inside the display after 520 MJ and the following text starts on its own line normally. No horizontal overflow (scrollWidth = viewport), feedback boxes not clipped.
+Delta: three new Pysähdy ja mieti blocks read from the source in Selkeä suomi: short sentences, one idea each, "hyötysuhde" in the same sense as the chapter; layout verified in the Finnish captures (fy3-15-theory-1280-1/-2), which share the cut; units and "$0{,}34$" correct.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

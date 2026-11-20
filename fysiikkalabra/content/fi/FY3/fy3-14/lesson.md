@@ -102,6 +102,12 @@ Kun eristettyyn astiaan laitetaan lämmintä vettä ja jäätä, lämpöä siirt
 
 Kun lämmintä vettä ja kylmää jäätä sekoitetaan eristetyssä astiassa, lopputilan lämpötilaa ei yleensä saada alkulämpötilojen keskiarvona. Ratkaisu perustuu energian säilymiseen.
 
+```pysahdy
+Miksi lämpimän veden ja jään lopputilan lämpötila ei yleensä ole alkulämpötilojen keskiarvo?
+---
+Jää ottaa sulaessaan vastaan $334\,\text{kJ}$ kilogrammaa kohti ilman lämpötilan nousua, joten osa veden luovuttamasta lämmöstä ei muuta lämpötilaa.
+```
+
 ## Kaava: Lämpötasapaino ja sulaminen
 Eristetyssä astiassa on vettä, jonka massa on $m_\text{v}$ ja lämpötila $T_\text{v} > 0\,{}^\circ\text{C}$, sekä jäätä, jonka massa on $m_\text{j}$ ja lämpötila $T_\text{j} \le 0\,{}^\circ\text{C}$. Veden jäähtyessään sulamispisteeseen luovuttama lämpömäärä on
 ```latex
@@ -163,6 +169,12 @@ Mahdollisia lopputilanteita ovat:
 
 Ennen lämpötilan laskemista on siis ratkaistava, mitä olomuotoja lopputilassa on.
 
+```pysahdy
+$Q_\text{v}$ on pienempi kuin $Q_\text{j}$ mutta vähintään $Q_\text{j,läm}$. Mikä on lopputilan lämpötila ja mitä astiassa on?
+---
+Lämpötila on $0\,{}^\circ\text{C}$. Kaikki jää ei ehdi sulaa, joten astiassa on jäätä ja vettä yhtä aikaa.
+```
+
 Jos $Q_\text{v} \ge Q_\text{j}$, kaikki jää sulaa. Silloin veden luovuttama lämpö kuluu jään lämmittämiseen ja sulattamiseen, ja loput lämmittää koko vesimäärän $m_\text{v} + m_\text{j}$ lämpötilaan $T$. Energiatase on
 ```latex
 \begin{aligned}
@@ -218,6 +230,12 @@ Jäljelle jäävän jään massa on $m_\text{j} - m_\text{s}$. Kuvaaja näyttä�
 </svg>
 
 Tapauksessa 3 kylmä jää jäädyttää osan vedestä. Niin kauan kuin vettä jää, jäätä ja vettä on yhtä aikaa ja lämpötila on $0\,{}^\circ\text{C}$. Tapauksessa 4 kaikki vesi jäätyy, ja jäämassan lämpötila ratkaistaan samasta energiataseesta tason 3 tehtävässä.
+
+```pysahdy
+Tapauksessa 4 kaikki vesi jäätyy. Onko lopputilan lämpötila $0\,{}^\circ\text{C}$?
+---
+Ei ole. Jäljellä on vain jäätä, ja sen lämpötila on alle $0\,{}^\circ\text{C}$. Lämpötila on $0\,{}^\circ\text{C}$ vain niin kauan kuin jäätä ja vettä on yhtä aikaa.
+```
 
 <figure class="unit-photo"><img src="pics/fy3/ice-water-glass.webp" alt="Vesilasi ylhäältä kuvattuna. Lasissa on vettä ja paljon jääpaloja."><figcaption>Jääpaloja vesilasissa. Jää sulaa, kun siihen siirtyy lämpöä ympäröivästä vedestä.</figcaption></figure>
 

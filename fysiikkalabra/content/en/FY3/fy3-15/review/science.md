@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 8ca245f89f4d92ad
+CONTENT-HASH: 00d526cc7e268abd
 
 ## Blocking
 
 ## Polish
+- lesson.md, wind pause — the second reason (not a heat engine) explains why there is no compulsory heat loss, not why the numbers cannot be compared; the denominator alone answers the question.
 
 ## Checked
-- Delta: lesson.md misconception sentence "part of the energy that would otherwise be transferred to the surroundings as waste heat can be used as district heating"; teacher-approved figures not judged.
-- Right, and per the guardrails (waste heat is energy transferred to the surroundings, not energy that "is left").
-- Paragraph's numbers unchanged: chain 0.92 · 0.46 · 0.945 = 0.40, mean 0.78, overall 88 %.
-- Same physics as fi and fi-easy; hash the same at start and end.
+- batch delta review (en): wind 40 % equals Sankey's 200/500 MW = 40 %, denominators differ; CHP 85 % not equal in value to electricity; chain 0,90·0,40·0,95 = 0,342 ≈ 34 % < weakest step; worked-example split only; recomputed in one script; hash same at start and end.

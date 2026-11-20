@@ -153,6 +153,12 @@ You can measure a force with a force meter. It contains a spring that stretches 
 
 The extension is directly proportional to the force as long as the spring is not stretched too far: double the force stretches the spring double the distance. The graph (force, extension) is therefore a straight line through the origin, like the directly proportional models in FY1, for example uniform motion $s = v t$. If $5.0\,\text{N}$ stretches a spring by $2.0\,\text{cm}$, then $10\,\text{N}$ stretches it by $4.0\,\text{cm}$ and $2.5\,\text{N}$ stretches it by $1.0\,\text{cm}$.
 
+```pysahdy
+A spring stretches $3.0\,\text{cm}$ when a force of $4.0\,\text{N}$ acts on it. How far does it stretch with a force of $12\,\text{N}$?
+---
+The extension is directly proportional to the force. The force is three times as large, so the extension is $3 \cdot 3.0\,\text{cm} = 9.0\,\text{cm}$.
+```
+
 <svg data-fig="force-extension" viewBox="0 0 600 330" role="img" aria-label="Graph to scale: extension x of a spring in centimetres as a function of force F, for F from 0 to 11 N. The measurement points 2.5 N and 1.0 cm, 5.0 N and 2.0 cm, and 10 N and 4.0 cm are on the same straight line through the origin; dashed lines show the values of the points on the axes." style="max-width:100%;font-size:24px">
   <line x1="179.5" y1="290" x2="179.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="267.5" y1="290" x2="267.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -206,6 +212,12 @@ The scale is calibrated by hanging identical small objects on the spring, each w
 
 The weight of an object is a measure of the strength of the interaction between the Earth and the object. It is a force, and its unit is the newton. Mass is something quite different: it tells you how much matter an object contains, and its unit is the kilogram. Mass is the same everywhere, but weight depends on where the object is. The Moon is a much smaller celestial body than the Earth, and the interaction between the Moon and the astronaut is weaker than between the Earth and the astronaut, so the astronaut weighs less on the Moon.
 
+```pysahdy
+An astronaut's mass on Earth is $80\,\text{kg}$. What is the astronaut's mass on the Moon, and what happens to the weight?
+---
+The mass is the same, $80\,\text{kg}$, because mass tells how much matter there is. The weight decreases, because the interaction between the Moon and the astronaut is weaker.
+```
+
 <figure class="unit-photo"><img src="pics/fy3/iss-cupola.webp" alt="An astronaut floats in the window dome of the space station. Earth and clouds can be seen through the windows."><figcaption>Astronaut Jessica Watkins floats in front of the Cupola window of the International Space Station, 2022. The Earth still pulls her there, but the station and the astronaut fall around the Earth together.</figcaption></figure>
 
 ## Formula: Weight
@@ -225,6 +237,12 @@ where $G$ is the weight (N), $m$ the mass (kg) and $g$ the acceleration of free 
 The Moon's $g$ is about one sixth of the Earth's value ($1.62 : 9.81 \approx 0.17 \approx 1 : 6$), so the same mass weighs about one sixth as much on the Moon as on Earth. This answers the question about the astronaut at the beginning.
 
 In the graph, weight is plotted as a function of mass. For each celestial body, weight is directly proportional to mass, so the graph is a straight line through the origin. The greater $g$ is, the steeper the line: for the same mass, weight is greatest on Jupiter and smallest on the Moon.
+
+```pysahdy
+Why is the line for Jupiter steeper than the line for the Moon?
+---
+On Jupiter $g$ is greater, so the same mass weighs more there. Therefore the weight grows faster with mass.
+```
 
 <svg data-fig="weight-mass" viewBox="0 0 600 336" role="img" aria-label="Graph to scale: weight G in newtons as a function of mass m, for m from 0 to 100 kg. Four straight lines through the origin, from steepest to gentlest: Jupiter (the line continues past the top edge of the figure), Earth (100 kg weighs 981 N), Mars (371 N) and the Moon (162 N)." style="max-width:100%;font-size:24px">
   <line x1="185" y1="300" x2="185" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

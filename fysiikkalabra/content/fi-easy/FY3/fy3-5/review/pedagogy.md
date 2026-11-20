@@ -1,11 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: f7a252b5de468526
+CONTENT-HASH: ef6c499bae9ac66b
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- The correct option's feedback has a display block (`$$\begin{aligned}...`) followed by a full stop, and it breaks one short calculation over four rows. Use one inline chain `$W = Fs = 90\,\text{N} \cdot 0{,}10\,\text{m} = 9{,}0\,\text{J}$`.
+- lesson.md, both first `pysahdy` stops — the paragraph just above states the answer word for word, so the stop tests reading, not thinking — ask before the claim or vary the case.
+- inquiry.json pred-2 — the correct option is by far the longest and already writes "ΔU = W", a cue that gives the answer away; shorten it and drop the formula to the feedback.
+- inquiry.json pred-1 — Aino's and Cem's feedback quote experiment numbers (293 K, 12 J) before the student has run them in the sim for that case; fine after reveal, but check wording reads well if reopened.
 
 ## Checked
-batch delta review, round 1: the retrieval (a 90 N push on the pump over 0,10 m, work W = Fs) is the hook's own pump and the prior knowledge the lesson needs. Distractors (divide, the bare 90, adding) are real slips with repairing feedback. It does not state ΔU = W or that the air heats, so Ennuste 1 and 2 stay open, and the open question stays open. Glowing-metal photo and wording changes read clearly.
+- Path: prior (työ, Joule, kaasun mikromalli) → hook → two committed predictions → two controlled experiments (one varied, one locked each) → theory → staged 7-step example → checks; the opening question is answered (work, then heat out via walls).
+- Experiments can refute both predictions (Aino, Cem and the "speed itself" idea each fail on a stated reading); the conductive-wall run shows Q = -W, the pumped-air heat leaving.
+- Sim at 1280 and 390 px is legible; text sits behind Käyttöohje, Mallin oletukset, Laskennan selitys; model values called model values.
+- Sign convention (W done on the system) is explicit in the formula, the sign figure, the error-spotting item and every mistake feedback.
+- Siirto (tulimäntä), check items and exit ticket test the core idea; mistake values (6,6 and 599,4) match real errors; solutions have all seven steps.
+- Selkeä suomi: short sentences, Systeemi explained in brackets at first use, terms from glossary; case after number+unit correct; lämpö/sisäenergia kept apart.
+- Workload about one lesson on the core path (retrieval, reflect, error-spotting, siirto, check-2, check-3 optional).

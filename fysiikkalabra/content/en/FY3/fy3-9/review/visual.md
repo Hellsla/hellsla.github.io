@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 3b8da62f2de25dff
+CONTENT-HASH: 45d05b6417e9fd20
 
 ## Blocking
 
 ## Polish
-- [Minor] fig-2 (micro-boyle, now animated) — the captures are stills, so the motion and the pause control were not seen — the still is the static layout and reads correctly; spot-check the animation in a browser.
+- [Minor] Pysähdy (20 to 40 °C) — "$313/293 \approx 1.07$" uses a slash; house notation is a colon.
 
 ## Checked
-- Hash `reviews.py hash fy3-9 --lang en` = 3b8da62f2de25dff at the start, equal to the packet and the captures.
-- Opened `review/shots/fy3-9-fig-2-390.png`. Two cylinders, V and p against V/2 and 2p, orange "T constant" arrow, hit mark, red particles; nothing clipped or overlapping, labels in LaTeX, legible at 390 px.
-- Diff: only the micro-boyle SVG changed (`class="fig-anim"`, keyframes, `fa-k` groups). The `aria-label` is unchanged and still describes the picture.
-- Shared CSS: the animation plays only under `.is-playing`, and `prefers-reduced-motion` and print switch it off and hide the control, so the still stays.
-- Did not open other captures; the diff touches nothing else.
+batch delta review: three new Pysähdy blocks read in English from the source; layout verified in the Finnish captures of the batch, which share the cut; units in LaTeX.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

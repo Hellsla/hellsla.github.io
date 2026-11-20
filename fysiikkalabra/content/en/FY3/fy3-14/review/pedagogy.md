@@ -1,10 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 6daad55d535f3ef0
+CONTENT-HASH: c3b34dff60f9571b
 ## Blocking
-- none
-## Polish
 (none)
+## Polish
+- inquiry.json ennuste-1, correct option's feedback — it states "vähintään 26,6 °C" which is the answer to koe-1's numeric question; the feedback opens after 3 table rows but before that question is answered. Drop the number from the feedback (keep it in the model answer after the question).
+- inquiry.json ennuste-2 — the correct option "Noin 13 g" is koe-2's numeric answer (12,6 g); the question then only confirms it. Offer the options as ranges/ideas ("a few grams", "about a tenth of the ice") or ask the student to estimate before the options.
+- lesson.md Kaava — cases 3 and 4 (water freezes onto cold ice) go beyond the slot's "sulaako kaikki jää"; they appear only in text, one check and level 3. Keep, but the case-3 ice-mass formula is not given while case-2's is; say so.
+- inquiry.json koe-1 question — "askel 0,5 °C" slider hint and then a computed 26,6: good, but the first hint just says "pienennä sitä"; add the table-reading cue ("jäätä jää 0 g").
+- lesson.md Esimerkki — the example's all-melts case is never met in Tutki (all rows have ice left except the end), fine, but a one-line link to the graph's right-hand branch would help.
 ## Checked
-- delta review 2026-11-07 round 2 (follow-up consistency edits): inquiry hint, model answer, criterion and the 'Etsi virhe' prompt use c_w m_w ΔT_w; the slider-limit solution now solves ΔT_w = 26.57 K and then T_w = 0 °C + 26.57 K = 26.57 °C, consistent with the lesson's Kaava; nothing disclosed earlier than before.
-- delta review 2026-11-07 (teacher's proofread replacement texts): the opening now states the energy-conservation basis, Q_w, Q_i,warm and Q_i are built up in three steps, and the four numbered end states with the 'decide the phases first' sentence precede the energy balance; the later 'In case 3/4' paragraph, the ΔT_w in the worked example and the summary bullet (Q_w ≥ Q_i) match the list. Easier to follow than the old prose; the 390 px capture reads in order. en: the translation keeps the meaning.
-batch delta review: only `learn` changed; each goal now completes "In this lesson, you will learn to" as a bare lowercase verb, parallel across the list, and keeps the same skill, demand, physics, symbols and numbers as the old "You can ..." wording.
+- Path: prior chapters (Q = cm ΔT, Q = sm) -> hook -> retrieval -> two predictions -> sim with two guided experiments (locked/varied parameters, min 2–3) -> conclusion -> theory -> example; opening question (why ice cools better, why ice remains) answered.
+- Predictions can be refuted by model values; wrong-option feedback repairs the misconception (average temperature, "below 0 °C", "cold ice does not melt").
+- Simulation shows result emerging (ice mass, bars of Q), model values called model values; usable at 390 px.
+- Staged worked example: seven stages, symbolic first, units, reasonableness; does not repeat the sim's numbers.
+- Etsi virhe item uses a negative-temperature result: authentic misconception; transfer task has 3 hints and mistake feedback.
+- Checks: concept items test misconceptions (jääsohju at 0 °C, cold ice in 0 °C water); explain criteria observable.
+- Figures (hero, before/after, energy bars, T(Tv) graph) legible in captures, next to their paragraphs; photo beside theory.
+- Exit ticket tests Q = sm and the compare-then-decide step.
+- Workload about one lesson; secondary experiment, retrieval, reflect, error item optional.
+- English version faithful, terms consistent.

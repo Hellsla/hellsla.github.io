@@ -64,6 +64,12 @@ When a gas expands and pushes a piston, it does work. The gas pushes the piston 
   <foreignObject x="190" y="275.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = F\,\Delta s = pA\,\Delta s = p\,\Delta V$</div></foreignObject>
 </svg>
 
+```pysahdy
+The pressure of a gas is $100\,\text{kPa}$, and it expands by a volume of $0.010\,\text{m}^3$. The pressure stays constant. How much work does the gas do?
+---
+$W = p\,\Delta V$, so $W = 1.0\,\text{kJ}$ ($100\,000\,\text{Pa} \cdot 0.010\,\text{m}^3$).
+```
+
 ### A heat engine repeats its motion
 A heat engine turns heat into work continuously, so it has to repeat its motion. The piston has to be brought back down. If it is pressed down at the same pressure, the return takes all the work done by the gas. The return takes less work if the gas is first cooled to a lower pressure, but then the gas gives up heat to a colder environment. In a steam power plant, water boils in the boiler, the hot steam expands in the turbine and turns the generator, and the steam coming out of the turbine condenses back into water in the condenser, which is cooled by seawater. The working substance goes round the same path again and again, so at the end of a cycle its internal energy is the same as at the start. Energy is conserved: the heat $Q_1$ from the hot source equals the work $W$ done by the engine plus the heat $Q_2$ given up to the colder environment.
 
@@ -87,6 +93,12 @@ Experience shows that a heat engine cannot turn all the heat it receives into wo
   <foreignObject x="16" y="137.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{arrow width}$</div></foreignObject>
   <foreignObject x="16" y="167.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{shows power}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Can a heat engine turn all the heat it receives into work?
+---
+No. Part of the heat must always be given up to a colder environment.
+```
 
 ### Efficiency
 Efficiency tells how large a share of the energy supplied to a machine is put to use, so its value depends on what is counted as useful. In the efficiency of a power plant's electricity production, only the electricity is useful. A Finnish condensing power plant that produces only electricity gets about $40\,\%$ of the energy of its fuel as electricity, and a nuclear power plant about $35\,\%$. Most of the rest is transferred to the sea through the condenser, and in a plant that burns fuel part also leaves into the air with the flue gases. The efficiency of a car engine is about $30\,\%$, and the rest of the energy leaves with the exhaust gases and the radiator.
@@ -112,6 +124,12 @@ A refrigerator and a heat pump work the opposite way to a heat engine: they use 
   <foreignObject x="451" y="137.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{arrow width}$</div></foreignObject>
   <foreignObject x="451" y="167.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{shows power}$</div></foreignObject>
 </svg>
+
+```pysahdy
+The coefficient of performance of a heat pump is 3. How much heat does it give out indoors with $1\,\text{kWh}$ of electricity, and where does the rest of the heat come from?
+---
+It gives out $3\,\text{kWh}$ of heat indoors. The electricity is $1\,\text{kWh}$, and the other $2\,\text{kWh}$ is transferred from the outdoor air.
+```
 
 ## Formula: Work done by a gas and efficiency
 When the pressure of a gas stays constant, the work done by the gas in expanding is

@@ -1,0 +1,21 @@
+kuvan tunniste	tyyppi	tiedosto	x	y	leveys	korkeus	merkintöjen siirrot (järjestysnumero: dx, dy)	ilman taustaa (merkintöjen järjestysnumerot)
+fy2-1/energialajit	diagram	fy2-1-energialajit.webp	0	-1.2	600	401.2		
+fy2-1/energian-muuttuminen	diagram	fy2-1-energian-muuttuminen.webp	0	0	600	258.8		
+fy2-1/hero	illustration	fy2-1-hero.webp						
+fy2-2/hero	illustration	fy2-2-hero.webp						
+fy2-2/ketju	diagram	fy2-2-ketju.webp	0	-1.2	600	377.5		
+fy2-2/sailyminen	diagram	fy2-2-sailyminen.webp	0	0	600	358.8	{"1":[9,0],"2":[9,0]}	
+fy2-3/hero	illustration	fy2-3-hero.webp						
+fy2-4/grid	diagram	fy2-4-grid.webp	0	0	600	386.2		[4]
+fy2-4/hero	illustration	fy2-4-hero.webp						
+fy2-4/lamp	diagram	fy2-4-lamp.webp	1.2	0	597	358.2		
+fy2-4/pair	diagram	fy2-4-pair.webp	0	0	600	455		
+fy2-5/hero	illustration	fy2-5-hero.webp						
+fy2-6/hero	illustration	fy2-6-hero.webp						
+fy2-7/district	diagram	fy2-7-district.webp	2.5	5	597	325.9		
+fy2-7/grid	diagram	fy2-7-grid.webp	0	-1.2	600	338.8		
+fy2-7/hero	illustration	fy2-7-hero.webp						
+fy2-7/sankey	diagram	fy2-7-sankey.webp	11.1	2.5	591.1	332.5		
+fy2-7/storage	diagram	fy2-7-storage.webp	6	0	579.7	298.3		
+fy2-8/greenhouse	diagram	fy2-8-greenhouse.webp	-1.3	-1.3	603	449.7		
+fy2-8/hero	illustration	fy2-8-hero.webp						

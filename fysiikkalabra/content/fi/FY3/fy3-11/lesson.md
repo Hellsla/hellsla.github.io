@@ -64,6 +64,12 @@ Kun kaasu laajenee ja työntää mäntää, se tekee työtä. Kaasu painaa mänt
   <foreignObject x="190" y="275.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = F\,\Delta s = pA\,\Delta s = p\,\Delta V$</div></foreignObject>
 </svg>
 
+```pysahdy
+Kaasun paine on $100\,\text{kPa}$, ja se laajenee tilavuuden $0{,}010\,\text{m}^3$ verran. Paine pysyy vakiona. Kuinka suuren työn kaasu tekee?
+---
+$W = p\,\Delta V$, joten $W = 1{,}0\,\text{kJ}$ ($100\,000\,\text{Pa} \cdot 0{,}010\,\text{m}^3$).
+```
+
 ### Lämpövoimakone toistaa liikettään
 Lämpövoimakone muuttaa lämpöä jatkuvasti työksi, joten sen on toistettava liikettään. Mäntä on saatava takaisin alas. Jos se painetaan alas samassa paineessa, palautus vie koko kaasun tekemän työn. Palautus vaatii vähemmän työtä, jos kaasu jäähdytetään ensin pienempään paineeseen, mutta silloin kaasu luovuttaa lämpöä kylmempään ympäristöön. Höyryvoimalaitoksessa vesi kiehuu kattilassa, kuuma höyry laajenee turbiinissa ja pyörittää generaattoria, ja turbiinista tuleva höyry tiivistyy jälleen vedeksi lauhduttimessa, jota merivesi jäähdyttää. Työaine kiertää samaa rataa yhä uudelleen, joten kierroksen lopussa sen sisäenergia on sama kuin alussa. Energia säilyy: kuumasta lähteestä tullut lämpö $Q_1$ on yhtä suuri kuin koneen tekemä työ $W$ ja kylmempään ympäristöön luovutettu lämpö $Q_2$ yhteensä.
 
@@ -87,6 +93,12 @@ Kokemus osoittaa, ettei lämpövoimakone voi muuttaa kaikkea saamaansa lämpöä
   <foreignObject x="16" y="137.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{nuolen leveys}$</div></foreignObject>
   <foreignObject x="16" y="167.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kuvaa tehoa}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Voiko lämpövoimakone muuttaa kaiken saamansa lämmön työksi?
+---
+Ei voi. Osa lämmöstä on aina luovutettava kylmempään ympäristöön.
+```
 
 ### Hyötysuhde
 Hyötysuhde kertoo, kuinka suuri osa koneeseen tuodusta energiasta saadaan hyödyksi, joten sen arvo riippuu siitä, mikä lasketaan hyödyksi. Voimalaitoksen sähköntuotannon hyötysuhteessa hyötyä on vain sähkö. Suomalainen lauhdevoimalaitos, joka tuottaa vain sähköä, saa polttoaineen energiasta sähköksi noin $40\,\%$, ja ydinvoimalaitos noin $35\,\%$. Suurin osa lopusta siirtyy lauhduttimen kautta mereen, ja polttoainetta käyttävästä laitoksesta osa poistuu myös savukaasujen mukana ilmaan. Automoottorin hyötysuhde on noin $30\,\%$, ja loput energiasta poistuu pakokaasujen ja jäähdyttimen mukana.
@@ -112,6 +124,12 @@ Jäähdytyskone ja lämpöpumppu toimivat päinvastoin kuin lämpövoimakone: ne
   <foreignObject x="426" y="137.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{nuolen leveys}$</div></foreignObject>
   <foreignObject x="451" y="167.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{kuvaa tehoa}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Lämpöpumpun lämpökerroin on 3. Kuinka paljon lämpöä se luovuttaa sisälle $1\,\text{kWh}$:lla sähköä, ja mistä loppu lämpö tulee?
+---
+Sisälle tulee $3\,\text{kWh}$ lämpöä. Sähköä on $1\,\text{kWh}$, ja loput $2\,\text{kWh}$ siirretään ulkoilmasta.
+```
 
 ## Kaava: Kaasun työ ja hyötysuhde
 Kun kaasun paine pysyy vakiona, kaasun tekemä laajenemistyö on

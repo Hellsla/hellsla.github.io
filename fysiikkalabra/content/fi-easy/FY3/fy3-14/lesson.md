@@ -102,6 +102,12 @@ Eristettyyn astiaan laitetaan lämmintä vettä ja jäätä. Lämpöä siirtyy v
 
 Lämmintä vettä ja kylmää jäätä sekoitetaan eristetyssä astiassa. Lopputilan lämpötilaa ei yleensä saada alkulämpötilojen keskiarvona. Ratkaisu perustuu energian säilymiseen.
 
+```pysahdy
+Miksi lämpimän veden ja jään lopputilan lämpötila ei yleensä ole alkulämpötilojen keskiarvo?
+---
+Jää ottaa sulaessaan vastaan $334\,\text{kJ}$ kilogrammaa kohti. Sen lämpötila ei silloin nouse. Osa veden luovuttamasta lämmöstä ei siis muuta lämpötilaa.
+```
+
 ## Kaava: Lämpötasapaino ja sulaminen
 Eristetyssä astiassa on vettä ja jäätä. Veden massa on $m_\text{v}$ ja lämpötila $T_\text{v} > 0\,{}^\circ\text{C}$. Jään massa on $m_\text{j}$ ja lämpötila $T_\text{j} \le 0\,{}^\circ\text{C}$. Vesi jäähtyy sulamispisteeseen ja luovuttaa silloin lämpömäärän
 ```latex
@@ -168,6 +174,12 @@ Lopputilanteita on neljä:
 
 Ennen kuin lasket lämpötilan, ratkaise siis, mitä olomuotoja lopputilassa on.
 
+```pysahdy
+$Q_\text{v}$ on pienempi kuin $Q_\text{j}$, mutta vähintään $Q_\text{j,läm}$. Mikä on lopputilan lämpötila ja mitä astiassa on?
+---
+Lämpötila on $0\,{}^\circ\text{C}$. Kaikki jää ei ehdi sulaa. Astiassa on siis jäätä ja vettä yhtä aikaa.
+```
+
 Jos $Q_\text{v} \ge Q_\text{j}$, kaikki jää sulaa. Silloin veden luovuttama lämpö kuluu jään lämmittämiseen ja sulattamiseen. Loput lämmittää koko vesimäärän $m_\text{v} + m_\text{j}$ lämpötilaan $T$. Energiatase on
 ```latex
 \begin{aligned}
@@ -223,6 +235,12 @@ Jäljelle jäävän jään massa on $m_\text{j} - m_\text{s}$. Kuvaaja näyttä�
 </svg>
 
 Tapauksessa 3 kylmä jää jäädyttää osan vedestä. Niin kauan kuin vettä jää, jäätä ja vettä on yhtä aikaa ja lämpötila on $0\,{}^\circ\text{C}$. Tapauksessa 4 kaikki vesi jäätyy. Jään lämpötila ratkaistaan samasta energiataseesta tason 3 tehtävässä.
+
+```pysahdy
+Tapauksessa 4 kaikki vesi jäätyy. Onko lopputilan lämpötila $0\,{}^\circ\text{C}$?
+---
+Ei ole. Jäljellä on vain jäätä, ja sen lämpötila on alle $0\,{}^\circ\text{C}$. Lämpötila on $0\,{}^\circ\text{C}$ vain, kun jäätä ja vettä on yhtä aikaa.
+```
 
 <figure class="unit-photo"><img src="pics/fy3/ice-water-glass.webp" alt="Vesilasi ylhäältä. Lasissa on vettä ja jääpaloja."><figcaption>Jääpaloja vesilasissa. Jää sulaa, kun siihen siirtyy lämpöä vedestä.</figcaption></figure>
 

@@ -42,6 +42,9 @@ FIXTURES = {
     # the same calculations broken into rows, and short formulas: nothing to report
     "fx-good-rows": solution(chain(("$hc$", r"$= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$"), ("", r"$\cdot 2{,}998 \cdot 10^{8}\,\text{m/s}$"), ("", r"$= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$")),
                              chain((r"$E_\text{viol}$", r"$= \dfrac{hc}{\lambda}$"), ("", r"$= \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{405 \cdot 10^{-9}\,\text{m}}$"), ("", r"$= 4{,}905 \cdot 10^{-19}\,\text{J}$"))),
+    # a figure drawn on a picture file (scripts/figimage.py, work queue 24): the file loads, or it does not
+    "fx-img-ok": '<svg viewBox="0 0 600 360" role="img" aria-label="Kuva."><image href="pics/fy2/fy2-4-lamp.webp" x="0" y="0" width="600" height="360" preserveAspectRatio="none"/></svg>',
+    "fx-img-lost": '<svg viewBox="0 0 600 360" role="img" aria-label="Kuva."><image href="pics/fy2/ei-ole.webp" x="0" y="0" width="600" height="360" preserveAspectRatio="none"/></svg>',
     "fx-good-short": solution(r"<p>Likiarvo $E = hc/\lambda \approx 2{,}84\,\text{eV} \approx 2{,}8\,\text{eV}$ antaa saman tuloksen.</p>", chain(("$E$", r"$= 2{,}84\,\text{eV}$"))),
 }
 
@@ -63,6 +66,10 @@ def main():
                 if name.startswith("fx-bad"):
                     expect(f"{name} at {width} px: a clipped formula fails the layout check", r.returncode == 1 and "clipped" in out, out)
                     expect(f"{name} at {width} px: the failure names the task, the step and the element", "at #fx-task-07 > details.solution" in out and 'step "Substitution"' in out, out)
+                elif name == "fx-img-lost":
+                    expect(f"{name} at {width} px: a picture that does not load fails the layout check", r.returncode == 1 and "svg-image" in out, out)
+                elif name == "fx-img-ok":
+                    expect(f"{name} at {width} px: a picture that loads gives no alarm", r.returncode == 0 and "svg-image" not in out, out)
                 else:
                     expect(f"{name} at {width} px: formulas that fit give no alarm", r.returncode == 0 and "clipped" not in out, out)
         # the known rows live in one file per course (docs/clipped-formulas/<group>.tsv, work queue 5): a row in its own

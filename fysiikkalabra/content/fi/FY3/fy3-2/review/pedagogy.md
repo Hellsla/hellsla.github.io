@@ -1,21 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 5c8a80d7c914a070
+CONTENT-HASH: 1600528fa2521d70
 
 ## Blocking
 
 ## Polish
-- inquiry.json pred-3 — the Cem feedback says "ilmanvastusta ei huomioida" but the prompt does not state the simplification; add "ilmanvastusta ei huomioida" to the prompt so the student can reason to it before feedback.
-- inquiry.json check-1 — only three options and the one distractor "saman työn" is the familiar slip; consider a fourth, "nelinkertaisen työn" (area of whole triangle taken as second interval), so the 4−1 reasoning is tested.
-- inquiry.json check-3 — criteria 1 and 2 both ask for W and P definitions; criterion 4 (link to lift) is the one that tests the question's "nopeammassa nostossa suurempi teho"; make criterion 4 name "sama työ lyhyemmässä ajassa".
-- lesson.md Ydinajatus — the Joule paragraph is about 110 words and carries three ideas (experiment, proportionality, work vs heat); split after "voiman ja matkan tuloon".
+- lesson.md (nosturin kuvateksti) — "kuorman potentiaalienergia kasvaa" on FY4-sisältöä (E_p kuuluu FY4:ään) — kirjoita "kuorman energia kasvaa".
+- inquiry.json (pred-3, prompt ja palaute) — "Teoriatiivistelmän malliin/kuvaan" — vaihe on nimeltään Teoria; kirjoita "Teorian kuvaan".
+- inquiry.json (simulaatio, `text`) — johtosana on yli 30 sanaa ja sisältää käyttöohjeen; jätä "Valitse voima, matka ja aika ja paina *Vedä*." ja siirrä loput Käyttöohjeeseen.
+- inquiry.json — kolme ennustetta ja kaksi koetta ovat tunnin työmäärälle runsaasti; pred-1 on jo optional, harkitse pred-2:n merkitsemistä vain ydinpolkuun jos aika käy vähiin.
+- sim (390 px) — lukema W = 600 J näkyy jo ennen *Vedä*-painallusta, joten ennusteen 1 vastaus on luettavissa liukusäätimiä siirtämällä; ei estä oppimista, koska ennuste on jo sitouduttu.
 
 ## Checked
-- Path: prerequisite G = mg retrieved (pr-paino); hook question answered by pred-3, Teoria and reflect; slot goals (W = Fs from Joule, graphical integration, power) covered, nothing of FY4 (no cos α, E_k).
-- Predictions 1 and 2 can be refuted by exp-1/exp-2 (F, t resp. F, s locked, min 2); pred-3 honestly marked as not testable in the sim.
-- Wrong options' feedback repairs the misconception (work vs time, work vs effort, force vs mass).
-- Joule interpret task has a data table with source note; model values vs measurements stated.
-- Worked example: seven stages, one step each, symbolic before numbers, unit conversion, reasonableness check.
-- Transfer task has three progressive hints and real mistake values (9,6; 0,24).
-- Checks: concept (misconception distractors), graph calculation with solution, explain with observable criteria; exit ticket tests the area meaning.
-- Finnish and case endings after number+unit are fine; figures described in aria-labels without giving answers.
-- Phone and 1280 px: captures not opened beyond the first screen; mechanics covered by the passed checks.
+- Polku: fy3-1:n G = mg ja kuvaajan luku → W = Fs → pinta-ala → teho; alun repun kantamisen kysymys vastataan pred-3:n ja Teorian kautta.
+- Joulen koe on tutkittavana datana (interpret), mallin arvot ja mittaukset erotettu johtopäätöksessä.
+- Kokeet lukitsevat oikeat muuttujat (F,t / F,s) ja pred-3 myöntää, ettei sim testaa kohtisuoraa voimaa.
+- Esimerkki seitsemässä vaiheessa, kolmio-pinta-ala symbolisesti ensin, järkevyys keskiarvovoimalla.
+- Tarkistuskysymykset: pinta-alasuhde, kohtisuora voima, kuvaajan luku, selitys havaittavin kriteerein; harhaoptiot aidot.
+- Poissa FY4:n asiat (cos α, E_k, työ-energia-lause).
+- Kuvat (carry-lift, joule, work-graphs, lift-work) tukevat kappaleita; puhelimessa sim ja syöttökentät käytettävissä.

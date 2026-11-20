@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 3a93fa847b4b0c80
+CONTENT-HASH: 1bb86344d2c60f7a
 
 ## Blocking
 
 ## Polish
-- [Minor] pr-tasapaino feedback 1: "Pois siirtynyt energia siirtyy lämpönä ympäristöön" repeats "siirty-". Optional: "Pois lähtenyt energia siirtyy lämpönä ympäristöön ja kasvattaa sen sisäenergiaa."
+- [Minor] U-value unit `\text{W/(m}^2\text{}\cdot\text{K)}` is an old construct; it renders acceptably (Finnish fy3-12-stage-selita-390-3).
 
 ## Checked
-- batch delta review (round 2): own captures of the pr-tasapaino card (reworded prompt "Työtä ei tehdä, eikä olomuoto muutu", the reworded first feedback, correct choice committed, all feedbacks open) at 390 px (c2-fy3-12-390.png) and 1280 px (c2-fy3-12-1280.png) in the scratchpad. The prompt reads as situation then question, the formula $\Delta U = Q + W = -3{,}0\,\text{kJ}$ is inline and unbroken, units are LaTeX, and nothing is clipped. The sticky "Pohdinta" bar in the 390 px capture is a capture artifact. Figures untouched by the diff, not reopened.
+batch delta review: three new Pysähdy blocks read in Selkeä suomi from the source; layout verified in the Finnish captures (fy3-12-theory-1280-2, fy3-12-stage-selita-390-3), which share the cut.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: eced6a5c7d9e54b5
+CONTENT-HASH: 7231937a935b90da
 
 ## Blocking
 
 ## Polish
-- [Minor] fig-3 (micro-model) — while it plays, the velocity arrows are hidden (opacity 0 between 3 % and 97 %), so the "short vs long arrows" in the alt text is only visible in the still (reduced motion, print, loop start). The speed difference is still clear from the motion. Optional: mention in the alt text that the arrows show when the animation is paused.
-- [Minor] fig-3 — the static state with the arrows visible was not captured (the shot is mid-animation); the still follows the unchanged SVG geometry.
+- [Minor] lesson.md Pysähdy (250 K) — the answer $\theta = 250 - 273{,}15 = -23{,}15$ has no unit in the chain, only after "eli"; consider $\theta = 250\,\text{K} - 273{,}15\,\text{K}$ or keep as is.
 
 ## Checked
-- Delta: fig-3 (micro-model) made animated (class fig-anim, fa-k groups). Opened fy3-3-fig-3-390.png and fy3-3-fig-row-1280.png (neighbouring figure and layout beside the paragraph intact).
-- Checked in templates/site.css that the animation is paused by default via .is-playing, switched off under prefers-reduced-motion and print, and that the .fa-ctl control exists. Colours: the cold gas particles are blue and the hot ones red, the same as before. Labels are LaTeX and unclipped; p_1 and p_2 > p_1 are readable at 390 px.
+batch delta review: four new Pysähdy ja mieti blocks read from the source; the box layout verified in shared captures (fy3-1 390/1280, fy3-12, fy3-15); decimal comma, ${}^\circ\text{C}$ and case endings correct; figures unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -186,6 +186,12 @@ According to the micro model, the pressure of a gas comes from particles collidi
 
 So in an isothermal change the pressure is inversely proportional to the volume, and the product of pressure and volume stays constant. This is called Boyle's law. It answers the opening question: the air pressure in the aeroplane cabin drops to about $78\,\text{kPa}$, so the air in the bag expands until the bag is tight. In a tight bag the pressure of the air stays slightly higher than the cabin pressure, and that is why the bag feels hard.
 
+```pysahdy
+The volume of a gas is reduced to one third, and the temperature stays the same. What happens to the pressure?
+---
+The pressure triples, because the product $pV$ stays constant.
+```
+
 Boyle's law works well for air and other gases at ordinary pressures and temperatures. The amount of gas must stay the same, so no gas may leak out or come in. The pressure used is the total pressure of the gas, not the gauge pressure shown by a meter.
 
 Boyle's law can be verified experimentally. Air is sealed in a syringe, and the syringe is connected to a pressure gauge. The plunger is pressed in steps, and the pressure is read at each volume. The measurement is done slowly so that the temperature of the air has time to return to room temperature. When the results are plotted in a $(V, p)$ coordinate system, the points lie on a falling curve, and it is hard to see from it whether the relationship is exactly inverse proportionality. So a new column $1/V$ is calculated in the table, and $p$ is plotted as a function of $1/V$. If the law holds, within the measurement uncertainty the points lie on a straight line through the origin, and the slope of the line is the constant $pV$. Try it in the simulation: save measurements at different volumes and choose “Plot p as a function of 1/V”.
@@ -306,6 +312,12 @@ When a gas is heated, its particles move faster. If the piston can move so that 
   <path d="M438,297 L448,297 L448,303 L462,290 L448,277 L448,283 L438,283 Z" fill="#e8590c" stroke-linejoin="round"/>
   <foreignObject x="440" y="303.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Q$</div></foreignObject>
 </svg>
+
+```pysahdy
+A gas in a rigid, closed container is heated. Which quantity increases, and why?
+---
+The pressure increases, because the volume is constant and the particles move faster.
+```
 
 <figure class="unit-photo"><img src="pics/fy3/barrel-balloon.webp" alt="Researchers fill a large transparent gas balloon on a snowy plain on a sunny day."><figcaption>Filling a NASA BARREL research balloon in Antarctica. Helium fills only the top of the balloon, because the gas expands as the outside pressure falls while the balloon rises.</figcaption></figure>
 
@@ -492,6 +504,12 @@ where $\theta$ is the temperature in degrees Celsius as a number; in calculation
   <circle cx="407.5" cy="418" r="6.5" fill="#2f74b5" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="123.5" y="478.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{extension}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+The temperature of a gas rises from $20\,{}^\circ\text{C}$ to $40\,{}^\circ\text{C}$ at constant volume. Does the pressure double?
+---
+No. In kelvins the temperature rises from $293\,\text{K}$ to $313\,\text{K}$, so the pressure increases only by a factor of $313/293 \approx 1.07$.
+```
 
 ## Worked example
 At the airport, a bag of crisps contains $0.80\,\textsf{l}$ of air at a pressure of $101\,\text{kPa}$. During the flight the cabin pressure is $78\,\text{kPa}$. What is the volume of the air in the bag during the flight, if the temperature stays the same and the bag can expand freely?

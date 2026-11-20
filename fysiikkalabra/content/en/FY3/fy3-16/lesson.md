@@ -78,6 +78,12 @@ A power $P = UA\Delta T$ flows into the cool bag through its walls, even though 
 
 A sauna stove heats stones with a specific heat capacity of about $800\,\text{J/(kg}\cdot\text{K)}$. When you throw water on the hot stones, the water warms up and evaporates, and the energy is taken from the stones. Most of it goes into vaporisation: $0.20\,\text{kg}$ of water warms from $20\,{}^\circ\text{C}$ to $100\,{}^\circ\text{C}$ with $67\,\text{kJ}$ of energy, but vaporising it takes $452\,\text{kJ}$. This is why the stones cool down at once and the stove has to heat them again. When the steam condenses on your skin, the same energy is released again, and this is why the steam feels hot.
 
+```pysahdy
+Why do the stones cool down at once when water is thrown on them?
+---
+Vaporising $0.20\,\text{kg}$ of water takes $452\,\text{kJ}$, far more than warming it ($67\,\text{kJ}$), and this energy is taken from the stones.
+```
+
 A car's coolant carries the waste heat of the engine to the radiator. Power is energy per second, so the power transferred depends on the mass of liquid carried per second and on its rise in temperature in the engine. With the same power, a larger mass flow means a smaller rise in temperature. Water has a large specific heat capacity, $4190\,\text{J/(kg}\cdot\text{K)}$, but it freezes in frost and boils easily, so glycol is mixed with it. The mixture withstands frost and heat, but its specific heat capacity is lower, about $3500\,\text{J/(kg}\cdot\text{K)}$.
 
 ## Formula: Energy balance
@@ -139,6 +145,12 @@ The graph shows an example of the inside temperature of a cool bag calculated wi
   <foreignObject x="305.3" y="222" width="189" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$\text{water warms up}$</div></foreignObject>
 </svg>
 
+```pysahdy
+After the ice has melted, why does the rise in the temperature of the cool bag slow down?
+---
+The power $UA\Delta T$ becomes smaller as the temperature difference becomes smaller.
+```
+
 In the cooling circuit of an engine, the liquid takes the heat power $P$ from the engine, so the heating formula $Q = cm\Delta T$ is divided by the time $t$:
 ```latex
 P = c\,\frac{m}{t}\,\Delta T
@@ -175,6 +187,12 @@ where $m/t$ is the mass of liquid carried per second (kg/s) and $\Delta T = T_2 
   <foreignObject x="246" y="154" width="110" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$m/t$</div></foreignObject>
   <foreignObject x="150" y="292" width="300" height="46"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$P = c\,\dfrac{m}{t}\,\Delta T$</div></foreignObject>
 </svg>
+
+```pysahdy
+Engine coolant has a lower specific heat capacity than water. For the same power and the same $\Delta T$, is the mass flow larger or smaller?
+---
+Larger. From $P = c\,\dfrac{m}{t}\,\Delta T$ we get $\dfrac{m}{t} = \dfrac{P}{c\,\Delta T}$, so a smaller $c$ needs a larger mass flow.
+```
 
 When two objects or substances are in an insulated container, the quantity of heat given out by the hot one is equal to the quantity of heat taken in by the cold one:
 ```latex
