@@ -26,6 +26,12 @@
 ## Key idea
 When a force is spread over a surface, its effect depends on how large an area it is spread over. The sharp tip of a drawing pin sinks into a wall with the same force that leaves no mark when applied to the blunt head, and skis carry you on deep snow although boots sink in. The quantity that describes this is pressure: force divided by the area over which the force is spread. The unit of pressure is the pascal (Pa), and $1\,\text{Pa} = 1\,\text{N/m}^2$. The pascal is a small unit, so in everyday life we use the kilopascal: $1\,\text{kPa} = 1000\,\text{Pa}$.
 
+```pysahdy
+A force of $60\,\text{N}$ acts on an area of $2.0\,\text{cm}^2$. What is the pressure?
+---
+$p = \dfrac{F}{A} = \dfrac{60\,\text{N}}{2.0 \cdot 10^{-4}\,\text{m}^2} = 3.0 \cdot 10^{5}\,\text{Pa}$, that is $300\,\text{kPa}$.
+```
+
 <svg data-fig="pressure-area" viewBox="0 0 600 380" role="img" aria-label="The same force F acts on an identical brick in two ways. On the left the brick stands on end and touches the ground with a small area A1, so the pressure p1 = F/A1 is large. On the right the brick lies on its side and touches the ground with an area three times as large, A2 = 3 A1, so the pressure p2 = F/A2 is one third of the pressure on the left. The force arrows are equally long. The contact areas are to scale; the diagram is otherwise schematic." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy34-snow" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="#eef5f9"/><circle cx="3" cy="4" r="1.3" fill="#a9d1f0"/><circle cx="10" cy="10" r="1.3" fill="#a9d1f0"/></pattern></defs>
   <rect x="12" y="240" width="576" height="22" fill="url(#fy34-snow)" stroke="#1f2933" stroke-width="2"/>
@@ -77,12 +83,24 @@ According to the micro model, the pressure of a gas comes from particles collidi
 
 Pressure is not a force but the ratio of force to area, and in a liquid at rest the pressure acts equally in every direction. If the pressure sideways were smaller than downwards, the water would flow sideways and would not stay at rest. If you make holes at several heights in the side of a bottle, the water squirts out hardest from the lowest hole, because the pressure grows with depth. The force caused by pressure is always perpendicular to the surface: on the vertical wall of a dam the force points horizontally, and on a diver's body it acts from all sides. That is why here we can treat the force as just a magnitude; the direction comes from the surface.
 
+```pysahdy
+Why is the pressure sideways in a liquid at rest equal to the pressure downwards?
+---
+If the pressure sideways were smaller, the liquid would flow sideways and would not stay at rest.
+```
+
 <figure class="unit-photo"><img src="pics/fy3/scuba-diver.webp" alt="A diver in dark blue water, with air bubbles rising above towards the bright surface."><figcaption>A diver deep under water. The bubbles of exhaled air rise towards the surface.</figcaption></figure>
 
 ### Atmospheric pressure and gauge pressure
 Atmospheric pressure, the pressure of the atmosphere, already acts on the surface of the water. At sea level it is about $101\,\text{kPa}$. It is the weight of the column of air per unit area. Atmospheric pressure also acts on the surface of the water and is transmitted through the water to depth. Under water the total pressure is therefore the sum of atmospheric pressure and hydrostatic pressure. At a depth of ten metres the hydrostatic pressure is already about the same as one atmosphere.
 
 This answers the opening question. Atmospheric pressure acts on both sides of the dam wall, so the wall is loaded only by the gauge pressure of the water, that is, the part of the pressure that is greater than atmospheric pressure. The gauge pressure is zero at the top and grows steadily with depth: at a depth of 30 metres it is about $290\,\text{kPa}$, so every square metre of the wall feels a force of about $290\,\text{kN}$. The lower part of the wall must therefore withstand a much greater force than the upper part, and the wall is built thick at the bottom.
+
+```pysahdy
+Why does only the gauge pressure of the water load the dam wall, not the total pressure?
+---
+Atmospheric pressure acts on the wall from both sides and cancels, so only the gauge pressure $\rho g h$ of the water is left.
+```
 
 ## Formula: Pressure and hydrostatic pressure
 Pressure is the force perpendicular to a surface divided by the area:
