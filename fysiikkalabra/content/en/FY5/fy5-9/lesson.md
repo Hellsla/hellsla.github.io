@@ -216,9 +216,9 @@ period of a harmonic oscillator :: T = 2\pi\sqrt{\frac{m}{k}}
 where $T$ is the period ($\text{s}$), $m$ the mass of the oscillating body ($\text{kg}$) and $k$ the spring constant of the spring ($\text{N/m}$). A greater mass accelerates more slowly under the same force, so the period grows as the mass grows. A stiffer spring gives a greater force, so the period becomes shorter. The square root means that the mass must be quadrupled to double the period. The formula holds for a spring hanging vertically too: the weight only shifts the equilibrium position, and the displacement from it obeys the same law.
 
 ```pysahdy
-A spring has the spring constant $80\,\text{N/m}$ and a body of mass $0.20\,\text{kg}$ is attached to it. What is the period of the oscillation?
+A spring has the spring constant $150\,\text{N/m}$ and a body of mass $0.90\,\text{kg}$ is attached to it. What is the period of the oscillation?
 ---
-The period is $T = 2\pi\sqrt{\tfrac{m}{k}}$, so $T = 2\pi\sqrt{\tfrac{0.20\,\text{kg}}{80\,\text{N/m}}} \approx 0.31\,\text{s}$.
+The period is $T = 2\pi\sqrt{\tfrac{m}{k}}$, so $T = 2\pi\sqrt{\tfrac{0.90\,\text{kg}}{150\,\text{N/m}}} \approx 0.49\,\text{s}$.
 ```
 
 The formula can be justified with circular motion. When a body moves uniformly around a circle of radius $A$, its shadow on a wall in the direction of a diameter moves back and forth. The acceleration of the shadow is a component of the centripetal acceleration $a_\text{n} = \tfrac{4\pi^2 A}{T^2}$, and it is $-\tfrac{4\pi^2}{T^2}x$, that is, proportional to the displacement. For a mass on a spring Newton's second law gives $a = -\tfrac{k}{m}x$. When the coefficients are set equal, $\tfrac{4\pi^2}{T^2} = \tfrac{k}{m}$, and the period can be solved from this.

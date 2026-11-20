@@ -224,9 +224,9 @@ missä $T$ on jaksonaika ($\text{s}$), $m$ värähtelevän kappaleen massa ($\te
 Suuri massa kiihtyy samasta voimasta hitaammin. Siksi jaksonaika kasvaa, kun massa kasvaa. Jäykempi jousi antaa suuremman voiman, joten jaksonaika lyhenee. Neliöjuuren takia massa täytyy nelinkertaistaa, jotta jaksonaika kaksinkertaistuu. Kaava pätee myös pystysuoraan riippuvaan jouseen. Paino siirtää vain tasapainoasemaa, ja poikkeama siitä noudattaa samaa lakia.
 
 ```pysahdy
-Jousen jousivakio on $80\,\text{N/m}$. Jouseen on kiinnitetty kappale, jonka massa on $0{,}20\,\text{kg}$. Mikä on jaksonaika?
+Jousen jousivakio on $150\,\text{N/m}$. Jouseen on kiinnitetty kappale, jonka massa on $0{,}90\,\text{kg}$. Mikä on jaksonaika?
 ---
-Jaksonaika on $T = 2\pi\sqrt{\tfrac{m}{k}}$. Sijoitetaan arvot: $T = 2\pi\sqrt{\tfrac{0{,}20\,\text{kg}}{80\,\text{N/m}}} \approx 0{,}31\,\text{s}$.
+Jaksonaika on $T = 2\pi\sqrt{\tfrac{m}{k}}$. Sijoitetaan arvot: $T = 2\pi\sqrt{\tfrac{0{,}90\,\text{kg}}{150\,\text{N/m}}} \approx 0{,}49\,\text{s}$.
 ```
 
 Kaavan voi perustella ympyräliikkeen avulla. Kappale kiertää tasaisesti ympyrää, jonka säde on $A$. Sen varjo seinällä liikkuu edestakaisin halkaisijan suuntaan. Varjon kiihtyvyys on normaalikiihtyvyyden $a_\text{n} = \tfrac{4\pi^2 A}{T^2}$ komponentti. Se on $-\tfrac{4\pi^2}{T^2}x$ eli verrannollinen poikkeamaan. Jousen varassa Newtonin toisesta laista saadaan $a = -\tfrac{k}{m}x$. Merkitään kertoimet yhtä suuriksi: $\tfrac{4\pi^2}{T^2} = \tfrac{k}{m}$. Tästä ratkeaa jaksonaika.
