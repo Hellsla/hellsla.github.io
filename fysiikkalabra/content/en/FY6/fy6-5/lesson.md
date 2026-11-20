@@ -118,7 +118,7 @@ The voltage across parallel branches is the same (chapter *Resistors in series a
 ```pysahdy
 A current of $0.80\,\text{A}$ arrives at a junction, and $0.30\,\text{A}$ leaves along one branch. How large is the current in the other branch?
 ---
-By the current law $I_3 = I_1 - I_2$. So $I_3 = 0.80\,\text{A} - 0.30\,\text{A} = 0.50\,\text{A}$.
+By the current law $I_3 = I_1 - I_2$. So $I_3 = 0.80\,\text{A} - 0.30\,\text{A}$, so $I_3 = 0.50\,\text{A}$.
 ```
 
 ### Potential: the electrical level of every point
@@ -202,7 +202,7 @@ where $\Delta V$ (V) is the change of potential in each part of the loop when th
 ```pysahdy
 In a one-loop circuit the voltage of the source is $12\,\text{V}$ and the voltage of resistor $R_1$ is $5.0\,\text{V}$. How large is the voltage of the second resistor $R_2$?
 ---
-By the voltage law $U_2 = U - U_1$. So $U_2 = 12\,\text{V} - 5.0\,\text{V} = 7.0\,\text{V}$.
+By the voltage law $U_2 = U - U_1$. So $U_2 = 12\,\text{V} - 5.0\,\text{V}$, so $U_2 = 7.0\,\text{V}$.
 ```
 
 A **potential graph** shows the potential at different points of a loop. In the graph the loop of the circuit marked with the points $A$–$F$ is traversed from the negative terminal $F$ through the resistors $R_1$ and $R_2$ back to the point $F$. The rise of the source $+9.0\,\text{V}$ is equal to the total of the drops of the resistors $-3.0\,\text{V}$ and $-6.0\,\text{V}$, and in the wires the graph is horizontal.

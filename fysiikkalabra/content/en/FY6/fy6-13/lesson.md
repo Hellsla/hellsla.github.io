@@ -347,7 +347,7 @@ When an initially uncharged capacitor is charged from a constant-voltage source 
 ```pysahdy
 The capacitance of a capacitor is $10\,\mu\text{F}$ and its voltage $20\,\text{V}$. How much energy is stored in it?
 ---
-$W = \tfrac{1}{2} C U^2$. Substituting: $\tfrac{1}{2} \cdot 10 \cdot 10^{-6}\,\text{F} \cdot (20\,\text{V})^2 = 2.0 \cdot 10^{-3}\,\text{J} = 2.0\,\text{mJ}$.
+$W = \tfrac{1}{2} C U^2$. Substituting: $W = \tfrac{1}{2} \cdot 10 \cdot 10^{-6}\,\text{F} \cdot (20\,\text{V})^2$, so $W = 2.0 \cdot 10^{-3}\,\text{J} = 2.0\,\text{mJ}$.
 ```
 
 ### A dielectric when the source is connected or disconnected

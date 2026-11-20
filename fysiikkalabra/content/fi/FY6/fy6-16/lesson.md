@@ -192,7 +192,7 @@ Laitteen virta saadaan tehosta kuten luvussa *Sähköenergia kotona*: yhdessä v
 ```pysahdy
 Kolmivaiheinen latausasema ottaa jokaisesta vaihejohtimesta virran $10\,\text{A}$. Vaihejännite on $230\,\text{V}$. Kuinka suuri on aseman teho?
 ---
-Teho on kolminkertainen yhteen vaiheeseen verrattuna: $P = 3UI = 3 \cdot 230\,\text{V} \cdot 10\,\text{A} = 6{,}9\,\text{kW}$.
+Teho on kolminkertainen yhteen vaiheeseen verrattuna: $P = 3UI$, joten $P = 3 \cdot 230\,\text{V} \cdot 10\,\text{A}$ ja $P = 6{,}9\,\text{kW}$.
 ```
 
 ### Kodin sähköjärjestelmä

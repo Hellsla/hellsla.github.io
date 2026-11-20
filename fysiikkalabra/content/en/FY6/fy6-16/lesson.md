@@ -192,7 +192,7 @@ The current of a device is obtained from its power as in the chapter *Electrical
 ```pysahdy
 A three-phase charging station draws a current of $10\,\text{A}$ from each phase conductor. The phase voltage is $230\,\text{V}$. What is the power of the station?
 ---
-The power is three times that of one phase: $P = 3UI = 3 \cdot 230\,\text{V} \cdot 10\,\text{A} = 6.9\,\text{kW}$.
+The power is three times that of one phase: $P = 3UI$, so $P = 3 \cdot 230\,\text{V} \cdot 10\,\text{A}$ and $P = 6.9\,\text{kW}$.
 ```
 
 ### The home electrical system

@@ -587,7 +587,7 @@ where $W_{AB}$ is the work ($\text{J}$) and $U_{AB} = V_A - V_B$ is the potentia
 ```pysahdy
 A charge of $2.0\,\text{nC}$ moves from a point at potential $90\,\text{V}$ to a point at potential $40\,\text{V}$. How much work does the electric force do?
 ---
-The work is $W_{AB} = q(V_A - V_B)$. With the values, $W_{AB} = 2.0 \cdot 10^{-9}\,\text{C} \cdot (90\,\text{V} - 40\,\text{V}) = 1.0 \cdot 10^{-7}\,\text{J}$.
+The work is $W_{AB} = q(V_A - V_B)$. With the values, $V_A - V_B = 90\,\text{V} - 40\,\text{V} = 50\,\text{V}$ and $W_{AB} = 2.0 \cdot 10^{-9}\,\text{C} \cdot 50\,\text{V}$, so $W_{AB} = 1.0 \cdot 10^{-7}\,\text{J}$.
 ```
 
 When the negative plate is the zero point, the potential of a uniform field is

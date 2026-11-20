@@ -257,7 +257,7 @@ In the graph the resistor $R_1 = 100\,\Omega$ stays the same and $R_2$ changes. 
 ```pysahdy
 Resistors of $12\,\Omega$ and $4.0\,\Omega$ are connected in parallel. What is the total resistance?
 ---
-By $R = \tfrac{R_1 R_2}{R_1 + R_2}$, $R = \tfrac{12\,\Omega \cdot 4.0\,\Omega}{16\,\Omega} = 3.0\,\Omega$. This is smaller than $4.0\,\Omega$, as it should be.
+By $R = \tfrac{R_1 R_2}{R_1 + R_2}$, $R = \tfrac{12\,\Omega \cdot 4.0\,\Omega}{16\,\Omega}$, so $R = 3.0\,\Omega$. This is smaller than $4.0\,\Omega$, as it should be.
 ```
 
 ### Mixed connection

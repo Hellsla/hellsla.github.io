@@ -118,7 +118,7 @@ Rinnakkaisten haarojen yli on sama jännite (luku *Vastusten sarja- ja rinnankyt
 ```pysahdy
 Haarautumispisteeseen tulee virta $0{,}80\,\text{A}$, ja toiseen haaraan lähtee $0{,}30\,\text{A}$. Kuinka suuri virta lähtee toiseen haaraan?
 ---
-Virtalain mukaan $I_3 = I_1 - I_2$. Siis $I_3 = 0{,}80\,\text{A} - 0{,}30\,\text{A} = 0{,}50\,\text{A}$.
+Virtalain mukaan $I_3 = I_1 - I_2$. Siis $I_3 = 0{,}80\,\text{A} - 0{,}30\,\text{A}$, joten $I_3 = 0{,}50\,\text{A}$.
 ```
 
 ### Potentiaali: jokaisen kohdan sähköinen taso
@@ -202,7 +202,7 @@ missä $\Delta V$ (V) on potentiaalin muutos silmukan kussakin osassa, kun silmu
 ```pysahdy
 Yhden silmukan piirissä lähteen jännite on $12\,\text{V}$ ja vastuksen $R_1$ jännite $5{,}0\,\text{V}$. Kuinka suuri on toisen vastuksen $R_2$ jännite?
 ---
-Jännitelain mukaan $U_2 = U - U_1$. Siis $U_2 = 12\,\text{V} - 5{,}0\,\text{V} = 7{,}0\,\text{V}$.
+Jännitelain mukaan $U_2 = U - U_1$. Siis $U_2 = 12\,\text{V} - 5{,}0\,\text{V}$, joten $U_2 = 7{,}0\,\text{V}$.
 ```
 
 **Potentiaalikuvaaja** näyttää potentiaalin silmukan eri kohdissa. Kuvaajassa kierretään pisteillä $A$–$F$ merkityn piirin silmukka. Kierros alkaa miinusnavasta $F$, kulkee vastusten $R_1$ ja $R_2$ kautta ja palaa pisteeseen $F$. Lähteen nousu $+9{,}0\,\text{V}$ on yhtä suuri kuin vastusten laskujen $-3{,}0\,\text{V}$ ja $-6{,}0\,\text{V}$ summa. Johtimissa kuvaaja on vaakasuora.

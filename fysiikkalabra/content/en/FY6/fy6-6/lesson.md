@@ -166,7 +166,7 @@ In the resistor in the figure, $0.50\,\text{C}$ passes through every second, and
 ```pysahdy
 The voltage of a motor is $24\,\text{V}$ and a current of $2.0\,\text{A}$ passes through it. How large is the power of the motor?
 ---
-The power is $P = UI$. So $P = 24\,\text{V} \cdot 2.0\,\text{A} = 48\,\text{W}$.
+The power is $P = UI$. So $P = 24\,\text{V} \cdot 2.0\,\text{A}$, so $P = 48\,\text{W}$.
 ```
 
 ### Joule's law: why a resistor heats up
@@ -260,7 +260,7 @@ where $R$ is the resistance of the resistor ($\Omega$). The form $RI^2$ is handy
 ```pysahdy
 The resistance of a resistor is $20\,\Omega$ and its voltage is $10\,\text{V}$. How large is the power of the resistor?
 ---
-The voltage is known, so $P = U^2 : R$. So $P = (10\,\text{V})^2 : 20\,\Omega = 5.0\,\text{W}$.
+The voltage is known, so $P = U^2 : R$. So $P = (10\,\text{V})^2 : 20\,\Omega$, so $P = 5.0\,\text{W}$.
 ```
 
 The electrical energy transformed in a component in a time $t$ is

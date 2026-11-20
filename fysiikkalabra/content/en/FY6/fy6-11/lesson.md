@@ -341,7 +341,7 @@ where $E$ is the electric field strength ($\text{V/m}$), $U$ the voltage between
 ```pysahdy
 The voltage between the plates is $600\,\text{V}$ and the distance is $3.0\,\text{cm}$. How strong is the field between the plates?
 ---
-The field strength is $E = U : d$. With $d = 0.030\,\text{m}$, $E = 600\,\text{V} : 0.030\,\text{m} = 2.0 \cdot 10^{4}\,\text{V/m}$.
+The field strength is $E = U : d$. With $d = 0.030\,\text{m}$, $E = 600\,\text{V} : 0.030\,\text{m}$, so $E = 2.0 \cdot 10^{4}\,\text{V/m}$.
 ```
 
 <svg data-fig="work" viewBox="0 0 600 340" role="img" aria-label="Diagram, not to scale: a voltage source U is connected with wires to two horizontal plates, the positive terminal to the upper one and the negative terminal to the lower one. The distance of the plates is d. Between the plates green field lines point down. A positive charge q starts near the upper plate and moves along a dashed line to the lower plate. The same red force F acts on it the whole way, equal to q times E and pointing down. When the charge travels the distance d, the field does the work F times d, which is equal to q times U." style="max-width:100%;font-size:24px">

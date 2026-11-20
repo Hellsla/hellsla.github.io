@@ -248,7 +248,7 @@ missä $I_\text{k}$ on oikosulkuvirta ($\text{A}$).
 ```pysahdy
 Pariston lähdejännite on $6{,}0\,\text{V}$ ja sisäinen resistanssi $0{,}50\,\Omega$. Kuinka suuri on oikosulkuvirta?
 ---
-Oikosulkuvirta on $I_\text{k} = E : R_\text{s}$. Siis $I_\text{k} = 6{,}0\,\text{V} : 0{,}50\,\Omega = 12\,\text{A}$.
+Oikosulkuvirta on $I_\text{k} = E : R_\text{s}$. Siis $I_\text{k} = 6{,}0\,\text{V} : 0{,}50\,\Omega$, joten $I_\text{k} = 12\,\text{A}$.
 ```
 
 ### Lähdejännite ja sisäinen resistanssi kuvaajasta

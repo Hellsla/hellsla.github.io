@@ -168,7 +168,7 @@ Suuri teho ei siis yksin tarkoita suurta kulutusta. Vedenkeitin, jonka teho on $
 ```pysahdy
 Lamppu, jonka teho on $0{,}060\,\text{kW}$, palaa $5{,}0\,\text{h}$. Kuinka paljon sähköenergiaa lamppu käyttää?
 ---
-Energia on $E = Pt$. Siis $E = 0{,}060\,\text{kW} \cdot 5{,}0\,\text{h} = 0{,}30\,\text{kWh}$.
+Energia on $E = Pt$. Siis $E = 0{,}060\,\text{kW} \cdot 5{,}0\,\text{h}$, joten $E = 0{,}30\,\text{kWh}$.
 ```
 
 <figure class="unit-photo"><img src="pics/fy6/electricity-meter.webp" alt="Musta sähkömittari seinällä. Ylhäällä on numeroita ja yksikkö kWh. Alla on pyörivä levy."><figcaption>Vanha sähkömittari laskee, kuinka paljon sähköenergiaa koti käyttää. Yksikkö on kilowattitunti. Levy pyörii sitä nopeammin, mitä suurempi teho kodissa on päällä.</figcaption></figure>
@@ -179,7 +179,7 @@ Energian SI-yksikkö on joule. Kodin sähköenergia mitataan ja laskutetaan kuit
 ```pysahdy
 Kuinka monta megajoulea on $2{,}0\,\text{kWh}$?
 ---
-Yksi kilowattitunti on $3{,}6\,\text{MJ}$. Siis $2{,}0\,\text{kWh} = 2{,}0 \cdot 3{,}6\,\text{MJ} = 7{,}2\,\text{MJ}$.
+Yksi kilowattitunti on $3{,}6\,\text{MJ}$. Siis $2{,}0\,\text{kWh} = 2{,}0 \cdot 3{,}6\,\text{MJ}$, joten $2{,}0\,\text{kWh} = 7{,}2\,\text{MJ}$.
 ```
 
 ### Laitteen virta verkossa
@@ -259,7 +259,7 @@ missä $U$ on laitteen jännite (V) ja $I$ sen läpi kulkeva virta (A).
 ```pysahdy
 Laitteen jännite on $230\,\text{V}$ ja virta $0{,}50\,\text{A}$. Kuinka paljon energiaa se käyttää $2{,}0\,\text{h}$:ssa? Vastaa kilowattitunteina.
 ---
-Energia on $E = UIt$. Siis $E = 230\,\text{V} \cdot 0{,}50\,\text{A} \cdot 2{,}0\,\text{h} = 0{,}23\,\text{kWh}$.
+Energia on $E = UIt$. Siis $E = 230\,\text{V} \cdot 0{,}50\,\text{A} \cdot 2{,}0\,\text{h}$, joten $E = 0{,}23\,\text{kWh}$.
 ```
 
 Sähkölaskussa maksetaan sähköenergiasta ja sen siirrosta sähköverkossa kilowattituntia kohti. Lisäksi laskussa on kuukausittaisia perusmaksuja:

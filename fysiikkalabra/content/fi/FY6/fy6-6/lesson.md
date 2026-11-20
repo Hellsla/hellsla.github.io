@@ -166,7 +166,7 @@ Kuvan vastuksen läpi kulkee $0{,}50\,\text{C}$ sekunnissa, ja jokainen coulombi
 ```pysahdy
 Moottorin jännite on $24\,\text{V}$ ja sen läpi kulkee virta $2{,}0\,\text{A}$. Kuinka suuri on moottorin teho?
 ---
-Teho on $P = UI$. Siis $P = 24\,\text{V} \cdot 2{,}0\,\text{A} = 48\,\text{W}$.
+Teho on $P = UI$. Siis $P = 24\,\text{V} \cdot 2{,}0\,\text{A}$, joten $P = 48\,\text{W}$.
 ```
 
 ### Joulen laki: miksi vastus lämpenee
@@ -260,7 +260,7 @@ missä $R$ on vastuksen resistanssi ($\Omega$). Muoto $RI^2$ on kätevä, kun vi
 ```pysahdy
 Vastuksen resistanssi on $20\,\Omega$ ja sen jännite $10\,\text{V}$. Kuinka suuri on vastuksen teho?
 ---
-Jännite tunnetaan, joten $P = U^2 : R$. Siis $P = (10\,\text{V})^2 : 20\,\Omega = 5{,}0\,\text{W}$.
+Jännite tunnetaan, joten $P = U^2 : R$. Siis $P = (10\,\text{V})^2 : 20\,\Omega$, joten $P = 5{,}0\,\text{W}$.
 ```
 
 Ajassa $t$ komponentissa muuttuva sähköenergia on

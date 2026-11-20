@@ -168,7 +168,7 @@ So a large power alone does not mean a large consumption. A kettle with a power 
 ```pysahdy
 A lamp with a power of $0.060\,\text{kW}$ is on for $5.0\,\text{h}$. How much electrical energy does the lamp use?
 ---
-The energy is $E = Pt$. So $E = 0.060\,\text{kW} \cdot 5.0\,\text{h} = 0.30\,\text{kWh}$.
+The energy is $E = Pt$. So $E = 0.060\,\text{kW} \cdot 5.0\,\text{h}$, so $E = 0.30\,\text{kWh}$.
 ```
 
 <figure class="unit-photo"><img src="pics/fy6/electricity-meter.webp" alt="A black Siemens electricity meter on a wall: a row of number wheels at the top with the last digit in a red box and the unit kWh beside it, and a horizontal rotating disc below."><figcaption>An old electricity meter counts the electrical energy used in a home in kilowatt-hours. The number wheels give the reading, and the disc below them turns faster the more power the home is using.</figcaption></figure>
@@ -179,7 +179,7 @@ The SI unit of energy is the joule, but the electrical energy of a home is measu
 ```pysahdy
 How many megajoules is $2.0\,\text{kWh}$?
 ---
-One kilowatt-hour is $3.6\,\text{MJ}$. So $2.0\,\text{kWh} = 2.0 \cdot 3.6\,\text{MJ} = 7.2\,\text{MJ}$.
+One kilowatt-hour is $3.6\,\text{MJ}$. So $2.0\,\text{kWh} = 2.0 \cdot 3.6\,\text{MJ}$, so $2.0\,\text{kWh} = 7.2\,\text{MJ}$.
 ```
 
 ### The current of a device in the mains
@@ -259,7 +259,7 @@ where $U$ is the voltage of the device (V) and $I$ the current through it (A).
 ```pysahdy
 The voltage of a device is $230\,\text{V}$ and its current is $0.50\,\text{A}$. How much energy does it use in $2.0\,\text{h}$? Give the answer in kilowatt-hours.
 ---
-The energy is $E = UIt$. So $E = 230\,\text{V} \cdot 0.50\,\text{A} \cdot 2.0\,\text{h} = 0.23\,\text{kWh}$.
+The energy is $E = UIt$. So $E = 230\,\text{V} \cdot 0.50\,\text{A} \cdot 2.0\,\text{h}$, so $E = 0.23\,\text{kWh}$.
 ```
 
 An electricity bill charges both for the electrical energy and for its transmission in the electricity network per kilowatt-hour, and in addition monthly basic charges:

@@ -257,7 +257,7 @@ Kuvaajassa vastus $R_1 = 100\,\Omega$ pysyy samana ja $R_2$ muuttuu. Sarjaankytk
 ```pysahdy
 Vastukset $12\,\Omega$ ja $4{,}0\,\Omega$ kytketään rinnan. Kuinka suuri on kokonaisresistanssi?
 ---
-Kaavan $R = \tfrac{R_1 R_2}{R_1 + R_2}$ mukaan $R = \tfrac{12\,\Omega \cdot 4{,}0\,\Omega}{16\,\Omega} = 3{,}0\,\Omega$. Tulos on pienempi kuin $4{,}0\,\Omega$, kuten pitääkin.
+Kaavan $R = \tfrac{R_1 R_2}{R_1 + R_2}$ mukaan $R = \tfrac{12\,\Omega \cdot 4{,}0\,\Omega}{16\,\Omega}$, joten $R = 3{,}0\,\Omega$. Tulos on pienempi kuin $4{,}0\,\Omega$, kuten pitääkin.
 ```
 
 ### Sekakytkentä

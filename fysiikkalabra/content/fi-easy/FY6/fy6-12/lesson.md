@@ -587,7 +587,7 @@ Kaavassa $W_{AB}$ on työ ($\text{J}$) ja $U_{AB} = V_A - V_B$ on kohtien potent
 ```pysahdy
 Varaus $2{,}0\,\text{nC}$ siirtyy kohdasta, jonka potentiaali on $90\,\text{V}$, kohtaan, jonka potentiaali on $40\,\text{V}$. Kuinka suuren työn sähköinen voima tekee?
 ---
-Työ on $W_{AB} = q(V_A - V_B)$. Lukuarvoilla $W_{AB} = 2{,}0 \cdot 10^{-9}\,\text{C} \cdot (90\,\text{V} - 40\,\text{V}) = 1{,}0 \cdot 10^{-7}\,\text{J}$.
+Työ on $W_{AB} = q(V_A - V_B)$. Lukuarvoilla $V_A - V_B = 90\,\text{V} - 40\,\text{V} = 50\,\text{V}$ ja $W_{AB} = 2{,}0 \cdot 10^{-9}\,\text{C} \cdot 50\,\text{V}$, joten $W_{AB} = 1{,}0 \cdot 10^{-7}\,\text{J}$.
 ```
 
 Kun negatiivinen levy on nollakohta, homogeenisen kentän potentiaali on

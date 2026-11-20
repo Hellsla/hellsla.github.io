@@ -341,7 +341,7 @@ missä $E$ on sähkökentän voimakkuus ($\text{V/m}$), $U$ levyjen välinen jä
 ```pysahdy
 Levyjen välinen jännite on $600\,\text{V}$ ja etäisyys $3{,}0\,\text{cm}$. Kuinka voimakas kenttä levyjen välissä on?
 ---
-Kentän voimakkuus on $E = U : d$. Kun $d = 0{,}030\,\text{m}$, $E = 600\,\text{V} : 0{,}030\,\text{m} = 2{,}0 \cdot 10^{4}\,\text{V/m}$.
+Kentän voimakkuus on $E = U : d$. Kun $d = 0{,}030\,\text{m}$, $E = 600\,\text{V} : 0{,}030\,\text{m}$, joten $E = 2{,}0 \cdot 10^{4}\,\text{V/m}$.
 ```
 
 <svg data-fig="work" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva, ei mittakaavassa: jännitelähde U on kytketty johtimilla kahteen vaakasuoraan levyyn, plusnapa ylempään ja miinusnapa alempaan. Levyjen etäisyys on d. Levyjen välissä vihreät kenttäviivat osoittavat alas. Positiivinen varaus q lähtee ylemmän levyn luota ja kulkee katkoviivaa pitkin alemmalle levylle. Siihen kohdistuu koko matkan sama punainen voima F, joka on q kertaa E ja osoittaa alas. Kun varaus kulkee matkan d, kenttä tekee työn F kertaa d, joka on yhtä suuri kuin q kertaa U." style="max-width:100%;font-size:24px">

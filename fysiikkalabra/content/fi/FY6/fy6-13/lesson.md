@@ -347,7 +347,7 @@ Kun aluksi varaamaton kondensaattori ladataan vakiojännitelähteestä tavallise
 ```pysahdy
 Kondensaattorin kapasitanssi on $10\,\mu\text{F}$ ja jännite $20\,\text{V}$. Kuinka paljon energiaa siihen on varastoitunut?
 ---
-$W = \tfrac{1}{2} C U^2$. Sijoitus: $\tfrac{1}{2} \cdot 10 \cdot 10^{-6}\,\text{F} \cdot (20\,\text{V})^2 = 2{,}0 \cdot 10^{-3}\,\text{J} = 2{,}0\,\text{mJ}$.
+$W = \tfrac{1}{2} C U^2$. Sijoitus: $W = \tfrac{1}{2} \cdot 10 \cdot 10^{-6}\,\text{F} \cdot (20\,\text{V})^2$, joten $W = 2{,}0 \cdot 10^{-3}\,\text{J} = 2{,}0\,\text{mJ}$.
 ```
 
 ### Eriste, kun lähde on kytkettynä tai irrotettuna

@@ -248,7 +248,7 @@ where $I_\text{k}$ is the short-circuit current ($\text{A}$).
 ```pysahdy
 The source voltage of a battery is $6.0\,\text{V}$ and its internal resistance is $0.50\,\Omega$. How large is the short-circuit current?
 ---
-The short-circuit current is $I_\text{k} = E : R_\text{s}$. So $I_\text{k} = 6.0\,\text{V} : 0.50\,\Omega = 12\,\text{A}$.
+The short-circuit current is $I_\text{k} = E : R_\text{s}$. So $I_\text{k} = 6.0\,\text{V} : 0.50\,\Omega$, so $I_\text{k} = 12\,\text{A}$.
 ```
 
 ### Source voltage and internal resistance from a graph
