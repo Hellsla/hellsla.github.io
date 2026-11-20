@@ -165,6 +165,7 @@ Raportti tehty (#721, `docs/audits/2026-11-18-lopputarkistus-FY1-FY8.md`). **Hyv
 Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jälkeen; tämä rivi on hyväksynnän kirjaus (sääntö 5).
 - 8j: fy1-1, fy1-8 ja fy2-1 ohitetaan (ei kertaustehtävää).
 - 5d: FY5:n 16 ja FY6:n 25 jäljellä olevaa riviä jäävät listalle (myös fy5-7 `x = A \sin(…)`).
+- Kuvan .side/.stack-arvio (`fig_side`/`text_height`, jaettu): arvio ei vastaa renderöintiä (fy5-9, fy5-12 fi, test_inquiry 1280/1920 px; PR #770). Varattu: claude/fig-side-arvio
 - Pysähdy ja mieti: FY1:n luvut tehty (PR #760, kaikki kielet, katselmoitu); seuraavaksi FY2, kurssi kerrallaan.
 - Pysähdy ja mieti: FY3:n luvut tehty (PR #766 ja fy3-4 PR #772, kaikki kielet, katselmoitu: tiede, pedagogia ja ulkoasu PASS; fy3-4:n sim-lukema korjattu, ks. FY3-päätös alla); seuraavaksi FY5, kurssi kerrallaan.
 - Pysähdy ja mieti: FY2:n luvut tehty (PR #765, kaikki kielet, katselmoitu; fy2-4 neljäs rajattu kierros opettajan luvalla 2026-11-19); jäljellä FY3 ja muut kurssit, kurssi kerrallaan.
