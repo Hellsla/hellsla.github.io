@@ -919,6 +919,7 @@ def render(folder, inquiry, parts, md):
             kind = extension_kind(a.get("title")) if a.get("optional") else None   # "Syventävä: …", "Lisätiedoksi: …" name the box's kind instead of Valinnainen (teacher 2026-11-07)
             if kind:
                 tag, name = esc(kind), re.sub(rf"(^|:\s*){re.escape(esc(kind))}\s*:\s*(\S)", lambda m: m.group(1) + m.group(2).upper(), name, count=1)
+            content = content.replace('class="fig-row side"', 'class="fig-row stack"')   # site.css stacks a figure unit inside a box; the class says what is rendered (build.py fig_rows; fy5-9, fy5-12)
             return (f'<details class="opt{" fold" if a.get("fold") else ""}" data-type="{t}"><summary>' + (f'<span class="opt-tag">{tag}</span> ' if tag else "") + f'{name}</summary>'
                     f'<div class="activity act-{t}" id="{esc(aid)}" data-type="{t}">{content}{hints}</div></details>')
         card = " task-card" if t in CARD_TYPES else ""

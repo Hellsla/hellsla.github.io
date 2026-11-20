@@ -54,9 +54,10 @@ new p5((p) => {
     lH.html(__(`syvyys`, {h: tx(h, 1)})); lR.html(__(`tiheys`, {rho: rho, name: name}));
     readout.html(__(`syvyys_tiheys`, {h: tx(h, 1), rho: rho}) +
                  __(`hydrostaattinen_paine`, {pover: tx(pOver, 1)}) +
-                 __(`kokonaispaine`, {pover: tx(pOver, 1), ptotal: tx(pTotal, 1)}) +
-                 __(`kokonaispaine_on_kertaa`, {ratio: tx(ratio, 2)}) +
-                 __(`kuvaajan_asteikko_kulmakerroin`, {pmax: pMax, slope: tx(slope, 2)}));
+                 __(`kokonaispaine`, {pover: tx(pOver, 1), ptotal: tx(pTotal, 1)}));
+    // the readout carries only what the gauge measures (ρgh and p); the slope ρg and the ratio p/p₀ are what the
+    // student works out from the measurements (exp-1's numeric question and the prediction about doubling), so they
+    // stay in simState for the tests but are not printed (fy3-4 review, #766)
     window.simState = { h, rho, pOver, pTotal, ratio, overOnly, p0: P0, g: G, slope, chartBase: base, chartValue: base + pOver, pMax };
 
     k = Math.max(1, 600 / (document.getElementById('sim-root').clientWidth || 600));   // keep canvas text legible when scaled
