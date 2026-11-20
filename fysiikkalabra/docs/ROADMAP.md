@@ -71,6 +71,9 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
     so alone. Teacher 2026-11-15: just before the booklets (step 16).
 16. Last (teacher 2026-11-14; after steps 17 and 18, teacher 2026-11-15: no proofreading after the booklets): printed A5 booklets for FY1–FY8 in the current compact layout (`print_book.py --publish`): FY1–FY4 again, FY5–FY8
     new; each course after its data-book formulas (step 3) are merged.
+25. After the booklets (teacher 2026-11-20): an individual learning path, pilot in FY1, entirely in the browser: a short
+    pre-test on typical misconceptions recommends a route (review first / core tasks / challenges); no server, login or
+    student data. Planned first in a Claude project and approved by the teacher; a teacher view is a separate project.
 
 Area D waits for the teacher's decision on which plan (FY10, Dronelabra, others) is approved for building.
 

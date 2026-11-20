@@ -219,3 +219,6 @@ Siirretään `ahjo.py` ja `lumatutor.py` jaksopohjan lohkoiksi niin, että sivut
 ## 16. Vihkot FY1–FY8 (opettaja 2026-11-13; jonon viimeinen)
 A5-vihkot kaikille kursseille tiiviillä asettelulla (`python scripts/print_book.py <C> --lang fi|en --publish`); FY1–FY4 tehdään uudelleen, FY5–FY8 uusia. Vasta kohtien 3, 17 ja 18
 jälkeen; rakenna sivusto vihkojen jälkeen (Vihkot-sivu).
+
+## 25. Yksilöllinen oppimispolku, pilotti FY1 (opettaja 2026-11-20 klo 17.5x "laita se vikaksi"; jonon viimeinen, vihkojen jälkeen)
+Versio 1 kokonaan selaimessa: luvun alussa 3–5 kysymyksen lähtötesti tyypillisistä virhekäsityksistä, jonka perusteella sivu suosittelee polun (kertaa ensin / ydintehtävät / haasteet); väärä vastaus ohjaa esimerkkiin tai simulaatioon; osaamiskartta oppilaan selaimeen. Ei palvelinta, ei tunnuksia, ei oppilastietojen keruuta (fysiikkalabra/CLAUDE.md "Never"). Suunnitelma tehdään ensin Claude-projektissa, ja opettaja hyväksyy sen ennen toteutusta; uusi käyttöliittymäteksti vaatii opettajan luvan. Versio 2 (opettajanäkymä, palvelin, kirjautuminen, tietosuoja) on erillinen hanke, joka vaatisi "Never"-säännön muuttamista opettajan päätöksellä.
