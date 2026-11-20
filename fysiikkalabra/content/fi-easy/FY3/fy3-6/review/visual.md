@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 0915c3b0a0fb6632
-Mode: delta
-Round: 1
+CONTENT-HASH: e3ced4b84a234ad4
 
 ## Blocking
-None.
 
 ## Polish
-None.
+- [Minor] Pysähdy (tasapainolämpötila) — slash division $(20\,{}^\circ\text{C} + 60\,{}^\circ\text{C})/2$; house notation is a colon.
 
 ## Checked
-- Delta: Tiivistelmä bullet now "$Q = c m \Delta T$, kun olomuoto ei muutu"; correct, plain Finnish, maths unchanged. Layout judged in fy3-6-stage-selita-390-4 (Tiivistelmä box, rest of the page intact, nothing clipped).
+batch delta review: four new Pysähdy blocks read in Selkeä suomi from the source; layout verified in the Finnish captures of the batch, which share the cut; units in LaTeX.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

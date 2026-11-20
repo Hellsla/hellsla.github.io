@@ -228,6 +228,12 @@ missä $N$ on hiukkasten lukumäärä, $m$ massa (g tai kg) ja $M$ moolimassa (g
   <foreignObject x="20" y="281.5" width="560" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{kussakin astiassa }n = 1{,}00\,\text{mol},\ \text{sama }p, T$</div></foreignObject>
 </svg>
 
+```pysahdy
+Heliumin moolimassa on $4{,}00\,\text{g/mol}$. Kuinka monta moolia on $8{,}0\,\text{g}$ heliumia?
+---
+Ainemäärä on $n = m/M$, joten $n = 8{,}0\,\text{g}/4{,}00\,\text{g/mol} = 2{,}0\,\text{mol}$.
+```
+
 Ideaalikaasu on mikromalli. Siinä hiukkaset ajatellaan pistemäisiksi, ja ne vaikuttavat toisiinsa ja astian seinämiin vain törmätessään. Siksi hiukkasten välisten vuorovaikutusten energia on mallissa merkityksetön, ja kelvinlämpötila on suoraan verrannollinen hiukkasten keskimääräiseen liike-energiaan. Paine syntyy seinämiin osuvista törmäyksistä, ja se kasvaa, kun hiukkasia on enemmän, kun ne liikkuvat nopeammin eli lämpötila on korkeampi tai kun tilavuus on pienempi. Todelliset kaasut noudattavat mallia hyvin tavallisissa oloissa. Malli alkaa pettää suurissa paineissa ja matalissa lämpötiloissa, kun hiukkaset ovat lähellä toisiaan ja niiden välinen vetovoima tiivistää kaasun nesteeksi.
 
 ## Kaava: Ideaalikaasun tilanyhtälö
@@ -244,6 +250,12 @@ Tarkat mittaukset antavat kaikille kaasuille arvon $R = 8{,}31\,\tfrac{\text{J}}
 ideaalikaasun tilanyhtälö :: pV = nRT
 ```
 missä $p$ on kaasun absoluuttinen paine, $V$ tilavuus, $n$ ainemäärä, $R$ moolinen kaasuvakio ja $T$ kelvinlämpötila. Kaasun laatu ei näy yhtälössä lainkaan. Celsiusasteina annettu lämpötila $\theta$ muutetaan kelvineiksi lisäämällä lukuarvoon $273{,}15$.
+
+```pysahdy
+Kaksi samankokoista palloa on samassa paineessa ja lämpötilassa, toisessa heliumia ja toisessa ilmaa. Onko niissä yhtä paljon kaasua?
+---
+On. Kaasun laatu ei näy yhtälössä $pV = nRT$, joten sama $p$, $V$ ja $T$ tarkoittavat samaa ainemäärää $n$. Massat eroavat, koska moolimassat eroavat.
+```
 
 Kun käytetään kaasuvakion arvoa
 ```latex
@@ -409,6 +421,12 @@ Kun tilanyhtälö ratkaistaan paineen suhteen, nähdään, että paine kaksinker
   <foreignObject x="473.5" y="211.5" width="103" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$N,\ T,\ V/2$</div></foreignObject>
   <foreignObject x="508.5" y="251.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2p$</div></foreignObject>
 </svg>
+
+```pysahdy
+Kaasun kelvinlämpötila kaksinkertaistuu ja tilavuus kaksinkertaistuu. Hiukkasmäärä pysyy samana. Mitä paineelle tapahtuu?
+---
+Paine ei muutu, koska $p \propto NT/V$ ja kaksi tekijää 2 supistuu pois.
+```
 
 Simulaatiossa voit tutkia tätä hiukkasten tasolla: muuta hiukkasten määrää, lämpötilaa ja tilavuutta ja vertaa seinämistä mitattua painetta tilanyhtälön ennusteeseen, jonka lasket itse. Hiukkasten keskinäiset törmäykset eivät muuta painetta keskimäärin, joten ne on jätetty simulaatiosta pois. Simulaatiossa paine näytetään suhteessa vertailutilaan ($p/p_\text{ref}$), ei pascaleina. Vertailutila on $N = 100$ hiukkasta, $T = 300\,\text{K}$ ja koko tilavuus ($V = 100\,\%$); siinä $p/p_\text{ref} = 1$, ja arvo 2 tarkoittaa kaksinkertaista vertailupaineeseen verrattuna. Hiukkasmäärä $N$ kuvaa kaasun määrää.
 

@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 61fec2274fcb774b
+CONTENT-HASH: 332282f27de4a487
 
 ## Blocking
 
 ## Polish
-- [Minor] Pohdinta/Predict card feedback: the two aligned blocks now read as a sequence ("The time follows from the power:"); the first Q chain opens a row with a bare "· 0.40 kg" which is the existing aligned layout, no change needed.
 
 ## Checked
-- batch delta review: own captures of the changed task card with the correct-answer feedback open, 390 px and 1280 px (scratchpad fy3-7-card-390.png, fy3-7-card-1280.png); the linking sentence sits between the two aligned blocks, both blocks aligned at "=", nothing clipped, no overflow. Shipped captures fy3-7-fig-* unchanged and not reopened.
+batch delta review: three new Pysähdy blocks read in English from the source; layout verified in the Finnish captures of the batch, which share the cut; units in LaTeX, natural wording.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

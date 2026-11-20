@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 590b3e64abef405c
+CONTENT-HASH: c3b34dff60f9571b
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: the changed display formulas of this lesson rendered at 390 px (all aligned displays opened with hints, feedback and solutions revealed, cropped with their paragraph; fy3-1, 4, 10, 11, 14, 15 read in full sheets, fy3-6, 11, 15 also at 1280 px); programmatic check over all displays at 390 and 1280 px: no clipping or overflow, no stray punctuation line (the page puts it inside the formula), no row break inside a number or unit, continuation rows start with an operator, equals signs in one column. The default stage captures do not show the changed formulas (they sit in closed hints and feedback), so they were not used.
+batch delta review: four new Pysähdy blocks read in English from the source; subscripts $Q_\text{w}$, $Q_\text{i}$ consistent with the chapter; layout verified in the Finnish captures of the batch, which share the cut.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -80,6 +80,12 @@ Kylmälaukun seinien läpi johtuu sisään teho $P = UA\Delta T$. Eriste on hyv�
 
 Saunan kiuas lämmittää kiviä. Kivien ominaislämpökapasiteetti on noin $800\,\text{J/(kg}\cdot\text{K)}$. Kun kuumille kiville heitetään löylyvettä, vesi lämpenee ja höyrystyy. Energia otetaan kivistä. Suurin osa energiasta kuluu höyrystymiseen. Esimerkiksi $0{,}20\,\text{kg}$ vettä lämpenee $20\,{}^\circ\text{C}$:sta $100\,{}^\circ\text{C}$:seen $67\,\text{kJ}$:n energialla. Sen höyrystäminen vaatii $452\,\text{kJ}$. Siksi kivet jäähtyvät heti, ja kiukaan täytyy lämmittää ne uudelleen. Kun höyry tiivistyy ihoon, sama energia vapautuu takaisin. Siksi löyly tuntuu kuumalta.
 
+```pysahdy
+Miksi kivet jäähtyvät heti, kun niille heitetään löylyvettä?
+---
+Veden höyrystäminen vaatii $452\,\text{kJ}$ $0{,}20\,\text{kg}$:lle. Se on paljon enemmän kuin lämmittäminen ($67\,\text{kJ}$). Energia otetaan kivistä.
+```
+
 Auton jäähdytysneste kuljettaa moottorin hukkalämmön jäähdyttimeen. Teho on energiaa sekunnissa. Siirtyvä teho riippuu kahdesta asiasta. Ensimmäinen on nesteen massa, joka kulkee sekunnissa. Toinen on nesteen lämpötilan nousu moottorissa. Samalla teholla suurempi massavirta tarkoittaa pienempää lämpötilan nousua. Veden ominaislämpökapasiteetti on suuri, $4190\,\text{J/(kg}\cdot\text{K)}$. Vesi kuitenkin jäätyy pakkasella ja kiehuu helposti. Siksi veteen sekoitetaan glykolia. Seos kestää pakkasta ja kuumuutta. Sen ominaislämpökapasiteetti on kuitenkin pienempi, noin $3500\,\text{J/(kg}\cdot\text{K)}$.
 
 ## Kaava: Energiatase
@@ -141,6 +147,12 @@ Kuvaaja näyttää esimerkin kylmälaukun sisälämpötilasta. Se on laskettu ma
   <foreignObject x="305.3" y="222" width="189" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$\text{vesi lämpenee}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Miksi kylmälaukun lämpötilan nousu hidastuu, kun jää on sulanut?
+---
+Teho $UA\Delta T$ pienenee, kun lämpötilaero pienenee.
+```
+
 Moottorin jäähdytyspiirissä neste ottaa moottorista lämpötehon $P$. Siksi lämmityksen kaava $Q = cm\Delta T$ jaetaan ajalla $t$:
 ```latex
 P = c\,\frac{m}{t}\,\Delta T
@@ -177,6 +189,12 @@ Tässä $m/t$ on nesteen sekunnissa kuljettama massa (kg/s). Lämpötilan nousu 
   <foreignObject x="246" y="154" width="110" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$m/t$</div></foreignObject>
   <foreignObject x="150" y="292" width="300" height="46"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$P = c\,\dfrac{m}{t}\,\Delta T$</div></foreignObject>
 </svg>
+
+```pysahdy
+Moottorin jäähdytysnesteen ominaislämpökapasiteetti on pienempi kuin veden. Onko massavirta samalla teholla ja samalla $\Delta T$:llä suurempi vai pienempi?
+---
+Suurempi. Kaavasta $P = c\,\dfrac{m}{t}\,\Delta T$ saadaan $\dfrac{m}{t} = \dfrac{P}{c\,\Delta T}$. Pienempi $c$ vaatii siis suuremman massavirran.
+```
 
 Kaksi kappaletta tai ainetta on eristetyssä astiassa. Silloin kuuman luovuttama lämpömäärä on yhtä suuri kuin kylmän vastaanottama:
 ```latex

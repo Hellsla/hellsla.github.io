@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: cecd453e60ccc521
+CONTENT-HASH: 3830fdbeb9506751
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Delta: the summary bullet now reads "Q = cmΔT when the state of matter does not change". This is the correct condition for Q = cmΔT (guardrail: state a law's conditions where it is used) and agrees with the theory text I passed earlier.
-- No other word, number or symbol changed; the rest of the lesson stands as approved.
-- Hash identical at start and end.
+- batch delta review (en): sand c ≈ 800 J/(kg·K) ≈ 1/5 of water (figure value); Q = CΔT = 300·4,0 = 1200 J; equal heat capacities give mean 40 °C; recomputed in one script; hash same at start and end.

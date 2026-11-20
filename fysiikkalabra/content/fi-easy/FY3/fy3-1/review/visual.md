@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e63148ee36441aa8
+CONTENT-HASH: 5d03ff767c51396e
 
 ## Blocking
 
 ## Polish
-- [Minor] Pohdinta card, wrong-answer feedback — "Senttimetrit ja newtonit ovat eri yksiköitä, eivätkä luvut ole samat" is a little heavy for S2; consider "Luvut ovat eri yksiköissä, joten ne eivät voi olla yhtä suuria."
 
 ## Checked
-batch delta review: Pohdinta card (Kertaa, new proportionality task) with feedback open at 390 px (wrong and correct answer) and 1280 px, plus stage-herata-390 capture; units, decimal commas and inline maths render cleanly, nothing clipped. The captures were made by me from preview/fi-easy (no ready captures with feedback open exist). Figures unchanged by the diff.
+batch delta review: three new Pysähdy blocks read in Selkeä suomi from the source (short sentences, one idea each, glossary terms); layout verified in the Finnish captures (fy3-1-stage-selita-390-3, fy3-1-theory-1280-2), which share the cut; units in LaTeX.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

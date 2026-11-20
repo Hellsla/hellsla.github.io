@@ -230,6 +230,12 @@ Tässä $N$ on hiukkasten lukumäärä, $m$ massa (g tai kg) ja $M$ moolimassa (
   <foreignObject x="20" y="281.5" width="560" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{kussakin astiassa }n = 1{,}00\,\text{mol},\ \text{sama }p, T$</div></foreignObject>
 </svg>
 
+```pysahdy
+Heliumin moolimassa on $4{,}00\,\text{g/mol}$. Kuinka monta moolia on $8{,}0\,\text{g}$ heliumia?
+---
+Ainemäärä on $n = m/M$, joten $n = 8{,}0\,\text{g}/4{,}00\,\text{g/mol} = 2{,}0\,\text{mol}$.
+```
+
 Ideaalikaasu on mikromalli. Mallissa hiukkaset ovat pistemäisiä. Ne vaikuttavat toisiinsa ja astian seinämiin vain törmätessään. Siksi mallissa ei tarvitse ottaa huomioon hiukkasten välisten vuorovaikutusten energiaa. Kelvinlämpötila on suoraan verrannollinen hiukkasten keskimääräiseen liike-energiaan. Paine syntyy, kun hiukkaset osuvat seinämiin. Paine kasvaa kolmella tavalla:
 
 - Hiukkasia on enemmän.
@@ -252,6 +258,12 @@ Tarkat mittaukset antavat kaikille kaasuille arvon $R = 8{,}31\,\tfrac{\text{J}}
 ideaalikaasun tilanyhtälö :: pV = nRT
 ```
 Tässä $p$ on kaasun absoluuttinen paine, $V$ tilavuus, $n$ ainemäärä, $R$ moolinen kaasuvakio ja $T$ kelvinlämpötila. Kaasun laatu ei näy yhtälössä lainkaan.
+
+```pysahdy
+Kaksi samankokoista palloa on samassa paineessa ja lämpötilassa. Toisessa on heliumia ja toisessa ilmaa. Onko niissä yhtä paljon kaasua?
+---
+On. Kaasun laatu ei näy yhtälössä $pV = nRT$. Sama $p$, $V$ ja $T$ tarkoittavat siis samaa ainemäärää $n$. Massat ovat erilaiset, koska moolimassat ovat erilaiset.
+```
 
 Lämpötila $\theta$ voi olla annettu celsiusasteina. Muuta se kelvineiksi lisäämällä lukuarvoon $273{,}15$.
 
@@ -425,6 +437,12 @@ Paine on siis suoraan verrannollinen hiukkasten lukumäärään ja kelvinlämpö
   <foreignObject x="473.5" y="211.5" width="103" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$N,\ T,\ V/2$</div></foreignObject>
   <foreignObject x="508.5" y="251.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$2p$</div></foreignObject>
 </svg>
+
+```pysahdy
+Kaasun kelvinlämpötila kaksinkertaistuu. Tilavuus kaksinkertaistuu. Hiukkasmäärä pysyy samana. Mitä paineelle tapahtuu?
+---
+Paine ei muutu. Koska $p \propto NT/V$, kaksi tekijää 2 supistuu pois.
+```
 
 Simulaatiossa voit tutkia tätä hiukkasten tasolla. Muuta hiukkasten määrää, lämpötilaa ja tilavuutta. Vertaa seinämistä mitattua painetta tilanyhtälön ennusteeseen. Laske ennuste itse. Hiukkasten keskinäiset törmäykset eivät muuta painetta keskimäärin. Siksi ne on jätetty simulaatiosta pois.
 

@@ -102,6 +102,12 @@ When warm water and ice are put in an insulated container, heat is transferred f
 
 When warm water and cold ice are mixed in an insulated container, the final temperature is generally not the mean of the initial temperatures. The solution is based on conservation of energy.
 
+```pysahdy
+Why is the final temperature of warm water and ice generally not the mean of the initial temperatures?
+---
+The ice takes in $334\,\text{kJ}$ per kilogram when it melts without its temperature rising, so part of the heat from the water does not change any temperature.
+```
+
 ## Formula: Thermal equilibrium and melting
 An insulated container holds water of mass $m_\text{w}$ and temperature $T_\text{w} > 0\,{}^\circ\text{C}$, and ice of mass $m_\text{i}$ and temperature $T_\text{i} \le 0\,{}^\circ\text{C}$. The quantity of heat given out by the water as it cools to the melting point is
 ```latex
@@ -163,6 +169,12 @@ The possible end states are:
 
 So before calculating the temperature, you must work out which phases are present in the end state.
 
+```pysahdy
+$Q_\text{w}$ is smaller than $Q_\text{i}$ but at least $Q_\text{i,warm}$. What is the final temperature, and what is in the container?
+---
+The temperature is $0\,{}^\circ\text{C}$. Not all the ice melts, so ice and water are in the container together.
+```
+
 If $Q_\text{w} \ge Q_\text{i}$, all the ice melts. The heat given out by the water is then used to warm and melt the ice, and the rest warms the whole amount of water $m_\text{w} + m_\text{i}$ to the temperature $T$. The energy balance is
 ```latex
 \begin{aligned}
@@ -218,6 +230,12 @@ The mass of ice that is left is $m_\text{i} - m_\text{melt}$. The graph shows ho
 </svg>
 
 In case 3 the cold ice freezes some of the water. As long as some water is left, ice and water are present together and the temperature is $0\,{}^\circ\text{C}$. In case 4 all the water freezes, and the temperature of the ice is found from the same energy balance in the Level 3 exercise.
+
+```pysahdy
+In case 4 all the water freezes. Is the final temperature $0\,{}^\circ\text{C}$?
+---
+No. Only ice is left, and its temperature is below $0\,{}^\circ\text{C}$. The temperature is $0\,{}^\circ\text{C}$ only while ice and water are present together.
+```
 
 <figure class="unit-photo"><img src="pics/fy3/ice-water-glass.webp" alt="A glass of water seen from above. The glass holds water and many ice cubes."><figcaption>Ice cubes in a glass of water. The ice melts as heat flows into it from the surrounding water.</figcaption></figure>
 

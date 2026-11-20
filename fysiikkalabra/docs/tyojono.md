@@ -166,6 +166,7 @@ Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jäl
 - 8j: fy1-1, fy1-8 ja fy2-1 ohitetaan (ei kertaustehtävää).
 - 5d: FY5:n 16 ja FY6:n 25 jäljellä olevaa riviä jäävät listalle (myös fy5-7 `x = A \sin(…)`).
 - Pysähdy ja mieti: FY1:n luvut tehty (PR #760, kaikki kielet, katselmoitu); seuraavaksi FY2, kurssi kerrallaan.
+- Pysähdy ja mieti: FY3:n luvut tehty paitsi fy3-4 (PR #766, kaikki kielet, katselmoitu: tiede, pedagogia ja ulkoasu PASS); fy3-4 odottaa sim-korjausta (ks. FY3-päätös alla); seuraavaksi FY5, kurssi kerrallaan.
 - Pysähdy ja mieti: FY2:n luvut tehty (PR #765, kaikki kielet, katselmoitu; fy2-4 neljäs rajattu kierros opettajan luvalla 2026-11-19); jäljellä FY3 ja muut kurssit, kurssi kerrallaan.
 - Pysähdy ja mieti: FY4:n luvut tehty (PR #745, kaikki kielet, katselmoitu); **opettaja 2026-11-19 aamulla ("kaikki ok"): laajennetaan muihin kursseihin**, kurssi kerrallaan saman kurssin keskeneräisen PR:n jälkeen.
 - Pysähdy ja mieti FY2 (#765): **opettaja 2026-11-19 klo 22.3x ("1 yes"): fy2-4:lle sallitaan neljäs, rajattu katselmointikierros** (tiede ja pedagogia delta, en full) kolmannen kierroksen esteen (johtopäätöksen kriteeri 3) korjauksen vahvistamiseksi; poikkeus lesson.md:n kolmen kierroksen rajaan vain tähän.

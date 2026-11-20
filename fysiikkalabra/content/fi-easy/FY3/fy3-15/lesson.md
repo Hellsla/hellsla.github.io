@@ -101,6 +101,12 @@ Lauhdevoimalaitoksessa ketju on polttoaine, kattila, turbiini ja lauhdutin, gene
 
 Suurin häviö ei johdu pääosin kitkasta tai huonosta tekniikasta. Suurin osa siitä on höyrykierron hukkalämpöä. Lämpövoimakone ei voi välttää sitä kokonaan. Osa lämmöstä on luovutettava kylmempään ympäristöön, kuten luvussa Kaasun tekemä työ ja lämpövoimakone nähtiin. Vesivoimala, tuulivoimala ja aurinkopaneeli eivät ole lämpövoimakoneita. Niillä ei siis ole tätä pakollista häviötä. Vesivoimalan hyötysuhde on noin $90\,\%$, tuulivoimalan $40$–$45\,\%$ ja aurinkopaneelin noin $20\,\%$. Näiden lukujen nimittäjä on kuitenkin virtaavan veden, tuulen tai säteilyn teho. Se ei ole ostettu polttoaine. Luvut eivät siis ole suoraan verrattavissa polttolaitoksen hyötysuhteeseen.
 
+```pysahdy
+Tuulivoimalan hyötysuhde on $40\,\%$, yhtä suuri kuin kuvan lauhdevoimalaitoksen. Voiko lukuja verrata suoraan?
+---
+Ei voi. Tuulivoimalan hyötysuhteessa verrataan tuulen tehoon eikä ostettuun polttoaineeseen. Tuulivoimala ei myöskään ole lämpövoimakone.
+```
+
 Sähkön ja lämmön yhteistuotannossa lauhduttimen lämpö johdetaan kaukolämpöverkkoon. Veden pitää lämmetä riittävästi. Siksi höyry lauhdutetaan korkeammassa lämpötilassa, ja turbiinista saadaan vähemmän sähköä. Kuvaaja näyttää esimerkkilaitoksen, jonka polttoaineteho on $400\,\text{MW}$. Kun kaukolämpöteho kasvaa, sähköteho pienenee vähän. Hukkalämpö pienenee paljon enemmän. Kuvaajassa pystysuora matka kerrosten välillä on teho. Kolmen kerroksen yhteenlaskettu korkeus on aina $400\,\text{MW}$.
 
 <svg viewBox="0 0 600 380" role="img" aria-label="Pinottu pinta-alakuvaaja yhteistuotantolaitoksesta, jonka polttoaineteho on 400 MW. Vaaka-akselilla on kaukolämpöteho 0–250 MW ja pystyakselilla teho. Kun kaukolämpöteho kasvaa nollasta 232 MW:iin, sähköteho pienenee 160 MW:sta 120 MW:iin. Kaukolämpö kasvaa. Hukkalämpö pienenee 240 MW:sta 48 MW:iin. Kolmen kerroksen yhteenlaskettu korkeus on aina 400 MW. Kuvaaja on mittakaavassa. Sähkön ja lämmön riippuvuus on likimain suora." style="max-width:100%;font-size:24px">
@@ -145,6 +151,12 @@ Sähkön ja lämmön yhteistuotannossa lauhduttimen lämpö johdetaan kaukolämp
 </svg>
 
 Kokonaishyötysuhde nousee yhteistuotannossa jopa 85–$90\,\%$:iin. Sähkö ja lämpö eivät kuitenkaan ole yhtä arvokkaita. Sähköä voi käyttää mihin tahansa, ja sitä voi siirtää satojen kilometrien päähän. Kaukolämpöä käytetään pääasiassa rakennusten ja käyttöveden lämmittämiseen. Sitä voidaan hyödyntää myös esimerkiksi jäähdytyksen tuottamisessa ja teollisuuden lämpöprosesseissa. Sen verkko ulottuu vain kaupunkiin. Kesällä kaukolämmön tarve on yleensä pienempi kuin talvella. Laitoksen sähkö- ja lämpötehon suhde sekä käyttö riippuvat laitostyypistä ja energiantarpeesta.
+
+```pysahdy
+Yhteistuotantolaitoksen kokonaishyötysuhde on $85\,\%$. Onko sen tuotto yhtä arvokasta kuin $85\,\%$ sähkönä?
+---
+Ei ole. Sähköä voi käyttää mihin tahansa ja siirtää kauas. Kaukolämpö on lähinnä rakennusten lämmitykseen, ja sen verkko ulottuu vain kaupunkiin.
+```
 
 <figure class="unit-photo"><img src="pics/fy3/nesjavellir.webp" alt="Valkoisia rakennuksia vihreässä laaksossa. Yhdestä nousee valkoinen pilvi."><figcaption>Nesjavellirin voimalaitos Islannissa tekee sähköä ja kaukolämpöä maan lämmöstä. Valkoinen pilvi on tiivistynyttä vesihöyryä. Se vie hukkalämpöä ympäristöön.</figcaption></figure>
 
@@ -198,6 +210,12 @@ Tässä $\eta_1$, $\eta_2$ ja $\eta_3$ ovat vaiheiden hyötysuhteet (kattila, h�
   <foreignObject x="460" y="196" width="120" height="38"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{häviö}$</div></foreignObject>
   <foreignObject x="460" y="234" width="120" height="38"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$12\,\text{MW}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Kolmen vaiheen hyötysuhteet ovat $0{,}90$, $0{,}40$ ja $0{,}95$. Mikä on koko ketjun hyötysuhde?
+---
+Hyötysuhteet kerrotaan: $\eta \approx 0{,}34$ ($0{,}90 \cdot 0{,}40 \cdot 0{,}95$) eli $34\,\%$. Se on pienempi kuin heikoimman vaiheen hyötysuhde $0{,}40$.
+```
 
 Yhteistuotantolaitoksessa hyödyksi saadaan sekä sähkö että kaukolämpö. Kokonaishyötysuhde on siis
 ```latex

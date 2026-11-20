@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: cd1a10f1eb4be45c
+CONTENT-HASH: 3b8efcead13c9e9b
 
 ## Blocking
 
 ## Polish
+- lesson.md, wind pause — the second reason (not a heat engine) explains why there is no compulsory heat loss, not why the numbers cannot be compared; the denominator alone answers the question.
 
 ## Checked
-- Delta: inquiry.json hint and Periaate ("jakautuu sähköön, kaukolämpöön ja hukkalämpöön") and lesson.md misconception sentence ("siirtyisi hukkalämpönä ympäristöön"); teacher-approved figures not judged.
-- Energy balance and the waste heat as energy transferred to the surroundings: right, per the guardrails.
-- Recomputed: P_h = 400 − 120 − 232 = 48 MW, η_tot = 0,88; unchanged.
-- Same physics as fi and en; no number or symbol changed; hash the same at start and end.
+- batch delta review (fi-easy): wind 40 % equals Sankey's 200/500 MW = 40 %, denominators differ; CHP 85 % not equal in value to electricity; chain 0,90·0,40·0,95 = 0,342 ≈ 34 % < weakest step; worked-example split only; recomputed in one script; hash same at start and end.

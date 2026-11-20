@@ -127,6 +127,12 @@ Tärkeä syy on, että veden ominaislämpökapasiteetti on poikkeuksellisen suur
   <foreignObject x="427" y="317" width="170" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$c = 800\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Samaan määrään vettä ja hiekkaa siirtyy yhtä paljon energiaa, ja massat ovat yhtä suuret. Kumpi lämpenee enemmän, ja miksi?
+---
+Hiekka. Sen ominaislämpökapasiteetti on noin viidesosa veden arvosta, joten sama energia nostaa sen lämpötilaa noin viisi kertaa enemmän.
+```
+
 Kun kuuma ja kylmä kappale laitetaan yhteen eristettyyn astiaan, lämpöä siirtyy kuumemmasta kylmempään, kunnes molemmilla on sama lämpötila. Tätä tilaa sanotaan lämpötasapainoksi. Energia säilyy: kuuman kappaleen luovuttama lämpömäärä on yhtä suuri kuin kylmän vastaanottama. Eristettyä astiaa, jossa tämä mitataan, sanotaan kalorimetriksi, ja mittausta kalorimetriseksi mittaukseksi. Sillä voidaan määrittää tuntemattoman aineen ominaislämpökapasiteetti, kun veden ominaislämpökapasiteetti tunnetaan.
 
 <svg data-fig="calorimeter" viewBox="0 0 600 432" role="img" aria-label="Kalorimetri ennen ja jälkeen lämpötasapainon, periaatekuva, ei mittakaavassa. Ennen: eristetyssä astiassa on 0,300 kg vettä 20,0 °C:ssa ja sen yläpuolella langasta roikkuu 0,200 kg:n metallikappale 100,0 °C:ssa. Jälkeen: kappale on vedessä, ja sekä vesi että kappale ovat lämpötilassa 24,5 °C. Metallin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama." style="max-width:100%;font-size:24px">
@@ -174,6 +180,12 @@ lämpökapasiteetti :: C = c m
 ```
 kertoo, kuinka monta joulea kappaleen lämpötilan nostaminen yhdellä kelvinillä vaatii. $C$ on lämpökapasiteetti (J/K), $c$ ominaislämpökapasiteetti ja $m$ massa. Kappale, jonka lämpökapasiteetti on suuri, lämpenee ja jäähtyy hitaasti.
 
+```pysahdy
+Kappaleen lämpökapasiteetti on $C = 300\,\text{J/K}$. Kuinka paljon energiaa tarvitaan sen lämmittämiseen $4{,}0\,\text{K}$?
+---
+Lämpökapasiteetti kertoo energian yhtä kelviniä kohti, joten tarvitaan $300\,\text{J/K} \cdot 4{,}0\,\text{K} = 1200\,\text{J}$.
+```
+
 Eristetyssä astiassa energia säilyy, kun astian omaa lämpökapasiteettia ei oteta huomioon. Kuuman kappaleen $1$ luovuttama lämpömäärä on yhtä suuri kuin kylmän kappaleen $2$ vastaanottama:
 ```latex
 Q_\text{luovutettu} = Q_\text{vastaanotettu}
@@ -200,6 +212,12 @@ Kun yhtälö jaetaan puolittain summalla $c_1 m_1 + c_2 m_2$, saadaan
 T = \frac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}
 ```
 Tasapainolämpötila on siis alkulämpötilojen painotettu keskiarvo, jossa painoina ovat kappaleiden lämpökapasiteetit $c_1 m_1$ ja $c_2 m_2$. Tavallinen keskiarvo saadaan vain, kun lämpökapasiteetit ovat yhtä suuret.
+
+```pysahdy
+Eristetyssä astiassa sekoitetaan yhtä suuret massat samaa nestettä, joiden lämpötilat ovat $20\,{}^\circ\text{C}$ ja $60\,{}^\circ\text{C}$. Mikä on tasapainolämpötila?
+---
+Lämpökapasiteetit ovat yhtä suuret, joten tasapainolämpötila on tavallinen keskiarvo: $(20\,{}^\circ\text{C} + 60\,{}^\circ\text{C})/2 = 40\,{}^\circ\text{C}$.
+```
 
 | Aine | $c$ (J/(kg·K)) |
 | --- | --- |

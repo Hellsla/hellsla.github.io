@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 1e3401a595c10da7
+CONTENT-HASH: b0191977996f9433
 
 ## Blocking
 
 ## Polish
-- [Minor] kertaus card: `\textsf{l}` now reads as a letter, not the digit 1, but in the serif maths line it is a plain vertical bar ("3,0 l", "2,0 l") and can still be mistaken for a capital I or a bar at a glance. Acceptable; a project-wide convention.
+- [Minor] Pysähdy (helium) — "$n = m/M$" and "$8{,}0\,\text{g}/4{,}00\,\text{g/mol}$" slashes; house notation is a colon between values.
 
 ## Checked
-- batch delta review (round 2): own captures of the kertaus card ("Kertaa: Boylen laki", correct choice committed, every feedback open) at 390 px (c2-fy3-10-390.png) and 1280 px (c2-fy3-10-1280.png) in the scratchpad. Litre sign, case endings ("$3{,}0\,\textsf{l}$:sta", "$150\,\text{kPa}$:iin"), fraction rows aligned at "=", the colon in $3{,}0 : 2{,}0 = 1{,}5$, and feedbacks inside the card without clipping all read correctly. The sticky "Pohdinta" bar in the 390 px capture is a capture artifact. Figures untouched by the diff, not reopened.
+batch delta review: three new Pysähdy blocks read in Selkeä suomi from the source; layout verified in the Finnish captures of the batch, which share the cut; units in LaTeX.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4
