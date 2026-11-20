@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 129dcdd5c074199d
+CONTENT-HASH: 377023ae1fb31127
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] example stage 7 (Järkevyys) — "10 metriä", "12 metriä", "noin 180 kg:n massan" are plain-text quantities (untouched text) — set as $10\,\text{m}$, $12\,\text{m}$, $180\,\text{kg}$:n.
-- [Minor] sim readout at 390 px — the p = p0 + ρgh chain wraps after "Kokonaispaine" onto its own line; readable, optional.
+- [Minor] Ennusta 3 feedback at 1280 px — "Teoria-osassa" breaks after the hyphen in the narrow column ("Teoria-/osassa"); acceptable, the compound reads fine.
 
 ## Checked
-- delta: sim-390 and sim-1280 (readout now only ρgh and p; ratio and slope lines gone, controls and note below intact, nothing clipped); theory-1280-1 and -2 (three new "Pysähdy ja mieti" cards: formulas $60\,\text{N}$, $2{,}0\,\text{cm}^2$ set correctly, answer closed, layout and spacing consistent with the column, figures still beside their paragraphs); example-390-2 (Tulos stage with $F \approx 1{,}77\,\text{kN}$, aligned chains, thin-space thousands, upright units, nothing clipped).
-- Figures unchanged by the diff.
+- delta: three feedback strings in inquiry.json changed (Teoriatiivistelmä → Teoria-osa), matching the interface name "Teoria".
+- fy3-4-open-ennusta-1280-1 and -2 (Ennusta 3 with Cem's feedback open: "Teoria-osassa näet…" renders correctly, card and spacing intact, nothing clipped; the unchanged formula in the Aino and Bea feedback is not affected).
+- Figures and simulation unchanged by the diff.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
