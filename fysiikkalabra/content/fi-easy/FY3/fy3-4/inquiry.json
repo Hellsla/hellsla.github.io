@@ -115,16 +115,16 @@
       "choices": [
         {
           "text": "Aino: altaassa, koska siinä on enemmän vettä ja vesi painaa enemmän.",
-          "feedback": "Altaan vesi painaa kokonaisuutena enemmän. Paino jakautuu kuitenkin myös tuhat kertaa suuremmalle pohjalle. Paine on voima jaettuna alalla, $p = F/A$. Teoriatiivistelmässä vesipatsaan paino jaetaan sen pohjan alalla. Katso, mitä alalle käy."
+          "feedback": "Altaan vesi painaa kokonaisuutena enemmän. Paino jakautuu kuitenkin myös tuhat kertaa suuremmalle pohjalle. Paine on voima jaettuna alalla, $p = F/A$. Teoria-osassa vesipatsaan paino jaetaan sen pohjan alalla. Katso, mitä alalle käy."
         },
         {
           "text": "Bea: paine on sama, koska jokaisen pohjan kohdan yläpuolella on yhtä korkea vesipatsas.",
           "correct": true,
-          "feedback": "Juuri näin: paine riippuu siitä, kuinka korkea ja kuinka tiheä nestepatsas kohdan yläpuolella on, ei astian leveydestä. Teoriatiivistelmä johtaa tämän vesipatsaan painosta: pinta-ala supistuu pois."
+          "feedback": "Juuri näin: paine riippuu siitä, kuinka korkea ja kuinka tiheä nestepatsas kohdan yläpuolella on, ei astian leveydestä. Teoria-osa johtaa tämän vesipatsaan painosta: pinta-ala supistuu pois."
         },
         {
           "text": "Cem: putkessa, koska kapea putki keskittää veden painon pienelle alalle.",
-          "feedback": "Putken vesi painaa vähemmän, ja se jakautuu pienemmälle alalle. Kun vesi on yhtä korkealla, pienempi paino ja pienempi ala kumoavat toisensa täsmälleen. Teoriatiivistelmässä näet, miksi pinta-ala supistuu pois."
+          "feedback": "Putken vesi painaa vähemmän, ja se jakautuu pienemmälle alalle. Kun vesi on yhtä korkealla, pienempi paino ja pienempi ala kumoavat toisensa täsmälleen. Teoria-osassa näet, miksi pinta-ala supistuu pois."
         }
       ]
     },
