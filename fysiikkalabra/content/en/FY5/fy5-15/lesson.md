@@ -272,7 +272,7 @@ Because the range is so wide, the loudness of a sound is described by the **soun
 </svg>
 
 ```pysahdy
-The intensity of a sound becomes $100$ times greater. By how many decibels does the level increase?
+The intensity of a sound becomes a hundred times greater. By how many decibels does the level increase?
 ---
 A hundredfold increase is two tenfold increases in a row. The level increases by $2 \cdot 10\,\text{dB} = 20\,\text{dB}$.
 ```
