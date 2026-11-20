@@ -205,12 +205,13 @@ jää kuvioinnin päällä (opettaja 15.11.; `merkinnoin/` näyttää lopputulok
 `ci_scope.py` (uusi tiedostolaji), NOTES.md §3. Pilotti FY2 (20 kuvaa) ennen/jälkeen kaikilla kielillä; erikseen
 `fy2-7/district`, `fy2-7/grid`, `fy2-7/storage` (en poikkeaa fi:stä).
 **Osa 1 + FY2-pilotti (#768) hyväksytty: opettaja 2026-11-20 klo 01.4x ("I approve")**, ennen/jälkeen-kuvat docs/audits/img24/.
+**Osa 2 FY1 (#771) hyväksytty: opettaja 2026-11-20 klo 18.0x ("hyväksytty")**, ennen/jälkeen-kuvat docs/audits/img24-fy1/; approve-figures fy1-1…fy1-8 --images tämän perusteella.
 Osat 2–11: FY1, FY3–FY10, FY14 yksi moduuli kerrallaan, oma ketju ja luonnos-PR; kuvat lukuihin kaikilla kielillä,
 `approve-figures`, build, tarkistukset; opettaja katsoo moduulin kerran valmiilta sivulta ennen yhdistämistä.
 Huomiot: FY3 seitsemän kuvaa tunnistetaan kuvauksesta (`~lesson-N`); FY5 `fy5-10/types` "harvennus" → "harventuma" (opettaja 2026-11-19 klo 19.12: harventuma kaikkialla)
 (lähde ja `glossary.json` vanhalla sanalla: kysytty opettajalta, muutetaanko kaikkialla); FY8 suurennettu kuvankäsittelyllä
 (pienentämättömät korvaavat, jos opettaja toimittaa); FY9 11 voimakuviota kuvauksesta (`nimeton-N`); FY14 sivut englanniksi;
-`PAATOS.txt`:n mittasuhde- ja yksityiskohtahuomiot hyväksytty sellaisinaan, ei korjata. Opettaja yhdistää kohdan PR:t.
+`PAATOS.txt`:n mittasuhde- ja yksityiskohtahuomiot hyväksytty sellaisinaan, ei korjata. Koordinaattori yhdistää kohdan PR:t opettajan moduulihyväksynnän jälkeen (opettaja 2026-11-19).
 
 ## 14. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13; juuri ennen vihkoja)
 Siirretään `ahjo.py` ja `lumatutor.py` jaksopohjan lohkoiksi niin, että sivut pysyvät tavulleen samoina kuten Kilparobotiikassa; puuttuvat lohkot yhteiseen kirjastoon. Jaettu: yksin.
