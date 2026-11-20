@@ -38,6 +38,12 @@ Kaikki aine koostuu atomeista, joissa on positiivisesti varattuja protoneja ja n
 ### Johteet ja eristeet
 Aine, jossa varaukset pääsevät liikkumaan, on **johde**. Metalleissa osa elektroneista ei ole sidottu yksittäiseen atomiin, vaan ne liikkuvat vapaasti metalli-ionien välissä. Näitä kutsutaan vapaiksi elektroneiksi. Siksi kupari, alumiini ja muut metallit johtavat hyvin sähköä. Aine, jossa varaukset eivät pääse liikkumaan, on **eriste**: muovi, kumi, lasi ja kuiva puu. Sähköjohdossa on kuparinen johdin, jonka ympärillä on muovinen eristekuori. Eriste estää virtaa kulkemasta sinne, minne sen ei kuulu kulkea.
 
+```pysahdy
+Miksi kuparitanko johtaa sähköä mutta kuiva puutikku ei?
+---
+Kuparissa on vapaita elektroneja, jotka pääsevät liikkumaan metalli-ionien välissä. Puussa varaukset eivät pääse liikkumaan, joten se on eriste.
+```
+
 ### Virtapiiri
 Lamppu palaa vain, kun se on osa suljettua **virtapiiriä**: jännitelähteestä, kuten paristosta, lähtee johdin lamppuun ja lampusta johdin takaisin jännitelähteen toiseen napaan. Kytkin avaa ja sulkee piirin. Kun kytkin avataan, piiriin tulee katko. Kytkentämuutos etenee nopeasti koko virtapiiriin, ja virta lakkaa kulkemasta. Muutos ei kuitenkaan etene äärettömän nopeasti. Virtaa ei synny paristossa eikä se kulu lampussa. Lampun läpi kulkee yhtä suuri virta kuin piirin muissakin kohdissa, ja sama varaus palaa paristoon. Lamppu ei kuluta varausta vaan muuttaa sähköistä energiaa valoksi ja hehkulangan sisäenergiaksi, joka siirtyy lämpönä ympäristöön.
 
@@ -336,6 +342,12 @@ missä $I$ on sähkövirta ($\text{A}$), $Q$ poikkileikkauksen läpi kulkenut va
   <foreignObject x="180" y="279.5" width="240" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Q\ \text{kulkee ajassa}\ t$</div></foreignObject>
 </svg>
 
+```pysahdy
+Johtimen läpi kulkeva virta kaksinkertaistuu. Miten sama ajassa poikkileikkauksen läpi kulkeva varaus muuttuu?
+---
+Varaus kaksinkertaistuu. Kaavan $Q = It$ mukaan se on verrannollinen virtaan, kun aika $t$ pysyy samana.
+```
+
 ### Varaus ja elektronien määrä
 Elektronin varaus on $-e$, missä $e$ on alkeisvaraus, pienin vapaana esiintyvä varaus. Kun $N$ elektronia kulkee poikkileikkauksen läpi, kulkenut varaus on niiden varausten summa:
 ```latex
@@ -376,6 +388,12 @@ missä $U$ on jännite ($\text{V}$), $E$ siirtynyt energia ($\text{J}$) ja $Q$ v
   <path d="M240,288 L255,281 L255,295 Z" fill="#7048e8" stroke-linejoin="round"/>
   <foreignObject x="140" y="303.5" width="320" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$\text{sama varaus palaa paristolle}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Kaksi paristoa, $1{,}5\,\text{V}$ ja $3{,}0\,\text{V}$, siirtävät kumpikin saman varauksen lamppuun. Kumpi siirtää enemmän energiaa ja kuinka monta kertaa enemmän?
+---
+Kaavasta $U = E : Q$ saadaan $E = UQ$. Kun $Q$ on sama, energia on verrannollinen jännitteeseen, joten $3{,}0\,\text{V}$:n paristo siirtää kaksinkertaisen energian.
+```
 
 ### Tyypillisiä arvoja
 Jännitteet ja virrat vaihtelevat arkisissa laitteissa paljon. Taulukon arvot ovat suuruusluokkia.

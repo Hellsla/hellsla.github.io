@@ -455,6 +455,12 @@ In a uniform electric field the same force $\overline{F} = q\overline{E}$ acts o
 ### Electric potential energy
 The electric force is conservative like gravity: the work it does depends only on the initial and final points, not on the path. So a charge in a field has **potential energy** $E_\text{p}$, which depends on its position. When the field does positive work, the potential energy decreases by the same amount. When a charge is moved against the force of the field, the potential energy increases. The zero level of the potential energy is chosen freely, like the zero level of height: often it is the negative plate or an earthed point. Only the changes of the potential energy matter, and they do not depend on the choice of the zero level.
 
+```pysahdy
+Does the choice of the zero level affect how much work the field does when a charge moves from one point to another?
+---
+No. The work is the change in potential energy, and moving the zero level changes both energies by the same amount.
+```
+
 ### Potential: energy per unit charge
 A double charge experiences a double force, so at the same point it has a double potential energy. The ratio $E_\text{p} : q$ therefore does not depend on the charge but describes the point in the field. It is called the **potential** $V$ of the point, and its unit is $1\,\text{J/C} = 1\,\text{V}$. This is the same potential as in the chapter *Kirchhoff's laws and potential in a circuit*: the voltage of a point relative to the chosen zero point. The **potential difference** of two points is the voltage between them.
 
@@ -517,6 +523,12 @@ A positive charge starts moving from rest in the direction of the field, that is
 ### The electronvolt
 When a particle whose charge has the magnitude of the elementary charge $e$ travels through a potential difference $U$, the field does the work $eU$. If only the electric force does work, the kinetic energy of the particle increases by the same amount. The energies of particles are therefore often given in **electronvolts** ($\text{eV}$): one electronvolt is the energy that a charge of the magnitude of the elementary charge gets when it travels through a potential difference of $1\,\text{V}$. When a proton and an electron travel from rest through a potential difference of $200\,\text{V}$, each gets a kinetic energy of $200\,\text{eV}$, although they move in opposite directions. For each, the sum of the kinetic energy and the potential energy stays the same all the way.
 
+```pysahdy
+A particle with a charge of the size of the elementary charge starts from rest and passes through a potential difference of $45\,\text{V}$. How large a kinetic energy does it gain, in electronvolts?
+---
+If only the electric force does work, the kinetic energy is $eU$, that is $45\,\text{eV}$.
+```
+
 <svg data-fig="energia" viewBox="0 0 600 380" role="img" aria-label="Bar chart to scale: energy in electronvolts when a particle starts from rest and travels through the potential difference of 200 volts between the plates. On the left a proton that starts from the positive plate: at the start its potential energy is 200 eV and its kinetic energy zero; at the end at the negative plate the potential energy is zero and the kinetic energy 200 eV. On the right an electron that starts from the negative plate: at the start both energies are zero; at the end at the positive plate the potential energy is minus 200 eV and the kinetic energy 200 eV. For each particle the sum of the energies stays the same. The bars of the potential energy are dark and those of the kinetic energy orange." style="max-width:100%;font-size:24px">
   <line x1="78" y1="306" x2="78" y2="62" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M78,50 L84,63 L72,63 Z" fill="#1f2933" stroke-linejoin="round"/>
@@ -571,6 +583,12 @@ When a charge moves from point $A$ to point $B$, the electric force does the wor
 work done by an electric field :: W_{AB} = q(V_A - V_B) = qU_{AB}
 ```
 where $W_{AB}$ is the work ($\text{J}$) and $U_{AB} = V_A - V_B$ is the potential difference, or voltage, of the points ($\text{V}$). The work equals the decrease of the potential energy $E_{\text{p},A} - E_{\text{p},B}$, and it does not depend on the path. In a uniform field the voltage between the plates is $U = Ed$ (chapter *Uniform electric field*), so the field does the work $qU = qEd$ on a charge travelling from one plate to the other in the direction of the field.
+
+```pysahdy
+A charge of $2.0\,\text{nC}$ moves from a point at potential $90\,\text{V}$ to a point at potential $40\,\text{V}$. How much work does the electric force do?
+---
+The work is $W_{AB} = q(V_A - V_B)$. With the values, $W_{AB} = 2.0 \cdot 10^{-9}\,\text{C} \cdot (90\,\text{V} - 40\,\text{V}) = 1.0 \cdot 10^{-7}\,\text{J}$.
+```
 
 When the negative plate is the zero point, the potential of a uniform field is
 ```latex

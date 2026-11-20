@@ -119,6 +119,12 @@ Jännite on kahden pisteen välinen suure (luku *Virtapiiri, sähkövirta ja jä
   <foreignObject x="396" y="305.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{rinnalle}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Digitaalisen jännitemittarin punainen johto kosketetaan lampun siihen napaan, joka on kauempana pariston plusnavasta. Mitä mittarin lukema on?
+---
+Lukema on negatiivinen, koska punainen johto ei ole plusnavan puoleisessa navassa. Jännitteen suuruus on sama kuin oikein päin.
+```
+
 ### Yleismittari
 Laboratoriossa virtaa ja jännitettä mitataan yleensä **yleismittarilla**. Sama laite mittaa valitsimen asennosta riippuen jännitettä, virtaa ja usein muitakin suureita. Kuvan esimerkkimittarissa musta johto kytketään COM-liittimeen. Punainen johto kytketään liittimeen $\text{V}\ \text{mA}$, kun mitataan jännitettä ja pieniä virtoja. Suuria virtoja mitattaessa se kytketään liittimeen $10\,\text{A}$. Eri yleismittareissa liittimet ja enimmäisvirrat eli suurimmat sallitut virrat voivat olla erilaiset. Tarkista siksi aina oman mittarin merkinnät ja käyttöohje. Valitsimella valitaan sekä suure että **mittausalue**. Mittausalue on suurin arvo, jonka mittari näyttää tällä asennolla. Alueella $20\,\text{V}$ näyttö näyttää enintään $19{,}99\,\text{V}$. Jos jännite on suurempi, näyttöön tulee OL (englanniksi *overload*). Se tarkoittaa, että arvo on yli mittausalueen.
 
@@ -206,6 +212,12 @@ Väärin kytketty mittari muuttaa piiriä paljon. Oletetaan, että virtamittari 
 
 <figure class="unit-photo"><img src="pics/fy6/multimeter-breadboard.webp" alt="Punainen ja musta mittapää kytkentälevyllä. Levyllä on vastus ja punainen LED."><figcaption>Yleismittarin mittapäät kytkentälevyllä. Kun mittapäät ovat piirin kahdessa kohdassa, mittari on kytketty rinnan. Silloin se mittaa näiden kohtien välistä jännitettä.</figcaption></figure>
 
+```pysahdy
+Virtamittari kytketään vahingossa lampun rinnalle. Mitä lampulle tapahtuu? Miksi?
+---
+Lamppu sammuu. Virta kulkee lähes kokonaan pienen resistanssin mittarin kautta lampun ohi. Tätä sanotaan oikosuluksi.
+```
+
 ## Kaava: Yleismittarin virheraja
 
 ### Valmistajan ilmoittama virheraja
@@ -228,6 +240,12 @@ Tässä $\Delta x$ on virheraja ja $x$ on lukema. Kirjain $p$ on valmistajan ilm
 \frac{\Delta x}{x}
 ```
 Se on pelkkä luku, jolla ei ole yksikköä. Se ilmoitetaan yleensä prosentteina.
+
+```pysahdy
+Mittarin alueella $20\,\text{V}$ lukema on $2{,}00\,\text{V}$. Resoluutio on $0{,}01\,\text{V}$ ja virheraja $\pm(0{,}5\,\% + 2\ \text{numeroa})$. Mikä on lukeman virheraja?
+---
+Virheraja on $\Delta x = p x + n r$. Sijoitus: $0{,}005 \cdot 2{,}00\,\text{V} + 2 \cdot 0{,}01\,\text{V}$ $= 0{,}030\,\text{V}$. Tulos on $U = 2{,}00\,\text{V} \pm 0{,}03\,\text{V}$.
+```
 
 ### Miksi pienin sopiva alue
 Tämän mittarin jännitealueilla $p$ ja $n$ ovat samat. Silloin prosenttiosa $p \cdot x$ on sama kaikilla alueilla. Numeroiden osuus $n \cdot r$ sen sijaan pienenee kymmenesosaan, kun siirrytään kymmenen kertaa pienemmälle alueelle. Jos lukema on pieni alueeseen verrattuna, numeroiden osuus on suurin. Esimerkiksi $0{,}02\,\text{A}$:n virta alueella $10\,\text{A}$ on lähes arvaus. Jo kolme viimeisen numeron askelta on nimittäin $0{,}03\,\text{A}$.

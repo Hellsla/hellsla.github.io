@@ -128,6 +128,12 @@ Kenttää tutkitaan pienellä positiivisella **testivarauksella** $q$. Testivara
 
 Sähkökenttä on vektori eli suure, jolla on suuruus ja suunta. Kentän suunta on se suunta, johon kenttä työntää positiivista varausta. Negatiiviseen varaukseen, esimerkiksi elektroniin, kohdistuu voima kenttää vastaan. Kuvassa kohdan $P$ kenttä on sama molemmissa tilanteissa. Voiman suunta riippuu testivarauksen merkistä.
 
+```pysahdy
+Kentän suunta on itään. Mihin suuntaan voima kohdistuu protoniin ja mihin elektroniin?
+---
+Protoniin itään, koska sen varaus on positiivinen. Elektroniin länteen, koska sen varaus on negatiivinen. Kentän suunta on sama kummallekin.
+```
+
 <svg data-fig="test" viewBox="0 0 600 330" role="img" aria-label="Kaksi kaavakuvaa vierekkäin, ei mittakaavassa. Kummassakin kuvassa vasemmalla on suuri positiivinen varaus Q. Sen oikealla puolella on kohta P, johon on tuotu pieni testivaraus. Kohdan P sähkökentän vihreä nuoli E osoittaa kummassakin kuvassa oikealle, poispäin varauksesta Q. Vasemmassa kuvassa testivaraus on positiivinen. Siihen kohdistuvan voiman punainen nuoli F osoittaa samaan suuntaan kuin kenttä. Oikeassa kuvassa testivaraus on negatiivinen. Voiman nuoli osoittaa vastakkaiseen suuntaan, kohti varausta Q." style="max-width:100%;font-size:24px">
   <line x1="300" y1="20" x2="300" y2="310" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <foreignObject x="20" y="19.5" width="260" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{positiivinen } q$</div></foreignObject>
@@ -332,6 +338,12 @@ jännite homogeenisessa sähkökentässä :: E = \frac{U}{d}
 ```
 missä $E$ on sähkökentän voimakkuus ($\text{V/m}$), $U$ levyjen välinen jännite ($\text{V}$) ja $d$ levyjen välinen etäisyys ($\text{m}$). Yksiköt $\text{V/m}$ ja $\text{N/C}$ ovat sama yksikkö, sillä $1\,\text{V/m} = 1\,\tfrac{\text{J}}{\text{C} \cdot \text{m}} = 1\,\tfrac{\text{N} \cdot \text{m}}{\text{C} \cdot \text{m}} = 1\,\text{N/C}$. Esimerkiksi jännite $2{,}0\,\text{kV}$ levyjen välillä $4{,}0\,\text{cm}$ antaa kentän $2000\,\text{V} : 0{,}040\,\text{m} = 5{,}0 \cdot 10^{4}\,\text{V/m}$.
 
+```pysahdy
+Levyjen välinen jännite on $600\,\text{V}$ ja etäisyys $3{,}0\,\text{cm}$. Kuinka voimakas kenttä levyjen välissä on?
+---
+Kentän voimakkuus on $E = U : d$. Kun $d = 0{,}030\,\text{m}$, $E = 600\,\text{V} : 0{,}030\,\text{m} = 2{,}0 \cdot 10^{4}\,\text{V/m}$.
+```
+
 <svg data-fig="work" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva, ei mittakaavassa: jännitelähde U on kytketty johtimilla kahteen vaakasuoraan levyyn. Plusnapa on ylemmässä ja miinusnapa alemmassa levyssä. Levyjen etäisyys on d. Levyjen välissä vihreät kenttäviivat osoittavat alas. Positiivinen varaus q lähtee ylemmän levyn luota ja kulkee katkoviivaa pitkin alemmalle levylle. Siihen kohdistuu koko matkan sama punainen voima F, joka on q kertaa E ja osoittaa alas. Kun varaus kulkee matkan d, kenttä tekee työn F kertaa d. Se on yhtä suuri kuin q kertaa U." style="max-width:100%;font-size:24px">
   <line x1="232" y1="96" x2="232" y2="234" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
   <path d="M232,244 L227,233 L237,233 Z" fill="#2b8a3e" stroke-linejoin="round"/>
@@ -457,6 +469,12 @@ Yhtälö pätee vain homogeenisessa kentässä eli levyjen välissä, kun levyt 
 
 ### Varattu hiukkanen homogeenisessa kentässä
 Homogeenisessa kentässä varattuun hiukkaseen kohdistuu vakiovoima $F = qE$. Newtonin toisen lain mukaan sen kiihtyvyys $a = qE : m$ on silloin vakio tyhjiössä, kun muut voimat ovat pieniä. Levossa oleva hiukkanen kiihtyy tasaisesti kentän suuntaisesti. Positiivinen hiukkanen kiihtyy kentän suuntaan ja negatiivinen kenttää vastaan. Hiukkanen voi tulla levyjen väliin sivulta. Silloin sen rata kaartuu kohti toista levyä samaan tapaan kuin vaakasuoraan heitetyn pallon rata kaartuu alaspäin. Elektroniin kohdistuu kentässä $5{,}0 \cdot 10^{4}\,\text{V/m}$ voima $8{,}0 \cdot 10^{-15}\,\text{N}$. Elektronin paino on vain $8{,}9 \cdot 10^{-30}\,\text{N}$. Elektronin painovoima voidaan siksi jättää huomiotta. Raskaammille kappaleille, kuten öljypisaroille ja pölyhiukkasille, painovoima voi olla yhtä tärkeä kuin sähköinen voima.
+
+```pysahdy
+Hiukkasen varaus kaksinkertaistuu, mutta massa ja kenttä pysyvät samoina. Miten kiihtyvyys muuttuu?
+---
+Se kaksinkertaistuu. Kiihtyvyys $a = qE : m$ on suoraan verrannollinen varaukseen $q$.
+```
 
 <svg data-fig="electron" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva, ei mittakaavassa: kaksi vaakasuoraa levyä, ylempi positiivinen ja alempi negatiivinen. Vihreät kenttäviivat osoittavat alas. Elektroni tulee vasemmalta levyjen väliin vaakasuorassa, ja sen sininen nopeusnuoli v osoittaa oikealle. Levyjen välissä elektronin rata kaartuu tasaisesti ylöspäin kohti positiivista levyä. Radan kohdassa on punainen voimanuoli F ja oranssi kiihtyvyysnuoli a. Molemmat osoittavat ylös, kenttää vastaan." style="max-width:100%;font-size:24px">
   <line x1="176" y1="102" x2="176" y2="240" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>

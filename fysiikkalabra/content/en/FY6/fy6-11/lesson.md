@@ -128,6 +128,12 @@ The field is studied with a small positive **test charge** $q$, so small that it
 
 The electric field is a vector. Its direction is the direction in which the field pushes a positive charge. A force against the field acts on a negative charge, for example an electron. In the picture the field at the point $P$ is the same in both situations, but the direction of the force depends on the sign of the test charge.
 
+```pysahdy
+The field points east. In which direction does the force act on a proton and in which on an electron?
+---
+On the proton east, because its charge is positive, and on the electron west, because its charge is negative. The direction of the field is the same for both.
+```
+
 <svg data-fig="test" viewBox="0 0 600 330" role="img" aria-label="Two diagrams side by side, not to scale. In each, on the left there is a large positive charge Q and to the right of it a point P where a small test charge has been brought. The green arrow E of the electric field at P points to the right in both pictures, away from the charge Q. In the left picture the test charge is positive, and the red arrow F of the force on it points in the same direction as the field. In the right picture the test charge is negative, and the force arrow points in the opposite direction, towards the charge Q." style="max-width:100%;font-size:24px">
   <line x1="300" y1="20" x2="300" y2="310" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <foreignObject x="20" y="19.5" width="260" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{positive } q$</div></foreignObject>
@@ -332,6 +338,12 @@ voltage in a uniform electric field :: E = \frac{U}{d}
 ```
 where $E$ is the electric field strength ($\text{V/m}$), $U$ the voltage between the plates ($\text{V}$) and $d$ the distance between the plates ($\text{m}$). The units $\text{V/m}$ and $\text{N/C}$ are the same unit, because $1\,\text{V/m} = 1\,\tfrac{\text{J}}{\text{C} \cdot \text{m}} = 1\,\tfrac{\text{N} \cdot \text{m}}{\text{C} \cdot \text{m}} = 1\,\text{N/C}$. For example, a voltage of $2.0\,\text{kV}$ across a plate distance of $4.0\,\text{cm}$ gives the field $2000\,\text{V} : 0.040\,\text{m} = 5.0 \cdot 10^{4}\,\text{V/m}$.
 
+```pysahdy
+The voltage between the plates is $600\,\text{V}$ and the distance is $3.0\,\text{cm}$. How strong is the field between the plates?
+---
+The field strength is $E = U : d$. With $d = 0.030\,\text{m}$, $E = 600\,\text{V} : 0.030\,\text{m} = 2.0 \cdot 10^{4}\,\text{V/m}$.
+```
+
 <svg data-fig="work" viewBox="0 0 600 340" role="img" aria-label="Diagram, not to scale: a voltage source U is connected with wires to two horizontal plates, the positive terminal to the upper one and the negative terminal to the lower one. The distance of the plates is d. Between the plates green field lines point down. A positive charge q starts near the upper plate and moves along a dashed line to the lower plate. The same red force F acts on it the whole way, equal to q times E and pointing down. When the charge travels the distance d, the field does the work F times d, which is equal to q times U." style="max-width:100%;font-size:24px">
   <line x1="232" y1="96" x2="232" y2="234" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
   <path d="M232,244 L227,233 L237,233 Z" fill="#2b8a3e" stroke-linejoin="round"/>
@@ -457,6 +469,12 @@ The equation holds only in a uniform field, that is, between the plates when the
 
 ### A charged particle in a uniform field
 In a uniform field a constant force $F = qE$ acts on a charged particle, so by Newton's second law its acceleration $a = qE : m$ is constant in vacuum when other forces are small. A particle at rest accelerates uniformly along the field, a positive one in the direction of the field and a negative one against the field. If the particle enters between the plates from the side, its path curves towards one plate in the same way as the path of a ball thrown horizontally curves downwards. In a field of $5.0 \cdot 10^{4}\,\text{V/m}$ a force of $8.0 \cdot 10^{-15}\,\text{N}$ acts on an electron, but its weight is only $8.9 \cdot 10^{-30}\,\text{N}$. The weight of an electron can therefore be ignored. For heavier bodies, such as oil droplets and dust particles, gravity can be as important as the electric force.
+
+```pysahdy
+The charge of a particle doubles, but its mass and the field stay the same. How does the acceleration change?
+---
+It doubles, because $a = qE : m$ is directly proportional to the charge $q$.
+```
 
 <svg data-fig="electron" viewBox="0 0 600 340" role="img" aria-label="Diagram, not to scale: two horizontal plates, the upper one positive and the lower one negative; green field lines point down. An electron comes between the plates from the left horizontally, and its blue velocity arrow v points to the right. Between the plates the path of the electron curves evenly upwards towards the positive plate. At a point on the path there are a red force arrow F and an orange acceleration arrow a, both pointing up, against the field." style="max-width:100%;font-size:24px">
   <line x1="176" y1="102" x2="176" y2="240" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>

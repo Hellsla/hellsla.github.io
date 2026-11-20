@@ -56,6 +56,12 @@ Q = n e
 ```
 Tässä $Q$ on kappaleen varauksen suuruus ($\text{C}$). Luku $n$ on ylimääräisten tai puuttuvien elektronien lukumäärä. Vakio $e = 1{,}602 \cdot 10^{-19}\,\text{C}$ on alkeisvaraus. Coulombi on suuri varaus, sillä siihen tarvitaan $6{,}24 \cdot 10^{18}$ alkeisvarausta. Hankauksen jälkeen ilmapallon varaus on tyypillisesti kymmeniä nanocoulombeja. Esimerkiksi varaus $-50\,\text{nC}$ tarkoittaa noin $3{,}1 \cdot 10^{11}$ ylimääräistä elektronia.
 
+```pysahdy
+Voiko kappaleen varaus olla $0{,}5e$ eli puolet alkeisvarauksesta?
+---
+Ei voi. Varaus on aina kokonaisluku kertaa alkeisvaraus, $Q = ne$. Elektroneja siirtyy vain kokonaisia.
+```
+
 ### Varauksen säilyminen
 Varausta ei synny eikä häviä. Eristetyn systeemin kokonaisvaraus pysyy samana, vaikka varausta siirtyy kappaleesta toiseen. Kokonaisvaraus on kaikkien varausten summa. Tämä on **varauksen säilymislaki**. Kun ilmapalloa hierotaan villaan, osa villan elektroneista siirtyy ilmapallon pintaan. Ilmapallo saa negatiivisen varauksen. Villalle jää yhtä suuri positiivinen varaus, koska siltä puuttuu yhtä monta elektronia. Kiinteissä aineissa siirtyvät elektronit. Protonit pysyvät atomien ytimissä.
 
@@ -389,6 +395,12 @@ Coulombin voiman suuruus :: F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}
 ```
 Tässä $F$ on voiman suuruus ($\text{N}$), $q_1$ ja $q_2$ ovat varaukset ($\text{C}$) ja $r$ on varausten välinen etäisyys ($\text{m}$). Vakio $$k = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$$ on Coulombin lain vakio. Coulombin laki pätee täsmällisesti eli tarkasti pistevarauksille. Ajatellaan palloa, jonka varaus on jakautunut pallosymmetrisesti eli tasaisesti joka suuntaan. Sen ulkopuolella kenttä on sama kuin pistevarauksen kenttä, joka on sijoitettu pallon keskipisteeseen. Siksi tällaisten pallojen etäisyys mitataan keskipisteiden välillä. Varatut johtavat pallot voivat olla lähellä toisiaan. Silloin varaukset niiden pinnalla voivat siirtyä eli jakautua uudella tavalla. Silloin malli, jossa pistevaraukset ovat keskipisteissä, ei ole enää tarkka. Vakion arvo pätee tyhjiössä. Ilmassa voima on lähes sama.
 
+```pysahdy
+Kaksi pistevarausta, kumpikin $1{,}0\,\mu\text{C}$, on $0{,}30\,\text{m}$:n päässä toisistaan. Kuinka suuri sähköinen voima niiden välillä on?
+---
+Voima on $F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}$. Lukuarvoilla $F = 8{,}988 \cdot 10^{9} \cdot \frac{(1{,}0 \cdot 10^{-6})^2}{0{,}30^2}\,\text{N}$ $\approx 0{,}10\,\text{N}$.
+```
+
 ### Voima ja vastavoima
 Coulombin laki antaa voiman suuruuden. Voiman suunta päätellään varausten merkeistä. Voimat ovat varausten välisellä suoralla. Samanmerkkiset varaukset hylkivät toisiaan, ja erimerkkiset varaukset vetävät toisiaan puoleensa. Varaus $q_1$ vaikuttaa varaukseen $q_2$ voimalla $\overline{F}_{12}$. Varaus $q_2$ vaikuttaa varaukseen $q_1$ voimalla $\overline{F}_{21}$. Ne ovat voima ja vastavoima, $\overline{F}_{12} = -\overline{F}_{21}$ (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*). Ne ovat yhtä suuret ja vastakkaissuuntaiset myös silloin, kun varaukset ovat eri suuret. Lain kaavassa varaukset esiintyvät symmetrisesti. Siksi sama $F$ vaikuttaa kumpaankin varaukseen.
 
@@ -486,6 +498,12 @@ Kun varaukseen vaikuttaa useampi muu varaus, jokaisen varauksen voima lasketaan 
 \overline{F} = \overline{F}_1 + \overline{F}_2
 ```
 Tässä $\overline{F}$ on kokonaisvoima ($\text{N}$). Voimat $\overline{F}_1$ ja $\overline{F}_2$ ovat kahden muun varauksen siihen kohdistamat voimat ($\text{N}$). Kun kaikki varaukset ovat samalla suoralla, samansuuntaiset voimat lasketaan yhteen. Vastakkaissuuntaiset voimat vähennetään toisistaan.
+
+```pysahdy
+Kolme varausta on samalla suoralla. Keskimmäiseen varaukseen vaikuttavat kaksi yhtä suurta samanmerkkistä varausta, kumpikin yhtä kaukana. Mikä on kokonaisvoima?
+---
+Nolla. Voimat ovat yhtä suuret ja vastakkaiset, joten ne kumoavat toisensa: $\overline{F} = \overline{0}$.
+```
 
 ## Esimerkki
 Kaksi pientä metallipalloa on eristetangoilla. Pallojen keskipisteiden etäisyys on $6{,}0\,\text{cm}$. Toisen pallon varaus on $+12\,\text{nC}$ ja toisen pallon varaus on $-8{,}0\,\text{nC}$. Kuinka suuri on pallojen välinen sähköinen voima? Vetävätkö pallot toisiaan puoleensa vai hylkivätkö ne toisiaan?

@@ -106,6 +106,12 @@ A component made to have a certain resistance is called a **resistor**. Its circ
   <foreignObject x="90" y="309.5" width="420" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$I = \text{current},\ U = \text{voltage},\ R = \text{resistance}$</div></foreignObject>
 </svg>
 
+```pysahdy
+The same voltage is across two components, but the current through one is larger than through the other. Which has the greater resistance?
+---
+The one with the smaller current. With the same $U$, $R = U : I$ is greater the smaller $I$ is.
+```
+
 ### Where resistance comes from
 In a metal, the positive ions form a regular lattice, and the free electrons move among them. When there is a voltage between the ends of a conductor, the electrons drift along the conductor, but they keep colliding with the vibrating ions. The collisions slow the electrons down: this is the cause of resistance. In the collisions electrical energy is changed into internal energy of the conductor, so the conductor warms up. In a long conductor an electron collides more often on its way, so the resistance is greater. In a thick conductor more electrons travel side by side, so the resistance is smaller. When a metal gets hot, the ions vibrate more strongly and there are more collisions. This is why the resistance of a metal conductor increases as the temperature rises.
 
@@ -284,6 +290,12 @@ voltage drop in a conductor :: U = R I
 ```
 When the voltage doubles, the current doubles too. Ohm's law is not a general law of nature but a property of many conducting materials: it holds for metals and resistors at a constant temperature, but not, for example, for a filament lamp, whose wire heats up, nor for a diode.
 
+```pysahdy
+The voltage across a metal conductor rises from $2.0\,\text{V}$ to $6.0\,\text{V}$ and the temperature stays the same. How do the current and the resistance change?
+---
+The voltage triples, so by Ohm's law the current triples too. The resistance $R = U : I$ stays the same.
+```
+
 ### Characteristic curve
 The **characteristic curve** of a component is a graph that shows how the voltage across the component and the current through it depend on each other. When the current $I$ is on the horizontal axis and the voltage $U$ on the vertical axis, the characteristic curve of a resistor that obeys Ohm's law is a straight line through the origin, and the slope of the line is the resistance $R$. The characteristic curve of a filament lamp is curved. The tungsten wire of the lamp gets hotter the greater the current through it, and the resistance of a hot wire is greater. At every point of the curve, however, the resistance is the ratio $U : I$, that is, the slope of the straight line drawn from the origin to the point, not the steepness of the curve at that point.
 
@@ -403,6 +415,12 @@ Resistivity is a property of a material: it tells how poorly the material conduc
 | nichrome | $1.1 \cdot 10^{-6}$ |
 
 The resistivity of copper is small, so thick copper conductors let current flow with almost no voltage drop. The wire of a toaster is nichrome, whose resistivity is more than 60 times that of copper, and the wire is also thin. So its resistance is large, and it is the wire that gets hot.
+
+```pysahdy
+A wire is replaced by one of the same material whose length and cross-sectional area are both doubled. How does the resistance change?
+---
+It does not change. In $R = \rho \tfrac{l}{A}$ both $l$ and $A$ double, so the ratio $\tfrac{l}{A}$ stays the same.
+```
 
 ## Worked example
 A resistor with a resistance of $12\,\Omega$ is to be made from constantan wire with a cross-sectional area of $0.20\,\text{mm}^2$. How long a wire is needed? The resistivity of constantan is $5.0 \cdot 10^{-7}\,\Omega\cdot\text{m}$.

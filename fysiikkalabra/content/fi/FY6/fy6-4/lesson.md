@@ -134,6 +134,12 @@ Sarjaankytkennässä vastukset ovat peräkkäin, ja varauksilla on vain yksi kul
 
 Jos sarjaan kytketty komponentti katkeaa, esimerkiksi lampun hehkulanka palaa poikki, ainoa kulkureitti aukeaa ja virta lakkaa kulkemasta koko piirissä. Siksi vanhanmallisen jouluvalosarjan kaikki lamput sammuvat, kun yksi niistä rikkoutuu.
 
+```pysahdy
+Sarjaankytketyistä vastuksista toisen läpi kulkee $0{,}20\,\text{A}$. Kuinka suuri virta kulkee toisen läpi ja miksi?
+---
+Yhtä suuri, $0{,}20\,\text{A}$. Kulkureittejä on vain yksi, eikä varausta katoa tai kasaannu mihinkään.
+```
+
 ### Rinnankytkentä
 Rinnankytkennässä vastukset ovat eri haaroissa samojen kahden haarautumispisteen välissä. Kummankin haaran päät on yhdistetty johtimilla pariston napoihin, joten kummankin vastuksen yli on sama jännite $U$. Haarautumispisteessä virta jakautuu, ja toisessa haarautumispisteessä haaravirrat yhdistyvät taas: paristosta lähtevä virta on haaravirtojen summa, $I = I_1 + I_2$. Ohmin lain mukaan haaravirta on $I_1 = U : R_1$, joten pienemmän resistanssin haarassa kulkee suurempi virta.
 
@@ -174,6 +180,12 @@ Uusi rinnakkainen haara ei muuta muiden haarojen virtoja, koska niiden jännite 
 
 ### Kokonaisresistanssi
 Vastusten kytkentä voidaan korvata yhdellä vastuksella, josta paristo antaa saman virran. Tämän vastuksen resistanssi on kytkennän kokonaisresistanssi $R$: sille pätee $U = RI$, missä $I$ on paristosta lähtevä virta. Sarjaankytkennässä varaukset kulkevat jokaisen vastuksen läpi, joten kokonaisresistanssi on suurempi kuin yksikään vastuksista. Rinnankytkennässä jokainen haara on uusi kulkureitti, joten kokonaisresistanssi on pienempi kuin pienin haarojen resistansseista.
+
+```pysahdy
+Vastukset $10\,\Omega$ ja $1000\,\Omega$ kytketään rinnan. Onko kokonaisresistanssi suurempi vai pienempi kuin $10\,\Omega$?
+---
+Pienempi, koska jokainen haara on uusi kulkureitti. Rinnankytkennän kokonaisresistanssi on aina pienempi kuin pienin haarojen resistansseista.
+```
 
 ## Kaava: Vastusten kokonaisresistanssi
 Sarjaankytkennässä jännitteet summautuvat, $U = U_1 + U_2$, ja jokaisessa vastuksessa kulkee sama virta $I$. Kun jännitteet kirjoitetaan Ohmin lain avulla, saadaan $RI = R_1 I + R_2 I$, ja virta $I$ supistuu pois. Sarjaan kytkettyjen vastusten kokonaisresistanssi on siis
@@ -241,6 +253,12 @@ Kuvaajassa vastus $R_1 = 100\,\Omega$ pysyy samana ja $R_2$ muuttuu. Sarjaankytk
   <foreignObject x="490" y="233" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$\text{rinnan}$</div></foreignObject>
   <foreignObject x="406" y="207" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$R_1$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Vastukset $12\,\Omega$ ja $4{,}0\,\Omega$ kytketään rinnan. Kuinka suuri on kokonaisresistanssi?
+---
+Kaavan $R = \tfrac{R_1 R_2}{R_1 + R_2}$ mukaan $R = \tfrac{12\,\Omega \cdot 4{,}0\,\Omega}{16\,\Omega} = 3{,}0\,\Omega$. Tulos on pienempi kuin $4{,}0\,\Omega$, kuten pitääkin.
+```
 
 ### Sekakytkentä
 Monessa piirissä on sekä sarjaan että rinnan kytkettyjä vastuksia. Ratkaisu etenee vaiheittain, sisältä ulospäin:

@@ -119,6 +119,12 @@ Voltage is a quantity between two points (chapter *Circuit, electric current and
   <foreignObject x="383.5" y="305.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{in parallel}$</div></foreignObject>
 </svg>
 
+```pysahdy
+The red lead of a digital voltmeter touches the terminal of a lamp that is farther from the plus terminal of the battery. What is the reading?
+---
+The reading is negative, because the red lead is not on the terminal nearer the plus terminal. Its magnitude is the same as with the leads the right way round.
+```
+
 ### The multimeter
 In a laboratory, current and voltage are usually measured with a **multimeter**: the same device measures, depending on the position of the selector, voltage, current and often other quantities too. In the example meter of the figure, the black lead is connected to the COM jack. The red lead is connected to the jack $\text{V}\ \text{mA}$ when measuring voltage and small currents and in the jack $10\,\text{A}$ when measuring large currents. The jacks and maximum currents of different multimeters can differ, so always check the markings and the manual of the meter you use. The selector chooses both the quantity and the **measuring range**, which is the largest value that the meter shows in this position. On the range $20\,\text{V}$ the display shows at most $19.99\,\text{V}$; at a larger voltage the display shows OL (*overload*), which means that the value is over the measuring range.
 
@@ -206,6 +212,12 @@ A wrongly connected meter changes the circuit a lot. If an ammeter is connected 
 
 <figure class="unit-photo"><img src="pics/fy6/multimeter-breadboard.webp" alt="A red and a black probe touch a breadboard holding a resistor and a red LED."><figcaption>Multimeter probes on a breadboard. When the probes are placed at two points of a circuit, the meter is connected in parallel with the part between them and measures its voltage.</figcaption></figure>
 
+```pysahdy
+An ammeter is connected across a lamp by mistake. What happens to the lamp, and why?
+---
+The lamp goes out, because almost all the current goes through the low-resistance meter and bypasses the lamp. This is a short circuit.
+```
+
 ## Formula: Error limit of a multimeter
 
 ### The error limit given by the manufacturer
@@ -228,6 +240,12 @@ where $\Delta x$ is the error limit, $x$ the reading, $p$ the percentage given b
 \frac{\Delta x}{x}
 ```
 which is a pure number and is usually given as a percentage.
+
+```pysahdy
+On the $20\,\text{V}$ range the reading is $2.00\,\text{V}$. The resolution is $0.01\,\text{V}$ and the error limit is $\pm(0.5\,\% + 2\ \text{digits})$. What is the error limit of the reading?
+---
+The error limit is $\Delta x = p x + n r$. Substituting: $0.005 \cdot 2.00\,\text{V} + 2 \cdot 0.01\,\text{V}$ $= 0.030\,\text{V}$. The result is $U = 2.00\,\text{V} \pm 0.03\,\text{V}$.
+```
 
 ### Why the smallest suitable range
 If the ranges have the same $p$ and the same $n$, as this meter's voltage ranges do, the percentage part $p \cdot x$ is the same on all of them, but the share of the digits $n \cdot r$ decreases to a tenth when we move to a range ten times smaller. When the reading is small compared with the range, the share of the digits dominates: a current of $0.02\,\text{A}$ on the range $10\,\text{A}$ is almost a guess, because three steps of the last digit are already $0.03\,\text{A}$.

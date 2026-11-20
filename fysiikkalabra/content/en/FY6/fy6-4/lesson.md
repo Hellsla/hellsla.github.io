@@ -134,6 +134,12 @@ In a series connection the resistors are one after the other, and the charges ha
 
 If a component connected in series breaks, for example the filament of a lamp burns through, the only route is opened and the current stops in the whole circuit. This is why all the bulbs of an old-style string of fairy lights go out when one of them breaks.
 
+```pysahdy
+The current through one of two resistors in series is $0.20\,\text{A}$. How large is the current through the other, and why?
+---
+The same, $0.20\,\text{A}$. There is only one path, and no charge disappears or piles up anywhere.
+```
+
 ### Parallel connection
 In a parallel connection the resistors are in separate branches between the same two branching points. The ends of both branches are joined by wires to the terminals of the battery, so the same voltage $U$ is across both resistors. At a branching point the current divides, and at the second branching point the branch currents join again: the current leaving the battery is the sum of the branch currents, $I = I_1 + I_2$. By Ohm's law the branch current is $I_1 = U : R_1$, so a larger current passes through the branch with the smaller resistance.
 
@@ -174,6 +180,12 @@ A new parallel branch does not change the currents of the other branches, becaus
 
 ### Total resistance
 A connection of resistors can be replaced with a single resistor from which the battery gives the same current. The resistance of this resistor is the total resistance $R$ of the connection: $U = RI$ holds for it, where $I$ is the current leaving the battery. In a series connection the charges pass through every resistor, so the total resistance is greater than any of the resistors. In a parallel connection each branch is a new route, so the total resistance is smaller than the smallest of the branch resistances.
+
+```pysahdy
+Resistors of $10\,\Omega$ and $1000\,\Omega$ are connected in parallel. Is the total resistance greater or smaller than $10\,\Omega$?
+---
+Smaller, because every branch is a new path. The total resistance of a parallel connection is always smaller than the smallest branch resistance.
+```
 
 ## Formula: Total resistance of resistors
 In a series connection the voltages add up, $U = U_1 + U_2$, and the same current $I$ passes through every resistor. When the voltages are written using Ohm's law, we get $RI = R_1 I + R_2 I$, and the current $I$ cancels. So the total resistance of resistors connected in series is
@@ -241,6 +253,12 @@ In the graph the resistor $R_1 = 100\,\Omega$ stays the same and $R_2$ changes. 
   <foreignObject x="490" y="233" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$\text{parallel}$</div></foreignObject>
   <foreignObject x="406" y="207" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$R_1$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Resistors of $12\,\Omega$ and $4.0\,\Omega$ are connected in parallel. What is the total resistance?
+---
+By $R = \tfrac{R_1 R_2}{R_1 + R_2}$, $R = \tfrac{12\,\Omega \cdot 4.0\,\Omega}{16\,\Omega} = 3.0\,\Omega$. This is smaller than $4.0\,\Omega$, as it should be.
+```
 
 ### Mixed connection
 Many circuits have both resistors in series and resistors in parallel. The solution goes step by step, from the inside out:

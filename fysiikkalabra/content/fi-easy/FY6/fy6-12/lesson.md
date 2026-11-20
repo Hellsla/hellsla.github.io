@@ -455,6 +455,12 @@ Homogeenisessa sähkökentässä varattuun hiukkaseen vaikuttaa kaikkialla levyj
 ### Sähköinen potentiaalienergia
 Sähköinen voima on konservatiivinen kuten painovoima. Se tarkoittaa, että voiman tekemä työ riippuu vain alkukohdasta ja loppukohdasta, ei reitistä. Siksi varauksella on kentässä **potentiaalienergiaa** $E_\text{p}$, joka riippuu varauksen paikasta. Kun kenttä tekee positiivista työtä, potentiaalienergia pienenee saman verran. Kun varausta siirretään kentän voimaa vastaan, potentiaalienergia kasvaa. Potentiaalienergian nollatason saa valita vapaasti, kuten korkeuden nollatason. Usein nollataso on negatiivinen levy tai maadoitettu kohta. Tärkeitä ovat vain potentiaalienergian muutokset, eivätkä ne riipu nollatason valinnasta.
 
+```pysahdy
+Vaikuttaako nollatason valinta siihen, kuinka paljon työtä kenttä tekee, kun varaus siirtyy kohdasta toiseen?
+---
+Ei vaikuta. Työ on potentiaalienergian muutos. Nollatason siirto muuttaa molempia energioita yhtä paljon.
+```
+
 ### Potentiaali: energia varausyksikköä kohti
 Kaksinkertaiseen varaukseen vaikuttaa kaksinkertainen voima, joten samassa kohdassa sillä on kaksinkertainen potentiaalienergia. Suhde $E_\text{p} : q$ ei siis riipu varauksesta. Se kuvaa kentän kohtaa. Tätä suhdetta sanotaan kohdan **potentiaaliksi** $V$, ja sen yksikkö on $1\,\text{J/C} = 1\,\text{V}$. Tämä on sama potentiaali kuin luvussa *Kirchhoffin lait ja potentiaali virtapiirissä*: kohdan jännite valittuun nollakohtaan nähden. Kahden kohdan **potentiaaliero** on niiden välinen jännite.
 
@@ -517,6 +523,12 @@ Positiivinen varaus lähtee levosta liikkeelle kentän suuntaan eli kohti pienem
 ### Elektronivoltti
 Hiukkasen varauksen suuruus on alkeisvaraus $e$. Kun hiukkanen kulkee potentiaalieron $U$ läpi, kenttä tekee työn $eU$. Jos vain sähköinen voima tekee työtä, hiukkasen liike-energia kasvaa saman verran. Hiukkasten energiat ilmoitetaan siksi usein **elektronivoltteina** ($\text{eV}$). Yksi elektronivoltti on energia, jonka alkeisvarauksen suuruinen varaus saa, kun se kulkee $1\,\text{V}$:n potentiaalieron läpi. Protoni ja elektroni kulkevat levosta $200\,\text{V}$:n potentiaalieron läpi. Kumpikin saa liike-energiaa $200\,\text{eV}$, vaikka ne liikkuvat vastakkaisiin suuntiin. Kummallakin liike-energian ja potentiaalienergian summa pysyy samana koko matkan.
 
+```pysahdy
+Alkeisvarauksen suuruinen varaus lähtee levosta ja kulkee $45\,\text{V}$:n potentiaalieron läpi. Kuinka suuri liike-energia sillä on elektronivoltteina?
+---
+Jos vain sähköinen voima tekee työtä, liike-energia on $eU$ eli $45\,\text{eV}$.
+```
+
 <svg data-fig="energia" viewBox="0 0 600 380" role="img" aria-label="Pylväskuvaaja mittakaavassa: energia elektronivoltteina, kun hiukkanen lähtee levosta ja kulkee levyjen välisen 200 voltin potentiaalieron läpi. Vasemmalla on protoni, joka lähtee positiiviselta levyltä. Alussa sen potentiaalienergia on 200 eV ja liike-energia nolla. Lopussa negatiivisella levyllä potentiaalienergia on nolla ja liike-energia 200 eV. Oikealla on elektroni, joka lähtee negatiiviselta levyltä. Alussa kumpikin energia on nolla. Lopussa positiivisella levyllä potentiaalienergia on miinus 200 eV ja liike-energia 200 eV. Kummallakin hiukkasella energioiden summa pysyy samana. Potentiaalienergian pylväät ovat tummia ja liike-energian pylväät oransseja." style="max-width:100%;font-size:24px">
   <line x1="78" y1="306" x2="78" y2="62" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M78,50 L84,63 L72,63 Z" fill="#1f2933" stroke-linejoin="round"/>
@@ -571,6 +583,12 @@ Kun varaus siirtyy kohdasta $A$ kohtaan $B$, sähköinen voima tekee työn
 sähkökentän tekemä työ :: W_{AB} = q(V_A - V_B) = qU_{AB}
 ```
 Kaavassa $W_{AB}$ on työ ($\text{J}$) ja $U_{AB} = V_A - V_B$ on kohtien potentiaaliero eli jännite ($\text{V}$). Työ on yhtä suuri kuin potentiaalienergian väheneminen $E_{\text{p},A} - E_{\text{p},B}$, eikä se riipu reitistä. Homogeenisessa kentässä levyjen välinen jännite on $U = Ed$ (luku *Homogeeninen sähkökenttä*). Siksi kentän suuntaan levystä toiseen kulkevaan varaukseen kenttä tekee työn $qU = qEd$.
+
+```pysahdy
+Varaus $2{,}0\,\text{nC}$ siirtyy kohdasta, jonka potentiaali on $90\,\text{V}$, kohtaan, jonka potentiaali on $40\,\text{V}$. Kuinka suuren työn sähköinen voima tekee?
+---
+Työ on $W_{AB} = q(V_A - V_B)$. Lukuarvoilla $W_{AB} = 2{,}0 \cdot 10^{-9}\,\text{C} \cdot (90\,\text{V} - 40\,\text{V}) = 1{,}0 \cdot 10^{-7}\,\text{J}$.
+```
 
 Kun negatiivinen levy on nollakohta, homogeenisen kentän potentiaali on
 ```latex
