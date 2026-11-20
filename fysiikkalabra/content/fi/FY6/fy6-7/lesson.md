@@ -165,10 +165,22 @@ Siksi suuri teho ei yksin tarkoita suurta kulutusta. Vedenkeitin, jonka teho on 
   <foreignObject x="152.5" y="256" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$E = 0{,}20\,\text{kWh}$</span></div></foreignObject>
 </svg>
 
+```pysahdy
+Lamppu, jonka teho on $0{,}060\,\text{kW}$, palaa $5{,}0\,\text{h}$. Kuinka paljon sähköenergiaa lamppu käyttää?
+---
+Energia on $E = Pt$. Siis $E = 0{,}060\,\text{kW} \cdot 5{,}0\,\text{h} = 0{,}30\,\text{kWh}$.
+```
+
 <figure class="unit-photo"><img src="pics/fy6/electricity-meter.webp" alt="Musta Siemensin sähkömittari seinällä: ylhäällä numerorulla, jonka viimeinen numero on punaisessa ruudussa, ja sen vieressä yksikkö kWh, alla vaakasuora pyörivä levy."><figcaption>Vanha sähkömittari laskee kodin käyttämää sähköenergiaa kilowattitunteina. Numerorulla kertoo lukeman, ja sen alla oleva levy pyörii sitä nopeammin, mitä suurempi teho kodissa on käytössä.</figcaption></figure>
 
 ### Kilowattitunti on energian yksikkö
 Energian SI-yksikkö on joule, mutta kodin sähköenergia mitataan ja laskutetaan **kilowattitunteina**. Yksi kilowattitunti on energia, jonka $1\,\text{kW}$:n teholla toimiva laite käyttää tunnissa. Kun teho ilmoitetaan kilowatteina ja aika tunteina, energia saadaan suoraan kilowattitunteina. Nimi kertoo laskutavan: kilowatti kertaa tunti, ei kilowatti tunnissa. Yksi kilowattitunti on $3{,}6$ miljoonaa joulea.
+
+```pysahdy
+Kuinka monta megajoulea on $2{,}0\,\text{kWh}$?
+---
+Yksi kilowattitunti on $3{,}6\,\text{MJ}$. Siis $2{,}0\,\text{kWh} = 2{,}0 \cdot 3{,}6\,\text{MJ} = 7{,}2\,\text{MJ}$.
+```
 
 ### Laitteen virta verkossa
 Kodin pistorasioissa on jännite $230\,\text{V}$. Se on vaihtojännitteen tehollinen arvo. Tässä luvussa tarkastellaan yksinkertaistettuja sähköpiirejä, joissa virta ja jännite ovat samanvaiheiset, kuten lämmittävissä laitteissa, tai tehokerroin oletetaan likimain yhdeksi. Silloin laitteen pätöteho lasketaan samoin kuin tasajännitteellä: $P = UI$. Yleisesti vaihtovirtapiirin pätöteho riippuu myös jännitteen ja virran vaihe-erosta. Laitteen nimellistehosta saadaan siis virta $I = P : U$. Vedenkeitin ottaa virran $2000\,\text{W} : 230\,\text{V} \approx 8{,}7\,\text{A}$, kun taas puhelimen laturi vain murto-osan ampeerista. Suuritehoiset laitteet ottavat suuren virran, ja siksi kodin virtapiirien sulakkeet rajoittavat, kuinka monta tällaista laitetta samassa piirissä voi olla päällä yhtä aikaa (luku *Sähköturvallisuus kotona ja työssä*).
@@ -243,6 +255,12 @@ Koska sähköteho on $P = UI$, energia voidaan laskea myös jännitteestä ja vi
 E = UIt
 ```
 missä $U$ on laitteen jännite (V) ja $I$ sen läpi kulkeva virta (A).
+
+```pysahdy
+Laitteen jännite on $230\,\text{V}$ ja virta $0{,}50\,\text{A}$. Kuinka paljon energiaa se käyttää $2{,}0\,\text{h}$:ssa? Vastaa kilowattitunteina.
+---
+Energia on $E = UIt$. Siis $E = 230\,\text{V} \cdot 0{,}50\,\text{A} \cdot 2{,}0\,\text{h} = 0{,}23\,\text{kWh}$.
+```
 
 Sähkölaskussa maksetaan sekä sähköenergiasta että sen siirrosta sähköverkossa kilowattitunteja kohti, ja lisäksi kuukausittaisia perusmaksuja:
 ```latex

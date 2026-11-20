@@ -115,6 +115,12 @@ Rinnakkaisten haarojen yli on sama jännite (luku *Vastusten sarja- ja rinnankyt
   <foreignObject x="216" y="155.5" width="230" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{haarautumispiste}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Haarautumispisteeseen tulee virta $0{,}80\,\text{A}$, ja toiseen haaraan lähtee $0{,}30\,\text{A}$. Kuinka suuri virta lähtee toiseen haaraan?
+---
+Virtalain mukaan $I_3 = I_1 - I_2$. Siis $I_3 = 0{,}80\,\text{A} - 0{,}30\,\text{A} = 0{,}50\,\text{A}$.
+```
+
 ### Potentiaali: jokaisen kohdan sähköinen taso
 Virtapiirin jokaisella kohdalla on **potentiaali** $V$: kohdan jännite valittuun nollakohtaan nähden. Nollakohdaksi valitaan usein jännitelähteen miinusnapa tai maadoitus, ja sen potentiaali on $0\,\text{V}$. Kahden kohdan välinen jännite on niiden potentiaalien erotus. Potentiaalia voi verrata korkeuteen: korkeus riippuu siitä, mistä se mitataan, mutta kahden kohdan korkeusero ei riipu. Samoin nollakohdan siirtäminen muuttaa kaikkia potentiaaleja yhtä paljon, mutta jännitteet pysyvät ennallaan.
 
@@ -158,6 +164,12 @@ Potentiaali muuttuu vain lähteessä ja vastuksissa. Lähteessä se nousee miinu
   <foreignObject x="72" y="321.5" width="80" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$0\,\text{V}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Kaksi kohtaa on saman paljaan johtimen päissä, eikä niiden välissä ole vastusta. Kuinka suuri on niiden välinen jännite ja miksi?
+---
+Se on likimain nolla. Johtimen resistanssi on häviävän pieni, joten potentiaali ei muutu sen matkalla.
+```
+
 ### Kierros silmukassa: Kirchhoffin jännitelaki
 **Silmukka** on virtapiirin suljettu reitti, joka palaa lähtökohtaansa. Kun silmukka kierretään, potentiaali palaa samaan arvoon, josta lähdettiin. Siksi **potentiaalin nousujen ja laskujen summa silmukassa on nolla**. Tämä on Kirchhoffin jännitelaki. Yhden silmukan piirissä lähteen jännite on yhtä suuri kuin vastusten jännitteiden summa. Energian kannalta jännite kertoo, kuinka paljon energiaa yhtä varausyksikköä kohti muuttuu muodosta toiseen (luku *Virtapiiri, sähkövirta ja jännite*): varaus saa lähteessä energiaa ja luovuttaa saman määrän vastuksissa.
 
@@ -186,6 +198,12 @@ Kirchhoffin jännitelaki silmukalle:
 Kirchhoffin 2. laki :: \sum \Delta V = 0
 ```
 missä $\Delta V$ (V) on potentiaalin muutos silmukan kussakin osassa, kun silmukka kierretään kerran. Lähteessä miinusnavalta plusnavalle $\Delta V = +U$, vastuksessa virran suuntaan $\Delta V = -RI$ ja johtimessa $\Delta V = 0$. Yhden silmukan piirissä, jossa on kaksi vastusta, laki antaa $U - R_1 I - R_2 I = 0$ eli $U = R_1 I + R_2 I$.
+
+```pysahdy
+Yhden silmukan piirissä lähteen jännite on $12\,\text{V}$ ja vastuksen $R_1$ jännite $5{,}0\,\text{V}$. Kuinka suuri on toisen vastuksen $R_2$ jännite?
+---
+Jännitelain mukaan $U_2 = U - U_1$. Siis $U_2 = 12\,\text{V} - 5{,}0\,\text{V} = 7{,}0\,\text{V}$.
+```
 
 **Potentiaalikuvaaja** näyttää potentiaalin silmukan eri kohdissa. Kuvaajassa kierretään pisteillä $A$–$F$ merkityn piirin silmukka miinusnavasta $F$ vastusten $R_1$ ja $R_2$ kautta takaisin pisteeseen $F$. Lähteen nousu $+9{,}0\,\text{V}$ on yhtä suuri kuin vastusten laskujen $-3{,}0\,\text{V}$ ja $-6{,}0\,\text{V}$ yhteismäärä, ja johtimissa kuvaaja on vaakasuora.
 

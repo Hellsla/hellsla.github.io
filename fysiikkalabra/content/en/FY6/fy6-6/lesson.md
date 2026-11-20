@@ -163,10 +163,22 @@ In the resistor in the figure, $0.50\,\text{C}$ passes through every second, and
   <foreignObject x="65" y="285.5" width="470" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$12\,\tfrac{\text{J}}{\text{C}} \cdot 0.50\,\tfrac{\text{C}}{\text{s}} = 6.0\,\tfrac{\text{J}}{\text{s}} = 6.0\,\text{W}$</div></foreignObject>
 </svg>
 
+```pysahdy
+The voltage of a motor is $24\,\text{V}$ and a current of $2.0\,\text{A}$ passes through it. How large is the power of the motor?
+---
+The power is $P = UI$. So $P = 24\,\text{V} \cdot 2.0\,\text{A} = 48\,\text{W}$.
+```
+
 ### Joule's law: why a resistor heats up
 In a resistor the electric field accelerates free electrons, but they keep colliding with the ions of the metal (chapter *Resistance and Ohm's law*). In the collisions the energy the electrons have gained is passed on to the vibrations of the ions: electrical energy is transformed into internal energy of the resistor, and the resistor warms up. From a warm resistor, energy is transferred as heat to the surroundings.
 
 When Ohm's law $U = RI$ is substituted into the formula for power, the power of the resistor becomes $P = RI \cdot I = RI^2$. This is **Joule's law**: the power transformed into internal energy in a resistor is proportional to the resistance and to the square of the current. When the current through the same resistor doubles and its resistance stays the same, the heating power becomes four times larger.
+
+```pysahdy
+The resistance of a resistor stays the same, but the current through it triples. How does the power of the resistor change?
+---
+The power is $P = RI^2$, and the current is squared. The power grows by a factor of $3^2 = 9$.
+```
 
 ### How power is shared in a circuit
 The same current flows through resistors in series (chapter *Resistors in series and in parallel*), so by Joule's law $P = RI^2$ a larger resistance gets a larger power. Resistors in parallel have the same voltage. Then it is best to calculate the power from the voltage: when $I = U : R$, the power is $P = U^2 : R$, and a smaller resistance gets a larger power.
@@ -244,6 +256,12 @@ For a resistor with resistance $R$, Ohm's law $U = RI$ gives the two forms of Jo
 P = RI^2 = \frac{U^2}{R}
 ```
 where $R$ is the resistance of the resistor ($\Omega$). The form $RI^2$ is handy when the current is known, as in a series connection, and the form $U^2 : R$ when the voltage is known, as in a parallel connection.
+
+```pysahdy
+The resistance of a resistor is $20\,\Omega$ and its voltage is $10\,\text{V}$. How large is the power of the resistor?
+---
+The voltage is known, so $P = U^2 : R$. So $P = (10\,\text{V})^2 : 20\,\Omega = 5.0\,\text{W}$.
+```
 
 The electrical energy transformed in a component in a time $t$ is
 ```latex

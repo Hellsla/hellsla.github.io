@@ -223,6 +223,12 @@ The electricity of a home is divided into circuits in the fuse board. Each circu
 
 The conductors of the circuit cable have a small resistance, and they produce thermal power $P = RI^2$ (chapter *Electric power and the heating of a resistor*): when the current doubles, the thermal power of the cable becomes four times as large. The size of the fuse is chosen according to the cable: the cable determines how large a current the fuse may let through. If the current is larger for a long time, the cable and its connections heat up, the insulation is damaged and a fire can start. The fuse cuts off the current before that happens. A small overload can continue for a long time, but the larger the overcurrent, the faster the fuse acts; in a short circuit the current is cut off in a fraction of a second. In a screw-in fuse a thin wire melts from its own heating, whereas a circuit breaker trips and is switched back on. A blown fuse is never replaced with a larger one.
 
+```pysahdy
+The $10\,\text{A}$ fuse of a group cable has blown. Why must it not be replaced with a $16\,\text{A}$ fuse?
+---
+The size of the fuse is chosen by the cable. A larger fuse would let through a current that heats the cable dangerously before the current is cut.
+```
+
 ### Earthing leads the fault current away from the person
 The two holes of a socket take the line conductor L and the neutral conductor N. An earthed socket also has protective earth contacts PE, which are connected to the yellow-green protective earth conductor, that is, the protective conductor. In the distribution board of the building, the protective conductor is connected to the earthing and to the conductor coming from the grid along which the current returns to the supply. The colours of the insulation of the conductors are well established in Finland: in new installations the line conductor is usually brown, the neutral conductor blue and the protective earth conductor yellow-green. In old installations the colours may differ, and you must never conclude from the colour of a conductor that it is not live.
 
@@ -399,6 +405,12 @@ A fuse does not notice a current through a person: its rated current is amperes,
 
 An RCD does not prevent all shocks. If a person touches the line conductor and the neutral conductor at the same time, the current returns along the neutral conductor, and there is no difference between the currents of the line and neutral conductors. For this reason live parts are never touched, even if the circuit has an RCD.
 
+```pysahdy
+Which two currents does a residual current device compare, and when does it cut the current?
+---
+It compares the current in the phase conductor and in the neutral conductor. When the difference exceeds the tripping current, usually $30\,\text{mA}$, it cuts the current.
+```
+
 ### The dielectric strength of an insulator
 The plastic sheath of cables, the body of a plug and the insulators of high-voltage lines separate the live parts from people. Every insulator, however, withstands only an electric field of a certain size. When the field exceeds the **dielectric strength** of the insulator, the insulator starts to conduct and a spark discharges through it (chapter *The capacitor and its energy*). In a uniform field, an insulating layer of thickness $d$ withstands a voltage $E_\text{max} d$. A larger voltage therefore needs a thicker insulator or a longer air gap, and the insulator must be intact: a crack, moisture or dirt weakens the insulation.
 
@@ -468,6 +480,12 @@ The devices of a circuit are in parallel at the same voltage, so the current of 
 I = \frac{P_1 + P_2 + P_3 + \dots}{U}
 ```
 where $I$ is the total current of the circuit cable ($\text{A}$), $P_1, P_2, \dots$ are the powers of the devices that are on at the same time ($\text{W}$) and $U$ is the mains voltage $230\,\text{V}$. The mains voltage is the rms value of the alternating voltage. This chapter considers devices whose current and voltage are in phase, such as heating devices, or whose power factor is assumed to be approximately one. Then the power is calculated with the formula $P = UI$ as with a direct voltage. In general, the active power of an alternating-current circuit also depends on the phase difference between the voltage and the current. The circuit is not overloaded when $I$ is at most the rated current of the fuse $I_\text{f}$. The total power of the devices may therefore be at most $230\,\text{V} \cdot 10\,\text{A} = 2300\,\text{W}$ in a $10\,\text{A}$ circuit and $230\,\text{V} \cdot 16\,\text{A} = 3680\,\text{W}$ in a $16\,\text{A}$ circuit.
+
+```pysahdy
+An iron ($1.1\,\text{kW}$) and a radio ($0.70\,\text{kW}$) are on in the same group. What is the current in the group cable?
+---
+$I = \tfrac{P_1 + P_2}{U}$. Substituting: $\tfrac{1100\,\text{W} + 700\,\text{W}}{230\,\text{V}} \approx 7.8\,\text{A}$.
+```
 
 ### The current through the body
 When a person touches a live part and the ground at the same time, their body is part of the circuit. The current through the body is obtained from Ohm's law (chapter *Resistance and Ohm's law*):

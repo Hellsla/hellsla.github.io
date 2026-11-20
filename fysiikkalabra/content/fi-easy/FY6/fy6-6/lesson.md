@@ -163,10 +163,22 @@ Kuvan vastuksen läpi kulkee $0{,}50\,\text{C}$ sekunnissa. Jokainen coulombi lu
   <foreignObject x="65" y="285.5" width="470" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$12\,\tfrac{\text{J}}{\text{C}} \cdot 0{,}50\,\tfrac{\text{C}}{\text{s}} = 6{,}0\,\tfrac{\text{J}}{\text{s}} = 6{,}0\,\text{W}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Moottorin jännite on $24\,\text{V}$ ja sen läpi kulkee virta $2{,}0\,\text{A}$. Kuinka suuri on moottorin teho?
+---
+Teho on $P = UI$. Siis $P = 24\,\text{V} \cdot 2{,}0\,\text{A} = 48\,\text{W}$.
+```
+
 ### Joulen laki: miksi vastus lämpenee
 Vastuksessa sähkökenttä vauhdittaa vapaita elektroneja. Elektronit törmäilevät koko ajan metallin ioneihin (luku *Resistanssi ja Ohmin laki*). Törmäyksissä elektronien energia siirtyy ionien värähtelyyn. Sähköenergia muuttuu silloin vastuksen **sisäenergiaksi**, eli aineen hiukkasten energiaksi. Vastus lämpenee. Lämpimästä vastuksesta energiaa siirtyy lämpönä ympäristöön.
 
 Sijoita tehon kaavaan Ohmin laki $U = RI$. Vastuksen teho on silloin $P = RI \cdot I = RI^2$. Tämä on **Joulen laki**. Sen mukaan vastuksessa sisäenergiaksi muuttuva teho on verrannollinen resistanssiin ja virran neliöön. Kun virta samassa vastuksessa kaksinkertaistuu ja resistanssi pysyy samana, lämmitysteho nelinkertaistuu.
+
+```pysahdy
+Vastuksen resistanssi pysyy samana, mutta virta kolminkertaistuu. Miten teho muuttuu?
+---
+Teho on $P = RI^2$, ja virta on neliössä. Teho tulee $3^2 = 9$-kertaiseksi.
+```
 
 ### Tehon jakautuminen virtapiirissä
 Sarjaan kytkettyjen vastusten läpi kulkee sama virta (luku *Vastusten sarja- ja rinnankytkennät*). Joulen lain $P = RI^2$ mukaan suurempi resistanssi saa silloin suuremman tehon. Rinnan kytkettyjen vastusten yli on sama jännite. Silloin teho kannattaa laskea jännitteestä. Kun $I = U : R$, teho on $P = U^2 : R$. Pienempi resistanssi saa silloin suuremman tehon.
@@ -244,6 +256,12 @@ Vastukselle, jonka resistanssi on $R$, Ohmin laki $U = RI$ antaa Joulen lain kak
 P = RI^2 = \frac{U^2}{R}
 ```
 missä $R$ on vastuksen resistanssi ($\Omega$). Käytä muotoa $RI^2$, kun virta tunnetaan, kuten sarjaankytkennässä. Käytä muotoa $U^2 : R$, kun jännite tunnetaan, kuten rinnankytkennässä.
+
+```pysahdy
+Vastuksen resistanssi on $20\,\Omega$ ja sen jännite $10\,\text{V}$. Kuinka suuri on vastuksen teho?
+---
+Jännite tunnetaan, joten $P = U^2 : R$. Siis $P = (10\,\text{V})^2 : 20\,\Omega = 5{,}0\,\text{W}$.
+```
 
 Ajassa $t$ komponentissa muuttuva sähköenergia on
 ```latex

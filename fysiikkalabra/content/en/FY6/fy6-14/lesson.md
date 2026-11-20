@@ -361,6 +361,12 @@ The characteristic curve of a diode is usually drawn with the voltage $U_\text{D
   <foreignObject x="123.5" y="263.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$I = 0$</span></div></foreignObject>
 </svg>
 
+```pysahdy
+A silicon diode is in the forward direction and its voltage is $0.30\,\text{V}$. Does a significant current flow through it?
+---
+No. The voltage is below the threshold voltage, which is about $0.6$–$0.7\,\text{V}$, so the current is almost zero.
+```
+
 ### An LED changes electrical energy into light
 An **LED**, a light-emitting diode, is a diode that emits light when current flows through it in the forward direction. The colour of the light depends on the semiconductor material of the LED, and the colour shows also in the threshold voltage. When the current is a few milliamperes, the voltage of a red LED is about $1.8$–$2.0\,\text{V}$, of a green one about $2.2\,\text{V}$ and of a blue or white one about $2.9$–$3.3\,\text{V}$. An LED changes a greater part of the electrical energy into light than a light bulb, in which most of the electrical energy becomes internal energy of the wire and is transferred to the surroundings as heat.
 
@@ -430,6 +436,12 @@ The $(U, I)$ graph of a cell is not a falling straight line like that of a batte
 
 <figure class="unit-photo"><img src="pics/fy6/solar-panels-jyvaskyla.webp" alt="A dark house roof against a blue sky; on the roof are two rows of dark blue solar panels and a chimney."><figcaption>Solar panels on the roof of a detached house in Jyväskylä, Finland. Each panel contains many solar cells connected in series. The panels produce a direct voltage, which an inverter converts into the alternating voltage of the grid.</figcaption></figure>
 
+```pysahdy
+There is an open-circuit voltage $U_\text{t}$ between the terminals of a solar cell, yet the power of the cell is zero. Why?
+---
+In open circuit no current is drawn, $I = 0$. The power is $P = UI$, so it is zero even though the voltage is large.
+```
+
 ## Formula: Series resistor and power of a solar cell
 
 ### Sizing the series resistor
@@ -470,6 +482,12 @@ where $R$ is the resistance of the series resistor ($\Omega$), $U$ the voltage o
 </svg>
 
 The power of a component is its voltage times its current (chapter *Electric power and the heating of a resistor*): the power of the LED is $P_\text{D} = U_\text{D} I$ and the power of the resistor $P_R = U_R I$. In the resistor electrical energy becomes internal energy of the resistor, so the resistor is chosen so that it withstands this power. In the reverse direction $I = 0$, so $U_R = RI = 0$ and the voltage of the diode is the whole voltage $U$ of the source.
+
+```pysahdy
+An LED needs a current of $10\,\text{mA}$ and its voltage is $1.8\,\text{V}$. The source is $3.3\,\text{V}$. What series resistor is needed?
+---
+$R = \tfrac{U - U_\text{D}}{I}$. Substituting: $\tfrac{3.3\,\text{V} - 1.8\,\text{V}}{0.010\,\text{A}} = 150\,\Omega$.
+```
 
 ### The power of a solar cell
 The electric power given by a solar cell or panel is

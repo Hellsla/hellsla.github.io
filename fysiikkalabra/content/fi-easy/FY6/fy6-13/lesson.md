@@ -246,6 +246,12 @@ Eristeessä varaukset eivät pääse liikkumaan vapaasti. Sähkökenttä kuitenk
   <foreignObject x="342" y="309.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{pienempi } U$</div></foreignObject>
 </svg>
 
+```pysahdy
+Levyjen väliin laitetaan eriste. Levyjen varaus pysyy samana. Miksi kenttä silloin heikkenee?
+---
+Sähkökenttä polarisoi eristeen. Eristeen pinnoille syntyvät varaukset heikentävät levyjen kenttää. Jännite $U$ pienenee, joten kapasitanssi $C = \tfrac{Q}{U}$ kasvaa.
+```
+
 ### Energia on sähkökentässä
 Varauksen siirtäminen levystä toiseen vaatii työtä. Positiivinen levy vetää elektroneja puoleensa, ja negatiivinen levy hylkii niitä. Tämä työ varastoituu levyjen väliseen sähkökenttään energiaksi. Kun kondensaattori purkautuu, se luovuttaa energian takaisin. Salamalaitteen paristot jaksavat antaa vain pientä tehoa, joten kondensaattorin lataaminen kestää sekunteja. Salamaputken läpi kondensaattori purkautuu millisekunnissa. Silloin sama energia vapautuu tuhansia kertoja suuremmalla teholla.
 
@@ -287,6 +293,12 @@ Levyjen välinen kenttä on $E = \tfrac{U}{d}$. Siksi eriste kestää jännittee
 U_\text{max} = E_\text{max} d
 ```
 Tässä $U_\text{max}$ on suurin jännite ($\text{V}$), jolla läpilyöntiä ei tapahdu. Suure $E_\text{max}$ on eristeen läpilyöntilujuus ($\text{V/m}$) ja $d$ on eristekerroksen paksuus ($\text{m}$). Esimerkiksi $0{,}010\,\text{mm}$:n paperikerros kestää noin $16 \cdot 10^{6}\,\tfrac{\text{V}}{\text{m}} \cdot 0{,}010 \cdot 10^{-3}\,\text{m} = 160\,\text{V}$.
+
+```pysahdy
+Ilmaeristeinen kondensaattori kestää kentän $3\,\text{MV/m}$. Levyjen väli on $1{,}0\,\text{mm}$. Kuinka suuren jännitteen se kestää?
+---
+$U_\text{max} = E_\text{max} d$. Sijoitus: $3 \cdot 10^{6}\,\tfrac{\text{V}}{\text{m}} \cdot 1{,}0 \cdot 10^{-3}\,\text{m} = 3{,}0\,\text{kV}$.
+```
 
 ### Kondensaattorin energia
 Ladattaessa varaus kasvaa nollasta arvoon $Q$. Jännite kasvaa samassa suhteessa nollasta arvoon $U$. Pieni varaus siirretään levystä toiseen jännitteen yli. Silloin se saa energian, joka on varaus kertaa senhetkinen jännite (luku *Potentiaalienergia ja potentiaali sähkökentässä*). Ensimmäiset varaukset siirtyvät pienen jännitteen yli. Viimeiset siirtyvät koko jännitteen $U$ yli. Siksi keskimääräinen jännite on $\tfrac{U}{2}$. Energia on $(Q, U)$-kuvaajan alle jäävän kolmion pinta-ala.
@@ -331,6 +343,12 @@ kondensaattorin energia :: W = \tfrac{1}{2} Q U = \tfrac{1}{2} C U^2
 Tässä $W$ on energia ($\text{J}$), $Q$ on varaus ($\text{C}$), $U$ on jännite ($\text{V}$) ja $C$ on kapasitanssi ($\text{F}$). Jälkimmäinen muoto saadaan sijoittamalla $Q = CU$. Energiaa merkitään $W$:llä, koska $E$ tarkoittaa tässä luvussa sähkökentän voimakkuutta. Myös luvussa *Akut ja latauspiiri* energia oli $W$, koska $E$ oli siellä lähdejännite.
 
 Ajatellaan, että aluksi varaamaton kondensaattori ladataan vakiojännitelähteestä eli lähteestä, jonka jännite pysyy samana, tavallisessa latauspiirissä, jossa on resistanssia. Lähde siirtää koko varauksen $Q$ täyden jännitteensä $U$ yli, joten se antaa energian $QU$. Kondensaattoriin varastoituu siitä vain puolet. Toinen puoli muuttuu latauksen aikana johtimien ja vastusten sisäenergiaksi. Sisäenergia siirtyy lämpönä ympäristöön. Puolet ei ole yleinen laki kaikille lataustavoille. Se on tämän mallin tulos.
+
+```pysahdy
+Kondensaattorin kapasitanssi on $10\,\mu\text{F}$ ja jännite $20\,\text{V}$. Kuinka paljon energiaa siihen on varastoitunut?
+---
+$W = \tfrac{1}{2} C U^2$. Sijoitus: $\tfrac{1}{2} \cdot 10 \cdot 10^{-6}\,\text{F} \cdot (20\,\text{V})^2 = 2{,}0 \cdot 10^{-3}\,\text{J} = 2{,}0\,\text{mJ}$.
+```
 
 ### Eriste, kun lähde on kytkettynä tai irrotettuna
 Kun levyjen väliin työnnetään eristelevy, joka täyttää välin, kapasitanssi kasvaa $\varepsilon_\text{r}$-kertaiseksi. Muut suureet muuttuvat sen mukaan, pysyykö kondensaattori kytkettynä lähteeseen.

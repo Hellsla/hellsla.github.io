@@ -225,6 +225,12 @@ Ryhmäjohdon johtimilla on pieni resistanssi, ja niissä syntyy lämpöteho $P =
 
 Pieni ylikuorma voi jatkua pitkäänkin. Mitä suurempi ylivirta on, sitä nopeammin sulake toimii. Oikosulussa virta katkeaa sekunnin murto-osassa. Oikosulku tarkoittaa, että virta pääsee kulkemaan lyhyintä reittiä ilman laitetta. Tulppasulakkeessa ohut lanka sulaa omasta lämpenemisestään. Johdonsuojakatkaisija taas laukeaa, ja sen voi kääntää takaisin päälle. Palanutta sulaketta ei koskaan korvata suuremmalla.
 
+```pysahdy
+Ryhmäjohdon $10\,\text{A}$:n sulake on palanut. Miksi sen tilalle ei saa laittaa $16\,\text{A}$:n sulaketta?
+---
+Sulakkeen koko valitaan johdon mukaan. Suurempi sulake päästäisi läpi virran, joka kuumentaa johdon vaarallisesti, ennen kuin virta katkeaa.
+```
+
 ### Maadoitus ohjaa vikavirran pois ihmisestä
 Pistorasian kahteen reikään tulevat vaihejohdin L ja nollajohdin N. Maadoitetussa pistorasiassa on lisäksi suojamaadoituskoskettimet PE. Ne on kytketty keltavihreään suojamaadoitusjohtimeen eli suojajohtimeen. Suojajohdin on johdin, jota pitkin vikavirta pääsee kulkemaan turvallisesti. Kiinteistön sähkökeskuksessa suojajohdin on yhdistetty maadoitukseen. Se on yhdistetty myös sähköverkosta tulevaan johtimeen, jota pitkin virta palaa sähkönsyöttöön. Johtimien eristeiden värit ovat Suomessa vakiintuneet. Uusissa asennuksissa vaihejohdin on yleensä ruskea, nollajohdin sininen ja suojamaadoitusjohdin keltavihreä. Vanhoissa asennuksissa värit voivat olla toisenlaiset. Siksi johtimen väristä ei saa päätellä, onko se jännitteetön.
 
@@ -405,6 +411,12 @@ Ihmisen kautta kulkevan pienen virran katkaisee **vikavirtasuoja**. Se vertaa ka
 
 Vikavirtasuoja ei estä kaikkia iskuja. Jos ihminen koskettaa yhtä aikaa vaihejohdinta ja nollajohdinta, virta palaa nollajohdinta pitkin. Silloin vaihe- ja nollajohtimen virtojen välille ei synny eroa. Siksi jännitteisiin osiin ei kosketa, vaikka ryhmässä olisi vikavirtasuoja.
 
+```pysahdy
+Mitä kahta virtaa vikavirtasuoja vertaa? Milloin se katkaisee virran?
+---
+Se vertaa vaihejohtimen ja nollajohtimen virtaa. Kun virtojen ero on suurempi kuin laukaisuvirta, tavallisesti $30\,\text{mA}$, se katkaisee virran.
+```
+
 ### Eristeen läpilyöntilujuus
 Johtojen muovikuori, pistotulpan runko ja suurjännitejohtojen eristimet erottavat jännitteiset osat ihmisestä. Jokainen eriste kestää kuitenkin vain tietyn suuruisen sähkökentän. Kun kenttä ylittää eristeen **läpilyöntilujuuden**, eriste alkaa johtaa ja sen läpi purkautuu kipinä (luku *Kondensaattori ja sen energia*). Läpilyöntilujuus on siis suurin sähkökenttä, jonka eriste kestää.
 
@@ -476,6 +488,12 @@ Ryhmän laitteet ovat rinnan samassa jännitteessä. Jokaisen laitteen virta on 
 I = \frac{P_1 + P_2 + P_3 + \dots}{U}
 ```
 missä $I$ on ryhmäjohdon kokonaisvirta ($\text{A}$), $P_1, P_2, \dots$ samaan aikaan päällä olevien laitteiden tehot ($\text{W}$) ja $U$ verkkojännite $230\,\text{V}$. Verkkojännite on vaihtojännitteen tehollinen arvo. Tässä luvussa tarkastellaan laitteita, joiden virta ja jännite ovat samanvaiheiset eli muuttuvat samaan tahtiin. Tällaisia ovat esimerkiksi lämmittävät laitteet. Muissa laitteissa oletetaan, että tehokerroin on likimain yksi. Tehokerroin on luku, joka on yksi, kun virta ja jännite ovat samanvaiheiset. Silloin teho lasketaan kaavalla $P = UI$ samoin kuin tasajännitteellä. Yleensä vaihtovirtapiirin pätöteho eli todellinen teho riippuu myös vaihe-erosta. Vaihe-ero kertoo, kuinka paljon jännite ja virta ovat eri tahdissa. Ryhmä ei ole ylikuormitettu, kun $I$ on enintään sulakkeen nimellisvirta $I_\text{s}$. Laitteiden yhteisteho saa siis olla $10\,\text{A}$:n ryhmässä enintään $230\,\text{V} \cdot 10\,\text{A} = 2300\,\text{W}$ ja $16\,\text{A}$:n ryhmässä $230\,\text{V} \cdot 16\,\text{A} = 3680\,\text{W}$.
+
+```pysahdy
+Samassa ryhmässä ovat päällä silitysrauta ($1{,}1\,\text{kW}$) ja radio ($0{,}70\,\text{kW}$). Kuinka suuri on ryhmäjohdon virta?
+---
+$I = \tfrac{P_1 + P_2}{U}$. Sijoitus: $\tfrac{1100\,\text{W} + 700\,\text{W}}{230\,\text{V}} \approx 7{,}8\,\text{A}$.
+```
 
 ### Kehon läpi kulkeva virta
 Kun ihminen koskettaa jännitteistä osaa ja samalla maata, hänen kehonsa on osa virtapiiriä. Kehon läpi kulkeva virta saadaan Ohmin laista (luku *Resistanssi ja Ohmin laki*):

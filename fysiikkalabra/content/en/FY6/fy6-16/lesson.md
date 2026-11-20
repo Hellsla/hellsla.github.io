@@ -178,10 +178,22 @@ The charging time depends on how much energy has to be transferred to the batter
 
 <figure class="unit-photo"><img src="pics/fy6/ev-charging-socket.webp" alt="An open flap in the front of a white car with two charging inlets beneath it: a larger black one and a smaller one with an orange protective cap."><figcaption>The charging inlets of an electric car. The larger inlet is for fast charging with direct current. The smaller one is for charging with alternating current, in which the car's own charger converts the alternating current of the grid into direct current for the battery.</figcaption></figure>
 
+```pysahdy
+Why must more energy be drawn from the grid than is stored in the battery?
+---
+Part of the energy becomes internal energy of the charger, the wires and the battery. The efficiency is therefore below $100\,\%$.
+```
+
 ### One phase or three
 A Finnish detached house usually gets **three-phase** electricity: three phase conductors $\text{L}_1$, $\text{L}_2$ and $\text{L}_3$ and a neutral conductor $\text{N}$. Between each phase conductor and the neutral conductor there is a voltage of $230\,\text{V}$. An ordinary socket and a kettle use one phase, a sauna heater and a charging station usually all three. When a device draws the same current $I$ from each phase conductor, each phase transfers a power $UI$, and the total power is three times as great. The voltage between the phase conductors is $400\,\text{V}$, but it is not needed here.
 
 The current of a device is obtained from its power as in the chapter *Electrical energy at home*: in one phase $I = P : U$. When charging from an ordinary socket, the charging cable usually limits the current to about $8\,\text{A}$, and the power is then $230\,\text{V} \cdot 8\,\text{A} \approx 1.8\,\text{kW}$. A single-phase charging station with a current of $16\,\text{A}$ charges with a power of about $3.7\,\text{kW}$, and a three-phase one with the same current at three times the power, about $11\,\text{kW}$. The same $40\,\text{kWh}$ charge takes more than a day from a socket, when the losses of charging are taken into account, and about four hours with a three-phase station.
+
+```pysahdy
+A three-phase charging station draws a current of $10\,\text{A}$ from each phase conductor. The phase voltage is $230\,\text{V}$. What is the power of the station?
+---
+The power is three times that of one phase: $P = 3UI = 3 \cdot 230\,\text{V} \cdot 10\,\text{A} = 6.9\,\text{kW}$.
+```
 
 ### The home electrical system
 The cable coming from the electricity grid goes through the meter to the **consumer unit**. In the consumer unit come first the **main fuses**, one in each phase conductor, for example $3 \cdot 25\,\text{A}$. After them the current divides into **circuits**: each circuit has its own cable and its own fuse or miniature circuit breaker, for example $10\,\text{A}$ or $16\,\text{A}$. A fuse protects the cable: it cuts the current before the current heats the cable dangerously (chapter *Electrical safety at home and at work*). That is why the size of a fuse is chosen according to the cross-sectional area of the cable, and a larger one must not be put in its place.
@@ -391,6 +403,12 @@ where $t$ is the charging time ($\text{h}$) and $P$ the power taken from the gri
   <circle cx="424" cy="279" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="349" y="234.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{charge}\ 99\,\%$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+$20\,\text{kWh}$ must be stored in the battery. The efficiency is $0.90$ and the charging power $5.0\,\text{kW}$. How long does charging take?
+---
+$t = \tfrac{W_\text{akku}}{\eta P}$. Substituting: $\tfrac{20\,\text{kWh}}{0.90 \cdot 5.0\,\text{kW}} \approx 4.4\,\text{h}$.
+```
 
 This chapter assumes that the current and voltage of the charging equipment are in phase, that is, the power factor is approximately one. Then the power of a single-phase device is $P = UI$. In an evenly loaded three-phase system, where the device draws the same current from each phase conductor, the total power in this model is
 ```latex
