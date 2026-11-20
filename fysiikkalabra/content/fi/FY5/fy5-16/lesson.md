@@ -206,9 +206,9 @@ missä $L$ on A-painotettu melutaso korvalla (laskuissa lyhyesti dB), $L_0 = 85\
 </svg>
 
 ```pysahdy
-Melutaso korvalla on $109\,\text{dB}$. Kuinka kauan kestää, että ylempää toiminta-arvoa vastaava annos kertyy?
+Melutaso korvalla on $115\,\text{dB}$. Kuinka kauan kestää, että ylempää toiminta-arvoa vastaava annos kertyy?
 ---
-Nyt $n = (109\,\text{dB} - 85\,\text{dB}) : 3\,\text{dB} = 8$. Vertailuaika on $8\,\text{h} : 2^8 \approx 1{,}9\,\text{min}$.
+Nyt $n = (115\,\text{dB} - 85\,\text{dB}) : 3\,\text{dB} = 10$. Vertailuaika on $8\,\text{h} : 2^{10} \approx 28\,\text{s}$.
 ```
 
 Vertailuaika ei ole sallittu eikä turvallinen aika, vaan laskennallinen vertailuarvo. Vertailuannoksen alittaminen ei takaa yksilön kuulon turvallisuutta, koska ihmisten kuulo kestää melua eri tavoin, eikä se poista työnantajan muita velvoitteita: ne alkavat jo alemmasta toiminta-arvosta $80\,\text{dB(A)}$. Altistus kannattaa pitää selvästi vertailuannoksen alapuolella. Melutaso korvalla saadaan luvun *Intensiteetti ja desibeliasteikko* säännöillä: kaksi yhtä voimakasta lähdettä nostaa tasoa noin $3\,\text{dB}$, ja etäisyyden kaksinkertaistuminen pistemäisestä lähteestä laskee tasoa avoimessa tilassa noin $6\,\text{dB}$. Kuulonsuojain vähentää korvaan pääsevää tasoa, hyvin asetettuna, vaimennuksensa verran.
@@ -339,9 +339,9 @@ Kun äänilähde vaikenee, heijastuksia kuuluu vielä hetken. Tätä hiipuvaa ä
 </svg>
 
 ```pysahdy
-Miksi ruokala, jossa on kovat seinät ja pitkä jälkikaiunta, tuntuu meluisalta, vaikka kukaan ei puhu kovempaa kuin muualla?
+Miksi ruokala, jossa on kovat seinät ja pitkä jälkikaiunta, tuntuu meluisalta?
 ---
-Heijastukset sotkevat puheen tavut toisiinsa. Ihmiset korottavat siksi ääntään toistensa yli, ja melutaso nousee.
+Heijastunut ääni täyttää koko huoneen ja vaimenee hitaasti, joten sama puhe antaa kaikkialla korkeamman melutason ja tavut sotkeutuvat toisiinsa. Siksi ihmiset alkavat vielä korottaa ääntään.
 ```
 
 ## Vastamelu

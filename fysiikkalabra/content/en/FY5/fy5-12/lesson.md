@@ -158,9 +158,9 @@ The waves meet at every point of the tank. At some points a crest always meets a
 </svg>
 
 ```pysahdy
-In a ripple tank the water is at rest on a nodal line, although the waves of both sources keep travelling through it. Why does the water not move?
+In a ripple tank the water is almost at rest on a nodal line, although the waves of both sources keep travelling through it. Why does the water not move?
 ---
-On a nodal line a crest of one wave always arrives at the same time as a trough of the other. The sum of the displacements is then zero all the time.
+On a nodal line a crest of one wave always arrives at the same time as a trough of the other. When the waves are equal in size, the sum of the displacements is almost zero all the time.
 ```
 
 ## Formula: The condition for constructive and destructive interference

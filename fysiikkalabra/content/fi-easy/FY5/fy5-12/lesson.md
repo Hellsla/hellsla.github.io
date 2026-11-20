@@ -158,9 +158,9 @@ Aallot kohtaavat altaan jokaisessa kohdassa. Joissakin kohdissa harja kohtaa ain
 </svg>
 
 ```pysahdy
-Aaltoaltaassa vesi on levossa solmuviivalla. Silti kummankin lähteen aallot etenevät sen kautta koko ajan. Miksi vesi ei liiku?
+Aaltoaltaassa vesi on lähes levossa solmuviivalla. Silti kummankin lähteen aallot etenevät sen kautta koko ajan. Miksi vesi ei liiku?
 ---
-Solmuviivalla toisen aallon harja tulee aina yhtä aikaa toisen aallon pohjan kanssa. Silloin poikkeamien summa on koko ajan nolla.
+Solmuviivalla toisen aallon harja tulee aina yhtä aikaa toisen aallon pohjan kanssa. Kun aallot ovat yhtä suuret, poikkeamien summa on koko ajan lähes nolla.
 ```
 
 ## Kaava: Vahvistavan ja heikentävän interferenssin ehto

@@ -1,18 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 37a367455b7f811a
+VERDICT: FAIL
+CONTENT-HASH: 2a8d90ccfaae6237
 
 ## Blocking
+- lesson.md:317 — A (internal consistency) — Right under the figure `kuvaaja`, the block says "The curve passes the equilibrium position going up at the time $0$ and next going down at the time $0.35\,\text{s}$". "The curve" refers to the figure. The figure's curve has $T = 0.80\,\text{s}$ and passes downward at $0.40\,\text{s}$, so the question and its answer ($0.70\,\text{s}$) contradict the figure and its $T$ arrows. — Fix: "Another weight's graph passes…", or use $0.40\,\text{s}$ → $T = 0.80\,\text{s}$ (keep the same choice as the Finnish text).
 
 ## Polish
-- inquiry.json tarkistus-3 — the model answer reads $C = 0.01$ as $C \approx 0$. That is right, but one clause saying it is a negligible fraction of $2\pi$ would show why. Not an error.
+- lesson.md:212 — The displacement block comes after the photo, far below the definition at line 144. The physics is right; its placement is for the pedagogy reviewer to judge.
 
 ## Checked
-- Round-1 blocker (fixed): lesson.md:486 now says "in the calculation tasks of this chapter". The only task with $C \ne 0$ is the optional conceptual *vaihe* choice ($C = \tfrac{\pi}{2}$). Every calculation task starts at an upward pass through equilibrium: the worked example, siirto, tarkistus-2, tarkistus-3 and the exercises' sine tasks (L1-09, L2-01, L3-01, L3-05). The claim holds.
-- Definitions match the glossary. Conditions are stated: undamped, sinusoidal, small pendulum angles, radian mode. The reference-circle angle uses no ω (fits the FY5 scope).
-- Recomputed from the sim's own data, all matching the quoted numbers and lesson-answers.py: koe-1 $d$ = 1.85 / 0.13 / 3.70 cm; koe-2 $N$ = 6 / 3 and $f$ = 1.25 / 0.625 Hz; koe-3 best fit 8.5 cm and 2.20 s with $d$ = 0.127 cm; load $d$ = 3.92 cm.
-- Worked example: 0.60 s, argument 2.618, 2.0 cm; degree-mode 0.183 cm. Solved symbolically first, and the reasonableness check is real.
-- siirto: 3.80 cm; mistakes 0.0877, −3.80 and 8.0 are right. tarkistus-2: 0.556 Hz; distractors 1.11 and 0.185 Hz; $L \approx 0.81$ m. tarkistus-3: 0.800 s, 1.25 Hz, range 0.378–0.482 m. virhe: 1.11 vs 2.22 Hz. Exit ticket: 2.0 Hz.
-- Every choice item has exactly one correct option. Every distractor is really wrong, and its feedback says why.
-- Experiments isolate their variable (koe-1 varies $A$ with $T$ locked, koe-2 the reverse). The measured keys are in `simState`.
-- Figures agree with figures.py and are to scale: kuvaaja's $T$ arrows, sovitus $3T = 3.6$ s, tarkistus-kuvaaja's 1.8 s period, ympyra's quarter points.
-- sim.js implements the lesson's model. Its $d$, $N$ and $f$ match the calc box, and its limits are stated in the model box.
+- Block 1: below the equilibrium position with up positive gives $x = -2.5\,\text{cm}$. This is correct and matches line 144.
+- Block 2: $8.0\,\text{s}/20 = 0.40\,\text{s}$. The significant figures are right, and the paragraph just before it gives $T = t_n/n$.
+- Block 3 physics: passes in opposite directions are half a period apart, so $0.70\,\text{s}$. This is correct and matches line 228.
+- The figure: up at 0 and 0.8 s, down at 0.4 s (from the aria-label and the previous figures.py check).
+- Hash checked at the start and the end: unchanged.
+
+## Vanhan sisällön löydökset
+- None found in the parts I read.

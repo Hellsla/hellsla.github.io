@@ -1,10 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 49f335afacf8dda4
+CONTENT-HASH: c2415909c3c70bbf
 
 ## Blocking
 
 ## Polish
-- `v_air` in lesson-answers.py may now be unused by the kertaus; harmless.
+- lesson.md:137 — the chain jumps from m/s · µs to cm; an intermediate $0{,}040\,\text{m}$ would show the conversion — optional.
 
 ## Checked
-batch delta review: new kertaus choice recomputed with $v = 1540\,\text{m/s}$ (soft tissue, the lesson's own value) and $f = 2{,}5\,\text{MHz}$: $\lambda = 6{,}16\cdot10^{-4}\,\text{m} \approx 0{,}62\,\text{mm}$; distractors $vf = 3{,}85\cdot10^{9} \approx 3{,}9\cdot10^{9}$ and $f/v = 1623 \approx 1{,}6\cdot10^{3}$ match their feedback (multiplied; divided the wrong way, unit $1/\text{m}$); exactly one correct option; the claim that wavelength limits resolvable detail is the lesson's model; split knowns/question paragraph in the earthquake example changes no number. Hash unchanged at start and end.
+- Scope: only the three new `pysahdy` blocks (teacher's scope note 2026-11-20).
+- Block 1 recomputed: $1540\,\text{m/s}\cdot 26\,\mu\text{s} = 0{,}0400\,\text{m} \approx 4{,}0\,\text{cm}$, depth $2{,}0\,\text{cm}$; two figures from the 26 µs datum; the round trip is stated in the block itself and in Ydinajatus.
+- Block 1 pre-empts no later item (Ennusta 65 µs, Tutki 40 µs, eye check 31,0 µs use other data).
+- Block 2: speed fixed by the tissue, so doubling $f$ halves $\lambda$ by $v = f\lambda$; consistent with the table above (0,31 → 0,15 mm).
+- Block 3: surface waves slower than P and S waves, arrive last, amplitude still largest; agrees with the chapter text and glossary.
+- Same numbers and claims as the standard Finnish blocks.
+- Hash c2415909c3c70bbf at start and end.
+
+## Vanhan sisällön löydökset
+- none

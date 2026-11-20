@@ -206,9 +206,9 @@ where $L$ is the A-weighted noise level at the ear (in calculations simply dB), 
 </svg>
 
 ```pysahdy
-The noise level at the ear is $109\,\text{dB}$. How long does it take for the dose corresponding to the upper action value to build up?
+The noise level at the ear is $115\,\text{dB}$. How long does it take for the dose corresponding to the upper action value to build up?
 ---
-Now $n = (109\,\text{dB} - 85\,\text{dB}) : 3\,\text{dB} = 8$. The reference time is $8\,\text{h} : 2^8 \approx 1.9\,\text{min}$.
+Now $n = (115\,\text{dB} - 85\,\text{dB}) : 3\,\text{dB} = 10$. The reference time is $8\,\text{h} : 2^{10} \approx 28\,\text{s}$.
 ```
 
 The reference time is not a permitted or safe time but a calculated reference value. Staying below the reference dose does not guarantee that an individual's hearing is safe, because people's hearing withstands noise in different ways, and it does not remove the employer's other duties: they begin already at the lower action value $80\,\text{dB(A)}$. Exposure should be kept clearly below the reference dose. The noise level at the ear is obtained with the rules of the chapter *Intensity and the decibel scale*: two equally strong sources raise the level by about $3\,\text{dB}$, and doubling the distance from a point source lowers the level in an open space by about $6\,\text{dB}$. A hearing protector lowers the level reaching the ear by its attenuation, when it is well fitted.
@@ -339,9 +339,9 @@ When a sound source falls silent, reflections can still be heard for a moment. T
 </svg>
 
 ```pysahdy
-Why does a canteen with hard walls and a long reverberation time feel noisy, even though nobody speaks louder than elsewhere?
+Why does a canteen with hard walls and a long reverberation time feel noisy?
 ---
-The reflections muddle the syllables of speech together. People therefore raise their voices over each other, and the noise level rises.
+The reflected sound fills the whole room and dies away slowly, so the same speech gives a higher noise level everywhere and the syllables run together. Then people start to raise their voices as well.
 ```
 
 ## Active noise cancelling {Vastamelu}

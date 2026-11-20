@@ -314,7 +314,7 @@ Kun poikkeama piirretään ajan funktiona, saadaan $(t, x)$-kuvaaja (luku *Paikk
 </svg>
 
 ```pysahdy
-Käyrä ohittaa tasapainoaseman ylöspäin hetkellä $0$. Seuraavan kerran se ohittaa sen alaspäin hetkellä $0{,}35\,\text{s}$. Onko jaksonaika $0{,}35\,\text{s}$?
+Toisen punnuksen käyrä ohittaa tasapainoaseman ylöspäin hetkellä $0$. Seuraavan kerran se ohittaa sen alaspäin hetkellä $0{,}35\,\text{s}$. Onko jaksonaika $0{,}35\,\text{s}$?
 ---
 Ei. Ohitukset eri suuntiin ovat vain puolen jaksonajan päässä toisistaan. Jaksonaika on siis $0{,}70\,\text{s}$.
 ```

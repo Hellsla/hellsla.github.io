@@ -314,7 +314,7 @@ When the displacement is drawn as a function of time, the result is a $(t, x)$ g
 </svg>
 
 ```pysahdy
-The curve passes the equilibrium position going up at the time $0$ and next going down at the time $0.35\,\text{s}$. Is the period $0.35\,\text{s}$?
+The curve of another weight passes the equilibrium position going up at the time $0$ and next going down at the time $0.35\,\text{s}$. Is the period $0.35\,\text{s}$?
 ---
 No. Passes in opposite directions are only half a period apart, so the period is $0.70\,\text{s}$.
 ```

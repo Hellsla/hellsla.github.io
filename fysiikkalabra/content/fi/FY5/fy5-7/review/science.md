@@ -1,21 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: db97051f5614558d
+VERDICT: FAIL
+CONTENT-HASH: 86b89c8d792a52a4
 
 ## Blocking
+- lesson.md:317 — A (internal consistency) — The third Pysähdy block sits right under the figure `kuvaaja` and says "Käyrä ohittaa tasapainoaseman ylöspäin hetkellä $0$ ja seuraavan kerran alaspäin hetkellä $0{,}35\,\text{s}$". A reader takes "Käyrä" to mean the curve just drawn. That curve has $T = 0{,}80\,\text{s}$ and passes downward at $0{,}40\,\text{s}$ (peak $0{,}2\,\text{s}$, trough $0{,}6\,\text{s}$). A student who checks the figure finds a number that disagrees with it, and an answer ($0{,}70\,\text{s}$) that disagrees with the figure's $T$ arrows. — Fix: make it plainly another oscillator ("Toisen punnuksen kuvaaja ohittaa…"), or use the figure's own values ($0{,}40\,\text{s}$ → $T = 0{,}80\,\text{s}$, which the arrows then confirm).
 
 ## Polish
-- lesson.md:47 — "tämän luvun laskutehtävissä ajanotto alkaa aina niin" is now true (every calculation in the lesson, inquiry and exercises starts at an upward pass through equilibrium; L3-05 starts at a pass with the distance growing, which is the positive direction there). The optional "vaihe" choice is about interpreting $C$, not a calculation, so the round-1 contradiction is gone. If you want, "laskutehtävissä ja esimerkeissä" would also cover the worked example by name; this is optional.
-- inquiry.json tarkistus-3 model — $C = 0{,}01$ is called $C \approx 0$. You could say it is about $0{,}2\,\%$ of a cycle ($0{,}01/2\pi$), so a reader sees why it counts as zero. This is optional.
+- lesson.md:212 — The first block comes after the photo, well below the paragraph that defines poikkeama (line 144). The physics is right. The pedagogy reviewer can judge whether it should sit closer to line 144.
 
 ## Checked
-- Round-1 item: I read every exercise text that sets a start time (L1-09, L3-01, L3-05) and every inquiry calculation. All start at an upward equilibrium pass; "vaihe" ($C = \pi/2$ at release, ääriasema, a quarter cycle) is right and has exactly one correct option.
-- I recomputed all the sim numbers from sim.js's generator. Aineisto 1 with $T = 1{,}60\,\text{s}$: $d$ = 1,849 / 0,126 / 3,705 cm for $A$ = 3, 6, 12 cm. Koe 2: $N$ = 6 and 3, $f$ = 1,25 and 0,625 Hz. Koe 3 best fit on the slider grid: $A = 8{,}5\,\text{cm}$, $T = 2{,}20\,\text{s}$, $d = 0{,}127\,\text{cm}$, falling sharply at 2,20 s. Max noise is 0,2500 cm, as stated.
-- The setups isolate the varied parameter: koe-1 locks $T$, koe-2 locks $A$, koe-3 leaves both free on purpose. `simState` gives d, N, f and A.
-- Worked example: $T = 0{,}60\,\text{s}$, argument 2,618 rad, $x = 2{,}0\,\text{cm}$; the degree-mode value 0,183 cm is right; the T/4 and T/2 check is a real check.
-- siirto: 3,804 cm. The mistakes are right: degree mode 0,0877; $f$ used as $T$ gives −3,80; $2A$ = 8,0.
-- Etsi virhe: 1,11 vs 2,22 Hz. tarkistus-1: 0,80 m and 3,0 s, one correct option. tarkistus-2: 0,556 Hz; the distractors 1,8, 1,11 and 0,185 are right; a 0,8 m pendulum gives 1,79 s ✓.
-- tarkistus-3: $T = 0{,}800\,\text{s}$, $f = 1{,}25\,\text{Hz}$, range 0,378–0,482 m. "Poispäin tunnistimesta" fits $C \approx 0$ with $A > 0$.
-- Figures from figures.py: kuvaaja ($A = 4$, $T = 0{,}80$, peaks 0,2 and 1,0 s, upward passes 0,8 and 1,6 s); sovitus (3T = 3,6 s, A = 3 cm); task graph $T = 1{,}8\,\text{s}$ crossing every 0,9 s. All consistent with their texts.
-- Conditions are stated: no damping; sine only for spring and small-swing pendulum; radians; "yleensä" in the fit sentence; sim values are called model values.
-- Definitions (jaksonaika: same place and same direction; amplitudi; vaihe; hertsi) match the glossary. The circle derivation and the karusellin lapsi example are correct. The scope is FY5, with no ω.
-- Exit ticket, summary and kertaus agree with the theory.
+- Block 1: below the equilibrium position with up positive gives $x = -2{,}5\,\text{cm}$. This is correct and matches the definition at line 144 (displacement with a sign, up positive).
+- Block 2: $T = t_n/n = 8{,}0\,\text{s}/20 = 0{,}40\,\text{s}$. The figures are right ($n$ is exact, so $8{,}0\,\text{s}$ gives two). It can be answered from the paragraph just before it ($T = \tfrac{t_n}{n}$).
+- Block 3 physics: passes in opposite directions are $T/2$ apart, so $2 \cdot 0{,}35 = 0{,}70\,\text{s}$. This is correct and is stated in line 228 just above.
+- The figure's numbers come from its aria-label and the previous figures.py check: up at 0 and 0,8 s, down at 0,4 s.
+- Hash checked at the start and the end: unchanged.
+
+## Vanhan sisällön löydökset
+- None found in the parts I read (lines 141–144, 218–228).

@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 77b7bf73e98ebfd1
+CONTENT-HASH: ad5c1ea54563fc5f
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- inquiry.json (transfer task feedback for 6378): "pienentäisi voiman neljäsosaan, koska $g \propto 1/r^2$" mixes force and field; write $F \propto 1/r^2$.
-- lesson.md "Syventävä osio": "keskeisiin sisältöihin" is jargon for an S2 reader; "ei ole kurssin pakollinen ydinasia" would be plainer.
-- lesson.md Tiivistelmä: "G = mg" in the core bullet uses g, which the optional section defines; say "g = 9,81 m/s² (tuttu FY4:stä)" or leave as is if g is known from earlier.
+- Lohkot 2 ja 3 vastataan juuri edellä luetusta virkkeestä; harkitse muunnelmaa (esim. 100 km maanpinnan yläpuolella tai 3r), jotta oppilas soveltaa eikä muista. Ei estävä.
+- Stop blocks have the same wording across fi, en and fi-easy (fi-easy answer 1 in simpler sentences); language clean in each.
 
 ## Checked
-- The extension marking is clear and consistent: a "Syventävä osio" note explains the word ("eli lisätietoa") and says what the core is (the law, weight as gravitational force); learn goals now list the core only, with a separate "deepen" goal; "Syventävä: Etsi virhe" is titled and optional; the Tiivistelmä bullet is marked.
-- The transfer task now asks the force (F = γMm/r²), so the core path has no field strength; the hints, feedback, solution (m cancels) and the check are consistent; answer 2640 km unchanged.
-- Exit ticket chain re-broken only; values and units the same.
-- Goals match the slot; the diff adds no workload.
+Scope: only the 3 pysahdy blocks (teacher 2026-11-20).
+1. Omena/Maa-kappaleen jälkeen: sopii, fysiikka oikein (a = F/m, Kuun massa pienempi). Vastattavissa luetusta kappaleesta; kuvateksti kertoo voimien olevan yhtä suuret, joten kysymys on reilu siirto, ei paljastus.
+2. Pallosymmetriakappaleen jälkeen: oikein (Maan säde noin 6378 km, ekvaattorilla). Kappaleen viimeinen virke kertoo vastauksen, joten tämä on muistamista, ei päättelyä.
+3. Kuvaajan jälkeen: 417/4 = 104,25, vastaa kuvaajaa; vastattavissa. Katkoviivamerkintä 2r => F/4 ja edeltävä teksti melkein antavat vastauksen, joten tehtävä on helppo.
+Placement sensible (after each paragraph); nothing later pre-empted that I could find in the packet. Rendering comes from scripts/stopthink.py; I did not open it in a browser, and the packet has no capture of opened answers at 360 px.
+
+## Vanhan sisällön löydökset
+None noted.

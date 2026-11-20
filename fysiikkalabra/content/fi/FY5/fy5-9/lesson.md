@@ -216,9 +216,9 @@ harmonisen värähtelijän jaksonaika :: T = 2\pi\sqrt{\frac{m}{k}}
 missä $T$ on jaksonaika ($\text{s}$), $m$ värähtelevän kappaleen massa ($\text{kg}$) ja $k$ jousen jousivakio ($\text{N/m}$). Suurempi massa kiihtyy samasta voimasta hitaammin, joten jaksonaika kasvaa massan kasvaessa. Jäykempi jousi antaa suuremman voiman, joten jaksonaika lyhenee. Neliöjuuri tarkoittaa, että massa on nelinkertaistettava, jotta jaksonaika kaksinkertaistuu. Kaava pätee myös pystysuoraan riippuvaan jouseen: paino siirtää vain tasapainoasemaa, mutta poikkeama siitä noudattaa samaa lakia.
 
 ```pysahdy
-Jousen varassa värähtelevän kappaleen jaksonaika on $0{,}80\,\text{s}$. Mikä se on, kun jousi vaihdetaan nelinkertaisen jousivakion jouseen ja massa pysyy samana?
+Jousen jousivakio on $80\,\text{N/m}$ ja siihen kiinnitetyn kappaleen massa $0{,}20\,\text{kg}$. Mikä on värähtelyn jaksonaika?
 ---
-Neliöjuuren takia jaksonaika puolittuu: $T = 0{,}40\,\text{s}$.
+Jaksonaika on $T = 2\pi\sqrt{\tfrac{m}{k}}$, joten $T = 2\pi\sqrt{\tfrac{0{,}20\,\text{kg}}{80\,\text{N/m}}} \approx 0{,}31\,\text{s}$.
 ```
 
 Kaavan voi perustella ympyräliikkeen avulla. Kun kappale kiertää tasaisesti ympyrää, jonka säde on $A$, sen varjo halkaisijan suuntaisella seinällä liikkuu edestakaisin. Varjon kiihtyvyys on normaalikiihtyvyyden $a_\text{n} = \tfrac{4\pi^2 A}{T^2}$ komponentti, ja se on $-\tfrac{4\pi^2}{T^2}x$ eli verrannollinen poikkeamaan. Jousen varassa Newtonin toisesta laista saadaan $a = -\tfrac{k}{m}x$. Kun kertoimet merkitään yhtä suuriksi, $\tfrac{4\pi^2}{T^2} = \tfrac{k}{m}$, ja tästä ratkeaa jaksonaika.

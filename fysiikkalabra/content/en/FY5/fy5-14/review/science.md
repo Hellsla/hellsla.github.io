@@ -1,11 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 3a3366d0ae510376
+CONTENT-HASH: f9a0f2de818f30f3
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-batch delta review: kertaus now the hook's siren at rest, 700 Hz, v = 340 m/s (chapter V): lambda = v/f = 0.486 -> 0.49 m correct; f/v = 2.06 (unit 1/m, said in feedback) and v f = 238 000 m wrong; lesson-answers match; prior chapter link (How waves form and travel) right.
+- Scope: only the three new pysahdy blocks (work queue 20).
+- Timbre block (l. 463): the pitch is the same because the fundamental is the same, and the overtone strengths set the timbre. This matches the harmonic-series paragraph above it and the glossary.
+- Beat block (l. 502): |220 − 224| Hz = 4 Hz and 1/4 Hz = 0.25 s, recomputed. It comes right after the formula and T_H. No later task asks the same thing.
+- Doppler block (l. 569): the source follows its previous wavefront, so the fronts are closer in front, as the paragraph above derives with (v ∓ v_L)T_0. It comes after the predictions, so it gives nothing away.
+- Layout checks at 360 px and the other widths are ok (packet).
+
+## Vanhan sisällön löydökset
+- none

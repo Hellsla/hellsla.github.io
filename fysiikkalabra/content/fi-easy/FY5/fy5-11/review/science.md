@@ -1,9 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 55eaaa9897e5d699
+CONTENT-HASH: 4c40d34f1779d700
 
 ## Blocking
 
 ## Polish
 
+
 ## Checked
-batch delta review: new kertaus choice recomputed: $\lambda = v/f = 5{,}0/0{,}25 = 20\,\text{m}$ (lesson-answers `kertaus-lambda` 20), distractors $v f = 1{,}25 \approx 1{,}3$ (unit $\text{m/s}^2$, stated correctly in the feedback) and $f/v = 0{,}050$ (unit $1/\text{m}$, correct); exactly one correct option, each distractor's feedback names its error; "aukon leveyteen" fits the lesson's slit/opening comparison; realistic swell values; the worked example's split knowns/question paragraph changes nothing. Hash unchanged at start and end.
+- delta review of the three new Pysähdy ja mieti blocks only (scope note 2026-11-20); hash the same at start and end.
+- lesson.md:948 (wavefront and ray): rays point away from the source and are perpendicular to the circular front at every point; agrees with the paragraph just read and the glossary; answerable from it.
+- lesson.md:1009 (Huygens): wavelet radius r = vt = 0,60 m; recomputed in one script (0,30 m/s · 2,0 s = 0,60 m); two significant figures fit the data; uses exactly the paragraph's statement that wavelets travel at the wave's speed. The answer's envelope sentence agrees with the theory.
+- lesson.md:1050 (diffraction): λ/b = 20 m / 0,50 m = 40, so the post is much narrower than λ, the wave bends round it and no clear sheltered region forms; agrees with the paragraph's pier-post statement and the glossary (strong diffraction when width ≲ λ). Distinct from the exercise on the 3,0 cm slit; gives away no later task (inquiry, exit ticket, exercises searched).
+- Placement: each block follows the paragraph (and its figure) it asks about, before the next ### heading; no new physics or later-course content.
+- Rendering: built preview at 360 px with every answer opened: three blocks, no KaTeX error, no overflow (page width 360); capture of the Huygens block checked.
+
+## Vanhan sisällön löydökset
+- (none in the parts read)
