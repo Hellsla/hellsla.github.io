@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 6d3b03bfad9f4e90
+CONTENT-HASH: ad5c1ea54563fc5f
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] inquiry.json, quiz prompt “A student calculated…” — uneven spacing at the joins of the inline pieces (known).
+- [Minor] third Pysähdy block (graph) — the answer ends "The graph shows the same value", but the 8 m point has no value label, so the graph confirms only roughly — soften the sentence or label the point; optional.
 
 ## Checked
-- Round 3 delta (re-broken calculations only). Own Playwright captures of preview/en/fy5-5.html?ratkaisut=1, every details box open, at 390 and 1280 px, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-en-1/r3/: sheet-fy5-5-les-390-0…2.png, sheet-fy5-5-les-1280-0…1.png (opened as combo-fy5-5-1.png, combo-fy5-5-2.png).
-- Every formula the branch changed in inquiry.json was located on the page and opened in the sheets; page scrollWidth equals the viewport with the boxes open, no KaTeX error, no script error.
-- Quiz prompt with the student’s calculation as consecutive inline formulas: it wraps inside the sentence at both widths, the `·` ends the first line and no line starts with a bare dot, the fraction and `≈ 4400 m/s²` stay together, “What is wrong with the solution?” follows on the same line.
+Delta, new blocks only (scope note 2026-11-20). Opened theory-1280-1 and theory-1280-2 (en): all three Pysähdy blocks render as a labelled green-edged card with the question and a closed "Vastaus" disclosure; maths (a = F/m, r, 417 µN, 4 m, 8 m) renders cleanly, units upright with a thin space, nothing clipped. Placement: after the Earth-apple paragraph, after the centre-of-sphere paragraph and after the graph; each is answerable from the paragraph just read and gives nothing away that the exercises later ask. Opened answers and 360 px are covered by the passing layout checks (360/390/768/1280, answer positions); I did not see a capture of an opened answer.
+
+## Vanhan sisällön löydökset
+- none
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4
