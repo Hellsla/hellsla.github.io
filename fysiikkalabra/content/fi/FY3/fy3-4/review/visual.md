@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 85b6e93f673b2a8b
+CONTENT-HASH: 1c475d117a3c45bd
 
 ## Blocking
 
 ## Polish
-- [Minor] lesson.md, "Ilmanpaine ja ylipaine" — "30 metrin syvyydessä" and "Kymmenen metrin syvyydessä" carry a quantity in plain text (untouched reviewed text) — set as $30\,\text{m}$ when next edited.
-- [Minor] Pysähdy-kortti 1, answer — "$3{,}0 \cdot 10^{5}\,\text{Pa} = 300\,\text{kPa}$": significant figures are consistent, fine; the unit conversion $2{,}0\,\text{cm}^2 \to 2{,}0 \cdot 10^{-4}\,\text{m}^2$ is shown only as a substitution (for science/pedagogy: optional one-line conversion remark).
+- [Minor] lesson.md, esimerkin Järkevyys-vaihe — "10 metriä", "12 metriä" ja "$180\,\text{kg}$:n" -ketjun ulkopuolella "10 metriä vettä" on tekstissä ilman LaTeXia (koskematonta tarkastettua tekstiä) — kirjoita $10\,\text{m}$ ja $12\,\text{m}$ seuraavan muokkauksen yhteydessä.
+- [Minor] lesson.md, "Ilmanpaine ja ylipaine" — edellisen kierroksen huomautus "30 metrin" ja "Kymmenen metrin" syvyydestä edelleen tekstinä — sama korjaus.
 
 ## Checked
-- Delta: sim-390, sim-1280 (readout now only ρgh and p; slope and ratio lines gone, the layout is intact, nothing clipped, KaTeX units with thin spaces).
-- theory-1280-1 and -2: three new "Pysähdy ja mieti" cards (closed Vastaus, formulas $60\,\text{N}$, $2{,}0\,\text{cm}^2$, fraction in the answer set correctly; cards match the reading column, no gaps or overlap beside the figures and the photo).
-- Figures did not change in the diff; not reopened.
+- Delta: fy3-4-example-390-2 (vaiheet 5-7). Tulos-vaihe: $p \approx 219\,\text{kPa}$ ja $F \approx 1{,}77\,\text{kN}$ renderöityvät oikein, yksiköissä ohut väli ja desimaalipilkku; uusi virke "Sekä paine että voima annetaan kolmella merkitsevällä numerolla…" on sujuva ja sopii Sijoitus-rivin tulokseen $1765{,}8\,\text{N}$ (1,77 kN, kolme numeroa) sekä paineeseen $218\,720\,\text{Pa}$ (219 kPa).
+- Sijoitus-rivit tasattu yhtäsuuruusmerkeistä, ei leikkautumista 390 px:ssä; Järkevyys-lohko ehjä.
+- Kuvat eivät muuttuneet diffissä; niitä ei avattu uudelleen.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4
