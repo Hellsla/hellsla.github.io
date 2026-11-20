@@ -442,7 +442,11 @@ def fig_rows(html):
     empty stretch; otherwise the figure stands under its text in the reading column. After the unit the text runs on
     in the reading column. On a phone and in print the figure is always under its text."""
     def row(m):
-        side = fig_side(m.group(1), m.group(2))
+        # inside a closed box (details) site.css always stacks the unit (a grid there squeezed the text, fy3-6, fy7-14),
+        # so the class says what is rendered: only a unit outside every box may be .side (fy5-9, fy5-12, 2026-11-20)
+        before = html[:m.start()]
+        in_box = before.count("<details") > before.count("</details>")
+        side = not in_box and fig_side(m.group(1), m.group(2))
         return f'<div class="fig-row {"side" if side else "stack"}"><div class="fig-text">{m.group(1)}</div><div class="fig">{m.group(2)}</div></div>'
     return FIG.sub(row, html)
 
