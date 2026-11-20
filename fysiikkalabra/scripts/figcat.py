@@ -33,7 +33,7 @@ the same figures.py never stales that task, while changing this one's data or dr
 """
 import ast, functools, hashlib, html, importlib.util, json, pathlib, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import courses, figlib, i18n
+import courses, figimage, figlib, i18n
 
 ROOT = courses.ROOT
 CATALOG = ROOT / "docs" / "figures" / "catalog.json"
@@ -107,10 +107,11 @@ def module_from(text):
     return mod
 
 
-def render(fid, lang=i18n.SOURCE, read=None):
+def render(fid, lang=i18n.SOURCE, read=None, raw=False):
     """The SVG of figure `fid` (data-fig set to its id), its words in `lang` from the owner's figures.json there.
     read(relpath) gives figures.py as an earlier commit had it (reviews.Commit.read); default the working tree.
-    Raises KeyError for an unknown id."""
+    raw: the drawing of figures.py without the picture a figure with a row in lessons/<COURSE>/ASETTELU.tsv has as its base
+    (scripts/figimage.py). Raises KeyError for an unknown id."""
     oid, name = split_id(fid)
     o = oid and owner(oid)
     code = read(code_rel(fid)) if (read and o) else None
@@ -122,7 +123,8 @@ def render(fid, lang=i18n.SOURCE, read=None):
     try: svg = mod.FIGURES[name]()
     finally:
         if lang != i18n.SOURCE: figlib.set_language({}, ",")
-    return re.sub(r'^<svg\b(?: data-fig="[^"]*")?', f'<svg data-fig="{html.escape(fid)}"', svg, count=1)
+    svg = re.sub(r'^<svg\b(?: data-fig="[^"]*")?', f'<svg data-fig="{html.escape(fid)}"', svg, count=1)
+    return svg if raw else figimage.apply(svg, fid)
 
 
 def figure_html(fid, lang=i18n.SOURCE, read=None):
@@ -200,7 +202,9 @@ def refs_in(text):
 def slice_of(fid, read):
     """The source slice of figure `fid` as `read(relpath)` sees figures.py (the working tree or a commit), or None."""
     rel = code_rel(fid)
-    return rel and source_slice(read(rel), split_id(fid)[1])
+    code = rel and source_slice(read(rel), split_id(fid)[1])
+    extra = code and figimage.source(fid, read)             # a figure with a picture as its base: its layout row, and the picture itself in the hash (reviews.py)
+    return code + "\n# picture layout: " + extra[0] if extra else code
 
 
 def check_refs(text):
@@ -352,6 +356,7 @@ def build():
         for f in sorted((ROOT / "assets" / d).rglob("*")):
             if not f.is_file() or f.name.startswith(".") or f.suffix.lower() not in PHOTO + IMAGE: continue
             ref = f.relative_to(ROOT / "assets").as_posix()
+            if figimage.is_base(ref): continue             # the base of a figure listed above (ASETTELU.tsv), not a picture of its own
             users = sorted(pic_users.get(ref, []))
             figures.append({"id": ref, "kind": "photo" if f.suffix.lower() in PHOTO else "image", "reuse": "unchecked",
                             "description": "", "source": f"assets/{ref}", "used_in": users})

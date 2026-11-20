@@ -187,6 +187,7 @@ Varattu: claude/22-taulukko-kuva
 Jaettu (build.py / site.css), yksin, #740:n ja #733:n jälkeen ennen kohtaa 21 (opettaja 2026-11-19). Kun tehtäväkortissa on pieni taulukko ja kuva peräkkäin ja ne mahtuvat, ne asettuvat vierekkäin leveällä näytöllä (sääntö "Figures, photos and small tables beside what they explain"); puhelimella allekkain. Samalla taulukon otsikko ei rivity kapeaksi eikä taulukkolaatikkoon jää tyhjää oikeaa reunaa. Malli fy8-3 (fotonit A–E ja energiatasot). check_layout.py-tarkistus uudelle asettelulle; ennen/jälkeen-kuvat 1280 ja 390 px opettajalle. **Kuvat hyväksytty: opettaja 2026-11-19 klo 12.4x ("hyväksyn kuvat").**
 
 ## 24. Uudet kuvat sivustolle (opettaja 2026-11-19; kuvat hyväksytty 15.–18.11.)
+Osa 1 (kuvapohja) ja FY2-pilotti tehty (#768, `scripts/figimage.py`, NOTES.md §3); osat 2–11 vapaat.
 662 Codexin uudelleen piirtämää kuvaa FY1–FY10 ja FY14, opettaja hyväksynyt ja tarkistanut vaihdettaviksi. Lähde: haara
 `claude/dazzling-pasteur-kws2vo`, kansio `uudet_kuvat/` (README, `<MODUULI>-hyvaksytyt-kuvat.zip`: `kuvat/`, `merkinnoin/`,
 `ASETTELU.tsv`, `PAATOS.txt`; `VAIHDETTAVUUS.tsv`). **Haaraa ei yhdistetä mainiin; PNG:t eivät mene mainiin.** Mainin
