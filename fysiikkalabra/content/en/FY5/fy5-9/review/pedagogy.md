@@ -1,15 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 522ac39cb7593754
+VERDICT: PASS
+CONTENT-HASH: 4a77de513fc30091
 ## Blocking
-- content/en/FY5/fy5-9/lesson.md (line 218, second pysahdy block, k = 80 N/m, m = 0,20 kg): the same data as core exercise fy5-9-L1-03 (en exercises.json: 0,20 kg, 80 N/m, asks the frequency; answer 3,18 Hz). The block's answer computes T = 0,31 s, which is the whole first step of that exercise, so the Level 1 exercise is a worked example already seen plus f = 1/T. Fix: give the block other numbers (e.g. k = 50 N/m, m = 0,50 kg, T ≈ 0,63 s) that no exercise, solution or ticket uses.
+- none.
 ## Polish
-- Block 1: answerable and physically right, but the paragraph before already says force zero, speed greatest; a "which way does the force point just after the body passes?" question would add more.
-- Block 3: pure lookup (1,031 x 2,00 s = 2,06 s). Asking first "longer or shorter than the formula value, why?" would make the student reason before the lookup.
-## Checked
-- Round 1 fix: the block no longer matches exit-ticket q1 (k x4); no exit-ticket overlap with 0,31 s.
-- Three blocks, sensible placement (after the rhythm paragraph, after T = 2 pi sqrt(m/k), after the correction table); each answerable from the text just read. Physics right: 2 pi sqrt(0,20/80) = 0,314 s; 1,031 x 2,00 = 2,06 s.
-- Block 3 data (2,00 s, 40 degrees) not in exercises (L2-04 uses 2,00 s for Mars, a different task).
-- Page 1280 capture: block set apart, closed answer ("Vastaus") legible, formulas render. Opened answer at 360 px not viewed by me; layout checks cover it.
-- Language, decimal comma/point and LaTeX units consistent.
+- Block 1: the paragraph before already states "force zero, speed greatest", so the question is answerable but low-demand; asking which way the force points just after passing would make the student reason.
+- Block 3: a pure table lookup; asking first "longer or shorter than the formula value, and why?" would add reasoning before the lookup.
 ## Vanhan sisällön löydökset
-- none noted.
+- Deterministic check "inquiry" is listed FAIL in the packet; old content, not judged here.
+## Checked
+- Three blocks (rhythm paragraph, after T = 2 pi sqrt(m/k), after the correction table): sensible placement, each answerable from the paragraph just read.
+- Round 3 data k = 150 N/m, m = 0,90 kg (T = 0,49 s) and 2,00 s / 40 degrees: grepped exercises.json, inquiry.json, exit-ticket.json; no item uses them (the "0,90" and "0,150" in the en/fi-easy exercises are table values of T and l for a different task). No overlap.
+- Physics: 2 pi sqrt(0,90/150) = 0,487 s -> 0,49 s; 1,031 x 2,00 = 2,06 s. Nothing given away that the chapter later asks (the example solves k, the inverse).
+- fi preview at 360 px, answers opened: no overflow (page width 360), formulas render (no KaTeX errors), summary 40 px high. en and fi-easy blocks are the same in numbers and structure and use the same template.
+- Hash at start and end unchanged.
