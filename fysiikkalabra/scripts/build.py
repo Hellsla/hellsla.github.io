@@ -421,7 +421,8 @@ def boxed_section(piece):
     """A theory section as a closed <details> box: its heading becomes the summary (opens with Enter/Space), the rest the body."""
     m = re.match(r'<h3 class="theory-h">(.*?)</h3>(.*)\Z', piece, flags=re.S)
     if not m: return piece
-    return f'<details class="theory-box"><summary>{m.group(1)}</summary><div class="box-body">{m.group(2)}</div></details>'
+    body = m.group(2).replace('class="fig-row side"', 'class="fig-row stack"')   # site.css stacks a unit inside a box; the class says what is rendered (fig_rows)
+    return f'<details class="theory-box"><summary>{m.group(1)}</summary><div class="box-body">{body}</div></details>'
 
 
 def named_sections(html):
