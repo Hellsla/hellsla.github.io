@@ -237,7 +237,7 @@ Laki pätee sellaisenaan pistemäisille kappaleille. Se pätee myös tasa-aineis
 ```pysahdy
 Ihminen seisoo Maan pinnalla. Mikä etäisyys $r$ pitää sijoittaa gravitaatiolakiin, kun lasketaan Maan ja ihmisen välistä voimaa?
 ---
-Etäisyys Maan keskipisteestä eli Maan säde, noin $6378\,\text{km}$. Ihmisen etäisyys Maan pinnasta ($0\,\text{m}$) ei kelpaa, koska $r$ mitataan keskipisteiden välillä.
+Etäisyys Maan keskipisteestä eli Maan säde, noin $6378\,\text{km}$. Etäisyys Maan pinnasta ei kelpaa, koska $r$ mitataan keskipisteiden välillä.
 ```
 
 Etäisyys on kaavassa toisessa potenssissa. Kun etäisyys kaksinkertaistuu, voima pienenee neljäsosaan, ja kun etäisyys kolminkertaistuu, yhdeksäsosaan. Kun taas toinen massa kaksinkertaistuu, myös voima kaksinkertaistuu. Gravitaatiovoima pienenee etäisyyden kasvaessa nopeasti, mutta se ei koskaan muutu tarkalleen nollaksi. Kuvaaja näyttää voiman, kun kummankin kappaleen massa on $10\,\text{t}$.

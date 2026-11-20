@@ -237,7 +237,7 @@ The law holds as such for point masses. It also holds for uniform spheres and ot
 ```pysahdy
 A person stands on the Earth's surface. Which distance $r$ goes into the law of gravitation when the force between the Earth and the person is calculated?
 ---
-The distance from the Earth's centre, that is the radius of the Earth, about $6378\,\text{km}$. The distance from the surface ($0\,\text{m}$) is wrong, because $r$ is measured between the centres.
+The distance from the Earth's centre, that is the radius of the Earth, about $6378\,\text{km}$. The distance from the surface is wrong, because $r$ is measured between the centres.
 ```
 
 The distance is squared in the formula. When the distance doubles, the force falls to a quarter, and when the distance triples, to a ninth. When one mass doubles, the force doubles too. The gravitational force decreases quickly as the distance grows, but it never becomes exactly zero. The graph shows the force when the mass of each body is $10\,\text{t}$.
