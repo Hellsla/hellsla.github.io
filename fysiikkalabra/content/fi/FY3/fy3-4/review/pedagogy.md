@@ -1,23 +1,23 @@
-VERDICT: FAIL
-CONTENT-HASH: 85b6e93f673b2a8b
+VERDICT: PASS
+CONTENT-HASH: 1c475d117a3c45bd
 
 ## Blocking
-- lesson.md "## Kaava: Paine ja hydrostaattinen paine", kaavat-rivi `hydrostaattinen paine :: p = p_0 + \rho g h` — the box names the total pressure "hydrostaattinen paine", but the next paragraph, the glossary and the example say that only the term $\rho g h$ is hydrostaattinen paine (= ylipaine). A student memorises the label and then loses the p0 distinction the lesson is built on — rename the line to a pressure-in-liquid name (e.g. "paine nesteessä"), and keep "Kaava:" heading consistent with it.
+(none)
 
 ## Polish
-- inquiry.json pred-3 / check-c2: the check repeats pred-3 almost word for word (tube vs. pool, same options), so it retrieves what was just told. Change the check's situation (e.g. slanted or bulging vessel, same depth) so it tests transfer.
-- pred-3 has no experiment, so the hydrostatic paradox is settled only by derivation; the sim cannot refute it. Acceptable, but say in reflect that this one is argued, not measured.
-- inquiry.json check-3 criterion 1 asks for "noin 29 kPa", but the prompt asks only for concepts (paine, ylipaine, voima); drop the number from the criterion or ask for it.
-- lesson.md example stage "Sijoitus": three calculations (ρgh, p, F) in one stage, against "one step per stage". Split F into its own stage.
-- The simulation only computes the formula the student predicts (admitted in the model answer); fine for FY3 since the conclusion says so.
+- inquiry.json pred-3 feedback (Aino, Bea, Cem) — "Teoriatiivistelmä" / "Teoriatiivistelmässä" names a stage the page calls *Teoria* (CLAUDE.md "Lesson page" 5) — write "luvun Teoria-osassa" or just "teoriassa".
+- inquiry.json check-c2 vs pred-3 — the same situation (narrow tube vs wide basin, same height) is asked twice with only the numbers changed, so the check tests recall of the prediction's answer, not transfer — change the check to a different vessel (e.g. a slanted or bulging vessel with equal depth, or two depths in one vessel) or make it optional.
+- sim (Tutki, 390 and 1280 px captures) — the readout already prints ρgh and p, and the line "Jokainen syvyysmetri lisää painetta ρg · 1 m verran" shows the slope before the student reads it from data in exp-1's numeric question; sim-spec.md says ρg is not printed. Remove that line, or keep it only behind Laskennan selitys. As the brief warns, the sim computes the formula it predicts; the model note and conclusion do say "mallin arvot", which is enough for this slot.
+- lesson.md "Mistä paine syntyy?" — about 150 words in one paragraph carrying the microscopic cause, the derivation and the independence of container shape; split after "...ja jäljelle jää ρgh." so the derivation and the conclusion are separate ideas.
 
 ## Checked
-- Learning path: hook, retrieval, prediction, data, theory, example, answers the dam question after the student has acted; stays inside the slot (p = F/A, p0 + ρgh, ylipaine, force perpendicular).
-- Predictions: pred-1 and pred-2 refutable by the sim (150 → 199 kPa; 98 → 122 kPa); feedback repairs the missing-p0 and the "volume matters" misconceptions without restating answers early.
-- exp-1 holds ρ locked, varies h, numeric question has the typical mistakes (Pa/kPa, total/h); conclusion `after` exp-1; workload is one lesson with the optional items.
-- Speakers Aino/Bea/Cem: the right one is a different person from the first prediction; no letter references.
-- Figures at 390 px (brick, graph, simulation): legible, labelled, colour not alone; sim has little text, notes behind named boxes.
-- Etsi virhe, the barometer transfer (three hints, mistake feedback) and check-2 solutions are complete and followable.
-- Exit ticket tests the core idea (p = F/A; ρgh + p0).
-- Finnish: no case slips found ("$290\,\text{kN}$:n voima" correct).
-- Only the sim, one figure (fig-2/4) and the sim captures opened; the rest rests on the packet text.
+- Path: hook (ear pressure) → weight retrieval (optional) → predictions → sim/experiment → theory → example → exercises → checks; the dam question is answered in "Ilmanpaine ja ylipaine" only after the student has committed.
+- Slot goals met: p = F/A, ρgh, line with constant term p₀ (graph slope and intercept read in exp-1, check-2), force perpendicular so scalar; no FY4 content.
+- Predictions can be refuted by exp-1 (2 measurements, the 1.3-fold total vs 2-fold overpressure); wrong-option feedback names the evidence and repairs the confusion of total pressure with overpressure.
+- Variable control is correct: exp-1 locks ρ, varies h; exp-2 the reverse (optional).
+- Worked example has seven stages, one step each, symbolic before numeric, window force with the room's air pressure explained.
+- Etsi virhe (depth measured from the surface) and the mercury barometer transfer task have hints and real common-mistake feedback.
+- Checks: concept distractors are misconception-based; the explain criteria are observable and match the question (eardrum, overpressure, F = Δp·A).
+- Exit ticket tests the core idea (p = F/A; ρgh plus p₀).
+- Finnish and units read correctly; the approved formula-row name is not a finding.
+- Phone captures (390 px) legible; wide layout puts sim beside the experiments.
