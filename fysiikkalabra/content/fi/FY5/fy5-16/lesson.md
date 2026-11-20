@@ -208,7 +208,7 @@ missä $L$ on A-painotettu melutaso korvalla (laskuissa lyhyesti dB), $L_0 = 85\
 ```pysahdy
 Melutaso korvalla on $115\,\text{dB}$. Kuinka kauan kestää, että ylempää toiminta-arvoa vastaava annos kertyy?
 ---
-Nyt $n = (115\,\text{dB} - 85\,\text{dB}) : 3\,\text{dB} = 10$. Vertailuaika on $8\,\text{h} : 2^{10} \approx 28\,\text{s}$.
+Taso on $30\,\text{dB}$ toiminta-arvon yläpuolella, joten $n = 30\,\text{dB} : 3\,\text{dB} = 10$. Vertailuaika on $8\,\text{h} : 2^{10} \approx 28\,\text{s}$.
 ```
 
 Vertailuaika ei ole sallittu eikä turvallinen aika, vaan laskennallinen vertailuarvo. Vertailuannoksen alittaminen ei takaa yksilön kuulon turvallisuutta, koska ihmisten kuulo kestää melua eri tavoin, eikä se poista työnantajan muita velvoitteita: ne alkavat jo alemmasta toiminta-arvosta $80\,\text{dB(A)}$. Altistus kannattaa pitää selvästi vertailuannoksen alapuolella. Melutaso korvalla saadaan luvun *Intensiteetti ja desibeliasteikko* säännöillä: kaksi yhtä voimakasta lähdettä nostaa tasoa noin $3\,\text{dB}$, ja etäisyyden kaksinkertaistuminen pistemäisestä lähteestä laskee tasoa avoimessa tilassa noin $6\,\text{dB}$. Kuulonsuojain vähentää korvaan pääsevää tasoa, hyvin asetettuna, vaimennuksensa verran.
