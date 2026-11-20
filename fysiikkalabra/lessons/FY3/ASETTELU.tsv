@@ -1,0 +1,62 @@
+kuvan tunniste	tyyppi	tiedosto	x	y	leveys	korkeus	merkintöjen siirrot (järjestysnumero: dx, dy)	ilman taustaa (merkintöjen järjestysnumerot)
+fy3-1/forcemeter	diagram	fy3-1-forcemeter.webp	-1.3	0	603	417.1		
+fy3-1/pick-extra	diagram	fy3-1-pick-extra.webp	0	1.2	199	296		
+fy3-1/pick-long-pull	diagram	fy3-1-pick-long-pull.webp	-0.4	0	200	297.5		
+fy3-1/pick-rest	diagram	fy3-1-pick-rest.webp	0	1.2	199	296		
+fy3-1/pick-weight-only	diagram	fy3-1-pick-weight-only.webp	-0.8	-0.8	201	299		
+fy3-2/carry-lift	diagram	fy3-2-carry-lift.webp	3.7	2.5	594.1	324.3		
+fy3-2/joule	diagram	fy3-2-joule.webp	1.2	0	597	349.5		
+fy3-2/lift-work	diagram	fy3-2-lift-work.webp	0	0	597	335.8		
+fy3-3/kelvin-scale	diagram	fy3-3-kelvin-scale.webp	0	12.5	600	260		[9]
+fy3-3/micro-model	diagram	fy3-3-micro-model.webp	4.9	8.6	591.1	306.7		
+fy3-3/system	diagram	fy3-3-system.webp	0	0	600	351.2		
+fy3-4/pressure-area	diagram	fy3-4-pressure-area.webp	0	0	600	387.5		
+fy3-4/water-column	diagram	fy3-4-water-column.webp	2.6	2.6	615.4	316.7		
+fy3-5/energy-balance	diagram	fy3-5-energy-balance.webp	9.9	9.9	591.1	307.9		
+fy3-5/two-ways	diagram	fy3-5-two-ways.webp	0	0	600	327.5		
+fy3-5/work-sign	diagram	fy3-5-work-sign.webp	1.2	2.5	597	322.1		
+fy3-6/c-bars	diagram	fy3-6-c-bars.webp	0	-1.2	600	360		
+fy3-6/calorimeter	diagram	fy3-6-calorimeter.webp	0	0	600	440		
+fy3-6/water-sand	diagram	fy3-6-water-sand.webp	0	1.2	600	392.5		
+fy3-7/micro-model	diagram	fy3-7-micro-model.webp	1.2	0	597	317.2		
+fy3-14/energy-bars	diagram	fy3-14-energy-bars.webp	0	0	609.1	303.3		[0,1,2,3]
+fy3-8/particles	diagram	fy3-8-particles.webp	3.8	1.3	606.1	330.8		
+fy3-8/rod-expansion	diagram	fy3-8-rod-expansion.webp	5	5	597	309.7		
+fy3-8/volume-expansion	diagram	fy3-8-volume-expansion.webp	0	-1.2	600	360		
+fy3-9/iso-processes	diagram	fy3-9-iso-processes.webp	0	0	600	420		
+fy3-9/micro-boyle	diagram	fy3-9-micro-boyle.webp	0	0	600	340		
+fy3-10/helium-ilma	diagram	fy3-10-helium-ilma.webp	3.7	-1.2	594.1	331.7	{"0":[0,14],"1":[0,14],"2":[0,14],"3":[0,14],"4":[0,14],"5":[0,14]}	
+fy3-10/mole-masses	diagram	fy3-10-mole-masses.webp	0	0	603	325.4		
+fy3-10/paine-ja-tekijat	diagram	fy3-10-paine-ja-tekijat.webp	1.2	0	597	307.2		
+fy3-11/heat-engine	diagram	fy3-11-heat-engine.webp	1.2	0	597	349.5		
+fy3-11/heat-pump	diagram	fy3-11-heat-pump.webp	1.2	0	597	349.5		
+fy3-11/piston-work	diagram	fy3-11-piston-work.webp	1.2	0	597	339.6	{"4":[0,17]}	[3]
+fy3-12/earth-flows	diagram	fy3-12-earth-flows.webp	2.7	1.3	636.8	287.9		
+fy3-12/energy-balance	diagram	fy3-12-energy-balance.webp	-2.5	-2.5	603	353		
+fy3-12/heat-transfer	diagram	fy3-12-heat-transfer.webp	6.2	7.4	594.1	308.2		
+fy3-12/wall-temperature	diagram	fy3-12-wall-temperature.webp	0	3.8	615.4	315.4		[5]
+fy3-1/hero	illustration	fy3-1-hero.webp						
+fy3-1/scene	illustration	fy3-1-scene.webp						
+fy3-2/hero	illustration	fy3-2-hero.webp						
+fy3-3/hero	illustration	fy3-3-hero.webp						
+fy3-3/scene	illustration	fy3-3-scene.webp						
+fy3-13/hero	illustration	fy3-13-hero.webp						
+fy3-4/hero	illustration	fy3-4-hero.webp						
+fy3-4/scene	illustration	fy3-4-scene.webp						
+fy3-5/hero	illustration	fy3-5-hero.webp						
+fy3-6/hero	illustration	fy3-6-hero.webp						
+fy3-6/scene	illustration	fy3-6-scene.webp						
+fy3-7/hero	illustration	fy3-7-hero.webp						
+fy3-7/scene	illustration	fy3-7-scene.webp						
+fy3-14/hero	illustration	fy3-14-hero.webp						
+fy3-8/hero	illustration	fy3-8-hero.webp						
+fy3-8/scene	illustration	fy3-8-scene.webp						
+fy3-9/hero	illustration	fy3-9-hero.webp						
+fy3-10/hero	illustration	fy3-10-hero.webp						
+fy3-10/scene	illustration	fy3-10-scene.webp						
+fy3-11/hero	illustration	fy3-11-hero.webp						
+fy3-15/hero	illustration	fy3-15-hero.webp						
+fy3-15/scene	illustration	fy3-15-scene.webp						
+fy3-12/hero	illustration	fy3-12-hero.webp						
+fy3-12/scene	illustration	fy3-12-scene.webp						
+fy3-16/hero	illustration	fy3-16-hero.webp						

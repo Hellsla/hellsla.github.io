@@ -3,24 +3,7 @@
 > **Miksi** padon muuri on paljon paksumpi pohjalta kuin yläreunasta? Muuria vasten on kuitenkin samaa vettä koko syvyydeltä.
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: betonipato vuoristolaaksossa sivulta nähtynä. Padon takana on syvä tekojärvi. Järven vesi tummuu syvyyden kasvaessa. Pato on yläreunasta kapea ja levenee alaspäin. Pohjalta se on moninkertaisesti paksumpi." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy34h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy34h-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy34h-concrete" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e3dccb"/><stop offset="1" stop-color="#c9c2b2"/></linearGradient><linearGradient id="fy34h-river" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#fy34h-sky)"/>
-  <path d="M819,118 Q817,87.5 853,91 Q867.5,58.5 903.5,69.5 Q936,51.5 954,85.5 Q986.5,89 983,118 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <path d="M0,260 L180,120 L330,230 L470,90 L640,250 L800,140 L1000,260 L1200,160 V600 H0 Z" fill="#c4ccd4" stroke-linejoin="round"/>
-  <path d="M0,300 L160,220 L300,290 L480,200 L620,300 L820,230 L1050,310 L1200,260 V600 H0 Z" fill="#8a96a3" stroke-linejoin="round"/>
-  <path d="M0,330 L8.5,311.5 L17,330 L26,310.5 L35,330 L46,304 L57,330 L68,304.5 L78.5,330 L94,291.5 L109,330 L121.5,300 L133.5,330 L146,299.5 L158.5,330 L171,299.5 L183.5,330 L196,299.5 L208.5,330 L221,299.5 L233.5,330 L244.5,303.5 L256,330 L271,292 L286,330 L300,294 L314.5,330 L324,307.5 L334,330 L348,295.5 L361.5,330 L375,297.5 L388,330 L403,291 L418.5,330 L430,302 L442,330 L457,291.5 L472,330 L484,301 L496,330 L508,300.5 L520.5,330 L532.5,301 L544.5,330 L553.5,310 L562.5,330 L571.5,310 L580.5,330 L592,303 L603.5,330 L618,292.5 L633,330 L645.5,299.5 L658,330 L667.5,308.5 L677,330 L689,300 L701.5,330 L715.5,295 L729.5,330 L738,311.5 L746.5,330 L759.5,298 L772,330 L781,311 L789.5,330 L801,303.5 L812,330 L822,307.5 L831.5,330 L845.5,296 L859,330 L872.5,296 L886,330 L900.5,294 L914.5,330 L926.5,302 L938,330 L949.5,302.5 L961,330 L972.5,302.5 L984,330 L995.5,303 L1007,330 L1016,310 L1025,330 L1037,301 L1049,330 L1061,301.5 L1073,330 L1088,291 L1103.5,330 L1113.5,306.5 L1123.5,330 L1139,290.5 L1154.5,330 L1167.5,297.5 L1180.5,330 L1194.5,295.5 L1208.5,330 V630 H0 Z" fill="#6c757d" stroke-linejoin="round"/>
-  <rect x="0" y="330" width="1200" height="270" fill="#c9c2b2"/>
-  <path d="M0,600 V560 Q300,540 600,560 Q900,580 1200,555 V600 Z" fill="#d9b26a" stroke-linejoin="round"/>
-  <path d="M0,250 H560 L620,560 H0 Z" fill="url(#fy34h-water)" stroke-linejoin="round"/>
-  <path d="M80,280 q30.0,-6 60.0,0 t60.0,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.7"/>
-  <path d="M300,300 q22.5,-6 45.0,0 t45.0,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.7"/>
-  <path d="M150,340 q25.0,-6 50.0,0 t50.0,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.7"/>
-  <path d="M540,224 H600 L760,560 H560 Z" fill="url(#fy34h-concrete)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <line x1="548.5" y1="300" x2="632" y2="300" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="553.5" y1="380" x2="670.5" y2="380" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="558" y1="460" x2="708.5" y2="460" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="530" y="214" width="80" height="12" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <path d="M760,560 Q900,520 1200,540 V600 H760 Z" fill="url(#fy34h-river)" stroke-linejoin="round"/>
+  <image href="pics/fy3/fy3-4-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Ydinajatus
@@ -33,25 +16,13 @@ $p = \dfrac{F}{A}$, joten $p = \dfrac{60\,\text{N}}{2{,}0 \cdot 10^{-4}\,\text{m
 ```
 
 <svg data-fig="pressure-area" viewBox="0 0 600 380" role="img" aria-label="Sama voima F kohdistuu samanlaiseen tiiliskiveen kahdella tavalla. Vasemmalla tiili on pystyssä ja koskettaa alustaa pienellä alalla A1. Silloin paine p1 = F/A1 on suuri. Oikealla tiili on kyljellään ja koskettaa alustaa kolme kertaa suuremmalla alalla A2 = 3 A1. Silloin paine p2 = F/A2 on kolmasosa vasemman paineesta. Voimanuolet ovat yhtä pitkät. Kosketusalat ovat mittakaavassa, kuva on muuten kaaviokuva." style="max-width:100%;font-size:24px">
-  <defs><pattern id="fy34-snow" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="#eef5f9"/><circle cx="3" cy="4" r="1.3" fill="#a9d1f0"/><circle cx="10" cy="10" r="1.3" fill="#a9d1f0"/></pattern></defs>
-  <rect x="12" y="240" width="576" height="22" fill="url(#fy34-snow)" stroke="#1f2933" stroke-width="2"/>
-  <line x1="300" y1="30" x2="300" y2="330" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="7 6"/>
+  <image href="pics/fy3/fy3-4-pressure-area.webp" x="0" y="0" width="600" height="387.5" preserveAspectRatio="none"/>
   <foreignObject x="96" y="9.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{pystyssä}$</div></foreignObject>
-  <rect x="130" y="120" width="40" height="120" rx="3" fill="#b8622d" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="150" y1="58" x2="150" y2="100" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M150,117 L142,99 L158,99 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="164" y="71.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$F$</div></foreignObject>
-  <line x1="130" y1="241" x2="170" y2="241" stroke="#e8590c" stroke-width="6" stroke-linecap="butt"/>
-  <path d="M130,270 V282 M130,276 H170 M170,270 V282" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <foreignObject x="133.5" y="285.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$A_1$</div></foreignObject>
   <foreignObject x="115" y="317" width="70" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$p_1 = \dfrac{F}{A_1}$</div></foreignObject>
   <foreignObject x="383.5" y="9.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kyljellään}$</div></foreignObject>
-  <rect x="390" y="200" width="120" height="40" rx="3" fill="#b8622d" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="450" y1="138" x2="450" y2="180" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M450,197 L442,179 L458,179 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="464" y="151.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$F$</div></foreignObject>
-  <line x1="390" y1="241" x2="510" y2="241" stroke="#e8590c" stroke-width="6" stroke-linecap="butt"/>
-  <path d="M390,270 V282 M390,276 H510 M510,270 V282" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <foreignObject x="408.5" y="285.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$A_2 = 3A_1$</div></foreignObject>
   <foreignObject x="415" y="317" width="70" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$p_2 = \dfrac{F}{A_2}$</div></foreignObject>
 </svg>
@@ -62,20 +33,10 @@ Kaasun paine syntyy mikromallin mukaan hiukkasten törmäyksistä astian seinäm
 Tarkastellaan nestettä, joka on levossa. Pinnan alla on vaakasuora pinta, jonka pinta-ala on $A$. Siihen kohdistuu sen yläpuolella olevan vesipatsaan paino. Patsaan korkeus on syvyys $h$ ja tilavuus on $V = Ah$. Tiheys $\rho$ on massa tilavuutta kohti ($m = \rho V$). Siksi patsaan massa on $\rho A h$ ja paino on $G = mg = \rho A h g$. Paine on paino jaettuna alalla. Pinta-ala supistuu pois eli häviää jakolaskussa, ja jäljelle jää $\rho g h$. Nesteen painosta syntyvää painetta sanotaan hydrostaattiseksi paineeksi. Se ei riipu astian muodosta eikä veden kokonaismäärästä. Se riippuu vain syvyydestä ja nesteen tiheydestä.
 
 <svg data-fig="water-column" viewBox="0 0 600 300" role="img" aria-label="Vesipatsas, jonka pohjan pinta-ala on A ja korkeus on syvyys h. Patsaan paino G = ρAhg painaa pohjaa alaspäin. Paine on paino jaettuna alalla, p = G/A = ρgh. Pinta-ala supistuu pois. Kaaviokuva, ei mittakaavassa." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy34-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
-  <rect x="30" y="50" width="340" height="230" fill="url(#fy34-water)" fill-opacity="0.55"/>
-  <line x1="30" y1="50" x2="370" y2="50" stroke="#2f74b5" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M30,22 V280 H370 V22" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <image href="pics/fy3/fy3-4-water-column.webp" x="2.6" y="2.6" width="615.4" height="316.7" preserveAspectRatio="none"/>
   <foreignObject x="44" y="19.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{vesipinta}$</div></foreignObject>
-  <rect x="170" y="50" width="80" height="170" fill="#2f74b5" stroke="#1f2933" stroke-width="2" fill-opacity="0.3" stroke-dasharray="7 5"/>
-  <line x1="170" y1="220" x2="250" y2="220" stroke="#1f2933" stroke-width="6" stroke-linecap="butt"/>
-  <line x1="210" y1="80" x2="210" y2="189" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M210,214 L198.5,188 L221.5,188 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="136" y="117" width="24" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:30px;color:#c92a2a">$G$</div></foreignObject>
   <foreignObject x="198" y="234" width="24" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">$A$</div></foreignObject>
-  <line x1="275" y1="50" x2="275" y2="220" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="267" y1="50" x2="283" y2="50" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="267" y1="220" x2="283" y2="220" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="290" y="117" width="24" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px">$h$</div></foreignObject>
   <foreignObject x="392" y="25.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{patsaan paino}$</div></foreignObject>
   <foreignObject x="392" y="59" width="95" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px">$G = \rho A h g$</div></foreignObject>
@@ -236,25 +197,5 @@ Kolmas virhe on unohtaa ilmanpaine. Pelkkä $\rho g h$ antaa vain ylipaineen. Ko
 - Ilmanpaine on merenpinnan tasolla noin $101\,\text{kPa}$. Vedessä paine kasvaa noin yhden ilmanpaineen verran jokaista kymmentä metriä kohti.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: sukeltaja on syvällä järvessä. Vesi tummuu syvemmälle mentäessä. Ilmakuplat nousevat pintaan. Sukeltajan ranteessa on syvyys- ja painemittari." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy34s-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy34s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient></defs>
-  <rect x="0" y="0" width="600" height="360" fill="url(#fy34s-water)"/>
-  <rect x="0" y="0" width="600" height="24" fill="url(#fy34s-sky)"/>
-  <path d="M0,24 q25,-6 50,0 t50,0 t50,0 t50,0 t50,0 t50,0 t50,0 t50,0 t50,0 t50,0 t50,0 t50,0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M0,360 V320 Q150,300 300,330 T600,316 V360 Z" fill="#d9b26a" stroke-linejoin="round"/>
-  <circle cx="360" cy="180" r="6" fill="none" stroke="#ffffff" stroke-width="2.5"/>
-  <circle cx="368" cy="150" r="8" fill="none" stroke="#ffffff" stroke-width="2.5"/>
-  <circle cx="356" cy="116" r="10" fill="none" stroke="#ffffff" stroke-width="2.5"/>
-  <circle cx="366" cy="78" r="12" fill="none" stroke="#ffffff" stroke-width="2.5"/>
-  <circle cx="358" cy="44" r="14" fill="none" stroke="#ffffff" stroke-width="2.5"/>
-  <g transform="rotate(-8 300 230)">
-  <path d="M430,226 L500,206 L506,230 L436,246 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M430,246 L500,252 L496,276 L428,262 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <rect x="270" y="214" width="170" height="44" rx="22" fill="#1f2933"/>
-  <rect x="300" y="192" width="110" height="26" rx="13" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="250" cy="230" r="26" fill="#1f2933"/>
-  <rect x="226" y="218" width="30" height="18" rx="6" fill="#eef5f9" stroke="#ffffff" stroke-width="2"/>
-  <path d="M280,252 L216,276" fill="none" stroke="#1f2933" stroke-width="18" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="232" cy="270" r="11" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="232" y1="270" x2="237" y2="263" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  </g>
+  <image href="pics/fy3/fy3-4-scene.webp" x="0" y="0" width="600" height="360" preserveAspectRatio="none"/>
 </svg>
