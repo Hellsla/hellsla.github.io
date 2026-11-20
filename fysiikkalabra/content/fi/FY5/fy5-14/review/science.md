@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: ddf061ac0318f2d2
+CONTENT-HASH: 6867eb1e1e7bd0d1
 
 ## Blocking
 
 ## Polish
-- content/fi/FY5/fy5-14/lesson.md:466 — "Äänenkorkeus eli perustaajuus on sama" sets a perceived quantity equal to a physical one; the theory and glossary say pitch *is determined by* the fundamental — e.g. "Äänenkorkeus on sama, koska perustaajuus on sama" (as en and fi-easy say).
+- content/fi/FY5/fy5-14/lesson.md:464 — "mikä sen äänenkorkeus?" asks for a value, but the answer gives only what pitch depends on. Either ask "Mistä äänenkorkeus riippuu?" (as fi-easy does) or add to the answer "kuulemme äänen perustaajuutta $250\,\text{Hz}$ vastaavan korkuisena".
 
 ## Checked
-- Scope: only the three new pysahdy blocks (work queue 20); old content not judged except where it bears on a block.
-- Timbre block (l. 463): same fundamental, therefore same pitch; different overtone strengths give the timbre. This agrees with "Sointiväri ja harmoninen sarja" just above it and with the glossary. It can be answered from that paragraph.
-- Beat block (l. 502): f_H = |220 − 224| Hz = 4 Hz, T_H = 1/f_H = 0,25 s, recomputed. It comes right after the formula and T_H = 1/f_H. 4 Hz is under the ~10 Hz limit the next paragraph gives, so the beats are audible. Exercises, checks and exit ticket ask no 220/224 Hz beat task, so nothing is given away.
-- Doppler block (l. 569): the mechanism (the source follows its previous wavefront) is the one in the paragraph above it: λ_front = (v − v_L)T_0 < λ_back = (v + v_L)T_0, checked numerically. It comes after the Ennusta and Tutki stages, so no prediction is revealed. The cyclist check (moving listener) is not given away.
+- Scope: only the changed pysahdy block (round 2, work queue 20); the beat and Doppler blocks are unchanged since my PASS.
+- Physics recomputed: 500 = 2·250 and 750 = 3·250, so the peaks form the harmonic series f_n = n·250 Hz. The fundamental is 250 Hz, both as the lowest peak and as the peak spacing (gcd = 250 Hz).
+- "Muut huiput ovat sen monikertoja eli yläsäveliä" agrees with the definitions just above: f_1 is the lowest, the overtones are above it, and pitch comes from the fundamental. It also matches the glossary (äänenkorkeus, harmoninen sarja).
+- "Perustaajuus on alin huippu" is said for this data, where the lowest peak is also the spacing. That is consistent with the next section's "yleensä myös alimman piikin taajuus" (C, no wrong picture).
+- Answerable from the paragraph just read. The student met "spektri" and its peaks in the Tutki activity "Lue FFT-spektri", which comes earlier on the page.
+- Nothing given away: the only spectrum task (Tutki, 200 Hz series) comes before Teoria and uses different numbers. No 250 Hz spectrum task appears in the exit ticket or the exercises.
+- The previous Polish (pitch set equal to the fundamental) is resolved by the new wording.
 - Deterministic layout checks at 360, 390, 768 and 1280 px are ok (packet).
 
 ## Vanhan sisällön löydökset
