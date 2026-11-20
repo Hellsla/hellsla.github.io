@@ -1,8 +1,9 @@
 ok   lint
 ok   latex
+ok   i18n (en 0 error(s); fi-easy 0 error(s))
 ok   build
 ok   sims
-ok   inquiry (195 passed, 0 failed)
+FAIL inquiry
 ok   answer positions
 ok   layout 360 px
 ok   layout 390 px

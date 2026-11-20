@@ -168,6 +168,12 @@ In the chapter *Spring force and spring energy* the force of a spring was $F = -
 
 The figure shows the rhythm of the motion. At the extreme positions $x = A$ and $x = -A$ the speed is zero, but the force and the acceleration are greatest. At the equilibrium position the situation is the opposite: the force and the acceleration are zero and the speed is greatest. The acceleration always points towards the equilibrium position, in the same direction as the force.
 
+```pysahdy
+At the equilibrium position the force is zero. Why does the body not stop there?
+---
+The body already has speed when it arrives at the equilibrium position, and speed does not vanish just because the force is zero. The body carries on to the other side, where the force starts to slow it down.
+```
+
 ### Position as a function of time
 When the position of a simple harmonic oscillator is plotted as a function of time, the result is a sine-shaped curve. The concepts of the chapter *Describing oscillation: period, frequency and amplitude* can be seen in it directly. The amplitude $A$ is the greatest displacement from the equilibrium position. The period $T$ is the time in which the body makes one complete oscillation back and forth and returns to the same point moving in the same direction, for example the interval between two successive peaks. The frequency $f = \tfrac{1}{T}$ tells us the number of oscillations per second.
 
@@ -208,6 +214,12 @@ When a body oscillates on a spring and the only force along the motion is the ha
 period of a harmonic oscillator :: T = 2\pi\sqrt{\frac{m}{k}}
 ```
 where $T$ is the period ($\text{s}$), $m$ the mass of the oscillating body ($\text{kg}$) and $k$ the spring constant of the spring ($\text{N/m}$). A greater mass accelerates more slowly under the same force, so the period grows as the mass grows. A stiffer spring gives a greater force, so the period becomes shorter. The square root means that the mass must be quadrupled to double the period. The formula holds for a spring hanging vertically too: the weight only shifts the equilibrium position, and the displacement from it obeys the same law.
+
+```pysahdy
+A spring has the spring constant $150\,\text{N/m}$ and a body of mass $0.90\,\text{kg}$ is attached to it. What is the period of the oscillation?
+---
+The period is $T = 2\pi\sqrt{\tfrac{m}{k}}$, so $T = 2\pi\sqrt{\tfrac{0.90\,\text{kg}}{150\,\text{N/m}}} \approx 0.49\,\text{s}$.
+```
 
 The formula can be justified with circular motion. When a body moves uniformly around a circle of radius $A$, its shadow on a wall in the direction of a diameter moves back and forth. The acceleration of the shadow is a component of the centripetal acceleration $a_\text{n} = \tfrac{4\pi^2 A}{T^2}$, and it is $-\tfrac{4\pi^2}{T^2}x$, that is, proportional to the displacement. For a mass on a spring Newton's second law gives $a = -\tfrac{k}{m}x$. When the coefficients are set equal, $\tfrac{4\pi^2}{T^2} = \tfrac{k}{m}$, and the period can be solved from this.
 
@@ -255,6 +267,12 @@ The formula is an approximation that holds for small swing angles. As the starti
 | $60^\circ$ | $1.073$ |
 
 For swings of less than $10^\circ$ the difference is less than $0.2\,\%$, which is smaller than the uncertainty of timing by hand.
+
+```pysahdy
+According to the formula the period of a pendulum is $2.00\,\text{s}$. How long is it in reality when the starting angle is $40^\circ$?
+---
+The table gives $T : T_0 = 1.031$, so $T = 1.031 \cdot 2.00\,\text{s} \approx 2.06\,\text{s}$.
+```
 
 ### Energy in oscillation
 When friction and air resistance are neglected, the mechanical energy of the oscillator is conserved. The energy of a mass on a spring is the sum of the kinetic energy and the elastic potential energy of the spring. At the extreme position the speed is zero and all the energy is potential energy, so

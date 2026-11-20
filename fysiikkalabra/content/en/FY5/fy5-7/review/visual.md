@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 37a367455b7f811a
+CONTENT-HASH: 0a0be1a50db41d58
 
 ## Blocking
-(none)
 
 ## Polish
-(none new)
+- [Minor] third block — "at the time $0$" has no unit; "at $t = 0$" and "at $t = 0.35\,\text{s}$" would match the notation (optional).
+
+## Vanhan sisällön löydökset
+- (none; old content not judged beyond what the blocks need)
 
 ## Checked
-- Delta round 2: the only change since the round-1 PASS is "tasks" to "calculation tasks" in the sentence on the phase constant C (packet line 245). I judged it in the packet source text.
-- No captures reopened: the change is wording only, with no figure, layout or notation effect. The round-1 figure and capture judgements stand.
-- The sentence reads naturally. It is more precise because it separates the calculation tasks from the fitting tasks. The notation $C = 0$ and $t = 0$ is unchanged and in LaTeX.
+- fy5-7-theory-1280-1.png and -2.png (en): all three "Pysähdy ja mieti" blocks render as closed cards with a clear label and a "Vastaus" button; maths (2,5 cm, 20, 8,0 s, 0,35 s) set as KaTeX; no overlap with the photo or figures. Layout 360/390/768/1280 ok in the packet. The captures show the answers closed, so the opened answers were judged from the source text and the packet's layout check only.
+- Physics of the blocks: x = -2,5 cm; T = 8,0 s : 20 = 0,40 s; 0,35 s is half a period, so T = 0,70 s. All correct, each answerable from the paragraph just read, none gives away the worked example (5 oscillations in 3,0 s) or later tasks. Placement good.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

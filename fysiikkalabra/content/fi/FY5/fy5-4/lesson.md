@@ -134,6 +134,12 @@ Kuvassa kappaleen nopeus on ensin $\overline{v}_1$ ja hetken kuluttua $\overline
 ### Normaalikiihtyvyys osoittaa keskipisteeseen
 Tasaisen ympyräliikkeen kiihtyvyys on kohtisuorassa nopeutta vastaan ja osoittaa radan joka kohdassa kohti ympyrän keskipistettä. Sitä kutsutaan **normaalikiihtyvyydeksi** $\overline{a}_\text{n}$ tai **keskeiskiihtyvyydeksi**. Nimi tulee siitä, että kiihtyvyys on radan normaalin eli tangenttia vastaan kohtisuoran suoran suuntainen. Koska kiihtyvyydellä ei ole nopeuden suuntaista osaa, vauhti ei kasva eikä pienene: kiihtyvyys muuttaa vain nopeuden suuntaa.
 
+```pysahdy
+Kappale kiertää ympyrärataa tasaisella vauhdilla. Miksi vauhti ei kasva, vaikka kappaleella on kiihtyvyys?
+---
+Kiihtyvyys on kohtisuorassa nopeutta vastaan, joten sillä ei ole nopeuden suuntaista osaa. Se muuttaa vain nopeuden suuntaa.
+```
+
 ### Kokonaisvoima osoittaa keskipisteeseen
 Newtonin toisen lain mukaan kokonaisvoima $\Sigma\overline{F}$ on samansuuntainen kuin kiihtyvyys. Tasaisessa ympyräliikkeessä kappaleeseen vaikuttavien voimien summa osoittaa siis kohti radan keskipistettä. Tätä keskipisteeseen osoittavaa kokonaisvoimaa kutsutaan **keskeisvoimaksi**. Ilman sitä kappale jatkaisi Newtonin ensimmäisen lain mukaisesti suoraan, radan tangentin suuntaan.
 
@@ -214,6 +220,12 @@ missä $a_\text{n}$ on normaalikiihtyvyys ($\text{m/s}^2$), $v$ ratanopeus ($\te
 
 Miksi juuri nopeuden neliö? Nopeus vaikuttaa kahdesti. Suuremmalla nopeudella nopeusnuoli on pidempi, joten sama suunnan kääntyminen merkitsee suurempaa nopeuden muutosta $\Delta\overline{v}$. Lisäksi kappale kiertää kaaren nopeammin, joten nopeus kääntyy saman kulman lyhyemmässä ajassa. Kumpikin tekijä kasvaa nopeuden mukana, joten kiihtyvyys kasvaa nopeuden neliön mukana. Samalla nopeudella pienemmän säteen kaarteessa nopeuden suunta kääntyy nopeammin, joten kiihtyvyys on suurempi.
 
+```pysahdy
+Pyöräilijä kulkee nopeudella $6{,}0\,\text{m/s}$ kaarteessa, jonka säde on $12\,\text{m}$. Mikä on normaalikiihtyvyys?
+---
+$a_\text{n} = \tfrac{v^2}{r} = \tfrac{(6{,}0\,\text{m/s})^2}{12\,\text{m}} = 3{,}0\,\text{m/s}^2$, ja se osoittaa kaarteen keskipisteeseen.
+```
+
 <svg data-fig="kuvaaja" viewBox="0 0 600 360" role="img" aria-label="Kuvaaja mittakaavassa: vaaka-akselilla ratanopeus v metreinä sekunnissa nollasta 30:een, pystyakselilla normaalikiihtyvyys a n metreinä sekunnissa toiseen nollasta 18:aan. Kaksi oranssia käyrää nousee origosta yhä jyrkemmin. Säteellä 50 metriä yhtenäinen käyrä: nopeudella 10 kiihtyvyys on 2, nopeudella 20 se on 8 ja nopeudella 30 se on 18. Säteellä 100 metriä katkoviivakäyrä on puolet alempana: nopeudella 20 kiihtyvyys on 4 ja nopeudella 30 se on 9. Pisteet nopeuksilla 10 ja 20 on merkitty yhtenäiselle käyrälle apuviivoin." style="max-width:100%;font-size:24px">
   <line x1="141.5" y1="300" x2="141.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="197.5" y1="300" x2="197.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -278,6 +290,12 @@ Newtonin toisen lain mukaan kappaleeseen vaikuttavien voimien summan suuruus on 
 \Sigma F = m\,\frac{v^2}{r}
 ```
 missä $\Sigma F$ on keskipisteeseen osoittava kokonaisvoima ($\text{N}$) ja $m$ kappaleen massa ($\text{kg}$). Laskussa toimitaan kuten luvussa *Voimakuvio ja voimien yhteisvaikutus*: piirretään ensin voimakuvio ja valitaan yksi akseli osoittamaan kohti radan keskipistettä. Silloin keskipisteeseen osoittavat voimat ovat positiivisia, poispäin osoittavat negatiivisia, ja niiden summa on $m\tfrac{v^2}{r}$. Kohtisuoraan ratatasoa vastaan kappale ei kiihdy, joten siinä suunnassa voimien summa on nolla.
+
+```pysahdy
+Kappale kiertää ympyrärataa tasaisella vauhdilla. Koska vauhti pysyy samana, voimien summa on nolla. Pitääkö tämä paikkansa?
+---
+Ei pidä. Nopeuden suunta muuttuu, joten kiihtyvyys ei ole nolla. Voimien summa on $m\tfrac{v^2}{r}$ ja osoittaa keskipisteeseen.
+```
 
 ### Nyppylä ja notko
 Kun auto ajaa tasaisella vauhdilla nyppylän huipun yli, se on hetken ympyräradalla, jonka keskipiste on tien alapuolella. Kiihtyvyys osoittaa silloin alas, joten paino on suurempi kuin tien tukivoima: $G - N = m\tfrac{v^2}{r}$. Tukivoima on painoa pienempi, ja matkustaja tuntee itsensä kevyeksi. Mitä suurempi nopeus, sitä pienempi tukivoima. Jos $\tfrac{v^2}{r}$ kasvaa yhtä suureksi kuin $g$, tukivoima on nolla. Jos se kasvaa suuremmaksi kuin $g$, auto irtoaa hetkeksi tiestä.

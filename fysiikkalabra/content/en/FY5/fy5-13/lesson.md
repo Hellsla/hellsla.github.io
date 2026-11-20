@@ -255,6 +255,12 @@ The part of the rope between two nodes moves as a whole in the same direction, a
   <foreignObject x="320" y="291.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\tfrac{\lambda}{4}$</div></foreignObject>
 </svg>
 
+```pysahdy
+The distance between adjacent nodes of a standing wave is $0.30\,\text{m}$. What is the wavelength?
+---
+The distance between adjacent nodes is half a wavelength, so $\lambda = 2 \cdot 0.30\,\text{m} = 0.60\,\text{m}$.
+```
+
 ### Natural frequencies
 Both ends of a guitar string are fixed, so both ends are nodes. A standing wave can form only if a whole number of half wavelengths fits on the length of the string. At other wavelengths the waves reflecting back and forth in the string are in different phases on different round trips and largely cancel each other. The frequencies at which a standing wave forms are called the **natural frequencies** of the string. When the string is driven at a natural frequency, every round trip of the reflection strengthens the motion and the amplitude grows large. This phenomenon is called **resonance**.
 
@@ -354,6 +360,12 @@ where $f_n$ is the $n$th natural frequency (Hz), $v$ the speed of the wave in th
 ### An instrument and its pitch
 The formula tells how the pitch of a string instrument is changed. When the player presses the string against the fingerboard, the vibrating part $L$ becomes shorter and the fundamental frequency increases. When the string is tightened with the tuning peg, the speed $v$ of the wave in the string increases and the fundamental frequency rises. At the same tension a thick, heavy string carries a wave more slowly than a thin one, which is why bass strings sound low. The vibrating string makes the body of the instrument and the air vibrate at the same frequency, so the frequency of the sound we hear is the frequency of the string's vibration.
 
+```pysahdy
+Two guitar strings are equally long and under the same tension, but one is thicker. Why does the thicker one sound lower?
+---
+A wave travels more slowly in the thicker string, so its speed $v$ is smaller. The fundamental frequency $f_1 = \tfrac{v}{2L}$ is then smaller.
+```
+
 ### An air column in a tube
 In a flute or an organ pipe the standing wave forms in the air inside the tube. Sound is longitudinal wave motion, so the air oscillates along the tube. At the closed end of the tube the air cannot move, so there is a displacement node. At the open end the air can move freely, and there is a displacement antinode. In reality the antinode is slightly outside the mouth of the tube, but this so-called end correction is neglected here. In this chapter the speed of sound in air is taken to be $v = 340\,\text{m/s}$.
 
@@ -414,6 +426,12 @@ A closed tube therefore has only the odd natural frequencies $f_1$, $3f_1$, $5f_
   <foreignObject x="16" y="355.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$f_3$</div></foreignObject>
   <foreignObject x="450" y="355.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$L = \tfrac{3\lambda}{4}$</div></foreignObject>
 </svg>
+
+```pysahdy
+The fundamental frequency of a tube closed at one end is $100\,\text{Hz}$. Is the next natural frequency $200\,\text{Hz}$?
+---
+No. A closed tube has only the odd natural frequencies, so the next one is $3 \cdot 100\,\text{Hz} = 300\,\text{Hz}$.
+```
 
 ## Worked example
 The vibrating part of a guitar's A string, from the nut to the bridge, is $0.650\,\text{m}$ long, and the fundamental frequency of the string is $110\,\text{Hz}$. What is the speed of the wave in the string? How short must the vibrating part be made by pressing the string against the fingerboard so that the fundamental frequency is $165\,\text{Hz}$? The tension of the string does not change when it is pressed.

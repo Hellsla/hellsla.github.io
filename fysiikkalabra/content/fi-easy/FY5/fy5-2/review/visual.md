@@ -1,10 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 568a8f092ff12e3f
+CONTENT-HASH: 88c5e6bb2c329ccd
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] inquiry.json Kertaa choice — option starts with lowercase "noin 63 Nm", the others "Noin" — write "Noin".
+- [Minor] block 3 — "Tuet ovat 0,40 m ja 1,20 m:n päässä" reads as one case ending; write "0,40 m:n ja 1,20 m:n päässä", and state they are on opposite sides of the centre of mass ("painopisteen eri puolilla").
+- [Minor] block 3 — the figure is schematic, not to scale (r1 > r2 although 0,40 m is the near support).
+
+## Vanhan sisällön löydökset
+- none
 
 ## Checked
-- batch delta review: opened the Pohdinta capture and a fresh 390 px render of the opened Kertaa choice (wrong answer feedback and correct answer feedback); maths, LaTeX units and wrapping render cleanly.
+- Delta, scope: the three new pysahdy blocks only. Opened stage-selita-390-4 (fi-easy), block 3 closed; blocks 1 and 2 share the same layout as in fi (checked there). Opened answers not captured; check_layout 360 px green.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

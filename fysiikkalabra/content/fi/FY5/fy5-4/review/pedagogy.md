@@ -1,11 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: f94388093a1c054f
+CONTENT-HASH: ba34272432781518
 
 ## Blocking
 (none)
 
 ## Polish
-- Kertaus feedback stresses 'nopeus on aina tangentin suuntainen', which nudges Ennusta 3 (car leaves along the tangent); keep it, but do not add more.
+- lesson.md, pysahdy 2 (pyöräilijä / cyclist): the block sits between the "why the square" paragraph and the graph figure it does not explain; consider placing it after the graph's paragraph so the figure follows the text it illustrates. Not blocking.
 
 ## Checked
-batch delta review: kertaus on the car in a curve, same as hook; Ennusta 1-3 not disclosed; numbers and answers in the diff consistent with answers.py and solutions (not recomputed).
+- Scope: only the 3 new "Pysähdy ja mieti" blocks (this language), per scope note 2026-11-20.
+- Block 1 (after "Normaalikiihtyvyys osoittaa keskipisteeseen"): answerable from the paragraph just read; physics correct; gives away nothing later asked.
+- Block 2 (cyclist, 6,0 m/s, 12 m): a_n = 3,0 m/s² correct; one step, answerable from the formula just given; value differs from the worked example and exp data.
+- Block 3 (after Newton's 2nd law paragraph): good misconception probe (constant speed implies zero net force); answer repairs it with direction change and m v²/r.
+- Placement sensible: each follows the paragraph it tests; none pre-empts the prediction or the transfer tasks.
+- Language: wording clear, terms per glossary (normaalikiihtyvyys, vauhti, voimien summa), numbers with units in LaTeX; en and fi-easy mirror the Finnish blocks.
+- Rendering: built preview at 360 px, all 3 blocks open: no horizontal overflow (scrollWidth 360), formulas not clipped, answers legible.
+
+## Vanhan sisällön löydökset
+(none noted; old content not reviewed under this scope)

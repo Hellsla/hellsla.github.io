@@ -945,6 +945,12 @@ Aaltoa on helpointa kuvata ylhäältä katsottuna. **Aaltorintama** on viiva, jo
   <line x1="540" y1="304" x2="536" y2="252" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
+```pysahdy
+Kivi putoaa veteen ja synnyttää ympyräaallon. Aaltorintama on ympyrä. Mihin suuntaan säteet osoittavat rintamaan nähden?
+---
+Säteet osoittavat lähteestä poispäin. Ne ovat joka kohdassa kohtisuorassa rintamaa vastaan, koska säde näyttää aallon etenemissuunnan.
+```
+
 ### Heijastuminen köyden päästä
 Kun aalto saapuu väliaineen rajalle, se heijastuu. Silloin osa aallosta tai koko aalto palaa takaisin. Köydessä tämän näkee yhdestä pulssista. Oletetaan, että köyden pää on kiinni seinässä. Silloin pää ei pääse liikkumaan. Ylöspäin suuntautuva pulssi vetää kiinnitystä ylöspäin. Seinä vetää köyttä yhtä suurella voimalla alaspäin. Siksi **kiinteästä päästä heijastunut pulssi on kääntynyt**: se palaa alaspäin suuntautuvana. Oletetaan sitten, että köyden pää on rengas, joka liukuu kitkatta tankoa pitkin. Silloin pää heilahtaa pulssin mukana ylös, eikä mikään vedä sitä alas. **Vapaasta päästä heijastunut pulssi ei käänny**, vaan palaa samanmerkkisenä.
 
@@ -1000,6 +1006,12 @@ Kun aalto saapuu väliaineen rajalle, se heijastuu. Silloin osa aallosta tai kok
 ### Huygensin periaate
 Hollantilainen Christiaan Huygens esitti 1600-luvulla periaatteen. Sen avulla aallon etenemistä voi päätellä piirtämällä. **Huygensin periaatteen** mukaan aaltorintaman jokainen piste on uuden pienen ympyräaallon lähde. Tätä pientä aaltoa sanotaan alkeisaalloksi. Alkeisaallot etenevät samalla nopeudella kuin alkuperäinen aalto. Hetken kuluttua uusi aaltorintama on viiva, joka sivuaa eli juuri koskettaa kaikkia alkeisaaltoja. Tätä viivaa sanotaan alkeisaaltojen sivuajaksi. Avoimessa vedessä alkeisaaltojen sivuaja on taas suora, joten tasoaalto jatkaa suoraan. Joskus osa rintamasta pysähtyy esteeseen tai kimpoaa seinästä. Silloin jäljelle jääneet alkeisaallot kertovat, mihin aalto etenee.
 
+```pysahdy
+Aalto etenee nopeudella $0{,}30\,\text{m/s}$. Kuinka suuri on alkeisaallon ympyrän säde $2{,}0\,\text{s}$ kuluttua?
+---
+Alkeisaalto etenee yhtä nopeasti kuin alkuperäinen aalto. Säde on siis $0{,}30\,\text{m/s} \cdot 2{,}0\,\text{s} = 0{,}60\,\text{m}$. Uusi rintama sivuaa kaikkia näitä ympyröitä.
+```
+
 ### Diffraktio
 Aalto voi kulkea raosta tai esteen ohi. Silloin se taipuu myös esteen taakse, alueelle, jonne suoraan etenevä säde ei osu. Tätä kutsutaan **diffraktioksi** eli taipumiseksi. Huygensin periaate selittää sen. Raon kohdalla olevat rintaman pisteet ovat alkeisaaltojen lähteitä. Reunimmaisten pisteiden alkeisaallot leviävät sivuille. Raon leveyttä merkitään $b$. Jos rako on monta aallonpituutta leveä, rintama jatkaa raon kohdalla lähes suorana. Se kaartuu vain reunoilta. Kun rako on selvästi aallonpituutta kapeampi, eli $b < \lambda$, alkeisaaltoja on raon kohdalla kuin yhdestä pisteestä. Silloin aalto leviää puoliympyränä koko alueelle raon taakse. Aalto leviää paljon jo silloin, kun rako on suunnilleen aallonpituuden levyinen, $b \approx \lambda$.
 
@@ -1034,6 +1046,12 @@ Aalto voi kulkea raosta tai esteen ohi. Silloin se taipuu myös esteen taakse, a
 <figure class="unit-photo"><img src="pics/fy5/ripple-model-single-slit.webp" alt="Laskettu kuva vedestä ylhäältä katsottuna. Vasemmalla on pystysuoria vaaleita ja tummia juovia. Keskellä on este, jossa on kapea rako. Raon oikealla puolella on puoliympyrän muotoisia renkaita."><figcaption>Laskettu mallikuva aaltoaltaasta ylhäältä. Vaaleat juovat ovat aallonharjoja ja tummat aallonpohjia. Suora aalto tulee vasemmalta rakoon. Rako on aallonpituuden levyinen. Raon takana aalto leviää puoliympyröinä joka suuntaan. Oikeasti aalto on raon takana heikompi. Kuvassa se näkyy selvyyden vuoksi yhtä voimakkaana. Esteestä heijastuvaa aaltoa ei ole piirretty.</figcaption></figure>
 
 Sama pätee esteeseen. Ajatellaan estettä, joka on aallonpituutta kapeampi, esimerkiksi laituripaalua. Se ei juuri jätä taakseen varjoa, koska aalto taipuu sen ympäri. Aallonpituutta paljon leveämmän esteen taakse jää suojaisa alue. Diffraktio on siis voimakasta, kun raon tai esteen leveys on aallonpituuden suuruinen tai pienempi. Ääni taipuu ovesta käytävään. Puheäänen aallonpituus on noin metrin luokkaa. Se on suunnilleen yhtä suuri kuin oviaukon leveys.
+
+```pysahdy
+Meren aaltojen aallonpituus on $20\,\text{m}$. Laituripaalun leveys on $0{,}50\,\text{m}$. Jääkö paalun taakse selvä tyven alue?
+---
+Ei jää. Paalu on paljon kapeampi kuin aallonpituus. Aalto taipuu paalun ympäri ja yhtyy sen takana.
+```
 
 ## Kaava: Heijastuslaki
 Aalto osuu tasaiseen pintaan, kuten seinään tai rantamuuriin. Osumakohtaan piirretään pinnan **normaali**. Normaali on suora, joka on kohtisuorassa pintaa vastaan. Kulmat mitataan aina normaalista. Tulokulma on tulevan säteen ja normaalin välinen kulma. Heijastuskulma on heijastuneen säteen ja normaalin välinen kulma. Heijastuslaki on

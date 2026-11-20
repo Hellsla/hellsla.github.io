@@ -1,9 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: d1ccad1ab3b8e737
+CONTENT-HASH: e21bcc9460078368
+
 ## Blocking
 
+none
+
 ## Polish
-- The correct-answer feedback says the wavelength is compared with the gap width today; this hints at Prediction 3 (slit). The hook already names the gap, so it is not blocking, but 'You need the wavelength today' would be safer.
-- Distractor feedback is good (unit analysis); consider naming 1.25 as the unrounded product.
+- No block in the reflection/rope part; a question on the fixed end would fit there (an addition, not a defect).
+- Block 1 repeats a sentence from the paragraph above; fine as retrieval, but a counter-question (a plane wave) would stretch it.
+
 ## Checked
-batch delta review: the recap sits in the harbour scenario, one-step calculation with unit-based distractor feedback; Prediction 1-3 are not answered by it; the worked-example stages are split into one thing per paragraph with the same words; answers.py consistent.
+- Scope: only the 3 new pysahdy blocks (rays vs wavefront; elementary-wave radius 0.30 m/s * 2.0 s = 0.60 m; pier post 0.50 m vs 20 m wavelength). Hash before and after identical.
+- Physics correct in all three; each answerable from the paragraph just above it.
+- Nothing later asked is given away (no exercise or experiment uses these numbers; the slit prediction is not touched).
+- Placement sensible: after ray/wavefront text, Huygens paragraph, and the obstacle paragraph.
+- Rendered at 360 px (Playwright, answers opened): no horizontal overflow (scrollWidth 360), maths legible, summary tap target tall enough.
+- Language reads naturally in this language version.
+
+## Vanhan sisällön löydökset
+- none from this scope.

@@ -497,6 +497,12 @@ Satelliitti on kappale, joka kiertää toista kappaletta gravitaation vaikutukse
 
 Satelliitti siis putoaa koko ajan kohti Maata, mutta ei osu siihen. Ilman gravitaatiota se jatkaisi suoraan radan tangentin suuntaan. Gravitaatio taivuttaa rataa. Kun vauhti on juuri sopiva, rata kaartuu samaa tahtia kuin Maan pinta kaartuu satelliitin alla. Silloin etäisyys Maan keskipisteestä pysyy samana ja rata on ympyrä.
 
+```pysahdy
+Mitä satelliitille tapahtuisi, jos Maan gravitaatio yhtäkkiä loppuisi?
+---
+Mikään voima ei enää taivuttaisi rataa. Satelliitti lentäisi suoraan eteenpäin radan tangentin suuntaan samalla vauhdilla. Se ei putoaisi Maahan eikä kiertäisi enää ympyrää.
+```
+
 Jos nopeus on pienempi, gravitaatio kääntää rataa jyrkemmin kuin ympyrä vaatisi. Satelliitti laskeutuu alemmas ja palaa sitten lähtökorkeudelle. Jos nopeus on paljon liian pieni, se osuu Maahan. Jos nopeus on suurempi, rata kaartuu loivemmin. Satelliitti nousee kauemmas ennen paluutaan. Näissä tapauksissa rata ei ole ympyrä vaan soikea, eikä tasaisen ympyräliikkeen malli kuvaa sitä.
 
 <svg data-fig="cannon" viewBox="0 0 600 380" role="img" aria-label="Kaavakuva, ei mittakaavassa: kappale lähtee vaakasuoraan samasta pisteestä Maan yläpuolelta kolmella nopeudella. Radat on laskettu gravitaatiolaista. Liian pienellä nopeudella rata kaartuu jyrkemmin kuin ympyrä ja osuu Maahan. Ympyräradan nopeudella kappale kiertää ympyrää, jonka etäisyys pysyy samana kuin lähtöpisteessä. Suuremmalla nopeudella rata kaartuu loivemmin. Kappale loittonee kauemmas ja palaa lähtöpisteeseen. Tämä rata on ellipsi. Ellipsin piste, joka on lähimpänä Maata, on lähtöpiste." style="max-width:100%;font-size:24px">
@@ -602,6 +608,12 @@ T = \frac{2\pi r}{v}
 ```
 Tässä $T$ on kiertoaika ($\text{s}$). Kaukana kiertävän satelliitin rata on pidempi ja sen vauhti pienempi. Siksi kiertoaika kasvaa nopeasti, kun etäisyys kasvaa. ISS kiertää Maan noin puolessatoista tunnissa. Kuu kiertää Maan noin $27\,\text{d}$:ssä. Samasta yhtälöstä voi ratkaista myös keskuskappaleen massan $M$, kun mitataan radan säde ja kiertoaika. Näin on saatu esimerkiksi Maan, Auringon ja Marsin massat.
 
+```pysahdy
+Satelliitti kiertää ympyrärataa vauhdilla $3{,}0\,\text{km/s}$. Yksi kierros kestää $4{,}0\,\text{h}$. Kuinka pitkä rata on?
+---
+Rata on yhden kierroksen pituus, joten $2\pi r = vT$. Lasketaan $vT = 3{,}0 \cdot 10^{3}\,\text{m/s} \cdot 14\,400\,\text{s}$. Tulos on noin $4{,}3 \cdot 10^{7}\,\text{m}$ eli $43\,000\,\text{km}$.
+```
+
 ### Geostationaarinen rata
 Geostationaarinen satelliitti kiertää päiväntasaajan yläpuolella samaan suuntaan kuin Maa pyörii. Sen kiertoaika on sama kuin Maan pyörähdysaika, $23\,\text{h}\;56\,\text{min}$. Siksi satelliitti näyttää pysyvän taivaalla paikallaan, ja lautasantennin voi suunnata siihen kerran. Kiertoaika määrää radan säteen. Siksi kaikki geostationaariset satelliitit kiertävät samalla korkeudella, noin $35\,800\,\text{km}$:n korkeudella.
 
@@ -676,6 +688,12 @@ Maan ja Halleyn komeetan etäisyydet on mitattu Auringosta. Kuun etäisyys on mi
   <foreignObject x="483" y="207.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{Aurinko}$</div></foreignObject>
   <foreignObject x="325" y="309.5" width="250" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$88\text{–}5250\ \text{milj. km}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Halleyn komeetan etäisyys Auringosta on pienimmillään $88\,\text{milj. km}$ ja suurimmillaan $5250\,\text{milj. km}$. Sopiiko ympyrämalli sen rataan?
+---
+Ei sovi. Suurin etäisyys on noin $60$-kertainen pienimpään etäisyyteen verrattuna. Ympyräradalla etäisyys pysyisi koko ajan samana.
+```
 
 Tarkoissa mittauksissa näkyy pieniä poikkeamia mallista. Kuun ratanopeus on mitatuista arvoista laskettuna $1{,}023\,\text{km/s}$. Malli antaa $1{,}018\,\text{km/s}$, joten mitattu arvo on noin $0{,}5\,\%$ suurempi. Syy on se, että Kuun massa on noin $\tfrac{1}{81}$ Maan massasta. Maa ja Kuu kiertävät yhteistä massakeskipistettä, eikä Maa pysy paikallaan. ISS:n korkeudella ohut ilma jarruttaa asemaa, ja rata madaltuu hitaasti. Siksi asemaa nostetaan moottoreilla säännöllisesti.
 

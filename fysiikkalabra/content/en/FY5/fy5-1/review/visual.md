@@ -1,11 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 0c7cf181c6be5ae9
+CONTENT-HASH: 953297fc7e27f6e3
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] retrieval feedback (correct option): the display equation splits the sentence, the "(chapter ...)" reference starts a new paragraph; keep it inline or put the reference before the equation.
+- [Minor] first Pysähdy block — the paragraph and figure directly above already state that an oblique force has a lever arm shorter than $d$, so the answer is nearly a repeat; works as an immediate recall check, but a question on the $\alpha=0$ case would add more.
+
+## Vanhan sisällön löydökset
+- none
 
 ## Checked
-batch delta review: Pohdinta stage capture (stage-herata-390) opened, phenomenon text, question and the optional retrieval box legible at 390 px; retrieval prompt, choices and feedback read from the diff (all quantities in LaTeX with units, no plain quantities); opened retrieval rendered at 390 px with wrong and correct feedback (preview build), nothing clipped.
+- selita-390-2 and selita-390-3 (all three Pysähdy blocks, closed state, 390 px) and theory-1280-2 (fi); selita-390-2 for en. Blocks render as a distinct tinted card with green bar, label, question and a Vastaus/Answer summary; maths (units, decimal comma, case endings, minus sign) set correctly; no clipping. Opened answers are not in the captures; check_layout (360 px, opened) is ok. Placement after the explaining paragraph/figure is sensible; the numeric block does not repeat the worked example (0,35 m, 240 N, 65 degrees).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -158,6 +158,12 @@ Kun kärry vedetään oikealle, jousi venyy ja vetää kärryä vasemmalle. Kun 
 
 <figure class="unit-photo"><img src="pics/fy5/spring-rider-suomenlinna.webp" alt="Pieni lapsi istuu keltaisella leijonakeinulla. Keinu on kiinni maassa jousen varassa."><figcaption>Jousikeinu Suomenlinnassa Helsingissä. Kun keinu kallistuu, jousi vetää sen takaisin kohti tasapainoasemaa. Keinu heiluu edestakaisin.</figcaption></figure>
 
+```pysahdy
+Miksi jousen voimaa sanotaan palauttavaksi voimaksi?
+---
+Jousen voima osoittaa aina kohti tasapainoasemaa. Kun kappale on poikkeamassa, jousi vetää tai työntää sen takaisin.
+```
+
 ### Harmoninen voima
 Kun jousta ei venytetä eikä puristeta liikaa, jousen voiman suuruus on suoraan verrannollinen poikkeamaan. Kaksinkertainen poikkeama antaa kaksinkertaisen voiman. **Harmoninen voima** on voima, jonka suuruus on suoraan verrannollinen kappaleen poikkeamaan tasapainoasemasta ja joka osoittaa aina kohti tasapainoasemaa. Jousen voima on tavallisin esimerkki. Myös heilurin palauttava voima on pienillä heilahduksilla melkein harmoninen. Luvussa *Jousivärähtelijä ja heiluri* nähdään, millaista liikettä harmoninen voima saa aikaan.
 
@@ -217,6 +223,12 @@ Valitaan $x$-akselin origo kohtaan, jossa jousi on lepopituudessaan. Luku $x$ on
 harmoninen voima :: F = -kx
 ```
 missä $F$ on jousen voima kappaleeseen ($\text{N}$), $x$ jousen venymä tai puristuma lepopituudesta ($\text{m}$) ja $k$ jousen **jousivakio** ($\text{N/m}$). Miinusmerkki kertoo suunnan: voima on aina poikkeaman vastainen. Kun $x > 0$, $F < 0$. Kun $x < 0$, $F > 0$. Voiman suuruus on $k|x|$. Jousivakio kertoo, kuinka jäykkä jousi on. Se kertoo, montako newtonia voimaa tarvitaan yhtä venymämetriä kohti. Auton jousituksen jousella jousivakio voi olla kymmeniä kilonewtoneita metriä kohti. Lelun jousella se on vain muutama newton metriä kohti. Vaakasuorassa jousessa lepopituuden kohta on myös kappaleen tasapainoasema. Silloin poikkeama tasapainoasemasta on $x$. Laki pätee vain, kun jousta ei venytetä eikä puristeta liikaa.
+
+```pysahdy
+Jousen voiman $x$-komponentti on positiivinen. Onko jousi silloin venynyt vai puristunut?
+---
+Puristunut. Kaavan $F = -kx$ mukaan $F > 0$ vain, kun $x < 0$. Silloin jousi on lyhyempi kuin lepopituudessaan.
+```
 
 ### Jousivakio mittauksesta
 Jousivakio saadaan mittaamalla. Jouseen ripustetaan punnuksia, ja jokaisella punnuksella mitataan jousen venymä $x$. Levossa roikkuva punnus vetää jousta voimalla, joka on yhtä suuri kuin punnuksen paino $mg$. Tämä on jousta venyttävä voima, jonka suuruus on
@@ -314,6 +326,12 @@ missä $E_\text{p}$ on jousen potentiaalienergia ($\text{J}$), $k$ jousivakio ($
 </svg>
 
 Kaksinkertaista venymää vastaava kolmio on kaksi kertaa niin leveä ja kaksi kertaa niin korkea. Siihen mahtuu siis neljä alkuperäisen kokoista kolmiota. Siksi potentiaalienergia kasvaa venymän neliön mukana, vaikka voima kasvaa vain suoraan verrannollisesti. Koska $x$ on toisessa potenssissa, energia on sama, kun jousta venytetään tai puristetaan yhtä paljon. Yksiköt täsmäävät: $\tfrac{\text{N}}{\text{m}}\cdot\text{m}^2 = \text{N}\cdot\text{m} = \text{J}$.
+
+```pysahdy
+Jousta venytetään $2{,}0\,\text{cm}$. Siihen varastoituu silloin $0{,}10\,\text{J}$ energiaa. Paljonko energiaa on, kun samaa jousta venytetään $6{,}0\,\text{cm}$?
+---
+Venymä on kolminkertainen. Siksi energia on $3^2 = 9$ kertaa suurempi. Energia on $9 \cdot 0{,}10\,\text{J} = 0{,}90\,\text{J}$.
+```
 
 ## Esimerkki
 Kalastaja punnitsee kalan jousivaa'alla. Kala, jonka massa on $1{,}20\,\text{kg}$, roikkuu levossa vaa'an koukussa. Vaa'an jousi on venynyt $3{,}0\,\text{cm}$. Kuinka suuri on jousen jousivakio? Kuinka paljon jousen potentiaalienergiaa jouseen on varastoitunut? Jousen ja koukun massa jätetään huomiotta.

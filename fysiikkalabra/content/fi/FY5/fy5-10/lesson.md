@@ -138,6 +138,12 @@ Kun narun päätä heilautetaan ylös, käsi vetää mukanaan narun lähintä ko
 
 Mekaaninen aalto tarvitsee väliaineen, kuten narun, jousen, veden tai ilman. Yksi heilautus synnyttää **pulssin**, yksittäisen kummun, joka etenee narussa. Kun kättä heilutetaan tasaisesti ylös ja alas, syntyy jaksollinen aalto, jossa harjat ja pohjat toistuvat. Siinä narun jokainen kohta värähtelee samalla taajuudella $f$ kuin käsi. Jaksonaika $T$, taajuus $f$ ja amplitudi $A$ tarkoittavat samaa kuin luvussa *Värähtelyn suureet: jaksonaika, taajuus ja amplitudi*. Kun aalto saapuu narun päähän, se heijastuu takaisin; heijastumista tarkastellaan luvussa *Aalto kohtaa esteen tai raon*.
 
+```pysahdy
+Käsi heiluttaa narun päätä taajuudella $2{,}0\,\text{Hz}$. Millä taajuudella värähtelee narun kohta, joka on metrin päässä kädestä?
+---
+Se värähtelee samalla taajuudella $2{,}0\,\text{Hz}$. Jokainen narun kohta värähtelee samalla taajuudella kuin käsi, vaikka kohta liikahtaa myöhemmin.
+```
+
 ### Poikittainen ja pitkittäinen aalto
 Aallot jaetaan kahteen lajiin sen mukaan, mihin suuntaan väliaineen hiukkaset värähtelevät. **Poikittaisessa aallossa** hiukkaset värähtelevät kohtisuoraan aallon etenemissuuntaa vastaan: narun kohdat liikkuvat ylös ja alas, kun aalto etenee vaakasuoraan. **Pitkittäisessä aallossa** hiukkaset värähtelevät etenemissuunnan suuntaisesti. Kun pitkän kierrejousen päätä työnnetään edestakaisin, jouseen syntyy tihentymiä, joissa kierrokset ovat lähellä toisiaan, ja harvennuksia, joissa ne ovat kaukana toisistaan. Tihentymät ja harvennukset etenevät, mutta jokainen kierros vain heilahtelee paikkansa ympärillä. Esimerkiksi ääni ilmassa on pitkittäinen aalto.
 
@@ -349,6 +355,12 @@ Aallot jaetaan kahteen lajiin sen mukaan, mihin suuntaan väliaineen hiukkaset v
   </g>
 </svg>
 
+```pysahdy
+Kierrejousen päätä työnnetään edestakaisin. Mihin suuntaan jousen kierrokset värähtelevät aallon etenemissuuntaan nähden?
+---
+Etenemissuunnan suuntaisesti. Aalto on siis pitkittäinen: tihentymät etenevät, mutta jokainen kierros heilahtelee vain paikallaan.
+```
+
 ## Kaava: Aaltoliikkeen perusyhtälö
 **Aallonpituus** $\lambda$ on kahden peräkkäisen harjan tai kahden peräkkäisen tihentymän välinen etäisyys. Se on lyhin etäisyys kahden sellaisen kohdan välillä, jotka liikkuvat täsmälleen samalla tavalla. Kun lähde tekee yhden täyden värähdyksen eli yhden jaksonajan $T$ aikana, aalto etenee tasan yhden aallonpituuden. Kuvan neljä hetkeä näyttävät, miten jokainen jaksonajan neljännes vie aaltoa neljäsosan aallonpituudesta eteenpäin.
 
@@ -399,6 +411,12 @@ Aallon nopeus on siis aallonpituus jaettuna jaksonajalla. Koska taajuus on $f = 
 aaltoliikkeen perusyhtälö :: v = \frac{\lambda}{T} = f\lambda
 ```
 missä $v$ on aallon etenemisnopeus ($\text{m/s}$), $\lambda$ aallonpituus ($\text{m}$), $T$ jaksonaika ($\text{s}$) ja $f$ taajuus ($\text{Hz}$). Yksiköt sopivat yhteen, koska $1\,\text{Hz} = 1\,\text{s}^{-1}$, joten $1\,\text{Hz} \cdot 1\,\text{m} = 1\,\text{m/s}$. Pulssin nopeuden voi mitata myös suoraan: pulssi etenee samassa väliaineessa tasaisella nopeudella, joten $v = \tfrac{s}{t}$, missä $s$ on matka ja $t$ siihen kulunut aika.
+
+```pysahdy
+Aallon aallonpituus on $0{,}50\,\text{m}$ ja jaksonaika $0{,}25\,\text{s}$. Mikä on aallon nopeus?
+---
+Nopeus on $v = \tfrac{\lambda}{T}$, eli $\tfrac{0{,}50\,\text{m}}{0{,}25\,\text{s}} = 2{,}0\,\text{m/s}$.
+```
 
 ### Nopeus riippuu väliaineesta, taajuus lähteestä
 Aallon nopeus määräytyy väliaineen ominaisuuksista. Kireässä narussa aalto etenee nopeammin kuin löysässä, ja ääni etenee $20\,{}^\circ\text{C}$:n ilmassa noin $343\,\text{m/s}$:n mutta vedessä noin $1500\,\text{m/s}$:n nopeudella. Taajuus määräytyy lähteestä: se on käden, jousen pään tai kaiuttimen värähtelyn taajuus. Ideaalisessa narussa aallon nopeus määräytyy narun jännityksestä ja massasta pituusyksikköä kohti, joten se ei riipu taajuudesta eikä pienestä amplitudista; samoin ilmassa äänen nopeus ei käytännössä riipu taajuudesta. Tämä ei ole kaikkien aaltojen yleinen laki: esimerkiksi veden pinta-aaltojen nopeus voi riippua aallonpituudesta, jolloin aaltoa sanotaan dispersiiviseksi. Tsunamin hyvin pitkä aalto taas etenee sitä nopeammin, mitä syvempää meri on. Kun samaa narua heilutetaan tiheämmin, nopeus pysyy samana ja aallonpituus lyhenee: kaksinkertainen taajuus puolittaa aallonpituuden. Kun aalto siirtyy väliaineesta toiseen, taajuus säilyy, mutta nopeus ja aallonpituus muuttuvat.

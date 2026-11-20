@@ -168,6 +168,12 @@ Luvussa *Jousivoima ja jousen energia* jousen voima oli $F = -kx$: se on suoraan
 
 Kuvassa näkyy liikkeen rytmi. Ääriasennoissa $x = A$ ja $x = -A$ nopeus on nolla, mutta voima ja kiihtyvyys ovat suurimmillaan. Tasapainoasemassa tilanne on päinvastainen: voima ja kiihtyvyys ovat nolla ja nopeus on suurimmillaan. Kiihtyvyys osoittaa aina kohti tasapainoasemaa, samaan suuntaan kuin voima.
 
+```pysahdy
+Tasapainoasemassa voima on nolla. Miksi kappale ei silti pysähdy siihen?
+---
+Kappaleella on tasapainoasemaan tullessaan jo nopeus, eikä nopeus katoa, vaikka voima on nolla. Kappale jatkaa toiselle puolelle, ja siellä voima alkaa jarruttaa sitä.
+```
+
 ### Paikka ajan funktiona
 Kun harmonisen värähtelijän paikka piirretään ajan funktiona, saadaan siniaallon muotoinen käyrä. Luvun *Värähtelyn suureet: jaksonaika, taajuus ja amplitudi* käsitteet näkyvät siinä suoraan. Amplitudi $A$ on suurin poikkeama tasapainoasemasta. Jaksonaika $T$ on aika, jossa kappale tekee yhden kokonaisen edestakaisen värähdyksen ja palaa samaan kohtaan samaan suuntaan liikkuen, esimerkiksi kahden peräkkäisen huipun väli. Taajuus $f = \tfrac{1}{T}$ kertoo värähdysten määrän sekunnissa.
 
@@ -208,6 +214,12 @@ Kun kappale värähtelee jousen varassa ja ainoa liikkeen suuntainen voima on jo
 harmonisen värähtelijän jaksonaika :: T = 2\pi\sqrt{\frac{m}{k}}
 ```
 missä $T$ on jaksonaika ($\text{s}$), $m$ värähtelevän kappaleen massa ($\text{kg}$) ja $k$ jousen jousivakio ($\text{N/m}$). Suurempi massa kiihtyy samasta voimasta hitaammin, joten jaksonaika kasvaa massan kasvaessa. Jäykempi jousi antaa suuremman voiman, joten jaksonaika lyhenee. Neliöjuuri tarkoittaa, että massa on nelinkertaistettava, jotta jaksonaika kaksinkertaistuu. Kaava pätee myös pystysuoraan riippuvaan jouseen: paino siirtää vain tasapainoasemaa, mutta poikkeama siitä noudattaa samaa lakia.
+
+```pysahdy
+Jousen jousivakio on $150\,\text{N/m}$ ja siihen kiinnitetyn kappaleen massa $0{,}90\,\text{kg}$. Mikä on värähtelyn jaksonaika?
+---
+Jaksonaika on $T = 2\pi\sqrt{\tfrac{m}{k}}$, joten $T = 2\pi\sqrt{\tfrac{0{,}90\,\text{kg}}{150\,\text{N/m}}} \approx 0{,}49\,\text{s}$.
+```
 
 Kaavan voi perustella ympyräliikkeen avulla. Kun kappale kiertää tasaisesti ympyrää, jonka säde on $A$, sen varjo halkaisijan suuntaisella seinällä liikkuu edestakaisin. Varjon kiihtyvyys on normaalikiihtyvyyden $a_\text{n} = \tfrac{4\pi^2 A}{T^2}$ komponentti, ja se on $-\tfrac{4\pi^2}{T^2}x$ eli verrannollinen poikkeamaan. Jousen varassa Newtonin toisesta laista saadaan $a = -\tfrac{k}{m}x$. Kun kertoimet merkitään yhtä suuriksi, $\tfrac{4\pi^2}{T^2} = \tfrac{k}{m}$, ja tästä ratkeaa jaksonaika.
 
@@ -255,6 +267,12 @@ Kaava on likiarvo, joka pätee pienillä heilahduskulmilla. Kun lähtökulma kas
 | $60^\circ$ | $1{,}073$ |
 
 Alle $10^\circ$ heilahduksilla ero on alle $0{,}2\,\%$, mikä on pienempi kuin käsin ajanoton epävarmuus.
+
+```pysahdy
+Heilurin jaksonaika on kaavan mukaan $2{,}00\,\text{s}$. Kuinka pitkä se on todellisuudessa, kun lähtökulma on $40^\circ$?
+---
+Taulukon mukaan $T : T_0 = 1{,}031$, joten $T = 1{,}031 \cdot 2{,}00\,\text{s} \approx 2{,}06\,\text{s}$.
+```
 
 ### Energia värähtelyssä
 Kun kitka ja ilmanvastus jätetään huomiotta, värähtelijän mekaaninen energia säilyy. Jousen ja kappaleen energia on liike-energian ja jousen potentiaalienergian summa. Ääriasennossa nopeus on nolla ja kaikki energia on potentiaalienergiaa, joten

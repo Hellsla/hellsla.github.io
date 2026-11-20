@@ -123,6 +123,12 @@ Superpositio näkyy selvimmin, kun narussa lähetetään kaksi yhtä suurta ja s
   <path d="M402,374 L413,369 L413,379 Z" fill="#7048e8" stroke-linejoin="round"/>
 </svg>
 
+```pysahdy
+Kaksi pulssia kohtaa narussa. Toinen poikkeaa narusta ylöspäin $3{,}0\,\text{cm}$ ja toinen alaspäin $2{,}0\,\text{cm}$. Kuinka suuri on narun poikkeama kohtaamishetkellä?
+---
+Poikkeamat lasketaan yhteen etumerkkeineen: $y = 3{,}0\,\text{cm} + (-2{,}0\,\text{cm}) = 1{,}0\,\text{cm}$ ylöspäin. Pulssit eivät kumoa toisiaan kokonaan, koska ne eivät ole yhtä suuret.
+```
+
 Aaltojen yhteisvaikutusta samassa kohdassa kutsutaan **interferenssiksi**. Kun aallot vahvistavat toisiaan ja summa-aallon poikkeama kasvaa, interferenssi on **vahvistava**. Kun ne heikentävät toisiaan, interferenssi on **heikentävä**. Luvussa *Aaltojen synty ja eteneminen* aallon poikkeama vaihteli paikan ja ajan mukaan; superpositioperiaate pätee jokaisessa kohdassa ja jokaisella hetkellä erikseen.
 
 ### Kaksi samassa vaiheessa olevaa lähdettä
@@ -150,6 +156,12 @@ Aallot kohtaavat altaan jokaisessa kohdassa. Joissakin kohdissa harja kohtaa ain
   <foreignObject x="480.5" y="7.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\Delta s = \lambda$</div></foreignObject>
   <foreignObject x="155.5" y="7.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{solmuviiva}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Aaltoaltaassa vesi on lähes levossa solmuviivalla, vaikka kummankin lähteen aallot etenevät sen kautta koko ajan. Miksi vesi ei liiku?
+---
+Solmuviivalla toisen aallon harja saapuu aina yhtä aikaa toisen aallon pohjan kanssa. Kun aallot ovat yhtä suuret, poikkeamien summa on koko ajan lähes nolla.
+```
 
 ## Kaava: Vahvistavan ja heikentävän interferenssin ehto
 Se, kumpaa interferenssi pisteessä P on, riippuu siitä, kuinka paljon pidemmän matkan toinen aalto on kulkenut. **Matkaero** on lähteiden etäisyyksien erotus pisteestä P:
@@ -217,6 +229,12 @@ Summa-aallon amplitudi on silloin amplitudien erotus. Yhtä suuret amplitudit ku
 Jokaista lukua $n = 1, 2, \ldots$ vastaa kuviossa yksi viiva keskinormaalin kummallakin puolella; $n = 0$ on vahvistavassa tapauksessa keskinormaali itse ja heikentävässä kaksi keskinormaalia lähintä solmuviivaa. Lähteiden keskinormaalilla eli suoralla, jonka jokainen piste on yhtä kaukana molemmista lähteistä, matkaero on nolla. Siellä interferenssi on vahvistava kaikilla taajuuksilla. Matkaero ei voi olla suurempi kuin lähteiden välinen etäisyys $d$, koska kolmion sivu on lyhyempi kuin kahden muun sivun summa. Siksi viivoja on vain rajallinen määrä. Kun aallonpituus pienenee eli taajuus kasvaa, ehdot täyttyvät pienemmillä matkaeroilla, ja viivat tihenevät.
 
 Ratkaisevaa on siis matkaeron ja aallonpituuden suhde $\tfrac{\Delta s}{\lambda}$, ei matkaero yksin. Sama piste voi olla yhdellä taajuudella hiljainen ja toisella voimakkaan äänen kohta. Heikentävä interferenssi ei hävitä energiaa: sitä siirtyy solmuviivoille vähemmän ja vahvistavan interferenssin kohtiin vastaavasti enemmän.
+
+```pysahdy
+Heikentävässä interferenssissä kaksi yhtä suurta aaltoa kumoaa toisensa solmuviivalla. Onko energia silloin hävinnyt?
+---
+Ei ole. Solmuviivoille siirtyy vähemmän energiaa ja vahvistavan interferenssin kohtiin vastaavasti enemmän.
+```
 
 ## Fourier-analyysi
 Superpositioperiaate toimii myös toiseen suuntaan. Jokainen jaksollinen signaali, esimerkiksi soittimen ääni, voidaan esittää siniaaltojen summana. Siniaaltojen taajuudet ovat signaalin perustaajuuden monikertoja, ja niiden amplitudit kertovat, kuinka voimakkaita ne ovat. **Fourier-muunnos** on laskentamenetelmä, joka etsii signaalista nämä taajuudet ja amplitudit. Tulos esitetään **spektrinä**: vaaka-akselilla on taajuus ja pystyakselilla kunkin taajuuden amplitudi.

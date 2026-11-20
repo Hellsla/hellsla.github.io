@@ -131,6 +131,12 @@ Ultraääni on ääntä, jonka taajuus on yli $20\,\text{kHz}$. Ihminen ei kuule
 
 Anturia voi kallistaa, tai siinä voi olla rivi pieniä lähettimiä. Silloin pulsseja lähetetään moneen suuntaan. Kaikujen syvyyksistä ja voimakkuuksista syntyy kaksiulotteinen harmaasävykuva, B-kuva. Yksinkertaisin esitys on A-kuvaus eli kaikukäyrä. Sen vaaka-akselilla on aika pulssin lähettämisestä ja pystyakselilla kaiun voimakkuus. Kaikukäyrän piikki tarkoittaa rajapintaa. Piikin paikka kertoo, kuinka syvällä rajapinta on.
 
+```pysahdy
+Kaikukäyrän piikki on kohdassa $26\,\mu\text{s}$. Kuinka syvällä rajapinta on, kun $v = 1540\,\text{m/s}$?
+---
+Pulssi kulkee rajapintaan ja takaisin. Koko matka on $1540\,\text{m/s} \cdot 26\,\mu\text{s} \approx 4{,}0\,\text{cm}$. Rajapinta on puolet tästä eli noin $2{,}0\,\text{cm}$:n syvyydellä.
+```
+
 ### Miksi geeliä tarvitaan
 Heijastuvan osan suuruus riippuu siitä, kuinka erilaisia rajapinnan aineet ovat äänen kannalta. Pehmytkudokset muistuttavat toisiaan. Niiden rajapinnoilta heijastuu vain noin prosentti. Siksi suurin osa pulssista jatkaa syvemmälle ja tuottaa kaikuja myös syvemmistä rajapinnoista. Luun ja pehmytkudoksen rajapinnalta heijastuu noin $40\,\%$. Luu myös vaimentaa ääntä voimakkaasti. Siksi luun taakse jää varjo, josta ei palaa kaikuja. Ilman ja ihon rajapinnalta heijastuu noin $99{,}9\,\%$. Anturin ja ihon väliin voi jäädä ohutkin ilmakerros. Silloin melkein koko pulssi heijastuu takaisin jo iholta. Geeli työntää ilman pois. Geelin ja ihon rajapinnalta heijastuu vain noin $0{,}2\,\%$. Nämä prosentit ovat tyypillisiä mallin arvoja, kun aalto tulee kohtisuoraan. Todellinen osuus riippuu kudoksista ja siitä, missä kulmassa aalto osuu rajapintaan.
 
@@ -194,6 +200,12 @@ Aallonpituus saadaan yhtälöstä $v = f\lambda$ (luku *Aaltojen synty ja etenem
 
 Taulukossa $f$ on taajuus ja $\lambda$ on aallonpituus kudoksessa. Syvyys on tyypillinen kuvaussyvyys. Kuvaussyvyydet ovat suuntaa antavia, koska ne riippuvat laitteesta ja kudoksesta. Ultraäänellä voi mitata myös veren virtausnopeutta. Liikkuvista verisoluista heijastuneen kaiun taajuus on vähän eri kuin lähetetyn pulssin taajuus. Laite laskee nopeuden taajuuden muutoksesta. Tämä on Doppler-ilmiö (luku *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*).
 
+```pysahdy
+Taajuus kaksinkertaistetaan. Mitä aallonpituudelle tapahtuu pehmytkudoksessa? Miksi?
+---
+Aallonpituus puolittuu. Äänen nopeus kudoksessa pysyy samana. Yhtälön $v = f\lambda$ mukaan suurempi taajuus tarkoittaa siis lyhyempää aallonpituutta.
+```
+
 ### Kaikuluotaus luonnossa ja tekniikassa (lisätieto)
 Lepakot ja delfiinit löytävät saaliinsa samalla periaatteella. Lepakko päästää lyhyitä ultraääniäännähdyksiä. Niiden taajuus on lajista riippuen noin $20$–$100\,\text{kHz}$. Lepakko päättelee etäisyyden kaikujen viiveestä. Taajuudella $50\,\text{kHz}$ aallonpituus ilmassa on noin $7\,\text{mm}$. Kappaleesta, joka on paljon aallonpituutta pienempi, palaa vain hyvin heikko kaiku, koska aalto taipuu sen ympäri (luku *Aalto kohtaa esteen tai raon*). Siksi hyönteisiä saalistavat lepakot käyttävät suuria taajuuksia. Laivojen kaikuluotain mittaa veden syvyyden samalla tavalla ja löytää kalaparvia. Ääni etenee vedessä noin $1400\text{–}1500\,\text{m/s}$ lämpötilasta riippuen.
 
@@ -234,6 +246,12 @@ Poikittainen aalto tarvitsee väliaineen, joka vastustaa muodon muuttumista. Kun
   <line x1="396" y1="350" x2="440" y2="350" stroke="#6b7480" stroke-width="5" stroke-linecap="round"/>
   <foreignObject x="450" y="335.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{S-varjoalue}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Pinta-aallot aiheuttavat suurimman osan maanjäristyksen tuhoista. Tulevatko ne asemalle ensimmäisinä?
+---
+Eivät. Ne ovat hitaampia kuin P-aalto ja S-aalto, joten ne tulevat viimeisinä. Niiden amplitudi on silti suurin.
+```
 
 ### Tsunami (lisätieto)
 Merenpohjan järistys voi nostaa tai laskea yhtäkkiä suuren vesimassan. Siitä lähtee tsunami. Tsunamin aallonpituus on kymmeniä tai satoja kilometrejä, paljon suurempi kuin valtameren syvyys. Silloin vesi liikkuu pohjasta pintaan asti. Aallon nopeus riippuu vain veden syvyydestä. Syvällä valtamerellä tsunami etenee lentokoneen nopeudella. Aalto tulee matalaan rantaveteen. Silloin se hidastuu, sen aallonpituus lyhenee ja sen energia kasautuu pienempään vesimäärään. Siksi aallon korkeus kasvaa rannikon lähellä moninkertaiseksi.

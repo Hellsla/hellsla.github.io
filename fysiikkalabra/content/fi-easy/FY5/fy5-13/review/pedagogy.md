@@ -1,14 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: ea654eb5479b015a
+CONTENT-HASH: fa5eaa238b1af839
 
 ## Blocking
+- none
 
 ## Polish
-- inquiry.json koe-1 model — "Huipuissa solmuja oli 2, 3 ja 4" still does not say the ends are counted; add "päät mukaan lukien" (carried over from round 1).
-- inquiry.json calc — "ominaistaajuuksilla" is a clear repair of the end-condition sentence; no change needed, but "avoimessa päässä se on suurin" would read more simply for fi-easy if "suurin" is tied to "kupu".
+- Block 3 (closed tube, 100 Hz -> 200 Hz?) is nearly the same idea as level-2 exercise 13-15's multiple choice (150 Hz, 450 Hz option). Fine as retrieval, but the exercise is half-answered by the block; consider a different case for the block (open tube vs closed) if the teacher wants no overlap.
+- Block 2 (thicker string) is answerable by recalling one sentence of the paragraph just read; the answer adds the chain v smaller -> f1 = v/(2L) smaller, which is the useful part. Acceptable as a first stop.
 
 ## Checked
-- Diff is wording only: calc now says the open end is largest at eigenfrequencies (true, avoids implying a fixed antinode at any f); model text states the open-end antinode sits exactly at the mouth because the model has no end correction, matching the exercise change.
-- koe-2 intro "kupu huipuilla?" fixes the earlier ambiguity: the question now applies only at resonance peaks, so the answer (node closed end, antinode open end) is well defined and cannot be answered from off-peak frequencies.
-- The experiments still can refute their predictions; nothing disclosed before commitment.
-- Rest of the lesson unchanged from the version passed in round 1.
+- Three blocks (after Solmut ja kuvut, Soitin ja sävelkorkeus, Ilmapatsas putkessa), fi-easy; read from lesson.md text, not captures (no block capture exists in shots).
+- Physics correct: adjacent nodes lambda/2 (0.30 m -> 0.60 m); thicker string at the same tension and length has lower v, so lower f1; closed tube has only odd multiples, next is 300 Hz.
+- Each is answerable from the paragraph just read; the node-distance question follows the figure that shows lambda/2; the closed-tube question comes after the odd-multiples paragraph and its figure. Nothing the worked example, exit ticket or inquiry asks later is given away (no 0.30 m or thickness item there).
+- Wording clear and parallel in this language; the 200 Hz question uses a real misconception (n = 2). Maths in LaTeX with units.
+- Rendering: shared component (.stop-think, details/summary, summary at least 2.5 rem, padding reduced under 600 px); layout checks at 360/390/768/1280 px pass. Hash unchanged at start and end.
+
+Vanhan sisällön löydökset
+- ei löydöksiä (vanhaa sisältöä ei arvioitu).

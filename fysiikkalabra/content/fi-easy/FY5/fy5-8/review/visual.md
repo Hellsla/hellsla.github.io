@@ -1,10 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 1bc36482a9ab0633
+CONTENT-HASH: e9d06d76f1718ba1
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] none.
+- [Minor] block 1 (restoring force) — the answer repeats the sentence just before the figure almost verbatim — optional: ask why the force of a spring on a displaced cart points the way it does (not required).
+
+## Vanhan sisällön löydökset
+- none
 
 ## Checked
-- batch delta review: opened the Pohdinta capture and a fresh 390 px render of the opened Kertaa choice (wrong answer feedback and correct answer feedback); maths, LaTeX units and wrapping render cleanly.
+- Lesson-scope delta: the three new pysahdy blocks rendered at 360 px with the answer opened (own render of preview build; no horizontal overflow, scrollWidth 360); stage capture fy5-8-stage-selita-390-1 and -2 for block 1 placement and the closed state.
+- Pysähdy ja mieti -lohkot (3) selkosuomeksi: selkeät, lyhyet virkkeet, oikea fysiikka, vastattavissa juuri luetusta kappaleesta. Lohko 1 toistaa edellisen kappaleen viimeisen virkkeen (kevyt kertaus).
+- Maths in the blocks ($, =-kx$, {,}0\,\text{cm}$, ^2=9$, \cdot0{,}10\,\text{J}$) renders cleanly, units in LaTeX, decimal comma correct in Finnish versions.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

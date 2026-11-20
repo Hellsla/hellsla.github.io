@@ -1,10 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: cb309d9d31c54b23
+CONTENT-HASH: 8bdf79b54402e34b
 
 ## Blocking
 
 ## Polish
-- [Minor] lesson.md, new sentence — sentence-initial "Exactly," reads as an interjection — "Strictly, doubling the intensity raises the level by …" (or "More precisely, …").
+- [Minor] 2nd block — "The noise level at the ear is $115\,\text{dB}$": the formula uses the A-weighted level; consider $115\,\text{dB(A)}$.
+- [Minor] 3rd block — the answer largely repeats the reverberation paragraph just above; acceptable as retrieval.
+
+## Old-content findings (Vanhan sisällön löydökset)
+- none noted.
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: new sentence $10\,\text{dB} \cdot \lg 2 \approx 3{,}01\,\text{dB}$ stays on one line at 390 (\cdot used, decimal comma in fi), "likimain" in the model note; captures fy5-16-en-390/1280-teoria.png, -model.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.
+Preview render of the English page at 360 px (no horizontal overflow, no KaTeX errors) with all three "Stop and think" blocks and answers opened: layout, maths ($30\,\text{dB} : 3\,\text{dB} = 10$, $8\,\text{h} : 2^{10} \approx 28\,\text{s}$) and wording clean; fluent English, "reverberation time" consistent; the blocks match the Finnish ones in meaning and placement. The Finnish captures (theory 1280, selita 390) were used for placement.
+
+## Scores
+illustrations 5 · typography 5 · Finnish (English) 5 · accessibility 5

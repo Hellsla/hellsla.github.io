@@ -1,9 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ec82333fd7afec48
+CONTENT-HASH: ad5c1ea54563fc5f
 
 ## Blocking
 
 ## Polish
+- [Minor] third Pysähdy block (graph) — the answer ends "Sama arvo luetaan kuvaajasta", but the 8 m point has no value label, so the graph confirms only roughly — soften the sentence or label the point; optional.
 
 ## Checked
-batch delta review: diff only splits the "Tunnetut ja kysytty" paragraph into knowns and question (words unchanged, maths unchanged); worked-example captures of fy5-1, fy5-4 and fy5-14 opened at 390 px: knowns and question read as separate paragraphs, formulas render cleanly, nothing clipped.
+Delta, new blocks only (scope note 2026-11-20). Opened theory-1280-1 and theory-1280-2 (fi): all three Pysähdy blocks render as a labelled green-edged card with the question and a closed "Vastaus" disclosure; maths (a = F/m, r, 417 µN, 4 m, 8 m) renders cleanly, units upright with a thin space, nothing clipped. Placement: after the Earth-apple paragraph, after the centre-of-sphere paragraph and after the graph; each is answerable from the paragraph just read and gives nothing away that the exercises later ask. Opened answers and 360 px are covered by the passing layout checks (360/390/768/1280, answer positions); I did not see a capture of an opened answer.
+
+## Vanhan sisällön löydökset
+- none
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

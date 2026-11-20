@@ -247,6 +247,8 @@
 </svg></div></div>
 <figure class="unit-photo"><img src="../pics/fy5/sound-level-meter-park.webp" alt="Ihmisiä istuu puistossa. Tolpassa on punainen näyttö, jossa lukee 62 dB." width="1600" height="1048" loading="lazy" decoding="async"><figcaption>Melunäyttö puistossa Kiinassa. Näyttö kertoo äänitason desibeleinä. Tällaiset mittarit näyttävät yleensä A-painotettua äänenpainetasoa. Ulkona painottamaton äänenpainetaso on lukuarvoltaan suunnilleen sama kuin intensiteettitaso. A-painotettu lukema voi olla erilainen, varsinkin matalilla äänillä. $62\,\text{dB}$ on noin tavallisen puheen voimakkuus. <span class="photo-credit">Kuva: Daderot, CC0 1.0</span></figcaption></figure>
 
+<aside class="stop-think"><p class="stop-think-label">Pysähdy ja mieti</p><p class="stop-think-q">Miksi intensiteetti pienenee, kun mennään kauemmas pistemäisestä lähteestä? Lähteen teho pysyy samana.</p><details class="stop-think-a"><summary>Vastaus</summary><p>Sama teho levittäytyy isommalle pallopinnalle. Pinta-ala on isompi, joten intensiteetti eli teho pinta-alaa kohti on pienempi.</p></details></aside>
+
 <h4>Kuulokynnys ja kipukynnys</h4>
 <p>Ihmisen korva on hämmästyttävän herkkä. Nuori normaalikuuloinen ihminen erottaa noin $1000\,\text{Hz}$:n taajuudella äänen, jonka intensiteetti on noin $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Se on heikoin ääni, jonka hän kuulee. Tätä sanotaan <strong class="kc-mark" data-kortti="fy5-kuulokynnys">kuulokynnykseksi</strong>. Kuulokynnys ei ole hiljaisuus. Se on heikoin kuultavissa oleva ääni. Se on myös eri suuri eri taajuuksilla. Kovimmat äänet alkavat tuntua kivulta, kun intensiteetti on noin $1\,\text{W/m}^2$. Tämä kipukynnys on biljoona eli $10^{12}$ kertaa kuulokynnyksen suuruinen. Näin laajaa vaihteluväliä on hankala esittää tavallisella asteikolla. Molemmat kynnykset ovat eri ihmisillä erilaisia, ja ne riippuvat taajuudesta. Siksi nämä arvot ovat sovittuja likiarvoja. Ne eivät ole luonnonvakioita.</p>
 <h4>Desibeliasteikko</h4>
@@ -291,12 +293,14 @@
   <foreignObject x="284" y="53.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$120$</div></foreignObject>
   <foreignObject x="400" y="53.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1$</div></foreignObject>
 </svg></div></div>
+<aside class="stop-think"><p class="stop-think-label">Pysähdy ja mieti</p><p class="stop-think-q"><span class="kc-mark kc-plain" data-kortti="fy5-aanen-intensiteetti">Äänen intensiteetti</span> tulee tuhatkertaiseksi. Kuinka monta desibeliä taso kasvaa?</p><details class="stop-think-a"><summary>Vastaus</summary><p>Tuhatkertainen on kolme kymmenkertaista peräkkäin. Taso kasvaa $3 \cdot 10\,\text{dB} = 30\,\text{dB}$.</p></details></aside>
+
 <p>Korva ei ole yhtä herkkä kaikille taajuuksille. Matalat ja hyvin korkeat äänet kuulostavat samalla intensiteetillä hiljaisemmilta kuin äänet, joiden taajuus on noin $1000$–$4000\,\text{Hz}$. Siksi melumittarit painottavat taajuuksia korvan herkkyyden mukaan. Tällainen painotettu lukema merkitään $\text{dB(A)}$. Tavalliset melumittarit näyttävät usein A-painotettua äänenpainetasoa. Tässä luvussa lasketaan painottamattomia intensiteettitasoja.</p>
 <h4>Mitä mittari mittaa</h4>
 <p>Mittarin mikrofoni ei mittaa intensiteettiä. Se mittaa äänenpainetta eli ilmanpaineen vaihtelua. Siitä lasketaan <strong>äänenpainetaso</strong>. Äänenpainetaso vertaa äänenpainetta vertailupaineeseen $p_0 = 20\,\mu\text{Pa}$. Intensiteettitaso taas vertaa intensiteettiä vertailuintensiteettiin $I_0$. Tasot liittyvät toisiinsa, mutta ne eivät ole sama suure. Kun ääni etenee vapaasti, esimerkiksi ulkona kaukana seinistä, painottamattoman äänenpainetason ja intensiteettitason lukuarvot ovat suunnilleen samat. Kaikuvassa huoneessa heijastuneet aallot kulkevat moneen suuntaan. Ne kasvattavat äänenpainetta, mutta niiden energiavirrat kumoavat osittain toisiaan. Siksi tasot voivat erota. Tämän luvun laskuissa oletetaan, että ääni etenee vapaasti ilman heijastuksia. Silloin mittarin lukemaa käsitellään intensiteettitasona. Melun vaikutuksista ja kuulon suojaamisesta kerrotaan luvussa <em>Melu, akustiikka ja äänentoisto</em>.</p>
 <h3 class="theory-h">Intensiteettitaso</h3>
 <h4>Intensiteetti</h4>
-<p><span class="kc-mark kc-plain" data-kortti="fy5-aanen-intensiteetti">Äänen intensiteetti</span> on</p>
+<p>Äänen intensiteetti on</p>
 <dl class="kaavat"><div class="kaava-rivi"><dt>intensiteetti</dt><dd>$$I = \frac{P}{A}$$</dd></div></dl>
 
 <p>missä $I$ on intensiteetti ($\text{W/m}^2$), $P$ pinnan läpi kulkeva ääniteho ($\text{W}$) ja $A$ pinnan pinta-ala ($\text{m}^2$). Pistemäinen lähde säteilee tasaisesti joka suuntaan, eikä ääni heijastu. Silloin $A$ on pallon pinta-ala $4\pi r^2$:</p>
@@ -425,6 +429,8 @@ I &= I_0 \cdot 10^{\,L/(10\,\text{dB})}
   <foreignObject x="495.5" y="101.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$83$</div></foreignObject>
   <foreignObject x="502" y="309.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$L$</div></foreignObject>
 </svg></div></div>
+<aside class="stop-think"><p class="stop-think-label">Pysähdy ja mieti</p><p class="stop-think-q">Kaksi samanlaista konetta toimii yhtä aikaa. Toinen sammutetaan. Putoaako taso puoleen?</p><details class="stop-think-a"><summary>Vastaus</summary><p>Ei putoa. Intensiteetti puolittuu. Taso laskee vain noin $3\,\text{dB}$.</p></details></aside>
+
 <details class="theory-box"><summary>Yleinen virhekäsitys</summary><div class="box-body">
 <p>Moni laskee desibelit yhteen kuten tavalliset luvut. Kaksi konetta tuottaa kumpikin yksinään $80\,\text{dB}$. Ne eivät tuota yhdessä $160\,\text{dB}$, joka olisi suihkukonetta kovempi ääni. Yhteen lasketaan intensiteetit. Intensiteetti kaksinkertaistuu, ja taso kasvaa vain noin $3\,\text{dB}$:llä arvoon $83\,\text{dB}$.</p>
 <p>Toinen virhe on ajatella, että kaksinkertainen desibelilukema tarkoittaa kaksinkertaista ääntä. Taso $120\,\text{dB}$ on $60\,\text{dB}$ suurempi kuin $60\,\text{dB}$. Siksi intensiteetti on $10^6$ eli miljoona kertaa suurempi. Kolmas virhe on luulla, että $0\,\text{dB}$ tarkoittaa, ettei ääntä ole. Se tarkoittaa kuulokynnyksen intensiteettiä $I_0$. Vielä heikommilla äänillä taso on negatiivinen.</p>

@@ -125,6 +125,12 @@ Kuulovaurio syntyy sisäkorvan simpukassa. Simpukassa on aistinkarvasoluja, jotk
   <foreignObject x="354" y="49.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kipukynnys}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Konsertissa ei satu korviin, vaikka ääni on kova. Tarkoittaako se, ettei kuulo vaurioidu?
+---
+Ei tarkoita. Kipu alkaa vasta noin $120\,\text{dB}$:n tasolla. Karvasolut rasittuvat kuitenkin jo paljon pienemmällä tasolla, eivätkä ne uusiudu.
+```
+
 ### Annos: taso ja aika
 
 Kuulolle haitallinen annos kertyy samalla tavalla kuin energia. Ratkaisevaa on, kuinka paljon energiaa ääni tuo korvaan koko altistuksen aikana. Luvussa *Intensiteetti ja desibeliasteikko* opittiin, että intensiteettitason kasvu $3\,\text{dB}$ vastaa noin intensiteetin kaksinkertaistumista. Kun intensiteetti kaksinkertaistuu, korvaan tulee sekunnissa kaksi kertaa enemmän energiaa. Silloin sama annos täyttyy puolessa ajassa. Melutaso, joka on vain muutaman desibelin suurempi, voi siis lyhentää moninkertaisesti aikaa, jossa sama annos kertyy.
@@ -198,6 +204,12 @@ Kaavassa $L$ on A-painotettu melutaso korvalla (laskuissa lyhyesti dB). Luku $L_
   <foreignObject x="421.5" y="260.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$0{,}25$</div></foreignObject>
   <foreignObject x="296" y="79.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$+3\,\text{dB} \;\Rightarrow\; t : 2$</div></foreignObject>
 </svg>
+
+```pysahdy
+Melutaso korvalla on $115\,\text{dB}$. Kuinka kauan kestää, että ylempää toiminta-arvoa vastaava annos kertyy?
+---
+Taso on $30\,\text{dB}$ toiminta-arvon yläpuolella, joten $n = 30\,\text{dB} : 3\,\text{dB} = 10$. Vertailuaika on $8\,\text{h} : 2^{10} \approx 28\,\text{s}$.
+```
 
 Vertailuaika ei ole sallittu eikä turvallinen aika. Se on laskennallinen vertailuarvo. Jos annos jää vertailuannosta pienemmäksi, kuulo ei silti välttämättä ole turvassa, koska ihmisten kuulo kestää melua eri tavoin. Työnantajan muut velvollisuudet eivät myöskään poistu: ne alkavat jo alemmasta toiminta-arvosta $80\,\text{dB(A)}$. Altistus kannattaa pitää selvästi vertailuannoksen alapuolella. Melutaso korvalla saadaan luvun *Intensiteetti ja desibeliasteikko* säännöillä. Kaksi yhtä voimakasta lähdettä nostaa tasoa noin $3\,\text{dB}$. Etäisyyden kaksinkertaistuminen pistemäisestä lähteestä laskee tasoa avoimessa tilassa noin $6\,\text{dB}$. Kuulonsuojain vähentää korvaan pääsevää tasoa vaimennuksensa verran, kun se on hyvin asetettu.
 
@@ -325,6 +337,12 @@ Kun äänilähde vaikenee, heijastuksia kuuluu vielä hetken. Tätä hiipuvaa ä
   <foreignObject x="262" y="111.5" width="258" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\text{levyt katossa: } T = 0{,}6\,\text{s}$</div></foreignObject>
   <foreignObject x="401" y="185.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$90\,\text{dB} - 60\,\text{dB}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Miksi ruokala, jossa on kovat seinät ja pitkä jälkikaiunta, tuntuu meluisalta?
+---
+Heijastunut ääni täyttää koko huoneen ja vaimenee hitaasti. Siksi sama puhe kuuluu kaikkialla kovempaa ja tavut sotkeutuvat toisiinsa. Sitten ihmiset vielä korottavat ääntään.
+```
 
 ## Vastamelu
 

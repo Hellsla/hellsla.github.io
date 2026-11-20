@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1bc36482a9ab0633
+CONTENT-HASH: e9d06d76f1718ba1
 
 ## Blocking
 - None.
@@ -8,4 +8,13 @@ CONTENT-HASH: 1bc36482a9ab0633
 - None.
 
 ## Checked
-batch delta review (fi-easy, round 2): The kertaus choice now asks only the magnitude of the knob's force on the hand. By Newton's third law it is 5,0 N regardless of rest or the spring; exactly one option correct. Distractors: none (knob at rest), smaller and larger because of the spring: all really wrong, and their feedback correctly says the interaction forces are equal in magnitude (the rest only makes the forces on the knob cancel). Removing the direction no longer pre-answers Ennuste 1 (direction of the spring force). The correct option's feedback keeps 'equal and opposite', consistent with fy4 Newton's laws chapter. No numbers in lesson-answers.py for this item.
+- batch delta review (fi-easy, round 1, scope: the three new pysahdy blocks only).
+- Block 1 (restoring force, line 161): answer (spring force always points towards the equilibrium position, pulls or pushes back) is correct and answerable from the Ydinajatus paragraph (line 86), which names the palauttava voima and gives the same reason; matches the glossary definition of harmonic force.
+- Block 2 (line 227): with the lesson's convention (origin at rest length, x > 0 stretched, x < 0 compressed, as in the Kaava paragraph and the direction figure), F > 0 only for x < 0, so "compressed" is the one right answer; consistent with inquiry feedback on the sign of -kx.
+- Block 3 (line 330): recomputed: k = 2E/x^2 = 500 N/m, E(6,0 cm) = 0,5*500*0,060^2 = 0,90 J = 3^2*0,10 J. Two significant figures as the data. Answerable from the doubling-to-fourfold paragraph just before it.
+- Give-away: block 3 uses tripling, not doubling; the doubling exercise and the Ennuste 2 / energy predictions are already answered by the theory paragraph itself, so the block reveals nothing new. Block 2 does not pre-answer the inquiry sign checks beyond the Kaava paragraph it follows.
+- Rendering: deterministic layout checks at 360/390/768/1280 px pass with blocks opened; LaTeX check passes.
+- Hash at start and end identical.
+
+## Vanhan sisällön löydökset
+- None.
