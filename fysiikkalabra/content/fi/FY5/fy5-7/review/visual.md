@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: db97051f5614558d
+CONTENT-HASH: d557f1240511eb6f
 
 ## Blocking
 
 ## Polish
-- [Minor] lesson.md Tiivistelmä, 4th bullet at 360 px (carried from round 1, optional) — the clause "argumentti radiaaneina." may drop below the block — put the radian remark before the formula.
+- [Minor] third block — "Toisen punnuksen käyrä" has no first weight in the figure; "Erään toisen punnuksen" or "Erään punnuksen käyrä" would read more clearly (optional).
+
+## Vanhan sisällön löydökset
+- (none; old content not judged beyond what the blocks need)
 
 ## Checked
-- Delta is one word in the Graphical Analysis Pro paragraph: "tehtävissä" -> "laskutehtävissä" ("tämän luvun laskutehtävissä ajanotto alkaa aina niin"). Plain prose, no formula, figure or number touched; the sentence is correct and fluent Finnish, and "laskutehtävissä" separates the calculation tasks from the investigations.
-- Opened fy5-7-theory-1280-3.png (theory end, closed Tiivistelmä): layout intact. Figures unchanged since the round-1 PASS, so I did not re-judge them. Layout checks 360/390/768/1280 are ok in the packet.
+- fy5-7-theory-1280-1.png and -2.png (fi): all three "Pysähdy ja mieti" blocks render as closed cards with a clear label and a "Vastaus" button; maths (2,5 cm, 20, 8,0 s, 0,35 s) set as KaTeX; no overlap with the photo or figures. Layout 360/390/768/1280 ok in the packet. The captures show the answers closed, so the opened answers were judged from the source text and the packet's layout check only.
+- Physics of the blocks: x = -2,5 cm; T = 8,0 s : 20 = 0,40 s; 0,35 s is half a period, so T = 0,70 s. All correct, each answerable from the paragraph just read, none gives away the worked example (5 oscillations in 3,0 s) or later tasks. Placement good.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

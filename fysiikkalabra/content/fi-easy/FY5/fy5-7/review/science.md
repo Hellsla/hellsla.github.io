@@ -1,16 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: 1c57028d95a973b1
+VERDICT: PASS
+CONTENT-HASH: 300aaf094fbc7783
 
 ## Blocking
-- lesson.md:317 — A (internal consistency) — Right under the figure `kuvaaja`, the block says "Käyrä ohittaa tasapainoaseman ylöspäin hetkellä $0$. Seuraavan kerran se ohittaa sen alaspäin hetkellä $0{,}35\,\text{s}$." A reader takes this to be the figure's curve. That curve passes downward at $0{,}40\,\text{s}$ and has $T = 0{,}80\,\text{s}$, so the question and its answer ($0{,}70\,\text{s}$) contradict the figure. This matters most for an S2 reader, who will check the figure. — Fix: "Toisen punnuksen kuvaaja ohittaa…", or use $0{,}40\,\text{s}$ → $T = 0{,}80\,\text{s}$ (the same choice as the Finnish text).
 
 ## Polish
 
 ## Checked
-- Block 1: $x = -2{,}5\,\text{cm}$ is correct (up positive, below equilibrium) and agrees with line 144 ("siihen kuuluu etumerkki").
-- Block 2: $8{,}0\,\text{s}/20 = 0{,}40\,\text{s}$. This is correct, two significant figures, and answerable from $T = \tfrac{t_n}{n}$ just before it.
-- Block 3 physics: opposite-direction passes are $T/2$ apart, so $0{,}70\,\text{s}$. This is correct and agrees with line 228.
-- The wording is the same physics as in the fi version, split into short sentences.
+- lesson.md:317 — round-1 blocker resolved: "Toisen punnuksen käyrä" makes clear that this is not the curve in the figure ($T = 0{,}80\,\text{s}$); this is the same choice as the Finnish text.
+- Block 3 recomputed: $T = 2 \cdot 0{,}35\,\text{s} = 0{,}70\,\text{s}$. Splitting it into two sentences keeps "Seuraavan kerran se" pointing at the same curve.
+- Blocks 1 and 2 recomputed: $x = -2{,}5\,\text{cm}$; $8{,}0\,\text{s}/20 = 0{,}40\,\text{s}$.
 - Hash checked at the start and the end: unchanged.
 
 ## Vanhan sisällön löydökset

@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: faab333e7dcf81ff
+CONTENT-HASH: 300aaf094fbc7783
 
 ## Blocking
 
 ## Polish
+- [Minor] third block — "Toisen punnuksen käyrä" has no first weight in the figure; "Erään punnuksen käyrä" is clearer for S2 readers (optional).
+
+## Vanhan sisällön löydökset
+- (none; old content not judged beyond what the blocks need)
 
 ## Checked
-- Delta round 2: the only change is "tehtävissä" to "laskutehtävissä" in the sentence on the phase constant C (Graphical Analysis Pro paragraph); read in the packet diff. The wording is natural Finnish and makes the scope clear (calculation tasks, not the experiments). No formula, number or layout element changed.
-- Opened fy5-7-lab-1280.png (experiments and simulation) to confirm the surrounding layout is intact. The changed sentence is not in that capture, and I opened no capture of the paragraph itself. It is one plain sentence with no markup that can break.
+- fy5-7-theory-1280-1.png and -2.png (fi-easy): all three "Pysähdy ja mieti" blocks render as closed cards with a clear label and a "Vastaus" button; maths (2,5 cm, 20, 8,0 s, 0,35 s) set as KaTeX; no overlap with the photo or figures. Layout 360/390/768/1280 ok in the packet. The captures show the answers closed, so the opened answers were judged from the source text and the packet's layout check only.
+- Physics of the blocks: x = -2,5 cm; T = 8,0 s : 20 = 0,40 s; 0,35 s is half a period, so T = 0,70 s. All correct, each answerable from the paragraph just read, none gives away the worked example (5 oscillations in 3,0 s) or later tasks. Placement good.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

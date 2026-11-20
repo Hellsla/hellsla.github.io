@@ -1,15 +1,15 @@
 VERDICT: FAIL
-CONTENT-HASH: 9511bab9eefb00cc
+CONTENT-HASH: 522ac39cb7593754
 ## Blocking
-- content/fi/FY5/fy5-9/lesson.md:218 — the second "pysahdy" block (spring constant x4, T = 0,80 s -> 0,40 s) is the exit ticket's first question almost word for word (exit-ticket.json q1: "spring constant four times, mass stays the same, how does the period change?"). The block gives the answer and its reasoning (square root, halves) before the ticket asks, so the ticket tests nothing. — Fix: change the block to a different case that is answerable from the paragraph (e.g. a different mass change, "mass 9 times -> T x3", or k quartered), or change the exit-ticket question; do not leave both.
+- content/fi/FY5/fy5-9/lesson.md (line 218, second pysahdy block, k = 80 N/m, m = 0,20 kg): the same data as core exercise fy5-9-L1-03 (fi exercises.json: 0,20 kg, 80 N/m, asks the frequency; answer 3,18 Hz). The block's answer computes T = 0,31 s, which is the whole first step of that exercise, so the Level 1 exercise is a worked example already seen plus f = 1/T. Fix: give the block other numbers (e.g. k = 50 N/m, m = 0,50 kg, T ≈ 0,63 s) that no exercise, solution or ticket uses.
 ## Polish
-- Block 1 (line 171): the paragraph just before already states "voima nolla, nopeus suurimmillaan"; the question is answerable, but the answer's last clause ("siellä voima alkaa jarruttaa") is the only new content. Fine, but exit-ticket q2 (where is a greatest / v greatest) is partly answered by the same paragraph (old content).
-- Block 3 (line 271): pure table lookup and multiplication; consider asking whether the true T is longer or shorter than the formula value, with a reason, before the number.
+- Block 1: answerable and physically right, but the paragraph before already says force zero, speed greatest; a "which way does the force point just after the body passes?" question would add more.
+- Block 3: pure lookup (1,031 x 2,00 s = 2,06 s). Asking first "longer or shorter than the formula value, why?" would make the student reason before the lookup.
 ## Checked
-- Three blocks: after "rytmi" paragraph, after T = 2pi sqrt(m/k) paragraph, after the pendulum correction table; placement sensible, each answerable from the paragraph/table just read.
-- Physics correct: 0,80/2 = 0,40 s; 1,031 x 2,00 = 2,06 s; the equilibrium answer is correct.
-- Block 3 not asked elsewhere in the chapter (no 1,031/2,06 in exercises or ticket).
-- Language and units (decimal comma, \\, \\text{{s}}) consistent with the chapter.
-- Rendering: built site/ page is stale (0 stop-think asides found); the .stop-think style was checked on another chapter's page at 360 px with the answer open (no overflow, scrollWidth 360). Rebuild to confirm this page.
+- Round 1 fix: the block no longer matches exit-ticket q1 (k x4); no exit-ticket overlap with 0,31 s.
+- Three blocks, sensible placement (after the rhythm paragraph, after T = 2 pi sqrt(m/k), after the correction table); each answerable from the text just read. Physics right: 2 pi sqrt(0,20/80) = 0,314 s; 1,031 x 2,00 = 2,06 s.
+- Block 3 data (2,00 s, 40 degrees) not in exercises (L2-04 uses 2,00 s for Mars, a different task).
+- Page 1280 capture: block set apart, closed answer ("Vastaus") legible, formulas render. Opened answer at 360 px not viewed by me; layout checks cover it.
+- Language, decimal comma/point and LaTeX units consistent.
 ## Vanhan sisällön löydökset
-- (none found within the scope of this check)
+- none noted.
