@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 0915c3b0a0fb6632
+CONTENT-HASH: e3ced4b84a234ad4
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Delta: summary bullet now says Q = c m ΔT 'kun olomuoto ei muutu'. This is the correct condition (during melting or boiling Q changes the phase, not T); consistent with the formula section and with fy3-7. Nothing else changed.
-- Hash same at start and end.
+- batch delta review (fi-easy): sand c ≈ 800 J/(kg·K) ≈ 1/5 of water (figure value); Q = CΔT = 300·4,0 = 1200 J; equal heat capacities give mean 40 °C; recomputed in one script; hash same at start and end.

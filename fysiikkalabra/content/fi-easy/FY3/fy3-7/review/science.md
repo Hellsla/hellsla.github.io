@@ -1,8 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: f3ffac398fc7e7d2
+CONTENT-HASH: eb2fe10fc09c0257
+
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: the only change is the linking phrase "Aika saadaan tehosta:" between the two chains of the correct option's feedback in inquiry.json. Physics unchanged and right: $Q = cm\Delta T = 4190 \cdot 0{,}40 \cdot 10\,\text{J} = 16\,760\,\text{J}$, $t = Q/P = 20{,}95\,\text{s} \approx 21\,\text{s}$ (recomputed); the phrase names the principle correctly ($E = Pt$, so $t = Q/P$). Exactly one correct option, unchanged.
+- batch delta review (fi-easy): boiling stays ≈ 100 °C at higher power; Q = sm = 0,50·334 = 167 kJ; pressure cooker raises boiling point; recomputed in one script; hash same at start and end.

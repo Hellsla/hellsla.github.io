@@ -1,22 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d91c7f52e216d089
-
-Follow-up review of the fix commit 2c31ff041 (delta from bce5197e309debb6, whose full review is kept below). Change: lesson.md:111, the paragraph after $P = UA\Delta T$.
+CONTENT-HASH: c3a7854702566c03
 
 ## Blocking
-- none
 
 ## Polish
-- inquiry.json `kayra` solution (:126 Principle), `taulukko` (:135), model answer (:167): "the inside stays/is at $0\,{}^\circ\text{C}$" — prefix "in the model" as the activity text already does (C).
-- Common misconception, mixing example: "about $0\,{}^\circ\text{C}$" would match the Key idea (C).
 
 ## Checked
-- delta review 2026-11-07 round 4 (three small fixes): restored display after the teacher's sentence (now ending with a colon): ΔT/Δt = P/C = 33.6 W / 6285 J/K = 0.005346 K/s ≈ 0.00535 K/s, × 3600 s/h = 19.25 K/h ≈ 19 K/h, recomputed; C = 6285 J/K and P = 33.6 W come from the display and the solution directly above; the next sentence (valid at the start of the rise, constant heat flow) still follows it. 390 px capture: display fits, no wrapping. Hashes equal at start and end.
-- delta review 2026-11-07 (teacher's proofread replacement texts): heat capacity after melting C = (1,0 + 0,50) kg·4190 J/(kg·K) = 6285 J/K with the stated assumption c_drinks = c_water, and 33,6 W/6285 J/K·3600 s/h = 19,2 K/h recomputed; the new limits (initial phase, constant heat flow, which really decreases as the inside warms) are correct; unit-conversion sentence unchanged in substance. English text carries the same meaning as fi.
-- Earlier blocking item resolved: "In the model, the inside of the bag is taken to be at $0\,{}^\circ\text{C}$ as long as there is ice, so $\Delta T$ is the outside temperature in degrees Celsius. Then all the energy coming through the wall melts ice" — the formula $t = sm/(UA\Delta T)$ now carries its condition and agrees with the Key idea.
-- Consistency: grep of "$0\,{}^\circ\text{C}$" in lesson.md and inquiry.json — no remaining unqualified claim outside the model contexts listed under Polish.
-- Key idea (ice–water mixture in equilibrium at about $0\,{}^\circ\text{C}$, elsewhere warmer), step 4 boundary cases and Summary match the guardrails.
-- Recomputed: worked example $41\,900\,\text{J}$, $33.6\,\text{W}$, $2.4\,\text{h}$, 2.8 h without drinks, $19\,\text{K/h}$ after melting; sauna $67$/$452\,\text{kJ}$; plateau $3.68\,\text{h}$, $E \approx 333\,\text{kJ}$; table 8.59 … 2.86 h, $Pt = 334\,\text{kJ}$; prediction 2 $2.9\,\text{h}$; löyly 85.7 % (mistakes 14.3, 6.0); transfer $64.9\,\text{s}$ (mistakes 8.4, 56.5); check 2 $213\,\text{kJ}$ (mistakes 200, 12.6); check 3 13 %; exit $175.5\,\text{kJ}$. All agree with lesson-answers.py.
-- Physics: $s = 334\,\text{kJ/kg}$, glycol $c \approx 3500$, steam condensation $rm$, coolant $P = c(m/t)\Delta T$: correct.
-- Every choice has exactly one correct option with right feedback; model values labelled.
-- Hash at start and end: e7a0733ff5667593.
+- batch delta review (en): 0,20 kg: 0,20·4190·80 = 67 kJ, 0,20·2260 = 452 kJ; after melting the rise slows as UAΔT falls (matches graph text); m/t = P/(cΔT) larger for smaller c; stage split only; recomputed in one script; hash same at start and end.

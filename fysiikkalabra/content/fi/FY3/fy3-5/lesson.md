@@ -46,6 +46,12 @@
 ## Ydinajatus
 Luvussa *Työ ja energia* työ todettiin tavaksi siirtää energiaa, ja Joulen koe näytti, että mekaaninen työ voi lämmittää vettä: painon työ kasvatti veden sisäenergiaa, vaikka vettä ei lämmitetty. Vesi ei sisällä ”lämpöä”. Systeemin sisäenergia $U$ on sen hiukkasten liike-energian ja hiukkasten välisten vuorovaikutusten energian summa. Luvussa *Energialajit ja energian säilyminen* tätä energiaa kutsuttiin lämpöenergiaksi; tarkempi nimi on sisäenergia. Lämpötila kuvaa hiukkasten lämpöliikkeen voimakkuutta: kaasussa se kertoo hiukkasten keskimääräisestä liike-energiasta. Kun aineen lämpötila nousee eikä olomuoto muutu, hiukkasten liike voimistuu ja sisäenergia kasvaa. Lämpötila ja sisäenergia eivät silti ole sama asia, sillä olomuodon muuttuessa sisäenergia muuttuu, vaikka lämpötila pysyy samana: kun esimerkiksi puhdas jää sulaa normaalipaineessa, sisäenergia kasvaa, mutta lämpötila pysyy $0\,{}^\circ\text{C}$:ssa. Sisäenergia riippuu myös aineen määrästä: iso järvi sisältää paljon enemmän sisäenergiaa kuin kuppi kuumaa teetä, vaikka järvi on kylmempi.
 
+```pysahdy
+Puhdas jää sulaa normaalipaineessa. Mitä sen sisäenergialle ja lämpötilalle tapahtuu?
+---
+Sisäenergia kasvaa, mutta lämpötila pysyy $0\,{}^\circ\text{C}$:ssa, koska lämpötila ja sisäenergia eivät ole sama asia.
+```
+
 Systeemin sisäenergiaa voi muuttaa kahdella tavalla. Ensimmäinen on työ: kun pumpun mäntä puristaa ilmaa, ympäristö tekee kaasuun työtä, ja kaasun sisäenergia kasvaa, koska liikkuva mäntä osuu hiukkasiin kuin maila palloon ja ne kimpoavat nopeampina. Simulaatiossa tämän näkee hiukkastasolla. Siksi pumppu kuumenee. Toinen on lämpö: kun kaksi eri lämpötilassa olevaa kappaletta koskettavat, energiaa siirtyy itsestään kuumemmasta kylmempään, kunnes lämpötilat ovat samat. Näin siirtynyttä energiaa sanotaan lämmöksi, ja siirtyneen energian määrä on lämpömäärä $Q$. Lämpö on siis energian siirtymistä, ei aineen ominaisuus: kappaleella on lämpötila ja sisäenergia, mutta ei lämpöä.
 
 <svg data-fig="two-ways" viewBox="0 0 600 316" role="img" aria-label="Kaksi tapaa muuttaa sisäenergiaa (kaaviokuva, ei mittakaavassa). Vasemmalla mäntä työntyy sylinteriin ja tekee ilmaan työn W, ja ilman hiukkaset liikkuvat nopeammin. Oikealla kuuma ja kylmä kappale koskettavat, ja lämpömäärä Q siirtyy kuumasta kylmään." style="max-width:100%;font-size:24px">
@@ -84,6 +90,12 @@ Systeemin sisäenergiaa voi muuttaa kahdella tavalla. Ensimmäinen on työ: kun 
   <foreignObject x="432" y="43.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Q$</div></foreignObject>
   <foreignObject x="344.5" y="261.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kuumasta kylmään}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Joku sanoo, että kuumassa teekupissa on paljon lämpöä. Onko väite fysiikan kannalta oikein?
+---
+Ei ole. Kupissa on sisäenergiaa. Lämpö on energian siirtymistä kuumemmasta kylmempään, eikä kappaleella ole lämpöä.
+```
 
 Energia säilyy. Kun systeemiin siirtyy energiaa lämpönä tai työnä eikä systeemin liike- tai potentiaalienergia muutu, sen sisäenergia kasvaa täsmälleen siirtyneen energian verran, ja kun energiaa siirtyy pois, sisäenergia pienenee yhtä paljon. Tämä on termodynamiikan ensimmäinen pääsääntö: energian säilymisen laki kirjoitettuna lämmölle ja työlle. Eristetty systeemi on suljettu systeemi, johon tai josta ei myöskään siirry energiaa lämpönä eikä työnä. Sen kokonaisenergia pysyy vakiona, vaikka energia sen sisällä vaihtaisi muotoa.
 
@@ -141,6 +153,12 @@ missä $\Delta U$ on sisäenergian muutos (J), $Q$ systeemiin siirtynyt lämpöm
   <foreignObject x="58.5" y="269.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ympäristö tekee työn}$</div></foreignObject>
   <foreignObject x="363.5" y="269.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kaasu tekee työn}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Kaasu laajenee ja työntää mäntää, jolloin se tekee ympäristöön työn $30\,\text{J}$. Kaasuun ei siirry lämpöä eikä siitä siirry pois. Kuinka paljon kaasun sisäenergia muuttuu?
+---
+Kaasu tekee työn ympäristöön, joten $W = -30\,\text{J}$, ja $Q = 0$. Siis $\Delta U = Q + W = -30\,\text{J}$: sisäenergia pienenee $30\,\text{J}$.
+```
 
 ## Esimerkki
 Pumpun sylinterissä on ilmaa. Mäntää painetaan alas, jolloin ympäristö tekee ilmaan työn $150\,\text{J}$. Samalla kuumenevasta ilmasta siirtyy sylinterin seinien kautta ympäristöön lämpömäärä $40\,\text{J}$. Kuinka paljon ilman sisäenergia muuttuu?

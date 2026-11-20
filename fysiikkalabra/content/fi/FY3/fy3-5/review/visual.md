@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 0673a9b71c836baf
+CONTENT-HASH: 808fdf02b1be8377
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: Pohdinta-kortti auki ja palaute näkyvissä (väärä vaihtoehto valittu, Vastaa painettu) 390 px ja 1280 px (oma Playwright-kaappaus preview-sivusta). $90\,\text{N}$:n, $0{,}10\,\text{m}$:n, $W = Fs = 9{,}0\,\text{J}$ ja vaihtoehdot $900\,\text{J}$ … oikein ladottu, sijamuodot maths-kaavan jälkeen, ei leikkautumista, palaute kortin sisällä. Suomi sujuvaa.
+batch delta review: four new Pysähdy ja mieti blocks (jään sulaminen, "lämpö" teekupissa, ensimmäinen pääsääntö) read from the source; box layout verified in shared captures (fy3-1 390/1280, fy3-12, fy3-15); units and signs set in LaTeX; Finnish clear; figures unchanged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

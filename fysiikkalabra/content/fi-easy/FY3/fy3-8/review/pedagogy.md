@@ -1,23 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: cd9b243866124293
+CONTENT-HASH: 10c4c512e2a5ece4
 
 ## Blocking
 (none)
 
 ## Polish
-- lesson.md (rod-expansion figure) — the sauva figure sits after the two coefficient tables, away from the paragraph on Δl = αl₀ΔT it explains — move it directly after that paragraph (before "Nesteiden … tilavuus").
-- inquiry.json pred-1 / exp-1 intro — the intro names 70 °C and 120 °C, the very values the prediction asks about, and the experiment "Lisätutkimus" (exp-2) and pred-2 are both optional, so the core path never tests proportionality to l₀ — acceptable, but consider "esimerkiksi kahdessa lämpötilassa" in the intro so the student chooses the points.
-- lesson.md worked example stage "Tulos" — one paragraph carries rounding up, significant figures and the limiting data (about 110 words); for fi-easy split the significant-figure explanation into its own paragraph.
-- inquiry.json "olomuodot" feedback — "Taulukossa järjestys on sama: 0,36, 2,1 ja 11, 34" reads as a list of four numbers; write "0,36 → 2,1 → 11 → 34 cm³".
-- lesson.md Ydinajatus (fi-easy) — "mikromalli", "tasapainoasema", "liikuntasauma" are explained in context only partly; add a short gloss at first use of tasapainoasema ("paikka, jonka ympärillä hiukkanen heiluu").
+- inquiry.json exp-1/exp-2, sim — the model draws Δl straight from Δl = αl₀ΔT and prints that formula under the canvas, so both experiments confirm the program's arithmetic (the model box says so honestly). Material, the third thing Δl depends on, is never varied in an experiment: learn goal 2 ("tutkimaan kokeilla, mistä pituuden muutos riippuu") is met only for ΔT and l₀. Add an optional run that varies only the material at fixed l₀ and ΔT, and let the student read α from the graph lines.
+- inquiry.json pred-1 and pred-2 — both correct options are the bare word "Kaksinkertainen.", so a student can guess the pattern without reasoning; vary the form (e.g. ask for the ratio in mm for given α) and keep the justification box.
+- inquiry.json olomuodot — the correct option says weaker interactions make gases expand most, but the table's gas value is a constant-pressure result the student cannot tie to interactions; the option is the longest. Ask the science reviewer whether the wording is safe; the pedagogy fix is a question on what the table shows (order of magnitude by state) plus the micro-model for solids only.
+- lesson.md Kaava — the γ paragraph holds about 150 words (γ ≈ 3α derivation, validity range, water's variable γ); split into two paragraphs.
+- inquiry.json siirto — the prompt carries three assumptions in one long sentence and mixes cm³ and mm²; fine as an optional transfer, but state the assumptions as a short list.
 
 ## Checked
-- Path: phenomenon (bridge joint) → temperature-change retrieval → predictions → sim experiment → theory → staged example → transfer; the slot goals (microscopic model; solids, liquids, gases) are covered and the opening question is answered only after commitment.
-- Predictions can be refuted: exp-1 gives Δl at 70 and 120 °C and −30 °C, locks aine and l₀, varies only T; pred-3 (models) revealed after theory with each wrong option repairing its misconception (hiukkaset kasvavat, symmetrinen värähtely, lämpö on ainetta).
-- Sim (390 and 1280 px captures): rod, particle lattice and (T, Δl) graph legible, exaggeration ×100 stated, model values called model values, model/howto behind closed boxes; its limitation (symmetric vibration) is stated honestly.
-- olomuodot interpret task: data table with source "model", distractors target real misconceptions (particles grow, more particles in gas).
-- Etsi virhe and siirto (thermometer) are real transfer; hints are progressive; mistakes feedback names the slip.
-- Checks: concept (water anomaly), concept (hole), calculation from a table, explanation with observable criteria; exit ticket tests Δl = αl₀ΔT with a new case.
-- Worked example has seven stages, one step each, symbolic before numeric, sensible estimate.
-- Workload: one lesson; extras (exp-2, reflect, virhe, siirto, check-3) are optional.
-- Finnish grammar and case after number+unit fine; fi-easy reading level adequate.
+- Path: prior (ΔT in K) → hook (bridge joint) → three predictions → sim with a controlled experiment (T only) and an optional one (l₀ only) → interpret table by state of matter → theory → 7-stage example → checks. The opening question is answered.
+- Micro-model: particles stay the same size; the asymmetry of the interaction explains why the mean distance grows (pred-3 feedback repairs Aino, Cem and Daniel separately).
+- pred-3 revealed only after theory (min 1) is honest, since the sim cannot show the asymmetry.
+- Example: seven stages, symbolic first, safe-side rounding to 87 mm, order-of-magnitude check. Mistake values (0,044; 110; 46; 15,3) are real slips; check-2 reads α from a table and verifies it with a second column.
+- Exit ticket and check-1 (water below 4 °C) test the core ideas; check-2 on the hole repairs the "metal fills the hole" idea.
+- Sim at 390 px: controls and readout fit; text sits behind Käyttöohje/Mallin oletukset.
+- Finnish: glossary terms, case after number+unit correct. Workload one lesson.

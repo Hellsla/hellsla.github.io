@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: cecd453e60ccc521
-SCOPE: delta teacher-figure,wording from 42f2aff774125b61 base 64d4935
+CONTENT-HASH: 3830fdbeb9506751
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] Pysähdy (equilibrium) — $(20\,{}^\circ\text{C} + 60\,{}^\circ\text{C})/2$ uses a slash; house notation is a colon.
 
 ## Checked
-- Delta: fy3-6-theory-1280-3.png and fy3-6-stage-selita-390-4.png opened; the Summary box (edited bullet) is closed in every capture, so the added clause could only be read from the diff; it is plain text with the same maths, layout around it intact at 390 and 1280 px.
-- Captures current for this hash (stamp.txt). Changed text is one removed prefix or clause, no numbers, symbols or figures touched; the edited sentences open directly with the situation and end with the question as before.
+batch delta review: four new Pysähdy blocks read in English from the source; layout verified in the Finnish captures of the batch, which share the cut; units in LaTeX.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

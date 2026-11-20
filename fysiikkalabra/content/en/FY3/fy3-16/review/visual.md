@@ -1,9 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 4c4d08154bfcbcf7
+CONTENT-HASH: c3a7854702566c03
 
 ## Blocking
 
 ## Polish
+- [Minor] Pysähdy (cool bag) — the answer is terse; add "so the temperature rises more slowly".
 
 ## Checked
-- batch delta review: the changed display formulas of this lesson rendered at 390 px (all aligned displays opened with hints, feedback and solutions revealed, cropped with their paragraph; fy3-1, 4, 10, 11, 14, 15 read in full sheets, fy3-6, 11, 15 also at 1280 px); programmatic check over all displays at 390 and 1280 px: no clipping or overflow, no stray punctuation line (the page puts it inside the formula), no row break inside a number or unit, continuation rows start with an operator, equals signs in one column. The default stage captures do not show the changed formulas (they sit in closed hints and feedback), so they were not used.
+batch delta review: four new Pysähdy blocks read in English from the source; layout verified in the Finnish capture fy3-16-theory-1280-3, which shares the cut; the $\dfrac{m}{t}$ chain is clean.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

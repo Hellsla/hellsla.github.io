@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 6d0c3083e8c93c18
+CONTENT-HASH: 0b79402ef7e2f5e7
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Delta round 1 (md-paragraphs): worked example stages 1, 2, 5, 6, 7 at 390 px (example-390-1, -2, -3). The knowns and the contour lines are now two short bullet lists with the question last. Stages 2, 4, 6 and 7 are split into short paragraphs. Maths is intact: decimal comma, units, the equations in the stage 3 and 5 blocks. Nothing is clipped, and the words are unchanged.
-- Hash unchanged at the end.
+batch delta review: three new Pysähdy ja mieti blocks (suora ja pisteet, ekstrapolointi, $\theta_0$:n epävarmuus) read from the source; box layout verified in shared captures (fy3-1 390/1280, fy3-12, fy3-15); the blocks follow the paragraphs of the graphs they refer to; figures unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

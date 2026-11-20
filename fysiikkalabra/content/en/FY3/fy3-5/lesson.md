@@ -46,6 +46,12 @@
 ## Key idea
 In chapter *Work and energy*, work was described as a way of transferring energy, and Joule's experiment showed that mechanical work can heat water: the work done by the weight increased the internal energy of the water, even though the water was not heated. Water does not contain "heat". The internal energy $U$ of a system is the sum of the kinetic energy of its particles and the energy of the interactions between the particles. In chapter *Forms of energy and conservation of energy*, this energy was called thermal energy; a more precise name is internal energy. Temperature describes how strongly the particles move because of thermal motion: in a gas, it tells you the average kinetic energy of the particles. When the temperature of a substance rises and its state of matter does not change, the particles move more strongly and the internal energy increases. Even so, temperature and internal energy are not the same thing, because when the state of matter changes, the internal energy changes even though the temperature stays the same: when, for example, pure ice melts at normal pressure, the internal energy increases, but the temperature stays at $0\,{}^\circ\text{C}$. Internal energy also depends on the amount of substance: a big lake contains much more internal energy than a cup of hot tea, even though the lake is colder.
 
+```pysahdy
+Pure ice melts at normal pressure. What happens to its internal energy and its temperature?
+---
+The internal energy increases, but the temperature stays at $0\,{}^\circ\text{C}$, because temperature and internal energy are not the same thing.
+```
+
 You can change the internal energy of a system in two ways. The first is work: when the piston of a pump compresses air, the surroundings do work on the gas, and the internal energy of the gas increases, because the moving piston hits the particles like a bat hits a ball and they bounce off faster. In the simulation you can see this at the particle level. This is why the pump gets hot. The second is heat: when two objects at different temperatures touch, energy transfers by itself from the hotter one to the colder one until the temperatures are the same. Energy transferred in this way is called heat, and the amount of energy transferred is the quantity of heat $Q$. So heat is a transfer of energy, not a property of matter: an object has a temperature and internal energy, but it does not have heat.
 
 <svg data-fig="two-ways" viewBox="0 0 600 316" role="img" aria-label="Two ways to change internal energy (schematic, not to scale). On the left, a piston is pushed into the cylinder and does work W on the air, and the air particles move faster. On the right, a hot and a cold object touch, and a quantity of heat Q is transferred from the hot one to the cold one." style="max-width:100%;font-size:24px">
@@ -84,6 +90,12 @@ You can change the internal energy of a system in two ways. The first is work: w
   <foreignObject x="432" y="43.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Q$</div></foreignObject>
   <foreignObject x="357" y="261.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{from hot to cold}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Someone says that a hot cup of tea contains a lot of heat. Is the claim correct in physics?
+---
+No. The cup has internal energy. Heat is energy transferred from the hotter object to the colder one, and an object does not have heat.
+```
 
 Energy is conserved. When energy is transferred into a system as heat or work and the kinetic or potential energy of the system does not change, its internal energy increases by exactly the amount of energy transferred, and when energy is transferred out, the internal energy decreases by the same amount. This is the first law of thermodynamics: the law of conservation of energy written for heat and work. An isolated system is a closed system into which, and out of which, no energy is transferred either as heat or as work. Its total energy stays constant, even if energy changes form inside it.
 
@@ -141,6 +153,12 @@ where $\Delta U$ is the change in internal energy (J), $Q$ is the quantity of he
   <foreignObject x="58.5" y="269.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{surroundings do work}$</div></foreignObject>
   <foreignObject x="382.5" y="269.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{gas does work}$</div></foreignObject>
 </svg>
+
+```pysahdy
+A gas expands and pushes a piston, so it does work of $30\,\text{J}$ on the surroundings. No heat is transferred to or from the gas. By how much does the internal energy of the gas change?
+---
+The gas does work on the surroundings, so $W = -30\,\text{J}$, and $Q = 0$. So $\Delta U = Q + W = -30\,\text{J}$: the internal energy decreases by $30\,\text{J}$.
+```
 
 ## Worked example
 A pump cylinder contains air. The piston is pushed down, so the surroundings do $150\,\text{J}$ of work on the air. At the same time, a quantity of heat of $40\,\text{J}$ is transferred from the warming air through the cylinder walls to the surroundings. By how much does the internal energy of the air change?

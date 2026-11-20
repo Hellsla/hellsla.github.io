@@ -148,7 +148,19 @@ Melting and vaporisation need energy but do not raise the temperature. When ice 
 
 For the same reason, boiling water stays at $100\,{}^\circ\text{C}$ even when the hob is on full: the energy transferred vaporises water and does not raise its temperature. Steam takes up about 1700 times as much space as water, so as it expands it pushes the surrounding air. A small part of the energy needed for vaporisation is used for this work, and most of it increases the interaction energy between the molecules. The greater the power, the faster the water boils away, but it does not get any hotter. The energy that was taken up when the water vaporised is released again when the vapour condenses, and that is why 100-degree steam burns worse than 100-degree water.
 
+```pysahdy
+Water is boiling in a pot. The hob is turned to a higher power. What happens to the temperature of the water?
+---
+The temperature does not change but stays at about $100\,{}^\circ\text{C}$. A higher power vaporises the water faster.
+```
+
 The quantity of heat needed for melting and vaporisation is directly proportional to the mass. The coefficients are properties of the substance: the specific latent heat of fusion $s$ tells you how much energy it takes to melt one kilogram, and the specific latent heat of vaporisation $r$ how much it takes to vaporise one kilogram. For water, $s = 334\,\text{kJ/kg}$ and $r = 2260\,\text{kJ/kg}$. So vaporising takes almost seven times as much energy as melting, and more than five times as much as heating water from $0\,{}^\circ\text{C}$ to $100\,{}^\circ\text{C}$.
+
+```pysahdy
+The specific latent heat of fusion of water is $s = 334\,\text{kJ/kg}$. How much energy is needed to melt $0.50\,\text{kg}$ of ice?
+---
+The energy is directly proportional to the mass, so $0.50\,\text{kg} \cdot 334\,\text{kJ/kg} = 167\,\text{kJ}$ is needed.
+```
 
 The boiling point depends on pressure. A phase diagram shows the state of a substance at each temperature and pressure: its curves join the melting, boiling and sublimation points at different pressures. On a mountain, where the atmospheric pressure is lower, water boils below $100\,{}^\circ\text{C}$, and in a pressure cooker the pressure raises the boiling point above $100\,{}^\circ\text{C}$, so food cooks faster.
 
@@ -181,6 +193,12 @@ The boiling point depends on pressure. A phase diagram shows the state of a subs
   <foreignObject x="275" y="70.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{liquid}$</div></foreignObject>
   <foreignObject x="392.5" y="260" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{gas}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Why does food cook faster in a pressure cooker than in an open pot?
+---
+The pressure raises the boiling point above $100\,{}^\circ\text{C}$, so the water is hotter.
+```
 
 ## Formula: Latent heat of fusion and vaporisation
 The quantity of heat needed to melt or vaporise a mass $m$ is

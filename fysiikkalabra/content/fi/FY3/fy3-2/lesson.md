@@ -120,6 +120,12 @@ Arkikielessä työ tarkoittaa usein ponnistelua. Fysiikassa työllä on täsmäl
 
 Kun kannat reppua vaakasuoraan tasaisella vauhdilla, reppua kannatteleva voimasi osoittaa ylöspäin, mutta reppu siirtyy vaakasuunnassa. Voima on kohtisuorassa siirtymään nähden, joten tämän voiman tekemä mekaaninen työ on nolla. Lihaksesi kuluttavat silti energiaa myös repun kannattelemiseen.
 
+```pysahdy
+Pidät raskasta kirjaa paikallaan ojennetulla kädellä. Tekeekö kätesi kannatteluvoima työtä?
+---
+Ei tee. Kirja ei siirry, joten voimalla ei ole siirtymää, eikä mekaanista työtä tehdä.
+```
+
 <svg data-fig="carry-lift" viewBox="0 0 600 320" role="img" aria-label="Kaavakuva kahdesta tilanteesta. Vasemmalla reppua kannetaan vaakasuoraan: kannatteleva voima F osoittaa ylös, mutta liike on sivulle, joten voima ei tee työtä, W = 0. Oikealla reppu nostetaan ylös: voima F ja liike ovat samansuuntaiset, joten voima tekee työn W = F s." style="max-width:100%;font-size:24px">
   <foreignObject x="71" y="15.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kanto sivulle}$</div></foreignObject>
   <foreignObject x="390" y="15.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{nosto ylös}$</div></foreignObject>
@@ -149,6 +155,12 @@ Kun kannat reppua vaakasuoraan tasaisella vauhdilla, reppua kannatteleva voimasi
 </svg>
 
 Työ on tapa siirtää energiaa. Tämän osoitti James Prescott Joule 1840-luvulla antamalla putoavan painon pyörittää siipipyörää vedessä. Paino teki työn, ja vesi lämpeni mitattavan verran, vaikka sitä ei lämmitetty: työ kasvatti veden sisäenergiaa. Kokeissa veden lämpeneminen osoittautui verrannolliseksi painon ja pudotusmatkan tuloon eli voiman ja matkan tuloon. Tämä kokeellinen tulos perustelee työn määritelmän $W = Fs$ (kaava alla). Sama lämpeneminen saadaan aikaan myös lämmittämällä, joten työ ja lämpö ovat kaksi tapaa siirtää energiaa, ja molemmat mitataan samalla yksiköllä, joulella.
+
+```pysahdy
+Joulen kokeessa vettä ei lämmitetty, mutta se lämpeni. Mistä lämpeneminen johtui?
+---
+Putoavan painon tekemä työ pyöritti siipipyörää ja kasvatti veden sisäenergiaa.
+```
 
 <svg data-fig="joule" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva Joulen kokeesta. Putoava paino vetää narua, joka kulkee väkipyörän yli ja pyörittää vesiastiassa olevaa siipipyörää. Painon voima tekee työn pudotusmatkalla h, ja siipipyörä lämmittää vettä: työ kasvattaa veden sisäenergiaa." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy32-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
@@ -280,6 +292,12 @@ Teho on työ jaettuna siihen kuluneella ajalla. Tasaisessa liikkeessä, jossa vo
 teho :: P = \frac{W}{t} = F v
 ```
 missä $P$ on teho (W), $t$ aika (s) ja $v$ nopeus (m/s). Yksi watti on yksi joule sekunnissa: $1\,\text{W} = 1\,\text{J/s}$.
+
+```pysahdy
+Kone tekee $600\,\text{J}$:n työn $20\,\text{s}$:ssa. Mikä on koneen teho?
+---
+$P = W/t = 600\,\text{J}/20\,\text{s} = 30\,\text{W}$.
+```
 
 ## Esimerkki
 Jousta venytetään $20\,\text{cm}$. Venyttävä voima kasvaa tasaisesti nollasta 40 newtoniin, kuten kuvaaja näyttää. Kuinka suuren työn venyttävä voima tekee?

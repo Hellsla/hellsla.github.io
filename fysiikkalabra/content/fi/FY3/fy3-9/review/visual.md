@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 9f01aec0f0034f76
+CONTENT-HASH: 69bd57d396a4bc01
 
 ## Blocking
 
 ## Polish
-- [Minor] fig 2 (micro-boyle), 390 px capture — in the still frame two particles overlap at the bottom of the right cylinder, and the hit markers and velocity arrows are not shown in that frame, so the still reads as a plain dot picture — consider a still (reduced-motion/print) frame with arrows and hit markers visible, as in the 1280 px theory capture.
+- [Minor] lesson.md Pysähdy (20 °C → 40 °C) — "$313/293 \approx 1{,}07$" uses a slash; a colon ($313 : 293$) is the house notation for a written division.
 
 ## Checked
-- Delta: micro-boyle became an animated figure (class fig-anim, pause button, same aria-label). Opened fy3-9-fig-2-390, fy3-9-fig-row-1280 and fy3-9-theory-1280-1.
-- Figure sits right after its paragraph, labels LaTeX ($V$ ja $p$, $V/2$ ja $2p$, $T$ vakio), pause button "Pysäytä animaatio" visible and readable, nothing clipped, layout survived beside the text.
-- Particle speed arrows equal in both states, hit markers more frequent on the right; consistent with the text.
+batch delta review: three new Pysähdy ja mieti blocks read from the source; box layout verified in shared captures (fy3-1 390/1280, fy3-12, fy3-15); kelvin values and units set in LaTeX; figures unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

@@ -1,11 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e63148ee36441aa8
+CONTENT-HASH: 5d03ff767c51396e
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- inquiry.json (exit ticket) — testaa vain jousen venymän verrannollisuutta, ei massan ja painon eroa; lisää massa/paino-kysymys.
+- sim stage — simulaation teksti "Massa on sama kaikkialla. Vain paino muuttuu…" ja neljän taivaankappaleen palkit paljastavat ennusteen 2 vastauksen heti; siirrä lause "Mallin oletukset" -laatikkoon.
+- lesson.md valokuvan kuvateksti — "putoavat yhdessä Maan ympäri" on FY4-tasoa ja voi hämmentää S2-lukijaa; sano suoraan, että paino on silti olemassa.
 
 ## Checked
-batch delta review, round 1: the Pohdinta retrieval now runs through the hook's own instrument (a spring balance, 1,5 cm at 2,0 N, how far at 6,0 N): same situation, FY1 proportionality only. Distractors repair real slips (adding the difference 5,5; copying the number 6,0; doubling 3,0). It does not reveal Ennuste 1 or 2 (mass ratio, g on Jupiter; the retrieval is about force and stretch) nor the open question (what the spring measures). Numbers agree with lesson-answers.py. Clear, short sentences.
+- Sama rakenne ja fysiikka kuin suomenkielisessä; lauseet lyhyempiä, "kalibroida" ja "vuorovaikutus" selitetään ensimmäisellä kerralla.
+- Esimerkki seitsemässä vaiheessa, symbolit ensin, "Järkevyys" jaettu kahteen kappaleeseen.
+- Esitiedot (FY1 suoraan verrannollisuus) kertaus ja Kuu-kysymys vastattu sitoutumisen jälkeen.
+- Harhakäsitykset (kilogramma painon yksikkönä, massa muuttuu Kuussa) korjataan palautteessa.
+- Kuvat ja kokeet luettavissa 390 px:llä.
