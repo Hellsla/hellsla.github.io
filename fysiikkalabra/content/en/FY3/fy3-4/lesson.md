@@ -29,7 +29,7 @@ When a force is spread over a surface, its effect depends on how large an area i
 ```pysahdy
 A force of $60\,\text{N}$ acts on an area of $2.0\,\text{cm}^2$. What is the pressure?
 ---
-$p = \dfrac{F}{A} = \dfrac{60\,\text{N}}{2.0 \cdot 10^{-4}\,\text{m}^2} = 3.0 \cdot 10^{5}\,\text{Pa}$, that is $300\,\text{kPa}$.
+$p = \dfrac{F}{A}$, so $p = \dfrac{60\,\text{N}}{2.0 \cdot 10^{-4}\,\text{m}^2}$. That is $3.0 \cdot 10^{5}\,\text{Pa} = 300\,\text{kPa}$.
 ```
 
 <svg data-fig="pressure-area" viewBox="0 0 600 380" role="img" aria-label="The same force F acts on an identical brick in two ways. On the left the brick stands on end and touches the ground with a small area A1, so the pressure p1 = F/A1 is large. On the right the brick lies on its side and touches the ground with an area three times as large, A2 = 3 A1, so the pressure p2 = F/A2 is one third of the pressure on the left. The force arrows are equally long. The contact areas are to scale; the diagram is otherwise schematic." style="max-width:100%;font-size:24px">

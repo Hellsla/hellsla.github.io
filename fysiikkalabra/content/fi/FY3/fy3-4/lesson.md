@@ -29,7 +29,7 @@ Kun voima jakautuu pinnalle, sen vaikutus riippuu siitä, kuinka suurelle alalle
 ```pysahdy
 Voima $60\,\text{N}$ kohdistuu pinta-alalle $2{,}0\,\text{cm}^2$. Kuinka suuri on paine?
 ---
-$p = \dfrac{F}{A} = \dfrac{60\,\text{N}}{2{,}0 \cdot 10^{-4}\,\text{m}^2} = 3{,}0 \cdot 10^{5}\,\text{Pa}$, eli $300\,\text{kPa}$.
+$p = \dfrac{F}{A}$, joten $p = \dfrac{60\,\text{N}}{2{,}0 \cdot 10^{-4}\,\text{m}^2}$. Se on $3{,}0 \cdot 10^{5}\,\text{Pa} = 300\,\text{kPa}$.
 ```
 
 <svg data-fig="pressure-area" viewBox="0 0 600 380" role="img" aria-label="Sama voima F kohdistuu samanlaiseen tiiliskiveen kahdella tavalla. Vasemmalla tiili on pystyssä ja koskettaa alustaa pienellä alalla A1, jolloin paine p1 = F/A1 on suuri. Oikealla tiili on kyljellään ja koskettaa alustaa kolme kertaa suuremmalla alalla A2 = 3 A1, jolloin paine p2 = F/A2 on kolmasosa vasemman paineesta. Voimanuolet ovat yhtä pitkät. Kontaktialat ovat mittakaavassa, kaaviokuva muuten." style="max-width:100%;font-size:24px">
