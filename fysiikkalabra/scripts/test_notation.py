@@ -8,7 +8,7 @@ import pathlib, re, sys
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 BAD = re.compile(r"\\{1,2}(?:vec|overrightarrow)\s*\{|\\{1,2}(?:mathbf|boldsymbol)\s*\{\s*[A-Za-z\\]")
 SOURCES = [("content", "*.md"), ("content", "*.json"), ("lessons", "*.md"), ("lessons", "*.json"), ("lessons", "*.py"),
-           ("lessons", "*.js"), ("assets/sims", "*.js"), ("lang", "*.json")]
+           ("lessons", "*.js"), ("lessons", "*.tsv"), ("assets/sims", "*.js"), ("lang", "*.json")]
 
 
 def findings():

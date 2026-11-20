@@ -9,12 +9,15 @@ on its own line after the paragraph it explains) and kept in step from then on; 
 lesson.md is up to date (exit 1 if not). --tag a,b,c names the existing figures of lesson.md in order (data-fig),
 once, before figures.py takes them over.
 
+A figure with a row in lessons/<COURSE>/ASETTELU.tsv (scripts/figimage.py) is written on its picture: one <image> from
+assets/pics/<course>/, and figures.py's labels (each moved as the row says) on top of it; its shapes are not written.
+
 --lang en writes the figures into content/en/<COURSE>/<id>/lesson.md with the texts of content/en/<COURSE>/<id>/
 figures.json ({Finnish text: translation}, figlib.set_language) and the decimal sign of lang/en.json; a Finnish text
 without a translation is listed (exit 1 with --check)."""
 import json, sys, re, pathlib, importlib.util
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import courses, figlib, i18n
+import courses, figimage, figlib, i18n
 
 lang = sys.argv[sys.argv.index("--lang") + 1] if "--lang" in sys.argv else i18n.SOURCE
 folder = courses.find_lesson(sys.argv[1], lang)
@@ -38,6 +41,7 @@ for name, fn in mod.FIGURES.items():
         continue
     svg = fn()
     if 'data-fig=' not in svg: svg = svg.replace("<svg ", f'<svg data-fig="{name}" ', 1)
+    svg = figimage.apply(svg, f"{folder.name}/{name}")   # a figure with a row in lessons/<COURSE>/ASETTELU.tsv is drawn on its picture (scripts/figimage.py)
     new = pat.sub(lambda m: svg, new, count=1)
 if figlib.MISSING:
     print(f"{folder.relative_to(courses.ROOT)}/figures.json has no translation for: " + "; ".join(figlib.MISSING))

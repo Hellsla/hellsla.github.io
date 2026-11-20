@@ -47,7 +47,7 @@ MAX_EXERCISES = 40   # a chapter's exercise set beyond this is a second chapter'
 # conceptual question (often multiple choice), reasoning = a justified qualitative answer, model = building or testing a model
 EXERCISE_KINDS = ("data", "graph", "experiment", "error", "concept", "reasoning", "model")
 LESSON_ID = re.compile(r"^([a-z]+)(\d+)-([0-9][0-9a-z]*)$")
-PIC_REF = re.compile(r"""(?:src=["']|\]\()((?:pics/[a-z0-9]+|shared/pics)/[^"')\s]+)""")
+PIC_REF = re.compile(r"""(?:src=["']|href=["']|\]\()((?:pics/[a-z0-9]+|shared/pics)/[^"')\s]+)""")
 CODE_FILES = ("answers.py", "lesson-answers.py", "figures.py", "sim.js", "sim-spec.md")
 EXERCISE_FILES = ("exercises.json", "solutions.md")      # the texts of the exercise set, in <lesson folder>/exercises/
 SOURCE_LANG = "fi"
@@ -184,9 +184,10 @@ LESSON_TEXTS = tuple(n for n in TEXT_FILES if n not in EXERCISE_FILES)
 
 def pic_refs_in(texts):
     """Picture paths (pics/fy4/x.webp, shared/pics/y.svg) referred to in some texts, in order, without repeats."""
+    import figimage                                    # a figure referred to by id brings the picture it is drawn on (work queue 24)
     seen = []
     for t in texts:
-        for r in PIC_REF.findall(t or ""):
+        for r in PIC_REF.findall(t or "") + figimage.pics_of(t):
             if r not in seen: seen.append(r)
     return seen
 

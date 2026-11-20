@@ -5,4 +5,5 @@
 # CI when they differ. Run the browser checks locally in that image: python scripts/ci_env.py run -- <command>.
 markdown
 numpy
+Pillow
 playwright==1.65.0
