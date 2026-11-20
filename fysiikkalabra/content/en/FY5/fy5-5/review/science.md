@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 259dd438b58d9b7c
+CONTENT-HASH: bc2f14246b7773ee
 
 ## Blocking
 
 ## Polish
-- content/en/FY5/fy5-5/inquiry.json:343 — the transfer task now works with the force F = γMm/r², but the feedback for 6378 still gives the reason as "$g \propto \tfrac{1}{r^2}$". That is correct (F = mg), but it brings back the extension quantity g on the core path. The Finnish has the same line — use $F \propto \tfrac{1}{r^2}$ in both.
+- lesson.md:296 (block 3): the graph's visible tick labels are every 600 µN, so 417 µN and 104 µN cannot be read off it precisely: they are only in the aria-label. "The graph shows the same value" is a bit strong. Fix: "about 100 µN, as the graph shows".
+- lesson.md:200 (block 1): the answer uses the fact that the Moon has the smaller mass, but the paragraph does not give it. This is common knowledge and not blocking; the answer could add "(about 1/81 of the Earth's mass)".
 
 ## Checked
-- Transfer task: F(R+h) = ½F(R) gives (R+h)² = 2R², so h = (√2 − 1)·6378 km = 2641.9 km → 2640 km (answer, unit and tolerance unchanged). M and m cancel, as the solution says; the hints and the reasonableness check (6378/9020)² = 0.500 are right.
-- The extension note on "Gravitational field strength" names the next subsection correctly (*The field on different celestial bodies*, line 339). Its core path (Newton's law, and weight at the Earth's surface = the gravitational force) is correct at this level (rotation ignored, a C simplification).
-- Summary: "weight at the Earth's surface is the gravitational force, G = mg", and the extension line keeps g = γM/r² as the acceleration of free fall, unit m/s². Consistent with the theory.
-- learn/deepen split: the field-strength goal has moved to "deepen", and "Find the error" (a g calculation) is now titled Extension. This is consistent.
-- Exit ticket: the re-broken chain gives 6.7·10⁻¹¹ N with the same numbers and units.
-- lesson-answers.py: the comment change only; the value 2642 km is unchanged.
-- Compared with the Finnish (lesson.md 285, 692; inquiry.json 343): the same physics and numbers.
-- Hash unchanged at start and end.
+- Hash the same at the start and at the end. Scope: only the three new `pysahdy` blocks (teacher 2026-11-20, work queue 20); the inquiry.json reflow carries.
+- Block 1 (Earth and Moon): a = F/m with equal third-law forces; M_Earth/M_Moon = 81, so the Moon's acceleration is about 81 times the Earth's. Correct, and answerable from the apple/Earth paragraph just before it.
+- Block 2 (r on the surface): r is measured from the centre, R = 6378 km, which matches the paragraph before it, the transfer task and Etsi virhe. It gives nothing away that is not already in the paragraph, and Etsi virhe comes later, after the theory.
+- Block 3 (graph): γ·(1,0·10⁴ kg)²/r² gives 417,1 µN at 4 m and 104,3 µN at 8 m, which matches the figure's data (figures.py) and the inverse-square paragraph. It extends the figure's 2 m to 4 m example without repeating it.
+- Deterministic checks are green, including layout at 360 px with the answers open.
+
+## Vanhan sisällön löydökset
+- inquiry.json:343 (siirto, mistake 6378): the reasoning uses "g ∝ 1/r²" where the task speaks of the force; "F ∝ 1/r²" would fit better (from the previous round).
+- lesson.md (Common misconception): "kentän voimakkuus ... 8,9 m/s²" is still the only core-path sentence that gives a field strength (from the previous round).
