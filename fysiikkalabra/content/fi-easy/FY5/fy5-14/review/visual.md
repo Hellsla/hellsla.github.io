@@ -1,10 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: bfb6f27b01f3e939
+CONTENT-HASH: ddf061ac0318f2d2
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] none.
+- [Minor] block 1 (Sointiväri) and block 3 (Doppler, lähde) — the question restates the paragraph just above almost word for word, so it checks recall of the very sentence rather than use; consider a variant question (e.g. a new instrument pair, or a listener behind the source). Optional.
+
+## Vanhan sisällön löydökset
+- none
 
 ## Checked
-- batch delta review: opened the Pohdinta capture and a fresh 390 px render of the opened Kertaa choice (wrong answer feedback and correct answer feedback); maths, LaTeX units and wrapping render cleanly.
+- fi-easy: theory-1280 captures with the three new blocks (closed, "Vastaus" row visible), neighbouring figures and paragraphs. Opened answers not captured; layout 360 px check is green in the packet and I did not see an opened answer myself.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

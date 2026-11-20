@@ -272,9 +272,9 @@ Because the range is so wide, the loudness of a sound is described by the **soun
 </svg>
 
 ```pysahdy
-The intensity of a sound becomes a hundred times greater. By how many decibels does the level increase?
+The intensity of a sound becomes a thousand times greater. By how many decibels does the level increase?
 ---
-A hundredfold increase is two tenfold increases in a row. The level increases by $2 \cdot 10\,\text{dB} = 20\,\text{dB}$.
+A thousandfold increase is three tenfold increases in a row. The level increases by $3 \cdot 10\,\text{dB} = 30\,\text{dB}$.
 ```
 
 The ear is not equally sensitive to all frequencies: low and very high sounds seem quieter at the same intensity than sounds of about $1000$–$4000\,\text{Hz}$. Sound level meters therefore weight the frequencies according to the sensitivity of the ear, and such a weighted reading is written $\text{dB(A)}$. Ordinary sound level meters often show the A-weighted sound pressure level. In this chapter we calculate unweighted sound intensity levels.

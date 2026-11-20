@@ -461,9 +461,9 @@ missä $f_n$ on sarjan $n$:s taajuus (Hz) ja $f_1$ on perustaajuus (Hz). Äänen
 </svg>
 
 ```pysahdy
-Huilu ja viulu soittavat saman sävelen, mutta äänet kuulostavat erilaisilta. Mikä äänissä on samaa ja mikä erilaista?
+Äänen spektrissä on huiput taajuuksilla $250\,\text{Hz}$, $500\,\text{Hz}$ ja $750\,\text{Hz}$. Mikä on äänen perustaajuus? Mistä äänenkorkeus riippuu?
 ---
-Äänenkorkeus on sama, koska perustaajuus on sama. Soinnin ero tulee yläsävelistä: ne ovat eri soittimilla eri voimakkaita.
+Perustaajuus on alin huippu, $250\,\text{Hz}$. Muut huiput ovat sen monikertoja eli yläsäveliä. Äänenkorkeus riippuu perustaajuudesta.
 ```
 
 ### FFT-spektri

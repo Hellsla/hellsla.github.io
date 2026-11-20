@@ -1,11 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3a3366d0ae510376
+CONTENT-HASH: ddf061ac0318f2d2
 
 ## Blocking
 - none
 
 ## Polish
+- [Minor] blocks 1 and 3 — the question restates the paragraph just above almost word for word; consider a variant. Optional.
+
+## Vanhan sisällön löydökset
 - none
 
 ## Checked
-batch delta review: Pohdinta stage capture (stage-herata-390) opened, phenomenon text, question and the optional retrieval box legible at 390 px; retrieval prompt, choices and feedback read from the diff (all quantities in LaTeX with units, no plain quantities).
+- en: theory-1280 captures with the three new blocks (closed, "Vastaus" row visible), neighbouring figures and paragraphs. Opened answers not captured; layout 360 px check is green in the packet and I did not see an opened answer myself.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

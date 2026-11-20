@@ -272,9 +272,9 @@ Laajan vaihteluvälin vuoksi äänen voimakkuutta kuvataan **intensiteettitasoll
 </svg>
 
 ```pysahdy
-Äänen intensiteetti kasvaa satakertaiseksi. Kuinka monta desibeliä taso kasvaa?
+Äänen intensiteetti kasvaa tuhatkertaiseksi. Kuinka monta desibeliä taso kasvaa?
 ---
-Satakertaistuminen on kaksi kymmenkertaistumista peräkkäin. Taso kasvaa $2 \cdot 10\,\text{dB} = 20\,\text{dB}$.
+Tuhatkertaistuminen on kolme kymmenkertaistumista peräkkäin. Taso kasvaa $3 \cdot 10\,\text{dB} = 30\,\text{dB}$.
 ```
 
 Korva ei ole yhtä herkkä kaikille taajuuksille: matalat ja hyvin korkeat äänet kuulostavat samalla intensiteetillä hiljaisemmilta kuin noin $1000$–$4000\,\text{Hz}$:n äänet. Melumittarit painottavat siksi taajuuksia korvan herkkyyden mukaan, ja tällainen painotettu lukema merkitään $\text{dB(A)}$. Tavalliset melumittarit näyttävät usein A-painotettua äänenpainetasoa. Tässä luvussa lasketaan painottamattomia intensiteettitasoja.

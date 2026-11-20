@@ -461,9 +461,9 @@ where $f_n$ is the $n$th frequency of the series (Hz) and $f_1$ is the fundament
 </svg>
 
 ```pysahdy
-A flute and a violin play the same note, but the sounds are different. What is the same and what is different?
+The spectrum of a sound has peaks at $250\,\text{Hz}$, $500\,\text{Hz}$ and $750\,\text{Hz}$. What are the fundamental frequency of the sound and its pitch?
 ---
-The pitch is the same because the fundamental frequency is the same. The timbre differs because the overtones have different strengths in the two instruments.
+The fundamental frequency is the lowest peak, $250\,\text{Hz}$. The other peaks are its multiples, the overtones, and the pitch is determined by the fundamental frequency.
 ```
 
 ### The FFT spectrum
