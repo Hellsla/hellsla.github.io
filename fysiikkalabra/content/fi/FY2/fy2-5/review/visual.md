@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f580794a34c9dd43
+CONTENT-HASH: 101e7629934e25bd
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] inquiry.json ennuste-2, first choice feedback — the chain now ends the sentence block without a full stop before 'Se on suurempi ...'; add '.' only if the text is next edited.
+- none
 
 ## Checked
-batch delta review: fy2-5 ennuste-2 wrong-choice feedback rendered at 390 px (chain as display rows, 'Se on suurempi kuin puun 15 MJ/kg.' on its own line, nothing clipped); open-ennusta-1280-1/2. Figures unchanged, not reopened.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+- batch delta review: diff adds pysahdy blocks only; checked the rendered block style in fy2-2 theory-1280-2 (maths, units, openable Vastaus fine) and fig-row-1280 for fy2-5 and fy2-8; the other lessons' own captures not individually opened, no literal markup in their block sources.

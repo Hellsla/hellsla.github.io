@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: ed33081273252032
+CONTENT-HASH: d073ccd7d9eee92d
 
 ## Blocking
 
 ## Polish
-- None.
+- The capacity-factor box gives 0,30 from $5\,\text{MW}$ (one significant figure); writing $5{,}0\,\text{MW}$ would match the two-figure answer.
 
 ## Checked
-batch delta review: retrieval recomputed: 12 GW * 3 h = 36 GWh correct; 4,0 GWh (P/t) and 36 GW (wrong unit) feedback right; 12 GW is a plausible Finnish winter-morning load (peak about 14-15 GW); lesson-answers.py inq-kertaus = 36 runs; worked example paragraphs split, numbers unchanged (0,32).
+batch delta review: hydro vs wind dispatchability (consistent with the paragraph), 2,0 MW x 3 h = 6,0 MWh, 1,5 / 5 = 0,30; inquiry.json change is presentation only. Recomputed in one script; no option or feedback changed.

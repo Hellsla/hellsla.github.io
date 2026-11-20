@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: eda4ea09580287e0
+CONTENT-HASH: 2474e1ec80a119e6
 
 ## Blocking
+- None.
 
 ## Polish
-- inquiry.json check-patteri, option "Noin 50 %" feedback — "patterin ja johtojen lämpeneminen on hyötyä" holds for the heater and its cord inside the room; the building's wiring outside the room is a (tiny) loss. Optional: "patterin ja sen johdon lämpeneminen huoneessa" (C level, not blocking).
+- None.
 
 ## Checked
-- koe-1 intro: the reworded sentence still says the 25 % efficiency is a model input, not measured; Po locked at 60 kW, only t varied, setup isolates t as before.
-- koe-1 conclusion: model answer recomputed, 60 kW x 10 s = 600 kJ, x 20 s = 1200 kJ; 25 % gives 150 kJ and 300 kJ; 15 kW : 60 kW = 25 %; 75 % losses. All correct.
-- Removing the "Muuttuiko se..." question and its criterion leaves prompt, model answer and the three remaining criteria consistent (the "aika supistuu" criterion still matches "laskettu energioista ja tehoista").
-- Model answer still states the constant-efficiency assumption and the real engine's load dependence (condition kept).
-- check-patteri: exactly one correct option (lähes 100 %); new distractor "noin 50 %" is genuinely wrong and its feedback gives the right reason (heating is the useful output, energy conservation), in line with the guardrail that a resistance heater's efficiency is practically 100 %.
-- Other three options and feedback unchanged and consistent with the new one; no "minkään laitteen hyötysuhde ei voi olla 100 %" claim left in the diff.
-- Hash eda4ea09580287e0 at start and end.
+- Delta review, round 4: `johtopaatos` criterion 3 now reads "hehkulampun hyötysuhde on noin $5\,\%$. Siis vain pieni osa otetusta energiasta on hyötyä." It is about the lamp of koe-2, which the conclusion comes `after`. The core-path task gives the data for it, and criterion 1 already asks for the calculation that produces it (7).
+- The model answer meets all three criteria: the definition with numbers, the time cancelling, and $5\,\%$ with the remaining $95\,\%$ as losses (6).
+- Recomputed: $P_\text{o} = 40\,\text{W}$, $\eta = 0{,}05$. $t = 10\,\text{s}$ gives $400\,\text{J}$ / $20\,\text{J}$ and $t = 20\,\text{s}$ gives $800\,\text{J}$ / $40\,\text{J}$, both $5\,\%$. $P_\text{a} = 2{,}0\,\text{W}$, losses $95\,\%$. All agree (4).
+- Nothing in the criterion refers to the optional koe-1 or to the engine. It matches the koe-2 feedback (line 229, 235) and the lamp value used elsewhere in the lesson (line 75, 442).
+- The rest of the diff (ennuste-1 and koe-1 `optional`, koe-1 hint 3 in kJ) is unchanged since round 3 and was judged there.
+- Hash `--lang fi-easy` identical at start and end.

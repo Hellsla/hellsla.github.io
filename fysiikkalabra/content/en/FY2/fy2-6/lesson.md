@@ -245,6 +245,12 @@ Large amounts of electricity cannot be stored directly in the grid, so productio
 
 In a hydropower plant the flow is increased or reduced quickly, but you cannot give orders to the wind or the Sun. A nuclear power plant usually runs steadily at almost full power, but its output can also be reduced when needed: for example, the Olkiluoto units have reduced their output when the price of electricity has been very low.
 
+```pysahdy
+In the evening, electricity consumption suddenly rises. Which plant can respond to it more reliably, a hydropower plant or a wind power plant?
+---
+The hydropower plant, because its flow can be adjusted quickly. You cannot give orders to the wind, so a wind plant's output depends on the weather.
+```
+
 ### Criteria for comparison
 Different ways of producing energy are compared with the same questions:
 
@@ -303,8 +309,21 @@ E = P \cdot t
 ```
 where $E$ is the energy produced, $P$ is the power of the plant and $t$ is time. When the power is in kilowatts and the time in hours, the energy is in kilowatt-hours. An ordinary year of $365$ days has $t = 8760\,\text{h}$. A leap year has $8784\,\text{h}$. The worked calculations of this chapter use the length of an ordinary year unless stated otherwise. Large amounts of energy are often given in gigawatt-hours and terawatt-hours: $1\,\text{GWh} = 10^{6}\,\text{kWh}$ and $1\,\text{TWh} = 10^{9}\,\text{kWh}$.
 
+```pysahdy
+A plant produces at a constant power of $2.0\,\text{MW}$ for a time of $3\,\text{h}$. How much energy does it produce?
+---
+Energy is power times time: $E = P \cdot t$.
+So $E = 2.0\,\text{MW} \cdot 3\,\text{h} = 6.0\,\text{MWh}$.
+```
+
 ### Rated power and average power
 The rated power of a power plant is the highest power at which it can operate. A wind turbine does not produce at rated power all year, because the wind varies. The average power is the energy produced during the year divided by the number of hours in the year. The average power divided by the rated power tells you what fraction of the rated power is used on average.
+
+```pysahdy
+A wind turbine has a rated power of $5\,\text{MW}$ and a yearly average power of $1.5\,\text{MW}$. Why is the average power smaller, and what fraction of the rated power is it?
+---
+The wind varies, so the plant does not produce at its rated power all the time. The fraction is $1.5\,\text{MW} : 5\,\text{MW} = 0.30$.
+```
 
 ### Orders of magnitude
 The power of one power plant can be a thousand times greater than that of another. This is why orders of magnitude are compared using powers of ten. On the horizontal axis of the figure, each step from one vertical line to the next is a factor of ten, so the distance between the points tells you how many factors of ten the power increases by.

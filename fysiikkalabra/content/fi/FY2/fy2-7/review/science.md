@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 1542eb473f036604
+CONTENT-HASH: ca73ac76c2ec0d87
 
 ## Blocking
 
 ## Polish
-- None.
+- The voltage box assumes the same conductors in both lines; the preceding paragraph sets the same comparison, so this is C, but "samanlaiset johtimet" would state it.
 
 ## Checked
-batch delta review: retrieval prompt adds district-heating pump context only; eta = 6,0/8,0 = 0,75 and distractors 1,33, 0,25, 2,0 kWh with feedback unchanged and right; worked example knowns as list, numbers unchanged (245 MWh, 9,0 %).
+batch delta review: lower voltage -> larger current -> more heating at equal power (consistent with the lesson's qualitative model, no later-course formula), 100 - 91 = 9 GWh = 9 %, energy not lost but transferred as heat, pumped storage as potential energy with conversion losses (FY2 wording allowed). Recomputed in one script; no option or feedback changed.

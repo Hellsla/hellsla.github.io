@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 13eeea90f2e8d0e5
+CONTENT-HASH: ceee692a122fffa6
 
 ## Blocking
+(none)
 
 ## Polish
-
+- Power-line question: the claim assumes comparable wires (same resistance); adding "with similar wires" would state the condition, though at FY2 it is a fair simplification (C).
 
 ## Checked
-batch delta review: recap prompt adds a district-heating context only; 6.0:8.0 = 0.75 still the one correct option, distractor feedback unchanged and right; worked example knowns split into a list, numbers unchanged (245 MWh x 0.91 = 223 MWh, loss 22 MWh recomputed).
+batch delta review: same power at low voltage means larger current and more heating (consistent with the transmission paragraph and summary); recomputed 100 - 91 = 9 GWh = 9 %; energy transferred as heat, not lost; pumped storage stores gravitational potential energy, conversion losses stated (FY2 wording allowed); inquiry.json presentation only.

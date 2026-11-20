@@ -50,7 +50,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Prediction 1: efficiency of a petrol engine",
-      "prompt": "The petrol engine of a car takes a power of $60\\,\\text{kW}$ from the chemical energy of the fuel. What fraction of this power becomes the useful power needed to move the car? Hint: remember the hot incandescent lamp from Think about it. Do the engine and the exhaust pipe of a car get hot while driving?",
+      "prompt": "The petrol engine of a car takes a power of $60\\,\\text{kW}$ from the chemical energy of the fuel. What fraction of this power becomes the useful power needed to move the car?",
       "justify": true,
       "reveal": {
         "after": "koe-1",
@@ -74,7 +74,8 @@
           "text": "About $5\\,\\%$, because the engine gets as hot as an incandescent lamp.",
           "feedback": "Not quite. The efficiency of an incandescent lamp is about $5\\,\\%$, but the typical efficiency of a petrol engine is about $25\\,\\%$ (the value of the simulation model). Still, getting hot is a sign of losses, and an engine has them too."
         }
-      ]
+      ],
+      "optional": true
     },
     {
       "id": "ennuste-2",
@@ -101,8 +102,7 @@
           "text": "Efficiency decreases, because the lamp heats up for longer and the losses grow.",
           "feedback": "The idea is physical, but it does not fit a lamp that burns steadily. The loss energy grows with time, but the useful energy and the energy taken grow in the same proportion, because at constant power $E = P \\cdot t$. The lamp warms up only in the moment right after switching on; the model of the simulation assumes that efficiency is constant, so it cannot test this."
         }
-      ],
-      "optional": true
+      ]
     },
     {
       "id": "simulaatio",
@@ -163,7 +163,7 @@
         "hints": [
           "The share of losses is the share of the loss energy in the energy taken. Choose one row of the table and read $E_\\text{h}$ and $E_\\text{o}$ from it.",
           "The share is $\\dfrac{E_\\text{h}}{E_\\text{o}}$. Convert the ratio to a percentage by multiplying it by $100\\,\\%$.",
-          "For example, in the row $t = 10\\,\\text{s}$ the energy taken is $600\\,000\\,\\text{J}$ and the loss energy $450\\,000\\,\\text{J}$, so $450\\,000 : 600\\,000 = 0.75$."
+          "For example, in the row $t = 10\\,\\text{s}$ the energy taken is $600\\,\\text{kJ}$ and the loss energy $450\\,\\text{kJ}$, so $450 : 600 = 0.75$."
         ],
         "mistakes": [
           {
@@ -181,7 +181,8 @@
         "laite": {
           "auto": "car petrol engine"
         }
-      }
+      },
+      "optional": true
     },
     {
       "id": "koe-2",
@@ -222,7 +223,7 @@
       "min": 3,
       "question": {
         "type": "choice",
-        "prompt": "The useful power of the lamp here is $2.0\\,\\text{W}$, so the ratio of the powers $P_\\text{a} : P_\\text{o}$ is $5\\,\\%$. From the rows of the table, calculate the ratio of the energies $E_\\text{a} : E_\\text{o}$. What do you notice?",
+        "prompt": "Use the readout of the simulation for the useful power $P_\\text{a}$ and calculate the ratio of the powers $P_\\text{a} : P_\\text{o}$. From the rows of the table, calculate the ratio of the energies $E_\\text{a} : E_\\text{o}$ on at least two rows with different times. What do you notice?",
         "choices": [
           {
             "text": "The ratio of the energies is $5\\,\\%$ on every row, the same as the ratio of the powers, even though the energies grow with time.",
@@ -239,7 +240,6 @@
           }
         ]
       },
-      "optional": true,
       "values": {
         "laite": {
           "lamppu": "incandescent lamp"
@@ -252,14 +252,14 @@
       "type": "explain",
       "title": "Conclusion: what efficiency depends on",
       "after": [
-        "koe-1"
+        "koe-2"
       ],
-      "prompt": "Based on your table, write: how is efficiency calculated from energies and powers? What did the experiment tell you about the petrol engine?",
-      "model": "In experiment 1 the petrol engine took a constant power of $60\\,\\text{kW}$. The energies grew with time: when $t = 10\\,\\text{s}$, $E_\\text{o} = 600\\,\\text{kJ}$ and $E_\\text{a} = 150\\,\\text{kJ}$, and when $t = 20\\,\\text{s}$, $E_\\text{o} = 1200\\,\\text{kJ}$ and $E_\\text{a} = 300\\,\\text{kJ}$. The ratio $E_\\text{a} : E_\\text{o} = 25\\,\\%$ stayed the same, because at constant power $E = P \\cdot t$ and the time cancels. The same ratio is obtained from the powers: $15\\,\\text{kW} : 60\\,\\text{kW} = 25\\,\\%$. The remaining $75\\,\\%$ was losses, mostly heat. The values are values of the simulation model. In the model the efficiency is constant even when the power taken changes, but that is an assumption of the model: the efficiency of a real engine depends on the load.",
+      "prompt": "Based on your experiment 2 table, write: how is efficiency calculated from energies and powers, and why does the running time not affect it?",
+      "model": "In experiment 2 the incandescent lamp took a constant power of $40\\,\\text{W}$. The energies grew with time: when $t = 10\\,\\text{s}$, $E_\\text{o} = 400\\,\\text{J}$ and $E_\\text{a} = 20\\,\\text{J}$, and when $t = 20\\,\\text{s}$, $E_\\text{o} = 800\\,\\text{J}$ and $E_\\text{a} = 40\\,\\text{J}$. At constant power $E_\\text{o} = P_\\text{o} \\cdot t$ and $E_\\text{a} = P_\\text{a} \\cdot t$, so the time cancels from the efficiency: $\\eta = E_\\text{a} : E_\\text{o} = P_\\text{a} : P_\\text{o}$. Both rows give $20\\,\\text{J} : 400\\,\\text{J} = 5\\,\\%$ and $40\\,\\text{J} : 800\\,\\text{J} = 5\\,\\%$, the same as $2\\,\\text{W} : 40\\,\\text{W}$. The ratio decides, not the time. The remaining $95\\,\\%$ was losses, mostly heat. The values are values of the simulation model, which assumes a constant efficiency.",
       "criteria": [
         "I said that efficiency is the share of useful energy (or power) in the energy (or power) taken, and I gave a calculation with numbers.",
         "I explained why the efficiency calculated from energies and from powers is the same (the time cancels).",
-        "I said that the losses of a petrol engine are a large part of the power taken and that they are heat."
+        "I said that the efficiency of the incandescent lamp is about $5\\,\\%$, so only a small part of the energy taken is useful."
       ]
     },
     {

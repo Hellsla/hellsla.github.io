@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 4c8f8d638f0ac27d
+CONTENT-HASH: 1bf0b1235b3c3d94
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] lesson.md Result step: "to the nearest ten kilojoules" appears twice in one sentence; could be tightened.
 
 ## Checked
-- batch delta review: rendered the optional 'Find the error' prompt at 390 px (display aligned chain on two rows, decimal point, options intact); opened sim-390 and fig-row-1280.
+- batch delta review: opened example-390-2 (changed Result step, renders cleanly, units LaTeX) and intro-1280 (layout intact); other changes are caption wording and inquiry model/feedback text, no figure, formula or layout change.
