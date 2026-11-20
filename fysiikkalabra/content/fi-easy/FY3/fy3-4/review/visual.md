@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 6e9a9085dad716e1
+CONTENT-HASH: 129dcdd5c074199d
 
 ## Blocking
 
 ## Polish
-- [Minor] Pohdinta card — option "noin $29\,\text{kN}$" and feedback chain "$29\,430\,\text{N} \approx 29\,\text{kN}$" are consistent; no issue beyond that the wrong-answer feedback gives the number "$29\,430\,\text{N}$" in prose, which is fine.
+- [Minor] example stage 7 (Järkevyys) — "10 metriä", "12 metriä", "noin 180 kg:n massan" are plain-text quantities (untouched text) — set as $10\,\text{m}$, $12\,\text{m}$, $180\,\text{kg}$:n.
+- [Minor] sim readout at 390 px — the p = p0 + ρgh chain wraps after "Kokonaispaine" onto its own line; readable, optional.
 
 ## Checked
-batch delta review: Pohdinta card (Kertaa: veden paino, 3000 kg) with feedback open at 390 px (correct and wrong answer) and 1280 px, plus stage-herata-390; G = mg chain aligned at "=", units upright with thin space, thousands grouped with thin space, nothing clipped. Captures made by me from preview/fi-easy. Figures unchanged by the diff.
+- delta: sim-390 and sim-1280 (readout now only ρgh and p; ratio and slope lines gone, controls and note below intact, nothing clipped); theory-1280-1 and -2 (three new "Pysähdy ja mieti" cards: formulas $60\,\text{N}$, $2{,}0\,\text{cm}^2$ set correctly, answer closed, layout and spacing consistent with the column, figures still beside their paragraphs); example-390-2 (Tulos stage with $F \approx 1{,}77\,\text{kN}$, aligned chains, thin-space thousands, upright units, nothing clipped).
+- Figures unchanged by the diff.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5
