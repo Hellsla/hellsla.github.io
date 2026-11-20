@@ -1,22 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 35edad9152364348
+CONTENT-HASH: 19f12c96b2b50e2b
 
-Scope (teacher 2026-11-20): only the three new "Pysähdy ja mieti" blocks.
+Scope (teacher 2026-11-20): only the three "Pysähdy ja mieti" blocks; round 2 delta (block 2 now 1000-fold, 30 dB).
 
 ## Blocking
 (none)
 
 ## Polish
-- lesson.md, block 1 (after the photo): the photo and its long caption sit between the inverse-square paragraph and the question. The question is still answerable, but it would sit closer to its paragraph right after the "kartio" figure.
-- lesson.md, block 3: the answer says only "taso laskee noin 3 dB"; adding "koska 80 dB + 80 dB antaa 83 dB, ei 160 dB" would tie it to the paragraph just read. Optional.
+- Block 1: the question sits after the photo and its long caption; it would be closer to its paragraph right after the "kartio" figure (unchanged from round 1).
+- Block 3: the answer could add "80 dB + 80 dB gives 83 dB, not 160 dB" to tie it to the paragraph (optional).
 
 ## Checked
-- Block 1 (after Pistemäinen lähde): physics correct (same power over a larger spherical area); answerable from the paragraph; does not give away tarkistus-3, which asks for the figures (factor 4, 6 dB).
-- Block 2 (after Desibeliasteikko): 100x = two tenfold steps = 20 dB; answerable from "aina kun intensiteetti kymmenkertaistuu +10 dB"; the figure's 20 dB steps are not an answer disclosure, since the student applies the rule. Does not repeat tarkistus-2 (it runs the other way round).
-- Block 3 (after Usean lähteen yhteistaso): intensity halves, level -3 dB: correct for independent sources; the paragraph gives the 80+80=83 dB case. Sits in Teoria, after koe-2, so it discloses nothing before the prediction. The exit ticket (three machines) asks something different.
-- Placement: three blocks, one per idea, none in the Pohdinta/Ennusta stages.
-- Wording and language: short, clear, units in LaTeX; en and fi-easy blocks match the Finnish ones in content.
-- Rendering: closed block checked in the 390 px capture (green box, "Vastaus" opener, readable); the layout checks at 360/390/768/1280 px pass with answers open.
+- Block 2: 1000x = three tenfold steps = 30 dB; correct, answerable from "every tenfold intensity adds 10 dB"; the chain $3 \cdot 10\,\text{dB} = 30\,\text{dB}$ is in LaTeX with unit.
+- No giveaway: inquiry.json, exit-ticket.json and exercises.json contain no 1000-fold or 30 dB case, so nothing later is answered by the block; tarkistus-2 runs the other way round.
+- Block 2 wording matches in fi, en and fi-easy (tuhatkertaiseksi / thousand times / tuhatkertaiseksi; answers agree).
+- Blocks 1 and 3 unchanged and still correct; placement one block per idea, none in Pohdinta/Ennusta.
+- Rendering: layout checks at 360/390/768/1280 px pass (answers open).
 
 ## Vanhan sisällön löydökset
-- (no pedagogical findings that matter for the new blocks)
+- (none that matter for the new blocks)

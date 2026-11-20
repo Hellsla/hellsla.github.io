@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 522ac39cb7593754
+CONTENT-HASH: a8e7f719a1e3891b
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] third block's answer — "Jaksonaika on T = ..., joten T = ..." restates T twice; could read "T = ..." directly (optional, same in all languages).
+- [Minor] third block's answer: "T = ..., joten T = ..." restates T; could read "T = ..." directly (optional).
 
 ## Vanhan sisällön löydökset
-- Known: theory figure beside its paragraph (.side) check fails at 1280/1920 px identically on main; not a new-block issue.
+- Theory figure beside its paragraph (.side) check fails at 1280/1920 px identically on main; old content, not a new-block issue.
 
 ## Checked
-- Scope: only the three new "Pysähdy ja mieti" blocks (Round 2, delta, en).
-- fi theory-1280-1/-2/-3 captures: blocks sit after the paragraph they test, green-bar card, label, closed "Vastaus"; figures and layout around them intact.
-- Own 360 px render of the preview build for all three languages, every answer opened: no horizontal overflow (scrollWidth 360), no KaTeX errors, units upright with thin space, decimal comma/point right, answers wrap cleanly. Language checked: en text read in its own language (natural, one voice, terms consistent; answer to block 1 is complete and gives away nothing later).
-- Numbers: T = 2π√(0,20/80) ≈ 0,31 s and 1,031 · 2,00 s ≈ 2,06 s render and read correctly.
+- Round 3, delta (en), scope: only the three "Pysähdy ja mieti" blocks; the changed one is the second (now $150\,\text{N/m}$, $0{,}90\,\text{kg}$, answer $\approx 0{,}49\,\text{s}$).
+- Captures theory-1280-2 for fi, en and fi-easy opened: block sits right after the formula paragraph it tests, green-bar card, closed answer, units upright, decimal comma/point right in each language; surrounding figures and layout intact.
+- Number check: 2π√(0,90/150) = 0,487 s, rounds to 0,49 s; shown consistently in the problem and answer. Block 1 and 3 unchanged since the earlier pass (360 px render, opened answers, no overflow); deterministic layout 360 px ok.
+- Language read in its own language: natural, one voice, glossary terms consistent, answer gives nothing away that is asked later.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
