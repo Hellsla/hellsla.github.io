@@ -3,81 +3,7 @@
 > **Miksi** muutaman tunnin konsertti voi vaurioittaa kuuloa pysyvästi, vaikka ääni ei tunnu kivuliaalta?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: ulkoilmakonsertti iltahämärissä. Lavan molemmin puolin on korkeat kaiutintornit, joista lähtee ääniaaltojen kaaria yleisöä kohti. Lavalla esiintyjä nostaa kädet ylös valokeilojen alla. Etualalla yleisöä selin katsojaan, ja keskellä yhdellä kuulijalla on punaiset kuulosuojaimet." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy516h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1971c2"/><stop offset="1" stop-color="#ffc078"/></linearGradient><linearGradient id="fy516h-ground" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b8a3e"/><stop offset="1" stop-color="#e9c98a"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#fy516h-sky)"/>
-  <path d="M0,380 L14,346 L28,380 L48.5,326 L69,380 L86,335 L103.5,380 L116,352 L128,380 L141,349.5 L154,380 L168.5,344 L183.5,380 L205,321 L227,380 L243,339 L259.5,380 L271.5,353 L283.5,380 L300.5,336.5 L317.5,380 L335,334 L353,380 L372.5,328.5 L392,380 L410,332 L428.5,380 L440.5,352.5 L452.5,380 L469,339 L485,380 L500.5,341.5 L516,380 L530.5,345 L544.5,380 L561.5,337.5 L578,380 L593.5,342 L608.5,380 L629.5,323.5 L650.5,380 L671,326 L691,380 L707.5,339 L723.5,380 L745.5,321.5 L767,380 L783.5,339 L799.5,380 L819.5,327 L839.5,380 L856,338.5 L872.5,380 L894,321 L916,380 L932,339.5 L948,380 L965.5,335 L983,380 L1000.5,334.5 L1018.5,380 L1032.5,345 L1047,380 L1063,339.5 L1079,380 L1101,321 L1122.5,380 L1134.5,353 L1146.5,380 L1167,325.5 L1187.5,380 L1206,331.5 L1224.5,380 V410 H0 Z" fill="#6c757d" stroke-linejoin="round"/>
-  <rect x="0" y="380" width="1200" height="220" fill="url(#fy516h-ground)"/>
-  <rect x="360" y="140" width="480" height="26" rx="3" fill="#1f2933"/>
-  <rect x="372" y="166" width="16" height="250" fill="#1f2933"/>
-  <rect x="812" y="166" width="16" height="250" fill="#1f2933"/>
-  <rect x="388" y="166" width="424" height="236" fill="#1f2933" fill-opacity="0.85"/>
-  <path d="M440,166 L360,402 H540 L460,166 Z" fill="#ffc078" stroke-linejoin="round" fill-opacity="0.35"/>
-  <circle cx="450" cy="174" r="9" fill="#ffc078"/>
-  <path d="M590,166 L510,402 H690 L610,166 Z" fill="#ffc078" stroke-linejoin="round" fill-opacity="0.35"/>
-  <circle cx="600" cy="174" r="9" fill="#ffc078"/>
-  <path d="M740,166 L660,402 H840 L760,166 Z" fill="#ffc078" stroke-linejoin="round" fill-opacity="0.35"/>
-  <circle cx="750" cy="174" r="9" fill="#ffc078"/>
-  <rect x="350" y="398" width="500" height="34" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <path d="M584,398 L587.5,305 H612.5 L616,398 H603.5 L600,336 L596.5,398 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M579,311 Q576.5,243 600,239.5 Q623.5,243 621,311 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <path d="M584,251.5 L575,193.5" fill="none" stroke="#c92a2a" stroke-width="13.64" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="575" cy="191" r="6.82" fill="#f1dfb5"/>
-  <path d="M616,251.5 L625,193.5" fill="none" stroke="#c92a2a" stroke-width="13.64" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="625" cy="191" r="6.82" fill="#f1dfb5"/>
-  <rect x="594.5" y="227" width="11" height="15" fill="#f1dfb5"/>
-  <circle cx="600" cy="214.5" r="18.6" fill="#f1dfb5"/>
-  <path d="M581,214.5 Q581.5,192 600,193.5 Q620,193.5 619,212 Q603.5,204.5 581,214.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <rect x="230" y="230" width="100" height="64" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="280" cy="262" r="22" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="280" cy="262" r="8" fill="#1f2933"/>
-  <rect x="230" y="298" width="100" height="64" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="280" cy="330" r="22" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="280" cy="330" r="8" fill="#1f2933"/>
-  <rect x="230" y="366" width="100" height="64" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="280" cy="398" r="22" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="280" cy="398" r="8" fill="#1f2933"/>
-  <rect x="870" y="230" width="100" height="64" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="920" cy="262" r="22" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="920" cy="262" r="8" fill="#1f2933"/>
-  <rect x="870" y="298" width="100" height="64" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="920" cy="330" r="22" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="920" cy="330" r="8" fill="#1f2933"/>
-  <rect x="870" y="366" width="100" height="64" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="920" cy="398" r="22" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="920" cy="398" r="8" fill="#1f2933"/>
-  <path d="M325,408 A90,90 0 0 1 235,408" fill="none" stroke="#d0e6fb" stroke-width="6" stroke-linejoin="round" stroke-opacity="0.75" stroke-linecap="round"/>
-  <path d="M350,451 A140,140 0 0 1 210,451" fill="none" stroke="#d0e6fb" stroke-width="6" stroke-linejoin="round" stroke-opacity="0.75" stroke-linecap="round"/>
-  <path d="M375,494.5 A190,190 0 0 1 185,494.5" fill="none" stroke="#d0e6fb" stroke-width="6" stroke-linejoin="round" stroke-opacity="0.75" stroke-linecap="round"/>
-  <path d="M965,408 A90,90 0 0 1 875,408" fill="none" stroke="#d0e6fb" stroke-width="6" stroke-linejoin="round" stroke-opacity="0.75" stroke-linecap="round"/>
-  <path d="M990,451 A140,140 0 0 1 850,451" fill="none" stroke="#d0e6fb" stroke-width="6" stroke-linejoin="round" stroke-opacity="0.75" stroke-linecap="round"/>
-  <path d="M1015,494.5 A190,190 0 0 1 825,494.5" fill="none" stroke="#d0e6fb" stroke-width="6" stroke-linejoin="round" stroke-opacity="0.75" stroke-linecap="round"/>
-  <path d="M-17.5,600 Q-15.5,548 40.5,542 Q96.5,548 98.5,600 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <circle cx="40.5" cy="508" r="30" fill="#6b7480"/>
-  <path d="M77.5,600 Q79.5,552.5 135.5,546.5 Q191.5,552.5 193.5,600 Z" fill="#6c757d" stroke-linejoin="round"/>
-  <circle cx="135.5" cy="512.5" r="30" fill="#1971c2"/>
-  <path d="M177.5,600 Q179.5,549 235.5,543 Q291.5,549 293.5,600 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <circle cx="235.5" cy="509" r="30" fill="#8a96a3"/>
-  <path d="M270.5,600 Q272.5,567 328.5,561 Q384.5,567 386.5,600 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <circle cx="328.5" cy="527" r="30" fill="#1f2933"/>
-  <path d="M377,600 Q379,558.5 435,552.5 Q491,558.5 493,600 Z" fill="#8a96a3" stroke-linejoin="round"/>
-  <circle cx="435" cy="518.5" r="30" fill="#1f2933"/>
-  <path d="M463,600 Q465,567 521,561 Q577,567 579,600 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <circle cx="521" cy="527" r="30" fill="#6c757d"/>
-  <path d="M745.5,600 Q747.5,565.5 803.5,559.5 Q859.5,565.5 861.5,600 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <circle cx="803.5" cy="525.5" r="30" fill="#8a96a3"/>
-  <path d="M839.5,600 Q841.5,542 897.5,536 Q953.5,542 955.5,600 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <circle cx="897.5" cy="502" r="30" fill="#1f2933"/>
-  <path d="M929.5,600 Q931.5,548.5 987.5,542.5 Q1043.5,548.5 1045.5,600 Z" fill="#8a96a3" stroke-linejoin="round"/>
-  <circle cx="987.5" cy="508.5" r="30" fill="#1f2933"/>
-  <path d="M1034.5,600 Q1036.5,562 1092.5,556 Q1148.5,562 1150.5,600 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <circle cx="1092.5" cy="522" r="30" fill="#6c757d"/>
-  <path d="M1126,600 Q1128,559 1184,553 Q1240,559 1242,600 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <circle cx="1184" cy="519" r="30" fill="#6b7480"/>
-  <path d="M560,600 Q562,500 640,494 Q718,500 720,600 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <circle cx="640" cy="444" r="44" fill="#1f2933"/>
-  <path d="M594,438 Q640,370 686,438" fill="none" stroke="#6b7480" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-  <ellipse cx="595" cy="448" rx="16" ry="26" fill="#c92a2a" stroke="#1f2933" stroke-width="3"/>
-  <ellipse cx="685" cy="448" rx="16" ry="26" fill="#c92a2a" stroke="#1f2933" stroke-width="3"/>
+  <image href="pics/fy5/fy5-16-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Ydinajatus
@@ -218,32 +144,10 @@ Vertailuaika ei ole sallittu eikä turvallinen aika, vaan laskennallinen vertail
 Melua voidaan vähentää kolmessa kohdassa. **Lähteessä** valitaan hiljaisempi kone, huolletaan se, eristetään sen tärinä tai suljetaan se ääntä vaimentavaan koteloon. **Kulkutiellä** kasvatetaan etäisyyttä tai rakennetaan este, kuten meluseinä. Este pysäyttää suoran äänen, mutta ääni taipuu sen reunan yli diffraktion vuoksi (luku *Aalto kohtaa esteen tai raon*), sitä enemmän mitä matalampi ääni on. Siksi este vaimentaa matalia ääniä huonommin kuin korkeita. Pehmeät, huokoiset pinnat vaimentavat heijastuksia kulkutiellä. **Korvalla** käytetään kuulonsuojaimia: kupusuojaimia tai korvatulppia, jotka vaimentavat tyypillisesti $20$–$30\,\text{dB}$.
 
 <svg data-fig="control" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva, ei mittakaavassa: melun torjunnan kolme kohtaa vasemmalta oikealle. Vasemmalla kone on kotelon sisällä: lähde. Keskellä on meluseinä, jonka yli ääniaallot taipuvat heikentyneinä: kulkutie. Oikealla ihmisen päässä on kuulonsuojaimet: korva. Kunkin kohdan alla on keino: kotelointi, este ja etäisyys, kuulonsuojain." style="max-width:100%;font-size:24px">
-  <line x1="200" y1="50" x2="200" y2="316" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <line x1="400" y1="50" x2="400" y2="316" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <image href="pics/fy5/fy5-16-control.webp" x="2.5" y="3.7" width="597" height="338.3" preserveAspectRatio="none"/>
   <foreignObject x="65" y="11.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lähde}$</div></foreignObject>
   <foreignObject x="246" y="11.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kulkutie}$</div></foreignObject>
   <foreignObject x="465" y="11.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{korva}$</div></foreignObject>
-  <rect x="40" y="130" width="120" height="130" rx="6" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
-  <rect x="62" y="176" width="76" height="70" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="100" cy="211" r="20" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="100" cy="211" r="6" fill="#1f2933"/>
-  <line x1="48" y1="138" x2="48" y2="252" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="54" y1="138" x2="54" y2="252" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="60" y1="138" x2="60" y2="252" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="66" y1="138" x2="66" y2="252" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <path d="M145,141.5 A70,70 0 0 1 169,207" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.9" stroke-linecap="round"/>
-  <path d="M164.5,118.5 A100,100 0 0 1 198.5,212.5" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.6" stroke-linecap="round"/>
-  <rect x="292" y="120" width="18" height="140" rx="2" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="214" y1="260" x2="386" y2="260" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M335,120 A34,34 0 0 1 323,146" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.45" stroke-linecap="round"/>
-  <path d="M361,120 A60,60 0 0 1 339.5,166" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.45" stroke-linecap="round"/>
-  <path d="M230,110 q12,40 0,80" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.7" stroke-linecap="round"/>
-  <path d="M262,110 q12,40 0,80" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-opacity="0.7" stroke-linecap="round"/>
-  <circle cx="500" cy="180" r="52" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M452,166 Q500,92 548,166" fill="none" stroke="#1f2933" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
-  <ellipse cx="451" cy="186" rx="16" ry="28" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5"/>
-  <ellipse cx="549" cy="186" rx="16" ry="28" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M484,238 Q500,250 516,238 L522,262 H478 Z" fill="#f1dfb5" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <foreignObject x="33.5" y="281.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kotelointi}$</div></foreignObject>
   <foreignObject x="215" y="281.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{este, etäisyys}$</div></foreignObject>
   <foreignObject x="415" y="281.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kuulonsuojain}$</div></foreignObject>
@@ -258,21 +162,7 @@ Torjunta lähteessä on tehokkainta, koska se suojaa kaikkia. Kuulonsuojain suoj
 Huoneessa ääni tulee kuulijalle suoraan ja seinien, katon ja lattian kautta heijastuneena. Heijastunut ääni kulkee pidemmän matkan, joten se saapuu hieman myöhemmin. Kovat ja sileät pinnat, kuten betoni, lasi ja laatat, heijastavat suurimman osan äänestä. Pehmeät ja huokoiset materiaalit, kuten mineraalivillalevyt, tekstiilit ja ihmisten vaatteet, vaimentavat ääntä: niissä ilman värähtely muuttuu materiaalin sisäenergiaksi. Kaikuvassa tilassa heijastunut ääni täyttää koko huoneen, joten taso pienenee kauempana lähteestä vähemmän kuin ulkona.
 
 <svg data-fig="room" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva huoneesta sivulta, ei mittakaavassa. Vasemmalla kaiutin, oikealla kuulijan pää samalla korkeudella. Suora ääni kulkee vaakasuoraan kaiuttimesta kuulijaan. Katkoviivoilla piirretyt heijastuneet äänet kulkevat katon ja lattian kautta: ne heijastuvat pinnoista heijastuslain mukaan ja saapuvat kuulijalle pidemmän matkan jälkeen eli myöhemmin kuin suora ääni." style="max-width:100%;font-size:24px">
-  <rect x="40" y="60" width="520" height="240" rx="2" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
-  <rect x="40" y="290" width="520" height="10" fill="#d9b26a" stroke="#1f2933" stroke-width="2"/>
-  <line x1="144" y1="220" x2="300" y2="60" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="8 6"/>
-  <line x1="300" y1="60" x2="430.5" y2="183" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M440,192 L425.5,187 L434,177.5 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <line x1="144" y1="220" x2="300" y2="290" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="8 6"/>
-  <line x1="300" y1="290" x2="428" y2="237.5" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M440,232.5 L429.5,243.5 L424.5,232 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <line x1="146" y1="220" x2="421" y2="220" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M436,220 L420,227 L420,213 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <rect x="96" y="186" width="36" height="68" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="114" cy="206" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="114" cy="234" r="13" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="490" cy="214" r="26" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <ellipse cx="465" cy="218" rx="6" ry="10" fill="#d9b26a" stroke="#1f2933" stroke-width="2"/>
+  <image href="pics/fy5/fy5-16-room.webp" x="1.2" y="5" width="597" height="349.5" preserveAspectRatio="none"/>
   <foreignObject x="202.5" y="15.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{heijastunut ääni}$</div></foreignObject>
   <foreignObject x="240" y="229.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{suora ääni}$</div></foreignObject>
 </svg>
@@ -370,34 +260,13 @@ Vastamelukuulokkeissa on mikrofoni, joka kuulee ympäristön melun. Kuulokkeen e
 **Mikrofoni** toimii päinvastoin. Äänen paineenvaihtelut liikuttavat ohutta kalvoa. Dynaamisessa mikrofonissa kalvo liikuttaa kelaa magneetin navan ympärillä, ja kelaan syntyy vaihtojännite, joka vaihtelee samassa tahdissa kuin ääni. Energia muuttuu äänestä kalvon liike-energiaksi ja siitä sähköiseksi signaaliksi. Kaiutin ja mikrofoni ovat siis rakenteeltaan samankaltaisia, mutta energia muuttuu niissä vastakkaisiin suuntiin.
 
 <svg data-fig="transducers" viewBox="0 0 600 380" role="img" aria-label="Kaavakuva, ei mittakaavassa, kaksi osaa vierekkäin. Vasemmalla kaiutin sivulta: kestomagneetti, jonka keskinavan ympärillä on kela, ja kelaan kiinnitetty kartio. Kelaan tulevat johtimet tuovat vaihtovirran, ja kaksipäinen nuoli kartion edessä näyttää, että kartio värähtelee. Alla energian muuttuminen: sähkö, liike, ääni. Oikealla mikrofoni: ääniaallot tulevat oikealta kalvoon, joka on kiinni kelassa magneetin navan ympärillä, ja kelan johtimista saadaan jännite. Alla: ääni, liike, sähkö." style="max-width:100%;font-size:24px">
-  <line x1="300" y1="16" x2="300" y2="364" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <rect x="40" y="120" width="60" height="100" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="100" y="155" width="40" height="30" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="116" y="145" width="20" height="10" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="116" y="185" width="20" height="10" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <line x1="120" y1="195" x2="120" y2="282" stroke="#b8622d" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="132" y1="195" x2="132" y2="282" stroke="#b8622d" stroke-width="2.5" stroke-linecap="butt"/>
-  <rect x="340" y="120" width="60" height="100" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="400" y="155" width="40" height="30" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="416" y="145" width="20" height="10" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="416" y="185" width="20" height="10" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <line x1="420" y1="195" x2="420" y2="282" stroke="#b8622d" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="432" y1="195" x2="432" y2="282" stroke="#b8622d" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M136,145 L240,80 V260 L136,195 Z" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <line x1="262" y1="170" x2="276" y2="170" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M286,170 L275,175 L275,165 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="270" y1="170" x2="258" y2="170" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M248,170 L259,165 L259,175 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <image href="pics/fy5/fy5-16-transducers.webp" x="1.2" y="0" width="597" height="386.8" preserveAspectRatio="none"/>
   <foreignObject x="102.5" y="11.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kaiutin}$</div></foreignObject>
   <foreignObject x="12" y="85.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{magneetti}$</div></foreignObject>
   <foreignObject x="190.5" y="43.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kartio}$</div></foreignObject>
   <foreignObject x="146" y="247.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kela}$</div></foreignObject>
   <foreignObject x="53.5" y="287.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{vaihtovirta}$</div></foreignObject>
   <foreignObject x="46" y="333.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{sähkö} \to \text{liike} \to \text{ääni}$</div></foreignObject>
-  <rect x="436" y="100" width="8" height="140" rx="2" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <path d="M592.5,140.5 A56,56 0 0 0 592.5,199.5" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M567,124.5 A86,86 0 0 0 567,215.5" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M541.5,108.5 A116,116 0 0 0 541.5,231.5" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <foreignObject x="390" y="11.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{mikrofoni}$</div></foreignObject>
   <foreignObject x="312" y="85.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{magneetti}$</div></foreignObject>
   <foreignObject x="452" y="247.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kalvo}$</div></foreignObject>
