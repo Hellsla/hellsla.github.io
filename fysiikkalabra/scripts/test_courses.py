@@ -196,9 +196,13 @@ expect("the picture changed: the hash moved and both review it", run("reviews.py
 git("checkout", "--", ".")
 
 # 9. a second lesson reuses the simulation: dependencies and impact
+def copy_pics(text):
+    """fy4-2 reuses fy4-1's text; its own pictures are fy4-1's files under fy4-2's names (as own_pics does for fy4-1)."""
+    for f in (T / "assets/pics/fy4").glob("fy4-1-*"): shutil.copy(f, f.with_name(f.name.replace("fy4-1", "fy4-2")))
+    return text
 run("courses.py", "init-lesson", "fy4-2"); L2 = T / "content/fi/FY4/fy4-2"; C2 = T / "lessons/FY4/fy4-2"; C2.mkdir(parents=True)
 for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json"):
-    text_file(L2, n).parent.mkdir(exist_ok=True); text_file(L2, n).write_text(text_file(L, n).read_text().replace("fy4-1", "fy4-2"))
+    text_file(L2, n).parent.mkdir(exist_ok=True); text_file(L2, n).write_text(copy_pics(text_file(L, n).read_text()).replace("fy4-1", "fy4-2"))
 for n in ("answers.py", "sim-spec.md", "figures.py"): (C2 / n).write_text((C / n).read_text().replace("fy4-1", "fy4-2"))
 m2 = json.loads((L2 / "meta.json").read_text()); m2.update(sim="fy4-1", glossary=meta["glossary"], prerequisites=[]); (L2 / "meta.json").write_text(json.dumps(m2, ensure_ascii=False, indent=2))
 (T / "tests/sims/fy4-2.json").write_text((T / "tests/sims/fy4-1.json").read_text())
