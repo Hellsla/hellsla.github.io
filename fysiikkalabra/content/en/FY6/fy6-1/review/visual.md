@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 135d726c8a361c0c
+CONTENT-HASH: 8f6b7c6725bc7990
 
 ## Blocking
 - none
@@ -7,8 +7,8 @@ CONTENT-HASH: 135d726c8a361c0c
 ## Polish
 - none
 
-## Checked
-- round 3, delta review (reflow): proof sheets en-fy6-1-lesson-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+## Vanhan sisällön löydökset
+(none)
 
-## Scores
-illustrations n/a · typography 5 · Finnish n/a · accessibility 4
+## Checked
+batch delta review: the site/ build and the shots do not yet contain the new boxes, so I rendered the 3 new Pysähdy boxes (stopthink.py markup, site.css, KaTeX, answers open) at 360 px myself and opened the captures; no overflow, no KaTeX errors; language and units (LaTeX, thin space, \cdot, colon) read.

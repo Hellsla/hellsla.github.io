@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e322886318bc8228
+CONTENT-HASH: 466b8a11c12596ff
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] inquiry.json review feedback — a display `aligned` block is followed directly by "(chapter ...)" with no space in the source; check on the page that the parenthesis sits on its own line cleanly (earlier text had a space).
+- none
+
+## Vanhan sisällön löydökset
+(none)
 
 ## Checked
-batch delta review: the diff changes only the review question (inquiry.json) and answer constants, no figure or layout; quantities are inline LaTeX with units and `\cdot`, divisions with a colon, English fluent; theory-figure captures unaffected by the diff.
+batch delta review: the site/ build and the shots do not yet contain the new boxes, so I rendered the 3 new Pysähdy boxes (stopthink.py markup, site.css, KaTeX, answers open) at 360 px myself and opened the captures; no overflow, no KaTeX errors; language and units (LaTeX, thin space, \cdot, colon) read.

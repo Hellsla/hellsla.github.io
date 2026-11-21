@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 335c1ffa7490ccc4
+CONTENT-HASH: 97ba99e51e612dfe
 
 ## Blocking
+- none
 
 ## Polish
+- none
+
+## Vanhan sisällön löydökset
+(none)
 
 ## Checked
-batch delta review: opened Kertaa question (Pohdinta) rendered from preview/en/fy6-2.html at 390 px, situation and question as separate paragraphs, maths and options intact, no overflow; figures unchanged by the diff.
+batch delta review: the site/ build and the shots do not yet contain the new boxes, so I rendered the 3 new Pysähdy boxes (stopthink.py markup, site.css, KaTeX, answers open) at 360 px myself and opened the captures; no overflow, no KaTeX errors; language and units (LaTeX, thin space, \cdot, colon) read.
