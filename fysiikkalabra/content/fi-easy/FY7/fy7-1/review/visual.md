@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: ad59405a0ff79ef9
+CONTENT-HASH: ae0d34a7145ea30a
 
 ## Blocking
 (none)
@@ -8,10 +8,10 @@ CONTENT-HASH: ad59405a0ff79ef9
 (none)
 
 ## Checked
-- delta review (round 3, scope: the "Pysähdy ja mieti" blocks only): the changed block (Maan vaakakomponentti $30\,\mu\text{T}$, magneetin kenttä $40\,\mu\text{T}$) in fy7-1-theory-1280-4.png: label, two-sentence situation then question last, Vastaus summary, KaTeX with numbers and units as one inline formula, no red source, no clipping, no overflow, layout intact beside the surrounding formulas.
-- fy7-1-fig-6-390.png: the figure the block follows is unchanged and its geometry (B_h north, B_m east, B at angle theta) matches the new wording (magneetin kenttä kohtisuorassa vaakakomponenttia vastaan).
-- fy7-1-theory-1280-3.png: the first Pysähdy ja mieti block (unchanged) renders the same way, so the shared component is consistent.
-- The answer chain ($B = \sqrt{(30\,\mu\text{T})^2 + (40\,\mu\text{T})^2} = 50\,\mu\text{T}$) is unchanged from the round 2 capture where it was measured at 360 and 1280 px; the question change does not touch it.
+- delta review (round 4, scope: the changed "Pysähdy ja mieti" compass block, wording "vaakasuora"): fy7-1-theory-1280-4.png shows the new question text: situation (two sentences) then the question last, "Vastaus" closed, numbers with units as inline KaTeX ($30\,\mu\text{T}$, $40\,\mu\text{T}$), no red source, no clipping, no overflow, layout intact beside the surrounding formulas.
+- The wording now fixes the ambiguity: "vaakasuora kenttä", "Maan kentän vaakakomponenttia vastaan", "vaakasuora kokonaiskenttä" are consistent with the figure and the following compass paragraph (B_h north, B_m east). Answer text in the lesson.md diff: "Vaakasuora kokonaiskenttä saadaan Pythagoraan lauseella: ..." one inline chain, unchanged maths.
+- Glossary terms used consistently (magneettikenttä, magneettivuon tiheys); sentences are short, Selkeä suomi register kept.
+- Other pysahdy blocks (theory-1280-3) unchanged and render the same way.
 
 ## Vanhan sisällön löydökset
 (none)
