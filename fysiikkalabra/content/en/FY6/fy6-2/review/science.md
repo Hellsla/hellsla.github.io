@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 335c1ffa7490ccc4
+CONTENT-HASH: 97ba99e51e612dfe
 
 ## Blocking
+- none
 
 ## Polish
+- none
+
+## Vanhan sisällön löydökset
+- none found in the context read (not blocking by scope).
 
 ## Checked
-- batch delta review: the review choice's new prompt (battery, lamp and resistor in a row, lamp lit) fits all four options; exactly one correct (current through a cross-section, voltage between two points), each distractor's feedback still says why it is wrong and none conflicts with the series situation; exit-ticket change is presentation only; hash same at start and end.
+- batch delta review (scope: new pysahdy boxes only, teacher 2026-11-20): 3 boxes: reversed voltmeter leads give a negative reading of the same size (matches line 72); ammeter across lamp = short past lamp (matches line 168); 0.005*2.00 V + 2*0.01 V = 0.030 V -> 2.00 V +- 0.03 V recomputed.

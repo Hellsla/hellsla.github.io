@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c8b77a5c450492a1
+CONTENT-HASH: 1f93b12e51bba74f
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
+## Vanhan sisällön löydökset
+- none found in the context read (not blocking by scope).
 
 ## Checked
-batch delta review: the qualitative retrieval (balloons rubbed on wool become negative and repel each other) is right, and fy6-1 teaches like-sign repulsion; the insulator distractor's feedback is right; the new figure caption translation matches the Finnish; the removed kertaus key is no longer used.
+- batch delta review (scope: new pysahdy boxes only, teacher 2026-11-20): 3 boxes: Q = ne, no half e (free charge, C level); F = 8.988e9*(1.0e-6)^2/0.30^2 = 0.0999 -> 0.10 N; symmetric charges on both sides give zero net force.

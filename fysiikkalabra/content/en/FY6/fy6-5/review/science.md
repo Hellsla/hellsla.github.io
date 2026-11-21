@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fbb5ad093960f7f4
+CONTENT-HASH: 9378696538c87215
 
 ## Blocking
+- none
 
 ## Polish
-- The bird premise is hypothetical ("Suppose ... were"); fine, and it sets up this chapter's point that a bird on one wire has almost no voltage across it.
+- Box 2 (old l.74): 'bare conductor' reads as 'uninsulated wire' in English; 'a plain connecting wire' says what is meant.
+
+## Vanhan sisällön löydökset
+- none found in the context read (not blocking by scope).
 
 ## Checked
-batch delta review (re-checked after the concurrent typography edit: a space before "(chapter", "we get" in fy6-8; no physics changed): I = U/R = 4.0 V : 2000 Ω = 2.0 mA recomputed; distractors 2.0 A (k forgotten), 8.0 kA (product), 500 A (inverse) wrong with right feedback; lesson-answers agree.
+- batch delta review (scope: new pysahdy boxes only, teacher 2026-11-20): 3 boxes: 0.80 - 0.30 = 0.50 A; wire potential constant (approx. zero voltage); 12 - 5.0 = 7.0 V. All recomputed.

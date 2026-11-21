@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ea181c76ebfe8c83
+CONTENT-HASH: f41f67d0d9cc736a
 
 ## Blocking
+- none
 
 ## Polish
-- lesson-answers.py: the comment still says "lamp ... 0,26 A", and "535 W" should be Ω.
+- none
+
+## Vanhan sisällön löydökset
+- none found in the context read (not blocking by scope).
 
 ## Checked
-batch delta review (re-checked after the concurrent typography edit: a space before "(chapter", "we get" in fy6-8; no physics changed): P = UI = 230 V · 0.43 A = 98.9 ≈ 99 W; U/I ≈ 535 ≈ 530 Ω correctly called a resistance; 0.43 W distractor; one correct option. P = UI for a TV is a fair simplification (C).
+- batch delta review (scope: new pysahdy boxes only, teacher 2026-11-20): 3 boxes: 0.060 kW * 5.0 h = 0.30 kWh; 2.0 kWh = 7.2 MJ; 230*0.50*2.0 Wh = 0.23 kWh. Recomputed, 2 s.f.
