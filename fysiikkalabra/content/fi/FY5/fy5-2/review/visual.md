@@ -1,12 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 5e2d08d0cb1ccd69
+CONTENT-HASH: f1748542fcfc1fd5
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy5-2 kertaus — wrong option begins lowercase ("noin $63\,\text{Nm}$") while the others in the batch use a capital; write "Noin".
-- [Minor] fy5-2 kertaus — the answer's display equation ends in a stray comma ("= 40 Nm,") followed by "koska…"; put the reason before the equation.
+- [Minor] block 3 (two supports) — does not say the supports are on opposite sides of the centre of mass, which the answer assumes — add "on opposite sides" / "painopisteen eri puolilla".
+- [Minor] block 3 — the figure beside it is not to scale (r1 > r2 although the near support is the one with 0,40 m) — nothing to change if the figure is read as schematic.
+
+## Vanhan sisällön löydökset
+- none
 
 ## Checked
-- batch delta review: Pohdinta stage capture (herata-390) and the retrieval box rendered at 390 px in the preview build with the wrong and right feedback opened; typography, Finnish and layout of the rewritten kertaus judged.
+- Delta, scope: the three new pysahdy blocks only. Opened stage-selita-390 parts (2, 3, 4) (fi) showing all three blocks closed; block 1 and 2 at 390 px, block 3 after the two-supports figure. Opened answers not captured; check_layout 360 px is green. Layout, spacing and the green rule consistent and readable; maths in blocks renders.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

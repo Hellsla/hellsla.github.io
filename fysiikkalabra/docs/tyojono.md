@@ -165,10 +165,12 @@ Raportti tehty (#721, `docs/audits/2026-11-18-lopputarkistus-FY1-FY8.md`). **Hyv
 Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jälkeen; tämä rivi on hyväksynnän kirjaus (sääntö 5).
 - 8j: fy1-1, fy1-8 ja fy2-1 ohitetaan (ei kertaustehtävää).
 - 5d: FY5:n 16 ja FY6:n 25 jäljellä olevaa riviä jäävät listalle (myös fy5-7 `x = A \sin(…)`).
+- Kuvan .side/.stack-arvio (`fig_side`/`text_height`, jaettu): arvio ei vastaa renderöintiä (fy5-9, fy5-12 fi, test_inquiry 1280/1920 px; PR #770). Varattu: claude/fig-side-arvio
 - Pysähdy ja mieti: FY1:n luvut tehty (PR #760, kaikki kielet, katselmoitu); seuraavaksi FY2, kurssi kerrallaan.
-- Pysähdy ja mieti: FY3:n luvut tehty paitsi fy3-4 (PR #766, kaikki kielet, katselmoitu: tiede, pedagogia ja ulkoasu PASS); fy3-4 odottaa sim-korjausta (ks. FY3-päätös alla); seuraavaksi FY5, kurssi kerrallaan.
+- Pysähdy ja mieti: FY3:n luvut tehty (PR #766 ja fy3-4 PR #772, kaikki kielet, katselmoitu: tiede, pedagogia ja ulkoasu PASS; fy3-4:n sim-lukema korjattu, ks. FY3-päätös alla); seuraavaksi FY5, kurssi kerrallaan.
 - Pysähdy ja mieti: FY2:n luvut tehty (PR #765, kaikki kielet, katselmoitu; fy2-4 neljäs rajattu kierros opettajan luvalla 2026-11-19); jäljellä FY3 ja muut kurssit, kurssi kerrallaan.
 - Pysähdy ja mieti: FY4:n luvut tehty (PR #745, kaikki kielet, katselmoitu); **opettaja 2026-11-19 aamulla ("kaikki ok"): laajennetaan muihin kursseihin**, kurssi kerrallaan saman kurssin keskeneräisen PR:n jälkeen.
+- Pysähdy ja mieti: FY5:n luvut tehty (PR #770, kaikki kielet, katselmoitu, rajattu laajuus; vanhan sisällön löydökset PR:n kuvauksessa); jäljellä FY6 ja muut kurssit, kurssi kerrallaan.
 - Pysähdy ja mieti FY2 (#765): **opettaja 2026-11-19 klo 22.3x ("1 yes"): fy2-4:lle sallitaan neljäs, rajattu katselmointikierros** (tiede ja pedagogia delta, en full) kolmannen kierroksen esteen (johtopäätöksen kriteeri 3) korjauksen vahvistamiseksi; poikkeus lesson.md:n kolmen kierroksen rajaan vain tähän.
 - Pysähdy ja mieti FY3 (#766): **opettaja 2026-11-20 klo 14.2x ("I allow recommendations")**: (1) visuaalikatselmoija kirjoittaa uudet `review/visual.md`-raportit vanhojen tilalle (normaali menettely); (2) fy3-4 jätetään pois tästä PR:stä (palautetaan mainin tilaan), muut 15 lukua yhdistetään. fy3-4:n simulaation lukema (näyttää heti ρg = 9,81 kPa/m ja 1,97-kertaisen paineen, joten kokeen 1 numerotehtävä vastataan ilman mittausta) korjataan omana jaettuna työnään (sim/`lang/`, yksin), ja fy3-4:n Pysähdy ja mieti tehdään sen jälkeen samassa yhteydessä.
 - fy3-4 (#772): **opettaja 2026-11-20 klo 17.3x ("yes")**: (1) kaavarivi "hydrostaattinen paine :: p = p_0 + ρgh" pidetään (opettajan päätös 2026-11-12, docs/fy3/kaavanimet.tsv rivi 37); opettajan hyväksymä poikkeus, katselmoijat eivät merkitse estettä. (2) Esimerkin ikkunavoima 1,77 kN ja kolmen merkitsevän numeron perustelu (P7).
@@ -220,3 +222,6 @@ Siirretään `ahjo.py` ja `lumatutor.py` jaksopohjan lohkoiksi niin, että sivut
 ## 16. Vihkot FY1–FY8 (opettaja 2026-11-13; jonon viimeinen)
 A5-vihkot kaikille kursseille tiiviillä asettelulla (`python scripts/print_book.py <C> --lang fi|en --publish`); FY1–FY4 tehdään uudelleen, FY5–FY8 uusia. Vasta kohtien 3, 17 ja 18
 jälkeen; rakenna sivusto vihkojen jälkeen (Vihkot-sivu).
+
+## 25. Yksilöllinen oppimispolku, pilotti FY1 (opettaja 2026-11-20 klo 17.5x "laita se vikaksi"; jonon viimeinen, vihkojen jälkeen)
+Versio 1 kokonaan selaimessa: luvun alussa 3–5 kysymyksen lähtötesti tyypillisistä virhekäsityksistä, jonka perusteella sivu suosittelee polun (kertaa ensin / ydintehtävät / haasteet); väärä vastaus ohjaa esimerkkiin tai simulaatioon; osaamiskartta oppilaan selaimeen. Ei palvelinta, ei tunnuksia, ei oppilastietojen keruuta (fysiikkalabra/CLAUDE.md "Never"). Suunnitelma tehdään ensin Claude-projektissa, ja opettaja hyväksyy sen ennen toteutusta; uusi käyttöliittymäteksti vaatii opettajan luvan. Versio 2 (opettajanäkymä, palvelin, kirjautuminen, tietosuoja) on erillinen hanke, joka vaatisi "Never"-säännön muuttamista opettajan päätöksellä.

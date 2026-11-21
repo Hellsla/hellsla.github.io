@@ -1,11 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 6fd865c43f88554e
+CONTENT-HASH: a8e7f719a1e3891b
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] third block's answer: "T = ..., joten T = ..." restates T; could read "T = ..." directly (optional).
+
+## Vanhan sisällön löydökset
+- Theory figure beside its paragraph (.side) check fails at 1280/1920 px identically on main; old content, not a new-block issue.
 
 ## Checked
-- batch delta review: Pohdinta stage capture (herata-390) and the retrieval box rendered at 390 px in the preview build with the wrong and right feedback opened; typography, Finnish and layout of the rewritten kertaus judged.
+- Round 3, delta (fi), scope: only the three "Pysähdy ja mieti" blocks; the changed one is the second (now $150\,\text{N/m}$, $0{,}90\,\text{kg}$, answer $\approx 0{,}49\,\text{s}$).
+- Captures theory-1280-2 for fi, en and fi-easy opened: block sits right after the formula paragraph it tests, green-bar card, closed answer, units upright, decimal comma/point right in each language; surrounding figures and layout intact.
+- Number check: 2π√(0,90/150) = 0,487 s, rounds to 0,49 s; shown consistently in the problem and answer. Block 1 and 3 unchanged since the earlier pass (360 px render, opened answers, no overflow); deterministic layout 360 px ok.
+- Language read in its own language: natural, one voice, glossary terms consistent, answer gives nothing away that is asked later.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

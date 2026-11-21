@@ -170,6 +170,12 @@ Vedetään kappale sivuun ja päästetään irti. Voima kiihdyttää kappaletta 
 
 Kuvassa näkyy liikkeen rytmi. Ääriasennoissa $x = A$ ja $x = -A$ nopeus on nolla. Siellä voima ja kiihtyvyys ovat suurimmillaan. Tasapainoasemassa on päinvastoin: voima ja kiihtyvyys ovat nolla, ja nopeus on suurimmillaan. Kiihtyvyys osoittaa aina kohti tasapainoasemaa, samaan suuntaan kuin voima.
 
+```pysahdy
+Tasapainoasemassa voima on nolla. Miksi kappale ei silti pysähdy siihen?
+---
+Kappaleella on jo nopeus, kun se tulee tasapainoasemaan. Nopeus ei häviä, vaikka voima on nolla. Kappale jatkaa toiselle puolelle, ja siellä voima alkaa jarruttaa sitä.
+```
+
 ### Paikka ajan funktiona
 Piirretään harmonisen värähtelijän paikka ajan funktiona. Saadaan siniaallon muotoinen käyrä. Luvun *Värähtelyn suureet: jaksonaika, taajuus ja amplitudi* käsitteet näkyvät siinä suoraan.
 
@@ -216,6 +222,12 @@ harmonisen värähtelijän jaksonaika :: T = 2\pi\sqrt{\frac{m}{k}}
 missä $T$ on jaksonaika ($\text{s}$), $m$ värähtelevän kappaleen massa ($\text{kg}$) ja $k$ jousen jousivakio ($\text{N/m}$). Jousivakio kertoo, kuinka jäykkä jousi on.
 
 Suuri massa kiihtyy samasta voimasta hitaammin. Siksi jaksonaika kasvaa, kun massa kasvaa. Jäykempi jousi antaa suuremman voiman, joten jaksonaika lyhenee. Neliöjuuren takia massa täytyy nelinkertaistaa, jotta jaksonaika kaksinkertaistuu. Kaava pätee myös pystysuoraan riippuvaan jouseen. Paino siirtää vain tasapainoasemaa, ja poikkeama siitä noudattaa samaa lakia.
+
+```pysahdy
+Jousen jousivakio on $150\,\text{N/m}$. Jouseen on kiinnitetty kappale, jonka massa on $0{,}90\,\text{kg}$. Mikä on jaksonaika?
+---
+Jaksonaika on $T = 2\pi\sqrt{\tfrac{m}{k}}$. Sijoitetaan arvot: $T = 2\pi\sqrt{\tfrac{0{,}90\,\text{kg}}{150\,\text{N/m}}} \approx 0{,}49\,\text{s}$.
+```
 
 Kaavan voi perustella ympyräliikkeen avulla. Kappale kiertää tasaisesti ympyrää, jonka säde on $A$. Sen varjo seinällä liikkuu edestakaisin halkaisijan suuntaan. Varjon kiihtyvyys on normaalikiihtyvyyden $a_\text{n} = \tfrac{4\pi^2 A}{T^2}$ komponentti. Se on $-\tfrac{4\pi^2}{T^2}x$ eli verrannollinen poikkeamaan. Jousen varassa Newtonin toisesta laista saadaan $a = -\tfrac{k}{m}x$. Merkitään kertoimet yhtä suuriksi: $\tfrac{4\pi^2}{T^2} = \tfrac{k}{m}$. Tästä ratkeaa jaksonaika.
 
@@ -265,6 +277,12 @@ Kaava on likiarvo, ja se pätee vain pienillä heilahduskulmilla. Kun lähtökul
 | $60^\circ$ | $1{,}073$ |
 
 Alle $10^\circ$ heilahduksilla ero on alle $0{,}2\,\%$. Se on pienempi kuin käsin ajanoton epävarmuus.
+
+```pysahdy
+Kaavan mukaan heilurin jaksonaika on $2{,}00\,\text{s}$. Kuinka pitkä jaksonaika on oikeasti, kun lähtökulma on $40^\circ$?
+---
+Taulukon mukaan $T : T_0 = 1{,}031$. Siis $T = 1{,}031 \cdot 2{,}00\,\text{s} \approx 2{,}06\,\text{s}$.
+```
 
 ### Energia värähtelyssä
 Jätetään kitka ja ilmanvastus huomiotta. Silloin värähtelijän mekaaninen energia säilyy. Jousen ja kappaleen energia on liike-energian ja jousen potentiaalienergian summa. Ääriasennossa nopeus on nolla ja kaikki energia on potentiaalienergiaa. Siksi

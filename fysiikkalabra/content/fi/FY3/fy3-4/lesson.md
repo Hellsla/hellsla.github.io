@@ -26,6 +26,12 @@
 ## Ydinajatus
 Kun voima jakautuu pinnalle, sen vaikutus riippuu siitä, kuinka suurelle alalle se jakautuu. Nastan terävä kärki uppoaa seinään samalla voimalla, jolla tylppä kanta ei jätä jälkeäkään, ja sukset kantavat hangella, vaikka kengät uppoavat. Suure, joka kuvaa tätä, on paine: voima jaettuna sillä pinta-alalla, jolle voima jakautuu. Paineen yksikkö on pascal (Pa), ja $1\,\text{Pa} = 1\,\text{N/m}^2$. Pascal on pieni yksikkö, joten arjessa käytetään kilopascalia: $1\,\text{kPa} = 1000\,\text{Pa}$.
 
+```pysahdy
+Voima $60\,\text{N}$ kohdistuu pinta-alalle $2{,}0\,\text{cm}^2$. Kuinka suuri on paine?
+---
+$p = \dfrac{F}{A}$, joten $p = \dfrac{60\,\text{N}}{2{,}0 \cdot 10^{-4}\,\text{m}^2}$. Se on $3{,}0 \cdot 10^{5}\,\text{Pa} = 300\,\text{kPa}$.
+```
+
 <svg data-fig="pressure-area" viewBox="0 0 600 380" role="img" aria-label="Sama voima F kohdistuu samanlaiseen tiiliskiveen kahdella tavalla. Vasemmalla tiili on pystyssä ja koskettaa alustaa pienellä alalla A1, jolloin paine p1 = F/A1 on suuri. Oikealla tiili on kyljellään ja koskettaa alustaa kolme kertaa suuremmalla alalla A2 = 3 A1, jolloin paine p2 = F/A2 on kolmasosa vasemman paineesta. Voimanuolet ovat yhtä pitkät. Kontaktialat ovat mittakaavassa, kaaviokuva muuten." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy34-snow" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="#eef5f9"/><circle cx="3" cy="4" r="1.3" fill="#a9d1f0"/><circle cx="10" cy="10" r="1.3" fill="#a9d1f0"/></pattern></defs>
   <rect x="12" y="240" width="576" height="22" fill="url(#fy34-snow)" stroke="#1f2933" stroke-width="2"/>
@@ -77,12 +83,24 @@ Kaasun paine syntyy mikromallin mukaan hiukkasten törmäyksistä astian seinäm
 
 Paine ei ole voima vaan voiman ja alan suhde, ja levossa olevassa nesteessä paine vaikuttaa joka suuntaan yhtä suurena. Jos paine sivulle olisi pienempi kuin alaspäin, vesi valuisi sivuun eikä pysyisi levossa. Jos pullon kylkeen tekee reikiä usealle korkeudelle, alimmasta reiästä vesi suihkuaa voimakkaimmin, koska paine kasvaa syvyyden mukana. Paineen aiheuttama voima on aina kohtisuorassa pintaa vastaan: padon pystysuoraan seinään voima osoittaa vaakasuoraan, sukeltajan kehoon joka puolelta. Siksi voima voidaan tässä laskea pelkkänä suuruutena, suunta tulee pinnasta.
 
+```pysahdy
+Miksi levossa olevassa nesteessä paine sivulle on yhtä suuri kuin alaspäin?
+---
+Jos paine sivulle olisi pienempi, neste valuisi sivuun eikä pysyisi levossa.
+```
+
 <figure class="unit-photo"><img src="pics/fy3/scuba-diver.webp" alt="Sukeltaja tummansinisessä vedessä, ja hänen yläpuolellaan nousee ilmakuplia kohti valoisaa pintaa."><figcaption>Sukeltaja syvällä veden alla. Uloshengitysilman kuplat nousevat kohti pintaa.</figcaption></figure>
 
 ### Ilmanpaine ja ylipaine
 Veden pinnalla vaikuttaa jo ilmakehän paine eli ilmanpaine, joka on merenpinnan tasolla noin $101\,\text{kPa}$. Se on ilmapatsaan paino pinta-alaa kohti. Ilmanpaine vaikuttaa myös veden pintaan ja välittyy veden kautta syvyyteen. Veden alla kokonaispaine on siis ilmanpaineen ja hydrostaattisen paineen summa. Kymmenen metrin syvyydessä hydrostaattinen paine on jo suunnilleen yhden ilmanpaineen suuruinen.
 
 Tämä vastaa alun kysymykseen. Ilmanpaine vaikuttaa padon muuriin molemmilta puolilta, joten muuria kuormittaa vain veden ylipaine eli paineen ilmanpainetta suurempi osa. Ylipaine on yläreunassa nolla ja kasvaa syvyyden mukana tasaisesti: 30 metrin syvyydessä se on noin $290\,\text{kPa}$, eli jokaiseen muurin neliömetriin kohdistuu noin $290\,\text{kN}$:n voima. Siksi muurin alaosan on kestettävä paljon suurempi voima kuin yläosan, ja muuri tehdään pohjalta paksuksi.
+
+```pysahdy
+Miksi padon muuria kuormittaa vain veden ylipaine eikä kokonaispaine?
+---
+Ilmanpaine vaikuttaa muuriin molemmilta puolilta ja kumoaa itsensä, joten jäljelle jää veden ylipaine $\rho g h$.
+```
 
 ## Kaava: Paine ja hydrostaattinen paine
 Paine on pintaa vastaan kohtisuora voima jaettuna pinta-alalla:
@@ -192,7 +210,7 @@ F &= \rho g h \cdot A
 
 <!-- vaihe -->
 
-**Tulos.** Kokonaispaine on $p \approx 219\,\text{kPa}$ ja ikkunaan kohdistuva voima $F \approx 1{,}8\,\text{kN}$. Paine annetaan kolmella merkitsevällä numerolla, koska syvyys $12{,}0\,\text{m}$ ja ilmanpaine $101\,\text{kPa}$ on annettu kolmella numerolla. Voima annetaan kahdella, koska ala $150\,\text{cm}^2$ on annettu kahdella numerolla.
+**Tulos.** Kokonaispaine on $p \approx 219\,\text{kPa}$ ja ikkunaan kohdistuva voima $F \approx 1{,}77\,\text{kN}$. Sekä paine että voima annetaan kolmella merkitsevällä numerolla, koska syvyys $12{,}0\,\text{m}$, ilmanpaine $101\,\text{kPa}$ ja ala $150\,\text{cm}^2$ on annettu kolmella numerolla.
 
 <!-- vaihe -->
 

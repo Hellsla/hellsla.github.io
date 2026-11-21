@@ -209,8 +209,20 @@ Värähtelijän paikkaa kuvataan **poikkeamalla** $x$ eli kappaleen etäisyydell
 
 <figure class="unit-photo"><img src="pics/fy5/girl-on-swing.webp" alt="Lapsi keinuu puisessa keinussa vihreällä niityllä. Taustalla on korkeita kalliovuoria."><figcaption>Keinu Dolomiiteilla Italiassa. Keinuminen on jaksollista liikettä: keinu palaa samaan kohtaan lähes yhtä pitkin väliajoin.</figcaption></figure>
 
+```pysahdy
+Punnus on $2{,}5\,\text{cm}$ tasapainoaseman alapuolella, ja ylöspäin on positiivinen suunta. Mikä on punnuksen poikkeama $x$?
+---
+$x = -2{,}5\,\text{cm}$. Poikkeamaan kuuluu etumerkki, ja positiivisen suunnan vastakkaisella puolella se on negatiivinen.
+```
+
 ### Jaksonaika ja taajuus
 **Jaksonaika** $T$ on yhden täyden värähdyksen kesto: aika, jonka kuluttua kappale on taas samassa paikassa ja liikkuu samaan suuntaan. Kun punnus lähtee tasapainoasemasta ylöspäin, se käy ylimmässä asemassa, palaa tasapainoasemaan, käy alimmassa asemassa ja palaa taas tasapainoasemaan. Tämä on yksi värähdys. **Taajuus** $f$ on täysien värähdysten määrä aikayksikössä. Jaksonaika ja taajuus vastaavat kierrosaikaa ja pyörimistaajuutta luvussa *Ympyrärata: jaksonaika ja ratanopeus*: yksi värähdys vastaa yhtä kierrosta. Jaksonaika mitataan tarkimmin usean värähdyksen kestosta: jos $n$ värähdystä kestää ajan $t_n$, jaksonaika on $T = \tfrac{t_n}{n}$.
+
+```pysahdy
+Punnus tekee $20$ täyttä värähdystä $8{,}0\,\text{s}$:ssa. Mikä on jaksonaika?
+---
+$T = \tfrac{8{,}0\,\text{s}}{20} = 0{,}40\,\text{s}$, koska jaksonaika on yhden värähdyksen kesto.
+```
 
 ### Värähtely kuvaajana
 Kun poikkeama piirretään ajan funktiona, saadaan $(t, x)$-kuvaaja (luku *Paikka, nopeus ja tasainen liike kuvaajina*). Jaksollisen liikkeen kuvaaja toistuu samanlaisena jaksonajan välein. Jaksonaika luetaan kahden peräkkäisen huipun välistä tai kahden sellaisen tasapainoaseman ohituksen välistä, joissa kappale liikkuu samaan suuntaan. Peräkkäiset ohitukset ovat vain puolen jaksonajan päässä toisistaan, koska kappale ohittaa tasapainoaseman kerran mennessään ylös ja kerran tullessaan alas. Amplitudi luetaan tasapainoaseman tasolta $x = 0$ huipun tasolle.
@@ -300,6 +312,12 @@ Kun poikkeama piirretään ajan funktiona, saadaan $(t, x)$-kuvaaja (luku *Paikk
   <path d="M446,103 L451,114 L441,114 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="460" y="154" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$A$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Toisen punnuksen käyrä ohittaa tasapainoaseman ylöspäin hetkellä $0$ ja seuraavan kerran alaspäin hetkellä $0{,}35\,\text{s}$. Onko jaksonaika $0{,}35\,\text{s}$?
+---
+Ei. Ohitukset eri suuntiin ovat vain puolen jaksonajan päässä toisistaan, joten jaksonaika on $0{,}70\,\text{s}$.
+```
 
 ## Kaava: Sinimuotoinen värähtely
 Taajuus on jaksonajan käänteisluku, koska yhteen värähdykseen kuluu aika $T$ ja aikayksikössä ehditään tehdä $\tfrac{1}{T}$ värähdystä:

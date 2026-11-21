@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: ea654eb5479b015a
-ROUND: 2
+CONTENT-HASH: fa5eaa238b1af839
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] lesson.md, theory symbol list — the units "(Hz)", "(m/s)", "(m)" after the symbols are plain text; untouched text, so only Minor — write them as LaTeX units ($\text{Hz}$ etc.) when next edited.
+- [Minor] Block 2 (thicker string) — "thicker" implies same material, so mass per unit length is larger; the paragraph above says so ("heavy"), the question could say "paksumpi ja raskaampi" (for science: confirm).
+
+## Vanhan sisällön löydökset
+- none noted
 
 ## Checked
-- fig-1 to fig-5 at 390 px (guitar illustration, superposition in three moments, standing wave with S/K and λ/2, λ/4, string modes n=1..3, tube modes): clean, nothing clipped, colours and strokes consistent, labels LaTeX, S/K and the wavelength brackets readable.
-- theory-1280-2 and -3 (formula blocks aligned, figures beside their paragraphs, order of figure after text kept); example-390-1 (knowns and question in separate paragraphs, formulas and units rendered correctly).
-- open-exercises L2-3 and L3-3 at 1280 (solutions open, aligned chains, units upright, the new "pääkorjaus ei huomioida" sentence reads naturally).
-- The Finnish prose changes in the diff are split paragraphs and added clarifying sentences; the wording is fluent and consistent with the glossary.
+- Three Pysähdy ja mieti blocks (after the node/antinode figure, after Soitin ja sävelkorkeus, after the tube figure) at 1280 px in theory-1280-1/-4 (and -3 in fi) and at 390 px (fi selita-390-2); closed state renders as a compact green-ruled card, maths and units in LaTeX, no clipping, spacing to neighbours fine.
+- Texts of all three questions/answers read: each is answerable from the paragraph just read, wording clear, physics presentation consistent (lambda = 2 * 0.30 m, 3 * 100 Hz, f_1 = v/2L), nothing given away that later chapter asks.
+- Opened-answer state not in the captures; layout check at 360 px is clean per packet (limit stated, not blocking).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

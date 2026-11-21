@@ -1,10 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 6e9a9085dad716e1
+CONTENT-HASH: 377023ae1fb31127
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] Pohdinta card — option "noin $29\,\text{kN}$" and feedback chain "$29\,430\,\text{N} \approx 29\,\text{kN}$" are consistent; no issue beyond that the wrong-answer feedback gives the number "$29\,430\,\text{N}$" in prose, which is fine.
+- [Minor] Ennusta 3 feedback at 1280 px — "Teoria-osassa" breaks after the hyphen in the narrow column ("Teoria-/osassa"); acceptable, the compound reads fine.
 
 ## Checked
-batch delta review: Pohdinta card (Kertaa: veden paino, 3000 kg) with feedback open at 390 px (correct and wrong answer) and 1280 px, plus stage-herata-390; G = mg chain aligned at "=", units upright with thin space, thousands grouped with thin space, nothing clipped. Captures made by me from preview/fi-easy. Figures unchanged by the diff.
+- delta: three feedback strings in inquiry.json changed (Teoriatiivistelmä → Teoria-osa), matching the interface name "Teoria".
+- fy3-4-open-ennusta-1280-1 and -2 (Ennusta 3 with Cem's feedback open: "Teoria-osassa näet…" renders correctly, card and spacing intact, nothing clipped; the unchanged formula in the Aino and Bea feedback is not affected).
+- Figures and simulation unchanged by the diff.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

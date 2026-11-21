@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 3efbc288e36bc5e2
+CONTENT-HASH: 3f85c11d16edeafb
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fig "types" (fig-2-390 / theory-1280-1) — in the poikittainen half the label "kohdan liike" sits low, close to the divider, and "kierroksen liike" almost touches the spring coils; a few px more clearance would help.
-- [Minor] fig "graphs" (fig-4-390) — the x-axis tick labels (0,25 … 1,25 s) and (0,5 … 2,5 m) are small at 390 px; acceptable, but the same size as the axis letters would read better.
+- [Minor] third block — repeats the formula paragraph with numbers; fine as retrieval, no change needed.
+
+## Vanhan sisällön löydökset
+- none (old content was not judged; scope note 2026-11-20)
 
 ## Checked
-- Opened fig-2-390 (types), fig-3-390 (birth), fig-4-390 (graphs) and theory-1280-1 (types figure beside its paragraph, "Pysäytä animaatio" button visible, layout intact).
-- Round-1 items re-checked in the still (SVG source of data-fig="birth"): the "t = T" label is present (x 53–98, y 289.5); the λ gauge runs x = 120 to 440, from the crest of the last frame to the front dashed at x = 440, so it matches. The capture only showed a playing frame. Animation runs only under .is-playing, none under prefers-reduced-motion or print (site.css 1275–1281).
-- Delta covers the animated versions of "types" and "birth"; wording diff unchanged otherwise. Layout checks green in the packet.
+- Opened theory-1280-1 (fi): blocks 1 and 2 (green card, label, "Vastaus" summary, question text with units in LaTeX, decimal comma/point correct, no overlap with the types figure).
+- fi only: theory-1280-2 showing block 3 after the fundamental-equation paragraph. For en/fi-easy block 3 was read from source (same placement and layout as fi).
+- Opened answers: checked only by source and CSS (.stop-think-a); no opened-answer capture exists and no browser was available to make one at 360 px, so the packet's green layout checks (360-1920 px) carry that part.
+- Wording, units, physics and placement of all three blocks read in source: answerable from the paragraph just above, nothing given away from the exercises (no same numbers in solutions).
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

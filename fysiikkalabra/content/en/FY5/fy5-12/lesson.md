@@ -123,6 +123,12 @@ Superposition is clearest when two equally large pulses of the same shape are se
   <path d="M402,374 L413,369 L413,379 Z" fill="#7048e8" stroke-linejoin="round"/>
 </svg>
 
+```pysahdy
+Two pulses meet on a string. One displaces the string upwards by $3.0\,\text{cm}$ and the other downwards by $2.0\,\text{cm}$. What is the displacement of the string at the moment they meet?
+---
+The displacements are added with their signs: $y = 3.0\,\text{cm} + (-2.0\,\text{cm}) = 1.0\,\text{cm}$ upwards. The pulses do not cancel completely because they are not equal in size.
+```
+
 The combined effect of waves at the same place is called **interference**. When the waves strengthen each other and the displacement of the resultant wave grows, the interference is **constructive**. When they weaken each other, the interference is **destructive**. In the chapter *How waves form and travel* the displacement of a wave varied with place and time; the principle of superposition holds at every place and at every moment separately.
 
 ### Two sources in phase
@@ -150,6 +156,12 @@ The waves meet at every point of the tank. At some points a crest always meets a
   <foreignObject x="480.5" y="7.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\Delta s = \lambda$</div></foreignObject>
   <foreignObject x="162" y="7.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{nodal line}$</div></foreignObject>
 </svg>
+
+```pysahdy
+In a ripple tank the water is almost at rest on a nodal line, although the waves of both sources keep travelling through it. Why does the water not move?
+---
+On a nodal line a crest of one wave always arrives at the same time as a trough of the other. When the waves are equal in size, the sum of the displacements is almost zero all the time.
+```
 
 ## Formula: The condition for constructive and destructive interference
 Whether the interference at point P is constructive or destructive depends on how much farther one wave has travelled than the other. The **path difference** is the difference of the sources' distances from point P:
@@ -217,6 +229,12 @@ The amplitude of the resultant wave is then the difference of the amplitudes. Eq
 Each number $n = 1, 2, \ldots$ corresponds to one line in the pattern on each side of the perpendicular bisector; $n = 0$ is, in the constructive case, the perpendicular bisector itself and, in the destructive case, the two nodal lines nearest to the perpendicular bisector. On the perpendicular bisector of the sources, that is, the line whose every point is equally far from both sources, the path difference is zero. There the interference is constructive at all frequencies. The path difference cannot be greater than the distance $d$ between the sources, because one side of a triangle is shorter than the sum of the other two. So there are only a finite number of lines. When the wavelength gets smaller, that is, the frequency grows, the conditions are met at smaller path differences, and the lines get closer together.
 
 What matters is therefore the ratio of the path difference to the wavelength, $\tfrac{\Delta s}{\lambda}$, not the path difference alone. The same point can be quiet at one frequency and loud at another. Destructive interference does not destroy energy: less of it goes to the nodal lines and correspondingly more to the places of constructive interference.
+
+```pysahdy
+In destructive interference two equal waves cancel each other on a nodal line. Has the energy then been destroyed?
+---
+No. Less energy goes to the nodal lines and correspondingly more to the places of constructive interference.
+```
 
 ## Fourier analysis {Fourier-analyysi}
 The principle of superposition works in the other direction too. Every periodic signal, for example the sound of an instrument, can be written as a sum of sine waves. The frequencies of the sine waves are multiples of the fundamental frequency of the signal, and their amplitudes tell how strong they are. The **Fourier transform** is a calculation method that finds these frequencies and amplitudes in a signal. The result is shown as a **spectrum**: frequency on the horizontal axis and the amplitude of each frequency on the vertical axis.

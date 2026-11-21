@@ -7,7 +7,8 @@ over; the main push-to-main smoke test does not open those pages, so main went r
 
 Every built page that has a `.fig-row.side`, at 1280 and 1920 px with every box open:
   - a side-by-side unit's text column is at least 30 rem wide (the width fig_side assumes), wherever the unit stands;
-  - a unit inside a details box stands under its text, not beside it;
+  - a unit inside a details box stands under its text, not beside it, and is marked .stack, not .side (the class
+    is what test_inquiry compares the rendering with; build.py fig_rows);
   - no text column of a figure unit has content wider than itself.
 Usage: python scripts/test_fig_row.py [page-id ...]"""
 import pathlib, sys
@@ -29,6 +30,7 @@ JS = """() => {
     const box = r.closest('details');
     if (t.scrollWidth > t.clientWidth + 1) out.push(`text column ${t.clientWidth} px has content ${t.scrollWidth} px wide: "${t.textContent.trim().slice(0, 50)}"`);
     if (side && getComputedStyle(r).display === 'grid' && t.clientWidth < 30 * 16) out.push(`side-by-side text column only ${t.clientWidth} px: "${t.textContent.trim().slice(0, 50)}"`);
+    if (box && side) out.push(`a unit inside a closed-box (details) is marked .side though it is stacked: "${t.textContent.trim().slice(0, 50)}"`);
     if (box && getComputedStyle(r).display === 'grid') out.push(`a unit inside a closed-box (details) is beside its text: "${t.textContent.trim().slice(0, 50)}"`);
   }
   return out; }"""

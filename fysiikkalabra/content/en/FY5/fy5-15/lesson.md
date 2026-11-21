@@ -217,6 +217,12 @@ A small sound source that radiates evenly in all directions is a point source. W
 
 <figure class="unit-photo"><img src="pics/fy5/sound-level-meter-park.webp" alt="People sit on benches under trees in a park. A red digital display on a post reads 62 dB."><figcaption>A noise display in the People's Park in Chengdu, China. The display shows the sound level in decibels. Such meters usually show the A-weighted sound pressure level. Outdoors in a free sound field the unweighted sound pressure level is numerically about the same as the sound intensity level; an A-weighted reading can differ from it, especially at low frequencies. $62\,\text{dB}$ is about the level of normal conversation.</figcaption></figure>
 
+```pysahdy
+Why does the intensity decrease farther from a point source, even though the power of the source stays the same?
+---
+The same power is spread over an ever larger spherical surface. The area is larger, so the power per unit area, the intensity, is smaller.
+```
+
 ### Threshold of hearing and threshold of pain
 The human ear is astonishingly sensitive. The weakest sound that a young person with normal hearing can distinguish at a frequency of about $1000\,\text{Hz}$ has an intensity of about $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$. This is called the **threshold of hearing**. The threshold of hearing is not silence but the weakest audible sound, and it is different at different frequencies. The loudest sounds begin to feel painful when the intensity is about $1\,\text{W/m}^2$. This threshold of pain is a trillion, that is $10^{12}$, times the threshold of hearing. Such a wide range is hard to present on an ordinary scale. Both thresholds vary from person to person and with frequency, so these values are agreed approximate values, not constants of nature.
 
@@ -264,6 +270,12 @@ Because the range is so wide, the loudness of a sound is described by the **soun
   <foreignObject x="284" y="53.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$120$</div></foreignObject>
   <foreignObject x="400" y="53.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1$</div></foreignObject>
 </svg>
+
+```pysahdy
+The intensity of a sound becomes a thousand times greater. By how many decibels does the level increase?
+---
+A thousandfold increase is three tenfold increases in a row. The level increases by $3 \cdot 10\,\text{dB} = 30\,\text{dB}$.
+```
 
 The ear is not equally sensitive to all frequencies: low and very high sounds seem quieter at the same intensity than sounds of about $1000$–$4000\,\text{Hz}$. Sound level meters therefore weight the frequencies according to the sensitivity of the ear, and such a weighted reading is written $\text{dB(A)}$. Ordinary sound level meters often show the A-weighted sound pressure level. In this chapter we calculate unweighted sound intensity levels.
 
@@ -418,6 +430,12 @@ When two independent sound sources, for example two machines or two players, are
   <foreignObject x="495.5" y="101.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$83$</div></foreignObject>
   <foreignObject x="502" y="309.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$L$</div></foreignObject>
 </svg>
+
+```pysahdy
+Two identical machines are running at the same time, and one of them is switched off. Does the level drop to half?
+---
+No. The intensity halves, and the level drops by only about $3\,\text{dB}$.
+```
 
 ## Worked example
 At an open-air concert a decibel meter reads $96\,\text{dB}$ at a distance of $10\,\text{m}$ from a loudspeaker tower. What is the intensity of the sound at the meter, and what is the sound power of the loudspeaker tower? Assume that the tower radiates like a point source evenly in all directions and the sound is neither reflected nor absorbed, so the meter reading can be treated as the sound intensity level.

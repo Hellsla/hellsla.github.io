@@ -158,6 +158,12 @@ When the trolley is pulled to the right, the spring stretches and pulls the trol
 
 <figure class="unit-photo"><img src="pics/fy5/spring-rider-suomenlinna.webp" alt="A small child sits on a yellow lion-shaped rider fixed to the ground by a thick coil spring."><figcaption>A spring rider in Suomenlinna, Helsinki. When the rider tilts to one side, the spring pulls it back towards the equilibrium position, and the rider rocks back and forth.</figcaption></figure>
 
+```pysahdy
+Why is the force of a spring called a restoring force?
+---
+Because the force of the spring always points towards the equilibrium position. When an object is displaced, the spring pulls or pushes it back.
+```
+
 ### Harmonic force
 When a spring is neither stretched nor compressed too much, the magnitude of the spring force is directly proportional to the displacement: double the displacement gives double the force. A force whose magnitude is directly proportional to the displacement of an object from the equilibrium position and which always points towards the equilibrium position is called a **harmonic force**. The force of a spring is its most common example. The restoring force of a pendulum is also approximately harmonic for small swings. In the chapter *The mass–spring oscillator and the pendulum* we see what kind of motion a harmonic force produces.
 
@@ -217,6 +223,12 @@ When the origin of the $x$-axis is at the point where the spring is at its rest 
 harmonic force :: F = -kx
 ```
 where $F$ is the force of the spring on the object ($\text{N}$), $x$ the extension or compression of the spring from its rest length ($\text{m}$) and $k$ the **spring constant** of the spring ($\text{N/m}$). The minus sign gives the direction: the force is always opposite to the displacement. When $x > 0$, $F < 0$, and when $x < 0$, $F > 0$. The magnitude of the force is $k|x|$. The spring constant tells the stiffness of the spring, that is how many newtons of force are needed per metre of extension. The spring of a car's suspension can have tens of kilonewtons per metre, the spring of a toy only a few newtons per metre. For a horizontal spring the rest-length position is also the equilibrium position of the object, so the displacement from the equilibrium position is then $x$. The law holds only when the spring is neither stretched too much nor compressed too much.
+
+```pysahdy
+The $x$-component of the force of a spring is positive. Is the spring then stretched or compressed?
+---
+Compressed. By $F = -kx$, $F > 0$ only when $x < 0$, and then the spring is shorter than its rest length.
+```
 
 ### The spring constant from a measurement
 The spring constant is determined by measuring. Weights are hung from the spring, and for each weight the extension $x$ of the spring is measured. A weight hanging at rest pulls the spring with a force equal to the weight $mg$ of the weight. This is the force stretching the spring, whose magnitude is
@@ -314,6 +326,12 @@ where $E_\text{p}$ is the elastic potential energy ($\text{J}$), $k$ the spring 
 </svg>
 
 The triangle for double the extension is twice as wide and twice as tall, so four triangles of the original size fit in it. So the potential energy grows with the square of the extension, even though the force grows only in direct proportion. Because $x$ is squared, the energy is the same when the spring is stretched or compressed by the same amount. The units agree: $\tfrac{\text{N}}{\text{m}}\cdot\text{m}^2 = \text{N}\cdot\text{m} = \text{J}$.
+
+```pysahdy
+A spring is stretched $2.0\,\text{cm}$ and stores $0.10\,\text{J}$ of energy. How much energy does it store when the same spring is stretched $6.0\,\text{cm}$?
+---
+The extension is three times as large, so the energy is $3^2 = 9$ times as large: $9 \cdot 0.10\,\text{J} = 0.90\,\text{J}$.
+```
 
 ## Worked example
 A fisherman weighs a fish with a spring balance. When a fish of mass $1.20\,\text{kg}$ hangs at rest from the hook of the balance, the spring of the balance has stretched $3.0\,\text{cm}$. What is the spring constant of the spring, and how much elastic potential energy is stored in the spring? The masses of the spring and the hook are neglected.

@@ -194,6 +194,12 @@ Gravitaatio on vuorovaikutus, joten siihen pätee Newtonin kolmas laki. Maa vet�
 
 Ero on kiihtyvyyksissä. Newtonin toisen lain mukaan kappaleen kiihtyvyys on $a = \tfrac{F}{m}$. Omenan massa on $0{,}20\,\text{kg}$, ja siihen vaikuttaa noin $1{,}96\,\text{N}$:n voima. Silloin omenan kiihtyvyys on noin $9{,}8\,\text{m/s}^2$. Sama voima antaa Maalle kiihtyvyyden noin $3 \cdot 10^{-25}\,\text{m/s}^2$. Maan massa on $5{,}97 \cdot 10^{24}\,\text{kg}$. Maa todella liikahtaa omenaa kohti, mutta niin vähän, ettei sitä voi mitata.
 
+```pysahdy
+Maa ja Kuu vetävät toisiaan yhtä suurella gravitaatiovoimalla. Kumpi kiihtyy enemmän?
+---
+Kuu. Kiihtyvyys on $a = \tfrac{F}{m}$. Kun voima on sama, pienempi massa kiihtyy enemmän. Kuun massa on pienempi kuin Maan.
+```
+
 ## Kaava: Newtonin gravitaatiolaki
 Gravitaatiovoima kahden kappaleen välillä on sitä suurempi, mitä suuremmat massat kappaleilla on. Se on sitä pienempi, mitä kauempana kappaleet ovat toisistaan. Newtonin gravitaatiolaki kertoo tämän tarkasti. Voima on suoraan verrannollinen kumpaankin massaan. Voima on kääntäen verrannollinen etäisyyden neliöön.
 
@@ -227,6 +233,12 @@ Kaavassa $F$ on kumpaankin kappaleeseen vaikuttavan gravitaatiovoiman suuruus (N
 </svg>
 
 Laki pätee sellaisenaan pistemäisille kappaleille. Pistemäinen kappale on kappale, jonka koko massan ajatellaan olevan yhdessä pisteessä. Laki pätee myös tasa-aineisille palloille ja muille pallosymmetrisille kappaleille, kuten planeetoille ja tähdille. Silloin $r$ mitataan keskipisteiden välillä. Tällainen kappale vetää ulkopuolisia kappaleita ikään kuin sen koko massa olisi keskipisteessä. Maan pinnalla seisovan ihmisen etäisyys Maan keskipisteestä on siis Maan säde.
+
+```pysahdy
+Ihminen seisoo Maan pinnalla. Mikä etäisyys $r$ pitää sijoittaa gravitaatiolakiin, kun lasketaan Maan ja ihmisen välistä voimaa?
+---
+Etäisyys Maan keskipisteestä eli Maan säde, noin $6378\,\text{km}$. Etäisyys Maan pinnasta ei kelpaa, koska $r$ mitataan keskipisteiden välillä.
+```
 
 Etäisyys on kaavassa toisessa potenssissa. Kun etäisyys kaksinkertaistuu, voima pienenee neljäsosaan. Kun etäisyys kolminkertaistuu, voima pienenee yhdeksäsosaan. Kun taas toinen massa kaksinkertaistuu, myös voima kaksinkertaistuu. Gravitaatiovoima pienenee nopeasti etäisyyden kasvaessa, mutta se ei koskaan muutu tarkalleen nollaksi. Kuvaaja näyttää voiman, kun kummankin kappaleen massa on $10\,\text{t}$.
 
@@ -277,6 +289,12 @@ Etäisyys on kaavassa toisessa potenssissa. Kun etäisyys kaksinkertaistuu, voim
   <foreignObject x="306" y="77.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$m_1 = m_2 = 10\,\text{t}$</span></div></foreignObject>
   <foreignObject x="325" y="115.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$2r \;\Rightarrow\; \tfrac{1}{4}F$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Kuvaajan mukaan voima on $417\,\mu\text{N}$, kun etäisyys on $4\,\text{m}$. Mikä se on, kun etäisyys on $8\,\text{m}$?
+---
+Etäisyys kaksinkertaistuu, joten voima pienenee neljäsosaan: $417\,\mu\text{N} : 4 \approx 104\,\mu\text{N}$. Sama arvo näkyy kuvaajassa.
+```
 
 ## Painovoima ja gravitaatiokenttä
 Kappaleen paino $G = mg$ on Maan kappaleeseen kohdistama gravitaatiovoima. Maan massa on $M$ ja säde $R$. Gravitaatiolaki antaa saman voiman, joten $mg = \gamma \tfrac{Mm}{R^2}$. Kappaleen massa $m$ supistuu pois. Putoamiskiihtyvyydeksi jää $g = \gamma \tfrac{M}{R^2}$. Siksi kaikki kappaleet putoavat Maan pinnalla samalla kiihtyvyydellä, kun ilmanvastus jätetään huomiotta. Raskaampaan kappaleeseen vaikuttaa suurempi voima, mutta sitä on myös vaikeampi kiihdyttää.

@@ -1,10 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: c78ff5d773c6861a
+CONTENT-HASH: 6de41721467aced8
 
 ## Blocking
 
 ## Polish
-- [Minor] inquiry.json Kertaa feedback — the opened feedback state was not captured; judged from source ($1/\text{m}$, $\tfrac{\text{m}}{\text{s}} \cdot \tfrac{1}{\text{s}}$ are valid inline LaTeX, `\cdot` used). Nothing to fix.
+- [Minor] third block (pier post) — the paragraph just above already says a post narrower than the wavelength leaves no shadow, so the question is mostly recall; acceptable as a check of the numbers ($20\,\text{m}$ vs $0{,}50\,\text{m}$). No change needed.
+- [Minor] opened answers were not in the captures (only closed blocks); judged from source and the 360 px layout check, which is clean.
+
+## Vanhan sisällön löydökset
+- Huygensin periaate paragraph (fi, fi-easy): "1600–luvulla" is set with an en dash; a hyphen "1600-luvulla" is right. (Old text.)
 
 ## Checked
-- batch delta review: fy5-11-stage-herata-390 (changed Kertaa task: situation first, question last, values with units set in LaTeX, options as whole rows), fy5-11-intro-1280; layout 360/390/768/1280 ok in checks.txt.
+- fy5-11-theory-1280-1 (fi): all three new "Pysähdy ja mieti" blocks' placement, rendering (green-bar card, closed Answer/Vastaus summary, inline units in LaTeX with correct decimal separator), spacing to figures and headings; block 3 seen in theory-1280-2 (fi).
+- Source of all three blocks read in fi: question then answer, units as inline maths, \cdot used, glossary terms (alkeisaalto, aaltorintama, säde, diffraktio) consistent.
+- Physics seen as consistent: ray ⟂ wavefront; $0{,}30\,\text{m/s}\cdot2{,}0\,\text{s}=0{,}60\,\text{m}$; $b\ll\lambda$ bends around.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

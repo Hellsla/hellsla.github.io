@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: fcd2f4b3d829db74
+CONTENT-HASH: 687dfed72ea0a20a
 
 ## Blocking
 - None.
@@ -8,4 +8,12 @@ CONTENT-HASH: fcd2f4b3d829db74
 - None.
 
 ## Checked
-batch delta review (en, round 2): The kertaus choice now uses a smaller roundabout, r = 1,5 m. Recomputed: 2 pi r = 9,42 m -> 'noin 9,4 m' (two figures as the data); pi r = 4,71 m -> 4,7 m; diameter 3,0 m. Exactly one correct option; each distractor's feedback says why it is wrong (half a revolution; the diameter is the straight chord, the circumference is pi times it). It no longer gives Aino's 2,0 m path, so Ennuste 2 (speed ratio 2) is not answered in advance. lesson-answers.py kertaus-s/-pir/-d match.
+- delta review (en, round 1, scope: the three new "Pysähdy ja mieti" blocks only; hash the same at start and end).
+- Block 1 (counterclockwise, at the top): velocity to the left is right for anticlockwise motion seen as drawn; reason (tangent perpendicular to the vertical radius, pointing in the direction of motion) agrees with the paragraph and figure just above it. It comes in Teoria, after Ennuste 1 and the string-cutting experiment, so it does not answer them in advance.
+- Block 2 (constant speed, is the acceleration zero?): "no, the direction of velocity changes, so velocity changes" is correct and is exactly what the preceding paragraph "Suunnan muutos on nopeuden muutos" states; no magnitude of a_n given, so the later chapter's content is not anticipated. The concept check tarkistus-1 (car in a roundabout) tests the same idea in another context after the theory; the theory already states it, so nothing new is given away.
+- Block 3: recomputed v = 2 pi r / T = 2 pi * 2,0 m / 4,0 s = 3,14 m/s -> 3,1 m/s, two figures as the data; formula stated symbolically first, units carried; answerable from the Kaava section directly above. Numbers do not coincide with the worked example, the inquiry numeric task (72 m/s) or the exit ticket.
+- Terms ratanopeus, kierrosaika, tangentti as in the glossary; no angular quantities (scope note).
+- Rendering: deterministic layout checks at 360/390/768/1280 px passed; the blocks use the shared pysahdy component (build.py stopthink).
+
+## Vanhan sisällön löydökset
+- Ei löydöksiä.
