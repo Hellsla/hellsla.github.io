@@ -1,14 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 916f3242261c9e98
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+VERDICT: FAIL
+CONTENT-HASH: 8f6b7c6725bc7990
 
 ## Blocking
-- none
+1. Box 1 (Johteet ja eristeet, lesson.md:41): "Why does copper conduct but dry wood not" duplicates exit-ticket question 1 (conductor/insulator with the copper wire example; exit-ticket.json:3-4). The answer is also nearly word for word in the paragraph just read, so it is recall of a sentence, not a check of understanding. Replace with a different transfer question (e.g. why a metal tool handle is covered with plastic, or what happens to the free electrons when the rod is part of a closed circuit), not the exit-ticket one.
 
 ## Polish
-- lesson.md (inquiry too): 'electromagnetic disturbance' / 'sähkömagneettinen häiriö' is a new term at an introductory level and is not explained; 'in an ordinary short circuit the propagation delay is small' reuses 'short circuit' (oikosulku) for a short loop of wire, which clashes with its technical meaning in fy6-2; 'short circuit' -> 'short loop of wire'.
+- Box 2 (Q = It, line 345): works. A student can answer from the Kaava paragraph; not a duplicate of exercises 1-2 (they compute numbers). The answer is clear. Weak demand but acceptable.
+- Box 3 (Jännite, line 392): the paragraph's last sentence ("the larger the voltage, the more energy the same charge transfers") already gives the answer, and the skill E = UQ is the exit-ticket 2 and exercise 4 skill (different numbers). Consider a question about meaning instead, e.g. what changes if the same battery moves twice the charge.
+- Box 3 answer writes `U = E : Q`; the lesson formula is a fraction `U = E/Q`. Use the same notation.
+- Boxes 2 and 3 are both "doubling, proportional" questions: vary the type.
+
+## Vanhan sisällön löydökset
+None found that stop a box from working.
 
 ## Checked
-- Diff since origin/main for fy6-1 lesson (en) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
-- Standing rules in the changed lines: LaTeX maths and units, decimal point, no bold in task statements, no lesson ids shown.
-- Round 2 (31612ad07 delta): "Short circuit" misuse removed: both places now say a circuit only a few metres long; ambiguity with oikosulku gone. No new Blocking.
+All three boxes read in this language; answers are clear and correct; boxes sit directly after the paragraph they test; checked against exit ticket, exercises and the inquiry predictions for duplication. Not opened: captures, simulation (out of scope).

@@ -1,11 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: b85c521e523778fa
+CONTENT-HASH: 0a1cb3f1ad2c6469
+
+Rajattu laajuus (teacher 2026-11-20): vain kolme uutta pysahdy-laatikkoa.
 
 ## Blocking
+Ei ole.
 
 ## Polish
-- The photo's alt says "satoja pieniä valoja" while the caption says "kymmeniä lamppuja" in a string; harmless, but the two could agree.
-- The caption points to "kytkentätapa ratkaisee, mitä tapahtuu kun yksi rikkoutuu"; fine as a hook, it does not decide the series/parallel answer.
+- Laatikko 1 (sarjaan, virta 0,20 A): vastaus on edellisen kappaleen sana sanalta ("sama virta kulkee jokaisen vastuksen läpi") eli muistikysymys, ei päättelyä; se myös ennakoi Ennuste 1:n osaa "virta on sama". Parempi: kysy esim. kumpi vastus saa suuremman jännitteen, kun R1 < R2, tai jätä tämä kohta ennusteelle.
+- Laatikko 2 (10 Ω ja 1000 Ω rinnan): vastaus on kappaleen edellinen virke lähes kopioituna, ja perustelu "uusi kulkureitti" toistuu tehtävässä "Selitä, miksi rinnan kokonaisresistanssi on pienempi". Kysymys toimii silti pienellä vaihtoehtojoukolla (suurempi/pienempi) ja ääriluvut ovat hyvä valinta.
+- Laatikko 3 (12 Ω ja 4,0 Ω): hyvä, uusi laskuesimerkki, ei toista Esimerkki 1:tä (120/60), ennustetta (100/100) eikä tarkistuskysymyksiä (47+68, 80 || 80). Vastaus 3,0 Ω on oikein ja tarkistaa järkevyyden. Kaavan ja kuvaajan välissä oleva kuva ei haittaa.
+
+## Vanhan sisällön löydökset
+- Ei uusia. Ydinajatuksen sarjakappale sanoo jo suoraan, että virta on sama, joten Ennuste 1 ei yksin paljasta sitä enempää kuin ennen.
 
 ## Checked
-batch delta review: the Christmas-light photo (looked at it: a lit house at night, recognisable) sits after the parallel-branch paragraph, before Kokonaisresistanssi, with the alt and caption in good Finnish; the Ohm's law retrieval prompt now uses one lamp from the string (100 Ω, constant), matching the chapter's context; worked-example stage 1 splits knowns and the asked quantity on their own lines, the asked quantity last.
+Kolmen laatikon sijainti kappaleen jälkeen, tarvittava tieto on juuri luettu, vastaukset yksiselitteiset ja oikein (3,0 Ω laskettu), ei kaksoiskappaletta tehtävistä tai loppukysymyksistä (lukuun ottamatta yllä mainittua ajatuksellista päällekkäisyyttä), kieli ja kuvat ennallaan. Sisältö vastaa kielten välillä.
