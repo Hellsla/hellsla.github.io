@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e3b99773173d0ff6
+CONTENT-HASH: 754185c37bb26139
 
 ## Blocking
 - none
 
 ## Polish
-- The dielectric box says U decreases. That holds at constant Q (capacitor disconnected). The figure above it says "same Q", but one clause "when the charge stays the same" in the box would close the gap to the later section on a connected source (B, minor).
+- The sentence now puts the capacitance increase under the same "when the charge stays the same" condition; the capacitance increases whether or not the source is connected (only $U$ falling needs the condition). Could read "...the voltage $U$ decreases; the capacitance $C = \tfrac{Q}{U}$ increases in either case". The lesson's table at "A dielectric when the source is connected or disconnected" states it correctly, so no wrong picture remains.
 
 ## Checked
-- batch delta review: polarization box; paper U_max = E_max d doubles with d (16e6 V/m x 0.010 mm = 160 V); W = 1/2 C U^2 = 2.0 mJ (recomputed).
+- batch delta review: box 1 (dielectric polarization) now states the constant-charge condition (source disconnected), consistent with the connected/disconnected table and its paragraph; surface charges opposite to the adjacent plate, field reduced, $U = Q/C$ falls: correct; round-2 fix verified; hash same at start and end.

@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 93dcf18825032455
+CONTENT-HASH: ca2665cbfde69ecd
+
 ## Blocking
 
 ## Polish
-- Box answer uses k as 9,0·10^9 while the lesson gives 8,988·10^9; say 'noin' or round once in the text so the student sees why.
-- Colon division matches the S2 house style (I = Q : t), fine; the added repulsion reason in the three-charge box repairs the cancellation misconception well.
+- Laatikko 3: "vaikuttaa keskimmäiseen vastakkaiselta puolelta" on hieman kömpelö; "vastakkaisilta puolilta" olisi selkeämpi. Muutos (hylkivät tai vetävät) korjaa aiemman virheellisen "hylkii", mikä on oikein.
+- Laatikko 2: jakomerkki ":" ($k\lvert q_1q_2\rvert : r^2$) voi hämätä S2-opiskelijaa; murtolauseke olisi tuttu.
+- OLD: ei havaintoja.
+
 ## Checked
-batch delta review (round 2): box 1 calculation in colon form with units stated and result 0,10 N correct; box 3 reason added, clear.
+batch delta review (round 3, scope Pysähdy ja mieti -laatikot): 3 laatikkoa, kysymys ennen vastausta, vastaukset lyhyitä ja korjaavia; laatikon 2 laskenta tarkistettu ($F \approx 0{,}10\,\text{N}$).

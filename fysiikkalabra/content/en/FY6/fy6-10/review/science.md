@@ -1,11 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: 76ea9600da03b6a7
+VERDICT: PASS
+CONTENT-HASH: 3e7a22c1b5eaa33a
 
 ## Blocking
-- A: the three-charges box (around line 503) adds "Each charge repels the middle one from the opposite side." The task gives only that the two outer charges have the same sign; the middle charge's sign is not given, so the force may be attraction. Fix: "The two charges push or pull the middle charge with equally large forces from opposite sides" (or state that the middle charge has the same sign). The answer zero is right.
-
-## Polish
 - none
 
+## Polish
+- The Coulomb box now uses $k = 9.0 \cdot 10^{9}$ instead of $8.988 \cdot 10^{9}$; with two-figure data the answer $0.10\,\text{N}$ is unchanged (recomputed: $0.0999\,\text{N}$ and $0.100\,\text{N}$). Fine as it is.
+
 ## Checked
-- batch delta review: F = 9.0e9 x 1.0e-12 : 0.30^2 = 0.10 N (recomputed, 8.988e9 gives 0.0999 N); three-charge box.
+- batch delta review: Coulomb box recomputed ($F = k\lvert q_1 q_2\rvert / r^2 = 0.10\,\text{N}$, magnitude form, ":" division consistent with the rest of the lesson); three-charge box now correct for either sign of the middle charge (both repel or both attract, equal and opposite, net force $\overline{0}$), round-2 Blocking item resolved; no physics-guardrail break; hash same at start and end.
