@@ -107,6 +107,12 @@ Alin taso $n = 1$ on **perustila**, jonka energia on $-13{,}6\,\text{eV}$. Ylemm
 
 <figure class="unit-photo"><img src="pics/fy8/hydrogen-discharge-tube.webp" alt="Pitkä lasiputki mustalla pohjalla. Putken kapea keskiosa hehkuu vaaleanpunaisena ja päät sinertävinä."><figcaption>Vetyä sisältävä kaasupurkausputki. Sähkövirta virittää vetyatomeja, ja kun ne siirtyvät alemmille energiatasoille, syntyy vedyn spektriviivojen valo.</figcaption></figure>
 
+```pysahdy
+Vetyatomin tasojen $n = 1$ ja $n = 2$ väli on suurempi kuin tasojen $n = 4$ ja $n = 5$ väli. Miksi näin on?
+---
+Tasot tihenevät ylöspäin ja lähestyvät nollaa. Siksi alimpien tasojen välit ovat suuret ja ylempien tasojen välit pienet.
+```
+
 ### Siirtymässä syntyy tai katoaa fotoni
 Kun elektroni siirtyy ylemmältä tasolta alemmalle, atomin energia pienenee ja erotus lähtee yhtenä fotonina. Energia säilyy, joten fotonin energia on tasojen erotus. Koska tasoja on vain tiettyjä, myös erotuksia on vain tiettyjä: vety lähettää vain tiettyjä aallonpituuksia, ja sen spektri on viivaspektri.
 
@@ -155,6 +161,12 @@ Absorptio on käänteinen tapahtuma. Atomi absorboi fotonin vain, jos fotonin en
   <foreignObject x="433.5" y="321.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$hf = 14{,}0\,\text{eV}$</div></foreignObject>
   <foreignObject x="452.5" y="357.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ionisoi}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Perustilassa oleva vetyatomi absorboi fotonin, jonka energia on $14{,}0\,\text{eV}$. Mitä atomille tapahtuu?
+---
+Atomi ionisoituu, koska $14{,}0\,\text{eV}$ on enemmän kuin ionisaatioenergia $13{,}6\,\text{eV}$. Vapaalle elektronille jää liike-energiaa $14{,}0\,\text{eV} - 13{,}6\,\text{eV} = 0{,}4\,\text{eV}$.
+```
 
 ### Bohrin malli historiallisena välivaiheena
 Tanskalainen Niels Bohr esitti vuonna 1913 mallin, jossa elektroni kiertää protonia ympyräradalla, mutta vain tietyillä sallituilla radoilla. Sallitulla radalla elektroni ei säteile, vaikka klassisen fysiikan mukaan kiertävän varauksen pitäisi menettää energiaa säteilynä. Valoa syntyy vain, kun elektroni siirtyy radalta toiselle, ja fotonin energia on ratojen energioiden erotus. Radan säde kasvaa kuten $n^2$: perustilan säde on noin $0{,}053\,\text{nm}$, radan $n = 2$ neljä kertaa ja radan $n = 3$ yhdeksän kertaa suurempi.
@@ -248,6 +260,12 @@ Kunkin sarjan pisin aallonpituus tulee siirtymästä lähimmältä ylemmältä t
   <line x1="58" y1="202" x2="52" y2="238" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="29.5" y="239.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\infty \to 2$</div></foreignObject>
 </svg>
+
+```pysahdy
+Kuinka suuri on vetyatomin tason $n = 4$ energia?
+---
+$E_4 = -\tfrac{13{,}6\,\text{eV}}{4^2} = -\tfrac{13{,}6\,\text{eV}}{16} = -0{,}85\,\text{eV}$
+```
 
 ## Esimerkki
 Vetylampun punainen viiva syntyy, kun vetyatomin elektroni siirtyy tasolta $n = 3$ tasolle $n = 2$. Laske syntyvän fotonin aallonpituus.

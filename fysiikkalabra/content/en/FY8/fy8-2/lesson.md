@@ -112,6 +112,12 @@ When light with a continuous spectrum passes through a gas, dark lines are left 
 
 <figure class="unit-photo"><img src="pics/fy8/flame-colours.webp" alt="Nine flames in a row: magenta, red, orange, yellow, white, green, blue-green and violet."><figcaption>Flames containing metal salts. Each element colours the flame in its own way, because its atoms emit only wavelengths that match the differences of their own energy states.</figcaption></figure>
 
+```pysahdy
+Light with a continuous spectrum from a star passes through a gas cloud. The spectrum has a dark line at the same wavelength as a bright emission line of neon. What gas is in the cloud?
+---
+Neon. An absorption line is at exactly the same wavelength as an emission line of the same gas, because the atoms absorb their own wavelengths.
+```
+
 ### Energy states explain the lines
 The electron shell of an atom can only be in certain **energy states**. The lowest one is the ground state, and the higher ones are excited states. The energies are given as negative numbers, because the zero is chosen to be the situation in which the electron has left the atom. When an atom moves from a higher energy state to a lower one, it emits one photon. Energy is conserved, so the energy of the photon is the difference between the energies of the states. Because an atom has only certain energy states, there are only a certain number of differences, and the spectrum has only certain lines.
 
@@ -122,6 +128,12 @@ Absorption is the reverse process. An atom absorbs a photon only if the energy o
 The energy difference between the states is a necessary condition, but not all transitions are equally probable, and some of them are very weak. Therefore not every possible difference between energy levels is necessarily observed as a strong spectral line. Real spectral lines are not infinitely narrow either: the photon energy must match the difference between the states to within the small width of the line.
 
 You can measure a spectrum yourself. In a spectroscope, light passes through a narrow slit and a grating, and the wavelengths of the lines are read from a scale. A grating fixed in front of a phone camera or a ready-made spectrometer works in the same way: in the light of a gas discharge tube, a fluorescent tube or an LED lamp you can see at once whether the spectrum is continuous or made of lines. A gas discharge tube works at a high voltage and gets hot, so it is used as the teacher instructs and is not touched while it is on.
+
+```pysahdy
+An atom has only two energy states, and the difference between them is $1.9\,\text{eV}$. A photon with an energy of $2.4\,\text{eV}$ hits the atom. Does the atom absorb the photon?
+---
+No. An atom absorbs a photon only if the photon's energy is exactly the difference between the states. A photon with an energy of $2.4\,\text{eV}$ passes the atom by.
+```
 
 ### Fluorescence
 In **fluorescence**, a substance absorbs short-wavelength light, usually ultraviolet, and at once emits longer-wavelength visible light. The ink of a highlighter glows green in the light of a UV lamp: a molecule of the dye becomes excited, gives away part of its energy in small steps as heat to the vibrations of the molecule, and then returns to the ground state by emitting a photon of visible light. The energy of the emitted photon is smaller than that of the absorbed one, so its wavelength is longer. The spectrum is therefore shifted towards red.
@@ -224,6 +236,12 @@ The strongest visible lines of hydrogen are formed when a hydrogen atom moves fr
   <circle cx="420" cy="347" r="8" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="373" y="308.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$e^-$</div></foreignObject>
 </svg>
+
+```pysahdy
+In transition A of an atom the energy difference is $2.0\,\text{eV}$ and in transition B it is $4.0\,\text{eV}$. Which transition gives a photon with the shorter wavelength, and by how much?
+---
+Transition B. Since $\lambda = \tfrac{hc}{E_\text{y} - E_\text{a}}$, the wavelength is inversely proportional to the energy difference, and twice the energy difference gives half the wavelength.
+```
 
 ## Worked example
 The spectrum of a neon sign has a strong red-orange line at the wavelength $640\,\text{nm}$. What is the difference between the energies of the neon atom's states in the transition that produces this light? Give the answer in electronvolts.

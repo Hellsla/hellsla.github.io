@@ -296,6 +296,12 @@ Ionising radiation damages cells because it gives up its energy by knocking elec
 
 The energies are small on the scale of heat. A dose of $1\,\text{Gy}$ would warm water by only about $0.0002\,\text{K}$, yet receiving the same dose over the whole body at once already causes radiation sickness. The harm is therefore not caused by warming, but by the energy arriving in large packets that break individual molecules, such as DNA.
 
+```pysahdy
+Two pieces of tissue absorb the same radiation energy, but one has twice the mass. Which one has the greater absorbed dose?
+---
+The lighter one, twice as great. The dose is energy divided by mass, so the same energy in a smaller mass damages each cell more.
+```
+
 ### The same energy, different harm: weighted doses
 An alpha particle leaves a dense track of ionisation over a short distance, whereas a gamma photon ionises sparsely over a long distance. The same absorbed dose from alpha radiation therefore damages the DNA of cells more than from gamma radiation. Tissues also differ: red bone marrow and the lungs are more sensitive to radiation-induced cancer than the skin. In radiation protection these differences are taken into account with weighting factors, and the unit of a weighted dose is the sievert, $\text{Sv}$. The **effective dose** of the whole body is used to estimate the long-term cancer risk caused by small doses for an average person, not anyone's individual risk, and with it very different exposures, such as radon, an X-ray examination and a flight, can be compared.
 
@@ -353,6 +359,12 @@ Most of the radon itself is breathed out again, but its short-lived decay produc
 The radon concentration is given in becquerels per cubic metre: $1\,\tfrac{\text{Bq}}{\text{m}^3}$ means one decay per second in a cubic metre of air. According to STUK's nationwide sample surveys, the average concentration in Finnish homes is about $94\,\tfrac{\text{Bq}}{\text{m}^3}$. The reference level for dwellings is $300\,\tfrac{\text{Bq}}{\text{m}^3}$ and for new buildings $200\,\tfrac{\text{Bq}}{\text{m}^3}$ (decree of the Ministry of Social Affairs and Health 1044/2018). The concentration is measured with a radon detector can, which is left in the dwelling for two months during the heating season. The concentration can be reduced by improving ventilation, sealing gaps in the foundations and sucking radon-containing air from under the house with a radon suction pipe or a radon well.
 
 <figure class="unit-photo"><img src="pics/fy8/dosimeter-japan.webp" alt="A device on a metal stand outdoors, with red numerical displays and Japanese text at the top and a red and a green indicator light; a stone statue and trees in the background."><figcaption>An outdoor radiation monitor in Japan. The large display shows passers-by the ambient dose rate, so that anyone can judge how long it is sensible to stay in the area.</figcaption></figure>
+
+```pysahdy
+Radon is mostly breathed out again. Why does it still harm the lungs?
+---
+Its short-lived decay products are solids that stick to dust particles and remain in the airways, where they emit alpha radiation straight into the lung cells.
+```
 
 ### Protection: time, distance and shielding
 There are three ways to protect yourself from an external radiation source. **Time:** the dose grows in direct proportion to the time spent near the source, so near a radiation source only what is necessary is done, and quickly. **Distance:** from a point source radiation spreads in all directions over an ever larger area, so the dose rate decreases rapidly as the distance grows. **Shielding:** material between the source and the person absorbs radiation. Alpha radiation is stopped by paper or the dead surface layer of the skin, beta radiation by a plastic or aluminium plate a few millimetres thick. Gamma radiation is attenuated best by dense materials, such as lead and concrete, but no layer stops it completely.
@@ -518,6 +530,12 @@ where $\dot{H}_1$ is the dose rate at distance $r_1$ and $\dot{H}_2$ at distance
   <foreignObject x="32" y="271.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0$</div></foreignObject>
   <foreignObject x="4.5" y="199.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{source}$</div></foreignObject>
 </svg>
+
+```pysahdy
+The dose rate of a point-like gamma source is $8\,\mu\text{Sv/h}$ at a distance of $1\,\text{m}$. What is it at $4\,\text{m}$?
+---
+The distance becomes four times as large, so the dose rate is $\left(\tfrac{1}{4}\right)^2 = \tfrac{1}{16}$ of the original: $8\,\mu\text{Sv/h} \cdot \tfrac{1}{16} = 0.5\,\mu\text{Sv/h}$.
+```
 
 ### Half-value thickness
 The photons of gamma radiation do not stop in a shield at a certain depth; instead, each photon is absorbed or scattered at random. Every layer of the same thickness therefore attenuates the same fraction of the radiation arriving at it, in the same way as every half-life halves the number of nuclei. The **half-value thickness** $d_{1/2}$ is the thickness of material that halves the dose rate (chapter *Ionising radiation and the body*). When the thickness of the shield is $d$, the dose rate is

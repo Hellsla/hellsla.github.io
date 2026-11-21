@@ -198,6 +198,12 @@ Lähde: tyypilliset suuruusluokat STUKin terveydenhuollon säteilyaltistusta kos
 
 <figure class="unit-photo"><img src="pics/fy8/pet-ct-scanner.webp" alt="Sairaalan huone. Siinä on iso rengas ja potilaspöytä."><figcaption>PET-TT-laite. Renkaan sisällä on ilmaisimia, jotka havaitsevat fotoneja. Siellä on myös röntgenputki. Potilas liikkuu pöydän mukana renkaan läpi.</figcaption></figure>
 
+```pysahdy
+Miksi keuhkot näkyvät röntgenkuvassa tummina mutta luu vaaleana?
+---
+Keuhkojen ilma päästää säteilyn läpi melkein sellaisenaan. Ilmaisimeen osuu siksi paljon säteilyä. Luu vaimentaa säteilyä paljon. Sen taakse osuu vähän säteilyä, joten luu näkyy vaaleana.
+```
+
 ### Isotooppikuvaus: merkkiaine näyttää elimen toiminnan
 
 **Merkkiaine** on radioaktiivinen nuklidi eli tietynlainen atomiydin. Se on liitetty yhdisteeseen, jota elimistö käsittelee kuten omaa ainettaan. Siksi merkkiaine kertyy tutkittavaan elimeen. Kehon ulkopuolinen ilmaisin havaitsee merkkiaineen säteilyn. Kuva ei näytä vain rakennetta, kuten röntgenkuva, vaan sen, missä elimistö toimii. Esimerkiksi luuston isotooppikuvauksessa merkkiaine kertyy kohtiin, joissa luu uusiutuu vilkkaasti, kuten murtumiin ja etäpesäkkeisiin. Etäpesäke on syöpäkasvaimen levinnyt osa.
@@ -289,6 +295,12 @@ Potilasta ympäröi ilmaisinrengas. Kaksi vastakkaista ilmaisinta voi havaita fo
 Nykyaikaiset PET-laitteet mittaavat myös tämän aikaeron (lentoaika-PET) noin $0{,}3\,\text{ns}$:n tarkkuudella. Valo kulkee nanosekunnissa noin $30\,\text{cm}$. Aikaero rajaa siis lähteen janalla muutaman senttimetrin matkalle. Positroni kulkee hetken ennen annihilaatiota. Siksi jana kertoo annihilaation paikan eikä aivan hajoamispaikkaa. Varsinainen kuva syntyy vasta monista janoista. Kun janoja kertyy miljoonia, ne leikkaavat tiheimmin siellä, missä merkkiainetta on eniten. Tietokone laskee janoista kuvan.
 
 Fluori-18:n puoliintumisaika on lyhyt. Siksi se valmistetaan hiukkaskiihdyttimellä, syklotronilla, lähellä kuvauspaikkaa. Yksi tällainen paikka on Turun PET-keskus.
+
+```pysahdy
+Positroni ja elektroni annihiloituvat melkein levossa. Miksi syntyy kaksi fotonia vastakkaisiin suuntiin eikä yksi fotoni?
+---
+Hiukkasten yhteinen liikemäärä on alussa melkein nolla. Kaksi vastakkaisiin suuntiin lähtevää fotonia pitää liikemäärän melkein nollana. Yksi fotoni ei pitäisi.
+```
 
 ### Sädehoito: suuri annos kasvaimeen, pieni terveelle kudokselle
 
@@ -466,6 +478,12 @@ Röntgenkuvan kontrasti saadaan vertaamalla kahta sädettä. Toinen säde kulkee
   <foreignObject x="276.5" y="151.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$d_{1/2} = 3{,}4\,\text{cm}$</span></div></foreignObject>
   <foreignObject x="299" y="262" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#a97a35"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$d_{1/2} = 1{,}1\,\text{cm}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Röntgensäde kulkee pehmytkudoksen läpi kahden puoliintumispaksuuden matkan. Sen jälkeen se kulkee luun läpi yhden puoliintumispaksuuden matkan. Kuinka suuri osa säteilystä pääsee läpi?
+---
+Puoliintumispaksuudet lasketaan yhteen: $\left(\tfrac{1}{2}\right)^{2+1} = \tfrac{1}{8}$. Läpi pääsee siis $12{,}5\,\%$.
+```
 
 ### Annihilaatiofotonin energia
 

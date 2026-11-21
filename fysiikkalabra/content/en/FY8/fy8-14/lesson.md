@@ -192,6 +192,12 @@ Source: typical orders of magnitude from the publications of STUK (the Radiation
 
 <figure class="unit-photo"><img src="pics/fy8/pet-ct-scanner.webp" alt="A hospital scanning room: a pale green ring-shaped device with a patient table covered by a white sheet pointing towards its opening."><figcaption>A PET-CT scanner in Bron, France. Inside the ring are the detector ring for PET imaging and the X-ray tube and detectors for computed tomography. The patient slides through the ring on the table.</figcaption></figure>
 
+```pysahdy
+Why do the lungs appear dark in an X-ray image while bone appears light?
+---
+The air in the lungs lets the radiation through almost unattenuated, so a lot of radiation reaches the detector. Bone attenuates radiation strongly, so little reaches behind it and bone appears light.
+```
+
 ### Radionuclide imaging: a tracer shows how an organ works
 
 A **tracer** is a radioactive nuclide attached to a compound that the body handles like its own substances, so it accumulates in the organ being examined. A detector outside the body detects the radiation of the tracer. The image therefore shows not only structure, like an X-ray image, but where the body is active: in a bone scan, for example, the tracer accumulates where bone is renewing itself rapidly, such as in fractures and metastases.
@@ -279,6 +285,12 @@ The tracer in PET (positron emission tomography) is usually fluorine-18 in a com
 </svg>
 
 A ring of detectors surrounds the patient. When two opposite detectors detect a photon within a few nanoseconds of each other, that is, in **coincidence**, the scanner concludes that the photons were produced in the same annihilation somewhere on the line segment between those detectors. If the difference in the photons' arrival times is not measured, a single line segment does not tell where on the segment the source is. Modern PET scanners also measure this time difference (time-of-flight PET) with an accuracy of about $0.3\,\text{ns}$. Light travels about $30\,\text{cm}$ in a nanosecond, so the time difference narrows the source to a stretch of a few centimetres on the segment. Because the positron travels before the annihilation, the segment tells the place of the annihilation and not exactly the place of the decay. The actual image is formed only from many segments: when millions of segments have accumulated, they intersect most densely where there is the most tracer, and a computer calculates the image from them. Because of its short half-life, fluorine-18 is made in a particle accelerator, a cyclotron, close to the imaging site, for example at the Turku PET Centre.
+
+```pysahdy
+A positron and an electron annihilate almost at rest. Why are two photons produced, flying in opposite directions, instead of one photon?
+---
+The total momentum of the particles is almost zero at the start. Two photons flying in opposite directions keep the momentum almost zero; a single photon would not.
+```
 
 ### Radiotherapy: a large dose to the tumour, a small dose to healthy tissue
 
@@ -436,6 +448,12 @@ where $I_0$ is the intensity of the radiation entering the beam, $I$ is the inte
   <foreignObject x="276.5" y="151.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$d_{1/2} = 3.4\,\text{cm}$</span></div></foreignObject>
   <foreignObject x="299" y="262" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#a97a35"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$d_{1/2} = 1.1\,\text{cm}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+An X-ray beam passes through two half-value thicknesses of soft tissue and then one half-value thickness of bone. What fraction of the radiation gets through?
+---
+The half-value thicknesses are added: $\left(\tfrac{1}{2}\right)^{2+1} = \tfrac{1}{8}$, so $12.5\,\%$ gets through.
+```
 
 ### Energy of an annihilation photon
 

@@ -112,6 +112,12 @@ Jos jatkuvan spektrin valo kulkee kaasun läpi, spektriin jää tummia viivoja. 
 
 <figure class="unit-photo"><img src="pics/fy8/flame-colours.webp" alt="Yhdeksän eriväristä liekkiä rivissä."><figcaption>Liekeissä on eri metallien suoloja. Jokainen alkuaine antaa liekille oman värin. Sen atomit lähettävät vain tiettyjä aallonpituuksia.</figcaption></figure>
 
+```pysahdy
+Tähden valo on jatkuva spektri, ja se kulkee kaasupilven läpi. Spektrissä on tumma viiva samalla aallonpituudella kuin neonin kirkas emissioviiva. Mitä kaasua pilvessä on?
+---
+Neonia. Tumma absorptioviiva on täsmälleen samalla aallonpituudella kuin saman kaasun kirkas emissioviiva, koska atomit absorboivat vain omat aallonpituutensa.
+```
+
 ### Energiatilat selittävät viivat
 Atomin elektroniverho voi olla vain tietyissä **energiatiloissa**. Elektroniverho tarkoittaa kaikkia atomin elektroneja. Alin energiatila on perustila. Ylemmät tilat ovat viritystiloja. Energiat ilmoitetaan negatiivisina, koska nollaksi on valittu tilanne, jossa elektroni on irronnut atomista. Kun atomi siirtyy ylemmästä energiatilasta alempaan, se lähettää yhden fotonin. Fotoni on valon energiapaketti. Energia säilyy, joten fotonin energia on tilojen energioiden erotus. Atomilla on vain tietyt energiatilat. Siksi erotuksia on vain tietty määrä, ja spektrissä on vain tietyt viivat.
 
@@ -124,6 +130,12 @@ Kaasu absorboi vain siirtymiä, jotka alkavat tiloista, joissa sen atomeja on. K
 Fotonin energian täytyy vastata kahden tilan erotusta. Se ei kuitenkaan yksin riitä. Kaikki siirtymät eivät ole yhtä todennäköisiä, ja osa niistä on hyvin heikkoja. Siksi kaikkia mahdollisia energiatasojen erotuksia ei välttämättä näy voimakkaina spektriviivoina. Todelliset spektriviivat eivät myöskään ole äärettömän kapeita. Fotonin energian täytyy vastata tilojen erotusta viivan pienen leveyden tarkkuudella.
 
 Spektrin voi mitata itse. Spektroskoopissa valo kulkee kapean raon ja hilan läpi. Viivojen aallonpituudet luetaan asteikolta. Samalla tavalla toimii puhelimen kameran eteen kiinnitetty hila tai valmis spektrometri. Kaasupurkausputken, loisteputken tai LED-lampun valosta näkee heti, onko spektri jatkuva vai viivoista koostuva. Kaasupurkausputki toimii korkealla jännitteellä ja kuumenee. Siksi sitä käytetään opettajan ohjeiden mukaan. Putkeen ei kosketa, kun se on päällä.
+
+```pysahdy
+Atomilla on vain kaksi energiatilaa, ja niiden erotus on $1{,}9\,\text{eV}$. Atomiin osuu fotoni, jonka energia on $2{,}4\,\text{eV}$. Absorboiko atomi fotonin?
+---
+Ei. Atomi absorboi fotonin vain, jos fotonin energia on täsmälleen sama kuin tilojen erotus. Fotoni, jonka energia on $2{,}4\,\text{eV}$, menee atomin ohi.
+```
 
 ### Fluoresenssi
 **Fluoresenssissa** aine absorboi lyhytaaltoista valoa, yleensä ultraviolettia. Aine lähettää heti pidempiaaltoista näkyvää valoa. Esimerkiksi korostuskynän muste hehkuu UV-lampun valossa vihreänä. Väriaineen molekyyli virittyy. Se luovuttaa osan energiasta lämpönä pienin askelin molekyylin värähtelyihin. Sitten molekyyli palaa perustilaan ja lähettää näkyvän valon fotonin. Lähetetyn fotonin energia on pienempi kuin absorboidun. Siksi sen aallonpituus on pidempi. Spektri siirtyy siis kohti punaista.
@@ -226,6 +238,12 @@ Vedyn voimakkaimmat näkyvät viivat syntyvät, kun vetyatomi siirtyy tasolta $3
   <circle cx="420" cy="347" r="8" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="373" y="308.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$e^-$</div></foreignObject>
 </svg>
+
+```pysahdy
+Atomin siirtymässä A energiaero on $2{,}0\,\text{eV}$ ja siirtymässä B $4{,}0\,\text{eV}$. Kumman siirtymän fotonin aallonpituus on lyhyempi? Kuinka paljon lyhyempi?
+---
+Siirtymän B. Kaavassa $\lambda = \tfrac{hc}{E_\text{y} - E_\text{a}}$ energiaero on jakajana. Kun energiaero on kaksinkertainen, aallonpituus on puolet pienempi.
+```
 
 ## Esimerkki
 Neonvalomainoksen spektrissä on voimakas punaoranssi viiva aallonpituudella $640\,\text{nm}$. Kuinka suuri on niiden neonatomin energiatilojen erotus, joiden välisessä siirtymässä tämä valo syntyy? Anna vastaus elektronivoltteina.

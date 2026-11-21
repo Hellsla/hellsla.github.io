@@ -973,6 +973,12 @@ Kun kaksoisrakokoe tehdään niin heikolla valolla, että laitteessa on keskimä
   <line x1="441.5" y1="16" x2="441.5" y2="352" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 5"/>
 </svg>
 
+```pysahdy
+Heikolla valolla tehdyssä kaksoisrakokokeessa ensimmäiset $10$ fotonia ovat osuneet varjostimeen. Näkyykö siellä jo selvä raitakuvio?
+---
+Ei. Yksittäiset osumat näyttävät satunnaisilta, eikä yhden osuman paikkaa voi ennustaa. Raitakuvio erottuu vasta, kun osumia on kertynyt tuhansia.
+```
+
 ### Aalto kertoo todennäköisyyden
 Aaltomalli ei kerro, mihin yksittäinen fotoni tai elektroni osuu. Se kertoo, millä todennäköisyydellä kvantti havaitaan kussakin kohdassa: missä aallon intensiteetti on suuri, osumia tulee paljon, ja tummissa raidoissa niitä ei juuri tule. Kun vain toinen rako on auki, kahden raon raidat katoavat. Kun molemmat raot ovat auki, tummiin raitoihin tulee osumia vähemmän kuin yhden raon kanssa, joten toisen raon avaaminen vähentää osumia näissä kohdissa. Tätä ei voi selittää sillä, että jokainen kvantti kulkisi pienen kuulan tavoin vain toisen raon kautta. Jos koejärjestelyssä mitataan, kumman raon kautta kukin kvantti kulkee, raitakuvio häviää ja jakauma on kahden yhden raon kuvion summa.
 
@@ -1027,6 +1033,12 @@ fotonin liikemäärä :: p = \frac{E}{c} = \frac{h}{\lambda}
 ```
 missä $p$ on fotonin liikemäärä ($\text{kg}\cdot\text{m/s}$), $E = hf = \tfrac{hc}{\lambda}$ fotonin energia ($\text{J}$), $c = 2{,}998 \cdot 10^8\,\text{m/s}$ valon nopeus, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ Planckin vakio ja $\lambda$ aallonpituus ($\text{m}$). Yksikkö täsmää: $\tfrac{\text{J}\,\text{s}}{\text{m}} = \tfrac{\text{kg}\cdot\text{m}^2/\text{s}^2 \cdot \text{s}}{\text{m}} = \text{kg}\cdot\text{m/s}$. Näkyvän valon fotonin liikemäärä on pieni: aallonpituudella $500\,\text{nm}$ se on ${1{,}3 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}}$. Röntgenfotonin, jonka aallonpituus on $0{,}0711\,\text{nm}$, liikemäärä on noin $7000$-kertainen, ${9{,}3 \cdot 10^{-24}\,\text{kg}\cdot\text{m/s}}$. Lyhyt aallonpituus tarkoittaa siis suurta energiaa ja suurta liikemäärää.
 
+```pysahdy
+Fotonin A aallonpituus on puolet fotonin B aallonpituudesta. Kumman liikemäärä on suurempi, ja kuinka monta kertaa suurempi?
+---
+Fotonin A, kaksi kertaa suurempi. Koska $p = \tfrac{h}{\lambda}$, liikemäärä on kääntäen verrannollinen aallonpituuteen.
+```
+
 ### Comptonin ilmiö
 Arthur Compton suuntasi vuonna 1923 röntgensäteilyä grafiittiin ja mittasi sironneen säteilyn aallonpituuden. Sironneen säteilyn aallonpituus oli pidempi kuin tulevan, ja ero kasvoi sirontakulman kasvaessa. Tätä kutsutaan **Comptonin ilmiöksi**. Aaltomalli ei selitä sitä: aallon tahdissa värähtelevät elektronit säteilisivät samalla taajuudella kuin tuleva säteily. Fotonimallissa ilmiö on törmäys. Fotoni luovuttaa osan energiastaan ja liikemäärästään lähes vapaalle elektronille, joka lähtee liikkeelle. Energia säilyy:
 ```latex
@@ -1073,6 +1085,12 @@ Valon teho $P$ kertoo, kuinka paljon energiaa valo kuljettaa sekunnissa. Koska j
 \frac{N}{t} = \frac{P}{hf}
 ```
 missä $N$ on fotonien lukumäärä, $t$ aika ($\text{s}$), $P$ teho ($\text{W}$) ja $hf$ yhden fotonin energia ($\text{J}$). Tavallisessa valossa fotoneja on niin paljon, että valo näyttää jatkuvalta virralta. Vasta hyvin heikossa valossa yksittäiset fotonit erottuvat.
+
+```pysahdy
+Punaisen ja sinisen laserin teho on sama. Kumpi lähettää sekunnissa enemmän fotoneja?
+---
+Punainen. Koska $\tfrac{N}{t} = \tfrac{P}{hf}$ ja punaisen fotonin energia $hf$ on pienempi, samalla teholla tarvitaan enemmän fotoneja.
+```
 
 ## Esimerkki
 Kaksoisrakokokeessa käytetään punaista laservaloa, jonka aallonpituus on $633\,\text{nm}$. Valo himmennetään suodattimilla niin, että rakoihin tulevan valon teho on $1{,}0 \cdot 10^{-13}\,\text{W}$. Kuinka monta fotonia rakoihin tulee sekunnissa, ja kuinka pitkä matka on peräkkäisten fotonien välillä keskimäärin? Onko $1{,}2\,\text{m}$:n pituisessa laitteessa yleensä useampi fotoni yhtä aikaa?

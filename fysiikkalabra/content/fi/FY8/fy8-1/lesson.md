@@ -120,6 +120,12 @@ Valo on sähkömagneettista aaltoliikettä, ja aallon intensiteetti kertoo, kuin
 - **Intensiteetti.** Aaltomallin mukaan kirkkaampi valo antaisi elektroneille enemmän liike-energiaa. Kokeissa kirkkaampi valo irrottaa enemmän elektroneja, mutta niiden suurin liike-energia pysyy samana.
 - **Taajuus.** Kokeissa elektronien suurin liike-energia kasvaa, kun valon taajuus kasvaa. Aaltomallissa taajuudella ei ole tällaista merkitystä.
 
+```pysahdy
+Himmeä sininen valo osuu sinkkilevyyn, ja levystä irtoaa elektroneja. Mitä aaltomalli ennustaisi irtoamisen alkamisesta, ja mitä kokeessa havaitaan?
+---
+Aaltomallin mukaan elektronin pitäisi kerätä energiaa jonkin aikaa, joten irtoamisessa olisi viive. Kokeessa elektroneja irtoaa heti, himmeälläkin valolla.
+```
+
 ### Fotoni: valon energiakvantti
 Albert Einstein selitti havainnot vuonna 1905. Valon energia ei jakaudu tasaisesti aaltoon, vaan se on pakkautunut erillisiksi annoksiksi eli **kvanteiksi**. Valon kvanttia sanotaan **fotoniksi**. Yhden fotonin energia on $E = hf$, missä $f$ on valon taajuus ja $h$ **Planckin vakio**. Fotoni luovuttaa koko energiansa yhdelle elektronille kerralla, eikä elektroni tavallisessa valossa ehdi kerätä energiaa useammalta fotonilta. Jos $hf < W$, elektroni ei irtoa, vaikka fotoneja tulisi kuinka paljon tahansa. Jos $hf > W$, elektroni irtoaa ja ylimääräinen energia jää sille liike-energiaksi.
 
@@ -160,6 +166,12 @@ Albert Einstein selitti havainnot vuonna 1905. Valon energia ei jakaudu tasaises
 Tällä mallilla jokainen havainto selittyy. Samanvärisellä valolla intensiteetti kertoo, kuinka monta fotonia pinnalle osuu sekunnissa: kirkkaampi valo irrottaa siksi enemmän elektroneja, mutta yksittäinen elektroni saa silti vain yhden fotonin energian. Taajuus määrää yhden fotonin energian ja siksi elektronin suurimman liike-energian. Viivettä ei ole, koska jo ensimmäinen riittävän energinen fotoni voi irrottaa elektronin. Tässä mallissa energia on **kvantittunut**: säteily ja aine vaihtavat energiaa vain kokonaisina fotonin energioina.
 
 <figure class="unit-photo"><img src="pics/fy8/photomultiplier-tube.webp" alt="Suuri pyöreä lasikupu, jonka sisäpinta on peilimäinen, museon vitriinissä."><figcaption>Valomonistinputki Super-Kamiokanden neutrinoilmaisimesta museossa Tokiossa. Kuvun sisäpintaan osuva fotoni irrottaa elektronin valosähköisessä ilmiössä, ja putki vahvistaa sen mitattavaksi sähköpulssiksi.</figcaption></figure>
+
+```pysahdy
+Punaisen valon fotonin energia on pienempi kuin metallin irrotustyö $W$. Mitä tapahtuu, jos punaisen valon intensiteetti kasvatetaan kymmenkertaiseksi?
+---
+Elektroneja ei irtoa edelleenkään. Elektroni saa energiaa vain yhdeltä fotonilta kerrallaan, ja jokaisen fotonin energia on pienempi kuin $W$, vaikka fotoneja tulisi enemmän.
+```
 
 ### Elektronivoltti
 Fotonin ja elektronin energiat ovat jouleina hyvin pieniä lukuja, joten niille käytetään usein yksikköä **elektronivoltti** ($\text{eV}$). Yksi elektronivoltti on energia, jonka elektroni saa, kun se kiihtyy sähkökentässä $1\,\text{V}$:n jännitteen läpi. Koska elektronin varauksen suuruus on $e = 1{,}602 \cdot 10^{-19}\,\text{C}$, on $$
@@ -273,6 +285,12 @@ missä $hf$ on fotonin energia, $W$ metallin irrotustyö ja $E_\text{k,max}$ irt
 </svg>
 
 Kun yhtälö kirjoitetaan muotoon $E_\text{k,max} = hf - W$, se on suoran yhtälö: suurin liike-energia kasvaa tasaisesti taajuuden mukana, ja suoran kulmakerroin on Planckin vakio $h$ kaikille metalleille. Eri metallien suorat ovat siksi yhdensuuntaiset, ja ne alkavat vaaka-akselilta kunkin metallin rajataajuudelta. Robert Millikan mittasi tällaisia suoria vuonna 1916 ja sai kulmakertoimesta Planckin vakion. Valon intensiteetti ei esiinny yhtälössä lainkaan.
+
+```pysahdy
+Natriumin irrotustyö on $2{,}3\,\text{eV}$. Fotonin energia kasvaa $3{,}0\,\text{eV}$:sta $6{,}0\,\text{eV}$:iin. Kaksinkertaistuuko elektronien suurin liike-energia?
+---
+Ei. Yhtälöstä $E_\text{k,max} = hf - W$ saadaan ensin $3{,}0\,\text{eV} - 2{,}3\,\text{eV} = 0{,}7\,\text{eV}$ ja sitten $6{,}0\,\text{eV} - 2{,}3\,\text{eV} = 3{,}7\,\text{eV}$. Irrotustyö vähennetään kummassakin, joten liike-energia kasvaa yli viisinkertaiseksi.
+```
 
 ### Sinkki tarvitsee lyhytaaltoista ultraviolettia
 Rajataajuutta vastaa **raja-aallonpituus** $\lambda_0 = hc : W$: sitä pidempiaaltoinen säteily ei irrota elektroneja. Sinkistä irtoaa elektroneja vain, jos säteilyn fotonien energia ylittää sinkin irrotustyön. Irrotustyöllä $4{,}31\,\text{eV}$ raja-aallonpituus on $$

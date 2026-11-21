@@ -231,6 +231,12 @@ Vapaata kvarkkia ei ole koskaan havaittu. Vahva vuorovaikutus pitää kvarkit ha
   <line x1="300" y1="30" x2="300" y2="320" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
 </svg>
 
+```pysahdy
+Fyysikko yrittää repiä yhden kvarkin irti protonista. Saako hän vapaan kvarkin?
+---
+Ei. Irrotukseen kuluva energia synnyttää uusia kvarkki–antikvarkki-pareja, joten törmäyksestä lähtee hadroneja eikä yksittäisiä kvarkkeja.
+```
+
 ### Antihiukkaset ja annihilaatio
 Jokaisella hiukkasella on **antihiukkanen**, jolla on sama massa mutta vastakkainen varaus sekä vastakkaiset baryoni- ja leptoniluvut. Elektronin antihiukkanen on positroni $e^+$, joka syntyy beeta plus -hajoamisessa. Antihiukkanen merkitään viivalla: $\bar{u}$ on anti-$u$-kvarkki ja $\bar{\nu}_e$ elektronin antineutriino. Kun hiukkanen ja sen antihiukkanen kohtaavat, ne voivat **annihiloitua**: molemmat häviävät, ja niiden koko energia muuttuu esimerkiksi fotoneiksi. Kun elektroni ja positroni ovat lähes levossa, syntyy kaksi vastakkaisiin suuntiin lähtevää fotonia, kummankin energia $m_e c^2 = 511\,\text{keV}$. Tähän perustuu PET-kuvaus (luku *Säteily lääketieteessä ja teknologiassa*).
 
@@ -313,6 +319,12 @@ Sähkömagneettisen vuorovaikutuksen ja gravitaation kantama on rajaton. Vahva v
 
 <figure class="unit-photo"><img src="pics/fy8/cms-detector.webp" alt="Suuri, monikerroksinen ilmaisin täynnä kaapeleita ja metallilevyjä; etualalla on oransseihin kypäriin pukeutuneita ihmisiä selin kameraan."><figcaption>CMS-ilmaisin avattuna CERNissä. Ilmaisimen kerrokset mittaavat törmäyksissä syntyvien hiukkasten ratoja ja energioita. Edessä seisovat vierailijat näyttävät, kuinka suuri laite on.</figcaption></figure>
 
+```pysahdy
+Kahden protonin välillä vaikuttavat sähköinen hylkimisvoima ja gravitaatiovoima. Kumpi on suurempi?
+---
+Sähköinen hylkimisvoima, noin $10^{36}$ kertaa suurempi. Gravitaatio on perusvuorovaikutuksista heikoin.
+```
+
 ### Higgsin bosoni ja CERN
 Standardimallin mukaan avaruuden täyttää **Higgsin kenttä**. Vuorovaikutus sen kanssa antaa massan $W$- ja $Z$-bosoneille, kvarkeille ja varatuille leptoneille, mutta fotoni ja gluoni jäävät massattomiksi. Kentän kvantti on **Higgsin bosoni**. Se löydettiin vuonna 2012 Euroopan hiukkasfysiikan tutkimuskeskuksen CERNin LHC-kiihdyttimellä, ja sen massa on noin $125\,\tfrac{\text{GeV}}{c^2}$. Protonin massasta vain noin $1\,\%$ on sen kvarkkien massaa; loppu on kvarkkeja sitovan vahvan vuorovaikutuksen energiaa.
 
@@ -365,6 +377,12 @@ ydinreaktiossa vapautuva energia :: Q = (m_\text{alku} - m_\text{loppu})\,c^2
 missä $m_\text{alku}$ on hajoavan hiukkasen massa ja $m_\text{loppu}$ syntyvien hiukkasten massojen summa (luku *Massavaje ja ytimen sidosenergia*). Hajoaminen voi tapahtua vain, kun $Q > 0$ ja kaikki kolme lukua säilyvät. Nämä ovat välttämättömiä ehtoja mutta eivät aina riittäviä: reaktion pitää myös olla jonkin vuorovaikutuksen välitettävissä, ja muut säilymislait voivat silti estää sen. Hiukkasten massat ilmoitetaan yksikössä $\tfrac{\text{MeV}}{c^2}$, jolloin $c^2$ supistuu ja $Q$ saadaan suoraan megaelektronivoltteina.
 
 Protoni on kevyin baryoni. Standardimallin tavallisissa matalaenergiaisissa reaktioissa baryoniluku säilyy, joten protoni ei voi hajota kevyemmiksi hiukkasiksi näiden reaktioiden kautta: hajoamistuotteissa pitäisi olla baryoni, eikä protonia kevyempää baryonia ole. Joissakin standardimallia laajentavissa teorioissa protonin hajoaminen voisi kuitenkin olla mahdollista, ja siksi sitä etsitään kokeellisesti. Protonin hajoamista ei ole havaittu. Esimerkiksi hajoamiselle $p \to e^+ + \pi^0$ kokeet antavat eliniän alarajaksi yli $10^{34}$ vuotta.
+
+```pysahdy
+Hiukkanen voisi hajota kahdeksi hiukkaseksi, mutta niiden yhteenlaskettu massa on suurempi kuin hajoavan hiukkasen massa. Voiko hajoaminen tapahtua?
+---
+Ei voi. Silloin $Q = (m_\text{alku} - m_\text{loppu})\,c^2 < 0$, ja hajoaminen vaatisi energiaa, jota hiukkasella ei ole.
+```
 
 ### Beetahajoaminen kvarkkitasolla
 Beeta miinus -hajoamisessa neutroni muuttuu protoniksi. Kvarkkitasolla yksi neutronin $d$-kvarkki muuttuu $u$-kvarkiksi heikon vuorovaikutuksen välittäjähiukkasen $W^-$ välityksellä:
