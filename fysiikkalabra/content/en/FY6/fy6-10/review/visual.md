@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c8b77a5c450492a1
+CONTENT-HASH: 3e7a22c1b5eaa33a
 
 ## Blocking
 
 ## Polish
-- [Minor] inquiry.json review feedback — a display `aligned` block is followed directly by "(chapter ...)" with no space in the source; check on the page that the parenthesis sits on its own line cleanly (earlier text had a space).
+- [Minor] OLD: nothing in the new boxes; inline \\tfrac fractions in answers are small but legible.
 
 ## Checked
-batch delta review: the diff changes only the review question (inquiry.json) and answer constants, no figure or layout; quantities are inline LaTeX with units and `\cdot`, divisions with a colon, English fluent; theory-figure captures unaffected by the diff.
+batch delta review (round 2): the three "Stop and think" boxes (aside.stop-think) of fy6-10, rendered by me from a fresh build at 360 px with the answers opened (the lesson-folder captures predate the boxes): no clipping, no horizontal overflow (page width 360), no KaTeX error, decimal point and upright units correct, question and answer read clearly.
+Re-checked after the science-fix edit e3871adc04 (answer reworded, plain words and one inline formula, no new maths): same box structure, only about one line longer; no clipping risk.

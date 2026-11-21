@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 1b55c46d29071dfd
+CONTENT-HASH: c7b3acf66fafb8be
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] Pysähdy ja mieti box 1 answer — the changed sentence is long (about 40 words) with a nested parenthesis; fine, but could be split after "kasvaa" if the teacher wishes.
 
 ## Checked
-- Delta round 2: the diff adds a space after the display formula before "(luku ...)" in the Kertaa feedback (fy6-8 also the word "saadaan").
-- Rendered the opened Kertaa correct-answer feedback at 390 px for fy6-8 and fy6-13 (the others carry the identical one-character change): display block with normal margins, "(luku ...)" starts a new line, no stray indent or gap, no clipping.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review, round 3, scope only the 3 new Pysähdy ja mieti boxes: rendered the preview myself at 360 and 1280 px with Vastaus open (shot captures show them closed); no red KaTeX, no overflow, \tfrac fractions, \mu\text{F}, (20\,\text{V})^2 and mJ set correctly; wording natural.

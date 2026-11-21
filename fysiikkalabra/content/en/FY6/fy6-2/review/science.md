@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 335c1ffa7490ccc4
+CONTENT-HASH: 3e6e1e3a7a20e532
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- batch delta review: the review choice's new prompt (battery, lamp and resistor in a row, lamp lit) fits all four options; exactly one correct (current through a cross-section, voltage between two points), each distractor's feedback still says why it is wrong and none conflicts with the series situation; exit-ticket change is presentation only; hash same at start and end.
+- batch delta review: negative reading box (sentence removed, still right); 2 V range: percentage part 0.0005 V, digit part 0.002 V, digit part larger (recomputed).

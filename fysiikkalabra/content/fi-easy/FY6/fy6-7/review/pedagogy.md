@@ -1,11 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c5a10b84b33e5ed7
+CONTENT-HASH: 89f895171b86e189
 
 ## Blocking
-none
+(none)
 
 ## Polish
-- Correct and third feedback: `\text{W}$(luku` lacks a space.
+- lesson.md, first box (after the power-time figure) — the answer is asked in kWh before the section "Kilowattitunti on energian yksikkö" defines it; the figure and the prior lesson cover it, so it is followable, but the box fits as well after that section — OLD/placement, optional.
+- lesson.md, second box — 10,8 MJ : 3,6 MJ/kWh needs the student to hold "3,6 miljoonaa joulea" from the paragraph just above; works, since the box follows the sentence, and the answer names the 3,6 MJ conversion.
+- fi-easy: the box text is identical to the standard Finnish; for S2 readers 'Siis ..., joten ...' is acceptable, and 'teho' and 'kilowattitunti' are already explained in the surrounding text.
 
 ## Checked
-batch delta review: retrieval P=UI 0,43 A -> 99 W, 530 ohm distractor correct, rows re-broken.
+- Three boxes (power x time in kWh, MJ to kWh, E = UIt in two steps) sit right after the paragraph or formula they practise; each is one step or two, rising demand, no repeat of the worked example (floor heating) or the exercises' wording.
+- The boxes do not reveal the answers to Ennuste 1 or 2 (their numbers are 0,40/0,80 kWh and 468 kWh; the boxes use 0,30, 3,0 and 0,23 kWh) and do not pre-empt the Etsi virhe item.
+- Question first, answer behind a closed "Vastaus" with the principle, symbolic form, then substitution; units and decimal comma/point correct; LaTeX units in all.
+- Render at 390 px (Teoria capture 2): the box is a distinct, readable block, answer closed, nothing clipped.
+- Workload stays one lesson; goals unchanged (sähköteho, kWh, sähkölasku).

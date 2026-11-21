@@ -56,6 +56,12 @@ Q = n e
 ```
 where $Q$ is the magnitude of the charge of the object ($\text{C}$), $n$ is the number of extra or missing electrons and $e = 1.602 \cdot 10^{-19}\,\text{C}$ is the elementary charge. The coulomb is a large charge, since it takes $6.24 \cdot 10^{18}$ elementary charges. The charge of a balloon charged by rubbing is typically tens of nanocoulombs: a charge of $-50\,\text{nC}$ means about $3.1 \cdot 10^{11}$ extra electrons.
 
+```pysahdy
+Can the charge of an object be $0.5e$, half of the elementary charge?
+---
+No. Charge is always a whole number times the elementary charge, $Q = ne$, because only whole electrons are transferred.
+```
+
 ### Conservation of charge
 Charge is neither created nor destroyed. The total charge of an isolated system, that is, the sum of all its charges, stays the same, even though charge moves from one object to another. This is the **law of conservation of charge**. When a balloon is rubbed on wool, some of the electrons of the wool move to the surface of the balloon. The balloon gets a negative charge, and the wool is left with an equal positive charge, because it is missing the same number of electrons. In solids it is the electrons that move; the protons stay in the nuclei of the atoms.
 
@@ -389,6 +395,12 @@ magnitude of the Coulomb force :: F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}
 ```
 where $F$ is the magnitude of the force ($\text{N}$), $q_1$ and $q_2$ are the charges ($\text{C}$), $r$ is the distance between the charges ($\text{m}$) and $$k = 8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$$ is the constant of Coulomb's law. Coulomb's law holds exactly for point charges. Outside a spherically symmetric charged body the field is the same as that of a point charge placed at its centre, so the distance of such spheres is measured between the centres. When charged conducting spheres are close to each other, the distributions of their surface charges can change, and the model of point charges placed at the centres is no longer accurate. The value of the constant holds in a vacuum; in air the force is almost the same.
 
+```pysahdy
+Two point charges of $1.0\,\mu\text{C}$ each are $0.30\,\text{m}$ apart. How large is the electric force between them?
+---
+The force is $F = k\,\lvert q_1 q_2 \rvert : r^2$. So $F = 9.0 \cdot 10^{9} \cdot 1.0 \cdot 10^{-12} : 0.30^2$ (unit $\text{N}$), so $F \approx 0.10\,\text{N}$.
+```
+
 ### Force and reaction force
 Coulomb's law gives the magnitude of the force. The direction of the force is worked out from the signs of the charges: the forces lie on the line between the charges, and charges of the same sign repel and charges of opposite signs attract each other. The charge $q_1$ acts on the charge $q_2$ with the force $\overline{F}_{12}$, and the charge $q_2$ acts on the charge $q_1$ with the force $\overline{F}_{21}$. They are a force and its reaction force, $\overline{F}_{12} = -\overline{F}_{21}$ (chapter *Interaction and force: Newton's first and third laws*), so they are equal in magnitude and opposite in direction, also when the charges are of different sizes. In the formula of the law the charges appear symmetrically, so the same $F$ acts on both charges.
 
@@ -486,6 +498,12 @@ When several other charges act on a charge, the force of each charge is calculat
 \overline{F} = \overline{F}_1 + \overline{F}_2
 ```
 where $\overline{F}$ is the net force ($\text{N}$) and $\overline{F}_1$ and $\overline{F}_2$ are the forces that two other charges exert on it ($\text{N}$). When all the charges are on the same line, forces in the same direction are added and forces in opposite directions are subtracted from each other.
+
+```pysahdy
+Three charges lie on one line. Two equal charges of the same sign, each at the same distance, act on the middle charge. What is the net force?
+---
+Zero. The two charges act on the middle one from opposite sides, both repelling or both attracting it. The forces are equal in magnitude and opposite in direction, so they cancel and $\overline{F} = \overline{0}$.
+```
 
 ## Worked example
 Two small metal spheres are on insulating rods so that the distance between the centres of the spheres is $6.0\,\text{cm}$. The charge of one sphere is $+12\,\text{nC}$ and that of the other $-8.0\,\text{nC}$. How large is the electric force between the spheres, and do the spheres attract or repel each other?

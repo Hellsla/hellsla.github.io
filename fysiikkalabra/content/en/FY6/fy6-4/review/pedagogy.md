@@ -1,10 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: e250902d768e474a
-
+CONTENT-HASH: f6861355e01b5352
 ## Blocking
 
 ## Polish
-- The photo caption raises the question of one broken lamp; the paragraph before it answers it for parallel, so the photo works as an illustration rather than a prompt. Acceptable as it is.
-
+- None.
 ## Checked
-batch delta review: Christmas-lights photo after the parallel paragraph (alt text and caption clear, link to the lesson topic), Recall Ohm task reworded around one lamp with constant resistance (same numbers, clear), chapter title fix in prior list; new figure caption translation consistent.
+batch delta review (round 2): the reworded Stop-and-think question (first/second resistor) is clearer than before; the answer and reason are unchanged and match the series-circuit text.

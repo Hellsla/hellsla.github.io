@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 990e7e1b3df2fef7
+CONTENT-HASH: 699bfeab4b326ba5
 
 ## Blocking
 - none
@@ -7,9 +7,8 @@ CONTENT-HASH: 990e7e1b3df2fef7
 ## Polish
 - none
 
-## Checked
-- Delta round 2: the diff is a space added after the display formula before "(chapter ...)" in the Kertaa feedback (plus "we get" in fy6-8).
-- Rendered the opened Kertaa correct-answer feedback at 390 px for fy6-8 and fy6-13 (preview/en); the spacing renders well, with no stray indent, clipping or overflow. This lesson shares the same one-character change.
+## Vanhan sisällön löydökset
+(none)
 
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+## Checked
+batch delta review: the site/ build and the shots do not yet contain the new boxes, so I rendered the 3 new Pysähdy boxes (stopthink.py markup, site.css, KaTeX, answers open) at 360 px myself and opened the captures; no overflow, no KaTeX errors; language and units (LaTeX, thin space, \cdot, colon) read.

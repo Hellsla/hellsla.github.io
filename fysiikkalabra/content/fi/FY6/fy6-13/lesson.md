@@ -246,6 +246,12 @@ Eristeessä varaukset eivät pääse liikkumaan vapaasti, mutta sähkökenttä s
   <foreignObject x="342" y="309.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{pienempi } U$</div></foreignObject>
 </svg>
 
+```pysahdy
+Mitä eristeen pinnoille tapahtuu, kun se asetetaan levyjen väliin, ja miksi levyjen välinen jännite siksi pienenee?
+---
+Eristeen pinnoille syntyy polarisaation vuoksi varauksia: levyä vasten on levyn varaukselle vastakkaismerkkinen varaus. Ne vähentävät kenttää, joten kun levyjen varaus pysyy samana (lähde irrotettu), jännite $U$ pienenee ja kapasitanssi $C = \tfrac{Q}{U}$ kasvaa.
+```
+
 ### Energia on sähkökentässä
 Varauksen siirtäminen levystä toiseen vaatii työtä, koska positiivinen levy vetää elektroneja puoleensa ja negatiivinen levy hylkii niitä. Tämä työ varastoituu levyjen väliseen sähkökenttään energiaksi, ja purkautuessaan kondensaattori luovuttaa energian takaisin. Salamalaitteen paristot jaksavat antaa vain pientä tehoa, joten kondensaattorin lataaminen kestää sekunteja. Salamaputken läpi kondensaattori purkautuu millisekunnissa, ja sama energia vapautuu tuhansia kertoja suuremmalla teholla.
 
@@ -287,6 +293,12 @@ Levyjen välinen kenttä on $E = \tfrac{U}{d}$, joten eriste kestää jännittee
 U_\text{max} = E_\text{max} d
 ```
 missä $U_\text{max}$ on suurin jännite ($\text{V}$), jolla läpilyöntiä ei tapahdu, $E_\text{max}$ eristeen läpilyöntilujuus ($\text{V/m}$) ja $d$ eristekerroksen paksuus ($\text{m}$). Esimerkiksi $0{,}010\,\text{mm}$:n paperikerros kestää noin $16 \cdot 10^{6}\,\tfrac{\text{V}}{\text{m}} \cdot 0{,}010 \cdot 10^{-3}\,\text{m} = 160\,\text{V}$.
+
+```pysahdy
+Kondensaattorin eristeenä on paperikerros. Kerroksen paksuus kaksinkertaistetaan. Miten kondensaattorin kestämä suurin jännite muuttuu?
+---
+Se kaksinkertaistuu. Läpilyöntilujuus $E_\text{max}$ on aineen ominaisuus eikä muutu, joten $U_\text{max} = E_\text{max} d$ on suoraan verrannollinen paksuuteen $d$.
+```
 
 ### Kondensaattorin energia
 Ladattaessa varaus kasvaa nollasta arvoon $Q$, ja jännite kasvaa samassa suhteessa nollasta arvoon $U$. Kun pieni varaus siirretään levystä toiseen jännitteen yli, se saa energian, joka on varaus kertaa senhetkinen jännite (luku *Potentiaalienergia ja potentiaali sähkökentässä*). Ensimmäiset varaukset siirtyvät pienen jännitteen yli ja viimeiset koko jännitteen $U$ yli, joten keskimääräinen jännite on $\tfrac{U}{2}$. Energia on $(Q, U)$-kuvaajan alle jäävän kolmion pinta-ala.
@@ -331,6 +343,12 @@ kondensaattorin energia :: W = \tfrac{1}{2} Q U = \tfrac{1}{2} C U^2
 missä $W$ on energia ($\text{J}$), $Q$ varaus ($\text{C}$), $U$ jännite ($\text{V}$) ja $C$ kapasitanssi ($\text{F}$). Jälkimmäinen muoto saadaan sijoittamalla $Q = CU$. Energiaa merkitään $W$:llä, koska $E$ tarkoittaa tässä luvussa sähkökentän voimakkuutta. Myös luvussa *Akut ja latauspiiri* energia oli $W$, koska $E$ oli siellä lähdejännite.
 
 Kun aluksi varaamaton kondensaattori ladataan vakiojännitelähteestä tavallisessa latauspiirissä, jossa on resistanssia, lähde siirtää koko varauksen $Q$ täyden jännitteensä $U$ yli, joten se antaa energian $QU$. Kondensaattoriin varastoituu siitä vain puolet. Toinen puoli muuttuu latauksen aikana johtimien ja vastusten sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Puolet ei ole yleinen laki kaikille lataustavoille: se on tämän mallin tulos.
+
+```pysahdy
+Kondensaattorin kapasitanssi on $10\,\mu\text{F}$ ja jännite $20\,\text{V}$. Kuinka paljon energiaa siihen on varastoitunut?
+---
+$W = \tfrac{1}{2} C U^2$. Sijoitus: $W = \tfrac{1}{2} \cdot 10 \cdot 10^{-6}\,\text{F} \cdot (20\,\text{V})^2$, joten $W = 2{,}0 \cdot 10^{-3}\,\text{J} = 2{,}0\,\text{mJ}$.
+```
 
 ### Eriste, kun lähde on kytkettynä tai irrotettuna
 Kun levyjen väliin työnnetään eristelevy, joka täyttää välin, kapasitanssi kasvaa $\varepsilon_\text{r}$-kertaiseksi. Muut suureet muuttuvat sen mukaan, pysyykö kondensaattori kytkettynä lähteeseen.

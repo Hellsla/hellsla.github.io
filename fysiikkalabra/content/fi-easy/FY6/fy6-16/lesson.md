@@ -178,10 +178,22 @@ Latausaika riippuu kahdesta asiasta. Ensimmäinen on se, kuinka paljon energiaa 
 
 <figure class="unit-photo"><img src="pics/fy6/ev-charging-socket.webp" alt="Valkoisen auton keulassa on auki oleva luukku. Sen alla on kaksi latausliitäntää."><figcaption>Sähköauton latausliitännät. Isommalla liitännällä ladataan nopeasti tasavirralla. Pienemmällä ladataan vaihtovirralla. Silloin auton oma laturi muuttaa vaihtovirran tasavirraksi akkua varten.</figcaption></figure>
 
+```pysahdy
+Latauksen hyötysuhde on $0{,}85$. Mitä se tarkoittaa verkosta otetulle energialle? Minne loppu menee?
+---
+Vain $85\,\%$ verkosta otetusta energiasta siirtyy akkuun. Loput $15\,\%$ muuttuu laturin, johtojen ja akun sisäenergiaksi.
+```
+
 ### Yksi vaihe vai kolme
 Suomalaiseen omakotitaloon tulee yleensä **kolmivaihesähkö**. Siinä on kolme vaihejohdinta $\text{L}_1$, $\text{L}_2$ ja $\text{L}_3$ sekä nollajohdin $\text{N}$. Vaihejohdin on johto, jossa on jännite. Jokaisen vaihejohtimen ja nollajohtimen välillä on jännite $230\,\text{V}$. Tavallinen pistorasia ja vedenkeitin käyttävät yhtä vaihetta. Kiuas ja latausasema käyttävät yleensä kaikkia kolmea vaihetta. Kun laite ottaa jokaisesta vaihejohtimesta saman virran $I$, jokainen vaihe siirtää tehon $UI$. Kokonaisteho on silloin kolminkertainen. Vaihejohtimien välinen jännite on $400\,\text{V}$, mutta sitä ei tässä tarvita.
 
 Laitteen virta saadaan tehosta samalla tavalla kuin luvussa *Sähköenergia kotona*. Yhdessä vaiheessa $I = P : U$. Tavallisesta pistorasiasta ladattaessa latauskaapeli rajoittaa virran yleensä noin $8\,\text{A}$:iin. Teho on silloin $230\,\text{V} \cdot 8\,\text{A} \approx 1{,}8\,\text{kW}$. Yksivaiheinen latausasema, jonka virta on $16\,\text{A}$, lataa teholla noin $3{,}7\,\text{kW}$. Kolmivaiheinen asema lataa samalla virralla kolminkertaisella teholla, noin $11\,\text{kW}$. Sama $40\,\text{kWh}$:n lataus kestää pistorasiasta yli vuorokauden, kun latauksen häviöt otetaan huomioon. Kolmivaiheisella asemalla se kestää noin neljä tuntia.
+
+```pysahdy
+Kolmivaiheisen latausaseman teho on $6{,}9\,\text{kW}$ ja vaihejännite $230\,\text{V}$. Kuinka suuri on virta jokaisessa vaihejohtimessa?
+---
+Kaavasta $P = 3UI$ saadaan $I = \tfrac{P}{3U}$, joten $I = \tfrac{6900\,\text{W}}{3 \cdot 230\,\text{V}} = 10\,\text{A}$.
+```
 
 ### Kodin sähköjärjestelmä
 Sähköverkosta tuleva kaapeli kulkee mittarin kautta **sähkökeskukseen**. Keskuksessa ovat ensin **pääsulakkeet**. Jokaisessa vaihejohtimessa on yksi pääsulake, esimerkiksi $3 \cdot 25\,\text{A}$. Pääsulakkeiden jälkeen virta jakautuu **ryhmiin**. Jokaisella ryhmällä on oma johto ja oma sulake tai johdonsuojakatkaisija, esimerkiksi $10\,\text{A}$ tai $16\,\text{A}$. Sulake suojaa johtoa. Se katkaisee virran, ennen kuin virta lämmittää johtoa vaarallisesti (luku *Sähköturvallisuus kotona ja työssä*). Siksi sulakkeen koko valitaan johdon poikkipinta-alan mukaan. Sulakkeen tilalle ei saa vaihtaa suurempaa.
@@ -393,6 +405,12 @@ missä $t$ on latausaika ($\text{h}$) ja $P$ verkosta otettu teho ($\text{kW}$).
   <circle cx="424" cy="279" r="6.5" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="349" y="234.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{varaus}\ 99\,\%$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Akkuun pitää varastoida $20\,\text{kWh}$. Hyötysuhde on $0{,}90$ ja latausteho $5{,}0\,\text{kW}$. Kuinka kauan lataus kestää?
+---
+$t = \tfrac{W_\text{akku}}{\eta P}$. Sijoitus: $\tfrac{20\,\text{kWh}}{0{,}90 \cdot 5{,}0\,\text{kW}} \approx 4{,}4\,\text{h}$.
+```
 
 Luvussa oletetaan, että latauslaitteen virta ja jännite ovat samanvaiheiset eli muuttuvat samaan tahtiin. Tällöin tehokerroin on likimain yksi. Silloin yksivaiheisen laitteen teho on $P = UI$. Mallissa oletetaan myös, että kolmivaihejärjestelmä on tasaisesti kuormitettu. Se tarkoittaa, että laite ottaa jokaisesta vaihejohtimesta saman virran. Silloin kokonaisteho on
 ```latex

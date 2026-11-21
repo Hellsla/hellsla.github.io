@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ca99110a5cb27e2e
+CONTENT-HASH: 59382f1c52f500e8
 
 ## Blocking
+(none)
 
 ## Polish
+- [Minor] Opened "Vastaus" state of the Pysähdy ja mieti boxes is not in any capture and no browser was available to render it; the layout checks (360–1920 px, answers open) were clean in checks.txt, and the widest inline answer formula fits a 360 px box by estimate.
 
 ## Checked
-batch delta review: Tunnetut ja kysytty stage split into knowns paragraph and a separate question paragraph (identical change in all 16); opened fy6-1, fy6-9 and fy6-16 example-390 captures (stage 1/7 reads naturally, question last, no orphaned paragraph, spacing and clipping fine); same template for the rest.
+batch delta review (round 2, scope: Pysähdy ja mieti boxes only): the new/changed boxes' wording, units, decimal comma and LaTeX read from the diff and source; box rendering confirmed in captures fy6-5-stage-selita-390-1, fy6-5-theory-1280-1, fy6-2-stage-selita-390-5, fy6-10-stage-selita-390-7 (label, question, closed Vastaus, no clipping at 390 px or 1280 px, no red KaTeX); the same shared component renders every lesson's boxes.

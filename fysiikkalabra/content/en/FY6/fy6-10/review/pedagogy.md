@@ -1,9 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: c8b77a5c450492a1
+CONTENT-HASH: 3e7a22c1b5eaa33a
 ## Blocking
-
 ## Polish
-- The new figure description (curves A and B) gives no force values; if a task needs values read off, a reader without the figure lacks the data.
-- Retrieval is now qualitative with three options; fine, but its 'Circuit, electric current and voltage' reference is a stretch for charge repulsion.
+- None for the changed box. The new answer ("both repelling or both attracting it") fixes the old claim that the middle charge is always repelled; the question does not give the middle charge's sign, so the answer now fits it.
 ## Checked
-batch delta review: new retrieval task and feedback (qualitative retrieval and new figure description); each wrong option's feedback names its slip and repairs it, the retrieval fits the chapter's lead-in, Finnish-neutral English reads clearly, no answer disclosed before commitment.
+batch delta review: the "Pysähdy ja mieti" answer on three collinear charges, read against its question and the surrounding Coulomb's-law text; wording is clear and consistent, and no figure or number changed.

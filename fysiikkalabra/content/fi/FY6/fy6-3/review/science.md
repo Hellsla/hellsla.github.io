@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 406e00c3400719ee
+CONTENT-HASH: 56a97a4947764ec3
 
 ## Blocking
 
 ## Polish
-- lesson-answers.py: none.
+
+## Vanhan sisällön löydökset
+- Ei löydöksiä boksien ympäriltä luetusta kontekstista.
 
 ## Checked
-batch delta review: kertaus Q = It recomputed (40 C; distractors 2,5 = t/I, 0,40 = I/t, 14 = I+t, each feedback names its error), one correct option, lesson-answers.py runs; reflowed chains and approved formula names not re-judged.
+batch delta review (scope: new pysahdy boxes only): R = U/I comparison, Ohm's law at constant temperature (condition stated), R = ρl/A with l and A doubled: all correct.

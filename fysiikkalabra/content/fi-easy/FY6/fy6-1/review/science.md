@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: be926496cafebd38
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 9292ab93382994b3
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+- New box 1 (kumikäsineet): fine at this level; optionally 'käsineen läpi ei kulje merkittävää virtaa' (a glove is rated for a voltage) — C, no change needed.
 
 ## Checked
-- Virtapiiri and virran suunta paragraphs vs fi: muutos etenee nopeasti mutta ei äärettömän nopeasti; vapaat elektronit valmiiksi johtimissa ja hehkulangassa; lyhyessä piirissä viive pieni. Same physics.
-- inquiry tarkista 1: correct option and three distractor feedbacks = fi; one correct option.
-- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.
+batch delta review: pysähdy boxes and diff only, numbers recomputed in one script; box 1 rubber glove/insulator, box 2 Q = It with fixed time.

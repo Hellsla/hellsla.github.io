@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: ea181c76ebfe8c83
+CONTENT-HASH: b5300fc7e565f2a7
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] OLD: nothing in the new boxes; inline \\tfrac fractions in answers are small but legible.
 
 ## Checked
-- Delta round 2: the diff is a space added after the display formula before "(chapter ...)" in the Kertaa feedback (plus "we get" in fy6-8).
-- Rendered the opened Kertaa correct-answer feedback at 390 px for fy6-8 and fy6-13 (preview/en); the spacing renders well, with no stray indent, clipping or overflow. This lesson shares the same one-character change.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review (round 2): the three "Stop and think" boxes (aside.stop-think) of fy6-7, rendered by me from a fresh build at 360 px with the answers opened (the lesson-folder captures predate the boxes): no clipping, no horizontal overflow (page width 360), no KaTeX error, decimal point and upright units correct, question and answer read clearly.

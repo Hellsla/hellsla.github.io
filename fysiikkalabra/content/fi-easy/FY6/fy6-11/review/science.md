@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ed1ac624f8c1ec55
+CONTENT-HASH: 285713375b267121
 
 ## Blocking
+None.
 
 ## Polish
+None.
 
 ## Checked
-batch delta review: retrieval units µN -> nN for charged dust: 12 -> 24 nN (F ∝ q1q2), distractors 48, 12, 6,0 nN and feedback unchanged in physics; magnitude plausible; lesson-answers comments updated; stage split only.
+batch delta review: pysähdy boxes and diff only, numbers recomputed in one script; test-charge box: F doubles, E = F/q unchanged.

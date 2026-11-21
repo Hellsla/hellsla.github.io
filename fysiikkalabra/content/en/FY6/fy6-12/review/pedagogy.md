@@ -1,7 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 092d1373c87c3c36
+CONTENT-HASH: 286cc3f52db1742c
 ## Blocking
 
 ## Polish
+- None.
 ## Checked
-batch delta review: new retrieval task and feedback (work W = Fs for an electron); each wrong option's feedback names its slip and repairs it, the retrieval fits the chapter's lead-in, Finnish-neutral English reads clearly, no answer disclosed before commitment.
+batch delta review (round 2): the box answer now states W = -ΔE_p and why the difference is unchanged; consistent with the lesson's sign convention, clear for the level.
