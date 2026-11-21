@@ -1,13 +1,17 @@
 VERDICT: FAIL
-CONTENT-HASH: 225dc94d2314719d
+CONTENT-HASH: 33ce3d3d95733482
 
 ## Blocking
-- Line 361 (pysahdy): the new wording names the 30 µT field as the horizontal component of the Earth's field, but the same lesson gives about 14 µT for southern Finland (line 404) and the figure right after uses B_h = 14 µT. The numbers contradict each other with no explanation (guardrail: numbers agree, or the difference is explained; kind B). Smallest fix: "At a compass, at a place where the horizontal component of the Earth's magnetic field is 30 µT, ..." (for example near the equator), or keep 30 µT and 40 µT as two unnamed perpendicular fields as before.
+- content/en/FY7/fy7-1/lesson.md:361 (pysahdy) — B, missing condition. The round-2 contradiction is gone (30 µT is now a horizontal component at an unnamed place, not southern Finland). But because the block now names the Earth's field as its *horizontal component*, "the total field" is no longer the sum of the two given fields: at that place the Earth's field also has a vertical component (the lesson itself teaches this at line 404, where it is the larger one), so the total field is larger than 50 µT. "Perpendicular to it" also allows a vertical magnet field, and then the needle would not turn at all. 50 µT is right only for the horizontal total. Smallest fix: "... a magnet near the compass has a horizontal field of $40\,\mu\text{T}$ perpendicular to it. What is the magnitude of the total horizontal field?" and in the answer "the total horizontal field is ...". The Finnish line 361 has the same gap ("kokonaiskenttä"): "vaakasuora kenttä ... Kuinka suuri on vaakasuora kokonaiskenttä?".
 
 ## Polish
 
 ## Checked
-batch delta review: pysahdy wording at line 361 against the vector-sum text, figure and the Finnish field values at line 404; arithmetic sqrt(30^2+40^2) = 50 µT is right.
+- Delta at line 361, read against the vector-sum text (lines 349–358), the compass paragraph and figure 6 (B_h = 14 µT, B_m = 20 µT) and the inclination text and figure 7 (line 404).
+- 30 µT as a horizontal component is a realistic value (low latitudes) and does not contradict the Finnish values, because no place is named.
+- Arithmetic: sqrt(30² + 40²) µT = 50 µT, right.
+- Finnish counterpart of the block (fi line 361) is the same in substance.
+- Hash the same at start and end.
 
 ## Vanhan sisällön löydökset
 None.

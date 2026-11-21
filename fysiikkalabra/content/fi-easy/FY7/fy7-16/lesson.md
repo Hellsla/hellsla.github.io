@@ -320,7 +320,7 @@ Kuvaajasta näkyy, että teho pienenee joka kilometrillä samassa suhteessa. Sik
 ```pysahdy
 Kuidun vaimennuskerroin on $0{,}18\,\text{dB/km}$ ja kuidun pituus on $50\,\text{km}$. Kuinka suuri on vaimennus desibeleinä ja kuinka suuri osa tehosta on jäljellä?
 ---
-Vaimennus on $A = aL = 0{,}18\,\text{dB/km}\cdot 50\,\text{km} = 9{,}0\,\text{dB}$. Tehosuhde on $P/P_0 = 10^{-0{,}90} \approx 0{,}13$ eli noin $13\,\%$.
+Vaimennus on $A = aL = 0{,}18\,\text{dB/km}\cdot 50\,\text{km} = 9{,}0\,\text{dB}$. Vaimennuksen määritelmästä $\lg (P_0 : P) = A : 10\,\text{dB} = 0{,}90$, joten $P_0 : P = 10^{0{,}90} \approx 7{,}9$. Tehosuhde on siis $P/P_0 \approx 0{,}13$ eli noin $13\,\%$.
 ```
 
 ### Langattoman laturin jännite
