@@ -193,6 +193,7 @@ Jaettu (build.py / site.css), yksin, #740:n ja #733:n jälkeen ennen kohtaa 21 (
 
 ## 24. Uudet kuvat sivustolle (opettaja 2026-11-19; kuvat hyväksytty 15.–18.11.)
 Varattu: claude/24-osa3-fy3 (osa 3, FY3, draft-PR)
+Varattu: claude/24-fy5-koe-sovella (FY5 koe/Sovella: fy5-k2-board, fy5-k2-fbd, fy5-k3-fbd, fy5-k5-modes, fy5-s1-crane; draft-PR)
 Osa 5 (FY5, 87/94 kuvaa) tehty: PR #785, `approve-figures fy5-1…fy5-17 --images` ajettu opettajan luvalla (opettaja 2026-11-21 suoraan tekijäsessioon: "Hyväksyn FY5-kuvat ja tyhjän reunan rajauksen kuviin fy5-3/karuselli ja fy5-4/muutos"), site/ ja palautus/ rakennettu, ennen/jälkeen docs/audits/img24-fy5/; odottaa koordinaattorin yhdistämistä. Avoin: `fy5-koe/fy5-k2-board`, `fy5-k2-fbd`, `fy5-k3-fbd`, `fy5-k5-modes`, `fy5-sovella/fy5-s1-crane` (jaettu figimage-korjaus); `fy5-10/types` "harvennus" → "harventuma" (sanan vaihto kaikkialla, ei tässä PR:ssä); `fy5-9/heiluri` ja `fy5-17/maapallo` ennallaan (PAATOS). fy9-aallot ja fy9-ympyraliike käyttävät FY5-kuvia: kuvien carry ajettu (`carry-item unit`).
 Osa 1 (kuvapohja) ja FY2-pilotti tehty (#768, `scripts/figimage.py`, NOTES.md §3); osat 2–11 vapaat.
 662 Codexin uudelleen piirtämää kuvaa FY1–FY10 ja FY14, opettaja hyväksynyt ja tarkistanut vaihdettaviksi. Lähde: haara
