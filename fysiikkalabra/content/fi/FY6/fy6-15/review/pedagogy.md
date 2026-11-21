@@ -1,15 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: 6d5c25bbab6b29f3
-
+VERDICT: PASS
+CONTENT-HASH: f39261485f39aebc
 ## Blocking
-- Box 1 (fuse 10 A -> 16 A, "Miksi ... ei saa laittaa 16 A:n sulaketta?") duplicates the exit ticket almost word for word (exit-ticket.json q: palanut 10 A:n sulake korvataan 16 A:n sulakkeella, miksi vaarallista). Also the answer is given in the paragraph just above ("Sulakkeen koko valitaan johdon mukaan", "ei koskaan korvata suuremmalla"), so the box is only recall. Replace with a question that needs the paragraph's reasoning without repeating the exit ticket, e.g. why a larger overcurrent makes a fuse act faster, or what happens to the cable heating power if current rises from 10 A to 16 A (P = RI^2) -- but check that this does not copy the exit ticket's answer either.
-
+(none)
 ## Polish
-- Box 2 (RCD compares which currents): the paragraph just before it is about touching L and N; the answer (compare L and N, 30 mA) sits in the figure caption directly above. Answerable, but the question is close to the caption's wording and to inquiry.json line 64 feedback. Acceptable; a "why does it not trip when L and N are both touched" question would use the paragraph just read.
-- Box 3 (iron 1.1 kW + radio 0.70 kW, current): answerable from the formula just given, answer clear (7.8 A), no duplicate of the worked example (3 devices, 16 A) or exercises. OK.
-
-## Vanhan sisällön löydökset
-- None found in the scoped check.
-
+- OLD: nothing new found in the boxes; old text not reviewed in this round.
 ## Checked
-Only the three pysahdy boxes: answerability from the preceding paragraph, duplication against exercises.json, inquiry.json, exit-ticket.json and the worked example, clarity of the answers. Box 2 and 3 pass; box 1 fails (duplicate of exit ticket).
+- Scope: only the three new pysahdy boxes (and what stops them working); old content not judged.
+- Box 1 (RI^2, current x3): comes after the doubling-to-fourfold statement, asks for transfer; the question does not give the answer (9).
+- Box 2 (what the RCD compares): retrieval right after the explanation, answer is a recall of the text; fits a pause box, no premature disclosure.
+- Box 3 (iron + coffee maker): placed right after the formula I=(P1+P2+...)/U; numbers check out (1800 W / 230 V = 7.8 A); a step before the worked example, no repeat of it.
+- Each box has question and answer separated by the --- line; solutions show the principle, not only the number.
+- Boxes are short, one per stage; workload stays one lesson.
+- Hash unchanged at start and end.

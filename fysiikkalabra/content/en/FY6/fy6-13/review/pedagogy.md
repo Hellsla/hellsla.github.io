@@ -1,15 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: de2b39d34c48b9b0
+VERDICT: PASS
+CONTENT-HASH: e3b99773173d0ff6
 
 ## Blocking
-- Pysähdy-laatikko 2 (läpilyöntijännite, ilma, 3 MV/m, 1,0 mm, vastaus 3,0 kV) toistaa Kokeen 5 ("läpilyönti ilmassa", ilma, d = 1,0 mm, kysytään läpilyöntijännitettä ja kenttää) täsmälleen. Vastaus paljastuu ennen kuin opiskelija tekee kokeen. Vaihda lukuarvot (esim. paperi tai lasi, tai ilma ja d = 2,0 mm) ja kysy jotain muuta kuin kokeen 5 tulos. / Box 2 duplicates Experiment 5 (same material, gap, same answer) and discloses its result before the student acts.
+(none)
 
 ## Polish
-- Laatikko 1: vastaus toistaa suoraan edellisen kappaleen lauseen; kysy mieluummin "mitä eristeen pinnoille tapahtuu, ja miksi jännite siksi pienenee", jotta vastaus vaatii päättelyn. Ennuste 2 käsittelee samaa ilmiötä lukuina, mutta ei paljasta sitä.
-- Laatikko 2 tulee heti paperiesimerkin jälkeen, joten se on lähes sama lasku; vaihtoehto yllä korjaa tämänkin.
-
-## Vanhan sisällön löydökset
-- Ei löydöksiä, jotka estäisivät laatikoiden toiminnan.
+- OLD/box 1: the figure labels (same Q, larger/smaller U) already hint at the second half; acceptable for a recall box.
+- Box 3 sits after the "half becomes internal energy" paragraph, not directly after the W formula; fine, but the answer's unit chain shows all steps so a student can self-check.
 
 ## Checked
-Laatikko 1 (polarisaatio): vastattavissa edellisestä kappaleesta ja kuvasta, vastaus selvä, ei toista tehtävää. Laatikko 3 (W = ½CU², 10 µF, 20 V = 2,0 mJ): kaava ja johto juuri luettu, laskettavissa, vastaus 2,0 mJ oikein, ei toista esimerkkiä (150 µF, 300 V) eikä tehtäviä. Laatikko 2: ks. Blocking; laskuarvo oikein. Muuta sisältöä ei arvioitu (rajattu laajuus).
+- Round 2, scope: only the three pysahdy boxes and what stops them working.
+- Box 1 (polarisation): needs the paragraph and figure, asks cause and effect, answer repairs "why U falls"; no longer a quote of the text.
+- Box 2 (paper thickness doubled): changed since round 1; no longer duplicates Experiment 5 (air, 1,0 mm); reasoning from U_max = E_max d, answer 2x correct.
+- Box 3 (10 uF, 20 V gives 2,0 mJ): calculation correct, uF conversion shown, differs from the example (150 uF, 300 V).
+- Box renders closed with an openable answer at 390 px (selita capture 3); nothing clipped, answer not shown before the click.
+- Language of the boxes read: grammar, number+unit LaTeX, decimal comma/point correct.

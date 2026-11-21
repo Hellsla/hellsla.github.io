@@ -1,17 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 4b5ad93ab132a649
-
+VERDICT: PASS
+CONTENT-HASH: 02a9f75babbacc05
 ## Blocking
-- content/en/FY6/fy6-11/lesson.md, first pysahdy box (field strength) — the question (field east, force on proton and electron) is the same concept as Check 1 (electron between plates, field and force opposite) and the box's answer states its solution (negative: force against the field). Fix: ask something else, e.g. "The test charge is doubled. Does the field strength change?" (E = F : q is independent of q).
-
+(none)
 ## Polish
-- Box 2 (E = U : d, 600 V, 3.0 cm) nearly repeats the example in the previous sentence (2.0 kV, 4.0 cm); still answerable and clear.
-- The exercise (1.2 kV, 3.0 cm, error hunt) uses the same formula with other numbers: acceptable.
-
+- lesson.md, first pysahdy box (test charge doubled) — the paragraph just above already states "the quantity does not depend on the test charge", so the box is partly recall of the line before it, not a new thought. Optional: move the box before that sentence or ask for the force ratio too. 
+- lesson.md, first box — it sits between the paragraph that says "in the figure" and the figure test, so the reader meets the box before the figure the paragraph refers to. Optional: put the box after the figure.
+- OLD: the stages, example and inquiry were not re-judged under the limited scope.
 ## Checked
-- Box 2: answerable from the formula just read, units and figures correct, copies no exercise or prediction.
-- Box 3: answerable from a = qE : m just read; does not repeat the Coulomb task; answer clear and reasoned.
-- Box 1: answer clear and readable from the paragraph, but a duplicate (see Blocking).
-
-## Old-content findings
-- No old-content findings that stop the boxes from working.
+- Three boxes (test charge, U : d with 600 V and 3.0 cm, doubled charge and a = qE : m) each follow the text that teaches the idea; none gives away a later prediction (ennuste-1 and ennuste-2 test position and distance, not these).
+- Each question is a single, closed, answerable step; the hidden answer names the reason, not only the number (E = 2.0e4 V/m is correct).
+- Box 2 uses new numbers, not the 2.0 kV / 4.0 cm of the text before it, and shows the conversion to metres.
+- Boxes are short; workload effect small; text is plain language and the LaTeX is correct.
+- Language and register match the lesson; the three languages carry the same boxes.
+- Inquiry checks passed (164/0), layouts 360 to 1280 px ok per packet; no change to the inquiry flow.

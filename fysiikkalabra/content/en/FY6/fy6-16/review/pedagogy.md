@@ -1,20 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: f0c0e62473bc90ee
-
+VERDICT: PASS
+CONTENT-HASH: 03c5d5d563164802
 ## Blocking
-- lesson.md (pysahdy box 2, 10 A three-phase station / kolmivaiheinen asema 10 A) — same structure as exit-ticket question 1 (three-phase, phase current, 230 V, P = 3UI; only 16 A became 10 A) and the same type as the prediction/exercise on 1 vs 3 phases; it repeats the result of the paragraph just read — use an inverse or reasoning question (6.9 kW from three phases: what is the phase current?).
-
+(none)
 ## Polish
-- Laatikko 1 (Miksi verkosta enemmän energiaa): vastaus on sanasta sanaan edellisessä kappaleessa, joten kysymys tarkistaa vain lukemisen; kysy mieluummin "Mitä hyötysuhde 0,85 tarkoittaa 40 kWh:n latauksessa?" tai pyydä ennustamaan, onko hyötysuhde suurempi vai pienempi pienellä teholla. Lähellä myös loppukysymyksen 2 selitysosaa.
-- Laatikko 3 (20 kWh, 0,90, 5,0 kW): suora sijoitus juuri annettuun kaavaan, sama menetelmä kuin esimerkki ja tehtävä (30 kWh, 16 A); toimii, mutta lisäarvo on pieni. Vastaus 4,4 h on oikein.
-- Vastauksessa 2 ( = 3UI$) kaava annetaan ennen kuin se on esitelty kaavaruudussa; sallittu, koska edellinen kappale kertoo "kolminkertainen".
-
+1. first box (hyötysuhde 0,85) asks what the paragraph just above already states (80-95 %, "enemmän energiaa kuin akkuun"); the answer is a restatement, so it is recall, not thinking. Fix (optional): ask for a number, e.g. how many kWh must be drawn to store 10 kWh.
+2. Box 2 (6,9 kW, 3 phases) says "Kaavasta P = 3UI", but the displayed formula comes only later in "Kaava"; the prose before it does state "kokonaisteho on kolminkertainen", so the student can solve it. Fix (optional): say "kolminkertainen teho" in the answer or move the box after the formula.
+3. Box 3 sits between the figure and the P = 3UI paragraph, splitting the formula section; works, but a box right after the t-formula block would read cleaner.
+4. OLD: the lesson is long for one lesson (4 sub-sections plus the formula, example and heating); not touched by this PR.
 ## Checked
-- Kaikki kolme laatikkoa ovat kohdassa, jossa tarvittava tieto on juuri luettu; 16-19-vuotias pystyy vastaamaan.
-- Laskut oikein: 3·230·10 = 6,9 kW; 20/(0,90·5,0) = 4,44 h.
-- Vastaukset ovat selkeitä, eivät paljasta ennustetta tai tehtävien ratkaisuja.
-- Laatikko 3 ei toista tehtävien lukuja (40/30/45 kWh); laatikko 1 ei toista tehtävää sellaisenaan.
-- Hash alussa ja lopussa sama.
-
-## Vanhan sisällön löydökset
-- Ei löydöksiä tämän rajauksen puitteissa.
+- Three boxes only, each after the paragraph that teaches its idea; question, rule line, answer behind a fold; student can act before seeing the answer.
+- Task levels: recall (1), one-step rearrangement (2), formula substitution (3); different from the worked example.
+- Numbers: 6900/(3*230)=10 A; 20/(0,9*5,0)=4,44 h; units and decimal comma correct.
+- Answers give the principle (formula, substitution), not just the result.
+- Language reads naturally at the course level; glossary terms (kolmivaihesähkö, vaihejohdin) used correctly.
+- Boxes add no new load on the 360/390 px pages (layout checks ok); no old spot stops them working.
+- Hash unchanged at the end.

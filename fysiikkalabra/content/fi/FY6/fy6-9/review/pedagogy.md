@@ -1,15 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: db25feb710e74807
+VERDICT: PASS
+CONTENT-HASH: a5c58b7599ab1e1e
 
 ## Blocking
-- Laatikko 3 (pysähdy, "laturin jännite pysyy vakiona, E kasvaa, miten latausvirta muuttuu?") kopioi ennuste-1:n (inquiry.json, ennuste-1: vakiojännitteinen laturi, miten virta muuttuu). Lukija on juuri lukenut kaavan ja kappaleen "Miksi lataus hidastuu lopussa" ja vastaa ennen kokeita; ennuste menettää ennusteen luonteensa. Vaihda kysymys sellaiseen, jota ennuste ei kysy (esim. "mitä tapahtuu, jos \text{lat} < E0" tai laske virta annetuilla luvuilla), tai poista laatikko.
-- Laatikon 3 vastaus on kehämäinen: "pienenee, koska virta on suoraan verrannollinen erotukseen ja se pienenee" (lesson.md, kolmas pysahdy). Kirjoita: "...ja erotus pienenee, koska E kasvaa."
-## Polish
-- Laatikko 1: vastaus on sanasta sanaan edellisessä kappaleessa ja sama väärinkäsitys on tarkistus-1:n vaihtoehtona; kysy mieluummin "mitä akussa muuttuu, kun se ladataan?" tai jätä.
-- Laatikko 2: sama tehtävä kuin L1-03 (U kertaa Q), eri luvuin; hyvä nopea tarkistus, mutta kaava on näkyvissä juuri yllä. Vastaus selkeä (fi4{,}4 \to 14$ Wh).
+None. The three new "Pysähdy ja mieti" boxes work as intended: each is a short, answerable question with a closed answer, placed right after the idea it checks, and none gates or blocks the page.
 
-## Vanhan sisällön löydökset
-- Ei löydöksiä, jotka estäisivät laatikoiden toiminnan.
+## Polish
+- Box 3 (charger voltage below source voltage) comes straight after the sentence that already says the battery discharges when U_lat < E, so it is recall, not a stop to think. Moving it before that sentence, or adding "what happens to the current?" to the question, would make it a real pause. Its answer says only "does not charge"; it could add "the current reverses and the battery discharges".
+- Box 1 repeats the paragraph above it almost word for word (neutral, energy conversion); fine as retrieval, but it could ask something the text does not state directly.
+- Box 2 asks a calculation with the answer one line below the formula; level 1, appropriate, and it uses fresh numbers rather than the worked example's.
+
+- OLD: no old content was re-judged; nothing here changes the earlier verdict on the lesson.
 
 ## Checked
-Kaikki kolme laatikkoa luettu ja verrattu ennusteisiin, tarkistuksiin, harjoituksiin ja lähtölippuun; laatikko 2:n vastaus laskettu (14,4 Wh).
+Hash matches at start and end (a5c58b7599ab1e1e). Read the lesson text, the three boxes (question, answer, placement, relation to the worked example and the Latauspiiri / Kaava sections), inquiry.json and deterministic checks (all ok, inquiry 137/137). Boxes do not repeat the opening prediction or the exit ticket. Language: fi.

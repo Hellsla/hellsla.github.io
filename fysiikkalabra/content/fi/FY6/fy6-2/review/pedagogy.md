@@ -1,21 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 9bc4cc56cba29732
-
-(Rajattu katselmointi 2026-11-20: vain kolme uutta pysahdy-laatikkoa.)
+VERDICT: PASS
+CONTENT-HASH: c0eadba9a6a5f557
 
 ## Blocking
-- content/fi/FY6/fy6-2/lesson.md:244 — kolmas laatikko (virheraja, lukema 2,00 V, alue 20 V, ±(0,5 % + 2 numeroa)) on sama lasku kuin Pohdintatehtävän toinen kysymys (3,00 V, sama alue ja virheraja, exit-ticket.json) ja lähes sama kuin Laskutehtävä 2 ja heti perässä tuleva Esimerkki 1; vain luku vaihtuu. Se ei lisää mitään, ja Pohdintatehtävä menettää uutuutensa. Vaihda laatikko kysymykseen, jota missään ei kysytä, esim. "Mittarin virheraja on ±(1,0 % + 2 numeroa) alueella 200 mA ja lukema 50,0 mA: kumpi osa, prosentti vai numerot, on suurempi?" tai pelkkä käsitekysymys (mitä kolmas ja neljäs numero kertovat virherajasta), ja vaihda uusi luku exit ticketin luvuista eroavaksi.
+- None. The three new "Pysähdy ja mieti" boxes (fi) are scoped correctly and work as questions before the answer.
 
 ## Polish
-- lesson.md:215 — toinen laatikko on kolmen lohkon päässä kappaleestaan (kuva "wrong" ja valokuva jännitemittarista välissä); valokuva käsittelee jännitemittaria, joten laatikko tuntuu irralliselta. Siirrä laatikko heti virtamittarin oikosulkua kuvaavan kappaleen (Mittari vaikuttaa piiriin, toinen kappale) jälkeen, ennen kuvia.
-- lesson.md:215 — kysymys on lähes sama kuin Koe 1:n viimeinen kysymys (lampun rinnalle: mitä lampulle tapahtuu) ja Tarkistus 1:n vaihtoehto; vastaus on kappaleessa sanatarkasti. Harkitse kysymystä "Miksi lamppu syttyy uudelleen, kun sulake on palanut?", jonka vastaus pitää päätellä (mittari irtoaa piiristä).
-- lesson.md:122 — laatikon 1 vastauksen lause "Jännitteen suuruus on sama" ei seuraa kappaleesta; pidä, mutta se on lisätieto, ei päätelmä.
-
-## Vanhan sisällön löydökset
-- ei uusia.
+- Box 1 (voltmeter polarity) sits right after the connections figure; the rule is stated in the paragraph above, so it is a short retrieval and application check, not a trap. Good place.
+- Box 2 (ammeter across the lamp) follows the "wrong connections" paragraph and figure, which already state the outcome, so the box tests recall and the reason (short circuit) rather than discovery. Acceptable for a stop-and-think box; the answer names the cause, not just the effect.
+- Box 3 (error limit parts) comes after the formula and gives all data, so the student can act on it at once; the answer shows the symbolic parts with units and compares them. It prepares the "why the smallest range" section well.
+- Each box asks one thing, in the lesson's voice, with a model answer behind "Vastaus" that is short and observable; none repeats the worked example (different numbers, a single comparison).
+- OLD: the worked example rounds 0,0275 V to 0,03 V in the result while the substitution shows the unrounded value; the explanation is given, but a student may stumble. Not for this PR.
+- OLD: "Digitaalisen" polarity text says red lead near plus gives a positive reading; fine, but the simulation does not let the student swap leads, so the box is the only place this is practised.
 
 ## Checked
-- Laatikko 1 (negatiivinen lukema): vastattavissa edellisestä kappaleesta (punainen plusnavan puolelle, jolloin positiivinen); ei toistu ennusteissa, kokeissa, kokeissa eikä exit ticketissä; vastaus selvä.
-- Laatikko 2: vastattavissa kappaleesta, vastaus selvä ja oikea; ei paljasta mitään ennen toimintaa (sijaitsee Teoriassa).
-- Laatikko 3: laskenta oikein (0,030 V); kaava juuri luettu.
-- Kolmen kielen laatikot vastaavat toisiaan.
+- Packet read in full for the lesson text and the start of inquiry.json (hook, retrieval, predictions, sim, experiment 1); boxes read in fi against the Finnish original: same three questions, same answers, same numbers; decimal marks correct for the language.
+- Boxes' placement relative to the surrounding text and figures; no box discloses an answer before the student acts (answer is in a closed details block).
+- Deterministic checks in the packet are all ok (layout at 360/390/768/1280 px, inquiry 138 passed); I did not re-run them.
+- Hash taken at start: c0eadba9a6a5f557.

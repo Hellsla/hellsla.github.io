@@ -1,15 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 9378696538c87215
+VERDICT: PASS
+CONTENT-HASH: b54d1bd97a313d64
+
 ## Blocking
-- lesson.md (pysahdy 1, virtalaki) — the box has the same structure as exit-ticket question 1 (incoming current, one branch known, find the other: 0.50 A − 0.35 A). Make it more qualitative (three branches, or 'if one branch current rises, what happens to the other?') or remove.
-- lesson.md (pysahdy 3, jännitelaki) — the box is the same calculation as exit-ticket question 2 (source voltage minus resistor voltages: 9.0 − 2.0 − 3.5) and restates the sentence just above it. Change the situation (e.g. give current and resistances and ask for the voltage across R2, or a loop whose rise is unknown) or remove.
+(none)
+
 ## Polish
-- lesson.md (pysahdy 2, johdin) — the 'why' repeats the sentence directly above and Prediction 2 (B and C) and the bird exercise; ask instead for a comparison with two points that have a resistor between them.
-## Vanhan sisällön löydökset
-- ei löydöksiä, jotka estäisivät uusien laatikoiden toiminnan.
+- Box 2: 'bare conductor' may read as 'uninsulated'; 'the same piece of wire' is clearer.
+- Box 2 answer: add that conductor resistance is neglected in this chapter (the bird task later uses 0.12 Ω/km).
+
 ## Checked
-- Laatikko 1 sijaitsee virtalain kappaleen ja haarautumiskuvan jälkeen; oppilas pystyy vastaamaan luetusta.
-- Laatikko 2 sijaitsee potentiaalikappaleen jälkeen; vastaus on luettavissa suoraan sen edeltä.
-- Laatikko 3 sijaitsee jännitelakikaavan jälkeen; luettu riittää.
-- Vertailu ennusteisiin, tehtäviin ja lähtölippuun tehty; vastaukset ovat selkeät ja lyhyet.
-- Hash vastaa pakettia.
+- Scope: only the three new Pysähdy ja mieti boxes (junction, bare conductor, loop voltages ratio); each has a question and a closed answer, one idea, a reason demanded ("miksi").
+- Box 1 (after the junction figure): 0,50 + 0,50 ≠ 0,80 targets the equal-split misconception; the answer is not given by the figure (it shows 0,20/0,10, not the test case).
+- Box 2 (after the circuit figure): prepares the bird section and the "potential changes only in source and resistors" idea; answer short and correct.
+- Box 3 (after Kaava): ratio 20:10 = 2 follows from the same current and U = RI; uses nothing not yet taught; links to the loop law.
+- Placement does not break the figure-after-paragraph rule or the 120-word limit; boxes sit in Teoria, after the predictions and experiments, so no premature disclosure.
+- Numbers and units are LaTeX; the answers are consistent with the text and the sim values.
+- Translation parity: the three boxes carry the same content in all three languages.

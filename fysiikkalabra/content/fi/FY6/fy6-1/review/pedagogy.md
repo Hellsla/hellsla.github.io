@@ -1,17 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 217e9dbc5f7a9827
+VERDICT: PASS
+CONTENT-HASH: 3f8d5f6a018929fb
 
 ## Blocking
-1. Box 1 (Johteet ja eristeet, lesson.md:41): "Why does copper conduct but dry wood not" duplicates exit-ticket question 1 (conductor/insulator with the copper wire example; exit-ticket.json:3-4). The answer is also nearly word for word in the paragraph just read, so it is recall of a sentence, not a check of understanding. Replace with a different transfer question (e.g. why a metal tool handle is covered with plastic, or what happens to the free electrons when the rod is part of a closed circuit), not the exit-ticket one.
+None. Scope: only the Pysähdy ja mieti -laatikot (round 2); OLD content judged as Polish only.
 
 ## Polish
-- Box 2 (Q = It, line 345): works. A student can answer from the Kaava paragraph; not a duplicate of exercises 1-2 (they compute numbers). The answer is clear. Weak demand but acceptable.
-- Box 3 (Jännite, line 392): the paragraph's last sentence ("the larger the voltage, the more energy the same charge transfers") already gives the answer, and the skill E = UQ is the exit-ticket 2 and exercise 4 skill (different numbers). Consider a question about meaning instead, e.g. what changes if the same battery moves twice the charge.
-- Box 3 answer writes `U = E : Q`; the lesson formula is a fraction `U = E/Q`. Use the same notation.
-- Boxes 2 and 3 are both "doubling, proportional" questions: vary the type.
-
-## Vanhan sisällön löydökset
-None found that stop a box from working.
+- Kysymys ja vastaus ovat erillään (vastaus `details`-laatikossa), joten vastaus ei paljastu ennen kuin opiskelija on miettinyt. Kolme laatikkoa osuu kohtiin, joissa teksti on juuri esittänyt säännön: eriste, $Q = It$, $U = E : Q$.
+- Each box asks for one step at the level of the text before it (recall, proportional reasoning, proportional reasoning); the doubling answers give the reason (formula, constant $t$ or $Q$), not just the result. Good.
+- Box 3 uses $E = UQ$, a rearrangement the text has not shown; the answer shows it, so the student can follow. Optional: not needed to change.
+- Suomi on selkeää ja termit (eriste, jännite, poikkileikkaus) ovat sanastosta.
+- OLD: the central misconception (current is not consumed in the lamp) and the circuit diagram have no box; the Virtapiiri and Kytkentäkaavio sections are the natural places if the teacher extends the set later.
+- OLD: first box (rubber) recalls what the paragraph above just said, so it tests little; a variant asking about a wire with a damaged insulation would be stronger.
 
 ## Checked
-All three boxes read in this language; answers are clear and correct; boxes sit directly after the paragraph they test; checked against exit ticket, exercises and the inquiry predictions for duplication. Not opened: captures, simulation (out of scope).
+Hash unchanged at start and end. Read the full packet (lesson text, inquiry, checks). Verified the three `pysahdy` fences in this language: placement after the explaining paragraph or figure, question then `---` then answer, units in LaTeX, decimal comma/point, no lesson id shown. Deterministic checks, inquiry and layout at 360 to 1280 px are green in the packet. Did not open captures; the box mechanics are tested by `test_stopthink.py`.
