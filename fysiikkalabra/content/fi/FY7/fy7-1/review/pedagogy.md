@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6d81563af5140bc9
+CONTENT-HASH: 13accd741d1267f9
 
 ## Blocking
 (none)
@@ -11,7 +11,9 @@ CONTENT-HASH: 6d81563af5140bc9
 (none)
 
 ## Checked
-- delta round 3, vain kolmas pysahdy-lohko (lesson.md:360-364): kysymys on nyt jaettu kolmeen lauseeseen, tilanne ensin ja kysymys viimeisenä erillisenä lauseena; kentät ja kohtisuoruus nimetty.
-- Vastaus 30 ja 40 -> 50 µT (Pythagoras) pitää paikkansa; ratkaisu nimeää periaatteen ja korvaa arvot yksiköin.
-- Suomi: "Paikassa, jossa ... on ... , kompassin lähellä on magneetti" kieliopillisesti kunnossa; Maan isolla; luvut LaTeXina.
+- delta round 4, vain muuttunut pysahdy-lohko (lesson.md:360-364): "vaakasuora" lisätty magneetin kenttään ja kokonaiskenttään, "Maan kentän vaakakomponenttia vastaan" nimeää kohtisuoruuden viitteen tarkasti.
+- Muutos poistaa epäselvyyden: kysytty suure on nyt vaakasuora kokonaiskenttä, joten 50 µT ei sekoitu Maan kokonaiskenttään 52 µT.
+- Vastaus 30 ja 40 -> 50 µT (Pythagoras) pitää paikkansa; ratkaisu nimeää periaatteen ja sijoittaa arvot yksiköin.
+- Suomi: lauserakenne, sijamuodot ja luku+yksikkö (LaTeX) kunnossa; kysymys on viimeisenä erillisenä lauseena.
 - Lohko tukee viereistä kompassimittausta (tan θ = B_m : B_h) eikä paljasta avauskysymyksen vastausta.
+- Sisältöhash ennen ja jälkeen: 13accd741d1267f9 (ei muutosta).
