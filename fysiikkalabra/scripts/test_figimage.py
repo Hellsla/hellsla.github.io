@@ -60,6 +60,16 @@ check("code_of: a lesson, the exam and the Sovella set of a module",
 check("code_of: a unit, an investigation or nothing is still None",
       [figimage.code_of(f) for f in ("tvt-epavarmuus/a", "fy4-koe-x/a", "", None, "fy99-koe/a")] == [None] * 5)
 
+# a figure written into a Sovella or exam solutions.md by practice.py is drawn on its picture too (the id is the page's: fy4-koe/<name>, fy4-sovella/<name>)
+import practice
+FAKE = {"type": "diagram", "file": "t-fig.webp", "box": None, "shift": {}, "flat": set(), "code": "FY4"}
+figimage.row, figimage.pic = (lambda fid: FAKE if fid == "fy4-sovella/fy4-s3-collision" else None), (lambda fid: "pics/fy4/t-fig.webp" if fid == "fy4-sovella/fy4-s3-collision" else None)
+try: stale = not practice.figures("FY4", write=False)
+finally: figimage.row, figimage.pic = real_row, real_pic
+check("practice.figures writes a figure with a row on its picture (a solutions.md without it is out of date)", stale)
+check("practice.figures leaves solutions.md as it is when no figure has a row", practice.figures("FY4", write=False) or figimage.row("fy4-sovella/fy4-s3-collision"))
+
+
 # the real layouts
 tot = 0
 for code in courses.codes():
