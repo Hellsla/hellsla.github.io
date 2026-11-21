@@ -232,9 +232,9 @@ A free quark has never been observed. The strong interaction keeps the quarks in
 </svg>
 
 ```pysahdy
-A physicist tries to tear a single quark out of a proton. Does she get a free quark?
+The energy of a collision knocks a quark with charge $+\tfrac{2}{3}e$ out of a proton. Can a detector ever register a particle with this charge?
 ---
-No. The energy spent on pulling creates new quark–antiquark pairs, so hadrons come out of the collision, not single quarks.
+No. A quark does not stay alone: the energy creates new quark–antiquark pairs, and the quarks end up in hadrons, whose charge is always a whole-number multiple of $e$.
 ```
 
 ### Antiparticles and annihilation
@@ -320,9 +320,9 @@ The range of the electromagnetic interaction and of gravity is unlimited. The st
 <figure class="unit-photo"><img src="pics/fy8/cms-detector.webp" alt="A huge, multi-layered detector full of cables and metal plates; people in orange helmets stand in the foreground with their backs to the camera."><figcaption>The CMS detector opened up at CERN. The layers of the detector measure the tracks and energies of particles produced in collisions. The visitors standing in front show how large the machine is.</figcaption></figure>
 
 ```pysahdy
-An electric repulsion force and a gravitational force act between two protons. Which one is greater?
+The electric force between two protons is about $10^{36}$ times greater than the gravitational force. Why, then, does gravity rule the motion of planets and stars?
 ---
-The electric repulsion, about $10^{36}$ times greater. Gravitation is the weakest of the fundamental interactions.
+Large bodies are almost electrically neutral: positive and negative charges cancel each other. Masses only add up, so gravity remains.
 ```
 
 ### The Higgs boson and CERN
@@ -379,7 +379,7 @@ where $m_\text{initial}$ is the mass of the decaying particle and $m_\text{final
 The proton is the lightest baryon. In the ordinary low-energy reactions of the Standard Model the baryon number is conserved, so the proton cannot decay into lighter particles through these reactions: the decay products would have to include a baryon, and there is no baryon lighter than the proton. In some theories that extend the Standard Model the decay of the proton could, however, be possible, and that is why it is searched for experimentally. The decay of the proton has not been observed. For example, for the decay $p \to e^+ + \pi^0$ experiments give a lower limit of over $10^{34}$ years for the lifetime.
 
 ```pysahdy
-A particle could decay into two particles, but their combined mass is greater than the mass of the decaying particle. Can the decay happen?
+A free particle could decay into two particles, but their combined mass is greater than the mass of the decaying particle. Can the decay happen?
 ---
 No. Then $Q = (m_\text{initial} - m_\text{final})\,c^2 < 0$, and the decay would need energy that the particle does not have.
 ```

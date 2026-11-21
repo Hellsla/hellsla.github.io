@@ -179,6 +179,12 @@ An X-ray image is a shadow image. The radiation passes through the patient to a 
 
 In computed tomography (CT), an X-ray tube and detectors rotate around the patient. The scanner measures the attenuation from thousands of directions, and a computer calculates from them how much each small volume element attenuates. The result is a cross-sectional image in which organs lying behind one another are also visible. However, the dose from a CT scan is tens of times larger than the dose from a chest X-ray.
 
+```pysahdy
+A chest X-ray and a chest CT scan both use X-rays, yet the CT dose is tens of times larger. Why?
+---
+A CT scan measures the attenuation from thousands of directions, so the patient is exposed many times and the doses of the exposures add up. A single X-ray image is one exposure from one direction.
+```
+
 | Examination | Effective dose |
 | --- | --- |
 | dental X-ray | $< 0.01\,\text{mSv}$ |
@@ -192,11 +198,6 @@ Source: typical orders of magnitude from the publications of STUK (the Radiation
 
 <figure class="unit-photo"><img src="pics/fy8/pet-ct-scanner.webp" alt="A hospital scanning room: a pale green ring-shaped device with a patient table covered by a white sheet pointing towards its opening."><figcaption>A PET-CT scanner in Bron, France. Inside the ring are the detector ring for PET imaging and the X-ray tube and detectors for computed tomography. The patient slides through the ring on the table.</figcaption></figure>
 
-```pysahdy
-Why do the lungs appear dark in an X-ray image while bone appears light?
----
-The air in the lungs lets the radiation through almost unattenuated, so a lot of radiation reaches the detector. Bone attenuates radiation strongly, so little reaches behind it and bone appears light.
-```
 
 ### Radionuclide imaging: a tracer shows how an organ works
 
@@ -452,7 +453,7 @@ where $I_0$ is the intensity of the radiation entering the beam, $I$ is the inte
 ```pysahdy
 An X-ray beam passes through two half-value thicknesses of soft tissue and then one half-value thickness of bone. What fraction of the radiation gets through?
 ---
-The half-value thicknesses are added: $\left(\tfrac{1}{2}\right)^{2+1} = \tfrac{1}{8}$, so $12.5\,\%$ gets through.
+The numbers of half-value thicknesses add up: $\left(\tfrac{1}{2}\right)^{2+1} = \tfrac{1}{8}$, so $12.5\,\%$ gets through.
 ```
 
 ### Energy of an annihilation photon

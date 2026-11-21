@@ -164,6 +164,12 @@ Vain tietyt protonien ja neutronien yhdistelmät ovat pysyviä. Piirrä ytimet n
 
 **Beetahajoamisessa** ytimessä on liikaa tai liian vähän neutroneja protoneihin verrattuna. Beeta miinus -hajoamisessa ytimen neutroni muuttuu protoniksi. Ytimestä lähtee elektroni ja antineutriino. Elektroni ei ole ollut ytimessä valmiina, vaan se syntyy hajoamisessa. Beeta plus -hajoamisessa protoni muuttuu neutroniksi. Silloin ytimestä lähtee positroni eli elektronin antihiukkanen ja neutriino. Beetahajoamisen aiheuttaa heikko vuorovaikutus.
 
+```pysahdy
+Hiili-14 ${}^{14}_{6}\text{C}$ hajoaa beeta miinus -hajoamisella. Mikä on tyttärytimen massaluku ja järjestysluku? Mikä alkuaine se on?
+---
+Neutroni muuttuu protoniksi. Siksi $Z = 6 + 1 = 7$. Nukleonien määrä pysyy samana, joten $A = 14$. Tytärydin on typpi-14, ${}^{14}_{7}\text{N}$.
+```
+
 Beetahajoamisen kaltainen on **elektronisieppaus**. Ydin sieppaa elektronin atomin sisimmältä elektronikuorelta. Protoni muuttuu neutroniksi, ja ytimestä lähtee elektronineutriino ${}^{0}_{0}\nu_\text{e}$. Yleisesti
 ```kaavat
 elektroninsieppaus :: {}^{A}_{Z}\text{X} + {}^{0}_{-1}\text{e} \to {}^{A}_{Z-1}\text{Y} + {}^{0}_{0}\nu_\text{e}
@@ -261,12 +267,6 @@ Tässä X on emoydin, Y on tytärydin ja $Z$ on järjestysluku. Esimerkki on ${}
   <foreignObject x="391" y="225.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{viritystila } {}^{\ast}$</div></foreignObject>
 </svg>
 
-```pysahdy
-Beeta miinus -hajoamisessa ytimen neutroni muuttuu protoniksi. Miten järjestysluku ja massaluku muuttuvat?
----
-Protoneja on yksi enemmän, joten järjestysluku kasvaa yhdellä. Nukleonien määrä ei muutu, joten massaluku pysyy samana.
-```
-
 ### Ytimen energiatasot ja gammaspektri
 Ytimen energia on kvantittunut, aivan kuten atomin elektronien energia. Se tarkoittaa, että ytimellä on vain tiettyjä energiatasoja. Kun ydin siirtyy ylemmältä energiatasolta alemmalle, lähtevän gammafotonin energia on tasojen erotus. Sama tapahtuu vetyatomin siirtymässä luvussa *Vetyatomin energiatasot ja Bohrin malli*. Siksi ytimen gammaspektri on viivaspektri. Jokainen piikki kertoo yhden tasoparin erotuksen. Mittakaava on kuitenkin eri. Atomin siirtymissä energiat ovat elektronivoltteja. Ytimen tasojen erot ovat tyypillisesti kymmeniä kiloelektronivoltteja tai enemmän. Ne ovat kymmeniätuhansia tai satojatuhansia kertoja suurempia.
 
@@ -311,6 +311,12 @@ ja gammahajoaminen
 {}^{A}_{Z}\text{X}^{\ast} \to {}^{A}_{Z}\text{X} + \gamma
 ```
 Yhtälöissä X on hajoava emoydin ja Y syntyvä tytärydin. $A$ on massaluku ja $Z$ järjestysluku. $\bar{\nu}$ on antineutriino, $\nu$ neutriino ja $\gamma$ gammafotoni. Tyttärytimen alkuaineen näet jaksollisesta järjestelmästä sen järjestysluvun avulla.
+
+```pysahdy
+Uraani-238 ${}^{238}_{92}\text{U}$ hajoaa alfahajoamisella. Mikä on tyttärytimen massaluku ja järjestysluku?
+---
+Alfahiukkanen ${}^{4}_{2}\text{He}$ vie mukanaan neljä nukleonia ja kaksi protonia. Siksi $A = 238 - 4 = 234$ ja $Z = 92 - 2 = 90$.
+```
 
 <svg data-fig="shifts" viewBox="0 0 600 360" role="img" aria-label="Nuklidikartan ote, ruudukko: vaaka-akselilla on neutroniluku N ja pystyakselilla järjestysluku Z. Yksi ruutu on yksi yksikkö. Keskellä on emoydin. Alfahajoaminen siirtää ytimen kaksi ruutua alas ja kaksi vasemmalle (Z − 2, N − 2). Beeta miinus -hajoaminen siirtää sen yhden ruudun ylös ja yhden vasemmalle (Z + 1, N − 1). Beeta plus -hajoaminen siirtää sen yhden ruudun alas ja yhden oikealle (Z − 1, N + 1). Gammahajoamisessa ydin pysyy samassa ruudussa." style="max-width:100%;font-size:24px">
   <line x1="140" y1="40" x2="140" y2="316" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -358,12 +364,6 @@ E_\gamma &= E_\text{y} - E_\text{a} \\
 \end{aligned}
 ```
 Kaavoissa $E_\text{y}$ ja $E_\text{a}$ ovat ylemmän ja alemman tason energiat. $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on Planckin vakio ja $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$ on valon nopeus. Muunna kiloelektronivoltit jouleiksi sijoittamalla $1\,\text{keV} = 1000\,\text{eV}$ ja $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
-
-```pysahdy
-Uraani-238 ${}^{238}_{92}\text{U}$ hajoaa alfahajoamisella. Mikä on tyttärytimen massaluku ja järjestysluku?
----
-Alfahiukkanen ${}^{4}_{2}\text{He}$ vie mukanaan neljä nukleonia ja kaksi protonia. Siksi $A = 238 - 4 = 234$ ja $Z = 92 - 2 = 90$.
-```
 
 ## Esimerkki
 Cesium-137 ${}^{137}_{55}\text{Cs}$ hajoaa beeta miinus -hajoamisella. Tytärydin syntyy useimmiten viritystilaan. Viritystila purkautuu niin, että ydin lähettää gammafotonin, jonka energia on $661{,}7\,\text{keV}$ (NNDC NuDat 3). Mikä tytärydin on, ja kuinka suuri on gammafotonin aallonpituus?

@@ -114,9 +114,9 @@
 A radioactive nucleus decays and becomes another nucleus (chapter *The atomic nucleus and radioactive decay*), but the moment of decay cannot be predicted. Of two identical nuclei, one may decay at once and the other only after years. All that can be predicted is how likely a nucleus is to decay within a given time. This probability is the same for all nuclei of the same isotope, and in practice it does not depend on the temperature, the pressure or the chemical bonds of the surroundings. Nor does it depend on the age of the nucleus: a nucleus does not grow old. A nucleus that has survived without decaying for a long time is just as likely to decay during the next second as a newly formed one.
 
 ```pysahdy
-Nucleus A has just formed, and nucleus B has survived undecayed for an hour. Which is more likely to decay during the next second?
+A student says that a nucleus that has survived undecayed for a very long time is "overdue" and so more likely to decay soon, like overripe fruit. How would you answer?
 ---
-They are equally likely, because a nucleus does not age: the probability of decay is the same for all nuclei of the same isotope, whatever their age.
+The nucleus does not age and has no memory of how long it has survived. In each second it has the same small probability of decaying, just as a coin that has landed tails many times is not more likely to land heads next.
 ```
 
 ### A large group of nuclei behaves regularly

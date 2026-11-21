@@ -299,7 +299,7 @@ Energiat ovat lämmön mittakaavassa pieniä. Annos $1\,\text{Gy}$ lämmittäisi
 ```pysahdy
 Kaksi kudospalaa absorboi saman säteilyenergian, mutta toisen massa on kaksinkertainen. Kummalla on suurempi absorboitunut annos?
 ---
-Kevyemmällä, kaksinkertainen. Annos on energia jaettuna massalla, joten sama energia pienempään massaan vaurioittaa jokaista solua enemmän.
+Kevyemmällä, kaksinkertainen. Annos on energia jaettuna massalla, joten kevyemmän palan jokainen kilogramma saa kaksinkertaisen energian.
 ```
 
 ### Sama energia, eri haitta: painotetut annokset
@@ -361,9 +361,9 @@ Radonpitoisuus ilmoitetaan becquereleinä kuutiometrissä: $1\,\tfrac{\text{Bq}}
 <figure class="unit-photo"><img src="pics/fy8/dosimeter-japan.webp" alt="Ulkona metallijalustalla seisova laite, jonka yläosassa on punaiset numeronäytöt ja japaninkielistä tekstiä sekä päällä punainen ja vihreä merkkivalo; taustalla on kivipatsas ja puita."><figcaption>Ulkona oleva säteilyn valvontamittari Japanissa. Suuri näyttö kertoo ohikulkijoille ympäristön annosnopeuden, jotta jokainen voi arvioida, kuinka kauan alueella kannattaa oleskella.</figcaption></figure>
 
 ```pysahdy
-Radon itse hengitetään enimmäkseen ulos. Miksi se silti vahingoittaa keuhkoja?
+Radon-222:n puoliintumisaika on $3{,}82\,\text{d}$ ja yksi sisäänhengitys on keuhkoissa noin $5\,\text{s}$. Arvioi suuruusluokka osuudelle radonatomeista, jotka hajoavat yhden hengityksen aikana, ja päättele, mistä keuhkojen annos tulee.
 ---
-Sen lyhytikäiset hajoamistuotteet ovat kiinteitä, tarttuvat pölyhiukkasiin ja jäävät hengitysteihin, missä ne lähettävät alfasäteilyä suoraan keuhkojen soluihin.
+$3{,}82\,\text{d} \approx 3{,}3 \cdot 10^{5}\,\text{s}$, joten osuus on suuruusluokkaa $\tfrac{5\,\text{s}}{3{,}3 \cdot 10^{5}\,\text{s}} \approx 10^{-5}$. Lähes kaikki radon hengitetään ulos hajoamatta, joten keuhkojen annos tulee pääosin hengitysteihin jäävistä kiinteistä hajoamistuotteista.
 ```
 
 ### Suojautuminen: aika, etäisyys ja suoja

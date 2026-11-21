@@ -127,9 +127,9 @@ Fotonin energia on $E = hf$ (luku *Valosähköinen ilmiö ja fotoni*). Siksi rat
 </svg>
 
 ```pysahdy
-Voimakas lamppu valaisee vesilasia kirkkaasti. Silti heikko röntgensäde ionisoi veden. Miksi?
+Röntgenfotonin energia on $60\,\text{keV}$ ja se luovuttaa kaiken energiansa vedelle. Yhden molekyylin ionisointi vaatii $12{,}6\,\text{eV}$. Kuinka monta molekyyliä fotoni voi enintään ionisoida?
 ---
-Tärkeää on yhden fotonin energia $E = hf$, ei kokonaisteho. Näkyvän valon fotonin energia ($1{,}7$–$3{,}3\,\text{eV}$) ei riitä irrottamaan elektronia ($12{,}6\,\text{eV}$). Röntgenfotonin energia riittää.
+$n = \tfrac{6{,}0 \cdot 10^{4}\,\text{eV}}{12{,}6\,\text{eV}} \approx 4{,}8 \cdot 10^{3}$. Näkyvän valon fotoni ($1{,}7$–$3{,}3\,\text{eV}$) ei ionisoisi yhtäkään.
 ```
 
 ### Ionisaatio siirtää säteilyn energiaa aineeseen
@@ -266,9 +266,9 @@ Neutraalit **neutronit** ionisoivat samaan tapaan epäsuorasti. Ne törmäävät
 <figure class="unit-photo"><img src="pics/fy8/hfir-refueling.webp" alt="Syvä vesiallas ylhäältä. Pohjalla on reaktori, josta loistaa sinistä valoa."><figcaption>Tutkimusreaktori vesialtaan pohjalla. Sininen valo syntyy, kun varatut hiukkaset, enimmäkseen elektronit, kulkevat vedessä nopeammin kuin valo vedessä. Paksu vesi vaimentaa säteilyä. Siksi altaan reunalla voi olla turvallisesti.</figcaption></figure>
 
 ```pysahdy
-Alfa- ja beetahiukkasella on yhtä paljon liike-energiaa. Kumpi pysähtyy lyhyemmällä matkalla? Miksi?
+Alfa- ja beetahiukkasen liike-energia on kummallakin $5{,}49\,\text{MeV}$, ja ne pysähtyvät ilmaan. Oleta, että kummallekin $W \approx 34\,\text{eV}$. Vertaa niiden tuottamia ionipareja yhteensä ja yhden sentin matkalla.
 ---
-Alfahiukkanen. Se ionisoi tiheämmin eli irrottaa elektroneja lyhyellä matkalla paljon. Siksi se luovuttaa energiansa nopeammin.
+Kumpikin tuottaa $\tfrac{5{,}49 \cdot 10^{6}\,\text{eV}}{34\,\text{eV}} \approx 1{,}6 \cdot 10^{5}$ ioniparia, koska $n_\text{i} = E/W$ riippuu vain energiasta. Beeta kulkee metrejä ja alfa vain muutaman senttimetrin. Siksi beeta tuottaa senttimetrin matkalla paljon vähemmän.
 ```
 
 ### Läpäisykyky

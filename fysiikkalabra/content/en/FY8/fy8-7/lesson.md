@@ -84,9 +84,9 @@ In 1917 Albert Einstein concluded that there is also a third event. When a photo
 </svg>
 
 ```pysahdy
-A photon whose energy equals the difference between the levels hits an excited atom and makes it emit by stimulated emission. How many photons continue, and what do they have in common?
+In stimulated emission one photon becomes two. Is the incoming photon absorbed, and where does the energy of the new photon come from?
 ---
-There are two photons. They have the same energy, direction and phase, because the new photon copies the properties of the incoming photon.
+The incoming photon is not absorbed; it continues on its way. The energy of the new photon comes from the excited atom, which drops from the level $E_2$ to the level $E_1$.
 ```
 
 ### Population inversion
@@ -199,9 +199,9 @@ So the colour of a semiconductor quantum dot can be chosen by its size, even tho
 <figure class="unit-photo"><img src="pics/fy8/helium-neon-laser.webp" alt="A black box-shaped device labelled He-Ne LASER sits in a mount on a table; red light shines from its end, with a holder in front of it."><figcaption>A helium–neon laser in an optics set-up. An electric discharge pumps the gas in the tube, and the mirrors at the ends of the tube amplify the light into a narrow red beam with a wavelength of $633\,\text{nm}$.</figcaption></figure>
 
 ```pysahdy
-The diameter of a quantum dot is made smaller. Does the light the dot emits shift towards red or towards blue?
+A manufacturer wants quantum dots that emit red light instead of green. Should the dots be made larger or smaller?
 ---
-The energy gap grows as the dot gets smaller, so the photon energy grows and the wavelength gets shorter. The light shifts towards blue.
+Larger. Red light has a longer wavelength than green, so its photons have less energy. A smaller energy gap is needed, and the gap is smaller in a larger dot.
 ```
 
 ### Applications of quantum structures

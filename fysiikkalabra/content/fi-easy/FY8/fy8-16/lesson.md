@@ -252,9 +252,9 @@ Lähes kaikkien galaksien valossa on punasiirtymä, ja se on sitä suurempi, mit
 Punasiirtymä syntyy, kun avaruuden laajeneminen venyttää valon aallonpituutta. Valo matkaa galaksista meille, ja koko matkan ajan aallonpituus venyy. Lähellä olevien galaksien punasiirtymän voi ymmärtää myös äänen avulla. Kun äänen lähde loittonee, ääni kuuluu matalampana. Mitä nopeammin lähde loittonee, sitä pidempi on saapuvan aallon aallonpituus.
 
 ```pysahdy
-Galaksista X katsottuna melkein kaikki muut galaksit loittonevat. Onko X maailmankaikkeuden keskipiste?
+Meistä katsottuna galaksi B on samassa suunnassa kaksi kertaa niin kaukana kuin galaksi A, ja B loittonee kaksi kertaa niin nopeasti kuin A. Miten B liikkuu galaksista A katsottuna? Mitä tämä kertoo maailmankaikkeuden keskipisteestä?
 ---
-Ei ole. Avaruus itse laajenee. Siksi mistä tahansa galaksista katsottuna kaukaiset galaksit loittonevat samalla tavalla. Laajenemisella ei ole keskipistettä.
+Galaksista A katsottuna B on yhtä kaukana kuin A on meistä. Siksi B loittonee A:sta yhtä nopeasti kuin A loittonee meistä. A näkee saman lain kuin me, joten emme ole erityinen keskipiste.
 ```
 
 ### Alkuräjähdys
@@ -294,9 +294,9 @@ Ytimet eivät heti saaneet elektroneja ympärilleen. Fotonien energia oli niin s
 Silloin vapautunut valo on yhä matkalla. Laajeneminen on venyttänyt sen aallonpituudet noin $1100$-kertaisiksi. Nyt se on mikroaaltoja, joiden tyypillinen aallonpituus on noin $1{,}06\,\text{mm}$. Tämä on **kosminen taustasäteily**. Arno Penzias ja Robert Wilson löysivät sen vuonna 1965. Sitä tulee joka suunnasta lähes yhtä paljon. Sen spektri on samanlainen kuin kappaleen, jonka lämpötila on $2{,}725\,\text{K}$.
 
 ```pysahdy
-Noin $380\,000$ vuoden kohdalla maailmankaikkeus muuttui läpinäkyväksi. Mikä sen aiheutti?
+Miksi mikään kaukoputki ei voi nähdä valoa ajalta ennen noin $380\,000$ vuotta, vaikka maailmankaikkeus on sitä vanhempi?
 ---
-Lämpötila laski. Protonit ja elektronit pystyivät muodostamaan vetyatomeja. Vapaita elektroneja jäi vähän. Fotonit sirosivat harvoin ja pääsivät etenemään pitkiä matkoja.
+Sitä ennen vapaat elektronit sirottivat fotoneja koko ajan joka suuntaan. Valo ei päässyt suoraan meille. Kosminen taustasäteily on varhaisin valo, joka meille saapuu.
 ```
 
 ### Tähdet valmistavat raskaammat alkuaineet

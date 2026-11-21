@@ -163,9 +163,9 @@ Luvussa *Massavaje ja ytimen sidosenergia* ytimen sidosenergia laskettiin massav
 </svg>
 
 ```pysahdy
-Voiko rauta-56-ydin vapauttaa energiaa fissiolla tai fuusiolla?
+Miksi rauta-56-ytimen halkaiseminen tai kahden rauta-56-ytimen yhdistäminen ei vapauta energiaa?
 ---
-Ei voi. Rauta-56 on kuvaajan huipulla, joten sen nukleonit ovat jo mahdollisimman tiukasti sidottuja eikä reaktiolla pääse ylöspäin.
+Rauta-56 on kuvaajan huipulla, joten sen halkaisemisessa tai toisen rautaytimen kanssa yhdistämisessä syntyvät tuotteet ovat kuvaajalla alempana: niiden nukleonit ovat heikommin sidottuja. Reaktio vaatii energiaa eikä vapauta sitä.
 ```
 
 ### Fissio

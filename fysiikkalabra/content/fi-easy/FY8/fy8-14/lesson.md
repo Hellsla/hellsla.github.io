@@ -185,6 +185,12 @@ Luun taakse osuu siksi vähemmän säteilyä, ja luu näkyy kuvassa vaaleana. Ke
 
 Tietokonetomografiassa (TT) röntgenputki ja ilmaisimet kiertävät potilaan ympäri. Laite mittaa vaimenemisen tuhansista suunnista. Tietokone laskee mittauksista, kuinka paljon kukin pieni tilavuusalkio vaimentaa. Tuloksena on poikkileikkauskuva, jossa näkyvät myös toistensa takana olevat elimet. TT-tutkimuksen annos on kuitenkin kymmeniä kertoja suurempi kuin keuhkojen röntgenkuvan annos.
 
+```pysahdy
+Sekä keuhkojen röntgenkuvaus että keuhkojen TT käyttävät röntgensäteilyä. TT:n annos on kuitenkin kymmeniä kertoja suurempi. Miksi?
+---
+TT mittaa vaimenemisen tuhansista suunnista. Potilas altistuu siis monta kertaa, ja annokset summautuvat. Yksi röntgenkuva on vain yksi altistus yhdestä suunnasta.
+```
+
 | Tutkimus | Efektiivinen annos |
 | --- | --- |
 | hampaan röntgenkuva | $< 0{,}01\,\text{mSv}$ |
@@ -198,11 +204,6 @@ Lähde: tyypilliset suuruusluokat STUKin terveydenhuollon säteilyaltistusta kos
 
 <figure class="unit-photo"><img src="pics/fy8/pet-ct-scanner.webp" alt="Sairaalan huone. Siinä on iso rengas ja potilaspöytä."><figcaption>PET-TT-laite. Renkaan sisällä on ilmaisimia, jotka havaitsevat fotoneja. Siellä on myös röntgenputki. Potilas liikkuu pöydän mukana renkaan läpi.</figcaption></figure>
 
-```pysahdy
-Miksi keuhkot näkyvät röntgenkuvassa tummina mutta luu vaaleana?
----
-Keuhkojen ilma päästää säteilyn läpi melkein sellaisenaan. Ilmaisimeen osuu siksi paljon säteilyä. Luu vaimentaa säteilyä paljon. Sen taakse osuu vähän säteilyä, joten luu näkyy vaaleana.
-```
 
 ### Isotooppikuvaus: merkkiaine näyttää elimen toiminnan
 
@@ -299,7 +300,7 @@ Fluori-18:n puoliintumisaika on lyhyt. Siksi se valmistetaan hiukkaskiihdyttimel
 ```pysahdy
 Positroni ja elektroni annihiloituvat melkein levossa. Miksi syntyy kaksi fotonia vastakkaisiin suuntiin eikä yksi fotoni?
 ---
-Hiukkasten yhteinen liikemäärä on alussa melkein nolla. Kaksi vastakkaisiin suuntiin lähtevää fotonia pitää liikemäärän melkein nollana. Yksi fotoni ei pitäisi.
+Hiukkasten yhteinen liikemäärä on alussa melkein nolla. Kaksi vastakkaisiin suuntiin lähtevää fotonia pitää liikemäärän melkein nollana. Yksi fotoni jäisi liikkeelle yhteen suuntaan, mutta alussa liikemäärä oli melkein nolla.
 ```
 
 ### Sädehoito: suuri annos kasvaimeen, pieni terveelle kudokselle
@@ -482,7 +483,7 @@ Röntgenkuvan kontrasti saadaan vertaamalla kahta sädettä. Toinen säde kulkee
 ```pysahdy
 Röntgensäde kulkee pehmytkudoksen läpi kahden puoliintumispaksuuden matkan. Sen jälkeen se kulkee luun läpi yhden puoliintumispaksuuden matkan. Kuinka suuri osa säteilystä pääsee läpi?
 ---
-Puoliintumispaksuudet lasketaan yhteen: $\left(\tfrac{1}{2}\right)^{2+1} = \tfrac{1}{8}$. Läpi pääsee siis $12{,}5\,\%$.
+Puoliintumispaksuuksien lukumäärät lasketaan yhteen: $\left(\tfrac{1}{2}\right)^{2+1} = \tfrac{1}{8}$. Läpi pääsee siis $12{,}5\,\%$.
 ```
 
 ### Annihilaatiofotonin energia

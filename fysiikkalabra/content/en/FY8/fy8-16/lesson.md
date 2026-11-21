@@ -252,9 +252,9 @@ The light of almost all galaxies is redshifted, and the more so the farther away
 Redshift arises when the expansion of space stretches the wavelength of light as it travels from the galaxy to us. For nearby galaxies, the redshift can be interpreted like the sound of a receding source: the faster the source recedes, the longer the wavelength that arrives.
 
 ```pysahdy
-Seen from galaxy X, almost all other galaxies are moving away. Is X the centre of the universe?
+Seen from us, galaxy B is twice as far away as galaxy A in the same direction, and B recedes twice as fast as A. How does B move as seen from A, and what does this tell about the centre of the universe?
 ---
-No. Space itself expands, so from any galaxy the distant galaxies recede in the same way. The expansion has no centre.
+From A, galaxy B is as far away as A is from us, so B recedes from A as fast as A recedes from us. A sees the same law as we do, so we are not a special centre.
 ```
 
 ### The Big Bang
@@ -294,9 +294,9 @@ The nuclei did not get electrons around them right away. The energy of the photo
 The light released then is still on its way. The expansion has stretched its wavelengths by a factor of about $1100$, so now it is microwaves with a typical wavelength of about $1.06\,\text{mm}$. This is the **cosmic background radiation**. Arno Penzias and Robert Wilson discovered it in 1965. It arrives almost evenly from every direction, and its spectrum corresponds to a body at a temperature of $2.725\,\text{K}$.
 
 ```pysahdy
-About $380\,000$ years after the beginning, the universe became transparent. What caused this change?
+Why can no telescope see light from the time before about $380\,000$ years, although the universe is older than that?
 ---
-The temperature dropped so that protons and electrons could form hydrogen atoms. Few free electrons remained, so photons scattered rarely and could travel long distances.
+Before that, free electrons kept scattering the photons in every direction, so light could not travel straight to us. The cosmic background radiation is the earliest light that reaches us.
 ```
 
 ### Stars make the heavier elements

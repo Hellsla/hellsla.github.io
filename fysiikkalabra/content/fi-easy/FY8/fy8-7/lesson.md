@@ -84,9 +84,9 @@ Albert Einstein päätteli vuonna 1917, että on olemassa myös kolmas tapahtuma
 </svg>
 
 ```pysahdy
-Fotoni, jonka energia on tasojen erotus, osuu viritettyyn atomiin. Atomi lähettää stimuloidun emission. Montako fotonia jatkaa matkaa? Mitä niillä on yhteistä?
+Stimuloidussa emissiossa yhdestä fotonista tulee kaksi. Absorboituuko saapuva fotoni? Mistä uuden fotonin energia tulee?
 ---
-Fotoneja on kaksi. Niillä on sama energia, sama kulkusuunta ja sama vaihe. Uusi fotoni kopioi saapuvan fotonin ominaisuudet.
+Saapuva fotoni ei absorboidu. Se jatkaa matkaansa. Uuden fotonin energia tulee viritetyltä atomilta, joka siirtyy tasolta $E_2$ tasolle $E_1$.
 ```
 
 ### Populaatioinversio
@@ -199,9 +199,9 @@ Puolijohdekvanttipisteen väri voidaan siis valita sen koolla, vaikka aine on sa
 <figure class="unit-photo"><img src="pics/fy8/helium-neon-laser.webp" alt="Musta laite, jossa lukee He-Ne LASER. Sen päässä loistaa punainen valo."><figcaption>Helium-neonlaser. Sähköpurkaus antaa kaasun atomeille energiaa. Putken päissä on peilit, jotka vahvistavat valoa. Laser tekee kapean punaisen säteen, jonka aallonpituus on $633\,\text{nm}$.</figcaption></figure>
 
 ```pysahdy
-Kvanttipisteen halkaisija pienenee. Siirtyykö pisteen lähettämä valo kohti punaista vai sinistä?
+Valmistaja haluaa kvanttipisteitä, jotka lähettävät vihreän sijasta punaista valoa. Pitääkö pisteet tehdä suuremmiksi vai pienemmiksi?
 ---
-Pisteen pienentyessä energia-aukko kasvaa. Silloin fotonin energia kasvaa ja aallonpituus lyhenee. Valo siirtyy kohti sinistä.
+Suuremmiksi. Punaisen valon aallonpituus on pidempi kuin vihreän. Silloin fotonin energia on pienempi. Tarvitaan pienempi energia-aukko, ja suuremmassa pisteessä aukko on pienempi.
 ```
 
 ### Kvanttirakenteiden sovelluksia

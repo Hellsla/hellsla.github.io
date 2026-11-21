@@ -232,9 +232,9 @@ Vapaata kvarkkia ei ole koskaan havaittu. Vahva vuorovaikutus pitää kvarkit ha
 </svg>
 
 ```pysahdy
-Fyysikko yrittää repiä yhden kvarkin irti protonista. Saako hän vapaan kvarkin?
+Törmäyksen energia iskee protonista irti kvarkin, jonka varaus on $+\tfrac{2}{3}e$. Voiko ilmaisin koskaan havaita hiukkasta, jolla on tämä varaus?
 ---
-Ei saa. Irrotukseen käytetty energia tekee uusia kvarkki–antikvarkki-pareja. Siksi syntyy hadroneja eikä yksittäisiä kvarkkeja.
+Ei voi. Kvarkki ei jää yksin. Energia tekee uusia kvarkki–antikvarkki-pareja, ja kvarkit päätyvät hadroneihin. Hadronin varaus on aina alkeisvarauksen $e$ kokonaislukukerrannainen.
 ```
 
 ### Antihiukkaset ja annihilaatio
@@ -324,9 +324,9 @@ Sähkömagneettisen vuorovaikutuksen ja gravitaation kantama on rajaton. Kantama
 <figure class="unit-photo"><img src="pics/fy8/cms-detector.webp" alt="Iso ilmaisin, jossa on paljon johtoja ja metallia. Edessä on ihmisiä oranssit kypärät päässä."><figcaption>CMS-ilmaisin CERNissä. Ilmaisin mittaa hiukkasia, joita syntyy törmäyksissä. Ihmiset näyttävät, kuinka iso laite on.</figcaption></figure>
 
 ```pysahdy
-Kahden protonin välillä on sähköinen hylkimisvoima ja gravitaatiovoima. Kumpi on suurempi?
+Kahden protonin välinen sähköinen voima on noin $10^{36}$ kertaa suurempi kuin gravitaatiovoima. Miksi planeettojen ja tähtien liikettä silti hallitsee gravitaatio?
 ---
-Sähköinen hylkimisvoima on suurempi, noin $10^{36}$ kertaa. Gravitaatio on perusvuorovaikutuksista heikoin.
+Suuret kappaleet ovat melkein sähköisesti neutraaleja. Positiiviset ja negatiiviset varaukset kumoavat toisensa. Massat vain summautuvat, joten gravitaatio jää jäljelle.
 ```
 
 ### Higgsin bosoni ja CERN
@@ -383,7 +383,7 @@ missä $m_\text{alku}$ on hajoavan hiukkasen massa ja $m_\text{loppu}$ on syntyv
 Protoni on kevyin baryoni. Standardimallin tavallisissa matalaenergiaisissa reaktioissa baryoniluku säilyy. Siksi protoni ei voi hajota kevyemmiksi hiukkasiksi näiden reaktioiden kautta. Hajoamistuotteissa pitäisi olla baryoni, eikä protonia kevyempää baryonia ole. Joissakin standardimallia laajentavissa teorioissa protonin hajoaminen voisi kuitenkin olla mahdollista. Siksi sitä etsitään kokeissa. Protonin hajoamista ei ole havaittu. Esimerkiksi hajoamiselle $p \to e^+ + \pi^0$ kokeet antavat eliniän alarajaksi yli $10^{34}$ vuotta.
 
 ```pysahdy
-Hiukkanen voisi hajota kahdeksi hiukkaseksi. Syntyvien hiukkasten yhteinen massa on suurempi kuin hajoavan hiukkasen massa. Voiko hajoaminen tapahtua?
+Vapaa hiukkanen voisi hajota kahdeksi hiukkaseksi. Syntyvien hiukkasten yhteinen massa on suurempi kuin hajoavan hiukkasen massa. Voiko hajoaminen tapahtua?
 ---
 Ei voi. Silloin $Q = (m_\text{alku} - m_\text{loppu})\,c^2 < 0$. Hajoaminen tarvitsisi energiaa, jota hiukkasella ei ole.
 ```

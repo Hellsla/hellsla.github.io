@@ -160,9 +160,9 @@ The mass defect is not matter that has vanished. According to Einstein's theory 
 </svg>
 
 ```pysahdy
-A nucleus is broken up into separate protons and neutrons. Is energy needed or released, and how does the mass of the system change?
+Splitting a deuteron into a proton and a neutron takes $2.2\,\text{MeV}$. Which has the greater mass, the deuteron or the separate proton and neutron together, and by how much in energy terms?
 ---
-Energy equal to the binding energy $E_\text{B}$ is needed. The energy increases, so the mass also increases by $\Delta m = \tfrac{E_\text{B}}{c^2}$.
+The separate particles. The supplied $2.2\,\text{MeV}$ is added to the system, so the mass grows by $\tfrac{2.2\,\text{MeV}}{c^2}$: a bound deuteron is lighter than its free nucleons.
 ```
 
 ### Why a change of mass is not noticed in everyday life
@@ -308,9 +308,9 @@ where $A$ is the mass number, that is, the number of nucleons. The graph shows i
 The graph shows when a nuclear reaction releases energy: when the nuclei formed are more tightly bound than the original ones, the binding energy increases and the difference is released. The joining of light nuclei, **fusion**, and the splitting of a heavy nucleus, **fission**, move nucleons towards the peak of the graph. They are discussed in the chapter *Fission, fusion and nuclear power*.
 
 ```pysahdy
-The nuclei formed in a nuclear reaction have a larger binding energy per nucleon than the starting nuclei. Is energy released or needed in the reaction?
+In a nuclear reaction there are equally many nucleons on both sides. The total binding energy of the starting nuclei is $1800\,\text{MeV}$ and that of the products $1805\,\text{MeV}$. Is energy released or needed, how much, and how does the mass change?
 ---
-Energy is released: in the products the nucleons are bound more tightly, so the mass decreases and $Q = (m_\text{initial} - m_\text{final})\,c^2 > 0$.
+Energy is released: the products are bound more tightly, so the difference $1805\,\text{MeV} - 1800\,\text{MeV} = 5\,\text{MeV}$ leaves the system and the total mass decreases by $\tfrac{5\,\text{MeV}}{c^2}$.
 ```
 
 ### Reaction energy

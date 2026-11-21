@@ -160,9 +160,9 @@ Massavaje ei ole kadonnutta ainetta. Einsteinin suhteellisuusteorian mukaan mass
 </svg>
 
 ```pysahdy
-Ydin hajotetaan erillisiksi protoneiksi ja neutroneiksi. Tarvitaanko siihen energiaa vai vapautuuko energiaa? Mitä massalle tapahtuu?
+Deuteroni jaetaan protoniksi ja neutroniksi, ja se vaatii $2{,}2\,\text{MeV}$. Kummalla on suurempi massa: deuteronilla vai erillisillä protonilla ja neutronilla yhteensä? Kuinka paljon massa muuttuu energiana ilmaistuna?
 ---
-Energiaa tarvitaan sidosenergian $E_\text{B}$ verran. Systeemin energia kasvaa, joten myös massa kasvaa: $\Delta m = \tfrac{E_\text{B}}{c^2}$.
+Erillisillä hiukkasilla. Annettu $2{,}2\,\text{MeV}$ lisätään systeemiin, joten massa kasvaa määrällä $\tfrac{2{,}2\,\text{MeV}}{c^2}$. Sidottu deuteroni on kevyempi kuin vapaat nukleoninsa.
 ```
 
 ### Miksi massan muutosta ei huomaa arjessa
@@ -308,9 +308,9 @@ Tässä $A$ on massaluku eli nukleonien määrä. Kuvaajassa suure on laskettu a
 Kuvaajasta näkee, milloin ydinreaktio vapauttaa energiaa. Jos syntyvät ytimet ovat tiiviimmin sidottuja kuin alkuperäiset, sidosenergia kasvaa ja ero vapautuu. Kevyiden ytimien yhtyminen eli **fuusio** siirtää nukleoneja kohti kuvaajan huippua. Samoin tekee raskaan ytimen halkeaminen eli **fissio**. Niitä tarkastellaan luvussa *Fissio, fuusio ja ydinvoima*.
 
 ```pysahdy
-Ydinreaktiossa syntyvien ytimien sidosenergia nukleonia kohti on suurempi kuin lähtöytimien. Vapautuuko reaktiossa energiaa vai tarvitaanko sitä?
+Ydinreaktiossa nukleoneja on yhtä monta molemmin puolin. Lähtöytimien sidosenergia on yhteensä $1800\,\text{MeV}$ ja tuotteiden $1805\,\text{MeV}$. Vapautuuko energiaa vai tarvitaanko sitä? Kuinka paljon? Miten massa muuttuu?
 ---
-Energiaa vapautuu. Tuotteissa nukleonit ovat tiukemmin sidottuja, joten massa pienenee ja $Q = (m_\text{alku} - m_\text{loppu})\,c^2 > 0$.
+Energiaa vapautuu. Tuotteet ovat tiukemmin sidottuja, joten erotus $1805\,\text{MeV} - 1800\,\text{MeV} = 5\,\text{MeV}$ poistuu systeemistä. Kokonaismassa pienenee määrällä $\tfrac{5\,\text{MeV}}{c^2}$.
 ```
 
 ### Reaktioenergia

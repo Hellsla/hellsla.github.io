@@ -179,6 +179,12 @@ Röntgenkuva on varjokuva. Säteily kulkee potilaan läpi ilmaisimeen, ja jokain
 
 Tietokonetomografiassa (TT) röntgenputki ja ilmaisimet kiertävät potilaan ympäri. Laite mittaa vaimenemisen tuhansista suunnista, ja tietokone laskee niistä, kuinka paljon kukin pieni tilavuusalkio vaimentaa. Tuloksena on poikkileikkauskuva, jossa näkyvät myös toistensa takana olevat elimet. TT-tutkimuksen annos on kuitenkin kymmeniä kertoja suurempi kuin keuhkojen röntgenkuvan annos.
 
+```pysahdy
+Sekä keuhkojen röntgenkuvaus että keuhkojen TT käyttävät röntgensäteilyä, mutta TT:n annos on kymmeniä kertoja suurempi. Miksi?
+---
+TT mittaa vaimenemisen tuhansista suunnista, joten potilas altistuu säteilylle monta kertaa ja altistusten annokset summautuvat. Yksittäinen röntgenkuva on yksi altistus yhdestä suunnasta.
+```
+
 | Tutkimus | Efektiivinen annos |
 | --- | --- |
 | hampaan röntgenkuva | $< 0{,}01\,\text{mSv}$ |
@@ -192,11 +198,6 @@ Lähde: tyypilliset suuruusluokat STUKin terveydenhuollon säteilyaltistusta kos
 
 <figure class="unit-photo"><img src="pics/fy8/pet-ct-scanner.webp" alt="Sairaalan kuvaushuone: vaaleanvihreä rengasmainen laite, jonka aukkoa kohti osoittaa valkoisella liinalla peitetty potilaspöytä."><figcaption>PET-TT-laite Bronissa Ranskassa. Renkaan sisällä on PET-kuvauksen ilmaisinrengas ja tietokonetomografian röntgenputki ilmaisimineen. Potilas liukuu pöydän mukana renkaan läpi.</figcaption></figure>
 
-```pysahdy
-Miksi keuhkot näkyvät röntgenkuvassa tummina mutta luu vaaleana?
----
-Keuhkojen ilma päästää säteilyn läpi lähes vaimentamatta, joten ilmaisimeen osuu paljon säteilyä. Luu vaimentaa säteilyä paljon, joten sen taakse osuu vähän ja luu näkyy vaaleana.
-```
 
 ### Isotooppikuvaus: merkkiaine näyttää elimen toiminnan
 
@@ -452,7 +453,7 @@ missä $I_0$ on säteeseen tulevan säteilyn intensiteetti, $I$ kerrosten läpi 
 ```pysahdy
 Röntgensäde kulkee pehmytkudosta kaksi puoliintumispaksuutta ja sen jälkeen luuta yhden puoliintumispaksuuden. Kuinka suuri osuus säteilystä pääsee läpi?
 ---
-Puoliintumispaksuudet lasketaan yhteen: $\left(\tfrac{1}{2}\right)^{2+1} = \tfrac{1}{8}$, eli $12{,}5\,\%$ pääsee läpi.
+Puoliintumispaksuuksien lukumäärät lasketaan yhteen: $\left(\tfrac{1}{2}\right)^{2+1} = \tfrac{1}{8}$, eli $12{,}5\,\%$ pääsee läpi.
 ```
 
 ### Annihilaatiofotonin energia

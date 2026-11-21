@@ -974,9 +974,9 @@ Kun kaksoisrakokoe tehdään niin heikolla valolla, että laitteessa on keskimä
 </svg>
 
 ```pysahdy
-Heikolla valolla tehdyssä kaksoisrakokokeessa ensimmäiset $10$ fotonia ovat osuneet varjostimeen. Näkyykö siellä jo selvä raitakuvio?
+Heikolla valolla tehdyssä kaksoisrakokokeessa raidat ovat alkaneet juuri erottua $200$ osuman jälkeen. Voitko nyt ennustaa, mihin osuma numero $201$ tulee, ja miten kuva muuttuu, kun osumia on kertynyt tuhansia?
 ---
-Ei. Yksittäiset osumat näyttävät satunnaisilta, eikä yhden osuman paikkaa voi ennustaa. Raitakuvio erottuu vasta, kun osumia on kertynyt tuhansia.
+Et voi. Aaltomalli antaa vain todennäköisyyden osumalle kussakin kohdassa: suuri kirkkailla raidoilla ja pieni tummilla. Osumien lisääminen tekee raidoista selvemmät, mutta yksittäinen osuma pysyy ennustamattomana.
 ```
 
 ### Aalto kertoo todennäköisyyden

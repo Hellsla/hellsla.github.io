@@ -163,9 +163,9 @@ In the chapter *Mass defect and nuclear binding energy*, the binding energy of a
 </svg>
 
 ```pysahdy
-Can an iron-56 nucleus release energy by fission or by fusion?
+Why does neither splitting an iron-56 nucleus nor joining two iron-56 nuclei release energy?
 ---
-No. Iron-56 is at the peak of the graph, so its nucleons are already as tightly bound as possible and no reaction can move upward.
+Iron-56 is at the peak of the graph, so the products of splitting it or of joining it with another iron nucleus lie lower: their nucleons are bound less tightly. Such a reaction needs energy instead of releasing it.
 ```
 
 ### Fission

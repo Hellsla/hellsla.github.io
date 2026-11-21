@@ -114,9 +114,9 @@
 Radioaktiivinen ydin hajoaa ja muuttuu toiseksi ytimeksi (luku *Atomiydin ja radioaktiivinen hajoaminen*), mutta hajoamishetkeä ei voi ennustaa. Kahdesta samanlaisesta ytimestä toinen voi hajota heti ja toinen vasta vuosien päästä. Ennustaa voi vain sen, kuinka todennäköisesti ydin hajoaa tietyn ajan kuluessa. Tämä todennäköisyys on sama kaikille saman isotoopin ytimille, eikä se käytännössä riipu ympäristön lämpötilasta, paineesta tai kemiallisista sidoksista. Se ei riipu myöskään ytimen iästä: ydin ei vanhene. Pitkään hajoamatta säilynyt ydin hajoaa seuraavan sekunnin aikana yhtä todennäköisesti kuin juuri syntynyt.
 
 ```pysahdy
-Ydin A on juuri syntynyt, ja ydin B on säilynyt hajoamatta tunnin. Kumpi hajoaa todennäköisemmin seuraavan sekunnin aikana?
+Opiskelija väittää, että ydin, joka on säilynyt hajoamatta hyvin pitkään, on ”myöhässä” ja hajoaa siksi todennäköisemmin pian, kuten ylikypsä hedelmä. Miten vastaisit?
 ---
-Kummallakin on sama todennäköisyys, koska ydin ei vanhene: hajoamistodennäköisyys on sama kaikille saman isotoopin ytimille iästä riippumatta.
+Ydin ei vanhene eikä muista, kuinka kauan se on säilynyt. Jokaisena sekuntina sillä on sama pieni hajoamistodennäköisyys, aivan kuten kolikko, joka on tullut monta kertaa klaavaksi, ei ole seuraavalla heitolla todennäköisemmin kruuna.
 ```
 
 ### Suuri joukko ytimiä käyttäytyy säännöllisesti

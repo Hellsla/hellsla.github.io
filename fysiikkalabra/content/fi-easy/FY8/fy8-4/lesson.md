@@ -976,9 +976,9 @@ Tehdään kaksoisrakokoe niin heikolla valolla, että laitteessa on keskimääri
 </svg>
 
 ```pysahdy
-Heikolla valolla tehdyssä kaksoisrakokokeessa ensimmäiset $10$ fotonia ovat osuneet varjostimeen. Näkyykö siellä jo selvä raitakuvio?
+Heikolla valolla tehdyssä kaksoisrakokokeessa raidat alkavat juuri erottua $200$ osuman jälkeen. Voitko nyt ennustaa, mihin osuma numero $201$ tulee? Miten kuva muuttuu, kun osumia on tuhansia?
 ---
-Ei. Yksittäiset osumat näyttävät sattumanvaraisilta, eikä yhden osuman paikkaa voi ennustaa. Raitakuvio alkaa näkyä vasta, kun osumia on tuhansia.
+Et voi. Aaltomalli kertoo vain todennäköisyyden: se on suuri kirkkailla raidoilla ja pieni tummilla. Kun osumia kertyy lisää, raidat selkenevät. Yksittäinen osuma pysyy silti ennustamattomana.
 ```
 
 ### Aalto kertoo todennäköisyyden
@@ -1038,7 +1038,7 @@ Kaavassa $p$ on fotonin liikemäärä ($\text{kg}\cdot\text{m/s}$), $E = hf = \t
 ```pysahdy
 Fotonin A aallonpituus on puolet fotonin B aallonpituudesta. Kumman liikemäärä on suurempi? Kuinka monta kertaa suurempi?
 ---
-Fotonin A liikemäärä, kaksi kertaa suurempi. Kaavassa $p = \tfrac{h}{\lambda}$ aallonpituus on jakajana. Kun aallonpituus puolittuu, liikemäärä kaksinkertaistuu.
+Fotonin A liikemäärä on kaksinkertainen. Kaavassa $p = \tfrac{h}{\lambda}$ aallonpituus on jakajana. Kun aallonpituus puolittuu, liikemäärä kaksinkertaistuu.
 ```
 
 ### Comptonin ilmiö
@@ -1091,7 +1091,7 @@ Kaavassa $N$ on fotonien lukumäärä, $t$ on aika ($\text{s}$), $P$ on teho ($\
 ```pysahdy
 Punaisen ja sinisen laserin teho on sama. Kumpi lähettää sekunnissa enemmän fotoneja?
 ---
-Punainen. Kaavassa $\tfrac{N}{t} = \tfrac{P}{hf}$ yhden fotonin energia $hf$ on jakajana. Punaisen fotonin energia on pienempi, joten samalla teholla fotoneja tulee enemmän.
+Punainen. Kaavassa $\tfrac{N}{t} = \tfrac{P}{hf}$ yhden fotonin energia $hf$ on jakajana. Punaisen valon aallonpituus on pidempi kuin sinisen, joten punaisen fotonin energia on pienempi, joten samalla teholla fotoneja tulee enemmän.
 ```
 
 ## Esimerkki

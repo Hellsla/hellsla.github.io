@@ -974,9 +974,9 @@ When the double-slit experiment is done with light so weak that there is on aver
 </svg>
 
 ```pysahdy
-In a double-slit experiment with weak light, the first $10$ photons have hit the screen. Is a clear pattern of fringes already visible?
+In a double-slit experiment with weak light, the fringes have just begun to stand out after $200$ hits. Can you now predict where hit number $201$ will land, and how does the picture change when thousands of hits have accumulated?
 ---
-No. The individual hits look random, and the position of a single hit cannot be predicted. The fringe pattern emerges only after thousands of hits have accumulated.
+No. The wave model gives only the probability of a hit at each place: large at the bright fringes and small in the dark ones. More hits make the fringes clearer, but each single hit remains unpredictable.
 ```
 
 ### The wave gives the probability

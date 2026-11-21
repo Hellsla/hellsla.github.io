@@ -299,7 +299,7 @@ The energies are small on the scale of heat. A dose of $1\,\text{Gy}$ would warm
 ```pysahdy
 Two pieces of tissue absorb the same radiation energy, but one has twice the mass. Which one has the greater absorbed dose?
 ---
-The lighter one, twice as great. The dose is energy divided by mass, so the same energy in a smaller mass damages each cell more.
+The lighter one, twice as great. The dose is energy divided by mass, so every kilogram of the lighter piece receives twice the energy.
 ```
 
 ### The same energy, different harm: weighted doses
@@ -361,9 +361,9 @@ The radon concentration is given in becquerels per cubic metre: $1\,\tfrac{\text
 <figure class="unit-photo"><img src="pics/fy8/dosimeter-japan.webp" alt="A device on a metal stand outdoors, with red numerical displays and Japanese text at the top and a red and a green indicator light; a stone statue and trees in the background."><figcaption>An outdoor radiation monitor in Japan. The large display shows passers-by the ambient dose rate, so that anyone can judge how long it is sensible to stay in the area.</figcaption></figure>
 
 ```pysahdy
-Radon is mostly breathed out again. Why does it still harm the lungs?
+Radon-222 has a half-life of $3.82\,\text{d}$ and a breath stays in the lungs for about $5\,\text{s}$. Estimate the order of magnitude of the fraction of radon atoms that decay during one breath, and say what this tells about the source of the lung dose.
 ---
-Its short-lived decay products are solids that stick to dust particles and remain in the airways, where they emit alpha radiation straight into the lung cells.
+$3.82\,\text{d} \approx 3.3 \cdot 10^{5}\,\text{s}$, so the fraction is of the order of $\tfrac{5\,\text{s}}{3.3 \cdot 10^{5}\,\text{s}} \approx 10^{-5}$. Almost all radon is breathed out undecayed, so the lung dose comes mainly from the solid decay products that stay in the airways.
 ```
 
 ### Protection: time, distance and shielding

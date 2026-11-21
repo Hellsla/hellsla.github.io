@@ -164,6 +164,12 @@ In **alpha decay**, an alpha particle, a helium nucleus ${}^{4}_{2}\text{He}$ wi
 
 In **beta decay**, the nucleus has too many or too few neutrons compared with its protons. In beta minus decay, a neutron of the nucleus changes into a proton, and an electron and an antineutrino leave the nucleus. The electron was not in the nucleus beforehand; it is created in the decay. In beta plus decay, a proton changes into a neutron, and a positron, the antiparticle of the electron, and a neutrino leave the nucleus. Beta decay is caused by the weak interaction.
 
+```pysahdy
+Carbon-14 ${}^{14}_{6}\text{C}$ undergoes beta minus decay. What are the mass number and atomic number of the daughter nucleus, and which element is it?
+---
+A neutron turns into a proton, so $Z = 6 + 1 = 7$, and the number of nucleons stays the same, $A = 14$. The daughter nucleus is nitrogen-14, ${}^{14}_{7}\text{N}$.
+```
+
 Related to beta decay is **electron capture**: the nucleus captures an electron from the innermost electron shell of the atom, a proton changes into a neutron, and an electron neutrino ${}^{0}_{0}\nu_\text{e}$ leaves the nucleus. In general
 ```kaavat
 electron capture :: {}^{A}_{Z}\text{X} + {}^{0}_{-1}\text{e} \to {}^{A}_{Z-1}\text{Y} + {}^{0}_{0}\nu_\text{e}
@@ -261,12 +267,6 @@ In **gamma decay**, a nucleus in an excited state, marked with an asterisk ${}^{
   <foreignObject x="385" y="225.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{excited state } {}^{\ast}$</div></foreignObject>
 </svg>
 
-```pysahdy
-In beta minus decay a neutron of the nucleus turns into a proton. How do the atomic number and the mass number of the nucleus change?
----
-There is one more proton, so the atomic number increases by one. The number of nucleons does not change, so the mass number stays the same.
-```
-
 ### Energy levels of the nucleus and the gamma spectrum
 The energy of a nucleus is quantised like the energy of the electrons of an atom. When a nucleus moves from a higher energy level to a lower one, the energy of the gamma photon that leaves is the difference between the levels, just as in a transition of the hydrogen atom in the chapter *Energy levels of the hydrogen atom and the Bohr model*. This is why the gamma spectrum of a nucleus is a line spectrum: each peak tells the difference of one pair of levels. The scale is different. Transitions of an atom are of the order of electronvolts, while the differences between the levels of a nucleus are typically tens of kiloelectronvolts or more, so tens of thousands to hundreds of thousands of times larger.
 
@@ -311,6 +311,12 @@ and gamma decay
 {}^{A}_{Z}\text{X}^{\ast} \to {}^{A}_{Z}\text{X} + \gamma
 ```
 where X is the decaying parent nucleus, Y the daughter nucleus that is formed, $A$ the mass number, $Z$ the atomic number, $\bar{\nu}$ the antineutrino, $\nu$ the neutrino and $\gamma$ the gamma photon. The element of the daughter nucleus is read from the periodic table using its atomic number.
+
+```pysahdy
+Uranium-238 ${}^{238}_{92}\text{U}$ undergoes alpha decay. What are the mass number and atomic number of the daughter nucleus?
+---
+The alpha particle ${}^{4}_{2}\text{He}$ carries away four nucleons and two protons: $A = 238 - 4 = 234$ and $Z = 92 - 2 = 90$.
+```
 
 <svg data-fig="shifts" viewBox="0 0 600 360" role="img" aria-label="Part of a chart of nuclides, a grid: the neutron number N on the horizontal axis and the atomic number Z on the vertical axis, one cell is one unit. In the middle is the parent nucleus. Alpha decay moves the nucleus two cells down and two to the left (Z − 2, N − 2). Beta minus decay moves it one cell up and one to the left (Z + 1, N − 1). Beta plus decay moves it one cell down and one to the right (Z − 1, N + 1). In gamma decay the nucleus stays in the same cell." style="max-width:100%;font-size:24px">
   <line x1="140" y1="40" x2="140" y2="316" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -358,12 +364,6 @@ E_\gamma &= E_\text{u} - E_\text{l} \\
 \end{aligned}
 ```
 where $E_\text{u}$ and $E_\text{l}$ are the energies of the upper and the lower level, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ is the Planck constant and $c = 2.998 \cdot 10^{8}\,\text{m/s}$ is the speed of light. Kiloelectronvolts are converted to joules by substituting $1\,\text{keV} = 1000\,\text{eV}$ and $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
-
-```pysahdy
-Uranium-238 ${}^{238}_{92}\text{U}$ undergoes alpha decay. What are the mass number and atomic number of the daughter nucleus?
----
-The alpha particle ${}^{4}_{2}\text{He}$ carries away four nucleons and two protons: $A = 238 - 4 = 234$ and $Z = 92 - 2 = 90$.
-```
 
 ## Worked example
 Caesium-137 ${}^{137}_{55}\text{Cs}$ decays by beta minus decay. The daughter nucleus is usually formed in an excited state, which relaxes by emitting a gamma photon with an energy of $661.7\,\text{keV}$ (NNDC NuDat 3). What is the daughter nucleus, and what is the wavelength of the gamma photon?
