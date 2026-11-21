@@ -3,79 +3,7 @@
 > **Miksi** flipperin laukaisin ampuu kuulan sitä kovempaa, mitä pidemmälle sen jousta puristetaan?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: flipperipelin oikea alakulma ylhäältä ja läheltä. Kuula lepää laukaisukourussa männän kärjen päällä. Männän ympärillä on kierrejousi. Käsi pitää männän nupista kiinni ja vetää sitä ulos koneesta, ja jousi puristuu kokoon. Vasemmalla näkyy flipperin lyöntimaila, oikealla koneen puinen sivuseinä ja lattia." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy58h-side" gradientUnits="userSpaceOnUse" x1="0" y1="150" x2="0" y2="500"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#a97a35"/></linearGradient><linearGradient id="fy58h-field" gradientUnits="userSpaceOnUse" x1="0" y1="150" x2="0" y2="460"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy58h-bump0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient><linearGradient id="fy58h-bump1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy58h-bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><radialGradient id="fy58h-ball" cx="0.35" cy="0.35" r="0.7"><stop offset="0" stop-color="#ffffff"/><stop offset="0.5" stop-color="#c4ccd4"/><stop offset="1" stop-color="#6c757d"/></radialGradient><linearGradient id="fy58h-knob" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
-  <line x1="-30" y1="0" x2="-30" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="34" y1="0" x2="34" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="98" y1="0" x2="98" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="162" y1="0" x2="162" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="226" y1="0" x2="226" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="290" y1="0" x2="290" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="354" y1="0" x2="354" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="418" y1="0" x2="418" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="482" y1="0" x2="482" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="546" y1="0" x2="546" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="610" y1="0" x2="610" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="674" y1="0" x2="674" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="738" y1="0" x2="738" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="802" y1="0" x2="802" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="866" y1="0" x2="866" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="930" y1="0" x2="930" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="994" y1="0" x2="994" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1058" y1="0" x2="1058" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1122" y1="0" x2="1122" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1186" y1="0" x2="1186" y2="600" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <g transform="translate(-585 -201) scale(1.35)">
-  <path d="M1150,160 H1166 V510 H104 V496 H1150 Z" fill="#1f2933" fill-opacity="0.12"/>
-  <rect x="100" y="150" width="1050" height="346" fill="url(#fy58h-side)" stroke="#1f2933" stroke-width="2"/>
-  <rect x="148" y="150" width="904" height="310" fill="url(#fy58h-field)" stroke="#1f2933" stroke-width="2"/>
-  <rect x="1000" y="150" width="52" height="310" fill="#ffffff"/>
-  <line x1="1000" y1="150" x2="1000" y2="460" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <g transform="translate(16 0)">
-  <circle cx="520" cy="176" r="53" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="520" cy="176" r="42" fill="url(#fy58h-bump0)" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="520" cy="176" r="17.64" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="716" cy="160" r="53" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="716" cy="160" r="42" fill="url(#fy58h-bump1)" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="716" cy="160" r="17.64" fill="#ffffff" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="540" cy="256" r="13" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="596" cy="272" r="13" fill="#2b8a3e" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="652" cy="278" r="13" fill="#1971c2" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="708" cy="272" r="13" fill="#f2a69c" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="764" cy="256" r="13" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <ellipse cx="652" cy="336" rx="40" ry="22" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="878" y="150" width="44" height="90" rx="22" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="900" cy="206" r="9" fill="#ffc078" stroke="#1f2933" stroke-width="1"/>
-  <path d="M876,258 L876,346 L794,380 Z" fill="#ffc078" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M870,266 L802,372" fill="none" stroke="#1f2933" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M940,240 V354 L788,414" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linejoin="round"/>
-  <path d="M778,396 L638,430 L640,442 L778,416 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <circle cx="778" cy="406" r="13" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="778" cy="406" r="5" fill="#1f2933"/>
-  <path d="M340,396 L480,430 L478,442 L340,416 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M984,446 H640 L606,460 H984 Z" fill="#6c757d" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M478,446 L512,460 H400 V446 Z" fill="#6c757d" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  </g>
-  <path d="M640,150 L700,150 L620,460 L560,460 Z" fill="#ffffff" fill-opacity="0.3"/>
-  <path d="M900,150 L960,150 L880,460 L820,460 Z" fill="#ffffff" fill-opacity="0.3"/>
-  <rect x="92" y="460" width="1066" height="34" rx="6" fill="url(#fy58h-bar)" stroke="#1f2933" stroke-width="2"/>
-  <rect x="1020" y="356" width="12" height="190" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="1002" y="446" width="48" height="12" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <path d="M1045,374 L1007,380 L1045,386 L1007,392 L1045,398 L1007,404 L1045,410 L1007,416 L1045,422 L1007,428 L1045,434 L1007,440 L1045,446" fill="none" stroke="#6c757d" stroke-width="3" stroke-linejoin="round" stroke-linejoin="round"/>
-  <rect x="1004" y="356" width="44" height="18" rx="5" fill="#1f2933" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="1026" cy="332" r="23" fill="url(#fy58h-ball)" stroke="#1f2933" stroke-width="1.5"/>
-  <path d="M1176,664 L1082,574" fill="none" stroke="#1f2933" stroke-width="51" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M1176,664 L1082,574" fill="none" stroke="#f1dfb5" stroke-width="46" stroke-linejoin="round" stroke-linecap="round"/>
-  <ellipse cx="1066" cy="562" rx="38" ry="30" fill="#f1dfb5" stroke="#1f2933" stroke-width="2" transform="rotate(-30 1066 562)"/>
-  <path d="M1056,578 Q1020,584 1004,564" fill="none" stroke="#1f2933" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M1056,578 Q1020,584 1004,564" fill="none" stroke="#f1dfb5" stroke-width="15" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="1026" cy="544" r="18" fill="url(#fy58h-knob)" stroke="#1f2933" stroke-width="2"/>
-  <path d="M1070,540 Q1044,508 1006,518" fill="none" stroke="#1f2933" stroke-width="19" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M1070,540 Q1044,508 1006,518" fill="none" stroke="#f1dfb5" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M1066,526 Q1044,494 1006,504" fill="none" stroke="#1f2933" stroke-width="19" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M1066,526 Q1044,494 1006,504" fill="none" stroke="#f1dfb5" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M1078,542 Q1060,524 1034,530" fill="none" stroke="#1f2933" stroke-width="1.5"/>
-  </g>
+  <image href="pics/fy5/fy5-8-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Ydinajatus
@@ -171,46 +99,10 @@ Kun jousta ei venytetä eikä puristeta liikaa, jousen voiman suuruus on suoraan
 Kun käsi venyttää jousta, kaksi kappaletta vaikuttaa toisiinsa. Käsi vetää jousta, ja jousi vetää kättä. Newtonin kolmannen lain mukaan nämä voimat ovat yhtä suuret ja vastakkaissuuntaiset. Ne vaikuttavat kuitenkin eri kappaleisiin. Jousta venyttävä voima $\overline{F}_\text{v}$ vaikuttaa jouseen. Jousen voima $\overline{F}$ vaikuttaa käteen tai jousen päässä olevaan kappaleeseen. Siksi kappaleen voimakuvioon piirretään vain jousen voima.
 
 <svg data-fig="pari" viewBox="0 0 600 330" role="img" aria-label="Kaksi kuvaa allekkain. Ylhäällä käsi venyttää seinään kiinnitettyä jousta oikealle. Alhaalla jousi ja käsi on piirretty erilleen: jousen oikeaan päähän vaikuttaa käden voima F v oikealle, ja käteen vaikuttaa jousen voima F vasemmalle. Nuolet ovat yhtä pitkät: voimat ovat yhtä suuret ja vastakkaissuuntaiset, ja ne vaikuttavat eri kappaleisiin." style="max-width:100%;font-size:24px">
-  <rect x="28" y="40" width="16" height="90" fill="#e3dccb"/>
-  <line x1="44" y1="40" x2="44" y2="130" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="43" y1="46" x2="31" y2="56" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="43" y1="58" x2="31" y2="68" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="43" y1="70" x2="31" y2="80" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="43" y1="82" x2="31" y2="92" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="43" y1="94" x2="31" y2="104" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="43" y1="106" x2="31" y2="116" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="43" y1="118" x2="31" y2="128" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <path d="M44,86 L54,86 L60,77 L72,95 L84,77 L96.5,95 L108.5,77 L120.5,95 L132.5,77 L144.5,95 L157,77 L169,95 L181,77 L193,95 L205,77 L217,95 L229.5,77 L241.5,95 L253.5,77 L265.5,95 L277.5,77 L290,95 L302,77 L314,95 L320,86 L330,86" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <circle cx="336" cy="86" r="6" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="340" y="68" width="44" height="36" rx="12" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="350" y1="76" x2="362" y2="76" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="350" y1="86" x2="362" y2="86" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="350" y1="96" x2="362" y2="96" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="378" y="74" width="40" height="24" rx="6" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
+  <image href="pics/fy5/fy5-8-pari.webp" x="0" y="0" width="600" height="340" preserveAspectRatio="none"/>
   <foreignObject x="490" y="71.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{tilanne}$</div></foreignObject>
-  <line x1="20" y1="160" x2="580" y2="160" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <rect x="28" y="196" width="16" height="80" fill="#e3dccb"/>
-  <line x1="44" y1="196" x2="44" y2="276" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="43" y1="202" x2="31" y2="212" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="43" y1="214" x2="31" y2="224" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="43" y1="226" x2="31" y2="236" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="43" y1="238" x2="31" y2="248" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="43" y1="250" x2="31" y2="260" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="43" y1="262" x2="31" y2="272" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="43" y1="274" x2="31" y2="284" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <path d="M44,236 L54,236 L59,227 L69.5,245 L80,227 L90,245 L100.5,227 L111,245 L121,227 L131.5,245 L142,227 L152,245 L162.5,227 L173,245 L183,227 L193.5,245 L204,227 L214,245 L224.5,227 L235,245 L240,236 L250,236" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <circle cx="256" cy="236" r="6" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="262" y1="236" x2="335" y2="236" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M352,236 L334,244 L334,228 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="284.5" y="191.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{v}$</div></foreignObject>
   <foreignObject x="62.5" y="275.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{käsi vetää jousta}$</div></foreignObject>
-  <rect x="466" y="218" width="44" height="36" rx="12" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="476" y1="226" x2="488" y2="226" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="476" y1="236" x2="488" y2="236" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="476" y1="246" x2="488" y2="246" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="504" y="224" width="40" height="24" rx="6" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="462" y1="236" x2="389" y2="236" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M372,236 L390,228 L390,244 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="400.5" y="191.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
   <foreignObject x="372.5" y="275.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{jousi vetää kättä}$</div></foreignObject>
 </svg>
