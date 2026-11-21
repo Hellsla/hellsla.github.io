@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: be7561f2690be5e0
+CONTENT-HASH: 9766d2a5d3cf1297
 
 ## Blocking
+None.
 
 ## Polish
-
+None.
 
 ## Checked
-batch delta review: new retrieval on effective voltage: 325 V / sqrt2 = 229.8 V -> 230 V, wrong 325*sqrt2 = 459.6 V -> 460 V recomputed; one correct option, feedback right (effective value heats a resistor like the DC value; cannot exceed peak). Does not reveal the transformer predictions.
+batch delta review: every new ```pysahdy block (question and answer) against the physics guardrails and the lesson's own wording; constant DC gives zero secondary voltage; U2 = 20.0 V; loss to a ninth recomputed. No option-based choices changed. Scope per teacher 2026-11-20: only the pysahdy blocks.

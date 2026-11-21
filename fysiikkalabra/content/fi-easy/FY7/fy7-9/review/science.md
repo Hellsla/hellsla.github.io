@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8ec4e32680f975fa
+CONTENT-HASH: d01cc3934fd834f5
 
 ## Blocking
 
+
 ## Polish
 
+
 ## Checked
-batch delta review: recomputed f = c/λ: 4,3e14 Hz for 700 nm and 7,5e14 Hz for 400 nm; violet is the one correct option and every piece of feedback is right; Ennusta (Wien shift, 300 K infrared) not revealed; lesson-answers.py matches.
+batch delta review: fy7-9 round 2: pysähdyksen vastaus ei enää väitä, ettei näkyvää valoa ole lainkaan; "niin vähän, että silmä näkee hehkun vasta noin $800\,\text{K}$:ssa" vastaa teorian riviä 343 (Draperin piste n. 800 K). Scope: only the pysahdy blocks (teacher 2026-11-20).

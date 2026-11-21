@@ -203,6 +203,12 @@ Luvussa *Sähkömagneettinen induktio* käämiin syntyi induktiojännite, kun se
 
 <figure class="unit-photo"><img src="pics/fy7/bicycle-dynamo.webp" alt="Polkupyörän etupyörä ja pyöreä etuvalo; rengasta vasten on painettu pieni hopeanvärinen pullodynamo."><figcaption>Polkupyörän dynamo on pieni generaattori. Renkaan pyörittämä akseli pyörittää kestomagneettia käämin sisällä. Käämi pysyy paikallaan, mutta sen läpi kulkeva magneettivuo muuttuu, joten siihen indusoituu vaihtojännite.</figcaption></figure>
 
+```pysahdy
+Käämin pinta-ala on $0{,}010\,\text{m}^2$ ja magneettivuon tiheys $0{,}20\,\text{T}$. Kuinka suuri on käämin läpi kulkeva vuo, kun käämin taso on kohtisuorassa kenttää vastaan, ja kuinka suuri neljänneskierroksen jälkeen?
+---
+Aluksi $\Phi = BA = 0{,}20\,\text{T} \cdot 0{,}010\,\text{m}^2 = 0{,}0020\,\text{Wb}$. Neljänneskierroksen jälkeen käämin taso on kentän suuntainen, eikä yksikään kenttäviiva kulje sen läpi, joten vuo on nolla.
+```
+
 ### Liukurenkaat ja harjat
 Käämin johtimen päät on kytketty akselilla oleviin kahteen **liukurenkaaseen**. Renkaita koskettavat hiiliharjat, joiden kautta jännite johdetaan ulkoiseen virtapiiriin, kuten kuvan lamppuun. Toisin kuin tasavirtamoottorin kommutaattori luvussa *Voima virtajohtimeen: sähkömoottori ja kaiutin*, liukurenkaat eivät käännä virran suuntaa, joten ulkoiseen piiriin tulee käämiin syntyvä jännite sellaisenaan.
 
@@ -314,6 +320,12 @@ e_0 = NBA \cdot 2\pi f
 ```
 missä $\Phi$ on magneettivuo yhden kierroksen läpi (Wb), $e$ jännitteen hetkellinen arvo (V), $e_0$ jännitteen huippuarvo (V), $N$ kierrosten lukumäärä, $B$ magneettivuon tiheys (T), $A$ käämin pinta-ala (m²) ja $f$ pyörimistaajuus (Hz). Jännitteen taajuus on sama kuin pyörimistaajuus, ja jaksonaika on $T = 1 : f$. Vuo muuttuu pyöriessä epätasaisesti, joten $e$ on hetkellinen jännite: se on suurin, kun vuo on nolla ja muuttuu nopeimmin, ja nolla, kun vuo on suurimmillaan.
 
+```pysahdy
+Generaattorin käämi pyörii tasaisesti $20$ kierrosta sekunnissa. Mikä on syntyvän jännitteen taajuus ja jaksonaika?
+---
+Jännitteen taajuus on sama kuin pyörimistaajuus eli $20\,\text{Hz}$. Jaksonaika on $T = \tfrac{1}{f} = \tfrac{1}{20\,\text{Hz}} = 0{,}050\,\text{s}$.
+```
+
 ### Mistä huippuarvo tulee
 Huippuarvo saadaan liikkuvan johtimen jännitteestä $e = vBl$ (luku *Sähkömagneettinen induktio*). Suorakulmaisen käämin kaksi sivua, joiden pituus on $l$, kiertävät akselia säteellä $b : 2$, missä $b$ on käämin leveys. Sivujen nopeus on $v = 2\pi f \cdot b : 2 = \pi f b$. Jännitteeseen vaikuttaa vain nopeuden kenttää vastaan kohtisuora komponentti $v \sin\theta$, missä $\theta$ on nopeuden ja kentän välinen kulma. Kumpaankin sivuun syntyy jännite $B l v \sin\theta$, ja sivujen jännitteet summautuvat kierroksessa. Yhdessä kierroksessa jännite on siis $2 B l \cdot \pi f b \sin\theta = BA \cdot 2\pi f \sin\theta$, koska $lb = A$, ja $N$ kierroksessa $N$-kertainen. Kun $\theta = 90^\circ$, käämin taso on kentän suuntainen ja jännite on huippuarvossaan $e_0 = NBA \cdot 2\pi f$. Kaksinkertainen pyörimistaajuus kaksinkertaistaa sekä jännitteen taajuuden että huippuarvon, koska sivut liikkuvat kaksi kertaa nopeammin.
 
@@ -391,6 +403,12 @@ missä $U_0$ ja $I_0$ ovat jännitteen ja virran **huippuarvot** ja $U$ ja $I$ t
   <line x1="120" y1="168" x2="449.5" y2="168" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
   <foreignObject x="459.5" y="154" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{keskiarvo}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Vastuksen läpi kulkevan sinimuotoisen vaihtovirran huippuarvo on $2{,}0\,\text{A}$. Mikä on virran tehollinen arvo?
+---
+Tehollinen arvo on huippuarvo jaettuna luvulla $\sqrt{2}$: $I = \tfrac{I_0}{\sqrt{2}} = \tfrac{2{,}0\,\text{A}}{\sqrt{2}} \approx 1{,}4\,\text{A}$.
+```
 
 ## Esimerkki
 Opetuskäytössä olevan generaattorin käämissä on $250$ kierrosta, ja suorakulmaisen käämin sivujen pituudet ovat $4{,}0\,\text{cm}$ ja $5{,}0\,\text{cm}$. Käämi pyörii homogeenisessa magneettikentässä, jonka magneettivuon tiheys on $0{,}18\,\text{T}$, ja tekee $12$ kierrosta sekunnissa. Kuinka suuri on käämiin syntyvän vaihtojännitteen tehollinen arvo?

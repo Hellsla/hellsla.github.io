@@ -133,6 +133,12 @@ In a transformer the iron core guides almost all of the flux through the seconda
   <line x1="344" y1="112" x2="367" y2="175" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
+```pysahdy
+A phone is lifted from a height of $3\,\text{mm}$ above a wireless charger to a height of $20\,\text{mm}$. Why does the voltage induced in the receiver coil decrease even though the current in the transmitter coil stays the same?
+---
+Fewer field lines pass through the receiver, so the flux decreases. A smaller flux and a smaller change in it induce a smaller voltage.
+```
+
 ### Losses in wireless charging
 A sufficient voltage is obtained in the receiver even if only part of the flux reaches it, but then a larger current has to flow in the transmitter coil. In the resistance of the coils the current changes electrical energy into internal energy at the power $P = RI^2$, so the charger and the phone get warm.
 
@@ -210,6 +216,12 @@ The working of an induction hob thus resembles a transformer in which the metal 
 
 <figure class="unit-photo"><img src="pics/fy7/induction-hob.webp" alt="A black glass hob with four cooking zones and touch controls at the front; a steel saucepan stands at the back right."><figcaption>An induction hob. An alternating current flows in a coil under the glass, and its changing magnetic field induces eddy currents in the steel base of the pan. The pan heats itself, and the hob only gets warm from the pan.</figcaption></figure>
 
+```pysahdy
+On an induction hob the glass plate is not hot until a pan has heated up on it. Why are no eddy currents induced in the glass?
+---
+Glass does not conduct electricity, so the changing magnetic field cannot drive a current in it. The glass only warms up when the hot pan heats it.
+```
+
 ### Why the pan must be steel or cast iron
 Ordinary household induction hobs are designed for pans whose base contains a ferromagnetic substance, such as steel or cast iron. The principle of induction heating does not physically require ferromagnetism, however: other conductors also heat up if the device is designed for them. A ferromagnetic base strengthens the field of the coil and gathers the flux into itself (chapter *Magnets, the magnetic dipole and the magnetic field*). In addition, steel conducts electricity worse than aluminium, and the eddy currents flow in it only in a thin surface layer with a large resistance, so with the same current in the coil the internal energy of the base grows quickly.
 
@@ -278,6 +290,12 @@ where $A$ is the attenuation ($\text{dB}$), $\lg$ the base-ten logarithm, $a$ th
   <foreignObject x="440" y="193.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e64980">$1550\,\text{nm}$</div></foreignObject>
   <foreignObject x="440" y="230.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e64980">$1310\,\text{nm}$</div></foreignObject>
 </svg>
+
+```pysahdy
+The attenuation coefficient of a fibre is $0.18\,\text{dB/km}$ and the fibre is $50\,\text{km}$ long. What is the attenuation in decibels, and what fraction of the power is left?
+---
+The attenuation is $A = aL = 0.18\,\text{dB/km}\cdot 50\,\text{km} = 9.0\,\text{dB}$. From the definition of attenuation, $\lg (P_0 : P) = A : 10\,\text{dB} = 0.90$, so $P_0 : P = 10^{0.90} \approx 7.9$. The power ratio is therefore $P/P_0 \approx 0.13$, so about $13\,\%$ of the power is left.
+```
 
 ### Voltage of a wireless charger
 When the flux through one turn of the receiver coil varies sinusoidally with the peak value $\Phi_0$ and the frequency $f$, an alternating voltage is produced in the coil, and its peak value is found in the same way as in a generator (chapter *The generator and alternating current*):

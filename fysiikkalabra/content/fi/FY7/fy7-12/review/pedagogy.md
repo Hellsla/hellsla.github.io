@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fb3b370ff079bc9a
+CONTENT-HASH: 3ac93eeaafc93df3
+
 ## Blocking
+(none)
 
 ## Polish
+(none)
+
+## Vanhan sisällön löydökset
+(none)
 
 ## Checked
-delta review (round 3): 19,8 to 19,7 degrees (19,745 rounds to 19,7) in the retrieval task and its three feedbacks; consistent, no pedagogy effect, earlier Polish resolved.
+batch delta review (round 2, vain pysahdy-lohkot): kolme lohkoa; uusi n1 = n2 -vastaus johdettu luvun kaavasta sin αr = n2:n1, kysymys nimeää symbolit, perustelu pitää; 48,8° ja 30,0° tarkistettu.

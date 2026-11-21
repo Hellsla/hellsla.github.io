@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e6c4fc352d471681
+CONTENT-HASH: 7deae73714a7abdc
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
+
+## Vanhan sisällön löydökset
+(none from this batch review)
 
 ## Checked
-- Delta: 'Vastaa teslaina' -> 'Vastaa tesloina' (prompt) and 'teslaina' -> 'tesloina' (solution 'Kysytty'); tesloina is the correct Finnish plural essive. Numbers unchanged.
+batch delta review: kolme Pysähdy ja mieti -lohkoa (```pysahdy): kysymys ennen vastausta, suomi ja yksiköt LaTeXina, fysiikka ja luvut tarkistettu uudelleen laskemalla, sopii lukuun ja kielelle 16–19-vuotiaille.

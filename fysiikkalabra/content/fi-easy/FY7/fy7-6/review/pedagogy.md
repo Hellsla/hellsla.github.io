@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: e613916eb837e804
+CONTENT-HASH: 4a0f315ad7908358
 ## Blocking
-(none)
+
 ## Polish
-(none)
+- none
 ## Checked
-batch delta review (SCOPE: Pohdinta retrieval task): magnet held still in a coil around the copper tube belongs to the chapter's phenomenon; no Ennusta (tube material, slot) is revealed.
+batch delta review: the three new pysahdy blocks (question, answer, physics, numbers recomputed, S2 wording, fit with the lesson text and its terms); old content not judged.

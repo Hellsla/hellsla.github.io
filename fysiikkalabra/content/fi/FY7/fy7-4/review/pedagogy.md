@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5de74d227b4171df
+CONTENT-HASH: a35cc56e1f9684d7
+
 ## Blocking
+(none)
 
 ## Polish
-- The retrieval lost its speaker-cable setting and is now a bare 1/r calculation; a link to the hook's wire in a magnet's field would tie it to the phenomenon again.
+1. Moottorilohkossa "pysähtyisi lopulta" edellyttää vaimennusta (kitka); lause toimii, mutta "kohtisuoraan kenttää vastaan" voisi sanoa "silmukan taso kohtisuorassa kenttää vastaan".
+
+## Vanhan sisällön löydökset
+(none)
+
 ## Checked
-batch delta review (round 2): retrieval retrieves B~1/r needed for the wire-force model; no Ennusta answer disclosed; distractors are real misconceptions.
+batch delta review (round 2, vain pysahdy-lohkot): kolme lohkoa; F = 0,25 N täsmälleen (4,0·0,50·0,25·0,5), "=" oikein; värähtely ja pysähtyminen ymmärrettävä.

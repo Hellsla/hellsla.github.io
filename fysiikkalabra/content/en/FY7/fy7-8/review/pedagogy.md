@@ -1,14 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: be7561f2690be5e0
-
+CONTENT-HASH: 9766d2a5d3cf1297
 ## Blocking
-
 (none)
-
 ## Polish
-
-say in the prompt that the power plant also supplies sockets, to tie it to the phenomenon.
-
+- Block 1 (battery on the primary) restates the preceding paragraph's own sentence; the question could ask what the student sees when the switch is opened or closed.
 ## Checked
-
-batch delta review (round 2): The retrieval (effective value of the 325 V socket voltage) retrieves the prior knowledge the transformer needs, and the answer to Ennusta 1 (battery on the primary) is no longer disclosed. The socket link to the power plant is thin but acceptable.
+batch delta review (round 1): the 3 new Pysähdy ja mieti blocks (```pysahdy), each judged for placement, wording, level for a 16-19-year-old, numbers and sign/direction logic recomputed, and consistency with the lesson text, formulas, tables and notation next to it. Old content not reviewed beyond what the blocks rely on.

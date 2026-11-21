@@ -85,6 +85,12 @@ F_\text{s} &= |q|E \\
 ```
 missä $|q|$ on hiukkasen varauksen suuruus (C), $E$ on sähkökentän voimakkuus (V/m), $U$ on kiihdyttävän jännitteen suuruus (V), $m$ on massa (kg) ja $v$ on vauhti (m/s). Positiivisella hiukkasella, kuten protonilla, $|q| = q$. Sähkökentällä saadaan siis varattu hiukkanen liikkeelle ja sen vauhti kasvamaan.
 
+```pysahdy
+Protoni lähtee levosta ja kiihtyy jännitteellä $U$. Jännite kaksinkertaistetaan. Miten protonin liike-energia ja vauhti muuttuvat?
+---
+Liike-energia on $|q|U$, joten se kaksinkertaistuu. Koska $\tfrac{1}{2}mv^2$ kaksinkertaistuu, vauhti kasvaa kertoimella $\sqrt{2}$. Se on vähemmän kuin kaksinkertainen.
+```
+
 ### Magneettikenttä kääntää liikkuvaa varausta
 Magneettikenttä $\overline{B}$ (luku *Magneetit, magneettinen dipoli ja magneettikenttä*) ei vaikuta varaukseen, joka on levossa. Liikkuvaan varattuun hiukkaseen se vaikuttaa **magneettisella voimalla**. Tämä voima on kohtisuorassa sekä hiukkasen nopeutta $\overline{v}$ että kenttää $\overline{B}$ vastaan. Kohtisuorassa tarkoittaa suoraa kulmaa, kuten seinän ja lattian välillä.
 
@@ -260,6 +266,12 @@ Esimerkki: protoni lentää vauhdilla $1{,}0 \cdot 10^{6}\,\text{m/s}$ kohtisuor
 
 <figure class="unit-photo"><img src="pics/fy7/electron-beam-circle.webp" alt="Pimeässä lasipallossa näkyy sinivihreä ympyrä. Se on elektronisuihku. Pallon poikki kulkee mitta-asteikko."><figcaption>Elektronisuihku kulkee ympyrää lasipallossa. Pallossa on vähän heliumkaasua. Käämit tekevät magneettikentän, joka on kohtisuorassa suihkua vastaan. Elektronit törmäävät kaasun atomeihin, ja atomit hehkuvat. Siksi rata näkyy.</figcaption></figure>
 
+```pysahdy
+Varattu hiukkanen kiertää magneettikentässä ympyrää. Voima vaikuttaa koko ajan, mutta hiukkasen vauhti ei muutu. Miksi?
+---
+Voima on joka hetki kohtisuorassa nopeutta vastaan. Siksi se ei tee työtä eikä muuta liike-energiaa. Se muuttaa vain suuntaa.
+```
+
 ## Kaava: Magneettinen voima ja ympyrärata
 Magneettikentässä liikkuvaan varattuun hiukkaseen vaikuttavan magneettisen voiman suuruus lasketaan kaavalla
 ```kaavat
@@ -320,6 +332,12 @@ Alla oleva kuvaaja näyttää säteen $r$. Simulaation ilmaisimella osumakohdan 
   <foreignObject x="278" y="47.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2f74b5">$\text{deuteroni}$</div></foreignObject>
   <foreignObject x="109" y="85.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$B = 0{,}20\,\text{T}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Protoni kiertää magneettikentässä ympyrää. Kentän voimakkuus kaksinkertaistetaan, mutta vauhti pysyy samana. Mitä säteelle tapahtuu?
+---
+Säde on kääntäen verrannollinen kenttään, $r = \tfrac{mv}{|q|B}$. Kun $B$ kaksinkertaistuu, säde puolittuu.
+```
 
 ## Nopeusvalitsin ja massaspektrometri
 

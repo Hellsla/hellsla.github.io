@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e09ea1475c13a6fd
+CONTENT-HASH: ea79c6a7376de46f
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] none
+(none)
 
 ## Checked
-batch delta review: contact sheet 1 or fig-row-1280 capture of the changed paragraph and figure; paragraph splits keep wording, figures legible, maths renders, no clipping.
+- batch delta review (round 2): fy7-11 (fi-easy) built page, every "Pysähdy ja mieti" block rendered with the answer open and photographed at 360 px (examined for the long chains) and measured at 360 and 1280 px: label, question, Vastaus summary, KaTeX (no red source, no clipped formula, no overflow), decimal comma, units, answer chains laid out as rows; check_layout.py clean at 360/390/1280. The round 1 clip in fy7-1 block 3 is fixed by the shared component. Listed older captures not reopened (unchanged old content). Vanhan sisällön löydökset: none.

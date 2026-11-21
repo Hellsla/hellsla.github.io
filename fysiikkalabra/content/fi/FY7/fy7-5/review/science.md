@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 4eb10b82e664384c
+CONTENT-HASH: 9bcd4eb18046d472
 
 ## Blocking
 
 ## Polish
-- None.
+- Block 1 uses 'magneettivuo' just before the ### Magneettivuo section defines it; the photo caption above already uses the word, so this is acceptable; optionally say 'käämin läpi kulkeva magneettikenttä muuttuu' as the preceding paragraph does.
 
 ## Checked
-- exit-ticket.json item 2: the added condition "kääntyy tasaisesti kaartuen huippuunsa" makes the flux curve smooth at its maximum, so the tangent slope at t1 exists and is zero; answer e = -N dPhi/dt = 0 is correct (A/B-free; removes the earlier unstated smoothness condition for a cusp-shaped peak).
-- The answer's "tangentin kulmakerroin on nolla" matches the instantaneous rate of change; using ΔΦ : Δt notation for it is the course's level (C); "suuri vuo ei tarkoita suurta jännitettä" stays right.
-- en and fi-easy exit tickets say the same (smooth turn at the peak, zero slope, zero voltage).
-- lesson.md:201 hub dynamo: a ring magnet turning with the hub around fixed coils on the axle is the real construction of a bicycle hub dynamo; the relative motion of magnet and coils is the mechanism of the changing flux, consistent with the paragraph's "magneetti tai käämi liikkuu" and with "kun pyörä seisoo, mikään ei muutu".
-- en and fi-easy lesson.md:201 state the same construction; inquiry.json phenomenon ("kestomagneetti ja johdinkäämi") and the hero caption ("navassa on dynamo") do not contradict it.
-- No numbers, units or formulas changed beyond the diff; content hash identical at start and end.
+batch delta review: round 2, three new pysahdy blocks: rotating coil in a constant field changes the flux, so a voltage is induced (consistent with the listed ways of change); |e| = 200·0,020 Wb : 0,50 s = 8,0 V recomputed, notation |e| matches the uniform-change convention; e = vBl = 2,0·0,50·0,30 V = 0,30 V, perpendicularity stated as the formula's condition requires, placed after the formula.
+
+## Vanhan sisällön löydökset
+Ei löydöksiä.

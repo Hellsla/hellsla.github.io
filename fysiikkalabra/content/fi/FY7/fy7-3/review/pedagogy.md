@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4696d3cd76b16bc6
+CONTENT-HASH: e368cdf02df340df
+
 ## Blocking
+(none)
 
 ## Polish
-- None.
+(none)
+
+## Vanhan sisällön löydökset
+(none)
+
 ## Checked
-batch delta review (round 2): retrieval (compass beside a wire, Maan kenttä) belongs to the compass hook, retrieves the prior knowledge, reveals no Ennusta answer.
+batch delta review (round 2, vain pysahdy-lohkot): kolme lohkoa; käämin vastaus nimeää nyt oikean käden säännön kiertosuunnan ja peukalon, napaisuus tarkistettu, B = 2,51 mT laskettu uudelleen.

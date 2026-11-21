@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 1eafe94d0d7fb8f5
+CONTENT-HASH: 33c457a3d94e09a7
 ## Blocking
 (none)
+## Vanhan sisällön löydökset
+(none)
 ## Polish
-- none
+(none)
+## Notes
+'The wavelength gets shorter: in water it is 1.33 times shorter than in air' states the qualitative result first and then the number; consistent with the lesson text on wavelength in a medium.
 ## Checked
-batch delta review: Pohdinta retrieval task now belongs to the chapter phenomenon, still retrieves the intended prior knowledge, and reveals no Ennusta answer. Lake mirror fits optics opening; reflection law retrieved; refraction Ennusta not revealed.
+batch delta review, round 2: Checked: pysahdy block on frequency and wavelength.

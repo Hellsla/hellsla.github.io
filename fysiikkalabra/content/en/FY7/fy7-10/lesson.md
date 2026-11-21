@@ -66,6 +66,12 @@ Light is reflected in the same way as the mechanical waves in the chapter *A wav
 ### Light slows down in a material
 In a vacuum light travels at the speed $c = 3.00 \cdot 10^{8}\,\text{m/s}$. In a material light travels more slowly. The **refractive index** $n$ of a material tells how many times more slowly: in water the speed of light is about $2.26 \cdot 10^{8}\,\text{m/s}$, so the refractive index of water is $1.33$. The refractive index of air is $1.0003$, so in air light travels almost as fast as in a vacuum. A material with a greater refractive index is **optically denser**. When light passes from one material to another, its frequency does not change, because the frequency is set by the source of the light. The speed does change, so the wavelength changes too according to the equation $v = f \lambda$: in water the wavelength is $1.33$ times shorter than in air.
 
+```pysahdy
+Light passes from air into water. Does its frequency change, and does its wavelength change?
+---
+The frequency does not change, because the light source sets it. The wavelength gets shorter: in water it is $1.33$ times shorter than in air, because the speed decreases and $v = f \lambda$.
+```
+
 ### Why light is refracted
 Refraction is caused by the change in speed. In the figure, the wavefronts of a wave arriving obliquely at the boundary are parallel lines, and the ray is perpendicular to them. The left end of the front reaches the water first and slows down, while the right end still travels faster in the air. The front therefore turns, and in the water the wave travels in a new direction, closer to the normal. In the water the fronts are also closer together, because the wavelength is shorter. When light arrives perpendicular to the boundary, $\alpha_1 = 0^\circ$, every part of the front slows down at the same moment, and the direction does not change.
 
@@ -159,6 +165,12 @@ refractive index for electromagnetic waves (light) :: n = \frac{c}{v}
 ```
 where $c = 3.00 \cdot 10^{8}\,\text{m/s}$ is the speed of light in a vacuum and $v$ the speed of light in the material (m/s). The refractive index has no unit, and for materials transparent to visible light it is always greater than $1$.
 
+```pysahdy
+The speed of light in a vacuum is $3.00 \cdot 10^{8}\,\text{m/s}$ and the refractive index of diamond is $2.42$. How fast does light travel in diamond?
+---
+The speed is $v = c : n = 3.00 \cdot 10^{8}\,\text{m/s} : 2.42 \approx 1.24 \cdot 10^{8}\,\text{m/s}$.
+```
+
 ### The law of refraction, or Snell's law
 When light passes from a material with refractive index $n_1$ into a material with refractive index $n_2$, the angle of incidence and the angle of refraction satisfy the equation
 ```kaavat
@@ -224,6 +236,12 @@ where $\alpha_1$ is the angle of incidence and $\alpha_2$ the angle of refractio
   <foreignObject x="430" y="45.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\alpha_2 = \alpha_1$</div></foreignObject>
   <foreignObject x="106.5" y="69.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$n_1 = 1.00$</div></foreignObject>
 </svg>
+
+```pysahdy
+A ray of light comes from air ($n = 1.00$) into window glass ($n = 1.52$) at an angle of incidence of $40^\circ$. What is the angle of refraction, and is the ray refracted towards the normal or away from it?
+---
+From Snell's law $\sin\alpha_2 = 1.00 \cdot \sin 40^\circ : 1.52 = 0.423$, so $\alpha_2 \approx 25^\circ$. Glass is optically denser, so the ray is refracted towards the normal.
+```
 
 ### Refractive indices
 The refractive index depends slightly on the wavelength of light (chapter *Dispersion: the prism and the rainbow*). The values in the table are for yellow light with a wavelength of $589\,\text{nm}$ and for the material at room temperature. The refractive indices of glass and acrylic vary with the quality.

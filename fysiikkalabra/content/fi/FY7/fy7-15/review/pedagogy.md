@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0e9256de0c213bf4
+CONTENT-HASH: 666d88a4cc20c442
 
 ## Blocking
+(none)
 
 ## Polish
-- "tehtävät, jotka on merkitty syventäviksi" assumes exercises carry that label; make sure the exercise levels show it.
+(none)
+
+## Vanhan sisällön löydökset
+(none from this batch review)
 
 ## Checked
-batch delta review: the Syventävä osio note and "Syventävä esimerkki." are clear, consistent with the summary bullet, and tell the student what is core; figures are unchanged.
+batch delta review: kolme Pysähdy ja mieti -lohkoa (```pysahdy): kysymys ennen vastausta, suomi ja yksiköt LaTeXina, fysiikka ja luvut tarkistettu uudelleen laskemalla, sopii lukuun ja kielelle 16–19-vuotiaille.

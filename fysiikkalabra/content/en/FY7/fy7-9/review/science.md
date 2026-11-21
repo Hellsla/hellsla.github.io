@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 54bcd8e2aa81ada5
+CONTENT-HASH: 00674d9a77aa5f1a
 
 ## Blocking
 
-
 ## Polish
-- None.
 
 ## Checked
-batch delta review: f = c/lambda: 700 nm 4.3e14 Hz, 400 nm 7.5e14 Hz recomputed; violet correct, the two distractors' feedback right; one correct option; Wien Ennusta (peak halves, 300 K stone infrared) not revealed.
+batch delta review: new wording correctly says some visible light is emitted at all temperatures but becomes noticeable to the eye only near 800 K (Draper point about 800 K); consistent with the black-body spectrum section.
+
+## Vanhan sisällön löydökset
+None.

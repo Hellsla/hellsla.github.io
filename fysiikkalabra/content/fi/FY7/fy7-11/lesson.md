@@ -83,6 +83,12 @@ Veden taitekertoimet lämpötilassa $20\,{}^\circ\text{C}$: M. Daimon ja A. Masu
 
 <figure class="unit-photo"><img src="pics/fy7/prism-dispersion.webp" alt="Harmaalla seinällä pystysuora valojuova, jossa värit vaihtuvat vasemmalta oikealle punaisesta keltaisen ja vihreän kautta siniseen."><figcaption>Prisman läpi kulkenut valkoinen valo seinällä. Prisma taittaa violettia ja sinistä valoa enemmän kuin punaista, joten värit erkanevat spektriksi.</figcaption></figure>
 
+```pysahdy
+Valkoinen valo tulee ilmasta kruunulasiin. Kumpi väri hidastuu lasissa enemmän, punainen vai violetti, ja miksi?
+---
+Violetti hidastuu enemmän, koska sen taitekerroin ($1{,}5302$) on suurempi kuin punaisen ($1{,}5143$).
+```
+
 ### Miksi violetti hidastuu enemmän
 Valon sähkökenttä saa aineen elektronit värähtelemään valon taajuudella. Värähtelevät elektronit lähettävät itse valoa, joka yhdistyy tulevaan valoon, ja yhdistynyt aalto etenee hitaammin kuin valo tyhjiössä. Elektronien vaste riippuu taajuudesta. Vedessä ja lasissa se voimistuu, kun taajuus kasvaa kohti ultraviolettia, jota aine voimakkaasti absorboi. Siksi suurtaajuinen violetti valo hidastuu enemmän kuin pientaajuinen punainen, ja sen taitekerroin on suurempi.
 
@@ -242,6 +248,12 @@ Kun aurinko on selän takana, auringonsäteet kulkevat pään ohi kohti **vastap
 
 Sateenkaari näkyy siis vain, kun aurinko paistaa selän takaa ja edessä on pisaroita. Tasaisella maalla kaaresta näkyy vain horisontin yläpuolinen osa. Jos aurinko on korkeudella $h$ horisontista, vastapiste on yhtä paljon horisontin alapuolella, ja punaisen kaaren huippu on korkeudella $42^\circ - h$. Kun aurinko on yli $42^\circ$:n korkeudella, koko kaari jää horisontin alapuolelle, eikä sitä näe maan pinnalta. Siksi sateenkaaria näkyy keskikesällä aamuin ja illoin, kun aurinko on matalalla.
 
+```pysahdy
+Aurinko on $30^\circ$:n korkeudella horisontista. Kuinka korkealla horisontista pääsateenkaaren punaisen kaaren huippu on?
+---
+Huippu on korkeudella $42^\circ - 30^\circ = 12^\circ$, koska vastapiste on $30^\circ$ horisontin alapuolella.
+```
+
 ### Sivukaari
 Pääkaaren ulkopuolella näkyy joskus himmeämpi **sivukaari**. Siinä valo heijastuu pisaran sisällä kahdesti, ja värien järjestys on päinvastainen: punainen on sisäreunalla noin $50^\circ$:n ja violetti ulkoreunalla noin $54^\circ$:n kulmassa vastapisteen suunnasta. Jokaisessa heijastuksessa osa valosta pääsee pisarasta ulos, joten sivukaari on himmeämpi. Kaarten välissä taivas on tummempi, koska pääkaaren pisarat valaisevat vain kaaren sisäpuolta ja sivukaaren pisarat vain kaaren ulkopuolta.
 
@@ -304,6 +316,12 @@ missä $\alpha_1$ on tulokulma ja $\alpha_2$ taitekulma, molemmat normaalista mi
   <foreignObject x="159" y="81" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{violetti}$</span></div></foreignObject>
   <foreignObject x="367.5" y="204" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{punainen}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Punaisen valon taitekerroin vedessä on $1{,}3315$. Kuinka nopeasti punainen valo etenee vedessä?
+---
+Nopeus on $v = c : n = 3{,}00 \cdot 10^8\,\text{m/s} : 1{,}3315 \approx 2{,}25 \cdot 10^8\,\text{m/s}$.
+```
 
 ### Prisman poikkeamakulma
 Prismassa säde taittuu kahdesti, ja kulmat riippuvat toisistaan:

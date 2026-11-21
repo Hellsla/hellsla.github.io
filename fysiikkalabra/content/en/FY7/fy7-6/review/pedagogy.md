@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 19ba641822752b02
+CONTENT-HASH: 0a9b44d76a7daacf
 ## Blocking
 (none)
 ## Polish
 - none
 ## Checked
-batch delta review: Pohdinta retrieval task now belongs to the chapter phenomenon, still retrieves the intended prior knowledge, and reveals no Ennusta answer. Magnet held still in a coil around a copper tube retrieves 'no change, no voltage' without hinting at braking; Ennusta (tube falling times, slit) not revealed.
+batch delta review (round 1): the 3 new Pysähdy ja mieti blocks (```pysahdy), each judged for placement, wording, level for a 16-19-year-old, numbers and sign/direction logic recomputed, and consistency with the lesson text, formulas, tables and notation next to it. Old content not reviewed beyond what the blocks rely on.
