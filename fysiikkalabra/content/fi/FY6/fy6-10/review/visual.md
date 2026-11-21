@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 373c2ed4e9c33bb4
+CONTENT-HASH: a5d5502a67a7b3d0
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] Opened "Vastaus" state of the Pysähdy ja mieti boxes is not in any capture and no browser was available to render it; the layout checks (360–1920 px, answers open) were clean in checks.txt, and the widest inline answer formula fits a 360 px box by estimate.
+- [Minor] Pysähdy ja mieti box 2 — substitution is written without units, "(yksikkö $\text{N}$)", and the division as a colon inside a formula ("$F = k\,\lvert q_1 q_2 \rvert : r^2$") — keep the fraction $\tfrac{...}{r^2}$ and put units in the substitution.
+- [Minor] OLD: nothing noted outside the scope.
 
 ## Checked
-batch delta review (round 2, scope: Pysähdy ja mieti boxes only): the new/changed boxes' wording, units, decimal comma and LaTeX read from the diff and source; box rendering confirmed in captures fy6-5-stage-selita-390-1, fy6-5-theory-1280-1, fy6-2-stage-selita-390-5, fy6-10-stage-selita-390-7 (label, question, closed Vastaus, no clipping at 390 px or 1280 px, no red KaTeX); the same shared component renders every lesson's boxes.
+batch delta review, round 3, scope only the 3 new Pysähdy ja mieti boxes: rendered the preview myself at 360 and 1280 px with Vastaus open (captures theory-1280-1 and stage-selita-390-1 show them closed); no red KaTeX, no overflow (page width = viewport), boxes readable, 0,5e, \overline{F}=\overline{0}, units and the new wording in box 3 set correctly. Finnish natural. 

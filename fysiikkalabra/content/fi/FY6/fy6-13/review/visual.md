@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 51dbbd3c23140095
+CONTENT-HASH: c7b3acf66fafb8be
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] Opened "Vastaus" state of the Pysähdy ja mieti boxes is not in any capture and no browser was available to render it; the layout checks (360–1920 px, answers open) were clean in checks.txt, and the widest inline answer formula fits a 360 px box by estimate.
+- [Minor] Pysähdy ja mieti box 1 answer — the changed sentence is long (about 40 words) with a nested parenthesis; fine, but could be split after "kasvaa" if the teacher wishes.
 
 ## Checked
-batch delta review (round 2, scope: Pysähdy ja mieti boxes only): the new/changed boxes' wording, units, decimal comma and LaTeX read from the diff and source; box rendering confirmed in captures fy6-5-stage-selita-390-1, fy6-5-theory-1280-1, fy6-2-stage-selita-390-5, fy6-10-stage-selita-390-7 (label, question, closed Vastaus, no clipping at 390 px or 1280 px, no red KaTeX); the same shared component renders every lesson's boxes.
+batch delta review, round 3, scope only the 3 new Pysähdy ja mieti boxes: rendered the preview myself at 360 and 1280 px with Vastaus open (shot captures show them closed); no red KaTeX, no overflow, \tfrac fractions, \mu\text{F}, (20\,\text{V})^2 and mJ set correctly; wording natural.
