@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 2ca0cc60b0531c42
+CONTENT-HASH: 780a55e6c04f1843
 
 ## Blocking
 (none)
 
 ## Polish
-- Box 2: "nukleoneja on yhtä monta" suffices only with the same protons and neutrons on both sides (charge conservation gives it in a nuclear reaction without leptons); C at this level.
+- Binding-energy reaction box: "vapautuu tuotteiden liike-energiaksi" drops the gamma radiation that the formula section (line 321) names: "liike-energiaksi ja gammasäteilyksi". A few words would keep one wording (C, not wrong).
 
 ## Checked
-batch delta review, round 2: every pysahdy box in the diff, numbers recomputed in one script (all agree): deuteron 2,2 MeV (2,224): free p + n heavier by 2,2 MeV/c², correct; 1805 - 1800 = 5 MeV released, mass falls 5 MeV/c², correct; no guardrail break, no conflict with old content.
+batch delta review, round 3: the C-12 mass-defect box and the reworded reaction box. Recomputed: 92,2/931,5 = 0,09898 u, giving 0,0990 u and then 0,099 u. 92,2 MeV is the correct C-12 binding energy. The direction (the nucleus is lighter) is right. 1805 − 1800 = 5 MeV is released and the mass falls by 5 MeV/c². That is correct.
 
 ## Vanhan sisällön löydökset
 (none)

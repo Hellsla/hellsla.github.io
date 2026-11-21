@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a00c61bd6f174e6b
+CONTENT-HASH: 1fce8e9231721abe
 
 ## Blocking
 (none)
 
 ## Polish
-- Box "500 nm": "= 2,5 V, eli noin 2,5 V" repeats the result (wording).
+(none)
 
 ## Checked
-batch delta review, round 2: every pysahdy box in the diff, numbers recomputed in one script (all agree): 1240/500 = 2,48 ≈ 2,5 V; moved box now follows h = ek: 1,602e-19·4,2e-15 = 6,73e-34 ≈ 6,7e-34 J s, two figures from k; no guardrail break, no conflict with old content.
+batch delta review, round 3: the band-gap ratio box and the reworded threshold-voltage box. Recomputed: 630/450 = 1,40. E_g ≈ hc/λ, so E_g is inversely proportional to λ. The approximation sign is kept, consistent with the lesson's E_g ≈ hf. 1240 V nm / 500 nm = 2,48 V ≈ 2,5 V is correct, and the redundant "eli noin" was removed without any change in meaning.
 
 ## Vanhan sisällön löydökset
 (none)

@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 2dc6510f89da171f
+CONTENT-HASH: e6f339d3b8adcaba
 
 ## Blocking
 (none)
 
 ## Polish
-- Box 2: the answer says "Liike-energia $hf - W$"; the lesson's term is *suurin* liike-energia (line 225). True here since every electron's energy is at most that, but "suurin liike-energia" keeps one wording (C).
+(none)
 
 ## Checked
-batch delta review, round 2: every pysahdy box in the diff, numbers recomputed in one script (all agree): 254 nm photon 4,88 eV > zinc 4,31 eV, so the UV-C box is consistent; wave-model delay matches line 119; Na 2,3 eV as line 80; 0,7 and 3,7 eV, ratio 5,3 = "yli viisinkertaiseksi"; each box after the theory it uses; no guardrail break, no conflict with old content.
+batch delta review, round 3: the rewritten wave-model pysahdy box only. Recomputed: P = 1,0e-3 W/m² · 1,0e-19 m² = 1,0e-22 W; W = 4,3 eV = 6,89e-19 J; t = W/P = 6,89e3 s = 1,91 h. All match. The assumptions (collecting area about one atom, intensity) are stated in the task, and the conclusion (electrons leave at once, so the wave model fails) matches the theory. Zinc's 4,3 eV matches the rest of the lesson.
 
 ## Vanhan sisällön löydökset
 (none)

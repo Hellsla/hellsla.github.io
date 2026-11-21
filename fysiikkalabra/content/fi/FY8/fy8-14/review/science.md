@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 41af5cb53fa26fd8
+CONTENT-HASH: 81aa743a160500c4
 
 ## Blocking
 (none)
@@ -8,7 +8,7 @@ CONTENT-HASH: 41af5cb53fa26fd8
 (none)
 
 ## Checked
-batch delta review, round 2: every pysahdy box in the diff, numbers recomputed in one script (all agree): CT dose: many projections whose exposures add, C at this level, consistent with the paragraph above the box; removed lungs/bone box leaves no dangling reference; (1/2)³ = 12,5 %; no guardrail break, no conflict with old content.
+batch delta review, round 3: the CT dose box and the PET timing box. Recomputed: 800 · 0,010 mSv = 8 mSv, and 8/0,1 = 80. This is consistent with line 180 ("kymmeniä kertoja") and with the table's chest X-ray value of about 0,1 mSv (line 191). Summing the projections' doses is a fair simplification (C), and the figures are given as task data. PET: 2x = 30 cm/ns · 0,40 ns = 12 cm, so x = 6,0 cm, on the side of the detector that saw its photon first. That is correct.
 
 ## Vanhan sisällön löydökset
 (none)

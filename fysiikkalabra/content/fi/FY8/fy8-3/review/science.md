@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 270f781d833fc916
+CONTENT-HASH: 80cf52ab4f30f794
 
 ## Blocking
 (none)
@@ -8,7 +8,7 @@ CONTENT-HASH: 270f781d833fc916
 (none)
 
 ## Checked
-batch delta review, round 2: every pysahdy box in the diff, numbers recomputed in one script (all agree): E1→E2 10,2 eV, E4→E5 0,306 → 0,31 eV; 15,0 - 13,6 = 1,4 eV (recoil neglected, C); E5 = -13,6/25 = -0,544 ≈ -0,54 eV; no guardrail break, no conflict with old content.
+batch delta review, round 3: the level-spacing box was removed and a new 5 → 3 box was added after the photon-energy formulas. Recomputed: E5 = −0,544 eV, E3 = −1,511 eV, ΔE = 0,967 eV, λ = 1240/0,967 = 1,28e3 nm (1282 nm with hc = 1239,84 eV nm). This is the Paschen line in the infrared, consistent with the series table that follows. The box comes after the formulas it uses.
 
 ## Vanhan sisällön löydökset
 (none)
