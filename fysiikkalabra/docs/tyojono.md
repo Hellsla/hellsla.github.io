@@ -210,6 +210,7 @@ jää kuvioinnin päällä (opettaja 15.11.; `merkinnoin/` näyttää lopputulok
 **Osa 1 + FY2-pilotti (#768) hyväksytty: opettaja 2026-11-20 klo 01.4x ("I approve")**, ennen/jälkeen-kuvat docs/audits/img24/.
 Osa 2 (FY1) tehty: PR #771 (36 kuvaa, `approve-figures --images` ajettu hyväksynnän jälkeen, site/ rakennettu), odottaa koordinaattorin yhdistämistä.
 **Osa 2 FY1 (#771) hyväksytty: opettaja 2026-11-20 klo 17.5x ("hyväksytty")**, ennen/jälkeen-kuvat docs/audits/img24-fy1/; approve-figures fy1-1…fy1-8 --images tämän perusteella.
+Osa 4 (FY4, 75 kuvaa): Varattu: claude/24-osa4-fy4
 Osat 2–11: FY1, FY3–FY10, FY14 yksi moduuli kerrallaan, oma ketju ja luonnos-PR; kuvat lukuihin kaikilla kielillä,
 `approve-figures`, build, tarkistukset; opettaja katsoo moduulin kerran valmiilta sivulta ennen yhdistämistä.
 Huomiot: FY3 seitsemän kuvaa tunnistetaan kuvauksesta (`~lesson-N`); FY5 `fy5-10/types` "harvennus" → "harventuma" (opettaja 2026-11-19 klo 19.12: harventuma kaikkialla)
