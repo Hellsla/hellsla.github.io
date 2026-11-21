@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: dbe47d0ed867dc62
+CONTENT-HASH: 344f5bf4f95515c0
 
 ## Blocking
-(ei ole)
+(ei)
 
 ## Polish
-- Ei huomautettavaa.
+- Ensimmäinen laatikko (annos): periaate on kappaleessa yllä ("energia jaettuna massalla"); sovellus on yhden askeleen.
+- Toinen laatikko: hajoamistuotteiden osuus on kahta kappaletta ylempänä, joten "päättele" on osin muistamista; suuruusluokka on uutta ja hyvä.
+- Kolmas ok.
 
 ## Vanhan sisällön löydökset
-(ei löydöksiä)
+(ei)
 
 ## Checked
-batch delta review: kolme uutta Pysähdy ja mieti -ruutua luettu ympäröivän tekstin kanssa; kysymys testaa edellisen kappaleen ideaa, vastaus on mallivastaus perusteluineen ja vastattavissa siihen mennessä luetulla.
+batch delta review round 2: laatikoiden vastattavuus.

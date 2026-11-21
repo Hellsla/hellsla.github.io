@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 33e13819be740816
+CONTENT-HASH: 92df377d14231515
 
 ## Blocking
-(ei ole)
+(ei)
 
 ## Polish
-- Ei huomautettavaa.
+- Ensimmäinen laatikko (solmut): kaava $n-1$ on sanasta sanaan yllä, vain sijoitus; pyydä lisäksi piirtämään tai nimeämään solmupintojen laji.
+- Toinen laatikko ($P = k:N$): pelkkä sijoitus kaavaan yllä; kysy mitä tapahtuu, kun $N$ kymmenkertaistuu.
+- Kolmas laatikko ok.
 
 ## Vanhan sisällön löydökset
-(ei löydöksiä)
+(ei)
 
 ## Checked
-batch delta review: kolme uutta Pysähdy ja mieti -ruutua luettu ympäröivän tekstin kanssa; kysymys testaa edellisen kappaleen ideaa, vastaus on mallivastaus perusteluineen ja vastattavissa siihen mennessä luetulla.
+batch delta review round 2: laatikoiden vastattavuus ja vastausmalli.

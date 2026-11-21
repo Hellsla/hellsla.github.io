@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 664ecccfbff46bde
+CONTENT-HASH: 3459addd97328536
 
 ## Blocking
-(ei ole)
+(ei)
 
 ## Polish
-- Ruutu 3 (alfahajoaminen) on gammafotonin aallonpituuden kaavan jälkeen, vaikka aihe on alfahajoaminen; sijoitus on irrallaan kappaleesta.
+- Kolmas laatikko ($\alpha$-hajoaminen): tulos on kaavassa $A-4$, $Z-2$ suoraan yllä; hyvä tarkistus, mutta pyydä lisäksi tyttärytimen nimi.
+- Toinen laatikko: tekstissä sanotaan jo, että neutroni muuttuu protoniksi; kysy ensin, miksi massaluku ei muutu.
 
 ## Vanhan sisällön löydökset
-(ei löydöksiä)
+(ei)
 
 ## Checked
-batch delta review: kolme uutta Pysähdy ja mieti -ruutua luettu ympäröivän tekstin kanssa; kysymys testaa edellisen kappaleen ideaa, vastaus on mallivastaus perusteluineen ja vastattavissa siihen mennessä luetulla.
+batch delta review round 2: laatikoiden vastattavuus, jaksotus.

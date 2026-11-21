@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: da7c9eacab3aeb35
+CONTENT-HASH: 53e6381734e15ea2
 
 ## Blocking
-(ei ole)
+(ei)
 
 ## Polish
-- Ruutu 1 (rauta-56) on kuvan jälkeen, ei sidosenergiakuvaajan; vastaus nojaa aiempaan lukuun *Massavaje ja ytimen sidosenergia*, mikä riittää.
+- Ensimmäinen laatikko (rauta-56) on hyvä: perustelu vaatii kuvaajan lukemisen.
+- Toinen laatikko on sijoitus $N_g=N_0k^g$; kysy lisäksi, milloin neutronien määrä $N_g$ ylittää $N_0$.
+- Kolmas laatikko: $931{,}5\,\text{MeV}/\text{u}$ on edellisessä luvussa ja tässä luvussa myöhemmin; ok.
 
 ## Vanhan sisällön löydökset
-(ei löydöksiä)
+(ei)
 
 ## Checked
-batch delta review: kolme uutta Pysähdy ja mieti -ruutua luettu ympäröivän tekstin kanssa; kysymys testaa edellisen kappaleen ideaa, vastaus on mallivastaus perusteluineen ja vastattavissa siihen mennessä luetulla.
+batch delta review round 2: laatikoiden vastattavuus.

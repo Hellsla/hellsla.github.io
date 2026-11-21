@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 242f88b0dc3fb46b
+CONTENT-HASH: a00c61bd6f174e6b
 
 ## Blocking
-(ei ole)
+(ei)
 
 ## Polish
-- Ruutu 1: kuvateksti sanoo jo, että vihreän kynnysjännite on suurempi kuin punaisen; ruutu vaatii silti yhden päättelyaskeleen (energia-aukko välissä), joten se käy.
+- Ensimmäinen laatikko (vihreä LED): kuvateksti sanoo jo, että vihreän fotonin energia on suurempi kuin punaisen; kysymys on lähes triviaali. Kysy, miten vihreän LEDin kynnysjännite suhtautuu punaisen ja sinisen.
+- Kolmas laatikko: $h \approx ek$ on kaava yllä, pelkkä sijoitus; kysy lisäksi, miksi arvo poikkeaa $6{,}63\cdot 10^{-34}\,\text{J}\,\text{s}$:sta.
+- Toinen laatikko jatkaa esimerkkiä, mutta sama lasku on kappaleessa ($630\,\text{nm}$).
 
 ## Vanhan sisällön löydökset
-(ei löydöksiä)
+(ei)
 
 ## Checked
-batch delta review: kolme uutta Pysähdy ja mieti -ruutua luettu ympäröivän tekstin kanssa; kysymys testaa edellisen kappaleen ideaa, vastaus on mallivastaus perusteluineen ja vastattavissa siihen mennessä luetulla.
+batch delta review round 2: laatikoiden vastattavuus, kaavat yllä.

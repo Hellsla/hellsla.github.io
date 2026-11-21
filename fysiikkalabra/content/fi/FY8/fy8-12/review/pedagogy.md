@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ce11c01684e5f036
+CONTENT-HASH: 038f2a81a5c6b1c0
 
 ## Blocking
-(ei ole)
+(ei)
 
 ## Polish
-- Ei huomautettavaa.
+- Ensimmäinen laatikko ($60\,\text{keV}$ / $12{,}6\,\text{eV}$) on sijoitus; kysy, miksi todellinen määrä on pienempi (osa energiasta ei ionisoi).
+- Toinen laatikko on hyvä, mutta kysymys yhdistää kaksi asiaa; erota "yhteensä" ja "sentillä".
+- Kolmas ok.
 
 ## Vanhan sisällön löydökset
-(ei löydöksiä)
+(ei)
 
 ## Checked
-batch delta review: kolme uutta Pysähdy ja mieti -ruutua luettu ympäröivän tekstin kanssa; kysymys testaa edellisen kappaleen ideaa, vastaus on mallivastaus perusteluineen ja vastattavissa siihen mennessä luetulla.
+batch delta review round 2: laatikoiden vastattavuus; $n_\text{i}=E:W$ esitelty ennen laatikkoa.

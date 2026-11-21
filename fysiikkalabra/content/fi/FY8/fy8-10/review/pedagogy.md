@@ -1,14 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 7bc7557880beb568
+VERDICT: FAIL
+CONTENT-HASH: 2ca0cc60b0531c42
 
 ## Blocking
-(ei ole)
+- Ensimmäinen laatikko (deuteroni): vastaus on sanasta sanaan kappaleessa ja kuvassa yllä ("Syntyneen ytimen… massa on pienempi kuin erillisten nukleonien. Sama energia tarvitaan, jos ydin hajotetaan"). Kysy luku, esim. kuinka paljon massa pienenee atomimassayksikköinä, tai miksi massavaje ei ole kadonnutta ainetta.
 
 ## Polish
-- Ei huomautettavaa.
+- Kolmas laatikko: tekstin virke sanoo jo, että tiukemmin sidottujen tuotteiden reaktio vapauttaa energiaa; luku $5\,\text{MeV}$ on laskettava, mutta kysy myös miksi massa muuttuu.
 
 ## Vanhan sisällön löydökset
-(ei löydöksiä)
+(ei)
 
 ## Checked
-batch delta review: kolme uutta Pysähdy ja mieti -ruutua luettu ympäröivän tekstin kanssa; kysymys testaa edellisen kappaleen ideaa, vastaus on mallivastaus perusteluineen ja vastattavissa siihen mennessä luetulla.
+batch delta review round 2: 3 laatikkoa; yksi toistaa tekstin.

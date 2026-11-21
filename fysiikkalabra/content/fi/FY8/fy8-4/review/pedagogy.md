@@ -1,14 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 6527f2e40cb066d3
+VERDICT: FAIL
+CONTENT-HASH: cc91749a751e9d64
 
 ## Blocking
-(ei ole)
+- Ensimmäinen laatikko (osuma $201$): vastaus on sanasta sanaan kappaleessa ja kuvassa yllä ("Yksittäisen pisteen paikkaa ei voi ennustaa. Kun pisteitä kertyy tuhansia, ne muodostavat raitakuvion"). Laatikko ei testaa mitään uutta. Kysy esim. mikä aaltomallissa määrää, missä kohdassa osumia kertyy eniten, tai miksi sama kuvio syntyy heikolla ja vahvalla valolla.
 
 ## Polish
-- Ei huomautettavaa.
+- Toinen laatikko: $p = h:\lambda$ on kaava juuri yllä; hyvä sijoitustehtävä, mutta kysy myös miksi röntgenfotonilla on suuri liikemäärä.
 
 ## Vanhan sisällön löydökset
-(ei löydöksiä)
+(ei)
 
 ## Checked
-batch delta review: kolme uutta Pysähdy ja mieti -ruutua luettu ympäröivän tekstin kanssa; kysymys testaa edellisen kappaleen ideaa, vastaus on mallivastaus perusteluineen ja vastattavissa siihen mennessä luetulla.
+batch delta review round 2: 3 laatikkoa; yksi vastaus on tekstissä sellaisenaan.

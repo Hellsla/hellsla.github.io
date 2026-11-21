@@ -1,14 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 4abced8a850317a5
+VERDICT: FAIL
+CONTENT-HASH: e8a9b77d5a0c9f4b
 
 ## Blocking
-(ei ole)
+- Ensimmäinen laatikko ("ydin on myöhässä"): vastaus on sanasta sanaan kappaleen kolmessa viimeisessä virkkeessä yllä ("ydin ei vanhene… yhtä todennäköisesti kuin juuri syntynyt"). Kysy tilanne, jossa se pitää soveltaa, esim. $1000$ ydintä, kuinka monta hajoaa seuraavan puoliintumisajan aikana, kun $1$ puoliintumisaika on jo kulunut.
 
 ## Polish
-- Ruutu 1: yllä oleva kappale sanoo lähes sanasta sanaan, ettei ydin vanhene ja todennäköisyys on sama kaikille. Vastaus on luettavissa suoraan; muotoile esim. 'miksi tunnin odotus ei auta'.
+- Toinen laatikko sijaitsee lähdemerkinnän ja valokuvan jäljessä eikä liity niihin; siirrä hajoamislain kappaleen perään.
 
 ## Vanhan sisällön löydökset
-(ei löydöksiä)
+(ei)
 
 ## Checked
-batch delta review: kolme uutta Pysähdy ja mieti -ruutua luettu ympäröivän tekstin kanssa; kysymys testaa edellisen kappaleen ideaa, vastaus on mallivastaus perusteluineen ja vastattavissa siihen mennessä luetulla.
+batch delta review round 2: 3 laatikkoa; yksi toistaa tekstin.

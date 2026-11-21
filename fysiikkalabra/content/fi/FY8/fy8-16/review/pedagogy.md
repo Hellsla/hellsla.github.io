@@ -1,14 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: dd06cdbb9795d4e6
+VERDICT: FAIL
+CONTENT-HASH: 12a708c719f9d068
 
 ## Blocking
-(ei ole)
+- Toinen laatikko (ennen $380\,000$ vuotta): vastaus on sanasta sanaan yllä ("vapaat elektronit sirottivat fotoneja joka suuntaan… hehkuvaa sumua"). Kysy esim. mitä sirontaa vähentää, kun lämpötila laskee $3000\,\text{K}$:iin, tai miksi alkuperäiset $3000\,\text{K}$:n fotonit ovat nyt mikroaaltoja.
 
 ## Polish
-- Ruutu 2 (läpinäkyvyys): varmista, että vetyatomien muodostuminen on kerrottu tekstissä ennen ruutua, jotta vastaus on luettavissa.
+- Ensimmäinen laatikko (galaksi B galaksista A katsottuna) on hyvä: vaatii kuvan ja suhteellisuuden yhdistämistä.
+- Kolmas laatikko on pelkkä sijoitus yllä olevaan kaavaan; kysy lisäksi mikä etäisyys vastaa $14\,000\,\text{km/s}$.
 
 ## Vanhan sisällön löydökset
-(ei löydöksiä)
+(ei)
 
 ## Checked
-batch delta review: kolme uutta Pysähdy ja mieti -ruutua luettu ympäröivän tekstin kanssa; kysymys testaa edellisen kappaleen ideaa, vastaus on mallivastaus perusteluineen ja vastattavissa siihen mennessä luetulla.
+batch delta review round 2: 3 laatikkoa; yksi toistaa tekstin.
