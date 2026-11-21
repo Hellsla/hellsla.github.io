@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: fa562a1451b96017
+CONTENT-HASH: e732f0ec4fbf30d4
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+None.
 
 ## Checked
-- batch delta review: only a framing sentence (chemistry book electron clouds, electron as a wave) added to the retrieval prompt; options and feedback unchanged and right; other changes reflow and approved formula names; hash same at start and end.
+batch delta review: the three new boxes (n − 1 nodes, so two nodes give n = 3 with higher energy, as line 208 says for hydrogen; P ≈ 50/250 = 0.20; the 3p subshell holds 3·2 = 6). Each comes after the theory it uses.

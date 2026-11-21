@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e1064a491ad4fece
+CONTENT-HASH: ec1cd0b7aa948930
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+- Box 2 gives 2.5 V; 1240/500 = 2.48 V. With a three-figure wavelength, 2.48 V would be more consistent, and so would noting that the measured value is a little smaller, as the 630 nm example says.
 
 ## Checked
-- batch delta review: retrieval now asks frequency, not photon energy; recomputed c/470 nm = 6.38e14 Hz, c/630 nm = 4.76e14 Hz; exactly one correct option, both distractors' feedback right; reference to *Electromagnetic radiation and the black-body spectrum* is an existing chapter (fy7-9); hash same at start and end.
+batch delta review: the three new boxes (hf ≈ E_g places the green gap between red 1.9 eV and blue 2.6 eV; U_k ≈ 2.48 V; h = ek = 6.73·10⁻³⁴ J s, with units C·V·s = J s). Recomputed.

@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 1d14143dcfdb5fb2
+CONTENT-HASH: f2b941bb02e3a97a
 
 ## Blocking
-- none
 
 ## Polish
 - none
 
+## Vanhan sisällön löydökset
+- none
+
 ## Checked
-- Delta: lesson.md paragraph cuts (md-paragraphs) and one added sentence in inquiry.json (kertaus prompt, inside the closed "Kertaa" box).
-- fy8-15-stage-herata-390 (Pohdinta, closed Kertaa box visible, layout intact), fy8-15-stage-tutki-390-3, fy8-15-theory-1280-3 (re-cut paragraphs, figure and photos beside text, display formulas, units in LaTeX).
-- Not opened: other figures (unchanged); the added sentence sits in a collapsed box and is natural Finnish.
+- batch delta review (round 1, Pysähdy ja mieti): opened fy8-15-theory-1280-1 to -6 (three new boxes: vapaa kvarkki, sähköinen hylkimisvoima vs gravitaatio, hiukkasen hajoaminen; the second sits beside the CMS photo, no overlap). Answers read in lesson.md: LaTeX, natural Finnish.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

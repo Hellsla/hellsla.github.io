@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 677d7e228a3dc832
+CONTENT-HASH: 7df9b32663887473
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+- Box 3: "The half-value thicknesses are added" should say that the *numbers* of half-value thicknesses are added (2 + 1). The thicknesses themselves (3.4 cm and 1.1 cm) are not.
 
 ## Checked
-- batch delta review: PET staff behind lead plate added as context; quarter = two half-value thicknesses still the one correct option, distractor feedback right (1/16, thinner plate passes more than half); lesson.md approved figures and paragraph cuts only; hash same at start and end.
+batch delta review: the three new boxes (lungs dark and bone light, matching line 178; annihilation at rest gives two opposite photons by momentum conservation; (1/2)³ = 1/8). Recomputed.
