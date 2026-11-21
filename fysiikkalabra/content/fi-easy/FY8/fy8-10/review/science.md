@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fbe3fc8aa2364b89
+CONTENT-HASH: 0d89281e543536a0
 
 ## Blocking
 Ei.
 
 ## Polish
-- Polish: laatikko rivillä 313 käyttää kaavaa $Q = (m_\text{alku} - m_\text{loppu})c^2$ kuusi riviä ennen kuin se esitetään ja nimetään (rivi 319). Fysiikka on oikein, mutta laatikon voisi perustella pelkällä massan pienenemisellä tai siirtää kaavan jälkeen.
+- Laatikko 3: "poistuu systeemistä" on oikein vain, jos systeemiksi rajataan lepomassat; vapautuva energia on tuotteiden liike-energiaa. "vapautuu tuotteiden liike-energiaksi" olisi tarkempi (C).
 
 ## Checked
-batch delta review: kolme uutta pysahdy-laatikkoa ja niiden konteksti tarkistettu fysiikan oikeellisuuden, kaavojen ehtojen ja johdonmukaisuuden osalta; luvut laskettu uudelleen omalla skriptillä. $E_\text{B} = 0{,}0020 \cdot 931{,}5 = 1{,}86 \approx 1{,}9\,\text{MeV}$; hajottamiseen tarvitaan $E_\text{B}$, massa kasvaa $E_\text{B}/c^2$; suurempi $B/A$ samalla $A$:lla tarkoittaa, että energiaa vapautuu. Tiivistelmän kaava muuttui vain esitysmuodoltaan.
+batch delta review, kierros 2: kaikki kolme pysahdy-laatikkoa (kaikki uusia mainiin nähden) ja niiden konteksti tarkistettu; luvut laskettu uudelleen omalla skriptillä. Deuteroni $2{,}2\,\text{MeV}$ (todellinen $2{,}22$), erilliset nukleonit raskaampia, $\Delta m = 2{,}2\,\text{MeV}/c^2$; $0{,}0020\cdot931{,}5 = 1{,}86 \approx 1{,}9\,\text{MeV}$; $1805-1800 = 5\,\text{MeV}$, nukleoniluvun säilyminen mainittu, massa pienenee.
 
 ## Vanhan sisällön löydökset
 Ei.

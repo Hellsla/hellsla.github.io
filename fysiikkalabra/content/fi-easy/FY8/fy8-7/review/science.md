@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a97fa574406645b3
+CONTENT-HASH: 16255354d1008240
 
 ## Blocking
 Ei.
@@ -8,7 +8,7 @@ Ei.
 Ei.
 
 ## Checked
-batch delta review: kolme uutta pysahdy-laatikkoa ja niiden konteksti tarkistettu fysiikan oikeellisuuden, kaavojen ehtojen ja johdonmukaisuuden osalta; luvut laskettu uudelleen omalla skriptillä. Stimuloitu emissio: kaksi fotonia, sama energia, suunta ja vaihe; pienempi kvanttipiste suurempi aukko, sinisiirtymä; $N/t = P/(hf)$ (rivi 228) puolittuu. Oikein.
+batch delta review, kierros 2: kaikki kolme pysahdy-laatikkoa (kaikki uusia mainiin nähden) ja niiden konteksti tarkistettu; luvut laskettu uudelleen omalla skriptillä. Stimuloitu emissio: saapuva fotoni ei absorboidu, energia atomin siirtymästä $E_2 \to E_1$ (sama merkintä kuin teoriassa); suurempi kvanttipiste, pienempi aukko, punainen oikein; $N/t = P/(hf)$ puolittuu oikein.
 
 ## Vanhan sisällön löydökset
 Ei.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0a852ff97f1307dd
+CONTENT-HASH: 5362418331c41db5
 
 ## Blocking
 Ei.
@@ -8,7 +8,7 @@ Ei.
 Ei.
 
 ## Checked
-batch delta review: kolme uutta pysahdy-laatikkoa ja niiden konteksti tarkistettu fysiikan oikeellisuuden, kaavojen ehtojen ja johdonmukaisuuden osalta; luvut laskettu uudelleen omalla skriptillä. Solmuja $n-1$ (teksti rivi 243 sanoo saman), energia kasvaa solmujen mukana (rivi 210); $P = 50/250 = 0{,}20$ laskettu uudelleen; $3\text{p}$: $3 \cdot 2 = 6$ oikein.
+batch delta review, kierros 2: kaikki kolme pysahdy-laatikkoa (kaikki uusia mainiin nähden) ja niiden konteksti tarkistettu; luvut laskettu uudelleen omalla skriptillä. Solmuja $n-1 = 2 \Rightarrow n = 3$, energia suurempi kuin $n=2$ (sama kuin teorian rivillä 210); $P \approx 50/250 = 0{,}20$; 3p: $3 \cdot 2 = 6$; siirretty laatikko sopii taulukon jälkeen.
 
 ## Vanhan sisällön löydökset
 Ei.

@@ -1,7 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: f2b941bb02e3a97a
+CONTENT-HASH: 5cbd4649568cde35
 
 ## Blocking
+- none
 
 ## Polish
 - none
@@ -10,7 +11,4 @@ CONTENT-HASH: f2b941bb02e3a97a
 - none
 
 ## Checked
-- batch delta review (round 1, Pysähdy ja mieti): opened fy8-15-theory-1280-1 to -6 (three new boxes: vapaa kvarkki, sähköinen hylkimisvoima vs gravitaatio, hiukkasen hajoaminen; the second sits beside the CMS photo, no overlap). Answers read in lesson.md: LaTeX, natural Finnish.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review round 2: fy8-15-theory-1280-2 (quark box with $+\tfrac{2}{3}e$, clean), fy8-15-theory-1280-4 (context), fy8-15-theory-1280-5 (decay box under the Q formula); box 2 read in source; answers in lesson.md (full sentences, $Q < 0$ as maths).

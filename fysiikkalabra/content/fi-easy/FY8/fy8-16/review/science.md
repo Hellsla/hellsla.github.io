@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 206c6b8903d1bd28
+CONTENT-HASH: 657cff99b1943eed
 
 ## Blocking
 Ei.
@@ -8,7 +8,7 @@ Ei.
 Ei.
 
 ## Checked
-batch delta review: kolme uutta pysahdy-laatikkoa ja niiden konteksti tarkistettu fysiikan oikeellisuuden, kaavojen ehtojen ja johdonmukaisuuden osalta; luvut laskettu uudelleen omalla skriptillä. Laajenemisella ei ole keskipistettä, mikä vastaa alkuräjähdystekstiä; rekombinaatio ja sironnan harveneminen vastaavat riviä 292; $v = 70 \cdot 100 = 7000\,\text{km/s}$.
+batch delta review, kierros 2: kaikki kolme pysahdy-laatikkoa (kaikki uusia mainiin nähden) ja niiden konteksti tarkistettu; luvut laskettu uudelleen omalla skriptillä. Hubblen laki: B ($2d$, $2v$) A:sta katsottuna etäisyydellä $d$, nopeudella $v$ (sama suunta), keskipisteettömyys oikein; ennen rekombinaatiota vapaat elektronit sirottivat valoa, taustasäteily varhaisin valo; $70\cdot100 = 7000\,\text{km/s}$.
 
 ## Vanhan sisällön löydökset
 Ei.

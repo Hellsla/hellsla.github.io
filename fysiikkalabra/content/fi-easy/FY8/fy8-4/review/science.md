@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 10bcdce415b58b52
+CONTENT-HASH: e7e190ea343fd14f
 
 ## Blocking
 Ei.
@@ -8,7 +8,7 @@ Ei.
 Ei.
 
 ## Checked
-batch delta review: kolme uutta pysahdy-laatikkoa ja niiden konteksti tarkistettu fysiikan oikeellisuuden, kaavojen ehtojen ja johdonmukaisuuden osalta; luvut laskettu uudelleen omalla skriptillä. Kolme uutta pysahdy-laatikkoa: yksittäisten osumien satunnaisuus (johdonmukainen todennäköisyystulkinnan kanssa), $p = h/\lambda$ (kaava esitetty ennen laatikkoa, rivi 1034), $N/t = P/(hf)$ samalla teholla. Fysiikka oikein.
+batch delta review, kierros 2: kaikki kolme pysahdy-laatikkoa (kaikki uusia mainiin nähden) ja niiden konteksti tarkistettu; luvut laskettu uudelleen omalla skriptillä. Kaksoisrako: yksittäinen osuma ennustamaton, todennäköisyys suuri kirkkailla raidoilla oikein; $p = h/\lambda$, puolikas aallonpituus, kaksinkertainen liikemäärä; $N/t = P/(hf)$, punainen enemmän fotoneja. Kaikki oikein.
 
 ## Vanhan sisällön löydökset
 Ei.

@@ -1,7 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 159aee6b382f4cfd
+CONTENT-HASH: 2b5320dbc89de477
 
 ## Blocking
+- none
 
 ## Polish
 - none
@@ -10,7 +11,4 @@ CONTENT-HASH: 159aee6b382f4cfd
 - none
 
 ## Checked
-- batch delta review (round 1, Pysähdy ja mieti): opened fy8-11-theory-1280-1 to -5 (three new boxes: rauta-56, kasvukerroin 0,8, massaero 0,050 u; the first and second sit at figure-row edges without overlap; box 2 straddles a capture boundary but is whole in -1/-2). Answers read in lesson.md: LaTeX, natural Finnish.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review round 2: fy8-11-theory-1280-2 (box 2 k = 0,8), fy8-11-theory-1280-3 (box 3 after the balance figure), fy8-11-theory-1280-5 for context; box 1 (iron-56) read in source; render clean; answers read in lesson.md (powers/units as maths).

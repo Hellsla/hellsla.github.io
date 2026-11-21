@@ -1,7 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 7ab12d391385d335
+CONTENT-HASH: 3c966642f467015a
 
 ## Blocking
+- none
 
 ## Polish
 - none
@@ -10,7 +11,4 @@ CONTENT-HASH: 7ab12d391385d335
 - none
 
 ## Checked
-- batch delta review (round 1, Pysähdy ja mieti): opened fy8-13-theory-1280-1 to -5 (three new boxes: kaksi kudospalaa, radon, annosnopeus 8 µSv/h; the radon box sits beside the Japanese dosimeter photo, no overlap; units in LaTeX). Answers read in lesson.md: LaTeX, natural Finnish.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review round 2: fy8-13-theory-1280-2 (radon box beside photo), fy8-13-theory-1280-4/5 (dose-rate box under the inverse-square figure); box 1 (dose per mass) read in source; render clean; answers read in lesson.md ($\mu\text{Sv/h}$, $3{,}82\,\text{d}$ as maths).

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: dad34d203d06b9c2
+CONTENT-HASH: 078bd63ebe7f0cb3
 
 ## Blocking
 Ei.
@@ -8,7 +8,7 @@ Ei.
 Ei.
 
 ## Checked
-batch delta review: kolme uutta pysahdy-laatikkoa ja niiden konteksti tarkistettu fysiikan oikeellisuuden, kaavojen ehtojen ja johdonmukaisuuden osalta; luvut laskettu uudelleen omalla skriptillä. Na-23: $N = 23 - 11 = 12$ ($N = A - Z$ määritelty ennen laatikkoa); beeta miinus: $Z+1$, $A$ sama (sama kuin kuvan decays teksti); U-238 alfa: $234$, $90$ (sama kuin fy8-10:n reaktioesimerkki).
+batch delta review, kierros 2: kaikki kolme pysahdy-laatikkoa (kaikki uusia mainiin nähden) ja niiden konteksti tarkistettu; luvut laskettu uudelleen omalla skriptillä. ${}^{23}_{11}$Na: $N = 12$; C-14 $\beta^-$: $Z = 7$, $A = 14$, N-14; U-238 $\alpha$: $A = 234$, $Z = 90$ (Th-234). Kaikki oikein, siirretyt laatikot sopivat sijaintiinsa.
 
 ## Vanhan sisällön löydökset
 Ei.

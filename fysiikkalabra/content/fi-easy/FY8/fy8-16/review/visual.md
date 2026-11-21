@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 206c6b8903d1bd28
+CONTENT-HASH: 657cff99b1943eed
 
 ## Blocking
+- none
 
 ## Polish
-- none
+- [Minor] pysahdy 3 answer is a bare formula chain; add a sentence ("Galaksi etääntyy nopeudella $7000\,\text{km/s}$.").
 
 ## Vanhan sisällön löydökset
 - none
 
 ## Checked
-- batch delta review (round 1, Pysähdy ja mieti): opened fy8-16-theory-1280-1 to -6 (three new boxes: galaksi X, 380 000 vuotta, Hubblen vakio 70 km/s/Mpc; fractions in the question render cleanly; box 1 straddles the -1/-2 boundary but is whole). Answers read in lesson.md: LaTeX, natural Finnish.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review round 2: fy8-16-theory-1280-3 (CMB box), fy8-16-theory-1280-5 (Hubble box with $70\,\tfrac{\text{km/s}}{\text{Mpc}}$ renders, clean), fy8-16-stage-selita-390-6/9 (390 px); box 1 (galaxy B) read in source; answers in lesson.md.

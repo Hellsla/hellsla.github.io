@@ -1,7 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: fbe3fc8aa2364b89
+CONTENT-HASH: 0d89281e543536a0
 
 ## Blocking
+- none
 
 ## Polish
 - none
@@ -10,7 +11,4 @@ CONTENT-HASH: fbe3fc8aa2364b89
 - none
 
 ## Checked
-- batch delta review (round 1, Pysähdy ja mieti): opened fy8-10-theory-1280-1 to -5 (three new boxes: ydin erillisiksi nukleoneiksi, massavaje 0,0020 u, reaktioenergia; each follows its paragraph, clear of the beside-figures; units and decimal comma right). Answers read in lesson.md: LaTeX, natural Finnish.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review round 2: fy8-10-theory-1280-2/3/4 (all three boxes render clean, closed) and fy8-10-stage-selita-390-5 (box 3 at 390 px, readable, no overflow); answers read in lesson.md (units LaTeX, $\tfrac{\text{MeV}}{c^2}$ ok).

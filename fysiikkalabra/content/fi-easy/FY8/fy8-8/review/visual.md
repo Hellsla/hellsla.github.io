@@ -1,7 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: dad34d203d06b9c2
+CONTENT-HASH: 078bd63ebe7f0cb3
 
 ## Blocking
+- none
 
 ## Polish
 - none
@@ -10,7 +11,4 @@ CONTENT-HASH: dad34d203d06b9c2
 - none
 
 ## Checked
-- batch delta review (round 1, Pysähdy ja mieti): opened fy8-8-theory-1280-1, -2, -3, -4 (three new boxes: natrium-23, beeta miinus, uraani-238 alfahajoaminen; nuclide notation renders in the questions; boxes clear of figures; closed Vastaus). Answers read in lesson.md: LaTeX, natural Finnish.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review round 2: fy8-8-theory-1280-1/2/4 (boxes 1 and 2 clean with nuclide notation ${}^{23}_{11}\text{Na}$ rendering; box 3 follows the decay material); answers read in lesson.md (nuclide symbols as maths).
