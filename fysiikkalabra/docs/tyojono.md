@@ -193,6 +193,7 @@ Jaettu (build.py / site.css), yksin, #740:n ja #733:n jälkeen ennen kohtaa 21 (
 
 ## 24. Uudet kuvat sivustolle (opettaja 2026-11-19; kuvat hyväksytty 15.–18.11.)
 Varattu: claude/24-osa3-fy3 (osa 3, FY3, draft-PR)
+Varattu: claude/24-fy4-koe-sovella (FY4:n avoimet koe/Sovella-kuvat, draft-PR)
 Osa 1 (kuvapohja) ja FY2-pilotti tehty (#768, `scripts/figimage.py`, NOTES.md §3); osat 2–11 vapaat.
 662 Codexin uudelleen piirtämää kuvaa FY1–FY10 ja FY14, opettaja hyväksynyt ja tarkistanut vaihdettaviksi. Lähde: haara
 `claude/dazzling-pasteur-kws2vo`, kansio `uudet_kuvat/` (README, `<MODUULI>-hyvaksytyt-kuvat.zip`: `kuvat/`, `merkinnoin/`,
