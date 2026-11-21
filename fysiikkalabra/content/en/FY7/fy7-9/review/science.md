@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 54bcd8e2aa81ada5
+CONTENT-HASH: 1bcb339aee1868a7
 
 ## Blocking
-
+None.
 
 ## Polish
-- None.
+None.
 
 ## Checked
-batch delta review: f = c/lambda: 700 nm 4.3e14 Hz, 400 nm 7.5e14 Hz recomputed; violet correct, the two distractors' feedback right; one correct option; Wien Ennusta (peak halves, 300 K stone infrared) not revealed.
+batch delta review: every new ```pysahdy block (question and answer) against the physics guardrails and the lesson's own wording; all EM waves at c; room temperature IR only, visible ~800 K as in lesson; Wien 1.0 µm with lesson's b recomputed. No option-based choices changed. Scope per teacher 2026-11-20: only the pysahdy blocks.

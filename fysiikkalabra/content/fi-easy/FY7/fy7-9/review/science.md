@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8ec4e32680f975fa
+CONTENT-HASH: 0609616a4de1ebf2
 
 ## Blocking
 
+
 ## Polish
 
+
 ## Checked
-batch delta review: recomputed f = c/λ: 4,3e14 Hz for 700 nm and 7,5e14 Hz for 400 nm; violet is the one correct option and every piece of feedback is right; Ennusta (Wien shift, 300 K infrared) not revealed; lesson-answers.py matches.
+batch delta review: fy7-9: sähkömagneettiset aallot tyhjiössä nopeudella c, huoneenlämpöinen kappale lähes vain infrapunaa (noin 800 K sama kuin rivillä 517), Wien 2900 K → 1,0 µm infrapunaa laskettu uudelleen. Scope: only the new pysahdy blocks (teacher 2026-11-20).

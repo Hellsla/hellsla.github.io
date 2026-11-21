@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: ba9e52f4328dcfb2
+CONTENT-HASH: 59fbac9fc2af8c61
 ## Blocking
-- None.
+
 ## Polish
-- None.
+- none
 ## Checked
-batch delta review: Prompt no longer names the speaker cable; still a clean r-dependence retrieval of the straight-conductor field. Retrieval-free of Ennuste answers.
+batch delta review: the three new pysahdy blocks (question, answer, physics, numbers recomputed, S2 wording, fit with the lesson text and its terms); old content not judged.

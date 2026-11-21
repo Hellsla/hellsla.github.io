@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ba9e52f4328dcfb2
+CONTENT-HASH: 59fbac9fc2af8c61
 
 ## Blocking
 
+
 ## Polish
+- Kommutaattoripysähdy: "jäisi värähtelemään tähän asentoon" → "värähtelisi tämän asennon ympärillä ja pysähtyisi siihen" kertoo tarkemmin, että asento on tasapainoasema.
 
 ## Checked
-batch delta review: speaker-cable context removed from the retrieval prompt; 10 µT · 1,0/2,0 = 5,0 µT, one correct option, distractor feedback (1/r, not 1/r²) right; Ennusta not revealed.
+batch delta review: fy7-4: virran suunnan kääntö → voima alas, moottori ilman kommutaattoria (sama "kohtisuoraan kenttää vastaan" -asento kuin rivillä 92), F = IlB sin α = 0,25 N laskettu uudelleen. Scope: only the new pysahdy blocks (teacher 2026-11-20).

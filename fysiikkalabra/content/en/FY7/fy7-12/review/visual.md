@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: d7c32b096b14dea4
+CONTENT-HASH: 187f1bcc318a03bc
 
 ## Blocking
 
 ## Polish
+- Question and answer blocks render cleanly (label, question, "Answer" summary); no red KaTeX source.
 
 ## Checked
-- Delta round 3 (en): opened fy7-12-stage-herata-390 (Think about it with the closed Recall: refraction box); layout intact. The only change is 19.8 -> 19.7 degrees in the retrieval feedback; all three occurrences in inquiry.json are LaTeX with ^\circ and a decimal point.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: read the three new "Stop and think" blocks in the diff, checked the rebuilt page (3 blocks, no katex-error), ran check_layout at 360 px on the English page: OK; hash unchanged at start and end.

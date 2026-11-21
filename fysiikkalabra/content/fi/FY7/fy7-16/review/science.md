@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 95d601c7ebdb1dbf
+CONTENT-HASH: a04cee3f0da6f997
 
 ## Blocking
 
+
 ## Polish
+- First block's question is ungrammatical: "3 mm:n korkeudelle 20 mm:n korkeudelle" → "3 mm:n korkeudelta 20 mm:n korkeudelle" (as written the situation is unclear).
 
 ## Checked
-- batch delta review: The two inquiry feedbacks now say "Kattilan pohja kuitenkin lämpenee itse" / "pohja lämpenee itse" instead of "lämpö syntyy kattilan pohjassa". This is closer to the guardrail (heat is energy in transfer, not something created), and the mechanism is unchanged and correct: the coil's changing field induces eddy currents in the base, and their electrical energy becomes the base's internal energy. The misconception paragraph now reads "Pyörrevirrat muuttavat sähköenergiaa kattilan pohjan sisäenergiaksi, ja lasi lämpenee vain kuumasta kattilasta siirtyvän lämmön vuoksi". That is correct. The glass-ceramic's own losses are negligible (C). The wording agrees with the feedback and with the rest of the lesson. The distractors are still wrong and their feedback says why. The correct option is unchanged. No numbers changed. The hash is the same at the start and the end.
+batch delta review: 3 pysahdy blocks: lifted receiver → less flux through it → smaller induced voltage (right); glass does not conduct → no eddy currents, heated only by the pot (right); A = 0,18·50 = 9,0 dB, P/P₀ = 10^(−0,90) = 0,126 ≈ 13 % recomputed with the lesson's A = aL and P = P₀·10^(−A/10 dB). Worked-example split is presentation only.

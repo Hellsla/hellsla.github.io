@@ -1,6 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: a2889d1cea15a4dc
+CONTENT-HASH: 8f30dc19d8991a0f
 ## Blocking
+(none)
 ## Polish
+- Block 1 (charger distance) answer: "a smaller flux and a smaller change in it" is blurry; say the flux amplitude falls, so the change of flux per second is smaller.
 ## Checked
-batch delta review: reworded feedback and misconception text in inquiry.json and lesson.md; each still repairs the misconception (eddy currents heat the pan base, glass warms only from the pan), is consistent with the rest of the lesson and clear in English.
+batch delta review (round 1): the 3 new Pysähdy ja mieti blocks (```pysahdy), each judged for placement, wording, level for a 16-19-year-old, numbers and sign/direction logic recomputed, and consistency with the lesson text, formulas, tables and notation next to it. Old content not reviewed beyond what the blocks rely on.

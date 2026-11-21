@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4696d3cd76b16bc6
+CONTENT-HASH: 7a13db15ea11f6eb
+
 ## Blocking
+(none)
 
 ## Polish
-- None.
+- Lohko 3: kirjoita ensin symbolinen ratkaisu ja sitten sijoitus erillisenä (kaava on jo annettu, mutta ratkaisu alkaa jo numeroilla).
+
+## Vanhan sisällön löydökset
+(none from this batch review)
+
 ## Checked
-batch delta review (round 2): retrieval (compass beside a wire, Maan kenttä) belongs to the compass hook, retrieves the prior knowledge, reveals no Ennusta answer.
+batch delta review: kolme Pysähdy ja mieti -lohkoa (```pysahdy): kysymys ennen vastausta, suomi ja yksiköt LaTeXina, fysiikka ja luvut tarkistettu uudelleen laskemalla, sopii lukuun ja kielelle 16–19-vuotiaille.

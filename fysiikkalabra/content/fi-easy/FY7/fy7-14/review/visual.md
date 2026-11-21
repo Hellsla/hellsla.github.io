@@ -1,14 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: e0098bccffc6e74b
+VERDICT: FAIL
+CONTENT-HASH: dc00f9cd860cebae
 
 ## Blocking
+- Block 3 (2nd = 332,5 nm): the answer's calculation chain is an unbroken inline formula wider than the box, cut off at the right edge and reachable only by scrolling sideways (clipped at 360 px, answer open; fits at 390 px); the page's chain-to-rows layout (scripts/mathlayout.py) is not applied inside the Pysähdy ja mieti answer. Fix in the shared component (stopthink.py/build.py), not by splitting the chain in the lesson.
 
 ## Polish
+- Block 3 sits between the condition's "missä k = 0, 1, 2, …" and the paragraph that continues it ("Toinen tapaus…"); acceptable, but it splits the formula's explanation.
 
 ## Checked
-- Delta round 2. The packet's captures show the Tiivistelmä box closed, so I opened my own 1280 px capture of the opened box (scratchpad easy.png): the list sits in its narrow column beside the scene figure, the reworded bullet "Heijastuksen estävässä pinnoitteessa on kaksi siirtymää. …" wraps cleanly with no clipping, and the page's scrollWidth is 1280 (no horizontal overflow). The sticky stage bar over the list is a screenshot artefact.
-- Opened fy7-14-theory-1280-3.png (surrounding layout, figure, closed boxes intact).
-- The new wording is fluent Finnish, and the unit and quantity LaTeX in the bullet are unchanged. The Heijastuksenestopinnoite term stays in the concept chip and in the text.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: all 3 new "Pysähdy ja mieti" blocks of fy7-14 (fi-easy) rendered from the built page and photographed with the answer open at 390 px (all) and 360 px and 1280 px (overflow and KaTeX error measurement); label, question, Vastaus summary, spacing, placement beside figures/headings, maths typography ({,}, units, \tfrac, \cdot, colon division) and Finnish read. Listed older captures not reopened (unchanged old content, taken before the blocks existed). No page-level overflow, no red KaTeX source.

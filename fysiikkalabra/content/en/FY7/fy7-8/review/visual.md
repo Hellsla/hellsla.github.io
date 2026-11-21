@@ -1,14 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: c7b50ebcfc2a22c7
+VERDICT: FAIL
+CONTENT-HASH: 9766d2a5d3cf1297
 
 ## Blocking
-(none)
+- [Major] A new "Stop and think" answer holds a formula chain that does not fit 360 px: the $U_2 = U_1 \cdot \tfrac{N_2}{N_1} = \ldots = 20.0\,\text{V}$ chain (second block). `check_layout.py fy7-8 --width 360` fails (en, fi and fi-easy: "clipped or scrolling", at `details.stop-think-a > span.katex.kx-wide`). The answer is a plain `<p>` in `<details class="stop-think-a">`, so `mathlayout.py` does not break the chain into aligned rows as it does in the rest of the page. Fix in the shared component (stopthink.py / mathlayout.py or site.css), not per lesson.
 
 ## Polish
-(none)
+- Question and answer blocks render cleanly at 390 px (label, question, "Answer" summary), no red KaTeX source.
 
 ## Checked
-- Delta round 3: fy7-8-stage-herata-390.png (Pohdinta) and my own 360 px capture of the retrieval task with all feedback opened: calculation rows aligned at the equals signs, nothing clipped, no page overflow. The capture was of the built preview (Finnish); layout is language-independent.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+- batch delta review: opened the Theory capture with the new block, read all three blocks in the diff, rebuilt preview checked (3 blocks, no katex-error), ran check_layout at 360 px; hash unchanged at start and end.

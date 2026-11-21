@@ -1,9 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 103e5d090d023a78
+VERDICT: FAIL
+CONTENT-HASH: 6f96118aab0cac17
 
 ## Blocking
+- [Major] A new "Stop and think" answer holds a formula chain that does not fit 360 px: the $B = \mu_0 \tfrac{N I}{l} = \ldots \approx 2.51\,\text{mT}$ chain (third block), about 117 px too wide. `check_layout.py fy7-3 --width 360` fails (en, fi and fi-easy: "clipped or scrolling", at `details.stop-think-a > span.katex.kx-wide`). The answer is a plain `<p>` in `<details class="stop-think-a">`, so `mathlayout.py` does not break the chain into aligned rows as it does in the rest of the page. Fix in the shared component (stopthink.py / mathlayout.py or site.css), not per lesson.
 
 ## Polish
+- Question and answer blocks render cleanly at 390 px (label, question, "Answer" summary), no red KaTeX source.
 
 ## Checked
-- batch delta review: opened fy7-3-stage-herata-390.png (Pohdinta with the changed optional retrieval task, collapsed in the capture); layout intact, quantities in LaTeX; the changed wording read from the diff; no figures changed; the opened retrieval card itself was not captured.
+- batch delta review: opened the Theory capture with the new block, read all three blocks in the diff, rebuilt preview checked (3 blocks, no katex-error), ran check_layout at 360 px; hash unchanged at start and end.

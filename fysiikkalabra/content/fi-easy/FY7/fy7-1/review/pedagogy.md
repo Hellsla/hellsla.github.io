@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 8c321638a948f33b
+CONTENT-HASH: b8fd3ad9fc2406d5
 ## Blocking
-(none)
+
 ## Polish
-- Vastausvaihtoehdoissa sanotaan 'kohtisuorat siirtymät'; selkeä suomi voisi selittää 'kateetti' ensimmäisellä kerralla.
+- Block 3 answer has two sentences; fine, but state "kohtisuorassa" fields once as "90° kulmassa" for clarity (optional).
 ## Checked
-batch delta review (SCOPE: Pohdinta retrieval task): orienteer 300 m north + 400 m east fits the opening map-and-compass scene, retrieves the vector sum, reveals neither Ennusta answer.
+batch delta review: the three new pysahdy blocks (question, answer, physics, numbers recomputed, S2 wording, fit with the lesson text and its terms); old content not judged.

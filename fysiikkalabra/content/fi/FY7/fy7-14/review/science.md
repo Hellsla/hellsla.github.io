@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: abb1a90e48c8092a
+CONTENT-HASH: 8b3f9b2cb78999c7
 
 ## Blocking
 
+
 ## Polish
-- lesson.md:357 — the summary bullet now says "Heijastuksen estävässä pinnoitteessa" while the glossary term is "heijastuksenestopinnoite"; same meaning, no physics issue (language only, C).
+- (none)
 
 ## Checked
-- Delta round 2: only the Tiivistelmä bullet's opening words changed; the physics is unchanged: two phase inversions on a coating, thinnest destructive coating d = λ : (4n), MgF2 99,6 nm for 550 nm (550 / (4 · 1,38) = 99,6 nm).
-- The new wording names the same object as the theory and the glossary; no contradiction with the soap-film bullet (one inversion) or the rest of the summary.
-- Rest of the lesson carried from the round-1 PASS (hash 5604a79006b73b70); no numbers, symbols or inquiry content touched.
+batch delta review: 3 pysahdy blocks: glass→air reflection not inverted (right, by the lesson's rule); thick window glass has many reinforced and weakened wavelengths across the visible range, colours mix to white (fair simplification, C); soap film with one inversion → constructive 2nd = (k+½)λ, 2·1,33·125 = 332,5 nm, k = 0 → λ = 665 nm, red (right, matches the Kaava conditions).

@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: f1f9856c52feb3eb
+CONTENT-HASH: 3fac6b60211af284
 ## Blocking
 
 ## Polish
-
+- none
 ## Checked
-delta review (round 3): 19,8 to 19,7 degrees (19,745 rounds to 19,7) in the retrieval task and its three feedbacks; consistent, no pedagogy effect, earlier Polish resolved.
+batch delta review: the three new pysahdy blocks (question, answer, physics, numbers recomputed, S2 wording, fit with the lesson text and its terms); old content not judged.

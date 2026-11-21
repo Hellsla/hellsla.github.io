@@ -1,11 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 9e67b6ab8a650b06
+VERDICT: FAIL
+CONTENT-HASH: 076c830f204c7978
 
 ## Blocking
-
+- B, contradicts the lesson (block after the sparkler photo, ~line 350): "Näkyvää valoa tulee vasta, kun kappale on kuumentunut noin 800 K:n lämpötilaan" says no visible light is emitted below about 800 K, but the paragraph just above says the thermal spectrum is continuous and contains all wavelengths; at 800 K there is only enough red light for the eye to see a glow. Fix, for example: "Näkyvää valoa on niin vähän, että silmä havaitsee hehkun vasta noin 800 K:n lämpötilassa."
 
 ## Polish
-- Glowing iron emits very little at 400 nm (its peak is in the infrared); "valkohehkuisen raudan" or a plainer source of violet light would fit the chapter's own picture better.
+- (none)
 
 ## Checked
-batch delta review: f = c/lambda: 4,3e14 Hz (700 nm), 7,5e14 Hz (400 nm) recomputed; one correct option, both distractors' feedback right; Ennusta (Wien shift, 300 K stone) not revealed.
+batch delta review: 3 pysahdy blocks: all EM waves travel at c in vacuum (right); a room-temperature body radiates mainly IR (right), the 800 K sentence needs the fix above; λ_max = 2,898·10⁻³/2900 = 0,999 µm ≈ 1,0 µm, IR (right, b as in the Kaava block).

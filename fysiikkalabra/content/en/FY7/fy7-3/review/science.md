@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 103e5d090d023a78
+CONTENT-HASH: 6f96118aab0cac17
 
 ## Blocking
+None.
 
 ## Polish
-
+None.
 
 ## Checked
-batch delta review: retrieval prompt now asks where the needle points beside a wire with no current; exactly one correct option (along the Earth's field), distractor feedback right (copper not magnetic, Earth's field about 50 uT, dipole aligns with field); no Ennusta answer revealed.
+batch delta review: every new ```pysahdy block (question and answer) against the physics guardrails and the lesson's own wording; downward current clockwise from above (right-hand rule as lesson line 117); coil rule as line 126, P is S pole; B = 2.51 mT recomputed. No option-based choices changed. Scope per teacher 2026-11-20: only the pysahdy blocks.

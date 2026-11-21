@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3edac70d4f72de3b
+CONTENT-HASH: ea82a77916d1dfc0
 
 ## Blocking
 
@@ -8,4 +8,4 @@ CONTENT-HASH: 3edac70d4f72de3b
 - (none)
 
 ## Checked
-batch delta review: Pohdinta retrieval (orienteer 300 m N + 400 m E) recomputed: sqrt(300²+400²) = 500 m; one correct option, both distractors' feedback right; lesson-answers.py agrees; no Ennusta answer (dipole falloff, side field) revealed.
+batch delta review: 3 pysahdy blocks: halved magnet keeps both poles (right); compass N end points away from the magnet's N pole, field leaves N outside (right); sqrt(30² + 40²) = 50 µT recomputed, matches the lesson's perpendicular-sum formula just above.

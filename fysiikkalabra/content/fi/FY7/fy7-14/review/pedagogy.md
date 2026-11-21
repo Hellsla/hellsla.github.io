@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: abb1a90e48c8092a
+CONTENT-HASH: 8b3f9b2cb78999c7
 
 ## Blocking
+(none)
 
 ## Polish
+- Lohko 3: mainitse, että vahvistuminen $k=0$ tarkoittaa ehtoa $2nd=(k+\tfrac{1}{2})\lambda$ (nyt vain $\tfrac12\lambda$ ilman viittausta k:hon).
+
+## Vanhan sisällön löydökset
+(none from this batch review)
 
 ## Checked
-- Delta is one Tiivistelmä bullet: "Heijastuksenestopinnoitteessa" became "Heijastuksen estävässä pinnoitteessa"; meaning, formula d = λ : (4n) and the MgF2 numbers are unchanged.
-- The new wording is correct, readable Finnish and keeps the term a student meets in the lesson body.
-- No effect on figures, inquiry, exit ticket or the learning path; the earlier pass stands.
+batch delta review: kolme Pysähdy ja mieti -lohkoa (```pysahdy): kysymys ennen vastausta, suomi ja yksiköt LaTeXina, fysiikka ja luvut tarkistettu uudelleen laskemalla, sopii lukuun ja kielelle 16–19-vuotiaille.

@@ -1,14 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: f8678b268c4d5d97
-
+CONTENT-HASH: 8af16a62c3e241bc
 ## Blocking
-
 (none)
-
 ## Polish
-
-the opening sentence already names adding and cancelling as the source of the colours, which gives away a little of the Teoria; consider cutting it.
-
+- Block 2 (window glass, no colours) introduces a claim the lesson text never makes (thick layers mix to white), so a student cannot reason it from the text; add a clause to the text or a hint ("count how many wavelengths fit").
 ## Checked
-
-batch delta review (round 2): The retrieval (975 nm = 1,5 wavelengths, red laser) retrieves interference and is tied to the soap film; the model is not given, and Ennusta (a 20 nm film) is not disclosed.
+batch delta review (round 1): the 3 new Pysähdy ja mieti blocks (```pysahdy), each judged for placement, wording, level for a 16-19-year-old, numbers and sign/direction logic recomputed, and consistency with the lesson text, formulas, tables and notation next to it. Old content not reviewed beyond what the blocks rely on.

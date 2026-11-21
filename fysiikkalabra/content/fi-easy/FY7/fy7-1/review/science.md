@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8c321638a948f33b
+CONTENT-HASH: b8fd3ad9fc2406d5
 
 ## Blocking
 
+
 ## Polish
-- The "700 m" option's feedback could add that 700 m is the distance walked, not the displacement.
+- Toinen pysähdy: vastaukseen voisi lisätä, että neula on magneetin pohjoisnavan *vieressä akselin jatkeella*; sivulla kenttä ei osoita suoraan poispäin navasta.
 
 ## Checked
-batch delta review: retrieval task recomputed (hypot(300, 400) = 500 m; 700 and 100 m are wrong, and the feedback says why); exactly one correct option; does not reveal either Ennusta answer (1/r³ falloff, field beside the magnet); new to-scale figure descriptions (B_h north, B_m east; B points down and north in Finland) are correct; lesson-answers.py runs.
+batch delta review: fy7-1: magneetin katkaisu, kompassi navan vieressä, kohtisuorat kentät 30/40/50 µT laskettu uudelleen. Scope: only the new pysahdy blocks (teacher 2026-11-20).

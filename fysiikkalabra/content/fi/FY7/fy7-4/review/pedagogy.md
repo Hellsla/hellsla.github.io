@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5de74d227b4171df
+CONTENT-HASH: 039c8cf75efde315
+
 ## Blocking
+(none)
 
 ## Polish
-- The retrieval lost its speaker-cable setting and is now a bare 1/r calculation; a link to the hook's wire in a magnet's field would tie it to the phenomenon again.
+(none)
+
+## Vanhan sisällön löydökset
+(none from this batch review)
+
 ## Checked
-batch delta review (round 2): retrieval retrieves B~1/r needed for the wire-force model; no Ennusta answer disclosed; distractors are real misconceptions.
+batch delta review: kolme Pysähdy ja mieti -lohkoa (```pysahdy): kysymys ennen vastausta, suomi ja yksiköt LaTeXina, fysiikka ja luvut tarkistettu uudelleen laskemalla, sopii lukuun ja kielelle 16–19-vuotiaille.

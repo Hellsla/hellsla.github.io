@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: d7c32b096b14dea4
+CONTENT-HASH: 187f1bcc318a03bc
 ## Blocking
-
+(none)
 ## Polish
-
+- none
 ## Checked
-delta review (round 3): 19,8 to 19,7 degrees (19,745 rounds to 19,7) in the retrieval task and its three feedbacks; consistent, no pedagogy effect, earlier Polish resolved.
+batch delta review (round 1): the 3 new Pysähdy ja mieti blocks (```pysahdy), each judged for placement, wording, level for a 16-19-year-old, numbers and sign/direction logic recomputed, and consistency with the lesson text, formulas, tables and notation next to it. Old content not reviewed beyond what the blocks rely on.

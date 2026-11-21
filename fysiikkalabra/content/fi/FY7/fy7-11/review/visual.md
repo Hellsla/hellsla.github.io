@@ -1,9 +1,8 @@
-VERDICT: PASS
-CONTENT-HASH: e5ee8e9a81448ed0
-
+VERDICT: FAIL
+CONTENT-HASH: 4340af3554a43ee9
 ## Blocking
-
+- Pysähdy ja mieti answer (opened, `details.stop-think-a`) is a formula chain wider than the 360 px column, clipped or scrolling by 151 px at 360 px (`check_layout.py fy7-11 --width 360`, fi, en and fi-easy): `v = c : n = 3{,}00 \cdot 10^8\,\text{m/s} : 1{,}3315 \approx 2{,}25 \cdot 10^8\,\text{m/s}`. Essential content of the new block is not fully shown. Fix in the shared component (scripts/stopthink.py: pass the answer through the same chain/row layout as lesson text, scripts/mathlayout.py), never by hand-splitting the lesson text.
 ## Polish
 
 ## Checked
-- batch delta review: contact-2 opened (rainbow geometry, n(lambda) graph, prism, deviation graph, rainbow scene, worked example); teacher-approved figures fine.
+batch delta review: read the diff (3 new pysahdy blocks: placement, question wording, answer notation), ran check_layout.py at 360 px with the answer open; spot-checked sibling lessons' captures for block rendering (label, closed answer, spacing). Own 390 px capture of this lesson not opened.

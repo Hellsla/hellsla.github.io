@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 6538f9f58df678d2
+CONTENT-HASH: f88fb2acc0e9fea9
 ## Blocking
 (none)
 ## Polish
-- none
+- Block 1 (cut magnet) repeats, almost word for word, the paragraph directly above it, so it checks reading rather than thinking; a variant not in the text (for example cutting the magnet again) would work better.
 ## Checked
-batch delta review: Pohdinta retrieval task now belongs to the chapter phenomenon, still retrieves the intended prior knowledge, and reveals no Ennusta answer. The orienteer task keeps the vector-sum prior (perpendicular legs, Pythagoras) and fits the compass/map opening; no Ennusta answer (field vs distance, side of a magnet) is touched.
+batch delta review (round 1): the 3 new Pysähdy ja mieti blocks (```pysahdy), each judged for placement, wording, level for a 16-19-year-old, numbers and sign/direction logic recomputed, and consistency with the lesson text, formulas, tables and notation next to it. Old content not reviewed beyond what the blocks rely on.

@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6538f9f58df678d2
+CONTENT-HASH: f88fb2acc0e9fea9
 
 ## Blocking
-
+None.
 
 ## Polish
-- None.
+None.
 
 ## Checked
-batch delta review: orienteer 300 m N + 400 m E: recomputed hypot = 500 m (700, 100 m distractors and their feedback right); one correct option; no Ennusta answer (dipole field falloff, field direction) revealed; added figures.json caption translations match figures.py.
+batch delta review: every new ```pysahdy block (question and answer) against the physics guardrails and the lesson's own wording; pole pairs; compass N end away from N pole (field leaves N); 30/40/50 µT Pythagoras recomputed. No option-based choices changed. Scope per teacher 2026-11-20: only the pysahdy blocks.

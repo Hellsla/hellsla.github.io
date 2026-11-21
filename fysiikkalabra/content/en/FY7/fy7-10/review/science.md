@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 1eafe94d0d7fb8f5
+CONTENT-HASH: 7f39992592747fb6
 
 ## Blocking
-
+None.
 
 ## Polish
-- None.
+None.
 
 ## Checked
-batch delta review: law of reflection on a lake surface: 30 deg on the other side of the normal; 60 deg and back-along-path distractors refuted correctly; one correct option; refraction Ennusta (40 deg, 30 to 60 deg) not revealed.
+batch delta review: every new ```pysahdy block (question and answer) against the physics guardrails and the lesson's own wording; f unchanged, λ 1.33× shorter (lesson line 41); diamond 1.24e8 m/s; Snell 25° towards normal recomputed. No option-based choices changed. Scope per teacher 2026-11-20: only the pysahdy blocks.

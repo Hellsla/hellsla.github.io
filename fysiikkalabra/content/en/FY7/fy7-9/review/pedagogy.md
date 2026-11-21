@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 54bcd8e2aa81ada5
+CONTENT-HASH: 1bcb339aee1868a7
 ## Blocking
 (none)
 ## Polish
-- none
+- Block 2 (room-temperature object) answer repeats the two sentences just above it; consider asking why a toaster element glows but a kettle does not.
 ## Checked
-batch delta review: Pohdinta retrieval task now belongs to the chapter phenomenon, still retrieves the intended prior knowledge, and reveals no Ennusta answer. Red 700 nm vs violet 400 nm in glowing iron retrieves f = c/λ; Ennusta (peak shift with T, stone at 300 K) not revealed.
+batch delta review (round 1): the 3 new Pysähdy ja mieti blocks (```pysahdy), each judged for placement, wording, level for a 16-19-year-old, numbers and sign/direction logic recomputed, and consistency with the lesson text, formulas, tables and notation next to it. Old content not reviewed beyond what the blocks rely on.

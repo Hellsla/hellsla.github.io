@@ -1,15 +1,8 @@
-VERDICT: PASS
-CONTENT-HASH: e2b33b531329430e
-
+VERDICT: FAIL
+CONTENT-HASH: f3d1ca0e045604dc
 ## Blocking
-(none)
-
+- Pysähdy ja mieti answer (opened, `details.stop-think-a`) is a formula chain wider than the 360 px column, clipped or scrolling by 74 px at 360 px (`check_layout.py fy7-7 --width 360`, fi, en and fi-easy): `\Phi = BA = 0{,}20\,\text{T} \cdot 0{,}010\,\text{m}^2 = 0{,}0020\,\text{Wb}`. Essential content of the new block is not fully shown. Fix in the shared component (scripts/stopthink.py: pass the answer through the same chain/row layout as lesson text, scripts/mathlayout.py), never by hand-splitting the lesson text.
 ## Polish
-- [Minor] fy7-8 Pohdinta, wrong option "460 V" feedback: the chain row "325 V : sqrt2 ≈ 230 V" has no quantity at its start; the text above names it, so acceptable.
 
 ## Checked
-- Rendered the Pohdinta retrieval task ("Kertaa") at 360 px, opened and answered every option, so each feedback block showed (own captures; stage-herata-390 also opened). Chains are aligned rows, nothing clipped, no horizontal overflow (scrollWidth 360).
-- Delta: only the retrieval feedback/option text changed; no figures touched.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review: read the diff (3 new pysahdy blocks: placement, question wording, answer notation), ran check_layout.py at 360 px with the answer open; spot-checked sibling lessons' captures for block rendering (label, closed answer, spacing). Own 390 px capture of this lesson not opened.

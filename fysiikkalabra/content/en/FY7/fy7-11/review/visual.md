@@ -1,11 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: fab9dac429a75b97
+VERDICT: FAIL
+CONTENT-HASH: 3d4ccc0df0494988
 
 ## Blocking
-- none
+- [Major] A new "Stop and think" answer holds a formula chain that does not fit 360 px: the $v = c : n = 3.00 \cdot 10^8\,\text{m/s} : 1.3315 \approx \ldots$ chain (third block). `check_layout.py fy7-11 --width 360` fails (en, fi and fi-easy: "clipped or scrolling", at `details.stop-think-a > span.katex.kx-wide`). The answer is a plain `<p>` in `<details class="stop-think-a">`, so `mathlayout.py` does not break the chain into aligned rows as it does in the rest of the page. Fix in the shared component (stopthink.py / mathlayout.py or site.css), not per lesson.
 
 ## Polish
-- [Minor] 390 px hint: `· (tan 40.57° − tan 40.15°).` ends 3 px from the box border (not clipped at 360–412 px).
+- Question and answer blocks render cleanly at 390 px (label, question, "Answer" summary), no red KaTeX source.
 
 ## Checked
-- batch delta review: queue 5d reflow. The content changed during the review (commit 7e4ba8466f); this report judges the new hash: the page was rebuilt (build.py) and recaptured. review/shots is stale for this hash and has no phone captures of opened states, so every aligned formula of inquiry.json and exit-ticket.json (3 rendered blocks) was captured from preview/en/fy7-11.html at 390 px and 1280 px with every box, hint, solution and choice feedback forced open, and each capture was read; box overflow measured at 390 and 1280 px. Figures and the formula-name / teacher-figure categories were not re-judged.
+- batch delta review: opened the Theory capture with the new block, read all three blocks in the diff, rebuilt preview checked (3 blocks, no katex-error), ran check_layout at 360 px; hash unchanged at start and end.

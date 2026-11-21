@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b24d75111073ed71
+CONTENT-HASH: 19093904e02a568d
+
 ## Blocking
+(none)
 
 ## Polish
-- Prompt sentence 'Myös voimalaitoksen generaattori tuottaa vaihtojännitettä' is a thin link to the grid hook; could say the grid carries alternating voltage.
+(none)
+
+## Vanhan sisällön löydökset
+(none from this batch review)
+
 ## Checked
-batch delta review (round 2): effective value retrieval fits the grid phenomenon and is needed for transformer calculations; Ennuste 1 and 2 not disclosed; feedback repairs the 325 V and U0*sqrt2 errors.
+batch delta review: kolme Pysähdy ja mieti -lohkoa (```pysahdy): kysymys ennen vastausta, suomi ja yksiköt LaTeXina, fysiikka ja luvut tarkistettu uudelleen laskemalla, sopii lukuun ja kielelle 16–19-vuotiaille.

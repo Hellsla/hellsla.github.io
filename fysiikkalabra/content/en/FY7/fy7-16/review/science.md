@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a2889d1cea15a4dc
+CONTENT-HASH: 8f30dc19d8991a0f
 
 ## Blocking
+None.
 
 ## Polish
+None.
 
 ## Checked
-- batch delta review: the two inquiry feedbacks and the misconception paragraph now say that the eddy currents in the pan's base turn electrical energy into the base's internal energy, and that heat then passes from the hot pan to the glass. This is right by the guardrail "heat is energy in transfer" and is worded the same way in all three places. The choice options are unchanged, so exactly one is still correct, and each distractor's feedback still says why it is wrong.
+batch delta review: every new ```pysahdy block (question and answer) against the physics guardrails and the lesson's own wording; lifted phone: less flux, less change, less voltage; glass non-conducting, no eddy currents (as caption); 9.0 dB, 13 % recomputed. No option-based choices changed. Scope per teacher 2026-11-20: only the pysahdy blocks.

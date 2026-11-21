@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4eb10b82e664384c
+CONTENT-HASH: 5bf3eff7e60f102c
+
 ## Blocking
+(none)
+
 ## Polish
-- lesson.md:201 — "pyörii navan mukana kiinteiden käämien ympäri, joten magneetti pyörii käämien suhteen" repeats itself; shorter: "rengasmagneetti pyörii navan mukana kiinteiden käämien ympäri, ja käämien läpi kulkeva kenttä muuttuu".
+- Lohko 2: "200 · 0,020 Wb : 0,50 s" on yksi rivi ilman symbolista alkua; kirjoita ensin $|e| = N\,\Delta\Phi/\Delta t$ (kaavan perustapa).
+
+## Vanhan sisällön löydökset
+(none from this batch review)
+
 ## Checked
-delta round 1: exit ticket question now says the flux turns smoothly at its peak, so the tangent argument in the answer is justified and the gap (a flat graph at a kink) is closed; answer still repairs "large flux means large voltage".
-Napadynamo sentence now matches a real hub dynamo (outer ring magnet, fixed coils) and still supports the point that nothing changes when the wheel stands.
-No change to figures, inquiry or exercises; earlier PASS stands.
+batch delta review: kolme Pysähdy ja mieti -lohkoa (```pysahdy): kysymys ennen vastausta, suomi ja yksiköt LaTeXina, fysiikka ja luvut tarkistettu uudelleen laskemalla, sopii lukuun ja kielelle 16–19-vuotiaille.

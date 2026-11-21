@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9e67b6ab8a650b06
+CONTENT-HASH: 076c830f204c7978
+
 ## Blocking
+(none)
 
 ## Polish
-- Nothing further.
+(none)
+
+## Vanhan sisällön löydökset
+(none from this batch review)
 
 ## Checked
-batch delta review: Glowing iron red/violet is the chapter's phenomenon; f = c/lambda retrieval is correct (4,3 and 7,5 e14 Hz); Ennusta on peak shift and room-temperature rock is not revealed. (SCOPE: Pohdinta retrieval task rewrite; delta only)
+batch delta review: kolme Pysähdy ja mieti -lohkoa (```pysahdy): kysymys ennen vastausta, suomi ja yksiköt LaTeXina, fysiikka ja luvut tarkistettu uudelleen laskemalla, sopii lukuun ja kielelle 16–19-vuotiaille.

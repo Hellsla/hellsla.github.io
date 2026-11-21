@@ -1,9 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: e613916eb837e804
+VERDICT: FAIL
+CONTENT-HASH: 4a0f315ad7908358
 
 ## Blocking
+- Block 3 (F = mg ≈ 0,196 N and P = Fv ≈ 0,059 W, two chains): the answer's calculation chain is an unbroken inline formula wider than the box, cut off at the right edge and reachable only by scrolling sideways (checked at 360 and 390 px, answer open); the page's chain-to-rows layout (scripts/mathlayout.py) is not applied inside the Pysähdy ja mieti answer. Fix in the shared component (stopthink.py/build.py), not by splitting the chain in the lesson.
 
 ## Polish
+(none)
 
 ## Checked
-batch delta review (round 2): opened fy7-6-stage-herata-390 (Pohdinta; changed retrieval prompt sits in the closed box, layout intact). Wording judged from the diff: clear situation then question.
+- batch delta review: all 3 new "Pysähdy ja mieti" blocks of fy7-6 (fi-easy) rendered from the built page and photographed with the answer open at 390 px (all) and 360 px and 1280 px (overflow and KaTeX error measurement); label, question, Vastaus summary, spacing, placement beside figures/headings, maths typography ({,}, units, \tfrac, \cdot, colon division) and Finnish read. Listed older captures not reopened (unchanged old content, taken before the blocks existed). No page-level overflow, no red KaTeX source.

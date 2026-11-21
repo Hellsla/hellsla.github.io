@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f878166e52440ab7
+CONTENT-HASH: 779f0fcecc5af25f
 
 ## Blocking
+None.
 
 ## Polish
-- The prompt says "slits in the foil" while the hook calls it "a thin transparent film"; use one word (film).
+None.
 
 ## Checked
-batch delta review: prompt now speaks of two slits; 1.5 wavelength path difference -> destructive, one correct option, feedbacks right. Naming the film's slits hints at the hook's open question but the Ennusta items already name the grating, so no prediction answer is revealed.
+batch delta review: every new ```pysahdy block (question and answer) against the physics guardrails and the lesson's own wording; narrower slit widens central region; red deviates more by dsinθ = kλ; θ = 14.5° recomputed. No option-based choices changed. Scope per teacher 2026-11-20: only the pysahdy blocks.

@@ -1,14 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 8141de503a9575b7
-
+CONTENT-HASH: 99b1473d42052447
 ## Blocking
-
 (none)
-
 ## Polish
-
-the task could name the loudspeaker cable again to stay in the phenomenon.
-
+- none
 ## Checked
-
-batch delta review (round 2): The retrieval (field of a straight wire at 2 r) retrieves exactly what the force explanation needs and reveals nothing of the current-balance prediction. It now has no loudspeaker context.
+batch delta review (round 1): the 3 new Pysähdy ja mieti blocks (```pysahdy), each judged for placement, wording, level for a 16-19-year-old, numbers and sign/direction logic recomputed, and consistency with the lesson text, formulas, tables and notation next to it. Old content not reviewed beyond what the blocks rely on.

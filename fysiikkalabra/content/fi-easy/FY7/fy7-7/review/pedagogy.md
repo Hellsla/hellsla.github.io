@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 69ec76d620d5da18
+CONTENT-HASH: b13dfacc85c8f72c
 ## Blocking
-- None.
+
 ## Polish
-- None.
+- none
 ## Checked
-batch delta review: Retrieval (rotor 5,0 s -> f) belongs to the rotating coil, retrieves f=1/T; new 12 Hz (rpm) distractor is a real misconception with repairing feedback; Ennuste not disclosed.
+batch delta review: the three new pysahdy blocks (question, answer, physics, numbers recomputed, S2 wording, fit with the lesson text and its terms); old content not judged.

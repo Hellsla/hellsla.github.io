@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 31b7193e4d111c8b
+CONTENT-HASH: 58931ed781f93c61
 ## Blocking
-- None.
+
 ## Polish
-- None.
+- none
 ## Checked
-batch delta review: Retrieval (kompassi, ei virtaa) belongs to the magnetic-field phenomenon, retrieves compass/Earth's field, discloses no Ennuste answer; new wording is clear.
+batch delta review: the three new pysahdy blocks (question, answer, physics, numbers recomputed, S2 wording, fit with the lesson text and its terms); old content not judged.

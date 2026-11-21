@@ -1,9 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 11872e3655aa7b3d
+CONTENT-HASH: 6dee8bd85bcbdd5f
 ## Blocking
+(none)
 ## Polish
+- Block 1 uses "magnetic flux" in its answer before the term is defined in the next section (Magnetic flux); say "the magnetic field through the coil changes" or move the block below that section.
 ## Checked
-- exit-ticket.json: "turns smoothly round its peak" and "tangent has slope zero" fix the earlier "horizontal for a moment" wording; the answer is still zero, with the reasoning kept (rate of change, not size of flux). Sound for a 17-year-old.
-- The wording also rules out a kink (a sharp peak), which would have no tangent, so the question has one correct answer.
-- lesson.md:201 — the bicycle hub dynamo now says the ring magnet turns with the hub around fixed coils, so the magnet moves relative to the coils. This is more accurate and still supports the "change causes voltage" point and the "wheel still, lamp dark" link.
-- No new numbers, symbols or terms; glossary terms unchanged; the lesson stays at one hour's workload.
+batch delta review (round 1): the 3 new Pysähdy ja mieti blocks (```pysahdy), each judged for placement, wording, level for a 16-19-year-old, numbers and sign/direction logic recomputed, and consistency with the lesson text, formulas, tables and notation next to it. Old content not reviewed beyond what the blocks rely on.

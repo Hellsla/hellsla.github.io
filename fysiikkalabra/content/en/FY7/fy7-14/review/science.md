@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f8678b268c4d5d97
+CONTENT-HASH: 8af16a62c3e241bc
 
 ## Blocking
+None.
 
 ## Polish
-
+- Window-glass block: fair simplification (C) for the level; optionally mention that white light's short coherence also washes out the pattern in thick glass.
 
 ## Checked
-batch delta review: round-1 film-physics wording fixed: the retrieval is now two in-phase laser waves in air, path difference 975 nm = 1.5 x 650 nm -> destructive (recomputed); no claim about film reflections or phase changes, so no conflict with the half-wave rule taught later; one correct option, feedback right; Ennusta not revealed.
+batch delta review: every new ```pysahdy block (question and answer) against the physics guardrails and the lesson's own wording; glass→air reflection not inverted; thick glass colours wash out; soap film one shift, 2nd = ½λ gives 665 nm, matches lesson conditions. No option-based choices changed. Scope per teacher 2026-11-20: only the pysahdy blocks.

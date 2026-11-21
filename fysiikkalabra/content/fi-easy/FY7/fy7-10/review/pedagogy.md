@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 4ab8d81c4b330af0
+CONTENT-HASH: 88b14ea568c34b2f
 ## Blocking
-(none)
+
 ## Polish
-(none)
+- Block 1: "Aallonpituus lyhenee 1,33-kertaiseksi" can be read as "becomes 1,33 times as long"; write "lyhenee, ja se on vedessä ilmaa 1,33 kertaa pienempi" or "jaetaan luvulla 1,33".
 ## Checked
-batch delta review (SCOPE: Pohdinta retrieval task): lake reflection at 30 degrees fits the lakeside illustration, retrieves the law of reflection, does not touch Ennusta 1-2 (refraction).
+batch delta review: the three new pysahdy blocks (question, answer, physics, numbers recomputed, S2 wording, fit with the lesson text and its terms); old content not judged.

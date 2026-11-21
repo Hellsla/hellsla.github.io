@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4ffbf41ced309f84
+CONTENT-HASH: f3d1ca0e045604dc
+
 ## Blocking
+(none)
 
 ## Polish
-- None.
+(none)
+
+## Vanhan sisällön löydökset
+(none from this batch review)
+
 ## Checked
-batch delta review (round 2): f=1/T retrieval in the wind-turbine rotor belongs to the hook; new minutes-vs-seconds distractor is a real misconception; Ennuste 2 not disclosed.
+batch delta review: kolme Pysähdy ja mieti -lohkoa (```pysahdy): kysymys ennen vastausta, suomi ja yksiköt LaTeXina, fysiikka ja luvut tarkistettu uudelleen laskemalla, sopii lukuun ja kielelle 16–19-vuotiaille.
