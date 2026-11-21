@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9e039ea06740cc03
+CONTENT-HASH: edcabe133a8a57f4
 
 ## Blocking
+- none
 
 ## Polish
-- none
+- [Minor] pysahdy 2 answer is a bare formula and repeats itself ("= 2,5 V, eli noin 2,5 V"); end with one sentence ("LEDin kynnysjännite on noin $2{,}5\,\text{V}$.").
+- [Minor] pysahdy 3 answer is a bare formula chain; add a sentence stating Planck's constant.
 
 ## Vanhan sisällön löydökset
 - none
 
 ## Checked
-- batch delta review (round 1, Pysähdy ja mieti): opened fy8-6-theory-1280-1, -2, -3, -4 (three new boxes: vihreä LED, 500 nm kynnysjännite, kulmakerroin; first box beside the photo column without collision; units and powers of ten render upright). Answers read in lesson.md: LaTeX, natural Finnish.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review round 2: fy8-6-theory-1280-1/2/3/4 (all three boxes render clean, closed; box 3 above its graph, fine); answers read in lesson.md (units LaTeX, {,}, \cdot).

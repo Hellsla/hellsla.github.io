@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ce11c01684e5f036
+CONTENT-HASH: 038f2a81a5c6b1c0
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- [Minor] lesson.md line 258, answer: "ionparia" but the question says "ionipareja"; write "ionipareja" (the old text under Ionisaatioenergia has "ionparia" too, an old-content finding).
+- [Minor] lesson.md line 127, answer is a bare calculation; add a sentence, e.g. "Fotoni voi ionisoida enintään noin $4{,}8 \cdot 10^{3}$ molekyyliä."
 
 ## Vanhan sisällön löydökset
-(none seen)
+- "ionparia" in the Ionisaatioenergia paragraph (visible in fy8-12-stage-selita-390-2); same spelling fix.
 
 ## Checked
-Batch delta, round 1: opened fy8-12-theory-1280-* (crops of all three boxes at 1280 px) and the 390 px captures fy8-12-stage-selita-390-* where the three "Pysähdy ja mieti" boxes sit. At 390 px the boxes (green bar, label, question, closed "Vastaus") are readable, nothing is clipped, the maths ($10$, $n = 2$, units) renders in KaTeX. At 1280 px the box stays in the reading column beside floated figures and photos with no overlap, and is distinct from the other closed boxes. The answers (behind "Vastaus") were checked in source only; the diff adds nothing else.
+batch delta review, round 2: opened fy8-12-theory-1280-2 (alpha/beta box end and the penetration table; layout intact) and fy8-12-stage-selita-390-2 (390 px, no overflow). The numbers 60 keV, 12,6 eV, 5,49 MeV, 34 eV in LaTeX.

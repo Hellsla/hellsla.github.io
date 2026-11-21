@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4163a038b40bf9bc
+CONTENT-HASH: a24b37712a8e5371
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] Box 3 follows the spectrum figure, away from the formula it practises; optional.
+- [Minor] pysahdy 3 answer is a bare formula chain with no sentence; add "Tason $n = 5$ energia on noin $-0{,}54\,\text{eV}$."
 
 ## Vanhan sisällön löydökset
 - none
 
 ## Checked
-- Delta (3 new pysahdy boxes). Opened theory-1280-2 (fi-easy): box 2 renders correctly with decimal comma and unit in KaTeX, layout intact. Answers explain terms in plain sentences ("ionisoituu eli elektroni irtoaa"). Boxes 1 and 3 have the same layout as in fi; source read.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+batch delta review round 2: fy8-3-theory-1280-1/2/3 (all three boxes render clean, closed, no overlap; box 1 sits tight above the next subheading, shared spacing, fine); answers read in lesson.md (units LaTeX, {,}, colon division).

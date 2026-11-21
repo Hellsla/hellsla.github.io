@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f91fa82751e0bfda
+CONTENT-HASH: bc37ff716059868b
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] Kolmannen laatikon vastaus "aallonpituus on puolet pienempi" on epäselvä S2-lukijalle; ehdota: "aallonpituus on puolet niin pitkä."
+- [Minor] pysahdy 2 answer: "koska $-5{,}0\,\text{eV} + 2{,}4\,\text{eV} = -2{,}6\,\text{eV} < 0$, joten se on alle nollan" is redundant and muddled. Suggest: "Ei. Fotonin energia $2{,}4\,\text{eV}$ ei ole tilojen erotus $1{,}9\,\text{eV}$, joten atomi ei absorboi sitä."
 
 ## Vanhan sisällön löydökset
-- Ei löydöksiä, jotka estäisivät uudet laatikot.
+- none
 
 ## Checked
-- theory-1280-1, -2, -3: kolme uutta laatikkoa (kysymys, suljettu Vastaus, LaTeX-yksiköt, ei ylivuotoa); ympäröivä asettelu ehjä.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+batch delta review round 2: fy8-2-theory-1280-1/2/3 (all three boxes: render clean, closed, spacing fine, none cut off by figures); stage 390 px layout shared with fy8-1/16 captures; answers read in lesson.md (units LaTeX, {,}).
