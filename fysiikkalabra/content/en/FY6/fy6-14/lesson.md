@@ -364,7 +364,7 @@ The characteristic curve of a diode is usually drawn with the voltage $U_\text{D
 ```pysahdy
 A silicon diode is in the forward direction and its voltage is $0.30\,\text{V}$. Does a significant current flow through it?
 ---
-No. The voltage is below the threshold voltage, which is about $0.6$–$0.7\,\text{V}$, so the current is almost zero.
+No. The voltage is below the threshold voltage, which is about $0.6\,\text{V}$–$0.7\,\text{V}$, so the current is almost zero.
 ```
 
 ### An LED changes electrical energy into light
@@ -437,9 +437,9 @@ The $(U, I)$ graph of a cell is not a falling straight line like that of a batte
 <figure class="unit-photo"><img src="pics/fy6/solar-panels-jyvaskyla.webp" alt="A dark house roof against a blue sky; on the roof are two rows of dark blue solar panels and a chimney."><figcaption>Solar panels on the roof of a detached house in Jyväskylä, Finland. Each panel contains many solar cells connected in series. The panels produce a direct voltage, which an inverter converts into the alternating voltage of the grid.</figcaption></figure>
 
 ```pysahdy
-There is an open-circuit voltage $U_\text{t}$ between the terminals of a solar cell, yet the power of the cell is zero. Why?
+The light dims to half. The short-circuit current of a solar cell halves, but the open-circuit voltage changes only a little. Why?
 ---
-In open circuit no current is drawn, $I = 0$. The power is $P = UI$, so it is zero even though the voltage is large.
+The short-circuit current is directly proportional to the irradiance, so it halves. The open-circuit voltage depends on the light only slightly, so it stays almost the same.
 ```
 
 ## Formula: Series resistor and power of a solar cell

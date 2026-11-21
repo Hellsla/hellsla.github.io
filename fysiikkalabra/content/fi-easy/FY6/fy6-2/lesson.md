@@ -122,7 +122,7 @@ Jännite on kahden pisteen välinen suure (luku *Virtapiiri, sähkövirta ja jä
 ```pysahdy
 Digitaalisen jännitemittarin punainen johto kosketetaan lampun siihen napaan, joka on kauempana pariston plusnavasta. Mitä mittarin lukema on?
 ---
-Lukema on negatiivinen, koska punainen johto ei ole plusnavan puoleisessa navassa. Jännitteen suuruus on sama kuin oikein päin.
+Lukema on negatiivinen, koska punainen johto ei ole plusnavan puoleisessa navassa.
 ```
 
 ### Yleismittari
@@ -242,9 +242,9 @@ Tässä $\Delta x$ on virheraja ja $x$ on lukema. Kirjain $p$ on valmistajan ilm
 Se on pelkkä luku, jolla ei ole yksikköä. Se ilmoitetaan yleensä prosentteina.
 
 ```pysahdy
-Mittarin alueella $20\,\text{V}$ lukema on $2{,}00\,\text{V}$. Resoluutio on $0{,}01\,\text{V}$ ja virheraja $\pm(0{,}5\,\% + 2\ \text{numeroa})$. Mikä on lukeman virheraja?
+Mittarin alueella $2\,\text{V}$ lukema on $0{,}100\,\text{V}$. Resoluutio on $0{,}001\,\text{V}$ ja virheraja $\pm(0{,}5\,\% + 2\ \text{numeroa})$. Kumpi virherajan osa on suurempi, prosenttiosa vai numeroiden osa?
 ---
-Virheraja on $\Delta x = p x + n r$. Sijoitus: $0{,}005 \cdot 2{,}00\,\text{V} + 2 \cdot 0{,}01\,\text{V}$ $= 0{,}030\,\text{V}$. Tulos on $U = 2{,}00\,\text{V} \pm 0{,}03\,\text{V}$.
+Prosenttiosa on $0{,}005 \cdot 0{,}100\,\text{V} = 0{,}0005\,\text{V}$. Numeroiden osa on $2 \cdot 0{,}001\,\text{V} = 0{,}002\,\text{V}$, joten numeroiden osa on suurempi.
 ```
 
 ### Miksi pienin sopiva alue

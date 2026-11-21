@@ -116,9 +116,9 @@ Rinnakkaisten haarojen yli on sama jännite (luku *Vastusten sarja- ja rinnankyt
 </svg>
 
 ```pysahdy
-Haarautumispisteeseen tulee virta $0{,}80\,\text{A}$, ja toiseen haaraan lähtee $0{,}30\,\text{A}$. Kuinka suuri virta lähtee toiseen haaraan?
+Haarautumispisteeseen tulee virta $0{,}80\,\text{A}$, ja se jakautuu kahteen haaraan. Voiko virta olla kummassakin haarassa $0{,}50\,\text{A}$? Miksi tai miksi ei?
 ---
-Virtalain mukaan $I_3 = I_1 - I_2$. Siis $I_3 = 0{,}80\,\text{A} - 0{,}30\,\text{A}$, joten $I_3 = 0{,}50\,\text{A}$.
+Ei voi. Virtalain mukaan lähtevät virrat ovat yhteensä $0{,}80\,\text{A}$, mutta $0{,}50\,\text{A} + 0{,}50\,\text{A} = 1{,}00\,\text{A}$.
 ```
 
 ### Potentiaali: jokaisen kohdan sähköinen taso
@@ -200,9 +200,9 @@ Kirchhoffin 2. laki :: \sum \Delta V = 0
 missä $\Delta V$ (V) on potentiaalin muutos silmukan kussakin osassa, kun silmukka kierretään kerran. Lähteessä miinusnavalta plusnavalle $\Delta V = +U$, vastuksessa virran suuntaan $\Delta V = -RI$ ja johtimessa $\Delta V = 0$. Yhden silmukan piirissä, jossa on kaksi vastusta, laki antaa $U - R_1 I - R_2 I = 0$ eli $U = R_1 I + R_2 I$.
 
 ```pysahdy
-Yhden silmukan piirissä lähteen jännite on $12\,\text{V}$ ja vastuksen $R_1$ jännite $5{,}0\,\text{V}$. Kuinka suuri on toisen vastuksen $R_2$ jännite?
+Yhden silmukan piirissä vastukset ovat $R_1 = 20\,\Omega$ ja $R_2 = 10\,\Omega$. Kuinka monta kertaa suurempi on vastuksen $R_1$ jännite kuin vastuksen $R_2$ jännite ja miksi?
 ---
-Jännitelain mukaan $U_2 = U - U_1$. Siis $U_2 = 12\,\text{V} - 5{,}0\,\text{V}$, joten $U_2 = 7{,}0\,\text{V}$.
+Kaksi kertaa suurempi. Molempien läpi kulkee sama virta $I$, joten kaavan $U = RI$ mukaan jännite on verrannollinen resistanssiin. Jännitteet muodostavat yhdessä lähteen jännitteen, $U = R_1 I + R_2 I$.
 ```
 
 **Potentiaalikuvaaja** näyttää potentiaalin silmukan eri kohdissa. Kuvaajassa kierretään pisteillä $A$–$F$ merkityn piirin silmukka miinusnavasta $F$ vastusten $R_1$ ja $R_2$ kautta takaisin pisteeseen $F$. Lähteen nousu $+9{,}0\,\text{V}$ on yhtä suuri kuin vastusten laskujen $-3{,}0\,\text{V}$ ja $-6{,}0\,\text{V}$ yhteismäärä, ja johtimissa kuvaaja on vaakasuora.

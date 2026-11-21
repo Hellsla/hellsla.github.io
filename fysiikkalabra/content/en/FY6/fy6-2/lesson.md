@@ -122,7 +122,7 @@ Voltage is a quantity between two points (chapter *Circuit, electric current and
 ```pysahdy
 The red lead of a digital voltmeter touches the terminal of a lamp that is farther from the plus terminal of the battery. What is the reading?
 ---
-The reading is negative, because the red lead is not on the terminal nearer the plus terminal. Its magnitude is the same as with the leads the right way round.
+The reading is negative, because the red lead is not on the terminal nearer the plus terminal.
 ```
 
 ### The multimeter
@@ -242,9 +242,9 @@ where $\Delta x$ is the error limit, $x$ the reading, $p$ the percentage given b
 which is a pure number and is usually given as a percentage.
 
 ```pysahdy
-On the $20\,\text{V}$ range the reading is $2.00\,\text{V}$. The resolution is $0.01\,\text{V}$ and the error limit is $\pm(0.5\,\% + 2\ \text{digits})$. What is the error limit of the reading?
+On the $2\,\text{V}$ range the reading is $0.100\,\text{V}$. The resolution is $0.001\,\text{V}$ and the error limit is $\pm(0.5\,\% + 2\ \text{digits})$. Which part of the error limit is larger, the percentage part or the digit part?
 ---
-The error limit is $\Delta x = p x + n r$. Substituting: $0.005 \cdot 2.00\,\text{V} + 2 \cdot 0.01\,\text{V}$ $= 0.030\,\text{V}$. The result is $U = 2.00\,\text{V} \pm 0.03\,\text{V}$.
+The percentage part is $0.005 \cdot 0.100\,\text{V} = 0.0005\,\text{V}$. The digit part is $2 \cdot 0.001\,\text{V} = 0.002\,\text{V}$, so the digit part is larger.
 ```
 
 ### Why the smallest suitable range

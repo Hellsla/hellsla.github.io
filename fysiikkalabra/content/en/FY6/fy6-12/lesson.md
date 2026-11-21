@@ -458,7 +458,7 @@ The electric force is conservative like gravity: the work it does depends only o
 ```pysahdy
 Does the choice of the zero level affect how much work the field does when a charge moves from one point to another?
 ---
-No. The work is the change in potential energy, and moving the zero level changes both energies by the same amount.
+No. The work done by the field equals the decrease in potential energy, $W = -\Delta E_\text{p}$, and moving the zero level changes the initial and final energies by the same amount, so the difference stays the same.
 ```
 
 ### Potential: energy per unit charge

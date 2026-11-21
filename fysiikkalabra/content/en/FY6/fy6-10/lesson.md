@@ -398,7 +398,7 @@ where $F$ is the magnitude of the force ($\text{N}$), $q_1$ and $q_2$ are the ch
 ```pysahdy
 Two point charges of $1.0\,\mu\text{C}$ each are $0.30\,\text{m}$ apart. How large is the electric force between them?
 ---
-The force is $F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}$, so $F = 8.988 \cdot 10^{9} \cdot \frac{(1.0 \cdot 10^{-6})^2}{0.30^2}\,\text{N}$ $\approx 0.10\,\text{N}$.
+The force is $F = k\,\lvert q_1 q_2 \rvert : r^2$. So $F = 9.0 \cdot 10^{9} \cdot 1.0 \cdot 10^{-12} : 0.30^2\,\text{N}$, so $F \approx 0.10\,\text{N}$.
 ```
 
 ### Force and reaction force
@@ -502,7 +502,7 @@ where $\overline{F}$ is the net force ($\text{N}$) and $\overline{F}_1$ and $\ov
 ```pysahdy
 Three charges lie on one line. Two equal charges of the same sign, each at the same distance, act on the middle charge. What is the net force?
 ---
-Zero. The forces are equal in magnitude and opposite in direction, so they cancel and $\overline{F} = \overline{0}$.
+Zero. Each charge repels the middle one from the opposite side. The forces are equal in magnitude and opposite in direction, so they cancel and $\overline{F} = \overline{0}$.
 ```
 
 ## Worked example

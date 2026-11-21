@@ -135,7 +135,7 @@ Sarjaankytkennässä vastukset ovat peräkkäin. Varauksilla on vain yksi reitti
 Sarjaan kytketty komponentti voi katketa. Esimerkiksi lampun hehkulanka voi palaa poikki. Silloin ainoa reitti aukeaa, ja virta lakkaa kulkemasta koko piirissä. Siksi vanhanmallisen jouluvalosarjan kaikki lamput sammuvat, kun yksi niistä menee rikki.
 
 ```pysahdy
-Sarjaan kytketyistä vastuksista toisen läpi kulkee $0{,}20\,\text{A}$. Kuinka suuri virta kulkee toisen läpi? Miksi?
+Sarjaan kytketyistä vastuksista ensimmäisen läpi kulkee $0{,}20\,\text{A}$. Kuinka suuri virta kulkee toisen vastuksen läpi? Miksi?
 ---
 Yhtä suuri, $0{,}20\,\text{A}$. Kulkureittejä on vain yksi. Varausta ei katoa eikä kasaannu mihinkään.
 ```

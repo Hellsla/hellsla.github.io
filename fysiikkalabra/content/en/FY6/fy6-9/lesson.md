@@ -46,9 +46,9 @@ In both a disposable and a rechargeable battery, a chemical reaction keeps a sou
 A battery does not store electric charge. It is electrically neutral both full and empty: when it discharges, it only moves charges around the circuit, and every charge that leaves the positive terminal returns to the negative terminal. In the external circuit the current passes from the positive terminal to the negative terminal, and inside the battery from the negative terminal to the positive terminal.
 
 ```pysahdy
-Is a fully charged battery electrically charged? What has been stored in it during charging?
+What changes in a battery when it is charged? Does its total charge change?
 ---
-No. The battery is neutral even when full. Chemical energy has been stored in it, not electric charge.
+Electrical energy is converted into chemical energy in the battery. The total charge does not change: the battery stays neutral.
 ```
 
 ### Charging reverses the current inside the battery
@@ -222,9 +222,9 @@ I = \frac{U_\text{ch} - E}{R + R_\text{s}}
 where $I$ is the charging current (A), $U_\text{ch}$ is the voltage of the charger (V), $E$ is the source voltage of the battery (V), $R$ is the resistance of the charger and wires ($\Omega$) and $R_\text{s}$ is the internal resistance of the battery ($\Omega$). The battery charges only when $U_\text{ch} > E$. If $U_\text{ch} < E$, the current reverses and the battery discharges into the charger, unless the charger has a diode that lets the current pass in one direction only.
 
 ```pysahdy
-The charger voltage stays constant, but the emf $E$ of the battery rises as it charges. How does the charging current change?
+The charger voltage $U_\text{ch}$ is smaller than the emf $E$ of the battery. Does the battery charge?
 ---
-It decreases, because the current is directly proportional to the difference $U_\text{ch} - E$, and that difference shrinks.
+No. Then $U_\text{ch} - E < 0$, so the charger cannot drive a current through the battery in the charging direction.
 ```
 
 The terminal voltage of the battery during charging is

@@ -39,9 +39,9 @@ All matter consists of atoms that contain positively charged protons and negativ
 A substance in which charges are able to move is a **conductor**. In metals some of the electrons are not bound to a single atom but move freely between the metal ions. These are called free electrons. This is why copper, aluminium and other metals conduct electricity well. A substance in which charges are not able to move is an **insulator**: plastic, rubber, glass and dry wood. An electric wire has a copper conductor surrounded by a plastic insulating sheath. The insulator prevents the current from flowing where it should not flow.
 
 ```pysahdy
-Why does a copper rod conduct electricity but a dry wooden stick does not?
+An electrician wears rubber gloves. Why does rubber protect against an electric current?
 ---
-Copper has free electrons that can move between the metal ions. In wood the charges cannot move, so wood is an insulator.
+Rubber is an insulator: its charges are not able to move, so a current cannot pass through the glove.
 ```
 
 ### Electric circuit
@@ -343,7 +343,7 @@ where $I$ is the electric current ($\text{A}$), $Q$ the charge that has passed t
 </svg>
 
 ```pysahdy
-The current through a conductor doubles. How does the charge that passes a cross-section in the same time change?
+The current through a conductor doubles. How does the charge that passes a cross-section in a given time change?
 ---
 The charge doubles. By $Q = It$ it is proportional to the current when the time $t$ stays the same.
 ```

@@ -166,7 +166,7 @@ So a large power alone does not mean a large consumption. A kettle with a power 
 </svg>
 
 ```pysahdy
-A lamp with a power of $0.060\,\text{kW}$ is on for $5.0\,\text{h}$. How much electrical energy does the lamp use?
+A lamp with a power of $0.060\,\text{kW}$ is on for $5.0\,\text{h}$. How much electrical energy does the lamp use? Give the answer in kilowatt-hours.
 ---
 The energy is $E = Pt$. So $E = 0.060\,\text{kW} \cdot 5.0\,\text{h}$, so $E = 0.30\,\text{kWh}$.
 ```
@@ -177,9 +177,9 @@ The energy is $E = Pt$. So $E = 0.060\,\text{kW} \cdot 5.0\,\text{h}$, so $E = 0
 The SI unit of energy is the joule, but the electrical energy of a home is measured and charged in **kilowatt-hours**. One kilowatt-hour is the energy that a device working at a power of $1\,\text{kW}$ uses in an hour. When the power is given in kilowatts and the time in hours, the energy comes out directly in kilowatt-hours. The name tells how it is calculated: kilowatt times hour, not kilowatt per hour. One kilowatt-hour is $3.6$ million joules.
 
 ```pysahdy
-How many megajoules is $2.0\,\text{kWh}$?
+How many kilowatt-hours is $10.8\,\text{MJ}$?
 ---
-One kilowatt-hour is $3.6\,\text{MJ}$. So $2.0\,\text{kWh} = 2.0 \cdot 3.6\,\text{MJ}$, so $2.0\,\text{kWh} = 7.2\,\text{MJ}$.
+One kilowatt-hour is $3.6\,\text{MJ}$. So $E = 10.8\,\text{MJ} : 3.6\,\text{MJ/kWh}$, so $E = 3.0\,\text{kWh}$.
 ```
 
 ### The current of a device in the mains
@@ -259,7 +259,7 @@ where $U$ is the voltage of the device (V) and $I$ the current through it (A).
 ```pysahdy
 The voltage of a device is $230\,\text{V}$ and its current is $0.50\,\text{A}$. How much energy does it use in $2.0\,\text{h}$? Give the answer in kilowatt-hours.
 ---
-The energy is $E = UIt$. So $E = 230\,\text{V} \cdot 0.50\,\text{A} \cdot 2.0\,\text{h}$, so $E = 0.23\,\text{kWh}$.
+The power is $P = UI = 230\,\text{V} \cdot 0.50\,\text{A} = 115\,\text{W} = 0.115\,\text{kW}$. So $E = Pt = 0.115\,\text{kW} \cdot 2.0\,\text{h}$, so $E = 0.23\,\text{kWh}$.
 ```
 
 An electricity bill charges both for the electrical energy and for its transmission in the electricity network per kilowatt-hour, and in addition monthly basic charges:

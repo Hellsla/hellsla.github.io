@@ -247,9 +247,9 @@ In an insulator the charges cannot move freely, but the electric field shifts th
 </svg>
 
 ```pysahdy
-Why does placing an insulator between the plates weaken the field when the charge on the plates stays the same?
+What happens at the surfaces of an insulator placed between the plates, and why does the voltage between the plates decrease because of it?
 ---
-The electric field polarizes the insulator, and the charges on its surfaces weaken the field of the plates. The voltage $U$ decreases, so the capacitance $C = \tfrac{Q}{U}$ increases.
+Polarization creates charges on the insulator's surfaces: next to each plate is a charge of the opposite sign to the plate's charge. They reduce the field, so the voltage $U$ decreases and the capacitance $C = \tfrac{Q}{U}$ increases.
 ```
 
 ### The energy is in the electric field
@@ -295,9 +295,9 @@ U_\text{max} = E_\text{max} d
 where $U_\text{max}$ is the greatest voltage ($\text{V}$) at which no breakdown happens, $E_\text{max}$ the dielectric strength of the dielectric ($\text{V/m}$) and $d$ the thickness of the dielectric layer ($\text{m}$). For example, a layer of paper $0.010\,\text{mm}$ thick withstands about $16 \cdot 10^{6}\,\tfrac{\text{V}}{\text{m}} \cdot 0.010 \cdot 10^{-3}\,\text{m} = 160\,\text{V}$.
 
 ```pysahdy
-An air-insulated capacitor withstands a field of $3\,\text{MV/m}$. The gap between the plates is $1.0\,\text{mm}$. What voltage does the capacitor withstand?
+The insulator of a capacitor is a layer of paper. The thickness of the layer is doubled. How does the maximum voltage the capacitor withstands change?
 ---
-$U_\text{max} = E_\text{max} d$. Substituting: $3 \cdot 10^{6}\,\tfrac{\text{V}}{\text{m}} \cdot 1.0 \cdot 10^{-3}\,\text{m} = 3.0\,\text{kV}$.
+It doubles. The dielectric strength $E_\text{max}$ is a property of the material and does not change, so $U_\text{max} = E_\text{max} d$ is directly proportional to the thickness $d$.
 ```
 
 ### The energy of a capacitor

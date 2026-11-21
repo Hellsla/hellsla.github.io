@@ -39,9 +39,9 @@ Kaikki aine koostuu atomeista. Atomeissa on positiivisesti varattuja protoneja j
 Aine, jossa varaukset pääsevät liikkumaan, on **johde**. Metalleissa osa elektroneista ei ole sidottu yhteen atomiin. Ne liikkuvat vapaasti metalli-ionien välissä. Niitä kutsutaan vapaiksi elektroneiksi. Siksi kupari, alumiini ja muut metallit johtavat hyvin sähköä. Aine, jossa varaukset eivät pääse liikkumaan, on **eriste**. Eristeitä ovat muovi, kumi, lasi ja kuiva puu. Sähköjohdossa on kuparinen johdin, jonka ympärillä on muovinen eristekuori. Eriste estää virtaa kulkemasta sinne, minne sen ei kuulu kulkea.
 
 ```pysahdy
-Miksi kuparitanko johtaa sähköä, mutta kuiva puutikku ei?
+Sähkömies käyttää kumikäsineitä. Miksi kumi suojaa sähkövirralta?
 ---
-Kuparissa on vapaita elektroneja. Ne voivat liikkua metalli-ionien välissä. Puussa varaukset eivät pääse liikkumaan, joten puu on eriste.
+Kumi on eriste. Sen varaukset eivät pääse liikkumaan. Siksi virta ei pääse käsineen läpi.
 ```
 
 ### Virtapiiri
@@ -343,7 +343,7 @@ missä $I$ on sähkövirta ($\text{A}$), $Q$ poikkileikkauksen läpi kulkenut va
 </svg>
 
 ```pysahdy
-Johtimen läpi kulkeva virta kaksinkertaistuu. Mitä tapahtuu varaukselle, joka kulkee poikkileikkauksen läpi samassa ajassa?
+Johtimen läpi kulkeva virta kaksinkertaistuu. Mitä tapahtuu varaukselle, joka kulkee poikkileikkauksen läpi tietyssä ajassa?
 ---
 Varaus kaksinkertaistuu. Kaavan $Q = It$ mukaan varaus on verrannollinen virtaan, kun aika $t$ pysyy samana.
 ```

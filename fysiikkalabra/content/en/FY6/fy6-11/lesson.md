@@ -129,9 +129,9 @@ The field is studied with a small positive **test charge** $q$, so small that it
 The electric field is a vector. Its direction is the direction in which the field pushes a positive charge. A force against the field acts on a negative charge, for example an electron. In the picture the field at the point $P$ is the same in both situations, but the direction of the force depends on the sign of the test charge.
 
 ```pysahdy
-The field points east. In which direction does the force act on a proton and in which on an electron?
+The field strength is measured with a test charge. The test charge is doubled at the same point. Does the field strength change?
 ---
-On the proton east, because its charge is positive, and on the electron west, because its charge is negative. The direction of the field is the same for both.
+No. The force doubles, but $E = F : q$ stays the same, because the charge grows by the same factor.
 ```
 
 <svg data-fig="test" viewBox="0 0 600 330" role="img" aria-label="Two diagrams side by side, not to scale. In each, on the left there is a large positive charge Q and to the right of it a point P where a small test charge has been brought. The green arrow E of the electric field at P points to the right in both pictures, away from the charge Q. In the left picture the test charge is positive, and the red arrow F of the force on it points in the same direction as the field. In the right picture the test charge is negative, and the force arrow points in the opposite direction, towards the charge Q." style="max-width:100%;font-size:24px">

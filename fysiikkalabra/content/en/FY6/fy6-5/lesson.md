@@ -116,9 +116,9 @@ The voltage across parallel branches is the same (chapter *Resistors in series a
 </svg>
 
 ```pysahdy
-A current of $0.80\,\text{A}$ arrives at a junction, and $0.30\,\text{A}$ leaves along one branch. How large is the current in the other branch?
+A current of $0.80\,\text{A}$ arrives at a junction and divides into two branches. Can the current be $0.50\,\text{A}$ in both branches? Why or why not?
 ---
-By the current law $I_3 = I_1 - I_2$. So $I_3 = 0.80\,\text{A} - 0.30\,\text{A}$, so $I_3 = 0.50\,\text{A}$.
+No. By the current law the currents leaving are together $0.80\,\text{A}$, but $0.50\,\text{A} + 0.50\,\text{A} = 1.00\,\text{A}$.
 ```
 
 ### Potential: the electrical level of every point
@@ -200,9 +200,9 @@ Kirchhoff's second law :: \sum \Delta V = 0
 where $\Delta V$ (V) is the change of potential in each part of the loop when the loop is traversed once. In the source from the negative terminal to the positive terminal $\Delta V = +U$, in a resistor in the direction of the current $\Delta V = -RI$, and in a wire $\Delta V = 0$. In a circuit of one loop with two resistors the law gives $U - R_1 I - R_2 I = 0$, that is, $U = R_1 I + R_2 I$.
 
 ```pysahdy
-In a one-loop circuit the voltage of the source is $12\,\text{V}$ and the voltage of resistor $R_1$ is $5.0\,\text{V}$. How large is the voltage of the second resistor $R_2$?
+In a one-loop circuit the resistors are $R_1 = 20\,\Omega$ and $R_2 = 10\,\Omega$. How many times larger is the voltage of $R_1$ than the voltage of $R_2$, and why?
 ---
-By the voltage law $U_2 = U - U_1$. So $U_2 = 12\,\text{V} - 5.0\,\text{V}$, so $U_2 = 7.0\,\text{V}$.
+Twice as large. The same current $I$ passes through both, so by $U = RI$ the voltage is proportional to the resistance. The voltages together make the source voltage, $U = R_1 I + R_2 I$.
 ```
 
 A **potential graph** shows the potential at different points of a loop. In the graph the loop of the circuit marked with the points $A$–$F$ is traversed from the negative terminal $F$ through the resistors $R_1$ and $R_2$ back to the point $F$. The rise of the source $+9.0\,\text{V}$ is equal to the total of the drops of the resistors $-3.0\,\text{V}$ and $-6.0\,\text{V}$, and in the wires the graph is horizontal.

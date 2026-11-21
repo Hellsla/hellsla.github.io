@@ -135,7 +135,7 @@ In a series connection the resistors are one after the other, and the charges ha
 If a component connected in series breaks, for example the filament of a lamp burns through, the only route is opened and the current stops in the whole circuit. This is why all the bulbs of an old-style string of fairy lights go out when one of them breaks.
 
 ```pysahdy
-The current through one of two resistors in series is $0.20\,\text{A}$. How large is the current through the other, and why?
+The current through the first of two resistors in series is $0.20\,\text{A}$. How large is the current through the second resistor, and why?
 ---
 The same, $0.20\,\text{A}$. There is only one path, and no charge disappears or piles up anywhere.
 ```

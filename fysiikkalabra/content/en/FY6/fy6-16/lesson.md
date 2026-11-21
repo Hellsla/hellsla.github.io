@@ -179,9 +179,9 @@ The charging time depends on how much energy has to be transferred to the batter
 <figure class="unit-photo"><img src="pics/fy6/ev-charging-socket.webp" alt="An open flap in the front of a white car with two charging inlets beneath it: a larger black one and a smaller one with an orange protective cap."><figcaption>The charging inlets of an electric car. The larger inlet is for fast charging with direct current. The smaller one is for charging with alternating current, in which the car's own charger converts the alternating current of the grid into direct current for the battery.</figcaption></figure>
 
 ```pysahdy
-Why must more energy be drawn from the grid than is stored in the battery?
+The efficiency of charging is $0.85$. What does this mean for the energy drawn from the grid, and where does the rest go?
 ---
-Part of the energy becomes internal energy of the charger, the wires and the battery. The efficiency is therefore below $100\,\%$.
+Only $85\,\%$ of the energy drawn from the grid is stored in the battery. The other $15\,\%$ becomes internal energy of the charger, the wires and the battery.
 ```
 
 ### One phase or three
@@ -190,9 +190,9 @@ A Finnish detached house usually gets **three-phase** electricity: three phase c
 The current of a device is obtained from its power as in the chapter *Electrical energy at home*: in one phase $I = P : U$. When charging from an ordinary socket, the charging cable usually limits the current to about $8\,\text{A}$, and the power is then $230\,\text{V} \cdot 8\,\text{A} \approx 1.8\,\text{kW}$. A single-phase charging station with a current of $16\,\text{A}$ charges with a power of about $3.7\,\text{kW}$, and a three-phase one with the same current at three times the power, about $11\,\text{kW}$. The same $40\,\text{kWh}$ charge takes more than a day from a socket, when the losses of charging are taken into account, and about four hours with a three-phase station.
 
 ```pysahdy
-A three-phase charging station draws a current of $10\,\text{A}$ from each phase conductor. The phase voltage is $230\,\text{V}$. What is the power of the station?
+A three-phase charging station has a power of $6.9\,\text{kW}$ and the phase voltage is $230\,\text{V}$. What is the current in each phase conductor?
 ---
-The power is three times that of one phase: $P = 3UI$, so $P = 3 \cdot 230\,\text{V} \cdot 10\,\text{A}$ and $P = 6.9\,\text{kW}$.
+From $P = 3UI$ we get $I = \tfrac{P}{3U}$, so $I = \tfrac{6900\,\text{W}}{3 \cdot 230\,\text{V}} = 10\,\text{A}$.
 ```
 
 ### The home electrical system
@@ -407,7 +407,7 @@ where $t$ is the charging time ($\text{h}$) and $P$ the power taken from the gri
 ```pysahdy
 $20\,\text{kWh}$ must be stored in the battery. The efficiency is $0.90$ and the charging power $5.0\,\text{kW}$. How long does charging take?
 ---
-$t = \tfrac{W_\text{akku}}{\eta P}$. Substituting: $\tfrac{20\,\text{kWh}}{0.90 \cdot 5.0\,\text{kW}} \approx 4.4\,\text{h}$.
+$t = \tfrac{W_\text{battery}}{\eta P}$. Substituting: $\tfrac{20\,\text{kWh}}{0.90 \cdot 5.0\,\text{kW}} \approx 4.4\,\text{h}$.
 ```
 
 This chapter assumes that the current and voltage of the charging equipment are in phase, that is, the power factor is approximately one. Then the power of a single-phase device is $P = UI$. In an evenly loaded three-phase system, where the device draws the same current from each phase conductor, the total power in this model is

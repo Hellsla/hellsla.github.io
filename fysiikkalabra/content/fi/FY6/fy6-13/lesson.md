@@ -247,9 +247,9 @@ Eristeessä varaukset eivät pääse liikkumaan vapaasti, mutta sähkökenttä s
 </svg>
 
 ```pysahdy
-Miksi eristeen asettaminen levyjen väliin heikentää kenttää, kun levyjen varaus pysyy samana?
+Mitä eristeen pinnoille tapahtuu, kun se asetetaan levyjen väliin, ja miksi levyjen välinen jännite siksi pienenee?
 ---
-Sähkökenttä polarisoi eristeen, ja sen pinnoille syntyvät varaukset heikentävät levyjen kenttää. Jännite $U$ pienenee, joten kapasitanssi $C = \tfrac{Q}{U}$ kasvaa.
+Eristeen pinnoille syntyy polarisaation vuoksi varauksia: levyä vasten on levyn varaukselle vastakkaismerkkinen varaus. Ne vähentävät kenttää, joten jännite $U$ pienenee ja kapasitanssi $C = \tfrac{Q}{U}$ kasvaa.
 ```
 
 ### Energia on sähkökentässä
@@ -295,9 +295,9 @@ U_\text{max} = E_\text{max} d
 missä $U_\text{max}$ on suurin jännite ($\text{V}$), jolla läpilyöntiä ei tapahdu, $E_\text{max}$ eristeen läpilyöntilujuus ($\text{V/m}$) ja $d$ eristekerroksen paksuus ($\text{m}$). Esimerkiksi $0{,}010\,\text{mm}$:n paperikerros kestää noin $16 \cdot 10^{6}\,\tfrac{\text{V}}{\text{m}} \cdot 0{,}010 \cdot 10^{-3}\,\text{m} = 160\,\text{V}$.
 
 ```pysahdy
-Ilmaeristeinen kondensaattori kestää kentän $3\,\text{MV/m}$. Levyjen väli on $1{,}0\,\text{mm}$. Kuinka suuren jännitteen kondensaattori kestää?
+Kondensaattorin eristeenä on paperikerros. Kerroksen paksuus kaksinkertaistetaan. Miten kondensaattorin kestämä suurin jännite muuttuu?
 ---
-$U_\text{max} = E_\text{max} d$. Sijoitus: $3 \cdot 10^{6}\,\tfrac{\text{V}}{\text{m}} \cdot 1{,}0 \cdot 10^{-3}\,\text{m} = 3{,}0\,\text{kV}$.
+Se kaksinkertaistuu. Läpilyöntilujuus $E_\text{max}$ on aineen ominaisuus eikä muutu, joten $U_\text{max} = E_\text{max} d$ on suoraan verrannollinen paksuuteen $d$.
 ```
 
 ### Kondensaattorin energia

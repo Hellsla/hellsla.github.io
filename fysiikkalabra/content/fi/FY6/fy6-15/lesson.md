@@ -224,9 +224,9 @@ Kodin sähköt jaetaan sähkökeskuksessa ryhmiin. Jokaisella ryhmällä on oma 
 Ryhmäjohdon johtimilla on pieni resistanssi, ja niissä kehittyy lämpöteho $P = RI^2$ (luku *Sähköteho ja vastuksen lämpeneminen*): kun virta kaksinkertaistuu, johdon lämpöteho nelinkertaistuu. Sulakkeen koko valitaan johdon mukaan: johto määrää, kuinka suuren virran sulake saa päästää läpi. Jos virta on pitkään suurempi, johto ja sen liitokset kuumenevat, eriste vaurioituu ja voi syttyä tulipalo. Sulake katkaisee virran ennen sitä. Pieni ylikuorma voi jatkua pitkäänkin, mutta mitä suurempi ylivirta on, sitä nopeammin sulake toimii; oikosulussa virta katkeaa sekunnin murto-osassa. Tulppasulakkeessa ohut lanka sulaa omasta lämpenemisestään, johdonsuojakatkaisija taas laukeaa ja käännetään takaisin päälle. Palanutta sulaketta ei koskaan korvata suuremmalla.
 
 ```pysahdy
-Ryhmäjohdon $10\,\text{A}$:n sulake on palanut. Miksi sen tilalle ei saa laittaa $16\,\text{A}$:n sulaketta?
+Ryhmäjohdon virta kasvaa kolminkertaiseksi. Kuinka moninkertaiseksi johdon lämpöteho kasvaa?
 ---
-Sulakkeen koko valitaan johdon mukaan. Suurempi sulake päästäisi läpi virran, joka kuumentaa johdon vaarallisesti ennen kuin virta katkeaa.
+Lämpöteho on $P = RI^2$, joten se on verrannollinen virran neliöön. Teho kasvaa $3^2 = 9$-kertaiseksi.
 ```
 
 ### Maadoitus ohjaa vikavirran pois ihmisestä
@@ -482,7 +482,7 @@ I = \frac{P_1 + P_2 + P_3 + \dots}{U}
 missä $I$ on ryhmäjohdon kokonaisvirta ($\text{A}$), $P_1, P_2, \dots$ samaan aikaan päällä olevien laitteiden tehot ($\text{W}$) ja $U$ verkkojännite $230\,\text{V}$. Verkkojännite on vaihtojännitteen tehollinen arvo. Tässä luvussa tarkastellaan laitteita, joiden virta ja jännite ovat samanvaiheiset, kuten lämmittäviä laitteita, tai joiden tehokerroin oletetaan likimain yhdeksi. Silloin teho lasketaan kaavalla $P = UI$ kuten tasajännitteellä. Yleisesti vaihtovirtapiirin pätöteho riippuu myös jännitteen ja virran vaihe-erosta. Ryhmä ei ole ylikuormitettu, kun $I$ on enintään sulakkeen nimellisvirta $I_\text{s}$. Laitteiden yhteisteho saa siis olla $10\,\text{A}$:n ryhmässä enintään $230\,\text{V} \cdot 10\,\text{A} = 2300\,\text{W}$ ja $16\,\text{A}$:n ryhmässä $230\,\text{V} \cdot 16\,\text{A} = 3680\,\text{W}$.
 
 ```pysahdy
-Samassa ryhmässä ovat päällä silitysrauta ($1{,}1\,\text{kW}$) ja radio ($0{,}70\,\text{kW}$). Kuinka suuri on ryhmäjohdon virta?
+Samassa ryhmässä ovat päällä silitysrauta ($1{,}1\,\text{kW}$) ja kahvinkeitin ($0{,}70\,\text{kW}$). Kuinka suuri on ryhmäjohdon virta?
 ---
 $I = \tfrac{P_1 + P_2}{U}$. Sijoitus: $\tfrac{1100\,\text{W} + 700\,\text{W}}{230\,\text{V}} \approx 7{,}8\,\text{A}$.
 ```

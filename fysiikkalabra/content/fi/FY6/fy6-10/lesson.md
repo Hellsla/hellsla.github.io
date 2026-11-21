@@ -398,7 +398,7 @@ missä $F$ on voiman suuruus ($\text{N}$), $q_1$ ja $q_2$ varaukset ($\text{C}$)
 ```pysahdy
 Kaksi pistevarausta, kumpikin $1{,}0\,\mu\text{C}$, on $0{,}30\,\text{m}$:n päässä toisistaan. Kuinka suuri sähköinen voima niiden välillä on?
 ---
-Voima on $F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}$, joten $F = 8{,}988 \cdot 10^{9} \cdot \frac{(1{,}0 \cdot 10^{-6})^2}{0{,}30^2}\,\text{N}$ $\approx 0{,}10\,\text{N}$.
+Voima on $F = k\,\lvert q_1 q_2 \rvert : r^2$. Siis $F = 9{,}0 \cdot 10^{9} \cdot 1{,}0 \cdot 10^{-12} : 0{,}30^2\,\text{N}$, joten $F \approx 0{,}10\,\text{N}$.
 ```
 
 ### Voima ja vastavoima
@@ -502,7 +502,7 @@ missä $\overline{F}$ on kokonaisvoima ($\text{N}$) ja $\overline{F}_1$ ja $\ove
 ```pysahdy
 Kolme varausta on samalla suoralla. Keskimmäiseen varaukseen vaikuttavat kaksi yhtä suurta samanmerkkistä varausta, kumpikin yhtä kaukana. Mikä on kokonaisvoima?
 ---
-Nolla. Voimat ovat yhtä suuret ja vastakkaissuuntaiset, joten ne kumoavat toisensa ja $\overline{F} = \overline{0}$.
+Nolla. Kumpikin varaus hylkii keskimmäistä vastakkaiselta puolelta. Voimat ovat yhtä suuret ja vastakkaissuuntaiset, joten ne kumoavat toisensa ja $\overline{F} = \overline{0}$.
 ```
 
 ## Esimerkki

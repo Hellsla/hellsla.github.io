@@ -129,9 +129,9 @@ Kenttää tutkitaan pienellä positiivisella **testivarauksella** $q$, joka on n
 Sähkökenttä on vektori. Sen suunta on se suunta, johon kenttä työntää positiivista varausta. Negatiiviseen varaukseen, esimerkiksi elektroniin, kohdistuu voima kenttää vastaan. Kuvassa kohdan $P$ kenttä on sama molemmissa tilanteissa, mutta voiman suunta riippuu testivarauksen merkistä.
 
 ```pysahdy
-Kentän suunta on itään. Mihin suuntaan voima kohdistuu protoniin ja mihin elektroniin?
+Kentän voimakkuus mitataan testivarauksella. Testivaraus kaksinkertaistetaan samassa kohdassa. Muuttuuko kentän voimakkuus?
 ---
-Protoniin itään, koska sen varaus on positiivinen, ja elektroniin länteen, koska sen varaus on negatiivinen. Kentän suunta on kummallekin sama.
+Ei muutu. Voima kaksinkertaistuu, mutta $E = F : q$ pysyy samana, koska varaus kasvaa yhtä paljon.
 ```
 
 <svg data-fig="test" viewBox="0 0 600 330" role="img" aria-label="Kaksi kaavakuvaa vierekkäin, ei mittakaavassa. Kummassakin vasemmalla on suuri positiivinen varaus Q ja sen oikealla puolella kohta P, johon on tuotu pieni testivaraus. Kohdan P sähkökentän vihreä nuoli E osoittaa kummassakin kuvassa oikealle, poispäin varauksesta Q. Vasemmassa kuvassa testivaraus on positiivinen, ja siihen kohdistuvan voiman punainen nuoli F osoittaa samaan suuntaan kuin kenttä. Oikeassa kuvassa testivaraus on negatiivinen, ja voiman nuoli osoittaa vastakkaiseen suuntaan, kohti varausta Q." style="max-width:100%;font-size:24px">

@@ -179,9 +179,9 @@ Latausaika riippuu siitä, kuinka paljon energiaa akkuun pitää siirtää ja ku
 <figure class="unit-photo"><img src="pics/fy6/ev-charging-socket.webp" alt="Valkoisen auton keulassa avattu luukku, jonka alla on kaksi latausliitäntää: suurempi musta ja pienempi, jonka suojatulppa on oranssi."><figcaption>Sähköauton latausliitännät. Suurempi liitäntä on tasavirtapikalataukseen. Pienempi on vaihtovirtalataukseen, jossa auton oma laturi muuntaa verkon vaihtovirran akun tasavirraksi.</figcaption></figure>
 
 ```pysahdy
-Miksi verkosta täytyy ottaa enemmän energiaa kuin akkuun varastoituu?
+Latauksen hyötysuhde on $0{,}85$. Mitä se tarkoittaa verkosta otetulle energialle ja minne loppu menee?
 ---
-Osa energiasta muuttuu laturin, johtojen ja akun sisäenergiaksi. Hyötysuhde on siksi alle $100\,\%$.
+Vain $85\,\%$ verkosta otetusta energiasta varastoituu akkuun. Loput $15\,\%$ muuttuu laturin, johtojen ja akun sisäenergiaksi.
 ```
 
 ### Yksi vaihe vai kolme
@@ -190,9 +190,9 @@ Suomalaiseen omakotitaloon tulee yleensä **kolmivaihesähkö**: kolme vaihejohd
 Laitteen virta saadaan tehosta kuten luvussa *Sähköenergia kotona*: yhdessä vaiheessa $I = P : U$. Tavallisesta pistorasiasta ladattaessa latauskaapeli rajoittaa virran yleensä noin $8\,\text{A}$:iin, jolloin teho on $230\,\text{V} \cdot 8\,\text{A} \approx 1{,}8\,\text{kW}$. Yksivaiheinen latausasema, jonka virta on $16\,\text{A}$, lataa teholla noin $3{,}7\,\text{kW}$, ja kolmivaiheinen samalla virralla kolminkertaisella teholla, noin $11\,\text{kW}$. Sama $40\,\text{kWh}$:n lataus kestää pistorasiasta yli vuorokauden, kun latauksen häviöt otetaan huomioon, kolmivaiheisella asemalla noin neljä tuntia.
 
 ```pysahdy
-Kolmivaiheinen latausasema ottaa jokaisesta vaihejohtimesta virran $10\,\text{A}$. Vaihejännite on $230\,\text{V}$. Kuinka suuri on aseman teho?
+Kolmivaiheisen latausaseman teho on $6{,}9\,\text{kW}$ ja vaihejännite $230\,\text{V}$. Kuinka suuri on virta jokaisessa vaihejohtimessa?
 ---
-Teho on kolminkertainen yhteen vaiheeseen verrattuna: $P = 3UI$, joten $P = 3 \cdot 230\,\text{V} \cdot 10\,\text{A}$ ja $P = 6{,}9\,\text{kW}$.
+Kaavasta $P = 3UI$ saadaan $I = \tfrac{P}{3U}$, joten $I = \tfrac{6900\,\text{W}}{3 \cdot 230\,\text{V}} = 10\,\text{A}$.
 ```
 
 ### Kodin sähköjärjestelmä

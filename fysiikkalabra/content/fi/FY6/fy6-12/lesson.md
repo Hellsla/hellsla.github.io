@@ -458,7 +458,7 @@ Sähköinen voima on konservatiivinen kuten painovoima: sen tekemä työ riippuu
 ```pysahdy
 Vaikuttaako nollatason valinta siihen, kuinka paljon työtä kenttä tekee varauksen siirtyessä kohdasta toiseen?
 ---
-Ei vaikuta. Työ on potentiaalienergian muutos, ja nollatason siirto muuttaa molempia energioita yhtä paljon.
+Ei vaikuta. Kentän tekemä työ on potentiaalienergian vähenemä, $W = -\Delta E_\text{p}$, ja nollatason siirto muuttaa alku- ja loppuenergiaa yhtä paljon, joten erotus pysyy samana.
 ```
 
 ### Potentiaali: energia varausyksikköä kohti

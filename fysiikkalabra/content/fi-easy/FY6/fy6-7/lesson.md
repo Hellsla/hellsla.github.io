@@ -166,7 +166,7 @@ Suuri teho ei siis yksin tarkoita suurta kulutusta. Vedenkeitin, jonka teho on $
 </svg>
 
 ```pysahdy
-Lamppu, jonka teho on $0{,}060\,\text{kW}$, palaa $5{,}0\,\text{h}$. Kuinka paljon sähköenergiaa lamppu käyttää?
+Lamppu, jonka teho on $0{,}060\,\text{kW}$, palaa $5{,}0\,\text{h}$. Kuinka paljon sähköenergiaa lamppu käyttää? Vastaa kilowattitunteina.
 ---
 Energia on $E = Pt$. Siis $E = 0{,}060\,\text{kW} \cdot 5{,}0\,\text{h}$, joten $E = 0{,}30\,\text{kWh}$.
 ```
@@ -177,9 +177,9 @@ Energia on $E = Pt$. Siis $E = 0{,}060\,\text{kW} \cdot 5{,}0\,\text{h}$, joten 
 Energian SI-yksikkö on joule. Kodin sähköenergia mitataan ja laskutetaan kuitenkin **kilowattitunteina**. Yksi kilowattitunti on energia, jonka $1\,\text{kW}$:n teholla toimiva laite käyttää tunnissa. Kun teho on kilowatteina ja aika tunteina, energia tulee suoraan kilowattitunteina. Nimi kertoo, miten se lasketaan: kilowatti kertaa tunti. Se ei ole kilowatti tunnissa. Yksi kilowattitunti on $3{,}6$ miljoonaa joulea.
 
 ```pysahdy
-Kuinka monta megajoulea on $2{,}0\,\text{kWh}$?
+Kuinka monta kilowattituntia on $10{,}8\,\text{MJ}$?
 ---
-Yksi kilowattitunti on $3{,}6\,\text{MJ}$. Siis $2{,}0\,\text{kWh} = 2{,}0 \cdot 3{,}6\,\text{MJ}$, joten $2{,}0\,\text{kWh} = 7{,}2\,\text{MJ}$.
+Yksi kilowattitunti on $3{,}6\,\text{MJ}$. Siis $E = 10{,}8\,\text{MJ} : 3{,}6\,\text{MJ/kWh}$, joten $E = 3{,}0\,\text{kWh}$.
 ```
 
 ### Laitteen virta verkossa
@@ -259,7 +259,7 @@ missä $U$ on laitteen jännite (V) ja $I$ sen läpi kulkeva virta (A).
 ```pysahdy
 Laitteen jännite on $230\,\text{V}$ ja virta $0{,}50\,\text{A}$. Kuinka paljon energiaa se käyttää $2{,}0\,\text{h}$:ssa? Vastaa kilowattitunteina.
 ---
-Energia on $E = UIt$. Siis $E = 230\,\text{V} \cdot 0{,}50\,\text{A} \cdot 2{,}0\,\text{h}$, joten $E = 0{,}23\,\text{kWh}$.
+Teho on $P = UI = 230\,\text{V} \cdot 0{,}50\,\text{A} = 115\,\text{W} = 0{,}115\,\text{kW}$. Siis $E = Pt = 0{,}115\,\text{kW} \cdot 2{,}0\,\text{h}$, joten $E = 0{,}23\,\text{kWh}$.
 ```
 
 Sähkölaskussa maksetaan sähköenergiasta ja sen siirrosta sähköverkossa kilowattituntia kohti. Lisäksi laskussa on kuukausittaisia perusmaksuja:

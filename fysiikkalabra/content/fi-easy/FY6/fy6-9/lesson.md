@@ -46,9 +46,9 @@ Paristossa ja akussa kemiallinen reaktio pitää napojen välillä jännitteen. 
 Akku ei varastoi sähkövarausta. Se on sähköisesti neutraali sekä täynnä että tyhjänä. Kun akku purkautuu, se vain siirtää varauksia piirin ympäri. Jokainen varaus, joka lähtee plusnavasta, palaa miinusnapaan. Ulkoisessa piirissä virta kulkee plusnavasta miinusnapaan. Akun sisällä virta kulkee miinusnavalta plusnavalle.
 
 ```pysahdy
-Onko täyteen ladattu akku sähköisesti varautunut? Mitä akkuun on latauksessa varastoitunut?
+Mitä akussa muuttuu, kun se ladataan? Muuttuuko sen kokonaisvaraus?
 ---
-Ei ole. Akku on neutraali myös täynnä. Siihen on varastoitunut kemiallista energiaa, ei sähkövarausta.
+Sähköenergiaa muuttuu akun kemialliseksi energiaksi. Kokonaisvaraus ei muutu: akku pysyy neutraalina.
 ```
 
 ### Lataaminen kääntää virran akun sisällä
@@ -222,9 +222,9 @@ I = \frac{U_\text{lat} - E}{R + R_\text{s}}
 missä $I$ on latausvirta (A), $U_\text{lat}$ laturin jännite (V), $E$ akun lähdejännite (V), $R$ laturin ja johtojen resistanssi ($\Omega$) ja $R_\text{s}$ akun sisäinen resistanssi ($\Omega$). Akku latautuu vain, kun $U_\text{lat} > E$. Jos $U_\text{lat} < E$, virta kääntyy ja akku purkautuu laturiin. Näin ei käy, jos laturissa on diodi, joka päästää virran vain yhteen suuntaan.
 
 ```pysahdy
-Laturin jännite pysyy samana, mutta akun lähdejännite $E$ kasvaa latauksen aikana. Miten latausvirta muuttuu?
+Laturin jännite $U_\text{lat}$ on pienempi kuin akun lähdejännite $E$. Latautuuko akku?
 ---
-Se pienenee. Virta on suoraan verrannollinen erotukseen $U_\text{lat} - E$, ja erotus pienenee.
+Ei lataudu. Silloin $U_\text{lat} - E < 0$, joten laturi ei pysty ajamaan virtaa akun läpi latauksen suuntaan.
 ```
 
 Akun napajännite on jännite akun napojen välillä. Latauksen aikana se on

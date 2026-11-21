@@ -224,9 +224,9 @@ The electricity of a home is divided into circuits in the fuse board. Each circu
 The conductors of the circuit cable have a small resistance, and they produce thermal power $P = RI^2$ (chapter *Electric power and the heating of a resistor*): when the current doubles, the thermal power of the cable becomes four times as large. The size of the fuse is chosen according to the cable: the cable determines how large a current the fuse may let through. If the current is larger for a long time, the cable and its connections heat up, the insulation is damaged and a fire can start. The fuse cuts off the current before that happens. A small overload can continue for a long time, but the larger the overcurrent, the faster the fuse acts; in a short circuit the current is cut off in a fraction of a second. In a screw-in fuse a thin wire melts from its own heating, whereas a circuit breaker trips and is switched back on. A blown fuse is never replaced with a larger one.
 
 ```pysahdy
-The $10\,\text{A}$ fuse of a group cable has blown. Why must it not be replaced with a $16\,\text{A}$ fuse?
+The current in a circuit cable becomes three times as large. How many times as large does the thermal power of the cable become?
 ---
-The size of the fuse is chosen by the cable. A larger fuse would let through a current that heats the cable dangerously before the current is cut.
+The thermal power is $P = RI^2$, so it is proportional to the square of the current. The power becomes $3^2 = 9$ times as large.
 ```
 
 ### Earthing leads the fault current away from the person
@@ -408,7 +408,7 @@ An RCD does not prevent all shocks. If a person touches the line conductor and t
 ```pysahdy
 Which two currents does a residual current device compare, and when does it cut the current?
 ---
-It compares the current in the phase conductor and in the neutral conductor. When the difference exceeds the tripping current, usually $30\,\text{mA}$, it cuts the current.
+It compares the current in the line conductor and in the neutral conductor. When the difference exceeds the tripping current, usually $30\,\text{mA}$, it cuts the current.
 ```
 
 ### The dielectric strength of an insulator
@@ -482,7 +482,7 @@ I = \frac{P_1 + P_2 + P_3 + \dots}{U}
 where $I$ is the total current of the circuit cable ($\text{A}$), $P_1, P_2, \dots$ are the powers of the devices that are on at the same time ($\text{W}$) and $U$ is the mains voltage $230\,\text{V}$. The mains voltage is the rms value of the alternating voltage. This chapter considers devices whose current and voltage are in phase, such as heating devices, or whose power factor is assumed to be approximately one. Then the power is calculated with the formula $P = UI$ as with a direct voltage. In general, the active power of an alternating-current circuit also depends on the phase difference between the voltage and the current. The circuit is not overloaded when $I$ is at most the rated current of the fuse $I_\text{f}$. The total power of the devices may therefore be at most $230\,\text{V} \cdot 10\,\text{A} = 2300\,\text{W}$ in a $10\,\text{A}$ circuit and $230\,\text{V} \cdot 16\,\text{A} = 3680\,\text{W}$ in a $16\,\text{A}$ circuit.
 
 ```pysahdy
-An iron ($1.1\,\text{kW}$) and a radio ($0.70\,\text{kW}$) are on in the same group. What is the current in the group cable?
+An iron ($1.1\,\text{kW}$) and a coffee maker ($0.70\,\text{kW}$) are on in the same group. What is the current in the group cable?
 ---
 $I = \tfrac{P_1 + P_2}{U}$. Substituting: $\tfrac{1100\,\text{W} + 700\,\text{W}}{230\,\text{V}} \approx 7.8\,\text{A}$.
 ```

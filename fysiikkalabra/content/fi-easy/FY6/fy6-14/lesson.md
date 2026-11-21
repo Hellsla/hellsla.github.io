@@ -364,7 +364,7 @@ Diodin ominaiskäyrä piirretään yleensä niin, että jännite $U_\text{D}$ on
 ```pysahdy
 Piidiodi on päästösuunnassa. Sen jännite on $0{,}30\,\text{V}$. Kulkeeko siinä merkittävä virta?
 ---
-Ei kulje. Jännite on pienempi kuin kynnysjännite, joka on noin $0{,}6$–$0{,}7\,\text{V}$. Siksi virta on lähes nolla.
+Ei kulje. Jännite on pienempi kuin kynnysjännite, joka on noin $0{,}6\,\text{V}$–$0{,}7\,\text{V}$. Siksi virta on lähes nolla.
 ```
 
 ### LED muuttaa sähköenergiaa valoksi
@@ -437,9 +437,9 @@ Kennon $(U, I)$-kuvaaja ei ole laskeva suora niin kuin pariston (luku *Lähdejä
 <figure class="unit-photo"><img src="pics/fy6/solar-panels-jyvaskyla.webp" alt="Talon katto ja sininen taivas. Katolla on tummansinisiä aurinkopaneeleja."><figcaption>Aurinkopaneeleja talon katolla Jyväskylässä. Paneelissa on monta aurinkokennoa sarjassa. Paneelit tekevät tasajännitettä. Laite muuttaa sen vaihtojännitteeksi, jota kodin sähköverkossa käytetään.</figcaption></figure>
 
 ```pysahdy
-Aurinkokennon napojen välillä on tyhjäkäyntijännite $U_\text{t}$. Silti kennon teho on silloin nolla. Miksi?
+Valo himmenee puoleen. Kennon oikosulkuvirta puolittuu. Tyhjäkäyntijännite muuttuu vain vähän. Miksi?
 ---
-Tyhjäkäynnissä virtaa ei oteta, $I = 0$. Teho on $P = UI$. Siksi teho on nolla, vaikka jännite on suuri.
+Oikosulkuvirta on suoraan verrannollinen irradianssiin. Siksi se puolittuu. Tyhjäkäyntijännite riippuu valosta vain vähän. Siksi se pysyy lähes ennallaan.
 ```
 
 ## Kaava: Etuvastus ja aurinkokennon teho
