@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 97529708b7cc23d9
+CONTENT-HASH: 151c9ef890c265ae
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
-
-## Vanhan sisällön löydökset
-- none (rajattu laajuus: vain uudet pysahdy-laatikot)
+- [Minor] Vastaus, vaihevirta: \tfrac-murtoluku $\tfrac{P}{3U}$ pieni 360 px:llä, luettavissa.
 
 ## Checked
-batch delta review (round 1): 3 uutta pysahdy-laatikkoa luettu lähteestä (kieli, LaTeX, yksiköt, :n-päätteet); render tarkistettu preview-käännöksellä 360 px, vastaus avattuna, lessonit fy6-1, 2, 10, 12, 13 (yhteinen .stop-think-komponentti): ei vaakavieritystä, ei KaTeX-virheitä, otsikko/kysymys/vastaus selkeät. Vanhat shots eivät sisällä uusia laatikoita.
+batch delta review (round 2, scope: Pysähdy ja mieti -laatikot): pakettikaappaukset eivät sisällä laatikoita, joten renderöin sivun (build.py → preview/fi-easy/fy6-16.html) Chromiumilla 360 px:llä, avasin kaikki aside.stop-think-vastaukset ja mittasin: 3 laatikkoa, ei leikkautumista, ei vaakavieritystä, ei KaTeX-virheitä; avasin kuvakaappaukset laatikoista (yksiköt, desimaalipilkku {,}, \cdot, kaksoispisteet kunnossa). Sisältö hash-vaihto vain fy6-10 ja fy6-13 (yksi vastauslause muutettu kesken, ulkoasuun vaikuttamaton).

@@ -1,14 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: 6a2dacc60d53c7cb
+VERDICT: PASS
+CONTENT-HASH: 5dd76c8d5bd2d97a
 
 ## Blocking
-- [Major] lesson.md pysahdy 1 — "toisen läpi kulkee … virta kulkee toisen läpi": sama sana kahdesti, kysymys näyttää koskevan samaa vastusta — epäselvä tehtävä — kirjoita "Sarjaan kytketyistä vastuksista ensimmäisen läpi kulkee $0{,}20\,\text{A}$. Kuinka suuri virta kulkee toisen vastuksen läpi? Miksi?"
+(none)
 
 ## Polish
-- none
-
-## Vanhan sisällön löydökset
-- none (rajattu laajuus: vain uudet pysahdy-laatikot)
+- [Minor] Vastaus, rinnankytkennän laskuesimerkki: \tfrac-murtoluvun yksiköt ovat pieniä 360 px:llä, mutta luettavissa.
 
 ## Checked
-batch delta review (round 1): 3 uutta pysahdy-laatikkoa luettu lähteestä (kieli, LaTeX, yksiköt, :n-päätteet); render tarkistettu preview-käännöksellä 360 px, vastaus avattuna, lessonit fy6-1, 2, 10, 12, 13 (yhteinen .stop-think-komponentti): ei vaakavieritystä, ei KaTeX-virheitä, otsikko/kysymys/vastaus selkeät. Vanhat shots eivät sisällä uusia laatikoita.
+batch delta review (round 2, scope: Pysähdy ja mieti -laatikot): pakettikaappaukset eivät sisällä laatikoita, joten renderöin sivun (build.py → preview/fi-easy/fy6-4.html) Chromiumilla 360 px:llä, avasin kaikki aside.stop-think-vastaukset ja mittasin: 3 laatikkoa, ei leikkautumista, ei vaakavieritystä, ei KaTeX-virheitä; avasin kuvakaappaukset laatikoista (yksiköt, desimaalipilkku {,}, \cdot, kaksoispisteet kunnossa). Sisältö hash-vaihto vain fy6-10 ja fy6-13 (yksi vastauslause muutettu kesken, ulkoasuun vaikuttamaton).

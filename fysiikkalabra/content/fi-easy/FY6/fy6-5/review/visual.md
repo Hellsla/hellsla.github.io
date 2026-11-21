@@ -1,14 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: 184fdda5b4ed8ad5
+VERDICT: PASS
+CONTENT-HASH: e0ace1a9835f90ee
 
 ## Blocking
-- [Major] lesson.md pysahdy 1 — "toiseen haaraan lähtee 0,30 A … lähtee toiseen haaraan?": sama sana kahdesti, kysymys luettavissa tautologiaksi — epäselvä — kirjoita "…ensimmäiseen haaraan lähtee $0{,}30\,\text{A}$. Kuinka suuri virta lähtee toiseen haaraan?"
+(none)
 
 ## Polish
-- none
-
-## Vanhan sisällön löydökset
-- none (rajattu laajuus: vain uudet pysahdy-laatikot)
+(none)
 
 ## Checked
-batch delta review (round 1): 3 uutta pysahdy-laatikkoa luettu lähteestä (kieli, LaTeX, yksiköt, :n-päätteet); render tarkistettu preview-käännöksellä 360 px, vastaus avattuna, lessonit fy6-1, 2, 10, 12, 13 (yhteinen .stop-think-komponentti): ei vaakavieritystä, ei KaTeX-virheitä, otsikko/kysymys/vastaus selkeät. Vanhat shots eivät sisällä uusia laatikoita.
+batch delta review (round 2, scope: Pysähdy ja mieti -laatikot): pakettikaappaukset eivät sisällä laatikoita, joten renderöin sivun (build.py → preview/fi-easy/fy6-5.html) Chromiumilla 360 px:llä, avasin kaikki aside.stop-think-vastaukset ja mittasin: 3 laatikkoa, ei leikkautumista, ei vaakavieritystä, ei KaTeX-virheitä; avasin kuvakaappaukset laatikoista (yksiköt, desimaalipilkku {,}, \cdot, kaksoispisteet kunnossa). Sisältö hash-vaihto vain fy6-10 ja fy6-13 (yksi vastauslause muutettu kesken, ulkoasuun vaikuttamaton).
