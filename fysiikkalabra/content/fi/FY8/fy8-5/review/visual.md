@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 582d3e8f8eaed80e
+CONTENT-HASH: 33e13819be740816
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
+
+## Vanhan sisällön löydökset
+(none seen)
 
 ## Checked
-- Round 2 delta: the round 1 Major only. Fresh captures made with screenshot.py fy8-5 (hash 582d3e8f8eaed80e at start and end).
-- Opened fy8-5-stage-sovella-390-1.png: the box title reads "Esimerkki 1: Siirtymä 3d → 2p", plain and legible. The 3d and 2p in the problem text and the formulas render correctly. Nothing clipped at 390 px.
-- No other captures opened this round. Figures and the rest of the layout were not re-judged; the source change is a title string only.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+Batch delta, round 1: opened fy8-5-theory-1280-* (crops of all three boxes at 1280 px) and the 390 px captures fy8-5-stage-selita-390-* where the three "Pysähdy ja mieti" boxes sit. At 390 px the boxes (green bar, label, question, closed "Vastaus") are readable, nothing is clipped, the maths ($10$, $n = 2$, units) renders in KaTeX. At 1280 px the box stays in the reading column beside floated figures and photos with no overlap, and is distinct from the other closed boxes. The answers (behind "Vastaus") were checked in source only; the diff adds nothing else.

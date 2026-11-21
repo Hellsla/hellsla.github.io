@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6933dd145d981068
+CONTENT-HASH: 664ecccfbff46bde
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
+
+## Vanhan sisällön löydökset
+(none seen)
 
 ## Checked
-- Delta round 1: Pohdinta retrieval task changed (energy levels/photon -> ionisation). Opened fy8-8-stage-herata-390: closed optional card "Kertaa: energiatasot ja ionisaatio" fits the phone width, no clipping. Maths in the new prompt/feedback is $...$ with units, decimal comma {,}, aligned chain in feedback; read from the packet diff (the opened-state captures were not opened). lesson.md change is md-paragraphs/figures teacher-approved; layout checks green.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+Batch delta, round 1: opened fy8-8-theory-1280-* (crops of all three boxes at 1280 px) and the 390 px captures fy8-8-stage-selita-390-* where the three "Pysähdy ja mieti" boxes sit. At 390 px the boxes (green bar, label, question, closed "Vastaus") are readable, nothing is clipped, the maths ($10$, $n = 2$, units) renders in KaTeX. At 1280 px the box stays in the reading column beside floated figures and photos with no overlap, and is distinct from the other closed boxes. The answers (behind "Vastaus") were checked in source only; the diff adds nothing else. Two box edges fall on 390 px capture seams; the other captures show them whole.

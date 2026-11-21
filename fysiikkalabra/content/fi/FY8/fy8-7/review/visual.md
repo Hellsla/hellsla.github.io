@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3edfe13d49a1760c
+CONTENT-HASH: 130c5d67f1291ea4
 
 ## Blocking
 (none)
@@ -7,8 +7,8 @@ CONTENT-HASH: 3edfe13d49a1760c
 ## Polish
 (none)
 
-## Checked
-- Delta round 3: He-Ne retrieval card. Opened stage-herata-390 (card in place, layout fine). Read inquiry.json source: prompt, all choice feedbacks now consistently say 633 nm and about 1,96 eV (round-2 Major fixed); units and symbols in LaTeX; wording fluent, "atomien itsestään lähettämä valo" reads well. lesson.md changes were presentation only; lesson-answers.py is not student-visible.
+## Vanhan sisällön löydökset
+(none seen)
 
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+## Checked
+Batch delta, round 1: opened fy8-7-theory-1280-* (crops of all three boxes at 1280 px) and the 390 px captures fy8-7-stage-selita-390-* where the three "Pysähdy ja mieti" boxes sit. At 390 px the boxes (green bar, label, question, closed "Vastaus") are readable, nothing is clipped, the maths ($10$, $n = 2$, units) renders in KaTeX. At 1280 px the box stays in the reading column beside floated figures and photos with no overlap, and is distinct from the other closed boxes. The answers (behind "Vastaus") were checked in source only; the diff adds nothing else.

@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 401f1bd1abe3a5d4
+CONTENT-HASH: 7bc7557880beb568
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Tiivistelmä formula — the trailing "." sits tight against the display box's right edge at 390 px (not clipped) — optional: none needed.
+(none)
+
+## Vanhan sisällön löydökset
+(none seen)
 
 ## Checked
-- Delta (round 5). Opened stage-selita-390-6 (Tiivistelmä closed there) and my own 390 px render of the opened Tiivistelmä (preview/fy8-10.html, Chrome): formula on its own display line, fits (scrollWidth = clientWidth, page 390), trailing "." present, five separate bullets (the formula belongs to bullet 2), no overflow.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+Batch delta, round 1: opened fy8-10-theory-1280-* (crops of all three boxes at 1280 px) and the 390 px captures fy8-10-stage-selita-390-* where the three "Pysähdy ja mieti" boxes sit. At 390 px the boxes (green bar, label, question, closed "Vastaus") are readable, nothing is clipped, the maths ($10$, $n = 2$, units) renders in KaTeX. At 1280 px the box stays in the reading column beside floated figures and photos with no overlap, and is distinct from the other closed boxes. The answers (behind "Vastaus") were checked in source only; the diff adds nothing else. Two box edges fall on 390 px capture seams; the other captures show them whole.

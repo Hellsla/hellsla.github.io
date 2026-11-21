@@ -1,8 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: cd549898d8f73394
+CONTENT-HASH: 159aee6b382f4cfd
+
 ## Blocking
+(ei)
 
 ## Polish
+- Laatikko 3 toistaa edellä olevan 0,1 u -esimerkin menetelmän. Käytä toisenlaista lukua tai pyydä vertailua polttoon.
+- Laatikko 1 vaatii päättelyn kuvaajan huipusta, hyvä.
+
+## Vanhan sisällön löydökset
+(ei)
 
 ## Checked
-batch delta review: diff only: mass-defect retrieval switched to uranium-235 (92 p + 143 n = 235 correct); the feedback 'Uraaniytimessä on 235 nukleonia' matches; wording clear.
+batch delta review (round 1): kolme uutta pysähdy-laatikkoa; luettu kutakin edeltävä teksti ja kuvat; laatikot, joiden vastaus on jo sanatarkasti tekstissä tai kuvassa, merkitty Blocking.

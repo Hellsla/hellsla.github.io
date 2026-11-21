@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 25198780be5abb6a
+CONTENT-HASH: 16505e815fb04adb
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+(none)
+
+## Vanhan sisällön löydökset
+(none seen)
 
 ## Checked
-- Delta round 1, hash 25198780be5abb6a at start and end: one sentence added to the optional "Kertaa: beeta miinus -hajoaminen" prompt in inquiry.json (lesson.md only re-cut into paragraphs, no figure or formula changed).
-- Opened fy8-15-stage-herata-390 (Pohdinta): the closed Kertaa box sits under the question, layout intact. The opened prompt has no capture of its own; judged from source: formula unchanged, new sentence plain words and fluent Finnish, consistent with the Pohdinta text about the free neutron; check_layout is clean.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+Batch delta, round 1: opened fy8-15-theory-1280-* (crops of all three boxes at 1280 px) and the 390 px captures fy8-15-stage-selita-390-* where the three "Pysähdy ja mieti" boxes sit. At 390 px the boxes (green bar, label, question, closed "Vastaus") are readable, nothing is clipped, the maths ($10$, $n = 2$, units) renders in KaTeX. At 1280 px the box stays in the reading column beside floated figures and photos with no overlap, and is distinct from the other closed boxes. The answers (behind "Vastaus") were checked in source only; the diff adds nothing else. Two box edges fall on 390 px capture seams; the other captures show them whole.

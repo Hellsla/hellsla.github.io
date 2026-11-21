@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d265822b3b58d509
+CONTENT-HASH: 9e039ea06740cc03
 
 ## Blocking
+(ei)
 
 ## Polish
-- none
+- Laatikko 1: kuvateksti ja laatikon oma lause antavat jo energioiden järjestyksen. Kysy mieluummin, kumpi kynnysjännite on suurempi ja miksi.
+- Laatikko 3 tulee epävarmuuskappaleen jälkeen, mutta kaava h = e·k on kolme kappaletta ylempänä. Siirrä laatikko kaavan perään.
+
+## Vanhan sisällön löydökset
+(ei)
 
 ## Checked
-batch delta review: retrieval now about frequency, values 4,76 and 6,38e14 Hz correct, each distractor repaired by its own feedback; chapter reference plausible.
+batch delta review (round 1): kolme uutta pysähdy-laatikkoa; luettu kutakin edeltävä teksti ja kuvat; laatikot, joiden vastaus on jo sanatarkasti tekstissä tai kuvassa, merkitty Blocking.

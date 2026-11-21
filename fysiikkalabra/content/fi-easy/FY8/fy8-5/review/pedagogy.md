@@ -1,10 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f9ce31430d871420
+CONTENT-HASH: 0a852ff97f1307dd
 
 ## Blocking
+(ei)
 
 ## Polish
-- The new prompt says the electron "käyttäytyy kuin aalto" and that this shows in the double slit, which half-gives the answer (an interference pattern); drop that sentence or make it a neutral lead.
+- Laatikko 3 (3p-alikuori) tulee siirtymiä käsittelevän kappaleen ja kuvan jälkeen, mutta testaa orbitaalien lukumäärää useita kappaleita ylempää. Siirrä se taulukon kohdalle.
+- Laatikko 2 on pelkkä sijoitus kaavaan P = k/N. Kysy mieluummin, miksi N:n kasvattaminen tarkentaa arviota.
+- Laatikko 1: hyvä, soveltaa n − 1 -sääntöä uuteen lukuun.
+
+## Vanhan sisällön löydökset
+(ei)
 
 ## Checked
-batch delta review: prompt context change read; answer not wrong, slightly leading.
+batch delta review (round 1): kolme uutta pysähdy-laatikkoa; luettu kutakin edeltävä teksti ja kuvat; laatikot, joiden vastaus on jo sanatarkasti tekstissä tai kuvassa, merkitty Blocking.
