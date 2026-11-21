@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 6dee8bd85bcbdd5f
+CONTENT-HASH: e8dbb88bdb2870f0
 ## Blocking
 (none)
+## Vanhan sisällön löydökset
+(none)
 ## Polish
-- Block 1 uses "magnetic flux" in its answer before the term is defined in the next section (Magnetic flux); say "the magnetic field through the coil changes" or move the block below that section.
+(none)
+## Notes
+Adding 'through one turn' removes the ambiguity about the flux and matches the lesson's definition of Delta Phi (flux through one turn) and the formula e = N*dPhi/dt. Answer 8.0 V is correct.
 ## Checked
-batch delta review (round 1): the 3 new Pysähdy ja mieti blocks (```pysahdy), each judged for placement, wording, level for a 16-19-year-old, numbers and sign/direction logic recomputed, and consistency with the lesson text, formulas, tables and notation next to it. Old content not reviewed beyond what the blocks rely on.
+batch delta review, round 2: Checked: pysahdy block against the Faraday's law paragraph and formula.

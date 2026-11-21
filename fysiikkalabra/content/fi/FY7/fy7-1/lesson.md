@@ -358,7 +358,7 @@ B &= \sqrt{B_1^2 + B_2^2} \\
 missä $\theta$ on kokonaiskentän ja kentän $\overline{B}_1$ välinen kulma.
 
 ```pysahdy
-Kompassin kohdalla maan magneettikentän vaakakomponentti ($30\,\mu\text{T}$) ja magneetin kenttä ($40\,\mu\text{T}$) ovat kohtisuorassa toisiaan vastaan. Kuinka suuri on kokonaiskenttä?
+Paikassa, jossa Maan magneettikentän vaakakomponentti on $30\,\mu\text{T}$, kompassin lähellä on magneetti. Sen kenttä on $40\,\mu\text{T}$ ja kohtisuorassa vaakakomponenttia vastaan. Kuinka suuri on kokonaiskenttä?
 ---
 Pythagoraan lauseella $B = \sqrt{(30\,\mu\text{T})^2 + (40\,\mu\text{T})^2} = 50\,\mu\text{T}$.
 ```

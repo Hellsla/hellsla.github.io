@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: ea82a77916d1dfc0
+CONTENT-HASH: 9b1f81b73de81af6
 
 ## Blocking
 
-
 ## Polish
-- (none)
+
 
 ## Checked
-batch delta review: 3 pysahdy blocks: halved magnet keeps both poles (right); compass N end points away from the magnet's N pole, field leaves N outside (right); sqrt(30² + 40²) = 50 µT recomputed, matches the lesson's perpendicular-sum formula just above.
+batch delta review: round 2, pysahdy block reworded; the two components are now named (Earth's horizontal component and the magnet's field), perpendicular, so B = sqrt(30^2+40^2) µT = 50 µT; recomputed, correct.
+
+## Vanhan sisällön löydökset
+Ei löydöksiä.

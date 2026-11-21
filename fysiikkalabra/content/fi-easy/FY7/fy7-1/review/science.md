@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: b8fd3ad9fc2406d5
+CONTENT-HASH: 33342bdc8d846ec7
 
 ## Blocking
 
 
 ## Polish
-- Toinen pysähdy: vastaukseen voisi lisätä, että neula on magneetin pohjoisnavan *vieressä akselin jatkeella*; sivulla kenttä ei osoita suoraan poispäin navasta.
+- Pysähdy (rivi 377): "maan magneettikentän" pienellä, muualla luvussa "Maan magneettikenttä" (rivit 305, 344, 446). Käytä samaa kirjoitusasua "Maan".
+- Sama pysähdy: vaakakomponentti $30\,\mu\text{T}$ poikkeaa luvun Etelä-Suomen arvosta $14\,\mu\text{T}$. Ei virhe, koska paikkaa ei nimetä; harkitse esim. "eräässä paikassa".
 
 ## Checked
-batch delta review: fy7-1: magneetin katkaisu, kompassi navan vieressä, kohtisuorat kentät 30/40/50 µT laskettu uudelleen. Scope: only the new pysahdy blocks (teacher 2026-11-20).
+batch delta review: fy7-1 round 2: vaakakomponentti ja magneetin kenttä kohtisuorassa, $B = \sqrt{30^2 + 40^2}\,\mu\text{T} = 50\,\mu\text{T}$ laskettu uudelleen; kompassi kääntyy vaakakomponentin mukaan, kuten luvussa. Scope: only the pysahdy blocks (teacher 2026-11-20).

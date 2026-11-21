@@ -1,11 +1,11 @@
-VERDICT: FAIL
+VERDICT: PASS
 CONTENT-HASH: 800d0f7d6f1757aa
 
 ## Blocking
-- Block 3 (Malus: I = I0 cos² θ = 50 W/m²): the answer's calculation chain is an unbroken inline formula wider than the box, cut off at the right edge and reachable only by scrolling sideways (checked at 360 and 390 px, answer open); the page's chain-to-rows layout (scripts/mathlayout.py) is not applied inside the Pysähdy ja mieti answer. Fix in the shared component (stopthink.py/build.py), not by splitting the chain in the lesson. In this lesson the block sits inside a closed optional box (column 308 px at 390 px, 304 px of text), so the clip is worse.
+(none)
 
 ## Polish
-- Block 3 sits inside the closed optional box (Malusin lain tutkiminen), so a student sees it only after opening it; consider moving it out (pedagogy's call).
+- Block 3 box is about 50 px narrower than the others (278 px at 360, 606 px at 1280), so its right edge does not line up with the neighbouring blocks; the content fits.
 
 ## Checked
-- batch delta review: all 3 new "Pysähdy ja mieti" blocks of fy7-15 (fi-easy) rendered from the built page and photographed with the answer open at 390 px (all) and 360 px and 1280 px (overflow and KaTeX error measurement); label, question, Vastaus summary, spacing, placement beside figures/headings, maths typography ({,}, units, \tfrac, \cdot, colon division) and Finnish read. Listed older captures not reopened (unchanged old content, taken before the blocks existed). No page-level overflow, no red KaTeX source.
+- batch delta review (round 2): fy7-15 (fi-easy) built page, every "Pysähdy ja mieti" block rendered with the answer open and photographed at 360 px (examined for the long chains) and measured at 360 and 1280 px: label, question, Vastaus summary, KaTeX (no red source, no clipped formula, no overflow), decimal comma, units, answer chains laid out as rows; check_layout.py clean at 360/390/1280. The round 1 clip in fy7-1 block 3 is fixed by the shared component. Listed older captures not reopened (unchanged old content). Vanhan sisällön löydökset: none.

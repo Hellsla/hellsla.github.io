@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: dbca88d6f71abfdf
+CONTENT-HASH: 3ac93eeaafc93df3
 
 ## Blocking
 (none)
 
 ## Polish
-- Lohko 2: "olisivat"-ehtolause on hieman vaikea; kysy suoraan "Mitä jos n₁ = n₂?"
+(none)
 
 ## Vanhan sisällön löydökset
-(none from this batch review)
+(none)
 
 ## Checked
-batch delta review: kolme Pysähdy ja mieti -lohkoa (```pysahdy): kysymys ennen vastausta, suomi ja yksiköt LaTeXina, fysiikka ja luvut tarkistettu uudelleen laskemalla, sopii lukuun ja kielelle 16–19-vuotiaille.
+batch delta review (round 2, vain pysahdy-lohkot): kolme lohkoa; uusi n1 = n2 -vastaus johdettu luvun kaavasta sin αr = n2:n1, kysymys nimeää symbolit, perustelu pitää; 48,8° ja 30,0° tarkistettu.

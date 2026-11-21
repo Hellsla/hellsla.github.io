@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5bf3eff7e60f102c
+CONTENT-HASH: 9bcd4eb18046d472
 
 ## Blocking
 (none)
 
 ## Polish
-- Lohko 2: "200 · 0,020 Wb : 0,50 s" on yksi rivi ilman symbolista alkua; kirjoita ensin $|e| = N\,\Delta\Phi/\Delta t$ (kaavan perustapa).
+(none)
 
 ## Vanhan sisällön löydökset
-(none from this batch review)
+(none)
 
 ## Checked
-batch delta review: kolme Pysähdy ja mieti -lohkoa (```pysahdy): kysymys ennen vastausta, suomi ja yksiköt LaTeXina, fysiikka ja luvut tarkistettu uudelleen laskemalla, sopii lukuun ja kielelle 16–19-vuotiaille.
+batch delta review (round 2, vain pysahdy-lohkot): kolme lohkoa; "yhden kierroksen läpi" vastaa luvun kaavan ΔΦ-määritelmää, 200·0,020:0,50 = 8,0 V ja e = vBl = 0,30 V laskettu uudelleen.

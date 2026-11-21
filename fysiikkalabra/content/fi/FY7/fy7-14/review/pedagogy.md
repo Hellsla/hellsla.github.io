@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 8b3f9b2cb78999c7
+CONTENT-HASH: bcc465e70eb033bf
 
 ## Blocking
 (none)
 
 ## Polish
-- Lohko 3: mainitse, että vahvistuminen $k=0$ tarkoittaa ehtoa $2nd=(k+\tfrac{1}{2})\lambda$ (nyt vain $\tfrac12\lambda$ ilman viittausta k:hon).
+(none)
 
 ## Vanhan sisällön löydökset
-(none from this batch review)
+(none)
 
 ## Checked
-batch delta review: kolme Pysähdy ja mieti -lohkoa (```pysahdy): kysymys ennen vastausta, suomi ja yksiköt LaTeXina, fysiikka ja luvut tarkistettu uudelleen laskemalla, sopii lukuun ja kielelle 16–19-vuotiaille.
+batch delta review (round 2, vain pysahdy-lohkot): kolme lohkoa; vastaus käyttää nyt luvun ehtoa 2nd = (k+1/2)λ ja k = 0, 665 nm laskettu uudelleen, yhtenäinen kaavan ja ratkaistun esimerkin kanssa.

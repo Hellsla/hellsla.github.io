@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3fac6b60211af284
+CONTENT-HASH: 59e006ea546b1e0a
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 3fac6b60211af284
 (none)
 
 ## Checked
-- batch delta review: all 3 new "Pysähdy ja mieti" blocks of fy7-12 (fi-easy) rendered from the built page and photographed with the answer open at 390 px (all) and 360 px and 1280 px (overflow and KaTeX error measurement); label, question, Vastaus summary, spacing, placement beside figures/headings, maths typography ({,}, units, \tfrac, \cdot, colon division) and Finnish read. Listed older captures not reopened (unchanged old content, taken before the blocks existed). No page-level overflow, no red KaTeX source.
+- batch delta review (round 2): fy7-12 (fi-easy) built page, every "Pysähdy ja mieti" block rendered with the answer open and photographed at 360 px (examined for the long chains) and measured at 360 and 1280 px: label, question, Vastaus summary, KaTeX (no red source, no clipped formula, no overflow), decimal comma, units, answer chains laid out as rows; check_layout.py clean at 360/390/1280. The round 1 clip in fy7-1 block 3 is fixed by the shared component. Listed older captures not reopened (unchanged old content). Vanhan sisällön löydökset: none.

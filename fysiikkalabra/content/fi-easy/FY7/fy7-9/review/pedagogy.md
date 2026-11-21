@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 0609616a4de1ebf2
+CONTENT-HASH: d01cc3934fd834f5
 ## Blocking
 
 ## Polish
-- none
+- 'K:n lämpötilassa' on kömpelö; 'noin 800 kelvinin lämpötilassa' lukisi sujuvammin.
+
+## Vanhan sisällön löydökset
+(none)
+
 ## Checked
-batch delta review: the three new pysahdy blocks (question, answer, physics, numbers recomputed, S2 wording, fit with the lesson text and its terms); old content not judged.
+batch delta review (round 2): new `pysahdy` answer is accurate (little visible light at 800 K, eye sees glow) and consistent with the first two sentences.

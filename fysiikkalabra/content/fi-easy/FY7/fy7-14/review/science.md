@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: dc00f9cd860cebae
+CONTENT-HASH: 843f965dfdd7ad68
 
 ## Blocking
 
@@ -8,4 +8,4 @@ CONTENT-HASH: dc00f9cd860cebae
 
 
 ## Checked
-batch delta review: fy7-14: lasi→ilma-heijastus ei käännä, paksu lasi sekoittaa värit valkoiseksi, saippuakalvo 2nd = 332,5 nm ja 2nd = ½λ → 665 nm (luvun ehto 2nd = (k + ½)λ vahvistava) laskettu uudelleen. Scope: only the new pysahdy blocks (teacher 2026-11-20).
+batch delta review: fy7-14 round 2: saippuakalvo ilmassa, yksi kääntyminen, joten vahvistava ehto $2nd = (k + \tfrac{1}{2})\lambda$ kuten rivit 401 ja 486; $k = 0$: $\lambda = 4nd = 665\,\text{nm}$, punainen — laskettu uudelleen. Scope: only the pysahdy blocks (teacher 2026-11-20).

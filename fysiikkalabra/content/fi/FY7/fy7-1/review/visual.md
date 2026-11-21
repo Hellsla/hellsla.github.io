@@ -1,8 +1,9 @@
-VERDICT: FAIL
-CONTENT-HASH: ea82a77916d1dfc0
+VERDICT: PASS
+CONTENT-HASH: 9b1f81b73de81af6
 ## Blocking
-- Pysähdy ja mieti answer (opened, `details.stop-think-a`) is a formula chain wider than the 360 px column, clipped or scrolling by 26 px at 360 px (`check_layout.py fy7-1 --width 360`, fi, en and fi-easy): `B = \sqrt{(30\,\mu\text{T})^2 + (40\,\mu\text{T})^2} = 50\,\mu\text{T}`. Essential content of the new block is not fully shown. Fix in the shared component (scripts/stopthink.py: pass the answer through the same chain/row layout as lesson text, scripts/mathlayout.py), never by hand-splitting the lesson text.
+
 ## Polish
+- Open answer's square-root chain now sets as two aligned rows at 360 px (round 1 overflow fixed in stopthink.py).
 
 ## Checked
-batch delta review: opened the stage-Teoria captures at 390 px (pysahdy block label, question, closed answer, spacing, placement after the paragraph it follows) and the figure captures; ran check_layout.py at 360 px for the lesson; read the diff for wording and notation. Answer opened only through check_layout (no capture of an open answer).
+batch delta review, round 2: rendered the lesson at 390 px, opened every Pysähdy ja mieti answer and looked at the captures (label, question, answer, chain rows inside the aside, no katex-error, no horizontal overflow, aside width 358 px); ran check_layout.py at 360 px (fi, en, fi-easy) and fy7-1 also at 390 px: OK; read the diff for notation (decimal comma, units upright, `\cdot`, colon division) and Finnish wording. Old content not judged (scope note 2026-11-20); no Vanhan sisällön löydökset.

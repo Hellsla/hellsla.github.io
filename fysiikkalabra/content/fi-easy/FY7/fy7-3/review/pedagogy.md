@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 58931ed781f93c61
+CONTENT-HASH: cdd4d85f8949dd84
 ## Blocking
 
 ## Polish
-- none
+- (none)
+
+## Vanhan sisällön löydökset
+(none)
+
 ## Checked
-batch delta review: the three new pysahdy blocks (question, answer, physics, numbers recomputed, S2 wording, fit with the lesson text and its terms); old content not judged.
+batch delta review (round 2): new `pysahdy` solution now states the right-hand rule with fingers along the current; physics checked (clockwise seen from P, thumb away from P, P is the south end).

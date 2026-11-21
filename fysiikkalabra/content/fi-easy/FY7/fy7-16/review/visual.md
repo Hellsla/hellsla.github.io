@@ -1,12 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: c44af12a9e3f76c8
+VERDICT: PASS
+CONTENT-HASH: 4a4e565124fa326c
 
 ## Blocking
-- Block 1 (langaton laturi) is garbled Finnish: "Puhelin nostetaan langattoman laturin päältä $3\,\text{mm}$:n korkeudelle $20\,\text{mm}$:n korkeudelle." says "to a height of 3 mm to a height of 20 mm"; the start height must be "korkeudelta" ("…päältä 3 mm:n korkeudelta 20 mm:n korkeudelle"). Fix the sentence in the lesson.
-- Block 3 (A = aL = 9,0 dB): the answer's calculation chain is an unbroken inline formula wider than the box, cut off at the right edge and reachable only by scrolling sideways (checked at 360 and 390 px, answer open); the page's chain-to-rows layout (scripts/mathlayout.py) is not applied inside the Pysähdy ja mieti answer. Fix in the shared component (stopthink.py/build.py), not by splitting the chain in the lesson.
+(none)
 
 ## Polish
 (none)
 
 ## Checked
-- batch delta review: all 3 new "Pysähdy ja mieti" blocks of fy7-16 (fi-easy) rendered from the built page and photographed with the answer open at 390 px (all) and 360 px and 1280 px (overflow and KaTeX error measurement); label, question, Vastaus summary, spacing, placement beside figures/headings, maths typography ({,}, units, \tfrac, \cdot, colon division) and Finnish read. Listed older captures not reopened (unchanged old content, taken before the blocks existed). No page-level overflow, no red KaTeX source.
+- batch delta review (round 2): fy7-16 (fi-easy) built page, every "Pysähdy ja mieti" block rendered with the answer open and photographed at 360 px (examined for the long chains) and measured at 360 and 1280 px: label, question, Vastaus summary, KaTeX (no red source, no clipped formula, no overflow), decimal comma, units, answer chains laid out as rows; check_layout.py clean at 360/390/1280. The round 1 clip in fy7-1 block 3 is fixed by the shared component. Listed older captures not reopened (unchanged old content). Vanhan sisällön löydökset: none.

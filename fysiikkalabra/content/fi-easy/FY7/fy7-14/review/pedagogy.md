@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: dc00f9cd860cebae
+CONTENT-HASH: 843f965dfdd7ad68
 ## Blocking
 
 ## Polish
-- Block 2 answer is one long sentence with two clauses; split it after "paksu" for S2 readers.
+- (none)
+
+## Vanhan sisällön löydökset
+(none)
+
 ## Checked
-batch delta review: the three new pysahdy blocks (question, answer, physics, numbers recomputed, S2 wording, fit with the lesson text and its terms); old content not judged.
+batch delta review (round 2): changed `pysahdy` line now uses the lesson's condition 2nd = (k + 1/2)λ with k = 0; 665 nm matches the task text and worked solution.

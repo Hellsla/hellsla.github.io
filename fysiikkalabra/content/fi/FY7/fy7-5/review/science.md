@@ -1,11 +1,13 @@
-VERDICT: FAIL
-CONTENT-HASH: 5bf3eff7e60f102c
+VERDICT: PASS
+CONTENT-HASH: 9bcd4eb18046d472
 
 ## Blocking
-- B, missing condition (block after the induction law, ~line 280): "sen läpi kulkeva magneettivuo muuttuu tasaisesti arvosta 0,030 Wb arvoon 0,010 Wb" does not say the flux is through one turn, but the lesson defines ΔΦ in $|e_\text{ka}| = N|\Delta\Phi| : \Delta t$ as the flux change through **one turn**. Read as the whole coil's flux, the answer would be 200 times smaller. Fix: "käämin yhden kierroksen läpi kulkeva magneettivuo".
 
 ## Polish
-- (none)
+- Block 1 uses 'magneettivuo' just before the ### Magneettivuo section defines it; the photo caption above already uses the word, so this is acceptable; optionally say 'käämin läpi kulkeva magneettikenttä muuttuu' as the preceding paragraph does.
 
 ## Checked
-batch delta review: 3 pysahdy blocks: rotating coil in a constant field → flux changes → voltage (right, matches the text's "käämi kääntyy kentässä"); 200·0,020/0,50 = 8,0 V recomputed (correct once ΔΦ is per turn); e = vBl = 2,0·0,50·0,30 = 0,30 V recomputed, all three perpendicular as stated.
+batch delta review: round 2, three new pysahdy blocks: rotating coil in a constant field changes the flux, so a voltage is induced (consistent with the listed ways of change); |e| = 200·0,020 Wb : 0,50 s = 8,0 V recomputed, notation |e| matches the uniform-change convention; e = vBl = 2,0·0,50·0,30 V = 0,30 V, perpendicularity stated as the formula's condition requires, placed after the formula.
+
+## Vanhan sisällön löydökset
+Ei löydöksiä.

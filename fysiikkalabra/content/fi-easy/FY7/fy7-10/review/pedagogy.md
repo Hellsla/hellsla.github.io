@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 88b14ea568c34b2f
+CONTENT-HASH: 862cb7079751a2e4
 ## Blocking
 
 ## Polish
-- Block 1: "Aallonpituus lyhenee 1,33-kertaiseksi" can be read as "becomes 1,33 times as long"; write "lyhenee, ja se on vedessä ilmaa 1,33 kertaa pienempi" or "jaetaan luvulla 1,33".
+- (none)
+
+## Vanhan sisällön löydökset
+(none)
+
 ## Checked
-batch delta review: the three new pysahdy blocks (question, answer, physics, numbers recomputed, S2 wording, fit with the lesson text and its terms); old content not judged.
+batch delta review (round 2): new `pysahdy` answer ('1,33 kertaa lyhyempi kuin ilmassa') is clearer than the old phrase and correct.

@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 8af16a62c3e241bc
+CONTENT-HASH: 51ee79e19a031f55
 ## Blocking
 (none)
+## Vanhan sisällön löydökset
+(none)
 ## Polish
-- Block 2 (window glass, no colours) introduces a claim the lesson text never makes (thick layers mix to white), so a student cannot reason it from the text; add a clause to the text or a hint ("count how many wavelengths fit").
+(none)
+## Notes
+The worked line now cites 2nd = (k + 1/2) lambda with k = 0, which is the condition given in the lesson's formula block; the earlier 2nd = lambda/2 was a special case without a name. Arithmetic 2*1.33*125 = 332.5, lambda = 665 nm correct.
 ## Checked
-batch delta review (round 1): the 3 new Pysähdy ja mieti blocks (```pysahdy), each judged for placement, wording, level for a 16-19-year-old, numbers and sign/direction logic recomputed, and consistency with the lesson text, formulas, tables and notation next to it. Old content not reviewed beyond what the blocks rely on.
+batch delta review, round 2: Checked: pysahdy block against the formula block and the coating example.

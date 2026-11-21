@@ -358,7 +358,7 @@ B &= \sqrt{B_1^2 + B_2^2} \\
 where $\theta$ is the angle between the total field and the field $\overline{B}_1$.
 
 ```pysahdy
-At a compass the horizontal component of the Earth's magnetic field ($30\,\mu\text{T}$) and the field of the magnet ($40\,\mu\text{T}$) are perpendicular to each other. What is the magnitude of the total field?
+At a place where the horizontal component of the Earth's magnetic field is $30\,\mu\text{T}$, a magnet near the compass has a field of $40\,\mu\text{T}$ perpendicular to it. What is the magnitude of the total field?
 ---
 By the Pythagorean theorem $B = \sqrt{(30\,\mu\text{T})^2 + (40\,\mu\text{T})^2} = 50\,\mu\text{T}$.
 ```

@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 187f1bcc318a03bc
+CONTENT-HASH: 3dafed98d0b12f25
 
 ## Blocking
-None.
 
 ## Polish
-- Equal-index block: "there is no critical angle, because $\sin\alpha_\text{r}$ would be $1$" reads self-contradictory; clearer: $\sin\alpha_\text{r} = n_2 : n_1 = 1$ would give $\alpha_\text{r} = 90^\circ$, so no angle of incidence exceeds it and nothing is totally reflected.
 
 ## Checked
-batch delta review: every new ```pysahdy block (question and answer) against the physics guardrails and the lesson's own wording; 70° > 48.8°; equal indices give no TIR; critical angle 30.0° recomputed. No option-based choices changed. Scope per teacher 2026-11-20: only the pysahdy blocks.
+batch delta review: with n1 = n2, sin α_r = n2 : n1 = 1 gives α_r = 90°, an angle of incidence that cannot exceed it, so no total internal reflection and the light leaks into the cladding; matches the critical-angle definition at line 89 and the formula at line 212.
+
+## Vanhan sisällön löydökset
+None.

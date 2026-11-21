@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 7a13db15ea11f6eb
+CONTENT-HASH: e368cdf02df340df
 
 ## Blocking
 (none)
 
 ## Polish
-- Lohko 3: kirjoita ensin symbolinen ratkaisu ja sitten sijoitus erillisenä (kaava on jo annettu, mutta ratkaisu alkaa jo numeroilla).
+(none)
 
 ## Vanhan sisällön löydökset
-(none from this batch review)
+(none)
 
 ## Checked
-batch delta review: kolme Pysähdy ja mieti -lohkoa (```pysahdy): kysymys ennen vastausta, suomi ja yksiköt LaTeXina, fysiikka ja luvut tarkistettu uudelleen laskemalla, sopii lukuun ja kielelle 16–19-vuotiaille.
+batch delta review (round 2, vain pysahdy-lohkot): kolme lohkoa; käämin vastaus nimeää nyt oikean käden säännön kiertosuunnan ja peukalon, napaisuus tarkistettu, B = 2,51 mT laskettu uudelleen.

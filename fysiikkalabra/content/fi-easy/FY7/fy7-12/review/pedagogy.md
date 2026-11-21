@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3fac6b60211af284
+CONTENT-HASH: 59e006ea546b1e0a
 ## Blocking
 
 ## Polish
-- none
+- Vastauksessa sin α_r = n2 : n1 käytetään kaavaa, joka esitellään vasta myöhemmin; lisäys 'taittumislaista, kun α2 = 90°' tekisi johdon näkyväksi.
+
+## Vanhan sisällön löydökset
+(none)
+
 ## Checked
-batch delta review: the three new pysahdy blocks (question, answer, physics, numbers recomputed, S2 wording, fit with the lesson text and its terms); old content not judged.
+batch delta review (round 2): new `pysahdy` question and answer: n1, n2 and α_r are defined before the block; the reasoning is correct (r = 90°, no incidence angle that large).

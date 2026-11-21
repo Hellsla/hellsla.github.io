@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 98bc56f76f95a9e3
+CONTENT-HASH: 81feb70459f703c1
 
 ## Blocking
 (none)
@@ -8,7 +8,7 @@ CONTENT-HASH: 98bc56f76f95a9e3
 (none)
 
 ## Vanhan sisällön löydökset
-(none from this batch review)
+(none)
 
 ## Checked
-batch delta review: kolme Pysähdy ja mieti -lohkoa (```pysahdy): kysymys ennen vastausta, suomi ja yksiköt LaTeXina, fysiikka ja luvut tarkistettu uudelleen laskemalla, sopii lukuun ja kielelle 16–19-vuotiaille.
+batch delta review (round 2, vain pysahdy-lohkot): kolme lohkoa; "1,33 kertaa lyhyempi kuin ilmassa" selkeämpi kuin entinen; v = c:n = 1,24·10^8 m/s ja taitekulma 25° laskettu uudelleen.

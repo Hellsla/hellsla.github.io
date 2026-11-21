@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 59fbac9fc2af8c61
+CONTENT-HASH: 5280d02a41082bfb
 ## Blocking
 
 ## Polish
-- none
+- Uusi vastaus: 'värähtelisi ... ja pysähtyisi lopulta' on fysiikaltaan hyvä, mutta 'lopulta' voisi perustella (kitka). Ei välttämätön.
+
+## Vanhan sisällön löydökset
+(none)
+
 ## Checked
-batch delta review: the three new pysahdy blocks (question, answer, physics, numbers recomputed, S2 wording, fit with the lesson text and its terms); old content not judged.
+batch delta review (round 2): both changed `pysahdy` lines: the oscillation answer reads clearly; `\approx` removed correctly since 4,0*0,50*0,25*0,5 = 0,25 exactly.

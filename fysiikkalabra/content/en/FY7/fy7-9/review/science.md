@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 1bcb339aee1868a7
+CONTENT-HASH: 00674d9a77aa5f1a
 
 ## Blocking
-None.
 
 ## Polish
-None.
 
 ## Checked
-batch delta review: every new ```pysahdy block (question and answer) against the physics guardrails and the lesson's own wording; all EM waves at c; room temperature IR only, visible ~800 K as in lesson; Wien 1.0 µm with lesson's b recomputed. No option-based choices changed. Scope per teacher 2026-11-20: only the pysahdy blocks.
+batch delta review: new wording correctly says some visible light is emitted at all temperatures but becomes noticeable to the eye only near 800 K (Draper point about 800 K); consistent with the black-body spectrum section.
+
+## Vanhan sisällön löydökset
+None.

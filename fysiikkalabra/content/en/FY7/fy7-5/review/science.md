@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 6dee8bd85bcbdd5f
+CONTENT-HASH: e8dbb88bdb2870f0
 
 ## Blocking
-None.
 
 ## Polish
-None.
 
 ## Checked
-batch delta review: every new ```pysahdy block (question and answer) against the physics guardrails and the lesson's own wording; turning coil changes flux; |e| = 8.0 V and vBl = 0.30 V recomputed. No option-based choices changed. Scope per teacher 2026-11-20: only the pysahdy blocks.
+batch delta review: "flux through one turn" now makes N·ΔΦ/Δt = 200·0.020 Wb : 0.50 s = 8.0 V consistent; recomputed.
+
+## Vanhan sisällön löydökset
+None.

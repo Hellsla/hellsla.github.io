@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: ae903fe72ef66b2b
+CONTENT-HASH: ccd67214b0a811ae
 ## Blocking
 
 ## Polish
-- none
+- (none)
+
+## Vanhan sisällön löydökset
+(none)
+
 ## Checked
-batch delta review: the three new pysahdy blocks (question, answer, physics, numbers recomputed, S2 wording, fit with the lesson text and its terms); old content not judged.
+batch delta review (round 2): new `pysahdy` wording 'yhden kierroksen läpi' matches the formula's definition of ΔΦ and the 200 x 0,020 / 0,50 = 8,0 V solution.

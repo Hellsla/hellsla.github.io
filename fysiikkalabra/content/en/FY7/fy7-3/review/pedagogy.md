@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 6f96118aab0cac17
+CONTENT-HASH: 86f1ca3ea229ecfd
 ## Blocking
 (none)
+## Vanhan sisällön löydökset
+(none)
 ## Polish
-- none
+(none)
+## Notes
+The answer now states the right-hand rule fully (fingers along the current, thumb along the field) and then concludes pole P is south. Consistent with the rule used in the text; clear for a 16-19-year-old.
 ## Checked
-batch delta review (round 1): the 3 new Pysähdy ja mieti blocks (```pysahdy), each judged for placement, wording, level for a 16-19-year-old, numbers and sign/direction logic recomputed, and consistency with the lesson text, formulas, tables and notation next to it. Old content not reviewed beyond what the blocks rely on.
+batch delta review, round 2: Checked: pysahdy block on the coil's poles against the lesson's rule.

@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 8b3f9b2cb78999c7
+CONTENT-HASH: bcc465e70eb033bf
 
 ## Blocking
 
-
 ## Polish
-- (none)
+
 
 ## Checked
-batch delta review: 3 pysahdy blocks: glass→air reflection not inverted (right, by the lesson's rule); thick window glass has many reinforced and weakened wavelengths across the visible range, colours mix to white (fair simplification, C); soap film with one inversion → constructive 2nd = (k+½)λ, 2·1,33·125 = 332,5 nm, k = 0 → λ = 665 nm, red (right, matches the Kaava conditions).
+batch delta review: round 2, pysahdy answer now names the condition 2nd = (k + 1/2)λ with k = 0 (one phase reversal for a soap film in air, as the theory and summary say); 2·1,33·125 nm = 332,5 nm, λ = 665 nm, red; recomputed, correct.
+
+## Vanhan sisällön löydökset
+Ei löydöksiä.

@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7f39992592747fb6
+CONTENT-HASH: 33c457a3d94e09a7
 
 ## Blocking
-None.
 
 ## Polish
-None.
 
 ## Checked
-batch delta review: every new ```pysahdy block (question and answer) against the physics guardrails and the lesson's own wording; f unchanged, λ 1.33× shorter (lesson line 41); diamond 1.24e8 m/s; Snell 25° towards normal recomputed. No option-based choices changed. Scope per teacher 2026-11-20: only the pysahdy blocks.
+batch delta review: frequency unchanged, wavelength in water 1.33 times shorter than in air (n_air ≈ 1) via v = fλ; correct.
+
+## Vanhan sisällön löydökset
+None.

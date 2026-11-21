@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 8f30dc19d8991a0f
+CONTENT-HASH: f8bbc12db480dfee
 ## Blocking
 (none)
+## Vanhan sisällön löydökset
+(none)
 ## Polish
-- Block 1 (charger distance) answer: "a smaller flux and a smaller change in it" is blurry; say the flux amplitude falls, so the change of flux per second is smaller.
+(none)
+## Notes
+The question now reads unambiguously: lifted from 3 mm above the charger to 20 mm (the old 'from the surface ... from 3 mm' contradicted itself). Answer on flux and induced voltage is clear.
 ## Checked
-batch delta review (round 1): the 3 new Pysähdy ja mieti blocks (```pysahdy), each judged for placement, wording, level for a 16-19-year-old, numbers and sign/direction logic recomputed, and consistency with the lesson text, formulas, tables and notation next to it. Old content not reviewed beyond what the blocks rely on.
+batch delta review, round 2: Checked: pysahdy block on the wireless charger.

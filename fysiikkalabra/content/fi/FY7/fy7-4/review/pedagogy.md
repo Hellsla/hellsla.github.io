@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 039c8cf75efde315
+CONTENT-HASH: a35cc56e1f9684d7
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+1. Moottorilohkossa "pysähtyisi lopulta" edellyttää vaimennusta (kitka); lause toimii, mutta "kohtisuoraan kenttää vastaan" voisi sanoa "silmukan taso kohtisuorassa kenttää vastaan".
 
 ## Vanhan sisällön löydökset
-(none from this batch review)
+(none)
 
 ## Checked
-batch delta review: kolme Pysähdy ja mieti -lohkoa (```pysahdy): kysymys ennen vastausta, suomi ja yksiköt LaTeXina, fysiikka ja luvut tarkistettu uudelleen laskemalla, sopii lukuun ja kielelle 16–19-vuotiaille.
+batch delta review (round 2, vain pysahdy-lohkot): kolme lohkoa; F = 0,25 N täsmälleen (4,0·0,50·0,25·0,5), "=" oikein; värähtely ja pysähtyminen ymmärrettävä.

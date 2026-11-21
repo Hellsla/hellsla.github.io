@@ -1,8 +1,9 @@
-VERDICT: FAIL
+VERDICT: PASS
 CONTENT-HASH: 666d88a4cc20c442
 ## Blocking
-- Pysähdy ja mieti answer (opened, `details.stop-think-a`) is a formula chain wider than the 360 px column, clipped or scrolling by 344 px at 360 px (`check_layout.py fy7-15 --width 360`, fi, en and fi-easy): `I = I_0 \cos^2\theta = 200\,\text{W/m}^2 \cdot \cos^2 60^\circ = ... = 50\,\text{W/m}^2`. Essential content of the new block is not fully shown. Fix in the shared component (scripts/stopthink.py: pass the answer through the same chain/row layout as lesson text, scripts/mathlayout.py), never by hand-splitting the lesson text.
+
 ## Polish
+- The third block (Malus calculation) sits inside the collapsed *Syventävä* (Malusin ja Brewsterin laki) section, so a student sees it only after opening it; it renders correctly there (width 308 px, no overflow). Intended placement is a content decision.
 
 ## Checked
-batch delta review: read the diff (3 new pysahdy blocks: placement, question wording, answer notation), ran check_layout.py at 360 px with the answer open; spot-checked sibling lessons' captures for block rendering (label, closed answer, spacing). Own 390 px capture of this lesson not opened.
+batch delta review, round 2: rendered the lesson at 390 px, opened every Pysähdy ja mieti answer and looked at the captures (label, question, answer, chain rows inside the aside, no katex-error, no horizontal overflow, aside width 358 px); ran check_layout.py at 360 px (fi, en, fi-easy) and fy7-1 also at 390 px: OK; read the diff for notation (decimal comma, units upright, `\cdot`, colon division) and Finnish wording. Old content not judged (scope note 2026-11-20); no Vanhan sisällön löydökset.

@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 1bcb339aee1868a7
-
+CONTENT-HASH: 00674d9a77aa5f1a
 ## Blocking
-
+(none)
 ## Polish
-- Question and answer blocks render cleanly (label, question, "Answer" summary); no red KaTeX source.
-
+(none)
+## Vanhan sisällön löydökset
+(none found in the captures; old content is untouched by this change)
 ## Checked
-- batch delta review: read the three new "Stop and think" blocks in the diff, checked the rebuilt page (3 blocks, no katex-error), ran check_layout at 360 px on the English page: OK; hash unchanged at start and end.
+batch delta review: the new "Stop and think" blocks (```pysahdy) rendered at 390 px with the answer open (aside, question, Answer summary, answer text and aligned calculation rows): no clipping or horizontal overflow (page scrollWidth 390), maths in KaTeX with units upright and a thin space, decimal point and \cdot/colon notation as the English text uses, fluent wording, block placed right after the paragraph it tests; listed figure captures and fig-row unchanged in layout. Hash identical at start and end.

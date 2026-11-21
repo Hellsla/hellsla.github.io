@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ea82a77916d1dfc0
+CONTENT-HASH: 9b1f81b73de81af6
 
 ## Blocking
 (none)
 
 ## Polish
-- Lohko 3: nimeä kentät (esim. "maan magneettikentän vaakakomponentti ja magneetin kenttä"), jotta tilanne on konkreettinen.
+1. Kolmannessa lohkossa "maan magneettikentän": luvussa kirjoitetaan "Maan magneettikenttä" (planeetta isolla), yhtenäistä.
 
 ## Vanhan sisällön löydökset
-(none from this batch review)
+(none)
 
 ## Checked
-batch delta review: kolme Pysähdy ja mieti -lohkoa (```pysahdy): kysymys ennen vastausta, suomi ja yksiköt LaTeXina, fysiikka ja luvut tarkistettu uudelleen laskemalla, sopii lukuun ja kielelle 16–19-vuotiaille.
+batch delta review (round 2, vain pysahdy-lohkot): kolme lohkoa; muutettu kysymys nimeää nyt kentät ja kohtisuoruuden, Pythagoras 30 ja 40 -> 50 µT laskettu uudelleen, sopii lukuun.

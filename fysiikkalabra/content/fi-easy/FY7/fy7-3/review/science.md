@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 58931ed781f93c61
+CONTENT-HASH: cdd4d85f8949dd84
 
 ## Blocking
 
 
 ## Polish
-- Toinen pysähdy: vastaus mainitsee vain peukalon; lisää käämin sääntö kokonaan ("Kierrä sormet virran suuntaan, peukalo osoittaa kentän suuntaan"), kuten rivillä 132.
-- Sama pysähdy: kysymys "pohjoisnapa vai eteläpää" ja vastaus "se pää on pohjoisnapa … P on eteläpää" sekoittavat termit; käytä samaa sanaa kummastakin (pohjoisnapa/etelänapa tai pohjoispää/eteläpää).
+- Pysähdy: kysymys "pohjoisnapa vai eteläpää" ja vastaus "pohjoisnapa … eteläpää" käyttävät yhä kahta eri sanaa; käytä samaa sanaparia (pohjoisnapa/etelänapa).
 
 ## Checked
-batch delta review: fy7-3: suoran johtimen kiertosuunta (myötäpäivään), käämin napa P = eteläpää, B = µ0NI/l ≈ 2,51 mT laskettu uudelleen. Scope: only the new pysahdy blocks (teacher 2026-11-20).
+batch delta review: fy7-3 round 2: käämin oikean käden sääntö nyt kokonaan (sormet virran suuntaan, peukalo kentän suuntaan); myötäpäivään päästä P katsottuna kenttä sisällä poispäin P:stä, joten P on etelänapa — oikein. Scope: only the pysahdy blocks (teacher 2026-11-20).

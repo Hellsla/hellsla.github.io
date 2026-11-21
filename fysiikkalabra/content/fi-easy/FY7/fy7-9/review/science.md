@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0609616a4de1ebf2
+CONTENT-HASH: d01cc3934fd834f5
 
 ## Blocking
 
@@ -8,4 +8,4 @@ CONTENT-HASH: 0609616a4de1ebf2
 
 
 ## Checked
-batch delta review: fy7-9: sähkömagneettiset aallot tyhjiössä nopeudella c, huoneenlämpöinen kappale lähes vain infrapunaa (noin 800 K sama kuin rivillä 517), Wien 2900 K → 1,0 µm infrapunaa laskettu uudelleen. Scope: only the new pysahdy blocks (teacher 2026-11-20).
+batch delta review: fy7-9 round 2: pysähdyksen vastaus ei enää väitä, ettei näkyvää valoa ole lainkaan; "niin vähän, että silmä näkee hehkun vasta noin $800\,\text{K}$:ssa" vastaa teorian riviä 343 (Draperin piste n. 800 K). Scope: only the pysahdy blocks (teacher 2026-11-20).
