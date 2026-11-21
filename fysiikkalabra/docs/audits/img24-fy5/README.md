@@ -14,5 +14,6 @@ Ei tässä PR:ssä (94 kuvasta 87):
 Huomiot:
 - `fy5-5/vuorovaikutus`: paketin `{"nobg":[0]}` siirretty sarakkeeseen `ilman taustaa` ([0]).
 - `fy5-10/types`: paketin merkinnän korvaus "harvennus" → "harventuma" EI tehty (figures.py, glossary.json ja käännökset vanhalla sanalla; opettajan päätös 19.11. odottaa sanan vaihtoa kaikkialla).
-- `check_layout.py` 1280 px: kaksi kuvaa kaatuu (`svg-image`, kuva ei ole kuvassaan): `fy5-3/karuselli` (laatikko ylittää viewBoxin oikealle 24,4 ja alas 18,8 yksikköä; sivulla 16 px) ja `fy5-4/muutos` (vasen 3,9, ylä 2,6, oikea 17,9, ala 21,4 yksikköä; 5 px). Leikkautuva osa on pelkkää taustaa.
+- Opettaja hyväksyi 2026-11-21 (suoraan tekijäsessioon) kuvat ja tyhjän reunan rajauksen: kuvatiedostot `fy5-3-karuselli` ja `fy5-4-muutos` rajattu viewBoxin sisälle (laatikot 9; 2,6; 591 × 327,4 ja 0; 0; 600 × 340), piirros ennallaan, `check_layout.py` OK. Alla kuvaus ennen rajausta:
+- `check_layout.py` 1280 px (ennen rajausta): kaksi kuvaa kaatuu (`svg-image`, kuva ei ole kuvassaan): `fy5-3/karuselli` (laatikko ylittää viewBoxin oikealle 24,4 ja alas 18,8 yksikköä; sivulla 16 px) ja `fy5-4/muutos` (vasen 3,9, ylä 2,6, oikea 17,9, ala 21,4 yksikköä; 5 px). Leikkautuva osa on pelkkää taustaa.
 - Muut 56 riviä ylittävät viewBoxin 0,5–14,5 yksikköä (lähes kaikki alareunasta); leikkautuva osa on pelkkää taustaa, paitsi `fy5-2/lauta`: alareunan 7,5 yksikön kaistasta ~5 % pikseleistä on piirrosta (veden alareuna), sivulla OK.
