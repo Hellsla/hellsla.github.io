@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: eec2162c49c816b1
+CONTENT-HASH: 4163a038b40bf9bc
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- [Minor] Box 3 (energy of level n = 4) follows the spectrum figure, some distance from the formula it practises; optional to move it up under the formula.
+
+## Vanhan sisällön löydökset
+- none
 
 ## Checked
-- Delta (md-paragraphs, teacher-figure). Opened contact-1, theory-1280-2 (Bohr paragraphs, formula blocks, constants, table start: paragraphs short, KaTeX whole, no clipping), fig-10-390 (energy-level diagram legible, labels LaTeX). Other figures judged from the contact sheet only. Hash re-run at the end: unchanged.
+- Delta (3 new pysahdy boxes, label STOP AND THINK, Answer). Opened theory-1280-2 and stage-selita-390-3 (en): box renders correctly at 390 and 1280 px, maths $14.0\,\text{eV}$ with decimal point, no overflow, layout around figures intact. Other boxes' source read; same positions checked in the fi captures.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

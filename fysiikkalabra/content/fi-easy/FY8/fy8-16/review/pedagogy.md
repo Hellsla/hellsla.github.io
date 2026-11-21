@@ -1,11 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: 20fe97b046c6acc0
+VERDICT: FAIL
+CONTENT-HASH: 206c6b8903d1bd28
 
 ## Blocking
+- Laatikko 1 (onko galaksi X keskipiste): vastaus on sanatarkasti edellä ("Mistä tahansa galaksista katsottuna… Siksi laajenemisella ei ole keskipistettä"). Laatikko toistaa tekstin, eikä se ole edes kappaleen vieressä. Kysy tilanne uutena: mitä havaitsee galaksi Y, joka on kaksi kertaa kauempana?
+- Laatikko 2 (läpinäkyvyys 380 000 v): vastaus on sanatarkasti edellisessä kappaleessa (vetyatomit muodostuivat, vapaita elektroneja vähän, fotonit etenivät). Kysy esim. mitä olisi tapahtunut, jos lämpötila olisi pysynyt 10 000 K:ssa.
 
 ## Polish
-- The new paragraph introduces "kosminen inflaatio" and "hypoteesi" without a short gloss for hypoteesi; fine for age 16-19 but could say "ehdotettu selitys".
-- The term is not elsewhere in the lesson, so it is not examined; good, the paragraph says it is not directly observed.
+- Laatikko 3 on hyvä sovellus, mutta sijaitsee kuvan jälkeen. Ok.
+
+## Vanhan sisällön löydökset
+(ei)
 
 ## Checked
-batch delta review: new 3-sentence paragraph after the Big Bang paragraph; short, one idea, clear, honest about status (hypothesis, not observed), no conflict with tasks or solutions.
+batch delta review (round 1): kolme uutta pysähdy-laatikkoa; luettu kutakin edeltävä teksti ja kuvat; laatikot, joiden vastaus on jo sanatarkasti tekstissä tai kuvassa, merkitty Blocking.

@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9122d135c80ab345
+CONTENT-HASH: 4abced8a850317a5
 
 ## Blocking
+(none)
 
 ## Polish
-- None.
+- none
 
 ## Checked
-batch delta review: the retrieval item now uses Mo-99: beta minus decay, A = 99 kept, Z 42 to 43 (Mo to Tc) recomputed; Mo-99 is the real parent of Tc-99m; the ion distractor feedback is right; no stale iodine/xenon text left in that item (the later I-131 half-life task is unrelated and unchanged); one correct option; lesson.md changes are presentation only.
+batch delta review: the three new pysahdy boxes, recomputed in one script (all numbers agree): memoryless decay matches theory; 8000·(1/2)³ = 1000; λ = ln2/T½ (stated at line 537, before the box) → λ_A = 2λ_B; each box placed after the theory it uses (except as noted), no guardrail break, no conflict with old content.

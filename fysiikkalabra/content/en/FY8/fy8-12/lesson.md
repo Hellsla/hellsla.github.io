@@ -124,6 +124,12 @@ Radiation is **ionising** when a single particle or photon of it can remove an e
   <foreignObject x="429" y="125.5" width="112" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\gamma\ 662\,\text{keV}$</span></div></foreignObject>
 </svg>
 
+```pysahdy
+A powerful lamp lights up a glass of water brightly, yet a weak X-ray beam ionises water. Why?
+---
+What matters is the energy $E = hf$ of a single photon, not the total power. A visible-light photon ($1.7$–$3.3\,\text{eV}$) cannot remove an electron ($12.6\,\text{eV}$), but an X-ray photon can.
+```
+
 ### Ionisation transfers the energy of radiation to matter
 An ionising particle does not usually lose its energy all at once, but removes one electron after another along its path. In air one ion pair takes on average an energy of $W \approx 34\,\text{eV}$. This is more than the ionisation energy of the molecules, because part of the energy goes to exciting the molecules and to the kinetic energy of the released electrons. When the whole kinetic energy $E$ of a particle is transferred to matter, the number of ion pairs is
 ```latex
@@ -248,6 +254,12 @@ The types of radiation (chapter *The atomic nucleus and radioactive decay*) diff
 </svg>
 
 <figure class="unit-photo"><img src="pics/fy8/hfir-refueling.webp" alt="A deep pool of water seen from above in blue light; at the bottom is a round reactor core giving off a bright blue glow, surrounded by round lids."><figcaption>The core of a research reactor at the bottom of a pool during refuelling. The blue glow is Cherenkov radiation: charged particles, mainly electrons, move through the water faster than light travels in water. The thick layer of water attenuates the radiation, so people can work at the edge of the pool.</figcaption></figure>
+
+```pysahdy
+An alpha particle and a beta particle have the same kinetic energy. Which stops in the shorter distance, and why?
+---
+The alpha particle. It ionises more densely, so it gives up its energy faster.
+```
 
 ### Penetrating power
 **Penetrating power** tells how thick a layer of matter the radiation passes through. The more densely radiation ionises, the faster it gives up its energy and the thinner the layer that stops it. So alpha radiation has the smallest and gamma radiation the greatest penetrating power. The last column of the table tells what stops alpha and beta radiation and what attenuates gamma and neutron radiation effectively. X-radiation is photon radiation and behaves like gamma radiation.
@@ -418,6 +430,12 @@ The greater the attenuation coefficient, the thinner the layer that is enough to
   <foreignObject x="233" y="67" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$</span></div></foreignObject>
   <foreignObject x="292.5" y="213" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$d_{1/2} = 5.5\,\text{mm}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+The half-value thickness of a barrier is $2.0\,\text{cm}$. What fraction of the gamma radiation passes through a barrier $6.0\,\text{cm}$ thick?
+---
+$6.0\,\text{cm}$ is three half-value thicknesses: $\tfrac{I}{I_0} = \left(\tfrac{1}{2}\right)^3 = 0.125$, or $12.5\,\%$.
+```
 
 ### The half-value thickness depends on the material and the energy
 The half-value thickness depends on the density and composition of the material and on the energy of the radiation. Over many energy ranges lead attenuates gamma radiation effectively because of its high density and atomic number: the same attenuation requires a layer of concrete about seven times thicker. The penetrating power of gamma radiation depends on the energy of the photons and on the material. As the energy grows, the importance of the different interaction mechanisms changes, so the penetrating power does not grow over all energy ranges. The values in the table apply to the $662\,\text{keV}$ gamma radiation of caesium-137.

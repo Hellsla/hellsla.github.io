@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: da2ad48dd3a1587a
+CONTENT-HASH: 6527f2e40cb066d3
+
 ## Blocking
-- none
+(ei ole)
+
 ## Polish
-- Photo sits between the dualism paragraph and the next heading with no tie to the text; one sentence pointing to it would help.
+- Ei huomautettavaa.
+
+## Vanhan sisällön löydökset
+(ei löydöksiä)
+
 ## Checked
-batch delta review: Retrieval item rewritten to double-slit intensity and photons: it prepares the lesson's one-quantum-at-a-time idea, distractors carry real misconceptions (energy doubles, faster photons) with repairing feedback. Chapter names updated; photo has alt text and a useful caption; the split Tunnetut/Kysytään stage reads well.
+batch delta review: kolme uutta Pysähdy ja mieti -ruutua luettu ympäröivän tekstin kanssa; kysymys testaa edellisen kappaleen ideaa, vastaus on mallivastaus perusteluineen ja vastattavissa siihen mennessä luetulla.

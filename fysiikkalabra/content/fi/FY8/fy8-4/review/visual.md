@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: da2ad48dd3a1587a
+CONTENT-HASH: 6527f2e40cb066d3
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+(none)
+
+## Vanhan sisällön löydökset
+(none seen)
 
 ## Checked
-- Round 2 delta (inquiry.json Pohdinta retrieval task reworded; lesson.md paragraphs only). Opened fy8-4-stage-herata-390.png: the card "Kertaa: valon intensiteetti ja fotonit" sits under the phenomenon and the open question, four choices readable, nothing clipped, no overflow, $hf$ feedback is not shown before answering. Finnish is fluent and uses the glossary terms (fotoni, kaksoisrakokoe, intensiteetti). The paragraph cut in lesson.md has no layout effect that the packet checks (layout 360-1280 ok). Figures were not changed and were not re-opened.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+Batch delta, round 1: opened fy8-4-theory-1280-1..3 (all three opened) and the 390 px captures fy8-4-stage-selita-390-* where the three "Pysähdy ja mieti" boxes sit. At 390 px the boxes (green bar, label, question, closed "Vastaus") are readable, nothing is clipped, the maths ($10$, $n = 2$, units) renders in KaTeX. At 1280 px the box stays in the reading column beside floated figures and photos with no overlap, and is distinct from the other closed boxes. The answers (behind "Vastaus") were checked in source only; the diff adds nothing else.

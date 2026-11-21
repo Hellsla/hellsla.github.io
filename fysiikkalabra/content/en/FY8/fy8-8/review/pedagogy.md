@@ -1,8 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 2603a9b902cc92bd
+VERDICT: FAIL
+CONTENT-HASH: 14cad5cefeacde51
+
 ## Blocking
+- Box 2 (beta minus): the figure just above says 'the atomic number increases by one and the mass number stays the same'.
 
 ## Polish
-- none
+None.
+
+## Vanhan sisällön löydökset
+None.
+
 ## Checked
-batch delta review: the replaced review item (ionisation of hydrogen, 13.6 eV): clear, level-appropriate, distractors (n=2 level, sum, zero) are real misconceptions with feedback that repairs them, numbers consistent with answers.py; it links smoke-detector context to the energy-level principle.
+batch delta review: the three new pysahdy boxes read against the paragraph, figure and aria-label before each; answerable from earlier text; the answer is a model with its reason.

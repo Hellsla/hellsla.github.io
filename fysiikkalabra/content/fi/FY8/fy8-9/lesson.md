@@ -113,6 +113,12 @@
 ### Yksittäisen ytimen hajoaminen on satunnaista
 Radioaktiivinen ydin hajoaa ja muuttuu toiseksi ytimeksi (luku *Atomiydin ja radioaktiivinen hajoaminen*), mutta hajoamishetkeä ei voi ennustaa. Kahdesta samanlaisesta ytimestä toinen voi hajota heti ja toinen vasta vuosien päästä. Ennustaa voi vain sen, kuinka todennäköisesti ydin hajoaa tietyn ajan kuluessa. Tämä todennäköisyys on sama kaikille saman isotoopin ytimille, eikä se käytännössä riipu ympäristön lämpötilasta, paineesta tai kemiallisista sidoksista. Se ei riipu myöskään ytimen iästä: ydin ei vanhene. Pitkään hajoamatta säilynyt ydin hajoaa seuraavan sekunnin aikana yhtä todennäköisesti kuin juuri syntynyt.
 
+```pysahdy
+Ydin A on juuri syntynyt, ja ydin B on säilynyt hajoamatta tunnin. Kumpi hajoaa todennäköisemmin seuraavan sekunnin aikana?
+---
+Kummallakin on sama todennäköisyys, koska ydin ei vanhene: hajoamistodennäköisyys on sama kaikille saman isotoopin ytimille iästä riippumatta.
+```
+
 ### Suuri joukko ytimiä käyttäytyy säännöllisesti
 Koska jokaisella ytimellä on sama hajoamistodennäköisyys, tietyssä ajassa hajoaa aina suunnilleen sama *osuus* jäljellä olevista ytimistä. Kuvassa samoista sadasta ytimestä on yhden puoliintumisajan jälkeen jäljellä noin puolet ja kahden jälkeen noin neljäsosa, mutta hajonneet ytimet ovat sattumanvaraisissa kohdissa. Pienessä joukossa sattuma näkyy: osuus voi poiketa puolesta selvästi. Tavallisessa näytteessä on kuitenkin esimerkiksi $10^{15}$ ydintä, ja silloin suhteelliset poikkeamat ovat niin pieniä, ettei niitä huomaa.
 
@@ -449,6 +455,12 @@ Lähde: kirjallisuusarvot NNDC NuDat 3 -tietokannasta (Brookhaven National Labor
 
 <figure class="unit-photo"><img src="pics/fy8/geiger-counter.webp" alt="Vanha beigenvärinen säteilymittari valkoisella pöydällä: laatikossa on viisarinäyttö ja säätönuppi, ja kierrejohdolla siihen on liitetty pyöreä anturi kädensijassa."><figcaption>Geigerin ja Müllerin mittari laskee anturiin osuvia ionisoivia hiukkasia. Kun mittari pidetään samassa kohdassa, pulssitaajuus on verrannollinen lähteen aktiivisuuteen.</figcaption></figure>
 
+```pysahdy
+Näytteessä on aluksi $8000$ hajoamatonta ydintä ja sen puoliintumisaika on $2\,\text{h}$. Noin kuinka monta hajoamatonta ydintä on jäljellä $6\,\text{h}$:n kuluttua?
+---
+$6\,\text{h}$ on kolme puoliintumisaikaa, joten määrä puolittuu kolme kertaa: $8000 \cdot \left(\tfrac{1}{2}\right)^3 = 1000$.
+```
+
 ### Aktiivisuus
 Näytteen **aktiivisuus** $A$ on siinä tapahtuvien hajoamisten määrä aikayksikössä. Sen yksikkö on becquerel: $1\,\text{Bq}$ on yksi hajoaminen sekunnissa eli $1\,\tfrac{1}{\text{s}}$. Koska jokainen ydin hajoaa yhtä todennäköisesti, aktiivisuus on suoraan verrannollinen hajoamattomien ytimien määrään: kun ytimistä on jäljellä puolet, myös aktiivisuus on puolittunut. Säteilymittari ei mittaa aktiivisuutta suoraan, vaan se laskee pulsseja niistä säteilykvanteista, jotka osuvat sen anturiin. Pulssimäärä on verrannollinen aktiivisuuteen, mutta siihen lisätään aina myös ympäristön **taustasäteily**.
 
@@ -529,6 +541,12 @@ missä $\ln 2 \approx 0{,}693$. Esimerkiksi teknetium-$99\text{m}$:lle $\lambda 
 A = A_0 \left(\frac{1}{2}\right)^{t/T_{1/2}}
 ```
 missä $A_0$ on aktiivisuus hetkellä $t = 0$. Samoin pienenee hajoamattoman aineen massa, koska se on verrannollinen ytimien määrään.
+
+```pysahdy
+Aineen B puoliintumisaika on kaksinkertainen aineen A puoliintumisaikaan verrattuna. Kumman hajoamisvakio on suurempi, ja kuinka monta kertaa suurempi?
+---
+Aineen A hajoamisvakio on kaksinkertainen, koska $\lambda = \tfrac{\ln 2}{T_{1/2}}$ on kääntäen verrannollinen puoliintumisaikaan.
+```
 
 ### Eksponenttifunktion sovitus mittausaineistoon
 Puoliintumisaika määritetään mittaamalla näytteen pulssimäärää tasaisin väliajoin. Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen mallin käyrällä hajoamisen satunnaisuuden ja mittausepävarmuuden vuoksi. Siksi pisteisiin sovitetaan malli

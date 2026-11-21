@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 839e9fe5367a7bcf
+CONTENT-HASH: ce11c01684e5f036
 
 ## Blocking
+(none)
 
 ## Polish
+- none
 
 ## Checked
-batch delta review: inquiry.json transfer-task solution, Sijoitus step: unit notation changed from 1/min to min^-1 only; 1/2 · 800 min^-1 = 400 min^-1 is right, d_1/2 = 12 mm unchanged and agrees with the rest of the solution (200 pulses at 24 mm, 50 at 48 mm); no other number, formula or claim changed.
+batch delta review: the three new pysahdy boxes, recomputed in one script (all numbers agree): photon energy vs total power, 1,7–3,3 eV vs 12,6 eV (both match line 85); equal-KE α stops sooner, denser ionization (matches *Läpäisykyky*); 6,0/2,0 = 3 half-value layers → 1/8 = 12,5 %; each box placed after the theory it uses (except as noted), no guardrail break, no conflict with old content.

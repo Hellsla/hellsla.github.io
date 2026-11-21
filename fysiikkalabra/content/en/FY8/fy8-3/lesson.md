@@ -107,6 +107,12 @@ The lowest level $n = 1$ is the **ground state**, with an energy of $-13.6\,\tex
 
 <figure class="unit-photo"><img src="pics/fy8/hydrogen-discharge-tube.webp" alt="A long glass tube on a black background. The narrow middle part glows pink and the ends bluish."><figcaption>A gas discharge tube containing hydrogen. The electric current excites hydrogen atoms, and when they move to lower energy levels, they emit the light of the hydrogen spectral lines.</figcaption></figure>
 
+```pysahdy
+The gap between levels $n = 1$ and $n = 2$ of a hydrogen atom is larger than the gap between levels $n = 4$ and $n = 5$. Why is this?
+---
+The level energies are $E_n = -13.6\,\text{eV} : n^2$, so the levels get closer together going upwards and approach zero. So the gap $n = 1 \to 2$ is $10.2\,\text{eV}$ but the gap $n = 4 \to 5$ only $0.31\,\text{eV}$.
+```
+
 ### A photon is created or disappears in a transition
 When an electron moves from a higher level to a lower one, the energy of the atom decreases and the difference leaves as a single photon. Energy is conserved, so the energy of the photon is the difference between the levels. Since there are only certain levels, there are also only certain differences: hydrogen emits only certain wavelengths, and its spectrum is a line spectrum.
 
@@ -155,6 +161,12 @@ Absorption is the reverse process. An atom absorbs a photon only if the energy o
   <foreignObject x="433.5" y="321.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$hf = 14.0\,\text{eV}$</div></foreignObject>
   <foreignObject x="452.5" y="357.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ionises}$</div></foreignObject>
 </svg>
+
+```pysahdy
+A hydrogen atom in its ground state absorbs a photon with an energy of $15.0\,\text{eV}$. What happens to the atom?
+---
+The atom is ionised, because $15.0\,\text{eV}$ is more than the ionisation energy $13.6\,\text{eV}$. The free electron is left with kinetic energy $15.0\,\text{eV} - 13.6\,\text{eV} = 1.4\,\text{eV}$.
+```
 
 ### The Bohr model as a historical stage
 In 1913 the Danish physicist Niels Bohr proposed a model in which the electron circles the proton on a circular orbit, but only on certain allowed orbits. On an allowed orbit the electron does not radiate, although according to classical physics a circling charge should lose energy as radiation. Light is produced only when the electron moves from one orbit to another, and the energy of the photon is the difference between the energies of the orbits. The radius of the orbit grows as $n^2$: the radius of the ground state is about $0.053\,\text{nm}$, and the radius of orbit $n = 2$ is four times and that of orbit $n = 3$ nine times as large.
@@ -248,6 +260,12 @@ The longest wavelength of each series comes from the transition from the nearest
   <line x1="58" y1="202" x2="52" y2="238" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="29.5" y="239.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\infty \to 2$</div></foreignObject>
 </svg>
+
+```pysahdy
+What is the energy of level $n = 5$ of a hydrogen atom?
+---
+$E_5 = -\tfrac{13.6\,\text{eV}}{5^2} = -\tfrac{13.6\,\text{eV}}{25} \approx -0.54\,\text{eV}$
+```
 
 ## Worked example
 The red line of a hydrogen lamp is produced when the electron of a hydrogen atom moves from level $n = 3$ to level $n = 2$. Calculate the wavelength of the photon produced.

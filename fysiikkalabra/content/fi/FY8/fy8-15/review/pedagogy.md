@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 25198780be5abb6a
+CONTENT-HASH: 16505e815fb04adb
+
 ## Blocking
-- none
+(ei ole)
+
 ## Polish
-- The added sentence nearly gives the answer (neutron becomes proton); consider cutting it so the student recalls it.
+- Ei huomautettavaa.
+
+## Vanhan sisällön löydökset
+(ei löydöksiä)
+
 ## Checked
-batch delta review: Retrieval adds that the decay equals free-neutron decay; this is a hint from the lesson's own content.
+batch delta review: kolme uutta Pysähdy ja mieti -ruutua luettu ympäröivän tekstin kanssa; kysymys testaa edellisen kappaleen ideaa, vastaus on mallivastaus perusteluineen ja vastattavissa siihen mennessä luetulla.

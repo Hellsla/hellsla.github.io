@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6d4f215f45ab5440
+CONTENT-HASH: 10bcdce415b58b52
 
 ## Blocking
+Ei.
 
 ## Polish
-- Photo caption: the better resolution comes from the electrons' much shorter wavelength, not from wave nature alone; "Elektronien aallonpituus on paljon lyhyempi kuin valon" would state the mechanism (same in fi/en; C at this level).
+Ei.
 
 ## Checked
-batch delta review: rewritten intensity retrieval (one correct option, each distractor's feedback right: E = hf, speed c, more photons), chapter-name references, photo caption, worked-example paragraph split (numbers unchanged).
+batch delta review: kolme uutta pysahdy-laatikkoa ja niiden konteksti tarkistettu fysiikan oikeellisuuden, kaavojen ehtojen ja johdonmukaisuuden osalta; luvut laskettu uudelleen omalla skriptillä. Kolme uutta pysahdy-laatikkoa: yksittäisten osumien satunnaisuus (johdonmukainen todennäköisyystulkinnan kanssa), $p = h/\lambda$ (kaava esitetty ennen laatikkoa, rivi 1034), $N/t = P/(hf)$ samalla teholla. Fysiikka oikein.
+
+## Vanhan sisällön löydökset
+Ei.

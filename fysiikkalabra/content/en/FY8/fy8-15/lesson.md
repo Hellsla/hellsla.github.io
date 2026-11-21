@@ -231,6 +231,12 @@ A free quark has never been observed. The strong interaction keeps the quarks in
   <line x1="300" y1="30" x2="300" y2="320" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
 </svg>
 
+```pysahdy
+A physicist tries to tear a single quark out of a proton. Does she get a free quark?
+---
+No. The energy spent on pulling creates new quark–antiquark pairs, so hadrons come out of the collision, not single quarks.
+```
+
 ### Antiparticles and annihilation
 Every particle has an **antiparticle**, which has the same mass but opposite charge and opposite baryon and lepton numbers. The antiparticle of the electron is the positron $e^+$, which is produced in beta plus decay. An antiparticle is written with a bar: $\bar{u}$ is the anti-$u$ quark and $\bar{\nu}_e$ the electron antineutrino. When a particle and its antiparticle meet, they can **annihilate**: both disappear, and all their energy turns into, for example, photons. When an electron and a positron are nearly at rest, two photons are produced and leave in opposite directions, each with the energy $m_e c^2 = 511\,\text{keV}$. PET imaging is based on this (chapter *Radiation in medicine and technology*).
 
@@ -313,6 +319,12 @@ The range of the electromagnetic interaction and of gravity is unlimited. The st
 
 <figure class="unit-photo"><img src="pics/fy8/cms-detector.webp" alt="A huge, multi-layered detector full of cables and metal plates; people in orange helmets stand in the foreground with their backs to the camera."><figcaption>The CMS detector opened up at CERN. The layers of the detector measure the tracks and energies of particles produced in collisions. The visitors standing in front show how large the machine is.</figcaption></figure>
 
+```pysahdy
+An electric repulsion force and a gravitational force act between two protons. Which one is greater?
+---
+The electric repulsion, about $10^{36}$ times greater. Gravitation is the weakest of the fundamental interactions.
+```
+
 ### The Higgs boson and CERN
 According to the Standard Model, space is filled with the **Higgs field**. Interaction with it gives mass to the $W$ and $Z$ bosons, the quarks and the charged leptons, but the photon and the gluon remain massless. The quantum of the field is the **Higgs boson**. It was discovered in 2012 at the LHC accelerator of CERN, the European Organization for Nuclear Research, and its mass is about $125\,\tfrac{\text{GeV}}{c^2}$. Only about $1\,\%$ of the mass of the proton is the mass of its quarks; the rest is the energy of the strong interaction that binds the quarks.
 
@@ -365,6 +377,12 @@ energy released in a nuclear reaction :: Q = (m_\text{initial} - m_\text{final})
 where $m_\text{initial}$ is the mass of the decaying particle and $m_\text{final}$ is the sum of the masses of the particles produced (chapter *Mass defect and nuclear binding energy*). The decay can happen only when $Q > 0$ and all three numbers are conserved. These are necessary but not always sufficient conditions: the reaction must also be mediated by some interaction, and other conservation laws can still prevent it. The masses of particles are given in the unit $\tfrac{\text{MeV}}{c^2}$, so $c^2$ cancels and $Q$ comes out directly in megaelectronvolts.
 
 The proton is the lightest baryon. In the ordinary low-energy reactions of the Standard Model the baryon number is conserved, so the proton cannot decay into lighter particles through these reactions: the decay products would have to include a baryon, and there is no baryon lighter than the proton. In some theories that extend the Standard Model the decay of the proton could, however, be possible, and that is why it is searched for experimentally. The decay of the proton has not been observed. For example, for the decay $p \to e^+ + \pi^0$ experiments give a lower limit of over $10^{34}$ years for the lifetime.
+
+```pysahdy
+A particle could decay into two particles, but their combined mass is greater than the mass of the decaying particle. Can the decay happen?
+---
+No. Then $Q = (m_\text{initial} - m_\text{final})\,c^2 < 0$, and the decay would need energy that the particle does not have.
+```
 
 ### Beta decay at the quark level
 In beta minus decay a neutron turns into a proton. At the quark level, one $d$ quark of the neutron turns into a $u$ quark through the mediator particle $W^-$ of the weak interaction:

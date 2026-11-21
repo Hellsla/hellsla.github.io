@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c4d738277552c551
+CONTENT-HASH: 242f88b0dc3fb46b
+
 ## Blocking
-- none
+(ei ole)
+
 ## Polish
-- The correct option states its own reason and is longest; shorten it.
-- The photon-energy review is gone: check that the lesson itself recalls E = hf before the LED threshold.
+- Ruutu 1: kuvateksti sanoo jo, että vihreän kynnysjännite on suurempi kuin punaisen; ruutu vaatii silti yhden päättelyaskeleen (energia-aukko välissä), joten se käy.
+
+## Vanhan sisällön löydökset
+(ei löydöksiä)
+
 ## Checked
-batch delta review: Retrieval moved from photon energy to frequency from wavelength (c = f lambda), 4,76e14 and 6,38e14 Hz correct; feedback repairs the inverse-proportion error and the equal-speed error.
+batch delta review: kolme uutta Pysähdy ja mieti -ruutua luettu ympäröivän tekstin kanssa; kysymys testaa edellisen kappaleen ideaa, vastaus on mallivastaus perusteluineen ja vastattavissa siihen mennessä luetulla.

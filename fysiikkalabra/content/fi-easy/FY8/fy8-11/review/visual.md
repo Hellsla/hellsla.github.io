@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: cd549898d8f73394
+CONTENT-HASH: 159aee6b382f4cfd
 
 ## Blocking
-- none
 
 ## Polish
 - none
 
+## Vanhan sisällön löydökset
+- none
+
 ## Checked
-- Delta (fi-easy): lesson.md paragraph cut (presentation only) and inquiry.json "Kertaa: massavaje" prompt and feedback (uranium-235, $92$ protons, $143$ neutrons, $235$ nucleons).
-- Opened: stage-herata-390 (Pohdinta layout intact, the optional "Kertaa: massavaje" box closed under the question, numbers in LaTeX), plus the contact-sheet-level layout check.
-- Typography: inline numbers render upright; no red source.
-- The opened feedback text is not in a capture; the source form ($235$ in LaTeX) was read, not rendered.
+- batch delta review (round 1, Pysähdy ja mieti): opened fy8-11-theory-1280-1 to -5 (three new boxes: rauta-56, kasvukerroin 0,8, massaero 0,050 u; the first and second sit at figure-row edges without overlap; box 2 straddles a capture boundary but is whole in -1/-2). Answers read in lesson.md: LaTeX, natural Finnish.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

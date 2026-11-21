@@ -1,7 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9ee1c56b9a430097
+CONTENT-HASH: dd06cdbb9795d4e6
+
 ## Blocking
+(ei ole)
+
 ## Polish
-- "suurissa mittakaavoissa niin tasainen" is abstract for a 16-19-year-old; consider "että maailmankaikkeus näyttää joka suunnassa lähes samanlaiselta".
+- Ruutu 2 (läpinäkyvyys): varmista, että vetyatomien muodostuminen on kerrottu tekstissä ennen ruutua, jotta vastaus on luettavissa.
+
+## Vanhan sisällön löydökset
+(ei löydöksiä)
+
 ## Checked
-batch delta review: new paragraph on cosmic inflation after the Big Bang paragraph; short, flagged as a hypothesis and as not directly observed, bold term, consistent with the surrounding text; no tasks touch it.
+batch delta review: kolme uutta Pysähdy ja mieti -ruutua luettu ympäröivän tekstin kanssa; kysymys testaa edellisen kappaleen ideaa, vastaus on mallivastaus perusteluineen ja vastattavissa siihen mennessä luetulla.

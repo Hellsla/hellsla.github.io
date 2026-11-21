@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 77247589df7c4d0d
+CONTENT-HASH: a97fa574406645b3
 
 ## Blocking
 
 ## Polish
-- [Minor] inquiry.json, Kertaa feedback of "Fotonin energia on ylemmän tason E2 energia": "Se on tasojen erotus." is a bare sentence; write "Tämä energia on tasojen erotus."
-- [Minor] Earlier polish (Esimerkki 3 "lämpö" vs "sisäenergia"; key concept "kvanttipiste") unchanged, may wait.
+- none
+
+## Vanhan sisällön löydökset
+- none
 
 ## Checked
-- Delta round 3: diff of inquiry.json (Kertaa prompt, choices, feedbacks: 633 nm and 1,96 eV now consistent in both), lesson.md (paragraph presentation only), lesson-answers.py (not visible text).
-- fy8-7-stage-herata-390 opened: Pohdinta layout fine, optional Kertaa task closed, 1 mW in LaTeX.
-- The opened Kertaa feedback has no capture; judged from the text.
+- batch delta review (round 1, Pysähdy ja mieti): opened fy8-7-theory-1280-1, -2, -3, -4 (three new boxes: stimuloitu emissio, kvanttipiste, fotonien määrä; the first sits under the paragraph beside figure 2, no overlap; the other two after the photo column). Answers read in lesson.md: LaTeX, natural Finnish.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

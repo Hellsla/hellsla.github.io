@@ -267,6 +267,12 @@ Tilan nimen numero on pääkvanttiluku $n$. Solmuja on yhteensä $n - 1$. Kirjai
   <foreignObject x="425" y="301.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{solmutaso}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Vetyatomin tilan aallossa on kaksi solmua. Mikä on tilan pääkvanttiluku? Onko energia suurempi kuin tilassa $n = 2$?
+---
+Solmuja on $n - 1$, joten $n = 3$. Tässä tilassa on enemmän solmuja kuin tilassa $n = 2$. Siksi energia on suurempi.
+```
+
 ### Todennäköisyystulkinta
 Aalto ei kerro, missä elektroni on. Se kertoo, missä elektroni havaitaan todennäköisesti. Kun elektronin paikka mitataan, tulos on aina yksi piste. Yksittäistä tulosta ei voi ennustaa. Amplitudi on aallon suurin poikkeama tasapainosta. Aallon amplitudin neliö kertoo, kuinka todennäköisesti elektroni havaitaan pienessä tilavuudessa kunkin kohdan ympärillä. Tämä on aaltomallin **todennäköisyystulkinta**.
 
@@ -275,6 +281,12 @@ Jakauma tulee näkyviin vasta, kun mittaus toistetaan monessa samassa tilassa ol
 P \approx \frac{k}{N}
 ```
 missä $P$ on todennäköisyys, $k$ alueeseen osuneiden mittausten määrä ja $N$ kaikkien mittausten määrä. Arvio tarkentuu, kun $N$ kasvaa. Mittausten välillä elektronilla ei ole rataa, jonka voisi piirtää.
+
+```pysahdy
+Elektronin paikka mitataan $250$ atomissa, jotka ovat samassa tilassa. Näistä mittauksista $50$ osuu tietylle alueelle. Kuinka todennäköisesti elektroni havaitaan siellä?
+---
+$P \approx \tfrac{k}{N} = \tfrac{50}{250} = 0{,}20$. Todennäköisyys on siis $20\,\%$.
+```
 
 ### Orbitaali kuvaa elektronin kvanttitilaa
 Kun mittaustulokset merkitään pisteiksi, syntyy elektronipilvi. Pilvi on tihein siellä, missä elektroni havaitaan todennäköisimmin. Pilvellä ei ole terävää reunaa. **Orbitaali** kuvaa elektronin kvanttitilaa. Kvanttitila on atomin sallittu seisova aalto. Se määrää, millä todennäköisyydellä elektroni havaitaan eri kohdissa. Kuvissa orbitaali näytetään alueena, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä. Tavallisesti todennäköisyys on $90\,\%$. Piirretty alue on vain havainnollistus. Se ei ole orbitaalin määritelmä.
@@ -1392,6 +1404,12 @@ Kun elektroni siirtyy ylemmästä tilasta alempaan, atomi lähettää fotonin. F
   <line x1="210" y1="360" x2="228" y2="360" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="234" y="345.5" width="300" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{orbitaalilla enintään } 2\ e^-$</div></foreignObject>
 </svg>
+
+```pysahdy
+Montako elektronia mahtuu enintään $3\text{p}$-alikuorelle?
+---
+P-alikuorella on kolme orbitaalia. Jokaisella orbitaalilla voi olla enintään kaksi elektronia. Alikuorelle mahtuu siis enintään $3 \cdot 2 = 6$ elektronia.
+```
 
 ### Yhteys kemian orbitaaleihin
 Monen elektronin atomissa elektronit hylkivät toisiaan. Siksi saman kuoren alikuorilla on eri energiat: $2\text{s}$ on alempana kuin $2\text{p}$ ja $3\text{s}$ alempana kuin $3\text{p}$. Perustilassa elektronit täyttävät orbitaalit alimmasta energiasta alkaen. Kullekin orbitaalille tulee enintään kaksi elektronia. Perustila on atomin pienimmän energian tila.

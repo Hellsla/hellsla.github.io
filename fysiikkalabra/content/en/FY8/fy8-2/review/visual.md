@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 6073505be54021e2
+CONTENT-HASH: f91fa82751e0bfda
 
 ## Blocking
-- none
 
 ## Polish
-- none
+
+## Vanhan sisällön löydökset
+- Ei löydöksiä, jotka estäisivät uudet laatikot.
 
 ## Checked
-- Delta: reworded sunlight-spectrum prompt in the third check; lesson.md only re-paragraphed; figure bodies unchanged (teacher-approved). Opened contact-1, fig-10 (390 px), stage-tarkista-390-1 and -2 (task cards, layout intact). Numbers with units are LaTeX.
+- theory-1280-1, -2, -3: three new Stop and think boxes (heading, question, closed Answer; units in LaTeX, decimal point, no overflow); surrounding layout intact.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish (English) 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

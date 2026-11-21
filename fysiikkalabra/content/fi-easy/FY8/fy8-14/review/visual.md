@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: daa56138c2ecfed8
+CONTENT-HASH: 248814768891c4ee
 
 ## Blocking
-- none
 
 ## Polish
+- [Minor] box 2 answer: "Yksi fotoni ei pitäisi." is elliptical. Write "Yksi fotoni ei pitäisi liikemäärää nollana."
+
+## Vanhan sisällön löydökset
 - none
 
 ## Checked
-- Delta (inquiry.json Kertaa: puoliintumispaksuus prompt now situation-first; lesson.md paragraph cuts). Opened fy8-14-stage-herata-390 (Pohdinta, task closed behind the optional row) and fy8-14-stage-tarkista-390-1 (layout of Testaa ja arvioi survived). Prompt is two sentences, situation then question; Finnish natural, glossary terms unchanged.
+- batch delta review (round 1, Pysähdy ja mieti): opened fy8-14-theory-1280-1 to -6 (three new boxes: keuhkot ja luu, positroni ja elektroni, kaksi vaimennuskerrosta; the first beside the PET-TT photo, no overlap). Answers read in lesson.md: LaTeX, natural Finnish.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

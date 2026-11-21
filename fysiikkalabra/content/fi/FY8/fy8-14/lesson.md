@@ -192,6 +192,12 @@ Lähde: tyypilliset suuruusluokat STUKin terveydenhuollon säteilyaltistusta kos
 
 <figure class="unit-photo"><img src="pics/fy8/pet-ct-scanner.webp" alt="Sairaalan kuvaushuone: vaaleanvihreä rengasmainen laite, jonka aukkoa kohti osoittaa valkoisella liinalla peitetty potilaspöytä."><figcaption>PET-TT-laite Bronissa Ranskassa. Renkaan sisällä on PET-kuvauksen ilmaisinrengas ja tietokonetomografian röntgenputki ilmaisimineen. Potilas liukuu pöydän mukana renkaan läpi.</figcaption></figure>
 
+```pysahdy
+Miksi keuhkot näkyvät röntgenkuvassa tummina mutta luu vaaleana?
+---
+Keuhkojen ilma päästää säteilyn läpi lähes vaimentamatta, joten ilmaisimeen osuu paljon säteilyä. Luu vaimentaa säteilyä paljon, joten sen taakse osuu vähän ja luu näkyy vaaleana.
+```
+
 ### Isotooppikuvaus: merkkiaine näyttää elimen toiminnan
 
 **Merkkiaine** on radioaktiivinen nuklidi, joka on liitetty yhdisteeseen, jota elimistö käsittelee kuten omaa ainettaan, joten se kertyy tutkittavaan elimeen. Kehon ulkopuolinen ilmaisin havaitsee merkkiaineen säteilyn. Kuva ei siksi näytä vain rakennetta, kuten röntgenkuva, vaan sen, missä elimistö toimii: esimerkiksi luuston isotooppikuvauksessa merkkiaine kertyy kohtiin, joissa luu uusiutuu vilkkaasti, kuten murtumiin ja etäpesäkkeisiin.
@@ -279,6 +285,12 @@ PET-kuvauksen eli positroniemissiotomografian merkkiaineena on yleensä fluori-1
 </svg>
 
 Potilasta ympäröi ilmaisinrengas. Kun kaksi vastakkaista ilmaisinta havaitsee fotonin muutaman nanosekunnin sisällä toisistaan eli **koinsidenssissa**, laite päättelee, että fotonit syntyivät samassa annihilaatiossa jossain näiden ilmaisimien välisellä janalla. Jos fotonien saapumisaikojen eroa ei mitata, yksi jana ei kerro, missä kohdassa janaa lähde on. Nykyaikaiset PET-laitteet mittaavat myös tämän aikaeron (lentoaika-PET) noin $0{,}3\,\text{ns}$:n tarkkuudella. Valo kulkee nanosekunnissa noin $30\,\text{cm}$, joten aikaero rajaa lähteen janalla muutaman senttimetrin matkalle. Koska positroni kulkee ennen annihilaatiota, jana kertoo annihilaation paikan eikä aivan hajoamispaikkaa. Varsinainen kuva syntyy vasta monista janoista: kun janoja kertyy miljoonia, ne leikkaavat tiheimmin siellä, missä merkkiainetta on eniten, ja tietokone laskee niistä kuvan. Lyhyen puoliintumisajan vuoksi fluori-18 valmistetaan hiukkaskiihdyttimellä, syklotronilla, lähellä kuvauspaikkaa, esimerkiksi Turun PET-keskuksessa.
+
+```pysahdy
+Positroni ja elektroni annihiloituvat lähes levossa. Miksi syntyy kaksi fotonia, jotka lähtevät vastakkaisiin suuntiin, eikä yksi fotoni?
+---
+Hiukkasten kokonaisliikemäärä on alussa lähes nolla. Kaksi vastakkaisiin suuntiin lähtevää fotonia pitää liikemäärän lähes nollana, yksi fotoni ei.
+```
 
 ### Sädehoito: suuri annos kasvaimeen, pieni terveelle kudokselle
 
@@ -436,6 +448,12 @@ missä $I_0$ on säteeseen tulevan säteilyn intensiteetti, $I$ kerrosten läpi 
   <foreignObject x="276.5" y="151.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$d_{1/2} = 3{,}4\,\text{cm}$</span></div></foreignObject>
   <foreignObject x="299" y="262" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#a97a35"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$d_{1/2} = 1{,}1\,\text{cm}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Röntgensäde kulkee pehmytkudosta kaksi puoliintumispaksuutta ja sen jälkeen luuta yhden puoliintumispaksuuden. Kuinka suuri osuus säteilystä pääsee läpi?
+---
+Puoliintumispaksuudet lasketaan yhteen: $\left(\tfrac{1}{2}\right)^{2+1} = \tfrac{1}{8}$, eli $12{,}5\,\%$ pääsee läpi.
+```
 
 ### Annihilaatiofotonin energia
 

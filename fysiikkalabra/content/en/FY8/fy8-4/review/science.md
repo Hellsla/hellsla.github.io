@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 51057c3079dc6de3
+CONTENT-HASH: f5b30282046b5ef2
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+- Box 1 says "thousands of hits"; the buildup figure already shows fringes starting at 200 hits. Something like "many hundreds or thousands" would match the figure better.
 
 ## Checked
-- batch delta review: retrieval rewritten to laser light on a double-slit screen; one correct option (twice the photons, same hf), every distractor wrong with right feedback (photon speed c in vacuum, E = hf); chapter references now match the real titles (fy5-12, fy8-1); electron-microscope photo caption correct (short electron wavelength gives finer resolution); worked example only split into paragraphs; hash same at start and end.
+batch delta review: the three new pysahdy boxes (10 hits look random and show no fringes; p = h/λ, so halving λ doubles p; N/t = P/hf, so red gives more photons at equal power). Recomputed, consistent with the theory and the figure.

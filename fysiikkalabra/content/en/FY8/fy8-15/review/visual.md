@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 1eb3168abba0c441
-
-Round 1 (delta): paragraph cuts in lesson.md and one inquiry prompt sentence.
+CONTENT-HASH: 38d0b5c85e7327fc
 
 ## Blocking
-- None.
+(none)
 
 ## Polish
-- None.
+(none)
+
 
 ## Checked
-- fy8-15-theory-1280-1 (cut paragraphs, figures beside text, maths), fy8-15-stage-selita-390-3 (phone width, antiparticle section and figure), fy8-15-open-ennusta-1280-1 (predictions; the changed beta-decay review prompt is in the optional review set, its wording reads cleanly).
-- Layout survived the paragraph cuts; no clipping, quantities and units set as maths.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: opened fy8-15-theory-1280-* (3 new Stop and think boxes) and the 390 px fy8-15-stage-selita-390-* captures: boxes render as a green-edged card with label, question and closed Answer toggle, formulas and units in KaTeX, no clipping, layout around them intact.

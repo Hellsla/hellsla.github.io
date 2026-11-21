@@ -1,8 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: e9f38776eda7db26
+VERDICT: FAIL
+CONTENT-HASH: 2c0f978d2793ca09
+
 ## Blocking
+- Laatikko 1 (ydin A vs. ydin B): vastaus on sanatarkasti kappaleen viimeisessä virkkeessä ("ydin, joka on säilynyt pitkään, hajoaa yhtä todennäköisesti kuin juuri syntynyt"). Laatikko ei testaa ymmärrystä. Esitä tilanne ilman tätä virkettä (esim. onko ydin "jo ylikypsä"?) tai siirrä laatikko ennen virkettä.
 
 ## Polish
+- Laatikko 2 sijaitsee Geiger-mittarin kuvan jälkeen, vaikka testaa puoliintumisaikaa, ja laatikko 3 on kaavan jälkeen hyvä. Laatikko 2 ok.
+
+## Vanhan sisällön löydökset
+(ei)
 
 ## Checked
-batch delta review: diff only: Mo-99 to Tc-99m beta-minus retrieval; Z 42 to 43 and mass number 99 correct; feedback consistent with the options; the unchanged iodine-131 task elsewhere does not conflict.
+batch delta review (round 1): kolme uutta pysähdy-laatikkoa; luettu kutakin edeltävä teksti ja kuvat; laatikot, joiden vastaus on jo sanatarkasti tekstissä tai kuvassa, merkitty Blocking.

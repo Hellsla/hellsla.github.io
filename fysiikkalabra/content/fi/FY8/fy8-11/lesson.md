@@ -162,6 +162,12 @@ Luvussa *Massavaje ja ytimen sidosenergia* ytimen sidosenergia laskettiin massav
   <foreignObject x="377.5" y="193" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\text{fissio}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Voiko rauta-56-ydin vapauttaa energiaa fissiolla tai fuusiolla?
+---
+Ei voi. Rauta-56 on kuvaajan huipulla, joten sen nukleonit ovat jo mahdollisimman tiukasti sidottuja eikä reaktiolla pääse ylöspäin.
+```
+
 ### Fissio
 **Fissiossa** raskas ydin jakautuu kahdeksi keskiraskaaksi ytimeksi. Uraani-235-ydin jakautuu helposti, kun se kaappaa hitaan neutronin. Syntyvä uraani-236-ydin värähtelee niin voimakkaasti, että se venyy ja kuroutuu kahtia. Tyypillinen reaktio on
 $$
@@ -388,6 +394,12 @@ missä $N_g$ on neutronien määrä sukupolvessa $g$ ja $k$ kasvukerroin. Kun $k
   <foreignObject x="16" y="253.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$g = 2$</div></foreignObject>
 </svg>
 
+```pysahdy
+Ketjureaktion kasvukerroin on $k = 0{,}8$ ja sukupolvessa $0$ on $1000$ neutronia. Kuinka monta neutronia on sukupolvessa $2$?
+---
+$N_2 = 1000 \cdot 0{,}8^2 = 640$. Neutroneja on joka sukupolvessa vähemmän, joten ketju sammuu.
+```
+
 ### Ydinreaktori
 **Ydinreaktori** on laite, jossa ketjureaktio pidetään hallitusti kriittisenä, $k = 1$. Polttoaineena on uraanidioksidia, jossa uraani-235:n osuus on rikastettu luonnon $0{,}7\,\%$:sta noin $3$–$5\,\%$:iin. Fissiossa syntyvät neutronit ovat nopeita, mutta uraani-235 jakautuu paljon todennäköisemmin hitaan neutronin osuessa. Siksi reaktorissa on **hidastinta**, kevytvesireaktorissa tavallista vettä: neutronit menettävät energiaansa törmäillessään vesimolekyylien vetyytimiin. Sama vesi toimii jäähdytteenä, joka kuljettaa lämmön pois. **Säätösauvat** sisältävät ainetta, kuten booria, joka absorboi neutroneja. Kun sauvoja työnnetään syvemmälle, kasvukerroin pienenee.
 
@@ -548,6 +560,12 @@ Kuvassa ovat uraani-235:n fission massat ennen reaktiota ja sen jälkeen. Massa 
   <foreignObject x="442.5" y="15.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{jälkeen}$</div></foreignObject>
   <foreignObject x="152.5" y="325.5" width="295" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\Delta m = 0{,}1860\,\text{u} \;\Rightarrow\; Q \approx 173\,\text{MeV}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Ydinreaktiossa lähtöaineiden massa on $0{,}050\,\text{u}$ suurempi kuin tuotteiden. Kuinka paljon energiaa vapautuu megaelektronivoltteina?
+---
+$Q = 0{,}050 \cdot 931{,}5\,\text{MeV} \approx 47\,\text{MeV}$, koska massaero kerrotaan arvolla $931{,}5\,\tfrac{\text{MeV}}{c^2}$.
+```
 
 ### Fissio ja fuusio rinnakkain
 Deuteriumin ja tritiumin fuusiossa massa pienenee $0{,}01888\,\text{u}$, joten $Q = 17{,}6\,\text{MeV}$. Yksi fuusio vapauttaa siis vähemmän energiaa kuin yksi fissio, mutta nukleonia kohti enemmän: fuusiossa noin $3{,}5\,\text{MeV}$, fissiossa noin $0{,}85\,\text{MeV}$. Saman polttoainemassan fuusio vapauttaa siten noin nelinkertaisesti energiaa fissioon verrattuna.

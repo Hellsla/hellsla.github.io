@@ -975,6 +975,12 @@ Tehdään kaksoisrakokoe niin heikolla valolla, että laitteessa on keskimääri
   <line x1="441.5" y1="16" x2="441.5" y2="352" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 5"/>
 </svg>
 
+```pysahdy
+Heikolla valolla tehdyssä kaksoisrakokokeessa ensimmäiset $10$ fotonia ovat osuneet varjostimeen. Näkyykö siellä jo selvä raitakuvio?
+---
+Ei. Yksittäiset osumat näyttävät sattumanvaraisilta, eikä yhden osuman paikkaa voi ennustaa. Raitakuvio alkaa näkyä vasta, kun osumia on tuhansia.
+```
+
 ### Aalto kertoo todennäköisyyden
 Aaltomalli ei kerro, mihin yksittäinen fotoni tai elektroni osuu. Se kertoo todennäköisyyden, jolla kvantti havaitaan kussakin kohdassa. Missä aallon intensiteetti on suuri, osumia tulee paljon. Tummissa raidoissa osumia ei juuri tule. Kun vain toinen rako on auki, raidat katoavat. Kun molemmat raot ovat auki, tummiin raitoihin tulee vähemmän osumia kuin yhden raon kanssa. Toisen raon avaaminen siis vähentää osumia näissä kohdissa. Sitä ei voi selittää niin, että jokainen kvantti kulkisi pienen kuulan tavoin vain toisen raon kautta. Jos kokeessa mitataan, kumman raon kautta kukin kvantti kulkee, raitakuvio häviää. Silloin jakauma on kahden yhden raon kuvion summa.
 
@@ -1029,6 +1035,12 @@ fotonin liikemäärä :: p = \frac{E}{c} = \frac{h}{\lambda}
 ```
 Kaavassa $p$ on fotonin liikemäärä ($\text{kg}\cdot\text{m/s}$), $E = hf = \tfrac{hc}{\lambda}$ on fotonin energia ($\text{J}$), $c = 2{,}998 \cdot 10^8\,\text{m/s}$ on valon nopeus, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on Planckin vakio ja $\lambda$ on aallonpituus ($\text{m}$). Yksikkö täsmää: $\tfrac{\text{J}\,\text{s}}{\text{m}} = \tfrac{\text{kg}\cdot\text{m}^2/\text{s}^2 \cdot \text{s}}{\text{m}} = \text{kg}\cdot\text{m/s}$. Näkyvän valon fotonin liikemäärä on pieni. Aallonpituudella $500\,\text{nm}$ se on ${1{,}3 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}}$. Röntgenfotonin aallonpituus on $0{,}0711\,\text{nm}$. Sen liikemäärä on noin $7000$-kertainen, ${9{,}3 \cdot 10^{-24}\,\text{kg}\cdot\text{m/s}}$. Lyhyt aallonpituus tarkoittaa siis suurta energiaa ja suurta liikemäärää.
 
+```pysahdy
+Fotonin A aallonpituus on puolet fotonin B aallonpituudesta. Kumman liikemäärä on suurempi? Kuinka monta kertaa suurempi?
+---
+Fotonin A liikemäärä, kaksi kertaa suurempi. Kaavassa $p = \tfrac{h}{\lambda}$ aallonpituus on jakajana. Kun aallonpituus puolittuu, liikemäärä kaksinkertaistuu.
+```
+
 ### Comptonin ilmiö
 Arthur Compton suuntasi vuonna 1923 röntgensäteilyä grafiittiin. Hän mittasi sironneen säteilyn aallonpituuden. Sironnut säteily on säteilyä, joka on muuttanut suuntaansa osuessaan aineeseen. Sironneen säteilyn aallonpituus oli pidempi kuin tulevan säteilyn. Ero kasvoi, kun sirontakulma kasvoi. Tätä kutsutaan **Comptonin ilmiöksi**. Aaltomalli ei selitä sitä. Aallon tahdissa värähtelevät elektronit säteilisivät samalla taajuudella kuin tuleva säteily. Fotonimallissa ilmiö on törmäys. Fotoni luovuttaa osan energiastaan ja liikemäärästään lähes vapaalle elektronille, ja elektroni lähtee liikkeelle. Energia säilyy:
 ```latex
@@ -1075,6 +1087,12 @@ Valon teho $P$ kertoo, kuinka paljon energiaa valo kuljettaa sekunnissa. Jokaine
 \frac{N}{t} = \frac{P}{hf}
 ```
 Kaavassa $N$ on fotonien lukumäärä, $t$ on aika ($\text{s}$), $P$ on teho ($\text{W}$) ja $hf$ on yhden fotonin energia ($\text{J}$). Tavallisessa valossa fotoneja on niin paljon, että valo näyttää jatkuvalta virralta. Vasta hyvin heikossa valossa yksittäiset fotonit erottuvat.
+
+```pysahdy
+Punaisen ja sinisen laserin teho on sama. Kumpi lähettää sekunnissa enemmän fotoneja?
+---
+Punainen. Kaavassa $\tfrac{N}{t} = \tfrac{P}{hf}$ yhden fotonin energia $hf$ on jakajana. Punaisen fotonin energia on pienempi, joten samalla teholla fotoneja tulee enemmän.
+```
 
 ## Esimerkki
 Kaksoisrakokokeessa käytetään punaista laservaloa, jonka aallonpituus on $633\,\text{nm}$. Valo himmennetään suodattimilla. Rakoihin tulevan valon teho on silloin $1{,}0 \cdot 10^{-13}\,\text{W}$. Kuinka monta fotonia tulee rakoihin sekunnissa? Kuinka pitkä matka on peräkkäisten fotonien välillä keskimäärin? Onko $1{,}2\,\text{m}$:n pituisessa laitteessa yleensä useampi fotoni yhtä aikaa?

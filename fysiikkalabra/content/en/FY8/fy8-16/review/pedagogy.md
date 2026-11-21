@@ -1,10 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 4ae44fd1881f3ac4
+VERDICT: FAIL
+CONTENT-HASH: 1acdf7bf1e816980
 
 ## Blocking
+- Box 2 (transparent universe): the paragraph just above says the scattering became rare and photons travelled far; the answer is read off.
 
 ## Polish
-- "Cosmic inflation" is introduced in a bold term with no gloss for "uniform on large scales"; a short example (the background radiation is almost the same in every direction) would help a 16-year-old.
+- Box 1: the section above states that the expansion has no centre.
+
+## Vanhan sisällön löydökset
+None.
 
 ## Checked
-batch delta review: the new inflation paragraph (about 40 words) follows the Big Bang paragraph logically, names the term, says why it is proposed and that it is unobserved (honest hypothesis framing); no tasks, feedback or solutions depend on it and no number or figure is touched.
+batch delta review: the three new pysahdy boxes read against the paragraph, figure and aria-label before each; answerable from earlier text; the answer is a model with its reason.

@@ -251,6 +251,12 @@ The light of almost all galaxies is redshifted, and the more so the farther away
 
 Redshift arises when the expansion of space stretches the wavelength of light as it travels from the galaxy to us. For nearby galaxies, the redshift can be interpreted like the sound of a receding source: the faster the source recedes, the longer the wavelength that arrives.
 
+```pysahdy
+Seen from galaxy X, almost all other galaxies are moving away. Is X the centre of the universe?
+---
+No. Space itself expands, so from any galaxy the distant galaxies recede in the same way. The expansion has no centre.
+```
+
 ### The Big Bang
 If galaxies are receding from each other now, they were closer to each other in the past. Following the expansion backwards leads to a state in which the whole present observable universe was very dense and hot. The expansion that began from this state is called the **Big Bang**. It happened about $13.8$ billion years ago. Despite its name, the Big Bang was not an explosion in which matter flew into empty space from some point: it happened everywhere, and space itself began to expand. As the universe expanded, it cooled, and the cooling determines the order in which nuclei, atoms, stars and galaxies formed.
 
@@ -286,6 +292,12 @@ After the first seconds, the universe contained protons, neutrons, electrons, ph
 The nuclei did not get electrons around them right away. The energy of the photons was so great that they ionised every atom that formed, and the free electrons scattered the photons in every direction: the universe was like a glowing fog. After about $380\,000$ years, the temperature had fallen to about $3000\,\text{K}$. Then there were no longer enough photons with enough energy to ionise a hydrogen atom, that is, at least $13.6\,\text{eV}$ (chapter *Energy levels of the hydrogen atom and the Bohr model*). Protons and electrons could form stable hydrogen atoms, and the number of free electrons fell sharply. The photons had earlier scattered continuously from free electrons (Thomson scattering). The scattering becoming rare made the universe transparent to the radiation that we now observe as the cosmic microwave background: the photons could travel long distances without collisions.
 
 The light released then is still on its way. The expansion has stretched its wavelengths by a factor of about $1100$, so now it is microwaves with a typical wavelength of about $1.06\,\text{mm}$. This is the **cosmic background radiation**. Arno Penzias and Robert Wilson discovered it in 1965. It arrives almost evenly from every direction, and its spectrum corresponds to a body at a temperature of $2.725\,\text{K}$.
+
+```pysahdy
+About $380\,000$ years after the beginning, the universe became transparent. What caused this change?
+---
+The temperature dropped so that protons and electrons could form hydrogen atoms. Few free electrons remained, so photons scattered rarely and could travel long distances.
+```
 
 ### Stars make the heavier elements
 After a few hundred million years, gravity had gathered hydrogen and helium gas into clouds. In their cores the temperature rose so high that fusion began: the first stars were born. A star such as the Sun fuses hydrogen into helium in its core for most of its life. When the hydrogen in the core runs out, the core contracts and heats up, and helium begins to fuse into carbon and oxygen. In very massive stars, fusion continues to ever heavier nuclei, all the way to iron. Fusion releases energy only as long as the nucleus that forms is more tightly bound than the starting nuclei, and the binding energy per nucleon is greatest in the region of iron and nickel. Of the individual nuclides, the greatest value is that of nickel-62.
@@ -496,6 +508,12 @@ where $v$ is the recession speed, $d$ the distance of the galaxy and $H_0$ the *
   <circle cx="432.5" cy="82.5" r="6" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="470" y="49.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v = H_0\,d$</div></foreignObject>
 </svg>
+
+```pysahdy
+The Hubble constant is $70\,\tfrac{\text{km/s}}{\text{Mpc}}$. At what speed does a galaxy at a distance of $100\,\text{Mpc}$ recede?
+---
+$v = H_0\,d = 70\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 100\,\text{Mpc} = 7000\,\text{km/s}$.
+```
 
 ### Extension: the age of the universe from the Hubble constant
 The age of the universe can be estimated roughly by assuming that the present recession speeds of the galaxies describe the whole history of the expansion. If a galaxy has moved all the time at the speed $v = H_0\,d$, it was in the same place as we were a time $t = \tfrac{d}{v}$ ago. Substituting the Hubble–Lemaître law:

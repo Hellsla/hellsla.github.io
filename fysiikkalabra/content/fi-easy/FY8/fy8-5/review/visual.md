@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f9ce31430d871420
+CONTENT-HASH: 0a852ff97f1307dd
 
 ## Blocking
 
 ## Polish
+- none
+
+## Vanhan sisällön löydökset
+- none
 
 ## Checked
-- Delta: paragraph cuts in lesson.md and the longer retrieval prompt in inquiry.json.
-- Opened fy8-5-theory-1280-1 (Ydinajatus paragraphs and figures 8 and 10 beside text, layout intact) and fy8-5-stage-herata-390 (Pohdinta, the retrieval choice with its new prompt).
-- Shorter paragraphs read well; the new prompt is fluent and uses the glossary terms.
+- batch delta review (round 1, Pysähdy ja mieti): opened fy8-5-theory-1280-1, -2, -3, -4 (all three new boxes in place: solmut n = 3, P ≈ k/N, 3p-alikuori; box clear of figures and photos, KaTeX right, closed Vastaus). Answers read in lesson.md: LaTeX, units, natural Finnish.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

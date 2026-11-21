@@ -90,6 +90,12 @@ A nucleus is described by two numbers. The **atomic number** $Z$ is the number o
   <foreignObject x="400" y="297.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{neutron } n$</div></foreignObject>
 </svg>
 
+```pysahdy
+A sodium nucleus is written ${}^{23}_{11}\text{Na}$. How many protons and neutrons does the nucleus have?
+---
+There are $Z = 11$ protons and $N = A - Z = 23 - 11 = 12$ neutrons.
+```
+
 ### Why some nuclei decay
 Protons repel each other electrically, but the nucleus is held together by the strong interaction. It pulls nucleons towards each other, but only over a very short distance, the size of a nucleus. Neutrons add attraction without adding repulsion, so stable heavy nuclei have more neutrons than protons.
 
@@ -255,6 +261,12 @@ In **gamma decay**, a nucleus in an excited state, marked with an asterisk ${}^{
   <foreignObject x="385" y="225.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{excited state } {}^{\ast}$</div></foreignObject>
 </svg>
 
+```pysahdy
+In beta minus decay a neutron of the nucleus turns into a proton. How do the atomic number and the mass number of the nucleus change?
+---
+There is one more proton, so the atomic number increases by one. The number of nucleons does not change, so the mass number stays the same.
+```
+
 ### Energy levels of the nucleus and the gamma spectrum
 The energy of a nucleus is quantised like the energy of the electrons of an atom. When a nucleus moves from a higher energy level to a lower one, the energy of the gamma photon that leaves is the difference between the levels, just as in a transition of the hydrogen atom in the chapter *Energy levels of the hydrogen atom and the Bohr model*. This is why the gamma spectrum of a nucleus is a line spectrum: each peak tells the difference of one pair of levels. The scale is different. Transitions of an atom are of the order of electronvolts, while the differences between the levels of a nucleus are typically tens of kiloelectronvolts or more, so tens of thousands to hundreds of thousands of times larger.
 
@@ -346,6 +358,12 @@ E_\gamma &= E_\text{u} - E_\text{l} \\
 \end{aligned}
 ```
 where $E_\text{u}$ and $E_\text{l}$ are the energies of the upper and the lower level, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ is the Planck constant and $c = 2.998 \cdot 10^{8}\,\text{m/s}$ is the speed of light. Kiloelectronvolts are converted to joules by substituting $1\,\text{keV} = 1000\,\text{eV}$ and $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
+
+```pysahdy
+Uranium-238 ${}^{238}_{92}\text{U}$ undergoes alpha decay. What are the mass number and atomic number of the daughter nucleus?
+---
+The alpha particle ${}^{4}_{2}\text{He}$ carries away four nucleons and two protons: $A = 238 - 4 = 234$ and $Z = 92 - 2 = 90$.
+```
 
 ## Worked example
 Caesium-137 ${}^{137}_{55}\text{Cs}$ decays by beta minus decay. The daughter nucleus is usually formed in an excited state, which relaxes by emitting a gamma photon with an energy of $661.7\,\text{keV}$ (NNDC NuDat 3). What is the daughter nucleus, and what is the wavelength of the gamma photon?

@@ -1,9 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 9f43501aadc66959
+CONTENT-HASH: dad34d203d06b9c2
+
 ## Blocking
+(ei)
 
 ## Polish
-- Kertaus is now about ionisation, which is the smoke-detector phenomenon; the final sentence of the correct feedback could say 'energiatasojen erotus' once more, but it is fine.
+- Laatikko 3 (alfahajoaminen) seuraa gammafotonin aallonpituuskappaletta, vaikka alfakaava on kahden kuvan päässä ylempänä. Siirrä laatikko kaavan jälkeen.
+- Laatikko 2 tulee gammakappaleen jälkeen mutta testaa beetakappaletta. Siirrä se beetakappaleen perään.
+- Laatikko 1 on hyvä.
+
+## Vanhan sisällön löydökset
+(ei)
 
 ## Checked
-batch delta review: diff only: the ionisation retrieval (13,6 eV; the 10,2 eV, 27,2 eV and 0 eV distractors each name one real misconception and the feedback repairs it, 10,2 = -3,40+13,6 checked), the answers.py lines, unchanged figures/formula names carried.
+batch delta review (round 1): kolme uutta pysähdy-laatikkoa; luettu kutakin edeltävä teksti ja kuvat; laatikot, joiden vastaus on jo sanatarkasti tekstissä tai kuvassa, merkitty Blocking.

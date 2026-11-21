@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9ee1c56b9a430097
+CONTENT-HASH: dd06cdbb9795d4e6
 
 ## Blocking
+(none)
 
 ## Polish
-- "niin tasainen" can be read as flat (geometry) or uniform (homogeneity). Inflation is meant to explain both, so the sentence is right either way; "tasalaatuinen" would name the homogeneity meaning exactly if that is what the writer means.
+- none
 
 ## Checked
-batch delta review: the new paragraph on cosmic inflation in lesson.md (Teoria, after the alkuräjähdys paragraph). It is called a hypothesis, put in the first fraction of a second, given its main explanatory role (large-scale uniformity) and said not to be directly observed: right, a C-level simplification that leaves no wrong picture. It does not contradict the "not an explosion from a point" text, the misconception box, the inquiry feedback or the CMB section (grep: no other inflation text in the lesson). It falls inside FY8's universe structure and evolution content. No choice, number or formula is touched.
+batch delta review: the three new pysahdy boxes, recomputed in one script (all numbers agree): no centre of expansion; recombination at ~380 000 a, few free electrons, photons travel freely; v = H₀d = 7000 km/s (law at line 447, before the box); each box placed after the theory it uses (except as noted), no guardrail break, no conflict with old content.

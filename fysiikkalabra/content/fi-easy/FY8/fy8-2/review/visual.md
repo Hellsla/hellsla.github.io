@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ff388abbd8793b02
+CONTENT-HASH: f91fa82751e0bfda
 
 ## Blocking
 
 ## Polish
+- [Minor] Kolmannen laatikon vastaus "aallonpituus on puolet pienempi" on epäselvä S2-lukijalle; ehdota: "aallonpituus on puolet niin pitkä."
+
+## Vanhan sisällön löydökset
+- Ei löydöksiä, jotka estäisivät uudet laatikot.
 
 ## Checked
-- Delta round 2: the "Kertaa: fotonin energia" prompt (Auringon spektrin punaisessa/violetissa päässä) and the paragraph cuts in lesson.md.
-- Opened fy8-2-stage-tarkista-390-1 (tarkista layout intact) and fy8-2-theory-1280-1 (paragraphs, figure beside text, formulas, captions fine).
-- Prompt wording judged from source: fluent Finnish, numbers and units in LaTeX.
+- theory-1280-1, -2, -3: kolme uutta laatikkoa (kysymys, suljettu Vastaus, LaTeX-yksiköt, ei ylivuotoa); ympäröivä asettelu ehjä.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5
