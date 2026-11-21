@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 242f88b0dc3fb46b
+CONTENT-HASH: a00c61bd6f174e6b
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- [Minor] lesson.md line 268, answer of the 500 nm box: "= 2{,}5\,\text{V}, eli noin 2{,}5\,\text{V}" repeats itself, and 1240/500 = 2,48 is an approximation. Write "\approx 2{,}5\,\text{V}" and drop ", eli noin ...".
 
 ## Vanhan sisällön löydökset
-(none seen)
+- none
 
 ## Checked
-Batch delta, round 1: opened fy8-6-theory-1280-* (crops of all three boxes at 1280 px) and the 390 px captures fy8-6-stage-selita-390-* where the three "Pysähdy ja mieti" boxes sit. At 390 px the boxes (green bar, label, question, closed "Vastaus") are readable, nothing is clipped, the maths ($10$, $n = 2$, units) renders in KaTeX. At 1280 px the box stays in the reading column beside floated figures and photos with no overlap, and is distinct from the other closed boxes. The answers (behind "Vastaus") were checked in source only; the diff adds nothing else.
+batch delta review, round 2: opened fy8-6-theory-1280-2 (500 nm box after the U_k formula; readable, layout intact, graph beside it unaffected) and fy8-6-stage-selita-390-3 (390 px theory, no overflow). Boxes 1 and 3 and answers read from source: LaTeX units, decimal comma, \cdot.

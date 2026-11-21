@@ -1,15 +1,14 @@
 VERDICT: FAIL
-CONTENT-HASH: a97fa574406645b3
+CONTENT-HASH: 16255354d1008240
 
 ## Blocking
-- Laatikko 1 (stimuloitu emissio): vastaus (kaksi fotonia, sama energia, suunta ja vaihe) on sanatarkasti edellisessä kappaleessa. Laatikko vain toistaa tekstin. Kysy esim., miksi yhdestä fotonista tulee kaksi eikä yksi pitkä aalto, tai mitä tapahtuu, jos saapuvan fotonin energia ei vastaa tasojen erotusta.
+- Laatikko 1 (stimuloitu emissio): kappale sanoo "Saapuva fotoni ei katoa. Sen viereen syntyy toinen fotoni." Vastaus on tekstissä sanasta sanaan. Kysy esim., mikä on energia ennen ja jälkeen tai miksi kahden fotonin on oltava samassa vaiheessa.
 
 ## Polish
-- Laatikko 2 (kvanttipiste): teksti sanoo suoraan, että pienennettäessä aallonpituus lyhenee. Vastaus on yhden askeleen päässä, kysy laajemmin (mitä tapahtuu 4 nm:n pisteelle?).
-- Laatikko 3 on hyvä sovellus.
+- Laatikko 2 (kvanttipisteet): kuvan data luovuttaa suunnan (suurempi piste, pidempi aallonpituus); vaadi perustelu energia-aukosta. Laatikko 3 toistaa viereisen kappaleen päättelyn.
 
 ## Vanhan sisällön löydökset
-(ei)
+- Ei muita.
 
 ## Checked
-batch delta review (round 1): kolme uutta pysähdy-laatikkoa; luettu kutakin edeltävä teksti ja kuvat; laatikot, joiden vastaus on jo sanatarkasti tekstissä tai kuvassa, merkitty Blocking.
+batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (laatikko 3 ok).

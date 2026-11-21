@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 16505e815fb04adb
+CONTENT-HASH: c50b60021804d57b
 
 ## Blocking
 (none)
 
 ## Polish
-- Box 1: the question says "repiä", the answer "törmäyksestä lähtee"; "irrotusyrityksestä" would match.
+(none)
 
 ## Checked
-batch delta review: the three new pysahdy boxes, recomputed in one script (all numbers agree): confinement: pair creation, hadrons; F_e/F_g = ke²/(Gm_p²) = 1,24·10³⁶ ≈ 10³⁶; Q < 0 decay forbidden (Q formula at line 375, before the box); each box placed after the theory it uses (except as noted), no guardrail break, no conflict with old content.
+batch delta review, round 2: every pysahdy box in the diff, numbers recomputed in one script (all agree): free fractional charge never observed, hadrons have integer charge: correct; Fe/Fg for two protons 1,24e36 ≈ 10³⁶; neutrality vs additive mass correct; "Vapaa" added to the decay box is a correct condition; no guardrail break, no conflict with old content.
+
+## Vanhan sisällön löydökset
+(none)

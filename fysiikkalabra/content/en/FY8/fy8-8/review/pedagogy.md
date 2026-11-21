@@ -1,14 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: 14cad5cefeacde51
+VERDICT: PASS
+CONTENT-HASH: 8790a6a6454470cf
 
 ## Blocking
-- Box 2 (beta minus): the figure just above says 'the atomic number increases by one and the mass number stays the same'.
+- None
 
 ## Polish
-None.
+- Boxes are all direct applications of rules stated just above (N = A - Z, beta minus, alpha). Appropriate as checks; each answer has the reason.
 
 ## Vanhan sisällön löydökset
-None.
+- None
 
 ## Checked
-batch delta review: the three new pysahdy boxes read against the paragraph, figure and aria-label before each; answerable from earlier text; the answer is a model with its reason.
+batch delta review (round 2, new pysahdy boxes): 3 boxes judged: 1 N=A-Z, 2 beta minus (Z+1, N-14), 3 alpha (234, 90).

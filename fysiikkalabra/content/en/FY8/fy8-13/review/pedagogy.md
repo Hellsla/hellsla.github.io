@@ -1,14 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 1b9ee0846820b943
+VERDICT: PASS
+CONTENT-HASH: 8bd0f21832b42151
 
 ## Blocking
-- Box 2 (radon): the paragraph just above says the decay products are solids that attach to dust and emit alpha radiation into the lungs; the answer is copied.
+- None
 
 ## Polish
-None.
+- Box 2: the conclusion (most radon is breathed out, the decay products dose the lungs) is stated in the paragraph above; the estimate adds new evidence, but ask the estimate first and state the conclusion only in the answer.
+- Box 1 and 3 are straightforward applications of D = E/m and the inverse-square law.
 
 ## Vanhan sisällön löydökset
-None.
+- None
 
 ## Checked
-batch delta review: the three new pysahdy boxes read against the paragraph, figure and aria-label before each; answerable from earlier text; the answer is a model with its reason.
+batch delta review (round 2, new pysahdy boxes): 3 boxes judged; box 2 is a good order-of-magnitude task, answerable from the decay law.

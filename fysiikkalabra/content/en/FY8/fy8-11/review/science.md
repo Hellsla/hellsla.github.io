@@ -1,11 +1,10 @@
-VERDICT: FAIL
-CONTENT-HASH: 11e733e0aaebfbed
+VERDICT: PASS
+CONTENT-HASH: 38ca62d6b5029636
 
 ## Blocking
-- B (box line 165): "no reaction can move upward" is true only when iron-56 is split or fused with heavy, equally tight nuclei. Joining iron-56 with a lighter, less tightly bound nucleus releases energy: ⁵⁶Fe + ⁴He → ⁶⁰Ni gives Q ≈ +6.3 MeV, and neutron capture gives about 7.6 MeV. Nickel-62 is also slightly more tightly bound, and line 101 itself puts the peak at "iron and nickel". Minimal fix: "No. Iron-56 is at the peak of the graph: splitting it, or joining it with another iron nucleus, gives products whose nucleons are less tightly bound, so the reaction needs energy."
 
 ## Polish
-None.
+- Line 567: "multiplied by 931.5 MeV/c^2" leaves c^2 in the unit; line 486 says "1 u = 931.5 MeV/c^2, and c^2 cancels". "because 1 u corresponds to 931.5 MeV" would match.
 
 ## Checked
-batch delta review: the three new boxes (iron-56 at the peak; 1000·0.8² = 640 and the chain dies out because k < 1; 0.050·931.5 = 46.6 ≈ 47 MeV). Recomputed, including the ⁵⁶Fe + ⁴He Q value from binding energies.
+batch delta review, round 2: the round-1 Fe-56 finding is fixed. The question now limits itself to splitting Fe-56 and Fe-56 + Fe-56. Checked from B/A: Fe-56 + Fe-56 (A = 112, about 8.5 MeV) is about 952 vs 984 MeV, so energy is needed; any split (2 x Si-28, alpha + Cr-52) also lies lower. "At the peak" vs line 101 "iron and nickel": C. k = 0.8: 1000 x 0.64 = 640, dies out. 0.050 x 931.5 = 46.6, approx 47 MeV.

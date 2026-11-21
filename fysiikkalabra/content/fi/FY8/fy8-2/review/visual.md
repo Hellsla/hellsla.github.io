@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f91fa82751e0bfda
+CONTENT-HASH: 1ceaa036463ed6d1
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] Kolmas Pysähdy ja mieti -kysymys: "ja kuinka paljon?" jää vastauksessa epätarkaksi ("puolta lyhyempi" voi lukea "puolet lyhyempi"); ehdota: "aallonpituus on puolet niin pitkä."
+- none
 
 ## Vanhan sisällön löydökset
-- Ei löydöksiä, jotka estäisivät uudet laatikot.
+- none
 
 ## Checked
-- theory-1280-1, -2, -3: kolme uutta laatikkoa (otsikko, kysymys, suljettu Vastaus; yksiköt LaTeX:ssa, desimaalipilkku, ei ylivuotoa), ympäröivä asettelu ehjä.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review, round 2: opened fy8-2-theory-1280-2 (box 2, -5,0 eV / -3,1 eV / 1,9 eV / 2,4 eV in LaTeX, closed Vastaus, placed before the Fluoresenssi figure, layout intact). Boxes 1 and 3 and all answers read from source: LaTeX units, decimal comma, full sentences.

@@ -1,14 +1,14 @@
 VERDICT: FAIL
-CONTENT-HASH: 10bcdce415b58b52
+CONTENT-HASH: e7e190ea343fd14f
 
 ## Blocking
-- Laatikko 1 (10 fotonia, näkyykö raitakuvio): vastaus on suoraan sen kuvan kohdalla, jonka alle laatikko sijoittuu. Kuvan aria-label sanoo "Kymmenen osuman jälkeen pisteet näyttävät satunnaisilta", ja kappale edellä sanoo, että yksittäisen pisteen paikkaa ei voi ennustaa ja raidat näkyvät vasta tuhansilla. Laatikko ei testaa mitään, mitä opiskelija ei jo näe. Vaihda luku esim. 200 osumaan ja kysy, mitä osumien lisääminen muuttaa, tai siirrä laatikko ennen kuvaa.
+- Laatikko 1 (osuma 201): vastaus on tekstissä kappaleen ensimmäisessä virkkeessä ("Yksittäisen pisteen paikkaa ei voi ennustaa"). Kysy esim., onko osumapaikka 200 osuman jälkeen sattumaa vai selvästi raidoilla, ja miksi.
 
 ## Polish
-- Laatikot 2 ja 3 toimivat: kaava on edellä, vastaus on soveltamista ja perustelu mukana. Laatikossa 3 voi kertoa, että punainen on pidempi aallonpituus.
+- Laatikot 2 ja 3 ovat sovelluksia kaavasta, ja vastaus perustelee jakajan roolilla. Hyvä.
 
 ## Vanhan sisällön löydökset
-(ei)
+- Ei muita.
 
 ## Checked
-batch delta review (round 1): kolme uutta pysähdy-laatikkoa; luettu kutakin edeltävä teksti ja kuvat; laatikot, joiden vastaus on jo sanatarkasti tekstissä tai kuvassa, merkitty Blocking.
+batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (laatikot 2, 3 ok).

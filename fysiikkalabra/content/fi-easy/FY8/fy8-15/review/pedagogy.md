@@ -1,15 +1,14 @@
 VERDICT: FAIL
-CONTENT-HASH: f2b941bb02e3a97a
+CONTENT-HASH: 5cbd4649568cde35
 
 ## Blocking
-- Laatikko 1 (vapaa kvarkki): vastaus on sanatarkasti edellisessä kappaleessa ("työhön kuluva energia synnyttää uusia kvarkki–antikvarkki-pareja").
-- Laatikko 2 (sähköinen vs. gravitaatio): vastaus, mukaan lukien luku 10^36, on sanatarkasti edellä. Laatikko toistaa tekstin. Kysy esim. miksi gravitaatiota ei silti voi sivuuttaa kosmisessa mittakaavassa, tai laske voimien suhde.
+- Laatikko 1 (kvarkki): kappale sanoo, että kvarkkia ei ole havaittu vapaana ja että syntyy uusia pareja; vastaus toistaa tämän.
 
 ## Polish
-- Laatikko 3 on hyvä sovellus ehdosta Q > 0.
+- Laatikko 2 ja 3 ovat hyviä. Laatikko 3 seisoo protonin hajoamisen perässä mutta sopii Q-kaavaan.
 
 ## Vanhan sisällön löydökset
-(ei)
+- Ei muita.
 
 ## Checked
-batch delta review (round 1): kolme uutta pysähdy-laatikkoa; luettu kutakin edeltävä teksti ja kuvat; laatikot, joiden vastaus on jo sanatarkasti tekstissä tai kuvassa, merkitty Blocking.
+batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (laatikot 2, 3 ok).

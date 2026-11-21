@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f5b30282046b5ef2
+CONTENT-HASH: 906f86a6797bdbcb
 
 ## Blocking
-None.
 
 ## Polish
-- Box 1 says "thousands of hits"; the buildup figure already shows fringes starting at 200 hits. Something like "many hundreds or thousands" would match the figure better.
+None.
 
 ## Checked
-batch delta review: the three new pysahdy boxes (10 hits look random and show no fringes; p = h/λ, so halving λ doubles p; N/t = P/hf, so red gives more photons at equal power). Recomputed, consistent with the theory and the figure.
+batch delta review, round 2: the changed box. 200 hits matches the buildup figure (10/200/5000). The answer, that the wave gives only the probability and a single hit stays unpredictable while the fringes sharpen with more hits, agrees with lines 982-983 and 1153.

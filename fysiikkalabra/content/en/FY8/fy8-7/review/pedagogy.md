@@ -1,15 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: d5181101137280b8
+VERDICT: PASS
+CONTENT-HASH: 77cc7cca18d726cc
 
 ## Blocking
-- Box 1 (stimulated emission): the figure just above says 'two identical photons leave in the same direction and in step', and the paragraph earlier says the same; the answer is read off.
-- Box 2 (quantum dot): the figure just above says 'the smaller the dot, the shorter the wavelength'; the answer is given.
+- None
 
 ## Polish
-- Box 3: the graph above already shows more photons at longer wavelength.
+- Box 1: the first half (photon not absorbed) is verbatim in the paragraph above; keep only the energy-source question.
+- Box 2: needs 'red has longer wavelength than green', which is an assumed fact; fine for this level.
 
 ## Vanhan sisällön löydökset
-None.
+- None
 
 ## Checked
-batch delta review: the three new pysahdy boxes read against the paragraph, figure and aria-label before each; answerable from earlier text; the answer is a model with its reason.
+batch delta review (round 2, new pysahdy boxes): 3 boxes judged: 2 (dot size) and 3 (halved N/t) are real reasoning with causes.

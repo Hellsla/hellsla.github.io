@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: d5181101137280b8
+CONTENT-HASH: 77cc7cca18d726cc
 
 ## Blocking
-None.
 
 ## Polish
 None.
 
 ## Checked
-batch delta review: the three new boxes (stimulated emission: two photons with the same energy, direction and phase; a smaller dot has a larger gap and gives bluer light, as lines 167–171 say; at constant P, doubling hf halves N/t). Each comes after the theory it uses.
+batch delta review, round 2: two changed boxes. Stimulated emission: the incoming photon is not absorbed, and the energy comes from the atom dropping E_2 to E_1. This matches line 40 and the figure labels. Quantum dot: red has a longer wavelength and a lower photon energy, so it needs a smaller gap and a larger dot. Correct, and consistent with the lesson's size-gap relation.

@@ -1,14 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 7df9b32663887473
+VERDICT: PASS
+CONTENT-HASH: 7e07fa191ab9635d
 
 ## Blocking
-- Box 1 (X-ray lungs/bone): the text a few lines above says that bone attenuates more and the air lets radiation through almost unattenuated; the answer is copied.
+- None
 
 ## Polish
-- Box 2 repeats the annihilation momentum sentence earlier in the section; acceptable as retrieval.
+- Box 1: 'thousands of directions' is in the paragraph above; the answer 'many exposures add up' also simplifies (each slice also needs many photons for a low-noise image). Add that reason.
+- Box 2: 'total momentum almost zero, opposite directions' is stated two paragraphs above; focus the box on why one photon is impossible.
 
 ## Vanhan sisällön löydökset
-None.
+- None
 
 ## Checked
-batch delta review: the three new pysahdy boxes read against the paragraph, figure and aria-label before each; answerable from earlier text; the answer is a model with its reason.
+batch delta review (round 2, new pysahdy boxes): 3 boxes judged: 3 (2+1 half-value thicknesses, 1/8) is a good application.

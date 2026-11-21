@@ -1,15 +1,14 @@
 VERDICT: FAIL
-CONTENT-HASH: fbe3fc8aa2364b89
+CONTENT-HASH: 0d89281e543536a0
 
 ## Blocking
-- Laatikko 1 (hajotus erillisiksi nukleoneiksi): vastaus on kappaleessa edellä ("Saman verran energiaa tarvitaan, jos ydin hajotetaan… sidosenergia") ja massan kasvu on sen perustelu. Laatikko toistaa tekstin.
-- Laatikko 3 (tiukemmin sidotut tuotteet): vastaus on sanatarkasti edellä: "sidosenergia kasvaa ja ero vapautuu". Kysy esim. mitä tapahtuu, kun kaksi ydintä, joiden E_B/A on lähellä rautaa, yhdistetään, ja perustele kuvaajalta.
+- Laatikko 1 (deuteroni): kappale sanoo, että ytimen massa on pienempi kuin erillisten nukleonien ja että hajottaminen vaatii saman energian. Vastaus on tekstissä. Kysy numeerinen: paljonko deuteronin massavaje on atomimassayksikköinä.
 
 ## Polish
-- Laatikko 2 on pelkkä kertolasku, mutta ok kaavan harjoituksena.
+- Laatikko 3 toistaa viereistä $0{,}001000\,\text{u}$-esimerkkiä; laatikko 4 antaa vastauksen tekstin virkkeestä, mutta vaatii luvut.
 
 ## Vanhan sisällön löydökset
-(ei)
+- Ei muita.
 
 ## Checked
-batch delta review (round 1): kolme uutta pysähdy-laatikkoa; luettu kutakin edeltävä teksti ja kuvat; laatikot, joiden vastaus on jo sanatarkasti tekstissä tai kuvassa, merkitty Blocking.
+batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (laatikot 2-4 ok).

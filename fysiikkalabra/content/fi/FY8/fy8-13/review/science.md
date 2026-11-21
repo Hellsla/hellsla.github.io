@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: dbe47d0ed867dc62
+CONTENT-HASH: 344f5bf4f95515c0
 
 ## Blocking
 (none)
 
 ## Polish
-- Box 1: "sama energia pienempään massaan vaurioittaa jokaista solua enemmän" says more than the asked dose and sits right before *Sama energia, eri haitta*; "kilogrammaa kohti absorboituu kaksinkertainen energia" suffices.
+- Radon box: the decaying fraction is ln 2 · t/T ≈ 1,0e-5, not t/T ≈ 1,5e-5; both are order 10⁻⁵, so the asked estimate stands (C).
 
 ## Checked
-batch delta review: the three new pysahdy boxes, recomputed in one script (all numbers agree): D = E/m → lighter piece 2×; radon progeny solid, deposit, α to lung cells (matches summary); inverse square 8/16 = 0,5 µSv/h; summary display-math change keeps the formula; each box placed after the theory it uses (except as noted), no guardrail break, no conflict with old content.
+batch delta review, round 2: every pysahdy box in the diff, numbers recomputed in one script (all agree): dose = E/m, the lighter piece's every kilogram gets double: correct; 3,82 d = 3,30e5 s; decay products as line 357; no guardrail break, no conflict with old content.
+
+## Vanhan sisällön löydökset
+(none)

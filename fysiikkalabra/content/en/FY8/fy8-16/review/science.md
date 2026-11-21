@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 1acdf7bf1e816980
+CONTENT-HASH: 0da99b45f4fbf09d
 
 ## Blocking
-None.
 
 ## Polish
 None.
 
 ## Checked
-batch delta review: the three new boxes (expansion has no centre; recombination makes the universe transparent, as the text around line 293 says; v = 70·100 = 7000 km/s). Recomputed.
+batch delta review, round 2: Hubble box. From A, B is at distance d and recedes at v (2d - d, 2v - v), so A sees the same v = H_0 d and we are no special centre. Correct. CMB box: before recombination free electrons scattered the photons, so the background radiation is the earliest light reaching us. Correct and consistent with the old explanation.

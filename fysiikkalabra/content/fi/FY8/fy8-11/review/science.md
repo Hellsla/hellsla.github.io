@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: da7c9eacab3aeb35
+CONTENT-HASH: 53e6381734e15ea2
 
 ## Blocking
 (none)
 
 ## Polish
-- Box 1: strictly Ni-62 has the largest BE/nucleon; the lesson's figure puts the peak at iron, so the box agrees with it (C, no change).
+- Strictly Ni-62 has the largest BE/A; line 101 says the peak is at iron and nickel and the figure puts it at Fe-56, so the box agrees (C).
 
 ## Checked
-batch delta review: the three new pysahdy boxes, recomputed in one script (all numbers agree): Fe-56 at the peak of the figure; 1000·0,8² = 640, k < 1 dies out (k defined line 345); 0,050·931,5 = 46,6 → 47 MeV; each box placed after the theory it uses (except as noted), no guardrail break, no conflict with old content.
+batch delta review, round 2: every pysahdy box in the diff, numbers recomputed in one script (all agree): the reworded question no longer asks yes/no; any split of Fe-56 (e.g. Cr-52 + He-4: 484,7 vs 492,3 MeV) and Fe-56 + Fe-56 (A = 112, BE/A ≈ 8,5 MeV) lowers the total binding energy, so energy is needed: correct; no guardrail break, no conflict with old content.
+
+## Vanhan sisällön löydökset
+(none)

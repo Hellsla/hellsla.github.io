@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 38d0b5c85e7327fc
+CONTENT-HASH: f29aab2c13ee2e8c
 
 ## Blocking
-None.
 
 ## Polish
-- Box 3: "a free particle" would match line 373 ("decay on its own") and keep the box apart from β⁺ decay inside a nucleus, which the next section describes and where a proton turns into a heavier neutron.
+None.
 
 ## Checked
-batch delta review: the three new boxes (confinement: pulling creates quark–antiquark pairs, so hadrons come out; F_e/F_g for two protons = 1.24·10³⁶; Q < 0 forbids the decay, matching lines 373–377). Recomputed.
+batch delta review, round 2: three boxes. Confinement: quarks end in hadrons with integer charge, so +2/3 e is never registered, correct. Gravity versus 10^36: bulk matter is nearly neutral, charges cancel, masses only add, so gravity dominates. Correct cause. 'Free particle' added to the decay box: the right condition for Q < 0 forbidding the decay.

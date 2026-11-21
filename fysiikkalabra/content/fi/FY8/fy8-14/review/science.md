@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5879f243ed6ada45
+CONTENT-HASH: 41af5cb53fa26fd8
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-batch delta review: the three new pysahdy boxes, recomputed in one script (all numbers agree): lungs dark / bone light matches line 178; two 511 keV photons from momentum conservation; 2+1 half-value layers → 1/8 (multiplication rule stated line 381–387, before the box); each box placed after the theory it uses (except as noted), no guardrail break, no conflict with old content.
+batch delta review, round 2: every pysahdy box in the diff, numbers recomputed in one script (all agree): CT dose: many projections whose exposures add, C at this level, consistent with the paragraph above the box; removed lungs/bone box leaves no dangling reference; (1/2)³ = 12,5 %; no guardrail break, no conflict with old content.
+
+## Vanhan sisällön löydökset
+(none)

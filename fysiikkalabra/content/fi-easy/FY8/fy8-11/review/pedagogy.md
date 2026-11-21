@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 159aee6b382f4cfd
+CONTENT-HASH: 2b5320dbc89de477
 
 ## Blocking
-(ei)
+- (ei)
 
 ## Polish
-- Laatikko 3 toistaa edellä olevan 0,1 u -esimerkin menetelmän. Käytä toisenlaista lukua tai pyydä vertailua polttoon.
-- Laatikko 1 vaatii päättelyn kuvaajan huipusta, hyvä.
+- Laatikko 1 (rauta-56) on hyvä päättelytehtävä. Laatikot 2 ja 3 ovat sijoituksia, mutta vastaukset perustelevat.
 
 ## Vanhan sisällön löydökset
-(ei)
+- Ei muita.
 
 ## Checked
-batch delta review (round 1): kolme uutta pysähdy-laatikkoa; luettu kutakin edeltävä teksti ja kuvat; laatikot, joiden vastaus on jo sanatarkasti tekstissä tai kuvassa, merkitty Blocking.
+batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (kaikki ok).

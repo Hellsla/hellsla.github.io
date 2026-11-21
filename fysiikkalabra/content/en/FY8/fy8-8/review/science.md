@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 14cad5cefeacde51
+CONTENT-HASH: 8790a6a6454470cf
 
 ## Blocking
-None.
 
 ## Polish
 None.
 
 ## Checked
-batch delta review: the three new boxes (Na-23: Z = 11, N = 12; β⁻: Z + 1 with A unchanged; U-238 α decay gives A = 234, Z = 90). They agree with the theory, the decay figure and the Q example in fy8-10.
+batch delta review, round 2: C-14 beta minus gives Z = 7, A = 14, N-14, correct and placed right after the beta-decay paragraph. The U-238 alpha box moved after the general decay equations; 238 - 4 = 234 and 92 - 2 = 90 (Th-234) are right.

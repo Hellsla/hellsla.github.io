@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1acdf7bf1e816980
+CONTENT-HASH: 0da99b45f4fbf09d
 
 ## Blocking
 (none)
@@ -7,6 +7,8 @@ CONTENT-HASH: 1acdf7bf1e816980
 ## Polish
 (none)
 
+## Vanhan sisällön löydökset
+(none)
 
 ## Checked
-batch delta review: opened fy8-16-theory-1280-* (3 new Stop and think boxes) and the 390 px fy8-16-stage-selita-390-* captures: boxes render as a green-edged card with label, question and closed Answer toggle, formulas and units in KaTeX, no clipping, layout around them intact.
+round 2 delta, new Stop and think boxes: opened fy8-16-theory-1280-2, fy8-16-stage-selita-390-4 (closed boxes sit in the reading column, green bar, label, question with LaTeX numbers and units, Answer toggle, no clipping at 1280 or 390 px, placed after the paragraph they test); answers read in lesson.md: full sentences, decimal point, units and numbers in LaTeX, colon division, `\cdot`. Boxes' open answer state is not in the captures, judged from source.

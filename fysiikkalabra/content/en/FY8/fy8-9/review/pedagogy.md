@@ -1,14 +1,14 @@
 VERDICT: FAIL
-CONTENT-HASH: d0c2d634825ae4b3
+CONTENT-HASH: c26160bc49a614b8
 
 ## Blocking
-- Box 1 (nucleus does not age): the paragraph just above says 'just as likely to decay during the next second as a newly formed one'; the answer is verbatim.
+- Box 1 ('overdue' nucleus): the paragraph above states 'a nucleus does not grow old. A nucleus that has survived without decaying for a long time is just as likely to decay during the next second as a newly formed one'; the answer repeats it. Place the box before the paragraph as a prediction, or ask a case (a nucleus survived three half-lives: probability next second?).
 
 ## Polish
-None.
+- Box 3 sits after the activity law, one paragraph away from the lambda relation it tests.
 
 ## Vanhan sisällön löydökset
-None.
+- None
 
 ## Checked
-batch delta review: the three new pysahdy boxes read against the paragraph, figure and aria-label before each; answerable from earlier text; the answer is a model with its reason.
+batch delta review (round 2, new pysahdy boxes): 3 boxes judged: 2 (three half-lives, 1000) and 3 (lambda inversely proportional to T, factor 2) are applications with reasons.

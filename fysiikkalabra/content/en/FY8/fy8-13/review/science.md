@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 1b9ee0846820b943
+CONTENT-HASH: 8bd0f21832b42151
 
 ## Blocking
-None.
 
 ## Polish
-- Box 1's answer adds "damages each cell more" to a question about dose only. Line 297 says the same, so this is consistent; "more energy per kilogram" would be the tighter statement of what the dose measures.
+- The radon fraction is t/T_1/2 = 1.5e-5; the exact one is 1 - 2^(-t/T) approx ln2 x t/T = 1.05e-5. The order 10^-5 is right either way. Optional: "about ln 2 times this".
 
 ## Checked
-batch delta review: the three new boxes (the same E over half the mass gives twice the D; radon's solid decay products deposit and Po-218 and Po-214 emit alpha, as line 357 says; inverse square 8/16 = 0.5 µSv/h, and the box follows the inverse-square section at line 492). The summary display-formula change is typography only.
+batch delta review, round 2: two changed boxes. Dose box: same energy in half the mass, twice the J/kg, correct (the former 'damages each cell more' causal claim is gone). Radon: 3.82 d = 3.30e5 s, fraction about 10^-5, so almost all radon is exhaled and the dose comes from the deposited solid progeny. Correct conclusion.

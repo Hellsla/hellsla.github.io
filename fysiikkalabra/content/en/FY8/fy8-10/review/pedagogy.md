@@ -1,14 +1,14 @@
 VERDICT: FAIL
-CONTENT-HASH: c6d438b602564302
+CONTENT-HASH: c368076189f4c670
 
 ## Blocking
-- Box 3 (more tightly bound products): the paragraph just above says the binding energy increases and the difference is released; verbatim.
+- Box 1 (deuteron versus free nucleons): the paragraph above says 'The energy, and therefore also the mass, of the resulting nucleus is smaller than that of the separate nucleons. The same energy is needed if the nucleus is broken back'; the answer is that sentence. Use a different case (energy released when two bodies bind: mass change in kg for 1 MeV is not needed) or ask for 2.2 MeV in u.
 
 ## Polish
-- Box 1: the figure above shows that energy is needed; only the mass part is new.
+- Box 2 copies the 0.001000 u example directly above with a new number; vary the unit (kg).
 
 ## Vanhan sisällön löydökset
-None.
+- None
 
 ## Checked
-batch delta review: the three new pysahdy boxes read against the paragraph, figure and aria-label before each; answerable from earlier text; the answer is a model with its reason.
+batch delta review (round 2, new pysahdy boxes): 3 boxes judged: 3 (binding sum 1800 versus 1805 MeV: 5 MeV released) is a good application.

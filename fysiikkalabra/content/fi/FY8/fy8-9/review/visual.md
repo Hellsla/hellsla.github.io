@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4abced8a850317a5
+CONTENT-HASH: e8a9b77d5a0c9f4b
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Vanhan sisällön löydökset
-(none seen)
+- none
 
 ## Checked
-Batch delta, round 1: opened fy8-9-theory-1280-* (crops of all three boxes at 1280 px) and the 390 px captures fy8-9-stage-selita-390-* where the three "Pysähdy ja mieti" boxes sit. At 390 px the boxes (green bar, label, question, closed "Vastaus") are readable, nothing is clipped, the maths ($10$, $n = 2$, units) renders in KaTeX. At 1280 px the box stays in the reading column beside floated figures and photos with no overlap, and is distinct from the other closed boxes. The answers (behind "Vastaus") were checked in source only; the diff adds nothing else.
+batch delta review, round 2: opened fy8-9-theory-1280-1 (the "myöhässä" box under the first paragraph, beside the photo; quotation marks correct, readable, layout intact). Boxes 2 and 3 and answers read from source: LaTeX, full sentences.

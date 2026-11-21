@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 11e733e0aaebfbed
+CONTENT-HASH: 38ca62d6b5029636
 
 ## Blocking
-None.
+- None
 
 ## Polish
-- Box 1: the graph above says binding is highest at iron; the student only reads it.
+- Rewritten box 1 (why iron-56 gives no energy either way) now needs the graph reasoning; good. Add 'compare with a nucleus on each side of the peak' only if wanted.
+- Box 3 copies the 0.1 u example above with a new number.
 
 ## Vanhan sisällön löydökset
-None.
+- None
 
 ## Checked
-batch delta review: the three new pysahdy boxes read against the paragraph, figure and aria-label before each; answerable from earlier text; the answer is a model with its reason.
+batch delta review (round 2, new pysahdy boxes): 3 boxes judged; box 1 answerable from the paragraph (energy released when products more tightly bound) but not stated for iron-56.

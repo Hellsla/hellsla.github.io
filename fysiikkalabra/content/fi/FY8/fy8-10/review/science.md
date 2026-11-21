@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 7bc7557880beb568
+CONTENT-HASH: 2ca0cc60b0531c42
 
 ## Blocking
 (none)
 
 ## Polish
-- Box 3 (line 310) quotes Q = (m_alku − m_loppu)c² six lines before *Reaktioenergia* introduces it; place it after that formula or answer with "massa pienenee, ero vapautuu" only.
+- Box 2: "nukleoneja on yhtä monta" suffices only with the same protons and neutrons on both sides (charge conservation gives it in a nuclear reaction without leptons); C at this level.
 
 ## Checked
-batch delta review: the three new pysahdy boxes, recomputed in one script (all numbers agree): separation needs E_B, mass grows by E_B/c² (E_B defined at line 140); 0,0020·931,5 = 1,86 → 1,9 MeV; higher BE/nucleon of products → energy released; summary display-math change is layout only, formula unchanged; each box placed after the theory it uses (except as noted), no guardrail break, no conflict with old content.
+batch delta review, round 2: every pysahdy box in the diff, numbers recomputed in one script (all agree): deuteron 2,2 MeV (2,224): free p + n heavier by 2,2 MeV/c², correct; 1805 - 1800 = 5 MeV released, mass falls 5 MeV/c², correct; no guardrail break, no conflict with old content.
+
+## Vanhan sisällön löydökset
+(none)

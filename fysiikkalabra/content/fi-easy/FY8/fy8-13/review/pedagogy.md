@@ -1,14 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: 7ab12d391385d335
+VERDICT: PASS
+CONTENT-HASH: 3c966642f467015a
 
 ## Blocking
-- Laatikko 2 (radon): vastaus on sanatarkasti kappaleessa kaksi kappaletta ylempänä ("hajoamistuotteet ovat kiinteitä… tarttuvat pölyhiukkasiin… alfasäteilyä suoraan keuhkojen soluihin"). Laatikko toistaa tekstin. Kysy esim., miksi radonin oma alfasäteily ei ole pääongelma tai miksi tuuletus auttaa.
+- (ei)
 
 ## Polish
-- Laatikko 1 on hyvä soveltaminen, mutta kappale edellä on lämmöstä. Siirrä se annoksen määritelmän jälkeen.
+- Laatikko 2 (radon): osa vastauksen johtopäätöksestä on edellisessä kappaleessa, mutta laskenta on uutta ja arvo kasvattaa ymmärrystä. Hyvä.
 
 ## Vanhan sisällön löydökset
-(ei)
+- Ei muita.
 
 ## Checked
-batch delta review (round 1): kolme uutta pysähdy-laatikkoa; luettu kutakin edeltävä teksti ja kuvat; laatikot, joiden vastaus on jo sanatarkasti tekstissä tai kuvassa, merkitty Blocking.
+batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (kaikki ok).

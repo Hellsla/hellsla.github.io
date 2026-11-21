@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e732f0ec4fbf30d4
+CONTENT-HASH: 05e017bf7b2ca8c8
 
 ## Blocking
-None.
+- None
 
 ## Polish
-- Box 2 (k/N) only substitutes the formula given directly above; a case where the student must decide which numbers are k and N would test more.
+- Box 3 (3p holds 6) is answerable only from the table and the sentence about orbitals; good, but 'three p orbitals' should be visible just above it.
 
 ## Vanhan sisällön löydökset
-None.
+- None
 
 ## Checked
-batch delta review: the three new pysahdy boxes read against the paragraph, figure and aria-label before each; answerable from earlier text; the answer is a model with its reason.
+batch delta review (round 2, new pysahdy boxes): 3 boxes judged: 1 (two nodes, n=3, energy higher), 2 (k/N=0.20), 3 (3p) are answerable from the text above and are not stated verbatim.

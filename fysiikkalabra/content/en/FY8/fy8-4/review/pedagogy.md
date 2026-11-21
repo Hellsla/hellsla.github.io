@@ -1,14 +1,14 @@
 VERDICT: FAIL
-CONTENT-HASH: f5b30282046b5ef2
+CONTENT-HASH: 906f86a6797bdbcb
 
 ## Blocking
-- Box 1 (10 photons): the figure just above shows and its label says that after 10 hits the points look random; the box answer is read off the figure.
+- Box 1 (hit number 201): the paragraph above says 'The position of a single point cannot be predicted. When thousands of points have accumulated, they form the same fringe pattern'; the answer is a restatement. Ask for the chance of hit 201 at a bright versus a dark fringe, or why 200 hits show 'just begun' fringes.
 
 ## Polish
-- Box 2 (p = h/lambda): the sentence above already says short wavelength means large momentum; ask for a different pair of values or a ratio argument.
+- Box 3 (red versus blue photons per second) is fine; consider equal-power case with wavelengths 700 and 400 nm for a numeric ratio.
 
 ## Vanhan sisällön löydökset
-None.
+- None
 
 ## Checked
-batch delta review: the three new pysahdy boxes read against the paragraph, figure and aria-label before each; answerable from earlier text; the answer is a model with its reason.
+batch delta review (round 2, new pysahdy boxes): 3 boxes judged: 2 (p = h/lambda, ratio 2) and 3 are applications with reasons.

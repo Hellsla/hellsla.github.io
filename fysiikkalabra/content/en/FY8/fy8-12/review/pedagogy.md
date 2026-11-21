@@ -1,14 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 141a2bfd141d8bbd
+VERDICT: PASS
+CONTENT-HASH: 98ad64a10c15cc2c
 
 ## Blocking
-- Box 2 (alpha vs beta): the paragraph and figure just above (dense alpha track, stops in a few cells) give the answer.
+- None
 
 ## Polish
-- Box 1: the figure above shows 12.6 eV and the visible-light range, so the data is on view.
+- Box 2: the 5.49 MeV / 34 eV = 1.6e5 figure is already in the text of the ion-pairs paragraph; change the energy so the total is new.
+- Box 1 repeats that visible light cannot ionise; fine as a closing sentence.
 
 ## Vanhan sisällön löydökset
-None.
+- None
 
 ## Checked
-batch delta review: the three new pysahdy boxes read against the paragraph, figure and aria-label before each; answerable from earlier text; the answer is a model with its reason.
+batch delta review (round 2, new pysahdy boxes): 3 boxes judged: 1 (60 keV / 12.6 eV), 2 (E/W and range), 3 (three half-value thicknesses) are applications with reasons.

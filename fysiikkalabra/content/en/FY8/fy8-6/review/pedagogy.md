@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ec1cd0b7aa948930
+CONTENT-HASH: 1a0ef7880fc2b2f4
 
 ## Blocking
-None.
+- None
 
 ## Polish
-- Box 4 (slope to h) is a plain substitution into the formula just above.
+- Box 1 follows a figure caption that already says green has more photon energy than red; the box is an ordering step only. Ask the student to estimate the gap in eV for a 520 nm LED.
+- Boxes 2 and 3 are near copies of the formula example directly above; change numbers/unit (e.g. wavelength given in the other direction).
 
 ## Vanhan sisällön löydökset
-None.
+- None
 
 ## Checked
-batch delta review: the three new pysahdy boxes read against the paragraph, figure and aria-label before each; answerable from earlier text; the answer is a model with its reason.
+batch delta review (round 2, new pysahdy boxes): 3 boxes judged; all answerable, none stated verbatim; low demand.

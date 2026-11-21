@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4163a038b40bf9bc
+CONTENT-HASH: 52d7f7c09bfad71b
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] Box 3 (energy of level n = 4) follows the spectrum figure, some distance from the formula it practises; optional to move it up under the formula.
+(none)
 
 ## Vanhan sisällön löydökset
-- none
+(none)
 
 ## Checked
-- Delta (3 new pysahdy boxes, label STOP AND THINK, Answer). Opened theory-1280-2 and stage-selita-390-3 (en): box renders correctly at 390 and 1280 px, maths $14.0\,\text{eV}$ with decimal point, no overflow, layout around figures intact. Other boxes' source read; same positions checked in the fi captures.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+round 2 delta, new Stop and think boxes: opened fy8-3-theory-1280-1, fy8-3-stage-selita-390-3 (closed boxes sit in the reading column, green bar, label, question with LaTeX numbers and units, Answer toggle, no clipping at 1280 or 390 px, placed after the paragraph they test); answers read in lesson.md: full sentences, decimal point, units and numbers in LaTeX, colon division, `\cdot`. Boxes' open answer state is not in the captures, judged from source.

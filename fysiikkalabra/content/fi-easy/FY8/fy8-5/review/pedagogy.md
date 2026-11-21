@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0a852ff97f1307dd
+CONTENT-HASH: 5362418331c41db5
 
 ## Blocking
-(ei)
+- (ei)
 
 ## Polish
-- Laatikko 3 (3p-alikuori) tulee siirtymiä käsittelevän kappaleen ja kuvan jälkeen, mutta testaa orbitaalien lukumäärää useita kappaleita ylempää. Siirrä se taulukon kohdalle.
-- Laatikko 2 on pelkkä sijoitus kaavaan P = k/N. Kysy mieluummin, miksi N:n kasvattaminen tarkentaa arviota.
-- Laatikko 1: hyvä, soveltaa n − 1 -sääntöä uuteen lukuun.
+- Laatikko 3 (3p): luvun "kolme p-orbitaalia" on tekstissä, joten tehtävä yhdistää kaksi luettua asiaa. Riittää.
+- Laatikko 2 on pelkkä $k/N$-sijoitus; kysy vaikka, miten arvio muuttuu, kun $N$ kasvaa.
 
 ## Vanhan sisällön löydökset
-(ei)
+- Ei muita.
 
 ## Checked
-batch delta review (round 1): kolme uutta pysähdy-laatikkoa; luettu kutakin edeltävä teksti ja kuvat; laatikot, joiden vastaus on jo sanatarkasti tekstissä tai kuvassa, merkitty Blocking.
+batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (laatikot ok).

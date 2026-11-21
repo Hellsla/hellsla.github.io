@@ -1,20 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: f91fa82751e0bfda
+VERDICT: FAIL
+CONTENT-HASH: 330830d58da05d72
+
 ## Blocking
-(none)
+- Box 1 (neon dark line): the paragraph directly above says 'Every dark line is at exactly the same wavelength as one of the bright emission lines of the same gas'; the answer 'Neon' is a restatement. Use a spectrum or table that must be matched, or ask which of two gases (given line lists) is in the cloud.
 
 ## Polish
-1. lesson.md:124 — Box 1 (neon) repeats the preceding paragraph and one matching line does not identify a gas (the chapter's own identify-the-gas task needs every line). Fix: ask what else to check, or for a justification.
-2. lesson.md:141 — Box 2: state the ionisation energy is higher, or say "excite", so the ionisation exception in the misconception section does not conflict.
-3. lesson.md:141 — Box 2 sits three paragraphs and a photo after the absorption explanation; place it right after that paragraph.
+- Box 2: the answer's reasoning ('-2.6 eV < 0, does not ionise') is a muddled route; say plainly: 2.4 eV is not 1.9 eV and not enough to ionise, so no absorption.
 
 ## Vanhan sisällön löydökset
-- Neon-mainoskuvan (Shinjuku) kuvateksti ei opeta: spektroskoopilla "näkisi" jotain, mutta oppilas ei saa siitä tehtävää. Kuvaan voisi liittää kysymyksen (neon: viivaspektri). Ei estä uusia laatikoita.
-- Yleinen virhekäsitys mainitsee ionisaation poikkeuksena, uusi laatikko 2 ei (ks. Polish 2); ei estä laatikkoa.
+- None
 
 ## Checked
-- Kolme uutta Pysähdy ja mieti -laatikkoa luettu ja kuvattuna (selita 390 px): vastaus kiinni (Vastaus-avaus), kysymys ennen vastausta, ei kuvaa/otsikkoa joka paljastaa vastauksen.
-- Laatikot noudattavat teorian järjestystä (absorptio, energiatilat, aallonpituus ja ero) ja vahvistavat teoriaa ilman uutta sisältöä; työmäärä kasvaa vain ~3 min.
-- Kieliversiot vastaavat suomea sisällöltään ja luvuiltaan; LaTeX-yksiköt kunnossa.
-- Vanha sisältö ei estä laatikoiden toimintaa; deterministiset tarkistukset vihreitä.
-- Hash alussa ja lopussa sama.
+batch delta review (round 2, new pysahdy boxes): 3 boxes in the lesson judged (no diff available): 1 restates; 2 sound application; 3 sound (inverse proportion, with reason).
