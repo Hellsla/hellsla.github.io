@@ -218,6 +218,12 @@ In an electromagnetic wave the electric field $\overline{E}$ and the magnetic fi
   <foreignObject x="537" y="134.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$c$</div></foreignObject>
 </svg>
 
+```pysahdy
+Radio waves and X-rays both travel in a vacuum. Which one travels faster?
+---
+They travel equally fast. All electromagnetic waves travel in a vacuum at the speed of light $c$, even though their wavelengths are very different.
+```
+
 ### Wavelength and frequency
 Like a mechanical wave, an electromagnetic wave travels one wavelength during one period. So the speed of light, the frequency of the wave and its wavelength are related:
 ```kaavat
@@ -340,6 +346,12 @@ The particles of matter are in constant thermal motion, and their charges are in
 
 <figure class="unit-photo"><img src="pics/fy7/sparkler.webp" alt="A burning sparkler against a black background; branching yellowish-white spark trails fly out from the centre in every direction."><figcaption>The sparks of a sparkler are glowing metal particles. They are much hotter than red-glowing lava, so their radiation contains plenty of shorter wavelengths and they look yellowish white.</figcaption></figure>
 
+```pysahdy
+A metal object at room temperature radiates all the time, but you cannot see it in the dark. Why not?
+---
+An object at room temperature radiates almost only infrared, which the eye cannot see. There is so little visible light that the eye notices a glow only at a temperature of about $800\,\text{K}$.
+```
+
 ### The black body
 A **black body** is an ideal body that absorbs all radiation that falls on it and reflects none. The spectrum of the radiation it emits depends only on its surface temperature, not on the material the body is made of. This radiation is called **black-body radiation**. A hot black body does not look black, because it radiates by itself. The Sun radiates approximately like a black body, as do a glowing ember and, in the infrared region, human skin. Shiny metal reflects a large part of the radiation that falls on it, and at the same temperature it also radiates less than a black body.
 
@@ -414,6 +426,12 @@ where $\lambda_\text{max}$ is the wavelength of the peak of the spectrum (m), $T
 </svg>
 
 <figure class="unit-photo"><img src="pics/fy7/submarine-lava.webp" alt="A dark blue underwater view; orange lava glows in cracks in the rock in the middle, and part of the diving equipment&#x27;s frame shows at the bottom."><figcaption>Glowing lava on the floor of the Pacific Ocean. The lava glows orange even though the water cools it. The peak of its radiation is still in the infrared, and the eye sees only the short-wavelength edge of the spectrum.</figcaption></figure>
+
+```pysahdy
+The surface temperature of a filament is $2900\,\text{K}$. At what wavelength is the peak of its radiation, and in which region of the spectrum?
+---
+By Wien's law $\lambda_\text{max} = \tfrac{2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{2900\,\text{K}} \approx 1.0\,\mu\text{m}$. The peak is in the infrared, even though the filament glows visibly.
+```
 
 ### The peak tells the temperature
 The peak of the spectrum of a body at room temperature ($300\,\text{K}$) is at about $9.7\,\mu\text{m}$, and that of human skin ($34\,{}^\circ\text{C}$, that is $307\,\text{K}$) at about $9.4\,\mu\text{m}$, deep in the infrared region. A thermal camera measures radiation at wavelengths of about $8$–$14\,\mu\text{m}$ and turns it into an image. That is why it sees a person even in the dark: the person does not need light to be visible to the camera, because the person radiates by themselves. For a body glowing dark red, at about $800\,\text{K}$, the peak is still in the infrared region, at about $3.6\,\mu\text{m}$, and the eye sees only the short-wavelength edge of the spectrum. The peak of the radiation from the Sun is at about $500\,\text{nm}$ (more precisely $502\,\text{nm}$), in the middle of visible light.

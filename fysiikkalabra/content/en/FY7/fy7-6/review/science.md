@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 19ba641822752b02
+CONTENT-HASH: 0a9b44d76a7daacf
 
 ## Blocking
-
+None.
 
 ## Polish
-- None.
+- Power block: $P = mgv$ equals the rate of internal-energy increase only when air resistance is negligible; a few words ("air resistance is negligible") would state the model's assumption.
 
 ## Checked
-batch delta review: magnet held at rest in the tube inside a coil: flux constant, e = 0; both distractors' feedback right; one correct option; Ennusta (fall times in plastic, Al, Cu, slit tube) not revealed.
+batch delta review: every new ```pysahdy block (question and answer) against the physics guardrails and the lesson's own wording; Lenz S facing S, repulsion; braking grows with speed; P = mgv ≈ 0.059 W recomputed. No option-based choices changed. Scope per teacher 2026-11-20: only the pysahdy blocks.

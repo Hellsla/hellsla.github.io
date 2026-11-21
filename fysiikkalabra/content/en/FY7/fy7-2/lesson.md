@@ -85,6 +85,12 @@ F_\text{s} &= |q|E \\
 ```
 where $|q|$ is the magnitude of the charge of the particle (C), $E$ the electric field strength (V/m), $U$ the magnitude of the accelerating voltage (V), $m$ the mass (kg) and $v$ the speed (m/s). For a positive particle, such as a proton, $|q| = q$. An electric field can set a charged particle in motion and increase its speed.
 
+```pysahdy
+A proton is accelerated from rest through a voltage $U$. The voltage is doubled. How do the proton's kinetic energy and speed change?
+---
+The kinetic energy is $|q|U$, so it doubles. Since $\tfrac{1}{2}mv^2$ doubles, the speed increases by a factor of $\sqrt{2}$, so by less than a factor of two.
+```
+
 ### A magnetic field turns a moving charge
 A magnetic field $\overline{B}$ (chapter *Magnets, the magnetic dipole and the magnetic field*) has no effect on a charge at rest. A moving charged particle is acted on by a **magnetic force**, which is perpendicular to both the velocity $\overline{v}$ of the particle and the field $\overline{B}$. The direction of the force on a positive charge is given by the **right-hand rule**: hold out your right hand so that the thumb points in the direction of the velocity and the other fingers in the direction of the field; the palm then pushes in the direction of the force. On a negative charge the force acts in the opposite direction. When the particle moves along the field, the force is zero.
 
@@ -256,6 +262,12 @@ For example, a proton flying at a speed of $1.0 \cdot 10^{6}\,\text{m/s}$ perpen
 
 <figure class="unit-photo"><img src="pics/fy7/electron-beam-circle.webp" alt="A glowing blue-green circular electron beam in a glass bulb in the dark. A measuring scale runs across the bulb, and the electron gun is at the bottom."><figcaption>An electron beam travels in a circle in a glass bulb containing helium at low pressure. The coils produce a nearly uniform magnetic field perpendicular to the beam. The electrons collide with gas atoms, which glow, so the path is visible.</figcaption></figure>
 
+```pysahdy
+A charged particle goes round a circle in a magnetic field. The magnetic force acts all the time, but the speed of the particle does not change. Why?
+---
+The force is perpendicular to the velocity at every moment, so it does no work and does not change the kinetic energy. It changes only the direction of the velocity.
+```
+
 ## Formula: Magnetic force and circular path
 The magnitude of the magnetic force on a charged particle moving in a magnetic field is
 ```kaavat
@@ -314,6 +326,12 @@ where $r$ is the radius of the circular path (m) and $m$ the mass of the particl
   <foreignObject x="278" y="47.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2f74b5">$\text{deuteron}$</div></foreignObject>
   <foreignObject x="109" y="85.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$B = 0.20\,\text{T}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+A proton goes round a circle in a magnetic field. The strength of the field is doubled, but the speed stays the same. What happens to the radius of the path?
+---
+The radius is inversely proportional to the field, $r = \tfrac{mv}{|q|B}$. When $B$ doubles, the radius is halved.
+```
 
 ## Velocity selector and mass spectrometer {Nopeusvalitsin ja massaspektrometri}
 

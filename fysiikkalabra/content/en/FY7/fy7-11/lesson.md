@@ -83,6 +83,12 @@ Refractive indices of water at $20\,{}^\circ\text{C}$: M. Daimon and A. Masumura
 
 <figure class="unit-photo"><img src="pics/fy7/prism-dispersion.webp" alt="A vertical band of light on a grey wall, its colours changing from left to right from red through yellow and green to blue."><figcaption>White light that has passed through a prism, falling on a wall. The prism refracts violet and blue light more than red, so the colours spread out into a spectrum.</figcaption></figure>
 
+```pysahdy
+White light arrives from air in crown glass. Which colour is slowed down more in the glass, red or violet, and why?
+---
+Violet is slowed down more, because its refractive index ($1.5302$) is greater than that of red ($1.5143$).
+```
+
 ### Why violet is slowed down more
 The electric field of light makes the electrons of the material oscillate at the frequency of the light. The oscillating electrons emit light themselves, which combines with the incoming light, and the combined wave travels more slowly than light in vacuum. The response of the electrons depends on frequency. In water and glass it strengthens as the frequency increases towards the ultraviolet, which the material absorbs strongly. So high-frequency violet light is slowed down more than low-frequency red, and its refractive index is greater.
 
@@ -242,6 +248,12 @@ When the sun is behind you, the sun's rays pass your head towards the **antisola
 
 A rainbow is therefore seen only when the sun shines from behind you and there are droplets ahead. On level ground only the part of the arc above the horizon is visible. If the sun is at a height $h$ above the horizon, the antisolar point is the same distance below the horizon, and the top of the red arc is at a height $42^\circ - h$. When the sun is higher than $42^\circ$, the whole arc is below the horizon and cannot be seen from the ground. That is why rainbows are seen in midsummer in the morning and evening, when the sun is low.
 
+```pysahdy
+The sun is at a height of $30^\circ$ above the horizon. How high above the horizon is the top of the red arc of the primary rainbow?
+---
+The top is at a height of $42^\circ - 30^\circ = 12^\circ$, because the antisolar point is $30^\circ$ below the horizon.
+```
+
 ### The secondary bow
 Outside the primary bow a fainter **secondary bow** is sometimes seen. In it the light is reflected twice inside the droplet, and the order of the colours is reversed: red is on the inner edge at about $50^\circ$ and violet on the outer edge at about $54^\circ$ from the direction of the antisolar point. At each reflection some of the light escapes from the droplet, so the secondary bow is fainter. The sky between the arcs is darker, because the droplets of the primary bow light only the inside of the arc and those of the secondary bow only the outside.
 
@@ -304,6 +316,12 @@ where $\alpha_1$ is the angle of incidence and $\alpha_2$ the angle of refractio
   <foreignObject x="159" y="81" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{violet}$</span></div></foreignObject>
   <foreignObject x="399" y="204" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{red}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+The refractive index of red light in water is $1.3315$. How fast does red light travel in water?
+---
+The speed is $v = c : n = 3.00 \cdot 10^8\,\text{m/s} : 1.3315 \approx 2.25 \cdot 10^8\,\text{m/s}$.
+```
 
 ### The angle of deviation of a prism
 In a prism the ray is refracted twice, and the angles depend on each other:

@@ -125,6 +125,12 @@ When light passes through a narrow slit, it does not continue as a sharp beam bu
   <foreignObject x="30" y="203.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{narrow slit}$</span></div></foreignObject>
 </svg>
 
+```pysahdy
+A laser beam passes through a slit, and a bright central region forms on the screen. The slit width is halved. How does the width of the central region change, and why?
+---
+The central region widens. A narrower slit bends light more strongly, so the light spreads over a wider region.
+```
+
 ### Young's double-slit experiment
 At the beginning of the 19th century Thomas Young carried out an experiment that showed light to be a wave motion. He directed the same light at two narrow slits close together. Because of diffraction, the light spreads widely from each slit, and the waves from the slits overlap. Because the light at both slits comes from the same wavefront, the slits act as coherent sources. Evenly spaced bright and dark fringes form on the screen. In the middle there is a bright fringe, because the distance from each slit to that point is equal. In the next bright fringe the path difference is one wavelength. The dark fringes are the hallmark of interference: they receive less light from the two slits together than from either slit alone.
 
@@ -869,6 +875,12 @@ The longer the wavelength, the larger the path difference and therefore the larg
   <foreignObject x="515.5" y="295.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$k = 3$</div></foreignObject>
 </svg>
 
+```pysahdy
+White light hits a grating. Which deviates more from the central maximum, red light ($650\,\text{nm}$) or blue light ($450\,\text{nm}$)? Explain.
+---
+Red deviates more. The condition for a maximum is $d\sin\theta = k\lambda$, so in the same order a longer wavelength needs a larger path difference and therefore a larger angle.
+```
+
 <figure class="unit-photo"><img src="pics/fy7/laser-diffraction.webp" alt="A green pattern in the dark: on the right a grid of bright green spots on a pale surface, and on the left a fainter grid of spots."><figcaption>A diffraction pattern of green laser light. The light has passed through a fine structure that repeats in two directions, so the bright spots form a grid. Each spot is a direction in which the waves reinforce each other.</figcaption></figure>
 
 ### A CD as a reflection grating
@@ -916,6 +928,12 @@ where $d$ is the grating spacing ($\text{m}$), $\theta$ the direction of the max
   <foreignObject x="142.5" y="323.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{grating}$</div></foreignObject>
   <foreignObject x="380" y="315.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{towards the screen}$</div></foreignObject>
 </svg>
+
+```pysahdy
+A grating has a grating spacing of $2.00\,\mu\text{m}$ and the wavelength of the light is $500\,\text{nm}$. At what angle is the first-order maximum?
+---
+From the grating equation $\sin\theta = \tfrac{k\lambda}{d} = \tfrac{1 \cdot 0.500\,\mu\text{m}}{2.00\,\mu\text{m}} = 0.250$, so $\theta = 14.5^\circ$.
+```
 
 ### Grating spacing from the line density
 The manufacturer of a grating usually states how many lines the grating has per millimetre. If there are $N$ lines per millimetre, the distance between adjacent lines is

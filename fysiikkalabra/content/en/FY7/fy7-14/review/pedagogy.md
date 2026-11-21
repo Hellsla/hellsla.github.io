@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: f8678b268c4d5d97
-
+CONTENT-HASH: 51ee79e19a031f55
 ## Blocking
-
 (none)
-
+## Vanhan sisällön löydökset
+(none)
 ## Polish
-
-the opening sentence already names adding and cancelling as the source of the colours, which gives away a little of the Teoria; consider cutting it.
-
+(none)
+## Notes
+The worked line now cites 2nd = (k + 1/2) lambda with k = 0, which is the condition given in the lesson's formula block; the earlier 2nd = lambda/2 was a special case without a name. Arithmetic 2*1.33*125 = 332.5, lambda = 665 nm correct.
 ## Checked
-
-batch delta review (round 2): The retrieval (975 nm = 1,5 wavelengths, red laser) retrieves interference and is tied to the soap film; the model is not given, and Ennusta (a 20 nm film) is not disclosed.
+batch delta review, round 2: Checked: pysahdy block against the formula block and the coating example.

@@ -85,6 +85,12 @@ F_\text{s} &= |q|E \\
 ```
 missä $|q|$ on hiukkasen varauksen suuruus (C), $E$ sähkökentän voimakkuus (V/m), $U$ kiihdyttävän jännitteen suuruus (V), $m$ massa (kg) ja $v$ vauhti (m/s). Positiivisella hiukkasella, kuten protonilla, $|q| = q$. Sähkökentällä varattu hiukkanen saadaan liikkeelle ja sen vauhtia kasvatettua.
 
+```pysahdy
+Protoni kiihdytetään levosta jännitteellä $U$. Jännite kaksinkertaistetaan. Miten protonin liike-energia ja vauhti muuttuvat?
+---
+Liike-energia on $|q|U$, joten se kaksinkertaistuu. Koska $\tfrac{1}{2}mv^2$ kaksinkertaistuu, vauhti kasvaa kertoimella $\sqrt{2}$, eli vähemmän kuin kaksinkertaiseksi.
+```
+
 ### Magneettikenttä kääntää liikkuvaa varausta
 Magneettikenttä $\overline{B}$ (luku *Magneetit, magneettinen dipoli ja magneettikenttä*) ei vaikuta levossa olevaan varaukseen. Liikkuvaan varattuun hiukkaseen se vaikuttaa **magneettisella voimalla**, joka on kohtisuorassa sekä hiukkasen nopeutta $\overline{v}$ että kenttää $\overline{B}$ vastaan. Voiman suunnan positiiviselle varaukselle antaa **oikean käden sääntö**: ojenna oikea käsi niin, että peukalo osoittaa nopeuden suuntaan ja muut sormet kentän suuntaan; kämmen työntää silloin voiman suuntaan. Negatiiviseen varaukseen voima vaikuttaa vastakkaiseen suuntaan. Kun hiukkanen liikkuu kentän suuntaisesti, voima on nolla.
 
@@ -256,6 +262,12 @@ Esimerkiksi protoniin, joka lentää vauhdilla $1{,}0 \cdot 10^{6}\,\text{m/s}$ 
 
 <figure class="unit-photo"><img src="pics/fy7/electron-beam-circle.webp" alt="Pimeässä lasipallossa hehkuu sinivihreä ympyränmuotoinen elektronisuihku. Pallon poikki kulkee mitta-asteikko, ja alhaalla on elektronitykki."><figcaption>Elektronisuihku kulkee ympyrää lasipallossa, jossa on harvaa heliumkaasua. Käämit tuottavat lähes homogeenisen magneettikentän, joka on kohtisuorassa suihkua vastaan. Elektronit törmäävät kaasun atomeihin, jotka hehkuvat, joten rata näkyy.</figcaption></figure>
 
+```pysahdy
+Varattu hiukkanen kiertää magneettikentässä ympyrää. Magneettinen voima vaikuttaa koko ajan, mutta hiukkasen vauhti ei muutu. Miksi?
+---
+Voima on joka hetki kohtisuorassa nopeutta vastaan, joten se ei tee työtä eikä muuta liike-energiaa. Se muuttaa vain nopeuden suuntaa.
+```
+
 ## Kaava: Magneettinen voima ja ympyrärata
 Magneettikentässä liikkuvaan varattuun hiukkaseen vaikuttavan magneettisen voiman suuruus on
 ```kaavat
@@ -314,6 +326,12 @@ missä $r$ on ympyräradan säde (m) ja $m$ hiukkasen massa (kg). Säde on suora
   <foreignObject x="278" y="47.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2f74b5">$\text{deuteroni}$</div></foreignObject>
   <foreignObject x="109" y="85.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$B = 0{,}20\,\text{T}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Protoni kiertää magneettikentässä ympyrää. Kentän voimakkuus kaksinkertaistetaan, mutta vauhti pysyy samana. Mitä tapahtuu radan säteelle?
+---
+Säde on kääntäen verrannollinen kenttään, $r = \tfrac{mv}{|q|B}$. Kun $B$ kaksinkertaistuu, säde puolittuu.
+```
 
 ## Nopeusvalitsin ja massaspektrometri
 

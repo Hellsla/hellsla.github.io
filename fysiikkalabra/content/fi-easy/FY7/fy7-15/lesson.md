@@ -254,6 +254,12 @@ Ihanteellinen polarisaattori päästää läpi puolet polarisoimattoman valon in
   <foreignObject x="474" y="289.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\tfrac{1}{2} I_0$</div></foreignObject>
 </svg>
 
+```pysahdy
+Polarisoimattoman valon intensiteetti on $600\,\text{W/m}^2$. Valo tulee ihanteelliseen polarisaattoriin. Kuinka suuri intensiteetti on kalvon jälkeen? Mihin suuntaan läpi tullut valo värähtelee?
+---
+Ihanteellinen polarisaattori päästää läpi puolet intensiteetistä. Intensiteetti on siis $\tfrac{1}{2} \cdot 600\,\text{W/m}^2 = 300\,\text{W/m}^2$. Läpi tullut valo värähtelee kalvon läpäisysuunnassa.
+```
+
 ### Kaksi polarisaattoria
 Toista polarisaattoria, johon tulee jo polarisoitunutta valoa, sanotaan **analysaattoriksi**. Jos analysaattorin läpäisysuunta on sama kuin valon polarisaatiosuunta, kaikki valo pääsee läpi. Kun analysaattoria kierretään, läpi tulevan valon intensiteetti pienenee.
 
@@ -407,6 +413,12 @@ Tavallinen tumma lasi himmentää kaikkea valoa samassa suhteessa. Häikäisy j�
   <line x1="462" y1="50" x2="444" y2="82" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
+```pysahdy
+Kalastaja katsoo järveä polaroiduilla aurinkolaseilla. Lasien läpäisysuunta on pystysuora, ja häikäisy on poissa. Kalastaja kallistaa päänsä sivulle, ja lasit kääntyvät $90^\circ$. Mitä häikäisylle tapahtuu? Miksi?
+---
+Häikäisy tulee takaisin. Lasien läpäisysuunta on nyt vaakasuora. Heijastuneen valon vaakasuuntainen värähtely pääsee siksi läpi.
+```
+
 ### Näytöt ja 3D-elokuvat
 Nestekidenäytön jokaisen kuvapisteen takana ja edessä on polarisaattorikalvo. Niiden välissä oleva nestekide voi kääntää valon polarisaatiosuuntaa. Kuvapisteen jännite säätää, kuinka paljon suunta kääntyy. Näin kuvapisteen läpi pääsevän valon määrä muuttuu ilman liikkuvia osia.
 
@@ -502,6 +514,12 @@ Kuvaajasta näkyy, että intensiteetti pienenee aluksi hitaasti ja vasta sitten 
   <line x1="92" y1="232.5" x2="229.5" y2="232.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <circle cx="229.5" cy="232.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
 </svg>
+
+```pysahdy
+Polarisoituneen valon intensiteetti on $200\,\text{W/m}^2$. Analysaattorin läpäisysuunta on $60^\circ$:n kulmassa valon polarisaatiosuuntaan nähden. Kuinka suuri intensiteetti on analysaattorin jälkeen?
+---
+Malusin lain mukaan $I = I_0 \cos^2\theta = 200\,\text{W/m}^2 \cdot \cos^2 60^\circ = 200\,\text{W/m}^2 \cdot 0{,}25 = 50\,\text{W/m}^2$.
+```
 
 ### Malusin lain tutkiminen mittaamalla
 Malusin lakia voi tutkia esimerkiksi puhelimen näytöllä, jonka valo on polarisoitunutta. Näytön eteen asetetaan polarisaattorikalvo ja sen taakse valoanturi. Kalvoa kierretään esimerkiksi $15^\circ$:n välein, ja kulma ja anturin lukema kirjataan.

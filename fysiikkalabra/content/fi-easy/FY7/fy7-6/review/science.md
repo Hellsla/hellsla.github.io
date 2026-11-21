@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e613916eb837e804
+CONTENT-HASH: 4a0f315ad7908358
 
 ## Blocking
 
+
 ## Polish
 
+
 ## Checked
-batch delta review: the changed prompt (magnet held at rest in the coil around the copper pipe) keeps zero emf as the one correct answer, and the unchanged feedback still fits; does not reveal Ennusta (fall times in the pipes, slit pipe).
+batch delta review: fy7-6: S-napa kohti rengasta → renkaan puoli S, jarruvoima kasvaa vauhdin kanssa, P = mgv ≈ 0,059 W laskettu uudelleen (sama oletus kuin luvun esimerkissä). Scope: only the new pysahdy blocks (teacher 2026-11-20).

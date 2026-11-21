@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 9e67b6ab8a650b06
-
+CONTENT-HASH: 9c9336bb9e946c7e
 ## Blocking
 
 ## Polish
 
+
 ## Checked
-batch delta, round 1: fy7-9-stage-herata-390 (Pohdinta with the changed retrieval box); diff text and maths read, typography consistent.
+batch delta review, round 2: no new pysahdy block in this lesson (the diff is a wording change); read the diff for notation and Finnish, ran check_layout.py at 360 px (fi, en, fi-easy): OK. Old content not judged (scope note 2026-11-20); no Vanhan sisällön löydökset.

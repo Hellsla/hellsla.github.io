@@ -246,6 +246,12 @@ A **polariser** is a film or filter that has a **transmission axis**. An ordinar
   <foreignObject x="474" y="289.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\tfrac{1}{2} I_0$</div></foreignObject>
 </svg>
 
+```pysahdy
+The intensity of unpolarised light is $600\,\text{W/m}^2$. The light arrives at an ideal polariser. What is the intensity after the film, and in which direction is the light that passes through polarised?
+---
+An ideal polariser lets through half of the intensity, so the intensity is $\tfrac{1}{2} \cdot 600\,\text{W/m}^2 = 300\,\text{W/m}^2$. The light that passes through is polarised along the transmission axis of the film.
+```
+
 ### Two polarisers
 When a second polariser is placed in the path of polarised light, it is called an **analyser**. If the transmission axis of the analyser is the same as the direction of polarisation of the light, all of the light passes through. As the analyser is turned, the intensity of the transmitted light decreases. When the transmission axes are perpendicular to each other, that is, when the polarisers are crossed, no light passes through ideal films at all. Two polarising films can therefore be used to find out whether light is polarised and in which direction: when the light is polarised, its brightness changes as the film is turned. The brightness of unpolarised light does not change as the film is turned. If a third film is placed at a slant between crossed polarisers, light passes through again, because after the middle film the light has a component along the transmission axis of the last film too.
 
@@ -393,6 +399,12 @@ The lenses of **polarised sunglasses** contain a polarising film whose transmiss
   <line x1="462" y1="50" x2="444" y2="82" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
+```pysahdy
+A fisher looks at a lake through polarised sunglasses whose transmission axis is vertical, and the glare is gone. The fisher tilts the head sideways so that the glasses turn by $90^\circ$. What happens to the glare, and why?
+---
+The glare returns. The transmission axis of the glasses is now horizontal, so the horizontal oscillation of the reflected light passes through.
+```
+
 ### Displays and 3D films
 Behind and in front of every pixel of a liquid crystal display there is a polarising film. The liquid crystal between them can turn the direction of polarisation of the light, and the voltage of the pixel controls by how much. In this way the amount of light passing through a pixel changes without any moving parts. The surface of many phone displays also has a polarising film, so the light of the display is polarised. That is why the display can look black through polarised sunglasses when the display or your head is turned. In a 3D film two images are projected onto the screen at the same time, and their light is polarised in different ways. Each lens of the glasses lets through the light of only one of the images, so each eye sees its own image. Circular polarisation, in which the direction of the electric field rotates, is often used so that the image is not spoiled when the viewer tilts their head.
 
@@ -478,6 +490,12 @@ where $I_0$ is the intensity of the polarised light arriving at the analyser ($\
   <line x1="92" y1="232.5" x2="229.5" y2="232.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <circle cx="229.5" cy="232.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
 </svg>
+
+```pysahdy
+The intensity of polarised light is $200\,\text{W/m}^2$, and the transmission axis of an analyser is at an angle of $60^\circ$ to the direction of polarisation of the light. What is the intensity after the analyser?
+---
+By Malus's law $I = I_0 \cos^2\theta = 200\,\text{W/m}^2 \cdot \cos^2 60^\circ = 200\,\text{W/m}^2 \cdot 0.25 = 50\,\text{W/m}^2$.
+```
 
 ### Investigating Malus's law by measuring
 Malus's law can be investigated, for example, with a phone display, whose light is polarised. A polarising film is placed in front of the display and a light sensor behind the film. The film is turned in steps of, for example, $15^\circ$, and the angle and the reading of the sensor are recorded. When the readings are plotted as a function of $\cos^2\theta$, the points should lie on a straight line. The sensor measures illuminance $E$ in lux ($\text{lx}$), which is proportional to the intensity of the light. The background light of the room raises all readings by the same amount, so the line does not pass through the origin. The constant term of the line is the share of the background light, and the gradient is the reading that the polarised light of the display alone gives when the film is aligned with the polarisation of the display. The uncertainty of the angle $\Delta\theta$ is of the order of a few degrees, because the transmission axis of the film is not known accurately. In real sets of measurements the data points do not usually lie exactly on one line because of measurement uncertainty.

@@ -85,6 +85,12 @@ Veden taitekertoimet lämpötilassa $20\,{}^\circ\text{C}$: M. Daimon ja A. Masu
 
 <figure class="unit-photo"><img src="pics/fy7/prism-dispersion.webp" alt="Seinällä on valojuova, jossa on sateenkaaren värit."><figcaption>Valkoinen valo on kulkenut prisman läpi. Prisma taittaa sinistä valoa enemmän kuin punaista. Siksi värit erottuvat toisistaan.</figcaption></figure>
 
+```pysahdy
+Valkoinen valo tulee ilmasta kruunulasiin. Kumpi väri hidastuu lasissa enemmän, punainen vai violetti? Miksi?
+---
+Violetti hidastuu enemmän. Sen taitekerroin ($1{,}5302$) on suurempi kuin punaisen ($1{,}5143$).
+```
+
 ### Miksi violetti hidastuu enemmän
 Valo on aaltoa, jossa sähkökenttä värähtelee. Valon sähkökenttä saa aineen elektronit värähtelemään valon taajuudella. Värähtelevät elektronit lähettävät itse valoa. Tämä valo yhdistyy tulevaan valoon, ja yhdistynyt aalto etenee hitaammin kuin valo tyhjiössä.
 
@@ -254,6 +260,12 @@ Sateenkaari näkyy siis vain, kun aurinko paistaa selän takaa ja edessä on pis
 
 Kun aurinko on yli $42^\circ$:n korkeudella, koko kaari jää horisontin alapuolelle. Silloin sitä ei näe maan pinnalta. Siksi sateenkaaria näkyy keskikesällä aamuin ja illoin, kun aurinko on matalalla.
 
+```pysahdy
+Aurinko on $30^\circ$:n korkeudella horisontista. Kuinka korkealla horisontista punaisen kaaren huippu on?
+---
+Huippu on korkeudella $42^\circ - 30^\circ = 12^\circ$. Vastapiste on nimittäin $30^\circ$ horisontin alapuolella.
+```
+
 ### Sivukaari
 Pääkaaren ulkopuolella näkyy joskus himmeämpi **sivukaari**. Siinä valo heijastuu pisaran sisällä kahdesti. Värien järjestys on päinvastainen: punainen on sisäreunalla noin $50^\circ$:n kulmassa ja violetti ulkoreunalla noin $54^\circ$:n kulmassa vastapisteen suunnasta.
 
@@ -320,6 +332,12 @@ Valon nopeus aineessa on $v = c : n(\lambda)$, missä $c = 3{,}00 \cdot 10^8\,\t
   <foreignObject x="159" y="81" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{violetti}$</span></div></foreignObject>
   <foreignObject x="367.5" y="204" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{punainen}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Punaisen valon taitekerroin vedessä on $1{,}3315$. Kuinka nopeasti punainen valo etenee vedessä?
+---
+Nopeus on $v = c : n = 3{,}00 \cdot 10^8\,\text{m/s} : 1{,}3315 \approx 2{,}25 \cdot 10^8\,\text{m/s}$.
+```
 
 ### Prisman poikkeamakulma
 Prismassa säde taittuu kahdesti, ja kulmat riippuvat toisistaan:

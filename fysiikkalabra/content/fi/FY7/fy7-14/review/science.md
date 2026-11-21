@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: abb1a90e48c8092a
+CONTENT-HASH: bcc465e70eb033bf
 
 ## Blocking
 
 ## Polish
-- lesson.md:357 — the summary bullet now says "Heijastuksen estävässä pinnoitteessa" while the glossary term is "heijastuksenestopinnoite"; same meaning, no physics issue (language only, C).
+
 
 ## Checked
-- Delta round 2: only the Tiivistelmä bullet's opening words changed; the physics is unchanged: two phase inversions on a coating, thinnest destructive coating d = λ : (4n), MgF2 99,6 nm for 550 nm (550 / (4 · 1,38) = 99,6 nm).
-- The new wording names the same object as the theory and the glossary; no contradiction with the soap-film bullet (one inversion) or the rest of the summary.
-- Rest of the lesson carried from the round-1 PASS (hash 5604a79006b73b70); no numbers, symbols or inquiry content touched.
+batch delta review: round 2, pysahdy answer now names the condition 2nd = (k + 1/2)λ with k = 0 (one phase reversal for a soap film in air, as the theory and summary say); 2·1,33·125 nm = 332,5 nm, λ = 665 nm, red; recomputed, correct.
+
+## Vanhan sisällön löydökset
+Ei löydöksiä.

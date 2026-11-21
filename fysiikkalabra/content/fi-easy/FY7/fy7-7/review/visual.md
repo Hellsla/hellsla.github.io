@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 92aa53d46add51e9
+CONTENT-HASH: b13dfacc85c8f72c
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- batch delta review, round 3: fresh 360 px render of the opened Pohdinta retrieval task (wrong-answer feedback) and fy7-7-stage-herata-390; rows aligned, nothing clipped, no overflow.
+- batch delta review (round 2): fy7-7 (fi-easy) built page, every "Pysähdy ja mieti" block rendered with the answer open and photographed at 360 px (examined for the long chains) and measured at 360 and 1280 px: label, question, Vastaus summary, KaTeX (no red source, no clipped formula, no overflow), decimal comma, units, answer chains laid out as rows; check_layout.py clean at 360/390/1280. The round 1 clip in fy7-1 block 3 is fixed by the shared component. Listed older captures not reopened (unchanged old content). Vanhan sisällön löydökset: none.

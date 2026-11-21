@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f878166e52440ab7
+CONTENT-HASH: 779f0fcecc5af25f
 
 ## Blocking
 
 ## Polish
+- Question and answer blocks render cleanly (label, question, "Answer" summary); no red KaTeX source.
 
 ## Checked
-- batch delta review: opened fy7-13-stage-herata-390.png (Pohdinta with the changed optional retrieval task, collapsed in the capture); layout intact; changed wording (slits, foil) read from the diff, fluent; no figures changed; the opened card itself was not captured.
+- batch delta review: read the three new "Stop and think" blocks in the diff, checked the rebuilt page (3 blocks, no katex-error), ran check_layout at 360 px on the English page: OK; hash unchanged at start and end.

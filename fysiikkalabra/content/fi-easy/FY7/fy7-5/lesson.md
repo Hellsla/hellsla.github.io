@@ -200,6 +200,12 @@ Luvussa *Virtajohtimen ja käämin magneettikenttä* sähkövirta synnytti magne
 ### Muutos synnyttää jännitteen
 Ilmiötä sanotaan **sähkömagneettiseksi induktioksi**. Käämin päiden välille syntyvää jännitettä sanotaan **induktiojännitteeksi**. Kun käämin päät yhdistetään johtimella tai lampulla, piirissä kulkee induktiovirta. Faradayn kokeissa oli aina sama asia: käämin läpi kulkeva magneettikenttä **muuttuu**. Paikallaan oleva käämi voimakkaassa mutta muuttumattomassa kentässä ei saa jännitettä. Muutos voi syntyä monella tavalla. Magneetti tai käämi voi liikkua. Käämi voi kääntyä kentässä. Silmukan pinta-ala voi muuttua. Viereisen sähkömagneetin virran voi myös kytkeä päälle tai pois. Polkupyörän napadynamossa rengasmagneetti pyörii navan mukana kiinteiden käämien ympäri. Magneetti pyörii siis käämien suhteen, kun pyörä pyörii. Kun pyörä seisoo, mikään ei muutu, eikä lamppu pala.
 
+```pysahdy
+Käämi on voimakkaassa mutta muuttumattomassa magneettikentässä. Käämiä käännetään vähitellen niin, että sen taso on lopuksi kentän suuntainen. Syntyykö käämiin jännite?
+---
+Kyllä. Kun käämi kääntyy, sen läpi kulkeva magneettivuo muuttuu. Muutos synnyttää jännitteen.
+```
+
 ### Magneettivuo
 Muutoksen suuruutta mitataan **magneettivuolla**. Magneettivuo kertoo, kuinka paljon magneettikenttää kulkee silmukan läpi. Kenttä on homogeeninen, kun se on joka paikassa yhtä voimakas ja samansuuntainen. Oletetaan, että homogeeninen kenttä on kohtisuorassa silmukan tasoa vastaan. Silloin magneettivuo on
 ```kaavat
@@ -270,6 +276,12 @@ käämiin indusoituva jännite :: e_\text{ka} = -N\frac{\Delta\Phi}{\Delta t}
 Kaavassa $e_\text{ka}$ on keskimääräinen induktiojännite (V) ja $N$ on käämin kierrosten lukumäärä. Suure $\Delta\Phi$ on yhden kierroksen läpi kulkevan magneettivuon muutos (Wb). Suure $\Delta t$ on aika (s), jonka kuluessa muutos tapahtuu. Kierrokset ovat sarjassa, joten jokainen kierros lisää jännitteeseen yhtä paljon. Yksiköt sopivat yhteen: $1\,\tfrac{\text{Wb}}{\text{s}} = 1\,\text{V}$. Miinusmerkki kertoo induktiojännitteen suunnan. Jännite vastustaa muutosta, joka sen synnyttää. Suuntaa käsitellään luvussa *Lenzin laki ja pyörrevirrat*. Jännitteen suuruus lasketaan yhtälöstä $|e_\text{ka}| = N \cdot |\Delta\Phi| : \Delta t$. Suuruus on aina positiivinen, myös silloin, kun vuo pienenee.
 
 Jos vuo muuttuu tasaisella nopeudella, induktiojännite on koko aikavälin vakio. Se on yhtä suuri kuin keskiarvonsa, ja silloin merkitään lyhyesti $e$. Jos vuo muuttuu epätasaisesti, jännitteen hetkellinen arvo riippuu siitä, kuinka nopeasti vuo muuttuu juuri sillä hetkellä: $e(t) = -N\,\tfrac{\mathrm{d}\Phi}{\mathrm{d}t}$.
+
+```pysahdy
+Käämissä on $200$ kierrosta. Käämiä liikutetaan magneettikentässä. Sen yhden kierroksen läpi kulkeva magneettivuo muuttuu tasaisesti arvosta $0{,}030\,\text{Wb}$ arvoon $0{,}010\,\text{Wb}$ ajassa $0{,}50\,\text{s}$. Kuinka suuri on induktiojännitteen suuruus?
+---
+Vuon muutos yhden kierroksen läpi on $0{,}020\,\text{Wb}$. Jännite on $|e| = 200 \cdot 0{,}020\,\text{Wb} : 0{,}50\,\text{s} = 8{,}0\,\text{V}$.
+```
 
 ### Vuon kuvaaja ja jännite
 Osamäärä $\Delta\Phi : \Delta t$ on vuon kuvaajan $(t, \Phi)$ kulmakerroin. Kulmakerroin kertoo, kuinka jyrkästi kuvaaja nousee tai laskee. Jos kuvaaja on kaareva, hetkellinen muutosnopeus on kuvaajan tangentin kulmakerroin. Induktiojännite ei siis riipu siitä, kuinka suuri vuo on. Se riippuu siitä, kuinka jyrkästi vuo muuttuu. Alla kymmenen kierroksen käämi kulkee tasaisella vauhdilla magneettikentän alueen läpi. Kun käämi tulee kenttään, vuo kasvaa tasaisesti ja jännite on vakio. Kun käämi on kokonaan kentän sisällä, vuo on suurimmillaan mutta ei muutu. Silloin jännite on nolla. Kun käämi lähtee kentästä, vuo pienenee. Silloin jännite on yhtä suuri mutta vastakkaismerkkinen.
@@ -430,6 +442,12 @@ Kaavassa $v$ on tangon nopeus (m/s), $B$ on magneettivuon tiheys (T) ja $l$ on k
   <line x1="540" y1="264" x2="556" y2="264" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="562" y="165.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$l$</div></foreignObject>
 </svg>
+
+```pysahdy
+Tanko liukuu vauhdilla $2{,}0\,\text{m/s}$ kohtisuoraan kenttää $0{,}50\,\text{T}$ vastaan. Kentässä olevan tangon pituus on $0{,}30\,\text{m}$. Kuinka suuri jännite tangon päiden välille syntyy?
+---
+Nopeus, tanko ja kenttä ovat kohtisuorassa. Siksi $e = vBl = 2{,}0\,\text{m/s} \cdot 0{,}50\,\text{T} \cdot 0{,}30\,\text{m} = 0{,}30\,\text{V}$.
+```
 
 Saman tuloksen saa myös induktiolaista. Tanko liukuu kiskoilla. Kiskojen ja tangon rajaaman silmukan pinta-ala kasvaa ajassa $\Delta t$ määrällä $\Delta A = l \cdot v\Delta t$. Siksi vuo kasvaa määrällä $\Delta\Phi = Bl \cdot v\Delta t$. Jännitteen suuruus on $\Delta\Phi : \Delta t = vBl$. Kun kiskojen päät yhdistetään vastuksella, piirissä kulkee virta. Magneettikenttä kohdistaa virtaa kuljettavaan tankoon voiman $F = IlB$, kuten luvussa *Voima virtajohtimeen: sähkömoottori ja kaiutin*. Tämän voiman suuntaa ja energian säilymistä tutkitaan luvussa *Lenzin laki ja pyörrevirrat*.
 

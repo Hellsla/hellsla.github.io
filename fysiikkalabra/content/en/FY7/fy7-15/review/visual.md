@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e83e577c133aa895
-
+CONTENT-HASH: 9ace94216814e81f
 ## Blocking
-- none
-
+(none)
 ## Polish
-- [Minor] inquiry.json:411 — in the quoted chain the pieces after the first begin with `=` without its left relation space (`· 0.25= 50 W/m²` at 1280 px); readable, `${} = …$` would even it out.
-
+(none)
+## Vanhan sisällön löydökset
+(none found in the captures; old content is untouched by this change)
 ## Checked
-- batch delta review: queue 5d reflow, round 2. Page rebuilt (build.py fy7-15) and every changed formula of inquiry.json captured from preview/en/fy7-15.html at 360, 390 and 1280 px with every box, hint, solution and choice feedback forced open; the 390 and 1280 px sheets were read at full size. The quoted Malus chain is inline, three adjacent formulas that wrap at the relations at 360 and 390 px, quotation marks on the text lines; gradient and I2 blocks are two aligned rows. Measured at all three widths: no formula wider than its box, no page overflow, no KaTeX error, no raw LaTeX, no lone punctuation line (the closing full stop or comma is set inside the block). Source compared with main: the same tokens in the same order; every new row starts with a relation, a sign or between whole quantities. Hash identical at the end. Figures were not re-judged.
+batch delta review: the new "Stop and think" blocks (```pysahdy) rendered at 390 px with the answer open (aside, question, Answer summary, answer text and aligned calculation rows): no clipping or horizontal overflow (page scrollWidth 390), maths in KaTeX with units upright and a thin space, decimal point and \cdot/colon notation as the English text uses, fluent wording, block placed right after the paragraph it tests; listed figure captures and fig-row unchanged in layout. The third block sits inside the closed optional box on the Malus's law measurement, so it is not visible until that box is opened; that is by design. Hash identical at start and end.

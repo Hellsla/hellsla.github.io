@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 1a8d5341ee906641
+CONTENT-HASH: 3d4ccc0df0494988
 
 ## Blocking
+None.
 
 ## Polish
-
+None.
 
 ## Checked
-batch delta review: the goal, hook question, reflect and explain prompts, the Why question and the heading now restrict "red on the outer edge" to the primary rainbow. This is correct: the secondary bow has the order reversed, and the hook mentions it. The model answer (42° red, 40.6° violet from the antisolar point) is unchanged and consistent. The goal still completes "you will learn to".
+batch delta review: every new ```pysahdy block (question and answer) against the physics guardrails and the lesson's own wording; crown-glass n values match table; 42° − 30° = 12° as lesson text; water red 2.25e8 m/s recomputed. No option-based choices changed. Scope per teacher 2026-11-20: only the pysahdy blocks.

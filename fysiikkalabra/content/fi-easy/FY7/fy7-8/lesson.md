@@ -151,6 +151,12 @@ Toisiokäämiin syntyy jännite vain, kun sen läpi kulkeva magneettivuo muuttuu
 
 Tämän vuoksi sähköverkossa käytetään vaihtovirtaa. Luvussa *Generaattori ja vaihtovirta* generaattori tuottaa vaihtojännitettä. Muuntajilla jännite voidaan muuttaa aina sopivan suuruiseksi.
 
+```pysahdy
+Ensiökäämi on kytketty paristoon. Kytkin on ollut pitkään kiinni. Mikä on toisiokäämin jännite, kun ensiökäämin virta pysyy samana?
+---
+Toisiokäämin jännite on nolla. Tasainen virta antaa tasaisen magneettivuon. Tasainen vuo ei indusoi jännitettä.
+```
+
 ### Teho säilyy, virta muuttuu
 Ideaalinen muuntaja ei kuluta energiaa. Siksi ensiökäämiin tuleva teho on yhtä suuri kuin toisiokäämistä lähtevä teho. Kun kuorma on resistiivinen, teho on jännitteen ja virran tulo. Kun muuntaja nostaa jännitteen kymmenkertaiseksi, virta pienenee kymmenesosaan.
 
@@ -235,6 +241,12 @@ muuntaja :: \frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}
 ```
 Tässä $U_1$ on ensiöjännite (V) ja $U_2$ on toisiojännite (V). Kirjaimet $N_1$ ja $N_2$ ovat ensiökäämin ja toisiokäämin kierrosten lukumäärät. Kirjaimet $I_1$ ja $I_2$ ovat ensiövirta ja toisiovirta (A). Suhde $N_1 : N_2$ on muuntosuhde. Viimeinen yhtäsuuruus seuraa tehon säilymisestä: $U_1 I_1 = U_2 I_2$. Jännitteet ja virrat ovat tehollisia arvoja (luku *Generaattori ja vaihtovirta*). Kun jännite kasvaa, virta pienenee samassa suhteessa.
 
+```pysahdy
+Muuntajan ensiökäämissä on $460$ kierrosta, ja sen jännite on $230\,\text{V}$. Toisiokäämissä on $40$ kierrosta. Mikä on toisiojännite, kun muuntaja on ideaalinen?
+---
+Jännitteet ovat samassa suhteessa kuin kierrosluvut. Siis $U_2 = U_1 \cdot \tfrac{N_2}{N_1} = 230\,\text{V} \cdot \tfrac{40}{460} = 20{,}0\,\text{V}$.
+```
+
 ### Siirtojohdon tehohäviö
 Sähkönsiirtoa kuvataan ensin yksinkertaistetulla kaksijohtimisella virtapiirillä. Siinä virta kulkee perille yhtä johdinta pitkin ja palaa toista pitkin. Voimalaitos lähettää tehon $P$ jännitteellä $U$. Johdon virta ja johdossa sisäenergiaksi muuttuva teho ovat
 ```latex
@@ -306,6 +318,12 @@ Siirtojännite $U$ ei ole sama kuin jännite johdon resistanssin yli. Johdon pä
   <foreignObject x="300" y="77.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$P = 200\,\text{MW}$</div></foreignObject>
   <foreignObject x="320" y="115.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$R = 6{,}0\,\Omega$</div></foreignObject>
 </svg>
+
+```pysahdy
+Voimalaitos siirtää saman tehon johtoa pitkin. Siirtojännite nostetaan kolminkertaiseksi. Miten johdon häviöteho muuttuu?
+---
+Virta pienenee kolmasosaan, koska $I = P : U$. Häviöteho $P_\text{h} = R I^2$ pienenee yhdeksäsosaan, koska virran neliö pienenee yhdeksäsosaan.
+```
 
 ### Todellinen kantaverkko on kolmivaiheinen
 Suomen todellinen kantaverkko on kolmivaiheinen. Johdolla on kolme vaihejohdinta. Esimerkiksi $400\,\text{kV}$ on vaihejohtimien välinen jännite. Sitä sanotaan pääjännitteeksi. Kun kolmivaiheverkko on tasaisesti kuormitettu, sen pätöteho on

@@ -103,6 +103,12 @@ Luvussa *Sähkömagneettinen induktio* suljettuun johdinsilmukkaan syntyi indukt
   <foreignObject x="365" y="315.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{rengas vetää}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Magneetin S-napaa työnnetään kohti kuparirengasta. Millainen on renkaan magneetin puoleinen sivu, ja miksi?
+---
+Renkaan magneetin puoleinen sivu on S-napa. Renkaan läpi kulkeva vuo kasvaa, ja induktiovirran kenttä vastustaa kasvua, joten rengas hylkii magneettia.
+```
+
 ### Lenzin laki on energian säilymistä
 Miksi induktiovirta ei voisi auttaa muutosta? Jos lähestyvä magneetti vetäisi rengasta puoleensa, magneetti kiihtyisi kohti rengasta, vuo muuttuisi yhä nopeammin, induktiovirta kasvaisi ja veto voimistuisi. Magneetin liike-energia ja renkaan sähköenergia kasvaisivat ilman, että kukaan tekisi työtä: syntyisi ikiliikkuja, joka tuottaa energiaa tyhjästä. Energian säilyminen estää tämän. Siksi magneettia on liikutettava voimalla, joka tekee työtä renkaan vastustavaa voimaa vastaan, ja juuri tämä työ muuttuu induktiovirran sähköenergiaksi. Virta lämmittää johdinta, joten energia päätyy lopulta johtimen sisäenergiaksi.
 
@@ -156,7 +162,14 @@ Induktiovirta ei tarvitse erillistä johdinsilmukkaa. Kun magneettivuo muuttuu u
   <foreignObject x="341" y="31.5" width="250" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{alempi rengas ylhäältä}$</div></foreignObject>
 </svg>
 
+
 <figure class="unit-photo"><img src="pics/fy7/eddy-current-brake.webp" alt="Harmaa akseli ja sen ympärillä suuri pyöreä metallilevy; levyn vieressä on laatikkomainen jarruyksikkö, jossa on johtoja ja liittimiä."><figcaption>Junan pyörrevirtajarru. Akselin mukana pyörivän metallilevyn vieressä on sähkömagneetteja. Kun jarrutetaan, magneettikenttä indusoi levyyn pyörrevirtoja, jotka Lenzin lain mukaan vastustavat levyn pyörimistä. Liike-energia muuttuu levyn sisäenergiaksi ilman kuluvia jarrupaloja.</figcaption></figure>
+
+```pysahdy
+Kupariputkessa putoavan magneetin vauhti kasvaa. Mitä tapahtuu jarruttavalle voimalle ja miksi?
+---
+Jarruttava voima kasvaa. Mitä suurempi vauhti on, sitä suuremmat pyörrevirrat ovat, ja sitä voimakkaammin ne jarruttavat.
+```
 
 ### Pyörrevirtajarru, induktioliesi ja metallinilmaisin
 **Induktiojarrussa** eli pyörrevirtajarrussa metallilevy tai kisko liikkuu magneettikentässä, ja pyörrevirrat jarruttavat liikettä. Vuoristoradan vaunun alle kiinnitetyt kupari- tai alumiinilevyt kulkevat radan vahvojen magneettien välistä, ja junissa jarrun sähkömagneetit ovat lähellä kiskoa. Jarru ei kulu, koska mikään ei hankaa, ja se jarruttaa sitä voimakkaammin, mitä suurempi vauhti on. Pysähtymisen lähellä jarrutus heikkenee, joten lopullinen pysäytys tarvitsee tavallisen jarrun. Induktioliedessä lasin alla olevan kelan vaihtovirta muuttaa magneettikenttää kymmeniätuhansia kertoja sekunnissa, ja pyörrevirrat lämmittävät kattilan pohjaa. Lasi ei johda sähköä, joten se lämpenee vain kuuman kattilan vaikutuksesta. Metallinilmaisimen kela synnyttää vaihtuvan kentän, ja maassa olevan metallin pyörrevirtojen oma kenttä havaitaan ilmaisimen kelassa.
@@ -293,6 +306,12 @@ missä $P$ on teho (W), $F$ jarruttava voima (N) ja $v$ vauhti (m/s). Sama kaava
   <line x1="445" y1="276" x2="445" y2="217" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <foreignObject x="403.5" y="192" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$0{,}2\,\text{mJ}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Magneetin massa on $20\,\text{g}$, ja se putoaa kupariputkessa tasaisella vauhdilla $0{,}30\,\text{m/s}$. Millä teholla putken sisäenergia kasvaa?
+---
+Jarruttava voima on yhtä suuri kuin paino: $F = mg = 0{,}020\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 0{,}196\,\text{N}$. Teho on $P = Fv \approx 0{,}196\,\text{N}\cdot 0{,}30\,\text{m/s} \approx 0{,}059\,\text{W}$.
+```
 
 ## Esimerkki
 Opiskelija pudottaa $25\,\text{g}$:n neodyymimagneetin $1{,}20\,\text{m}$:n pituiseen pystysuoraan kupariputkeen ja mittaa, että magneetti tulee putken alapäästä ulos $8{,}0\,\text{s}$:n kuluttua. Magneetti putoaa lähes koko matkan tasaisella vauhdilla. Kuinka paljon putken sisäenergia kasvaa putoamisen aikana?

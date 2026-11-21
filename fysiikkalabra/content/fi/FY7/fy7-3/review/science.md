@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 4696d3cd76b16bc6
+CONTENT-HASH: e368cdf02df340df
 
 ## Blocking
 
 ## Polish
-- Pohdinta retrieval: the new prompt places the compass beside the wire with no current; the correct option (needle along the local Earth field line) is the only right one, and the three distractors' feedback (copper not magnetic; Earth field about $50\,\mu\text{T}$; perpendicularity belongs to the force on a moving charge) is correct.
+
 
 ## Checked
-batch delta review: compass retrieval prompt and its four options and feedback; no Ennusta answer revealed.
+batch delta review: round 2, pysahdy answer now states the coil right-hand rule (fingers along the current, thumb along the field); clockwise current seen from P gives the field pointing away from P, field lines leave the far end (N), P is S; correct and matches the lesson's rule.
+
+## Vanhan sisällön löydökset
+Ei löydöksiä.

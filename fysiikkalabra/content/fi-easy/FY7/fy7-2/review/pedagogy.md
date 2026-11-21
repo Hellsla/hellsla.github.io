@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 0cd8a55bb646cb06
-
+CONTENT-HASH: 4b3fff2b3f53eb78
 ## Blocking
-- none
 
 ## Polish
 - none
-
 ## Checked
-batch delta review: kuvauksiin lisätyt sanat (figures.json), 'tesloina' (inquiry.json prompt ja ratkaisu, taivutus oikein), kaavojen nimet ja opettajan hyväksymät kuvat; teksti selkeää, lyhyitä lauseita, ei ristiriitaa tehtävien tai ratkaisujen kanssa. Hash sama alussa ja lopussa.
+batch delta review: the three new pysahdy blocks (question, answer, physics, numbers recomputed, S2 wording, fit with the lesson text and its terms); old content not judged.

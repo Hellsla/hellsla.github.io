@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 54bcd8e2aa81ada5
+CONTENT-HASH: 00674d9a77aa5f1a
 ## Blocking
 (none)
+## Vanhan sisällön löydökset
+(none)
 ## Polish
-- none
+(none)
+## Notes
+The answer no longer claims visible light 'appears only' at 800 K; it says the amount is so small the eye notices a glow only at about 800 K. Physically more accurate and still short and clear.
 ## Checked
-batch delta review: Pohdinta retrieval task now belongs to the chapter phenomenon, still retrieves the intended prior knowledge, and reveals no Ennusta answer. Red 700 nm vs violet 400 nm in glowing iron retrieves f = c/λ; Ennusta (peak shift with T, stone at 300 K) not revealed.
+batch delta review, round 2: Checked: pysahdy block against the black-body paragraphs.

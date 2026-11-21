@@ -147,6 +147,12 @@ Kun sauvamagneetti katkaistaan kahtia, kummastakin palasta tulee kokonainen magn
   <foreignObject x="50" y="235.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$4$</div></foreignObject>
 </svg>
 
+```pysahdy
+Sauvamagneetti katkaistaan keskeltä kahtia. Onko toisessa palassa vain pohjoisnapa ja toisessa vain etelänapa?
+---
+Ei ole. Kummassakin palassa on sekä pohjoisnapa että etelänapa, koska magneetin navat esiintyvät aina pareittain.
+```
+
 ### Ferromagnetismi ja alkeisalueet
 Magneetti vetää puoleensa rautaa, nikkeliä, kobolttia ja monia niiden seoksia, kuten terästä. Näitä aineita sanotaan **ferromagneettisiksi**. Jokainen niiden atomi on pieni magneettinen dipoli. Ferromagneettisessa aineessa vierekkäisten atomien dipolit asettuvat samansuuntaisiksi, ja aine jakautuu tyypillisesti mikrometrien kokoisiin **alkeisalueisiin**, joissa kaikki atomidipolit osoittavat samaan suuntaan. Magnetoimattomassa raudassa alkeisalueiden suunnat vaihtelevat, joten niiden vaikutukset kumoavat toisensa eikä kappale ole magneetti.
 
@@ -280,6 +286,12 @@ Kenttää havainnollistetaan **kenttäviivoilla**. Kenttäviivan suunta kussakin
 
 <figure class="unit-photo"><img src="pics/fy7/horseshoe-magnet-filings.webp" alt="Hevosenkenkämagneetti, jonka navoille ja ympärille on tarttunut rautaviilaa tiheinä kaarina ja tupsuina."><figcaption>Rautaviila hevosenkenkämagneetin ympärillä. Jokainen hippu magnetoituu ja asettuu kentän suuntaiseksi, joten viila piirtää näkyviin kenttäviivojen kulun. Navoilla viilaa on eniten, koska kenttä on siellä voimakkain.</figcaption></figure>
 
+```pysahdy
+Pienen kompassin neula on sauvamagneetin pohjoisnavan vieressä. Mihin suuntaan neulan pohjoispää osoittaa?
+---
+Pois magneetin pohjoisnavasta. Neulan pohjoispää osoittaa kentän suuntaan, ja kenttäviivat kulkevat magneetin ulkopuolella pohjoisnavasta poispäin.
+```
+
 ### Maan magneettikenttä
 Maapallolla on magneettikenttä, joka muistuttaa sauvamagneetin kenttää. Se syntyy Maan ulkoytimen sulan raudan liikkeistä ja niihin liittyvistä sähkövirroista. Kompassin neulan pohjoispää kääntyy kohti maantieteellistä pohjoista. Koska erinimiset navat vetävät toisiaan, Maan kentän suunta vastaa maantieteellisen pohjoisnavan lähellä sauvamagneetin **etelänavan** $\text{S}$ kenttää, ja maantieteellisen etelänavan lähellä sauvamagneetin pohjoisnavan $\text{N}$ kenttää.
 
@@ -344,6 +356,12 @@ B &= \sqrt{B_1^2 + B_2^2} \\
 \end{aligned}
 ```
 missä $\theta$ on kokonaiskentän ja kentän $\overline{B}_1$ välinen kulma.
+
+```pysahdy
+Paikassa, jossa Maan magneettikentän vaakakomponentti on $30\,\mu\text{T}$, kompassin lähellä on magneetti. Sen kenttä on $40\,\mu\text{T}$ ja kohtisuorassa vaakakomponenttia vastaan. Kuinka suuri on kokonaiskenttä?
+---
+Pythagoraan lauseella $B = \sqrt{(30\,\mu\text{T})^2 + (40\,\mu\text{T})^2} = 50\,\mu\text{T}$.
+```
 
 Tätä käytetään kompassimittauksessa. Kompassin kohdalla Maan kentän vaakakomponentti $\overline{B}_\text{h}$ osoittaa pohjoiseen. Kun magneetti asetetaan niin, että sen kenttä $\overline{B}_\text{m}$ on kompassin kohdalla itään, neula kääntyy pohjoisesta itään kulman $\theta$, jolle $\tan\theta = B_\text{m} : B_\text{h}$. Magneetin kentän voi siis mitata kompassilla, kun Maan kentän vaakakomponentti tunnetaan.
 

@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: fb3b370ff079bc9a
+CONTENT-HASH: 3ac93eeaafc93df3
 
 ## Blocking
 
 ## Polish
 
+
 ## Checked
-- Delta, round 3: retrieval (air n = 1,00 into glass n = 1,48 at 30°) recomputed with my own script: sin α2 = 0,5 : 1,48 = 0,3378, α2 = 19,745° -> 19,7°; lesson-answers.py kertaus-alpha2 prints 19.745198, the same.
-- All three feedbacks of the retrieval item now say 19,7°; no 19,8° left in inquiry.json or lesson.md.
-- Toward the normal is still the one correct option; both distractors' feedback is still right (away from the normal only from larger to smaller n; an oblique ray always refracts).
-- Hash the same at start and end.
+batch delta review: round 2, pysahdy answer reworded: n1 = n2 gives sin αr = n2 : n1 = 1, αr = 90°, an angle of incidence cannot exceed it, so no total internal reflection and the light leaks into the cladding; correct and consistent with the critical-angle definition in the theory.
+
+## Vanhan sisällön löydökset
+Ei löydöksiä.

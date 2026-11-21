@@ -1,15 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 339110479ebdf874
-
+CONTENT-HASH: a35cc56e1f9684d7
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fy7-8 Pohdinta, wrong option "460 V" feedback: the chain row "325 V : sqrt2 ≈ 230 V" has no quantity at its start; the text above names it, so acceptable.
+
 
 ## Checked
-- Rendered the Pohdinta retrieval task ("Kertaa") at 360 px, opened and answered every option, so each feedback block showed (own captures; stage-herata-390 also opened). Chains are aligned rows, nothing clipped, no horizontal overflow (scrollWidth 360).
-- Delta: only the retrieval feedback/option text changed; no figures touched.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review, round 2: rendered the lesson at 390 px, opened every Pysähdy ja mieti answer and looked at the captures (label, question, answer, chain rows inside the aside, no katex-error, no horizontal overflow, aside width 358 px); ran check_layout.py at 360 px (fi, en, fi-easy) and fy7-1 also at 390 px: OK; read the diff for notation (decimal comma, units upright, `\cdot`, colon division) and Finnish wording. Old content not judged (scope note 2026-11-20); no Vanhan sisällön löydökset.

@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e0098bccffc6e74b
+CONTENT-HASH: 843f965dfdd7ad68
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- Delta round 2. The packet's captures show the Tiivistelmä box closed, so I opened my own 1280 px capture of the opened box (scratchpad easy.png): the list sits in its narrow column beside the scene figure, the reworded bullet "Heijastuksen estävässä pinnoitteessa on kaksi siirtymää. …" wraps cleanly with no clipping, and the page's scrollWidth is 1280 (no horizontal overflow). The sticky stage bar over the list is a screenshot artefact.
-- Opened fy7-14-theory-1280-3.png (surrounding layout, figure, closed boxes intact).
-- The new wording is fluent Finnish, and the unit and quantity LaTeX in the bullet are unchanged. The Heijastuksenestopinnoite term stays in the concept chip and in the text.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review (round 2): fy7-14 (fi-easy) built page, every "Pysähdy ja mieti" block rendered with the answer open and photographed at 360 px (examined for the long chains) and measured at 360 and 1280 px: label, question, Vastaus summary, KaTeX (no red source, no clipped formula, no overflow), decimal comma, units, answer chains laid out as rows; check_layout.py clean at 360/390/1280. The round 1 clip in fy7-1 block 3 is fixed by the shared component. Listed older captures not reopened (unchanged old content). Vanhan sisällön löydökset: none.

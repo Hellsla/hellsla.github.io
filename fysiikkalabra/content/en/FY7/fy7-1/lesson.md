@@ -147,6 +147,12 @@ When a bar magnet is cut in two, each piece becomes a complete magnet with both 
   <foreignObject x="50" y="235.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$4$</div></foreignObject>
 </svg>
 
+```pysahdy
+A bar magnet is cut in half across its middle. Does one piece have only a north pole and the other only a south pole?
+---
+No. Each piece has both a north pole and a south pole, because the poles of a magnet always come in pairs.
+```
+
 ### Ferromagnetism and magnetic domains
 A magnet attracts iron, nickel, cobalt and many of their alloys, such as steel. These materials are called **ferromagnetic**. Each of their atoms is a small magnetic dipole. In a ferromagnetic material the dipoles of neighbouring atoms line up in the same direction, and the material typically divides into **magnetic domains** a few micrometres across, in each of which all the atomic dipoles point the same way. In unmagnetised iron the directions of the domains vary, so their effects cancel and the piece is not a magnet.
 
@@ -280,6 +286,12 @@ The field is visualised with **field lines**. The direction of a field line at e
 
 <figure class="unit-photo"><img src="pics/fy7/horseshoe-magnet-filings.webp" alt="A horseshoe magnet with iron filings clinging in dense arcs and tufts at and around its poles."><figcaption>Iron filings around a horseshoe magnet. Each grain becomes magnetised and lines up with the field, so the filings trace out the field lines. Most filings gather at the poles, where the field is strongest.</figcaption></figure>
 
+```pysahdy
+A small compass needle is next to the north pole of a bar magnet. In which direction does the north end of the needle point?
+---
+Away from the north pole of the magnet. The north end of the needle points along the field, and outside the magnet the field lines leave the north pole.
+```
+
 ### The Earth's magnetic field
 The Earth has a magnetic field that resembles the field of a bar magnet. It arises from the motions of molten iron in the Earth's outer core and the electric currents associated with them. The north end of a compass needle turns towards geographic north. Because unlike poles attract each other, near the geographic North Pole the direction of the Earth's field corresponds to the field of the **south pole** $\text{S}$ of a bar magnet, and near the geographic South Pole to the field of the north pole $\text{N}$ of a bar magnet.
 
@@ -344,6 +356,12 @@ B &= \sqrt{B_1^2 + B_2^2} \\
 \end{aligned}
 ```
 where $\theta$ is the angle between the total field and the field $\overline{B}_1$.
+
+```pysahdy
+At a place where the horizontal component of the Earth's magnetic field is $30\,\mu\text{T}$, a magnet near the compass has a field of $40\,\mu\text{T}$ perpendicular to it. What is the magnitude of the total field?
+---
+By the Pythagorean theorem $B = \sqrt{(30\,\mu\text{T})^2 + (40\,\mu\text{T})^2} = 50\,\mu\text{T}$.
+```
 
 This is used in a compass measurement. At the compass, the horizontal component $\overline{B}_\text{h}$ of the Earth's field points north. When a magnet is placed so that its field $\overline{B}_\text{m}$ at the compass points east, the needle turns from north towards east by an angle $\theta$ for which $\tan\theta = B_\text{m} : B_\text{h}$. The field of a magnet can therefore be measured with a compass when the horizontal component of the Earth's field is known.
 

@@ -1,9 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: da34ad33d42e2236
-
+CONTENT-HASH: 2d678ce31d6ce5bc
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review (round 2): opened fy7-13-stage-herata-390 (Pohdinta with Kertaa: interferenssi); the reworded task (raot) reads naturally, layout intact.
+batch delta review: read the diff (3 new pysahdy blocks: placement, question wording, answer notation), ran check_layout.py at 360 px with the answer open; spot-checked sibling lessons' captures for block rendering (label, closed answer, spacing). Own 390 px capture of this lesson not opened.
