@@ -11,12 +11,8 @@ Ei tässä PR:ssä:
   ne jäävät ennalleen. Kuvapaketin 75 kuvasta tässä on 72.
 - 11 kuvaajaa ja ohitettua kuvaa (`PAATOS.txt`) ennallaan. Käsin `lesson.md`:hen liimattuja SVG:itä FY4:ssä ei ole.
 
-Huomiot (piirroksia ei muutettu):
-- `fy4-2/strobe`: opettajan siirtämä otsikko "hidastuva liike" (`{"3":[0,9]}`) menee 3–4 px päällekkäin merkinnän $\overline{v}$
-  kanssa (`check_layout.py` svg-text, kaikilla kielillä, 360 ja 1280 px).
-- `fy4-13/virhe`: rivin laatikko ylittää viewBoxin (oikealle 13,4, alas 20,0, vasemmalle 5,2 kuvan yksikköä; 1280 px:llä
-  `svg-image` 6 px, `check_layout.py` FAIL). Leikkautuva osa on pelkkää taustaa, piirros ei leikkaudu.
-- `fy4-7/hero`: laatikko (12,4; 17,3; 1188,1 × 599,0) ylittää viewBoxin 0,5 px oikealle ja 16,3 alas; alareunasta leikkautuu
-  noin 3 % kuvan ei-taustapikseleistä (kuvitusta, ei tyhjää), vasempaan ja yläreunaan jää 12 ja 17 yksikön kaista ilman kuvaa.
-  Opettajan huomio "1/4 h taustaväri pois" toteutettu (`ilman taustaa` [3, 4]).
+Huomiot (opettaja hyväksyi suositukset 2026-11-21, koordinaattorin viesti; piirroksia ei muutettu):
+- `fy4-2/strobe`: otsikon "hidastuva liike" siirto muutettu `{"3":[0,9]}` → `{"3":[0,3]}`, jotta se ei mene $\overline{v}$:n päälle (`check_layout.py` OK).
+- `fy4-13/virhe`: tyhjä reuna rajattu kuvatiedostosta (1552 × 588 px), rivin laatikko = viewBoxin sisälle (0; 2,6; 600 × 227,4); `check_layout.py` OK.
+- `fy4-7/hero`: hyväksytty sellaisenaan: laatikko ylittää alas 16,3 yksikköä, alareunasta leikkautuu ~3 % ei-taustapikseleistä; "1/4 h taustaväri pois" toteutettu (`ilman taustaa` [3, 4]).
 - Muut rivit ylittävät viewBoxin enintään 20 yksikköä, ja leikkautuva osa on pelkkää taustaa (`check_layout.py` OK).

@@ -1,7 +1,7 @@
 kuvan tunniste	tyyppi	tiedosto	x	y	leveys	korkeus	merkintöjen siirrot (järjestysnumero: dx, dy)	ilman taustaa (merkintöjen järjestysnumerot)
 fy4-1/hero	illustration	fy4-1-hero.webp						
 fy4-2/hero	illustration	fy4-2-hero.webp						
-fy4-2/strobe	diagram	fy4-2-strobe.webp	-1.3	0	603	379.4	{"3":[0,9]}	
+fy4-2/strobe	diagram	fy4-2-strobe.webp	-1.3	0	603	379.4	{"3":[0,3]}	
 fy4-12/hero	illustration	fy4-12-hero.webp						
 fy4-3/auto	diagram	fy4-3-auto.webp	1.2	1.2	597	338.3		
 fy4-3/curling	diagram	fy4-3-curling.webp	0	-1.2	600	352.5		
@@ -34,7 +34,7 @@ fy4-13/atwood	diagram	fy4-13-atwood.webp	-1.3	-1.3	603	418.3
 fy4-13/hero	illustration	fy4-13-hero.webp						
 fy4-13/malli-ketju	diagram	fy4-13-malli-ketju.webp	1.2	0	597	404.2	{"1":[4.97,2.32],"2":[4.97,0.0]}	
 fy4-13/tilanne	diagram	fy4-13-tilanne.webp	1.2	0	597	345.8	{"4":[13.27,9.29]}	
-fy4-13/virhe	diagram	fy4-13-virhe.webp	-5.2	2.6	618.6	247.4		
+fy4-13/virhe	diagram	fy4-13-virhe.webp	0	2.6	600	227.4		
 fy4-6/hero	illustration	fy4-6-hero.webp						
 fy4-6/kalteva	diagram	fy4-6-kalteva.webp	0	0	600	386.2		
 fy4-6/kalteva-ydin	diagram	fy4-6-kalteva-ydin.webp	1.2	0	597	388.1		
