@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: ca526143ca8f4ef0
+CONTENT-HASH: 383837b1b6383e47
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
+
+## Vanhan sisällön löydökset
+- none seen
 
 ## Checked
-- delta, en: opened review/shots/fy8-1-stage-herata-390.png (the changed retrieval task sits in a closed optional box; layout intact, UV-C wording matches the phenomenon above) and fy8-1-open-ennusta-1280-1.png (surrounding page, maths and layout fine). The inquiry change is wording and numbers only (54\,\text{nm}$, .2 \cdot 10^{15}\,\text{Hz}$ in LaTeX, decimal point in English); lesson.md is a paragraph cut only. Hash re-run at the end: unchanged.
+- Delta (three new pysahdy boxes). Opened fy8-1-theory-1280-1 and -3 (all three boxes visible in their places, closed with Vastaus/Answer summary, green rule, label, 17+ px text, units and symbols in LaTeX, decimal comma/point per language) and, for fi, fy8-1-stage-selita-390-2 (box at 390 px: no clipping, readable, sits between list and next heading, neighbouring figure layout intact). Answer text read from the diff (not opened visually: closed state).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
