@@ -3,64 +3,19 @@
 > **Why** does a thermal power plant get less than half of the energy of its fuel as electricity, and where does the rest of the energy go?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a condensing power plant on a lake shore. Power lines carry electricity away, a large cloud of steam rises from the cooling tower, and the condenser water is discharged into the lake warm, which shows as an orange zone in the water. Most of the energy of the fuel leaves as heat into the air and the water." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy311h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy311h-lake" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy311h-tower" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy311h-chimney" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="420" fill="url(#fy311h-sky)"/>
-  <path d="M0,380 L15,338 L30,380 L40.5,353.5 L51,380 L62.5,350 L73.5,380 L86,348 L98,380 L107,357.5 L116,380 L129,346 L141.5,380 L152,352.5 L163,380 L175,347.5 L187.5,380 L198.5,350.5 L210,380 L221,352 L231.5,380 L245.5,341.5 L259.5,380 L270,353 L280.5,380 L295,340.5 L309,380 L323.5,340 L338,380 L353.5,336.5 L369,380 L380,351 L391,380 L402,352 L412.5,380 L422,357 L431.5,380 L441.5,355 L451.5,380 L465,342.5 L479,380 L488,358 L497,380 L505.5,360 L514,380 L527,344 L540.5,380 L554,342.5 L568,380 L579.5,349 L591.5,380 L604.5,345.5 L617,380 L628.5,350 L640,380 L653,346 L665.5,380 L674.5,357.5 L684,380 L699,337.5 L714,380 L726,349 L737.5,380 L749,351.5 L760,380 L773.5,342 L787.5,380 L798.5,351 L809.5,380 L825,337 L840.5,380 L853,345 L866,380 L879.5,342.5 L893.5,380 L904,351.5 L915,380 L927,349 L938.5,380 L953,340 L967.5,380 L977,356.5 L986.5,380 L1000.5,342 L1014,380 L1028.5,341 L1042.5,380 L1054,349 L1065.5,380 L1080.5,338.5 L1095.5,380 L1110,339 L1125,380 L1139,340.5 L1153.5,380 L1168.5,337.5 L1184,380 L1196,348 L1207.5,380 V420 H0 Z" fill="#c4ccd4" stroke-linejoin="round"/>
-  <rect x="0" y="420" width="1200" height="180" fill="url(#fy311h-lake)"/>
-  <path d="M0,400 H900 Q860,420 820,440 H0 Z" fill="#c9c2b2" stroke-linejoin="round"/>
-  <path d="M120,420 Q160,300 140,190 H300 Q280,300 320,420 Z" fill="url(#fy311h-tower)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M130,190 Q128,156 168,160 Q184,124 224,136 Q260,116 280,154 Q316,158 312,190 Z" fill="#ffffff" stroke-linejoin="round" stroke="#c9c2b2" stroke-width="2.5"/>
-  <path d="M183,136 Q180.5,92 232.5,97 Q253,50 305,66 Q352,40 378,89 Q425,94.5 419.5,136 Z" fill="#ffffff" stroke-linejoin="round" stroke="#c9c2b2" stroke-width="2.5"/>
-  <path d="M304,98 Q301,50.5 357,56 Q379.5,5.5 435.5,22.5 Q486,-5.5 514,47.5 Q564.5,53 559,98 Z" fill="#ffffff" stroke-linejoin="round" stroke="#c9c2b2" stroke-width="2.5"/>
-  <path d="M481,82 Q479,44.5 523,49 Q540.5,9.5 584.5,22.5 Q624,0.5 646,42.5 Q685.5,47 681,82 Z" fill="#ffffff" stroke-linejoin="round" stroke="#c9c2b2" stroke-width="2.5"/>
-  <rect x="360" y="250" width="140" height="170" fill="#e3dccb" stroke="#1f2933" stroke-width="3"/>
-  <rect x="500" y="310" width="220" height="110" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <rect x="520" y="340" width="26" height="40" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="564" y="340" width="26" height="40" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="608" y="340" width="26" height="40" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="652" y="340" width="26" height="40" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="696" y="340" width="26" height="40" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="400" y="120" width="36" height="130" fill="url(#fy311h-chimney)" stroke="#1f2933" stroke-width="3"/>
-  <rect x="380" y="290" width="30" height="40" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
-  <rect x="440" y="290" width="30" height="40" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
-  <rect x="690" y="420" width="30" height="24" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="760" cy="480" rx="150" ry="40" fill="#ffc078" fill-opacity="0.55"/>
-  <ellipse cx="740" cy="468" rx="80" ry="22" fill="#e8590c" fill-opacity="0.45"/>
-  <path d="M850,420 L880,230 L910,420 M840,270 H920 M850,300 H910" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
-  <path d="M1030,420 L1060,230 L1090,420 M1020,270 H1100 M1030,300 H1090" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
-  <path d="M720,320 Q800,290 840,270 M840,270 Q960,300 1020,270 M1100,270 Q1150,290 1200,285" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M720,330 Q800,320 850,300 M850,300 Q960,330 1030,300 M1090,300 Q1150,320 1200,315" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <image href="pics/fy3/fy3-11-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Key idea
 When a gas expands and pushes a piston, it does work. The gas pushes the piston with a force $F = pA$, where $A$ is the area of the piston. If the piston moves a distance $s$ and the pressure stays the same, the work done by the gas is force times distance, $pAs$. The product $As$ is the change in the volume of the gas $\Delta V$, so the work done by the gas is $W = p\,\Delta V$. In the ($V$, $p$) graph it is the area between the graph and the $V$ axis, just like the work in an ($s$, $F$) graph. When the gas is compressed, the surroundings do compression work on the gas, and its size is calculated with the same formula. A gas that does work gives up energy, so its internal energy grows less than the heat brought to it.
 
 <svg data-fig="piston-work" viewBox="0 0 600 330" role="img" aria-label="Principle drawing of the work done by a gas on a piston. The cross-sectional area of the cylinder is A. The pressure p of the gas pushes the piston with a force F = pA, and the piston moves a distance Δs to the right. The volume of the gas grows by the shaded part, ΔV = AΔs. The work is W = FΔs = pAΔs = pΔV. The picture is not to scale." style="max-width:100%;font-size:24px">
-  <defs><pattern id="fy311-dv" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="12" fill="#ffc078"/><line x1="0" y1="0" x2="0" y2="12" stroke="#e8590c" stroke-width="2"/></pattern></defs>
-  <rect x="110" y="70" width="140" height="120" fill="#ffc078" fill-opacity="0.3"/>
-  <rect x="250" y="70" width="170" height="120" fill="url(#fy311-dv)"/>
-  <line x1="250" y1="70" x2="250" y2="190" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 5"/>
-  <rect x="104" y="64" width="6" height="132" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="104" y="64" width="458" height="6" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="104" y="190" width="458" height="6" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="413" y="71" width="14" height="118" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="429" y1="130" x2="515" y2="130" stroke="#c92a2a" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M536,130 L514,140 L514,120 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <image href="pics/fy3/fy3-11-piston-work.webp" x="1.2" y="0" width="597" height="339.6" preserveAspectRatio="none"/>
   <foreignObject x="449" y="85.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$F = pA$</div></foreignObject>
   <foreignObject x="143" y="115.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{gas},\ p$</div></foreignObject>
   <foreignObject x="318.5" y="115.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\Delta V$</span></div></foreignObject>
-  <line x1="76" y1="130" x2="76" y2="82" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M76,71 L81.5,83 L70.5,83 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="76" y1="130" x2="76" y2="178" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M76,189 L70.5,177 L81.5,177 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="46" y="115.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$A$</span></div></foreignObject>
-  <line x1="250" y1="198" x2="250" y2="234" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="420" y1="198" x2="420" y2="234" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="311" y1="226" x2="262" y2="226" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M251,226 L263,220.5 L263,231.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="359" y1="226" x2="408" y2="226" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M419,226 L407,231.5 L407,220.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="318.5" y="211.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta s$</div></foreignObject>
+  <foreignObject x="46" y="115.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$A$</div></foreignObject>
+  <foreignObject x="318.5" y="228.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta s$</div></foreignObject>
   <foreignObject x="190" y="275.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = F\,\Delta s = pA\,\Delta s = p\,\Delta V$</div></foreignObject>
 </svg>
 
@@ -78,15 +33,10 @@ A heat engine turns heat into work continuously, so it has to repeat its motion.
 Experience shows that a heat engine cannot turn all the heat it receives into work; part of it must always be given up to a colder environment. This is the content of the second law of thermodynamics. The larger the temperature difference between the hot source and the cold environment compared with the temperature of the hot source, the larger the share of the heat the engine can turn into work. Cyclic processes are not calculated in this course; the simulation only shows why the heat $Q_2$ cannot be avoided.
 
 <svg data-fig="heat-engine" viewBox="0 0 600 340" role="img" aria-label="The energy flows of a heat engine as arrows whose width shows the energy flow, that is, the power: from the hot source, whose temperature is T_1, the heat Q_1 enters the engine. The engine does work W, which is 40 per cent of Q_1, and gives up the rest, the heat Q_2, to the cold environment, whose temperature is T_2. The widths of the arrows are to scale: Q_1 is 60, W is 24 and Q_2 is 36 units, so the Q_1 arrow is as wide as the W and Q_2 arrows together." style="max-width:100%;font-size:24px">
-  <rect x="150" y="12" width="300" height="52" rx="10" fill="#f2a69c" stroke="#c92a2a" stroke-width="2.5"/>
+  <image href="pics/fy3/fy3-11-heat-engine.webp" x="1.2" y="0" width="597" height="349.5" preserveAspectRatio="none"/>
   <foreignObject x="221" y="23.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{hot source}\quad T_1$</div></foreignObject>
-  <rect x="150" y="276" width="300" height="52" rx="10" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
   <foreignObject x="183.5" y="287.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{cold environment}\quad T_2$</div></foreignObject>
-  <rect x="225" y="118" width="150" height="98" rx="12" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
   <foreignObject x="258.5" y="152.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{engine}$</div></foreignObject>
-  <path d="M270,64 L270,94 L258,94 L300,118 L342,94 L330,94 L330,64 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <path d="M282,216 L282,250 L270,250 L300,274 L330,250 L318,250 L318,216 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M375,179 L534,179 L534,190 L560,167 L534,144 L534,155 L375,155 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="354" y="77.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q_1$</div></foreignObject>
   <foreignObject x="342" y="229.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q_2$</div></foreignObject>
   <foreignObject x="460" y="119.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W$</div></foreignObject>
@@ -109,15 +59,10 @@ In combined production of electricity and heat, the heat $Q_2$ of the condenser 
 A refrigerator and a heat pump work the opposite way to a heat engine: they use electrical energy to transfer heat from a cold place to a warm one. A refrigerator transfers heat from inside the cabinet to the room, and an air-source heat pump from the outdoor air to the inside. The heat given out indoors is the sum of the heat taken from outside and the electricity used, so a pump can heat a house with, for example, three times as much heating power as the electric power it uses. The ratio of the heating power to the electric power is called the coefficient of performance. The coefficient of performance is not an efficiency: it can be greater than 1, because part of the heat that comes indoors is transferred from the outdoor air and does not come from the electricity. The pump does not create energy; it transfers it.
 
 <svg data-fig="heat-pump" viewBox="0 0 600 340" role="img" aria-label="The energy flows of a heat pump as arrows whose width shows the power: the electrical energy W and the heat Q_2 taken from the outdoor air enter the pump, and the pump gives out indoors the heat Q_1, which is their sum. The widths of the arrows are to scale: W is 20, Q_2 is 40 and Q_1 is 60 units, so the arrow going indoors is as wide as the two incoming arrows together and three times as wide as the electricity arrow." style="max-width:100%;font-size:24px">
-  <rect x="150" y="12" width="300" height="52" rx="10" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
+  <image href="pics/fy3/fy3-11-heat-pump.webp" x="1.2" y="0" width="597" height="349.5" preserveAspectRatio="none"/>
   <foreignObject x="208.5" y="23.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{cold outdoor air}$</div></foreignObject>
-  <rect x="150" y="276" width="300" height="52" rx="10" fill="#f2a69c" stroke="#c92a2a" stroke-width="2.5"/>
   <foreignObject x="202.5" y="287.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{warm indoor space}$</div></foreignObject>
-  <rect x="225" y="118" width="150" height="98" rx="12" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
   <foreignObject x="271" y="152.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{pump}$</div></foreignObject>
-  <path d="M280,64 L280,96 L270,96 L300,118 L330,96 L320,96 L320,64 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M30,177 L203,177 L203,183 L225,167 L203,151 L203,157 L30,157 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M270,216 L270,250 L258,250 L300,274 L342,250 L330,250 L330,216 Z" fill="#e8590c" stroke-linejoin="round"/>
   <foreignObject x="344" y="77.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q_2$</div></foreignObject>
   <foreignObject x="41" y="119.5" width="162" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{electricity}\ W$</div></foreignObject>
   <foreignObject x="354" y="230.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q_1$</div></foreignObject>
