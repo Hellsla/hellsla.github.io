@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: a0bf24d8104b21fb
+CONTENT-HASH: 06e877879acbd29d
 
 ## Blocking
-Ei.
 
 ## Polish
-- Laatikko 1: "kerätä energiaa vähän aikaa" heikentää vastakohtaa. Aaltomallin arvio himmeälle valolle on pitkä viive (jopa minuutteja); "pitkään" kuvaisi ennustetta paremmin (C, ei estä).
 
 ## Checked
-batch delta review, kierros 2: kaikki kolme pysahdy-laatikkoa (kaikki uusia mainiin nähden) ja niiden konteksti tarkistettu; luvut laskettu uudelleen omalla skriptillä. 254 nm: $1240/254 = 4{,}88\,\text{eV} > 4{,}31\,\text{eV}$ (sinkki), irtoaminen oikein; kynnyksen yläpuolella $E_\text{k}\approx 0$ ja vähän elektroneja himmeällä valolla oikein; $0{,}7 \to 3{,}7\,\text{eV}$, suhde $5{,}3$ ("yli viisinkertaiseksi" oikein), $W_\text{Na} = 2{,}3\,\text{eV}$ sama kuin teoriassa.
-
-## Vanhan sisällön löydökset
-Ei.
+batch delta review: the rewritten Pysähdy box (wave-model accumulation time). Recomputed: P = 1,0·10⁻³ W/m² · 1,0·10⁻¹⁹ m² = 1,0·10⁻²² W; W = 4,3 eV = 6,9·10⁻¹⁹ J; t = W/P = 6,9·10³ s ≈ 1,9 h. Correct, the assumptions (collection area about one atom, given intensity) are stated in the question, and the conclusion (electrons leave at once, so the wave model fails) matches the lesson.

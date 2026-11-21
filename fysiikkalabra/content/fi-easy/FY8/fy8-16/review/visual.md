@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 657cff99b1943eed
+CONTENT-HASH: 06fd0d500e22f755
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] pysahdy 3 answer is a bare formula chain; add a sentence ("Galaksi etääntyy nopeudella $7000\,\text{km/s}$.").
+- [Minor] Hubble-laatikko — "$v_\text{A} = 70 \cdot 60 = 4200\,\tfrac{\text{km}}{\text{s}}$": sijoituksessa ei yksiköitä ennen tulosta; näytä $70\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 60\,\text{Mpc}$.
+- [Minor] yksikön merkintä vaihtelee ($\tfrac{\text{km/s}}{\text{Mpc}}$ ja $\text{km/s/Mpc}$ vastauksessa b); yhtenäistä.
+- [Minor] a)- ja b)-kohdat samassa kappaleessa; erilliset rivit luettavampia.
 
 ## Vanhan sisällön löydökset
-- none
+- ei
 
 ## Checked
-batch delta review round 2: fy8-16-theory-1280-3 (CMB box), fy8-16-theory-1280-5 (Hubble box with $70\,\tfrac{\text{km/s}}{\text{Mpc}}$ renders, clean), fy8-16-stage-selita-390-6/9 (390 px); box 1 (galaxy B) read in source; answers in lesson.md.
+- batch delta review: four edited boxes read from diff; units/numbers LaTeX; layout via shared component.
