@@ -1,16 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 721e84be8aeb8a5e
+CONTENT-HASH: 93dcf18825032455
 ## Blocking
-(none)
-## Vanhan sisällön löydökset
-(none)
+
 ## Polish
-- lesson.md pysahdy 1 (0,5e) — the answer is the sentence just before the box ("aina kokonaisista alkeisvarauksista", Q = ne); it checks reading, not reasoning. Optional: ask why a $+1{,}0\,\text{C}hmBcish value like 721e84be8aeb8a5e{,}4e$ cannot occur, or what a half charge would require. Not blocking.
-- lesson.md pysahdy 3 — answer needs the student to infer opposite directions from equal distance and same sign; the superposition paragraph only says "vastakkaissuuntaiset vähennetään", so a one-line hint is not needed but the solution could state why the directions are opposite (repulsion from both sides).
+- Box answer uses k as 9,0·10^9 while the lesson gives 8,988·10^9; say 'noin' or round once in the text so the student sees why.
+- Colon division matches the S2 house style (I = Q : t), fine; the added repulsion reason in the three-charge box repairs the cancellation misconception well.
 ## Checked
-- Three boxes (varauksen kvantittuminen, Coulombin laki, superpositio), each straight after the paragraph it tests; answerable by a 16-19-year-old from it.
-- Box 2: 8,988e9 * (1e-6)^2 / 0,30^2 = 0,0999 N, rounds to 0,10 N; unit conversion µC to C shown.
-- No duplicate of the worked example (12 nC, -8 nC, 6 cm), the predictions (distance doubling, charge doubling), exercises or exit ticket found by grep.
-- Answers are short, clear, and shown only after the student answers.
-- Box wording and the Finnish are correct; the translation matches its source (en/fi-easy parallel).
-- Inquiry and exercises not judged (scope limited to new boxes).
+batch delta review (round 2): box 1 calculation in colon form with units stated and result 0,10 N correct; box 3 reason added, clear.
