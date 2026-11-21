@@ -1,11 +1,13 @@
-VERDICT: PASS
-CONTENT-HASH: 8f028a289e8af65c
+VERDICT: FAIL
+CONTENT-HASH: 3fb57deabbfc7e1b
 
 ## Blocking
+- Box 1 answer (line 461): 'Työ on potentiaalienergian muutos' has the wrong sign (A): the field's work equals the *decrease* of potential energy, W = −ΔE_p, as the paragraph just above and line 587 say. Fix: 'Työ on yhtä suuri kuin potentiaalienergian väheneminen, ja nollatason siirto muuttaa molempia energioita yhtä paljon.'
 
 ## Polish
-- kertaus: 2,0·10⁻¹⁵ N on an electron means a field of about 12 kV/m; auroral acceleration fields are far weaker (a few kV over thousands of km). Not stated as measured, so not blocking; a smaller force or a lab context would be truer.
-- 4,0·10⁻¹⁵ J feedback: "lyhyempi matka tarkoittaa pienempää työtä" is loose (shorter than what?); "matka alle metrin, joten työ on pienempi kuin F · 1 m" would say it.
+
+## Vanhan sisällön löydökset
+- Ei löydöksiä boksien ympäriltä luetusta kontekstista.
 
 ## Checked
-batch delta review: kertaus W = Fs with force along the motion (condition stated): 1,0·10⁻¹⁵ J; 4,0·10⁻¹⁵ = F/s, 2,0·10⁻¹⁵ = F alone; one correct option; cited chapter Työ ja energia exists; lesson-answers.py runs.
+batch delta review (scope: new pysahdy boxes only): 45 eV and q(V_A − V_B) = 2,0·10⁻⁹ C·50 V = 1,0·10⁻⁷ J recomputed; box 1 sign checked against lines 456 and 587.

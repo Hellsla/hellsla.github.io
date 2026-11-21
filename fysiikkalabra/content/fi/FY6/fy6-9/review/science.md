@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: f1a2a31e2acbe42d
+CONTENT-HASH: db25feb710e74807
 
 ## Blocking
 
 ## Polish
-- none.
+- Box 3: 'suoraan verrannollinen erotukseen' holds while R + R_s stays constant; the formula just above shows it, fine as C.
+
+## Vanhan sisällön löydökset
+- Ei löydöksiä boksien ympäriltä luetusta kontekstista.
 
 ## Checked
-batch delta review: kertaus P = UI = 10 W (2,5 named as resistance in Ω, 7,0 sum, 0,40 inverted), one correct option, lesson-answers.py runs; worked-example split only.
+batch delta review (scope: new pysahdy boxes only): neutral battery stores chemical energy (correct), 3,6 V·4,0 Ah = 14,4 → 14 Wh, charging current decreases.

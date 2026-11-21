@@ -1,9 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 25620b211e5bd87b
+CONTENT-HASH: 9bc4cc56cba29732
 
 ## Blocking
 
 ## Polish
+- Box 1 (negative reading) assumes the black lead stays on the lamp's other terminal; the paragraph at line 72 implies it, the box could say 'johdot vaihdetaan päittäin'.
+
+## Vanhan sisällön löydökset
+- Ei löydöksiä boksien ympäriltä luetusta kontekstista.
 
 ## Checked
-batch delta review: the retrieval task "Kertaa: virta ja jännite" now asks through the bench circuit (battery, lamp and resistor in series, lamp lit); the series setup matches Ennuste 1 and Tutki, the one correct option (current through a cross-section, voltage between two points) still holds in that circuit, and each distractor's feedback still says why it is wrong (different quantities and units; voltage does not travel along the wire and current flows in every part of a closed circuit; speed of the charge carriers is neither). exit-ticket.json and lesson.md changed only in presentation, no physics touched.
+batch delta review (scope: new pysahdy boxes only): virheraja 0,005·2,00 V + 2·0,01 V = 0,030 V recomputed; short-circuit box and sign box correct.

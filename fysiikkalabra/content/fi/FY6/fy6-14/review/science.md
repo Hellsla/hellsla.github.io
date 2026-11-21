@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 8d94705da168048b
+CONTENT-HASH: e68c2f66a2910310
 
 ## Blocking
 
 ## Polish
-- none.
+
+## Vanhan sisällön löydökset
+- Ei löydöksiä boksien ympäriltä luetusta kontekstista.
 
 ## Checked
-batch delta review: kertaus reworded to the LED's series resistor, numbers unchanged (3,0 V : 0,015 A = 200 Ω; 0,20 and 45 Ω distractors right); worked-example split only.
+batch delta review (scope: new pysahdy boxes only): 0,30 V below Si threshold 0,6–0,7 V (line 303), zero power at open circuit, (3,3 − 1,8)/0,010 = 150 Ω recomputed.

@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: cc76053817aad1ee
+CONTENT-HASH: fd032ec9a58a06e7
 
 ## Blocking
 
 ## Polish
-- `lesson-answers.py` comment calls 535 'W'; it is Ω (the feedback itself says Ω correctly).
+
+## Vanhan sisällön löydökset
 
 ## Checked
-batch delta review: retrieval P = UI = 230 V · 0,43 A = 98,9 ≈ 99 W; 230 : 0,43 = 535 ≈ 530 Ω (two figures), 0,43 W distractor; feedbacks correct, one correct option; exit-ticket and lesson reflow only.
+batch delta review (scope: new pysahdy boxes only): 3 boxes; 0,060 kW · 5,0 h = 0,30 kWh, 2,0 kWh = 7,2 MJ, 230 V · 0,50 A · 2,0 h = 0,23 kWh recomputed; figures right. Hash identical at start and end.

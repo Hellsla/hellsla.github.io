@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3d605b0189ef608f
+CONTENT-HASH: 08faaee1e3c84178
 
 ## Blocking
 
 ## Polish
 
+## Vanhan sisällön löydökset
+- Ei löydöksiä boksien ympäriltä luetusta kontekstista.
+
 ## Checked
-- delta: Yleinen virhekäsitys "sisäenergiakseen" → "sisäenergiaksi": grammar fix only; "vastus muuttaa sähköenergiaa sisäenergiaksi" follows the energy guardrail (P1), charge conservation and "potentiaali pienenee, ei virta" unchanged; no number or symbol changed.
+batch delta review (scope: new pysahdy boxes only): current law 0,80 − 0,30 = 0,50 A, wire voltage ≈ 0, voltage law 12 − 5,0 = 7,0 V recomputed.

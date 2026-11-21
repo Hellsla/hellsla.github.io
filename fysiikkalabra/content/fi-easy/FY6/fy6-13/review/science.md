@@ -1,11 +1,12 @@
-VERDICT: PASS
-CONTENT-HASH: eb1764066450eea3
+VERDICT: FAIL
+CONTENT-HASH: c3fee9708a16848c
 
 ## Blocking
+- lesson.md:298–300 box 2 (A, significant figures): the data 3 MV/m has one significant figure (table row 'ilma … 3'), but the answer is given as 3,0 kV with two. Write 'noin 3 kV', or give the field as 3,0 MV/m in the question.
 
 ## Polish
-- The retrieval writes energy as E = Pt (as the cited chapter does) while this lesson writes energy W and uses E for field strength; a word 'energia E' is there, so not misleading, but W would match the lesson.
-- `lesson-answers.py` keeps the old kertaus keys (150 kV/m) beside the new ones; dead lines.
+
+## Vanhan sisällön löydökset
 
 ## Checked
-batch delta review: retrieval E = Pt = 4000 W · 0,0010 s = 4,0 J; distractors 4,0 kJ (ms not converted) and 4,0 mJ (kW as W) recomputed, feedback correct; one correct option; worked-example stage split only.
+batch delta review (scope: new pysahdy boxes only): 3 boxes; polarisation weakens the field at constant Q so U falls and C = Q/U grows (matches the paragraph), U_max = E_max d = 3 kV, W = ½ · 10 µF · (20 V)² = 2,0 mJ recomputed. Hash identical at start and end.

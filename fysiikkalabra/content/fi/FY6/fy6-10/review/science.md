@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a6a36ad2b2846b2c
+CONTENT-HASH: 831d50c594fe42ed
 
 ## Blocking
 
 ## Polish
-- none.
+- Box 2 substitutes bare numbers and appends N; the house form substitutes with units.
+
+## Vanhan sisällön löydökset
+- Ei löydöksiä boksien ympäriltä luetusta kontekstista.
 
 ## Checked
-batch delta review: qualitative kertaus: like charges repel, one correct option; the cited chapter Virtapiiri, sähkövirta ja jännite states the rule (checked fy6-1 lesson.md); insulator-charging feedback correct; the removed numeric line in lesson-answers.py leaves no orphan.
+batch delta review (scope: new pysahdy boxes only): Q = ne quantisation (C-level, fine), k·(1,0·10⁻⁶)²/0,30² = 0,0999 → 0,10 N, symmetric line charges give zero force.

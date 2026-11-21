@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 723f22b94a51b580
+CONTENT-HASH: e021b14607dd64dd
 
 ## Blocking
 
 ## Polish
 
+## Vanhan sisällön löydökset
+
 ## Checked
-batch delta review: new retrieval W = Fs with force along the motion: 2,0·10⁻¹⁵ N · 0,50 m = 1,0·10⁻¹⁵ J; distractors 4,0·10⁻¹⁵ J (F:s) and 2,0·10⁻¹⁵ J (s ignored) with correct feedback; chapter Työ ja energia exists; one correct option; exit ticket reflow only.
+batch delta review (scope: new pysahdy boxes only): 3 boxes; zero level does not change work, 45 eV (only-electric-work condition stated), 2,0 nC · 50 V = 1,0·10⁻⁷ J recomputed. Hash identical at start and end.

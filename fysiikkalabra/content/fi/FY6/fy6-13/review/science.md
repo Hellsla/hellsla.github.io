@@ -1,10 +1,13 @@
-VERDICT: PASS
-CONTENT-HASH: 1b55c46d29071dfd
+VERDICT: FAIL
+CONTENT-HASH: 2b4ef0626743f363
 
 ## Blocking
+- Box 2 (line 300): data 3 MV/m has one significant figure (table line 283 gives 3), but the answer is 3,0 kV (two). A limit value ('kestää') with one-figure data: answer 'noin 3 kV', or give the field as 3,0 MV/m in the question (A, significant figures).
 
 ## Polish
-- kertaus uses E = Pt for energy in a chapter where E is the field strength (E = U/d) and the capacitor's energy is W; writing W = Pt here would avoid the clash.
+
+## Vanhan sisällön löydökset
+- Ei löydöksiä boksien ympäriltä luetusta kontekstista.
 
 ## Checked
-batch delta review: kertaus E = Pt = 4000 W · 0,0010 s = 4,0 J (4,0 kJ ms not converted, 4,0 mJ kW taken as W), one correct option, forward link to the capacitor sound; worked-example split only.
+batch delta review (scope: new pysahdy boxes only): polarisation box matches line 152; ½·10·10⁻⁶ F·(20 V)² = 2,0 mJ recomputed; 3·10⁶·1,0·10⁻³ = 3·10³ V.
