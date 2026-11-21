@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ea97359e1b67377f
+CONTENT-HASH: da7c9eacab3aeb35
+
 ## Blocking
+(ei ole)
 
 ## Polish
-- none
+- Ruutu 1 (rauta-56) on kuvan jälkeen, ei sidosenergiakuvaajan; vastaus nojaa aiempaan lukuun *Massavaje ja ytimen sidosenergia*, mikä riittää.
+
+## Vanhan sisällön löydökset
+(ei löydöksiä)
+
 ## Checked
-batch delta review: U-235 mass-defect prompt (92 p, 143 n, 235 nucleons) consistent with feedback and the chapter's fission context.
+batch delta review: kolme uutta Pysähdy ja mieti -ruutua luettu ympäröivän tekstin kanssa; kysymys testaa edellisen kappaleen ideaa, vastaus on mallivastaus perusteluineen ja vastattavissa siihen mennessä luetulla.

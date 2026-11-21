@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 51057c3079dc6de3
-
-Round 1 (delta): paragraph cuts and wording in lesson.md and inquiry.json.
+CONTENT-HASH: f5b30282046b5ef2
 
 ## Blocking
-- None.
+(none)
 
 ## Polish
-- None.
+(none)
+
 
 ## Checked
-- Opened theory-1280-1 and theory-1280-3 (cut paragraphs, both figures beside their text, photo, display formula N/t = P/hf, misconception and summary lists) and stage-ennusta-390-1 (prediction text at 390 px, inline maths and units in LaTeX). Layout survived; paragraphs short, no clipping.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: opened fy8-4-theory-1280-* (3 new Stop and think boxes) and the 390 px fy8-4-stage-selita-390-* captures: boxes render as a green-edged card with label, question and closed Answer toggle, formulas and units in KaTeX, no clipping, layout around them intact.

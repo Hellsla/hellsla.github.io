@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6933dd145d981068
+CONTENT-HASH: 664ecccfbff46bde
+
 ## Blocking
+(ei ole)
 
 ## Polish
-- none
+- Ruutu 3 (alfahajoaminen) on gammafotonin aallonpituuden kaavan jälkeen, vaikka aihe on alfahajoaminen; sijoitus on irrallaan kappaleesta.
+
+## Vanhan sisällön löydökset
+(ei löydöksiä)
+
 ## Checked
-batch delta review: Kertaa-task rewritten (ionisation, 13,6 eV): fits the smoke-detector phenomenon; distractors (n=2 10,2 eV, sum, zero) are real misconceptions, each feedback repairs; figures/captures untouched in substance.
+batch delta review: kolme uutta Pysähdy ja mieti -ruutua luettu ympäröivän tekstin kanssa; kysymys testaa edellisen kappaleen ideaa, vastaus on mallivastaus perusteluineen ja vastattavissa siihen mennessä luetulla.

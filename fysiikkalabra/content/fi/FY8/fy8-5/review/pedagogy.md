@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 582d3e8f8eaed80e
+CONTENT-HASH: 33e13819be740816
+
 ## Blocking
-- none
+(ei ole)
+
 ## Polish
-- none
+- Ei huomautettavaa.
+
+## Vanhan sisällön löydökset
+(ei löydöksiä)
+
 ## Checked
-batch delta review: Retrieval prompt adds a short bridge from chemistry's electron clouds to the double slit; clear and fits the lesson's start.
+batch delta review: kolme uutta Pysähdy ja mieti -ruutua luettu ympäröivän tekstin kanssa; kysymys testaa edellisen kappaleen ideaa, vastaus on mallivastaus perusteluineen ja vastattavissa siihen mennessä luetulla.
