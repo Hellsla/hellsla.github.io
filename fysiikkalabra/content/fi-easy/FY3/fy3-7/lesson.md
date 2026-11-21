@@ -3,135 +3,14 @@
 > **Miksi** normaalissa ilmanpaineessa kiehuvan veden lämpötila pysyy noin $100\,{}^\circ\text{C}$:ssa, vaikka kattilaan siirtyy koko ajan energiaa?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: keittiön liedellä on kattila, jossa vesi kiehuu voimakkaasti. Levy hehkuu punaisena, ja siitä siirtyy koko ajan energiaa kattilaan. Vedessä on kuplia, ja siitä nousee höyryä. Veteen upotetun lämpömittarin pylväs pysyy samalla korkeudella." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy37h-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy37h-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><radialGradient id="fy37h-glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0.55" stop-color="#c92a2a"/><stop offset="0.8" stop-color="#e8590c"/><stop offset="1" stop-color="#ffc078" stop-opacity="0"/></radialGradient><linearGradient id="fy37h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="#ffffff"/>
-  <line x1="0" y1="0" x2="0" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="75" y1="0" x2="75" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="150" y1="0" x2="150" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="225" y1="0" x2="225" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="300" y1="0" x2="300" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="375" y1="0" x2="375" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="450" y1="0" x2="450" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="525" y1="0" x2="525" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="600" y1="0" x2="600" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="675" y1="0" x2="675" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="750" y1="0" x2="750" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="825" y1="0" x2="825" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="900" y1="0" x2="900" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="975" y1="0" x2="975" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1050" y1="0" x2="1050" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1125" y1="0" x2="1125" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1200" y1="0" x2="1200" y2="420" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="0" x2="1200" y2="0" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="75" x2="1200" y2="75" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="150" x2="1200" y2="150" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="225" x2="1200" y2="225" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="300" x2="1200" y2="300" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="375" x2="1200" y2="375" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="70" y="50" width="230" height="270" rx="4" fill="url(#fy37h-sky)" stroke="#1f2933" stroke-width="3"/>
-  <path d="M70,282 Q140,250 200,272 T300,262 V320 H70 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <line x1="185" y1="50" x2="185" y2="320" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="70" y1="185" x2="300" y2="185" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="58" y="320" width="254" height="14" rx="3" fill="#c9c2b2" stroke="#1f2933" stroke-width="3"/>
-  <rect x="0" y="420" width="1200" height="26" fill="#c9c2b2" stroke="#1f2933" stroke-width="3"/>
-  <rect x="0" y="446" width="1200" height="154" fill="#e3dccb"/>
-  <line x1="300" y1="446" x2="300" y2="600" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="900" y1="446" x2="900" y2="600" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="266" y="470" width="8" height="44" rx="4" fill="#8a96a3"/>
-  <rect x="326" y="470" width="8" height="44" rx="4" fill="#8a96a3"/>
-  <rect x="866" y="470" width="8" height="44" rx="4" fill="#8a96a3"/>
-  <rect x="926" y="470" width="8" height="44" rx="4" fill="#8a96a3"/>
-  <rect x="340" y="404" width="520" height="22" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <rect x="340" y="446" width="520" height="154" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <rect x="370" y="476" width="460" height="110" rx="6" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="400" cy="461" r="9" fill="#1f2933"/>
-  <circle cx="460" cy="461" r="9" fill="#1f2933"/>
-  <circle cx="740" cy="461" r="9" fill="#1f2933"/>
-  <circle cx="800" cy="461" r="9" fill="#1f2933"/>
-  <ellipse cx="600" cy="404" rx="210" ry="18" fill="url(#fy37h-glow)"/>
-  <path d="M440,236 V380 Q440,404 470,404 H730 Q760,404 760,380 V236 Z" fill="url(#fy37h-steel)" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M440,262 H398 Q392,262 392,272 V276 Q392,284 398,284 H440 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M760,262 H802 Q808,262 808,272 V276 Q808,284 802,284 H760 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <ellipse cx="600" cy="236" rx="160" ry="30" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <ellipse cx="600" cy="242" rx="146" ry="22" fill="url(#fy37h-water)"/>
-  <circle cx="520" cy="240" r="9" fill="#ffffff" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="556" cy="248" r="6" fill="#ffffff" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="600" cy="236" r="11" fill="#ffffff" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="640" cy="250" r="7" fill="#ffffff" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="680" cy="240" r="9" fill="#ffffff" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="575" cy="254" r="5" fill="#ffffff" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="712" cy="248" r="5" fill="#ffffff" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="494" cy="248" r="5" fill="#ffffff" stroke="#2f74b5" stroke-width="2"/>
-  <path d="M520,214 c18,-30 -18,-50 0,-80 s-18,-50 0,-24" fill="none" stroke="#c9c2b2" stroke-width="26" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.55"/>
-  <path d="M520,214 c18,-30 -18,-50 0,-80 s-18,-50 0,-24" fill="none" stroke="#ffffff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M585,214 c-18,-30 18,-50 0,-80 s18,-50 0,-84" fill="none" stroke="#c9c2b2" stroke-width="26" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.55"/>
-  <path d="M585,214 c-18,-30 18,-50 0,-80 s18,-50 0,-84" fill="none" stroke="#ffffff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M650,214 c18,-30 -18,-50 0,-80 s-18,-50 0,-54" fill="none" stroke="#c9c2b2" stroke-width="26" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.55"/>
-  <path d="M650,214 c18,-30 -18,-50 0,-80 s-18,-50 0,-54" fill="none" stroke="#ffffff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M700,214 c-18,-30 18,-50 0,-80 s18,-50 0,6" fill="none" stroke="#c9c2b2" stroke-width="26" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.55"/>
-  <path d="M700,214 c-18,-30 18,-50 0,-80 s18,-50 0,6" fill="none" stroke="#ffffff" stroke-width="20" stroke-linejoin="round" stroke-linecap="round"/>
-  <g transform="rotate(18 760 150)">
-  <rect x="751" y="40" width="18" height="230" rx="9" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <rect x="756" y="176" width="8" height="94" fill="#c92a2a"/>
-  <line x1="769" y1="70" x2="777" y2="70" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="769" y1="92" x2="777" y2="92" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="769" y1="114" x2="777" y2="114" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="769" y1="136" x2="777" y2="136" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="769" y1="158" x2="777" y2="158" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="769" y1="180" x2="777" y2="180" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  </g>
-  <ellipse cx="600" cy="242" rx="146" ry="22" fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.6"/>
+  <image href="pics/fy3/fy3-7-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Ydinajatus
 Aine esiintyy kolmessa olomuodossa: kiinteänä, nesteenä ja kaasuna. Mikromallissa ainetta ajatellaan hiukkasina. Kiinteässä aineessa hiukkaset värähtelevät paikoillaan, koska ne sitovat toisensa. Nesteessä hiukkaset liikkuvat toistensa ohi, mutta ne pysyvät yhdessä. Kaasussa hiukkaset liikkuvat vapaasti ja törmäilevät vain harvoin. Olomuodon muutoksessa hiukkasten keskinäiset vuorovaikutukset muuttuvat. Sulamisessa kiinteän aineen säännöllinen järjestys purkautuu. Höyrystymisessä hiukkaset etääntyvät kauas toisistaan. Hiukkaset itse eivät muutu. Kun jää sulaa tai vesi kiehuu, vesimolekyylien sisäiset kemialliset sidokset eivät katkea. Vastakkaiset muutokset ovat jähmettyminen ja tiivistyminen. Jää voi myös sublimoitua eli muuttua suoraan höyryksi. Niin käy pakkasella kuivuvalle pyykille.
 
 <svg data-fig="micro-model" viewBox="0 0 600 306" role="img" aria-label="Mikromalli, kaavakuva: kiinteässä aineessa hiukkaset ovat säännöllisessä järjestyksessä ja kiinni toisissaan. Nesteessä ne ovat epäjärjestyksessä, mutta ne ovat yhä kosketuksissa. Kaasussa ne ovat kaukana toisistaan ja liikkuvat vapaasti. Nuolet: kiinteä sulaa nesteeksi, neste höyrystyy kaasuksi." style="max-width:100%;font-size:24px">
-  <defs><radialGradient id="fy37-ball" cx="0.35" cy="0.35" r="0.75"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#a9d1f0"/></radialGradient></defs>
-  <rect x="20" y="92" width="150" height="150" rx="6" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
-  <rect x="225" y="92" width="150" height="150" rx="6" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
-  <rect x="430" y="92" width="150" height="150" rx="6" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="50" cy="122" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="80" cy="122" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="110" cy="122" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="140" cy="122" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="50" cy="152" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="80" cy="152" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="110" cy="152" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="140" cy="152" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="50" cy="182" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="80" cy="182" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="110" cy="182" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="140" cy="182" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="50" cy="212" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="80" cy="212" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="110" cy="212" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="140" cy="212" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="247" cy="226" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="275" cy="224" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="303" cy="227" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="331" cy="224" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="357" cy="226" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="261" cy="200" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="289" cy="199" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="318" cy="202" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="346" cy="198" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="250" cy="174" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="278" cy="172" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="307" cy="176" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="336" cy="172" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="458" cy="120" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="545" cy="130" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="500" cy="172" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="462" cy="218" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <circle cx="552" cy="212" r="13" fill="url(#fy37-ball)" stroke="#2f74b5" stroke-width="2"/>
-  <line x1="472" y1="125" x2="494" y2="133" stroke="#6b7480" stroke-width="2" stroke-linecap="round"/>
-  <line x1="536" y1="142" x2="522" y2="162" stroke="#6b7480" stroke-width="2" stroke-linecap="round"/>
-  <line x1="496" y1="187" x2="489" y2="209" stroke="#6b7480" stroke-width="2" stroke-linecap="round"/>
-  <line x1="460" y1="205" x2="456" y2="181" stroke="#6b7480" stroke-width="2" stroke-linecap="round"/>
-  <line x1="539" y1="222" x2="520" y2="234" stroke="#6b7480" stroke-width="2" stroke-linecap="round"/>
-  <path d="M178,173 L200,173 L200,180 L218,167 L200,154 L200,161 L178,161 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <path d="M383,173 L405,173 L405,180 L423,167 L405,154 L405,161 L383,161 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <image href="pics/fy3/fy3-7-micro-model.webp" x="1.2" y="0" width="597" height="317.2" preserveAspectRatio="none"/>
   <foreignObject x="163" y="47.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{sulaa}$</div></foreignObject>
   <foreignObject x="343" y="47.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{höyrystyy}$</div></foreignObject>
   <foreignObject x="47.5" y="259.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kiinteä}$</div></foreignObject>
@@ -306,44 +185,5 @@ Moni luulee, että lämmön lisääminen nostaa aina lämpötilaa. Kun puhtaan a
 - Ominaishöyrystymislämpö voidaan mitata kiehuttamalla vettä uppokuumentimella vaa'an päällä: $r = Pt/\Delta m$. Tässä $\Delta m$ on vaa'an lukeman muutos.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: järvi jäätyy alkutalvella. Rannan lähellä on jo ohut jääkansi. Kauempana vesi on vielä sulana. Rannalla on ensilumi." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy37s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="fy37s-lake" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="200" fill="url(#fy37s-sky)"/>
-  <path d="M0,190 L10.5,162.5 L20.5,190 L32,158.5 L43.5,190 L54,162 L64.5,190 L79.5,146.5 L94.5,190 L107.5,153.5 L120,190 L135,146.5 L150,190 L163.5,152 L176.5,190 L186,166 L195,190 L209.5,148 L224,190 L233,168 L242,190 L252.5,162 L262.5,190 L276.5,150.5 L290,190 L303,153.5 L316,190 L325.5,166 L335,190 L343.5,167.5 L352.5,190 L362.5,164 L372.5,190 L384.5,157 L396,190 L408,158 L419.5,190 L429,165.5 L438.5,190 L447,168.5 L455.5,190 L465,166 L474.5,190 L487,153.5 L500,190 L514,149.5 L528.5,190 L538,164.5 L548,190 L557.5,165 L567,190 L576.5,167 L585.5,190 L601,144 L616.5,190 L625.5,167.5 L634.5,190 L648.5,149 L662.5,190 L674,159.5 L685,190 L699,150.5 L712.5,190 L727,148 L741.5,190 L753.5,156.5 L765.5,190 L775,165.5 L784.5,190 L795.5,159.5 L807,190 L820.5,152 L833.5,190 L849,145.5 L864,190 L873.5,166 L882.5,190 L896,152.5 L909,190 L920,160 L931,190 L942,160 L953.5,190 L966.5,152.5 L979.5,190 L988.5,167 L997.5,190 L1006.5,168 L1015.5,190 L1025.5,163.5 L1035.5,190 L1047,159 L1058,190 L1069,161.5 L1079.5,190 L1090.5,160 L1101.5,190 L1112.5,159 L1124,190 L1137,154 L1149.5,190 L1160,161.5 L1171,190 L1183,156 L1195,190 L1208,154 L1220.5,190 V210 H0 Z" fill="#8a96a3" stroke-linejoin="round"/>
-  <rect x="0" y="200" width="600" height="160" fill="url(#fy37s-lake)"/>
-  <path d="M0,240 Q200,226 340,252 Q420,268 600,256 V360 H0 Z" fill="#a5d8ff" stroke-linejoin="round"/>
-  <path d="M0,240 Q200,226 340,252 Q420,268 600,256" fill="none" stroke="#4f8fbf" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M60,290 L120,300 L150,280" fill="none" stroke="#4f8fbf" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M220,320 L260,296 L320,310" fill="none" stroke="#4f8fbf" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M400,300 L460,320" fill="none" stroke="#4f8fbf" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M0,300 Q120,290 220,312 Q320,334 340,360 H0 Z" fill="#ffffff" stroke="#c9c2b2" stroke-width="2" stroke-linejoin="round"/>
-  <circle cx="33.5" cy="119" r="3.4629" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="93.5" cy="169" r="3.30757" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="67" cy="1" r="2.79157" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="486" cy="31.5" r="3.38204" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="119.5" cy="72.5" r="2.78836" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="112.5" cy="99.5" r="2.47956" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="408" cy="42.5" r="3.02741" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="559" cy="176" r="2.80912" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="403" cy="154" r="2.6997" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="585" cy="185" r="2.05873" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="523" cy="159" r="3.35024" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="316.5" cy="42.5" r="3.40837" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="553" cy="45" r="2.92725" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="315.5" cy="117" r="3.16691" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="192" cy="45.5" r="2.93306" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="411" cy="179.5" r="3.15885" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="323.5" cy="12" r="3.2299" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="280" cy="92.5" r="2.47649" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="23.5" cy="164.5" r="2.26128" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="540" cy="29.5" r="3.41522" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="563.5" cy="76" r="3.48626" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="371" cy="90.5" r="2.9777" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="467" cy="141.5" r="3.39875" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="373" cy="40" r="2.88093" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="463.5" cy="23" r="3.01105" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="492" cy="88" r="2.96149" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="190.5" cy="93.5" r="2.34681" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="104.5" cy="36.5" r="3.16685" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="566" cy="129.5" r="3.30632" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
-  <circle cx="594.5" cy="167.5" r="3.41626" fill="#ffffff" stroke="#4f8fbf" stroke-width="1"/>
+  <image href="pics/fy3/fy3-7-scene.webp" x="0" y="0" width="600" height="360" preserveAspectRatio="none"/>
 </svg>

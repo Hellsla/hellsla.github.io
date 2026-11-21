@@ -191,6 +191,7 @@ Varattu: claude/22-taulukko-kuva
 Jaettu (build.py / site.css), yksin, #740:n ja #733:n jälkeen ennen kohtaa 21 (opettaja 2026-11-19). Kun tehtäväkortissa on pieni taulukko ja kuva peräkkäin ja ne mahtuvat, ne asettuvat vierekkäin leveällä näytöllä (sääntö "Figures, photos and small tables beside what they explain"); puhelimella allekkain. Samalla taulukon otsikko ei rivity kapeaksi eikä taulukkolaatikkoon jää tyhjää oikeaa reunaa. Malli fy8-3 (fotonit A–E ja energiatasot). check_layout.py-tarkistus uudelle asettelulle; ennen/jälkeen-kuvat 1280 ja 390 px opettajalle. **Kuvat hyväksytty: opettaja 2026-11-19 klo 12.4x ("hyväksyn kuvat").**
 
 ## 24. Uudet kuvat sivustolle (opettaja 2026-11-19; kuvat hyväksytty 15.–18.11.)
+Varattu: claude/24-osa3-fy3 (osa 3, FY3, draft-PR)
 Osa 1 (kuvapohja) ja FY2-pilotti tehty (#768, `scripts/figimage.py`, NOTES.md §3); osat 2–11 vapaat.
 662 Codexin uudelleen piirtämää kuvaa FY1–FY10 ja FY14, opettaja hyväksynyt ja tarkistanut vaihdettaviksi. Lähde: haara
 `claude/dazzling-pasteur-kws2vo`, kansio `uudet_kuvat/` (README, `<MODUULI>-hyvaksytyt-kuvat.zip`: `kuvat/`, `merkinnoin/`,
@@ -208,7 +209,9 @@ jää kuvioinnin päällä (opettaja 15.11.; `merkinnoin/` näyttää lopputulok
 `ci_scope.py` (uusi tiedostolaji), NOTES.md §3. Pilotti FY2 (20 kuvaa) ennen/jälkeen kaikilla kielillä; erikseen
 `fy2-7/district`, `fy2-7/grid`, `fy2-7/storage` (en poikkeaa fi:stä).
 **Osa 1 + FY2-pilotti (#768) hyväksytty: opettaja 2026-11-20 klo 01.4x ("I approve")**, ennen/jälkeen-kuvat docs/audits/img24/.
+**Osa 3 FY3 (#776) hyväksytty: opettaja 2026-11-21 suoraan tekijäsessioon ("Hyväksyn FY3-kuvat")**, 61 kuvaa, ennen/jälkeen-kuvat docs/audits/img24-fy3/; seitsemän käsin liimattua SVG:tä (`~lesson-N`) ei kuulu tähän, ne tehdään erikseen.
 Osa 2 (FY1) tehty: PR #771 (36 kuvaa, `approve-figures --images` ajettu hyväksynnän jälkeen, site/ rakennettu), odottaa koordinaattorin yhdistämistä.
+Osa 3 FY3 (#776): kolmen kuvan (`fy3-4/water-column`, `fy3-12/earth-flows`, `fy3-12/wall-temperature`) tyhjä paperireuna rajattu viewBoxiin, piirros ennallaan; opettaja 2026-11-21 suoraan tekijäsessioon ("Hyväksyn"), approve-figures fy3-4 ja fy3-12 uudelleen.
 **Osa 2 FY1 (#771) hyväksytty: opettaja 2026-11-20 klo 17.5x ("hyväksytty")**, ennen/jälkeen-kuvat docs/audits/img24-fy1/; approve-figures fy1-1…fy1-8 --images tämän perusteella.
 Osa 4 (FY4, 72 kuvaa) tehty: PR #780, `approve-figures fy4-1…fy4-16 --images` ajettu opettajan luvalla (opettaja 2026-11-21 "Hyväksyn" tähän sessioon; strobe-otsikko siirretty ja virhe-kuva rajattu "On ok"), site/ ja palautus/ rakennettu, ennen/jälkeen docs/audits/img24-fy4/; odottaa koordinaattorin yhdistämistä. Avoin: `fy4-koe/fy4-k1-fbd`, `fy4-koe/fy4-k3-fbd`, `fy4-sovella/fy4-s3-collision` (jaettu figimage-korjaus).
 **Opettaja 2026-11-21 klo 11.0x ("On ok", suositukset):** FY3 (#776): fy3-4/water-column ja fy3-12/earth-flows tyhjä paperireuna rajataan pois kuvatiedostosta, piirros ennallaan; FY3:n 7 käsin liimattua SVG:tä (fy3-13…fy3-16 ~lesson-N) tehdään erikseen myöhemmin (piirros figures.py:hin ennallaan, sitten vaihto). FY4 (#780): fy4-2/strobe otsikkoa "hidastuva liike" siirretään muutama pikseli, ettei se mene v̄:n päälle; fy4-13/virhe tyhjä reuna rajataan; fy4-7/hero hyväksytään sellaisenaan. Lisäksi tilapäinen neljäs tekijä jaetulle korjaukselle (stopthink-kaavarivitys, figimage koe/Sovella).
