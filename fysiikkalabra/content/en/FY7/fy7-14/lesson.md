@@ -192,6 +192,12 @@ Wave 2, reflected from the lower surface, travels through the film and back, so 
 ### A half-wavelength shift on reflection
 The path difference alone does not decide the interference. In the chapter *A wave meets an obstacle or a gap*, a pulse on a rope was inverted when it reflected from a fixed end but not from a free end. A similar rule holds for light: **when light is reflected at an interface beyond which there is a material of higher refractive index, the reflected wave is inverted**, that is, a crest returns as a trough. This corresponds to a half-wavelength shift. When the material beyond the interface has a lower refractive index, the reflected wave is not inverted. In a soap film the reflection from the upper surface occurs from air into the film ($1.00 \to 1.33$), so wave 1 is inverted. The reflection from the lower surface occurs from the film into air ($1.33 \to 1.00$), so wave 2 is not inverted.
 
+```pysahdy
+Light travels in glass ($n = 1.52$) and is reflected at the boundary between the glass and air ($1.52 \to 1.00$). Is the reflected wave inverted?
+---
+No, because behind the boundary there is air, which has a lower refractive index. The wave is inverted only when the material behind has a higher refractive index.
+```
+
 ### A very thin film is black
 When a soap film is much thinner than the wavelength, the path difference is almost zero. However, wave 1 has been inverted and wave 2 has not, so the waves are in opposite phase and cancel each other. In the ideal case a very thin soap film reflects only very little light, so in reflected light it looks dark or almost black. This is why a black spot appears at the top of a soap bubble just before it bursts. When the film is so thick that $2nd = \tfrac{1}{2}\lambda$, wave 2 lags half a wavelength behind, which corresponds to an inversion. The waves are then in phase and strengthen each other.
 
@@ -373,6 +379,12 @@ A soap bubble is not equally thick everywhere. Gravity drains the soapy water do
 
 <figure class="unit-photo"><img src="pics/fy7/soap-bubble-colours.webp" alt="A close-up of a soap film: orange, blue and violet swirls against a dark background."><figcaption>Interference colours in a soap film. The thickness of the film varies from place to place, and at each point the colour that is reinforced is the one for which the path difference of the two reflections is right.</figcaption></figure>
 
+```pysahdy
+Why are no interference colours seen in window glass, although it also reflects light from two surfaces?
+---
+The glass is so thick that there are very many strengthened and weakened wavelengths in the visible range. The colours mix into white.
+```
+
 ## Formula: Thin-film interference
 When light arrives at normal incidence on a film, the optical path difference between the waves reflected from the two surfaces of the film is
 ```latex
@@ -388,6 +400,12 @@ where $n$ is the refractive index of the film, $d$ the thickness of the film and
 \end{aligned}
 ```
 where $k = 0, 1, 2, \ldots$ When both reflections invert the wave, as in the coating of a lens whose refractive index lies between those of air and glass, the inversions cancel each other. The conditions then swap places: $2nd = k\lambda$ is constructive and $2nd = (k + \tfrac{1}{2})\lambda$ is destructive. The same holds when neither reflection inverts the wave.
+
+```pysahdy
+A soap film ($n = 1.33$) is $125\,\text{nm}$ thick, and light arrives at normal incidence from air. Which wavelength is strengthened when $k = 0$?
+---
+The path difference is $2nd = 2 \cdot 1.33 \cdot 125\,\text{nm} = 332.5\,\text{nm}$. From $2nd = \tfrac{1}{2}\lambda$ we get $\lambda = 665\,\text{nm}$, so red light is strengthened.
+```
 
 ### Anti-reflection coating
 Ordinary glass ($n = 1.52$) reflects about $4\,\%$ of light arriving at normal incidence from each of its surfaces. A camera objective has many lenses, so the reflections weaken the image and cause ghost images in it. In spectacles the reflection is seen as glare. An **anti-reflection coating** is a thin film evaporated onto the surface of the glass, for example magnesium fluoride $\text{MgF}_2$, whose refractive index is $1.38$ at a wavelength of $550\,\text{nm}$ (Dodge, *Applied Optics*, 1984). Both reflections of the coating occur at a material of higher refractive index ($1.00 \to 1.38 \to 1.52$), so the destructive condition is $2nd = (k + \tfrac{1}{2})\lambda$. For the thinnest coating $k = 0$, and its thickness is a quarter of the wavelength in the coating:

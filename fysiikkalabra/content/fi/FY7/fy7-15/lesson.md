@@ -246,6 +246,12 @@ Auringon, kynttilän ja hehkulampun valo on **polarisoimatonta**. Sitä lähett�
   <foreignObject x="474" y="289.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\tfrac{1}{2} I_0$</div></foreignObject>
 </svg>
 
+```pysahdy
+Polarisoimattoman valon intensiteetti on $600\,\text{W/m}^2$. Valo tulee ihanteelliseen polarisaattoriin. Mikä on intensiteetti kalvon jälkeen ja mihin suuntaan läpi tullut valo on polarisoitunut?
+---
+Ihanteellinen polarisaattori päästää läpi puolet intensiteetistä, joten intensiteetti on $\tfrac{1}{2} \cdot 600\,\text{W/m}^2 = 300\,\text{W/m}^2$. Läpi tullut valo on polarisoitunutta kalvon läpäisysuuntaan.
+```
+
 ### Kaksi polarisaattoria
 Kun polarisoituneen valon tielle asetetaan toinen polarisaattori, sitä sanotaan **analysaattoriksi**. Jos analysaattorin läpäisysuunta on sama kuin valon polarisaatiosuunta, kaikki valo pääsee läpi. Kun analysaattoria kierretään, läpi tulevan valon intensiteetti pienenee. Kun läpäisysuunnat ovat kohtisuorassa toisiaan vastaan eli polarisaattorit ovat ristissä, ihanteellisten kalvojen läpi ei pääse valoa lainkaan. Kahdella polarisaattorikalvolla voi siis tutkia, onko valo polarisoitunutta ja mihin suuntaan: kun valo on polarisoitunutta, sen kirkkaus vaihtelee kalvoa kierrettäessä. Polarisoimattoman valon kirkkaus ei kalvoa kierrettäessä muutu. Jos ristissä olevien polarisaattorien väliin asetetaan vinoon kolmas kalvo, valoa pääsee taas läpi, koska keskimmäisen kalvon jälkeen valolla on komponentti myös viimeisen kalvon läpäisysuunnassa.
 
@@ -393,6 +399,12 @@ Kun polarisoimaton valo heijastuu eristeen, esimerkiksi veden, lasin tai märän
   <line x1="462" y1="50" x2="444" y2="82" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
+```pysahdy
+Kalastaja katsoo järveä polaroiduilla aurinkolaseilla, joiden läpäisysuunta on pystysuora, ja häikäisy on poissa. Hän kallistaa päänsä sivulle niin, että lasit kääntyvät $90^\circ$. Mitä häikäisylle tapahtuu ja miksi?
+---
+Häikäisy palaa. Lasien läpäisysuunta on nyt vaakasuora, joten heijastuneen valon vaakasuuntainen värähtely pääsee läpi.
+```
+
 ### Näytöt ja 3D-elokuvat
 Nestekidenäytön jokaisen kuvapisteen takana ja edessä on polarisaattorikalvo. Niiden välissä oleva nestekide voi kääntää valon polarisaatiosuuntaa, ja kuvapisteen jännite säätää, kuinka paljon. Näin kuvapisteen läpi pääsevän valon määrä muuttuu ilman liikkuvia osia. Myös monien puhelinten näyttöjen pinnassa on polarisaattorikalvo, joten näytön valo on polarisoitunutta. Siksi näyttö voi näyttää mustalta polaroitujen aurinkolasien läpi, kun näyttöä tai päätä kääntää. 3D-elokuvassa valkokankaalle projisoidaan samaan aikaan kaksi kuvaa, joiden valo on polarisoitunut eri tavoin. Lasien kumpikin linssi päästää läpi vain toisen kuvan valon, joten kumpikin silmä näkee oman kuvansa. Usein käytetään ympyräpolarisaatiota, jossa sähkökentän suunta kiertyy, jotta kuva ei häiriinny, kun katsoja kallistaa päätään.
 
@@ -478,6 +490,12 @@ missä $I_0$ on analysaattoriin tulevan polarisoituneen valon intensiteetti ($\t
   <line x1="92" y1="232.5" x2="229.5" y2="232.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <circle cx="229.5" cy="232.5" r="6.5" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
 </svg>
+
+```pysahdy
+Polarisoituneen valon intensiteetti on $200\,\text{W/m}^2$, ja analysaattorin läpäisysuunta on $60^\circ$:n kulmassa valon polarisaatiosuuntaan nähden. Kuinka suuri on intensiteetti analysaattorin jälkeen?
+---
+Malusin lain mukaan $I = I_0 \cos^2\theta = 200\,\text{W/m}^2 \cdot \cos^2 60^\circ = 200\,\text{W/m}^2 \cdot 0{,}25 = 50\,\text{W/m}^2$.
+```
 
 ### Malusin lain tutkiminen mittaamalla
 Malusin lakia voi tutkia esimerkiksi puhelimen näytöllä, jonka valo on polarisoitunutta. Näytön eteen asetetaan polarisaattorikalvo ja sen taakse valoanturi. Kalvoa kierretään esimerkiksi $15^\circ$:n välein, ja kulma ja anturin lukema kirjataan. Kun lukemat piirretään $\cos^2\theta$:n funktiona, pisteiden pitäisi asettua suoralle. Anturi mittaa valaistusvoimakkuutta $E$ luksiyksikössä ($\text{lx}$), ja se on verrannollinen valon intensiteettiin. Huoneen taustavalo nostaa kaikkia lukemia saman verran, joten suora ei kulje origon kautta. Suoran vakiotermi on taustavalon osuus, ja kulmakerroin on lukema, jonka näytön polarisoitunut valo yksinään antaa, kun kalvo on näytön polarisaation suuntainen. Kulman epävarmuus $\Delta\theta$ on muutaman asteen luokkaa, koska kalvon läpäisysuuntaa ei tiedetä tarkasti. Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi.

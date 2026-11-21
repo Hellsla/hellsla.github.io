@@ -218,6 +218,12 @@ Sähkömagneettisessa aallossa sähkökenttä $\overline{E}$ ja magneettikenttä
   <foreignObject x="537" y="134.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$c$</div></foreignObject>
 </svg>
 
+```pysahdy
+Radioaalto ja röntgensäteily etenevät molemmat tyhjiössä. Kumpi etenee nopeammin?
+---
+Yhtä nopeasti. Kaikki sähkömagneettiset aallot etenevät tyhjiössä valon nopeudella $c$, vaikka aallonpituudet ovat hyvin erilaiset.
+```
+
 ### Aallonpituus ja taajuus
 Kuten mekaaninen aalto, sähkömagneettinen aalto etenee yhden jaksonajan aikana yhden aallonpituuden verran. Siksi valon nopeus, aallon taajuus ja aallonpituus liittyvät toisiinsa:
 ```kaavat
@@ -338,6 +344,12 @@ Aineen hiukkaset ovat jatkuvassa lämpöliikkeessä, ja niiden varaukset ovat ki
 
 <figure class="unit-photo"><img src="pics/fy7/sparkler.webp" alt="Palava tähtisadetikku mustaa taustaa vasten; keskeltä sinkoaa joka suuntaan haarautuvia kellertävän valkoisia kipinäviivoja."><figcaption>Tähtisadetikun kipinät ovat hehkuvia metallihiukkasia. Ne ovat paljon kuumempia kuin punaisena hehkuva laava, joten niiden säteilyssä on runsaasti lyhyempiä aallonpituuksia ja ne näyttävät kellertävän valkoisilta.</figcaption></figure>
 
+```pysahdy
+Huoneenlämpöinen metallikappale säteilee jatkuvasti, mutta pimeässä sitä ei näe. Miksi ei?
+---
+Huoneenlämpöinen kappale säteilee lähes pelkästään infrapunaa, jota silmä ei näe. Näkyvää valoa tulee vasta, kun kappale on kuumentunut noin $800\,\text{K}$:n lämpötilaan.
+```
+
 ### Musta kappale
 **Musta kappale** on ihannekappale, joka imee kaiken siihen osuvan säteilyn eikä heijasta mitään. Sen lähettämän säteilyn spektri riippuu vain sen pintalämpötilasta, ei aineesta, josta kappale on tehty. Tätä säteilyä kutsutaan **mustan kappaleen säteilyksi**. Kuuma musta kappale ei näytä mustalta, sillä se säteilee itse. Aurinko säteilee likimain kuin musta kappale, samoin hehkuva hiillos ja infrapuna-alueella ihmisen iho. Kiiltävä metalli heijastaa suuren osan siihen osuvasta säteilystä, ja samassa lämpötilassa se myös säteilee heikommin kuin musta kappale.
 
@@ -412,6 +424,12 @@ missä $\lambda_\text{max}$ on spektrin huipun aallonpituus (m), $T$ kappaleen p
 </svg>
 
 <figure class="unit-photo"><img src="pics/fy7/submarine-lava.webp" alt="Tummansininen vedenalainen näkymä; keskellä kallion halkeamissa hehkuu oranssi laava, ja alareunassa näkyy osa sukelluslaitteen kehikkoa."><figcaption>Hehkuvaa laavaa merenpohjassa Tyynellämerellä. Laava hehkuu oranssina, vaikka vesi jäähdyttää sitä. Sen säteilyn huippu on silti infrapuna-alueella, ja silmä näkee vain spektrin lyhytaaltoisen reunan.</figcaption></figure>
+
+```pysahdy
+Hehkulangan pintalämpötila on $2900\,\text{K}$. Missä aallonpituudella sen säteilyn huippu on ja millä spektrin alueella?
+---
+Wienin lain mukaan $\lambda_\text{max} = \tfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{2900\,\text{K}} \approx 1{,}0\,\mu\text{m}$. Huippu on infrapuna-alueella, vaikka lanka hehkuu näkyvästi.
+```
 
 ### Huippu kertoo lämpötilan
 Huoneenlämpöisen kappaleen ($300\,\text{K}$) spektrin huippu on noin $9{,}7\,\mu\text{m}$:n ja ihmisen ihon ($34\,{}^\circ\text{C}$ eli $307\,\text{K}$) noin $9{,}4\,\mu\text{m}$:n kohdalla, syvällä infrapuna-alueella. Lämpökamera mittaa säteilyä aallonpituuksilla noin $8$–$14\,\mu\text{m}$ ja muuttaa sen kuvaksi. Siksi se näkee ihmisen pimeässäkin: ihminen ei tarvitse valoa näkyäkseen kameralle, koska hän itse säteilee. Tummanpunaisena hehkuvan, noin $800\,\text{K}$:n kappaleen huippu on vielä infrapuna-alueella, noin $3{,}6\,\mu\text{m}$:n kohdalla, ja silmä näkee vain spektrin lyhytaaltoisen reunan. Auringon säteilyn huippu on noin $500\,\text{nm}$:n (tarkemmin $502\,\text{nm}$:n) kohdalla, näkyvän valon keskellä.

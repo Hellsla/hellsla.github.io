@@ -116,6 +116,12 @@ The field lines of a straight wire are concentric circles around the wire, perpe
 ### The right-hand rule
 The direction in which the field goes round is given by the **right-hand rule**: when the thumb of the right hand points in the direction of the current, the curled fingers go round in the direction of the field lines. In the figure the current goes upwards, so seen from above the field goes round anticlockwise. In figures a current towards the viewer is marked with a dot $\odot$ and a current away from the viewer with a cross $\otimes$, like the tip and the tail feathers of an arrow.
 
+```pysahdy
+In a vertical wire the current flows downwards. In which direction does the field of the wire go round when you look at the wire from above?
+---
+The thumb points in the direction of the current, that is, down, so the fingers curl clockwise seen from above. The field therefore goes round clockwise.
+```
+
 ### The field of a coil
 When a wire is wound into a spiral, called a **coil**, the field of each turn points the same way inside the coil, and the fields strengthen each other. Inside a long coil the field lines are almost straight and evenly spaced: the field is almost uniform and parallel to the axis of the coil. At the ends of the coil the field lines spread out, and outside the coil the field is like that of a bar magnet in the chapter *Magnets, the magnetic dipole and the magnetic field*. The end from which the field lines emerge is the north pole N. The right-hand rule works for a coil like this: when the fingers curl along the turns in the direction of the current, the thumb points inside the coil in the direction of the field, that is, towards the north pole.
 
@@ -187,6 +193,12 @@ When a wire is wound into a spiral, called a **coil**, the field of each turn po
   <foreignObject x="90" y="9.5" width="420" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{current: } \odot \text{ towards the viewer, } \otimes \text{ away}$</div></foreignObject>
   <foreignObject x="100" y="321.5" width="400" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{almost uniform field inside}$</div></foreignObject>
 </svg>
+
+```pysahdy
+In a long coil the current goes round clockwise seen from end $P$ of the coil. Is end $P$ the north or the south pole of the coil?
+---
+The thumb of the right hand points in the direction of the field, and here it points away from end $P$. The field lines emerge from the other end, so that end is the north pole and end $P$ is the south pole.
+```
 
 ### The electromagnet
 When an iron core is pushed inside a coil, the field becomes many times stronger. The field of the coil turns the magnetic domains of the iron to point the same way, and the magnetised iron adds its own field to the field of the coil. A coil like this is an **electromagnet**. When the current is switched off, the field of the coil disappears, and the domains of soft iron return almost to disorder, so the core loses almost all of its magnetisation. That is why the scrapyard crane holds the scrap only as long as the current flows. A permanent magnet, by contrast, is made of a material whose domains stay aligned, so it cannot be switched off.
@@ -361,6 +373,12 @@ where $N$ is the number of turns of the coil, $I$ the current (A) and $l$ the le
   <foreignObject x="255" y="15.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$l$</span></div></foreignObject>
   <foreignObject x="426" y="135.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$N\ \text{turns}$</div></foreignObject>
 </svg>
+
+```pysahdy
+A long coil has $500$ turns and its length is $0.250\,\text{m}$. A current of $1.00\,\text{A}$ flows in it. What is the magnetic flux density at the middle of the coil?
+---
+By the formula $B = \mu_0 \tfrac{N I}{l} = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \tfrac{500 \cdot 1.00\,\text{A}}{0.250\,\text{m}} \approx 2.51\,\text{mT}$.
+```
 
 ### Determining the magnetic flux density inside a coil
 The field is measured with a magnetic field sensor whose tip is placed at the centre of the coil, parallel to the axis. The current is varied with a power supply, and at each current the current and the reading $B$ of the sensor are recorded. When the measurements are plotted in an $(I, B)$ graph, for example with the Vernier Graphical Analysis program, a straight line $B = A I + B_0$ is fitted to them. According to the formula the slope is $A = \mu_0 \tfrac{N}{l}$, so the measurement gives an estimate for the permeability of free space, $\mu_0 = A l : N$. When the uncertainty of the slope is $\Delta A$ and that of the length $\Delta l$, the relative uncertainty of the result is estimated by adding the relative uncertainties of the factors: $\Delta \mu_0 : \mu_0 = \Delta A : A + \Delta l : l$. The constant term $B_0$ is usually small: it is affected by the zero point of the sensor and by the Earth's magnetic field.

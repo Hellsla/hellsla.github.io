@@ -141,6 +141,12 @@ Käämien taakse asetetaan ohut ferriittilevy. Ferriitti on aine, joka magnetoit
   <line x1="344" y1="112" x2="367" y2="175" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
+```pysahdy
+Puhelin nostetaan langattoman laturin päältä $3\,\text{mm}$:n korkeudelle $20\,\text{mm}$:n korkeudelle. Miksi vastaanotinkäämin jännite pienenee, vaikka lähetinkäämin virta pysyy samana?
+---
+Vastaanottimen läpi kulkee vähemmän kenttäviivoja, joten vuo pienenee. Silloin myös indusoitunut jännite pienenee.
+```
+
 ### Hukka langattomassa latauksessa
 Vastaanottimeen saadaan riittävä jännite, vaikka vain osa vuosta osuu siihen. Silloin lähetinkäämissä on kuitenkin kuljettava suurempi virta. Virta muuttaa käämien resistanssissa sähköenergiaa sisäenergiaksi teholla $P = RI^2$, joten laturi ja puhelin lämpenevät.
 
@@ -221,6 +227,12 @@ Lasi ei johda sähköä, joten siihen ei synny virtoja. Lasi lämpenee vain siks
 </svg>
 
 <figure class="unit-photo"><img src="pics/fy7/induction-hob.webp" alt="Musta keittotaso, jossa on neljä keittoaluetta. Takana on kattila."><figcaption>Induktioliesi. Lasin alla on käämi, jossa kulkee vaihtovirta. Sen magneettikenttä tekee kattilan pohjaan pyörrevirtoja. Kattila lämpenee itse. Taso lämpenee vain kattilan takia.</figcaption></figure>
+
+```pysahdy
+Induktioliedellä lasilevy ei ole kuuma ennen kuin kattila on kuumentunut sen päällä. Miksi lasiin ei tule pyörrevirtoja?
+---
+Lasi ei johda sähköä, joten muuttuva magneettikenttä ei saa siinä aikaan virtaa. Lasi lämpenee vasta, kun kuuma kattila lämmittää sitä.
+```
 
 ### Miksi kattilan on oltava terästä tai valurautaa
 Tavalliset kotien induktioliedet on suunniteltu kattiloille, joiden pohjassa on ferromagneettista ainetta, kuten terästä tai valurautaa. Induktiolämmitys ei kuitenkaan aina vaadi ferromagneettista ainetta. Myös muut johteet lämpenevät, jos laite on suunniteltu niille. Ferromagneettinen pohja vahvistaa kelan kenttää ja kokoaa vuon itseensä (luku *Magneetit, magneettinen dipoli ja magneettikenttä*).
@@ -304,6 +316,12 @@ Kuvaajasta näkyy, että teho pienenee joka kilometrillä samassa suhteessa. Sik
   <foreignObject x="440" y="193.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e64980">$1550\,\text{nm}$</div></foreignObject>
   <foreignObject x="440" y="230.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e64980">$1310\,\text{nm}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Kuidun vaimennuskerroin on $0{,}18\,\text{dB/km}$ ja kuidun pituus on $50\,\text{km}$. Kuinka suuri on vaimennus desibeleinä ja kuinka suuri osa tehosta on jäljellä?
+---
+Vaimennus on $A = aL = 0{,}18\,\text{dB/km}\cdot 50\,\text{km} = 9{,}0\,\text{dB}$. Tehosuhde on $P/P_0 = 10^{-0{,}90} \approx 0{,}13$ eli noin $13\,\%$.
+```
 
 ### Langattoman laturin jännite
 Vastaanotinkäämin yhden kierroksen läpi kulkeva vuo vaihtelee sinimuotoisesti. Vuon huippuarvo on $\Phi_0$ ja taajuus $f$. Silloin käämiin syntyy vaihtojännite, jonka huippuarvo saadaan samoin kuin generaattorissa (luku *Generaattori ja vaihtovirta*). Huippuarvo on jännitteen suurin arvo.

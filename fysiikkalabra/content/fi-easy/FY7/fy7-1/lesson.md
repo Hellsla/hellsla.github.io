@@ -151,6 +151,12 @@ Tässä magneettinen vuorovaikutus eroaa sähköisestä. Positiivisen ja negatii
   <foreignObject x="50" y="235.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$4$</div></foreignObject>
 </svg>
 
+```pysahdy
+Sauvamagneetti katkaistaan keskeltä kahtia. Onko toisessa palassa vain pohjoisnapa ja toisessa vain etelänapa?
+---
+Ei ole. Kummassakin palassa on sekä pohjoisnapa että etelänapa. Magneetin navat ovat aina pareina.
+```
+
 ### Ferromagnetismi ja alkeisalueet
 Magneetti vetää puoleensa rautaa, nikkeliä ja kobolttia. Se vetää myös monia niiden seoksia, esimerkiksi terästä. Näitä aineita sanotaan **ferromagneettisiksi**. Jokainen niiden atomi on pieni magneettinen dipoli.
 
@@ -290,6 +296,12 @@ Missä viivat ovat tiheässä, siellä kenttä on voimakas. Kenttäviivat eivät
 
 <figure class="unit-photo"><img src="pics/fy7/horseshoe-magnet-filings.webp" alt="Hevosenkenkämagneetti. Sen navoissa ja ympärillä on paljon rautaviilaa kaarina ja tupsuina."><figcaption>Rautaviilaa hevosenkenkämagneetin ympärillä. Jokainen pieni rautahippu kääntyy kentän suuntaan. Siksi viila näyttää, miten kenttäviivat kulkevat. Navoissa viilaa on eniten, koska kenttä on siellä voimakkain.</figcaption></figure>
 
+```pysahdy
+Pienen kompassin neula on sauvamagneetin pohjoisnavan vieressä. Mihin suuntaan neulan pohjoispää osoittaa?
+---
+Pois magneetin pohjoisnavasta. Neulan pohjoispää osoittaa kentän suuntaan, ja kenttäviivat lähtevät magneetin pohjoisnavasta poispäin.
+```
+
 ### Maan magneettikenttä
 Maapallolla on magneettikenttä, joka muistuttaa sauvamagneetin kenttää. Se syntyy Maan ulkoytimen sulan raudan liikkeistä ja niihin liittyvistä sähkövirroista. Kompassin neulan pohjoispää kääntyy kohti maantieteellistä pohjoista.
 
@@ -360,6 +372,12 @@ B &= \sqrt{B_1^2 + B_2^2} \\
 \end{aligned}
 ```
 missä $\theta$ on kokonaiskentän ja kentän $\overline{B}_1$ välinen kulma.
+
+```pysahdy
+Kompassin kohdalla kaksi kenttää on kohtisuorassa toisiaan vastaan. Ne ovat $30\,\mu\text{T}$ ja $40\,\mu\text{T}$. Kuinka suuri on kokonaiskenttä?
+---
+Käytetään Pythagoraan lausetta: $B = \sqrt{(30\,\mu\text{T})^2 + (40\,\mu\text{T})^2} = 50\,\mu\text{T}$.
+```
 
 Tätä käytetään kompassimittauksessa. Kompassin kohdalla Maan kentän vaakakomponentti $\overline{B}_\text{h}$ osoittaa pohjoiseen. Aseta magneetti niin, että sen kenttä $\overline{B}_\text{m}$ osoittaa kompassin kohdalla itään. Silloin neula kääntyy pohjoisesta itään kulman $\theta$ verran, ja $\tan\theta = B_\text{m} : B_\text{h}$. Magneetin kentän voi siis mitata kompassilla, kun Maan kentän vaakakomponentti tunnetaan.
 

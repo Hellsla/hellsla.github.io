@@ -82,6 +82,12 @@ In the chapter *Charged particle in electric and magnetic fields*, a magnetic fi
 ### The direction of the force
 The force is always perpendicular to both the direction of the current and the magnetic field. Its direction is given by the **right-hand rule**: when the thumb of an outstretched right hand points in the direction of the current and the other fingers in the direction of the magnetic field, the force points out of the palm. It is the same rule as for a positively charged particle, because the direction of the current is the direction in which positive charge moves. When the direction of the current or of the field is reversed, the direction of the force reverses. If the wire is parallel to the field, there is no force at all.
 
+```pysahdy
+A current flows in a wire perpendicular to a magnetic field, and the force pushes the wire upward. In which direction does the force point if the direction of the current is reversed and the field stays the same?
+---
+The force points downward. When the direction of the current or the field is reversed, the direction of the force reverses, but its magnitude stays the same.
+```
+
 ### The electric motor
 In a direct-current motor, a **current loop** that can turn about an axle sits between the poles of a magnet. In the two sides of the loop that cross the field, the current flows in opposite directions, so the forces on them are in opposite directions. The forces are not on the same line, so they have a turning effect: they turn the loop. When the loop has turned to be perpendicular to the field, the forces point away from the axle and no longer turn it, and the loop keeps moving because of its inertia. Exactly then the **commutator**, a split ring with the carbon brushes that touch it, reverses the direction of the current in the loop. In this way the forces turn the loop in the same direction every half turn. A real motor has many coils and an iron core, so it turns smoothly and strongly.
 
@@ -127,6 +133,12 @@ In a direct-current motor, a **current loop** that can turn about an axle sits b
   <line x1="430" y1="208" x2="442" y2="272" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="534" y1="208" x2="522" y2="272" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
+
+```pysahdy
+What would happen to a DC motor if the commutator did not reverse the current in the loop?
+---
+Once the loop has turned perpendicular to the field, the forces would start to turn it back. The loop would not keep rotating but would oscillate about that position.
+```
 
 ### The loudspeaker
 The magnet of a loudspeaker is built so that in the ring-shaped gap the field points radially outwards. In the gap is a light voice coil, and every part of it is perpendicular to the field, so an equal force acts on every part in the direction of the axis of the coil. A radial field is essential: in a uniform field the forces on opposite sides of a closed coil would be in opposite directions and would cancel, so nothing would push the coil. The coil is attached to the cone. The alternating current from the amplifier changes its direction in step with the sound signal, so the force pushes the cone alternately forwards and backwards. The cone vibrates at the frequency of the signal, compresses and rarefies the air and produces a sound wave. The larger the current, the larger the force and the louder the sound. Most of the electrical energy delivered to the loudspeaker is, however, transformed into internal energy of the coil and the magnet.
@@ -206,6 +218,12 @@ where $F$ is the force (N), $I$ the current (A), $l$ the length of the part of t
   <line x1="308" y1="172" x2="292" y2="188" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt"/>
   <foreignObject x="320" y="201.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\overline{F}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+The length of a wire in a field is $0.50\,\text{m}$ and the current is $4.0\,\text{A}$. The magnetic flux density is $0.25\,\text{T}$, and the wire makes an angle of $30^\circ$ with the field. How large is the force on the wire?
+---
+The force is $F = I l B \sin\alpha = 4.0\,\text{A} \cdot 0.50\,\text{m} \cdot 0.25\,\text{T} \cdot \sin 30^\circ \approx 0.25\,\text{N}$.
+```
 
 ### The force between two current-carrying wires
 There is a force between two parallel current-carrying wires, because each is in the magnetic field of the other. In the chapter *Magnetic field of a wire and a coil*, the field of wire $1$ circles around it, and at a distance $r$ its magnitude is $B_1$. At wire $2$ the field is perpendicular to wire $2$, so a force $F$ acts on the part of wire $2$ whose length is $l$:

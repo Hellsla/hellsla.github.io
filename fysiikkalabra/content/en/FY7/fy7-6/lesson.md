@@ -103,6 +103,12 @@ In the chapter *Electromagnetic induction*, an induced current appeared in a clo
   <foreignObject x="365" y="315.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ring attracts}$</div></foreignObject>
 </svg>
 
+```pysahdy
+The S pole of a magnet is pushed towards a copper ring. What kind of pole is the side of the ring facing the magnet, and why?
+---
+The side of the ring facing the magnet is an S pole. The flux through the ring increases, and the field of the induced current opposes the increase, so the ring repels the magnet.
+```
+
 ### Lenz's law is conservation of energy
 Why could the induced current not help the change? If an approaching magnet pulled the ring towards itself, the magnet would accelerate towards the ring, the flux would change ever faster, the induced current would grow and the pull would strengthen. The kinetic energy of the magnet and the electrical energy of the ring would both increase without anyone doing work: a perpetual motion machine would produce energy from nothing. Conservation of energy rules this out. So the magnet has to be moved by a force that does work against the opposing force of the ring, and this work is what is converted into the electrical energy of the induced current. The current heats the conductor, so the energy ends up as internal energy of the conductor.
 
@@ -155,6 +161,12 @@ An induced current does not need a separate conducting loop. When the magnetic f
   <foreignObject x="436" y="217.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}_\text{ind}$</div></foreignObject>
   <foreignObject x="341" y="31.5" width="250" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lower ring from above}$</div></foreignObject>
 </svg>
+
+```pysahdy
+The speed of a magnet falling in a copper tube increases. What happens to the braking force, and why?
+---
+The braking force increases. The greater the speed, the greater the eddy currents, and the more strongly they brake.
+```
 
 <figure class="unit-photo"><img src="pics/fy7/eddy-current-brake.webp" alt="A grey axle with a large round metal disc around it; next to the disc is a box-like brake unit with cables and connectors."><figcaption>An eddy current brake on a train. Next to a metal disc that turns with the axle there are electromagnets. When the brake is applied, the magnetic field induces eddy currents in the disc, which by Lenz's law oppose the rotation. Kinetic energy turns into internal energy of the disc without brake pads wearing out.</figcaption></figure>
 
@@ -293,6 +305,12 @@ where $P$ is the power (W), $F$ the braking force (N) and $v$ the speed (m/s). T
   <line x1="445" y1="276" x2="445" y2="217" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
   <foreignObject x="403.5" y="192" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$0.2\,\text{mJ}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+A magnet of mass $20\,\text{g}$ falls in a copper tube at a constant speed of $0.30\,\text{m/s}$. At what rate does the internal energy of the tube increase?
+---
+The braking force equals the weight: $F = mg = 0.020\,\text{kg}\cdot 9.81\,\text{m/s}^2 \approx 0.196\,\text{N}$. The power is $P = Fv \approx 0.196\,\text{N}\cdot 0.30\,\text{m/s} \approx 0.059\,\text{W}$.
+```
 
 ## Worked example
 A student drops a $25\,\text{g}$ neodymium magnet into a vertical copper tube $1.20\,\text{m}$ long and measures that the magnet emerges from the lower end of the tube after $8.0\,\text{s}$. The magnet falls at a steady speed for almost the whole distance. By how much does the internal energy of the tube increase during the fall?

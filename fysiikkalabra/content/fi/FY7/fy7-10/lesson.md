@@ -66,6 +66,12 @@ Valo heijastuu samalla tavalla kuin mekaaniset aallot luvussa *Aalto kohtaa este
 ### Valo hidastuu aineessa
 Tyhjiössä valo etenee nopeudella $c = 3{,}00 \cdot 10^{8}\,\text{m/s}$. Aineessa valo etenee hitaammin. Aineen **taitekerroin** $n$ kertoo, kuinka monta kertaa hitaammin: vedessä valon nopeus on noin $2{,}26 \cdot 10^{8}\,\text{m/s}$, joten veden taitekerroin on $1{,}33$. Ilman taitekerroin on $1{,}0003$, joten ilmassa valo etenee lähes yhtä nopeasti kuin tyhjiössä. Aine, jonka taitekerroin on suurempi, on **optisesti tiheämpi**. Kun valo siirtyy aineesta toiseen, sen taajuus ei muutu, koska taajuuden määrää valonlähde. Nopeus kuitenkin muuttuu, joten myös aallonpituus muuttuu yhtälön $v = f \lambda$ mukaan: vedessä aallonpituus on $1{,}33$ kertaa lyhyempi kuin ilmassa.
 
+```pysahdy
+Valo siirtyy ilmasta veteen. Muuttuuko sen taajuus ja muuttuuko sen aallonpituus?
+---
+Taajuus ei muutu, koska sen määrää valonlähde. Aallonpituus lyhenee $1{,}33$-kertaiseksi, koska nopeus pienenee ja $v = f \lambda$.
+```
+
 ### Miksi valo taittuu
 Taittuminen johtuu nopeuden muutoksesta. Kuvassa vinosti rajapintaan tulevan aallon aaltorintamat ovat yhdensuuntaisia viivoja, ja säde on kohtisuorassa niitä vastaan. Rintaman vasen pää saapuu veteen ensin ja hidastuu, kun oikea pää kulkee vielä ilmassa nopeammin. Siksi rintama kääntyy, ja vedessä aalto etenee uuteen suuntaan, lähempänä normaalia. Vedessä rintamat ovat myös tiheämmässä, koska aallonpituus on lyhyempi. Kun valo tulee kohtisuoraan rajapintaan, $\alpha_1 = 0^\circ$, rintaman kaikki kohdat hidastuvat yhtä aikaa, eikä suunta muutu.
 
@@ -157,6 +163,12 @@ taitekerroin sähkömagneettiselle aaltoliikkeelle (valolle) :: n = \frac{c}{v}
 ```
 missä $c = 3{,}00 \cdot 10^{8}\,\text{m/s}$ on valon nopeus tyhjiössä ja $v$ valon nopeus aineessa (m/s). Taitekerroin on yksikötön, ja näkyvälle valolle läpinäkyvissä aineissa se on aina suurempi kuin $1$.
 
+```pysahdy
+Valon nopeus tyhjiössä on $3{,}00 \cdot 10^{8}\,\text{m/s}$ ja timantin taitekerroin on $2{,}42$. Kuinka nopeasti valo etenee timantissa?
+---
+Nopeus on $v = c : n = 3{,}00 \cdot 10^{8}\,\text{m/s} : 2{,}42 \approx 1{,}24 \cdot 10^{8}\,\text{m/s}$.
+```
+
 ### Taittumislaki eli Snellin laki
 Kun valo siirtyy aineesta, jonka taitekerroin on $n_1$, aineeseen, jonka taitekerroin on $n_2$, tulokulma ja taitekulma toteuttavat yhtälön
 ```kaavat
@@ -222,6 +234,12 @@ missä $\alpha_1$ on tulokulma ja $\alpha_2$ taitekulma normaalista mitattuina. 
   <foreignObject x="430" y="45.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\alpha_2 = \alpha_1$</div></foreignObject>
   <foreignObject x="106.5" y="69.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$n_1 = 1{,}00$</div></foreignObject>
 </svg>
+
+```pysahdy
+Valonsäde tulee ilmasta ($n = 1{,}00$) ikkunalasiin ($n = 1{,}52$) tulokulmalla $40^\circ$. Mikä on taitekulma ja taittuuko säde kohti normaalia vai siitä poispäin?
+---
+Snellin laista $\sin\alpha_2 = 1{,}00 \cdot \sin 40^\circ : 1{,}52 = 0{,}423$, joten $\alpha_2 \approx 25^\circ$. Lasi on optisesti tiheämpi, joten säde taittuu kohti normaalia.
+```
 
 ### Taitekertoimia
 Taitekerroin riippuu hieman valon aallonpituudesta (luku *Dispersio: prisma ja sateenkaari*). Taulukon arvot ovat keltaiselle valolle, jonka aallonpituus on $589\,\text{nm}$, ja huoneenlämpöiselle aineelle. Lasin ja akryylin taitekertoimet vaihtelevat laadun mukaan.

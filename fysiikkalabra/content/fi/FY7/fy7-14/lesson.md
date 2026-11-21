@@ -192,6 +192,12 @@ Alapinnasta heijastunut aalto 2 kulkee kalvon läpi edestakaisin, joten se kulke
 ### Puolen aallonpituuden siirtymä heijastuksessa
 Matkaero ei yksin ratkaise interferenssiä. Luvussa *Aalto kohtaa esteen tai raon* köyden pulssi kääntyi heijastuessaan kiinteästä päästä mutta ei vapaasta päästä. Valolle pätee vastaava sääntö: **kun valo heijastuu rajapinnasta, jonka takana on suuremman taitekertoimen aine, heijastunut aalto kääntyy**, eli harja palaa pohjana. Tämä vastaa puolen aallonpituuden siirtymää. Kun takana on pienemmän taitekertoimen aine, heijastunut aalto ei käänny. Saippuakalvossa yläpinnan heijastus tapahtuu ilmasta kalvoon ($1{,}00 \to 1{,}33$), joten aalto 1 kääntyy. Alapinnan heijastus tapahtuu kalvosta ilmaan ($1{,}33 \to 1{,}00$), joten aalto 2 ei käänny.
 
+```pysahdy
+Valo etenee lasissa ($n = 1{,}52$) ja heijastuu lasin ja ilman rajapinnasta ($1{,}52 \to 1{,}00$). Kääntyykö heijastunut aalto?
+---
+Ei käänny, koska rajapinnan takana on ilma, jonka taitekerroin on pienempi. Aalto kääntyy vain, kun takana on suuremman taitekertoimen aine.
+```
+
 ### Hyvin ohut kalvo on musta
 Kun saippuakalvo on paljon ohuempi kuin aallonpituus, matkaero on lähes nolla. Aalto 1 on kuitenkin kääntynyt ja aalto 2 ei, joten aallot ovat vastakkaisessa vaiheessa ja kumoavat toisensa. Hyvin ohut saippuakalvo heijastaa ihannetilanteessa vain hyvin vähän valoa, joten se näyttää heijastuneessa valossa tummalta tai lähes mustalta. Siksi saippuakuplan yläosaan ilmestyy juuri ennen puhkeamista musta laikku. Kun kalvo on niin paksu, että $2nd = \tfrac{1}{2}\lambda$, aalto 2 jää puoli aallonpituutta jälkeen, mikä vastaa kääntymistä. Silloin aallot ovat samassa vaiheessa ja vahvistavat toisiaan.
 
@@ -373,6 +379,12 @@ Saippuakupla ei ole joka kohdasta yhtä paksu. Painovoima valuttaa saippuavettä
 
 <figure class="unit-photo"><img src="pics/fy7/soap-bubble-colours.webp" alt="Lähikuva saippuakuplan kalvosta: oransseja, sinisiä ja violetteja pyörteitä tummaa taustaa vasten."><figcaption>Saippuakalvon interferenssivärejä. Kalvon paksuus vaihtelee kohdasta toiseen, ja kussakin kohdassa vahvistuu se väri, jolle kahden heijastuksen matkaero sopii.</figcaption></figure>
 
+```pysahdy
+Miksi ikkunalasissa ei näy interferenssivärejä, vaikka sekin heijastaa valoa kahdesta pinnasta?
+---
+Lasi on niin paksu, että näkyvällä alueella vahvistuvia ja heikentyviä aallonpituuksia on hyvin monta. Värit sekoittuvat valkoiseksi.
+```
+
 ## Kaava: Ohuen kalvon interferenssi
 Kun valo tulee kohtisuoraan kalvoon, kalvon kahdesta pinnasta heijastuneiden aaltojen optinen matkaero on
 ```latex
@@ -388,6 +400,12 @@ missä $n$ on kalvon taitekerroin, $d$ kalvon paksuus ja $\lambda$ valon aallonp
 \end{aligned}
 ```
 missä $k = 0, 1, 2, \ldots$ Kun kumpikin heijastus kääntää aallon, kuten linssin pinnoitteessa, jonka taitekerroin on ilman ja lasin välissä, käännökset kumoavat toisensa. Silloin ehdot vaihtavat paikkaa: $2nd = k\lambda$ on vahvistava ja $2nd = (k + \tfrac{1}{2})\lambda$ heikentävä. Sama pätee, kun kumpikaan heijastus ei käännä aaltoa.
+
+```pysahdy
+Saippuakalvon ($n = 1{,}33$) paksuus on $125\,\text{nm}$, ja valo tulee kohtisuoraan ilmasta. Mikä aallonpituus vahvistuu, kun $k = 0$?
+---
+Matkaero on $2nd = 2 \cdot 1{,}33 \cdot 125\,\text{nm} = 332{,}5\,\text{nm}$. Ehdosta $2nd = \tfrac{1}{2}\lambda$ saadaan $\lambda = 665\,\text{nm}$, eli punainen valo vahvistuu.
+```
 
 ### Heijastuksenestopinnoite
 Tavallinen lasi ($n = 1{,}52$) heijastaa kummastakin pinnastaan noin $4\,\%$ kohtisuoraan tulevasta valosta. Kameran objektiivissa on monta linssiä, joten heijastukset heikentävät kuvaa ja tekevät siihen haamukuvia. Silmälaseissa heijastus näkyy kiiltona. **Heijastuksenestopinnoite** on lasin pinnalle höyrystetty ohut kalvo, esimerkiksi magnesiumfluoridia $\text{MgF}_2$, jonka taitekerroin on $1{,}38$ aallonpituudella $550\,\text{nm}$ (Dodge, *Applied Optics*, 1984). Pinnoitteen kumpikin heijastus tapahtuu suuremman taitekertoimen ainetta vasten ($1{,}00 \to 1{,}38 \to 1{,}52$), joten heikentävä ehto on $2nd = (k + \tfrac{1}{2})\lambda$. Ohuimmalla pinnoitteella $k = 0$, ja pinnoitteen paksuus on neljäsosa aallonpituudesta pinnoitteessa:

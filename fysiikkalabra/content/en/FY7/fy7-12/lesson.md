@@ -126,6 +126,12 @@ At the boundary between water and air the critical angle is $48.8^\circ$. That i
 
 <figure class="unit-photo"><img src="pics/fy7/tir-wine-glass.webp" alt="A hand holds a wine glass by its stem against a black background; a green laser beam enters from below and zigzags through the stem and base of the glass."><figcaption>A green laser beam in the stem of a wine glass. The beam meets the surface of the glass at an angle larger than the critical angle, so it is totally reflected back into the glass and does not escape into the air.</figcaption></figure>
 
+```pysahdy
+Light goes from water into air at an angle of incidence of $70^\circ$. The critical angle for water and air is $48.8^\circ$. Can some of the light get out into the air?
+---
+No. The angle of incidence $70^\circ$ is larger than the critical angle $48.8^\circ$, so the light is totally reflected back into the water.
+```
+
 ### Only from a larger refractive index to a smaller one
 Total internal reflection can happen only when light goes from a substance with a larger refractive index into one with a smaller refractive index. When light goes from air into water or glass, it refracts towards the normal, and a refracted ray exists at every angle of incidence. Then some of the light always gets into the second substance, even though the reflected share grows at large angles of incidence. In total internal reflection no light is lost: when the substance does not absorb light, the ray reflected from a smooth boundary carries away all the power of the incident ray. That is why total internal reflection is a better mirror than a metal surface, which absorbs some of the light.
 
@@ -157,6 +163,12 @@ An **optical fibre** is a glass fibre as thin as a hair, with a core in the midd
 </svg>
 
 <figure class="unit-photo"><img src="pics/fy7/optical-fibres.webp" alt="A translucent optical cable coiled on a black surface; at each end is a connector shining with red light."><figcaption>Red light sent into one end of a plastic optical cable comes out of the other end. Thanks to total internal reflection, the light follows the fibre around the coil.</figcaption></figure>
+
+```pysahdy
+The refractive indices of a fibre's core and cladding were equal. Could light still be totally reflected at the boundary between core and cladding?
+---
+No. When $n_1 = n_2$ there is no critical angle, because $\sin\alpha_\text{r}$ would be $1$ and the light would go straight on into the cladding. The light would leak out of the fibre.
+```
 
 ### Why a fibre has a cladding
 A bare glass rod keeps light inside even in air, and even light that arrives at a steeper angle, because the difference between the refractive indices of glass and air is large and the critical angle is therefore small. However, water, grease or another fibre that touches the surface of the glass changes the boundary, and light leaks out at the point of contact. The cladding keeps the reflecting boundary clean inside the fibre, and the plastic protective coating protects the glass from scratches. When the difference between the refractive indices of the core and the cladding is small, only rays almost parallel to the axis stay in the fibre. Their paths are almost equally long, so short light pulses spread out only a little on the way.
@@ -259,6 +271,12 @@ where $\alpha_\text{r}$ is the critical angle measured from the normal to the bo
   <foreignObject x="425" y="181.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{diamond}$</span></div></foreignObject>
   <foreignObject x="320" y="97.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$n_2 = 1.00\ (\text{air})$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+The refractive index of a substance is $2.00$. What is the critical angle at the boundary between this substance and air?
+---
+The refractive index of air is $1.00$, so $\sin\alpha_\text{r} = 1.00 : 2.00 = 0.500$. Thus $\alpha_\text{r} = 30.0^\circ$.
+```
 
 ### The travel time of light in a fibre
 In a substance with refractive index $n$, light travels at the speed $v = c : n$ (chapter *Reflection and refraction of light*). A distance $s$ therefore takes the time

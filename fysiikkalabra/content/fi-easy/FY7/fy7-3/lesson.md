@@ -118,6 +118,12 @@ Suoran johtimen kenttäviivat ovat johtimen ympärillä samankeskisiä ympyröit
 ### Oikean käden sääntö
 Kentän kiertosuunnan saat **oikean käden säännöllä**. Osoita oikean käden peukalolla virran suuntaan. Silloin koukistetut sormet kiertävät kenttäviivojen suuntaan. Kuvassa virta kulkee ylöspäin, joten ylhäältä katsottuna kenttä kiertää vastapäivään. Kuvissa virta kohti katsojaa merkitään pisteellä $\odot$ ja virta poispäin katsojasta ristillä $\otimes$. Merkit muistuttavat nuolen kärkeä ja sulkia.
 
+```pysahdy
+Pystysuorassa johtimessa virta kulkee alaspäin. Mihin suuntaan johtimen kenttä kiertää, kun katsot johdinta ylhäältä?
+---
+Peukalo osoittaa virran suuntaan eli alas. Silloin sormet kiertävät ylhäältä katsottuna myötäpäivään. Kenttä kiertää siis myötäpäivään.
+```
+
 ### Käämin kenttä
 Kun johdin kierretään kierukaksi, syntyy **käämi**. Jokaisen kierroksen kenttä osoittaa käämin sisällä samaan suuntaan, ja kentät vahvistavat toisiaan. Pitkän käämin sisällä kenttäviivat ovat lähes suoria ja tasavälisiä. Kenttä on silloin lähes homogeeninen, eli se on samanlainen joka kohdassa käämin sisällä. Se on käämin akselin suuntainen.
 
@@ -193,6 +199,12 @@ Oikean käden sääntö toimii myös käämille. Kierrä sormet kierroksia pitki
   <foreignObject x="90" y="9.5" width="420" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{virta: } \odot \text{ kohti katsojaa, } \otimes \text{ poispäin}$</div></foreignObject>
   <foreignObject x="100" y="321.5" width="400" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{sisällä lähes homogeeninen kenttä}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Pitkässä käämissä virta kiertää myötäpäivään, kun katsot käämiä päästä $P$. Onko pää $P$ käämin pohjoisnapa vai eteläpää?
+---
+Oikean käden peukalo osoittaa kentän suuntaan. Se osoittaa nyt pois päästä $P$. Kenttäviivat tulevat ulos käämin toisesta päästä, joten se pää on pohjoisnapa. Pää $P$ on eteläpää.
+```
 
 ### Sähkömagneetti
 Kun käämin sisään työnnetään rautasydän, kenttä voimistuu moninkertaiseksi. Käämin kenttä kääntää raudan alkeisalueet samansuuntaisiksi. Alkeisalue on raudan pieni osa, joka toimii kuin pieni magneetti. Kun alkeisalueet osoittavat samaan suuntaan, rauta magnetoituu. Magnetoitunut rauta lisää oman kenttänsä käämin kenttään. Tällainen käämi on **sähkömagneetti**.
@@ -373,6 +385,12 @@ Kenttä riippuu kierrostiheydestä $N : l$. Se kertoo, kuinka monta kierrosta on
   <foreignObject x="255" y="15.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$l$</span></div></foreignObject>
   <foreignObject x="426" y="135.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$N\ \text{kierrosta}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Pitkässä käämissä on $500$ kierrosta, ja sen pituus on $0{,}250\,\text{m}$. Käämissä kulkee virta $1{,}00\,\text{A}$. Kuinka suuri on magneettivuon tiheys käämin keskellä?
+---
+Kaavan mukaan $B = \mu_0 \tfrac{N I}{l} = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \tfrac{500 \cdot 1{,}00\,\text{A}}{0{,}250\,\text{m}} \approx 2{,}51\,\text{mT}$.
+```
 
 ### Magneettivuon tiheyden määrittäminen käämin sisällä
 Kenttää mitataan magneettikenttäanturilla. Anturin kärki asetetaan käämin keskelle akselin suuntaiseksi. Virtaa muutetaan virtalähteellä. Jokaisella virralla kirjataan virta ja anturin lukema $B$.
