@@ -1,13 +1,10 @@
-VERDICT: PASS
-CONTENT-HASH: 831d50c594fe42ed
+VERDICT: FAIL
+CONTENT-HASH: 373c2ed4e9c33bb4
 
 ## Blocking
+- B, Coulomb box (line ~503-505): the task says the two outer charges are "samanmerkkistä" (same sign as each other), but the new sentence "Kumpikin varaus hylkii keskimmäistä" holds only when the middle charge has the same sign too; if it has the opposite sign, both attract it, and the net force is still zero. Fix: state in the task that the middle charge has the same sign, or write "Kumpikin varaus hylkii (tai erimerkkisenä vetää) keskimmäistä vastakkaiselta puolelta."
 
 ## Polish
-- Box 2 substitutes bare numbers and appends N; the house form substitutes with units.
-
-## Vanhan sisällön löydökset
-- Ei löydöksiä boksien ympäriltä luetusta kontekstista.
 
 ## Checked
-batch delta review (scope: new pysahdy boxes only): Q = ne quantisation (C-level, fine), k·(1,0·10⁻⁶)²/0,30² = 0,0999 → 0,10 N, symmetric line charges give zero force.
+batch delta review: recomputed F = 9,0e9 * 1,0e-12 / 0,30^2 N = 0,10 N (also 0,0999 N with 8,988e9), correct; superposition box reasoning except the condition above.

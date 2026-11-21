@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: db25feb710e74807
+CONTENT-HASH: a5c58b7599ab1e1e
 
 ## Blocking
 
 ## Polish
-- Box 3: 'suoraan verrannollinen erotukseen' holds while R + R_s stays constant; the formula just above shows it, fine as C.
-
-## Vanhan sisällön löydökset
-- Ei löydöksiä boksien ympäriltä luetusta kontekstista.
 
 ## Checked
-batch delta review (scope: new pysahdy boxes only): neutral battery stores chemical energy (correct), 3,6 V·4,0 Ah = 14,4 → 14 Wh, charging current decreases.
+batch delta review: charging box (electrical energy into chemical energy, total charge unchanged, battery neutral) is correct; U_lat < E box agrees with the theory paragraph above it (current reverses unless a diode blocks it).

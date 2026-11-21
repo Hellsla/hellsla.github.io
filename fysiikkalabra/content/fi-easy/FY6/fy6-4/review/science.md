@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6a2dacc60d53c7cb
+CONTENT-HASH: 5dd76c8d5bd2d97a
 
 ## Blocking
+None.
 
 ## Polish
-
-## Vanhan sisällön löydökset
+None.
 
 ## Checked
-batch delta review (scope: new pysahdy boxes only): 3 boxes; same current in series (0,20 A, charge conservation), parallel total below the smallest branch, 12·4,0/16 Ω = 3,0 Ω recomputed. Hash identical at start and end.
+batch delta review: pysähdy boxes and diff only, numbers recomputed in one script; series current box wording; one path, same 0,20 A.

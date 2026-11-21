@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 68577bf0d9c698bd
+CONTENT-HASH: 9292ab93382994b3
 
 ## Blocking
+None.
 
 ## Polish
-
-## Vanhan sisällön löydökset
+- New box 1 (kumikäsineet): fine at this level; optionally 'käsineen läpi ei kulje merkittävää virtaa' (a glove is rated for a voltage) — C, no change needed.
 
 ## Checked
-batch delta review (scope: new pysahdy boxes only): 3 boxes; copper free electrons vs insulating wood, Q = It proportionality at fixed t, E = UQ so 3,0 V gives 2x; each answerable from the paragraph above. Hash identical at start and end.
+batch delta review: pysähdy boxes and diff only, numbers recomputed in one script; box 1 rubber glove/insulator, box 2 Q = It with fixed time.

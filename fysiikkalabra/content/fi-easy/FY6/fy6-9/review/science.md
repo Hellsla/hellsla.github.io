@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 849e4bab468da9a0
+CONTENT-HASH: 374f81f922b8e3c2
 
 ## Blocking
+None.
 
 ## Polish
-- lesson.md:226 box 3: 'suoraan verrannollinen' holds while R + R_s stays the same; the formula just above shows it, so C.
-
-## Vanhan sisällön löydökset
+- The U_lat < E box could add that the current then reverses and the battery discharges into the charger unless a diode prevents it (the paragraph just above says so).
 
 ## Checked
-batch delta review (scope: new pysahdy boxes only): 3 boxes; battery neutral and stores chemical energy (matches the paragraph), W = 3,6 V · 4,0 Ah = 14,4 → 14 Wh, current falls as E rises recomputed. Hash identical at start and end.
+batch delta review: pysähdy boxes and diff only, numbers recomputed in one script; charging box (chemical energy, neutral battery), U_lat < E box consistent with I = (U_lat − E)/(R + R_s) and the paragraph above it.

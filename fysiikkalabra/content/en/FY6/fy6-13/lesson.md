@@ -249,7 +249,7 @@ In an insulator the charges cannot move freely, but the electric field shifts th
 ```pysahdy
 What happens at the surfaces of an insulator placed between the plates, and why does the voltage between the plates decrease because of it?
 ---
-Polarization creates charges on the insulator's surfaces: next to each plate is a charge of the opposite sign to the plate's charge. They reduce the field, so the voltage $U$ decreases and the capacitance $C = \tfrac{Q}{U}$ increases.
+Polarization creates charges on the insulator's surfaces: next to each plate is a charge of the opposite sign to the plate's charge. They reduce the field, so when the charge on the plates stays the same (source disconnected), the voltage $U$ decreases and the capacitance $C = \tfrac{Q}{U}$ increases.
 ```
 
 ### The energy is in the electric field

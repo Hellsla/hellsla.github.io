@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e68c2f66a2910310
+CONTENT-HASH: 3f49f92c81dc9eee
 
 ## Blocking
 
 ## Polish
-
-## Vanhan sisällön löydökset
-- Ei löydöksiä boksien ympäriltä luetusta kontekstista.
+- The new light-halving box answers "Miksi?" mostly by restating the fact (I_k proportional to G); one cause (the light frees charge carriers at a rate proportional to the irradiance) would make it an explanation. Not an error.
 
 ## Checked
-batch delta review (scope: new pysahdy boxes only): 0,30 V below Si threshold 0,6–0,7 V (line 303), zero power at open circuit, (3,3 − 1,8)/0,010 = 150 Ω recomputed.
+batch delta review: threshold-voltage unit typography; the light-halving box agrees with line 379, the figure (200 mA to 100 mA, 6,0 V to 5,7 V) and the summary (line 637).

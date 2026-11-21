@@ -1,12 +1,11 @@
 VERDICT: FAIL
-CONTENT-HASH: c3fee9708a16848c
+CONTENT-HASH: 67e0733cd29b9179
 
 ## Blocking
-- lesson.md:298–300 box 2 (A, significant figures): the data 3 MV/m has one significant figure (table row 'ilma … 3'), but the answer is given as 3,0 kV with two. Write 'noin 3 kV', or give the field as 3,0 MV/m in the question.
+- **B** (line 250, new box): the question states as a fact that the voltage decreases when a dielectric is inserted, but that holds only when the plates' charge stays the same (source disconnected); with the source connected U stays and Q grows, as the lesson's own table under "Eriste, kun lähde on kytkettynä tai irrotettuna" says. Add the condition to the question, e.g. "Kondensaattori on irrotettu lähteestä, joten levyjen varaus pysyy samana."
 
 ## Polish
-
-## Vanhan sisällön löydökset
+None.
 
 ## Checked
-batch delta review (scope: new pysahdy boxes only): 3 boxes; polarisation weakens the field at constant Q so U falls and C = Q/U grows (matches the paragraph), U_max = E_max d = 3 kV, W = ½ · 10 µF · (20 V)² = 2,0 mJ recomputed. Hash identical at start and end.
+batch delta review: pysähdy boxes and diff only, numbers recomputed in one script; polarisation mechanism (matches line 152 and the figure), U_max = E_max·d doubles with d, W = ½CU² = ½·10 µF·(20 V)² = 2,0 mJ recomputed.

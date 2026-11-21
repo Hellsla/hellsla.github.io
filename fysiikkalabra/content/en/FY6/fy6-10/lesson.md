@@ -502,7 +502,7 @@ where $\overline{F}$ is the net force ($\text{N}$) and $\overline{F}_1$ and $\ov
 ```pysahdy
 Three charges lie on one line. Two equal charges of the same sign, each at the same distance, act on the middle charge. What is the net force?
 ---
-Zero. Each charge repels the middle one from the opposite side. The forces are equal in magnitude and opposite in direction, so they cancel and $\overline{F} = \overline{0}$.
+Zero. The two charges act on the middle one from opposite sides, both repelling or both attracting it. The forces are equal in magnitude and opposite in direction, so they cancel and $\overline{F} = \overline{0}$.
 ```
 
 ## Worked example

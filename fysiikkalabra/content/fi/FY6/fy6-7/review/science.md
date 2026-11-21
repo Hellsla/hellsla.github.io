@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 68cc3b2b7cd16714
+CONTENT-HASH: e965932d3844c971
 
 ## Blocking
 
 ## Polish
 
-## Vanhan sisällön löydökset
-- Ei löydöksiä boksien ympäriltä luetusta kontekstista.
-
 ## Checked
-batch delta review (scope: new pysahdy boxes only): 0,30 kWh, 7,2 MJ, 230·0,50·2,0 Wh = 0,23 kWh recomputed.
+batch delta review: recomputed 0,060 kW * 5,0 h = 0,30 kWh; 10,8 MJ : 3,6 MJ/kWh = 3,0 kWh; P = UI = 115 W, E = 0,23 kWh (two significant figures from 0,50 A and 2,0 h).

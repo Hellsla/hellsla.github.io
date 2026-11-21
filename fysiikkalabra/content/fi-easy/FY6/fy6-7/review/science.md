@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: fd032ec9a58a06e7
+CONTENT-HASH: 89f895171b86e189
 
 ## Blocking
+None.
 
 ## Polish
-
-## Vanhan sisällön löydökset
+None.
 
 ## Checked
-batch delta review (scope: new pysahdy boxes only): 3 boxes; 0,060 kW · 5,0 h = 0,30 kWh, 2,0 kWh = 7,2 MJ, 230 V · 0,50 A · 2,0 h = 0,23 kWh recomputed; figures right. Hash identical at start and end.
+batch delta review: pysähdy boxes and diff only, numbers recomputed in one script; 0,060 kW·5,0 h = 0,30 kWh; 10,8 MJ : 3,6 MJ/kWh = 3,0 kWh; P = 115 W, E = 0,23 kWh (two figures from 2,0 h / 0,50 A).

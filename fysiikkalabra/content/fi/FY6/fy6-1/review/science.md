@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 217e9dbc5f7a9827
+CONTENT-HASH: 3f8d5f6a018929fb
 
 ## Blocking
 
 ## Polish
 
-## Vanhan sisällön löydökset
-- Ei löydöksiä boksien ympäriltä luetusta kontekstista.
-
 ## Checked
-batch delta review (scope: new pysahdy boxes only): three Pysähdy boxes (johde/eriste, Q = It, E = UQ) correct; staged-example split only moves a sentence.
+batch delta review: new box: rubber as an insulator (consistent with the lesson's conductor/insulator model); Q = It box wording only.

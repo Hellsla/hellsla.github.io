@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 292d38bdb970df57
+CONTENT-HASH: 285713375b267121
 
 ## Blocking
+None.
 
 ## Polish
-
-## Vanhan sisällön löydökset
+None.
 
 ## Checked
-batch delta review (scope: new pysahdy boxes only): 3 boxes; proton along E, electron against, 600 V/0,030 m = 2,0·10⁴ V/m, a = qE/m doubles with q; all right. Hash identical at start and end.
+batch delta review: pysähdy boxes and diff only, numbers recomputed in one script; test-charge box: F doubles, E = F/q unchanged.

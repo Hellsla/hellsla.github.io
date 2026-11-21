@@ -1,12 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: de5fe859db52c6c6
+VERDICT: PASS
+CONTENT-HASH: 5bcc779a6fb068f3
 
 ## Blocking
-- lesson.md:493 box 3 (A, magnitude): a radio of 0,70 kW is not a realistic household value (a radio takes some watts to tens of watts) and gives a wrong picture of device powers in the chapter on home circuits. Use a device that really takes about 0,7 kW (e.g. mikroaaltouuni) or keep 'radio' with a realistic power; the arithmetic 1800 W/230 V ≈ 7,8 A is right.
+None.
 
 ## Polish
-
-## Vanhan sisällön löydökset
+None.
 
 ## Checked
-batch delta review (scope: new pysahdy boxes only): 3 boxes; fuse sized for the cable (RI² heating), RCD compares L and N currents with 30 mA trip (as the paragraph says), current recomputed 7,83 → 7,8 A. Hash identical at start and end.
+batch delta review: pysähdy boxes and diff only, numbers recomputed in one script; P = RI² gives 9× (R constant); RCD box matches line 367; (1100 + 700) W / 230 V = 7,83 A → 7,8 A; figure caption wording; worked-example knowns/question split.

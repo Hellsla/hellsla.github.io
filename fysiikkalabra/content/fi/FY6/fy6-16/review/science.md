@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 11bdf39b738cff4c
+CONTENT-HASH: 59382f1c52f500e8
 
 ## Blocking
 
 ## Polish
-
-## Vanhan sisällön löydökset
-- Ei löydöksiä boksien ympäriltä luetusta kontekstista.
+- In the efficiency box, "muuttuu ... sisäenergiaksi" could go on with "joka siirtyy lämpönä ympäristöön" (the guardrail wording); it is not wrong as it stands.
 
 ## Checked
-batch delta review (scope: new pysahdy boxes only): losses box, P = 3UI = 6,9 kW, t = W/(ηP) = 20/(0,90·5,0) = 4,44 → 4,4 h recomputed; t-formula stands just above box 3.
+batch delta review: efficiency 0,85: 85 % stored, 15 % into internal energy, correct; three-phase I = P/(3U) = 6900 W/(3 * 230 V) = 10 A, recomputed.

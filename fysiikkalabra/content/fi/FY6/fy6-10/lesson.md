@@ -502,7 +502,7 @@ missä $\overline{F}$ on kokonaisvoima ($\text{N}$) ja $\overline{F}_1$ ja $\ove
 ```pysahdy
 Kolme varausta on samalla suoralla. Keskimmäiseen varaukseen vaikuttavat kaksi yhtä suurta samanmerkkistä varausta, kumpikin yhtä kaukana. Mikä on kokonaisvoima?
 ---
-Nolla. Kumpikin varaus hylkii keskimmäistä vastakkaiselta puolelta. Voimat ovat yhtä suuret ja vastakkaissuuntaiset, joten ne kumoavat toisensa ja $\overline{F} = \overline{0}$.
+Nolla. Kumpikin varaus vaikuttaa keskimmäiseen vastakkaiselta puolelta, ja molemmat joko hylkivät tai vetävät sitä. Voimat ovat yhtä suuret ja vastakkaissuuntaiset, joten ne kumoavat toisensa ja $\overline{F} = \overline{0}$.
 ```
 
 ## Esimerkki

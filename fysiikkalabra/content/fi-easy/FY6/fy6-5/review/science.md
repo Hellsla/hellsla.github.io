@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 184fdda5b4ed8ad5
+CONTENT-HASH: e0ace1a9835f90ee
 
 ## Blocking
+None.
 
 ## Polish
-- lesson.md:118 box 1: 'toiseen haaraan … toiseen haaraan' reads ambiguously; 'yhteen haaraan … toiseen' would be clearer (language, not physics).
-
-## Vanhan sisällön löydökset
+None.
 
 ## Checked
-batch delta review (scope: new pysahdy boxes only): 3 boxes; junction rule 0,80 − 0,30 = 0,50 A, ideal wire ΔV ≈ 0 (likimain stated), loop rule 12 − 5,0 = 7,0 V recomputed. Hash identical at start and end.
+batch delta review: pysähdy boxes and diff only, numbers recomputed in one script; junction box 0,50 + 0,50 = 1,00 A ≠ 0,80 A; series loop box U1/U2 = R1/R2 = 2 with same I.

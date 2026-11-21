@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 97529708b7cc23d9
+CONTENT-HASH: 151c9ef890c265ae
 
 ## Blocking
+None.
 
 ## Polish
-
-## Vanhan sisällön löydökset
+None.
 
 ## Checked
-batch delta review (scope: new pysahdy boxes only): 3 boxes; losses become internal energy (heat-into wording right), η < 100 %, P = 3UI = 6,9 kW, t = 20 kWh/(0,90 · 5,0 kW) = 4,4 h recomputed; formulas given just above each box. Hash identical at start and end.
+batch delta review: pysähdy boxes and diff only, numbers recomputed in one script; η = 0,85: 85 % to the battery, 15 % internal energy (guardrail wording); I = 6900 W/(3·230 V) = 10 A.

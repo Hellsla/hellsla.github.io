@@ -249,7 +249,7 @@ Eristeessä varaukset eivät pääse liikkumaan vapaasti. Sähkökenttä kuitenk
 ```pysahdy
 Eriste asetetaan levyjen väliin. Mitä eristeen pinnoille tapahtuu? Miksi levyjen välinen jännite siksi pienenee?
 ---
-Eristeen pinnoille syntyy polarisaation vuoksi varauksia. Levyä vasten on levyn varaukselle vastakkaismerkkinen varaus. Ne vähentävät kenttää. Siksi jännite $U$ pienenee ja kapasitanssi $C = \tfrac{Q}{U}$ kasvaa.
+Eristeen pinnoille syntyy polarisaation vuoksi varauksia. Levyä vasten on levyn varaukselle vastakkaismerkkinen varaus. Ne vähentävät kenttää. Kun levyjen varaus pysyy samana (lähde irrotettu), jännite $U$ pienenee ja kapasitanssi $C = \tfrac{Q}{U}$ kasvaa.
 ```
 
 ### Energia on sähkökentässä

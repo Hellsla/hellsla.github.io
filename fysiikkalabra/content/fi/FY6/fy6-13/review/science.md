@@ -1,13 +1,10 @@
 VERDICT: FAIL
-CONTENT-HASH: 2b4ef0626743f363
+CONTENT-HASH: 51dbbd3c23140095
 
 ## Blocking
-- Box 2 (line 300): data 3 MV/m has one significant figure (table line 283 gives 3), but the answer is 3,0 kV (two). A limit value ('kestää') with one-figure data: answer 'noin 3 kV', or give the field as 3,0 MV/m in the question (A, significant figures).
+- B, dielectric box (line 250-252): "jännite U pienenee" holds only when the plates' charge stays the same (source disconnected). The lesson's own table (line 356) says that with the source connected U stays the same and Q grows. Add the condition, e.g. "Kun levyjen varaus pysyy samana (lähde irrotettu), ne vähentävät kenttää, joten ...", in the question or the answer, as line 152 and the figure ("sama Q") already do.
 
 ## Polish
 
-## Vanhan sisällön löydökset
-- Ei löydöksiä boksien ympäriltä luetusta kontekstista.
-
 ## Checked
-batch delta review (scope: new pysahdy boxes only): polarisation box matches line 152; ½·10·10⁻⁶ F·(20 V)² = 2,0 mJ recomputed; 3·10⁶·1,0·10⁻³ = 3·10³ V.
+batch delta review: breakdown box: U_max = E_max d doubles with d, correct; energy box: W = 1/2 * 10e-6 F * (20 V)^2 = 2,0e-3 J, recomputed; polarisation mechanism (opposite surface charge next to each plate) correct.

@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 08faaee1e3c84178
+CONTENT-HASH: 44ec35df3719cdca
 
 ## Blocking
 
 ## Polish
 
-## Vanhan sisällön löydökset
-- Ei löydöksiä boksien ympäriltä luetusta kontekstista.
-
 ## Checked
-batch delta review (scope: new pysahdy boxes only): current law 0,80 − 0,30 = 0,50 A, wire voltage ≈ 0, voltage law 12 − 5,0 = 7,0 V recomputed.
+batch delta review: junction box: 0,50 A + 0,50 A = 1,00 A > 0,80 A, so not possible, correct by the junction rule; loop box: U1/U2 = R1/R2 = 2 with the same current, sum equals the source voltage, correct.

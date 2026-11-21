@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8f81a6126c1563cd
+CONTENT-HASH: 3abfc7b88b1a237c
 
 ## Blocking
+None.
 
 ## Polish
-
-## Vanhan sisällön löydökset
+- New solar box answers "Miksi?" mostly by restating; one causal step (the light frees charge carriers in proportion to the number of photons, so I_k ∝ G) would make it an explanation.
 
 ## Checked
-batch delta review (scope: new pysahdy boxes only): 3 boxes; 0,30 V below the 0,6–0,7 V silicon threshold given in the theory, open-circuit power zero (I = 0), R = (3,3 − 1,8) V/0,010 A = 150 Ω recomputed. Hash identical at start and end.
+batch delta review: pysähdy boxes and diff only, numbers recomputed in one script; threshold-voltage typography, I_k ∝ G and nearly constant U_t consistent with lines 379 and 637.

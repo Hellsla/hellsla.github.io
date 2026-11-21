@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 0a1cb3f1ad2c6469
+CONTENT-HASH: 0f6ff75f00c36422
 
 ## Blocking
 
 ## Polish
 
-## Vanhan sisällön löydökset
-- Ei löydöksiä boksien ympäriltä luetusta kontekstista.
-
 ## Checked
-batch delta review (scope: new pysahdy boxes only): series current, parallel total below smallest branch, 12·4,0/16 = 3,0 Ω recomputed; product formula is given just above the box.
+batch delta review: series current box: same current 0,20 A through the second resistor, reason correct.
