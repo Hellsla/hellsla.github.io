@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 1275ef93804ae18a
+CONTENT-HASH: f91fa82751e0bfda
 
 ## Blocking
 
 ## Polish
+- [Minor] Kolmas Pysähdy ja mieti -kysymys: "ja kuinka paljon?" jää vastauksessa epätarkaksi ("puolta lyhyempi" voi lukea "puolet lyhyempi"); ehdota: "aallonpituus on puolet niin pitkä."
+
+## Vanhan sisällön löydökset
+- Ei löydöksiä, jotka estäisivät uudet laatikot.
 
 ## Checked
-- Delta: Kertaa-tehtävän (Pohdinta) kysymys nimeää nyt "Auringon valon spektrin punaisessa/violetissa päässä"; avasin fy8-2-stage-herata-390 (kysymys, vaihtoehdot, nappi: asettelu ja LaTeX-yksiköt kunnossa, ei ylivuotoa).
-- Avasin myös fy8-2-stage-sovella-390-1 ja fy8-2-stage-tarkista-390-1 nähdäkseni, että sivun asettelu säilyi. Kuvia ei muutettu (teacher-figure, md-paragraphs: sisältö ennallaan).
+- theory-1280-1, -2, -3: kolme uutta laatikkoa (otsikko, kysymys, suljettu Vastaus; yksiköt LaTeX:ssa, desimaalipilkku, ei ylivuotoa), ympäröivä asettelu ehjä.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
