@@ -386,6 +386,8 @@
   <foreignObject x="144" y="141.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{blue LED}$</div></foreignObject>
   <foreignObject x="123.5" y="263.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$I = 0$</span></div></foreignObject>
 </svg></div></div>
+<aside class="stop-think"><p class="stop-think-label">Stop and think</p><p class="stop-think-q">A silicon diode is in the forward direction and its voltage is $0.30\,\text{V}$. Does a significant current flow through it?</p><details class="stop-think-a"><summary>Answer</summary><p>No. The voltage is below the threshold voltage, which is about $0.6\,\text{V}$–$0.7\,\text{V}$, so the current is almost zero.</p></details></aside>
+
 <h4>An LED changes electrical energy into light</h4>
 <p>An <strong>LED</strong>, a light-emitting diode, is a diode that emits light when current flows through it in the forward direction. The colour of the light depends on the semiconductor material of the LED, and the colour shows also in the threshold voltage. When the current is a few milliamperes, the voltage of a red LED is about $1.8$–$2.0\,\text{V}$, of a green one about $2.2\,\text{V}$ and of a blue or white one about $2.9$–$3.3\,\text{V}$. An LED changes a greater part of the electrical energy into light than a light bulb, in which most of the electrical energy becomes internal energy of the wire and is transferred to the surroundings as heat.</p>
 <h4>Why an LED needs a series resistor</h4>
@@ -449,6 +451,8 @@
 </svg></div></div>
 <figure class="unit-photo"><img src="../pics/fy6/solar-panels-jyvaskyla.webp" alt="A dark house roof against a blue sky; on the roof are two rows of dark blue solar panels and a chimney." width="1600" height="896" loading="lazy" decoding="async"><figcaption>Solar panels on the roof of a detached house in Jyväskylä, Finland. Each panel contains many solar cells connected in series. The panels produce a direct voltage, which an inverter converts into the alternating voltage of the grid. <span class="photo-credit">Photo: Tiia Monto, CC BY-SA 4.0</span></figcaption></figure>
 
+<aside class="stop-think"><p class="stop-think-label">Stop and think</p><p class="stop-think-q">The light dims to half. The short-circuit current of a solar cell halves, but the open-circuit voltage changes only a little. Why?</p><details class="stop-think-a"><summary>Answer</summary><p>The short-circuit current is directly proportional to the irradiance, so it halves. The open-circuit voltage depends on the light only slightly, so it stays almost the same.</p></details></aside>
+
 <h3 class="theory-h">Series resistor and power of a solar cell</h3>
 <h4>Sizing the series resistor</h4>
 <p>When the source, the series resistor and the LED are in series, the same current $I$ flows through all of them. By Kirchhoff's voltage law the voltage of the source is shared between the resistor and the LED, $U = U_R + U_\text{D}$ (chapter <em>Kirchhoff's laws and potential in a circuit</em>). The resistor obeys Ohm's law, $U_R = RI$, so the resistance of the series resistor is</p>
@@ -483,6 +487,8 @@
   <foreignObject x="457" y="43.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$U = 6.0\,\text{V}$</div></foreignObject>
 </svg></div></div>
 <p>The power of a component is its voltage times its current (chapter <em>Electric power and the heating of a resistor</em>): the power of the LED is $P_\text{D} = U_\text{D} I$ and the power of the resistor $P_R = U_R I$. In the resistor electrical energy becomes internal energy of the resistor, so the resistor is chosen so that it withstands this power. In the reverse direction $I = 0$, so $U_R = RI = 0$ and the voltage of the diode is the whole voltage $U$ of the source.</p>
+<aside class="stop-think"><p class="stop-think-label">Stop and think</p><p class="stop-think-q">An LED needs a current of $10\,\text{mA}$ and its voltage is $1.8\,\text{V}$. The source is $3.3\,\text{V}$. What series resistor is needed?</p><details class="stop-think-a"><summary>Answer</summary><p>$R = \tfrac{U - U_\text{D}}{I}$. Substituting: $\tfrac{3.3\,\text{V} - 1.8\,\text{V}}{0.010\,\text{A}} = 150\,\Omega$.</p></details></aside>
+
 <h4>The power of a solar cell</h4>
 <p>The electric power given by a solar cell or panel is</p>
 <p>$$P = U I$$</p>
