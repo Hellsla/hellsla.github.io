@@ -1,14 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: 0d89281e543536a0
+VERDICT: PASS
+CONTENT-HASH: 14f8e9603b67332a
 
 ## Blocking
-- Laatikko 1 (deuteroni): kappale sanoo, että ytimen massa on pienempi kuin erillisten nukleonien ja että hajottaminen vaatii saman energian. Vastaus on tekstissä. Kysy numeerinen: paljonko deuteronin massavaje on atomimassayksikköinä.
+(none)
 
 ## Polish
-- Laatikko 3 toistaa viereistä $0{,}001000\,\text{u}$-esimerkkiä; laatikko 4 antaa vastauksen tekstin virkkeestä, mutta vaatii luvut.
+- Laatikko 3 (1805 - 1800 MeV): 'vapautuu tuotteiden liike-energiaksi' on yksinkertaistus; riittää 'vapautuu energiaa'.
 
 ## Vanhan sisällön löydökset
-- Ei muita.
+(none; ei Blocking)
 
 ## Checked
-batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (laatikot 2-4 ok).
+batch delta review: 3 uutta laatikkoa (0,099 u; 1,9 MeV; 5 MeV vapautuu) oikein; tiivistelmän kaavan irtirivitys ok.

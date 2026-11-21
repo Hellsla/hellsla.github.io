@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 16255354d1008240
+CONTENT-HASH: 76a4971f7e4a8382
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] toinen pysahdy-laatikko (kvanttipiste) — kysymysketju on pitkä (neljä kysymystä ja ohje); kysymys tulee viimeiseksi, mutta voisi jakaa "Laske… Päättele… Kuinka paljon…" omiksi riveikseen.
 
 ## Vanhan sisällön löydökset
-- none
+- ei
 
 ## Checked
-batch delta review round 2: fy8-7-theory-1280-1/2/3 (box 1 beside the three-process figure, box 2 after the quantum-dot table, box 3 via the same layout); render clean, closed; answers read in lesson.md (full sentences, $\tfrac{N}{t}$ in maths).
+- batch delta review: two edited "Pysähdy ja mieti" boxes read from diff; `$2{,}0\,\text{nm}$:n` case ending correct; units LaTeX; layout via shared component.

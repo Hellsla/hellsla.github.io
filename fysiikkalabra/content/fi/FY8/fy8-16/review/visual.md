@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 12a708c719f9d068
+CONTENT-HASH: 3d9667d54c81c00a
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] pysahdy 1 — "$70 \cdot 60 = 4200\,\tfrac{\text{km}}{\text{s}}$" drops the units of $H_0$ and $d$ in the factors; show them or note "yksiköt jätetty pois".
+- [Minor] pysahdy 3 — "a)" and "b)" plain text are fine, but a line break before b) would read better on a phone.
+- [Minor] pysahdy 1 — "emme ole erityinen keskipiste" is abrupt; "emme ole maailmankaikkeuden keskipiste".
 
 ## Vanhan sisällön löydökset
-- none
+(none)
 
 ## Checked
-batch delta review, round 2: opened fy8-16-theory-1280-3 (the 380 000 years box after the cosmic background paragraph; readable, layout intact). The galaxy A/B box and the Hubble box and answers read from source: units in LaTeX, full sentences.
+batch delta review (pysahdy only): component rendering in fy8-10 theory capture; source of all three boxes (nested \tfrac units legible in capture).

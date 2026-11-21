@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5cbd4649568cde35
+CONTENT-HASH: 95c07eabab23ab98
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] kvarkkilaatikko — "hiukkaskasoja" on outo sana; "hiukkasia, joiden kvarkkikoostumus on …". Alkuaine-/kvarkkisymbolit $u\bar{d}$, $uud$, $ud$ ovat kursiivia, kuten muuallakin.
+- [Minor] Q-laatikko — "$(135 - 140)\,\text{MeV}$": yksikkö vain lopussa, hyväksyttävä; massat annettu $\tfrac{\text{MeV}}{c^2}$, joten ketju on johdonmukainen.
 
 ## Vanhan sisällön löydökset
-- none
+- ei
 
 ## Checked
-batch delta review round 2: fy8-15-theory-1280-2 (quark box with $+\tfrac{2}{3}e$, clean), fy8-15-theory-1280-4 (context), fy8-15-theory-1280-5 (decay box under the Q formula); box 2 read in source; answers in lesson.md (full sentences, $Q < 0$ as maths).
+- batch delta review: two edited boxes read from diff; fractions in LaTeX, `\left(…\right)` sets correctly; layout via shared component.

@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 0d89281e543536a0
+CONTENT-HASH: 14f8e9603b67332a
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] pysahdy-laatikko (hiili-12) — "$1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$" kysymyksessä, mutta vastauksessa "$931{,}5\,\text{MeV}/\text{u}$": yhtenäistä merkintä (c² puuttuu vastauksesta).
 
 ## Vanhan sisällön löydökset
-- none
+- ei
 
 ## Checked
-batch delta review round 2: fy8-10-theory-1280-2/3/4 (all three boxes render clean, closed) and fy8-10-stage-selita-390-5 (box 3 at 390 px, readable, no overflow); answers read in lesson.md (units LaTeX, $\tfrac{\text{MeV}}{c^2}$ ok).
+- batch delta review: two edited boxes read from diff; fractions and units in LaTeX; layout via shared component.

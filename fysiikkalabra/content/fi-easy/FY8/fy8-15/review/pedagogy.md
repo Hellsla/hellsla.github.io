@@ -1,14 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 5cbd4649568cde35
+VERDICT: PASS
+CONTENT-HASH: 95c07eabab23ab98
 
 ## Blocking
-- Laatikko 1 (kvarkki): kappale sanoo, että kvarkkia ei ole havaittu vapaana ja että syntyy uusia pareja; vastaus toistaa tämän.
+(none)
 
 ## Polish
-- Laatikko 2 ja 3 ovat hyviä. Laatikko 3 seisoo protonin hajoamisen perässä mutta sopii Q-kaavaan.
+- Laatikko 1: 'hiukkaskasoja' on outo sana; käytä 'hiukkasia'. Ratkaisun peruste 'kokonaisluku e:n monikertana' on pelkkä sääntö; lisää, että murtovarausta ei havaita vapaana.
+- Laatikko 3: Q-nimen yhteys reaktioenergiaan (luku Massavaje) voisi näkyä.
 
 ## Vanhan sisällön löydökset
-- Ei muita.
+(none; ei Blocking)
 
 ## Checked
-batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (laatikot 2, 3 ok).
+batch delta review: 3 uutta laatikkoa; varaukset oikein (+e, +e, +1/3 e), gravitaatio-perustelu ja Q = -5 MeV oikein.

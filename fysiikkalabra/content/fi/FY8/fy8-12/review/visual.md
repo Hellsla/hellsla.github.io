@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 038f2a81a5c6b1c0
+CONTENT-HASH: 84f5be0ad7226b0f
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] lesson.md line 258, answer: "ionparia" but the question says "ionipareja"; write "ionipareja" (the old text under Ionisaatioenergia has "ionparia" too, an old-content finding).
-- [Minor] lesson.md line 127, answer is a bare calculation; add a sentence, e.g. "Fotoni voi ionisoida enintään noin $4{,}8 \cdot 10^{3}$ molekyyliä."
+- [Minor] pysahdy 1 — "$1{,}7\,\text{eV} - 3{,}3\,\text{eV}$" is a range but renders with a minus sign; write "$1{,}7\,\text{eV}$–$3{,}3\,\text{eV}$" or "väliltä ... ja ...".
+- [Minor] pysahdy 1 — "$n = 4762$" has no unit and four figures against $6{,}0 \cdot 10^4$; show it as $4{,}76 \cdot 10^3$ to match the answer.
+- [Minor] pysahdy 2 — first sentence joins two clauses with a semicolon and "oleta"; split into two sentences.
 
 ## Vanhan sisällön löydökset
-- "ionparia" in the Ionisaatioenergia paragraph (visible in fy8-12-stage-selita-390-2); same spelling fix.
+(none)
 
 ## Checked
-batch delta review, round 2: opened fy8-12-theory-1280-2 (alpha/beta box end and the penetration table; layout intact) and fy8-12-stage-selita-390-2 (390 px, no overflow). The numbers 60 keV, 12,6 eV, 5,49 MeV, 34 eV in LaTeX.
+batch delta review (pysahdy only): component rendering in fy8-10 theory capture; source of all three boxes.

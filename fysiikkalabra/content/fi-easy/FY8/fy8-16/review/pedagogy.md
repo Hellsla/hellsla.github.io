@@ -1,15 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 657cff99b1943eed
+VERDICT: PASS
+CONTENT-HASH: 06fd0d500e22f755
 
 ## Blocking
-- Laatikko 1 (galaksi B): luku sanoo suoraan, että nopeus on suoraan verrannollinen etäisyyteen ja ettemme ole keskipisteessä. Laatikko seisoo myös punasiirtymäkappaleen perässä. Vastaus on tekstissä.
-- Laatikko 2 (380 000 vuotta): tekstin edellinen kappale sanoo, että vapaat elektronit sirottivat fotoneja joka suuntaan. Vastaus on sanasta sanaan siellä.
+(none)
 
 ## Polish
-- Laatikko 3 on kaavan suora sijoitus; kysy vaikka d kun v tunnetaan.
+- Laatikko 1: 'emme ole erityinen keskipiste' on hyvä, mutta kysymys voisi nimetä 'A:sta katsottuna' selvemmin.
+- Laatikko 2: 0,012 eV vs 13,6 eV on tuhannesosa, kyllä (1/1100); ok.
 
 ## Vanhan sisällön löydökset
-- Ei muita.
+(none; ei Blocking)
 
 ## Checked
-batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (laatikko 3 ok).
+batch delta review: 3 uutta laatikkoa (4200 km/s ja 60 Mpc; 0,012 eV; 7000 km/s ja 200 Mpc) oikein ja sopivat kohtiinsa.

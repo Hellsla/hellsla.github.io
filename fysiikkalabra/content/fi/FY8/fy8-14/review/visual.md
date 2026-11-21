@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 41af5cb53fa26fd8
+CONTENT-HASH: 81aa743a160500c4
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] pysahdy 2 — "$30\,\text{cm}$ nanosekunnissa" is a rate in prose; write "$30\,\tfrac{\text{cm}}{\text{ns}}$" in the task too, as the answer does.
+- [Minor] pysahdy 1 — the last sentence of the answer is long; split after "paljon".
 
 ## Vanhan sisällön löydökset
-- none
+(none)
 
 ## Checked
-batch delta review, round 2: opened fy8-14-theory-1280-3 (annihilation box after the PET paragraph, then the radiotherapy figure; readable, layout intact). The TT box and the half-value box and answers read from source: "TT:n" correct, fractions in LaTeX, full sentences.
+batch delta review (pysahdy only): component rendering in fy8-10 theory capture; source of all three boxes.

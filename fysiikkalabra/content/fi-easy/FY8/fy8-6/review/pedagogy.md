@@ -1,14 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: edcabe133a8a57f4
+VERDICT: PASS
+CONTENT-HASH: 3ffda874ba7a6cb3
 
 ## Blocking
-- Laatikko 1 (vihreän LEDin energia-aukko): kuvateksti sanoo, että vihreän fotonin energia on suurempi kuin punaisen, ja kysymys antaa ylärajan. Vastaus on järjestyksen toisto. Anna jokin $\lambda$ ja kysy $E_\text{g}$ tai kynnysjännite.
+(none)
 
 ## Polish
-- Laatikko 2 (500 nm) toistaa suoraan yllä lasketun esimerkin. Laatikko 3 on suora sijoitus mutta kunnossa.
+- Laatikon 1 uusi muotoilu (suhde 630/450 = 1,4) on parempi kuin vanha, koska se vaatii laskemisen; ratkaisussa 'sin/pun' -alaindeksit voisi avata kerran.
 
 ## Vanhan sisällön löydökset
-- Ei muita.
+(none; ei Blocking)
 
 ## Checked
-batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (laatikot 2, 3 ok).
+batch delta review: muutettu laatikko (1,4-kertainen) ja siirretty laatikko (h = 6,7e-34) oikein; siirto virhearvioinnin jälkeen sopii; muutos 'approx' kunnossa.

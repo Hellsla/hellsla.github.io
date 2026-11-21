@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 2ca0cc60b0531c42
+CONTENT-HASH: 780a55e6c04f1843
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] pysahdy 1 — in the capture "Hiili-12–ytimen" shows a long dash: check that the source uses a hyphen (Hiili-12-ytimen).
+- [Minor] pysahdy 2 — "$E_\text{B} = 0{,}0020 \cdot 931{,}5\,\text{MeV}$": the $\tfrac{\text{MeV}}{c^2}$ is multiplied by $c^2$ implicitly; fine, say "kerrotaan $c^2$:lla" for the first-time reader.
 
 ## Vanhan sisällön löydökset
-- none
+(none)
 
 ## Checked
-batch delta review, round 2: opened fy8-10-theory-1280-2 (deuteron box after the mass-energy figure; 2,2 MeV in LaTeX, readable, layout intact). Boxes 2 and 3 and answers read from source: fractions \tfrac inline, units in LaTeX, decimal comma, full sentences.
+batch delta review (pysahdy only): fy8-10-theory-1280-2 (box 1 rendered well, fraction units legible, Vastaus closed); source of the other two boxes.

@@ -1,14 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: a0bf24d8104b21fb
+VERDICT: PASS
+CONTENT-HASH: 06e877879acbd29d
 
 ## Blocking
-- Laatikko 1 (viive): vastaus on sanasta sanaan luvun *Aaltomalli ei selitä havaintoja* Viive-kohdassa. Se ei testaa fotonikappaletta, jonka perässä laatikko on. Lisäksi kysymys on epäselvä: levystä "irtoaa elektroneja" jo oletuksessa, joten "milloin alkaisivat irrota" sekoittuu. Kysy esim., miksi fotonimalli ei anna viivettä.
+(none)
 
 ## Polish
-- Laatikko 2 on hyvä (ennuste, jossa hf on vähän yli W). Laatikko 3 on hyvä: vastaus ei ole tekstissä.
+- Laatikko 2 (punainen valo, taajuus vähän yli rajan): vastauksessa voisi sanoa, että tulos on 'melkein nolla' mutta ei nolla, jotta liike-energia ei jää epäselväksi.
 
 ## Vanhan sisällön löydökset
-- Ei muita.
+(none; ei Blocking)
 
 ## Checked
-batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (laatikot 2, 3 ok).
+batch delta review: 3 uutta laatikkoa: laskut oikein (t = 1,9 h; 0,7 ja 3,7 eV, yli 5-kertainen), paikka heti selittävän tekstin jälkeen, vastaus ei paljastu ennen yritystä.

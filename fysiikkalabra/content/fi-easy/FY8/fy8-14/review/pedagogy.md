@@ -1,15 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 5bb92259e4d619c4
+VERDICT: PASS
+CONTENT-HASH: aaf214785b048e58
 
 ## Blocking
-- Laatikko 1 (TT): kappale sanoo TT:n mittaavan "tuhansista suunnista" ja että annos on kymmeniä kertoja suurempi. Vastaus toistaa tekstin. Kysy esim. vaimennuksen laskemisesta tai miksi TT:tä ei tehdä rutiinina.
-- Laatikko 2 (PET): PET-kappale sanoo "vastakkaisiin suuntiin, koska hiukkasten yhteinen liikemäärä on pieni". Vastaus on sanasta sanaan siellä ja sijaitsee eri aiheen (syklotroni) perässä.
+(none)
 
 ## Polish
-- Laatikko 3 on hyvä sovellus.
+- Laatikko 2: 'Kuinka kaukana janan keskipisteestä' kuvaa; piirros auttaisi.
+- Laatikko 3: sano, että materiaalien puoliintumispaksuudet ovat eri, mutta tässä niitä ei tarvita.
 
 ## Vanhan sisällön löydökset
-- Ei muita.
+(none; ei Blocking)
 
 ## Checked
-batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (laatikko 3 ok).
+batch delta review: 3 uutta laatikkoa (80-kertainen; 6,0 cm; 1/8) oikein; sopivat kohtiinsa.

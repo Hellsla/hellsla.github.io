@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 5bb92259e4d619c4
+CONTENT-HASH: aaf214785b048e58
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] TT-laatikon vastaus — "Yhden suunnan annos on paljon pienempi kuin yhden röntgenkuvan annos. Siksi ero on kymmeniä kertoja eikä tuhatkertainen." on sanallisesti raskas; selkeämpi: "Yksi projektio antaa vain $0{,}010\,\text{mSv}$, joten ero on $80$-kertainen eikä $800$-kertainen."
 
 ## Vanhan sisällön löydökset
-- none
+- ei
 
 ## Checked
-batch delta review round 2: fy8-14-theory-1280-2 (CT box above the dose table, clean), fy8-14-theory-1280-4/5 (context for annihilation and half-value-layer boxes); box 2 and 3 checked in source (full sentences, $12{,}5\,\%$ as maths); layout around boxes undisturbed.
+- batch delta review: both edited boxes; theory-1280-3 opened: the PET box renders cleanly (ns, cm in LaTeX, "Vastaus" disclosure closed); text of TT box read from diff.

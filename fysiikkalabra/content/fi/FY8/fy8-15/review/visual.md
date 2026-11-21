@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c50b60021804d57b
+CONTENT-HASH: 3b7fdd0206c26755
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] pysahdy 1 — "hiukkaskasoja" is odd; "hiukkasia" or "hiukkasryhmiä". Antiquark is $\bar{d}$ while the project vector convention is \overline for vectors only; fine here.
+- [Minor] pysahdy 1 — "kokonaisluku $e$:n monikertana" read twice; "$e$:n kokonaislukumonikerta" is smoother.
+- [Minor] pysahdy 3 — $-5\,\text{MeV}$ in "$(135 - 140)\,\text{MeV}$" fine; the symbol $Q$ is introduced in the task without name, acceptable since the chapter defines it.
 
 ## Vanhan sisällön löydökset
-- none
+(none)
 
 ## Checked
-batch delta review, round 2: opened fy8-15-theory-1280-3 (the 10^36 box after the interactions paragraph; readable, layout intact, Feynman figure and CMS photo unaffected). The quark and decay boxes and answers read from source: +\tfrac{2}{3}e, Q = (m_alku - m_loppu)c^2 in LaTeX, full sentences.
+batch delta review (pysahdy only): component rendering in fy8-10 theory capture; source of all three boxes.

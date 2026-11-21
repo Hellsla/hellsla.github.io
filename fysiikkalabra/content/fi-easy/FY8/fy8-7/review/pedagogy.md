@@ -1,14 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 16255354d1008240
+VERDICT: PASS
+CONTENT-HASH: 76a4971f7e4a8382
 
 ## Blocking
-- Laatikko 1 (stimuloitu emissio): kappale sanoo "Saapuva fotoni ei katoa. Sen viereen syntyy toinen fotoni." Vastaus on tekstissä sanasta sanaan. Kysy esim., mikä on energia ennen ja jälkeen tai miksi kahden fotonin on oltava samassa vaiheessa.
+(none)
 
 ## Polish
-- Laatikko 2 (kvanttipisteet): kuvan data luovuttaa suunnan (suurempi piste, pidempi aallonpituus); vaadi perustelu energia-aukosta. Laatikko 3 toistaa viereisen kappaleen päättelyn.
+- Laatikko 2: 'Energia-aukko on melkein yhtä suuri' kuin fotonin energia kannattaa sanoa täsmällisemmin (aukko = fotonin energia, likimain).
+- Laatikko 2 on kolmiosainen; harkitse jakoa kahteen.
 
 ## Vanhan sisällön löydökset
-- Ei muita.
+(none; ei Blocking)
 
 ## Checked
-batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (laatikko 3 ok).
+batch delta review: 3 uutta laatikkoa laskettu oikein (2000 fotonia, 1,9 keV; 2,76 eV < piste pienempi kuin 2,0 nm, 480 nm = 2,58 eV kuvasta; N/t puolittuu).

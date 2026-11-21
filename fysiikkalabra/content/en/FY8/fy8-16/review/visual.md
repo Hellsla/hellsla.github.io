@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0da99b45f4fbf09d
+CONTENT-HASH: 4b87060b8e2d343c
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
-
-## Vanhan sisällön löydökset
-(none)
+- [Minor] Hubble box — `70 \cdot 60 = 4200\,\tfrac{\text{km}}{\text{s}}` omits units in the substitution; add `\,\tfrac{\text{km/s}}{\text{Mpc}}` and `\,\text{Mpc}` for the symbolic-then-substitute pattern.
+- [Minor] a)/b) box — inline "a) … b) …" in one paragraph; acceptable, a line break would help.
 
 ## Checked
-round 2 delta, new Stop and think boxes: opened fy8-16-theory-1280-2, fy8-16-stage-selita-390-4 (closed boxes sit in the reading column, green bar, label, question with LaTeX numbers and units, Answer toggle, no clipping at 1280 or 390 px, placed after the paragraph they test); answers read in lesson.md: full sentences, decimal point, units and numbers in LaTeX, colon division, `\cdot`. Boxes' open answer state is not in the captures, judged from source.
+batch delta review: three pysahdy boxes read from source; maths set correctly, units in LaTeX; box captures not available.

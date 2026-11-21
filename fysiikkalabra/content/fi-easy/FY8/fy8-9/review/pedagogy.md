@@ -1,14 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: c00610f49a26d90f
+VERDICT: PASS
+CONTENT-HASH: 41902d2b8ee6b58a
 
 ## Blocking
-- Laatikko 1 ("myöhässä"): kappale sanoo suoraan, että pitkään säilynyt ydin hajoaa yhtä todennäköisesti kuin uusi. Vastaus on tekstissä. Käytä tilannetta, jossa opiskelija päättelee jotain muuta (esim. 4 ydintä jäljellä, 5. puoliintumisaika).
+(none)
 
 ## Polish
-- Laatikko 2 seisoo lähdemerkinnän ja valokuvan perässä eikä testaa niitä; siirrä puoliintumisajan määritelmän perään.
+- Laatikko 1: 'Päättele näytteen ytimien määristä' on epämääräinen; kysy suoraan 'laske ytimien määrä' ensin.
 
 ## Vanhan sisällön löydökset
-- Ei muita.
+(none; ei Blocking)
 
 ## Checked
-batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (laatikot 2, 3 ok).
+batch delta review: 3 uutta laatikkoa (2000 -> 0,50; 1000 ydintä; lambda 2x) oikein; hyvä käsitevastaus: ydin ei vanhene.

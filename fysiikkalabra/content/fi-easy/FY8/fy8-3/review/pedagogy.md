@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a24b37712a8e5371
+CONTENT-HASH: 09c833045fb594ca
 
 ## Blocking
-- (ei)
+(none)
 
 ## Polish
-- Laatikko 4 ($E_5$) on pelkkä sijoitus; vaihda kysymys esim. siihen, kumpi väli $n=5 \to 6$ vai $n=4 \to 5$ on pienempi.
-- Laatikot 1 ja 2 ovat hyviä: vastaus perustelee eikä ole tekstissä sellaisenaan.
+- Uusi laatikko on kaavaosassa ennen taulukkoa; sarjan nimi (Paschen) voisi mainita ratkaisussa.
 
 ## Vanhan sisällön löydökset
-- Ei muita.
+(none; ei Blocking)
 
 ## Checked
-batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (kaikki laatikot ok).
+batch delta review: vanhan laatikon poisto ja uusi laatikko (5 -> 3: 0,967 eV, 1,28 um, infrapuna) laskettu oikein; sopii kaavaosan jälkeen.
