@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: bc37ff716059868b
+CONTENT-HASH: b5aabbe65432f34a
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] pysahdy 2 answer: "koska $-5{,}0\,\text{eV} + 2{,}4\,\text{eV} = -2{,}6\,\text{eV} < 0$, joten se on alle nollan" is redundant and muddled. Suggest: "Ei. Fotonin energia $2{,}4\,\text{eV}$ ei ole tilojen erotus $1{,}9\,\text{eV}$, joten atomi ei absorboi sitä."
+- [Minor] pysahdy-laatikko (absorptio) — "$1240\,\text{eV nm}$": yksikössä ei ohutta väliä ("eV\,nm"); sama muissa luvuissa, joten projektin tapa, ei muutettava tässä.
 
 ## Vanhan sisällön löydökset
-- none
+- ei
 
 ## Checked
-batch delta review round 2: fy8-2-theory-1280-1/2/3 (all three boxes: render clean, closed, spacing fine, none cut off by figures); stage 390 px layout shared with fy8-1/16 captures; answers read in lesson.md (units LaTeX, {,}).
+- batch delta review: moved/new "Pysähdy ja mieti" box and the edited exercise solution read from the diff; layout follows the same shared component seen in fy8-1 and fy8-14 captures; box now after the absorption paragraph, order reads logically.

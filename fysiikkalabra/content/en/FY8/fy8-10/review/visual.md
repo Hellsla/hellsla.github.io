@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c368076189f4c670
+CONTENT-HASH: 13cb96946a70a2aa
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] box 2 answer: `E_B = 0.0020 \cdot 931.5\,\text{MeV}` drops the unit u of the mass defect; set `\Delta m\,c^2 = 0.0020\,\text{u} \cdot c^2 = 0.0020 \cdot 931.5\,\text{MeV} \approx 1.9\,\text{MeV}` so the chain shows what it computes.
-
-## Vanhan sisällön löydökset
-(none)
+- [Minor] pysahdy box — `1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}` and `\text{MeV}/\text{u}` in the answer differ in form; harmless.
 
 ## Checked
-round 2 delta, new Stop and think boxes: opened fy8-10-theory-1280-3, fy8-10-stage-selita-390-4 (closed boxes sit in the reading column, green bar, label, question with LaTeX numbers and units, Answer toggle, no clipping at 1280 or 390 px, placed after the paragraph they test); answers read in lesson.md: full sentences, decimal point, units and numbers in LaTeX, colon division, `\cdot`. Boxes' open answer state is not in the captures, judged from source.
+batch delta review: pysahdy box and changed exercise solution read from source; box captures not available.

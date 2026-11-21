@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 7e07fa191ab9635d
+CONTENT-HASH: 3ff11295e5514cc9
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
-
-## Vanhan sisällön löydökset
-(none)
+- [Minor] PET box — "$30\,\tfrac{\text{cm}}{\text{ns}}$" is fine; the question gives the 30 cm/ns only in prose with plain "Light travels $30\,\text{cm}$ in a nanosecond" (ok).
 
 ## Checked
-round 2 delta, new Stop and think boxes: opened fy8-14-theory-1280-3, fy8-14-stage-selita-390-1 (closed boxes sit in the reading column, green bar, label, question with LaTeX numbers and units, Answer toggle, no clipping at 1280 or 390 px, placed after the paragraph they test); answers read in lesson.md: full sentences, decimal point, units and numbers in LaTeX, colon division, `\cdot`. Boxes' open answer state is not in the captures, judged from source.
+batch delta review: both pysahdy boxes (CT dose, PET time difference) read from source; boxes follow situation, then question last; box captures not available.

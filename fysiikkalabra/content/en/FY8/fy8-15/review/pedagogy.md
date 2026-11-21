@@ -1,14 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: f29aab2c13ee2e8c
+VERDICT: PASS
+CONTENT-HASH: cf2b469f8356e0b9
 
 ## Blocking
-- Box 1 (free quark of charge 2/3 e): the paragraph above says 'A free quark has never been observed ... new quark-antiquark pairs, and hadrons, not single quarks, come out'; the answer restates it. Ask which of $u\bar{d}$, $uud$, $ud$ a detector could register, with charges to compute.
+- none
 
 ## Polish
-- Box 3 (Q < 0) restates the condition 'Q > 0' from a paragraph before the proton-decay text it follows; move it after the Q paragraph.
-
-## Vanhan sisällön löydökset
-- None
+- Charge box says 'which a detector can register'; the real reason ud is excluded is that hadrons have whole-number charge (and ud is no hadron). Reword to 'which can be a real particle', consistent with the lesson text.
 
 ## Checked
-batch delta review (round 2, new pysahdy boxes): 3 boxes judged: 2 (gravity versus electric force, neutral bodies) is a real transfer question.
+batch delta review: 3 boxes: quark charges (computations correct), gravity vs electric force (neutrality), Q of a decay (-5 MeV, sign interpretation correct).
+
+## Vanhan sisällön löydökset
+- none

@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 906f86a6797bdbcb
+CONTENT-HASH: d5ca2d340cc532bf
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
-
-## Vanhan sisällön löydökset
-(none)
+- [Minor] pysahdy box — probabilities and counts are bare numbers ($0.040$, $5000$) which is correct (dimensionless); `\pm 14` reads well. Nothing to fix.
 
 ## Checked
-round 2 delta, new Stop and think boxes: opened fy8-4-theory-1280-2, fy8-4-stage-selita-390-4 (closed boxes sit in the reading column, green bar, label, question with LaTeX numbers and units, Answer toggle, no clipping at 1280 or 390 px, placed after the paragraph they test); answers read in lesson.md: full sentences, decimal point, units and numbers in LaTeX, colon division, `\cdot`. Boxes' open answer state is not in the captures, judged from source.
+batch delta review: pysahdy box read from source; opened none of the figure captures as the diff does not touch figures; box capture not available.

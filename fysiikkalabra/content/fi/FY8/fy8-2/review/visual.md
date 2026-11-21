@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1ceaa036463ed6d1
+CONTENT-HASH: 64c8add4b0b79452
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] pysahdy 1 — "$hc \approx 1240\,\text{eV nm}$": the unit has a space inside \text; write $1240\,\text{eV}\,\text{nm}$ as fy8-7 does (same in fy8-3).
+- [Minor] pysahdy 3 — "Kumman siirtymän ... ja kuinka paljon" is answered "puolet niin pitkä"; fine, but the question asks "kuinka paljon" while the answer says "puolet": "kuinka moninkertainen" would match.
 
 ## Vanhan sisällön löydökset
-- none
+(none)
 
 ## Checked
-batch delta review, round 2: opened fy8-2-theory-1280-2 (box 2, -5,0 eV / -3,1 eV / 1,9 eV / 2,4 eV in LaTeX, closed Vastaus, placed before the Fluoresenssi figure, layout intact). Boxes 1 and 3 and all answers read from source: LaTeX units, decimal comma, full sentences.
+batch delta review (pysahdy only): theory captures at 1280 px (fy8-2-theory-1280-*) for layout of the new box; source of all three boxes.

@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 1a0ef7880fc2b2f4
+CONTENT-HASH: ed2ab204cfd28ffe
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
-
-## Vanhan sisällön löydökset
-(none)
+- [Minor] pysahdy box — answer fraction is inline `\tfrac` with units, readable; the ratio $1.4$ could carry "(2 significant figures)" in no way required.
 
 ## Checked
-round 2 delta, new Stop and think boxes: opened fy8-6-theory-1280-2, fy8-6-stage-selita-390-5 (closed boxes sit in the reading column, green bar, label, question with LaTeX numbers and units, Answer toggle, no clipping at 1280 or 390 px, placed after the paragraph they test); answers read in lesson.md: full sentences, decimal point, units and numbers in LaTeX, colon division, `\cdot`. Boxes' open answer state is not in the captures, judged from source.
+batch delta review: pysahdy box and the changed exercise solution (`=` to `\approx`) read from source; box captures not available.

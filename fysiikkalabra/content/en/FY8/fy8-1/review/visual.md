@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 42b31d0d5621e81c
+CONTENT-HASH: 98a31a1fe7892570
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
-
-## Vanhan sisällön löydökset
-(none)
+- [Minor] pysahdy box — wave-model estimate is long for a box; the three given values are in clear order, nothing to fix beyond optional line break before "In the experiment".
 
 ## Checked
-round 2 delta, new Stop and think boxes: opened fy8-1-theory-1280-1, -2, -3, fy8-1-stage-selita-390-3 (closed boxes sit in the reading column, green bar, label, question with LaTeX numbers and units, Answer toggle, no clipping at 1280 or 390 px, placed after the paragraph they test); answers read in lesson.md: full sentences, decimal point, units and numbers in LaTeX, colon division, `\cdot`. Boxes' open answer state is not in the captures, judged from source.
+batch delta review: pysahdy box read from source (maths, units, order, thin spaces, decimal point); opened fig-row-1280; the box itself has no dedicated capture.

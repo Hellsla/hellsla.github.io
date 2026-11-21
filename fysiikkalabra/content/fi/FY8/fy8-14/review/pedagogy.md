@@ -1,15 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 41af5cb53fa26fd8
-
+CONTENT-HASH: 81aa743a160500c4
 ## Blocking
-(ei)
-
+-
 ## Polish
-- Kolmas laatikko: lukumäärien yhteenlasku on sanasta sanaan yllä; kysy myös sama kolmella kerroksella.
-- Ensimmäinen ja toinen laatikko ovat perusteluja, joihin vastaus edellyttää luvun yhdistämistä; hyvät.
-
-## Vanhan sisällön löydökset
-(ei)
-
+-
 ## Checked
-batch delta review round 2: laatikoiden vastattavuus.
+batch delta review: uudet Pysähdy ja mieti -laatikot: laskut tarkistettu, kysymys ratkaistavissa opitulla, palaute korjaa käsitteen; vanhasta sisällöstä ei löydöksiä (Vanhan sisällön löydökset: ei).

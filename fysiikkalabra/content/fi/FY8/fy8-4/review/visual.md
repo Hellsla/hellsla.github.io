@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: cc91749a751e9d64
+CONTENT-HASH: 650693dd8b77b4ba
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] pysahdy 1 — long task (about 45 words) in three sentences; the page breaks before the first question, which is fine, but "Entä kun ... kumpi tulos on suhteellisesti tasaisempi?" packs two questions in one sentence; split.
+- [Minor] pysahdy 1 — "$\pm 14$" and "$\pm 44$" have no basis shown (square root of the count); fine for a stop box, optional.
 
 ## Vanhan sisällön löydökset
-- none
+(none)
 
 ## Checked
-batch delta review, round 2: opened fy8-4-theory-1280-3 (the photon-flow box after N/t = P/hf; readable, closed Vastaus, no clipping). Boxes 1 and 2 and all answers read from source: numbers and formulas in LaTeX, full sentences, natural Finnish.
+batch delta review (pysahdy only): component rendering in fy8-10 theory capture; source of all three boxes (maths, units, decimal commas, thin spaces in $50\,000$).

@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 98ad64a10c15cc2c
+CONTENT-HASH: 02a1a1495782bf10
 
 ## Blocking
-- None
+- none
 
 ## Polish
-- Box 2: the 5.49 MeV / 34 eV = 1.6e5 figure is already in the text of the ion-pairs paragraph; change the energy so the total is new.
-- Box 1 repeats that visible light cannot ionise; fine as a closing sentence.
-
-## Vanhan sisällön löydökset
-- None
+- The rounded-down answer 4.7e3 from 4762 is correct but the earlier 'about 4.8e3' reading is gone; fine. Optionally state why we round down (whole molecules).
 
 ## Checked
-batch delta review (round 2, new pysahdy boxes): 3 boxes judged: 1 (60 keV / 12.6 eV), 2 (E/W and range), 3 (three half-value thicknesses) are applications with reasons.
+batch delta review: rewritten boxes: at-most rounding 4762 to 4.7e3 and alpha/beta at 4.0 MeV (1.2e5 ion pairs); consistent.
+
+## Vanhan sisällön löydökset
+- none

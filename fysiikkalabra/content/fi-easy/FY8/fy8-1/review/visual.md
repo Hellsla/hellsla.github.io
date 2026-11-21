@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a0bf24d8104b21fb
+CONTENT-HASH: 06e877879acbd29d
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] pysahdy 1: "UV-C-valo" is unexplained jargon for S2 readers; write "ultraviolettivalo" ($254\,\text{nm}$ stays).
-- [Minor] pysahdy 2: "Valo pysyy himmeänä." follows the question; situation first, question last.
+- [Minor] pysahdy-laatikko (sinkki) — ketju "$P = … = 1{,}0 \cdot 10^{-22}\,\text{W}$" ja kolme lausetta samassa vastauksessa; harkitse jakoa kahteen kappaleeseen.
 
 ## Vanhan sisällön löydökset
-- none
+- ei
 
 ## Checked
-batch delta review round 2: fy8-1-theory-1280-1/2/3 (all three boxes: KaTeX clean, closed Vastaus, no overlap with figures/photo), fy8-1-stage-selita-390-4/5 (box 3 at 390 px); answers read in lesson.md (units LaTeX, {,}, case endings right); answers closed in captures, judged from source.
+- batch delta review: new "Pysähdy ja mieti" box (theory-1280-2 opened, box renders, maths and units LaTeX, no clipping); text of the diff read.

@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 330830d58da05d72
+CONTENT-HASH: 6a8703998b1ab0c2
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
-
-## Vanhan sisällön löydökset
-(none)
+- [Minor] pysahdy box (absorption) — `1240\,\text{eV nm}` lacks the thin space between units; write `\text{eV}\,\text{nm}` as fy8-7 does.
+- [Minor] same box — "$-3.1 - (-5.0)$" is fine; consider `\text{eV}` on the first two terms only if the chain is read aloud; no action required.
 
 ## Checked
-round 2 delta, new Stop and think boxes: opened fy8-2-theory-1280-1, fy8-2-stage-selita-390-2 (closed boxes sit in the reading column, green bar, label, question with LaTeX numbers and units, Answer toggle, no clipping at 1280 or 390 px, placed after the paragraph they test); answers read in lesson.md: full sentences, decimal point, units and numbers in LaTeX, colon division, `\cdot`. Boxes' open answer state is not in the captures, judged from source.
+batch delta review: moved and new pysahdy box read from source (box now follows the absorption paragraph it needs); changed exercise-solution wording ($E_\text{u}$, $E_\text{l}$) consistent with the lesson; box captures not available.

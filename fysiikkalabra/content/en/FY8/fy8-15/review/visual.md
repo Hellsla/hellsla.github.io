@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f29aab2c13ee2e8c
+CONTENT-HASH: cf2b469f8356e0b9
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
-
-## Vanhan sisällön löydökset
-(none)
+- [Minor] quark-content box — `u\bar{d}`, `uud`, `ud` are italic maths; consider `\text{u}\bar{\text{d}}` only if the chapter does so elsewhere (consistency check).
 
 ## Checked
-round 2 delta, new Stop and think boxes: opened fy8-15-theory-1280-1, fy8-15-stage-selita-390-3 (closed boxes sit in the reading column, green bar, label, question with LaTeX numbers and units, Answer toggle, no clipping at 1280 or 390 px, placed after the paragraph they test); answers read in lesson.md: full sentences, decimal point, units and numbers in LaTeX, colon division, `\cdot`. Boxes' open answer state is not in the captures, judged from source.
+batch delta review: two pysahdy boxes read from source; fractions in charge sums set with `\left(\right)`; box captures not available.

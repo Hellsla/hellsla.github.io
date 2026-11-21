@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e8a9b77d5a0c9f4b
+CONTENT-HASH: 0f23ffb901818a30
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] pysahdy 2 — "Noin kuinka monta" with an exact answer $1000$; "Kuinka monta" would be cleaner.
+- [Minor] pysahdy 3 — answer has no equation row for the ratio; optional.
 
 ## Vanhan sisällön löydökset
-- none
+(none)
 
 ## Checked
-batch delta review, round 2: opened fy8-9-theory-1280-1 (the "myöhässä" box under the first paragraph, beside the photo; quotation marks correct, readable, layout intact). Boxes 2 and 3 and answers read from source: LaTeX, full sentences.
+batch delta review (pysahdy only): component rendering in fy8-10 theory capture; source of all three boxes ($\left(\tfrac{1}{2}\right)^2$ fractions are inline and fine).

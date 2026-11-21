@@ -1,14 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: 52d7f7c09bfad71b
+VERDICT: PASS
+CONTENT-HASH: 5a9e64e5e8b168f3
 
 ## Blocking
-- Box 1 (gap n=1-2 larger than 4-5): the paragraph above says 'They crowd together upwards and approach zero', which is the answer; the formula E_n is not stated right there either, so the 10.2 and 0.31 eV figures are not derivable from what was read. Turn it into a prediction before the sentence, or ask for the 3-to-4 gap from E_n.
+- none
 
 ## Polish
-- Box 3 (E_5) is a plain substitution that does not test the series paragraph above it; ask which series a $n=5\to 2$ photon belongs to and in which region.
-
-## Vanhan sisällön löydökset
-- None
+- The box 'energy of level n = 5' is a one-step recall that the n = 5 to 3 box already covers; one could be dropped to keep the lesson short.
 
 ## Checked
-batch delta review (round 2, new pysahdy boxes): 3 boxes judged: 2 (15.0 eV photon, ionisation with leftover kinetic energy) is a real application and good.
+batch delta review: 3 boxes: ionisation by 15 eV (good misconception probe), 5 to 3 transition (0.967 eV, 1.28 um, correct), E5; sums verified.
+
+## Vanhan sisällön löydökset
+- none

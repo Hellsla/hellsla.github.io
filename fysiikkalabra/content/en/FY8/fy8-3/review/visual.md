@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 52d7f7c09bfad71b
+CONTENT-HASH: 5a9e64e5e8b168f3
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
-
-## Vanhan sisällön löydökset
-(none)
+- [Minor] pysahdy box — `1240\,\text{eV nm}` lacks the thin space between units; use `\text{eV}\,\text{nm}`.
 
 ## Checked
-round 2 delta, new Stop and think boxes: opened fy8-3-theory-1280-1, fy8-3-stage-selita-390-3 (closed boxes sit in the reading column, green bar, label, question with LaTeX numbers and units, Answer toggle, no clipping at 1280 or 390 px, placed after the paragraph they test); answers read in lesson.md: full sentences, decimal point, units and numbers in LaTeX, colon division, `\cdot`. Boxes' open answer state is not in the captures, judged from source.
+batch delta review: moved pysahdy box (now after the photon-energy formulas) read from source; chain E_5, E_3, difference, wavelength has the order principle, equation, substitution, result, interpretation; box captures not available.

@@ -1,14 +1,8 @@
 VERDICT: FAIL
-CONTENT-HASH: cc91749a751e9d64
-
+CONTENT-HASH: 650693dd8b77b4ba
 ## Blocking
-- Ensimmäinen laatikko (osuma $201$): vastaus on sanasta sanaan kappaleessa ja kuvassa yllä ("Yksittäisen pisteen paikkaa ei voi ennustaa. Kun pisteitä kertyy tuhansia, ne muodostavat raitakuvion"). Laatikko ei testaa mitään uutta. Kysy esim. mikä aaltomallissa määrää, missä kohdassa osumia kertyy eniten, tai miksi sama kuvio syntyy heikolla ja vahvalla valolla.
-
+Pysähdy-laatikko pyytää vertaamaan suhteellista tasaisuutta ja palautteessa on arvot ±14 ja ±44, mutta lukujen (√N-sääntö) alkuperää ei opeteta missään luvussa eikä ratkaisu kerro niiden laskutapaa; opiskelija ei voi päätellä niitä itse. Joko poista osakysymys 'kumpi on tasaisempi' tai lisää palautteeseen sääntö: vaihtelu on noin $\sqrt{N p}$ ($\sqrt{200}\approx 14$, $\sqrt{2000}\approx 44$).
 ## Polish
-- Toinen laatikko: $p = h:\lambda$ on kaava juuri yllä; hyvä sijoitustehtävä, mutta kysy myös miksi röntgenfotonilla on suuri liikemäärä.
-
-## Vanhan sisällön löydökset
-(ei)
-
+-
 ## Checked
-batch delta review round 2: 3 laatikkoa; yksi vastaus on tekstissä sellaisenaan.
+batch delta review: uudet Pysähdy ja mieti -laatikot: laskut tarkistettu, kysymys ratkaistavissa opitulla, palaute korjaa käsitteen; vanhasta sisällöstä ei löydöksiä (Vanhan sisällön löydökset: ei).

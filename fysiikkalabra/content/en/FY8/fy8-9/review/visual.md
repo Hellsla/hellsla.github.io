@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c26160bc49a614b8
+CONTENT-HASH: 73014f45720e9c2d
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
-
-## Vanhan sisällön löydökset
-(none)
+- [Minor] relocated box — now sits right after the half-life definition and before the table; reads well. No change needed.
 
 ## Checked
-round 2 delta, new Stop and think boxes: opened fy8-9-theory-1280-3, fy8-9-stage-selita-390-3 (closed boxes sit in the reading column, green bar, label, question with LaTeX numbers and units, Answer toggle, no clipping at 1280 or 390 px, placed after the paragraph they test); answers read in lesson.md: full sentences, decimal point, units and numbers in LaTeX, colon division, `\cdot`. Boxes' open answer state is not in the captures, judged from source.
+batch delta review: new probability box and the relocated 8000-nuclei box read from source; `\left(\tfrac{1}{2}\right)^2` set correctly; box captures not available.

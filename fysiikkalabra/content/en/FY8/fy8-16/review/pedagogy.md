@@ -1,15 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: 0da99b45f4fbf09d
+VERDICT: PASS
+CONTENT-HASH: 4b87060b8e2d343c
 
 ## Blocking
-- Box 2 (why nothing is seen before 380 000 years): the paragraph two above says free electrons scattered photons continuously until the universe became transparent, and the background radiation is that light; the answer restates it. Use a prediction before the recombination paragraph, or ask what a telescope sees if it looked at 100 000 years.
+- none
 
 ## Polish
-- Box 1: 'the expansion has no centre' is stated in an earlier paragraph; the box still needs the scaling step, so keep.
-- Box 3 is a plain substitution (v = H0 d).
-
-## Vanhan sisällön löydökset
-- None
+- none
 
 ## Checked
-batch delta review (round 2, new pysahdy boxes): 3 boxes judged: 1 (symmetry from A) is a good argument task.
+batch delta review: 3 boxes: Hubble law from galaxy A's viewpoint (4200 km/s, 60 Mpc, no special centre; good), CMB photon 0.012 eV, Hubble a/b (7000 km/s, 200 Mpc); all verified.
+
+## Vanhan sisällön löydökset
+- none

@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a24b37712a8e5371
+CONTENT-HASH: 09c833045fb594ca
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] pysahdy 3 answer is a bare formula chain with no sentence; add "Tason $n = 5$ energia on noin $-0{,}54\,\text{eV}$."
+- [Minor] pysahdy-laatikko — "$\text{eV}/25$" ja "$1240\,\text{eV nm}$" ilman ohutta väliä yksiköiden välissä; vastauksen ketju on kolme lausetta peräkkäin.
 
 ## Vanhan sisällön löydökset
-- none
+- ei
 
 ## Checked
-batch delta review round 2: fy8-3-theory-1280-1/2/3 (all three boxes render clean, closed, no overlap; box 1 sits tight above the next subheading, shared spacing, fine); answers read in lesson.md (units LaTeX, {,}, colon division).
+- batch delta review: new box placed after the energy formula, before the table; maths and units LaTeX; text read from diff; shared box layout seen in captures of other lessons.

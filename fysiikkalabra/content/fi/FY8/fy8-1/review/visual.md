@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 2dc6510f89da171f
+CONTENT-HASH: e6f339d3b8adcaba
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] pysahdy 1 (Vastaus) — "$W/P$" ja "$W$" tarkoittavat eri asioita: $W$ on irrotustyö ja $P$ teho; kaava $t = W/P$ olisi luettavampi murtona $\tfrac{W}{P}$, ja ensimmäinen ketju alkaa suureella, mutta toinen ($W = 4{,}3 \cdot \ldots$) on samassa virkkeessä "ja"-sidoksella. Harkitse jakoa kahdeksi virkkeeksi.
 
 ## Vanhan sisällön löydökset
-- none
+(none)
 
 ## Checked
-batch delta review, round 2: opened fy8-1-theory-1280-2, -3 and fy8-1-stage-selita-390-3 (box at 1280 and 390 px: closed Vastaus, readable, no clipping, placed after the paragraph it concerns). Box 1 (254 nm) read from source; answers have LaTeX units, decimal comma, full sentences.
+batch delta review (pysahdy only): fy8-1-theory-1280-2 (box 2 rendered, Vastaus closed); the three boxes' source read for maths, units, case endings.

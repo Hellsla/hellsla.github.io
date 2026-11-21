@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 7e07fa191ab9635d
+CONTENT-HASH: 3ff11295e5514cc9
 
 ## Blocking
-- None
+- none
 
 ## Polish
-- Box 1: 'thousands of directions' is in the paragraph above; the answer 'many exposures add up' also simplifies (each slice also needs many photons for a low-noise image). Add that reason.
-- Box 2: 'total momentum almost zero, opposite directions' is stated two paragraphs above; focus the box on why one photon is impossible.
-
-## Vanhan sisällön löydökset
-- None
+- none
 
 ## Checked
-batch delta review (round 2, new pysahdy boxes): 3 boxes judged: 3 (2+1 half-value thicknesses, 1/8) is a good application.
+batch delta review: CT dose (800 x 0.010 = 8 mSv, ratio 80) and PET time-of-flight (x = 6 cm) boxes verified; the latter is supported by the lesson's time-of-flight paragraph, though it is a demanding pause box; the 'which side' answer (side of the detector that registered first) is correct.
+
+## Vanhan sisällön löydökset
+- none
