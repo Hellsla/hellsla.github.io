@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b24d75111073ed71
+CONTENT-HASH: 19093904e02a568d
 
 ## Blocking
 
+
 ## Polish
-- Correct feedback: 'Tänään muuntaja toimii tehollisilla arvoilla' could read as if the turns ratio held only for effective values; it holds for peak and instantaneous values too ('muuntajan jännitteet ilmoitetaan tehollisina arvoina').
-- $U_0/\sqrt{2}$ holds for a sinusoidal voltage; mains is sinusoidal, so C, not a finding.
+- (none)
 
 ## Checked
-batch delta review: new retrieval 325 V / √2 = 229,8 V -> 230 V (three figures), distractors 325 V and 459,6 V -> 460 V with right feedback; one correct option; does not reveal the DC-transformer or loss Ennusta.
+batch delta review: 3 pysahdy blocks: constant DC → constant flux → zero secondary voltage (right, as the paragraph above); U₂ = 230·40/460 = 20,0 V recomputed, ideal transformer stated, three figures from 230 V; same power, U ×3 → I/3 → RI² down to one ninth (right; the same line is implied by "saman tehon johtoa pitkin").

@@ -1,9 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 984626d9147bf5d8
-
+CONTENT-HASH: 7deae73714a7abdc
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: contact-2 opened (circular-orbit figure with F red, v blue, graph r(v), mass spectrometer, worked example at 390); teacher-approved figures and paragraph split render cleanly.
+batch delta review: opened the stage-Teoria captures at 390 px (pysahdy block label, question, closed answer, spacing, placement after the paragraph it follows) and the figure captures; ran check_layout.py at 360 px for the lesson; read the diff for wording and notation. Answer opened only through check_layout (no capture of an open answer).

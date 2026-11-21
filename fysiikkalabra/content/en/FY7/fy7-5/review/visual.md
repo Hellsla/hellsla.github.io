@@ -1,17 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 11872e3655aa7b3d
-
+CONTENT-HASH: e8dbb88bdb2870f0
 ## Blocking
 (none)
-
 ## Polish
-- [Minor] lesson.md "A change produces a voltage" — "relative to the coils" after "around fixed coils" is slightly redundant — optional: "a ring magnet turns with the hub around fixed coils, so the magnet moves relative to the coils."
-
+(none)
+## Vanhan sisällön löydökset
+(none found in the captures; old content is untouched by this change)
 ## Checked
-- Delta round 2, captures now current for hash 11872e3655aa7b3d (en).
-- fy7-5-open-exit-1280 (exit ticket task 2: new question and answer; math inline LaTeX, "(t, \Phi)", "\Delta\Phi : \Delta t" render correctly, nothing clipped).
-- fy7-5-theory-1280-1 and fy7-5-stage-selita-390-1 (new dynamo sentence; paragraph length ok, layout intact beside the shake-torch photo, figures not displaced).
-- fy7-5-fig-1-390 (opening illustration, unchanged).
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: the new "Stop and think" blocks (```pysahdy) rendered at 390 px with the answer open (aside, question, Answer summary, answer text and aligned calculation rows): no clipping or horizontal overflow (page scrollWidth 390), maths in KaTeX with units upright and a thin space, decimal point and \cdot/colon notation as the English text uses, fluent wording, block placed right after the paragraph it tests; listed figure captures and fig-row unchanged in layout. Hash identical at start and end.

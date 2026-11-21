@@ -1,8 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 8c321638a948f33b
+CONTENT-HASH: ae0d34a7145ea30a
 ## Blocking
-(none)
+
 ## Polish
-- Vastausvaihtoehdoissa sanotaan 'kohtisuorat siirtymät'; selkeä suomi voisi selittää 'kateetti' ensimmäisellä kerralla.
+
+## Vanhan sisällön löydökset
+- Pysähdy-lohkon arvot 30 ja 40 µT eroavat kaavakuvan arvoista 14 ja 20 µT (lesson.md:384); yhtenäiset luvut helpottaisivat. Ei Blocking.
+
 ## Checked
-batch delta review (SCOPE: Pohdinta retrieval task): orienteer 300 m north + 400 m east fits the opening map-and-compass scene, retrieves the vector sum, reveals neither Ennusta answer.
+- Round 4 delta: "vaakasuora" on nyt tehtävässä (kenttä, kokonaiskenttä) ja ratkaisussa johdonmukaisesti; Maan kentästä sanotaan "vaakakomponentti", joten Pythagoras pätee vaakatasossa ja kompassin tilanne on fysikaalisesti oikein.
+- Tilanne ensin, kysymys viimeisenä omana lauseena; vastaus 50 µT (30-40-50) ei paljastu ennen kysymystä; yksiköt LaTeX:ssa.
+- Aiempi Polish (kompassin kohta, kohtisuoruus) toteutui: kohtisuoruus Maan kentän vaakakomponenttiin nimetty.

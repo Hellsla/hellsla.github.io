@@ -80,6 +80,12 @@ Ilman taitekerroin on $1{,}0003$. Ilmassa valo etenee siis lähes yhtä nopeasti
 
 Kun valo siirtyy aineesta toiseen, sen taajuus ei muutu, koska taajuuden määrää valonlähde. Nopeus kuitenkin muuttuu. Yhtälön $v = f \lambda$ mukaan myös aallonpituus muuttuu. Vedessä aallonpituus on $1{,}33$ kertaa lyhyempi kuin ilmassa.
 
+```pysahdy
+Valo siirtyy ilmasta veteen. Muuttuuko valon taajuus? Muuttuuko aallonpituus?
+---
+Taajuus ei muutu, koska sen määrää valonlähde. Aallonpituus lyhenee: vedessä se on $1{,}33$ kertaa lyhyempi kuin ilmassa, koska nopeus pienenee ja $v = f \lambda$.
+```
+
 ### Miksi valo taittuu
 Taittuminen johtuu nopeuden muutoksesta. Kuvassa aalto tulee vinosti rajapintaan. Aaltorintamat ovat yhdensuuntaisia viivoja, ja säde on kohtisuorassa niitä vastaan.
 
@@ -187,6 +193,12 @@ taitekerroin sähkömagneettiselle aaltoliikkeelle (valolle) :: n = \frac{c}{v}
 ```
 missä $c = 3{,}00 \cdot 10^{8}\,\text{m/s}$ on valon nopeus tyhjiössä ja $v$ valon nopeus aineessa (m/s). Taitekerroin on yksikötön. Näkyvälle valolle läpinäkyvissä aineissa se on aina suurempi kuin $1$.
 
+```pysahdy
+Valon nopeus tyhjiössä on $3{,}00 \cdot 10^{8}\,\text{m/s}$. Timantin taitekerroin on $2{,}42$. Kuinka nopeasti valo etenee timantissa?
+---
+Nopeus on $v = c : n = 3{,}00 \cdot 10^{8}\,\text{m/s} : 2{,}42 \approx 1{,}24 \cdot 10^{8}\,\text{m/s}$.
+```
+
 ### Taittumislaki eli Snellin laki
 Valo siirtyy aineesta, jonka taitekerroin on $n_1$, aineeseen, jonka taitekerroin on $n_2$. Silloin tulokulma ja taitekulma toteuttavat yhtälön
 ```kaavat
@@ -256,6 +268,12 @@ Laki koskee kulmien sinejä, ei itse kulmia. Kun tulokulma kaksinkertaistuu, tai
   <foreignObject x="430" y="45.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\alpha_2 = \alpha_1$</div></foreignObject>
   <foreignObject x="106.5" y="69.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$n_1 = 1{,}00$</div></foreignObject>
 </svg>
+
+```pysahdy
+Valonsäde tulee ilmasta ($n = 1{,}00$) ikkunalasiin ($n = 1{,}52$). Tulokulma on $40^\circ$. Mikä on taitekulma? Taittuuko säde kohti normaalia vai siitä poispäin?
+---
+Snellin laista $\sin\alpha_2 = 1{,}00 \cdot \sin 40^\circ : 1{,}52 = 0{,}423$, joten $\alpha_2 \approx 25^\circ$. Lasi on optisesti tiheämpi, joten säde taittuu kohti normaalia.
+```
 
 ### Taitekertoimia
 Taitekerroin riippuu hieman valon aallonpituudesta (luku *Dispersio: prisma ja sateenkaari*). Taulukon arvot ovat keltaiselle valolle, jonka aallonpituus on $589\,\text{nm}$. Arvot ovat huoneenlämpöiselle aineelle. Lasin ja akryylin taitekertoimet vaihtelevat laadun mukaan.

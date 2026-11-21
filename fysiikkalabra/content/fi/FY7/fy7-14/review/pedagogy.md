@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: abb1a90e48c8092a
+CONTENT-HASH: bcc465e70eb033bf
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
+
+## Vanhan sisällön löydökset
+(none)
 
 ## Checked
-- Delta is one Tiivistelmä bullet: "Heijastuksenestopinnoitteessa" became "Heijastuksen estävässä pinnoitteessa"; meaning, formula d = λ : (4n) and the MgF2 numbers are unchanged.
-- The new wording is correct, readable Finnish and keeps the term a student meets in the lesson body.
-- No effect on figures, inquiry, exit ticket or the learning path; the earlier pass stands.
+batch delta review (round 2, vain pysahdy-lohkot): kolme lohkoa; vastaus käyttää nyt luvun ehtoa 2nd = (k+1/2)λ ja k = 0, 665 nm laskettu uudelleen, yhtenäinen kaavan ja ratkaistun esimerkin kanssa.

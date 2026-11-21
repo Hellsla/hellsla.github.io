@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4ab8d81c4b330af0
+CONTENT-HASH: 862cb7079751a2e4
 ## Blocking
-(none)
+
 ## Polish
+- (none)
+
+## Vanhan sisällön löydökset
 (none)
+
 ## Checked
-batch delta review (SCOPE: Pohdinta retrieval task): lake reflection at 30 degrees fits the lakeside illustration, retrieves the law of reflection, does not touch Ennusta 1-2 (refraction).
+batch delta review (round 2): new `pysahdy` answer ('1,33 kertaa lyhyempi kuin ilmassa') is clearer than the old phrase and correct.

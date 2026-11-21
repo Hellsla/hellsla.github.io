@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 5de74d227b4171df
+CONTENT-HASH: a35cc56e1f9684d7
 
 ## Blocking
 
 ## Polish
-
+- Stopping "lopulta" relies on friction or damping; fair simplification (C), no change needed.
 
 ## Checked
-batch delta review: retrieval prompt reworded (cable context removed); B = μ0I/(2πr) gives 5,0 µT at 2,0 cm, one correct option, distractor feedback right; no Ennusta answer revealed.
+batch delta review: round 2, pysahdy answers: without the commutator the loop oscillates about the position perpendicular to the field (zero torque) and comes to rest there, consistent with the theory paragraph; F = IlB sin 30° = 4,0·0,50·0,25·0,5 N = 0,25 N exactly, so '=' is right.
+
+## Vanhan sisällön löydökset
+Ei löydöksiä.

@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 8ec4e32680f975fa
+CONTENT-HASH: d01cc3934fd834f5
 ## Blocking
-(none)
+
 ## Polish
-- Johdanto on pitkä (kolme lukua ja c); aallonpituuksien arvot riittäisivät.
+- 'K:n lämpötilassa' on kömpelö; 'noin 800 kelvinin lämpötilassa' lukisi sujuvammin.
+
+## Vanhan sisällön löydökset
+(none)
+
 ## Checked
-batch delta review (SCOPE: Pohdinta retrieval task): red 700 nm vs violet 400 nm in glowing iron fits the forge scene, retrieves v = f lambda, no Ennusta answer disclosed.
+batch delta review (round 2): new `pysahdy` answer is accurate (little visible light at 800 K, eye sees glow) and consistent with the first two sentences.

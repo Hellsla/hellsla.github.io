@@ -82,6 +82,12 @@ Luvussa *Varatun hiukkasen liike sähkö- ja magneettikentässä* magneettikentt
 ### Voiman suunta
 Voima on aina kohtisuorassa sekä virran suuntaa että magneettikenttää vastaan. Suunnan saat **oikean käden säännöllä**. Pidä oikea käsi ojennettuna. Käännä peukalo osoittamaan virran suuntaan ja muut sormet osoittamaan magneettikentän suuntaan. Silloin voima osoittaa kämmenestä ulos. Sama sääntö toimii positiiviselle varatulle hiukkaselle, koska virran suunta on positiivisen varauksen liikkeen suunta. Jos virran tai kentän suunta kääntyy, myös voiman suunta kääntyy. Jos johdin on kentän suuntainen, voimaa ei synny lainkaan.
 
+```pysahdy
+Johtimessa kulkee virta kohtisuoraan magneettikenttää vastaan, ja voima työntää johdinta ylöspäin. Mihin suuntaan voima osoittaa, jos virran suunta käännetään mutta kenttä pysyy samana?
+---
+Voima osoittaa alaspäin. Kun virran tai kentän suunta kääntyy, myös voiman suunta kääntyy. Voiman suuruus pysyy samana.
+```
+
 ### Sähkömoottori
 Tasavirtamoottorissa magneetin napojen välissä on **virtasilmukka**. Se on johdinsilmukka, joka voi kääntyä akselinsa ympäri. Silmukan kahdessa sivussa virta kulkee vastakkaisiin suuntiin. Siksi sivuihin kohdistuvat voimat ovat vastakkaissuuntaiset. Voimat eivät ole samalla suoralla, joten ne kääntävät silmukkaa. Tätä kääntävää vaikutusta kutsutaan vääntövaikutukseksi. Kun silmukka on kääntynyt kohtisuoraan kenttää vastaan, voimat osoittavat poispäin akselista. Silloin ne eivät enää käännä silmukkaa. Silmukka jatkaa kuitenkin liikettään hitautensa vuoksi, eli se jatkaa pyörimistä, koska se ei muuta liikettään itsestään. Juuri silloin **kommutaattori** kääntää silmukan virran suunnan. Kommutaattori on kahteen osaan halkaistu rengas, ja sitä koskettavat hiiliharjat. Näin voimat kääntävät silmukkaa joka puolikierroksella samaan suuntaan. Oikeassa moottorissa on monta kelaa ja rautasydän. Siksi se pyörii tasaisesti ja voimakkaasti.
 
@@ -127,6 +133,12 @@ Tasavirtamoottorissa magneetin napojen välissä on **virtasilmukka**. Se on joh
   <line x1="430" y1="208" x2="442" y2="272" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="534" y1="208" x2="522" y2="272" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
+
+```pysahdy
+Mitä tasavirtamoottorille tapahtuisi, jos kommutaattori ei kääntäisi silmukan virran suuntaa?
+---
+Kun silmukka on kääntynyt kohtisuoraan kenttää vastaan, voimat alkaisivat kääntää sitä takaisin. Silmukka ei pyörisi koko ajan. Se värähtelisi tämän asennon ympärillä ja pysähtyisi lopulta siihen.
+```
 
 ### Kaiutin
 Kaiuttimen magneetti on tehty niin, että rengasmaisessa raossa kenttä osoittaa säteittäin ulospäin, eli keskeltä poispäin kuin pyörän pinnat. Raossa on kevyt puhekela. Kelan jokainen kohta on kohtisuorassa kenttää vastaan. Siksi jokaiseen kohtaan kohdistuu yhtä suuri voima kelan akselin suuntaan. Säteittäinen kenttä on välttämätön. Homogeenisessa eli joka kohdassa samanlaisessa kentässä suljetun kelan vastakkaisiin puoliin kohdistuvat voimat olisivat vastakkaiset. Ne kumoaisivat toisensa, eikä mikään työntäisi kelaa. Kela on kiinni kartiossa. Vahvistimen vaihtovirta muuttaa suuntaansa samaan tahtiin kuin äänisignaali. Siksi voima työntää kartiota vuorotellen eteen ja taakse. Kartio värähtelee signaalin taajuudella. Se puristaa ja harventaa ilmaa, ja syntyy ääniaalto. Mitä suurempi virta on, sitä suurempi on voima ja sitä voimakkaampi on ääni. Suurin osa kaiuttimeen tuodusta sähköenergiasta muuttuu kuitenkin kelan ja magneetin sisäenergiaksi, eli ne lämpenevät.
@@ -206,6 +218,12 @@ missä $F$ on voima (N), $I$ virta (A), $l$ kentässä olevan johtimen osan pitu
   <line x1="308" y1="172" x2="292" y2="188" stroke="#c92a2a" stroke-width="2.5" stroke-linecap="butt"/>
   <foreignObject x="320" y="201.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\overline{F}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Johtimen pituus kentässä on $0{,}50\,\text{m}$ ja virta on $4{,}0\,\text{A}$. Magneettivuon tiheys on $0{,}25\,\text{T}$. Johdin on kentän kanssa kulmassa $30^\circ$. Kuinka suuri voima johtimeen kohdistuu?
+---
+Voima on $F = I l B \sin\alpha = 4{,}0\,\text{A} \cdot 0{,}50\,\text{m} \cdot 0{,}25\,\text{T} \cdot \sin 30^\circ = 0{,}25\,\text{N}$.
+```
 
 ### Kahden virtajohtimen välinen voima
 Kahden rinnakkaisen virtajohtimen välillä on voima, koska kumpikin johdin on toisen magneettikentässä. Luvussa *Virtajohtimen ja käämin magneettikenttä* johtimen $1$ kenttä kiertää johdinta ympyröinä. Etäisyydellä $r$ sen suuruus on $B_1$. Johtimen $2$ kohdalla kenttä on kohtisuorassa johdinta $2$ vastaan. Siksi johtimen $2$ osaan, jonka pituus on $l$, kohdistuu voima $F$:

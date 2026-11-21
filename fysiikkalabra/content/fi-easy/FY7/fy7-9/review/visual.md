@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8ec4e32680f975fa
+CONTENT-HASH: d01cc3934fd834f5
 
 ## Blocking
 (none)
@@ -8,7 +8,4 @@ CONTENT-HASH: 8ec4e32680f975fa
 (none)
 
 ## Checked
-- Delta round 2: fy7-9-stage-herata-390.png opened at readable resolution (Pohdinta text, open question, closed Valinnainen retrieval card). Changed retrieval task (wavelength and frequency in glowing iron) is now tied to the phenomenon; the card title and sentences read naturally, no clipping or overflow at 390 px. Maths in the diff is inline LaTeX with units, aligned display chains unchanged in form.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review (round 2): fy7-9 (fi-easy) built page, every "Pysähdy ja mieti" block rendered with the answer open and photographed at 360 px (examined for the long chains) and measured at 360 and 1280 px: label, question, Vastaus summary, KaTeX (no red source, no clipped formula, no overflow), decimal comma, units, answer chains laid out as rows; check_layout.py clean at 360/390/1280. The round 1 clip in fy7-1 block 3 is fixed by the shared component. Listed older captures not reopened (unchanged old content). Vanhan sisällön löydökset: none.

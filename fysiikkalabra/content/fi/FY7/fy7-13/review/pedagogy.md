@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: da34ad33d42e2236
+CONTENT-HASH: 2d678ce31d6ce5bc
+
 ## Blocking
+(none)
 
 ## Polish
-- None.
+(none)
+
+## Vanhan sisällön löydökset
+(none from this batch review)
+
 ## Checked
-batch delta review (round 2): interference retrieval through the two slits of the laser phenomenon; 1,5 wavelengths gives destructive; no Ennusta answer disclosed.
+batch delta review: kolme Pysähdy ja mieti -lohkoa (```pysahdy): kysymys ennen vastausta, suomi ja yksiköt LaTeXina, fysiikka ja luvut tarkistettu uudelleen laskemalla, sopii lukuun ja kielelle 16–19-vuotiaille.

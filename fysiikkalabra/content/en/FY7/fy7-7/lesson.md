@@ -203,6 +203,12 @@ In the chapter *Electromagnetic induction* a voltage was induced in a coil when 
 
 <figure class="unit-photo"><img src="pics/fy7/bicycle-dynamo.webp" alt="The front wheel of a bicycle and a round headlamp; a small silver bottle dynamo is pressed against the tyre."><figcaption>A bicycle dynamo is a small generator. The spindle turned by the tyre rotates a permanent magnet inside a coil. The coil stays still, but the magnetic flux through it changes, so an alternating voltage is induced in it.</figcaption></figure>
 
+```pysahdy
+A coil has an area of $0.010\,\text{m}^2$ and the magnetic flux density is $0.20\,\text{T}$. How great is the flux through the coil when its plane is perpendicular to the field, and how great is it after a quarter of a turn?
+---
+At first $\Phi = BA = 0.20\,\text{T} \cdot 0.010\,\text{m}^2 = 0.0020\,\text{Wb}$. After a quarter of a turn the plane of the coil is parallel to the field and no field line passes through it, so the flux is zero.
+```
+
 ### Slip rings and brushes
 The ends of the wire of the coil are connected to two **slip rings** on the axis. Carbon brushes touch the rings, and the voltage is led through the brushes to an external circuit, such as the lamp in the picture. Unlike the commutator of a direct-current motor in the chapter *Force on a current-carrying wire: the electric motor and the loudspeaker*, slip rings do not reverse the direction of the current, so the external circuit receives the voltage induced in the coil as it is.
 
@@ -314,6 +320,12 @@ e_0 = NBA \cdot 2\pi f
 ```
 where $\Phi$ is the magnetic flux through one turn (Wb), $e$ the instantaneous value of the voltage (V), $e_0$ the peak value of the voltage (V), $N$ the number of turns, $B$ the magnetic flux density (T), $A$ the area of the coil (m²) and $f$ the rotation frequency (Hz). The frequency of the voltage is the same as the rotation frequency, and the period is $T = 1 : f$. The flux changes unevenly during the rotation, so $e$ is the instantaneous voltage: it is greatest when the flux is zero and changes fastest, and zero when the flux is at its greatest.
 
+```pysahdy
+The coil of a generator rotates steadily $20$ turns per second. What are the frequency and the period of the voltage produced?
+---
+The frequency of the voltage is the same as the rotation frequency, $20\,\text{Hz}$. The period is $T = \tfrac{1}{f} = \tfrac{1}{20\,\text{Hz}} = 0.050\,\text{s}$.
+```
+
 ### Where the peak value comes from
 The peak value is obtained from the voltage of a moving conductor, $e = vBl$ (chapter *Electromagnetic induction*). The two sides of a rectangular coil, of length $l$, circle the axis at a radius $b : 2$, where $b$ is the width of the coil. The speed of the sides is $v = 2\pi f \cdot b : 2 = \pi f b$. Only the component of the velocity perpendicular to the field, $v \sin\theta$, contributes to the voltage, where $\theta$ is the angle between the velocity and the field. A voltage $B l v \sin\theta$ is induced in each side, and the voltages of the sides add up in a turn. In one turn the voltage is therefore $2 B l \cdot \pi f b \sin\theta = BA \cdot 2\pi f \sin\theta$, because $lb = A$, and in $N$ turns it is $N$ times as large. When $\theta = 90^\circ$, the plane of the coil is parallel to the field and the voltage is at its peak value $e_0 = NBA \cdot 2\pi f$. Doubling the rotation frequency doubles both the frequency and the peak value of the voltage, because the sides move twice as fast.
 
@@ -393,6 +405,12 @@ The $230\,\text{V}$ of a wall socket is an rms value: the peak value of the volt
   <line x1="120" y1="168" x2="449.5" y2="168" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
   <foreignObject x="459.5" y="154" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{mean}$</div></foreignObject>
 </svg>
+
+```pysahdy
+The peak value of a sinusoidal alternating current through a resistor is $2.0\,\text{A}$. What is the rms value of the current?
+---
+The rms value is the peak value divided by $\sqrt{2}$: $I = \tfrac{I_0}{\sqrt{2}} = \tfrac{2.0\,\text{A}}{\sqrt{2}} \approx 1.4\,\text{A}$.
+```
 
 ## Worked example
 The coil of a generator used for teaching has $250$ turns, and the sides of the rectangular coil are $4.0\,\text{cm}$ and $5.0\,\text{cm}$ long. The coil rotates in a uniform magnetic field whose magnetic flux density is $0.18\,\text{T}$, and it makes $12$ revolutions per second. How large is the rms value of the alternating voltage induced in the coil?
