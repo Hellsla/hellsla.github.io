@@ -1,16 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: e610ccd099e89397
-
-Mode: delta (one word: "sisäenergiakseen" -> "sisäenergiaksi" in the misconception paragraph)
+VERDICT: FAIL
+CONTENT-HASH: 184fdda5b4ed8ad5
 
 ## Blocking
-- none
+- [Major] lesson.md pysahdy 1 — "toiseen haaraan lähtee 0,30 A … lähtee toiseen haaraan?": sama sana kahdesti, kysymys luettavissa tautologiaksi — epäselvä — kirjoita "…ensimmäiseen haaraan lähtee $0{,}30\,\text{A}$. Kuinka suuri virta lähtee toiseen haaraan?"
 
 ## Polish
 - none
 
-## Checked
-- Diff only; screenshots are missing for this lesson (review/shots absent), so nothing was opened. The change is a single correct word form (the old "sisäenergiakseen" was ungrammatical and also off the house wording "muuttuu sisäenergiaksi"); no figure, formula, unit or line length is affected, so layout cannot have changed.
+## Vanhan sisällön löydökset
+- none (rajattu laajuus: vain uudet pysahdy-laatikot)
 
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+## Checked
+batch delta review (round 1): 3 uutta pysahdy-laatikkoa luettu lähteestä (kieli, LaTeX, yksiköt, :n-päätteet); render tarkistettu preview-käännöksellä 360 px, vastaus avattuna, lessonit fy6-1, 2, 10, 12, 13 (yhteinen .stop-think-komponentti): ei vaakavieritystä, ei KaTeX-virheitä, otsikko/kysymys/vastaus selkeät. Vanhat shots eivät sisällä uusia laatikoita.

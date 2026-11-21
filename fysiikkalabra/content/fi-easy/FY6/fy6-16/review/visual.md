@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fe929e4f92033e08
+CONTENT-HASH: 97529708b7cc23d9
 
 ## Blocking
+- none
 
 ## Polish
+- none
+
+## Vanhan sisällön löydökset
+- none (rajattu laajuus: vain uudet pysahdy-laatikot)
 
 ## Checked
-batch delta review: the only change is the stage-1 paragraph break (knowns, then "Kysytään ..." as its own paragraph); read the diff and opened the fy6-10 and fy6-16 example-390 captures (the same stage pattern, current for this hash): the break reads naturally, no one-word orphan, spacing even, nothing clipped.
+batch delta review (round 1): 3 uutta pysahdy-laatikkoa luettu lähteestä (kieli, LaTeX, yksiköt, :n-päätteet); render tarkistettu preview-käännöksellä 360 px, vastaus avattuna, lessonit fy6-1, 2, 10, 12, 13 (yhteinen .stop-think-komponentti): ei vaakavieritystä, ei KaTeX-virheitä, otsikko/kysymys/vastaus selkeät. Vanhat shots eivät sisällä uusia laatikoita.
