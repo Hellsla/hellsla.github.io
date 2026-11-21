@@ -97,8 +97,15 @@ def maths_quantities(text):
 def no_photos(text):
     """fy3-2's illustration photo (2026-11-03) lives in FY3's picture folder; the FY4 fixture keeps only its own picture."""
     return re.sub(r'<figure class="unit-photo[^\n]*</figure>\n\n', "", text)
+def own_pics(text):
+    """A lesson with image-based figures (figimage.py) names its pictures pics/fy3/fy3-2-*.webp; the copy carries them over to FY4's folder under fy4-1's names, so the fixture lints the same with or without them."""
+    def move(m):
+        f = T / "assets/pics/fy3" / m.group(1)
+        if f.is_file(): shutil.copy(f, T / "assets/pics/fy4" / m.group(1).replace("fy3-2", "fy4-1"))
+        return "pics/fy4/" + m.group(1)
+    return re.sub(r"pics/fy3/(fy3-2-[\w.-]+)", move, text)
 for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json"):
-    text_file(L, n).parent.mkdir(exist_ok=True); text_file(L, n).write_text(maths_quantities(no_photos(text_file(src, n).read_text()).replace("fy3-2", "fy4-1")))
+    text_file(L, n).parent.mkdir(exist_ok=True); text_file(L, n).write_text(maths_quantities(no_photos(own_pics(text_file(src, n).read_text())).replace("fy3-2", "fy4-1")))
 for n in ("answers.py", "sim-spec.md", "figures.py"): (C / n).write_text((src_code / n).read_text().replace("fy3-2", "fy4-1"))   # figures.py: an exercise shows one of its figures by id
 meta.update(sim=True, glossary=json.loads((src / "meta.json").read_text())["glossary"]); (L / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2))
 S = T / "assets/sims/fy4/fy4-1"; S.mkdir(parents=True)
@@ -189,9 +196,13 @@ expect("the picture changed: the hash moved and both review it", run("reviews.py
 git("checkout", "--", ".")
 
 # 9. a second lesson reuses the simulation: dependencies and impact
+def copy_pics(text):
+    """fy4-2 reuses fy4-1's text; its own pictures are fy4-1's files under fy4-2's names (as own_pics does for fy4-1)."""
+    for f in (T / "assets/pics/fy4").glob("fy4-1-*"): shutil.copy(f, f.with_name(f.name.replace("fy4-1", "fy4-2")))
+    return text
 run("courses.py", "init-lesson", "fy4-2"); L2 = T / "content/fi/FY4/fy4-2"; C2 = T / "lessons/FY4/fy4-2"; C2.mkdir(parents=True)
 for n in ("lesson.md", "inquiry.json", "exercises.json", "solutions.md", "exit-ticket.json"):
-    text_file(L2, n).parent.mkdir(exist_ok=True); text_file(L2, n).write_text(text_file(L, n).read_text().replace("fy4-1", "fy4-2"))
+    text_file(L2, n).parent.mkdir(exist_ok=True); text_file(L2, n).write_text(copy_pics(text_file(L, n).read_text()).replace("fy4-1", "fy4-2"))
 for n in ("answers.py", "sim-spec.md", "figures.py"): (C2 / n).write_text((C / n).read_text().replace("fy4-1", "fy4-2"))
 m2 = json.loads((L2 / "meta.json").read_text()); m2.update(sim="fy4-1", glossary=meta["glossary"], prerequisites=[]); (L2 / "meta.json").write_text(json.dumps(m2, ensure_ascii=False, indent=2))
 (T / "tests/sims/fy4-2.json").write_text((T / "tests/sims/fy4-1.json").read_text())

@@ -130,12 +130,25 @@ def shallow():
     return r.stdout.strip() == "true"
 
 
+IMPORT_NAMES = {"pillow": "PIL"}   # requirements-ci.txt names a package by its pip name; a few import under another name
+
+
+def import_name(pkg):
+    """The module to import for a requirements-ci.txt package name (Pillow → PIL); its own metadata first, then IMPORT_NAMES."""
+    import importlib.metadata as md
+    try:
+        tops = (md.distribution(pkg).read_text("top_level.txt") or "").split()
+        if tops: return tops[0]
+    except md.PackageNotFoundError: pass
+    return IMPORT_NAMES.get(pkg.lower(), pkg.replace("-", "_"))
+
+
 def missing_packages():
     """The packages of requirements-ci.txt that this Python cannot import, and a version warning for playwright."""
     import importlib.util, importlib.metadata as md
     req = (ROOT / "requirements-ci.txt").read_text() if (ROOT / "requirements-ci.txt").is_file() else ""
     names = [m.group(1) for m in re.finditer(r"^([A-Za-z0-9_.-]+)", req, re.M)]
-    gone = [n for n in names if importlib.util.find_spec(n) is None]
+    gone = [n for n in names if importlib.util.find_spec(import_name(n)) is None]
     warn = []
     pin = re.search(r"^playwright==([0-9.]+)", req, re.M)
     if pin and "playwright" not in gone:

@@ -28,6 +28,10 @@ check(res == {"science": ("full", False), "pedagogy": ("delta", False), "visual"
 import unittest.mock as mock
 with mock.patch.object(rnd, "missing_packages", return_value=(["markdown"], [])), mock.patch.object(rnd, "shallow", return_value=False):
     check(rnd.preflight() == 1, "preflight: a missing package stops the round")
+check(rnd.import_name("Pillow") == "PIL" and rnd.import_name("numpy") == "numpy", "import_name: a package's import name, not its pip name (Pillow → PIL)")
+with mock.patch.object(rnd, "import_name", lambda n: "no_such_module_xyz"):
+    check("Pillow" in rnd.missing_packages()[0], "missing_packages: a module that cannot be imported is reported")
+check(rnd.missing_packages()[0] == [] or "Pillow" not in rnd.missing_packages()[0], "missing_packages: an installed Pillow is not reported")
 calls = []
 def fake_run(args, **kw):
     calls.append(args); return subprocess.CompletedProcess(args, 0, "", "")
