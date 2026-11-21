@@ -1,14 +1,10 @@
-VERDICT: FAIL
-CONTENT-HASH: f0c0e62473bc90ee
+VERDICT: PASS
+CONTENT-HASH: 03c5d5d563164802
 
 ## Blocking
-- [Major] lesson.md:410 (third Pysähdy box, answer) — `W_\text{akku}` is a Finnish subscript in the English text and does not match the lesson's own symbol `W_\text{battery}` (lines 338-449); the symbol is undefined for the student — replace with `W_\text{battery}`.
 
 ## Polish
-- none
-
-## Vanhan sisällön löydökset
-(none)
+- [Minor] OLD: nothing in the new boxes; inline \\tfrac fractions in answers are small but legible.
 
 ## Checked
-batch delta review: the site/ build and the shots do not yet contain the new boxes, so I rendered the 3 new Pysähdy boxes (stopthink.py markup, site.css, KaTeX, answers open) at 360 px myself and opened the captures; no overflow, no KaTeX errors; language and units (LaTeX, thin space, \cdot, colon) read.
+batch delta review (round 2): the three "Stop and think" boxes (aside.stop-think) of fy6-16, rendered by me from a fresh build at 360 px with the answers opened (the lesson-folder captures predate the boxes): no clipping, no horizontal overflow (page width 360), no KaTeX error, decimal point and upright units correct, question and answer read clearly.

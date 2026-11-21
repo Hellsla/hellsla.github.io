@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f41f67d0d9cc736a
+CONTENT-HASH: b5300fc7e565f2a7
 
 ## Blocking
-- none
 
 ## Polish
-- none
-
-## Vanhan sisällön löydökset
-(none)
+- [Minor] OLD: nothing in the new boxes; inline \\tfrac fractions in answers are small but legible.
 
 ## Checked
-batch delta review: the site/ build and the shots do not yet contain the new boxes, so I rendered the 3 new Pysähdy boxes (stopthink.py markup, site.css, KaTeX, answers open) at 360 px myself and opened the captures; no overflow, no KaTeX errors; language and units (LaTeX, thin space, \cdot, colon) read.
+batch delta review (round 2): the three "Stop and think" boxes (aside.stop-think) of fy6-7, rendered by me from a fresh build at 360 px with the answers opened (the lesson-folder captures predate the boxes): no clipping, no horizontal overflow (page width 360), no KaTeX error, decimal point and upright units correct, question and answer read clearly.
