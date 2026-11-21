@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 33ce2b5bd2f03d25
+CONTENT-HASH: ca2665cbfde69ecd
 
 ## Blocking
-none
 
 ## Polish
-- Qualitative balloon question is fine but easy; the chapter pointer 'Virtapiiri, sähkövirta ja jännite' fits repulsion only loosely.
-- Figure description reworded readably (good).
+- Laatikko 3: "vaikuttaa keskimmäiseen vastakkaiselta puolelta" on hieman kömpelö; "vastakkaisilta puolilta" olisi selkeämpi. Muutos (hylkivät tai vetävät) korjaa aiemman virheellisen "hylkii", mikä on oikein.
+- Laatikko 2: jakomerkki ":" ($k\lvert q_1q_2\rvert : r^2$) voi hämätä S2-opiskelijaa; murtolauseke olisi tuttu.
+- OLD: ei havaintoja.
 
 ## Checked
-batch delta review: retrieval changed to like-charge repulsion (3 options, misconception-based), figures.json description, answers.py comment.
+batch delta review (round 3, scope Pysähdy ja mieti -laatikot): 3 laatikkoa, kysymys ennen vastausta, vastaukset lyhyitä ja korjaavia; laatikon 2 laskenta tarkistettu ($F \approx 0{,}10\,\text{N}$).

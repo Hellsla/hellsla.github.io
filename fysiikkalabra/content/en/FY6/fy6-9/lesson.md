@@ -45,6 +45,12 @@ In both a disposable and a rechargeable battery, a chemical reaction keeps a sou
 
 A battery does not store electric charge. It is electrically neutral both full and empty: when it discharges, it only moves charges around the circuit, and every charge that leaves the positive terminal returns to the negative terminal. In the external circuit the current passes from the positive terminal to the negative terminal, and inside the battery from the negative terminal to the positive terminal.
 
+```pysahdy
+What changes in a battery when it is charged? Does its total charge change?
+---
+Electrical energy is converted into chemical energy in the battery. The total charge does not change: the battery stays neutral.
+```
+
 ### Charging reverses the current inside the battery
 A battery is charged by connecting the positive terminal of the charger to the positive terminal of the battery and the negative terminal to the negative terminal. When the voltage of the charger is greater than the source voltage of the battery, the charger forces the current through the battery in the opposite direction to discharging: inside the battery from the positive terminal to the negative terminal. Then electrical energy becomes the chemical energy of the battery. In the figure the upper circuit discharges the battery into a lamp and the lower one charges it. When the direction of the current inside the battery reverses, the energy also flows in the other direction.
 
@@ -160,6 +166,12 @@ work done by an electric field :: W = U Q
 ```
 where $W$ is the energy (Wh or J), $U$ is the nominal voltage of the battery (V) and $Q$ is the capacity of the battery (Ah or C).
 
+```pysahdy
+A battery has a capacity of $4.0\,\text{Ah}$ and a nominal voltage of $3.6\,\text{V}$. How much energy does it store?
+---
+The energy is $W = UQ$. With the values, $W = 3.6\,\text{V} \cdot 4.0\,\text{Ah} \approx 14\,\text{Wh}$.
+```
+
 ### The charging circuit
 The simplified charging circuit in the figure has a charger whose voltage is $U_\text{ch}$, the resistance $R$ of the charger and wires, and a battery with source voltage $E$ and internal resistance $R_\text{s}$. Let us go around the loop in the direction of the current, starting from the negative terminal of the charger (chapter *Kirchhoff's laws and potential in a circuit*). The potential rises in the charger by $U_\text{ch}$ and drops in the resistor by $RI$ and in the internal resistance of the battery by $R_\text{s} I$. It also drops by the source voltage $E$ of the battery, because the current passes through the battery from the positive terminal to the negative terminal. By the voltage law, $U_\text{ch} - RI - R_\text{s} I - E = 0$.
 
@@ -208,6 +220,12 @@ The charging current is therefore
 I = \frac{U_\text{ch} - E}{R + R_\text{s}}
 ```
 where $I$ is the charging current (A), $U_\text{ch}$ is the voltage of the charger (V), $E$ is the source voltage of the battery (V), $R$ is the resistance of the charger and wires ($\Omega$) and $R_\text{s}$ is the internal resistance of the battery ($\Omega$). The battery charges only when $U_\text{ch} > E$. If $U_\text{ch} < E$, the current reverses and the battery discharges into the charger, unless the charger has a diode that lets the current pass in one direction only.
+
+```pysahdy
+The charger voltage $U_\text{ch}$ is smaller than the emf $E$ of the battery. Does the battery charge?
+---
+No. Then $U_\text{ch} - E < 0$, so the charger cannot drive a current through the battery in the charging direction.
+```
 
 The terminal voltage of the battery during charging is
 ```latex

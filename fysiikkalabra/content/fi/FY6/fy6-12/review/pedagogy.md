@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: f7ef53da56bc3e1a
+CONTENT-HASH: d78878728ba574b2
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: W=Fs retrieval for aurora electron; Finnish clear, feedback names each error, links to the lesson's topic; split Tunnetut ja kysytty paragraphs consistent.
+batch delta review: Pysähdy-box answer now explains why the reference level does not matter (W = -ΔE_p, difference unchanged); correct physics, fits the lesson's notation.

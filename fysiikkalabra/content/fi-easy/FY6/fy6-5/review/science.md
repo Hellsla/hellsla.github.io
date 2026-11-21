@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e610ccd099e89397
+CONTENT-HASH: e0ace1a9835f90ee
 
 ## Blocking
+None.
 
 ## Polish
+None.
 
 ## Checked
-- delta: Yleinen virhekäsitys "sisäenergiakseen" → "sisäenergiaksi": grammar fix only, physics as in the fi version (P1 internal-energy wording, charge not lost, potential not current drops); no number or symbol changed.
+batch delta review: pysähdy boxes and diff only, numbers recomputed in one script; junction box 0,50 + 0,50 = 1,00 A ≠ 0,80 A; series loop box U1/U2 = R1/R2 = 2 with same I.

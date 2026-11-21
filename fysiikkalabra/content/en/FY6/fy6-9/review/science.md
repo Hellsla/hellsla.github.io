@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ed9d8b325417d4f4
+CONTENT-HASH: 005874d2e1af224d
 
 ## Blocking
+- none
 
 ## Polish
-
+- none
 
 ## Checked
-batch delta review (re-checked after the concurrent typography edit: a space before "(chapter", "we get" in fy6-8; no physics changed): P = UI = 5.0 V · 2.0 A = 10 W; 2.5 (U/I, correctly called a resistance in Ω), 7.0 (sum), 0.40 (I/U) wrong with right feedback; lesson-answers agree; teacher figure and formula names carry.
+- batch delta review: charging box: electrical to chemical energy, battery stays neutral; U_ch < E gives no charging, agrees with I = (U_ch - E)/(R + R_s) and the reversal sentence above it.

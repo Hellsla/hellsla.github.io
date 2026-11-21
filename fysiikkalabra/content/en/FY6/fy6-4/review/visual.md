@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e250902d768e474a
+CONTENT-HASH: f6861355e01b5352
 
 ## Blocking
 
 ## Polish
+- [Minor] OLD: nothing in the new boxes; inline \\tfrac fractions in answers are small but legible.
 
 ## Checked
-batch delta review: opened Kertaa question (Pohdinta) rendered from preview/en/fy6-4.html at 390 px, situation and question as separate paragraphs, maths and options intact, no overflow; figures unchanged by the diff.
+batch delta review (round 2): the three "Stop and think" boxes (aside.stop-think) of fy6-4, rendered by me from a fresh build at 360 px with the answers opened (the lesson-folder captures predate the boxes): no clipping, no horizontal overflow (page width 360), no KaTeX error, decimal point and upright units correct, question and answer read clearly.

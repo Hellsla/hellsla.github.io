@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: be926496cafebd38
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 9292ab93382994b3
 
 ## Blocking
-- none
+None. Scope: only the Pysähdy ja mieti -laatikot (round 2); OLD content judged as Polish only.
 
 ## Polish
-- lesson.md (inquiry too): 'electromagnetic disturbance' / 'sähkömagneettinen häiriö' is a new term at an introductory level and is not explained; 'in an ordinary short circuit the propagation delay is small' reuses 'short circuit' (oikosulku) for a short loop of wire, which clashes with its technical meaning in fy6-2; 'short circuit' -> 'short loop of wire'.
+- Kysymys ja vastaus ovat erillään (vastaus `details`-laatikossa), joten vastaus ei paljastu etukäteen. Laatikot osuvat heti säännön jälkeen. Vastaukset on kirjoitettu lyhyillä lauseilla ja kysymyksissä on yksi asia kerrallaan.
+- Each box asks for one step at the level of the text before it (recall, proportional reasoning, proportional reasoning); the doubling answers give the reason (formula, constant $t$ or $Q$), not just the result. Good.
+- Box 3 uses $E = UQ$, a rearrangement the text has not shown; the answer shows it, so the student can follow. Optional: not needed to change.
+- Selkeä suomi toteutuu: lyhyet lauseet, ei uusia vaikeita sanoja.
+- OLD: the central misconception (current is not consumed in the lamp) and the circuit diagram have no box; the Virtapiiri and Kytkentäkaavio sections are the natural places if the teacher extends the set later.
+- OLD: first box (rubber) recalls what the paragraph above just said, so it tests little; a variant asking about a wire with a damaged insulation would be stronger.
 
 ## Checked
-- Diff since origin/main for fy6-1 lesson (fi-easy) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
-- Standing rules in the changed lines: LaTeX maths and units, decimal comma, no bold in task statements, no lesson ids shown.
-- NOTES.md §12: same physics as the Finnish; new terms (kytkentämuutos, irradianssi, tehokerroin, vaihe-ero, pätöteho, mitoitettu, vakiovirtalähde etc.) are explained in the sentence where first used; whole natural sentences, one action per sentence in instructions.
+Hash unchanged at start and end. Read the full packet (lesson text, inquiry, checks). Verified the three `pysahdy` fences in this language: placement after the explaining paragraph or figure, question then `---` then answer, units in LaTeX, decimal comma/point, no lesson id shown. Deterministic checks, inquiry and layout at 360 to 1280 px are green in the packet. Did not open captures; the box mechanics are tested by `test_stopthink.py`.

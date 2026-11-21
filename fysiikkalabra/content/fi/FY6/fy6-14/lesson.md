@@ -361,6 +361,12 @@ Diodin ominaiskäyrä piirretään yleensä niin, että jännite $U_\text{D}$ on
   <foreignObject x="123.5" y="263.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$I = 0$</span></div></foreignObject>
 </svg>
 
+```pysahdy
+Piidiodi on päästösuunnassa, ja sen jännite on $0{,}30\,\text{V}$. Kulkeeko siinä merkittävä virta?
+---
+Ei kulje. Jännite on alle kynnysjännitteen, joka on noin $0{,}6\,\text{V}$–$0{,}7\,\text{V}$, joten virta on lähes nolla.
+```
+
 ### LED muuttaa sähköenergiaa valoksi
 **LED** eli hohtodiodi on diodi, joka lähettää valoa, kun virta kulkee sen läpi päästösuuntaan. Valon väri riippuu LEDin puolijohdemateriaalista, ja väri näkyy myös kynnysjännitteessä. Kun virta on muutamia milliampeereja, punaisen LEDin jännite on noin $1{,}8$–$2{,}0\,\text{V}$, vihreän noin $2{,}2\,\text{V}$ ja sinisen tai valkoisen noin $2{,}9$–$3{,}3\,\text{V}$. LED muuttaa suuremman osan sähköenergiasta valoksi kuin hehkulamppu, jonka sähköenergiasta suurin osa muuttuu langan sisäenergiaksi ja siirtyy lämpönä ympäristöön.
 
@@ -430,6 +436,12 @@ Kennon $(U, I)$-kuvaaja ei ole laskeva suora kuten pariston (luku *Lähdejännit
 
 <figure class="unit-photo"><img src="pics/fy6/solar-panels-jyvaskyla.webp" alt="Tumma talon katto sinistä taivasta vasten; katolla on kaksi riviä tummansinisiä aurinkopaneeleja ja piippu."><figcaption>Aurinkopaneeleja omakotitalon katolla Jyväskylässä. Jokaisessa paneelissa on monta sarjaan kytkettyä aurinkokennoa. Paneelit tuottavat tasajännitettä, joka muutetaan vaihtosuuntaajalla verkon vaihtojännitteeksi.</figcaption></figure>
 
+```pysahdy
+Valo himmenee puoleen. Kennon oikosulkuvirta puolittuu, mutta tyhjäkäyntijännite muuttuu vain vähän. Miksi?
+---
+Oikosulkuvirta on suoraan verrannollinen irradianssiin, joten se puolittuu. Tyhjäkäyntijännite taas riippuu valosta vain vähän, joten se pysyy lähes ennallaan.
+```
+
 ## Kaava: Etuvastus ja aurinkokennon teho
 
 ### Etuvastuksen mitoitus
@@ -470,6 +482,12 @@ missä $R$ on etuvastuksen resistanssi ($\Omega$), $U$ lähteen jännite ($\text
 </svg>
 
 Komponentin teho on sen jännite kertaa virta (luku *Sähköteho ja vastuksen lämpeneminen*): LEDin teho on $P_\text{D} = U_\text{D} I$ ja vastuksen teho $P_R = U_R I$. Vastuksessa sähköenergia muuttuu vastuksen sisäenergiaksi, joten vastus valitaan niin, että se kestää tämän tehon. Estosuunnassa $I = 0$, joten $U_R = RI = 0$ ja diodin jännite on koko lähteen jännite $U$.
+
+```pysahdy
+LED vaatii virran $10\,\text{mA}$, ja sen jännite on $1{,}8\,\text{V}$. Lähde on $3{,}3\,\text{V}$. Kuinka suuri etuvastus tarvitaan?
+---
+$R = \tfrac{U - U_\text{D}}{I}$. Sijoitus: $\tfrac{3{,}3\,\text{V} - 1{,}8\,\text{V}}{0{,}010\,\text{A}} = 150\,\Omega$.
+```
 
 ### Aurinkokennon teho
 Aurinkokennon tai -paneelin antama sähköteho on

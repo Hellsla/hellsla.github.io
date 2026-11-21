@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: cc76053817aad1ee
+CONTENT-HASH: 89f895171b86e189
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- batch delta review: the diff is the Kertaa retrieval task (inquiry.json); opened stage-herata-390 and rendered the opened Kertaa box at 390 px (question, options, wrong- and correct-answer feedback with the aligned chain): KaTeX, units, case endings and layout fine, nothing clipped. Hash rechecked after the 11:59 spacing fix "$$ (luku".
+batch delta review (round 2, scope: Pysähdy ja mieti -laatikot): pakettikaappaukset eivät sisällä laatikoita, joten renderöin sivun (build.py → preview/fi-easy/fy6-7.html) Chromiumilla 360 px:llä, avasin kaikki aside.stop-think-vastaukset ja mittasin: 3 laatikkoa, ei leikkautumista, ei vaakavieritystä, ei KaTeX-virheitä; avasin kuvakaappaukset laatikoista (yksiköt, desimaalipilkku {,}, \cdot, kaksoispisteet kunnossa). Sisältö hash-vaihto vain fy6-10 ja fy6-13 (yksi vastauslause muutettu kesken, ulkoasuun vaikuttamaton).

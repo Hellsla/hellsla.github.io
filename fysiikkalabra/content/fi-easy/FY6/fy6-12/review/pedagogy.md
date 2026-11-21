@@ -1,12 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: ce27e7b5fab8770d
-
+CONTENT-HASH: 679c9a4cd1403138
 ## Blocking
-none
 
 ## Polish
-- Retrieval is plain W = Fs, quite easy for the level; acceptable as review.
-- Space missing before `(luku` after the correct formula.
-
+- none; the answer now gives W = -ΔE_p and the reason the difference stays the same, which is clearer for S2.
 ## Checked
-batch delta review: retrieval W=Fs 1,0e-15 J, distractors 4,0e-15 and 2,0e-15 verified, rows re-broken.
+batch delta review (round 2): box answer on zero level: consistent with the lesson's formulas and clear.

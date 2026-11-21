@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f7ad38a15577cf64
+CONTENT-HASH: 286cc3f52db1742c
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-batch delta review (re-checked after the concurrent typography edit: a space before "(chapter", "we get" in fy6-8; no physics changed): W = Fs = 2.0e-15 N · 0.50 m = 1.0e-15 J; 4.0e-15 (F/s) and 2.0e-15 (s ignored) wrong with right feedback; one correct option; lesson-answers agree.
+- batch delta review: zero level box: W = -dEp unchanged by a shift (right); 45 V gives 45 eV with only the electric force doing work; W = q(VA - VB) = 2.0 nC x 50 V = 1.0e-7 J (recomputed, sign right).

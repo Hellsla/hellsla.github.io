@@ -207,6 +207,12 @@ The voltage between the terminals of a battery is called the **terminal voltage*
 
 <figure class="unit-photo"><img src="pics/fy6/lithium-ion-cells.webp" alt="Two light blue cylindrical battery cells in yellow holders on a wooden table; the labels read INR21700 and INR18650."><figcaption>Lithium-ion cells of types 21700 and 18650. The numbers give the size of the cell: a diameter of $21\,\text{mm}$ and a length of $70\,\text{mm}$, or $18\,\text{mm}$ and $65\,\text{mm}$. The internal resistance of such a cell is only tens of milliohms, so it can supply a large current without its terminal voltage dropping much.</figcaption></figure>
 
+```pysahdy
+A current of $2.0\,\text{A}$ passes inside a battery, and the internal resistance is $0.10\,\Omega$. How large is the voltage of the internal resistance?
+---
+The voltage is $R_\text{s} I$. So $0.10\,\Omega \cdot 2.0\,\text{A} = 0.20\,\text{V}$.
+```
+
 ### The source voltage is measured without a current
 When no current is drawn from the battery, the voltage $R_\text{s} I$ across the internal resistance is zero, and the terminal voltage is equal to the source voltage. The source voltage can therefore be measured by connecting just a voltmeter to the terminals of the battery, because a good voltmeter draws only a vanishingly small current. A new AA battery gives about $1.6\,\text{V}$ this way. The source voltage of a used battery can be almost as large, but its internal resistance has grown many times over. A voltmeter alone therefore does not reveal whether a battery is still usable: only under load does its terminal voltage drop clearly.
 
@@ -215,6 +221,12 @@ The internal resistance of a car battery is very small, only hundredths of an oh
 
 ### Short circuit
 In a **short circuit** the terminals of a battery are connected by a conductor whose resistance is almost zero. Then the terminal voltage is almost zero, and only the internal resistance limits the current. The short-circuit current is the largest current that can be obtained from a battery: for a new AA battery it is about $1.60\,\text{V} : 0.20\,\Omega = 8.0\,\text{A}$, and for a car battery over a thousand amperes. The whole power of the source is then changed into internal energy of the battery and the conductor. The conductor may become red hot, and the battery may leak or heat up dangerously; a lithium battery may even catch fire. The terminals of a battery must therefore never be connected directly with a conductor, and loose batteries are not carried in a pocket with keys or coins.
+
+```pysahdy
+Why is the terminal voltage almost zero in a short circuit, even though the current is at its largest?
+---
+The conductor between the terminals has almost no resistance, so its voltage $RI$ is almost zero. The source voltage is used up in the internal resistance.
+```
 
 ## Formula: Terminal voltage and short-circuit current
 The terminal voltage of a battery when a current $I$ is drawn from it is
@@ -232,6 +244,12 @@ where $R$ is the resistance of the external circuit ($\Omega$). The internal res
 I_\text{k} = \frac{E}{R_\text{s}}
 ```
 where $I_\text{k}$ is the short-circuit current ($\text{A}$).
+
+```pysahdy
+The source voltage of a battery is $6.0\,\text{V}$ and its internal resistance is $0.50\,\Omega$. How large is the short-circuit current?
+---
+The short-circuit current is $I_\text{k} = E : R_\text{s}$. So $I_\text{k} = 6.0\,\text{V} : 0.50\,\Omega$, so $I_\text{k} = 12\,\text{A}$.
+```
 
 ### Source voltage and internal resistance from a graph
 The terminal voltage decreases steadily as the current grows, so the $(I, U)$ graph of a battery is a descending straight line. It meets the vertical axis at $U = E$, because without a current the terminal voltage is the source voltage, and the horizontal axis at the short-circuit current $I_\text{k}$. The slope of the line is $-R_\text{s}$, so the internal resistance is obtained from a triangle of the slope: $R_\text{s} = -\Delta U : \Delta I$. For the battery in the figure the terminal voltage decreases by $0.60\,\text{V}$ when the current grows by $2.0\,\text{A}$, so $R_\text{s} = 0.60\,\text{V} : 2.0\,\text{A} = 0.30\,\Omega$.

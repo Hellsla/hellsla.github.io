@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 723f22b94a51b580
+CONTENT-HASH: 679c9a4cd1403138
 
 ## Blocking
+None.
 
 ## Polish
+None.
 
 ## Checked
-batch delta review: new retrieval W = Fs with force along the motion: 2,0·10⁻¹⁵ N · 0,50 m = 1,0·10⁻¹⁵ J; distractors 4,0·10⁻¹⁵ J (F:s) and 2,0·10⁻¹⁵ J (s ignored) with correct feedback; chapter Työ ja energia exists; one correct option; exit ticket reflow only.
+batch delta review: pysähdy boxes and diff only, numbers recomputed in one script; zero-level box: W = −ΔE_p, independent of reference, consistent with the lesson's sign convention.

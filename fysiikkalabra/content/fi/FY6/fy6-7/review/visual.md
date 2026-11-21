@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7139db41569d0974
+CONTENT-HASH: e965932d3844c971
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] Opened "Vastaus" state of the Pysähdy ja mieti boxes is not in any capture and no browser was available to render it; the layout checks (360–1920 px, answers open) were clean in checks.txt, and the widest inline answer formula fits a 360 px box by estimate.
 
 ## Checked
-- Delta round 2: the diff adds a space after the display formula before "(luku ...)" in the Kertaa feedback (fy6-8 also the word "saadaan").
-- Rendered the opened Kertaa correct-answer feedback at 390 px for fy6-8 and fy6-13 (the others carry the identical one-character change): display block with normal margins, "(luku ...)" starts a new line, no stray indent or gap, no clipping.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review (round 2, scope: Pysähdy ja mieti boxes only): the new/changed boxes' wording, units, decimal comma and LaTeX read from the diff and source; box rendering confirmed in captures fy6-5-stage-selita-390-1, fy6-5-theory-1280-1, fy6-2-stage-selita-390-5, fy6-10-stage-selita-390-7 (label, question, closed Vastaus, no clipping at 390 px or 1280 px, no red KaTeX); the same shared component renders every lesson's boxes.

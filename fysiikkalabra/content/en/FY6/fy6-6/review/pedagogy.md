@@ -1,9 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 5c929e5a58932179
+CONTENT-HASH: 8e82e84b38df56c4
+
 ## Blocking
+(none)
 
 ## Polish
-- The chapter reference 'Power: P = ΔE/Δt' puts a formula in a chapter name; keep it plain if the chapter title is not that.
-- The toaster photo is not in the captures list, so its legibility was not judged; the caption is clear.
+(none)
+
+## Vanhan sisällön löydökset
+(none; not reviewed beyond the new boxes)
+
 ## Checked
-batch delta review: new retrieval task and feedback (Ohm's law with the toaster wire; photo and chapter-name refs); each wrong option's feedback names its slip and repairs it, the retrieval fits the chapter's lead-in, Finnish-neutral English reads clearly, no answer disclosed before commitment.
+- Box 1 (motor 24 V, 2.0 A, after the P = UI paragraph): answerable from the paragraph just read; new numbers, not the 12 V / 0.50 A of the example; answer 48 W clear.
+- Box 2 (current triples, after Joule's law): the paragraph shows doubling gives 4x, so tripling needs the same reasoning, not a copy; answer 9x clear.
+- Box 3 (20 ohm, 10 V, after the two forms of P): the choice of U^2:R follows the text "when voltage is known"; answer 5.0 W clear.
+- Question texts do not reveal the answer; solutions are short and give the reasoning.
+- No duplicate of an exercise, prediction or exit-ticket in the packet (grep of numbers and tripling case).
+- Boxes sit at paragraph ends and break up the text; phone use is simple.

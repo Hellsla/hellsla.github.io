@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: af0ee34887b98e83
+CONTENT-HASH: 8e82e84b38df56c4
 
 ## Blocking
+- none
 
 ## Polish
-- The reference "Circuit, electric current and voltage" matches fy6-1's meta title, but courses.json still calls that chapter "Electric circuit, current and voltage"; make the two names agree.
+- none
+
+## Vanhan sisällön löydökset
+- none found in the context read (not blocking by scope).
 
 ## Checked
-batch delta review (re-checked after the concurrent typography edit: a space before "(chapter", "we get" in fy6-8; no physics changed): 230 V : 46 Ω = 5.0 A (agrees with exit-1, P = 1150 W); distractors 0.20 A, 11 kA (10 580), 184 A wrong with right feedback; photo caption (series, same current, larger R takes most of P = RI²) right; chapter refs.
+- batch delta review (scope: new pysahdy boxes only, teacher 2026-11-20): 3 boxes: P = UI = 48 W; I x3 gives P x9 at constant R; U^2/R = 5.0 W. Recomputed, 2 s.f.

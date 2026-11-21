@@ -207,6 +207,12 @@ Pariston napojen välistä jännitettä sanotaan **napajännitteeksi** $U$. Kun 
 
 <figure class="unit-photo"><img src="pics/fy6/lithium-ion-cells.webp" alt="Kaksi sinistä, lieriön muotoista akkukennoa keltaisissa pidikkeissä."><figcaption>Kaksi litiumioniakun kennoa. Kennojen nimet 21700 ja 18650 kertovat niiden koon: halkaisija $21\,\text{mm}$ ja pituus $70\,\text{mm}$ tai halkaisija $18\,\text{mm}$ ja pituus $65\,\text{mm}$. Kennon sisäinen resistanssi on hyvin pieni. Siksi kenno voi antaa suuren virran, eikä napajännite laske paljon.</figcaption></figure>
 
+```pysahdy
+Pariston sisällä kulkee virta $2{,}0\,\text{A}$, ja sisäinen resistanssi on $0{,}10\,\Omega$. Kuinka suuri on sisäisen resistanssin jännite?
+---
+Jännite on $R_\text{s} I$. Siis $0{,}10\,\Omega \cdot 2{,}0\,\text{A} = 0{,}20\,\text{V}$.
+```
+
 ### Lähdejännite mitataan ilman virtaa
 Kun paristosta ei oteta virtaa, sisäisen resistanssin jännite $R_\text{s} I$ on nolla. Silloin napajännite on yhtä suuri kuin lähdejännite. Lähdejännitteen voi siis mitata kytkemällä pariston napoihin pelkän jännitemittarin. Hyvä jännitemittari ottaa vain häviävän pienen virran. Uudesta AA-paristosta saadaan näin noin $1{,}6\,\text{V}$. Käytetyn pariston lähdejännite voi olla lähes yhtä suuri, mutta sen sisäinen resistanssi on kasvanut moninkertaiseksi. Pelkkä jännitemittari ei siksi kerro, onko paristo vielä käyttökelpoinen. Vasta kuormitettuna sen napajännite laskee selvästi.
 
@@ -215,6 +221,12 @@ Auton akun sisäinen resistanssi on hyvin pieni, vain sadasosaohmien luokkaa. K�
 
 ### Oikosulku
 **Oikosulussa** pariston navat yhdistetään johtimella, jonka resistanssi on lähes nolla. Silloin napajännite on lähes nolla. Virtaa rajoittaa vain sisäinen resistanssi. Oikosulkuvirta on suurin virta, jonka paristosta voi saada. Uudelle AA-paristolle se on noin $1{,}60\,\text{V} : 0{,}20\,\Omega = 8{,}0\,\text{A}$ ja auton akulle yli tuhat ampeeria. Lähteen koko teho muuttuu silloin pariston ja johtimen sisäenergiaksi. Johdin voi kuumeta hehkuvaksi. Paristo voi vuotaa tai kuumeta vaarallisesti, ja litiumparisto voi jopa syttyä palamaan. Pariston napoja ei siksi saa yhdistää suoraan johtimella. Irtoparistoja ei myöskään pidetä taskussa avainten tai kolikoiden kanssa.
+
+```pysahdy
+Miksi napajännite on oikosulussa lähes nolla, vaikka virta on suurimmillaan?
+---
+Napojen välinen johdin on lähes vastukseton, joten sen jännite $RI$ on lähes nolla. Lähdejännite menee sisäiseen resistanssiin.
+```
 
 ## Kaava: Napajännite ja oikosulkuvirta
 Pariston napajännite, kun paristosta otetaan virta $I$, on
@@ -232,6 +244,12 @@ missä $R$ on ulkoisen piirin resistanssi ($\Omega$). Sisäinen resistanssi toim
 I_\text{k} = \frac{E}{R_\text{s}}
 ```
 missä $I_\text{k}$ on oikosulkuvirta ($\text{A}$).
+
+```pysahdy
+Pariston lähdejännite on $6{,}0\,\text{V}$ ja sisäinen resistanssi $0{,}50\,\Omega$. Kuinka suuri on oikosulkuvirta?
+---
+Oikosulkuvirta on $I_\text{k} = E : R_\text{s}$. Siis $I_\text{k} = 6{,}0\,\text{V} : 0{,}50\,\Omega$, joten $I_\text{k} = 12\,\text{A}$.
+```
 
 ### Lähdejännite ja sisäinen resistanssi kuvaajasta
 Napajännite pienenee tasaisesti virran kasvaessa. Siksi pariston $(I, U)$-kuvaaja on laskeva suora. Suora leikkaa pystyakselin kohdassa $U = E$, koska ilman virtaa napajännite on lähdejännite. Vaaka-akselin se leikkaa oikosulkuvirran $I_\text{k}$ kohdalla. Suoran kulmakerroin on $-R_\text{s}$. Sisäinen resistanssi saadaan siis kulmakertoimen kolmiosta: $R_\text{s} = -\Delta U : \Delta I$. Kuvan paristolla napajännite pienenee $0{,}60\,\text{V}$, kun virta kasvaa $2{,}0\,\text{A}$. Siksi $R_\text{s} = 0{,}60\,\text{V} : 2{,}0\,\text{A} = 0{,}30\,\Omega$.

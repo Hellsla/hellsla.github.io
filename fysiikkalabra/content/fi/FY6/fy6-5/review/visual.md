@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3d605b0189ef608f
-
-Mode: delta (one word: "sisäenergiakseen" -> "sisäenergiaksi" in the misconception paragraph)
+CONTENT-HASH: 44ec35df3719cdca
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] Opened "Vastaus" state of the Pysähdy ja mieti boxes is not in any capture and no browser was available to render it; the layout checks (360–1920 px, answers open) were clean in checks.txt, and the widest inline answer formula fits a 360 px box by estimate.
 
 ## Checked
-- Diff only; screenshots are missing for this lesson (review/shots absent), so nothing was opened. The change is a single correct word form (the old "sisäenergiakseen" was ungrammatical and also off the house wording "muuttuu sisäenergiaksi"); no figure, formula, unit or line length is affected, so layout cannot have changed.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review (round 2, scope: Pysähdy ja mieti boxes only): the new/changed boxes' wording, units, decimal comma and LaTeX read from the diff and source; box rendering confirmed in captures fy6-5-stage-selita-390-1, fy6-5-theory-1280-1, fy6-2-stage-selita-390-5, fy6-10-stage-selita-390-7 (label, question, closed Vastaus, no clipping at 390 px or 1280 px, no red KaTeX); the same shared component renders every lesson's boxes.

@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: fe929e4f92033e08
+CONTENT-HASH: 151c9ef890c265ae
 
 ## Blocking
+(none)
 
 ## Polish
+- [Minor] Vastaus, vaihevirta: \tfrac-murtoluku $\tfrac{P}{3U}$ pieni 360 px:llä, luettavissa.
 
 ## Checked
-batch delta review: the only change is the stage-1 paragraph break (knowns, then "Kysytään ..." as its own paragraph); read the diff and opened the fy6-10 and fy6-16 example-390 captures (the same stage pattern, current for this hash): the break reads naturally, no one-word orphan, spacing even, nothing clipped.
+batch delta review (round 2, scope: Pysähdy ja mieti -laatikot): pakettikaappaukset eivät sisällä laatikoita, joten renderöin sivun (build.py → preview/fi-easy/fy6-16.html) Chromiumilla 360 px:llä, avasin kaikki aside.stop-think-vastaukset ja mittasin: 3 laatikkoa, ei leikkautumista, ei vaakavieritystä, ei KaTeX-virheitä; avasin kuvakaappaukset laatikoista (yksiköt, desimaalipilkku {,}, \cdot, kaksoispisteet kunnossa). Sisältö hash-vaihto vain fy6-10 ja fy6-13 (yksi vastauslause muutettu kesken, ulkoasuun vaikuttamaton).

@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: f1a2a31e2acbe42d
+CONTENT-HASH: a5c58b7599ab1e1e
 
 ## Blocking
 
 ## Polish
-- none.
 
 ## Checked
-batch delta review: kertaus P = UI = 10 W (2,5 named as resistance in Ω, 7,0 sum, 0,40 inverted), one correct option, lesson-answers.py runs; worked-example split only.
+batch delta review: charging box (electrical energy into chemical energy, total charge unchanged, battery neutral) is correct; U_lat < E box agrees with the theory paragraph above it (current reverses unless a diode blocks it).

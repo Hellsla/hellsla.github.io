@@ -115,6 +115,12 @@ The voltage across parallel branches is the same (chapter *Resistors in series a
   <foreignObject x="216" y="155.5" width="230" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{junction}$</div></foreignObject>
 </svg>
 
+```pysahdy
+A current of $0.80\,\text{A}$ arrives at a junction and divides into two branches. Can the current be $0.50\,\text{A}$ in both branches? Why or why not?
+---
+No. By the current law the currents leaving are together $0.80\,\text{A}$, but $0.50\,\text{A} + 0.50\,\text{A} = 1.00\,\text{A}$.
+```
+
 ### Potential: the electrical level of every point
 Every point of a circuit has a **potential** $V$: the voltage of the point relative to a chosen zero point. The zero point is often chosen to be the negative terminal of the voltage source or the earth, and its potential is $0\,\text{V}$. The voltage between two points is the difference of their potentials. Potential can be compared with height: height depends on where it is measured from, but the difference in height between two points does not. In the same way, moving the zero point changes all potentials by the same amount, but the voltages stay the same.
 
@@ -158,6 +164,12 @@ Potential changes only in the source and in the resistors. In the source it rise
   <foreignObject x="72" y="321.5" width="80" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$0\,\text{V}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Two points are at the ends of the same bare conductor with no resistor between them. How large is the voltage between them, and why?
+---
+It is approximately zero. The resistance of the conductor is negligibly small, so the potential does not change along it.
+```
+
 ### A round trip in a loop: Kirchhoff's voltage law
 A **loop** is a closed path in a circuit that returns to its starting point. When a loop is traversed, the potential returns to the same value from which it started. Therefore **the sum of the rises and drops of potential in a loop is zero**. This is Kirchhoff's voltage law. In a circuit of one loop the voltage of the source is equal to the sum of the voltages of the resistors. In terms of energy, voltage tells how much energy per unit of charge changes from one form to another (chapter *Circuit, electric current and voltage*): a charge gains energy in the source and gives up the same amount in the resistors.
 
@@ -186,6 +198,12 @@ Kirchhoff's voltage law for a loop:
 Kirchhoff's second law :: \sum \Delta V = 0
 ```
 where $\Delta V$ (V) is the change of potential in each part of the loop when the loop is traversed once. In the source from the negative terminal to the positive terminal $\Delta V = +U$, in a resistor in the direction of the current $\Delta V = -RI$, and in a wire $\Delta V = 0$. In a circuit of one loop with two resistors the law gives $U - R_1 I - R_2 I = 0$, that is, $U = R_1 I + R_2 I$.
+
+```pysahdy
+In a one-loop circuit the resistors are $R_1 = 20\,\Omega$ and $R_2 = 10\,\Omega$. How many times larger is the voltage of $R_1$ than the voltage of $R_2$, and why?
+---
+Twice as large. The same current $I$ passes through both, so by $U = RI$ the voltage is proportional to the resistance. The voltages together make the source voltage, $U = R_1 I + R_2 I$.
+```
 
 A **potential graph** shows the potential at different points of a loop. In the graph the loop of the circuit marked with the points $A$–$F$ is traversed from the negative terminal $F$ through the resistors $R_1$ and $R_2$ back to the point $F$. The rise of the source $+9.0\,\text{V}$ is equal to the total of the drops of the resistors $-3.0\,\text{V}$ and $-6.0\,\text{V}$, and in the wires the graph is horizontal.
 

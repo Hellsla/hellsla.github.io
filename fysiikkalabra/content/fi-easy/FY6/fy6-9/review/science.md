@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ad8283f63f7ac046
+CONTENT-HASH: 374f81f922b8e3c2
 
 ## Blocking
+None.
 
 ## Polish
+- The U_lat < E box could add that the current then reverses and the battery discharges into the charger unless a diode prevents it (the paragraph just above says so).
 
 ## Checked
-batch delta review: retrieval P = UI = 5,0 V · 2,0 A = 10 W; 2,5 (U:I, named a resistance in Ω correctly), 7,0 W (sum), 0,40 W (I:U) recomputed; one correct option; stage split only.
+batch delta review: pysähdy boxes and diff only, numbers recomputed in one script; charging box (chemical energy, neutral battery), U_lat < E box consistent with I = (U_lat − E)/(R + R_s) and the paragraph above it.

@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: eeaccc7c40351a6b
+CONTENT-HASH: f3d35b31fea47ed7
 
 ## Blocking
 
 ## Polish
+- lesson.md:227 box 2: 'Lähdejännite menee sisäiseen resistanssiin' is loose; 'koko lähdejännite on sisäisen resistanssin jännite R_s I' says the same exactly (C).
+
+## Vanhan sisällön löydökset
 
 ## Checked
-batch delta review: retrieval I = P : U = 55 W : 12 V = 4,58 ≈ 4,6 A (P = UI, 'saadaan', then I = P : U in aligned rows); distractors 660 A, 0,22 A, 43 A recomputed with right feedback; one correct option; worked-example stage split, numbers unchanged.
+batch delta review (scope: new pysahdy boxes only): 3 boxes; R_s I = 0,20 V, short-circuit terminal voltage ≈ 0, I_k = 6,0 V/0,50 Ω = 12 A recomputed. Hash identical at start and end.
