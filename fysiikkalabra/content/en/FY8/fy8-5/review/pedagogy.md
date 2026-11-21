@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fa562a1451b96017
+CONTENT-HASH: e732f0ec4fbf30d4
+
 ## Blocking
+None.
 
 ## Polish
+- Box 2 (k/N) only substitutes the formula given directly above; a case where the student must decide which numbers are k and N would test more.
+
+## Vanhan sisällön löydökset
+None.
 
 ## Checked
-batch delta review: the retrieval prompt links the chemistry-book electron cloud to the double slit.
+batch delta review: the three new pysahdy boxes read against the paragraph, figure and aria-label before each; answerable from earlier text; the answer is a model with its reason.

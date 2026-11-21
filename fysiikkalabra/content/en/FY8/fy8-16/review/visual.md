@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4ae44fd1881f3ac4
+CONTENT-HASH: 1acdf7bf1e816980
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
+
 
 ## Checked
-batch delta review: read the added cosmic-inflation paragraph in lesson.md (about 45 words, bold term, fluent English, no number or symbol outside maths, sits in "The Big Bang" before the timeline figure); opened fy8-16-fig-4-390 (timeline, legible, unclipped). The added paragraph separates the Big Bang text from the timeline figure it explains only marginally; acceptable.
+batch delta review: opened fy8-16-theory-1280-* (3 new Stop and think boxes) and the 390 px fy8-16-stage-selita-390-* captures: boxes render as a green-edged card with label, question and closed Answer toggle, formulas and units in KaTeX, no clipping, layout around them intact.

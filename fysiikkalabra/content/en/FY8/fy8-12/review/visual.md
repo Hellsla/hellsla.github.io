@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 84c862db6d19599b
+CONTENT-HASH: 141a2bfd141d8bbd
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] inquiry.json solution — the Substitution line uses $\text{min}^{-1}$ while the task and graph say "pulses per minute"; fine, but a short word (pulses) would tie the unit to the graph axis.
+(none)
+
+## Vanhan sisällön löydökset
+- [Minor] fy8-12 radiation-types table at 390 px: narrow columns break words (he-lium nu-cleus, alu-minium); old content, not blocking.
 
 ## Checked
-batch delta review: opened fy8-12-fig-9-390 (the graph the changed solution reads); the diff is one unit re-set ($\tfrac{1}{\text{min}}$ to $\text{min}^{-1}$), typography correct, no layout risk.
+batch delta review: opened fy8-12-theory-1280-* (3 new Stop and think boxes) and the 390 px fy8-12-stage-selita-390-* captures: boxes render as a green-edged card with label, question and closed Answer toggle, formulas and units in KaTeX, no clipping, layout around them intact.

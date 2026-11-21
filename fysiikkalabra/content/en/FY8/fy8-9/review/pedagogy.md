@@ -1,8 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 29104962fdb7236e
+VERDICT: FAIL
+CONTENT-HASH: d0c2d634825ae4b3
+
 ## Blocking
+- Box 1 (nucleus does not age): the paragraph just above says 'just as likely to decay during the next second as a newly formed one'; the answer is verbatim.
 
 ## Polish
-- none
+None.
+
+## Vanhan sisällön löydökset
+None.
+
 ## Checked
-batch delta review: Mo-99 to Tc beta-minus item: Z 42 to 43, mass number 99, answer, feedback and distractor consistent; fits the lesson's technetium-99m context.
+batch delta review: the three new pysahdy boxes read against the paragraph, figure and aria-label before each; answerable from earlier text; the answer is a model with its reason.

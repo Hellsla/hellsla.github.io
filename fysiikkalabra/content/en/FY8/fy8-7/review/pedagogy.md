@@ -1,14 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: 2c79b025b43f5d01
+VERDICT: FAIL
+CONTENT-HASH: d5181101137280b8
+
 ## Blocking
+- Box 1 (stimulated emission): the figure just above says 'two identical photons leave in the same direction and in step', and the paragraph earlier says the same; the answer is read off.
+- Box 2 (quantum dot): the figure just above says 'the smaller the dot, the shorter the wavelength'; the answer is given.
 
 ## Polish
-- inquiry.json:27 — the item is a retrieval of fy8-6 but is now framed in the laser; the glossed levels E_1, E_2 are unnamed in the prompt's own context, acceptable as it is optional. No change needed.
+- Box 3: the graph above already shows more photons at longer wavelength.
+
+## Vanhan sisällön löydökset
+None.
 
 ## Checked
-- Both earlier blockers fixed: prompt, correct-option and "upper level" feedback all say 633 nm and 1.96 eV (hc/633 nm = 1.96 eV, matches kert-633-eV).
-- No kert-650 or 1.91 eV reference remains in the retrieval item; the other 650 nm mentions (graph points, L1-09, mis-650) are separate and consistent.
-- The correct option is no longer disclosing the distractor wording; the options remain distinct and none refers to another by place.
-- Direction distractor feedback (random direction of spontaneous emission) still repairs the misconception and no longer mentions a lamp.
-- The retrieval does not give away the lesson's opening answer (stimulated emission is only hinted by the last distractor).
-- Hash at start and end: 2c79b025b43f5d01 (en).
+batch delta review: the three new pysahdy boxes read against the paragraph, figure and aria-label before each; answerable from earlier text; the answer is a model with its reason.

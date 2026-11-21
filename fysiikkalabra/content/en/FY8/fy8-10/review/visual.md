@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 5ffc97c331b02be5
+CONTENT-HASH: c6d438b602564302
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] lesson.md Summary — the full stop sits snug against the formula box's right edge at 390 px (readable, not clipped) — optionally move it inside the display as `\,.`.
+(none)
+
 
 ## Checked
-- Own capture of the opened Summary at 390 px (/tmp/claude-0/-home-user-hellsla-github-io/bf43dda7-b9d6-5d8a-b9af-2263f4c15c3d/scratchpad/sum5.png): the formula is on its own line and not clipped, there are five separate bullets with no literal "- " markers, scrollWidth is 390.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+batch delta review: opened fy8-10-theory-1280-* (3 new Stop and think boxes) and the 390 px fy8-10-stage-selita-390-* captures: boxes render as a green-edged card with label, question and closed Answer toggle, formulas and units in KaTeX, no clipping, layout around them intact.
