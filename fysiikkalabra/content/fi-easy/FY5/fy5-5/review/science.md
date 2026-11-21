@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 77b7bf73e98ebfd1
+CONTENT-HASH: 07e7a813e0b28c6f
 
 ## Blocking
 
 ## Polish
-- inquiry.json:343 — the feedback now says "pienentäisi voiman neljäsosaan, koska $g \propto \tfrac{1}{r^2}$"; with the task now about force, $F \propto \tfrac{1}{r^2}$ would match (same wording in fi; not wrong, since F = mg).
+- lesson.md:296 (block 3): the graph's visible tick labels are every 600 µN, so 417 µN and 104 µN cannot be read off it precisely: they are only in the aria-label. "The graph shows the same value" is a bit strong. Fix: "about 100 µN, as the graph shows".
+- lesson.md:200 (block 1): the answer uses the fact that the Moon has the smaller mass, but the paragraph does not give it. This is common knowledge and not blocking; the answer could add "(about 1/81 of the Earth's mass)".
 
 ## Checked
-- Hash same at start and end. Delta, round 1 (fi-easy): field strength marked as deepening (learn -> deepen, "Syventävä osio" at lesson.md:285, summary split, Etsi virhe titled Syventävä), transfer task rewritten as force, exit-ticket answer re-broken into rows.
-- Every changed line compared with content/fi/FY5/fy5-5: same numbers, formulas and structure; deepen goal, summary lines and the 6378 feedback identical; the Syventävä paragraph says the same in shorter sentences.
-- Transfer task: γMm/(R + h)² = ½ γMm/R² -> h = (√2 − 1)R = 0,41421 · 6378 km = 2641,9 km -> 2640 km; m and M cancel, as the solution says; check (6378/9020)² = 0,500.
-- Mistake value 6378 (h = R, i.e. r = 2R gives a quarter) still correct for the force version.
-- Exit ticket: γ · 1,0 · 1,0/1,0² = 6,7·10⁻¹¹ N, unchanged; the rows are one chain split at '='.
-- Weight defined as the gravitational force at the Earth's surface, G = mg: consistent with the glossary and the fi version.
-- lesson-answers.py comment: half the force equals half of g at fixed m; right.
-- No SCOPE line printed in the packet's instructions, so none written.
+- Hash the same at the start and at the end. Scope: only the three new `pysahdy` blocks (teacher 2026-11-20, work queue 20); the the split of the worked example's *Tunnetut ja kysytty* stage (no number changed) and the inquiry.json reflow carries.
+- Block 1 (Earth and Moon): a = F/m with equal third-law forces; M_Earth/M_Moon = 81, so the Moon's acceleration is about 81 times the Earth's. Correct, and answerable from the apple/Earth paragraph just before it.
+- Block 2 (r on the surface): r is measured from the centre, R = 6378 km, which matches the paragraph before it, the transfer task and Etsi virhe. It gives nothing away that is not already in the paragraph, and Etsi virhe comes later, after the theory.
+- Block 3 (graph): γ·(1,0·10⁴ kg)²/r² gives 417,1 µN at 4 m and 104,3 µN at 8 m, which matches the figure's data (figures.py) and the inverse-square paragraph. It extends the figure's 2 m to 4 m example without repeating it.
+- Deterministic checks are green, including layout at 360 px with the answers open.
+
+## Vanhan sisällön löydökset
+- inquiry.json:343 (siirto, mistake 6378): the reasoning uses "g ∝ 1/r²" where the task speaks of the force; "F ∝ 1/r²" would fit better (from the previous round).
+- lesson.md (Yleinen virhekäsitys): "kentän voimakkuus ... 8,9 m/s²" is still the only core-path sentence that gives a field strength (from the previous round).

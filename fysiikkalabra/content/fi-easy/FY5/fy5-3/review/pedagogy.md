@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: ef590b3be059e98f
+CONTENT-HASH: e6941cb8f646540a
 
 ## Blocking
 
 ## Polish
-- The photo caption (edge travels farther than near the axle) states Ennusta 2's answer in the lesson text; fine if the text follows the inquiry, otherwise cut that clause.
+- The block label is 13 px (.8125rem), under the 17 px text floor; a visual reviewer matter, not a pedagogy one.
 
 ## Checked
-batch delta review (round 2): round-1 finding resolved: Eetu sentence and teaser gone, radius 1,5 m differs from Ennusta 2 (1,0/2,0 m), feedback says nothing of time or speed; circumference is a real prior skill (pi r, diameter distractors).
+Tarkistettu: kolme uutta pysahdy-lohkoa (vastapäivään kiertävän kappaleen nopeus ylhäällä -> vasemmalle; tasaisen vauhdin ympyräliikkeessä kiihtyvyys ei ole nolla; v=2πr/T=3,1 m/s). Fysiikka oikein, vastattavissa juuri luetun kappaleen perusteella, sijoitus kunkin kappaleen ja kuvan jälkeen (tangentti; suunnan muutos; kaava ja kahden säteen kuva). Mitään ei paljasteta: myöhemmät tehtävät ja tutkimus käyttävät muita lukuja (ei r=2,0 m, T=4,0 s; huipun kysymystä ei kysytä uudelleen). Vastaus ensin symbolein, sitten luvut yksiköineen LaTeXina. Kieli selkeää. Avattu vastaus 360 px:llä: ei ylivuotoa, luettava.
+
+## Vanhan sisällön löydökset
+- none noted (scope limited to the new blocks).

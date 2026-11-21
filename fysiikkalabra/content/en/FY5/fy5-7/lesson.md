@@ -209,8 +209,20 @@ The position of an oscillating object is described by the **displacement** $x$, 
 
 <figure class="unit-photo"><img src="pics/fy5/girl-on-swing.webp" alt="A child swings on a wooden swing in a green meadow. High rocky mountains rise in the background."><figcaption>A swing in the Dolomites, Italy. Swinging is periodic motion: the swing returns to the same point at nearly equal time intervals.</figcaption></figure>
 
+```pysahdy
+The weight is $2.5\,\text{cm}$ below the equilibrium position, and up is the positive direction. What is the displacement $x$ of the weight?
+---
+$x = -2.5\,\text{cm}$. The displacement has a sign, and on the side opposite to the positive direction it is negative.
+```
+
 ### Period and frequency
 The **period** $T$ is the duration of one full oscillation (one cycle): the time after which the object is again in the same place and moving in the same direction. When the weight leaves the equilibrium position going up, it reaches the highest position, returns to the equilibrium position, reaches the lowest position and returns to the equilibrium position again. This is one oscillation. The **frequency** $f$ is the number of full oscillations per unit time. The period and the frequency correspond to the period and the rotation frequency in the chapter *Moving in a circle: period and speed*: one oscillation corresponds to one revolution. The period is measured most precisely from the duration of several oscillations: if $n$ oscillations take the time $t_n$, the period is $T = \tfrac{t_n}{n}$.
+
+```pysahdy
+A weight makes $20$ full oscillations in $8.0\,\text{s}$. What is the period?
+---
+$T = \tfrac{8.0\,\text{s}}{20} = 0.40\,\text{s}$, because the period is the duration of one oscillation.
+```
 
 ### An oscillation as a graph
 When the displacement is drawn as a function of time, the result is a $(t, x)$ graph (chapter *Position, velocity and uniform motion as graphs*). The graph of periodic motion repeats in the same way at intervals of one period. The period is read between two successive peaks or between two passes through the equilibrium position in which the object moves in the same direction. Successive passes are only half a period apart, because the object passes the equilibrium position once going up and once coming down. The amplitude is read from the level $x = 0$ of the equilibrium position to the level of a peak.
@@ -300,6 +312,12 @@ When the displacement is drawn as a function of time, the result is a $(t, x)$ g
   <path d="M446,103 L451,114 L441,114 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="460" y="154" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$A$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+The curve of another weight passes the equilibrium position going up at the time $0$ and next going down at the time $0.35\,\text{s}$. Is the period $0.35\,\text{s}$?
+---
+No. Passes in opposite directions are only half a period apart, so the period is $0.70\,\text{s}$.
+```
 
 ## Formula: Sinusoidal oscillation
 The frequency is the reciprocal of the period, because one oscillation takes the time $T$, and in a unit of time $\tfrac{1}{T}$ oscillations are completed:

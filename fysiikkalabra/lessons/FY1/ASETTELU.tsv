@@ -1,0 +1,37 @@
+kuvan tunniste	tyyppi	tiedosto	x	y	leveys	korkeus	merkintöjen siirrot (järjestysnumero: dx, dy)	ilman taustaa (merkintöjen järjestysnumerot)
+fy1-1/atom-stadium	diagram	fy1-1-atom-stadium.webp	6.2	11.1	591.1	336.2		
+fy1-1/eclipse	illustration	fy1-1-eclipse.webp						
+fy1-1/hero	illustration	fy1-1-hero.webp						
+fy1-1/interactions	diagram	fy1-1-interactions.webp	0	0	600	425		
+fy1-1/matter-ladder	diagram	fy1-1-matter-ladder.webp	0	0	600	438.8		
+fy1-1/rain-field	illustration	fy1-1-rain-field.webp						
+fy1-2/conversion	diagram	fy1-2-conversion.webp	6.2	12.4	594.1	375		
+fy1-2/cyclist	illustration	fy1-2-cyclist.webp						
+fy1-2/hero	illustration	fy1-2-hero.webp						
+fy1-2/quantity	diagram	fy1-2-quantity.webp	0	0	600	332.5	{"0":[7.2,0],"1":[4.6,0],"2":[2.0,0],"3":[-0.6,0],"4":[-3.2,0],"5":[-5.8,0],"6":[-8.4,0]}	
+fy1-2/ruler-read	diagram	fy1-2-ruler-read.webp	-1.3	0	603	202.3	{"0":[5.67,0],"1":[4.97,0],"2":[4.27,0],"3":[3.57,0],"4":[2.87,0],"5":[2.17,0],"6":[1.47,0],"7":[0.77,0],"8":[0.07,0],"9":[-0.63,0],"10":[-1.33,0],"11":[-2.03,0],"12":[-2.73,0],"13":[-3.43,0],"14":[-4.13,0],"15":[-4.83,0]}	
+fy1-2/tap-bucket	illustration	fy1-2-tap-bucket.webp						
+fy1-3/hero	illustration	fy1-3-hero.webp						
+fy1-3/paper-stack	illustration	fy1-3-paper-stack.webp						
+fy1-3/pendulum-timing	illustration	fy1-3-pendulum-timing.webp						
+fy1-3/zero-scale	diagram	fy1-3-zero-scale.webp	1.2	2.5	597	395.5		
+fy1-4/candle	illustration	fy1-4-candle.webp						
+fy1-4/spring-masses	illustration	fy1-4-spring-masses.webp						
+fy1-5/hero	illustration	fy1-5-hero.webp						
+fy1-5/lightning	illustration	fy1-5-lightning.webp						
+fy1-5/motion	diagram	fy1-5-motion.webp	0	-1.2	600	337.5		
+fy1-5/two-friends	illustration	fy1-5-two-friends.webp						
+fy1-6/apple	illustration	fy1-6-apple.webp						
+fy1-6/free-fall	diagram	fy1-6-free-fall.webp	0	0	600	562.5		
+fy1-6/hero	illustration	fy1-6-hero.webp						
+fy1-6/light-gates	diagram	fy1-6-light-gates.webp	5	1.2	594.1	402.2		
+fy1-6/same-fall	diagram	fy1-6-same-fall.webp	0	0	600	445		
+fy1-7/cylinders-read	diagram	fy1-7-cylinders-read.webp	10.7	10.7	571.4	390.5	{"0":[0,0],"1":[0,3.3],"2":[0,6.7],"3":[0,10],"4":[0,13.3],"5":[0,13],"6":[-5,0],"7":[-5,3.3],"8":[-5,6.7],"9":[-5,10],"10":[-5,13.3],"11":[-5,13]}	
+fy1-7/displacement	diagram	fy1-7-displacement.webp	14.4	15.6	576.9	364.2	{"0":[0,-2.3],"1":[0,3.3],"2":[0,9.7],"3":[0,-2.3],"4":[0,3.3],"5":[0,9.7]}	
+fy1-7/gold-bar	diagram	fy1-7-gold-bar.webp	0	1.2	597	335.8		
+fy1-7/hero	illustration	fy1-7-hero.webp						
+fy1-7/sinker	illustration	fy1-7-sinker.webp						
+fy1-8/hero	illustration	fy1-8-hero.webp						
+fy1-8/ramp-ball	illustration	fy1-8-ramp-ball.webp						
+fy1-8/setup	diagram	fy1-8-setup.webp	0	-1.2	600	420		
+fy1-8/two-balls-ramp	illustration	fy1-8-two-balls-ramp.webp						

@@ -170,6 +170,7 @@ Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jäl
 - Pysähdy ja mieti: FY3:n luvut tehty (PR #766 ja fy3-4 PR #772, kaikki kielet, katselmoitu: tiede, pedagogia ja ulkoasu PASS; fy3-4:n sim-lukema korjattu, ks. FY3-päätös alla); seuraavaksi FY5, kurssi kerrallaan.
 - Pysähdy ja mieti: FY2:n luvut tehty (PR #765, kaikki kielet, katselmoitu; fy2-4 neljäs rajattu kierros opettajan luvalla 2026-11-19); jäljellä FY3 ja muut kurssit, kurssi kerrallaan.
 - Pysähdy ja mieti: FY4:n luvut tehty (PR #745, kaikki kielet, katselmoitu); **opettaja 2026-11-19 aamulla ("kaikki ok"): laajennetaan muihin kursseihin**, kurssi kerrallaan saman kurssin keskeneräisen PR:n jälkeen.
+- Pysähdy ja mieti: FY5:n luvut tehty (PR #770, kaikki kielet, katselmoitu, rajattu laajuus; vanhan sisällön löydökset PR:n kuvauksessa); jäljellä FY6 ja muut kurssit, kurssi kerrallaan.
 - Pysähdy ja mieti FY2 (#765): **opettaja 2026-11-19 klo 22.3x ("1 yes"): fy2-4:lle sallitaan neljäs, rajattu katselmointikierros** (tiede ja pedagogia delta, en full) kolmannen kierroksen esteen (johtopäätöksen kriteeri 3) korjauksen vahvistamiseksi; poikkeus lesson.md:n kolmen kierroksen rajaan vain tähän.
 - Pysähdy ja mieti FY3 (#766): **opettaja 2026-11-20 klo 14.2x ("I allow recommendations")**: (1) visuaalikatselmoija kirjoittaa uudet `review/visual.md`-raportit vanhojen tilalle (normaali menettely); (2) fy3-4 jätetään pois tästä PR:stä (palautetaan mainin tilaan), muut 15 lukua yhdistetään. fy3-4:n simulaation lukema (näyttää heti ρg = 9,81 kPa/m ja 1,97-kertaisen paineen, joten kokeen 1 numerotehtävä vastataan ilman mittausta) korjataan omana jaettuna työnään (sim/`lang/`, yksin), ja fy3-4:n Pysähdy ja mieti tehdään sen jälkeen samassa yhteydessä.
 - fy3-4 (#772): **opettaja 2026-11-20 klo 17.3x ("yes")**: (1) kaavarivi "hydrostaattinen paine :: p = p_0 + ρgh" pidetään (opettajan päätös 2026-11-12, docs/fy3/kaavanimet.tsv rivi 37); opettajan hyväksymä poikkeus, katselmoijat eivät merkitse estettä. (2) Esimerkin ikkunavoima 1,77 kN ja kolmen merkitsevän numeron perustelu (P7).
@@ -208,6 +209,7 @@ jää kuvioinnin päällä (opettaja 15.11.; `merkinnoin/` näyttää lopputulok
 `fy2-7/district`, `fy2-7/grid`, `fy2-7/storage` (en poikkeaa fi:stä).
 **Osa 1 + FY2-pilotti (#768) hyväksytty: opettaja 2026-11-20 klo 01.4x ("I approve")**, ennen/jälkeen-kuvat docs/audits/img24/.
 **Osa 3 FY3 (#776) hyväksytty: opettaja 2026-11-21 suoraan tekijäsessioon ("Hyväksyn FY3-kuvat")**, 61 kuvaa, ennen/jälkeen-kuvat docs/audits/img24-fy3/; seitsemän käsin liimattua SVG:tä (`~lesson-N`) ei kuulu tähän, ne tehdään erikseen.
+Osa 2 (FY1) tehty: PR #771 (36 kuvaa, `approve-figures --images` ajettu hyväksynnän jälkeen, site/ rakennettu), odottaa koordinaattorin yhdistämistä.
 **Osa 2 FY1 (#771) hyväksytty: opettaja 2026-11-20 klo 17.5x ("hyväksytty")**, ennen/jälkeen-kuvat docs/audits/img24-fy1/; approve-figures fy1-1…fy1-8 --images tämän perusteella.
 Osat 2–11: FY1, FY3–FY10, FY14 yksi moduuli kerrallaan, oma ketju ja luonnos-PR; kuvat lukuihin kaikilla kielillä,
 `approve-figures`, build, tarkistukset; opettaja katsoo moduulin kerran valmiilta sivulta ennen yhdistämistä.

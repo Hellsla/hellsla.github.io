@@ -161,6 +161,12 @@ Velocity is a vector $\overline{v}$ with a magnitude and a direction. At every m
   <foreignObject x="380" y="207.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\overline{v}_1 \neq \overline{v}_2$</div></foreignObject>
 </svg>
 
+```pysahdy
+An object goes round a circle counterclockwise and is just at the top of its path. In which direction does its velocity point?
+---
+To the left. The velocity is along the tangent, perpendicular to the vertical radius, so it is horizontal and points in the direction of motion.
+```
+
 ### When the string breaks
 A puck tied to a string circles a peg on the ice. The string pulls the puck towards the peg and turns its direction of motion all the time. If the string breaks, no force acts on the puck horizontally any more: the friction of the ice is assumed small, and the vertical forces, the weight and the support force of the ice, cancel each other. By Newton's first law the puck then continues in uniform motion in a straight line with the velocity it had at the moment of the break. The puck therefore leaves along the tangent of the path, not straight away from the peg. In the same way, water drops flying off the rim of a spinning umbrella leave along the tangent.
 
@@ -230,6 +236,12 @@ The change of velocity $\Delta\overline{v}$ is seen when two successive velocity
   <foreignObject x="366" y="297.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\overline{v}_2 = \overline{v}_1 + \Delta\overline{v}$</div></foreignObject>
 </svg>
 
+```pysahdy
+An object goes round a circle at constant speed. Is its acceleration zero?
+---
+No. The speed stays the same, but the direction of the velocity changes all the time, so the velocity changes and the object accelerates.
+```
+
 ## Formula: Speed
 Uniform circular motion is described by the **period** $T$, which is the time in which the object goes round the path once. Its reciprocal is the **rotation frequency** $f$, which tells how many revolutions the object makes per unit of time:
 ```kaavat
@@ -275,6 +287,12 @@ The formula answers the opening question. All parts of the roundabout complete a
   <foreignObject x="440" y="161.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$s_\text{B} = 2\,s_\text{A}$</div></foreignObject>
   <foreignObject x="440" y="217.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v_\text{B} = 2\,v_\text{A}$</div></foreignObject>
 </svg>
+
+```pysahdy
+An object goes round a circle of radius $2.0\,\text{m}$, and one revolution takes $4.0\,\text{s}$. What is its speed along the path?
+---
+The speed is $v = \tfrac{2\pi r}{T}$. It is $\tfrac{2\pi \cdot 2.0\,\text{m}}{4.0\,\text{s}} \approx 3.1\,\text{m/s}$.
+```
 
 ## Worked example
 The diameter of the drum of a washing machine is $46\,\text{cm}$. In the spin cycle the drum turns $1200$ revolutions per minute. What is the speed of a sock pressed against the wall of the drum?

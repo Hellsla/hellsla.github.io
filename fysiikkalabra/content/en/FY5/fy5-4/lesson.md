@@ -134,6 +134,12 @@ In the figure, the velocity of the object is first $\overline{v}_1$ and a moment
 ### Centripetal acceleration points to the centre
 In uniform circular motion the acceleration is perpendicular to the velocity and, at every point of the path, points towards the centre of the circle. It is called **centripetal acceleration** $\overline{a}_\text{n}$ (also known as normal acceleration). The subscript n comes from the fact that the acceleration lies along the normal of the path, the line perpendicular to the tangent. Since the acceleration has no component along the velocity, the speed neither increases nor decreases: the acceleration changes only the direction of the velocity.
 
+```pysahdy
+An object moves around a circle at constant speed. Why does the speed not increase even though the object accelerates?
+---
+The acceleration is perpendicular to the velocity, so it has no component along the velocity. It changes only the direction of the velocity.
+```
+
 ### The net force points to the centre
 By Newton's second law, the net force $\Sigma\overline{F}$ has the same direction as the acceleration. So in uniform circular motion the sum of the forces acting on the object points towards the centre of the path. This net force pointing to the centre is called the **centripetal force**. Without it the object would continue in a straight line along the tangent of the path, as Newton's first law says.
 
@@ -214,6 +220,12 @@ where $a_\text{n}$ is the centripetal acceleration ($\text{m/s}^2$), $v$ the tan
 
 Why exactly the square of the speed? The speed has an effect twice. At a greater speed the velocity arrow is longer, so the same turn of direction means a larger change of velocity $\Delta\overline{v}$. In addition, the object goes round the arc faster, so the velocity turns through the same angle in a shorter time. Both factors grow with the speed, so the acceleration grows with the square of the speed. At the same speed, in a bend of smaller radius the direction of the velocity turns faster, so the acceleration is larger.
 
+```pysahdy
+A cyclist rides at $6.0\,\text{m/s}$ around a bend of radius $12\,\text{m}$. What is the centripetal acceleration?
+---
+$a_\text{n} = \tfrac{v^2}{r} = \tfrac{(6.0\,\text{m/s})^2}{12\,\text{m}} = 3.0\,\text{m/s}^2$, and it points to the centre of the bend.
+```
+
 <svg data-fig="kuvaaja" viewBox="0 0 600 360" role="img" aria-label="Graph to scale: on the horizontal axis the tangential speed v in metres per second from zero to 30, on the vertical axis the centripetal acceleration a n in metres per second squared from zero to 18. Two orange curves rise from the origin ever more steeply. For a radius of 50 metres the solid curve: at a speed of 10 the acceleration is 2, at 20 it is 8 and at 30 it is 18. For a radius of 100 metres the dashed curve is half as high: at a speed of 20 the acceleration is 4 and at 30 it is 9. The points at speeds 10 and 20 are marked on the solid curve with guide lines." style="max-width:100%;font-size:24px">
   <line x1="141.5" y1="300" x2="141.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="197.5" y1="300" x2="197.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -278,6 +290,12 @@ By Newton's second law, in uniform circular motion the magnitude of the sum of t
 \Sigma F = m\,\frac{v^2}{r}
 ```
 where $\Sigma F$ is the net force pointing to the centre ($\text{N}$) and $m$ the mass of the object ($\text{kg}$). The calculation goes as in the chapter *Free-body diagrams and the combined effect of forces*: first draw the free-body diagram and choose one axis to point towards the centre of the path. Then the forces pointing towards the centre are positive, those pointing away are negative, and their sum is $m\tfrac{v^2}{r}$. Perpendicular to the plane of the path the object does not accelerate, so in that direction the sum of the forces is zero.
+
+```pysahdy
+An object moves around a circle at constant speed. Since the speed stays the same, the sum of the forces is zero. Is this true?
+---
+No. The direction of the velocity changes, so the acceleration is not zero. The sum of the forces is $m\tfrac{v^2}{r}$ and points to the centre.
+```
 
 ### Crest and dip
 When a car drives over the top of a hill at a steady speed, it is for a moment on a circular path whose centre is below the road. The acceleration then points down, so the weight is greater than the support force of the road: $G - N = m\tfrac{v^2}{r}$. The support force is smaller than the weight, and the passenger feels light. The greater the speed, the smaller the support force. If $\tfrac{v^2}{r}$ grows equal to $g$, the support force is zero. If it grows greater than $g$, the car leaves the road for a moment.

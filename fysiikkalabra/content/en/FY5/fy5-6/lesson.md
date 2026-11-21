@@ -497,6 +497,12 @@ A body that goes round another body under gravity is called a satellite. The Moo
 
 So a satellite falls towards the Earth all the time, but it never hits it. Without gravity it would continue straight ahead along the tangent of the orbit. Gravity bends the path, and when the speed is just right, the path curves at the same rate as the surface of the Earth curves away beneath the satellite. Then the distance from the centre of the Earth stays the same and the orbit is a circle.
 
+```pysahdy
+What would happen to a satellite if the Earth's gravity suddenly stopped acting?
+---
+No force would bend the path, so the satellite would continue straight ahead along the tangent of the orbit at the same speed. It would not fall to the Earth and it would no longer go round in a circle.
+```
+
 If the speed is lower, gravity turns the path more sharply than a circle would require: the satellite descends lower and then returns to the starting altitude, or hits the Earth if the speed is much too low. If the speed is higher, the path curves more gently and the satellite rises farther away before returning. In these cases the orbit is not a circle but an ellipse, and the model of uniform circular motion does not describe it.
 
 <svg data-fig="cannon" viewBox="0 0 600 380" role="img" aria-label="Diagram, not to scale: a body is launched horizontally from the same point above the Earth at three speeds. The paths have been calculated from the law of gravitation. At too low a speed the path curves more sharply than a circle and hits the Earth. At the circular-orbit speed the body goes round a circle that stays at the distance of the starting point. At a higher speed the path curves more gently, and the body moves farther away and returns to the starting point. This path is an ellipse whose point nearest the Earth is the starting point." style="max-width:100%;font-size:24px">
@@ -602,6 +608,12 @@ T = \frac{2\pi r}{v}
 ```
 where $T$ is the orbital period ($\text{s}$). The orbit of a faraway satellite is longer and its speed lower, so the orbital period grows quickly as the distance grows: the ISS goes round the Earth in about an hour and a half, the Moon in about $27\,\text{d}$. When the radius and the orbital period of a satellite are measured, the same equation can also be solved for the mass $M$ of the central body. This is how, for example, the masses of the Earth, the Sun and Mars have been determined.
 
+```pysahdy
+A satellite orbits in a circle at a speed of $3.0\,\text{km/s}$, and one revolution takes $4.0\,\text{h}$. How long is the orbit?
+---
+The orbit is the distance of one revolution, so $2\pi r = vT$. Thus $vT = 3.0 \cdot 10^{3}\,\text{m/s} \cdot 14\,400\,\text{s}$, which is about $4.3 \cdot 10^{7}\,\text{m}$ or $43\,000\,\text{km}$.
+```
+
 ### Geostationary orbit
 A geostationary satellite orbits above the equator in the same direction as the Earth rotates, and its orbital period is the same as the rotation period of the Earth, $23\,\text{h}\;56\,\text{min}$. It therefore seems to stay in place in the sky, and a satellite dish can be aimed at it once. Because the orbital period determines the orbital radius, all geostationary satellites orbit at the same altitude, about $35\,800\,\text{km}$.
 
@@ -676,6 +688,12 @@ The distances of the Earth and Halley's comet are measured from the Sun, the dis
   <foreignObject x="533" y="207.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{Sun}$</div></foreignObject>
   <foreignObject x="325" y="309.5" width="250" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$88\text{–}5250\ \text{million km}$</div></foreignObject>
 </svg>
+
+```pysahdy
+The distance of Halley's comet from the Sun is $88\,\text{million km}$ at its smallest and $5250\,\text{million km}$ at its greatest. Does the circular model fit its orbit?
+---
+No. The greatest distance is about $60$ times the smallest, but on a circular orbit the distance from the central body would stay constant.
+```
 
 Small deviations from the model show up in precise measurements. The orbital speed of the Moon calculated from measured values, $1.023\,\text{km/s}$, is about $0.5\,\%$ greater than the $1.018\,\text{km/s}$ given by the model, because the mass of the Moon is about $\tfrac{1}{81}$ of the mass of the Earth: the Earth and the Moon go round their common centre of mass, and the Earth does not stay in place. At the altitude of the ISS thin air brakes the station and its orbit slowly descends, so the station is raised with engines regularly.
 

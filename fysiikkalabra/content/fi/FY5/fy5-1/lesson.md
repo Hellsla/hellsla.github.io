@@ -251,12 +251,24 @@ Vääntövaikutuksen ratkaisee voiman **vaikutussuora** eli suora, joka kulkee v
   <foreignObject x="313" y="264.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{vaikutussuora}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Avainta vedetään vinosti varteen nähden. Onko voiman varsi silloin yhtä pitkä kuin käden otekohdan etäisyys akselista?
+---
+Ei ole. Varsi on kohtisuora etäisyys vaikutussuoraan, joten vinossa vedossa se on lyhyempi kuin otekohdan etäisyys.
+```
+
 ## Kaava: Voiman momentti
 Voiman momentti kiertoakselin suhteen on voiman suuruuden ja voiman varren tulo:
 ```kaavat
 voiman momentti :: M = F r
 ```
 missä $M$ on voiman momentti ($\text{Nm}$), $F$ voiman suuruus ($\text{N}$) ja $r$ voiman varsi eli kiertoakselin kohtisuora etäisyys voiman vaikutussuorasta ($\text{m}$). Momentin yksikkö on newtonmetri $\text{Nm}$. Se ei ole sama asia kuin energian yksikkö joule, vaikka molemmat ovat newtonin ja metrin tulo: momentissa etäisyys on kohtisuorassa voimaa vastaan, työssä se on voiman suuntainen siirtymä.
+
+```pysahdy
+Kohtisuoraan avaimen vartta vedetään $30\,\text{N}$:n voimalla $0{,}40\,\text{m}$:n etäisyydellä mutterin keskeltä. Mikä on voiman momentti?
+---
+Voima on kohtisuorassa, joten varsi on $0{,}40\,\text{m}$. Momentti on $30\,\text{N}\cdot 0{,}40\,\text{m} = 12\,\text{Nm}$.
+```
 
 ### Kiertosuunta ja etumerkki
 Momentilla on suuruuden lisäksi kiertosuunta. Tässä kirjassa vastapäivään kiertävä momentti on positiivinen ja myötäpäivään kiertävä negatiivinen. Kun kappaleeseen vaikuttaa monta voimaa, niiden momentit lasketaan yhteen etumerkkeineen. Saadaan **kokonaismomentti**:
@@ -289,6 +301,12 @@ missä $\Sigma M$ on kokonaismomentti ($\text{Nm}$) ja $M_1$, $M_2$, … yksitt�
   <foreignObject x="366" y="275.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$M < 0$</div></foreignObject>
   <foreignObject x="334" y="185.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$O$</div></foreignObject>
 </svg>
+
+```pysahdy
+Levossa olevaan kiertyvään levyyn vaikuttavat momentit $+8\,\text{Nm}$ ja $-5\,\text{Nm}$. Mihin suuntaan levy alkaa kiertyä ja miksi?
+---
+Kokonaismomentti on $+3\,\text{Nm}$. Se on positiivinen, joten levy alkaa kiertyä vastapäivään.
+```
 
 ### Vinon voiman varsi
 Usein tiedetään vaikutuskohdan etäisyys $d$ kiertoakselista ja kulma $\alpha$, jonka voima muodostaa akselista vaikutuskohtaan kulkevan suoran (esimerkiksi avaimen varren jatkeen) kanssa. Akseli, vaikutuskohta ja varren kantapiste muodostavat suorakulmaisen kolmion, jonka hypotenuusa on $d$. Varsi on kulman $\alpha$ vastainen kateetti:

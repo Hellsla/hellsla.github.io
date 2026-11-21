@@ -217,6 +217,12 @@ Pieni äänilähde, joka säteilee tasaisesti joka suuntaan, on pistemäinen lä
 
 <figure class="unit-photo"><img src="pics/fy5/sound-level-meter-park.webp" alt="Ihmisiä istuu puistossa. Tolpassa on punainen näyttö, jossa lukee 62 dB."><figcaption>Melunäyttö puistossa Kiinassa. Näyttö kertoo äänitason desibeleinä. Tällaiset mittarit näyttävät yleensä A-painotettua äänenpainetasoa. Ulkona painottamaton äänenpainetaso on lukuarvoltaan suunnilleen sama kuin intensiteettitaso. A-painotettu lukema voi olla erilainen, varsinkin matalilla äänillä. $62\,\text{dB}$ on noin tavallisen puheen voimakkuus.</figcaption></figure>
 
+```pysahdy
+Miksi intensiteetti pienenee, kun mennään kauemmas pistemäisestä lähteestä? Lähteen teho pysyy samana.
+---
+Sama teho levittäytyy isommalle pallopinnalle. Pinta-ala on isompi, joten intensiteetti eli teho pinta-alaa kohti on pienempi.
+```
+
 ### Kuulokynnys ja kipukynnys
 Ihmisen korva on hämmästyttävän herkkä. Nuori normaalikuuloinen ihminen erottaa noin $1000\,\text{Hz}$:n taajuudella äänen, jonka intensiteetti on noin $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Se on heikoin ääni, jonka hän kuulee. Tätä sanotaan **kuulokynnykseksi**. Kuulokynnys ei ole hiljaisuus. Se on heikoin kuultavissa oleva ääni. Se on myös eri suuri eri taajuuksilla. Kovimmat äänet alkavat tuntua kivulta, kun intensiteetti on noin $1\,\text{W/m}^2$. Tämä kipukynnys on biljoona eli $10^{12}$ kertaa kuulokynnyksen suuruinen. Näin laajaa vaihteluväliä on hankala esittää tavallisella asteikolla. Molemmat kynnykset ovat eri ihmisillä erilaisia, ja ne riippuvat taajuudesta. Siksi nämä arvot ovat sovittuja likiarvoja. Ne eivät ole luonnonvakioita.
 
@@ -264,6 +270,12 @@ Intensiteetin vaihteluväli on siis hyvin laaja. Siksi äänen voimakkuutta kuva
   <foreignObject x="284" y="53.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$120$</div></foreignObject>
   <foreignObject x="400" y="53.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1$</div></foreignObject>
 </svg>
+
+```pysahdy
+Äänen intensiteetti tulee tuhatkertaiseksi. Kuinka monta desibeliä taso kasvaa?
+---
+Tuhatkertainen on kolme kymmenkertaista peräkkäin. Taso kasvaa $3 \cdot 10\,\text{dB} = 30\,\text{dB}$.
+```
 
 Korva ei ole yhtä herkkä kaikille taajuuksille. Matalat ja hyvin korkeat äänet kuulostavat samalla intensiteetillä hiljaisemmilta kuin äänet, joiden taajuus on noin $1000$–$4000\,\text{Hz}$. Siksi melumittarit painottavat taajuuksia korvan herkkyyden mukaan. Tällainen painotettu lukema merkitään $\text{dB(A)}$. Tavalliset melumittarit näyttävät usein A-painotettua äänenpainetasoa. Tässä luvussa lasketaan painottamattomia intensiteettitasoja.
 
@@ -418,6 +430,12 @@ Joskus samaan paikkaan kuuluu kaksi toisistaan riippumatonta äänilähdettä, e
   <foreignObject x="495.5" y="101.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$83$</div></foreignObject>
   <foreignObject x="502" y="309.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$L$</div></foreignObject>
 </svg>
+
+```pysahdy
+Kaksi samanlaista konetta toimii yhtä aikaa. Toinen sammutetaan. Putoaako taso puoleen?
+---
+Ei putoa. Intensiteetti puolittuu. Taso laskee vain noin $3\,\text{dB}$.
+```
 
 ## Esimerkki
 Ulkoilmakonsertissa desibelimittari näyttää $96\,\text{dB}$, kun se on $10\,\text{m}$:n päässä kaiutintornista. Kuinka suuri on äänen intensiteetti mittarin kohdalla? Kuinka suuri on kaiutintornin ääniteho? Oleta, että torni säteilee kuin pistemäinen lähde tasaisesti joka suuntaan. Oleta myös, että ääni ei heijastu eikä vaimene. Silloin mittarin lukemaa voi käsitellä intensiteettitasona.

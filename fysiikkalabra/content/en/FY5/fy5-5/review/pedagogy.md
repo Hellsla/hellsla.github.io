@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 259dd438b58d9b7c
+CONTENT-HASH: bc2f14246b7773ee
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-1. inquiry.json, transfer task, wrong-answer feedback "reduce the force to a quarter, because $g \propto \tfrac{1}{r^2}$": the task is now about the force and g belongs to the extension; write $F \propto \tfrac{1}{r^2}$ (one symbol).
-2. inquiry.json, check "1. Mass and weight": answerable by elimination from the core, but its feedback uses "field strength", $g = \gamma M/R^2$ and the Moon value $1.62\,\text{m/s}^2$, which only the extension teaches; say "free-fall acceleration" or mark the feedback as extension. Same point as in the Finnish report.
-3. lesson.md, summary ("The weight of a body at the Earth's surface is the gravitational force acting on it, $G = mg$"): g is not named in the core path; add "(g = free-fall acceleration)". The optional "Newton's Moon test" (inquiry, Tutki) also uses the field strength and, unlike "Extension: Find the error", carries no label; mark it "Extension:" too.
+- Blocks 2 and 3 are answered by the sentence right before them; consider a variant (100 km above the ground, or 3r) so the student applies rather than recalls. Not blocking.
+- Stop blocks have the same wording across fi, en and fi-easy (fi-easy answer 1 in simpler sentences); language clean in each.
 
 ## Checked
-- Learning goals: "calculate the gravitational force using Newton's law of gravitation" completes "In this lesson, you will learn to"; the "deepen" goal names what the extension adds; grammar parallel to the other goals.
-- Lesson text: the paragraph "Extension section." under the field-strength heading tells the student that this subsection and the next are extension and what the core path needs; the summary now separates the core weight line from the "Extension:" field line.
-- Transfer task rewritten for force: probe of mass m, F(r) = F(R)/2 gives r = √2 R and h = (√2 − 1) · 6378 km = 2642 km (2640 km); the hints, feedback and solution all speak of force, and the solution says that both M and m cancel. Consistent with the core path.
-- "Extension: Find the error" is optional and marked; a core student can skip it.
-- Exit ticket: calculation as aligned rows (6.674e-11 · 1.0 · 1.0/1.0² ≈ 6.7e-11 N) and the remark on the constant as its own paragraph; correct and readable.
-- English matches the Finnish version that passed (same structure and same Polish items).
+Scope: only the 3 pysahdy blocks (teacher 2026-11-20).
+1. After the apple/Earth paragraph: fits, physics correct (a = F/m, Moon smaller mass). Answerable from the paragraph. The figcaption already states equal forces, so it is a fair transfer, not a giveaway.
+2. After the sphere paragraph: correct (Earth radius about 6378 km, equatorial). The paragraph's last sentence states the answer, so this is recall, not reasoning.
+3. After the graph: 417/4 = 104.25, matches the graph; answerable. The dashed 2r => F/4 annotation and the preceding text nearly give it away, so it is easy.
+Placement sensible (after each paragraph); nothing later pre-empted that I could find in the packet. Rendering comes from scripts/stopthink.py; I did not open it in a browser, and the packet has no capture of opened answers at 360 px.
+
+## Vanhan sisällön löydökset
+None noted.

@@ -1,11 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 5d5e20dae0dcc9cd
+CONTENT-HASH: b12f7590658847c0
 
 ## Blocking
 None.
 
 ## Polish
-- kertaus answer 'net force towards the centre' is the core of the hook's answer (what keeps the ISS in orbit). It is prior knowledge from fy5-4, but the feedback could avoid naming gravity as the centre-directed force, so that Prediction 3 (floating) still has something to argue about.
+- Block 1 (gravity stops) and block 3 (Halley) re-ask what the paragraph just before states outright (straight along the tangent; Halley's orbit is "not circular at all"). They test recall, not reasoning; block 3 is saved by the table (the 60-fold ratio is the student's own step).
+- Block 2 is a one-step check (2πr = vT); a student may wonder whether r is needed. The answer addresses this. Fine.
+- English version reads naturally; matches the Finnish blocks one to one.
 
 ## Checked
-batch delta review (queue 8j): kertaus same ISS phenomenon; predictions 1-3 not directly given; the other changes (numbers, reflow) read clearly.
+- Scope: only the three new pysahdy blocks (round 1, scope note 2026-11-20).
+- Physics: 3.0 km/s x 14 400 s = 4.32e7 m = 43 000 km (two figures right); 5250/88 = 59.7, about 60; the tangent answer matches the lesson.
+- Each is answerable from the paragraph just read; none gives away the opening question, predictions or later exercises (Ennuste 3 on weightlessness is untouched; block 1 does not preview the cannon experiments).
+- Placement: after the orbit paragraph, after the T paragraph, after the table and figure; between ideas, not in the middle of a derivation.
+- Rendering at 360 px (Playwright, opened answers): label, question and answer inside one 328 px card, formulas unclipped, page scrollWidth 360, no overflow.
+- Language: clear, correct terms, units as LaTeX.
+
+## Vanhan sisällön löydökset
+None found in the blocks' surroundings.

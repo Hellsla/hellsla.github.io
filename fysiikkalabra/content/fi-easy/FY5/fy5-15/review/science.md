@@ -1,10 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: d6242dd74f6dbd47
+CONTENT-HASH: 67499f0317b7ebb6
 
 ## Blocking
 
 ## Polish
-- The `\quad` inserted mid-chain in the two-speaker solution leaves a gap inside one product. Typography only.
+- content/fi-easy/FY5/fy5-15/lesson.md:220 — the answer omits the condition stated just above ("ääni ei heijastu eikä ilma vaimenna sitä"); fair at this level (C); optional "kun ääni ei heijastu".
 
 ## Checked
-Batch delta review: the kertaus choice now uses a concert speaker playing the same note quietly and then loudly: amplitude is the single correct option, and the frequency, speed and wavelength distractors' feedback is right; the solution's numbers (0,969 dB → 0,97 dB) are unchanged; the worked example's paragraph split changes no physics.
+- Scope: only the three new pysahdy blocks judged (teacher's scope note 2026-11-20).
+- Block 1 (line 220): cause right (same power over a larger sphere, so power per area falls); answerable from "Pistemäinen lähde ja etäisyys" just above; Ennusta comes before Teoria.
+- Block 2 (line 274): 10·lg 1000 = 30,0 dB recomputed; answerable from line 230 ("Aina kun intensiteetti kymmenkertaistuu, tasoon lisätään 10 dB"); no inquiry item, exit ticket or exercise asks 1000 → 30 dB, and it is not the inverse of the 20 dB → 100 check.
+- Block 3 (line 434): one of two identical machines off: intensity halves, 10·lg(1/2) = −3,01 dB, so about 3 dB, not half; answerable from "Usean lähteen yhteistaso" (80 + 80 dB → 83 dB, "toisistaan riippumatonta" stated there).
+- Physics and numbers the same as in the Finnish blocks; numbers LaTeX with unit.
+- Hash 67499f0317b7ebb6 at start and end.
+
+## Vanhan sisällön löydökset
+(none)

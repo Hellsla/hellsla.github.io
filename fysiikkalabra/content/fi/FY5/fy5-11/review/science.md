@@ -1,9 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: c78ff5d773c6861a
+CONTENT-HASH: 6de41721467aced8
 
 ## Blocking
 
 ## Polish
+- content/fi/FY5/fy5-11/lesson.md:1009 — "Kuinka suuren ympyrän säteen alkeisaalto on piirtänyt" reads awkwardly — e.g. "Kuinka suuri on alkeisaallon ympyrän säde" (the fi-easy wording).
 
 ## Checked
-- batch delta review: new retrieval task, λ = v/f = 5,0 m/s / 0,25 Hz = 20 m (recomputed; `kertaus-lambda`). Distractors v·f = 1,25 ("noin 1,3 m") and f/v = 0,050 match the mistakes their feedback names, and the feedback's units (m/s², 1/m) are correct; exactly one correct option. Two significant figures fit the data. The worked example's knowns/question split changes no number.
+- delta review of the three new Pysähdy ja mieti blocks only (scope note 2026-11-20); hash the same at start and end.
+- lesson.md:948 (wavefront and ray): rays point away from the source and are perpendicular to the circular front at every point; agrees with the paragraph just read and the glossary; answerable from it.
+- lesson.md:1009 (Huygens): wavelet radius r = vt = 0,60 m; recomputed in one script (0,30 m/s · 2,0 s = 0,60 m); two significant figures fit the data; uses exactly the paragraph's statement that wavelets travel at the wave's speed. The answer's envelope sentence agrees with the theory.
+- lesson.md:1050 (diffraction): λ/b = 20 m / 0,50 m = 40, so the post is much narrower than λ, the wave bends round it and no clear sheltered region forms; agrees with the paragraph's pier-post statement and the glossary (strong diffraction when width ≲ λ). Distinct from the exercise on the 3,0 cm slit; gives away no later task (inquiry, exit ticket, exercises searched).
+- Placement: each block follows the paragraph (and its figure) it asks about, before the next ### heading; no new physics or later-course content.
+- Rendering: built preview at 360 px with every answer opened: three blocks, no KaTeX error, no overflow (page width 360); capture of the Huygens block checked.
+
+## Vanhan sisällön löydökset
+- (none in the parts read)

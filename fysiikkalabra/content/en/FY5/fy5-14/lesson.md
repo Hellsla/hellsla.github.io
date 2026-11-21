@@ -460,6 +460,12 @@ where $f_n$ is the $n$th frequency of the series (Hz) and $f_1$ is the fundament
   <line x1="12" y1="196" x2="588" y2="196" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
 </svg>
 
+```pysahdy
+The spectrum of a sound has peaks at $250\,\text{Hz}$, $500\,\text{Hz}$ and $750\,\text{Hz}$. What are the fundamental frequency of the sound and its pitch?
+---
+The fundamental frequency is the lowest peak, $250\,\text{Hz}$. The other peaks are its multiples, the overtones, and the pitch is determined by the fundamental frequency.
+```
+
 ### The FFT spectrum
 A microphone measures the variation of air pressure as a function of time. From this series of measurements the measuring program calculates the spectrum of the sound, that is, the FFT graph (*Fast Fourier Transform*). The spectrum shows which frequencies are in the sound and how strong they are. Each sinusoidal component of the sound appears as a peak at its own frequency, in the same way as in the chapter *When waves combine: superposition and interference* a complicated wave was built as a sum of sine waves. In the spectrum of an instrument the peaks are at the frequencies of the harmonic series, so the spacing of neighbouring peaks is the fundamental frequency. The fundamental frequency is usually also the frequency of the lowest peak, but the highest peak is not always at the fundamental frequency.
 
@@ -492,6 +498,12 @@ where $f_\text{H}$ is the beat frequency (Hz) and $f_1$ and $f_2$ are the freque
   <path d="M124,282 V290 H342 V282" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <foreignObject x="216.5" y="301.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$T_\text{H}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Two guitar strings sound at the same time at $220\,\text{Hz}$ and $224\,\text{Hz}$. How many loud moments are heard per second?
+---
+The beat frequency is $|220\,\text{Hz} - 224\,\text{Hz}| = 4\,\text{Hz}$, so four loud moments are heard per second. The time between them is $0.25\,\text{s}$.
+```
 
 Beats are used for tuning instruments. When a string is tightened towards the frequency of the reference note, the beats slow down and stop when the frequencies are equal. Beats stand out clearly when the frequency difference is at most about $10\,\text{Hz}$. With a larger difference the ear hears a rough sound or two separate sounds.
 
@@ -553,6 +565,12 @@ When a sound source moves, each wavefront starts from the point where the source
   <foreignObject x="16" y="3.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{source moves}$</span></div></foreignObject>
   <foreignObject x="16" y="225.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{listener moves}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Why is the wavelength shorter in front of a moving sound source than behind it?
+---
+The source keeps moving forward after the previous wavefront. In front, the wavefronts are therefore closer together, and behind the source they are farther apart.
+```
 
 ### The Doppler effect when the listener moves
 When the source is at rest and the listener moves, the wavelength does not change. The listener, however, meets wavefronts more often when moving towards them, because the wavefronts approach at speed $v + v_\text{H}$. When moving away, the wavefronts catch up with the listener at speed $v - v_\text{H}$. The frequency heard is the rate at which the wavefronts are met, so it is higher than $f_0$ when approaching and lower when moving away.

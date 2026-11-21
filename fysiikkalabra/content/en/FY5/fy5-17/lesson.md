@@ -131,6 +131,12 @@ Ultrasound is sound with a frequency above $20\,\text{kHz}$, that is, too high f
 
 When the probe is tilted or it has a row of small transmitters, pulses are sent in many directions. From the depths and strengths of the echoes a two-dimensional greyscale image, the B-scan, is formed. The simplest display is the A-scan, the echo curve: its horizontal axis shows the time from sending the pulse and its vertical axis the strength of the echo. A peak in the echo curve means a boundary, and the position of the peak tells how deep the boundary is.
 
+```pysahdy
+The peak in the echo curve is at $26\,\mu\text{s}$. How deep is the boundary when $v = 1540\,\text{m/s}$?
+---
+The pulse travels there and back a distance of $1540\,\text{m/s} \cdot 26\,\mu\text{s} \approx 4.0\,\text{cm}$. The boundary is half of that, about $2.0\,\text{cm}$ deep.
+```
+
 ### Why gel is needed
 How large a part of the wave is reflected depends on how different the substances at the boundary are as far as the propagation of sound is concerned. Soft tissues resemble each other, so only about one per cent is reflected from their boundaries. Therefore most of the pulse continues deeper and produces echoes also from deeper boundaries. From the boundary of bone and soft tissue about $40\,\%$ is reflected, and bone also strongly attenuates sound, so behind a bone there is a shadow that gives no echoes. From the boundary of air and skin about $99.9\,\%$ is reflected. If even a thin layer of air is left between the probe and the skin, almost the whole pulse is reflected back already at the skin. Gel displaces the air: from the boundary of gel and skin only about $0.2\,\%$ is reflected. The percentages are typical model values for perpendicular incidence: the real fraction depends on the tissues and on the angle at which the wave meets the boundary.
 
@@ -194,6 +200,12 @@ The wavelength is obtained from the equation $v = f\lambda$ (chapter *How waves 
 
 In the table $f$ is the frequency, $\lambda$ the wavelength in tissue and the depth the typical imaging depth. The imaging depths are only indicative: they depend on the machine and the tissue. Ultrasound can also be used to measure the flow speed of blood. The frequency of the echo reflected from moving blood cells is slightly different from that of the transmitted pulse, and from the change in frequency the machine calculates the speed. This is the Doppler effect (chapter *Sound as a wave: pitch, timbre and the Doppler effect*).
 
+```pysahdy
+The frequency is doubled. What happens to the wavelength in soft tissue, and why?
+---
+The wavelength is halved. The speed of sound in the tissue stays the same, so by $v = f\lambda$ a higher frequency means a shorter wavelength.
+```
+
 ### Echolocation in nature and technology (extra)
 Bats and dolphins locate their prey on the same principle. A bat sends out short ultrasonic calls whose frequency, depending on the species, is about $20$–$100\,\text{kHz}$, and works out the distance from the delay of the echoes. At the frequency $50\,\text{kHz}$ the wavelength in air is about $7\,\text{mm}$. From an object much smaller than the wavelength only a very weak echo returns, because the wave bends around it (chapter *A wave meets an obstacle or a gap*). That is why bats that hunt insects use high frequencies. The sonar of a ship measures the depth of the water in the same way and detects shoals of fish; sound travels in water at about $1400\text{–}1500\,\text{m/s}$, depending on the temperature.
 
@@ -234,6 +246,12 @@ A transverse wave needs a medium that resists a change of shape: when a layer of
   <line x1="396" y1="350" x2="440" y2="350" stroke="#6b7480" stroke-width="5" stroke-linecap="round"/>
   <foreignObject x="450" y="335.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{S shadow zone}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Surface waves cause most of the damage in an earthquake. Do they arrive at the station first?
+---
+No. They are slower than P and S waves, so they arrive last, even though their amplitude is the greatest.
+```
 
 ### Tsunami (extra)
 An earthquake on the sea floor can suddenly raise or lower a large mass of water, and a tsunami sets out from it. Its wavelength is tens or hundreds of kilometres, much greater than the depth of the ocean. Then the water moves from the bottom all the way to the surface, and the speed of the wave depends only on the depth of the water: in the deep ocean a tsunami travels at the speed of an aeroplane. When the wave comes into shallow water near the shore, it slows down, its wavelength shortens and its energy is concentrated in a smaller amount of water. That is why the height of the wave grows many times over near the coast.
