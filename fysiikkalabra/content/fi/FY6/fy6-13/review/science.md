@@ -1,10 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: 51dbbd3c23140095
+VERDICT: PASS
+CONTENT-HASH: c7b3acf66fafb8be
 
 ## Blocking
-- B, dielectric box (line 250-252): "jännite U pienenee" holds only when the plates' charge stays the same (source disconnected). The lesson's own table (line 356) says that with the source connected U stays the same and Q grows. Add the condition, e.g. "Kun levyjen varaus pysyy samana (lähde irrotettu), ne vähentävät kenttää, joten ...", in the question or the answer, as line 152 and the figure ("sama Q") already do.
 
 ## Polish
+- The polarisation box could say that the surface charges point opposite to the plates' field. The current wording ("vähentävät kenttää") is correct and suits the level (C).
+- The breakdown box assumes that $E_\text{max}$ does not depend on thickness. That is the lesson's own model of $U_\text{max} = E_\text{max} d$ and a fair simplification (C).
 
 ## Checked
-batch delta review: breakdown box: U_max = E_max d doubles with d, correct; energy box: W = 1/2 * 10e-6 F * (20 V)^2 = 2,0e-3 J, recomputed; polarisation mechanism (opposite surface charge next to each plate) correct.
+batch delta review: three new "Pysähdy ja mieti" boxes. Box 1: the induced surface charge has the opposite sign to the plate next to it, the field becomes weaker, and with the round-2 condition "levyjen varaus pysyy samana (lähde irrotettu)" U falls and $C = Q/U$ rises. This matches the figure ("sama Q", "pienempi U") and the later section on a connected versus disconnected source. Box 2: doubling d doubles $U_\text{max}$ (here $160 \to 320\,\text{V}$). Box 3: $\tfrac12 \cdot 10\cdot10^{-6} \cdot 20^2 = 2{,}0\,\text{mJ}$, recomputed. Units and significant figures are right, and nothing goes beyond FY6's scope.

@@ -1,10 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: 373c2ed4e9c33bb4
+VERDICT: PASS
+CONTENT-HASH: a5d5502a67a7b3d0
 
 ## Blocking
-- B, Coulomb box (line ~503-505): the task says the two outer charges are "samanmerkkistä" (same sign as each other), but the new sentence "Kumpikin varaus hylkii keskimmäistä" holds only when the middle charge has the same sign too; if it has the opposite sign, both attract it, and the net force is still zero. Fix: state in the task that the middle charge has the same sign, or write "Kumpikin varaus hylkii (tai erimerkkisenä vetää) keskimmäistä vastakkaiselta puolelta."
 
 ## Polish
+- The Coulomb box writes division as ":" and puts the unit in brackets as "(yksikkö N)" instead of substituting with units. The number is right: $9{,}0\cdot10^{9}\cdot1{,}0\cdot10^{-12}/0{,}30^2 = 0{,}100\,\text{N}$, and $0{,}0999\,\text{N}$ with $k = 8{,}988\cdot10^{9}$. Rounding k to two figures is consistent with data that has two. A fraction with units would match the lesson's solution form.
+- OLD: none raised.
 
 ## Checked
-batch delta review: recomputed F = 9,0e9 * 1,0e-12 / 0,30^2 N = 0,10 N (also 0,0999 N with 8,988e9), correct; superposition box reasoning except the condition above.
+batch delta review: three "Pysähdy ja mieti" boxes (the charge 0,5e box, the Coulomb force box recomputed at 0,10 N, and the three-charge box). The round-2 fix holds: "molemmat joko hylkivät tai vetävät" covers both signs of the middle charge, and the net force is zero by symmetry. No guardrail breaks, no choice items.
