@@ -120,12 +120,6 @@ Valo on sähkömagneettista aaltoliikettä. Aallon intensiteetti kertoo, kuinka 
 - **Intensiteetti.** Aaltomallin mukaan kirkkaampi valo antaisi elektroneille enemmän liike-energiaa. Kokeissa kirkkaampi valo irrottaa enemmän elektroneja, mutta niiden suurin liike-energia pysyy samana.
 - **Taajuus.** Kokeissa elektronien suurin liike-energia kasvaa, kun valon taajuus kasvaa. Aaltomallissa taajuudella ei ole tällaista merkitystä.
 
-```pysahdy
-Himmeä sininen valo osuu sinkkilevyyn, ja levystä irtoaa elektroneja. Milloin elektronit aaltomallin mukaan alkaisivat irrota? Entä mitä kokeessa nähdään?
----
-Aaltomallin mukaan elektronin pitäisi kerätä energiaa vähän aikaa, joten irtoamisessa olisi viive. Kokeessa elektroneja irtoaa heti, vaikka valo olisi himmeää.
-```
-
 ### Fotoni: valon energiakvantti
 Albert Einstein selitti havainnot vuonna 1905. Valon energia ei jakaudu tasaisesti aaltoon. Se on pakkautunut erillisiksi annoksiksi eli **kvanteiksi**. Valon kvanttia sanotaan **fotoniksi**. Yhden fotonin energia on $E = hf$. Tässä $f$ on valon taajuus ja $h$ on **Planckin vakio**. Fotoni luovuttaa koko energiansa yhdelle elektronille kerralla. Tavallisessa valossa elektroni ei ehdi kerätä energiaa usealta fotonilta. Jos $hf < W$, elektroni ei irtoa, vaikka fotoneja tulisi kuinka paljon tahansa. Jos $hf > W$, elektroni irtoaa. Ylimääräinen energia jää elektronille liike-energiaksi.
 
@@ -163,15 +157,21 @@ Albert Einstein selitti havainnot vuonna 1905. Valon energia ei jakaudu tasaises
   <foreignObject x="478" y="41" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$E_\text{k,max}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Himmeä $254\,\text{nm}$:n UV-C-valo osuu sinkkilevyyn, ja levystä irtoaa elektroneja. Milloin elektronit aaltomallin mukaan alkaisivat irrota? Entä mitä kokeessa nähdään?
+---
+Aaltomallin mukaan elektronin pitäisi kerätä energiaa vähän aikaa, joten irtoamisessa olisi viive. Kokeessa elektroneja irtoaa heti, vaikka valo olisi himmeää.
+```
+
 Tällä mallilla jokainen havainto selittyy. Samanvärisellä valolla intensiteetti kertoo, kuinka monta fotonia osuu pintaan sekunnissa. Kirkkaampi valo irrottaa siksi enemmän elektroneja. Yksittäinen elektroni saa silti vain yhden fotonin energian. Taajuus määrää yhden fotonin energian ja siksi elektronin suurimman liike-energian. Viivettä ei ole, koska jo ensimmäinen riittävän energinen fotoni voi irrottaa elektronin. Tässä mallissa energia on **kvantittunut**. Se tarkoittaa, että säteily ja aine vaihtavat energiaa vain kokonaisina fotonin energioina.
 
-<figure class="unit-photo"><img src="pics/fy8/photomultiplier-tube.webp" alt="Suuri pyöreä lasikupu museon vitriinissä. Kuvun sisäpinta on kuin peili."><figcaption>Valomonistinputki museossa Tokiossa. Fotoni osuu kuvun sisäpintaan ja irrottaa elektronin. Tämä on valosähköinen ilmiö. Putki vahvistaa elektronin mitattavaksi sähköpulssiksi.</figcaption></figure>
-
 ```pysahdy
-Punaisen valon yhden fotonin energia on pienempi kuin metallin irrotustyö $W$. Mitä tapahtuu, jos punaisen valon kirkkaus (intensiteetti) kasvatetaan kymmenkertaiseksi?
+Punaisen valon yhden fotonin energia on pienempi kuin metallin irrotustyö $W$, eikä elektroneja irtoa. Mitä nähdään, jos valon taajuutta kasvatetaan niin, että fotonin energia on vain vähän suurempi kuin $W$? Valo pysyy himmeänä.
 ---
-Elektroneja ei vieläkään irtoa. Elektroni saa energiaa vain yhdeltä fotonilta kerrallaan. Jokaisen fotonin energia on pienempi kuin $W$, vaikka fotoneja tulisi enemmän.
+Elektroneja alkaa irrota heti, koska yksi fotoni riittää. Liike-energia $hf - W$ on melkein nolla. Elektroneja irtoaa vähän, koska himmeä valo tuo vähän fotoneja sekunnissa.
 ```
+
+<figure class="unit-photo"><img src="pics/fy8/photomultiplier-tube.webp" alt="Suuri pyöreä lasikupu museon vitriinissä. Kuvun sisäpinta on kuin peili."><figcaption>Valomonistinputki museossa Tokiossa. Fotoni osuu kuvun sisäpintaan ja irrottaa elektronin. Tämä on valosähköinen ilmiö. Putki vahvistaa elektronin mitattavaksi sähköpulssiksi.</figcaption></figure>
 
 ### Elektronivoltti
 Fotonin ja elektronin energiat ovat jouleina hyvin pieniä lukuja. Siksi niille käytetään usein yksikköä **elektronivoltti** ($\text{eV}$). Yksi elektronivoltti on se energia, jonka elektroni saa, kun se kiihtyy sähkökentässä $1\,\text{V}$:n jännitteen läpi. Elektronin varauksen suuruus on $e = 1{,}602 \cdot 10^{-19}\,\text{C}$. Siksi $$

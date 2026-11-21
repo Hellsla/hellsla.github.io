@@ -110,7 +110,7 @@ Alin taso $n = 1$ on **perustila**, jonka energia on $-13{,}6\,\text{eV}$. Ylemm
 ```pysahdy
 Vetyatomin tasojen $n = 1$ ja $n = 2$ väli on suurempi kuin tasojen $n = 4$ ja $n = 5$ väli. Miksi näin on?
 ---
-Tasot tihenevät ylöspäin ja lähestyvät nollaa. Siksi alimpien tasojen välit ovat suuret ja ylempien tasojen välit pienet.
+Tasojen energiat ovat $E_n = -13{,}6\,\text{eV} : n^2$, joten ne tihenevät ylöspäin ja lähestyvät nollaa. Siksi väli $n = 1 \to 2$ on $10{,}2\,\text{eV}$ mutta väli $n = 4 \to 5$ vain $0{,}31\,\text{eV}$.
 ```
 
 ### Siirtymässä syntyy tai katoaa fotoni
@@ -163,9 +163,9 @@ Absorptio on käänteinen tapahtuma. Atomi absorboi fotonin vain, jos fotonin en
 </svg>
 
 ```pysahdy
-Perustilassa oleva vetyatomi absorboi fotonin, jonka energia on $14{,}0\,\text{eV}$. Mitä atomille tapahtuu?
+Perustilassa oleva vetyatomi absorboi fotonin, jonka energia on $15{,}0\,\text{eV}$. Mitä atomille tapahtuu?
 ---
-Atomi ionisoituu, koska $14{,}0\,\text{eV}$ on enemmän kuin ionisaatioenergia $13{,}6\,\text{eV}$. Vapaalle elektronille jää liike-energiaa $14{,}0\,\text{eV} - 13{,}6\,\text{eV} = 0{,}4\,\text{eV}$.
+Atomi ionisoituu, koska $15{,}0\,\text{eV}$ on enemmän kuin ionisaatioenergia $13{,}6\,\text{eV}$. Vapaalle elektronille jää liike-energiaa $15{,}0\,\text{eV} - 13{,}6\,\text{eV} = 1{,}4\,\text{eV}$.
 ```
 
 ### Bohrin malli historiallisena välivaiheena
@@ -262,9 +262,9 @@ Kunkin sarjan pisin aallonpituus tulee siirtymästä lähimmältä ylemmältä t
 </svg>
 
 ```pysahdy
-Kuinka suuri on vetyatomin tason $n = 4$ energia?
+Kuinka suuri on vetyatomin tason $n = 5$ energia?
 ---
-$E_4 = -\tfrac{13{,}6\,\text{eV}}{4^2} = -\tfrac{13{,}6\,\text{eV}}{16} = -0{,}85\,\text{eV}$
+$E_5 = -\tfrac{13{,}6\,\text{eV}}{5^2} = -\tfrac{13{,}6\,\text{eV}}{25} \approx -0{,}54\,\text{eV}$
 ```
 
 ## Esimerkki

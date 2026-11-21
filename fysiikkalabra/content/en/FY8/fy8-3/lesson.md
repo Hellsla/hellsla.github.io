@@ -110,7 +110,7 @@ The lowest level $n = 1$ is the **ground state**, with an energy of $-13.6\,\tex
 ```pysahdy
 The gap between levels $n = 1$ and $n = 2$ of a hydrogen atom is larger than the gap between levels $n = 4$ and $n = 5$. Why is this?
 ---
-The levels get closer together going upwards and approach zero. So the gaps between the lowest levels are large and the gaps between higher levels are small.
+The level energies are $E_n = -13.6\,\text{eV} : n^2$, so the levels get closer together going upwards and approach zero. So the gap $n = 1 \to 2$ is $10.2\,\text{eV}$ but the gap $n = 4 \to 5$ only $0.31\,\text{eV}$.
 ```
 
 ### A photon is created or disappears in a transition
@@ -163,9 +163,9 @@ Absorption is the reverse process. An atom absorbs a photon only if the energy o
 </svg>
 
 ```pysahdy
-A hydrogen atom in its ground state absorbs a photon with an energy of $14.0\,\text{eV}$. What happens to the atom?
+A hydrogen atom in its ground state absorbs a photon with an energy of $15.0\,\text{eV}$. What happens to the atom?
 ---
-The atom is ionised, because $14.0\,\text{eV}$ is more than the ionisation energy $13.6\,\text{eV}$. The free electron is left with kinetic energy $14.0\,\text{eV} - 13.6\,\text{eV} = 0.4\,\text{eV}$.
+The atom is ionised, because $15.0\,\text{eV}$ is more than the ionisation energy $13.6\,\text{eV}$. The free electron is left with kinetic energy $15.0\,\text{eV} - 13.6\,\text{eV} = 1.4\,\text{eV}$.
 ```
 
 ### The Bohr model as a historical stage
@@ -262,9 +262,9 @@ The longest wavelength of each series comes from the transition from the nearest
 </svg>
 
 ```pysahdy
-What is the energy of level $n = 4$ of a hydrogen atom?
+What is the energy of level $n = 5$ of a hydrogen atom?
 ---
-$E_4 = -\tfrac{13.6\,\text{eV}}{4^2} = -\tfrac{13.6\,\text{eV}}{16} = -0.85\,\text{eV}$
+$E_5 = -\tfrac{13.6\,\text{eV}}{5^2} = -\tfrac{13.6\,\text{eV}}{25} \approx -0.54\,\text{eV}$
 ```
 
 ## Worked example

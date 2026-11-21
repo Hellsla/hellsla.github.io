@@ -130,9 +130,9 @@ The energy difference between the states is a necessary condition, but not all t
 You can measure a spectrum yourself. In a spectroscope, light passes through a narrow slit and a grating, and the wavelengths of the lines are read from a scale. A grating fixed in front of a phone camera or a ready-made spectrometer works in the same way: in the light of a gas discharge tube, a fluorescent tube or an LED lamp you can see at once whether the spectrum is continuous or made of lines. A gas discharge tube works at a high voltage and gets hot, so it is used as the teacher instructs and is not touched while it is on.
 
 ```pysahdy
-An atom has only two energy states, and the difference between them is $1.9\,\text{eV}$. A photon with an energy of $2.4\,\text{eV}$ hits the atom. Does the atom absorb the photon?
+An atom has only two energy states, $-5.0\,\text{eV}$ and $-3.1\,\text{eV}$, so the difference between them is $1.9\,\text{eV}$. The atom is in the lower state and a photon with an energy of $2.4\,\text{eV}$ hits it. Does the atom absorb the photon?
 ---
-No. An atom absorbs a photon only if the photon's energy is exactly the difference between the states. A photon with an energy of $2.4\,\text{eV}$ passes the atom by.
+No. The photon does not ionise the atom, because $-5.0\,\text{eV} + 2.4\,\text{eV} = -2.6\,\text{eV} < 0$: the electron would stay in the atom. The energy $-2.6\,\text{eV}$ is not the energy of either state, and the photon energy is not the difference $1.9\,\text{eV}$. The photon passes the atom by.
 ```
 
 ### Fluorescence

@@ -120,12 +120,6 @@ Light is electromagnetic wave motion, and the intensity of a wave tells how much
 - **Intensity.** According to the wave model, brighter light would give the electrons more kinetic energy. In experiments brighter light releases more electrons, but their maximum kinetic energy stays the same.
 - **Frequency.** In experiments the maximum kinetic energy of the electrons grows as the frequency of the light grows. In the wave model the frequency has no such role.
 
-```pysahdy
-Dim blue light hits a zinc plate and electrons are released from it. What would the wave model predict about when the release begins, and what is observed in the experiment?
----
-According to the wave model the electron would have to collect energy for some time, so there would be a delay. In the experiment electrons are released immediately, even with dim light.
-```
-
 ### The photon: a quantum of light energy
 Albert Einstein explained the observations in 1905. The energy of light is not spread evenly over a wave, but is packed into separate portions, or **quanta**. A quantum of light is called a **photon**. The energy of one photon is $E = hf$, where $f$ is the frequency of the light and $h$ is the **Planck constant**. A photon gives all of its energy to one electron at once, and in ordinary light an electron does not have time to collect energy from several photons. If $hf < W$, the electron is not released, however many photons arrive. If $hf > W$, the electron is released and the excess energy remains with it as kinetic energy.
 
@@ -163,15 +157,21 @@ Albert Einstein explained the observations in 1905. The energy of light is not s
   <foreignObject x="478" y="41" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$E_\text{k,max}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Dim $254\,\text{nm}$ UV-C light hits a zinc plate and electrons are released from it. What would the wave model predict about when the release begins, and what is observed in the experiment?
+---
+According to the wave model the electron would have to collect energy for some time, so there would be a delay. In the experiment electrons are released immediately, even with dim light.
+```
+
 With this model every observation is explained. For light of one colour, the intensity tells how many photons hit the surface each second: brighter light therefore releases more electrons, but a single electron still receives only the energy of one photon. The frequency determines the energy of one photon and therefore the maximum kinetic energy of the electron. There is no delay, because already the first photon with enough energy can release an electron. In this model energy is **quantised**: radiation and matter exchange energy only in whole photon energies.
 
-<figure class="unit-photo"><img src="pics/fy8/photomultiplier-tube.webp" alt="A large round glass bulb with a mirror-like inner surface in a museum display case."><figcaption>A photomultiplier tube from the Super-Kamiokande neutrino detector in a museum in Tokyo. A photon hitting the inner surface of the bulb releases an electron in the photoelectric effect, and the tube amplifies it into a measurable electric pulse.</figcaption></figure>
-
 ```pysahdy
-The energy of a photon of red light is smaller than the work function $W$ of a metal. What happens if the intensity of the red light is increased tenfold?
+The energy of a photon of red light is smaller than the work function $W$ of a metal, and no electrons are released. What is observed if the frequency is raised so that the photon energy is only slightly greater than $W$, while the intensity stays low?
 ---
-Still no electrons are released. An electron receives energy from only one photon at a time, and each photon has less energy than $W$, however many photons arrive.
+Electrons are released immediately, because one photon is enough. The kinetic energy $hf - W$ is almost zero, and few electrons are released because few photons arrive per second.
 ```
+
+<figure class="unit-photo"><img src="pics/fy8/photomultiplier-tube.webp" alt="A large round glass bulb with a mirror-like inner surface in a museum display case."><figcaption>A photomultiplier tube from the Super-Kamiokande neutrino detector in a museum in Tokyo. A photon hitting the inner surface of the bulb releases an electron in the photoelectric effect, and the tube amplifies it into a measurable electric pulse.</figcaption></figure>
 
 ### The electronvolt
 The energies of photons and electrons are very small numbers in joules, so they are often given in the unit **electronvolt** ($\text{eV}$). One electronvolt is the energy an electron gains when it is accelerated in an electric field through a voltage of $1\,\text{V}$. Since the magnitude of the charge of the electron is $e = 1.602 \cdot 10^{-19}\,\text{C}$, we have $$

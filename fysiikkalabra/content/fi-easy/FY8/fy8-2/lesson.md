@@ -132,9 +132,9 @@ Fotonin energian täytyy vastata kahden tilan erotusta. Se ei kuitenkaan yksin r
 Spektrin voi mitata itse. Spektroskoopissa valo kulkee kapean raon ja hilan läpi. Viivojen aallonpituudet luetaan asteikolta. Samalla tavalla toimii puhelimen kameran eteen kiinnitetty hila tai valmis spektrometri. Kaasupurkausputken, loisteputken tai LED-lampun valosta näkee heti, onko spektri jatkuva vai viivoista koostuva. Kaasupurkausputki toimii korkealla jännitteellä ja kuumenee. Siksi sitä käytetään opettajan ohjeiden mukaan. Putkeen ei kosketa, kun se on päällä.
 
 ```pysahdy
-Atomilla on vain kaksi energiatilaa, ja niiden erotus on $1{,}9\,\text{eV}$. Atomiin osuu fotoni, jonka energia on $2{,}4\,\text{eV}$. Absorboiko atomi fotonin?
+Atomilla on vain kaksi energiatilaa, $-5{,}0\,\text{eV}$ ja $-3{,}1\,\text{eV}$, joten niiden erotus on $1{,}9\,\text{eV}$. Atomi on alemmalla tilalla, ja siihen osuu fotoni, jonka energia on $2{,}4\,\text{eV}$. Absorboiko atomi fotonin?
 ---
-Ei. Atomi absorboi fotonin vain, jos fotonin energia on täsmälleen sama kuin tilojen erotus. Fotoni, jonka energia on $2{,}4\,\text{eV}$, menee atomin ohi.
+Ei. Fotoni ei irrota elektronia atomista, koska $-5{,}0\,\text{eV} + 2{,}4\,\text{eV} = -2{,}6\,\text{eV} < 0$, joten se on alle nollan. Elektroni jäisi atomiin. Energia $-2{,}6\,\text{eV}$ ei ole kummankaan tilan energia. Fotonin energia ei myöskään ole tilojen erotus $1{,}9\,\text{eV}$. Fotoni menee atomin ohi.
 ```
 
 ### Fluoresenssi
@@ -242,7 +242,7 @@ Vedyn voimakkaimmat näkyvät viivat syntyvät, kun vetyatomi siirtyy tasolta $3
 ```pysahdy
 Atomin siirtymässä A energiaero on $2{,}0\,\text{eV}$ ja siirtymässä B $4{,}0\,\text{eV}$. Kumman siirtymän fotonin aallonpituus on lyhyempi? Kuinka paljon lyhyempi?
 ---
-Siirtymän B. Kaavassa $\lambda = \tfrac{hc}{E_\text{y} - E_\text{a}}$ energiaero on jakajana. Kun energiaero on kaksinkertainen, aallonpituus on puolet pienempi.
+Siirtymän B. Kaavassa $\lambda = \tfrac{hc}{E_\text{y} - E_\text{a}}$ energiaero on jakajana. Kun energiaero on kaksinkertainen, aallonpituus on puolet niin pitkä.
 ```
 
 ## Esimerkki

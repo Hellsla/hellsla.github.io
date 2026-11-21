@@ -130,9 +130,9 @@ Energiatilojen erotus on välttämätön ehto, mutta kaikki siirtymät eivät ol
 Spektrin voi mitata itse. Spektroskoopissa valo kulkee kapean raon ja hilan läpi, ja viivojen aallonpituudet luetaan asteikolta. Puhelimen kameran eteen kiinnitetty hila tai valmis spektrometri toimii samoin: kaasupurkausputken, loisteputken tai LED-lampun valosta näkee heti, onko spektri jatkuva vai viivoista koostuva. Kaasupurkausputki toimii korkealla jännitteellä ja kuumenee, joten sitä käytetään opettajan ohjeiden mukaan eikä siihen kosketa sen ollessa päällä.
 
 ```pysahdy
-Atomilla on vain kaksi energiatilaa, ja niiden erotus on $1{,}9\,\text{eV}$. Atomiin osuu fotoni, jonka energia on $2{,}4\,\text{eV}$. Absorboiko atomi fotonin?
+Atomilla on vain kaksi energiatilaa, $-5{,}0\,\text{eV}$ ja $-3{,}1\,\text{eV}$, joten niiden erotus on $1{,}9\,\text{eV}$. Atomi on alemmalla tilalla, ja siihen osuu fotoni, jonka energia on $2{,}4\,\text{eV}$. Absorboiko atomi fotonin?
 ---
-Ei. Atomi absorboi fotonin vain, jos fotonin energia on täsmälleen tilojen erotus. Fotoni, jonka energia on $2{,}4\,\text{eV}$, kulkee atomin ohi.
+Ei. Fotoni ei ionisoi atomia, koska $-5{,}0\,\text{eV} + 2{,}4\,\text{eV} = -2{,}6\,\text{eV} < 0$: elektroni jäisi atomiin. Energia $-2{,}6\,\text{eV}$ ei ole kummankaan tilan energia, eikä fotonin energia ole tilojen erotus $1{,}9\,\text{eV}$. Fotoni kulkee atomin ohi.
 ```
 
 ### Fluoresenssi
@@ -240,7 +240,7 @@ Vedyn voimakkaimmat näkyvät viivat syntyvät, kun vetyatomi siirtyy tasolta $3
 ```pysahdy
 Atomin siirtymässä A energiaero on $2{,}0\,\text{eV}$ ja siirtymässä B $4{,}0\,\text{eV}$. Kumman siirtymän fotonin aallonpituus on lyhyempi, ja kuinka paljon?
 ---
-Siirtymän B. Koska $\lambda = \tfrac{hc}{E_\text{y} - E_\text{a}}$, aallonpituus on kääntäen verrannollinen energiaeroon, ja kaksinkertainen energiaero antaa puolta lyhyemmän aallonpituuden.
+Siirtymän B. Koska $\lambda = \tfrac{hc}{E_\text{y} - E_\text{a}}$, aallonpituus on kääntäen verrannollinen energiaeroon, ja kaksinkertainen energiaero antaa aallonpituuden, joka on puolet niin pitkä.
 ```
 
 ## Esimerkki
