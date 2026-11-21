@@ -1360,6 +1360,12 @@ elektronia, missä $N_\text{max}$ on elektronien enimmäismäärä ja $n$ kuoren
 | $3$ | s, p, d | $9$ | $18$ |
 | $4$ | s, p, d, f | $16$ | $32$ |
 
+```pysahdy
+Montako elektronia mahtuu enintään $3\text{p}$-alikuorelle?
+---
+P-alikuorella on kolme orbitaalia. Jokaisella orbitaalilla voi olla enintään kaksi elektronia. Alikuorelle mahtuu siis enintään $3 \cdot 2 = 6$ elektronia.
+```
+
 Kun elektroni siirtyy ylemmästä tilasta alempaan, atomi lähettää fotonin. Fotonin energia on tilojen energioiden erotus (luku *Spektrit paljastavat atomin energiatasot*). Vetyatomissa saman kuoren tiloilla on sama energia. Siksi esimerkiksi siirtymät $3\text{d} \to 2\text{p}$ ja $3\text{s} \to 2\text{p}$ tuottavat saman spektriviivan.
 
 <svg data-fig="levels" viewBox="0 0 600 396" role="img" aria-label="Vetyatomin energiatasot mittakaavassa ja niiden orbitaalit laatikoina. Kuorella n = 1 on yksi orbitaali, 1s, ja sen energia on −13,6 eV. Kuorella n = 2 energia on −3,40 eV. Siellä on orbitaali 2s ja kolme orbitaalia 2p, yhteensä neljä orbitaalia. Kuorella n = 3 energia on −1,51 eV. Siellä ovat orbitaali 3s, kolme orbitaalia 3p ja viisi orbitaalia 3d, yhteensä yhdeksän orbitaalia. Ylimpänä on katkoviiva E = 0. Sen yläpuolella elektroni on irti atomista. Nuoli näyttää elektronin siirtymän orbitaalilta 3d orbitaalille 2p. Samalla syntyy fotoni, jonka aallonpituus on 656 nm. Se on punaista valoa. Jokaisella orbitaalilla voi olla enintään kaksi elektronia." style="max-width:100%;font-size:24px">
@@ -1404,12 +1410,6 @@ Kun elektroni siirtyy ylemmästä tilasta alempaan, atomi lähettää fotonin. F
   <line x1="210" y1="360" x2="228" y2="360" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="234" y="345.5" width="300" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{orbitaalilla enintään } 2\ e^-$</div></foreignObject>
 </svg>
-
-```pysahdy
-Montako elektronia mahtuu enintään $3\text{p}$-alikuorelle?
----
-P-alikuorella on kolme orbitaalia. Jokaisella orbitaalilla voi olla enintään kaksi elektronia. Alikuorelle mahtuu siis enintään $3 \cdot 2 = 6$ elektronia.
-```
 
 ### Yhteys kemian orbitaaleihin
 Monen elektronin atomissa elektronit hylkivät toisiaan. Siksi saman kuoren alikuorilla on eri energiat: $2\text{s}$ on alempana kuin $2\text{p}$ ja $3\text{s}$ alempana kuin $3\text{p}$. Perustilassa elektronit täyttävät orbitaalit alimmasta energiasta alkaen. Kullekin orbitaalille tulee enintään kaksi elektronia. Perustila on atomin pienimmän energian tila.

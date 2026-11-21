@@ -268,7 +268,7 @@ where $e = 1.602 \cdot 10^{-19}\,\text{C}$ is the elementary charge, $U_\text{k}
 ```pysahdy
 The peak wavelength of an LED's spectrum is $500\,\text{nm}$. Estimate its threshold voltage.
 ---
-$U_\text{k} \approx \tfrac{hc}{e\lambda} = \tfrac{1240\,\text{V}\,\text{nm}}{500\,\text{nm}} = 2.5\,\text{V}$.
+$U_\text{k} \approx \tfrac{hc}{e\lambda} = \tfrac{1240\,\text{V}\,\text{nm}}{500\,\text{nm}} = 2.5\,\text{V}$, so about $2.5\,\text{V}$.
 ```
 
 ### Determining the threshold voltage
@@ -347,6 +347,12 @@ h \approx ek
 ```
 where $k$ is the slope of the fitted line ($\tfrac{\text{V}}{\text{Hz}} = \text{V}\,\text{s}$) and $e$ the elementary charge; $\text{C} \cdot \text{V}\,\text{s} = \text{J}\,\text{s}$. The slope is read from the fitted line, not from two measured points. In Graphical Analysis Pro the line is fitted with the choices **Curve Fit** and **Linear**, and the $m$ of the result box is the slope.
 
+```pysahdy
+The slope of the line fitted to the graph $(f, U_\text{k})$ is $4.2 \cdot 10^{-15}\,\text{V}\,\text{s}$. What value is obtained for the Planck constant?
+---
+$h \approx ek = 1.602 \cdot 10^{-19}\,\text{C} \cdot 4.2 \cdot 10^{-15}\,\text{V}\,\text{s} \approx 6.7 \cdot 10^{-34}\,\text{J}\,\text{s}$.
+```
+
 <svg data-fig="sovitus" viewBox="0 0 600 380" role="img" aria-label="Graph to scale: the threshold voltage U k in volts of six LEDs as a function of the frequency f of their light, frequency axis from zero to 8 times 10 to the power 14 hertz. The points have the colours of the LEDs: red 4.76 and 1.88; orange 4.96 and 1.95; yellow 5.08 and 2.00; green 5.71 and 2.30; blue 6.38 and 2.52; violet 7.40 and 2.95, with the frequencies in units of 10 to the power 14 hertz and the voltages in volts. A line has been fitted to the points; it continues as a dashed line close to the origin and cuts the vertical axis slightly below zero. A triangle showing the slope has been drawn on the line, and the label says that the slope k is h divided by e." style="max-width:100%;font-size:24px">
   <line x1="131" y1="322" x2="131" y2="64" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="172.5" y1="322" x2="172.5" y2="64" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -418,12 +424,6 @@ where $k$ is the slope of the fitted line ($\tfrac{\text{V}}{\text{Hz}} = \text{
 In real series of measurements the measured points are usually not exactly on the same line because of measurement uncertainty. In addition, the line usually does not pass exactly through the origin: in the data of the figure it cuts the vertical axis about $0.05\,\text{V}$ below zero. In a real measurement the threshold voltage is an approximate value determined by the method, not exactly $\tfrac{hf}{e}$. It depends on the structure and material of the LED, the temperature, the chosen current range and where the line is fitted; in addition, the electrons receive a little energy from thermal motion. In the data of this chapter the difference is about $0.1\,\text{V}$, but this is not a universal value and not necessarily the same for all LEDs.
 
 If the difference were the same for all LEDs, it would only shift the line. Because it varies from one LED to another, the experimental slope can differ from $\tfrac{h}{e}$, and the measurement gives an estimate of the Planck constant with its own uncertainty. This is why the Planck constant is determined from the line of many LEDs and not from one LED. The width of the spectrum of the LED also brings uncertainty: the wavelength of the peak is known only to within a few nanometres.
-
-```pysahdy
-The slope of the line fitted to the graph $(f, U_\text{k})$ is $4.2 \cdot 10^{-15}\,\text{V}\,\text{s}$. What value is obtained for the Planck constant?
----
-$h \approx ek = 1.602 \cdot 10^{-19}\,\text{C} \cdot 4.2 \cdot 10^{-15}\,\text{V}\,\text{s} \approx 6.7 \cdot 10^{-34}\,\text{J}\,\text{s}$.
-```
 
 ## Worked example
 A group measured the threshold voltages of five LEDs of different colours and fitted a line to the points $(f, U_\text{k})$. The fitted line passes through the points $(4.50 \cdot 10^{14}\,\text{Hz};\ 1.74\,\text{V})$ and $(7.50 \cdot 10^{14}\,\text{Hz};\ 2.96\,\text{V})$. The elementary charge is $e = 1.602 \cdot 10^{-19}\,\text{C}$. What value did the group get for the Planck constant?

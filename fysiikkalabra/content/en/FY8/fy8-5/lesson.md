@@ -1350,6 +1350,12 @@ electrons fit in a shell, where $N_\text{max}$ is the greatest number of electro
 | $3$ | s, p, d | $9$ | $18$ |
 | $4$ | s, p, d, f | $16$ | $32$ |
 
+```pysahdy
+How many electrons can the $3\text{p}$ subshell hold at most?
+---
+A p subshell has three orbitals, and each orbital can hold at most two electrons. At most $3 \cdot 2 = 6$ electrons.
+```
+
 When an electron moves from a higher state to a lower one, the atom emits a photon whose energy is the difference between the energies of the states (chapter *Spectra reveal the energy levels of atoms*). In the hydrogen atom the states of the same shell have the same energy, so, for example, the transitions $3\text{d} \to 2\text{p}$ and $3\text{s} \to 2\text{p}$ produce the same spectral line.
 
 <svg data-fig="levels" viewBox="0 0 600 396" role="img" aria-label="The energy levels of the hydrogen atom to scale and their orbitals as boxes. The shell n = 1 has one orbital, 1s, with the energy −13.6 eV. The shell n = 2, with the energy −3.40 eV, has the 2s orbital and three 2p orbitals, four altogether. The shell n = 3, with the energy −1.51 eV, has 3s, three 3p and five 3d orbitals, nine altogether. At the top is a dashed line E = 0, above which the electron is free of the atom. The arrow shows the transition of the electron from the 3d orbital to the 2p orbital; at the same time a photon is produced with a wavelength of 656 nm, red light. Each orbital can hold at most two electrons." style="max-width:100%;font-size:24px">
@@ -1394,12 +1400,6 @@ When an electron moves from a higher state to a lower one, the atom emits a phot
   <line x1="210" y1="360" x2="228" y2="360" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="234" y="345.5" width="300" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{at most } 2\ e^-$</div></foreignObject>
 </svg>
-
-```pysahdy
-How many electrons can the $3\text{p}$ subshell hold at most?
----
-A p subshell has three orbitals, and each orbital can hold at most two electrons. At most $3 \cdot 2 = 6$ electrons.
-```
 
 ### Connection to the orbitals of chemistry
 In an atom with many electrons the electrons repel each other, so the subshells of the same shell have different energies: $2\text{s}$ is lower than $2\text{p}$ and $3\text{s}$ lower than $3\text{p}$. In the ground state the electrons fill the orbitals starting from the lowest energy, at most two in each orbital. The filling order of light atoms is $1\text{s}$, $2\text{s}$, $2\text{p}$, $3\text{s}$, $3\text{p}$. The six electrons of carbon are placed like this: $1\text{s}^2\,2\text{s}^2\,2\text{p}^2$, where the superscript is the number of electrons in the subshell.

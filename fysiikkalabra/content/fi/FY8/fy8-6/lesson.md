@@ -268,7 +268,7 @@ missä $e = 1{,}602 \cdot 10^{-19}\,\text{C}$ on alkeisvaraus, $U_\text{k}$ LEDi
 ```pysahdy
 LEDin spektrin huipun aallonpituus on $500\,\text{nm}$. Arvioi sen kynnysjännite.
 ---
-$U_\text{k} \approx \tfrac{hc}{e\lambda} = \tfrac{1240\,\text{V}\,\text{nm}}{500\,\text{nm}} = 2{,}5\,\text{V}$.
+$U_\text{k} \approx \tfrac{hc}{e\lambda} = \tfrac{1240\,\text{V}\,\text{nm}}{500\,\text{nm}} = 2{,}5\,\text{V}$, eli noin $2{,}5\,\text{V}$.
 ```
 
 ### Kynnysjännitteen määrittäminen
@@ -347,6 +347,12 @@ h \approx ek
 ```
 missä $k$ on sovitetun suoran kulmakerroin ($\tfrac{\text{V}}{\text{Hz}} = \text{V}\,\text{s}$) ja $e$ alkeisvaraus; $\text{C} \cdot \text{V}\,\text{s} = \text{J}\,\text{s}$. Kulmakerroin luetaan sovitetulta suoralta, ei kahdesta mittauspisteestä. Graphical Analysis Prossa suora sovitetaan valinnoilla **Käyrän sovitus** ja **Lineaarinen**, ja tulosruudun $m$ on kulmakerroin.
 
+```pysahdy
+Kuvaajaan $(f, U_\text{k})$ sovitetun suoran kulmakerroin on $4{,}2 \cdot 10^{-15}\,\text{V}\,\text{s}$. Mikä arvo Planckin vakiolle saadaan?
+---
+$h \approx ek = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}2 \cdot 10^{-15}\,\text{V}\,\text{s} \approx 6{,}7 \cdot 10^{-34}\,\text{J}\,\text{s}$.
+```
+
 <svg data-fig="sovitus" viewBox="0 0 600 380" role="img" aria-label="Kuvaaja mittakaavassa: kuuden LEDin kynnysjännite U k voltteina niiden valon taajuuden f funktiona, taajuusakseli nollasta 8 kertaa 10 potenssiin 14 hertsiin. Pisteet ovat LEDien värisiä: punainen 4,76 ja 1,88; oranssi 4,96 ja 1,95; keltainen 5,08 ja 2,00; vihreä 5,71 ja 2,30; sininen 6,38 ja 2,52; violetti 7,40 ja 2,95, taajuudet kertaa 10 potenssiin 14 hertsiä ja jännitteet voltteina. Pisteisiin on sovitettu suora, joka jatkuu katkoviivana lähelle origoa ja leikkaa pystyakselin hieman nollan alapuolella. Suoralle on piirretty kulmakerrointa kuvaava kolmio, ja merkintä kertoo, että kulmakerroin k on h jaettuna e:llä." style="max-width:100%;font-size:24px">
   <line x1="131" y1="322" x2="131" y2="64" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="172.5" y1="322" x2="172.5" y2="64" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -418,12 +424,6 @@ missä $k$ on sovitetun suoran kulmakerroin ($\tfrac{\text{V}}{\text{Hz}} = \tex
 Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi. Lisäksi suora ei yleensä kulje täsmälleen origon kautta: kuvan aineistossa se leikkaa pystyakselin noin $0{,}05\,\text{V}$ nollan alapuolella. Todellisessa mittauksessa kynnysjännite on menetelmällä määritetty likiarvo eikä tarkalleen $\tfrac{hf}{e}$. Siihen vaikuttavat LEDin rakenne ja materiaali, lämpötila, valittu virta-alue ja se, mihin kohtaan suora sovitetaan; elektronit saavat lisäksi hieman energiaa lämpöliikkeestä. Tämän luvun aineistoissa ero on noin $0{,}1\,\text{V}$, mutta se ei ole yleispätevä arvo eikä välttämättä sama kaikilla LEDeillä.
 
 Jos ero olisi kaikille LEDeille sama, se vain siirtäisi suoraa. Koska se vaihtelee LEDistä toiseen, kokeellinen kulmakerroin voi poiketa arvosta $\tfrac{h}{e}$, ja mittaus antaa Planckin vakiolle arvion, jolla on epävarmuutensa. Siksi Planckin vakio määritetään monen LEDin suorasta eikä yhdestä LEDistä. Epävarmuutta tuo myös LEDin spektrin leveys: huipun aallonpituus tunnetaan vain muutaman nanometrin tarkkuudella.
-
-```pysahdy
-Kuvaajaan $(f, U_\text{k})$ sovitetun suoran kulmakerroin on $4{,}2 \cdot 10^{-15}\,\text{V}\,\text{s}$. Mikä arvo Planckin vakiolle saadaan?
----
-$h \approx ek = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}2 \cdot 10^{-15}\,\text{V}\,\text{s} \approx 6{,}7 \cdot 10^{-34}\,\text{J}\,\text{s}$.
-```
 
 ## Esimerkki
 Ryhmä mittasi viiden eri värisen LEDin kynnysjännitteet ja sovitti pisteisiin $(f, U_\text{k})$ suoran. Sovitettu suora kulkee pisteiden $(4{,}50 \cdot 10^{14}\,\text{Hz};\ 1{,}74\,\text{V})$ ja $(7{,}50 \cdot 10^{14}\,\text{Hz};\ 2{,}96\,\text{V})$ kautta. Alkeisvaraus on $e = 1{,}602 \cdot 10^{-19}\,\text{C}$. Minkä arvon ryhmä sai Planckin vakiolle?

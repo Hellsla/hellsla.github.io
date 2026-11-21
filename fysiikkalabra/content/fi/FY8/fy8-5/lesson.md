@@ -1350,6 +1350,12 @@ elektronia, missä $N_\text{max}$ on elektronien enimmäismäärä ja $n$ kuoren
 | $3$ | s, p, d | $9$ | $18$ |
 | $4$ | s, p, d, f | $16$ | $32$ |
 
+```pysahdy
+Montako elektronia mahtuu enintään $3\text{p}$-alikuorelle?
+---
+P-alikuorella on kolme orbitaalia, ja kullakin orbitaalilla voi olla enintään kaksi elektronia. Enintään $3 \cdot 2 = 6$ elektronia.
+```
+
 Kun elektroni siirtyy ylemmästä tilasta alempaan, atomi lähettää fotonin, jonka energia on tilojen energioiden erotus (luku *Spektrit paljastavat atomin energiatasot*). Vetyatomissa saman kuoren tiloilla on sama energia, joten esimerkiksi siirtymät $3\text{d} \to 2\text{p}$ ja $3\text{s} \to 2\text{p}$ tuottavat saman spektriviivan.
 
 <svg data-fig="levels" viewBox="0 0 600 396" role="img" aria-label="Vetyatomin energiatasot mittakaavassa ja niiden orbitaalit laatikoina. Kuorella n = 1 on yksi orbitaali 1s energialla −13,6 eV. Kuorella n = 2 energialla −3,40 eV on 2s-orbitaali ja kolme 2p-orbitaalia, yhteensä neljä. Kuorella n = 3 energialla −1,51 eV ovat 3s, kolme 3p- ja viisi 3d-orbitaalia, yhteensä yhdeksän. Ylimpänä katkoviiva E = 0, jonka yläpuolella elektroni on irti atomista. Nuoli näyttää elektronin siirtymän 3d-orbitaalilta 2p-orbitaalille; samalla syntyy fotoni, jonka aallonpituus on 656 nm, punaista valoa. Jokaisella orbitaalilla voi olla enintään kaksi elektronia." style="max-width:100%;font-size:24px">
@@ -1394,12 +1400,6 @@ Kun elektroni siirtyy ylemmästä tilasta alempaan, atomi lähettää fotonin, j
   <line x1="210" y1="360" x2="228" y2="360" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="234" y="345.5" width="300" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{orbitaalissa enintään } 2\ e^-$</div></foreignObject>
 </svg>
-
-```pysahdy
-Montako elektronia mahtuu enintään $3\text{p}$-alikuorelle?
----
-P-alikuorella on kolme orbitaalia, ja kullakin orbitaalilla voi olla enintään kaksi elektronia. Enintään $3 \cdot 2 = 6$ elektronia.
-```
 
 ### Yhteys kemian orbitaaleihin
 Monen elektronin atomissa elektronit hylkivät toisiaan, joten saman kuoren alikuorilla on eri energiat: $2\text{s}$ on alempana kuin $2\text{p}$ ja $3\text{s}$ alempana kuin $3\text{p}$. Perustilassa elektronit täyttävät orbitaalit alimmasta energiasta alkaen, kullekin orbitaalille enintään kaksi. Kevyiden atomien täyttöjärjestys on $1\text{s}$, $2\text{s}$, $2\text{p}$, $3\text{s}$, $3\text{p}$. Hiilen kuusi elektronia sijoittuvat näin: $1\text{s}^2\,2\text{s}^2\,2\text{p}^2$, missä yläindeksi on alikuoren elektronien määrä.
