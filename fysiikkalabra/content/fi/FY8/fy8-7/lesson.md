@@ -83,6 +83,12 @@ Albert Einstein päätteli vuonna 1917, että on olemassa myös kolmas tapahtuma
   <foreignObject x="535.5" y="95.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$hf$</div></foreignObject>
 </svg>
 
+```pysahdy
+Fotoni, jonka energia on tasojen erotus, osuu viritettyyn atomiin ja saa sen emittoimaan stimuloidusti. Montako fotonia jatkaa matkaa, ja mitä niillä on yhteistä?
+---
+Fotoneja on kaksi. Niillä on sama energia, kulkusuunta ja vaihe, koska uusi fotoni kopioi saapuvan fotonin ominaisuudet.
+```
+
 ### Populaatioinversio
 Fotoni, joka saa viritetyn atomin emittoimaan, voi perustilassa olevaan atomiin osuessaan absorboitua. Kumpi tapahtuu useammin, riippuu siitä, kummalla tasolla atomeja on enemmän. Tavallisesti lähes kaikki atomit ovat perustilassa, joten fotoni absorboituu paljon todennäköisemmin kuin monistuu, ja valo heikkenee aineessa. Valo vahvistuu vain, jos ylemmällä tasolla on enemmän atomeja kuin alemmalla, $N_2 > N_1$. Tätä tilaa kutsutaan **populaatioinversioksi**. Lämmittäminen ei tuota sitä: lämpimässäkin aineessa alemmalla tasolla on aina enemmän atomeja kuin ylemmällä.
 
@@ -192,6 +198,12 @@ Puolijohdekvanttipisteen väri voidaan siis valita sen koolla, vaikka aine on sa
 
 <figure class="unit-photo"><img src="pics/fy8/helium-neon-laser.webp" alt="Musta laatikkomainen laite, jonka kyljessä lukee He-Ne LASER, on pöydällä telineessä; sen päässä loistaa punainen valo, ja edessä on pidike."><figcaption>Helium-neonlaser optiikan koeasetelmassa. Sähköpurkaus pumppaa putken kaasun, ja putken päiden peilit vahvistavat valon kapeaksi punaiseksi säteeksi, jonka aallonpituus on $633\,\text{nm}$.</figcaption></figure>
 
+```pysahdy
+Kvanttipisteen halkaisijaa pienennetään. Siirtyykö pisteen lähettämä valo kohti punaista vai sinistä?
+---
+Energia-aukko kasvaa pisteen pienentyessä, joten fotonin energia kasvaa ja aallonpituus lyhenee. Valo siirtyy kohti sinistä.
+```
+
 ### Kvanttirakenteiden sovelluksia
 Kvanttipistenäytössä sininen taustavalo osuu kvanttipisteisiin, jotka absorboivat sen ja lähettävät puhdasta vihreää tai punaista valoa samaan tapaan kuin fluoresenssissa luvussa *Spektrit paljastavat atomin energiatasot*. Useimmat laserdiodit ovat kvanttikaivolasereita, joissa kaivon paksuus valitsee aallonpituuden. Aurinkokennoihin tutkitaan kvanttipistekerroksia, jotka voidaan pisteiden koon avulla säätää absorboimaan haluttu osa Auringon spektristä.
 
@@ -276,6 +288,12 @@ Samalla teholla pidemmän aallonpituuden laser lähettää enemmän fotoneja, ko
   <foreignObject x="361" y="47.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#c92a2a">$650\,\text{nm}$</div></foreignObject>
   <foreignObject x="362" y="235.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$P = 1{,}0\,\text{mW}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Laserin teho pidetään samana, mutta fotonin energia kaksinkertaistuu. Mitä tapahtuu sekunnissa lähtevien fotonien määrälle?
+---
+Koska $\tfrac{N}{t} = \tfrac{P}{hf}$, fotonien määrä sekunnissa puolittuu.
+```
 
 ## Esimerkki
 Helium–neonlaserin lasersiirtymän tasojen energiaero on $1{,}96\,\text{eV}$, ja laserin teho on $1{,}0\,\text{mW}$. Kuinka monta fotonia laser lähettää sekunnissa?

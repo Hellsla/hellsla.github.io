@@ -113,6 +113,12 @@
 ### The decay of a single nucleus is random
 A radioactive nucleus decays and becomes another nucleus (chapter *The atomic nucleus and radioactive decay*), but the moment of decay cannot be predicted. Of two identical nuclei, one may decay at once and the other only after years. All that can be predicted is how likely a nucleus is to decay within a given time. This probability is the same for all nuclei of the same isotope, and in practice it does not depend on the temperature, the pressure or the chemical bonds of the surroundings. Nor does it depend on the age of the nucleus: a nucleus does not grow old. A nucleus that has survived without decaying for a long time is just as likely to decay during the next second as a newly formed one.
 
+```pysahdy
+Nucleus A has just formed, and nucleus B has survived undecayed for an hour. Which is more likely to decay during the next second?
+---
+They are equally likely, because a nucleus does not age: the probability of decay is the same for all nuclei of the same isotope, whatever their age.
+```
+
 ### A large group of nuclei behaves regularly
 Because every nucleus has the same probability of decaying, about the same *fraction* of the remaining nuclei decays in a given time. In the figure, of the same hundred nuclei about half are left after one half-life and about a quarter after two, but the decayed nuclei are in random places. In a small group chance shows: the fraction can differ clearly from a half. An ordinary sample, however, contains for example $10^{15}$ nuclei, and then the relative deviations are so small that they cannot be noticed.
 
@@ -449,6 +455,12 @@ Source: literature values from the NNDC NuDat 3 database (Brookhaven National La
 
 <figure class="unit-photo"><img src="pics/fy8/geiger-counter.webp" alt="An old beige radiation meter on a white table: the box has a needle display and a control knob, and a round probe on a handle is connected to it by a cable."><figcaption>A Geiger–Müller counter counts the ionising particles that hit its probe. When the counter is kept in the same place, the count rate is proportional to the activity of the source.</figcaption></figure>
 
+```pysahdy
+A sample initially contains $8000$ undecayed nuclei and its half-life is $2\,\text{h}$. About how many undecayed nuclei remain after $6\,\text{h}$?
+---
+$6\,\text{h}$ is three half-lives, so the number is halved three times: $8000 \cdot \left(\tfrac{1}{2}\right)^3 = 1000$.
+```
+
 ### Activity
 The **activity** $A$ of a sample is the number of decays in it per unit of time. Its unit is the becquerel: $1\,\text{Bq}$ is one decay per second, that is, $1\,\tfrac{1}{\text{s}}$. Because every nucleus is equally likely to decay, the activity is directly proportional to the number of undecayed nuclei: when half of the nuclei are left, the activity has also halved. A radiation meter does not measure the activity directly. It counts the pulses from the quanta of radiation that hit its detector. The number of pulses is proportional to the activity, but the **background radiation** of the surroundings is always added to it.
 
@@ -529,6 +541,12 @@ where $\ln 2 \approx 0.693$. For example, for technetium-$99\text{m}$ $\lambda =
 A = A_0 \left(\frac{1}{2}\right)^{t/T_{1/2}}
 ```
 where $A_0$ is the activity at the time $t = 0$. The mass of the undecayed substance decreases in the same way, because it is proportional to the number of nuclei.
+
+```pysahdy
+The half-life of substance B is twice the half-life of substance A. Which has the larger decay constant, and by what factor?
+---
+Substance A has twice the decay constant, because $\lambda = \tfrac{\ln 2}{T_{1/2}}$ is inversely proportional to the half-life.
+```
 
 ### Fitting an exponential function to measurement data
 The half-life is determined by measuring the number of pulses of a sample at regular intervals. In real series of measurements the data points are usually not exactly on the curve of the model, because of the randomness of decay and the measurement uncertainty. That is why the model

@@ -90,6 +90,12 @@ Ydintä kuvataan kahdella luvulla. **Järjestysluku** $Z$ on protonien määrä,
   <foreignObject x="400" y="297.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{neutroni } n$</div></foreignObject>
 </svg>
 
+```pysahdy
+Natriumytimen merkintä on ${}^{23}_{11}\text{Na}$. Montako protonia ja neutronia ytimessä on?
+---
+Protoneja on $Z = 11$ ja neutroneja $N = A - Z = 23 - 11 = 12$.
+```
+
 ### Miksi osa ytimistä hajoaa
 Protonit hylkivät toisiaan sähköisesti, mutta ydin pysyy koossa vahvan vuorovaikutuksen ansiosta. Se vetää nukleoneja toisiinsa, mutta vain hyvin lyhyellä, ytimen kokoisella etäisyydellä. Neutronit lisäävät vetoa lisäämättä hylkimistä, joten pysyvissä raskaissa ytimissä on enemmän neutroneja kuin protoneja.
 
@@ -255,6 +261,12 @@ missä X on emoydin, Y tytärydin ja $Z$ järjestysluku. Esimerkiksi ${}^{7}_{4}
   <foreignObject x="391" y="225.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{viritystila } {}^{\ast}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Beeta miinus -hajoamisessa ytimen neutroni muuttuu protoniksi. Miten ytimen järjestysluku ja massaluku muuttuvat?
+---
+Protoneja tulee yksi lisää, joten järjestysluku kasvaa yhdellä. Nukleonien määrä ei muutu, joten massaluku pysyy samana.
+```
+
 ### Ytimen energiatasot ja gammaspektri
 Ytimen energia on kvantittunut kuten atomin elektronien energia. Kun ydin siirtyy ylemmältä energiatasolta alemmalle, lähtevän gammafotonin energia on tasojen erotus, aivan kuten vetyatomin siirtymässä luvussa *Vetyatomin energiatasot ja Bohrin malli*. Siksi ytimen gammaspektri on viivaspektri: jokainen piikki kertoo yhden tasoparin erotuksen. Ero on mittakaavassa. Atomin siirtymät ovat elektronivoltteja, ytimen tasojen erot tyypillisesti kymmeniä kiloelektronivoltteja tai enemmän, eli kymmeniätuhansia tai satojatuhansia kertoja enemmän.
 
@@ -346,6 +358,12 @@ E_\gamma &= E_\text{y} - E_\text{a} \\
 \end{aligned}
 ```
 missä $E_\text{y}$ ja $E_\text{a}$ ovat ylemmän ja alemman tason energiat, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ Planckin vakio ja $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$ valon nopeus. Kiloelektronivoltit muunnetaan jouleiksi sijoittamalla $1\,\text{keV} = 1000\,\text{eV}$ ja $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
+
+```pysahdy
+Uraani-238 ${}^{238}_{92}\text{U}$ hajoaa alfahajoamisella. Mikä on tyttärytimen massaluku ja järjestysluku?
+---
+Alfahiukkanen ${}^{4}_{2}\text{He}$ vie neljä nukleonia ja kaksi protonia: $A = 238 - 4 = 234$ ja $Z = 92 - 2 = 90$.
+```
 
 ## Esimerkki
 Cesium-137 ${}^{137}_{55}\text{Cs}$ hajoaa beeta miinus -hajoamisella. Tytärydin syntyy useimmiten viritystilaan, joka purkautuu lähettämällä gammafotonin, jonka energia on $661{,}7\,\text{keV}$ (NNDC NuDat 3). Mikä tytärydin on, ja kuinka suuri on gammafotonin aallonpituus?

@@ -202,6 +202,12 @@ Fotonin energia on likimain energia-aukon suuruinen, $hf \approx E_\text{g}$. LE
 
 <figure class="unit-photo"><img src="pics/fy8/green-led.webp" alt="LEDin kupu läheltä. Keskellä hehkuu vihreä siru."><figcaption>Vihreä LED. Vihreän valon fotonissa on enemmän energiaa kuin punaisen valon fotonissa. Siksi vihreän LEDin kynnysjännite on suurempi kuin punaisen LEDin.</figcaption></figure>
 
+```pysahdy
+Vihreän LEDin fotonin energia on suurempi kuin punaisen LEDin ja pienempi kuin sinisen LEDin. Millä välillä vihreän LEDin energia-aukko on?
+---
+Fotonin energia on melkein sama kuin energia-aukko, $hf \approx E_\text{g}$. Siksi energia-aukko on punaisen ja sinisen LEDin energia-aukkojen välissä.
+```
+
 ### Kynnysjännite
 Kun elektroni kulkee jännitteen $U$ yli, sähkökenttä tekee siihen työn $eU$. Tässä $e$ on alkeisvaraus. Juuri näin määriteltiin elektronivoltti luvussa *Valosähköinen ilmiö ja fotoni*. Elektroni voi synnyttää fotonin, jonka energia on $E_\text{g}$, vain jos se saa jännitelähteeltä vähintään likimain tämän energian. Siksi LED ei pienellä jännitteellä juuri johda virtaa eikä säteile. Virta alkaa kasvaa jyrkästi, kun jännite saavuttaa LEDin **kynnysjännitteen** $U_\text{k}$. Sille pätee $eU_\text{k} \approx E_\text{g} \approx hf$. Sinisen valon fotoni tarvitsee enemmän energiaa kuin punaisen. Siksi sinisen LEDin kynnysjännite on suurempi.
 
@@ -268,6 +274,12 @@ eU_\text{k} \approx hf = \frac{hc}{\lambda}
 Tässä $e = 1{,}602 \cdot 10^{-19}\,\text{C}$ on alkeisvaraus. $U_\text{k}$ on LEDin kynnysjännite ($\text{V}$). $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on Planckin vakio. $f$ on valon taajuus ($\text{Hz}$). $c = 2{,}998 \cdot 10^8\,\text{m/s}$ on valon nopeus. $\lambda$ on LEDin spektrin huipun aallonpituus ($\text{m}$).
 
 Lasketaan esimerkki punaiselle LEDille, jonka $\lambda = 630\,\text{nm}$. Kynnysjännite on $U_\text{k} \approx \tfrac{hc}{e\lambda}$. Luvussa *Valosähköinen ilmiö ja fotoni* laskettiin $hc = 1240\,\text{eV}\,\text{nm}$. Koska $1\,\text{eV} = e \cdot 1\,\text{V}$, on $\tfrac{hc}{e} = 1240\,\text{V}\,\text{nm}$. Siten $U_\text{k} \approx 1240\,\text{V}\,\text{nm} : 630\,\text{nm} = 1{,}97\,\text{V}$. Mitattu kynnysjännite on yleensä hieman pienempi, esimerkiksi $1{,}88\,\text{V}$. Fotonin energia elektronivoltteina on likimain sama luku kuin kynnysjännite voltteina, koska $1\,\text{eV}$ on energia, jonka elektroni saa $1\,\text{V}$:n jännitteessä.
+
+```pysahdy
+LEDin valon aallonpituus on $500\,\text{nm}$ (spektrin huipun kohdalla). Arvioi LEDin kynnysjännite.
+---
+$U_\text{k} \approx \tfrac{hc}{e\lambda} = \tfrac{1240\,\text{V}\,\text{nm}}{500\,\text{nm}} = 2{,}5\,\text{V}$.
+```
 
 ### Kynnysjännitteen määrittäminen
 Kynnysjännite mitataan näin. LED kytketään sarjaan suojavastuksen ja virtamittarin kanssa säädettävään jännitelähteeseen. Jännitemittari kytketään LEDin napojen väliin. Suojavastus rajoittaa virtaa, jotta LED ei kuumene ja rikkoudu. Virta ei saa olla suurempi kuin valmistajan ilmoittama suurin sallittu arvo. Jännitettä kasvatetaan vähitellen, ja kullakin jännitteellä kirjataan virta.
@@ -418,6 +430,12 @@ Tässä $k$ on sovitetun suoran kulmakerroin ($\tfrac{\text{V}}{\text{Hz}} = \te
 Oikeissa mittauksissa pisteet eivät yleensä ole täsmälleen samalla suoralla, koska mittauksissa on epävarmuutta. Suora ei myöskään yleensä kulje täsmälleen origon kautta. Kuvan aineistossa suora leikkaa pystyakselin noin $0{,}05\,\text{V}$ nollan alapuolella.
 
 Todellisessa mittauksessa kynnysjännite on menetelmällä määritetty likiarvo. Se ei ole tarkalleen $\tfrac{hf}{e}$. Siihen vaikuttavat LEDin rakenne ja materiaali, lämpötila, valittu virta-alue ja se, mihin kohtaan suora sovitetaan. Lisäksi elektronit saavat hieman energiaa lämpöliikkeestä. Tämän luvun aineistoissa ero on noin $0{,}1\,\text{V}$. Se ei kuitenkaan ole yleispätevä arvo, eikä se ole välttämättä sama kaikilla LEDeillä. Jos ero olisi kaikille LEDeille sama, se vain siirtäisi suoraa. Ero vaihtelee LEDistä toiseen. Siksi kokeellinen kulmakerroin voi poiketa arvosta $\tfrac{h}{e}$. Mittaus antaa Planckin vakiolle arvion, jolla on epävarmuutensa. Siksi Planckin vakio määritetään monen LEDin suorasta eikä yhdestä LEDistä. Epävarmuutta tuo myös LEDin spektrin leveys: huipun aallonpituus tunnetaan vain muutaman nanometrin tarkkuudella.
+
+```pysahdy
+Kuvaajaan $(f, U_\text{k})$ sovitetun suoran kulmakerroin on $4{,}2 \cdot 10^{-15}\,\text{V}\,\text{s}$. Mikä arvo saadaan Planckin vakiolle?
+---
+$h \approx ek = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}2 \cdot 10^{-15}\,\text{V}\,\text{s} \approx 6{,}7 \cdot 10^{-34}\,\text{J}\,\text{s}$.
+```
 
 ## Esimerkki
 Ryhmä mittasi viiden eri värisen LEDin kynnysjännitteet. Ryhmä sovitti pisteisiin $(f, U_\text{k})$ suoran. Sovitettu suora kulkee pisteiden $(4{,}50 \cdot 10^{14}\,\text{Hz};\ 1{,}74\,\text{V})$ ja $(7{,}50 \cdot 10^{14}\,\text{Hz};\ 2{,}96\,\text{V})$ kautta. Alkeisvaraus on $e = 1{,}602 \cdot 10^{-19}\,\text{C}$. Minkä arvon ryhmä sai Planckin vakiolle?
