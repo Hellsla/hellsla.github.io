@@ -869,6 +869,14 @@ def strings_block(sim_key):
     if sim_key: data["sim"] = i18n.sim_strings(sim_key, T.lang) or i18n.sim_strings(sim_key)
     return '<script id="fl-strings" type="application/json">' + json.dumps(data, ensure_ascii=False).replace("</", "<\\/") + "</script>"
 assets = []  # published asset paths (relative to the output folder), checked before the swap
+
+
+def copy_pics(who, texts):
+    """The pictures the texts refer to (pics/<course>/<file>, a figure's base picture by its id), copied to the same relative
+    path in site/ and listed as assets; used by a lesson and by a course's Sovella and exam pages (work queue 24)."""
+    for ref in courses.pic_refs_in(texts):
+        if not courses.pic_source(ref).is_file(): sys.exit(f"{who}: picture {ref} not found (expected assets/{ref})")
+        (SITE / ref).parent.mkdir(parents=True, exist_ok=True); shutil.copy(courses.pic_source(ref), SITE / ref); assets.append(ref)
 expected = []  # pages every language must have written
 removed = []   # lessons on the live site that this build leaves out
 
@@ -1245,9 +1253,7 @@ def build_language(lang):
             if model: assets.append(f"{pub}/model.js")
             sim = (f'<section id="sim">{sim_head(inq)}{css}<div id="sim-root" data-base="{pub}/"></div>'
                    f'<script src="vendor/p5.min.js"></script><script src="sim-embed.js"></script>{model}<script src="{pub}/sim.js"></script><!--sim-info--></section>')
-        for ref in courses.pic_refs_in([(courses.lesson_file(folder, n).read_text() if courses.lesson_file(folder, n).exists() else "") for n in courses.LESSON_TEXTS] + [ex_text, sol_text]):   # pictures the text refers to, at the same relative path
-            if not courses.pic_source(ref).is_file(): sys.exit(f"{meta['id']}: picture {ref} not found (expected assets/{ref})")
-            (SITE / ref).parent.mkdir(parents=True, exist_ok=True); shutil.copy(courses.pic_source(ref), SITE / ref); assets.append(ref)
+        copy_pics(meta["id"], [(courses.lesson_file(folder, n).read_text() if courses.lesson_file(folder, n).exists() else "") for n in courses.LESSON_TEXTS] + [ex_text, sol_text])   # pictures the text refers to, at the same relative path
         name = f"{meta['id']}.html"
         titles = chapter_titles(meta["course"])
         kc_section = concept_cards.lesson_section(meta["course"], meta["id"], T, lang, titles)   # "Kertaa luvun käsitteet": the end of Esimerkit (teacher 2026-11-05)
@@ -1312,6 +1318,7 @@ def build_language(lang):
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {pname} is on the live site but its reviews are not current; this build removes it")
             continue
         body, ptoc = practice.render(code, lang, lambda t: nbsp_units(render_md(t)), solution_html, T("practice.title"))
+        copy_pics(pname, [(practice.folder(code, lang) / n).read_text() for n in practice.TEXTS if (practice.folder(code, lang) / n).is_file()])   # the figures' base pictures (work queue 24)
         body = body.replace("</header>", "</header>" + concept_cards.practice_section(code, T, lang), 1)   # the deck's cards before the tasks (teacher 2026-11-03)
         ptitle = T("practice.title")
         html = (texts(tpl).replace("{{title}}", esc(ptitle)).replace("{{course}}", code).replace("{{notice}}", notice("reviewed" if ps["state"] == "reviewed" else "draft"))
@@ -1338,6 +1345,7 @@ def build_language(lang):
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {pname} is on the live site but its reviews are not current; this build removes it")
             continue
         body, ptoc = practice.render(key, lang, lambda t: nbsp_units(render_md(t)), solution_html, T("exam.title"))
+        copy_pics(pname, [(practice.folder(key, lang) / n).read_text() for n in practice.TEXTS if (practice.folder(key, lang) / n).is_file()])
         html = (texts(tpl).replace("{{title}}", esc(T("exam.title"))).replace("{{course}}", code).replace("{{notice}}", notice("reviewed" if ps["state"] == "reviewed" else "draft"))
                 .replace("{{strings}}", strings_block(None)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=code)))
                 .replace("{{toc}}", ptoc).replace("{{main}}", f'<article id="teoria" class="inquiry practice exam">{body}</article><!--fl-chapter-nav:{code}-koe-->')

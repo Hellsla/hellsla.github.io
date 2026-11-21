@@ -85,6 +85,9 @@ for code in courses.codes():
         raw, svg = figcat.render(fid, raw=True), figcat.render(fid)
         check(f"{fid}: drawn on its picture, labels kept", "<image " in svg and svg.count("<foreignObject") == raw.count("<foreignObject") and svg.count("<text") == 0, f"{svg.count('<foreignObject')} vs {raw.count('<foreignObject')}")
         check(f"{fid}: every shift and flat label names a label", all(0 <= i < raw.count("<foreignObject") for i in [*r["shift"], *r["flat"]]))
+src = (pathlib.Path(__file__).resolve().parent / "build.py").read_text(encoding="utf-8")
+check("build.py copies the pictures of a lesson, a Sovella page and an exam page (copy_pics)",
+      len(re.findall(r"^\s+copy_pics\(", src, re.M)) == 3, "copy_pics calls")
 import figimage as F
 total = sum(p.stat().st_size for p in (courses.ROOT / "assets" / "pics").rglob("*") if p.is_file())
 check(f"all the pictures together are under 100 MB ({total / 1e6:.1f} MB)", total < 100e6)
