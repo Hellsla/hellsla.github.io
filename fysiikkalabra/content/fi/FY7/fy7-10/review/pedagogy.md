@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: aa58822df89291a5
+CONTENT-HASH: 81feb70459f703c1
+
 ## Blocking
+(none)
 
 ## Polish
-- Nothing further.
+(none)
+
+## Vanhan sisällön löydökset
+(none)
 
 ## Checked
-batch delta review: Lake mirroring suits reflection/refraction; 30 degrees reflection law kept; no Ennusta about refraction revealed. (SCOPE: Pohdinta retrieval task rewrite; delta only)
+batch delta review (round 2, vain pysahdy-lohkot): kolme lohkoa; "1,33 kertaa lyhyempi kuin ilmassa" selkeämpi kuin entinen; v = c:n = 1,24·10^8 m/s ja taitekulma 25° laskettu uudelleen.

@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f8678b268c4d5d97
-
+CONTENT-HASH: 51ee79e19a031f55
 ## Blocking
-
+(none)
 ## Polish
-
+(none)
+## Vanhan sisällön löydökset
+(none found in the captures; old content is untouched by this change)
 ## Checked
-- batch delta review: opened fy7-14-stage-herata-390.png (Pohdinta with the changed optional retrieval task, collapsed in the capture); layout intact; changed prompt read from the diff (quantities in LaTeX, fluent wording); no figures changed; the opened card itself was not captured.
+batch delta review: the new "Stop and think" blocks (```pysahdy) rendered at 390 px with the answer open (aside, question, Answer summary, answer text and aligned calculation rows): no clipping or horizontal overflow (page scrollWidth 390), maths in KaTeX with units upright and a thin space, decimal point and \cdot/colon notation as the English text uses, fluent wording, block placed right after the paragraph it tests; listed figure captures and fig-row unchanged in layout. Hash identical at start and end.

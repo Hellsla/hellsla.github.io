@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4ab8d81c4b330af0
+CONTENT-HASH: 862cb7079751a2e4
 
 ## Blocking
 (none)
@@ -8,7 +8,4 @@ CONTENT-HASH: 4ab8d81c4b330af0
 (none)
 
 ## Checked
-- Delta round 2: fy7-10-stage-herata-390.png opened at readable resolution (Pohdinta text, open question, closed Valinnainen retrieval card). Changed retrieval task (reflection law on a calm lake) is now tied to the phenomenon; the card title and sentences read naturally, no clipping or overflow at 390 px. Maths in the diff is inline LaTeX with units, aligned display chains unchanged in form.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review (round 2): fy7-10 (fi-easy) built page, every "Pysähdy ja mieti" block rendered with the answer open and photographed at 360 px (examined for the long chains) and measured at 360 and 1280 px: label, question, Vastaus summary, KaTeX (no red source, no clipped formula, no overflow), decimal comma, units, answer chains laid out as rows; check_layout.py clean at 360/390/1280. The round 1 clip in fy7-1 block 3 is fixed by the shared component. Listed older captures not reopened (unchanged old content). Vanhan sisällön löydökset: none.

@@ -133,6 +133,12 @@ Muuntajassa rautasydän ohjaa lähes koko vuon toisiokäämin läpi. Ilman sydä
   <line x1="344" y1="112" x2="367" y2="175" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
+```pysahdy
+Puhelin nostetaan langattoman laturin päältä $3\,\text{mm}$:n korkeudelta $20\,\text{mm}$:n korkeudelle. Miksi vastaanotinkäämiin indusoituva jännite pienenee, vaikka lähetinkäämin virta pysyy samana?
+---
+Vastaanottimen läpi kulkee yhä harvempi kenttäviiva, joten vuo pienenee. Pienempi vuo ja sen muutos indusoivat pienemmän jännitteen.
+```
+
 ### Hukka langattomassa latauksessa
 Vastaanottimeen saadaan riittävä jännite, vaikka vain osa vuosta osuu siihen, mutta silloin lähetinkäämissä on kuljettava suurempi virta. Virta muuttaa käämien resistanssissa sähköenergiaa sisäenergiaksi teholla $P = RI^2$, joten laturi ja puhelin lämpenevät. Eräässä vuonna 2020 tehdyssä laitevertailussa (Ravenscraft, OneZero, 2020) puhelimen lataaminen tyhjästä täyteen otti pistorasiasta johdolla $14{,}26\,\text{Wh}$ ja kohdalleen asetetulla latausalustalla keskimäärin $21{,}01\,\text{Wh}$ eli noin $47\,\%$ enemmän energiaa. Kun käämit olivat vähän sivussa toisistaan, lataus vei $25{,}62\,\text{Wh}$. Ero riippuu kuitenkin laturista, puhelimesta, lataustavasta ja käämien kohdistuksesta, joten luvut eivät päde kaikkiin langattomiin latureihin. Jos laturin ja puhelimen välissä on kolikko tai avain, siihen syntyy pyörrevirtoja ja se kuumenee. Siksi laturi tunnistaa vieraan metalliesineen ja keskeyttää latauksen.
 
@@ -206,6 +212,12 @@ Induktiolieden lasilevyn alla on litteä kuparikela, jossa kulkee vaihtovirta ky
 
 <figure class="unit-photo"><img src="pics/fy7/induction-hob.webp" alt="Musta lasinen keittotaso, jossa on neljä keittoaluetta ja edessä kosketusnäppäimet; oikealla takana on teräskattila."><figcaption>Induktioliesi. Lasin alla olevassa käämissä kulkee vaihtovirta, ja sen muuttuva magneettikenttä indusoi kattilan teräspohjaan pyörrevirtoja. Kattila lämpenee itse, ja taso lämpenee vain kattilasta.</figcaption></figure>
 
+```pysahdy
+Induktioliedellä lasilevy ei ole kuuma ennen kuin kattila on kuumentunut sen päällä. Miksi lasiin ei synny pyörrevirtoja?
+---
+Lasi ei johda sähköä, joten muuttuva magneettikenttä ei saa siinä aikaan virtaa. Lasi lämpenee vasta, kun kuuma kattila lämmittää sitä.
+```
+
 ### Miksi kattilan on oltava terästä tai valurautaa
 Tavalliset kotitalouksien induktioliedet on suunniteltu kattiloille, joiden pohjassa on ferromagneettista ainetta, kuten terästä tai valurautaa. Induktiolämmityksen periaate ei kuitenkaan fysikaalisesti edellytä ferromagneettisuutta: myös muut johteet lämpenevät, jos laite on suunniteltu niille. Ferromagneettinen pohja vahvistaa kelan kenttää ja kokoaa vuon itseensä (luku *Magneetit, magneettinen dipoli ja magneettikenttä*). Lisäksi teräs johtaa sähköä huonommin kuin alumiini, ja pyörrevirrat kulkevat siinä vain ohuessa pintakerroksessa, jonka resistanssi on suuri, joten samalla kelan virralla pohjan sisäenergia kasvaa nopeasti. Alumiini ja kupari eivät ole ferromagneettisia, ja ne johtavat sähköä erittäin hyvin. Niissä pyörrevirrat leviävät paksummalle alueelle, resistanssi jää pieneksi ja lämpenemistä tulee vähän. Tavallinen induktioliesi ei siksi yleensä lämmitä alumiinikattilaa, vaan se tunnistaa sopimattoman kattilan eikä käynnisty. Monessa kattilassa on pohjan alla teräslevy juuri tätä varten.
 
@@ -272,6 +284,12 @@ missä $A$ on vaimennus ($\text{dB}$), $\lg$ kymmenkantainen logaritmi, $a$ kuid
   <foreignObject x="440" y="193.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e64980">$1550\,\text{nm}$</div></foreignObject>
   <foreignObject x="440" y="230.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e64980">$1310\,\text{nm}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Kuidun vaimennuskerroin on $0{,}18\,\text{dB/km}$ ja kuidun pituus on $50\,\text{km}$. Kuinka suuri on vaimennus desibeleinä ja kuinka suuri osa tehosta on jäljellä?
+---
+Vaimennus on $A = aL = 0{,}18\,\text{dB/km}\cdot 50\,\text{km} = 9{,}0\,\text{dB}$. Vaimennuksen määritelmästä $\lg (P_0 : P) = A : 10\,\text{dB} = 0{,}90$, joten $P_0 : P = 10^{0{,}90} \approx 7{,}9$. Tehosuhde on siis $P/P_0 \approx 0{,}13$, joten tehosta on jäljellä noin $13\,\%$.
+```
 
 ### Langattoman laturin jännite
 Kun vastaanotinkäämin yhden kierroksen läpi kulkeva vuo vaihtelee sinimuotoisesti huippuarvon $\Phi_0$ ja taajuuden $f$ mukaan, käämiin syntyy vaihtojännite, jonka huippuarvo saadaan samoin kuin generaattorissa (luku *Generaattori ja vaihtovirta*):

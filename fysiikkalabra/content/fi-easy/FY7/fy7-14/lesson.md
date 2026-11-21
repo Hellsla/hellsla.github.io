@@ -192,6 +192,12 @@ Alapinnasta heijastunut aalto 2 kulkee kalvon läpi alas ja takaisin ylös. Se k
 ### Puolen aallonpituuden siirtymä heijastuksessa
 Matkaero ei yksin ratkaise interferenssiä. Luvussa *Aalto kohtaa esteen tai raon* köyden pulssi kääntyi heijastuessaan kiinteästä päästä, mutta ei vapaasta päästä. Valolle on vastaava sääntö: **kun valo heijastuu rajapinnasta, jonka takana on aine, jolla on suurempi taitekerroin, heijastunut aalto kääntyy.** Silloin harja palaa pohjana. Kääntyminen vastaa puolen aallonpituuden siirtymää. Jos takana on aine, jolla on pienempi taitekerroin, aalto ei käänny. Saippuakalvossa yläpinnan heijastus tapahtuu ilmasta kalvoon ($1{,}00 \to 1{,}33$), joten aalto 1 kääntyy. Alapinnan heijastus tapahtuu kalvosta ilmaan ($1{,}33 \to 1{,}00$), joten aalto 2 ei käänny.
 
+```pysahdy
+Valo etenee lasissa ($n = 1{,}52$) ja heijastuu lasin ja ilman rajapinnasta ($1{,}52 \to 1{,}00$). Kääntyykö heijastunut aalto?
+---
+Ei käänny. Rajapinnan takana on ilma, ja sen taitekerroin on pienempi. Aalto kääntyy vain, kun takana on aine, jolla on suurempi taitekerroin.
+```
+
 ### Hyvin ohut kalvo on musta
 Oletetaan, että saippuakalvo on paljon ohuempi kuin aallonpituus. Silloin matkaero on lähes nolla. Aalto 1 on kuitenkin kääntynyt ja aalto 2 ei. Aallot ovat siksi vastakkaisessa vaiheessa ja kumoavat toisensa. Ihannetilanteessa hyvin ohut saippuakalvo heijastaa vain hyvin vähän valoa. Siksi se näyttää heijastuneessa valossa tummalta tai lähes mustalta. Siksi saippuakuplan yläosaan ilmestyy musta laikku juuri ennen puhkeamista. Kun kalvo on niin paksu, että $2nd = \tfrac{1}{2}\lambda$, aalto 2 jää puoli aallonpituutta jälkeen. Se vastaa kääntymistä. Silloin aallot ovat samassa vaiheessa ja vahvistavat toisiaan.
 
@@ -377,6 +383,12 @@ Paksussa kalvossa, kuten ikkunalasissa, värejä ei näy. Jo $5\,\mu\text{m}$:n 
 
 <figure class="unit-photo"><img src="pics/fy7/soap-bubble-colours.webp" alt="Saippuakalvo läheltä. Siinä on oransseja, sinisiä ja violetteja pyörteitä."><figcaption>Saippuakalvon värit. Kalvo on eri kohdista eri paksu. Siksi eri kohdissa vahvistuu eri väri.</figcaption></figure>
 
+```pysahdy
+Miksi ikkunalasissa ei näy värejä, vaikka sekin heijastaa valoa kahdesta pinnasta?
+---
+Lasi on niin paksu, että näkyvällä alueella on hyvin monta aallonpituutta, jotka vahvistuvat, ja hyvin monta, jotka heikentyvät. Värit sekoittuvat valkoiseksi.
+```
+
 ## Kaava: Ohuen kalvon interferenssi
 Kun valo tulee kohtisuoraan kalvoon, kalvon kahdesta pinnasta heijastuneiden aaltojen optinen matkaero on
 ```latex
@@ -392,6 +404,12 @@ missä $n$ on kalvon taitekerroin, $d$ kalvon paksuus ja $\lambda$ valon aallonp
 \end{aligned}
 ```
 missä $k = 0, 1, 2, \ldots$
+
+```pysahdy
+Saippuakalvon ($n = 1{,}33$) paksuus on $125\,\text{nm}$. Valo tulee kohtisuoraan ilmasta. Mikä aallonpituus vahvistuu, kun $k = 0$?
+---
+Matkaero on $2nd = 2 \cdot 1{,}33 \cdot 125\,\text{nm} = 332{,}5\,\text{nm}$. Ehdosta $2nd = (k + \tfrac{1}{2})\lambda$ ja $k = 0$ saadaan $\lambda = 665\,\text{nm}$. Punainen valo vahvistuu.
+```
 
 Toinen tapaus on linssin pinnoite. Sen taitekerroin on ilman ja lasin välissä, joten kumpikin heijastus kääntää aallon. Käännökset kumoavat toisensa. Silloin ehdot vaihtavat paikkaa: $2nd = k\lambda$ on vahvistava ja $2nd = (k + \tfrac{1}{2})\lambda$ on heikentävä. Sama pätee, kun kumpikaan heijastus ei käännä aaltoa.
 

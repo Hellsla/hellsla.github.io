@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: aa58822df89291a5
+CONTENT-HASH: 81feb70459f703c1
 
 ## Blocking
 
-
 ## Polish
-- (none)
+
 
 ## Checked
-batch delta review: reflection law at a lake surface: 30° on the other side of the normal is the one correct option; 60° and retro-reflection distractors' feedback right; Ennusta (refraction into water, doubled angle) not revealed.
+batch delta review: round 2, three new pysahdy blocks: frequency unchanged, wavelength in water 1,33 times shorter (air n ≈ 1, as the theory says); v = c : n = 3,00·10^8 : 2,42 = 1,24·10^8 m/s recomputed; Snell: sin α2 = sin 40° : 1,52 = 0,423, α2 ≈ 25,0°, towards the normal into the denser medium; symbols α1, α2 as in the lesson.
+
+## Vanhan sisällön löydökset
+Ei löydöksiä.

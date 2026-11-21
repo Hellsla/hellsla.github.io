@@ -123,6 +123,12 @@ Kun valo kulkee kapean raon läpi, se ei jatka terävänä kimppuna. Se leviää
   <foreignObject x="30" y="203.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{kapea rako}$</span></div></foreignObject>
 </svg>
 
+```pysahdy
+Laserin säde kulkee raon läpi, ja varjostimelle tulee kirkas keskialue. Rako tehdään puolet kapeammaksi. Mitä keskialueelle tapahtuu ja miksi?
+---
+Keskialue levenee. Kapea rako taivuttaa valoa enemmän, joten valo leviää laajemmalle.
+```
+
 ### Youngin kaksoiskoe
 Thomas Young teki 1800-luvun alussa kokeen, joka osoitti valon aaltoliikkeeksi. Hän ohjasi saman valon kahteen kapeaan, lähekkäiseen rakoon. Diffraktion vuoksi valo leviää kummastakin raosta laajalle, ja rakojen aallot menevät päällekkäin. Molempien rakojen valo tulee samasta aaltorintamasta. Siksi raot toimivat koherentteina lähteinä. Varjostimelle syntyy tasavälisiä kirkkaita ja tummia juovia. Keskellä on kirkas juova, koska sinne on kummastakin raosta yhtä pitkä matka. Seuraavassa kirkkaassa juovassa matkaero on yksi aallonpituus. Tummat juovat ovat interferenssin tunnusmerkki. Niihin tulee kahdesta raosta yhdessä vähemmän valoa kuin kummastakin raosta yksinään.
 
@@ -869,6 +875,12 @@ Mitä pidempi aallonpituus on, sitä suuremman matkaeron maksimi vaatii. Siksi s
   <foreignObject x="515.5" y="295.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$k = 3$</div></foreignObject>
 </svg>
 
+```pysahdy
+Hilaan osuu valkoista valoa. Kumpi poikkeaa keskimaksimista enemmän, punainen valo ($650\,\text{nm}$) vai sininen valo ($450\,\text{nm}$)? Miksi?
+---
+Punainen poikkeaa enemmän. Ehto on $d\sin\theta = k\lambda$. Pitkä aallonpituus tarvitsee suuremman matkaeron samassa kertaluvussa, joten kulma on suurempi.
+```
+
 <figure class="unit-photo"><img src="pics/fy7/laser-diffraction.webp" alt="Pimeässä on vihreitä valopisteitä ruudukkona."><figcaption>Vihreän laservalon diffraktiokuvio. Valo on kulkenut tiheän ristikon läpi. Siksi kirkkaat pisteet ovat ruudukossa. Jokaisessa pisteessä aallot vahvistavat toisiaan.</figcaption></figure>
 
 ### CD-levy heijastushilana
@@ -916,6 +928,12 @@ Kaavassa $d$ on hilavakio ($\text{m}$), $\theta$ on maksimin suunta tulevan valo
   <foreignObject x="161" y="323.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{hila}$</div></foreignObject>
   <foreignObject x="380" y="315.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{kohti varjostinta}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Hilan hilavakio on $2{,}00\,\mu\text{m}$ ja valon aallonpituus on $500\,\text{nm}$. Missä kulmassa ensimmäisen kertaluvun maksimi on?
+---
+Hilayhtälöstä $\sin\theta = \tfrac{k\lambda}{d} = \tfrac{1 \cdot 0{,}500\,\mu\text{m}}{2{,}00\,\mu\text{m}} = 0{,}250$. Siis $\theta = 14{,}5^\circ$.
+```
 
 ### Hilavakio viivatiheydestä
 Hilan valmistaja ilmoittaa yleensä, kuinka monta viivaa hilassa on millimetrin matkalla. Jos millimetrillä on $N$ viivaa, vierekkäisten viivojen etäisyys on

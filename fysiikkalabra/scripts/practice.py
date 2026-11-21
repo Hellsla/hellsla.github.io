@@ -198,6 +198,7 @@ def figures(code, lang=i18n.SOURCE, write=True):
         pat = re.compile(r'<svg\b[^>]*\bdata-fig="' + re.escape(name) + r'"[^>]*>.*?</svg>', re.S)
         svg = fn()
         if 'data-fig=' not in svg: svg = svg.replace("<svg ", f'<svg data-fig="{name}" ', 1)
+        import figimage; svg = figimage.apply(svg, f"{page_id(code).lower()}/{name}")   # a figure with a row in lessons/<COURSE>/ASETTELU.tsv is drawn on its picture (work queue 24)
         new = pat.sub(lambda m: svg, new, count=1)
     MISSING[:] = figlib.MISSING if lang != source(code) else []
     figlib.set_language({}, ",")

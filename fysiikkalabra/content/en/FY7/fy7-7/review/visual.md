@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 0ba73bb71e3199c4
-
+CONTENT-HASH: ef772b27667eb949
 ## Blocking
 (none)
-
 ## Polish
 (none)
-
+## Vanhan sisällön löydökset
+(none found in the captures; old content is untouched by this change)
 ## Checked
-- Delta round 3: fy7-7-stage-herata-390.png (Pohdinta) and my own 360 px capture of the retrieval task with all feedback opened: calculation rows aligned at the equals signs, nothing clipped, no page overflow. The capture was of the built preview (Finnish); layout is language-independent.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+batch delta review: the new "Stop and think" blocks (```pysahdy) rendered at 390 px with the answer open (aside, question, Answer summary, answer text and aligned calculation rows): no clipping or horizontal overflow (page scrollWidth 390), maths in KaTeX with units upright and a thin space, decimal point and \cdot/colon notation as the English text uses, fluent wording, block placed right after the paragraph it tests; listed figure captures and fig-row unchanged in layout. Hash identical at start and end.

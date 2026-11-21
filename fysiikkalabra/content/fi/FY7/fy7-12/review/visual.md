@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: fb3b370ff079bc9a
-
+CONTENT-HASH: 3ac93eeaafc93df3
 ## Blocking
 
 ## Polish
 
-## Checked
-- Delta round 3: opened fy7-12-stage-herata-390 (Pohdinta with the closed Kertaa: taittuminen box); layout intact. The only change is 19,8 -> 19,7 degrees in the retrieval feedback; all three occurrences in inquiry.json are LaTeX with {,} and ^\circ.
 
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+## Checked
+batch delta review, round 2: no new pysahdy block in this lesson (the diff is a wording change in an existing block); read the diff for notation and Finnish, ran check_layout.py at 360 px (fi, en, fi-easy): OK. Old content not judged (scope note 2026-11-20); no Vanhan sisällön löydökset.

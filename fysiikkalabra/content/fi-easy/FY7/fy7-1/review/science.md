@@ -1,10 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 8c321638a948f33b
+CONTENT-HASH: ae0d34a7145ea30a
 
 ## Blocking
 
+
 ## Polish
-- The "700 m" option's feedback could add that 700 m is the distance walked, not the displacement.
+
 
 ## Checked
-batch delta review: retrieval task recomputed (hypot(300, 400) = 500 m; 700 and 100 m are wrong, and the feedback says why); exactly one correct option; does not reveal either Ennusta answer (1/r³ falloff, field beside the magnet); new to-scale figure descriptions (B_h north, B_m east; B points down and north in Finland) are correct; lesson-answers.py runs.
+- Delta round 4: pysahdy rivi 376–380, vain sanamuoto "vaakasuora"/"Maan kentän vaakakomponenttia" muuttui; luvut ja symbolit ennallaan.
+- Edellinen Polish korjattu: "vaakasuora kokonaiskenttä" tarkoittaa nyt yksiselitteisesti kahden vaakasuoran kentän summaa $\overline{B}_1 + \overline{B}_2$ (rivi 362), ei Maan koko kenttää pystykomponentteineen (kuva 7).
+- "Sen vaakasuora kenttä … kohtisuorassa Maan kentän vaakakomponenttia vastaan" sulkee pois pystysuoran magneetin kentän; Pythagoraan lauseen ehto (kohtisuorat kentät, rivit 367–374) täyttyy.
+- $B = \sqrt{30^2 + 40^2}\,\mu\text{T} = 50\,\mu\text{T}$ laskettu uudelleen; vastaus ja yksikkö oikein.
+- Sopii seuraavaan kappaleeseen (rivi 382: kompassi kääntyy vaakasuoran kokonaiskentän suuntaan, $\tan\theta = B_\text{m} : B_\text{h}$).
+- Hash sama alussa ja lopussa. Scope: vain pysahdy-lohkot (teacher 2026-11-20), neljäs rajattu kierros.
+
+## Vanhan sisällön löydökset
+Ei löydöksiä tällä kierroksella.

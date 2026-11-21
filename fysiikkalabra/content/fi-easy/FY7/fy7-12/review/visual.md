@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f1f9856c52feb3eb
+CONTENT-HASH: 59e006ea546b1e0a
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- Delta round 3 (fi-easy): opened fy7-12-stage-herata-390 (Pohdinta with the closed Kertaa: taittuminen box); layout intact. The only change is 19,8 -> 19,7 degrees in the retrieval feedback; all three occurrences in inquiry.json are LaTeX with {,} and ^\circ.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review (round 2): fy7-12 (fi-easy) built page, every "Pysähdy ja mieti" block rendered with the answer open and photographed at 360 px (examined for the long chains) and measured at 360 and 1280 px: label, question, Vastaus summary, KaTeX (no red source, no clipped formula, no overflow), decimal comma, units, answer chains laid out as rows; check_layout.py clean at 360/390/1280. The round 1 clip in fy7-1 block 3 is fixed by the shared component. Listed older captures not reopened (unchanged old content). Vanhan sisällön löydökset: none.

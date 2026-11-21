@@ -1,7 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: d08bd86faa0d8205
+CONTENT-HASH: 9ace94216814e81f
 ## Blocking
+(none)
 ## Polish
-- "Extension example." opens the worked example as a bare label; "Extension example:" or a short sentence would read more smoothly.
+- none
 ## Checked
-batch delta review: extension-section note and example label are clear for a 16-19-year-old and match inquiry.json and the exercises, which already call Malus/Brewster calculations extension; new graph figure description gives a screen-reader the data without an answer.
+batch delta review (round 1): the 3 new Pysähdy ja mieti blocks (```pysahdy), each judged for placement, wording, level for a 16-19-year-old, numbers and sign/direction logic recomputed, and consistency with the lesson text, formulas, tables and notation next to it. Old content not reviewed beyond what the blocks rely on.

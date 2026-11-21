@@ -132,6 +132,12 @@ Veden ja ilman rajapinnassa rajakulma on $48{,}8^\circ$. Siksi sukeltaja näkee 
 
 <figure class="unit-photo"><img src="pics/fy7/tir-wine-glass.webp" alt="Käsi pitää viinilasia. Vihreä lasersäde kulkee lasin jalassa."><figcaption>Vihreä lasersäde viinilasin jalassa. Säde osuu lasin pintaan niin vinosti, että se heijastuu kokonaan takaisin lasiin. Se ei pääse ulos ilmaan.</figcaption></figure>
 
+```pysahdy
+Valo tulee vedestä ilmaan $70^\circ$:n tulokulmalla. Veden ja ilman rajakulma on $48{,}8^\circ$. Pääseekö osa valosta ilmaan?
+---
+Ei pääse. Tulokulma $70^\circ$ on suurempi kuin rajakulma $48{,}8^\circ$. Siksi kaikki valo heijastuu takaisin veteen.
+```
+
 ### Vain suuremmasta taitekertoimesta pienempään
 Kokonaisheijastuminen voi tapahtua vain, kun valo tulee aineesta, jonka taitekerroin on suurempi, aineeseen, jonka taitekerroin on pienempi. Kun valo tulee ilmasta veteen tai lasiin, se taittuu normaalia kohti. Silloin taittunut säde on olemassa jokaisella tulokulmalla. Osa valosta pääsee aina toiseen aineeseen, vaikka heijastuvan valon osuus kasvaa suurilla tulokulmilla.
 
@@ -169,6 +175,12 @@ Jos valo tulee kuidun päähän liian jyrkässä kulmassa, se osuu rajapintaan p
 </svg>
 
 <figure class="unit-photo"><img src="pics/fy7/optical-fibres.webp" alt="Valokaapeli kiepillä mustalla pohjalla. Kaapelin päissä loistaa punaista valoa."><figcaption>Punainen valo menee valokaapelin toiseen päähän ja tulee ulos toisesta päästä. Valo heijastuu kuidun sisällä ja kulkee kiepin ympäri.</figcaption></figure>
+
+```pysahdy
+Mitä jos kuidun ytimen ja kuoren taitekertoimet ovat yhtä suuret, $n_1 = n_2$? Voisiko valo silti kokonaisheijastua ytimen ja kuoren rajapinnassa?
+---
+Ei voisi. Silloin $\sin\alpha_\text{r} = n_2 : n_1 = 1$ ja rajakulma olisi $90^\circ$. Tulokulma ei voi olla näin suuri. Siksi valo ei kokonaisheijastuisi vaan etenisi kuoreen ja vuotaisi ulos kuidusta.
+```
 
 ### Miksi kuidussa on kuori
 Paljas lasisauva pitää valon sisällään myös ilmassa. Se pitää sisällään jopa jyrkemmin tulevan valon, koska lasin ja ilman taitekertoimien ero on suuri ja rajakulma on siksi pieni.
@@ -287,6 +299,12 @@ Rajakulma on olemassa vain, kun $n_1 > n_2$. Muuten $n_2 : n_1 \ge 1$, eikä mil
   <foreignObject x="418.5" y="181.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{timantti}$</span></div></foreignObject>
   <foreignObject x="320" y="97.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$n_2 = 1{,}00\ (\text{ilma})$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Aineen taitekerroin on $2{,}00$. Mikä on rajakulma tämän aineen ja ilman rajapinnassa?
+---
+Ilman taitekerroin on $1{,}00$. Siis $\sin\alpha_\text{r} = 1{,}00 : 2{,}00 = 0{,}500$. Rajakulma on $\alpha_\text{r} = 30{,}0^\circ$.
+```
 
 ### Valon kulkuaika kuidussa
 Aineessa, jonka taitekerroin on $n$, valo etenee nopeudella $v = c : n$ (luku *Valon heijastuminen ja taittuminen*). Siksi matkaan $s$ kuluu aika

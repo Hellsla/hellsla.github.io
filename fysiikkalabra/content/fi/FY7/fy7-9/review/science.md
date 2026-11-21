@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 9e67b6ab8a650b06
+CONTENT-HASH: 9c9336bb9e946c7e
 
 ## Blocking
 
-
 ## Polish
-- Glowing iron emits very little at 400 nm (its peak is in the infrared); "valkohehkuisen raudan" or a plainer source of violet light would fit the chapter's own picture better.
+
 
 ## Checked
-batch delta review: f = c/lambda: 4,3e14 Hz (700 nm), 7,5e14 Hz (400 nm) recomputed; one correct option, both distractors' feedback right; Ennusta (Wien shift, 300 K stone) not revealed.
+batch delta review: round 2, three new pysahdy blocks: all EM waves travel at c in vacuum; a room-temperature body emits almost only infrared, visible glow from about 800 K (same value as the theory paragraph); Wien: 2,898·10^-3 m·K / 2900 K = 0,999 µm ≈ 1,0 µm, infrared, uses the lesson's b and comes after the Kaava section.
+
+## Vanhan sisällön löydökset
+Ei löydöksiä.

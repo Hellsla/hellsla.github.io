@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: cf74760874cf6a09
+CONTENT-HASH: 93778334fab81e07
 ## Blocking
-- None.
+
 ## Polish
-- The retrieval prompt mentions 'vaihtojännitettä', a faint cue towards the AC/DC point of Ennuste 1; acceptable, could be dropped.
+- none
 ## Checked
-batch delta review: Round-1 blocker fixed: retrieval is now effective value of socket voltage (325 V -> 230 V), prior knowledge from fy7-7 that the transformer works with; Ennuste 1 (battery, DC) is no longer given away. Distractors are real; Finnish clear.
+batch delta review: the three new pysahdy blocks (question, answer, physics, numbers recomputed, S2 wording, fit with the lesson text and its terms); old content not judged.

@@ -145,6 +145,12 @@ The same changing magnetic flux passes through every turn of both coils, so an e
 ### A transformer needs a changing magnetic flux
 A voltage is induced in the secondary coil only when the magnetic flux through it changes. If the primary coil is connected to a battery, a steady direct current flows in the coil, and the magnetic field of the iron core is constant. A constant magnetic flux does not induce a voltage, so the voltage of the secondary coil is zero. A voltage pulse is produced only at the moment when the current is switched on or off, because then the flux changes. This is why the power grid uses alternating current: in the chapter *The generator and alternating current* a generator produces an alternating voltage, and with transformers its size can be changed to suit each purpose.
 
+```pysahdy
+The primary coil is connected to a battery, and the switch has been closed for a long time. What is the voltage of the secondary coil while the current of the primary coil is constant?
+---
+The voltage of the secondary coil is zero. A constant current gives a constant magnetic flux, and a constant flux does not induce a voltage.
+```
+
 ### Power is conserved, current changes
 An ideal transformer does not consume energy, so the power coming into the primary coil is equal to the power leaving the secondary coil. When the load is resistive, power is the product of voltage and current, so when a transformer raises the voltage tenfold, the current falls to a tenth. A transformer therefore does not add energy or power: it exchanges a large current for a high voltage or the other way round. In a real transformer some of the energy becomes internal energy in the resistance of the coils and in the eddy currents of the iron core. That is why the core is built of thin plates insulated from each other (chapter *Lenz's law and eddy currents*). The efficiency of large power-plant transformers is over $99\,\%$.
 
@@ -225,6 +231,12 @@ transformer :: \frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}
 ```
 where $U_1$ is the primary voltage (V), $U_2$ the secondary voltage (V), $N_1$ and $N_2$ the numbers of turns of the primary and secondary coils and $I_1$ and $I_2$ the primary and secondary currents (A). The ratio $N_1 : N_2$ is the turns ratio. The latter equality follows from the conservation of power: $U_1 I_1 = U_2 I_2$. The voltages and currents are effective (rms) values (chapter *The generator and alternating current*). When the voltage increases, the current decreases in the same proportion.
 
+```pysahdy
+The primary coil of a transformer has $460$ turns and its voltage is $230\,\text{V}$. The secondary coil has $40$ turns. What is the secondary voltage when the transformer is ideal?
+---
+The voltages are in the same ratio as the numbers of turns, so $U_2 = U_1 \cdot \tfrac{N_2}{N_1} = 230\,\text{V} \cdot \tfrac{40}{460} = 20.0\,\text{V}$.
+```
+
 ### Power loss of a transmission line
 The principle of power transmission is illustrated with a simplified two-wire circuit: the current flows to the destination along one conductor and returns along the other. A power plant sends a power $P$ at a voltage $U$. The current of the line and the power that becomes internal energy in the line are
 ```latex
@@ -294,6 +306,12 @@ where $P$ is the transmitted power (W), $U$ the transmission voltage (V), $I$ th
   <foreignObject x="300" y="77.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$P = 200\,\text{MW}$</div></foreignObject>
   <foreignObject x="320" y="115.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$R = 6.0\,\Omega$</div></foreignObject>
 </svg>
+
+```pysahdy
+A power plant transmits the same power along a line, but the transmission voltage is raised to three times its value. How does the power loss of the line change?
+---
+The current falls to a third, because $I = P : U$. The power loss $P_\text{h} = R I^2$ falls to a ninth, because the square of the current falls to a ninth.
+```
 
 ### The real transmission grid is three-phase
 The real Finnish transmission grid is three-phase: a line has three phase conductors, and for example $400\,\text{kV}$ is the voltage between the phase conductors, the line voltage. The active power of an evenly loaded three-phase grid is

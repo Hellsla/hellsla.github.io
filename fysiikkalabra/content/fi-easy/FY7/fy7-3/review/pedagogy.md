@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 31b7193e4d111c8b
+CONTENT-HASH: cdd4d85f8949dd84
 ## Blocking
-- None.
+
 ## Polish
-- None.
+- (none)
+
+## Vanhan sisällön löydökset
+(none)
+
 ## Checked
-batch delta review: Retrieval (kompassi, ei virtaa) belongs to the magnetic-field phenomenon, retrieves compass/Earth's field, discloses no Ennuste answer; new wording is clear.
+batch delta review (round 2): new `pysahdy` solution now states the right-hand rule with fingers along the current; physics checked (clockwise seen from P, thumb away from P, P is the south end).

@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0e9256de0c213bf4
+CONTENT-HASH: 666d88a4cc20c442
 
 ## Blocking
 
+
 ## Polish
-- ennuste-kolme (core) still gives the model value $12{,}5\,\%$ (½ · ½ · ½) while the section's calculations are syventävä. This is a fair simplification (C), as noted in round 1. It is no contradiction.
+- (none)
 
 ## Checked
-- delta review (round 2): the Syventävä note now says "Tämän osion laskut ja luvun esimerkki ovat syventäviä, samoin tehtävät, jotka on merkitty syventäviksi". It claims only what is marked: six exercises (L2-04 to L2-08, L3-05) carry "Syventävä tehtävä." No unmarked task is now called syventävä, so the note and the exercise set agree. This closes my exercise-set Polish item, as far as the lesson goes. Whether to mark the other Malus and Brewster tasks is the teacher's call. The core qualitative model (halving of unpolarised light, polarisation by reflection) is still stated before the section. No number or symbol changed. The hash is the same at the start and the end.
+batch delta review: 3 pysahdy blocks: an ideal polariser passes half, 300 W/m², polarised along the transmission axis (right); tilting vertical-axis sunglasses 90° lets the horizontally vibrating glare through (right, consistent with the sunglasses paragraph); Malus 200·cos²60° = 50 W/m² recomputed. Worked-example known/asked split is presentation only.

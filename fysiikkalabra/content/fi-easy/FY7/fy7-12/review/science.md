@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f1f9856c52feb3eb
+CONTENT-HASH: 59e006ea546b1e0a
 
 ## Blocking
 
+
 ## Polish
 
+
 ## Checked
-- Delta, round 3: retrieval (air n = 1,00 into glass n = 1,48 at 30°) recomputed with my own script: sin α2 = 0,5 : 1,48 = 0,3378, α2 = 19,745° -> 19,7°; lesson-answers.py kertaus-alpha2 prints 19.745198, the same.
-- All three feedbacks of the retrieval item now say 19,7°; no 19,8° left in inquiry.json or lesson.md.
-- Toward the normal is still the one correct option; both distractors' feedback is still right.
-- Hash the same at start and end.
+batch delta review: fy7-12 round 2, kolme uutta pysähdystä: $70^\circ > 48{,}8^\circ$ → kokonaisheijastuminen (ideaalinen rajapinta, kuten rivi 95); $n_1 = n_2$ → $\sin\alpha_\text{r} = 1$, rajakulma $90^\circ$, tulokulma aina pienempi, valo etenee kuoreen; $\sin\alpha_\text{r} = 1{,}00 : 2{,}00$, $\alpha_\text{r} = 30{,}0^\circ$ — laskettu uudelleen. Scope: only the pysahdy blocks (teacher 2026-11-20).
