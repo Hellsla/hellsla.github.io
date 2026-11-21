@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f0c0e62473bc90ee
+CONTENT-HASH: 03c5d5d563164802
 
 ## Blocking
 - none
 
 ## Polish
-- Box 3 (after old l.318): $W_\text{akku}$ is the Finnish symbol; the en formula uses $W_\text{battery}$ (l.344).
-
-## Vanhan sisällön löydökset
-- none found in the context read (not blocking by scope).
+- none
 
 ## Checked
-- batch delta review (scope: new pysahdy boxes only, teacher 2026-11-20): 3 boxes: losses into internal energy, efficiency < 100 %; P = 3UI = 6.9 kW; 20/(0.90*5.0) = 4.44 -> 4.4 h recomputed.
+- batch delta review: 85 % stored, 15 % internal energy; I = P : 3U = 6900 W : 690 V = 10 A; t = 20 kWh : (0.90 x 5.0 kW) = 4.4 h (recomputed).

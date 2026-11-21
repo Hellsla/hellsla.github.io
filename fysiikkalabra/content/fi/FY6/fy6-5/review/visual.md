@@ -1,14 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: 08faaee1e3c84178
+VERDICT: PASS
+CONTENT-HASH: 44ec35df3719cdca
 
 ## Blocking
-- [Major] lesson.md, 1. pysahdy-laatikko (haarautumispiste) — kysymys on itsensä kanssa ristiriidassa: "toiseen haaraan lähtee $0{,}30\,\text{A}$. Kuinka suuri virta lähtee toiseen haaraan?" kysyy annettua arvoa, vastaus ($I_3$) koskee kolmatta haaraa — opiskelija ei tiedä, mitä haetaan — korjaus: "…ja yhteen haaraan lähtee $0{,}30\,\text{A}$. Kuinka suuri virta lähtee toiseen haaraan?"
+(none)
 
 ## Polish
-(ei mitään)
-
-## Vanhan sisällön löydökset
-(ei tutkittu; rajattu laajuus)
+- [Minor] Opened "Vastaus" state of the Pysähdy ja mieti boxes is not in any capture and no browser was available to render it; the layout checks (360–1920 px, answers open) were clean in checks.txt, and the widest inline answer formula fits a 360 px box by estimate.
 
 ## Checked
-batch delta review (rajattu): 3 uutta pysahdy-laatikkoa renderöitynä preview/fy6-5.html, vastaukset avattuina 360 ja 1280 px (laatikkokuvat, ei sivun vanhoja kaappauksia): ei punaista KaTeXia, ei vaakavieritystä, ketjut rivittyvät, kieli luettu.
+batch delta review (round 2, scope: Pysähdy ja mieti boxes only): the new/changed boxes' wording, units, decimal comma and LaTeX read from the diff and source; box rendering confirmed in captures fy6-5-stage-selita-390-1, fy6-5-theory-1280-1, fy6-2-stage-selita-390-5, fy6-10-stage-selita-390-7 (label, question, closed Vastaus, no clipping at 390 px or 1280 px, no red KaTeX); the same shared component renders every lesson's boxes.

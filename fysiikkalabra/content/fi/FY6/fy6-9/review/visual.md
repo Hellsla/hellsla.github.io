@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: db25feb710e74807
+CONTENT-HASH: a5c58b7599ab1e1e
 
 ## Blocking
-(ei mitään)
+(none)
 
 ## Polish
-- [Minor] Laatikko 3: "…erotukseen $U_\text{lat} - E$ ja se pienenee" — "se" viittaa kahteen asiaan; kirjoita "ja erotus pienenee latauksen edetessä".
-
-## Vanhan sisällön löydökset
-(ei tutkittu; rajattu laajuus)
+- [Minor] Opened "Vastaus" state of the Pysähdy ja mieti boxes is not in any capture and no browser was available to render it; the layout checks (360–1920 px, answers open) were clean in checks.txt, and the widest inline answer formula fits a 360 px box by estimate.
 
 ## Checked
-batch delta review (rajattu): 3 uutta pysahdy-laatikkoa renderöitynä preview/fy6-9.html, vastaukset avattuina 360 ja 1280 px (laatikkokuvat, ei sivun vanhoja kaappauksia): ei punaista KaTeXia, ei vaakavieritystä, ketjut rivittyvät, kieli luettu.
+batch delta review (round 2, scope: Pysähdy ja mieti boxes only): the new/changed boxes' wording, units, decimal comma and LaTeX read from the diff and source; box rendering confirmed in captures fy6-5-stage-selita-390-1, fy6-5-theory-1280-1, fy6-2-stage-selita-390-5, fy6-10-stage-selita-390-7 (label, question, closed Vastaus, no clipping at 390 px or 1280 px, no red KaTeX); the same shared component renders every lesson's boxes.

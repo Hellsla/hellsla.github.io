@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8f6b7c6725bc7990
+CONTENT-HASH: 36df78a1291d26cb
 
 ## Blocking
 - none
 
 ## Polish
-- none
-
-## Vanhan sisällön löydökset
-- none found in the context read (not blocking by scope).
+- Rubber box: "its charges are not able to move" could say "it has practically no charges that can move freely" (bound charges do shift slightly; C, not an error).
 
 ## Checked
-- batch delta review (scope: new pysahdy boxes only, teacher 2026-11-20): 3 boxes: copper free electrons vs wood insulator; Q = It doubling; E = UQ, 3.0 V gives 2x. Each answerable from the paragraph above.
+- batch delta review: rubber-glove insulator box (wording); Q = It box unchanged in physics.

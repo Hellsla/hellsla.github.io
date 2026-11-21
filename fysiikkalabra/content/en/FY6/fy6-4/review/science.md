@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 10ab9a8ce6dcc209
+CONTENT-HASH: f6861355e01b5352
 
 ## Blocking
 - none
@@ -7,8 +7,5 @@ CONTENT-HASH: 10ab9a8ce6dcc209
 ## Polish
 - none
 
-## Vanhan sisällön löydökset
-- none found in the context read (not blocking by scope).
-
 ## Checked
-- batch delta review (scope: new pysahdy boxes only, teacher 2026-11-20): 4 boxes: same series current 0.20 A; parallel R < 10 ohm; 12*4.0/16 = 3.0 ohm recomputed, 2 s.f.
+- batch delta review: series current box reworded; same 0.20 A, one path, right.

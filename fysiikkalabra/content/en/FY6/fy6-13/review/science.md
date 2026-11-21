@@ -1,14 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: de2b39d34c48b9b0
+VERDICT: PASS
+CONTENT-HASH: e3b99773173d0ff6
 
 ## Blocking
-- Box 2 (after old l.288), significant figures: data '3 MV/m' has one significant figure, answer '3.0 kV' gives two. Either write $3.0\,\text{MV/m}$ in the question or answer 'about 3 kV'. (Air ~3 MV/m is a fair value.)
-
-## Polish
 - none
 
-## Vanhan sisällön löydökset
-- none found in the context read (not blocking by scope).
+## Polish
+- The dielectric box says U decreases. That holds at constant Q (capacitor disconnected). The figure above it says "same Q", but one clause "when the charge stays the same" in the box would close the gap to the later section on a connected source (B, minor).
 
 ## Checked
-- batch delta review (scope: new pysahdy boxes only, teacher 2026-11-20): 3 boxes: dielectric polarization lowers E and U, C = Q/U rises (correct mechanism); U_max = 3e6*1.0e-3 = 3000 V (s.f. finding); W = 0.5*10e-6*20^2 = 2.0 mJ recomputed.
+- batch delta review: polarization box; paper U_max = E_max d doubles with d (16e6 V/m x 0.010 mm = 160 V); W = 1/2 C U^2 = 2.0 mJ (recomputed).

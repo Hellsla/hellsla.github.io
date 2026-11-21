@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 217e9dbc5f7a9827
+CONTENT-HASH: 3f8d5f6a018929fb
 
 ## Blocking
-(ei mitään)
+(none)
 
 ## Polish
-- [Minor] Laatikko 2: "Miten sama ajassa poikkileikkauksen läpi kulkeva varaus muuttuu?" on kömpelö; parempi "Miten tietyssä ajassa poikkileikkauksen läpi kulkeva varaus muuttuu?"
-
-## Vanhan sisällön löydökset
-(ei tutkittu; rajattu laajuus)
+- [Minor] Opened "Vastaus" state of the Pysähdy ja mieti boxes is not in any capture and no browser was available to render it; the layout checks (360–1920 px, answers open) were clean in checks.txt, and the widest inline answer formula fits a 360 px box by estimate.
 
 ## Checked
-batch delta review (rajattu): 3 uutta pysahdy-laatikkoa renderöitynä preview/fy6-1.html, vastaukset avattuina 360 ja 1280 px (laatikkokuvat, ei sivun vanhoja kaappauksia): ei punaista KaTeXia, ei vaakavieritystä, ketjut rivittyvät, kieli luettu.
+batch delta review (round 2, scope: Pysähdy ja mieti boxes only): the new/changed boxes' wording, units, decimal comma and LaTeX read from the diff and source; box rendering confirmed in captures fy6-5-stage-selita-390-1, fy6-5-theory-1280-1, fy6-2-stage-selita-390-5, fy6-10-stage-selita-390-7 (label, question, closed Vastaus, no clipping at 390 px or 1280 px, no red KaTeX); the same shared component renders every lesson's boxes.
