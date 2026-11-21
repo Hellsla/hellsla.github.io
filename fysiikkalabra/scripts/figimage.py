@@ -59,9 +59,10 @@ def layout(code):
 
 
 def code_of(fid):
-    """The module a figure id belongs to (fy2-4/grid -> FY2), or None (a Sovella set, a unit, an investigation)."""
+    """The module a figure id belongs to (fy2-4/grid -> FY2; also the module's exam and Sovella set: fy4-koe/x, fy4-sovella/x -> FY4), or None (a unit, an
+    investigation)."""
     owner = (fid or "").split("/")[0]
-    m = re.match(r"^([a-z]+)(\d+)-[0-9][0-9a-z]*$", owner)        # a lesson of a module (not fy5-sovella, a unit or an investigation)
+    m = re.match(r"^([a-z]+)(\d+)-(?:[0-9][0-9a-z]*|koe|sovella)$", owner)   # a lesson, the exam or the Sovella set of a module (not a unit or an investigation)
     code = f"{m.group(1).upper()}{m.group(2)}" if m else None
     return code if code in courses.curriculum() else None
 

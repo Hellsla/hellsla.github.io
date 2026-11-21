@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 6c50bc2e4f8eeeb4
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 3f8d5f6a018929fb
 
 ## Blocking
-- none
+None. Scope: only the Pysähdy ja mieti -laatikot (round 2); OLD content judged as Polish only.
 
 ## Polish
-- "Kytkentämuutos" and "sähkömagneettinen häiriö" are new words; one clause saying that the change is carried by the electric field would help a 16-year-old (not needed to pass).
+- Kysymys ja vastaus ovat erillään (vastaus `details`-laatikossa), joten vastaus ei paljastu ennen kuin opiskelija on miettinyt. Kolme laatikkoa osuu kohtiin, joissa teksti on juuri esittänyt säännön: eriste, $Q = It$, $U = E : Q$.
+- Each box asks for one step at the level of the text before it (recall, proportional reasoning, proportional reasoning); the doubling answers give the reason (formula, constant $t$ or $Q$), not just the result. Good.
+- Box 3 uses $E = UQ$, a rearrangement the text has not shown; the answer shows it, so the student can follow. Optional: not needed to change.
+- Suomi on selkeää ja termit (eriste, jännite, poikkileikkaus) ovat sanastosta.
+- OLD: the central misconception (current is not consumed in the lamp) and the circuit diagram have no box; the Virtapiiri and Kytkentäkaavio sections are the natural places if the teacher extends the set later.
+- OLD: first box (rubber) recalls what the paragraph above just said, so it tests little; a variant asking about a wire with a damaged insulation would be stronger.
 
 ## Checked
-- Delta in lesson, inquiry feedback (prompt and four options) and the switch-opening paragraph: switching change fast but finite, free electrons already in the wire, drift speed small. The student can follow it; the four options' feedback each repairs its own misconception and no longer says "samalla hetkellä".
-- Wording consistent with the exercises delta ("lähes heti").
-- Round 2: diff HEAD~1 is the one-word fix "Tavallisessa lyhyessä virtapiirissä"; the round-1 typo Polish item is resolved. Still PASS.
+Hash unchanged at start and end. Read the full packet (lesson text, inquiry, checks). Verified the three `pysahdy` fences in this language: placement after the explaining paragraph or figure, question then `---` then answer, units in LaTeX, decimal comma/point, no lesson id shown. Deterministic checks, inquiry and layout at 360 to 1280 px are green in the packet. Did not open captures; the box mechanics are tested by `test_stopthink.py`.

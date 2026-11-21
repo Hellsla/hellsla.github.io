@@ -38,6 +38,12 @@ All matter consists of atoms that contain positively charged protons and negativ
 ### Conductors and insulators
 A substance in which charges are able to move is a **conductor**. In metals some of the electrons are not bound to a single atom but move freely between the metal ions. These are called free electrons. This is why copper, aluminium and other metals conduct electricity well. A substance in which charges are not able to move is an **insulator**: plastic, rubber, glass and dry wood. An electric wire has a copper conductor surrounded by a plastic insulating sheath. The insulator prevents the current from flowing where it should not flow.
 
+```pysahdy
+An electrician wears rubber gloves. Why does rubber protect against an electric current?
+---
+Rubber is an insulator: its charges are not able to move, so a current cannot pass through the glove.
+```
+
 ### Electric circuit
 A lamp is lit only when it is part of a closed **electric circuit**: from a voltage source, such as a battery, a wire leads to the lamp and from the lamp a wire back to the other terminal of the voltage source. A switch opens and closes the circuit. When the switch is opened, a break appears in the circuit. The change caused by switching propagates quickly to the whole circuit, and the current stops flowing. The change does not, however, propagate infinitely fast. Current is not created in the battery and is not used up in the lamp. The same current passes through the lamp as through every other point of the circuit, and the same charge returns to the battery. The lamp does not use up charge but changes electrical energy into light and internal energy of the filament, which is transferred to the surroundings as heat.
 
@@ -336,6 +342,12 @@ where $I$ is the electric current ($\text{A}$), $Q$ the charge that has passed t
   <foreignObject x="180" y="279.5" width="240" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Q\ \text{passes in the time}\ t$</div></foreignObject>
 </svg>
 
+```pysahdy
+The current through a conductor doubles. How does the charge that passes a cross-section in a given time change?
+---
+The charge doubles. By $Q = It$ it is proportional to the current when the time $t$ stays the same.
+```
+
 ### Charge and the number of electrons
 The charge of an electron is $-e$, where $e$ is the elementary charge, the smallest charge that occurs free. When $N$ electrons pass through a cross-section, the charge that has passed is the sum of their charges:
 ```latex
@@ -376,6 +388,12 @@ where $U$ is the voltage ($\text{V}$), $E$ the energy transferred ($\text{J}$) a
   <path d="M240,288 L255,281 L255,295 Z" fill="#7048e8" stroke-linejoin="round"/>
   <foreignObject x="96.5" y="303.5" width="407" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$\text{the same charge returns to the battery}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Two batteries, $1.5\,\text{V}$ and $3.0\,\text{V}$, each move the same charge to a lamp. Which one transfers more energy, and how many times more?
+---
+From $U = E : Q$ we get $E = UQ$. With the same $Q$ the energy is proportional to the voltage, so the $3.0\,\text{V}$ battery transfers twice the energy.
+```
 
 ### Typical values
 Voltages and currents vary a lot in everyday devices. The values in the tables are orders of magnitude.

@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e610ccd099e89397
-
-Mode: delta (one word: "sisäenergiakseen" -> "sisäenergiaksi" in the misconception paragraph)
+CONTENT-HASH: e0ace1a9835f90ee
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Diff only; screenshots are missing for this lesson (review/shots absent), so nothing was opened. The change is a single correct word form (the old "sisäenergiakseen" was ungrammatical and also off the house wording "muuttuu sisäenergiaksi"); no figure, formula, unit or line length is affected, so layout cannot have changed.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review (round 2, scope: Pysähdy ja mieti -laatikot): pakettikaappaukset eivät sisällä laatikoita, joten renderöin sivun (build.py → preview/fi-easy/fy6-5.html) Chromiumilla 360 px:llä, avasin kaikki aside.stop-think-vastaukset ja mittasin: 3 laatikkoa, ei leikkautumista, ei vaakavieritystä, ei KaTeX-virheitä; avasin kuvakaappaukset laatikoista (yksiköt, desimaalipilkku {,}, \cdot, kaksoispisteet kunnossa). Sisältö hash-vaihto vain fy6-10 ja fy6-13 (yksi vastauslause muutettu kesken, ulkoasuun vaikuttamaton).

@@ -1,10 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 3106a31543bf50d5
-
+CONTENT-HASH: 5dd76c8d5bd2d97a
 ## Blocking
 
 ## Polish
-- Valokuvan kuvateksti toistaa edellisen kappaleen väitteen; voisi kysyä oppilaalta, kumpi kytkentä jouluvaloissa on (ei kuitenkaan paljasteta vastausta).
-
+- none
 ## Checked
-batch delta review: jouluvalokuva (alt ja kuvateksti kuvaavat kuvan, kuva sijaitsee rinnankytkennän kotiesimerkin jälkeen, ei paljasta vastausta), Kertaa-tehtävä Ohmin laista (valosarjan lamppu, sama 00\,\Omega$, yhtenevä lukuun), Tunnetut ja kysytty -vaiheen jako kahteen kappaleeseen; kuvakuvaukset ovat selkeitä.
+batch delta review (round 2): the Pysähdy ja mieti box now says first resistor 0,20 A, asks about the second: the ambiguity of 'toisen' is gone and the answer text still fits.

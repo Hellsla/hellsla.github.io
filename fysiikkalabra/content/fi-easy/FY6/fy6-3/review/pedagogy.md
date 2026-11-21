@@ -1,11 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 911ad44be0a90440
+CONTENT-HASH: 5450cdc5671c9c79
 
 ## Blocking
-none
+Ei ole. (Rajattu laajuus: vain kolme uutta pysahdy-ruutua.)
 
 ## Polish
-- Kertaa feedback: after the display block `(luku ...)` follows without a space; add one.
+- Ruutu 2 (2,0 V -> 6,0 V) on samaa ajatusta kuin Tarkista-kysymys "jännite kaksinkertaistetaan" ja ennuste "1,5 V -> 3,0 V"; luvut ja tilanne eroavat, joten ei kaksoiskappale, mutta ruutu jää helpoksi kertaukseksi.
+
+## Vanhan sisällön löydökset
+Ei löydöksiä.
 
 ## Checked
-batch delta review: retrieval choice Q=It (40 C; distractors 2,5/0,40/14 each a real slip, feedback repairs), answers.py, re-broken rows.
+- Ruutu 1 (sama jännite, eri virta) heti resistanssin määritelmän jälkeen: vastaus seuraa kappaleen R = U : I -suhteesta; ei toista tehtävää.
+- Ruutu 2 (jännite kolminkertaistuu) Ohmin lain kappaleen jälkeen: vastaus seuraa lauseesta "jännite kaksinkertaistuu -> virta kaksinkertaistuu" ja vakiolämpötilasta; vastaus yksiselitteinen (virta x3, R vakio).
+- Ruutu 3 (l ja A kaksinkertaiset) resistiivisyyskaavan jälkeen: kaava ja pituuden vaikutus esitetty juuri ennen; ei sama kuin loppukoe (pituus puolet, ala kaksinkertainen) eikä ennuste (vain pituus); vastaus selvä.
+- Kysymykset eivät paljasta vastausta; vastaus on näkyvissä vasta avattaessa. Kieli sujuvaa (fi-easy: lyhyet lauseet).

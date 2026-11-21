@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 7139db41569d0974
+CONTENT-HASH: e965932d3844c971
 
 ## Blocking
 
 ## Polish
-- lesson-answers.py: the comment above kertaus still reads "lamp on 230 V takes 0,26 A"; now a television at 0,43 A.
 
 ## Checked
-batch delta review: kertaus P = UI = 98,9 W ≈ 99 W; 230 V : 0,43 A = 535 Ω ≈ 530 Ω (two figures, correct) named as resistance in the feedback; 0,43 W distractor; P = UI for a TV is a fair C simplification at this level; one correct option.
+batch delta review: recomputed 0,060 kW * 5,0 h = 0,30 kWh; 10,8 MJ : 3,6 MJ/kWh = 3,0 kWh; P = UI = 115 W, E = 0,23 kWh (two significant figures from 0,50 A and 2,0 h).

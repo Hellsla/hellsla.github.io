@@ -223,6 +223,12 @@ Kodin sähköt jaetaan sähkökeskuksessa ryhmiin. Jokaisella ryhmällä on oma 
 
 Ryhmäjohdon johtimilla on pieni resistanssi, ja niissä kehittyy lämpöteho $P = RI^2$ (luku *Sähköteho ja vastuksen lämpeneminen*): kun virta kaksinkertaistuu, johdon lämpöteho nelinkertaistuu. Sulakkeen koko valitaan johdon mukaan: johto määrää, kuinka suuren virran sulake saa päästää läpi. Jos virta on pitkään suurempi, johto ja sen liitokset kuumenevat, eriste vaurioituu ja voi syttyä tulipalo. Sulake katkaisee virran ennen sitä. Pieni ylikuorma voi jatkua pitkäänkin, mutta mitä suurempi ylivirta on, sitä nopeammin sulake toimii; oikosulussa virta katkeaa sekunnin murto-osassa. Tulppasulakkeessa ohut lanka sulaa omasta lämpenemisestään, johdonsuojakatkaisija taas laukeaa ja käännetään takaisin päälle. Palanutta sulaketta ei koskaan korvata suuremmalla.
 
+```pysahdy
+Ryhmäjohdon virta kasvaa kolminkertaiseksi. Kuinka moninkertaiseksi johdon lämpöteho kasvaa?
+---
+Lämpöteho on $P = RI^2$, joten se on verrannollinen virran neliöön. Teho kasvaa $3^2 = 9$-kertaiseksi.
+```
+
 ### Maadoitus ohjaa vikavirran pois ihmisestä
 Pistorasian kahteen reikään tulevat vaihejohdin L ja nollajohdin N. Maadoitetussa pistorasiassa on lisäksi suojamaadoituskoskettimet PE, jotka on kytketty keltavihreään suojamaadoitusjohtimeen eli suojajohtimeen. Kiinteistön sähkökeskuksessa suojajohdin on yhdistetty maadoitukseen ja sähköverkosta tulevaan johtimeen, jota pitkin virta palaa sähkönsyöttöön. Johtimien eristeiden värit ovat Suomessa vakiintuneet: uusissa asennuksissa vaihejohdin on yleensä ruskea, nollajohdin sininen ja suojamaadoitusjohdin keltavihreä. Vanhoissa asennuksissa värit voivat poiketa, eikä johtimen väristä saa päätellä, onko se jännitteetön.
 
@@ -399,6 +405,12 @@ Sulake ei huomaa ihmisen kautta kulkevaa virtaa: sen nimellisvirta on ampeereja,
 
 Vikavirtasuoja ei estä kaikkia iskuja. Jos ihminen koskettaa yhtä aikaa vaihejohdinta ja nollajohdinta, virta palaa nollajohdinta pitkin, eikä vaihe- ja nollajohtimen virtojen välille synny eroa. Siksi jännitteisiin osiin ei kosketa, vaikka ryhmässä olisi vikavirtasuoja.
 
+```pysahdy
+Mitä kahta virtaa vikavirtasuoja vertaa, ja milloin se katkaisee virran?
+---
+Se vertaa vaihejohtimen ja nollajohtimen virtaa. Kun virtojen ero ylittää laukaisuvirran, tavallisesti $30\,\text{mA}$, se katkaisee virran.
+```
+
 ### Eristeen läpilyöntilujuus
 Johtojen muovikuori, pistotulpan runko ja suurjännitejohtojen eristimet erottavat jännitteiset osat ihmisestä. Jokainen eriste kestää kuitenkin vain tietyn suuruisen sähkökentän. Kun kenttä ylittää eristeen **läpilyöntilujuuden**, eriste alkaa johtaa ja sen läpi purkautuu kipinä (luku *Kondensaattori ja sen energia*). Tasaisessa kentässä eristekerros, jonka paksuus on $d$, kestää jännitteen $E_\text{max} d$. Siksi suurempi jännite vaatii paksumman eristeen tai pidemmän ilmavälin, ja eristeen pitää olla ehjä: halkeama, kosteus tai lika heikentää eristystä.
 
@@ -468,6 +480,12 @@ Ryhmän laitteet ovat rinnan samassa jännitteessä, joten jokaisen laitteen vir
 I = \frac{P_1 + P_2 + P_3 + \dots}{U}
 ```
 missä $I$ on ryhmäjohdon kokonaisvirta ($\text{A}$), $P_1, P_2, \dots$ samaan aikaan päällä olevien laitteiden tehot ($\text{W}$) ja $U$ verkkojännite $230\,\text{V}$. Verkkojännite on vaihtojännitteen tehollinen arvo. Tässä luvussa tarkastellaan laitteita, joiden virta ja jännite ovat samanvaiheiset, kuten lämmittäviä laitteita, tai joiden tehokerroin oletetaan likimain yhdeksi. Silloin teho lasketaan kaavalla $P = UI$ kuten tasajännitteellä. Yleisesti vaihtovirtapiirin pätöteho riippuu myös jännitteen ja virran vaihe-erosta. Ryhmä ei ole ylikuormitettu, kun $I$ on enintään sulakkeen nimellisvirta $I_\text{s}$. Laitteiden yhteisteho saa siis olla $10\,\text{A}$:n ryhmässä enintään $230\,\text{V} \cdot 10\,\text{A} = 2300\,\text{W}$ ja $16\,\text{A}$:n ryhmässä $230\,\text{V} \cdot 16\,\text{A} = 3680\,\text{W}$.
+
+```pysahdy
+Samassa ryhmässä ovat päällä silitysrauta ($1{,}1\,\text{kW}$) ja kahvinkeitin ($0{,}70\,\text{kW}$). Kuinka suuri on ryhmäjohdon virta?
+---
+$I = \tfrac{P_1 + P_2}{U}$. Sijoitus: $\tfrac{1100\,\text{W} + 700\,\text{W}}{230\,\text{V}} \approx 7{,}8\,\text{A}$.
+```
 
 ### Kehon läpi kulkeva virta
 Kun ihminen koskettaa jännitteistä osaa ja samalla maata, hänen kehonsa on osa virtapiiriä. Kehon läpi kulkeva virta saadaan Ohmin laista (luku *Resistanssi ja Ohmin laki*):

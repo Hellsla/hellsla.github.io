@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 8380b4ec2808abee
+CONTENT-HASH: d17da58001e2513b
 
 ## Blocking
 
 ## Polish
-- none.
 
 ## Checked
-batch delta review: kertaus unit µN → nN for dust particles: F ∝ q1q2 gives 24 nN, distractors 48 (squared), 12, 6,0 nN with right feedback; magnitude plausible; worked-example split only.
+batch delta review: test-charge box: E = F/q does not depend on q; agrees with the theory paragraph (line 127).

@@ -165,10 +165,22 @@ So a large power alone does not mean a large consumption. A kettle with a power 
   <foreignObject x="152.5" y="256" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$E = 0.20\,\text{kWh}$</span></div></foreignObject>
 </svg>
 
+```pysahdy
+A lamp with a power of $0.060\,\text{kW}$ is on for $5.0\,\text{h}$. How much electrical energy does the lamp use? Give the answer in kilowatt-hours.
+---
+The energy is $E = Pt$. So $E = 0.060\,\text{kW} \cdot 5.0\,\text{h}$, so $E = 0.30\,\text{kWh}$.
+```
+
 <figure class="unit-photo"><img src="pics/fy6/electricity-meter.webp" alt="A black Siemens electricity meter on a wall: a row of number wheels at the top with the last digit in a red box and the unit kWh beside it, and a horizontal rotating disc below."><figcaption>An old electricity meter counts the electrical energy used in a home in kilowatt-hours. The number wheels give the reading, and the disc below them turns faster the more power the home is using.</figcaption></figure>
 
 ### The kilowatt-hour is a unit of energy
 The SI unit of energy is the joule, but the electrical energy of a home is measured and charged in **kilowatt-hours**. One kilowatt-hour is the energy that a device working at a power of $1\,\text{kW}$ uses in an hour. When the power is given in kilowatts and the time in hours, the energy comes out directly in kilowatt-hours. The name tells how it is calculated: kilowatt times hour, not kilowatt per hour. One kilowatt-hour is $3.6$ million joules.
+
+```pysahdy
+How many kilowatt-hours is $10.8\,\text{MJ}$?
+---
+One kilowatt-hour is $3.6\,\text{MJ}$. So $E = 10.8\,\text{MJ} : 3.6\,\text{MJ/kWh}$, so $E = 3.0\,\text{kWh}$.
+```
 
 ### The current of a device in the mains
 The sockets of a home have a voltage of $230\,\text{V}$. It is the effective value of an alternating voltage. This chapter considers simplified circuits in which the current and voltage are in phase, as in heating devices, or the power factor is assumed to be approximately one. Then the active power of a device is calculated in the same way as with a direct voltage: $P = UI$. In general, the active power of an alternating-current circuit also depends on the phase difference between the voltage and the current. From the rated power of a device we therefore get the current $I = P : U$. A kettle draws a current of $2000\,\text{W} : 230\,\text{V} \approx 8.7\,\text{A}$, whereas a phone charger draws only a fraction of an ampere. High-power devices draw a large current, and that is why the fuses of a home's circuits limit how many such devices can be on at the same time in one circuit (chapter *Electrical safety at home and at work*).
@@ -243,6 +255,12 @@ Since the electric power is $P = UI$, the energy can also be calculated from the
 E = UIt
 ```
 where $U$ is the voltage of the device (V) and $I$ the current through it (A).
+
+```pysahdy
+The voltage of a device is $230\,\text{V}$ and its current is $0.50\,\text{A}$. How much energy does it use in $2.0\,\text{h}$? Give the answer in kilowatt-hours.
+---
+The power is $P = UI = 230\,\text{V} \cdot 0.50\,\text{A}$, so $P = 115\,\text{W} = 0.115\,\text{kW}$. So $E = Pt = 0.115\,\text{kW} \cdot 2.0\,\text{h}$, so $E = 0.23\,\text{kWh}$.
+```
 
 An electricity bill charges both for the electrical energy and for its transmission in the electricity network per kilowatt-hour, and in addition monthly basic charges:
 ```latex

@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 90ed9583c4bcd64d
+CONTENT-HASH: 754185c37bb26139
 
 ## Blocking
+- none
 
 ## Polish
-- The retrieval writes the energy as E = Pt, while this chapter's theory says the energy is W because E is the field strength here; consider W = Pt in the feedback.
-- lesson-answers.py still holds the old kertaus keys (150 kV/m); remove them.
+- The sentence now puts the capacitance increase under the same "when the charge stays the same" condition; the capacitance increases whether or not the source is connected (only $U$ falling needs the condition). Could read "...the voltage $U$ decreases; the capacitance $C = \tfrac{Q}{U}$ increases in either case". The lesson's table at "A dielectric when the source is connected or disconnected" states it correctly, so no wrong picture remains.
 
 ## Checked
-batch delta review (re-checked after the concurrent typography edit: a space before "(chapter", "we get" in fy6-8; no physics changed): E = Pt = 4000 W · 0.0010 s = 4.0 J; 4.0 kJ (ms not converted) and 4.0 mJ (kW read as W) wrong with right feedback; one correct option; fy6-6 teaches E = Pt.
+- batch delta review: box 1 (dielectric polarization) now states the constant-charge condition (source disconnected), consistent with the connected/disconnected table and its paragraph; surface charges opposite to the adjacent plate, field reduced, $U = Q/C$ falls: correct; round-2 fix verified; hash same at start and end.

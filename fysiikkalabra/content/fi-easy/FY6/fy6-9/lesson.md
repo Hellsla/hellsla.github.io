@@ -45,6 +45,12 @@ Paristossa ja akussa kemiallinen reaktio pitää napojen välillä jännitteen. 
 
 Akku ei varastoi sähkövarausta. Se on sähköisesti neutraali sekä täynnä että tyhjänä. Kun akku purkautuu, se vain siirtää varauksia piirin ympäri. Jokainen varaus, joka lähtee plusnavasta, palaa miinusnapaan. Ulkoisessa piirissä virta kulkee plusnavasta miinusnapaan. Akun sisällä virta kulkee miinusnavalta plusnavalle.
 
+```pysahdy
+Mitä akussa muuttuu, kun se ladataan? Muuttuuko sen kokonaisvaraus?
+---
+Sähköenergiaa muuttuu akun kemialliseksi energiaksi. Kokonaisvaraus ei muutu: akku pysyy neutraalina.
+```
+
 ### Lataaminen kääntää virran akun sisällä
 Akku ladataan kytkemällä laturin plusnapa akun plusnapaan ja miinusnapa miinusnapaan. Kun laturin jännite on suurempi kuin akun lähdejännite, laturi pakottaa virran akun läpi toiseen suuntaan kuin purkautuessa. Akun sisällä virta kulkee silloin plusnavalta miinusnavalle. Sähköenergiaa muuttuu tällöin akun kemialliseksi energiaksi. Kuvassa ylempi piiri purkaa akkua lamppuun ja alempi lataa sitä. Kun virran suunta akun sisällä kääntyy, myös energia kulkee toiseen suuntaan.
 
@@ -160,6 +166,12 @@ sähkökentän tekemä työ :: W = U Q
 ```
 missä $W$ on energia (Wh tai J), $U$ akun nimellisjännite (V) ja $Q$ akun kapasiteetti (Ah tai C).
 
+```pysahdy
+Akun kapasiteetti on $4{,}0\,\text{Ah}$ ja nimellisjännite $3{,}6\,\text{V}$. Kuinka paljon energiaa akku varastoi?
+---
+Energia on $W = UQ$. Lukuarvoilla $W = 3{,}6\,\text{V} \cdot 4{,}0\,\text{Ah} \approx 14\,\text{Wh}$.
+```
+
 ### Latauspiiri
 Kuvan yksinkertaistetussa latauspiirissä on kolme osaa. Siinä on laturi, jonka jännite on $U_\text{lat}$. Siinä on laturin ja johtojen resistanssi $R$. Siinä on myös akku, jonka lähdejännite on $E$ ja sisäinen resistanssi $R_\text{s}$. Kierretään silmukka virran suuntaan laturin miinusnavalta (luku *Kirchhoffin lait ja potentiaali virtapiirissä*). Potentiaali nousee laturissa $U_\text{lat}$:n verran. Se laskee vastuksessa $RI$ ja akun sisäisessä resistanssissa $R_\text{s} I$. Lisäksi se laskee akun lähdejännitteen $E$ verran, koska virta kulkee akun läpi plusnavalta miinusnavalle. Jännitelain mukaan $U_\text{lat} - RI - R_\text{s} I - E = 0$.
 
@@ -208,6 +220,12 @@ Latausvirta on siis
 I = \frac{U_\text{lat} - E}{R + R_\text{s}}
 ```
 missä $I$ on latausvirta (A), $U_\text{lat}$ laturin jännite (V), $E$ akun lähdejännite (V), $R$ laturin ja johtojen resistanssi ($\Omega$) ja $R_\text{s}$ akun sisäinen resistanssi ($\Omega$). Akku latautuu vain, kun $U_\text{lat} > E$. Jos $U_\text{lat} < E$, virta kääntyy ja akku purkautuu laturiin. Näin ei käy, jos laturissa on diodi, joka päästää virran vain yhteen suuntaan.
+
+```pysahdy
+Laturin jännite $U_\text{lat}$ on pienempi kuin akun lähdejännite $E$. Latautuuko akku?
+---
+Ei lataudu. Silloin $U_\text{lat} - E < 0$, joten laturi ei pysty ajamaan virtaa akun läpi latauksen suuntaan.
+```
 
 Akun napajännite on jännite akun napojen välillä. Latauksen aikana se on
 ```latex

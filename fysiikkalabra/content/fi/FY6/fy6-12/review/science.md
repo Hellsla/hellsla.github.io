@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 8f028a289e8af65c
+CONTENT-HASH: d78878728ba574b2
 
 ## Blocking
 
 ## Polish
-- kertaus: 2,0·10⁻¹⁵ N on an electron means a field of about 12 kV/m; auroral acceleration fields are far weaker (a few kV over thousands of km). Not stated as measured, so not blocking; a smaller force or a lab context would be truer.
-- 4,0·10⁻¹⁵ J feedback: "lyhyempi matka tarkoittaa pienempää työtä" is loose (shorter than what?); "matka alle metrin, joten työ on pienempi kuin F · 1 m" would say it.
 
 ## Checked
-batch delta review: kertaus W = Fs with force along the motion (condition stated): 1,0·10⁻¹⁵ J; 4,0·10⁻¹⁵ = F/s, 2,0·10⁻¹⁵ = F alone; one correct option; cited chapter Työ ja energia exists; lesson-answers.py runs.
+batch delta review: three new boxes: zero-level choice does not affect W = -dEp (correct); 45 V gives 45 eV, conditions stated (from rest, only the electric force does work); W_AB = q(V_A - V_B) = 2,0e-9 C * 50 V = 1,0e-7 J, recomputed.

@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 3d605b0189ef608f
+CONTENT-HASH: 44ec35df3719cdca
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- delta: Yleinen virhekäsitys "sisäenergiakseen" → "sisäenergiaksi": grammar fix only; "vastus muuttaa sähköenergiaa sisäenergiaksi" follows the energy guardrail (P1), charge conservation and "potentiaali pienenee, ei virta" unchanged; no number or symbol changed.
+batch delta review: junction box: 0,50 A + 0,50 A = 1,00 A > 0,80 A, so not possible, correct by the junction rule; loop box: U1/U2 = R1/R2 = 2 with the same current, sum equals the source voltage, correct.

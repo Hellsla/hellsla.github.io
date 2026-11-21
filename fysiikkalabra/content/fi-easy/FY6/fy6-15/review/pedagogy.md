@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e964c37910114b98
-
+CONTENT-HASH: 5bcc779a6fb068f3
 ## Blocking
-
+(none)
 ## Polish
-- None.
-
+- OLD: nothing new found; old text not reviewed in this round.
 ## Checked
-batch delta review: bird sentences (recap and misconception) now say the potential difference is very small and only a very small current flows; clear, consistent with each other and with the correct claim that the body connecting different potentials is the danger.
+- Scope: only the three new pysahdy boxes (and what stops them working); old content not judged.
+- Box 1 (RI^2, current x3): comes after the doubling-to-fourfold statement, asks for transfer; the question does not give the answer (9).
+- Box 2 (what the RCD compares): retrieval right after the explanation, answer is a recall of the text; fits a pause box, no premature disclosure.
+- Box 3 (iron + coffee maker): placed right after the formula I=(P1+P2+...)/U; numbers check out (1800 W / 230 V = 7.8 A); a step before the worked example, no repeat of it.
+- Each box has question and answer separated by the --- line; solutions show the principle, not only the number.
+- Boxes are short, one per stage; workload stays one lesson.
+- Hash unchanged at start and end.

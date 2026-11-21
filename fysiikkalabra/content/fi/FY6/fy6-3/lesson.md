@@ -106,6 +106,12 @@ Komponenttia, joka on valmistettu tietyn suuruiseksi resistanssiksi, sanotaan **
   <foreignObject x="90" y="309.5" width="420" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$I = \text{virta},\ U = \text{jännite},\ R = \text{resistanssi}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Kahden komponentin yli on sama jännite, mutta toisen läpi kulkee suurempi virta kuin toisen. Kummalla on suurempi resistanssi?
+---
+Sillä, jonka läpi kulkee pienempi virta. Kun $U$ on sama, $R = U : I$ on sitä suurempi, mitä pienempi $I$ on.
+```
+
 ### Mistä resistanssi syntyy
 Metallissa positiiviset ionit muodostavat säännöllisen hilan, ja vapaat elektronit liikkuvat niiden lomassa. Kun johtimen päiden välillä on jännite, elektronit ajautuvat johdinta pitkin, mutta ne törmäilevät jatkuvasti värähteleviin ioneihin. Törmäykset jarruttavat elektronien kulkua: tämä on resistanssin syy. Törmäyksissä sähköenergiaa muuttuu johtimen sisäenergiaksi, joten johdin lämpenee. Pitkässä johtimessa elektroni törmää matkallaan useammin, joten resistanssi on suurempi. Paksussa johtimessa elektroneja kulkee rinnakkain enemmän, joten resistanssi on pienempi. Kun metalli kuumenee, ionit värähtelevät voimakkaammin ja törmäyksiä tulee enemmän. Siksi metallijohtimen resistanssi kasvaa lämpötilan noustessa.
 
@@ -284,6 +290,12 @@ jännitehäviö johtimessa :: U = R I
 ```
 Kun jännite kaksinkertaistuu, myös virta kaksinkertaistuu. Ohmin laki ei ole yleinen luonnonlaki vaan monen johdinaineen ominaisuus: se pätee metalleille ja vastuksille vakiolämpötilassa, mutta ei esimerkiksi hehkulampulle, jonka lanka kuumenee, eikä diodille.
 
+```pysahdy
+Metallijohtimen jännite kasvaa arvosta $2{,}0\,\text{V}$ arvoon $6{,}0\,\text{V}$, ja lämpötila pysyy samana. Miten virta ja resistanssi muuttuvat?
+---
+Jännite kolminkertaistuu, joten Ohmin lain mukaan virtakin kolminkertaistuu. Resistanssi $R = U : I$ pysyy samana.
+```
+
 ### Ominaiskäyrä
 Komponentin **ominaiskäyrä** on kuvaaja, joka näyttää, miten komponentin jännite ja virta riippuvat toisistaan. Kun virta $I$ on vaaka-akselilla ja jännite $U$ pystyakselilla, Ohmin lakia noudattavan vastuksen ominaiskäyrä on origon kautta kulkeva suora, ja suoran kulmakerroin on resistanssi $R$. Hehkulampun ominaiskäyrä on kaareva. Lampun volframilanka kuumenee sitä enemmän, mitä suurempi virta sen läpi kulkee, ja kuuman langan resistanssi on suurempi. Jokaisessa käyrän pisteessä resistanssi on kuitenkin suhde $U : I$, eli origosta pisteeseen piirretyn suoran kulmakerroin, ei käyrän jyrkkyys siinä kohdassa.
 
@@ -403,6 +415,12 @@ Resistiivisyys on aineen ominaisuus: se kertoo, kuinka huonosti aine johtaa säh
 | kromnikkeli | $1{,}1 \cdot 10^{-6}$ |
 
 Kuparin resistiivisyys on pieni, joten paksut kuparijohtimet päästävät virran kulkemaan lähes ilman jännitehäviötä. Leivänpaahtimen lanka on kromnikkeliä, jonka resistiivisyys on yli 60-kertainen kupariin verrattuna, ja lisäksi lanka on ohut. Siksi sen resistanssi on suuri, ja juuri lanka lämpenee.
+
+```pysahdy
+Lanka korvataan samaa ainetta olevalla langalla, jonka pituus ja poikkipinta-ala ovat kumpikin kaksinkertaiset. Miten resistanssi muuttuu?
+---
+Se ei muutu. Kaavassa $R = \rho \tfrac{l}{A}$ sekä $l$ että $A$ kaksinkertaistuvat, joten suhde $\tfrac{l}{A}$ pysyy samana.
+```
 
 ## Esimerkki
 Konstantaanilangasta, jonka poikkipinta-ala on $0{,}20\,\text{mm}^2$, halutaan tehdä vastus, jonka resistanssi on $12\,\Omega$. Kuinka pitkä lanka tarvitaan? Konstantaanin resistiivisyys on $5{,}0 \cdot 10^{-7}\,\Omega\cdot\text{m}$.

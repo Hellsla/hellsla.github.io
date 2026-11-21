@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 4c8de26566c1ac0d
+CONTENT-HASH: 0eb7a990c204a076
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] OLD: nothing in the new boxes; inline \\tfrac fractions in answers are small but legible.
 
 ## Checked
-- round 3, delta review (reflow): proof sheets en-fy6-15-lesson-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
-
-## Scores
-illustrations n/a · typography 5 · Finnish n/a · accessibility 4
+batch delta review (round 2): the three "Stop and think" boxes (aside.stop-think) of fy6-15, rendered by me from a fresh build at 360 px with the answers opened (the lesson-folder captures predate the boxes): no clipping, no horizontal overflow (page width 360), no KaTeX error, decimal point and upright units correct, question and answer read clearly.

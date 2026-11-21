@@ -55,6 +55,11 @@ class L:                                            # what lint_lesson.check_fig
 l = L(); lint_lesson.check_figures(l, mono)
 check("a figure on a picture is not a monochrome sketch", not l.found, l.found)
 
+check("code_of: a lesson, the exam and the Sovella set of a module",
+      [figimage.code_of(f) for f in ("fy4-3/x", "fy4-koe/fy4-k1-fbd", "fy4-sovella/fy4-s3-collision", "fy5-sovella/a")] == ["FY4", "FY4", "FY4", "FY5"])
+check("code_of: a unit, an investigation or nothing is still None",
+      [figimage.code_of(f) for f in ("tvt-epavarmuus/a", "fy4-koe-x/a", "", None, "fy99-koe/a")] == [None] * 5)
+
 # the real layouts
 tot = 0
 for code in courses.codes():

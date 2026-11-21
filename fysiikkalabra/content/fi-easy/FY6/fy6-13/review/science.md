@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: eb1764066450eea3
+CONTENT-HASH: 89b473aed685783d
 
 ## Blocking
 
 ## Polish
-- The retrieval writes energy as E = Pt (as the cited chapter does) while this lesson writes energy W and uses E for field strength; a word 'energia E' is there, so not misleading, but W would match the lesson.
-- `lesson-answers.py` keeps the old kertaus keys (150 kV/m) beside the new ones; dead lines.
+- Box 1 (eriste): the condition (levyjen varaus pysyy samana, lähde irrotettu) is now in the answer, which is enough (the box follows the same-Q figure and paragraph); putting it in the question too would make the "siksi jännite pienenee" premise explicit before the student answers.
 
 ## Checked
-batch delta review: retrieval E = Pt = 4000 W · 0,0010 s = 4,0 J; distractors 4,0 kJ (ms not converted) and 4,0 mJ (kW as W) recomputed, feedback correct; one correct option; worked-example stage split only.
+batch delta review: box 1 physics (polarisation charges opposite to the adjacent plate weaken the field; at constant Q, U falls and C = Q/U grows) agrees with the lesson's table "Lähde kytkettynä / irrotettuna"; box 2 $U_\text{max} = E_\text{max} d$ proportional to d, $E_\text{max}$ a material property (uniform layer), correct; box 3 recomputed $W = \tfrac12 \cdot 10\,\mu\text{F} \cdot (20\,\text{V})^2 = 2{,}0\,\text{mJ}$, two figures justified; no guardrail breaks, no "lämmöksi".

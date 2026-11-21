@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: fbb5ad093960f7f4
+CONTENT-HASH: b54d1bd97a313d64
 
 ## Blocking
+- none
 
 ## Polish
-- The bird premise is hypothetical ("Suppose ... were"); fine, and it sets up this chapter's point that a bird on one wire has almost no voltage across it.
+- none
 
 ## Checked
-batch delta review (re-checked after the concurrent typography edit: a space before "(chapter", "we get" in fy6-8; no physics changed): I = U/R = 4.0 V : 2000 Ω = 2.0 mA recomputed; distractors 2.0 A (k forgotten), 8.0 kA (product), 500 A (inverse) wrong with right feedback; lesson-answers agree.
+- batch delta review: junction: 0.50 A + 0.50 A = 1.00 A > 0.80 A, so no (right); R1 = 20 ohm, R2 = 10 ohm, same I, U1 = 2 U2 (recomputed), U = R1 I + R2 I.
