@@ -42,10 +42,6 @@ katselmoitu sisältö, ja yhdistäminen on opettajan julkaisupäätös. Toteutus
 ### 0h. Generoidut tiedostot CI:lle (opettaja 2026-11-17, 0g:n jälkeen)
 `docs/figures/catalog.json`, `docs/assessment/<COURSE>.md` ja `docs/coverage/<COURSE>.md` aiheuttavat saman mainin yhdistys -ristiriidan kuin `site/`. CI generoi ne ja tarkistaa vastaavuuden; `figcat.py find` generoi katalogin tarvittaessa paikallisesti. Ensin suunnitelma, kuten 0g (`docs/audits/2026-11-17-0g-site-suunnitelma.md` osa 9). Jaettu muutos: yksin, 0g:n jälkeen.
 
-## 0i. Jaettu: Pysähdy-vastausten kaavarivitys ja figimage-omistajat (opettaja 2026-11-21, tilapäinen neljäs tekijä)
-Varattu: claude/jaettu-stopthink-figimage
-`stopthink.as_html`-vastaus `mathlayout.display_chains()`:n läpi (FY7 #779); `figimage.code_of` tunnistaa `<moduuli>-koe` ja `<moduuli>-sovella` (FY4 #780). Ajetaan yksin.
-
 ## 4. FY10:n tutkimusten ja TVT-ohjeiden korjaukset (opettaja 2026-11-13)
 Varattu: claude/fy10-taulukko-otsakkeet (taulukko-otsakkeet 390 px; opettaja 2026-11-18: otsakkeet lyhennetään)
 Auditointi tehty (#536), Major-korjaukset ja sisältöosa tehty (#549, #645; loki §4). Erä 1 (jaetut komponentit) tehty (PR #709: apulinkit, listojen numerointi, laskurivit listoissa, tyhjät taulukkorivit, 28×28-kaappaukset; loki §4). Jäljellä, opettajan päätettävä: taulukoiden otsakkeet 390 px:ssä, Minor-erä ja yhteinen kuvasääntö (nimiöt vähintään noin 12 px 390 px:ssä,
