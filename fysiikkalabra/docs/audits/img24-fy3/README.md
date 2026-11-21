@@ -10,3 +10,8 @@ Ei tässä PR:ssä (avoin kohta, koordinaattorin päätös): seitsemän käsin `
 `fy3-16/~lesson-2`, `fy3-16/~lesson-4`. Ne jäävät ennalleen.
 
 Opettajan päätöksen (`PAATOS.txt`) huomiot koskevat mm. `fy3-12/earth-flows` (kuva rajattu eri tavalla kuin alkuperäinen).
+
+`fy3-4_water-column_leikkaus_1280.webp` ja `fy3-12_earth-flows_leikkaus_1280.webp`: vasen nykyinen, keskellä uusi sivulla
+(leikattuna), oikealla koko kuvatiedosto ilman merkintöjä, punainen katkoviiva = kuvan (viewBox) reuna. Rivin laatikko
+ylittää viewBoxin: water-column 18 px oikealle ja 19 px alas (1280 px:llä), earth-flows 9 px alas; leikkautuva osa on
+molemmissa pelkkää paperin väriä, piirros ei leikkaudu.
