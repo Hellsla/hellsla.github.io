@@ -84,9 +84,9 @@ Albert Einstein päätteli vuonna 1917, että on olemassa myös kolmas tapahtuma
 </svg>
 
 ```pysahdy
-Stimuloidussa emissiossa yhdestä fotonista tulee kaksi. Absorboituuko saapuva fotoni, ja mistä uuden fotonin energia tulee?
+Valopulssissa on $1000$ fotonia, joiden aallonpituus on $650\,\text{nm}$. Pulssi kulkee aineen läpi, jossa on runsaasti virittyneitä atomeja, ja jokainen fotoni aiheuttaa yhden stimuloidun emission. Kuinka monta fotonia tulee ulos ja kuinka paljon energiaa aine on antanut valolle yhteensä? Käytä $hc = 1240\,\text{eV}\,\text{nm}$.
 ---
-Saapuva fotoni ei absorboidu vaan jatkaa matkaansa. Uuden fotonin energia tulee viritetyltä atomilta, joka siirtyy tasolta $E_2$ tasolle $E_1$.
+Jokaista saapuvaa fotonia kohti syntyy yksi uusi, joten ulos tulee $2000$ fotonia. Uusia fotoneja on $1000$, ja kunkin energia on $hf = \tfrac{hc}{\lambda} = \tfrac{1240\,\text{eV}\,\text{nm}}{650\,\text{nm}} = 1{,}91\,\text{eV}$. Aine antaa valolle energiaa $1000 \cdot 1{,}91\,\text{eV} \approx 1{,}9\,\text{keV}$.
 ```
 
 ### Populaatioinversio
@@ -199,9 +199,9 @@ Puolijohdekvanttipisteen väri voidaan siis valita sen koolla, vaikka aine on sa
 <figure class="unit-photo"><img src="pics/fy8/helium-neon-laser.webp" alt="Musta laatikkomainen laite, jonka kyljessä lukee He-Ne LASER, on pöydällä telineessä; sen päässä loistaa punainen valo, ja edessä on pidike."><figcaption>Helium-neonlaser optiikan koeasetelmassa. Sähköpurkaus pumppaa putken kaasun, ja putken päiden peilit vahvistavat valon kapeaksi punaiseksi säteeksi, jonka aallonpituus on $633\,\text{nm}$.</figcaption></figure>
 
 ```pysahdy
-Valmistaja haluaa kvanttipisteitä, jotka lähettävät vihreän sijasta punaista valoa. Pitääkö pisteet tehdä suuremmiksi vai pienemmiksi?
+Kadmiumselenidistä tehty kvanttipiste lähettää sinistä valoa aallonpituudella $450\,\text{nm}$. Käytä $hc = 1240\,\text{eV}\,\text{nm}$. Laske fotonin energia ja päättele, onko piste halkaisijaltaan suurempi vai pienempi kuin $2{,}0\,\text{nm}$:n piste. Kuinka paljon pisteen energia-aukko ylittää ison kiteen energia-aukon $1{,}74\,\text{eV}$?
 ---
-Suuremmiksi. Punaisen valon aallonpituus on pidempi kuin vihreän, joten sen fotonien energia on pienempi. Tarvitaan pienempi energia-aukko, ja aukko on pienempi suuremmassa pisteessä.
+Fotonin energia on $\tfrac{hc}{\lambda} = \tfrac{1240\,\text{eV}\,\text{nm}}{450\,\text{nm}} \approx 2{,}76\,\text{eV}$, ja energia-aukko on likimain tämän suuruinen. Se on suurempi kuin $2{,}0\,\text{nm}$:n pisteen aukko ($480\,\text{nm}$ vastaa $2{,}58\,\text{eV}$), joten piste on pienempi kuin $2{,}0\,\text{nm}$. Ylitys on $2{,}76\,\text{eV} - 1{,}74\,\text{eV} \approx 1{,}0\,\text{eV}$.
 ```
 
 ### Kvanttirakenteiden sovelluksia

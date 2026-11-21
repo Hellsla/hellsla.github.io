@@ -252,9 +252,9 @@ The light of almost all galaxies is redshifted, and the more so the farther away
 Redshift arises when the expansion of space stretches the wavelength of light as it travels from the galaxy to us. For nearby galaxies, the redshift can be interpreted like the sound of a receding source: the faster the source recedes, the longer the wavelength that arrives.
 
 ```pysahdy
-Seen from us, galaxy B is twice as far away as galaxy A in the same direction, and B recedes twice as fast as A. How does B move as seen from A, and what does this tell about the centre of the universe?
+The Hubble constant is $70\,\tfrac{\text{km/s}}{\text{Mpc}}$. Seen from us, galaxy A is $60\,\text{Mpc}$ away and galaxy B, in the same direction, $120\,\text{Mpc}$. How fast does B recede as seen from galaxy A, and how far is B from A?
 ---
-From A, galaxy B is as far away as A is from us, so B recedes from A as fast as A recedes from us. A sees the same law as we do, so we are not a special centre.
+$v_\text{A} = 70 \cdot 60 = 4200\,\tfrac{\text{km}}{\text{s}}$ and $v_\text{B} = 70 \cdot 120 = 8400\,\tfrac{\text{km}}{\text{s}}$. Seen from A, B recedes at $8400 - 4200 = 4200\,\tfrac{\text{km}}{\text{s}}$ at a distance of $120\,\text{Mpc} - 60\,\text{Mpc} = 60\,\text{Mpc}$. It is the same law $v = H_0\,d$, so we are not a special centre.
 ```
 
 ### The Big Bang
@@ -294,9 +294,9 @@ The nuclei did not get electrons around them right away. The energy of the photo
 The light released then is still on its way. The expansion has stretched its wavelengths by a factor of about $1100$, so now it is microwaves with a typical wavelength of about $1.06\,\text{mm}$. This is the **cosmic background radiation**. Arno Penzias and Robert Wilson discovered it in 1965. It arrives almost evenly from every direction, and its spectrum corresponds to a body at a temperature of $2.725\,\text{K}$.
 
 ```pysahdy
-Why can no telescope see light from the time before about $380\,000$ years, although the universe is older than that?
+A photon with just enough energy to ionise hydrogen, $13.6\,\text{eV}$, was released from the scattering layer, and the expansion has stretched its wavelength by a factor of $1100$. What is the photon's energy now, and can it ionise a hydrogen atom?
 ---
-Before that, free electrons kept scattering the photons in every direction, so light could not travel straight to us. The cosmic background radiation is the earliest light that reaches us.
+Energy is inversely proportional to wavelength, so $E = \tfrac{13.6\,\text{eV}}{1100} \approx 0.012\,\text{eV}$. That is a thousandth of the ionisation energy, so the photon cannot ionise a hydrogen atom.
 ```
 
 ### Stars make the heavier elements
@@ -510,9 +510,9 @@ where $v$ is the recession speed, $d$ the distance of the galaxy and $H_0$ the *
 </svg>
 
 ```pysahdy
-The Hubble constant is $70\,\tfrac{\text{km/s}}{\text{Mpc}}$. At what speed does a galaxy at a distance of $100\,\text{Mpc}$ recede?
+The Hubble constant is $70\,\tfrac{\text{km/s}}{\text{Mpc}}$. a) At what speed does a galaxy at a distance of $100\,\text{Mpc}$ recede? b) At what distance does a galaxy recede at $14\,000\,\tfrac{\text{km}}{\text{s}}$?
 ---
-$v = H_0\,d = 70\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 100\,\text{Mpc} = 7000\,\text{km/s}$.
+a) $v = H_0\,d = 70\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 100\,\text{Mpc} = 7000\,\tfrac{\text{km}}{\text{s}}$. b) $d = \tfrac{v}{H_0} = \tfrac{14\,000\,\text{km/s}}{70\,\text{km/s/Mpc}} = 200\,\text{Mpc}$.
 ```
 
 ### Extension: the age of the universe from the Hubble constant

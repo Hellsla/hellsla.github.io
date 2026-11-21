@@ -186,9 +186,9 @@ Luun taakse osuu siksi vähemmän säteilyä, ja luu näkyy kuvassa vaaleana. Ke
 Tietokonetomografiassa (TT) röntgenputki ja ilmaisimet kiertävät potilaan ympäri. Laite mittaa vaimenemisen tuhansista suunnista. Tietokone laskee mittauksista, kuinka paljon kukin pieni tilavuusalkio vaimentaa. Tuloksena on poikkileikkauskuva, jossa näkyvät myös toistensa takana olevat elimet. TT-tutkimuksen annos on kuitenkin kymmeniä kertoja suurempi kuin keuhkojen röntgenkuvan annos.
 
 ```pysahdy
-Sekä keuhkojen röntgenkuvaus että keuhkojen TT käyttävät röntgensäteilyä. TT:n annos on kuitenkin kymmeniä kertoja suurempi. Miksi?
+Tietokonetomografiassa otetaan $800$ projektiota, joista kukin antaa annoksen $0{,}010\,\text{mSv}$. Keuhkojen röntgenkuvan annos on $0{,}1\,\text{mSv}$. Kuinka moninkertainen TT:n kokonaisannos on röntgenkuvaan verrattuna?
 ---
-TT mittaa vaimenemisen tuhansista suunnista. Potilas altistuu siis monta kertaa, ja annokset summautuvat. Yksi röntgenkuva on vain yksi altistus yhdestä suunnasta.
+Annokset summautuvat: $800 \cdot 0{,}010\,\text{mSv} = 8\,\text{mSv}$. Suhde on $\tfrac{8\,\text{mSv}}{0{,}1\,\text{mSv}} = 80$, eli TT:n annos on noin $80$-kertainen. Yhden suunnan annos on paljon pienempi kuin yhden röntgenkuvan annos. Siksi ero on kymmeniä kertoja eikä tuhatkertainen.
 ```
 
 | Tutkimus | Efektiivinen annos |
@@ -298,9 +298,9 @@ Nykyaikaiset PET-laitteet mittaavat myös tämän aikaeron (lentoaika-PET) noin 
 Fluori-18:n puoliintumisaika on lyhyt. Siksi se valmistetaan hiukkaskiihdyttimellä, syklotronilla, lähellä kuvauspaikkaa. Yksi tällainen paikka on Turun PET-keskus.
 
 ```pysahdy
-Positroni ja elektroni annihiloituvat melkein levossa. Miksi syntyy kaksi fotonia vastakkaisiin suuntiin eikä yksi fotoni?
+PET-laitteen kaksi vastakkaista ilmaisinta havaitsee annihilaation fotonit $0{,}40\,\text{ns}$:n aikaerolla. Valo kulkee $30\,\text{cm}$ nanosekunnissa. Kuinka kaukana janan keskipisteestä lähde on ja kummalla puolella?
 ---
-Hiukkasten yhteinen liikemäärä on alussa melkein nolla. Kaksi vastakkaisiin suuntiin lähtevää fotonia pitää liikemäärän melkein nollana. Yksi fotoni jäisi liikkeelle yhteen suuntaan, mutta alussa liikemäärä oli melkein nolla.
+Myöhemmin havaittu fotoni kulkee ylimääräisen matkan $2x$: $2x = c\,\Delta t = 30\,\tfrac{\text{cm}}{\text{ns}} \cdot 0{,}40\,\text{ns} = 12\,\text{cm}$, joten $x = 6{,}0\,\text{cm}$. Lähde on $6{,}0\,\text{cm}$ keskipisteestä sen ilmaisimen puolella, joka havaitsi fotonin ensin.
 ```
 
 ### Sädehoito: suuri annos kasvaimeen, pieni terveelle kudokselle

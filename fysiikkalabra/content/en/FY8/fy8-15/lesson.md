@@ -232,9 +232,9 @@ A free quark has never been observed. The strong interaction keeps the quarks in
 </svg>
 
 ```pysahdy
-The energy of a collision knocks a quark with charge $+\tfrac{2}{3}e$ out of a proton. Can a detector ever register a particle with this charge?
+A collision makes clusters of particles with the quark content $u\bar{d}$, $uud$ or $ud$. The charge of a $u$ quark is $+\tfrac{2}{3}e$ and that of a $d$ quark $-\tfrac{1}{3}e$. Compute the charge of each and decide which a detector can register.
 ---
-No. A quark does not stay alone: the energy creates new quark–antiquark pairs, and the quarks end up in hadrons, whose charge is always a whole-number multiple of $e$.
+$u\bar{d}$: $\left(+\tfrac{2}{3} + \tfrac{1}{3}\right)e = +e$. $uud$: $\left(\tfrac{2}{3} + \tfrac{2}{3} - \tfrac{1}{3}\right)e = +e$. $ud$: $\left(\tfrac{2}{3} - \tfrac{1}{3}\right)e = +\tfrac{1}{3}e$. A detector can register the first two, whose charge is a whole-number multiple of $e$, but not the third.
 ```
 
 ### Antiparticles and annihilation
@@ -379,9 +379,9 @@ where $m_\text{initial}$ is the mass of the decaying particle and $m_\text{final
 The proton is the lightest baryon. In the ordinary low-energy reactions of the Standard Model the baryon number is conserved, so the proton cannot decay into lighter particles through these reactions: the decay products would have to include a baryon, and there is no baryon lighter than the proton. In some theories that extend the Standard Model the decay of the proton could, however, be possible, and that is why it is searched for experimentally. The decay of the proton has not been observed. For example, for the decay $p \to e^+ + \pi^0$ experiments give a lower limit of over $10^{34}$ years for the lifetime.
 
 ```pysahdy
-A free particle could decay into two particles, but their combined mass is greater than the mass of the decaying particle. Can the decay happen?
+A free particle has the mass $135\,\tfrac{\text{MeV}}{c^2}$ and should decay into particles whose masses add up to $140\,\tfrac{\text{MeV}}{c^2}$. Compute $Q$ and decide what the result means.
 ---
-No. Then $Q = (m_\text{initial} - m_\text{final})\,c^2 < 0$, and the decay would need energy that the particle does not have.
+$Q = (m_\text{initial} - m_\text{final})\,c^2 = (135 - 140)\,\text{MeV} = -5\,\text{MeV}$. A negative $Q$ means the decay would need $5\,\text{MeV}$ of extra energy that a free particle does not have, so the decay cannot happen.
 ```
 
 ### Beta decay at the quark level

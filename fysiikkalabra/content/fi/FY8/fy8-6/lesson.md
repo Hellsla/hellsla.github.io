@@ -199,9 +199,9 @@ LED on tehty kahdesta erilaisesta puolijohteesta. Toisen, n-alueen, johtavuusvy�
 <figure class="unit-photo"><img src="pics/fy8/green-led.webp" alt="Lähikuva LEDin kirkkaasta muovikuvusta tummansinistä taustaa vasten; keskellä hehkuu vihreä puolijohdesiru metallisen pidikkeen päällä."><figcaption>Vihreä LED, jonka siru on indiumgalliumnitridiä (InGaN). Vihreän valon fotonilla on enemmän energiaa kuin punaisen, joten vihreän LEDin kynnysjännite on suurempi kuin punaisen.</figcaption></figure>
 
 ```pysahdy
-Vihreän LEDin fotonin energia on suurempi kuin punaisen LEDin ja pienempi kuin sinisen LEDin. Mihin väliin vihreän LEDin puolijohteen energia-aukko jää?
+Punaisen LEDin spektrin huippu on aallonpituudella $630\,\text{nm}$ ja sinisen LEDin huippu aallonpituudella $450\,\text{nm}$. Kuinka moninkertainen on sinisen LEDin puolijohteen energia-aukko punaisen LEDin verrattuna?
 ---
-Fotonin energia on likimain energia-aukon suuruinen, $hf \approx E_\text{g}$. Energia-aukko jää siis punaisen ja sinisen LEDin energia-aukkojen väliin.
+Koska $E_\text{g} \approx hf = \tfrac{hc}{\lambda}$, energia-aukko on kääntäen verrannollinen aallonpituuteen. Siis $\tfrac{E_\text{g,sin}}{E_\text{g,pun}} \approx \tfrac{630\,\text{nm}}{450\,\text{nm}} = 1{,}4$. Sinisen LEDin energia-aukko on noin $1{,}4$-kertainen.
 ```
 
 ### Kynnysjännite
@@ -268,7 +268,7 @@ missä $e = 1{,}602 \cdot 10^{-19}\,\text{C}$ on alkeisvaraus, $U_\text{k}$ LEDi
 ```pysahdy
 LEDin spektrin huipun aallonpituus on $500\,\text{nm}$. Arvioi sen kynnysjännite.
 ---
-$U_\text{k} \approx \tfrac{hc}{e\lambda} = \tfrac{1240\,\text{V}\,\text{nm}}{500\,\text{nm}} = 2{,}5\,\text{V}$, eli noin $2{,}5\,\text{V}$.
+$U_\text{k} \approx \tfrac{hc}{e\lambda} = \tfrac{1240\,\text{V}\,\text{nm}}{500\,\text{nm}} \approx 2{,}5\,\text{V}$.
 ```
 
 ### Kynnysjännitteen määrittäminen

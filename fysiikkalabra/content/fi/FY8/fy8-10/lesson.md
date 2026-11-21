@@ -160,9 +160,9 @@ Massavaje ei ole kadonnutta ainetta. Einsteinin suhteellisuusteorian mukaan mass
 </svg>
 
 ```pysahdy
-Deuteroni jaetaan protoniksi ja neutroniksi, mikä vaatii $2{,}2\,\text{MeV}$. Kummalla on suurempi massa, deuteronilla vai erillisellä protonilla ja neutronilla yhteensä, ja kuinka paljon energiana ilmaistuna?
+Hiili-12-ytimen sidosenergia on $92{,}2\,\text{MeV}$. Kuinka monta atomimassayksikköä ydin on kevyempi kuin sen $12$ nukleonia erillään? Käytä $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$.
 ---
-Erillisillä hiukkasilla. Annettu $2{,}2\,\text{MeV}$ lisätään systeemiin, joten massa kasvaa määrällä $\tfrac{2{,}2\,\text{MeV}}{c^2}$: sidottu deuteroni on kevyempi kuin vapaat nukleoninsa.
+Sidosenergia vastaa massaeroa: $\Delta m = \tfrac{E_\text{B}}{c^2} = \tfrac{92{,}2\,\text{MeV}}{931{,}5\,\text{MeV}/\text{u}} \approx 0{,}0990\,\text{u}$. Ydin on noin $0{,}099\,\text{u}$ kevyempi.
 ```
 
 ### Miksi massan muutosta ei huomaa arjessa
@@ -310,7 +310,7 @@ Kuvaajasta näkyy, milloin ydinreaktio vapauttaa energiaa: kun syntyvät ytimet 
 ```pysahdy
 Ydinreaktiossa nukleoneja on yhtä monta molemmin puolin. Lähtöytimien yhteenlaskettu sidosenergia on $1800\,\text{MeV}$ ja tuotteiden $1805\,\text{MeV}$. Vapautuuko energiaa vai tarvitaanko sitä, kuinka paljon, ja miten massa muuttuu?
 ---
-Energiaa vapautuu: tuotteet ovat tiukemmin sidottuja, joten erotus $1805\,\text{MeV} - 1800\,\text{MeV} = 5\,\text{MeV}$ poistuu systeemistä ja kokonaismassa pienenee määrällä $\tfrac{5\,\text{MeV}}{c^2}$.
+Energiaa vapautuu: tuotteet ovat tiukemmin sidottuja, joten erotus $1805\,\text{MeV} - 1800\,\text{MeV} = 5\,\text{MeV}$ vapautuu tuotteiden liike-energiaksi ja kokonaismassa pienenee määrällä $\tfrac{5\,\text{MeV}}{c^2}$.
 ```
 
 ### Reaktioenergia

@@ -158,9 +158,9 @@ Albert Einstein explained the observations in 1905. The energy of light is not s
 </svg>
 
 ```pysahdy
-Dim $254\,\text{nm}$ UV-C light hits a zinc plate and electrons are released from it. What would the wave model predict about when the release begins, and what is observed in the experiment?
+Suppose that in the wave model an electron can collect energy only from an area of $1.0 \cdot 10^{-19}\,\text{m}^2$ (about the cross-section of one atom) and the intensity of the dim light is $1.0 \cdot 10^{-3}\,\text{W/m}^2$. The work function of zinc is $4.3\,\text{eV}$. How long would collecting the energy take, and what is observed in the experiment?
 ---
-According to the wave model the electron would have to collect energy for some time, so there would be a delay. In the experiment electrons are released immediately, even with dim light.
+The power received by one electron is $P = 1.0 \cdot 10^{-3}\,\text{W/m}^2 \cdot 1.0 \cdot 10^{-19}\,\text{m}^2 = 1.0 \cdot 10^{-22}\,\text{W}$ and $W = 4.3 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 6.9 \cdot 10^{-19}\,\text{J}$. The time is $t = W/P = 6.9 \cdot 10^{3}\,\text{s}$, about $1.9\,\text{h}$. In the experiment electrons are still released immediately, so the wave model fails.
 ```
 
 With this model every observation is explained. For light of one colour, the intensity tells how many photons hit the surface each second: brighter light therefore releases more electrons, but a single electron still receives only the energy of one photon. The frequency determines the energy of one photon and therefore the maximum kinetic energy of the electron. There is no delay, because already the first photon with enough energy can release an electron. In this model energy is **quantised**: radiation and matter exchange energy only in whole photon energies.

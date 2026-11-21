@@ -114,9 +114,9 @@
 Radioaktiivinen ydin hajoaa ja muuttuu toiseksi ytimeksi (luku *Atomiydin ja radioaktiivinen hajoaminen*), mutta hajoamishetkeä ei voi ennustaa. Kahdesta samanlaisesta ytimestä toinen voi hajota heti ja toinen vasta vuosien päästä. Ennustaa voi vain sen, kuinka todennäköisesti ydin hajoaa tietyn ajan kuluessa. Tämä todennäköisyys on sama kaikille saman isotoopin ytimille, eikä se käytännössä riipu ympäristön lämpötilasta, paineesta tai kemiallisista sidoksista. Se ei riipu myöskään ytimen iästä: ydin ei vanhene. Pitkään hajoamatta säilynyt ydin hajoaa seuraavan sekunnin aikana yhtä todennäköisesti kuin juuri syntynyt.
 
 ```pysahdy
-Opiskelija väittää, että ydin, joka on säilynyt hajoamatta hyvin pitkään, on ”myöhässä” ja hajoaa siksi todennäköisemmin pian, kuten ylikypsä hedelmä. Miten vastaisit?
+Näytteessä on aluksi $8000$ ydintä, ja puoliintumisaika on $T_{1/2}$. Yksittäinen ydin on säilynyt hajoamatta kaksi puoliintumisaikaa. Millä todennäköisyydellä se hajoaa seuraavan puoliintumisajan aikana? Päättele näytteen ytimien määristä.
 ---
-Ydin ei vanhene eikä muista, kuinka kauan se on säilynyt. Jokaisena sekuntina sillä on sama pieni hajoamistodennäköisyys, aivan kuten kolikko, joka on tullut monta kertaa klaavaksi, ei ole seuraavalla heitolla todennäköisemmin kruuna.
+Kahden puoliintumisajan jälkeen näytteessä on $8000 \cdot \left(\tfrac{1}{2}\right)^2 = 2000$ ydintä. Kolmannen puoliintumisajan aikana niistä hajoaa puolet eli $1000$. Todennäköisyys on $\tfrac{1000}{2000} = 0{,}50$, sama kuin juuri syntyneellä ytimellä.
 ```
 
 ### Suuri joukko ytimiä käyttäytyy säännöllisesti
@@ -440,6 +440,12 @@ Koska jokaisella ytimellä on sama hajoamistodennäköisyys, tietyssä ajassa ha
 ### Puoliintumisaika
 **Puoliintumisaika** $T_{1/2}$ on aika, jonka kuluessa puolet näytteen hajoamattomista ytimistä hajoaa. Seuraavan puoliintumisajan aikana hajoaa puolet *jäljellä olevista*, joten kahden puoliintumisajan kuluttua jäljellä on neljäsosa eikä mitään. Puoliintumisaika on isotoopin ominaisuus, joka ei riipu näytteen koosta eikä siitä, milloin ajanotto aloitetaan. Taulukossa on puoliintumisaikoja; yksikkö $\text{d}$ on vuorokausi ja $\text{a}$ vuosi.
 
+```pysahdy
+Näytteessä on aluksi $8000$ hajoamatonta ydintä ja sen puoliintumisaika on $2\,\text{h}$. Noin kuinka monta hajoamatonta ydintä on jäljellä $6\,\text{h}$:n kuluttua?
+---
+$6\,\text{h}$ on kolme puoliintumisaikaa, joten määrä puolittuu kolme kertaa: $8000 \cdot \left(\tfrac{1}{2}\right)^3 = 1000$.
+```
+
 | Isotooppi | $T_{1/2}$ | Missä |
 | --- | --- | --- |
 | barium-$137\text{m}$ | $2{,}55\,\text{min}$ | koulun hajoamiskoe |
@@ -454,12 +460,6 @@ Koska jokaisella ytimellä on sama hajoamistodennäköisyys, tietyssä ajassa ha
 Lähde: kirjallisuusarvot NNDC NuDat 3 -tietokannasta (Brookhaven National Laboratory), pyöristetty kolmeen merkitsevään numeroon. Jodi-131:lle käytetään vakiintunutta arvoa $8{,}02\,\text{d}$. Eri arvioinneissa sen puoliintumisaika on noin $8{,}021$–$8{,}025\,\text{d}$, joten pyöristys voi antaa myös $8{,}03\,\text{d}$. Tämän luvun laskuissa käytetään arvoa $8{,}02\,\text{d}$; tarkempi arvo muuttaisi tuloksia vain kolmannessa merkitsevässä numerossa.
 
 <figure class="unit-photo"><img src="pics/fy8/geiger-counter.webp" alt="Vanha beigenvärinen säteilymittari valkoisella pöydällä: laatikossa on viisarinäyttö ja säätönuppi, ja kierrejohdolla siihen on liitetty pyöreä anturi kädensijassa."><figcaption>Geigerin ja Müllerin mittari laskee anturiin osuvia ionisoivia hiukkasia. Kun mittari pidetään samassa kohdassa, pulssitaajuus on verrannollinen lähteen aktiivisuuteen.</figcaption></figure>
-
-```pysahdy
-Näytteessä on aluksi $8000$ hajoamatonta ydintä ja sen puoliintumisaika on $2\,\text{h}$. Noin kuinka monta hajoamatonta ydintä on jäljellä $6\,\text{h}$:n kuluttua?
----
-$6\,\text{h}$ on kolme puoliintumisaikaa, joten määrä puolittuu kolme kertaa: $8000 \cdot \left(\tfrac{1}{2}\right)^3 = 1000$.
-```
 
 ### Aktiivisuus
 Näytteen **aktiivisuus** $A$ on siinä tapahtuvien hajoamisten määrä aikayksikössä. Sen yksikkö on becquerel: $1\,\text{Bq}$ on yksi hajoaminen sekunnissa eli $1\,\tfrac{1}{\text{s}}$. Koska jokainen ydin hajoaa yhtä todennäköisesti, aktiivisuus on suoraan verrannollinen hajoamattomien ytimien määrään: kun ytimistä on jäljellä puolet, myös aktiivisuus on puolittunut. Säteilymittari ei mittaa aktiivisuutta suoraan, vaan se laskee pulsseja niistä säteilykvanteista, jotka osuvat sen anturiin. Pulssimäärä on verrannollinen aktiivisuuteen, mutta siihen lisätään aina myös ympäristön **taustasäteily**.

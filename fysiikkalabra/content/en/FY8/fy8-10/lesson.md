@@ -160,9 +160,9 @@ The mass defect is not matter that has vanished. According to Einstein's theory 
 </svg>
 
 ```pysahdy
-Splitting a deuteron into a proton and a neutron takes $2.2\,\text{MeV}$. Which has the greater mass, the deuteron or the separate proton and neutron together, and by how much in energy terms?
+The binding energy of a carbon-12 nucleus is $92.2\,\text{MeV}$. By how many atomic mass units is the nucleus lighter than its $12$ nucleons separated? Use $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$.
 ---
-The separate particles. The supplied $2.2\,\text{MeV}$ is added to the system, so the mass grows by $\tfrac{2.2\,\text{MeV}}{c^2}$: a bound deuteron is lighter than its free nucleons.
+The binding energy corresponds to the mass difference: $\Delta m = \tfrac{E_\text{B}}{c^2} = \tfrac{92.2\,\text{MeV}}{931.5\,\text{MeV}/\text{u}} \approx 0.0990\,\text{u}$. The nucleus is about $0.099\,\text{u}$ lighter.
 ```
 
 ### Why a change of mass is not noticed in everyday life
@@ -310,7 +310,7 @@ The graph shows when a nuclear reaction releases energy: when the nuclei formed 
 ```pysahdy
 In a nuclear reaction there are equally many nucleons on both sides. The total binding energy of the starting nuclei is $1800\,\text{MeV}$ and that of the products $1805\,\text{MeV}$. Is energy released or needed, how much, and how does the mass change?
 ---
-Energy is released: the products are bound more tightly, so the difference $1805\,\text{MeV} - 1800\,\text{MeV} = 5\,\text{MeV}$ leaves the system and the total mass decreases by $\tfrac{5\,\text{MeV}}{c^2}$.
+Energy is released: the products are bound more tightly, so the difference $1805\,\text{MeV} - 1800\,\text{MeV} = 5\,\text{MeV}$ is released as kinetic energy of the products and the total mass decreases by $\tfrac{5\,\text{MeV}}{c^2}$.
 ```
 
 ### Reaction energy

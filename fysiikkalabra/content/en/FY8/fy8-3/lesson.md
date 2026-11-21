@@ -107,12 +107,6 @@ The lowest level $n = 1$ is the **ground state**, with an energy of $-13.6\,\tex
 
 <figure class="unit-photo"><img src="pics/fy8/hydrogen-discharge-tube.webp" alt="A long glass tube on a black background. The narrow middle part glows pink and the ends bluish."><figcaption>A gas discharge tube containing hydrogen. The electric current excites hydrogen atoms, and when they move to lower energy levels, they emit the light of the hydrogen spectral lines.</figcaption></figure>
 
-```pysahdy
-The gap between levels $n = 1$ and $n = 2$ of a hydrogen atom is larger than the gap between levels $n = 4$ and $n = 5$. Why is this?
----
-The level energies are $E_n = -13.6\,\text{eV} : n^2$, so the levels get closer together going upwards and approach zero. So the gap $n = 1 \to 2$ is $10.2\,\text{eV}$ but the gap $n = 4 \to 5$ only $0.31\,\text{eV}$.
-```
-
 ### A photon is created or disappears in a transition
 When an electron moves from a higher level to a lower one, the energy of the atom decreases and the difference leaves as a single photon. Energy is conserved, so the energy of the photon is the difference between the levels. Since there are only certain levels, there are also only certain differences: hydrogen emits only certain wavelengths, and its spectrum is a line spectrum.
 
@@ -212,6 +206,12 @@ hf &= E_\text{u} - E_\text{l} \\
 \end{aligned}
 ```
 where $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ is the Planck constant, $f$ the frequency of the photon, $c = 2.998 \cdot 10^{8}\,\text{m/s}$ the speed of light and $\lambda$ the wavelength. In absorption the same formulas give the photon that raises the electron from level $E_\text{l}$ to level $E_\text{u}$. The energies are first calculated in electron volts, and the difference is converted to joules by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
+
+```pysahdy
+The electron of a hydrogen atom moves from level $n = 5$ to level $n = 3$. How large is the energy difference between the levels, and what is the wavelength of the photon produced?
+---
+$E_5 = -13.6\,\text{eV}/25 = -0.544\,\text{eV}$ and $E_3 = -13.6\,\text{eV}/9 = -1.511\,\text{eV}$, so the difference is $0.967\,\text{eV}$. The wavelength is $\lambda = hc/\Delta E \approx 1240\,\text{eV nm}/0.967\,\text{eV} \approx 1.28 \cdot 10^{3}\,\text{nm}$, which is infrared.
+```
 
 | Series | Lower level | Region | $\lambda$ (nm) |
 | --- | --- | --- | --- |

@@ -127,7 +127,7 @@ Säteily on **ionisoivaa**, kun sen yksittäinen hiukkanen tai fotoni pystyy irr
 ```pysahdy
 Röntgenfotoni, jonka energia on $60\,\text{keV}$, luovuttaa kaiken energiansa vedelle, ja yhden molekyylin ionisointi vaatii $12{,}6\,\text{eV}$. Kuinka monta molekyyliä se voi enintään ionisoida?
 ---
-$n = \tfrac{6{,}0 \cdot 10^{4}\,\text{eV}}{12{,}6\,\text{eV}} \approx 4{,}8 \cdot 10^{3}$. Näkyvän valon fotoni ($1{,}7$–$3{,}3\,\text{eV}$) ei ionisoisi yhtäkään.
+$n = \tfrac{6{,}0 \cdot 10^{4}\,\text{eV}}{12{,}6\,\text{eV}} = 4762$, ja enintään-arvo pyöristetään alas. Fotoni voi ionisoida enintään noin $4{,}7 \cdot 10^{3}$ molekyyliä. Näkyvän valon fotoni ($1{,}7\,\text{eV} - 3{,}3\,\text{eV}$) ei ionisoisi yhtäkään.
 ```
 
 ### Ionisaatio siirtää säteilyn energiaa aineeseen
@@ -256,9 +256,9 @@ Säteilyn lajit (luku *Atomiydin ja radioaktiivinen hajoaminen*) eroavat siinä,
 <figure class="unit-photo"><img src="pics/fy8/hfir-refueling.webp" alt="Ylhäältä kuvattu syvä vesiallas sinisessä valossa; pohjalla on pyöreä reaktorisydän, josta loistaa kirkas sininen hohde, ja ympärillä on pyöreitä kansia."><figcaption>Tutkimusreaktorin sydän vesialtaan pohjalla polttoaineen vaihdon aikana. Sininen hohde on Tšerenkovin säteilyä: varatut hiukkaset, enimmäkseen elektronit, kulkevat vedessä nopeammin kuin valo vedessä. Paksu vesikerros vaimentaa säteilyä, joten altaan reunalla voi työskennellä.</figcaption></figure>
 
 ```pysahdy
-Alfa- ja beetahiukkasen liike-energia on molemmilla $5{,}49\,\text{MeV}$ ja ne pysähtyvät ilmaan; oleta molemmille sama $W \approx 34\,\text{eV}$. Vertaa niiden tuottamien ionipareja yhteensä ja sentin matkalla.
+Alfa- ja beetahiukkasen liike-energia on molemmilla $4{,}0\,\text{MeV}$ ja ne pysähtyvät ilmaan; oleta molemmille sama $W \approx 34\,\text{eV}$. Vertaa niiden tuottamia ionipareja ensin yhteensä ja sitten yhden sentin matkalla.
 ---
-Kumpikin tuottaa $\tfrac{5{,}49 \cdot 10^{6}\,\text{eV}}{34\,\text{eV}} \approx 1{,}6 \cdot 10^{5}$ ionparia, koska $n_\text{i} = E/W$ riippuu vain energiasta. Beeta kulkee metrejä ja alfa muutaman senttimetrin, joten beeta tuottaa senttimetrin matkalla paljon vähemmän.
+Kumpikin tuottaa $\tfrac{4{,}0 \cdot 10^{6}\,\text{eV}}{34\,\text{eV}} \approx 1{,}2 \cdot 10^{5}$ ionipareja, koska $n_\text{i} = E/W$ riippuu vain energiasta. Beeta kulkee metrejä ja alfa muutaman senttimetrin, joten beeta tuottaa senttimetrin matkalla paljon vähemmän ionipareja.
 ```
 
 ### Läpäisykyky

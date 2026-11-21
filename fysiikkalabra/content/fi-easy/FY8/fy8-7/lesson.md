@@ -84,9 +84,9 @@ Albert Einstein päätteli vuonna 1917, että on olemassa myös kolmas tapahtuma
 </svg>
 
 ```pysahdy
-Stimuloidussa emissiossa yhdestä fotonista tulee kaksi. Absorboituuko saapuva fotoni? Mistä uuden fotonin energia tulee?
+Valopulssissa on $1000$ fotonia, joiden aallonpituus on $650\,\text{nm}$. Pulssi kulkee aineen läpi, jossa on paljon virittyneitä atomeja. Jokainen fotoni aiheuttaa yhden stimuloidun emission. Montako fotonia tulee ulos? Kuinka paljon energiaa aine antaa valolle yhteensä? Käytä $hc = 1240\,\text{eV}\,\text{nm}$.
 ---
-Saapuva fotoni ei absorboidu. Se jatkaa matkaansa. Uuden fotonin energia tulee viritetyltä atomilta, joka siirtyy tasolta $E_2$ tasolle $E_1$.
+Jokaista saapuvaa fotonia kohti syntyy yksi uusi, joten ulos tulee $2000$ fotonia. Uusia fotoneja on $1000$. Kunkin energia on $hf = \tfrac{hc}{\lambda} = \tfrac{1240\,\text{eV}\,\text{nm}}{650\,\text{nm}} = 1{,}91\,\text{eV}$. Aine antaa valolle energiaa $1000 \cdot 1{,}91\,\text{eV} \approx 1{,}9\,\text{keV}$.
 ```
 
 ### Populaatioinversio
@@ -199,9 +199,9 @@ Puolijohdekvanttipisteen väri voidaan siis valita sen koolla, vaikka aine on sa
 <figure class="unit-photo"><img src="pics/fy8/helium-neon-laser.webp" alt="Musta laite, jossa lukee He-Ne LASER. Sen päässä loistaa punainen valo."><figcaption>Helium-neonlaser. Sähköpurkaus antaa kaasun atomeille energiaa. Putken päissä on peilit, jotka vahvistavat valoa. Laser tekee kapean punaisen säteen, jonka aallonpituus on $633\,\text{nm}$.</figcaption></figure>
 
 ```pysahdy
-Valmistaja haluaa kvanttipisteitä, jotka lähettävät vihreän sijasta punaista valoa. Pitääkö pisteet tehdä suuremmiksi vai pienemmiksi?
+Kadmiumselenidistä tehty kvanttipiste lähettää sinistä valoa, jonka aallonpituus on $450\,\text{nm}$. Käytä $hc = 1240\,\text{eV}\,\text{nm}$. Laske fotonin energia. Päättele, onko piste halkaisijaltaan suurempi vai pienempi kuin $2{,}0\,\text{nm}$:n piste. Kuinka paljon pisteen energia-aukko on suurempi kuin ison kiteen aukko $1{,}74\,\text{eV}$?
 ---
-Suuremmiksi. Punaisen valon aallonpituus on pidempi kuin vihreän. Silloin fotonin energia on pienempi. Tarvitaan pienempi energia-aukko, ja suuremmassa pisteessä aukko on pienempi.
+Fotonin energia on $\tfrac{hc}{\lambda} = \tfrac{1240\,\text{eV}\,\text{nm}}{450\,\text{nm}} \approx 2{,}76\,\text{eV}$. Energia-aukko on melkein yhtä suuri. Se on suurempi kuin $2{,}0\,\text{nm}$:n pisteen aukko ($480\,\text{nm}$ vastaa $2{,}58\,\text{eV}$), joten piste on pienempi kuin $2{,}0\,\text{nm}$. Ero on $2{,}76\,\text{eV} - 1{,}74\,\text{eV} \approx 1{,}0\,\text{eV}$.
 ```
 
 ### Kvanttirakenteiden sovelluksia

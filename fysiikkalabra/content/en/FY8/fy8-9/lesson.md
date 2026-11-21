@@ -114,9 +114,9 @@
 A radioactive nucleus decays and becomes another nucleus (chapter *The atomic nucleus and radioactive decay*), but the moment of decay cannot be predicted. Of two identical nuclei, one may decay at once and the other only after years. All that can be predicted is how likely a nucleus is to decay within a given time. This probability is the same for all nuclei of the same isotope, and in practice it does not depend on the temperature, the pressure or the chemical bonds of the surroundings. Nor does it depend on the age of the nucleus: a nucleus does not grow old. A nucleus that has survived without decaying for a long time is just as likely to decay during the next second as a newly formed one.
 
 ```pysahdy
-A student says that a nucleus that has survived undecayed for a very long time is "overdue" and so more likely to decay soon, like overripe fruit. How would you answer?
+A sample initially contains $8000$ nuclei and the half-life is $T_{1/2}$. A single nucleus has survived undecayed for two half-lives. What is the probability that it decays during the next half-life? Reason from the numbers of nuclei in the sample.
 ---
-The nucleus does not age and has no memory of how long it has survived. In each second it has the same small probability of decaying, just as a coin that has landed tails many times is not more likely to land heads next.
+After two half-lives the sample contains $8000 \cdot \left(\tfrac{1}{2}\right)^2 = 2000$ nuclei. During the third half-life half of them decay, that is $1000$. The probability is $\tfrac{1000}{2000} = 0.50$, the same as for a newly formed nucleus.
 ```
 
 ### A large group of nuclei behaves regularly
@@ -440,6 +440,12 @@ Because every nucleus has the same probability of decaying, about the same *frac
 ### Half-life
 The **half-life** $T_{1/2}$ is the time in which half of the undecayed nuclei of a sample decay. During the next half-life half of the *remaining* nuclei decay, so after two half-lives a quarter is left, not nothing. The half-life is a property of the isotope: it does not depend on the size of the sample or on when the timing is started. The table lists some half-lives; the unit $\text{d}$ is a day and $\text{a}$ a year.
 
+```pysahdy
+A sample initially contains $8000$ undecayed nuclei and its half-life is $2\,\text{h}$. About how many undecayed nuclei remain after $6\,\text{h}$?
+---
+$6\,\text{h}$ is three half-lives, so the number is halved three times: $8000 \cdot \left(\tfrac{1}{2}\right)^3 = 1000$.
+```
+
 | Isotope | $T_{1/2}$ | Where |
 | --- | --- | --- |
 | barium-$137\text{m}$ | $2.55\,\text{min}$ | school decay experiment |
@@ -454,12 +460,6 @@ The **half-life** $T_{1/2}$ is the time in which half of the undecayed nuclei of
 Source: literature values from the NNDC NuDat 3 database (Brookhaven National Laboratory), rounded to three significant figures. For iodine-131 the established value $8.02\,\text{d}$ is used. Different evaluations give its half-life as about $8.021$–$8.025\,\text{d}$, so rounding can also give $8.03\,\text{d}$. The calculations in this chapter use $8.02\,\text{d}$; a more precise value would change the results only in the third significant figure.
 
 <figure class="unit-photo"><img src="pics/fy8/geiger-counter.webp" alt="An old beige radiation meter on a white table: the box has a needle display and a control knob, and a round probe on a handle is connected to it by a cable."><figcaption>A Geiger–Müller counter counts the ionising particles that hit its probe. When the counter is kept in the same place, the count rate is proportional to the activity of the source.</figcaption></figure>
-
-```pysahdy
-A sample initially contains $8000$ undecayed nuclei and its half-life is $2\,\text{h}$. About how many undecayed nuclei remain after $6\,\text{h}$?
----
-$6\,\text{h}$ is three half-lives, so the number is halved three times: $8000 \cdot \left(\tfrac{1}{2}\right)^3 = 1000$.
-```
 
 ### Activity
 The **activity** $A$ of a sample is the number of decays in it per unit of time. Its unit is the becquerel: $1\,\text{Bq}$ is one decay per second, that is, $1\,\tfrac{1}{\text{s}}$. Because every nucleus is equally likely to decay, the activity is directly proportional to the number of undecayed nuclei: when half of the nuclei are left, the activity has also halved. A radiation meter does not measure the activity directly. It counts the pulses from the quanta of radiation that hit its detector. The number of pulses is proportional to the activity, but the **background radiation** of the surroundings is always added to it.

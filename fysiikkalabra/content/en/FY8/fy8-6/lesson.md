@@ -199,9 +199,9 @@ An LED is made of two different semiconductors. In the conduction band of one, t
 <figure class="unit-photo"><img src="pics/fy8/green-led.webp" alt="A close-up of an LED&#x27;s clear plastic dome against a dark blue background; in the middle a green semiconductor chip glows on a metal holder."><figcaption>A green LED whose chip is made of indium gallium nitride (InGaN). A photon of green light has more energy than one of red light, so the threshold voltage of a green LED is higher than that of a red one.</figcaption></figure>
 
 ```pysahdy
-The photon of a green LED has more energy than that of a red LED and less than that of a blue LED. Where does the energy gap of the green LED's semiconductor lie?
+The spectrum of a red LED peaks at a wavelength of $630\,\text{nm}$ and that of a blue LED at $450\,\text{nm}$. How many times larger is the energy gap of the blue LED's semiconductor than that of the red LED?
 ---
-The photon energy is approximately the size of the energy gap, $hf \approx E_\text{g}$. So the energy gap lies between the energy gaps of the red and the blue LED.
+Since $E_\text{g} \approx hf = \tfrac{hc}{\lambda}$, the energy gap is inversely proportional to the wavelength. So $\tfrac{E_\text{g,blue}}{E_\text{g,red}} \approx \tfrac{630\,\text{nm}}{450\,\text{nm}} = 1.4$. The blue LED's energy gap is about $1.4$ times as large.
 ```
 
 ### Threshold voltage
@@ -268,7 +268,7 @@ where $e = 1.602 \cdot 10^{-19}\,\text{C}$ is the elementary charge, $U_\text{k}
 ```pysahdy
 The peak wavelength of an LED's spectrum is $500\,\text{nm}$. Estimate its threshold voltage.
 ---
-$U_\text{k} \approx \tfrac{hc}{e\lambda} = \tfrac{1240\,\text{V}\,\text{nm}}{500\,\text{nm}} = 2.5\,\text{V}$, so about $2.5\,\text{V}$.
+$U_\text{k} \approx \tfrac{hc}{e\lambda} = \tfrac{1240\,\text{V}\,\text{nm}}{500\,\text{nm}} \approx 2.5\,\text{V}$.
 ```
 
 ### Determining the threshold voltage

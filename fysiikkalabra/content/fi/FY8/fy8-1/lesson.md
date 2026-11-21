@@ -158,9 +158,9 @@ Albert Einstein selitti havainnot vuonna 1905. Valon energia ei jakaudu tasaises
 </svg>
 
 ```pysahdy
-Himmeä $254\,\text{nm}$:n UV-C-valo osuu sinkkilevyyn, ja levystä irtoaa elektroneja. Mitä aaltomalli ennustaisi irtoamisen alkamisesta, ja mitä kokeessa havaitaan?
+Oletetaan aaltomallissa, että elektroni voi kerätä energiaa vain pinta-alalta $1{,}0 \cdot 10^{-19}\,\text{m}^2$ (suunnilleen yhden atomin ala) ja himmeän valon intensiteetti on $1{,}0 \cdot 10^{-3}\,\text{W/m}^2$. Sinkin irrotustyö on $4{,}3\,\text{eV}$. Kauanko energian keräämiseen menisi, ja mitä kokeessa havaitaan?
 ---
-Aaltomallin mukaan elektronin pitäisi kerätä energiaa jonkin aikaa, joten irtoamisessa olisi viive. Kokeessa elektroneja irtoaa heti, himmeälläkin valolla.
+Teho elektronille on $P = 1{,}0 \cdot 10^{-3}\,\text{W/m}^2 \cdot 1{,}0 \cdot 10^{-19}\,\text{m}^2 = 1{,}0 \cdot 10^{-22}\,\text{W}$ ja $W = 4{,}3 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 6{,}9 \cdot 10^{-19}\,\text{J}$. Aika on $t = W/P = 6{,}9 \cdot 10^{3}\,\text{s}$, noin $1{,}9\,\text{h}$. Kokeessa elektroneja irtoaa silti heti, joten aaltomalli ei kelpaa.
 ```
 
 Tällä mallilla jokainen havainto selittyy. Samanvärisellä valolla intensiteetti kertoo, kuinka monta fotonia pinnalle osuu sekunnissa: kirkkaampi valo irrottaa siksi enemmän elektroneja, mutta yksittäinen elektroni saa silti vain yhden fotonin energian. Taajuus määrää yhden fotonin energian ja siksi elektronin suurimman liike-energian. Viivettä ei ole, koska jo ensimmäinen riittävän energinen fotoni voi irrottaa elektronin. Tässä mallissa energia on **kvantittunut**: säteily ja aine vaihtavat energiaa vain kokonaisina fotonin energioina.

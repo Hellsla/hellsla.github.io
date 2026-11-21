@@ -112,18 +112,18 @@ Kun jatkuvan spektrin valo kulkee kaasun läpi, spektriin jää tummia viivoja. 
 
 <figure class="unit-photo"><img src="pics/fy8/flame-colours.webp" alt="Yhdeksän liekkiä rivissä: purppura, punainen, oranssi, keltainen, valkoinen, vihreä, sinivihreä ja violetti."><figcaption>Metallisuoloja sisältävät liekit. Jokainen alkuaine värjää liekin omalla värillään, koska sen atomit lähettävät vain omien energiatilojensa erotuksia vastaavia aallonpituuksia.</figcaption></figure>
 
-```pysahdy
-Tähden jatkuvan spektrin valo kulkee kaasupilven läpi. Spektrissä on tumma viiva samalla aallonpituudella kuin neonin kirkas emissioviiva. Mitä kaasua pilvessä on?
----
-Neonia. Absorptioviiva on täsmälleen samalla aallonpituudella kuin saman kaasun emissioviiva, koska atomit absorboivat omat aallonpituutensa.
-```
-
 ### Energiatilat selittävät viivat
 Atomin elektroniverho voi olla vain tietyissä **energiatiloissa**. Alin niistä on perustila, ylemmät ovat viritystiloja. Energiat ilmoitetaan negatiivisina, koska nollaksi valitaan tilanne, jossa elektroni on irronnut atomista. Kun atomi siirtyy ylemmästä energiatilasta alempaan, se lähettää yhden fotonin. Energia säilyy, joten fotonin energia on tilojen energioiden erotus. Koska atomilla on vain tietyt energiatilat, erotuksia on vain tietty määrä, ja spektrissä on vain tiettyjä viivoja.
 
 <figure class="unit-photo"><img src="pics/fy8/neon-signs-shinjuku.webp" alt="Kadunkulma iltahämärässä. Rakennusten seinillä on värikkäitä valomainoksia, ja kadulla kulkee ihmisiä."><figcaption>Valomainoksia Shinjukussa Tokiossa. Spektroskoopilla näkisi, onko kunkin valon spektri jatkuva vai viivoista koostuva.</figcaption></figure>
 
 Absorptio on käänteinen tapahtuma. Atomi absorboi fotonin vain, jos fotonin energia on täsmälleen jonkin kahden tilan erotus; muut fotonit kulkevat kaasun läpi. Virittynyt atomi palaa pian alempaan tilaan ja lähettää fotonin, mutta satunnaiseen suuntaan. Siksi alkuperäiseen suuntaan kulkevasta valosta puuttuu juuri nuo aallonpituudet, ja spektriin jää tumma viiva. Kaasu absorboi vain siirtymiä, jotka lähtevät tiloista, joissa sen atomeja on. Kylmässä kaasussa lähes kaikki atomit ovat perustilassa, joten absorptioviivoja on vähemmän kuin emissioviivoja. Auringon kaasukehä on niin kuuma, että pieni osa vetyatomeista on ensimmäisessä viritystilassa. Ne absorboivat näkyvän valon aallonpituuksia, ja siksi vedyn punainen viiva $656\,\text{nm}$ näkyy Auringon spektrissä tummana. Elektronin energiatilat ovat kvantittuneet, ja spektrit ovat siitä suorin todiste.
+
+```pysahdy
+Kylmän kaasun atomit ovat perustilassa, jonka energia on $-5{,}0\,\text{eV}$. Seuraavat tilat ovat $-3{,}1\,\text{eV}$ ja $-1{,}6\,\text{eV}$. Jatkuvan spektrin valo kulkee kaasun läpi. Mitkä aallonpituuksista $653\,\text{nm}$, $500\,\text{nm}$ ja $365\,\text{nm}$ puuttuvat läpi tulleesta valosta?
+---
+Fotonin energia on $E = hc/\lambda$, kun $hc \approx 1240\,\text{eV nm}$. Aallonpituuksia vastaavat energiat ovat $1{,}9\,\text{eV}$, $2{,}5\,\text{eV}$ ja $3{,}4\,\text{eV}$. Perustilasta ylöspäin erotukset ovat $-3{,}1 - (-5{,}0) = 1{,}9\,\text{eV}$ ja $-1{,}6 - (-5{,}0) = 3{,}4\,\text{eV}$. Siis $653\,\text{nm}$ ja $365\,\text{nm}$ puuttuvat, mutta $500\,\text{nm}$ ($2{,}5\,\text{eV}$) kulkee läpi.
+```
 
 Energiatilojen erotus on välttämätön ehto, mutta kaikki siirtymät eivät ole yhtä todennäköisiä, ja osa niistä on hyvin heikkoja. Siksi kaikkia mahdollisia energiatasojen erotuksia ei välttämättä havaita voimakkaina spektriviivoina. Todelliset spektriviivat eivät myöskään ole äärettömän kapeita: fotonin energian on vastattava tilojen erotusta viivan pienen leveyden tarkkuudella.
 
@@ -132,7 +132,7 @@ Spektrin voi mitata itse. Spektroskoopissa valo kulkee kapean raon ja hilan läp
 ```pysahdy
 Atomilla on vain kaksi energiatilaa, $-5{,}0\,\text{eV}$ ja $-3{,}1\,\text{eV}$, joten niiden erotus on $1{,}9\,\text{eV}$. Atomi on alemmalla tilalla, ja siihen osuu fotoni, jonka energia on $2{,}4\,\text{eV}$. Absorboiko atomi fotonin?
 ---
-Ei. Fotoni ei ionisoi atomia, koska $-5{,}0\,\text{eV} + 2{,}4\,\text{eV} = -2{,}6\,\text{eV} < 0$: elektroni jäisi atomiin. Energia $-2{,}6\,\text{eV}$ ei ole kummankaan tilan energia, eikä fotonin energia ole tilojen erotus $1{,}9\,\text{eV}$. Fotoni kulkee atomin ohi.
+Ei. Fotonin energia $2{,}4\,\text{eV}$ ei ole sama kuin tilojen erotus $1{,}9\,\text{eV}$, joten atomi ei voi siirtyä ylempään tilaan. Fotoni ei myöskään irrota elektronia, koska $-5{,}0\,\text{eV} + 2{,}4\,\text{eV} = -2{,}6\,\text{eV} < 0$: elektroni olisi yhä sidottu. Fotoni kulkee atomin ohi.
 ```
 
 ### Fluoresenssi

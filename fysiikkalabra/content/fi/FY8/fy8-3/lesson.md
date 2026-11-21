@@ -107,12 +107,6 @@ Alin taso $n = 1$ on **perustila**, jonka energia on $-13{,}6\,\text{eV}$. Ylemm
 
 <figure class="unit-photo"><img src="pics/fy8/hydrogen-discharge-tube.webp" alt="Pitkä lasiputki mustalla pohjalla. Putken kapea keskiosa hehkuu vaaleanpunaisena ja päät sinertävinä."><figcaption>Vetyä sisältävä kaasupurkausputki. Sähkövirta virittää vetyatomeja, ja kun ne siirtyvät alemmille energiatasoille, syntyy vedyn spektriviivojen valo.</figcaption></figure>
 
-```pysahdy
-Vetyatomin tasojen $n = 1$ ja $n = 2$ väli on suurempi kuin tasojen $n = 4$ ja $n = 5$ väli. Miksi näin on?
----
-Tasojen energiat ovat $E_n = -13{,}6\,\text{eV} : n^2$, joten ne tihenevät ylöspäin ja lähestyvät nollaa. Siksi väli $n = 1 \to 2$ on $10{,}2\,\text{eV}$ mutta väli $n = 4 \to 5$ vain $0{,}31\,\text{eV}$.
-```
-
 ### Siirtymässä syntyy tai katoaa fotoni
 Kun elektroni siirtyy ylemmältä tasolta alemmalle, atomin energia pienenee ja erotus lähtee yhtenä fotonina. Energia säilyy, joten fotonin energia on tasojen erotus. Koska tasoja on vain tiettyjä, myös erotuksia on vain tiettyjä: vety lähettää vain tiettyjä aallonpituuksia, ja sen spektri on viivaspektri.
 
@@ -212,6 +206,12 @@ hf &= E_\text{y} - E_\text{a} \\
 \end{aligned}
 ```
 missä $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on Planckin vakio, $f$ fotonin taajuus, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$ valon nopeus ja $\lambda$ aallonpituus. Absorptiossa samat kaavat antavat fotonin, joka nostaa elektronin tasolta $E_\text{a}$ tasolle $E_\text{y}$. Energiat lasketaan ensin elektronivoltteina, ja erotus muunnetaan jouleiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
+
+```pysahdy
+Vetyatomin elektroni siirtyy tasolta $n = 5$ tasolle $n = 3$. Kuinka suuri on tasojen energiaero ja minkä aallonpituuden fotoni syntyy?
+---
+$E_5 = -13{,}6\,\text{eV}/25 = -0{,}544\,\text{eV}$ ja $E_3 = -13{,}6\,\text{eV}/9 = -1{,}511\,\text{eV}$, joten erotus on $0{,}967\,\text{eV}$. Aallonpituus on $\lambda = hc/\Delta E \approx 1240\,\text{eV nm}/0{,}967\,\text{eV} \approx 1{,}28 \cdot 10^{3}\,\text{nm}$, eli infrapunaa.
+```
 
 | Sarja | Alempi taso | Alue | $\lambda$ (nm) |
 | --- | --- | --- | --- |

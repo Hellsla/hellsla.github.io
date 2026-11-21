@@ -180,9 +180,9 @@ An X-ray image is a shadow image. The radiation passes through the patient to a 
 In computed tomography (CT), an X-ray tube and detectors rotate around the patient. The scanner measures the attenuation from thousands of directions, and a computer calculates from them how much each small volume element attenuates. The result is a cross-sectional image in which organs lying behind one another are also visible. However, the dose from a CT scan is tens of times larger than the dose from a chest X-ray.
 
 ```pysahdy
-A chest X-ray and a chest CT scan both use X-rays, yet the CT dose is tens of times larger. Why?
+In CT, $800$ projections are taken, each giving a dose of $0.010\,\text{mSv}$. The dose of a chest X-ray is $0.1\,\text{mSv}$. How many times larger is the total CT dose than the X-ray dose?
 ---
-A CT scan measures the attenuation from thousands of directions, so the patient is exposed many times and the doses of the exposures add up. A single X-ray image is one exposure from one direction.
+The doses add up: $800 \cdot 0.010\,\text{mSv} = 8\,\text{mSv}$. The ratio is $\tfrac{8\,\text{mSv}}{0.1\,\text{mSv}} = 80$, so the CT dose is about $80$ times larger. One direction gives only a tenth of an X-ray dose, but there are many directions, so the difference is tens of times and not a thousandfold.
 ```
 
 | Examination | Effective dose |
@@ -288,9 +288,9 @@ The tracer in PET (positron emission tomography) is usually fluorine-18 in a com
 A ring of detectors surrounds the patient. When two opposite detectors detect a photon within a few nanoseconds of each other, that is, in **coincidence**, the scanner concludes that the photons were produced in the same annihilation somewhere on the line segment between those detectors. If the difference in the photons' arrival times is not measured, a single line segment does not tell where on the segment the source is. Modern PET scanners also measure this time difference (time-of-flight PET) with an accuracy of about $0.3\,\text{ns}$. Light travels about $30\,\text{cm}$ in a nanosecond, so the time difference narrows the source to a stretch of a few centimetres on the segment. Because the positron travels before the annihilation, the segment tells the place of the annihilation and not exactly the place of the decay. The actual image is formed only from many segments: when millions of segments have accumulated, they intersect most densely where there is the most tracer, and a computer calculates the image from them. Because of its short half-life, fluorine-18 is made in a particle accelerator, a cyclotron, close to the imaging site, for example at the Turku PET Centre.
 
 ```pysahdy
-A positron and an electron annihilate almost at rest. Why are two photons produced, flying in opposite directions, instead of one photon?
+The two opposite detectors of a PET scanner register the annihilation photons with a time difference of $0.40\,\text{ns}$. Light travels $30\,\text{cm}$ in a nanosecond. How far from the midpoint of the line is the source, and on which side?
 ---
-The total momentum of the particles is almost zero at the start. Two photons flying in opposite directions keep the momentum almost zero; a single photon would not.
+The photon detected later travels an extra distance $2x$: $2x = c\,\Delta t = 30\,\tfrac{\text{cm}}{\text{ns}} \cdot 0.40\,\text{ns} = 12\,\text{cm}$, so $x = 6.0\,\text{cm}$. The source is $6.0\,\text{cm}$ from the midpoint, on the side of the detector that registered a photon first.
 ```
 
 ### Radiotherapy: a large dose to the tumour, a small dose to healthy tissue

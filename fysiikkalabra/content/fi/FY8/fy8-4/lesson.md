@@ -974,9 +974,9 @@ Kun kaksoisrakokoe tehdään niin heikolla valolla, että laitteessa on keskimä
 </svg>
 
 ```pysahdy
-Heikolla valolla tehdyssä kaksoisrakokokeessa raidat ovat alkaneet juuri erottua $200$ osuman jälkeen. Voitko nyt ennustaa, mihin osuma numero $201$ tulee, ja miten kuva muuttuu, kun osumia on kertynyt tuhansia?
+Aaltomallin mukaan yksittäinen osuma tulee tietyn kirkkaan raidan kohdalle todennäköisyydellä $0{,}040$. Montako osumaa tähän kohtaan odotetaan, kun osumia kertyy yhteensä $5000$? Entä kun osumia on $50\,000$, ja kumpi tulos on suhteellisesti tasaisempi?
 ---
-Et voi. Aaltomalli antaa vain todennäköisyyden osumalle kussakin kohdassa: suuri kirkkailla raidoilla ja pieni tummilla. Osumien lisääminen tekee raidoista selvemmät, mutta yksittäinen osuma pysyy ennustamattomana.
+Odotettu osumien määrä on todennäköisyys kertaa osumien määrä: $0{,}040 \cdot 5000 = 200$ ja $0{,}040 \cdot 50\,000 = 2000$. Todellinen lukumäärä vaihtelee satunnaisesti: noin $\pm 14$ ensimmäisessä ($7\,\%$ luvusta $200$) ja noin $\pm 44$ toisessa ($2\,\%$ luvusta $2000$). Suuremmassa kokeessa osumien osuus on siis lähempänä $4\,\%$.
 ```
 
 ### Aalto kertoo todennäköisyyden

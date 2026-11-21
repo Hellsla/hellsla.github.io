@@ -232,9 +232,9 @@ Vapaata kvarkkia ei ole koskaan havaittu. Vahva vuorovaikutus pitää kvarkit ha
 </svg>
 
 ```pysahdy
-Törmäyksen energia iskee protonista irti kvarkin, jonka varaus on $+\tfrac{2}{3}e$. Voiko ilmaisin koskaan havaita hiukkasta, jolla on tämä varaus?
+Törmäyksessä syntyy hiukkaskasoja, joiden kvarkkikoostumus on $u\bar{d}$, $uud$ tai $ud$. Kvarkin $u$ varaus on $+\tfrac{2}{3}e$ ja kvarkin $d$ varaus $-\tfrac{1}{3}e$. Laske kunkin varaus ja päättele, minkä ilmaisin voi havaita.
 ---
-Ei voi. Kvarkki ei jää yksin: energia synnyttää uusia kvarkki–antikvarkki-pareja, ja kvarkit päätyvät hadroneihin, joiden varaus on aina alkeisvarauksen $e$ kokonaislukukerrannainen.
+$u\bar{d}$: $\left(+\tfrac{2}{3} + \tfrac{1}{3}\right)e = +e$. $uud$: $\left(\tfrac{2}{3} + \tfrac{2}{3} - \tfrac{1}{3}\right)e = +e$. $ud$: $\left(\tfrac{2}{3} - \tfrac{1}{3}\right)e = +\tfrac{1}{3}e$. Ilmaisin voi havaita kaksi ensimmäistä, joiden varaus on kokonaisluku $e$:n monikertana, mutta ei kolmatta.
 ```
 
 ### Antihiukkaset ja annihilaatio
@@ -379,9 +379,9 @@ missä $m_\text{alku}$ on hajoavan hiukkasen massa ja $m_\text{loppu}$ syntyvien
 Protoni on kevyin baryoni. Standardimallin tavallisissa matalaenergiaisissa reaktioissa baryoniluku säilyy, joten protoni ei voi hajota kevyemmiksi hiukkasiksi näiden reaktioiden kautta: hajoamistuotteissa pitäisi olla baryoni, eikä protonia kevyempää baryonia ole. Joissakin standardimallia laajentavissa teorioissa protonin hajoaminen voisi kuitenkin olla mahdollista, ja siksi sitä etsitään kokeellisesti. Protonin hajoamista ei ole havaittu. Esimerkiksi hajoamiselle $p \to e^+ + \pi^0$ kokeet antavat eliniän alarajaksi yli $10^{34}$ vuotta.
 
 ```pysahdy
-Vapaa hiukkanen voisi hajota kahdeksi hiukkaseksi, mutta niiden yhteenlaskettu massa on suurempi kuin hajoavan hiukkasen massa. Voiko hajoaminen tapahtua?
+Vapaan hiukkasen massa on $135\,\tfrac{\text{MeV}}{c^2}$, ja sen pitäisi hajota hiukkasiksi, joiden massojen summa on $140\,\tfrac{\text{MeV}}{c^2}$. Laske $Q$ ja päättele, mitä tulos tarkoittaa.
 ---
-Ei voi. Silloin $Q = (m_\text{alku} - m_\text{loppu})\,c^2 < 0$, ja hajoaminen vaatisi energiaa, jota hiukkasella ei ole.
+$Q = (m_\text{alku} - m_\text{loppu})\,c^2 = (135 - 140)\,\text{MeV} = -5\,\text{MeV}$. Negatiivinen $Q$ tarkoittaa, että hajoaminen vaatisi $5\,\text{MeV}$ lisää energiaa, jota vapaalla hiukkasella ei ole, joten hajoaminen ei voi tapahtua.
 ```
 
 ### Beetahajoaminen kvarkkitasolla

@@ -203,9 +203,9 @@ Fotonin energia on likimain energia-aukon suuruinen, $hf \approx E_\text{g}$. LE
 <figure class="unit-photo"><img src="pics/fy8/green-led.webp" alt="LEDin kupu läheltä. Keskellä hehkuu vihreä siru."><figcaption>Vihreä LED. Vihreän valon fotonissa on enemmän energiaa kuin punaisen valon fotonissa. Siksi vihreän LEDin kynnysjännite on suurempi kuin punaisen LEDin.</figcaption></figure>
 
 ```pysahdy
-Vihreän LEDin fotonin energia on suurempi kuin punaisen LEDin ja pienempi kuin sinisen LEDin. Millä välillä vihreän LEDin energia-aukko on?
+Punaisen LEDin valon aallonpituus on $630\,\text{nm}$ ja sinisen LEDin $450\,\text{nm}$ (spektrin huipun kohdalla). Kuinka moninkertainen on sinisen LEDin energia-aukko punaisen LEDin verrattuna?
 ---
-Fotonin energia on melkein sama kuin energia-aukko, $hf \approx E_\text{g}$. Siksi energia-aukko on punaisen ja sinisen LEDin energia-aukkojen välissä.
+Koska $E_\text{g} \approx hf = \tfrac{hc}{\lambda}$, energia-aukko on kääntäen verrannollinen aallonpituuteen. Siis $\tfrac{E_\text{g,sin}}{E_\text{g,pun}} \approx \tfrac{630\,\text{nm}}{450\,\text{nm}} = 1{,}4$. Sinisen LEDin energia-aukko on noin $1{,}4$-kertainen.
 ```
 
 ### Kynnysjännite
@@ -278,7 +278,7 @@ Lasketaan esimerkki punaiselle LEDille, jonka $\lambda = 630\,\text{nm}$. Kynnys
 ```pysahdy
 LEDin valon aallonpituus on $500\,\text{nm}$ (spektrin huipun kohdalla). Arvioi LEDin kynnysjännite.
 ---
-$U_\text{k} \approx \tfrac{hc}{e\lambda} = \tfrac{1240\,\text{V}\,\text{nm}}{500\,\text{nm}} = 2{,}5\,\text{V}$, eli noin $2{,}5\,\text{V}$.
+$U_\text{k} \approx \tfrac{hc}{e\lambda} = \tfrac{1240\,\text{V}\,\text{nm}}{500\,\text{nm}} \approx 2{,}5\,\text{V}$.
 ```
 
 ### Kynnysjännitteen määrittäminen

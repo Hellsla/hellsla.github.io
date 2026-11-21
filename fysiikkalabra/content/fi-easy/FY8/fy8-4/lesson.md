@@ -976,9 +976,9 @@ Tehdään kaksoisrakokoe niin heikolla valolla, että laitteessa on keskimääri
 </svg>
 
 ```pysahdy
-Heikolla valolla tehdyssä kaksoisrakokokeessa raidat alkavat juuri erottua $200$ osuman jälkeen. Voitko nyt ennustaa, mihin osuma numero $201$ tulee? Miten kuva muuttuu, kun osumia on tuhansia?
+Aaltomallin mukaan yksittäinen osuma tulee tietyn kirkkaan raidan kohdalle todennäköisyydellä $0{,}040$. Montako osumaa tähän kohtaan odotetaan, kun osumia kertyy yhteensä $5000$? Entä kun osumia on $50\,000$? Kumpi tulos on suhteellisesti tasaisempi?
 ---
-Et voi. Aaltomalli kertoo vain todennäköisyyden: se on suuri kirkkailla raidoilla ja pieni tummilla. Kun osumia kertyy lisää, raidat selkenevät. Yksittäinen osuma pysyy silti ennustamattomana.
+Odotettu osumien määrä on todennäköisyys kertaa osumien määrä. Se on $0{,}040 \cdot 5000 = 200$ ja $0{,}040 \cdot 50\,000 = 2000$. Todellinen lukumäärä vaihtelee satunnaisesti. Vaihtelu on noin $\pm 14$ ensimmäisessä ($7\,\%$ luvusta $200$) ja noin $\pm 44$ toisessa ($2\,\%$ luvusta $2000$). Suuremmassa kokeessa osumien osuus on siis lähempänä $4\,\%$.
 ```
 
 ### Aalto kertoo todennäköisyyden
@@ -1091,7 +1091,7 @@ Kaavassa $N$ on fotonien lukumäärä, $t$ on aika ($\text{s}$), $P$ on teho ($\
 ```pysahdy
 Punaisen ja sinisen laserin teho on sama. Kumpi lähettää sekunnissa enemmän fotoneja?
 ---
-Punainen. Kaavassa $\tfrac{N}{t} = \tfrac{P}{hf}$ yhden fotonin energia $hf$ on jakajana. Punaisen valon aallonpituus on pidempi kuin sinisen, joten punaisen fotonin energia on pienempi, joten samalla teholla fotoneja tulee enemmän.
+Punainen. Kaavassa $\tfrac{N}{t} = \tfrac{P}{hf}$ yhden fotonin energia $hf$ on jakajana. Punaisen valon aallonpituus on pidempi kuin sinisen, joten punaisen fotonin energia on pienempi. Samalla teholla fotoneja tulee silloin enemmän.
 ```
 
 ## Esimerkki

@@ -127,7 +127,7 @@ Radiation is **ionising** when a single particle or photon of it can remove an e
 ```pysahdy
 An X-ray photon of $60\,\text{keV}$ gives all its energy to water, and ionising one molecule takes $12.6\,\text{eV}$. At most how many molecules can it ionise?
 ---
-$n = \tfrac{6.0 \cdot 10^{4}\,\text{eV}}{12.6\,\text{eV}} \approx 4.8 \cdot 10^{3}$. A single photon of visible light ($1.7$–$3.3\,\text{eV}$) could not ionise even one.
+$n = \tfrac{6.0 \cdot 10^{4}\,\text{eV}}{12.6\,\text{eV}} = 4762$, and an at-most value is rounded down. The photon can ionise at most about $4.7 \cdot 10^{3}$ molecules. A single photon of visible light ($1.7\,\text{eV} - 3.3\,\text{eV}$) could not ionise even one.
 ```
 
 ### Ionisation transfers the energy of radiation to matter
@@ -256,9 +256,9 @@ The types of radiation (chapter *The atomic nucleus and radioactive decay*) diff
 <figure class="unit-photo"><img src="pics/fy8/hfir-refueling.webp" alt="A deep pool of water seen from above in blue light; at the bottom is a round reactor core giving off a bright blue glow, surrounded by round lids."><figcaption>The core of a research reactor at the bottom of a pool during refuelling. The blue glow is Cherenkov radiation: charged particles, mainly electrons, move through the water faster than light travels in water. The thick layer of water attenuates the radiation, so people can work at the edge of the pool.</figcaption></figure>
 
 ```pysahdy
-An alpha particle and a beta particle both have the kinetic energy $5.49\,\text{MeV}$ and stop in air; assume the same $W \approx 34\,\text{eV}$ for both. Compare the numbers of ion pairs they make in total and per centimetre of path.
+An alpha particle and a beta particle both have the kinetic energy $4.0\,\text{MeV}$ and stop in air; assume the same $W \approx 34\,\text{eV}$ for both. Compare the numbers of ion pairs they make, first in total and then per centimetre of path.
 ---
-Both make $\tfrac{5.49 \cdot 10^{6}\,\text{eV}}{34\,\text{eV}} \approx 1.6 \cdot 10^{5}$ ion pairs, because $n_\text{i} = E/W$ depends only on the energy. The beta particle travels metres and the alpha particle a few centimetres, so the beta makes far fewer per centimetre.
+Both make $\tfrac{4.0 \cdot 10^{6}\,\text{eV}}{34\,\text{eV}} \approx 1.2 \cdot 10^{5}$ ion pairs, because $n_\text{i} = E/W$ depends only on the energy. The beta particle travels metres and the alpha particle a few centimetres, so the beta makes far fewer ion pairs per centimetre.
 ```
 
 ### Penetrating power

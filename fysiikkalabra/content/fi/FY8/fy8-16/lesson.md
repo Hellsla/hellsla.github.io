@@ -252,9 +252,9 @@ Lähes kaikkien galaksien valossa on punasiirtymä, ja sitä suurempi, mitä kau
 Punasiirtymä syntyy, kun avaruuden laajeneminen venyttää valon aallonpituutta sen matkatessa galaksista meille. Lähellä olevien galaksien punasiirtymää voi tulkita kuten ääntä, jonka lähde loittonee: mitä nopeammin lähde loittonee, sitä pidempänä aallonpituus saapuu.
 
 ```pysahdy
-Meistä katsottuna galaksi B on samassa suunnassa kaksi kertaa niin kaukana kuin galaksi A, ja B loittonee kaksi kertaa niin nopeasti kuin A. Miten B liikkuu galaksista A katsottuna, ja mitä tämä kertoo maailmankaikkeuden keskipisteestä?
+Hubblen vakio on $70\,\tfrac{\text{km/s}}{\text{Mpc}}$. Meistä katsottuna galaksi A on $60\,\text{Mpc}$ ja galaksi B samassa suunnassa $120\,\text{Mpc}$ päässä. Kuinka nopeasti B loittonee galaksista A katsottuna ja kuinka kaukana B on A:sta?
 ---
-Galaksista A katsottuna B on yhtä kaukana kuin A on meistä, joten B loittonee A:sta yhtä nopeasti kuin A loittonee meistä. A näkee saman lain kuin me, joten emme ole erityinen keskipiste.
+$v_\text{A} = 70 \cdot 60 = 4200\,\tfrac{\text{km}}{\text{s}}$ ja $v_\text{B} = 70 \cdot 120 = 8400\,\tfrac{\text{km}}{\text{s}}$. A:sta katsottuna B loittonee nopeudella $8400 - 4200 = 4200\,\tfrac{\text{km}}{\text{s}}$ etäisyydellä $120\,\text{Mpc} - 60\,\text{Mpc} = 60\,\text{Mpc}$. Se on sama laki $v = H_0\,d$, joten emme ole erityinen keskipiste.
 ```
 
 ### Alkuräjähdys
@@ -294,9 +294,9 @@ Ytimet eivät heti saaneet elektroneja ympärilleen. Fotonien energia oli niin s
 Tuolloin vapautunut valo on yhä matkalla. Laajeneminen on venyttänyt sen aallonpituudet noin $1100$-kertaisiksi, joten nyt se on mikroaaltoja, joiden tyypillinen aallonpituus on noin $1{,}06\,\text{mm}$. Tämä on **kosminen taustasäteily**. Arno Penzias ja Robert Wilson löysivät sen vuonna 1965. Sitä tulee joka suunnasta lähes tasaisesti, ja sen spektri vastaa kappaletta, jonka lämpötila on $2{,}725\,\text{K}$.
 
 ```pysahdy
-Miksi mikään kaukoputki ei voi nähdä valoa ajalta ennen noin $380\,000$ vuotta, vaikka maailmankaikkeus on sitä vanhempi?
+Vedyn ionisoimiseen juuri riittävän fotonin energia on $13{,}6\,\text{eV}$. Sellainen fotoni vapautui sirontakerroksesta, ja laajeneminen on venyttänyt sen aallonpituuden $1100$-kertaiseksi. Mikä on fotonin energia nyt ja voiko se ionisoida vetyatomin?
 ---
-Sitä ennen vapaat elektronit sirottivat fotoneja jatkuvasti joka suuntaan, joten valo ei päässyt suoraan meille. Kosminen taustasäteily on varhaisin valo, joka meille ylipäätään saapuu.
+Energia on kääntäen verrannollinen aallonpituuteen, joten $E = \tfrac{13{,}6\,\text{eV}}{1100} \approx 0{,}012\,\text{eV}$. Se on tuhannesosa ionisaatioenergiasta, joten fotoni ei voi ionisoida vetyatomia.
 ```
 
 ### Tähdet valmistavat raskaammat alkuaineet
@@ -510,9 +510,9 @@ missä $v$ on etääntymisnopeus, $d$ galaksin etäisyys ja $H_0$ **Hubblen vaki
 </svg>
 
 ```pysahdy
-Hubblen vakio on $70\,\tfrac{\text{km/s}}{\text{Mpc}}$. Millä nopeudella galaksi etääntyy, kun sen etäisyys on $100\,\text{Mpc}$?
+Hubblen vakio on $70\,\tfrac{\text{km/s}}{\text{Mpc}}$. a) Millä nopeudella galaksi etääntyy, kun sen etäisyys on $100\,\text{Mpc}$? b) Millä etäisyydellä galaksi etääntyy nopeudella $14\,000\,\tfrac{\text{km}}{\text{s}}$?
 ---
-$v = H_0\,d = 70\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 100\,\text{Mpc} = 7000\,\text{km/s}$.
+a) $v = H_0\,d = 70\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 100\,\text{Mpc} = 7000\,\tfrac{\text{km}}{\text{s}}$. b) $d = \tfrac{v}{H_0} = \tfrac{14\,000\,\text{km/s}}{70\,\text{km/s/Mpc}} = 200\,\text{Mpc}$.
 ```
 
 ### Syventävä: maailmankaikkeuden ikä Hubblen vakiosta

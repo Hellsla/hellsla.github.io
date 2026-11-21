@@ -974,9 +974,9 @@ When the double-slit experiment is done with light so weak that there is on aver
 </svg>
 
 ```pysahdy
-In a double-slit experiment with weak light, the fringes have just begun to stand out after $200$ hits. Can you now predict where hit number $201$ will land, and how does the picture change when thousands of hits have accumulated?
+According to the wave model, a single hit lands at a certain bright fringe with probability $0.040$. How many hits are expected at this place when $5000$ hits accumulate in total? What about $50\,000$ hits, and which result is relatively more even?
 ---
-No. The wave model gives only the probability of a hit at each place: large at the bright fringes and small in the dark ones. More hits make the fringes clearer, but each single hit remains unpredictable.
+The expected number of hits is the probability times the number of hits: $0.040 \cdot 5000 = 200$ and $0.040 \cdot 50\,000 = 2000$. The actual count varies randomly: about $\pm 14$ in the first ($7\,\%$ of $200$) and about $\pm 44$ in the second ($2\,\%$ of $2000$). In the larger experiment the share of hits is therefore closer to $4\,\%$.
 ```
 
 ### The wave gives the probability

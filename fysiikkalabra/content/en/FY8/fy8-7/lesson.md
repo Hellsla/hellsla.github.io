@@ -84,9 +84,9 @@ In 1917 Albert Einstein concluded that there is also a third event. When a photo
 </svg>
 
 ```pysahdy
-In stimulated emission one photon becomes two. Is the incoming photon absorbed, and where does the energy of the new photon come from?
+A light pulse contains $1000$ photons of wavelength $650\,\text{nm}$. It passes through a medium with plenty of excited atoms, and every photon causes one stimulated emission. How many photons come out, and how much energy has the medium given to the light in total? Use $hc = 1240\,\text{eV}\,\text{nm}$.
 ---
-The incoming photon is not absorbed; it continues on its way. The energy of the new photon comes from the excited atom, which drops from the level $E_2$ to the level $E_1$.
+For every incoming photon one new photon is produced, so $2000$ photons come out. There are $1000$ new photons, each with energy $hf = \tfrac{hc}{\lambda} = \tfrac{1240\,\text{eV}\,\text{nm}}{650\,\text{nm}} = 1.91\,\text{eV}$. The medium gives the light energy $1000 \cdot 1.91\,\text{eV} \approx 1.9\,\text{keV}$.
 ```
 
 ### Population inversion
@@ -199,9 +199,9 @@ So the colour of a semiconductor quantum dot can be chosen by its size, even tho
 <figure class="unit-photo"><img src="pics/fy8/helium-neon-laser.webp" alt="A black box-shaped device labelled He-Ne LASER sits in a mount on a table; red light shines from its end, with a holder in front of it."><figcaption>A helium–neon laser in an optics set-up. An electric discharge pumps the gas in the tube, and the mirrors at the ends of the tube amplify the light into a narrow red beam with a wavelength of $633\,\text{nm}$.</figcaption></figure>
 
 ```pysahdy
-A manufacturer wants quantum dots that emit red light instead of green. Should the dots be made larger or smaller?
+A quantum dot made of cadmium selenide emits blue light of wavelength $450\,\text{nm}$. Use $hc = 1240\,\text{eV}\,\text{nm}$. Calculate the photon energy and decide whether the dot has a larger or smaller diameter than the $2.0\,\text{nm}$ dot. By how much does the dot's energy gap exceed the $1.74\,\text{eV}$ gap of a large crystal?
 ---
-Larger. Red light has a longer wavelength than green, so its photons have less energy. A smaller energy gap is needed, and the gap is smaller in a larger dot.
+The photon energy is $\tfrac{hc}{\lambda} = \tfrac{1240\,\text{eV}\,\text{nm}}{450\,\text{nm}} \approx 2.76\,\text{eV}$, and the energy gap is approximately this large. It is larger than the gap of the $2.0\,\text{nm}$ dot ($480\,\text{nm}$ corresponds to $2.58\,\text{eV}$), so the dot is smaller than $2.0\,\text{nm}$. The excess is $2.76\,\text{eV} - 1.74\,\text{eV} \approx 1.0\,\text{eV}$.
 ```
 
 ### Applications of quantum structures
