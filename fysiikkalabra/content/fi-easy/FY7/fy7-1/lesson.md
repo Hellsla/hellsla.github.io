@@ -374,9 +374,9 @@ B &= \sqrt{B_1^2 + B_2^2} \\
 missä $\theta$ on kokonaiskentän ja kentän $\overline{B}_1$ välinen kulma.
 
 ```pysahdy
-Paikassa, jossa Maan magneettikentän vaakakomponentti on $30\,\mu\text{T}$, kompassin lähellä on magneetti. Sen kenttä on $40\,\mu\text{T}$ ja kohtisuorassa vaakakomponenttia vastaan. Kuinka suuri on kokonaiskenttä?
+Paikassa, jossa Maan magneettikentän vaakakomponentti on $30\,\mu\text{T}$, kompassin lähellä on magneetti. Sen vaakasuora kenttä on $40\,\mu\text{T}$ ja kohtisuorassa Maan kentän vaakakomponenttia vastaan. Kuinka suuri on vaakasuora kokonaiskenttä?
 ---
-Käytetään Pythagoraan lausetta: $B = \sqrt{(30\,\mu\text{T})^2 + (40\,\mu\text{T})^2} = 50\,\mu\text{T}$.
+Vaakasuora kokonaiskenttä saadaan Pythagoraan lauseella: $B = \sqrt{(30\,\mu\text{T})^2 + (40\,\mu\text{T})^2} = 50\,\mu\text{T}$.
 ```
 
 Tätä käytetään kompassimittauksessa. Kompassin kohdalla Maan kentän vaakakomponentti $\overline{B}_\text{h}$ osoittaa pohjoiseen. Aseta magneetti niin, että sen kenttä $\overline{B}_\text{m}$ osoittaa kompassin kohdalla itään. Silloin neula kääntyy pohjoisesta itään kulman $\theta$ verran, ja $\tan\theta = B_\text{m} : B_\text{h}$. Magneetin kentän voi siis mitata kompassilla, kun Maan kentän vaakakomponentti tunnetaan.
