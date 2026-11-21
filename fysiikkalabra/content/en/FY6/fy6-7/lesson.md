@@ -259,7 +259,7 @@ where $U$ is the voltage of the device (V) and $I$ the current through it (A).
 ```pysahdy
 The voltage of a device is $230\,\text{V}$ and its current is $0.50\,\text{A}$. How much energy does it use in $2.0\,\text{h}$? Give the answer in kilowatt-hours.
 ---
-The power is $P = UI = 230\,\text{V} \cdot 0.50\,\text{A} = 115\,\text{W} = 0.115\,\text{kW}$. So $E = Pt = 0.115\,\text{kW} \cdot 2.0\,\text{h}$, so $E = 0.23\,\text{kWh}$.
+The power is $P = UI = 230\,\text{V} \cdot 0.50\,\text{A}$, so $P = 115\,\text{W} = 0.115\,\text{kW}$. So $E = Pt = 0.115\,\text{kW} \cdot 2.0\,\text{h}$, so $E = 0.23\,\text{kWh}$.
 ```
 
 An electricity bill charges both for the electrical energy and for its transmission in the electricity network per kilowatt-hour, and in addition monthly basic charges:

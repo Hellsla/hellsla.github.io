@@ -398,7 +398,7 @@ where $F$ is the magnitude of the force ($\text{N}$), $q_1$ and $q_2$ are the ch
 ```pysahdy
 Two point charges of $1.0\,\mu\text{C}$ each are $0.30\,\text{m}$ apart. How large is the electric force between them?
 ---
-The force is $F = k\,\lvert q_1 q_2 \rvert : r^2$. So $F = 9.0 \cdot 10^{9} \cdot 1.0 \cdot 10^{-12} : 0.30^2\,\text{N}$, so $F \approx 0.10\,\text{N}$.
+The force is $F = k\,\lvert q_1 q_2 \rvert : r^2$. So $F = 9.0 \cdot 10^{9} \cdot 1.0 \cdot 10^{-12} : 0.30^2$ (unit $\text{N}$), so $F \approx 0.10\,\text{N}$.
 ```
 
 ### Force and reaction force

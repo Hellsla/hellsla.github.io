@@ -259,7 +259,7 @@ missä $U$ on laitteen jännite (V) ja $I$ sen läpi kulkeva virta (A).
 ```pysahdy
 Laitteen jännite on $230\,\text{V}$ ja virta $0{,}50\,\text{A}$. Kuinka paljon energiaa se käyttää $2{,}0\,\text{h}$:ssa? Vastaa kilowattitunteina.
 ---
-Teho on $P = UI = 230\,\text{V} \cdot 0{,}50\,\text{A} = 115\,\text{W} = 0{,}115\,\text{kW}$. Siis $E = Pt = 0{,}115\,\text{kW} \cdot 2{,}0\,\text{h}$, joten $E = 0{,}23\,\text{kWh}$.
+Teho on $P = UI = 230\,\text{V} \cdot 0{,}50\,\text{A}$, joten $P = 115\,\text{W} = 0{,}115\,\text{kW}$. Siis $E = Pt = 0{,}115\,\text{kW} \cdot 2{,}0\,\text{h}$, joten $E = 0{,}23\,\text{kWh}$.
 ```
 
 Sähkölaskussa maksetaan sekä sähköenergiasta että sen siirrosta sähköverkossa kilowattitunteja kohti, ja lisäksi kuukausittaisia perusmaksuja:

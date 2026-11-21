@@ -398,7 +398,7 @@ Tässä $F$ on voiman suuruus ($\text{N}$), $q_1$ ja $q_2$ ovat varaukset ($\tex
 ```pysahdy
 Kaksi pistevarausta, kumpikin $1{,}0\,\mu\text{C}$, on $0{,}30\,\text{m}$:n päässä toisistaan. Kuinka suuri sähköinen voima niiden välillä on?
 ---
-Voima on $F = k\,\lvert q_1 q_2 \rvert : r^2$. Lukuarvoilla $F = 9{,}0 \cdot 10^{9} \cdot 1{,}0 \cdot 10^{-12} : 0{,}30^2\,\text{N}$, joten $F \approx 0{,}10\,\text{N}$.
+Voima on $F = k\,\lvert q_1 q_2 \rvert : r^2$. Lukuarvoilla $F = 9{,}0 \cdot 10^{9} \cdot 1{,}0 \cdot 10^{-12} : 0{,}30^2$ (yksikkö $\text{N}$), joten $F \approx 0{,}10\,\text{N}$.
 ```
 
 ### Voima ja vastavoima
