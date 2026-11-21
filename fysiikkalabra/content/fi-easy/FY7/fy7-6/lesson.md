@@ -337,7 +337,7 @@ Kaavassa $P$ on teho (W), $F$ on jarruttava voima (N) ja $v$ on vauhti (m/s). Sa
 ```pysahdy
 Magneetin massa on $20\,\text{g}$. Se putoaa kupariputkessa tasaisella vauhdilla $0{,}30\,\text{m/s}$. Millä teholla putken sisäenergia kasvaa?
 ---
-Jarruttava voima on yhtä suuri kuin paino, $F = mg$. Nyt $mg = 0{,}020\,\text{kg}\cdot 9{,}81\,\text{m/s}^2$, joten $F \approx 0{,}196\,\text{N}$. Teho on $P = Fv$, ja $Fv = 0{,}196\,\text{N}\cdot 0{,}30\,\text{m/s}$, joten $P \approx 0{,}059\,\text{W}$.
+Jarruttava voima on yhtä suuri kuin paino: $F = mg = 0{,}020\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 0{,}196\,\text{N}$. Teho on $P = Fv \approx 0{,}196\,\text{N}\cdot 0{,}30\,\text{m/s} \approx 0{,}059\,\text{W}$.
 ```
 
 ## Esimerkki

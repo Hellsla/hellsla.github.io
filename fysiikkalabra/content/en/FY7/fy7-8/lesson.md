@@ -234,7 +234,7 @@ where $U_1$ is the primary voltage (V), $U_2$ the secondary voltage (V), $N_1$ a
 ```pysahdy
 The primary coil of a transformer has $460$ turns and its voltage is $230\,\text{V}$. The secondary coil has $40$ turns. What is the secondary voltage when the transformer is ideal?
 ---
-The voltages are in the same ratio as the numbers of turns, so $U_2 = U_1 \cdot \tfrac{N_2}{N_1}$. Substitution gives $U_2 = 230\,\text{V} \cdot \tfrac{40}{460}$, that is, $U_2 = 20.0\,\text{V}$.
+The voltages are in the same ratio as the numbers of turns, so $U_2 = U_1 \cdot \tfrac{N_2}{N_1} = 230\,\text{V} \cdot \tfrac{40}{460} = 20.0\,\text{V}$.
 ```
 
 ### Power loss of a transmission line

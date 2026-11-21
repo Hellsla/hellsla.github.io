@@ -288,7 +288,7 @@ missä $A$ on vaimennus ($\text{dB}$), $\lg$ kymmenkantainen logaritmi, $a$ kuid
 ```pysahdy
 Kuidun vaimennuskerroin on $0{,}18\,\text{dB/km}$ ja kuidun pituus on $50\,\text{km}$. Kuinka suuri on vaimennus desibeleinä ja kuinka suuri osa tehosta on jäljellä?
 ---
-Vaimennus on $A = aL$. Se on $0{,}18\,\text{dB/km}\cdot 50\,\text{km} = 9{,}0\,\text{dB}$. Tehosuhde on $P/P_0 = 10^{-0{,}90} \approx 0{,}13$, joten tehosta on jäljellä noin $13\,\%$.
+Vaimennus on $A = aL = 0{,}18\,\text{dB/km}\cdot 50\,\text{km} = 9{,}0\,\text{dB}$. Tehosuhde on $P/P_0 = 10^{-0{,}90} \approx 0{,}13$, joten tehosta on jäljellä noin $13\,\%$.
 ```
 
 ### Langattoman laturin jännite

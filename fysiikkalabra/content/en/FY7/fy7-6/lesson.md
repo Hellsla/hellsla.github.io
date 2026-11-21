@@ -309,7 +309,7 @@ where $P$ is the power (W), $F$ the braking force (N) and $v$ the speed (m/s). T
 ```pysahdy
 A magnet of mass $20\,\text{g}$ falls in a copper tube at a constant speed of $0.30\,\text{m/s}$. At what rate does the internal energy of the tube increase?
 ---
-The braking force equals the weight, $F = mg$. Here $mg = 0.020\,\text{kg}\cdot 9.81\,\text{m/s}^2$, so $F \approx 0.196\,\text{N}$. The power is $P = Fv$, and $Fv = 0.196\,\text{N}\cdot 0.30\,\text{m/s}$, so $P \approx 0.059\,\text{W}$.
+The braking force equals the weight: $F = mg = 0.020\,\text{kg}\cdot 9.81\,\text{m/s}^2 \approx 0.196\,\text{N}$. The power is $P = Fv \approx 0.196\,\text{N}\cdot 0.30\,\text{m/s} \approx 0.059\,\text{W}$.
 ```
 
 ## Worked example

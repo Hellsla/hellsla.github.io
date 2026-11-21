@@ -280,7 +280,7 @@ Jos vuo muuttuu tasaisella nopeudella, induktiojännite on koko aikavälin vakio
 ```pysahdy
 Käämissä on $200$ kierrosta. Käämiä liikutetaan magneettikentässä. Sen yhden kierroksen läpi kulkeva magneettivuo muuttuu tasaisesti arvosta $0{,}030\,\text{Wb}$ arvoon $0{,}010\,\text{Wb}$ ajassa $0{,}50\,\text{s}$. Kuinka suuri on induktiojännitteen suuruus?
 ---
-Vuon muutos yhden kierroksen läpi on $0{,}020\,\text{Wb}$. Induktiolain $|e| = N|\Delta\Phi| : \Delta t$ mukaan jännite on $200 \cdot 0{,}020\,\text{Wb} : 0{,}50\,\text{s} = 8{,}0\,\text{V}$.
+Vuon muutos yhden kierroksen läpi on $0{,}020\,\text{Wb}$. Jännite on $|e| = 200 \cdot 0{,}020\,\text{Wb} : 0{,}50\,\text{s} = 8{,}0\,\text{V}$.
 ```
 
 ### Vuon kuvaaja ja jännite
@@ -446,7 +446,7 @@ Kaavassa $v$ on tangon nopeus (m/s), $B$ on magneettivuon tiheys (T) ja $l$ on k
 ```pysahdy
 Tanko liukuu vauhdilla $2{,}0\,\text{m/s}$ kohtisuoraan kenttää $0{,}50\,\text{T}$ vastaan. Kentässä olevan tangon pituus on $0{,}30\,\text{m}$. Kuinka suuri jännite tangon päiden välille syntyy?
 ---
-Nopeus, tanko ja kenttä ovat kohtisuorassa. Siksi $e = vBl$. Sijoitus $2{,}0\,\text{m/s} \cdot 0{,}50\,\text{T} \cdot 0{,}30\,\text{m}$ antaa $e = 0{,}30\,\text{V}$.
+Nopeus, tanko ja kenttä ovat kohtisuorassa. Siksi $e = vBl = 2{,}0\,\text{m/s} \cdot 0{,}50\,\text{T} \cdot 0{,}30\,\text{m} = 0{,}30\,\text{V}$.
 ```
 
 Saman tuloksen saa myös induktiolaista. Tanko liukuu kiskoilla. Kiskojen ja tangon rajaaman silmukan pinta-ala kasvaa ajassa $\Delta t$ määrällä $\Delta A = l \cdot v\Delta t$. Siksi vuo kasvaa määrällä $\Delta\Phi = Bl \cdot v\Delta t$. Jännitteen suuruus on $\Delta\Phi : \Delta t = vBl$. Kun kiskojen päät yhdistetään vastuksella, piirissä kulkee virta. Magneettikenttä kohdistaa virtaa kuljettavaan tankoon voiman $F = IlB$, kuten luvussa *Voima virtajohtimeen: sähkömoottori ja kaiutin*. Tämän voiman suuntaa ja energian säilymistä tutkitaan luvussa *Lenzin laki ja pyörrevirrat*.

@@ -294,7 +294,7 @@ where $A$ is the attenuation ($\text{dB}$), $\lg$ the base-ten logarithm, $a$ th
 ```pysahdy
 The attenuation coefficient of a fibre is $0.18\,\text{dB/km}$ and the fibre is $50\,\text{km}$ long. What is the attenuation in decibels, and what fraction of the power is left?
 ---
-The attenuation is $A = aL$. It is $0.18\,\text{dB/km}\cdot 50\,\text{km} = 9.0\,\text{dB}$. The power ratio is $P/P_0 = 10^{-0.90} \approx 0.13$, so about $13\,\%$ of the power is left.
+The attenuation is $A = aL = 0.18\,\text{dB/km}\cdot 50\,\text{km} = 9.0\,\text{dB}$. The power ratio is $P/P_0 = 10^{-0.90} \approx 0.13$, so about $13\,\%$ of the power is left.
 ```
 
 ### Voltage of a wireless charger

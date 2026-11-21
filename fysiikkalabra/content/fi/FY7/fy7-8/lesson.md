@@ -232,7 +232,7 @@ missä $U_1$ on ensiöjännite (V), $U_2$ toisiojännite (V), $N_1$ ja $N_2$ ens
 ```pysahdy
 Muuntajan ensiökäämissä on $460$ kierrosta ja sen jännite on $230\,\text{V}$. Toisiokäämissä on $40$ kierrosta. Mikä on toisiojännite, kun muuntaja on ideaalinen?
 ---
-Jännitteet suhtautuvat kuten kierrosluvut, joten $U_2 = U_1 \cdot \tfrac{N_2}{N_1}$. Sijoitus antaa $U_2 = 230\,\text{V} \cdot \tfrac{40}{460}$, eli $U_2 = 20{,}0\,\text{V}$.
+Jännitteet suhtautuvat kuten kierrosluvut, joten $U_2 = U_1 \cdot \tfrac{N_2}{N_1} = 230\,\text{V} \cdot \tfrac{40}{460} = 20{,}0\,\text{V}$.
 ```
 
 ### Siirtojohdon tehohäviö

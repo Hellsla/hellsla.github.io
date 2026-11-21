@@ -360,7 +360,7 @@ where $\theta$ is the angle between the total field and the field $\overline{B}_
 ```pysahdy
 At a compass the horizontal component of the Earth's magnetic field ($30\,\mu\text{T}$) and the field of the magnet ($40\,\mu\text{T}$) are perpendicular to each other. What is the magnitude of the total field?
 ---
-By the Pythagorean theorem $B = \sqrt{B_1^2 + B_2^2}$. The substitution gives $\sqrt{(30\,\mu\text{T})^2 + (40\,\mu\text{T})^2}$, so $B = 50\,\mu\text{T}$.
+By the Pythagorean theorem $B = \sqrt{(30\,\mu\text{T})^2 + (40\,\mu\text{T})^2} = 50\,\mu\text{T}$.
 ```
 
 This is used in a compass measurement. At the compass, the horizontal component $\overline{B}_\text{h}$ of the Earth's field points north. When a magnet is placed so that its field $\overline{B}_\text{m}$ at the compass points east, the needle turns from north towards east by an angle $\theta$ for which $\tan\theta = B_\text{m} : B_\text{h}$. The field of a magnet can therefore be measured with a compass when the horizontal component of the Earth's field is known.

@@ -206,7 +206,7 @@ In the chapter *Electromagnetic induction* a voltage was induced in a coil when 
 ```pysahdy
 A coil has an area of $0.010\,\text{m}^2$ and the magnetic flux density is $0.20\,\text{T}$. How great is the flux through the coil when its plane is perpendicular to the field, and how great is it after a quarter of a turn?
 ---
-At first $\Phi = BA$. The substitution $0.20\,\text{T} \cdot 0.010\,\text{m}^2$ gives $\Phi = 0.0020\,\text{Wb}$. After a quarter of a turn the plane of the coil is parallel to the field and no field line passes through it, so the flux is zero.
+At first $\Phi = BA = 0.20\,\text{T} \cdot 0.010\,\text{m}^2 = 0.0020\,\text{Wb}$. After a quarter of a turn the plane of the coil is parallel to the field and no field line passes through it, so the flux is zero.
 ```
 
 ### Slip rings and brushes

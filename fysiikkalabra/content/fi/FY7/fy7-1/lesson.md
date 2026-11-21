@@ -360,7 +360,7 @@ missä $\theta$ on kokonaiskentän ja kentän $\overline{B}_1$ välinen kulma.
 ```pysahdy
 Kompassin kohdalla maan magneettikentän vaakakomponentti ($30\,\mu\text{T}$) ja magneetin kenttä ($40\,\mu\text{T}$) ovat kohtisuorassa toisiaan vastaan. Kuinka suuri on kokonaiskenttä?
 ---
-Pythagoraan lauseella $B = \sqrt{B_1^2 + B_2^2}$. Sijoitus on $\sqrt{(30\,\mu\text{T})^2 + (40\,\mu\text{T})^2}$, joten $B = 50\,\mu\text{T}$.
+Pythagoraan lauseella $B = \sqrt{(30\,\mu\text{T})^2 + (40\,\mu\text{T})^2} = 50\,\mu\text{T}$.
 ```
 
 Tätä käytetään kompassimittauksessa. Kompassin kohdalla Maan kentän vaakakomponentti $\overline{B}_\text{h}$ osoittaa pohjoiseen. Kun magneetti asetetaan niin, että sen kenttä $\overline{B}_\text{m}$ on kompassin kohdalla itään, neula kääntyy pohjoisesta itään kulman $\theta$, jolle $\tan\theta = B_\text{m} : B_\text{h}$. Magneetin kentän voi siis mitata kompassilla, kun Maan kentän vaakakomponentti tunnetaan.

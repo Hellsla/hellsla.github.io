@@ -494,7 +494,7 @@ missä $I_0$ on analysaattoriin tulevan polarisoituneen valon intensiteetti ($\t
 ```pysahdy
 Polarisoituneen valon intensiteetti on $200\,\text{W/m}^2$, ja analysaattorin läpäisysuunta on $60^\circ$:n kulmassa valon polarisaatiosuuntaan nähden. Kuinka suuri on intensiteetti analysaattorin jälkeen?
 ---
-Malusin lain mukaan $I = I_0 \cos^2\theta$. Nyt $\cos^2 60^\circ = 0{,}25$, joten $I = 200\,\text{W/m}^2 \cdot 0{,}25$, eli $I = 50\,\text{W/m}^2$.
+Malusin lain mukaan $I = I_0 \cos^2\theta = 200\,\text{W/m}^2 \cdot \cos^2 60^\circ = 200\,\text{W/m}^2 \cdot 0{,}25 = 50\,\text{W/m}^2$.
 ```
 
 ### Malusin lain tutkiminen mittaamalla

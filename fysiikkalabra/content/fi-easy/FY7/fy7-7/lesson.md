@@ -208,7 +208,7 @@ Kun käämin taso on kohtisuorassa kenttää vastaan, kenttäviivoja kulkee kä�
 ```pysahdy
 Käämin pinta-ala on $0{,}010\,\text{m}^2$ ja magneettivuon tiheys on $0{,}20\,\text{T}$. Kuinka suuri on vuo, kun käämin taso on kohtisuorassa kenttää vastaan? Kuinka suuri vuo on neljänneskierroksen jälkeen?
 ---
-Aluksi $\Phi = BA$. Sijoitus $0{,}20\,\text{T} \cdot 0{,}010\,\text{m}^2$ antaa $\Phi = 0{,}0020\,\text{Wb}$. Neljänneskierroksen jälkeen käämin taso on kentän suuntainen. Yksikään kenttäviiva ei kulje käämin läpi, joten vuo on nolla.
+Aluksi $\Phi = BA = 0{,}20\,\text{T} \cdot 0{,}010\,\text{m}^2 = 0{,}0020\,\text{Wb}$. Neljänneskierroksen jälkeen käämin taso on kentän suuntainen. Yksikään kenttäviiva ei kulje käämin läpi, joten vuo on nolla.
 ```
 
 ### Liukurenkaat ja harjat

@@ -168,7 +168,7 @@ where $c = 3.00 \cdot 10^{8}\,\text{m/s}$ is the speed of light in a vacuum and 
 ```pysahdy
 The speed of light in a vacuum is $3.00 \cdot 10^{8}\,\text{m/s}$ and the refractive index of diamond is $2.42$. How fast does light travel in diamond?
 ---
-The speed is $v = c : n$. Substitution gives $v = 3.00 \cdot 10^{8}\,\text{m/s} : 2.42$. So $v \approx 1.24 \cdot 10^{8}\,\text{m/s}$.
+The speed is $v = c : n = 3.00 \cdot 10^{8}\,\text{m/s} : 2.42 \approx 1.24 \cdot 10^{8}\,\text{m/s}$.
 ```
 
 ### The law of refraction, or Snell's law
@@ -240,7 +240,7 @@ where $\alpha_1$ is the angle of incidence and $\alpha_2$ the angle of refractio
 ```pysahdy
 A ray of light comes from air ($n = 1.00$) into window glass ($n = 1.52$) at an angle of incidence of $40^\circ$. What is the angle of refraction, and is the ray refracted towards the normal or away from it?
 ---
-Snell's law gives $\sin\alpha_2 = 1.00 \cdot \sin 40^\circ : 1.52$. So $\sin\alpha_2 = 0.423$ and $\alpha_2 \approx 25^\circ$. Glass is optically denser, so the ray is refracted towards the normal.
+From Snell's law $\sin\alpha_2 = 1.00 \cdot \sin 40^\circ : 1.52 = 0.423$, so $\alpha_2 \approx 25^\circ$. Glass is optically denser, so the ray is refracted towards the normal.
 ```
 
 ### Refractive indices
