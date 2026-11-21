@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4846f6838f6a655b
+CONTENT-HASH: d645dbb668c8f4cb
 
 ## Blocking
-- none
+(ei mitään)
 
 ## Polish
-- none
+(ei mitään)
+
+## Vanhan sisällön löydökset
+(ei tutkittu; rajattu laajuus)
 
 ## Checked
-- Delta round 2: the diff adds a space after the display formula before "(luku ...)" in the Kertaa feedback (fy6-8 also the word "saadaan").
-- Rendered the opened Kertaa correct-answer feedback at 390 px for fy6-8 and fy6-13 (the others carry the identical one-character change): display block with normal margins, "(luku ...)" starts a new line, no stray indent or gap, no clipping.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review (rajattu): 3 uutta pysahdy-laatikkoa renderöitynä preview/fy6-6.html, vastaukset avattuina 360 ja 1280 px (laatikkokuvat, ei sivun vanhoja kaappauksia): ei punaista KaTeXia, ei vaakavieritystä, ketjut rivittyvät, kieli luettu.

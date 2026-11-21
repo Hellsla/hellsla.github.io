@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 8d94705da168048b
+CONTENT-HASH: e68c2f66a2910310
 
 ## Blocking
-- none
+(ei mitään)
 
 ## Polish
-- none
+(ei mitään)
+
+## Vanhan sisällön löydökset
+(ei tutkittu; rajattu laajuus)
 
 ## Checked
-- batch delta review: the diff changes only the optional Kertaa task in Pohdinta (inquiry.json, numbers with LaTeX units, aligned displays); opened stage-herata-390 (or confirmed unchanged figures/layout from contact context); no figure or sim changed.
+batch delta review (rajattu): 3 uutta pysahdy-laatikkoa renderöitynä preview/fy6-14.html, vastaukset avattuina 360 ja 1280 px (laatikkokuvat, ei sivun vanhoja kaappauksia): ei punaista KaTeXia, ei vaakavieritystä, ketjut rivittyvät, kieli luettu.
