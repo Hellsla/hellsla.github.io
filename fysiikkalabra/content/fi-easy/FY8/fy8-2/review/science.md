@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: bc37ff716059868b
+CONTENT-HASH: b5aabbe65432f34a
 
 ## Blocking
-Ei.
 
 ## Polish
-- Laatikko 1: neonin näkyvät emissioviivat ovat viritystilojen välisiä, joten kylmä neonpilvi ei käytännössä absorboi niitä. Kirchhoffin periaatteena lukiotasolla C; natriumin D-viiva (perustilasta) olisi tarkempi esimerkki. Yksi viiva on myös heikompi tunniste kuin viivojen kuvio.
 
 ## Checked
-batch delta review, kierros 2: kaikki kolme pysahdy-laatikkoa (kaikki uusia mainiin nähden) ja niiden konteksti tarkistettu; luvut laskettu uudelleen omalla skriptillä. Absorptioviiva = saman aineen emissioviiva; $-5{,}0 + 2{,}4 = -2{,}6\,\text{eV} < 0$, ei ionisaatiota eikä tilaa, $2{,}4 \ne 1{,}9\,\text{eV}$, ei absorptiota oikein; $\lambda \propto 1/\Delta E$, B puolet lyhyempi oikein.
-
-## Vanhan sisällön löydökset
-Ei.
+batch delta review: the old absorption box was removed and a new one added after the absorption paragraph; the other box's answer was reworded. Recomputed: 1240/653 = 1,90 eV, 1240/500 = 2,48 eV, 1240/365 = 3,40 eV. The ground-state differences are 1,9 eV and 3,4 eV, so 653 nm and 365 nm are missing and 500 nm passes. The cold gas being in its ground state is stated, which matches the next paragraph. In the reworded box, 2,4 eV is neither the 1,9 eV gap nor enough to ionise (−2,6 eV < 0, still bound). Correct.

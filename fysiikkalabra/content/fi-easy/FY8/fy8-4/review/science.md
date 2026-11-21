@@ -1,14 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: e7e190ea343fd14f
+VERDICT: FAIL
+CONTENT-HASH: 5294205c92e5e11c
 
 ## Blocking
-Ei.
+1. **B, statistics box (line 981).** The answer gives the spread as "noin ±14" and "±44" (7 % and 2 %) with no basis. The lesson never introduces that a count's typical random variation is about √N, so a student cannot reach these numbers or check them, yet the question ("Kumpi on suhteellisesti tasaisempi?") depends on them. The numbers themselves are right: √200 = 14, √2000 = 45 (binomial 13,9 and 43,8). Fix: state the rule in a few words, for example "Satunnainen vaihtelu on tyypillisesti noin $\sqrt{N}$: $\sqrt{200} \approx 14$ …". Also write that the share is *yleensä* closer to 4 %, because one run can deviate.
 
 ## Polish
-Ei.
+- The second box ("Punainen …") is only reworded and is correct.
 
 ## Checked
-batch delta review, kierros 2: kaikki kolme pysahdy-laatikkoa (kaikki uusia mainiin nähden) ja niiden konteksti tarkistettu; luvut laskettu uudelleen omalla skriptillä. Kaksoisrako: yksittäinen osuma ennustamaton, todennäköisyys suuri kirkkailla raidoilla oikein; $p = h/\lambda$, puolikas aallonpituus, kaksinkertainen liikemäärä; $N/t = P/(hf)$, punainen enemmän fotoneja. Kaikki oikein.
-
-## Vanhan sisällön löydökset
-Ei.
+batch delta review: both changed boxes. Recomputed 0,040·5000 = 200 and 0,040·50 000 = 2000, and the relative spreads 7,1 % and 2,2 %.

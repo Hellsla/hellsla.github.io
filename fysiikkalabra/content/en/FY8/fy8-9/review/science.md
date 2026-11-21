@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: c26160bc49a614b8
+CONTENT-HASH: 73014f45720e9c2d
 
 ## Blocking
 
 ## Polish
+
+## Vanhan sisällön löydökset
 None.
 
 ## Checked
-batch delta review, round 2: memoryless decay. The same probability per second whatever the age, and the coin analogy, are correct and agree with the lesson's decay-probability model.
+batch delta review: new memorylessness box: 8000 → 2000 after two half-lives, 1000 decay in the third, probability 0.50, the same as for a new nucleus; correct. The three-half-life box moved unchanged (8000 · 1/8 = 1000) to just after the half-life definition; its context still fits.

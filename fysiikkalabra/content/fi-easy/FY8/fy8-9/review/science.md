@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: c00610f49a26d90f
+CONTENT-HASH: 41902d2b8ee6b58a
 
 ## Blocking
-Ei.
 
 ## Polish
-Ei.
 
 ## Checked
-batch delta review, kierros 2: kaikki kolme pysahdy-laatikkoa (kaikki uusia mainiin nähden) ja niiden konteksti tarkistettu; luvut laskettu uudelleen omalla skriptillä. Muistiton hajoaminen ja kolikkovertaus oikein; $8000\cdot(1/2)^3 = 1000$; $\lambda = \ln 2/T_{1/2}$, A:lla kaksinkertainen. Kaikki oikein.
-
-## Vanhan sisällön löydökset
-Ei.
+batch delta review: the rewritten opening box and the 8000-nuclei box, which moved to just after the half-life definition. No-memory box: 8000·(1/2)² = 2000, half of which decay, so P = 1000/2000 = 0,50, the same as for a fresh nucleus. It is reasoned from the sample counts as asked, and the physics is right. Moved box: 6 h = 3 half-lives, 8000/8 = 1000. Correct, and the new placement follows the definition it uses.

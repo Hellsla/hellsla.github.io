@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 5bb92259e4d619c4
+CONTENT-HASH: aaf214785b048e58
 
 ## Blocking
-Ei.
 
 ## Polish
-- Laatikko 1: "tuhansista suunnista, annokset summautuvat" saattaa saada lukijan odottamaan tuhatkertaista annosta. Lisäys "yhden suunnan annos on paljon pienempi kuin yhden röntgenkuvan" selittäisi, miksi ero on vain kymmeniä kertoja (taulukko: $0{,}1$ vs. $5$–$10\,\text{mSv}$, eli 50–100-kertainen).
 
 ## Checked
-batch delta review, kierros 2: kaikki kolme pysahdy-laatikkoa (kaikki uusia mainiin nähden) ja niiden konteksti tarkistettu; luvut laskettu uudelleen omalla skriptillä. TT:n suurempi annos monesta suunnasta (syy oikein, C); annihilaatio ja liikemäärän säilyminen; $(1/2)^{2+1} = 1/8 = 12{,}5\,\%$.
-
-## Vanhan sisällön löydökset
-Ei.
+batch delta review: both rewritten boxes. CT: 800 · 0,010 mSv = 8 mSv, and 8/0,1 = 80. The chest X-ray value 0,1 mSv and a body CT of 5–10 mSv agree with the lesson's STUK/ICRP table, so there is no cross-chapter contradiction. PET: 2x = cΔt = 30 cm/ns · 0,40 ns = 12 cm, so x = 6,0 cm toward the detector that fired first. The geometry and the side are correct.

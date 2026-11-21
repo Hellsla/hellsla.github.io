@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7e07fa191ab9635d
+CONTENT-HASH: 3ff11295e5514cc9
 
 ## Blocking
 
 ## Polish
+
+## Vanhan sisällön löydökset
 None.
 
 ## Checked
-batch delta review, round 2: CT box; many projections whose doses add, versus one exposure, is a fair simplification (C) of why the CT dose is larger. It is consistent with line 180 and the table (0.1 vs 2 and 5-10 mSv: tens of times). The removed lungs/bone box leaves no dangling reference. Half-value wording change: same physics, 1/8 = 12.5 %.
+batch delta review: CT box: 800 · 0.010 mSv = 8 mSv, ratio 80, one projection a tenth of the 0.1 mSv chest X-ray (the only chest X-ray dose in FY8, so no cross-chapter contradiction); "tens of times" agrees. PET box: path difference 2x = cΔt = 12 cm, x = 6.0 cm, on the side of the detector hit first; geometry correct.

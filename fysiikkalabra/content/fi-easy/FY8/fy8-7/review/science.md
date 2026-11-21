@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 16255354d1008240
+CONTENT-HASH: 76a4971f7e4a8382
 
 ## Blocking
-Ei.
 
 ## Polish
-Ei.
 
 ## Checked
-batch delta review, kierros 2: kaikki kolme pysahdy-laatikkoa (kaikki uusia mainiin nähden) ja niiden konteksti tarkistettu; luvut laskettu uudelleen omalla skriptillä. Stimuloitu emissio: saapuva fotoni ei absorboidu, energia atomin siirtymästä $E_2 \to E_1$ (sama merkintä kuin teoriassa); suurempi kvanttipiste, pienempi aukko, punainen oikein; $N/t = P/(hf)$ puolittuu oikein.
-
-## Vanhan sisällön löydökset
-Ei.
+batch delta review: both rewritten boxes. Stimulated emission: the question states that each photon causes one emission, so the output is 2000 photons. 1240/650 = 1,908 eV and 1000 · 1,91 eV ≈ 1,9 keV come from the excited atoms. Correct. Quantum dot: 1240/450 = 2,756 ≈ 2,76 eV. This is more than the 2,0 nm dot's 2,58 eV (480 nm, as in the qdots figure), so the dot is smaller than 2,0 nm, which matches the size–gap trend. 2,76 − 1,74 = 1,02 ≈ 1,0 eV, and 1,74 eV is CdSe's bulk gap. Correct.

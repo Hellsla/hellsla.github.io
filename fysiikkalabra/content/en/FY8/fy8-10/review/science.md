@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c368076189f4c670
+CONTENT-HASH: 13cb96946a70a2aa
 
 ## Blocking
 
 ## Polish
+- Second box: "is released as kinetic energy of the products" holds for most reactions, but part can leave as gamma photons; "mainly as kinetic energy of the products" would be exact (C-level simplification, not blocking).
+
+## Vanhan sisällön löydökset
 None.
 
 ## Checked
-batch delta review, round 2: two changed boxes. Deuteron binding energy 2.2 MeV (2.224); the separate nucleons are heavier by 2.2 MeV/c^2, correct. Reaction: same nucleon number stated, Delta E_B = 1805 - 1800 = 5 MeV released and mass decreases by 5 MeV/c^2, correct (charge conservation keeps Z equal, so Q = Delta E_B).
+batch delta review: C-12 box: 92.2 MeV / 931.5 MeV/u = 0.0990 u recomputed (real C-12 binding energy 92.16 MeV); reaction box rewording keeps 5 MeV and the mass decrease 5 MeV/c².

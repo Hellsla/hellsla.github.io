@@ -1,14 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: bf224171563a5342
+VERDICT: PASS
+CONTENT-HASH: 45c4d918e6c2967c
 
 ## Blocking
-- **A (pyöristys, P7).** Laatikko 1 kysyy, montako molekyyliä fotoni voi *enintään* ionisoida, ja vastaa $\approx 4{,}8\cdot10^{3}$. Tarkka yläraja on $60\,000 : 12{,}6 = 4762$, joten pyöristys ylöspäin ylittää rajan. Enintään-arvo pyöristetään alaspäin: $\approx 4{,}7\cdot10^{3}$ (tai "noin $4760$").
 
 ## Polish
-- Laatikko 2 on hyvä: oletus $W \approx 34\,\text{eV}$ kummallekin kerrotaan. 5,49 MeV:n beetan kantama ilmassa on noin $20\,\text{m}$, joten "metrejä" pitää.
+- Line 57 box: "$= 4762$, ja enintään-arvo pyöristetään alas". The quotient is 4761,9…, so the whole-molecule maximum is 4761. Write "≈ 4762" or "4761,9". The final 4,7·10³ (rounded down) is right.
+- Same box: "($1{,}7\,\text{eV} - 3{,}3\,\text{eV}$)" puts a minus sign inside math, which reads as a subtraction. Use an en dash: $1{,}7$–$3{,}3\,\text{eV}$.
 
 ## Checked
-batch delta review, kierros 2: kaikki kolme pysahdy-laatikkoa (kaikki uusia mainiin nähden) ja niiden konteksti tarkistettu; luvut laskettu uudelleen omalla skriptillä. $6{,}0\cdot10^4/12{,}6 = 4762$; näkyvä valo $< 12{,}6\,\text{eV}$ ei ionisoi; $5{,}49\cdot10^6/34 = 1{,}61\cdot10^5$; alfan kantama noin $4\,\text{cm}$; $(1/2)^3 = 12{,}5\,\%$.
-
-## Vanhan sisällön löydökset
-Ei.
+batch delta review: both changed boxes. 6,0·10⁴/12,6 = 4762 (an upper bound, since real energy also goes to excitation, which "enintään" covers). 4,0·10⁶/34 = 1,18·10⁵ ≈ 1,2·10⁵ ion pairs each, as n = E/W. The ranges (alpha about 4 cm, beta metres in air) agree with lines 145–147 and the table. The per-centimetre conclusion is correct.

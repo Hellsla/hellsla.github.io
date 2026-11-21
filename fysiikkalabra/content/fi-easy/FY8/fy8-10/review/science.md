@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 0d89281e543536a0
+CONTENT-HASH: 14f8e9603b67332a
 
 ## Blocking
-Ei.
 
 ## Polish
-- Laatikko 3: "poistuu systeemistä" on oikein vain, jos systeemiksi rajataan lepomassat; vapautuva energia on tuotteiden liike-energiaa. "vapautuu tuotteiden liike-energiaksi" olisi tarkempi (C).
+- Line 250 box: the 5 MeV "vapautuu tuotteiden liike-energiaksi" leaves out a possible gamma photon. "esimerkiksi tuotteiden liike-energiaksi" would cover it. This is a fair simplification (C), so it does not block.
 
 ## Checked
-batch delta review, kierros 2: kaikki kolme pysahdy-laatikkoa (kaikki uusia mainiin nähden) ja niiden konteksti tarkistettu; luvut laskettu uudelleen omalla skriptillä. Deuteroni $2{,}2\,\text{MeV}$ (todellinen $2{,}22$), erilliset nukleonit raskaampia, $\Delta m = 2{,}2\,\text{MeV}/c^2$; $0{,}0020\cdot931{,}5 = 1{,}86 \approx 1{,}9\,\text{MeV}$; $1805-1800 = 5\,\text{MeV}$, nukleoniluvun säilyminen mainittu, massa pienenee.
-
-## Vanhan sisällön löydökset
-Ei.
+batch delta review: both changed boxes. Δm = 92,2/931,5 = 0,0990 u. That is right for C-12 (B = 92,16 MeV), and the unit conversion is shown. Reaction box: 1805 − 1800 = 5 MeV released and mass decreases by 5 MeV/c². Correct.
