@@ -347,7 +347,7 @@ Aineen hiukkaset ovat jatkuvassa lämpöliikkeessä, ja niiden varaukset ovat ki
 ```pysahdy
 Huoneenlämpöinen metallikappale säteilee koko ajan, mutta pimeässä sitä ei näe. Miksi ei?
 ---
-Huoneenlämpöinen kappale säteilee lähes vain infrapunaa. Silmä ei näe sitä. Näkyvää valoa tulee vasta, kun kappale on kuuma, noin $800\,\text{K}$.
+Huoneenlämpöinen kappale säteilee lähes vain infrapunaa. Silmä ei näe sitä. Näkyvää valoa on niin vähän, että silmä näkee hehkun vasta noin $800\,\text{K}$:n lämpötilassa.
 ```
 
 ### Musta kappale

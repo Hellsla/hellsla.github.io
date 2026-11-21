@@ -137,7 +137,7 @@ In a direct-current motor, a **current loop** that can turn about an axle sits b
 ```pysahdy
 What would happen to a DC motor if the commutator did not reverse the current in the loop?
 ---
-Once the loop has turned perpendicular to the field, the forces would start to turn it back. The loop would not keep rotating but would oscillate about that position.
+Once the loop has turned perpendicular to the field, the forces would start to turn it back. The loop would not keep rotating but would oscillate about that position and finally come to rest there.
 ```
 
 ### The loudspeaker
@@ -222,7 +222,7 @@ where $F$ is the force (N), $I$ the current (A), $l$ the length of the part of t
 ```pysahdy
 The length of a wire in a field is $0.50\,\text{m}$ and the current is $4.0\,\text{A}$. The magnetic flux density is $0.25\,\text{T}$, and the wire makes an angle of $30^\circ$ with the field. How large is the force on the wire?
 ---
-The force is $F = I l B \sin\alpha = 4.0\,\text{A} \cdot 0.50\,\text{m} \cdot 0.25\,\text{T} \cdot \sin 30^\circ \approx 0.25\,\text{N}$.
+The force is $F = I l B \sin\alpha$. Here $\sin 30^\circ = 0.5$, so $F = 4.0\,\text{A} \cdot 0.50\,\text{m} \cdot 0.25\,\text{T} \cdot 0.5$, which gives $F = 0.25\,\text{N}$.
 ```
 
 ### The force between two current-carrying wires

@@ -197,7 +197,7 @@ When a wire is wound into a spiral, called a **coil**, the field of each turn po
 ```pysahdy
 In a long coil the current goes round clockwise seen from end $P$ of the coil. Is end $P$ the north or the south pole of the coil?
 ---
-The thumb of the right hand points in the direction of the field, and here it points away from end $P$. The field lines emerge from the other end, so that end is the north pole and end $P$ is the south pole.
+When the fingers of the right hand curl along the turns in the direction of the current, the thumb points in the direction of the field, and here it points away from end $P$. The field lines emerge from the other end, so that end is the north pole and end $P$ is the south pole.
 ```
 
 ### The electromagnet
@@ -377,7 +377,7 @@ where $N$ is the number of turns of the coil, $I$ the current (A) and $l$ the le
 ```pysahdy
 A long coil has $500$ turns and its length is $0.250\,\text{m}$. A current of $1.00\,\text{A}$ flows in it. What is the magnetic flux density at the middle of the coil?
 ---
-By the formula $B = \mu_0 \tfrac{N I}{l} = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \tfrac{500 \cdot 1.00\,\text{A}}{0.250\,\text{m}} \approx 2.51\,\text{mT}$.
+By the formula $B = \mu_0 \tfrac{N I}{l}$, where $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. Here $\tfrac{N I}{l} = \tfrac{500 \cdot 1.00\,\text{A}}{0.250\,\text{m}} = 2000\,\text{A/m}$, so $B \approx 2.51\,\text{mT}$.
 ```
 
 ### Determining the magnetic flux density inside a coil

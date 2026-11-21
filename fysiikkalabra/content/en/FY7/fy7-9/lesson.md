@@ -349,7 +349,7 @@ The particles of matter are in constant thermal motion, and their charges are in
 ```pysahdy
 A metal object at room temperature radiates all the time, but you cannot see it in the dark. Why not?
 ---
-An object at room temperature radiates almost only infrared, which the eye cannot see. Visible light appears only once the object has been heated to about $800\,\text{K}$.
+An object at room temperature radiates almost only infrared, which the eye cannot see. There is so little visible light that the eye notices a glow only at a temperature of about $800\,\text{K}$.
 ```
 
 ### The black body

@@ -137,7 +137,7 @@ Tasavirtamoottorissa magneetin napojen välissä on **virtasilmukka**. Se on joh
 ```pysahdy
 Mitä tasavirtamoottorille tapahtuisi, jos kommutaattori ei kääntäisi silmukan virran suuntaa?
 ---
-Kun silmukka on kääntynyt kohtisuoraan kenttää vastaan, voimat alkaisivat kääntää sitä takaisin. Silmukka ei pyörisi koko ajan. Se jäisi värähtelemään tähän asentoon.
+Kun silmukka on kääntynyt kohtisuoraan kenttää vastaan, voimat alkaisivat kääntää sitä takaisin. Silmukka ei pyörisi koko ajan. Se värähtelisi tämän asennon ympärillä ja pysähtyisi lopulta siihen.
 ```
 
 ### Kaiutin
@@ -222,7 +222,7 @@ missä $F$ on voima (N), $I$ virta (A), $l$ kentässä olevan johtimen osan pitu
 ```pysahdy
 Johtimen pituus kentässä on $0{,}50\,\text{m}$ ja virta on $4{,}0\,\text{A}$. Magneettivuon tiheys on $0{,}25\,\text{T}$. Johdin on kentän kanssa kulmassa $30^\circ$. Kuinka suuri voima johtimeen kohdistuu?
 ---
-Voima on $F = I l B \sin\alpha = 4{,}0\,\text{A} \cdot 0{,}50\,\text{m} \cdot 0{,}25\,\text{T} \cdot \sin 30^\circ \approx 0{,}25\,\text{N}$.
+Voima on $F = I l B \sin\alpha$. Nyt $\sin 30^\circ = 0{,}5$, joten $F = 4{,}0\,\text{A} \cdot 0{,}50\,\text{m} \cdot 0{,}25\,\text{T} \cdot 0{,}5$, eli $F = 0{,}25\,\text{N}$.
 ```
 
 ### Kahden virtajohtimen välinen voima

@@ -206,7 +206,7 @@ Luvussa *Sähkömagneettinen induktio* käämiin syntyi induktiojännite, kun se
 ```pysahdy
 Käämin pinta-ala on $0{,}010\,\text{m}^2$ ja magneettivuon tiheys $0{,}20\,\text{T}$. Kuinka suuri on käämin läpi kulkeva vuo, kun käämin taso on kohtisuorassa kenttää vastaan, ja kuinka suuri neljänneskierroksen jälkeen?
 ---
-Aluksi $\Phi = BA = 0{,}20\,\text{T} \cdot 0{,}010\,\text{m}^2 = 0{,}0020\,\text{Wb}$. Neljänneskierroksen jälkeen käämin taso on kentän suuntainen, eikä yksikään kenttäviiva kulje sen läpi, joten vuo on nolla.
+Aluksi $\Phi = BA$. Sijoitus $0{,}20\,\text{T} \cdot 0{,}010\,\text{m}^2$ antaa $\Phi = 0{,}0020\,\text{Wb}$. Neljänneskierroksen jälkeen käämin taso on kentän suuntainen, eikä yksikään kenttäviiva kulje sen läpi, joten vuo on nolla.
 ```
 
 ### Liukurenkaat ja harjat

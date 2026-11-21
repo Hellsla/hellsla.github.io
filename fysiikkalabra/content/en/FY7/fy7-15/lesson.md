@@ -494,7 +494,7 @@ where $I_0$ is the intensity of the polarised light arriving at the analyser ($\
 ```pysahdy
 The intensity of polarised light is $200\,\text{W/m}^2$, and the transmission axis of an analyser is at an angle of $60^\circ$ to the direction of polarisation of the light. What is the intensity after the analyser?
 ---
-By Malus's law $I = I_0 \cos^2\theta = 200\,\text{W/m}^2 \cdot \cos^2 60^\circ = 200\,\text{W/m}^2 \cdot 0.25 = 50\,\text{W/m}^2$.
+By Malus's law $I = I_0 \cos^2\theta$. Here $\cos^2 60^\circ = 0.25$, so $I = 200\,\text{W/m}^2 \cdot 0.25$, that is, $I = 50\,\text{W/m}^2$.
 ```
 
 ### Investigating Malus's law by measuring

@@ -280,9 +280,9 @@ If the flux changes at a steady rate, the induced voltage is constant over the w
 The turns are in series, so each turn adds the same amount to the voltage. The units fit together: $1\,\tfrac{\text{Wb}}{\text{s}} = 1\,\text{V}$. The minus sign gives the direction of the induced voltage: it opposes the change that produces it. The direction is discussed in the chapter *Lenz's law and eddy currents*; the magnitude of the voltage is calculated from the equation $|e_\text{ka}| = N \cdot |\Delta\Phi| : \Delta t$. The magnitude is always positive, also when the flux decreases.
 
 ```pysahdy
-A coil has $200$ turns. When it is moved in a magnetic field, the flux through it changes steadily from $0.030\,\text{Wb}$ to $0.010\,\text{Wb}$ in $0.50\,\text{s}$. What is the magnitude of the induced voltage?
+A coil has $200$ turns. When it is moved in a magnetic field, the flux through one turn of it changes steadily from $0.030\,\text{Wb}$ to $0.010\,\text{Wb}$ in $0.50\,\text{s}$. What is the magnitude of the induced voltage?
 ---
-The change in flux is $0.020\,\text{Wb}$, so the voltage is $|e| = 200 \cdot 0.020\,\text{Wb} : 0.50\,\text{s} = 8.0\,\text{V}$.
+The change in flux through one turn is $0.020\,\text{Wb}$. By the induction law $|e| = N|\Delta\Phi| : \Delta t$ the voltage is $200 \cdot 0.020\,\text{Wb} : 0.50\,\text{s} = 8.0\,\text{V}$.
 ```
 
 ### The flux graph and the voltage
@@ -448,7 +448,7 @@ where $v$ is the velocity of the rod (m/s), $B$ the magnetic flux density (T) an
 ```pysahdy
 A rod slides at $2.0\,\text{m/s}$ perpendicular to a field of $0.50\,\text{T}$, and the length of the rod in the field is $0.30\,\text{m}$. What voltage is induced between the ends of the rod?
 ---
-The velocity, the rod and the field are mutually perpendicular, so $e = vBl = 2.0\,\text{m/s} \cdot 0.50\,\text{T} \cdot 0.30\,\text{m} = 0.30\,\text{V}$.
+The velocity, the rod and the field are mutually perpendicular, so $e = vBl$. The substitution $2.0\,\text{m/s} \cdot 0.50\,\text{T} \cdot 0.30\,\text{m}$ gives $e = 0.30\,\text{V}$.
 ```
 
 The same result follows from Faraday's law. When the rod slides along rails, the area of the loop bounded by the rails and the rod grows in the time $\Delta t$ by $\Delta A = l \cdot v\Delta t$, so the flux grows by $\Delta\Phi = Bl \cdot v\Delta t$, and the magnitude of the voltage is $\Delta\Phi : \Delta t = vBl$. When the ends of the rails are joined by a resistor, a current flows in the circuit, and the magnetic field exerts a force $F = IlB$ on the current-carrying rod, as in the chapter *Force on a current-carrying wire: the electric motor and the loudspeaker*. The direction of this force and the conservation of energy are studied in the chapter *Lenz's law and eddy currents*.

@@ -404,7 +404,7 @@ where $k = 0, 1, 2, \ldots$ When both reflections invert the wave, as in the coa
 ```pysahdy
 A soap film ($n = 1.33$) is $125\,\text{nm}$ thick, and light arrives at normal incidence from air. Which wavelength is strengthened when $k = 0$?
 ---
-The path difference is $2nd = 2 \cdot 1.33 \cdot 125\,\text{nm} = 332.5\,\text{nm}$. From $2nd = \tfrac{1}{2}\lambda$ we get $\lambda = 665\,\text{nm}$, so red light is strengthened.
+The path difference is $2nd$. It is $2 \cdot 1.33 \cdot 125\,\text{nm} = 332.5\,\text{nm}$. From $2nd = (k + \tfrac{1}{2})\lambda$ with $k = 0$ we get $\lambda = 665\,\text{nm}$, so red light is strengthened.
 ```
 
 ### Anti-reflection coating

@@ -177,9 +177,9 @@ Jos valo tulee kuidun päähän liian jyrkässä kulmassa, se osuu rajapintaan p
 <figure class="unit-photo"><img src="pics/fy7/optical-fibres.webp" alt="Valokaapeli kiepillä mustalla pohjalla. Kaapelin päissä loistaa punaista valoa."><figcaption>Punainen valo menee valokaapelin toiseen päähän ja tulee ulos toisesta päästä. Valo heijastuu kuidun sisällä ja kulkee kiepin ympäri.</figcaption></figure>
 
 ```pysahdy
-Kuidun ytimen ja kuoren taitekertoimet olisivat yhtä suuret. Voisiko valo silti kokonaisheijastua ytimen ja kuoren rajapinnassa?
+Mitä jos kuidun ytimen ja kuoren taitekertoimet ovat yhtä suuret, $n_1 = n_2$? Voisiko valo silti kokonaisheijastua ytimen ja kuoren rajapinnassa?
 ---
-Ei voisi. Kun $n_1 = n_2$, rajakulmaa ei ole, koska $\sin\alpha_\text{r}$ olisi $1$. Valo etenisi suoraan kuoreen ja vuotaisi ulos kuidusta.
+Ei voisi. Silloin $\sin\alpha_\text{r} = n_2 : n_1 = 1$ ja rajakulma olisi $90^\circ$. Tulokulma ei voi olla näin suuri. Siksi valo ei kokonaisheijastuisi vaan etenisi kuoreen ja vuotaisi ulos kuidusta.
 ```
 
 ### Miksi kuidussa on kuori

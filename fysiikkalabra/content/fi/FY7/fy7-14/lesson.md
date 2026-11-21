@@ -404,7 +404,7 @@ missä $k = 0, 1, 2, \ldots$ Kun kumpikin heijastus kääntää aallon, kuten li
 ```pysahdy
 Saippuakalvon ($n = 1{,}33$) paksuus on $125\,\text{nm}$, ja valo tulee kohtisuoraan ilmasta. Mikä aallonpituus vahvistuu, kun $k = 0$?
 ---
-Matkaero on $2nd = 2 \cdot 1{,}33 \cdot 125\,\text{nm} = 332{,}5\,\text{nm}$. Ehdosta $2nd = \tfrac{1}{2}\lambda$ saadaan $\lambda = 665\,\text{nm}$, eli punainen valo vahvistuu.
+Matkaero on $2nd$. Se on $2 \cdot 1{,}33 \cdot 125\,\text{nm} = 332{,}5\,\text{nm}$. Ehdosta $2nd = (k + \tfrac{1}{2})\lambda$ ja $k = 0$ saadaan $\lambda = 665\,\text{nm}$, eli punainen valo vahvistuu.
 ```
 
 ### Heijastuksenestopinnoite

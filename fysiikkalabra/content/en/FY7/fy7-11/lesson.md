@@ -320,7 +320,7 @@ where $\alpha_1$ is the angle of incidence and $\alpha_2$ the angle of refractio
 ```pysahdy
 The refractive index of red light in water is $1.3315$. How fast does red light travel in water?
 ---
-The speed is $v = c : n = 3.00 \cdot 10^8\,\text{m/s} : 1.3315 \approx 2.25 \cdot 10^8\,\text{m/s}$.
+The speed is $v = c : n$. Substitution gives $v = 3.00 \cdot 10^8\,\text{m/s} : 1.3315$. So $v \approx 2.25 \cdot 10^8\,\text{m/s}$.
 ```
 
 ### The angle of deviation of a prism

@@ -197,7 +197,7 @@ Kun johdin kierretään kierukaksi eli **käämiksi**, jokaisen kierroksen kentt
 ```pysahdy
 Pitkässä käämissä virta kiertää käämin päästä $P$ katsottuna myötäpäivään. Onko pää $P$ käämin pohjois- vai eteläpää?
 ---
-Oikean käden peukalo osoittaa kentän suuntaan, ja se osoittaa tällöin pois päästä $P$. Kenttäviivat tulevat ulos käämin toisesta päästä, joten se on pohjoisnapa ja pää $P$ on eteläpää.
+Kun oikean käden sormet kiertävät kierroksia pitkin virran suuntaan, peukalo osoittaa kentän suuntaan, ja se osoittaa tällöin pois päästä $P$. Kenttäviivat tulevat ulos käämin toisesta päästä, joten se on pohjoisnapa ja pää $P$ on eteläpää.
 ```
 
 ### Sähkömagneetti
@@ -377,7 +377,7 @@ missä $N$ on käämin kierrosten lukumäärä, $I$ virta (A) ja $l$ käämin pi
 ```pysahdy
 Pitkässä käämissä on $500$ kierrosta, ja sen pituus on $0{,}250\,\text{m}$. Käämissä kulkee virta $1{,}00\,\text{A}$. Kuinka suuri on magneettivuon tiheys käämin keskellä?
 ---
-Kaavan mukaan $B = \mu_0 \tfrac{N I}{l} = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \tfrac{500 \cdot 1{,}00\,\text{A}}{0{,}250\,\text{m}} \approx 2{,}51\,\text{mT}$.
+Kaavan mukaan $B = \mu_0 \tfrac{N I}{l}$, missä $\mu_0 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$. Nyt $\tfrac{N I}{l} = \tfrac{500 \cdot 1{,}00\,\text{A}}{0{,}250\,\text{m}} = 2000\,\text{A/m}$, joten $B \approx 2{,}51\,\text{mT}$.
 ```
 
 ### Magneettivuon tiheyden määrittäminen käämin sisällä

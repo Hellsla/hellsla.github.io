@@ -69,7 +69,7 @@ Tyhjiössä valo etenee nopeudella $c = 3{,}00 \cdot 10^{8}\,\text{m/s}$. Ainees
 ```pysahdy
 Valo siirtyy ilmasta veteen. Muuttuuko sen taajuus ja muuttuuko sen aallonpituus?
 ---
-Taajuus ei muutu, koska sen määrää valonlähde. Aallonpituus lyhenee $1{,}33$-kertaiseksi, koska nopeus pienenee ja $v = f \lambda$.
+Taajuus ei muutu, koska sen määrää valonlähde. Aallonpituus lyhenee: vedessä se on $1{,}33$ kertaa lyhyempi kuin ilmassa, koska nopeus pienenee ja $v = f \lambda$.
 ```
 
 ### Miksi valo taittuu
@@ -166,7 +166,7 @@ missä $c = 3{,}00 \cdot 10^{8}\,\text{m/s}$ on valon nopeus tyhjiössä ja $v$ 
 ```pysahdy
 Valon nopeus tyhjiössä on $3{,}00 \cdot 10^{8}\,\text{m/s}$ ja timantin taitekerroin on $2{,}42$. Kuinka nopeasti valo etenee timantissa?
 ---
-Nopeus on $v = c : n = 3{,}00 \cdot 10^{8}\,\text{m/s} : 2{,}42 \approx 1{,}24 \cdot 10^{8}\,\text{m/s}$.
+Nopeus on $v = c : n$. Sijoitus antaa $v = 3{,}00 \cdot 10^{8}\,\text{m/s} : 2{,}42$. Siis $v \approx 1{,}24 \cdot 10^{8}\,\text{m/s}$.
 ```
 
 ### Taittumislaki eli Snellin laki
@@ -238,7 +238,7 @@ missä $\alpha_1$ on tulokulma ja $\alpha_2$ taitekulma normaalista mitattuina. 
 ```pysahdy
 Valonsäde tulee ilmasta ($n = 1{,}00$) ikkunalasiin ($n = 1{,}52$) tulokulmalla $40^\circ$. Mikä on taitekulma ja taittuuko säde kohti normaalia vai siitä poispäin?
 ---
-Snellin laista $\sin\alpha_2 = 1{,}00 \cdot \sin 40^\circ : 1{,}52 = 0{,}423$, joten $\alpha_2 \approx 25^\circ$. Lasi on optisesti tiheämpi, joten säde taittuu kohti normaalia.
+Snellin laista $\sin\alpha_2 = 1{,}00 \cdot \sin 40^\circ : 1{,}52$. Siis $\sin\alpha_2 = 0{,}423$ ja $\alpha_2 \approx 25^\circ$. Lasi on optisesti tiheämpi, joten säde taittuu kohti normaalia.
 ```
 
 ### Taitekertoimia

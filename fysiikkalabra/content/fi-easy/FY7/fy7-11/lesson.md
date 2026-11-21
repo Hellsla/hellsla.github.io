@@ -336,7 +336,7 @@ Valon nopeus aineessa on $v = c : n(\lambda)$, missä $c = 3{,}00 \cdot 10^8\,\t
 ```pysahdy
 Punaisen valon taitekerroin vedessä on $1{,}3315$. Kuinka nopeasti punainen valo etenee vedessä?
 ---
-Nopeus on $v = c : n = 3{,}00 \cdot 10^8\,\text{m/s} : 1{,}3315 \approx 2{,}25 \cdot 10^8\,\text{m/s}$.
+Nopeus on $v = c : n$. Sijoitus antaa $v = 3{,}00 \cdot 10^8\,\text{m/s} : 1{,}3315$. Siis $v \approx 2{,}25 \cdot 10^8\,\text{m/s}$.
 ```
 
 ### Prisman poikkeamakulma

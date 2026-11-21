@@ -165,9 +165,9 @@ An **optical fibre** is a glass fibre as thin as a hair, with a core in the midd
 <figure class="unit-photo"><img src="pics/fy7/optical-fibres.webp" alt="A translucent optical cable coiled on a black surface; at each end is a connector shining with red light."><figcaption>Red light sent into one end of a plastic optical cable comes out of the other end. Thanks to total internal reflection, the light follows the fibre around the coil.</figcaption></figure>
 
 ```pysahdy
-The refractive indices of a fibre's core and cladding were equal. Could light still be totally reflected at the boundary between core and cladding?
+What if the refractive indices of a fibre's core and cladding are equal, $n_1 = n_2$? Could light still be totally reflected at the boundary between core and cladding?
 ---
-No. When $n_1 = n_2$ there is no critical angle, because $\sin\alpha_\text{r}$ would be $1$ and the light would go straight on into the cladding. The light would leak out of the fibre.
+No. Then $\sin\alpha_\text{r} = n_2 : n_1 = 1$ and the critical angle would be $90^\circ$. The angle of incidence cannot be that large, so the light would not be totally reflected but would go on into the cladding and leak out of the fibre.
 ```
 
 ### Why a fibre has a cladding

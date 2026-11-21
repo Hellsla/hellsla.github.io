@@ -165,9 +165,9 @@ Kokonaisheijastuminen voi tapahtua vain, kun valo tulee suuremman taitekertoimen
 <figure class="unit-photo"><img src="pics/fy7/optical-fibres.webp" alt="Kiepille kierretty läpikuultava valokaapeli mustalla pohjalla; kaapelin kummassakin päässä on liitin, josta loistaa punaista valoa."><figcaption>Muovisen valokaapelin toiseen päähän johdettu punainen valo tulee ulos toisesta päästä. Kokonaisheijastumisen ansiosta valo seuraa kuitua kiepin ympäri.</figcaption></figure>
 
 ```pysahdy
-Kuidun ytimen ja kuoren taitekertoimet olisivat yhtä suuret. Voisiko valo silti kokonaisheijastua ytimen ja kuoren rajapinnassa?
+Mitä jos kuidun ytimen ja kuoren taitekertoimet ovat yhtä suuret, $n_1 = n_2$? Voisiko valo silti kokonaisheijastua ytimen ja kuoren rajapinnassa?
 ---
-Ei voisi. Kun $n_1 = n_2$, rajakulmaa ei ole, koska $\sin\alpha_\text{r}$ olisi $1$ ja valo etenisi suoraan kuoreen. Valo vuotaisi ulos kuidusta.
+Ei voisi. Silloin $\sin\alpha_\text{r} = n_2 : n_1 = 1$ ja rajakulma olisi $90^\circ$. Tulokulma ei voi olla näin suuri, joten valo ei kokonaisheijastuisi vaan etenisi kuoreen ja vuotaisi ulos kuidusta.
 ```
 
 ### Miksi kuidussa on kuori

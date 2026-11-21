@@ -162,13 +162,13 @@ An induced current does not need a separate conducting loop. When the magnetic f
   <foreignObject x="341" y="31.5" width="250" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lower ring from above}$</div></foreignObject>
 </svg>
 
+<figure class="unit-photo"><img src="pics/fy7/eddy-current-brake.webp" alt="A grey axle with a large round metal disc around it; next to the disc is a box-like brake unit with cables and connectors."><figcaption>An eddy current brake on a train. Next to a metal disc that turns with the axle there are electromagnets. When the brake is applied, the magnetic field induces eddy currents in the disc, which by Lenz's law oppose the rotation. Kinetic energy turns into internal energy of the disc without brake pads wearing out.</figcaption></figure>
+
 ```pysahdy
 The speed of a magnet falling in a copper tube increases. What happens to the braking force, and why?
 ---
 The braking force increases. The greater the speed, the greater the eddy currents, and the more strongly they brake.
 ```
-
-<figure class="unit-photo"><img src="pics/fy7/eddy-current-brake.webp" alt="A grey axle with a large round metal disc around it; next to the disc is a box-like brake unit with cables and connectors."><figcaption>An eddy current brake on a train. Next to a metal disc that turns with the axle there are electromagnets. When the brake is applied, the magnetic field induces eddy currents in the disc, which by Lenz's law oppose the rotation. Kinetic energy turns into internal energy of the disc without brake pads wearing out.</figcaption></figure>
 
 ### The eddy-current brake, the induction hob and the metal detector
 In an **induction brake**, or eddy-current brake, a metal plate or rail moves in a magnetic field, and the eddy currents brake the motion. Copper or aluminium plates fixed under a roller-coaster car pass between strong magnets on the track, and in trains the electromagnets of the brake are close to the rail. The brake does not wear out, because nothing rubs, and it brakes the more strongly, the greater the speed. Near standstill the braking weakens, so a conventional brake is needed for the final stop. In an induction hob, the alternating current in a coil under the glass changes the magnetic field tens of thousands of times a second, and eddy currents heat the base of the pan. Glass does not conduct electricity, so it warms up only because of the hot pan. The coil of a metal detector produces an alternating field, and the field of the eddy currents in a piece of metal in the ground is detected in the coil of the detector.
@@ -309,7 +309,7 @@ where $P$ is the power (W), $F$ the braking force (N) and $v$ the speed (m/s). T
 ```pysahdy
 A magnet of mass $20\,\text{g}$ falls in a copper tube at a constant speed of $0.30\,\text{m/s}$. At what rate does the internal energy of the tube increase?
 ---
-The braking force equals the weight: $F = mg = 0.020\,\text{kg}\cdot 9.81\,\text{m/s}^2 \approx 0.196\,\text{N}$. The power is $P = Fv \approx 0.196\,\text{N}\cdot 0.30\,\text{m/s} \approx 0.059\,\text{W}$.
+The braking force equals the weight, $F = mg$. Here $mg = 0.020\,\text{kg}\cdot 9.81\,\text{m/s}^2$, so $F \approx 0.196\,\text{N}$. The power is $P = Fv$, and $Fv = 0.196\,\text{N}\cdot 0.30\,\text{m/s}$, so $P \approx 0.059\,\text{W}$.
 ```
 
 ## Worked example

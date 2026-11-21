@@ -163,13 +163,13 @@ Induktiovirta ei tarvitse erillistä johdinsilmukkaa. Kun magneettivuo muuttuu u
 </svg>
 
 
+<figure class="unit-photo"><img src="pics/fy7/eddy-current-brake.webp" alt="Harmaa akseli ja sen ympärillä suuri pyöreä metallilevy; levyn vieressä on laatikkomainen jarruyksikkö, jossa on johtoja ja liittimiä."><figcaption>Junan pyörrevirtajarru. Akselin mukana pyörivän metallilevyn vieressä on sähkömagneetteja. Kun jarrutetaan, magneettikenttä indusoi levyyn pyörrevirtoja, jotka Lenzin lain mukaan vastustavat levyn pyörimistä. Liike-energia muuttuu levyn sisäenergiaksi ilman kuluvia jarrupaloja.</figcaption></figure>
+
 ```pysahdy
 Kupariputkessa putoavan magneetin vauhti kasvaa. Mitä tapahtuu jarruttavalle voimalle ja miksi?
 ---
 Jarruttava voima kasvaa. Mitä suurempi vauhti on, sitä suuremmat pyörrevirrat ovat, ja sitä voimakkaammin ne jarruttavat.
 ```
-
-<figurefigure class="unit-photo"><img src="pics/fy7/eddy-current-brake.webp" alt="Harmaa akseli ja sen ympärillä suuri pyöreä metallilevy; levyn vieressä on laatikkomainen jarruyksikkö, jossa on johtoja ja liittimiä."><figcaption>Junan pyörrevirtajarru. Akselin mukana pyörivän metallilevyn vieressä on sähkömagneetteja. Kun jarrutetaan, magneettikenttä indusoi levyyn pyörrevirtoja, jotka Lenzin lain mukaan vastustavat levyn pyörimistä. Liike-energia muuttuu levyn sisäenergiaksi ilman kuluvia jarrupaloja.</figcaption></figure>
 
 ### Pyörrevirtajarru, induktioliesi ja metallinilmaisin
 **Induktiojarrussa** eli pyörrevirtajarrussa metallilevy tai kisko liikkuu magneettikentässä, ja pyörrevirrat jarruttavat liikettä. Vuoristoradan vaunun alle kiinnitetyt kupari- tai alumiinilevyt kulkevat radan vahvojen magneettien välistä, ja junissa jarrun sähkömagneetit ovat lähellä kiskoa. Jarru ei kulu, koska mikään ei hankaa, ja se jarruttaa sitä voimakkaammin, mitä suurempi vauhti on. Pysähtymisen lähellä jarrutus heikkenee, joten lopullinen pysäytys tarvitsee tavallisen jarrun. Induktioliedessä lasin alla olevan kelan vaihtovirta muuttaa magneettikenttää kymmeniätuhansia kertoja sekunnissa, ja pyörrevirrat lämmittävät kattilan pohjaa. Lasi ei johda sähköä, joten se lämpenee vain kuuman kattilan vaikutuksesta. Metallinilmaisimen kela synnyttää vaihtuvan kentän, ja maassa olevan metallin pyörrevirtojen oma kenttä havaitaan ilmaisimen kelassa.
@@ -310,7 +310,7 @@ missä $P$ on teho (W), $F$ jarruttava voima (N) ja $v$ vauhti (m/s). Sama kaava
 ```pysahdy
 Magneetin massa on $20\,\text{g}$, ja se putoaa kupariputkessa tasaisella vauhdilla $0{,}30\,\text{m/s}$. Millä teholla putken sisäenergia kasvaa?
 ---
-Jarruttava voima on yhtä suuri kuin paino: $F = mg = 0{,}020\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 0{,}196\,\text{N}$. Teho on $P = Fv \approx 0{,}196\,\text{N}\cdot 0{,}30\,\text{m/s} \approx 0{,}059\,\text{W}$.
+Jarruttava voima on yhtä suuri kuin paino, $F = mg$. Nyt $mg = 0{,}020\,\text{kg}\cdot 9{,}81\,\text{m/s}^2$, joten $F \approx 0{,}196\,\text{N}$. Teho on $P = Fv$, ja $Fv = 0{,}196\,\text{N}\cdot 0{,}30\,\text{m/s}$, joten $P \approx 0{,}059\,\text{W}$.
 ```
 
 ## Esimerkki
