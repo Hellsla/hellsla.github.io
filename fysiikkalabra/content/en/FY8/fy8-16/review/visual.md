@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 4b87060b8e2d343c
+CONTENT-HASH: 90c3bcb6d9655b4b
 
 ## Blocking
 
 ## Polish
-- [Minor] Hubble box — `70 \cdot 60 = 4200\,\tfrac{\text{km}}{\text{s}}` omits units in the substitution; add `\,\tfrac{\text{km/s}}{\text{Mpc}}` and `\,\text{Mpc}` for the symbolic-then-substitute pattern.
-- [Minor] a)/b) box — inline "a) … b) …" in one paragraph; acceptable, a line break would help.
+- none
 
 ## Checked
-batch delta review: three pysahdy boxes read from source; maths set correctly, units in LaTeX; box captures not available.
+batch delta review: opened fig-row-1280 (layout intact); changed box read in source (3000 K, 0.7 eV, 6\cdot 10^{-4}\,eV, 13.6 eV all LaTeX with units, \cdot not x).

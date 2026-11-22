@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: d5ca2d340cc532bf
+CONTENT-HASH: d5f34c806d597277
 
 ## Blocking
 
 ## Polish
-- [Minor] pysahdy box — probabilities and counts are bare numbers ($0.040$, $5000$) which is correct (dimensionless); `\pm 14` reads well. Nothing to fix.
+- none
 
 ## Checked
-batch delta review: pysahdy box read from source; opened none of the figure captures as the diff does not touch figures; box capture not available.
+batch delta review: changed box text read in source (sqrt chain: inline maths, \approx, \% spacing, decimal point right for en); figures unchanged, layout not affected by a one-sentence change. Not opened: text-only change.

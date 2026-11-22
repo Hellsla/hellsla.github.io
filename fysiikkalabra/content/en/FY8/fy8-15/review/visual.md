@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: cf2b469f8356e0b9
+CONTENT-HASH: 525436d49c3063f1
 
 ## Blocking
 
 ## Polish
-- [Minor] quark-content box — `u\bar{d}`, `uud`, `ud` are italic maths; consider `\text{u}\bar{\text{d}}` only if the chapter does so elsewhere (consistency check).
+- none
 
 ## Checked
-batch delta review: two pysahdy boxes read from source; fractions in charge sums set with `\left(\right)`; box captures not available.
+batch delta review: changed pysahdy box read in source (fractions \tfrac inline, \left( \right) chains, natural English, wording unchanged in layout); figures unchanged.
