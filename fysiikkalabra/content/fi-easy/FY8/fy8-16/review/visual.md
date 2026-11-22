@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 06fd0d500e22f755
+CONTENT-HASH: fe52cbbdc4f2f8fa
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] Hubble-laatikko — "$v_\text{A} = 70 \cdot 60 = 4200\,\tfrac{\text{km}}{\text{s}}$": sijoituksessa ei yksiköitä ennen tulosta; näytä $70\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 60\,\text{Mpc}$.
-- [Minor] yksikön merkintä vaihtelee ($\tfrac{\text{km/s}}{\text{Mpc}}$ ja $\text{km/s/Mpc}$ vastauksessa b); yhtenäistä.
-- [Minor] a)- ja b)-kohdat samassa kappaleessa; erilliset rivit luettavampia.
+- none
 
 ## Vanhan sisällön löydökset
-- ei
+- none noticed
 
 ## Checked
-- batch delta review: four edited boxes read from diff; units/numbers LaTeX; layout via shared component.
+- batch delta review: opened fy8-16-stage-selita-390-4 (changed "Pysähdy ja mieti" box: $3000\,\text{K}$:n, $0{,}7\,\text{eV}$, 1100-kertaiseksi render well, no clipping); the changed answer ($6\cdot 10^{-4}\,\text{eV}$, $13{,}6\,\text{eV}$) is behind the closed Vastaus button and was read from the diff: units upright, \cdot used, decimal comma correct. Hash re-run at end unchanged.
