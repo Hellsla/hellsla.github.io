@@ -1,4 +1,4 @@
-"""Tests of ci_scope.py's built mode (work queue 0g, PR 1): the pages to test from two renders of the site instead of the
+"""Tests of ci_scope.py's built mode (work queue 0g, PR 1; PR 2: the only scope): the pages to test from two renders of the site instead of the
 committed site/ diff. No browser, no build.
 
   python scripts/test_ci_scope_built.py
@@ -53,6 +53,16 @@ with tempfile.TemporaryDirectory() as tmp:
     run({"site.css": "b{}"})
     kind, what = cs.scope("HEAD", (a, b))
     check("scope: a shared file tests the smoke sample", kind == "pages" and set(what) == set(cs.SMOKE), f"{kind} {what if kind != 'pages' else sorted(what)}")
+
+    # the pages two renders differ in (the step summary of a pull request), and a committed site/ diff is not read (work queue 0g PR 2)
+    run({"fy3-4.html": "<p>b</p>", "fy9-1.html": "n", "site.css": "b{}"}, removed=["fy1-1.html"])
+    check("changed_pages: added, removed, changed", cs.changed_pages(a, b) == (["fy9-1.html"], ["fy1-1.html"], ["fy3-4.html"]), str(cs.changed_pages(a, b)))
+    run({})
+    real = cs.git
+    cs.git = lambda *x: "site/fy3-4.html\nsite/en/fy3-4.html" if x[:2] == ("diff", "--name-only") and "--relative" in x else real(*x)
+    try: kind, what = cs.scope("HEAD", (a, b))
+    finally: cs.git = real
+    check("scope: a site/ path in the git diff is ignored", kind == "pages" and what == {}, f"{kind} {what}")
 
 print(f"test_ci_scope_built: {passed} passed, {failed} failed")
 sys.exit(1 if failed else 0)

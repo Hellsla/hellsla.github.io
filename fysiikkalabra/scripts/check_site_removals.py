@@ -1,6 +1,10 @@
 """A pull request must not remove a published page from site/ without a row saying so (work queue 20).
 
-Usage: python scripts/check_site_removals.py [base]      (base defaults to origin/main; run on a pull request)
+Usage: python scripts/check_site_removals.py --built <base site dir> <head site dir>      (CI's plan job, on a pull request)
+       python scripts/check_site_removals.py [base]                                       (the committed site/ diff, until work queue 0g PR 3)
+
+Since work queue 0g PR 2 a pull request no longer builds or commits site/, so the removal is read from two renders: the pages
+the base commit's build has and this commit's build lacks.
 
 A page leaves site/ when its lesson's reviews stop matching the content hash (a wrong hash in a report, reviews
 still open): build.py then only warns and the page quietly disappears from the published site. This check lists the
@@ -13,6 +17,12 @@ import pathlib, subprocess, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 ALLOW = ROOT / "docs" / "site-removals.tsv"
+
+
+def removed_built(base_dir: str, head_dir: str) -> list[str]:
+    """The .html pages (`site/<path>`) two renders differ in by the head lacking them."""
+    b, h = pathlib.Path(base_dir), pathlib.Path(head_dir)
+    return sorted(f"site/{p.relative_to(b).as_posix()}" for p in b.rglob("*.html") if not (h / p.relative_to(b)).is_file())
 
 
 def removed_pages(base: str) -> list[str]:
@@ -43,15 +53,16 @@ def message(pages: list[str]) -> str:
             + "".join(f"  - {p}\n" for p in pages)
             + "Usual cause: a lesson's review report CONTENT-HASH does not match that language's own content (a Finnish hash in an\n"
               "en or fi-easy report; `python scripts/units.py hash <id> --lang <lang>`), or its reviews are still open, so build.py\n"
-              "left the page out with a WARNING. Fix the reviews and rebuild (`python scripts/build.py --all && python scripts/build.py`).\n"
+              "left the page out with a WARNING. Fix the reviews (`python scripts/reviews.py status <id>`; a local `python scripts/build.py` shows the WARNING).\n"
               "If the removal is intended, add `<path><TAB><reason>` to docs/site-removals.tsv in this pull request and say so in its description.")
 
 
 def main(argv: list[str]) -> int:
-    base = argv[0] if argv else "origin/main"
+    built = argv[1:3] if argv[:1] == ["--built"] and len(argv) == 3 else None
+    base = argv[0] if argv and not built else "origin/main"
     try:
         allowed = parse_allowlist(ALLOW.read_text(encoding="utf-8")) if ALLOW.exists() else {}
-        bad = unexcused(removed_pages(base), allowed)
+        bad = unexcused(removed_built(*built) if built else removed_pages(base), allowed)
     except (ValueError, subprocess.CalledProcessError) as e:
         print(f"check_site_removals.py: {e}")
         return 1

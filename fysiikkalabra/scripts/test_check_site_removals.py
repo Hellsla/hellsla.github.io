@@ -47,4 +47,13 @@ with tempfile.TemporaryDirectory() as tmp:
     c.ALLOW = root / "fysiikkalabra/docs/site-removals.tsv"
     c.ALLOW.write_text("site/en/a.html\tx\nsite/en/b.html\ty\n")
     check("main() passes when every removal has a row", c.main(["main"]) == 0)
+    # two renders (work queue 0g PR 2): the pages the head lacks
+    bd, hd = root / "bd", root / "hd"
+    for d, files in ((bd, ["a.html", "en/b.html", "x.css"]), (hd, ["a.html", "en/c.html"])):
+        for f in files: (d / f).parent.mkdir(parents=True, exist_ok=True); (d / f).write_text("x")
+    check("removed_built: a page the head render lacks, not css or additions", c.removed_built(bd, hd) == ["site/en/b.html"])
+    c.ALLOW = root / "fysiikkalabra/docs/none.tsv"
+    check("main(--built) fails without a row", c.main(["--built", str(bd), str(hd)]) == 1)
+    c.ALLOW = root / "fysiikkalabra/docs/site-removals.tsv"; c.ALLOW.write_text("site/en/b.html\tx\n")
+    check("main(--built) passes with a row", c.main(["--built", str(bd), str(hd)]) == 0)
 sys.exit(1 if fails else 0)
