@@ -1,0 +1,44 @@
+kuvan tunniste	tyyppi	tiedosto	x	y	leveys	korkeus	merkintöjen siirrot (järjestysnumero: dx, dy)	ilman taustaa (merkintöjen järjestysnumerot)
+fy14-atom-models/hero	illustration	fy14-atom-models-hero.webp						
+fy14-atom-models/levels	diagram	fy14-atom-models-levels.webp	0	0	600	562.5		
+fy14-atom-models/scatter	diagram	fy14-atom-models-scatter.webp	0	0	600	425		[0]
+fy14-big-machines/heating	diagram	fy14-big-machines-heating.webp	0	0	600	496.2		
+fy14-big-machines/hero	illustration	fy14-big-machines-hero.webp						
+fy14-binding-energy/hero	illustration	fy14-binding-energy-hero.webp						
+fy14-binding-energy/ladder	diagram	fy14-binding-energy-ladder.webp	1.2	0	597	384.3		
+fy14-classical-limits/hero	illustration	fy14-classical-limits-hero.webp						
+fy14-confinement-concepts/aspect	diagram	fy14-confinement-concepts-aspect.webp	0	0	612.2	315.1		[0, 1, 3, 4]
+fy14-confinement-concepts/hero	illustration	fy14-confinement-concepts-hero.webp						
+fy14-confinement-concepts/icf	diagram	fy14-confinement-concepts-icf.webp	31.1	8.1	553	284.6		
+fy14-confinement-concepts/pinch	diagram	fy14-confinement-concepts-pinch.webp	0	1.2	600	406.2		[3]
+fy14-fotoni/em	diagram	fy14-fotoni-em.webp	0	0	600	546.2		
+fy14-fotoni/hero	illustration	fy14-fotoni-hero.webp						
+fy14-fr-bonjour/hero	illustration	fy14-fr-bonjour-hero.webp						
+fy14-fr-cadarache/hero	illustration	fy14-fr-cadarache-hero.webp						
+fy14-fr-cadarache/map	diagram	fy14-fr-cadarache-map.webp	1.5	-1.5	730.3	741	{"2":[-9,0],"3":[9,0],"4":[-9,0]}	
+fy14-fr-cafe/hero	illustration	fy14-fr-cafe-hero.webp						
+fy14-fr-lire/hero	illustration	fy14-fr-lire-hero.webp						
+fy14-fr-nombres/hero	illustration	fy14-fr-nombres-hero.webp						
+fy14-fusion-reactions/hero	illustration	fy14-fusion-reactions-hero.webp						
+fy14-fusion-society/hero	illustration	fy14-fusion-society-hero.webp						
+fy14-fusion-timeline/hero	illustration	fy14-fusion-timeline-hero.webp						
+fy14-global-fusion-explorer/hero	illustration	fy14-global-fusion-explorer-hero.webp						
+fy14-inside-iter/hero	illustration	fy14-inside-iter-hero.webp						
+fy14-iron-curtain/hero	illustration	fy14-iron-curtain-hero.webp						
+fy14-iter-media/hero	illustration	fy14-iter-media-hero.webp						
+fy14-iter-project/hero	illustration	fy14-iter-project-hero.webp						
+fy14-iter-video/hero	illustration	fy14-iter-video-hero.webp						
+fy14-magnetic-confinement/hero	illustration	fy14-magnetic-confinement-hero.webp						
+fy14-magnetic-confinement/mirror	diagram	fy14-magnetic-confinement-mirror.webp	0	-1.2	600	445		[0, 4]
+fy14-magnetic-confinement/torus	diagram	fy14-magnetic-confinement-torus.webp	12.3	0	588.2	302.7		
+fy14-nucleus/hero	illustration	fy14-nucleus-hero.webp						
+fy14-photoelectric/energy	diagram	fy14-photoelectric-energy.webp	1.2	1.2	597	391.8		
+fy14-photoelectric/hero	illustration	fy14-photoelectric-hero.webp						
+fy14-plasma/hero	illustration	fy14-plasma-hero.webp						
+fy14-quantum-tunnelling/hero	illustration	fy14-quantum-tunnelling-hero.webp						
+fy14-secret-fusion/hero	illustration	fy14-secret-fusion-hero.webp						
+fy14-secret-fusion/neutrons	diagram	fy14-secret-fusion-neutrons.webp	1.2	-2.5	600	388.8		
+fy14-secret-fusion/pinch	diagram	fy14-secret-fusion-pinch.webp	0	0	600	505	{"8":[-17,0]}	
+fy14-sun-puzzle/hero	illustration	fy14-sun-puzzle-hero.webp						
+fy14-tokamak-stellarator/hero	illustration	fy14-tokamak-stellarator-hero.webp						
+fy14-tokamak-stellarator/toroidal	diagram	fy14-tokamak-stellarator-toroidal.webp	0	0	600	426.2		
