@@ -24,8 +24,6 @@ avoimet kohdat tehdään yhdessä PR:ssä (laajennus kohdan 19 päätökseen 16.
 mekaaniset muutokset (8c, 8l-b:n jäännös, 5d:n tähteet) samaan PR:ään kurssin seuraavan sisältömuutoksen (8g, 8j)
 kanssa, jonka katselmoinnit kattavat ne. Ei koskaan jo katselmoitavana olevaan PR:ään. Koordinaattori kirjaa jokaiselle
 kurssille (FY1–FY9) yhden rivin: mitkä kohdat ovat auki ja missä PR:ssä ne tehdään. Voimaan heti; ei odota muita osia.
-FY3-loki (PR #686, 8c): 83 ulkoasukatselmoinnin raporttia kirjoitettiin uudelleen (en: 10 lukua ja 15 tehtäväsarjaa; fi: 15 lukua ja 14 tehtäväsarjaa; fi-easy: 15 lukua ja 14 tehtäväsarjaa), koska ensimmäisen kierroksen erä-raportit oli kirjoitettu skriptillä tai shell-silmukalla yleisellä Checked-rivillä ja katselmoija ei ollut avannut luvun omia kaappauksia. Uusi kierros: yksi raportti per luku, katselmoija kirjoittaa itse, avatut kaappaukset nimetty (1280 px ratkaisut auki ja 390 px; 360 px:n kaappauksia ei ole, joten 390 px on lähin). Hash vain `reviews.py hash` -komennolla. fy3-5 ja fy3-12 en: tiede, pedagogiikka ja ulkoasu kierros 2 (desimaalipisteen korjaus).
-Luokittimen merkintä "Undermining Oversight" kahdesta katselmoija-ajosta (en lukujen uusinta, fi 9–12): tarkistin, että muuttuneet tiedostot olivat vain `visual.md`-raportteja, jokaisen hash vastasi `reviews.py hash` -tulostetta, `check-report` meni läpi ja raportit nimesivät avatut kaappaukset; mitään muuta ei muutettu.
 
 ### 0g. `site/` pois sisältö-PR:istä (ensin suunnitelma, pysähdys opettajan hyväksyntään)
 Varattu: claude/0g-site-suunnitelma (#687, suunnitelma `docs/audits/2026-11-17-0g-site-suunnitelma.md`, hyväksytty). Päätökset (opettaja 2026-11-17): A `site/` poistuu kokonaan; vanhat linkit → `ruukkilab.fi` PR 3:ssa; esikatselu = CI-artefakti + muuttuneiden sivujen lista; siirtymä PR 1 varjo → PR 2 kytkentä → PR 3 poisto (ajankohta sovitaan erikseen) → PR 4 mittaus. Toteutus yksin, yksi PR kerrallaan.
@@ -41,6 +39,7 @@ katselmoitu sisältö, ja yhdistäminen on opettajan julkaisupäätös. Toteutus
 
 ### 0h. Generoidut tiedostot CI:lle (opettaja 2026-11-17, 0g:n jälkeen)
 `docs/figures/catalog.json`, `docs/assessment/<COURSE>.md` ja `docs/coverage/<COURSE>.md` aiheuttavat saman mainin yhdistys -ristiriidan kuin `site/`. CI generoi ne ja tarkistaa vastaavuuden; `figcat.py find` generoi katalogin tarvittaessa paikallisesti. Ensin suunnitelma, kuten 0g (`docs/audits/2026-11-17-0g-site-suunnitelma.md` osa 9). Jaettu muutos: yksin, 0g:n jälkeen.
+Tehty ja poistettu jonosta: 8q (#690), 8r (#694), kuvan .side-arvio (#775); kohta 22 (#751) poistetaan #794:n jälkeen.
 
 ## 4. FY10:n tutkimusten ja TVT-ohjeiden korjaukset (opettaja 2026-11-13)
 Varattu: claude/fy10-taulukko-otsakkeet (taulukko-otsakkeet 390 px; opettaja 2026-11-18: otsakkeet lyhennetään)
@@ -106,20 +105,6 @@ Pohdinnan järjestys ilmiö → kertaustehtävä → pohdintakysymys (`inquiry.p
 `caption-label` tunnistaa kaikki muodot (#658); poistettu FY1, FY2, FY4, FY6, FY7, FY8 (fy8-2, fi, fi-easy, en; 0f-PR claude/fy8-0f). FY5 tehty (0f-PR #671). FY3: tehtävien text-kentät tehty (PR #742). Jäljellä muut kurssit:
 otsikot `reviews.caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]`; tehdään kurssin muiden töiden mukana (0f).
 
-## 8q. `reviews.translation_differs`: alaindeksisana ja yksikkökaava yksin (jaettu `scripts/`; 2026-11-17)
-Varattu: claude/reviews-translation-units
-Tausta: 0c (#677) ja 8p (#684) ovat mainissa, mutta fy8-13:n (#688) en ja fi-easy eivät silti siirry carryllä: pelkkä `$\text{ka}$`
-(en `$\text{avg}$`) ja fi-easyn pelkkä yksikkökaava `$\text{mSv}$` (fi: sana "millisieverteinä") lasketaan eri kaavoiksi.
-Korjaus: (a) tunnetut alaindeksiparit (ka↔avg, alku↔initial, loppu↔final…), (b) pelkkä `\text{sana}`-kaava ei lisää kaavamäärää
-vaan vertautuu toisen tekstin sanaan, (c) testit `test_reviews.py`:ssä, (d) `reviews.py verify` ja fy8-13 palauttaa None.
-Yksiköt (kg, N, mSv…) luvun kanssa pysyvät tiukkoina. Yhdistetään yksin.
-
-## 8r. translation_differs: valintatehtävän answer (jaettu `scripts/`; 2026-11-17)
-Varattu: claude/8r-translation-choice
-`reviews.translation_differs` vertasi valintatehtävän `answer`-kenttää (oikean vaihtoehdon TEKSTI, käännetään) sellaisenaan, joten
-en ja fi-easy saivat eron ja tiedekatselmointi ajettiin turhaan täytenä (fy8-14-L1-06, #692). Korjaus: choice-`answer` verrataan
-oikean vaihtoehdon indeksin kautta; luvut, kaavat ja asetukset pysyvät tiukkoina. Yhdistetään yksin.
-
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 Mittaus ja päätökset `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. PR 1–4b tehty (#563, #588, #591, #648, #652), PR 5 tehty (#711: canvasin nimi ja kuvaus, 40 px:n valintaruudut, näkyvä kohdistus). Myöhemmin kurssi kerrallaan luvun seuraavan
 sisältömuutoksen yhteydessä: tyyppi D (fy6-5, fy6-6, fy6-9, fy6-12, fy6-13, fy6-14), fy1-2:n säätimien ryhmittely, näppäinvaihtoehto raahaukselle,
@@ -163,21 +148,13 @@ Raportti tehty (#721, `docs/audits/2026-11-18-lopputarkistus-FY1-FY8.md`). **Hyv
 
 ## 20. Opettajan päätökset 2026-11-18 klo 18.33 (koordinaattorin chatissa, "mennään ehdotustesi mukaisesti")
 Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jälkeen; tämä rivi on hyväksynnän kirjaus (sääntö 5).
+- Pysähdy ja mieti tehty FY1–FY8 (#760, #765, #766 ja #772, #745, #770, #777, #779, #783), kaikki kielet, katselmoitu; FY5:stä alkaen rajattu laajuus, vanhan sisällön löydökset PR:ien kuvauksissa. **Opettaja 2026-11-19 aamulla ("kaikki ok"): laajennetaan muihin kursseihin**; seuraavaksi FY9 ja muut kurssit, kurssi kerrallaan.
 - 8j: fy1-1, fy1-8 ja fy2-1 ohitetaan (ei kertaustehtävää).
 - 5d: FY5:n 16 ja FY6:n 25 jäljellä olevaa riviä jäävät listalle (myös fy5-7 `x = A \sin(…)`).
-- Kuvan .side/.stack-arvio (`fig_side`/`text_height`, jaettu): arvio ei vastaa renderöintiä (fy5-9, fy5-12 fi, test_inquiry 1280/1920 px; PR #770). Varattu: claude/fig-side-arvio
-- Pysähdy ja mieti: FY1:n luvut tehty (PR #760, kaikki kielet, katselmoitu); seuraavaksi FY2, kurssi kerrallaan.
-- Pysähdy ja mieti: FY3:n luvut tehty (PR #766 ja fy3-4 PR #772, kaikki kielet, katselmoitu: tiede, pedagogia ja ulkoasu PASS; fy3-4:n sim-lukema korjattu, ks. FY3-päätös alla); seuraavaksi FY5, kurssi kerrallaan.
-- Pysähdy ja mieti: FY2:n luvut tehty (PR #765, kaikki kielet, katselmoitu; fy2-4 neljäs rajattu kierros opettajan luvalla 2026-11-19); jäljellä FY3 ja muut kurssit, kurssi kerrallaan.
-- Pysähdy ja mieti: FY4:n luvut tehty (PR #745, kaikki kielet, katselmoitu); **opettaja 2026-11-19 aamulla ("kaikki ok"): laajennetaan muihin kursseihin**, kurssi kerrallaan saman kurssin keskeneräisen PR:n jälkeen.
-- Pysähdy ja mieti: FY5:n luvut tehty (PR #770, kaikki kielet, katselmoitu, rajattu laajuus; vanhan sisällön löydökset PR:n kuvauksessa); jäljellä FY6 ja muut kurssit, kurssi kerrallaan.
-- Pysähdy ja mieti: FY7:n luvut tehty (PR #779, kaikki kielet, katselmoitu, rajattu laajuus; fy7-1:lle neljäs rajattu kierros opettajan luvalla 2026-11-21; vanhan sisällön löydökset PR:n kuvauksessa); jäljellä FY8 ja muut kurssit, kurssi kerrallaan.
 - Pysähdy ja mieti FY2 (#765): **opettaja 2026-11-19 klo 22.3x ("1 yes"): fy2-4:lle sallitaan neljäs, rajattu katselmointikierros** (tiede ja pedagogia delta, en full) kolmannen kierroksen esteen (johtopäätöksen kriteeri 3) korjauksen vahvistamiseksi; poikkeus lesson.md:n kolmen kierroksen rajaan vain tähän.
 - Pysähdy ja mieti FY3 (#766): **opettaja 2026-11-20 klo 14.2x ("I allow recommendations")**: (1) visuaalikatselmoija kirjoittaa uudet `review/visual.md`-raportit vanhojen tilalle (normaali menettely); (2) fy3-4 jätetään pois tästä PR:stä (palautetaan mainin tilaan), muut 15 lukua yhdistetään. fy3-4:n simulaation lukema (näyttää heti ρg = 9,81 kPa/m ja 1,97-kertaisen paineen, joten kokeen 1 numerotehtävä vastataan ilman mittausta) korjataan omana jaettuna työnään (sim/`lang/`, yksin), ja fy3-4:n Pysähdy ja mieti tehdään sen jälkeen samassa yhteydessä.
 - fy3-4 (#772): **opettaja 2026-11-20 klo 17.3x ("yes")**: (1) kaavarivi "hydrostaattinen paine :: p = p_0 + ρgh" pidetään (opettajan päätös 2026-11-12, docs/fy3/kaavanimet.tsv rivi 37); opettajan hyväksymä poikkeus, katselmoijat eivät merkitse estettä. (2) Esimerkin ikkunavoima 1,77 kN ja kolmen merkitsevän numeron perustelu (P7).
 - Pysähdy ja mieti FY5 ja eteenpäin: **opettaja 2026-11-20 klo 01.0x ("Ok do it")**: rajattu laajuus. Katselmoijien löydökset vanhasta sisällöstä kirjataan PR:n kuvaukseen (osio "Vanhan sisällön löydökset") erillistä korjausta varten; tässä PR:ssä korjataan vain uuden Pysähdy ja mieti -sisällön esteet ja vanhan sisällön kohdat, jotka estävät uuden sisällön toimimisen. (FY2 maksoi n. 31 USD / 100 katselmointia.)
-- Pysähdy ja mieti: FY6:n luvut tehty (PR #777, kaikki kielet, katselmoitu, rajattu laajuus, enintään kolme kierrosta luvulta; vanhan sisällön löydökset PR:n kuvauksessa); jäljellä FY7 ja muut kurssit, kurssi kerrallaan.
-- Pysähdy ja mieti: FY8:n luvut tehty (PR #783, kaikki kielet, katselmoitu, rajattu laajuus; fy8-4:lle, fy8-15:lle ja fy8-16:lle neljäs rajattu kierros opettajan luvalla 2026-11-22; vanhan sisällön löydökset PR:n kuvauksessa); jäljellä FY9 ja muut kurssit, kurssi kerrallaan.
 - 23 prosessisivu (#764): opettaja 2026-11-19 klo 22.3x ("2, yes"): sisältö hyväksytty; **klo 22.4x: "the workflow should look like an office"**: työnkulun animaatio piirretään toimistona (kuten hellsla.github.io/agent-office: huoneet ja työpöydät, hahmot kuljettavat paketteja pöydältä toiselle ja CI-koneille). **Toimistoversio hyväksytty: opettaja 2026-11-19 klo 22.5x ("ok dont put more effort into this")**; ei lisätyötä, viimeistellään ja yhdistetään.
 - FY6 Sovella: vastauksen paljastavat alakohdat ja ajautumisnopeus/idealisointi korjataan; ei uusia tehtävätyyppejä (ei diodi- eikä Kirchhoff-tehtäviä).
 - Pienet: header-raja 72 rem hyväksytty (jaettu, site.css; tehty jo f19810c, 2026-11-17); kirjavinkeissä suorat Finna-teoslinkit ja "Tiede – luovaa leikkiä" -kirjan suomenkielinen painos, jos löytyy; podcasteille YouTube-linkit sallittu; FY10:n taulukko-otsakkeet 390 px:ssä lyhennetään.
@@ -189,7 +166,6 @@ Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jäl
 - Kirjavinkkien Finna-tietuelinkit ja podcastien YouTube-linkit odottavat: Finna estää koneellisen haun (Cloudflare), YouTube-linkki vaatisi jaetun muutoksen (`media_tips.py`) ja opettajan päätöksen.
 - Pysähdy ja mieti FY7 (#779): **opettaja 2026-11-21 klo 16.4x ("hyväksyn", koordinaattorin suositus 1)**: fy7-1:lle neljäs, rajattu katselmointikierros (tiede en/fi/fi-easy delta ja pedagogia delta), vain tähän lukuun; PASS, yhdistetty.
 - Pysähdy ja mieti FY8 (#783): **opettaja 2026-11-22 klo 03.2x ("Hyväksyn suosituksesi", koordinaattorin suositus 1)**: fy8-4:lle, fy8-15:lle ja fy8-16:lle neljäs, rajattu katselmointikierros (tiede ja pedagogia delta, kaikki kielet; visual delta vanhentuneen tilan vuoksi), vain näihin lukuihin; PASS.
-- FY8-tekijä käynnisti 2026-11-21 Workflow-työkalun ilman lupaa ja pysäytti sen heti (raportteja ei syntynyt); tekijäkehotteissa nyt "älä käytä Workflow-työkalua".
 - Mahdollinen myöhempi sisältötyö: FY3/5/6:n käsin jaetut Pysähdy-ketjut (fy3-4, fy5-3, fy5-9, fy6-4, fy6-6…8, fy6-11…16) yhdeksi ketjuksi `mathlayout.display_chains`in (#782) varaan; sanamuoto muuttuu, joten katselmointi.
 
 ## 22. Tehtävän pieni taulukko ja kuva vierekkäin leveällä näytöllä (opettaja 2026-11-19 klo 07.20, kuvakaappaus fy8-3)
@@ -202,36 +178,11 @@ Osa 6 (FY6, 79 kuvaa: 75 lukua + koe k1-switch, k3-circuits, k6-setup + Sovella 
 FY1:n tehtäväsarjojen katselmoinnit (fy1-1/2/4/7/8, fi/en/fi-easy) siirretty #771:n kuvamuutosten yli (`reviews.py carry --exercises`, teacher-figure; build.py ei enää varoita), PR #792; odottaa koordinaattorin yhdistämistä.
 Varattu: claude/koe-sovella-approve-scope (jaettu korjaus: approve-figures koe/Sovella-sarjoille, ci_scope koe/Sovella-kuville)
 Osa 5 (FY5, 87/94 kuvaa) tehty: PR #785, `approve-figures fy5-1…fy5-17 --images` ajettu opettajan luvalla (opettaja 2026-11-21 suoraan tekijäsessioon: "Hyväksyn FY5-kuvat ja tyhjän reunan rajauksen kuviin fy5-3/karuselli ja fy5-4/muutos"), site/ ja palautus/ rakennettu, ennen/jälkeen docs/audits/img24-fy5/; odottaa koordinaattorin yhdistämistä. FY5 koe/Sovella (`fy5-k2-board`, `fy5-k2-fbd`, `fy5-k3-fbd`, `fy5-k5-modes`, `fy5-s1-crane`) tehty: PR #788, opettaja 2026-11-22 suoraan tekijäsessioon ("Hyväksyn FY5:n koe- ja Sovella-kuvat …"), `carry-item koe|sovella`, ennen/jälkeen docs/audits/img24-fy5-koe/; koe/Sovella-sivujen kuvien kopiointi build.py:ssä #789. Avoin: `fy5-10/types` "harvennus" → "harventuma" (sanan vaihto kaikkialla, ei tässä PR:ssä); `fy5-9/heiluri` ja `fy5-17/maapallo` ennallaan (PAATOS). fy9-aallot ja fy9-ympyraliike käyttävät FY5-kuvia: kuvien carry ajettu (`carry-item unit`).
-Osa 1 (kuvapohja) ja FY2-pilotti tehty (#768, `scripts/figimage.py`, NOTES.md §3); osat 2–11 vapaat.
-662 Codexin uudelleen piirtämää kuvaa FY1–FY10 ja FY14, opettaja hyväksynyt ja tarkistanut vaihdettaviksi. Lähde: haara
-`claude/dazzling-pasteur-kws2vo`, kansio `uudet_kuvat/` (README, `<MODUULI>-hyvaksytyt-kuvat.zip`: `kuvat/`, `merkinnoin/`,
-`ASETTELU.tsv`, `PAATOS.txt`; `VAIHDETTAVUUS.tsv`). **Haaraa ei yhdistetä mainiin; PNG:t eivät mene mainiin.** Mainin
-`downloads/`-zippejä ei käytetä (poisto opettajan päätös). Vaihdetaan vain `kuvat/`-kuvat; ennalleen kuvaajat, ohitetut ja
-"pidä alkuperäinen" (`PAATOS.txt`); vuorovaikutteisen elementin osaa ei korvata (opettaja 17.11.); monivalinnan
-vaihtoehtokuvat (13 tehtävää, 50 kuvaa) koko tehtävä kerrallaan; `fy2-4/grid` ja `fy7-2/track-sign` FY9:ssä omistajamoduulin
-uudella versiolla. Piirroksia ei muuteta; jos kuva ei toimi sivulla, opettajalle (uusi piirros = uusi hyväksyntä).
-Osa 1 (jaettu, yksin; pysähtyy opettajan hyväksyntään): `figlib.py`/`scripts/figures.py` kuvatiedosto piirroksen pohjaksi,
-merkinnät LaTeX-`foreignObject`eina kuten nyt, asettelu moduulin asettelutiedostosta, sama polku `figcat.py`-tehtäväkuville;
-WebP ≤ ~1600 px `assets/pics/<moduuli>/` (kaikki yhteensä < 100 Mt); `build.py` polut myös `en/` ja `fi-easy/`;
-`lint_lesson.py` (kuvatiedosto ei ole väritön kuva; `<text>`-kielto ja LaTeX ennallaan); `reviews.py` tarkistussumma kattaa
-kuvatiedoston, hyväksyntä `approve-figures`, siirto `teacher-figure`; merkinnän valkoinen tausta pois tasaisella pohjalla,
-jää kuvioinnin päällä (opettaja 15.11.; `merkinnoin/` näyttää lopputuloksen); `check_layout.py`, `test_notation.py`,
-`ci_scope.py` (uusi tiedostolaji), NOTES.md §3. Pilotti FY2 (20 kuvaa) ennen/jälkeen kaikilla kielillä; erikseen
-`fy2-7/district`, `fy2-7/grid`, `fy2-7/storage` (en poikkeaa fi:stä).
-**Osa 1 + FY2-pilotti (#768) hyväksytty: opettaja 2026-11-20 klo 01.4x ("I approve")**, ennen/jälkeen-kuvat docs/audits/img24/.
-**Osa 3 FY3 (#776) hyväksytty: opettaja 2026-11-21 suoraan tekijäsessioon ("Hyväksyn FY3-kuvat")**, 61 kuvaa, ennen/jälkeen-kuvat docs/audits/img24-fy3/; seitsemän käsin liimattua SVG:tä (`~lesson-N`) ei kuulu tähän, ne tehdään erikseen.
-Osa 2 (FY1) tehty: PR #771 (36 kuvaa, `approve-figures --images` ajettu hyväksynnän jälkeen, site/ rakennettu), odottaa koordinaattorin yhdistämistä.
-Osa 3 FY3 (#776): kolmen kuvan (`fy3-4/water-column`, `fy3-12/earth-flows`, `fy3-12/wall-temperature`) tyhjä paperireuna rajattu viewBoxiin, piirros ennallaan; opettaja 2026-11-21 suoraan tekijäsessioon ("Hyväksyn"), approve-figures fy3-4 ja fy3-12 uudelleen.
-**Osa 2 FY1 (#771) hyväksytty: opettaja 2026-11-20 klo 17.5x ("hyväksytty")**, ennen/jälkeen-kuvat docs/audits/img24-fy1/; approve-figures fy1-1…fy1-8 --images tämän perusteella.
-Osa 4 (FY4, 72 kuvaa) tehty: PR #780, `approve-figures fy4-1…fy4-16 --images` ajettu opettajan luvalla (opettaja 2026-11-21 "Hyväksyn" tähän sessioon; strobe-otsikko siirretty ja virhe-kuva rajattu "On ok"), site/ ja palautus/ rakennettu, ennen/jälkeen docs/audits/img24-fy4/; odottaa koordinaattorin yhdistämistä. FY4:n koe/Sovella-kuvat `fy4-k1-fbd`, `fy4-k3-fbd`, `fy4-s3-collision` tehty: PR #786 (jaetut korjaukset #782, #787, #789), hyväksytty opettajan sanalla suoraan tekijäsessioon 2026-11-22 ("Hyväksyn FY4:n koe- ja Sovella-kuvat fy4-k1-fbd, fy4-k3-fbd ja fy4-s3-collision"); rivit kirjattu docs/teacher-figures.tsv:ään reviews.figure_hash:lla (approve-figures ei tunnista koe/Sovella-sarjaa), carry-item sovella/koe ajettu, ennen/jälkeen docs/audits/img24-fy4-koe/.
-**Opettaja 2026-11-21 klo 11.0x ("On ok", suositukset):** FY3 (#776): fy3-4/water-column ja fy3-12/earth-flows tyhjä paperireuna rajataan pois kuvatiedostosta, piirros ennallaan; FY3:n 7 käsin liimattua SVG:tä (fy3-13…fy3-16 ~lesson-N) tehdään erikseen myöhemmin (piirros figures.py:hin ennallaan, sitten vaihto). FY4 (#780): fy4-2/strobe otsikkoa "hidastuva liike" siirretään muutama pikseli, ettei se mene v̄:n päälle; fy4-13/virhe tyhjä reuna rajataan; fy4-7/hero hyväksytään sellaisenaan. Lisäksi tilapäinen neljäs tekijä jaetulle korjaukselle (stopthink-kaavarivitys, figimage koe/Sovella).
-Osat 2–11: FY1, FY3–FY10, FY14 yksi moduuli kerrallaan, oma ketju ja luonnos-PR; kuvat lukuihin kaikilla kielillä,
-`approve-figures`, build, tarkistukset; opettaja katsoo moduulin kerran valmiilta sivulta ennen yhdistämistä.
-Huomiot: FY3 seitsemän kuvaa tunnistetaan kuvauksesta (`~lesson-N`); FY5 `fy5-10/types` "harvennus" → "harventuma" (opettaja 2026-11-19 klo 19.12: harventuma kaikkialla)
-(lähde ja `glossary.json` vanhalla sanalla: kysytty opettajalta, muutetaanko kaikkialla); FY8 suurennettu kuvankäsittelyllä
-(pienentämättömät korvaavat, jos opettaja toimittaa); FY9 11 voimakuviota kuvauksesta (`nimeton-N`); FY14 sivut englanniksi;
-`PAATOS.txt`:n mittasuhde- ja yksityiskohtahuomiot hyväksytty sellaisinaan, ei korjata. Koordinaattori yhdistää kohdan PR:t opettajan moduulihyväksynnän jälkeen (opettaja 2026-11-19).
-Tilanne 2026-11-21 illalla: FY1 (#771), FY3 (#776), FY4 (#780) ja FY5 (#785) yhdistetty. FY3:n `fy3-12/wall-temperature` rajattiin samalla perusteella kuin water-column ja earth-flows (koordinaattori, tyhjä reuna, piirros ennallaan). Koe- ja Sovella-kuvien jaetut korjaukset: #782 (`figimage.code_of`), #787 (`practice.figures` → `figimage.apply`), #789 (`build.py` kopioi koe- ja Sovella-sivujen kuvat); FY4 (#786, 3 kuvaa) ja FY5 (#788, 5 kuvaa) odottavat opettajan lupaa tekijäsessioon. Avoimet pienet työt: `ci_scope.py` antaa koe/Sovella-kuvalle "full" (`courses.deps()` käy vain oppitunnit); FY1:n tehtäväsarjat fy1-1, fy1-2, fy1-4, fy1-7 ja fy1-8: build varoittaa "exercise reviews are not current" (#771:n kuvat muuttivat tehtävätiedostoja, carry ei kattanut tehtäväsarjoja), joten sivu näyttää viimeksi katselmoidut tehtävät vanhoin kuvin; korjaus tehtäväsarjojen teacher-figure-carryllä.
+Osa 1 (kuvapohja, `scripts/figimage.py`, NOTES.md §3) ja FY2-pilotti (#768) **hyväksytty: opettaja 2026-11-20 klo 01.4x ("I approve")**.
+Lähde ja säännöt: 662 Codexin piirtämää, opettajan hyväksymää kuvaa FY1–FY10 ja FY14, haara `claude/dazzling-pasteur-kws2vo`, `uudet_kuvat/<MODUULI>-hyvaksytyt-kuvat.zip` (`kuvat/`, `merkinnoin/`, `ASETTELU.tsv`, `PAATOS.txt`; `VAIHDETTAVUUS.tsv`). **Haaraa ei yhdistetä mainiin; PNG:t eivät mene mainiin**; mainin `downloads/`-zippejä ei käytetä. Vaihdetaan vain `kuvat/`-kuvat; ennalleen kuvaajat, ohitetut ja "pidä alkuperäinen" (`PAATOS.txt`); vuorovaikutteisen elementin osaa ei korvata (opettaja 17.11.); monivalinnan vaihtoehtokuvat koko tehtävä kerrallaan; `fy2-4/grid` ja `fy7-2/track-sign` FY9:ssä omistajamoduulin versiolla. Piirroksia ei muuteta; jos kuva ei toimi sivulla, opettajalle (uusi piirros = uusi hyväksyntä). `PAATOS.txt`:n mittasuhde- ja yksityiskohtahuomiot hyväksytty sellaisinaan.
+Kulku (osat 2–11, moduuli kerrallaan, oma luonnos-PR): kuvat lukuihin sekä koe- ja Sovella-sivuille kaikilla kielillä; ennen/jälkeen-kuvat `docs/audits/img24-<moduuli>/`; opettaja hyväksyy suoraan tekijäsessioon; `approve-figures` (myös koe/Sovella, #793), carry, build, tarkistukset; tyhjän reunan rajaus vain opettajan luvalla; koordinaattori yhdistää moduulihyväksynnän jälkeen (opettaja 2026-11-19).
+Tehty ja yhdistetty: FY1 #771 (36 kuvaa; **opettaja 2026-11-20 klo 17.5x "hyväksytty"**; tehtäväsarjojen carry #792), FY2 #768, FY3 #776 (61; **opettaja 2026-11-21 "Hyväksyn FY3-kuvat"**; water-column ja earth-flows rajattu, **"On ok" 2026-11-21 klo 11.0x**; wall-temperature samalla perusteella), FY4 #780 (72; **opettaja 2026-11-21 "Hyväksyn"**; strobe-otsikko siirretty, virhe rajattu, fy4-7/hero sellaisenaan "On ok") ja koe/Sovella #786 (3; **opettaja 2026-11-22**), FY5 #785 (87/94; **opettaja 2026-11-21**, karuselli ja muutos rajattu) ja koe/Sovella #788 (5; **opettaja 2026-11-22**). Jaetut korjaukset: #782 (`figimage.code_of`), #787 (`practice.figures`), #789 (`build.py` kopioi koe/Sovella-kuvat), #791 (`mathlayout.list_chains`, tvt-kulmakerroin), #793 (`approve-figures` ja `ci_scope` koe/Sovella).
+Avoimet: FY3:n 7 käsin liimattua SVG:tä (fy3-13…fy3-16 `~lesson-N`) erikseen (piirros figures.py:hin ennallaan, sitten vaihto; opettaja 2026-11-21 "On ok"); FY5 `fy5-10/types` "harvennus" → "harventuma" kaikkialla (opettaja 2026-11-19 klo 19.12; lähde ja `glossary.json` vanhalla sanalla); FY5 `fy5-9/heiluri`, `fy5-17/maapallo` ennallaan (PAATOS); FY8 suurennettu kuvankäsittelyllä (pienentämättömät korvaavat, jos opettaja toimittaa); FY9 11 voimakuviota kuvauksesta (`nimeton-N`); FY14 sivut englanniksi.
 
 ## 14. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13; juuri ennen vihkoja)
 Siirretään `ahjo.py` ja `lumatutor.py` jaksopohjan lohkoiksi niin, että sivut pysyvät tavulleen samoina kuten Kilparobotiikassa; puuttuvat lohkot yhteiseen kirjastoon. Jaettu: yksin.
