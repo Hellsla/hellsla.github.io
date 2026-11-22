@@ -1119,6 +1119,7 @@ def build_units(lang, out, unit_pub):
         if errs: sys.exit("\n".join(errs))
         d = units.load(uid, lang); st = units.status(uid, lang); f = units.folder(uid, lang); code = d["course"]
         md_text = (f / "unit.md").read_text()
+        copy_pics(uid, [units.texts_of(uid, lang)])   # the base pictures of figures (scripts/figimage.py, work queue 24)
         inq = json.loads((f / "inquiry.json").read_text())
         intro, sections = unit_sections(md_text)
         sim = ""; sf = units.sim_folder(uid, lang)
@@ -1449,6 +1450,7 @@ def build_language(lang):
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {iid}.html is on the live site but its reviews are not current; this build removes it")
             continue
         d = investigations.load(iid, lang); course = d["courses"][0]
+        copy_pics(iid, [(investigations.folder(iid, lang) / n).read_text() for n in investigations.TEXTS if (investigations.folder(iid, lang) / n).is_file()])   # the base pictures of figures (scripts/figimage.py, work queue 24)
         body, itoc = investigations.render(iid, lang, T, lambda t: nbsp_units(render_md(t)), chapters, published)
         html = (texts(tpl).replace("{{title}}", esc(d["title"])).replace("{{course}}", course).replace("{{notice}}", "" if st["state"] == "reviewed" else f'<p class="notice" role="note">{T("investigation.notice_draft")}</p>')
                 .replace("{{strings}}", strings_block(None)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=course)))
