@@ -124,6 +124,7 @@ import figcat as _fc
 expect("a unit's Sovella figures.py is an owner", "fy9-liike-sovella" in [o[0] for o in _fc.owners()] and _fc.owner("fy9-liike-sovella") is not None, "owners()/owner()")
 expect("a unit's Sovella figure id resolves", _fc.exists("fy9-liike-sovella/" + next(iter(_fc.module(str(_fc.owner("fy9-liike-sovella")[0])).FIGURES))), "exists()")
 
+expect("a unit's and an investigation's own figure ids resolve (figimage, FY14 and FY10)", _fc.exists("fy14-plasma/hero") and _fc.exists("fy10-heiluri/hero") and not _fc.exists("fy14-plasma/nope"), "exists()")
 shutil.rmtree(T, ignore_errors=True)
 print("all figure catalog tests passed" if not failures else f"{len(failures)} FAILED: {', '.join(failures)}")
 sys.exit(1 if failures else 0)
