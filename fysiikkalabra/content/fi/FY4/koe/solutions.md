@@ -165,21 +165,11 @@ Kuviossa B on keksitty voima $\overline{F}$ liikkeen suuntaan, vaikka mikään e
 **Periaate:** Valitaan kappaleeksi laatikko. Siihen vaikuttavat Maa (paino) ja lava, joka koskettaa laatikkoa ja kohdistaa siihen tukivoiman ja kitkan. Laatikko liikkuu auton mukana, joten sillä on sama kiihtyvyys eteenpäin kuin autolla. Newtonin II lain mukaan kokonaisvoiman on osoitettava eteenpäin, ja ainoa vaakasuora voima on lavan lepokitka.
 
 <svg data-fig="fy4-k3-fbd" viewBox="0 0 600 340" role="img" aria-label="Mallikuvio: laatikon voimakuvio, kun auto kiihdyttää ja laatikko pysyy lavalla paikallaan. Laatikko on suorakulmio. Keskipisteestä paino G suoraan alas ja alapinnasta tukivoima N suoraan ylös, yhtä pitkinä vierekkäin. Alapinnan etukulmasta lepokitka eteenpäin, selvästi lyhyempänä. Laatikon vieressä ohut sininen nopeusnuoli ja ohut oranssi kiihtyvyysnuoli, kumpikin eteenpäin." style="max-width:100%;font-size:24px">
-  <rect x="175" y="128" width="150" height="84" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="250" y1="170" x2="250" y2="282.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M250,299.5 L242,281.5 L258,281.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <image href="pics/fy4/fy4-koe-fy4-k3-fbd.webp" x="2.5" y="0" width="594.1" height="344.1" preserveAspectRatio="none"/>
   <foreignObject x="257.5" y="279" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="216" y1="212" x2="216" y2="99.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M216,82.5 L224,100.5 L208,100.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="173.5" y="74" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
-  <line x1="325" y1="212" x2="341" y2="212" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M358,212 L340,220 L340,204 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="359" y="193.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_{\mu 0}$</div></foreignObject>
-  <line x1="400" y1="62" x2="478" y2="62" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M467,68.5 L480,62 L467,55.5" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="487.5" y="47.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <line x1="400" y1="106" x2="478" y2="106" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M467,112.5 L480,106 L467,99.5" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="487.5" y="91.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
 </svg>
 
