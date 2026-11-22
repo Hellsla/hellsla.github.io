@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 06fd0d500e22f755
+CONTENT-HASH: fe52cbbdc4f2f8fa
 
 ## Blocking
+(none)
 
 ## Polish
-- Line 257 box: to show "sama laki", add the check 4200/60 = 70 km/s/Mpc = H₀ explicitly.
+(none)
+
+## Vanhan sisällön löydökset
+(none)
 
 ## Checked
-batch delta review: three changed boxes. Hubble: v_A = 4200, v_B = 8400, so B moves at 4200 km/s relative to A at 60 Mpc, and 4200/60 = 70. Correct. CMB photon: 13,6/1100 = 0,0124 ≈ 0,012 eV, about a thousandth of the ionisation energy, so it cannot ionise. This is consistent with line 292 (13,6 eV threshold, about 3000 K). Hubble a/b: 70·100 = 7000 km/s, 14 000/70 = 200 Mpc. Correct.
+batch delta review: in the CMB box (line 295), a typical photon at $3000\,\text{K}$ has $E \approx 2{,}7\,kT = 0{,}70\,\text{eV}$, which agrees with "noin $0{,}7\,\text{eV}$". Then $0{,}70\,\text{eV}/1100 = 6{,}3 \cdot 10^{-4}\,\text{eV} \approx 6 \cdot 10^{-4}\,\text{eV}$, which is far below $13{,}6\,\text{eV}$. The previous Blocking item is fixed: the photon is now a typical $3000\,\text{K}$ photon, not a $13{,}6\,\text{eV}$ one. That agrees with the mechanism at line 292 (at $3000\,\text{K}$ too few photons reach $13{,}6\,\text{eV}$). The stretch $3000\,\text{K}/1100 \approx 2{,}7\,\text{K}$ also agrees with the summary's $2{,}725\,\text{K}$ (line 603). Energy is inversely proportional to wavelength ($E = hc/\lambda$), which is correct.
