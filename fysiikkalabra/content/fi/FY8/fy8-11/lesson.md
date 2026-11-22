@@ -3,96 +3,7 @@
 > **Miksi** gramma uraani-235:tä vapauttaa fissiossa yhtä paljon energiaa kuin noin $2{,}8$ tonnia kivihiiltä palaessaan?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: ydinvoimala kallioisella merenrannalla. Keskellä on lieriön muotoinen reaktorirakennus, jonka kupolista osa on piirretty auki: sisällä hehkuu reaktorin sydän vedessä. Vieressä on pitkä turbiinihalli ja sen takana voimalinjan pylväitä. Edessä on meri ja taivaalla muutama pilvi." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy811h-sky-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy811h-sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><radialGradient id="fy811h-core" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffc078"/><stop offset="0.55" stop-color="#e8590c" stop-opacity="0.8"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient></defs>
-  <rect x="0" y="0" width="1200" height="420" fill="url(#fy811h-sky-sky)"/>
-  <path d="M131,132 Q129,94.5 173,99 Q190.5,59.5 234.5,72.5 Q274,50.5 296,92.5 Q335.5,97 331,132 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <path d="M879,98 Q877,67.5 913,71 Q927.5,38.5 963.5,49.5 Q996,31.5 1014,65.5 Q1046.5,69 1043,98 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <rect x="0" y="420" width="1200" height="180" fill="url(#fy811h-sea)"/>
-  <path d="M0,420 L180,404 L420,410 L760,400 L1200,412 L1200,440 L0,440 Z" fill="#c9c2b2" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <rect x="640" y="300" width="330" height="110" rx="4" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <rect x="664" y="330" width="30" height="22" rx="2" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="714" y="330" width="30" height="22" rx="2" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="764" y="330" width="30" height="22" rx="2" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="814" y="330" width="30" height="22" rx="2" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="864" y="330" width="30" height="22" rx="2" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="914" y="330" width="30" height="22" rx="2" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="600" y="380" width="420" height="30" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <rect x="430" y="220" width="220" height="190" fill="#e3dccb" stroke="#1f2933" stroke-width="3"/>
-  <path d="M430,222 Q540,110 650,222 Z" fill="#e3dccb" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M470,250 L610,250 L610,400 L470,400 Z" fill="#a9d1f0" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="500" y="300" width="80" height="90" rx="6" fill="url(#fy811h-core)"/>
-  <rect x="508" y="306" width="8" height="78" rx="2" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="523" y="306" width="8" height="78" rx="2" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="538" y="306" width="8" height="78" rx="2" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="553" y="306" width="8" height="78" rx="2" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="568" y="306" width="8" height="78" rx="2" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="515" y="262" width="4" height="70" rx="1" fill="#6c757d" stroke="#1f2933" stroke-width="1"/>
-  <rect x="530" y="262" width="4" height="70" rx="1" fill="#6c757d" stroke="#1f2933" stroke-width="1"/>
-  <rect x="545" y="262" width="4" height="70" rx="1" fill="#6c757d" stroke="#1f2933" stroke-width="1"/>
-  <rect x="560" y="262" width="4" height="70" rx="1" fill="#6c757d" stroke="#1f2933" stroke-width="1"/>
-  <path d="M1026,410 L1054,240 H1066 L1094,410" fill="none" stroke="#6c757d" stroke-width="3" stroke-linejoin="round"/>
-  <line x1="1026" y1="410" x2="1088.5" y2="376" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1094" y1="410" x2="1031.5" y2="376" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1031.5" y1="376" x2="1083" y2="342" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1088.5" y1="376" x2="1037" y2="342" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1037" y1="342" x2="1077" y2="308" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1083" y1="342" x2="1043" y2="308" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1043" y1="308" x2="1071.5" y2="274" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1077" y1="308" x2="1048.5" y2="274" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1008" y1="274" x2="1112" y2="274" stroke="#6c757d" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="1008" y1="274" x2="1008" y2="288" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1112" y1="274" x2="1112" y2="288" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1026" y1="240" x2="1094" y2="240" stroke="#6c757d" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="1026" y1="240" x2="1026" y2="254" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1094" y1="240" x2="1094" y2="254" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M1126,410 L1154,260 H1166 L1194,410" fill="none" stroke="#6c757d" stroke-width="3" stroke-linejoin="round"/>
-  <line x1="1126" y1="410" x2="1188.5" y2="380" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1194" y1="410" x2="1131.5" y2="380" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1131.5" y1="380" x2="1183" y2="350" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1188.5" y1="380" x2="1137" y2="350" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1137" y1="350" x2="1177" y2="320" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1183" y1="350" x2="1143" y2="320" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1143" y1="320" x2="1171.5" y2="290" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1177" y1="320" x2="1148.5" y2="290" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1108" y1="290" x2="1212" y2="290" stroke="#6c757d" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="1108" y1="290" x2="1108" y2="304" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1212" y1="290" x2="1212" y2="304" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1126" y1="260" x2="1194" y2="260" stroke="#6c757d" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="1126" y1="260" x2="1126" y2="274" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1194" y1="260" x2="1194" y2="274" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M1008,288 Q1058,314 1108,304" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M1112,288 Q1162,314 1212,304" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M1026,254 Q1076,282 1126,274" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M1094,254 Q1144,282 1194,274" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M970,320 Q989,318 1008,288" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <rect x="85" y="397.5" width="9.5" height="14.5" fill="#b8622d"/>
-  <path d="M47,400 L90,352 L133,400 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M90,352 L133,400 H90 Z" fill="#1f2933" fill-opacity="0.18"/>
-  <path d="M56.5,373.5 L90,325.5 L123.5,373.5 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M90,325.5 L123.5,373.5 H90 Z" fill="#1f2933" fill-opacity="0.18"/>
-  <path d="M66,347 L90,292 L114,347 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M90,292 L114,347 H90 Z" fill="#1f2933" fill-opacity="0.18"/>
-  <rect x="136.5" y="401" width="7" height="11" fill="#b8622d"/>
-  <path d="M107.5,403 L140,367 L172.5,403 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M140,367 L172.5,403 H140 Z" fill="#1f2933" fill-opacity="0.18"/>
-  <path d="M115,383 L140,347 L165,383 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M140,347 L165,383 H140 Z" fill="#1f2933" fill-opacity="0.18"/>
-  <path d="M122,363.5 L140,322 L158,363.5 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M140,322 L158,363.5 H140 Z" fill="#1f2933" fill-opacity="0.18"/>
-  <rect x="205.5" y="399" width="9" height="13" fill="#b8622d"/>
-  <path d="M170.5,401 L210,357 L249.5,401 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M210,357 L249.5,401 H210 Z" fill="#1f2933" fill-opacity="0.18"/>
-  <path d="M179,377 L210,333 L241,377 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M210,333 L241,377 H210 Z" fill="#1f2933" fill-opacity="0.18"/>
-  <path d="M188,352.5 L210,302 L232,352.5 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M210,302 L232,352.5 H210 Z" fill="#1f2933" fill-opacity="0.18"/>
-  <rect x="297" y="402.5" width="6.5" height="9.5" fill="#b8622d"/>
-  <path d="M271,404 L300,372 L329,404 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M300,372 L329,404 H300 Z" fill="#1f2933" fill-opacity="0.18"/>
-  <path d="M277.5,386.5 L300,354.5 L322.5,386.5 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M300,354.5 L322.5,386.5 H300 Z" fill="#1f2933" fill-opacity="0.18"/>
-  <path d="M284,369 L300,332 L316,369 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M300,332 L316,369 H300 Z" fill="#1f2933" fill-opacity="0.18"/>
+  <image href="pics/fy8/fy8-11-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Ydinajatus
@@ -176,168 +87,12 @@ $$
 Jakautumistapoja on satoja, mutta tuotteina on aina kaksi keskiraskasta ydintä, eli **fissiotuotetta**, ja yleensä kaksi tai kolme uutta neutronia. Massaluku ja varaus säilyvät: $236 = 141 + 92 + 3$ ja $92 = 56 + 36$. Fissiotuotteet lentävät erilleen suurella liike-energialla ja jarruuntuvat ympäröivässä aineessa, joka lämpenee. Koska fissiotuotteissa on liikaa neutroneja, ne ovat radioaktiivisia ja hajoavat beetahajoamisella.
 
 <svg data-fig="fissio" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva, ei mittakaavassa: uraani-235:n fissio kolmessa vaiheessa vasemmalta oikealle. Hidas neutroni osuu uraani-235-ytimeen. Syntyy uraani-236-ydin, joka värähtelee ja venyy kuroutuvaksi. Ydin jakautuu kahdeksi keskiraskaaksi ytimeksi, bariumiksi ja kryptoniksi, jotka lentävät suurella nopeudella eri suuntiin, ja samalla vapautuu kolme uutta neutronia." style="max-width:100%;font-size:24px">
-  <circle cx="30" cy="150" r="9" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <line x1="44" y1="150" x2="65" y2="150" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M76,150 L64,155.5 L64,144.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <image href="pics/fy8/fy8-11-fissio.webp" x="0" y="1.2" width="600" height="350" preserveAspectRatio="none"/>
   <foreignObject x="20" y="105.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$n$</div></foreignObject>
-  <circle cx="176.5" cy="139" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="106" cy="134" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="154" cy="184.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="153" cy="115.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="107.5" cy="166.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="174.5" cy="159.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="121" cy="120" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="133.5" cy="184.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="167.5" cy="129" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="106" cy="147" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="162.5" cy="175" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="140" cy="116.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="117.5" cy="174" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="172" cy="147.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="115" cy="130.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="145.5" cy="181" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="156.5" cy="124" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="110.5" cy="158" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="166.5" cy="164" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="130" cy="122.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="129" cy="176.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="165.5" cy="138" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="113.5" cy="141.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="153.5" cy="173.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="146" cy="124" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="118.5" cy="165" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="165.5" cy="153.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="124" cy="131" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="139" cy="174.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="157" cy="133.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="117" cy="151" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="157" cy="164.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="137" cy="128.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="128" cy="167" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="160" cy="145.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="123" cy="140" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="145.5" cy="168" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="147.5" cy="134" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="124.5" cy="156.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="155" cy="155.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="133" cy="136.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="136.5" cy="163.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="151" cy="143" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="128.5" cy="148" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="146.5" cy="158" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="141" cy="141.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="135" cy="154.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="144" cy="150" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
   <foreignObject x="111" y="221.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">${}^{235}\text{U}$</div></foreignObject>
-  <line x1="212" y1="40" x2="212" y2="280" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <circle cx="352.5" cy="139" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="251" cy="134" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="350" cy="159.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="253" cy="166.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="250.5" cy="147" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="347" cy="147.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="340" cy="129" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="257.5" cy="158" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="263.5" cy="130.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="333" cy="175" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="338.5" cy="164" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="272.5" cy="120" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="267.5" cy="174" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="320.5" cy="184.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="261.5" cy="141.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="337.5" cy="138" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="318.5" cy="115.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="336.5" cy="153.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="291" cy="184.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="324" cy="124" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="269" cy="165" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="266.5" cy="151" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="300" cy="116.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="307.5" cy="181" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="285.5" cy="122.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="284" cy="176.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="319.5" cy="173.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="277" cy="131" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="324.5" cy="133.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="328.5" cy="145.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="325" cy="164.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="308.5" cy="124" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="275.5" cy="140" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="282.5" cy="167" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="298.5" cy="174.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="277" cy="156.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="322" cy="155.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="296" cy="128.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="308" cy="168" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="311" cy="134" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="316" cy="143" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="283.5" cy="148" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="290" cy="136.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="294.5" cy="163.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="309" cy="158" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="301" cy="141.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="293" cy="154.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="305.5" cy="150" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
   <foreignObject x="271" y="221.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">${}^{236}\text{U}$</div></foreignObject>
-  <line x1="388" y1="40" x2="388" y2="280" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <circle cx="443.5" cy="83.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="483.5" cy="115.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="476" cy="66" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="448.5" cy="107" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="495.5" cy="95.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="454" cy="73" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="469" cy="116.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="487" cy="75.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="447" cy="93" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="487" cy="106.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="467" cy="70.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="458" cy="109" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="490" cy="87.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="453" cy="82" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="475.5" cy="110" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="477.5" cy="76" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="454.5" cy="98.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="485" cy="97.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="463" cy="78.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="466.5" cy="105.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="481" cy="85" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="458.5" cy="90" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="476.5" cy="100" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="471" cy="83.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="465" cy="96.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="474" cy="92" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="487" cy="197.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="447" cy="215" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="487" cy="228.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="467" cy="192.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="458" cy="231" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="490" cy="209.5" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="453" cy="204" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="475.5" cy="232" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="477.5" cy="198" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="454.5" cy="220.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="485" cy="219.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="463" cy="200.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="466.5" cy="227.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="481" cy="207" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="458.5" cy="212" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="476.5" cy="222" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="471" cy="205.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="465" cy="218.5" r="5.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="474" cy="214" r="5.4" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
   <foreignObject x="520" y="77.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">${}^{141}\text{Ba}$</div></foreignObject>
   <foreignObject x="512" y="199.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">${}^{92}\text{Kr}$</div></foreignObject>
-  <path d="M475,54 L475,38 L481,38 L470,22 L459,38 L465,38 L465,54 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <path d="M465,252 L465,274 L459,274 L470,290 L481,274 L475,274 L475,252 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <circle cx="420" cy="150" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="560" cy="140" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="556" cy="170" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <line x1="410" y1="150" x2="407" y2="150" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M398,150 L408,145.5 L408,154.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="568" y1="140" x2="575.5" y2="138" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M584,136 L575.5,143 L573,134 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="564" y1="174" x2="572" y2="178" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M580,182 L569,181.5 L573,173.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="119.5" y="297.5" width="361" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\text{fissiossa vapautuu noin}\ 200\,\text{MeV}$</div></foreignObject>
 </svg>
 
@@ -349,45 +104,12 @@ $$
 missä $N_g$ on neutronien määrä sukupolvessa $g$ ja $k$ kasvukerroin. Kun $k < 1$, ketju sammuu. Kun $k = 1$, ketju on **kriittinen** ja fissioita tapahtuu tasaisesti. Kun $k > 1$, fissioiden määrä kasvaa eksponentiaalisesti.
 
 <svg data-fig="ketju" viewBox="0 0 600 360" role="img" aria-label="Kaavakuva kolmesta ketjureaktiosta, kolme sukupolvea ylhäältä alas. Vasemmalla kasvukerroin k on 0,5: neutroneja on sukupolvissa 4, 2 ja 1, joten ketju sammuu. Keskellä k on 1: neutroneja on joka sukupolvessa 2, joten ketju pysyy tasaisena. Oikealla k on 2: neutroneja on 1, 2 ja 4, joten ketju kasvaa. Neutronit ovat harmaita pisteitä." style="max-width:100%;font-size:24px">
+  <image href="pics/fy8/fy8-11-ketju.webp" x="23.3" y="1.2" width="588.2" height="361.5" preserveAspectRatio="none"/>
   <foreignObject x="115" y="13.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$k = 0{,}5$</div></foreignObject>
-  <circle cx="105" cy="92" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="135" cy="92" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="165" cy="92" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="195" cy="92" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <line x1="150" y1="118" x2="150" y2="141" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M150,150 L145.5,140 L154.5,140 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <circle cx="135" cy="180" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="165" cy="180" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <line x1="150" y1="206" x2="150" y2="229" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M150,238 L145.5,228 L154.5,228 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <circle cx="150" cy="268" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="108.5" y="315.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{sammuu}$</div></foreignObject>
-  <line x1="240" y1="20" x2="240" y2="340" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <foreignObject x="307.5" y="13.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$k = 1$</div></foreignObject>
-  <circle cx="315" cy="92" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="345" cy="92" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <line x1="330" y1="118" x2="330" y2="141" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M330,150 L325.5,140 L334.5,140 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <circle cx="315" cy="180" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="345" cy="180" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <line x1="330" y1="206" x2="330" y2="229" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M330,238 L325.5,228 L334.5,228 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <circle cx="315" cy="268" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="345" cy="268" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="276" y="315.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$\text{tasainen}$</div></foreignObject>
-  <line x1="420" y1="20" x2="420" y2="340" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <foreignObject x="487.5" y="13.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$k = 2$</div></foreignObject>
-  <circle cx="510" cy="92" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <line x1="510" y1="118" x2="510" y2="141" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M510,150 L505.5,140 L514.5,140 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <circle cx="495" cy="180" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="525" cy="180" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <line x1="510" y1="206" x2="510" y2="229" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M510,238 L505.5,228 L514.5,228 Z" fill="#6b7480" stroke-linejoin="round"/>
-  <circle cx="465" cy="268" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="495" cy="268" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="525" cy="268" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="555" cy="268" r="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="468.5" y="315.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\text{kasvaa}$</div></foreignObject>
   <foreignObject x="16" y="77.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$g = 0$</div></foreignObject>
   <foreignObject x="16" y="165.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$g = 1$</div></foreignObject>
@@ -406,35 +128,13 @@ $N_2 = 1000 \cdot 0{,}8^2 = 640$. Neutroneja on joka sukupolvessa vähemmän, jo
 Reaktoria pystytään säätämään, koska pieni osa neutroneista, uraani-235:llä noin $0{,}65\,\%$, vapautuu vasta sekuntien kuluttua fissiotuotteiden hajoamisesta. Nämä viivästyneet neutronit hidastavat ketjun muutoksia niin paljon, että säätösauvat ehtivät reagoida. Ydinvoimalassa reaktorin lämpö tuottaa höyryä, joka pyörittää turbiinia ja generaattoria kuten muissakin lämpövoimaloissa.
 
 <svg data-fig="reaktori" viewBox="0 0 600 380" role="img" aria-label="Periaatekuva painevesireaktorilla toimivasta ydinvoimalasta, ei mittakaavassa. Vasemmalla reaktorin paineastia: vedessä on polttoainesauvoja ja niiden välissä ylhäältä laskettavia säätösauvoja. Kuuma vesi kiertää höyrystimeen, jossa toisen piirin vesi kiehuu höyryksi. Höyry pyörittää turbiinia, joka pyörittää generaattoria. Turbiinista tuleva höyry tiivistyy lauhduttimessa vedeksi, jota jäähdyttää merivesi." style="max-width:100%;font-size:24px">
-  <rect x="40" y="90" width="120" height="210" rx="30" fill="#a9d1f0" stroke="#1f2933" stroke-width="3"/>
-  <rect x="62" y="150" width="12" height="120" rx="3" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="88" y="150" width="12" height="120" rx="3" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="114" y="150" width="12" height="120" rx="3" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="140" y="150" width="12" height="120" rx="3" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="79" y="64" width="6" height="136" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="105" y="64" width="6" height="136" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="131" y="64" width="6" height="136" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="1.5"/>
+  <image href="pics/fy8/fy8-11-reaktori.webp" x="0" y="-2.5" width="600" height="386.2" preserveAspectRatio="none"/>
   <foreignObject x="46" y="315.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{reaktori}$</div></foreignObject>
   <foreignObject x="27.5" y="25.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{säätösauvat}$</div></foreignObject>
-  <line x1="160" y1="140" x2="211" y2="140" stroke="#c92a2a" stroke-width="6" stroke-linecap="butt"/>
-  <path d="M228,140 L210,148 L210,132 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <line x1="230" y1="250" x2="179" y2="250" stroke="#1971c2" stroke-width="6" stroke-linecap="butt"/>
-  <path d="M162,250 L180,242 L180,258 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <rect x="230" y="110" width="70" height="170" rx="24" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
-  <path d="M246,150 Q265,190 246,230 M284,150 Q265,190 284,230" fill="none" stroke="#c92a2a" stroke-width="3" stroke-linejoin="round"/>
   <foreignObject x="205" y="315.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{höyrystin}$</div></foreignObject>
-  <path d="M300,130 L360,130 L360,170" fill="none" stroke="#6b7480" stroke-width="6" stroke-linejoin="round"/>
-  <path d="M360,170 L430,150 L430,230 L360,210 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
   <foreignObject x="442" y="113.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{turbiini}$</div></foreignObject>
-  <line x1="430" y1="190" x2="468" y2="190" stroke="#1f2933" stroke-width="5" stroke-linecap="butt"/>
-  <circle cx="500" cy="190" r="32" fill="#b8622d" stroke="#1f2933" stroke-width="3"/>
   <foreignObject x="421" y="235.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{generaattori}$</div></foreignObject>
-  <path d="M395,226 L395,280" fill="none" stroke="#6b7480" stroke-width="6" stroke-linejoin="round"/>
-  <rect x="350" y="280" width="90" height="50" rx="8" fill="#d0e6fb" stroke="#1f2933" stroke-width="3"/>
-  <line x1="440" y1="300" x2="545" y2="300" stroke="#1971c2" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M560,300 L544,307 L544,293 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="452" y="321.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{merivesi}$</div></foreignObject>
-  <path d="M350,305 L300,305 L300,262" fill="none" stroke="#1971c2" stroke-width="5" stroke-linejoin="round"/>
 </svg>
 
 ### Fuusio
@@ -445,29 +145,12 @@ $$
 Ytimet ovat positiivisesti varattuja ja hylkivät toisiaan, joten ne pääsevät vahvan vuorovaikutuksen ulottuville vain törmätessään hyvin suurella nopeudella. Siksi polttoaine on kuumennettava plasmaksi, jonka lämpötila on noin $1{,}5 \cdot 10^{8}\,\text{K}$. Auringon ytimessä vety fuusioituu heliumiksi noin $1{,}5 \cdot 10^{7}\,\text{K}$:n lämpötilassa, koska valtava tiheys ja tunneloituminen (luku *Laser ja kvanttirakenteet*) auttavat ytimiä yhtymään.
 
 <svg data-fig="fuusio" viewBox="0 0 600 320" role="img" aria-label="Kaavakuva, ei mittakaavassa: deuteriumin ja tritiumin fuusio. Vasemmalla deuteriumydin, jossa on yksi protoni ja yksi neutroni, ja tritiumydin, jossa on yksi protoni ja kaksi neutronia, lähestyvät toisiaan suurella nopeudella, vaikka niiden positiiviset varaukset hylkivät toisiaan. Oikealla niistä on syntynyt helium-4-ydin ja vapaa neutroni, ja vapautuu energiaa 17{,}6 megaelektronivolttia." style="max-width:100%;font-size:24px">
-  <circle cx="59" cy="160" r="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="78.5" cy="150" r="12" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
+  <image href="pics/fy8/fy8-11-fuusio.webp" x="2.5" y="0" width="597" height="328.4" preserveAspectRatio="none"/>
   <foreignObject x="53.5" y="201.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">${}^{2}\text{H}$</div></foreignObject>
-  <circle cx="231.5" cy="130.5" r="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="219" cy="160" r="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="238.5" cy="150" r="12" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
   <foreignObject x="213.5" y="201.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">${}^{3}\text{H}$</div></foreignObject>
-  <line x1="104" y1="150" x2="138" y2="150" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M150,150 L137,156 L137,144 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <line x1="196" y1="150" x2="172" y2="150" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M160,150 L173,144 L173,156 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="96" y="71.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{hylkivät}$</div></foreignObject>
-  <line x1="300" y1="40" x2="300" y2="270" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <circle cx="414" cy="168" r="12" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="401.5" cy="130.5" r="12" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="389" cy="160" r="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="408.5" cy="150" r="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
   <foreignObject x="377.5" y="201.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">${}^{4}\text{He}$</div></foreignObject>
-  <circle cx="540" cy="112" r="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="530" y="63.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$n$</div></foreignObject>
-  <line x1="446" y1="138" x2="511.5" y2="119" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M522,116 L512,124.5 L509,114 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M437,195 L499.5,231 L496,237.5 L520,236 L509,215 L505.5,221 L443,185 Z" fill="#ffc078" stroke-linejoin="round"/>
   <foreignObject x="233.5" y="281.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$Q = 17{,}6\,\text{MeV}$</div></foreignObject>
 </svg>
 
@@ -494,66 +177,7 @@ $$.
 Kuvassa ovat uraani-235:n fission massat ennen reaktiota ja sen jälkeen. Massa pienenee vain noin $0{,}08\,\%$, mutta se vastaa noin $173\,\text{MeV}$:n energiaa. Kun mukaan lasketaan fissiotuotteiden myöhemmät hajoamiset, yhdestä fissiosta vapautuu keskimäärin noin $200\,\text{MeV}$.
 
 <svg data-fig="massat" viewBox="0 0 600 360" role="img" aria-label="Periaatekuva, ei mittakaavassa: vaaka, jonka vasemmassa kupissa on uraani-235-ydin ja neutroni, yhteensä 236{,}0526 atomimassayksikköä, ja oikeassa kupissa reaktion tuotteet barium-141, krypton-92 ja kolme neutronia, yhteensä 235{,}8666 atomimassayksikköä. Vasen puoli on raskaampi. Massojen erotus 0{,}1860 atomimassayksikköä vapautuu energiana Q, noin 173 megaelektronivolttia." style="max-width:100%;font-size:24px">
-  <path d="M300,90 L280,300 L320,300 Z" fill="#8a96a3" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <rect x="240" y="300" width="120" height="14" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="110" y1="112" x2="490" y2="76" stroke="#1f2933" stroke-width="5" stroke-linecap="round"/>
-  <circle cx="300" cy="94" r="8" fill="#1f2933"/>
-  <line x1="110" y1="112" x2="50" y2="202" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="110" y1="112" x2="170" y2="202" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M30,202 Q110,242 190,202 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <line x1="490" y1="76" x2="430" y2="166" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="490" y1="76" x2="550" y2="166" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M410,166 Q490,206 570,166 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <circle cx="113.5" cy="181" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="78.5" cy="161.5" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="91" cy="198.5" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="106.5" cy="164" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="72.5" cy="179" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="106.5" cy="190.5" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="89.5" cy="159.5" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="81.5" cy="192.5" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="109" cy="174.5" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="77.5" cy="169.5" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="97" cy="193" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="98.5" cy="164" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="78.5" cy="183.5" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="105" cy="182.5" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="86" cy="166.5" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="89" cy="189.5" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="101.5" cy="172" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="82" cy="176.5" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="97.5" cy="185" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="92.5" cy="170.5" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="88" cy="182" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="95.5" cy="178" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="150" cy="190" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="469" cy="142.5" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="437.5" cy="137.5" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="457" cy="161" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="458.5" cy="132" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="438.5" cy="151.5" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="465" cy="150.5" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="446" cy="134.5" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="449" cy="157.5" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="461.5" cy="140" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="442" cy="144.5" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="457.5" cy="153" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="452.5" cy="138.5" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="448" cy="150" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="455.5" cy="146" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="484.5" cy="155.5" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="511" cy="154.5" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="492" cy="138.5" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="495" cy="161.5" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="507.5" cy="144" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="488" cy="148.5" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="503.5" cy="157" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="498.5" cy="142.5" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="494" cy="154" r="4.6" fill="#c92a2a" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="501.5" cy="150" r="4.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.2"/>
-  <circle cx="528" cy="134" r="6" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="544" cy="146" r="6" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="528" cy="158" r="6" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <image href="pics/fy8/fy8-11-massat.webp" x="0" y="-1.2" width="600" height="367.5" preserveAspectRatio="none"/>
   <foreignObject x="43.5" y="249.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$236{,}0526\,\text{u}$</div></foreignObject>
   <foreignObject x="423.5" y="213.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$235{,}8666\,\text{u}$</div></foreignObject>
   <foreignObject x="75" y="15.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{ennen}$</div></foreignObject>
@@ -595,41 +219,15 @@ Reaktorista poistettu polttoaine sisältää radioaktiivisia fissiotuotteita sek
 Posiva rakentaa Olkiluotoon Onkaloa, maailman ensimmäistä käytetyn ydinpolttoaineen loppusijoituslaitosta. Polttoaine suljetaan kuparikapseleihin, jotka sijoitetaan noin $430\,\text{m}$:n syvyyteen peruskallioon ja ympäröidään vettä imevällä bentoniittisavella. Kupari kestää syöpymistä hapettomassa pohjavedessä, ja savi hidastaa veden liikkeitä kapselin ympärillä. Posiva haki käyttölupaa vuonna 2021. Säteilyturvakeskus STUK antoi hakemuksesta puoltavan lausunnon elokuussa 2026, ja valtioneuvosto myönsi käyttöluvan 22. lokakuuta 2026 vuoden 2070 loppuun. Käyttölupa ei vielä tarkoita, että loppusijoitus olisi alkanut: varsinainen loppusijoitus voi alkaa vasta, kun STUK on tarkastanut laitoksen ja todennut sen käyttövalmiiksi.
 
 <svg data-fig="onkalo" viewBox="0 0 600 380" role="img" aria-label="Periaatekuva Olkiluodon loppusijoituslaitoksesta Onkalosta, syvyysasteikko mittakaavassa, kapseli suurennettuna. Vasemmalla maanpinta ja sen alla kallioperä, jonka läpi kulkee ajotunneli noin 430 metrin syvyyteen. Syvällä kalliossa on vaakasuora loppusijoitustunneli, jonka lattiaan poratuissa reiissä on kapselit. Oikealla suurennos: käytetty polttoaine on valurautaisen sisäosan sisällä, sen ympärillä kuparikapseli ja kapselin ympärillä bentoniittisavi kallioreiässä." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy811-rock" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3dccb"/><stop offset="1" stop-color="#c9c2b2"/></linearGradient></defs>
-  <rect x="100" y="40" width="220" height="310" rx="6" fill="url(#fy811-rock)" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="100" y="40" width="220" height="18" fill="#b2f2bb" stroke="#1f2933" stroke-width="2"/>
-  <rect x="130" y="22" width="46" height="18" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <path d="M152,58 L182,139 L144,220 L196,290" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
-  <line x1="196" y1="290" x2="308" y2="290" stroke="#1f2933" stroke-width="8" stroke-linecap="butt"/>
-  <rect x="215" y="294" width="14" height="26" rx="3" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="249" y="294" width="14" height="26" rx="3" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="283" y="294" width="14" height="26" rx="3" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <line x1="100" y1="58" x2="92" y2="58" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="100" y1="112" x2="92" y2="112" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="100" y1="166" x2="92" y2="166" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="100" y1="220" x2="92" y2="220" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="100" y1="274" x2="92" y2="274" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="100" y1="328" x2="92" y2="328" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <image href="pics/fy8/fy8-11-onkalo.webp" x="0" y="0" width="600" height="390" preserveAspectRatio="none"/>
   <foreignObject x="66" y="43.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$0$</div></foreignObject>
   <foreignObject x="16" y="313.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$500\,\text{m}$</div></foreignObject>
   <foreignObject x="188" y="245.5" width="124" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{noin}\ 430\,\text{m}$</div></foreignObject>
-  <line x1="310" y1="308" x2="340" y2="120" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 5"/>
-  <line x1="310" y1="308" x2="340" y2="320" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 5"/>
-  <rect x="340" y="80" width="80" height="260" rx="8" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="356" y="100" width="48" height="220" rx="10" fill="#b8622d" stroke="#1f2933" stroke-width="3"/>
-  <rect x="366" y="112" width="28" height="196" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="370" y="122" width="4" height="176" rx="2" fill="#ffc078"/>
-  <rect x="378" y="122" width="4" height="176" rx="2" fill="#ffc078"/>
-  <rect x="386" y="122" width="4" height="176" rx="2" fill="#ffc078"/>
   <foreignObject x="332.5" y="41.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{kapseli}$</div></foreignObject>
   <foreignObject x="440" y="85.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{bentoniitti}$</div></foreignObject>
-  <line x1="420" y1="100" x2="436" y2="100" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="440" y="155.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kupari}$</div></foreignObject>
-  <line x1="404" y1="170" x2="436" y2="170" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="440" y="225.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{valurauta}$</div></foreignObject>
-  <line x1="394" y1="240" x2="436" y2="240" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="440" y="285.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{polttoaine}$</div></foreignObject>
-  <line x1="382" y1="290" x2="436" y2="300" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
 <figure class="unit-photo"><img src="pics/fy8/onkalo-repository.webp" alt="Valaistu kalliotunneli: karkeat harmaat kallioseinät, märkä soralattia ja kaukana kaartuvassa tunnelissa lamppuja."><figcaption>Tunneli Onkalossa Olkiluodon peruskalliossa. Käytetty polttoaine sijoitetaan kuparikapseleissa noin $430\,\text{m}$:n syvyyteen, jossa kallio eristää sen ympäristöstä pitkäksi aikaa.</figcaption></figure>

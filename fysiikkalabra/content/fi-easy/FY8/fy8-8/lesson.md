@@ -3,46 +3,7 @@
 > **Miksi** savuilmaisimen pienestä americiumnäytteestä lähtee koko ajan hiukkasia, ja mitä americiumytimelle tapahtuu, kun hiukkanen lähtee?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: olohuoneen katossa on valkoinen pyöreä savuilmaisin. Osa siitä on piirretty auki. Sisällä kahden metallilevyn välisessä kammiossa on pieni americiumnäyte. Näytteestä lähtee ilmaan lyhyitä violetteja hiukkasratoja. Huoneessa on ikkuna ja kattovalaisin." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy88h-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6f1e6"/><stop offset="1" stop-color="#f1dfb5"/></linearGradient><linearGradient id="fy88h-win" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient><linearGradient id="fy88h-floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#a97a35"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#fy88h-wall)"/>
-  <rect x="0" y="0" width="1200" height="92" fill="#e3dccb"/>
-  <line x1="0" y1="92" x2="1200" y2="92" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="860" y="200" width="250" height="250" rx="4" fill="url(#fy88h-win)" stroke="#1f2933" stroke-width="3"/>
-  <path d="M915,315 Q914,298 934,300 Q942,282 962,288 Q980,278 990,297 Q1008,299 1006,315 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <line x1="985" y1="200" x2="985" y2="450" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="860" y1="325" x2="1110" y2="325" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="848" y="450" width="274" height="14" rx="3" fill="#c9c2b2" stroke="#1f2933" stroke-width="3"/>
-  <rect x="0" y="540" width="1200" height="60" fill="url(#fy88h-floor)"/>
-  <line x1="200" y1="92" x2="200" y2="190" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M150,250 Q200,170 250,250 Z" fill="#ffc078" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <ellipse cx="200" cy="262" rx="70" ry="22" fill="#ffc078" fill-opacity="0.45"/>
-  <ellipse cx="560" cy="96" rx="190" ry="20" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <path d="M370,96 L380,176 Q560,236 740,176 L750,96 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="414" y="140" width="12" height="40" rx="4" fill="#e3dccb" stroke="#1f2933" stroke-width="2"/>
-  <rect x="464" y="140" width="12" height="40" rx="4" fill="#e3dccb" stroke="#1f2933" stroke-width="2"/>
-  <rect x="644" y="140" width="12" height="40" rx="4" fill="#e3dccb" stroke="#1f2933" stroke-width="2"/>
-  <rect x="694" y="140" width="12" height="40" rx="4" fill="#e3dccb" stroke="#1f2933" stroke-width="2"/>
-  <path d="M500,110 L620,110 L640,240 L480,240 Z" fill="#eef5f9" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="500" y="120" width="120" height="10" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="488" y="222" width="144" height="10" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="546" y="208" width="28" height="14" rx="3" fill="#e8590c" stroke="#1f2933" stroke-width="2"/>
-  <line x1="560" y1="208" x2="505.5" y2="176.5" stroke="#7048e8" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="505.5" cy="176.5" r="5" fill="#7048e8" stroke="#ffffff" stroke-width="1.5"/>
-  <line x1="560" y1="208" x2="522.5" y2="154.5" stroke="#7048e8" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="522.5" cy="154.5" r="5" fill="#7048e8" stroke="#ffffff" stroke-width="1.5"/>
-  <line x1="560" y1="208" x2="549" y2="145.5" stroke="#7048e8" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="549" cy="145.5" r="5" fill="#7048e8" stroke="#ffffff" stroke-width="1.5"/>
-  <line x1="560" y1="208" x2="579" y2="136.5" stroke="#7048e8" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="579" cy="136.5" r="5" fill="#7048e8" stroke="#ffffff" stroke-width="1.5"/>
-  <line x1="560" y1="208" x2="604.5" y2="155" stroke="#7048e8" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="604.5" cy="155" r="5" fill="#7048e8" stroke="#ffffff" stroke-width="1.5"/>
-  <line x1="560" y1="208" x2="624.5" y2="171" stroke="#7048e8" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="624.5" cy="171" r="5" fill="#7048e8" stroke="#ffffff" stroke-width="1.5"/>
-  <circle cx="714" cy="156" r="9" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
-  <rect x="330" y="430" width="460" height="110" rx="18" fill="#1971c2" stroke="#1f2933" stroke-width="3"/>
-  <rect x="300" y="400" width="70" height="140" rx="18" fill="#1971c2" stroke="#1f2933" stroke-width="3"/>
-  <rect x="750" y="400" width="70" height="140" rx="18" fill="#1971c2" stroke="#1f2933" stroke-width="3"/>
-  <rect x="370" y="380" width="380" height="80" rx="16" fill="#2f74b5" stroke="#1f2933" stroke-width="3"/>
+  <image href="pics/fy8/fy8-8-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Ydinajatus
@@ -53,40 +14,12 @@ Atomin massasta melkein kaikki on atomin keskellä olevassa ytimessä. Ytimen ha
 Ydintä kuvataan kahdella luvulla. **Järjestysluku** $Z$ on protonien määrä, ja se määrää alkuaineen. **Massaluku** $A$ on nukleonien määrä. Neutroniluku on siis $N = A - Z$. Ydin merkitään ${}^{A}_{Z}\text{X}$, missä X on alkuaineen tunnus. Saman alkuaineen ytimiä, joissa on eri määrä neutroneja, sanotaan alkuaineen **isotoopeiksi**. Hiili-12 ${}^{12}_{6}\text{C}$ ja hiili-14 ${}^{14}_{6}\text{C}$ ovat hiilen isotooppeja. Tietyn ydinlajin nimi on nuklidi.
 
 <svg data-fig="isotopes" viewBox="0 0 600 340" role="img" aria-label="Kaksi hiilen ydintä vierekkäin, ei mittakaavassa. Vasemmalla on hiili-12: kuusi punaista protonia ja kuusi harmaata neutronia. Merkinnässä luku 12 on yläindeksinä ja luku 6 alaindeksinä C:n edessä. Oikealla on hiili-14: kuusi protonia ja kahdeksan neutronia. Molemmissa on kuusi protonia, joten ne ovat saman alkuaineen isotooppeja. Alhaalla on selite: punainen pallo on protoni ja harmaa pallo on neutroni." style="max-width:100%;font-size:24px">
-  <circle cx="165.5" cy="169.5" r="15" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="171" cy="75" r="15" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="106.5" cy="138" r="15" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="192" cy="135.5" r="15" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="130.5" cy="83" r="15" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="140" cy="157.5" r="15" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="180.5" cy="100.5" r="15" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="118" cy="114.5" r="15" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="167.5" cy="142.5" r="15" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="152" cy="96" r="15" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="136" cy="132.5" r="15" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="161" cy="120" r="15" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
+  <image href="pics/fy8/fy8-8-isotopes.webp" x="0" y="0" width="600" height="352.5" preserveAspectRatio="none"/>
   <foreignObject x="99" y="204" width="102" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">${}^{12}_{\phantom{1}6}\text{C}$</div></foreignObject>
   <foreignObject x="100.5" y="247.5" width="99" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Z = 6,\ N = 6$</div></foreignObject>
-  <circle cx="505" cy="108" r="15" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="403" cy="93" r="15" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="465.5" cy="169.5" r="15" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="471" cy="75" r="15" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="406.5" cy="138" r="15" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="492" cy="135.5" r="15" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="430.5" cy="83" r="15" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="440" cy="157.5" r="15" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="480.5" cy="100.5" r="15" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="418" cy="114.5" r="15" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="467.5" cy="142.5" r="15" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="452" cy="96" r="15" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="436" cy="132.5" r="15" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="461" cy="120" r="15" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="399" y="204" width="102" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px">${}^{14}_{\phantom{1}6}\text{C}$</div></foreignObject>
   <foreignObject x="400.5" y="247.5" width="99" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Z = 6,\ N = 8$</div></foreignObject>
-  <line x1="300" y1="24" x2="300" y2="280" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <circle cx="170" cy="312" r="11" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="190" y="297.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{protoni } p^+$</div></foreignObject>
-  <circle cx="380" cy="312" r="11" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="400" y="297.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{neutroni } n$</div></foreignObject>
 </svg>
 
@@ -179,90 +112,16 @@ Tässä X on emoydin, Y on tytärydin ja $Z$ on järjestysluku. Esimerkki on ${}
 **Gammahajoamisessa** ydin on viritystilassa eli sillä on ylimääräistä energiaa. Viritystilassa oleva ydin merkitään tähdellä: ${}^{A}_{Z}\text{X}^{\ast}$. Ydin siirtyy alemmalle energiatasolle ja lähettää gammafotonin. Ydin pysyy samana nuklidina. Viritystila syntyy usein edellisessä alfa- tai beetahajoamisessa. Siksi gammasäteily tulee niiden jälkeen.
 
 <svg data-fig="decays" viewBox="0 0 600 360" role="img" aria-label="Kolme hajoamislajia vierekkäin, kaavakuva, ei mittakaavassa. Vasemmalla on alfahajoaminen. Ytimestä lähtee alfahiukkanen eli heliumydin, jossa on kaksi protonia ja kaksi neutronia. Ytimen järjestysluku pienenee kahdella ja massaluku neljällä. Keskellä on beeta miinus -hajoaminen. Ytimen neutroni muuttuu protoniksi, ja ytimestä lähtee elektroni ja antineutriino. Järjestysluku kasvaa yhdellä ja massaluku pysyy samana. Oikealla on gammahajoaminen. Viritystilassa oleva ydin lähettää gammafotonin. Järjestysluku ja massaluku pysyvät samoina." style="max-width:100%;font-size:24px">
-  <line x1="200" y1="14" x2="200" y2="346" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <line x1="400" y1="14" x2="400" y2="346" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <circle cx="62.5" cy="186" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="89" cy="125" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="30" cy="151.5" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="89.5" cy="171.5" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="60" cy="118" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="46" cy="175.5" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="93.5" cy="143.5" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="39" cy="135.5" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="72.5" cy="176.5" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="75" cy="126" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="41" cy="159.5" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="86.5" cy="158" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="53.5" cy="130" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="58.5" cy="170" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="80" cy="139.5" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="47" cy="147" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="73.5" cy="162" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="65" cy="137" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="56.5" cy="157" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="70" cy="150" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
+  <image href="pics/fy8/fy8-8-decays.webp" x="0" y="0" width="600" height="367.5" preserveAspectRatio="none"/>
   <foreignObject x="88" y="18" width="24" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#7048e8">$\alpha$</div></foreignObject>
   <foreignObject x="50.5" y="285.5" width="99" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Z - 2,\ A - 4$</div></foreignObject>
-  <circle cx="262.5" cy="186" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="289" cy="125" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="230" cy="151.5" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="289.5" cy="171.5" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="260" cy="118" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="246" cy="175.5" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="293.5" cy="143.5" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="239" cy="135.5" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="272.5" cy="176.5" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="275" cy="126" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="241" cy="159.5" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="286.5" cy="158" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="253.5" cy="130" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="258.5" cy="170" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="280" cy="139.5" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="247" cy="147" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="273.5" cy="162" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="265" cy="137" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="256.5" cy="157" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="270" cy="150" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="280.5" y="18" width="39" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#1971c2">$\beta^-$</div></foreignObject>
   <foreignObject x="236" y="285.5" width="128" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Z + 1,\ A\ \text{sama}$</div></foreignObject>
-  <circle cx="462.5" cy="186" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="489" cy="125" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="430" cy="151.5" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="489.5" cy="171.5" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="460" cy="118" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="446" cy="175.5" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="493.5" cy="143.5" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="439" cy="135.5" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="472.5" cy="176.5" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="475" cy="126" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="441" cy="159.5" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="486.5" cy="158" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="453.5" cy="130" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="458.5" cy="170" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="480" cy="139.5" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="447" cy="147" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="473.5" cy="162" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="465" cy="137" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="456.5" cy="157" r="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="470" cy="150" r="8" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="488" y="18" width="24" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:30px;color:#e8590c">$\gamma$</div></foreignObject>
   <foreignObject x="444" y="285.5" width="112" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$Z, A\ \text{samat}$</div></foreignObject>
-  <circle cx="150" cy="100" r="7" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="164" cy="100" r="7" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="150" cy="114" r="7" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="164" cy="114" r="7" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <line x1="112" y1="128" x2="130.5" y2="117.5" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M140,112 L132.5,122.5 L127,113.5 Z" fill="#7048e8" stroke-linejoin="round"/>
   <foreignObject x="131" y="145.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">${}^4_2\text{He}$</div></foreignObject>
-  <line x1="312" y1="130" x2="343" y2="106.5" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M352,100 L345.5,111.5 L339,103 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <circle cx="362" cy="92" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="355.5" y="51.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$e^-$</div></foreignObject>
-  <line x1="312" y1="168" x2="346" y2="196" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="5 4"/>
-  <circle cx="354" cy="202" r="5" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="349.5" y="215.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\bar{\nu}$</div></foreignObject>
-  <path d="M512,140 L512.5,140 L513,140 L514,140 L514.5,140 L515.5,140.5 L516.5,141 L517.5,141.5 L518.5,141.5 L519,142 L520,142.5 L520.5,142 L521,141.5 L521.5,141 L521.5,140.5 L522,139.5 L522,138.5 L522,137.5 L522.5,136.5 L522.5,135.5 L522.5,134.5 L522.5,133.5 L522.5,132 L522.5,131 L523,130 L523,129 L523,128.5 L523.5,127.5 L524,127 L524.5,126.5 L525,126.5 L525.5,126 L526,126 L526.5,126 L527.5,126 L528,126.5 L529,127 L530,127 L531,127.5 L532,128 L533,128.5 L534,129.5 L535,130 L535.5,130.5 L536.5,130.5 L537.5,131 L538.5,131.5 L539,131.5 L539.5,131.5 L540.5,131.5 L541,131 L541.5,131 L542,130.5 L542,130 L542.5,129 L542.5,128 L543,127.5 L543,126.5 L543,125.5 L543,124 L543.5,123 L543.5,122 L543.5,121 L543.5,120 L543.5,119 L544,118 L544,117 L544.5,116.5 L544.5,116 L545,115.5 L545.5,115 L546,115 L547,114.5 L547.5,114.5 L548.5,115 L549,115 L550,115.5 L551,116 L552,116.5 L552.5,117 L553.5,117.5 L554.5,118 L555.5,118.5 L556.5,119 L557.5,119.5 L558.5,120 L559,120 L560,120 L560.5,120 L561,120 L562,120 L562.5,119.5 L562.5,119 L563,118.5 L563.5,118 L563.5,117 L563.5,116 L564,115 L564,114 L564,113 L564,112 L564,110.5 L564.5,109.5 L564.5,108.5 L564.5,107.5 L564.5,106.5 L565,106 L565,105 L565.5,104.5 L566,104 L566.5,104 L567.5,104 L568,104.5 L569,105 L570,105.5 L571,105.5 L572,106 L572.5,106.5 L573.5,106.5 L574,106.5 L574.5,106" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M586,100 L577.5,112 L571.5,100.5 Z" fill="#e8590c" stroke-linejoin="round"/>
   <foreignObject x="550" y="145.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\gamma$</div></foreignObject>
   <foreignObject x="391" y="225.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{viritystila } {}^{\ast}$</div></foreignObject>
 </svg>
@@ -273,22 +132,13 @@ Ytimen energia on kvantittunut, aivan kuten atomin elektronien energia. Se tarko
 Esimerkiksi koboltti-60 hajoaa beeta miinus -hajoamisella nikkeli-60:n viritystilaan. Sen energia on $2505{,}8\,\text{keV}$ perustilan yläpuolella. Ydin palaa perustilaan välitason $1332{,}5\,\text{keV}$ kautta. Gammaspektrissä näkyy kaksi viivaa: $1173{,}2\,\text{keV}$ ja $1332{,}5\,\text{keV}$ (NNDC:n NuDat 3 -tietokanta, ENSDF-arvot). Fotonienergioiden summa jää tasosta noin $0{,}1\,\text{keV}$. Suurin osa erosta on pyöristystä. Rekyyli eli ytimen saama pieni liike-energia fotonin lähtiessä on vain noin $0{,}03\,\text{keV}$. Myös alfahiukkasilla on vain tietyt energiat. Beetahiukkasten energiat sen sijaan jakautuvat jatkuvasti, koska hajoamisenergia jakautuu elektronin ja antineutriinon kesken.
 
 <svg data-fig="levels" viewBox="0 0 600 380" role="img" aria-label="Energiatasokaavio, energiat mittakaavassa: koboltti-60 hajoaa beeta miinus -hajoamisella nikkeli-60:n viritystilaan. Sen energia on 2505,8 keV perustilan yläpuolella. Ydin palaa perustilaan kahdessa vaiheessa. Ensin se siirtyy tasolle 1332,5 keV, ja silloin lähtee gammafotoni 1173,2 keV. Sitten se siirtyy perustilaan, ja silloin lähtee gammafotoni 1332,5 keV. Tiedot ovat NNDC:n NuDat-tietokannasta." style="max-width:100%;font-size:24px">
-  <line x1="40" y1="39" x2="190" y2="39" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <image href="pics/fy8/fy8-8-levels.webp" x="3.7" y="1.2" width="594.1" height="386.1" preserveAspectRatio="none"/>
   <foreignObject x="58.5" y="50.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">${}^{60}_{27}\text{Co}$</div></foreignObject>
-  <line x1="160" y1="42" x2="250.5" y2="67" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M262,70.5 L248,72.5 L251,61.5 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="170" y="77.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\beta^-$</div></foreignObject>
-  <line x1="250" y1="73.5" x2="430" y2="73.5" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="250" y1="200" x2="430" y2="200" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="250" y1="344" x2="430" y2="344" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <foreignObject x="440" y="59" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$2505{,}8\,\text{keV}$</div></foreignObject>
   <foreignObject x="440" y="185.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1332{,}5\,\text{keV}$</div></foreignObject>
   <foreignObject x="440" y="329.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$0$</div></foreignObject>
   <foreignObject x="153" y="329.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">${}^{60}_{28}\text{Ni}$</div></foreignObject>
-  <path d="M300,76.5 L300,77.5 L299.5,78 L298.5,79 L297.5,80 L296,81 L295,82 L294,82.5 L294,83.5 L294.5,84.5 L295,85.5 L295.5,86 L296.5,87 L297.5,88 L299,89 L300,90 L301,90.5 L302.5,91.5 L303.5,92.5 L304.5,93.5 L305,94.5 L305.5,95 L306,96 L306,97 L305.5,98 L305,99 L304.5,99.5 L303.5,100.5 L302.5,101.5 L301,102.5 L300,103.5 L299,104 L297.5,105 L296.5,106 L295.5,107 L295,108 L294.5,108.5 L294,109.5 L294,110.5 L294.5,111.5 L295,112.5 L295.5,113 L296.5,114 L297.5,115 L299,116 L300,117 L301,117.5 L302.5,118.5 L303.5,119.5 L304.5,120.5 L305,121.5 L305.5,122 L306,123 L306,124 L305.5,125 L305,125.5 L304.5,126.5 L303.5,127.5 L302.5,128.5 L301,129.5 L300,130 L299,131 L297.5,132 L296.5,133 L295.5,134 L295,134.5 L294.5,135.5 L294,136.5 L294,137.5 L294.5,138.5 L295,139 L295.5,140 L296.5,141 L297.5,142 L299,143 L300,143.5 L301,144.5 L302.5,145.5 L303.5,146.5 L304.5,147.5 L305,148 L305.5,149 L306,150 L306,151 L305.5,152 L305,152.5 L304.5,153.5 L303.5,154.5 L302.5,155.5 L301,156.5 L300,157 L299,158 L297.5,159 L296.5,160 L295.5,161 L295,161.5 L294.5,162.5 L294,163.5 L294,164.5 L294.5,165 L295,166 L295.5,167 L296.5,168 L297.5,169 L299,169.5 L300,170.5 L301,171.5 L302.5,172.5 L303.5,173.5 L304.5,174 L305,175 L305.5,176 L306,177 L306,178 L305,178.5 L304,179.5 L302.5,180.5 L301.5,181.5 L300.5,182.5 L300,183 L300,184" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M300,198 L293,184 L307,184 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <path d="M370,203 L369.5,204 L369,205 L368,206 L366.5,207.5 L365,208.5 L364,209.5 L364,210.5 L365,211.5 L366,212.5 L367,213.5 L368.5,214.5 L370,215.5 L371.5,216.5 L373,217.5 L374,218.5 L375,219.5 L376,221 L376,222 L376,223 L375,224 L374,225 L373,226 L371.5,227 L370,228 L368.5,229 L367,230 L366,231 L365,232 L364,233.5 L364,234.5 L364,235.5 L365,236.5 L366,237.5 L367,238.5 L368.5,239.5 L370,240.5 L371.5,241.5 L373,242.5 L374,243.5 L375,244.5 L376,246 L376,247 L376,248 L375,249 L374,250 L373,251 L371.5,252 L370,253 L368.5,254 L367,255 L366,256 L365,257 L364,258.5 L364,259.5 L364,260.5 L365,261.5 L366,262.5 L367,263.5 L368.5,264.5 L370,265.5 L371.5,266.5 L373,267.5 L374,268.5 L375,269.5 L376,270.5 L376,272 L376,273 L375,274 L374,275 L373,276 L371.5,277 L370,278 L368.5,279 L367,280 L366,281 L365,282 L364,283 L364,284.5 L364,285.5 L365,286.5 L366,287.5 L367,288.5 L368.5,289.5 L370,290.5 L371.5,291.5 L373,292.5 L374,293.5 L375,294.5 L376,295.5 L376,297 L376,298 L375,299 L374,300 L373,301 L371.5,302 L370,303 L368.5,304 L367,305 L366,306 L365,307 L364,308 L364,309.5 L364,310.5 L365,311.5 L366,312.5 L367,313.5 L368.5,314.5 L370,315.5 L371.5,316.5 L373,317.5 L374,318.5 L375,319.5 L376,320.5 L376,322 L375,323 L373.5,324 L372,325 L371,326 L370.5,327 L370,328" fill="none" stroke="#e8590c" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M370,342 L363,328 L377,328 Z" fill="#e8590c" stroke-linejoin="round"/>
   <foreignObject x="199" y="122" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#e8590c">$1173{,}2$</div></foreignObject>
   <foreignObject x="269" y="257.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#e8590c">$1332{,}5$</div></foreignObject>
 </svg>
