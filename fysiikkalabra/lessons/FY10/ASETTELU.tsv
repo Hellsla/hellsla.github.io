@@ -1,0 +1,63 @@
+kuvan tunniste	tyyppi	tiedosto	x	y	leveys	korkeus	merkintöjen siirrot (järjestysnumero: dx, dy)	ilman taustaa (merkintöjen järjestysnumerot)
+fy10-aanennopeus/hero	illustration	fy10-aanennopeus-hero.webp						
+fy10-aanennopeus/setup	diagram	fy10-aanennopeus-setup.webp	-1.3	-2.5	609.1	342.6		
+fy10-heiluri/hero	illustration	fy10-heiluri-hero.webp						
+fy10-heiluri/setup	diagram	fy10-heiluri-setup.webp	0.0	0.0	600.0	406.2		
+fy10-hissi/hero	illustration	fy10-hissi-hero.webp						
+fy10-hissi/vaiheet	diagram	fy10-hissi-vaiheet.webp	2.5	-7.4	594.1	334.2	{"2": [10, 0], "7": [-10, 0]}	
+fy10-hitausmomentti/concept	diagram	fy10-hitausmomentti-concept.webp	39.0	0.0	550.5	309.6		
+fy10-hitausmomentti/hero	illustration	fy10-hitausmomentti-hero.webp						
+fy10-hitausmomentti/setup	diagram	fy10-hitausmomentti-setup.webp	0.0	-1.2	600.0	406.2		
+fy10-hiuksen-paksuus/geometry	diagram	fy10-hiuksen-paksuus-geometry.webp	0.0	-1.2	600.0	337.5		
+fy10-hiuksen-paksuus/hero	illustration	fy10-hiuksen-paksuus-hero.webp						
+fy10-hiuksen-paksuus/pattern	diagram	fy10-hiuksen-paksuus-pattern.webp	8.5	1.2	582.5	262.1		
+fy10-hyppy/forces	diagram	fy10-hyppy-forces.webp	1.2	0.0	597.0	345.8	{"1": [-16, 0], "4": [-14, 0], "2": [6, 0]}	
+fy10-induktio/flux	diagram	fy10-induktio-flux.webp	13.5	4.9	588.2	330.9		
+fy10-induktio/hero	illustration	fy10-induktio-hero.webp						
+fy10-induktio/setup	diagram	fy10-induktio-setup.webp	1.2	1.2	597.0	471.4		
+fy10-jaahtyminen/hero	illustration	fy10-jaahtyminen-hero.webp						
+fy10-jaahtyminen/setup	diagram	fy10-jaahtyminen-setup.webp	0.0	-1.2	600.0	386.2		
+fy10-jousivakio/hero	illustration	fy10-jousivakio-hero.webp						
+fy10-jousivakio/setup	diagram	fy10-jousivakio-setup.webp	0.0	0.0	600.0	473.8		
+fy10-kaasu/hero	illustration	fy10-kaasu-hero.webp						
+fy10-kaasu/setup	diagram	fy10-kaasu-setup.webp	1.2	0.0	597.0	471.4		
+fy10-kondensaattori/circuit	diagram	fy10-kondensaattori-circuit.webp	1.2	-1.2	597.0	335.8	{"1": [4, 3], "2": [3, 3], "7": [4, -3], "6": [-9, 0]}	
+fy10-lammonjohtuminen/emission	diagram	fy10-lammonjohtuminen-emission.webp	1.2	0.0	597.0	350.7		
+fy10-lammonjohtuminen/hero	illustration	fy10-lammonjohtuminen-hero.webp						
+fy10-lammonjohtuminen/setup	diagram	fy10-lammonjohtuminen-setup.webp	0.0	-2.5	600.0	406.2		
+fy10-leikkiauto/hero	illustration	fy10-leikkiauto-hero.webp						
+fy10-leikkiauto/setup	diagram	fy10-leikkiauto-setup.webp	0.0	-1.2	600.0	386.2		
+fy10-liikemaara/setup	diagram	fy10-liikemaara-setup.webp	0.0	-2.5	600.0	337.5	{"6": [-45, 0], "union": true}	
+fy10-liukukitka/forces	diagram	fy10-liukukitka-forces.webp	8.7	11.2	597.0	335.8		
+fy10-liukukitka/setup	diagram	fy10-liukukitka-setup.webp	-1.3	7.5	603.0	330.4		
+fy10-mikroaaltouuni/hero	illustration	fy10-mikroaaltouuni-hero.webp						
+fy10-mikroaaltouuni/spots	diagram	fy10-mikroaaltouuni-spots.webp	1.2	2.5	597.0	384.3		
+fy10-mikroaaltouuni/standing	diagram	fy10-mikroaaltouuni-standing.webp	0.0	0.0	600.0	367.5		
+fy10-muotokerroin/hero	illustration	fy10-muotokerroin-hero.webp						
+fy10-muotokerroin/setup	diagram	fy10-muotokerroin-setup.webp	0.0	0.0	600.0	426.2		
+fy10-muuntaja/hero	illustration	fy10-muuntaja-hero.webp						
+fy10-muuntaja/setup	diagram	fy10-muuntaja-setup.webp	0.0	-1.2	600.0	386.2		
+fy10-paristo/circuit	diagram	fy10-paristo-circuit.webp	1.2	-1.2	597.0	365.7		
+fy10-paristo/hero	illustration	fy10-paristo-hero.webp						
+fy10-paristo/model	diagram	fy10-paristo-model.webp	0.0	-1.2	600.0	406.2		
+fy10-planck/grating	diagram	fy10-planck-grating.webp	0.0	-1.2	600.0	366.2		
+fy10-planck/hero	illustration	fy10-planck-hero.webp						
+fy10-planck/setup	diagram	fy10-planck-setup.webp	1.2	0.0	597.0	404.2		
+fy10-pomppukorkeus/hero	illustration	fy10-pomppukorkeus-hero.webp						
+fy10-pomppukorkeus/setup	diagram	fy10-pomppukorkeus-setup.webp	0.0	0.0	600.0	445.0		
+fy10-resonanssi/hero	illustration	fy10-resonanssi-hero.webp						
+fy10-resonanssi/resonances	diagram	fy10-resonanssi-resonances.webp	2.5	1.2	594.1	392.3		
+fy10-resonanssi/setup	diagram	fy10-resonanssi-setup.webp	7.5	10.0	597.0	306.0	{"4": [0, 30]}	
+fy10-resonanssi/standing	diagram	fy10-resonanssi-standing.webp	28.6	3.6	571.4	294.0		
+fy10-taitekerroin/hero	illustration	fy10-taitekerroin-hero.webp						
+fy10-taitekerroin/setup	diagram	fy10-taitekerroin-setup.webp	0.0	0.0	600.0	445.0		
+fy10-tuulivoimala/circuit	diagram	fy10-tuulivoimala-circuit.webp	8.6	4.9	591.1	293.1		
+fy10-tuulivoimala/hero	illustration	fy10-tuulivoimala-hero.webp						
+fy10-tuulivoimala/swept	diagram	fy10-tuulivoimala-swept.webp	1.2	0.0	597.0	345.8		
+fy10-uppokuumennin/hero	illustration	fy10-uppokuumennin-hero.webp						
+fy10-uppokuumennin/setup	diagram	fy10-uppokuumennin-setup.webp	0.0	0.0	600.0	455.0		
+fy10-valaistus/hero	illustration	fy10-valaistus-hero.webp						
+fy10-valaistus/setup	diagram	fy10-valaistus-setup.webp	0.0	0.0	600.0	328.8		
+fy10-valaistus/spread	diagram	fy10-valaistus-spread.webp	-1.3	-2.5	603.0	388.2		
+fy10-vesivoima/hero	illustration	fy10-vesivoima-hero.webp						
+fy10-vesivoima/setup	diagram	fy10-vesivoima-setup.webp	0.0	-1.2	600.0	475.0	{"3": [-12, 0]}	
