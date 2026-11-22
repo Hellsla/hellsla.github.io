@@ -159,6 +159,12 @@ Massavaje ei ole kadonnutta ainetta. Einsteinin suhteellisuusteorian mukaan mass
   <foreignObject x="378" y="185.5" width="137" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{vapautuu}\ E_\text{B}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Hiili-12-ytimen sidosenergia on $92{,}2\,\text{MeV}$. Kuinka monta atomimassayksikköä ydin on kevyempi kuin sen $12$ nukleonia erillään? Käytä arvoa $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$.
+---
+Sidosenergia vastaa massaeroa: $\Delta m = \tfrac{E_\text{B}}{c^2} = \tfrac{92{,}2\,\text{MeV}}{931{,}5\,\text{MeV}/\text{u}} \approx 0{,}0990\,\text{u}$. Ydin on noin $0{,}099\,\text{u}$ kevyempi.
+```
+
 ### Miksi massan muutosta ei huomaa arjessa
 Massan ja energian ekvivalenssi koskee kaikkia energian muutoksia. Luku $c^2$ on kuitenkin niin suuri, että tavallisissa ilmiöissä massan muutos on liian pieni mitattavaksi. Yhtä grammaa massaa vastaa energia
 ```latex
@@ -203,6 +209,12 @@ Siis $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$. Kun massavaje on atomimas
 &= 0{,}9315\,\text{MeV}
 \end{aligned}
 $$. Jos vakioissa olisi vain neljä numeroa, $1{,}661 \cdot 10^{-27}\,\text{kg}$, $2{,}998 \cdot 10^{8}\,\text{m/s}$ ja $1{,}602 \cdot 10^{-19}\,\text{J}$, tulos olisi $931{,}9\,\text{MeV}$. Neljän numeron vakiot muuttavat siis jo tuloksen neljättä numeroa.
+
+```pysahdy
+Ytimen massavaje on $0{,}0020\,\text{u}$. Kuinka suuri on ytimen sidosenergia megaelektronivoltteina?
+---
+Käytetään arvoa $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$. Silloin $E_\text{B} = 0{,}0020 \cdot 931{,}5\,\text{MeV} \approx 1{,}9\,\text{MeV}$.
+```
 
 ### Sidosenergia nukleonia kohti
 Ytimien sidoksen lujuutta vertaillaan **sidosenergialla nukleonia kohti**:
@@ -294,6 +306,12 @@ Tässä $A$ on massaluku eli nukleonien määrä. Kuvaajassa suure on laskettu a
 </svg>
 
 Kuvaajasta näkee, milloin ydinreaktio vapauttaa energiaa. Jos syntyvät ytimet ovat tiiviimmin sidottuja kuin alkuperäiset, sidosenergia kasvaa ja ero vapautuu. Kevyiden ytimien yhtyminen eli **fuusio** siirtää nukleoneja kohti kuvaajan huippua. Samoin tekee raskaan ytimen halkeaminen eli **fissio**. Niitä tarkastellaan luvussa *Fissio, fuusio ja ydinvoima*.
+
+```pysahdy
+Ydinreaktiossa nukleoneja on yhtä monta molemmin puolin. Lähtöytimien sidosenergia on yhteensä $1800\,\text{MeV}$ ja tuotteiden $1805\,\text{MeV}$. Vapautuuko energiaa vai tarvitaanko sitä? Kuinka paljon? Miten massa muuttuu?
+---
+Energiaa vapautuu. Tuotteet ovat tiukemmin sidottuja, joten erotus $1805\,\text{MeV} - 1800\,\text{MeV} = 5\,\text{MeV}$ vapautuu tuotteiden liike-energiaksi. Kokonaismassa pienenee määrällä $\tfrac{5\,\text{MeV}}{c^2}$.
+```
 
 ### Reaktioenergia
 **Ydinreaktiossa** ytimet muuttuvat: ydin hajoaa, tai ytimeen osuu toinen ydin tai hiukkanen. Reaktiossa massaluku ja varausluku säilyvät eli pysyvät samoina (luku *Atomiydin ja radioaktiivinen hajoaminen*). Massa ei kuitenkaan säily. Reaktioenergia on

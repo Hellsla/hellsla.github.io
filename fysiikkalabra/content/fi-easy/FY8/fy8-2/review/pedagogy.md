@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ff388abbd8793b02
+CONTENT-HASH: b5aabbe65432f34a
 
 ## Blocking
+(none)
 
 ## Polish
-- none
+(none)
+
+## Vanhan sisällön löydökset
+(none; ei Blocking)
 
 ## Checked
-batch delta review: prompt context only; still a fair retrieval, answer unaffected.
+batch delta review: ei uusia laatikoita (diffi tyhjä); ei arvosteltavaa muutosta.

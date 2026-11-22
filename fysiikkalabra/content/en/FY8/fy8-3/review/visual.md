@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: eec2162c49c816b1
+CONTENT-HASH: 5a9e64e5e8b168f3
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] pysahdy box — `1240\,\text{eV nm}` lacks the thin space between units; use `\text{eV}\,\text{nm}`.
 
 ## Checked
-- Delta (md-paragraphs, teacher-figure). Opened contact-1, theory-1280-2 (Bohr paragraphs, formula blocks, constants, table start: paragraphs short, KaTeX whole, no clipping), fig-10-390 (energy-level diagram legible, labels LaTeX). Other figures judged from the contact sheet only. Hash re-run at the end: unchanged.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review: moved pysahdy box (now after the photon-energy formulas) read from source; chain E_5, E_3, difference, wavelength has the order principle, equation, substitution, result, interpretation; box captures not available.

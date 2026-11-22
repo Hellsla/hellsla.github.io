@@ -179,6 +179,12 @@ An X-ray image is a shadow image. The radiation passes through the patient to a 
 
 In computed tomography (CT), an X-ray tube and detectors rotate around the patient. The scanner measures the attenuation from thousands of directions, and a computer calculates from them how much each small volume element attenuates. The result is a cross-sectional image in which organs lying behind one another are also visible. However, the dose from a CT scan is tens of times larger than the dose from a chest X-ray.
 
+```pysahdy
+In CT, $800$ projections are taken, each giving a dose of $0.010\,\text{mSv}$. The dose of a chest X-ray is $0.1\,\text{mSv}$. How many times larger is the total CT dose than the X-ray dose?
+---
+The doses add up: $800 \cdot 0.010\,\text{mSv} = 8\,\text{mSv}$. The ratio is $\tfrac{8\,\text{mSv}}{0.1\,\text{mSv}} = 80$, so the CT dose is about $80$ times larger. One direction gives only a tenth of an X-ray dose, but there are many directions, so the difference is tens of times and not a thousandfold.
+```
+
 | Examination | Effective dose |
 | --- | --- |
 | dental X-ray | $< 0.01\,\text{mSv}$ |
@@ -191,6 +197,7 @@ In computed tomography (CT), an X-ray tube and detectors rotate around the patie
 Source: typical orders of magnitude from the publications of STUK (the Radiation and Nuclear Safety Authority) on radiation exposure in health care ([STUK: Röntgentutkimuksen säteilyannokset vaihtelevat](https://www.julkari.fi/server/api/core/bitstreams/89234513-99f8-4ee2-a720-20bd04eb2cfb/content), in Finnish) and ICRP Publication 128 (2015); the dose of an individual examination depends on the equipment, the imaging protocol and the patient. For comparison, a person in Finland receives on average about $5.1\,\text{mSv}$ a year from natural radiation (chapter *Radiation dose and radiation safety in Finland*).
 
 <figure class="unit-photo"><img src="pics/fy8/pet-ct-scanner.webp" alt="A hospital scanning room: a pale green ring-shaped device with a patient table covered by a white sheet pointing towards its opening."><figcaption>A PET-CT scanner in Bron, France. Inside the ring are the detector ring for PET imaging and the X-ray tube and detectors for computed tomography. The patient slides through the ring on the table.</figcaption></figure>
+
 
 ### Radionuclide imaging: a tracer shows how an organ works
 
@@ -279,6 +286,12 @@ The tracer in PET (positron emission tomography) is usually fluorine-18 in a com
 </svg>
 
 A ring of detectors surrounds the patient. When two opposite detectors detect a photon within a few nanoseconds of each other, that is, in **coincidence**, the scanner concludes that the photons were produced in the same annihilation somewhere on the line segment between those detectors. If the difference in the photons' arrival times is not measured, a single line segment does not tell where on the segment the source is. Modern PET scanners also measure this time difference (time-of-flight PET) with an accuracy of about $0.3\,\text{ns}$. Light travels about $30\,\text{cm}$ in a nanosecond, so the time difference narrows the source to a stretch of a few centimetres on the segment. Because the positron travels before the annihilation, the segment tells the place of the annihilation and not exactly the place of the decay. The actual image is formed only from many segments: when millions of segments have accumulated, they intersect most densely where there is the most tracer, and a computer calculates the image from them. Because of its short half-life, fluorine-18 is made in a particle accelerator, a cyclotron, close to the imaging site, for example at the Turku PET Centre.
+
+```pysahdy
+The two opposite detectors of a PET scanner register the annihilation photons with a time difference of $0.40\,\text{ns}$. Light travels $30\,\text{cm}$ in a nanosecond. How far from the midpoint of the line is the source, and on which side?
+---
+The photon detected later travels an extra distance $2x$: $2x = c\,\Delta t = 30\,\tfrac{\text{cm}}{\text{ns}} \cdot 0.40\,\text{ns} = 12\,\text{cm}$, so $x = 6.0\,\text{cm}$. The source is $6.0\,\text{cm}$ from the midpoint, on the side of the detector that registered a photon first.
+```
 
 ### Radiotherapy: a large dose to the tumour, a small dose to healthy tissue
 
@@ -436,6 +449,12 @@ where $I_0$ is the intensity of the radiation entering the beam, $I$ is the inte
   <foreignObject x="276.5" y="151.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$d_{1/2} = 3.4\,\text{cm}$</span></div></foreignObject>
   <foreignObject x="299" y="262" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#a97a35"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$d_{1/2} = 1.1\,\text{cm}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+An X-ray beam passes through two half-value thicknesses of soft tissue and then one half-value thickness of bone. What fraction of the radiation gets through?
+---
+The numbers of half-value thicknesses add up: $\left(\tfrac{1}{2}\right)^{2+1} = \tfrac{1}{8}$, so $12.5\,\%$ gets through.
+```
 
 ### Energy of an annihilation photon
 

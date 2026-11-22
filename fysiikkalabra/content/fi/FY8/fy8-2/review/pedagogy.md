@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 1275ef93804ae18a
+CONTENT-HASH: 64c8add4b0b79452
 ## Blocking
-- none
+-
 ## Polish
-- none
+-
 ## Checked
-batch delta review: Retrieval prompt reworded to the red and violet ends of the solar spectrum; clear, options untouched.
+batch delta review: uudet Pysähdy ja mieti -laatikot: laskut tarkistettu, kysymys ratkaistavissa opitulla, palaute korjaa käsitteen; vanhasta sisällöstä ei löydöksiä (Vanhan sisällön löydökset: ei).

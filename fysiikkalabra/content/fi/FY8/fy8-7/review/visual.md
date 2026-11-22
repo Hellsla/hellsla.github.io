@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 3edfe13d49a1760c
+CONTENT-HASH: 070a212efd04a47c
 
 ## Blocking
 (none)
 
 ## Polish
+- [Minor] pysahdy 2 — very long task (about 60 words, four sentences, three questions); split the situation from the questions or drop the instruction to use $hc$ into the answer.
+- [Minor] pysahdy 2 — "$2{,}0\,\text{nm}$:n pisteen" correct case ending, but "pisteen aukko ($480\,\text{nm}$ vastaa ...)" introduces a new number not in the task; give it in the task.
+
+## Vanhan sisällön löydökset
 (none)
 
 ## Checked
-- Delta round 3: He-Ne retrieval card. Opened stage-herata-390 (card in place, layout fine). Read inquiry.json source: prompt, all choice feedbacks now consistently say 633 nm and about 1,96 eV (round-2 Major fixed); units and symbols in LaTeX; wording fluent, "atomien itsestään lähettämä valo" reads well. lesson.md changes were presentation only; lesson-answers.py is not student-visible.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+batch delta review (pysahdy only): component rendering in fy8-10 theory capture; source of all three boxes.

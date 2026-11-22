@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 77247589df7c4d0d
+CONTENT-HASH: 76a4971f7e4a8382
 
 ## Blocking
 
 ## Polish
-- [Minor] inquiry.json, Kertaa feedback of "Fotonin energia on ylemmän tason E2 energia": "Se on tasojen erotus." is a bare sentence; write "Tämä energia on tasojen erotus."
-- [Minor] Earlier polish (Esimerkki 3 "lämpö" vs "sisäenergia"; key concept "kvanttipiste") unchanged, may wait.
+- [Minor] toinen pysahdy-laatikko (kvanttipiste) — kysymysketju on pitkä (neljä kysymystä ja ohje); kysymys tulee viimeiseksi, mutta voisi jakaa "Laske… Päättele… Kuinka paljon…" omiksi riveikseen.
+
+## Vanhan sisällön löydökset
+- ei
 
 ## Checked
-- Delta round 3: diff of inquiry.json (Kertaa prompt, choices, feedbacks: 633 nm and 1,96 eV now consistent in both), lesson.md (paragraph presentation only), lesson-answers.py (not visible text).
-- fy8-7-stage-herata-390 opened: Pohdinta layout fine, optional Kertaa task closed, 1 mW in LaTeX.
-- The opened Kertaa feedback has no capture; judged from the text.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review: two edited "Pysähdy ja mieti" boxes read from diff; `$2{,}0\,\text{nm}$:n` case ending correct; units LaTeX; layout via shared component.

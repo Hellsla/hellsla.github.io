@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 36b1ebf16eefaf10
+CONTENT-HASH: 344f5bf4f95515c0
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] Tiivistelmä formula line ends with "…" at the box's right edge at 390 px; fits, scrollWidth 390.
+- none
+
+## Vanhan sisällön löydökset
+- none
 
 ## Checked
-- Delta: own 390 px render of the opened Tiivistelmä (preview/fy8-13.html, scratchpad t2.png; no 390 theory capture in the packet). Formula on its own display line, no clipping; continuation "kudosten herkkyyden. Molempien yksikkö on sievert Sv." reads correctly; all five items are separate bullets (previous Major fixed).
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+batch delta review, round 2: opened fy8-13-theory-1280-4 (dose-rate theory; the 8 µSv/h inverse-square box is further on). The three boxes and answers read from source: 3,82 d, 5 s, \mu\text{Sv/h} and orders of magnitude in LaTeX, decimal comma, full sentences. Box 3 not seen in a capture I opened.

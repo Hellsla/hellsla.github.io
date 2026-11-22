@@ -263,12 +263,24 @@ In an atom the wave is three-dimensional, so its nodes are surfaces, and the ele
   <foreignObject x="425" y="301.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{nodal plane}$</div></foreignObject>
 </svg>
 
+```pysahdy
+The wave of a state of a hydrogen atom has two nodes in total. What is the principal quantum number of the state, and is its energy greater than in the state $n = 2$?
+---
+There are $n - 1$ nodes, so $n = 3$. There are more nodes than in the state $n = 2$, so the energy is greater.
+```
+
 ### The probability interpretation
 The wave does not tell where the electron is but where it is likely to be detected. When the position of the electron is measured, the result is always one point, and a single result cannot be predicted. The square of the amplitude of the wave tells how likely the electron is to be detected in a small volume around each place. This is the **probability interpretation** of the wave model. The distribution becomes visible only when the measurement is repeated in many atoms in the same state. If $k$ of $N$ measurements land in some region, the probability of detecting the electron there is approximately
 ```latex
 P \approx \frac{k}{N}
 ```
 where $P$ is the probability, $k$ the number of measurements that landed in the region and $N$ the number of all measurements. The estimate becomes more accurate as $N$ grows. Between measurements the electron has no orbit that could be drawn.
+
+```pysahdy
+The position of the electron is measured in $250$ atoms in the same state, and $50$ measurements land in a certain region. How probable is it to observe the electron in the region?
+---
+$P \approx \tfrac{k}{N} = \tfrac{50}{250} = 0.20$, that is $20\,\%$.
+```
 
 ### An orbital describes the quantum state of the electron
 When the measurement results are marked as dots, an electron cloud is formed that is densest where the electron is most likely to be detected. The cloud has no sharp edge. An **orbital** describes the quantum state of the electron, an allowed standing wave of the atom, and it sets the probability of detecting the electron at different points. In figures an orbital is shown as a region inside which the electron is detected with a chosen probability, usually with a probability of $90\,\%$. The drawn region is an illustration, not the definition of the orbital. The boundary is an agreed threshold, not a wall: about a tenth of the measurements land outside it. The $90\,\%$ boundary of the $1\text{s}$ orbital of the hydrogen atom is a sphere with a radius of $0.14\,\text{nm}$. For example, the $2\text{p}$ orbital is one of the states of the hydrogen atom.
@@ -1337,6 +1349,12 @@ electrons fit in a shell, where $N_\text{max}$ is the greatest number of electro
 | $2$ | s, p | $4$ | $8$ |
 | $3$ | s, p, d | $9$ | $18$ |
 | $4$ | s, p, d, f | $16$ | $32$ |
+
+```pysahdy
+How many electrons can the $3\text{p}$ subshell hold at most?
+---
+A p subshell has three orbitals, and each orbital can hold at most two electrons. At most $3 \cdot 2 = 6$ electrons.
+```
 
 When an electron moves from a higher state to a lower one, the atom emits a photon whose energy is the difference between the energies of the states (chapter *Spectra reveal the energy levels of atoms*). In the hydrogen atom the states of the same shell have the same energy, so, for example, the transitions $3\text{d} \to 2\text{p}$ and $3\text{s} \to 2\text{p}$ produce the same spectral line.
 

@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 099e7d8288103ff0
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 80cf52ab4f30f794
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).
+batch delta review, round 3: the level-spacing box was removed and a new 5 → 3 box was added after the photon-energy formulas. Recomputed: E5 = −0,544 eV, E3 = −1,511 eV, ΔE = 0,967 eV, λ = 1240/0,967 = 1,28e3 nm (1282 nm with hc = 1239,84 eV nm). This is the Paschen line in the infrared, consistent with the series table that follows. The box comes after the formulas it uses.
+
+## Vanhan sisällön löydökset
+(none)

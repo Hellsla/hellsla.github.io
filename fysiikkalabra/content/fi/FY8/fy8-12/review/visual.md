@@ -1,9 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 839e9fe5367a7bcf
+CONTENT-HASH: 84f5be0ad7226b0f
 
 ## Blocking
+(none)
 
 ## Polish
+- [Minor] pysahdy 1 — "$1{,}7\,\text{eV} - 3{,}3\,\text{eV}$" is a range but renders with a minus sign; write "$1{,}7\,\text{eV}$–$3{,}3\,\text{eV}$" or "väliltä ... ja ...".
+- [Minor] pysahdy 1 — "$n = 4762$" has no unit and four figures against $6{,}0 \cdot 10^4$; show it as $4{,}76 \cdot 10^3$ to match the answer.
+- [Minor] pysahdy 2 — first sentence joins two clauses with a semicolon and "oleta"; split into two sentences.
+
+## Vanhan sisällön löydökset
+(none)
 
 ## Checked
-batch delta review: the only change is the unit in the inquiry solution (`\tfrac{1}{\text{min}}` to `\text{min}^{-1}`), which is cleaner notation consistent with the graph; opened fig-9 (the graph the task reads, 390 px), which is legible and unchanged.
+batch delta review (pysahdy only): component rendering in fy8-10 theory capture; source of all three boxes.

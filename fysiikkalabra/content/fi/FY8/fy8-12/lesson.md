@@ -124,6 +124,12 @@ Säteily on **ionisoivaa**, kun sen yksittäinen hiukkanen tai fotoni pystyy irr
   <foreignObject x="429" y="125.5" width="112" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\gamma\ 662\,\text{keV}$</span></div></foreignObject>
 </svg>
 
+```pysahdy
+Röntgenfotoni, jonka energia on $60\,\text{keV}$, luovuttaa kaiken energiansa vedelle, ja yhden molekyylin ionisointi vaatii $12{,}6\,\text{eV}$. Kuinka monta molekyyliä se voi enintään ionisoida?
+---
+$n = \tfrac{6{,}0 \cdot 10^{4}\,\text{eV}}{12{,}6\,\text{eV}} = 4762$, ja enintään-arvo pyöristetään alas. Fotoni voi ionisoida enintään noin $4{,}7 \cdot 10^{3}$ molekyyliä. Näkyvän valon fotoni ($1{,}7\,\text{eV} - 3{,}3\,\text{eV}$) ei ionisoisi yhtäkään.
+```
+
 ### Ionisaatio siirtää säteilyn energiaa aineeseen
 Ionisoiva hiukkanen ei yleensä menetä energiaansa kerralla, vaan se irrottaa matkallaan elektronin toisensa perään. Ilmassa yksi ionipari vie keskimäärin energian $W \approx 34\,\text{eV}$. Se on enemmän kuin molekyylien ionisaatioenergia, koska osa energiasta kuluu molekyylien virittämiseen ja irronneiden elektronien liike-energiaksi. Kun hiukkasen koko liike-energia $E$ siirtyy aineeseen, ioniparien määrä on
 ```latex
@@ -248,6 +254,12 @@ Säteilyn lajit (luku *Atomiydin ja radioaktiivinen hajoaminen*) eroavat siinä,
 </svg>
 
 <figure class="unit-photo"><img src="pics/fy8/hfir-refueling.webp" alt="Ylhäältä kuvattu syvä vesiallas sinisessä valossa; pohjalla on pyöreä reaktorisydän, josta loistaa kirkas sininen hohde, ja ympärillä on pyöreitä kansia."><figcaption>Tutkimusreaktorin sydän vesialtaan pohjalla polttoaineen vaihdon aikana. Sininen hohde on Tšerenkovin säteilyä: varatut hiukkaset, enimmäkseen elektronit, kulkevat vedessä nopeammin kuin valo vedessä. Paksu vesikerros vaimentaa säteilyä, joten altaan reunalla voi työskennellä.</figcaption></figure>
+
+```pysahdy
+Alfa- ja beetahiukkasen liike-energia on molemmilla $4{,}0\,\text{MeV}$ ja ne pysähtyvät ilmaan; oleta molemmille sama $W \approx 34\,\text{eV}$. Vertaa niiden tuottamia ionipareja ensin yhteensä ja sitten yhden sentin matkalla.
+---
+Kumpikin tuottaa $\tfrac{4{,}0 \cdot 10^{6}\,\text{eV}}{34\,\text{eV}} \approx 1{,}2 \cdot 10^{5}$ ionipareja, koska $n_\text{i} = E/W$ riippuu vain energiasta. Beeta kulkee metrejä ja alfa muutaman senttimetrin, joten beeta tuottaa senttimetrin matkalla paljon vähemmän ionipareja.
+```
 
 ### Läpäisykyky
 **Läpäisykyky** kertoo, kuinka paksun ainekerroksen säteily läpäisee. Mitä tiheämmin säteily ionisoi, sitä nopeammin se luovuttaa energiansa ja sitä ohuempi kerros sen pysäyttää. Siksi alfasäteilyllä on pienin ja gammasäteilyllä suurin läpäisykyky. Taulukon viimeinen sarake kertoo, mikä pysäyttää alfa- ja beetasäteilyn ja mikä vaimentaa gamma- ja neutronisäteilyä tehokkaasti. Röntgensäteily on fotonisäteilyä ja käyttäytyy kuten gammasäteily.
@@ -418,6 +430,12 @@ Mitä suurempi vaimennuskerroin on, sitä ohuempi kerros riittää vaimentamaan 
   <foreignObject x="233" y="67" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$</span></div></foreignObject>
   <foreignObject x="292.5" y="213" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$d_{1/2} = 5{,}5\,\text{mm}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Esteen puoliintumispaksuus on $2{,}0\,\text{cm}$. Kuinka suuri osuus gammasäteilystä läpäisee $6{,}0\,\text{cm}$:n paksuisen esteen?
+---
+$6{,}0\,\text{cm}$ on kolme puoliintumispaksuutta: $\tfrac{I}{I_0} = \left(\tfrac{1}{2}\right)^3 = 0{,}125$, eli $12{,}5\,\%$.
+```
 
 ### Puoliintumispaksuus riippuu aineesta ja energiasta
 Puoliintumispaksuus riippuu aineen tiheydestä, koostumuksesta ja säteilyn energiasta. Lyijy vaimentaa monilla energia-alueilla gammasäteilyä tehokkaasti suuren tiheytensä ja järjestyslukunsa vuoksi: sama vaimennus vaatii betonia noin seitsemän kertaa paksumman kerroksen. Gammasäteilyn läpäisykyky riippuu fotonien energiasta ja väliaineesta. Energian kasvaessa eri vuorovaikutusmekanismien merkitys muuttuu, joten läpäisykyky ei kasva kaikilla energia-alueilla. Taulukon arvot koskevat cesium-137:n $662\,\text{keV}$:n gammasäteilyä.

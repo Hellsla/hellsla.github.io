@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: da2ad48dd3a1587a
+CONTENT-HASH: a5f77d25b810d2e5
+
 ## Blocking
-- none
+
 ## Polish
-- Photo sits between the dualism paragraph and the next heading with no tie to the text; one sentence pointing to it would help.
+- Kysymys ei pyydä vaihtelun suuruutta, mutta vastaus esittelee neliöjuurisäännön ($\pm 14$, $\pm 44$) ja sanan "vaihtelu" ilman määritelmää. Voisi sanoa "tyypillinen poikkeama odotetusta".
+- Viimeinen virke "osumien osuus on lähempänä $4\,\%$" on hieman epäselvä: parempi "osuma-osuus kohdassa".
+
+## Vanhan sisällön löydökset
+Ei.
+
 ## Checked
-batch delta review: Retrieval item rewritten to double-slit intensity and photons: it prepares the lesson's one-quantum-at-a-time idea, distractors carry real misconceptions (energy doubles, faster photons) with repairing feedback. Chapter names updated; photo has alt text and a useful caption; the split Tunnetut/Kysytään stage reads well.
+batch delta review: pysahdy-laatikko; edellisen kierroksen Blocking (±14/±44 ilman √N-sääntöä) korjattu, vastaus nyt perustelee säännön ja laskee suhteelliset osuudet ($7\,\%$, $2\,\%$) oikein; tehtävä on perusteltavissa ennen vastausta.

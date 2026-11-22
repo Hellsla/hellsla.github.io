@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: ff388abbd8793b02
+CONTENT-HASH: b5aabbe65432f34a
 
 ## Blocking
 
 ## Polish
+- [Minor] pysahdy-laatikko (absorptio) — "$1240\,\text{eV nm}$": yksikössä ei ohutta väliä ("eV\,nm"); sama muissa luvuissa, joten projektin tapa, ei muutettava tässä.
+
+## Vanhan sisällön löydökset
+- ei
 
 ## Checked
-- Delta round 2: the "Kertaa: fotonin energia" prompt (Auringon spektrin punaisessa/violetissa päässä) and the paragraph cuts in lesson.md.
-- Opened fy8-2-stage-tarkista-390-1 (tarkista layout intact) and fy8-2-theory-1280-1 (paragraphs, figure beside text, formulas, captions fine).
-- Prompt wording judged from source: fluent Finnish, numbers and units in LaTeX.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: moved/new "Pysähdy ja mieti" box and the edited exercise solution read from the diff; layout follows the same shared component seen in fy8-1 and fy8-14 captures; box now after the absorption paragraph, order reads logically.

@@ -90,6 +90,12 @@ A nucleus is described by two numbers. The **atomic number** $Z$ is the number o
   <foreignObject x="400" y="297.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{neutron } n$</div></foreignObject>
 </svg>
 
+```pysahdy
+A sodium nucleus is written ${}^{23}_{11}\text{Na}$. How many protons and neutrons does the nucleus have?
+---
+There are $Z = 11$ protons and $N = A - Z = 23 - 11 = 12$ neutrons.
+```
+
 ### Why some nuclei decay
 Protons repel each other electrically, but the nucleus is held together by the strong interaction. It pulls nucleons towards each other, but only over a very short distance, the size of a nucleus. Neutrons add attraction without adding repulsion, so stable heavy nuclei have more neutrons than protons.
 
@@ -157,6 +163,12 @@ Only certain combinations of protons and neutrons are stable. When nuclei are dr
 In **alpha decay**, an alpha particle, a helium nucleus ${}^{4}_{2}\text{He}$ with two protons and two neutrons, leaves the nucleus. It is typical of heavy nuclei such as uranium, radium and the americium of a smoke detector.
 
 In **beta decay**, the nucleus has too many or too few neutrons compared with its protons. In beta minus decay, a neutron of the nucleus changes into a proton, and an electron and an antineutrino leave the nucleus. The electron was not in the nucleus beforehand; it is created in the decay. In beta plus decay, a proton changes into a neutron, and a positron, the antiparticle of the electron, and a neutrino leave the nucleus. Beta decay is caused by the weak interaction.
+
+```pysahdy
+Carbon-14 ${}^{14}_{6}\text{C}$ undergoes beta minus decay. What are the mass number and atomic number of the daughter nucleus, and which element is it?
+---
+A neutron turns into a proton, so $Z = 6 + 1 = 7$, and the number of nucleons stays the same, $A = 14$. The daughter nucleus is nitrogen-14, ${}^{14}_{7}\text{N}$.
+```
 
 Related to beta decay is **electron capture**: the nucleus captures an electron from the innermost electron shell of the atom, a proton changes into a neutron, and an electron neutrino ${}^{0}_{0}\nu_\text{e}$ leaves the nucleus. In general
 ```kaavat
@@ -299,6 +311,12 @@ and gamma decay
 {}^{A}_{Z}\text{X}^{\ast} \to {}^{A}_{Z}\text{X} + \gamma
 ```
 where X is the decaying parent nucleus, Y the daughter nucleus that is formed, $A$ the mass number, $Z$ the atomic number, $\bar{\nu}$ the antineutrino, $\nu$ the neutrino and $\gamma$ the gamma photon. The element of the daughter nucleus is read from the periodic table using its atomic number.
+
+```pysahdy
+Uranium-238 ${}^{238}_{92}\text{U}$ undergoes alpha decay. What are the mass number and atomic number of the daughter nucleus?
+---
+The alpha particle ${}^{4}_{2}\text{He}$ carries away four nucleons and two protons: $A = 238 - 4 = 234$ and $Z = 92 - 2 = 90$.
+```
 
 <svg data-fig="shifts" viewBox="0 0 600 360" role="img" aria-label="Part of a chart of nuclides, a grid: the neutron number N on the horizontal axis and the atomic number Z on the vertical axis, one cell is one unit. In the middle is the parent nucleus. Alpha decay moves the nucleus two cells down and two to the left (Z − 2, N − 2). Beta minus decay moves it one cell up and one to the left (Z + 1, N − 1). Beta plus decay moves it one cell down and one to the right (Z − 1, N + 1). In gamma decay the nucleus stays in the same cell." style="max-width:100%;font-size:24px">
   <line x1="140" y1="40" x2="140" y2="316" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

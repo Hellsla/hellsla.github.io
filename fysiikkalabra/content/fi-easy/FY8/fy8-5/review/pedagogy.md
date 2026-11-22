@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f9ce31430d871420
+CONTENT-HASH: 5362418331c41db5
 
 ## Blocking
+- (ei)
 
 ## Polish
-- The new prompt says the electron "käyttäytyy kuin aalto" and that this shows in the double slit, which half-gives the answer (an interference pattern); drop that sentence or make it a neutral lead.
+- Laatikko 3 (3p): luvun "kolme p-orbitaalia" on tekstissä, joten tehtävä yhdistää kaksi luettua asiaa. Riittää.
+- Laatikko 2 on pelkkä $k/N$-sijoitus; kysy vaikka, miten arvio muuttuu, kun $N$ kasvaa.
+
+## Vanhan sisällön löydökset
+- Ei muita.
 
 ## Checked
-batch delta review: prompt context change read; answer not wrong, slightly leading.
+batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (laatikot ok).

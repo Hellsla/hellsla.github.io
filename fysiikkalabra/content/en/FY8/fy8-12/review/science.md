@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 84c862db6d19599b
+CONTENT-HASH: 02a1a1495782bf10
 
 ## Blocking
 
 ## Polish
 
+## Vanhan sisällön löydökset
+None.
+
 ## Checked
-batch delta review: the half-value-thickness solution in inquiry.json only changes the unit form from $\tfrac{1}{\text{min}}$ to $\text{min}^{-1}$ (same quantity, same values); recomputed $\tfrac12\cdot 800 = 400\,\text{min}^{-1}$ at $d = 12\,\text{mm}$, $800\cdot(\tfrac12)^{24/12} = 200$ and $800\cdot(\tfrac12)^{48/12} = 50\,\text{min}^{-1}$, consistent with the solution's reading and check; hash identical at start and end.
+batch delta review: X-ray box: 6.0e4 eV / 12.6 eV = 4762, at-most value rounded down to 4.7e3 (guardrail rule); 12.6 eV matches the lesson's ionisation energy of water; visible photons 1.7–3.3 eV cannot ionise. Alpha/beta box: 4.0e6 / 34 = 1.2e5 ion pairs for both (W = 34 eV as in the lesson, equal W assumed in the stem); beta range metres vs alpha a few cm in air at 4 MeV is right, so ion density per cm is far lower for beta.

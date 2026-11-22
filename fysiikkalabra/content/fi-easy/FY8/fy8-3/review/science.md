@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 7cf00fb14ee5fdf8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 09c833045fb594ca
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).
+batch delta review: the box was moved after the transition formula and rewritten for 5 → 3. Recomputed: E₅ = −0,544 eV, E₃ = −1,511 eV, ΔE = 0,967 eV, λ = 1240/0,967 = 1282 nm ≈ 1,28·10³ nm. That is infrared and agrees with the Paschen row of the table that follows. Correct.

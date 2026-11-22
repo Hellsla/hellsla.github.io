@@ -1,9 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 839e9fe5367a7bcf
+CONTENT-HASH: 84f5be0ad7226b0f
 
 ## Blocking
+(none)
 
 ## Polish
+- 60 keV box: "= 4762" is itself rounded up (6,0e4/12,6 = 4761,9, and the integer maximum is 4761). Right before a sentence about rounding a limit value down, write "≈ 4761,9" (or "≈ 4,76 · 10³"). The final 4,7 · 10³ is correct by the safe-side rule.
+- "$1{,}7\,\text{eV} - 3{,}3\,\text{eV}$" renders as a subtraction. Write the range as $1{,}7\,\text{eV}$–$3{,}3\,\text{eV}$ (en dash outside the math).
 
 ## Checked
-batch delta review: inquiry.json transfer-task solution, Sijoitus step: unit notation changed from 1/min to min^-1 only; 1/2 · 800 min^-1 = 400 min^-1 is right, d_1/2 = 12 mm unchanged and agrees with the rest of the solution (200 pulses at 24 mm, 50 at 48 mm); no other number, formula or claim changed.
+batch delta review, round 3: the 60 keV box and the alpha/beta ion-pair box. Recomputed: 6,0e4/12,6 = 4761,9, rounded down to 4,7e3. 4,0e6/34 = 1,18e5 ≈ 1,2e5 for both particles. The ranges at 4 MeV (beta: metres in air, alpha: a few cm) are right, so beta produces far fewer pairs per cm. The task states the stopping and the equal W.
+
+## Vanhan sisällön löydökset
+(none)

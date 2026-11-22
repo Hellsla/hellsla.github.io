@@ -157,7 +157,19 @@ Albert Einstein explained the observations in 1905. The energy of light is not s
   <foreignObject x="478" y="41" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$E_\text{k,max}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Suppose that in the wave model an electron can collect energy only from an area of $1.0 \cdot 10^{-19}\,\text{m}^2$ (about the cross-section of one atom) and the intensity of the dim light is $1.0 \cdot 10^{-3}\,\text{W/m}^2$. The work function of zinc is $4.3\,\text{eV}$. How long would collecting the energy take, and what is observed in the experiment?
+---
+The power received by one electron is $P = 1.0 \cdot 10^{-3}\,\text{W/m}^2 \cdot 1.0 \cdot 10^{-19}\,\text{m}^2 = 1.0 \cdot 10^{-22}\,\text{W}$ and $W = 4.3 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 6.9 \cdot 10^{-19}\,\text{J}$. The time is $t = W/P = 6.9 \cdot 10^{3}\,\text{s}$, about $1.9\,\text{h}$. In the experiment electrons are still released immediately, so the wave model fails.
+```
+
 With this model every observation is explained. For light of one colour, the intensity tells how many photons hit the surface each second: brighter light therefore releases more electrons, but a single electron still receives only the energy of one photon. The frequency determines the energy of one photon and therefore the maximum kinetic energy of the electron. There is no delay, because already the first photon with enough energy can release an electron. In this model energy is **quantised**: radiation and matter exchange energy only in whole photon energies.
+
+```pysahdy
+The energy of a photon of red light is smaller than the work function $W$ of a metal, and no electrons are released. What is observed if the frequency is raised so that the photon energy is only slightly greater than $W$, while the intensity stays low?
+---
+Electrons are released immediately, because one photon is enough. The kinetic energy $hf - W$ is almost zero, and few electrons are released because few photons arrive per second.
+```
 
 <figure class="unit-photo"><img src="pics/fy8/photomultiplier-tube.webp" alt="A large round glass bulb with a mirror-like inner surface in a museum display case."><figcaption>A photomultiplier tube from the Super-Kamiokande neutrino detector in a museum in Tokyo. A photon hitting the inner surface of the bulb releases an electron in the photoelectric effect, and the tube amplifies it into a measurable electric pulse.</figcaption></figure>
 
@@ -273,6 +285,12 @@ where $hf$ is the photon energy, $W$ is the work function of the metal and $E_\t
 </svg>
 
 When the equation is written in the form $E_\text{k,max} = hf - W$, it is the equation of a straight line: the maximum kinetic energy grows steadily with the frequency, and the slope of the line is the Planck constant $h$ for all metals. The lines of different metals are therefore parallel, and each starts on the horizontal axis at the threshold frequency of its metal. Robert Millikan measured such lines in 1916 and obtained the Planck constant from the slope. The intensity of the light does not appear in the equation at all.
+
+```pysahdy
+The work function of sodium is $2.3\,\text{eV}$. The energy of a photon increases from $3.0\,\text{eV}$ to $6.0\,\text{eV}$. Does the maximum kinetic energy of the electrons double?
+---
+No. From $E_\text{k,max} = hf - W$ we first get $3.0\,\text{eV} - 2.3\,\text{eV} = 0.7\,\text{eV}$ and then $6.0\,\text{eV} - 2.3\,\text{eV} = 3.7\,\text{eV}$. The work function is subtracted in both cases, so the kinetic energy grows to more than five times as large.
+```
 
 ### Zinc needs short-wavelength ultraviolet
 The threshold frequency corresponds to the **threshold wavelength** $\lambda_0 = hc : W$: radiation of longer wavelength does not release electrons. Electrons are released from zinc only if the photon energy of the radiation exceeds the work function of zinc. With the work function $4.31\,\text{eV}$ the threshold wavelength is $$

@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: e9f38776eda7db26
+CONTENT-HASH: 41902d2b8ee6b58a
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-batch delta review: Kertaa task moved from I-131 to Mo-99. Mo-99 (Z = 42) decays β⁻ to Tc-99m (Z = 43), A = 99 kept: prompt, correct option and feedback right; Tc-99m generators are made from Mo-99 (correct fact). The electron-shell distractor (molybdeeni-ioni) stays wrong with the right reason (beta particle from the nucleus); the alpha and fission distractors unchanged. Exactly one correct option. The later I-131 tasks are independent and do not conflict.
+batch delta review: the rewritten opening box and the 8000-nuclei box, which moved to just after the half-life definition. No-memory box: 8000·(1/2)² = 2000, half of which decay, so P = 1000/2000 = 0,50, the same as for a fresh nucleus. It is reasoned from the sample counts as asked, and the physics is right. Moved box: 6 h = 3 half-lives, 8000/8 = 1000. Correct, and the new placement follows the definition it uses.

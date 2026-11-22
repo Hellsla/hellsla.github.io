@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: e93d49c1575801b6
+CONTENT-HASH: 06e877879acbd29d
 
 ## Blocking
 
 ## Polish
-- Retrieval: $1{,}2\cdot10^{15}$ Hz has two significant figures while $254\,\text{nm}$ has three; $1{,}18\cdot10^{15}\,\text{Hz}$ (as in lesson-answers.py) would match the data.
 
 ## Checked
-batch delta review: UV-C 254 nm retrieval recomputed (c/λ = 1,18e15 Hz, red 4,61e14 Hz), all three options and feedback, lesson-answers.py rows, link to the lesson's UV-C lamp.
+batch delta review: the rewritten Pysähdy box (wave-model accumulation time). Recomputed: P = 1,0·10⁻³ W/m² · 1,0·10⁻¹⁹ m² = 1,0·10⁻²² W; W = 4,3 eV = 6,9·10⁻¹⁹ J; t = W/P = 6,9·10³ s ≈ 1,9 h. Correct, the assumptions (collection area about one atom, given intensity) are stated in the question, and the conclusion (electrons leave at once, so the wave model fails) matches the lesson.

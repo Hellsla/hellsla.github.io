@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 25198780be5abb6a
+CONTENT-HASH: 55fbb6fec30f1ab6
+
 ## Blocking
-- none
+
 ## Polish
-- The added sentence nearly gives the answer (neutron becomes proton); consider cutting it so the student recalls it.
+- Vastaus antaa ymmärtää, että kokonaisluku-varaus riittää vapaaksi esiintymiseen. Varsinainen syy on, ettei kvarkkeja havaita yksin (rajoittuminen); lisää yksi virke tästä.
+- "Ei synny vapaana hiukkasena" kannattaisi sanoa "ei esiinny vapaana".
+
+## Vanhan sisällön löydökset
+Ei.
+
 ## Checked
-batch delta review: Retrieval adds that the decay equals free-neutron decay; this is a hint from the lesson's own content.
+batch delta review: pysahdy-laatikko; uusi kysymys ("mitkä voivat esiintyä vapaina") on harhaanjohtavan ilmaisinkehyksen poistettu ja vastaus laskee varaukset oikein ja yhdistää hadronit (mesoni, baryoni) vapaisiin hiukkasiin.

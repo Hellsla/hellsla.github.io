@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 29104962fdb7236e
+CONTENT-HASH: 73014f45720e9c2d
+
 ## Blocking
+- none
 
 ## Polish
 - none
+
 ## Checked
-batch delta review: Mo-99 to Tc beta-minus item: Z 42 to 43, mass number 99, answer, feedback and distractor consistent; fits the lesson's technetium-99m context.
+batch delta review: 3 boxes: survival probability of an old nucleus (0.50, reasoned from numbers, repairs the 'nucleus ages' misconception), 8000 to 1000 after three half-lives, decay constant ratio; all correct.
+
+## Vanhan sisällön löydökset
+- none

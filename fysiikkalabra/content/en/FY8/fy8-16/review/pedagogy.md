@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4ae44fd1881f3ac4
+CONTENT-HASH: 90c3bcb6d9655b4b
 
 ## Blocking
 
 ## Polish
-- "Cosmic inflation" is introduced in a bold term with no gloss for "uniform on large scales"; a short example (the background radiation is almost the same in every direction) would help a 16-year-old.
+- Say where $0.7\,\text{eV}$ comes from (about $2.7\,kT$ at $3000\,\text{K}$) in the solution, or word it as "about" an average photon; the number is introduced without a source.
+- In the solution, state the result as "about $0.0006\,\text{eV}$" next to $6\cdot 10^{-4}\,\text{eV}$ for easier comparison with $13.6\,\text{eV}$.
+
+## Vanhan sisällön löydökset
+None.
 
 ## Checked
-batch delta review: the new inflation paragraph (about 40 words) follows the Big Bang paragraph logically, names the term, says why it is proposed and that it is unobserved (honest hypothesis framing); no tasks, feedback or solutions depend on it and no number or figure is touched.
+batch delta review: changed "Pysähdy ja mieti"; $0.7/1100 \approx 6\cdot 10^{-4}\,\text{eV}$ correct, the new setup is more realistic (a typical photon, not a threshold one) and consistent with the $3000\,\text{K}$ text.

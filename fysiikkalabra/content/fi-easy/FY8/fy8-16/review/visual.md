@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 20fe97b046c6acc0
+CONTENT-HASH: fe52cbbdc4f2f8fa
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] lesson.md, new inflation paragraph: for S2 readers "hypoteesin" and "suurissa mittakaavoissa" could be glossed in a few words (e.g. "hypoteesi eli tieteellinen olettamus").
+- none
+
+## Vanhan sisällön löydökset
+- none noticed
 
 ## Checked
-batch delta review: new Finnish paragraph on kosminen inflaatio (short, one idea, bold term, no plain quantities); fig-row-1280 capture opened, layout intact; typography re-sets render cleanly.
+- batch delta review: opened fy8-16-stage-selita-390-4 (changed "Pysähdy ja mieti" box: $3000\,\text{K}$:n, $0{,}7\,\text{eV}$, 1100-kertaiseksi render well, no clipping); the changed answer ($6\cdot 10^{-4}\,\text{eV}$, $13{,}6\,\text{eV}$) is behind the closed Vastaus button and was read from the diff: units upright, \cdot used, decimal comma correct. Hash re-run at end unchanged.

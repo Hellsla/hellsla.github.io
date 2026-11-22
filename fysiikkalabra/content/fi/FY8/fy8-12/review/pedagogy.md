@@ -1,6 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 839e9fe5367a7bcf
+CONTENT-HASH: 84f5be0ad7226b0f
 ## Blocking
+-
 ## Polish
+Palautteessa '4762' on nelinumeroinen, vaikka data on kolminumeroista; kirjoita $4{,}76\cdot10^{3}$ ennen pyöristystä (vanha sisältö).
 ## Checked
-batch delta review: the solution of the half-value-thickness graph task now writes the unit as min^-1 instead of 1/min; consistent with the task's "pulssia minuutissa", same numbers (800 to 400), steps and answer unchanged.
+batch delta review: uudet Pysähdy ja mieti -laatikot: laskut tarkistettu, kysymys ratkaistavissa opitulla, palaute korjaa käsitteen; vanhasta sisällöstä ei löydöksiä (Vanhan sisällön löydökset: ei).
