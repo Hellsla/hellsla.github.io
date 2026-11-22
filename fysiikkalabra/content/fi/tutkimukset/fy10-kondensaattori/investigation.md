@@ -269,41 +269,16 @@ Tarkista ennen kytkemistä kaksi asiaa. Elektrolyyttikondensaattorin plusnapa ky
 Yksi mahdollinen kytkentä: vaihtokytkimen asennossa A kondensaattori varautuu jännitelähteestä vastuksen kautta, ja asennossa B se purkautuu saman vastuksen kautta. Jännitemittari tai jänniteanturi on kytketty kondensaattorin rinnalle.
 
 <svg data-fig="circuit" viewBox="0 0 600 330" role="img" aria-label="Kytkentäkaavio. Vasemmalla on tasajännitelähde, jonka jännite on U nolla. Vaihtokytkimen asennossa A lähde, vastus R ja kondensaattori C ovat samassa virtapiirissä, jolloin kondensaattori varautuu. Asennossa B lähde on irti, ja kondensaattori purkautuu vastuksen R kautta. Jännitemittari V on kytketty kondensaattorin rinnalle. Kondensaattorin plusnapa on vastuksen puolella, joka on asennossa A kytketty lähteen plusnapaan." style="max-width:100%;font-size:24px">
-  <line x1="80" y1="60" x2="80" y2="150" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="54" y1="150" x2="106" y2="150" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="68" y1="166" x2="92" y2="166" stroke="#1f2933" stroke-width="6" stroke-linecap="butt"/>
-  <line x1="80" y1="166" x2="80" y2="290" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <image href="pics/fy10/fy10-kondensaattori-circuit.webp" x="1.2" y="-1.2" width="597" height="335.8" preserveAspectRatio="none"/>
   <foreignObject x="13" y="143.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$U_0$</div></foreignObject>
-  <foreignObject x="112" y="121.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$+$</div></foreignObject>
-  <foreignObject x="112" y="167.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$-$</div></foreignObject>
-  <line x1="80" y1="60" x2="230" y2="60" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="80" y1="290" x2="470" y2="290" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="230" y1="130" x2="230" y2="290" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <circle cx="230" cy="60" r="6" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="230" cy="130" r="6" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="290" cy="95" r="6" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="286" y1="91" x2="236" y2="64" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <foreignObject x="116" y="124.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$+$</div></foreignObject>
+  <foreignObject x="115" y="170.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$-$</div></foreignObject>
   <foreignObject x="220" y="17.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{A}$</div></foreignObject>
   <foreignObject x="194" y="115.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{B}$</div></foreignObject>
-  <circle cx="230" cy="290" r="5" fill="#1f2933"/>
-  <line x1="296" y1="95" x2="320" y2="95" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="320" y="80" width="90" height="30" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <line x1="410" y1="95" x2="470" y2="95" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <foreignObject x="355" y="41.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$R$</div></foreignObject>
-  <line x1="470" y1="95" x2="470" y2="180" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="444" y1="180" x2="496" y2="180" stroke="#1f2933" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M444,202 Q470,190 496,202" fill="none" stroke="#1f2933" stroke-width="5" stroke-linejoin="round"/>
-  <line x1="470" y1="196" x2="470" y2="290" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <foreignObject x="416" y="176.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$C$</div></foreignObject>
-  <foreignObject x="500" y="151.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$+$</div></foreignObject>
-  <circle cx="470" cy="140" r="5" fill="#1f2933"/>
-  <circle cx="470" cy="250" r="5" fill="#1f2933"/>
-  <line x1="470" y1="140" x2="550" y2="140" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="550" y1="140" x2="550" y2="171" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <circle cx="550" cy="195" r="24" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="407" y="176.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$C$</div></foreignObject>
+  <foreignObject x="504" y="148.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$+$</div></foreignObject>
   <foreignObject x="540" y="180.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{V}$</div></foreignObject>
-  <line x1="550" y1="219" x2="550" y2="250" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="550" y1="250" x2="470" y2="250" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
 </svg>
 :::
 

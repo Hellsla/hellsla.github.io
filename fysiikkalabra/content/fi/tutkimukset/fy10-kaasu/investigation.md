@@ -3,72 +3,7 @@
 > **Tutkimuskysymys:** Miten suljetun kaasun paine riippuu sen tilavuudesta ja lämpötilasta, ja kuinka hyvin mittaukset noudattavat ideaalikaasun mallia?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: laboratorion työpöydällä on vasemmalla mäntäruisku, joka on liitetty lyhyellä letkulla paineanturiin. Keskellä lasikolvi on upotettu vesihauteeseen, ja sen tulpasta lähtee letku toiseen paineanturiin hauteen ulkopuolella. Hauteessa on myös lämpötila-anturi. Oikealla on astia jäävettä ja vedenkeitin. Taaempana on kannettava tietokone, johon anturit on kytketty johdoilla." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy10kh-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#dfe9ef"/></linearGradient><linearGradient id="fy10kh-desk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy10kh-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#fy10kh-wall)"/>
-  <rect x="0" y="470" width="1200" height="130" fill="url(#fy10kh-desk)"/>
-  <line x1="0" y1="492" x2="1200" y2="488" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="514" x2="1200" y2="510" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="536" x2="1200" y2="532" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="558" x2="1200" y2="554" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="580" x2="1200" y2="576" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="470" x2="1200" y2="470" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M470,300 L760,300 L780,330 L450,330 Z" fill="#6c757d" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <rect x="490" y="130" width="250" height="170" rx="8" fill="#1f2933" stroke="#1f2933" stroke-width="3"/>
-  <rect x="504" y="144" width="222" height="142" fill="#ffffff"/>
-  <line x1="514" y1="166" x2="716" y2="166" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="514" y1="186" x2="716" y2="186" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="514" y1="206" x2="716" y2="206" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="514" y1="226" x2="716" y2="226" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="514" y1="246" x2="716" y2="246" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="514" y1="266" x2="716" y2="266" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="615" y1="152" x2="615" y2="278" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="230" y="413" width="97" height="34" fill="#eef5f9"/>
-  <rect x="120" y="410" width="210" height="40" rx="4" fill="none" stroke="#1f2933" stroke-width="3"/>
-  <rect x="330" y="424" width="22" height="12" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="218" y="413" width="12" height="34" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="50" y="425" width="168" height="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <rect x="38" y="408" width="12" height="44" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="114" y="398" width="6" height="64" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <line x1="140" y1="410" x2="140" y2="417" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="160" y1="410" x2="160" y2="417" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="180" y1="410" x2="180" y2="417" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="200" y1="410" x2="200" y2="417" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="220" y1="410" x2="220" y2="422" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="240" y1="410" x2="240" y2="417" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="260" y1="410" x2="260" y2="417" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="280" y1="410" x2="280" y2="417" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="300" y1="410" x2="300" y2="417" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <path d="M352,430 C380,430 380,440 400,440" fill="none" stroke="#1f2933" stroke-width="7" stroke-linejoin="round"/>
-  <rect x="400" y="418" width="96" height="46" rx="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="412" y="430" width="72" height="22" rx="3" fill="#ffffff" stroke="#8a96a3" stroke-width="1.5"/>
-  <path d="M496,440 C530,440 520,380 560,340 L560,330" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M600,300 V460 Q600,470 610,470 H820 Q830,470 830,460 V300" fill="#eef5f9" stroke-linejoin="round"/>
-  <path d="M603,330 H827 V460 Q827,467 820,467 H610 Q603,467 603,460 Z" fill="url(#fy10kh-water)" stroke-linejoin="round"/>
-  <path d="M600,300 V460 Q600,470 610,470 H820 Q830,470 830,460 V300" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="679" y="300" width="22" height="68" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="690" cy="410" r="48" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
-  <rect x="681" y="358" width="18" height="12" fill="#eef5f9"/>
-  <rect x="675" y="284" width="30" height="20" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M690,284 V252 Q690,232 710,232 H830 Q846,232 846,252 V447 H852" fill="none" stroke="#1f2933" stroke-width="7" stroke-linejoin="round"/>
-  <rect x="852" y="424" width="96" height="46" rx="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="864" y="436" width="72" height="22" rx="3" fill="#ffffff" stroke="#8a96a3" stroke-width="1.5"/>
-  <path d="M900,424 C900,360 800,340 765,318" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="781" y="290" width="10" height="160" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="776" y="270" width="20" height="26" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M786,270 C786,230 760,250 740,300" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M970,340 V460 Q970,470 980,470 H1080 Q1090,470 1090,460 V340" fill="#eef5f9" stroke-linejoin="round"/>
-  <path d="M973,370 H1087 V460 Q1087,467 1080,467 H980 Q973,467 973,460 Z" fill="url(#fy10kh-water)" stroke-linejoin="round"/>
-  <path d="M970,340 V460 Q970,470 980,470 H1080 Q1090,470 1090,460 V340" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="970" y="372" width="32" height="28" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
-  <rect x="1006" y="366" width="32" height="28" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
-  <rect x="1042" y="374" width="32" height="28" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
-  <rect x="988" y="404" width="32" height="28" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
-  <rect x="1026" y="410" width="32" height="28" rx="5" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
-  <path d="M1150,392 Q1180,392 1180,420 Q1180,452 1162,456" fill="none" stroke="#1f2933" stroke-width="8" stroke-linejoin="round"/>
-  <path d="M1100,470 L1108,384 Q1112,364 1132,364 H1140 Q1158,364 1160,384 L1166,470 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M1104,420 L1090,404" fill="none" stroke="#1f2933" stroke-width="6" stroke-linejoin="round"/>
-  <rect x="1118" y="354" width="34" height="12" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <g transform="translate(150,530) rotate(-5)"><rect x="-90" y="-36" width="210" height="68" rx="4" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/><line x1="-74" y1="-20" x2="104" y2="-20" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-74" y1="-8" x2="104" y2="-8" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-74" y1="4" x2="104" y2="4" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-74" y1="16" x2="104" y2="16" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-74" y1="28" x2="104" y2="28" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/></g>
+  <image href="pics/fy10/fy10-kaasu-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 Polkupyörän pumpun mäntä käy yhä raskaammaksi, kun suuaukkoa pitää sormella kiinni, ja auton renkaiden paine on pakkasaamuna eri kuin helteellä. Kaasun paine, tilavuus ja lämpötila riippuvat siis toisistaan. Tässä tutkimuksessa selvität mittaamalla, millaisia riippuvuudet ovat, ja testaat, kuvaako ideaalikaasun malli niitä. Mittaa, piirrä ja päättele itse: tämä sivu kertoo, mitä tutkitaan, ja tukee sinua niin paljon kuin valitsemasi työtapa lupaa.
@@ -178,49 +113,13 @@ Ennen mittaamista päätä ja kirjaa ylös kummastakin sarjasta, mitä muutat, m
 **Osittain ohjattu.** Ensimmäisessä sarjassa ruiskuun suljetaan ilmaa, ja ruisku liitetään paineanturiin. Muutat tilavuutta $V$ männällä ja luet jokaisella tilavuudella paineen $p$. Toisessa sarjassa suljettu, kuiva lasiastia on liitetty paineanturiin, ja astia upotetaan vuorotellen eri lämpötilaisiin vesihauteisiin. Luet hauteen lämpötilan $\theta$ lämpötila-anturista ja paineen $p$ paineanturista.
 
 <svg data-fig="setup" viewBox="0 0 600 470" role="img" aria-label="Kaaviokuva kahdesta mittausjärjestelystä. Ylhäällä mäntäruisku, jonka tilavuus V luetaan ruiskun asteikolta, on liitetty lyhyellä letkulla paineanturiin, joka mittaa paineen p. Alhaalla lasikolvi on upotettu vesihauteeseen. Kolvin tulpasta lähtee lyhyt letku hauteen ulkopuolella olevaan paineanturiin, joka mittaa paineen p. Hauteessa kolvin vieressä on lämpötila-anturi, joka mittaa hauteen lämpötilan theta." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy10ks-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
-  <rect x="230" y="71" width="127" height="38" fill="#eef5f9"/>
-  <rect x="150" y="68" width="210" height="44" rx="4" fill="none" stroke="#1f2933" stroke-width="3"/>
-  <rect x="360" y="84" width="22" height="12" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="218" y="71" width="12" height="38" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="80" y="85" width="138" height="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <rect x="68" y="66" width="12" height="48" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="144" y="56" width="6" height="68" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <line x1="170" y1="68" x2="170" y2="75" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="190" y1="68" x2="190" y2="75" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="210" y1="68" x2="210" y2="75" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="230" y1="68" x2="230" y2="75" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="250" y1="68" x2="250" y2="80" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="270" y1="68" x2="270" y2="75" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="290" y1="68" x2="290" y2="75" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="310" y1="68" x2="310" y2="75" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="330" y1="68" x2="330" y2="75" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="230" y1="46" x2="382" y2="46" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="230" y1="38" x2="230" y2="54" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="382" y1="38" x2="382" y2="54" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
+  <image href="pics/fy10/fy10-kaasu-setup.webp" x="1.2" y="0" width="597" height="471.4" preserveAspectRatio="none"/>
   <foreignObject x="296" y="9.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$V$</div></foreignObject>
-  <path d="M382,90 H440" fill="none" stroke="#1f2933" stroke-width="7" stroke-linejoin="round"/>
-  <rect x="440" y="67" width="96" height="46" rx="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="452" y="79" width="72" height="22" rx="3" fill="#ffffff" stroke="#8a96a3" stroke-width="1.5"/>
   <foreignObject x="415.5" y="121.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{paineanturi}$</div></foreignObject>
   <foreignObject x="552" y="75.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$p$</div></foreignObject>
   <foreignObject x="213.5" y="125.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{ruisku}$</div></foreignObject>
-  <line x1="20" y1="176" x2="580" y2="176" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M70,250 V440 Q70,450 80,450 H340 Q350,450 350,440 V250" fill="#eef5f9" stroke-linejoin="round"/>
-  <path d="M73,280 H347 V440 Q347,447 340,447 H80 Q73,447 73,440 Z" fill="url(#fy10ks-water)" stroke-linejoin="round"/>
-  <path d="M70,250 V440 Q70,450 80,450 H340 Q350,450 350,440 V250" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="169" y="240" width="22" height="78" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="180" cy="370" r="58" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>
-  <rect x="171" y="308" width="18" height="12" fill="#eef5f9"/>
-  <rect x="165" y="224" width="30" height="20" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M180,224 V212 Q180,200 192,200 H478 Q498,200 498,220 V226" fill="none" stroke="#1f2933" stroke-width="7" stroke-linejoin="round"/>
-  <rect x="450" y="226" width="96" height="46" rx="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="462" y="238" width="72" height="22" rx="3" fill="#ffffff" stroke="#8a96a3" stroke-width="1.5"/>
   <foreignObject x="558" y="234.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$p$</div></foreignObject>
   <foreignObject x="425.5" y="281.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{paineanturi}$</div></foreignObject>
-  <rect x="296" y="260" width="10" height="160" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="291" y="236" width="20" height="28" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="306" y1="380" x2="366" y2="380" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="372" y="347.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\theta$</div></foreignObject>
   <foreignObject x="372" y="381.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{lämpötila-anturi}$</div></foreignObject>
   <foreignObject x="150" y="417.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#ffffff">$\text{vesihaude}$</div></foreignObject>
