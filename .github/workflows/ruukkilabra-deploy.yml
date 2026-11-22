@@ -59,7 +59,7 @@ jobs:
           fi
           echo "sha=$sha" >> "$GITHUB_OUTPUT"; echo "publishing $sha" | tee -a "$GITHUB_STEP_SUMMARY"
       - uses: actions/checkout@v4
-        with: { ref: "${{ steps.pick.outputs.sha }}", path: src, fetch-depth: 0 }   # a manual run builds: the build reads the exercises' reviewed version from history
+        with: { ref: "${{ steps.pick.outputs.sha }}", path: src, fetch-depth: "${{ github.event_name == 'workflow_dispatch' && 0 || 1 }}" }   # a manual run builds: the build reads the exercises' reviewed version from history
       - uses: actions/checkout@v4
         with: { repository: Hellsla/ruukkilabra, ssh-key: "${{ secrets.RUUKKILABRA_DEPLOY_KEY }}", path: out, persist-credentials: true }
       - name: a newer site is not overwritten by an older one (.source-sha of the published repository)
@@ -96,6 +96,7 @@ jobs:
         if: steps.fresh.outputs.go && (github.event_name == 'workflow_dispatch' || steps.artifact.outcome == 'failure')
         working-directory: src/fysiikkalabra
         run: |
+          if [ "$(git rev-parse --is-shallow-repository)" = true ]; then git fetch -q --unshallow; fi   # the build reads the exercises' reviewed version from history
           python -m pip install -q -r requirements-ci.txt
           python scripts/build.py
           mv site ../../built-site
