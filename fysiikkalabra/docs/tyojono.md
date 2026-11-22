@@ -187,6 +187,10 @@ Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jäl
 - Podcastit-sivun (fi) muu kieli -laatikon teksti (opettaja 2026-11-18 klo 19.00, "käy"): lead "Haluatko kuulla fysiikkaa myös englanniksi?"; text "Tutustu englanninkielisiin fysiikan podcasteihin, dokumentteihin ja opetusvideoihin. Tutut ilmiöt avautuvat uudesta näkökulmasta, ja samalla opit fysiikan sanastoa englanniksi."; link ennallaan.
 - Opettajan päätökset 2026-11-19 aamulla (koordinaattorin chatissa, "Kaikki ok"): FY3 FY3 fy3-8 sanamuoto ja fy3-11:n 480 kW:n tehtävän ratkaisun perustelu (loppunolla on merkitsevä, ei pyöristysohjetta; P7-sääntöä ei muutettu) tehty (FY3-paketti); jaetut yksi kerrallaan: header 72 rem → CI-tarkistus site/-sivujen poistolle → 0g PR 2; rinnalla 5d FY2 (37) ja FY3 (23) riviä.
 - Kirjavinkkien Finna-tietuelinkit ja podcastien YouTube-linkit odottavat: Finna estää koneellisen haun (Cloudflare), YouTube-linkki vaatisi jaetun muutoksen (`media_tips.py`) ja opettajan päätöksen.
+- Pysähdy ja mieti FY7 (#779): **opettaja 2026-11-21 klo 16.4x ("hyväksyn", koordinaattorin suositus 1)**: fy7-1:lle neljäs, rajattu katselmointikierros (tiede en/fi/fi-easy delta ja pedagogia delta), vain tähän lukuun; PASS, yhdistetty.
+- Pysähdy ja mieti FY8 (#783): kolmen kierroksen jälkeen 13/16 lukua PASS; fy8-4 (fi-easy, √N), fy8-15 (kvarkit) ja fy8-16 (taustasäteilyn fotoni) estävät. Kysytty opettajalta 2026-11-21 klo 20.37: (1) neljäs rajattu kierros näille kolmelle tai (2) niiden laatikot pois, luvut mainin tilaan (sivut säilyvät).
+- FY8-tekijä käynnisti 2026-11-21 Workflow-työkalun ilman lupaa ja pysäytti sen heti (raportteja ei syntynyt); tekijäkehotteissa nyt "älä käytä Workflow-työkalua".
+- Mahdollinen myöhempi sisältötyö: FY3/5/6:n käsin jaetut Pysähdy-ketjut (fy3-4, fy5-3, fy5-9, fy6-4, fy6-6…8, fy6-11…16) yhdeksi ketjuksi `mathlayout.display_chains`in (#782) varaan; sanamuoto muuttuu, joten katselmointi.
 
 ## 22. Tehtävän pieni taulukko ja kuva vierekkäin leveällä näytöllä (opettaja 2026-11-19 klo 07.20, kuvakaappaus fy8-3)
 Varattu: claude/22-taulukko-kuva
@@ -194,6 +198,7 @@ Jaettu (build.py / site.css), yksin, #740:n ja #733:n jälkeen ennen kohtaa 21 (
 
 ## 24. Uudet kuvat sivustolle (opettaja 2026-11-19; kuvat hyväksytty 15.–18.11.)
 Varattu: claude/24-osa3-fy3 (osa 3, FY3, draft-PR)
+Osa 5 (FY5, 87/94 kuvaa) tehty: PR #785, `approve-figures fy5-1…fy5-17 --images` ajettu opettajan luvalla (opettaja 2026-11-21 suoraan tekijäsessioon: "Hyväksyn FY5-kuvat ja tyhjän reunan rajauksen kuviin fy5-3/karuselli ja fy5-4/muutos"), site/ ja palautus/ rakennettu, ennen/jälkeen docs/audits/img24-fy5/; odottaa koordinaattorin yhdistämistä. Avoin: `fy5-koe/fy5-k2-board`, `fy5-k2-fbd`, `fy5-k3-fbd`, `fy5-k5-modes`, `fy5-sovella/fy5-s1-crane` (jaettu figimage-korjaus); `fy5-10/types` "harvennus" → "harventuma" (sanan vaihto kaikkialla, ei tässä PR:ssä); `fy5-9/heiluri` ja `fy5-17/maapallo` ennallaan (PAATOS). fy9-aallot ja fy9-ympyraliike käyttävät FY5-kuvia: kuvien carry ajettu (`carry-item unit`).
 Osa 1 (kuvapohja) ja FY2-pilotti tehty (#768, `scripts/figimage.py`, NOTES.md §3); osat 2–11 vapaat.
 662 Codexin uudelleen piirtämää kuvaa FY1–FY10 ja FY14, opettaja hyväksynyt ja tarkistanut vaihdettaviksi. Lähde: haara
 `claude/dazzling-pasteur-kws2vo`, kansio `uudet_kuvat/` (README, `<MODUULI>-hyvaksytyt-kuvat.zip`: `kuvat/`, `merkinnoin/`,
@@ -223,6 +228,7 @@ Huomiot: FY3 seitsemän kuvaa tunnistetaan kuvauksesta (`~lesson-N`); FY5 `fy5-1
 (lähde ja `glossary.json` vanhalla sanalla: kysytty opettajalta, muutetaanko kaikkialla); FY8 suurennettu kuvankäsittelyllä
 (pienentämättömät korvaavat, jos opettaja toimittaa); FY9 11 voimakuviota kuvauksesta (`nimeton-N`); FY14 sivut englanniksi;
 `PAATOS.txt`:n mittasuhde- ja yksityiskohtahuomiot hyväksytty sellaisinaan, ei korjata. Koordinaattori yhdistää kohdan PR:t opettajan moduulihyväksynnän jälkeen (opettaja 2026-11-19).
+Tilanne 2026-11-21 illalla: FY1 (#771), FY3 (#776), FY4 (#780) ja FY5 (#785) yhdistetty. FY3:n `fy3-12/wall-temperature` rajattiin samalla perusteella kuin water-column ja earth-flows (koordinaattori, tyhjä reuna, piirros ennallaan). Koe- ja Sovella-kuvien jaetut korjaukset: #782 (`figimage.code_of`), #787 (`practice.figures` → `figimage.apply`), #789 (`build.py` kopioi koe- ja Sovella-sivujen kuvat); FY4 (#786, 3 kuvaa) ja FY5 (#788, 5 kuvaa) odottavat opettajan lupaa tekijäsessioon. Avoimet pienet työt: `ci_scope.py` antaa koe/Sovella-kuvalle "full" (`courses.deps()` käy vain oppitunnit); FY1:n tehtäväsarjat fy1-1, fy1-2, fy1-4, fy1-7 ja fy1-8: build varoittaa "exercise reviews are not current" (#771:n kuvat muuttivat tehtävätiedostoja, carry ei kattanut tehtäväsarjoja), joten sivu näyttää viimeksi katselmoidut tehtävät vanhoin kuvin; korjaus tehtäväsarjojen teacher-figure-carryllä.
 
 ## 14. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13; juuri ennen vihkoja)
 Siirretään `ahjo.py` ja `lumatutor.py` jaksopohjan lohkoiksi niin, että sivut pysyvät tavulleen samoina kuten Kilparobotiikassa; puuttuvat lohkot yhteiseen kirjastoon. Jaettu: yksin.
