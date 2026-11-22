@@ -62,8 +62,9 @@ check("code_of: a unit, an investigation or nothing is still None",
 
 check("code_of: a figure of a unit module's unit or of its task set (FY14, FY9)",
       [figimage.code_of(f) for f in ("fy14-plasma/hero", "fy14-plasma-sovella/a", "fy9-aallot/x", "fy9-koe/x")] == ["FY14", "FY14", "FY9", "FY9"])
+check("code_of: an investigation of FY10; a TVT guide is still None", figimage.code_of("fy10-heiluri/hero") == "FY10" and figimage.code_of("tvt-kuvaaja/a") is None)
 check("code_of: a course that has no unit of that name is still None", figimage.code_of("fy4-plasma/x") is None)
-check("a unit module's pictures: slug and layout file", set(figimage.modules()[-2:]) == {"FY9", "FY14"} and figimage.layout_file("FY14").as_posix().endswith("lessons/FY14/ASETTELU.tsv")
+check("a unit module's pictures: slug and layout file", {"FY9", "FY10", "FY14"} <= set(figimage.modules()) and figimage.layout_file("FY14").as_posix().endswith("lessons/FY14/ASETTELU.tsv")
       and courses.slug("FY14") == "fy14")
 
 # units.py draws a unit figure with a row on its picture, and the picture's bytes are in the unit's hash
@@ -73,6 +74,15 @@ figimage.row, figimage.pic = (lambda fid: UROW if fid == "fy14-plasma/hero" else
 try: _, new, _ = units.draw("fy14-plasma", "en")
 finally: figimage.row, figimage.pic = real_row, real_pic
 check("units.draw puts a unit figure with a row on its picture", new is not None and '<image href="pics/fy14/t-fig.webp"' in new)
+
+# investigations.py draws an investigation figure with a row on its picture, as units.py does
+import investigations
+figimage.row, figimage.pic = (lambda fid: dict(UROW, code="FY10") if fid == "fy10-heiluri/hero" else None), (lambda fid: "pics/fy10/t-fig.webp" if fid == "fy10-heiluri/hero" else None)
+md = investigations.folder("fy10-heiluri") / "investigation.md"; before = md.read_text()
+try:
+    investigations.figures("fy10-heiluri", write=True); after = md.read_text()
+finally: md.write_text(before); figimage.row, figimage.pic = real_row, real_pic
+check("investigations.figures puts a figure with a row on its picture", '<image href="pics/fy10/t-fig.webp"' in after)
 
 # a figure written into a Sovella or exam solutions.md by practice.py is drawn on its picture too (the id is the page's: fy4-koe/<name>, fy4-sovella/<name>)
 import practice
@@ -100,8 +110,8 @@ for code in courses.codes():
         check(f"{fid}: drawn on its picture, labels kept", "<image " in svg and svg.count("<foreignObject") == raw.count("<foreignObject") and svg.count("<text") == 0, f"{svg.count('<foreignObject')} vs {raw.count('<foreignObject')}")
         check(f"{fid}: every shift and flat label names a label", all(0 <= i < raw.count("<foreignObject") for i in [*r["shift"], *r["flat"]]))
 src = (pathlib.Path(__file__).resolve().parent / "build.py").read_text(encoding="utf-8")
-check("build.py copies the pictures of a lesson, a Sovella page, an exam page and a unit (copy_pics)",
-      len(re.findall(r"^\s+copy_pics\(", src, re.M)) == 4, "copy_pics calls")
+check("build.py copies the pictures of a lesson, a Sovella page, an exam page, a unit and an investigation (copy_pics)",
+      len(re.findall(r"^\s+copy_pics\(", src, re.M)) == 5, "copy_pics calls")
 import figimage as F
 total = sum(p.stat().st_size for p in (courses.ROOT / "assets" / "pics").rglob("*") if p.is_file())
 check(f"all the pictures together are under 100 MB ({total / 1e6:.1f} MB)", total < 100e6)

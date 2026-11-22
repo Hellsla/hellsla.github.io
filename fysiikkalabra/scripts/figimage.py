@@ -38,10 +38,13 @@ FIG_REF = re.compile(r'"(?:model_)?figure"\s*:\s*"([^"]+)"|<svg data-fig=\\?"([a
 
 
 def unit_codes():
-    """The modules that are course units, not curriculum courses (FY9, FY14: lessons/units/<code>-<name>/); a module's pictures
-    are then lessons/<CODE>/ASETTELU.tsv and assets/pics/<code>/ as for a course (work queue 24, part 11)."""
-    d = ROOT / "lessons" / "units"
-    return sorted({m.group(1).upper() for p in d.iterdir() if (m := re.match(r"(fy\d+)-[a-z]", p.name))}) if d.is_dir() else []
+    """The modules that are not curriculum courses but have course units (FY9, FY14: lessons/units/<code>-<name>/) or experimental
+    investigations (FY10: lessons/tutkimukset/<code>-<name>/); a module's pictures are then lessons/<CODE>/ASETTELU.tsv and
+    assets/pics/<code>/ as for a course, a figure's id is the unit's or investigation's (work queue 24, parts 9–11)."""
+    out = set()
+    for d in (ROOT / "lessons" / "units", ROOT / "lessons" / "tutkimukset"):
+        if d.is_dir(): out |= {m.group(1).upper() for p in d.iterdir() if (m := re.match(r"(fy\d+)-[a-z]", p.name))}
+    return sorted(out)
 
 
 def modules():
@@ -72,7 +75,8 @@ def layout(code):
 
 def code_of(fid):
     """The module a figure id belongs to (fy2-4/grid -> FY2; also the module's exam and Sovella set: fy4-koe/x, fy4-sovella/x -> FY4; a unit of a unit module:
-    fy14-plasma/x -> FY14), or None (a unit of another course, an investigation)."""
+    fy14-plasma/x -> FY14; an investigation fy10-heiluri/x -> FY10), or None (a unit or investigation of no such module,
+    a TVT guide)."""
     owner = (fid or "").split("/")[0]
     m = re.match(r"^([a-z]+)(\d+)-(?:[0-9][0-9a-z]*|koe|sovella)$", owner)   # a lesson, the exam or the Sovella set of a module (not a unit or an investigation)
     code = f"{m.group(1).upper()}{m.group(2)}" if m else None

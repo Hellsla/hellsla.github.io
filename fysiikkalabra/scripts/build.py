@@ -1450,6 +1450,7 @@ def build_language(lang):
                 print(f"{'::warning::' if os.environ.get('GITHUB_ACTIONS') else 'WARNING:'} {iid}.html is on the live site but its reviews are not current; this build removes it")
             continue
         d = investigations.load(iid, lang); course = d["courses"][0]
+        copy_pics(iid, [(investigations.folder(iid, lang) / n).read_text() for n in investigations.TEXTS if (investigations.folder(iid, lang) / n).is_file()])   # the base pictures of figures (scripts/figimage.py, work queue 24)
         body, itoc = investigations.render(iid, lang, T, lambda t: nbsp_units(render_md(t)), chapters, published)
         html = (texts(tpl).replace("{{title}}", esc(d["title"])).replace("{{course}}", course).replace("{{notice}}", "" if st["state"] == "reviewed" else f'<p class="notice" role="note">{T("investigation.notice_draft")}</p>')
                 .replace("{{strings}}", strings_block(None)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=course)))
