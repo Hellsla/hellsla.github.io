@@ -11,8 +11,7 @@ Ennalleen: PAATOS.txt:n 7 "alkuperäinen pidetään" -kuvaa (`fy14-fusion-reacti
 Huomiot (PAATOS.txt, hyväksytty sellaisinaan): `fy14-atom-models/levels` (mittakaava mittaamatta), `fy14-binding-energy/ladder` (protonien plusmerkit puuttuvat),
 `fy14-confinement-concepts/icf` (vaihekehykset poistettu), `fy14-fr-cadarache/map` (beige valkoiseksi, kaupunkien nimet siirretty), `fy14-secret-fusion/pinch`, `fy14-tokamak-stellarator/toroidal` (kelojen määrä ja säteet tarkistamatta).
 
-ASETTELU.tsv:n rivin ylitys viewBoxista (14 riviä, yli 0,5 yksikköä; rajaus vain opettajan luvalla, ei tehty; 1 yksikkö ≈ 1 px 600 px leveällä kuvalla), suurin ensin:
-- `fy14-confinement-concepts/aspect`: oikealle 12.2, alas 15.1
+ASETTELU.tsv:n rivin ylitys viewBoxista (13 riviä, yli 0,5 yksikköä; rajaus vain opettajan luvalla, ei tehty; 1 yksikkö ≈ 1 px 600 px leveällä kuvalla), suurin ensin:
 - `fy14-photoelectric/energy`: alas 9.0
 - `fy14-confinement-concepts/pinch`: alas 7.4
 - `fy14-secret-fusion/neutrons`: ylös 2.5, oikealle 1.2, alas 6.3
@@ -27,3 +26,5 @@ ASETTELU.tsv:n rivin ylitys viewBoxista (14 riviä, yli 0,5 yksikköä; rajaus v
 - `fy14-atom-models/levels`: alas 2.5
 - `fy14-fr-cadarache/map`: ylös 1.5
 Leikkautuva kaista on joka rivillä pelkkää taustaa (ei-taustapikseleitä 0, taustaksi kuvan kulmapikseli ±24).
+
+`fy14-confinement-concepts/aspect`: koordinaattorin päätöksellä (check_layout `svg-image` kaatui leveyksillä 640–1920 px, ylitys oikealle 12,2 ja alas 15,1 yksikköä) WebP rajattu viewBoxin kokoiseksi (600 × 300 yksikköä; uudelleenkoodaus paketin alkuperäisestä PNG:stä, laatu 82, pudotetut kaistat pelkkää taustaa: ei-taustapikseleitä 0) ja rivin laatikoksi (0, 0, 600, 300) samalla mittakaavalla; piirros näkyy täsmälleen samana. `check_layout` ok kaikilla 8 leveydellä. Kuvan tavut muuttuivat, joten sen hyväksyntä on kirjattava uudelleen (`approve-figures`, carry) vasta kun opettaja on hyväksynnyt rajatun kuvan; ennen/jälkeen-kuva `fy14-confinement-concepts_aspect_en_*.webp` päivitetty.
