@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: d5ca2d340cc532bf
+CONTENT-HASH: d5f34c806d597277
 
 ## Blocking
-- none
 
 ## Polish
-- The answer quotes the spread +-14 and +-44 without saying it is the square root of the count; the pupil cannot work it out and the question 'which is more even' is answered only by the given numbers. Add one sentence (spread is about the square root of the count) to the solution.
-
-## Checked
-batch delta review: 3 boxes: expected hits (200 and 2000 verified), photon momentum p = h/lambda, red vs blue photon rate; clear and well placed.
+- The solution says $\sqrt{2000} \approx 44$; it is $44.7$, which rounds to $45$ (and $45/2000 \approx 2\,\%$ still holds). Write $\approx 45$.
+- "Roughly the square root of the expected number" is new for a student and given without a reason; one clause ("hits are random, independent events") would let the student argue it rather than accept it.
 
 ## Vanhan sisällön löydökset
-- none
+None.
+
+## Checked
+batch delta review: changed "Pysähdy ja mieti" solution, the square-root rule replaces the bare "$\pm 14$"; clear, consistent with the question, percentages follow ($14/200 = 7\,\%$).

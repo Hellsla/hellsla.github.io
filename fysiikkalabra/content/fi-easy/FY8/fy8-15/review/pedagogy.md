@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 95c07eabab23ab98
-
+CONTENT-HASH: 6e2bb22260bd5517
 ## Blocking
 (none)
-
 ## Polish
-- Laatikko 1: 'hiukkaskasoja' on outo sana; käytä 'hiukkasia'. Ratkaisun peruste 'kokonaisluku e:n monikertana' on pelkkä sääntö; lisää, että murtovarausta ei havaita vapaana.
-- Laatikko 3: Q-nimen yhteys reaktioenergiaan (luku Massavaje) voisi näkyä.
-
+- The answer says "vapaina" for hadrons; the surrounding text could remind the student that a free particle is one seen alone (confinement). It is understandable as is.
 ## Vanhan sisällön löydökset
-(none; ei Blocking)
-
+(none)
 ## Checked
-batch delta review: 3 uutta laatikkoa; varaukset oikein (+e, +e, +1/3 e), gravitaatio-perustelu ja Q = -5 MeV oikein.
+batch delta review: reworded pysahdy box on quark combinations. The question now asks which can exist as free particles; the answer calculates the charges and links them to meson, baryon and the non-hadron ud. This fixes the earlier mismatch between charge and detectability.

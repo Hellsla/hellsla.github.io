@@ -1,14 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: 5294205c92e5e11c
-
+VERDICT: PASS
+CONTENT-HASH: 46bfd9cfd7c09eb8
 ## Blocking
-- Laatikko 1 (osumat 5000 / 50 000): ratkaisu antaa vaihtelun $\pm 14$ ja $\pm 44$ perustelematta. Luvussa ei ole neliöjuurisääntöä ($\sqrt{N}$) eikä muuta vaihtelun mitoitusta, joten oppilas ei voi päätellä niitä eikä kysymyksen 'kumpi on tasaisempi' vastausta. Lisää kysymykseen tai ratkaisuun sääntö (vaihtelu noin $\sqrt{N}$) tai poista vaihtelukysymys ja kysy vain odotusarvot.
-
+(none) The previous Blocking finding is fixed: the answer now states that the variation is about the square root of the expected count, then gives 14 (7 %) and 44 (2 %).
 ## Polish
-- Laatikko 2 ja 3 ovat selkeitä ja johdettavissa kaavasta.
-
+- Box 1: sqrt(2000) = 44,7, so "noin 45" (2,2 %) is the accurate rounding, not 44.
+- Box 1 question "suhteellisesti tasaisempi" could say "osuuden vaihtelu", but it is understandable from the answer.
 ## Vanhan sisällön löydökset
-(none; ei Blocking)
-
+(none)
 ## Checked
-batch delta review: 3 uutta laatikkoa; laatikko 2 ja 3 oikein ja sopivat kohtaan, laatikko 1 laskut oikein mutta vaihtelun peruste puuttuu.
+batch delta review: three new pysahdy boxes (hit statistics, photon momentum p=h/λ, photon rate P/hf). Each asks a prediction answerable from the text before the answer, the answers state the rule used, and the content is consistent with the surrounding sections.

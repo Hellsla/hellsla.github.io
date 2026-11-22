@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: cf2b469f8356e0b9
+CONTENT-HASH: 525436d49c3063f1
 
 ## Blocking
-- none
 
 ## Polish
-- Charge box says 'which a detector can register'; the real reason ud is excluded is that hadrons have whole-number charge (and ud is no hadron). Reword to 'which can be a real particle', consistent with the lesson text.
-
-## Checked
-batch delta review: 3 boxes: quark charges (computations correct), gravity vs electric force (neutrality), Q of a decay (-5 MeV, sign interpretation correct).
+- The question now asks which combinations "can exist as free particles", and the solution answers with meson/baryon. This follows the definitions earlier in the chapter (hadron, baryon, meson), but the lesson never says outright that only hadrons are found free (colour confinement). One sentence in the theory would let the student reason to the answer instead of recalling it.
+- Add "(meson or baryon)" or a hint that free particles are hadrons if the box is meant as a quick check.
 
 ## Vanhan sisällön löydökset
-- none
+None.
+
+## Checked
+batch delta review: "Pysähdy ja mieti" wording; charges unchanged and correct, the answer no longer wrongly implies a detector cannot see $ud$, the new reasoning fits the chapter's hadron text.

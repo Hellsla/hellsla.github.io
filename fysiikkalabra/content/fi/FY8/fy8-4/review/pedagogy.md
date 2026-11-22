@@ -1,8 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: 650693dd8b77b4ba
+VERDICT: PASS
+CONTENT-HASH: a5f77d25b810d2e5
+
 ## Blocking
-Pysähdy-laatikko pyytää vertaamaan suhteellista tasaisuutta ja palautteessa on arvot ±14 ja ±44, mutta lukujen (√N-sääntö) alkuperää ei opeteta missään luvussa eikä ratkaisu kerro niiden laskutapaa; opiskelija ei voi päätellä niitä itse. Joko poista osakysymys 'kumpi on tasaisempi' tai lisää palautteeseen sääntö: vaihtelu on noin $\sqrt{N p}$ ($\sqrt{200}\approx 14$, $\sqrt{2000}\approx 44$).
+
 ## Polish
--
+- Kysymys ei pyydä vaihtelun suuruutta, mutta vastaus esittelee neliöjuurisäännön ($\pm 14$, $\pm 44$) ja sanan "vaihtelu" ilman määritelmää. Voisi sanoa "tyypillinen poikkeama odotetusta".
+- Viimeinen virke "osumien osuus on lähempänä $4\,\%$" on hieman epäselvä: parempi "osuma-osuus kohdassa".
+
+## Vanhan sisällön löydökset
+Ei.
+
 ## Checked
-batch delta review: uudet Pysähdy ja mieti -laatikot: laskut tarkistettu, kysymys ratkaistavissa opitulla, palaute korjaa käsitteen; vanhasta sisällöstä ei löydöksiä (Vanhan sisällön löydökset: ei).
+batch delta review: pysahdy-laatikko; edellisen kierroksen Blocking (±14/±44 ilman √N-sääntöä) korjattu, vastaus nyt perustelee säännön ja laskee suhteelliset osuudet ($7\,\%$, $2\,\%$) oikein; tehtävä on perusteltavissa ennen vastausta.

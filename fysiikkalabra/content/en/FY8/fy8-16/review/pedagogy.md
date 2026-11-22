@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4b87060b8e2d343c
+CONTENT-HASH: 90c3bcb6d9655b4b
 
 ## Blocking
-- none
 
 ## Polish
-- none
-
-## Checked
-batch delta review: 3 boxes: Hubble law from galaxy A's viewpoint (4200 km/s, 60 Mpc, no special centre; good), CMB photon 0.012 eV, Hubble a/b (7000 km/s, 200 Mpc); all verified.
+- Say where $0.7\,\text{eV}$ comes from (about $2.7\,kT$ at $3000\,\text{K}$) in the solution, or word it as "about" an average photon; the number is introduced without a source.
+- In the solution, state the result as "about $0.0006\,\text{eV}$" next to $6\cdot 10^{-4}\,\text{eV}$ for easier comparison with $13.6\,\text{eV}$.
 
 ## Vanhan sisällön löydökset
-- none
+None.
+
+## Checked
+batch delta review: changed "Pysähdy ja mieti"; $0.7/1100 \approx 6\cdot 10^{-4}\,\text{eV}$ correct, the new setup is more realistic (a typical photon, not a threshold one) and consistent with the $3000\,\text{K}$ text.

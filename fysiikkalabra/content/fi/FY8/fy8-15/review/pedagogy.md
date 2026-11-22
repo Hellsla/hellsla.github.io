@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3b7fdd0206c26755
+CONTENT-HASH: 55fbb6fec30f1ab6
+
 ## Blocking
--
+
 ## Polish
-Kvarkkilaatikossa $ud$ ei ole todellinen hiukkanen; 'ilmaisin voi havaita' on väljä, mutta tehtävä toimii.
+- Vastaus antaa ymmärtää, että kokonaisluku-varaus riittää vapaaksi esiintymiseen. Varsinainen syy on, ettei kvarkkeja havaita yksin (rajoittuminen); lisää yksi virke tästä.
+- "Ei synny vapaana hiukkasena" kannattaisi sanoa "ei esiinny vapaana".
+
+## Vanhan sisällön löydökset
+Ei.
+
 ## Checked
-batch delta review: uudet Pysähdy ja mieti -laatikot: laskut tarkistettu, kysymys ratkaistavissa opitulla, palaute korjaa käsitteen; vanhasta sisällöstä ei löydöksiä (Vanhan sisällön löydökset: ei).
+batch delta review: pysahdy-laatikko; uusi kysymys ("mitkä voivat esiintyä vapaina") on harhaanjohtavan ilmaisinkehyksen poistettu ja vastaus laskee varaukset oikein ja yhdistää hadronit (mesoni, baryoni) vapaisiin hiukkasiin.

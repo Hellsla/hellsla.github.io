@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 06fd0d500e22f755
-
+CONTENT-HASH: fe52cbbdc4f2f8fa
 ## Blocking
 (none)
-
 ## Polish
-- Laatikko 1: 'emme ole erityinen keskipiste' on hyvä, mutta kysymys voisi nimetä 'A:sta katsottuna' selvemmin.
-- Laatikko 2: 0,012 eV vs 13,6 eV on tuhannesosa, kyllä (1/1100); ok.
-
+- A student may ask why a photon of only 0,7 eV is "typical" while the box is about ionising hydrogen; one half-sentence ("keskimäärin noin 2,7 kT") would help but is not required.
 ## Vanhan sisällön löydökset
-(none; ei Blocking)
-
+(none)
 ## Checked
-batch delta review: 3 uutta laatikkoa (4200 km/s ja 60 Mpc; 0,012 eV; 7000 km/s ja 200 Mpc) oikein ja sopivat kohtiinsa.
+batch delta review: pysahdy box now uses 3000 K typical photon energy 0,7 eV; 0,7/1100 = 6·10^-4 eV is correct and the comparison with 13,6 eV is clearly stated; the question and answer agree.
