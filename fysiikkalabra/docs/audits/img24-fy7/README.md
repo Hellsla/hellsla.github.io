@@ -1,6 +1,6 @@
 # Työjono 24 osa 7: FY7, ennen ja jälkeen
 
-Jokaisessa kuvassa vasemmalla nykyinen sivu (`main`), oikealla uusi kuva samalla sivulla; sticky-palkki, valikko ja sisällysluettelopaneeli piilotettu.
+Jokaisessa kuvassa vasemmalla nykyinen sivu (`main`), oikealla uusi kuva samalla sivulla; sticky-palkki, valikko ja luvun valikkopaneeli (`.ch-menu-panel`) piilotettu.
 Tiedosto `<omistaja>_<nimi>_<kieli>_<leveys>.webp`: kielet `fi`, `en`, `fi-easy`, leveydet 360 px (2× tarkkuus) ja 1280 px.
 89 kuvaa (86 lukukuvaa, `fy7-sovella/fy7-s1-forces`, `fy7-s1-implanter`, `fy7-s4-fibre`; koe-kuvia FY7:ssä ei ole): 534 kuvaa.
 Kuvatiedostot `assets/pics/fy7/` (89 uutta WebP, 2,6 Mt, pisin sivu ≤ 1600 px), asettelu `lessons/FY7/ASETTELU.tsv`.
