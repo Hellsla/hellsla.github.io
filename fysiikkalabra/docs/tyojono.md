@@ -26,7 +26,7 @@ kanssa, jonka katselmoinnit kattavat ne. Ei koskaan jo katselmoitavana olevaan P
 kurssille (FY1–FY9) yhden rivin: mitkä kohdat ovat auki ja missä PR:ssä ne tehdään. Voimaan heti; ei odota muita osia.
 
 ### 0g. `site/` pois sisältö-PR:istä (ensin suunnitelma, pysähdys opettajan hyväksyntään)
-Varattu: claude/0g-pr2-kytkenta (PR 1 varjo #693 yhdistetty; PR 2 kytkentä). Aiempi: claude/0g-site-suunnitelma (#687, suunnitelma `docs/audits/2026-11-17-0g-site-suunnitelma.md`, hyväksytty). Päätökset (opettaja 2026-11-17): A `site/` poistuu kokonaan; vanhat linkit → `ruukkilab.fi` PR 3:ssa; esikatselu = CI-artefakti + muuttuneiden sivujen lista; siirtymä PR 1 varjo → PR 2 kytkentä → PR 3 poisto (ajankohta sovitaan erikseen) → PR 4 mittaus. Toteutus yksin, yksi PR kerrallaan.
+Varattu: claude/0g-pr2-kytkenta (#796, PR 2 kytkentä; PR 1 varjo #693 yhdistetty). Suunnitelma: claude/0g-site-suunnitelma (#687, suunnitelma `docs/audits/2026-11-17-0g-site-suunnitelma.md`, hyväksytty). Päätökset (opettaja 2026-11-17): A `site/` poistuu kokonaan; vanhat linkit → `ruukkilab.fi` PR 3:ssa; esikatselu = CI-artefakti + muuttuneiden sivujen lista; siirtymä PR 1 varjo → PR 2 kytkentä → PR 3 poisto (ajankohta sovitaan erikseen) → PR 4 mittaus. Toteutus yksin, yksi PR kerrallaan.
 Jokainen yhdistetty PR vanhentaa kaikkien avoimien PR:ien `site/`-kopion, joten jokainen haara yhdistää mainin ja
 rakentaa `site/`:n uudelleen keskimäärin 1,6 kertaa (juuren `CLAUDE.md` sääntö 4). Tavoite: sisältö-PR ei sisällä
 `site/`-muutoksia; CI rakentaa sivuston ja `ruukkilabra-deploy.yml` julkaisee rakennetun version mainin ajon jälkeen.

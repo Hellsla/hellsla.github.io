@@ -1,12 +1,15 @@
 # Fysiikkalabra QA for every course: build every lesson (drafts included), run the headless simulation and inquiry
-# tests, check answer positions, carried reviews and the committed site. No AI task repeats these checks.
+# tests, check answer positions, carried reviews and that the build is deterministic. No AI task repeats these checks.
 # This repository serves GitHub Pages from its root branch (the teacher's other sites). Ruukkilabra itself is published at
 # https://ruukkilab.fi/ by .github/workflows/ruukkilabra-deploy.yml after this workflow has passed on main (teacher 2026-11-04).
 # Since 2026-11-11 a push to main is scoped like a pull request (against the commit main had before the push), and a shared
 # change tests a fixed sample of pages (ci_scope.py SMOKE) instead of the whole site; the whole site is tested weekly and by hand.
 # On a pull request the three browser checks (simulations, inquiry tests, layout at eight widths) test only the pages the
 # change can alter (scripts/ci_scope.py; teacher 2026-11-01); a change to anything shared runs them in full. Every other
-# check, and the whole run on main, weekly and on a manual run, is full. A newer push to a pull request cancels its older run.
+# check, and the whole run on main, weekly and on a manual run, is full. Which pages a change can alter is read from two renders
+# of the site (the base commit's and this one's, built in the plan job): site/ is no longer something a pull request builds or commits
+# (work queue 0g PR 2, 2026-11-22). The plan job uploads the head render: `site-preview` on a pull request (open it to see the pages), `site` on
+# main, which ruukkilabra-deploy.yml publishes. A newer push to a pull request cancels its older run.
 #
 # Jobs (2026-11-11; the same commands, pages, widths and verdicts as the one job this workflow was until then):
 #   plan                    which pages the browser checks test, and in how many jobs (scripts/ci_scope.py, ci_parallel.py plan)
@@ -43,7 +46,7 @@ defaults: { run: { working-directory: fysiikkalabra, shell: "bash -e {0}" } }   
 jobs:
   plan:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 45
     outputs:
       pages: ${{ steps.scope.outputs.pages }}
       sims: ${{ steps.scope.outputs.sims }}
@@ -56,42 +59,46 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install -r requirements-ci.txt
-      - name: which pages the browser checks test (a pull request - the pages it can change, or full; scripts/ci_scope.py, teacher 2026-11-01)
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - name: build the site of this commit (site/; the scope, the artifact and the summary read it; work queue 0g PR 2, 2026-11-22)
+        run: |
+          t0=$(date +%s)
+          python scripts/build.py > /tmp/build-head.log 2>&1 || { tail -30 /tmp/build-head.log; exit 1; }
+          echo "head $(( $(date +%s) - t0 )) s" > /tmp/build-times.txt
+      - name: which pages the browser checks test (the pages two renders differ in, the base commit's and this one's, or full; scripts/ci_scope.py, teacher 2026-11-01)
         id: scope
         run: |
-          if [ "${{ github.event_name }}" = pull_request ]; then pages=$(python scripts/ci_scope.py "origin/${{ github.base_ref }}" 2> /tmp/scope.txt) || { pages=full; echo "scripts/ci_scope.py failed: full run" >> /tmp/scope.txt; }
-          elif [ "${{ github.event_name }}" = push ] && [ -n "${{ github.event.before }}" ] && git cat-file -e "${{ github.event.before }}^{commit}" 2> /dev/null; then pages=$(python scripts/ci_scope.py "${{ github.event.before }}" 2> /tmp/scope.txt) || { pages=full; echo "scripts/ci_scope.py failed: full run" >> /tmp/scope.txt; }   # a push to main: what changed since the commit main had before it (every commit of the push); an unknown commit falls through to a full run
-          else pages=full; echo "full run (${{ github.event_name }})" > /tmp/scope.txt; fi
+          base=""
+          if [ "${{ github.event_name }}" = pull_request ]; then base="origin/${{ github.base_ref }}"
+          elif [ "${{ github.event_name }}" = push ] && [ -n "${{ github.event.before }}" ] && git cat-file -e "${{ github.event.before }}^{commit}" 2> /dev/null; then base="${{ github.event.before }}"   # a push to main: what changed since the commit main had before it (every commit of the push); an unknown commit falls through to a full run
+          fi
+          if [ -z "$base" ]; then pages=full; echo "full run (${{ github.event_name }})" > /tmp/scope.txt
+          else
+            t0=$(date +%s)
+            git worktree add --detach /tmp/base-tree "$base" > /dev/null 2>&1
+            if (cd /tmp/base-tree/fysiikkalabra && python scripts/build.py > /tmp/build-base.log 2>&1); then
+              echo "base $(( $(date +%s) - t0 )) s" >> /tmp/build-times.txt
+              pages=$(python scripts/ci_scope.py "$base" --built /tmp/base-tree/fysiikkalabra/site site 2> /tmp/scope.txt) || { pages=full; echo "scripts/ci_scope.py failed: full run" >> /tmp/scope.txt; }
+            else tail -20 /tmp/build-base.log; pages=full; echo "the base commit did not build: full run" > /tmp/scope.txt; fi
+          fi
           echo "pages=$pages" >> "$GITHUB_OUTPUT"
           python scripts/ci_parallel.py plan --pages "$pages" | tee -a "$GITHUB_OUTPUT"
-          { echo "### Browser checks: ${pages:-no page changed}"; sed 's/^/    /' /tmp/scope.txt; } | tee -a "$GITHUB_STEP_SUMMARY"
-      # Shadow run of work queue 0g (PR 1, teacher 2026-11-17): the pages the browser checks would test if site/ were not committed,
-      # from two renders (the base commit's and this one's) instead of the committed site/ diff. It only reports; nothing reads it.
-      - uses: actions/setup-node@v4
+          { echo "### Browser checks: ${pages:-no page changed}"; sed 's/^/    /' /tmp/scope.txt
+            echo "### Builds: $(tr '\n' ',' < /tmp/build-times.txt)"
+            if [ -d /tmp/base-tree/fysiikkalabra/site ]; then echo "### Pages this change alters (two renders)"; python scripts/ci_scope.py --changed /tmp/base-tree/fysiikkalabra/site site | sed 's/^/    /'; fi; } | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: a pull request removes no published page without a row in docs/site-removals.tsv (work queue 20; the pages the base render has and this one lacks)
         if: github.event_name == 'pull_request'
-        with: { node-version: "22" }
-      - name: shadow scope from two renders (work queue 0g PR 1; reports only, never fails the run)
-        if: github.event_name == 'pull_request'
+        run: python scripts/check_site_removals.py --built /tmp/base-tree/fysiikkalabra/site site
+      - name: "the built site against the committed site/ (the hand-over of work queue 0g PR 2 - the main run of the merge must say IDENTICAL; reports only)"
+        if: github.event_name == 'push'
         continue-on-error: true
-        env: { OLD: "${{ steps.scope.outputs.pages }}" }
         run: |
-          base="origin/${{ github.base_ref }}"
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          t0=$(date +%s)
-          git worktree add --detach /tmp/base-tree "$base"
-          (cd /tmp/base-tree/fysiikkalabra && python scripts/build.py > /tmp/build-base.log 2>&1) || { tail -20 /tmp/build-base.log; exit 1; }
-          t1=$(date +%s)
-          python scripts/build.py > /tmp/build-head.log 2>&1 || { tail -20 /tmp/build-head.log; exit 1; }
-          t2=$(date +%s)
-          new=$(python scripts/ci_scope.py "$base" --built /tmp/base-tree/fysiikkalabra/site site 2> /tmp/scope-built.txt) || new="(ci_scope.py --built failed)"
-          if [ "$OLD" = "$new" ]; then verdict="SAME"; else verdict="DIFFERENT"; fi
-          {
-            echo "### Shadow scope from two renders (work queue 0g PR 1): $verdict"
-            echo "- committed site/ diff (in use): \`${OLD:-none}\`"
-            echo "- two renders (shadow):          \`${new:-none}\`"
-            echo "- build of base $((t1-t0)) s, of head $((t2-t1)) s"
-            sed 's/^/    /' /tmp/scope-built.txt
-          } | tee -a "$GITHUB_STEP_SUMMARY"
+          n=$(git status --porcelain site/ | wc -l)
+          if [ "$n" = 0 ]; then echo "### Built site against the committed site/: IDENTICAL" | tee -a "$GITHUB_STEP_SUMMARY"
+          else { echo "### Built site against the committed site/: DIFFERENT ($n paths)"; git status --short site/ | head -40 | sed 's/^/    /'; } | tee -a "$GITHUB_STEP_SUMMARY"; echo "::warning::the built site differs from the committed site/ in $n paths"; fi
+      - uses: actions/upload-artifact@v4   # the site to open (a pull request: site-preview, 14 days) and, on main, the site ruukkilabra-deploy.yml publishes (site)
+        with: { name: "${{ github.event_name == 'pull_request' && 'site-preview' || 'site' }}", path: fysiikkalabra/site, if-no-files-found: error, retention-days: 14 }
   checks-1:   # the sources, the build and the built pages
     runs-on: ubuntu-latest
     container: { image: "mcr.microsoft.com/playwright/python:v1.65.0-noble", options: "--ipc=host" }   # Chromium and its system packages preinstalled (see the header)
@@ -107,10 +114,8 @@ jobs:
       - name: one Playwright version in requirements-ci.txt, the workflow's images and the instructions (scripts/ci_env.py, work queue 5)
         run: python scripts/ci_env.py check
       - run: python scripts/lint_lesson.py --all
-      - name: a pull request removes no published page from site/ without a row in docs/site-removals.tsv (work queue 20; test on every run)
-        run: |
-          python scripts/test_check_site_removals.py
-          if [ "${{ github.event_name }}" = pull_request ]; then python scripts/check_site_removals.py "origin/${{ github.base_ref }}"; fi
+      - name: the check that a pull request removes no published page without a row in docs/site-removals.tsv (work queue 20; the check itself runs in the plan job, from two renders)
+        run: python scripts/test_check_site_removals.py
       - name: every worked example and exercise has a complete model solution (teacher 2026-10-27)
         run: python scripts/check_solutions.py --all
       - name: known physics errors are not taught as fact again (docs/physics-guardrails.md, teacher 2026-10-28)
@@ -135,7 +140,7 @@ jobs:
         run: python scripts/assessment.py --all --check
       - name: competency coverage reports are current (docs/coverage/)
         run: python scripts/coverage.py --all --check
-      - run: python scripts/build.py --all
+      - run: python scripts/build.py --all && python scripts/build.py   # preview/ (every lesson) and site/ (the published ones; it is not committed fresh any more, work queue 0g PR 2)
       - name: the browser checks' runner and gate (plan, shards, verdicts; a page not tested, tested twice or failed fails the gate; scripts/ci_parallel.py, 2026-11-11)
         run: python scripts/test_ci_parallel.py
       - name: ci_scope.py's built mode, the pages to test from two renders instead of the committed site/ diff (work queue 0g PR 1)
@@ -174,7 +179,7 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
       - run: python --version && python -m pip --version && python -m pip install -r requirements-ci.txt   # the container's own Python 3.12 (actions/setup-python's build does not run in it); the browser and its system packages are in the image (the Playwright version requirements-ci.txt pins)
-      - run: python scripts/build.py --all
+      - run: python scripts/build.py --all && python scripts/build.py   # preview/ (every lesson) and site/ (the published ones; it is not committed fresh any more, work queue 0g PR 2)
       - name: the solution editor under every exercise (Abitti's Digabi editor, loaded on the first click; copy for L'Math; teacher 2026-11-01)
         run: python scripts/test_writepad.py
       - name: submission and grading trial, FY3-1 (Lataa ratkaisut, Apps Script import and grading view against a mock; teacher 2026-11-05)
@@ -232,10 +237,12 @@ jobs:
         run: python scripts/reviews.py impact "origin/${{ github.base_ref }}" | tee -a "$GITHUB_STEP_SUMMARY"
       - name: correct options are spread over the positions in every course (as the pages show them)
         run: python scripts/check_choices.py --all
-      - name: committed site/ is exactly a fresh render of the reviewed sources and templates
+      - name: the build is deterministic (two renders of the same commit are the same files; replaces "committed site/ is a fresh render", work queue 0g PR 2)
         run: |
           python scripts/build.py
-          if [ -n "$(git status --porcelain site/)" ]; then echo "site/ is not a fresh render of the reviewed sources (run build.py and commit):"; git status --short site/; exit 1; fi
+          rm -rf /tmp/site-first && cp -a site /tmp/site-first
+          python scripts/build.py
+          diff -rq /tmp/site-first site || { echo "two builds of one commit differ: the pages a pull request alters cannot be told from build noise"; exit 1; }
       - name: the copy published at https://ruukkilab.fi/ (site/ at the root) names none of the teacher's other sites and has no broken relative link (scripts/deploy_site.py, teacher 2026-11-04)
         run: python scripts/deploy_site.py /tmp/ruukkilab
       - run: |
@@ -322,10 +329,15 @@ jobs:
     container: { image: "mcr.microsoft.com/playwright/python:v1.65.0-noble", options: "--ipc=host" }   # Chromium and its system packages preinstalled (see the header)
     timeout-minutes: 150
     steps:
-      - uses: actions/checkout@v4   # the committed site/ is what this check opens (checks-3 fails unless it is a fresh render): no history, no build
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }   # the build reads the exercises' reviewed version from history
       - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"   # the container runs as root; the checkout belongs to the runner's user
         working-directory: .
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
       - run: python --version && python -m pip --version && python -m pip install -r requirements-ci.txt   # the container's own Python 3.12 (actions/setup-python's build does not run in it); the browser and its system packages are in the image (the Playwright version requirements-ci.txt pins)
+      - name: build the site this check opens (site/, built here; it is not committed any more, work queue 0g PR 2)
+        run: python scripts/build.py
       - name: layout (scripts/check_layout.py --site page by page, two at a time; scripts/ci_parallel.py)
         env: { PAGES: "${{ needs.plan.outputs.pages }}" }
         run: python scripts/ci_parallel.py layout --widths "${{ matrix.job.widths }}" --pages "$PAGES" --shard "${{ matrix.job.shard }}" --report "$GITHUB_WORKSPACE/ci-report/layout-${{ strategy.job-index }}.json"

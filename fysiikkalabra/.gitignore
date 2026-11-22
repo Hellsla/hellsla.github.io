@@ -1,6 +1,7 @@
 preview/
 site.tmp/
 site.old/
+site-local/
 **/review/*.png
 **/review/shots/
 **/review/shots.md
