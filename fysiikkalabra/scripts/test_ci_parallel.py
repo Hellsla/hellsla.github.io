@@ -171,5 +171,10 @@ check("scope: nothing changed tests no page", scoped([]) == ("pages", {}))
 k, w = scoped(["content/fi/FY3/fy3-1/lesson.md"]); check("scope: a lesson's text tests that lesson only", k == "pages" and list(w) == ["fy3-1"], f"{k} {w}")
 k, w = scoped(["scripts/build.py"]); check("scope: a script shared by every page tests the sample", k == "pages" and set(w) == SM, f"{k} {sorted(w)}")
 
+# work queue 24: a koe or Sovella picture is used by that course's koe and Sovella pages, not by "no lesson" (full)
+k, w = scoped(["assets/pics/fy4/fy4-koe-fy4-k1-fbd.webp"]); check("scope: an exam picture tests that exam page only", k == "pages" and set(w) == {"FY4-koe"}, f"{k} {w}")
+k, w = scoped(["assets/pics/fy4/fy4-sovella-fy4-s3-collision.webp", "site/pics/fy4/fy4-sovella-fy4-s3-collision.webp"]); check("scope: a Sovella picture tests that Sovella page only", k == "pages" and set(w) == {"FY4-sovella"}, f"{k} {w}")
+k, w = scoped(["lessons/FY4/ASETTELU.tsv"]); check("scope: a layout file names the exam and Sovella pages by their page ids", {"FY4-koe", "FY4-sovella"} <= set(w) and not {"fy4-koe", "fy4-sovella"} & set(w), f"{k} {sorted(w)}")
+
 print(f"\n{passed} passed, {failed} failed")
 sys.exit(1 if failed else 0)

@@ -74,6 +74,18 @@ def page_of(course, lid):
     return f"{course}-{lid}" if lid in ("sovella", "koe") else lid
 
 
+def set_deps():
+    """{picture: [page ids]} of the course Sovella and exam pages (FY4-sovella, FY4-koe): courses.deps() walks the lessons only, so a
+    picture of a task set had no user and the change was a full run (work queue 24). The pictures are the same files in every
+    language, so the Finnish texts decide."""
+    out = {}
+    for d in sorted((courses.ROOT / "content" / courses.SOURCE_LANG).glob("*/*")):
+        if d.name not in ("sovella", "koe") or d.parent.name not in courses.codes(): continue
+        texts = [(d / n).read_text() for n in ("tasks.json", "solutions.md") if (d / n).is_file()]
+        for r in courses.pic_refs_in(texts): out.setdefault(r, []).append(page_of(d.parent.name, d.name))
+    return out
+
+
 def scope(base, built=None):
     """("full", reason) or ("pages", {page id: [why, ...]}).
     built = (base_site_dir, head_site_dir): the two renders replace the committed site/ diff (work queue 0g, PR 1 shadow run)."""
@@ -85,6 +97,7 @@ def scope(base, built=None):
     shared = [f"workflow changed: {wf[0]}"] if wf else []
     if not names and not shared: return "pages", {}
     deps, pages, rendered = courses.deps(), {}, {}
+    for r, us in set_deps().items(): deps.setdefault(r, []).extend(us)   # the task-set pages use pictures too
     add = lambda p, n: pages.setdefault(p, []).append(n)
     for n in names:
         if NOTHING.fullmatch(n) or REVIEW_SYSTEM.fullmatch(n): continue
@@ -95,7 +108,7 @@ def scope(base, built=None):
         if m:
             import figimage
             for fid in figimage.layout(m.group(1)):
-                add(fid.split("/")[0], n)
+                add(re.sub(r"^([a-z]+\d+)-(koe|sovella)$", lambda m: page_of(m.group(1).upper(), m.group(2)), fid.split("/")[0]), n)   # fy4-koe/x is the page FY4-koe
                 for u in deps.get(figimage.pic(fid), []): add(u, n)
             continue
         m = re.fullmatch(r"tests/sims/([^/]+)\.json", n)
