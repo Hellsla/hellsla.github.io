@@ -3,96 +3,7 @@
 > **Miksi** vanhan jouluvalosarjan kaikki lamput sammuvat, kun yksi lamppu rikkoutuu, mutta kotona lattiavalaisin palaa edelleen, vaikka pöytävalaisin sammutetaan?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: olohuone talvi-iltana. Ikkunan yläreunassa roikkuu vanha jouluvalosarja, jonka kaikki lamput ovat pimeinä, koska yksi lamppu on rikki ja roikkuu irti kannastaan. Saman jatkojohdon pistorasioihin kytketyt lattiavalaisin ja pöytävalaisin palavat kirkkaasti." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy64h-floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy64h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f2933"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="#f1dfb5"/>
-  <rect x="0" y="470" width="1200" height="130" fill="url(#fy64h-floor)"/>
-  <line x1="-40" y1="470" x2="-100" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="120" y1="470" x2="60" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="280" y1="470" x2="220" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="440" y1="470" x2="380" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="600" y1="470" x2="540" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="760" y1="470" x2="700" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="920" y1="470" x2="860" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1080" y1="470" x2="1020" y2="600" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="470" x2="1200" y2="470" stroke="#a97a35" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="330" y="70" width="540" height="330" rx="6" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <rect x="348" y="88" width="504" height="294" fill="url(#fy64h-sky)"/>
-  <line x1="600" y1="88" x2="600" y2="382" stroke="#ffffff" stroke-width="12" stroke-linecap="butt"/>
-  <line x1="348" y1="235" x2="852" y2="235" stroke="#ffffff" stroke-width="12" stroke-linecap="butt"/>
-  <circle cx="461.5" cy="319" r="3.72369" fill="#ffffff"/>
-  <circle cx="756" cy="220.5" r="2.03712" fill="#ffffff"/>
-  <circle cx="618.5" cy="257" r="2.4776" fill="#ffffff"/>
-  <circle cx="376.5" cy="182" r="3.0235" fill="#ffffff"/>
-  <circle cx="411.5" cy="141.5" r="2.25352" fill="#ffffff"/>
-  <circle cx="488.5" cy="337.5" r="3.62318" fill="#ffffff"/>
-  <circle cx="827.5" cy="284" r="3.68006" fill="#ffffff"/>
-  <circle cx="565.5" cy="288.5" r="2.5813" fill="#ffffff"/>
-  <circle cx="361.5" cy="175" r="3.59264" fill="#ffffff"/>
-  <circle cx="600" cy="159.5" r="2.76521" fill="#ffffff"/>
-  <circle cx="637" cy="140.5" r="3.79229" fill="#ffffff"/>
-  <circle cx="714" cy="302.5" r="3.00851" fill="#ffffff"/>
-  <circle cx="663" cy="110" r="2.68662" fill="#ffffff"/>
-  <circle cx="369.5" cy="181.5" r="2.19126" fill="#ffffff"/>
-  <circle cx="562" cy="176.5" r="2.40104" fill="#ffffff"/>
-  <circle cx="528.5" cy="255" r="2.08603" fill="#ffffff"/>
-  <circle cx="476.5" cy="104" r="3.40873" fill="#ffffff"/>
-  <circle cx="584" cy="287" r="2.96347" fill="#ffffff"/>
-  <circle cx="519.5" cy="323.5" r="2.20366" fill="#ffffff"/>
-  <circle cx="790.5" cy="355.5" r="3.17081" fill="#ffffff"/>
-  <circle cx="751.5" cy="216" r="3.63777" fill="#ffffff"/>
-  <circle cx="565.5" cy="334.5" r="3.24099" fill="#ffffff"/>
-  <circle cx="818.5" cy="107.5" r="2.27845" fill="#ffffff"/>
-  <circle cx="566" cy="255.5" r="3.44998" fill="#ffffff"/>
-  <circle cx="739.5" cy="332" r="3.68806" fill="#ffffff"/>
-  <circle cx="574" cy="245.5" r="2.45641" fill="#ffffff"/>
-  <path d="M348,382 Q460,362 600,374 T852,370 V382 H348 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <rect x="316" y="398" width="568" height="18" rx="3" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <path d="M330,96 L343.5,105 L357,113.5 L370.5,121.5 L384,129 L397.5,135.5 L411,141.5 L424.5,146.5 L438,150.5 L451.5,153.5 L465,155.5 L478.5,156.5 L492,157 L505.5,157 L519,156 L532.5,155.5 L546,154.5 L559.5,153.5 L573,152.5 L586.5,152 L600,152 L613.5,152 L627,152.5 L640.5,153.5 L654,154.5 L667.5,155.5 L681,156 L694.5,157 L708,157 L721.5,156.5 L735,155.5 L748.5,153.5 L762,150.5 L775.5,146.5 L789,141.5 L802.5,135.5 L816,129 L829.5,121.5 L843,113.5 L856.5,105 L870,96" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <rect x="363.5" y="121.5" width="14" height="14" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="370.5" cy="151.5" rx="11" ry="16" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="404" y="141.5" width="14" height="14" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="411" cy="171.5" rx="11" ry="16" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="458" y="155.5" width="14" height="14" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="465" cy="185.5" rx="11" ry="16" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="498.5" y="157" width="14" height="14" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="505.5" cy="187" rx="11" ry="16" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="539" y="154.5" width="14" height="14" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="546" cy="184.5" rx="11" ry="16" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="593" y="152" width="14" height="14" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="600" cy="182" rx="11" ry="16" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="633.5" y="153.5" width="14" height="14" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="656.5" cy="215.5" rx="11" ry="16" transform="rotate(-30 656.5 215.5)" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <line x1="640.5" y1="167.5" x2="650.5" y2="199.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="674" y="156" width="14" height="14" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="681" cy="186" rx="11" ry="16" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="728" y="155.5" width="14" height="14" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="735" cy="185.5" rx="11" ry="16" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="768.5" y="146.5" width="14" height="14" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="775.5" cy="176.5" rx="11" ry="16" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="809" y="129" width="14" height="14" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="816" cy="159" rx="11" ry="16" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <path d="M330,96 C300,180 290,360 310,470 C330,520 600,500 670,526" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
-  <rect x="620" y="534" width="280" height="34" rx="8" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <rect x="650" y="524" width="40" height="22" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="730" y="524" width="40" height="22" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="810" y="524" width="40" height="22" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="870" y="541" width="20" height="20" rx="4" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="1010" cy="160" r="150" fill="#ffc078" fill-opacity="0.35"/>
-  <circle cx="1010" cy="170" r="90" fill="#ffffff" fill-opacity="0.45"/>
-  <path d="M940,150 L1080,150 L1050,90 L970,90 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M948,150 L1072,150 L1062,132 L958,132 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <line x1="1010" y1="150" x2="1010" y2="500" stroke="#1f2933" stroke-width="6" stroke-linecap="butt"/>
-  <ellipse cx="1010" cy="504" rx="54" ry="12" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <path d="M1010,510 C990,520 860,500 830,526" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
-  <rect x="70" y="352" width="200" height="16" rx="3" fill="#d9b26a" stroke="#1f2933" stroke-width="3"/>
-  <line x1="96" y1="368" x2="96" y2="470" stroke="#1f2933" stroke-width="6" stroke-linecap="butt"/>
-  <line x1="244" y1="368" x2="244" y2="470" stroke="#1f2933" stroke-width="6" stroke-linecap="butt"/>
-  <circle cx="170" cy="250" r="110" fill="#ffc078" fill-opacity="0.35"/>
-  <path d="M120,280 L220,280 L200,220 L140,220 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M126,280 L214,280 L208,264 L132,264 Z" fill="#ffc078" stroke-linejoin="round"/>
-  <line x1="170" y1="280" x2="170" y2="340" stroke="#1f2933" stroke-width="5" stroke-linecap="butt"/>
-  <rect x="138" y="338" width="64" height="14" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <path d="M200,346 C300,360 280,500 420,512 C560,524 700,490 750,526" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
+  <image href="pics/fy6/fy6-4-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Ydinajatus
@@ -102,32 +13,17 @@ Virtapiirissä on usein useampi kuin yksi vastus tai lamppu. Kaksi vastusta void
 Sarjaankytkennässä vastukset ovat peräkkäin, ja varauksilla on vain yksi kulkureitti. Siksi sama virta $I$ kulkee jokaisen vastuksen läpi. Virta ei kulu vastuksessa: varausta ei katoa eikä kasaannu mihinkään piirin kohtaan. Vastuksen jännite kertoo, kuinka paljon kunkin varauksen sähköistä energiaa muuttuu siinä vastuksen sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Pariston jännite jakautuu vastusten kesken, $U = U_1 + U_2$. Ohmin lain mukaan $U_1 = R_1 I$ ja $U_2 = R_2 I$, joten suuremman resistanssin yli on suurempi jännite.
 
 <svg data-fig="series" viewBox="0 0 600 344" role="img" aria-label="Kytkentäkaavio, ei mittakaavassa: paristo ja kaksi vastusta R1 ja R2 sarjassa samassa silmukassa. Violetit virtanuolet kulkevat pariston plusnavasta R1:n ja R2:n kautta takaisin miinusnapaan, ja jokaisen nuolen merkintä on sama I. Sinisillä hakasilla merkityt jännitteet U1 ja U2 ovat vastusten yli, ja pariston jännite on U." style="max-width:100%;font-size:24px">
-  <path d="M86,166 L86,92 L526,92 L526,262 L86,262 L86,194" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <rect x="56" y="166" width="60" height="28" fill="#ffffff"/>
-  <line x1="58" y1="172" x2="114" y2="172" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="73" y1="188" x2="99" y2="188" stroke="#1f2933" stroke-width="8" stroke-linecap="butt"/>
+  <image href="pics/fy6/fy6-4-series.webp" x="0" y="0" width="600" height="355" preserveAspectRatio="none"/>
   <foreignObject x="30" y="143.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$+$</div></foreignObject>
   <foreignObject x="30" y="187.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$-$</div></foreignObject>
   <foreignObject x="126" y="165.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$U$</div></foreignObject>
-  <rect x="208" y="78" width="76" height="28" rx="2" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
   <foreignObject x="229.5" y="39.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$R_1$</div></foreignObject>
-  <path d="M208,119 V126 H284 V119" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="229.5" y="137.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$U_1$</div></foreignObject>
-  <rect x="368" y="78" width="76" height="28" rx="2" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
   <foreignObject x="389.5" y="39.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$R_2$</div></foreignObject>
-  <path d="M368,119 V126 H444 V119" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="389.5" y="137.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$U_2$</div></foreignObject>
-  <line x1="124" y1="76" x2="159" y2="76" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M172,76 L158,82.5 L158,69.5 Z" fill="#7048e8" stroke-linejoin="round"/>
   <foreignObject x="138" y="37.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
-  <line x1="302" y1="76" x2="337" y2="76" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M350,76 L336,82.5 L336,69.5 Z" fill="#7048e8" stroke-linejoin="round"/>
   <foreignObject x="316" y="37.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
-  <line x1="544" y1="156" x2="544" y2="191" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M544,204 L537.5,190 L550.5,190 Z" fill="#7048e8" stroke-linejoin="round"/>
   <foreignObject x="556" y="165.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
-  <line x1="330" y1="280" x2="295" y2="280" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M282,280 L296,273.5 L296,286.5 Z" fill="#7048e8" stroke-linejoin="round"/>
   <foreignObject x="296" y="289.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
   <foreignObject x="233.5" y="171.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$\text{sama virta } I$</div></foreignObject>
 </svg>
@@ -270,36 +166,18 @@ Monessa piirissä on sekä sarjaan että rinnan kytkettyjä vastuksia. Ratkaisu 
 5. Jännite $U_{23}$ on sama kummankin rinnakkaisen vastuksen yli, joten haaravirrat ovat $I_2 = U_{23} : R_2$ ja $I_3 = U_{23} : R_3$. Ne summautuvat virraksi $I$.
 
 <svg data-fig="mixed" viewBox="0 0 600 340" role="img" aria-label="Kaksi kytkentäkaaviota vierekkäin, ei mittakaavassa. Vasemmalla paristoon on kytketty vastus R1 ja sen kanssa sarjaan kahden rinnakkaisen vastuksen R2 ja R3 ryhmä. Oikealla sama kytkentä, jossa rinnakkaiset vastukset on korvattu yhdellä vastuksella R23, joka on sarjassa R1:n kanssa." style="max-width:100%;font-size:24px">
-  <path d="M72,171 L72,84 L278,84 L278,286 L72,286 L72,199" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <rect x="42" y="171" width="60" height="28" fill="#ffffff"/>
-  <line x1="44" y1="177" x2="100" y2="177" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="59" y1="193" x2="85" y2="193" stroke="#1f2933" stroke-width="8" stroke-linecap="butt"/>
+  <image href="pics/fy6/fy6-4-mixed.webp" x="0" y="0" width="600" height="351.2" preserveAspectRatio="none"/>
   <foreignObject x="16" y="148.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$+$</div></foreignObject>
   <foreignObject x="16" y="192.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$-$</div></foreignObject>
-  <foreignObject x="106" y="170.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$U$</div></foreignObject>
-  <rect x="83" y="70" width="60" height="28" rx="2" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="114" y="170.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$U$</div></foreignObject>
   <foreignObject x="96.5" y="35.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$R_1$</div></foreignObject>
-  <path d="M154,84 L154,190 L278,190" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="154" cy="84" r="5.5" fill="#1f2933"/>
-  <circle cx="154" cy="190" r="5.5" fill="#1f2933"/>
-  <circle cx="278" cy="84" r="5.5" fill="#1f2933"/>
-  <circle cx="278" cy="190" r="5.5" fill="#1f2933"/>
-  <rect x="186" y="70" width="60" height="28" rx="2" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
   <foreignObject x="199.5" y="35.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$R_2$</div></foreignObject>
-  <rect x="186" y="176" width="60" height="28" rx="2" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
   <foreignObject x="199.5" y="211.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$R_3$</div></foreignObject>
-  <line x1="300" y1="20" x2="300" y2="320" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <path d="M368,171 L368,84 L574,84 L574,286 L368,286 L368,199" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <rect x="338" y="171" width="60" height="28" fill="#ffffff"/>
-  <line x1="340" y1="177" x2="396" y2="177" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="355" y1="193" x2="381" y2="193" stroke="#1f2933" stroke-width="8" stroke-linecap="butt"/>
   <foreignObject x="312" y="148.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$+$</div></foreignObject>
   <foreignObject x="312" y="192.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$-$</div></foreignObject>
   <foreignObject x="402" y="170.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$U$</div></foreignObject>
-  <rect x="379" y="70" width="60" height="28" rx="2" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
   <foreignObject x="392.5" y="35.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$R_1$</div></foreignObject>
-  <rect x="560" y="155" width="28" height="60" rx="2" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <foreignObject x="507" y="170.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$R_{23}$</div></foreignObject>
+  <foreignObject x="497" y="170.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$R_{23}$</div></foreignObject>
   <foreignObject x="40" y="303.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$R_2 \text{ ja } R_3 \text{ rinnan}$</div></foreignObject>
   <foreignObject x="340" y="303.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$R = R_1 + R_{23}$</div></foreignObject>
 </svg>
