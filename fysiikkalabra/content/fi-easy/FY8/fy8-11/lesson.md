@@ -104,7 +104,7 @@ $$
 missä $N_g$ on neutronien määrä sukupolvessa $g$ ja $k$ on kasvukerroin. Kun $k < 1$, ketju sammuu. Kun $k = 1$, ketju on **kriittinen** ja fissioita tapahtuu tasaisesti. Kun $k > 1$, fissioiden määrä kasvaa eksponentiaalisesti eli yhä nopeammin.
 
 <svg data-fig="ketju" viewBox="0 0 600 360" role="img" aria-label="Kaavakuva kolmesta ketjureaktiosta. Kuvassa on kolme sukupolvea ylhäältä alas. Vasemmalla kasvukerroin k on 0,5: neutroneja on sukupolvissa 4, 2 ja 1, joten ketju sammuu. Keskellä k on 1: neutroneja on joka sukupolvessa 2, joten ketju pysyy tasaisena. Oikealla k on 2: neutroneja on 1, 2 ja 4, joten ketju kasvaa. Neutronit ovat harmaita pisteitä." style="max-width:100%;font-size:24px">
-  <image href="pics/fy8/fy8-11-ketju.webp" x="23.3" y="1.2" width="588.2" height="361.5" preserveAspectRatio="none"/>
+  <image href="pics/fy8/fy8-11-ketju.webp" x="23.3" y="1.2" width="576.7" height="361.5" preserveAspectRatio="none"/>
   <foreignObject x="115" y="13.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$k = 0{,}5$</div></foreignObject>
   <foreignObject x="108.5" y="315.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{sammuu}$</div></foreignObject>
   <foreignObject x="307.5" y="13.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$k = 1$</div></foreignObject>

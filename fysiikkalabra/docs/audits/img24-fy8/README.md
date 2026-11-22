@@ -14,5 +14,5 @@ Huomiot:
 - viewBox-ylitykset (ASETTELU.tsv:n rivin ylitys figuurin alueesta, yksikköä; 1 yksikkö ≈ 0,69 px 1280 px:llä kapeassa kuvasarakkeessa): 37 riviä, suurimmat
   `fy8-15/valittaja` oikea 18,6 ja ala 21,8 (≈ 13 ja 15 px); `fy8-7/cavity` ala 17,2; `fy8-1/energia` ala 14,7; `fy8-5/string` ala 13,0; `fy8-8/isotopes` ala 12,5;
   `fy8-12/gm` ala 11,8; `fy8-15/beeta` ala 11,8; `fy8-11/ketju` oikea 11,5. Loput ala 0,5–11,2, osa sivuilta 0,5–2,5.
-  Tyhjän reunan rajaus vaatii opettajan luvan, ei tehty.
+  Opettaja 2026-11-22: ylityksiä ei rajata. Poikkeus: `check_layout.py` (`svg-image`, sivusuuntainen ylitys enintään 3 px) kaatui kahteen kuvaan, joten `fy8-15/valittaja` (oikea 18,6 yks.) ja `fy8-11/ketju` (oikea 11,5 yks.) leikattiin oikean reunan tausta-kaistalta (viewBoxin ulkopuolella oli vain taustaa; näkyvä kuva ei muutu); rivien leveys 618,6→600 ja 588,2→576,7. Näiden kahden kuvan `approve-figures` ajetaan uudelleen vasta opettajan luvalla.
 - Kaappauksissa kuvaajat (esim. `fy8-4/buildup`, satunnaispisteet) eivät kuulu tähän; vain asettelun 55 kuvaa on mukana.

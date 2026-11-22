@@ -30,7 +30,7 @@ fy8-10/hero	illustration	fy8-10-hero.webp
 fy8-11/fissio	diagram	fy8-11-fissio.webp	0	1.2	600	350		
 fy8-11/fuusio	diagram	fy8-11-fuusio.webp	2.5	0	597	328.4		
 fy8-11/hero	illustration	fy8-11-hero.webp						
-fy8-11/ketju	diagram	fy8-11-ketju.webp	23.3	1.2	588.2	361.5		
+fy8-11/ketju	diagram	fy8-11-ketju.webp	23.3	1.2	576.7	361.5		
 fy8-11/massat	diagram	fy8-11-massat.webp	0	-1.2	600	367.5		
 fy8-11/onkalo	diagram	fy8-11-onkalo.webp	0	0	600	390		
 fy8-11/reaktori	diagram	fy8-11-reaktori.webp	0	-2.5	600	386.2		
@@ -51,6 +51,6 @@ fy8-15/beeta	diagram	fy8-15-beeta.webp	-1.3	0	603	361.8	{"2":[7,8],"3":[-4,8],"4
 fy8-15/hadronit	diagram	fy8-15-hadronit.webp	0	0	600	352.5		
 fy8-15/hero	illustration	fy8-15-hero.webp						
 fy8-15/skaalat	diagram	fy8-15-skaalat.webp	2.5	0	597	338.3	{"0":[-6,7],"1":[-8,7],"2":[-8,4]}	
-fy8-15/valittaja	diagram	fy8-15-valittaja.webp	0	0	618.6	351.8		
+fy8-15/valittaja	diagram	fy8-15-valittaja.webp	0	0	600	351.8		
 fy8-16/hero	illustration	fy8-16-hero.webp						
 fy8-16/laajeneminen	diagram	fy8-16-laajeneminen.webp	19.2	13.2	576.9	305.3		
