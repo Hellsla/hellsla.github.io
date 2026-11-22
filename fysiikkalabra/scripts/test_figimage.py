@@ -75,6 +75,18 @@ try: _, new, _ = units.draw("fy14-plasma", "en")
 finally: figimage.row, figimage.pic = real_row, real_pic
 check("units.draw puts a unit figure with a row on its picture", new is not None and '<image href="pics/fy14/t-fig.webp"' in new)
 
+# units.content_hash of an earlier commit reads that commit's texts, not the working tree's (a carry finds the version a report passed by its hash)
+import reviews
+_c = reviews.Commit(reviews.git("rev-parse", "HEAD").strip())
+_clean = units.content_hash("fy9-aallot", "fi", read=_c.read)
+_texts, _base, _src = units.texts_of, figimage.is_base, courses.pic_source
+units.texts_of = lambda uid, lang: _texts(uid, lang) + '<img src="pics/fy9/fy9-aallot-hero.webp">'     # a working tree that now refers to a picture the commit did not
+figimage.is_base = lambda ref: True
+courses.pic_source = lambda ref: next((courses.ROOT / "assets" / "pics").rglob("*.webp"))
+try: _dirty = units.content_hash("fy9-aallot", "fi", read=_c.read)
+finally: units.texts_of, figimage.is_base, courses.pic_source = _texts, _base, _src
+check("units.content_hash with a commit's reader does not depend on the working tree's texts", _clean == _dirty, f"{_clean} vs {_dirty}")
+
 # investigations.py draws an investigation figure with a row on its picture, as units.py does
 import investigations
 figimage.row, figimage.pic = (lambda fid: dict(UROW, code="FY10") if fid == "fy10-heiluri/hero" else None), (lambda fid: "pics/fy10/t-fig.webp" if fid == "fy10-heiluri/hero" else None)

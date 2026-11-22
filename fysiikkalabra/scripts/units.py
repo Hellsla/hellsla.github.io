@@ -144,7 +144,7 @@ def content_hash(uid, lang, read=None):
         f = asset_source(ref)
         if f.is_file(): h.update(ref.encode() + b"\0" + f.read_bytes() + b"\0")
     import figimage
-    for ref in courses.pic_refs_in([texts_of(uid, lang)]):   # the pictures of the module's own figures (scripts/figimage.py, pics/fy14/ for fy14-*): their bytes are in the hash; another module's picture (fy2-4/grid in FY9) hashes as before
+    for ref in courses.pic_refs_in(["".join(get(folder(uid, lang) / n) or "" for n in TEXTS)]):   # the pictures of the module's own figures (scripts/figimage.py, pics/fy14/ for fy14-*): their bytes are in the hash; another module's picture (fy2-4/grid in FY9) hashes as before
         f = courses.pic_source(ref)
         if ref.startswith(f"pics/{uid.split('-')[0]}/") and figimage.is_base(ref) and f.is_file(): h.update(ref.encode() + b"\0" + f.read_bytes() + b"\0")
     if has_tasks(uid, lang):                             # the unit's own task set (scripts/practice.py): reviewed with the unit
