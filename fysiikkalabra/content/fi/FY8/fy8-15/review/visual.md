@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3b7fdd0206c26755
+CONTENT-HASH: 55fbb6fec30f1ab6
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] pysahdy 1 — "hiukkaskasoja" is odd; "hiukkasia" or "hiukkasryhmiä". Antiquark is $\bar{d}$ while the project vector convention is \overline for vectors only; fine here.
-- [Minor] pysahdy 1 — "kokonaisluku $e$:n monikertana" read twice; "$e$:n kokonaislukumonikerta" is smoother.
-- [Minor] pysahdy 3 — $-5\,\text{MeV}$ in "$(135 - 140)\,\text{MeV}$" fine; the symbol $Q$ is introduced in the task without name, acceptable since the chapter defines it.
+(none)
 
 ## Vanhan sisällön löydökset
 (none)
 
 ## Checked
-batch delta review (pysahdy only): component rendering in fy8-10 theory capture; source of all three boxes.
+batch delta review: the changed box opened in capture fy8-15-theory-1280-2.png (closed state: question text, inline $u\bar{d}$, $uud$, $ud$, $\tfrac{2}{3}e$ render cleanly, "Vastaus" folded, layout intact next to the figure above). The new answer text (hadroneja, mesoni ja baryoni, $e$:n monikertana) read in source: natural Finnish, maths inline, case ending after maths correct. Opened answer not in a capture.

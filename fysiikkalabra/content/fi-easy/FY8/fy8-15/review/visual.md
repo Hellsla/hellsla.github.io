@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 95c07eabab23ab98
+CONTENT-HASH: 6e2bb22260bd5517
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] kvarkkilaatikko — "hiukkaskasoja" on outo sana; "hiukkasia, joiden kvarkkikoostumus on …". Alkuaine-/kvarkkisymbolit $u\bar{d}$, $uud$, $ud$ ovat kursiivia, kuten muuallakin.
-- [Minor] Q-laatikko — "$(135 - 140)\,\text{MeV}$": yksikkö vain lopussa, hyväksyttävä; massat annettu $\tfrac{\text{MeV}}{c^2}$, joten ketju on johdonmukainen.
+- none
 
 ## Vanhan sisällön löydökset
-- ei
+- none noticed
 
 ## Checked
-- batch delta review: two edited boxes read from diff; fractions in LaTeX, `\left(…\right)` sets correctly; layout via shared component.
+- batch delta review: opened fy8-15-stage-selita-390-3 (changed "Pysähdy ja mieti" box: u d-bar, uud, ud and the fractional charges render cleanly, no clipping) and -5, -6, -7 (context); the changed answer text is behind the closed Vastaus button and was read from the diff (fluent Finnish, formulas correct in form). Hash re-run at end unchanged.
