@@ -174,6 +174,7 @@ Jaettu (build.py / site.css), yksin, #740:n ja #733:n jälkeen ennen kohtaa 21 (
 
 ## 24. Uudet kuvat sivustolle (opettaja 2026-11-19; kuvat hyväksytty 15.–18.11.)
 Varattu: claude/24-osa3-fy3 (osa 3, FY3, draft-PR)
+Varattu: claude/figcat-units (jaettu: figcat.owner tuntee unit- ja tutkimusomistajat, #801:n jatko; osan 11 edellytys)
 Osa 7 (FY7, 89 kuvaa: 86 lukua + Sovella `fy7-s1-forces`, `fy7-s1-implanter`, `fy7-s4-fibre`) tehty: PR #798, `approve-figures fy7-1…fy7-16 fy7-sovella --images` ajettu opettajan luvalla (opettaja 2026-11-22 suoraan tekijäsessioon: "Hyväksyn kuvat"), carry (luvut, Sovella, fy9-magnetismi-valo track-sign), ennen/jälkeen docs/audits/img24-fy7/; odottaa koordinaattorin yhdistämistä. Ennalleen `fy7-1/cut-magnet` (PAATOS) ja 8 kuvaajaa. Avoin opettajalle: viewBox-ylitysten (tyhjä reuna, enintään 15,7 px) rajaus.
 Varattu: claude/practice-unit-id (jaettu: practice.figures antaa unit-Sovellan kuvalle omistajan id:n ilman units/-etuliitettä; FY9-osan edellytys)
 Varattu: claude/figimage-units (jaettu: figimage unit-moduuleille FY14 ja FY9, osan 11 edellytys; koordinaattori 2026-11-22)

@@ -67,6 +67,8 @@ def owner(oid):
     m = re.match(r"^([a-z]+\d+)-(sovella|koe)$", oid)
     if m:
         code, sub = m.group(1).upper(), m.group(2); return ROOT / "lessons" / code / sub, ROOT / "content" / i18n.SOURCE / code / sub
+    for d in ("units", "tutkimukset"):                  # a course unit (fy14-plasma) or an investigation (fy10-heiluri): scripts/figimage.py, work queue 24 parts 9-11
+        if (ROOT / "lessons" / d / oid / "figures.py").is_file(): return ROOT / "lessons" / d / oid, ROOT / "content" / i18n.SOURCE / d / oid
     lid = courses.LESSON_ID.match(oid)
     if not lid: return None
     for folder in courses.lessons():
