@@ -3,133 +3,7 @@
 > **Tutkimuskysymys:** Miten LEDin kynnysjännite riippuu sen lähettämän valon aallonpituudesta, ja kuinka suuri Planckin vakio on tämän perusteella?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: laboratorion työpöydällä on pienjännitelähde, säädettävä liukuvastus ja kaksi yleismittaria, joiden näytöissä ei ole lukemia. Johdot kulkevat kytkentäalustalle, jossa yksi LED loistaa himmeästi. Pöydällä on rasia, jossa on erivärisiä sammuneita LEDejä, sekä LEDien tietolehti ja vihko." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy10plh-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#dfe9ef"/></linearGradient><linearGradient id="fy10plh-desk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#fy10plh-wall)"/>
-  <rect x="0" y="470" width="1200" height="130" fill="url(#fy10plh-desk)"/>
-  <line x1="0" y1="492" x2="1200" y2="488" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="514" x2="1200" y2="510" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="536" x2="1200" y2="532" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="558" x2="1200" y2="554" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="580" x2="1200" y2="576" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="470" x2="1200" y2="470" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="60" y="300" width="220" height="170" rx="10" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="84" y="324" width="120" height="46" rx="4" fill="#2b3a42" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="240" cy="347" r="20" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="240" y1="347" x2="252" y2="333" stroke="#ffffff" stroke-width="3" stroke-linecap="butt"/>
-  <circle cx="110" cy="430" r="9" fill="#1f2933" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="230" cy="430" r="9" fill="#e9ecef" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="340" y="400" width="26" height="70" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="574" y="400" width="26" height="70" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="366" y="412" width="208" height="46" rx="8" fill="#d9a066" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="372" y1="413" x2="372" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="380" y1="413" x2="380" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="388" y1="413" x2="388" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="396" y1="413" x2="396" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="404" y1="413" x2="404" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="412" y1="413" x2="412" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="420" y1="413" x2="420" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="428" y1="413" x2="428" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="436" y1="413" x2="436" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="444" y1="413" x2="444" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="452" y1="413" x2="452" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="460" y1="413" x2="460" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="468" y1="413" x2="468" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="476" y1="413" x2="476" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="484" y1="413" x2="484" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="492" y1="413" x2="492" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="500" y1="413" x2="500" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="508" y1="413" x2="508" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="516" y1="413" x2="516" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="524" y1="413" x2="524" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="532" y1="413" x2="532" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="540" y1="413" x2="540" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="548" y1="413" x2="548" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="556" y1="413" x2="556" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="564" y1="413" x2="564" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="572" y1="413" x2="572" y2="457" stroke="#a5653a" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="350" y="384" width="240" height="8" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <rect x="468" y="376" width="30" height="36" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="640" y="330" width="120" height="140" rx="10" fill="#f4c542" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="652" y="342" width="96" height="47.5" rx="4" fill="#2b3a42" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="700" cy="422.5" r="19.6" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="700" y1="422.5" x2="700" y2="405.5" stroke="#ffffff" stroke-width="3" stroke-linecap="butt"/>
-  <circle cx="676" cy="458" r="5" fill="#1f2933"/>
-  <circle cx="724" cy="458" r="5" fill="#1f2933"/>
-  <rect x="800" y="330" width="120" height="140" rx="10" fill="#f4c542" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="812" y="342" width="96" height="47.5" rx="4" fill="#2b3a42" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="860" cy="422.5" r="19.6" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="860" y1="422.5" x2="860" y2="405.5" stroke="#ffffff" stroke-width="3" stroke-linecap="butt"/>
-  <circle cx="836" cy="458" r="5" fill="#1f2933"/>
-  <circle cx="884" cy="458" r="5" fill="#1f2933"/>
-  <rect x="960" y="430" width="200" height="40" rx="4" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="972" y="440" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="983.5" y="440" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="995" y="440" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1006.5" y="440" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1018" y="440" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1029.5" y="440" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1041" y="440" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1052.5" y="440" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1064" y="440" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1075.5" y="440" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1087" y="440" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1098.5" y="440" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1110" y="440" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1121.5" y="440" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1133" y="440" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1144.5" y="440" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="972" y="453" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="983.5" y="453" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="995" y="453" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1006.5" y="453" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1018" y="453" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1029.5" y="453" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1041" y="453" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1052.5" y="453" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1064" y="453" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1075.5" y="453" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1087" y="453" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1098.5" y="453" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1110" y="453" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1121.5" y="453" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1133" y="453" width="5" height="5" fill="#c9c2b2"/>
-  <rect x="1144.5" y="453" width="5" height="5" fill="#c9c2b2"/>
-  <circle cx="1060" cy="378" r="46" fill="#f2a69c" fill-opacity="0.35"/>
-  <circle cx="1060" cy="378" r="30" fill="#f2a69c" fill-opacity="0.45"/>
-  <line x1="1054" y1="406" x2="1054" y2="440" stroke="#8a96a3" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="1066" y1="406" x2="1066" y2="434" stroke="#8a96a3" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="1043" y="398" width="34" height="8" rx="2" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
-  <path d="M1046,398 L1046,370 A14,14 0 0 1 1074,370 L1074,398 Z" fill="#f2a69c" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <rect x="1090" y="430" width="40" height="10" rx="4" fill="#d9a066" stroke="#1f2933" stroke-width="2"/>
-  <path d="M230,430 C230,520 350,500 353,470" fill="none" stroke="#1f2933" stroke-width="3.5" stroke-linejoin="round"/>
-  <path d="M483,376 C483,300 640,290 676,458" fill="none" stroke="#1f2933" stroke-width="3.5" stroke-linejoin="round"/>
-  <path d="M724,458 C780,492 1060,492 1110,440" fill="none" stroke="#1f2933" stroke-width="3.5" stroke-linejoin="round"/>
-  <path d="M1054,410 C1000,300 840,300 836,458" fill="none" stroke="#6c757d" stroke-width="3.5" stroke-linejoin="round"/>
-  <path d="M1066,410 C1080,320 900,320 884,458" fill="none" stroke="#6c757d" stroke-width="3.5" stroke-linejoin="round"/>
-  <path d="M110,430 C110,488 1000,488 1040,470" fill="none" stroke="#1f2933" stroke-width="3.5" stroke-linejoin="round"/>
-  <rect x="420" y="500" width="230" height="50" rx="6" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="446.5" y1="521.5" x2="446.5" y2="540" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
-  <line x1="453.5" y1="521.5" x2="453.5" y2="536.5" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
-  <rect x="440.5" y="517" width="18.5" height="4.5" rx="2" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
-  <path d="M442.5,517 L442.5,501.5 A7.5,7.5 0 0 1 457.5,501.5 L457.5,517 Z" fill="#ffc078" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <line x1="488.5" y1="521.5" x2="488.5" y2="540" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
-  <line x1="495.5" y1="521.5" x2="495.5" y2="536.5" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
-  <rect x="482.5" y="517" width="18.5" height="4.5" rx="2" fill="#b2f2bb" stroke="#1f2933" stroke-width="2"/>
-  <path d="M484.5,517 L484.5,501.5 A7.5,7.5 0 0 1 499.5,501.5 L499.5,517 Z" fill="#b2f2bb" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <line x1="530.5" y1="521.5" x2="530.5" y2="540" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
-  <line x1="537.5" y1="521.5" x2="537.5" y2="536.5" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
-  <rect x="524.5" y="517" width="18.5" height="4.5" rx="2" fill="#d0e6fb" stroke="#1f2933" stroke-width="2"/>
-  <path d="M526.5,517 L526.5,501.5 A7.5,7.5 0 0 1 541.5,501.5 L541.5,517 Z" fill="#d0e6fb" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <line x1="572.5" y1="521.5" x2="572.5" y2="540" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
-  <line x1="579.5" y1="521.5" x2="579.5" y2="536.5" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
-  <rect x="566.5" y="517" width="18.5" height="4.5" rx="2" fill="#ffe066" stroke="#1f2933" stroke-width="2"/>
-  <path d="M568.5,517 L568.5,501.5 A7.5,7.5 0 0 1 583.5,501.5 L583.5,517 Z" fill="#ffe066" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <line x1="614.5" y1="521.5" x2="614.5" y2="540" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
-  <line x1="621.5" y1="521.5" x2="621.5" y2="536.5" stroke="#8a96a3" stroke-width="1.65" stroke-linecap="butt"/>
-  <rect x="608.5" y="517" width="18.5" height="4.5" rx="2" fill="#ffd8a8" stroke="#1f2933" stroke-width="2"/>
-  <path d="M610.5,517 L610.5,501.5 A7.5,7.5 0 0 1 625.5,501.5 L625.5,517 Z" fill="#ffd8a8" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <g transform="translate(790,535) rotate(4)"><rect x="-60" y="-40" width="120" height="70" rx="3" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/><line x1="-46" y1="-26" x2="46" y2="-26" stroke="#6b7480" stroke-width="2"/><line x1="-46" y1="-15" x2="28" y2="-15" stroke="#6b7480" stroke-width="2"/><line x1="-46" y1="-4" x2="46" y2="-4" stroke="#6b7480" stroke-width="2"/><line x1="-46" y1="7" x2="28" y2="7" stroke="#6b7480" stroke-width="2"/><line x1="-46" y1="18" x2="46" y2="18" stroke="#6b7480" stroke-width="2"/></g>
-  <g transform="translate(130,530) rotate(-6)"><rect x="-80" y="-34" width="200" height="66" rx="4" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/><line x1="-64" y1="-18" x2="104" y2="-18" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-64" y1="-6" x2="104" y2="-6" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-64" y1="6" x2="104" y2="6" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-64" y1="18" x2="104" y2="18" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/><line x1="-64" y1="30" x2="104" y2="30" stroke="#1971c2" stroke-width="1.5" stroke-opacity="0.6"/></g>
+  <image href="pics/fy10/fy10-planck-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 Planckin vakio on yksi luonnon perusvakioista: se kertoo, kuinka suuri energia valon pienimmällä osalla, fotonilla, on. Vakion voi määrittää koulun laboratoriossa tavallisilla LEDeillä ja kahdella yleismittarilla. Tässä tutkimuksessa mittaat usean erivärisen LEDin sähköisiä ominaisuuksia ja päättelet niistä Planckin vakion. Mittaa, piirrä ja päättele itse: tämä sivu kertoo, mitä tutkitaan, ja tukee sinua niin paljon kuin valitsemasi työtapa lupaa.
@@ -223,51 +97,17 @@ Ennen mittaamista päätä ja kirjaa ylös, mitä muutat, mitä mittaat ja mitä
 Tarkista kytkentäsi tästä:
 
 <svg data-fig="setup" viewBox="0 0 600 400" role="img" aria-label="Kytkentäkaavio. Tasajännitelähteen plusnavasta virta kulkee kiinteän suojavastuksen R s ja säädettävän vastuksen R kautta LEDiin ja siitä virtamittarin kautta takaisin miinusnapaan. LED on kytketty päästösuuntaan. Vastukset rajoittavat virtaa, ja virtamittari on sarjassa LEDin kanssa ja mittaa sähkövirran I. Jännitemittari on kytketty suoraan LEDin napoihin eli rinnan LEDin kanssa, ja se mittaa LEDin jännitteen U." style="max-width:100%;font-size:24px">
-  <rect x="30" y="140" width="130" height="110" rx="6" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <image href="pics/fy10/fy10-planck-setup.webp" x="1.2" y="0" width="597" height="404.2" preserveAspectRatio="none"/>
   <foreignObject x="65" y="158" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{tasa-}$</div></foreignObject>
   <foreignObject x="49.5" y="184" width="91" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{jännite-}$</div></foreignObject>
   <foreignObject x="65" y="210" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{lähde}$</div></foreignObject>
-  <circle cx="160" cy="80" r="5" fill="#1f2933"/>
-  <circle cx="160" cy="320" r="5" fill="#1f2933"/>
-  <line x1="140" y1="140" x2="140" y2="80" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="140" y1="80" x2="160" y2="80" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="140" y1="250" x2="140" y2="320" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="140" y1="320" x2="160" y2="320" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <foreignObject x="111" y="91" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$+$</div></foreignObject>
   <foreignObject x="111" y="283" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:22px">$-$</div></foreignObject>
-  <line x1="160" y1="80" x2="191" y2="80" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="259" y1="80" x2="290" y2="80" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <rect x="191" y="67" width="68" height="26" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="208.5" y="25.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$R_\text{s}$</div></foreignObject>
-  <line x1="290" y1="80" x2="321" y2="80" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="389" y1="80" x2="420" y2="80" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <rect x="321" y="67" width="68" height="26" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="315" y1="106" x2="388" y2="58" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M397,52 L390,63 L384,54 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="345" y="19.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$R$</div></foreignObject>
   <foreignObject x="280" y="347.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$I$</div></foreignObject>
-  <line x1="420" y1="80" x2="420" y2="140" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="420" y1="140" x2="420" y2="182" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="420" y1="218" x2="420" y2="260" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M400,182 L440,182 L420,216 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <line x1="398" y1="217" x2="442" y2="217" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="442" y1="190" x2="458.5" y2="179" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M466,174 L460,183.5 L455,176 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="442" y1="206" x2="458.5" y2="195" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M466,190 L460,199.5 L455,192 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="420" y1="260" x2="420" y2="320" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="160" y1="320" x2="268" y2="320" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="312" y1="320" x2="420" y2="320" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="290" cy="320" r="22" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="280.5" y="307" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\mathrm{A}$</div></foreignObject>
-  <circle cx="420" cy="140" r="5" fill="#1f2933"/>
-  <circle cx="420" cy="260" r="5" fill="#1f2933"/>
-  <line x1="420" y1="140" x2="530" y2="140" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="530" y1="140" x2="530" y2="178" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="530" cy="200" r="22" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="520.5" y="187" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\mathrm{V}$</div></foreignObject>
-  <line x1="530" y1="222" x2="530" y2="260" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="420" y1="260" x2="530" y2="260" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <foreignObject x="562" y="185.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$U$</div></foreignObject>
   <foreignObject x="333" y="188" width="39" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px;color:#6b7480">$\text{LED}$</div></foreignObject>
 </svg>
@@ -422,52 +262,12 @@ d\sin\theta = \lambda
 missä $d$ on hilan kahden vierekkäisen raon välimatka eli hilavakio ja $\lambda$ valon aallonpituus. Jos hilaan on merkitty rakojen määrä millimetrillä $N$, hilavakio on $d = \dfrac{1\ \text{mm}}{N}$. Hilaa ja valon diffraktiota käsitellään tarkemmin moduulissa FY7.
 
 <svg data-fig="grating" viewBox="0 0 600 360" role="img" aria-label="Kaaviokuva ylhäältä. Vasemmalla on kapea rako, jonka takana on LED, ja raon kohdalla poikittainen mitta-asteikko. Oikealla etäisyydellä L asteikosta on hila ja sen takana silmä. Valo kulkee raosta suoraan hilaan. Silmä näkee raon värillisen kuvan asteikolla etäisyydellä x raosta, suunnassa, joka poikkeaa kulman theta verran raon suunnasta." style="max-width:100%;font-size:24px">
-  <rect x="104" y="40" width="12" height="280" fill="#ffe8a3" stroke="#1f2933" stroke-width="2"/>
-  <line x1="116" y1="52" x2="126" y2="52" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="116" y1="72" x2="122" y2="72" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="116" y1="92" x2="122" y2="92" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="116" y1="112" x2="122" y2="112" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="116" y1="132" x2="122" y2="132" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="116" y1="152" x2="126" y2="152" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="116" y1="172" x2="122" y2="172" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="116" y1="192" x2="122" y2="192" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="116" y1="212" x2="122" y2="212" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="116" y1="232" x2="122" y2="232" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="116" y1="252" x2="126" y2="252" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="116" y1="272" x2="122" y2="272" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="116" y1="292" x2="122" y2="292" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="116" y1="312" x2="122" y2="312" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="102" y="245" width="16" height="10" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <rect x="48" y="234" width="34" height="32" rx="6" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
+  <image href="pics/fy10/fy10-planck-grating.webp" x="0" y="-1.2" width="600" height="366.2" preserveAspectRatio="none"/>
   <foreignObject x="4" y="239" width="36" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{LED}$</div></foreignObject>
-  <line x1="470" y1="160" x2="470" y2="300" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
-  <line x1="466" y1="166" x2="474" y2="166" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="466" y1="179" x2="474" y2="179" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="466" y1="192" x2="474" y2="192" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="466" y1="205" x2="474" y2="205" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="466" y1="218" x2="474" y2="218" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="466" y1="231" x2="474" y2="231" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="466" y1="244" x2="474" y2="244" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="466" y1="257" x2="474" y2="257" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="466" y1="270" x2="474" y2="270" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="466" y1="283" x2="474" y2="283" stroke="#ffffff" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="480" y="134" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480">$\text{hila}$</div></foreignObject>
-  <path d="M500,236 Q526,220 552,250 Q526,280 500,264" fill="#ffffff" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <circle cx="516" cy="250" r="8" fill="#1f2933"/>
   <foreignObject x="510" y="282" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$\text{silmä}$</div></foreignObject>
-  <line x1="118" y1="250" x2="455" y2="250" stroke="#2b8a3e" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M468,250 L454,256.5 L454,243.5 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <line x1="470" y1="250" x2="118" y2="100" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
-  <circle cx="110" cy="100" r="7" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2"/>
-  <path d="M400,250 A70,70 0 0 1 405.5,222.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <foreignObject x="366" y="213.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\theta$</div></foreignObject>
-  <line x1="110" y1="320" x2="470" y2="320" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="110" y1="310" x2="110" y2="330" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="470" y1="310" x2="470" y2="330" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="280" y="327.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$L$</div></foreignObject>
-  <line x1="82" y1="100" x2="82" y2="250" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="72" y1="100" x2="92" y2="100" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="72" y1="250" x2="92" y2="250" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="48" y="160.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$x$</div></foreignObject>
 </svg>
 

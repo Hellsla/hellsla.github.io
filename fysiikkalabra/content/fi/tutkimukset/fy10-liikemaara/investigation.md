@@ -98,43 +98,14 @@ Törmäys on **kimmoisa**, jos vaunujen yhteinen liike-energia on törmäyksen j
 Tarkista kirjauksesi tästä. Vaunuista mitataan massat $m_1$ ja $m_2$ sekä nopeudet ennen törmäystä ($v_1$ ja $v_2$) ja sen jälkeen ($v_1'$ ja $v_2'$). Koska vaunut liikkuvat samalla suoralla, valitaan yksi suunta positiiviseksi. Silloin jokainen nopeus on etumerkillinen luku: vastakkaiseen suuntaan liikkuvan vaunun nopeus on negatiivinen.
 
 <svg data-fig="setup" viewBox="0 0 600 330" role="img" aria-label="Kaaviokuva sivulta. Vaakasuoran radan vasemmassa päässä on anturi 1 ja oikeassa päässä anturi 2, ja kumpikin osoittaa radan keskelle. Radalla ovat vaunu 1, jonka massa on m1, ja vaunu 2, jonka massa on m2. Vaunun 1 nopeus v1 osoittaa oikealle ja vaunun 2 nopeus v2 vasemmalle; nopeusnuolet ovat sinisiä. Radan alla on valittu positiivinen suunta, oikealle. Harmaat nuolet anturien alla näyttävät, mihin suuntaan kukin anturi mittaa nopeuden positiiviseksi: anturi 1 oikealle ja anturi 2 vasemmalle, eli anturin 2 suunta on vastakkainen valittuun positiiviseen suuntaan nähden." style="max-width:100%;font-size:24px">
-  <rect x="20" y="190" width="560" height="14" rx="2" fill="#c4ccd4" stroke="#8a96a3" stroke-width="2"/>
-  <line x1="24" y1="197" x2="576" y2="197" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="28" y="126" width="44" height="64" rx="5" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="65" y="144" width="8" height="28" rx="2" fill="#343a40" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="528" y="126" width="44" height="64" rx="5" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="527" y="144" width="8" height="28" rx="2" fill="#343a40" stroke="#1f2933" stroke-width="1.5"/>
-  <g opacity="1">
-  <rect x="140" y="120" width="120" height="50" rx="5" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="164" cy="180" r="10" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="236" cy="180" r="10" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <path d="M260,145 L261.5,139 L265,151 L268,139 L271,151 L274.5,139 L277.5,151 L279,145" fill="none" stroke="#6c757d" stroke-width="2.5" stroke-linejoin="round"/>
-  <line x1="279" y1="136" x2="279" y2="154" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  </g>
-  <g opacity="1">
-  <rect x="340" y="120" width="120" height="50" rx="5" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="364" cy="180" r="10" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="436" cy="180" r="10" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <path d="M340,145 L338.5,139 L335,151 L332,139 L329,151 L325.5,139 L322.5,151 L321,145" fill="none" stroke="#6c757d" stroke-width="2.5" stroke-linejoin="round"/>
-  <line x1="321" y1="136" x2="321" y2="154" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  </g>
+  <image href="pics/fy10/fy10-liikemaara-setup.webp" x="0" y="-2.5" width="600" height="337.5" preserveAspectRatio="none"/>
   <foreignObject x="183.5" y="130.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$m_1$</div></foreignObject>
   <foreignObject x="383.5" y="130.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$m_2$</div></foreignObject>
-  <line x1="160" y1="70" x2="246" y2="70" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M260,70 L245,77 L245,63 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="187.5" y="25.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}_1$</div></foreignObject>
-  <line x1="440" y1="70" x2="374" y2="70" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M360,70 L375,63 L375,77 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="377.5" y="25.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}_2$</div></foreignObject>
-  <line x1="30" y1="232" x2="99" y2="232" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M110,232 L98,237.5 L98,226.5 Z" fill="#6b7480" stroke-linejoin="round"/>
   <foreignObject x="70" y="246" width="102" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480">$\text{anturi 1: }+$</div></foreignObject>
-  <line x1="570" y1="232" x2="501" y2="232" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M490,232 L502,226.5 L502,237.5 Z" fill="#6b7480" stroke-linejoin="round"/>
   <foreignObject x="428" y="246" width="102" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px;color:#6b7480">$\text{anturi 2: }+$</div></foreignObject>
-  <line x1="230" y1="300" x2="357" y2="300" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M370,300 L356,306.5 L356,293.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="27" y="288" width="195" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{positiivinen suunta}$</div></foreignObject>
+  <foreignObject x="-18" y="288" width="195" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{positiivinen suunta}$</div></foreignObject>
   <foreignObject x="378" y="285.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$+$</div></foreignObject>
 </svg>
 
