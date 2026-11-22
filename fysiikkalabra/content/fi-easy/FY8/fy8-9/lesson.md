@@ -113,6 +113,12 @@
 ### Yksittäisen ytimen hajoaminen on satunnaista
 Radioaktiivinen ydin hajoaa ja muuttuu toiseksi ytimeksi (luku *Atomiydin ja radioaktiivinen hajoaminen*). Hajoamishetkeä ei voi ennustaa. Kaksi samanlaista ydintä voi hajota eri aikaan: toinen heti ja toinen vasta vuosien päästä. Ennustaa voi vain sen, kuinka todennäköisesti ydin hajoaa tietyn ajan kuluessa. Todennäköisyys on sama kaikille saman isotoopin ytimille. Isotooppi tarkoittaa saman alkuaineen ydintä, jossa on tietty määrä neutroneja. Todennäköisyys ei käytännössä riipu lämpötilasta, paineesta eikä kemiallisista sidoksista. Se ei riipu myöskään ytimen iästä: ydin ei vanhene. Ydin, joka on säilynyt pitkään, hajoaa seuraavan sekunnin aikana yhtä todennäköisesti kuin juuri syntynyt ydin.
 
+```pysahdy
+Näytteessä on aluksi $8000$ ydintä. Puoliintumisaika on $T_{1/2}$. Yksittäinen ydin on säilynyt hajoamatta kaksi puoliintumisaikaa. Millä todennäköisyydellä se hajoaa seuraavan puoliintumisajan aikana? Päättele näytteen ytimien määristä.
+---
+Kahden puoliintumisajan jälkeen näytteessä on $8000 \cdot \left(\tfrac{1}{2}\right)^2 = 2000$ ydintä. Kolmannen puoliintumisajan aikana niistä hajoaa puolet eli $1000$. Todennäköisyys on $\tfrac{1000}{2000} = 0{,}50$. Se on sama kuin juuri syntyneellä ytimellä.
+```
+
 ### Suuri joukko ytimiä käyttäytyy säännöllisesti
 Jokaisella ytimellä on sama hajoamistodennäköisyys. Siksi tietyssä ajassa hajoaa aina suunnilleen sama *osuus* jäljellä olevista ytimistä. Kuvassa on sata samanlaista ydintä. Yhden puoliintumisajan jälkeen niistä on jäljellä noin puolet ja kahden jälkeen noin neljäsosa. Hajonneet ytimet ovat kuitenkin sattumanvaraisissa kohdissa. Pienessä joukossa sattuma näkyy: osuus voi poiketa puolesta selvästi. Tavallisessa näytteessä on kuitenkin esimerkiksi $10^{15}$ ydintä. Silloin poikkeamat ovat suhteessa niin pieniä, ettei niitä huomaa.
 
@@ -434,6 +440,12 @@ Jokaisella ytimellä on sama hajoamistodennäköisyys. Siksi tietyssä ajassa ha
 ### Puoliintumisaika
 **Puoliintumisaika** $T_{1/2}$ on aika, jonka kuluessa puolet näytteen hajoamattomista ytimistä hajoaa. Seuraavan puoliintumisajan aikana hajoaa puolet *jäljellä olevista* ytimistä. Siksi kahden puoliintumisajan kuluttua jäljellä on neljäsosa eikä mitään. Puoliintumisaika on isotoopin ominaisuus. Se ei riipu näytteen koosta eikä siitä, milloin ajanotto alkaa. Taulukossa on puoliintumisaikoja. Yksikkö $\text{d}$ on vuorokausi ja $\text{a}$ on vuosi.
 
+```pysahdy
+Näytteessä on aluksi $8000$ hajoamatonta ydintä. Näytteen puoliintumisaika on $2\,\text{h}$. Noin kuinka monta hajoamatonta ydintä on jäljellä $6\,\text{h}$:n kuluttua?
+---
+$6\,\text{h}$ on kolme puoliintumisaikaa. Määrä puolittuu siis kolme kertaa: $8000 \cdot \left(\tfrac{1}{2}\right)^3 = 1000$.
+```
+
 | Isotooppi | $T_{1/2}$ | Missä |
 | --- | --- | --- |
 | barium-$137\text{m}$ | $2{,}55\,\text{min}$ | koulun hajoamiskoe |
@@ -529,6 +541,12 @@ missä $\ln 2 \approx 0{,}693$. Esimerkiksi teknetium-$99\text{m}$:lle $\lambda 
 A = A_0 \left(\frac{1}{2}\right)^{t/T_{1/2}}
 ```
 missä $A_0$ on aktiivisuus hetkellä $t = 0$. Samoin pienenee hajoamattoman aineen massa, koska se on verrannollinen ytimien määrään.
+
+```pysahdy
+Aineen B puoliintumisaika on kaksi kertaa niin pitkä kuin aineen A. Kummalla aineella hajoamisvakio on suurempi? Kuinka monta kertaa suurempi?
+---
+Aineella A hajoamisvakio on kaksi kertaa niin suuri. Kaava on $\lambda = \tfrac{\ln 2}{T_{1/2}}$, joten kun puoliintumisaika kasvaa, hajoamisvakio pienenee samassa suhteessa.
+```
 
 ### Eksponenttifunktion sovitus mittausaineistoon
 Puoliintumisaika määritetään mittaamalla näytteen pulssimäärää tasaisin väliajoin. Todellisessa mittauksessa pisteet eivät ole täsmälleen mallin käyrällä. Syynä ovat hajoamisen satunnaisuus ja mittausepävarmuus. Siksi pisteisiin sovitetaan malli

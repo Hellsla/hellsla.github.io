@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: cd549898d8f73394
+CONTENT-HASH: 2b5320dbc89de477
+
 ## Blocking
+- (ei)
 
 ## Polish
+- Laatikko 1 (rauta-56) on hyvä päättelytehtävä. Laatikot 2 ja 3 ovat sijoituksia, mutta vastaukset perustelevat.
+
+## Vanhan sisällön löydökset
+- Ei muita.
 
 ## Checked
-batch delta review: diff only: mass-defect retrieval switched to uranium-235 (92 p + 143 n = 235 correct); the feedback 'Uraaniytimessä on 235 nukleonia' matches; wording clear.
+batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (kaikki ok).

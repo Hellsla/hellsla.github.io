@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 677d7e228a3dc832
+CONTENT-HASH: 3ff11295e5514cc9
 
 ## Blocking
-- none
 
 ## Polish
-- none
+
+## Vanhan sisällön löydökset
+None.
 
 ## Checked
-- batch delta review: PET staff behind lead plate added as context; quarter = two half-value thicknesses still the one correct option, distractor feedback right (1/16, thinner plate passes more than half); lesson.md approved figures and paragraph cuts only; hash same at start and end.
+batch delta review: CT box: 800 · 0.010 mSv = 8 mSv, ratio 80, one projection a tenth of the 0.1 mSv chest X-ray (the only chest X-ray dose in FY8, so no cross-chapter contradiction); "tens of times" agrees. PET box: path difference 2x = cΔt = 12 cm, x = 6.0 cm, on the side of the detector hit first; geometry correct.

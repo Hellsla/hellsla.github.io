@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 401f1bd1abe3a5d4
+CONTENT-HASH: 780a55e6c04f1843
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Tiivistelmä formula — the trailing "." sits tight against the display box's right edge at 390 px (not clipped) — optional: none needed.
+- [Minor] pysahdy 1 — in the capture "Hiili-12–ytimen" shows a long dash: check that the source uses a hyphen (Hiili-12-ytimen).
+- [Minor] pysahdy 2 — "$E_\text{B} = 0{,}0020 \cdot 931{,}5\,\text{MeV}$": the $\tfrac{\text{MeV}}{c^2}$ is multiplied by $c^2$ implicitly; fine, say "kerrotaan $c^2$:lla" for the first-time reader.
+
+## Vanhan sisällön löydökset
+(none)
 
 ## Checked
-- Delta (round 5). Opened stage-selita-390-6 (Tiivistelmä closed there) and my own 390 px render of the opened Tiivistelmä (preview/fy8-10.html, Chrome): formula on its own display line, fits (scrollWidth = clientWidth, page 390), trailing "." present, five separate bullets (the formula belongs to bullet 2), no overflow.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+batch delta review (pysahdy only): fy8-10-theory-1280-2 (box 1 rendered well, fraction units legible, Vastaus closed); source of the other two boxes.

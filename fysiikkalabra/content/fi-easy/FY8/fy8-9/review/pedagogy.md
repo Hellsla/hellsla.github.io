@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e9f38776eda7db26
+CONTENT-HASH: 41902d2b8ee6b58a
+
 ## Blocking
+(none)
 
 ## Polish
+- Laatikko 1: 'Päättele näytteen ytimien määristä' on epämääräinen; kysy suoraan 'laske ytimien määrä' ensin.
+
+## Vanhan sisällön löydökset
+(none; ei Blocking)
 
 ## Checked
-batch delta review: diff only: Mo-99 to Tc-99m beta-minus retrieval; Z 42 to 43 and mass number 99 correct; feedback consistent with the options; the unchanged iodine-131 task elsewhere does not conflict.
+batch delta review: 3 uutta laatikkoa (2000 -> 0,50; 1000 ydintä; lambda 2x) oikein; hyvä käsitevastaus: ydin ei vanhene.

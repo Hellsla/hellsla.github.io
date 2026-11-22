@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 9122d135c80ab345
+CONTENT-HASH: 0f23ffb901818a30
 ## Blocking
-
+-
 ## Polish
-- none
+-
 ## Checked
-batch delta review: Mo-99 to Tc-99m (Z 42 to 43, A 99) correct and ties to the hospital phenomenon; feedback and distractors consistent.
+batch delta review: uudet Pysähdy ja mieti -laatikot: laskut tarkistettu, kysymys ratkaistavissa opitulla, palaute korjaa käsitteen; vanhasta sisällöstä ei löydöksiä (Vanhan sisällön löydökset: ei).

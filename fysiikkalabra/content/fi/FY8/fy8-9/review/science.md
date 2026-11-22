@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9122d135c80ab345
+CONTENT-HASH: 0f23ffb901818a30
 
 ## Blocking
+(none)
 
 ## Polish
-- None.
+- The memoryless box (line 117, under *Yksittäisen ytimen hajoaminen on satunnaista*) now reasons with T₁/₂ and with halving per half-life. These are first defined at line 441 (*Puoliintumisaika*). The physics is right, but the box uses a model the reader has not met yet. Either move it after line 441, or phrase it with "puolet hajoaa tietyssä ajassa" as line 123 does. (Placement is pedagogy's call.)
 
 ## Checked
-batch delta review: the retrieval item now uses Mo-99: beta minus decay, A = 99 kept, Z 42 to 43 (Mo to Tc) recomputed; Mo-99 is the real parent of Tc-99m; the ion distractor feedback is right; no stale iodine/xenon text left in that item (the later I-131 half-life task is unrelated and unchanged); one correct option; lesson.md changes are presentation only.
+batch delta review, round 3: the rewritten memoryless box and the 6 h box moved up to *Puoliintumisaika*. Recomputed: 8000 · (1/2)² = 2000, half of those = 1000, and 1000/2000 = 0,50. The same probability as a fresh nucleus is the right memoryless conclusion, with expected counts used as a fair simplification (C). 8000 · (1/2)³ = 1000. The moved box now sits right after the definition it uses.
+
+## Vanhan sisällön löydökset
+(none)

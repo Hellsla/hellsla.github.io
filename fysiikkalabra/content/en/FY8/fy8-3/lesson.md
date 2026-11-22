@@ -156,6 +156,12 @@ Absorption is the reverse process. An atom absorbs a photon only if the energy o
   <foreignObject x="452.5" y="357.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ionises}$</div></foreignObject>
 </svg>
 
+```pysahdy
+A hydrogen atom in its ground state absorbs a photon with an energy of $15.0\,\text{eV}$. What happens to the atom?
+---
+The atom is ionised, because $15.0\,\text{eV}$ is more than the ionisation energy $13.6\,\text{eV}$. The free electron is left with kinetic energy $15.0\,\text{eV} - 13.6\,\text{eV} = 1.4\,\text{eV}$.
+```
+
 ### The Bohr model as a historical stage
 In 1913 the Danish physicist Niels Bohr proposed a model in which the electron circles the proton on a circular orbit, but only on certain allowed orbits. On an allowed orbit the electron does not radiate, although according to classical physics a circling charge should lose energy as radiation. Light is produced only when the electron moves from one orbit to another, and the energy of the photon is the difference between the energies of the orbits. The radius of the orbit grows as $n^2$: the radius of the ground state is about $0.053\,\text{nm}$, and the radius of orbit $n = 2$ is four times and that of orbit $n = 3$ nine times as large.
 
@@ -200,6 +206,12 @@ hf &= E_\text{u} - E_\text{l} \\
 \end{aligned}
 ```
 where $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ is the Planck constant, $f$ the frequency of the photon, $c = 2.998 \cdot 10^{8}\,\text{m/s}$ the speed of light and $\lambda$ the wavelength. In absorption the same formulas give the photon that raises the electron from level $E_\text{l}$ to level $E_\text{u}$. The energies are first calculated in electron volts, and the difference is converted to joules by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
+
+```pysahdy
+The electron of a hydrogen atom moves from level $n = 5$ to level $n = 3$. How large is the energy difference between the levels, and what is the wavelength of the photon produced?
+---
+$E_5 = -13.6\,\text{eV}/25 = -0.544\,\text{eV}$ and $E_3 = -13.6\,\text{eV}/9 = -1.511\,\text{eV}$, so the difference is $0.967\,\text{eV}$. The wavelength is $\lambda = hc/\Delta E \approx 1240\,\text{eV nm}/0.967\,\text{eV} \approx 1.28 \cdot 10^{3}\,\text{nm}$, which is infrared.
+```
 
 | Series | Lower level | Region | $\lambda$ (nm) |
 | --- | --- | --- | --- |
@@ -248,6 +260,12 @@ The longest wavelength of each series comes from the transition from the nearest
   <line x1="58" y1="202" x2="52" y2="238" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="29.5" y="239.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\infty \to 2$</div></foreignObject>
 </svg>
+
+```pysahdy
+What is the energy of level $n = 5$ of a hydrogen atom?
+---
+$E_5 = -\tfrac{13.6\,\text{eV}}{5^2} = -\tfrac{13.6\,\text{eV}}{25} \approx -0.54\,\text{eV}$
+```
 
 ## Worked example
 The red line of a hydrogen lamp is produced when the electron of a hydrogen atom moves from level $n = 3$ to level $n = 2$. Calculate the wavelength of the photon produced.

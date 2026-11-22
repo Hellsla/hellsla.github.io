@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d265822b3b58d509
+CONTENT-HASH: 3ffda874ba7a6cb3
 
 ## Blocking
 
 ## Polish
 
-
 ## Checked
-batch delta review: retrieval changed from photon energy to frequency; c/λ recomputed (470 nm 6,38e14 Hz, 630 nm 4,76e14 Hz), chapter reference fy7-9 contains c = fλ; one correct option, feedback of both distractors right.
+batch delta review: both changed boxes. With E_g ≈ hf = hc/λ, E_g,sin/E_g,pun ≈ 630/450 = 1,4, and the peak-wavelength condition is stated. In the threshold-voltage box only "eli noin" became ≈: 1240/500 = 2,48 ≈ 2,5 V. Correct.

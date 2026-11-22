@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 2603a9b902cc92bd
+CONTENT-HASH: 8790a6a6454470cf
 
 ## Blocking
 
 ## Polish
-- `lessons/FY8/fy8-8/lesson-answers.py` still computes the old key `kert` (1.888889, the photon energy E3 - E2) that no item uses since the review was replaced; remove it so that only the new keys `kert-ion-eV` and `kert-n2-eV` remain.
+None.
 
 ## Checked
-batch delta review: new retrieval item (ionisation, hydrogen ground state). Correct option 13.6 eV = 0 - E1 (recomputed); distractors 10.2 eV (E2 - E1 = -3.40 + 13.6, recomputed), 27.2 eV and 0 eV are all wrong and their feedback says why; the real air molecules are covered by "in a simplified example" (C); it fits the smoke-detector hook; new lesson-answers keys match.
+batch delta review, round 2: C-14 beta minus gives Z = 7, A = 14, N-14, correct and placed right after the beta-decay paragraph. The U-238 alpha box moved after the general decay equations; 238 - 4 = 234 and 92 - 2 = 90 (Th-234) are right.

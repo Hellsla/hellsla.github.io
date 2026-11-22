@@ -157,7 +157,19 @@ Albert Einstein selitti havainnot vuonna 1905. Valon energia ei jakaudu tasaises
   <foreignObject x="478" y="41" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$E_\text{k,max}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Oletetaan aaltomallissa, että elektroni voi kerätä energiaa vain pinta-alalta $1{,}0 \cdot 10^{-19}\,\text{m}^2$ (suunnilleen yhden atomin ala) ja himmeän valon intensiteetti on $1{,}0 \cdot 10^{-3}\,\text{W/m}^2$. Sinkin irrotustyö on $4{,}3\,\text{eV}$. Kauanko energian keräämiseen menisi, ja mitä kokeessa havaitaan?
+---
+Teho elektronille on $P = 1{,}0 \cdot 10^{-3}\,\text{W/m}^2 \cdot 1{,}0 \cdot 10^{-19}\,\text{m}^2 = 1{,}0 \cdot 10^{-22}\,\text{W}$ ja $W = 4{,}3 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 6{,}9 \cdot 10^{-19}\,\text{J}$. Aika on $t = W/P = 6{,}9 \cdot 10^{3}\,\text{s}$, noin $1{,}9\,\text{h}$. Kokeessa elektroneja irtoaa silti heti, joten aaltomalli ei kelpaa.
+```
+
 Tällä mallilla jokainen havainto selittyy. Samanvärisellä valolla intensiteetti kertoo, kuinka monta fotonia pinnalle osuu sekunnissa: kirkkaampi valo irrottaa siksi enemmän elektroneja, mutta yksittäinen elektroni saa silti vain yhden fotonin energian. Taajuus määrää yhden fotonin energian ja siksi elektronin suurimman liike-energian. Viivettä ei ole, koska jo ensimmäinen riittävän energinen fotoni voi irrottaa elektronin. Tässä mallissa energia on **kvantittunut**: säteily ja aine vaihtavat energiaa vain kokonaisina fotonin energioina.
+
+```pysahdy
+Punaisen valon fotonin energia on pienempi kuin metallin irrotustyö $W$, ja elektroneja ei irtoa. Mitä havaitaan, jos valon taajuus kasvatetaan niin, että fotonin energia on vain vähän suurempi kuin $W$, vaikka intensiteetti pysyy pienenä?
+---
+Elektroneja alkaa irrota heti, koska yksi fotoni riittää. Liike-energia $hf - W$ on lähes nolla, ja elektroneja irtoaa vähän, koska fotoneja tulee vähän sekunnissa.
+```
 
 <figure class="unit-photo"><img src="pics/fy8/photomultiplier-tube.webp" alt="Suuri pyöreä lasikupu, jonka sisäpinta on peilimäinen, museon vitriinissä."><figcaption>Valomonistinputki Super-Kamiokanden neutrinoilmaisimesta museossa Tokiossa. Kuvun sisäpintaan osuva fotoni irrottaa elektronin valosähköisessä ilmiössä, ja putki vahvistaa sen mitattavaksi sähköpulssiksi.</figcaption></figure>
 
@@ -273,6 +285,12 @@ missä $hf$ on fotonin energia, $W$ metallin irrotustyö ja $E_\text{k,max}$ irt
 </svg>
 
 Kun yhtälö kirjoitetaan muotoon $E_\text{k,max} = hf - W$, se on suoran yhtälö: suurin liike-energia kasvaa tasaisesti taajuuden mukana, ja suoran kulmakerroin on Planckin vakio $h$ kaikille metalleille. Eri metallien suorat ovat siksi yhdensuuntaiset, ja ne alkavat vaaka-akselilta kunkin metallin rajataajuudelta. Robert Millikan mittasi tällaisia suoria vuonna 1916 ja sai kulmakertoimesta Planckin vakion. Valon intensiteetti ei esiinny yhtälössä lainkaan.
+
+```pysahdy
+Natriumin irrotustyö on $2{,}3\,\text{eV}$. Fotonin energia kasvaa $3{,}0\,\text{eV}$:sta $6{,}0\,\text{eV}$:iin. Kaksinkertaistuuko elektronien suurin liike-energia?
+---
+Ei. Yhtälöstä $E_\text{k,max} = hf - W$ saadaan ensin $3{,}0\,\text{eV} - 2{,}3\,\text{eV} = 0{,}7\,\text{eV}$ ja sitten $6{,}0\,\text{eV} - 2{,}3\,\text{eV} = 3{,}7\,\text{eV}$. Irrotustyö vähennetään kummassakin, joten liike-energia kasvaa yli viisinkertaiseksi.
+```
 
 ### Sinkki tarvitsee lyhytaaltoista ultraviolettia
 Rajataajuutta vastaa **raja-aallonpituus** $\lambda_0 = hc : W$: sitä pidempiaaltoinen säteily ei irrota elektroneja. Sinkistä irtoaa elektroneja vain, jos säteilyn fotonien energia ylittää sinkin irrotustyön. Irrotustyöllä $4{,}31\,\text{eV}$ raja-aallonpituus on $$

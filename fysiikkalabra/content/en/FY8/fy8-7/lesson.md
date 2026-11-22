@@ -83,6 +83,12 @@ In 1917 Albert Einstein concluded that there is also a third event. When a photo
   <foreignObject x="535.5" y="95.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$hf$</div></foreignObject>
 </svg>
 
+```pysahdy
+A light pulse contains $1000$ photons of wavelength $650\,\text{nm}$. It passes through a medium with plenty of excited atoms, and every photon causes one stimulated emission. How many photons come out, and how much energy has the medium given to the light in total? Use $hc = 1240\,\text{eV}\,\text{nm}$.
+---
+For every incoming photon one new photon is produced, so $2000$ photons come out. There are $1000$ new photons, each with energy $hf = \tfrac{hc}{\lambda} = \tfrac{1240\,\text{eV}\,\text{nm}}{650\,\text{nm}} = 1.91\,\text{eV}$. The medium gives the light energy $1000 \cdot 1.91\,\text{eV} \approx 1.9\,\text{keV}$.
+```
+
 ### Population inversion
 A photon that makes an excited atom emit can be absorbed when it hits an atom in the ground state. Which happens more often depends on which level has more atoms. Normally almost all atoms are in the ground state, so a photon is much more likely to be absorbed than multiplied, and light becomes weaker in matter. Light is amplified only if the upper level has more atoms than the lower one, $N_2 > N_1$. This state is called **population inversion**. Heating does not produce it: even in warm matter the lower level always has more atoms than the upper one.
 
@@ -192,6 +198,12 @@ So the colour of a semiconductor quantum dot can be chosen by its size, even tho
 
 <figure class="unit-photo"><img src="pics/fy8/helium-neon-laser.webp" alt="A black box-shaped device labelled He-Ne LASER sits in a mount on a table; red light shines from its end, with a holder in front of it."><figcaption>A helium–neon laser in an optics set-up. An electric discharge pumps the gas in the tube, and the mirrors at the ends of the tube amplify the light into a narrow red beam with a wavelength of $633\,\text{nm}$.</figcaption></figure>
 
+```pysahdy
+A quantum dot made of cadmium selenide emits blue light of wavelength $450\,\text{nm}$. Use $hc = 1240\,\text{eV}\,\text{nm}$. Calculate the photon energy and decide whether the dot has a larger or smaller diameter than the $2.0\,\text{nm}$ dot. By how much does the dot's energy gap exceed the $1.74\,\text{eV}$ gap of a large crystal?
+---
+The photon energy is $\tfrac{hc}{\lambda} = \tfrac{1240\,\text{eV}\,\text{nm}}{450\,\text{nm}} \approx 2.76\,\text{eV}$, and the energy gap is approximately this large. It is larger than the gap of the $2.0\,\text{nm}$ dot ($480\,\text{nm}$ corresponds to $2.58\,\text{eV}$), so the dot is smaller than $2.0\,\text{nm}$. The excess is $2.76\,\text{eV} - 1.74\,\text{eV} \approx 1.0\,\text{eV}$.
+```
+
 ### Applications of quantum structures
 In a quantum dot display, blue backlight hits quantum dots, which absorb it and emit pure green or red light in the same way as in the fluorescence of the chapter *Spectra reveal the energy levels of atoms*. Most laser diodes are quantum well lasers, in which the thickness of the well selects the wavelength. Quantum dot layers are being studied for solar cells, and by the size of the dots they can be tuned to absorb the wanted part of the spectrum of the Sun.
 
@@ -276,6 +288,12 @@ With the same power, a laser of a longer wavelength emits more photons, because 
   <foreignObject x="361" y="47.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#c92a2a">$650\,\text{nm}$</div></foreignObject>
   <foreignObject x="362" y="235.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$P = 1.0\,\text{mW}$</div></foreignObject>
 </svg>
+
+```pysahdy
+The power of a laser is kept the same, but the photon energy doubles. What happens to the number of photons emitted per second?
+---
+Since $\tfrac{N}{t} = \tfrac{P}{hf}$, the number of photons per second is halved.
+```
 
 ## Worked example
 The energy difference of the levels of the laser transition of a helium–neon laser is $1.96\,\text{eV}$, and the power of the laser is $1.0\,\text{mW}$. How many photons does the laser emit per second?

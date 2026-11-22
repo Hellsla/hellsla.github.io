@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c4d738277552c551
+CONTENT-HASH: 1fce8e9231721abe
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] inquiry.json herata, "Kertaa: valon taajuus" — the optional task is now purely wave kinematics (f = c/λ); it still belongs to the LED scene through "Punaisen LEDin valon". Fine; no change needed beyond confirming the opened feedback in a capture next round.
+- [Minor] pysahdy 1 — answer chain writes the symbols E_g,sin / E_g,pun as an inline fraction; fine, but write the ratio once as a display-like row if it wraps on a phone.
+- [Minor] pysahdy 3 — "$\text{V}\,\text{s}$" is correct; the result $6{,}7 \cdot 10^{-34}\,\text{J}\,\text{s}$ is fine.
+
+## Vanhan sisällön löydökset
+(none)
 
 ## Checked
-- Delta round 1: inquiry.json herata task (title, prompt, three choices, feedback); lesson.md only presentation.
-- Opened fy8-6-stage-herata-390 (the retrieval box, "Kertaa: valon taajuus", closed state, no clipping).
-- The opened choices and feedback are not in any capture (herata is not among the open states); judged from source: every value is inline LaTeX with unit ($6{,}38 \cdot 10^{14}\,\text{Hz}$), \cdot, decimal comma, \tfrac{c}{\lambda}; chapter title in italics; Finnish fluent, case endings correct. The old display aligned blocks were removed, so the feedback is shorter and safe at 360 px.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+batch delta review (pysahdy only): component rendering in fy8-10 theory capture; source of all three boxes.

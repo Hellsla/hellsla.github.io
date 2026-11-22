@@ -231,6 +231,12 @@ A free quark has never been observed. The strong interaction keeps the quarks in
   <line x1="300" y1="30" x2="300" y2="320" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
 </svg>
 
+```pysahdy
+Consider the quark combinations $u\bar{d}$, $uud$ and $ud$. The charge of a $u$ quark is $+\tfrac{2}{3}e$ and that of a $d$ quark $-\tfrac{1}{3}e$. Compute the charge of each and decide which can exist as free particles.
+---
+$u\bar{d}$: $\left(+\tfrac{2}{3} + \tfrac{1}{3}\right)e = +e$. $uud$: $\left(\tfrac{2}{3} + \tfrac{2}{3} - \tfrac{1}{3}\right)e = +e$. $ud$: $\left(\tfrac{2}{3} - \tfrac{1}{3}\right)e = +\tfrac{1}{3}e$. The first two are hadrons (a meson and a baryon) with a charge that is a whole-number multiple of $e$, so they can exist free. The combination $ud$ is neither a meson nor a baryon, so it does not occur as a free particle.
+```
+
 ### Antiparticles and annihilation
 Every particle has an **antiparticle**, which has the same mass but opposite charge and opposite baryon and lepton numbers. The antiparticle of the electron is the positron $e^+$, which is produced in beta plus decay. An antiparticle is written with a bar: $\bar{u}$ is the anti-$u$ quark and $\bar{\nu}_e$ the electron antineutrino. When a particle and its antiparticle meet, they can **annihilate**: both disappear, and all their energy turns into, for example, photons. When an electron and a positron are nearly at rest, two photons are produced and leave in opposite directions, each with the energy $m_e c^2 = 511\,\text{keV}$. PET imaging is based on this (chapter *Radiation in medicine and technology*).
 
@@ -313,6 +319,12 @@ The range of the electromagnetic interaction and of gravity is unlimited. The st
 
 <figure class="unit-photo"><img src="pics/fy8/cms-detector.webp" alt="A huge, multi-layered detector full of cables and metal plates; people in orange helmets stand in the foreground with their backs to the camera."><figcaption>The CMS detector opened up at CERN. The layers of the detector measure the tracks and energies of particles produced in collisions. The visitors standing in front show how large the machine is.</figcaption></figure>
 
+```pysahdy
+The electric force between two protons is about $10^{36}$ times greater than the gravitational force. Why, then, does gravity rule the motion of planets and stars?
+---
+Large bodies are almost electrically neutral: positive and negative charges cancel each other. Masses only add up, so gravity remains.
+```
+
 ### The Higgs boson and CERN
 According to the Standard Model, space is filled with the **Higgs field**. Interaction with it gives mass to the $W$ and $Z$ bosons, the quarks and the charged leptons, but the photon and the gluon remain massless. The quantum of the field is the **Higgs boson**. It was discovered in 2012 at the LHC accelerator of CERN, the European Organization for Nuclear Research, and its mass is about $125\,\tfrac{\text{GeV}}{c^2}$. Only about $1\,\%$ of the mass of the proton is the mass of its quarks; the rest is the energy of the strong interaction that binds the quarks.
 
@@ -365,6 +377,12 @@ energy released in a nuclear reaction :: Q = (m_\text{initial} - m_\text{final})
 where $m_\text{initial}$ is the mass of the decaying particle and $m_\text{final}$ is the sum of the masses of the particles produced (chapter *Mass defect and nuclear binding energy*). The decay can happen only when $Q > 0$ and all three numbers are conserved. These are necessary but not always sufficient conditions: the reaction must also be mediated by some interaction, and other conservation laws can still prevent it. The masses of particles are given in the unit $\tfrac{\text{MeV}}{c^2}$, so $c^2$ cancels and $Q$ comes out directly in megaelectronvolts.
 
 The proton is the lightest baryon. In the ordinary low-energy reactions of the Standard Model the baryon number is conserved, so the proton cannot decay into lighter particles through these reactions: the decay products would have to include a baryon, and there is no baryon lighter than the proton. In some theories that extend the Standard Model the decay of the proton could, however, be possible, and that is why it is searched for experimentally. The decay of the proton has not been observed. For example, for the decay $p \to e^+ + \pi^0$ experiments give a lower limit of over $10^{34}$ years for the lifetime.
+
+```pysahdy
+A free particle has the mass $135\,\tfrac{\text{MeV}}{c^2}$ and should decay into particles whose masses add up to $140\,\tfrac{\text{MeV}}{c^2}$. Compute $Q$ and decide what the result means.
+---
+$Q = (m_\text{initial} - m_\text{final})\,c^2 = (135 - 140)\,\text{MeV} = -5\,\text{MeV}$. A negative $Q$ means the decay would need $5\,\text{MeV}$ of extra energy that a free particle does not have, so the decay cannot happen.
+```
 
 ### Beta decay at the quark level
 In beta minus decay a neutron turns into a proton. At the quark level, one $d$ quark of the neutron turns into a $u$ quark through the mediator particle $W^-$ of the weak interaction:

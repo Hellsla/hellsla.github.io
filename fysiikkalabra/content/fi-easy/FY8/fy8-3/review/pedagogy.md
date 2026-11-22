@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 7cf00fb14ee5fdf8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 09c833045fb594ca
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- Uusi laatikko on kaavaosassa ennen taulukkoa; sarjan nimi (Paschen) voisi mainita ratkaisussa.
+
+## Vanhan sisällön löydökset
+(none; ei Blocking)
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+batch delta review: vanhan laatikon poisto ja uusi laatikko (5 -> 3: 0,967 eV, 1,28 um, infrapuna) laskettu oikein; sopii kaavaosan jälkeen.

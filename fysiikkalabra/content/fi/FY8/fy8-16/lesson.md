@@ -251,6 +251,12 @@ Lähes kaikkien galaksien valossa on punasiirtymä, ja sitä suurempi, mitä kau
 
 Punasiirtymä syntyy, kun avaruuden laajeneminen venyttää valon aallonpituutta sen matkatessa galaksista meille. Lähellä olevien galaksien punasiirtymää voi tulkita kuten ääntä, jonka lähde loittonee: mitä nopeammin lähde loittonee, sitä pidempänä aallonpituus saapuu.
 
+```pysahdy
+Hubblen vakio on $70\,\tfrac{\text{km/s}}{\text{Mpc}}$. Meistä katsottuna galaksi A on $60\,\text{Mpc}$ ja galaksi B samassa suunnassa $120\,\text{Mpc}$ päässä. Kuinka nopeasti B loittonee galaksista A katsottuna ja kuinka kaukana B on A:sta?
+---
+$v_\text{A} = 70 \cdot 60 = 4200\,\tfrac{\text{km}}{\text{s}}$ ja $v_\text{B} = 70 \cdot 120 = 8400\,\tfrac{\text{km}}{\text{s}}$. A:sta katsottuna B loittonee nopeudella $8400 - 4200 = 4200\,\tfrac{\text{km}}{\text{s}}$ etäisyydellä $120\,\text{Mpc} - 60\,\text{Mpc} = 60\,\text{Mpc}$. Se on sama laki $v = H_0\,d$, joten emme ole erityinen keskipiste.
+```
+
 ### Alkuräjähdys
 Jos galaksit loittonevat toisistaan nyt, ne olivat menneisyydessä lähempänä toisiaan. Laajenemista taaksepäin seuraamalla päädytään tilaan, jossa koko nykyinen havaittava maailmankaikkeus oli hyvin tiheä ja kuuma. Tästä tilasta alkanutta laajenemista kutsutaan **alkuräjähdykseksi**. Se tapahtui noin $13{,}8$ miljardia vuotta sitten. Nimestään huolimatta alkuräjähdys ei ollut räjähdys, jossa aine lensi tyhjään avaruuteen jostakin pisteestä: se tapahtui kaikkialla, ja avaruus itse alkoi laajeta. Laajetessaan maailmankaikkeus jäähtyi, ja jäähtyminen määrää, missä järjestyksessä ytimet, atomit, tähdet ja galaksit syntyivät.
 
@@ -286,6 +292,12 @@ Ensimmäisten sekuntien jälkeen maailmankaikkeudessa oli protoneja, neutroneja,
 Ytimet eivät heti saaneet elektroneja ympärilleen. Fotonien energia oli niin suuri, että ne ionisoivat jokaisen syntyvän atomin, ja vapaat elektronit sirottivat fotoneja joka suuntaan: maailmankaikkeus oli kuin hehkuvaa sumua. Noin $380\,000$ vuoden kuluttua lämpötila oli laskenut noin $3000\,\text{K}$:iin. Silloin fotoneja, joiden energia riittää vetyatomin ionisoimiseen eli on vähintään $13{,}6\,\text{eV}$ (luku *Vetyatomin energiatasot ja Bohrin malli*), ei enää ollut tarpeeksi. Protonit ja elektronit pystyivät muodostamaan pysyviä vetyatomeja, ja vapaiden elektronien määrä pieneni voimakkaasti. Fotonit olivat aiemmin sironneet jatkuvasti vapaista elektroneista (Thomsonin sironta). Sironnan harveneminen teki maailmankaikkeudesta läpinäkyvän sille säteilylle, jonka havaitsemme nykyisin kosmisena mikroaaltotaustana: fotonit pääsivät etenemään pitkiä matkoja törmäilemättä.
 
 Tuolloin vapautunut valo on yhä matkalla. Laajeneminen on venyttänyt sen aallonpituudet noin $1100$-kertaisiksi, joten nyt se on mikroaaltoja, joiden tyypillinen aallonpituus on noin $1{,}06\,\text{mm}$. Tämä on **kosminen taustasäteily**. Arno Penzias ja Robert Wilson löysivät sen vuonna 1965. Sitä tulee joka suunnasta lähes tasaisesti, ja sen spektri vastaa kappaletta, jonka lämpötila on $2{,}725\,\text{K}$.
+
+```pysahdy
+Sirontakerroksesta vapautui $3000\,\text{K}$:n säteilyn tyypillinen fotoni, jonka energia oli noin $0{,}7\,\text{eV}$. Laajeneminen on venyttänyt sen aallonpituuden $1100$-kertaiseksi. Mikä on fotonin energia nyt ja voiko se ionisoida vetyatomin?
+---
+Energia on kääntäen verrannollinen aallonpituuteen, joten $E = \tfrac{0{,}7\,\text{eV}}{1100} \approx 6\cdot 10^{-4}\,\text{eV}$. Se on paljon pienempi kuin vedyn ionisaatioenergia $13{,}6\,\text{eV}$, joten fotoni ei voi ionisoida vetyatomia.
+```
 
 ### Tähdet valmistavat raskaammat alkuaineet
 Muutaman sadan miljoonan vuoden kuluttua painovoima oli koonnut vety- ja heliumkaasua pilviksi, joiden ytimissä lämpötila nousi niin korkeaksi, että fuusio alkoi: syntyivät ensimmäiset tähdet. Tähti, kuten Aurinko, fuusioi ytimessään vetyä heliumiksi suurimman osan elämästään. Kun vety ytimestä loppuu, ydin kutistuu ja kuumenee, ja helium alkaa fuusioitua hiileksi ja hapeksi. Hyvin massiivisissa tähdissä fuusio jatkuu yhä raskaampiin ytimiin aina rautaan asti. Fuusio vapauttaa energiaa vain niin kauan kuin syntyvä ydin on tiiviimmin sidottu kuin lähtöytimet, ja sidosenergia nukleonia kohti on suurimmillaan raudan ja nikkelin alueella. Yksittäisistä nuklideista suurin arvo on nikkeli-62:lla.
@@ -496,6 +508,12 @@ missä $v$ on etääntymisnopeus, $d$ galaksin etäisyys ja $H_0$ **Hubblen vaki
   <circle cx="432.5" cy="82.5" r="6" fill="#e8590c" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="470" y="49.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$v = H_0\,d$</div></foreignObject>
 </svg>
+
+```pysahdy
+Hubblen vakio on $70\,\tfrac{\text{km/s}}{\text{Mpc}}$. a) Millä nopeudella galaksi etääntyy, kun sen etäisyys on $100\,\text{Mpc}$? b) Millä etäisyydellä galaksi etääntyy nopeudella $14\,000\,\tfrac{\text{km}}{\text{s}}$?
+---
+a) $v = H_0\,d = 70\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 100\,\text{Mpc} = 7000\,\tfrac{\text{km}}{\text{s}}$. b) $d = \tfrac{v}{H_0} = \tfrac{14\,000\,\text{km/s}}{70\,\text{km/s/Mpc}} = 200\,\text{Mpc}$.
+```
 
 ### Syventävä: maailmankaikkeuden ikä Hubblen vakiosta
 Maailmankaikkeuden ikää voi arvioida karkeasti olettamalla, että galaksien nykyiset etääntymisnopeudet kuvaavat koko laajenemishistoriaa. Jos galaksi on liikkunut koko ajan nopeudella $v = H_0\,d$, se on ollut samassa paikassa kuin me ajan $t = \tfrac{d}{v}$ sitten. Sijoitetaan Hubblen ja Lemaîtren laki:

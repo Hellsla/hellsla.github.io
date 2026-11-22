@@ -126,6 +126,12 @@ Fotonin energia on $E = hf$ (luku *Valosähköinen ilmiö ja fotoni*). Siksi rat
   <foreignObject x="429" y="125.5" width="112" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\gamma\ 662\,\text{keV}$</span></div></foreignObject>
 </svg>
 
+```pysahdy
+Röntgenfotonin energia on $60\,\text{keV}$ ja se luovuttaa kaiken energiansa vedelle. Yhden molekyylin ionisointi vaatii $12{,}6\,\text{eV}$. Kuinka monta molekyyliä fotoni voi enintään ionisoida?
+---
+$n = \tfrac{6{,}0 \cdot 10^{4}\,\text{eV}}{12{,}6\,\text{eV}} = 4762$, ja enintään-arvo pyöristetään alas. Fotoni voi siis ionisoida enintään noin $4{,}7 \cdot 10^{3}$ molekyyliä. Näkyvän valon fotoni ($1{,}7\,\text{eV} - 3{,}3\,\text{eV}$) ei ionisoisi yhtäkään.
+```
+
 ### Ionisaatio siirtää säteilyn energiaa aineeseen
 Ionisoiva hiukkanen ei yleensä menetä energiaansa kerralla. Se irrottaa matkallaan elektronin toisensa perään. Ilmassa yksi ionipari vie keskimäärin energian $W \approx 34\,\text{eV}$. Se on enemmän kuin molekyylien ionisaatioenergia, koska osa energiasta kuluu molekyylien virittämiseen eli energiatilan nostamiseen. Osa kuluu myös irronneiden elektronien liike-energiaksi. Kun hiukkasen koko liike-energia $E$ siirtyy aineeseen, ioniparien määrä on
 ```latex
@@ -258,6 +264,12 @@ Neutraalit **neutronit** ionisoivat samaan tapaan epäsuorasti. Ne törmäävät
 </svg>
 
 <figure class="unit-photo"><img src="pics/fy8/hfir-refueling.webp" alt="Syvä vesiallas ylhäältä. Pohjalla on reaktori, josta loistaa sinistä valoa."><figcaption>Tutkimusreaktori vesialtaan pohjalla. Sininen valo syntyy, kun varatut hiukkaset, enimmäkseen elektronit, kulkevat vedessä nopeammin kuin valo vedessä. Paksu vesi vaimentaa säteilyä. Siksi altaan reunalla voi olla turvallisesti.</figcaption></figure>
+
+```pysahdy
+Alfa- ja beetahiukkasen liike-energia on kummallakin $4{,}0\,\text{MeV}$, ja ne pysähtyvät ilmaan. Oleta, että kummallekin $W \approx 34\,\text{eV}$. Vertaa niiden tuottamia ionipareja ensin yhteensä ja sitten yhden sentin matkalla.
+---
+Kumpikin tuottaa $\tfrac{4{,}0 \cdot 10^{6}\,\text{eV}}{34\,\text{eV}} \approx 1{,}2 \cdot 10^{5}$ ionipareja, koska $n_\text{i} = E/W$ riippuu vain energiasta. Beeta kulkee metrejä ja alfa vain muutaman senttimetrin. Siksi beeta tuottaa senttimetrin matkalla paljon vähemmän ionipareja.
+```
 
 ### Läpäisykyky
 **Läpäisykyky** kertoo, kuinka paksun ainekerroksen säteily läpäisee. Mitä tiheämmin säteily ionisoi, sitä nopeammin se luovuttaa energiansa. Silloin jo ohut kerros pysäyttää sen. Siksi alfasäteilyllä on pienin läpäisykyky ja gammasäteilyllä suurin.
@@ -448,6 +460,12 @@ Mitä suurempi vaimennuskerroin on, sitä ohuempi kerros riittää vaimentamaan 
   <foreignObject x="233" y="67" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$</span></div></foreignObject>
   <foreignObject x="292.5" y="213" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$d_{1/2} = 5{,}5\,\text{mm}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Esteen puoliintumispaksuus on $2{,}0\,\text{cm}$. Kuinka suuri osa gammasäteilystä läpäisee $6{,}0\,\text{cm}$:n paksuisen esteen?
+---
+$6{,}0\,\text{cm}$ on kolme puoliintumispaksuutta: $\tfrac{I}{I_0} = \left(\tfrac{1}{2}\right)^3 = 0{,}125$ eli $12{,}5\,\%$.
+```
 
 ### Puoliintumispaksuus riippuu aineesta ja energiasta
 Puoliintumispaksuus riippuu aineen tiheydestä, koostumuksesta (eli siitä, mistä atomeista aine koostuu) ja säteilyn energiasta. Lyijy vaimentaa gammasäteilyä tehokkaasti monilla energioilla, koska se on hyvin tiheää ja sen atomeissa on paljon protoneja (järjestysluku on suuri). Sama vaimennus vaatii betonia noin seitsemän kertaa paksumman kerroksen. Gammasäteilyn läpäisykyky ei kasva koko ajan energian mukana. Kun energia kasvaa, gammasäteily alkaa vuorovaikuttaa aineen kanssa eri tavalla. Siksi suurempi energia ei aina tarkoita parempaa läpäisykykyä. Taulukon arvot koskevat cesium-137:n $662\,\text{keV}$:n gammasäteilyä.

@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: fa562a1451b96017
+CONTENT-HASH: 05e017bf7b2ca8c8
 
 ## Blocking
-- none
 
 ## Polish
-- none
+None.
 
 ## Checked
-- batch delta review: only a framing sentence (chemistry book electron clouds, electron as a wave) added to the retrieval prompt; options and feedback unchanged and right; other changes reflow and approved formula names; hash same at start and end.
+batch delta review, round 2: 3p box moved unchanged to just after the shell table; 3 orbitals times 2 = 6 electrons is right and the table above it supports it.

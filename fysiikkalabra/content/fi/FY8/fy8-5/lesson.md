@@ -263,12 +263,24 @@ Atomissa aalto on kolmiulotteinen, joten sen solmut ovat pintoja, ja solmupinnal
   <foreignObject x="425" y="301.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{solmutaso}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Vetyatomin tilan aallossa on yhteensä kaksi solmua. Mikä on tilan pääkvanttiluku, ja onko tilan energia suurempi kuin tilassa $n = 2$?
+---
+Solmuja on $n - 1$, joten $n = 3$. Solmuja on enemmän kuin tilassa $n = 2$, joten energia on suurempi.
+```
+
 ### Todennäköisyystulkinta
 Aalto ei kerro, missä elektroni on, vaan missä se todennäköisesti havaitaan. Kun elektronin paikka mitataan, tulos on aina yksi piste, eikä yksittäistä tulosta voi ennustaa. Aallon amplitudin neliö kertoo, kuinka todennäköisesti elektroni havaitaan pienessä tilavuudessa kunkin kohdan ympärillä. Tämä on aaltomallin **todennäköisyystulkinta**. Jakauma tulee näkyviin vasta, kun mittaus toistetaan monessa samassa tilassa olevassa atomissa. Jos $N$ mittauksesta $k$ osuu johonkin alueeseen, todennäköisyys havaita elektroni siinä on likimain
 ```latex
 P \approx \frac{k}{N}
 ```
 missä $P$ on todennäköisyys, $k$ alueeseen osuneiden mittausten määrä ja $N$ kaikkien mittausten määrä. Arvio tarkentuu, kun $N$ kasvaa. Mittausten välillä elektronilla ei ole rataa, jonka voisi piirtää.
+
+```pysahdy
+Elektronin paikka mitataan $250$ samassa tilassa olevassa atomissa, ja $50$ mittausta osuu tietylle alueelle. Kuinka todennäköisesti elektroni havaitaan alueella?
+---
+$P \approx \tfrac{k}{N} = \tfrac{50}{250} = 0{,}20$ eli $20\,\%$.
+```
 
 ### Orbitaali kuvaa elektronin kvanttitilaa
 Kun mittaustulokset merkitään pisteiksi, syntyy elektronipilvi, joka on tihein siellä, missä elektroni havaitaan todennäköisimmin. Pilvellä ei ole terävää reunaa. **Orbitaali** kuvaa elektronin kvanttitilaa eli atomin sallittua seisovaa aaltoa, ja se määrää, millä todennäköisyydellä elektroni havaitaan eri kohdissa. Kuvissa orbitaali havainnollistetaan alueena, jonka sisällä elektroni havaitaan valitulla todennäköisyydellä, tavallisesti $90\,\%$:n todennäköisyydellä. Piirretty alue on havainnollistus, ei orbitaalin määritelmä. Raja on sovittu kynnysarvo eikä seinä: noin kymmenesosa mittauksista osuu sen ulkopuolelle. Vetyatomin $1\text{s}$-orbitaalin $90\,\%$:n raja on pallo, jonka säde on $0{,}14\,\text{nm}$. Esimerkiksi $2\text{p}$-orbitaali on yksi vetyatomin tiloista.
@@ -1337,6 +1349,12 @@ elektronia, missä $N_\text{max}$ on elektronien enimmäismäärä ja $n$ kuoren
 | $2$ | s, p | $4$ | $8$ |
 | $3$ | s, p, d | $9$ | $18$ |
 | $4$ | s, p, d, f | $16$ | $32$ |
+
+```pysahdy
+Montako elektronia mahtuu enintään $3\text{p}$-alikuorelle?
+---
+P-alikuorella on kolme orbitaalia, ja kullakin orbitaalilla voi olla enintään kaksi elektronia. Enintään $3 \cdot 2 = 6$ elektronia.
+```
 
 Kun elektroni siirtyy ylemmästä tilasta alempaan, atomi lähettää fotonin, jonka energia on tilojen energioiden erotus (luku *Spektrit paljastavat atomin energiatasot*). Vetyatomissa saman kuoren tiloilla on sama energia, joten esimerkiksi siirtymät $3\text{d} \to 2\text{p}$ ja $3\text{s} \to 2\text{p}$ tuottavat saman spektriviivan.
 

@@ -90,6 +90,12 @@ Ydintä kuvataan kahdella luvulla. **Järjestysluku** $Z$ on protonien määrä,
   <foreignObject x="400" y="297.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{neutroni } n$</div></foreignObject>
 </svg>
 
+```pysahdy
+Natriumytimen merkintä on ${}^{23}_{11}\text{Na}$. Montako protonia ja neutronia ytimessä on?
+---
+Protoneja on $Z = 11$ ja neutroneja $N = A - Z = 23 - 11 = 12$.
+```
+
 ### Miksi osa ytimistä hajoaa
 Protonit hylkivät toisiaan sähköisesti, mutta ydin pysyy koossa vahvan vuorovaikutuksen ansiosta. Se vetää nukleoneja toisiinsa, mutta vain hyvin lyhyellä, ytimen kokoisella etäisyydellä. Neutronit lisäävät vetoa lisäämättä hylkimistä, joten pysyvissä raskaissa ytimissä on enemmän neutroneja kuin protoneja.
 
@@ -157,6 +163,12 @@ Vain tietyt protonien ja neutronien yhdistelmät ovat pysyviä. Kun ytimiä piir
 **Alfahajoamisessa** ytimestä lähtee alfahiukkanen eli heliumydin ${}^{4}_{2}\text{He}$, jossa on kaksi protonia ja kaksi neutronia. Se on tyypillistä raskaille ytimille, kuten uraanille, radiumille ja savuilmaisimen americiumille.
 
 **Beetahajoamisessa** ytimessä on liikaa tai liian vähän neutroneja suhteessa protoneihin. Beeta miinus -hajoamisessa ytimen neutroni muuttuu protoniksi, ja ytimestä lähtee elektroni ja antineutriino. Elektroni ei ole ollut ytimessä valmiina, vaan se syntyy hajoamisessa. Beeta plus -hajoamisessa protoni muuttuu neutroniksi, ja ytimestä lähtee positroni eli elektronin antihiukkanen sekä neutriino. Beetahajoamisen aiheuttaa heikko vuorovaikutus.
+
+```pysahdy
+Hiili-14 ${}^{14}_{6}\text{C}$ hajoaa beeta miinus -hajoamisella. Mikä on tyttärytimen massaluku ja järjestysluku, ja mikä alkuaine se on?
+---
+Neutroni muuttuu protoniksi, joten $Z = 6 + 1 = 7$, ja nukleonien määrä pysyy samana: $A = 14$. Tytärydin on typpi-14, ${}^{14}_{7}\text{N}$.
+```
 
 Beetahajoamisen kaltainen on **elektronisieppaus**: ydin sieppaa atomin sisimmältä elektronikuorelta elektronin, protoni muuttuu neutroniksi ja ytimestä lähtee elektronineutriino ${}^{0}_{0}\nu_\text{e}$. Yleisesti
 ```kaavat
@@ -299,6 +311,12 @@ ja gammahajoaminen
 {}^{A}_{Z}\text{X}^{\ast} \to {}^{A}_{Z}\text{X} + \gamma
 ```
 missä X on hajoava emoydin, Y syntyvä tytärydin, $A$ massaluku, $Z$ järjestysluku, $\bar{\nu}$ antineutriino, $\nu$ neutriino ja $\gamma$ gammafotoni. Tyttärytimen alkuaine luetaan jaksollisesta järjestelmästä sen järjestysluvusta.
+
+```pysahdy
+Uraani-238 ${}^{238}_{92}\text{U}$ hajoaa alfahajoamisella. Mikä on tyttärytimen massaluku ja järjestysluku?
+---
+Alfahiukkanen ${}^{4}_{2}\text{He}$ vie neljä nukleonia ja kaksi protonia: $A = 238 - 4 = 234$ ja $Z = 92 - 2 = 90$.
+```
 
 <svg data-fig="shifts" viewBox="0 0 600 360" role="img" aria-label="Nuklidikartan ote, ruudukko: vaaka-akselilla neutroniluku N, pystyakselilla järjestysluku Z, yksi ruutu yksi yksikkö. Keskellä emoydin. Alfahajoaminen siirtää ytimen kaksi ruutua alas ja kaksi vasemmalle (Z − 2, N − 2). Beeta miinus -hajoaminen siirtää yhden ruudun ylös ja yhden vasemmalle (Z + 1, N − 1). Beeta plus -hajoaminen siirtää yhden ruudun alas ja yhden oikealle (Z − 1, N + 1). Gammahajoamisessa ydin pysyy samassa ruudussa." style="max-width:100%;font-size:24px">
   <line x1="140" y1="40" x2="140" y2="316" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

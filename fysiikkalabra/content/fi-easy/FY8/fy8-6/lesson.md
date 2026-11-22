@@ -202,6 +202,12 @@ Fotonin energia on likimain energia-aukon suuruinen, $hf \approx E_\text{g}$. LE
 
 <figure class="unit-photo"><img src="pics/fy8/green-led.webp" alt="LEDin kupu läheltä. Keskellä hehkuu vihreä siru."><figcaption>Vihreä LED. Vihreän valon fotonissa on enemmän energiaa kuin punaisen valon fotonissa. Siksi vihreän LEDin kynnysjännite on suurempi kuin punaisen LEDin.</figcaption></figure>
 
+```pysahdy
+Punaisen LEDin valon aallonpituus on $630\,\text{nm}$ ja sinisen LEDin $450\,\text{nm}$ (spektrin huipun kohdalla). Kuinka moninkertainen on sinisen LEDin energia-aukko punaisen LEDin verrattuna?
+---
+Koska $E_\text{g} \approx hf = \tfrac{hc}{\lambda}$, energia-aukko on kääntäen verrannollinen aallonpituuteen. Siis $\tfrac{E_\text{g,sin}}{E_\text{g,pun}} \approx \tfrac{630\,\text{nm}}{450\,\text{nm}} = 1{,}4$. Sinisen LEDin energia-aukko on noin $1{,}4$-kertainen.
+```
+
 ### Kynnysjännite
 Kun elektroni kulkee jännitteen $U$ yli, sähkökenttä tekee siihen työn $eU$. Tässä $e$ on alkeisvaraus. Juuri näin määriteltiin elektronivoltti luvussa *Valosähköinen ilmiö ja fotoni*. Elektroni voi synnyttää fotonin, jonka energia on $E_\text{g}$, vain jos se saa jännitelähteeltä vähintään likimain tämän energian. Siksi LED ei pienellä jännitteellä juuri johda virtaa eikä säteile. Virta alkaa kasvaa jyrkästi, kun jännite saavuttaa LEDin **kynnysjännitteen** $U_\text{k}$. Sille pätee $eU_\text{k} \approx E_\text{g} \approx hf$. Sinisen valon fotoni tarvitsee enemmän energiaa kuin punaisen. Siksi sinisen LEDin kynnysjännite on suurempi.
 
@@ -268,6 +274,12 @@ eU_\text{k} \approx hf = \frac{hc}{\lambda}
 Tässä $e = 1{,}602 \cdot 10^{-19}\,\text{C}$ on alkeisvaraus. $U_\text{k}$ on LEDin kynnysjännite ($\text{V}$). $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on Planckin vakio. $f$ on valon taajuus ($\text{Hz}$). $c = 2{,}998 \cdot 10^8\,\text{m/s}$ on valon nopeus. $\lambda$ on LEDin spektrin huipun aallonpituus ($\text{m}$).
 
 Lasketaan esimerkki punaiselle LEDille, jonka $\lambda = 630\,\text{nm}$. Kynnysjännite on $U_\text{k} \approx \tfrac{hc}{e\lambda}$. Luvussa *Valosähköinen ilmiö ja fotoni* laskettiin $hc = 1240\,\text{eV}\,\text{nm}$. Koska $1\,\text{eV} = e \cdot 1\,\text{V}$, on $\tfrac{hc}{e} = 1240\,\text{V}\,\text{nm}$. Siten $U_\text{k} \approx 1240\,\text{V}\,\text{nm} : 630\,\text{nm} = 1{,}97\,\text{V}$. Mitattu kynnysjännite on yleensä hieman pienempi, esimerkiksi $1{,}88\,\text{V}$. Fotonin energia elektronivoltteina on likimain sama luku kuin kynnysjännite voltteina, koska $1\,\text{eV}$ on energia, jonka elektroni saa $1\,\text{V}$:n jännitteessä.
+
+```pysahdy
+LEDin valon aallonpituus on $500\,\text{nm}$ (spektrin huipun kohdalla). Arvioi LEDin kynnysjännite.
+---
+$U_\text{k} \approx \tfrac{hc}{e\lambda} = \tfrac{1240\,\text{V}\,\text{nm}}{500\,\text{nm}} \approx 2{,}5\,\text{V}$.
+```
 
 ### Kynnysjännitteen määrittäminen
 Kynnysjännite mitataan näin. LED kytketään sarjaan suojavastuksen ja virtamittarin kanssa säädettävään jännitelähteeseen. Jännitemittari kytketään LEDin napojen väliin. Suojavastus rajoittaa virtaa, jotta LED ei kuumene ja rikkoudu. Virta ei saa olla suurempi kuin valmistajan ilmoittama suurin sallittu arvo. Jännitettä kasvatetaan vähitellen, ja kullakin jännitteellä kirjataan virta.
@@ -346,6 +358,12 @@ Piirretään usean eri värisen LEDin kynnysjännitteet kuvaajaksi $(f, U_\text{
 h \approx ek
 ```
 Tässä $k$ on sovitetun suoran kulmakerroin ($\tfrac{\text{V}}{\text{Hz}} = \text{V}\,\text{s}$) ja $e$ on alkeisvaraus. Yksiköt sopivat yhteen: $\text{C} \cdot \text{V}\,\text{s} = \text{J}\,\text{s}$. Kulmakerroin luetaan sovitetulta suoralta, ei kahdesta mittauspisteestä. Graphical Analysis Prossa suora sovitetaan valinnoilla **Käyrän sovitus** ja **Lineaarinen**. Tulosruudun $m$ on kulmakerroin.
+
+```pysahdy
+Kuvaajaan $(f, U_\text{k})$ sovitetun suoran kulmakerroin on $4{,}2 \cdot 10^{-15}\,\text{V}\,\text{s}$. Mikä arvo saadaan Planckin vakiolle?
+---
+$h \approx ek = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}2 \cdot 10^{-15}\,\text{V}\,\text{s} \approx 6{,}7 \cdot 10^{-34}\,\text{J}\,\text{s}$.
+```
 
 <svg data-fig="sovitus" viewBox="0 0 600 380" role="img" aria-label="Kuvaaja mittakaavassa: kuuden LEDin kynnysjännite U k voltteina niiden valon taajuuden f funktiona. Taajuusakseli on nollasta 8 kertaa 10 potenssiin 14 hertsiin. Pisteet ovat LEDien värisiä: punainen 4,76 ja 1,88; oranssi 4,96 ja 1,95; keltainen 5,08 ja 2,00; vihreä 5,71 ja 2,30; sininen 6,38 ja 2,52; violetti 7,40 ja 2,95. Taajuudet ovat kertaa 10 potenssiin 14 hertsiä ja jännitteet voltteina. Pisteisiin on sovitettu suora. Se jatkuu katkoviivana lähelle origoa ja leikkaa pystyakselin hieman nollan alapuolella. Suoralle on piirretty kulmakerrointa kuvaava kolmio. Merkintä kertoo, että kulmakerroin k on h jaettuna e:llä." style="max-width:100%;font-size:24px">
   <line x1="131" y1="322" x2="131" y2="64" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

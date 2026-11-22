@@ -1,7 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 9ee1c56b9a430097
+CONTENT-HASH: 89896b2ef9f02d32
+
 ## Blocking
+
 ## Polish
-- "suurissa mittakaavoissa niin tasainen" is abstract for a 16-19-year-old; consider "että maailmankaikkeus näyttää joka suunnassa lähes samanlaiselta".
+- Lähtöarvo "noin $0{,}7\,\text{eV}$ $3000\,\text{K}$:n säteilyn tyypillinen fotoni" on annettu valmiina; hyvä, mutta lyhyt maininta että arvo on suuruusluokka auttaisi.
+
+## Vanhan sisällön löydökset
+Ei.
+
 ## Checked
-batch delta review: new paragraph on cosmic inflation after the Big Bang paragraph; short, flagged as a hypothesis and as not directly observed, bold term, consistent with the surrounding text; no tasks touch it.
+batch delta review: pysahdy-laatikko; luvut täsmäävät ($0{,}7/1100 \approx 6\cdot 10^{-4}\,\text{eV}$), fysikaalisesti realistisempi kuin ionisaatioenergian käyttö, päätelmä ja yksiköt selkeät.

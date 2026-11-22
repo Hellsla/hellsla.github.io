@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 20fe97b046c6acc0
+CONTENT-HASH: fe52cbbdc4f2f8fa
 
 ## Blocking
+(none)
 
 ## Polish
-- "tasainen" can be read as either uniform (homogeneous) or spatially flat; inflation explains both, so it is right either way. If a word is wanted for S2 readers: "samanlainen joka puolella". Not blocking.
+(none)
+
+## Vanhan sisällön löydökset
+(none)
 
 ## Checked
-batch delta review: new paragraph in lesson.md on cosmic inflation. It is called a hypothesis, the very early fraction of a second and very fast expansion are right, it explains the large-scale uniformity, and "not directly observed" is right (the evidence is indirect, e.g. the uniformity of the background radiation). It says the same as the Finnish lesson (line 257) and contradicts nothing near it (the Big Bang happening everywhere, cooling). Inside FY8's cosmology content. No numbers.
+batch delta review: in the CMB box (line 295), a typical photon at $3000\,\text{K}$ has $E \approx 2{,}7\,kT = 0{,}70\,\text{eV}$, which agrees with "noin $0{,}7\,\text{eV}$". Then $0{,}70\,\text{eV}/1100 = 6{,}3 \cdot 10^{-4}\,\text{eV} \approx 6 \cdot 10^{-4}\,\text{eV}$, which is far below $13{,}6\,\text{eV}$. The previous Blocking item is fixed: the photon is now a typical $3000\,\text{K}$ photon, not a $13{,}6\,\text{eV}$ one. That agrees with the mechanism at line 292 (at $3000\,\text{K}$ too few photons reach $13{,}6\,\text{eV}$). The stretch $3000\,\text{K}/1100 \approx 2{,}7\,\text{K}$ also agrees with the summary's $2{,}725\,\text{K}$ (line 603). Energy is inversely proportional to wavelength ($E = hc/\lambda$), which is correct.
