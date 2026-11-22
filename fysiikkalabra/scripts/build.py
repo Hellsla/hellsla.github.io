@@ -1119,6 +1119,7 @@ def build_units(lang, out, unit_pub):
         if errs: sys.exit("\n".join(errs))
         d = units.load(uid, lang); st = units.status(uid, lang); f = units.folder(uid, lang); code = d["course"]
         md_text = (f / "unit.md").read_text()
+        copy_pics(uid, [units.texts_of(uid, lang)])   # the base pictures of figures (scripts/figimage.py, work queue 24)
         inq = json.loads((f / "inquiry.json").read_text())
         intro, sections = unit_sections(md_text)
         sim = ""; sf = units.sim_folder(uid, lang)
