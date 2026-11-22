@@ -38,7 +38,7 @@ UP = ""                                        # from a page to site/: "" for Fi
 COURSES = {}                                   # content/<lang>/courses.json of the language being built
 arg = sys.argv[1] if len(sys.argv) > 1 else None
 build_all = arg == "--all"; only = None if build_all else arg
-LIVE = ROOT / "site"                                  # committed, served by GitHub Pages
+LIVE = ROOT / (os.environ.get("BUILD_SITE_DIR") or "site")   # the plain build swaps its render in here; BUILD_SITE_DIR (a folder under the root, git-ignored, e.g. site-local) keeps site/ untouched (work queue 0g PR 2)
 SITE = ROOT / ("preview" if (only or build_all) else "site.tmp")   # the plain build renders here and swaps it in at the end
 if SITE.name == "site.tmp":
     if SITE.exists(): shutil.rmtree(SITE)             # leftover of an interrupted build
