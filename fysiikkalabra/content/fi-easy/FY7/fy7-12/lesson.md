@@ -3,81 +3,7 @@
 > **Miksi** valo kulkee lasikuidussa Itämeren pohjaa pitkin Helsingistä Saksaan pääsemättä välillä ulos, vaikka lasi on läpinäkyvää?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: meren poikkileikkaus. Vasemmalla ja oikealla rannalla on kaupunki. Meren pohjassa kulkee merikaapeli rannalta toiselle. Keskellä on suurennuslasin kaltainen ympyrä, jossa näkyy kaapelin sisällä oleva lasikuitu. Kuidun ytimessä valonsäde etenee siksakkia ja heijastuu kuidun reunoilta." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy712h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy712h-sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy712h-bed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><clipPath id="fy712h-lens"><circle cx="600" cy="370" r="127"/></clipPath></defs>
-  <rect x="0" y="0" width="1200" height="240" fill="url(#fy712h-sky)"/>
-  <path d="M228,96 Q226.5,69 258.5,72 Q271,43 303,53 Q332,37 348,67 Q377,70.5 373.5,96 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <path d="M906,72 Q905,51.5 929,54 Q938.5,32.5 962.5,39.5 Q984,27.5 996,50.5 Q1017.5,53 1015,72 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <rect x="0" y="230" width="1200" height="370" fill="url(#fy712h-sea)"/>
-  <path d="M0,190 L120,190 Q200,200 250,300 Q300,470 420,520 Q600,560 800,530 Q930,500 980,330 Q1020,210 1080,200 L1200,200 L1200,600 L0,600 Z" fill="url(#fy712h-bed)" stroke-linejoin="round"/>
-  <circle cx="378" cy="584" r="3" fill="#a97a35"/>
-  <circle cx="369" cy="583.5" r="3" fill="#a97a35"/>
-  <circle cx="878.5" cy="583.5" r="3" fill="#a97a35"/>
-  <circle cx="646.5" cy="561.5" r="3" fill="#a97a35"/>
-  <circle cx="806" cy="584" r="3" fill="#a97a35"/>
-  <circle cx="542.5" cy="588" r="3" fill="#a97a35"/>
-  <circle cx="777.5" cy="560.5" r="3" fill="#a97a35"/>
-  <circle cx="336.5" cy="582.5" r="3" fill="#a97a35"/>
-  <circle cx="837" cy="580" r="3" fill="#a97a35"/>
-  <circle cx="898.5" cy="580.5" r="3" fill="#a97a35"/>
-  <circle cx="394" cy="573" r="3" fill="#a97a35"/>
-  <circle cx="885.5" cy="569" r="3" fill="#a97a35"/>
-  <circle cx="364" cy="568" r="3" fill="#a97a35"/>
-  <circle cx="638" cy="582.5" r="3" fill="#a97a35"/>
-  <circle cx="880.5" cy="561.5" r="3" fill="#a97a35"/>
-  <circle cx="662" cy="565.5" r="3" fill="#a97a35"/>
-  <circle cx="745" cy="589" r="3" fill="#a97a35"/>
-  <circle cx="830" cy="572" r="3" fill="#a97a35"/>
-  <circle cx="762.5" cy="565" r="3" fill="#a97a35"/>
-  <circle cx="929" cy="589" r="3" fill="#a97a35"/>
-  <circle cx="439" cy="579" r="3" fill="#a97a35"/>
-  <circle cx="732" cy="587" r="3" fill="#a97a35"/>
-  <circle cx="408" cy="575.5" r="3" fill="#a97a35"/>
-  <circle cx="347" cy="563.5" r="3" fill="#a97a35"/>
-  <circle cx="700.5" cy="585.5" r="3" fill="#a97a35"/>
-  <circle cx="785.5" cy="568.5" r="3" fill="#a97a35"/>
-  <circle cx="810.5" cy="567.5" r="3" fill="#a97a35"/>
-  <circle cx="412.5" cy="561.5" r="3" fill="#a97a35"/>
-  <circle cx="502.5" cy="564" r="3" fill="#a97a35"/>
-  <circle cx="478.5" cy="560" r="3" fill="#a97a35"/>
-  <circle cx="316.5" cy="575" r="3" fill="#a97a35"/>
-  <circle cx="453" cy="561" r="3" fill="#a97a35"/>
-  <circle cx="628" cy="579" r="3" fill="#a97a35"/>
-  <circle cx="570" cy="582" r="3" fill="#a97a35"/>
-  <circle cx="621.5" cy="574.5" r="3" fill="#a97a35"/>
-  <circle cx="769.5" cy="588" r="3" fill="#a97a35"/>
-  <circle cx="477.5" cy="569" r="3" fill="#a97a35"/>
-  <circle cx="897" cy="562.5" r="3" fill="#a97a35"/>
-  <circle cx="360" cy="589.5" r="3" fill="#a97a35"/>
-  <circle cx="605" cy="587.5" r="3" fill="#a97a35"/>
-  <rect x="14" y="120" width="44" height="70" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="24" y="132" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="24" y="162" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="62" y="80" width="52" height="110" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="72" y="92" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="72" y="122" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="72" y="152" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="120" y="130" width="40" height="60" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="130" y="142" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="130" y="172" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="1090" y="136" width="46" height="64" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="1100" y="148" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="1100" y="178" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="1142" y="110" width="44" height="90" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="1152" y="122" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="1152" y="152" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="1152" y="182" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <path d="M150,190 Q210,205 252,300 Q302,470 420,515 Q600,553 800,524 Q928,494 976,330 Q1015,215 1080,200" fill="none" stroke="#1f2933" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-  <line x1="560" y1="548" x2="514" y2="468" stroke="#ffffff" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="640" y1="548" x2="686" y2="468" stroke="#ffffff" stroke-width="3" stroke-linecap="butt"/>
-  <circle cx="600" cy="548" r="12" fill="none" stroke="#ffffff" stroke-width="3"/>
-  <circle cx="600" cy="370" r="130" fill="#f6f1e6" stroke="#1f2933" stroke-width="4"/>
-  <g clip-path="url(#fy712h-lens)">
-  <rect x="470" y="300" width="260" height="140" fill="#6c757d"/>
-  <rect x="470" y="316" width="260" height="108" fill="#eef5f9"/>
-  <rect x="470" y="348" width="260" height="44" fill="#d0e6fb"/>
-  <path d="M430,392 L500,348 L570,392 L640,348 L710,392 L780,348" fill="none" stroke="#e64980" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-  </g>
-  <circle cx="600" cy="370" r="130" fill="none" stroke="#1f2933" stroke-width="4"/>
+  <image href="pics/fy7/fy7-12-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Ydinajatus
@@ -97,37 +23,13 @@ Kun tulokulma on suurempi kuin rajakulma, taittumislaista ei saada taitekulmaa. 
 Veden ja ilman rajapinnassa rajakulma on $48{,}8^\circ$. Siksi sukeltaja näkee vedenpinnan peilinä, kun hän katsoo sitä vinosti alhaalta. Peilistä näkyy pohja.
 
 <svg data-fig="water" viewBox="0 0 600 360" role="img" aria-label="Periaatekuva: veden pohjalla oleva lamppu lähettää kolme valonsädettä vedenpintaan eri tulokulmissa. Jokaiseen osumakohtaan on piirretty pinnan normaali katkoviivana. Vasemmalla tulokulma on 30 astetta, ja se on pienempi kuin rajakulma. Säde taittuu ilmaan normaalista poispäin, ja heikko osa valosta heijastuu takaisin veteen. Keskellä tulokulma on rajakulma 48,8 astetta. Taittunut säde kulkee pitkin pintaa. Oikealla tulokulma on 65 astetta, ja se on suurempi kuin rajakulma. Ilmaan ei pääse valoa. Koko säde heijastuu takaisin veteen, eli tapahtuu kokonaisheijastuminen." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy712w-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
-  <rect x="12" y="150" width="576" height="186" fill="url(#fy712w-water)"/>
-  <line x1="12" y1="150" x2="588" y2="150" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="178" y1="66" x2="178" y2="226" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="263.5" y1="66" x2="263.5" y2="226" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="416" y1="66" x2="416" y2="226" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <path d="M90,302 L178,150" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M137,221 L135.5,235 L125,229 Z" fill="#e64980"/>
-  <path d="M90,302 L263.5,150" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M181,222 L175.5,235 L167.5,226 Z" fill="#e64980"/>
-  <path d="M90,302 L416,150" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M258.5,223.5 L249,234.5 L244,223.5 Z" fill="#e64980"/>
-  <path d="M178,150 L256,62" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M221,101.5 L217,115 L208,107 Z" fill="#e64980"/>
-  <path d="M178,150 L203,193.5" fill="none" stroke="#e64980" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.45"/>
-  <path d="M263.5,147 L403.5,147" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M339.5,147 L326.5,153 L326.5,141 Z" fill="#e64980"/>
-  <path d="M263.5,150 L305.5,187" fill="none" stroke="#e64980" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.7"/>
-  <path d="M416,150 L580,226.5" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M503.5,191 L489,190.5 L494,180 Z" fill="#e64980"/>
-  <path d="M161,179.5 A34,34 0 0,0 178,184" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M238,172.5 A34,34 0 0,0 263.5,184" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M385,164.5 A34,34 0 0,0 416,184" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <rect x="74" y="310" width="32" height="18" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="90" cy="308" r="11" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
+  <image href="pics/fy7/fy7-12-water.webp" x="0" y="0" width="600" height="367.5" preserveAspectRatio="none"/>
   <foreignObject x="87" y="21.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha < \alpha_\text{r}$</div></foreignObject>
   <foreignObject x="216.5" y="21.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha = \alpha_\text{r}$</div></foreignObject>
   <foreignObject x="361" y="21.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha > \alpha_\text{r}$</div></foreignObject>
   <foreignObject x="526" y="85.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{ilma}$</div></foreignObject>
-  <foreignObject x="314" y="231.5" width="270" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\text{kokonaisheijastuminen}$</div></foreignObject>
-  <foreignObject x="435" y="291.5" width="149" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\text{vesi},\ n = 1{,}33$</div></foreignObject>
+  <foreignObject x="297" y="231.5" width="270" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\text{kokonaisheijastuminen}$</div></foreignObject>
+  <foreignObject x="418" y="291.5" width="149" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\text{vesi},\ n = 1{,}33$</div></foreignObject>
 </svg>
 
 <figure class="unit-photo"><img src="pics/fy7/tir-wine-glass.webp" alt="Käsi pitää viinilasia. Vihreä lasersäde kulkee lasin jalassa."><figcaption>Vihreä lasersäde viinilasin jalassa. Säde osuu lasin pintaan niin vinosti, että se heijastuu kokonaan takaisin lasiin. Se ei pääse ulos ilmaan.</figcaption></figure>
@@ -151,26 +53,12 @@ Kuidun päähän tulee valo lähes akselin suuntaisesti. Akseli on kuidun keskiv
 Jos valo tulee kuidun päähän liian jyrkässä kulmassa, se osuu rajapintaan pienemmällä tulokulmalla kuin rajakulma. Silloin jokaisessa osumassa osa valosta taittuu kuoreen ja katoaa ytimestä. Jyrkkä mutka pienentää tulokulmaa samalla tavalla. Siksi kuitua ei saa taittaa terävälle mutkalle.
 
 <svg data-fig="fibre" viewBox="0 0 600 340" role="img" aria-label="Periaatekuva valokuidusta, ei mittakaavassa. Ylhäällä kuitu on leikattu pituussuunnassa. Keskellä on ydin, jonka taitekerroin on n1. Sen ympärillä on kuori, jonka taitekerroin n2 on vähän pienempi. Uloimpana on muovinen suojapäällyste. Valonsäde etenee ytimessä siksakkia. Se osuu ytimen ja kuoren rajapintaan tulokulmassa, joka on suurempi kuin rajakulma. Säde kokonaisheijastuu joka kerta takaisin ytimeen. Alhaalla oikealla on sama kuitu poikkileikkauksena: ydin, kuori ja päällyste ovat sisäkkäisiä ympyröitä." style="max-width:100%;font-size:24px">
-  <rect x="24" y="40" width="552" height="160" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="24" y="56" width="552" height="128" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="24" y="100" width="552" height="40" fill="#d0e6fb" stroke="#1f2933" stroke-width="2"/>
-  <path d="M24,120 L79,140 L189,100 L298.5,140 L408.5,100 L518.5,140 L576,119" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M139.5,118 L129.5,128 L125.5,117 Z" fill="#e64980"/>
-  <path d="M359.5,118 L349,128 L345,117 Z" fill="#e64980"/>
-  <line x1="408.5" y1="64" x2="408.5" y2="176" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <path d="M408.5,130 A30,30 0 0,1 380.5,110.5" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <image href="pics/fy7/fy7-12-fibre.webp" x="-2.5" y="0" width="603" height="353" preserveAspectRatio="none"/>
   <foreignObject x="333.5" y="63.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha$</div></foreignObject>
-  <line x1="356.5" y1="86" x2="388.5" y2="110" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="422.5" y="63.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\alpha > \alpha_\text{r}$</div></foreignObject>
   <foreignObject x="132" y="147.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kuori}\ n_2$</div></foreignObject>
-  <line x1="110" y1="136" x2="110" y2="246" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="60" y="247.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{ydin}\ n_1$</div></foreignObject>
-  <line x1="260" y1="192" x2="260" y2="290" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="210" y="291.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{suojapäällyste}$</div></foreignObject>
-  <circle cx="506" cy="270" r="54" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="506" cy="270" r="42" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="506" cy="270" r="14" fill="#d0e6fb" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="506" cy="270" r="4" fill="#e64980"/>
   <foreignObject x="330" y="255.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$n_1 > n_2$</div></foreignObject>
 </svg>
 
@@ -209,29 +97,11 @@ Hiotun timantin alaviistopinnat on kallistettu niin, että yläpinnasta tuleva v
 Samanmuotoisessa lasikivessä rajakulma on $41{,}8^\circ$. Osa samasta valosta taittuu silloin ulos kiven alapuolelta, ja lasi säihkyy vähemmän.
 
 <svg data-fig="diamond" viewBox="0 0 600 310" role="img" aria-label="Periaatekuva, ei mittakaavassa: kaksi samanmuotoista hiottua kiveä poikkileikkauksena. Kummankin kiven yläpinnasta tulee pystysuoraan alas sama valonsäde. Säde osuu alaviistopintaan tulokulmassa 38 astetta. Vasemmalla on timantti, jonka taitekerroin on 2,42 ja rajakulma 24,4 astetta. Säde kokonaisheijastuu siinä kahdesti ja palaa ylöspäin ulos kiven yläosasta. Oikealla on lasi, jonka taitekerroin on 1,50 ja rajakulma 41,8 astetta. Tulokulma on pienempi kuin rajakulma. Suurin osa valosta taittuu ulos kiven alapuolelta, ja vain heikko osa heijastuu." style="max-width:100%;font-size:24px">
-  <path d="M88,60 L212,60 L276,102 L276,110 L150,208.5 L24,110 L24,102 Z" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <line x1="24" y1="110" x2="276" y2="110" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="142" y1="156.5" x2="91.5" y2="221.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <path d="M120,155 A30,30 0 0,1 138.5,161.5" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M120,20 L120,60 L120,185 L208,163 L249.5,85" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M120,46 L114,33 L126,33 Z" fill="#e64980"/>
-  <path d="M170,172.5 L158.5,181.5 L156,170 Z" fill="#e64980"/>
-  <path d="M249.5,85 L269.5,32.5" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M261.5,53 L262.5,67 L251.5,63 Z" fill="#e64980"/>
-  <foreignObject x="126" y="118.5" width="50" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$38^\circ$</div></foreignObject>
+  <image href="pics/fy7/fy7-12-diamond.webp" x="13.2" y="1.2" width="576.9" height="308.9" preserveAspectRatio="none"/>
+  <foreignObject x="137" y="118.5" width="50" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$38^\circ$</div></foreignObject>
   <foreignObject x="25" y="265.5" width="250" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{timantti},\ \alpha_\text{r} = 24{,}4^\circ$</div></foreignObject>
-  <path d="M388,60 L512,60 L576,102 L576,110 L450,208.5 L324,110 L324,102 Z" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <line x1="324" y1="110" x2="576" y2="110" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="442" y1="156.5" x2="391.5" y2="221.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <path d="M420,155 A30,30 0 0,1 438.5,161.5" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M420,20 L420,60 L420,185" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M420,46 L414,33 L426,33 Z" fill="#e64980"/>
-  <path d="M420,185 L447.5,234" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M436.5,214.5 L425,206 L435.5,200.5 Z" fill="#e64980"/>
-  <path d="M420,185 L468.5,173" fill="none" stroke="#e64980" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.45"/>
   <foreignObject x="426" y="118.5" width="50" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$38^\circ$</div></foreignObject>
   <foreignObject x="325" y="265.5" width="250" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lasi},\ \alpha_\text{r} = 41{,}8^\circ$</div></foreignObject>
-  <line x1="300" y1="20" x2="300" y2="290" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
 </svg>
 
 ## Kaava: Rajakulma
@@ -379,40 +249,5 @@ Toinen virhe on luulla, että valokuidun sisäpinta on peilattu. Kuidussa ei ole
 - Kuitua käytetään tiedonsiirrossa, tähystimissä ja valaisimissa. Kuidussa valo etenee nopeudella $v = c : n$, ja kulkuaika on $t = n s : c$.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: hyllyllä on kuitulamppu. Sen jalustasta nousee kimppu ohuita läpinäkyviä muovikuituja, jotka kaartuvat joka suuntaan. Kuidut eivät hehku sivuiltaan, mutta jokaisen kuidun pää loistaa kirkkaana pisteenä." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy712s-shelf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><radialGradient id="fy712s-glow"><stop offset="0" stop-color="#ffffff"/><stop offset="0.35" stop-color="#e64980"/><stop offset="1" stop-color="#e64980" stop-opacity="0"/></radialGradient></defs>
-  <rect x="0" y="0" width="600" height="360" fill="#f6f1e6"/>
-  <rect x="0" y="290" width="600" height="70" fill="url(#fy712s-shelf)"/>
-  <line x1="0" y1="290" x2="600" y2="290" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M250,290 L262,236 H338 L350,290 Z" fill="#6c757d" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="270" y="226" width="60" height="12" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M292,226 Q263,116 115.5,175" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M293,226 Q265,113.5 126,149.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M294,226 Q270,115.5 149,129.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M295,226 Q272,104.5 160.5,99.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M296,226 Q279,110 196,89.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M297,226 Q285,104.5 226,71" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M298,226 Q292.5,108.5 263.5,69" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M299,226 Q300,119 300,80.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M300,226 Q307.5,105.5 337.5,65" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M301,226 Q313,120 365,90.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M302,226 Q319.5,116 398.5,96.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M303,226 Q327,107.5 436,103" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M304,226 Q332,109.5 459.5,124.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M305,226 Q333,118.5 466,153" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M306,226 Q335.5,120 478,176.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <circle cx="115.5" cy="175" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="126" cy="149.5" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="149" cy="129.5" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="160.5" cy="99.5" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="196" cy="89.5" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="226" cy="71" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="263.5" cy="69" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="300" cy="80.5" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="337.5" cy="65" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="365" cy="90.5" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="398.5" cy="96.5" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="436" cy="103" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="459.5" cy="124.5" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="466" cy="153" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="478" cy="176.5" r="13" fill="url(#fy712s-glow)"/>
+  <image href="pics/fy7/fy7-12-scene.webp" x="0" y="0" width="600" height="360" preserveAspectRatio="none"/>
 </svg>

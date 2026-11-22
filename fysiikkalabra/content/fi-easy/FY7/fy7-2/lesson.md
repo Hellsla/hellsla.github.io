@@ -97,77 +97,12 @@ Magneettikenttä $\overline{B}$ (luku *Magneetit, magneettinen dipoli ja magneet
 Voiman suunnan positiiviselle varaukselle antaa **oikean käden sääntö**. Ojenna oikea käsi niin, että peukalo osoittaa nopeuden suuntaan ja muut sormet osoittavat kentän suuntaan. Kämmen työntää silloin voiman suuntaan. Negatiiviseen varaukseen voima vaikuttaa vastakkaiseen suuntaan. Kun hiukkanen liikkuu kentän suuntaisesti, voima on nolla.
 
 <svg data-fig="force-dir" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva: kaksi paneelia. Magneettikenttä osoittaa molemmissa paperiin sisään, ja sitä kuvaavat vihreät ristit. Vasemmalla positiivinen hiukkanen liikkuu oikealle, ja magneettinen voima osoittaa ylöspäin. Oikealla negatiivinen hiukkanen liikkuu myös oikealle, ja voima osoittaa alaspäin. Voima on kohtisuorassa sekä nopeutta että kenttää vastaan." style="max-width:100%;font-size:24px">
-  <line x1="300" y1="16" x2="300" y2="324" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <line x1="39" y1="50" x2="51" y2="62" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="39" y1="62" x2="51" y2="50" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="39" y1="120" x2="51" y2="132" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="39" y1="132" x2="51" y2="120" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="39" y1="190" x2="51" y2="202" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="39" y1="202" x2="51" y2="190" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="39" y1="260" x2="51" y2="272" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="39" y1="272" x2="51" y2="260" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="109" y1="50" x2="121" y2="62" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="109" y1="62" x2="121" y2="50" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="109" y1="260" x2="121" y2="272" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="109" y1="272" x2="121" y2="260" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="179" y1="50" x2="191" y2="62" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="179" y1="62" x2="191" y2="50" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="179" y1="120" x2="191" y2="132" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="179" y1="132" x2="191" y2="120" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="179" y1="260" x2="191" y2="272" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="179" y1="272" x2="191" y2="260" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="249" y1="50" x2="261" y2="62" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="249" y1="62" x2="261" y2="50" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="249" y1="120" x2="261" y2="132" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="249" y1="132" x2="261" y2="120" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="249" y1="190" x2="261" y2="202" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="249" y1="202" x2="261" y2="190" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="249" y1="260" x2="261" y2="272" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="249" y1="272" x2="261" y2="260" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="80" y1="196" x2="175" y2="196" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M190,196 L174,203 L174,189 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <image href="pics/fy7/fy7-2-force-dir.webp" x="0" y="1.2" width="600" height="350" preserveAspectRatio="none"/>
   <foreignObject x="198" y="181.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <line x1="80" y1="196" x2="80" y2="123" stroke="#c92a2a" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M80,108 L87,124 L73,124 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="90" y="103.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{m}$</div></foreignObject>
-  <circle cx="80" cy="196" r="13" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
-  <line x1="73.5" y1="196" x2="86.5" y2="196" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="80" y1="189.5" x2="80" y2="202.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <foreignObject x="73" y="79.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{m}$</div></foreignObject>
   <foreignObject x="40" y="301.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{positiivinen } q$</div></foreignObject>
-  <line x1="339" y1="50" x2="351" y2="62" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="339" y1="62" x2="351" y2="50" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="339" y1="120" x2="351" y2="132" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="339" y1="132" x2="351" y2="120" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="339" y1="190" x2="351" y2="202" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="339" y1="202" x2="351" y2="190" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="339" y1="260" x2="351" y2="272" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="339" y1="272" x2="351" y2="260" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="409" y1="50" x2="421" y2="62" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="409" y1="62" x2="421" y2="50" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="409" y1="120" x2="421" y2="132" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="409" y1="132" x2="421" y2="120" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="479" y1="50" x2="491" y2="62" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="479" y1="62" x2="491" y2="50" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="479" y1="120" x2="491" y2="132" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="479" y1="132" x2="491" y2="120" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="479" y1="260" x2="491" y2="272" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="479" y1="272" x2="491" y2="260" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="549" y1="50" x2="561" y2="62" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="549" y1="62" x2="561" y2="50" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="549" y1="120" x2="561" y2="132" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="549" y1="132" x2="561" y2="120" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="549" y1="190" x2="561" y2="202" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="549" y1="202" x2="561" y2="190" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="549" y1="260" x2="561" y2="272" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="549" y1="272" x2="561" y2="260" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="380" y1="196" x2="475" y2="196" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M490,196 L474,203 L474,189 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="498" y="181.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <line x1="380" y1="196" x2="380" y2="269" stroke="#c92a2a" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M380,284 L373,268 L387,268 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="390" y="259.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{m}$</div></foreignObject>
-  <circle cx="380" cy="196" r="13" fill="#d0e6fb" stroke="#1f2933" stroke-width="2"/>
-  <line x1="373.5" y1="196" x2="386.5" y2="196" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <foreignObject x="429" y="259.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{m}$</div></foreignObject>
   <foreignObject x="340" y="301.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{negatiivinen } q$</div></foreignObject>
   <foreignObject x="16" y="9.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}\ \text{paperiin}$</div></foreignObject>
 </svg>
@@ -182,84 +117,10 @@ Oletetaan, että hiukkanen liikkuu kohtisuorassa homogeenista kenttää vastaan.
 Esimerkki: protoni lentää vauhdilla $1{,}0 \cdot 10^{6}\,\text{m/s}$ kohtisuoraan $0{,}20\,\text{T}$:n kenttää vastaan. Siihen vaikuttaa voima $3{,}2 \cdot 10^{-14}\,\text{N}$. Protoni kiertää ympyrää, jonka säde on noin $5{,}2\,\text{cm}$. Protonin paino on $1{,}6 \cdot 10^{-26}\,\text{N}$. Se on noin $10^{12}$ kertaa pienempi kuin magneettinen voima. Siksi painovoima jätetään hiukkasten liikkeessä huomiotta.
 
 <svg data-fig="circle-path" viewBox="0 0 600 360" role="img" aria-label="Kaavakuva: positiivinen hiukkanen kiertää ympyrärataa myötäpäivään. Magneettikenttä osoittaa paperista ulos, ja sitä kuvaavat vihreät pisteympyrät. Radan neljässä kohdassa sininen nopeusnuoli on radan tangentin suuntainen. Punainen magneettisen voiman nuoli osoittaa kohti ympyrän keskipistettä. Nuolet ovat joka kohdassa yhtä pitkät, koska vauhti ei muutu. Keskipisteestä rataan on piirretty säde r." style="max-width:100%;font-size:24px">
-  <circle cx="72" cy="48" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="72" cy="48" r="2.6" fill="#2b8a3e"/>
-  <circle cx="72" cy="114" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="72" cy="114" r="2.6" fill="#2b8a3e"/>
-  <circle cx="72" cy="180" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="72" cy="180" r="2.6" fill="#2b8a3e"/>
-  <circle cx="72" cy="246" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="72" cy="246" r="2.6" fill="#2b8a3e"/>
-  <circle cx="72" cy="312" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="72" cy="312" r="2.6" fill="#2b8a3e"/>
-  <circle cx="148" cy="48" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="148" cy="48" r="2.6" fill="#2b8a3e"/>
-  <circle cx="148" cy="114" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="148" cy="114" r="2.6" fill="#2b8a3e"/>
-  <circle cx="148" cy="180" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="148" cy="180" r="2.6" fill="#2b8a3e"/>
-  <circle cx="148" cy="246" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="148" cy="246" r="2.6" fill="#2b8a3e"/>
-  <circle cx="148" cy="312" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="148" cy="312" r="2.6" fill="#2b8a3e"/>
-  <circle cx="224" cy="48" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="224" cy="48" r="2.6" fill="#2b8a3e"/>
-  <circle cx="376" cy="312" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="376" cy="312" r="2.6" fill="#2b8a3e"/>
-  <circle cx="452" cy="48" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="452" cy="48" r="2.6" fill="#2b8a3e"/>
-  <circle cx="452" cy="114" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="452" cy="114" r="2.6" fill="#2b8a3e"/>
-  <circle cx="452" cy="180" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="452" cy="180" r="2.6" fill="#2b8a3e"/>
-  <circle cx="452" cy="246" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="452" cy="246" r="2.6" fill="#2b8a3e"/>
-  <circle cx="452" cy="312" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="452" cy="312" r="2.6" fill="#2b8a3e"/>
-  <circle cx="528" cy="48" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="528" cy="48" r="2.6" fill="#2b8a3e"/>
-  <circle cx="528" cy="114" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="528" cy="114" r="2.6" fill="#2b8a3e"/>
-  <circle cx="528" cy="180" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="528" cy="180" r="2.6" fill="#2b8a3e"/>
-  <circle cx="528" cy="246" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="528" cy="246" r="2.6" fill="#2b8a3e"/>
-  <circle cx="528" cy="312" r="8" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="528" cy="312" r="2.6" fill="#2b8a3e"/>
-  <circle cx="300" cy="180" r="120" fill="none" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="300" y1="180" x2="215" y2="265" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 5"/>
-  <circle cx="300" cy="180" r="4" fill="#1f2933"/>
+  <image href="pics/fy7/fy7-2-circle-path.webp" x="0" y="0" width="600" height="367.5" preserveAspectRatio="none"/>
   <foreignObject x="238" y="187.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$r$</div></foreignObject>
-  <line x1="300" y1="60" x2="348" y2="60" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M362,60 L347,67 L347,53.5 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <line x1="300" y1="60" x2="300" y2="101" stroke="#c92a2a" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M300,115 L293,100 L307,100 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <circle cx="300" cy="60" r="11" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
-  <line x1="294.5" y1="60" x2="305.5" y2="60" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="300" y1="54.5" x2="300" y2="65.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <foreignObject x="370" y="41.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
   <foreignObject x="314" y="89.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{m}$</div></foreignObject>
-  <line x1="420" y1="180" x2="420" y2="228" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M420,242 L413,227 L427,227 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <line x1="420" y1="180" x2="379" y2="180" stroke="#c92a2a" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M365,180 L380,173 L380,187 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <circle cx="420" cy="180" r="11" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
-  <line x1="414.5" y1="180" x2="425.5" y2="180" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="420" y1="174.5" x2="420" y2="185.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="300" y1="300" x2="252" y2="300" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M238,300 L253,293 L253,307 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <line x1="300" y1="300" x2="300" y2="259" stroke="#c92a2a" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M300,245 L307,260 L293,260 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <circle cx="300" cy="300" r="11" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
-  <line x1="294.5" y1="300" x2="305.5" y2="300" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="300" y1="294.5" x2="300" y2="305.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="180" y1="180" x2="180" y2="132" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M180,118 L187,133 L173,133 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <line x1="180" y1="180" x2="221" y2="180" stroke="#c92a2a" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M235,180 L220,186.5 L220,173 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <circle cx="180" cy="180" r="11" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
-  <line x1="174.5" y1="180" x2="185.5" y2="180" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="180" y1="174.5" x2="180" y2="185.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <foreignObject x="354" y="9.5" width="230" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}\ \text{paperista ulos}$</div></foreignObject>
   <foreignObject x="414" y="321.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{myötäpäivään}$</div></foreignObject>
 </svg>
@@ -361,70 +222,14 @@ m = \frac{|q| B_2 r}{v}
 Samalla vauhdilla ja varauksella radan säde on suoraan verrannollinen massaan. Raskaammat ionit osuvat siis kauemmas. Näin voidaan erottaa saman alkuaineen isotoopit. Isotoopit ovat saman alkuaineen atomeja, jotka eroavat toisistaan vain massaltaan. Radiohiiliajoituksessa hiili-14-ionit erotetaan hiili-12-ioneista ja lasketaan erikseen. Massaspektrometrillä tunnistetaan myös esimerkiksi dopingaineita ja ympäristömyrkkyjä.
 
 <svg data-fig="spectrometer" viewBox="0 0 600 410" role="img" aria-label="Periaatekuva, ei mittakaavassa: massaspektrometri. Vasemmalla on ionilähde. Ionit kulkevat ensin nopeusvalitsimen läpi. Levyjen välillä sähkökenttä osoittaa ylöspäin ja magneettikenttä osoittaa paperista ulos. Suoraan kulkevaan ioniin vaikuttavat yhtä suuret ja vastakkaiset voimat: sähköinen voima ylöspäin ja magneettinen voima alaspäin. Raon jälkeen ionit kaartuvat toisessa magneettikentässä puoliympyrän ja osuvat ilmaisimeen. Raskaampien ionien puoliympyrä on suurempi, joten ne osuvat kauemmas raosta. Osumakohdan etäisyys raosta on radan halkaisija 2r." style="max-width:100%;font-size:24px">
-  <rect x="14" y="60" width="46" height="36" rx="5" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
+  <image href="pics/fy7/fy7-2-spectrometer.webp" x="0" y="0" width="600" height="415" preserveAspectRatio="none"/>
   <foreignObject x="-3" y="105.5" width="80" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lähde}$</div></foreignObject>
-  <rect x="84" y="32" width="190" height="10" rx="2" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="84" y="114" width="190" height="10" rx="2" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
-  <line x1="104" y1="112" x2="104" y2="46" stroke="#8a5f22" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M104,44 L98,58 L110,58 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <line x1="254" y1="112" x2="254" y2="46" stroke="#8a5f22" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M254,44 L248,58 L260,58 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <circle cx="124" cy="58" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="124" cy="58" r="2.6" fill="#2b8a3e"/>
-  <circle cx="124" cy="98" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="124" cy="98" r="2.6" fill="#2b8a3e"/>
-  <circle cx="232" cy="58" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="232" cy="58" r="2.6" fill="#2b8a3e"/>
-  <circle cx="232" cy="98" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="232" cy="98" r="2.6" fill="#2b8a3e"/>
   <foreignObject x="79" y="1.5" width="200" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{nopeusvalitsin}$</div></foreignObject>
-  <rect x="330" y="48" width="250" height="322" fill="#eef5f9"/>
-  <rect x="330" y="48" width="250" height="322" rx="6" fill="none" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="400" cy="108" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="400" cy="108" r="2.6" fill="#2b8a3e"/>
-  <circle cx="400" cy="170" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="400" cy="170" r="2.6" fill="#2b8a3e"/>
-  <circle cx="400" cy="232" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="400" cy="232" r="2.6" fill="#2b8a3e"/>
-  <circle cx="400" cy="294" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="400" cy="294" r="2.6" fill="#2b8a3e"/>
-  <circle cx="466" cy="108" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="466" cy="108" r="2.6" fill="#2b8a3e"/>
-  <circle cx="466" cy="170" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="466" cy="170" r="2.6" fill="#2b8a3e"/>
-  <circle cx="466" cy="232" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="466" cy="232" r="2.6" fill="#2b8a3e"/>
-  <circle cx="466" cy="294" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="466" cy="294" r="2.6" fill="#2b8a3e"/>
-  <circle cx="532" cy="108" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="532" cy="108" r="2.6" fill="#2b8a3e"/>
-  <circle cx="532" cy="170" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="532" cy="170" r="2.6" fill="#2b8a3e"/>
-  <circle cx="532" cy="232" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="532" cy="232" r="2.6" fill="#2b8a3e"/>
-  <circle cx="532" cy="294" r="7" fill="none" stroke="#2b8a3e" stroke-width="2"/>
-  <circle cx="532" cy="294" r="2.6" fill="#2b8a3e"/>
   <foreignObject x="529" y="51.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}_2$</div></foreignObject>
-  <line x1="60" y1="78" x2="330" y2="78" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M330,78 A106,106 0 0 1 330,290" fill="none" stroke="#7048e8" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M330,78 A126,126 0 0 1 330,330" fill="none" stroke="#7048e8" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="320" y="98" width="10" height="266" fill="#1f2933"/>
-  <circle cx="325" cy="290" r="5" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="325" cy="330" r="5" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="202" y="365.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{ilmaisin}$</div></foreignObject>
   <foreignObject x="144" y="275.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8">$\text{kevyempi}$</div></foreignObject>
   <foreignObject x="178" y="317.5" width="130" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8">$\text{raskaampi}$</div></foreignObject>
-  <line x1="296" y1="78" x2="296" y2="290" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="290" y1="78" x2="302" y2="78" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="290" y1="290" x2="302" y2="290" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="253" y="185.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$2r$</div></foreignObject>
-  <line x1="160" y1="78" x2="160" y2="60" stroke="#c92a2a" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M160,50 L165,61 L155,61 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <line x1="160" y1="78" x2="160" y2="96" stroke="#c92a2a" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M160,106 L155,95 L165,95 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <circle cx="160" cy="78" r="8" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
-  <line x1="156" y1="78" x2="164" y2="78" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="160" y1="74" x2="160" y2="82" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <foreignObject x="174" y="41.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{s}$</div></foreignObject>
   <foreignObject x="174" y="85.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{m}$</div></foreignObject>
   <foreignObject x="87.5" y="143.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#8a5f22">$\overline{E}$</div></foreignObject>

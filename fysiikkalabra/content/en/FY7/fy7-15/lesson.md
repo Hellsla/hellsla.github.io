@@ -3,118 +3,7 @@
 > **Why** do polarised sunglasses remove the glare reflected from the surface of a lake, when ordinary sunglasses that are just as dark only dim everything?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a sunny lake with bright glare sparkling on its surface. A wooded shore is in the background. In the middle of the picture are sunglasses. Seen through the lenses the glare is gone: the water looks darker and transparent, and the stones and a fish on the bottom are visible." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy715h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy715h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy715h-lake" gradientUnits="userSpaceOnUse" x1="0" y1="260" x2="0" y2="600"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><clipPath id="fy715h-lens"><ellipse cx="470" cy="360" rx="118" ry="92"/><ellipse cx="730" cy="360" rx="118" ry="92"/></clipPath><linearGradient id="fy715h-deep" gradientUnits="userSpaceOnUse" x1="0" y1="260" x2="0" y2="600"><stop offset="0" stop-color="#2f74b5"/><stop offset="1" stop-color="#1d4f7c"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="260" fill="url(#fy715h-sky)"/>
-  <circle cx="1010" cy="92" r="83" fill="#ffffff" fill-opacity="0.5"/>
-  <circle cx="1010" cy="92" r="52" fill="url(#fy715h-sun)"/>
-  <path d="M0,262 L20,220 L39.5,262 L61.5,214.5 L83.5,262 L103.5,219 L124,262 L152.5,195.5 L181,262 L205.5,206.5 L230,262 L259,195.5 L287.5,262 L313,204 L338.5,262 L356.5,226 L374,262 L402,198 L429.5,262 L446.5,228 L463.5,262 L483.5,219.5 L503.5,262 L530,202 L556,262 L581,206 L606,262 L624,225.5 L641.5,262 L658.5,228 L675.5,262 L694.5,222.5 L713.5,262 L736.5,211.5 L759.5,262 L781.5,213.5 L803.5,262 L822,224.5 L840.5,262 L857,229.5 L873,262 L891,225.5 L909,262 L934,206.5 L958.5,262 L985.5,200 L1012.5,262 L1031.5,223 L1050,262 L1068.5,224 L1087,262 L1104.5,226.5 L1122,262 L1152,192.5 L1181.5,262 L1198.5,227.5 L1216,262 V292 H0 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <rect x="0" y="260" width="1200" height="340" fill="url(#fy715h-lake)"/>
-  <ellipse cx="67.5" cy="515.5" rx="87.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="187" cy="290.5" rx="60" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="134" cy="539.5" rx="93" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="972.5" cy="569.5" rx="74.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="238.5" cy="517" rx="47" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="225.5" cy="418.5" rx="34.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="816.5" cy="392.5" rx="56.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="1118" cy="507" rx="80" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="806" cy="369" rx="95" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="1170.5" cy="384.5" rx="39.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="1046" cy="573" rx="50.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="633.5" cy="511.5" rx="81.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="1105.5" cy="292" rx="93.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="630.5" cy="286" rx="66.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="383.5" cy="280.5" rx="52" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="822" cy="487.5" rx="63" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="647.5" cy="362.5" rx="78.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="560" cy="316.5" rx="37.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="47" cy="431" rx="29" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="1080" cy="321" rx="30" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="1126.5" cy="281" rx="45" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="742" cy="280.5" rx="73" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="933.5" cy="374" rx="72.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="746.5" cy="317" rx="48.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="927" cy="325.5" rx="33" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="984" cy="521.5" rx="34" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="381" cy="352" rx="81" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="209" cy="550" rx="94.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="1132" cy="376.5" rx="85" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="1189" cy="318" rx="57.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="782" cy="312.5" rx="59" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="1119" cy="343.5" rx="54.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="704.5" cy="528" rx="33.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="809" cy="519" rx="69" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="769" cy="355" rx="95.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="277.5" cy="347.5" rx="96" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="933.5" cy="288.5" rx="55.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="1045" cy="283" rx="38.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="1133" cy="412" rx="43.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="318.5" cy="343" rx="60.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="63.5" cy="299" rx="90" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="1033" cy="414" rx="81" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="550" cy="322.5" rx="74" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="110.5" cy="520" rx="43.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="268.5" cy="474" rx="48.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="1062" cy="282" rx="57.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="902" cy="548" rx="51" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="83" cy="476" rx="42.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="529" cy="454.5" rx="77" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="1024" cy="378.5" rx="51.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="996.5" cy="297.5" rx="89.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="428.5" cy="490.5" rx="28" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="894.5" cy="297" rx="45" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="499.5" cy="475.5" rx="54" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="476" cy="316" rx="78.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="546" cy="436.5" rx="90.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="360" cy="482" rx="93.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="747.5" cy="312" rx="91.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="806.5" cy="398" rx="88" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="44.5" cy="312.5" rx="36" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="296.5" cy="300" rx="45" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="239" cy="516" rx="66.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="5.5" cy="280.5" rx="40" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="223" cy="310" rx="40" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="831" cy="481.5" rx="46.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="1052" cy="298.5" rx="89" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="828.5" cy="434" rx="58.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="1185.5" cy="281" rx="79" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="1139" cy="330" rx="50.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <ellipse cx="573.5" cy="283.5" rx="33.5" ry="4" fill="#ffffff" fill-opacity="0.85"/>
-  <g clip-path="url(#fy715h-lens)">
-  <rect x="330" y="260" width="540" height="200" fill="url(#fy715h-deep)"/>
-  <ellipse cx="812" cy="391" rx="26.5" ry="19" fill="#f1dfb5" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="494.5" cy="432.5" rx="24.5" ry="17.5" fill="#d9b26a" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="559.5" cy="435.5" rx="25.5" ry="18" fill="#d9b26a" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="606.5" cy="411.5" rx="23" ry="16.5" fill="#f1dfb5" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="405.5" cy="442.5" rx="22" ry="15.5" fill="#d9b26a" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="647.5" cy="441.5" rx="24.5" ry="17.5" fill="#d9b26a" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="513" cy="437" rx="31" ry="22" fill="#f1dfb5" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="617.5" cy="446.5" rx="21.5" ry="15.5" fill="#d9b26a" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="551.5" cy="415" rx="25.5" ry="18" fill="#d9b26a" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="518.5" cy="428.5" rx="27.5" ry="19.5" fill="#f1dfb5" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="737.5" cy="385" rx="17" ry="12" fill="#d9b26a" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="498" cy="400.5" rx="24" ry="17" fill="#d9b26a" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="763.5" cy="438" rx="28" ry="20" fill="#f1dfb5" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="769.5" cy="448" rx="25.5" ry="18.5" fill="#d9b26a" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="845" cy="386" rx="18" ry="13" fill="#d9b26a" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="540.5" cy="402.5" rx="27.5" ry="19.5" fill="#f1dfb5" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="517.5" cy="413.5" rx="13" ry="9" fill="#d9b26a" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="420" cy="447.5" rx="25.5" ry="18" fill="#d9b26a" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="463" cy="418" rx="29.5" ry="21" fill="#f1dfb5" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="721.5" cy="384.5" rx="20.5" ry="14.5" fill="#d9b26a" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="401" cy="433" rx="29.5" ry="21" fill="#d9b26a" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="353.5" cy="440" rx="31" ry="22" fill="#f1dfb5" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="689" cy="402.5" rx="13" ry="9" fill="#d9b26a" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="719.5" cy="381.5" rx="33.5" ry="24" fill="#d9b26a" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="587.5" cy="422.5" rx="25.5" ry="18" fill="#f1dfb5" stroke="#a97a35" stroke-width="2"/>
-  <ellipse cx="659.5" cy="437.5" rx="31.5" ry="22.5" fill="#d9b26a" stroke="#a97a35" stroke-width="2"/>
-  <path d="M660,330 Q690,312 724,330 Q690,348 660,330 Z M660,330 L642,318 L642,342 Z" fill="#e8590c" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <circle cx="710" cy="327" r="3.5" fill="#1f2933"/>
-  </g>
-  <ellipse cx="470" cy="360" rx="118" ry="92" fill="#1f2933" fill-opacity="0.12" stroke="#1f2933" stroke-width="10"/>
-  <ellipse cx="730" cy="360" rx="118" ry="92" fill="#1f2933" fill-opacity="0.12" stroke="#1f2933" stroke-width="10"/>
-  <path d="M588,344 Q600,326 612,344" fill="none" stroke="#1f2933" stroke-width="10" stroke-linejoin="round"/>
-  <path d="M352,340 L250,316" fill="none" stroke="#1f2933" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M848,340 L950,316" fill="none" stroke="#1f2933" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+  <image href="pics/fy7/fy7-15-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Key idea
@@ -256,94 +145,7 @@ An ideal polariser lets through half of the intensity, so the intensity is $\tfr
 When a second polariser is placed in the path of polarised light, it is called an **analyser**. If the transmission axis of the analyser is the same as the direction of polarisation of the light, all of the light passes through. As the analyser is turned, the intensity of the transmitted light decreases. When the transmission axes are perpendicular to each other, that is, when the polarisers are crossed, no light passes through ideal films at all. Two polarising films can therefore be used to find out whether light is polarised and in which direction: when the light is polarised, its brightness changes as the film is turned. The brightness of unpolarised light does not change as the film is turned. If a third film is placed at a slant between crossed polarisers, light passes through again, because after the middle film the light has a component along the transmission axis of the last film too.
 
 <svg data-fig="sheets" viewBox="0 0 600 320" role="img" aria-label="Schematic picture: two pairs of round polarising films on a light table. The hatching of the films shows the transmission axis. On the left the transmission axes of the films are the same, the angle is 0 degrees, and the overlapping part is only a little darker than a single film. On the right the transmission axis of one film is vertical and that of the other horizontal, the angle is 90 degrees, and the overlapping part is almost black." style="max-width:100%;font-size:24px">
-  <defs><clipPath id="fy715s-a"><circle cx="112" cy="132" r="72.5"/></clipPath><clipPath id="fy715s-b"><circle cx="190" cy="132" r="72.5"/></clipPath><clipPath id="fy715s-c"><circle cx="410" cy="132" r="72.5"/></clipPath><clipPath id="fy715s-d"><circle cx="488" cy="132" r="72.5"/></clipPath></defs>
-  <rect x="14" y="14" width="572" height="236" rx="10" fill="#ffffff" stroke="#c9c2b2" stroke-width="2"/>
-  <line x1="300" y1="24" x2="300" y2="300" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <circle cx="112" cy="132" r="74" fill="#9aa0a6" fill-opacity="0.42"/>
-  <circle cx="190" cy="132" r="74" fill="#9aa0a6" fill-opacity="0.42"/>
-  <circle cx="410" cy="132" r="74" fill="#9aa0a6" fill-opacity="0.42"/>
-  <circle cx="488" cy="132" r="74" fill="#9aa0a6" fill-opacity="0.42"/>
-  <g clip-path="url(#fy715s-c)"><circle cx="488" cy="132" r="74" fill="#1f2933" fill-opacity="0.88"/></g>
-  <g clip-path="url(#fy715s-a)">
-  <line x1="40" y1="58" x2="40" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="49" y1="58" x2="49" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="58" y1="58" x2="58" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="67" y1="58" x2="67" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="76" y1="58" x2="76" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="85" y1="58" x2="85" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="94" y1="58" x2="94" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="103" y1="58" x2="103" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="112" y1="58" x2="112" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="121" y1="58" x2="121" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="130" y1="58" x2="130" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="139" y1="58" x2="139" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="148" y1="58" x2="148" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="157" y1="58" x2="157" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="166" y1="58" x2="166" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="175" y1="58" x2="175" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="184" y1="58" x2="184" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  </g>
-  <circle cx="112" cy="132" r="74" fill="none" stroke="#1f2933" stroke-width="2.5"/>
-  <g clip-path="url(#fy715s-b)">
-  <line x1="118" y1="58" x2="118" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="127" y1="58" x2="127" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="136" y1="58" x2="136" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="145" y1="58" x2="145" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="154" y1="58" x2="154" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="163" y1="58" x2="163" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="172" y1="58" x2="172" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="181" y1="58" x2="181" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="190" y1="58" x2="190" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="199" y1="58" x2="199" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="208" y1="58" x2="208" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="217" y1="58" x2="217" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="226" y1="58" x2="226" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="235" y1="58" x2="235" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="244" y1="58" x2="244" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="253" y1="58" x2="253" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="262" y1="58" x2="262" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  </g>
-  <circle cx="190" cy="132" r="74" fill="none" stroke="#1f2933" stroke-width="2.5"/>
-  <g clip-path="url(#fy715s-c)">
-  <line x1="338" y1="58" x2="338" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="347" y1="58" x2="347" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="356" y1="58" x2="356" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="365" y1="58" x2="365" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="374" y1="58" x2="374" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="383" y1="58" x2="383" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="392" y1="58" x2="392" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="401" y1="58" x2="401" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="410" y1="58" x2="410" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="419" y1="58" x2="419" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="428" y1="58" x2="428" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="437" y1="58" x2="437" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="446" y1="58" x2="446" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="455" y1="58" x2="455" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="464" y1="58" x2="464" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="473" y1="58" x2="473" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="482" y1="58" x2="482" y2="206" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  </g>
-  <circle cx="410" cy="132" r="74" fill="none" stroke="#1f2933" stroke-width="2.5"/>
-  <g clip-path="url(#fy715s-d)">
-  <line x1="414" y1="60" x2="562" y2="60" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="414" y1="69" x2="562" y2="69" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="414" y1="78" x2="562" y2="78" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="414" y1="87" x2="562" y2="87" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="414" y1="96" x2="562" y2="96" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="414" y1="105" x2="562" y2="105" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="414" y1="114" x2="562" y2="114" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="414" y1="123" x2="562" y2="123" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="414" y1="132" x2="562" y2="132" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="414" y1="141" x2="562" y2="141" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="414" y1="150" x2="562" y2="150" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="414" y1="159" x2="562" y2="159" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="414" y1="168" x2="562" y2="168" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="414" y1="177" x2="562" y2="177" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="414" y1="186" x2="562" y2="186" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="414" y1="195" x2="562" y2="195" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="414" y1="204" x2="562" y2="204" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
-  </g>
-  <circle cx="488" cy="132" r="74" fill="none" stroke="#1f2933" stroke-width="2.5"/>
+  <image href="pics/fy7/fy7-15-sheets.webp" x="1.2" y="0" width="597" height="325.9" preserveAspectRatio="none"/>
   <foreignObject x="122" y="265.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\theta = 0^\circ$</div></foreignObject>
   <foreignObject x="414" y="265.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\theta = 90^\circ$</div></foreignObject>
 </svg>
@@ -357,46 +159,11 @@ When unpolarised light is reflected from the surface of an insulator, such as wa
 The lenses of **polarised sunglasses** contain a polarising film whose transmission axis is vertical. The film absorbs the horizontal oscillation of the glare reflected from the surface of a lake or a road, so the glare is dimmed a great deal. Unpolarised light coming from elsewhere is dimmed only by half, so the landscape stays visible. An ordinary dark lens dims all light in the same proportion, so the glare stays just as bright compared with its surroundings. With polarised glasses an angler can see below the water, and a driver sees better on a wet road. A photographer's polarising filter works on the same principle: by turning it, reflections from water and windows can be removed.
 
 <svg data-fig="glare" viewBox="0 0 600 360" role="img" aria-label="Schematic picture from the side, not to scale: sunlight arrives from the upper left at the surface of a lake. The incoming ray has both dots, which mean oscillation perpendicular to the plane of the paper, that is, parallel to the water surface, and double arrows in the plane of the paper: the light is unpolarised. The ray reflected from the surface has mostly dots: the glare is partially polarised in the horizontal direction. On the right the reflected light meets polarised sunglasses whose transmission axis is vertical, so only a weak ray continues to the eye after the glasses. Part of the light is refracted into the water." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy715g-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><radialGradient id="fy715g-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient></defs>
-  <rect x="12" y="236" width="576" height="100" fill="url(#fy715g-water)"/>
-  <line x1="12" y1="236" x2="588" y2="236" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <circle cx="62" cy="70" r="48" fill="#ffffff" fill-opacity="0.5"/>
-  <circle cx="62" cy="70" r="30" fill="url(#fy715g-sun)"/>
-  <path d="M101.5,123.5 L262,236" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M186.5,183 L172.5,180.5 L179.5,171 Z" fill="#e64980"/>
-  <path d="M262,236 L417.5,127" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M344.5,178 L337.5,190.5 L330.5,180.5 Z" fill="#e64980"/>
-  <path d="M262,236 L315,304" fill="none" stroke="#e64980" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.6"/>
-  <line x1="262" y1="116" x2="262" y2="276" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="130" y1="158" x2="143.5" y2="138.5" stroke="#8a5f22" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M147,133.5 L146,141.5 L140,137.5 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <path d="M126.5,163 L133.5,159.5 L127.5,155.5 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <circle cx="165.5" cy="168.5" r="5.5" fill="#8a5f22"/>
-  <line x1="187.5" y1="198.5" x2="201.5" y2="179" stroke="#8a5f22" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M205,174 L203.5,182 L198,178 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <path d="M184,203.5 L191,200 L185.5,196 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <circle cx="223.5" cy="209" r="5.5" fill="#8a5f22"/>
-  <circle cx="293" cy="214" r="5.5" fill="#8a5f22"/>
-  <circle cx="318" cy="197" r="5.5" fill="#8a5f22"/>
-  <circle cx="343" cy="179.5" r="5.5" fill="#8a5f22"/>
-  <circle cx="368" cy="162" r="5.5" fill="#8a5f22"/>
-  <line x1="390" y1="140.5" x2="395.5" y2="148.5" stroke="#8a5f22" stroke-width="1.8" stroke-linecap="butt"/>
-  <path d="M398,152 L393,149 L397,146.5 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <path d="M387.5,137 L388.5,142.5 L392.5,139.5 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <g transform="rotate(-35 432.5 116.5)">
-  <ellipse cx="432.5" cy="116.5" rx="12" ry="52" fill="#9aa0a6" fill-opacity="0.55" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="426.5" y1="84.5" x2="426.5" y2="148.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="432.5" y1="72.5" x2="432.5" y2="160.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="438.5" y1="84.5" x2="438.5" y2="148.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  </g>
-  <path d="M444,108.5 L478.5,84.5" fill="none" stroke="#e64980" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.35"/>
-  <path d="M469.5,75.5 Q491.5,59.5 513.5,75.5 Q491.5,91.5 469.5,75.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <circle cx="487.5" cy="75.5" r="6" fill="#1f2933"/>
+  <image href="pics/fy7/fy7-15-glare.webp" x="-1.3" y="-1.3" width="603" height="371.9" preserveAspectRatio="none"/>
   <foreignObject x="89.5" y="181.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{air}$</div></foreignObject>
-  <foreignObject x="514" y="291.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\text{water}$</div></foreignObject>
+  <foreignObject x="494" y="291.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\text{water}$</div></foreignObject>
   <foreignObject x="360" y="191.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{glare}$</div></foreignObject>
   <foreignObject x="376" y="19.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{polarised glasses}$</div></foreignObject>
-  <line x1="462" y1="50" x2="444" y2="82" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
 ```pysahdy
@@ -416,17 +183,7 @@ Behind and in front of every pixel of a liquid crystal display there is a polari
 Polarised light whose electric field has amplitude $E_0$ arrives at an analyser whose transmission axis makes an angle $\theta$ with the direction of polarisation of the light. The component of the electric field along the transmission axis, $E_0 \cos\theta$, passes through, and the perpendicular component, $E_0 \sin\theta$, is absorbed. The intensity of a wave is proportional to the square of its amplitude, so the intensity decreases by the factor $\cos^2\theta$.
 
 <svg data-fig="components" viewBox="0 0 600 360" role="img" aria-label="Diagram seen along the ray: the amplitude E0 of the electric field of polarised light points vertically upwards, so the light is polarised in the vertical direction. The transmission axis of the analyser is at an angle theta from the vertical. The component E0 cos theta of the electric field along the transmission axis passes through, and the perpendicular component E0 sin theta is absorbed. In the picture the angle theta is 35 degrees." style="max-width:100%;font-size:24px">
-  <line x1="240" y1="324" x2="240" y2="50" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="223" y1="324.5" x2="385.5" y2="92" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="240" y1="80" x2="343.5" y2="152.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
-  <line x1="240" y1="300" x2="240" y2="95" stroke="#8a5f22" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M240,80 L247,96 L233,96 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <line x1="240" y1="300" x2="335" y2="164.5" stroke="#8a5f22" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M343.5,152.5 L340,169.5 L328.5,161.5 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <line x1="240" y1="300" x2="148" y2="235.5" stroke="#8a5f22" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 5"/>
-  <path d="M136.5,227.5 L144.5,240.5 L151.5,230.5 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <path d="M240,236 A64,64 0 0,1 276.5,247.5" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <circle cx="240" cy="300" r="4" fill="#1f2933"/>
+  <image href="pics/fy7/fy7-15-components.webp" x="14.2" y="10.7" width="568.7" height="348.3" preserveAspectRatio="none"/>
   <foreignObject x="262" y="197.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\theta$</div></foreignObject>
   <foreignObject x="176" y="73.5" width="50" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$E_0$</div></foreignObject>
   <foreignObject x="359.5" y="160" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E_0 \cos\theta$</div></foreignObject>
@@ -510,39 +267,7 @@ Brewster's law :: \tan\alpha_\text{B} = \frac{n_2}{n_1}
 where $\alpha_\text{B}$ is Brewster's angle measured from the normal of the surface, $n_1$ is the refractive index of the substance from which the light comes and into which it is reflected, and $n_2$ is the refractive index of the substance into which the light is refracted. At Brewster's angle the electric field of the reflected light oscillates parallel to the surface and perpendicular to the plane of incidence. From air into water ($n_2 = 1.33$) Brewster's angle is $53.1^\circ$, and into glass ($n_2 = 1.50$) it is $56.3^\circ$. The refracted light is only partially polarised, because the reflected share is small.
 
 <svg data-fig="brewster" viewBox="0 0 600 360" role="img" aria-label="Diagram with the angles to scale: light arrives from air at the water surface at Brewster&#x27;s angle alpha B = 53.1 degrees from the normal. The incoming ray has both dots, meaning oscillation perpendicular to the plane of the paper, and double arrows in the plane of the paper. The reflected ray leaves at the same angle and is completely polarised: it has only dots, so the electric field oscillates parallel to the water surface. The refracted ray continues into the water at an angle alpha 2 = 36.9 degrees and has mostly double arrows. There is a right angle between the reflected and the refracted ray." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy715b-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
-  <rect x="12" y="172" width="576" height="164" fill="url(#fy715b-water)"/>
-  <line x1="12" y1="172" x2="588" y2="172" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="300" y1="30" x2="300" y2="330" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <path d="M151.5,60 L300,172" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M230.5,119.5 L216.5,116.5 L223.5,107 Z" fill="#e64980"/>
-  <path d="M300,172 L448.5,60" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M379,112.5 L372.5,125 L365,115.5 Z" fill="#e64980"/>
-  <path d="M300,172 L402,308" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M354.5,244.5 L342,238 L351.5,230.5 Z" fill="#e64980"/>
-  <line x1="171.5" y1="89" x2="184.5" y2="71.5" stroke="#8a5f22" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M188.5,67 L187,74.5 L181.5,70 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <path d="M168,94 L175,90.5 L169.5,86 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <circle cx="202" cy="98" r="5.5" fill="#8a5f22"/>
-  <line x1="243" y1="143" x2="256" y2="125" stroke="#8a5f22" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M259.5,120.5 L258.5,128 L252.5,124 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <path d="M239,147.5 L246,144 L240.5,140 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <circle cx="270.5" cy="149.5" r="5.5" fill="#8a5f22"/>
-  <circle cx="344.5" cy="138.5" r="5.5" fill="#8a5f22"/>
-  <circle cx="371.5" cy="118.5" r="5.5" fill="#8a5f22"/>
-  <circle cx="398" cy="98" r="5.5" fill="#8a5f22"/>
-  <circle cx="425" cy="78" r="5.5" fill="#8a5f22"/>
-  <line x1="329" y1="227" x2="345" y2="215" stroke="#8a5f22" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M349.5,211.5 L346,218.5 L342,212.5 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <path d="M324,230.5 L331.5,229 L327.5,223.5 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <circle cx="357" cy="248" r="5.5" fill="#8a5f22"/>
-  <line x1="371.5" y1="284" x2="387.5" y2="272" stroke="#8a5f22" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M392.5,268.5 L389,275.5 L385,270 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <path d="M367,287.5 L374.5,286 L370.5,280.5 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <path d="M261.5,143 A48,48 0 0,1 300,124" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M300,116 A56,56 0 0,1 345,138.5" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M331,213.5 A52,52 0 0,1 300,224" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M316,160 L328,176 L312,188" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <image href="pics/fy7/fy7-15-brewster.webp" x="-5.1" y="-2.5" width="609.1" height="378.2" preserveAspectRatio="none"/>
   <foreignObject x="212" y="75.5" width="50" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\alpha_\text{B}$</div></foreignObject>
   <foreignObject x="340" y="67.5" width="50" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\alpha_\text{B}$</div></foreignObject>
   <foreignObject x="312" y="239.5" width="40" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\alpha_2$</div></foreignObject>
@@ -609,19 +334,5 @@ Many people think that a polariser works like dark glass, which dims all light b
 - Extension: the intensity of polarised light after an analyser is $I = I_0 \cos^2\theta$ (Malus's law), and Brewster's angle satisfies $\tan\alpha_\text{B} = n_2 : n_1$ (Brewster's law).
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Illustration: on a table is a phone with a bright display. A square grey polarising film has been placed obliquely on the display. The part of the display under the film looks almost black, and the corner of the film that is outside the display looks only slightly grey." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy715s-table" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy715s-screen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient><clipPath id="fy715s-film"><path d="M300,170 L470,140 L500,320 L330,350 Z"/></clipPath></defs>
-  <rect x="0" y="0" width="600" height="360" fill="#f6f1e6"/>
-  <rect x="0" y="250" width="600" height="110" fill="url(#fy715s-table)"/>
-  <line x1="0" y1="250" x2="600" y2="250" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <g transform="rotate(-8 300 200)">
-  <rect x="200" y="40" width="200" height="300" rx="26" fill="#1f2933" stroke="#1f2933" stroke-width="3"/>
-  <rect x="214" y="64" width="172" height="252" rx="8" fill="url(#fy715s-screen)"/>
-  <rect x="232" y="88" width="136" height="22" rx="5" fill="#1971c2" fill-opacity="0.35"/>
-  <rect x="232" y="130" width="136" height="22" rx="5" fill="#1971c2" fill-opacity="0.35"/>
-  <rect x="232" y="172" width="136" height="22" rx="5" fill="#1971c2" fill-opacity="0.35"/>
-  <rect x="232" y="214" width="136" height="22" rx="5" fill="#1971c2" fill-opacity="0.35"/>
-  <rect x="232" y="256" width="136" height="22" rx="5" fill="#1971c2" fill-opacity="0.35"/>
-  </g>
-  <path d="M300,170 L470,140 L500,320 L330,350 Z" fill="#9aa0a6" stroke="#1f2933" stroke-width="2" stroke-linejoin="round" fill-opacity="0.35"/>
-  <g clip-path="url(#fy715s-film)"><g transform="rotate(-8 300 200)"><rect x="214" y="64" width="172" height="252" rx="8" fill="#1f2933" fill-opacity="0.9"/></g></g>
+  <image href="pics/fy7/fy7-15-scene.webp" x="0" y="0" width="600" height="360" preserveAspectRatio="none"/>
 </svg>
