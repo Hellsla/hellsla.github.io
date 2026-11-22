@@ -3,31 +3,7 @@
 > **Miksi** vesilasiin pantu pilli näyttää katkeavan juuri vedenpinnan kohdalla?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: keittiön pöydällä on vesilasi, jossa on raidallinen pilli. Pillin vedessä oleva osa näyttää siirtyneen sivuun, joten pilli näyttää katkeavan vedenpinnan kohdalla. Takana ikkuna, josta aurinko paistaa." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy710h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy710h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy710h-table" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy710h-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#a9d1f0"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
-  <rect x="120" y="60" width="360" height="300" rx="8" fill="url(#fy710h-sky)" stroke="#1f2933" stroke-width="4"/>
-  <line x1="300" y1="60" x2="300" y2="360" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
-  <line x1="120" y1="210" x2="480" y2="210" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
-  <circle cx="400" cy="130" r="54.5" fill="#ffffff" fill-opacity="0.5"/>
-  <circle cx="400" cy="130" r="34" fill="url(#fy710h-sun)"/>
-  <rect x="0" y="440" width="1200" height="160" fill="url(#fy710h-table)"/>
-  <line x1="0" y1="440" x2="1200" y2="440" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M500,150 L516,470 H684 L700,150" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
-  <path d="M506,270 L516,466 H684 L694,270 Z" fill="url(#fy710h-water)" stroke-linejoin="round"/>
-  <path d="M506,270 Q600.0,280 694,270" fill="none" stroke="#2f74b5" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M750,35 L630,265 L650,275 L770,45 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M735,64 L725.5,82.5 L745,92.5 L754.5,74 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <path d="M715,102.5 L705.5,121 L725,131 L734.5,112.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <path d="M695,140.5 L685.5,159 L705,169.5 L714.5,151 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <path d="M675,179 L665.5,197.5 L685,207.5 L694.5,189 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <path d="M655,217.5 L645.5,236 L665,246 L674.5,227.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <path d="M601.5,269 L549.5,453 L570.5,459 L622.5,275 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M595,292.5 L590.5,307 L612,313 L616,298.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <path d="M586,323 L582,337.5 L603,343.5 L607.5,329 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <path d="M577.5,353.5 L573.5,368.5 L594.5,374.5 L598.5,359.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <path d="M569,384.5 L564.5,399 L586,405 L590,390.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <path d="M560,415 L556,429.5 L577,435.5 L581.5,421 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <line x1="524" y1="180" x2="534" y2="430" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+  <image href="pics/fy7/fy7-10-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Ydinajatus
@@ -36,19 +12,7 @@
 Valo on sähkömagneettista aaltoliikettä (luku *Sähkömagneettinen säteily ja mustan kappaleen spektri*). Tasalaatuisessa aineessa, kuten ilmassa, vedessä tai lasissa, valo etenee suoraviivaisesti. Valon kulkua kuvataan **säteillä**: säde on viiva, joka näyttää valon etenemissuunnan. Kun valo kohtaa kahden aineen rajapinnan, osa siitä **heijastuu** takaisin samaan aineeseen ja osa jatkaa toiseen aineeseen. Rajapinnan läpi menevä valo yleensä muuttaa suuntaansa: se **taittuu**. Kulmat mitataan aina rajapinnan **normaalista** eli suorasta, joka on kohtisuorassa rajapintaa vastaan säteen osumiskohdassa. Tulevan säteen ja normaalin välinen kulma on tulokulma $\alpha_1$, heijastuneen säteen kulma heijastuskulma $\beta$ ja taittuneen säteen kulma taitekulma $\alpha_2$.
 
 <svg data-fig="interface" viewBox="0 0 600 360" role="img" aria-label="Kaavakuva, kulmat mittakaavassa: valonsäde tulee ilmasta vedenpintaan. Pinnan osumiskohtaan on piirretty harmaa katkoviiva, normaali, joka on kohtisuorassa pintaa vastaan. Tuleva säde tulee vasemmalta ylhäältä normaalin kanssa kulmassa alfa 1, joka on 50 astetta. Ohuempi heijastunut säde lähtee oikealle ylös yhtä suuressa kulmassa beeta. Taittunut säde jatkuu veteen oikealle alas kulmassa alfa 2, joka on 35 astetta, eli se on taittunut kohti normaalia." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy710-if-water" gradientUnits="userSpaceOnUse" x1="0" y1="176" x2="0" y2="344"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#a9d1f0"/></linearGradient></defs>
-  <rect x="16" y="176" width="568" height="168" rx="6" fill="url(#fy710-if-water)"/>
-  <line x1="16" y1="176" x2="584" y2="176" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="300" y1="22" x2="300" y2="340" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
-  <path d="M252.5,136 A62,62 0 0,1 300,114" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M300,114 A62,62 0 0,1 347.5,136" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M340.5,233 A70,70 0 0,1 300,246" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <line x1="170" y1="66.5" x2="300" y2="176" stroke="#e64980" stroke-width="3.5" stroke-linecap="round"/>
-  <path d="M247,131.5 L231,128 L240.5,116.5 Z" fill="#e64980" stroke-linejoin="round"/>
-  <line x1="300" y1="176" x2="430" y2="66.5" stroke="#e64980" stroke-width="2" stroke-linecap="round"/>
-  <path d="M376,112 L371,124.5 L363,115 Z" fill="#e64980" stroke-linejoin="round"/>
-  <line x1="300" y1="176" x2="386.5" y2="298.5" stroke="#e64980" stroke-width="3" stroke-linecap="round"/>
-  <path d="M351.5,249 L338,242 L349,233.5 Z" fill="#e64980" stroke-linejoin="round"/>
+  <image href="pics/fy7/fy7-10-interface.webp" x="1.2" y="1.2" width="597" height="368.2" preserveAspectRatio="none"/>
   <foreignObject x="246.5" y="77.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha_1$</div></foreignObject>
   <foreignObject x="327" y="77.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\beta$</div></foreignObject>
   <foreignObject x="313" y="259" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha_2$</div></foreignObject>
@@ -76,37 +40,8 @@ Taajuus ei muutu, koska sen määrää valonlähde. Aallonpituus lyhenee: vedess
 Taittuminen johtuu nopeuden muutoksesta. Kuvassa vinosti rajapintaan tulevan aallon aaltorintamat ovat yhdensuuntaisia viivoja, ja säde on kohtisuorassa niitä vastaan. Rintaman vasen pää saapuu veteen ensin ja hidastuu, kun oikea pää kulkee vielä ilmassa nopeammin. Siksi rintama kääntyy, ja vedessä aalto etenee uuteen suuntaan, lähempänä normaalia. Vedessä rintamat ovat myös tiheämmässä, koska aallonpituus on lyhyempi. Kun valo tulee kohtisuoraan rajapintaan, $\alpha_1 = 0^\circ$, rintaman kaikki kohdat hidastuvat yhtä aikaa, eikä suunta muutu.
 
 <svg data-fig="wavefronts" viewBox="0 0 600 360" role="img" aria-label="Kaavakuva, mittakaavassa veden taitekertoimella 1,33: valoaalto tulee ilmasta vinosti vedenpintaan. Aaltorintamat ovat yhdensuuntaisia viivoja, jotka ovat kohtisuorassa sädettä vastaan. Ilmassa rintamien väli on aallonpituus lambda 1. Rintaman vasen pää on jo vedessä, kun oikea pää on vielä ilmassa. Vedessä rintamat ovat lähempänä toisiaan, aallonpituus lambda 2 on lyhyempi, ja rintamat ovat kääntyneet niin, että säde etenee lähempänä normaalia." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy710-wf-water" gradientUnits="userSpaceOnUse" x1="0" y1="170" x2="0" y2="344"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#a9d1f0"/></linearGradient></defs>
-  <rect x="16" y="170" width="568" height="174" rx="6" fill="url(#fy710-wf-water)"/>
-  <line x1="16" y1="170" x2="584" y2="170" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="300" y1="22" x2="300" y2="338" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
-  <line x1="102" y1="95" x2="153" y2="34" stroke="#1f2933" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="132.5" y1="121" x2="205.5" y2="34" stroke="#1f2933" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="163" y1="146.5" x2="253" y2="39" stroke="#1f2933" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="195.5" y1="170" x2="283.5" y2="65" stroke="#1f2933" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="248" y1="170" x2="314.5" y2="90.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="210" y1="196.5" x2="248" y2="170" stroke="#1f2933" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="300" y1="170" x2="345" y2="116.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="227" y1="221.5" x2="300" y2="170" stroke="#1f2933" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="352" y1="170" x2="375.5" y2="142" stroke="#1f2933" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="244.5" y1="246" x2="352" y2="170" stroke="#1f2933" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="262" y1="270.5" x2="404.5" y2="170" stroke="#1f2933" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="279" y1="295" x2="424.5" y2="192.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="296.5" y1="319.5" x2="442" y2="217" stroke="#1f2933" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="331" y1="332" x2="459.5" y2="241.5" stroke="#1f2933" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="383.5" y1="332" x2="476.5" y2="266" stroke="#1f2933" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="435.5" y1="332" x2="494" y2="291" stroke="#1f2933" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="209.5" y1="94" x2="300" y2="170" stroke="#e64980" stroke-width="3" stroke-linecap="round"/>
-  <path d="M260.5,137 L244,133 L254,121.5 Z" fill="#e64980" stroke-linejoin="round"/>
-  <line x1="300" y1="170" x2="386.5" y2="292.5" stroke="#e64980" stroke-width="3" stroke-linecap="round"/>
-  <path d="M356,249.5 L341.5,242 L353.5,233 Z" fill="#e64980" stroke-linejoin="round"/>
-  <line x1="294" y1="52.5" x2="324.5" y2="78.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="289.5" y1="58" x2="298.5" y2="47.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="320" y1="84" x2="329" y2="73" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <image href="pics/fy7/fy7-10-wavefronts.webp" x="2.5" y="2.5" width="594.1" height="365.1" preserveAspectRatio="none"/>
   <foreignObject x="309.5" y="31" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\lambda_1$</div></foreignObject>
-  <line x1="249" y1="279.5" x2="266" y2="304" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="243" y1="283.5" x2="254.5" y2="275.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="260.5" y1="308.5" x2="272" y2="300" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="219.5" y="292.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\lambda_2$</div></foreignObject>
   <foreignObject x="28" y="31.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{ilma}$</div></foreignObject>
   <foreignObject x="28" y="307.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{vesi}$</div></foreignObject>
@@ -122,26 +57,7 @@ Tavallisesti kahden läpinäkyvän aineen rajapinnassa osa valosta heijastuu ja 
 Kun katsot uima-altaan pohjassa olevaa kolikkoa, kolikosta lähtevät säteet taittuvat vedenpinnassa normaalista poispäin. Silmä ja aivot tulkitsevat, että valo on tullut suoraan viivaa pitkin. Kun silmään tulevat säteet jatketaan taaksepäin veteen, ne näyttävät lähtevän kohdasta, joka on ylempänä kuin kolikko. Siksi allas näyttää matalammalta kuin se on, ja kolikko näyttää olevan lähempänä pintaa. Samasta syystä pillin vedessä oleva osa näyttää nousseen ylemmäs, kun lasia katsotaan vinosti ylhäältä vedenpinnan läpi, ja pilli näyttää katkeavan vedenpinnan kohdalla. Koska katsot vinosti, ylemmäs nostettu osa näkyy samalla sivuun siirtyneenä.
 
 <svg data-fig="depth" viewBox="0 0 600 360" role="img" aria-label="Kaavakuva, kulmat veden taitekertoimella 1,33: uima-altaan poikkileikkaus. Altaan pohjalla vasemmalla on kolikko. Siitä lähtee kaksi sädettä vinosti ylös oikealle. Vedenpinnassa säteet taittuvat normaalista poispäin ja jatkuvat oikealla ylhäällä olevaan silmään. Säteiden jatkeet on piirretty harmaina katkoviivoina takaisin veteen: ne kohtaavat kolikon yläpuolella, ja siinä kohdassa silmä näkee kolikon. Kolikko näyttää olevan lähempänä pintaa kuin todellisuudessa." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy710-dp-water" gradientUnits="userSpaceOnUse" x1="0" y1="120" x2="0" y2="336"><stop offset="0" stop-color="#d0e6fb"/><stop offset="1" stop-color="#a9d1f0"/></linearGradient></defs>
-  <rect x="16" y="120" width="568" height="216" rx="6" fill="url(#fy710-dp-water)"/>
-  <rect x="16" y="324" width="568" height="12" rx="4" fill="#f1dfb5"/>
-  <line x1="16" y1="120" x2="584" y2="120" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="262" y1="300" x2="366.5" y2="120" stroke="#e64980" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M297,239.5 L296,256.5 L283,248.5 Z" fill="#e64980" stroke-linejoin="round"/>
-  <line x1="366.5" y1="120" x2="444" y2="34" stroke="#e64980" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M406.5,75.5 L402,92 L391,82 Z" fill="#e64980" stroke-linejoin="round"/>
-  <line x1="262" y1="300" x2="385" y2="120" stroke="#e64980" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M303,240 L301,256.5 L288.5,248 Z" fill="#e64980" stroke-linejoin="round"/>
-  <line x1="385" y1="120" x2="458" y2="56" stroke="#e64980" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M423.5,86 L417.5,102 L407.5,90.5 Z" fill="#e64980" stroke-linejoin="round"/>
-  <line x1="366.5" y1="120" x2="366.5" y2="60" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="366.5" y1="120" x2="297" y2="197.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 6"/>
-  <line x1="385" y1="120" x2="297" y2="197.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 6"/>
-  <path d="M240,306 a22,7 0 1,0 44,0 a22,7 0 1,0 -44,0 Z" fill="#e9c98a" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M275,197.5 a22,7 0 1,0 44,0 a22,7 0 1,0 -44,0 Z" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round" stroke-dasharray="5 4"/>
-  <path d="M452,44 Q488,18 524,44 Q488,70 452,44 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <circle cx="476" cy="44" r="10" fill="#1971c2" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="476" cy="44" r="4" fill="#1f2933"/>
+  <image href="pics/fy7/fy7-10-depth.webp" x="1.2" y="1.2" width="597" height="368.2" preserveAspectRatio="none"/>
   <foreignObject x="133" y="289.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{kolikko}$</div></foreignObject>
   <foreignObject x="55" y="179" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{näennäinen paikka}$</div></foreignObject>
   <foreignObject x="28" y="77.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{ilma}$</div></foreignObject>
@@ -317,40 +233,5 @@ Moni mittaa tulokulman rajapinnasta eikä normaalista. Jos säde ja vedenpinta o
 - Vedessä olevat esineet näyttävät olevan lähempänä pintaa kuin ne ovat, koska niistä tulevat säteet taittuvat vedenpinnassa.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: tyyni järvi illalla. Vastarannan kuuset heijastuvat vedenpinnasta ylösalaisin. Etualalla rannan lähellä näkyy veden läpi kiviä pohjassa." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy710s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy710s-lake" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
-  <rect x="0" y="0" width="600" height="360" fill="url(#fy710s-sky)"/>
-  <rect x="0" y="170" width="600" height="190" fill="url(#fy710s-lake)"/>
-  <rect x="0" y="160" width="600" height="12" fill="#2b8a3e"/>
-  <path d="M2,160 L20,81.91694557368464 L38,160 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M2,172 L20,238.37059626236805 L38,172 Z" fill="#2b8a3e" stroke-linejoin="round" opacity="0.4"/>
-  <path d="M48,160 L66,77.40299972821958 L84,160 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M48,172 L66,242.20745023101335 L84,172 Z" fill="#2b8a3e" stroke-linejoin="round" opacity="0.4"/>
-  <path d="M94,160 L112,81.1058531626577 L130,160 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M94,172 L112,239.06002481174096 L130,172 Z" fill="#2b8a3e" stroke-linejoin="round" opacity="0.4"/>
-  <path d="M140,160 L158,62.901225587957015 L176,160 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M140,172 L158,254.53395825023654 L176,172 Z" fill="#2b8a3e" stroke-linejoin="round" opacity="0.4"/>
-  <path d="M186,160 L204,71.46727684717916 L222,160 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M186,172 L204,247.2528146798977 L222,172 Z" fill="#2b8a3e" stroke-linejoin="round" opacity="0.4"/>
-  <path d="M232,160 L250,62.805928377929376 L268,160 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M232,172 L250,254.61496087876003 L268,172 Z" fill="#2b8a3e" stroke-linejoin="round" opacity="0.4"/>
-  <path d="M278,160 L296,69.35747035138775 L314,160 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M278,172 L296,249.04615020132042 L314,172 Z" fill="#2b8a3e" stroke-linejoin="round" opacity="0.4"/>
-  <path d="M324,160 L342,86.37174214978586 L360,160 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M324,172 L342,234.58401917268202 L360,172 Z" fill="#2b8a3e" stroke-linejoin="round" opacity="0.4"/>
-  <path d="M370,160 L388,64.66316417747294 L406,160 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M370,172 L388,253.036310449148 L406,172 Z" fill="#2b8a3e" stroke-linejoin="round" opacity="0.4"/>
-  <path d="M416,160 L434,88.23274589092762 L452,160 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M416,172 L434,233.00216599271153 L452,172 Z" fill="#2b8a3e" stroke-linejoin="round" opacity="0.4"/>
-  <path d="M462,160 L480,81.41246512464932 L498,160 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M462,172 L480,238.79940464404808 L498,172 Z" fill="#2b8a3e" stroke-linejoin="round" opacity="0.4"/>
-  <path d="M508,160 L526,67.76632405857526 L544,160 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M508,172 L526,250.39862455021103 L544,172 Z" fill="#2b8a3e" stroke-linejoin="round" opacity="0.4"/>
-  <path d="M554,160 L572,71.03784643506515 L590,160 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M554,172 L572,247.61783053019462 L590,172 Z" fill="#2b8a3e" stroke-linejoin="round" opacity="0.4"/>
-  <path d="M0,360 L0,318 C80,306 170,322 240,360 Z" fill="#f1dfb5" stroke-linejoin="round"/>
-  <circle cx="360" cy="330" r="16" fill="#6c757d" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="420" cy="312" r="12" fill="#6c757d" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="480" cy="336" r="18" fill="#6c757d" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="300" cy="344" r="11" fill="#6c757d" stroke="#1f2933" stroke-width="1.5"/>
-  <path d="M200,360 C280,318 420,300 600,294 L600,360 Z" fill="#a9d1f0" stroke-linejoin="round" opacity="0.55"/>
+  <image href="pics/fy7/fy7-10-scene.webp" x="0" y="0" width="600" height="360" preserveAspectRatio="none"/>
 </svg>

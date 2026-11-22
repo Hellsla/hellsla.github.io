@@ -44,6 +44,11 @@ COMING = json.loads((ROOT / "curriculum.json").read_text()).get("_front_page", {
 fails = 0
 
 
+def link_hrefs(html):
+    """The href of every link (<a>) in `html`; an <image href="pics/….webp"> of a card's picture is not a link."""
+    return re.findall(r'<a\b[^>]*?\bhref="([^"]+)"', html)
+
+
 def expect(name, ok, detail=""):
     global fails
     print(("ok   " if ok else "FAIL ") + name + ("" if ok else f"\n     {detail}"))
@@ -178,11 +183,11 @@ for lang in i18n.languages():
             expect(f"{lang} {code}: the page exists, says it is school-specific and what is planned",
                    bool(pg) and ('class="notice local-kind"' in pg) == local[code].get("kind_note", True) and (('class="notice local-status"' not in pg) if local[code]["status"] == "ready" else ('class="notice local-status"' in pg and T("site.local_status_" + local[code]["status"]) in pg)))
             prep = re.search(r'<ul class="local-prepare">(.*?)</ul>', pg, re.S)
-            hrefs = re.findall(r'href="([^"]+)"', prep.group(1)) if prep else []
+            hrefs = link_hrefs(prep.group(1)) if prep else []
             expect(f"{lang} {code}: chapters to prepare with link only published pages ({len(hrefs)})", all((out / h).is_file() for h in hrefs), hrefs)
             expect(f"{lang} {code}: not a national module row", code not in codes)
             inv = re.search(r'<ol class="lessons ch-cards local-inv bank-list" id="bank-list">(.*?)</ol>', pg, re.S)   # the bank's cards by topic
-            ihrefs = re.findall(r'href="([^"]+)"', inv.group(1)) if inv else []
+            ihrefs = link_hrefs(inv.group(1)) if inv else []
             expect(f"{lang} {code}: listed investigations are published pages that name this course ({len(ihrefs)})",
                    all((out / h).is_file() and code in investigations.load(h[:-5], lang)["courses"] for h in ihrefs), ihrefs)
             if ihrefs:                   # the bank (teacher 2026-10-31): every item carries its filter data, the form starts hidden
@@ -207,7 +212,7 @@ for lang in i18n.languages():
                        and all(len(re.findall(r'<li class="(?:live|soon) ch-card">', body)) == int(n) for _, n, body in crows), [(k, n) for k, n, _ in crows])
                 expect(f"{lang} {code}: every published unit is a card with one link, its opening illustration and its question ({len(live)})",
                        all(len(re.findall(r"<a ", c)) == 1 and 'class="ch-img"><svg aria-hidden="true"' in c and 'class="ch-why"' in c for c in live)
-                       and all((out / h).resolve().is_file() for c in live for h in re.findall(r'href="([^"]+)"', c)))
+                       and all((out / h).resolve().is_file() for c in live for h in link_hrefs(c)))
             ghrefs = re.findall(r'href="(tvt-[\w-]+\.html)"', pg)
             expect(f"{lang} {code}: listed TVT-ohjeet are published pages ({len(ghrefs)})", all((out / h).is_file() for h in ghrefs), ghrefs)
     else: expect(f"{lang}: no local-course section without a course in this language", not sec)
@@ -257,6 +262,8 @@ for lang in i18n.languages():
 # loan tag on exactly the books marked "loan", no subheading inside the list, each title a link to its record, and the
 # page reachable from the header of every page of every language (no longer in the footer, teacher 2026-11-04).
 import reading_tips
+expect("link_hrefs takes the links of a card, not the picture file of its hero (<image href=\"pics/…webp\">, work queue 24)",
+       link_hrefs('<li><a class="ch-card" href="fy10-heiluri.html"><span class="ch-img"><svg><image href="pics/fy10/fy10-heiluri-hero.webp" x="0"/></svg></span></a></li>') == ["fy10-heiluri.html"])
 expect("content/<lang>/lukuvinkit.json are valid (reading_tips.py)", not reading_tips.check(), reading_tips.check())
 for lang in i18n.languages():
     T = i18n.T(lang); out = SITE if lang == i18n.SOURCE else SITE / lang

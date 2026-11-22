@@ -3,159 +3,7 @@
 > **Why** does the rotating rotor of a wind turbine produce in the electricity grid a voltage that reverses its direction a hundred times a second?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a wind farm in a Finnish field by the sea. In the middle is a large wind turbine with turning blades, and behind it are smaller turbines. On the right a power line on pylons runs to red houses. There are clouds in the sky, and the wind bends the tops of the birches." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy77h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy77h-sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy77h-field" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
-  <rect x="0" y="0" width="1200" height="470" fill="url(#fy77h-sky)"/>
-  <path d="M122,134 Q119.5,93 167.5,98 Q187,55 235,69 Q278,45 302,91 Q345,95.5 340.5,134 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <path d="M879,98 Q877,67.5 913,71 Q927.5,38.5 963.5,49.5 Q996,31.5 1014,65.5 Q1046.5,69 1043,98 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <path d="M697,184 Q695.5,160 723.5,163 Q735,138 763,146 Q788,132 802,159 Q827,161.5 824.5,184 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <rect x="0" y="380" width="1200" height="90" fill="url(#fy77h-sea)"/>
-  <path d="M640,412 L654.5,388 L669.5,412 L685.5,385 L701.5,412 L716.5,387.5 L731.5,412 L752.5,374 L773.5,412 L792,380.5 L810,412 L831.5,374 L852.5,412 L871.5,379 L890.5,412 L903.5,391.5 L916.5,412 L937,375.5 L957.5,412 L970,392.5 L982.5,412 L997.5,387.5 L1012,412 L1031.5,377.5 L1051,412 L1069.5,380 L1088,412 L1101,391 L1114.5,412 L1127,392.5 L1139.5,412 L1153.5,389.5 L1167.5,412 L1184.5,383 L1201.5,412 V472 H640 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <path d="M0,440 Q100,427 200,437 Q300,426 400,437.5 Q500,417 600,439 Q700,418 800,439 Q900,400 1000,442.5 Q1100,412 1200,440 Q1300,411 1400,440.5 V600 H0 Z" fill="#b2f2bb" stroke-linejoin="round"/>
-  <path d="M0,467 Q100,443.5 200,465.5 Q300,427.5 400,466.5 Q500,430.5 600,466 Q700,449 800,469.5 Q900,432.5 1000,467.5 Q1100,435 1200,469.5 Q1300,426.5 1400,468 V600 H0 Z" fill="#b2f2bb" stroke-linejoin="round"/>
-  <rect x="0" y="500" width="1200" height="100" fill="url(#fy77h-field)"/>
-  <line x1="0" y1="512" x2="1200" y2="508" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="522" x2="1200" y2="519" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="532" x2="1200" y2="530" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="542" x2="1200" y2="541" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="552" x2="1200" y2="552" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="562" x2="1200" y2="563" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="572" x2="1200" y2="574" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="582" x2="1200" y2="585" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="592" x2="1200" y2="596" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M144.5,420 L147.5,290 H152.5 L155.5,420 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M154,291 Q166.5,269.5 174,213 L146,289 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M147,292.5 Q159.5,314.5 205,349 L153,287.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M149,286 Q124.5,286 71.5,308 L151,294 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <circle cx="150" cy="290" r="5.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <path d="M294.5,412 L297.5,252 H302.5 L305.5,412 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M302,255.5 Q331,247 388.5,207 L298,248.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M296,252 Q289,281 295,351 L304,252 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M302,248.5 Q280.5,227.5 217,198 L298,255.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <circle cx="300" cy="252" r="5.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <path d="M834.5,440 L837.5,270 H842.5 L845.5,440 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M843,272.5 Q867.5,252 908,189.5 L837,267.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M836,271.5 Q841.5,303 876,369 L844,268.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M840.5,266 Q810.5,255 736,251.5 L839.5,274 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <circle cx="840" cy="270" r="5.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <path d="M974.5,432 L977.5,292 H982.5 L985.5,432 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M980,296 Q1005.5,302.5 1067,294.5 L980,288 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M976.5,290 Q958,309 934.5,366 L983.5,294 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M983.5,290 Q976,264.5 939,215.5 L976.5,294 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <circle cx="980" cy="292" r="5.6" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <path d="M589,520 L595,190 H605 L611,520 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M608,191.5 Q631,133.5 640.5,-10.5 L592,188.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M594.5,196 Q633.5,245 753.5,325.5 L605.5,184 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M597.5,182.5 Q535.5,191.5 406,255 L602.5,197.5 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <circle cx="600" cy="190" r="11.2" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <path d="M789.5,540 L814.5,390 H825.5 L850.5,540" fill="none" stroke="#6c757d" stroke-width="2.7" stroke-linejoin="round"/>
-  <line x1="789.5" y1="540" x2="845.5" y2="510" stroke="#6c757d" stroke-width="1.35" stroke-linecap="butt"/>
-  <line x1="850.5" y1="540" x2="794.5" y2="510" stroke="#6c757d" stroke-width="1.35" stroke-linecap="butt"/>
-  <line x1="794.5" y1="510" x2="840.5" y2="480" stroke="#6c757d" stroke-width="1.35" stroke-linecap="butt"/>
-  <line x1="845.5" y1="510" x2="799.5" y2="480" stroke="#6c757d" stroke-width="1.35" stroke-linecap="butt"/>
-  <line x1="799.5" y1="480" x2="835.5" y2="450" stroke="#6c757d" stroke-width="1.35" stroke-linecap="butt"/>
-  <line x1="840.5" y1="480" x2="804.5" y2="450" stroke="#6c757d" stroke-width="1.35" stroke-linecap="butt"/>
-  <line x1="804.5" y1="450" x2="830.5" y2="420" stroke="#6c757d" stroke-width="1.35" stroke-linecap="butt"/>
-  <line x1="835.5" y1="450" x2="809.5" y2="420" stroke="#6c757d" stroke-width="1.35" stroke-linecap="butt"/>
-  <line x1="773" y1="420" x2="867" y2="420" stroke="#6c757d" stroke-width="2.7" stroke-linecap="butt"/>
-  <line x1="773" y1="420" x2="773" y2="432.5" stroke="#1f2933" stroke-width="1.8" stroke-linecap="butt"/>
-  <line x1="867" y1="420" x2="867" y2="432.5" stroke="#1f2933" stroke-width="1.8" stroke-linecap="butt"/>
-  <line x1="789.5" y1="390" x2="850.5" y2="390" stroke="#6c757d" stroke-width="2.7" stroke-linecap="butt"/>
-  <line x1="789.5" y1="390" x2="789.5" y2="402.5" stroke="#1f2933" stroke-width="1.8" stroke-linecap="butt"/>
-  <line x1="850.5" y1="390" x2="850.5" y2="402.5" stroke="#1f2933" stroke-width="1.8" stroke-linecap="butt"/>
-  <path d="M977.5,545 L1004.5,385 H1015.5 L1042.5,545" fill="none" stroke="#6c757d" stroke-width="2.85" stroke-linejoin="round"/>
-  <line x1="977.5" y1="545" x2="1037" y2="513" stroke="#6c757d" stroke-width="1.425" stroke-linecap="butt"/>
-  <line x1="1042.5" y1="545" x2="983" y2="513" stroke="#6c757d" stroke-width="1.425" stroke-linecap="butt"/>
-  <line x1="983" y1="513" x2="1031.5" y2="481" stroke="#6c757d" stroke-width="1.425" stroke-linecap="butt"/>
-  <line x1="1037" y1="513" x2="988.5" y2="481" stroke="#6c757d" stroke-width="1.425" stroke-linecap="butt"/>
-  <line x1="988.5" y1="481" x2="1026.5" y2="449" stroke="#6c757d" stroke-width="1.425" stroke-linecap="butt"/>
-  <line x1="1031.5" y1="481" x2="993.5" y2="449" stroke="#6c757d" stroke-width="1.425" stroke-linecap="butt"/>
-  <line x1="993.5" y1="449" x2="1021" y2="417" stroke="#6c757d" stroke-width="1.425" stroke-linecap="butt"/>
-  <line x1="1026.5" y1="449" x2="999" y2="417" stroke="#6c757d" stroke-width="1.425" stroke-linecap="butt"/>
-  <line x1="960.5" y1="417" x2="1059.5" y2="417" stroke="#6c757d" stroke-width="2.85" stroke-linecap="butt"/>
-  <line x1="960.5" y1="417" x2="960.5" y2="430.5" stroke="#1f2933" stroke-width="1.9" stroke-linecap="butt"/>
-  <line x1="1059.5" y1="417" x2="1059.5" y2="430.5" stroke="#1f2933" stroke-width="1.9" stroke-linecap="butt"/>
-  <line x1="977.5" y1="385" x2="1042.5" y2="385" stroke="#6c757d" stroke-width="2.85" stroke-linecap="butt"/>
-  <line x1="977.5" y1="385" x2="977.5" y2="398.5" stroke="#1f2933" stroke-width="1.9" stroke-linecap="butt"/>
-  <line x1="1042.5" y1="385" x2="1042.5" y2="398.5" stroke="#1f2933" stroke-width="1.9" stroke-linecap="butt"/>
-  <path d="M773,432.5 Q867,455.5 960.5,430.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M867,432.5 Q963,455.5 1059.5,430.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M789.5,402.5 Q883.5,424.5 977.5,398.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M850.5,402.5 Q946.5,424.5 1042.5,398.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M960.5,430.5 Q1080.5,456.5 1200,450.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M1059.5,430.5 Q1129.5,456.5 1200,450.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <rect x="1060" y="505" width="110" height="70" fill="#c92a2a" stroke="#1f2933" stroke-width="3"/>
-  <line x1="1074" y1="508" x2="1074" y2="572" stroke="#f2a69c" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="1088" y1="508" x2="1088" y2="572" stroke="#f2a69c" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="1102" y1="508" x2="1102" y2="572" stroke="#f2a69c" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="1116" y1="508" x2="1116" y2="572" stroke="#f2a69c" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="1130" y1="508" x2="1130" y2="572" stroke="#f2a69c" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="1144" y1="508" x2="1144" y2="572" stroke="#f2a69c" stroke-width="1" stroke-linecap="butt"/>
-  <rect x="1060" y="505" width="10" height="70" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <rect x="1160" y="505" width="10" height="70" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <path d="M1040,505 L1115,466.5 L1190,505 Z" fill="#6c757d" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="1090" y="524.5" width="40" height="28" fill="#eef5f9" stroke="#ffffff" stroke-width="5"/>
-  <rect x="1090" y="524.5" width="40" height="28" fill="none" stroke="#1f2933" stroke-width="2"/>
-  <line x1="1110" y1="524.5" x2="1110" y2="552.5" stroke="#ffffff" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="60" y="500" width="120" height="72" fill="#c92a2a" stroke="#1f2933" stroke-width="3"/>
-  <line x1="74" y1="503" x2="74" y2="569" stroke="#f2a69c" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="88" y1="503" x2="88" y2="569" stroke="#f2a69c" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="102" y1="503" x2="102" y2="569" stroke="#f2a69c" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="116" y1="503" x2="116" y2="569" stroke="#f2a69c" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="130" y1="503" x2="130" y2="569" stroke="#f2a69c" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="144" y1="503" x2="144" y2="569" stroke="#f2a69c" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="158" y1="503" x2="158" y2="569" stroke="#f2a69c" stroke-width="1" stroke-linecap="butt"/>
-  <rect x="60" y="500" width="10" height="72" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <rect x="170" y="500" width="10" height="72" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <path d="M40,500 L120,460.5 L200,500 Z" fill="#6c757d" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="90" y="520" width="40" height="29" fill="#eef5f9" stroke="#ffffff" stroke-width="5"/>
-  <rect x="90" y="520" width="40" height="29" fill="none" stroke="#1f2933" stroke-width="2"/>
-  <line x1="110" y1="520" x2="110" y2="549" stroke="#ffffff" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="226.5" y="455" width="7" height="120" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <rect x="226.5" y="560.5" width="3.5" height="2" fill="#1f2933"/>
-  <rect x="230" y="546" width="3.5" height="2" fill="#1f2933"/>
-  <rect x="226.5" y="532" width="3.5" height="2" fill="#1f2933"/>
-  <rect x="230" y="517.5" width="3.5" height="2" fill="#1f2933"/>
-  <rect x="226.5" y="503" width="3.5" height="2" fill="#1f2933"/>
-  <rect x="230" y="488.5" width="3.5" height="2" fill="#1f2933"/>
-  <rect x="226.5" y="474" width="3.5" height="2" fill="#1f2933"/>
-  <line x1="230" y1="500.5" x2="208.5" y2="486" stroke="#1f2933" stroke-width="2" stroke-linecap="round"/>
-  <line x1="230" y1="485" x2="251.5" y2="470.5" stroke="#1f2933" stroke-width="2" stroke-linecap="round"/>
-  <line x1="230" y1="473" x2="208.5" y2="458.5" stroke="#1f2933" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="230" cy="461" r="24" fill="#2b8a3e" fill-opacity="0.85"/>
-  <circle cx="212" cy="479" r="19" fill="#2b8a3e" fill-opacity="0.85"/>
-  <circle cx="248" cy="476.5" r="20.5" fill="#2b8a3e" fill-opacity="0.85"/>
-  <circle cx="230" cy="488.5" r="18" fill="#2b8a3e" fill-opacity="0.85"/>
-  <rect x="466.5" y="455" width="7" height="120" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <rect x="466.5" y="560.5" width="3.5" height="2" fill="#1f2933"/>
-  <rect x="470" y="546" width="3.5" height="2" fill="#1f2933"/>
-  <rect x="466.5" y="532" width="3.5" height="2" fill="#1f2933"/>
-  <rect x="470" y="517.5" width="3.5" height="2" fill="#1f2933"/>
-  <rect x="466.5" y="503" width="3.5" height="2" fill="#1f2933"/>
-  <rect x="470" y="488.5" width="3.5" height="2" fill="#1f2933"/>
-  <rect x="466.5" y="474" width="3.5" height="2" fill="#1f2933"/>
-  <line x1="470" y1="500.5" x2="448.5" y2="486" stroke="#1f2933" stroke-width="2" stroke-linecap="round"/>
-  <line x1="470" y1="485" x2="491.5" y2="470.5" stroke="#1f2933" stroke-width="2" stroke-linecap="round"/>
-  <line x1="470" y1="473" x2="448.5" y2="458.5" stroke="#1f2933" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="470" cy="461" r="24" fill="#2b8a3e" fill-opacity="0.85"/>
-  <circle cx="452" cy="479" r="19" fill="#2b8a3e" fill-opacity="0.85"/>
-  <circle cx="488" cy="476.5" r="20.5" fill="#2b8a3e" fill-opacity="0.85"/>
-  <circle cx="470" cy="488.5" r="18" fill="#2b8a3e" fill-opacity="0.85"/>
-  <rect x="716.5" y="455" width="7" height="120" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <rect x="716.5" y="560.5" width="3.5" height="2" fill="#1f2933"/>
-  <rect x="720" y="546" width="3.5" height="2" fill="#1f2933"/>
-  <rect x="716.5" y="532" width="3.5" height="2" fill="#1f2933"/>
-  <rect x="720" y="517.5" width="3.5" height="2" fill="#1f2933"/>
-  <rect x="716.5" y="503" width="3.5" height="2" fill="#1f2933"/>
-  <rect x="720" y="488.5" width="3.5" height="2" fill="#1f2933"/>
-  <rect x="716.5" y="474" width="3.5" height="2" fill="#1f2933"/>
-  <line x1="720" y1="500.5" x2="698.5" y2="486" stroke="#1f2933" stroke-width="2" stroke-linecap="round"/>
-  <line x1="720" y1="485" x2="741.5" y2="470.5" stroke="#1f2933" stroke-width="2" stroke-linecap="round"/>
-  <line x1="720" y1="473" x2="698.5" y2="458.5" stroke="#1f2933" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="720" cy="461" r="24" fill="#2b8a3e" fill-opacity="0.85"/>
-  <circle cx="702" cy="479" r="19" fill="#2b8a3e" fill-opacity="0.85"/>
-  <circle cx="738" cy="476.5" r="20.5" fill="#2b8a3e" fill-opacity="0.85"/>
-  <circle cx="720" cy="488.5" r="18" fill="#2b8a3e" fill-opacity="0.85"/>
+  <image href="pics/fy7/fy7-7-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Key idea
@@ -164,41 +12,13 @@
 In the chapter *Electromagnetic induction* a voltage was induced in a coil when the magnetic flux through it changed. A **generator** produces the change in flux by rotation: a coil is turned between the poles of a magnet. When the plane of the coil is perpendicular to the field, the greatest number of field lines pass through the coil and the flux is at its greatest, $\Phi = BA$. After a quarter of a turn the plane of the coil is parallel to the field, and not a single field line passes through it: the flux is zero. After the next quarter the field passes through the coil perpendicularly again, but from the other side of the coil, so the flux is $-BA$. In a rotating coil the flux thus varies smoothly and continuously between $BA$ and $-BA$.
 
 <svg data-fig="generator" viewBox="0 0 600 360" role="img" aria-label="Schematic picture of an alternating-current generator, not to scale. At the top is the N pole of a magnet and at the bottom the S pole, so the magnetic field points downwards. Between the poles is a copper coil that is rotated about a horizontal axis. The ends of the wire of the coil are connected to two slip rings on the axis. Carbon brushes touch the rings, and wires run from the brushes to a lamp." style="max-width:100%;font-size:24px">
-  <rect x="60" y="26" width="300" height="50" rx="4" fill="#f2a69c" stroke="#1f2933" stroke-width="2.5"/>
+  <image href="pics/fy7/fy7-7-generator.webp" x="0" y="0" width="600" height="370" preserveAspectRatio="none"/>
   <foreignObject x="200" y="36.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{N}$</div></foreignObject>
-  <rect x="60" y="294" width="300" height="50" rx="4" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="200" y="304.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{S}$</div></foreignObject>
-  <line x1="82" y1="84" x2="82" y2="274" stroke="#2b8a3e" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M82,286 L76,273 L88,273 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <line x1="338" y1="84" x2="338" y2="274" stroke="#2b8a3e" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M338,286 L332,273 L344,273 Z" fill="#2b8a3e" stroke-linejoin="round"/>
   <foreignObject x="348" y="135.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
-  <path d="M130,116 L306,116 L290,254 L114,254 Z" fill="none" stroke="#b8622d" stroke-width="4" stroke-linejoin="round"/>
-  <path d="M137,123 L299,123 L283,247 L121,247 Z" fill="none" stroke="#b8622d" stroke-width="4" stroke-linejoin="round"/>
   <foreignObject x="165" y="171.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{coil}$</div></foreignObject>
-  <line x1="54" y1="185" x2="118" y2="185" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M64,154 A12,32 0 1 0 74,214" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M74,222 L68,208 L80,209 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="300" y1="185" x2="456" y2="185" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
-  <line x1="298" y1="179" x2="404" y2="179" stroke="#b8622d" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="298" y1="191" x2="434" y2="191" stroke="#b8622d" stroke-width="2.5" stroke-linecap="butt"/>
-  <ellipse cx="410" cy="185" rx="9" ry="26" fill="#b8622d" stroke="#1f2933" stroke-width="2"/>
-  <ellipse cx="440" cy="185" rx="9" ry="26" fill="#b8622d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="402" y="211" width="16" height="20" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="432" y="139" width="16" height="20" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <path d="M440,139 V122 H497 V172" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M410,231 V248 H497 V198" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <rect x="488" y="172" width="20" height="26" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <line x1="553" y1="157.5" x2="564.5" y2="143.5" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
-  <line x1="564" y1="172.5" x2="580.5" y2="166.5" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
-  <line x1="565.5" y1="191.5" x2="583" y2="194.5" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
-  <line x1="557.5" y1="208" x2="571.5" y2="219.5" stroke="#e8590c" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="530" cy="185" r="24" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M518,185 q6,-10 12,0 t12,0" fill="none" stroke="#e8590c" stroke-width="2" stroke-linejoin="round"/>
   <foreignObject x="365" y="81.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{brushes}$</div></foreignObject>
-  <line x1="440" y1="112" x2="440" y2="136" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="372" y="267.5" width="160" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{slip rings}$</div></foreignObject>
-  <line x1="425" y1="266" x2="425" y2="215" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
 <figure class="unit-photo"><img src="pics/fy7/bicycle-dynamo.webp" alt="The front wheel of a bicycle and a round headlamp; a small silver bottle dynamo is pressed against the tyre."><figcaption>A bicycle dynamo is a small generator. The spindle turned by the tyre rotates a permanent magnet inside a coil. The coil stays still, but the magnetic flux through it changes, so an alternating voltage is induced in it.</figcaption></figure>
@@ -330,37 +150,13 @@ The frequency of the voltage is the same as the rotation frequency, $20\,\text{H
 The peak value is obtained from the voltage of a moving conductor, $e = vBl$ (chapter *Electromagnetic induction*). The two sides of a rectangular coil, of length $l$, circle the axis at a radius $b : 2$, where $b$ is the width of the coil. The speed of the sides is $v = 2\pi f \cdot b : 2 = \pi f b$. Only the component of the velocity perpendicular to the field, $v \sin\theta$, contributes to the voltage, where $\theta$ is the angle between the velocity and the field. A voltage $B l v \sin\theta$ is induced in each side, and the voltages of the sides add up in a turn. In one turn the voltage is therefore $2 B l \cdot \pi f b \sin\theta = BA \cdot 2\pi f \sin\theta$, because $lb = A$, and in $N$ turns it is $N$ times as large. When $\theta = 90^\circ$, the plane of the coil is parallel to the field and the voltage is at its peak value $e_0 = NBA \cdot 2\pi f$. Doubling the rotation frequency doubles both the frequency and the peak value of the voltage, because the sides move twice as fast.
 
 <svg data-fig="derive" viewBox="0 0 600 360" role="img" aria-label="Schematic picture, not to scale: the coil is seen along the axis. Horizontal green field lines point to the right. The plane of the coil is tilted, and its two sides, of length l, perpendicular to the paper, are shown as circles: the current in the lower right side goes into the paper and in the upper left side out of the paper. The velocities of the sides, blue arrows, are perpendicular to the plane of the coil and in opposite directions. The angle between the velocity of the right-hand side and the field is theta, and the component v sin theta of the velocity perpendicular to the field is drawn with a dashed line. The width of the coil is b." style="max-width:100%;font-size:24px">
-  <line x1="24" y1="40" x2="576" y2="40" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M548,40 l-14,-7 v14 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <line x1="24" y1="110" x2="576" y2="110" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M548,110 l-14,-7 v14 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <line x1="24" y1="180" x2="576" y2="180" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M548,180 l-14,-7 v14 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <line x1="24" y1="250" x2="576" y2="250" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M548,250 l-14,-7 v14 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <line x1="24" y1="320" x2="576" y2="320" stroke="#2b8a3e" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M548,320 l-14,-7 v14 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <foreignObject x="527" y="3.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\overline{B}$</span></div></foreignObject>
-  <line x1="153.5" y1="115.5" x2="306.5" y2="244.5" stroke="#b8622d" stroke-width="6" stroke-linecap="round"/>
-  <circle cx="230" cy="180" r="6" fill="#1f2933"/>
+  <image href="pics/fy7/fy7-7-derive.webp" x="-1.3" y="-1.3" width="603" height="370.6" preserveAspectRatio="none"/>
+  <foreignObject x="527" y="3.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
   <foreignObject x="180" y="173.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$b$</span></div></foreignObject>
-  <line x1="317" y1="232" x2="385.5" y2="150" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M394,140 L390,155 L380,147 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <line x1="143" y1="128" x2="74.5" y2="210" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M66,220 L70,205 L80,213 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <foreignObject x="404" y="119.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\overline{v}$</span></div></foreignObject>
-  <foreignObject x="23" y="209.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\overline{v}$</span></div></foreignObject>
-  <line x1="317" y1="232" x2="467" y2="232" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <path d="M387,232 A70,70 0 0 0 362,178.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="404" y="119.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
+  <foreignObject x="23" y="209.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
   <foreignObject x="350.5" y="197" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\theta$</div></foreignObject>
-  <line x1="394" y1="232" x2="394" y2="150" stroke="#1971c2" stroke-width="2.5" stroke-dasharray="7 5"/>
-  <path d="M394,140 L388,152 L400,152 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <foreignObject x="406" y="185.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$v\sin\theta$</span></div></foreignObject>
-  <circle cx="306.5" cy="244.5" r="14" fill="#ffffff" stroke="#7048e8" stroke-width="2.5"/>
-  <line x1="299" y1="236.5" x2="314.5" y2="252" stroke="#7048e8" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="314.5" y1="236.5" x2="299" y2="252" stroke="#7048e8" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="153.5" cy="115.5" r="14" fill="#ffffff" stroke="#7048e8" stroke-width="2.5"/>
-  <circle cx="153.5" cy="115.5" r="4.48" fill="#7048e8"/>
+  <foreignObject x="406" y="185.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$v\sin\theta$</div></foreignObject>
   <foreignObject x="264.5" y="250" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$I$</span></div></foreignObject>
 </svg>
 
@@ -468,57 +264,5 @@ Many think that the voltage is greatest when the most field lines pass through t
 - The rotor of a wind turbine turns the generator, and a frequency converter matches the voltage to the frequency of the grid.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Illustration: a cyclist rides in the evening dusk. In the hub of the front wheel is a dynamo that gives the lamp an alternating voltage, and the beam of the lamp lights the road in front of the bicycle." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy77s-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f2933"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy77s-road" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6c757d"/><stop offset="1" stop-color="#1f2933"/></linearGradient></defs>
-  <rect x="0" y="0" width="600" height="360" fill="url(#fy77s-sky)"/>
-  <path d="M0,250 L11,226 L22,250 L34,223 L46,250 L57.5,224.5 L69,250 L86.5,205 L104.5,250 L116.5,222 L129,250 L141,222.5 L153.5,250 L170,209 L186.5,250 L205.5,202 L224.5,250 L241,209 L257.5,250 L277,200.5 L296,250 L314.5,203.5 L332.5,250 L348,213 L363,250 L382,202 L401,250 L416,213 L431.5,250 L444.5,218.5 L458,250 L474.5,208.5 L491.5,250 L506.5,212.5 L522,250 L537,214.5 L551.5,250 L562.5,226.5 L573,250 L592,202.5 L610.5,250 V290 H0 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <rect x="0" y="286" width="600" height="74" fill="url(#fy77s-road)"/>
-  <path d="M410,214 L600,250 L600,330 Z" fill="#ffc078" fill-opacity="0.55"/>
-  <circle cx="200" cy="286" r="52" fill="none" stroke="#1f2933" stroke-width="7.8"/>
-  <circle cx="200" cy="286" r="46.8" fill="none" stroke="#8a96a3" stroke-width="2"/>
-  <line x1="200" y1="286" x2="244.5" y2="286" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="200" y1="286" x2="238.5" y2="308.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="200" y1="286" x2="222.5" y2="324.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="200" y1="286" x2="200" y2="330.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="200" y1="286" x2="177.5" y2="324.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="200" y1="286" x2="161.5" y2="308.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="200" y1="286" x2="155.5" y2="286" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="200" y1="286" x2="161.5" y2="263.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="200" y1="286" x2="177.5" y2="247.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="200" y1="286" x2="200" y2="241.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="200" y1="286" x2="222.5" y2="247.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="200" y1="286" x2="238.5" y2="263.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <circle cx="200" cy="286" r="4.68" fill="#1f2933"/>
-  <circle cx="380" cy="286" r="52" fill="none" stroke="#1f2933" stroke-width="7.8"/>
-  <circle cx="380" cy="286" r="46.8" fill="none" stroke="#8a96a3" stroke-width="2"/>
-  <line x1="380" y1="286" x2="424.5" y2="286" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="380" y1="286" x2="418.5" y2="308.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="380" y1="286" x2="402.5" y2="324.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="380" y1="286" x2="380" y2="330.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="380" y1="286" x2="357.5" y2="324.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="380" y1="286" x2="341.5" y2="308.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="380" y1="286" x2="335.5" y2="286" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="380" y1="286" x2="341.5" y2="263.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="380" y1="286" x2="357.5" y2="247.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="380" y1="286" x2="380" y2="241.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="380" y1="286" x2="402.5" y2="247.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="380" y1="286" x2="418.5" y2="263.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <circle cx="380" cy="286" r="4.68" fill="#1f2933"/>
-  <path d="M200,286 L265,286 L342,210.5 L252,210.5 Z" fill="none" stroke="#c92a2a" stroke-width="6.24" stroke-linejoin="round" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M265,286 L250.5,190.5" fill="none" stroke="#c92a2a" stroke-width="6.24" stroke-linejoin="round" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M342,210.5 L380,286" fill="none" stroke="#c92a2a" stroke-width="6.24" stroke-linejoin="round" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M342,210.5 L337,190.5" fill="none" stroke="#c92a2a" stroke-width="6.24" stroke-linejoin="round" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M229,190.5 H256" fill="none" stroke="#1f2933" stroke-width="7.8" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M324,192.5 Q337,185 353,192.5" fill="none" stroke="#1f2933" stroke-width="5.2" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="265" cy="286" r="10.4" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <path d="M243,183.5 L283,205 L275.5,297" fill="none" stroke="#1f2933" stroke-width="13.5" stroke-linejoin="round" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M268.5,300.5 h14.5" fill="none" stroke="#6c757d" stroke-width="8.1" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M238,187 L297,129.5" fill="none" stroke="#d0e6fb" stroke-width="19.8" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M297,129.5 L337,189" fill="none" stroke="#d0e6fb" stroke-width="10.8" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="337" cy="189" r="5.4" fill="#f1dfb5"/>
-  <circle cx="315" cy="115" r="13.5" fill="#f1dfb5"/>
-  <path d="M299,114 Q304.5,95 322.5,98 Q333,102.5 330.5,111.5 Z" fill="#e8590c" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="392" y="206" width="22" height="16" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="414" cy="214" r="6" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="380" cy="286" r="11" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="382" y1="280" x2="400" y2="222" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <image href="pics/fy7/fy7-7-scene.webp" x="0" y="0" width="600" height="360" preserveAspectRatio="none"/>
 </svg>

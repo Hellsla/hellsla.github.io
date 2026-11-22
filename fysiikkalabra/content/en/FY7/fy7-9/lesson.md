@@ -3,152 +3,7 @@
 > **Why** does an iron bar heated in a forge glow first red and then more and more yellow, and why can a thermal camera see a person even in pitch darkness?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: in a dim smithy the embers of a forge glow. A long iron bar extends from the forge towards an anvil on the right. The hot end of the bar in the embers is almost white, and further away the bar glows yellow, orange and red, until the cold end on the anvil is dark grey. Heat shimmers above the hot part of the bar." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy79h-wall" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="470"><stop offset="0" stop-color="#1f2933"/><stop offset="1" stop-color="#6c757d"/></linearGradient><linearGradient id="fy79h-floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><radialGradient id="fy79h-halo" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffc078"/><stop offset="0.55" stop-color="#e8590c" stop-opacity="0.8"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient><radialGradient id="fy79h-rodglow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffc078"/><stop offset="0.55" stop-color="#e8590c" stop-opacity="0.8"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient><linearGradient id="fy79h-rodg" gradientUnits="userSpaceOnUse" x1="470" y1="0" x2="1050" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="0.14" stop-color="#ffc078"/><stop offset="0.3" stop-color="#e8590c"/><stop offset="0.46" stop-color="#c92a2a"/><stop offset="0.62" stop-color="#6c757d"/><stop offset="1" stop-color="#6c757d"/></linearGradient><radialGradient id="fy79h-coal" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffc078"/><stop offset="0.55" stop-color="#e8590c" stop-opacity="0.8"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient><linearGradient id="fy79h-handle" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#a97a35"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#fy79h-wall)"/>
-  <line x1="0" y1="40" x2="1200" y2="40" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="60" y1="40" x2="60" y2="90" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="180" y1="40" x2="180" y2="90" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="300" y1="40" x2="300" y2="90" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="420" y1="40" x2="420" y2="90" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="540" y1="40" x2="540" y2="90" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="660" y1="40" x2="660" y2="90" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="780" y1="40" x2="780" y2="90" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="900" y1="40" x2="900" y2="90" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1020" y1="40" x2="1020" y2="90" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1140" y1="40" x2="1140" y2="90" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="90" x2="1200" y2="90" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="90" x2="0" y2="140" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="120" y1="90" x2="120" y2="140" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="240" y1="90" x2="240" y2="140" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="360" y1="90" x2="360" y2="140" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="480" y1="90" x2="480" y2="140" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="600" y1="90" x2="600" y2="140" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="720" y1="90" x2="720" y2="140" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="840" y1="90" x2="840" y2="140" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="960" y1="90" x2="960" y2="140" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1080" y1="90" x2="1080" y2="140" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="140" x2="1200" y2="140" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="60" y1="140" x2="60" y2="190" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="180" y1="140" x2="180" y2="190" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="300" y1="140" x2="300" y2="190" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="420" y1="140" x2="420" y2="190" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="540" y1="140" x2="540" y2="190" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="660" y1="140" x2="660" y2="190" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="780" y1="140" x2="780" y2="190" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="900" y1="140" x2="900" y2="190" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1020" y1="140" x2="1020" y2="190" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1140" y1="140" x2="1140" y2="190" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="190" x2="1200" y2="190" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="190" x2="0" y2="240" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="120" y1="190" x2="120" y2="240" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="240" y1="190" x2="240" y2="240" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="360" y1="190" x2="360" y2="240" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="480" y1="190" x2="480" y2="240" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="600" y1="190" x2="600" y2="240" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="720" y1="190" x2="720" y2="240" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="840" y1="190" x2="840" y2="240" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="960" y1="190" x2="960" y2="240" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1080" y1="190" x2="1080" y2="240" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="240" x2="1200" y2="240" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="60" y1="240" x2="60" y2="290" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="180" y1="240" x2="180" y2="290" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="300" y1="240" x2="300" y2="290" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="420" y1="240" x2="420" y2="290" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="540" y1="240" x2="540" y2="290" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="660" y1="240" x2="660" y2="290" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="780" y1="240" x2="780" y2="290" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="900" y1="240" x2="900" y2="290" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1020" y1="240" x2="1020" y2="290" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1140" y1="240" x2="1140" y2="290" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="290" x2="1200" y2="290" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="290" x2="0" y2="340" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="120" y1="290" x2="120" y2="340" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="240" y1="290" x2="240" y2="340" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="360" y1="290" x2="360" y2="340" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="480" y1="290" x2="480" y2="340" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="600" y1="290" x2="600" y2="340" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="720" y1="290" x2="720" y2="340" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="840" y1="290" x2="840" y2="340" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="960" y1="290" x2="960" y2="340" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1080" y1="290" x2="1080" y2="340" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="340" x2="1200" y2="340" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="60" y1="340" x2="60" y2="390" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="180" y1="340" x2="180" y2="390" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="300" y1="340" x2="300" y2="390" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="420" y1="340" x2="420" y2="390" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="540" y1="340" x2="540" y2="390" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="660" y1="340" x2="660" y2="390" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="780" y1="340" x2="780" y2="390" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="900" y1="340" x2="900" y2="390" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1020" y1="340" x2="1020" y2="390" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1140" y1="340" x2="1140" y2="390" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="390" x2="1200" y2="390" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="390" x2="0" y2="440" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="120" y1="390" x2="120" y2="440" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="240" y1="390" x2="240" y2="440" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="360" y1="390" x2="360" y2="440" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="480" y1="390" x2="480" y2="440" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="600" y1="390" x2="600" y2="440" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="720" y1="390" x2="720" y2="440" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="840" y1="390" x2="840" y2="440" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="960" y1="390" x2="960" y2="440" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1080" y1="390" x2="1080" y2="440" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="0" y="440" width="1200" height="160" fill="url(#fy79h-floor)"/>
-  <ellipse cx="540" cy="300" rx="380" ry="230" fill="url(#fy79h-halo)" fill-opacity="0.5"/>
-  <path d="M190,210 L240,90 H440 L490,210 Z" fill="#6c757d" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="300" y="0" width="80" height="92" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <rect x="180" y="300" width="320" height="170" rx="4" fill="#b8622d" stroke="#1f2933" stroke-width="3"/>
-  <line x1="180" y1="342" x2="500" y2="342" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="180" y1="384" x2="500" y2="384" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="180" y1="426" x2="500" y2="426" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="220" y1="300" x2="220" y2="342" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="300" y1="300" x2="300" y2="342" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="380" y1="300" x2="380" y2="342" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="460" y1="300" x2="460" y2="342" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="260" y1="342" x2="260" y2="384" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="340" y1="342" x2="340" y2="384" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="420" y1="342" x2="420" y2="384" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="220" y1="384" x2="220" y2="426" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="300" y1="384" x2="300" y2="426" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="380" y1="384" x2="380" y2="426" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="460" y1="384" x2="460" y2="426" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="260" y1="426" x2="260" y2="468" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="340" y1="426" x2="340" y2="468" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="420" y1="426" x2="420" y2="468" stroke="#a97a35" stroke-width="2" stroke-linecap="butt"/>
-  <ellipse cx="620" cy="292" rx="190" ry="70" fill="url(#fy79h-rodglow)" fill-opacity="0.7"/>
-  <path d="M330,268 L1050,312 L1048,340 L328,296 Z" fill="url(#fy79h-rodg)" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M190,300 Q340,250 490,300 Z" fill="#e8590c" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <circle cx="205.5" cy="295.5" r="10.4743" fill="#1f2933" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="224" cy="294.5" r="11.6728" fill="#6c757d" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="241.5" cy="293" r="9.32446" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="262.5" cy="288" r="9.21742" fill="#1f2933" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="279" cy="286.5" r="9.94844" fill="#6c757d" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="298.5" cy="284.5" r="10.6465" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="315.5" cy="287.5" r="10.2054" fill="#1f2933" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="330.5" cy="283.5" r="10.4744" fill="#6c757d" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="352" cy="286.5" r="10.5941" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="366.5" cy="285" r="11.4412" fill="#1f2933" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="385.5" cy="287.5" r="10.2341" fill="#6c757d" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="405.5" cy="289.5" r="11.0652" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="423" cy="290" r="11.4097" fill="#1f2933" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="438.5" cy="290.5" r="11.3654" fill="#6c757d" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="456.5" cy="293.5" r="12.4449" fill="#c92a2a" stroke="#1f2933" stroke-width="1.5"/>
-  <circle cx="475" cy="297.5" r="11.8546" fill="#1f2933" stroke="#1f2933" stroke-width="1.5"/>
-  <ellipse cx="340" cy="286" rx="140" ry="32" fill="url(#fy79h-coal)" fill-opacity="0.85"/>
-  <circle cx="427" cy="220" r="3" fill="#ffc078"/>
-  <circle cx="325.5" cy="246.5" r="3" fill="#ffc078"/>
-  <circle cx="346.5" cy="217.5" r="3" fill="#ffc078"/>
-  <circle cx="361.5" cy="249.5" r="3" fill="#ffc078"/>
-  <circle cx="297" cy="250" r="3" fill="#ffc078"/>
-  <circle cx="374.5" cy="259" r="3" fill="#ffc078"/>
-  <circle cx="331.5" cy="222.5" r="3" fill="#ffc078"/>
-  <path d="M560,262 q-12,-15 0,-30 t0,-30 t0,-30" fill="none" stroke="#ffc078" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
-  <path d="M620,262 q-12,-15 0,-30 t0,-30 t0,-30" fill="none" stroke="#ffc078" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
-  <path d="M680,262 q-12,-15 0,-30 t0,-30 t0,-30" fill="none" stroke="#ffc078" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
-  <path d="M740,262 q-12,-15 0,-30 t0,-30 t0,-30" fill="none" stroke="#ffc078" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
-  <path d="M900,340 H1120 Q1120,362 1090,368 L1060,372 V410 L1090,470 H930 L960,410 V372 L930,366 Q880,356 860,340 Z" fill="#6c757d" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="1112" y="326" width="76" height="12" rx="6" fill="url(#fy79h-handle)" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="1074" y="310" width="42" height="30" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
+  <image href="pics/fy7/fy7-9-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Key idea
@@ -237,38 +92,11 @@ A charge at rest has an electric field around it that does not change. The field
 In the antenna of a transmitter, an alternating voltage makes electrons oscillate back and forth. The antenna sends out a wave whose frequency is the same as the frequency of the alternating current (chapter *The generator and alternating current*). A mobile phone and the base station of a wireless network work in the same way. In the antenna of a receiver, the electric field of the incoming wave moves electrons, and a weak alternating current appears in the antenna.
 
 <svg data-fig="antenna" viewBox="0 0 600 340" role="img" aria-label="Schematic figure, not to scale: a vertical rod antenna whose two metal rods are connected at the middle to an alternating-voltage source. A violet arrow beside the rods shows that at this instant the current flows upwards; half a period later it flows downwards. Arcs leave the antenna towards the right, representing the crests of the travelling wave. Brown arrows on the horizontal axis show the electric field, which is parallel to the antenna and changes direction every half wavelength. The distance between two crests in the same direction is the wavelength lambda." style="max-width:100%;font-size:24px">
-  <path d="M149.5,72.5 A105,105 0 0 1 149.5,267.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="8 6"/>
-  <path d="M268.5,32 A210,210 0 0 1 268.5,308" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="8 6"/>
-  <path d="M393,32 A315,315 0 0 1 393,308" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="8 6"/>
-  <path d="M506.5,32 A420,420 0 0 1 506.5,308" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="8 6"/>
-  <line x1="215" y1="170" x2="215" y2="136" stroke="#8a5f22" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M215,124 L221,137 L209,137 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <line x1="320" y1="170" x2="320" y2="204" stroke="#8a5f22" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M320,216 L314,203 L326,203 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <line x1="425" y1="170" x2="425" y2="136" stroke="#8a5f22" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M425,124 L431,137 L419,137 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <line x1="530" y1="170" x2="530" y2="204" stroke="#8a5f22" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M530,216 L524,203 L536,203 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <line x1="124" y1="170" x2="560" y2="170" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 5"/>
+  <image href="pics/fy7/fy7-9-antenna.webp" x="1.2" y="0" width="597" height="349.5" preserveAspectRatio="none"/>
   <foreignObject x="225" y="111.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#8a5f22">$\overline{E}$</div></foreignObject>
-  <rect x="104" y="52" width="12" height="100" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="104" y="188" width="12" height="100" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M104,150 H48 V148" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M104,190 H48 V192" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <circle cx="48" cy="170" r="22" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M35,170 C41.5,155 48,155 48,170 C48,185 54.5,185 61,170" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <line x1="132" y1="140" x2="132" y2="78" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M132,66 L138,79 L126,79 Z" fill="#7048e8" stroke-linejoin="round"/>
-  <line x1="132" y1="274" x2="132" y2="212" stroke="#7048e8" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M132,200 L138,213 L126,213 Z" fill="#7048e8" stroke-linejoin="round"/>
   <foreignObject x="146" y="89.5" width="24" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
   <foreignObject x="124" y="15.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{antenna}$</div></foreignObject>
-  <line x1="215" y1="276" x2="425" y2="276" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="215" y1="268" x2="215" y2="284" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="425" y1="268" x2="425" y2="284" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="303" y="285.5" width="34" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\lambda$</div></foreignObject>
-  <line x1="486" y1="52" x2="551" y2="52" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M566,52 L550,59 L550,45 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="440" y="37.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$c$</div></foreignObject>
 </svg>
 

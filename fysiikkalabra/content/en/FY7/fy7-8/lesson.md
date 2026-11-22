@@ -3,87 +3,7 @@
 > **Why** is electricity carried from a power plant to a city at a voltage of $400\,\text{kV}$, when the voltage at a socket at home is only $230\,\text{V}$?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: on the left, beside a river, a power plant and its transformer, from which a long power line leaves. Large lattice pylons carry the conductors over fields and forest towards a city seen far away on the right, where lights are on in the windows." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy78h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy78h-field" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#e9c98a"/></linearGradient><linearGradient id="fy78h-river" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#fy78h-sky)"/>
-  <path d="M0,380 Q100,360 200,378.5 Q300,355.5 400,379.5 Q500,359 600,379 Q700,341 800,382.5 Q900,349.5 1000,380.5 Q1100,341 1200,382.5 Q1300,347.5 1400,381 V600 H0 Z" fill="#d0e6fb" stroke-linejoin="round"/>
-  <path d="M0,407 Q100,386.5 200,405.5 Q300,373 400,409 Q500,376 600,407 Q700,391 800,404 Q900,393 1000,404.5 Q1100,389 1200,405.5 Q1300,380.5 1400,410 V600 H0 Z" fill="#b2f2bb" stroke-linejoin="round"/>
-  <rect x="0" y="430" width="1200" height="170" fill="url(#fy78h-field)"/>
-  <path d="M0,430 L10.5,401.5 L21.5,430 L37,385 L52.5,430 L66,392.5 L79,430 L88.5,406.5 L98,430 L108,404.5 L118,430 L129,400 L140,430 L157,380.5 L173.5,430 L186,395.5 L198.5,430 L207.5,407.5 L216.5,430 L229.5,394 L242.5,430 L256.5,391.5 L270,430 L284.5,387 L299.5,430 L313.5,390 L327.5,430 L337,407 L346,430 L358.5,396 L371,430 L382.5,398 L394.5,430 L405.5,401 L416.5,430 L429.5,394.5 L442,430 L453.5,398.5 L465.5,430 L481.5,383 L497.5,430 L513,385 L528.5,430 L541,395.5 L553.5,430 L570,381 L586.5,430 L599,395.5 L611.5,430 L626.5,386 L642,430 L654.5,395 L667,430 L684,380.5 L700.5,430 L712.5,396.5 L725,430 L738.5,392.5 L752,430 L765,392 L778.5,430 L789.5,401 L800.5,430 L813,396.5 L825,430 L842,380.5 L858.5,430 L867.5,407.5 L877,430 L892.5,384.5 L908,430 L922,390 L936.5,430 L951,387 L966,430 L977,400.5 L988.5,430 L1002,392 L1015.5,430 L1026,401.5 L1037,430 L1052.5,385 L1068,430 L1080.5,395 L1093,430 L1106.5,391.5 L1120.5,430 L1132,399 L1143.5,430 L1153.5,403.5 L1164,430 L1180,383.5 L1196,430 L1210,389 L1224.5,430 V442 H0 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <path d="M0,520 C120,500 180,470 260,440 L300,440 C230,480 160,540 80,600 L0,600 Z" fill="url(#fy78h-river)" stroke-linejoin="round"/>
-  <rect x="70" y="300" width="200" height="140" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
-  <path d="M60,300 L170,250 L280,300 Z" fill="#6c757d" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="90" y="330" width="26" height="40" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="134" y="330" width="26" height="40" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="178" y="330" width="26" height="40" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="222" y="330" width="26" height="40" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="290" y="380" width="70" height="60" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <rect x="298" y="362" width="10" height="20" rx="3" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <rect x="318" y="362" width="10" height="20" rx="3" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <rect x="338" y="362" width="10" height="20" rx="3" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <path d="M422.5,440 L461.5,140 H478.5 L517.5,440" fill="none" stroke="#6c757d" stroke-width="4.2" stroke-linejoin="round"/>
-  <line x1="422.5" y1="440" x2="510" y2="380" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
-  <line x1="517.5" y1="440" x2="430" y2="380" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
-  <line x1="430" y1="380" x2="502" y2="320" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
-  <line x1="510" y1="380" x2="438" y2="320" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
-  <line x1="438" y1="320" x2="494" y2="260" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
-  <line x1="502" y1="320" x2="446" y2="260" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
-  <line x1="446" y1="260" x2="486" y2="200" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
-  <line x1="494" y1="260" x2="454" y2="200" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
-  <line x1="397" y1="200" x2="543" y2="200" stroke="#6c757d" stroke-width="4.2" stroke-linecap="butt"/>
-  <line x1="397" y1="200" x2="397" y2="219.5" stroke="#1f2933" stroke-width="2.8" stroke-linecap="butt"/>
-  <line x1="543" y1="200" x2="543" y2="219.5" stroke="#1f2933" stroke-width="2.8" stroke-linecap="butt"/>
-  <line x1="422.5" y1="140" x2="517.5" y2="140" stroke="#6c757d" stroke-width="4.2" stroke-linecap="butt"/>
-  <line x1="422.5" y1="140" x2="422.5" y2="159.5" stroke="#1f2933" stroke-width="2.8" stroke-linecap="butt"/>
-  <line x1="517.5" y1="140" x2="517.5" y2="159.5" stroke="#1f2933" stroke-width="2.8" stroke-linecap="butt"/>
-  <path d="M686,430 L714,220 H726 L754,430" fill="none" stroke="#6c757d" stroke-width="3" stroke-linejoin="round"/>
-  <line x1="686" y1="430" x2="748.5" y2="388" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="754" y1="430" x2="691.5" y2="388" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="691.5" y1="388" x2="743" y2="346" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="748.5" y1="388" x2="697" y2="346" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="697" y1="346" x2="737" y2="304" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="743" y1="346" x2="703" y2="304" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="703" y1="304" x2="731.5" y2="262" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="737" y1="304" x2="708.5" y2="262" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="668" y1="262" x2="772" y2="262" stroke="#6c757d" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="668" y1="262" x2="668" y2="276" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="772" y1="262" x2="772" y2="276" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="686" y1="220" x2="754" y2="220" stroke="#6c757d" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="686" y1="220" x2="686" y2="234" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="754" y1="220" x2="754" y2="234" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M896,424 L916,284 H924 L944,424" fill="none" stroke="#6c757d" stroke-width="2.1" stroke-linejoin="round"/>
-  <line x1="896" y1="424" x2="940" y2="396" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
-  <line x1="944" y1="424" x2="900" y2="396" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
-  <line x1="900" y1="396" x2="936" y2="368" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
-  <line x1="940" y1="396" x2="904" y2="368" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
-  <line x1="904" y1="368" x2="932" y2="340" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
-  <line x1="936" y1="368" x2="908" y2="340" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
-  <line x1="908" y1="340" x2="928" y2="312" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
-  <line x1="932" y1="340" x2="912" y2="312" stroke="#6c757d" stroke-width="1.05" stroke-linecap="butt"/>
-  <line x1="883.5" y1="312" x2="956.5" y2="312" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
-  <line x1="883.5" y1="312" x2="883.5" y2="322" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
-  <line x1="956.5" y1="312" x2="956.5" y2="322" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
-  <line x1="896" y1="284" x2="944" y2="284" stroke="#6c757d" stroke-width="2.1" stroke-linecap="butt"/>
-  <line x1="896" y1="284" x2="896" y2="294" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
-  <line x1="944" y1="284" x2="944" y2="294" stroke="#1f2933" stroke-width="1.4" stroke-linecap="butt"/>
-  <path d="M360,370 Q378.5,309 397,219.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M397,219.5 Q532.5,274 668,276" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M543,219.5 Q657.5,274 772,276" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M422.5,159.5 Q554,223 686,234" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M517.5,159.5 Q636,223 754,234" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M668,276 Q776,325 883.5,322" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M772,276 Q864,325 956.5,322" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M686,234 Q791,290 896,294" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M754,234 Q849,290 944,294" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <rect x="1010" y="374" width="60" height="50" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="1022" y="386" width="14" height="14" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="1046" y="386" width="14" height="14" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="1080" y="354" width="50" height="70" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="1092" y="366" width="14" height="14" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="1106" y="366" width="14" height="14" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="1135" y="380" width="50" height="44" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="1147" y="392" width="14" height="14" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="1161" y="392" width="14" height="14" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <path d="M883.5,322 Q947,371 1010,400" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <image href="pics/fy7/fy7-8-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Key idea
@@ -92,45 +12,11 @@
 A transformer has a closed iron core and two coils wound around it. An alternating voltage is connected to the **primary coil**, and the voltage for the device is taken from the **secondary coil**. The coils do not touch each other, and no current flows between them along a conductor. The alternating current of the primary coil produces in the iron core a magnetic field whose magnitude and direction vary in step with the current. The iron core guides almost the whole magnetic flux around the core and so also through the secondary coil. In the chapter *Electromagnetic induction* we saw that a changing magnetic flux induces a voltage in a coil. Therefore an alternating voltage is produced in the secondary coil, with the same frequency as the primary voltage.
 
 <svg data-fig="transformer" viewBox="0 0 600 360" role="img" aria-label="Schematic picture of a transformer, not to scale. A primary coil with more turns is wound on the left limb of a closed iron core, and a secondary coil with fewer turns on the right limb. The primary coil is connected to an alternating voltage source whose voltage is U1, and the secondary coil to a lamp whose voltage is U2. A green dashed line with arrows circles inside the iron core: the changing magnetic flux produced by the primary current also passes along the core through the secondary coil." style="max-width:100%;font-size:24px">
-  <path d="M150,60 H450 V300 H150 Z M200,110 V250 H400 V110 Z" fill="#6c757d" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round" fill-rule="evenodd"/>
-  <path d="M160,70 H440 V290 H160 Z" fill="none" stroke="#8a96a3" stroke-width="1" stroke-linejoin="round"/>
-  <path d="M170,80 H430 V280 H170 Z" fill="none" stroke="#8a96a3" stroke-width="1" stroke-linejoin="round"/>
-  <path d="M180,90 H420 V270 H180 Z" fill="none" stroke="#8a96a3" stroke-width="1" stroke-linejoin="round"/>
-  <path d="M190,100 H410 V260 H190 Z" fill="none" stroke="#8a96a3" stroke-width="1" stroke-linejoin="round"/>
-  <path d="M175,85 H425 V275 H175 Z" fill="none" stroke="#2b8a3e" stroke-width="3" stroke-dasharray="9 7"/>
-  <path d="M309,85 L293,92 L293,78 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <path d="M425,189 L418,173 L432,173 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <path d="M291,275 L307,268 L307,282 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <path d="M175,171 L182,187 L168,187 Z" fill="#2b8a3e" stroke-linejoin="round"/>
+  <image href="pics/fy7/fy7-8-transformer.webp" x="1.2" y="1.2" width="597" height="368.2" preserveAspectRatio="none"/>
   <foreignObject x="290" y="19.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$\Phi$</div></foreignObject>
-  <rect x="136" y="124" width="78" height="9" rx="4" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="136" y="139" width="78" height="9" rx="4" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="136" y="154" width="78" height="9" rx="4" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="136" y="169" width="78" height="9" rx="4" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="136" y="184" width="78" height="9" rx="4" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="136" y="199" width="78" height="9" rx="4" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="136" y="214" width="78" height="9" rx="4" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="136" y="229" width="78" height="9" rx="4" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="386" y="146" width="78" height="9" rx="4" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="386" y="166" width="78" height="9" rx="4" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="386" y="186" width="78" height="9" rx="4" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="386" y="206" width="78" height="9" rx="4" fill="#b8622d" stroke="#1f2933" stroke-width="1.5"/>
-  <path d="M136,128 H70 V156" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M136,233 H70 V204" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <circle cx="70" cy="180" r="24" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M55.5,180 C63,163 70,163 70,180 C70,197 77,197 84.5,180" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="-6" y="165.5" width="46" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$U_1$</div></foreignObject>
-  <path d="M464,150 H545 V162" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M464,213 H545 V200" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <circle cx="545" cy="181" r="19" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="533" y1="169" x2="557" y2="193" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="557" y1="169" x2="533" y2="193" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="528.5" y="217.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$U_2$</div></foreignObject>
-  <line x1="112" y1="120" x2="94" y2="120" stroke="#7048e8" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M84,120 L95,115 L95,125 Z" fill="#7048e8" stroke-linejoin="round"/>
   <foreignObject x="81.5" y="83.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I_1$</div></foreignObject>
-  <line x1="488" y1="142" x2="510" y2="142" stroke="#7048e8" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M520,142 L509,147 L509,137 Z" fill="#7048e8" stroke-linejoin="round"/>
   <foreignObject x="487.5" y="105.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I_2$</div></foreignObject>
   <foreignObject x="222" y="165.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$N_1$</div></foreignObject>
   <foreignObject x="345" y="165.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$N_2$</div></foreignObject>
@@ -158,47 +44,14 @@ An ideal transformer does not consume energy, so the power coming into the prima
 A power line has resistance, and the current flowing in the line heats it. The power that becomes internal energy is proportional to the square of the current, so it pays to keep the current small. The same power can be transmitted at a high voltage and a small current. When the voltage is raised tenfold, the current falls to a tenth and the power loss to a hundredth. That is why the voltage of the generator of a power plant is raised with a transformer to **high voltage**. The voltages of the Finnish transmission grid, maintained by Fingrid, are $400\,\text{kV}$, $220\,\text{kV}$ and $110\,\text{kV}$. The losses of the transmission grid correspond to about $2\,\%$ of the electricity used in Finland (Fingrid, *Yhteisillä linjoilla* 2026, data for 2025).
 
 <svg data-fig="grid" viewBox="0 0 640 372" role="img" aria-label="Schematic picture of the power grid as a single-line diagram, not to scale: real three-phase lines have three phase conductors. In the top row the generator voltage of the power plant, 20 kV, is raised by a transformer to 400 kilovolts, and the large pylons of the transmission grid carry the electricity to a substation. At the substation a transformer lowers the voltage, and in the bottom row the small pylons of the distribution network carry the 20 kV voltage to a local substation, which lowers it to the voltage of the low-voltage network: the sockets of homes have 230 volts." style="max-width:100%;font-size:24px">
-  <rect x="60" y="66" width="14" height="40" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="16" y="106" width="64" height="64" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M11,106 H85 L68,90 H28 Z" fill="#6c757d" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <circle cx="48" cy="140" r="16" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="48" cy="140" r="5" fill="#1f2933"/>
-  <line x1="80" y1="150" x2="152" y2="150" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="160" cy="150" r="15" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="176" cy="150" r="15" fill="none" stroke="#1f2933" stroke-width="2.5"/>
+  <image href="pics/fy7/fy7-8-grid.webp" x="0" y="0" width="640" height="382.7" preserveAspectRatio="none"/>
   <foreignObject x="89" y="103.5" width="86" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$20\,\text{kV}$</div></foreignObject>
-  <path d="M250,170 L266,70 H274 L290,170" fill="none" stroke="#6c757d" stroke-width="3" stroke-linejoin="round"/>
-  <line x1="240" y1="80" x2="300" y2="80" stroke="#6c757d" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="260" y1="120" x2="280" y2="140" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="280" y1="120" x2="260" y2="140" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <path d="M360,170 L376,70 H384 L400,170" fill="none" stroke="#6c757d" stroke-width="3" stroke-linejoin="round"/>
-  <line x1="350" y1="80" x2="410" y2="80" stroke="#6c757d" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="370" y1="120" x2="390" y2="140" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="390" y1="120" x2="370" y2="140" stroke="#6c757d" stroke-width="1.5" stroke-linecap="butt"/>
-  <path d="M186,150 Q228,96 270,84 Q325,104 380,84 Q430,100 470,132" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="275" y="29.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$400\,\text{kV}$</div></foreignObject>
   <foreignObject x="221" y="181.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{transmission grid}$</div></foreignObject>
-  <circle cx="480" cy="150" r="15" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="496" cy="150" r="15" fill="none" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="460" y="120" width="56" height="56" rx="4" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-dasharray="5 4"/>
   <foreignObject x="496" y="183.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{substation}$</div></foreignObject>
-  <path d="M488,176 V300 H420" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <rect x="396" y="282" width="8" height="46" fill="#d9b26a" stroke="#1f2933" stroke-width="2"/>
-  <line x1="382" y1="286" x2="418" y2="286" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <rect x="296" y="282" width="8" height="46" fill="#d9b26a" stroke="#1f2933" stroke-width="2"/>
-  <line x1="282" y1="286" x2="318" y2="286" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M420,300 Q410,300 400,286 Q350,302 300,286 Q262,292 232,300" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="307" y="239.5" width="86" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$20\,\text{kV}$</div></foreignObject>
   <foreignObject x="227.5" y="335.5" width="245" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{distribution network}$</div></foreignObject>
-  <rect x="196" y="278" width="36" height="46" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="208.5" cy="300" r="10" fill="#ffffff" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="219.5" cy="300" r="10" fill="none" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="196" y1="300" x2="150" y2="300" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <foreignObject x="141.5" y="233.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{transformer}$</div></foreignObject>
-  <rect x="66" y="272" width="84" height="62" fill="#f1dfb5" stroke="#1f2933" stroke-width="3"/>
-  <path d="M52,272 L108,233.5 L164,272 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="78" y="289.5" width="22" height="18.5" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="114.5" y="297" width="20" height="37" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="51" y="197.5" width="90" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$230\,\text{V}$</div></foreignObject>
 </svg>
 
@@ -210,18 +63,7 @@ At substations, transformers lower the voltage to $110\,\text{kV}$ in the region
 High voltage is not brought into homes, because insulating it requires long insulators and large distances, and touching it would be fatal (chapter *Electrical safety at home and at work*). The charger of a phone lowers the voltage still further to about $5\,\text{V}$. A modern charger first changes the mains voltage to a very high frequency, so that the transformer can be small, and rectifies it at the end. The coils of the charger's transformer do not touch each other, so the phone is not conductively connected to the power grid.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Illustration: a small phone charger is plugged into a wall socket, and its cable leads to a phone on a table, which is charging." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy78s-desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy78s-screen" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#1971c2"/></linearGradient></defs>
-  <rect x="0" y="0" width="600" height="360" fill="#f6f1e6"/>
-  <rect x="0" y="270" width="600" height="90" fill="url(#fy78s-desk)"/>
-  <rect x="120" y="60" width="120" height="120" rx="14" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="180" cy="120" r="42" fill="#e3dccb" stroke="#1f2933" stroke-width="2"/>
-  <rect x="150" y="100" width="60" height="64" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <rect x="166" y="116" width="28" height="8" rx="3" fill="#6c757d"/>
-  <path d="M180,164 C180,240 300,200 330,290" fill="none" stroke="#1f2933" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-  <rect x="300" y="286" width="150" height="54" rx="10" fill="#1f2933"/>
-  <rect x="310" y="292" width="130" height="42" rx="4" fill="url(#fy78s-screen)"/>
-  <rect x="360" y="304" width="30" height="18" rx="2" fill="none" stroke="#ffffff" stroke-width="2"/>
-  <rect x="364" y="308" width="16" height="10" rx="1" fill="#2b8a3e"/>
+  <image href="pics/fy7/fy7-8-scene.webp" x="0" y="0" width="600" height="360" preserveAspectRatio="none"/>
 </svg>
 
 ## Formula: Transformer and transmission loss
