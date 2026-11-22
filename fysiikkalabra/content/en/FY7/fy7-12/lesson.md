@@ -3,81 +3,7 @@
 > **Why** can light travel in a glass fibre along the bed of the Baltic Sea from Helsinki to Germany without escaping on the way, even though glass is transparent?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a cross-section of the sea. There is a city on the shore at the left and another at the right, and a submarine cable runs along the seabed from one shore to the other. In a circle in the middle, like a magnifying glass, the glass fibre inside the cable is shown, with a ray of light zigzagging along the core by reflecting from the fibre&#x27;s edges." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy712h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy712h-sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy712h-bed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><clipPath id="fy712h-lens"><circle cx="600" cy="370" r="127"/></clipPath></defs>
-  <rect x="0" y="0" width="1200" height="240" fill="url(#fy712h-sky)"/>
-  <path d="M228,96 Q226.5,69 258.5,72 Q271,43 303,53 Q332,37 348,67 Q377,70.5 373.5,96 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <path d="M906,72 Q905,51.5 929,54 Q938.5,32.5 962.5,39.5 Q984,27.5 996,50.5 Q1017.5,53 1015,72 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <rect x="0" y="230" width="1200" height="370" fill="url(#fy712h-sea)"/>
-  <path d="M0,190 L120,190 Q200,200 250,300 Q300,470 420,520 Q600,560 800,530 Q930,500 980,330 Q1020,210 1080,200 L1200,200 L1200,600 L0,600 Z" fill="url(#fy712h-bed)" stroke-linejoin="round"/>
-  <circle cx="378" cy="584" r="3" fill="#a97a35"/>
-  <circle cx="369" cy="583.5" r="3" fill="#a97a35"/>
-  <circle cx="878.5" cy="583.5" r="3" fill="#a97a35"/>
-  <circle cx="646.5" cy="561.5" r="3" fill="#a97a35"/>
-  <circle cx="806" cy="584" r="3" fill="#a97a35"/>
-  <circle cx="542.5" cy="588" r="3" fill="#a97a35"/>
-  <circle cx="777.5" cy="560.5" r="3" fill="#a97a35"/>
-  <circle cx="336.5" cy="582.5" r="3" fill="#a97a35"/>
-  <circle cx="837" cy="580" r="3" fill="#a97a35"/>
-  <circle cx="898.5" cy="580.5" r="3" fill="#a97a35"/>
-  <circle cx="394" cy="573" r="3" fill="#a97a35"/>
-  <circle cx="885.5" cy="569" r="3" fill="#a97a35"/>
-  <circle cx="364" cy="568" r="3" fill="#a97a35"/>
-  <circle cx="638" cy="582.5" r="3" fill="#a97a35"/>
-  <circle cx="880.5" cy="561.5" r="3" fill="#a97a35"/>
-  <circle cx="662" cy="565.5" r="3" fill="#a97a35"/>
-  <circle cx="745" cy="589" r="3" fill="#a97a35"/>
-  <circle cx="830" cy="572" r="3" fill="#a97a35"/>
-  <circle cx="762.5" cy="565" r="3" fill="#a97a35"/>
-  <circle cx="929" cy="589" r="3" fill="#a97a35"/>
-  <circle cx="439" cy="579" r="3" fill="#a97a35"/>
-  <circle cx="732" cy="587" r="3" fill="#a97a35"/>
-  <circle cx="408" cy="575.5" r="3" fill="#a97a35"/>
-  <circle cx="347" cy="563.5" r="3" fill="#a97a35"/>
-  <circle cx="700.5" cy="585.5" r="3" fill="#a97a35"/>
-  <circle cx="785.5" cy="568.5" r="3" fill="#a97a35"/>
-  <circle cx="810.5" cy="567.5" r="3" fill="#a97a35"/>
-  <circle cx="412.5" cy="561.5" r="3" fill="#a97a35"/>
-  <circle cx="502.5" cy="564" r="3" fill="#a97a35"/>
-  <circle cx="478.5" cy="560" r="3" fill="#a97a35"/>
-  <circle cx="316.5" cy="575" r="3" fill="#a97a35"/>
-  <circle cx="453" cy="561" r="3" fill="#a97a35"/>
-  <circle cx="628" cy="579" r="3" fill="#a97a35"/>
-  <circle cx="570" cy="582" r="3" fill="#a97a35"/>
-  <circle cx="621.5" cy="574.5" r="3" fill="#a97a35"/>
-  <circle cx="769.5" cy="588" r="3" fill="#a97a35"/>
-  <circle cx="477.5" cy="569" r="3" fill="#a97a35"/>
-  <circle cx="897" cy="562.5" r="3" fill="#a97a35"/>
-  <circle cx="360" cy="589.5" r="3" fill="#a97a35"/>
-  <circle cx="605" cy="587.5" r="3" fill="#a97a35"/>
-  <rect x="14" y="120" width="44" height="70" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="24" y="132" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="24" y="162" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="62" y="80" width="52" height="110" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="72" y="92" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="72" y="122" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="72" y="152" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="120" y="130" width="40" height="60" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="130" y="142" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="130" y="172" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="1090" y="136" width="46" height="64" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="1100" y="148" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="1100" y="178" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="1142" y="110" width="44" height="90" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="1152" y="122" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="1152" y="152" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="1152" y="182" width="12" height="12" fill="#ffc078" stroke="#1f2933" stroke-width="1.5"/>
-  <path d="M150,190 Q210,205 252,300 Q302,470 420,515 Q600,553 800,524 Q928,494 976,330 Q1015,215 1080,200" fill="none" stroke="#1f2933" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-  <line x1="560" y1="548" x2="514" y2="468" stroke="#ffffff" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="640" y1="548" x2="686" y2="468" stroke="#ffffff" stroke-width="3" stroke-linecap="butt"/>
-  <circle cx="600" cy="548" r="12" fill="none" stroke="#ffffff" stroke-width="3"/>
-  <circle cx="600" cy="370" r="130" fill="#f6f1e6" stroke="#1f2933" stroke-width="4"/>
-  <g clip-path="url(#fy712h-lens)">
-  <rect x="470" y="300" width="260" height="140" fill="#6c757d"/>
-  <rect x="470" y="316" width="260" height="108" fill="#eef5f9"/>
-  <rect x="470" y="348" width="260" height="44" fill="#d0e6fb"/>
-  <path d="M430,392 L500,348 L570,392 L640,348 L710,392 L780,348" fill="none" stroke="#e64980" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-  </g>
-  <circle cx="600" cy="370" r="130" fill="none" stroke="#1f2933" stroke-width="4"/>
+  <image href="pics/fy7/fy7-12-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Key idea
@@ -91,37 +17,13 @@ The angle of incidence at which the angle of refraction is $90^\circ$ is called 
 At the boundary between water and air the critical angle is $48.8^\circ$. That is why a diver looking at the water surface at a slant from below sees it as a mirror in which the bottom can be seen.
 
 <svg data-fig="water" viewBox="0 0 600 360" role="img" aria-label="Schematic picture: a lamp at the bottom of the water sends three rays of light to the water surface at different angles of incidence. The normal to the surface is drawn as a dashed line at each point of impact. On the left the angle of incidence of 30 degrees is smaller than the critical angle: the ray refracts into the air, away from the normal, and a weak part is reflected back into the water. In the middle the angle of incidence is the critical angle, 48.8 degrees: the refracted ray travels along the surface. On the right the angle of incidence of 65 degrees is larger than the critical angle: no light gets into the air, and the whole ray is reflected back into the water, which is total internal reflection." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy712w-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
-  <rect x="12" y="150" width="576" height="186" fill="url(#fy712w-water)"/>
-  <line x1="12" y1="150" x2="588" y2="150" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="178" y1="66" x2="178" y2="226" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="263.5" y1="66" x2="263.5" y2="226" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="416" y1="66" x2="416" y2="226" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <path d="M90,302 L178,150" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M137,221 L135.5,235 L125,229 Z" fill="#e64980"/>
-  <path d="M90,302 L263.5,150" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M181,222 L175.5,235 L167.5,226 Z" fill="#e64980"/>
-  <path d="M90,302 L416,150" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M258.5,223.5 L249,234.5 L244,223.5 Z" fill="#e64980"/>
-  <path d="M178,150 L256,62" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M221,101.5 L217,115 L208,107 Z" fill="#e64980"/>
-  <path d="M178,150 L203,193.5" fill="none" stroke="#e64980" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.45"/>
-  <path d="M263.5,147 L403.5,147" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M339.5,147 L326.5,153 L326.5,141 Z" fill="#e64980"/>
-  <path d="M263.5,150 L305.5,187" fill="none" stroke="#e64980" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.7"/>
-  <path d="M416,150 L580,226.5" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M503.5,191 L489,190.5 L494,180 Z" fill="#e64980"/>
-  <path d="M161,179.5 A34,34 0 0,0 178,184" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M238,172.5 A34,34 0 0,0 263.5,184" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M385,164.5 A34,34 0 0,0 416,184" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <rect x="74" y="310" width="32" height="18" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="90" cy="308" r="11" fill="#ffc078" stroke="#1f2933" stroke-width="2"/>
+  <image href="pics/fy7/fy7-12-water.webp" x="0" y="0" width="600" height="367.5" preserveAspectRatio="none"/>
   <foreignObject x="87" y="21.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha < \alpha_\text{r}$</div></foreignObject>
   <foreignObject x="216.5" y="21.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha = \alpha_\text{r}$</div></foreignObject>
   <foreignObject x="361" y="21.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha > \alpha_\text{r}$</div></foreignObject>
   <foreignObject x="539" y="85.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{air}$</div></foreignObject>
-  <foreignObject x="289" y="231.5" width="295" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\text{total internal reflection}$</div></foreignObject>
-  <foreignObject x="422" y="291.5" width="162" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\text{water},\ n = 1.33$</div></foreignObject>
+  <foreignObject x="272" y="231.5" width="295" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\text{total internal reflection}$</div></foreignObject>
+  <foreignObject x="405" y="291.5" width="162" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$\text{water},\ n = 1.33$</div></foreignObject>
 </svg>
 
 <figure class="unit-photo"><img src="pics/fy7/tir-wine-glass.webp" alt="A hand holds a wine glass by its stem against a black background; a green laser beam enters from below and zigzags through the stem and base of the glass."><figcaption>A green laser beam in the stem of a wine glass. The beam meets the surface of the glass at an angle larger than the critical angle, so it is totally reflected back into the glass and does not escape into the air.</figcaption></figure>
@@ -139,26 +41,12 @@ Total internal reflection can happen only when light goes from a substance with 
 An **optical fibre** is a glass fibre as thin as a hair, with a core in the middle and a cladding around it. The refractive index of the core is slightly larger than that of the cladding, for example $1.48$ and $1.46$. Light that enters the end of the fibre almost parallel to its axis meets the boundary between the core and the cladding at a very shallow angle, that is at a large angle of incidence, which is larger than the critical angle. The light is totally internally reflected back into the core every time and travels along the fibre in a zigzag, even when the fibre bends gently. If light enters the end of the fibre at too steep an angle, it meets the boundary at an angle of incidence smaller than the critical angle, and at every impact part of it refracts into the cladding and is lost from the core. A sharp bend reduces the angle of incidence in the same way, so a fibre must not be folded into a tight bend.
 
 <svg data-fig="fibre" viewBox="0 0 600 340" role="img" aria-label="Schematic picture of an optical fibre, not to scale. At the top the fibre is cut lengthwise: in the middle the core with refractive index n1, around it the cladding with a slightly smaller refractive index n2, and outermost a plastic protective coating. A ray of light travels in the core in a zigzag: it meets the boundary between the core and the cladding at an angle of incidence larger than the critical angle and is totally internally reflected back into the core each time. At the bottom right the same fibre in cross-section: the core, the cladding and the coating as nested circles." style="max-width:100%;font-size:24px">
-  <rect x="24" y="40" width="552" height="160" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="24" y="56" width="552" height="128" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <rect x="24" y="100" width="552" height="40" fill="#d0e6fb" stroke="#1f2933" stroke-width="2"/>
-  <path d="M24,120 L79,140 L189,100 L298.5,140 L408.5,100 L518.5,140 L576,119" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M139.5,118 L129.5,128 L125.5,117 Z" fill="#e64980"/>
-  <path d="M359.5,118 L349,128 L345,117 Z" fill="#e64980"/>
-  <line x1="408.5" y1="64" x2="408.5" y2="176" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <path d="M408.5,130 A30,30 0 0,1 380.5,110.5" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
+  <image href="pics/fy7/fy7-12-fibre.webp" x="-2.5" y="0" width="603" height="353" preserveAspectRatio="none"/>
   <foreignObject x="333.5" y="63.5" width="30" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha$</div></foreignObject>
-  <line x1="356.5" y1="86" x2="388.5" y2="110" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="422.5" y="63.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\alpha > \alpha_\text{r}$</div></foreignObject>
   <foreignObject x="132" y="147.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{cladding}\ n_2$</div></foreignObject>
-  <line x1="110" y1="136" x2="110" y2="246" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="60" y="247.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{core}\ n_1$</div></foreignObject>
-  <line x1="260" y1="192" x2="260" y2="290" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="210" y="291.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{coating}$</div></foreignObject>
-  <circle cx="506" cy="270" r="54" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="506" cy="270" r="42" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="506" cy="270" r="14" fill="#d0e6fb" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="506" cy="270" r="4" fill="#e64980"/>
   <foreignObject x="330" y="255.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$n_1 > n_2$</div></foreignObject>
 </svg>
 
@@ -183,29 +71,11 @@ A traditional fibre endoscope has two bundles of fibres. One brings the illumina
 The refractive index of diamond is $2.42$, so its critical angle against air is only $24.4^\circ$. The slanting lower faces of a cut diamond are tilted so that light coming from the top face meets them at an angle of incidence larger than the critical angle. The light is totally internally reflected and returns upwards towards the viewer. In a glass stone of the same shape the critical angle is $41.8^\circ$, so some of the same light refracts out below the stone, and the glass sparkles less.
 
 <svg data-fig="diamond" viewBox="0 0 600 310" role="img" aria-label="Schematic picture, not to scale: two cut stones of the same shape in cross-section. From the top face of each stone the same ray of light comes straight down and meets the lower slanting face at an angle of incidence of 38 degrees. On the left, in diamond, which has refractive index 2.42 and critical angle 24.4 degrees, the ray is totally internally reflected twice and returns upwards out of the top of the stone. On the right, in glass, which has refractive index 1.50 and critical angle 41.8 degrees, the angle of incidence is smaller than the critical angle: most of the light refracts out below the stone, and only a weak part is reflected." style="max-width:100%;font-size:24px">
-  <path d="M88,60 L212,60 L276,102 L276,110 L150,208.5 L24,110 L24,102 Z" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <line x1="24" y1="110" x2="276" y2="110" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="142" y1="156.5" x2="91.5" y2="221.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <path d="M120,155 A30,30 0 0,1 138.5,161.5" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M120,20 L120,60 L120,185 L208,163 L249.5,85" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M120,46 L114,33 L126,33 Z" fill="#e64980"/>
-  <path d="M170,172.5 L158.5,181.5 L156,170 Z" fill="#e64980"/>
-  <path d="M249.5,85 L269.5,32.5" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M261.5,53 L262.5,67 L251.5,63 Z" fill="#e64980"/>
-  <foreignObject x="126" y="118.5" width="50" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$38^\circ$</div></foreignObject>
+  <image href="pics/fy7/fy7-12-diamond.webp" x="13.2" y="1.2" width="576.9" height="308.9" preserveAspectRatio="none"/>
+  <foreignObject x="137" y="118.5" width="50" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$38^\circ$</div></foreignObject>
   <foreignObject x="25" y="265.5" width="250" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{diamond},\ \alpha_\text{r} = 24.4^\circ$</div></foreignObject>
-  <path d="M388,60 L512,60 L576,102 L576,110 L450,208.5 L324,110 L324,102 Z" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <line x1="324" y1="110" x2="576" y2="110" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="442" y1="156.5" x2="391.5" y2="221.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <path d="M420,155 A30,30 0 0,1 438.5,161.5" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M420,20 L420,60 L420,185" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M420,46 L414,33 L426,33 Z" fill="#e64980"/>
-  <path d="M420,185 L447.5,234" fill="none" stroke="#e64980" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M436.5,214.5 L425,206 L435.5,200.5 Z" fill="#e64980"/>
-  <path d="M420,185 L468.5,173" fill="none" stroke="#e64980" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.45"/>
   <foreignObject x="426" y="118.5" width="50" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$38^\circ$</div></foreignObject>
   <foreignObject x="325" y="265.5" width="250" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{glass},\ \alpha_\text{r} = 41.8^\circ$</div></foreignObject>
-  <line x1="300" y1="20" x2="300" y2="290" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
 </svg>
 
 ## Formula: Critical angle
@@ -341,40 +211,5 @@ Many people think that light can be totally internally reflected at any boundary
 - Fibres are used in data transmission, endoscopes and lamps. In a fibre light travels at the speed $v = c : n$, and the travel time is $t = n s : c$.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Illustration: an optical-fibre lamp on a shelf. A bundle of thin transparent plastic fibres rises from its base and curves in every direction. The fibres do not glow along their sides, but the end of each fibre shines as a bright point." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy712s-shelf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><radialGradient id="fy712s-glow"><stop offset="0" stop-color="#ffffff"/><stop offset="0.35" stop-color="#e64980"/><stop offset="1" stop-color="#e64980" stop-opacity="0"/></radialGradient></defs>
-  <rect x="0" y="0" width="600" height="360" fill="#f6f1e6"/>
-  <rect x="0" y="290" width="600" height="70" fill="url(#fy712s-shelf)"/>
-  <line x1="0" y1="290" x2="600" y2="290" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M250,290 L262,236 H338 L350,290 Z" fill="#6c757d" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="270" y="226" width="60" height="12" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M292,226 Q263,116 115.5,175" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M293,226 Q265,113.5 126,149.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M294,226 Q270,115.5 149,129.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M295,226 Q272,104.5 160.5,99.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M296,226 Q279,110 196,89.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M297,226 Q285,104.5 226,71" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M298,226 Q292.5,108.5 263.5,69" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M299,226 Q300,119 300,80.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M300,226 Q307.5,105.5 337.5,65" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M301,226 Q313,120 365,90.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M302,226 Q319.5,116 398.5,96.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M303,226 Q327,107.5 436,103" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M304,226 Q332,109.5 459.5,124.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M305,226 Q333,118.5 466,153" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M306,226 Q335.5,120 478,176.5" fill="none" stroke="#c9c2b2" stroke-width="2.5" stroke-linejoin="round"/>
-  <circle cx="115.5" cy="175" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="126" cy="149.5" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="149" cy="129.5" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="160.5" cy="99.5" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="196" cy="89.5" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="226" cy="71" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="263.5" cy="69" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="300" cy="80.5" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="337.5" cy="65" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="365" cy="90.5" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="398.5" cy="96.5" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="436" cy="103" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="459.5" cy="124.5" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="466" cy="153" r="13" fill="url(#fy712s-glow)"/>
-  <circle cx="478" cy="176.5" r="13" fill="url(#fy712s-glow)"/>
+  <image href="pics/fy7/fy7-12-scene.webp" x="0" y="0" width="600" height="360" preserveAspectRatio="none"/>
 </svg>

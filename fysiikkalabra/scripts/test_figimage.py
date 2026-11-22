@@ -60,12 +60,55 @@ check("code_of: a lesson, the exam and the Sovella set of a module",
 check("code_of: a unit, an investigation or nothing is still None",
       [figimage.code_of(f) for f in ("tvt-epavarmuus/a", "fy4-koe-x/a", "", None, "fy99-koe/a")] == [None] * 5)
 
+check("code_of: a figure of a unit module's unit or of its task set (FY14, FY9)",
+      [figimage.code_of(f) for f in ("fy14-plasma/hero", "fy14-plasma-sovella/a", "fy9-aallot/x", "fy9-koe/x")] == ["FY14", "FY14", "FY9", "FY9"])
+check("code_of: an investigation of FY10; a TVT guide is still None", figimage.code_of("fy10-heiluri/hero") == "FY10" and figimage.code_of("tvt-kuvaaja/a") is None)
+check("code_of: a course that has no unit of that name is still None", figimage.code_of("fy4-plasma/x") is None)
+check("a unit module's pictures: slug and layout file", {"FY9", "FY10", "FY14"} <= set(figimage.modules()) and figimage.layout_file("FY14").as_posix().endswith("lessons/FY14/ASETTELU.tsv")
+      and courses.slug("FY14") == "fy14")
+
+# units.py draws a unit figure with a row on its picture, and the picture's bytes are in the unit's hash
+import units
+UROW = {"type": "illustration", "file": "t-fig.webp", "box": None, "shift": {}, "flat": set(), "code": "FY14"}
+figimage.row, figimage.pic = (lambda fid: UROW if fid == "fy14-plasma/hero" else None), (lambda fid: "pics/fy14/t-fig.webp" if fid == "fy14-plasma/hero" else None)
+try: _, new, _ = units.draw("fy14-plasma", "en")
+finally: figimage.row, figimage.pic = real_row, real_pic
+check("units.draw puts a unit figure with a row on its picture", new is not None and '<image href="pics/fy14/t-fig.webp"' in new)
+
+# units.content_hash of an earlier commit reads that commit's texts, not the working tree's (a carry finds the version a report passed by its hash)
+import reviews
+_c = reviews.Commit(reviews.git("rev-parse", "HEAD").strip())
+_clean = units.content_hash("fy9-aallot", "fi", read=_c.read)
+_texts, _base, _src = units.texts_of, figimage.is_base, courses.pic_source
+_fake = "pics/fy9/zz-test-only.webp"
+units.texts_of = lambda uid, lang: _texts(uid, lang) + f'<img src="{_fake}">'     # a working tree that now refers to a picture the commit did not
+figimage.is_base = lambda ref: ref == _fake or _base(ref)
+courses.pic_source = lambda ref: next((courses.ROOT / "assets" / "pics").rglob("*.webp")) if ref == _fake else _src(ref)
+try: _dirty = units.content_hash("fy9-aallot", "fi", read=_c.read)
+finally: units.texts_of, figimage.is_base, courses.pic_source = _texts, _base, _src
+check("units.content_hash with a commit's reader does not depend on the working tree's texts", _clean == _dirty, f"{_clean} vs {_dirty}")
+
+# investigations.py draws an investigation figure with a row on its picture, as units.py does
+import investigations
+figimage.row, figimage.pic = (lambda fid: dict(UROW, code="FY10") if fid == "fy10-heiluri/hero" else None), (lambda fid: "pics/fy10/t-fig.webp" if fid == "fy10-heiluri/hero" else None)
+md = investigations.folder("fy10-heiluri") / "investigation.md"; before = md.read_text()
+try:
+    investigations.figures("fy10-heiluri", write=True); after = md.read_text()
+finally: md.write_text(before); figimage.row, figimage.pic = real_row, real_pic
+check("investigations.figures puts a figure with a row on its picture", '<image href="pics/fy10/t-fig.webp"' in after)
+
 # a figure written into a Sovella or exam solutions.md by practice.py is drawn on its picture too (the id is the page's: fy4-koe/<name>, fy4-sovella/<name>)
 import practice
 FAKE = {"type": "diagram", "file": "t-fig.webp", "box": None, "shift": {}, "flat": set(), "code": "FY4"}
 figimage.row, figimage.pic = (lambda fid: FAKE if fid == "fy4-sovella/fy4-s3-collision" else None), (lambda fid: "pics/fy4/t-fig.webp" if fid == "fy4-sovella/fy4-s3-collision" else None)
 try: stale = not practice.figures("FY4", write=False)
 finally: figimage.row, figimage.pic = real_row, real_pic
+UFID = "fy9-aallot-sovella/fy9-aallot-s3-T"           # the task set of a unit: the figure's owner is "<unit>-sovella", not "units/<unit>-sovella"
+UFAKE = dict(FAKE, code="FY9")
+figimage.row, figimage.pic = (lambda fid: UFAKE if fid == UFID else None), (lambda fid: "pics/fy9/t-fig.webp" if fid == UFID else None)
+try: ustale = not practice.figures("units/fy9-aallot", write=False)
+finally: figimage.row, figimage.pic = real_row, real_pic
+check("practice.figures draws a unit's Sovella figure on its picture (owner id without the units/ prefix)", ustale)
 check("practice.figures writes a figure with a row on its picture (a solutions.md without it is out of date)", stale)
 check("practice.figures leaves solutions.md as it is when no figure has a row", practice.figures("FY4", write=False) or figimage.row("fy4-sovella/fy4-s3-collision"))
 
@@ -86,8 +129,8 @@ for code in courses.codes():
         check(f"{fid}: drawn on its picture, labels kept", "<image " in svg and svg.count("<foreignObject") == raw.count("<foreignObject") and svg.count("<text") == 0, f"{svg.count('<foreignObject')} vs {raw.count('<foreignObject')}")
         check(f"{fid}: every shift and flat label names a label", all(0 <= i < raw.count("<foreignObject") for i in [*r["shift"], *r["flat"]]))
 src = (pathlib.Path(__file__).resolve().parent / "build.py").read_text(encoding="utf-8")
-check("build.py copies the pictures of a lesson, a Sovella page and an exam page (copy_pics)",
-      len(re.findall(r"^\s+copy_pics\(", src, re.M)) == 3, "copy_pics calls")
+check("build.py copies the pictures of a lesson, a Sovella page, an exam page, a unit, a unit's task set and an investigation (copy_pics)",
+      len(re.findall(r"^\s+copy_pics\(", src, re.M)) == 6, "copy_pics calls")
 import figimage as F
 total = sum(p.stat().st_size for p in (courses.ROOT / "assets" / "pics").rglob("*") if p.is_file())
 check(f"all the pictures together are under 100 MB ({total / 1e6:.1f} MB)", total < 100e6)

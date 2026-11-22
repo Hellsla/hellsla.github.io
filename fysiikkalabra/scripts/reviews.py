@@ -1279,12 +1279,12 @@ def _own_language(code):
 def figure_hash(fid):
     """Hash of figure `fid` as figures.py draws it now in Finnish (what an approval row names)."""
     figlib.set_language({}, ",")                       # the Finnish drawing, whatever was drawn before in this process
-    try: svg = figcat.render(fid)
-    except KeyError:
-        oid, name = fid.split("/", 1); f = _item_figures(oid)
-        if f is None: raise
+    oid, name = fid.split("/", 1)
+    f = None if oid.endswith("-sovella") else _item_figures(oid)   # a unit, an investigation or a guide (a unit's task set is in the figure catalog)
+    if f is not None:                                  # drawn as figures.py draws it, in the item's own language, never through figcat.render (which sets data-fig and Finnish decimals): the hashes of the figures approved before figcat knew these owners (work queue 24) stay valid
         fn = figcat.module(str(f.parent)).FIGURES[name]
-        _own_language(f.read_text()); svg = fn()
+        _own_language(f.read_text()); svg = figimage.apply(fn(), fid)   # drawn on its picture where it has a row (scripts/figimage.py)
+    else: svg = figcat.render(fid)
     h = hashlib.sha256(svg.encode())
     base = figimage.pic(fid)
     if base and courses.pic_source(base).is_file(): h.update(courses.pic_source(base).read_bytes())   # a picture as the base: the file is part of what the teacher approved (work queue 24)
@@ -1321,6 +1321,7 @@ def approve_figures(lid, images_only=False):
         f = ROOT / "lessons" / m.group(1).upper() / m.group(2) / "figures.py"
         if not f.is_file(): sys.exit(f"{lid}: no {f.relative_to(ROOT)}")
         mod = figcat.module(str(f.parent))
+    elif (f := _item_figures(lid)): mod = figcat.module(str(f.parent))   # a unit (lessons/units/<id>/figures.py) or its task set
     else: mod = figcat.module(str(courses.code_dir(find_lesson(lid))))
     new = [(f"{lid}/{name}", figure_hash(f"{lid}/{name}")) for name in getattr(mod, "FIGURES", {}) if not images_only or figimage.row(f"{lid}/{name}")]
     new = [(fid, h) for fid, h in new if h not in rows.get(fid, set())]
@@ -2093,9 +2094,12 @@ def passed_at(log, folder, part, h):
 
 
 def _history(folder):
-    """The last 80 commits that touched what a lesson's hashes cover (where scope looks for the version a reviewer passed)."""
+    """The last 300 commits that touched what a lesson's hashes cover (where scope looks for the version a reviewer passed).
+    The paths include all of `assets` (a lesson's simulation, pictures and shared files are in its hash), so a picture pull request
+    (work queue 24: one module's WebP files, several commits and merges) pushes other lessons' passed versions out of a short
+    window: with 80 commits `verify` failed on #800 (fy6-12 exercises: "no commit holds that version")."""
     lid = folder.name; legacy = f"content/{folder.parent.name}/{lid}"     # the folder before the languages (Commit.read)
-    return (git("log", "--format=%H", "-n", "80", "--", folder.relative_to(ROOT).as_posix(), courses.code_dir(folder).relative_to(ROOT).as_posix(),
+    return (git("log", "--format=%H", "-n", "300", "--", folder.relative_to(ROOT).as_posix(), courses.code_dir(folder).relative_to(ROOT).as_posix(),
                 legacy, f"tests/sims/{lid}.json", "assets", f"lang/{courses.lang_of(folder)}.json", *figure_paths(folder)) or "").split()
 
 

@@ -143,6 +143,10 @@ def content_hash(uid, lang, read=None):
     for ref in asset_refs(uid, lang):
         f = asset_source(ref)
         if f.is_file(): h.update(ref.encode() + b"\0" + f.read_bytes() + b"\0")
+    import figimage
+    for ref in courses.pic_refs_in(["".join(get(folder(uid, lang) / n) or "" for n in TEXTS)]):   # the pictures of the module's own figures (scripts/figimage.py, pics/fy14/ for fy14-*): their bytes are in the hash; another module's picture (fy2-4/grid in FY9) hashes as before
+        f = courses.pic_source(ref)
+        if ref.startswith(f"pics/{uid.split('-')[0]}/") and figimage.is_base(ref) and f.is_file(): h.update(ref.encode() + b"\0" + f.read_bytes() + b"\0")
     if has_tasks(uid, lang):                             # the unit's own task set (scripts/practice.py): reviewed with the unit
         import practice
         h.update(b"sovella\0" + practice.content_hash(task_key(uid), lang, read=read).encode() + b"\0")
@@ -254,6 +258,7 @@ def draw(uid, lang):
             if not pat.search(new): print(f"no <svg data-fig=\"{name}\"> in unit.md"); continue
             svg = fn()
             if "data-fig=" not in svg: svg = svg.replace("<svg ", f'<svg data-fig="{name}" ', 1)
+            import figimage; svg = figimage.apply(svg, f"{uid}/{name}")   # a figure with a row in lessons/<COURSE>/ASETTELU.tsv is drawn on its picture (work queue 24)
             new = pat.sub(lambda m: svg, new, count=1)
         missing = list(figlib.MISSING) if tr else []
     finally:
