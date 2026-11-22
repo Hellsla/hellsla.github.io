@@ -174,7 +174,7 @@ Jaettu (build.py / site.css), yksin, #740:n ja #733:n jälkeen ennen kohtaa 21 (
 
 ## 24. Uudet kuvat sivustolle (opettaja 2026-11-19; kuvat hyväksytty 15.–18.11.)
 Varattu: claude/24-osa3-fy3 (osa 3, FY3, draft-PR)
-Varattu: claude/24-osa11-fy14 (osa 11, FY14, draft-PR)
+Osa 11 (FY14, 43 kuvaa, 27 unit-sivua, vain englanniksi) tehty: PR #803, `approve-figures <fy14-yksiköt> --images` ajettu opettajan luvalla (opettaja 2026-11-22 suoraan tekijäsessioon: "hyväksyn kuvat"), unit-carryt (28/28), ennen/jälkeen docs/audits/img24-fy14/; odottaa koordinaattorin yhdistämistä. Ennalleen PAATOS.txt:n 7 "pidä alkuperäinen" ja 19 ohitettua. Avoin opettajalle: viewBox-ylitysten (14 riviä, tyhjä reuna) rajaus, ks. README. Jaetut: figimage unit-moduuleille #801, figcat.owner #804, practice-unit-id #805.
 Varattu: claude/figcat-units (jaettu: figcat.owner tuntee unit- ja tutkimusomistajat, #801:n jatko; osan 11 edellytys)
 Osa 7 (FY7, 89 kuvaa: 86 lukua + Sovella `fy7-s1-forces`, `fy7-s1-implanter`, `fy7-s4-fibre`) tehty: PR #798, `approve-figures fy7-1…fy7-16 fy7-sovella --images` ajettu opettajan luvalla (opettaja 2026-11-22 suoraan tekijäsessioon: "Hyväksyn kuvat"), carry (luvut, Sovella, fy9-magnetismi-valo track-sign), ennen/jälkeen docs/audits/img24-fy7/; odottaa koordinaattorin yhdistämistä. Ennalleen `fy7-1/cut-magnet` (PAATOS) ja 8 kuvaajaa. Avoin opettajalle: viewBox-ylitysten (tyhjä reuna, enintään 15,7 px) rajaus.
 Varattu: claude/practice-unit-id (jaettu: practice.figures antaa unit-Sovellan kuvalle omistajan id:n ilman units/-etuliitettä; FY9-osan edellytys)
