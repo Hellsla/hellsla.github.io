@@ -9,36 +9,14 @@ Ioni kulkee suoraan tasaisella nopeudella vain, jos voimien summa on nolla. Sill
 Magneettinen voima on kohtisuorassa sekä nopeutta että kenttää vastaan. Sen suunta saadaan oikean käden säännöstä. Positiiviseen varaukseen vaikuttava sähköinen voima osoittaa samaan suuntaan kuin sähkökenttä.
 
 <svg data-fig="fy7-s1-forces" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva nopeusvalitsimesta. Ylempi levy on positiivinen ja alempi negatiivinen, joten sähkökenttä E osoittaa levyjen välissä alaspäin. Magneettikenttä osoittaa paperiin sisään, mitä kuvaavat vihreät ristit. Levyjen välissä on positiivinen ioni, jonka nopeus v osoittaa oikealle. Ioniin vaikuttaa magneettinen voima F m ylöspäin ja sähköinen voima F s alaspäin. Voimanuolet ovat yhtä pitkät, koska suoraan kulkevaan ioniin vaikuttavat voimat kumoavat toisensa." style="max-width:100%;font-size:24px">
-  <rect x="60" y="38" width="480" height="12" rx="2" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="60" y="280" width="480" height="12" rx="2" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
+  <image href="pics/fy7/fy7-sovella-fy7-s1-forces.webp" x="0" y="0" width="600" height="337.5" preserveAspectRatio="none"/>
   <foreignObject x="30" y="29.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$+$</div></foreignObject>
   <foreignObject x="30" y="271.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$-$</div></foreignObject>
-  <line x1="110" y1="64" x2="110" y2="254" stroke="#8a5f22" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M110,266 L104,253 L116,253 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <line x1="490" y1="64" x2="490" y2="254" stroke="#8a5f22" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M490,266 L484,253 L496,253 Z" fill="#8a5f22" stroke-linejoin="round"/>
   <foreignObject x="122" y="215.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#8a5f22">$\overline{E}$</div></foreignObject>
-  <line x1="184" y1="84" x2="196" y2="96" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="184" y1="96" x2="196" y2="84" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="184" y1="234" x2="196" y2="246" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="184" y1="246" x2="196" y2="234" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="404" y1="84" x2="416" y2="96" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="404" y1="96" x2="416" y2="84" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="404" y1="234" x2="416" y2="246" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="404" y1="246" x2="416" y2="234" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
   <foreignObject x="425" y="85.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}_\text{s}$</div></foreignObject>
-  <line x1="300" y1="165" x2="300" y2="88" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M300,73 L307,89 L293,89 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="314" y="68.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{m}$</div></foreignObject>
-  <line x1="300" y1="165" x2="300" y2="242" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M300,257 L293,241 L307,241 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="314" y="232.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{s}$</div></foreignObject>
-  <line x1="314" y1="165" x2="406" y2="165" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M420,165 L405,172 L405,158 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="428" y="150.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <circle cx="300" cy="165" r="11" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
-  <line x1="294.5" y1="165" x2="305.5" y2="165" stroke="#1f2933" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="300" y1="159.5" x2="300" y2="170.5" stroke="#1f2933" stroke-width="2.2" stroke-linecap="butt"/>
 </svg>
 
 **Mallivastaus:** Ioni liikkuu oikealle, ja magneettikenttä osoittaa paperiin sisään. Oikean käden säännön mukaan positiiviseen ioniin vaikuttava magneettinen voima $\overline{F}_\text{m}$ osoittaa ylöspäin.
@@ -286,24 +264,13 @@ Kuuma aihio säteilee kokonaisuudessaan valtavalla teholla, joten pienikin näky
 Siksi päätypinnan normaali on sivupinnan suuntainen, ja säteen tulokulma sivupinnalla on $90^\circ - \beta$. Mitä suurempi on $\theta$, sitä suurempi on $\beta$ ja sitä pienempi on sivupinnan tulokulma. Suurimmalla sallitulla tulokulmalla sivupinnan tulokulma on siis täsmälleen rajakulma.
 
 <svg data-fig="fy7-s4-fibre" viewBox="0 0 600 300" role="img" aria-label="Kaavakuva, kulmat liioiteltuja: valokuidun pää sivulta. Keskellä on ydin, jonka taitekerroin on n 1. Ylä- ja alapuolella on kuori, jonka taitekerroin on n 2. Vasemmalla on ilmaa. Säde tulee ilmasta kuidun päätypintaan kulmassa theeta päätypinnan normaaliin nähden. Ytimessä säde taittuu kulmaan beeta. Säde osuu ytimen ja kuoren rajapintaan kulmassa alfa r rajapinnan normaaliin nähden ja heijastuu kokonaan takaisin ytimeen. Kulmat beeta ja alfa r ovat yhdessä 90 astetta." style="max-width:100%;font-size:24px">
-  <rect x="200" y="40" width="380" height="50" fill="#e7f5ff" stroke="#8a96a3" stroke-width="1.5"/>
-  <rect x="200" y="230" width="380" height="50" fill="#e7f5ff" stroke="#8a96a3" stroke-width="1.5"/>
-  <rect x="200" y="90" width="380" height="140" fill="#d0ebff" stroke="#1f2933" stroke-width="2"/>
+  <image href="pics/fy7/fy7-sovella-fy7-s4-fibre.webp" x="19.3" y="7.2" width="579.7" height="298.3" preserveAspectRatio="none"/>
   <foreignObject x="465" y="50.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{kuori } n_2$</div></foreignObject>
   <foreignObject x="465" y="240.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{kuori } n_2$</div></foreignObject>
   <foreignObject x="477" y="185.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{ydin } n_1$</div></foreignObject>
   <foreignObject x="60" y="95.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{ilma}$</div></foreignObject>
-  <line x1="80" y1="180" x2="330" y2="180" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="70" y1="267.5" x2="200" y2="180" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="200" y1="180" x2="423" y2="90" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="423" y1="90" x2="476.5" y2="111.5" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M487.5,116 L473.5,117 L478,106 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="423" y1="60" x2="423" y2="180" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <path d="M140,180 A60,60 0 0 1 150.5,213.5" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
   <foreignObject x="108" y="187.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\theta$</div></foreignObject>
-  <path d="M260,180 A60,60 0 0 0 255.5,157.5" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
   <foreignObject x="270" y="151.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\beta$</div></foreignObject>
-  <path d="M423,136 A46,46 0 0 1 380,107" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
   <foreignObject x="366" y="139.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\alpha_\text{r}$</div></foreignObject>
 </svg>
 
