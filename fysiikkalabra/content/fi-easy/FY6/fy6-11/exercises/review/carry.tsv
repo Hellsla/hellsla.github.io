@@ -26,3 +26,6 @@ date	reviewer	from	to	base	categories
 2026-11-17	science	52fabbb87f61e010	a555d02f7a803565	98218defc550	caption-label,reflow
 2026-11-17	pedagogy	52fabbb87f61e010	a555d02f7a803565	98218defc550	caption-label,reflow
 2026-11-20	science	bb084e9586f15f33	a555d02f7a803565	-	translation-of-passed
+2026-11-22	visual	a555d02f7a803565	9f3a1d1e437fac2f	91021196c042	teacher-figure
+2026-11-22	science	33e32919d18ff779	9f3a1d1e437fac2f	-	translation-of-passed
+2026-11-22	pedagogy	52fabbb87f61e010	9f3a1d1e437fac2f	98218defc550	caption-label,md-paragraphs,paragraphs,reflow,teacher-figure

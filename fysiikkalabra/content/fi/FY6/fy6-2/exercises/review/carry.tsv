@@ -21,3 +21,6 @@ date	reviewer	from	to	base	categories
 2026-11-17	science	7a0d19ceab83f0dd	22dceb69a8e4acc3	e238aa983a09	caption-label,reflow
 2026-11-17	pedagogy	7a0d19ceab83f0dd	22dceb69a8e4acc3	e238aa983a09	caption-label,reflow
 2026-11-17	visual	72d92aa74fd113f6	22dceb69a8e4acc3	b65e5797b576	caption-label
+2026-11-22	science	7a0d19ceab83f0dd	a59a6742e16f52ed	e238aa983a09	caption-label,md-paragraphs,reflow,teacher-figure
+2026-11-22	pedagogy	7a0d19ceab83f0dd	a59a6742e16f52ed	e238aa983a09	caption-label,md-paragraphs,reflow,teacher-figure
+2026-11-22	visual	72d92aa74fd113f6	a59a6742e16f52ed	b65e5797b576	caption-label,teacher-figure
