@@ -11,3 +11,6 @@ date	reviewer	from	to	base	categories
 2026-11-17	science	f2d06e99ef2be864	c569d8c95da8ef68	e238aa983a09	reflow
 2026-11-17	pedagogy	f2d06e99ef2be864	c569d8c95da8ef68	e238aa983a09	reflow
 2026-11-20	science	90b7189d78510f1a	c569d8c95da8ef68	-	translation-of-passed
+2026-11-22	visual	c569d8c95da8ef68	18da6f5f1066f3ee	91021196c042	teacher-figure
+2026-11-22	science	7e2d9a82c6129517	18da6f5f1066f3ee	-	translation-of-passed
+2026-11-22	pedagogy	f2d06e99ef2be864	18da6f5f1066f3ee	e238aa983a09	md-paragraphs,reflow,teacher-figure
