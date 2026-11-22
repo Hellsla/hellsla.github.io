@@ -86,6 +86,9 @@ def set_deps():
         if d.name not in ("sovella", "koe") or d.parent.name not in courses.codes(): continue
         texts = [(d / n).read_text() for n in ("tasks.json", "solutions.md") if (d / n).is_file()]
         for r in courses.pic_refs_in(texts): out.setdefault(r, []).append(page_of(d.parent.name, d.name))
+    for d in sorted((courses.ROOT / "content").glob("*/units/*")) + sorted((courses.ROOT / "content").glob("*/tutkimukset/*")):   # a unit's or an investigation's figures drawn on pictures (scripts/figimage.py): the unit page
+        for r in courses.pic_refs_in([f.read_text() for f in d.glob("*") if f.suffix in (".md", ".json")]):
+            if d.name not in out.setdefault(r, []): out[r].append(d.name)
     return out
 
 

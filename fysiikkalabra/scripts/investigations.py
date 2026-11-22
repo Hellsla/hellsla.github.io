@@ -66,6 +66,10 @@ def content_hash(iid, lang=i18n.SOURCE, read=None):
         if t is not None: h.update(name.encode() + b"\0" + normalized(t, name).encode() + b"\0")
     b = get(code_folder(iid) / "figures.py", True)
     if b is not None: h.update(b"figures.py\0" + b + b"\0")
+    import figimage
+    for ref in courses.pic_refs_in([get(folder(iid, lang) / n) or "" for n in TEXTS]):   # the pictures of the module's own figures (pics/fy10/ for fy10-*; scripts/figimage.py): their bytes are in the hash
+        f = courses.pic_source(ref)
+        if ref.startswith(f"pics/{iid.split('-')[0]}/") and figimage.is_base(ref) and f.is_file(): h.update(ref.encode() + b"\0" + f.read_bytes() + b"\0")
     return h.hexdigest()[:16]
 
 
@@ -124,6 +128,7 @@ def figures(iid, write=True):
         if not pat.search(new): print(f"no <svg data-fig=\"{name}\"> in investigation.md"); continue
         svg = fn()
         if "data-fig=" not in svg: svg = svg.replace("<svg ", f'<svg data-fig="{name}" ', 1)
+        import figimage; svg = figimage.apply(svg, f"{iid}/{name}")   # a figure with a row in lessons/<COURSE>/ASETTELU.tsv is drawn on its picture (work queue 24)
         new = pat.sub(lambda m: svg, new, count=1)
     if write and new != text: md.write_text(new)
     return new == text

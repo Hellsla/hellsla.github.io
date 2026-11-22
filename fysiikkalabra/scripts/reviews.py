@@ -1284,7 +1284,7 @@ def figure_hash(fid):
         oid, name = fid.split("/", 1); f = _item_figures(oid)
         if f is None: raise
         fn = figcat.module(str(f.parent)).FIGURES[name]
-        _own_language(f.read_text()); svg = fn()
+        _own_language(f.read_text()); svg = figimage.apply(fn(), fid)   # a unit's figure drawn on its picture (scripts/figimage.py)
     h = hashlib.sha256(svg.encode())
     base = figimage.pic(fid)
     if base and courses.pic_source(base).is_file(): h.update(courses.pic_source(base).read_bytes())   # a picture as the base: the file is part of what the teacher approved (work queue 24)
@@ -1321,6 +1321,7 @@ def approve_figures(lid, images_only=False):
         f = ROOT / "lessons" / m.group(1).upper() / m.group(2) / "figures.py"
         if not f.is_file(): sys.exit(f"{lid}: no {f.relative_to(ROOT)}")
         mod = figcat.module(str(f.parent))
+    elif (f := _item_figures(lid)): mod = figcat.module(str(f.parent))   # a unit (lessons/units/<id>/figures.py) or its task set
     else: mod = figcat.module(str(courses.code_dir(find_lesson(lid))))
     new = [(f"{lid}/{name}", figure_hash(f"{lid}/{name}")) for name in getattr(mod, "FIGURES", {}) if not images_only or figimage.row(f"{lid}/{name}")]
     new = [(fid, h) for fid, h in new if h not in rows.get(fid, set())]
