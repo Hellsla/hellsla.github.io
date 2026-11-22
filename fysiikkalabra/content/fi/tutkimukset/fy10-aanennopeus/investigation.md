@@ -3,88 +3,7 @@
 > **Tutkimuskysymys:** Kuinka suuri on äänen nopeus ilmassa, kun se määritetään mittaamalla, kauanko ääneltä kuluu tunnetun matkan kulkemiseen?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: pitkällä koulun käytävällä oppilas lyö kaksi puulautaa yhteen. Äänen rintama leviää lyöntikohdasta käytävää pitkin. Lattialla käytävän suuntaisesti on mittanauha, ja seinällä on lämpömittari." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy10ah-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#dfe9ef"/></linearGradient><linearGradient id="fy10ah-floor" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#fy10ah-wall)"/>
-  <rect x="0" y="470" width="1200" height="130" fill="url(#fy10ah-floor)"/>
-  <line x1="0" y1="494" x2="1200" y2="490" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="520" x2="1200" y2="516" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="546" x2="1200" y2="542" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="572" x2="1200" y2="568" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="470" x2="1200" y2="470" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="0" y="380" width="1200" height="10" fill="#dfe9ef" stroke="#6b7480" stroke-width="1.5"/>
-  <rect x="800" y="150" width="110" height="320" rx="3" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="892" cy="320" r="6" fill="#1f2933"/>
-  <rect x="1040" y="150" width="110" height="320" rx="3" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="1132" cy="320" r="6" fill="#1f2933"/>
-  <rect x="411" y="50" width="18" height="120" rx="9" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="420" cy="170" r="16" fill="#c92a2a" stroke="#1f2933" stroke-width="3"/>
-  <rect x="416" y="110" width="8" height="60" fill="#c92a2a"/>
-  <line x1="429" y1="148" x2="437" y2="148" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="429" y1="126" x2="437" y2="126" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="429" y1="104" x2="437" y2="104" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="429" y1="82" x2="437" y2="82" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M150,396 L105,534.5" fill="none" stroke="#1f2933" stroke-width="27" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M87,540 h39.5" fill="none" stroke="#6c757d" stroke-width="14.4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M152,273.5 L278,300" fill="none" stroke="#1971c2" stroke-width="21.6" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M119.5,252 Q186,225 177,306 L171.5,405 H117.5 Z" fill="#1971c2" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M150,396 L195,534.5" fill="none" stroke="#1f2933" stroke-width="27" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M209.5,540 h39.5" fill="none" stroke="#6c757d" stroke-width="14.4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M157,270 L278,300" fill="none" stroke="#1971c2" stroke-width="21.6" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="278" cy="300" r="11.7" fill="#f1dfb5"/>
-  <rect x="146.5" y="216" width="18" height="27" fill="#f1dfb5"/>
-  <circle cx="155.5" cy="192.5" r="30.6" fill="#f1dfb5"/>
-  <path d="M125,198 Q123,158.5 157,160 Q186,162 186,183.5 Q155.5,176.5 125,198 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <g transform="translate(270,292) rotate(-14)"><rect x="0" y="-16" width="92" height="14" rx="3" fill="#e9c98a" stroke="#1f2933" stroke-width="2.5"/></g>
-  <g transform="translate(270,292) rotate(4)"><rect x="0" y="0" width="92" height="14" rx="3" fill="#e9c98a" stroke="#1f2933" stroke-width="2.5"/></g>
-  <path d="M639.5,96 A392,392 0 0 1 639.5,488" fill="none" stroke="#6b7480" stroke-width="3" stroke-linecap="round" stroke-opacity="0.35"/>
-  <path d="M650,90 A404,404 0 0 1 650,494" fill="none" stroke="#6b7480" stroke-width="3" stroke-linecap="round" stroke-opacity="0.65"/>
-  <path d="M660.5,84 A416,416 0 0 1 660.5,500" fill="none" stroke="#6b7480" stroke-width="3" stroke-linecap="round" stroke-opacity="1"/>
-  <rect x="300" y="548" width="860" height="16" rx="2" fill="#ffe8a3" stroke="#1f2933" stroke-width="2"/>
-  <line x1="300" y1="548" x2="300" y2="558" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="320" y1="548" x2="320" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="340" y1="548" x2="340" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="360" y1="548" x2="360" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="380" y1="548" x2="380" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="400" y1="548" x2="400" y2="558" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="420" y1="548" x2="420" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="440" y1="548" x2="440" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="460" y1="548" x2="460" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="480" y1="548" x2="480" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="548" x2="500" y2="558" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="520" y1="548" x2="520" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="540" y1="548" x2="540" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="560" y1="548" x2="560" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="580" y1="548" x2="580" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="600" y1="548" x2="600" y2="558" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="620" y1="548" x2="620" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="640" y1="548" x2="640" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="660" y1="548" x2="660" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="680" y1="548" x2="680" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="700" y1="548" x2="700" y2="558" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="720" y1="548" x2="720" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="740" y1="548" x2="740" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="760" y1="548" x2="760" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="780" y1="548" x2="780" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="800" y1="548" x2="800" y2="558" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="820" y1="548" x2="820" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="840" y1="548" x2="840" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="860" y1="548" x2="860" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="880" y1="548" x2="880" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="900" y1="548" x2="900" y2="558" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="920" y1="548" x2="920" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="940" y1="548" x2="940" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="960" y1="548" x2="960" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="980" y1="548" x2="980" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1000" y1="548" x2="1000" y2="558" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1020" y1="548" x2="1020" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1040" y1="548" x2="1040" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1060" y1="548" x2="1060" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1080" y1="548" x2="1080" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1100" y1="548" x2="1100" y2="558" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1120" y1="548" x2="1120" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1140" y1="548" x2="1140" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1160" y1="548" x2="1160" y2="554" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="260" y="542" width="44" height="28" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
+  <image href="pics/fy10/fy10-aanennopeus-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 Salaman välähdys näkyy heti, mutta ukkosen jyrinä kuuluu vasta hetken päästä: ääni etenee ilmassa paljon hitaammin kuin valo. Tässä tutkimuksessa suunnittelet itse koejärjestelyn, jolla mittaat äänen kulkuajan tunnetulla matkalla, ja määrität siitä äänen nopeuden. Tämä sivu kertoo, mitä on saatava selville, ja tukee sinua niin paljon kuin valitsemasi työtapa lupaa. Äänen nopeuden voi määrittää myös putken resonanssista, mutta se on oma tutkimuksensa: tässä mitataan suoraan aikaa ja matkaa.
@@ -139,29 +58,12 @@ Käytä vain opettajan hyväksymää äänilähdettä, äläkä tee kovia ääni
 **Osittain ohjattu.** Yksi toimiva menetelmä on kaksi mikrofonia: ne ovat samalla suoralla äänilähteen kanssa, ja niiden välinen matka on $d$. Äänilähde on mikrofonin 1 takana, joten ääni ohittaa ensin mikrofonin 1 ja sitten mikrofonin 2. Keräin tallentaa molemmat signaalit samalle aika-akselille. Jos ääni saavuttaa mikrofonin 1 hetkellä $t_1$ ja mikrofonin 2 hetkellä $t_2$, ääni kulki matkan $d$ ajassa $t_2 - t_1$. Toistat mittauksen usealla matkalla $d$.
 
 <svg data-fig="setup" viewBox="0 0 600 330" role="img" aria-label="Kaaviokuva ylhäältä. Vasemmalla on äänilähde, sen oikealla puolella mikrofoni 1 ja kauempana mikrofoni 2, kaikki samalla suoralla. Äänen rintama on piirretty mikrofonien väliin. Mikrofonien välinen matka on d. Molemmat mikrofonit on kytketty samaan mittaustietojen keräimeen." style="max-width:100%;font-size:24px">
-  <line x1="40" y1="120" x2="560" y2="120" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <rect x="46" y="100" width="16" height="40" rx="3" fill="#e9c98a" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="66" y="100" width="16" height="40" rx="3" fill="#e9c98a" stroke="#1f2933" stroke-width="2.5"/>
+  <image href="pics/fy10/fy10-aanennopeus-setup.webp" x="-1.3" y="-2.5" width="609.1" height="342.6" preserveAspectRatio="none"/>
   <foreignObject x="4" y="53.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{äänilähde}$</div></foreignObject>
-  <rect x="216" y="110" width="36" height="20" rx="8" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="216" cy="120" r="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="157.5" y="53.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{mikrofoni 1}$</div></foreignObject>
-  <rect x="466" y="110" width="36" height="20" rx="8" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="466" cy="120" r="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="407.5" y="53.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{mikrofoni 2}$</div></foreignObject>
-  <path d="M366.5,75.5 A300,300 0 0 1 366.5,164.5" fill="none" stroke="#6b7480" stroke-width="3" stroke-linecap="round" stroke-opacity="0.35"/>
-  <path d="M376.5,74 A310,310 0 0 1 376.5,166" fill="none" stroke="#6b7480" stroke-width="3" stroke-linecap="round" stroke-opacity="0.65"/>
-  <path d="M386.5,72.5 A320,320 0 0 1 386.5,167.5" fill="none" stroke="#6b7480" stroke-width="3" stroke-linecap="round" stroke-opacity="1"/>
-  <line x1="208" y1="134" x2="208" y2="190" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
-  <line x1="458" y1="134" x2="458" y2="190" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
-  <line x1="208" y1="180" x2="458" y2="180" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="208" y1="170" x2="208" y2="190" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="458" y1="170" x2="458" y2="190" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="323" y="147.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$d$</div></foreignObject>
-  <rect x="270" y="250" width="140" height="50" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="301.5" y="262" width="77" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px;color:#ffffff">$\text{keräin}$</div></foreignObject>
-  <path d="M230,132 C230,230 270,240 300,250" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M482,132 C482,230 420,240 380,250" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
 </svg>
 
 Mieti ja kirjaa vastauksesi ainakin näihin:

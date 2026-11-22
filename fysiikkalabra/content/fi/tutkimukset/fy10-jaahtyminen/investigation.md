@@ -3,58 +3,7 @@
 > **Tutkimuskysymys:** Miten kuuman veden lämpötila muuttuu ajan funktiona, kun vesi jäähtyy huoneessa, ja kuinka hyvin Newtonin jäähtymislaki kuvaa jäähtymistä?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: laboratorion työpöydällä on korkkialustan päällä lasiastia, jossa on kuumaa vettä. Vedestä nousee höyryä. Veteen on upotettu lämpötila-anturi, jonka johto kulkee pöydällä olevaan mittauslaitteeseen. Sivummalla pöydällä seisoo toinen lämpömittari huoneilmassa. Taustalla on ikkuna, ja pöydän reunalla on vedenkeitin." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy10jth-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#dfe9ef"/></linearGradient><linearGradient id="fy10jth-win" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient><linearGradient id="fy10jth-desk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#fy10jth-wall)"/>
-  <rect x="80" y="50" width="260" height="190" rx="4" fill="url(#fy10jth-win)" stroke="#1f2933" stroke-width="3"/>
-  <path d="M137,140 Q136,122.5 157,124.5 Q165.5,106 186,112 Q205,101.5 215,121.5 Q234,123.5 232,140 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <line x1="210" y1="50" x2="210" y2="240" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="80" y1="145" x2="340" y2="145" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="68" y="240" width="284" height="14" rx="3" fill="#c9c2b2" stroke="#1f2933" stroke-width="3"/>
-  <rect x="0" y="440" width="1200" height="160" fill="url(#fy10jth-desk)"/>
-  <line x1="0" y1="462" x2="1200" y2="458" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="484" x2="1200" y2="480" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="506" x2="1200" y2="502" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="528" x2="1200" y2="524" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="550" x2="1200" y2="546" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="572" x2="1200" y2="568" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="440" x2="1200" y2="440" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M150,440 L165,330 Q170,310 195,310 H265 Q290,310 295,330 L310,440 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M295,345 Q345,350 330,410 Q325,425 305,425" fill="none" stroke="#1f2933" stroke-width="10" stroke-linejoin="round"/>
-  <path d="M165,345 L120,320 L128,312 L172,330" fill="#c4ccd4" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="205" y="298" width="50" height="14" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="470" y="428" width="240" height="14" rx="4" fill="#d9a66a" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="503" y="276" width="174" height="149" fill="#a9d1f0"/>
-  <path d="M500,230 V420 Q500,428 508,428 H672 Q680,428 680,420 V230" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
-  <line x1="494" y1="230" x2="500" y2="230" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
-  <line x1="676" y1="314" x2="662" y2="314" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="676" y1="352" x2="662" y2="352" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="676" y1="390" x2="662" y2="390" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <path d="M545,262 q-10,-18.5 0,-36.5 t0,-36.5 t0,-36.5" fill="none" stroke="#6b7480" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.45"/>
-  <path d="M590,262 q-10,-18.5 0,-36.5 t0,-36.5 t0,-36.5" fill="none" stroke="#6b7480" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.45"/>
-  <path d="M640,262 q-10,-18.5 0,-36.5 t0,-36.5 t0,-36.5" fill="none" stroke="#6b7480" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.45"/>
-  <rect x="780" y="120" width="12" height="320" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="740" y="428" width="100" height="14" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="600" y="150" width="190" height="12" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="588" y="140" width="28" height="30" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="596" y="170" width="12" height="200" rx="5" fill="#8a96a3" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M602,140 Q600,90 680,80 Q800,70 900,120 Q960,150 990,300" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round"/>
-  <rect x="930" y="300" width="170" height="140" rx="12" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <rect x="950" y="318" width="130" height="64" rx="4" fill="#dfe9ef" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="970" cy="410" r="9" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="1015" cy="410" r="9" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="1060" cy="410" r="9" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <rect x="1131" y="220" width="18" height="200" rx="9" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="1140" cy="420" r="16" fill="#c92a2a" stroke="#1f2933" stroke-width="3"/>
-  <rect x="1136" y="350" width="8" height="70" fill="#c92a2a"/>
-  <line x1="1149" y1="398" x2="1157" y2="398" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1149" y1="376" x2="1157" y2="376" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1149" y1="354" x2="1157" y2="354" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1149" y1="332" x2="1157" y2="332" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1149" y1="310" x2="1157" y2="310" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1149" y1="288" x2="1157" y2="288" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1149" y1="266" x2="1157" y2="266" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1149" y1="244" x2="1157" y2="244" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="1118" y="428" width="44" height="12" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <image href="pics/fy10/fy10-jaahtyminen-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 Kahvikuppi, saunan kiuas ja kuumasta suihkusta tullut iho jäähtyvät kaikki kohti ympäristön lämpötilaa. Tässä tutkimuksessa mittaat, miten kuuman veden lämpötila muuttuu ajan kuluessa, etsit mittaustuloksiin sopivan matemaattisen mallin ja vertaat sitä Newtonin jäähtymislakiin. Mittaa, piirrä ja päättele itse: tämä sivu kertoo, mitä tutkitaan, ja tukee sinua niin paljon kuin valitsemasi työtapa lupaa.
@@ -171,33 +120,9 @@ Ennen mittaamista päätä ja kirjaa ylös, mitä mittaat, miten ja kuinka pitk�
 
 ::: tuki O OO
 <svg data-fig="setup" viewBox="0 0 600 380" role="img" aria-label="Kaaviokuva. Lasiastiassa on kuumaa vettä eristävän alustan päällä. Lämpötila-anturin kärki on veden keskellä, irti astian pohjasta ja seinistä, ja se mittaa veden lämpötilan T. Anturin johto kulkee mittauslaitteeseen. Sivussa, irti astiasta, on toinen lämpömittari, joka mittaa huoneen lämpötilan T huone." style="max-width:100%;font-size:24px">
-  <line x1="20" y1="330" x2="580" y2="330" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="110" y="318" width="200" height="12" rx="3" fill="#d9a66a" stroke="#1f2933" stroke-width="2"/>
-  <rect x="133" y="180" width="154" height="135" fill="#a9d1f0"/>
-  <path d="M130,140 V310 Q130,318 138,318 H282 Q290,318 290,310 V140" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <line x1="124" y1="140" x2="130" y2="140" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="286" y1="214.5" x2="272" y2="214.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="286" y1="249" x2="272" y2="249" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="286" y1="283.5" x2="272" y2="283.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <path d="M175,172 q-10,-10 0,-20 t0,-20 t0,-20" fill="none" stroke="#6b7480" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.45"/>
-  <path d="M215,172 q-10,-10 0,-20 t0,-20 t0,-20" fill="none" stroke="#6b7480" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.45"/>
-  <path d="M255,172 q-10,-10 0,-20 t0,-20 t0,-20" fill="none" stroke="#6b7480" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.45"/>
-  <rect x="204" y="90" width="12" height="170" rx="5" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <path d="M210,90 Q210,50 270,50 H370" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="370" y="30" width="90" height="46" rx="8" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="382" y="40" width="66" height="26" rx="3" fill="#dfe9ef" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="210" cy="255" r="5" fill="#1f2933"/>
-  <line x1="216" y1="255" x2="300" y2="255" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
+  <image href="pics/fy10/fy10-jaahtyminen-setup.webp" x="0" y="-1.2" width="600" height="386.2" preserveAspectRatio="none"/>
   <foreignObject x="306" y="240.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$T$</div></foreignObject>
   <foreignObject x="336" y="83.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{mittauslaite}$</div></foreignObject>
-  <rect x="491" y="150" width="18" height="150" rx="9" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="500" cy="300" r="16" fill="#c92a2a" stroke="#1f2933" stroke-width="3"/>
-  <rect x="496" y="250" width="8" height="50" fill="#c92a2a"/>
-  <line x1="509" y1="278" x2="517" y2="278" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="509" y1="256" x2="517" y2="256" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="509" y1="234" x2="517" y2="234" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="509" y1="212" x2="517" y2="212" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="509" y1="190" x2="517" y2="190" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="387" y="215.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$T_\text{huone}$</div></foreignObject>
   <foreignObject x="118.5" y="341.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{eristävä alusta}$</div></foreignObject>
 </svg>
