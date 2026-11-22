@@ -26,7 +26,7 @@ kanssa, jonka katselmoinnit kattavat ne. Ei koskaan jo katselmoitavana olevaan P
 kurssille (FY1–FY9) yhden rivin: mitkä kohdat ovat auki ja missä PR:ssä ne tehdään. Voimaan heti; ei odota muita osia.
 
 ### 0g. `site/` pois sisältö-PR:istä (ensin suunnitelma, pysähdys opettajan hyväksyntään)
-Varattu: claude/0g-site-suunnitelma (#687, suunnitelma `docs/audits/2026-11-17-0g-site-suunnitelma.md`, hyväksytty). Päätökset (opettaja 2026-11-17): A `site/` poistuu kokonaan; vanhat linkit → `ruukkilab.fi` PR 3:ssa; esikatselu = CI-artefakti + muuttuneiden sivujen lista; siirtymä PR 1 varjo → PR 2 kytkentä → PR 3 poisto (ajankohta sovitaan erikseen) → PR 4 mittaus. Toteutus yksin, yksi PR kerrallaan.
+Varattu: claude/0g-pr2-kytkenta (#796, PR 2 kytkentä; PR 1 varjo #693 yhdistetty). Suunnitelma: claude/0g-site-suunnitelma (#687, suunnitelma `docs/audits/2026-11-17-0g-site-suunnitelma.md`, hyväksytty). Päätökset (opettaja 2026-11-17): A `site/` poistuu kokonaan; vanhat linkit → `ruukkilab.fi` PR 3:ssa; esikatselu = CI-artefakti + muuttuneiden sivujen lista; siirtymä PR 1 varjo → PR 2 kytkentä → PR 3 poisto (ajankohta sovitaan erikseen) → PR 4 mittaus. Toteutus yksin, yksi PR kerrallaan.
 Jokainen yhdistetty PR vanhentaa kaikkien avoimien PR:ien `site/`-kopion, joten jokainen haara yhdistää mainin ja
 rakentaa `site/`:n uudelleen keskimäärin 1,6 kertaa (juuren `CLAUDE.md` sääntö 4). Tavoite: sisältö-PR ei sisällä
 `site/`-muutoksia; CI rakentaa sivuston ja `ruukkilabra-deploy.yml` julkaisee rakennetun version mainin ajon jälkeen.
@@ -175,6 +175,7 @@ Jaettu (build.py / site.css), yksin, #740:n ja #733:n jälkeen ennen kohtaa 21 (
 ## 24. Uudet kuvat sivustolle (opettaja 2026-11-19; kuvat hyväksytty 15.–18.11.)
 Varattu: claude/24-osa10-fy10 (osa 10, FY10, 62 kuvaa, draft-PR; odottaa jaettua figimage-PR:ää claude/figimage-units, joka kattaa tutkimukset fy10-*)
 Varattu: claude/24-osa3-fy3 (osa 3, FY3, draft-PR)
+Varattu: claude/figimage-units (jaettu: figimage unit-moduuleille FY14 ja FY9, osan 11 edellytys; koordinaattori 2026-11-22)
 Osa 6 (FY6, 79 kuvaa: 75 lukua + koe k1-switch, k3-circuits, k6-setup + Sovella s2-circuit) tehty: PR #794, `approve-figures` ajettu opettajan luvalla (opettaja 2026-11-22 suoraan tekijäsessioon: "Hyväksyn uudet kuvat"), carry (luvut, tehtäväsarjat, koe, Sovella, fy9-tasavirta), site/ ja palautus/ rakennettu, ennen/jälkeen docs/audits/img24-fy6/; odottaa koordinaattorin yhdistämistä. Avoin opettajalle: fy6-15/luokat (III-numero puuttuu vinoneliöstä, PAATOS), viewBox-ylitysten (tyhjä reuna) rajaus.
 FY1:n tehtäväsarjojen katselmoinnit (fy1-1/2/4/7/8, fi/en/fi-easy) siirretty #771:n kuvamuutosten yli (`reviews.py carry --exercises`, teacher-figure; build.py ei enää varoita), PR #792; odottaa koordinaattorin yhdistämistä.
 Varattu: claude/koe-sovella-approve-scope (jaettu korjaus: approve-figures koe/Sovella-sarjoille, ci_scope koe/Sovella-kuville)

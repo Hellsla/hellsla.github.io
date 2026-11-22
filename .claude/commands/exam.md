@@ -20,6 +20,6 @@ the key `<COURSE>/koe` and the page id `<COURSE>-koe`:
 3. `python scripts/screenshot.py <COURSE>-koe --if-stale`, then the packets `--role science` (Opus), `--role pedagogy`
    and `--role visual` (Sonnet), the reviewers in parallel; at most three rounds of fixes.
 4. Before committing: list the staged files and read the staged diff; confirm no reference exam, extract or paraphrase
-   is in it. Then `python scripts/build.py --all`, `python scripts/build.py`, commit, push and open a draft PR
+   is in it. Then `python scripts/build.py --all`, commit (not `site/`: CI builds it), push and open a draft PR
    (**Koe** with each task, its points and competencies, **Tarkistukset**, **Luottamuksellisuus**, **Avoimet kohdat**).
    Merging is the teacher's decision.

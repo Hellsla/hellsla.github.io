@@ -37,6 +37,21 @@ LABEL = re.compile(r"<foreignObject\b.*?</foreignObject>", re.S)
 FIG_REF = re.compile(r'"(?:model_)?figure"\s*:\s*"([^"]+)"|<svg data-fig=\\?"([a-z0-9-]+/[A-Za-z0-9_-]+)\\?"></svg>')
 
 
+def unit_codes():
+    """The modules that are not curriculum courses but have course units (FY9, FY14: lessons/units/<code>-<name>/) or experimental
+    investigations (FY10: lessons/tutkimukset/<code>-<name>/); a module's pictures are then lessons/<CODE>/ASETTELU.tsv and
+    assets/pics/<code>/ as for a course, a figure's id is the unit's or investigation's (work queue 24, parts 9–11)."""
+    out = set()
+    for d in (ROOT / "lessons" / "units", ROOT / "lessons" / "tutkimukset"):
+        if d.is_dir(): out |= {m.group(1).upper() for p in d.iterdir() if (m := re.match(r"(fy\d+)-[a-z]", p.name))}
+    return sorted(out)
+
+
+def modules():
+    """The curriculum courses and the unit modules."""
+    return courses.codes() + [c for c in unit_codes() if c not in courses.codes()]
+
+
 def layout_file(code): return ROOT / "lessons" / code / NAME
 
 
@@ -59,12 +74,15 @@ def layout(code):
 
 
 def code_of(fid):
-    """The module a figure id belongs to (fy2-4/grid -> FY2; also the module's exam and Sovella set: fy4-koe/x, fy4-sovella/x -> FY4), or None (a unit, an
-    investigation)."""
+    """The module a figure id belongs to (fy2-4/grid -> FY2; also the module's exam and Sovella set: fy4-koe/x, fy4-sovella/x -> FY4; a unit of a unit module:
+    fy14-plasma/x -> FY14; an investigation fy10-heiluri/x -> FY10), or None (a unit or investigation of no such module,
+    a TVT guide)."""
     owner = (fid or "").split("/")[0]
     m = re.match(r"^([a-z]+)(\d+)-(?:[0-9][0-9a-z]*|koe|sovella)$", owner)   # a lesson, the exam or the Sovella set of a module (not a unit or an investigation)
     code = f"{m.group(1).upper()}{m.group(2)}" if m else None
-    return code if code in courses.curriculum() else None
+    if code in courses.curriculum(): return code
+    m = re.match(r"^(fy\d+)-[a-z]", owner)                # a figure of a unit (fy14-plasma/x) or of a unit's task set (fy14-plasma-sovella/x)
+    return m.group(1).upper() if m and m.group(1).upper() in unit_codes() else None
 
 
 def row(fid):
@@ -75,14 +93,14 @@ def row(fid):
 def pic(fid):
     """The picture reference a figure with a row uses (pics/fy2/fy2-4-grid.webp), or None."""
     r = row(fid)
-    return f"pics/{courses.course(r['code'])['slug']}/{r['file']}" if r else None
+    return f"pics/{courses.slug(r['code'])}/{r['file']}" if r else None
 
 
 @functools.lru_cache(maxsize=None)
 def bases():
     """{picture reference: [figure ids]} of every module that has a layout file."""
     out = {}
-    for code in courses.codes():
+    for code in modules():
         if layout_file(code).is_file():
             for fid in layout(code): out.setdefault(pic(fid), []).append(fid)
     return out
@@ -146,7 +164,7 @@ def convert(code, package):
     """WebP files in assets/pics/<course>/ and lessons/<COURSE>/ASETTELU.tsv from the teacher's package folder
     (kuvat/, ASETTELU.tsv): the longest side at most 1600 px, lossy WebP, the name `<owner>-<name>.webp`."""
     from PIL import Image
-    package = pathlib.Path(package); slug = courses.course(code)["slug"]
+    package = pathlib.Path(package); slug = courses.slug(code)
     dest = ROOT / "assets" / "pics" / slug; dest.mkdir(parents=True, exist_ok=True)
     src = [l.split("\t") for l in (package / NAME).read_text(encoding="utf-8").splitlines() if l.strip()][1:]
     rows, total = {}, 0
@@ -188,14 +206,14 @@ def check(codes):
     import figcat
     bad = []
     for code in codes:
-        slug = courses.course(code)["slug"]
+        slug = courses.slug(code)
         for fid, r in layout(code).items():
             if not (ROOT / "assets" / "pics" / slug / r["file"]).is_file(): bad.append(f"{fid}: assets/pics/{slug}/{r['file']} is missing")
             if not figcat.exists(fid): bad.append(f"{fid}: no such figure in figures.py")
             elif r["box"] is None and r["type"] != "illustration": bad.append(f"{fid}: a figure with labels needs x, y, width and height")
         used = {r["file"] for r in layout(code).values()}
         for f in sorted((ROOT / "assets" / "pics" / slug).glob("*.webp")):
-            if f.name not in used and re.match(r"fy\d+-\d+-", f.name): bad.append(f"assets/pics/{slug}/{f.name}: no row in {NAME}")
+            if f.name not in used and re.match(r"fy\d+-", f.name): bad.append(f"assets/pics/{slug}/{f.name}: no row in {NAME}")
     for b in bad: print(b)
     print("ok   every picture of a figure has its row and its figure" if not bad else f"{len(bad)} problem(s)")
     return not bad
@@ -205,7 +223,7 @@ if __name__ == "__main__":
     a = sys.argv[1:]
     if a[:1] == ["convert"] and len(a) == 3: convert(a[1].upper(), a[2])
     elif a[:1] == ["flat"] and len(a) == 2: flat(a[1].upper())
-    elif a[:1] == ["check"]: sys.exit(0 if check([x.upper() for x in a[1:]] or [c for c in courses.codes() if layout_file(c).is_file()]) else 1)
+    elif a[:1] == ["check"]: sys.exit(0 if check([x.upper() for x in a[1:]] or [c for c in modules() if layout_file(c).is_file()]) else 1)
     elif a[:1] == ["size"]:
         tot = 0
         for d in sorted((ROOT / "assets" / "pics").iterdir()):
