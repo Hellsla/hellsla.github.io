@@ -4,7 +4,7 @@ The site is called **Ruukkilabra**, subtitle *Lukion fysiikka* / *Upper secondar
 folder, the URL and the scripts keep the old working name fysiikkalabra. Logos: `assets/shared/brand/`.
 
 A digital textbook for Finnish upper-secondary physics (LOPS 2019): theory, p5.js simulations and exercises,
-written and reviewed with Claude Code agents, published from the committed `site/` folder at
+written and reviewed with Claude Code agents, published from the site that CI builds (the `site` artifact; a committed `site/` remains only until work queue 0g PR 3) at
 `https://ruukkilab.fi/` (see "Publishing at ruukkilab.fi" below). House rules for agents: `CLAUDE.md`; writing rules: `NOTES.md`.
 
 ## Quick start
@@ -14,7 +14,7 @@ pip install -r requirements-ci.txt          # the versions CI uses (Playwright p
 python scripts/check_lesson.py fy3-9     # lint, LaTeX, preview build, simulation and inquiry tests, answer positions, 360 px, review state
 python scripts/build.py fy3-9            # preview/fy3-9.html (git-ignored), any lesson
 python scripts/build.py --all            # preview/ with every lesson, drafts included (what CI tests)
-python scripts/build.py                  # site/ from the lessons whose reviews are current (atomic; commit it)
+python scripts/build.py                  # site/ from the lessons whose reviews are current (atomic; CI does this: do not commit it into a pull request)
 python scripts/reviews.py status         # reviewed | legacy | draft for every lesson, and why
 python scripts/reviews.py impact         # which lessons this branch touches and which review each needs
 python scripts/test_reviews.py           # tests of the publishing rule
@@ -76,7 +76,7 @@ Merging a pull request is the teacher's publication decision. CI (`.github/workf
 lints every lesson, builds all previews, runs the review and course tests, the simulation tests, every lesson's
 inquiry tests, the answer-position check and the LaTeX check, verifies carried reviews from history, lists the
 review impact of the branch,
-rebuilds `site/` and fails if the committed copy differs, and checks every published page at eight widths. A lesson
+builds `site/` itself (twice, to prove the build deterministic; a pull request's `site-preview` artifact and the plan job's list of changed pages show what it alters), and checks every published page at eight widths. A lesson
 whose reviews went stale is left out of the build with a WARNING (a CI annotation), never silently.
 
 On a pull request the browser steps (simulations, inquiry tests, layout at eight widths) test only the pages the change
@@ -88,10 +88,10 @@ docstring is the mapping. Main, the weekly run and a manual run (`workflow_dispa
 Teacher 2026-11-04: the source stays in this repository, and the public repository `Hellsla/ruukkilabra` holds only
 the published copy, served by its GitHub Pages (branch `main`, folder `/`, custom domain `ruukkilab.fi`).
 `.github/workflows/ruukkilabra-deploy.yml` runs when `fysiikkalabra-ci` has passed on a main commit (a merged pull
-request, the weekly run or a manual run; never a pull request's own run). It takes that commit's committed `site/`,
+request, the weekly run or a manual run; never a pull request's own run). It takes the `site` artifact of that CI run (a manual run builds the commit itself),
 puts it at the root of the publishing repository, adds the read-aloud models of `Hellsla/ruukkilabra-models`
-(`supertonic3-v1/`, `ort/`) under `models/`, and pushes. If main already has a newer `site/`, it leaves the publishing
-to that commit's own run. A manual run (Actions → ruukkilabra-deploy → Run workflow) publishes the newest main
+(`supertonic3-v1/`, `ort/`) under `models/`, and pushes. The published repository's `.source-sha` names the live commit; an older commit is never published over a newer one. A rollback is
+the manual run with the input `sha`. A manual run (Actions → ruukkilabra-deploy → Run workflow) publishes the newest main
 commit whose CI passed.
 
 `python scripts/deploy_site.py OUT [--models DIR]` assembles the copy: `site/` contents, `CNAME`, `.nojekyll`,

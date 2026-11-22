@@ -12,7 +12,7 @@ A map, not new rules (teacher 2026-11-13). The rules are in `CLAUDE.md` (this fo
 | 3. Pedagogy review | pedagogy-reviewer | whether a 16–19-year-old can learn from it, on a phone and a laptop | physics |
 | 4. Visual and editorial review | visual-editorial-reviewer, from the captures | figures, graphs, mathematical typography, Finnish, presentation | physics (sent to the science reviewer) |
 | 5. Publication rule | `scripts/reviews.py` | a part is built only when all three PASS for its current hash; `scope` decides who looks again, `carry` records a PASS that holds | whether the teacher agrees |
-| 6. CI | `fysiikkalabra-ci` | every check of 1 in full, `reviews.py verify`, committed `site/` equals a fresh render; browser checks (simulations, inquiry, layout at eight widths) only for the pages `ci_scope.py` names | pages outside the scope until the weekly run |
+| 6. CI | `fysiikkalabra-ci` | every check of 1 in full, `reviews.py verify`, the build is deterministic (two renders equal), a page leaves the site only with a row in `docs/site-removals.tsv`, `site-preview` artifact on a pull request; browser checks (simulations, inquiry, layout at eight widths) only for the pages `ci_scope.py` names | pages outside the scope until the weekly run |
 | 7. Teacher | the teacher | figure approvals (`approve-figures`), presentation-only rows, plans, merging = publication | — |
 
 The three reviewers each see only their own packet and never another's report. Automatic review never replaces the

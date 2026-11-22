@@ -18,7 +18,7 @@ Runs, in this order, what /lesson, /exercises and /quality-audit used to run one
   5. review_packet.py for every needed review (with --batch: one review_packet.py --batch per role and language for
      the lesson diffs; an exercise set still gets its own packet).
 --finish instead regenerates the files of step 1, runs reviews.py verify (as CI does; a few minutes), prints each id's
-status in every language and rebuilds site/ (build.py --all, build.py) and palautus/ (palautus_tasks.py).
+status in every language and regenerates palautus/ (palautus_tasks.py, from a build into the git-ignored site-local/: site/ is built by CI only, work queue 0g PR 2).
 
 A course unit id (fy9-liike; work queue 0j, 2026-11-18) is recognised by its folder content/<lang>/units/<id>/ and runs the
 same round for the unit's Sovella task set, which is part of the unit's hash and reviews (--sovella is accepted and
@@ -26,7 +26,7 @@ changes nothing: a unit has no other review packet): figcat.py build; units.py c
 --check; per language reviews.py carry-item unit <id> --lang <l> (a unit's reviews are full or carried, no delta);
 screenshot.py <id> --lang <l> --if-stale where the visual review is needed; practice.py packet units/<id> --role
 science|pedagogy|visual --lang <l> for every needed review; the units.py hash of every language is printed for the
-reviewers' reports. --finish: verify, each language's unit status, build.py --all, build.py, palautus_tasks.py. The
+reviewers' reports. --finish: verify, each language's unit status, build.py into site-local/, palautus_tasks.py. The
 assessment and coverage files belong to a course, so a unit alone regenerates only the figure catalogue. Lesson ids and
 unit ids can be mixed in one call.
 
@@ -39,7 +39,7 @@ version (the cloud image has 1.63, the repository pins 1.65) only warns.
 Prints a short summary: the failing check lines only, each reviewer's mode, the carries recorded, the packet paths and
 the generated files that changed. Every command's full output is in preview/round.log. --lang limits the languages
 (default: every language that has the lesson). Exit status 1 if a check, a step or verify failed."""
-import pathlib, re, subprocess, sys
+import os, pathlib, re, subprocess, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import courses, i18n
 
@@ -245,7 +245,8 @@ def main(a):
                 for lang in unit_languages(uid, only):
                     st = units.status(uid, lang)
                     say(f"[{lang}] {uid}: {st['state']} ({', '.join(f'{k}={v}' for k, v in st['reports'].items())})")
-            for args in (["build.py", "--all"], ["build.py"], ["palautus_tasks.py"]):   # palautus/ is generated from the built pages (8s)
+            os.environ["BUILD_SITE_DIR"] = "site-local"   # nobody builds site/ into a pull request any more (CI does, work queue 0g PR 2); palautus/ is generated from the built pages
+            for args in (["build.py"], ["palautus_tasks.py", "site-local"]):
                 rc, out = run(args, log)
                 warn = [l for l in out if "WARNING" in l]
                 say(f"{' '.join(args)}: " + ("ok" if rc == 0 else "FAIL " + (out[-1] if out else "")) + (f", {len(warn)} WARNING line(s) (in the log)" if warn else ""))
