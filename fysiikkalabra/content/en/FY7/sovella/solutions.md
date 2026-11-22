@@ -9,36 +9,14 @@ The ion travels straight at constant velocity only if the sum of the forces is z
 The magnetic force is perpendicular to both the velocity and the field, and its direction is given by the right-hand rule. The electric force on a positive charge is in the direction of the electric field.
 
 <svg data-fig="fy7-s1-forces" viewBox="0 0 600 330" role="img" aria-label="Schematic diagram of the velocity selector: the upper plate is positive and the lower negative, so the electric field E points downwards between the plates. The magnetic field points into the page, shown by the green crosses. Between the plates there is a positive ion whose velocity v points to the right. The ion is acted on by a magnetic force F m upwards and an electric force F s downwards. The force arrows are equally long, because the forces on an ion travelling straight cancel each other." style="max-width:100%;font-size:24px">
-  <rect x="60" y="38" width="480" height="12" rx="2" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="60" y="280" width="480" height="12" rx="2" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
+  <image href="pics/fy7/fy7-sovella-fy7-s1-forces.webp" x="0" y="0" width="600" height="337.5" preserveAspectRatio="none"/>
   <foreignObject x="30" y="29.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$+$</div></foreignObject>
   <foreignObject x="30" y="271.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$-$</div></foreignObject>
-  <line x1="110" y1="64" x2="110" y2="254" stroke="#8a5f22" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M110,266 L104,253 L116,253 Z" fill="#8a5f22" stroke-linejoin="round"/>
-  <line x1="490" y1="64" x2="490" y2="254" stroke="#8a5f22" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M490,266 L484,253 L496,253 Z" fill="#8a5f22" stroke-linejoin="round"/>
   <foreignObject x="122" y="215.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#8a5f22">$\overline{E}$</div></foreignObject>
-  <line x1="184" y1="84" x2="196" y2="96" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="184" y1="96" x2="196" y2="84" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="184" y1="234" x2="196" y2="246" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="184" y1="246" x2="196" y2="234" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="404" y1="84" x2="416" y2="96" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="404" y1="96" x2="416" y2="84" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="404" y1="234" x2="416" y2="246" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="404" y1="246" x2="416" y2="234" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
   <foreignObject x="425" y="85.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}_\text{s}$</div></foreignObject>
-  <line x1="300" y1="165" x2="300" y2="88" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M300,73 L307,89 L293,89 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="314" y="68.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{m}$</div></foreignObject>
-  <line x1="300" y1="165" x2="300" y2="242" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M300,257 L293,241 L307,241 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="314" y="232.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{s}$</div></foreignObject>
-  <line x1="314" y1="165" x2="406" y2="165" stroke="#1971c2" stroke-width="3.5" stroke-linecap="butt"/>
-  <path d="M420,165 L405,172 L405,158 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="428" y="150.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <circle cx="300" cy="165" r="11" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
-  <line x1="294.5" y1="165" x2="305.5" y2="165" stroke="#1f2933" stroke-width="2.2" stroke-linecap="butt"/>
-  <line x1="300" y1="159.5" x2="300" y2="170.5" stroke="#1f2933" stroke-width="2.2" stroke-linecap="butt"/>
 </svg>
 
 **Model answer:** The ion moves to the right and the magnetic field points into the page. By the right-hand rule, the magnetic force $\overline{F}_\text{m}$ on a positive ion points upwards.
@@ -314,24 +292,13 @@ The peak of the spectrum of an object at room temperature is at about $10\,\mu\t
 The end face is perpendicular to the side surface, so the normal of the end face is parallel to the side surface and the angle of incidence of the ray at the side surface is $90^\circ - \beta$. The greater $\theta$ is, the greater $\beta$ is and the smaller the angle of incidence at the side surface, so at the greatest allowed angle of incidence the angle of incidence at the side surface is exactly the critical angle.
 
 <svg data-fig="fy7-s4-fibre" viewBox="0 0 600 300" role="img" aria-label="Schematic diagram, angles exaggerated: the end of an optical fibre seen from the side. In the middle is the core, with refractive index n 1, and above and below it the cladding, with refractive index n 2. On the left is air. A ray comes from the air to the end face of the fibre at an angle theta to the normal of the end face and is refracted in the core to an angle beta. The ray strikes the interface between the core and the cladding at an angle alpha r to the normal of the interface and is totally reflected back into the core. The angles beta and alpha r together make 90 degrees." style="max-width:100%;font-size:24px">
-  <rect x="200" y="40" width="380" height="50" fill="#e7f5ff" stroke="#8a96a3" stroke-width="1.5"/>
-  <rect x="200" y="230" width="380" height="50" fill="#e7f5ff" stroke="#8a96a3" stroke-width="1.5"/>
-  <rect x="200" y="90" width="380" height="140" fill="#d0ebff" stroke="#1f2933" stroke-width="2"/>
+  <image href="pics/fy7/fy7-sovella-fy7-s4-fibre.webp" x="19.3" y="7.2" width="579.7" height="298.3" preserveAspectRatio="none"/>
   <foreignObject x="427" y="50.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{cladding } n_2$</div></foreignObject>
   <foreignObject x="427" y="240.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{cladding } n_2$</div></foreignObject>
   <foreignObject x="477" y="185.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{core } n_1$</div></foreignObject>
   <foreignObject x="60" y="95.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{air}$</div></foreignObject>
-  <line x1="80" y1="180" x2="330" y2="180" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="70" y1="267.5" x2="200" y2="180" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="200" y1="180" x2="423" y2="90" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="423" y1="90" x2="476.5" y2="111.5" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M487.5,116 L473.5,117 L478,106 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="423" y1="60" x2="423" y2="180" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <path d="M140,180 A60,60 0 0 1 150.5,213.5" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
   <foreignObject x="108" y="187.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\theta$</div></foreignObject>
-  <path d="M260,180 A60,60 0 0 0 255.5,157.5" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
   <foreignObject x="270" y="151.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\beta$</div></foreignObject>
-  <path d="M423,136 A46,46 0 0 1 380,107" fill="none" stroke="#1f2933" stroke-width="1.5" stroke-linejoin="round"/>
   <foreignObject x="366" y="139.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\alpha_\text{r}$</div></foreignObject>
 </svg>
 
