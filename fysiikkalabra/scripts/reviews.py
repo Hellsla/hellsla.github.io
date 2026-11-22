@@ -1315,8 +1315,13 @@ def approve_figures(lid, images_only=False):
     """Append a row for every figure of lesson `lid` (its figures.py, as drawn now) that has none for its current drawing.
     images_only: only the figures drawn on a picture file (a row in lessons/<COURSE>/ASETTELU.tsv, scripts/figimage.py;
     work queue 24: the hash covers the picture's bytes), so the other figures of the lesson stay as they were."""
-    rows = teacher_figures(); folder = find_lesson(lid)
-    mod = figcat.module(str(courses.code_dir(folder)))
+    rows = teacher_figures()
+    m = re.fullmatch(r"([a-z]+\d+)-(koe|sovella)", lid)               # a course's exam or Sovella set: lessons/<COURSE>/<koe|sovella>/figures.py (not in the figure catalog; ids fy4-koe/fy4-k1-fbd)
+    if m:
+        f = ROOT / "lessons" / m.group(1).upper() / m.group(2) / "figures.py"
+        if not f.is_file(): sys.exit(f"{lid}: no {f.relative_to(ROOT)}")
+        mod = figcat.module(str(f.parent))
+    else: mod = figcat.module(str(courses.code_dir(find_lesson(lid))))
     new = [(f"{lid}/{name}", figure_hash(f"{lid}/{name}")) for name in getattr(mod, "FIGURES", {}) if not images_only or figimage.row(f"{lid}/{name}")]
     new = [(fid, h) for fid, h in new if h not in rows.get(fid, set())]
     if not TEACHER_FIGURES.is_file():

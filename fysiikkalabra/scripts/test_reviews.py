@@ -1103,6 +1103,21 @@ _r8.teacher_text_rows = lambda: {("content/fi/FY3/x/lesson.md", _r8._pres_hash("
 expect("8k: text_approved: exactly the approved before and after", _r8.text_approved("content/fi/FY3/x/lesson.md", "a", "b") and not _r8.text_approved("content/fi/FY3/x/lesson.md", "a", "c") and not _r8.text_approved("content/fi/FY3/y/lesson.md", "a", "b"))
 expect("8k: ... never code (a sim.js row covers nothing)", not _r8.text_approved("content/fi/FY3/x/sim.js", "a", "b") and not _r8.text_eligible("lessons/FY3/x/answers.py") and not _r8.text_eligible("tests/sims/x.json"))
 
+# approve-figures knows a course's exam and Sovella set (fy4-koe, fy4-sovella), not only lessons (work queue 24, #786 and #788 wrote the rows by hand)
+_real_tf = _r8.TEACHER_FIGURES
+with _tf.TemporaryDirectory() as _d8:
+    _r8.TEACHER_FIGURES = _pl.Path(_d8) / "teacher-figures.tsv"; _r8.teacher_figures.cache_clear(); _r8.approved.cache_clear()
+    try:
+        _rows = lambda: sorted(l.split("\t")[1:] for l in _r8.TEACHER_FIGURES.read_text().splitlines()[4:])
+        _r8.approve_figures("fy4-koe", True); _r8.approve_figures("fy4-sovella", True)
+        _want = sorted([f, _r8.figure_hash(f)] for f in ("fy4-koe/fy4-k1-fbd", "fy4-koe/fy4-k3-fbd", "fy4-sovella/fy4-s3-collision"))
+        expect("8l: approve-figures fy4-koe fy4-sovella --images writes a row per picture figure, with figure_hash", _rows() == _want, str(_rows()))
+        _r8.approve_figures("fy4-koe", True); expect("8l: ... and a second run adds nothing", len(_rows()) == 3)
+        _hand = {tuple(l.split("\t")[1:3]) for l in _real_tf.read_text().splitlines()}
+        expect("8l: ... the same rows the hand-written ones in docs/teacher-figures.tsv have", all(tuple(r) in _hand for r in _want))
+        expect("8l: ... and the figure counts as approved", _r8.approved("fy4-koe/fy4-k1-fbd"))
+    finally: _r8.TEACHER_FIGURES = _real_tf; _r8.teacher_figures.cache_clear(); _r8.approved.cache_clear()
+
 expect("real project untouched", snapshot() == REAL)
 print("\n" + ("all review tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
 sys.exit(1 if failures else 0)
