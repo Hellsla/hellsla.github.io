@@ -1279,12 +1279,12 @@ def _own_language(code):
 def figure_hash(fid):
     """Hash of figure `fid` as figures.py draws it now in Finnish (what an approval row names)."""
     figlib.set_language({}, ",")                       # the Finnish drawing, whatever was drawn before in this process
-    try: svg = figcat.render(fid)
-    except KeyError:
-        oid, name = fid.split("/", 1); f = _item_figures(oid)
-        if f is None: raise
+    oid, name = fid.split("/", 1)
+    f = None if oid.endswith("-sovella") else _item_figures(oid)   # a unit, an investigation or a guide (a unit's task set is in the figure catalog)
+    if f is not None:                                  # drawn as figures.py draws it, in the item's own language, never through figcat.render (which sets data-fig and Finnish decimals): the hashes of the figures approved before figcat knew these owners (work queue 24) stay valid
         fn = figcat.module(str(f.parent)).FIGURES[name]
-        _own_language(f.read_text()); svg = figimage.apply(fn(), fid)   # a unit's figure drawn on its picture (scripts/figimage.py)
+        _own_language(f.read_text()); svg = figimage.apply(fn(), fid)   # drawn on its picture where it has a row (scripts/figimage.py)
+    else: svg = figcat.render(fid)
     h = hashlib.sha256(svg.encode())
     base = figimage.pic(fid)
     if base and courses.pic_source(base).is_file(): h.update(courses.pic_source(base).read_bytes())   # a picture as the base: the file is part of what the teacher approved (work queue 24)
