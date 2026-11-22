@@ -1140,6 +1140,8 @@ def build_units(lang, out, unit_pub):
         tasks_html = ""                                  # the unit's own task set (FY9): its Tehtävät, last on the page
         if units.has_tasks(uid, lang):
             tasks_html, _ = practice.render(units.task_key(uid), lang, md, solution_html, T("practice.title"), embedded=True, prefix=units.number(uid))
+            tk = units.task_key(uid)
+            copy_pics(uid, [(practice.folder(tk, lang) / n).read_text() for n in practice.TEXTS if (practice.folder(tk, lang) / n).is_file()])   # the base pictures of the task set's figures (work queue 24)
         body, toc = inquiry.render(f, inq, {"intro": intro, "sections": sections, "sim": sim, "exercises": tasks_html, "exit": exit_html,
                                             "concepts": inquiry.key_concepts_html(uid, d.get("key_concepts"), md),
                                             "selfassess": self_assesses(lang, {"course": code, "id": uid})}, md)   # Selkeä suomi only (NOTES.md §12)
