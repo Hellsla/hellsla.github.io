@@ -68,8 +68,7 @@ if "--no-build" not in sys.argv:                       # the captures show the c
     r = subprocess.run([sys.executable, str(courses.ROOT / "scripts/build.py"), lid], cwd=courses.ROOT, capture_output=True, text=True)
     if r.returncode: sys.exit(f"build.py {lid} failed:\n{r.stdout[-800:]}{r.stderr[-800:]}")
 page_file = courses.ROOT / "preview" / f"{SUB}{lid}.html"
-if not page_file.exists(): page_file = courses.ROOT / "site" / f"{SUB}{lid}.html"
-if not page_file.exists(): sys.exit(f"no built page for {lid}: run python scripts/build.py {lid}")
+if not page_file.exists(): sys.exit(f"no built page for {lid}: run python scripts/build.py {lid}")   # preview/ only: site/ is built by CI, not by an agent (work queue 0g PR 2)
 
 
 def stamp():

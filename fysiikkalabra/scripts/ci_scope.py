@@ -1,9 +1,12 @@
 """Which pages a pull request's browser checks must test (teacher 2026-11-01: "testaa vain muuttuneet sivut").
 
-  python scripts/ci_scope.py [<base-ref>]      prints "full", or the page ids to test (space separated; empty: none)
-  python scripts/ci_scope.py [<base-ref>] --built <base site dir> <head site dir>
-                                               the same, from two renders of the site instead of the committed site/ diff
-                                               (work queue 0g PR 1: a shadow run in CI's plan job; nothing uses it yet)
+  python scripts/ci_scope.py <base-ref> --built <base site dir> <head site dir>
+                                               prints "full", or the page ids to test (space separated; empty: none)
+  python scripts/ci_scope.py --changed <base site dir> <head site dir>
+                                               the pages two renders differ in: added, removed and changed (a PR's step summary)
+
+Since work queue 0g PR 2 (2026-11-22) the site/ rows come from two renders of the site (the base commit's and this one's,
+built in CI's plan job), never from a committed site/ diff: a `site/` path in the git diff is ignored.
 
 The three slow CI steps (test_sims.py, the per-lesson inquiry tests and check_layout.py at eight widths; together
 about 1 h 30 min of a full run) open pages in a browser. On a pull request they test only the pages the change can
@@ -29,9 +32,9 @@ docs/teacher-figures.tsv, docs/teacher-text.tsv) change no page: their unit test
                                                                used by none, or by an investigation or guide -> full
   lang/<lang>.json                                             only its "sims" block changed: the lessons of those
                                                                sims; any other text -> full
-  site/<id>.html, site/<lang>/<id>.html, site/<id>-sim.js      that page (a lesson that publishes or unpublishes, a
-                                                               neighbour whose Edellinen / Seuraava luku changed); a page whose
-                                                               only change is ?v= cache tokens: nothing (2026-11-16)
+  site/<id>.html, site/<lang>/<id>.html, site/<id>-sim.js      (rows of the two renders' difference) that page (a lesson that
+                                                               publishes or unpublishes, a neighbour whose Edellinen / Seuraava
+                                                               luku changed); a page whose only change is ?v= cache tokens: nothing
   site/sims/**, site/pics/**                                   nothing of its own (copies of assets/, mapped above)
   site/index.html, site/<COURSE>.html                          nothing (the course pages are not in the browser
                                                                steps; test_home.py checks them on every run)
@@ -51,8 +54,8 @@ docs/teacher-figures.tsv, docs/teacher-text.tsv) change no page: their unit test
   templates/sw.js, templates/offline.js, site/sw.js, site/offline.js                shared (every page registers the worker): smoke; scripts/test_offline.py runs in every run
   scripts/, templates/, other site/ files (site.css, lesson.js, vendor/ ...), curriculum.json, competencies.json,
   glossary.json, local-courses.json, the workflow file                                             full
-The site/ rows are sound because CI fails unless the committed site/ is exactly a fresh render of the sources:
-every page whose HTML a change alters is in the pull request's diff.
+The site/ rows are sound because they come from rendering both commits: every page whose HTML a change alters differs
+between the two renders (checks-3 fails if the build is not deterministic).
 """
 import json, re, subprocess, sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -89,11 +92,10 @@ def set_deps():
     return out
 
 
-def scope(base, built=None):
+def scope(base, built):
     """("full", reason) or ("pages", {page id: [why, ...]}).
-    built = (base_site_dir, head_site_dir): the two renders replace the committed site/ diff (work queue 0g, PR 1 shadow run)."""
-    names = git("diff", "--name-only", "--relative", f"{base}...HEAD").split()
-    if built: names = [n for n in names if not n.startswith("site/")] + built_names(*built)
+    built = (base_site_dir, head_site_dir): the two renders give the site/ rows; a committed site/ diff is not read (work queue 0g)."""
+    names = [n for n in git("diff", "--name-only", "--relative", f"{base}...HEAD").split() if not n.startswith("site/")] + built_names(*built)
     # the workflow first: it lies outside fysiikkalabra/, so a pull request that changes nothing else has no name above,
     # and returning "no page" for it skipped every browser check of a change to how they are run (2026-11-11)
     wf = git("diff", "--name-only", f"{base}...HEAD", "--", f"{git('rev-parse', '--show-toplevel').strip()}/.github/").split()
@@ -139,14 +141,23 @@ def scope(base, built=None):
     if shared:                                          # the sample, and the pages the change names by their own sources
         for q in SMOKE: add(q, f"smoke sample ({shared[0]})")
     else:
-        only_v = set() if built else version_only(base, [n for why in rendered.values() for n in why if n.endswith(".html")])
-        for q, why in rendered.items():
-            why = [n for n in why if n not in only_v]
-            if why: pages.setdefault(q, []).extend(why)
+        for q, why in rendered.items(): pages.setdefault(q, []).extend(why)
     return "pages", pages
 
 
 VER = re.compile(r"\?v=[0-9a-f]*")
+
+
+def changed_pages(base_dir, head_dir):
+    """(added, removed, changed) HTML pages (paths under site/) between two renders; ?v= tokens alone are no change."""
+    names = built_names(base_dir, head_dir)
+    base_dir, head_dir = pathlib.Path(base_dir), pathlib.Path(head_dir)
+    add, gone, ch = [], [], []
+    for n in names:
+        if not n.endswith(".html"): continue
+        rel = n[len("site/"):]
+        (ch if (base_dir / rel).is_file() and (head_dir / rel).is_file() else add if (head_dir / rel).is_file() else gone).append(rel)
+    return add, gone, ch
 
 
 def built_names(base_dir, head_dir):
@@ -164,30 +175,17 @@ def built_names(base_dir, head_dir):
     return out
 
 
-def version_only(base, names):
-    """The pages among names whose diff against base changes nothing but ?v= cache tokens (build.py: a shared file's
-    hash in its URL). Such a page looks the same: the file it points at has not changed in this diff, or that change
-    is shared and the smoke sample tests it (work queue 5, 2026-11-16)."""
-    if not names: return set()
-    out, cur, minus, plus = set(), None, [], []
-    def done():
-        if cur and minus and sorted(VER.sub("", l) for l in minus) == sorted(VER.sub("", l) for l in plus): out.add(cur)
-    for line in git("diff", "-U0", "--relative", "--no-color", f"{base}...HEAD", "--", *names).splitlines():
-        if line.startswith("diff --git"):
-            done(); cur, minus, plus = None, [], []
-        elif line.startswith("+++ "):
-            cur = line[6:] if line.startswith("+++ b/") else None   # /dev/null: a new page is a change
-        elif line.startswith("-") and not line.startswith("--- "): minus.append(line[1:])
-        elif line.startswith("+"): plus.append(line[1:])
-    done()
-    return out
-
-
 if __name__ == "__main__":
     argv = sys.argv[1:]
-    built = None
-    if "--built" in argv:                              # --built <base site dir> <head site dir>: scope from two renders, not the committed site/ diff
-        i = argv.index("--built"); built = (argv[i + 1], argv[i + 2]); del argv[i:i + 3]
+    if argv[:1] == ["--changed"]:                      # --changed <base site dir> <head site dir>: the pages the two renders differ in
+        add, gone, changed = changed_pages(argv[1], argv[2])
+        print(f"added {len(add)}, removed {len(gone)}, changed {len(changed)} pages")
+        for label, ps in (("added", add), ("removed", gone), ("changed", changed)):
+            for p in ps: print(f"  {label}: {p}")
+        sys.exit(0)
+    if "--built" not in argv or len(argv) < 4:
+        sys.exit("usage: ci_scope.py <base-ref> --built <base site dir> <head site dir>")   # the plan job falls back to a full run
+    i = argv.index("--built"); built = (argv[i + 1], argv[i + 2]); del argv[i:i + 3]
     kind, what = scope(argv[0] if argv else "origin/main", built)
     if kind == "full":
         print("full"); print(f"full run: {what}", file=sys.stderr)
