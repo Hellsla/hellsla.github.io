@@ -80,9 +80,10 @@ import reviews
 _c = reviews.Commit(reviews.git("rev-parse", "HEAD").strip())
 _clean = units.content_hash("fy9-aallot", "fi", read=_c.read)
 _texts, _base, _src = units.texts_of, figimage.is_base, courses.pic_source
-units.texts_of = lambda uid, lang: _texts(uid, lang) + '<img src="pics/fy9/fy9-aallot-hero.webp">'     # a working tree that now refers to a picture the commit did not
-figimage.is_base = lambda ref: True
-courses.pic_source = lambda ref: next((courses.ROOT / "assets" / "pics").rglob("*.webp"))
+_fake = "pics/fy9/zz-test-only.webp"
+units.texts_of = lambda uid, lang: _texts(uid, lang) + f'<img src="{_fake}">'     # a working tree that now refers to a picture the commit did not
+figimage.is_base = lambda ref: ref == _fake or _base(ref)
+courses.pic_source = lambda ref: next((courses.ROOT / "assets" / "pics").rglob("*.webp")) if ref == _fake else _src(ref)
 try: _dirty = units.content_hash("fy9-aallot", "fi", read=_c.read)
 finally: units.texts_of, figimage.is_base, courses.pic_source = _texts, _base, _src
 check("units.content_hash with a commit's reader does not depend on the working tree's texts", _clean == _dirty, f"{_clean} vs {_dirty}")
