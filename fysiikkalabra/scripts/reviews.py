@@ -2094,9 +2094,12 @@ def passed_at(log, folder, part, h):
 
 
 def _history(folder):
-    """The last 80 commits that touched what a lesson's hashes cover (where scope looks for the version a reviewer passed)."""
+    """The last 300 commits that touched what a lesson's hashes cover (where scope looks for the version a reviewer passed).
+    The paths include all of `assets` (a lesson's simulation, pictures and shared files are in its hash), so a picture pull request
+    (work queue 24: one module's WebP files, several commits and merges) pushes other lessons' passed versions out of a short
+    window: with 80 commits `verify` failed on #800 (fy6-12 exercises: "no commit holds that version")."""
     lid = folder.name; legacy = f"content/{folder.parent.name}/{lid}"     # the folder before the languages (Commit.read)
-    return (git("log", "--format=%H", "-n", "80", "--", folder.relative_to(ROOT).as_posix(), courses.code_dir(folder).relative_to(ROOT).as_posix(),
+    return (git("log", "--format=%H", "-n", "300", "--", folder.relative_to(ROOT).as_posix(), courses.code_dir(folder).relative_to(ROOT).as_posix(),
                 legacy, f"tests/sims/{lid}.json", "assets", f"lang/{courses.lang_of(folder)}.json", *figure_paths(folder)) or "").split()
 
 
