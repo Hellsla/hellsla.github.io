@@ -90,6 +90,12 @@ FAKE = {"type": "diagram", "file": "t-fig.webp", "box": None, "shift": {}, "flat
 figimage.row, figimage.pic = (lambda fid: FAKE if fid == "fy4-sovella/fy4-s3-collision" else None), (lambda fid: "pics/fy4/t-fig.webp" if fid == "fy4-sovella/fy4-s3-collision" else None)
 try: stale = not practice.figures("FY4", write=False)
 finally: figimage.row, figimage.pic = real_row, real_pic
+UFID = "fy9-aallot-sovella/fy9-aallot-s3-T"           # the task set of a unit: the figure's owner is "<unit>-sovella", not "units/<unit>-sovella"
+UFAKE = dict(FAKE, code="FY9")
+figimage.row, figimage.pic = (lambda fid: UFAKE if fid == UFID else None), (lambda fid: "pics/fy9/t-fig.webp" if fid == UFID else None)
+try: ustale = not practice.figures("units/fy9-aallot", write=False)
+finally: figimage.row, figimage.pic = real_row, real_pic
+check("practice.figures draws a unit's Sovella figure on its picture (owner id without the units/ prefix)", ustale)
 check("practice.figures writes a figure with a row on its picture (a solutions.md without it is out of date)", stale)
 check("practice.figures leaves solutions.md as it is when no figure has a row", practice.figures("FY4", write=False) or figimage.row("fy4-sovella/fy4-s3-collision"))
 

@@ -174,6 +174,7 @@ Jaettu (build.py / site.css), yksin, #740:n ja #733:n jälkeen ennen kohtaa 21 (
 
 ## 24. Uudet kuvat sivustolle (opettaja 2026-11-19; kuvat hyväksytty 15.–18.11.)
 Varattu: claude/24-osa3-fy3 (osa 3, FY3, draft-PR)
+Varattu: claude/practice-unit-id (jaettu: practice.figures antaa unit-Sovellan kuvalle omistajan id:n ilman units/-etuliitettä; FY9-osan edellytys)
 Varattu: claude/figimage-units (jaettu: figimage unit-moduuleille FY14 ja FY9, osan 11 edellytys; koordinaattori 2026-11-22)
 Osa 6 (FY6, 79 kuvaa: 75 lukua + koe k1-switch, k3-circuits, k6-setup + Sovella s2-circuit) tehty: PR #794, `approve-figures` ajettu opettajan luvalla (opettaja 2026-11-22 suoraan tekijäsessioon: "Hyväksyn uudet kuvat"), carry (luvut, tehtäväsarjat, koe, Sovella, fy9-tasavirta), site/ ja palautus/ rakennettu, ennen/jälkeen docs/audits/img24-fy6/; odottaa koordinaattorin yhdistämistä. Avoin opettajalle: fy6-15/luokat (III-numero puuttuu vinoneliöstä, PAATOS), viewBox-ylitysten (tyhjä reuna) rajaus.
 FY1:n tehtäväsarjojen katselmoinnit (fy1-1/2/4/7/8, fi/en/fi-easy) siirretty #771:n kuvamuutosten yli (`reviews.py carry --exercises`, teacher-figure; build.py ei enää varoita), PR #792; odottaa koordinaattorin yhdistämistä.
