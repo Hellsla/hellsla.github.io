@@ -7,7 +7,7 @@
 # A manual run (Actions -> ruukkilabra-deploy -> Run workflow) publishes the newest main commit whose CI passed, or,
 # with "now" ticked, the newest main commit at once without waiting for CI (the teacher's call as admin; the privacy
 # and link gates of scripts/deploy_site.py still run; teacher 2026-11-04). A manual run builds the site itself from that commit
-# (scripts/build.py), and with the input `sha` it publishes that older commit (a rollback; the build is deterministic from
+# (scripts/build.py; so does a CI run that has no `site` artifact, one from before work queue 0g PR 2), and with the input `sha` it publishes that older commit (a rollback; the build is deterministic from
 # the sources and their history), or revert in Hellsla/ruukkilabra. The artifact of a CI run is kept 14 days, which a rollback does not need.
 # The published repository's .source-sha file names the commit that is live. A commit is not published when the live one is
 # newer (a descendant of it), so two CI runs finishing out of order never publish the older site over the newer.
@@ -59,7 +59,7 @@ jobs:
           fi
           echo "sha=$sha" >> "$GITHUB_OUTPUT"; echo "publishing $sha" | tee -a "$GITHUB_STEP_SUMMARY"
       - uses: actions/checkout@v4
-        with: { ref: "${{ steps.pick.outputs.sha }}", path: src, fetch-depth: "${{ github.event_name == 'workflow_dispatch' && 0 || 1 }}" }   # a manual run builds: the build reads the exercises' reviewed version from history
+        with: { ref: "${{ steps.pick.outputs.sha }}", path: src, fetch-depth: 0 }   # a manual run builds: the build reads the exercises' reviewed version from history
       - uses: actions/checkout@v4
         with: { repository: Hellsla/ruukkilabra, ssh-key: "${{ secrets.RUUKKILABRA_DEPLOY_KEY }}", path: out, persist-credentials: true }
       - name: a newer site is not overwritten by an older one (.source-sha of the published repository)
@@ -84,14 +84,16 @@ jobs:
         if: steps.fresh.outputs.go
         with: { python-version: "3.12" }
       - name: the site that CI built and tested (artifact `site` of the run that has just passed)
+        id: artifact
         if: steps.fresh.outputs.go && github.event_name == 'workflow_run'
+        continue-on-error: true          # a CI run from before work queue 0g PR 2 has no `site` artifact: the next step builds the commit instead
         uses: actions/download-artifact@v4
         with: { name: site, path: built-site, run-id: "${{ github.event.workflow_run.id }}", github-token: "${{ github.token }}" }
       - uses: actions/setup-node@v4
-        if: steps.fresh.outputs.go && github.event_name == 'workflow_dispatch'
+        if: steps.fresh.outputs.go && (github.event_name == 'workflow_dispatch' || steps.artifact.outcome == 'failure')
         with: { node-version: "22" }
-      - name: a manual run builds the site from that commit (the same scripts/build.py as CI)
-        if: steps.fresh.outputs.go && github.event_name == 'workflow_dispatch'
+      - name: a manual run, or a CI run without a `site` artifact, builds the site from that commit (the same scripts/build.py as CI)
+        if: steps.fresh.outputs.go && (github.event_name == 'workflow_dispatch' || steps.artifact.outcome == 'failure')
         working-directory: src/fysiikkalabra
         run: |
           python -m pip install -q -r requirements-ci.txt
