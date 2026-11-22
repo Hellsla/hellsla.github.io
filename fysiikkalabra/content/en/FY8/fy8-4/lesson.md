@@ -976,7 +976,7 @@ When the double-slit experiment is done with light so weak that there is on aver
 ```pysahdy
 According to the wave model, a single hit lands at a certain bright fringe with probability $0.040$. How many hits are expected at this place when $5000$ hits accumulate in total? What about $50\,000$ hits, and which result is relatively more even?
 ---
-The expected number of hits is the probability times the number of hits: $0.040 \cdot 5000 = 200$ and $0.040 \cdot 50\,000 = 2000$. The actual count varies randomly: about $\pm 14$ in the first ($7\,\%$ of $200$) and about $\pm 44$ in the second ($2\,\%$ of $2000$). In the larger experiment the share of hits is therefore closer to $4\,\%$.
+The expected number of hits is the probability times the number of hits: $0.040 \cdot 5000 = 200$ and $0.040 \cdot 50\,000 = 2000$. The actual count varies randomly, and the variation is roughly the square root of the expected number: $\sqrt{200} \approx 14$ ($7\,\%$ of $200$) and $\sqrt{2000} \approx 44$ ($2\,\%$ of $2000$). In the larger experiment the share of hits is therefore closer to $4\,\%$.
 ```
 
 ### The wave gives the probability

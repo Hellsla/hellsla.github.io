@@ -232,9 +232,9 @@ Vapaata kvarkkia ei ole koskaan havaittu. Vahva vuorovaikutus pitää kvarkit ha
 </svg>
 
 ```pysahdy
-Törmäyksessä syntyy hiukkaskasoja, joiden kvarkkikoostumus on $u\bar{d}$, $uud$ tai $ud$. Kvarkin $u$ varaus on $+\tfrac{2}{3}e$ ja kvarkin $d$ varaus $-\tfrac{1}{3}e$. Laske kunkin varaus ja päättele, minkä ilmaisin voi havaita.
+Tarkastellaan kvarkkiyhdistelmiä $u\bar{d}$, $uud$ ja $ud$. Kvarkin $u$ varaus on $+\tfrac{2}{3}e$ ja kvarkin $d$ varaus $-\tfrac{1}{3}e$. Laske kunkin varaus ja päättele, mitkä voivat esiintyä vapaina hiukkasina.
 ---
-$u\bar{d}$: $\left(+\tfrac{2}{3} + \tfrac{1}{3}\right)e = +e$. $uud$: $\left(\tfrac{2}{3} + \tfrac{2}{3} - \tfrac{1}{3}\right)e = +e$. $ud$: $\left(\tfrac{2}{3} - \tfrac{1}{3}\right)e = +\tfrac{1}{3}e$. Ilmaisin voi havaita kaksi ensimmäistä, joiden varaus on kokonaisluku $e$:n monikertana, mutta ei kolmatta.
+$u\bar{d}$: $\left(+\tfrac{2}{3} + \tfrac{1}{3}\right)e = +e$. $uud$: $\left(\tfrac{2}{3} + \tfrac{2}{3} - \tfrac{1}{3}\right)e = +e$. $ud$: $\left(\tfrac{2}{3} - \tfrac{1}{3}\right)e = +\tfrac{1}{3}e$. Kaksi ensimmäistä ovat hadroneja (mesoni ja baryoni), ja niiden varaus on kokonaisluku $e$:n monikertana, joten ne voivat esiintyä vapaina. Yhdistelmä $ud$ ei ole mesoni eikä baryoni, joten sitä ei synny vapaana hiukkasena.
 ```
 
 ### Antihiukkaset ja annihilaatio

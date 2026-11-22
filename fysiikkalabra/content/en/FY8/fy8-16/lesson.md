@@ -294,9 +294,9 @@ The nuclei did not get electrons around them right away. The energy of the photo
 The light released then is still on its way. The expansion has stretched its wavelengths by a factor of about $1100$, so now it is microwaves with a typical wavelength of about $1.06\,\text{mm}$. This is the **cosmic background radiation**. Arno Penzias and Robert Wilson discovered it in 1965. It arrives almost evenly from every direction, and its spectrum corresponds to a body at a temperature of $2.725\,\text{K}$.
 
 ```pysahdy
-A photon with just enough energy to ionise hydrogen, $13.6\,\text{eV}$, was released from the scattering layer, and the expansion has stretched its wavelength by a factor of $1100$. What is the photon's energy now, and can it ionise a hydrogen atom?
+A typical photon of the $3000\,\text{K}$ radiation, with an energy of about $0.7\,\text{eV}$, was released from the scattering layer, and the expansion has stretched its wavelength by a factor of $1100$. What is the photon's energy now, and can it ionise a hydrogen atom?
 ---
-Energy is inversely proportional to wavelength, so $E = \tfrac{13.6\,\text{eV}}{1100} \approx 0.012\,\text{eV}$. That is a thousandth of the ionisation energy, so the photon cannot ionise a hydrogen atom.
+Energy is inversely proportional to wavelength, so $E = \tfrac{0.7\,\text{eV}}{1100} \approx 6\cdot 10^{-4}\,\text{eV}$. That is far below the ionisation energy $13.6\,\text{eV}$ of hydrogen, so the photon cannot ionise a hydrogen atom.
 ```
 
 ### Stars make the heavier elements

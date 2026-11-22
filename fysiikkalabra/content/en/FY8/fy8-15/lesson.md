@@ -232,9 +232,9 @@ A free quark has never been observed. The strong interaction keeps the quarks in
 </svg>
 
 ```pysahdy
-A collision makes clusters of particles with the quark content $u\bar{d}$, $uud$ or $ud$. The charge of a $u$ quark is $+\tfrac{2}{3}e$ and that of a $d$ quark $-\tfrac{1}{3}e$. Compute the charge of each and decide which a detector can register.
+Consider the quark combinations $u\bar{d}$, $uud$ and $ud$. The charge of a $u$ quark is $+\tfrac{2}{3}e$ and that of a $d$ quark $-\tfrac{1}{3}e$. Compute the charge of each and decide which can exist as free particles.
 ---
-$u\bar{d}$: $\left(+\tfrac{2}{3} + \tfrac{1}{3}\right)e = +e$. $uud$: $\left(\tfrac{2}{3} + \tfrac{2}{3} - \tfrac{1}{3}\right)e = +e$. $ud$: $\left(\tfrac{2}{3} - \tfrac{1}{3}\right)e = +\tfrac{1}{3}e$. A detector can register the first two, whose charge is a whole-number multiple of $e$, but not the third.
+$u\bar{d}$: $\left(+\tfrac{2}{3} + \tfrac{1}{3}\right)e = +e$. $uud$: $\left(\tfrac{2}{3} + \tfrac{2}{3} - \tfrac{1}{3}\right)e = +e$. $ud$: $\left(\tfrac{2}{3} - \tfrac{1}{3}\right)e = +\tfrac{1}{3}e$. The first two are hadrons (a meson and a baryon) with a whole-number charge, so they can exist free. The combination $ud$ is neither a meson nor a baryon, so it does not occur as a free particle.
 ```
 
 ### Antiparticles and annihilation

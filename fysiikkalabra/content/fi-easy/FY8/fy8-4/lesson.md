@@ -978,7 +978,7 @@ Tehdään kaksoisrakokoe niin heikolla valolla, että laitteessa on keskimääri
 ```pysahdy
 Aaltomallin mukaan yksittäinen osuma tulee tietyn kirkkaan raidan kohdalle todennäköisyydellä $0{,}040$. Montako osumaa tähän kohtaan odotetaan, kun osumia kertyy yhteensä $5000$? Entä kun osumia on $50\,000$? Kumpi tulos on suhteellisesti tasaisempi?
 ---
-Odotettu osumien määrä on todennäköisyys kertaa osumien määrä. Se on $0{,}040 \cdot 5000 = 200$ ja $0{,}040 \cdot 50\,000 = 2000$. Todellinen lukumäärä vaihtelee satunnaisesti. Vaihtelu on noin $\pm 14$ ensimmäisessä ($7\,\%$ luvusta $200$) ja noin $\pm 44$ toisessa ($2\,\%$ luvusta $2000$). Suuremmassa kokeessa osumien osuus on siis lähempänä $4\,\%$.
+Odotettu osumien määrä on todennäköisyys kertaa osumien määrä. Se on $0{,}040 \cdot 5000 = 200$ ja $0{,}040 \cdot 50\,000 = 2000$. Todellinen lukumäärä vaihtelee satunnaisesti. Vaihtelu on suunnilleen odotetun määrän neliöjuuri: $\sqrt{200} \approx 14$ ($7\,\%$ luvusta $200$) ja $\sqrt{2000} \approx 44$ ($2\,\%$ luvusta $2000$). Suuremmassa kokeessa osumien osuus on siis lähempänä $4\,\%$.
 ```
 
 ### Aalto kertoo todennäköisyyden

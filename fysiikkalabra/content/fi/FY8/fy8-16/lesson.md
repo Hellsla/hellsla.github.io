@@ -294,9 +294,9 @@ Ytimet eivät heti saaneet elektroneja ympärilleen. Fotonien energia oli niin s
 Tuolloin vapautunut valo on yhä matkalla. Laajeneminen on venyttänyt sen aallonpituudet noin $1100$-kertaisiksi, joten nyt se on mikroaaltoja, joiden tyypillinen aallonpituus on noin $1{,}06\,\text{mm}$. Tämä on **kosminen taustasäteily**. Arno Penzias ja Robert Wilson löysivät sen vuonna 1965. Sitä tulee joka suunnasta lähes tasaisesti, ja sen spektri vastaa kappaletta, jonka lämpötila on $2{,}725\,\text{K}$.
 
 ```pysahdy
-Vedyn ionisoimiseen juuri riittävän fotonin energia on $13{,}6\,\text{eV}$. Sellainen fotoni vapautui sirontakerroksesta, ja laajeneminen on venyttänyt sen aallonpituuden $1100$-kertaiseksi. Mikä on fotonin energia nyt ja voiko se ionisoida vetyatomin?
+Sirontakerroksesta vapautui $3000\,\text{K}$:n säteilyn tyypillinen fotoni, jonka energia oli noin $0{,}7\,\text{eV}$. Laajeneminen on venyttänyt sen aallonpituuden $1100$-kertaiseksi. Mikä on fotonin energia nyt ja voiko se ionisoida vetyatomin?
 ---
-Energia on kääntäen verrannollinen aallonpituuteen, joten $E = \tfrac{13{,}6\,\text{eV}}{1100} \approx 0{,}012\,\text{eV}$. Se on tuhannesosa ionisaatioenergiasta, joten fotoni ei voi ionisoida vetyatomia.
+Energia on kääntäen verrannollinen aallonpituuteen, joten $E = \tfrac{0{,}7\,\text{eV}}{1100} \approx 6\cdot 10^{-4}\,\text{eV}$. Se on paljon pienempi kuin vedyn ionisaatioenergia $13{,}6\,\text{eV}$, joten fotoni ei voi ionisoida vetyatomia.
 ```
 
 ### Tähdet valmistavat raskaammat alkuaineet
