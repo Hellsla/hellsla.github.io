@@ -296,6 +296,12 @@ Ionisoiva säteily vahingoittaa soluja, koska se luovuttaa energiaansa irrottama
 
 Energiat ovat lämmön mittakaavassa pieniä. Annos $1\,\text{Gy}$ lämmittäisi vettä vain noin $0{,}0002\,\text{K}$, mutta saman annoksen saaminen kerralla koko keholle aiheuttaa jo säteilysairauden. Haitta ei siis johdu lämpenemisestä, vaan siitä, että energia tulee suurina paloina, jotka rikkovat yksittäisiä molekyylejä, kuten DNA:ta.
 
+```pysahdy
+Kaksi kudospalaa absorboi saman säteilyenergian, mutta toisen massa on kaksinkertainen. Kummalla on suurempi absorboitunut annos?
+---
+Kevyemmällä, kaksinkertainen. Annos on energia jaettuna massalla, joten kevyemmän palan jokainen kilogramma saa kaksinkertaisen energian.
+```
+
 ### Sama energia, eri haitta: painotetut annokset
 Alfahiukkanen jättää lyhyelle matkalle tiheän ionisaatiojäljen, kun taas gammafotoni ionisoi harvakseltaan pitkällä matkalla. Siksi sama absorboitunut annos alfasäteilystä vaurioittaa solujen DNA:ta enemmän kuin gammasäteilystä. Myös kudokset ovat eriarvoisia: punainen luuydin ja keuhkot ovat herkempiä säteilyn aiheuttamalle syövälle kuin iho. Säteilysuojelussa nämä erot otetaan huomioon painotuskertoimilla, ja painotetun annoksen yksikkö on sievert $\text{Sv}$. Koko kehon **efektiivisen annoksen** avulla arvioidaan pienten annosten aiheuttamaa pitkän aikavälin syöpäriskiä keskimääräiselle ihmiselle, ei kenenkään yksilöllistä riskiä, ja sen avulla voidaan verrata hyvin erilaisia altistuksia, kuten radonia, röntgenkuvausta ja lentomatkaa.
 
@@ -353,6 +359,12 @@ Radon itse hengitetään enimmäkseen ulos, mutta sen lyhytikäiset hajoamistuot
 Radonpitoisuus ilmoitetaan becquereleinä kuutiometrissä: $1\,\tfrac{\text{Bq}}{\text{m}^3}$ tarkoittaa yhtä hajoamista sekunnissa kuutiometrissä ilmaa. Suomalaisten asuntojen keskimääräinen pitoisuus on STUKin valtakunnallisten otantatutkimusten mukaan noin $94\,\tfrac{\text{Bq}}{\text{m}^3}$. Asuntojen viitearvo on $300\,\tfrac{\text{Bq}}{\text{m}^3}$ ja uusissa rakennuksissa $200\,\tfrac{\text{Bq}}{\text{m}^3}$ (sosiaali- ja terveysministeriön asetus 1044/2018). Pitoisuus mitataan radonmittauspurkilla, joka on asunnossa kaksi kuukautta lämmityskaudella. Pitoisuutta voi pienentää tehostamalla ilmanvaihtoa, tiivistämällä perustusten rakoja ja imemällä radonpitoista ilmaa pois talon alta radonimurilla tai radonkaivolla.
 
 <figure class="unit-photo"><img src="pics/fy8/dosimeter-japan.webp" alt="Ulkona metallijalustalla seisova laite, jonka yläosassa on punaiset numeronäytöt ja japaninkielistä tekstiä sekä päällä punainen ja vihreä merkkivalo; taustalla on kivipatsas ja puita."><figcaption>Ulkona oleva säteilyn valvontamittari Japanissa. Suuri näyttö kertoo ohikulkijoille ympäristön annosnopeuden, jotta jokainen voi arvioida, kuinka kauan alueella kannattaa oleskella.</figcaption></figure>
+
+```pysahdy
+Radon-222:n puoliintumisaika on $3{,}82\,\text{d}$ ja yksi sisäänhengitys on keuhkoissa noin $5\,\text{s}$. Arvioi suuruusluokka osuudelle radonatomeista, jotka hajoavat yhden hengityksen aikana, ja päättele, mistä keuhkojen annos tulee.
+---
+$3{,}82\,\text{d} \approx 3{,}3 \cdot 10^{5}\,\text{s}$, joten osuus on suuruusluokkaa $\tfrac{5\,\text{s}}{3{,}3 \cdot 10^{5}\,\text{s}} \approx 10^{-5}$. Lähes kaikki radon hengitetään ulos hajoamatta, joten keuhkojen annos tulee pääosin hengitysteihin jäävistä kiinteistä hajoamistuotteista.
+```
 
 ### Suojautuminen: aika, etäisyys ja suoja
 Ulkoiselta säteilylähteeltä suojaudutaan kolmella tavalla. **Aika:** annos kasvaa suoraan verrannollisesti oleskeluaikaan, joten säteilylähteen lähellä tehdään vain välttämätön ja nopeasti. **Etäisyys:** pistemäisestä lähteestä säteily leviää kaikkiin suuntiin yhä suuremmalle pinta-alalle, joten annosnopeus pienenee nopeasti etäisyyden kasvaessa. **Suoja:** aine lähteen ja ihmisen välissä absorboi säteilyä. Alfasäteilyn pysäyttää paperi tai ihon kuollut pintakerros, beetasäteilyn muutaman millimetrin muovi- tai alumiinilevy. Gammasäteilyä vaimentavat parhaiten tiheät aineet, kuten lyijy ja betoni, mutta mikään kerros ei pysäytä sitä kokonaan.
@@ -518,6 +530,12 @@ missä $\dot{H}_1$ on annosnopeus etäisyydellä $r_1$ ja $\dot{H}_2$ etäisyyde
   <foreignObject x="32" y="271.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$0$</div></foreignObject>
   <foreignObject x="11" y="199.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{lähde}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Pistemäisen gammalähteen annosnopeus on $8\,\mu\text{Sv/h}$ etäisyydellä $1\,\text{m}$. Mikä se on etäisyydellä $4\,\text{m}$?
+---
+Etäisyys nelinkertaistuu, joten annosnopeus on $\left(\tfrac{1}{4}\right)^2 = \tfrac{1}{16}$ entisestä: $8\,\mu\text{Sv/h} \cdot \tfrac{1}{16} = 0{,}5\,\mu\text{Sv/h}$.
+```
 
 ### Puoliintumispaksuus
 Gammasäteilyn fotonit eivät pysähdy suojaan tietylle syvyydelle, vaan jokainen fotoni absorboituu tai siroaa satunnaisesti. Jokainen samanpaksuinen kerros vaimentaa siksi saman osuuden siihen tulevasta säteilystä, samaan tapaan kuin jokainen puoliintumisaika puolittaa ytimien määrän. **Puoliintumispaksuus** $d_{1/2}$ on aineen paksuus, joka puolittaa annosnopeuden (luku *Ionisoiva säteily ja elimistö*). Kun suojan paksuus on $d$, annosnopeus on

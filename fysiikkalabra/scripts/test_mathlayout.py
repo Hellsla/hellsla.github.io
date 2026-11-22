@@ -55,6 +55,8 @@ results = [
           "work queue 4: a long chain in a list item becomes the rows of a calculation inside the item"),
     check(ml.list_chains("1. Lyhyt $x = 1$.\n2. Toinen."), "1. Lyhyt $x = 1$.\n2. Toinen.",
           "work queue 4: a list item with no long chain is untouched"),
+    check((lambda t: ("eq-chain" in t, "    <div" in t, "- Lyhyt $x = 1$." in t, t.endswith("Loppu.")))(ml.list_chains("1. **Vertaa.** Ensin.\n\n    - Lyhyt $x = 1$.\n\n    Joten $g = 4\\pi^2 : 4{,}05\\,\\text{s}^2/\\text{m} \\approx 9{,}75\\,\\text{m/s}^2$. Loppu.")), (True, True, True, True),
+          "a paragraph continuing a list item after a blank line gets the rows of a calculation too; a nested list in it is left alone (tvt-kulmakerroin step 6)"),
     check(ml.list_chains("Leipäteksti $\\Delta k = (4{,}21 - 3{,}89)\\,\\text{s}^2/\\text{m} : 2 = 0{,}16\\,\\text{s}^2/\\text{m}$."),
           "Leipäteksti $\\Delta k = (4{,}21 - 3{,}89)\\,\\text{s}^2/\\text{m} : 2 = 0{,}16\\,\\text{s}^2/\\text{m}$.",
           "work queue 4: a chain outside a list is left as written"),

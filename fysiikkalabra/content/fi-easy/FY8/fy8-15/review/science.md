@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 1d14143dcfdb5fb2
+CONTENT-HASH: 6e2bb22260bd5517
 
 ## Blocking
+(none)
 
 ## Polish
-- "Tapahtuma on sama kuin vapaan neutronin hajoaminen": the same particle change n → p + e⁻ + ν̄, though the energy released differs in a nucleus; "Ytimessä tapahtuu sama muutos kuin vapaan neutronin hajoamisessa" would be more exact (C).
+(none)
+
+## Vanhan sisällön löydökset
+(none)
 
 ## Checked
-batch delta review: added sentence in the beta-minus retrieval against the four options; one correct option.
+batch delta review: in the quark-combination box (line 233) the charges were recomputed: $u\bar{d} = +e$, $uud = +e$, $ud = +\tfrac{1}{3}e$. The previous Blocking item is fixed: the answer no longer says a detector "cannot see" the charge. It now says $ud$ is neither a meson nor a baryon, so it does not appear as a free particle. That matches the lesson's confinement text (lines 202–204) and its summary (line 501). It is a fair level-C use of the "only qq̄ and qqq" rule. In the decay box (line 384), $Q = (135 - 140)\,\text{MeV} = -5\,\text{MeV}$. The conclusion is correct: a free particle at rest cannot decay into products with a larger total mass. The $Q$ formula and its sign convention match the rest of the lesson.

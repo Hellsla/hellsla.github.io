@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f9ce31430d871420
+CONTENT-HASH: 5362418331c41db5
 
 ## Blocking
+Ei.
 
 ## Polish
-
+Ei.
 
 ## Checked
-batch delta review: new prompt framing (electron as wave, double slit) against the unchanged options; correct option and feedback still right.
+batch delta review, kierros 2: kaikki kolme pysahdy-laatikkoa (kaikki uusia mainiin nähden) ja niiden konteksti tarkistettu; luvut laskettu uudelleen omalla skriptillä. Solmuja $n-1 = 2 \Rightarrow n = 3$, energia suurempi kuin $n=2$ (sama kuin teorian rivillä 210); $P \approx 50/250 = 0{,}20$; 3p: $3 \cdot 2 = 6$; siirretty laatikko sopii taulukon jälkeen.
+
+## Vanhan sisällön löydökset
+Ei.

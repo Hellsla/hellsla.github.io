@@ -83,6 +83,12 @@ Albert Einstein päätteli vuonna 1917, että on olemassa myös kolmas tapahtuma
   <foreignObject x="535.5" y="95.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$hf$</div></foreignObject>
 </svg>
 
+```pysahdy
+Valopulssissa on $1000$ fotonia, joiden aallonpituus on $650\,\text{nm}$. Pulssi kulkee aineen läpi, jossa on paljon virittyneitä atomeja. Jokainen fotoni aiheuttaa yhden stimuloidun emission. Montako fotonia tulee ulos? Kuinka paljon energiaa aine antaa valolle yhteensä? Käytä $hc = 1240\,\text{eV}\,\text{nm}$.
+---
+Jokaista saapuvaa fotonia kohti syntyy yksi uusi, joten ulos tulee $2000$ fotonia. Uusia fotoneja on $1000$. Kunkin energia on $hf = \tfrac{hc}{\lambda} = \tfrac{1240\,\text{eV}\,\text{nm}}{650\,\text{nm}} = 1{,}91\,\text{eV}$. Aine antaa valolle energiaa $1000 \cdot 1{,}91\,\text{eV} \approx 1{,}9\,\text{keV}$.
+```
+
 ### Populaatioinversio
 Fotoni, joka saa viritetyn atomin lähettämään valoa, voi myös osua perustilassa olevaan atomiin. Silloin fotoni absorboituu. Kumpi tapahtuu useammin, riippuu siitä, kummalla tasolla atomeja on enemmän. Yleensä melkein kaikki atomit ovat perustilassa. Silloin fotoni absorboituu paljon todennäköisemmin kuin se monistuu, ja valo heikkenee aineessa. Valo vahvistuu vain, jos ylemmällä tasolla on enemmän atomeja kuin alemmalla, $N_2 > N_1$. Tätä tilaa kutsutaan **populaatioinversioksi**. Lämmittäminen ei tuota sitä. Lämpimässäkin aineessa alemmalla tasolla on aina enemmän atomeja kuin ylemmällä.
 
@@ -192,6 +198,12 @@ Puolijohdekvanttipisteen väri voidaan siis valita sen koolla, vaikka aine on sa
 
 <figure class="unit-photo"><img src="pics/fy8/helium-neon-laser.webp" alt="Musta laite, jossa lukee He-Ne LASER. Sen päässä loistaa punainen valo."><figcaption>Helium-neonlaser. Sähköpurkaus antaa kaasun atomeille energiaa. Putken päissä on peilit, jotka vahvistavat valoa. Laser tekee kapean punaisen säteen, jonka aallonpituus on $633\,\text{nm}$.</figcaption></figure>
 
+```pysahdy
+Kadmiumselenidistä tehty kvanttipiste lähettää sinistä valoa, jonka aallonpituus on $450\,\text{nm}$. Käytä $hc = 1240\,\text{eV}\,\text{nm}$. Laske fotonin energia. Päättele, onko piste halkaisijaltaan suurempi vai pienempi kuin $2{,}0\,\text{nm}$:n piste. Kuinka paljon pisteen energia-aukko on suurempi kuin ison kiteen aukko $1{,}74\,\text{eV}$?
+---
+Fotonin energia on $\tfrac{hc}{\lambda} = \tfrac{1240\,\text{eV}\,\text{nm}}{450\,\text{nm}} \approx 2{,}76\,\text{eV}$. Energia-aukko on melkein yhtä suuri. Se on suurempi kuin $2{,}0\,\text{nm}$:n pisteen aukko ($480\,\text{nm}$ vastaa $2{,}58\,\text{eV}$), joten piste on pienempi kuin $2{,}0\,\text{nm}$. Ero on $2{,}76\,\text{eV} - 1{,}74\,\text{eV} \approx 1{,}0\,\text{eV}$.
+```
+
 ### Kvanttirakenteiden sovelluksia
 Kvanttipistenäytössä sininen taustavalo osuu kvanttipisteisiin. Pisteet absorboivat sen ja lähettävät puhdasta vihreää tai punaista valoa. Sama tapahtuu fluoresenssissa luvussa *Spektrit paljastavat atomin energiatasot*. Useimmat laserdiodit ovat kvanttikaivolasereita. Niissä kaivon paksuus valitsee aallonpituuden. Aurinkokennoihin tutkitaan kvanttipistekerroksia. Pisteiden koon avulla kerros voidaan säätää absorboimaan haluttu osa Auringon spektristä.
 
@@ -276,6 +288,12 @@ Samalla teholla pidemmän aallonpituuden laser lähettää enemmän fotoneja, ko
   <foreignObject x="361" y="47.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#c92a2a">$650\,\text{nm}$</div></foreignObject>
   <foreignObject x="362" y="235.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$P = 1{,}0\,\text{mW}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Laserin teho pysyy samana, mutta yhden fotonin energia kaksinkertaistuu. Mitä tapahtuu sekunnissa lähtevien fotonien määrälle?
+---
+Koska $\tfrac{N}{t} = \tfrac{P}{hf}$, fotonien määrä sekunnissa puolittuu. Yksi fotoni kantaa enemmän energiaa, joten niitä tarvitaan vähemmän.
+```
 
 ## Esimerkki
 Helium–neonlaserin lasersiirtymän tasojen energiaero on $1{,}96\,\text{eV}$, ja laserin teho on $1{,}0\,\text{mW}$. Kuinka monta fotonia laser lähettää sekunnissa?

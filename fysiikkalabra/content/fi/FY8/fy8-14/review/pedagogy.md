@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 056a82e7100897bc
+CONTENT-HASH: 81aa743a160500c4
 ## Blocking
-- none
+-
 ## Polish
-- none
+-
 ## Checked
-batch delta review: Retrieval reframed as PET staff behind a lead plate; clear, calculation unchanged.
+batch delta review: uudet Pysähdy ja mieti -laatikot: laskut tarkistettu, kysymys ratkaistavissa opitulla, palaute korjaa käsitteen; vanhasta sisällöstä ei löydöksiä (Vanhan sisällön löydökset: ei).

@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: da2ad48dd3a1587a
+CONTENT-HASH: a5f77d25b810d2e5
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+- [Minor] lesson.md l. 977 — for science: $\sqrt{2000}\approx 44$ is 44,7, which rounds to 45 (and $44/2000 = 2{,}2\,\%$, not $2\,\%$); consider "$\approx 45$ ($2\,\%$ ...)" or "noin".
+
+## Vanhan sisällön löydökset
+(none)
 
 ## Checked
-- Round 2 delta (inquiry.json Pohdinta retrieval task reworded; lesson.md paragraphs only). Opened fy8-4-stage-herata-390.png: the card "Kertaa: valon intensiteetti ja fotonit" sits under the phenomenon and the open question, four choices readable, nothing clipped, no overflow, $hf$ feedback is not shown before answering. Finnish is fluent and uses the glossary terms (fotoni, kaksoisrakokoe, intensiteetti). The paragraph cut in lesson.md has no layout effect that the packet checks (layout 360-1280 ok). Figures were not changed and were not re-opened.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+batch delta review: the changed box (Vastaus part: inline maths $\sqrt{200}\approx 14$, $\sqrt{2000}\approx 44$, $\%$ with thin space, decimal comma) read in source; the sibling "Pysähdy ja mieti" box styling checked in fy8-4-theory-1280-3.png. The changed box's opened answer was not in a capture; the source maths is plain inline KaTeX and fits one line.

@@ -262,8 +262,10 @@ def list_chains(text):
     """display_chains for the list items of a guide or an investigation (work queue 4 batch 1: a calculation inside a
     numbered step, tvt-epavarmuus step 2, ran off a 390 px phone as one inline formula that cannot wrap). Each top-level
     list item that holds a long chain gets the rows of a calculation (chain_html) inside the item, the text around them
-    indented to stay in the item; an item with no long chain, and everything outside a list, is untouched."""
-    out, item, fence = [], [], False
+    indented to stay in the item; an item with no long chain, and everything outside a list, is untouched.
+    A paragraph that continues an item after a blank line (indented four spaces, not itself a list or a fence) is
+    treated the same (tvt-kulmakerroin step 6: its calculation was one inline formula 7 px wider than a 360 px column)."""
+    out, item, fence, cont, in_list = [], [], False, [], False
     def flush():
         if not item: return
         block = "\n".join(item)
@@ -275,14 +277,27 @@ def list_chains(text):
                 paras = new.split("\n\n")
                 block = block[:m.end()] + paras[0] + "".join("\n\n    " + q for q in paras[1:]) + "\n"
         out.append(block); item.clear()
+    def flush_cont():
+        if not cont: return
+        body = "\n".join(l[4:] for l in cont)
+        new = display_chains(body) if not LIST_ITEM.match(body) else body.strip()
+        if new != body.strip(): out.append("\n".join(("    " + l if l.strip() else l) for l in new.split("\n")))
+        else: out.extend(cont)
+        cont.clear()
     for line in text.split("\n"):
-        if line.lstrip().startswith("```"): fence = not fence
-        if fence or line.lstrip().startswith("```"): flush(); out.append(line); continue
-        if LIST_ITEM.match(line): flush()
-        elif not line.strip() or not line.startswith((" ", "\t")) and not item: flush(); out.append(line); continue
-        elif not item: out.append(line); continue
+        if line.lstrip().startswith("```"): flush(); flush_cont(); fence = not fence; in_list = in_list and fence; out.append(line); continue
+        if fence: out.append(line); continue
+        if LIST_ITEM.match(line): flush(); flush_cont(); in_list = True
+        elif not line.strip():
+            flush(); flush_cont(); out.append(line); continue
+        elif not line.startswith((" ", "\t")):
+            flush(); flush_cont(); in_list = False; out.append(line); continue
+        elif not item:                                       # indented, after a blank line
+            if in_list and line.startswith("    ") and not LIST_ITEM.match(line.strip()): cont.append(line)
+            else: flush_cont(); out.append(line)
+            continue
         item.append(line)
-    flush()
+    flush(); flush_cont()
     return "\n".join(out)
 
 

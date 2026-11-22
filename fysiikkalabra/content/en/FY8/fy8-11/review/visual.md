@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b0b181d973d0fac2
+CONTENT-HASH: 38ca62d6b5029636
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] box 3 answer: `Q = 0.050 \cdot 931.5\,\text{MeV}` likewise lacks the u and the symbolic step `Q = \Delta m\,c^2`; add them.
+
+## Vanhan sisällön löydökset
+(none)
 
 ## Checked
-- Delta (en): the optional Pohdinta card "Review: mass defect" now names uranium-235 with $92$ protons and $143$ neutrons (prompt and feedback $235$).
-- Opened stage-herata-390 (card closed, title unchanged, layout intact), stage-tarkista-390-1 and open-tarkista-1280-1 (surrounding page, nothing shifted).
-- The opened card has no capture (the screenshot set keeps it closed), so the two new inline numbers were judged from source: plain inline maths, no unit, no overflow risk; English reads naturally.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+round 2 delta, new Stop and think boxes: opened fy8-11-theory-1280-1, fy8-11-stage-selita-390-4 (closed boxes sit in the reading column, green bar, label, question with LaTeX numbers and units, Answer toggle, no clipping at 1280 or 390 px, placed after the paragraph they test); answers read in lesson.md: full sentences, decimal point, units and numbers in LaTeX, colon division, `\cdot`. Boxes' open answer state is not in the captures, judged from source.

@@ -973,6 +973,12 @@ When the double-slit experiment is done with light so weak that there is on aver
   <line x1="441.5" y1="16" x2="441.5" y2="352" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 5"/>
 </svg>
 
+```pysahdy
+According to the wave model, a single hit lands at a certain bright fringe with probability $0.040$. How many hits are expected at this place when $5000$ hits accumulate in total? What about $50\,000$ hits, and which result is relatively more even?
+---
+The expected number of hits is the probability times the number of hits: $0.040 \cdot 5000 = 200$ and $0.040 \cdot 50\,000 = 2000$. The actual count varies randomly, and the variation is roughly the square root of the expected number: $\sqrt{200} \approx 14$ ($7\,\%$ of $200$) and $\sqrt{2000} \approx 44$ ($2\,\%$ of $2000$). In the larger experiment the share of hits is therefore closer to $4\,\%$.
+```
+
 ### The wave gives the probability
 The wave model does not tell where a single photon or electron will hit. It tells the probability with which the quantum is detected at each place: where the intensity of the wave is large, many hits arrive, and in the dark fringes hardly any. When only one slit is open, the fringes of the two slits disappear. When both slits are open, fewer hits arrive in the dark fringes than with one slit, so opening the second slit reduces the hits at these places. This cannot be explained by each quantum passing through only one slit like a small bullet. If the experiment measures through which slit each quantum passes, the fringe pattern disappears and the distribution is the sum of two one-slit patterns.
 
@@ -1027,6 +1033,12 @@ photon momentum :: p = \frac{E}{c} = \frac{h}{\lambda}
 ```
 where $p$ is the momentum of the photon ($\text{kg}\cdot\text{m/s}$), $E = hf = \tfrac{hc}{\lambda}$ the energy of the photon ($\text{J}$), $c = 2.998 \cdot 10^8\,\text{m/s}$ the speed of light, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ the Planck constant and $\lambda$ the wavelength ($\text{m}$). The unit works out: $\tfrac{\text{J}\,\text{s}}{\text{m}} = \tfrac{\text{kg}\cdot\text{m}^2/\text{s}^2 \cdot \text{s}}{\text{m}} = \text{kg}\cdot\text{m/s}$. The momentum of a photon of visible light is small: at the wavelength $500\,\text{nm}$ it is ${1.3 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}}$. The momentum of an X-ray photon of wavelength $0.0711\,\text{nm}$ is about $7000$ times as large, ${9.3 \cdot 10^{-24}\,\text{kg}\cdot\text{m/s}}$. A short wavelength thus means a large energy and a large momentum.
 
+```pysahdy
+The wavelength of photon A is half the wavelength of photon B. Which has the greater momentum, and how many times greater?
+---
+Photon A, twice as great. Since $p = \tfrac{h}{\lambda}$, the momentum is inversely proportional to the wavelength.
+```
+
 ### The Compton effect
 In 1923 Arthur Compton directed X-rays at graphite and measured the wavelength of the scattered radiation. The wavelength of the scattered radiation was longer than that of the incident radiation, and the difference grew as the scattering angle grew. This is called the **Compton effect**. The wave model does not explain it: electrons oscillating in time with the wave would radiate at the same frequency as the incident radiation. In the photon model the phenomenon is a collision. The photon gives part of its energy and momentum to an almost free electron, which starts to move. Energy is conserved:
 ```latex
@@ -1073,6 +1085,12 @@ The power $P$ of light tells how much energy the light carries per second. Becau
 \frac{N}{t} = \frac{P}{hf}
 ```
 where $N$ is the number of photons, $t$ the time ($\text{s}$), $P$ the power ($\text{W}$) and $hf$ the energy of one photon ($\text{J}$). In ordinary light there are so many photons that the light looks like a continuous stream. Only in very weak light do single photons stand out.
+
+```pysahdy
+A red laser and a blue laser have the same power. Which one emits more photons per second?
+---
+The red one. Since $\tfrac{N}{t} = \tfrac{P}{hf}$ and the energy $hf$ of a red photon is smaller, the same power needs more photons.
+```
 
 ## Worked example
 In a double-slit experiment, red laser light of wavelength $633\,\text{nm}$ is used. The light is dimmed with filters so that the power of the light arriving at the slits is $1.0 \cdot 10^{-13}\,\text{W}$. How many photons arrive at the slits per second, and how long is the distance between successive photons on average? Is there usually more than one photon at a time in an apparatus of length $1.2\,\text{m}$?

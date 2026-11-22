@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 1f3bdf696b22ddcc
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 5a9e64e5e8b168f3
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- The box 'energy of level n = 5' is a one-step recall that the n = 5 to 3 box already covers; one could be dropped to keep the lesson short.
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+batch delta review: 3 boxes: ionisation by 15 eV (good misconception probe), 5 to 3 transition (0.967 eV, 1.28 um, correct), E5; sums verified.
+
+## Vanhan sisällön löydökset
+- none

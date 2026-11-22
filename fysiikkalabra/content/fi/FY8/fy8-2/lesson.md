@@ -119,9 +119,21 @@ Atomin elektroniverho voi olla vain tietyissä **energiatiloissa**. Alin niistä
 
 Absorptio on käänteinen tapahtuma. Atomi absorboi fotonin vain, jos fotonin energia on täsmälleen jonkin kahden tilan erotus; muut fotonit kulkevat kaasun läpi. Virittynyt atomi palaa pian alempaan tilaan ja lähettää fotonin, mutta satunnaiseen suuntaan. Siksi alkuperäiseen suuntaan kulkevasta valosta puuttuu juuri nuo aallonpituudet, ja spektriin jää tumma viiva. Kaasu absorboi vain siirtymiä, jotka lähtevät tiloista, joissa sen atomeja on. Kylmässä kaasussa lähes kaikki atomit ovat perustilassa, joten absorptioviivoja on vähemmän kuin emissioviivoja. Auringon kaasukehä on niin kuuma, että pieni osa vetyatomeista on ensimmäisessä viritystilassa. Ne absorboivat näkyvän valon aallonpituuksia, ja siksi vedyn punainen viiva $656\,\text{nm}$ näkyy Auringon spektrissä tummana. Elektronin energiatilat ovat kvantittuneet, ja spektrit ovat siitä suorin todiste.
 
+```pysahdy
+Kylmän kaasun atomit ovat perustilassa, jonka energia on $-5{,}0\,\text{eV}$. Seuraavat tilat ovat $-3{,}1\,\text{eV}$ ja $-1{,}6\,\text{eV}$. Jatkuvan spektrin valo kulkee kaasun läpi. Mitkä aallonpituuksista $653\,\text{nm}$, $500\,\text{nm}$ ja $365\,\text{nm}$ puuttuvat läpi tulleesta valosta?
+---
+Fotonin energia on $E = hc/\lambda$, kun $hc \approx 1240\,\text{eV nm}$. Aallonpituuksia vastaavat energiat ovat $1{,}9\,\text{eV}$, $2{,}5\,\text{eV}$ ja $3{,}4\,\text{eV}$. Perustilasta ylöspäin erotukset ovat $-3{,}1 - (-5{,}0) = 1{,}9\,\text{eV}$ ja $-1{,}6 - (-5{,}0) = 3{,}4\,\text{eV}$. Siis $653\,\text{nm}$ ja $365\,\text{nm}$ puuttuvat, mutta $500\,\text{nm}$ ($2{,}5\,\text{eV}$) kulkee läpi.
+```
+
 Energiatilojen erotus on välttämätön ehto, mutta kaikki siirtymät eivät ole yhtä todennäköisiä, ja osa niistä on hyvin heikkoja. Siksi kaikkia mahdollisia energiatasojen erotuksia ei välttämättä havaita voimakkaina spektriviivoina. Todelliset spektriviivat eivät myöskään ole äärettömän kapeita: fotonin energian on vastattava tilojen erotusta viivan pienen leveyden tarkkuudella.
 
 Spektrin voi mitata itse. Spektroskoopissa valo kulkee kapean raon ja hilan läpi, ja viivojen aallonpituudet luetaan asteikolta. Puhelimen kameran eteen kiinnitetty hila tai valmis spektrometri toimii samoin: kaasupurkausputken, loisteputken tai LED-lampun valosta näkee heti, onko spektri jatkuva vai viivoista koostuva. Kaasupurkausputki toimii korkealla jännitteellä ja kuumenee, joten sitä käytetään opettajan ohjeiden mukaan eikä siihen kosketa sen ollessa päällä.
+
+```pysahdy
+Atomilla on vain kaksi energiatilaa, $-5{,}0\,\text{eV}$ ja $-3{,}1\,\text{eV}$, joten niiden erotus on $1{,}9\,\text{eV}$. Atomi on alemmalla tilalla, ja siihen osuu fotoni, jonka energia on $2{,}4\,\text{eV}$. Absorboiko atomi fotonin?
+---
+Ei. Fotonin energia $2{,}4\,\text{eV}$ ei ole sama kuin tilojen erotus $1{,}9\,\text{eV}$, joten atomi ei voi siirtyä ylempään tilaan. Fotoni ei myöskään irrota elektronia, koska $-5{,}0\,\text{eV} + 2{,}4\,\text{eV} = -2{,}6\,\text{eV} < 0$: elektroni olisi yhä sidottu. Fotoni kulkee atomin ohi.
+```
 
 ### Fluoresenssi
 **Fluoresenssissa** aine absorboi lyhytaaltoista valoa, yleensä ultraviolettia, ja lähettää heti pidempiaaltoista näkyvää valoa. Korostuskynän muste hehkuu UV-lampun valossa vihreänä: väriaineen molekyyli virittyy, luovuttaa osan energiasta pienin askelin lämpönä molekyylin värähtelyihin ja palaa sitten perustilaan näkyvän valon fotonia lähettäen. Lähetetyn fotonin energia on pienempi kuin absorboidun, joten sen aallonpituus on pidempi. Spektri siirtyy siis kohti punaista.
@@ -224,6 +236,12 @@ Vedyn voimakkaimmat näkyvät viivat syntyvät, kun vetyatomi siirtyy tasolta $3
   <circle cx="420" cy="347" r="8" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="373" y="308.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$e^-$</div></foreignObject>
 </svg>
+
+```pysahdy
+Atomin siirtymässä A energiaero on $2{,}0\,\text{eV}$ ja siirtymässä B $4{,}0\,\text{eV}$. Kumman siirtymän fotonin aallonpituus on lyhyempi, ja kuinka paljon?
+---
+Siirtymän B. Koska $\lambda = \tfrac{hc}{E_\text{y} - E_\text{a}}$, aallonpituus on kääntäen verrannollinen energiaeroon, ja kaksinkertainen energiaero antaa aallonpituuden, joka on puolet niin pitkä.
+```
 
 ## Esimerkki
 Neonvalomainoksen spektrissä on voimakas punaoranssi viiva aallonpituudella $640\,\text{nm}$. Kuinka suuri on niiden neonatomin energiatilojen erotus, joiden välisessä siirtymässä tämä valo syntyy? Anna vastaus elektronivoltteina.

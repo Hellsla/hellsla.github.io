@@ -179,6 +179,12 @@ Röntgenkuva on varjokuva. Säteily kulkee potilaan läpi ilmaisimeen, ja jokain
 
 Tietokonetomografiassa (TT) röntgenputki ja ilmaisimet kiertävät potilaan ympäri. Laite mittaa vaimenemisen tuhansista suunnista, ja tietokone laskee niistä, kuinka paljon kukin pieni tilavuusalkio vaimentaa. Tuloksena on poikkileikkauskuva, jossa näkyvät myös toistensa takana olevat elimet. TT-tutkimuksen annos on kuitenkin kymmeniä kertoja suurempi kuin keuhkojen röntgenkuvan annos.
 
+```pysahdy
+Tietokonetomografiassa otetaan $800$ projektiota, joista kukin antaa annoksen $0{,}010\,\text{mSv}$. Keuhkojen röntgenkuvan annos on $0{,}1\,\text{mSv}$. Kuinka moninkertainen TT:n kokonaisannos on röntgenkuvaan verrattuna?
+---
+Annokset summautuvat: $800 \cdot 0{,}010\,\text{mSv} = 8\,\text{mSv}$. Suhde on $\tfrac{8\,\text{mSv}}{0{,}1\,\text{mSv}} = 80$, eli TT:n annos on noin $80$-kertainen. Yhden suunnan annos on vain kymmenesosa röntgenkuvan annoksesta, mutta suuntia on paljon, ja siksi ero on kymmeniä kertoja eikä tuhatkertainen.
+```
+
 | Tutkimus | Efektiivinen annos |
 | --- | --- |
 | hampaan röntgenkuva | $< 0{,}01\,\text{mSv}$ |
@@ -191,6 +197,7 @@ Tietokonetomografiassa (TT) röntgenputki ja ilmaisimet kiertävät potilaan ymp
 Lähde: tyypilliset suuruusluokat STUKin terveydenhuollon säteilyaltistusta koskevista julkaisuista ([STUK: Röntgentutkimuksen säteilyannokset vaihtelevat](https://www.julkari.fi/server/api/core/bitstreams/89234513-99f8-4ee2-a720-20bd04eb2cfb/content)) ja ICRP:n julkaisusta 128 (2015); yksittäisen tutkimuksen annos riippuu laitteesta, kuvausprotokollasta ja potilaasta. Vertailun vuoksi suomalainen saa luonnon säteilystä keskimäärin noin $5{,}1\,\text{mSv}$ vuodessa (luku *Säteilyannos ja säteilyturvallisuus Suomessa*).
 
 <figure class="unit-photo"><img src="pics/fy8/pet-ct-scanner.webp" alt="Sairaalan kuvaushuone: vaaleanvihreä rengasmainen laite, jonka aukkoa kohti osoittaa valkoisella liinalla peitetty potilaspöytä."><figcaption>PET-TT-laite Bronissa Ranskassa. Renkaan sisällä on PET-kuvauksen ilmaisinrengas ja tietokonetomografian röntgenputki ilmaisimineen. Potilas liukuu pöydän mukana renkaan läpi.</figcaption></figure>
+
 
 ### Isotooppikuvaus: merkkiaine näyttää elimen toiminnan
 
@@ -279,6 +286,12 @@ PET-kuvauksen eli positroniemissiotomografian merkkiaineena on yleensä fluori-1
 </svg>
 
 Potilasta ympäröi ilmaisinrengas. Kun kaksi vastakkaista ilmaisinta havaitsee fotonin muutaman nanosekunnin sisällä toisistaan eli **koinsidenssissa**, laite päättelee, että fotonit syntyivät samassa annihilaatiossa jossain näiden ilmaisimien välisellä janalla. Jos fotonien saapumisaikojen eroa ei mitata, yksi jana ei kerro, missä kohdassa janaa lähde on. Nykyaikaiset PET-laitteet mittaavat myös tämän aikaeron (lentoaika-PET) noin $0{,}3\,\text{ns}$:n tarkkuudella. Valo kulkee nanosekunnissa noin $30\,\text{cm}$, joten aikaero rajaa lähteen janalla muutaman senttimetrin matkalle. Koska positroni kulkee ennen annihilaatiota, jana kertoo annihilaation paikan eikä aivan hajoamispaikkaa. Varsinainen kuva syntyy vasta monista janoista: kun janoja kertyy miljoonia, ne leikkaavat tiheimmin siellä, missä merkkiainetta on eniten, ja tietokone laskee niistä kuvan. Lyhyen puoliintumisajan vuoksi fluori-18 valmistetaan hiukkaskiihdyttimellä, syklotronilla, lähellä kuvauspaikkaa, esimerkiksi Turun PET-keskuksessa.
+
+```pysahdy
+PET-laitteen kaksi vastakkaista ilmaisinta havaitsee annihilaation fotonit $0{,}40\,\text{ns}$:n aikaerolla. Valo kulkee $30\,\text{cm}$ nanosekunnissa. Kuinka kaukana janan keskipisteestä lähde on ja kummalla puolella?
+---
+Myöhemmin havaittu fotoni kulkee ylimääräisen matkan $2x$: $2x = c\,\Delta t = 30\,\tfrac{\text{cm}}{\text{ns}} \cdot 0{,}40\,\text{ns} = 12\,\text{cm}$, joten $x = 6{,}0\,\text{cm}$. Lähde on $6{,}0\,\text{cm}$ keskipisteestä sen ilmaisimen puolella, joka havaitsi fotonin ensin.
+```
 
 ### Sädehoito: suuri annos kasvaimeen, pieni terveelle kudokselle
 
@@ -436,6 +449,12 @@ missä $I_0$ on säteeseen tulevan säteilyn intensiteetti, $I$ kerrosten läpi 
   <foreignObject x="276.5" y="151.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$d_{1/2} = 3{,}4\,\text{cm}$</span></div></foreignObject>
   <foreignObject x="299" y="262" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#a97a35"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$d_{1/2} = 1{,}1\,\text{cm}$</span></div></foreignObject>
 </svg>
+
+```pysahdy
+Röntgensäde kulkee pehmytkudosta kaksi puoliintumispaksuutta ja sen jälkeen luuta yhden puoliintumispaksuuden. Kuinka suuri osuus säteilystä pääsee läpi?
+---
+Puoliintumispaksuuksien lukumäärät lasketaan yhteen: $\left(\tfrac{1}{2}\right)^{2+1} = \tfrac{1}{8}$, eli $12{,}5\,\%$ pääsee läpi.
+```
 
 ### Annihilaatiofotonin energia
 

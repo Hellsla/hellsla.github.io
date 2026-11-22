@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 4ae44fd1881f3ac4
+CONTENT-HASH: 90c3bcb6d9655b4b
 
 ## Blocking
 
 ## Polish
-- "According to one hypothesis" undersells inflation slightly: it is the leading model of the very early universe, though not confirmed. The sentence leaves no wrong picture because it says inflation has not been observed directly (C, keep as is). If you change it, a wording such as "According to a widely used hypothesis" is enough.
+- The $0.7\,\text{eV}$ value could carry its basis in a few words ("the mean photon energy $\approx 2.7\,kT$"), since the lesson gives no other source for it. Optional; it is given as task data.
+
+## Vanhan sisällön löydökset
+None.
 
 ## Checked
-batch delta review: the new cosmic-inflation paragraph in lesson.md. It is physically right: a very rapid expansion within a fraction of a second at the start, which explains the large-scale uniformity (horizon problem), and it has not been observed directly (no primordial B-mode gravitational waves detected). It is stated as a hypothesis, not as fact, and it fits the Big Bang paragraph before it (space itself expanding, not an explosion). It matches the Finnish line 257 word for word in meaning. It is within the FY8 contents on the universe's evolution and needs no number or formula. Hash identical at start and end.
+batch delta review: Pysähdy box at lines 295–301 only. The previous Blocking finding (a $13.6\,\text{eV}$ photon released at decoupling, contradicting line 292's mechanism that too few photons then had $13.6\,\text{eV}$) is fixed: the box now uses a typical photon of the $3000\,\text{K}$ radiation. Recomputed: mean photon energy of blackbody radiation $2.70\,kT = 2.70 \cdot 8.617\cdot10^{-5}\,\text{eV/K} \cdot 3000\,\text{K} = 0.70\,\text{eV}$, matches; $0.7\,\text{eV}/1100 = 6.3\cdot10^{-4}\,\text{eV}$, shown as $6\cdot10^{-4}\,\text{eV}$ (one figure, matching the data). $E \propto 1/\lambda$ is correct; the conclusion is consistent with line 292 and summary line 603, and with the $1100$ factor ($3000\,\text{K}/2.725\,\text{K} \approx 1100$).

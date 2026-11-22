@@ -159,6 +159,12 @@ The mass defect is not matter that has vanished. According to Einstein's theory 
   <foreignObject x="378" y="185.5" width="137" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{released}\ E_\text{B}$</div></foreignObject>
 </svg>
 
+```pysahdy
+The binding energy of a carbon-12 nucleus is $92.2\,\text{MeV}$. By how many atomic mass units is the nucleus lighter than its $12$ nucleons separated? Use $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$.
+---
+The binding energy corresponds to the mass difference: $\Delta m = \tfrac{E_\text{B}}{c^2} = \tfrac{92.2\,\text{MeV}}{931.5\,\text{MeV}/\text{u}} \approx 0.0990\,\text{u}$. The nucleus is about $0.099\,\text{u}$ lighter.
+```
+
 ### Why a change of mass is not noticed in everyday life
 The equivalence of mass and energy applies to every change of energy, but $c^2$ is so large that in ordinary phenomena the change of mass is too small to measure. A mass of one gram corresponds to the energy
 ```latex
@@ -203,6 +209,12 @@ So $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$. When the mass defect is in at
 &= 0.9315\,\text{MeV}
 \end{aligned}
 $$. With four-figure constants $1.661 \cdot 10^{-27}\,\text{kg}$, $2.998 \cdot 10^{8}\,\text{m/s}$ and $1.602 \cdot 10^{-19}\,\text{J}$ the result would be $931.9\,\text{MeV}$, so four-figure constants already change the fourth figure.
+
+```pysahdy
+The mass defect of a nucleus is $0.0020\,\text{u}$. How large is the binding energy of the nucleus in megaelectronvolts?
+---
+Substitute $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$: $E_\text{B} = 0.0020 \cdot 931.5\,\text{MeV} \approx 1.9\,\text{MeV}$.
+```
 
 ### Binding energy per nucleon
 The strength of the binding of nuclei is compared with the **binding energy per nucleon**
@@ -294,6 +306,12 @@ where $A$ is the mass number, that is, the number of nucleons. The graph shows i
 </svg>
 
 The graph shows when a nuclear reaction releases energy: when the nuclei formed are more tightly bound than the original ones, the binding energy increases and the difference is released. The joining of light nuclei, **fusion**, and the splitting of a heavy nucleus, **fission**, move nucleons towards the peak of the graph. They are discussed in the chapter *Fission, fusion and nuclear power*.
+
+```pysahdy
+In a nuclear reaction there are equally many nucleons on both sides. The total binding energy of the starting nuclei is $1800\,\text{MeV}$ and that of the products $1805\,\text{MeV}$. Is energy released or needed, how much, and how does the mass change?
+---
+Energy is released: the products are bound more tightly, so the difference $1805\,\text{MeV} - 1800\,\text{MeV} = 5\,\text{MeV}$ is released as kinetic energy of the products and the total mass decreases by $\tfrac{5\,\text{MeV}}{c^2}$.
+```
 
 ### Reaction energy
 In a **nuclear reaction** nuclei change: a nucleus decays, or another nucleus or particle hits a nucleus. In a reaction the mass number and the charge number are conserved (chapter *The atomic nucleus and radioactive decay*), but mass is not. The reaction energy is

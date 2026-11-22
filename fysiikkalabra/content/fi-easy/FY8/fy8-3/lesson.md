@@ -156,6 +156,12 @@ Absorptio eli valon imeytyminen on käänteinen tapahtuma. Atomi absorboi fotoni
   <foreignObject x="452.5" y="357.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ionisoi}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Perustilassa oleva vetyatomi absorboi fotonin, jonka energia on $15{,}0\,\text{eV}$. Mitä atomille tapahtuu?
+---
+Atomi ionisoituu eli elektroni irtoaa, koska $15{,}0\,\text{eV}$ on enemmän kuin ionisaatioenergia $13{,}6\,\text{eV}$. Vapaalle elektronille jää liike-energiaa $15{,}0\,\text{eV} - 13{,}6\,\text{eV} = 1{,}4\,\text{eV}$.
+```
+
 ### Bohrin malli historiallisena välivaiheena
 Tanskalainen Niels Bohr esitti vuonna 1913 mallin. Mallin mukaan elektroni kiertää protonia ympyräradalla, mutta vain tietyillä sallituilla radoilla. Sallitulla radalla elektroni ei säteile. Klassisen fysiikan mukaan kiertävän varauksen pitäisi menettää energiaa säteilynä, mutta Bohrin mallissa näin ei tapahdu. Valoa syntyy vain, kun elektroni siirtyy radalta toiselle. Fotonin energia on silloin ratojen energioiden erotus. Radan säde kasvaa kuten $n^2$. Perustilan säde on noin $0{,}053\,\text{nm}$. Radan $n = 2$ säde on neljä kertaa ja radan $n = 3$ säde yhdeksän kertaa niin suuri.
 
@@ -200,6 +206,12 @@ hf &= E_\text{y} - E_\text{a} \\
 \end{aligned}
 ```
 missä $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on Planckin vakio, $f$ on fotonin taajuus, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$ on valon nopeus ja $\lambda$ on aallonpituus. Absorptiossa samat kaavat antavat sellaisen fotonin, joka nostaa elektronin tasolta $E_\text{a}$ tasolle $E_\text{y}$. Energiat lasketaan ensin elektronivoltteina. Erotus muunnetaan jouleiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
+
+```pysahdy
+Vetyatomin elektroni siirtyy tasolta $n = 5$ tasolle $n = 3$. Kuinka suuri on tasojen energiaero? Minkä aallonpituuden fotoni syntyy?
+---
+$E_5 = -13{,}6\,\text{eV}/25 = -0{,}544\,\text{eV}$ ja $E_3 = -13{,}6\,\text{eV}/9 = -1{,}511\,\text{eV}$. Erotus on $0{,}967\,\text{eV}$. Aallonpituus on $\lambda = hc/\Delta E \approx 1240\,\text{eV nm}/0{,}967\,\text{eV} \approx 1{,}28 \cdot 10^{3}\,\text{nm}$. Se on infrapunaa.
+```
 
 | Sarja | Alempi taso | Alue | $\lambda$ (nm) |
 | --- | --- | --- | --- |
@@ -248,6 +260,12 @@ Kunkin sarjan pisin aallonpituus tulee siirtymästä lähimmältä ylemmältä t
   <line x1="58" y1="202" x2="52" y2="238" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
   <foreignObject x="29.5" y="239.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\infty \to 2$</div></foreignObject>
 </svg>
+
+```pysahdy
+Kuinka suuri on vetyatomin tason $n = 5$ energia?
+---
+$E_5 = -\tfrac{13{,}6\,\text{eV}}{5^2} = -\tfrac{13{,}6\,\text{eV}}{25} \approx -0{,}54\,\text{eV}$
+```
 
 ## Esimerkki
 Vetylampun punainen viiva syntyy, kun vetyatomin elektroni siirtyy tasolta $n = 3$ tasolle $n = 2$. Laske syntyvän fotonin aallonpituus.

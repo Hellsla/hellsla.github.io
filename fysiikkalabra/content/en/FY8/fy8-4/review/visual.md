@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 51057c3079dc6de3
-
-Round 1 (delta): paragraph cuts and wording in lesson.md and inquiry.json.
+CONTENT-HASH: d5f34c806d597277
 
 ## Blocking
-- None.
 
 ## Polish
-- None.
+- none
 
 ## Checked
-- Opened theory-1280-1 and theory-1280-3 (cut paragraphs, both figures beside their text, photo, display formula N/t = P/hf, misconception and summary lists) and stage-ennusta-390-1 (prediction text at 390 px, inline maths and units in LaTeX). Layout survived; paragraphs short, no clipping.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: changed box text read in source (sqrt chain: inline maths, \approx, \% spacing, decimal point right for en); figures unchanged, layout not affected by a one-sentence change. Not opened: text-only change.

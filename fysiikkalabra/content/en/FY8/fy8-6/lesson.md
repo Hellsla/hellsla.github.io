@@ -198,6 +198,12 @@ An LED is made of two different semiconductors. In the conduction band of one, t
 
 <figure class="unit-photo"><img src="pics/fy8/green-led.webp" alt="A close-up of an LED&#x27;s clear plastic dome against a dark blue background; in the middle a green semiconductor chip glows on a metal holder."><figcaption>A green LED whose chip is made of indium gallium nitride (InGaN). A photon of green light has more energy than one of red light, so the threshold voltage of a green LED is higher than that of a red one.</figcaption></figure>
 
+```pysahdy
+The spectrum of a red LED peaks at a wavelength of $630\,\text{nm}$ and that of a blue LED at $450\,\text{nm}$. How many times larger is the energy gap of the blue LED's semiconductor than that of the red LED?
+---
+Since $E_\text{g} \approx hf = \tfrac{hc}{\lambda}$, the energy gap is inversely proportional to the wavelength. So $\tfrac{E_\text{g,blue}}{E_\text{g,red}} \approx \tfrac{630\,\text{nm}}{450\,\text{nm}} = 1.4$. The blue LED's energy gap is about $1.4$ times as large.
+```
+
 ### Threshold voltage
 When an electron passes across a voltage $U$, the electric field does work $eU$ on it, where $e$ is the elementary charge. This is exactly how the electronvolt was defined in the chapter *The photoelectric effect and the photon*. For an electron to be able to create a photon whose energy is $E_\text{g}$, it must receive at least approximately this energy from the voltage source. This is why an LED hardly conducts a current or emits light at a small voltage. The current starts to grow steeply when the voltage reaches the **threshold voltage** $U_\text{k}$ of the LED, for which $eU_\text{k} \approx E_\text{g} \approx hf$. The photon of blue light needs more energy than that of red light, so the threshold voltage of a blue LED is greater.
 
@@ -258,6 +264,12 @@ When the threshold voltage of an LED is reached, the energy that an electron rec
 eU_\text{k} \approx hf = \frac{hc}{\lambda}
 ```
 where $e = 1.602 \cdot 10^{-19}\,\text{C}$ is the elementary charge, $U_\text{k}$ the threshold voltage of the LED ($\text{V}$), $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ the Planck constant, $f$ the frequency of the light ($\text{Hz}$), $c = 2.998 \cdot 10^8\,\text{m/s}$ the speed of light and $\lambda$ the wavelength of the peak of the spectrum of the LED ($\text{m}$). For a red LED, $\lambda = 630\,\text{nm}$, this gives the threshold voltage $U_\text{k} \approx \tfrac{hc}{e\lambda}$. In the chapter *The photoelectric effect and the photon* we calculated $hc = 1240\,\text{eV}\,\text{nm}$, and because $1\,\text{eV} = e \cdot 1\,\text{V}$, we have $\tfrac{hc}{e} = 1240\,\text{V}\,\text{nm}$. Thus $U_\text{k} \approx 1240\,\text{V}\,\text{nm} : 630\,\text{nm} = 1.97\,\text{V}$. The measured threshold voltage is usually a little smaller, for example $1.88\,\text{V}$. The energy of a photon in electronvolts is approximately the same number as the threshold voltage in volts, because $1\,\text{eV}$ is the energy that an electron receives in a voltage of $1\,\text{V}$.
+
+```pysahdy
+The peak wavelength of an LED's spectrum is $500\,\text{nm}$. Estimate its threshold voltage.
+---
+$U_\text{k} \approx \tfrac{hc}{e\lambda} = \tfrac{1240\,\text{V}\,\text{nm}}{500\,\text{nm}} \approx 2.5\,\text{V}$.
+```
 
 ### Determining the threshold voltage
 The threshold voltage is measured by connecting the LED in series with a protective resistor and an ammeter to an adjustable voltage source, and a voltmeter across the terminals of the LED. The protective resistor limits the current so that the LED does not overheat and break, and the current must not exceed the largest allowed value given by the manufacturer. The voltage is increased gradually, and the current is recorded at each voltage. In the $(U, I)$ graph the current is at first almost zero and then grows almost linearly. The threshold voltage is obtained when the line fitted to the straight part of the graph is extended to the voltage axis, where $I = 0$. This method is more repeatable than searching for the voltage at which the LED seems to start to glow, because the sensitivity of the eye varies with colour and from person to person.
@@ -334,6 +346,12 @@ When the threshold voltages of several LEDs of different colours are plotted as 
 h \approx ek
 ```
 where $k$ is the slope of the fitted line ($\tfrac{\text{V}}{\text{Hz}} = \text{V}\,\text{s}$) and $e$ the elementary charge; $\text{C} \cdot \text{V}\,\text{s} = \text{J}\,\text{s}$. The slope is read from the fitted line, not from two measured points. In Graphical Analysis Pro the line is fitted with the choices **Curve Fit** and **Linear**, and the $m$ of the result box is the slope.
+
+```pysahdy
+The slope of the line fitted to the graph $(f, U_\text{k})$ is $4.2 \cdot 10^{-15}\,\text{V}\,\text{s}$. What value is obtained for the Planck constant?
+---
+$h \approx ek = 1.602 \cdot 10^{-19}\,\text{C} \cdot 4.2 \cdot 10^{-15}\,\text{V}\,\text{s} \approx 6.7 \cdot 10^{-34}\,\text{J}\,\text{s}$.
+```
 
 <svg data-fig="sovitus" viewBox="0 0 600 380" role="img" aria-label="Graph to scale: the threshold voltage U k in volts of six LEDs as a function of the frequency f of their light, frequency axis from zero to 8 times 10 to the power 14 hertz. The points have the colours of the LEDs: red 4.76 and 1.88; orange 4.96 and 1.95; yellow 5.08 and 2.00; green 5.71 and 2.30; blue 6.38 and 2.52; violet 7.40 and 2.95, with the frequencies in units of 10 to the power 14 hertz and the voltages in volts. A line has been fitted to the points; it continues as a dashed line close to the origin and cuts the vertical axis slightly below zero. A triangle showing the slope has been drawn on the line, and the label says that the slope k is h divided by e." style="max-width:100%;font-size:24px">
   <line x1="131" y1="322" x2="131" y2="64" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

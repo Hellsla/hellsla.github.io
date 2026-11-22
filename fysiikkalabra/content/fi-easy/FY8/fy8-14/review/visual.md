@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: daa56138c2ecfed8
+CONTENT-HASH: aaf214785b048e58
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] TT-laatikon vastaus — "Yhden suunnan annos on paljon pienempi kuin yhden röntgenkuvan annos. Siksi ero on kymmeniä kertoja eikä tuhatkertainen." on sanallisesti raskas; selkeämpi: "Yksi projektio antaa vain $0{,}010\,\text{mSv}$, joten ero on $80$-kertainen eikä $800$-kertainen."
+
+## Vanhan sisällön löydökset
+- ei
 
 ## Checked
-- Delta (inquiry.json Kertaa: puoliintumispaksuus prompt now situation-first; lesson.md paragraph cuts). Opened fy8-14-stage-herata-390 (Pohdinta, task closed behind the optional row) and fy8-14-stage-tarkista-390-1 (layout of Testaa ja arvioi survived). Prompt is two sentences, situation then question; Finnish natural, glossary terms unchanged.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: both edited boxes; theory-1280-3 opened: the PET box renders cleanly (ns, cm in LaTeX, "Vastaus" disclosure closed); text of TT box read from diff.

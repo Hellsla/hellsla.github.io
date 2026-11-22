@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 36c15f8b62d12e9c
+CONTENT-HASH: 780a55e6c04f1843
 ## Blocking
-
+-
 ## Polish
-- none
+-
 ## Checked
-batch delta review: prompt now names helium-4 as the alpha particle; keeps the task (daughter nucleus) intact, clearer for a first-time reader.
+batch delta review: uudet Pysähdy ja mieti -laatikot: laskut tarkistettu, kysymys ratkaistavissa opitulla, palaute korjaa käsitteen; vanhasta sisällöstä ei löydöksiä (Vanhan sisällön löydökset: ei).

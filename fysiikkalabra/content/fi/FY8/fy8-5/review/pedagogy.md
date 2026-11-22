@@ -1,8 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 582d3e8f8eaed80e
+CONTENT-HASH: 92df377d14231515
+
 ## Blocking
-- none
+(ei)
+
 ## Polish
-- none
+- Ensimmäinen laatikko (solmut): kaava $n-1$ on sanasta sanaan yllä, vain sijoitus; pyydä lisäksi piirtämään tai nimeämään solmupintojen laji.
+- Toinen laatikko ($P = k:N$): pelkkä sijoitus kaavaan yllä; kysy mitä tapahtuu, kun $N$ kymmenkertaistuu.
+- Kolmas laatikko ok.
+
+## Vanhan sisällön löydökset
+(ei)
+
 ## Checked
-batch delta review: Retrieval prompt adds a short bridge from chemistry's electron clouds to the double slit; clear and fits the lesson's start.
+batch delta review round 2: laatikoiden vastattavuus ja vastausmalli.

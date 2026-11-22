@@ -1,8 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 71e37c03a08734b0
+CONTENT-HASH: 344f5bf4f95515c0
+
 ## Blocking
-- none
+(ei)
+
 ## Polish
-- The stem says 'hengityksen mukana', which hands over half of the answer; drop it.
+- Ensimmäinen laatikko (annos): periaate on kappaleessa yllä ("energia jaettuna massalla"); sovellus on yhden askeleen.
+- Toinen laatikko: hajoamistuotteiden osuus on kahta kappaletta ylempänä, joten "päättele" on osin muistamista; suuruusluokka on uutta ja hyvä.
+- Kolmas ok.
+
+## Vanhan sisällön löydökset
+(ei)
+
 ## Checked
-batch delta review: Retrieval reframed as alpha-active dust on work clothes of a plant worker; authentic and clear, tests penetration versus internal exposure.
+batch delta review round 2: laatikoiden vastattavuus.

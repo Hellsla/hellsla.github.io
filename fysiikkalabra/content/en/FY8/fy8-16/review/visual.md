@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 4ae44fd1881f3ac4
+CONTENT-HASH: 90c3bcb6d9655b4b
 
 ## Blocking
 
 ## Polish
+- none
 
 ## Checked
-batch delta review: read the added cosmic-inflation paragraph in lesson.md (about 45 words, bold term, fluent English, no number or symbol outside maths, sits in "The Big Bang" before the timeline figure); opened fy8-16-fig-4-390 (timeline, legible, unclipped). The added paragraph separates the Big Bang text from the timeline figure it explains only marginally; acceptable.
+batch delta review: opened fig-row-1280 (layout intact); changed box read in source (3000 K, 0.7 eV, 6\cdot 10^{-4}\,eV, 13.6 eV all LaTeX with units, \cdot not x).

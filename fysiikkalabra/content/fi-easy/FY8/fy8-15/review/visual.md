@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1d14143dcfdb5fb2
+CONTENT-HASH: 6e2bb22260bd5517
 
 ## Blocking
 - none
@@ -7,10 +7,8 @@ CONTENT-HASH: 1d14143dcfdb5fb2
 ## Polish
 - none
 
-## Checked
-- Delta: lesson.md paragraph cuts (md-paragraphs) and one added sentence in inquiry.json (kertaus prompt, inside the closed "Kertaa" box).
-- fy8-15-stage-herata-390 (Pohdinta, closed Kertaa box visible, layout intact), fy8-15-stage-tutki-390-3, fy8-15-theory-1280-3 (re-cut paragraphs, figure and photos beside text, display formulas, units in LaTeX).
-- Not opened: other figures (unchanged); the added sentence sits in a collapsed box and is natural Finnish.
+## Vanhan sisällön löydökset
+- none noticed
 
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+## Checked
+- batch delta review: opened fy8-15-stage-selita-390-3 (changed "Pysähdy ja mieti" box: u d-bar, uud, ud and the fractional charges render cleanly, no clipping) and -5, -6, -7 (context); the changed answer text is behind the closed Vastaus button and was read from the diff (fluent Finnish, formulas correct in form). Hash re-run at end unchanged.

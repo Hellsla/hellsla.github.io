@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 20fe97b046c6acc0
-
+CONTENT-HASH: fe52cbbdc4f2f8fa
 ## Blocking
-
+(none)
 ## Polish
-- The new paragraph introduces "kosminen inflaatio" and "hypoteesi" without a short gloss for hypoteesi; fine for age 16-19 but could say "ehdotettu selitys".
-- The term is not elsewhere in the lesson, so it is not examined; good, the paragraph says it is not directly observed.
-
+- A student may ask why a photon of only 0,7 eV is "typical" while the box is about ionising hydrogen; one half-sentence ("keskimäärin noin 2,7 kT") would help but is not required.
+## Vanhan sisällön löydökset
+(none)
 ## Checked
-batch delta review: new 3-sentence paragraph after the Big Bang paragraph; short, one idea, clear, honest about status (hypothesis, not observed), no conflict with tasks or solutions.
+batch delta review: pysahdy box now uses 3000 K typical photon energy 0,7 eV; 0,7/1100 = 6·10^-4 eV is correct and the comparison with 13,6 eV is clearly stated; the question and answer agree.

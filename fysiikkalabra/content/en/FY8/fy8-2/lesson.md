@@ -119,9 +119,21 @@ The electron shell of an atom can only be in certain **energy states**. The lowe
 
 Absorption is the reverse process. An atom absorbs a photon only if the energy of the photon is exactly the difference between two states; other photons pass through the gas. An excited atom soon returns to a lower state and emits a photon, but in a random direction. Therefore exactly those wavelengths are missing from the light travelling in the original direction, and a dark line is left in the spectrum. A gas absorbs only transitions that start from states in which its atoms are. In a cold gas almost all atoms are in the ground state, so there are fewer absorption lines than emission lines. The atmosphere of the Sun is so hot that a small fraction of the hydrogen atoms are in the first excited state. They absorb wavelengths of visible light, and that is why the red line $656\,\text{nm}$ of hydrogen appears dark in the spectrum of the Sun. The energy states of electrons are quantised, and spectra are the most direct evidence of this.
 
+```pysahdy
+The atoms of a cold gas are in the ground state, whose energy is $-5.0\,\text{eV}$. The next states are $-3.1\,\text{eV}$ and $-1.6\,\text{eV}$. Light with a continuous spectrum passes through the gas. Which of the wavelengths $653\,\text{nm}$, $500\,\text{nm}$ and $365\,\text{nm}$ are missing from the light that comes through?
+---
+The photon energy is $E = hc/\lambda$ with $hc \approx 1240\,\text{eV nm}$. The wavelengths correspond to energies of $1.9\,\text{eV}$, $2.5\,\text{eV}$ and $3.4\,\text{eV}$. Upwards from the ground state the differences are $-3.1 - (-5.0) = 1.9\,\text{eV}$ and $-1.6 - (-5.0) = 3.4\,\text{eV}$. So $653\,\text{nm}$ and $365\,\text{nm}$ are missing, but $500\,\text{nm}$ ($2.5\,\text{eV}$) passes through.
+```
+
 The energy difference between the states is a necessary condition, but not all transitions are equally probable, and some of them are very weak. Therefore not every possible difference between energy levels is necessarily observed as a strong spectral line. Real spectral lines are not infinitely narrow either: the photon energy must match the difference between the states to within the small width of the line.
 
 You can measure a spectrum yourself. In a spectroscope, light passes through a narrow slit and a grating, and the wavelengths of the lines are read from a scale. A grating fixed in front of a phone camera or a ready-made spectrometer works in the same way: in the light of a gas discharge tube, a fluorescent tube or an LED lamp you can see at once whether the spectrum is continuous or made of lines. A gas discharge tube works at a high voltage and gets hot, so it is used as the teacher instructs and is not touched while it is on.
+
+```pysahdy
+An atom has only two energy states, $-5.0\,\text{eV}$ and $-3.1\,\text{eV}$, so the difference between them is $1.9\,\text{eV}$. The atom is in the lower state and a photon with an energy of $2.4\,\text{eV}$ hits it. Does the atom absorb the photon?
+---
+No. The photon energy $2.4\,\text{eV}$ is not equal to the difference $1.9\,\text{eV}$ between the states, so the atom cannot move to the upper state. The photon does not free the electron either, because $-5.0\,\text{eV} + 2.4\,\text{eV} = -2.6\,\text{eV} < 0$: the electron would still be bound. The photon passes the atom by.
+```
 
 ### Fluorescence
 In **fluorescence**, a substance absorbs short-wavelength light, usually ultraviolet, and at once emits longer-wavelength visible light. The ink of a highlighter glows green in the light of a UV lamp: a molecule of the dye becomes excited, gives away part of its energy in small steps as heat to the vibrations of the molecule, and then returns to the ground state by emitting a photon of visible light. The energy of the emitted photon is smaller than that of the absorbed one, so its wavelength is longer. The spectrum is therefore shifted towards red.
@@ -224,6 +236,12 @@ The strongest visible lines of hydrogen are formed when a hydrogen atom moves fr
   <circle cx="420" cy="347" r="8" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="373" y="308.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$e^-$</div></foreignObject>
 </svg>
+
+```pysahdy
+In transition A of an atom the energy difference is $2.0\,\text{eV}$ and in transition B it is $4.0\,\text{eV}$. Which transition gives a photon with the shorter wavelength, and by how much?
+---
+Transition B. Since $\lambda = \tfrac{hc}{E_\text{u} - E_\text{l}}$, the wavelength is inversely proportional to the energy difference, and twice the energy difference gives half the wavelength.
+```
 
 ## Worked example
 The spectrum of a neon sign has a strong red-orange line at the wavelength $640\,\text{nm}$. What is the difference between the energies of the neon atom's states in the transition that produces this light? Give the answer in electronvolts.

@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 41518cbd864a571b
+CONTENT-HASH: 80cf52ab4f30f794
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] pysahdy 2 — "$\text{eV nm}$" has a plain space inside \text; use $1240\,\text{eV}\,\text{nm}$.
+- [Minor] pysahdy 3 — the answer is a bare formula chain without a sentence; add a short word line ("Energia on noin $-0{,}54\,\text{eV}$.") and note that it repeats the $E_5$ step of box 2.
+
+## Vanhan sisällön löydökset
+(none)
 
 ## Checked
-- Delta round 1 (md-paragraphs, teacher-figure). Opened contact-1, top-390, fig-10-390, example-390-1, theory-1280-1, stage-selita-390-2. Paragraph cuts read well, figures stay beside their paragraphs, formulas and units render, no clipping.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+batch delta review (pysahdy only): box layout seen in fy8-10 theory capture (same component); source of all three boxes.

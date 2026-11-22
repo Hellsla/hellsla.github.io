@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9ee1c56b9a430097
+CONTENT-HASH: 89896b2ef9f02d32
 
 ## Blocking
+(none)
 
 ## Polish
-- "niin tasainen" can be read as flat (geometry) or uniform (homogeneity). Inflation is meant to explain both, so the sentence is right either way; "tasalaatuinen" would name the homogeneity meaning exactly if that is what the writer means.
+(none)
 
 ## Checked
-batch delta review: the new paragraph on cosmic inflation in lesson.md (Teoria, after the alkuräjähdys paragraph). It is called a hypothesis, put in the first fraction of a second, given its main explanatory role (large-scale uniformity) and said not to be directly observed: right, a C-level simplification that leaves no wrong picture. It does not contradict the "not an explosion from a point" text, the misconception box, the inquiry feedback or the CMB section (grep: no other inflation text in the lesson). It falls inside FY8's universe structure and evolution content. No choice, number or formula is touched.
+batch delta review, round 4: all three pysahdy boxes. Round 3's Blocking finding (a 13,6 eV photon from the last-scattering surface) is fixed. The box now uses a typical photon of the 3000 K radiation, about 0,7 eV (2,70 kT = 0,698 eV). The box agrees with the mechanism at line 292 (ionising photons had become too few). Recomputed: 0,7 eV / 1100 = 6,4 · 10⁻⁴ eV ≈ 6 · 10⁻⁴ eV, far below 13,6 eV. This is consistent with 3000 K / 1100 ≈ 2,73 K (lines 294 and 603). The Hubble boxes: 70 · 60 = 4200 and 70 · 120 = 8400 km/s, so B recedes from A at 4200 km/s at a distance of 60 Mpc, the same v = H₀d (non-relativistic, C). 70 · 100 = 7000 km/s and 14 000 / 70 = 200 Mpc are correct, with units right.
+
+## Vanhan sisällön löydökset
+(none)

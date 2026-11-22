@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 1efff356a0921e84
+CONTENT-HASH: 14f8e9603b67332a
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] Tiivistelmä formula — the trailing "." sits inside the display at the right edge; harmless, no clipping (scrollWidth 282 = clientWidth).
+- [Minor] pysahdy-laatikko (hiili-12) — "$1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$" kysymyksessä, mutta vastauksessa "$931{,}5\,\text{MeV}/\text{u}$": yhtenäistä merkintä (c² puuttuu vastauksesta).
+
+## Vanhan sisällön löydökset
+- ei
 
 ## Checked
-- Delta: own capture of opened Tiivistelmä at 390 px (built preview, scratchpad t.png) plus fy8-10-stage-selita-390-6.png (closed box in context). Formula on its own display line, fits; five separate bullets; no literal "- "; page scrollWidth 390 = 390.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: two edited boxes read from diff; fractions and units in LaTeX; layout via shared component.

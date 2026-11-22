@@ -231,6 +231,12 @@ Vapaata kvarkkia ei ole koskaan havaittu. Vahva vuorovaikutus pitää kvarkit ha
   <line x1="300" y1="30" x2="300" y2="320" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
 </svg>
 
+```pysahdy
+Tarkastellaan kvarkkiyhdistelmiä $u\bar{d}$, $uud$ ja $ud$. Kvarkin $u$ varaus on $+\tfrac{2}{3}e$ ja kvarkin $d$ varaus $-\tfrac{1}{3}e$. Laske kunkin varaus ja päättele, mitkä voivat esiintyä vapaina hiukkasina.
+---
+$u\bar{d}$: $\left(+\tfrac{2}{3} + \tfrac{1}{3}\right)e = +e$. $uud$: $\left(\tfrac{2}{3} + \tfrac{2}{3} - \tfrac{1}{3}\right)e = +e$. $ud$: $\left(\tfrac{2}{3} - \tfrac{1}{3}\right)e = +\tfrac{1}{3}e$. Kaksi ensimmäistä ovat hadroneja (mesoni ja baryoni), ja niiden varaus on kokonaisluku $e$:n monikertana, joten ne voivat esiintyä vapaina. Yhdistelmä $ud$ ei ole mesoni eikä baryoni, joten sitä ei synny vapaana hiukkasena.
+```
+
 ### Antihiukkaset ja annihilaatio
 Jokaisella hiukkasella on **antihiukkanen**. Sillä on sama massa kuin hiukkasella, mutta varaus sekä baryoni- ja leptoniluku ovat vastakkaiset. Elektronin antihiukkanen on positroni $e^+$, joka syntyy beeta plus -hajoamisessa. Antihiukkanen merkitään viivalla hiukkasen symbolin päällä. Esimerkiksi $\bar{u}$ on anti-$u$-kvarkki ja $\bar{\nu}_e$ on elektronin antineutriino. Kun hiukkanen ja sen antihiukkanen kohtaavat, ne voivat **annihiloitua** eli tuhota toisensa. Molemmat häviävät, ja niiden koko energia muuttuu esimerkiksi fotoneiksi. Kun elektroni ja positroni ovat lähes levossa, syntyy kaksi fotonia, jotka lähtevät vastakkaisiin suuntiin. Kummankin fotonin energia on $m_e c^2 = 511\,\text{keV}$. Tähän perustuu PET-kuvaus (luku *Säteily lääketieteessä ja teknologiassa*).
 
@@ -317,6 +323,12 @@ Sähkömagneettisen vuorovaikutuksen ja gravitaation kantama on rajaton. Kantama
 
 <figure class="unit-photo"><img src="pics/fy8/cms-detector.webp" alt="Iso ilmaisin, jossa on paljon johtoja ja metallia. Edessä on ihmisiä oranssit kypärät päässä."><figcaption>CMS-ilmaisin CERNissä. Ilmaisin mittaa hiukkasia, joita syntyy törmäyksissä. Ihmiset näyttävät, kuinka iso laite on.</figcaption></figure>
 
+```pysahdy
+Kahden protonin välinen sähköinen voima on noin $10^{36}$ kertaa suurempi kuin gravitaatiovoima. Miksi planeettojen ja tähtien liikettä silti hallitsee gravitaatio?
+---
+Suuret kappaleet ovat melkein sähköisesti neutraaleja. Positiiviset ja negatiiviset varaukset kumoavat toisensa. Massat vain summautuvat, joten gravitaatio jää jäljelle.
+```
+
 ### Higgsin bosoni ja CERN
 Standardimallin mukaan avaruuden täyttää **Higgsin kenttä**. Kun hiukkanen vuorovaikuttaa tämän kentän kanssa, se saa massan. Näin massan saavat $W$- ja $Z$-bosonit, kvarkit ja varatut leptonit. Fotoni ja gluoni jäävät massattomiksi. Kentän kvantti on **Higgsin bosoni**. Se löydettiin vuonna 2012 Euroopan hiukkasfysiikan tutkimuskeskuksessa CERNissä, LHC-kiihdyttimellä. Sen massa on noin $125\,\tfrac{\text{GeV}}{c^2}$. Protonin massasta vain noin $1\,\%$ on sen kvarkkien massaa. Loput on kvarkkeja sitovan vahvan vuorovaikutuksen energiaa.
 
@@ -369,6 +381,12 @@ ydinreaktiossa vapautuva energia :: Q = (m_\text{alku} - m_\text{loppu})\,c^2
 missä $m_\text{alku}$ on hajoavan hiukkasen massa ja $m_\text{loppu}$ on syntyvien hiukkasten massojen summa (luku *Massavaje ja ytimen sidosenergia*). Hajoaminen voi tapahtua vain, kun $Q > 0$ ja kaikki kolme lukua säilyvät. Nämä ehdot ovat välttämättömiä, mutta ne eivät aina riitä. Reaktion pitää myös olla jonkin vuorovaikutuksen välitettävissä, ja muut säilymislait voivat silti estää sen. Hiukkasten massat ilmoitetaan yksikössä $\tfrac{\text{MeV}}{c^2}$. Silloin $c^2$ supistuu pois, ja $Q$ saadaan suoraan megaelektronivoltteina.
 
 Protoni on kevyin baryoni. Standardimallin tavallisissa matalaenergiaisissa reaktioissa baryoniluku säilyy. Siksi protoni ei voi hajota kevyemmiksi hiukkasiksi näiden reaktioiden kautta. Hajoamistuotteissa pitäisi olla baryoni, eikä protonia kevyempää baryonia ole. Joissakin standardimallia laajentavissa teorioissa protonin hajoaminen voisi kuitenkin olla mahdollista. Siksi sitä etsitään kokeissa. Protonin hajoamista ei ole havaittu. Esimerkiksi hajoamiselle $p \to e^+ + \pi^0$ kokeet antavat eliniän alarajaksi yli $10^{34}$ vuotta.
+
+```pysahdy
+Vapaan hiukkasen massa on $135\,\tfrac{\text{MeV}}{c^2}$, ja sen pitäisi hajota hiukkasiksi, joiden massojen summa on $140\,\tfrac{\text{MeV}}{c^2}$. Laske $Q$ ja päättele, mitä tulos tarkoittaa.
+---
+$Q = (m_\text{alku} - m_\text{loppu})\,c^2 = (135 - 140)\,\text{MeV} = -5\,\text{MeV}$. Negatiivinen $Q$ tarkoittaa, että hajoaminen vaatisi $5\,\text{MeV}$ lisää energiaa, jota vapaalla hiukkasella ei ole, joten hajoaminen ei voi tapahtua.
+```
 
 ### Beetahajoaminen kvarkkitasolla
 Beeta miinus -hajoamisessa neutroni muuttuu protoniksi. Kvarkkitasolla yksi neutronin $d$-kvarkki muuttuu $u$-kvarkiksi heikon vuorovaikutuksen välittäjähiukkasen $W^-$ välityksellä:

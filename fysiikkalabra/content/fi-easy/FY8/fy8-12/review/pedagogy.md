@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 88c65d9e13445881
+CONTENT-HASH: 45c4d918e6c2967c
 
 ## Blocking
+(none)
 
 ## Polish
-- None needed.
+- Laatikko (60 keV): 4762 pyöristettynä '4,7e3' näyttää virheelliseltä kahden numeron pyöristykseltä (4,8e3); selitä lyhyesti alaspäin pyöristys tai kirjoita 4760.
+- Muutoin vain numeromuutokset: 4,0 MeV -> 1,2e5 ionipareja oikein.
+
+## Vanhan sisällön löydökset
+(none; ei Blocking)
 
 ## Checked
-batch delta review: solution of the half-value-thickness task now writes the unit as min^-1 instead of 1/min; consistent with the rest of the solution and the figure unit, no wording changed.
+batch delta review: vain numerot muuttuneet; ei uusia laatikoita; laskut tarkistettu.

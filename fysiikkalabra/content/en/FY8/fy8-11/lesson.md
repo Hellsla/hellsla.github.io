@@ -162,6 +162,12 @@ In the chapter *Mass defect and nuclear binding energy*, the binding energy of a
   <foreignObject x="371.5" y="193" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\text{fission}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Why does neither splitting an iron-56 nucleus nor joining two iron-56 nuclei release energy?
+---
+Iron-56 is at the peak of the graph, so the products of splitting it or of joining it with another iron nucleus lie lower: their nucleons are bound less tightly. Such a reaction needs energy instead of releasing it.
+```
+
 ### Fission
 In **fission**, a heavy nucleus splits into two medium-heavy nuclei. A uranium-235 nucleus splits easily when it captures a slow neutron. The uranium-236 nucleus that forms vibrates so strongly that it stretches and pinches in two. A typical reaction is
 $$
@@ -388,6 +394,12 @@ where $N_g$ is the number of neutrons in generation $g$ and $k$ is the multiplic
   <foreignObject x="16" y="253.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$g = 2$</div></foreignObject>
 </svg>
 
+```pysahdy
+The multiplication factor of a chain reaction is $k = 0.8$ and generation $0$ has $1000$ neutrons. How many neutrons are in generation $2$?
+---
+$N_2 = 1000 \cdot 0.8^2 = 640$. There are fewer neutrons in every generation, so the chain dies out.
+```
+
 ### Nuclear reactor
 A **nuclear reactor** is a device in which the chain reaction is kept under control at the critical point, $k = 1$. The fuel is uranium dioxide in which the share of uranium-235 has been enriched from the natural $0.7\,\%$ to about $3$–$5\,\%$. The neutrons produced in fission are fast, but uranium-235 splits much more probably when a slow neutron hits it. This is why a reactor has a **moderator**, in a light-water reactor ordinary water: the neutrons lose their energy by colliding with the hydrogen nuclei of the water molecules. The same water acts as a coolant that carries the heat away. **Control rods** contain a substance, such as boron, that absorbs neutrons. When the rods are pushed in deeper, the multiplication factor decreases.
 
@@ -548,6 +560,12 @@ The figure shows the masses of the fission of uranium-235 before and after the r
   <foreignObject x="455" y="15.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{after}$</div></foreignObject>
   <foreignObject x="152.5" y="325.5" width="295" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\Delta m = 0.1860\,\text{u} \;\Rightarrow\; Q \approx 173\,\text{MeV}$</div></foreignObject>
 </svg>
+
+```pysahdy
+In a nuclear reaction the mass of the starting materials is $0.050\,\text{u}$ greater than that of the products. How much energy is released in megaelectronvolts?
+---
+$Q = 0.050 \cdot 931.5\,\text{MeV} \approx 47\,\text{MeV}$, because the mass difference is multiplied by $931.5\,\tfrac{\text{MeV}}{c^2}$.
+```
 
 ### Fission and fusion side by side
 In the fusion of deuterium and tritium, the mass decreases by $0.01888\,\text{u}$, so $Q = 17.6\,\text{MeV}$. One fusion therefore releases less energy than one fission, but more per nucleon: about $3.5\,\text{MeV}$ in fusion and about $0.85\,\text{MeV}$ in fission. The fusion of the same mass of fuel therefore releases about four times as much energy as fission.

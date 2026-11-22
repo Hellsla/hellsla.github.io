@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6073505be54021e2
+CONTENT-HASH: 6a8703998b1ab0c2
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] pysahdy box (absorption) — `1240\,\text{eV nm}` lacks the thin space between units; write `\text{eV}\,\text{nm}` as fy8-7 does.
+- [Minor] same box — "$-3.1 - (-5.0)$" is fine; consider `\text{eV}` on the first two terms only if the chain is read aloud; no action required.
 
 ## Checked
-- Delta: reworded sunlight-spectrum prompt in the third check; lesson.md only re-paragraphed; figure bodies unchanged (teacher-approved). Opened contact-1, fig-10 (390 px), stage-tarkista-390-1 and -2 (task cards, layout intact). Numbers with units are LaTeX.
-
-## Scores
-illustrations 4 · typography 5 · Finnish (English) 4 · accessibility 4
+batch delta review: moved and new pysahdy box read from source (box now follows the absorption paragraph it needs); changed exercise-solution wording ($E_\text{u}$, $E_\text{l}$) consistent with the lesson; box captures not available.

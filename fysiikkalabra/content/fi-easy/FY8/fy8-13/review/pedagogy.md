@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: cc6f91eb15d908c2
+CONTENT-HASH: 3c966642f467015a
 
 ## Blocking
+- (ei)
 
 ## Polish
-- none
+- Laatikko 2 (radon): osa vastauksen johtopäätöksestä on edellisessä kappaleessa, mutta laskenta on uutta ja arvo kasvattaa ymmärrystä. Hyvä.
+
+## Vanhan sisällön löydökset
+- Ei muita.
 
 ## Checked
-batch delta review: concrete context for the alpha retrieval, clear and fitting.
+batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (kaikki ok).

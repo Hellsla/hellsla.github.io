@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 2603a9b902cc92bd
-
-Delta: the optional Think about it review task (smoke-detector ionisation) replaced the energy-level photon task.
+CONTENT-HASH: 8790a6a6454470cf
 
 ## Blocking
-- None.
+(none)
 
 ## Polish
-- [Minor] Review feedback — "Correct (chapter *...*):" is followed by a lifted formula and then "In this chapter..."; reads fine, no change needed beyond optional wording.
+- [Minor] shots fy8-8-theory-1280-2: in the three-panel decay figure the label `excited state *` runs over the dashed panel divider (old figure, not part of this diff).
+
+## Vanhan sisällön löydökset
+- fy8-8-theory-1280-2 gamma figure: label crossing a dashed divider (old figure).
 
 ## Checked
-- Opened stage-herata-390 (closed task) and my own 390 px render of the opened task (choices, Answer, correct feedback with the lifted formula): the formula rows are aligned, the closing full stop sits inside the last row, nothing is clipped, and the units are upright with a thin space.
-- The diff is the task text and answers only. No figure changed.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+round 2 delta, new Stop and think boxes: opened fy8-8-theory-1280-2, fy8-8-stage-selita-390-1 (closed boxes sit in the reading column, green bar, label, question with LaTeX numbers and units, Answer toggle, no clipping at 1280 or 390 px, placed after the paragraph they test); answers read in lesson.md: full sentences, decimal point, units and numbers in LaTeX, colon division, `\cdot`. Boxes' open answer state is not in the captures, judged from source.
