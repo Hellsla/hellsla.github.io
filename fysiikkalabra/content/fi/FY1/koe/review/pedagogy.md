@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 823f6d310477ff2b
+CONTENT-HASH: 26b1711cf5753b06
 
 ## Blocking
 None.
@@ -18,3 +18,4 @@ None.
 - Numbers checked: k3 meeting 643 s and 2,06 km, the 14 % versus 6 % comparison; k4 T = 1,42 ± 0,03 s; k5 7,68 g/cm³; k6 g = 9,67 and 42 km/h; k7 102 ± 2 µm and 784 kg/m³.
 - Change (Kaava from basic equations): the Kaava steps start from basic equations (k3 b equal-position condition solved in symbols, k5 V = V2 − V1 then ρ = m/V, k7 d V = A·d1, k2 c solves the model symbolically); diagrams before equations not applicable.
 - Solutions complete (Annettu to Järkevyys), common mistakes are real. Rubrics fair, no points for irrelevant equations.
+- Round 2 (delta): k7 c Kaava is now one row per step (d1 = (d-0)/(N-0) = d/N; Δd1 = Δd/N) with "Tässä Δd on lukeman epävarmuus" on its own line. Sijoitus, Vastaus (102 ± 2 µm) and Järkevyys unchanged and consistent; the split makes the derivation easier to follow, no pedagogical regression. Earlier Polish points stand unchanged.
