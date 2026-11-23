@@ -190,7 +190,7 @@ Sama saadaan voimasta sauvan varauksiin: $\overline{v}$ oikealle ja $\overline{B
 **Annettu:** $e = 0{,}30\,\text{V}$, $R = 0{,}60\,\Omega$, $l = 0{,}30\,\text{m}$, $B = 0{,}40\,\text{T}$, $v = 2{,}5\,\text{m/s}$
 **Kysytty:** virta $I$, magneettinen voima $F$ ja vetoteho $P$
 **Periaate:** Virta syntyy kohdan a jännitteestä vastuksen läpi. Virrallinen sauva magneettikentässä kokee voiman, ja vakionopeudella vetävä voima on yhtä suuri kuin se. Voima kertaa nopeus antaa vetotehon.
-**Kaava:** $$\begin{aligned} I &= \dfrac{e}{R} \\ F &= IlB\sin 90^\circ = IlB \\ P &= Fv \end{aligned}$$
+**Kaava:** $$\begin{aligned} I &= \dfrac{e}{R} \\ F &= IlB\sin 90^\circ = IlB = \dfrac{e\,lB}{R} \\ P &= Fv = \dfrac{e\,lBv}{R} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $I = \dfrac{0{,}30\,\text{V}}{0{,}60\,\Omega} = 0{,}50\,\text{A}$, $F = 0{,}50\,\text{A} \cdot 0{,}30\,\text{m} \cdot 0{,}40\,\text{T} = 0{,}060\,\text{N}$ ja $P = 0{,}060\,\text{N} \cdot 2{,}5\,\text{m/s} = 0{,}15\,\text{W}$
 **Vastaus:** Virta on $0{,}50\,\text{A}$, magneettinen voima $0{,}060\,\text{N}$ ja vetoteho $0{,}15\,\text{W}$.
@@ -229,7 +229,7 @@ Sähköteho $eI = 0{,}30\,\text{V} \cdot 0{,}50\,\text{A} = 0{,}15\,\text{W}$ mu
 **Annettu:** $e_0 = 17{,}5\,\text{V}$, $N = 90$, $A = 0{,}0150\,\text{m}^2$, $f = 40\,\text{Hz}$
 **Kysytty:** vuontiheys $B$
 **Periaate:** Pyörivässä käämissä magneettivuo $\Phi = BA\cos(2\pi f t)$ muuttuu sinimuotoisesti, ja induktiolain mukaan jännitteen huippuarvo on vuon muutosnopeuden huippu.
-**Kaava:** $$\begin{aligned} \Phi &= BA\cos(2\pi f t) \\ e &= -N\dfrac{\text{d}\Phi}{\text{d}t} = NBA \cdot 2\pi f \sin(2\pi f t) \\ e_0 &= NBA \cdot 2\pi f \\ B &= \dfrac{e_0}{NA \cdot 2\pi f} \end{aligned}$$
+**Kaava:** $$\begin{aligned} \Phi &= BA\cos(2\pi f t) \\ e_0 &= NBA \cdot 2\pi f \\ B &= \dfrac{e_0}{NA \cdot 2\pi f} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $B = \dfrac{17{,}5\,\text{V}}{90 \cdot 0{,}0150\,\text{m}^2 \cdot 2\pi \cdot 40\,\text{Hz}} = \dfrac{17{,}5\,\text{V}}{339{,}3\,\text{m}^2/\text{s}}$ $= 0{,}0516\,\text{T}$
 **Vastaus:** Vuontiheys on noin $0{,}052\,\text{T}$.
@@ -239,7 +239,7 @@ Sähköteho $eI = 0{,}30\,\text{V} \cdot 0{,}50\,\text{A} = 0{,}15\,\text{W}$ mu
 **Annettu:** $N_1 = 150$, $U_1 = 12{,}37\,\text{V}$ (kohdan a tulos lisänumerolla), $U_2 = 230\,\text{V}$, $P = 46\,\text{W}$
 **Kysytty:** toisiokäämin kierrosluku $N_2$ ja ensiövirta $I_1$
 **Periaate:** Ideaalisessa muuntajassa jännitteet suhtautuvat kuten kierrosluvut ja virrat käänteisesti. Toisiovirta saadaan kuorman tehosta.
-**Kaava:** $$\begin{aligned} \dfrac{U_1}{U_2} &= \dfrac{N_1}{N_2} = \dfrac{I_2}{I_1} \\ I_2 &= \dfrac{P}{U_2} \\ N_2 &= \dfrac{N_1 U_2}{U_1} \\ I_1 &= \dfrac{I_2 U_2}{U_1} \end{aligned}$$
+**Kaava:** $$\begin{aligned} \dfrac{U_1}{U_2} &= \dfrac{N_1}{N_2} = \dfrac{I_2}{I_1} \\ I_2 &= \dfrac{P}{U_2} \\ N_2 &= \dfrac{N_1 U_2}{U_1} \\ I_1 &= \dfrac{I_2 U_2}{U_1} = \dfrac{P}{U_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $N_2 = \dfrac{150 \cdot 230\,\text{V}}{12{,}37\,\text{V}} = 2789$, $I_2 = \dfrac{46\,\text{W}}{230\,\text{V}} = 0{,}200\,\text{A}$ ja $I_1 = \dfrac{0{,}200\,\text{A} \cdot 230\,\text{V}}{12{,}37\,\text{V}} = 3{,}72\,\text{A}$
 **Vastaus:** Toisiossa tarvitaan noin $2790$ kierrosta, ja ensiökäämin virta on noin $3{,}7\,\text{A}$.
@@ -309,7 +309,7 @@ Korkeammilla kertaluvuilla hajaantuminen on leveämpää ja spektrit menevät p�
 **Annettu:** $P = 12\,\text{MW}$, $R = 4{,}8\,\Omega$, siirtojännite $20\,\text{kV}$ (A) tai $110\,\text{kV}$ (B)
 **Kysytty:** kaapelin häviöiden osuus tuotetusta tehosta kummassakin vaihtoehdossa
 **Periaate:** Siirrettävä teho ja siirtojännite määräävät kaapelissa kulkevan virran. Kaapelin resistanssissa virta muuttaa osan sähköenergiasta kaapelin sisäenergiaksi, ja häviöteho riippuu virran neliöstä. Siksi lasketaan virta ja häviöteho kummallekin jännitteelle.
-**Kaava:** $$\begin{aligned} P &= UI \\ I &= \dfrac{P}{U} \\ P_\text{h} &= RI^2 \end{aligned}$$
+**Kaava:** $$\begin{aligned} P &= UI \\ I &= \dfrac{P}{U} \\ P_\text{h} &= RI^2 = \dfrac{RP^2}{U^2} \end{aligned}$$
 **Muunnokset:** $12\,\text{MW} = 12 \cdot 10^{6}\,\text{W}$, $20\,\text{kV} = 20 \cdot 10^{3}\,\text{V}$ ja $110\,\text{kV} = 110 \cdot 10^{3}\,\text{V}$
 **Sijoitus:** A: $I = \dfrac{12 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}} = 600\,\text{A}$ ja $P_\text{h} = 4{,}8\,\Omega \cdot (600\,\text{A})^2 = 1{,}728 \cdot 10^{6}\,\text{W}$, osuus $\dfrac{1{,}728\,\text{MW}}{12\,\text{MW}} = 0{,}144$. B: $I = \dfrac{12 \cdot 10^{6}\,\text{W}}{110 \cdot 10^{3}\,\text{V}} = 109{,}1\,\text{A}$ ja $P_\text{h} = 4{,}8\,\Omega \cdot (109{,}1\,\text{A})^2 = 5{,}71 \cdot 10^{4}\,\text{W}$, osuus $0{,}0048$
 **Vastaus:** Vaihtoehdossa A virta on $600\,\text{A}$ ja häviöteho noin $1{,}7\,\text{MW}$ eli $14\,\%$ tehosta. Vaihtoehdossa B virta on noin $109\,\text{A}$ ja häviöteho noin $57\,\text{kW}$ eli $0{,}48\,\%$. Ero johtuu siitä, että jännite on $5{,}5$-kertainen, virta $5{,}5$ kertaa pienempi ja häviöteho virran neliön mukaan $30$ kertaa pienempi.
@@ -329,7 +329,7 @@ Korkeammilla kertaluvuilla hajaantuminen on leveämpää ja spektrit menevät p�
 **Annettu:** $P_\text{h,A} = 1{,}728\,\text{MW}$, $P_\text{h,B} = 57{,}1\,\text{kW}$, $4000\,\text{h}$, $50\,\text{€/MWh}$, lisäkustannus $3{,}0\,\text{M€}$
 **Kysytty:** vuosisäästö ja takaisinmaksuaika
 **Periaate:** Häviöenergia on häviöteho kerrottuna ajalla, ja sen arvo saadaan hinnalla. Takaisinmaksuaika on lisäkustannus jaettuna vuosisäästöllä.
-**Kaava:** Merkitään hintaa $p$, lisäkustannusta $K$ ja säästöä $S$. $$\begin{aligned} E &= P_\text{h} t \\ S &= (E_\text{A} - E_\text{B})\,p \\ t_\text{takaisin} &= \dfrac{K}{S} \end{aligned}$$
+**Kaava:** Merkitään hintaa $p$, lisäkustannusta $K$ ja säästöä $S$. $$\begin{aligned} E &= P_\text{h} t \\ S &= (E_\text{A} - E_\text{B})\,p = (P_\text{h,A} - P_\text{h,B})\,t\,p \\ t_\text{takaisin} &= \dfrac{K}{S} = \dfrac{K}{(P_\text{h,A} - P_\text{h,B})\,t\,p} \end{aligned}$$
 **Muunnokset:** $$\begin{aligned} &1{,}728\,\text{MW} \cdot 4000\,\text{h} \\ &= 6912\,\text{MWh} \end{aligned}$$ ja $$\begin{aligned} &0{,}0571\,\text{MW} \cdot 4000\,\text{h} \\ &= 228{,}5\,\text{MWh} \end{aligned}$$
 **Sijoitus:** säästö $$\begin{aligned} &= (6912\,\text{MWh} - 228{,}5\,\text{MWh}) \\ &\cdot 50\,\text{€/MWh} \\ &= 334\,200\,\text{€} \end{aligned}$$ ja takaisinmaksuaika $= \dfrac{3{,}0 \cdot 10^{6}\,\text{€}}{334\,200\,\text{€/a}} = 8{,}98\,\text{a}$
 **Vastaus:** Vaihtoehto B säästää noin $3{,}3 \cdot 10^{5}\,\text{€}$ vuodessa ja muuntajat maksavat itsensä takaisin noin $9{,}0$ vuodessa.
