@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2d8bc437a6bc72e9
+CONTENT-HASH: 1d512ee12420595c
 
 ## Blocking
 None.
@@ -14,4 +14,4 @@ None.
 - Independent application: four tasks differ in situation and competency, each with four connected parts of rising demand. No heading or prompt names the model or formula.
 - Source material is interpreted; rubrics are specific and observable; solutions show symbolic work before numbers; common mistakes are real.
 - Workload fits a 2 op module-end set; variety and course-goal coverage are good. Coverage gaps not re-opened.
-- Hash verified: 2d8bc437a6bc72e9.
+- Hash verified against this language packet.
