@@ -73,10 +73,9 @@
 
 **Periaate:** Yksi fotoni voi ionisoida molekyylin vain, jos sen energia on vähintään ionisaatioenergia. Fotonin energia on $E = hf = \tfrac{hc}{\lambda}$, joten mitä pidempi aallonpituus, sitä pienempi energia. Pisin ionisoiva aallonpituus kuuluu fotonille, jonka energia on tasan ionisaatioenergia.
 
-**Kaava:** johdetaan perusyhtälöistä:
+**Kaava:** $E = hf$, josta:
 
 $$\begin{aligned}
-E &= hf \\
 f &= \dfrac{c}{\lambda} \\
 E &= \dfrac{hc}{\lambda} \\
 \lambda &= \dfrac{hc}{E}
@@ -119,10 +118,9 @@ $$.
 
 **Periaate:** GM-mittari laskee kaikki ionisoivat tapahtumat, joten lähteen lähellä mitattuun lukemaan sisältyy myös taustasäteily. Lähteen oma osuus eli nettopulssimäärä saadaan vähentämällä taustan pulssit. Pulssitaajuus on pulssimäärä jaettuna mittausajalla.
 
-**Kaava:** $N_\text{netto}$ on nettopulssimäärä:
+**Kaava:** $N_\text{netto} = N - N_\text{t}$, josta:
 
 $$\begin{aligned}
-N_\text{netto} &= N - N_\text{t} \\
 R &= \dfrac{N_\text{netto}}{t} \\
 &= \dfrac{N - N_\text{t}}{t}
 \end{aligned}$$
@@ -142,10 +140,9 @@ R &= \dfrac{N_\text{netto}}{t} \\
 
 **Periaate:** Lyijy päästää läpi osuuden $\left(\tfrac{1}{2}\right)^{d_\text{Pb}/d_{1/2,\text{Pb}}}$. Betoniin tulee tämä heikentynyt säteily, ja betoni päästää siitä läpi oman osuutensa. Osuudet siis kerrotaan keskenään. Eksponentit kertovat, montako puoliintumispaksuutta kummassakin esteessä on.
 
-**Kaava:** johdetaan perusyhtälöistä:
+**Kaava:** $I_1 = I_0 \left(\tfrac{1}{2}\right)^{d_\text{Pb}/d_{1/2,\text{Pb}}}$, josta:
 
 $$\begin{aligned}
-&I_1 = I_0 \left(\tfrac{1}{2}\right)^{d_\text{Pb}/d_{1/2,\text{Pb}}} \\
 &I_2 = I_1 \left(\tfrac{1}{2}\right)^{d_\text{b}/d_{1/2,\text{b}}} \\
 &\dfrac{I_2}{I_0} = \left(\tfrac{1}{2}\right)^{\frac{d_\text{Pb}}{d_{1/2,\text{Pb}}} + \frac{d_\text{b}}{d_{1/2,\text{b}}}}
 \end{aligned}$$
@@ -165,10 +162,9 @@ $$\begin{aligned}
 
 **Periaate:** Lyijy vaimentaa vain lähteen säteilyä, ei taustaa. Vaimenemislakiin sijoitetaan siksi nettopulssimäärät $N_0 - N_\text{t}$ ja $N - N_\text{t}$, jotka ovat verrannollisia intensiteetteihin. Puoliintumispaksuus on eksponentissa, joten se ratkaistaan logaritmin avulla.
 
-**Kaava:** johdetaan perusyhtälöistä:
+**Kaava:** $N - N_\text{t} = (N_0 - N_\text{t}) \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$, josta:
 
 $$\begin{aligned}
-&N - N_\text{t} = (N_0 - N_\text{t}) \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
 &\dfrac{N_0 - N_\text{t}}{N - N_\text{t}} = 2^{d/d_{1/2}} \\
 &\ln \dfrac{N_0 - N_\text{t}}{N - N_\text{t}} = \dfrac{d}{d_{1/2}} \ln 2 \\
 &d_{1/2} = \dfrac{d \ln 2}{\ln \dfrac{N_0 - N_\text{t}}{N - N_\text{t}}}
@@ -189,11 +185,9 @@ $$\begin{aligned}
 
 **Periaate:** Kaksi estettä vaimentavat yhtä paljon, kun ne päästävät läpi saman osuuden. Läpi päässyt osuus on $\left(\tfrac{1}{2}\right)^{d/d_{1/2}}$. Osuudet ovat samat, kun kummassakin esteessä on yhtä monta puoliintumispaksuutta.
 
-**Kaava:** johdetaan perusyhtälöistä:
+**Kaava:** $\left(\tfrac{1}{2}\right)^{d_\text{b}/d_{1/2,\text{b}}} = \left(\tfrac{1}{2}\right)^{d_\text{Pb}/d_{1/2,\text{Pb}}}$, josta:
 
 $$\begin{aligned}
-&\left(\tfrac{1}{2}\right)^{d_\text{b}/d_{1/2,\text{b}}} \\
-&= \left(\tfrac{1}{2}\right)^{d_\text{Pb}/d_{1/2,\text{Pb}}} \\
 &\dfrac{d_\text{b}}{d_{1/2,\text{b}}} = \dfrac{d_\text{Pb}}{d_{1/2,\text{Pb}}} \\
 &d_\text{b} = \dfrac{d_\text{Pb}}{d_{1/2,\text{Pb}}} \cdot d_{1/2,\text{b}}
 \end{aligned}$$
@@ -240,10 +234,9 @@ $$ ioniparia. Beetahiukkanen muodostaa senttimetrillä noin $1{,}0 \cdot 10^{6} 
 
 **Periaate:** Lyijy vaimentaa vain lähteen säteilyä, joten tausta vähennetään ensin. Nettopulssitaajuudet ovat $2370$ ja $600$ pulssia minuutissa. Ne noudattavat vaimenemislakia. Mittauksista saadaan ensin puoliintumispaksuus ja sen avulla tarvittava paksuus. Molemmat ratkaistaan logaritmin avulla.
 
-**Kaava:** johdetaan perusyhtälöistä:
+**Kaava:** $R_1 - R_\text{t} = (R_0 - R_\text{t}) \left(\tfrac{1}{2}\right)^{d_1/d_{1/2}}$, josta:
 
 $$\begin{aligned}
-&R_1 - R_\text{t} = (R_0 - R_\text{t}) \left(\tfrac{1}{2}\right)^{d_1/d_{1/2}} \\
 &\ln \dfrac{R_0 - R_\text{t}}{R_1 - R_\text{t}} = \dfrac{d_1}{d_{1/2}} \ln 2 \\
 &d_{1/2} = \dfrac{d_1 \ln 2}{\ln \dfrac{R_0 - R_\text{t}}{R_1 - R_\text{t}}}
 \end{aligned}$$
@@ -294,10 +287,9 @@ $$\begin{aligned}
 
 **Periaate:** GM-mittari laskee kaikki ionisoivat tapahtumat. Mitattu pulssitaajuus sisältää siis myös taustasäteilyn. Lähteen osuuden saa, kun vähentää taustan pulssitaajuuden kokonaispulssitaajuudesta.
 
-**Kaava:** $R_\text{kok}$ on kokonaispulssitaajuus ja $R$ lähteen osuus:
+**Kaava:** $R_\text{kok} = \dfrac{N}{t}$, josta:
 
 $$\begin{aligned}
-R_\text{kok} &= \dfrac{N}{t} \\
 R &= R_\text{kok} - R_\text{t} \\
 &= \dfrac{N}{t} - R_\text{t}
 \end{aligned}$$
@@ -364,10 +356,9 @@ Järkevyys: rautasuojassa on vain kaksi ja puoli puoliintumispaksuutta, ja $18\,
 
 **Kuvaajan lukeminen:** Nettopulssimäärät ovat $1800$, $1240$, $840$, $590$, $390$ ja $265$. Pisteet muodostavat laskevan, kaareutuvan käyrän, joka ei leikkaa akselia. Alkuperäisen nettopulssimäärän puolikas on $900$. Käyrä kulkee arvon $900$ kohdalla paksuuksien $3\,\text{mm}$ ($1240$) ja $6\,\text{mm}$ ($840$) välissä. Suora väli antaa $3\,\text{mm} + \dfrac{1240 - 900}{1240 - 840} \cdot 3\,\text{mm} = 5{,}6\,\text{mm}$. Kuvaajasta luettu puoliintumispaksuus on siis noin $5{,}6\,\text{mm}$.
 
-**Kaava:** johdetaan perusyhtälöistä:
+**Kaava:** $N - N_\text{t} = (N_0 - N_\text{t}) \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$, josta:
 
 $$\begin{aligned}
-&N - N_\text{t} = (N_0 - N_\text{t}) \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
 &\dfrac{N_0 - N_\text{t}}{N - N_\text{t}} = 2^{d/d_{1/2}} \\
 &\ln \dfrac{N_0 - N_\text{t}}{N - N_\text{t}} = \dfrac{d}{d_{1/2}} \ln 2 \\
 &d_{1/2} = \dfrac{d \ln 2}{\ln \dfrac{N_0 - N_\text{t}}{N - N_\text{t}}}
@@ -449,10 +440,9 @@ Pieni riipus ei voi pysäyttää radioaaltoja, jotka tulevat joka suunnasta koko
 
 **Kuvaajan lukeminen:** Nettopulssimäärät ovat $2600$, $1855$, $1290$, $910$, $645$ ja $455$. Nettopulssimäärä puolittuu $12\,\text{mm}$:n välein: $2600 \to 1290$ paksuudella $12\,\text{mm}$ ja $1290 \to 645$ paksuudella $24\,\text{mm}$. Tasainen puolittuminen on gammasäteilyn vaimenemista. Käyrä on yhä selvästi nollan yläpuolella paksuudella $30\,\text{mm}$, joten kyse ei ole kantamasta. Säteily on siis gammaa eikä beetaa (kohta a).
 
-**Kaava:** johdetaan perusyhtälöistä:
+**Kaava:** $N - N_\text{t} = (N_0 - N_\text{t}) \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$, josta:
 
 $$\begin{aligned}
-&N - N_\text{t} = (N_0 - N_\text{t}) \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
 &\dfrac{N_0 - N_\text{t}}{N - N_\text{t}} = 2^{d/d_{1/2}} \\
 &\ln \dfrac{N_0 - N_\text{t}}{N - N_\text{t}} = \dfrac{d}{d_{1/2}} \ln 2 \\
 &d_{1/2} = \dfrac{d \ln 2}{\ln \dfrac{N_0 - N_\text{t}}{N - N_\text{t}}}
@@ -477,10 +467,9 @@ Pidempi mittausaika kasvattaa pulssien määrää, ja suhteellinen epävarmuus p
 
 **Periaate:** Tausta vähennetään ensin. Nettopulssitaajuus kertoo, kuinka monta fotonia sekunnissa osuu putkeen. Lähteen fotoneista vain osuus $\eta$ lähtee putken suuntaan, ja lyijyseinä vaimentaa fotoneja vaimenemislain mukaan. Aktiivisuus on hajoamisten määrä sekunnissa. Jokainen hajoaminen lähettää oletuksen mukaan yhden fotonin. Lähteen fotonit sekunnissa saa, kun jakaa pulssitaajuuden sillä osuudella, joka pääsee putkeen asti.
 
-**Kaava:** johdetaan perusyhtälöistä:
+**Kaava:** $R = \dfrac{N_\text{l,ka} - N_\text{t,ka}}{t}$, josta:
 
 $$\begin{aligned}
-R &= \dfrac{N_\text{l,ka} - N_\text{t,ka}}{t} \\
 T &= \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
 R &= A \cdot T \cdot \eta \\
 A &= \dfrac{R}{T \cdot \eta}
@@ -559,10 +548,9 @@ Puoliintumispaksuuksien lukumäärä on $\dfrac{30\,\text{mm}}{12\,\text{mm}} = 
 
 **Kuvaajan lukeminen:** Alku on $800\,\text{pulssia/min}$. Puolet, $400\,\text{pulssia/min}$, on kohdassa $d = 12\,\text{mm}$, joten $d_{1/2} = 12\,\text{mm}$. Kuvaajan viimeinen kohta $d = 48\,\text{mm}$ on noin arvossa $50\,\text{pulssia/min}$. Se on yli sallitun arvon $16\,\text{pulssia/min}$.
 
-**Kaava:** johdetaan perusyhtälöistä:
+**Kaava:** $\dfrac{R}{R_0} = \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$, josta:
 
 $$\begin{aligned}
-&\dfrac{R}{R_0} = \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
 &\ln \dfrac{R_0}{R} = \dfrac{d}{d_{1/2}} \ln 2 \\
 &d = d_{1/2} \cdot \dfrac{\ln \dfrac{R_0}{R}}{\ln 2}
 \end{aligned}$$
