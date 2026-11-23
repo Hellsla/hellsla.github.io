@@ -6,34 +6,13 @@
 **Voimakuvio:** Kappaleena on oikeanpuoleinen pallo, joka on piirretty suorakulmioksi. Kulma on piirretty suuremmaksi kuin tehtävässä, jotta nuolet erottuvat.
 
 <svg data-fig="fy9-sahkokentta-s1-fbd" viewBox="0 0 500 400" role="img" aria-label="Kaksi kuvaa. Vasemmalla tilannekuva: kaksi samanlaista positiivista palloa riippuu langoista samasta koukusta, ja langat muodostavat V-kirjaimen. Katkoviiva koukusta suoraan alas ja kulma alfa langan ja pystysuoran välissä. Oikealla oikeanpuoleisen pallon voimakuvio, pallo suorakulmiona: paino G keskipisteestä suoraan alas, langan jännitysvoima T yläreunasta lankaa pitkin vinosti ylös vasemmalle kohti koukkua ja sähköinen voima F s oikeasta reunasta vaakasuoraan oikealle, poispäin toisesta pallosta. Pallo on levossa, joten voimat kumoavat toisensa: T:n pystyosa on yhtä suuri kuin paino ja vaakaosa yhtä suuri kuin sähköinen voima. Kulma on piirretty suuremmaksi kuin tehtävässä, jotta nuolet erottuvat." style="max-width:100%;font-size:28px">
+  <image href="pics/fy9/fy9-sahkokentta-sovella-fy9-sahkokentta-s1-fbd.webp" x="0" y="0" width="500" height="404.2" preserveAspectRatio="none"/>
   <foreignObject x="31" y="5" width="168" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#6b7480">$\text{tilannekuva}$</div></foreignObject>
-  <line x1="65" y1="62" x2="165" y2="62" stroke="#6c757d" stroke-width="5" stroke-linecap="round"/>
-  <path d="M115,62 q0,8 0,8" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <line x1="115" y1="70" x2="115" y2="310" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <line x1="115" y1="70" x2="22" y2="269.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <circle cx="22" cy="269.5" r="17" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
-  <line x1="14" y1="269.5" x2="30" y2="269.5" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="22" y1="261.5" x2="22" y2="277.5" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="115" y1="70" x2="208" y2="269.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <circle cx="208" cy="269.5" r="17" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
-  <line x1="200" y1="269.5" x2="216" y2="269.5" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="208" y1="261.5" x2="208" y2="277.5" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M115,140 A70,70 0 0 0 144.5,133.5" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <foreignObject x="123.5" y="145" width="23" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$\alpha$</div></foreignObject>
-  <line x1="240" y1="20" x2="240" y2="390" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
   <foreignObject x="256" y="5" width="154" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:28px;color:#6b7480">$\text{voimakuvio}$</div></foreignObject>
-  <rect x="342" y="207" width="56" height="56" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="370" y1="235" x2="370" y2="335.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M370,352.5 L362,334.5 L378,334.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="377.5" y="329.5" width="37" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="370" y1="207" x2="322.5" y2="104.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M315,89.5 L330,102 L315.5,109 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="274.5" y="80.5" width="37" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#c92a2a">$\overline{T}$</div></foreignObject>
-  <line x1="398" y1="235" x2="436" y2="235" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M453,235 L435,243 L435,227 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="429" y="190" width="52" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#c92a2a">$\overline{F}_\text{s}$</div></foreignObject>
-  <line x1="370" y1="207" x2="370" y2="87" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <path d="M370,151 A56,56 0 0 0 346.5,156" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <foreignObject x="344.5" y="112" width="23" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$\alpha$</div></foreignObject>
 </svg>
 
