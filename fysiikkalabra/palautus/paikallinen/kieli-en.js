@@ -131,6 +131,7 @@
     'sama palautus': 'the same submission', 'sama sisältö': 'the same content', ' tuotu jo (': ' already imported (',
     'sama palautustunniste mutta eri sisältö kuin aiemmassa palautuksessa': 'the same submission ID but different content from an earlier submission',
     'tiedosto ei ole JSON-tiedosto': 'the file is not a JSON file', 'tiedoston rakenne on virheellinen': "the file's structure is invalid",
+    'tiedosto on koko työn varmuuskopio, ei palautus; palauta opintojakson työtiedosto': 'the file is a backup of all work, not a submission; submit the module\'s work file',
     'tiedosto ei ole RuukkiLabran palautustiedosto': 'the file is not a RuukkiLabra submission file', 'tiedostomuodon versio puuttuu': 'the file format version is missing',
     'tiedostomuodon versio ': 'the file format version ', ' on uudempi kuin tämä skripti tuntee': ' is newer than this script knows',
     'tuntematon tiedostomuodon versio': 'unknown file format version',

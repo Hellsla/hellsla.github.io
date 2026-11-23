@@ -8,6 +8,10 @@ Jotta työsi ei katoa, kun suljet sivun, Ruukkilabra tallentaa joitakin asioita 
 
 Ruukkilabra ei lähetä näitä tietoja automaattisesti opettajalle eikä muualle, eikä opettaja näe niitä selaimestasi.
 
+Varmuuskopioksi voit tallentaa kaiken tämän selaimen työn yhteen tiedostoon laitteellesi ja avata sen toisella laitteella. Tiedostossa ovat kaikkien opintojaksojen työt (ratkaisut ja vastaukset, itsearviot, tehdyiksi laskettujen tehtävien ajat) sekä käsitekorttien eteneminen ja viimeksi avattu luku sekä tarkistussumma. Siinä ei ole nimeäsi, yhteystietojasi eikä ääneenluvun asetuksia. Tämä tiedosto ei ole palautus: opettajan arviointisivu ei ota sitä vastaan, vaan palautat työn opintojakson omalla työtiedostolla.
+
+<div class="work-tools" id="kaikki-tyo" hidden></div>
+
 ## Työtiedosto
 
 Painike *Tallenna työ tiedostoon* kokoaa opintojakson työn yhdeksi tiedostoksi laitteellesi. Tiedoston voi avata toisella laitteella painikkeella *Avaa tallennettu työ*. Tiedostossa on kaikki, mitä selain on tallentanut tämän opintojakson sivuilta:

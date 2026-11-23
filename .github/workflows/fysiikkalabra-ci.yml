@@ -183,7 +183,7 @@ jobs:
       - name: the solution editor under every exercise (Abitti's Digabi editor, loaded on the first click; copy for L'Math; teacher 2026-11-01)
         run: python scripts/test_writepad.py
       - name: submission and grading trial, FY3-1 (Lataa ratkaisut, Apps Script import and grading view against a mock; teacher 2026-11-05)
-        run: python scripts/palautus_tasks.py --check && python scripts/test_palautus.py && python scripts/test_tehty.py && python scripts/test_koko.py
+        run: python scripts/palautus_tasks.py --check && python scripts/test_palautus.py && python scripts/test_tehty.py && python scripts/test_koko.py && python scripts/test_kaikki.py
       - name: offline use (service worker, visited pages, KaTeX, simulation and answer check without a network; newest page wins; old caches removed; emergency switch; work queue 17a PR 1)
         run: python scripts/test_offline.py
       - name: read aloud on every lesson page (browser voice, formulas as words, the sentence and word highlighted; teacher 2026-11-03)
@@ -220,7 +220,7 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
       - run: python --version && python -m pip --version && python -m pip install -r requirements-ci.txt   # the container's own Python 3.12 (actions/setup-python's build does not run in it); the browser and its system packages are in the image (the Playwright version requirements-ci.txt pins)
-      - run: python scripts/build.py --all
+      - run: python scripts/build.py --all && python scripts/build.py   # site/ too: test_courses.py compares its copy of fy3-2 with it, and a committed site/ is stale after any shared script change (work queue 0g PR 2: nobody commits it)
       - run: python scripts/reviews.py verify
       - name: a temporary FY4 course through the whole pipeline (nothing is published)
         run: python scripts/test_courses.py

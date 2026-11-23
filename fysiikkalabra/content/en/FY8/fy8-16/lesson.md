@@ -3,147 +3,7 @@
 > **Why** have the spectral lines of distant galaxies shifted towards red, and the more so the farther away the galaxy is?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a starry sky where about ten galaxies of different sizes glow, large ones near and small ones far away. Below, on a hill, is an observatory, and a telescope points to the sky through the slit of its dome." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><radialGradient id="fy816h-gal" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffffff"/><stop offset="0.35" stop-color="#ffc078"/><stop offset="1" stop-color="#ffc078" stop-opacity="0"/></radialGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="#1f2933"/>
-  <circle cx="1174" cy="321.5" r="2.35081" fill="#ffffff"/>
-  <circle cx="424.5" cy="13" r="1.36671" fill="#ffffff"/>
-  <circle cx="641" cy="291.5" r="1.44746" fill="#ffffff"/>
-  <circle cx="734.5" cy="279.5" r="1.55114" fill="#ffffff"/>
-  <circle cx="386.5" cy="325.5" r="2.57925" fill="#ffffff"/>
-  <circle cx="626" cy="308" r="1.99585" fill="#ffffff"/>
-  <circle cx="791.5" cy="368" r="2.35894" fill="#ffffff"/>
-  <circle cx="577.5" cy="133.5" r="2.49707" fill="#ffffff"/>
-  <circle cx="409.5" cy="273.5" r="2.1856" fill="#ffffff"/>
-  <circle cx="1096.5" cy="356.5" r="1.70095" fill="#ffffff"/>
-  <circle cx="412" cy="35" r="1.74884" fill="#ffffff"/>
-  <circle cx="282.5" cy="347.5" r="2.28293" fill="#ffffff"/>
-  <circle cx="415" cy="352" r="1.78255" fill="#ffffff"/>
-  <circle cx="1091.5" cy="173" r="1.9687" fill="#ffffff"/>
-  <circle cx="1127" cy="335" r="2.57232" fill="#ffffff"/>
-  <circle cx="278" cy="270" r="1.94366" fill="#ffffff"/>
-  <circle cx="134.5" cy="112" r="2.58202" fill="#ffffff"/>
-  <circle cx="1014" cy="133.5" r="2.13523" fill="#ffffff"/>
-  <circle cx="1076.5" cy="470.5" r="1.30263" fill="#ffffff"/>
-  <circle cx="582.5" cy="556" r="1.05061" fill="#ffffff"/>
-  <circle cx="716" cy="78.5" r="2.3813" fill="#ffffff"/>
-  <circle cx="865" cy="48" r="1.59132" fill="#ffffff"/>
-  <circle cx="309.5" cy="471.5" r="1.70252" fill="#ffffff"/>
-  <circle cx="955" cy="160.5" r="2.50647" fill="#ffffff"/>
-  <circle cx="194" cy="264.5" r="1.66404" fill="#ffffff"/>
-  <circle cx="485.5" cy="190.5" r="1.73926" fill="#ffffff"/>
-  <circle cx="297.5" cy="183.5" r="1.98983" fill="#ffffff"/>
-  <circle cx="306.5" cy="578.5" r="2.38513" fill="#ffffff"/>
-  <circle cx="533" cy="83" r="1.31109" fill="#ffffff"/>
-  <circle cx="956.5" cy="393" r="1.23159" fill="#ffffff"/>
-  <circle cx="455" cy="527.5" r="1.90616" fill="#ffffff"/>
-  <circle cx="1068.5" cy="53" r="1.39657" fill="#ffffff"/>
-  <circle cx="889.5" cy="119" r="1.82379" fill="#ffffff"/>
-  <circle cx="516" cy="30" r="2.48508" fill="#ffffff"/>
-  <circle cx="634.5" cy="458.5" r="1.83893" fill="#ffffff"/>
-  <circle cx="458.5" cy="323.5" r="1.55587" fill="#ffffff"/>
-  <circle cx="856" cy="340.5" r="1.33774" fill="#ffffff"/>
-  <circle cx="422" cy="129" r="1.69498" fill="#ffffff"/>
-  <circle cx="756.5" cy="322.5" r="1.81332" fill="#ffffff"/>
-  <circle cx="128" cy="229.5" r="2.40409" fill="#ffffff"/>
-  <circle cx="748.5" cy="135.5" r="2.28211" fill="#ffffff"/>
-  <circle cx="434" cy="168.5" r="1.62713" fill="#ffffff"/>
-  <circle cx="788" cy="34" r="2.17816" fill="#ffffff"/>
-  <circle cx="514.5" cy="219" r="1.55156" fill="#ffffff"/>
-  <circle cx="287" cy="380.5" r="2.56866" fill="#ffffff"/>
-  <circle cx="134.5" cy="133" r="1.38388" fill="#ffffff"/>
-  <circle cx="221" cy="493" r="2.07564" fill="#ffffff"/>
-  <circle cx="873" cy="395.5" r="2.46648" fill="#ffffff"/>
-  <circle cx="56.5" cy="547.5" r="2.234" fill="#ffffff"/>
-  <circle cx="423.5" cy="454.5" r="2.19388" fill="#ffffff"/>
-  <circle cx="465" cy="152.5" r="2.26486" fill="#ffffff"/>
-  <circle cx="655.5" cy="84" r="2.48464" fill="#ffffff"/>
-  <circle cx="595.5" cy="522" r="2.09764" fill="#ffffff"/>
-  <circle cx="895" cy="551" r="2.38916" fill="#ffffff"/>
-  <circle cx="224" cy="571" r="2.15203" fill="#ffffff"/>
-  <circle cx="372.5" cy="484.5" r="1.62957" fill="#ffffff"/>
-  <circle cx="989" cy="41.5" r="2.22052" fill="#ffffff"/>
-  <circle cx="196" cy="488" r="2.23615" fill="#ffffff"/>
-  <circle cx="249.5" cy="80" r="2.49325" fill="#ffffff"/>
-  <circle cx="267.5" cy="438" r="2.23266" fill="#ffffff"/>
-  <circle cx="81.5" cy="305" r="1.77086" fill="#ffffff"/>
-  <circle cx="450" cy="300" r="2.10326" fill="#ffffff"/>
-  <circle cx="1176" cy="154" r="1.47299" fill="#ffffff"/>
-  <circle cx="1105" cy="445" r="1.73355" fill="#ffffff"/>
-  <circle cx="959.5" cy="312" r="2.25624" fill="#ffffff"/>
-  <circle cx="815" cy="439.5" r="2.35904" fill="#ffffff"/>
-  <circle cx="455" cy="395.5" r="2.57237" fill="#ffffff"/>
-  <circle cx="605.5" cy="379.5" r="2.07927" fill="#ffffff"/>
-  <circle cx="132" cy="127" r="2.35195" fill="#ffffff"/>
-  <circle cx="72.5" cy="260" r="2.35087" fill="#ffffff"/>
-  <circle cx="345.5" cy="289.5" r="2.22099" fill="#ffffff"/>
-  <circle cx="928" cy="232" r="2.0661" fill="#ffffff"/>
-  <circle cx="813" cy="141.5" r="2.18686" fill="#ffffff"/>
-  <circle cx="913" cy="438" r="2.43089" fill="#ffffff"/>
-  <circle cx="689.5" cy="315" r="2.56912" fill="#ffffff"/>
-  <circle cx="1000.5" cy="273" r="1.9926" fill="#ffffff"/>
-  <circle cx="849" cy="193.5" r="1.88336" fill="#ffffff"/>
-  <circle cx="357" cy="65" r="1.41083" fill="#ffffff"/>
-  <circle cx="595.5" cy="403.5" r="1.50046" fill="#ffffff"/>
-  <circle cx="703.5" cy="357" r="1.90934" fill="#ffffff"/>
-  <circle cx="988.5" cy="214.5" r="1.20461" fill="#ffffff"/>
-  <circle cx="702" cy="451.5" r="2.16198" fill="#ffffff"/>
-  <circle cx="303.5" cy="510" r="1.8836" fill="#ffffff"/>
-  <circle cx="926" cy="182" r="1.95894" fill="#ffffff"/>
-  <circle cx="776" cy="479.5" r="1.15213" fill="#ffffff"/>
-  <circle cx="1140" cy="10.5" r="2.58947" fill="#ffffff"/>
-  <circle cx="365.5" cy="42" r="1.46378" fill="#ffffff"/>
-  <circle cx="541" cy="226" r="1.7832" fill="#ffffff"/>
-  <circle cx="897.5" cy="354.5" r="1.3662" fill="#ffffff"/>
-  <circle cx="15.5" cy="597.5" r="1.47606" fill="#ffffff"/>
-  <circle cx="1131" cy="317.5" r="1.79298" fill="#ffffff"/>
-  <circle cx="310" cy="381.5" r="1.64216" fill="#ffffff"/>
-  <circle cx="60" cy="511" r="2.10515" fill="#ffffff"/>
-  <circle cx="516" cy="384.5" r="1.46355" fill="#ffffff"/>
-  <circle cx="291" cy="278.5" r="2.42435" fill="#ffffff"/>
-  <circle cx="1001" cy="255" r="1.28618" fill="#ffffff"/>
-  <circle cx="858" cy="462.5" r="1.59526" fill="#ffffff"/>
-  <circle cx="809.5" cy="166" r="1.1536" fill="#ffffff"/>
-  <circle cx="1056" cy="59.5" r="1.90869" fill="#ffffff"/>
-  <circle cx="202" cy="389.5" r="1.31262" fill="#ffffff"/>
-  <circle cx="383.5" cy="289" r="2.07189" fill="#ffffff"/>
-  <circle cx="638.5" cy="34" r="1.05635" fill="#ffffff"/>
-  <circle cx="171.5" cy="206.5" r="2.48205" fill="#ffffff"/>
-  <circle cx="664" cy="198.5" r="1.03021" fill="#ffffff"/>
-  <circle cx="202.5" cy="341.5" r="2.066" fill="#ffffff"/>
-  <circle cx="1041" cy="6.5" r="1.82485" fill="#ffffff"/>
-  <circle cx="1086" cy="598.5" r="1.53152" fill="#ffffff"/>
-  <circle cx="154.5" cy="419" r="2.33644" fill="#ffffff"/>
-  <circle cx="630" cy="249.5" r="1.03864" fill="#ffffff"/>
-  <circle cx="56" cy="332.5" r="1.69907" fill="#ffffff"/>
-  <ellipse cx="600" cy="170" rx="120" ry="46" fill="url(#fy816h-gal)" transform="rotate(-22 600 170)"/>
-  <circle cx="600" cy="170" r="14" fill="#ffffff"/>
-  <ellipse cx="330" cy="120" rx="70" ry="26" fill="url(#fy816h-gal)" transform="rotate(15 330 120)"/>
-  <circle cx="330" cy="120" r="8" fill="#ffffff"/>
-  <ellipse cx="870" cy="110" rx="62" ry="24" fill="url(#fy816h-gal)" transform="rotate(-35 870 110)"/>
-  <circle cx="870" cy="110" r="7" fill="#ffffff"/>
-  <ellipse cx="1010" cy="250" rx="46" ry="18" fill="url(#fy816h-gal)" transform="rotate(20 1010 250)"/>
-  <circle cx="1010" cy="250" r="5.5" fill="#ffffff"/>
-  <ellipse cx="190" cy="260" rx="40" ry="16" fill="url(#fy816h-gal)" transform="rotate(-10 190 260)"/>
-  <circle cx="190" cy="260" r="5" fill="#ffffff"/>
-  <ellipse cx="760" cy="300" rx="34" ry="13" fill="url(#fy816h-gal)" transform="rotate(30 760 300)"/>
-  <circle cx="760" cy="300" r="4" fill="#ffffff"/>
-  <ellipse cx="470" cy="300" rx="26" ry="10" fill="url(#fy816h-gal)" transform="rotate(-25 470 300)"/>
-  <circle cx="470" cy="300" r="3" fill="#ffffff"/>
-  <ellipse cx="1100" cy="90" rx="24" ry="9" fill="url(#fy816h-gal)" transform="rotate(10 1100 90)"/>
-  <circle cx="1100" cy="90" r="2.5" fill="#ffffff"/>
-  <ellipse cx="90" cy="110" rx="22" ry="9" fill="url(#fy816h-gal)" transform="rotate(30 90 110)"/>
-  <circle cx="90" cy="110" r="2.5" fill="#ffffff"/>
-  <ellipse cx="940" cy="380" rx="18" ry="7" fill="url(#fy816h-gal)" transform="rotate(-15 940 380)"/>
-  <circle cx="940" cy="380" r="2" fill="#ffffff"/>
-  <ellipse cx="300" cy="380" rx="16" ry="6" fill="url(#fy816h-gal)" transform="rotate(5 300 380)"/>
-  <circle cx="300" cy="380" r="2" fill="#ffffff"/>
-  <path d="M0,600 L0,500 Q300,430 600,450 Q900,470 1200,420 L1200,600 Z" fill="#6c757d" stroke-linejoin="round"/>
-  <path d="M0,600 L0,540 Q320,490 640,510 Q930,530 1200,490 L1200,600 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <rect x="520" y="410" width="160" height="70" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <path d="M520,412 A80,80 0 0 1 680,412 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M592,334 L614,334 L622,412 L584,412 Z" fill="#6c757d" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M602,350 L680,220 L692,228 L616,358 Z" fill="#8a96a3" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <rect x="586" y="440" width="28" height="40" fill="#eef5f9" stroke="#1f2933" stroke-width="2"/>
+  <image href="pics/fy8/fy8-16-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Key idea
@@ -206,46 +66,22 @@ The light of a galaxy is the light of its billions of stars. When the light is s
 The light of almost all galaxies is redshifted, and the more so the farther away the galaxy is. Georges Lemaître concluded in 1927, and Edwin Hubble showed with his measurements in 1929, that galaxies recede from us at a speed that is directly proportional to their distance. The reason is not that we would be at the centre. **Space itself is expanding**: the expansion of the universe increases, on average, the distances between distant galaxies. The motion of nearby galaxies is also affected by their mutual gravitation, so some galaxies can approach each other. When distances grow, for example, by a factor of $1.5$, a galaxy that is twice as far away moves twice as far in the same time. Seen from any galaxy, distant galaxies recede on average in the same way, so the expansion has no centre. The galaxies themselves and their stars do not expand, because gravity holds them together.
 
 <svg data-fig="laajeneminen" viewBox="0 0 600 310" role="img" aria-label="Schematic, distances to scale. In the top row four galaxies A, B, C and D in a line at equal spacing: B is at distance d from galaxy A, C at distance 2d and D at distance 3d. In the bottom row the same galaxies later, when all distances have grown by a factor of 1.5. At the bottom blue shift arrows: seen from galaxy A, B has moved by one, C by two and D by three units, so the shift and the speed v, 2v and 3v are directly proportional to the distance." style="max-width:100%;font-size:24px">
+  <image href="pics/fy8/fy8-16-laajeneminen.webp" x="19.2" y="13.2" width="576.9" height="305.3" preserveAspectRatio="none"/>
   <foreignObject x="12" y="63.5" width="124" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{before}$</div></foreignObject>
   <foreignObject x="12" y="175.5" width="124" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{later}$</div></foreignObject>
-  <ellipse cx="170" cy="78" rx="22" ry="11" fill="#ffc078" stroke="#e8590c" stroke-width="2" transform="rotate(-18 170 78)"/>
-  <ellipse cx="170" cy="78" rx="10" ry="5.5" fill="#ffffff" transform="rotate(-18 170 78)"/>
   <foreignObject x="160" y="31.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{A}$</div></foreignObject>
-  <ellipse cx="250" cy="78" rx="22" ry="11" fill="#ffc078" stroke="#e8590c" stroke-width="2" transform="rotate(-18 250 78)"/>
-  <ellipse cx="250" cy="78" rx="10" ry="5.5" fill="#ffffff" transform="rotate(-18 250 78)"/>
   <foreignObject x="240" y="31.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{B}$</div></foreignObject>
   <foreignObject x="240" y="95.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$d$</div></foreignObject>
-  <ellipse cx="330" cy="78" rx="22" ry="11" fill="#ffc078" stroke="#e8590c" stroke-width="2" transform="rotate(-18 330 78)"/>
-  <ellipse cx="330" cy="78" rx="10" ry="5.5" fill="#ffffff" transform="rotate(-18 330 78)"/>
   <foreignObject x="320" y="31.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{C}$</div></foreignObject>
   <foreignObject x="313.5" y="95.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$2d$</div></foreignObject>
-  <ellipse cx="410" cy="78" rx="22" ry="11" fill="#ffc078" stroke="#e8590c" stroke-width="2" transform="rotate(-18 410 78)"/>
-  <ellipse cx="410" cy="78" rx="10" ry="5.5" fill="#ffffff" transform="rotate(-18 410 78)"/>
   <foreignObject x="400" y="31.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{D}$</div></foreignObject>
   <foreignObject x="393.5" y="95.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$3d$</div></foreignObject>
-  <ellipse cx="170" cy="190" rx="22" ry="11" fill="#ffc078" stroke="#e8590c" stroke-width="2" transform="rotate(-18 170 190)"/>
-  <ellipse cx="170" cy="190" rx="10" ry="5.5" fill="#ffffff" transform="rotate(-18 170 190)"/>
   <foreignObject x="160" y="143.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{A}$</div></foreignObject>
-  <ellipse cx="290" cy="190" rx="22" ry="11" fill="#ffc078" stroke="#e8590c" stroke-width="2" transform="rotate(-18 290 190)"/>
-  <ellipse cx="290" cy="190" rx="10" ry="5.5" fill="#ffffff" transform="rotate(-18 290 190)"/>
   <foreignObject x="280" y="143.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{B}$</div></foreignObject>
-  <ellipse cx="410" cy="190" rx="22" ry="11" fill="#ffc078" stroke="#e8590c" stroke-width="2" transform="rotate(-18 410 190)"/>
-  <ellipse cx="410" cy="190" rx="10" ry="5.5" fill="#ffffff" transform="rotate(-18 410 190)"/>
   <foreignObject x="400" y="143.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{C}$</div></foreignObject>
-  <ellipse cx="530" cy="190" rx="22" ry="11" fill="#ffc078" stroke="#e8590c" stroke-width="2" transform="rotate(-18 530 190)"/>
-  <ellipse cx="530" cy="190" rx="10" ry="5.5" fill="#ffffff" transform="rotate(-18 530 190)"/>
   <foreignObject x="520" y="143.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{D}$</div></foreignObject>
-  <line x1="250" y1="214" x2="250" y2="252" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
-  <line x1="252" y1="246" x2="276" y2="246" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M288,246 L275,252 L275,240 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="260" y="263.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$v$</div></foreignObject>
-  <line x1="330" y1="214" x2="330" y2="252" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
-  <line x1="332" y1="246" x2="396" y2="246" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M408,246 L395,252 L395,240 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="353.5" y="263.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$2v$</div></foreignObject>
-  <line x1="410" y1="214" x2="410" y2="252" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
-  <line x1="412" y1="246" x2="516" y2="246" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M528,246 L515,252 L515,240 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="453.5" y="263.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$3v$</div></foreignObject>
 </svg>
 

@@ -6,6 +6,10 @@ Ruukkilabra ei kerää tietoja sinusta. Sivustolla ei ole kirjautumista. Sivusto
 
 Sivusto tallentaa työsi vain tämän laitteen selaimeen. Esimerkiksi ratkaisusi, vastauksesi, mittaustuloksesi, itsearviosi ja edistymisesi tallentuvat. Myös ratkaisuihin liittämäsi kuvat tallentuvat. Näin työ ei katoa, kun suljet sivun. Selain tallentaa myös avaamasi sivut tälle laitteelle. Silloin sivut aukeavat ilman nettiä. Sivusto ei lähetä tietoja opettajalle itsestään. Opettaja ei näe niitä selaimestasi.
 
+Voit tallentaa kaiken tämän selaimen työn yhteen tiedostoon laitteellesi. Tiedoston voi avata toisella laitteella. Tiedostossa ovat kaikkien opintojaksojen työt, käsitekorttien eteneminen ja viimeksi avattu luku. Siinä ei ole nimeäsi eikä yhteystietojasi. Tämä tiedosto ei ole palautus. Palautat työn opintojakson omalla työtiedostolla.
+
+<div class="work-tools" id="kaikki-tyo" hidden></div>
+
 ## Työtiedosto
 
 Painike *Tallenna työ tiedostoon* tekee työstäsi yhden tiedoston. Tiedosto tallentuu laitteellesi. Voit avata sen toisella laitteella painikkeella *Avaa tallennettu työ*.
