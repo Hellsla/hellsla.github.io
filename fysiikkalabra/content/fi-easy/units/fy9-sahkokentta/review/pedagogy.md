@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 894eada2c0c82540
-SCOPE: delta: new tasks s7 (Alfahiukkanen levyjen välissä) and s8 (Vihreä merkkivalo) and the changed intro; older tasks untouched
+CONTENT-HASH: f9bba1ca0381a58c
 
 ## Blocking
-- (none)
+None.
 
 ## Polish
-- s8 d: the prompt asks "Mitä tulokset kertovat LEDistä ja Ohmin laista?", but the communication criterion (1 p) rewards explaining why an LED cannot be connected straight to a source and what the series resistor does. Add "Miksi LEDin kanssa tarvitaan etuvastus?" to the prompt, or fold the point into the concept criterion.
-- s7 b: "Painovoima on niin pieni, ettei sillä ole merkitystä" is required unprompted in the scored text; justified only in Järkevyys.
-- s7 c: the $v^2 = 2as$ route under "Hyväksytään myös" skips the energy point; say how it is scored.
-- Intro: "Ratkaise kysytty suure symboleilla" is simple, but "symboleilla" may puzzle an easy-language reader; "kirjaimilla" or "kaavalla" is easier.
+- Pysahdy box 1 (Ydinajatus, electron force direction): the paragraph just above already says "Negatiiviseen varaukseen voima osoittaa kenttää vastaan". The box is therefore recall, not a prediction. It still works as a quick check. A fresher variant (a proton and an electron in the same field, or "kenttä osoittaa ylös") would make the student apply the rule instead of copying it.
+- Pysahdy box 2 (2 mm spark): it repeats the 3 mm to 9 kV step of the paragraph above with new numbers. That is a fair near transfer. $U = Ed$ is named only in the box's answer, and it is not shown in the text before it (the Kaava section comes later). One short mention of "jännite on kenttä kertaa matka" in the paragraph would help an S2 reader.
+- Pysahdy box 3 (the gap is doubled): the box sits right after the Kaava block, so the answer is visible one line up. Asking "ja jos levyn pinta-ala kaksinkertaistuu ja väli puolittuu?" would require reasoning.
+- The question wording is clear and the answers are short. Plain-language level is right: "Kohdistaa" is explained earlier, and "jakajana" is understandable from the formula. "Kaavassa ... etäisyys d on jakajana" could add "nimittäjässä".
 
 ## Checked
-- Read the fi-easy packet's s7 and s8 (tasks.json, solutions, answers.py lines) and the intro.
-- Language level: short sentences, one idea each (the long fi sentences are split: "Kaksi suurta metallilevyä on rinnakkain tyhjiössä. Niiden välissä on ..."); terms unchanged (potentiaali, potentiaaliero, ominaiskäyrä, etuvastus, Ohmin laki), so the lesson's vocabulary still matches. Criteria are worded as in fi without losing a step.
-- Fidelity: same data and numbers as fi (5,0 kV/m, 1,602·10^-19 C, 6,645·10^-27 kg, 4,0 and 2,0 cm, 6,0 V, 220 Ω, 30 mA, 5 and 20 mA); answer fields identical; rubric points sum to part points; the new d prompt in s7 ("aiemmin negatiiviselle") keeps the meaning.
-- Text names no method; results rounded to two significant figures; aligned calculation rows; units neutral.
-- Intro: eight tasks, matches the set. practice.py check OK. Layout captures in shots.md for the current hash; hash unchanged at the end.
+- The 3 new boxes in unit.md: placement (after the idea, after the spark calculation, after the capacitor rule), one idea each, answers hidden behind the separator, units and numbers in LaTeX, decimal comma. The reading level fits selkosuomi: short sentences, terms explained.
+- The boxes add no workload to speak of (about 3 minutes) and do not disclose a later task's answer. No box duplicates a Sovella task.
+- Hero image replacing the inline SVG: aria-label describes the scene, and the Miksi question is still illustrated. I did not open the capture, so the picture itself is for the visual reviewer.
+- Sovella set (s1 to s8, selkosuomi version): sampled s1 in full (tasks and solution). It keeps rising parts a to d, force diagram first (fbd criteria), symbols before numbers, units conversions, a reasonableness check, real common mistakes, and an "accepted also" list. The set matches the Finnish version that passed. The unit text is otherwise unchanged except for the new boxes and hero image.
+- practice.py check OK. The hash was identical at start and end.
