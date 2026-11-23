@@ -1,5 +1,5 @@
 VERDICT: FAIL
-CONTENT-HASH: 9ce9f1634468bcd8
+CONTENT-HASH: 5ecba3d8a8b1b63d
 
 ## Blocking
 - [Major] solutions.md 7-21 (line 124, the "district heating networks" task), Substitution — the new rows are named $E_\text{perille,A}$ and $E_\text{perille,B}$, Finnish subscripts in the English text, while Formula, Given and Principle of the same solution say $E_\text{arrived}$ (capture open-exercises-L3-1280-3) — two symbols for one quantity and an untranslated word in a symbol; a reader cannot match the substitution to the formula — fix: $E_\text{arrived,A} = 0.910 \cdot 500\,\text{MWh} = 455.0\,\text{MWh}$ and $E_\text{arrived,B} = 0.850 \cdot 520\,\text{MWh} = 442.0\,\text{MWh}$.
