@@ -131,7 +131,7 @@ The weight is to the left of the right support and rotates the plank anticlockwi
 In the free-body diagram the forces acting on the plank are its weight $G_\text{p}$ downwards from the middle, the force of the person $F_\text{pers} = m_\text{pers} g$ downwards and the support forces $N_1$ and $N_2$ upwards at the ends.
 
 The right end is chosen as the reference point, so $N_2$ drops out. $G_\text{p}$ and $F_\text{pers}$ rotate the plank about it anticlockwise, $N_1$ clockwise.
-**Formula:** $$\begin{aligned} \Sigma M &= 0 \\ G_\text{p} r_\text{p} + F_\text{pers} r_\text{pers} &= N_1 L \\ N_1 L &= m_\text{p} g\, r_\text{p} \\ &\quad + m_\text{pers} g\, r_\text{pers} \\ N_1 &= \dfrac{(m_\text{p} r_\text{p} + m_\text{pers} r_\text{pers})\, g}{L} \end{aligned}$$
+**Formula:** $$\begin{aligned} \Sigma M &= 0 \\ N_1 L &= G_\text{p} r_\text{p} \\ &\quad + F_\text{pers} r_\text{pers} \\ N_1 L &= m_\text{p} g\, r_\text{p} \\ &\quad + m_\text{pers} g\, r_\text{pers} \\ N_1 &= \dfrac{(m_\text{p} r_\text{p} + m_\text{pers} r_\text{pers})\, g}{L} \end{aligned}$$
 **Conversions:** None needed, but the lever arms are calculated from the right end: $r_\text{p} = 1.5\,\text{m}$ and $r_\text{pers} = 3.0\,\text{m} - 1.0\,\text{m} = 2.0\,\text{m}$.
 **Substitution:** The moments are $m_\text{p} g\, r_\text{p} = 20\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 1.5\,\text{m} = 294.3\,\text{Nm}$ and $m_\text{pers} g\, r_\text{pers} = 70\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 2.0\,\text{m} = 1373.4\,\text{Nm}$, together $1667.7\,\text{Nm}$. So $N_1 = \dfrac{1667.7\,\text{Nm}}{3.0\,\text{m}} = 555.9\,\text{N}$
 **Answer:** $560\,\text{N}$, two significant figures like the data.
