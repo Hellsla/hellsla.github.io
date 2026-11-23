@@ -54,7 +54,7 @@
 **Annettu:** $E = 12{,}4\,\text{V}$, $R_\text{s} = 40\,\text{m}\Omega$, $U_\text{lat} = 14{,}4\,\text{V}$, $R = 0{,}36\,\Omega$
 **Kysytty:** latausvirta $I$ ampeereina
 **Periaate:** Piirissä on yksi silmukka. Jännitelain mukaan laturin jännite on potentiaalin laskujen summa. Virta kulkee akun läpi plusnavalta miinusnavalle. Siksi potentiaali laskee akussa sekä sisäisessä resistanssissa että lähdejännitteen verran.
-**Kaava:** $$\begin{aligned} \Sigma U &= 0 \\ U_\text{lat} - RI - R_\text{s} I - E &= 0 \\ U_\text{lat} - E &= (R + R_\text{s})I \\ I &= \dfrac{U_\text{lat} - E}{R + R_\text{s}} \end{aligned}$$
+**Kaava:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{lat} - RI - R_\text{s} I - E &= 0 \\ U_\text{lat} - E &= (R + R_\text{s})I \\ I &= \dfrac{U_\text{lat} - E}{R + R_\text{s}} \end{aligned}$$
 **Muunnokset:** $R_\text{s} = 40\,\text{m}\Omega = 40 \cdot 0{,}001\,\Omega = 0{,}040\,\Omega$
 **Sijoitus:** $I = \dfrac{14{,}4\,\text{V} - 12{,}4\,\text{V}}{0{,}36\,\Omega + 0{,}040\,\Omega} = \dfrac{2{,}0\,\text{V}}{0{,}40\,\Omega} = 5{,}0\,\text{A}$
 **Vastaus:** $5{,}0\,\text{A}$, kaksi merkitsevää numeroa kuten jännite-erotuksessa $2{,}0\,\text{V}$ ja resistansseissa.
@@ -64,7 +64,7 @@
 **Annettu:** $U_\text{lat} = 5{,}0\,\text{V}$, $E = 3{,}8\,\text{V}$, $R = 0{,}80\,\Omega$, $I = 1{,}2\,\text{A}$
 **Kysytty:** kennon sisäinen resistanssi $R_\text{s}$ ohmeina
 **Periaate:** Jännitelain mukaan laturin jännitteen ja kennon lähdejännitteen erotus on yhtä suuri kuin resistanssien jännitteiden summa. Kun virta tunnetaan, saadaan resistanssien summa. Siitä saadaan kennon osuus.
-**Kaava:** $$\begin{aligned} \Sigma U &= 0 \\ U_\text{lat} - RI - R_\text{s} I - E &= 0 \\ R_\text{s} I &= U_\text{lat} - E - RI \\ R_\text{s} &= \dfrac{U_\text{lat} - E}{I} - R \end{aligned}$$
+**Kaava:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{lat} - RI - R_\text{s} I - E &= 0 \\ R_\text{s} I &= U_\text{lat} - E - RI \\ R_\text{s} &= \dfrac{U_\text{lat} - E}{I} - R \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Sijoitus:** $R_\text{s} = \dfrac{5{,}0\,\text{V} - 3{,}8\,\text{V}}{1{,}2\,\text{A}} - 0{,}80\,\Omega = 1{,}0\,\Omega - 0{,}80\,\Omega = 0{,}20\,\Omega$
 **Vastaus:** $0{,}2\,\Omega$, kymmenesosaohmin tarkkuudella kuten termi $(U_\text{lat} - E) : I = 1{,}0\,\Omega$, joka rajoittaa erotuksen tarkkuutta.
@@ -104,7 +104,7 @@
 **Annettu:** $U_\text{lat} = 13{,}8\,\text{V}$, lähdejännite alussa $E_1 = 12{,}0\,\text{V}$ ja lopussa $E_2 = 12{,}6\,\text{V}$, resistanssit yhteensä $R_\text{kok} = 0{,}30\,\Omega$
 **Kysytty:** latausvirran suhteellinen pieneneminen prosentteina
 **Periaate:** Jännitelain mukaan latausvirtaa ajaa laturin jännitteen ja lähdejännitteen erotus. Resistanssit pysyvät vakioina. Kun lähdejännite kasvaa, erotus ja virta pienenevät. Pieneneminen verrataan alkuvirtaan.
-**Kaava:** $$\begin{aligned} \Sigma U &= 0 \\ U_\text{lat} - R_\text{kok} I - E &= 0 \\ I &= \dfrac{U_\text{lat} - E}{R_\text{kok}} \\ \text{pieneneminen} &= \dfrac{I_1 - I_2}{I_1} \end{aligned}$$
+**Kaava:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{lat} - R_\text{kok} I - E &= 0 \\ I &= \dfrac{U_\text{lat} - E}{R_\text{kok}} \\ \text{pieneneminen} &= \dfrac{I_1 - I_2}{I_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: jännitteet ovat voltteina ja resistanssi ohmeina. Lopuksi suhde muunnetaan prosenteiksi.
 **Sijoitus:** $I_1 = \dfrac{13{,}8\,\text{V} - 12{,}0\,\text{V}}{0{,}30\,\Omega} = 6{,}0\,\text{A}$, $I_2 = \dfrac{13{,}8\,\text{V} - 12{,}6\,\text{V}}{0{,}30\,\Omega} = 4{,}0\,\text{A}$ ja $\dfrac{6{,}0\,\text{A} - 4{,}0\,\text{A}}{6{,}0\,\text{A}} = 0{,}333 = 33{,}3\,\%$
 **Vastaus:** $33\,\%$, kaksi merkitsevää numeroa kuten jännite-erotuksissa $1{,}8\,\text{V}$ ja $1{,}2\,\text{V}$.
@@ -180,7 +180,7 @@ Vain lausekkeen $UQ$ yksikkö on energian yksikkö. Se on myös akun energian ka
 **Kysytty:** resistanssi $R_\text{kok}$ ohmeina
 **Periaate:** Jännitelain mukaan $I = (U_\text{lat} - E) : R_\text{kok}$. Kun $E$ ja $R_\text{kok}$ ovat vakioita, virta on laturin jännitteen lineaarinen funktio. Sen kuvaajan kulmakerroin on $1 : R_\text{kok}$. Mittauspisteet eivät yleensä ole täsmälleen samalla suoralla, koska mittauksissa on epävarmuutta. Siksi kulmakerroin luetaan sovitetusta suorasta. Sitä ei lueta kahdesta vierekkäisestä mittauspisteestä.
 **Kuvaajan lukeminen:** Pisteet piirretään $(U_\text{lat}, I)$-koordinaatistoon. Niiden lomaan sovitetaan suora. Suoralta luetaan kaksi kaukana toisistaan olevaa pistettä, $(13{,}0\,\text{V};\ 1{,}5\,\text{A})$ ja $(14{,}6\,\text{V};\ 5{,}5\,\text{A})$.
-**Kaava:** $$\begin{aligned} \Sigma U &= 0 \\ U_\text{lat} - R_\text{kok} I - E &= 0 \\ I &= \dfrac{1}{R_\text{kok}}\,U_\text{lat} - \dfrac{E}{R_\text{kok}} \\ k &= \dfrac{\Delta I}{\Delta U_\text{lat}} = \dfrac{1}{R_\text{kok}} \\ R_\text{kok} &= \dfrac{\Delta U_\text{lat}}{\Delta I} \end{aligned}$$
+**Kaava:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{lat} - R_\text{kok} I - E &= 0 \\ I &= \dfrac{1}{R_\text{kok}}\,U_\text{lat} - \dfrac{E}{R_\text{kok}} \\ k &= \dfrac{\Delta I}{\Delta U_\text{lat}} = \dfrac{1}{R_\text{kok}} \\ R_\text{kok} &= \dfrac{\Delta U_\text{lat}}{\Delta I} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Sijoitus:** $R_\text{kok} = \dfrac{14{,}6\,\text{V} - 13{,}0\,\text{V}}{5{,}5\,\text{A} - 1{,}5\,\text{A}} = \dfrac{1{,}6\,\text{V}}{4{,}0\,\text{A}} = 0{,}40\,\Omega$
 **Vastaus:** $0{,}40\,\Omega$, kaksi merkitsevää numeroa kuten virtojen lukemissa. Käsin sovitettu suora antaa tuloksen muutaman prosentin tarkkuudella.
@@ -244,7 +244,7 @@ Kun virta on nelinkertainen, teho on $16$-kertainen. Pikalatauksessa virta on su
 **Annettu:** kapasiteetti $Q_\text{kap} = 50\,\text{Ah}$, laturin jännite $U_\text{lat} = 14{,}0\,\text{V}$, resistanssit yhteensä $R_\text{kok} = 0{,}40\,\Omega$, lähdejännitteet taulukosta $12{,}00\,\text{V}$, $12{,}20\,\text{V}$, $12{,}40\,\text{V}$ ja $12{,}60\,\text{V}$ varaustasoilla $20\,\%$, $40\,\%$, $60\,\%$ ja $80\,\%$
 **Kysytty:** latauksen kesto $t$ tunteina varaustasosta $20\,\%$ varaustasoon $80\,\%$ (a) ja vertailuaika vakiovirralla (b)
 **Periaate:** Jännitelain mukaan latausvirta on $I = (U_\text{lat} - E) : R_\text{kok}$. Lähdejännite kasvaa latauksen edetessä, joten virta pienenee. Siksi lataus jaetaan vaiheisiin, joissa virta on likimain vakio. Jokaisessa vaiheessa varaus on $\Delta Q = It$. Vaiheen virta lasketaan lähdejännitteen keskiarvosta, koska lähdejännite muuttuu vaiheen aikana.
-**Kaava:** $$\begin{aligned} \Sigma U &= 0 \\ U_\text{lat} - R_\text{kok} I_k - E_{k,\text{ka}} &= 0 \\ I_k &= \dfrac{U_\text{lat} - E_{k,\text{ka}}}{R_\text{kok}} \\ \Delta Q &= I_k t_k \\ t_k &= \dfrac{\Delta Q}{I_k} \\ t &= t_1 + t_2 + t_3 \end{aligned}$$
+**Kaava:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{lat} - R_\text{kok} I_k - E_{k,\text{ka}} &= 0 \\ I_k &= \dfrac{U_\text{lat} - E_{k,\text{ka}}}{R_\text{kok}} \\ \Delta Q &= I_k t_k \\ t_k &= \dfrac{\Delta Q}{I_k} \\ t &= t_1 + t_2 + t_3 \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$ ja $1\,\text{Ah} : 1\,\text{A} = 1\,\text{h}$. Jokaisessa vaiheessa varaustaso nousee $20\,\%$, joten $\Delta Q = 0{,}20 \cdot 50\,\text{Ah} = 10\,\text{Ah}$.
 **Sijoitus:** a) Keskimääräiset lähdejännitteet ovat $12{,}10\,\text{V}$, $12{,}30\,\text{V}$ ja $12{,}50\,\text{V}$. Virrat ovat $I_1 = 1{,}90\,\text{V} : 0{,}40\,\Omega = 4{,}75\,\text{A}$, $I_2 = 1{,}70\,\text{V} : 0{,}40\,\Omega = 4{,}25\,\text{A}$ ja $I_3 = 1{,}50\,\text{V} : 0{,}40\,\Omega = 3{,}75\,\text{A}$. Kestot ovat $t_1 = 10\,\text{Ah} : 4{,}75\,\text{A} = 2{,}105\,\text{h}$, $t_2 = 10\,\text{Ah} : 4{,}25\,\text{A} = 2{,}353\,\text{h}$ ja $t_3 = 10\,\text{Ah} : 3{,}75\,\text{A} = 2{,}667\,\text{h}$, joten $t = 2{,}105\,\text{h} + 2{,}353\,\text{h} + 2{,}667\,\text{h} = 7{,}125\,\text{h}$. b) Alkuvirta on $I_0 = (14{,}0\,\text{V} - 12{,}00\,\text{V}) : 0{,}40\,\Omega = 5{,}0\,\text{A}$ ja siirrettävä varaus on $30\,\text{Ah}$, joten $t_0 = 30\,\text{Ah} : 5{,}0\,\text{A} = 6{,}0\,\text{h}$
 **Vastaus:** $7{,}1\,\text{h}$, kaksi merkitsevää numeroa kuten resistanssissa $0{,}40\,\Omega$. Vakiovirralla $5{,}0\,\text{A}$ aika olisi $6{,}0\,\text{h}$. Todellinen lataus kestää pidempään, koska lähdejännite kasvaa. Silloin jännite-erotus $U_\text{lat} - E$ pienenee ja virta laskee: $4{,}75\,\text{A}$:sta $3{,}75\,\text{A}$:iin. Saman varauksen siirtyminen vie siksi kauemmin.

@@ -12,7 +12,7 @@
 **Given:** voltage of the source $U = 12.0\,\text{V}$, voltage of the first resistor $U_1 = 4.5\,\text{V}$
 **Find:** the voltage $U_2$ of the second resistor in volts
 **Principle:** Kirchhoff's voltage law: when a loop is traversed, the sum of the changes of potential is zero. The rise in the source is equal to the total of the drops in the resistors.
-**Formula:** $$\begin{aligned} \Sigma U &= 0 \\ U - U_1 - U_2 &= 0 \\ U_2 &= U - U_1 \end{aligned}$$
+**Formula:** $$\begin{aligned} \sum \Delta V &= 0 \\ U - U_1 - U_2 &= 0 \\ U_2 &= U - U_1 \end{aligned}$$
 **Conversions:** Not needed: the voltages are in volts.
 **Substitution:** $U_2 = 12.0\,\text{V} - 4.5\,\text{V} = 7.5\,\text{V}$
 **Answer:** $7.5\,\text{V}$, to one decimal place like the given voltages.

@@ -12,7 +12,7 @@
 **Annettu:** lähteen jännite $U = 12{,}0\,\text{V}$, ensimmäisen vastuksen jännite $U_1 = 4{,}5\,\text{V}$
 **Kysytty:** toisen vastuksen jännite $U_2$ voltteina
 **Periaate:** Kirchhoffin jännitelaki: kun silmukka kierretään, potentiaalin muutosten summa on nolla. Lähteen nousu on yhtä suuri kuin vastusten laskujen yhteismäärä.
-**Kaava:** $$\begin{aligned} \Sigma U &= 0 \\ U - U_1 - U_2 &= 0 \\ U_2 &= U - U_1 \end{aligned}$$
+**Kaava:** $$\begin{aligned} \sum \Delta V &= 0 \\ U - U_1 - U_2 &= 0 \\ U_2 &= U - U_1 \end{aligned}$$
 **Muunnokset:** Ei tarvita: jännitteet ovat voltteina.
 **Sijoitus:** $U_2 = 12{,}0\,\text{V} - 4{,}5\,\text{V} = 7{,}5\,\text{V}$
 **Vastaus:** $7{,}5\,\text{V}$, yhden desimaalin tarkkuudella kuten annetut jännitteet.

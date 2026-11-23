@@ -86,7 +86,7 @@ The current $0.35\,\text{A}$ does not fit on the range $200\,\text{mA}$, so $10\
 **Principle:** A voltmeter lets through only a very small current, so connected in series it decreases the current of the whole circuit to almost zero.
 
 Then hardly any voltage is left across the lamp, because the voltage of the lamp is its resistance times the almost zero current, and the whole voltage of the battery is left between the terminals of the meter.
-**Formula:** $$\begin{aligned} \Sigma U &= 0 \Rightarrow U_\text{battery} = U_\text{m} + U_\text{lamp} \\ U_\text{lamp} &= R_\text{lamp} I \approx 0 \quad (I \approx 0) \\ U_\text{m} &= U_\text{battery} - U_\text{lamp} \\ U_\text{m} &\approx U_\text{battery} \end{aligned}$$
+**Formula:** $$\begin{aligned} &U_\text{battery} = U_\text{m} + U_\text{lamp} \\ U_\text{lamp} &= R_\text{lamp} I \approx 0 \quad (I \approx 0) \\ U_\text{m} &= U_\text{battery} - U_\text{lamp} \\ U_\text{m} &\approx U_\text{battery} \end{aligned}$$
 **Conversions:** Not needed: the voltage is in volts.
 **Substitution:** $U_\text{m} \approx 9.0\,\text{V}$
 **Answer:** about $9.0\,\text{V}$, two significant figures like the voltage of the battery.
@@ -210,7 +210,7 @@ The error limit $0.08\,\text{V}$ is almost three times the estimate of the sprea
 The current through the resistor $R_1$ is the sum of the currents of the resistor $R_2$ and the meter. The voltages are in the same loop: $U_1 + U = U_0$.
 
 The current is obtained from the voltage and the resistance of a resistor: $I = U : R$.
-**Formula:** $$\begin{aligned} U_0 &= U_1 + U \quad (\Sigma U = 0) \\ U_1 &= R_1 I_1 \\ I_1 &= I_2 + I_\text{m} \quad (\Sigma I = 0) \\ I_2 &= \dfrac{U}{R_2} \\ I_\text{m} &= \dfrac{U}{R_\text{m}} \\ \dfrac{U_0 - U}{R_1} &= \dfrac{U}{R_2} + \dfrac{U}{R_\text{m}} \\ U_0 - U &= U \cdot \dfrac{R_1}{R_2} + U \cdot \dfrac{R_1}{R_\text{m}} \\ U_0 &= U \left(1 + \dfrac{R_1}{R_2} + \dfrac{R_1}{R_\text{m}}\right) \\ U &= \dfrac{U_0}{1 + \dfrac{R_1}{R_2} + \dfrac{R_1}{R_\text{m}}} \\ s &= \dfrac{U_\text{without} - U}{U_\text{without}} \end{aligned}$$
+**Formula:** $$\begin{aligned} U_0 &= U_1 + U \\ U_1 &= R_1 I_1 \\ I_1 &= I_2 + I_\text{m} \\ I_2 &= \dfrac{U}{R_2} \\ I_\text{m} &= \dfrac{U}{R_\text{m}} \\ \dfrac{U_0 - U}{R_1} &= \dfrac{U}{R_2} + \dfrac{U}{R_\text{m}} \\ U_0 - U &= U \cdot \dfrac{R_1}{R_2} + U \cdot \dfrac{R_1}{R_\text{m}} \\ U_0 &= U \left(1 + \dfrac{R_1}{R_2} + \dfrac{R_1}{R_\text{m}}\right) \\ U &= \dfrac{U_0}{1 + \dfrac{R_1}{R_2} + \dfrac{R_1}{R_\text{m}}} \\ s &= \dfrac{U_\text{without} - U}{U_\text{without}} \end{aligned}$$
 **Conversions:** The ratios of the resistances are plain numbers, so the megaohms do not need to be converted: $\dfrac{R_1}{R_2} = 1.0$ and $\dfrac{R_1}{R_\text{m}} = \dfrac{1.0\,\text{M}\Omega}{10\,\text{M}\Omega} = 0.10$.
 **Substitution:** a) Without the meter the resistors have the same current and the same resistance, so the voltage is divided equally: $U_\text{without} = 12.0\,\text{V} : 2 = 6.00\,\text{V}$.
 

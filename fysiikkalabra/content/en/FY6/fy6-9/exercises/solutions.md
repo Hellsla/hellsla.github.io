@@ -53,7 +53,7 @@
 **Given:** $E = 12.4\,\text{V}$, $R_\text{s} = 40\,\text{m}\Omega$, $U_\text{ch} = 14.4\,\text{V}$, $R = 0.36\,\Omega$
 **Find:** the charging current $I$ in amperes
 **Principle:** The circuit has one loop, so by the voltage law the voltage of the charger is the sum of the potential drops. The current passes through the battery from the positive terminal to the negative terminal, so the potential drops in the battery both in the internal resistance and by the source voltage.
-**Formula:** $$\begin{aligned} \Sigma U &= 0 \\ U_\text{ch} - RI - R_\text{s} I - E &= 0 \\ U_\text{ch} - E &= (R + R_\text{s})I \\ I &= \dfrac{U_\text{ch} - E}{R + R_\text{s}} \end{aligned}$$
+**Formula:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{ch} - RI - R_\text{s} I - E &= 0 \\ U_\text{ch} - E &= (R + R_\text{s})I \\ I &= \dfrac{U_\text{ch} - E}{R + R_\text{s}} \end{aligned}$$
 **Conversions:** $R_\text{s} = 40\,\text{m}\Omega = 40 \cdot 0.001\,\Omega = 0.040\,\Omega$
 **Substitution:** $I = \dfrac{14.4\,\text{V} - 12.4\,\text{V}}{0.36\,\Omega + 0.040\,\Omega} = \dfrac{2.0\,\text{V}}{0.40\,\Omega} = 5.0\,\text{A}$
 **Answer:** $5.0\,\text{A}$, two significant figures like the voltage difference $2.0\,\text{V}$ and the resistances.
@@ -63,7 +63,7 @@
 **Given:** $U_\text{ch} = 5.0\,\text{V}$, $E = 3.8\,\text{V}$, $R = 0.80\,\Omega$, $I = 1.2\,\text{A}$
 **Find:** the internal resistance $R_\text{s}$ of the cell in ohms
 **Principle:** By the voltage law, the difference between the voltage of the charger and the source voltage of the cell equals the sum of the voltages of the resistances in the loop. When the current is known, we get the sum of the resistances and from it the share of the cell.
-**Formula:** $$\begin{aligned} \Sigma U &= 0 \\ U_\text{ch} - RI - R_\text{s} I - E &= 0 \\ R_\text{s} I &= U_\text{ch} - E - RI \\ R_\text{s} &= \dfrac{U_\text{ch} - E}{I} - R \end{aligned}$$
+**Formula:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{ch} - RI - R_\text{s} I - E &= 0 \\ R_\text{s} I &= U_\text{ch} - E - RI \\ R_\text{s} &= \dfrac{U_\text{ch} - E}{I} - R \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Substitution:** $R_\text{s} = \dfrac{5.0\,\text{V} - 3.8\,\text{V}}{1.2\,\text{A}} - 0.80\,\Omega = 1.0\,\Omega - 0.80\,\Omega = 0.20\,\Omega$
 **Answer:** $0.2\,\Omega$, to a tenth of an ohm like the term $(U_\text{ch} - E) : I = 1.0\,\Omega$, which limits the precision of the difference.
@@ -103,7 +103,7 @@
 **Given:** $U_\text{ch} = 13.8\,\text{V}$, source voltage at the start $E_1 = 12.0\,\text{V}$ and at the end $E_2 = 12.6\,\text{V}$, resistances in total $R_\text{tot} = 0.30\,\Omega$
 **Find:** the relative decrease of the charging current in percent
 **Principle:** By the voltage law, the charging current is driven by the difference between the voltage of the charger and the source voltage, and the resistances stay constant. When the source voltage grows, the difference and the current decrease. The decrease is compared with the initial current.
-**Formula:** $$\begin{aligned} \Sigma U &= 0 \\ U_\text{ch} - R_\text{tot} I - E &= 0 \\ I &= \dfrac{U_\text{ch} - E}{R_\text{tot}} \\ \text{decrease} &= \dfrac{I_1 - I_2}{I_1} \end{aligned}$$
+**Formula:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{ch} - R_\text{tot} I - E &= 0 \\ I &= \dfrac{U_\text{ch} - E}{R_\text{tot}} \\ \text{decrease} &= \dfrac{I_1 - I_2}{I_1} \end{aligned}$$
 **Conversions:** Not needed: the voltages are in volts and the resistance in ohms. Finally the ratio is converted to percent.
 **Substitution:** $I_1 = \dfrac{13.8\,\text{V} - 12.0\,\text{V}}{0.30\,\Omega} = 6.0\,\text{A}$, $I_2 = \dfrac{13.8\,\text{V} - 12.6\,\text{V}}{0.30\,\Omega} = 4.0\,\text{A}$ and $\dfrac{6.0\,\text{A} - 4.0\,\text{A}}{6.0\,\text{A}} = 0.333 = 33.3\,\%$
 **Answer:** $33\,\%$, two significant figures like the voltage differences $1.8\,\text{V}$ and $1.2\,\text{V}$.
@@ -201,7 +201,7 @@ The resistances are together $0.5\,\text{V} : 2.0\,\text{A} = 0.25\,\Omega$, and
 
 The slope of its graph is $1 : R_\text{tot}$. Because of measurement uncertainty the data points are usually not exactly on one line, so the slope is read from the fitted line and not from two neighbouring data points.
 **Reading the graph:** The points are plotted in an $(U_\text{ch}, I)$ coordinate system and a straight line is fitted among them. Two points far apart from each other are read from the line, $(13.0\,\text{V};\ 1.5\,\text{A})$ and $(14.6\,\text{V};\ 5.5\,\text{A})$.
-**Formula:** $$\begin{aligned} \Sigma U &= 0 \\ U_\text{ch} - R_\text{tot} I - E &= 0 \\ I &= \dfrac{1}{R_\text{tot}}\,U_\text{ch} - \dfrac{E}{R_\text{tot}} \\ k &= \dfrac{\Delta I}{\Delta U_\text{ch}} = \dfrac{1}{R_\text{tot}} \\ R_\text{tot} &= \dfrac{\Delta U_\text{ch}}{\Delta I} \end{aligned}$$
+**Formula:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{ch} - R_\text{tot} I - E &= 0 \\ I &= \dfrac{1}{R_\text{tot}}\,U_\text{ch} - \dfrac{E}{R_\text{tot}} \\ k &= \dfrac{\Delta I}{\Delta U_\text{ch}} = \dfrac{1}{R_\text{tot}} \\ R_\text{tot} &= \dfrac{\Delta U_\text{ch}}{\Delta I} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Substitution:** $R_\text{tot} = \dfrac{14.6\,\text{V} - 13.0\,\text{V}}{5.5\,\text{A} - 1.5\,\text{A}} = \dfrac{1.6\,\text{V}}{4.0\,\text{A}} = 0.40\,\Omega$
 **Answer:** $0.40\,\Omega$, two significant figures like the current readings. A line fitted by hand gives the result to within a few percent.
@@ -287,7 +287,7 @@ With the small current the efficiency is $$9.62\,\text{Wh} : 11.0\,\text{Wh} \ap
 Therefore the charging is divided into stages in which the current is approximately constant, and in each stage the charge is $\Delta Q = It$.
 
 The current of a stage is calculated from the mean of the source voltage, because the source voltage changes during the stage.
-**Formula:** $$\begin{aligned} \Sigma U &= 0 \\ U_\text{ch} - R_\text{tot} I_k - E_{k,\text{avg}} &= 0 \\ I_k &= \dfrac{U_\text{ch} - E_{k,\text{avg}}}{R_\text{tot}} \\ \Delta Q &= I_k t_k \\ t_k &= \dfrac{\Delta Q}{I_k} \\ t &= t_1 + t_2 + t_3 \end{aligned}$$
+**Formula:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{ch} - R_\text{tot} I_k - E_{k,\text{avg}} &= 0 \\ I_k &= \dfrac{U_\text{ch} - E_{k,\text{avg}}}{R_\text{tot}} \\ \Delta Q &= I_k t_k \\ t_k &= \dfrac{\Delta Q}{I_k} \\ t &= t_1 + t_2 + t_3 \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$ and $1\,\text{Ah} : 1\,\text{A} = 1\,\text{h}$. In each stage the charge level rises by $20\,\%$, so $\Delta Q = 0.20 \cdot 50\,\text{Ah} = 10\,\text{Ah}$.
 **Substitution:** a) The mean source voltages are $12.10\,\text{V}$, $12.30\,\text{V}$ and $12.50\,\text{V}$. The currents are $I_1 = 1.90\,\text{V} : 0.40\,\Omega = 4.75\,\text{A}$, $I_2 = 1.70\,\text{V} : 0.40\,\Omega = 4.25\,\text{A}$ and $I_3 = 1.50\,\text{V} : 0.40\,\Omega = 3.75\,\text{A}$. The durations are $t_1 = 10\,\text{Ah} : 4.75\,\text{A} = 2.105\,\text{h}$, $t_2 = 10\,\text{Ah} : 4.25\,\text{A} = 2.353\,\text{h}$ and $t_3 = 10\,\text{Ah} : 3.75\,\text{A} = 2.667\,\text{h}$, so $t = 2.105\,\text{h} + 2.353\,\text{h} + 2.667\,\text{h} = 7.125\,\text{h}$.
 
