@@ -1,24 +1,18 @@
 VERDICT: FAIL
-CONTENT-HASH: 2099e517d51d3416
+CONTENT-HASH: e1ef3a1aeef83571
 
 ## Blocking
-1. **s4 part b asks for the wrong quantity.** "Estimate the smallest air gap that can break down" is ill-posed: a shorter gap breaks down more easily, so no gap is "smallest". The uniform-field estimate $U/E_\text{max} \approx 4\,\text{mm}$ is the gap at which breakdown is certain. The solution itself says an arc can strike across a clearly longer gap, which contradicts the wording, and the rubric awards 2 points for "4 mm". Reword to "the longest gap across which breakdown is certain in the uniform field model", or "at what gap does breakdown begin". Change the solution's "lower limit for the safety distance" to match. The wording probably comes from the Finnish unit, so fix both languages.
+- s4 b: the prompt is now well-posed ("Estimate how short an air gap must be for breakdown to be certain" gives d <= U/E_max ~ 4 mm in the uniform-field model), but the rubric and the solution were not updated and now contradict it.
+  - tasks.json s4 b `assumptions` detail: "The estimate is a lower limit ... an arc can strike across a clearly longer gap too". For the new question 4 mm is an upper limit for a gap that certainly breaks down, and a longer gap can still break down. "Lower limit" would teach students the opposite of what they computed.
+  - solutions.md s4 b: **Find** still says "the smallest air gap that can break down". The model answer says "the smallest gap that breaks down is d = U/E_max". The estimate is called "a lower limit for the safety distance". The first two are the original ill-posed wording, and the third mixes two different quantities.
+  - Yleisiä virheitä: "The 4 mm of part b is presented as a safe distance, although it is the lower limit of a uniform field". The fault it names is real, but "lower limit" is again the wrong term.
+  - Fix: Find = "how short a gap breaks down certainly". Answer: "In a uniform field a gap of at most about 4 mm breaks down certainly. Near a thin conductor or the tip of the rod the field is stronger than U/d, and humid air and dirt weaken the insulation, so an arc can strike across a clearly longer gap too, so 4 mm is not a safe distance". Reword the criterion and the common mistake to match ("upper limit of the gap that certainly breaks down", not a safe distance).
 
 ## Polish
-- Pysähdy ja mieti boxes (new): all three are one-step retrievals and each answer is already stated in the paragraph just above it. Box 1 repeats the Key idea sentence "on a negative charge against the field". Box 3 is read straight from $C = \varepsilon_0\varepsilon_\text{r}A/d$ printed above it. Box 2 is the 3 mm spark with a different number. They work as retrieval but do not make the student predict. A variant that applies the idea would be better, for example box 1 on a negative charge near a positive plate, or box 3 asking what happens to $U$ for a disconnected capacitor. Box 2 mixes $\approx$ and $=$ in its chain.
-- s3 a: the criterion "the curve seems to approach about $20\,\text{pF}$" cannot be read from the data (82 pF at 6 mm is still falling). The non-halving is enough, so drop the plateau claim.
-- s3 d: every measured $d$ is at most 3 % of the plate side, so the data show no failure of the model. The "at which distances does it fail" criterion rewards generic edge-effect text. Ask for "when would it fail", not "at which of these distances".
-- s4 a: the rubric needs the bird's foot spacing, but the task does not give it. Say "any reasonable spacing of a few cm earns the points".
-- s7 duplicates the inquiry task *Potential between the plates*: the same graph, the same energy principle, and reading $V$ to find a speed. Its part c adds little variety. s1–s3 and s7 all rely on the field, force and energy principle; s5, s6 and s8 vary well.
-- Check 3, criterion 4 (friction and the normal force holding the balloon) assesses something the question does not ask.
-- Diagnostic 2, third option ("nowhere, the mass is small"), is a weak distractor.
-- teacher.md still says six long tasks, 95 points and "the other five". There are eight tasks (s1, s2, s4–s8 at 15 points, s3 at 20), 125 points in total.
-- Workload: eight 15–20-point tasks are a lot as module-end practice, though the plan correctly leaves most as homework.
+- s4 b criterion 4 says "a current of the order of amperes". The solution gives 1.2 A for an assumed 10 kOhm. The rubric could state that assumption.
 
 ## Checked
-- The Finnish unit passed. I judged the translation, the three new boxes, the inquiry, the check tasks and all eight Sovella tasks from the packet.
-- The 6 diagnostics test concepts with misconception-based distractors, and the feedback repairs the misconception.
-- The Tutki task (potential graph) needs the figure: the 150 V reading is not given in the text.
-- I recomputed the s1–s8 answers: s1 0.493 mN and 18.7 nC; s6 40.2 km/s and 87.5 mN; s7 98 km/s; s8 17.3 mA and 127 Ω. They agree. s3's data fit $354/d + 22$ pF.
-- The tasks use authentic, unfamiliar situations with graded parts, no model names in titles, and specific rubrics. s5 is a strong report-assessment task. The solutions are staged, with common mistakes that are real.
-- I did not find `docs/coverage/FY9.md` in the packet, so I did not judge coverage gaps.
+- practice.py check OK. Hash taken at the start.
+- s4 a and c: well-posed, authentic, rubric points match the solution. The bird task corrects a real misconception (potential vs potential difference).
+- s4 b: the prompt is consistent with its numbers (12 kV, 3 MV/m, 4 mm) and the first and fourth criteria. It is inconsistent with the `assumptions` detail and the solution (see Blocking).
+- I did not re-read the other tasks (s1-s3, s5-s8) in detail. They were not changed since my earlier review, which did not flag them.

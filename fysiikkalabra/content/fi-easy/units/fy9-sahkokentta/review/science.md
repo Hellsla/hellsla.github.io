@@ -1,27 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f9bba1ca0381a58c
-SCOPE: full, with the three new ```pysahdy boxes in unit.md judged first. The diff since the last PASS (894eada2c0c82540) is only these boxes plus three figures (hero, kipina, levyt) whose drawn SVG was replaced by the shared WebP images. The LaTeX labels are unchanged.
+CONTENT-HASH: fe2ecfbd0b95d72a
+SCOPE: delta re-review of Sovella s4 b since my PASS at f9bba1ca0381a58c. The hash was debd72cf8d478220 at the start (only the question reworded to "kuinka lyhyen ilmavälin yli sähkö lyö varmasti läpi"). It changed during the review to fe2ecfbd0b95d72a (uncommitted edits to the question, solution and rubric of s4 b), so I judged that version again.
 
 ## Blocking
 None.
 
 ## Polish
-- teacher.md, Arviointi: it says "muut viisi … (15 pistettä kukin). Yhteensä 95". The set has eight tasks (7 × 15 + 20 = 125 points), and the 65–75 min row also says "muut viisi tehtävää". The same text is in the Finnish teacher.md, which was written before s7 and s8 were added. Correct both languages together.
-- s7 b, Järkevyys: "noin $2 \cdot 10^{10}$ kertaa pienempi". My value is $2{,}5 \cdot 10^{10}$. As an order of magnitude it is fine.
-- The earlier Polish points still apply: s7 does not state the plate gap, s7 a compares with the breakdown field of air although the plates are in a vacuum, and s8 c could accept about $125\,\Omega$.
+- The Polish points of my earlier report still apply (teacher.md point total "muut viisi … Yhteensä 95", the s7 ratio 2·10^10 vs 2,5·10^10, the s7 plate gap and vacuum remark, s8 c accepting about 125 Ω).
 
 ## Checked
-- I ran `units.py hash --lang fi-easy` at the start and at the end: f9bba1ca0381a58c both times.
-- I compared all three pysahdy boxes with fi. The physics, numbers and reasoning are the same:
-  - Electron in a field pointing right: the force points left, because $q<0$.
-  - $U = Ed = 3\,\text{MV/m} \cdot 2\,\text{mm} = 6\,\text{kV}$.
-  - $C \propto 1/d$, so doubling $d$ halves $C$. fi-easy says "d on jakajana" where fi says "kääntäen verrannollinen". That is correct and keeps the condition "muu pysyy samana".
-  - Each box sits after the paragraph it practises, and none of them contradicts the theory, the Virheet list or the inquiry (lt-2, lt-4).
-- The replaced figures. In levyt the field points down from + to −, the proton's force points down and the electron's force points up, which matches the labels and the aria-label. In kipina the field lines run from the + plate to the − fingertip, and the gap bar matches $d \approx 3\,\text{mm}$.
-- Recomputation (scratchpad `recomp.py`): 80 values from my own formulas. They cover:
-  - the hook numbers (9 kV, 0,9 µC, 4 mJ)
-  - every inquiry answer and every mistake value (7264 km/s and the three wrong values; 35,95 µN; 6,008 pF; 1690 V; 3,865 h and the three wrong values; 112,6 mJ)
-  - the choice feedbacks (43×, 190 Ω / 8,5 mA, 5,0 µF / 0,49 mJ)
-  - s1–s8, including the exact non-small-angle s1 d (6,35 cm), my own least-squares fit for s3 (354 pF·mm, 22 pF, 8,84 pF/m), the s5 power column, the s6 momentum and energy cross-checks, and s7 and s8.
-  - All agree within rounding. The only differences are "noin 12 kV" for $20/\sqrt3 = 11{,}5\,\text{kV}$ (fine) and the s7 ratio above.
-- Every choice question has exactly one correct option, and each distractor's feedback is physically right. The point totals of every task and part add up. Rubric criteria ask only what the tasks ask. "Sisäenergiaksi" is used throughout. The scope is FY6, with FY4 and FY1 links only.
+- At debd72cf the question asked "kuinka lyhyen ilmavälin yli … lyö varmasti läpi", but the solution still said "pienin ilmaväli, jonka läpi sähkö voi lyödä" / "pienin väli, jonka läpi sähkö lyö … ≈ 4 mm". Read literally, that is wrong (a 2 mm gap breaks down too), and it did not match the question. The current version fixes this, so I am not reporting it.
+- The current s4 b is "Arvioi, enintään kuinka pitkän ilmavälin yli sähkö lyö varmasti läpi." The solution's Kysytty and model answer say "pisin väli, jonka yli sähkö lyö varmasti läpi … ≈ 4 mm". The rubric's assumptions detail says "turvaetäisyyden alaraja, ei turvallinen etäisyys". The common-mistake line now calls 4 mm "vain väli, jonka yli sähkö lyö varmasti läpi tasaisen kentän mallissa". Question, solution, rubric and mistake list say the same thing.
+- Physics: in a uniform field, a gap d < U/E_max breaks down. Near the thin conductor and the rod tip the field is stronger than U/d, and moisture and dirt lower the breakdown strength. Both effects make breakdown more likely, not less. So "certainly breaks through up to about 4 mm" is a correct upper limit for certain breakdown. The same number is a lower limit for any safe distance, because an arc can also form over longer gaps, as the solution says. No hidden condition (B) and no error (A).
+- I recomputed: 20 kV/√3 = 11,5 kV ≈ 12 kV; d = 12 kV / 3 MV/m = 4,0 mm (11,5 kV gives 3,8 mm, same estimate); I = 12 kV / 10 kΩ = 1,2 A, which is more than 50 mA; the s4 a foot voltage is 0,30 Ω/km · 5·10⁻⁵ km · 100 A = 1,5 mV. All match answers.py (s4-gap-mm 4,0, s4-I-body 1,2, s4-feet-mV 1,5). The math criterion (12 kV, not 20 kV) and the 2 + 1 + 1 + 1 = 5 points are unchanged.
+- The Finnish version (fi) has the same change ("enintään kuinka pitkän … läpilyönti tapahtuu varmasti", "pisin väli …", "turvaetäisyyden alaraja, ei turvallinen etäisyys"). fi-easy keeps the same physics.
+- I ran `units.py hash --lang fi-easy`: debd72cf8d478220 at the start, then fe2ecfbd0b95d72a after the edit. I reviewed that version and checked the hash again at the end.

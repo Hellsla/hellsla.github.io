@@ -1,18 +1,24 @@
-VERDICT: PASS
-CONTENT-HASH: f9bba1ca0381a58c
+VERDICT: FAIL
+CONTENT-HASH: debd72cf8d478220
 
 ## Blocking
-None.
+- s4 b: the task text was fixed but solutions.md and one rubric line still carry the old, ill-posed framing, so prompt, rubric and solution contradict each other.
+  - solutions.md line 370 "Kysytty": "pienin ilmaväli, jonka läpi sähkö voi lyödä". Line 374: "pienin väli, jonka läpi sähkö lyö, on d = U/E_max ≈ 4 mm".
+  - The uniform-field model gives the longest gap that surely breaks down (breakdown for d ≤ 4 mm). It is not the smallest gap, because shorter gaps break down too. A student learning from the solution gets the opposite reading of the new prompt.
+  - tasks.json s4 b assumptions criterion: "alaraja eli pienin mahdollinen arvo". That is unclear against "kuinka lyhyen ... varmasti". Say instead that 4 mm is a cautious (alaraja) estimate of the longest gap that breaks down, since field enhancement and moisture allow longer gaps.
+  - The solution's "turvaetäisyyden alaraja" and the common mistake "tasaisen kentän alaraja" need the same fix.
+  - Fix: use one wording in the "Kysytty" line, the model answer and the rubric. Example: "kuinka pitkän ilmavälin yli sähkö lyö varmasti läpi (tasaisen kentän malli: enintään noin 4 mm), ja miksi todellinen väli voi olla pidempi".
+  - The prompt "Arvioi, kuinka lyhyen ilmavälin yli sähkö lyö varmasti läpi" is well-posed on its own. The "varmasti" comes from the uniform-field assumption, so the solution should say so.
 
 ## Polish
-- Pysahdy box 1 (Ydinajatus, electron force direction): the paragraph just above already says "Negatiiviseen varaukseen voima osoittaa kenttää vastaan". The box is therefore recall, not a prediction. It still works as a quick check. A fresher variant (a proton and an electron in the same field, or "kenttä osoittaa ylös") would make the student apply the rule instead of copying it.
-- Pysahdy box 2 (2 mm spark): it repeats the 3 mm to 9 kV step of the paragraph above with new numbers. That is a fair near transfer. $U = Ed$ is named only in the box's answer, and it is not shown in the text before it (the Kaava section comes later). One short mention of "jännite on kenttä kertaa matka" in the paragraph would help an S2 reader.
-- Pysahdy box 3 (the gap is doubled): the box sits right after the Kaava block, so the answer is visible one line up. Asking "ja jos levyn pinta-ala kaksinkertaistuu ja väli puolittuu?" would require reasoning.
-- The question wording is clear and the answers are short. Plain-language level is right: "Kohdistaa" is explained earlier, and "jakajana" is understandable from the formula. "Kaavassa ... etäisyys d on jakajana" could add "nimittäjässä".
+- s4 b: "kuinka lyhyen" is slightly odd Finnish. "Kuinka pitkän ilmavälin yli ... läpi" or "enintään kuinka pitkän" reads more naturally and avoids the confusion.
+- fi-easy: the s4 solution does not link the 4 mm result to the unit's opening spark (3 mm, about 9 kV). A single sentence would tie it to the Ydinajatus.
 
 ## Checked
-- The 3 new boxes in unit.md: placement (after the idea, after the spark calculation, after the capacitor rule), one idea each, answers hidden behind the separator, units and numbers in LaTeX, decimal comma. The reading level fits selkosuomi: short sentences, terms explained.
-- The boxes add no workload to speak of (about 3 minutes) and do not disclose a later task's answer. No box duplicates a Sovella task.
-- Hero image replacing the inline SVG: aria-label describes the scene, and the Miksi question is still illustrated. I did not open the capture, so the picture itself is for the visual reviewer.
-- Sovella set (s1 to s8, selkosuomi version): sampled s1 in full (tasks and solution). It keeps rising parts a to d, force diagram first (fbd criteria), symbols before numbers, units conversions, a reasonableness check, real common mistakes, and an "accepted also" list. The set matches the Finnish version that passed. The unit text is otherwise unchanged except for the new boxes and hero image.
-- practice.py check OK. The hash was identical at start and end.
+- All eight tasks demand application in new authentic contexts: s1 balls on threads, s2 capacitor and glass, s3 data and linearisation, s4 safety, s5 report critique and experiment design, s6 ion engine, s7 graph V(x), s8 LED. No heading names the formula.
+- Each task has parts of rising demand and a rubric tied to the criteria keys. No points go to irrelevant things. Variety is good: graph (s3, s7, s8), experiment (s5), safety and communication (s4).
+- Solutions show the principle first and give real common mistakes. Spot-checked numbers: s1, s2, s5 a (0.99 W, 16 %), s6 (40.2 km/s, 87.5 mN, 349 m/s), s8 (17 mA, 63 %, 127 Ω).
+- Workload: 8 tasks, 95 points. teacher.md splits the hour realistically (2 in class, 2 at home, long tasks as homework).
+- The fi-easy wording is plain and the sentences are short. The terms are explained (influenssi, läpilyöntilujuus, kammiovärinä).
+- Not re-checked: the unit text and inquiry beyond the packet's checks (practice.py check OK).
+- Hash at start and end: debd72cf8d478220.

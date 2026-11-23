@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 1cc3d386f9a407a0
+CONTENT-HASH: e9115553fe1fb6c4
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Pysähdy ja mieti -laatikot — captures show every box open, so the closed state (summary "Vastaus" only) was not seen; the CSS (templates/site.css .stop-think, summary min-height 2.5rem) gives a 40 px target, which is adequate.
-- [Minor] Laatikko 2 vastaus — the chain "U = Ed ≈ 3 MV/m · 2 mm = 6 kV" mixes ≈ and = in one chain; "=" in the last row would be cleaner as "≈" or the 3 MV/m value treated as exact. Presentation only; for science: check that rounding.
-- [Minor] Laatikko 1, 1280 px — box sits directly under the Ydinajatus paragraph and above the kartta figure with only the normal margin; fine, but the label's uppercase small type is the only separator from body text.
+- [Minor] figure kartta (selita-1280-1, selita-390-1) — the recognition diagram uses a serif face and lowercase words, unlike the KaTeX type of the other figures, and at 1280 px stays narrow with an empty column beside it — consider KaTeX labels in the same typeface; optional.
+- [Minor] sovella task 1 solution (sovella-390-4) — the Sijoitus row breaks inside "7,5 \cdot 10^5 V/m" on a phone, and "F = -35,95 \mu N" is then answered as "36 \mu N" without saying the sign only gives direction — add "(suuruus)" to the answer line.
+- [Minor] sovella task 1 solution (sovella-390-6) — "1 N = 10^12 pN" appears as a lone conversion line; fine, but the unit conversion could sit with the others.
 
 ## Checked
-- intro-390-1, intro-1280 (opening, hero, learn list, Pohjatiedot).
-- stage-selita-390-1..5 and stage-selita-1280-1 (Teoria = unit page): all three stop-think boxes (elektroni, kipinä 2 mm, kapasitanssi) at 390 px and the first at 1280 px: label, question, openable answer, inline and display maths render without clipping or red source; box reads as a distinct green-ruled card inside the reading column, no overflow.
-- Figures kartta, kipina, levyt seen in captures (legible at 390 px, labels LaTeX, no clipping); etuvastus not opened in full (selita-390-6+ not opened), hero seen.
-- 360 px not separately captured; relied on check_layout results in the packet.
+- Captures opened: top-1280, intro-390-1, selita-390-1/2/3/6, selita-1280-1, sovella-390-1/4/6/7/8/9. Figures seen: hero, kartta, kipina, levyt, etuvastus (390 px); s1 text solutions and the changed Sovella task wording (sovella-390-9, charging time) read in place.
+- Pysähdy ja mieti boxes render cleanly with the answer inside the box. KaTeX renders everywhere seen, no red source, no overflow; solution chains wrap in aligned rows.
+- Captures current for hash e9115553fe1fb6c4 (stamp.txt). s3 graphs not opened separately; fy9-sahkokentta-s3 figures not judged beyond the packet inventory.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4
