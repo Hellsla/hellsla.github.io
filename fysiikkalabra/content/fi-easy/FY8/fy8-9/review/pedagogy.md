@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 41902d2b8ee6b58a
+CONTENT-HASH: 10e59ab40e812232
+SCOPE: delta numbers,photo,teacher-figure,wording from 41902d2b8ee6b58a base b3ee786
 
 ## Blocking
 (none)
 
 ## Polish
-- Laatikko 1: 'Päättele näytteen ytimien määristä' on epämääräinen; kysy suoraan 'laske ytimien määrä' ensin.
-
-## Vanhan sisällön löydökset
-(none; ei Blocking)
+(none)
 
 ## Checked
-batch delta review: 3 uutta laatikkoa (2000 -> 0,50; 1000 ydintä; lambda 2x) oikein; hyvä käsitevastaus: ydin ei vanhene.
+- Geiger caption now says the pulse rate is proportional to activity after background subtraction: correct, and agrees with the Aktiivisuus paragraph and the later background-correction tasks.
+- "ionisoivista hiukkasista ja fotoneista" replaces "säteilykvanteista": correct term, within the lesson reading level (ionising radiation covers alpha, beta, gamma).
+- Worked example result 97,65 -> 97,6 MBq: 550 MBq · 0,17754 = 97,65 rounds to 97,6 with the three-digit convention of the lesson; no later stage uses the old digit.
+- No change to figures, inquiry or stages; the rest of the lesson stands as passed.

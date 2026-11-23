@@ -22,7 +22,11 @@
 **Given:** measurements $N = 3000$, boundary of the orbital $90\,\%$
 **Asked:** the expected number $k_\text{out}$ of measurements that land outside the boundary
 **Principle:** The boundary is drawn so that the electron is detected inside it with probability $0.90$, so the probability of landing outside is $1 - 0.90 = 0.10$. In many measurements the share of those landing outside is approximately this probability, $P \approx \tfrac{k}{N}$.
-**Formula:** $k_\text{out} = (1 - p)\,N$
+**Formula:** $$\begin{aligned} P_\text{out} &= 1 - p \\
+k_\text{out} &= P_\text{out}\,N \\
+&= (1 - p)\,N
+\end{aligned}
+$$
 **Conversions:** $p = 90\,\% = 0.90$
 **Substitution:** $k_\text{out} = (1 - 0.90) \cdot 3000 = 0.10 \cdot 3000 = 300$
 **Answer:** about $300$ measurements; the number is an expected value, and the real number varies from one series to another.
@@ -32,7 +36,12 @@
 **Given:** electron in the $3\text{p}$ state, so $n = 3$; energy levels of the hydrogen atom $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$
 **Asked:** the smallest energy $E_\text{i}$ needed for release, in electronvolts
 **Principle:** The electron is free of the atom when its energy is at least $0$. In the hydrogen atom the energy of a state depends only on the principal quantum number, so the energy of the $3\text{p}$ state is the energy of the shell $n = 3$, and the energy needed is the difference $0 - E_3$.
-**Formula:** $E_\text{i} = 0 - E_3 = \dfrac{13.6\,\text{eV}}{3^2}$
+**Formula:** $$\begin{aligned} E_3 + E_\text{i} &= 0 \\
+E_\text{i} &= 0 - E_3 \\
+E_3 &= -\frac{13.6\,\text{eV}}{3^2} \\
+E_\text{i} &= \frac{13.6\,\text{eV}}{3^2}
+\end{aligned}
+$$
 **Conversions:** None are needed, because the energy levels and the asked energy are in electronvolts.
 **Substitution:** $E_\text{i} = \dfrac{13.6\,\text{eV}}{9} = 1.5111\,\text{eV}$
 **Answer:** $1.51\,\text{eV}$, three significant figures like the energy $13.6\,\text{eV}$.
@@ -52,7 +61,14 @@
 **Given:** initial state $3\text{p}$, so $n = 3$; final state $1\text{s}$, so $n = 1$; $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
 **Asked:** the wavelength $\lambda$ of the photon in nanometres
 **Principle:** Energy is conserved: the energy of the atom decreases by the difference between the energies of the states, and the same energy leaves as a photon, whose energy is $hf = \tfrac{hc}{\lambda}$. In the hydrogen atom the energy of a state depends only on the principal quantum number.
-**Formula:** $\dfrac{hc}{\lambda} = E_3 - E_1$, so $\lambda = \dfrac{hc}{E_3 - E_1}$
+**Formula:** $$\begin{aligned} E_\text{f} &= hf \\
+c &= f\lambda \\
+E_\text{f} &= \frac{hc}{\lambda} \\
+E_\text{f} &= E_3 - E_1 \\
+\frac{hc}{\lambda} &= E_3 - E_1 \\
+\lambda &= \frac{hc}{E_3 - E_1}
+\end{aligned}
+$$
 **Conversions:** The energy difference in electronvolts is $E_3 - E_1 = -\tfrac{13.6\,\text{eV}}{9} + 13.6\,\text{eV} = 12.089\,\text{eV}$. Substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$: $E_3 - E_1 = 12.089 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.9366 \cdot 10^{-18}\,\text{J}$. Finally $1\,\text{nm} = 10^{-9}\,\text{m}$.
 **Substitution:** First $$
 \begin{aligned}
@@ -68,7 +84,12 @@ $$ and then $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.9366 
 **Given:** argon has $18$ electrons; filling order $1\text{s}$, $2\text{s}$, $2\text{p}$, $3\text{s}$, $3\text{p}$; at most two electrons per orbital
 **Asked:** the number of electrons $N_\text{outer}$ in the outermost shell
 **Principle:** In the ground state the electrons fill the orbitals starting from the lowest energy. At most $2n^2$ electrons fit in the shell $n$, so first the shells $n = 1$ and $n = 2$ fill, and the remaining electrons are in the shell $n = 3$, which is the outermost shell of argon.
-**Formula:** $N_\text{outer} = N - 2 \cdot 1^2 - 2 \cdot 2^2$
+**Formula:** $$\begin{aligned} N &= N_1 + N_2 + N_\text{outer} \\
+N_n &= 2n^2 \\
+N_\text{outer} &= N - N_1 - N_2 \\
+&= N - 2 \cdot 1^2 - 2 \cdot 2^2
+\end{aligned}
+$$
 **Conversions:** None are needed, because a count is asked.
 **Substitution:** $N_\text{outer} = 18 - 2 - 8 = 8$
 **Answer:** $8$ electrons; the result is an exact integer.
@@ -78,7 +99,11 @@ $$ and then $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.9366 
 **Given:** measurements $N = 2400$; $50\,\%$ boundary $0.071\,\text{nm}$ and $90\,\%$ boundary $0.14\,\text{nm}$
 **Asked:** the expected number $k$ of measurements that land between the boundaries
 **Principle:** The $50\,\%$ boundary lies entirely inside the $90\,\%$ boundary, so the probability $0.90 - 0.50 = 0.40$ remains in the shell between the boundaries. In many measurements the share of those landing in a region is approximately the probability of the region. The radii of the boundaries are not needed.
-**Formula:** $k = (p_{90} - p_{50})\,N$
+**Formula:** $$\begin{aligned} P &= p_{90} - p_{50} \\
+k &= PN \\
+&= (p_{90} - p_{50})\,N
+\end{aligned}
+$$
 **Conversions:** $p_{90} = 90\,\% = 0.90$ and $p_{50} = 50\,\% = 0.50$
 **Substitution:** $k = (0.90 - 0.50) \cdot 2400 = 0.40 \cdot 2400 = 960$
 **Answer:** about $960$ measurements; the number is an expected value, and the real number varies from one series to another.
@@ -88,7 +113,14 @@ $$ and then $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.9366 
 **Given:** electron in the shell $n = 2$; $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
 **Asked:** the greatest wavelength $\lambda_\text{max}$ at which a photon releases the electron, in nanometres
 **Principle:** The energy of the photon must be at least the energy $0 - E_2$ needed for release. The energy of a photon, $\tfrac{hc}{\lambda}$, decreases as the wavelength increases, so the greatest suitable wavelength corresponds to exactly this energy.
-**Formula:** $\dfrac{hc}{\lambda_\text{max}} = 0 - E_2$, so $\lambda_\text{max} = \dfrac{hc}{-E_2}$
+**Formula:** $$\begin{aligned} E_\text{f} &= hf \\
+c &= f\lambda \\
+E_\text{f} &= \frac{hc}{\lambda} \\
+E_\text{f} &= 0 - E_2 \\
+\frac{hc}{\lambda_\text{max}} &= -E_2 \\
+\lambda_\text{max} &= \frac{hc}{-E_2}
+\end{aligned}
+$$
 **Conversions:** $-E_2 = \tfrac{13.6\,\text{eV}}{4} = 3.40\,\text{eV}$. Substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$: $-E_2 = 3.40 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 5.4468 \cdot 10^{-19}\,\text{J}$. Finally $1\,\text{nm} = 10^{-9}\,\text{m}$.
 **Substitution:** First $$
 \begin{aligned}
@@ -104,7 +136,16 @@ $$ and then $\lambda_\text{max} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{
 **Given:** wavelength of the photon $\lambda = 97.3\,\text{nm}$; atom in the ground state, $n = 1$; $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
 **Asked:** the number of orbitals in the shell $n$ to which the electron moves
 **Principle:** An atom can absorb a photon only if the energy of the photon is exactly the difference between the energies of two states. The energy of the photon gives the energy of the upper state, $E_n = E_1 + \tfrac{hc}{\lambda}$, from that the number of the shell $n$, and the shell $n$ has $n^2$ orbitals.
-**Formula:** $E_n = E_1 + \dfrac{hc}{\lambda}$, so $n = \sqrt{\dfrac{13.6\,\text{eV}}{-E_n}}$ and the number of orbitals is $n^2$
+**Formula:** $$\begin{aligned} E_\text{f} &= hf \\
+c &= f\lambda \\
+E_\text{f} &= \frac{hc}{\lambda} \\
+E_\text{f} &= E_n - E_1 \\
+E_n &= E_1 + \frac{hc}{\lambda} \\
+E_n &= -\frac{13.6\,\text{eV}}{n^2} \\
+n &= \sqrt{\frac{13.6\,\text{eV}}{-E_n}} \\
+N_\text{orb} &= n^2
+\end{aligned}
+$$
 **Conversions:** $\lambda = 97.3\,\text{nm} = 97.3 \cdot 10^{-9}\,\text{m}$. With $$
 \begin{aligned}
 hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
@@ -142,7 +183,11 @@ A half-full $3\text{p}$ subshell contains half of its maximum number.
 
 In many measurements the share of those landing in a region is approximately the probability of the region.
 
-**Formula:** $k = (p - p_\text{in})\,N$
+**Formula:** $$\begin{aligned} P &= p - p_\text{in} \\
+k &= PN \\
+&= (p - p_\text{in})\,N
+\end{aligned}
+$$
 
 **Conversions:** $p = 90\,\% = 0.90$ and $p_\text{in} = 5.3\,\% = 0.053$
 
@@ -241,7 +286,12 @@ $$, as it should be.
 
 The wavelengths of the figure cannot be read, so they are calculated from the length of the string.
 
-**Formula:** $\lambda = \dfrac{2L}{m}$ and $f = \dfrac{v}{\lambda}$
+**Formula:** $$\begin{aligned} L &= m\,\frac{\lambda}{2} \\
+\lambda &= \frac{2L}{m} \\
+v &= f\lambda \\
+f &= \frac{v}{\lambda}
+\end{aligned}
+$$
 
 **Conversions:** None are needed, because the length is in metres and the speed in $\text{m/s}$.
 
@@ -276,7 +326,17 @@ They are not caused by the electron rushing about quickly or by measurement erro
 
 As a check, the slope calculated through the first and the last measured point, $(0.1389;\ 1.887\,\text{eV})$ and $(0.2222;\ 3.020\,\text{eV})$, is $\dfrac{3.020\,\text{eV} - 1.887\,\text{eV}}{0.2222 - 0.1389} = 13.6\,\text{eV}$, and the line fitted to all the points, whose slope is used as the answer, gives $13.62\,\text{eV}$ and the constant term $-0.003\,\text{eV}$.
 
-**Formula:** $E_\text{f} = \dfrac{hc}{\lambda}$, $\ \dfrac{1}{n^2} = \dfrac{1}{4} - \dfrac{E_\text{f}}{13.6\,\text{eV}}$ and the slope $k = \dfrac{\Delta E_\text{f}}{\Delta\left(\tfrac{1}{4} - \tfrac{1}{n^2}\right)}$
+**Formula:** $$\begin{aligned} E_\text{f} &= hf \\
+c &= f\lambda \\
+E_\text{f} &= \frac{hc}{\lambda} \\
+E_n &= -\frac{13.6\,\text{eV}}{n^2} \\
+E_2 &= -\frac{13.6\,\text{eV}}{2^2} \\
+E_\text{f} &= E_n - E_2 \\
+&= 13.6\,\text{eV} \cdot \left(\frac{1}{4} - \frac{1}{n^2}\right) \\
+\frac{1}{n^2} &= \frac{1}{4} - \frac{E_\text{f}}{13.6\,\text{eV}} \\
+k &= \frac{\Delta E_\text{f}}{\Delta\left(\frac{1}{4} - \frac{1}{n^2}\right)}
+\end{aligned}
+$$
 
 **Conversions:** The wavelength $657.1\,\text{nm} = 657.1 \cdot 10^{-9}\,\text{m}$ and similarly for the others. The product $$
 \begin{aligned}
@@ -311,7 +371,15 @@ The lines are separate, because the allowed states of the electron are standing 
 
 At least the ionisation energy is needed to release the electron, so the longest acceptable wavelength corresponds to the energy $E_\text{i}$.
 
-**Formula:** $\lambda = \dfrac{hc}{\Delta E}$ and $\lambda_\text{max} = \dfrac{hc}{E_\text{i}}$
+**Formula:** $$\begin{aligned} E_\text{f} &= hf \\
+c &= f\lambda \\
+E_\text{f} &= \frac{hc}{\lambda} \\
+E_\text{f} &= \Delta E \\
+\lambda &= \frac{hc}{\Delta E} \\
+\frac{hc}{\lambda_\text{max}} &= E_\text{i} \\
+\lambda_\text{max} &= \frac{hc}{E_\text{i}}
+\end{aligned}
+$$
 
 **Conversions:** $\Delta E = 2.10\,\text{eV} = 2.10 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.3642 \cdot 10^{-19}\,\text{J}$ and $E_\text{i} = 5.14\,\text{eV} = 5.14 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 8.2343 \cdot 10^{-19}\,\text{J}$. Finally $1\,\text{nm} = 10^{-9}\,\text{m}$.
 
@@ -373,7 +441,14 @@ This does not mean that the electron travels through the node along a path: the 
 
 On the shell $n = 4$ the figure shows the subshells $4\text{s}$, $4\text{p}$, $4\text{d}$ and $4\text{f}$ with $1$, $3$, $5$ and $7$ boxes.
 
-**Formula:** $E_\text{f} = E_4 - E_2$ and $E_\text{f} = \dfrac{hc}{\lambda}$, so $\lambda = \dfrac{hc}{E_4 - E_2}$
+**Formula:** $$\begin{aligned} E_\text{f} &= hf \\
+c &= f\lambda \\
+E_\text{f} &= \frac{hc}{\lambda} \\
+E_\text{f} &= E_4 - E_2 \\
+\lambda &= \frac{hc}{E_\text{f}} \\
+&= \frac{hc}{E_4 - E_2}
+\end{aligned}
+$$
 
 **Conversions:** The energy is converted to joules: $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$. Finally $1\,\text{nm} = 10^{-9}\,\text{m}$.
 

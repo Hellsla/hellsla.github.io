@@ -22,7 +22,7 @@
 **Annettu:** aallonpituus $\lambda = 486\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** fotonin energia $E$ elektronivoltteina
 **Periaate:** Valo koostuu fotoneista. Yhden fotonin energia riippuu vain valon aallonpituudesta: mitä lyhyempi aallonpituus, sitä suurempi energia.
-**Kaava:** $E = hf = \dfrac{hc}{\lambda}$
+**Kaava:** $$\begin{aligned} E &= hf \\ c &= f\lambda \\ f &= \frac{c}{\lambda} \\ E &= \frac{hc}{\lambda} \end{aligned}$$
 **Muunnokset:** $\lambda = 486\,\text{nm} = 486 \cdot 10^{-9}\,\text{m}$. Lopuksi joulet muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$, koska $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
 **Sijoitus:** Tulo $$
 \begin{aligned}
@@ -63,7 +63,7 @@ $$.
 **Annettu:** vetyatomin energiatasot $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, siirtymä tasolta $n = 5$ tasolle $n = 2$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
 **Kysytty:** valon aallonpituus $\lambda$ nanometreinä
 **Periaate:** Energia säilyy. Atomin energia pienenee tasojen erotuksen verran, ja yksi fotoni vie sen mukanaan. Fotonin energia on $\tfrac{hc}{\lambda}$.
-**Kaava:** $\dfrac{hc}{\lambda} = E_5 - E_2$, josta $\lambda = \dfrac{hc}{E_5 - E_2}$
+**Kaava:** $$\begin{aligned} hf &= E_5 - E_2 \\ c &= f\lambda \\ \frac{hc}{\lambda} &= E_5 - E_2 \\ \lambda &= \frac{hc}{E_5 - E_2} \end{aligned}$$
 **Muunnokset:** Energiaero lasketaan elektronivoltteina. Sitten se muunnetaan jouleiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** Tulo $$
 \begin{aligned}
@@ -79,7 +79,7 @@ $$. $E_5 - E_2 = -\dfrac{13{,}6\,\text{eV}}{25} + \dfrac{13{,}6\,\text{eV}}{4} =
 **Annettu:** aallonpituus $\lambda = 410\,\text{nm}$, alempi taso $n_\text{a} = 2$, $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** ylemmän tason järjestysluku $n$
 **Periaate:** Fotonin energia on tasojen erotus. Kun tiedetään fotonin energia ja alemman tason energia, ylemmän tason energia on niiden summa. Siitä saadaan tason järjestysluku.
-**Kaava:** $\dfrac{hc}{\lambda} = E_n - E_2$, josta $E_n = E_2 + \dfrac{hc}{\lambda}$. Lausekkeesta $E_n = -\dfrac{13{,}6\,\text{eV}}{n^2}$ ratkaistuna $n = \sqrt{\dfrac{13{,}6\,\text{eV}}{-E_n}}$
+**Kaava:** $$\begin{aligned} hf &= E_n - E_2 \\ c &= f\lambda \\ \frac{hc}{\lambda} &= E_n - E_2 \\ E_n &= E_2 + \frac{hc}{\lambda} \\ E_n &= -\frac{13{,}6\,\text{eV}}{n^2} \\ n &= \sqrt{\frac{13{,}6\,\text{eV}}{-E_n}} \end{aligned}$$
 **Muunnokset:** $\lambda = 410 \cdot 10^{-9}\,\text{m}$. Fotonin energia muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$.
 **Sijoitus:** Tulo $$
 \begin{aligned}
@@ -102,7 +102,7 @@ $$, ja se vastaa aallonpituutta $410\,\text{nm}$. Violetti viiva on Balmerin nä
 **Kysytty:** fotonin aallonpituus $\lambda$ nanometreinä
 **Periaate:** Energia säilyy kaikissa atomeissa samoin kuin vedyssä: fotonin energia on siirtymän tasojen erotus. Tässä kaavio korvaa vedyn lausekkeen.
 **Kuvaajan lukeminen:** Taso $E_3$ on ruudukon viivalla $-3\,\text{eV}$ ja taso $E_2$ viivalla $-5\,\text{eV}$. Siis $E_3 = -3{,}0\,\text{eV}$ ja $E_2 = -5{,}0\,\text{eV}$. Energiaero on $E_3 - E_2 = -3{,}0\,\text{eV} - (-5{,}0\,\text{eV}) = 2{,}0\,\text{eV}$.
-**Kaava:** $\dfrac{hc}{\lambda} = E_3 - E_2$, josta $\lambda = \dfrac{hc}{E_3 - E_2}$
+**Kaava:** $$\begin{aligned} hf &= E_3 - E_2 \\ c &= f\lambda \\ \frac{hc}{\lambda} &= E_3 - E_2 \\ \lambda &= \frac{hc}{E_3 - E_2} \end{aligned}$$
 **Muunnokset:** $E_3 - E_2 = 2{,}0\,\text{eV} = 2{,}0 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}204 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** Tulo $$
 \begin{aligned}
@@ -118,7 +118,7 @@ $$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}204 \cdot
 **Annettu:** fotonin aallonpituus $\lambda = 80{,}0\,\text{nm}$, vedyn ionisaatioenergia perustilasta $E_\text{ion} = 13{,}6\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** irronneen elektronin liike-energia $E_\text{k}$ elektronivoltteina
 **Periaate:** Energia säilyy. Fotonin energiasta kuluu ionisaatioenergian verran elektronin irrottamiseen. Loppu jää vapaan elektronin liike-energiaksi. Ionisaatiossa fotonin energian ei tarvitse olla minkään tasoparin erotus. Sen täytyy vain olla vähintään ionisaatioenergia.
-**Kaava:** $\dfrac{hc}{\lambda} = E_\text{ion} + E_\text{k}$, josta $E_\text{k} = \dfrac{hc}{\lambda} - E_\text{ion}$
+**Kaava:** $$\begin{aligned} hf &= E_\text{ion} + E_\text{k} \\ c &= f\lambda \\ \frac{hc}{\lambda} &= E_\text{ion} + E_\text{k} \\ E_\text{k} &= \frac{hc}{\lambda} - E_\text{ion} \end{aligned}$$
 **Muunnokset:** $\lambda = 80{,}0 \cdot 10^{-9}\,\text{m}$. Fotonin energia muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$.
 **Sijoitus:** Tulo $$
 \begin{aligned}
@@ -146,7 +146,7 @@ Viritystilasta atomi voi palata suoraan tai välitasojen kautta. Jokainen eri ta
 **Annettu:** heliumionin energiatasot $E_n = -\tfrac{54{,}4\,\text{eV}}{n^2}$, siirtymä tasolta $n = 4$ tasolle $n = 3$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** viivan aallonpituus $\lambda$ nanometreinä
 **Periaate:** Ionissa on yksi elektroni, joten sen energia on kvantittunut samalla tavalla kuin vedyssä. Energiat ovat vain suurempia. Energia säilyy, joten fotonin energia on tasojen erotus.
-**Kaava:** $\dfrac{hc}{\lambda} = E_4 - E_3$, josta $\lambda = \dfrac{hc}{E_4 - E_3}$
+**Kaava:** $$\begin{aligned} hf &= E_4 - E_3 \\ c &= f\lambda \\ \frac{hc}{\lambda} &= E_4 - E_3 \\ \lambda &= \frac{hc}{E_4 - E_3} \end{aligned}$$
 **Muunnokset:** Energiaero muunnetaan jouleiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** Tulo $$
 \begin{aligned}
@@ -177,7 +177,7 @@ $$. $E_4 - E_3 = -\dfrac{54{,}4\,\text{eV}}{16} + \dfrac{54{,}4\,\text{eV}}{9} =
 **Annettu:** siirtymät päättyvät tasolle $n = 1$, $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** Lymanin sarjan pisin aallonpituus $\lambda_\text{max}$ nanometreinä
 **Periaate:** Mitä pienempi fotonin energia on, sitä pidempi on aallonpituus. Perustilaan päättyvistä siirtymistä pienin energiaero on lähimmältä tasolta. Se on siirtymä $n = 2 \to n = 1$.
-**Kaava:** $\dfrac{hc}{\lambda} = E_2 - E_1$, josta $\lambda_\text{max} = \dfrac{hc}{E_2 - E_1}$
+**Kaava:** $$\begin{aligned} hf &= E_2 - E_1 \\ c &= f\lambda_\text{max} \\ \frac{hc}{\lambda_\text{max}} &= E_2 - E_1 \\ \lambda_\text{max} &= \frac{hc}{E_2 - E_1} \end{aligned}$$
 **Muunnokset:** $E_2 - E_1$ lasketaan elektronivoltteina. Se muunnetaan jouleiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** Tulo $$
 \begin{aligned}
@@ -204,7 +204,7 @@ $$. $E_2 - E_1 = -\dfrac{13{,}6\,\text{eV}}{4} + 13{,}6\,\text{eV} = 10{,}2\,\te
 **Kysytty:** vedyn ionisaatioenergia $E_\text{ion}$ elektronivoltteina
 **Periaate:** Fotonin energia on tasojen erotus, $hf = E_n - E_2 = \tfrac{E_\text{ion}}{4} - \tfrac{E_\text{ion}}{n^2}$. Taajuus on siis $\tfrac{1}{n^2}$:n lineaarinen funktio, $f = \tfrac{E_\text{ion}}{4h} - \tfrac{E_\text{ion}}{h} \cdot \tfrac{1}{n^2}$. Suoran kulmakerroin on $-\tfrac{E_\text{ion}}{h}$. Mittauspisteet eivät yleensä asetu täsmälleen suoralle, koska mittauksessa on epävarmuutta. Siksi pisteisiin sovitetaan suora, ja kulmakerroin luetaan suoralta. Sitä ei lueta kahdesta vierekkäisestä mittauspisteestä.
 **Kuvaajan lukeminen:** Taajuudet $f = \tfrac{c}{\lambda}$ ovat $456{,}5$; $616{,}7$; $690{,}0$ ja $730{,}9\,\text{THz}$ kohdissa $\tfrac{1}{n^2} = 0{,}111$; $0{,}0625$; $0{,}0400$ ja $0{,}0278$. Pisteisiin sovitettu suora kulkee mittausalueen sisällä pisteiden $(0{,}0300;\ 723{,}3\,\text{THz})$ ja $(0{,}1100;\ 460{,}2\,\text{THz})$ kautta. Kulmakerroin on siis $k = \dfrac{460{,}2\,\text{THz} - 723{,}3\,\text{THz}}{0{,}1100 - 0{,}0300} = -3289\,\text{THz}$.
-**Kaava:** $k = -\dfrac{E_\text{ion}}{h}$, josta $E_\text{ion} = -h k$
+**Kaava:** $$\begin{aligned} hf &= E_n - E_2 \\ E_n &= -\frac{E_\text{ion}}{n^2} \\ f &= \frac{E_\text{ion}}{4h} - \frac{E_\text{ion}}{h} \cdot \frac{1}{n^2} \\ k &= -\frac{E_\text{ion}}{h} \\ E_\text{ion} &= -hk \end{aligned}$$
 **Muunnokset:** $k = -3289\,\text{THz} = -3{,}289 \cdot 10^{15}\,\text{Hz}$. Joulet muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -223,7 +223,7 @@ $$
 **Kysytty:** niiden fotonien lukumäärä, jotka perustilassa oleva atomi absorboi
 **Periaate:** Atomi absorboi fotonin vain, jos fotonin energia on täsmälleen kahden tason energioiden erotus. Perustilassa oleva atomi voi nousta vain tasolle $E_2$, $E_3$ tai $E_4$. Vertailtavat erotukset ovat siis perustilasta ylöspäin.
 **Kuvaajan lukeminen:** Tasot ovat $E_1 = -8{,}0\,\text{eV}$, $E_2 = -5{,}0\,\text{eV}$, $E_3 = -3{,}0\,\text{eV}$ ja $E_4 = -2{,}0\,\text{eV}$. Perustilasta lähtevät erotukset ovat $E_2 - E_1 = 3{,}0\,\text{eV}$, $E_3 - E_1 = 5{,}0\,\text{eV}$ ja $E_4 - E_1 = 6{,}0\,\text{eV}$. Ionisaatioon tarvittaisiin $0 - E_1 = 8{,}0\,\text{eV}$.
-**Kaava:** $E = \dfrac{hc}{\lambda}$
+**Kaava:** $$\begin{aligned} E &= hf \\ c &= f\lambda \\ f &= \frac{c}{\lambda} \\ E &= \frac{hc}{\lambda} \end{aligned}$$
 **Muunnokset:** $\lambda = 300 \cdot 10^{-9}\,\text{m}$ jne. Joulet muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$.
 **Sijoitus:** Tulo $$
 \begin{aligned}
@@ -288,7 +288,7 @@ Molemmat ovat Paschenin sarjan infrapunaa. Kasvu $1{,}7$-kertaiseksi syntyisi, j
 **Annettu:** NIST:n taulukon vedyn viivoja; $1\,\text{Å} = 0{,}1\,\text{nm}$; $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$. Valinta on sinun: esimerkkinä taulukon näkyvän valon viivat, joiden ilma-aallonpituudet 16. marraskuuta 2026 olivat $6562{,}8518\,\text{Å}$ (punainen) ja $4861{,}3615\,\text{Å}$ (sinivihreä).
 **Kysytty:** a) aallonpituudet $\lambda$ nanometreinä, b) fotonien energiat $E$ elektronivoltteina, c) energiaerot $\Delta E_{3 \to 2}$ ja $\Delta E_{4 \to 2}$ elektronivoltteina, d) viivojen ja siirtymien yhdistäminen sekä viivaspektrin selitys. Laatikkoon tulee $\Delta E_{3 \to 2}$ yksikössä $\text{eV}$.
 **Periaate:** Atomin energia on kvantittunut. Se tarkoittaa, että atomilla on vain tiettyjä sallittuja energioita eli tasoja. Fotoni syntyy, kun elektroni siirtyy ylemmältä tasolta alemmalle. Energia säilyy, joten fotonin energia on tasojen erotus, $E = E_\text{y} - E_\text{a}$. Fotonin energia on myös $E = \tfrac{hc}{\lambda}$. Näin voidaan verrata mitattua aallonpituutta ja tasomallia samalla energialla.
-**Kaava:** $\lambda = \lambda_\text{Å} \cdot 0{,}1\,\tfrac{\text{nm}}{\text{Å}}$, $E = \dfrac{hc}{\lambda}$ ja $\Delta E = E_\text{y} - E_\text{a} = 13{,}6\,\text{eV} \cdot \left(\dfrac{1}{n_\text{a}^2} - \dfrac{1}{n_\text{y}^2}\right)$
+**Kaava:** $\lambda = \lambda_\text{Å} \cdot 0{,}1\,\tfrac{\text{nm}}{\text{Å}}$, $E = hf$ ja $c = f\lambda$, joten $E = \dfrac{hc}{\lambda}$ ja $\Delta E = E_\text{y} - E_\text{a} = 13{,}6\,\text{eV} \cdot \left(\dfrac{1}{n_\text{a}^2} - \dfrac{1}{n_\text{y}^2}\right)$
 **Muunnokset:** $6562{,}8518\,\text{Å} = 6562{,}8518 \cdot 0{,}1\,\text{nm} = 656{,}3\,\text{nm}$ ja $4861{,}3615\,\text{Å} = 486{,}1\,\text{nm}$. Fotonin energia muunnetaan jouleista elektronivoltteihin jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J/eV}$.
 **Sijoitus:** Kohta a) on muunnoksissa. Kohta b), punainen viiva:
 
@@ -320,7 +320,7 @@ Elektroni voi siirtyä vain tasolta toiselle. Siksi fotonin energia on aina jonk
 **Annettu:** emissioviivat $\lambda = 1876$; $1282$ ja $1094\,\text{nm}$ ($\pm 1\,\text{nm}$), $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, kaikki viivat päättyvät samalle tasolle, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** vähimmäistaajuus $f_\text{ion}$ terahertseinä, jolla fotoni ionisoi atomin siitä tasosta, jolle siirtymät päättyvät
 **Periaate:** Jokaisen viivan fotonin energia on lähtötason ja päätason energioiden erotus, $\tfrac{hc}{\lambda} = E_\text{y} - E_m$. Tässä $m$ on yhteinen päätaso. Kokeillaan päätasoa. Ylempi taso on $E_\text{y} = E_m + \tfrac{hc}{\lambda}$, ja siitä saadaan $n_\text{y} = \sqrt{\tfrac{13{,}6\,\text{eV}}{-E_\text{y}}}$. Sen on oltava kokonaisluku. Ionisaatioon tilasta $m$ tarvitaan energia $0 - E_m$, ja fotonin energia on $hf$.
-**Kaava:** $\dfrac{hc}{\lambda} = E_\text{y} - E_m$ ja ionisaatiolle $h f_\text{ion} = 0 - E_m$, josta $f_\text{ion} = \dfrac{13{,}6\,\text{eV}}{m^2 h}$
+**Kaava:** $$\begin{aligned} hf &= E_\text{y} - E_m \\ c &= f\lambda \\ \frac{hc}{\lambda} &= E_\text{y} - E_m \\ hf_\text{ion} &= 0 - E_m \\ E_m &= -\frac{13{,}6\,\text{eV}}{m^2} \\ f_\text{ion} &= \frac{13{,}6\,\text{eV}}{m^2 h} \end{aligned}$$
 **Muunnokset:** Fotonien energiat lasketaan jouleina. Ne muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$. Ionisaatioenergia muunnetaan jouleiksi kertomalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{THz} = 10^{12}\,\text{Hz}$.
 **Sijoitus:** Tulo $hc = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Fotonien energiat ovat $\tfrac{hc}{\lambda} = 0{,}6610\,\text{eV}$, $0{,}9672\,\text{eV}$ ja $1{,}1335\,\text{eV}$.
 
@@ -337,7 +337,7 @@ Ionisaatioon tilasta $3$ tarvitaan $1{,}5111\,\text{eV} = 1{,}5111 \cdot 1{,}602
 **Annettu:** viivat $\lambda = 102{,}6$; $121{,}6$; $486{,}1$; $656{,}3$ ja $1875\,\text{nm}$ ($\pm 1\,\text{nm}$), atomit perustilassa, $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** ultraviolettilähteen aallonpituus $\lambda_\text{L}$ nanometreinä
 **Periaate:** Jokaisen viivan fotonin energia on tasojen erotus, ja energia säilyy. Kun viivat on tunnistettu, ylin lähtötaso on se taso, jolle atomit viritettiin. Fotoni nosti atomin perustilasta tälle tasolle. Lähteen fotonin energia on siis tämän tason ja perustilan energioiden erotus. Jos viritystaso olisi ylempi, kaasu lähettäisi myös siitä lähteviä viivoja.
-**Kaava:** $\dfrac{hc}{\lambda_\text{L}} = E_\text{y} - E_1$, josta $\lambda_\text{L} = \dfrac{hc}{E_\text{y} - E_1}$
+**Kaava:** $$\begin{aligned} hf &= E_\text{y} - E_1 \\ c &= f\lambda_\text{L} \\ \frac{hc}{\lambda_\text{L}} &= E_\text{y} - E_1 \\ \lambda_\text{L} &= \frac{hc}{E_\text{y} - E_1} \end{aligned}$$
 **Muunnokset:** Fotonien energiat muunnetaan jouleista elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** Tulo $hc = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Viivojen energiat ovat $12{,}09$; $10{,}20$; $2{,}551$; $1{,}889$ ja $0{,}661\,\text{eV}$. Ne vastaavat tasoparien erotuksia $E_3 - E_1 = 12{,}09\,\text{eV}$, $E_2 - E_1 = 10{,}20\,\text{eV}$, $E_4 - E_2 = 2{,}55\,\text{eV}$, $E_3 - E_2 = 1{,}889\,\text{eV}$ ja $E_4 - E_3 = 0{,}661\,\text{eV}$. Viivat ovat siis siirtymät $3 \to 1$, $2 \to 1$, $4 \to 2$, $3 \to 2$ ja $4 \to 3$. Ylin lähtötaso on $n = 4$.
 

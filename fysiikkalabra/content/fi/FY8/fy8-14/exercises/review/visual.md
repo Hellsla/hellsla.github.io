@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 3ee09cf0c8673108
+CONTENT-HASH: c25c9461478e13cd
+SCOPE: delta numbers,reflow,typography from 3ee09cf0c8673108 base 4b05399
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] L2-08 solution (carried): nested subscript in \left(\tfrac12\right)^{n_\text{luu}} renders tiny; use \dfrac or words.
-- [Minor] L2-09 text (carried): "(esimerkkiaineisto)" remains in 14-22 while other labels were removed; check intent.
+- [Minor] solutions.md 14-19 / 14-22 Kaava rows — exponents like d/d_{1/2}^{kudos} and (1/2)^{t/T_{1/2}} render very small (carried from the previous round); use words or a symbol such as d_{1/2,\text{kudos}}.
+- [Minor] solutions.md 14-22 Kaava — the stray row "+ H_TT" (\quad) could be left out; the row already fits.
 
 ## Checked
-- Delta (solutions.md paragraph cuts). Captures from the lesson's review/shots: open-exercises-1280-5, open-exercises-L2-1280-10, open-exercises-L3-1280-4 (14-17 graph and solution, Sijoitus rows aligned, Vastaus and Järkevyys blocks, 14-22 table). Layout intact, units in LaTeX.
+- Delta (Kaava step with a short intro sentence and an aligned block). Opened contact-6 and contact-7, and at full size open-exercises-L3-1280-3 (14-20 block with I_A, I_B, ratio, no clipping; fractions display size) and open-exercises-L3-1280-5 (14-22 Kaava block, table and answer).
+- The intro-then-block order (principle, equations) reads well; the sentences are fluent Finnish.
+- No 390 px capture with solutions open; layout check at 360 and 390 px is clean per the packet.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

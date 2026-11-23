@@ -32,7 +32,14 @@
 **Annettu:** gammafotonin energia $E_\gamma = 59{,}54\,\text{keV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{keV} = 1000\,\text{eV}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** fotonin aallonpituus $\lambda$ pikometreinä
 **Periaate:** Gammasäteily on sähkömagneettista säteilyä, joten fotonin energia on $\tfrac{hc}{\lambda}$ kuten näkyvän valon fotonilla.
-**Kaava:** $E_\gamma = \dfrac{hc}{\lambda}$, josta $\lambda = \dfrac{hc}{E_\gamma}$
+**Kaava:** Fotonin energia $E_\gamma = hf$ ja aaltoyhtälö $c = f\lambda$, joten: $$
+\begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\gamma &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\gamma}
+\end{aligned}
+$$
 **Muunnokset:** $E_\gamma = 59{,}54\,\text{keV} = 59{,}54 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 9{,}5383 \cdot 10^{-15}\,\text{J}$; lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.
 **Sijoitus:** Tulo $$
 \begin{aligned}
@@ -85,7 +92,15 @@ Gammahajoamisessa ytimestä lähtee vain energiaa, joten kumpikaan luku ei muutu
 **Annettu:** nikkeli-60:n tasot $E_\text{y} = 2505{,}8\,\text{keV}$ ja $E_\text{a} = 1332{,}5\,\text{keV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{keV} = 1000\,\text{eV}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** gammafotonin aallonpituus $\lambda$ pikometreinä
 **Periaate:** Ytimen energia on kvantittunut. Energia säilyy, joten siirtymässä lähtevän fotonin energia on tasojen erotus, kuten atomin siirtymissä, ja fotonin energia on $\tfrac{hc}{\lambda}$.
-**Kaava:** $\dfrac{hc}{\lambda} = E_\text{y} - E_\text{a}$, josta $\lambda = \dfrac{hc}{E_\text{y} - E_\text{a}}$
+**Kaava:** Fotonin energia on tasojen erotus $E_\gamma = E_\text{y} - E_\text{a}$, ja $E_\gamma = hf$ sekä $c = f\lambda$, joten: $$
+\begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\gamma &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\gamma} \\
+&= \frac{hc}{E_\text{y} - E_\text{a}}
+\end{aligned}
+$$
 **Muunnokset:** $$
 \begin{aligned}
 E_\text{y} - E_\text{a} &= 2505{,}8\,\text{keV} \\
@@ -122,7 +137,13 @@ Se on vähän pienempi kuin toisen fotonin $1332{,}5\,\text{keV}$, joten aallonp
 **Annettu:** gammafotonin energia $E_\gamma = 661{,}7\,\text{keV}$, vihreän valon aallonpituus $\lambda = 550\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{keV} = 1000\,\text{eV}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** energioiden suhde, kuinka monta kertaa $E_\gamma$ on vihreän fotonin energia $E_\text{v}$
 **Periaate:** Kummankin fotonin energia riippuu vain sen aallonpituudesta tai taajuudesta. Vihreän fotonin energia lasketaan aallonpituudesta, ja vertailu tehdään yhdellä jakolaskulla samassa yksikössä.
-**Kaava:** $E_\text{v} = \dfrac{hc}{\lambda}$, ja kysytty suhde on $\dfrac{E_\gamma}{E_\text{v}} = \dfrac{E_\gamma \lambda}{hc}$
+**Kaava:** Fotonin energia $E_\text{v} = hf$ ja aaltoyhtälö $c = f\lambda$, joten: $$
+\begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\text{v} &= hf \\
+&= \frac{hc}{\lambda}
+\end{aligned}
+$$ Kysytty suhde on $\dfrac{E_\gamma}{E_\text{v}} = \dfrac{E_\gamma \lambda}{hc}$
 **Muunnokset:** $\lambda = 550\,\text{nm} = 550 \cdot 10^{-9}\,\text{m}$ ja $E_\gamma = 661{,}7\,\text{keV} = 661{,}7 \cdot 1000\,\text{eV} = 661\,700\,\text{eV}$; vihreän fotonin energia muunnetaan elektronivolteiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
 **Sijoitus:** Tulo $$
 \begin{aligned}
@@ -227,7 +248,14 @@ Oikea vastaus on rivi 3.
 **Annettu:** ytimen tasot $0$, $0{,}40\,\text{MeV}$ ja $1{,}00\,\text{MeV}$, ydin aluksi tasolla $1{,}00\,\text{MeV}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{MeV} = 10^{6}\,\text{eV}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** lyhin gammaspektrissä näkyvä aallonpituus $\lambda_\text{min}$ pikometreinä
 **Periaate:** Jokaisen gammafotonin energia on kahden tason erotus. Mahdolliset siirtymät ovat $1{,}00 \to 0$ ($1{,}00\,\text{MeV}$), $1{,}00 \to 0{,}40$ ($0{,}60\,\text{MeV}$) ja $0{,}40 \to 0$ ($0{,}40\,\text{MeV}$). Koska $\lambda = \tfrac{hc}{E}$, lyhin aallonpituus tulee suurimmasta energiasta eli suorasta siirtymästä perustilaan.
-**Kaava:** $\dfrac{hc}{\lambda_\text{min}} = E_\text{max}$, josta $\lambda_\text{min} = \dfrac{hc}{E_\text{max}}$
+**Kaava:** Fotonin energia $E_\gamma = hf$ ja aaltoyhtälö $c = f\lambda$, joten: $$
+\begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\gamma &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\gamma}
+\end{aligned}
+$$ Lyhin aallonpituus tulee suurimmasta energiasta, joten $\lambda_\text{min} = \dfrac{hc}{E_\text{max}}$
 **Muunnokset:** $E_\text{max} = 1{,}00\,\text{MeV} = 1{,}00 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}602 \cdot 10^{-13}\,\text{J}$; lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.
 **Sijoitus:** Tulo $$
 \begin{aligned}
@@ -278,7 +306,14 @@ $$ on kaksi beetahajoamista ja yksi alfahajoaminen.
 **Annettu:** mitatut viivat $351{,}2$, $468{,}9$, $681{,}3$, $820{,}5$ ja $1501{,}4\,\text{keV}$; kolme viritystasoa; ydin aluksi ylimmällä tasolla; alin viritystaso $351{,}2\,\text{keV}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{keV} = 1000\,\text{eV}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** puuttuvan gammaviivan energia $E_\text{p}$ ja aallonpituus $\lambda$ pikometreinä
 **Periaate:** Gammafotonin energia on kahden tason erotus. Kolmella viritystasolla ja perustilalla on kuusi mahdollista siirtymää, joista viisi näkyy taulukossa. Suurin energia on siirtymä ylimmältä tasolta perustilaan, ja jokaisen viivan täytyy olla kahden tason erotus. Alimman tason $351{,}2\,\text{keV}$ avulla jäljelle jäävät tasot ratkeavat yksikäsitteisesti. Puuttuva siirtymä on se, jota taulukossa ei ole.
-**Kaava:** $E_\gamma = E_\text{y} - E_\text{a}$ ja $\lambda = \dfrac{hc}{E_\gamma}$
+**Kaava:** Fotonin energia on tasojen erotus $E_\gamma = E_\text{y} - E_\text{a}$, ja $E_\gamma = hf$ sekä $c = f\lambda$, joten: $$
+\begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\gamma &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\gamma}
+\end{aligned}
+$$
 **Muunnokset:** $E_\text{p} = 1150{,}2\,\text{keV} = 1150{,}2 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}8427 \cdot 10^{-13}\,\text{J}$; lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.
 **Sijoitus:** a) Ylin taso on suurimman viivan mukaan $E_3 = 1501{,}4\,\text{keV}$ ja alin viritystaso $E_1 = 351{,}2\,\text{keV}$, joka on myös taulukon pienin viiva (siirtymä perustilaan). Kolmas taso saadaan viivasta $820{,}5\,\text{keV}$, jos se on siirtymä perustilaan: $E_2 = 820{,}5\,\text{keV}$. Tarkistus tasojen erotuksilla: $$
 \begin{aligned}
@@ -330,7 +365,15 @@ $$ on suurempi kuin $2158{,}6\,\text{keV}$.
 **Kysytty:** tasojen A, B ja C energiat, suoran siirtymän C $\to$ perustila fotonin energia $E_\text{C}$ ja aallonpituus $\lambda$ pikometreinä
 **Periaate:** Gammafotonin energia on kahden tason energiaerotus. Ylempi taso saadaan lisäämällä alemman tason energiaan siirtymän fotonin energia, ja tasot voivat olla vain sellaisia, että kaikki havaitut piikit selittyvät samoilla tasoilla. Fotonin aallonpituus saadaan energiasta kaavalla $\lambda = hc/E$.
 **Kuvaajan lukeminen:** Kuvassa on kaksi piikkiä, $1173{,}2\,\text{keV}$ ja $1332{,}5\,\text{keV}$. Kuvasta ei näe, kumpi niistä on siirtymä A $\to$ perustila.
-**Kaava:** $E_\text{A} = E_{\text{A} \to 0}$, $E_\text{B} = E_\text{A} + E_{\text{B} \to \text{A}}$, $E_\text{C} = E_\text{B} + E_{\text{C} \to \text{B}}$ ja $\lambda = \dfrac{hc}{E_\text{C}}$
+**Kaava:** Fotonin energia on tasojen erotus $E_\gamma = E_\text{y} - E_\text{a}$, joten $E_\text{y} = E_\text{a} + E_\gamma$. Tasoille ja aallonpituudelle ($E_\text{C} = hf$, $c = f\lambda$): $$
+\begin{aligned}
+E_\text{A} &= E_{\text{A} \to 0} \\
+E_\text{B} &= E_\text{A} + E_{\text{B} \to \text{A}} \\
+E_\text{C} &= E_\text{B} + E_{\text{C} \to \text{B}} \\
+\lambda &= \frac{c}{f} \\
+&= \frac{hc}{E_\text{C}}
+\end{aligned}
+$$
 **Muunnokset:** $E_\text{C} = 2505{,}7\,\text{keV} = 2505{,}7 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 4{,}0141 \cdot 10^{-13}\,\text{J}$ ja lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.
 **Sijoitus:** a) Kokeillaan, että A $\to$ perustila on piikki $1332{,}5\,\text{keV}$. Silloin $$
 \begin{aligned}

@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 81b5cf5d2daaa058
+CONTENT-HASH: 6559f6723de456c3
+SCOPE: delta numbers,reflow,typography from 81b5cf5d2daaa058 base 4b05399
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] L1-07 and L2/L3 answer rows: the unit beside the input box is plain text "min⁻¹" (interface, not a lesson text); the task and solution use LaTeX. No change asked.
+- [Minor] solutions.md, 12-20 (net-rate): the second aligned block's last rows (`d = ...\ln` over a nested \dfrac) are tall but legible at 390 px; no change asked.
+- [Minor] Kaava blocks mix a centred `=` column with left-aligned first rows (e.g. the Ln block); harmless, consistent with mathlayout.
 
 ## Checked
-- Delta (unit 1/min -> min^-1 in L1-07 and the L3-02 solution): fy8-12-open-exercises-1280-5 (L1-07: task text, unit row, Annettu, Sijoitus chain aligned, Vastaus, Järkevyys), -6 (end of L1-07, L1-08 layout), -7 (L1-09 intact), fy8-12-open-exercises-L3-1280-2 (12-20 task, Annettu/Kysytty with min^-1), L3-1280-3 (Sijoitus, Vastaus with 30 min^-1). Exponent legible and upright, thin space present, no clipping, layout survived.
+- Delta (all changed Kaava steps: E=hf with f, E, lambda rows; net pulse rate; lead+concrete; half-thickness ln chains; background-subtracted 30 min^-1 block; A=R/(T eta); log solution) at 390 px, own clips, 9 blocks viewed. Own 390 px clips of every Kaava block (preview build; packet captures of exercises are 1280 only): no overflow, no red KaTeX.
+- Rows break one equation per row, '=' column aligned, nested fractions and exponents legible, units upright, no clipping.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

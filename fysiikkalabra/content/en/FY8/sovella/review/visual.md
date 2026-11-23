@@ -1,16 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 023a506c0c3f64e2
+CONTENT-HASH: 8e38a43298c1653c
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] carried from earlier rounds (unchanged, none blocks): fy8-s1 b) three roundings of one value (1193 / "about 1200" / "1190") and the long a) answer paragraph; fy8-s3 b) range "1.0 -1.6 cm" should use an en dash; fy8-s3 c) openings read as fragments; fy8-s2 d) rubric says heat where the solution says internal energy.
+- [Minor] Graph fy8-s3-inv (R against 1/r^2): axis tick labels and the dashed R ~ 1/r^2 label are small at 390 px (about 11 px); enlarge the figure's text slightly.
+- [Minor] Graph fy8-s3-inv has no marker legend saying the dashed line is the model and the dots the measurements; the "R ~ 1/r^2" label carries it, a short caption would make it explicit.
+- [Minor] fy8-s3-lin, point labels "(20.0; 12.0)" and "(-1.3; 0)" use a semicolon and a decimal point (English): fine, but check they stay in one convention in fi.
 
 ## Checked
-- Delta: only paragraph breaks in the worked solutions, words unchanged. Page captured in Finnish (content/fi/FY8/sovella/review/shots), per the task.
-- Opened contact-1.png (opening, parts 1-12 at 390 px), FY8-sovella-stage-fy8-s2-390-5.png (solution with conversions, substitution rows, answer, check block) and FY8-sovella-page-1280-20.png (graph, table, model answer at 1280 px).
-- Paragraph breaks sit between knowns, remark, question and answer; formula rows, graph axes and units are intact; nothing is clipped or overflowing; the graph shows its data as markers apart from the dashed model line.
+- The packet's screenshots were stale or missing and screenshot.py cannot capture the English Sovella page, so I built preview/en/FY8-sovella.html (build.py FY8-sovella) and took my own 390 px captures with every box open.
+- Opened: the top of the page (title, intro, task 1), the three inline figures (energy levels of oxygen, R against 1/r^2, linearised R^-1/2 against r), all 12 Formula blocks (two contact sheets) and the Substitution rows of task 1 in the open solution.
+- Measured at 360 and 390 px: no page horizontal overflow; KaTeX outside the graphs' own labels not clipped; no red KaTeX source.
+- Formula blocks (work queue 8g, aligned rows): equals aligned, fractions in display size, subscripts legible, prose lead-ins read correctly. Graphs: units on both axes, data as dots, model as a line, circled points and the extrapolation read-off marked.
+- Hash (practice.py hash FY8 --lang en) re-run at the end: unchanged. The packet header's c355f45d310c2f53 is the review-packet hash, not this one.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

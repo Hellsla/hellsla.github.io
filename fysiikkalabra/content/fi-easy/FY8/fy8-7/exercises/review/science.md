@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 99372561eb10c7d5
-SCOPE: delta added-exercise from 64bd83cc9cf83c67 base 5b3ca4f81c77
+CONTENT-HASH: 73a1712daba2b351
+SCOPE: delta md-paragraphs,numbers,reflow,typography from 99372561eb10c7d5 base 64d4935
 
 ## Blocking
 
 ## Polish
-- exercises/exercises.json (fy8-7-L2-08 text) — "kuinka monta fotonia laser lähettää sekunnissa, kun aallonpituus muuttuu" suggests one laser's wavelength changes, while the figure is one point on a grid — e.g. "Kuvassa laser on piste: vaaka-akselilla sen aallonpituus, pystyakselilla sen sekunnissa lähettämien fotonien määrä." Same idea for L3-06 ("aallonpituuden mukaan").
 
 ## Checked
-- All numbers of L1-10, L2-08 and L3-06 (task data, answers, tolerances, solution steps) are identical to the fi version.
-- L1-10: Pλ/(hc) with MAFY h = 6,62607015e-34 J s = 6,7455e15 1/s; 6,7e15 inside ±2 %.
-- L2-08: figure point 3,927e15 1/s at 520 nm (from 1,5 mW); read 3,9e15 gives 1,490 mW; readings 3,85–3,95e15 give 1,47–1,51 mW, inside ±3 %; 2,38 eV and 2,62e15 1/s per mW right.
-- L3-06: points 6,796e15 (450 nm) and 4,027e15 (800 nm), exact ratio 3,000, read 3,022; reading ±0,1 gives 2,91–3,15, inside or at ±4 %.
-- Simplified wording keeps the physics: same photons, P = (N/t)·hc/λ, hc cancels in the ratio, shorter wavelength carries more energy per photon.
-- Notation (N/t, hf, hc/λ, h and c values) matches the brief's lesson.
-- Hash 99372561eb10c7d5 at start and end.
+- Delta (work queue 8g): I read every changed Kaava step on disk as an aligned block. The packet diff flattens the rows. Each step now starts from $E = hf$ or $P = \tfrac{N}{t}\,hf$, then adds $f = \tfrac{c}{\lambda}$, and simplifies to the final form before any substitution.
+- Algebra checked row by row: L1-03 $\lambda = hc/(E_2-E_1)$; L1-04 $N = E\lambda/(hc)$; L2-01 $\eta = \lambda_\text{p}/\lambda_\text{L}$; L2-02 ratio $\lambda_\text{r}/\lambda_\text{v}$ (P and hc cancel); L2-04 $P = Nhc/(\lambda t)$; L3-02 $P\lambda_\text{p}/(2hc)$; L3-03 $c/(\lambda f_\text{q})$; L3-04 $\eta_\text{q}$ and $P_\text{pak} = \tfrac{N_\text{L}}{t}(hf_\text{p}-hf_\text{L})$; L3-05 $\Delta N_\text{L}/\Delta N_\text{p} = (\Delta P_\text{L}/\Delta P_\text{p})\,\lambda_\text{L}/\lambda_\text{p}$; L3-06 $P_\text{X}/P_\text{Y}$. All are correct.
+- The other changes only split paragraphs (L1-06, L1-08, L2-05, L2-06, L2-07, L3-05). No numbers or claims changed.
+- One script recomputed the numbers: 0,800 eV; 692,74 nm; 1,6069·10^16; 75,94 %; 1,6049; 527,66 nm; 5,0409 MW; 1,8059 J; 2,0338·10^18 1/s; 9,2246·10^4; 0,524. These agree with the solutions. All 20 stored answers agree with answers.py within tolerance.
+- The notation ($hf$, $\tfrac{N}{t}$, $h$ and $c$ values) matches the brief's Kaava.
+- The hash was the same at the start and at the end.
