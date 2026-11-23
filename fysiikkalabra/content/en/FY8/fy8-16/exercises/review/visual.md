@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 23911fe276ddc524
-
-Delta review (8g): only the Formula step of solutions.md changed (aligned LaTeX blocks, one equation per row).
+CONTENT-HASH: 07f5a40aa7a1ccdb
 
 ## Blocking
-- None.
+(none)
 
 ## Polish
-- [Minor] solutions.md, Formula lines of the form "$E = hf$ and" / "from which:" followed by a block — the lead-in is plain inline text above a card; fine, but keep "so" / "from which:" consistent across the set.
-- [Minor] Answer and Reasonableness fields — units such as $\tfrac{1}{\text{s}}$ and $\tfrac{\text{Bq}}{\text{m}^3}$ still stand as stacked fractions in running text, making lines taller; $\text{s}^{-1}$ style would be tidier (untouched text).
-- [Minor] Captures of the opened solutions are 664 px wide (1280 layout); no true 390 px capture of the solutions exists, so phone wrapping rests on check_layout.py.
+- [Minor] Answer and Reasonableness lines: units such as $\tfrac{\text{km/s}}{\text{Mpc}}$ stand as stacked fractions in running text and raise the line height (untouched text).
+- [Minor] No true 390 px capture of the open solutions; phone wrapping rests on check_layout.py (360 px, en/fi/fi-easy: OK).
 
 ## Checked
-- Opened fy8-16-open-exercises-L2-1280-3 (E, lambda substitution chains) and 1280-3 level 1 (v = H0 d, so d = v/H0; substitution). Readable, aligned. Figures unchanged.
+- Delta (solutions.md: \frac to \dfrac in the Kaava step). Opened fy8-16-open-exercises-1280-3 (d = v/H0 inline Formula, substitution), L2-1280-2 (16-11: inline lambda = lambda_now/1100 and aligned E, f block) and L2-1280-3 (E = hc/lambda aligned rows, substitutions).
+- Fractions now read at full display size in the aligned blocks and in the inline Kaava leads; equals signs aligned, nothing clipped, blocks inside their cards.
+- check_layout.py fy8-16 --width 360: OK in all three languages with solutions open.
+- Hash re-run at end: unchanged.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4
