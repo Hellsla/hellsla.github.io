@@ -4,7 +4,15 @@
 **Given:** rated power of a wind turbine $P_\text{n} = 5.0\,\text{MW}$, capacity factor $k = 0.32$, length of a year $t = 8760\,\text{h}$ and the city's annual consumption $E = 380\,\text{GWh}$
 **Find:** the number of wind turbines needed $N$
 **Principle:** A wind turbine does not run at rated power all year, because the wind varies. The capacity factor gives the average power over a year: $P_\text{avg} = k \cdot P_\text{n}$. The power varies, but the energy of a year is the average power times the time. Once the annual energy of one turbine is known, the number of turbines is the consumption divided by it. The number is a whole number, and it must be at least the calculated value.
-**Formula:** $E_1 = k \cdot P_\text{n} \cdot t$ and $N = \dfrac{E}{E_1}$
+**Formula:**
+$$
+\begin{aligned}
+P_\text{avg} &= k P_\text{n} \\
+E_1 &= P_\text{avg} t = k P_\text{n} t \\
+E &= N E_1 \\
+N &= \dfrac{E}{E_1} = \dfrac{E}{k P_\text{n} t}
+\end{aligned}
+$$
 **Conversions:** When the power is in megawatts and the time in hours, the energy is in megawatt-hours: $1\,\text{GWh} = 1000\,\text{MWh}$.
 **Substitution:** $E_1 = 0.32 \cdot 5.0\,\text{MW} \cdot 8760\,\text{h} = 14\,016\,\text{MWh} = 14.0\,\text{GWh}$ and $N = \dfrac{380\,\text{GWh}}{14.0\,\text{GWh}} = 27.1$
 **Answer:** $28$ wind turbines are needed. The calculated value $27.1$ is rounded up, because $27$ turbines would produce only $27 \cdot 14.0\,\text{GWh} = 378\,\text{GWh}$, which is too little. The number is a whole number, so the rule of significant figures does not limit it.
@@ -14,7 +22,16 @@
 **Given:** annual consumption $E = 380\,\text{GWh}$ and life-cycle emission factors: coal $e = 820\,\text{g/kWh}$, natural gas $490\,\text{g/kWh}$ and onshore wind power $11\,\text{g/kWh}$
 **Find:** the annual emission $m$ for each method and the decrease in the emission as a percentage compared with coal
 **Principle:** The emission factor tells how many grams of carbon dioxide equivalent are produced per kilowatt-hour when the whole life cycle is included. When all the kilowatt-hours are produced in the same way, the emission is directly proportional to the energy. The percentage decrease is the difference of the emissions relative to the emission of coal. The energy is the same in all the alternatives, so it cancels, and the ratio can be calculated directly from the emission factors.
-**Formula:** $m = e \cdot E$ and the decrease $\dfrac{m_\text{coal} - m}{m_\text{coal}} = 1 - \dfrac{e}{e_\text{coal}}$
+**Formula:**
+$$
+\begin{aligned}
+e &= \dfrac{m}{E} \\
+m &= e E \\
+\dfrac{m_\text{coal} - m}{m_\text{coal}} &= 1 - \dfrac{m}{m_\text{coal}} \\
+&= 1 - \dfrac{e E}{e_\text{coal} E} \\
+&= 1 - \dfrac{e}{e_\text{coal}}
+\end{aligned}
+$$
 **Conversions:** $E = 380\,\text{GWh} = 380 \cdot 10^{6}\,\text{kWh}$, because the factor is in the unit $\text{g/kWh}$. Finally $1\,\text{t} = 10^{6}\,\text{g}$.
 **Substitution:** Coal: $m = 820\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} = 3.116 \cdot 10^{11}\,\text{g} = 3.116 \cdot 10^{5}\,\text{t}$. Natural gas: $m = 490\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} = 1.862 \cdot 10^{11}\,\text{g} = 1.862 \cdot 10^{5}\,\text{t}$. Wind power: $m = 11\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} = 4.18 \cdot 10^{9}\,\text{g} = 4.18 \cdot 10^{3}\,\text{t}$. Decrease: natural gas $1 - \dfrac{490\,\text{g/kWh}}{820\,\text{g/kWh}} = 0.40$ and wind power $1 - \dfrac{11\,\text{g/kWh}}{820\,\text{g/kWh}} = 0.99$
 **Answer:** With coal $m \approx 3.1 \cdot 10^{5}\,\text{t}$, with natural gas $1.9 \cdot 10^{5}\,\text{t}$ and with wind power $4.2 \cdot 10^{3}\,\text{t}$ per year, to two significant figures like the emission factors. Natural gas reduces the emission by about $40\,\%$, wind power by about $99\,\%$.
@@ -24,7 +41,16 @@
 **Given:** $N = 28$ wind turbines, the annual energy of one $E_1 = 14.0\,\text{GWh}$, the share of winter in the annual energy of wind power $32\,\%$ and in the city's annual consumption $31\,\%$, consumption $E = 380\,\text{GWh}$, length of winter $90\,\text{d}$, peak power $80\,\text{MW}$ and the power during a calm spell below $5\,\%$ of the rated power
 **Find:** the average power $P_\text{w}$ of the wind turbines in December–February and whether it meets the city's needs
 **Principle:** The table gives what share of the annual energy is produced and consumed in winter. The average power in winter is the energy of winter divided by the hours of winter. The average power only tells whether the energy is enough on average: consumption and wind vary even during the winter, so the need must also be compared with the peak power and with the power during a calm spell.
-**Formula:** $P_\text{w} = \dfrac{0.32 \cdot N E_1}{t}$ and the city's average power in winter $P_\text{c} = \dfrac{0.31 \cdot E}{t}$
+**Formula:**
+$$
+\begin{aligned}
+E &= P t \\
+P &= \dfrac{E}{t} \\
+E_\text{winter} &= 0.32 N E_1 \\
+P_\text{w} &= \dfrac{E_\text{winter}}{t} = \dfrac{0.32 N E_1}{t} \\
+P_\text{c} &= \dfrac{0.31 E}{t}
+\end{aligned}
+$$
 **Conversions:** $t = 90 \cdot 24\,\text{h} = 2160\,\text{h}$ and $1\,\text{GWh} = 1000\,\text{MWh}$
 **Substitution:** $N E_1 = 28 \cdot 14.016\,\text{GWh} = 392.4\,\text{GWh}$. $P_\text{w} = \dfrac{0.32 \cdot 392.4\,\text{GWh}}{2160\,\text{h}} = \dfrac{125\,600\,\text{MWh}}{2160\,\text{h}} = 58.1\,\text{MW}$ and $P_\text{c} = \dfrac{0.31 \cdot 380\,\text{GWh}}{2160\,\text{h}} = \dfrac{117\,800\,\text{MWh}}{2160\,\text{h}} = 54.5\,\text{MW}$. During a calm spell the power is $P_\text{wind} < 0.05 \cdot 28 \cdot 5.0\,\text{MW} = 7\,\text{MW}$, so the power needed from elsewhere is $P_\text{elsewhere} > 80\,\text{MW} - 7\,\text{MW} = 73\,\text{MW}$.
 **Answer:** The average power of the wind turbines in winter is $P_\text{w} \approx 58\,\text{MW}$, to two significant figures like the percentages in the table. It is slightly larger than the city's average demand in winter, $55\,\text{MW}$, so the winter energy is enough on average. On a calm, frosty evening, however, the combined output of the wind turbines can fall below $7\,\text{MW}$. If the city's power demand is then $80\,\text{MW}$, more than $73\,\text{MW}$ of electric power is needed from elsewhere.
