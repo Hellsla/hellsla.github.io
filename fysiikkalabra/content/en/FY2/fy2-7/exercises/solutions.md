@@ -154,7 +154,9 @@ The lost energy is transferred as heat to the surroundings: in the electricity g
 **Principle:** Customers need the same energy in both cases. A smaller loss means a higher efficiency, so less sent energy is needed. Calculate the sent energy in both cases and subtract.
 **Formula:** $\eta = \dfrac{E_\text{arrived}}{E_\text{sent}}$, so $E_\text{sent} = \dfrac{E_\text{arrived}}{\eta}$, and saving $\Delta E = E_\text{sent,1} - E_\text{sent,2} = E_\text{arrived} \left(\dfrac{1}{\eta_1} - \dfrac{1}{\eta_2}\right)$
 **Conversions:** $\eta_1 = 100\,\% - 9.0\,\% = 91.0\,\% = 0.910$ and $\eta_2 = 100\,\% - 6.0\,\% = 94.0\,\% = 0.940$.
-**Substitution:** $\Delta E = 600\,\text{MWh} \cdot \left(\dfrac{1}{0.910} - \dfrac{1}{0.940}\right) = 600\,\text{MWh} \cdot (1.0989 - 1.0638) = 600\,\text{MWh} \cdot 0.03507 = 21.04\,\text{MWh}$
+**Substitution:** $E_\text{sent,1} = \dfrac{600\,\text{MWh}}{0.910} = 659.3\,\text{MWh}$
+$E_\text{sent,2} = \dfrac{600\,\text{MWh}}{0.940} = 638.3\,\text{MWh}$
+$\Delta E = 659.3\,\text{MWh} - 638.3\,\text{MWh} = 21.0\,\text{MWh}$
 **Answer:** $21\,\text{MWh}$, two significant figures: the precision of the difference is limited by the loss percentages $9.0\,\%$ and $6.0\,\%$.
 **Reasonableness:** The loss decreases by three percentage points, and three per cent of $600\,\text{MWh}$ is $18\,\text{MWh}$. The result $21\,\text{MWh}$ is slightly larger because the percentages are taken of the sent energy, not of $600\,\text{MWh}$.
 
@@ -164,7 +166,7 @@ The lost energy is transferred as heat to the surroundings: in the electricity g
 **Principle:** For customers, what matters is the energy that arrives, not the energy fed into the network. The arrived energy is the efficiency times the sent energy, so it is calculated for each network separately and compared.
 **Formula:** $\eta = \dfrac{E_\text{arrived}}{E_\text{sent}}$, so $E_\text{arrived} = \eta\, E_\text{sent}$, and difference $\Delta E = E_\text{arrived,A} - E_\text{arrived,B} = \eta_\text{A} E_\text{sent,A} - \eta_\text{B} E_\text{sent,B}$
 **Conversions:** $\eta_\text{A} = 91.0 : 100 = 0.910$ and $\eta_\text{B} = 85.0 : 100 = 0.850$. The energies are in the same unit.
-**Substitution:** $E_\text{perille,A} = 0{.}910 \cdot 500\,\text{MWh} = 455{.}0\,\text{MWh}$ and $E_\text{perille,B} = 0{.}850 \cdot 520\,\text{MWh} = 442{.}0\,\text{MWh}$, so $\Delta E = 455{.}0\,\text{MWh} - 442{.}0\,\text{MWh} = 13{.}0\,\text{MWh}$
+**Substitution:** $E_\text{perille,A} = 0.910 \cdot 500\,\text{MWh} = 455.0\,\text{MWh}$ and $E_\text{perille,B} = 0.850 \cdot 520\,\text{MWh} = 442.0\,\text{MWh}$, so $\Delta E = 455.0\,\text{MWh} - 442.0\,\text{MWh} = 13.0\,\text{MWh}$
 **Answer:** network A brings customers $13.0\,\text{MWh}$ more, three significant figures as in the efficiencies and energies.
 **Reasonableness:** Network B feeds in $20\,\text{MWh}$ more, but its loss $$
 \begin{aligned}
