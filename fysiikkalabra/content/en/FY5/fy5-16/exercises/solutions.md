@@ -22,7 +22,7 @@
 **Given:** $L_1 = 88\,\text{dB}$ at a distance $r_1 = 4.0\,\text{m}$, new distance $r_2 = 8.0\,\text{m}$; point source in an open space
 **Find:** the level $L_2$ at the distance $r_2$
 **Principle:** The intensity of a point source is inversely proportional to the square of the distance, so double the distance gives a quarter of the intensity. That lowers the level by $10\,\text{dB} \cdot \lg 4 \approx 6\,\text{dB}$ (chapter *Intensity and the decibel scale*).
-**Formula:** $$\begin{aligned} \dfrac{I_2}{I_1} &= \dfrac{r_1^2}{r_2^2} = \dfrac{r_1^2}{(2r_1)^2} = \dfrac{1}{4} \\ L_2 - L_1 &= 10\,\text{dB}\cdot\lg\dfrac{I_2}{I_1} \\ L_2 &= L_1 + 10\,\text{dB}\cdot\lg\dfrac{1}{4} \\ &\approx L_1 - 6\,\text{dB} \end{aligned}$$
+**Formula:** $$\begin{aligned} \dfrac{I_2}{I_1} &= \dfrac{r_1^2}{r_2^2} \\ &= \dfrac{r_1^2}{(2r_1)^2} = \dfrac{1}{4} \\ L_2 - L_1 &= 10\,\text{dB}\cdot\lg\dfrac{I_2}{I_1} \\ L_2 &= L_1 + 10\,\text{dB}\cdot\lg\dfrac{1}{4} \\ &\approx L_1 - 6\,\text{dB} \end{aligned}$$
 **Conversions:** Not needed: $r_2 : r_1 = 8.0\,\text{m} : 4.0\,\text{m} = 2$.
 **Substitution:** $L_2 = 88\,\text{dB} - 6\,\text{dB} = 82\,\text{dB}$
 **Answer:** $82\,\text{dB}$, in whole decibels like the given value.

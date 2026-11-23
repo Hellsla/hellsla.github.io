@@ -22,7 +22,7 @@
 **Annettu:** $L_1 = 88\,\text{dB}$ etäisyydellä $r_1 = 4{,}0\,\text{m}$, uusi etäisyys $r_2 = 8{,}0\,\text{m}$; pistemäinen lähde avoimessa tilassa
 **Kysytty:** taso $L_2$ etäisyydellä $r_2$
 **Periaate:** Pistemäisen lähteen intensiteetti on kääntäen verrannollinen etäisyyden neliöön, joten kaksinkertainen etäisyys antaa neljäsosan intensiteetistä. Se laskee tasoa $10\,\text{dB} \cdot \lg 4 \approx 6\,\text{dB}$ (luku *Intensiteetti ja desibeliasteikko*).
-**Kaava:** $$\begin{aligned} \dfrac{I_2}{I_1} &= \dfrac{r_1^2}{r_2^2} = \dfrac{r_1^2}{(2r_1)^2} = \dfrac{1}{4} \\ L_2 - L_1 &= 10\,\text{dB}\cdot\lg\dfrac{I_2}{I_1} \\ L_2 &= L_1 + 10\,\text{dB}\cdot\lg\dfrac{1}{4} \\ &\approx L_1 - 6\,\text{dB} \end{aligned}$$
+**Kaava:** $$\begin{aligned} \dfrac{I_2}{I_1} &= \dfrac{r_1^2}{r_2^2} \\ &= \dfrac{r_1^2}{(2r_1)^2} = \dfrac{1}{4} \\ L_2 - L_1 &= 10\,\text{dB}\cdot\lg\dfrac{I_2}{I_1} \\ L_2 &= L_1 + 10\,\text{dB}\cdot\lg\dfrac{1}{4} \\ &\approx L_1 - 6\,\text{dB} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $r_2 : r_1 = 8{,}0\,\text{m} : 4{,}0\,\text{m} = 2$.
 **Sijoitus:** $L_2 = 88\,\text{dB} - 6\,\text{dB} = 82\,\text{dB}$
 **Vastaus:** $82\,\text{dB}$, kokonaisina desibeleinä kuten lähtötieto.
