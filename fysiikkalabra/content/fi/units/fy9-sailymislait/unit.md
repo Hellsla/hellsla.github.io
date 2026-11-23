@@ -10,6 +10,12 @@
 
 Mekaniikan kokeen tehtävistä suuri osa ratkeaa kahdella säilymislailla. **Energia säilyy aina**: mekaaninen energia muuttuu sisäenergiaksi, kun kitka, ilmanvastus tai kappaleen muodonmuutos tekee työtä, mutta kokonaisenergia pysyy samana. **Liikemäärä säilyy**, kun systeemiin vaikuttavien ulkoisten voimien summa on nolla tai niiden impulssi on törmäyksen aikana merkityksettömän pieni.
 
+```pysahdy
+Milloin liikemäärä säilyy, ja miksi mekaaninen energia voi silti vähentyä?
+---
+Liikemäärä säilyy, kun ulkoisten voimien summa on nolla tai niiden impulssi on merkityksettömän pieni. Mekaaninen energia vähenee, kun kitka, ilmanvastus tai muodonmuutos muuttaa sitä sisäenergiaksi; kokonaisenergia säilyy.
+```
+
 <svg data-fig="kartta" viewBox="0 0 380 870" role="img" aria-label="Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Katso ensin tehtävän tunnusmerkki. Ei kitkaa, vain painovoima: mekaaninen energia säilyy, eli alun potentiaali- ja liike-energian summa on yhtä suuri kuin lopun. Kitka tai moottori tekee työtä: energiaperiaate, jossa alun mekaaniseen energiaan lisätään muiden voimien työ. Kappale liikkuu: liike-energia on puolet m v toiseen. Korkeus muuttuu: potentiaalienergia on m g h. Törmäys tai räjähdys: liikemäärä säilyy, ennen on yhtä suuri kuin jälkeen. Kimmoisa törmäys: myös liike-energia säilyy, sen muutos on nolla. Voima vaikuttaa tietyn ajan: impulssi on liikemäärän muutos. Teho tai hyötysuhde kysytään: hyötysuhde on antoteho jaettuna ottotehoon." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="826" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
@@ -137,6 +143,12 @@ mekaniikan energiaperiaate :: E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E
 
 missä indeksi $0$ tarkoittaa alkutilaa ja $W$ muiden voimien kuin painon tekemä työ ($\text{J}$). Vakiovoiman työ on $W = F_\parallel\,s$, missä $F_\parallel$ on voiman liikkeen suuntainen komponentti; kitkan ja ilmanvastuksen työ on negatiivinen. Kun $W = 0$, mekaaninen energia säilyy: $E_{\text{p}0} + E_{\text{k}0} = E_\text{p} + E_\text{k}$.
 
+```pysahdy
+Mikä on kitkan tekemän työn etumerkki energiaperiaatteessa, ja miksi?
+---
+Kitkan työ on negatiivinen, $W < 0$, koska kitka vähentää mekaanista energiaa muuttamalla sitä sisäenergiaksi.
+```
+
 ### Liikemäärä ja impulssi
 
 ```kaavat
@@ -152,6 +164,12 @@ m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'
 ```
 
 Kimmoisassa törmäyksessä myös liike-energia säilyy. Täysin kimmottomassa kappaleet jatkavat yhteisellä nopeudella, $v_1' = v_2' = v'$, ja liike-energiaa muuttuu eniten sisäenergiaksi.
+
+```pysahdy
+Kaksi kappaletta törmää kimmottomasti ja jatkaa yhdessä. Mikä säilyy ja mikä ei?
+---
+Liikemäärä säilyy, koska ulkoisten voimien impulssi on merkityksettömän pieni. Liike-energiaa muuttuu sisäenergiaksi, joten se ei säily.
+```
 
 ### Sovellukset
 

@@ -118,6 +118,12 @@ $$. Mittari näyttää enää noin $185\,\text{kPa}$, vaikka ilmaa ei ole vuotan
   <foreignObject x="410" y="256" width="74" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$p\ (\text{kPa})$</div></foreignObject>
 </svg>
 
+```pysahdy
+Miksi kaasun paineen laskussa ei käytetä suoraan mittarin lukemaa $230\,\text{kPa}$?
+---
+Mittari näyttää vain ylipaineen, mutta kaasun hiukkaset tuottavat koko paineen. Siksi lisätään ilmanpaine: $101\,\text{kPa} + 230\,\text{kPa} = 331\,\text{kPa}$.
+```
+
 ## Kaava: Paine, kaasut ja lämpövoimakone
 
 ### Paine ja nesteen paine
@@ -148,6 +154,12 @@ tilanyhtälö vakioainemäärälle :: \frac{pV}{T} = \text{vakio}
 
 eli kahdessa tilassa $\tfrac{p_1 V_1}{T_1} = \tfrac{p_2 V_2}{T_2}$. Siitä saadaan erikoistapaukset: vakiolämpötilassa Boylen laki $p_1V_1 = p_2V_2$, vakiopaineessa $V \propto T$ ja vakiotilavuudessa $p \propto T$. Kelvinlämpötila on
 
+```pysahdy
+Miksi absoluuttinen nollapiste on vain mallin ennuste?
+---
+Todellinen kaasu tiivistyy nesteeksi ennen kuin lämpötila ehtii sinne, joten suoran jatkaminen nollaan on kaasumallin ennuste.
+```
+
 ```latex
 T = \theta + 273{,}15\,\text{K}
 ```
@@ -174,6 +186,12 @@ Lämpövoimakone ottaa kierroksessa kuumasta lähteestä lämmön $Q_1$ ($\text{
 
 ```kaavat
 lämpövoimakoneen hyötysuhde :: \eta = \frac{W}{Q_1}
+```
+
+```pysahdy
+Miksi lämpövoimakoneen hyötysuhde on aina alle $100\,\%$?
+---
+Osa otetusta lämmöstä $Q_1$ on luovutettava kylmempään ympäristöön lämpönä $Q_2$, joten työ $W$ on pienempi kuin $Q_1$.
 ```
 
 Osa lämmöstä on aina luovutettava kylmempään, joten lämpövoimakoneen hyötysuhde jää selvästi alle $100\,\%$:n. Mitä pienempi lämpötilaero $T_1 - T_2$ on kuuman lähteen lämpötilaan $T_1$ nähden, sitä pienemmän osan lämmöstä kone voi muuttaa työksi. Voimalaitoksessa sama lasketaan tehoista: sähköteho jaettuna polttoaineteholla.

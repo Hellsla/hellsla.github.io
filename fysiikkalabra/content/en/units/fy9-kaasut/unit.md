@@ -118,6 +118,12 @@ $$. The gauge now shows only about $185\,\text{kPa}$, even though no air has lea
   <foreignObject x="410" y="256" width="74" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$p\ (\text{kPa})$</div></foreignObject>
 </svg>
 
+```pysahdy
+Why is the gauge reading $230\,\text{kPa}$ not used directly when calculating the gas pressure?
+---
+The gauge shows only the gauge pressure, but the gas particles produce the whole pressure. So atmospheric pressure is added: $101\,\text{kPa} + 230\,\text{kPa} = 331\,\text{kPa}$.
+```
+
 ## Formula: Pressure, gases and the heat engine
 
 ### Pressure and pressure in a liquid
@@ -148,6 +154,12 @@ combined gas law (constant amount of gas) :: \frac{pV}{T} = \text{constant}
 
 that is, for two states $\tfrac{p_1 V_1}{T_1} = \tfrac{p_2 V_2}{T_2}$. From it follow the special cases: at constant temperature Boyle's law $p_1V_1 = p_2V_2$, at constant pressure $V \propto T$ and at constant volume $p \propto T$. The kelvin temperature is
 
+```pysahdy
+Why is absolute zero only a prediction of the model?
+---
+A real gas condenses into a liquid before the temperature gets there, so extending the line to zero is a prediction of the gas model.
+```
+
 ```latex
 T = \theta + 273.15\,\text{K}
 ```
@@ -174,6 +186,12 @@ In one cycle a heat engine takes the heat $Q_1$ ($\text{J}$) from a hot source, 
 
 ```kaavat
 efficiency of a heat engine :: \eta = \frac{W}{Q_1}
+```
+
+```pysahdy
+Why is the efficiency of a heat engine always below $100\,\%$?
+---
+Part of the heat $Q_1$ taken in must be released as heat $Q_2$ to the colder surroundings, so the work $W$ is smaller than $Q_1$.
 ```
 
 Part of the heat must always be given to a colder place, so the efficiency of a heat engine stays well below $100\,\%$. The smaller the temperature difference $T_1 - T_2$ is compared with the temperature $T_1$ of the hot source, the smaller the share of the heat the engine can turn into work. In a power plant the same is calculated from powers: the electrical power divided by the fuel power.

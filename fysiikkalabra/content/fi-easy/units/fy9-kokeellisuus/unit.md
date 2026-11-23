@@ -163,6 +163,12 @@ Ylioppilaskokeessa on tehtäviä, joissa lukee ”suunnittele koe”. Niissä ar
 
 Virhelähde tarkoittaa virheen syytä. Kokeessa muutetaan vain yhtä muuttujaa kerrallaan. Muuten et voi päätellä, mikä aiheutti tuloksen muutoksen.
 
+```pysahdy
+Miksi kokeessa muutetaan vain yhtä muuttujaa kerrallaan?
+---
+Jos kaksi muuttujaa muuttuisi yhtä aikaa, et voisi päätellä tuloksen muutoksen syytä. Se voisi johtua kummasta tahansa.
+```
+
 <svg data-fig="kartta" viewBox="0 0 380 754" role="img" aria-label="Tunnistuskaavio: mikä menetelmä sopii kokeellisen tehtävän kysymykseen? Mittaustuloksia on monta: paras arvio on keskiarvo, eli tulosten summa jaettuna lukumäärällä. Kuinka paljon tulos vaihtelee: vaihteluvälin puolikas, suurin miinus pienin tulos jaettuna kahdella. Ilmoita lopullinen tulos: keskiarvo plus miinus virhearvio. Onko epävarmuus pieni: suhteellinen epävarmuus on virhearvio jaettuna keskiarvolla. Suureet riippuvat lineaarisesti: sovita suora y on k x plus b. Tulos kulmakertoimesta: kulmakerroin luetaan suoran kahdesta kaukana toisistaan olevasta pisteestä, k on delta y per delta x. Malli kulkee origon kautta, mutta suora ei: vakio b ei ole nolla, mikä viittaa systemaattiseen virheeseen." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="710" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
@@ -224,6 +230,12 @@ Virhelähde tarkoittaa virheen syytä. Kokeessa muutetaan vain yhtä muuttujaa k
 
 Satunnaisvirhe näkyy hajontana: toistettujen mittausten tulokset vaihtelevat. Keskiarvossa satunnaisvirheen vaikutus vaimenee eli heikkenee. **Systemaattinen virhe** siirtää kaikkia tuloksia samaan suuntaan. Toistaminen ei poista sitä. Systemaattisen virheen huomaa, kun tulosta verrataan tunnettuun arvoon. Sen voi huomata myös kuvaajasta: suora ei kulje origon kautta, vaikka mallin mukaan sen pitäisi.
 
+```pysahdy
+Käsin otetun ajan kello näyttää sadasosasekunnit. Onko mittausepävarmuus siksi sadasosasekunnin luokkaa?
+---
+Ei ole. Resoluutio ei yksin kerro epävarmuutta. Reaktioajan takia käsin otetun ajan epävarmuus on sekunnin kymmenesosien luokkaa.
+```
+
 ## Kaava: Mittaustuloksen käsittely
 Kun mittaus toistetaan, paras arvio on keskiarvo. Tällä kurssilla hajonnan arvio on vaihteluvälin puolikas:
 
@@ -248,6 +260,12 @@ y = kx + b
 ```
 
 Tässä $k = \tfrac{\Delta y}{\Delta x}$ on kulmakerroin. Se luetaan suoran kahdesta pisteestä, jotka ovat kaukana toisistaan. $b$ on kohta, jossa suora leikkaa pystyakselin. Malli pätee vain alueella, jolla on mitattu. Suoraa jatketaan tämän alueen ulkopuolelle vain, jos siihen on hyvä syy. Kun haettu suure saadaan kulmakertoimesta, kaikki pisteet vaikuttavat tulokseen. Silloin yhden pisteen satunnaisvirhe vaikuttaa vähemmän.
+
+```pysahdy
+Miksi kulmakertoimesta saatu tulos on luotettavampi kuin yhdestä mittauspisteestä laskettu?
+---
+Kulmakertoimeen vaikuttavat kaikki pisteet. Siksi yhden pisteen satunnaisvirhe vaikuttaa vähemmän.
+```
 
 Joskus suoran pitäisi mallin mukaan kulkea origon kautta, mutta $b$ on selvästi eri kuin nolla. Silloin mittauksessa on todennäköisesti systemaattinen virhe, joka on jokaisessa pisteessä sama. Se siirtää suoraa, mutta se ei muuta kulmakerrointa. Kuvassa öljy on punnittu lasissa, eikä vaakaa ole taarattu. Taaraus tarkoittaa, että vaaka nollataan, kun tyhjä lasi on vaa'alla:
 

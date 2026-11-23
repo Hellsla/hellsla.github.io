@@ -224,6 +224,12 @@ Tässä $x_\text{max}$ on suurin tulos ja $x_\text{min}$ pienin tulos. $\Delta x
 
 Kun mittaus toistetaan, satunnaisvirheen vaikutus keskiarvossa pienenee. Systemaattista virhettä toistaminen ei kuitenkaan poista. Karkea virhe pitää etsiä: jos tulos on hyvin erilainen kuin muut, se tarkistetaan. Tulosta ei poisteta ilman perustelua.
 
+```pysahdy
+Mittaat saman ajan viisi kertaa ja lasket keskiarvon. Poistaako toisto virheen, jos kello käy aina liian nopeasti?
+---
+Ei poista. Toisto pienentää satunnaisvirheen vaikutusta keskiarvossa. Systemaattinen virhe on joka mittauksessa samaan suuntaan, joten se jää keskiarvoonkin.
+```
+
 ### Suoran yhtälö ja sen tulkinta
 
 Jos pisteet ovat melkein suoralla, niihin sovitetaan suora. Suora piirretään pisteiden lomaan eli niiden väliin:
@@ -234,6 +240,12 @@ kulmakerroin :: k = \frac{\Delta y}{\Delta x}
 ```
 
 Tässä $k$ on kulmakerroin ja $b$ vakiotermi. Vakiotermi on $y$:n arvo, kun $x = 0$. Kulmakerroin luetaan suoran kahdesta pisteestä, jotka ovat kaukana toisistaan. Sitä ei lueta mittauspisteistä. Kulmakertoimen yksikkö on pystyakselin yksikkö jaettuna vaaka-akselin yksiköllä. Kulmakertoimella on yleensä fysikaalinen merkitys. Esimerkiksi $(V, m)$-kuvaajassa se on tiheys. Malli on osoitettu oikeaksi vain mitatulla alueella. Siksi ekstrapolointi eli suoran jatkaminen mitatun alueen ulkopuolelle pitää perustella.
+
+```pysahdy
+Miksi kulmakerroin luetaan suoran kahdesta pisteestä, jotka ovat kaukana toisistaan, eikä mittauspisteistä?
+---
+Mittauspisteet ovat hajallaan suoran ympärillä. Sovitettu suora kuvaa koko aineistoa. Kaukaisilla pisteillä $\Delta x$ ja $\Delta y$ ovat suuria, joten lukuvirheen osuus on pieni.
+```
 
 <svg data-fig="anatomia" viewBox="0 0 600 410" role="img" aria-label="Kuvaaja mittakaavassa, keksitty esimerkkiaineisto: veden lämpötila θ celsiusasteina ajan t funktiona minuutteina. Kuvaajassa on kuusi mittauspistettä hetkillä 1–6 min. Jokaisella pisteellä on pystysuora epävarmuusjana ±1 °C. Pisteiden väliin on sovitettu yhtenäinen suora θ = 6,2 °C/min · t + 19 °C. Katkoviivat ovat jyrkin ja loivin suora, jotka vielä kulkevat kaikkien janojen kautta. Suoralle on piirretty kolmio pisteiden t = 1 min ja t = 6 min väliin. Pisteet ovat kaukana toisistaan. Kolmion vaakasivu on Δt ja pystysivu Δθ, ja kulmakerroin on k = Δθ/Δt. Suora leikkaa pystyakselin kohdassa b. Se on veden alkulämpötila. Oikeassa alakulmassa on selite: katkoviiva tarkoittaa jyrkintä ja loivinta suoraa." style="max-width:100%;font-size:27px">
   <line x1="138" y1="356" x2="138" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -335,6 +347,12 @@ m &= \rho V + m_0
 ```
 
 Ajatellaan ensin kappaletta, joka lähtee levosta ja kiihtyy tasaisesti. Kun aika lasketaan liikkeen alusta, $(t^2, s)$-kuvaaja on suora, joka kulkee origon kautta. Sen kulmakerroin on $\tfrac{a}{2}$. Ajatellaan sitten kaasua, jonka määrä ja lämpötila pysyvät samoina. Boylen lain mukaan $(\tfrac{1}{V}, p)$-kuvaaja on suora. Vakio $C$ on paineen ja tilavuuden tulo. Kolmas esimerkki on neste, joka punnitaan astiassa. Nesteen ja astian yhteinen massa $m$ on suora tilavuuden $V$ suhteen. Suoran kulmakerroin on tiheys $\rho$, ja vakiotermi on astian massa $m_0$.
+
+```pysahdy
+$(t^2, s)$-kuvaaja on suora, joka kulkee origon kautta. Mitä kiihtyvyydestä $a$ voi päätellä kulmakertoimesta $k$?
+---
+Kulmakerroin on $k = \tfrac{a}{2}$. Kiihtyvyys on siis kaksi kertaa kulmakerroin: $a = 2k$.
+```
 
 <svg data-fig="linearisointi" viewBox="0 0 600 340" role="img" aria-label="Kaksi kuvaajaa samasta mallin aineistosta: vaunu lähtee levosta ja kiihtyy tasaisesti, kiihtyvyys 0,50 m/s². Vasemmalla on matka s metreinä ajan t funktiona. Kuusi pistettä hetkillä 0,5–3,0 s ovat käyrällä, joka kaartuu ylöspäin. Oikealla on sama matka ajan neliön t² funktiona. Pisteet ovat suoralla, joka kulkee origon kautta. Suoran kulmakerroin on puolet kiihtyvyydestä, 0,25 m/s²." style="max-width:100%;font-size:27px">
   <line x1="94.5" y1="284" x2="94.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
