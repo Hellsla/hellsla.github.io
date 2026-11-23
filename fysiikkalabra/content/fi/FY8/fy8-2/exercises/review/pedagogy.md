@@ -1,5 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: a06061f1b4a8852f
+SCOPE: delta caption-label,md-paragraphs,numbers,reflow,typography,wording from 04d9947faaf13eb6 base 64d4935
 
 ## Blocking
 (none)

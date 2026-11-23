@@ -1,5 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 4334b85dabe8a52a
+SCOPE: delta numbers,reflow,typography from 3c71dfde0dd50970 base 4b05399
 Mode: delta (work queue 8g: only the Formula steps of the model solutions changed)
 
 ## Blocking

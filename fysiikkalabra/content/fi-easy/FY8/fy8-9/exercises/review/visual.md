@@ -1,5 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: ebe98a22a12cb8f4
+SCOPE: delta numbers from dbef09b8ef43b8da base d2a2c56
 
 ## Blocking
 (none)

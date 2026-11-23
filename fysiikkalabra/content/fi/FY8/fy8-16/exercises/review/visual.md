@@ -1,5 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 1530a872a68fd59f
+SCOPE: delta numbers,reflow from 51ba9bcbd9487765 base 4b05399
 
 ## Blocking
 - none (the previous Major, tiny `\frac` fractions in the Kaava rows, is fixed: every Kaava fraction is `\dfrac` and renders at full size, in the aligned blocks and in the inline rows)

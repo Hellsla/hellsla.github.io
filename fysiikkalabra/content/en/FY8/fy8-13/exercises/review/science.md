@@ -1,5 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 02d275f66d6dc23f
+SCOPE: delta md-paragraphs,numbers,reflow,typography,wording from a5c6089260b9a4af base 64d4935
 Mode: delta (work queue 8g: Formula steps rewritten as basic laws then derived formula; paragraph splits)
 
 ## Blocking

@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: c25c9461478e13cd
-SCOPE: delta added-exercise from 9fd9fa6cd5fce3bb base 5b3ca4f81c77
+SCOPE: delta md-paragraphs,numbers,reflow,typography from 674123fb01d9ff37 base 64d4935
 
 ## Blocking
 

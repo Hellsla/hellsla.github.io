@@ -1,5 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: b0752e30d8691243
+SCOPE: delta numbers,reflow,teacher-figure from 95af307e85665247 base b3ee786
 
 ## Blocking
 (none)

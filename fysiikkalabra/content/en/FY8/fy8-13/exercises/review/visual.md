@@ -1,5 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 02d275f66d6dc23f
+SCOPE: delta numbers,reflow from 26dbe99dacd4680d base 4b05399
 
 Delta review (8g): only the Formula step of solutions.md changed (aligned LaTeX blocks, one equation per row).
 

@@ -1,5 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: e905c2c9ca243e0d
+SCOPE: delta answers,comments,md-paragraphs,numbers,reflow,structure,typography,wording from 510d3aaf9406538a base b5600a6
 Mode: delta (new figure tasks L1-10 and L2-08 on fy8-15/taulukko; "(example data)" dropped from two captions; Kaava steps of 8g)
 
 ## Blocking

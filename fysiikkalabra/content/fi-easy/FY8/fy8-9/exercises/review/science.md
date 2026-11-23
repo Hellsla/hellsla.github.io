@@ -1,5 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: ebe98a22a12cb8f4
+SCOPE: delta md-paragraphs,numbers,reflow,typography from f7903aada0819615 base 64d4935
 
 ## Blocking
 

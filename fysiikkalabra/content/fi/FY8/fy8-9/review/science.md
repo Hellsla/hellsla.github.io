@@ -1,5 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: b2e495e2487ce941
+SCOPE: delta numbers,photo,teacher-figure,wording from 0f23ffb901818a30 base b3ee786
 
 ## Blocking
 
