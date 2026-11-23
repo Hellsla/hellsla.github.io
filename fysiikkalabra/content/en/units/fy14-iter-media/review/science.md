@@ -1,26 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 75a96994b7996c78
+CONTENT-HASH: d5e62f5155f5e995
+SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
-Science re-review, 2026-11-01, of commit c6532e4f.
-- **Earlier Polish 1 (tungsten date): fixed.** The table now says "decided 2023, part of the 2024 baseline", which agrees with iter.org Blanket and `iter.json`.
-- **Earlier Polish 2 (Yle 2020 "puhdistuskasetit"): fixed.** It is now noted in `teacher.md`.
-
-## New content checked
-- **New `pred-ages`.** The key, plans and forecasts, is correct, and its feedbacks are consistent with the table *ITER then and now*.
-- **Table.** It still matches the sources:
-  - first plasma 2025 → research operation 2034, and D–T 2035 → 2039 (2024 baseline PDF);
-  - 6 of 9 modules in July 2026 (ITER PR, 29 July 2026);
-  - about €20 billion (2017) and about €5 billion more (2024).
-- **Central solenoid sentence.** "In June 2026 all six modules … were stacked" is confirmed by iter.org "Standing tall" (29 June 2026: final lift on 23 June).
-- **Rest of the unit.** The Yle claims, the physics section and the choice keys are unchanged and correct.
-
-## Blocking
-None.
-
-## Polish
-None.
-
-## Re-check 2026-11-01: photographs
-The image shows the tokamak building under construction with cranes, as the caption (April 2018) and alt say, which fits the unit's 2018 comparison. CC BY 2.0; credit matches.
-
-Hash updated 2026-11-01 for a photo-only change; per the teacher, photo changes get a visual review only.
+1. Blocking: none
+2. Checked: Box 1: 2018 article with first plasma 2025: table row 'first plasma 2025 (2016 baseline)' and new baseline 2024 (research operation 2034); answer 'not wrong at the time, check newest baseline' matches the paragraph and the Common misconception. Box 2: 17.6 MeV from mass defect, E = Delta m c^2; correct and matches the physics paragraph; LaTeX correct. Hash recomputed at start and end (identical). Rest of the unit not re-judged (covered by the previous report).
