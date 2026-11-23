@@ -20,7 +20,7 @@ $$, joten energia säilyy. Perille tuleva energia on lähtevää pienempi, kuten
 **Kysytty:** häviö $E_\text{häviö}$ megawattitunteina
 **Periaate:** Energia ei katoa. Se osa lähtevästä energiasta, joka ei tule perille, siirtyy matkalla lämpönä ympäristöön. Se on siirtohäviötä. Häviön osuus lasketaan lähtevästä energiasta. Siksi häviö on osuus kertaa lähtevä energia.
 **Kuvaajan lukeminen:** Kuvan alempi energiavirta on kaukolämpöverkko. Sen alas kaartuvan häviöhaaran kohdalla lukee $9\,\%$ ja perille jatkuvan haaran kohdalla $91\,\%$. Yhteensä ne ovat lähtevän virran $100\,\%$. Häviön osuus on siis $9\,\% = 0{,}09$. Ylempi virta on sähköverkko, eikä sitä tarvita.
-**Kaava:** $E_\text{häviö} = 0{,}09 \cdot E_\text{lähtö}$
+**Kaava:** $E_\text{lähtö} = E_\text{perille} + E_\text{häviö}$ ja häviön osuus $p = \dfrac{E_\text{häviö}}{E_\text{lähtö}}$, josta $E_\text{häviö} = p\, E_\text{lähtö}$
 **Muunnokset:** Prosentit desimaaliluvuksi: $9\,\% = 9 \cdot 0{,}01 = 0{,}09$. Energia pysyy megawattitunteina.
 **Sijoitus:** $E_\text{häviö} = 0{,}09 \cdot 360\,\text{MWh} = 32{,}4\,\text{MWh}$
 **Vastaus:** noin $32\,\text{MWh}$, kaksi merkitsevää numeroa. Kuvan prosenttiluku on pyöristetty täysiin prosentteihin.
@@ -50,7 +50,7 @@ $$ on $4{,}0\,\%$ lähtevästä. Se on sähköverkon tavallinen häviö.
 **Annettu:** lähtevä teho $P_\text{lähtö} = 125\,\text{MW}$, häviö $4{,}0\,\%$ lähtevästä tehosta
 **Kysytty:** perille tuleva teho $P_\text{perille}$ megawatteina
 **Periaate:** Häviöprosentti koskee tehoa samoin kuin energiaa. Kun $4{,}0\,\%$ häviää, perille tulee $96{,}0\,\%$ lähtevästä tehosta.
-**Kaava:** $P_\text{perille} = \eta\, P_\text{lähtö}$
+**Kaava:** $\eta = \dfrac{P_\text{perille}}{P_\text{lähtö}}$, josta $P_\text{perille} = \eta\, P_\text{lähtö}$
 **Muunnokset:** $\eta = 100\,\% - 4{,}0\,\% = 96{,}0\,\% = 96{,}0 : 100 = 0{,}960$.
 **Sijoitus:** $P_\text{perille} = 0{,}960 \cdot 125\,\text{MW} = 120{,}0\,\text{MW}$
 **Vastaus:** $120\,\text{MW}$, kolme merkitsevää numeroa kuten lähtötehossa $125\,\text{MW}$.
@@ -80,9 +80,9 @@ $$. Tulos on vähän alle $125\,\text{MW}$, kuten pitääkin.
 **Annettu:** perille tuleva energia $E_\text{perille} = 600\,\text{MWh}$, häviö $20\,\%$ lähtevästä energiasta
 **Kysytty:** häviävä energia $E_\text{häviö}$ megawattitunteina
 **Periaate:** Häviöprosentti kuuluu lähtevään energiaan, ei perille tulleeseen. Siksi lasketaan ensin lähtevä energia hyötysuhteen avulla. Sen jälkeen lasketaan häviö erotuksena.
-**Kaava:** $\eta = \dfrac{E_\text{perille}}{E_\text{lähtö}}$, josta $E_\text{lähtö} = \dfrac{E_\text{perille}}{\eta}$, ja $E_\text{häviö} = E_\text{lähtö} - E_\text{perille}$
+**Kaava:** $\eta = \dfrac{E_\text{perille}}{E_\text{lähtö}}$ ja $E_\text{häviö} = E_\text{lähtö} - E_\text{perille}$, joten $E_\text{lähtö} = \dfrac{E_\text{perille}}{\eta}$ ja $E_\text{häviö} = \dfrac{E_\text{perille}}{\eta} - E_\text{perille}$
 **Muunnokset:** $\eta = 100\,\% - 20\,\% = 80\,\% = 80 : 100 = 0{,}80$. Energian yksikkö pysyy megawattitunteina.
-**Sijoitus:** $E_\text{lähtö} = \dfrac{600\,\text{MWh}}{0{,}80} = 750\,\text{MWh}$, ja $E_\text{häviö} = 750\,\text{MWh} - 600\,\text{MWh} = 150\,\text{MWh}$
+**Sijoitus:** $E_\text{häviö} = \dfrac{600\,\text{MWh}}{0{,}80} - 600\,\text{MWh} = 750\,\text{MWh} - 600\,\text{MWh} = 150\,\text{MWh}$
 **Vastaus:** $150\,\text{MWh}$, kaksi merkitsevää numeroa kuten häviöprosentissa $20\,\%$.
 **Järkevyys:** Häviö on $$
 20\,\% \cdot 750\,\text{MWh} = 150\,\text{MWh}
@@ -109,9 +109,9 @@ $$ eli $20\,\%$ luvusta $1500\,\text{MWh}$. Lähtevä energia on tarvetta suurem
 **Annettu:** verkkoon syötetty energia $E_\text{lähtö} = 2{,}40\,\text{TWh}$, häviö $4{,}0\,\%$ lähtevästä energiasta, aika $t = 8760\,\text{h}$
 **Kysytty:** häviöiden keskiteho $P_\text{häviö}$ megawatteina
 **Periaate:** Häviävä energia on häviöprosentti lähtevästä energiasta. Keskiteho on tämä energia jaettuna ajalla. Teho kertoo energian siirtymisen nopeuden (luku *Teho*).
-**Kaava:** $E_\text{häviö} = p\, E_\text{lähtö}$, missä $p$ on häviöosuus, ja $P_\text{häviö} = \dfrac{E_\text{häviö}}{t}$
+**Kaava:** $P = \dfrac{E}{t}$ ja $E_\text{häviö} = p\, E_\text{lähtö}$, missä $p$ on häviöosuus, joten $P_\text{häviö} = \dfrac{E_\text{häviö}}{t} = \dfrac{p\, E_\text{lähtö}}{t}$
 **Muunnokset:** $p = 4{,}0 : 100 = 0{,}040$ ja $1\,\text{TWh} = 1\,000\,000\,\text{MWh}$, joten $2{,}40\,\text{TWh} = 2{,}40 \cdot 1\,000\,000\,\text{MWh} = 2\,400\,000\,\text{MWh}$.
-**Sijoitus:** $E_\text{häviö} = 0{,}040 \cdot 2\,400\,000\,\text{MWh} = 96\,000\,\text{MWh}$, ja $P_\text{häviö} = \dfrac{96\,000\,\text{MWh}}{8760\,\text{h}} = 10{,}96\,\text{MW}$
+**Sijoitus:** $P_\text{häviö} = \dfrac{0{,}040 \cdot 2\,400\,000\,\text{MWh}}{8760\,\text{h}} = \dfrac{96\,000\,\text{MWh}}{8760\,\text{h}} = 10{,}96\,\text{MW}$
 **Vastaus:** $11\,\text{MW}$, kaksi merkitsevää numeroa. Häviöprosentti $4{,}0\,\%$ tunnetaan kahden numeron tarkkuudella (epätarkin tieto).
 **Järkevyys:** Arvio: $4\,\%$ luvusta $2400$ on noin $100$, ja $100\,000\,\text{MWh} : 8760\,\text{h}$ on noin $11\,\text{MW}$. Sähköverkon häviöteho on siis keskimäärin yhtä suuri kuin pienen voimalaitoksen teho.
 
@@ -119,9 +119,9 @@ $$ eli $20\,\%$ luvusta $1500\,\text{MWh}$. Lähtevä energia on tarvetta suurem
 **Annettu:** rakennuksen tarvitsema teho $P_\text{perille} = 40{,}0\,\text{kW}$, häviö $20\,\%$ lähtevästä tehosta, aika $t = 24\,\text{h}$
 **Kysytty:** lämpölaitoksen vuorokaudessa syöttämä energia $E_\text{lähtö}$ kilowattitunteina
 **Periaate:** Häviöprosentti koskee lähtevää tehoa. Siksi ensin lasketaan lähtevä teho hyötysuhteen avulla. Teho on tasainen, joten energia saadaan tehosta ja ajasta.
-**Kaava:** $P_\text{lähtö} = \dfrac{P_\text{perille}}{\eta}$ ja $E_\text{lähtö} = P_\text{lähtö} \cdot t$
+**Kaava:** $\eta = \dfrac{P_\text{perille}}{P_\text{lähtö}}$ ja $E = Pt$, joten $P_\text{lähtö} = \dfrac{P_\text{perille}}{\eta}$ ja $E_\text{lähtö} = P_\text{lähtö}\, t = \dfrac{P_\text{perille}\, t}{\eta}$
 **Muunnokset:** $\eta = 100\,\% - 20\,\% = 80\,\% = 80 : 100 = 0{,}80$. Kilowatti kertaa tunti on suoraan kilowattitunti.
-**Sijoitus:** $P_\text{lähtö} = \dfrac{40{,}0\,\text{kW}}{0{,}80} = 50{,}0\,\text{kW}$, ja $E_\text{lähtö} = 50{,}0\,\text{kW} \cdot 24\,\text{h} = 1200\,\text{kWh}$
+**Sijoitus:** $E_\text{lähtö} = \dfrac{40{,}0\,\text{kW} \cdot 24\,\text{h}}{0{,}80} = \dfrac{960\,\text{kWh}}{0{,}80} = 1200\,\text{kWh}$
 **Vastaus:** $1200\,\text{kWh}$ eli $1{,}2 \cdot 10^3\,\text{kWh}$, kaksi merkitsevää numeroa kuten häviöprosentissa $20\,\%$ (epätarkin tieto).
 **Järkevyys:** Ilman häviötä energia olisi $40{,}0\,\text{kW} \cdot 24\,\text{h} = 960\,\text{kWh}$. Häviö on $$
 \begin{aligned}
@@ -145,9 +145,9 @@ Sähköverkon häviö $40\,\text{MWh}$ on suurempi kuin kaukolämpöverkon $27\,
 **Annettu:** tarvittu energia perillä $E_\text{perille} = 600\,\text{MWh}$; häviö ennen $9{,}0\,\%$ ja jälkeen $6{,}0\,\%$ lähtevästä energiasta
 **Kysytty:** lämpölaitoksen syöttämän energian pieneneminen megawattitunteina
 **Periaate:** Asiakkaat tarvitsevat saman energian molemmissa tapauksissa. Pienempi häviö tarkoittaa suurempaa hyötysuhdetta, joten lähtevää energiaa tarvitaan vähemmän. Lasketaan lähtevä energia kummassakin tapauksessa. Sitten vähennetään.
-**Kaava:** $E_\text{lähtö} = \dfrac{E_\text{perille}}{\eta}$ ja säästö $\Delta E = E_\text{lähtö,1} - E_\text{lähtö,2}$
+**Kaava:** $\eta = \dfrac{E_\text{perille}}{E_\text{lähtö}}$, josta $E_\text{lähtö} = \dfrac{E_\text{perille}}{\eta}$, ja säästö $\Delta E = E_\text{lähtö,1} - E_\text{lähtö,2} = E_\text{perille} \left(\dfrac{1}{\eta_1} - \dfrac{1}{\eta_2}\right)$
 **Muunnokset:** $\eta_1 = 100\,\% - 9{,}0\,\% = 91{,}0\,\% = 0{,}910$ ja $\eta_2 = 100\,\% - 6{,}0\,\% = 94{,}0\,\% = 0{,}940$.
-**Sijoitus:** $E_\text{lähtö,1} = \dfrac{600\,\text{MWh}}{0{,}910} = 659{,}3\,\text{MWh}$, $E_\text{lähtö,2} = \dfrac{600\,\text{MWh}}{0{,}940} = 638{,}3\,\text{MWh}$, joten $\Delta E = 659{,}3\,\text{MWh} - 638{,}3\,\text{MWh} = 21{,}0\,\text{MWh}$
+**Sijoitus:** $\Delta E = 600\,\text{MWh} \cdot \left(\dfrac{1}{0{,}910} - \dfrac{1}{0{,}940}\right) = 600\,\text{MWh} \cdot (1{,}0989 - 1{,}0638) = 600\,\text{MWh} \cdot 0{,}03507 = 21{,}04\,\text{MWh}$
 **Vastaus:** $21\,\text{MWh}$, kaksi merkitsevää numeroa. Erotuksen tarkkuutta rajoittavat häviöprosentit $9{,}0\,\%$ ja $6{,}0\,\%$.
 **Järkevyys:** Häviö pienenee kolme prosenttiyksikköä. Kolme prosenttia luvusta $600\,\text{MWh}$ on $18\,\text{MWh}$. Tulos $21\,\text{MWh}$ on hieman suurempi, koska prosentit lasketaan lähtevästä energiasta, ei luvusta $600\,\text{MWh}$.
 
@@ -155,9 +155,9 @@ Sähköverkon häviö $40\,\text{MWh}$ on suurempi kuin kaukolämpöverkon $27\,
 **Annettu:** verkko A: $E_\text{lähtö,A} = 500\,\text{MWh}$, $\eta_\text{A} = 91{,}0\,\%$; verkko B: $E_\text{lähtö,B} = 520\,\text{MWh}$, $\eta_\text{B} = 85{,}0\,\%$
 **Kysytty:** kumpi verkko tuo asiakkaille enemmän lämpöä ja kuinka monta megawattituntia enemmän
 **Periaate:** Asiakkaille ratkaisee perille tuleva energia, ei verkkoon syötetty energia. Perille tuleva energia on hyötysuhde kertaa lähtevä energia. Se lasketaan kummallekin verkolle erikseen. Sitten tuloksia verrataan.
-**Kaava:** $E_\text{perille} = \eta\, E_\text{lähtö}$ ja ero $\Delta E = E_\text{perille,A} - E_\text{perille,B}$
+**Kaava:** $\eta = \dfrac{E_\text{perille}}{E_\text{lähtö}}$, josta $E_\text{perille} = \eta\, E_\text{lähtö}$, ja ero $\Delta E = E_\text{perille,A} - E_\text{perille,B} = \eta_\text{A} E_\text{lähtö,A} - \eta_\text{B} E_\text{lähtö,B}$
 **Muunnokset:** $\eta_\text{A} = 91{,}0 : 100 = 0{,}910$ ja $\eta_\text{B} = 85{,}0 : 100 = 0{,}850$. Energiat ovat samassa yksikössä.
-**Sijoitus:** $E_\text{perille,A} = 0{,}910 \cdot 500\,\text{MWh} = 455{,}0\,\text{MWh}$, $E_\text{perille,B} = 0{,}850 \cdot 520\,\text{MWh} = 442{,}0\,\text{MWh}$, joten $\Delta E = 455{,}0\,\text{MWh} - 442{,}0\,\text{MWh} = 13{,}0\,\text{MWh}$
+**Sijoitus:** $\Delta E = 0{,}910 \cdot 500\,\text{MWh} - 0{,}850 \cdot 520\,\text{MWh} = 455{,}0\,\text{MWh} - 442{,}0\,\text{MWh} = 13{,}0\,\text{MWh}$
 **Vastaus:** verkko A tuo asiakkaille $13{,}0\,\text{MWh}$ enemmän, kolme merkitsevää numeroa kuten hyötysuhteissa ja energioissa.
 **Järkevyys:** Verkko B syöttää $20\,\text{MWh}$ enemmän. Sen häviö $$
 \begin{aligned}
@@ -175,9 +175,9 @@ $$ täsmää.
 **Annettu:** häviöteho $P_\text{häviö} = 150\,\text{kW}$ tasaisesti, aika $t = 8760\,\text{h}$, yhden talon vuosikulutus $E_\text{talo} = 20\,\text{MWh}$
 **Kysytty:** talojen lukumäärä $N$, joiden vuosikulutusta häviö vastaa
 **Periaate:** Teho on tasainen, joten vuodessa häviävä energia on teho kertaa aika. Talojen lukumäärä saadaan, kun tätä energiaa verrataan yhden talon kulutukseen. Vertailu auttaa ymmärtämään häviön suuruutta.
-**Kaava:** $E_\text{häviö} = P_\text{häviö} \cdot t$ ja $N = \dfrac{E_\text{häviö}}{E_\text{talo}}$
+**Kaava:** $P = \dfrac{E}{t}$, josta $E_\text{häviö} = P_\text{häviö}\, t$, ja $N = \dfrac{E_\text{häviö}}{E_\text{talo}} = \dfrac{P_\text{häviö}\, t}{E_\text{talo}}$
 **Muunnokset:** $1\,\text{kWh} = 0{,}001\,\text{MWh}$, joten energia muunnetaan megawattitunneiksi sijoituksessa.
-**Sijoitus:** $E_\text{häviö} = 150\,\text{kW} \cdot 8760\,\text{h} = 1\,314\,000\,\text{kWh} = 1\,314\,000 \cdot 0{,}001\,\text{MWh} = 1314\,\text{MWh}$, ja $N = \dfrac{1314\,\text{MWh}}{20\,\text{MWh}} = 65{,}7$
+**Sijoitus:** $N = \dfrac{150\,\text{kW} \cdot 8760\,\text{h}}{20\,\text{MWh}} = \dfrac{1\,314\,000\,\text{kWh}}{20\,\text{MWh}} = \dfrac{1314\,\text{MWh}}{20\,\text{MWh}} = 65{,}7$
 **Vastaus:** noin $66$ taloa, kaksi merkitsevää numeroa kuten talon kulutuksessa $20\,\text{MWh}$ (epätarkin tieto).
 **Järkevyys:** Arvio: $$
 \begin{aligned}
@@ -195,14 +195,14 @@ $$ ja $1350 : 20 \approx 68$, joten tulos on oikean suuruinen. Pieni putkiston h
 **Annettu:** lähtevä energia $E_\text{lähtö} = 250\,\text{MWh}$ ja perille tuleva energia $E_\text{perille} = 238\,\text{MWh}$
 **Kysytty:** häviön osuus lähtevästä energiasta prosentteina
 **Periaate:** Häviö on lähtevän ja perille tulevan energian erotus. Häviön osuus lasketaan lähtevästä energiasta.
-**Kaava:** $E_\text{häviö} = E_\text{lähtö} - E_\text{perille}$, ja osuus $p = \dfrac{E_\text{häviö}}{E_\text{lähtö}}$
+**Kaava:** $E_\text{lähtö} = E_\text{perille} + E_\text{häviö}$, josta $E_\text{häviö} = E_\text{lähtö} - E_\text{perille}$, ja osuus $p = \dfrac{E_\text{häviö}}{E_\text{lähtö}} = \dfrac{E_\text{lähtö} - E_\text{perille}}{E_\text{lähtö}}$
 **Muunnokset:** Osamäärä on desimaaliluku. Se muutetaan prosentiksi kertomalla sadalla: $$
 \begin{aligned}
 0{,}048 &= 0{,}048 \cdot 100\,\% \\
 &= 4{,}8\,\%
 \end{aligned}
 $$.
-**Sijoitus:** $E_\text{häviö} = 250\,\text{MWh} - 238\,\text{MWh} = 12\,\text{MWh}$, ja $p = \dfrac{12\,\text{MWh}}{250\,\text{MWh}} = 0{,}048 = 4{,}8\,\%$
+**Sijoitus:** $p = \dfrac{250\,\text{MWh} - 238\,\text{MWh}}{250\,\text{MWh}} = \dfrac{12\,\text{MWh}}{250\,\text{MWh}} = 0{,}048 = 4{,}8\,\%$
 **Vastaus:** $4{,}8\,\%$, kaksi merkitsevää numeroa, koska erotus $12\,\text{MWh}$ on kaksinumeroinen luku.
 **Järkevyys:** Neljä prosenttia luvusta $250\,\text{MWh}$ olisi $10\,\text{MWh}$. Häviö $12\,\text{MWh}$ on vähän suurempi, joten $4{,}8\,\%$ on oikeaa suuruusluokkaa. Lisäksi $$
 \begin{aligned}
@@ -215,7 +215,7 @@ $$.
 **Annettu:** lähtevä teho $P_\text{lähtö} = 800\,\text{kW}$ ja perille tuleva teho $P_\text{perille} = 728\,\text{kW}$
 **Kysytty:** häviöteho $P_\text{häviö}$ kilowatteina
 **Periaate:** Teho kertoo, kuinka nopeasti energia siirtyy. Siksi lähtevä teho jakautuu perille tulevaan ja häviävään tehoon samoin kuin energia.
-**Kaava:** $P_\text{häviö} = P_\text{lähtö} - P_\text{perille}$
+**Kaava:** $P_\text{lähtö} = P_\text{perille} + P_\text{häviö}$, josta $P_\text{häviö} = P_\text{lähtö} - P_\text{perille}$
 **Muunnokset:** Ei tarvita: molemmat tehot ovat kilowatteina.
 **Sijoitus:** $P_\text{häviö} = 800\,\text{kW} - 728\,\text{kW} = 72\,\text{kW}$
 **Vastaus:** $72\,\text{kW}$, kaksi merkitsevää numeroa, koska erotuksen tarkkuutta rajoittaa teho $728\,\text{kW}$ kokonaisina kilowatteina.
@@ -265,7 +265,7 @@ $$-kertaiseksi. Tulos on pienempi kuin $0{,}25\,\text{MW}$ mutta positiivinen, k
 **Annettu:** taulukosta häviötehot: ulkoseinät $2{,}4\,\text{kW}$, yläpohja $1{,}5\,\text{kW}$, ikkunat $1{,}8\,\text{kW}$; vähennykset $50\,\%$, $60\,\%$ ja $40\,\%$; kaukolämpöverkon häviö $9{,}0\,\%$ lähtevästä energiasta; aika $t = 5000\,\text{h}$
 **Kysytty:** parhaan parannuksen lämpölaitoksella säästämä energia megawattitunteina; valinnan perustelu
 **Periaate:** Parannus pienentää häviötehoa tietyn osuuden. Energia saadaan tehosta ja ajasta. Talon säästö on perille tulevaa lämpöä. Verkon häviö lasketaan lähtevästä energiasta. Siksi lämpölaitoksen säästö on talon säästö jaettuna hyötysuhteella.
-**Kaava:** $\Delta P = r\, P_\text{häviö}$, $\Delta E_\text{talo} = \Delta P \cdot t$ ja $\Delta E_\text{laitos} = \dfrac{\Delta E_\text{talo}}{\eta}$
+**Kaava:** $\Delta P = r\, P_\text{häviö}$, $\Delta E_\text{talo} = \Delta P\, t$ ja $\eta = \dfrac{E_\text{perille}}{E_\text{lähtö}}$, joten $\Delta E_\text{laitos} = \dfrac{\Delta E_\text{talo}}{\eta} = \dfrac{r\, P_\text{häviö}\, t}{\eta}$
 **Muunnokset:** $\eta = 100\,\% - 9{,}0\,\% = 91{,}0\,\% = 0{,}910$. Luku $r$ on vähennys desimaalilukuna, esimerkiksi $50\,\% = 0{,}50$. Kilowatti kertaa tunti on suoraan kilowattitunti, ja $1000\,\text{kWh} = 1\,\text{MWh}$.
 **Sijoitus:** A: $\Delta P = 0{,}50 \cdot 2{,}4\,\text{kW} = 1{,}2\,\text{kW}$ ja $\Delta E_\text{talo} = 1{,}2\,\text{kW} \cdot 5000\,\text{h} = 6000\,\text{kWh}$. B: $$
 \begin{aligned}
@@ -277,7 +277,7 @@ $$. C: $$
 &0{,}60 \cdot 1{,}5\,\text{kW} \cdot 5000\,\text{h} \\
 &= 4500\,\text{kWh}
 \end{aligned}
-$$. Eniten säästää A, ja $\Delta E_\text{laitos} = \dfrac{6{,}0\,\text{MWh}}{0{,}910} = 6{,}593\,\text{MWh}$
+$$. Eniten säästää A, ja $\Delta E_\text{laitos} = \dfrac{0{,}50 \cdot 2{,}4\,\text{kW} \cdot 5000\,\text{h}}{0{,}910} = \dfrac{6{,}0\,\text{MWh}}{0{,}910} = 6{,}593\,\text{MWh}$
 **Vastaus:** $6{,}6\,\text{MWh}$, kaksi merkitsevää numeroa kuten häviötehossa $2{,}4\,\text{kW}$. Valinta: ulkoseinien eristys. Seinien häviöteho on suurin ja vähennys $50\,\%$ on suuri. Säästö $6000\,\text{kWh}$ on suurempi kuin parannuksissa B ($3600\,\text{kWh}$) ja C ($4500\,\text{kWh}$).
 
 Laitoksen säästö on suurempi kuin talon säästö, koska talon tarvitsema lämpö kulkee verkon läpi. Kun talo tarvitsee $6{,}0\,\text{MWh}$ vähemmän, laitos säästää myös sen osan, joka muuten häviäisi matkalla. Parannus kannattaa kohdistaa suurimpaan häviöön. Päätökseen vaikuttavat todellisuudessa myös hinta ja vaikutus asumiseen.
@@ -324,7 +324,7 @@ $$ vastaa summaa $42{,}09\,\text{MWh}$.
 **Annettu:** verkkoon lähtevä energia $E_\text{lähtö} = 500\,\text{kWh}$; häviö $4{,}0\,\%$ lähtevästä energiasta; muunnos MAFY-taulukosta (Yksikkömuunnoksia, energia/työ, kilowattitunti) $1\,\text{kWh} = 3{,}6 \cdot 10^{6}\,\text{J}$
 **Kysytty:** häviävä energia $E_\text{häviö}$ megajouleina
 **Periaate:** Häviö on osa verkkoon lähtevästä energiasta. Lasketaan ensin häviö kilowattitunteina. Sitten muutetaan se jouleiksi.
-**Kaava:** $E_\text{häviö} = 0{,}040 \cdot E_\text{lähtö}$
+**Kaava:** $p = \dfrac{E_\text{häviö}}{E_\text{lähtö}}$, josta $E_\text{häviö} = p\, E_\text{lähtö}$
 **Muunnokset:** $4{,}0\,\% = 0{,}040$ ja $1\,\text{kWh} = 3{,}6 \cdot 10^{6}\,\text{J} = 3{,}6\,\text{MJ}$.
 **Sijoitus:** $E_\text{häviö} = 0{,}040 \cdot 500\,\text{kWh} = 20\,\text{kWh}$ ja $20\,\text{kWh} \cdot 3{,}6\,\tfrac{\text{MJ}}{\text{kWh}} = 72\,\text{MJ}$
 **Vastaus:** $72\,\text{MJ}$, kaksi merkitsevää numeroa kuten häviöprosentissa $4{,}0\,\%$. Muunnoskerroin on MAFY-taulukosta (Yksikkömuunnoksia). Muunnos $1\,\text{kWh} = 3{,}6\,\text{MJ}$ on tarkka. Vastaus kelpaa, kun se on noin $\pm 4\,\%$ sisällä.
@@ -335,16 +335,16 @@ $$ vastaa summaa $42{,}09\,\text{MWh}$.
 **Kysytty:** häviöiden erotus $\Delta E$ megawattitunteina
 **Periaate:** Häviö on osa verkkoon lähtevästä energiasta. Lasketaan kummankin verkon häviö. Sitten vähennetään sähköverkon häviö kaukolämpöverkon häviöstä.
 **Kuvaajan lukeminen:** Sähköverkon virrasta $4\,\%$ menee häviöön. Kaukolämpöverkon virrasta $9\,\%$ menee häviöön. Lähtevä energia on molemmissa $100\,\%$, joten osuudet voi käyttää suoraan.
-**Kaava:** $E_\text{häviö} = p \cdot E_\text{lähtö}$ ja $\Delta E = E_\text{häviö,kl} - E_\text{häviö,s}$
+**Kaava:** $E_\text{häviö} = p\, E_\text{lähtö}$ ja $\Delta E = E_\text{häviö,kl} - E_\text{häviö,s}$, joten $\Delta E = (p_\text{kl} - p_\text{s})\, E_\text{lähtö}$
 **Muunnokset:** $9\,\% = 0{,}09$ ja $4\,\% = 0{,}04$.
-**Sijoitus:** $E_\text{häviö,kl} = 0{,}09 \cdot 250\,\text{MWh} = 22{,}5\,\text{MWh}$ ja $E_\text{häviö,s} = 0{,}04 \cdot 250\,\text{MWh} = 10{,}0\,\text{MWh}$. Siis $\Delta E = 22{,}5\,\text{MWh} - 10{,}0\,\text{MWh} = 12{,}5\,\text{MWh}$
+**Sijoitus:** $\Delta E = (0{,}09 - 0{,}04) \cdot 250\,\text{MWh} = 0{,}05 \cdot 250\,\text{MWh} = 12{,}5\,\text{MWh}$
 **Vastaus:** $\Delta E \approx 13\,\text{MWh}$ (laskettu $12{,}5\,\text{MWh}$). Vastauksessa on kaksi merkitsevää numeroa, koska kuvan prosenttiluvut $9\,\%$ ja $4\,\%$ on pyöristetty täysiin prosentteihin.
 **Järkevyys:** Osuuksien erotus on $9\,\% - 4\,\% = 5\,\%$. Luvusta $250\,\text{MWh}$ osuus $5\,\%$ on $12{,}5\,\text{MWh}$. Kaukolämpöverkossa häviää enemmän, kuten kuvan leveämpi häviövirta näyttää.
 ## fy2-7-L2-10
 **Annettu:** taulukosta (Fingrid, luettu 16. marraskuuta 2026 klo 10:48) kulutusteho $P_\text{k} = 11\,603\,\text{MW}$, tuotantoteho $P_\text{t} = 11\,341\,\text{MW}$, nettotuonti $210\,\text{MW}$ (taulukossa $-210\,\text{MW}$, koska tuonti on negatiivinen), tuulivoima $5571\,\text{MW}$ ja ydinvoima $2594\,\text{MW}$. Aika $\Delta t = 1\,\text{h}$ on tehtävän antama ja tarkka.
 **Kysytty:** a) kulutuksen, tuotannon ja tuonnin vertailu; b) kulutettu energia $E$ yksikössä $\text{GWh}$; c) miksi tuotanto ei ole joka hetki yhtä suuri kuin kulutus; d) tuulivoiman ja ydinvoiman osuudet ja miksi yksi hetki ei kerro vuoden rakennetta
 **Periaate:** Teho kertoo, kuinka paljon energiaa siirtyy sekunnissa tai tunnissa: teho on energia jaettuna ajalla, $P = \Delta E : \Delta t$. Kun teho pysyy samana, energia on teho kerrottuna ajalla: $E = P\,\Delta t$. Taulukon teho on yhden hetken luku. Oletetaan, että se pysyy samana yhden tunnin. Osuus on osa jaettuna kokonaisuudella.
-**Kaava:** $E = P\,\Delta t$, joten $E = P_\text{k}\,\Delta t$. Kohdassa a) erotus on $\Delta P = P_\text{k} - P_\text{t}$. Kohdassa d) osuus on $p = P_\text{lähde} : P_\text{t}$.
+**Kaava:** $P = \dfrac{\Delta E}{\Delta t}$, josta $E = P\,\Delta t$, joten $E = P_\text{k}\,\Delta t$. Kohdassa a) erotus on $\Delta P = P_\text{k} - P_\text{t}$. Kohdassa d) osuus on $p = P_\text{lähde} : P_\text{t}$.
 **Muunnokset:** $1\,\text{MW} \cdot 1\,\text{h} = 1\,\text{MWh}$ ja $1000\,\text{MWh} = 1\,\text{GWh}$.
 **Sijoitus:** b)
 
