@@ -33,7 +33,11 @@
         const v = Number(sel.value); got += v; state[i] = v;
         if (2 * v <= Number(c.dataset.max)) weak.add(c.dataset.tag);
       });
-      if (save) store.set(rubric.dataset.id, state);
+      if (save) {
+        store.set(rubric.dataset.id, state);
+        // the student's own points, for the FY9 coach's evidence log (valmentaja.js, work queue 11b PR 3): complete when every criterion has its points
+        rubric.dispatchEvent(new CustomEvent('fl:rubric', { bubbles: true, detail: { id: rubric.dataset.id, kind: 'rubric', got, max, crit: crits.map((c, i) => (i in state ? state[i] : null)), complete: left === 0 } }));
+      }
       total.textContent = left ? msg('rubric_partial', { got, max, left }) : msg('rubric_total', { got, max });
       if (!more) return;
       let any = false;
