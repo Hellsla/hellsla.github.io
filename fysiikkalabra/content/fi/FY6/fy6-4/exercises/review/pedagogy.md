@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b76783ab2894e5cb
-SCOPE: delta added-exercise from f628c9c4d2493275 base 8f23aa7ae3bd
+CONTENT-HASH: 43cd3baad13c0746
+SCOPE: delta numbers from f3db54128b103065 base e000744
 
 ## Blocking
 - none
 
 ## Polish
-- fy6-4-L2-09 is close to L1-02 (parallel resistors) followed by Ohm's law, and L2-03 and L2-04 also practise parallel combinations. What is new is reading the values from a diagram; accepted. The solution could mention the branch-current route first for students who find 1/R hard.
+- L3 E12 Kaava: `R_sarja = R_a + R_b` is now stated without the `U = RI` step; add `U = (R_a + R_b) I` and `U = R I` (carried over, not blocking).
+- Heater task (I_rinnan / I_sarja): the step from `I = U/R` to `R_sarja / R_rinnan` is still not written out (carried over).
 
 ## Checked
-- L2-09: situation first, question last as its own sentence; the diagram gives 9,0 V, 30 Ω and 45 Ω, its description gives the same data and no currents or the answer.
-- Level 2: two steps (R of the parallel pair, then I = U : R) plus a conversion to mA; does not repeat the worked example.
-- Solution complete: given, principle (same voltage across branches, currents add), formula in symbols, 1350 : 75 = 18 Ω, 0,50 A = 500 mA, all correct.
-- Sanity check by branch currents (0,30 + 0,20 A) and R below the smaller resistor is correct and independent.
-- Answer 500 mA with tolerance 0.02 is consistent with two significant figures.
-- Level 2 mix (calculation, data, concept, error) stays balanced; L3-01 uses a figure too, with a different task.
-- Finnish and case endings are correct.
+- Diff only removes the bare $\Sigma U = 0$ / $\Sigma I = 0$ labels from Kaava rows (all solutions); each row now starts at the plain statement ($I = I_1 + I_2$, $U = U_1 + U_2$, $R_\text{sarja} = R_a + R_b$), so the chapter no longer uses Kirchhoff notation before it is taught: the earlier Polish on this is resolved.
+- Aligned rows (`&=`) stay consistent: every step still follows from the previous one, and the Periaate lines state the same rule in words.
+- No answer, number or figure value changed; the figure tasks (task-parallel, task-mixed) are untouched and still give all values.
+- Levels, task wording, Finnish and phone captures are unchanged from the passed version.

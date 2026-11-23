@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c8602335ddec9591
+CONTENT-HASH: 00f8c7564f63ff3c
+SCOPE: delta caption-label,md-paragraphs,numbers,paragraphs,reflow,teacher-figure,typography from c8602335ddec9591 base 98218de
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- fy6-11 solutions.md (deflection task, Reasonableness): "0.18 * 0.020 N = 3.6 mN" but mg tan 10 deg = 3.5 mN; write "about 3.5 mN".
+(none)
 
 ## Checked
-- 100 uN -> 1.0e2 uN: unambiguous two figures.
-- 337.5 V -> 338 V, three figures from 450 V: correct rounding (half up), reason given.
-- 4200 km/s -> 4.2e3 km/s: matches 4.2e6 m/s.
-- Caption/other changes alter no values.
+- The Kaava/Formula step of the model solutions now starts from the basic principle equation (F = qE, W = qU, energy conservation, Newton's laws, Coulomb) and derives the result row by row; each row follows from the previous one.
+- The derivations match the Principle step above them; no step is skipped and no new symbol appears without explanation.
+- Re-broken aligned rows keep numbers, signs and units unchanged; no task, data, level or answer changed.
+- Split solution and model-answer paragraphs read more easily, text unchanged in substance.
+- Rows are short, so they stay readable at 360 px.

@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 2bb19658ebccad91
-Mode: delta (md-paragraphs, round 2)
+CONTENT-HASH: 89d7d344021e07ad
+SCOPE: delta numbers from 2bb19658ebccad91 base 3076572
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] Kaava rows `\text{muutos}`/`\text{osuus}` in plain \text — fine in type, label is a word in an equation; acceptable.
 
 ## Checked
-- Diff text only: breaks before b), c) in the solar and LED tasks; round-1 Minor resolved (a)/b)/c) now at paragraph starts).
+- Delta (numbers, solutions.md only): diff read in full; captures opened: open-exercises-L3-1280-1, -8, contact-7 (6- and 4-row Kaava blocks).
+- Rows align at `=`, fractions legible, nothing clipped, long blocks not shrunk, surrounding card layout intact.
+- Not opened: 390 px solution captures (none for open solutions).
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 4

@@ -101,7 +101,7 @@ The line has been extended as a dashed line to the vertical axis so that the poi
 **Find:** the source voltage $E$ and the internal resistance $R_\text{int}$
 **Principle:** According to the model the terminal voltage is $U = E - R_\text{int} I$. The point where the line meets the vertical axis is at current zero, when there is no voltage drop inside the battery, so the intercept is $E$. The slope tells how much the terminal voltage falls as the current increases, so it is $-R_\text{int}$.
 **Reading the graph:** The slope is read from two points of the drawn line that are far apart, not from adjacent measurement points: $(0.10\,\text{A};\ 4.48\,\text{V})$ and $(0.60\,\text{A};\ 3.88\,\text{V})$. Between them $\Delta I = 0.50\,\text{A}$ and $\Delta U = -0.60\,\text{V}$ (the slope triangle of the graph). The line meets the vertical axis at $4.60\,\text{V}$.
-**Formula:** $R_\text{int} = -\dfrac{\Delta U}{\Delta I}$ and $E = U + R_\text{int} I$ from any point of the line.
+**Formula:** $$\begin{aligned} U &= E - R_\text{int} I \\ \dfrac{\Delta U}{\Delta I} &= -R_\text{int} \\ R_\text{int} &= -\dfrac{\Delta U}{\Delta I} \\ E &= U + R_\text{int} I \end{aligned}$$
 **Conversions:** Not needed: the voltage is in volts and the current in amperes, and $1\,\text{V/A} = 1\,\Omega$.
 **Substitution:** $R_\text{int} = -\dfrac{-0.60\,\text{V}}{0.50\,\text{A}} = 1.2\,\Omega$ and $E = 4.48\,\text{V} + 1.2\,\Omega \cdot 0.10\,\text{A} = 4.48\,\text{V} + 0.12\,\text{V} = 4.60\,\text{V}$
 **Answer:** $E \approx 4.6\,\text{V}$ and $R_\text{int} \approx 1.2\,\Omega$, two significant figures, because the slope is read from a graph and cannot be read more precisely than to two figures.
@@ -115,7 +115,7 @@ The line has been extended as a dashed line to the vertical axis so that the poi
 According to the loop rule the source voltage is divided between the internal resistance and the resistor: $E - R_\text{int} I - R I = 0$.
 
 Of the electric power, heat is produced both in the resistor and inside the battery, and the whole power of the battery is the sum of these, $E I$.
-**Formula:** $I = \dfrac{E}{R + R_\text{int}}$, $P = R I^2$, $P_\text{int} = R_\text{int} I^2$ and the fraction $\dfrac{P_\text{int}}{P + P_\text{int}} = \dfrac{R_\text{int}}{R + R_\text{int}}$
+**Formula:** $$\begin{aligned} E - R_\text{int} I - R I &= 0 \\ I &= \dfrac{E}{R + R_\text{int}} \\ P &= UI \\ &= R I \cdot I \\ &= R I^2 \\ P_\text{int} &= R_\text{int} I^2 \\ \dfrac{P_\text{int}}{P + P_\text{int}} &= \dfrac{R_\text{int} I^2}{R I^2 + R_\text{int} I^2} \\ &= \dfrac{R_\text{int}}{R + R_\text{int}} \end{aligned}$$
 **Conversions:** Not needed, all quantities are in base units.
 **Substitution:** $I = \dfrac{4.60\,\text{V}}{8.0\,\Omega + 1.2\,\Omega} = \dfrac{4.60\,\text{V}}{9.2\,\Omega} = 0.50\,\text{A}$, $P = 8.0\,\Omega \cdot (0.50\,\text{A})^2 = 2.0\,\text{W}$ and $P_\text{int} = 1.2\,\Omega \cdot (0.50\,\text{A})^2 = 0.30\,\text{W}$. The fraction is $\dfrac{0.30\,\text{W}}{2.0\,\text{W} + 0.30\,\text{W}} = 0.13$.
 **Answer:** The power transferred to the resistor is $P \approx 2.0\,\text{W}$, and about $13\,\%$ of the electric power of the battery is transferred as heat inside the battery. The result is given to two significant figures like the initial data.
@@ -134,13 +134,13 @@ Since time and current increase together, the effect of time is mixed with the s
 
 Warming also changes $R_\text{int}$ during the measurement (usually it makes it smaller), so the direction of its effect is uncertain. The effect on the source voltage is small, because the smallest current was measured first with a fresh battery.
 
-*The size of the drift.* Drift means a slow change of the voltage with time while the current stays the same, and the drift rate is the change of the voltage per unit of time. The drift shows that the model is idealised: it treats $E$ and $R_\text{int}$ as constants, although a real battery discharges and warms up during the measurement. The new measurement at a current of $0.10\,\text{A}$ gave $4.45\,\text{V}$, that is $0.03\,\text{V}$ less than at the beginning of the series. The series had six readings of about a minute each, so the drift rate is about $\dfrac{0.03\,\text{V}}{6\,\text{min}} \approx 0.005\,\text{V/min}$. At worst the last point is therefore about $0.03\,\text{V}$ too low, and the slope is too large by at most $\dfrac{0.03\,\text{V}}{0.50\,\text{A}} = 0.06\,\Omega$.
+*The size of the creep.* Creep means a slow change of the voltage with time while the current stays the same, and the rate of change of the voltage is the change of the voltage per unit of time. It is not the same thing as the drift velocity of charge carriers in a conductor (less than a millimetre per second: about $0.07\,\text{mm/s}$ in a copper lead of cross-sectional area $0.5\,\text{mm}^2$ at $0.5\,\text{A}$). The creep shows that the model is idealised: it treats $E$ and $R_\text{int}$ as constants, although a real battery discharges and warms up during the measurement. The new measurement at a current of $0.10\,\text{A}$ gave $4.45\,\text{V}$, that is $0.03\,\text{V}$ less than at the beginning of the series. The series had six readings of about a minute each, so the voltage changes by about $\dfrac{0.03\,\text{V}}{6\,\text{min}} \approx 0.005\,\text{V/min}$. At worst the last point is therefore about $0.03\,\text{V}$ too low, and the slope is too large by at most $\dfrac{0.03\,\text{V}}{0.50\,\text{A}} = 0.06\,\Omega$.
 
 *Uncertainty.* The points deviate from the fitted line by at most $0.02\,\text{V}$. If one end of the line rises and the other falls by this much, the slope changes by $\dfrac{2 \cdot 0.02\,\text{V}}{0.50\,\text{A}} = 0.08\,\Omega$, that is, $R_\text{int} = (1.20 \pm 0.08)\,\Omega$. The uncertainty has been rounded to one significant figure.
 
 *Improvement.* The currents are measured in random order, or the series is repeated in reverse order, and the circuit is connected only for the time of the reading. If the results differ from each other, the difference tells the size of the effect of discharging.
 
-*Conclusion.* The effect of the drift ($0.06\,\Omega$) is of the same order of magnitude as that of the scatter ($0.08\,\Omega$), so $R_\text{int}$ is about $1.1\ldots1.2\,\Omega$. The value $1.2\,\Omega$ is rather an upper limit, because the systematic error increases it.
+*Conclusion.* The effect of the creep ($0.06\,\Omega$) is of the same order of magnitude as that of the scatter ($0.08\,\Omega$), so $R_\text{int}$ is about $1.1\ldots1.2\,\Omega$. The value $1.2\,\Omega$ is rather an upper limit, because the systematic error increases it.
 
 ### Hyväksytään myös
 - In part a the vertical axis of the graph may start from zero as long as the points and $E$ can be distinguished; then the line may also be extended to the horizontal axis, where $I_\text{sc} = \dfrac{E}{R_\text{int}} \approx 3.8\,\text{A}$.
@@ -157,24 +157,24 @@ Warming also changes $R_\text{int}$ during the measurement (usually it makes it 
 ## fy6-s2
 
 ### a)
-**Given:** source voltage $E = 12.0\,\text{V}$, resistance of the cable $R_\text{c} = 0.80\,\Omega$, lamp A $12\,\text{V},\ 24\,\text{W}$ and lamp B $12\,\text{V},\ 12\,\text{W}$
+**Given:** source voltage $E = 12.0\,\text{V}$, resistance of the cable $R_\text{k} = 0.80\,\Omega$, lamp A $12\,\text{V},\ 24\,\text{W}$ and lamp B $12\,\text{V},\ 12\,\text{W}$
 **Find:** the current $I$ from the battery bank when both lamps are lit
 **Principle:** A lamp is treated as a constant resistance whose value is obtained from the rated values: at the rated voltage the power is $P = \dfrac{U^2}{R}$.
 
 Lamps A and B are in parallel, so they have the same voltage, and the cable is in series with them, so the whole current flows through the cable.
 
 Then the total resistance is the sum of the resistance of the cable and the equivalent resistance of the parallel connection.
-**Formula:** $R_\text{A} = \dfrac{U_\text{n}^2}{P_\text{A}}$, $R_\text{B} = \dfrac{U_\text{n}^2}{P_\text{B}}$, $\dfrac{1}{R_\text{par}} = \dfrac{1}{R_\text{A}} + \dfrac{1}{R_\text{B}}$, $R = R_\text{c} + R_\text{par}$ and $I = \dfrac{E}{R}$
+**Formula:** $$\begin{aligned} P &= UI \\ U &= RI \\ P &= \dfrac{U^2}{R} \\ R_\text{A} &= \dfrac{U_\text{n}^2}{P_\text{A}} \\ R_\text{B} &= \dfrac{U_\text{n}^2}{P_\text{B}} \\ I &= I_\text{A} + I_\text{B} \\ \dfrac{U}{R_\text{par}} &= \dfrac{U}{R_\text{A}} + \dfrac{U}{R_\text{B}} \\ \dfrac{1}{R_\text{par}} &= \dfrac{1}{R_\text{A}} + \dfrac{1}{R_\text{B}} \\ E - R_\text{k} I - R_\text{par} I &= 0 \\ R &= R_\text{k} + R_\text{par} \\ E &= RI \\ I &= \dfrac{E}{R} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V}^2/\text{W} = 1\,\Omega$.
 **Substitution:** $R_\text{A} = \dfrac{(12\,\text{V})^2}{24\,\text{W}} = 6.0\,\Omega$ and $R_\text{B} = \dfrac{(12\,\text{V})^2}{12\,\text{W}} = 12\,\Omega$. Parallel connection: $\dfrac{1}{R_\text{par}} = \dfrac{1}{6.0\,\Omega} + \dfrac{1}{12\,\Omega} = \dfrac{3}{12\,\Omega}$, so $R_\text{par} = 4.0\,\Omega$. The total resistance is $R = 0.80\,\Omega + 4.0\,\Omega = 4.8\,\Omega$ and the current $I = \dfrac{12.0\,\text{V}}{4.8\,\Omega} = 2.5\,\text{A}$.
 **Answer:** $I = 2.5\,\text{A}$, two significant figures as in the initial data.
 **Reasonableness:** If the lamps got the rated voltage, their currents would be $2.0\,\text{A}$ and $1.0\,\text{A}$, a total of $3.0\,\text{A}$. The cable takes part of the voltage, so the current is smaller than this. The current is also below the limits of the fuse, $3.15\,\text{A}$, and of the cable, $4.0\,\text{A}$.
 
 ### b)
-**Given:** $E = 12.0\,\text{V}$, $R_\text{c} = 0.80\,\Omega$, $R_\text{A} = 6.0\,\Omega$ and the current of part a, $I = 2.5\,\text{A}$
+**Given:** $E = 12.0\,\text{V}$, $R_\text{k} = 0.80\,\Omega$, $R_\text{A} = 6.0\,\Omega$ and the current of part a, $I = 2.5\,\text{A}$
 **Find:** the actual power $P_\text{A}$ of lamp A and its comparison with the rated power $24\,\text{W}$
-**Principle:** According to the loop rule the voltage of the battery bank is divided between the voltage drop in the cable and the voltage of the lamps: $E - R_\text{c} I - U_\text{L} = 0$. The voltage of the lamps is therefore lower than the rated voltage, and the power is calculated from this actual voltage.
-**Formula:** $U_\text{L} = E - R_\text{c} I$ and $P_\text{A} = \dfrac{U_\text{L}^2}{R_\text{A}}$
+**Principle:** According to the loop rule the voltage of the battery bank is divided between the voltage drop in the cable and the voltage of the lamps: $E - R_\text{k} I - U_\text{L} = 0$. The voltage of the lamps is therefore lower than the rated voltage, and the power is calculated from this actual voltage.
+**Formula:** $$\begin{aligned} E - R_\text{k} I - U_\text{L} &= 0 \\ U_\text{L} &= E - R_\text{k} I \\ P_\text{A} &= U_\text{L} I_\text{A} \\ I_\text{A} &= \dfrac{U_\text{L}}{R_\text{A}} \\ P_\text{A} &= \dfrac{U_\text{L}^2}{R_\text{A}} \end{aligned}$$
 **Conversions:** Not needed.
 **Substitution:** $$\begin{aligned} U_\text{L} &= 12.0\,\text{V} - 0.80\,\Omega \cdot 2.5\,\text{A} \\ &= 12.0\,\text{V} - 2.0\,\text{V} \\ &= 10.0\,\text{V} \end{aligned}$$ and $P_\text{A} = \dfrac{(10.0\,\text{V})^2}{6.0\,\Omega} = 16.7\,\text{W}$
 **Answer:** $P_\text{A} \approx 17\,\text{W}$, about $70\,\%$ of the rated $24\,\text{W}$, two significant figures as in the initial data ($0.80\,\Omega$, $24\,\text{W}$, $12\,\text{V}$).
@@ -189,15 +189,15 @@ The sum $$\begin{aligned} &16.7\,\text{W} + 8.3\,\text{W} + 5.0\,\text{W} \\ &= 
 
 *Brightness.* The smaller current reduces the voltage drop in the cable: $0.80\,\Omega \cdot 1.76\,\text{A} \approx 1.4\,\text{V}$, previously $2.0\,\text{V}$. A larger voltage $U_\text{A} \approx 10.6\,\text{V}$ is therefore left for lamp A, and its power is $\dfrac{(10.6\,\text{V})^2}{6.0\,\Omega} \approx 18.7\,\text{W}$, previously $16.7\,\text{W}$. So lamp A shines brighter, although nothing changed in its own branch.
 
-*Cable.* The power transferred to the cable as heat is $$\begin{aligned} R_\text{c} I^2 &= 0.80\,\Omega \cdot (1.76\,\text{A})^2 \\ &\approx 2.5\,\text{W} \end{aligned}$$, previously $5.0\,\text{W}$. So the cable warms up less, because the power depends on the square of the current.
+*Cable.* The power transferred to the cable as heat is $$\begin{aligned} R_\text{k} I^2 &= 0.80\,\Omega \cdot (1.76\,\text{A})^2 \\ &\approx 2.5\,\text{W} \end{aligned}$$, previously $5.0\,\text{W}$. So the cable warms up less, because the power depends on the square of the current.
 
 *Conclusion.* Lamps connected in parallel are independent of each other only if the voltage across them stays constant. The resistance of the cable makes the lamps slightly dependent on each other: if the resistance of the cable were zero, the brightness of lamp A would not change at all.
 
 ### d)
-**Given:** $E = 12.0\,\text{V}$, $R_\text{c} = 0.80\,\Omega$, $R_\text{A} = 6.0\,\Omega$, $R_\text{B} = 12\,\Omega$, new lamp C $12\,\text{V},\ 36\,\text{W}$, fuse $3.15\,\text{A}$ and cable limit $4.0\,\text{A}$
+**Given:** $E = 12.0\,\text{V}$, $R_\text{k} = 0.80\,\Omega$, $R_\text{A} = 6.0\,\Omega$, $R_\text{B} = 12\,\Omega$, new lamp C $12\,\text{V},\ 36\,\text{W}$, fuse $3.15\,\text{A}$ and cable limit $4.0\,\text{A}$
 **Find:** the current $I$ from the battery bank with three lamps and the operation of the fuse
 **Principle:** The lamps are still in parallel, so they have a common voltage and the resistances are added as reciprocals. The cable is in series with all of them. The fuse is a protective device of the circuit: it blows and breaks the circuit if the current exceeds its rated current for too long.
-**Formula:** $R_\text{C} = \dfrac{U_\text{n}^2}{P_\text{C}}$, $\dfrac{1}{R_\text{par}} = \dfrac{1}{R_\text{A}} + \dfrac{1}{R_\text{B}} + \dfrac{1}{R_\text{C}}$ and $I = \dfrac{E}{R_\text{c} + R_\text{par}}$
+**Formula:** $$\begin{aligned} R_\text{C} &= \dfrac{U_\text{n}^2}{P_\text{C}} \\ I &= I_\text{A} + I_\text{B} + I_\text{C} \\ \dfrac{U}{R_\text{par}} &= \dfrac{U}{R_\text{A}} + \dfrac{U}{R_\text{B}} + \dfrac{U}{R_\text{C}} \\ \dfrac{1}{R_\text{par}} &= \dfrac{1}{R_\text{A}} + \dfrac{1}{R_\text{B}} + \dfrac{1}{R_\text{C}} \\ E - R_\text{k} I - R_\text{par} I &= 0 \\ I &= \dfrac{E}{R_\text{k} + R_\text{par}} \end{aligned}$$
 **Conversions:** Not needed.
 **Substitution:** $R_\text{C} = \dfrac{(12\,\text{V})^2}{36\,\text{W}} = 4.0\,\Omega$ and $\dfrac{1}{R_\text{par}} = \dfrac{1}{6.0\,\Omega} + \dfrac{1}{12\,\Omega} + \dfrac{1}{4.0\,\Omega} = \dfrac{2 + 1 + 3}{12\,\Omega} = \dfrac{1}{2.0\,\Omega}$, so $R_\text{par} = 2.0\,\Omega$. The current is $I = \dfrac{12.0\,\text{V}}{0.80\,\Omega + 2.0\,\Omega} = \dfrac{12.0\,\text{V}}{2.8\,\Omega} = 4.3\,\text{A}$.
 **Answer:** $I \approx 4.3\,\text{A}$.
@@ -245,7 +245,7 @@ The significance of the weight is assessed by comparing it with the electric for
 **Principle:** The work done by the electric field on the droplet is the charge times the potential difference, $W = qU$, and it increases the kinetic energy of the droplet.
 
 Weight and air resistance are left out, so there are no other forces. In this way it is enough to know the potential difference, and the strength of the field or the acceleration is not needed.
-**Formula:** $q U = \dfrac{1}{2} m v^2$, so $v = \sqrt{\dfrac{2 q U}{m}}$
+**Formula:** $$\begin{aligned} W &= qU \\ W &= \Delta E_\text{k} = \dfrac{1}{2} m v^2 - 0 \\ qU &= \dfrac{1}{2} m v^2 \\ v &= \sqrt{\dfrac{2 q U}{m}} \end{aligned}$$
 **Conversions:** Not needed, all quantities are in base units; $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
 **Substitution:** $$\begin{aligned} qU &= 6.0 \cdot 10^{-13}\,\text{C} \cdot 6.0 \cdot 10^{4}\,\text{V} \\ &= 3.6 \cdot 10^{-8}\,\text{J} \end{aligned}$$ and $v = \sqrt{\dfrac{2 \cdot 3.6 \cdot 10^{-8}\,\text{J}}{4.0 \cdot 10^{-10}\,\text{kg}}} = \sqrt{180\,\text{m}^2/\text{s}^2} = 13.4\,\text{m/s}$
 **Answer:** $v \approx 13\,\text{m/s}$, two significant figures as in the initial data.
@@ -302,24 +302,24 @@ This is part of the reason why the spray widens after the nozzle.
 **Formula:** $E = \dfrac{1}{2} C U^2$
 **Conversions:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$
 **Substitution:** $E = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (300\,\text{V})^2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 90\,000\,\text{V}^2 = 14.85\,\text{J}$
-**Answer:** $E \approx 15\,\text{J}$ ($14.85\,\text{J}$), two significant figures, because the precision of the voltage $300\,\text{V}$ and the capacitance $330\,\mu\text{F}$ is at most two or three figures.
-**Reasonableness:** The energy is of the order of a joule, as in the capacitor of a small flash unit. If this energy were used to lift an object with a weight of one kilogram, it would rise about $1.5\,\text{m}$.
+**Answer:** $E \approx 14.9\,\text{J}$ ($14.85\,\text{J}$), three significant figures, because the voltage $300\,\text{V}$ and the capacitance $330\,\mu\text{F}$ are given to three significant figures.
+**Reasonableness:** The energy is of the order of ten joules, as in the capacitor of a small flash unit. If this energy were used to lift an object of mass $1.0\,\text{kg}$, it would rise about $1.5\,\text{m}$.
 
 ### b)
 **Given:** $C = 330\,\mu\text{F}$, the voltage before the flash $U_1 = 300\,\text{V}$ and after it $U_2 = 220\,\text{V}$
 **Find:** the energy $\Delta E$ transferred to the flash, its fraction of the stored energy and the reason for the size of the fraction
 **Principle:** The energy transferred to the flash is the change in the energy of the capacitor: it is the energy before the flash minus the energy after the flash. The voltage is squared in the energy formula, so each energy is calculated separately; the change in voltage $\Delta U$ alone is not enough.
-**Formula:** $\Delta E = \dfrac{1}{2} C U_1^2 - \dfrac{1}{2} C U_2^2$
+**Formula:** $$\begin{aligned} E_1 &= \dfrac{1}{2} C U_1^2 \\ E_2 &= \dfrac{1}{2} C U_2^2 \\ \Delta E &= E_1 - E_2 \\ &= \dfrac{1}{2} C U_1^2 - \dfrac{1}{2} C U_2^2 \\ \text{fraction} &= \dfrac{\Delta E}{E_1} \end{aligned}$$
 **Conversions:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$
-**Substitution:** $E_1 = 14.85\,\text{J}$ and $$\begin{aligned} E_2 &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text{V})^2 \\ &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 48\,400\,\text{V}^2 \\ &= 7.99\,\text{J} \end{aligned}$$, so $\Delta E = 14.85\,\text{J} - 7.99\,\text{J} = 6.86\,\text{J}$. The fraction is $\dfrac{6.86\,\text{J}}{14.85\,\text{J}} = 0.46$.
-**Answer:** The energy transferred to the flash was $\Delta E \approx 6.9\,\text{J}$, about $46\,\%$ of the stored energy, two significant figures as in part a.
-**Reasonableness:** The voltage decreased by only $\dfrac{80\,\text{V}}{300\,\text{V}} \approx 27\,\%$, but $46\,\%$ of the energy was transferred, because energy is proportional to the square of the voltage: $1 - \left(\dfrac{220}{300}\right)^2 = 0.46$. The transferred energy is smaller than the initial energy, as it should be.
+**Substitution:** $E_1 = 14.85\,\text{J}$ and $$\begin{aligned} E_2 &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text{V})^2 \\ &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 48\,400\,\text{V}^2 \\ &= 7.99\,\text{J} \end{aligned}$$, so $$\begin{aligned} \Delta E &= 14.85\,\text{J} - 7.99\,\text{J} \\ &= 6.86\,\text{J} \end{aligned}$$. The fraction is $\dfrac{6.86\,\text{J}}{14.85\,\text{J}} = 0.46$.
+**Answer:** The energy transferred to the flash was $\Delta E \approx 6.86\,\text{J}$, about $46.2\,\%$ of the stored energy, three significant figures as in the initial data.
+**Reasonableness:** The voltage decreased by only $\dfrac{80\,\text{V}}{300\,\text{V}} \approx 27\,\%$, but $46.2\,\%$ of the energy was transferred, because energy is proportional to the square of the voltage: $1 - \left(\dfrac{220}{300}\right)^2 = 0.46$. The transferred energy is smaller than the initial energy, as it should be.
 
 ### c)
 **Given:** $C = 330\,\mu\text{F}$, change in voltage $\Delta U = 300\,\text{V} - 220\,\text{V} = 80\,\text{V}$ and duration $\Delta t = 1.0\,\text{ms}$
 **Find:** the average current $I$ during the flash
 **Principle:** Current is the rate at which charge is transferred. The charge of the capacitor is $Q = C U$, so when the voltage decreases by $80\,\text{V}$, a charge $\Delta Q = C\,\Delta U$ has left the capacitor through the flash tube.
-**Formula:** $I = \dfrac{\Delta Q}{\Delta t}$ and $\Delta Q = C\,\Delta U$
+**Formula:** $$\begin{aligned} Q &= C U \\ \Delta Q &= C\,\Delta U \\ I &= \dfrac{\Delta Q}{\Delta t} \\ &= \dfrac{C\,\Delta U}{\Delta t} \end{aligned}$$
 **Conversions:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$ and $1.0\,\text{ms} = 1.0 \cdot 10^{-3}\,\text{s}$
 **Substitution:** $$\begin{aligned} \Delta Q &= 330 \cdot 10^{-6}\,\text{F} \cdot 80\,\text{V} \\ &= 0.0264\,\text{C} \end{aligned}$$ and $I = \dfrac{0.0264\,\text{C}}{1.0 \cdot 10^{-3}\,\text{s}} = 26.4\,\text{A}$
 **Answer:** $I \approx 26\,\text{A}$, two significant figures like the precision of the duration $1.0\,\text{ms}$.

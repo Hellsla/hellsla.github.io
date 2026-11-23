@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 36c2c5b745ea76ef
+CONTENT-HASH: 754be9e49009ab18
+SCOPE: delta wording from d8a327719d5a4c10 base a2442fe
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- fy6-9-L2-09 d): the Tukes page could not be checked (known); the solution says to verify the wording, and any two instructions are accepted. Only a- and b) are fully material-independent, so the task is partly a standard calculation; acceptable at level 2.
-- The d) solution is very long (three examples); consider trimming the third (cold battery) which it says is out of scope.
-- c) solution first says 120 W goes into the battery, then that power is not constant: clear enough, but one sentence linking the two would help.
+- none
 
 ## Checked
-New task against section 6: 36 V x 14 Ah = 504 Wh = 1.8 MJ, 4.2 h verified; c) and d) reason with chapter physics (internal resistance, charger voltage); terms (kenno, oikosulku, häviö) explained; set mix unchanged.
+- Diff is only the first row of the Kaava aligned blocks, from \Sigma U = 0 to \sum \Delta V = 0, matching the Kirchhoff notation of the lesson.
+- The following rows (signed loop equation, then the solved formula) are unchanged and still follow from it; the principle step explains the sign convention.
+- No numbers, answers, levels, task texts or figures changed; earlier judgement stands.

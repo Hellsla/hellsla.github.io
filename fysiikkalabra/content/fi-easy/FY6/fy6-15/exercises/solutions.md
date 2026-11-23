@@ -12,7 +12,7 @@
 **Annettu:** sulakkeen nimellisvirta $I_\text{s} = 10\,\text{A}$, jännite $U = 230\,\text{V}$
 **Kysytty:** suurin yhteisteho $P_\text{max}$ watteina
 **Periaate:** Ryhmän laitteet ovat rinnan samassa jännitteessä. Siksi niiden virrat lasketaan yhteen, ja ryhmäjohdon virta on yhteisteho jaettuna jännitteellä. Nimellisvirta eli suurin sallittu virta ei ylity, kun tämä virta on enintään $I_\text{s}$.
-**Kaava:** $I = \dfrac{P_1 + P_2 + \dots}{U} \le I_\text{s}$, josta $P_\text{max} = UI_\text{s}$
+**Kaava:** $$\begin{aligned} P_k &= UI_k \\ I &= I_1 + I_2 + \dots \\ &= \dfrac{P_1 + P_2 + \dots}{U} \\ I &\le I_\text{s} \\ P_\text{max} &= UI_\text{s} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} \cdot 1\,\text{A} = 1\,\text{W}$.
 **Sijoitus:** $P_\text{max} = 230\,\text{V} \cdot 10\,\text{A} = 2300\,\text{W}$
 **Vastaus:** $2300\,\text{W}$ eli $2{,}3\,\text{kW}$, kaksi merkitsevää numeroa kuten nimellisvirrassa $10\,\text{A}$.
@@ -95,7 +95,7 @@ Tilanteen D virta ylittää hengityksen vaikeutumisen rajan $30\,\text{mA}$. Til
 **Annettu:** nimellisvirta $I_\text{s} = 16\,\text{A}$, jännite $U = 230\,\text{V}$, päällä olevat tehot $P_1 = 2000\,\text{W}$ ja $P_2 = 1200\,\text{W}$
 **Kysytty:** teho $P_\text{lisä}$, jonka ryhmään voi vielä kytkeä
 **Periaate:** Ryhmän laitteet ovat rinnan, joten virrat lasketaan yhteen. Kokonaisvirta on yhteisteho jaettuna jännitteellä. Nimellisvirta ei ylity, kun yhteisteho on enintään $UI_\text{s}$. Lisätehoksi jää tämän ja käytössä olevan tehon erotus.
-**Kaava:** $\dfrac{P_1 + P_2 + P_\text{lisä}}{U} = I_\text{s}$, josta $P_\text{lisä} = UI_\text{s} - (P_1 + P_2)$
+**Kaava:** $$\begin{aligned} P_k &= UI_k \\ I_1 + I_2 + I_\text{lisä} &= I_\text{s} \\ \dfrac{P_1 + P_2 + P_\text{lisä}}{U} &= I_\text{s} \\ P_\text{lisä} &= UI_\text{s} - (P_1 + P_2) \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} \cdot 1\,\text{A} = 1\,\text{W}$.
 **Sijoitus:** $$\begin{aligned} P_\text{lisä} &= 230\,\text{V} \cdot 16\,\text{A} \\ &- (2000\,\text{W} + 1200\,\text{W}) \\ &= 3680\,\text{W} - 3200\,\text{W} \\ &= 480\,\text{W} \end{aligned}$$
 **Vastaus:** noin $480\,\text{W}$. Erotus on laskettu suurista luvuista, joten se on vain suuntaa antava. Nimellisvirta $16\,\text{A}$ on annettu kahden merkitsevän numeron tarkkuudella.
@@ -105,7 +105,7 @@ Tilanteen D virta ylittää hengityksen vaikeutumisen rajan $30\,\text{mA}$. Til
 **Annettu:** patterin teho $P = 2000\,\text{W}$, jännite $U = 230\,\text{V}$, johtimien resistanssi $R = 0{,}30\,\Omega$
 **Kysytty:** jatkojohdossa kehittyvä lämpöteho $P_\text{j}$
 **Periaate:** Jatkojohto on sarjassa patterin kanssa, joten sen läpi kulkee patterin virta. Virta saadaan patterin tehosta. Johdossa sähköenergia muuttuu sisäenergiaksi teholla $RI^2$. Oletus: johdon jännitehäviö on niin pieni, että patterin virta on sama kuin ilman jatkojohtoa.
-**Kaava:** $P = UI$, josta $I = \dfrac{P}{U}$; johdossa $P_\text{j} = RI^2$, joten $P_\text{j} = R\left(\dfrac{P}{U}\right)^2$
+**Kaava:** $$\begin{aligned} P &= UI \\ I &= \dfrac{P}{U} \\ P_\text{j} &= RI^2 \\ &= R\left(\dfrac{P}{U}\right)^2 \end{aligned}$$
 **Muunnokset:** Ei tarvita: kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** $I = \dfrac{2000\,\text{W}}{230\,\text{V}} = 8{,}696\,\text{A}$ ja $P_\text{j} = 0{,}30\,\Omega \cdot (8{,}696\,\text{A})^2 = 22{,}68\,\text{W}$
 **Vastaus:** $23\,\text{W}$, kaksi merkitsevää numeroa kuten resistanssissa $0{,}30\,\Omega$.
@@ -145,7 +145,7 @@ Tilanteen D virta ylittää hengityksen vaikeutumisen rajan $30\,\text{mA}$. Til
 **Annettu:** sulakkeen nimellisvirta $I_\text{s} = 10\,\text{A}$, jännite $U = 230\,\text{V}$; tehot taulukosta: vedenkeitin $2000\,\text{W}$, pölynimuri $1400\,\text{W}$, silitysrauta $1100\,\text{W}$, leivänpaahdin $800\,\text{W}$, kahvinkeitin $600\,\text{W}$
 **Kysytty:** a) parit, joiden yhteisvirta ylittää $I_\text{s}$; b) suurin yhteisteho, joka ei ylitä rajaa, ja sitä vastaava virta $I$ ampeereina
 **Periaate:** Ryhmän laitteet ovat rinnan samassa jännitteessä, joten niiden virrat lasketaan yhteen. Ryhmäjohdon virta on yhteisteho jaettuna jännitteellä. Sulakkeen nimellisvirta ylittyy, kun yhteisteho on suurempi kuin $P_\text{max} = UI_\text{s}$.
-**Kaava:** $P_\text{max} = UI_\text{s}$ ja $I = \dfrac{P_1 + P_2}{U}$
+**Kaava:** $$\begin{aligned} P_k &= UI_k \\ I &= I_1 + I_2 \\ &= \dfrac{P_1 + P_2}{U} \\ I &\le I_\text{s} \\ P_\text{max} &= UI_\text{s} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{W} : 1\,\text{V} = 1\,\text{A}$.
 **Sijoitus:** $P_\text{max} = 230\,\text{V} \cdot 10\,\text{A} = 2300\,\text{W}$. Parien yhteistehot: vedenkeitin ja pölynimuri $3400\,\text{W}$, vedenkeitin ja silitysrauta $3100\,\text{W}$, vedenkeitin ja leivänpaahdin $2800\,\text{W}$, vedenkeitin ja kahvinkeitin $2600\,\text{W}$, pölynimuri ja silitysrauta $2500\,\text{W}$. Kaikki ovat yli $2300\,\text{W}$. Muut parit jäävät sen alle. Niistä suurin on pölynimuri ja leivänpaahdin: $1400\,\text{W} + 800\,\text{W} = 2200\,\text{W}$. Virta on $I = \dfrac{2200\,\text{W}}{230\,\text{V}} = 9{,}565\,\text{A}$
 **Vastaus:** $9{,}6\,\text{A}$, kaksi merkitsevää numeroa kuten sulakkeen nimellisvirrassa. Kohta a): sulakkeen nimellisvirran ylittävät vedenkeittimen yhdistelmät kaikkien muiden laitteiden kanssa sekä pölynimurin ja silitysraudan pari.
@@ -201,7 +201,7 @@ Rakennuksen kiinteään sähköverkkoon liitettävän laitteiston asentaa sähk�
 **Annettu:** johtimien resistanssi $R = 0{,}50\,\Omega$, mitoitusvirta $I_1 = 10\,\text{A}$, todellinen virta $I_2 = 22\,\text{A}$
 **Kysytty:** kuinka moninkertainen lämpöteho $P_2$ on tehoon $P_1$ verrattuna
 **Periaate:** Johtimissa sähköenergia muuttuu sisäenergiaksi teholla $P = RI^2$. Resistanssi on molemmissa tilanteissa sama. Siksi tehojen suhde riippuu vain virtojen suhteesta toiseen potenssiin korotettuna. $25\,\text{A}$:n sulake ei katkaise $22\,\text{A}$:n virtaa, joten johto kuormittuu yli mitoituksensa.
-**Kaava:** $P_1 = RI_1^2$ ja $P_2 = RI_2^2$, joten $\dfrac{P_2}{P_1} = \dfrac{I_2^2}{I_1^2}$
+**Kaava:** $$\begin{aligned} P_1 &= RI_1^2 \\ P_2 &= RI_2^2 \\ \dfrac{P_2}{P_1} &= \dfrac{RI_2^2}{RI_1^2} \\ &= \dfrac{I_2^2}{I_1^2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: virrat ovat samassa yksikössä, ja yksiköt supistuvat.
 **Sijoitus:** $P_1 = 0{,}50\,\Omega \cdot (10\,\text{A})^2 = 50\,\text{W}$, $P_2 = 0{,}50\,\Omega \cdot (22\,\text{A})^2 = 242\,\text{W}$ ja $\dfrac{P_2}{P_1} = \dfrac{242\,\text{W}}{50\,\text{W}} = 4{,}84$
 **Vastaus:** noin $4{,}8$-kertainen, kaksi merkitsevää numeroa kuten virrassa $22\,\text{A}$.
@@ -211,7 +211,7 @@ Rakennuksen kiinteään sähköverkkoon liitettävän laitteiston asentaa sähk�
 **Annettu:** jännite $U = 230\,\text{V}$, kehon resistanssi $R_\text{keho} = 1{,}5\,\text{k}\Omega$, kenkien ja lattian resistanssi $R_\text{k} = 100\,\text{k}\Omega$
 **Kysytty:** kehon läpi kulkeva virta $I$ milliampeereina
 **Periaate:** Virta kulkee kehon, kenkien ja lattian läpi peräkkäin. Resistanssit ovat siis sarjassa, ja kokonaisresistanssi on niiden summa (luku *Vastusten sarja- ja rinnankytkennät*). Sama virta kulkee jokaisen läpi, ja se saadaan Ohmin laista kokonaisresistanssin avulla.
-**Kaava:** $R = R_\text{keho} + R_\text{k}$ ja $I = \dfrac{U}{R}$, joten $I = \dfrac{U}{R_\text{keho} + R_\text{k}}$
+**Kaava:** $$\begin{aligned} U_\text{keho} &= R_\text{keho}I \\ U_\text{k} &= R_\text{k}I \\ U &= U_\text{keho} + U_\text{k} \\ &= (R_\text{keho} + R_\text{k})I \\ I &= \dfrac{U}{R_\text{keho} + R_\text{k}} \end{aligned}$$
 **Muunnokset:** $R_\text{keho} = 1{,}5 \cdot 1000\,\Omega = 1500\,\Omega$ ja $R_\text{k} = 100 \cdot 1000\,\Omega = 100\,000\,\Omega$; $1\,\text{A} = 1000\,\text{mA}$.
 **Sijoitus:** $I = \dfrac{230\,\text{V}}{1500\,\Omega + 100\,000\,\Omega} = \dfrac{230\,\text{V}}{101\,500\,\Omega} = 0{,}002266\,\text{A} = 2{,}3\,\text{mA}$
 **Vastaus:** $2{,}3\,\text{mA}$, kaksi merkitsevää numeroa kuten kehon resistanssissa $1{,}5\,\text{k}\Omega$.
@@ -222,7 +222,7 @@ Rakennuksen kiinteään sähköverkkoon liitettävän laitteiston asentaa sähk�
 **Kysytty:** jalasta toiseen kulkeva virta $I$ milliampeereina
 **Periaate:** Jalkojen välinen jännite eli askeljännite on maan potentiaalien erotus jalkojen kohdilla. Potentiaali kertoo, kuinka suuri jännite paikassa on maahan verrattuna. Virta kulkee jalasta kehon kautta toiseen jalkaan, ja se saadaan Ohmin laista.
 **Kuvaajan lukeminen:** Kohdassa $r = 2{,}0\,\text{m}$ käyrä kulkee ruudukon risteyksen kautta, ja arvo on $V_1 = 600\,\text{V}$. Kohdassa $r = 3{,}0\,\text{m}$ arvo on $V_2 = 400\,\text{V}$. Askeljännite on näiden arvojen erotus.
-**Kaava:** $U = V_1 - V_2$ ja $I = \dfrac{U}{R}$, joten $I = \dfrac{V_1 - V_2}{R}$
+**Kaava:** $$\begin{aligned} U &= V_1 - V_2 \\ U &= RI \\ I &= \dfrac{U}{R} \\ &= \dfrac{V_1 - V_2}{R} \end{aligned}$$
 **Muunnokset:** $R = 4{,}0\,\text{k}\Omega = 4{,}0 \cdot 1000\,\Omega = 4000\,\Omega$; $1\,\text{A} = 1000\,\text{mA}$.
 **Sijoitus:** $I = \dfrac{600\,\text{V} - 400\,\text{V}}{4000\,\Omega} = \dfrac{200\,\text{V}}{4000\,\Omega} = 0{,}050\,\text{A} = 50\,\text{mA}$
 **Vastaus:** $50\,\text{mA}$, kaksi merkitsevää numeroa kuten resistanssissa $4{,}0\,\text{k}\Omega$.
@@ -237,7 +237,7 @@ Kauempana käyrä loivenee: kohtien $4{,}0\,\text{m}$ ja $6{,}0\,\text{m}$ väli
 
 Jos pisteet $(P, \Delta T)$ ovat suoralla, joka kulkee origon kautta, niin $\Delta T = kP$. Silloin lämpötilan nousu on suoraan verrannollinen tehoon. Kun tehoa ei synny, johto on ympäristön lämpötilassa, joten suora kulkee origon kautta.
 **Kuvaajan lukeminen:** Pisteet $(P, \Delta T)$ ovat $(6{,}4\,\text{W};\ 2{,}1\,\text{K})$, $(25{,}6\,\text{W};\ 7{,}6\,\text{K})$, $(57{,}6\,\text{W};\ 17{,}2\,\text{K})$ ja $(102{,}4\,\text{W};\ 30{,}4\,\text{K})$. Ne ovat lähes suoralla, joka kulkee origon kautta. Suhteet $\Delta T : P$ ovat $0{,}33$; $0{,}30$; $0{,}30$ ja $0{,}30\,\text{K/W}$. Ensimmäinen poikkeaa vähän, koska pientä lämpötilan nousua on vaikeampi lukea tarkasti. Origon kautta sovitetun suoran kulmakerroin on $k = \dfrac{\sum P\,\Delta T}{\sum P^2}$.
-**Kaava:** $\Delta T = kP = kRI^2$, josta $I_\text{max} = \sqrt{\dfrac{\Delta T_\text{max}}{kR}}$
+**Kaava:** $$\begin{aligned} P &= RI^2 \\ \Delta T &= kP \\ &= kRI^2 \\ I_\text{max}^2 &= \dfrac{\Delta T_\text{max}}{kR} \\ I_\text{max} &= \sqrt{\dfrac{\Delta T_\text{max}}{kR}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: lämpötilan nousu on sama kelvineinä ja celsiusasteina, ja $1\,\text{K/W}$ tulee suoraan taulukon yksiköistä.
 **Sijoitus:** $$\begin{aligned} \sum P\,\Delta T &= 6{,}4 \cdot 2{,}1 + 25{,}6 \cdot 7{,}6 \\ &+ 57{,}6 \cdot 17{,}2 \\ &+ 102{,}4 \cdot 30{,}4 \\ &= 4311{,}7 \end{aligned}$$ ja $$\begin{aligned} \sum P^2 &= 6{,}4^2 + 25{,}6^2 + 57{,}6^2 \\ &+ 102{,}4^2 \\ &= 14\,499{,}8 \end{aligned}$$, joten $k = \dfrac{4311{,}7}{14\,499{,}8}\,\dfrac{\text{K}}{\text{W}} = 0{,}2974\,\dfrac{\text{K}}{\text{W}}$. Virta on $I_\text{max} = \sqrt{\dfrac{50\,\text{K}}{0{,}2974\,\text{K/W} \cdot 0{,}40\,\Omega}} = \sqrt{420{,}3\,\text{A}^2} = 20{,}50\,\text{A}$
 **Vastaus:** $21\,\text{A}$, kaksi merkitsevää numeroa kuten rajassa $50\,\text{K}$ (kohta a: $k \approx 0{,}30\,\text{K/W}$). c) Virralla $16\,\text{A}$ lämpötilan nousu on $$\begin{aligned} \Delta T &= 0{,}2974 \cdot 0{,}40 \cdot 16^2\,\text{K} \\ &= 30\,\text{K} \end{aligned}$$. Se on alle rajan $50\,\text{K}$, joten $16\,\text{A}$:n sulake riittää suojaamaan tämän johdon. Virralla $25\,\text{A}$ nousu olisi $0{,}2974 \cdot 0{,}40 \cdot 25^2\,\text{K} = 74\,\text{K}$. Se on yli rajan, joten $25\,\text{A}$:n sulake ei suojaisi johtoa. Johto voisi kuumentua vaarallisen kuumaksi, ennen kuin sulake laukeaa.
@@ -247,7 +247,7 @@ Jos pisteet $(P, \Delta T)$ ovat suoralla, joka kulkee origon kautta, niin $\Del
 **Annettu:** jännite $U = 230\,\text{V}$, kehon virtatien resistanssi $R_\text{k} = 1{,}5\,\text{k}\Omega$, vikavirtasuojan laukaisuraja $30\,\text{mA}$; eristysresistanssit taulukosta: $R_\text{e} = 900$; $120$; $40$; $12$ ja $4{,}0\,\text{k}\Omega$ viikoilla 1, 3, 5, 7 ja 9
 **Kysytty:** a) ihmisen läpi kulkeva virta $I$ jokaisena viikkona; b) viikko, jona vikavirtasuoja laukeaa, ja miksi se ei yksin riitä; c) suurin $R_\text{e}$, jolla vikavirtasuoja laukeaa, kiloohmeina
 **Periaate:** Vuoto kulkee vaihejohtimesta eristyksen läpi runkoon ja rungosta ihmisen läpi maahan. Resistanssit $R_\text{e}$ ja $R_\text{k}$ ovat siis sarjassa, ja koko virtatien resistanssi on niiden summa (luku *Vastusten sarja- ja rinnankytkennät*). Sama virta kulkee ihmisen ja vikavirtasuojan läpi, ja se saadaan Ohmin laista. Vikavirtasuoja laukeaa, kun virta ylittää rajan $I_\text{raja} = 30\,\text{mA}$. Rajatilanteessa siis $R_\text{e} + R_\text{k} = U : I_\text{raja}$.
-**Kaava:** $I = \dfrac{U}{R_\text{e} + R_\text{k}}$; rajalla $I_\text{raja} = \dfrac{U}{R_\text{e} + R_\text{k}}$, josta $R_\text{e} = \dfrac{U}{I_\text{raja}} - R_\text{k}$
+**Kaava:** $$\begin{aligned} U_\text{e} &= R_\text{e}I \\ U_\text{k} &= R_\text{k}I \\ U &= U_\text{e} + U_\text{k} \\ &= (R_\text{e} + R_\text{k})I \\ I_\text{raja} &= \dfrac{U}{R_\text{e} + R_\text{k}} \\ R_\text{e} &= \dfrac{U}{I_\text{raja}} - R_\text{k} \end{aligned}$$
 **Muunnokset:** $R_\text{k} = 1{,}5\,\text{k}\Omega = 1500\,\Omega$; $I_\text{raja} = 30\,\text{mA} = 0{,}030\,\text{A}$; esimerkiksi $R_\text{e} = 900\,\text{k}\Omega = 900\,000\,\Omega$; virrat ampeereista milliampeereiksi: $1\,\text{A} = 1000\,\text{mA}$; tulos ohmeista kiloohmeiksi: $1\,\text{k}\Omega = 1000\,\Omega$.
 **Sijoitus:** Rajalla $R_\text{e} = \dfrac{230\,\text{V}}{0{,}030\,\text{A}} - 1500\,\Omega = 7667\,\Omega - 1500\,\Omega = 6167\,\Omega = 6{,}167\,\text{k}\Omega$. Virrat: viikko 1: $\dfrac{230\,\text{V}}{900\,000\,\Omega + 1500\,\Omega} = 0{,}26\,\text{mA}$; viikko 3: $\dfrac{230\,\text{V}}{121\,500\,\Omega} = 1{,}9\,\text{mA}$; viikko 5: $\dfrac{230\,\text{V}}{41\,500\,\Omega} = 5{,}5\,\text{mA}$; viikko 7: $\dfrac{230\,\text{V}}{13\,500\,\Omega} = 17{,}0\,\text{mA}$; viikko 9: $\dfrac{230\,\text{V}}{5500\,\Omega} = 41{,}8\,\text{mA}$
 **Vastaus:** $6{,}2\,\text{k}\Omega$, kaksi merkitsevää numeroa kuten kehon resistanssissa $1{,}5\,\text{k}\Omega$. Kohta b): vikavirtasuoja laukeaa vasta viikon 9 mittauksessa, jossa virta ylittää rajan. Viikoilla 3, 5 ja 7 virta on tuntokynnyksen yläpuolella. Viikolla 7 se ylittää myös irrottamiskynnyksen $10\,\text{mA}$, joten ote ei välttämättä irtoa, vaikka vikavirtasuoja ei laukea.

@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5cfc1e1a443815c4
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 7411b0bebaf66c44
+SCOPE: delta wording from 5893f860309dce5f base 0e8231e
 
 ## Blocking
-(none)
-
-## Fixed
-(none needed)
 
 ## Polish
-(none)
+- solutions.md L3-04 Sijoitus — "= 630 V Ω Nimittäjä on" lacks a full stop and has display maths inside the sentence; split it.
+- solutions.md L3-04, power sentence ends `$$…$$.` with a stray full stop; drop it.
 
 ## Checked
-- Selkeä suomi per NOTES.md §12: shorter sentences, one idea each, physics terms kept (glossary terms), no step dropped.
-- New task is clearer than fi where it helps (feedback split into two sentences; 'kulmakerroin eli jyrkkyys', 'verrannollinen eli pienenee, kun resistanssi kasvaa'; 'suuruusluokka kertoo luvun koon suunnilleen' in fy6-7).
+- L3-04 Kaava derives I_2 step by step (node equation times R_1R_3, D, closed form); matches the Finnish version.
+- Numbers recomputed: I_2 0,30 A, I_1 0,20 A, I_3 0,10 A, 3,3 W balance.
+- Plain-Finnish wording kept; notation aligned with the lesson.

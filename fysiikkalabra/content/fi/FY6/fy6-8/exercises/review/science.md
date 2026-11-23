@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: af384e5fbc815b56
-SCOPE: delta added-exercise from fe154ae5f2ac3508 base 8f23aa7ae3bd
+CONTENT-HASH: dd7347ac758b942f
+SCOPE: delta caption-label,md-paragraphs,numbers,reflow,typography from af384e5fbc815b56 base b5600a6
 
 ## Blocking
 
 ## Polish
-- content/fi/FY6/fy6-8/exercises/solutions.md (fy6-8-L2-09, Vastaus) — "kaksi merkitsevää numeroa, koska arvot luetaan ruudukolta" is thin: say that the read points lie exactly on gridline crossings, which justifies 0,020 Ω.
 
 ## Checked
-- Hash af384e5fbc815b56 at start and end; delta round 2: only fy6-8-L2-09 judged.
-- Round-1 blocking item resolved: the task now says "(mallista lasketut pisteet)" and the figure's alt text "Mallista lasketut pisteet ovat …", matching figures.py, which draws the points exactly from U = 12 V − 0,020 Ω · I.
-- Figure generator: points (50; 11), (100; 10), (150; 9), (200; 8), (250; 7) on the line drawn over the data only (no E or I_k shown); gridlines 50 A and 1 V; alt text gives the same points.
-- Model U = E − R_s I, slope −R_s; the solution derives R_s = (U₁ − U₂) : (I₂ − I₁) before numbers and warns that one point's U : I is the load resistance.
-- Recomputed: R_s = 4 V : 200 A = 0,020 Ω; answers.py agrees; unit Ω and tolerance 4 % fit.
-- Magnitudes realistic (E = 12 V, 20 mΩ, 7 V at 250 A); check with the third point and E = 12 V is a real check.
+- Hash dd7347ac758b942f at start and end; delta judged: Kaava steps of 15 solutions rewritten to start from $U = E - R_\text{s}I$, the loop equation $E - R_\text{s}I - RI = 0$, $1 : R_\text{s} = \Sigma 1 : R_{\text{s}1}$ or the series sums; paragraph splits; captions without "(esimerkkiaineisto)".
+- Short circuit (L1, graph task, L3-05): $0 = E - R_\text{s}I_\text{k}$ from $U = 0$ at the battery's own terminals; in L3-05 correctly with $R_\text{s}$ alone, after subtracting $R_\text{j}$.
+- Parallel cells: the reciprocal sum gives $R_{\text{s}1} : n$ and $I = I_1 + I_1$ for equal cells, as the brief teaches; reversed cell $E = E_1 + E_1 - E_1$ with $3R_{\text{s}1}$ kept.
+- Two-point chains (L2, L3-04, L3-05, L2-09) subtract the two model equations correctly and end in the form Sijoitus uses; the intersection chain $U_\text{A} = U_\text{B}$ gives $(E_\text{A} - E_\text{B}) : (R_\text{A} - R_\text{B})$.
+- One script recomputed every touched number: 32,5 A, 0,15 Ω, 1,0 Ω, 5,5 V, 3,0 W, 1,0 A, 0,75 A, 0,3158 A, 1,60 V, 0,38 Ω, 0,558 Ω, 0,39 A, 0,355, 7,64 A, 0,020 Ω: all agree; answers.py unchanged.
+- Split paragraphs (L1-06, L2-08, L3-03, L3-04, L3-05): same sentences and numbers in the same order.
+- Caption change follows the teacher's rule; L2-09 still says its points are computed from the model.

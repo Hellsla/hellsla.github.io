@@ -1,7 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: d545a6f33a79d74d
-SCOPE: delta wording from feb3d9ff810a6f9a base dbb6c70c53
-Note: delta wording-only: one distractor feedback sentence in the charge-conservation task.
+CONTENT-HASH: 7165b6789e1e247e
+SCOPE: delta numbers from d545a6f33a79d74d base 3076572
 
 ## Blocking
 (none)
@@ -10,6 +9,8 @@ Note: delta wording-only: one distractor feedback sentence in the charge-conserv
 (none)
 
 ## Checked
-- New feedback "Varaus ei muutu miksikään muuksi eikä häviä" repairs the "charge turned into heat" misconception (conservation) without naming the correct option; grammatical Finnish.
-- The following sentence (kokonaisvaraus pysyy samana, villan varaus itseisarvoltaan sama kuin sauvan) is unchanged and still gives the reasoning.
-- No numbers, symbols or other options touched; hash at end equals the start hash.
+- The Kaava/Formula step of the model solutions now starts from the basic principle equation (F = qE, W = qU, energy conservation, Newton's laws, Coulomb) and derives the result row by row; each row follows from the previous one.
+- The derivations match the Principle step above them; no step is skipped and no new symbol appears without explanation.
+- Re-broken aligned rows keep numbers, signs and units unchanged; no task, data, level or answer changed.
+- Split solution and model-answer paragraphs read more easily, text unchanged in substance.
+- Rows are short, so they stay readable at 360 px.

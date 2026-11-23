@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: df6cf372cf645c1d
+CONTENT-HASH: 7fda86c22f2d15e3
+SCOPE: delta numbers,typography,wording,md-paragraphs from df6cf372cf645c1d base 5b3ca4f
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- The new task fy6-7-L2-09 matches the Finnish task passed earlier. The ENERGY STAR pair is LG LT18S1100* at 344 kWh/a and LT18S1200* at 440 kWh/a, both Top Freezer, 17,5 ft³, read 15 Nov 2026.
-- a) 96 kWh more, about 28 %.
-- b) P_avg = E/t gives 39,27 W and 50,23 W with t = 8760 h.
-- c) K = naE gives 688 € and 880 €, a difference of 192 €.
-- The rounding reasons match the Finnish set. The answer is 39,269 W with tolerance 0,02, and answers.py is shared.
-- d): the duty-cycle mechanism (P_avg ≈ kP_run, k ≈ 0,39 at 100 W) is correct. The 100 W is marked as a general order of magnitude, not as source data.
-- The task says the stated use is a standard test result, not a home measurement. 1 ft³ ≈ 28,3 l is correct.
-- Reflowed chains: same numbers, signs and units in the same order.
-- Hash read at start and end: unchanged.
+- Full diff `git diff 5b3ca4f -- content/en/FY6/fy6-7/exercises lessons/FY6/fy6-7` judged.
+- Formula blocks now start from the basic equations: E_i = P_i t_i, E = ΣE_i (washer, three-phase cost task); P = UI, E = Pt, E = UIt; E = Pt, K = aE, K = aPt; ΔE = E_1 − E_2 = (P_1 − P_2)t; E_2 = E_1 so t_2 = P_1t_1/P_2; K = K_base + aE solved for E; U = RI, I = U/R, P = UI, E = UIt (resistor); E_day,i = P_i t_i, ΣE_day,i, E_year = 365·E_day,tot. Every row is a correct step and the last row is the one substituted into.
+- L3-04: K = ΣaE, a_avg = K/E_tot, E_heater = Pt, K_high = a_high E_heater, K_low = a_low E_heater, S = K_high − K_low = E_heater(a_high − a_low). Correct; no false row remains.
+- Recomputed touched numbers: washer 2.0·0.25 + 0.2·1.0 + 0.4·0.25 = 0.80 kWh; first period 1.2·3.9 = 4.68 c; a_avg = 267.44/19.0 = 14.08 c/kWh; E_heater = 6.0 kWh, S = 6.0·15.5 = 93.0 c; refrigerator 344 kWh/8760 h = 39.27 W, k ≈ 0.39; 0.0393 kW·8760 h ≈ 344 kWh; average power 2.01 kWh/24 h ≈ 84 W. All agree.
+- lesson-answers.py kertaus rows: 230·0.43 = 98.9 W ≈ 99 W, 230/0.43 = 535 ≈ 530 (2 s.f.); both agree with inquiry.json (en and fi) option and feedback values.
+- Paragraph splits change no physics and no order of reasoning.
+- Content hash checked at the start and at the end.

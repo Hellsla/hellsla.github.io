@@ -43,7 +43,7 @@
 **Kysytty:** liike-energian kasvu $\Delta E_\text{k}$ elektronivoltteina
 **Periaate:** Kun vain sähköinen voima tekee työtä, liike-energia kasvaa yhtä paljon kuin potentiaalienergia pienenee. Protonin varaus on $e$, joten jokainen voltti, jonka verran potentiaali laskee, antaa sille yhden elektronivoltin liike-energiaa.
 **Kuvaajan lukeminen:** Kohdassa $x = 4{,}0\,\text{cm}$ suora on $200\,\text{V}$:n ruudukkoviivalla ja kohdassa $x = 1{,}0\,\text{cm}$ $50\,\text{V}$:n ruudukkoviivalla. Potentiaali siis laskee siirtymässä.
-**Kaava:** $\Delta E_\text{k} = -\Delta E_\text{p} = e(V_1 - V_2)$, missä $V_1 = V(4{,}0\,\text{cm})$ ja $V_2 = V(1{,}0\,\text{cm})$
+**Kaava:** $$\begin{aligned} \Delta E_\text{k} + \Delta E_\text{p} &= 0 \\ \Delta E_\text{p} &= e\Delta V = e(V_2 - V_1) \\ \Delta E_\text{k} &= -\Delta E_\text{p} = e(V_1 - V_2) \end{aligned}$$ missä $V_1 = V(4{,}0\,\text{cm})$ ja $V_2 = V(1{,}0\,\text{cm})$
 **Muunnokset:** Ei tarvita: kun varaus on $e$ ja potentiaaliero voltteina, energia saadaan suoraan elektronivoltteina.
 **Sijoitus:** $\Delta E_\text{k} = e \cdot (200\,\text{V} - 50\,\text{V}) = 150\,\text{eV}$
 **Vastaus:** $150\,\text{eV}$, kaksi merkitsevää numeroa, koska potentiaalit luetaan $50\,\text{V}$:n ruudukkoviivoilta ja paikat on annettu kahden merkitsevän numeron tarkkuudella.
@@ -53,7 +53,7 @@
 **Annettu:** kentänvoimakkuus $E = 2{,}5\,\text{kV/m}$, siirtymä kentän suuntaan $s = 3{,}0\,\text{cm}$, protonin varaus $e$
 **Kysytty:** potentiaalienergian muutos $\Delta E_\text{p}$ elektronivoltteina etumerkkeineen
 **Periaate:** Homogeenisessa kentässä potentiaali muuttuu tasaisesti, ja kentän suuntaan se pienenee määrän $Es$. Protonin potentiaalienergia on $eV$, joten se pienenee yhtä monta elektronivolttia kuin potentiaali pienenee voltteja.
-**Kaava:** $\Delta V = -Es$ ja $\Delta E_\text{p} = e\Delta V$, joten $\Delta E_\text{p} = -eEs$
+**Kaava:** $$\begin{aligned} \Delta V &= -Es \\ \Delta E_\text{p} &= e\Delta V \\ \Delta E_\text{p} &= -eEs \end{aligned}$$
 **Muunnokset:** $E = 2{,}5\,\text{kV/m} = 2{,}5 \cdot 1000\,\text{V/m} = 2500\,\text{V/m}$ ja $s = 3{,}0\,\text{cm} = 3{,}0 \cdot 0{,}01\,\text{m} = 0{,}030\,\text{m}$
 **Sijoitus:** $\Delta V = -2500\,\text{V/m} \cdot 0{,}030\,\text{m} = -75\,\text{V}$ ja $\Delta E_\text{p} = e \cdot (-75\,\text{V}) = -75\,\text{eV}$
 **Vastaus:** $-75\,\text{eV}$, kaksi merkitsevää numeroa kuten kentänvoimakkuudessa ja matkassa.
@@ -63,7 +63,7 @@
 **Annettu:** levyjen väli $d = 2{,}0\,\text{cm}$, jännite $U = 300\,\text{V}$, kohdan $P$ etäisyys negatiivisesta levystä $x = 0{,}80\,\text{cm}$; negatiivinen levy on nollakohta; elektronin varaus $-e$
 **Kysytty:** elektronin potentiaalienergia $E_\text{p}$ kohdassa $P$ elektronivoltteina
 **Periaate:** Homogeenisessa kentässä potentiaali kasvaa tasaisesti negatiivisesta levystä positiiviseen, $V = Ex$, missä $E = U : d$. Elektronin varaus on negatiivinen, joten sen potentiaalienergia $E_\text{p} = -eV$ on negatiivinen kohdassa, jonka potentiaali on positiivinen.
-**Kaava:** $V_P = Ex = \dfrac{U}{d}\,x$ ja $E_\text{p} = -eV_P$, joten $E_\text{p} = -e\,\dfrac{Ux}{d}$
+**Kaava:** $$\begin{aligned} E &= \dfrac{U}{d} \\ V_P &= Ex = \dfrac{U}{d}\,x \\ E_\text{p} &= -eV_P \\ E_\text{p} &= -e\,\dfrac{Ux}{d} \end{aligned}$$
 **Muunnokset:** Ei tarvita: senttimetrit supistuvat suhteessa $x : d$, ja varauksella $e$ potentiaali voltteina antaa energian elektronivoltteina.
 **Sijoitus:** $V_P = 300\,\text{V} \cdot \dfrac{0{,}80\,\text{cm}}{2{,}0\,\text{cm}} = 120\,\text{V}$ ja $E_\text{p} = -e \cdot 120\,\text{V} = -120\,\text{eV}$
 **Vastaus:** $-120\,\text{eV}$ eli $-1{,}2 \cdot 10^{2}\,\text{eV}$, kaksi merkitsevää numeroa kuten etäisyyksissä.
@@ -73,7 +73,7 @@
 **Annettu:** varaus $q = 2e$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$, massa $m = 6{,}645 \cdot 10^{-27}\,\text{kg}$, potentiaaliero $U = 2{,}0\,\text{kV}$, alkunopeus nolla
 **Kysytty:** nopeus $v$ metreinä sekunnissa
 **Periaate:** Vain sähköinen voima tekee työtä, joten potentiaalienergia muuttuu liike-energiaksi: kenttä tekee työn $qU$, ja levosta lähtenyt hiukkanen saa yhtä suuren liike-energian. Alfahiukkasen varaus on kaksinkertainen, joten se saa kaksinkertaisen energian protoniin verrattuna.
-**Kaava:** $\tfrac{1}{2}mv^2 = qU = 2eU$, josta $v = \sqrt{\dfrac{4eU}{m}}$
+**Kaava:** $$\begin{aligned} E_\text{k} &= W = qU \\ q &= 2e \\ \tfrac{1}{2}mv^2 &= 2eU \\ v^2 &= \dfrac{4eU}{m} \\ v &= \sqrt{\dfrac{4eU}{m}} \end{aligned}$$
 **Muunnokset:** $U = 2{,}0\,\text{kV} = 2{,}0 \cdot 1000\,\text{V} = 2000\,\text{V}$
 **Sijoitus:** $v = \sqrt{\dfrac{4 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 2000\,\text{V}}{6{,}645 \cdot 10^{-27}\,\text{kg}}} = 4{,}392 \cdot 10^{5}\,\text{m/s}$
 **Vastaus:** $4{,}4 \cdot 10^{5}\,\text{m/s}$, kaksi merkitsevää numeroa kuten jännitteessä $2{,}0\,\text{kV}$.
@@ -83,7 +83,7 @@
 **Annettu:** loppunopeus $v = 1{,}0 \cdot 10^{7}\,\text{m/s}$, alkunopeus nolla, $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
 **Kysytty:** kiihdytysjännite $U$ voltteina
 **Periaate:** Vain sähköinen voima tekee työtä, joten elektronin saama liike-energia on yhtä suuri kuin kentän tekemä työ $eU$. Kun liike-energia tunnetaan nopeudesta, jännite saadaan ratkaisemalla energiayhtälöstä.
-**Kaava:** $\tfrac{1}{2}mv^2 = eU$, josta $U = \dfrac{mv^2}{2e}$
+**Kaava:** $$\begin{aligned} E_\text{k} &= W \\ \tfrac{1}{2}mv^2 &= eU \\ U &= \dfrac{mv^2}{2e} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{kg} \cdot 1\,\text{m}^2/\text{s}^2 = 1\,\text{J}$ ja $1\,\text{J} : 1\,\text{C} = 1\,\text{V}$.
 **Sijoitus:** $$\begin{aligned} mv^2 &= 9{,}109 \cdot 10^{-31}\,\text{kg} \\ &\cdot (1{,}0 \cdot 10^{7}\,\text{m/s})^2 \\ &= 9{,}109 \cdot 10^{-17}\,\text{J} \end{aligned}$$ ja $U = \dfrac{9{,}109 \cdot 10^{-17}\,\text{J}}{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C}} = 284{,}3\,\text{V}$
 **Vastaus:** $2{,}8 \cdot 10^{2}\,\text{V}$ eli noin $280\,\text{V}$, kaksi merkitsevää numeroa kuten nopeudessa.
@@ -93,7 +93,7 @@
 **Annettu:** $v_A = 2{,}0 \cdot 10^{6}\,\text{m/s}$, $V_A = 40\,\text{V}$, $V_B = 160\,\text{V}$, $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$, elektronin varaus $q = -e$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
 **Kysytty:** nopeus $v_B$ metreinä sekunnissa
 **Periaate:** Vain sähköinen voima tekee työtä, joten liike-energian ja potentiaalienergian summa säilyy. Elektronin potentiaalienergia on $-eV$, joten se pienenee, kun elektroni siirtyy suurempaan potentiaaliin, ja liike-energia kasvaa yhtä paljon.
-**Kaava:** $\tfrac{1}{2}mv_A^2 - eV_A = \tfrac{1}{2}mv_B^2 - eV_B$, josta $E_{\text{k},B} = \tfrac{1}{2}mv_A^2 + e(V_B - V_A)$ ja $v_B = \sqrt{\dfrac{2E_{\text{k},B}}{m}}$
+**Kaava:** $$\begin{aligned} E_{\text{k},A} + E_{\text{p},A} &= E_{\text{k},B} + E_{\text{p},B} \\ E_\text{p} &= -eV \\ \tfrac{1}{2}mv_A^2 - eV_A &= E_{\text{k},B} - eV_B \\ E_{\text{k},B} &= \tfrac{1}{2}mv_A^2 + e(V_B - V_A) \\ v_B &= \sqrt{\dfrac{2E_{\text{k},B}}{m}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** $$\begin{aligned} \tfrac{1}{2}mv_A^2 &= \tfrac{1}{2} \cdot 9{,}109 \cdot 10^{-31}\,\text{kg} \\ &\cdot (2{,}0 \cdot 10^{6}\,\text{m/s})^2 \\ &= 1{,}822 \cdot 10^{-18}\,\text{J} \end{aligned}$$, $$\begin{aligned} &e(V_B - V_A) \\ &= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 120\,\text{V} \\ &= 1{,}922 \cdot 10^{-17}\,\text{J} \end{aligned}$$, $$\begin{aligned} E_{\text{k},B} &= 1{,}822 \cdot 10^{-18}\,\text{J} \\ &+ 1{,}922 \cdot 10^{-17}\,\text{J} \\ &= 2{,}105 \cdot 10^{-17}\,\text{J} \end{aligned}$$ ja $v_B = \sqrt{\dfrac{2 \cdot 2{,}105 \cdot 10^{-17}\,\text{J}}{9{,}109 \cdot 10^{-31}\,\text{kg}}} = 6{,}80 \cdot 10^{6}\,\text{m/s}$
 **Vastaus:** $6{,}8 \cdot 10^{6}\,\text{m/s}$, kaksi merkitsevää numeroa kuten alkunopeudessa ja potentiaaleissa.
@@ -103,7 +103,7 @@
 **Annettu:** elektronin massa $m_\text{e} = 9{,}109 \cdot 10^{-31}\,\text{kg}$, protonin massa $m_\text{p} = 1{,}673 \cdot 10^{-27}\,\text{kg}$; kumpikin lähtee levosta ja kulkee saman potentiaalieron $U$ läpi, ja kummankin varauksen suuruus on $e$
 **Kysytty:** elektronin ja protonin nopeuksien suhde $v_\text{e} : v_\text{p}$, kun ne kulkevat levosta saman potentiaalieron $U$ läpi
 **Periaate:** Kummankin varauksen suuruus on $e$, joten kenttä tekee kumpaankin saman työn $eU$ ja ne saavat saman liike-energian, vaikka liikkuvat vastakkaisiin suuntiin. Sama liike-energia $\tfrac{1}{2}mv^2$ antaa pienemmälle massalle suuremman nopeuden.
-**Kaava:** $\tfrac{1}{2}m_\text{e}v_\text{e}^2 = eU = \tfrac{1}{2}m_\text{p}v_\text{p}^2$, joten $\dfrac{v_\text{e}}{v_\text{p}} = \sqrt{\dfrac{m_\text{p}}{m_\text{e}}}$
+**Kaava:** $$\begin{aligned} E_{\text{k},\text{e}} &= W = eU \\ E_{\text{k},\text{p}} &= W = eU \\ \tfrac{1}{2}m_\text{e}v_\text{e}^2 &= \tfrac{1}{2}m_\text{p}v_\text{p}^2 \\ \dfrac{v_\text{e}^2}{v_\text{p}^2} &= \dfrac{m_\text{p}}{m_\text{e}} \\ \dfrac{v_\text{e}}{v_\text{p}} &= \sqrt{\dfrac{m_\text{p}}{m_\text{e}}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: massojen yksiköt supistuvat, eikä jännitettä tarvita.
 **Sijoitus:** $\dfrac{v_\text{e}}{v_\text{p}} = \sqrt{\dfrac{1{,}673 \cdot 10^{-27}\,\text{kg}}{9{,}109 \cdot 10^{-31}\,\text{kg}}} = \sqrt{1837} = 42{,}86$
 **Vastaus:** Elektronin nopeus on noin $43$-kertainen, kaksi merkitsevää numeroa riittää suhteelle; massat on annettu neljän numeron tarkkuudella.
@@ -113,7 +113,7 @@
 **Annettu:** levyjen väli $d = 2{,}0\,\text{cm}$, jännite $U = 600\,\text{V}$, alkunopeus $v_0 = 3{,}0 \cdot 10^{5}\,\text{m/s}$, $m = 1{,}673 \cdot 10^{-27}\,\text{kg}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
 **Kysytty:** kääntymiskohdan etäisyys positiivisesta levystä millimetreinä
 **Periaate:** Protoni liikkuu kohti suurempaa potentiaalia, joten sen potentiaalienergia kasvaa ja liike-energia pienenee yhtä paljon. Se pysähtyy kohdassa, jossa koko alkuperäinen liike-energia on muuttunut potentiaalienergiaksi. Homogeenisessa kentässä potentiaali kasvaa tasaisesti, $V = Ex = \dfrac{U}{d}\,x$ negatiivisesta levystä mitattuna.
-**Kaava:** $E_{\text{k},0} = \tfrac{1}{2}mv_0^2$ ja $E_{\text{k},0} = eV = e\,\dfrac{U}{d}\,x$, josta $x = \dfrac{E_{\text{k},0}\,d}{eU}$; etäisyys positiivisesta levystä on $d - x$
+**Kaava:** $$\begin{aligned} E_{\text{k},0} &= \tfrac{1}{2}mv_0^2 \\ V &= Ex = \dfrac{U}{d}\,x \\ E_{\text{k},0} &= eV = e\,\dfrac{U}{d}\,x \\ x &= \dfrac{E_{\text{k},0}\,d}{eU} \end{aligned}$$ Etäisyys positiivisesta levystä on $d - x$.
 **Muunnokset:** $d = 2{,}0\,\text{cm} = 0{,}020\,\text{m}$ ja lopuksi $1\,\text{m} = 1000\,\text{mm}$.
 **Sijoitus:** $$\begin{aligned} E_{\text{k},0} &= \tfrac{1}{2} \cdot 1{,}673 \cdot 10^{-27}\,\text{kg} \\ &\cdot (3{,}0 \cdot 10^{5}\,\text{m/s})^2 \\ &= 7{,}529 \cdot 10^{-17}\,\text{J} \end{aligned}$$, $x = \dfrac{7{,}529 \cdot 10^{-17}\,\text{J} \cdot 0{,}020\,\text{m}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 600\,\text{V}} = 0{,}01566\,\text{m}$ ja $d - x = 0{,}020\,\text{m} - 0{,}01566\,\text{m} = 0{,}00434\,\text{m} = 4{,}34\,\text{mm}$
 **Vastaus:** $4{,}3\,\text{mm}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -186,7 +186,7 @@ Voima vaikuttaa varaukseen joka kohdassa, ei vasta nollakohdassa.
 **Annettu:** varaus $q = e = 1{,}602 \cdot 10^{-19}\,\text{C}$, alkunopeus nolla, viisi mittausriviä $(U, v)$; vaihtoehdot: protonin massa $1{,}673 \cdot 10^{-27}\,\text{kg}$, deuteronin $3{,}344 \cdot 10^{-27}\,\text{kg}$ ja heliumionin $6{,}646 \cdot 10^{-27}\,\text{kg}$
 **Kysytty:** ionin massan $m$ keskiarvo kilogrammoina ja ionin laji
 **Periaate:** Vain sähköinen voima tekee työtä, joten liike-energia on yhtä suuri kuin kentän tekemä työ, $\tfrac{1}{2}mv^2 = eU$. Massa saadaan ratkaisemalla yhtälö jokaiselle riville, ja satunnainen mittaushajonta tasoittuu keskiarvossa.
-**Kaava:** $\tfrac{1}{2}mv^2 = eU$, josta $m = \dfrac{2eU}{v^2}$
+**Kaava:** $$\begin{aligned} E_\text{k} &= W \\ \tfrac{1}{2}mv^2 &= eU \\ m &= \dfrac{2eU}{v^2} \end{aligned}$$
 **Muunnokset:** Taulukon nopeus $6{,}88$ yksikössä $10^{4}\,\text{m/s}$ on $6{,}88 \cdot 10^{4}\,\text{m/s}$; muuten suureet ovat perusyksiköissä.
 **Sijoitus:** Rivin $U = 100\,\text{V}$ massa on $m_1 = \dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 100\,\text{V}}{(6{,}88 \cdot 10^{4}\,\text{m/s})^2} = 6{,}77 \cdot 10^{-27}\,\text{kg}$. Muut rivit antavat $m_2 = 6{,}47 \cdot 10^{-27}\,\text{kg}$, $m_3 = 6{,}68 \cdot 10^{-27}\,\text{kg}$, $m_4 = 6{,}63 \cdot 10^{-27}\,\text{kg}$ ja $m_5 = 6{,}75 \cdot 10^{-27}\,\text{kg}$. Massojen summa on $33{,}30 \cdot 10^{-27}\,\text{kg}$, joten $m = 33{,}30 \cdot 10^{-27}\,\text{kg} : 5 = 6{,}66 \cdot 10^{-27}\,\text{kg}$
 **Vastaus:** a) $6{,}66 \cdot 10^{-27}\,\text{kg}$, kolme merkitsevää numeroa kuten nopeuksissa; b) ioni on yksinkertaisesti varautunut heliumioni (He$^+$), jonka massa on $6{,}646 \cdot 10^{-27}\,\text{kg}$.
@@ -223,7 +223,7 @@ Liike-energia on $90\,\text{eV}$ eli $1{,}4 \cdot 10^{-17}\,\text{J}$ kahden mer
 **Annettu:** kiihdytysjännite $U_\text{k} = 1{,}8\,\text{kV}$, levyjen pituus $L = 5{,}0\,\text{cm}$, levyjen väli $d = 1{,}5\,\text{cm}$, poikkeutusjännite $U_\text{p} = 120\,\text{V}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$, $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$; alkunopeus nolla ja saapuminen levyjen väliin keskeltä levyjen suuntaisesti
 **Kysytty:** a) nopeus $v$ ennen levyjä, b) poikkeama $y$ millimetreinä levyjen lopussa ja osuuko elektroni levyyn, c) onko painovoima merkityksetön
 **Periaate:** Kiihdytyksessä vain sähköinen voima tekee työtä, joten potentiaalienergia muuttuu liike-energiaksi. Levyjen välissä kenttä on homogeeninen ja sen voima on levyihin nähden kohtisuora, joten kiihtyvyys on vakio. Levyjen suunnassa ei ole voimaa, joten nopeus $v$ säilyy ja läpikulkuaika on $t = L : v$.
-**Kaava:** $\tfrac{1}{2}mv^2 = eU_\text{k}$, josta $v = \sqrt{\dfrac{2eU_\text{k}}{m}}$; $E = \dfrac{U_\text{p}}{d}$, $F = eE$, $a = \dfrac{F}{m}$, $t = \dfrac{L}{v}$ ja $y = \tfrac{1}{2}at^2$. Yhdistettynä massa supistuu: $y = \dfrac{U_\text{p}L^2}{4dU_\text{k}}$
+**Kaava:** $$\begin{aligned} \tfrac{1}{2}mv^2 &= eU_\text{k} \\ v &= \sqrt{\dfrac{2eU_\text{k}}{m}} \\ E &= \dfrac{U_\text{p}}{d} \\ F &= eE \\ a &= \dfrac{F}{m} = \dfrac{eU_\text{p}}{md} \\ t &= \dfrac{L}{v} \\ y &= \tfrac{1}{2}at^2 = \tfrac{1}{2}\,\dfrac{eU_\text{p}}{md}\,\dfrac{mL^2}{2eU_\text{k}} \\ y &= \dfrac{U_\text{p}L^2}{4dU_\text{k}} \end{aligned}$$
 **Muunnokset:** $U_\text{k} = 1{,}8\,\text{kV} = 1800\,\text{V}$, $L = 5{,}0\,\text{cm} = 0{,}050\,\text{m}$, $d = 1{,}5\,\text{cm} = 0{,}015\,\text{m}$ ja lopuksi $1\,\text{m} = 1000\,\text{mm}$.
 **Sijoitus:** a) $v = \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1800\,\text{V}}{9{,}109 \cdot 10^{-31}\,\text{kg}}} = 2{,}516 \cdot 10^{7}\,\text{m/s}$. b) Aika on $t = 0{,}050\,\text{m} : 2{,}516 \cdot 10^{7}\,\text{m/s} = 1{,}987 \cdot 10^{-9}\,\text{s}$, voima $$\begin{aligned} F &= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 120\,\text{V} \\ &: 0{,}015\,\text{m} \\ &= 1{,}282 \cdot 10^{-15}\,\text{N} \end{aligned}$$ ja kiihtyvyys $$\begin{aligned} a &= 1{,}282 \cdot 10^{-15}\,\text{N} \\ &: 9{,}109 \cdot 10^{-31}\,\text{kg} \\ &= 1{,}407 \cdot 10^{15}\,\text{m/s}^2 \end{aligned}$$. Poikkeama on $$\begin{aligned} y &= \tfrac{1}{2} \cdot 1{,}407 \cdot 10^{15}\,\text{m/s}^2 \\ &\cdot (1{,}987 \cdot 10^{-9}\,\text{s})^2 \\ &= 2{,}78 \cdot 10^{-3}\,\text{m} \\ &= 2{,}78\,\text{mm} \end{aligned}$$. Puolet levyjen välistä on $d : 2 = 7{,}5\,\text{mm}$, joten elektroni ei osu levyyn. c) Painovoima on $mg = 9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 8{,}94 \cdot 10^{-30}\,\text{N}$, ja sähköinen voima on $1{,}282 \cdot 10^{-15}\,\text{N}$, eli noin $1{,}4 \cdot 10^{14}$ kertaa suurempi.
 **Vastaus:** a) $2{,}5 \cdot 10^{7}\,\text{m/s}$; b) $2{,}8\,\text{mm}$, kaksi merkitsevää numeroa kuten lähtötiedoissa, eikä elektroni osu levyyn; c) sähköinen voima on noin $1{,}4 \cdot 10^{14}$ kertaa suurempi kuin painovoima, joten painovoima voidaan jättää huomiotta.
@@ -249,7 +249,7 @@ c) Jouleina $E_\text{k,ka} = 48{,}8 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 7{,
 **Kysytty:** nopeus $v$ positiivisella levyllä
 **Periaate:** Vain sähköinen voima tekee työtä, joten liike-energian ja potentiaalienergian summa säilyy. Elektroni liikkuu kohti suurempaa potentiaalia, joten sen potentiaalienergia pienenee määrän $eU$ ja liike-energia kasvaa saman verran. Potentiaaliero luetaan kuvaajasta.
 **Kuvaajan lukeminen:** Kohdassa $x = 1{,}0\,\text{cm}$ suora on $50\,\text{V}$:n ruudukkoviivalla. Positiivinen levy on kohdassa $x = 5{,}0\,\text{cm}$, missä suora on $250\,\text{V}$:n viivalla. Potentiaaliero on $U = 250\,\text{V} - 50\,\text{V} = 200\,\text{V}$.
-**Kaava:** $\tfrac{1}{2}mv^2 = eU$, josta $v = \sqrt{\dfrac{2eU}{m}}$
+**Kaava:** $$\begin{aligned} E_\text{k} &= W \\ \tfrac{1}{2}mv^2 &= eU \\ v^2 &= \dfrac{2eU}{m} \\ v &= \sqrt{\dfrac{2eU}{m}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: kaikki suureet ovat SI-yksiköissä, ja $\sqrt{1\,\text{C} \cdot 1\,\text{V} : 1\,\text{kg}} = 1\,\text{m/s}$.
 **Sijoitus:** $v = \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 200\,\text{V}}{9{,}109 \cdot 10^{-31}\,\text{kg}}} = 8{,}387 \cdot 10^{6}\,\text{m/s}$
 **Vastaus:** $v \approx 8{,}4 \cdot 10^{6}\,\text{m/s}$, kaksi merkitsevää numeroa, koska potentiaalit luetaan $50\,\text{V}$:n ruudukkoviivoilta ja paikka on annettu kahdella merkitsevällä numerolla.

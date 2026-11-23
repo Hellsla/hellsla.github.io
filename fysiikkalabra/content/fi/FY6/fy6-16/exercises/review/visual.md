@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b985b7a417d021ea
+CONTENT-HASH: 12b82b09f5af8447
+SCOPE: delta numbers from b985b7a417d021ea base 3076572
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] No Minors from this delta; the new paragraph breaks fall at sentence boundaries, one thing per paragraph, no orphaned one-word paragraphs, no stage starts mid-thought.
+- [Minor] solutions.md Formula blocks — consecutive rows of unrelated starting equations share one aligned `=` column, so the left sides drift (e.g. `I_talo + I_a = I_p` sits left of its neighbours); acceptable, no change needed.
 
 ## Checked
-- Delta (md-paragraphs, solutions.md only): the diff read in full; captures opened: fy6-16-open-exercises-L2-1280-5 (solution card spacing at 1280).
-- Not opened: 390 px solution captures (none are made for open solutions; check_layout 360 px already passes in the packet).
+- Delta (solutions.md): the new Kaava/Formula blocks that start from basic-principle equations, as aligned multi-row display maths. Captures opened (1280 px, every solution open): L3-6, L3-7 (house current + cable, 6 rows), L3-8.
+- Blocks render without red KaTeX, equals signs aligned, fractions and subscripts legible, nothing clipped at 664 px column; the following Muunnokset/Sijoitus blocks survived. English: no Finnish words in the maths of the captured blocks (text-subscript grep over every Formula line too).
+- Not opened: 390 px solution captures (none made for open solutions; check_layout 360 px passes).
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

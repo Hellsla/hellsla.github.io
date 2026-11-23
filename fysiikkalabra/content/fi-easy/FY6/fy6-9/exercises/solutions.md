@@ -33,7 +33,7 @@
 **Annettu:** kapasiteetti $Q = 2{,}4\,\text{Ah}$, virta $I = 0{,}15\,\text{A}$
 **Kysytty:** paloaika $t$ tunteina
 **Periaate:** Lamppu ottaa vakiovirtaa. Siksi akun läpi kulkeva varaus on virta kertaa aika. Akku tyhjenee, kun varaus on yhtä suuri kuin kapasiteetti.
-**Kaava:** $Q = It$, josta $t = \dfrac{Q}{I}$
+**Kaava:** $$\begin{aligned} Q &= It \\ t &= \dfrac{Q}{I} \end{aligned}$$
 **Muunnokset:** Ei tarvita: ampeerituntien ja ampeerien osamäärä on tunteja.
 **Sijoitus:** $t = \dfrac{2{,}4\,\text{Ah}}{0{,}15\,\text{A}} = 16\,\text{h}$
 **Vastaus:** $16\,\text{h}$, kaksi merkitsevää numeroa kuten kapasiteetissa ja virrassa.
@@ -44,7 +44,7 @@
 **Kysytty:** akun läpi kulkenut varaus $Q$ ampeeritunteina
 **Periaate:** Vakiovirralla varaus on virta kertaa aika eli virran ja ajan kuvaajan alle jäävä pinta-ala. Virta on kahdessa vakio-osassa. Siksi varaus on kahden suorakulmion pinta-alojen summa.
 **Kuvaajan lukeminen:** Virta on $2{,}0\,\text{A}$:n ruudukkoviivalla ajasta $0$ aikaan $1{,}5\,\text{h}$ ja $1{,}0\,\text{A}$:n viivalla ajasta $1{,}5\,\text{h}$ aikaan $2{,}5\,\text{h}$, jonka jälkeen se on nolla.
-**Kaava:** $Q = I_1 t_1 + I_2 t_2$
+**Kaava:** $$\begin{aligned} Q_1 &= I_1 t_1 \\ Q_2 &= I_2 t_2 \\ Q &= Q_1 + Q_2 \\ Q &= I_1 t_1 + I_2 t_2 \end{aligned}$$
 **Muunnokset:** Ei tarvita: ampeeri kertaa tunti on ampeeritunti. Toisen osan kesto on $t_2 = 2{,}5\,\text{h} - 1{,}5\,\text{h} = 1{,}0\,\text{h}$.
 **Sijoitus:** $Q = 2{,}0\,\text{A} \cdot 1{,}5\,\text{h} + 1{,}0\,\text{A} \cdot 1{,}0\,\text{h} = 3{,}0\,\text{Ah} + 1{,}0\,\text{Ah} = 4{,}0\,\text{Ah}$
 **Vastaus:** $4{,}0\,\text{Ah}$, kaksi merkitsevää numeroa. Arvot luetaan ruudukkoviivoilta, joiden väli on $0{,}5\,\text{A}$ ja $0{,}5\,\text{h}$.
@@ -54,7 +54,7 @@
 **Annettu:** $E = 12{,}4\,\text{V}$, $R_\text{s} = 40\,\text{m}\Omega$, $U_\text{lat} = 14{,}4\,\text{V}$, $R = 0{,}36\,\Omega$
 **Kysytty:** latausvirta $I$ ampeereina
 **Periaate:** Piirissä on yksi silmukka. Jännitelain mukaan laturin jännite on potentiaalin laskujen summa. Virta kulkee akun läpi plusnavalta miinusnavalle. Siksi potentiaali laskee akussa sekä sisäisessä resistanssissa että lähdejännitteen verran.
-**Kaava:** $U_\text{lat} - RI - R_\text{s} I - E = 0$, josta $I = \dfrac{U_\text{lat} - E}{R + R_\text{s}}$
+**Kaava:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{lat} - RI - R_\text{s} I - E &= 0 \\ U_\text{lat} - E &= (R + R_\text{s})I \\ I &= \dfrac{U_\text{lat} - E}{R + R_\text{s}} \end{aligned}$$
 **Muunnokset:** $R_\text{s} = 40\,\text{m}\Omega = 40 \cdot 0{,}001\,\Omega = 0{,}040\,\Omega$
 **Sijoitus:** $I = \dfrac{14{,}4\,\text{V} - 12{,}4\,\text{V}}{0{,}36\,\Omega + 0{,}040\,\Omega} = \dfrac{2{,}0\,\text{V}}{0{,}40\,\Omega} = 5{,}0\,\text{A}$
 **Vastaus:** $5{,}0\,\text{A}$, kaksi merkitsevää numeroa kuten jännite-erotuksessa $2{,}0\,\text{V}$ ja resistansseissa.
@@ -64,7 +64,7 @@
 **Annettu:** $U_\text{lat} = 5{,}0\,\text{V}$, $E = 3{,}8\,\text{V}$, $R = 0{,}80\,\Omega$, $I = 1{,}2\,\text{A}$
 **Kysytty:** kennon sisäinen resistanssi $R_\text{s}$ ohmeina
 **Periaate:** Jännitelain mukaan laturin jännitteen ja kennon lähdejännitteen erotus on yhtä suuri kuin resistanssien jännitteiden summa. Kun virta tunnetaan, saadaan resistanssien summa. Siitä saadaan kennon osuus.
-**Kaava:** $U_\text{lat} - RI - R_\text{s} I - E = 0$, josta $R_\text{s} = \dfrac{U_\text{lat} - E}{I} - R$
+**Kaava:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{lat} - RI - R_\text{s} I - E &= 0 \\ R_\text{s} I &= U_\text{lat} - E - RI \\ R_\text{s} &= \dfrac{U_\text{lat} - E}{I} - R \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Sijoitus:** $R_\text{s} = \dfrac{5{,}0\,\text{V} - 3{,}8\,\text{V}}{1{,}2\,\text{A}} - 0{,}80\,\Omega = 1{,}0\,\Omega - 0{,}80\,\Omega = 0{,}20\,\Omega$
 **Vastaus:** $0{,}2\,\Omega$, kymmenesosaohmin tarkkuudella kuten termi $(U_\text{lat} - E) : I = 1{,}0\,\Omega$, joka rajoittaa erotuksen tarkkuutta.
@@ -74,7 +74,7 @@
 **Annettu:** kapasiteetti $4500\,\text{mAh}$, varaustaso $15\,\%$ → $80\,\%$, keskimääräinen virta $I = 1{,}8\,\text{A}$
 **Kysytty:** latausaika $t$ minuutteina
 **Periaate:** Akun läpi kulkevan varauksen pitää olla se osa kapasiteetista, jonka verran varaustaso nousee. Keskimääräisellä virralla varaus on virta kertaa aika.
-**Kaava:** $Q = (0{,}80 - 0{,}15) \cdot Q_\text{kap}$ ja $Q = It$, josta $t = \dfrac{(0{,}80 - 0{,}15)\, Q_\text{kap}}{I}$
+**Kaava:** $$\begin{aligned} Q &= (0{,}80 - 0{,}15)\,Q_\text{kap} \\ Q &= It \\ It &= (0{,}80 - 0{,}15)\,Q_\text{kap} \\ t &= \dfrac{(0{,}80 - 0{,}15)\,Q_\text{kap}}{I} \end{aligned}$$
 **Muunnokset:** $Q_\text{kap} = 4500\,\text{mAh} = 4500 \cdot 0{,}001\,\text{Ah} = 4{,}5\,\text{Ah}$ ja lopuksi $1\,\text{h} = 60\,\text{min}$
 **Sijoitus:** $t = \dfrac{0{,}65 \cdot 4{,}5\,\text{Ah}}{1{,}8\,\text{A}} = \dfrac{2{,}925\,\text{Ah}}{1{,}8\,\text{A}} = 1{,}625\,\text{h} = 1{,}625 \cdot 60\,\text{min} = 97{,}5\,\text{min}$
 **Vastaus:** $98\,\text{min}$, kaksi merkitsevää numeroa kuten virrassa $1{,}8\,\text{A}$.
@@ -84,7 +84,7 @@
 **Annettu:** nimellisjännite $U = 36\,\text{V}$, kapasiteetti $Q = 14\,\text{Ah}$, sähköverkosta otettu energia $W_\text{lat} = 600\,\text{Wh}$
 **Kysytty:** latauksen hyötysuhde $\eta$ prosentteina
 **Periaate:** Hyötysuhde kertoo, kuinka suuri osa otetusta energiasta varastoituu akkuun. Se on akkuun varastoituneen energian ja otetun energian suhde. Tehtävän oletuksen mukaan akkuun varastoituu nimellisjännite kertaa kapasiteetti. Loput otetusta energiasta muuttuu laturin, johtojen ja akun sisäenergiaksi.
-**Kaava:** $W_\text{akku} = UQ$ ja $\eta = \dfrac{W_\text{akku}}{W_\text{lat}}$, josta $\eta = \dfrac{UQ}{W_\text{lat}}$
+**Kaava:** $$\begin{aligned} W_\text{akku} &= UQ \\ \eta &= \dfrac{W_\text{akku}}{W_\text{lat}} \\ \eta &= \dfrac{UQ}{W_\text{lat}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh}$, ja lopuksi $0{,}84 = 84\,\%$.
 **Sijoitus:** $\eta = \dfrac{36\,\text{V} \cdot 14\,\text{Ah}}{600\,\text{Wh}} = \dfrac{504\,\text{Wh}}{600\,\text{Wh}} = 0{,}84$
 **Vastaus:** $84\,\%$, kaksi merkitsevää numeroa kuten jännitteessä ja kapasiteetissa.
@@ -94,7 +94,7 @@
 **Annettu:** auton akku $U_1 = 12\,\text{V}$, $Q_1 = 60\,\text{Ah}$, käytettävissä puolet; potkulaudan akku $U_2 = 36\,\text{V}$, $Q_2 = 7{,}8\,\text{Ah}$, käytettävissä kokonaan
 **Kysytty:** käytettävien energioiden suhde $W_1 : W_2$
 **Periaate:** Ampeeritunnit kertovat vain varauksen. Akkujen jännitteet ovat erisuuret. Siksi niitä verrataan energian $W = UQ$ avulla. Auton akusta otetaan vain puolet kapasiteetista. Siksi sen käytettävä energia lasketaan puolesta varauksesta.
-**Kaava:** $W_1 = 0{,}5\, U_1 Q_1$ ja $W_2 = U_2 Q_2$, josta $\dfrac{W_1}{W_2} = \dfrac{0{,}5\, U_1 Q_1}{U_2 Q_2}$
+**Kaava:** $$\begin{aligned} W &= UQ \\ W_1 &= 0{,}5\,U_1 Q_1 \\ W_2 &= U_2 Q_2 \\ \dfrac{W_1}{W_2} &= \dfrac{0{,}5\,U_1 Q_1}{U_2 Q_2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh}$, ja suhteessa yksiköt supistuvat.
 **Sijoitus:** $\dfrac{W_1}{W_2} = \dfrac{0{,}5 \cdot 12\,\text{V} \cdot 60\,\text{Ah}}{36\,\text{V} \cdot 7{,}8\,\text{Ah}} = \dfrac{360\,\text{Wh}}{280{,}8\,\text{Wh}} \approx 1{,}28$
 **Vastaus:** $1{,}3$ kertaa, kaksi merkitsevää numeroa kuten jännitteissä ja kapasiteeteissa.
@@ -104,7 +104,7 @@
 **Annettu:** $U_\text{lat} = 13{,}8\,\text{V}$, lähdejännite alussa $E_1 = 12{,}0\,\text{V}$ ja lopussa $E_2 = 12{,}6\,\text{V}$, resistanssit yhteensä $R_\text{kok} = 0{,}30\,\Omega$
 **Kysytty:** latausvirran suhteellinen pieneneminen prosentteina
 **Periaate:** Jännitelain mukaan latausvirtaa ajaa laturin jännitteen ja lähdejännitteen erotus. Resistanssit pysyvät vakioina. Kun lähdejännite kasvaa, erotus ja virta pienenevät. Pieneneminen verrataan alkuvirtaan.
-**Kaava:** $I = \dfrac{U_\text{lat} - E}{R_\text{kok}}$, ja pieneneminen on $\dfrac{I_1 - I_2}{I_1}$
+**Kaava:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{lat} - R_\text{kok} I - E &= 0 \\ I &= \dfrac{U_\text{lat} - E}{R_\text{kok}} \\ \text{pieneneminen} &= \dfrac{I_1 - I_2}{I_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: jännitteet ovat voltteina ja resistanssi ohmeina. Lopuksi suhde muunnetaan prosenteiksi.
 **Sijoitus:** $I_1 = \dfrac{13{,}8\,\text{V} - 12{,}0\,\text{V}}{0{,}30\,\Omega} = 6{,}0\,\text{A}$, $I_2 = \dfrac{13{,}8\,\text{V} - 12{,}6\,\text{V}}{0{,}30\,\Omega} = 4{,}0\,\text{A}$ ja $\dfrac{6{,}0\,\text{A} - 4{,}0\,\text{A}}{6{,}0\,\text{A}} = 0{,}333 = 33{,}3\,\%$
 **Vastaus:** $33\,\%$, kaksi merkitsevää numeroa kuten jännite-erotuksissa $1{,}8\,\text{V}$ ja $1{,}2\,\text{V}$.
@@ -114,7 +114,7 @@
 **Annettu:** latausvirta $I = 2{,}0\,\text{A}$, aika $t = 1{,}5\,\text{h}$, sisäinen resistanssi $R_\text{s} = 0{,}15\,\Omega$
 **Kysytty:** sisäenergiaksi muuttuva energia $W$ kilojouleina
 **Periaate:** Latausvirta kulkee akun sisäisen resistanssin läpi. Resistanssin jännite on Ohmin lain mukaan $R_\text{s} I$. Sähköteho on jännite kertaa virta (luku *Sähköteho ja vastuksen lämpeneminen*). Vakioteholla energia on teho kertaa aika. Tämä energia muuttuu akun sisäenergiaksi, joka siirtyy lämpönä ympäristöön.
-**Kaava:** $P = R_\text{s} I \cdot I = R_\text{s} I^2$ ja $W = Pt$, josta $W = R_\text{s} I^2 t$
+**Kaava:** $$\begin{aligned} P &= UI \\ U &= R_\text{s} I \\ P &= R_\text{s} I \cdot I = R_\text{s} I^2 \\ W &= Pt \\ W &= R_\text{s} I^2 t \end{aligned}$$
 **Muunnokset:** $t = 1{,}5\,\text{h} = 1{,}5 \cdot 3600\,\text{s} = 5400\,\text{s}$ ja lopuksi $1\,\text{kJ} = 1000\,\text{J}$
 **Sijoitus:** $W = 0{,}15\,\Omega \cdot (2{,}0\,\text{A})^2 \cdot 5400\,\text{s} = 0{,}60\,\text{W} \cdot 5400\,\text{s} = 3240\,\text{J} = 3{,}24\,\text{kJ}$
 **Vastaus:** $3{,}2\,\text{kJ}$, kaksi merkitsevää numeroa kuten virrassa, ajassa ja resistanssissa.
@@ -134,7 +134,7 @@
 **Annettu:** kapasiteetti $Q = 2600\,\text{mAh}$, latausvirta $I = 0{,}50\,\text{A}$
 **Kysytty:** latausaika $t$ tunteina
 **Periaate:** Kun virta on vakio, akun läpi kulkeva varaus on virta kertaa aika. Tyhjän akun lataus on valmis, kun läpi on kulkenut kapasiteetin verran varausta.
-**Kaava:** $Q = It$, josta $t = \dfrac{Q}{I}$
+**Kaava:** $$\begin{aligned} Q &= It \\ t &= \dfrac{Q}{I} \end{aligned}$$
 **Muunnokset:** $2600\,\text{mAh} = 2600 \cdot 0{,}001\,\text{Ah} = 2{,}6\,\text{Ah}$
 **Sijoitus:** $t = \dfrac{2{,}6\,\text{Ah}}{0{,}50\,\text{A}} = 5{,}2\,\text{h}$
 **Vastaus:** $5{,}2\,\text{h}$, kaksi merkitsevää numeroa kuten virrassa $0{,}50\,\text{A}$.
@@ -159,7 +159,7 @@ Vain lausekkeen $UQ$ yksikkö on energian yksikkö. Se on myös akun energian ka
 **Annettu:** purkausvirta $I = 0{,}50\,\text{A}$, mittausväli $\Delta t = 1{,}0\,\text{h}$, napajännitteet taulukosta $4{,}15\,\text{V}$, $3{,}92\,\text{V}$, $3{,}80\,\text{V}$, $3{,}71\,\text{V}$, $3{,}58\,\text{V}$ ja $3{,}12\,\text{V}$
 **Kysytty:** kennon antama energia $W$ wattitunteina
 **Periaate:** Teho on jännite kertaa virta. Virta on vakio, mutta jännite muuttuu ajan mukana. Jännite oletetaan muuttuvaksi tasaisesti mittausten välillä. Silloin jokaisen välin keskijännite on välin päiden jännitteiden keskiarvo. Energia on virta kertaa aika kertaa keskijännite. Se lasketaan yhteen kaikilta väleiltä.
-**Kaava:** $$\begin{aligned} W &= I\,\Delta t\,(U_{1,\text{ka}} + U_{2,\text{ka}} + \dots \\ &+ U_{5,\text{ka}}) \end{aligned}$$, missä $U_{k,\text{ka}}$ on välin $k$ keskijännite
+**Kaava:** $$\begin{aligned} P_k &= U_{k,\text{ka}} I \\ W_k &= P_k \Delta t \\ W &= W_1 + \dots + W_5 \\ W &= I\,\Delta t\,(U_{1,\text{ka}} + \dots \\ &+ U_{5,\text{ka}}) \end{aligned}$$
 **Muunnokset:** Ei tarvita: ampeeri kertaa tunti kertaa voltti on wattitunti.
 **Sijoitus:** Välien keskijännitteet ovat $4{,}035\,\text{V}$, $3{,}86\,\text{V}$, $3{,}755\,\text{V}$, $3{,}645\,\text{V}$ ja $3{,}35\,\text{V}$. Niiden summa on $18{,}645\,\text{V}$. Siis $W = 0{,}50\,\text{A} \cdot 1{,}0\,\text{h} \cdot 18{,}645\,\text{V} = 9{,}3225\,\text{Wh}$
 **Vastaus:** $9{,}3\,\text{Wh}$, kaksi merkitsevää numeroa kuten virrassa $0{,}50\,\text{A}$ ja mittausvälissä $1{,}0\,\text{h}$.
@@ -169,7 +169,7 @@ Vain lausekkeen $UQ$ yksikkö on energian yksikkö. Se on myös akun energian ka
 **Annettu:** latausvirta $I = 2{,}0\,\text{A}$, aika $t = 1{,}5\,\text{h}$, laturin jännite $U_\text{lat} = 4{,}2\,\text{V}$, akun lähdejännite $E = 3{,}7\,\text{V}$
 **Kysytty:** resistanssien sisäenergiaksi muuttuva energia $W_\text{häviö}$ wattitunteina
 **Periaate:** a) Oppilaan laskema $12{,}6\,\text{Wh}$ on laturin antama energia $U_\text{lat} I t$. Se on oikein. Virhe on oletus, että kaikki energia varastoituu akkuun. Akkuun muuttuu kemialliseksi energiaksi vain lähdejännitteen osuus $E I t$. Loppu kuluu virran ajamiseen resistanssien läpi. Se on jännite-erotuksen $U_\text{lat} - E$ osuus. Se muuttuu resistanssien sisäenergiaksi, joka siirtyy lämpönä ympäristöön. b) Häviö on laturin antaman ja akkuun varastoituneen energian erotus.
-**Kaava:** $W_\text{häviö} = U_\text{lat} I t - E I t$, josta $W_\text{häviö} = (U_\text{lat} - E)\, I t$
+**Kaava:** $$\begin{aligned} W_\text{häviö} &= W_\text{lat} - W_\text{akku} \\ W_\text{lat} &= U_\text{lat} I t \\ W_\text{akku} &= E I t \\ W_\text{häviö} &= (U_\text{lat} - E)\,I t \end{aligned}$$
 **Muunnokset:** Ei tarvita: tunnit ja ampeerit voltteihin kerrottuna antavat suoraan wattitunteja.
 **Sijoitus:** $$\begin{aligned} W_\text{häviö} &= (4{,}2\,\text{V} - 3{,}7\,\text{V}) \cdot 2{,}0\,\text{A} \\ &\cdot 1{,}5\,\text{h} \\ &= 0{,}5\,\text{V} \cdot 3{,}0\,\text{Ah} \\ &= 1{,}5\,\text{Wh} \end{aligned}$$
 **Vastaus:** $1{,}5\,\text{Wh}$, kaksi merkitsevää numeroa kuten virrassa $2{,}0\,\text{A}$ ja ajassa $1{,}5\,\text{h}$; tulos on kymmenesosawattitunnin tarkkuudella kuten energioiden erotus $12{,}6\,\text{Wh} - 11{,}1\,\text{Wh}$. Vastaus a): oppilaan päättelyssä on väärin se, että kaikki laturin antama energia varastoituu akkuun. Osa energiasta muuttuu resistanssien sisäenergiaksi.
@@ -180,7 +180,7 @@ Vain lausekkeen $UQ$ yksikkö on energian yksikkö. Se on myös akun energian ka
 **Kysytty:** resistanssi $R_\text{kok}$ ohmeina
 **Periaate:** Jännitelain mukaan $I = (U_\text{lat} - E) : R_\text{kok}$. Kun $E$ ja $R_\text{kok}$ ovat vakioita, virta on laturin jännitteen lineaarinen funktio. Sen kuvaajan kulmakerroin on $1 : R_\text{kok}$. Mittauspisteet eivät yleensä ole täsmälleen samalla suoralla, koska mittauksissa on epävarmuutta. Siksi kulmakerroin luetaan sovitetusta suorasta. Sitä ei lueta kahdesta vierekkäisestä mittauspisteestä.
 **Kuvaajan lukeminen:** Pisteet piirretään $(U_\text{lat}, I)$-koordinaatistoon. Niiden lomaan sovitetaan suora. Suoralta luetaan kaksi kaukana toisistaan olevaa pistettä, $(13{,}0\,\text{V};\ 1{,}5\,\text{A})$ ja $(14{,}6\,\text{V};\ 5{,}5\,\text{A})$.
-**Kaava:** kulmakerroin $k = \dfrac{\Delta I}{\Delta U_\text{lat}} = \dfrac{1}{R_\text{kok}}$, josta $R_\text{kok} = \dfrac{\Delta U_\text{lat}}{\Delta I}$
+**Kaava:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{lat} - R_\text{kok} I - E &= 0 \\ I &= \dfrac{1}{R_\text{kok}}\,U_\text{lat} - \dfrac{E}{R_\text{kok}} \\ k &= \dfrac{\Delta I}{\Delta U_\text{lat}} = \dfrac{1}{R_\text{kok}} \\ R_\text{kok} &= \dfrac{\Delta U_\text{lat}}{\Delta I} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Sijoitus:** $R_\text{kok} = \dfrac{14{,}6\,\text{V} - 13{,}0\,\text{V}}{5{,}5\,\text{A} - 1{,}5\,\text{A}} = \dfrac{1{,}6\,\text{V}}{4{,}0\,\text{A}} = 0{,}40\,\Omega$
 **Vastaus:** $0{,}40\,\Omega$, kaksi merkitsevää numeroa kuten virtojen lukemissa. Käsin sovitettu suora antaa tuloksen muutaman prosentin tarkkuudella.
@@ -191,7 +191,7 @@ Vain lausekkeen $UQ$ yksikkö on energian yksikkö. Se on myös akun energian ka
 **Kysytty:** akkuun varastoitunut energia $W$ wattitunteina
 **Periaate:** Kun virta on vakio, varaus on virta kertaa aika. Se on sama kuin kuvaajan alle jäävä pinta-ala. Virta on kolmessa vakio-osassa. Siksi varaus on kolmen suorakulmion pinta-alojen summa. Akkuun varastoituva energia on nimellisjännite kertaa varaus tehtävän oletuksen mukaan.
 **Kuvaajan lukeminen:** Virta on $2{,}0\,\text{A}$ ajasta $0$ aikaan $1{,}0\,\text{h}$, $1{,}5\,\text{A}$ ajasta $1{,}0\,\text{h}$ aikaan $3{,}0\,\text{h}$ ja $0{,}5\,\text{A}$ ajasta $3{,}0\,\text{h}$ aikaan $4{,}0\,\text{h}$, jonka jälkeen se on nolla.
-**Kaava:** $Q = I_1 t_1 + I_2 t_2 + I_3 t_3$ ja $W = UQ$, josta $W = U\,(I_1 t_1 + I_2 t_2 + I_3 t_3)$
+**Kaava:** $$\begin{aligned} Q_k &= I_k t_k \\ Q &= Q_1 + Q_2 + Q_3 \\ W &= UQ \\ W &= U\,(I_1 t_1 + I_2 t_2 \\ &+ I_3 t_3) \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh}$. Kestot ovat $t_1 = 1{,}0\,\text{h}$, $t_2 = 3{,}0\,\text{h} - 1{,}0\,\text{h} = 2{,}0\,\text{h}$ ja $t_3 = 4{,}0\,\text{h} - 3{,}0\,\text{h} = 1{,}0\,\text{h}$.
 **Sijoitus:** $$\begin{aligned} Q &= 2{,}0\,\text{A} \cdot 1{,}0\,\text{h} + 1{,}5\,\text{A} \cdot 2{,}0\,\text{h} \\ &+ 0{,}5\,\text{A} \cdot 1{,}0\,\text{h} \\ &= 2{,}0\,\text{Ah} + 3{,}0\,\text{Ah} + 0{,}5\,\text{Ah} \\ &= 5{,}5\,\text{Ah} \end{aligned}$$ ja $W = 11{,}1\,\text{V} \cdot 5{,}5\,\text{Ah} = 61{,}05\,\text{Wh}$
 **Vastaus:** $61\,\text{Wh}$, kaksi merkitsevää numeroa kuten virran lukemissa. Arvot luetaan ruudukkoviivoilta, joiden väli on $0{,}5\,\text{A}$ ja $0{,}5\,\text{h}$.
@@ -203,7 +203,7 @@ Vain lausekkeen $UQ$ yksikkö on energian yksikkö. Se on myös akun energian ka
 **Periaate:** Akun energia on nimellisjännite kertaa kapasiteetti. Syy on se, että sähkökentän tekemä työ on $W = UQ$, kun varaus $Q$ siirtyy jännitteen $U$ yli. Teho kertoo, kuinka paljon energiaa siirtyy aikayksikössä. Kun teho on vakio, $W = Pt$ (luku *Sähköteho ja vastuksen lämpeneminen*).
 
 Häviö tarkoittaa energiaa, joka ei varastoidu akkuun. Kun häviöitä ei ole, kaikki laturin antama energia varastoituu akkuun. Siksi laskettu aika on lyhin mahdollinen.
-**Kaava:** $W = UQ$ ja $W = Pt$, josta $t = \dfrac{W}{P} = \dfrac{UQ}{P}$
+**Kaava:** $$\begin{aligned} W &= UQ \\ W &= Pt \\ Pt &= UQ \\ t &= \dfrac{UQ}{P} \end{aligned}$$
 **Muunnokset:** $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh}$ ja $1\,\text{Wh} = 1\,\text{W} \cdot 3600\,\text{s} = 3600\,\text{J}$. Aika saadaan suoraan tunteina, koska $1\,\text{Wh} : 1\,\text{W} = 1\,\text{h}$.
 **Sijoitus:** a) $W = 36\,\text{V} \cdot 14\,\text{Ah} = 504\,\text{Wh}$ ja jouleina $W = 504 \cdot 3600\,\text{J} = 1{,}8144 \cdot 10^{6}\,\text{J} \approx 1{,}8\,\text{MJ}$. b) $t = \dfrac{504\,\text{Wh}}{120\,\text{W}} = 4{,}2\,\text{h}$
 **Kohta c):** Kohdan b) aika on alaraja eli lyhin mahdollinen aika. Syitä on kaksi. Teho $120\,\text{W}$ on se teho, joka menee akkuun. Ensimmäinen syy on akun sisäinen resistanssi. Latausvirta $I$ kulkee akun sisäisen resistanssin $R_\text{s}$ läpi. Siinä energiaa muuttuu sisäenergiaksi teholla $R_\text{s} I^2$, eli akku lämpenee.
@@ -232,7 +232,7 @@ Hän voi irrottaa laturin, jos se onnistuu turvallisesti. Palamaton alusta ei sy
 **Annettu:** taulukosta $I_1 = 0{,}50\,\text{A}$, $t_1 = 5{,}2\,\text{h}$, $U_{1,\text{ka}} = 3{,}70\,\text{V}$ ja $I_2 = 2{,}0\,\text{A}$, $t_2 = 1{,}2\,\text{h}$, $U_{2,\text{ka}} = 3{,}55\,\text{V}$; latauksen vaatima energia $W_\text{lat} = 11{,}0\,\text{Wh}$
 **Kysytty:** lataus–purku-hyötysuhde $\eta$ prosentteina virralla $I_2$ (b), lisäksi kennon sisäinen resistanssi $R_\text{s}$ (c)
 **Periaate:** Kenno ladataan ennen kumpaakin purkausta täyteen samasta tyhjästä tilasta. Kun virta on vakio, varaus on $Q = It$. Energia on keskijännite kertaa varaus, $W = U_\text{ka} Q$. Hyötysuhde kertoo, kuinka suuri osa latauksessa käytetystä energiasta saadaan takaisin purkauksessa. Purkautuessa napajännite on $U = E - R_\text{s} I$. Lähdejännite $E$ on molemmilla virroilla sama. Siksi napajännitteiden ero johtuu vain sisäisestä resistanssista.
-**Kaava:** $Q = It$ ja $W = U_\text{ka} Q$ sekä $\eta = \dfrac{W}{W_\text{lat}}$ ja $R_\text{s} = \dfrac{U_{1,\text{ka}} - U_{2,\text{ka}}}{I_2 - I_1}$
+**Kaava:** $$\begin{aligned} Q &= It \\ W &= U_\text{ka} Q \\ \eta &= \dfrac{W}{W_\text{lat}} \\ E &= U_\text{ka} + R_\text{s} I \\ U_{1,\text{ka}} + R_\text{s} I_1 &= U_{2,\text{ka}} + R_\text{s} I_2 \\ R_\text{s} &= \dfrac{U_{1,\text{ka}} - U_{2,\text{ka}}}{I_2 - I_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh}$ ja $1\,\text{V} : 1\,\text{A} = 1\,\Omega$. Lopuksi $0{,}7745 = 77{,}45\,\%$.
 **Sijoitus:** a) $Q_1 = 0{,}50\,\text{A} \cdot 5{,}2\,\text{h} = 2{,}6\,\text{Ah}$ ja $W_1 = 3{,}70\,\text{V} \cdot 2{,}6\,\text{Ah} = 9{,}62\,\text{Wh}$ sekä $Q_2 = 2{,}0\,\text{A} \cdot 1{,}2\,\text{h} = 2{,}4\,\text{Ah}$ ja $W_2 = 3{,}55\,\text{V} \cdot 2{,}4\,\text{Ah} = 8{,}52\,\text{Wh}$. b) $\eta = \dfrac{8{,}52\,\text{Wh}}{11{,}0\,\text{Wh}} = 0{,}7745$. c) $R_\text{s} = \dfrac{3{,}70\,\text{V} - 3{,}55\,\text{V}}{2{,}0\,\text{A} - 0{,}50\,\text{A}} = \dfrac{0{,}15\,\text{V}}{1{,}5\,\text{A}} = 0{,}10\,\Omega$
 **Vastaus:** $77\,\%$ (tarkemmin $77{,}45\,\%$), kaksi merkitsevää numeroa kuten purkauksen kestossa $1{,}2\,\text{h}$. Selitys: suurella virralla jännitehäviö $R_\text{s} I$ on suurempi. Siksi napajännite laskee rajaan $3{,}00\,\text{V}$ aiemmin. Osa kapasiteetista jää käyttämättä: saatu varaus on $2{,}4\,\text{Ah}$, ei $2{,}6\,\text{Ah}$. Sisäisessä resistanssissa muuttuu sisäenergiaksi teho $R_\text{s} I^2$.
@@ -244,7 +244,7 @@ Kun virta on nelinkertainen, teho on $16$-kertainen. Pikalatauksessa virta on su
 **Annettu:** kapasiteetti $Q_\text{kap} = 50\,\text{Ah}$, laturin jännite $U_\text{lat} = 14{,}0\,\text{V}$, resistanssit yhteensä $R_\text{kok} = 0{,}40\,\Omega$, lähdejännitteet taulukosta $12{,}00\,\text{V}$, $12{,}20\,\text{V}$, $12{,}40\,\text{V}$ ja $12{,}60\,\text{V}$ varaustasoilla $20\,\%$, $40\,\%$, $60\,\%$ ja $80\,\%$
 **Kysytty:** latauksen kesto $t$ tunteina varaustasosta $20\,\%$ varaustasoon $80\,\%$ (a) ja vertailuaika vakiovirralla (b)
 **Periaate:** Jännitelain mukaan latausvirta on $I = (U_\text{lat} - E) : R_\text{kok}$. Lähdejännite kasvaa latauksen edetessä, joten virta pienenee. Siksi lataus jaetaan vaiheisiin, joissa virta on likimain vakio. Jokaisessa vaiheessa varaus on $\Delta Q = It$. Vaiheen virta lasketaan lähdejännitteen keskiarvosta, koska lähdejännite muuttuu vaiheen aikana.
-**Kaava:** $I_k = \dfrac{U_\text{lat} - E_{k,\text{ka}}}{R_\text{kok}}$, $t_k = \dfrac{\Delta Q}{I_k}$ ja $t = t_1 + t_2 + t_3$
+**Kaava:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{lat} - R_\text{kok} I_k - E_{k,\text{ka}} &= 0 \\ I_k &= \dfrac{U_\text{lat} - E_{k,\text{ka}}}{R_\text{kok}} \\ \Delta Q &= I_k t_k \\ t_k &= \dfrac{\Delta Q}{I_k} \\ t &= t_1 + t_2 + t_3 \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$ ja $1\,\text{Ah} : 1\,\text{A} = 1\,\text{h}$. Jokaisessa vaiheessa varaustaso nousee $20\,\%$, joten $\Delta Q = 0{,}20 \cdot 50\,\text{Ah} = 10\,\text{Ah}$.
 **Sijoitus:** a) Keskimääräiset lähdejännitteet ovat $12{,}10\,\text{V}$, $12{,}30\,\text{V}$ ja $12{,}50\,\text{V}$. Virrat ovat $I_1 = 1{,}90\,\text{V} : 0{,}40\,\Omega = 4{,}75\,\text{A}$, $I_2 = 1{,}70\,\text{V} : 0{,}40\,\Omega = 4{,}25\,\text{A}$ ja $I_3 = 1{,}50\,\text{V} : 0{,}40\,\Omega = 3{,}75\,\text{A}$. Kestot ovat $t_1 = 10\,\text{Ah} : 4{,}75\,\text{A} = 2{,}105\,\text{h}$, $t_2 = 10\,\text{Ah} : 4{,}25\,\text{A} = 2{,}353\,\text{h}$ ja $t_3 = 10\,\text{Ah} : 3{,}75\,\text{A} = 2{,}667\,\text{h}$, joten $t = 2{,}105\,\text{h} + 2{,}353\,\text{h} + 2{,}667\,\text{h} = 7{,}125\,\text{h}$. b) Alkuvirta on $I_0 = (14{,}0\,\text{V} - 12{,}00\,\text{V}) : 0{,}40\,\Omega = 5{,}0\,\text{A}$ ja siirrettävä varaus on $30\,\text{Ah}$, joten $t_0 = 30\,\text{Ah} : 5{,}0\,\text{A} = 6{,}0\,\text{h}$
 **Vastaus:** $7{,}1\,\text{h}$, kaksi merkitsevää numeroa kuten resistanssissa $0{,}40\,\Omega$. Vakiovirralla $5{,}0\,\text{A}$ aika olisi $6{,}0\,\text{h}$. Todellinen lataus kestää pidempään, koska lähdejännite kasvaa. Silloin jännite-erotus $U_\text{lat} - E$ pienenee ja virta laskee: $4{,}75\,\text{A}$:sta $3{,}75\,\text{A}$:iin. Saman varauksen siirtyminen vie siksi kauemmin.

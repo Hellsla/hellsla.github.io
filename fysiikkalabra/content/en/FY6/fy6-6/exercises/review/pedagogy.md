@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 7520b3a6aa4c65ec
-SCOPE: delta added-exercise from e256d772fd4b7515 base c7f5e91173b0
+CONTENT-HASH: 88ae4d407ba8dae1
+SCOPE: delta caption-label,md-paragraphs,numbers,reflow,typography,wording from 7520b3a6aa4c65ec base b5600a6
 
 ## Blocking
 - none
 
 ## Polish
-- Solution heading "Reading the graph" and the line "the values of the steps are read exactly from the gridlines" are fine; the Given line could name the figure ("from the figure") but nothing is unclear.
+- fy6-6-L1-01 and similar: the chain starts from P = UI, U = RI before P = U^2 : R; good. In L2-05 (slope k) the chain starts from the definition DeltaT = kP, which is fine, but the Principle already names P = UI, so the chain could open with it for consistency.
 
 ## Checked
-- Level 2: read three constant steps from a graph, convert minutes to seconds, sum three E = Pt terms; fits the level and does not repeat the worked example.
-- Household context (hob plate) recognisable; situation first, question last, "Read the values you need" tells the student what to do.
-- Figure gives 2000, 1000 and 500 W over 0-3, 3-8 and 8-12 min on stated gridlines; description matches and does not give the energy.
-- Solution complete: given, principle (constant power per step), reading of each step, symbolic sum, conversions, substitution (360 + 300 + 120 = 780 kJ), significant figures, reasonableness by average power and area.
-- Arithmetic verified; 2 % tolerance suits read values.
-- Fits the set: the only level 2 task of energy from a stepped power graph; complements the table tasks.
+- Formula steps now run as aligned chains from the basic equations (P = UI, U = RI, E = Pt, Q = cmDeltaT, Kirchhoff-style U = U1 + U2) to the combined form, symbolic to the end; this matches the house rule and each step follows from the previous one.
+- Series and parallel tasks (L1-04, L1-08, L2-03, L3-04, the extension cord) add the connection rule (U = U1 + U2, P = P1 + P2) as its own row: the student sees why the combined formula holds.
+- Bulb ratings (L1-09): R from P = U^2 : R, then the series current, then P40 = R I^2; no step skipped.
+- Principle, model answer and reasonableness split into short paragraphs (one idea each, under 120 words); wording and numbers unchanged, so the earlier judgement of levels, contexts and the stepped-power graph task (L2-09) stands.
+- Figures ex-pi and ex-pt untouched; descriptions still match and give no answer.
+- Phone: chains are aligned one-equation rows, so no long line to scroll.

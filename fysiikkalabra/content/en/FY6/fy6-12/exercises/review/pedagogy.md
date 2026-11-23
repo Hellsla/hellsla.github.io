@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e1cbdbd39a48e885
-SCOPE: delta added-exercise from 24851d9dbd27e2fd base 8f23aa7ae3bd
+CONTENT-HASH: 4661288f1dcc7a5b
+SCOPE: delta caption-label,md-paragraphs,numbers,reflow,typography,wording from e1cbdbd39a48e885 base b5600a6
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- The diff changes only the markup of the Formula and Substitution lines of fy6-12-L2-xx solutions.md (\frac to \tfrac / \dfrac); wording, numbers and answer are untouched.
-- The result 8.387e6 m/s and the two significant figures are still the same.
-- \dfrac in a square-root fraction is more readable on a phone than \frac; no new content to judge.
+- The Kaava/Formula step of the model solutions now starts from the basic principle equation (F = qE, W = qU, energy conservation, Newton's laws, Coulomb) and derives the result row by row; each row follows from the previous one.
+- The derivations match the Principle step above them; no step is skipped and no new symbol appears without explanation.
+- Re-broken aligned rows keep numbers, signs and units unchanged; no task, data, level or answer changed.
+- Split solution and model-answer paragraphs read more easily, text unchanged in substance.
+- Rows are short, so they stay readable at 360 px.

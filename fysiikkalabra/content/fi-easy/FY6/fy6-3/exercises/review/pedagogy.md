@@ -1,13 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 323ed597788dc61f
+CONTENT-HASH: 0403a43777fa1082
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- fy6-3-L2-08 d) (lamppu) does not need the PhET material; the task is still coherent (a-c use it). Optional: let the student also try a lamp in the simulation if it offers one.
-- The solution tells that the graph slope here is 1/R while the lesson chapter has axes reversed: good, keep it.
-- The first paragraph is long for Selkeä suomi; consider a short numbered list for the circuit-building steps.
+- solutions.md L2-08 Kaava: "Kohta b): $$…$$ Kohta c): $P = UI$" puts a display block mid-line; give c) its own line.
+- L1-09 Kuvaajan lukeminen: "Luvun ominaiskäyrässä" is unclear to a student; say "oppitunnin ominaiskäyrässä".
+- L2-08 has four parts (measure, graph, power, model limits); acceptable at level 2, but the hour budget is tight if the simulation is used.
 
 ## Checked
-New task against commission section 6 (applied, material needed, 4 parts, logical order, units, correct solution); level mix and order unchanged; Finnish terms explained (virtamittari, sarjaan, ideaalinen vastus); example data and tolerance consistent (40 ohm). Captures not opened.
+- Full review of the 23 exercises (L1 10, L2 8, L3 5): levels rise from one-step substitution through unit conversion and tables or graphs to multi-part reasoning and experiment design.
+- L1-09 graph choice: each distractor has one recognisable error (curved, I : U slope, constant U) and feedback that names it; the answer is not in the stem or the figure titles.
+- L1-10 lookup task: the hint names the MAFY table, so the search skill is practised without guessing; unit conversion mm² to m² is shown.
+- L2-07 error analysis: part a asks for the 0 : 0 mistake, part b a mean of non-zero points; fair and observable.
+- L2-08 offers an own simulation measurement with a fallback sample table, and says own results differ; d) uses the term "ideaalinen vastuksen malli" defined in the task.
+- L3-05 experiment design: variables, setup, error sources with remedies are each observable criteria; matches the question.
+- Kaava steps start from basic equations (R = U : I, R = ρl : A), one per aligned row; the stretched-wire proof ends symbolically at R2 = 4R1 before numbers.
+- Long Periaate and Mallivastaus texts split into short paragraphs; Finnish is clear and in easy-reading form; no figure answers its own question.

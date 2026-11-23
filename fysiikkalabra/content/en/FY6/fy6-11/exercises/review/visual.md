@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f357a9805844a06e
+CONTENT-HASH: 00f8c7564f63ff3c
+SCOPE: delta numbers,reflow,teacher-figure from f357a9805844a06e base 9102119
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- delta (solutions.md paragraph breaks): read the diff; breaks now sit right before the part labels, round-1 findings resolved, no word changes.
-- Opened sample captures at 1280 px (fy6-11 L3-7, fy6-16 L3-5 and L3-8): paragraph spacing even, nothing clipped.
+- Diff read in full: Formula steps start from basic equations as `aligned` blocks; the four pick-* force-diagram pictures of L2-08 are teacher-approved drawings.
+- Opened at 1280 px: open-exercises-L2-1280-8. Diagrams A to D legible, labels `\overline{G}`, `\overline{F}_\text{e}`, `\overline{v}` in LaTeX, force red and velocity blue, feedback inside the card, option card layout intact.
+- Layout checks at 360-1280 px are green in the packet.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · English 4 · accessibility 4

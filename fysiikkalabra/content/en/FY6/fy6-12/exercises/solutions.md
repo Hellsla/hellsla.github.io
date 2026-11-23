@@ -43,7 +43,7 @@
 **Find:** the increase of the kinetic energy $\Delta E_\text{k}$ in electronvolts
 **Principle:** When only the electric force does work, the kinetic energy increases by as much as the potential energy decreases. The charge of the proton is $e$, so every volt by which the potential falls gives it one electronvolt of kinetic energy.
 **Reading the graph:** At $x = 4.0\,\text{cm}$ the line is on the grid line of $200\,\text{V}$ and at $x = 1.0\,\text{cm}$ on the grid line of $50\,\text{V}$. So the potential falls in the displacement.
-**Formula:** $\Delta E_\text{k} = -\Delta E_\text{p} = e(V_1 - V_2)$, where $V_1 = V(4.0\,\text{cm})$ and $V_2 = V(1.0\,\text{cm})$
+**Formula:** $$\begin{aligned} \Delta E_\text{k} + \Delta E_\text{p} &= 0 \\ \Delta E_\text{p} &= e\Delta V = e(V_2 - V_1) \\ \Delta E_\text{k} &= -\Delta E_\text{p} = e(V_1 - V_2) \end{aligned}$$ where $V_1 = V(4.0\,\text{cm})$ and $V_2 = V(1.0\,\text{cm})$
 **Conversions:** Not needed: when the charge is $e$ and the potential difference is in volts, the energy is obtained directly in electronvolts.
 **Substitution:** $\Delta E_\text{k} = e \cdot (200\,\text{V} - 50\,\text{V}) = 150\,\text{eV}$
 **Answer:** $150\,\text{eV}$, two significant figures, because the potentials are read from the $50\,\text{V}$ grid lines and the positions are given to two significant figures.
@@ -53,7 +53,7 @@
 **Given:** field strength $E = 2.5\,\text{kV/m}$, displacement in the direction of the field $s = 3.0\,\text{cm}$, charge of the proton $e$
 **Find:** the change of the potential energy $\Delta E_\text{p}$ in electronvolts with its sign
 **Principle:** In a uniform field the potential changes steadily, and in the direction of the field it decreases by $Es$. The potential energy of the proton is $eV$, so it decreases by as many electronvolts as the potential decreases in volts.
-**Formula:** $\Delta V = -Es$ and $\Delta E_\text{p} = e\Delta V$, so $\Delta E_\text{p} = -eEs$
+**Formula:** $$\begin{aligned} \Delta V &= -Es \\ \Delta E_\text{p} &= e\Delta V \\ \Delta E_\text{p} &= -eEs \end{aligned}$$
 **Conversions:** $E = 2.5\,\text{kV/m} = 2.5 \cdot 1000\,\text{V/m} = 2500\,\text{V/m}$ and $s = 3.0\,\text{cm} = 3.0 \cdot 0.01\,\text{m} = 0.030\,\text{m}$
 **Substitution:** $\Delta V = -2500\,\text{V/m} \cdot 0.030\,\text{m} = -75\,\text{V}$ and $\Delta E_\text{p} = e \cdot (-75\,\text{V}) = -75\,\text{eV}$
 **Answer:** $-75\,\text{eV}$, two significant figures like the field strength and the distance.
@@ -63,7 +63,7 @@
 **Given:** plate separation $d = 2.0\,\text{cm}$, voltage $U = 300\,\text{V}$, distance of point $P$ from the negative plate $x = 0.80\,\text{cm}$; the negative plate is the zero point; charge of the electron $-e$
 **Find:** the potential energy $E_\text{p}$ of the electron at point $P$ in electronvolts
 **Principle:** In a uniform field the potential grows steadily from the negative plate to the positive one, $V = Ex$, where $E = U : d$. The charge of the electron is negative, so its potential energy $E_\text{p} = -eV$ is negative at a point whose potential is positive.
-**Formula:** $V_P = Ex = \dfrac{U}{d}\,x$ and $E_\text{p} = -eV_P$, so $E_\text{p} = -e\,\dfrac{Ux}{d}$
+**Formula:** $$\begin{aligned} E &= \dfrac{U}{d} \\ V_P &= Ex = \dfrac{U}{d}\,x \\ E_\text{p} &= -eV_P \\ E_\text{p} &= -e\,\dfrac{Ux}{d} \end{aligned}$$
 **Conversions:** Not needed: the centimetres cancel in the ratio $x : d$, and with the charge $e$ the potential in volts gives the energy in electronvolts.
 **Substitution:** $V_P = 300\,\text{V} \cdot \dfrac{0.80\,\text{cm}}{2.0\,\text{cm}} = 120\,\text{V}$ and $E_\text{p} = -e \cdot 120\,\text{V} = -120\,\text{eV}$
 **Answer:** $-120\,\text{eV}$ or $-1.2 \cdot 10^{2}\,\text{eV}$, two significant figures like the distances.
@@ -73,7 +73,7 @@
 **Given:** charge $q = 2e$, $e = 1.602 \cdot 10^{-19}\,\text{C}$, mass $m = 6.645 \cdot 10^{-27}\,\text{kg}$, potential difference $U = 2.0\,\text{kV}$, initial speed zero
 **Find:** the speed $v$ in metres per second
 **Principle:** Only the electric force does work, so potential energy changes into kinetic energy: the field does the work $qU$, and a particle that starts from rest gets a kinetic energy of the same size. The charge of the alpha particle is double, so it gets double the energy compared with a proton.
-**Formula:** $\tfrac{1}{2}mv^2 = qU = 2eU$, from which $v = \sqrt{\dfrac{4eU}{m}}$
+**Formula:** $$\begin{aligned} E_\text{k} &= W = qU \\ q &= 2e \\ \tfrac{1}{2}mv^2 &= 2eU \\ v^2 &= \dfrac{4eU}{m} \\ v &= \sqrt{\dfrac{4eU}{m}} \end{aligned}$$
 **Conversions:** $U = 2.0\,\text{kV} = 2.0 \cdot 1000\,\text{V} = 2000\,\text{V}$
 **Substitution:** $v = \sqrt{\dfrac{4 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 2000\,\text{V}}{6.645 \cdot 10^{-27}\,\text{kg}}} = 4.392 \cdot 10^{5}\,\text{m/s}$
 **Answer:** $4.4 \cdot 10^{5}\,\text{m/s}$, two significant figures like the voltage $2.0\,\text{kV}$.
@@ -83,7 +83,7 @@
 **Given:** final speed $v = 1.0 \cdot 10^{7}\,\text{m/s}$, initial speed zero, $m = 9.109 \cdot 10^{-31}\,\text{kg}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$
 **Find:** the accelerating voltage $U$ in volts
 **Principle:** Only the electric force does work, so the kinetic energy gained by the electron equals the work $eU$ done by the field. When the kinetic energy is known from the speed, the voltage is obtained by solving the energy equation.
-**Formula:** $\tfrac{1}{2}mv^2 = eU$, from which $U = \dfrac{mv^2}{2e}$
+**Formula:** $$\begin{aligned} E_\text{k} &= W \\ \tfrac{1}{2}mv^2 &= eU \\ U &= \dfrac{mv^2}{2e} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{kg} \cdot 1\,\text{m}^2/\text{s}^2 = 1\,\text{J}$ and $1\,\text{J} : 1\,\text{C} = 1\,\text{V}$.
 **Substitution:** $$\begin{aligned} mv^2 &= 9.109 \cdot 10^{-31}\,\text{kg} \\ &\cdot (1.0 \cdot 10^{7}\,\text{m/s})^2 \\ &= 9.109 \cdot 10^{-17}\,\text{J} \end{aligned}$$ and $U = \dfrac{9.109 \cdot 10^{-17}\,\text{J}}{2 \cdot 1.602 \cdot 10^{-19}\,\text{C}} = 284.3\,\text{V}$
 **Answer:** $2.8 \cdot 10^{2}\,\text{V}$ or about $280\,\text{V}$, two significant figures like the speed.
@@ -93,7 +93,7 @@
 **Given:** $v_A = 2.0 \cdot 10^{6}\,\text{m/s}$, $V_A = 40\,\text{V}$, $V_B = 160\,\text{V}$, $m = 9.109 \cdot 10^{-31}\,\text{kg}$, charge of the electron $q = -e$, $e = 1.602 \cdot 10^{-19}\,\text{C}$
 **Find:** the speed $v_B$ in metres per second
 **Principle:** Only the electric force does work, so the sum of the kinetic energy and the potential energy is conserved. The potential energy of the electron is $-eV$, so it decreases when the electron moves to a higher potential, and the kinetic energy increases by the same amount.
-**Formula:** $\tfrac{1}{2}mv_A^2 - eV_A = \tfrac{1}{2}mv_B^2 - eV_B$, from which $E_{\text{k},B} = \tfrac{1}{2}mv_A^2 + e(V_B - V_A)$ and $v_B = \sqrt{\dfrac{2E_{\text{k},B}}{m}}$
+**Formula:** $$\begin{aligned} E_{\text{k},A} + E_{\text{p},A} &= E_{\text{k},B} + E_{\text{p},B} \\ E_\text{p} &= -eV \\ \tfrac{1}{2}mv_A^2 - eV_A &= E_{\text{k},B} - eV_B \\ E_{\text{k},B} &= \tfrac{1}{2}mv_A^2 + e(V_B - V_A) \\ v_B &= \sqrt{\dfrac{2E_{\text{k},B}}{m}} \end{aligned}$$
 **Conversions:** Not needed: all quantities are in base units.
 **Substitution:** $$\begin{aligned} \tfrac{1}{2}mv_A^2 &= \tfrac{1}{2} \cdot 9.109 \cdot 10^{-31}\,\text{kg} \\ &\cdot (2.0 \cdot 10^{6}\,\text{m/s})^2 \\ &= 1.822 \cdot 10^{-18}\,\text{J} \end{aligned}$$, $$\begin{aligned} &e(V_B - V_A) \\ &= 1.602 \cdot 10^{-19}\,\text{C} \cdot 120\,\text{V} \\ &= 1.922 \cdot 10^{-17}\,\text{J} \end{aligned}$$, $$\begin{aligned} E_{\text{k},B} &= 1.822 \cdot 10^{-18}\,\text{J} \\ &+ 1.922 \cdot 10^{-17}\,\text{J} \\ &= 2.105 \cdot 10^{-17}\,\text{J} \end{aligned}$$ and $v_B = \sqrt{\dfrac{2 \cdot 2.105 \cdot 10^{-17}\,\text{J}}{9.109 \cdot 10^{-31}\,\text{kg}}} = 6.80 \cdot 10^{6}\,\text{m/s}$
 **Answer:** $6.8 \cdot 10^{6}\,\text{m/s}$, two significant figures like the initial speed and the potentials.
@@ -105,7 +105,7 @@ The electron speeds up, because a negative charge accelerates toward a higher po
 **Given:** mass of the electron $m_\text{e} = 9.109 \cdot 10^{-31}\,\text{kg}$, mass of the proton $m_\text{p} = 1.673 \cdot 10^{-27}\,\text{kg}$; each starts from rest and travels through the same potential difference $U$, and the magnitude of each charge is $e$
 **Find:** the ratio of the speeds of the electron and the proton $v_\text{e} : v_\text{p}$ when they travel from rest through the same potential difference $U$
 **Principle:** The magnitude of each charge is $e$, so the field does the same work $eU$ on each and they get the same kinetic energy, although they move in opposite directions. The same kinetic energy $\tfrac{1}{2}mv^2$ gives a smaller mass a greater speed.
-**Formula:** $\tfrac{1}{2}m_\text{e}v_\text{e}^2 = eU = \tfrac{1}{2}m_\text{p}v_\text{p}^2$, so $\dfrac{v_\text{e}}{v_\text{p}} = \sqrt{\dfrac{m_\text{p}}{m_\text{e}}}$
+**Formula:** $$\begin{aligned} E_{\text{k},\text{e}} &= W = eU \\ E_{\text{k},\text{p}} &= W = eU \\ \tfrac{1}{2}m_\text{e}v_\text{e}^2 &= \tfrac{1}{2}m_\text{p}v_\text{p}^2 \\ \dfrac{v_\text{e}^2}{v_\text{p}^2} &= \dfrac{m_\text{p}}{m_\text{e}} \\ \dfrac{v_\text{e}}{v_\text{p}} &= \sqrt{\dfrac{m_\text{p}}{m_\text{e}}} \end{aligned}$$
 **Conversions:** Not needed: the units of the masses cancel, and the voltage is not needed.
 **Substitution:** $\dfrac{v_\text{e}}{v_\text{p}} = \sqrt{\dfrac{1.673 \cdot 10^{-27}\,\text{kg}}{9.109 \cdot 10^{-31}\,\text{kg}}} = \sqrt{1837} = 42.86$
 **Answer:** The speed of the electron is about $43$ times as great; two significant figures are enough for a ratio, and the masses are given to four figures.
@@ -117,7 +117,7 @@ The electron speeds up, because a negative charge accelerates toward a higher po
 **Principle:** The proton moves toward a higher potential, so its potential energy increases and its kinetic energy decreases by the same amount. It stops at the point where the whole initial kinetic energy has changed into potential energy.
 
 In a uniform field the potential grows steadily, $V = Ex = \dfrac{U}{d}\,x$ measured from the negative plate.
-**Formula:** $E_{\text{k},0} = \tfrac{1}{2}mv_0^2$ and $E_{\text{k},0} = eV = e\,\dfrac{U}{d}\,x$, from which $x = \dfrac{E_{\text{k},0}\,d}{eU}$; the distance from the positive plate is $d - x$
+**Formula:** $$\begin{aligned} E_{\text{k},0} &= \tfrac{1}{2}mv_0^2 \\ V &= Ex = \dfrac{U}{d}\,x \\ E_{\text{k},0} &= eV = e\,\dfrac{U}{d}\,x \\ x &= \dfrac{E_{\text{k},0}\,d}{eU} \end{aligned}$$ The distance from the positive plate is $d - x$.
 **Conversions:** $d = 2.0\,\text{cm} = 0.020\,\text{m}$ and finally $1\,\text{m} = 1000\,\text{mm}$.
 **Substitution:** $$\begin{aligned} E_{\text{k},0} &= \tfrac{1}{2} \cdot 1.673 \cdot 10^{-27}\,\text{kg} \\ &\cdot (3.0 \cdot 10^{5}\,\text{m/s})^2 \\ &= 7.529 \cdot 10^{-17}\,\text{J} \end{aligned}$$, $x = \dfrac{7.529 \cdot 10^{-17}\,\text{J} \cdot 0.020\,\text{m}}{1.602 \cdot 10^{-19}\,\text{C} \cdot 600\,\text{V}} = 0.01566\,\text{m}$ and $d - x = 0.020\,\text{m} - 0.01566\,\text{m} = 0.00434\,\text{m} = 4.34\,\text{mm}$
 **Answer:** $4.3\,\text{mm}$, two significant figures like the initial data.
@@ -188,7 +188,7 @@ The force acts on the charge at every point, not only at the zero point.
 **Given:** charge $q = e = 1.602 \cdot 10^{-19}\,\text{C}$, initial speed zero, five measurement rows $(U, v)$; the options: mass of the proton $1.673 \cdot 10^{-27}\,\text{kg}$, of the deuteron $3.344 \cdot 10^{-27}\,\text{kg}$ and of the helium ion $6.646 \cdot 10^{-27}\,\text{kg}$
 **Find:** the mean of the mass $m$ of the ion in kilograms and the kind of the ion
 **Principle:** Only the electric force does work, so the kinetic energy equals the work done by the field, $\tfrac{1}{2}mv^2 = eU$. The mass is obtained by solving the equation for every row, and the random measurement scatter evens out in the mean.
-**Formula:** $\tfrac{1}{2}mv^2 = eU$, from which $m = \dfrac{2eU}{v^2}$
+**Formula:** $$\begin{aligned} E_\text{k} &= W \\ \tfrac{1}{2}mv^2 &= eU \\ m &= \dfrac{2eU}{v^2} \end{aligned}$$
 **Conversions:** The speed $6.88$ in the unit $10^{4}\,\text{m/s}$ of the table is $6.88 \cdot 10^{4}\,\text{m/s}$; otherwise the quantities are in base units.
 **Substitution:** The mass of the row $U = 100\,\text{V}$ is $m_1 = \dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 100\,\text{V}}{(6.88 \cdot 10^{4}\,\text{m/s})^2} = 6.77 \cdot 10^{-27}\,\text{kg}$.
 
@@ -237,7 +237,7 @@ The correct answer is row 3: the kinetic energy is given by the potential differ
 **Principle:** In the acceleration only the electric force does work, so potential energy changes into kinetic energy. Between the plates the field is uniform and its force is perpendicular to the plates, so the acceleration is constant.
 
 In the direction of the plates there is no force, so the speed $v$ is conserved and the transit time is $t = L : v$.
-**Formula:** $\tfrac{1}{2}mv^2 = eU_\text{a}$, from which $v = \sqrt{\dfrac{2eU_\text{a}}{m}}$; $E = \dfrac{U_\text{d}}{d}$, $F = eE$, $a = \dfrac{F}{m}$, $t = \dfrac{L}{v}$ and $y = \tfrac{1}{2}at^2$. Combined, the mass cancels: $y = \dfrac{U_\text{d}L^2}{4dU_\text{a}}$
+**Formula:** $$\begin{aligned} \tfrac{1}{2}mv^2 &= eU_\text{a} \\ v &= \sqrt{\dfrac{2eU_\text{a}}{m}} \\ E &= \dfrac{U_\text{d}}{d} \\ F &= eE \\ a &= \dfrac{F}{m} = \dfrac{eU_\text{d}}{md} \\ t &= \dfrac{L}{v} \\ y &= \tfrac{1}{2}at^2 = \tfrac{1}{2}\,\dfrac{eU_\text{d}}{md}\,\dfrac{mL^2}{2eU_\text{a}} \\ y &= \dfrac{U_\text{d}L^2}{4dU_\text{a}} \end{aligned}$$
 **Conversions:** $U_\text{a} = 1.8\,\text{kV} = 1800\,\text{V}$, $L = 5.0\,\text{cm} = 0.050\,\text{m}$, $d = 1.5\,\text{cm} = 0.015\,\text{m}$ and finally $1\,\text{m} = 1000\,\text{mm}$.
 **Substitution:** a) $v = \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 1800\,\text{V}}{9.109 \cdot 10^{-31}\,\text{kg}}} = 2.516 \cdot 10^{7}\,\text{m/s}$.
 
@@ -273,7 +273,7 @@ The speed is about $1.4\,\%$ of the speed of light, so the expression $\tfrac{1}
 **Find:** the speed $v$ at the positive plate
 **Principle:** Only the electric force does work, so the sum of kinetic and potential energy is constant. The electron moves toward higher potential, so its potential energy falls by $eU$ and its kinetic energy grows by the same amount. The potential difference is read from the graph.
 **Reading the graph:** At $x = 1.0\,\text{cm}$ the line is on the grid line of $50\,\text{V}$. The positive plate is at $x = 5.0\,\text{cm}$, where the line is on the $250\,\text{V}$ grid line. The potential difference is $U = 250\,\text{V} - 50\,\text{V} = 200\,\text{V}$.
-**Formula:** $\tfrac{1}{2}mv^2 = eU$, so $v = \sqrt{\dfrac{2eU}{m}}$
+**Formula:** $$\begin{aligned} E_\text{k} &= W \\ \tfrac{1}{2}mv^2 &= eU \\ v^2 &= \dfrac{2eU}{m} \\ v &= \sqrt{\dfrac{2eU}{m}} \end{aligned}$$
 **Conversions:** Not needed: all quantities are in SI units, and $\sqrt{1\,\text{C} \cdot 1\,\text{V} : 1\,\text{kg}} = 1\,\text{m/s}$.
 **Substitution:** $v = \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 200\,\text{V}}{9.109 \cdot 10^{-31}\,\text{kg}}} = 8.387 \cdot 10^{6}\,\text{m/s}$
 **Answer:** $v \approx 8.4 \cdot 10^{6}\,\text{m/s}$, two significant figures, because the potentials are read from the $50\,\text{V}$ grid lines and the position is given to two significant figures.
