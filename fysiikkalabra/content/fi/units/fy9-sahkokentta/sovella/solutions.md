@@ -575,7 +575,7 @@ E &= \dfrac{250\,\text{V} - 50\,\text{V}}{0{,}050\,\text{m} - 0{,}010\,\text{m}}
 \end{aligned}
 $$
 **Vastaus:** $E = 5{,}0\,\text{kV/m}$. Kenttä osoittaa positiivisesta levystä negatiiviseen, koska potentiaali pienenee siihen suuntaan: $x$-akselia vastaan. Tuloksessa on kaksi merkitsevää numeroa kuten luetuissa arvoissa.
-**Järkevyys:** Koko levyvälillä $250\,\text{V} : 0{,}050\,\text{m}$ = $5{,}0\,\text{kV/m}$, sama tulos, kuten homogeenisessa kentässä pitääkin. Kenttä on selvästi pienempi kuin ilman läpilyöntikenttä, noin $3\,\text{MV/m}$.
+**Järkevyys:** Koko levyvälillä $250\,\text{V} : 0{,}050\,\text{m}$ = $5{,}0\,\text{kV/m}$, sama tulos, kuten homogeenisessa kentässä pitääkin. Levyt ovat tyhjiössä, joten ilman läpilyönti ei rajoita kenttää. Vertailuksi: kenttä on vain noin $0{,}2\,\%$ ilman läpilyöntikentästä, noin $3\,\text{MV/m}$, joten se on helppo tuottaa.
 
 ### b)
 **Annettu:** $E = 5{,}0\,\text{kV/m}$ a-kohdasta; alfahiukkasen varaus $q = +2e = 2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C}$ ja massa $m = 6{,}645 \cdot 10^{-27}\,\text{kg}$; vain sähköinen voima
@@ -595,7 +595,7 @@ a &= \dfrac{1{,}602 \cdot 10^{-15}\,\text{N}}{6{,}645 \cdot 10^{-27}\,\text{kg}}
 \end{aligned}
 $$
 **Vastaus:** $a \approx 2{,}4 \cdot 10^{11}\,\text{m/s}^2$, kentän suuntaan eli kohti negatiivista levyä ($x$ pienenee). Kaksi merkitsevää numeroa kuten kentän voimakkuudessa.
-**Järkevyys:** Hiukkasen paino $mg \approx 6{,}5 \cdot 10^{-26}\,\text{N}$ on noin $2 \cdot 10^{10}$ kertaa pienempi kuin sähköinen voima, joten painovoiman voi jättää huomiotta. Suuri kiihtyvyys johtuu hiukkasen pienestä massasta.
+**Järkevyys:** Hiukkasen paino $mg \approx 6{,}5 \cdot 10^{-26}\,\text{N}$ on noin $2{,}5 \cdot 10^{10}$ kertaa pienempi kuin sähköinen voima, joten painovoiman voi jättää huomiotta. Suuri kiihtyvyys johtuu hiukkasen pienestä massasta.
 
 ### c)
 **Annettu:** alfahiukkanen lähtee levosta kohdasta $x = 4{,}0\,\text{cm}$; $q = 2e$ ja $m$ kuten b-kohdassa; vain sähköinen voima tekee työtä

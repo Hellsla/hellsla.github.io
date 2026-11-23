@@ -77,23 +77,23 @@ $$, because the speed is the same.
 **Given:** travel time of the echo $t = 12.0\,\text{ms}$, speed of sound $v = 340\,\text{m/s}$, speed of the bat $6.0\,\text{m/s}$
 **Find:** the distance $d$ of the insect and the effect of the bat's motion on it
 **Principle:** The pulse travels from the bat to the insect and back as an echo, so it travels the distance $d$ twice at a constant speed (chapter *Applied chapter: ultrasound imaging and earthquake waves*). The bat's own motion during the echo is estimated separately.
-**Formula:** $2d = vt$, so $d = \dfrac{vt}{2}$; displacement of the bat $s = v_\text{b} t$
+**Formula:** $2d = vt$, so $d = \dfrac{vt}{2}$; displacement of the bat $s = v_\text{L} t$
 **Conversions:** $12.0\,\text{ms} = 12.0 \cdot 0.001\,\text{s} = 0.0120\,\text{s}$
 **Substitution:** $d = \dfrac{340\,\tfrac{\text{m}}{\text{s}} \cdot 0.0120\,\text{s}}{2} = 2.04\,\text{m}$ and $s = 6.0\,\tfrac{\text{m}}{\text{s}} \cdot 0.0120\,\text{s} = 0.072\,\text{m}$
 **Answer:** The insect is about $2.04\,\text{m}$ away, three significant figures like the travel time $12.0\,\text{ms}$. During the echo the bat moves about $7\,\text{cm}$, that is about $3.5\,\%$ of the distance, so the distance is really known only to about $2.0\,\text{m}$.
 **Reasonableness:** A distance of two metres there and back is $4\,\text{m}$, and sound travels it in about a hundredth of a second, as measured. The speed of the bat is less than $2\,\%$ of the speed of sound, so the effect of its motion is small.
 
 ### c)
-**Given:** frequency of the pulse $f_0 = 30.0\,\text{kHz}$, speed of the bat $v_\text{b} = 6.0\,\text{m/s}$ towards the wall, speed of sound $v = 340\,\text{m/s}$, the wall at rest
+**Given:** frequency of the pulse $f_0 = 30.0\,\text{kHz}$, speed of the bat $v_\text{L} = 6.0\,\text{m/s}$ towards the wall, speed of sound $v = 340\,\text{m/s}$, the wall at rest
 **Find:** the frequency $f$ of the echo the bat hears
-**Principle:** The Doppler effect happens twice (chapter *Sound as a wave: pitch, timbre and the Doppler effect*). The bat is first the source and then the listener, and its speed is $v_\text{b}$.
+**Principle:** The Doppler effect happens twice (chapter *Sound as a wave: pitch, timbre and the Doppler effect*). The bat is first the source and then the listener, and its speed is $v_\text{L}$ as the source and $v_\text{H} = v_\text{L}$ as the listener.
 
 First the bat is a moving source and the wall a receiver at rest: in front of an approaching source the wavelength becomes shorter. The wall reflects the frequency it receives as a source at rest, and the bat is now a listener that approaches it and meets the wavefronts more often. In both stages approaching raises the frequency.
-**Formula:** $f_\text{s} = f_0 \cdot \dfrac{v}{v - v_\text{b}}$ and $f = f_\text{s} \cdot \dfrac{v + v_\text{b}}{v}$, so $f = f_0 \cdot \dfrac{v + v_\text{b}}{v - v_\text{b}}$
+**Formula:** $f_\text{s} = f_0 \cdot \dfrac{v}{v - v_\text{L}}$ and $f = f_\text{s} \cdot \dfrac{v + v_\text{H}}{v}$, and since $v_\text{H} = v_\text{L}$, $f = f_0 \cdot \dfrac{v + v_\text{L}}{v - v_\text{L}}$
 **Conversions:** The frequency stays in the unit $\text{kHz}$, because the ratio of the speeds has no unit.
 **Substitution:** $f_\text{s} = 30.0\,\text{kHz} \cdot \dfrac{340\,\text{m/s}}{334\,\text{m/s}} = 30.54\,\text{kHz}$ and $f = 30.54\,\text{kHz} \cdot \dfrac{346\,\text{m/s}}{340\,\text{m/s}} = 31.08\,\text{kHz}$
 **Answer:** $f \approx 31.1\,\text{kHz}$, that is about $1.1\,\text{kHz}$ higher than the pulse sent, three significant figures like the frequency $30.0\,\text{kHz}$.
-**Reasonableness:** At small speeds each stage raises the frequency by about the fraction $\tfrac{v_\text{b}}{v} = \tfrac{6.0}{340} \approx 1.8\,\%$, about $3.5\,\%$ in all, and $$
+**Reasonableness:** At small speeds each stage raises the frequency by about the fraction $\tfrac{v_\text{L}}{v} = \tfrac{6.0}{340} \approx 1.8\,\%$, about $3.5\,\%$ in all, and $$
 30.0\,\text{kHz} \cdot 1.035 \approx 31.1\,\text{kHz}
 $$. The heard frequency is greater than $f_0$, as it should be when approaching.
 
@@ -111,7 +111,7 @@ The wavelength of the ultrasound, $11\,\text{mm}$, is of the order of the mosqui
 - In part d the argument is that a low sound is weaker; what decides is the ratio of the wavelength to the size of the target.
 
 ### Hyväksytään myös
-- In part c directly with the combined formula $f = f_0 \cdot \dfrac{v + v_\text{b}}{v - v_\text{b}}$, when its two stages are justified.
+- In part c directly with the combined formula $f = f_0 \cdot \dfrac{v + v_\text{L}}{v - v_\text{L}}$, when its two stages are justified.
 
 ## fy9-aallot-s3
 
@@ -508,7 +508,7 @@ $$
 **Given:** $\Delta s = 0.50\,\text{m}$ and $\lambda = 1.00\,\text{m}$; the loudspeakers play in phase
 **Find:** whether the sound at $\text{P}$ is loud or quiet
 **Principle:** When the sources are in phase, the waves reinforce each other if $\Delta s = n\lambda$ and cancel each other if $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$ (chapter *When waves combine: superposition and interference*). So the path difference is compared with the wavelength.
-**Model answer:** The path difference is $\dfrac{\Delta s}{\lambda} = \dfrac{0.50\,\text{m}}{1.00\,\text{m}} = 0.50$, that is, half a wavelength. The other wave has travelled half a wavelength farther, so it arrives at $\text{P}$ in opposite phase: when one wave compresses the air, the other rarefies it. The waves cancel each other, so $\text{P}$ is a point of quiet sound, an almost silent nodal line. It is not completely silent, because the farther loudspeaker is heard slightly more weakly.
+**Model answer:** The path difference is $\dfrac{\Delta s}{\lambda} = \dfrac{0.50\,\text{m}}{1.00\,\text{m}} = 0.50$, that is, half a wavelength. The other wave has travelled half a wavelength farther, so it arrives at $\text{P}$ in opposite phase: when one wave compresses the air, the other rarefies it. The waves cancel each other, so $\text{P}$ is a point of quiet sound, a nodal line. By the task's assumption the difference in loudness caused by the different distances is ignored, so the amplitudes are equal and the waves cancel each other completely: it is silent at $\text{P}$.
 
 ### d)
 **Given:** $\Delta s = 0.50\,\text{m}$ and $v = 343.4\,\text{m/s}$; at the start $f = 343\,\text{Hz}$, when $\Delta s = \tfrac{1}{2}\lambda$

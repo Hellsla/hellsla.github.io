@@ -855,7 +855,7 @@
     "fy4-7"
    ],
    "figure": "fy6-12/ex-vgraph",
-   "text": "Kaksi suurta metallilevyä on yhdensuuntaisina tyhjiössä, ja niiden välissä on homogeeninen sähkökenttä. Kuvaajassa on potentiaali $V$ etäisyyden $x$ funktiona, kun $x$ mitataan negatiivisesta levystä. Alfahiukkanen (heliumin ydin, varaus $+2e$) on levyjen välissä, ja siihen vaikuttaa vain sähköinen voima.\n\n- alkeisvaraus $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$\n- alfahiukkasen massa $6{,}645 \\cdot 10^{-27}\\,\\text{kg}$",
+   "text": "Kaksi suurta metallilevyä on yhdensuuntaisina tyhjiössä $5{,}0\\,\\text{cm}$:n etäisyydellä toisistaan, ja niiden välissä on homogeeninen sähkökenttä. Kuvaajassa on potentiaali $V$ etäisyyden $x$ funktiona, kun $x$ mitataan negatiivisesta levystä. Alfahiukkanen (heliumin ydin, varaus $+2e$) on levyjen välissä, ja siihen vaikuttaa vain sähköinen voima.\n\n- alkeisvaraus $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$\n- alfahiukkasen massa $6{,}645 \\cdot 10^{-27}\\,\\text{kg}$",
    "parts": [
     {
      "id": "a",

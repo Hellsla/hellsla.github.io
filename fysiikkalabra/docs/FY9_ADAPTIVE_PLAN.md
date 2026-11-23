@@ -495,6 +495,7 @@ jälkeen. PR 1 ja PR 9 ovat FY9:n sisältöä ja voivat kulkea jaettujen väliss
 | 2 | Tehtäväindeksi: `kertaus/FY9.json`, `valmentaja.py check/build/report` | jaettu (scripts) | – | 150–250 k |
 | 3 | Näytön kirjaus: `valmentaja.js` (a), `fl:attempt`-tarkennukset, `fl:rubric`, tietosuojasivu | jaettu | 2 | 200–300 k |
 | 4 | Osaamisnäkymä ja suositukset: valmentajasivu, FY9-rivi ja -laatta | jaettu, UI | 3 | 250–350 k |
+| 4b | Tavoite (L–E / M–C / B–A) ja käydyt kurssit (P13) | jaettu, UI | 4 | 150–250 k |
 | 5 | Vaikea ratkaisuvaihe ja toistuvat virheet | jaettu, UI | 4 | 120–200 k |
 | 6 | Koetila ja minikokeet 30/60 min, harjoituskokeen koetila | jaettu, UI | 4 | 300–450 k |
 | 7 | Kertauspolku 2/4 viikkoa | jaettu, UI | 4 | 150–250 k |
@@ -543,6 +544,18 @@ JavaScriptiä (sivu kertoo, että valmentaja tarvitsee JavaScriptin, ja linkitt�
 Testit: golden-lokit (vähintään 12 tapausta: tyhjä, vain itsearvio, arvaaja, heikko yksi aihe, erääntyneet kertaukset,
 kaikki vahvaa, monikielinen loki, tasapeli, jatkotehtävä, päivän aika loppuu, jumittumisen esto, yön yli);
 `check_layout` 8 leveyttä; `check_a11y`; `test_home` (laatta), `test_jatka` ennallaan.
+
+**PR 4b – Tavoite ja käydyt kurssit (P13, opettaja 2026-11-23).** Valmentajasivulle kaksi asetusta, tallennus
+vain laitteelle, muutettavissa ja tyhjennettävissä: (1) ylioppilaskokeen tavoite **L–E (korkeat pisteet)**, **M–C
+(hyvä hallinta)** tai **B–A (perusteet varmaksi)**; (2) **käydyt kurssit** FY1–FY8 valintaruutuina. Tavoite muuttaa
+painotusta: B–A lyhyet automaattisesti tarkistettavat tehtävät ja perusmallit, "Kehittyy" riittää etenemiseen,
+ensin 30 min minikokeet; M–C noin puolet lyhyitä ja puolet pitkiä, "Vahva" ydinosaamisissa; L–E pitkät, soveltavat
+ja selittävät tehtävät, "Vahva" kaikissa kuudessa osaamisessa, 60 min minikokeet ja harjoituskoe aiemmin. Valitsematta
+jätettyjen kurssien aiheet eivät tule suosituksiin eivätkä osaamistaulukkoon. Säännöt: valmentaja ei koskaan arvioi
+eikä ennusta arvosanaa (R10), tila pysyy sanoina; tavoite on opiskelijan oma eikä lukitse mitään (vapaa harjoittelu
+säilyy). Uudet käyttöliittymätekstit opettajan hyväksyttäviksi tekijäsessioon. Hyväksytään, kun: asetukset
+tallentuvat ja poistuvat (Tyhjennä), suositusten koostumus muuttuu tavoitteen mukaan golden-testeissä, valitsematon
+kurssi ei näy suosituksissa eikä taulukossa, `check_layout` ja `check_a11y` vihreät.
 
 **PR 5 – Vaikea vaihe ja toistuvat virheet.** Hyväksytään, kun: siru-rivi näkyy vasta ratkaisun avauduttua, on
 valinnainen ja näppäimistöllä käytettävä; valinnat näkyvät valmentajassa; toistuva virhe näytetään vain, kun sama
@@ -613,3 +626,4 @@ ovat harjoittelun mitoitus, eivät väite oikean kokeen pisteytyksestä, ja se s
 | P10 | Laajennetaanko myöhemmin moduulien Sovella itsenäisesti -tehtäviin (sekoittimen 28) | myöhemmin, kun FY9 on käytössä |
 | P11 | Abitti 2 -ohje omana TVT-ohjeena vai `fy9-koe`:n osana | oma TVT-ohje, linkitetään |
 | P12 | Paikallinen kielimalli: selvitetäänkö lainkaan | selvitys vasta, kun PR 4–7 ovat käytössä; ei toteutusta ilman erillistä arviota |
+| P13 | Huomioiko valmentaja opiskelijan tavoitteen ja käydyt kurssit? | **Päätetty: opettaja 2026-11-23 ("yes, go with the recommendations")**: tavoite L–E (korkeat pisteet) / M–C (hyvä hallinta) / B–A (perusteet varmaksi) ja käydyt kurssit FY1–FY8, PR 4b; ei arvosanaennustetta |

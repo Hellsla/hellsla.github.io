@@ -144,7 +144,7 @@
         },
         {
           "text": "Korkeus on koko ajan yhtä korkea, ja se laskee ohitushetkellä.",
-          "feedback": "Oikein. Kun lähde lähestyy, $f = f_0 \\cdot \\tfrac{v}{v - v_\\text{s}}$. Kun lähde loittonee, $f = f_0 \\cdot \\tfrac{v}{v + v_\\text{s}}$. Kumpikin on vakio eli ei muutu. Korkeus laskee ohitushetkellä. Kertaa tarvittaessa luvussa *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*.",
+          "feedback": "Oikein. Kun lähde lähestyy, $f = f_0 \\cdot \\tfrac{v}{v - v_\\text{L}}$. Kun lähde loittonee, $f = f_0 \\cdot \\tfrac{v}{v + v_\\text{L}}$. Kumpikin on vakio eli ei muutu. Korkeus laskee ohitushetkellä. Kertaa tarvittaessa luvussa *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*.",
           "correct": true
         },
         {
@@ -352,13 +352,13 @@
       "tolerance": 0.02,
       "hints": [
         "Kumpaankin kuultuun taajuuteen liittyy sama tuntematon äänimerkin taajuus $f_0$. Miten saat sen pois yhtälöistä?",
-        "Kun juna lähestyy, $f_1 = f_0 \\cdot \\tfrac{v}{v - v_\\text{s}}$. Kun juna loittonee, $f_2 = f_0 \\cdot \\tfrac{v}{v + v_\\text{s}}$. Jaa yhtälöt puolittain eli vasen puoli vasemmalla ja oikea puoli oikealla.",
-        "$\\tfrac{f_1}{f_2} = \\tfrac{v + v_\\text{s}}{v - v_\\text{s}}$, josta saadaan $v_\\text{s} = v \\cdot \\tfrac{f_1 - f_2}{f_1 + f_2}$."
+        "Kun juna lähestyy, $f_1 = f_0 \\cdot \\tfrac{v}{v - v_\\text{L}}$. Kun juna loittonee, $f_2 = f_0 \\cdot \\tfrac{v}{v + v_\\text{L}}$. Jaa yhtälöt puolittain eli vasen puoli vasemmalla ja oikea puoli oikealla.",
+        "$\\tfrac{f_1}{f_2} = \\tfrac{v + v_\\text{L}}{v - v_\\text{L}}$, josta saadaan $v_\\text{L} = v \\cdot \\tfrac{f_1 - f_2}{f_1 + f_2}$."
       ],
       "mistakes": [
         {
           "value": 50.82,
-          "feedback": "Jaoit taajuuksien erotuksen yhdellä kuulluista taajuuksista. Kumpikin taajuus poikkeaa äänimerkin omasta taajuudesta. Siksi erotus syntyy kahdesta muutoksesta: $v_\\text{s} = v \\cdot \\tfrac{f_1 - f_2}{f_1 + f_2}$."
+          "feedback": "Jaoit taajuuksien erotuksen yhdellä kuulluista taajuuksista. Kumpikin taajuus poikkeaa äänimerkin omasta taajuudesta. Siksi erotus syntyy kahdesta muutoksesta: $v_\\text{L} = v \\cdot \\tfrac{f_1 - f_2}{f_1 + f_2}$."
         },
         {
           "value": 54.92,
@@ -369,7 +369,7 @@
           "feedback": "Tämä on nopeus yksikössä $\\text{km/h}$. Vastaa metreinä sekunnissa."
         }
       ],
-      "solution": "**Annettu:** taajuus, joka kuullaan junan lähestyessä, $f_1 = 562\\,\\text{Hz}$, taajuus, joka kuullaan junan loitotessa, $f_2 = 478\\,\\text{Hz}$, äänen nopeus $v = 340\\,\\text{m/s}$; kuulija on paikallaan\n\n**Kysytty:** junan nopeus $v_\\text{s}$ yksikössä $\\text{m/s}$\n\n**Periaate:** Lähde liikkuu, ja kuulija on paikallaan. Lähteen edessä aallonpituus lyhenee, ja lähteen takana se pitenee. Siksi käytetään liikkuvan lähteen Dopplerin kaavaa. Lähestyessä kaavassa on miinusmerkki ja loitotessa plusmerkki (luku *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*). Äänimerkin omaa taajuutta $f_0$ ei tunneta. Se on kuitenkin molemmissa yhtälöissä sama. Siksi se supistuu pois, kun yhtälöt jaetaan puolittain.\n\n**Kaava:** $f_1 = f_0 \\cdot \\dfrac{v}{v - v_\\text{s}}$ ja $f_2 = f_0 \\cdot \\dfrac{v}{v + v_\\text{s}}$, joten $\\dfrac{f_1}{f_2} = \\dfrac{v + v_\\text{s}}{v - v_\\text{s}}$. Siitä saadaan $f_1 v - f_1 v_\\text{s} = f_2 v + f_2 v_\\text{s}$ ja $v_\\text{s} = v \\cdot \\dfrac{f_1 - f_2}{f_1 + f_2}$\n\n**Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita. Lopuksi nopeutta verrataan yksikössä $\\text{km/h}$.\n\n**Sijoitus:** $v_\\text{s} = 340\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot \\dfrac{562\\,\\text{Hz} - 478\\,\\text{Hz}}{562\\,\\text{Hz} + 478\\,\\text{Hz}} = 340\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot \\dfrac{84\\,\\text{Hz}}{1040\\,\\text{Hz}} = 27{,}46\\,\\text{m/s}$\n\n**Vastaus:** $v_\\text{s} \\approx 27\\,\\text{m/s}$. Vastauksessa on kaksi merkitsevää numeroa, koska tulos riippuu taajuuksien erotuksesta $84\\,\\text{Hz}$.\n\n**Järkevyys:** $27{,}46\\,\\text{m/s} = 27{,}46 \\cdot \\tfrac{3600\\,\\text{s/h}}{1000\\,\\text{m/km}} \\approx 99\\,\\text{km/h}$. Se on tavallinen junan nopeus aseman lähellä. Äänimerkin oma taajuus on $f_0 = f_1 \\cdot \\tfrac{v - v_\\text{s}}{v} = 562\\,\\text{Hz} \\cdot \\tfrac{312{,}5}{340} \\approx 517\\,\\text{Hz}$. Se on kuultujen taajuuksien välissä, kuten pitää."
+      "solution": "**Annettu:** taajuus, joka kuullaan junan lähestyessä, $f_1 = 562\\,\\text{Hz}$, taajuus, joka kuullaan junan loitotessa, $f_2 = 478\\,\\text{Hz}$, äänen nopeus $v = 340\\,\\text{m/s}$; kuulija on paikallaan\n\n**Kysytty:** junan nopeus $v_\\text{L}$ yksikössä $\\text{m/s}$\n\n**Periaate:** Lähde liikkuu, ja kuulija on paikallaan. Lähteen edessä aallonpituus lyhenee, ja lähteen takana se pitenee. Siksi käytetään liikkuvan lähteen Dopplerin kaavaa. Lähestyessä kaavassa on miinusmerkki ja loitotessa plusmerkki (luku *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*). Äänimerkin omaa taajuutta $f_0$ ei tunneta. Se on kuitenkin molemmissa yhtälöissä sama. Siksi se supistuu pois, kun yhtälöt jaetaan puolittain.\n\n**Kaava:** $f_1 = f_0 \\cdot \\dfrac{v}{v - v_\\text{L}}$ ja $f_2 = f_0 \\cdot \\dfrac{v}{v + v_\\text{L}}$, joten $\\dfrac{f_1}{f_2} = \\dfrac{v + v_\\text{L}}{v - v_\\text{L}}$. Siitä saadaan $f_1 v - f_1 v_\\text{L} = f_2 v + f_2 v_\\text{L}$ ja $v_\\text{L} = v \\cdot \\dfrac{f_1 - f_2}{f_1 + f_2}$\n\n**Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita. Lopuksi nopeutta verrataan yksikössä $\\text{km/h}$.\n\n**Sijoitus:** $v_\\text{L} = 340\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot \\dfrac{562\\,\\text{Hz} - 478\\,\\text{Hz}}{562\\,\\text{Hz} + 478\\,\\text{Hz}} = 340\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot \\dfrac{84\\,\\text{Hz}}{1040\\,\\text{Hz}} = 27{,}46\\,\\text{m/s}$\n\n**Vastaus:** $v_\\text{L} \\approx 27\\,\\text{m/s}$. Vastauksessa on kaksi merkitsevää numeroa, koska tulos riippuu taajuuksien erotuksesta $84\\,\\text{Hz}$.\n\n**Järkevyys:** $27{,}46\\,\\text{m/s} = 27{,}46 \\cdot \\tfrac{3600\\,\\text{s/h}}{1000\\,\\text{m/km}} \\approx 99\\,\\text{km/h}$. Se on tavallinen junan nopeus aseman lähellä. Äänimerkin oma taajuus on $f_0 = f_1 \\cdot \\tfrac{v - v_\\text{L}}{v} = 562\\,\\text{Hz} \\cdot \\tfrac{312{,}5}{340} \\approx 517\\,\\text{Hz}$. Se on kuultujen taajuuksien välissä, kuten pitää."
     },
     {
       "id": "konsertti",

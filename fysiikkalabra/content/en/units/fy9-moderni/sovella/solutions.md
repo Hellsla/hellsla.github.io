@@ -592,7 +592,7 @@ $$
 **Assumptions:** The model ignores scattering: radiation scattered from the wall and the surroundings brings an additional dose, so the real dose rate is larger than the calculated one. The result is also too small if the source is replaced by a stronger one or the time spent grows. A real wall should therefore be made thicker than the result, for example $25\,\text{cm}$ or more.
 
 ### Yleisiä virheitä
-- In part a the quotient is used instead of its logarithm: $\mu = 16 / 20\,\text{cm} = 0.80\,\text{1/cm}$. Another mistake is to turn the ratio upside down, which makes $\mu$ negative.
+- In part a the quotient is used instead of its logarithm: $\mu = 4 / 10\,\text{cm} = 0.40\,\text{1/cm}$. Another mistake is to turn the ratio upside down, which makes $\mu$ negative.
 - In part b the dose rate is calculated linearly, $80\,\mu\text{Sv/h} - 18 \cdot 3.0\,\mu\text{Sv/h}$, or the sign of the exponent of $e$ is forgotten.
 - In part c the dose rate is multiplied only by the $1.5\,\text{h}$ of one working day, or $\mu\text{Sv}$ and $\text{mSv}$ are mixed up ($6.6 \cdot 330 = 2178\,\text{mSv}$).
 - In part d the annual limit $1.0\,\text{mSv}$ is used as the dose rate $1.0\,\mu\text{Sv/h}$, which gives the thickness $31.6\,\text{cm}$, a wrong value outside the graph.

@@ -161,10 +161,10 @@ For example, an elementary charge accelerated through $1\,\text{V}$ gains the ki
 ```kaavat
 capacitor law :: Q = CU
 capacitance of a parallel-plate capacitor :: C = \varepsilon_0\varepsilon_\text{r}\,\frac{A}{d}
-energy of a capacitor :: E = \tfrac12 CU^2
+energy of a capacitor :: W = \tfrac12 CU^2
 ```
 
-where $C$ is the capacitance ($\text{F}$), $A$ the area of a plate ($\text{m}^2$), $\varepsilon_0 = 8.854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ the relative permittivity of the dielectric, $E$ the energy stored in the capacitor ($\text{J}$), also $E = \tfrac12 QU$. The formula of the parallel-plate capacitor holds when $d$ is small compared with the size of the plates and the dielectric fills the gap. For a capacitor connected to a source the voltage stays the same; for a disconnected one, the charge.
+where $C$ is the capacitance ($\text{F}$), $A$ the area of a plate ($\text{m}^2$), $\varepsilon_0 = 8.854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ the relative permittivity of the dielectric, $W$ the energy stored in the capacitor ($\text{J}$), also $W = \tfrac12 QU$. The formula of the parallel-plate capacitor holds when $d$ is small compared with the size of the plates and the dielectric fills the gap. For a capacitor connected to a source the voltage stays the same; for a disconnected one, the charge.
 
 ```pysahdy
 What happens to the capacitance of a parallel-plate capacitor when the distance between the plates is doubled and everything else stays the same?

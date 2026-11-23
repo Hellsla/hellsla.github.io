@@ -395,7 +395,7 @@ Mittaus 5 jätetään pois, koska raporttiin on kirjattu karkea virhe: nopea nos
 - c-kohdassa vetoa ei tehdä tasaisella nopeudella, jolloin veto ei ole yhtä suuri kuin kitka, tai liukukitkaa yritetään mitata rajakulmasta, joka antaa lepokitkan.
 
 ### Hyväksytään myös
-- a-kohdassa kunkin kulman tangentti erikseen ja niiden keskiarvo ($0{,}415$).
+- a-kohdassa kunkin kulman tangentti erikseen ja niiden keskiarvo ($0{,}414$).
 - Epävarmuudeksi keskiarvon keskivirhe, kun se on laskettu ja nimetty oikein.
 
 ## fy9-voimat-s6

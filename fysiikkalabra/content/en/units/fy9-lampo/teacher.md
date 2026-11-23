@@ -6,7 +6,7 @@
 - **25–35 min, Theory summary.** Go through the recognition chart and the heating curve. For each row, ask the students for one everyday example. Return to Think about it.
 - **35–55 min, Apply.** Four multiple-choice questions in pairs (about $6\,\text{min}$), then four calculations alone. Students who finish quickly continue without hints, others use the hints one at a time.
 - **55–65 min, Check your understanding and exit ticket.** Alone. The explanation question is self-assessed with the criteria.
-- **65–75 min, Tasks.** Ten minutes is enough for the beginning of one long problem in exam conditions, without the model answer. Recommendation: *New ice for the ice rink* a (calculation) or *Brakes on a fell road* a–b (combining modules). The rest of the problem and the other five problems are homework, two or three at a time before the next lesson. *Vaporisation of boiling water* ($20$ points) is done at home on graph paper or with a spreadsheet.
+- **65–75 min, Tasks.** Ten minutes is enough for the beginning of one long problem in exam conditions, without the model answer. Recommendation: *New ice for the ice rink* a (calculation) or *Brakes on a fell road* a–b (combining modules). The rest of the problem and the other seven problems are homework, two or three at a time before the next lesson. *Vaporisation of boiling water* ($20$ points) is done at home on graph paper or with a spreadsheet.
 
 ## Using the starting-point test
 The Predict questions are a diagnostic test, not a grade. Each question matches one chapter:

@@ -595,19 +595,19 @@ mg &= 1200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
 $$, ja kitka on noin $\dfrac{3{,}6}{11{,}8} \approx 31\,\%$ siitä. Kitkan on siis oltava selvästi painoa pienempi tavallisessa kaarreajossa, mikä on uskottavaa.
 
 ### c)
-**Annettu:** lepokitkakerroin $\mu_\text{s} = 0{,}50$, säde $r = 75\,\text{m}$ a-kohdasta; $g = 9{,}81\,\text{m/s}^2$
+**Annettu:** lepokitkakerroin $\mu_0 = 0{,}50$, säde $r = 75\,\text{m}$ a-kohdasta; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** suurin nopeus $v_\text{max}$, jolla auto ei liu'u
 **Periaate:** Voimakuvio on sama kuin b-kohdassa. Pystysuunnassa $N = mg$. Lepokitka on enintään $$
 \begin{aligned}
-F_\text{max} &= \mu_\text{s} N \\
-&= \mu_\text{s} mg
+F_\text{max} &= \mu_0 N \\
+&= \mu_0 mg
 \end{aligned}
-$$ (luku *Paino, kitka ja kalteva taso*). Suurin nopeus saadaan, kun kitka on suurin mahdollinen. Silloin vaakasuunnan liikeyhtälö $\Sigma F_x = ma_\text{n}$ on $\mu_\text{s} mg = \dfrac{mv_\text{max}^2}{r}$ (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*).
-**Kaava:** $v_\text{max} = \sqrt{\mu_\text{s} g r}$, koska massa supistuu
+$$ (luku *Paino, kitka ja kalteva taso*). Suurin nopeus saadaan, kun kitka on suurin mahdollinen. Silloin vaakasuunnan liikeyhtälö $\Sigma F_x = ma_\text{n}$ on $\mu_0 mg = \dfrac{mv_\text{max}^2}{r}$ (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*).
+**Kaava:** $v_\text{max} = \sqrt{\mu_0 g r}$, koska massa supistuu
 **Muunnokset:** Lopuksi $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
 **Sijoitus:** $$
 \begin{aligned}
-v_\text{max} &= \sqrt{\mu_\text{s} g r} \\
+v_\text{max} &= \sqrt{\mu_0 g r} \\
 &= \sqrt{0{,}50 \cdot 9{,}81\,\text{m/s}^2 \cdot 75\,\text{m}} \\
 &= \sqrt{367{,}9\,\text{m}^2/\text{s}^2} \\
 &= 19{,}18\,\text{m/s}
@@ -625,17 +625,17 @@ $$
 **Vastaus:** $v_\text{max} \approx 19\,\text{m/s}$ eli noin $69\,\text{km/h}$. Kaksi merkitsevää numeroa kuten säteessä ja kitkakertoimessa.
 **Järkevyys:** Suurin kitka antaa normaalikiihtyvyyden $$
 \begin{aligned}
-a_\text{n} &= \mu_\text{s} g \\
+a_\text{n} &= \mu_0 g \\
 &\approx 4{,}9\,\text{m/s}^2
 \end{aligned}
-$$. Kuvaajan käyrä saavuttaa tämän arvon nopeudella $\sqrt{4{,}9 \cdot 75} \approx 19\,\text{m/s}$. Nopeudella $15\,\text{m/s}$ tarvittava kitka $3{,}6\,\text{kN}$ on pienempi kuin suurin kitka $\mu_\text{s} mg \approx 5{,}9\,\text{kN}$ (noin $61\,\%$ siitä), joten auto ei liu'u.
+$$. Kuvaajan käyrä saavuttaa tämän arvon nopeudella $\sqrt{4{,}9 \cdot 75} \approx 19\,\text{m/s}$. Nopeudella $15\,\text{m/s}$ tarvittava kitka $3{,}6\,\text{kN}$ on pienempi kuin suurin kitka $\mu_0 mg \approx 5{,}9\,\text{kN}$ (noin $61\,\%$ siitä), joten auto ei liu'u.
 
 ### d)
 **Kysytty:** miten suurin nopeus ja kuvaaja muuttuvat, kun $m = 1500\,\text{kg}$
-**Periaate:** Liikeyhtälö $\mu_\text{s} mg = \dfrac{mv_\text{max}^2}{r}$ on sama kuin c-kohdassa, ja siinä massa $m$ esiintyy molemmilla puolilla (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*, luku *Paino, kitka ja kalteva taso*). Kaarteen säde ja kitkakerroin eivät riipu massasta.
+**Periaate:** Liikeyhtälö $\mu_0 mg = \dfrac{mv_\text{max}^2}{r}$ on sama kuin c-kohdassa, ja siinä massa $m$ esiintyy molemmilla puolilla (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*, luku *Paino, kitka ja kalteva taso*). Kaarteen säde ja kitkakerroin eivät riipu massasta.
 **Mallivastaus:** Massa supistuu, joten $$
 \begin{aligned}
-v_\text{max} &= \sqrt{\mu_\text{s} g r} \\
+v_\text{max} &= \sqrt{\mu_0 g r} \\
 &\approx 19\,\text{m/s}
 \end{aligned}
 $$ ei muutu. Kuvaaja ei myöskään muutu, koska $a_\text{n} = \dfrac{v^2}{r}$ ei riipu massasta. Voimat sen sijaan muuttuvat. Nopeudella $15\,\text{m/s}$ tarvittava kitka on $$
@@ -646,7 +646,7 @@ F &= m a_\text{n} \\
 \end{aligned}
 $$ja suurin mahdollinen kitka on $$
 \begin{aligned}
-\mu_\text{s} mg &= 0{,}50 \cdot 1500\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+\mu_0 mg &= 0{,}50 \cdot 1500\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
 &\approx 7400\,\text{N}
 \end{aligned}
 $$.
@@ -656,7 +656,7 @@ Raskaampi auto tarvitsee siis suuremman kitkavoiman, mutta renkaat antavat sitä
 ### Yleisiä virheitä
 - a-kohdassa säteeksi otetaan $a_\text{n} : v^2$ eli luvut jaetaan väärin päin, tai nopeus unohdetaan neliöstä.
 - b-kohdassa piirretään keskipakoisvoima tai kitka osoittamaan ulos kaarteesta. Kaarteessa ainoa vaakavoima on lepokitka kohti keskipistettä.
-- c-kohdassa käytetään liukukitkaa tai kitkakerrointa kerrottuna nopeudella. Rajalla käytetään lepokitkan suurinta arvoa $\mu_\text{s} mg$, ja nopeus saadaan liikeyhtälöstä.
+- c-kohdassa käytetään liukukitkaa tai kitkakerrointa kerrottuna nopeudella. Rajalla käytetään lepokitkan suurinta arvoa $\mu_0 mg$, ja nopeus saadaan liikeyhtälöstä.
 - d-kohdassa oletetaan, että raskaampi auto ajaa kaarteen hitaammin tai nopeammin. Massa supistuu liikeyhtälöstä, joten nopeusraja ei riipu siitä.
 
 ### Hyväksytään myös
@@ -669,7 +669,7 @@ F &= \dfrac{mv^2}{r} \\
 $$, sama tulos.
 - c-kohdassa suurin nopeus voidaan lukea kuvaajalta: käyrä saavuttaa arvon $$
 \begin{aligned}
-a_\text{n} &= \mu_\text{s} g \\
+a_\text{n} &= \mu_0 g \\
 &\approx 4{,}9\,\text{m/s}^2
 \end{aligned}
 $$ nopeudella noin $19\,\text{m/s}$.
@@ -804,7 +804,7 @@ H' &= T\cos 45^\circ \\
 &= 270{,}5\,\text{N} \cdot 0{,}7071 \\
 &= 191{,}3\,\text{N}
 \end{aligned}
-$$ Aiemmin $331\,\text{N}$, joten myös saranan voima pienenee. Kiinnitys korkeammalle rasittaa siis sekä vaijeria että saranaa vähemmän.
+$$ Aiemmin vaakakomponentti oli $331\,\text{N}$, joten myös saranan voima pienenee. Kiinnitys korkeammalle rasittaa siis sekä vaijeria että saranaa vähemmän.
 
 ### Yleisiä virheitä
 - a-kohdassa tangon paino otetaan tangon päähän tai sen momentti unohdetaan. Tasa-aineisen tangon paino vaikuttaa keskeltä, varrella $\tfrac{L}{2}$.

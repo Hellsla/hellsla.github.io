@@ -413,7 +413,7 @@
           "points": 5,
           "text": "Valmistajan mukaan lanka kestää enintään $8{,}0\\,\\text{N}$:n voiman. Mikä on lyhin kierrosaika, jolla alustaa saa pyörittää tällä kärryllä ja etäisyydellä? Arvioi, kuinka luotettava ennuste on.",
           "answer": {
-            "value": 0.4948,
+            "value": 0.4937,
             "unit": "s",
             "tolerance": 0.04
           },
@@ -1052,14 +1052,14 @@
           },
           "criteria": [
             {
-              "text": "Perustelee: auton pystykiihtyvyys on nolla, joten $N = mg$, ja lepokitka on enintään $$\n\\begin{aligned}\nF_\\text{max} &= \\mu_\\text{s} N \\\\\n&= \\mu_\\text{s} mg\n\\end{aligned}\n$$. Rajatilanteessa kitka on suurin mahdollinen.",
+              "text": "Perustelee: auton pystykiihtyvyys on nolla, joten $N = mg$, ja lepokitka on enintään $$\n\\begin{aligned}\nF_\\text{max} &= \\mu_0 N \\\\\n&= \\mu_0 mg\n\\end{aligned}\n$$. Rajatilanteessa kitka on suurin mahdollinen.",
               "tag": "concept",
               "points": 1
             },
             {
               "key": "equation",
               "points": 1,
-              "detail": "$\\Sigma F = ma_\\text{n}$ rajatilanteessa: $\\mu_\\text{s} mg = \\dfrac{mv^2}{r}$, joten $v_\\text{max} = \\sqrt{\\mu_\\text{s} g r}$ ja massa supistuu."
+              "detail": "$\\Sigma F = ma_\\text{n}$ rajatilanteessa: $\\mu_0 mg = \\dfrac{mv^2}{r}$, joten $v_\\text{max} = \\sqrt{\\mu_0 g r}$ ja massa supistuu."
             },
             {
               "key": "calculation",
@@ -1074,7 +1074,7 @@
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "Suurin kitka $\\mu_\\text{s} g$ antaa kuvaajan mukaan $a_\\text{n} \\approx 4{,}9\\,\\text{m/s}^2$ nopeudella noin $19\\,\\text{m/s}$, ja $15\\,\\text{m/s}$ on sitä pienempi."
+              "detail": "Suurin kitka $\\mu_0 g$ antaa kuvaajan mukaan $a_\\text{n} \\approx 4{,}9\\,\\text{m/s}^2$ nopeudella noin $19\\,\\text{m/s}$, ja $15\\,\\text{m/s}$ on sitä pienempi."
             }
           ]
         },
@@ -1085,7 +1085,7 @@
           "text": "Auto kuormataan matkustajilla ja tavaroilla, ja sen massa on $1500\\,\\text{kg}$. Miten kuorma vaikuttaa kaarteen suurimpaan nopeuteen märällä tiellä? Muuttuuko kuvaaja? Perustele laskemalla.",
           "criteria": [
             {
-              "text": "Perustelee, että massa supistuu liikeyhtälöstä $\\mu_\\text{s} mg = \\dfrac{mv^2}{r}$, joten suurin nopeus $$\n\\begin{aligned}\n\\sqrt{\\mu_\\text{s} g r} &\\approx 19\\,\\text{m/s}\n\\end{aligned}\n$$ ei muutu.",
+              "text": "Perustelee, että massa supistuu liikeyhtälöstä $\\mu_0 mg = \\dfrac{mv^2}{r}$, joten suurin nopeus $$\n\\begin{aligned}\n\\sqrt{\\mu_0 g r} &\\approx 19\\,\\text{m/s}\n\\end{aligned}\n$$ ei muutu.",
               "tag": "concept",
               "points": 1
             },
@@ -1188,7 +1188,7 @@
               "detail": "$H \\approx 331\\,\\text{N}$ poispäin seinästä ja $V \\approx 14{,}7\\,\\text{N}$ ylöspäin."
             },
             {
-              "text": "Laskee komponenteista suuruuden: $$\n\\begin{aligned}\nF_\\text{s} &= \\sqrt{H^2 + V^2} \\\\\n&\\approx 332\\,\\text{N}\n\\end{aligned}\n$$.",
+              "text": "Laskee komponenteista suuruuden: $$\n\\begin{aligned}\nF_\\text{s} &= \\sqrt{H^2 + V^2} \\\\\n&= 331{,}7\\,\\text{N}\n\\end{aligned}\n$$.",
               "tag": "math",
               "points": 1
             },
