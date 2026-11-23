@@ -584,6 +584,8 @@ FY9 tehty: claude/fy9-oikoluku-aineisto (PR #626); samassa PR:ssä kohdan 19 ain
 FY4 tehty: claude/fy4-oikoluku-aineisto (PR #625); samassa PR:ssä kohdan 19 aineistotehtävät FY4-A1…A5. Lähteestä tarkistamatta: fy4-5 les:316 (YTL) ja fy4-11 les:290 (OTI).
 FY2 tehty: claude/fy2-oikoluku-aineisto (PR #632); samassa PR:ssä kohdan 19 aineistotehtävät FY2-A1…A5. Kaikki kurssit tehty; jäljellä vain `docs/physics-phrases-known/`:n rivit (FY5, FY6, FY9).
 
+FY9-yksiköiden viimeinen rivi (`units.tsv`, fy9-lampo) korjattu ja poistettu (claude/fy9-vanhat-loydokset, 2026-11-23): `docs/physics-phrases-known/` on tyhjä, kohta 18 valmis.
+
 ## [loki] 19. 45 soveltavaa aineistotehtävää FY1–FY9 (opettaja 2026-11-16)
 
 Toimeksianto sanatarkasti: `docs/audits/2026-11-16-aineistotehtavat.md` (viisi tehtävää per kurssi, tunnisteet FY1-A1 …
