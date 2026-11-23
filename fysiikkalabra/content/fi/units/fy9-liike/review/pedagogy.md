@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 9b44845a75fe196a
-SCOPE: delta review of the Sovella set: new tasks s7 (Kärry radalla) and s8 (Kaksi kulkijaa samalla tiellä) and the changed intro; s1-s6 not re-judged (previously passed).
+CONTENT-HASH: 67b2709b5b162498
 
 ## Blocking
-- (none)
+Ei ole.
 
 ## Polish
-- s7, s8: both are chapter-level graph tasks (fy4-1, fy4-12) with a figure that names its own structure ("kolmeen vaiheeseen", "kaksi kertaa" in c, "toisiaan kohti"). Fine as a gentle graph-reading pair, but the set's independent-transfer weight stays with s1-s6; the s7 c-part would be a slightly better task if it did not announce that the position occurs twice.
-- s7 d, Yleisiä virheitä: "kuljetusta matkasta" should be "kuljetusta matkasta jaettuna" or "kuljetun matkan"; the wording is unclear about what is wrong.
-- s8 d is the only word task of the pair and carries a real prediction-then-compute demand; good, keep.
+- Laatikko 1 (Ydinajatus) kysyy lähes sanasta sanaan edellisen kappaleen virkkeen. Se on pelkkää muistihaun tarkistusta. Parempi: anna kuvaajan tilanne ("$(t,v)$-kuvaaja on nouseva suora, mitä se kertoo?") tai pyydä kumpikin suunta yhdellä esimerkillä. Nykyisellä tekstillä se silti toimii, koska kappale on tiivis.
+- Laatikko 3 (pinta-ala aika-akselin alla) toistaa edellisen virkkeen lopun ("lasketaan negatiivisena"). Päättelyaskel "pienentää siirtymää" on uusi, mutta kysymys voisi vaatia sen: "Kappale kulkee 3 s nopeudella +2 m/s ja 1 s nopeudella -2 m/s. Mikä on siirtymä, mikä matka?" Tämä erottaisi myös siirtymän ja matkan.
+- Laatikoita on kolme, ja kaikki ovat luvun alkupuoliskolla. Osiot "Tasainen liike" ja "Kaksi kappaletta ja mittausaineisto" ovat ilman laatikkoa. Kohtaamisen ehto ($x_\text{A}=x_\text{B}$, ei $v_\text{A}=v_\text{B}$) on yleisin virhe ja sopisi neljänneksi laatikoksi osion loppuun. Ei pakollinen: tehtävät ja Yleisiä virheitä -kohta kattavat sen.
+- Laatikon 2 vastaus ("koska vastakkaissuuntaiset") voisi mainita myös vastakkaisen tapauksen (negatiivinen $v$, negatiivinen $a$ kasvattaa vauhtia), jotta oppilas ei yleistä "negatiivinen a = hidastuu" (kuuluu jo Yleisiin virheisiin).
 
 ## Checked
-- s7: parts a-d rise from reading a slope to a negative-velocity interpretation, two-phase reasoning (x = 12 m twice) and displacement vs distance; recomputed 3,0 m/s, -2,0 m/s, 2,67 s and 8,0 s, +0,40 m/s, mean speed 2,0 m/s: correct. Rubric points sum to 3+3+4+4, no points for irrelevant things; the typical errors (x/t with nonzero start, missing sign, t = x/v = -6 s, averaging phase velocities) are real.
-- s8: recomputed vA = 2,0, vB = -2,0 m/s, t = 4,0 s, x = 12 m; d: 5,3 s and 14,7 m correct, and the graph argument (flatter B line meets A later and higher) is right. Common mistakes (sign of vB, 16 m / 2 m/s = 8 s, distance travelled instead of position) are real. Both solutions follow the seven-step model with symbolic solution first.
-- Intro: "kahdeksan tehtävää" matches eight tasks; instruction (coordinate system, model choice, symbolic first, reasonableness, open model answer last) fits the course. Workload: two short tasks added, within an hour-sized set.
-- Hash re-checked at the end: unchanged.
+- Pysähdy ja mieti -laatikot (3 kpl): jokainen on vastattavissa juuri luetusta kappaleesta, ilman uutta tietoa. Sijoittelu heti testaamansa tekstin jälkeen on oikea (laatikko 1 ennen tunnistuskaaviota, 2 heti vauhti/suunta-virkkeen jälkeen, 3 heti pinta-alavirkkeen jälkeen). Laatikot ovat lyhyitä, kysymys ja vastaus mahtuvat puhelimen näytölle eivätkä katkaise johtoa tai kaavoja. Vastaukset ovat oikein ja suomi sujuvaa, termit (kulmakerroin, pinta-ala, siirtymä, vauhti) oikein.
+- Muu yksikkö: lukuun tehty muutos on vain nämä laatikot (ja inquiry.jsonin yhden mallivastauksen tarkennus); aiemmin hyväksytty rakenne, kuvat, johdanto, virhelista ja Kertaa-linkit ennallaan. Johda-laatikon ja kuvien järjestys ehjä.
+- Sovella-tehtäväjoukko (s1–s8, 3–4 osaa, nousevat vaativuudet, pisteet 12–20 per tehtävä) on ennallaan edelliseen hyväksyttyyn versioon verrattuna; deterministinen tarkistus practice.py check OK. Otanta: tehtävät eivät nimeä mallia otsikossa (Kiihdytyskaista, Lähijuna, Keskinopeusvalvonta ym.), vaihtelu tilanteissa ja kuvaajalajeissa on riittävä.
+- Työmäärä: 75 min yksikkö, kolme lyhyttä laatikkoa lisäävät noin 2 min.

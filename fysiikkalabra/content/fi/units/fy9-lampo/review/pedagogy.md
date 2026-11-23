@@ -1,19 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: c79ae27e3ce688a5
-SCOPE: delta (round 2): new tasks fy9-lampo-s7 and s8 and changed intro; other tasks not re-judged
+CONTENT-HASH: fbd646831d6db0e2
+SCOPE: full (three new "Pysähdy ja mieti" boxes judged first; unit and task set judged as the packet says)
 
 ## Blocking
-None. Round-1 items verified fixed in the current text: s8 start temperature -16 °C is in the task text (and the graph's first part starts there); s8 d now asks "Kuinka suuri massa" (answer in kg); Sijoitus rows use decimal commas (no decimal points in the s7/s8 solutions).
+None.
 
 ## Polish
-- s8 d: the solution uses s = 333 kJ/kg from part b; a carried-forward error from b is not mentioned in "Hyväksytään myös".
-- s8 d: no separate mark for recognising that 120 kJ lies on the flat part (only the reasonableness mark); acceptable but thin.
-- s8 c: the graph reaches 300 kJ, so 20 °C can also be read directly (270 kJ); the solution could mention this as a check.
+- Box 2 (jään sulaminen) sits between the paragraph on s and r and "Tästä saadaan vastaus alun kysymykseen", which continues that paragraph. The box splits a thought: the Miksi answer then follows a pause. Moving the box after the "Tästä saadaan…" paragraph would read better.
+- The answers of boxes 2 and 3 repeat the paragraph's own sentence almost word for word ("energia kasvattaa hiukkasten vuorovaikutusenergiaa"; "lämpötila on tasan 0 °C"). That is retrieval, which is fine here, but the question could ask for the reason in the student's own words, for example "Miksi tämä ei nosta lämpötilaa?".
+- Only the Ydinajatus and the two Kaava subsections get a box. Thermal expansion and U-arvo have none. A fourth box is optional, for example "Kumpaan suuntaan reikä muuttuu?", since the common-mistake list names it.
 
 ## Checked
-- Task texts reveal no solution structure: s7 gives no slope or c, s8 names no melting part and no s; the figure catalog (REUSE) confirms both figures are safe.
-- Solutions meet rule 7 (given, asked, principle, formula before numbers, conversions, substitution with units, answer with significant figures, reasonableness, common mistakes); numbers match answers.py (0,222; 900; 360; 2083; 333; 270,2; 0,30).
-- Rubrics: points s7 3/4/4/3, s8 4/5/4/3; criteria match the questions; tolerances fit (358 s accepted).
-- Figures fy3-6/heating-line (20 to 60 °C in 180 s) and fy3-7/melting-curve (-16, 0, 220 kJ) match tasks and solutions; names and terms consistent.
-- Intro (eight tasks) fits s7 and s8.
-- Hash c79ae27e3ce688a5 at start and end (unchanged).
+- Box 1 (kahvikuppi, lämpö): placed right after the three-concept paragraph. The paragraph states "kappaleella ei ole lämpöä", so the question can be answered from it. The question is short and the answer is two sentences. It fits the 6-question diagnostic (lt-2) and targets the first entry in Yleisiä virheitä.
+- Box 2 and box 3: each is answerable from the paragraph just read and tests one idea. Box 3 asks for the end state that the paragraph's rule "jos ei riitä" gives. The question names no formula and the answer is not shown before the student opens it. The answers are closed by default, so nothing is disclosed before the student acts.
+- On a phone: each box is one short question and a one- or two-sentence answer, with no field, lock or storage (stopthink.py). The paragraphs around them stay under 120 words. The page does not grow noticeably.
+- The new boxes' LaTeX units are correct ($0\,{}^\circ\text{C}$). Finnish is correct and the terms match the glossary (sisäenergia, lämpö, vuorovaikutusenergia).
+- Inquiry diff: the tarkistus-3 model answer is split into three paragraphs without any change of content. It is easier to read and the criteria still match.
+- Hero figure replaced by a picture, with the aria-label kept; visual form is left to the visual reviewer.
+- Sovella task set (eight tasks) is unchanged since the previous PASS. The tasks are authentic, multi-part, name no model, have fair rubrics and complete solutions (rule 7), and practice.py check is OK. Only the diff and the packet's intro were re-read; no new concern.
+- Hash fbd646831d6db0e2 at start and end.

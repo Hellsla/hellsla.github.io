@@ -1,21 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 2f9de8817eb2638d
-SCOPE: delta (round 2) s8 fy3-10/pt-suorat, s9 fy3-11/pv-isobaari, changed intro; s1-s7 not re-judged; language: fi
+VERDICT: FAIL
+CONTENT-HASH: 3c6710f77b96877f
 
 ## Blocking
+1. Box 2 (absoluuttinen nollapiste, "Miksi suoran jatkaminen nollapaineeseen on vain kaasumallin ennuste?") is in the wrong place. It splits a sentence: the text before it ends "Kelvinlämpötila on", and the formula `T = θ + 273,15 K` comes after the box. On a phone the reader sees a broken sentence, then a box, then a formula that completes it. Worse, the paragraph the student has just read says nothing about extending a line to zero or about condensing. The tested idea ("Absoluuttinen nollapiste saadaan ... Se on mallin ennuste: todellinen kaasu tiivistyy") comes only after the box, so the answer cannot be worked out from the text just read. Move the box to after that paragraph, following the formula and the sentence on the model's prediction. Better still, reword the question to ask for the cause, for example "Mitä todelliselle kaasulle tapahtuu ennen nollapistettä?", so it is not answered by reading the next line.
 
 ## Polish
-- s8 b: criterion tagged units_precision ("same temperature") duplicates the 2-point concept criterion; relabel or drop.
-- s8 b: "Perustele vertailu" / "Justify the comparison" mildly signals the equal-conditions argument; "Perustele, voiko kaasuja vertailla suoraan" would hide it better.
-- s8 solution: state that b uses 0,0602 mol unrounded.
-- s9 b/c: rubric shows 293 K, solution 293,15 K; add "(293,15 K ~ 293 K)" to the rubric.
-- Solutions headings "Yleisia virheita" / "Hyvaksytaan myos" stay Finnish in en (consistent across all 9 tasks, so a convention, not a delta defect).
+- Box 3 (hyötysuhde < 100 %) sits before the sentence "Osa lämmöstä on aina luovutettava kylmempään..." that states its answer. The preceding paragraph does define Q_2 and W, so it is answerable, but the box then repeats the next sentence almost word for word. Put it after that sentence and ask something not yet said, for example what would have to hold for η = 100 % (Q_2 = 0).
+- Box 3's answer says "työ W on pienempi kuin Q_1" without naming the energy balance W = Q_1 − Q_2. The `johda` box right after it derives that. Either link the two or leave the box out.
+- Box 1 (mittarin lukema, 230 kPa) is well placed right after the worked tyre example. It is answerable from the paragraph just read and it targets the main misconception. Its answer repeats the paragraph's numbers, which is fine as a check.
+- Three boxes in one unit is light. A box after the Boyle/hydrostatic text (for example, why the pressure at depth does not depend on the vessel's shape) would be natural, but this is optional.
 
 ## Checked
-- Round-1 blocker verified fixed: intro no longer says "the last task is the source task"; it says only that one task is a source-based task opening from its link. True for the student.
-- s9 text now has a movable piston with weights holding pressure constant: isobar graph is consistent; ideal-gas and constant-amount assumptions stated.
-- s9 c answer 1172,6 K with 3 % tolerance, 1,2e3 K accepted (2,3 % off); b 0,10 mol (2,5 %) and carry-through c from 0,10 mol (2,6 %) stay inside tolerance. Common-mistake line for c (Celsius quadrupling, 80 C) is correct.
-- Task texts reveal no solution structure or formula; s8 b and s9 d leave the model choice to the student. Parts rise in demand.
-- Solutions follow CLAUDE.md rule 7 (given, asked, principle, graph reading, formula, conversions, substitution, rounding reason, reasonableness) for every part; s9 d has a justified model answer. Alternative methods listed.
-- Rubrics fair: points match demand (s8 11 p, s9 14 p); figure data (A 200/50, 400/100 K/kPa; B 60 kPa at 400 K; isobar 1,0-4,0 l at 250 kPa) agree across text, rubric, solution; names A/B and figure ids consistent; en and fi-easy mirror fi fully.
-- fi-easy: short sentences, new sentences for each assumption, no extra jargon (NOTES.md 12 satisfied).
+- Pysahdy boxes 1 to 3: placement, whether the answer is in the paragraph just read, and how they read on a phone (short question, short answer, no scrolling).
+- unit.md text, the Ydinajatus, "Yleisiä virheitä" and "Kertaa" sections, the `johda` derivation (it follows the 1st law and signs correctly), and the deterministic check (practice.py check OK).
+- Task set (9 tasks, the Sovella tasks.json): skimmed titles, the criteria of s1 (paineilmanostin) and the mix of contexts (korjaamo, biokaasu, laiva, ydinvoimala, kuumailmapallo). The set is varied, uses authentic situations and has multi-part tasks with rubrics tied to observable steps. Nothing new blocks since the passed version; I judged only the change in depth.
+- The full task set was not re-read in detail, because the diff touches only unit.md.
