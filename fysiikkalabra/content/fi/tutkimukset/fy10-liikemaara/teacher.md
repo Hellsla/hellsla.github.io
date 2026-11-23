@@ -3,7 +3,7 @@
 **Tavallisia virhekäsityksiä ja ongelmia.**
 
 - Oikeanpuoleisen anturin lukemia ei muuteta yhteisen positiivisen suunnan mukaisiksi. Silloin vastakkaiseen suuntaan liikkuvien vaunujen liikemäärät lasketaan yhteen samanmerkkisinä, ja kokonaisliikemäärä näyttää muuttuvan paljon. Täysin kimmoton törmäys paljastaa virheen: yhdessä liikkuvien vaunujen nopeudet ovat silloin vastakkaismerkkiset.
-- Nopeuksia luetaan liian kaukaa törmäyksestä, jolloin vierimisvastus näkyy siinä, että kokonaisliikemäärän itseisarvo pienenee järjestelmällisesti. Kuvaajassa $p_\text{kok}'$–$p_\text{kok}$ pisteet ovat silloin suoran alapuolella, kun $p_\text{kok} > 0$, ja yläpuolella, kun $p_\text{kok} < 0$.
+- Nopeuksia luetaan liian kaukaa törmäyksestä, jolloin vierimisvastus näkyy siinä, että kokonaisliikemäärän itseisarvo pienenee järjestelmällisesti. Kun kumpikin vaunu liikkuu kokonaisliikemäärän suuntaan tai on levossa (esimerkiksi vaunu 2 on aluksi levossa), kuvaajassa $p_\text{kok}'$–$p_\text{kok}$ pisteet ovat suoran alapuolella, kun $p_\text{kok} > 0$, ja yläpuolella, kun $p_\text{kok} < 0$. Vastakkaisessa törmäyksessä vierimisvastuksen impulssit kumoavat osin toisensa, ja poikkeaman suunta riippuu vaunujen massoista.
 - Opiskelija pitää vaunua kädessä törmäyksen alkaessa tai työntää sitä vielä törmäyksen aikana. Käden voima on ulkoinen voima.
 - Massaksi kirjataan vain lisäpunnusten massa eikä koko vaunun massaa.
 - Ajatellaan, että täysin kimmottomassa törmäyksessä liikemäärää häviää, koska liike-energiaa häviää. Laajennus on tehty tämän erottamiseen.

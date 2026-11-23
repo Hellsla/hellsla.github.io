@@ -222,7 +222,7 @@ Vastaa:
 ::: tuki O OO
 **Miksi juuri tämä kuvaaja?** Jos kokonaisliikemäärä säilyy, jokaisen törmäyksen piste on suoralla $p_\text{kok}' = p_\text{kok}$, joka kulkee origon kautta ja jonka kulmakerroin on $1$. Suora on piirretty kuvaajaan mallina: siinä ei ole mittauspisteitä. Kun vaunut liikkuvat toisiaan kohti, kokonaisliikemäärä voi olla negatiivinen, joten akseleita voi joutua jatkamaan origon toiselle puolelle.
 
-<svg data-fig="model" viewBox="0 0 600 330" role="img" aria-label="Kuvaaja: kokonaisliikemäärä törmäyksen jälkeen kokonaisliikemäärän ennen törmäystä funktiona, jos liikemäärä säilyy. Kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on yksi. Kuvassa näkyy positiivisten liikemäärien osa: jos liikemäärän suuruus pienenee törmäyksessä, piste on suoran alapuolella. Kuvaajassa ei ole mittauspisteitä." style="max-width:100%;font-size:24px">
+<svg data-fig="model" viewBox="0 0 600 330" role="img" aria-label="Mallikuvaaja: kokonaisliikemäärä törmäyksen jälkeen kokonaisliikemäärän ennen törmäystä funktiona mallin mukaan, jos liikemäärä säilyy. Kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on yksi. Kuvassa näkyy positiivisten liikemäärien osa: jos liikemäärän suuruus pienenee törmäyksessä, piste on suoran alapuolella. Kuvaajassa ei ole mittauspisteitä." style="max-width:100%;font-size:24px">
   <line x1="89" y1="280" x2="478" y2="280" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M490,280 L477,286 L477,274 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="90" y1="281" x2="90" y2="42" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
@@ -237,7 +237,7 @@ Vastaa:
   <foreignObject x="297" y="190" width="164" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$\text{suuruus pienenee}$</div></foreignObject>
 </svg>
 
-Jos ulkoinen voima, kuten vierimisvastus, on pienentänyt kokonaisliikemäärän suuruutta (itseisarvoa), tai nopeudet on luettu liian kaukaa törmäyksestä, pisteet poikkeavat suoralta järjestelmällisesti: kun $p_\text{kok} > 0$, ne ovat suoran alapuolella, ja kun $p_\text{kok} < 0$, suoran yläpuolella.
+Jos ulkoinen voima, kuten vierimisvastus, on pienentänyt kokonaisliikemäärän suuruutta (itseisarvoa), tai nopeudet on luettu liian kaukaa törmäyksestä, pisteet poikkeavat suoralta järjestelmällisesti. Jos kumpikin vaunu liikkuu kokonaisliikemäärän suuntaan tai on levossa (esimerkiksi vaunu 2 on aluksi levossa), pisteet ovat suoran alapuolella, kun $p_\text{kok} > 0$, ja yläpuolella, kun $p_\text{kok} < 0$. Vastakkaisessa törmäyksessä vierimisvastuksen impulssit kumoavat osin toisensa, joten poikkeaman suunta riippuu vaunujen massoista.
 :::
 
 ## Epävarmuus ja luotettavuus
