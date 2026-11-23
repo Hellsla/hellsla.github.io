@@ -15,4 +15,4 @@ SCOPE: delta md-paragraphs,numbers,reflow,teacher-figure,typography,wording from
 - L2-02: one useful power $P_\text{a}$ for both lamps (same light output) is the right model; $P_\text{o,hehku} = 54\,\text{W}$.
 - L3-05: $E_\text{h,v} = (E_\text{h}/E_\text{o}) \cdot E_\text{o,v}$ rests on the constant loss share the table shows; the new wording says so.
 - Recomputed every numeric answer in one script with my own formulas: 85, 30 %; 3,0 W; 2000 J; 4,0, 9,0 kJ; 200 kW; 78,8 %; 96 kJ; 54 W; 0,228 kWh; 45 kW; 4,3; 79 %; 25 %; 1,5; 2083 s; 180 J; 3,14; 6,89 kWh: all agree with answers.py and exercises.json within tolerance; no unit or tolerance changed.
-- The md-paragraph splits (L1-06, L2-05, L2-06, L2-08, L3-04, L3-05, L1-10) move no number and change no claim.
+- The md-paragraph splits (L1-06, L2-05, L2-06, L2-07, L2-08, L3-04, L3-05) move no number and change no claim.

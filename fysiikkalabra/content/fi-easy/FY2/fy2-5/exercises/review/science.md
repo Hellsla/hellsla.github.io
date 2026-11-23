@@ -1,18 +1,20 @@
-VERDICT: PASS
-CONTENT-HASH: 02606fa88d01b0b2
-Round: 4
+VERDICT: FAIL
+CONTENT-HASH: 514101bffd1fe463
 
 ## Blocking
-(none)
+- solutions.md:269 (fy2-5-L2-09, new task), Kaava: "energian säilyminen $E_\text{p} = E_\text{b}$" names the wrong principle (A). Burning 12 kg of petrol and burning wood are two alternatives, not one process. The two energies are equal because the task asks for the same energy, not because energy is conserved. Labelling this as conservation leaves a wrong picture of what conservation means. The Periaate is right: "Energioiden pitää olla yhtä suuret". Fix: "**Kaava:** $E = Hm$ kummallekin polttoaineelle. Energioiden pitää olla yhtä suuret, $E_\text{p} = E_\text{b}$, joten $H_\text{p}m_\text{p} = H_\text{b}m_\text{b}$ ja $m_\text{p} = \dfrac{H_\text{b}m_\text{b}}{H_\text{p}}$".
 
 ## Polish
-- Finnish source (not editable here): L2-08 solution says petrol has "lähes 40 MJ/kg" but H = 43; "yli 40" is accurate. Fixed in this translation only.
+- exercises.json:149 (fy2-5-L2-05, unchanged and outside this delta): "Tehollinen lämpöarvo on se energia, joka puusta oikeasti saadaan lämmitykseen" mixes up the heating value with the useful energy. The heating value leaves out only the condensation heat; the boiler's losses come on top of it, and the lesson's own Kaava says so. Fix: "Tehollisessa lämpöarvossa ei ole mukana savukaasun vesihöyryn tiivistymislämpöä."
 
 ## Checked
-- New task fy2-5-L2-08 (order, YO form) compared with the reviewed Finnish: data (43/1500 g, 15/5.0 kg, 26/0.0040 t, 10/12 kg), order items, answer string, unit "", tolerance 0.02, kind equal.
-- Recomputed: 43*1.5=64.5, 15*5.0=75, 26*4.0=104, 10*12=120 MJ; order petrol < firewood < coal < milled peat is correct; 1500 g=1.5 kg, 0.0040 t=4.0 kg.
-- Mass-order remark (petrol 1.5, coal 4.0, firewood 5.0, peat 12 kg) correct; firewood and coal swap.
-- No formula, number or unit lost; L2-08 solution numbers equal the Finnish.
-- Language: selkosuomi per NOTES.md section 12: heat of combustion explained in a sentence, same physics, decimal comma.
-- check_i18n.py: nothing for fy2-5; build.py fy2-5 succeeds. Earlier 16 tasks unchanged since round 2.
-- Round 3 -> 4 (commit 442c889ba): L3-04 Substitution line split into groups of four months (2100+1900+1600+1100 = 6700, 600+250+200+250 = 1300, 600+1100+1600+2000 = 5300, sum 6700+1300+5300 = 13 300); recomputed, correct, same numbers and wording pattern as the Finnish. No other change; no edits needed.
+- I recomputed these in one script, and answers.py matches every numeric answer in exercises.json within its tolerance:
+  - L3-01: $120/15 - 120/40{,}6 = 5{,}04 \approx 5{,}0\,\text{kg}$; ±2 % accepts 4,94–5,15.
+  - L3-04: oil $47\,880/(0{,}90 \cdot 40{,}6) = 1310 \approx 1300\,\text{kg}$; mass ratio $2{,}53$; $40{,}6/17 = 2{,}39$; $2{,}39 \cdot 0{,}90/0{,}85 = 2{,}53$. The pellet answer of 3313 kg is unchanged.
+  - L3-05: oil $36\,000/(0{,}90 \cdot 40{,}6) = 985 \approx 990\,\text{kg}$; the answer 938 kg is unchanged.
+  - L1-09 (new): $26{,}7 \cdot 0{,}50 = 13{,}35\,\text{MJ}$; ±4 % accepts 12,8–13,9, so the rounded 13 MJ and neighbouring table values pass. The LHV is the right value for burning, and the hint names MAFY's table. "Noin kaksi kolmasosaa bensiinistä" checks: $26{,}7/43 = 0{,}62$.
+  - L2-09 (new): $43 \cdot 12/15 = 34{,}4\,\text{kg}$; ±2 % accepts 34. `fy2-5/lampoarvot` prints 43 and 15 at the bar ends and does not give the answer away.
+- Light fuel oil $40{,}6\,\text{MJ/kg}$ (MAFY) is now the same in the L3-01, L3-04 and L3-05 tasks, their tables, the solutions and answers.py. This follows P8.
+- The rewritten Kaava lines (bread slice, pellets, petrol, food rations, peat plant, damp wood, pellet burner, L3-04, L3-05) start from $\eta = E_\text{hyöty}/E_\text{sisään}$, $E = Hm$, $P = E/t$ and $e = E/m$, combine them symbolically and substitute into the final form. All intermediate values are right: 0,48 MJ, 578 MJ, 4,465 kg, 3,6, 35 MW, 5,62 kg and 18,4 kW.
+- Removing "Esimerkkiaineisto:" from the captions is acceptable. The L2-05, L3-04 and L3-05 task texts still say "esimerkkiaineisto", and L2-07's caption keeps "Esimerkkimittaus".
+- Hash 514101bffd1fe463 at the start and at the end.
