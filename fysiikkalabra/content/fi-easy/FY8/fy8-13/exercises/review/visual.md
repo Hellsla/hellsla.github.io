@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 1cb678e66328f853
+CONTENT-HASH: 7c16a8e1ffdd91f3
+SCOPE: delta numbers,reflow from 1cb678e66328f853 base 4b05399
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] solutions.md (the radiation-dose-rate block, ~3rd row of the first Kaava box): rows with a leading `=` after a long fraction left a ragged left edge; readable, no change asked.
 
 ## Checked
-- Delta (solutions.md, md-paragraphs): fy8-13-open-exercises-1280-1 (13-1) and fy8-13-open-exercises-L2-1280-8 (a multi-paragraph solution with a/b/c parts and chains): paragraphs cut cleanly, chains aligned, units upright, nothing clipped. Captures read from the lesson's review/shots (the exercise review folder has none of its own).
+- Delta (every aligned Kaava block of fy8-13) at 390 px: 10 blocks viewed at readable size (dose rate with inverse-square, D_T/H_T/H_E chain, c_ka and f block, H_A-H_B bracket row, d_{1/2} log row).  Own 390 px clips of every Kaava block (preview build; packet exercise captures are 1280 only): no overflow, no red KaTeX.
+- Dots over H, subscripts, brackets and squared fractions legible; one equation per row; nothing clipped.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

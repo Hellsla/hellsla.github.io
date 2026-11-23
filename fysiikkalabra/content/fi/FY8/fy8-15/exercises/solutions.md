@@ -56,7 +56,15 @@
 
 **Periaate:** Annihilaatiossa hiukkasten koko energia muuttuu fotonien energiaksi, joten energia säilyy. Levossa olevien hiukkasten liikemäärä on nolla, joten kahden fotonin on lähdettävä vastakkaisiin suuntiin yhtä suurella liikemäärällä ja siis yhtä suurella energialla.
 
-**Kaava:** $2\,m_e c^2 = 2\,E_\gamma$, josta $E_\gamma = m_e c^2$
+**Kaava:** Energia säilyy: $E_\text{alku} = E_\text{loppu}$, joten
+$$
+\begin{aligned}
+&E_\text{alku} = 2\,m_e c^2 \\
+&E_\text{loppu} = 2\,E_\gamma \\
+&2\,m_e c^2 = 2\,E_\gamma \\
+&E_\gamma = m_e c^2
+\end{aligned}
+$$
 
 **Muunnokset:** Ei tarvita, koska lepoenergia on annettu kiloelektronivoltteina.
 
@@ -202,7 +210,14 @@ $$
 
 **Periaate:** Parinmuodostuksessa fotonin energiasta syntyvät elektronin ja positronin massat, joten fotonin energian on oltava vähintään niiden lepoenergioiden summa. Fotonin energia on $\tfrac{hc}{\lambda}$, joten pienin energia vastaa suurinta aallonpituutta.
 
-**Kaava:** $E = \dfrac{hc}{\lambda}$, josta $\lambda = \dfrac{hc}{E}$
+**Kaava:** $E = hf$ ja $c = \lambda f$, joten
+$$
+\begin{aligned}
+&f = \dfrac{c}{\lambda} \\
+&E = \dfrac{hc}{\lambda} \\
+&\lambda = \dfrac{hc}{E}
+\end{aligned}
+$$
 
 **Muunnokset:** $E = 2 \cdot 0{,}511 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}6372 \cdot 10^{-13}\,\text{J}$; lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.
 

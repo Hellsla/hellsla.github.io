@@ -18,7 +18,12 @@ $$ ja $\Delta E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{502 \cdot 
 **Annettu:** energiatilojen erotus $\Delta E = 2{,}86\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** lähetetyn fotonin aallonpituus $\lambda$ nanometreinä
 **Periaate:** Siirtymässä ylemmästä tilasta alempaan syntyvän fotonin energia on tilojen erotus, koska energia säilyy. Fotonin energian ja aallonpituuden yhdistää $E = \tfrac{hc}{\lambda}$.
-**Kaava:** $\Delta E = \dfrac{hc}{\lambda}$, josta $\lambda = \dfrac{hc}{\Delta E}$
+**Kaava:** $$\begin{aligned} \Delta E &= hf \\
+c &= f\lambda \\
+\Delta E &= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{\Delta E}
+\end{aligned}
+$$
 **Muunnokset:** $\Delta E = 2{,}86\,\text{eV} = 2{,}86 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 4{,}5817 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -54,7 +59,12 @@ $$ ja $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{4{,}5817 \c
 **Annettu:** energiatilojen erotus $\Delta E = 3{,}03 \cdot 10^{-19}\,\text{J}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
 **Kysytty:** syntyvän fotonin aallonpituus $\lambda$ nanometreinä
 **Periaate:** Siirtymässä syntyvän fotonin energia on tilojen erotus, koska energia säilyy, ja fotonin energia on $\tfrac{hc}{\lambda}$.
-**Kaava:** $\Delta E = \dfrac{hc}{\lambda}$, josta $\lambda = \dfrac{hc}{\Delta E}$
+**Kaava:** $$\begin{aligned} \Delta E &= hf \\
+c &= f\lambda \\
+\Delta E &= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{\Delta E}
+\end{aligned}
+$$
 **Muunnokset:** Energia on jo jouleina, joten tulos saadaan metreinä. Lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -70,7 +80,12 @@ $$ ja $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}03 \cdo
 **Annettu:** vetyatomin tilojen energiat $E_4 = -0{,}85\,\text{eV}$ ja $E_2 = -3{,}40\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** syntyvän fotonin aallonpituus $\lambda$ nanometreinä
 **Periaate:** Atomin energia pienenee siirtymässä tilasta $4$ tilaan $2$. Energia säilyy, joten fotonin energia on tilojen erotus, ja aallonpituus saadaan fotonin energiasta.
-**Kaava:** $E_4 - E_2 = \dfrac{hc}{\lambda}$, josta $\lambda = \dfrac{hc}{E_4 - E_2}$
+**Kaava:** $$\begin{aligned} hf &= E_4 - E_2 \\
+c &= f\lambda \\
+\frac{hc}{\lambda} &= E_4 - E_2 \\
+\lambda &= \frac{hc}{E_4 - E_2}
+\end{aligned}
+$$
 **Muunnokset:** $E_4 - E_2 = -0{,}85\,\text{eV} - (-3{,}40\,\text{eV}) = 2{,}55\,\text{eV} = 2{,}55 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 4{,}0851 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -86,7 +101,12 @@ $$ ja $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{4{,}0851 \c
 **Annettu:** malliatomin energiatilat $E_1 = 0$, $E_2 = 1{,}85\,\text{eV}$ ja $E_3 = 4{,}00\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** pisimmän viivan aallonpituus $\lambda_\text{max}$ nanometreinä
 **Periaate:** Jokainen tilapari antaa yhden viivan, jonka fotonin energia on tilojen erotus. Aallonpituus on kääntäen verrannollinen energiaan, joten pisin aallonpituus syntyy pienimmästä erotuksesta. Erotukset ovat $E_2 - E_1 = 1{,}85\,\text{eV}$, $E_3 - E_2 = 2{,}15\,\text{eV}$ ja $E_3 - E_1 = 4{,}00\,\text{eV}$, joten pienin on $1{,}85\,\text{eV}$.
-**Kaava:** $\Delta E_\text{min} = \dfrac{hc}{\lambda_\text{max}}$, josta $\lambda_\text{max} = \dfrac{hc}{\Delta E_\text{min}}$
+**Kaava:** $$\begin{aligned} \Delta E_\text{min} &= hf_\text{min} \\
+c &= f_\text{min}\lambda_\text{max} \\
+\lambda_\text{max} &= \frac{c}{f_\text{min}} \\
+\lambda_\text{max} &= \frac{hc}{\Delta E_\text{min}}
+\end{aligned}
+$$
 **Muunnokset:** $\Delta E_\text{min} = 1{,}85\,\text{eV} = 1{,}85 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 2{,}9637 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -102,7 +122,12 @@ $$ ja $\lambda_\text{max} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{
 **Annettu:** vetyatomin perustilan energia $E_1 = -13{,}6\,\text{eV}$ ja seuraavan tilan energia $E_2 = -3{,}40\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** absorboituvan valon aallonpituus $\lambda$ nanometreinä
 **Periaate:** Atomi absorboi fotonin vain, jos fotonin energia on täsmälleen kahden tilan erotus. Perustilasta tilaan $2$ siirtyminen vaatii siis fotonin, jonka energia on $E_2 - E_1$.
-**Kaava:** $E_2 - E_1 = \dfrac{hc}{\lambda}$, josta $\lambda = \dfrac{hc}{E_2 - E_1}$
+**Kaava:** $$\begin{aligned} hf &= E_2 - E_1 \\
+c &= f\lambda \\
+\frac{hc}{\lambda} &= E_2 - E_1 \\
+\lambda &= \frac{hc}{E_2 - E_1}
+\end{aligned}
+$$
 **Muunnokset:** $E_2 - E_1 = -3{,}40\,\text{eV} - (-13{,}6\,\text{eV}) = 10{,}2\,\text{eV} = 10{,}2 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}6340 \cdot 10^{-18}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -136,7 +161,12 @@ $$
 **Annettu:** loppumistason energia $E_2 = -3{,}40\,\text{eV}$, hyvin ylhäällä olevien tasojen energia lähes $E_\infty = 0$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** sarjan lyhin aallonpituus $\lambda_\text{min}$ nanometreinä
 **Periaate:** Viivan fotonin energia on tilojen erotus $E_\text{y} - E_2$. Mitä ylempi taso, sitä suurempi energia, mutta ylempi energia ei voi ylittää arvoa $0$, jossa elektroni irtoaa atomista. Suurin mahdollinen erotus on siis $0 - E_2$, ja se antaa lyhimmän aallonpituuden, jota kohti viivat tihenevät.
-**Kaava:** $0 - E_2 = \dfrac{hc}{\lambda_\text{min}}$, josta $\lambda_\text{min} = \dfrac{hc}{0 - E_2}$
+**Kaava:** $$\begin{aligned} hf &= 0 - E_2 \\
+c &= f\lambda_\text{min} \\
+\frac{hc}{\lambda_\text{min}} &= 0 - E_2 \\
+\lambda_\text{min} &= \frac{hc}{0 - E_2}
+\end{aligned}
+$$
 **Muunnokset:** $0 - E_2 = 3{,}40\,\text{eV} = 3{,}40 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 5{,}4468 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -168,7 +198,16 @@ $$ ja $\Delta E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{15{,}0 \cd
 **Annettu:** absorboidun UV-fotonin aallonpituus $\lambda_\text{UV} = 365\,\text{nm}$, ensimmäisen lähetetyn fotonin energia $E_1 = 1{,}20\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** toisen lähetetyn fotonin aallonpituus $\lambda_2$ nanometreinä
 **Periaate:** Molekyyli palaa samaan perustilaan eikä energiaa muutu sisäenergiaksi, joten energian säilymisen mukaan kahden lähetetyn fotonin energioiden summa on absorboidun fotonin energia.
-**Kaava:** $E_\text{UV} = \dfrac{hc}{\lambda_\text{UV}} = E_1 + \dfrac{hc}{\lambda_2}$, josta $\lambda_2 = \dfrac{hc}{\tfrac{hc}{\lambda_\text{UV}} - E_1}$
+**Kaava:** $$\begin{aligned} E_\text{UV} &= E_1 + E_2 \\
+E &= hf \\
+c &= f\lambda \\
+E &= \frac{hc}{\lambda} \\
+E_2 &= E_\text{UV} - E_1 \\
+E_2 &= \frac{hc}{\lambda_\text{UV}} - E_1 \\
+\lambda_2 &= \frac{hc}{E_2} \\
+\lambda_2 &= \frac{hc}{\tfrac{hc}{\lambda_\text{UV}} - E_1}
+\end{aligned}
+$$
 **Muunnokset:** $365\,\text{nm} = 365 \cdot 10^{-9}\,\text{m}$; elektronivoltit ja joulet muunnetaan sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -221,7 +260,12 @@ $$ ja $E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{546{,}3 \cdot 10^
 **Periaate:** Tummat viivat ovat absorptiospektri: Auringon viileämmän ilmakehän atomit absorboivat fotonit, joiden energia on kahden energiatilan erotus, ja viivat ovat samoilla aallonpituuksilla kuin saman alkuaineen emissioviivat. Viivat B, C ja G ovat vedyn, A kalsiumin (kalsiumionin viiva), D magnesiumin ja F natriumin viivoja, joten ilmakehässä on näitä alkuaineita. Viiva E ($527{,}1\,\text{nm}$) ei vastaa mitään vertailuviivaa.
 
 Absorptiossa atomin energia kasvaa fotonin energian verran.
-**Kaava:** $E_\text{y} - E_2 = \dfrac{hc}{\lambda}$, josta $E_\text{y} = E_2 + \dfrac{hc}{\lambda}$
+**Kaava:** $$\begin{aligned} hf &= E_\text{y} - E_2 \\
+c &= f\lambda \\
+E_\text{y} &= E_2 + hf \\
+E_\text{y} &= E_2 + \frac{hc}{\lambda}
+\end{aligned}
+$$
 **Muunnokset:** $486{,}0\,\text{nm} = 486{,}0 \cdot 10^{-9}\,\text{m}$. Joulet muutetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -288,7 +332,13 @@ Spektrin B viiva $653\,\text{nm}$ tulee siirtymästä $2 \to 4$, joka alkaa viri
 **Periaate:** Jokainen viiva on kahden tilan erotus $\tfrac{hc}{\lambda}$. Viritystilojen energiat perustilasta ovat $E_1 < E_2 < E_3$, ja kuusi viivaa ovat $E_1$, $E_2$, $E_3$, $E_2 - E_1$, $E_3 - E_2$ ja $E_3 - E_1$. Lyhin aallonpituus on suurin energia $E_3$. Kuudes viiva on siirtymä $E_1 \to 0$ eli energia $E_1$, joten sitä ei ole mitattujen joukossa.
 
 Pareilla $E_1$ ja $E_3 - E_1$ sekä $E_2$ ja $E_3 - E_2$ on kummallakin summa $E_3$; koska $E_1$ puuttuu, sen pari $E_3 - E_1$ on mitattu ilman paria, ja toinen pari on mitattu kokonaan.
-**Kaava:** $E = \dfrac{hc}{\lambda}$ ja $E_1 = E_3 - (E_3 - E_1)$, josta $\lambda_6 = \dfrac{hc}{E_1}$
+**Kaava:** $$\begin{aligned} E &= hf \\
+c &= f\lambda \\
+E &= \frac{hc}{\lambda} \\
+E_1 &= E_3 - (E_3 - E_1) \\
+\lambda_6 &= \frac{hc}{E_1}
+\end{aligned}
+$$
 **Muunnokset:** $1\,\text{nm} = 10^{-9}\,\text{m}$; joulet muutetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
 **Sijoitus:** a) $hc = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten viivojen A–E energiat ovat $3{,}90\,\text{eV}$, $2{,}80\,\text{eV}$, $2{,}40\,\text{eV}$, $1{,}50\,\text{eV}$ ja $1{,}30\,\text{eV}$.
 
@@ -306,7 +356,15 @@ Aallonpituus on pidempi kuin pisin mitattu $954\,\text{nm}$ ja yli $780\,\text{n
 **Annettu:** absorboitu valo $\lambda_\text{abs}$ ja fluoresenssivalo $\lambda_\text{fl}$: A $365\,\text{nm}$ ja $450\,\text{nm}$, B $405\,\text{nm}$ ja $520\,\text{nm}$, C $450\,\text{nm}$ ja $530\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** sisäenergiaksi muuttuvan energian osuus $p$ absorboidun fotonin energiasta prosentteina, suurin kolmesta
 **Periaate:** Väriaine absorboi fotonin ja lähettää yhden fluoresenssifotonin. Energia säilyy, joten absorboidun fotonin energia on lähetetyn fotonin energia ja sisäenergiaksi muuttuva energia $Q$ yhteensä. Fluoresenssifotoni on pidempiaaltoinen, joten sen energia on pienempi.
-**Kaava:** $E = \dfrac{hc}{\lambda}$, $Q = E_\text{abs} - E_\text{fl}$ ja $p = \dfrac{Q}{E_\text{abs}} = 1 - \dfrac{\lambda_\text{abs}}{\lambda_\text{fl}}$
+**Kaava:** $$\begin{aligned} E &= hf \\
+c &= f\lambda \\
+E &= \frac{hc}{\lambda} \\
+Q &= E_\text{abs} - E_\text{fl} \\
+p &= \frac{Q}{E_\text{abs}} \\
+p &= 1 - \frac{E_\text{fl}}{E_\text{abs}} \\
+p &= 1 - \frac{\lambda_\text{abs}}{\lambda_\text{fl}}
+\end{aligned}
+$$
 **Muunnokset:** $1\,\text{nm} = 10^{-9}\,\text{m}$; joulet muutetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$. Osuudessa $p$ vakiot $h$ ja $c$ supistuvat pois.
 **Sijoitus:** Väriaineen B energiat ovat $E_\text{abs} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{405 \cdot 10^{-9}\,\text{m}} = 3{,}0617\,\text{eV}$ ja $E_\text{fl} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{520 \cdot 10^{-9}\,\text{m}} = 2{,}3846\,\text{eV}$, joten $Q = 0{,}6771\,\text{eV}$ ja $p = \dfrac{0{,}6771\,\text{eV}}{3{,}0617\,\text{eV}} = 0{,}2211 = 22{,}11\,\%$. Kohdassa d) $E_\text{abs} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{400 \cdot 10^{-9}\,\text{m}} = 3{,}1000\,\text{eV}$, $E_\text{fl} = 3{,}1000\,\text{eV} - 0{,}50\,\text{eV} = 2{,}6000\,\text{eV}$ ja $\lambda_\text{fl} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}6000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}} = 4{,}769 \cdot 10^{-7}\,\text{m} = 477\,\text{nm}$. Väriaineille A ja C vastaavat energiat ovat $3{,}397\,\text{eV}$ ja $2{,}756\,\text{eV}$ sekä $2{,}756\,\text{eV}$ ja $2{,}340\,\text{eV}$, ja osuudet $1 - \tfrac{365}{450} = 0{,}189$ ja $1 - \tfrac{450}{530} = 0{,}151$.
 **Vastaus:** $22{,}1\,\%$ väriaineessa B, kolme merkitsevää numeroa kuten aallonpituuksissa. Muissa osuus on pienempi. Väriaineen D fluoresenssivalon aallonpituus on $477\,\text{nm}$ (kohta d).
@@ -320,7 +378,11 @@ Aallonpituus on pidempi kuin pisin mitattu $954\,\text{nm}$ ja yli $780\,\text{n
 **Kuvaajan lukeminen:** Aallonpituusasteikon pienet jakoviivat ovat $10\,\text{nm}$ välein ja luvut $50\,\text{nm}$ välein. Sininen viiva on viiva, joka on lähimpänä arvoa $436\,\text{nm}$: se on hieman luvun $450\,\text{nm}$ vasemmalla puolella, $14\,\text{nm}$ sen alapuolella. Muut viivat ovat violetti noin $405\,\text{nm}$, vihreä noin $546\,\text{nm}$ ja keltaiset noin $577\,\text{nm}$ ja $579\,\text{nm}$.
 
 Luetun arvon epävarmuus on muutaman nanometrin luokkaa, joten energia on varma noin $\pm 0{,}02\,\text{eV}$ tarkkuudella.
-**Kaava:** $E = \dfrac{hc}{\lambda}$
+**Kaava:** $$\begin{aligned} E &= hf \\
+c &= f\lambda \\
+E &= \frac{hc}{\lambda}
+\end{aligned}
+$$
 **Muunnokset:** $436\,\text{nm} = 436 \cdot 10^{-9}\,\text{m}$. Joulet muutetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
 **Sijoitus:** 
 
@@ -347,7 +409,15 @@ $$\begin{aligned}
 **Kysytty:** a) fotonien energiat $E_\text{viol}$ ja $E_\text{vihr}$, b) alempien tilojen energiaero $\Delta E$ elektronivoltteina, c) miksi $\Delta E$ ei ole energioiden summa
 **Periaate:** Fotonin energia on siirtymän lähtö- ja päätetilan energioiden erotus. Kun kaksi siirtymää alkaa samalta ylemmältä tilalta $E_\text{y}$, niiden fotonien energioiden erotus on alempien tilojen erotus, koska $E_\text{y}$ supistuu pois.
 **Kuvaajan lukeminen:** Asteikon pienet jakoviivat ovat $10\,\text{nm}$ välein. Violetti viiva on lähellä arvoa $405\,\text{nm}$ ja vihreä lähellä arvoa $546\,\text{nm}$; muita viivoja ei tarvita. Luettujen arvojen epävarmuus on muutaman nanometrin luokkaa, mutta kahden lähes yhtä suuren energian erotuksessa johtavat numerot kumoutuvat, joten erotus on varma vain kahden merkitsevän numeron tarkkuudella.
-**Kaava:** $E = \dfrac{hc}{\lambda}$, $E_\text{viol} = E_\text{y} - E_\text{a,viol}$ ja $E_\text{vihr} = E_\text{y} - E_\text{a,vihr}$, joten $\Delta E = E_\text{a,vihr} - E_\text{a,viol} = E_\text{viol} - E_\text{vihr}$
+**Kaava:** $$\begin{aligned} E &= hf \\
+c &= f\lambda \\
+E &= \frac{hc}{\lambda} \\
+E_\text{viol} &= E_\text{y} - E_\text{a,viol} \\
+E_\text{vihr} &= E_\text{y} - E_\text{a,vihr} \\
+E_\text{viol} - E_\text{vihr} &= E_\text{a,vihr} - E_\text{a,viol} \\
+\Delta E &= E_\text{viol} - E_\text{vihr}
+\end{aligned}
+$$
 **Muunnokset:** $1\,\text{nm} = 10^{-9}\,\text{m}$; joulet muutetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
 **Sijoitus:** a) $hc = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten 
 

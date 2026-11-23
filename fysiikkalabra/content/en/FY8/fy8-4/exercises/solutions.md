@@ -58,7 +58,14 @@ $$
 **Given:** wavelength of the incident photon $\lambda = 0.0711\,\text{nm}$, of the scattered one $\lambda' = 0.0735\,\text{nm}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Asked:** the kinetic energy $E_\text{k}$ received by the electron in electronvolts
 **Principle:** In the Compton effect, the photon collides with an almost free electron. Energy is conserved, so the electron receives the energy that the photon loses: $hf = hf' + E_\text{k}$. The energies of the photons are obtained from the wavelengths.
-**Formula:** $\dfrac{hc}{\lambda} = \dfrac{hc}{\lambda'} + E_\text{k}$, from which $E_\text{k} = \dfrac{hc}{\lambda} - \dfrac{hc}{\lambda'}$
+**Formula:** $hf = hf' + E_\text{k}$ and $$
+\begin{aligned}
+E_\text{k} &= hf - hf' \\
+f &= \dfrac{c}{\lambda} \\
+f' &= \dfrac{c}{\lambda'} \\
+E_\text{k} &= \dfrac{hc}{\lambda} - \dfrac{hc}{\lambda'}
+\end{aligned}
+$$
 **Conversions:** $0.0711\,\text{nm} = 0.0711 \cdot 10^{-9}\,\text{m}$ and $0.0735\,\text{nm} = 0.0735 \cdot 10^{-9}\,\text{m}$. Finally joules to electronvolts by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
 **Substitution:** $$
 \begin{aligned}
@@ -102,7 +109,13 @@ $$ and in electronvolts $E_\text{k} = \dfrac{9.123 \cdot 10^{-17}\,\text{J}}{1.6
 **Given:** photons per second $\tfrac{N}{t} = 2.40 \cdot 10^4\,\tfrac{1}{\text{s}}$, wavelength $\lambda = 550\,\text{nm}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$
 **Asked:** the power $P$ of the light in units of $10^{-15}\,\text{W}$
 **Principle:** The power is the total energy of the photons arriving per second. The energy of each photon is $hf = \tfrac{hc}{\lambda}$, because the light has one wavelength.
-**Formula:** $P = \dfrac{N}{t} \cdot hf$, where $hf = \dfrac{hc}{\lambda}$, so $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$
+**Formula:** $P = \dfrac{N}{t} \cdot hf$ and $$
+\begin{aligned}
+c &= f\lambda \\
+hf &= \dfrac{hc}{\lambda} \\
+P &= \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}
+\end{aligned}
+$$
 **Conversions:** $550\,\text{nm} = 550 \cdot 10^{-9}\,\text{m}$
 **Substitution:** $$
 \begin{aligned}
@@ -134,7 +147,15 @@ $$, so $N = \dfrac{1.146 \cdot 10^{-23}\,\text{kg}\cdot\text{m/s}}{1.1250 \cdot 
 **Given:** wavelength of the incident photon $\lambda = 0.0500\,\text{nm}$, kinetic energy of the electron $E_\text{k} = 1.00\,\text{keV}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Asked:** the wavelength $\lambda'$ of the scattered photon in nanometres
 **Principle:** In the Compton effect, energy is conserved: the energy of the incident photon is shared between the scattered photon and the electron. The wavelength of the scattered photon follows from its energy.
-**Formula:** $\dfrac{hc}{\lambda} = \dfrac{hc}{\lambda'} + E_\text{k}$, from which $\lambda' = \dfrac{hc}{hc/\lambda - E_\text{k}}$
+**Formula:** $hf = hf' + E_\text{k}$ and $$
+\begin{aligned}
+hf' &= hf - E_\text{k} \\
+f &= \dfrac{c}{\lambda} \\
+f' &= \dfrac{c}{\lambda'} \\
+\dfrac{hc}{\lambda'} &= \dfrac{hc}{\lambda} - E_\text{k} \\
+\lambda' &= \dfrac{hc}{hc/\lambda - E_\text{k}}
+\end{aligned}
+$$
 **Conversions:** $0.0500\,\text{nm} = 0.0500 \cdot 10^{-9}\,\text{m}$ and $$
 \begin{aligned}
 1.00\,\text{keV} &= 1.00 \cdot 10^3 \\
@@ -175,7 +196,13 @@ Collisions between photons are not a valid explanation, because the photons arri
 **Given:** wavelength $\lambda = 405\,\text{nm}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Asked:** the energy $E$ of the photon in electronvolts
 **Principle:** The energy of a photon is $E = hf$, and the frequency of light follows from the wavelength by the equation $c = f\lambda$. The energy is therefore inversely proportional to the wavelength.
-**Formula:** $E = hf = \dfrac{hc}{\lambda}$
+**Formula:** $E = hf$ and $$
+\begin{aligned}
+c &= f\lambda \\
+f &= \dfrac{c}{\lambda} \\
+E &= \dfrac{hc}{\lambda}
+\end{aligned}
+$$
 **Conversions:** $405\,\text{nm} = 405 \cdot 10^{-9}\,\text{m}$. Finally, convert joules to electronvolts by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
 **Substitution:** $$
 \begin{aligned}
@@ -237,7 +264,14 @@ The extension is justified, because the points lie on a straight line and the li
 **Given:** wavelength of the laser $\lambda = 633\,\text{nm}$ and power $P = 2.0\,\text{mW}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$
 **Asked:** a) locating the student's error and b) the number of photons per second $\tfrac{N}{t}$ in units of $10^{15}\,\tfrac{1}{\text{s}}$
 **Principle:** Power is the total energy of the photons emitted per second, so $\tfrac{N}{t} = \tfrac{P}{hf}$ and $hf = \tfrac{hc}{\lambda}$. In the formula the wavelength is in metres, because $h$ and $c$ are in SI units.
-**Formula:** $\dfrac{N}{t} = \dfrac{P}{hf}$, where $hf = \dfrac{hc}{\lambda}$, so $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$
+**Formula:** $P = \dfrac{N}{t} \cdot hf$ and $$
+\begin{aligned}
+\dfrac{N}{t} &= \dfrac{P}{hf} \\
+c &= f\lambda \\
+hf &= \dfrac{hc}{\lambda} \\
+\dfrac{N}{t} &= \dfrac{P\lambda}{hc}
+\end{aligned}
+$$
 **Conversions:** The student substituted the wavelength in nanometres: $633\,\text{nm} = 633 \cdot 10^{-9}\,\text{m}$, and the error is a factor of $10^{-9}$ in the energy of the photon. Power: $2.0\,\text{mW} = 2.0 \cdot 10^{-3}\,\text{W}$.
 **Substitution:** $$
 \begin{aligned}
@@ -282,7 +316,16 @@ According to the wave model, the electron would radiate at the same frequency as
 Only some of the photons arriving at the slits end up as registered hits: first $20\,\%$ pass through the slits and hit the detector, and of those $40\,\%$ are registered, so the hits are $0.20 \cdot 0.40 = 0.080$ times the number of photons arriving at the slits.
 
 The photons travel at the speed $c$, so their spacing is the distance travelled per second divided by the number of photons per second.
-**Formula:** $hf = \dfrac{hc}{\lambda}$, $\dfrac{N}{t} = \dfrac{P}{hf}$, registered hits per second $r = 0.20 \cdot 0.40 \cdot \dfrac{N}{t}$, time $t = \dfrac{5000}{r}$ and spacing $d = \dfrac{c}{N/t}$
+**Formula:** $P = \dfrac{N}{t} \cdot hf$ and $$
+\begin{aligned}
+c &= f\lambda \\
+hf &= \dfrac{hc}{\lambda} \\
+\dfrac{N}{t} &= \dfrac{P}{hf} \\
+r &= 0.20 \cdot 0.40 \cdot \dfrac{N}{t} \\
+t &= \dfrac{5000}{r} \\
+d &= \dfrac{c}{N/t}
+\end{aligned}
+$$
 **Conversions:** $532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$ and $20\,\% = 0.20$, $40\,\% = 0.40$. The power is already in watts, that is, joules per second.
 **Substitution:** a) $$
 \begin{aligned}
@@ -310,7 +353,7 @@ The pattern therefore requires that the path is not known, and it cannot arise f
 **Principle:** Momentum is conserved as a vector quantity: $\overline{p} = \overline{p}' + \overline{p}_e$, so $\overline{p}_e = \overline{p} - \overline{p}'$. The vectors $\overline{p}$, $\overline{p}'$ and $\overline{p}_e$ form a triangle in which the angle between $\overline{p}$ and $\overline{p}'$ is the scattering angle $\theta$. The momentum of a photon is $\tfrac{h}{\lambda}$.
 
 Energy is also conserved, so the kinetic energy of the electron is the energy lost by the photon.
-**Formula:** $p = \dfrac{h}{\lambda}$, $p' = \dfrac{h}{\lambda'}$ and by the law of cosines $p_\text{e} = \sqrt{p^2 + p'^2 - 2pp'\cos\theta}$. The kinetic energy is $E_\text{k} = \dfrac{p_\text{e}^2}{2m_\text{e}}$ or $E_\text{k} = \dfrac{hc}{\lambda} - \dfrac{hc}{\lambda'}$.
+**Formula:** $p = \dfrac{h}{\lambda}$, $p' = \dfrac{h}{\lambda'}$ and by the law of cosines $p_\text{e} = \sqrt{p^2 + p'^2 - 2pp'\cos\theta}$. The kinetic energy is $E_\text{k} = \dfrac{p_\text{e}^2}{2m_\text{e}}$ or $E_\text{k} = hf - hf' = \dfrac{hc}{\lambda} - \dfrac{hc}{\lambda'}$.
 **Conversions:** $$
 \begin{aligned}
 &0.07110\,\text{nm} \\
@@ -373,7 +416,14 @@ $$
 **Principle:** The energy of a photon is $E = \dfrac{hc}{\lambda}$. By the equivalence of mass and energy the rest energy of the electron is $m_\text{e}c^2$, and the mass unit $\tfrac{\text{MeV}}{\text{c}^2}$ means that the rest energy is the number of the table in megaelectronvolts: $m_\text{e}c^2 = 0.511\,\text{MeV}$.
 
 Comparing the energy of the photon with the rest energy shows whether the photon's energy is small or large next to the electron's energy, which decides how much of its energy a photon loses in the Compton effect.
-**Formula:** $E = \dfrac{hc}{\lambda}$ and the share $= \dfrac{E}{m_\text{e}c^2} \cdot 100\,\%$
+**Formula:** $E = hf$ and $$
+\begin{aligned}
+c &= f\lambda \\
+f &= \dfrac{c}{\lambda} \\
+E &= \dfrac{hc}{\lambda} \\
+\text{share} &= \dfrac{E}{m_\text{e}c^2} \cdot 100\,\%
+\end{aligned}
+$$
 **Conversions:** $0.0711\,\text{nm} = 0.0711 \cdot 10^{-9}\,\text{m}$. Rest energy: $0.511\,\text{MeV} = 0.511 \cdot 10^{6}\,\text{eV} = 5.11 \cdot 10^{5}\,\text{eV}$. The photon's energy is changed from joules to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
 **Substitution:** First the product $hc$:
 $$

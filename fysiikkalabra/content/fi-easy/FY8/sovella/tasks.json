@@ -461,7 +461,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Säteily ei lopu. Sen annosnopeus pienenee taustan suuruusluokkaan, eikä putki enää erota sitä taustan vaihtelusta. Päättely on väärä, mutta etäisyys on silti hyvä suojautumiskeino."
+              "detail": "Säteily ei lopu. Sen annosnopeus pienenee taustan suuruusluokkaan, ja sen kauempana peittää pian taustan satunnainen vaihtelu. Päättely on väärä, mutta etäisyys on silti hyvä suojautumiskeino."
             }
           ]
         }

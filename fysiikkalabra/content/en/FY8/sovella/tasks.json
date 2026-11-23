@@ -461,7 +461,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "The radiation does not stop; its dose rate decreases to the order of magnitude of the background, and the tube can no longer distinguish it from the variation of the background. The reasoning is wrong, but distance is a good means of protection."
+              "detail": "The radiation does not stop; its dose rate decreases to the order of magnitude of the background, and farther out it is soon lost in the random variation of the background. The reasoning is wrong, but distance is a good means of protection."
             }
           ]
         }
