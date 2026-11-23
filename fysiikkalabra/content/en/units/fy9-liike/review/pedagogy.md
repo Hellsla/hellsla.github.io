@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 15ee3d8e9b8696db
-SCOPE: delta review of the Sovella set: new tasks s7 (Kärry radalla) and s8 (Kaksi kulkijaa samalla tiellä) and the changed intro; s1-s6 not re-judged (previously passed).
+CONTENT-HASH: ade08f40cf7c7bfe
 
 ## Blocking
-- (none)
+None.
 
 ## Polish
-- s7, s8: both are chapter-level graph tasks (fy4-1, fy4-12) with a figure that names its own structure ("kolmeen vaiheeseen", "kaksi kertaa" in c, "toisiaan kohti"). Fine as a gentle graph-reading pair, but the set's independent-transfer weight stays with s1-s6; the s7 c-part would be a slightly better task if it did not announce that the position occurs twice.
-- s7 d, Yleisiä virheitä: "kuljetusta matkasta" should be "kuljetusta matkasta jaettuna" or "kuljetun matkan"; the wording is unclear about what is wrong.
-- s8 d is the only word task of the pair and carries a real prediction-then-compute demand; good, keep.
-- English: the wording of the task text reads naturally and uses MAFY-style terms (velocity, speed, displacement).
+- The three new "Pysähdy ja mieti" boxes ask for the sentence the student has just read (slope/area, sign of acceleration, area below the axis). They work as a retrieval pause but test recall of the preceding line, not use. A small situation would be stronger, for example "a $(t,v)$ graph falls from $4\,\text{m/s}$ through zero to $-2\,\text{m/s}$: what does it tell about direction and displacement?". Not needed for PASS.
+- Box 3 (area below the axis) repeats the area point of box 1 and of starting-level question 6. Box 2 repeats starting-level question 4 (lt-4). The overlap is harmless, but one could be dropped to keep the page short.
+- The 75-minute plan cannot hold eight long tasks. teacher.md already says to pick one or two and set the rest as homework. A one-line note in the Sovella intro on the order would help students choose.
+
 ## Checked
-- s7: parts a-d rise from reading a slope to a negative-velocity interpretation, two-phase reasoning (x = 12 m twice) and displacement vs distance; recomputed 3,0 m/s, -2,0 m/s, 2,67 s and 8,0 s, +0,40 m/s, mean speed 2,0 m/s: correct. Rubric points sum to 3+3+4+4, no points for irrelevant things; the typical errors (x/t with nonzero start, missing sign, t = x/v = -6 s, averaging phase velocities) are real.
-- s8: recomputed vA = 2,0, vB = -2,0 m/s, t = 4,0 s, x = 12 m; d: 5,3 s and 14,7 m correct, and the graph argument (flatter B line meets A later and higher) is right. Common mistakes (sign of vB, 16 m / 2 m/s = 8 s, distance travelled instead of position) are real. Both solutions follow the seven-step model with symbolic solution first.
-- Intro: "kahdeksan tehtävää" matches eight tasks; instruction (coordinate system, model choice, symbolic first, reasonableness, open model answer last) fits the course. Workload: two short tasks added, within an hour-sized set.
-- Hash re-checked at the end: unchanged.
+- New boxes: each is one short question with a correct answer in glossary terms, and each sits right after the paragraph it concerns, so none gives away a later stage. Boxes 2 and 3 fix two items from Common mistakes.
+- Hero: the inline SVG is replaced by the webp image. The aria-label describes it, with no text or people, and the file exists in assets/pics/fy9/. I did not open the captures, so the image itself is for the visual reviewer.
+- Inquiry: the only change is paragraph breaks in the tarkistus-3 model answer, a readability gain. The sequence is unchanged from the version that passed, and its criteria are observable and match the question.
+- Task set s1-s8: authentic unfamiliar situations. Titles and prompts do not name the model. Parts rise in demand. Each has a table, figure or report extract to interpret. There is variety: calculation, a graph from phone data with extrapolation, uncertainty and error sources, a faulty report to critique, an experiment plan, a meeting problem and a free-fall problem.
+- Rubrics: points match what each part asks for, and nothing irrelevant is rewarded. I spot-checked the arithmetic of s1 c and d, s2 b and the Moon height, s6 (scale factor 1.10, giving 9.77), s7 and s8. All agree with the solutions.
+- Solutions follow the 7-step structure with symbols before numbers. Common mistakes are real (negative discriminant read as an error, forgotten head start, plain mean of speeds).
+- English: terms and units are consistent, and I found no mistranslation.
+- Coverage: docs/coverage/fy9-liike.md was not in the packet, so I did not judge it. The Finnish unit passed.

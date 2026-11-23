@@ -1,14 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 01caf546ba9d2d37
+CONTENT-HASH: 74609c45aabfe90e
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] aside.stop-think, 390 px: the inline fractions in the Vastaus of the mökki paragraph are small (\tfrac); readable. No change needed.
+- [Minor] Selkosuomi: "Sarjaankytkennässä suurempi resistanssi saa suuremman tehon." follows directly after the Pysähdy ja mieti box's topic; fine, optional to add "kun virta on sama".
 
 ## Checked
-- Diff since last PASS (fi-easy, git diff origin/main...HEAD, excluding review/): sovella/solutions.md (30 lines added, 10 removed) and one inquiry.json solution field. Only paragraph breaks in model answers; words, maths and figures unchanged. Display-math blocks stay attached to their sentences.
-- Read the earlier Sovella visual report (fi-easy) as evidence: PASS, same conclusion.
-- Opened: review/shots/fy9-tasavirta-stage-sovella-390-8.png (open model solution at 390 px, Kaava to Järkevyys): formula rows, answer box and reasonableness block intact, no overflow.
-- Gap: not every changed paragraph has its own capture (one shared component renders all); figures unchanged and not re-inspected; contact sheets not opened.
+- intro-390, selita-390-1..6, selita-1280-3 (opened).
+- Stop-think boxes (3): label "PYSÄHDY JA MIETI", question, openable "Vastaus" with math ($P = RI^2$, $U = E - R_\text{s}I$, $12\,\text{V}$) all unclipped at 390 and 1280; green left bar distinct from the "Johda itse" card; no overflow.
+- Figures kartta, mökki, piiri, napa read legibly at 390 px; labels LaTeX, colours consistent (current arrows violet in mökki is the existing figure style).
+- Formulas (kaavat blocks, johda derivations) aligned and unclipped; units upright with thin space.
+- Finnish: plain, fluent selkosuomi; terms explained at first use.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

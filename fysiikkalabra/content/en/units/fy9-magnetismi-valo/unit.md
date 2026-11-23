@@ -10,6 +10,12 @@
 
 The phenomena of the module are connected with two fields. A **magnetic field** $\overline{B}$ does not act on a charge at rest; on a moving charge and on a current-carrying wire it exerts a force when the motion or the current is not parallel to the field, and the force is perpendicular to both the motion and the field. A **changing magnetic flux** produces a voltage: the generator, the transformer, the induction hob and the eddy-current brake are based on this. When the electric and magnetic fields change and produce each other, an **electromagnetic wave** forms, and its visible part is light.
 
+```pysahdy
+What must happen to the magnetic flux through a coil for a voltage to be induced in it?
+---
+The magnetic flux must change. If the flux stays the same, no voltage is induced.
+```
+
 <svg data-fig="kartta" viewBox="0 0 380 866" role="img" aria-label="Recognition chart: how do I tell which law to use? Make a picture and mark the directions first, then see which sign in the task fits. A particle moves in a field: the magnetic force is charge times speed times the perpendicular magnetic flux density. A current-carrying wire in a field: the force is current times wire length times the perpendicular flux density. A particle moves in a circle: the magnetic force is the centripetal force, and the radius is mass times speed divided by charge times flux density. The magnetic flux changes: the induced voltage in a coil is minus the number of turns times the change of flux divided by the time. Transformer: the ratio of the numbers of turns equals the ratio of the voltages. A generator rotates: the peak voltage is the number of turns times the area times the flux density times two pi times the frequency. Light passes from one medium to another: use Snell&#x27;s law of refraction. Light cannot get out of a medium: the sine of the critical angle is the ratio of the refractive indices. Light hits a grating: the grating equation, the slit spacing times the sine of the angle equals the order times the wavelength." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="822" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
@@ -118,6 +124,12 @@ where $F_\text{M}$ is the magnetic force ($\text{N}$), $Q$ the charge ($\text{C}
 
 When a charged particle of mass $m$ ($\text{kg}$) and charge $Q$ moves with the speed $v$ perpendicular to a uniform magnetic field, the magnetic force is always perpendicular to the velocity. The particle then moves in uniform circular motion on a path of radius $r$ ($\text{m}$).
 
+```pysahdy
+Why does the magnetic force not change the speed of a charged particle?
+---
+The force is always perpendicular to the velocity, so it changes only the direction of motion.
+```
+
 <svg data-fig="ympyra" viewBox="0 0 600 420" role="img" aria-label="Diagram: a positive particle in a uniform magnetic field pointing into the paper (green crosses). The path of the particle is a dashed circle, which it goes round anticlockwise. At four points of the path a blue velocity arrow is along the path and a red arrow of the magnetic force points to the centre of the circle, perpendicular to the velocity. The radius r is marked from the centre to the path." style="max-width:100%;font-size:24px">
   <image href="pics/fy9/fy9-magnetismi-valo-ympyra.webp" x="0" y="0" width="600" height="425" preserveAspectRatio="none"/>
   <foreignObject x="302" y="169.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$r$</div></foreignObject>
@@ -192,6 +204,12 @@ I = I_0\cos^2\theta
 where $c = 3.00 \cdot 10^8\,\text{m/s}$, $f$ is the frequency, $\lambda$ the wavelength, $T$ the absolute temperature ($\text{K}$), $b = 2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$, $n = \tfrac{c}{v}$ the refractive index and $v$ the speed of light in the material, $\alpha_1$ and $\alpha_2$ the angles of incidence and refraction from the normal, $d$ the grating constant, in the grating equation $\alpha$ the direction of a maximum and $n = 0, 1, 2, \ldots$ its order, and $I_0$ the intensity of the polarised light before the analyser. In Malus's law $\theta$ is the angle between the direction of polarisation and the transmission axis of the analyser. In a thin film the path difference is $2nd$ when the light arrives almost perpendicularly. When only one of the reflections inverts the wave, $2nd = \left(k + \tfrac12\right)\lambda$ gives constructive interference; when both invert it, $2nd = k\lambda$.
 
 When light passes from a medium of higher refractive index into one of lower refractive index ($n_1 > n_2$), the angle of refraction is larger than the angle of incidence. The angle of incidence at which the angle of refraction is $90^\circ$ is the critical angle $\alpha_\text{r}$, and at larger angles of incidence the light is totally internally reflected.
+
+```pysahdy
+Does light bend toward the normal or away from it when it passes from a medium of higher refractive index into one of lower refractive index?
+---
+The angle of refraction is then larger than the angle of incidence, so the ray bends away from the normal.
+```
 
 <svg data-fig="rajakulma" viewBox="0 0 600 330" role="img" aria-label="Schematic, no numbers. Below is a medium with the larger refractive index n 1, above a medium with the smaller refractive index n 2. A lamp at the bottom sends two light rays to the boundary. At each point where a ray meets the boundary the normal is drawn as a dashed line. The left ray meets the boundary at the critical angle alpha r: the refracted ray runs along the boundary, so the angle of refraction alpha 2 is 90 degrees, and a weak part is reflected back. The right ray meets the boundary at an angle larger than the critical angle: no light refracts into the upper medium, and the whole ray is reflected back, which is total internal reflection." style="max-width:100%;font-size:24px">
   <image href="pics/fy9/fy9-magnetismi-valo-rajakulma.webp" x="1.2" y="1.2" width="597" height="335.8" preserveAspectRatio="none"/>

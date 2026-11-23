@@ -12,6 +12,12 @@ All the problems of this lesson start from the same principle: **energy is conse
 
 Three questions branch off from the conservation law, and the energy problems of the exam come back to them. **How fast** is energy transformed? Power tells that. **How large a share** is useful? Efficiency tells that. **Where** does the energy come from? From the heat of combustion of a fuel, from the work done by a force, or from flowing water, the wind and the sun.
 
+```pysahdy
+The problem asks how fast energy is transformed and how large a share of it becomes useful. Which quantities tell these?
+---
+How fast energy is transformed is told by power. How large a share becomes useful is told by efficiency.
+```
+
 <svg data-fig="kartta" viewBox="0 0 380 870" role="img" aria-label="Recognition chart: how do I tell which law to use? Start by listing the forms of energy and see which sign in the task fits. Isolated system: energy is conserved, so the initial energy equals the final energy. Energy over time: power is the change of energy divided by the time. Steady power, duration known: energy is power times time. Kilowatt-hours: convert to joules, one kilowatt-hour is 3.6 megajoules. Useful energy and input energy: efficiency is the useful energy divided by the input energy. Several devices in a row: multiply the efficiencies of the stages. Fuel, heating value: the heat released in burning is the heating value times the mass. A force moves a distance: the work is force times distance." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="826" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
@@ -101,6 +107,12 @@ where $P$ is the power (W), $\Delta E$ the energy (J) and $\Delta t$ the time (s
 1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}
 ```
 
+```pysahdy
+Is the kilowatt-hour a unit of power or of energy, and how many joules is it?
+---
+The kilowatt-hour is a unit of energy, and $1\,\text{kWh} = 3.6\,\text{MJ}$. The kilowatt, in turn, is a unit of power.
+```
+
 ### Efficiency and the energy chain
 
 ```kaavat
@@ -146,6 +158,12 @@ Divide by the power taken in:
 $$\eta = \frac{P_\text{a}}{P_\text{o}} = \eta_1\,\eta_2\,\eta_3$$
 
 The efficiencies are multiplied. Each of them is less than $1$, so the efficiency of the whole chain is smaller than that of any single stage.
+```
+
+```pysahdy
+The efficiencies of the stages of the chain are $0.90$, $0.45$ and $0.98$. Why is the efficiency of the whole chain smaller than $0.45$?
+---
+The efficiencies are multiplied together, and each is below $1$. Every stage reduces the useful power, so the product is smaller than the smallest factor.
 ```
 
 ### Sources of energy

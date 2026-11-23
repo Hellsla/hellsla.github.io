@@ -98,6 +98,12 @@ Tästä saadaan vastaus alun kysymykseen. Mökin laitteet on kytketty akkuun rin
   <foreignObject x="120" y="329.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$4{,}5\,\text{A}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Miksi LED-valojen ja kylmälaukun yli on kummankin $12\,\text{V}$?
+---
+Laitteet on kytketty akkuun rinnan, ja rinnan kytkettyjen komponenttien yli on sama jännite kuin lähteellä.
+```
+
 ## Kaava: Tasavirtapiirit ja sähköenergia
 
 ### Virta, jännite ja resistanssi
@@ -130,6 +136,12 @@ teho :: P = \frac{W}{\Delta t}
 
 missä $P$ on teho ($\text{W}$) ja $W$ ajassa $\Delta t$ muuttunut sähköenergia ($\text{J}$ tai $\text{kWh}$). Muoto $P = UI$ pätee kaikille komponenteille. Vastuksen tehon voi laskea myös pelkästä virrasta tai pelkästä jännitteestä, kun tehoon sijoitetaan Ohmin laki (Johda itse alla). Sarjassa suurempi resistanssi saa suuremman tehon, rinnan pienempi. Energian yksiköt muunnetaan sijoittamalla: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$. Energialle käytetään kirjainta $W$, koska $E$ tarkoittaa lähdejännitettä.
 
+```pysahdy
+Kaksi vastusta on kytketty sarjaan. Kumpi saa suuremman tehon?
+---
+Se, jonka resistanssi on suurempi. Sarjassa virta $I$ on sama, joten teho $P = RI^2$ kasvaa resistanssin mukana.
+```
+
 ```johda
 Johda vastuksen teho $P$ virran $I$ avulla ja jännitteen $U$ avulla.
 ---
@@ -160,6 +172,12 @@ Paristoa kuvataan mallilla, jossa lähdejännite $E$ ($\text{V}$) ja sisäinen r
   <foreignObject x="494" y="165.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$R$</div></foreignObject>
   <foreignObject x="380" y="19.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
 </svg>
+
+```pysahdy
+Miksi pariston napajännite on pienempi kuin lähdejännite, kun piirissä kulkee virta?
+---
+Osa lähdejännitteestä kuluu pariston sisäisessä resistanssissa. Napajännite on $U = E - R_\text{s}I$.
+```
 
 ```johda
 Pariston napoihin kytketään vastus $R$. Johda piirissä kulkeva virta $I$ ja pariston napajännite $U$.

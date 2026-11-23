@@ -507,7 +507,7 @@
           "id": "b",
           "kind": "word",
           "points": 5,
-          "text": "An angler casts with a carbon-fibre rod under the line. Explain why he can get an electric shock although the rod does not touch the conductor. Estimate the smallest air gap that can break down.",
+          "text": "An angler casts with a carbon-fibre rod under the line. Explain why he can get an electric shock although the rod does not touch the conductor. Estimate up to what length of air gap breakdown is certain.",
           "criteria": [
             {
               "text": "Explains that carbon fibre conducts electricity, so the tip of the rod is almost at earth potential when the angler stands on the ground; the whole voltage between the conductor and earth is then across the air gap.",
@@ -522,7 +522,7 @@
             {
               "key": "assumptions",
               "points": 1,
-              "detail": "The estimate is a lower limit: near a thin conductor the field is stronger than $\\tfrac{U}{d}$, and humid air and dirt weaken the insulation, so an arc can strike across a clearly longer gap too."
+              "detail": "The estimate is a lower limit for the safety distance, not a safe distance: near a thin conductor the field is stronger than $\\tfrac{U}{d}$, and humid air and dirt weaken the insulation, so an arc can strike across a clearly longer gap too."
             },
             {
               "text": "Explains the consequence: after the breakdown the current flows through the arc, the rod and the angler to earth, and with the resistance of the body the voltage of $12\\,\\text{kV}$ gives a current of the order of amperes.",

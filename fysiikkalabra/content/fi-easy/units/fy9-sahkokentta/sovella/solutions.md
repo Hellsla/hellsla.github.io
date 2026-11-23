@@ -367,11 +367,11 @@ Lintu on kyllä lähes samassa potentiaalissa kuin johdin, noin $12\,\text{kV}$ 
 Väitteen johtopäätös on oikea, mutta perustelu on väärä. Lintu olisi turvassa, vaikka sen jalat johtaisivat sähköä hyvin. Lintu joutuu vaaraan, jos se koskettaa siivellään samaan aikaan toista johdinta tai pylvään maadoitettua osaa.
 
 ### b)
-**Kysytty:** miksi kalastaja voi saada iskun koskematta johtimeen, ja pienin ilmaväli, jonka läpi sähkö voi lyödä
+**Kysytty:** miksi kalastaja voi saada iskun koskematta johtimeen, ja pisin ilmaväli, jonka yli sähkö lyö varmasti läpi
 **Periaate:** Ilma on eriste vain silloin, kun sähkökenttä on pienempi kuin ilman läpilyöntilujuus. Tasaisessa kentässä ilmaväli $d$ kestää jännitteen $E_\text{max} d$ (luvut *Kondensaattori ja sen energia* ja *Sähköturvallisuus kotona ja työssä*).
 **Mallivastaus:** Hiilikuitu johtaa sähköä. Kun kalastaja seisoo maassa, vavan kärki on lähes maan potentiaalissa. Siksi kärjen ja johtimen välisen ilmavälin yli on koko johtimen ja maan välinen jännite, noin $12\,\text{kV}$.
 
-Linjan nimellisjännite $20\,\text{kV}$ on kahden vaihejohtimen välinen jännite. Yksi johdin on maahan nähden $\tfrac{20\,\text{kV}}{\sqrt{3}} \approx 12\,\text{kV}$:n jännitteessä. Tasaisen kentän mallilla pienin väli, jonka läpi sähkö lyö, on $d = \tfrac{U}{E_\text{max}} = \tfrac{12 \cdot 10^{3}\,\text{V}}{3 \cdot 10^{6}\,\text{V/m}} \approx 4\,\text{mm}$.
+Linjan nimellisjännite $20\,\text{kV}$ on kahden vaihejohtimen välinen jännite. Yksi johdin on maahan nähden $\tfrac{20\,\text{kV}}{\sqrt{3}} \approx 12\,\text{kV}$:n jännitteessä. Tasaisen kentän mallilla pisin väli, jonka yli sähkö lyö varmasti läpi, on $d = \tfrac{U}{E_\text{max}} = \tfrac{12 \cdot 10^{3}\,\text{V}}{3 \cdot 10^{6}\,\text{V/m}} \approx 4\,\text{mm}$.
 
 Arvio on turvaetäisyyden alaraja. Se ei ole turvallinen etäisyys. Ohuen johtimen ja vavan kärjen lähellä kenttä on paljon voimakkaampi kuin $\tfrac{U}{d}$. Lisäksi kostea ilma, lika ja siima heikentävät eristystä. Siksi valokaari voi syttyä myös selvästi pidemmän välin yli.
 
@@ -394,7 +394,7 @@ Lehmän etujalkojen ja takajalkojen väli on yli metrin. Siksi niiden välillä 
 - Linnun turvallisuus selitetään sillä, että lintu ei ole maadoitettu. Vastauksessa ei mainita, että jalkojen välillä ei ole jännitettä.
 - Suuri potentiaali tulkitaan sinänsä vaaralliseksi, vaikka vaara syntyy vasta potentiaalierosta.
 - b-kohdassa ilmavälin jännitteeksi otetaan vaihejohtimien välinen $20\,\text{kV}$. Vavan kärjen ja johtimen välillä on kuitenkin johtimen ja maan välinen jännite, noin $12\,\text{kV}$.
-- b-kohdan $4\,\text{mm}$ esitetään turvallisena etäisyytenä, vaikka se on tasaisen kentän alaraja.
+- b-kohdan $4\,\text{mm}$ esitetään turvallisena etäisyytenä, vaikka se on vain väli, jonka yli sähkö lyö varmasti läpi tasaisen kentän mallissa.
 - c-kohdassa neuvotaan juoksemaan pois pitkin askelin. Se kasvattaa askeljännitettä.
 
 ## fy9-sahkokentta-s5

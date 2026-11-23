@@ -12,6 +12,12 @@ Kaikki tämän tunnin tehtävät lähtevät samasta periaatteesta: **energia sä
 
 Säilymislaista haarautuu kolme kysymystä, joihin kokeen energiatehtävät palautuvat. **Kuinka nopeasti** energiaa muuttuu? Sen kertoo teho. **Kuinka suuri osa** tulee hyödyksi? Sen kertoo hyötysuhde. **Mistä** energia tulee? Polttoaineen lämpöarvosta, voiman tekemästä työstä tai virtaavasta vedestä, tuulesta ja auringosta.
 
+```pysahdy
+Tehtävässä kysytään, kuinka nopeasti energiaa muuttuu ja kuinka suuri osa siitä tulee hyödyksi. Mitkä suureet kertovat nämä?
+---
+Kuinka nopeasti energiaa muuttuu, kertoo teho. Kuinka suuri osa tulee hyödyksi, kertoo hyötysuhde.
+```
+
 <svg data-fig="kartta" viewBox="0 0 380 870" role="img" aria-label="Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita luettelemalla energialajit ja katso, mikä tehtävän tunnusmerkki sopii. Eristetty systeemi: energia säilyy, joten energia alussa on yhtä suuri kuin energia lopussa. Energia ajan kuluessa: teho on energian muutos jaettuna ajalla. Tasainen teho, kesto tiedossa: energia on teho kertaa aika. Kilowattitunteja: muunna jouleiksi, yksi kilowattitunti on 3,6 megajoulea. Hyötyenergia ja otettu energia: hyötysuhde on annettu energia jaettuna otetulla energialla. Monta laitetta peräkkäin: kerro vaiheiden hyötysuhteet keskenään. Polttoaine, lämpöarvo: palamislämpö on lämpöarvo kertaa massa. Voima siirtää matkan: työ on voima kertaa matka." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="826" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
@@ -101,6 +107,12 @@ missä $P$ on teho (W), $\Delta E$ energia (J) ja $\Delta t$ aika (s). Epätasai
 1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
 ```
 
+```pysahdy
+Onko kilowattitunti tehon vai energian yksikkö, ja kuinka monta joulea se on?
+---
+Kilowattitunti on energian yksikkö, ja $1\,\text{kWh} = 3{,}6\,\text{MJ}$. Kilowatti puolestaan on tehon yksikkö.
+```
+
 ### Hyötysuhde ja energiaketju
 
 ```kaavat
@@ -146,6 +158,12 @@ Jaetaan otetulla teholla:
 $$\eta = \frac{P_\text{a}}{P_\text{o}} = \eta_1\,\eta_2\,\eta_3$$
 
 Hyötysuhteet kerrotaan. Jokainen niistä on alle $1$, joten koko ketjun hyötysuhde on pienempi kuin minkään yksittäisen vaiheen.
+```
+
+```pysahdy
+Ketjun vaiheiden hyötysuhteet ovat $0{,}90$, $0{,}45$ ja $0{,}98$. Miksi koko ketjun hyötysuhde on pienempi kuin $0{,}45$?
+---
+Hyötysuhteet kerrotaan keskenään, ja jokainen on alle $1$. Jokainen vaihe pienentää hyötytehoa, joten tulo on pienempi kuin pienin tekijä.
 ```
 
 ### Energian lähteet

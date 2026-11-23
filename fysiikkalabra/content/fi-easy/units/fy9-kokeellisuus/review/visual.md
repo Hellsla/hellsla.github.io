@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 0c3fbc042cbdce1e
+CONTENT-HASH: bfe9479ef3570ebe
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] kartta-kuva at 1280 (selita-1280-1) — the decision map is only about 380 px wide and leaves the right of the column empty; its text paragraph is short, so no side-by-side. Shared figure layout; acceptable.
+- [Minor] fig "virhe" at 390 — axis/tick labels render small (about 11 px effective); readable, not clipped.
 
 ## Checked
-- Read `git diff origin/main...HEAD` for this language (excluding review/): only paragraph breaks (blank line / \n\n) in sovella/solutions.md (3 solutions: kallistus/veto method, vaihtoehtoinen tapa/öljyn häviöt, kapeampi mittalasi/ylivuotoastia) and one inquiry.json model answer. Words, maths, units and figures unchanged. Each split falls at a sentence boundary that starts a new idea (alternative method, second way), so the paragraphs are shorter and clearer, none cuts a formula or list.
-- Read the earlier Sovella visual report as evidence.
-- Opened captures review/shots/fy9-kokeellisuus-stage-sovella-390-1.png and -sovella-1280-2.png (fi shots): layout, KaTeX, cards, hints intact, no clipping or overflow. The solutions are behind locked buttons and are not visible in these captures, so the split paragraphs themselves were judged from the source diff, not rendered. Paragraph spacing is the shared component's, already seen in other solutions.
-- Translations checked by diff to match the Finnish cut (same places); only the Finnish captures were opened.
+- Opened top-390, selita-390-1/-2/-3/-4, selita-1280-1 (four Pysähdy ja mieti boxes: label, question, Vastaus open, text and inline math intact at 390 and 1280, no clipping or overflow; green box is consistent with the page, hierarchy clear; the answer is a native details so keyboard-reachable).
+- Figures seen: hero, kartta (decision map), virhe (graph with data points, fit, dashed extrapolation, labelled intercept).
+- Finnish (selkosuomi): the box questions and answers are plain, one idea each, terms (resoluutio, epävarmuus, kulmakerroin) consistent with the surrounding text; no AI-phrasing.
+- Not opened individually: the sovella/tarkista/teacher captures (unchanged by this diff; the packet's deterministic checks are clean).
+
+Scores: illustrations 4 · typography 5 · Finnish 4 · accessibility 4

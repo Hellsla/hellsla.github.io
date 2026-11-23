@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 96a511c4dbbf2169
+CONTENT-HASH: db20474744c40f0e
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] unit.md, first `pysahdy` box (Ydinajatus) — the question repeats the sentences directly above it, and the answer is the same words, so the box adds little. It also stands between the paragraph and the `kartta` figure it leads into. Move it after the figure, or ask something the paragraph does not answer. (for pedagogy: low retrieval value.)
+- [Minor] Stop-think boxes — the label "PYSÄHDY JA MIETI" is about 12 px uppercase and the green fill is very pale on the cream page. Readable; do not change before the teacher says so.
 
 ## Checked
-- Diff origin/main...HEAD for content/fi/units/fy9-energia (excluding review/): only sovella/solutions.md changed, 30 insertions and 9 deletions; each change is a paragraph break inside a Mallivastaus or inquiry-solution field. Words, maths, units and figures unchanged. Breaks fall at sensible thought boundaries (a conclusion or a new line of argument); no break sits inside a display equation. The break after "Mallivastaus:" before a bullet list is a normal list start.
-- Opened captures: fy9-energia-stage-sovella-1280-5.png and fy9-energia-stage-sovella-390-6.png (Finnish shots dir, current layout of the Sovella stage: cards, hints, closed Näytä ratkaisu button, no clipping or overflow). These show the solutions closed, so the new breaks themselves were judged from the diff, not seen rendered.
-- Read the earlier Sovella visual report as evidence; it passed the same change.
-- Content hash rerun at the end: 96a511c4dbbf2169 (unchanged).
+- selita-390-1…4 (the three new boxes and their formulas at 366 px content width), selita-1280-1 and -2, top-390, contact-1 (opening, hero, ennusta, tutki, start of selita).
+- Box look: green left rule, small-caps label, question in the body typeface, then an "▼ Vastaus" opener with the answer inside the box. The captures show the openers open. Nothing clipped, no horizontal overflow, and the box width matches the reading column at 390 px and 1280 px.
+- Maths in the boxes ($1\,\text{kWh} = 3{,}6\,\text{MJ}$, $0{,}90$, $0{,}45$, $0{,}98$, $1$) is KaTeX with decimal comma and upright units. The ketju energy-flow figure, the kartta diagram, the formula cards and the johda block are legible and in order at 390 px.
+- Not opened: the 78 exercise captures and the sovella captures were skipped. The packet's deterministic checks are not repeated.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

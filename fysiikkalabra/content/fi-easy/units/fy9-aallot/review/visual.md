@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 487d83df3bf17103
+CONTENT-HASH: b20f769ff7a5fc10
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] unit.md, third Pysähdy ja mieti box: the inline fraction in the answer (f = f_0 v/(v - v_L)) is very small at 390 px. Optionally say it in words ("nimittäjä on pienempi kuin $v$").
+- [Minor] pilli figure: the "1 m" scale label sits close to "v ≈ 1500 m/s" at 390 px; no overlap, a little more gap would help.
+- [Minor] The boxes' answers are shown open in the "every box open" captures; the closed state was not captured separately.
 
 ## Checked
-- Read `git diff origin/main...HEAD` for fi-easy (excluding review/): only sovella/solutions.md and inquiry.json, 36 insertions / 12 deletions. Changes are paragraph breaks (blank line inserted between sentences of Periaate and Mallivastaus fields); words, maths, units and figures unchanged. A display-math block that opens mid-paragraph stays in the later paragraph, so no formula is split by the new break.
-- Read the previous Sovella visual report (PASS) as evidence.
-- Opened fi-easy 390 px (sovella-390-2) from review/shots/: Sovella task cards render cleanly, KaTeX and units intact, no clipping or overflow, one reading column.
-- Not opened: captures of the solution panels with the solution button open, so the rendered paragraph spacing inside solutions rests on the diff and the earlier Sovella report, not on my own view.
+- selita-390-1…5 (Ydinajatus, kartta, pilli figure, all three stop-think boxes at 390 px), selita-1280-2 and -3 (boxes 1 and 2 at 1280 px, ominais figure), intro-390 (opening, hero, learn goals).
+- Boxes: label "PYSÄHDY JA MIETI", question, openable "Vastaus"; maths ($\Delta s$, $(n+\tfrac12)\lambda$, $f_0\,\tfrac{v}{v-v_\text{L}}$) renders without clipping or overflow; tint and left rule clear; reading width kept. No separate fig-N captures exist; figures judged from the stage captures. Exercise and sovella captures not opened (unchanged; deterministic checks in packet).
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

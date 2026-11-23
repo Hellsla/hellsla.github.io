@@ -1,18 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: f56ae41225b29686
-SCOPE: delta: round 2, the fixes of round 1 in fy9-magnetismi-valo-s8 and -s9; older tasks untouched
-
-Round 2: delta against the version round 1 reviewed (fix round 1).
+CONTENT-HASH: e8fc07600488a929
 
 ## Blocking
-- (none)
+- None.
 
 ## Polish
-- s8 a and s9 a still use the chapter figures (fy7-10/fit, fy7-5/flux-task-2); a variant figure would make them original. The demand is in s8 b-d and s9 b-c.
-- s8 text names the axes and s9 c names the zero-flux moment, so the model and the trap are announced; acceptable, recorded.
+- All three "Pysähdy ja mieti" boxes sit between the paragraph and the figure that explains it (Ydinajatus, the particle in a field, the refraction rule). CLAUDE.md wants a figure right after its paragraph. Put each box after its figure, so the figure stays beside the text and the box closes the block. The figure for box 3 (refraction at a glass-to-air boundary) would support the answer.
+- Box 1 ("Mitä käämin magneettivuolle täytyy tapahtua...") is nearly verbatim retrieval of "Muuttuva magneettivuo synnyttää jännitteen". That is fine as a first, easy check. Consider "Miksi paikallaan oleva magneetti käämin sisällä ei indusoi jännitettä?" so the student reasons instead of copying a phrase.
+- The model answer to box 3 gives the step "suurempi kulma normaalista = pois normaalista" in one sentence. This is correct, but the student must see that the angle is measured from the normal. A short mention ("kulmat mitataan normaalista") would repair the common "kulma pinnasta" mistake.
 
 ## Checked
-- Round-1 report read first (PASS, no Blocking); only Polish had been raised.
-- Opened the fi packet s8 and s9 solutions and the fi tasks.json texts: numbers consistent (n = 0,45/0,30 = 1,5; 2,0·10^8 m/s; 0,75 ns; 41,8° ≈ 42°; 2,4 V and 1,8 V; 0,37 J), rounded to two significant figures as the data, chains in aligned rows, unit fields language-neutral ("", "· 10⁸ m/s", "ns", "V", "J", "°").
-- Nothing newly broken: task texts name no solution steps beyond what round 1 accepted; figure ids unchanged.
-- Hash at start and end f56ae41225b29686.
+- Pysähdy boxes, each judged against the paragraph just before it:
+  - Box 1: answerable from the Ydinajatus paragraph. It is placed right after it. It is short and works on a phone as a closed question with a hidden answer.
+  - Box 2: answerable from the paragraph on motion perpendicular to the field. It tests the one idea that paragraph builds toward, and it comes before the derivation of r = mv/QB, which is the right place.
+  - Box 3: the paragraph gives n1 > n2 and "taitekulma suurempi". The student needs one inference (away from the normal). It comes before the critical-angle derivation. Each box is a single question with a one-sentence answer, so there is no wall of text and no new interface text.
+- Three boxes in a unit this size is a light load. They do not duplicate the diagnostic questions (Lähtötaso 1, 2 and 5 test the same ideas, but at application level, after the student has read the text).
+- No answer is given before the student acts: the answer sits behind the box.
+- Only the three boxes changed since the version passed, plus one inquiry solution edit. The edit and the figure changes do not affect the learning path. The task set (the Tutki tube experiment, the four checks, the four calculations, the six long tasks, and the Sovella packet's 20-point graph task) is unchanged. Its levels, variety, and links to FY7 chapters were passed before, and I found no reason to reopen them.
+- Finnish and terminology are correct: "magneettivuon tiheys", "normaalikiihtyvyys", "taitekulma". The box text uses the glossary terms.
+- The hash was unchanged at the start and at the end (e8fc07600488a929).
