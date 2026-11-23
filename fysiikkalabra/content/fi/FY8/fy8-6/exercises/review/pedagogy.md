@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 44874ddf209d177a
-SCOPE: delta md-paragraphs,numbers,reflow,typography from 86db7651c7e4bc48 base 64d4935
+CONTENT-HASH: 7a46917d3f0bf707
 
 ## Blocking
 
 ## Polish
-- solutions.md:~323-330 (L2 reading-error task, Kaava) — after the display block the text continues ", ja poikkeama on …" with a leading comma; put the deviation formula in its own sentence after the block.
-- solutions.md:51-57 and 78-84 — the last display row (`\lambda = hc/E_g`, `h = ek`) is a solving step, not a continuation of the equality chain; fine, but a "joten" before it would show the step.
-- L2-10 part c is still not graded by the box (earlier polish).
+- solutions.md:~423 (L3-04 Kaava) — the sentence now starts with `eU_k \approx hf`, but the single-LED part still says `eU_k = hf`; use ≈ there too (or "kun $eU_k \approx hf$ otetaan yhtäsuureksi").
 
 ## Checked
-- Earlier blocking item fixed: h_0 now reads `6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}` in the error task.
-- The diff's Kaava lines look garbled only in the packet (display blocks collapsed); in solutions.md each is a correct aligned block, basic laws first (eU_k = hf, c = f lambda, P = NE, I = N_e e), then the derived formula.
-- L1-05, L3-04, L2-06 Kaava now derive from the basic laws; steps can be followed by a student.
-- Split paragraphs (L1-06 wrong options, Aino/Salla/Eero reasoning, FWHM, Delta h = e Delta k) each keep one idea and repair the misconception.
-- Numbers, answers and tolerances unchanged.
-- Method: delta; diff and file lines read.
+- L2-06 (Salla): the extra ~0,16 V cancels the ~0,1 V gap and overshoots by ~0,06 V. This matches the lesson's ~0,1 V gap and the explanation that Salla's value lands closer by coincidence. The misconception is repaired, since a close result does not prove the reading method.
+- L3-04: ≈ in the first Kaava equation matches the lesson's model wording (eU_k ≈ hf). The slope step h = ek is unchanged.
+- Numbers, answers and tolerances are unchanged. The diff touches only wording.
+- Method: delta; diff read in context. The hash matched at the start and the end.
