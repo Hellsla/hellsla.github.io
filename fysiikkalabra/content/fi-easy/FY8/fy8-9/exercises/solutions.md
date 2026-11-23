@@ -39,7 +39,7 @@
 
 **Periaate:** Puoliintumisajan kohdalla hajoamattomia ytimiä on puolet. Hajoamislaissa $N = N_0 e^{-\lambda t}$ tämä tarkoittaa, että $e^{-\lambda T_{1/2}} = \tfrac{1}{2}$. Tästä saadaan hajoamisvakion ja puoliintumisajan yhteys.
 
-**Kaava:** $\lambda T_{1/2} = \ln 2$, josta $\lambda = \dfrac{\ln 2}{T_{1/2}}$
+**Kaava:** $$\begin{aligned} N &= N_0 e^{-\lambda t} \\ \tfrac{N_0}{2} &= N_0 e^{-\lambda T_{1/2}} \\ \lambda T_{1/2} &= \ln 2 \\ \lambda &= \dfrac{\ln 2}{T_{1/2}} \end{aligned}$$
 
 **Muunnokset:** Ei tarvita. Kun puoliintumisaika on vuosina, hajoamisvakio saadaan suoraan yksikössä $\tfrac{1}{\text{a}}$.
 
@@ -130,7 +130,7 @@ $$. Näyte ei ole tyhjä, mutta siitä on jäljellä enää pieni osa.
 
 **Periaate:** Aktiivisuus noudattaa hajoamislakia, $A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$. Kysytty aika on eksponentissa. Siksi se ratkaistaan logaritmilla.
 
-**Kaava:** $\dfrac{A}{A_0} = \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, joten $\ln \dfrac{A_0}{A} = \dfrac{t}{T_{1/2}} \ln 2$ ja $t = T_{1/2} \cdot \dfrac{\ln (A_0 / A)}{\ln 2}$
+**Kaava:** $$\begin{aligned} \dfrac{A}{A_0} &= \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \\ \ln\dfrac{A_0}{A} &= \dfrac{t}{T_{1/2}} \ln 2 \\ t &= T_{1/2} \cdot \dfrac{\ln (A_0 / A)}{\ln 2} \end{aligned}$$
 
 **Muunnokset:** Ei tarvita. Suhde $\tfrac{A_0}{A} = \tfrac{1}{0{,}100} = 10{,}0$ on pelkkä luku. Aika saadaan samassa yksikössä kuin puoliintumisaika eli vuosina.
 
@@ -166,7 +166,7 @@ Hetkellä $2{,}0\,\text{h}$ se antaa $800\,\text{kBq} \cdot e^{-1} \approx 294\,
 
 **Periaate:** Puoliintumisajan kohdalla $e^{-\lambda T_{1/2}} = \tfrac{1}{2}$, koska puolet ytimistä on hajonnut. Hajoamisvakio halutaan sekunteina. Siksi puoliintumisaika muutetaan ensin sekunneiksi.
 
-**Kaava:** $\lambda T_{1/2} = \ln 2$, josta $\lambda = \dfrac{\ln 2}{T_{1/2}}$
+**Kaava:** $$\begin{aligned} N &= N_0 e^{-\lambda t} \\ \tfrac{N_0}{2} &= N_0 e^{-\lambda T_{1/2}} \\ \lambda T_{1/2} &= \ln 2 \\ \lambda &= \dfrac{\ln 2}{T_{1/2}} \end{aligned}$$
 
 **Muunnokset:** $1\,\text{d} = 24 \cdot 3600\,\text{s} = 86\,400\,\text{s}$, joten $T_{1/2} = 8{,}02 \cdot 86\,400\,\text{s} = 692\,928\,\text{s}$.
 
@@ -183,7 +183,7 @@ Hetkellä $2{,}0\,\text{h}$ se antaa $800\,\text{kBq} \cdot e^{-1} \approx 294\,
 
 **Periaate:** Aktiivisuus on hajoamisvakion ja ytimien määrän tulo, $A = \lambda N$. Hajoamisvakio saadaan puoliintumisajasta. Aktiivisuus on hajoamisia sekunnissa, joten hajoamisvakion on oltava yksikössä $\tfrac{1}{\text{s}}$.
 
-**Kaava:** $A = \lambda N$ ja $\lambda = \dfrac{\ln 2}{T_{1/2}}$, joten $N = \dfrac{A}{\lambda} = \dfrac{A\,T_{1/2}}{\ln 2}$
+**Kaava:** $$\begin{aligned} A &= \lambda N \\ \lambda &= \dfrac{\ln 2}{T_{1/2}} \\ N &= \dfrac{A}{\lambda} \\ &= \dfrac{A\,T_{1/2}}{\ln 2} \end{aligned}$$
 
 **Muunnokset:** $A = 37\,\text{kBq} = 37 \cdot 10^{3}\,\tfrac{1}{\text{s}}$ ja $T_{1/2} = 433 \cdot 365{,}25 \cdot 86\,400\,\text{s} = 1{,}36644 \cdot 10^{10}\,\text{s}$.
 
@@ -217,7 +217,7 @@ Hetkellä $2{,}0\,\text{h}$ se antaa $800\,\text{kBq} \cdot e^{-1} \approx 294\,
 
 **Periaate:** Jokaisella koboltti-60-ytimellä on sama massa. Siksi hajoamattoman koboltin massa on verrannollinen hajoamattomien ytimien määrään ja noudattaa samaa hajoamislakia kuin $N$.
 
-**Kaava:** $N = N_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$ ja $m \propto N$, joten $m = m_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$
+**Kaava:** $$\begin{aligned} N &= N_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \\ m &= N\,m_\text{ydin} \\ m_0 &= N_0\,m_\text{ydin} \\ m &= m_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \end{aligned}$$
 
 **Muunnokset:** Ei tarvita. Aika ja puoliintumisaika ovat vuosina, ja massa saadaan milligrammoina.
 
@@ -234,7 +234,7 @@ Hetkellä $2{,}0\,\text{h}$ se antaa $800\,\text{kBq} \cdot e^{-1} \approx 294\,
 
 **Periaate:** Mittari laskee sekä näytteen että taustan pulsseja. Vain näytteen osuus pienenee hajoamislain mukaan, joten tausta vähennetään ensin. Mittauspisteet vaihtelevat satunnaisesti. Siksi puoliintumisaika luetaan kahden pisteen avulla, jotka ovat kaukana toisistaan.
 
-**Kaava:** $\dfrac{R}{R_0} = \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, joten $T_{1/2} = \dfrac{t \ln 2}{\ln (R_0 / R)}$, missä $R_0$ ja $R$ ovat nettopulssimäärät
+**Kaava:** $$\begin{aligned} \dfrac{R}{R_0} &= \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \\ \ln\dfrac{R_0}{R} &= \dfrac{t}{T_{1/2}} \ln 2 \\ T_{1/2} &= \dfrac{t \ln 2}{\ln (R_0 / R)} \end{aligned}$$, missä $R_0$ ja $R$ ovat nettopulssimäärät
 
 **Muunnokset:** a) Nettopulssimäärät ovat $291 - 8 = 283$, $250 - 8 = 242$, $204 - 8 = 196$, $178 - 8 = 170$, $143 - 8 = 135$, $126 - 8 = 118$, $103 - 8 = 95$, $90 - 8 = 82$, $72 - 8 = 64$, $66 - 8 = 58$ ja $51 - 8 = 43$ ($t = 0, 40, \ldots, 400\,\text{s}$). Aika on sekunteina kuten vastauksessakin, joten muita muunnoksia ei tarvita.
 
@@ -251,7 +251,7 @@ Hetkellä $2{,}0\,\text{h}$ se antaa $800\,\text{kBq} \cdot e^{-1} \approx 294\,
 
 **Periaate:** Vain näytteen aiheuttama nettopulssimäärä pienenee hajoamislain mukaan. Tausta pysyy samana koko mittauksen ajan. Siksi se pitää vähentää, ennen kuin etsii puolittumista.
 
-**Kaava:** $R = R_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, joten kahden puoliintumisajan kohdalla $R = \tfrac{R_0}{4}$, missä $R_0$ ja $R$ ovat nettopulssimäärät
+**Kaava:** $$\begin{aligned} R &= R_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \\ R(2T_{1/2}) &= R_0 \left(\tfrac{1}{2}\right)^{2} \\ &= \dfrac{R_0}{4} \end{aligned}$$, missä $R_0$ ja $R$ ovat nettopulssimäärät
 
 **Muunnokset:** Nettopulssimäärät ovat $200 - 20 = 180$, $148 - 20 = 128$, $108 - 20 = 88$, $84 - 20 = 64$, $65 - 20 = 45$, $50 - 20 = 30$ ja $43 - 20 = 23$ ($t = 0, 30, \ldots, 180\,\text{s}$). Muita muunnoksia ei tarvita: aika on sekunteina kuten vastauksessakin.
 
@@ -316,7 +316,7 @@ Mittauksella on myös oma epävarmuutensa. Luotettava arvio vaatii monta näytet
 
 **Periaate:** Elävässä puussa hiili-14:n osuus pysyy vakiona. Kuolinhetkellä aktiivisuus grammaa kohti oli siis sama kuin elävässä puussa. Sen jälkeen aktiivisuus on pienentynyt hajoamislain mukaan. Kun osuus $\tfrac{A}{A_0}$ tunnetaan, kulunut aika ratkaistaan eksponentista logaritmin avulla.
 
-**Kaava:** $\dfrac{A}{A_0} = \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, joten $\ln \dfrac{A_0}{A} = \dfrac{t}{T_{1/2}} \ln 2$ ja $t = T_{1/2} \cdot \dfrac{\ln (A_0 / A)}{\ln 2}$
+**Kaava:** $$\begin{aligned} \dfrac{A}{A_0} &= \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \\ \ln\dfrac{A_0}{A} &= \dfrac{t}{T_{1/2}} \ln 2 \\ t &= T_{1/2} \cdot \dfrac{\ln (A_0 / A)}{\ln 2} \end{aligned}$$
 
 **Muunnokset:** Ei tarvita. Suhde $\tfrac{A_0}{A} = \tfrac{100\,\%}{38{,}0\,\%}$ on pelkkä luku, ja aika saadaan samassa yksikössä kuin puoliintumisaika eli vuosina.
 
@@ -333,7 +333,7 @@ Mittauksella on myös oma epävarmuutensa. Luotettava arvio vaatii monta näytet
 
 **Periaate:** Mittari laskee sekä näytteen että ympäristön säteilyä. Vain näytteen osuus on verrannollinen sen aktiivisuuteen ja pienenee hajoamislain mukaan. Siksi tausta vähennetään ensin. Taustan oletetaan pysyvän samana koko mittauksen ajan.
 
-**Kaava:** $\dfrac{R_1}{R_0} = \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, joten $\ln \dfrac{R_0}{R_1} = \dfrac{t}{T_{1/2}} \ln 2$ ja $T_{1/2} = \dfrac{t \ln 2}{\ln (R_0 / R_1)}$, missä $R_0$ ja $R_1$ ovat näytteen nettopulssitaajuudet
+**Kaava:** $$\begin{aligned} \dfrac{R_1}{R_0} &= \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \\ \ln\dfrac{R_0}{R_1} &= \dfrac{t}{T_{1/2}} \ln 2 \\ T_{1/2} &= \dfrac{t \ln 2}{\ln (R_0 / R_1)} \end{aligned}$$, missä $R_0$ ja $R_1$ ovat näytteen nettopulssitaajuudet
 
 **Muunnokset:** Yksikkömuunnoksia ei ole. Pulssitaajuuksien suhde on pelkkä luku, ja aika on minuutteina. Nettopulssitaajuudet: $R_0 = 820 - 30 = 790$ ja $R_1 = 230 - 30 = 200$ pulssia minuutissa.
 
@@ -350,7 +350,7 @@ Mittauksella on myös oma epävarmuutensa. Luotettava arvio vaatii monta näytet
 
 **Periaate:** Kumpikin isotooppi hajoaa omalla puoliintumisajallaan toisesta riippumatta, ja kummankin aktiivisuus noudattaa hajoamislakia. Kokonaisaktiivisuus on niiden summa. Alkuaktiivisuudet ovat yhtä suuret, joten $A_0$ supistuu osuudesta pois.
 
-**Kaava:** $A_\text{I} = A_0 \left(\tfrac{1}{2}\right)^{t/T_\text{I}}$ ja $A_\text{Cs} = A_0 \left(\tfrac{1}{2}\right)^{t/T_\text{Cs}}$, joten osuus on $p = \dfrac{A_\text{I}}{A_\text{I} + A_\text{Cs}} = \dfrac{\left(\tfrac{1}{2}\right)^{t/T_\text{I}}}{\left(\tfrac{1}{2}\right)^{t/T_\text{I}} + \left(\tfrac{1}{2}\right)^{t/T_\text{Cs}}}$
+**Kaava:** $$\begin{aligned} A_\text{I} &= A_0 \left(\tfrac{1}{2}\right)^{t/T_\text{I}} \\ A_\text{Cs} &= A_0 \left(\tfrac{1}{2}\right)^{t/T_\text{Cs}} \\ p &= \dfrac{A_\text{I}}{A_\text{I} + A_\text{Cs}} \\ &= \dfrac{\left(\tfrac{1}{2}\right)^{t/T_\text{I}}}{\left(\tfrac{1}{2}\right)^{t/T_\text{I}} + \left(\tfrac{1}{2}\right)^{t/T_\text{Cs}}} \end{aligned}$$, kun $A_0$ supistuu
 
 **Muunnokset:** $T_\text{Cs} = 30{,}1\,\text{a} = 30{,}1 \cdot 365{,}25\,\text{d} = 10\,994\,\text{d}$, jotta kaikki ajat ovat vuorokausina.
 
@@ -367,7 +367,7 @@ Mittauksella on myös oma epävarmuutensa. Luotettava arvio vaatii monta näytet
 
 **Periaate:** Kumpikin nuklidi hajoaa oman hajoamislakinsa mukaan, ja kokonaisaktiivisuus on niiden summa. Lyhytikäisen aktiivisuus on viimeisissä mittauksissa pudonnut lähes nollaan: hetkeen $96\,\text{h}$ mennessä on kulunut $\tfrac{96}{6{,}0} = 16$ puoliintumisaikaa, ja $\left(\tfrac{1}{2}\right)^{16} \approx 1{,}5 \cdot 10^{-5}$. Siksi myöhäiset pisteet kuvaavat vain pitkäikäistä nuklidia.
 
-**Kaava:** $\dfrac{A_2(t_2)}{A_2(t_1)} = \left(\tfrac{1}{2}\right)^{(t_2 - t_1)/T_2}$, joten $T_2 = \dfrac{(t_2 - t_1) \ln 2}{\ln \left(A_2(t_1) / A_2(t_2)\right)}$
+**Kaava:** $$\begin{aligned} A_2(t_1) &= A_2(0) \left(\tfrac{1}{2}\right)^{t_1/T_2} \\ A_2(t_2) &= A_2(0) \left(\tfrac{1}{2}\right)^{t_2/T_2} \\ \dfrac{A_2(t_2)}{A_2(t_1)} &= \left(\tfrac{1}{2}\right)^{(t_2 - t_1)/T_2} \\ \ln \dfrac{A_2(t_1)}{A_2(t_2)} &= \dfrac{t_2 - t_1}{T_2} \ln 2 \\ T_2 &= \dfrac{(t_2 - t_1) \ln 2}{\ln \left(A_2(t_1) / A_2(t_2)\right)} \end{aligned}$$
 
 **Muunnokset:** Pisteet $t_1 = 96\,\text{h}$ ja $t_2 = 168\,\text{h}$ ovat $\Delta t = 72\,\text{h}$ päässä toisistaan. Tulos muutetaan vuorokausiksi jakamalla luvulla $24\,\tfrac{\text{h}}{\text{d}}$.
 
@@ -404,7 +404,7 @@ $$. Alkuaktiivisuus $800\,\text{MBq}$ on puolittunut kaksi kertaa ($12\,\text{h}
 
 **Periaate:** Mitattu aktiivisuus pienenee hajoamislain mukaan efektiivisellä puoliintumisajalla, koska sekä hajoaminen että poistuminen vähentävät kehon jodia. Hajoamisvakiot lasketaan yhteen, ja kaava $\lambda = \tfrac{\ln 2}{T_{1/2}}$ antaa puoliintumisajat. Biologinen vakio saadaan, kun kokonaisvakiosta vähennetään fysikaalinen vakio.
 
-**Kaava:** $T_\text{eff} = \dfrac{t \ln 2}{\ln (A_0 / A)}$ ja $\lambda_\text{bio} = \lambda_\text{eff} - \lambda_\text{fys}$, eli $\dfrac{1}{T_\text{bio}} = \dfrac{1}{T_\text{eff}} - \dfrac{1}{T_\text{fys}}$
+**Kaava:** $$\begin{aligned} A &= A_0 \left(\tfrac{1}{2}\right)^{t/T_\text{eff}} \\ \ln \dfrac{A_0}{A} &= \dfrac{t}{T_\text{eff}} \ln 2 \\ T_\text{eff} &= \dfrac{t \ln 2}{\ln (A_0 / A)} \\ \lambda_\text{eff} &= \lambda_\text{fys} + \lambda_\text{bio} \\ \dfrac{\ln 2}{T_\text{eff}} &= \dfrac{\ln 2}{T_\text{fys}} + \dfrac{\ln 2}{T_\text{bio}} \\ \dfrac{1}{T_\text{bio}} &= \dfrac{1}{T_\text{eff}} - \dfrac{1}{T_\text{fys}} \end{aligned}$$
 
 **Muunnokset:** Kaikki ajat ovat vuorokausina, joten yksikkömuunnoksia ei tarvita. Kun yhtälö $\lambda = \tfrac{\ln 2}{T_{1/2}}$ jaetaan luvulla $\ln 2$, saadaan $\tfrac{1}{T_\text{bio}} = \tfrac{1}{T_\text{eff}} - \tfrac{1}{T_\text{fys}}$.
 
@@ -433,7 +433,7 @@ $$. Kohdan c) perusteella biologinen poistuminen pienentää kehon jodi-131-akti
 
 **Kuvaajan lukeminen:** Kuvan pisteistä luettiin pulssimäärät kohdista $t = 0$ ja $t = 200\,\text{s}$: noin $380$ ja $58$. Pisteet eivät ole tarkasti käyrällä satunnaisen vaihtelun vuoksi, joten luvut ovat vain likiarvoja, ja vastaus hyväksytään $2\,\%$:n tarkkuudella. Se erottaa tuloksen vielä taustaa vähentämättä saatavasta $73{,}7\,\text{s}$:sta.
 
-**Kaava:** $y_1 - B = (y_0 - B)\left(\tfrac{1}{2}\right)^{t_1/T_{1/2}}$, joten $T_{1/2} = \dfrac{t_1 \ln 2}{\ln\left(\dfrac{y_0 - B}{y_1 - B}\right)}$
+**Kaava:** $$\begin{aligned} y_1 - B &= (y_0 - B) \left(\tfrac{1}{2}\right)^{t_1/T_{1/2}} \\ \ln \dfrac{y_0 - B}{y_1 - B} &= \dfrac{t_1}{T_{1/2}} \ln 2 \\ T_{1/2} &= \dfrac{t_1 \ln 2}{\ln\left(\dfrac{y_0 - B}{y_1 - B}\right)} \end{aligned}$$
 
 **Muunnokset:** Aika on jo sekunteina, joten muunnoksia ei tarvita.
 

@@ -90,7 +90,12 @@
 
 **Principle:** Energy per unit mass gives the absorbed dose of the thyroid. The weighting factor of beta radiation is $1$, so the equivalent dose has the same numerical value. Only the thyroid receives a dose, so the effective dose is its equivalent dose multiplied by its weighting factor.
 
-**Formula:** $D_\text{T} = \dfrac{E}{m}$, $H_\text{T} = w_\text{R} D_\text{T}$ and $H_\text{E} = w_\text{T} H_\text{T}$, so $H_\text{E} = w_\text{T} w_\text{R} \dfrac{E}{m}$
+**Formula:** $$\begin{aligned} D_\text{T} &= \dfrac{E}{m} \\
+H_\text{T} &= w_\text{R} D_\text{T} \\
+H_\text{E} &= w_\text{T} H_\text{T} \\
+&= w_\text{T} w_\text{R} \dfrac{E}{m}
+\end{aligned}
+$$
 
 **Conversions:** $E = 0.60\,\text{mJ} = 0.60 \cdot 0.001\,\text{J} = 0.00060\,\text{J}$ and $m = 20\,\text{g} = 20 \cdot 0.001\,\text{kg} = 0.020\,\text{kg}$; $1\,\tfrac{\text{J}}{\text{kg}}$ is $1\,\text{Sv}$ when weighted.
 
@@ -107,7 +112,12 @@
 
 **Principle:** The dose rate of a point source decreases with the square of the distance. At the workplace the dose rate is constant, so the dose grows in direct proportion to time.
 
-**Formula:** $\dot{H}_2 = \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2$ and $H = \dot{H}_2 t$, so $t = \dfrac{H}{\dot{H}_1} \left(\dfrac{r_2}{r_1}\right)^2$
+**Formula:** $$\begin{aligned} \dot{H}_2 &= \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 \\
+H &= \dot{H}_2 t \\
+t &= \dfrac{H}{\dot{H}_2} \\
+&= \dfrac{H}{\dot{H}_1} \left(\dfrac{r_2}{r_1}\right)^2
+\end{aligned}
+$$
 
 **Conversions:** Not needed: the dose is in microsieverts and the dose rate in the unit $\mu\text{Sv/h}$, so the time comes out in hours.
 
@@ -164,7 +174,14 @@ $$ (in $\mu\text{Sv/h}$). Three centimetres of lead is a typical thickness for t
 
 **Principle:** In method A the dose rate is reduced by distance according to the inverse-square law, in method B by lead according to the half-value thickness. The working time is the same in both, so the doses are obtained by multiplying each dose rate by the same time.
 
-**Formula:** $H_\text{A} = \dot{H}_1 \left(\dfrac{r_1}{r_\text{A}}\right)^2 t$ and $H_\text{B} = \dot{H}_1 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} t$, so $H_\text{A} - H_\text{B} = \dot{H}_1 t \left[\left(\tfrac{r_1}{r_\text{A}}\right)^2 - \left(\tfrac{1}{2}\right)^{d/d_{1/2}}\right]$
+**Formula:** $$\begin{aligned} \dot{H}_\text{A} &= \dot{H}_1 \left(\dfrac{r_1}{r_\text{A}}\right)^2 \\
+\dot{H}_\text{B} &= \dot{H}_1 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
+H_\text{A} &= \dot{H}_\text{A} t \\
+H_\text{B} &= \dot{H}_\text{B} t \\
+H_\text{A} - H_\text{B} &= \left(\dot{H}_\text{A} - \dot{H}_\text{B}\right) t \\
+&= \dot{H}_1 t \left[\left(\tfrac{r_1}{r_\text{A}}\right)^2 - \left(\tfrac{1}{2}\right)^{d/d_{1/2}}\right]
+\end{aligned}
+$$
 
 **Conversions:** $t = 30\,\text{min} = 30 \cdot \tfrac{1}{60}\,\text{h} = 0.50\,\text{h}$
 
@@ -200,7 +217,13 @@ $$ (in $\mu\text{Sv/h}$). Three centimetres of lead is a typical thickness for t
 
 The effective doses are added together.
 
-**Formula:** $H_\text{E} = w_\text{T} w_{\text{R},\alpha} D_\text{lungs} + w_{\text{R},\gamma} D_\gamma$
+**Formula:** $$\begin{aligned} H_\text{T} &= w_{\text{R},\alpha} D_\text{lungs} \\
+H_{\text{E},\alpha} &= w_\text{T} H_\text{T} \\
+H_{\text{E},\gamma} &= w_{\text{R},\gamma} D_\gamma \\
+H_\text{E} &= H_{\text{E},\alpha} + H_{\text{E},\gamma} \\
+&= w_\text{T} w_{\text{R},\alpha} D_\text{lungs} + w_{\text{R},\gamma} D_\gamma
+\end{aligned}
+$$
 
 **Conversions:** Not needed: when the absorbed doses are in milligrays, the weighted doses come out in millisieverts.
 
@@ -390,7 +413,14 @@ $$, that is, above the reference level $300\,\tfrac{\text{Bq}}{\text{m}^3}$, so 
 240 \to 121 \to 60.5 \to 29.8\,\mu\text{Sv/h}
 $$: the dose rate halves every time the thickness increases by $4.0\,\text{cm}$ ($240 : 2 = 120 \approx 121$, $121 : 2 \approx 60.5$ and $60.5 : 2 \approx 30 \approx 29.8$). Therefore $d_{1/2} \approx 4.0\,\text{cm}$.
 
-**Formula:** $\dot{H} = \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 \left(\dfrac{1}{2}\right)^{d/d_{1/2}}$ and $H = \dot{H} t$, so $t = \dfrac{H}{\dot{H}}$
+**Formula:** $$\begin{aligned} \dot{H}_d &= \dot{H}_1 \left(\dfrac{1}{2}\right)^{d/d_{1/2}} \\
+\dot{H} &= \dot{H}_d \left(\dfrac{r_1}{r_2}\right)^2 \\
+&= \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 \left(\dfrac{1}{2}\right)^{d/d_{1/2}} \\
+H &= \dot{H} t \\
+t &= \dfrac{H}{\dot{H}} \\
+&= \dfrac{H}{\dot{H}_1} \left(\dfrac{r_2}{r_1}\right)^2 2^{d/d_{1/2}}
+\end{aligned}
+$$
 
 **Conversions:** Not needed: the thickness and the half-value thickness are in centimetres, the distances in metres and the dose in microsieverts.
 

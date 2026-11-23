@@ -568,11 +568,23 @@ $$. Energy is released because helium-4 is much higher in the graph than deuteri
 
 The same energy is obtained from the binding energies: the binding energy of a free neutron is zero, so $Q$ is the sum of the binding energies of the nuclei formed minus the binding energy of uranium. When the energy of one nucleus is known, the energy of the sample is obtained by multiplying it by the number of nuclei.
 
-**Formula:** a) $$\begin{aligned} Q &= (m_\text{U} + m_\text{n} - m_\text{Ba} - m_\text{Kr} \\
+**Formula:** a) $$\begin{aligned} &Q = (m_\text{initial} - m_\text{final})\,c^2 \\
 
-&- 3\,m_\text{n})\,c^2
+&m_\text{initial} = m_\text{U} + m_\text{n} \\
 
-\end{aligned}$$; b) $$
+&m_\text{final} = m_\text{Ba} + m_\text{Kr} \\
+
+&\quad + 3\,m_\text{n} \\
+
+&Q = (m_\text{U} - m_\text{Ba} \\
+
+&\quad - m_\text{Kr} - 2\,m_\text{n})\,c^2
+
+\end{aligned}
+
+$$
+
+b) $$
 
 \begin{aligned}
 
@@ -669,7 +681,63 @@ The energy corresponds to about $2.5$ tonnes of coal, when the heating value of 
 
 The same decrease in mass arises in reactions where the mass of four hydrogen atoms is greater than the mass of one helium atom, so the amount of hydrogen used up is obtained from the decrease in mass and the share that turns into energy.
 
-**Formula:** a) $\Delta m_\text{yr} = \dfrac{L\,t}{c^2}$; b) $f = \dfrac{4\,m_\text{H} - m({}^{4}\text{He})}{4\,m_\text{H}}$; c) $m_\text{hydrogen} = \dfrac{\Delta m_\text{yr}}{f}$; d) share $= \dfrac{10^{9} \cdot m_\text{hydrogen}}{0.70\,M}$
+**Formula:** a) $$\begin{aligned} &E = L\,t \\
+
+&E = \Delta m_\text{yr}\,c^2 \\
+
+&\Delta m_\text{yr} = \dfrac{E}{c^2} \\
+
+&= \dfrac{L\,t}{c^2}
+
+\end{aligned}
+
+$$
+
+b)
+
+$$
+
+\begin{aligned}
+
+&\Delta m = 4\,m_\text{H} - m({}^{4}\text{He}) \\
+
+&f = \dfrac{\Delta m}{4\,m_\text{H}} \\
+
+&= \dfrac{4\,m_\text{H} - m({}^{4}\text{He})}{4\,m_\text{H}}
+
+\end{aligned}
+
+$$
+
+c)
+
+$$
+
+\begin{aligned}
+
+&\Delta m_\text{yr} = f\,m_\text{hydrogen} \\
+
+&m_\text{hydrogen} = \dfrac{\Delta m_\text{yr}}{f}
+
+\end{aligned}
+
+$$
+
+d)
+
+$$
+
+\begin{aligned}
+
+&m_\text{stock} = 0.70\,M \\
+
+&\text{share} = \dfrac{10^{9} \cdot m_\text{hydrogen}}{m_\text{stock}} \\
+
+&= \dfrac{10^{9} \cdot m_\text{hydrogen}}{0.70\,M}
+
+\end{aligned}
+
+$$
 
 **Unit conversions:** $t = 365.25 \cdot 24 \cdot 3600\,\text{s} = 3.15576 \cdot 10^{7}\,\text{s}$ and $1\,\text{W} \cdot 1\,\text{s} = 1\,\text{J} = 1\,\text{kg} \cdot \tfrac{\text{m}^2}{\text{s}^2}$. The share $f$ is a ratio, so the atomic mass unit cancels.
 

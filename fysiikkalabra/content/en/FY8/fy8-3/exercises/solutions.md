@@ -22,7 +22,7 @@
 **Given:** wavelength $\lambda = 486\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Asked:** the energy $E$ of the photon in electron volts
 **Principle:** Light consists of photons, and the energy of one photon depends only on the wavelength of the light: the shorter the wavelength, the greater the energy.
-**Formula:** $E = hf = \dfrac{hc}{\lambda}$
+**Formula:** $$\begin{aligned} E &= hf \\ c &= f\lambda \\ f &= \frac{c}{\lambda} \\ E &= \frac{hc}{\lambda} \end{aligned}$$
 **Conversions:** $\lambda = 486\,\text{nm} = 486 \cdot 10^{-9}\,\text{m}$. Finally the joules are converted to electron volts by dividing by $1.602 \cdot 10^{-19}\,\text{J}$, because $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
 **Substitution:** The product $$
 \begin{aligned}
@@ -63,7 +63,7 @@ $$.
 **Given:** energy levels of the hydrogen atom $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, transition from level $n = 5$ to level $n = 2$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
 **Asked:** the wavelength $\lambda$ of the light in nanometres
 **Principle:** Energy is conserved: the energy of the atom decreases by the difference between the levels, and one photon, with energy $\tfrac{hc}{\lambda}$, carries it away.
-**Formula:** $\dfrac{hc}{\lambda} = E_5 - E_2$, so $\lambda = \dfrac{hc}{E_5 - E_2}$
+**Formula:** $$\begin{aligned} hf &= E_5 - E_2 \\ c &= f\lambda \\ \frac{hc}{\lambda} &= E_5 - E_2 \\ \lambda &= \frac{hc}{E_5 - E_2} \end{aligned}$$
 **Conversions:** The energy difference is calculated in electron volts and converted to joules by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$. Finally $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** The product $$
 \begin{aligned}
@@ -79,7 +79,7 @@ $$. $E_5 - E_2 = -\dfrac{13.6\,\text{eV}}{25} + \dfrac{13.6\,\text{eV}}{4} = 2.8
 **Given:** wavelength $\lambda = 410\,\text{nm}$, lower level $n_\text{l} = 2$, $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Asked:** the number $n$ of the upper level
 **Principle:** The energy of a photon is the difference between levels. When the energy of the photon and the energy of the lower level are known, the energy of the upper level is their sum, and from it the number of the level.
-**Formula:** $\dfrac{hc}{\lambda} = E_n - E_2$, so $E_n = E_2 + \dfrac{hc}{\lambda}$, and solving from the expression $E_n = -\dfrac{13.6\,\text{eV}}{n^2}$ gives $n = \sqrt{\dfrac{13.6\,\text{eV}}{-E_n}}$
+**Formula:** $$\begin{aligned} hf &= E_n - E_2 \\ c &= f\lambda \\ \frac{hc}{\lambda} &= E_n - E_2 \\ E_n &= E_2 + \frac{hc}{\lambda} \\ E_n &= -\frac{13.6\,\text{eV}}{n^2} \\ n &= \sqrt{\frac{13.6\,\text{eV}}{-E_n}} \end{aligned}$$
 **Conversions:** $\lambda = 410 \cdot 10^{-9}\,\text{m}$; the energy of the photon is converted to electron volts by dividing by $1.602 \cdot 10^{-19}\,\text{J}$.
 **Substitution:** The product $$
 \begin{aligned}
@@ -102,7 +102,7 @@ $$, which corresponds to the wavelength $410\,\text{nm}$. The violet line is the
 **Asked:** the wavelength $\lambda$ of the photon in nanometres
 **Principle:** Energy is conserved in all atoms as in hydrogen: the energy of the photon is the difference between the levels of the transition. The diagram replaces the expression of hydrogen.
 **Reading the graph:** Level $E_3$ is on the grid line $-3\,\text{eV}$ and level $E_2$ on the line $-5\,\text{eV}$, so $E_3 = -3.0\,\text{eV}$ and $E_2 = -5.0\,\text{eV}$. The energy difference is $E_3 - E_2 = -3.0\,\text{eV} - (-5.0\,\text{eV}) = 2.0\,\text{eV}$.
-**Formula:** $\dfrac{hc}{\lambda} = E_3 - E_2$, so $\lambda = \dfrac{hc}{E_3 - E_2}$
+**Formula:** $$\begin{aligned} hf &= E_3 - E_2 \\ c &= f\lambda \\ \frac{hc}{\lambda} &= E_3 - E_2 \\ \lambda &= \frac{hc}{E_3 - E_2} \end{aligned}$$
 **Conversions:** $E_3 - E_2 = 2.0\,\text{eV} = 2.0 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.204 \cdot 10^{-19}\,\text{J}$ and finally $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** The product $$
 \begin{aligned}
@@ -120,7 +120,7 @@ $$. $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.204 \cdot 10^
 **Principle:** Energy is conserved. Of the energy of the photon, the ionisation energy is used to free the electron, and the rest stays as the kinetic energy of the free electron.
 
 In ionisation the energy of the photon does not have to correspond to the difference of any pair of levels, as long as it is at least the ionisation energy.
-**Formula:** $\dfrac{hc}{\lambda} = E_\text{ion} + E_\text{k}$, so $E_\text{k} = \dfrac{hc}{\lambda} - E_\text{ion}$
+**Formula:** $$\begin{aligned} hf &= E_\text{ion} + E_\text{k} \\ c &= f\lambda \\ \frac{hc}{\lambda} &= E_\text{ion} + E_\text{k} \\ E_\text{k} &= \frac{hc}{\lambda} - E_\text{ion} \end{aligned}$$
 **Conversions:** $\lambda = 80.0 \cdot 10^{-9}\,\text{m}$; the energy of the photon is converted to electron volts by dividing by $1.602 \cdot 10^{-19}\,\text{J}$.
 **Substitution:** The product $$
 \begin{aligned}
@@ -148,7 +148,7 @@ We assume that each atom receives energy from one collision while in the ground 
 **Given:** energy levels of the helium ion $E_n = -\tfrac{54.4\,\text{eV}}{n^2}$, transition from level $n = 4$ to level $n = 3$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Asked:** the wavelength $\lambda$ of the line in nanometres
 **Principle:** The ion has one electron, so its energy is quantised in the same way as in hydrogen, only the energies are greater. Energy is conserved: the energy of the photon is the difference between the levels.
-**Formula:** $\dfrac{hc}{\lambda} = E_4 - E_3$, so $\lambda = \dfrac{hc}{E_4 - E_3}$
+**Formula:** $$\begin{aligned} hf &= E_4 - E_3 \\ c &= f\lambda \\ \frac{hc}{\lambda} &= E_4 - E_3 \\ \lambda &= \frac{hc}{E_4 - E_3} \end{aligned}$$
 **Conversions:** The energy difference is converted to joules by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$, and finally $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** The product $$
 \begin{aligned}
@@ -187,7 +187,7 @@ The transition $2 \to 1$ also ends in the ground state, but its energy differenc
 **Given:** the transitions end on level $n = 1$, $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Asked:** the longest wavelength $\lambda_\text{max}$ of the Lyman series in nanometres
 **Principle:** The smaller the energy of the photon, the longer the wavelength. Of the transitions ending in the ground state, the smallest energy difference is from the nearest level, in the transition $n = 2 \to n = 1$.
-**Formula:** $\dfrac{hc}{\lambda} = E_2 - E_1$, so $\lambda_\text{max} = \dfrac{hc}{E_2 - E_1}$
+**Formula:** $$\begin{aligned} hf &= E_2 - E_1 \\ c &= f\lambda_\text{max} \\ \frac{hc}{\lambda_\text{max}} &= E_2 - E_1 \\ \lambda_\text{max} &= \frac{hc}{E_2 - E_1} \end{aligned}$$
 **Conversions:** $E_2 - E_1$ is calculated in electron volts and converted to joules by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$. Finally $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** The product $$
 \begin{aligned}
@@ -216,7 +216,7 @@ $$. $E_2 - E_1 = -\dfrac{13.6\,\text{eV}}{4} + 13.6\,\text{eV} = 10.2\,\text{eV}
 
 Because of measurement uncertainty the points do not usually lie exactly on a straight line, so a line is fitted and the slope is read from the line, not from two neighbouring points.
 **Reading the graph:** The frequencies $f = \tfrac{c}{\lambda}$ are $456.5$; $616.7$; $690.0$ and $730.9\,\text{THz}$ at $\tfrac{1}{n^2} = 0.111$; $0.0625$; $0.0400$ and $0.0278$. The line fitted to the points passes, within the measured range, through the points $(0.0300;\ 723.3\,\text{THz})$ and $(0.1100;\ 460.2\,\text{THz})$, so the slope is $k = \dfrac{460.2\,\text{THz} - 723.3\,\text{THz}}{0.1100 - 0.0300} = -3289\,\text{THz}$.
-**Formula:** $k = -\dfrac{E_\text{ion}}{h}$, so $E_\text{ion} = -h k$
+**Formula:** $$\begin{aligned} hf &= E_n - E_2 \\ E_n &= -\frac{E_\text{ion}}{n^2} \\ f &= \frac{E_\text{ion}}{4h} - \frac{E_\text{ion}}{h} \cdot \frac{1}{n^2} \\ k &= -\frac{E_\text{ion}}{h} \\ E_\text{ion} &= -hk \end{aligned}$$
 **Conversions:** $k = -3289\,\text{THz} = -3.289 \cdot 10^{15}\,\text{Hz}$, and joules are converted to electron volts by dividing by $1.602 \cdot 10^{-19}\,\text{J}$.
 **Substitution:** $$
 \begin{aligned}
@@ -237,7 +237,7 @@ The result is the same as the ionisation energy of hydrogen from the ground stat
 **Asked:** the number of photons that the atom in the ground state absorbs
 **Principle:** An atom absorbs a photon only if the energy of the photon is exactly the difference between the energies of two levels. An atom in the ground state can rise only to level $E_2$, $E_3$ or $E_4$, so the differences to compare are those from the ground state upwards.
 **Reading the graph:** The levels are $E_1 = -8.0\,\text{eV}$, $E_2 = -5.0\,\text{eV}$, $E_3 = -3.0\,\text{eV}$ and $E_4 = -2.0\,\text{eV}$. The differences from the ground state are $E_2 - E_1 = 3.0\,\text{eV}$, $E_3 - E_1 = 5.0\,\text{eV}$ and $E_4 - E_1 = 6.0\,\text{eV}$. Ionisation would need $0 - E_1 = 8.0\,\text{eV}$.
-**Formula:** $E = \dfrac{hc}{\lambda}$
+**Formula:** $$\begin{aligned} E &= hf \\ c &= f\lambda \\ f &= \frac{c}{\lambda} \\ E &= \frac{hc}{\lambda} \end{aligned}$$
 **Conversions:** $\lambda = 300 \cdot 10^{-9}\,\text{m}$ etc., and joules are converted to electron volts by dividing by $1.602 \cdot 10^{-19}\,\text{J}$.
 **Substitution:** The product $$
 \begin{aligned}
@@ -306,7 +306,7 @@ The same final level does not make the wavelengths the same, because the photon 
 **Given:** a table of lines of hydrogen from NIST; $1\,\text{Å} = 0.1\,\text{nm}$; $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$. The choice is yours; as an example, the visible lines whose air wavelengths on 16 November 2026 were $6562.8518\,\text{Å}$ (red) and $4861.3615\,\text{Å}$ (blue-green).
 **Asked:** a) the wavelengths $\lambda$ in nanometres, b) the photon energies $E$ in electronvolts, c) the energy differences $\Delta E_{3 \to 2}$ and $\Delta E_{4 \to 2}$ in electronvolts, d) matching the lines to transitions and explaining the line spectrum. The box takes $\Delta E_{3 \to 2}$ in $\text{eV}$.
 **Principle:** The energy of an atom is quantised, and a photon is created when an electron moves from a higher level to a lower one. Energy is conserved, so the photon's energy is the difference of the levels, $E = E_\text{u} - E_\text{l}$, and also $E = \tfrac{hc}{\lambda}$. So the measured wavelength and the level model can be compared through the same energy.
-**Formula:** $\lambda = \lambda_\text{Å} \cdot 0.1\,\tfrac{\text{nm}}{\text{Å}}$, $E = \dfrac{hc}{\lambda}$ and $\Delta E = E_\text{u} - E_\text{l} = 13.6\,\text{eV} \cdot \left(\dfrac{1}{n_\text{l}^2} - \dfrac{1}{n_\text{u}^2}\right)$
+**Formula:** $\lambda = \lambda_\text{Å} \cdot 0.1\,\tfrac{\text{nm}}{\text{Å}}$, $E = hf$ and $c = f\lambda$, so $E = \dfrac{hc}{\lambda}$ and $\Delta E = E_\text{u} - E_\text{l} = 13.6\,\text{eV} \cdot \left(\dfrac{1}{n_\text{l}^2} - \dfrac{1}{n_\text{u}^2}\right)$
 **Conversions:** $6562.8518\,\text{Å} = 6562.8518 \cdot 0.1\,\text{nm} = 656.3\,\text{nm}$ and $4861.3615\,\text{Å} = 486.1\,\text{nm}$. The photon energy is converted from joules to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\text{J/eV}$.
 **Substitution:** Part a) is in the conversions. Part b), the red line:
 
@@ -344,7 +344,7 @@ If you choose other lines of the table, for example $434.0\,\text{nm}$, they mat
 **Principle:** The energy of the photon of each line is the difference between the energies of the initial and final levels, $\tfrac{hc}{\lambda} = E_\text{u} - E_m$, where $m$ is the common final level. We try a final level: the upper level is $E_\text{u} = E_m + \tfrac{hc}{\lambda}$, and from it $n_\text{u} = \sqrt{\tfrac{13.6\,\text{eV}}{-E_\text{u}}}$, which must be an integer.
 
 Ionisation from state $m$ requires the energy $0 - E_m$, and the energy of the photon is $hf$.
-**Formula:** $\dfrac{hc}{\lambda} = E_\text{u} - E_m$ and for ionisation $h f_\text{ion} = 0 - E_m$, so $f_\text{ion} = \dfrac{13.6\,\text{eV}}{m^2 h}$
+**Formula:** $$\begin{aligned} hf &= E_\text{u} - E_m \\ c &= f\lambda \\ \frac{hc}{\lambda} &= E_\text{u} - E_m \\ hf_\text{ion} &= 0 - E_m \\ E_m &= -\frac{13.6\,\text{eV}}{m^2} \\ f_\text{ion} &= \frac{13.6\,\text{eV}}{m^2 h} \end{aligned}$$
 **Conversions:** The energies of the photons are calculated in joules and converted to electron volts by dividing by $1.602 \cdot 10^{-19}\,\text{J}$. The ionisation energy is converted to joules by multiplying by $1.602 \cdot 10^{-19}\,\text{J}$, and finally $1\,\text{THz} = 10^{12}\,\text{Hz}$.
 **Substitution:** The product $hc = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. The energies of the photons are $\tfrac{hc}{\lambda} = 0.6610\,\text{eV}$, $0.9672\,\text{eV}$ and $1.1335\,\text{eV}$.
 
@@ -367,7 +367,7 @@ The line $4 \to 3$ is the longest of the series and has the smallest energy, $0.
 Once the lines have been identified, the highest initial level is the level to which the atoms were excited; the photon raised the atom from the ground state to this level, so the energy of the photon of the source is the difference between its energy and that of the ground state.
 
 If the excitation level were higher, the gas would also emit lines starting from it.
-**Formula:** $\dfrac{hc}{\lambda_\text{L}} = E_\text{u} - E_1$, so $\lambda_\text{L} = \dfrac{hc}{E_\text{u} - E_1}$
+**Formula:** $$\begin{aligned} hf &= E_\text{u} - E_1 \\ c &= f\lambda_\text{L} \\ \frac{hc}{\lambda_\text{L}} &= E_\text{u} - E_1 \\ \lambda_\text{L} &= \frac{hc}{E_\text{u} - E_1} \end{aligned}$$
 **Conversions:** The energies of the photons are converted from joules to electron volts by dividing by $1.602 \cdot 10^{-19}\,\text{J}$; finally $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** The product $hc = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. The energies of the lines are $12.09$; $10.20$; $2.551$; $1.889$ and $0.661\,\text{eV}$. They correspond to the differences between pairs of levels $E_3 - E_1 = 12.09\,\text{eV}$, $E_2 - E_1 = 10.20\,\text{eV}$, $E_4 - E_2 = 2.55\,\text{eV}$, $E_3 - E_2 = 1.889\,\text{eV}$ and $E_4 - E_3 = 0.661\,\text{eV}$. So the lines are the transitions $3 \to 1$, $2 \to 1$, $4 \to 2$, $3 \to 2$ and $4 \to 3$.
 

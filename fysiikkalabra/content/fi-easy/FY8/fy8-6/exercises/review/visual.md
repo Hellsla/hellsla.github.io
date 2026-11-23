@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5ef1aa9cbcaed9b2
+CONTENT-HASH: cea2d4f0fbef37cb
+SCOPE: delta numbers,reflow,wording from 5ef1aa9cbcaed9b2 base 4b05399
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] L2-09 Järkevyys — last sentence is hard to follow; earlier Minor items remain (for science: check the 539 nm vs 517 nm logic).
+- [Minor] open-solution captures exist only at 1280 px; check_layout covers 360 px. Rows are short, no clipping expected.
 
 ## Checked
-- Delta round 1: solutions.md paragraph cuts only (no diff against the committed text).
-- No exercises/review/shots exist; used the lesson folder's captures of the same exercise pages: fy8-6-open-exercises-L2-1280-15 and -16 (tasks 6-17 and 6-18, solutions open).
-- Paragraph cuts and aligned chains render cleanly, units upright, decimal comma correct, figure with ticks and units, no clipping.
-- Not opened: 390 px captures of these tasks (none exist).
+- Hash run at start and end: cea2d4f0fbef37cb, unchanged.
+- Delta: L3-04 Kaava (open-exercises-L3-1280-6): "eU_k ≈ hf" renders correctly, aligned rows, fractions and units clean, nothing clipped.
+- L2-06 changed sentence is prose with LaTeX numbers and units ($0{,}16\,\text{V}$, $\tfrac{hf}{e}$); the sentence reads correctly in Finnish. Context captures L2-1280-11 and -13, L3-1280-5 opened: layout intact.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 7e098a62279429a4
-SCOPE: delta added-exercise from 9b35050b83c355e9 base 110ed2029320
+CONTENT-HASH: 07f5a40aa7a1ccdb
+SCOPE: delta md-paragraphs,numbers,reflow,typography,wording from 7e098a62279429a4 base 64d4935
 
 ## Blocking
-None.
 
 ## Polish
-- solutions.md fy8-16-L3-06 c) — still two questions in one part (why the estimate is uncertain; why v = cz fails). Optional: split into c) and d).
-- solutions.md fy8-16-L3-06 Answer line — "4.2·10^2 Mpc, about 416 Mpc": the two forms side by side may confuse; keep only 4.2·10^2 Mpc (or 420 Mpc) as the answer and 416.4 as the working value.
-- fy8-16-L2-09 — a) repeats the redshift step of L2-01 and L1-04; acceptable, but keep it out of the core path if the core set grows.
+
+- solutions.md (redshift, Hubble time, CMB photon energy and similar) — the Formula still reads "X and" followed straight by an aligned block, with no verb before the display. Fix: end the lead-in with a colon ("$E = hf$, from which:").
+- solutions.md (L2 helium fraction) — the nucleon mass m is introduced inside the Formula line; it could sit in the Principle.
 
 ## Checked
-- Significant-figure fix: the answer is now justified by the given 0.10 c (two figures) and H0 read from the grid point (three figures); the earlier claim that b) has three figures is gone, and the rule is consistent with how the working value 416.4 is carried.
-- z = 3.00 sentence: now says the approximation "has broken down" and that the result "cannot be taken as the speed of the galaxy" instead of "impossible as a speed"; this matches the task's "about z < 0.10" and fixes my earlier note that it fails gradually.
-- Reasonableness check still correct: 72.0 · 416.4 = 2.998·10^4 km/s; 21 000 km/s gives z = 0.070 < 0.10; 416 Mpc > 300 Mpc axis, as it should be.
-- No change to task text, figure or numbers; L2-09 and the figure hubble-t checks from the earlier pass still hold.
-- Captures: none opened (a text-only change in solutions.md; no layout change beyond the same line format).
+
+- The diff only changes \frac to \dfrac in the Formula rows. Numbers, symbols, order of steps, answers and tolerances are unchanged.
+- The mixed \frac and \dfrac polish item from the last round is fixed.
+- The derivations still run from basic laws to the derived formula (E = hf with f = c/λ; v = cz and v = H0 d; t = d/v; ratio of H0 expressions), each simplified to the end before substitution.
+- The \dfrac fractions are larger in aligned rows, so row legibility at 360 px is a visual-review item and not a pedagogy one.
+- No new exercise or figure content, so the level mix and the hubble-t figure checks from the earlier pass still hold.

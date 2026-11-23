@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 15261a26498e83ce
-SCOPE: delta answers,md-paragraphs,numbers,typography from 0e64d48ba9795111 base 64d4935c5ce5
+CONTENT-HASH: fb46aec0512cf1e0
+SCOPE: delta numbers,reflow,typography from 15261a26498e83ce base 4b05399
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md (fy8-12-L1-07, Järkevyys) — the edited sentence now has $\text{min}^{-1}$ for the rates per minute but keeps $\tfrac{1}{\text{s}}$ for the rates per second ($27$, $1{,}5$). The values are correct, but the two notations sit in one sentence. For consistency it could use $\text{s}^{-1}$.
-- exercises/solutions.md (L2-09 / tuntematon solutions) — these keep "pulssia/min" where L1-07 and L3-02 now use $\text{min}^{-1}$. This is physically equivalent and not an error. Optionally unify the notation.
+- exercises/solutions.md:76 (L1-05) — "$E = hf$, josta:" is followed by $f = c/\lambda$, which does not follow from $E = hf$: it is the wave equation, a second basic law. The chain is right. Fix: "$E = hf$ ja $f = c/\lambda$, joten $E = hc/\lambda$ ja $\lambda = hc/E$".
+- exercises/solutions.md:143 (L2-02) and :472 (L3-05) — the same "josta" problem. $I_2 = I_1(\tfrac12)^{\dots}$ and $T = (\tfrac12)^{d/d_{1/2}}$, $R = AT\eta$ are further relations, not consequences of the first row. Fix: write "ja" or "sekä" for the added laws.
+- exercises/solutions.md:249 (L3-02) — the required net rate ($30\,\text{min}^{-1}$) is written as $R_\text{t}$ in $(\tfrac12)^{d/d_{1/2}} = R_\text{t}/(R_0 - R_\text{t})$. This is only correct because the requirement happens to equal the background. The text before 8g had the same issue. Fix: a symbol of its own, e.g. $R_\text{s}$.
 
 ## Checked
-- The hash was 15261a26498e83ce at the start and the end. Scope from the version I passed (0e64d48ba9795111, commit 64d4935c5ce5): categories answers, md-paragraphs, numbers, typography, none of them full for science.
-- I compared the whole diff word for word after mapping $\tfrac{1}{\text{min}}$ to $\text{min}^{-1}$ and collapsing whitespace. The old and new texts are identical. The only changes are the unit notation and blank lines or paragraph splits, so no number, formula, sign or claim changed.
-- exercises.json L1-07 (line 80) and L2-09 (line 339) now have the unit `min⁻¹`. It is the same dimension as 1/min, so it is a correct unit for a count rate. The task text of L1-07 asks for the same unit.
-- I recomputed the answers myself. L1-07: $1215/0{,}75\,\text{min} - 90\,\text{min}^{-1} = 1530\,\text{min}^{-1}$, which matches the stored 1530. L2-09: $800\cdot(1/2)^{30/12} = 141{,}42$, which matches the stored 141,4. Their tolerances are unchanged.
-- I also recomputed the solutions touched by the reflow: L3-02 gives $34{,}99\,\text{mm}$, so 35 mm. L1-01 gives $18{,}90\,\%$. The tuntematon thickness gives $67{,}73\,\text{mm}$, rounded up to 68 mm on the safe side. All three agree with the solutions.
-- answers.py is unchanged, and its comments agree with the new unit.
-- The paragraph splits in L3 model answers (shield comparison, beta/gamma identification, RIVM a/c/d, attenuation data d, photon interactions) keep each causal step intact and in order.
+- The hash was fb46aec0512cf1e0 at the start and the end. Scope: delta on solutions.md only.
+- The packet's diff view flattens the aligned blocks, so I read the Kaava blocks on disk. Each is a proper `aligned` block with one equation per row.
+- A script compared the file with the pre-8g commit e16119cde8. Every changed line lies inside a Kaava step. No Annettu, Muunnokset, Sijoitus, Vastaus or Järkevyys line changed, and exercises.json and answers.py are unchanged.
+- I checked each new derivation step. The ratio form $\tfrac{N_0 - N_\text{t}}{N - N_\text{t}} = 2^{d/d_{1/2}}$, its logarithm and $d_{1/2} = \tfrac{d \ln 2}{\ln(\dots)}$ are correct (L2-03, L2-06, L3-04). So are the equal-attenuation rearrangement (L2-04), the net rate (L2-01, L1-07), the two-shield product (L2-02), the activity $A = R/(T\eta)$ (L3-05) and $d = d_{1/2}\ln(R_0/R)/\ln 2$ (L3-07).
+- Every Kaava now starts from the basic law and ends in the symbolic form that is substituted.
+- I recomputed L1-05: $\lambda = hc/E = 98{,}4\,\text{nm}$ for $12{,}6\,\text{eV}$. L3-02 gives $d_{1/2} = 5{,}55\,\text{mm}$ and $d = 34{,}99\,\text{mm}$. Both are unchanged and agree with the solutions.

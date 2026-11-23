@@ -5,7 +5,7 @@
 **Find:** the transitions corresponding to the colours and the wavelength $\lambda_3$ of the third transition
 **Principle:** When an atom moves from an upper energy level to a lower one, it emits a photon whose energy is the difference of the levels. We calculate the photon energy of each colour and compare it with the differences of the levels. The third possible transition is from the second excited state directly to the ground state.
 **Reading the graph:** From the figure we read the ground state $0$, the first excited state $1.97\,\text{eV}$ and the second excited state $4.19\,\text{eV}$. The differences of the levels are $4.19\,\text{eV} - 1.97\,\text{eV} = 2.22\,\text{eV}$, $1.97\,\text{eV} - 0 = 1.97\,\text{eV}$ and $4.19\,\text{eV} - 0 = 4.19\,\text{eV}$.
-**Formula:** $E = hf = \dfrac{hc}{\lambda}$, so for the third transition $\lambda_3 = \dfrac{hc}{E_3}$
+**Formula:** $$\begin{aligned} E &= hf \\ c &= f\lambda \\ f &= \dfrac{c}{\lambda} \\ E &= \dfrac{hc}{\lambda} \\ \lambda_3 &= \dfrac{hc}{E_3} \end{aligned}$$
 **Conversions:** $\lambda_\text{v} = 557.7 \cdot 10^{-9}\,\text{m}$ and $\lambda_\text{p} = 630.0 \cdot 10^{-9}\,\text{m}$. The electronvolts are converted by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$: $E_3 = 4.19 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 6.712 \cdot 10^{-19}\,\text{J}$.
 **Substitution:** Green: $$\begin{aligned} E_\text{v} &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{557.7 \cdot 10^{-9}\,\text{m}} \\ &= 3.562 \cdot 10^{-19}\,\text{J} \\ &= \dfrac{3.562 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} \\ &= 2.22\,\text{eV} \end{aligned}$$, so green light is produced in the transition from the second excited state to the lower one. Red: in the same way $E_\text{p} = 3.153 \cdot 10^{-19}\,\text{J} = 1.97\,\text{eV}$, so red light is produced in the transition from the first excited state to the ground state. Third transition: $$\begin{aligned} \lambda_3 &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{6.712 \cdot 10^{-19}\,\text{J}} \\ &= 2.959 \cdot 10^{-7}\,\text{m} \end{aligned}$$
 **Answer:** Green light is produced in the transition from the second excited state to the lower one and red light from the first excited state to the ground state.
@@ -44,7 +44,7 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
 **Given:** band gap of silicon $E = 1.12\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$ and the wavelength of the claim $1500\,\text{nm}$
 **Find:** the longest detectable wavelength $\lambda_\text{max}$ and an evaluation of the claim
 **Principle:** One photon raises one electron to the conduction band if the energy of the photon is at least $1.12\,\text{eV}$. The energy of a photon decreases as the wavelength increases, so the longest detectable wavelength corresponds to exactly this energy. The intensity of the radiation tells the number of photons, not the energy of a single photon.
-**Formula:** $E = \dfrac{hc}{\lambda}$, so $\lambda_\text{max} = \dfrac{hc}{E}$
+**Formula:** $$\begin{aligned} E &= hf \\ c &= f\lambda \\ E &= \dfrac{hc}{\lambda} \\ \lambda_\text{max} &= \dfrac{hc}{E} \end{aligned}$$
 **Conversions:** $E = 1.12 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.794 \cdot 10^{-19}\,\text{J}$
 **Substitution:** $$\begin{aligned} \lambda_\text{max} &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{1.794 \cdot 10^{-19}\,\text{J}} \\ &= 1.107 \cdot 10^{-6}\,\text{m} \end{aligned}$$. For the radiation of the claim $$\begin{aligned} E &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{1500 \cdot 10^{-9}\,\text{m}} \\ &= 1.324 \cdot 10^{-19}\,\text{J} \\ &= \dfrac{1.324 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} \\ &= 0.83\,\text{eV} \end{aligned}$$
 **Answer:** The sensor detects wavelengths up to $\lambda_\text{max} \approx 1110\,\text{nm}$, so it detects the green and red light of the aurora.
@@ -76,7 +76,7 @@ More intense radiation brings more photons to the sensor, but none of them raise
 The combined mass of the reaction products is smaller than that of the original nucleus, and the difference of the masses corresponds to the energy released.
 
 Atomic masses include the electrons: a plutonium atom has $94$ electrons, a uranium atom $92$ and a helium atom $2$, so the masses of the electrons cancel.
-**Formula:** ${}^{238}_{94}\text{Pu} \rightarrow {}^{234}_{92}\text{U} + {}^{4}_{2}\text{He}$ and $Q = (m_\text{Pu} - m_\text{U} - m_\text{He})\,c^2$
+**Formula:** ${}^{238}_{94}\text{Pu} \rightarrow {}^{234}_{92}\text{U} + {}^{4}_{2}\text{He}$ and $$\begin{aligned} Q &= \Delta m\,c^2 \\ \Delta m &= m_\text{Pu} - m_\text{U} - m_\text{He} \\ Q &= (m_\text{Pu} - m_\text{U} - m_\text{He})\,c^2 \end{aligned}$$
 **Conversions:** The mass defect is converted to energy by substituting $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$.
 **Substitution:** $$\begin{aligned} &m_\text{Pu} - m_\text{U} - m_\text{He} \\ &= 238.049560\,\text{u} - 234.040952\,\text{u} \\ &- 4.002603\,\text{u} \\ &= 0.006005\,\text{u} \end{aligned}$$, so $Q = 0.006005 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 5.594\,\text{MeV}$
 **Answer:** ${}^{238}_{94}\text{Pu} \rightarrow {}^{234}_{92}\text{U} + {}^{4}_{2}\text{He}$, and one decay releases $Q \approx 5.59\,\text{MeV}$. The mass defect $0.006005\,\text{u}$ and the conversion factor $931.5\,\tfrac{\text{MeV}}{c^2}$ both have four significant figures, so an answer with three significant figures is certainly justified; the unrounded value $5.594\,\text{MeV}$ is used in the later parts.
@@ -86,7 +86,7 @@ Atomic masses include the electrons: a plutonium atom has $94$ electrons, a uran
 **Given:** thermal power $P = 2000\,\text{W}$, $Q = 5.594\,\text{MeV}$ of part a, $T_{1/2} = 87.7\,\text{a}$, $m_\text{Pu} = 238.049560\,\text{u}$ and $4.8\,\text{kg}$ of plutonium dioxide
 **Find:** the mass $m$ of plutonium-238 and its fraction of the plutonium of the generator
 **Principle:** Every decay produces heat $Q$, so the activity, that is, the decays per second, is the power divided by the energy of one decay. The activity is proportional to the number of undecayed nuclei. The mass is obtained from the number of nuclei using the mass of one atom.
-**Formula:** $A = \dfrac{P}{Q}$, $A = \lambda N$, where $\lambda = \dfrac{\ln 2}{T_{1/2}}$, so $N = \dfrac{A}{\lambda}$ and $m = N m_\text{Pu}$
+**Formula:** $$\begin{aligned} P &= AQ \\ A &= \dfrac{P}{Q} \\ A &= \lambda N \\ \lambda &= \dfrac{\ln 2}{T_{1/2}} \\ N &= \dfrac{A}{\lambda} \\ m &= N m_\text{Pu} \end{aligned}$$
 **Conversions:** $Q = 5.594 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 8.961 \cdot 10^{-13}\,\text{J}$. $T_{1/2} = 87.7 \cdot 365.25 \cdot 24 \cdot 3600\,\text{s} = 2.768 \cdot 10^{9}\,\text{s}$. $$\begin{aligned} m_\text{Pu} &= 238.049560 \\ &\cdot 1.66054 \cdot 10^{-27}\,\text{kg} \\ &= 3.953 \cdot 10^{-25}\,\text{kg} \end{aligned}$$.
 **Substitution:** $A = \dfrac{2000\,\text{W}}{8.961 \cdot 10^{-13}\,\text{J}} = 2.232 \cdot 10^{15}\,\tfrac{1}{\text{s}}$, $\lambda = \dfrac{0.6931}{2.768 \cdot 10^{9}\,\text{s}} = 2.505 \cdot 10^{-10}\,\tfrac{1}{\text{s}}$, $N = \dfrac{2.232 \cdot 10^{15}\,\tfrac{1}{\text{s}}}{2.505 \cdot 10^{-10}\,\tfrac{1}{\text{s}}} = 8.911 \cdot 10^{24}$ and $m = 8.911 \cdot 10^{24} \cdot 3.953 \cdot 10^{-25}\,\text{kg} = 3.52\,\text{kg}$. The plutonium in the plutonium dioxide is $4.8\,\text{kg} \cdot \dfrac{238}{238 + 2 \cdot 16} = 4.23\,\text{kg}$, so the fraction is $3.52\,\text{kg} : 4.23\,\text{kg} = 0.83$.
 **Answer:** The generator must contain about $m \approx 3.5\,\text{kg}$ of plutonium-238, two significant figures like the mass of the fuel and the power. This is about $83\,\%$ of the plutonium of the generator.
@@ -127,7 +127,7 @@ Plutonium is, however, very dangerous if it gets into the body, for example as i
 The activity is decays per second, and the half-life $87.7\,\text{a}$ is so long that the activity stays approximately constant for a year. The absorbed dose is energy per mass.
 
 The radiation weighting factor of alpha radiation gives the equivalent dose of the lungs, and because only the lungs are irradiated, the effective dose is obtained with the tissue weighting factor of the lungs.
-**Formula:** $E = AtQ$, $D = \dfrac{E}{m}$, $H_\text{T} = w_\text{R} D$ and $H_\text{E} = w_\text{T} H_\text{T}$
+**Formula:** $$\begin{aligned} E &= NQ \\ N &= At \\ E &= AtQ \\ D &= \dfrac{E}{m} \\ H_\text{T} &= w_\text{R} D \\ H_\text{E} &= w_\text{T} H_\text{T} \end{aligned}$$
 **Conversions:** $t = 365.25 \cdot 24 \cdot 3600\,\text{s} = 3.156 \cdot 10^{7}\,\text{s}$
 **Substitution:** $$\begin{aligned} E &= 10\,\tfrac{1}{\text{s}} \cdot 3.156 \cdot 10^{7}\,\text{s} \\ &\cdot 8.961 \cdot 10^{-13}\,\text{J} \\ &= 2.83 \cdot 10^{-4}\,\text{J} \end{aligned}$$, $D = \dfrac{2.83 \cdot 10^{-4}\,\text{J}}{1.2\,\text{kg}} = 2.36 \cdot 10^{-4}\,\text{Gy}$, $H_\text{T} = 20 \cdot 2.36 \cdot 10^{-4}\,\text{Gy} = 4.71 \cdot 10^{-3}\,\text{Sv}$ and $H_\text{E} = 0.12 \cdot 4.71 \cdot 10^{-3}\,\text{Sv} = 5.66 \cdot 10^{-4}\,\text{Sv}$
 **Answer:** The effective dose would be about $H_\text{E} \approx 0.57\,\text{mSv}$ a year, two significant figures like the mass $1.2\,\text{kg}$. This is about a tenth of the average annual dose in Finland, $5.9\,\text{mSv}$, even though $10\,\text{Bq}$ is a very small activity. This is why plutonium is prevented from entering the body with a durable ceramic fuel and tight capsules.
@@ -374,12 +374,12 @@ For the near points the source and the tube should be fixed on a stand where the
 **Given:** $K = 3.15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}$ and $d = 1.3\,\text{cm}$ of part b, background $R_\text{t} = 22.4\,\tfrac{1}{\text{min}}$, dose rate $3.0\,\mu\text{Sv/h}$ at $10\,\text{cm}$
 **Find:** the distance $r$ at which the net count rate equals that of the background, and an evaluation of the reasoning
 **Principle:** According to the model of part b the net count rate decreases like $\tfrac{1}{(r + d)^2}$. We set it equal to the count rate of the background. The dose rate of a point source decreases in the same way with the square of the distance, so it can be estimated for the same distance.
-**Formula:** $\dfrac{K}{(r + d)^2} = R_\text{t}$, so $r = \sqrt{\dfrac{K}{R_\text{t}}} - d$, and the dose rate $H = H_{10} \left(\dfrac{10\,\text{cm}}{r}\right)^2$
+**Formula:** $$\begin{aligned} R &= \dfrac{K}{(r + d)^2} \\ R &= R_\text{t} \\ \dfrac{K}{(r + d)^2} &= R_\text{t} \\ r &= \sqrt{\dfrac{K}{R_\text{t}}} - d \end{aligned}$$, and the dose rate $H = H_{10} \left(\dfrac{10\,\text{cm}}{r}\right)^2$
 **Conversions:** Not needed.
 **Substitution:** $r = \sqrt{\dfrac{3.15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}}{22.4\,\tfrac{1}{\text{min}}}} - 1.3\,\text{cm} = 37.5\,\text{cm} - 1.3\,\text{cm} = 36.2\,\text{cm}$ and $H = 3.0\,\mu\text{Sv/h} \cdot \left(\dfrac{10\,\text{cm}}{36.2\,\text{cm}}\right)^2 = 0.23\,\mu\text{Sv/h}$
 **Answer:** The net count rate equals that of the background at a distance of about $r \approx 36\,\text{cm}$, and the dose rate there is about $0.2\,\mu\text{Sv/h}$.
 
-The reasoning is wrong. The radiation of the source does not stop; its dose rate decreases to the order of magnitude of background radiation, and with this counting time the tube cannot distinguish it from the variation of the background.
+The reasoning is wrong. The radiation of the source does not stop; its dose rate decreases to the order of magnitude of background radiation, and farther out it is soon lost in the random variation of the background with this counting time.
 
 Far from the source the radiation is still very weak, so distance is a good means of protection, as is limiting the time.
 **Reasonableness:** The dose rate of the source, $0.2\,\mu\text{Sv/h}$, is of the same order of magnitude as the outdoor background $0.05$–$0.30\,\mu\text{Sv/h}$, so the pulse measurement and the dose rate tell the same thing. For comparison: working for $45\,\text{min}$ at $10\,\text{cm}$ gives about $3.0\,\mu\text{Sv/h} \cdot 0.75\,\text{h} \approx 2\,\mu\text{Sv}$, while a person in Finland receives on average $5.9\,\text{mSv} : 365 \approx 16\,\mu\text{Sv}$ a day.
@@ -419,7 +419,7 @@ For every neutron that ended up in helium, one proton also ended up in helium, a
 We assume the masses of the proton and the neutron to be equal and ignore the small effect of the binding energy of the nucleus on the mass.
 
 Then the mass fraction is the same as the fraction of the numbers of nucleons.
-**Formula:** $Y = \dfrac{2N_n}{N_n + N_p}$, so $\dfrac{N_p}{N_n} = \dfrac{2 - Y}{Y}$
+**Formula:** $$\begin{aligned} Y &= \dfrac{M_\text{He}}{M} \\ M_\text{He} &= 2N_n m_\text{N} \\ M &= (N_n + N_p)\,m_\text{N} \\ Y &= \dfrac{2N_n}{N_n + N_p} \\ \dfrac{N_p}{N_n} &= \dfrac{2 - Y}{Y} \end{aligned}$$, where $m_\text{N}$ is the nucleon mass and $M$ the total mass
 **Conversions:** $24.5\,\% = 0.245$
 **Substitution:** $\dfrac{N_p}{N_n} = \dfrac{2 - 0.245}{0.245} = \dfrac{1.755}{0.245} = 7.16$
 **Answer:** When the nuclei formed, there were about $7.2$ protons for every neutron. The assumptions were that the masses of the nucleons are equal and that the number of neutrons left in deuterium, helium-3 and lithium is small.
@@ -433,7 +433,7 @@ Then the mass fraction is the same as the fraction of the numbers of nucleons.
 Every neutron that decays turns into a proton, so there are always $7$ nucleons. When $N_n$ neutrons are left, there are $7 - N_n$ protons.
 
 First we solve when their ratio is the ratio of part b, and then the time from the decay law.
-**Formula:** $\dfrac{7 - N_n}{N_n} = 7.16$, so $N_n = \dfrac{7}{1 + 7.16}$. From the decay law $N_n = N_0 \left(\tfrac{1}{2}\right)^{t / T_{1/2}}$, where $N_0 = 1$, we get $\dfrac{t}{T_{1/2}} = \dfrac{\lg \tfrac{N_0}{N_n}}{\lg 2}$.
+**Formula:** $$\begin{aligned} N_n + N_p &= 7 \\ \dfrac{N_p}{N_n} &= 7.16 \\ N_n &= \dfrac{7}{1 + 7.16} \\ N_n &= N_0 \left(\tfrac{1}{2}\right)^{t / T_{1/2}} \\ \dfrac{t}{T_{1/2}} &= \dfrac{\lg \tfrac{N_0}{N_n}}{\lg 2} \end{aligned}$$, where $N_0 = 1$
 **Conversions:** Not needed.
 **Substitution:** $N_n = \dfrac{7}{8.163} = 0.8575$, $\dfrac{t}{T_{1/2}} = \dfrac{\lg \tfrac{1}{0.8575}}{\lg 2} = \dfrac{0.0668}{0.3010} = 0.222$, so $t = 0.222 \cdot 609\,\text{s} = 135\,\text{s}$ from the moment $1\,\text{s}$.
 **Answer:** Nuclei began to form about $1\,\text{s} + 135\,\text{s} \approx 140\,\text{s}$, that is, about $2\,\text{min}$ after the Big Bang. Two significant figures are enough, because the initial ratio is known only approximately.
@@ -498,7 +498,7 @@ The reactor thus regulated itself, in the same way as a light-water reactor, in 
 **Given:** power of Oklo $P_\text{O} = 100\,\text{kW}$, time $t_\text{O} = 150\,000\,\text{a}$ and the thermal power of Olkiluoto 3 $P_\text{OL3} = 4300\,\text{MW}$
 **Find:** the time $t_\text{OL3}$ in which Olkiluoto 3 produces the same energy
 **Principle:** Thermal energy is power times time. When both produce the same energy, the times are inversely proportional to the powers.
-**Formula:** $P_\text{O} t_\text{O} = P_\text{OL3} t_\text{OL3}$, so $t_\text{OL3} = \dfrac{P_\text{O}}{P_\text{OL3}}\, t_\text{O}$
+**Formula:** $$\begin{aligned} E &= Pt \\ E_\text{O} &= E_\text{OL3} \\ P_\text{O} t_\text{O} &= P_\text{OL3} t_\text{OL3} \\ t_\text{OL3} &= \dfrac{P_\text{O}}{P_\text{OL3}}\, t_\text{O} \end{aligned}$$
 **Conversions:** $P_\text{O} = 100\,\text{kW} = 0.100\,\text{MW}$. The time need not be converted to seconds, because the result is obtained directly in years.
 **Substitution:** $t_\text{OL3} = \dfrac{0.100\,\text{MW}}{4300\,\text{MW}} \cdot 150\,000\,\text{a} = 3.49\,\text{a}$
 **Answer:** Olkiluoto 3 produces the same energy in about $3.5$ years. The power and the time are only order-of-magnitude estimates, so the result has at most two significant figures.

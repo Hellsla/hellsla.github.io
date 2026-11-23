@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 612296f7d7d63cce
-Mode: translation
+CONTENT-HASH: 6cc9799097272169
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- fy8-14-L1-09 (fi-easy) compared with reviewed fi: same data, same options, same correct option, same answer.
-- Recomputed independently: A = A0 (1/2)^(t/T) solved gives A0 = A 2^(t/T); 3 half-lives gives 8A; (1/2)^(t/T) is the wrong direction, 2^(T/t) falls with t, 2t/T gives 0 at t=0; F-18 half-life about 110 min, 330 min gives 8 vs 6.
-- solutions.md L1-09: principle, symbolic step, substitution, rounding and reasonableness agree with fi; answers.py note agrees.
-- fi-easy follows NOTES.md section 12 (shorter sentences, terms explained, same physics and numbers as fi).
-- check_i18n shows nothing for fy8-14; build.py fy8-14 succeeds. No translation edit was needed.
-- Hash 612296f7d7d63cce at start and end.
+- Hash 6cc9799097272169 (`reviews.py hash fy8-14 --exercises --lang fi-easy`) at the start and the end.
+- `git diff origin/main`: only solutions.md changed, and every removed line is a `**Kaava:**` line. Answers, answers.py, tolerances and the Sijoitus steps are unchanged.
+- Inverse-square dose: "kääntäen verrannollinen etäisyyden neliöön" is stated. The chain $\dot H_2 = \dot H_1(r_1/r_2)^2$ and $H = \dot H_2 t$ is correct.
+- Radiotherapy entrance dose: $D = N k D_\text{kerta}/n$ with $n = 5$, $k = 1{,}3$, $N = 30$ is the same as the old $30\cdot1{,}3\cdot D_\text{kerta}/5$.
+- Bone versus tissue contrast: the same $I_0$ in front of the layer and the other layers cancelling out are stated as the reason. $I_\text{A}/I_\text{B} = 2^{d/d_{1/2}^\text{luu}-d/d_{1/2}^\text{kudos}}$ is correct; I checked it numerically.
+- Thickness from the attenuation law: $I_0/I = 2^{d/d_{1/2}}$, then $\ln$, then $d = d_{1/2}\ln(I_0:I)/\ln 2$. This is right and uses the lesson's notation. The same holds for the count-rate calibration: $d_{1/2} = d_{20}\ln2/\ln(R_0:R_{20})$, then $d_x$.
+- PET dose: $A_0 = am/(\tfrac12)^{t/T_{1/2}}$ and $H = kA_0 + H_\text{TT}$. The combined form $kam/(\tfrac12)^{t/T_{1/2}} + H_\text{TT}$ is correct.
