@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: df6cf372cf645c1d
+CONTENT-HASH: bb4c59d60a1ec530
+SCOPE: delta md-paragraphs,numbers,typography,wording from df6cf372cf645c1d base 5b3ca4f
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- fy6-7-L2-09 — good authentic task: the data is needed, the date is stated, and a table keeps it working later. The ENERGY STAR data is American, in ft³; the conversion is given and is correct (17.5 ft³ ≈ 495 l).
-- Part c: "the total price of electricity" is fine, but say once that basic charges are left out (the solution does).
-- Part d asks for the compressor's input power without a value in the task; the solution's "about a hundred watts" is flagged as an order of magnitude, which is honest. A student could be asked to name the thermostat cycle as the key word.
-- Answer rounding: the box takes 39.3 W, while costs are given as about 690 € and 190 €, which is two figures against 688 € and 192 € exactly. Explained in the solution, but a short note that the exact 688 € is also accepted would help.
-- Solution displays an aligned block in the middle of a sentence ("$$...$$. So the difference"); the visual reviewer should check the layout.
+- Level 2 tariff task (heater moved to the cheap period): the row "S = aE_heater" uses a for a price difference; write "S = (a_high - a_low) E_heater" in one step or name the difference, so that a does not mean two things.
+- fy6-7-L2-09: the Formula step for parts b and c is still prose with "which gives"; an aligned chain (E = P_avg t, P_avg = E : t, E_n = nE, K = aE_n) would match the other tasks.
 
 ## Checked
-- Whole set: levels 1–3 filled, new task last among level 2.
-- Four sub-questions that rise from compare to calculate, cost and explain a model limit.
-- Solution: E = Pt, 8760 h, 39.3 W and 50.2 W, 688 € and 880 €, all correct; reasonableness check present.
-- Does not repeat the worked example.
+- Formula steps are now aligned chains from the basic laws: E = Pt, P = UI, U = RI, K = aE, then the combined form (E = UIt, K = aPt, t2 = P1 t1 : P2); the kettle, standby, lamp-saving and equal-energy tasks follow the rule.
+- Stepped graph tasks (washing machine, dryer) show E_i = P_i t_i, the sum, then the expanded sum; the student sees why the area is added.
+- Bill task: K = K_base + aE rearranged in two rows to E; clear for a student who could not start.
+- Appliance-sum task uses E_day,i, the sum and the yearly multiplier; the symbols are consistent with the substitution.
+- Long Principle, reasonableness and Part d paragraphs are split into one-idea paragraphs; no content lost, nothing exceeds about 120 words.
+- Earlier judgement of levels, contexts and the refrigerator data task remains valid; numbers unchanged.

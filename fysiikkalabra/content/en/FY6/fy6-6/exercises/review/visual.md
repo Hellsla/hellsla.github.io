@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: b3743d67cdede78a
+CONTENT-HASH: 88ae4d407ba8dae1
+SCOPE: delta numbers from b3743d67cdede78a base 4d1dce4
 
 ## Blocking
 - none
@@ -8,9 +9,9 @@ CONTENT-HASH: b3743d67cdede78a
 - none
 
 ## Checked
-- delta (md-paragraphs, solutions.md only): read every inserted paragraph break in the diff; each splits at a sentence boundary, one thing per paragraph, none starts mid-thought, no one-word or orphan paragraph.
-- Opened at 1280 px: fy6-6-open-exercises-L2-1280-4; paragraph spacing inside the solution card is even, nothing clipped or overflowing.
-- Words, numbers, signs and units unchanged in the diff.
+- delta (solutions.md, Formula steps rewritten as aligned principle-first blocks): opened fy6-6-open-exercises-1280 captures -2 and L3-3 at 1280 px.
+- Formula blocks render in KaTeX, equals signs aligned, one equation per row, fractions and subscripts clean, no clipping or overflow; spacing to Conversions and Substitution intact.
+- Units, numbers and notation consistent with the Substitution rows.
 
 ## Scores
 illustrations n/a · typography 5 · Finnish 4 · accessibility 4
