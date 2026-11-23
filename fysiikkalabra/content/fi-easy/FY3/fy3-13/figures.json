@@ -1,3 +1,8 @@
 {
- "Kuvitus: laboratoriopöydällä on kolme astiaa: jäävesi, huoneenlämpöinen vesi ja kuumalla levyllä kiehuva vesi. Keskimmäisessä hauteessa on suljettu lasipullo, joka on letkulla yhdistetty painemittariin.": "Kuvitus: laboratoriopöydällä on kolme astiaa. Yhdessä on jäävettä ja toisessa huoneenlämpöistä vettä. Kolmannessa on kuumalla levyllä kiehuvaa vettä. Keskimmäisessä hauteessa on suljettu lasipullo. Pullo on letkulla yhdistetty painemittariin."
+ "Kuvitus: laboratoriopöydällä on kolme astiaa: jäävesi, huoneenlämpöinen vesi ja kuumalla levyllä kiehuva vesi. Keskimmäisessä hauteessa on suljettu lasipullo, joka on letkulla yhdistetty painemittariin.": "Kuvitus: laboratoriopöydällä on kolme astiaa. Yhdessä on jäävettä ja toisessa huoneenlämpöistä vettä. Kolmannessa on kuumalla levyllä kiehuvaa vettä. Keskimmäisessä hauteessa on suljettu lasipullo. Pullo on letkulla yhdistetty painemittariin.",
+ "Kaasulämpömittari: suljettu lasipullo, jossa on ilmaa, on vesihauteessa, jota lämmitetään. Pullon kaasun tilavuus ei muutu. Vesihauteen lämpötila luetaan lämpömittarista ja kaasun paine painemittarista. Kuva on kaavio eikä mittakaavassa.": "Kaasulämpömittari. Suljettu lasipullo on vesihauteessa, ja pullossa on ilmaa. Vesihaudetta lämmitetään. Pullon kaasun tilavuus ei muutu. Vesihauteen lämpötila luetaan lämpömittarista. Kaasun paine luetaan painemittarista. Kuva on kaavio eikä mittakaavassa.",
+ "painemittari": "painemittari",
+ "vesihaude": "vesihaude",
+ "ilma": "ilma",
+ "vakio": "vakio"
 }

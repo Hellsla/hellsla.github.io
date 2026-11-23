@@ -1,3 +1,8 @@
 {
- "Kuvitus: laboratoriopöydällä on kolme astiaa: jäävesi, huoneenlämpöinen vesi ja kuumalla levyllä kiehuva vesi. Keskimmäisessä hauteessa on suljettu lasipullo, joka on letkulla yhdistetty painemittariin.": "Illustration: on a laboratory bench there are three containers: ice water, water at room temperature, and water boiling on a hot plate. The middle bath holds a sealed glass flask connected by a hose to a pressure gauge."
+ "Kuvitus: laboratoriopöydällä on kolme astiaa: jäävesi, huoneenlämpöinen vesi ja kuumalla levyllä kiehuva vesi. Keskimmäisessä hauteessa on suljettu lasipullo, joka on letkulla yhdistetty painemittariin.": "Illustration: on a laboratory bench there are three containers: ice water, water at room temperature, and water boiling on a hot plate. The middle bath holds a sealed glass flask connected by a hose to a pressure gauge.",
+ "Kaasulämpömittari: suljettu lasipullo, jossa on ilmaa, on vesihauteessa, jota lämmitetään. Pullon kaasun tilavuus ei muutu. Vesihauteen lämpötila luetaan lämpömittarista ja kaasun paine painemittarista. Kuva on kaavio eikä mittakaavassa.": "Gas thermometer: a sealed glass flask containing air stands in a water bath that is being heated. The volume of the gas in the flask does not change. The temperature of the water bath is read from a thermometer and the pressure of the gas from a pressure gauge. The picture is a diagram, not to scale.",
+ "painemittari": "pressure gauge",
+ "vesihaude": "water bath",
+ "ilma": "air",
+ "vakio": "constant"
 }

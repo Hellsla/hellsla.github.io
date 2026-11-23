@@ -4,5 +4,15 @@
  "vesi luovuttaa jäähtyessään ": "vesi luovuttaa jäähtyessään ",
  ":seen": ":seen",
  "jään lämmittäminen ": "jään lämmittäminen ",
- "kaiken jään sulattaminen": "kaiken jään sulattaminen"
+ "kaiken jään sulattaminen": "kaiken jään sulattaminen",
+ "Kaavakuva ennen ja jälkeen: eristetyssä astiassa on aluksi 0,30 kg vettä lämpötilassa 20 °C ja 0,10 kg jäätä lämpötilassa 0 °C. Lämpöä Q siirtyy vedestä jäähän. Tasapainossa lämpömittari näyttää 0 °C, vettä on 0,375 kg ja jäätä on jäljellä enää 0,025 kg. Jääpalojen yhteenlaskettu pinta-ala on mittakaavassa jään massaan nähden.": "Kaavakuva ennen ja jälkeen: eristetyssä astiassa on aluksi 0,30 kg vettä lämpötilassa 20 °C ja 0,10 kg jäätä lämpötilassa 0 °C. Lämpöä Q siirtyy vedestä jäähän. Tasapainossa lämpömittari näyttää 0 °C, vettä on 0,375 kg ja jäätä on jäljellä enää 0,025 kg. Jääpalojen yhteenlaskettu pinta-ala on mittakaavassa jään massaan nähden.",
+ "Energiataseen palkit mittakaavassa, kilojouleina: 0,30 kg vettä lämpötilassa 20 °C luovuttaa jäähtyessään 0 °C:seen 25.1 kJ. 0,10 kg jäätä lämpötilassa −10 °C tarvitsee lämpenemiseen 0 °C:seen 2.1 kJ ja sulamiseen 33.4 kJ eli yhteensä 35.5 kJ. Veden lämpö ei riitä: palkin vaalea osa kuvaa jäätä, joka ei ehdi sulaa.": "Energiataseen palkit mittakaavassa, kilojouleina: 0,30 kg vettä lämpötilassa 20 °C luovuttaa jäähtyessään 0 °C:seen 25.1 kJ. 0,10 kg jäätä lämpötilassa −10 °C tarvitsee lämpenemiseen 0 °C:seen 2.1 kJ ja sulamiseen 33.4 kJ eli yhteensä 35.5 kJ. Veden lämpö ei riitä: palkin vaalea osa kuvaa jäätä, joka ei ehdi sulaa.",
+ "alussa": "alussa",
+ "vesi ": "vesi ",
+ "jää ": "jää ",
+ "tasapainossa": "tasapainossa",
+ "jäätä jää": "jäätä jää",
+ "lämmitys": "lämmitys",
+ "vesi luovuttaa": "vesi luovuttaa",
+ "jää tarvitsee": "jää tarvitsee"
 }

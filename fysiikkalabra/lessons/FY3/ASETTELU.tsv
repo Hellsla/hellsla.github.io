@@ -60,3 +60,10 @@ fy3-15/scene	illustration	fy3-15-scene.webp
 fy3-12/hero	illustration	fy3-12-hero.webp						
 fy3-12/scene	illustration	fy3-12-scene.webp						
 fy3-16/hero	illustration	fy3-16-hero.webp						
+fy3-13/thermometer	diagram	fy3-13-thermometer.webp	0	0	600	378.8		
+fy3-14/before-after	diagram	fy3-14-before-after.webp	0	0	600	355		
+fy3-14/energy-balance	diagram	fy3-14-energy-balance.webp	0	0	600	397.5		
+fy3-15/sankey	diagram	fy3-15-sankey.webp	0	1.2	597	405.5		
+fy3-15/condenser	diagram	fy3-15-condenser.webp	4.9	7.4	591.1	316.5	{"0":[4,12]}	
+fy3-16/cool-bag	diagram	fy3-16-cool-bag.webp	1.2	0	597	349.5		
+fy3-16/cooling-circuit	diagram	fy3-16-cooling-circuit.webp	1.2	10	600	347.5		

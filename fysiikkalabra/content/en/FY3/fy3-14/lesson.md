@@ -9,57 +9,22 @@
 ## Key idea
 When warm water and ice are put in an insulated container, heat is transferred from the water to the ice until the temperatures are equal and the container is in thermal equilibrium. Energy is conserved, so the quantity of heat given out by the water is equal to the quantity of heat taken in by the ice. The energy taken in by the ice does not simply raise its temperature, however: the ice first warms to $0\,{}^\circ\text{C}$ and then melts. During melting the temperature stays constant, but every kilogram of ice takes in $334\,\text{kJ}$ of energy, and the same energy would raise the temperature of a kilogram of water by almost $80\,\text{K}$.
 
-<svg viewBox="0 0 600 344" role="img" aria-label="Before-and-after schematic: an insulated container first holds 0.30 kg of water at 20 °C and 0.10 kg of ice at 0 °C. Heat Q is transferred from the water to the ice. At equilibrium the thermometer reads 0 °C, there is 0.375 kg of water and only 0.025 kg of ice is left. The total area of the ice cubes is drawn to scale with the mass of the ice." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy314-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy314-heat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
-  <path d="M78,96 V250 Q78,262 90,262 H216 Q228,262 228,250 V96 Z" fill="#eef5f9"/>
-  <path d="M80,138 Q98.25,131 116.5,138 T153.0,138 T189.5,138 T226,138 V250 Q226,260 214,260 H92 Q80,260 80,250 Z" fill="url(#fy314-water)"/>
-  <path d="M83,138 Q98.25,132 116.5,138 T153.0,138 T189.5,138 T223,138" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-opacity="0.8"/>
-  <rect x="84.0" y="120.0" width="30" height="30" rx="4.0" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2.5"/>
-  <path d="M90.0,132.6 V126.0 H96.6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-  <rect x="120.0" y="120.0" width="30" height="30" rx="4.0" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2.5"/>
-  <path d="M126.0,132.6 V126.0 H132.6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-  <rect x="156.0" y="120.0" width="30" height="30" rx="4.0" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2.5"/>
-  <path d="M162.0,132.6 V126.0 H168.6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-  <rect x="192.0" y="120.0" width="30" height="30" rx="4.0" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2.5"/>
-  <path d="M198.0,132.6 V126.0 H204.6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-  <path d="M147.0,232 V196 H138.0 L153.0,172 L168.0,196 H159.0 V232 Z" fill="url(#fy314-heat)"/>
-  <rect x="173.0" y="192" width="40" height="36" rx="6" fill="#ffffff" fill-opacity="0.88"/>
-  <foreignObject x="173.0" y="190" width="40" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$Q$</div></foreignObject>
-  <path d="M78,96 V250 Q78,262 90,262 H216 Q228,262 228,250 V96" fill="none" stroke="#1f2933" stroke-width="3"/>
-  <rect x="41" y="96" width="14" height="170" rx="7" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <g stroke="#6b7480" stroke-width="1.5"><line x1="35" y1="232" x2="41" y2="232"/><line x1="35" y1="192" x2="41" y2="192"/><line x1="35" y1="152" x2="41" y2="152"/><line x1="35" y1="112" x2="41" y2="112"/></g>
-  <rect x="45" y="152" width="6" height="106" fill="#c92a2a"/>
-  <circle cx="48" cy="258" r="12" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
+<svg data-fig="before-after" viewBox="0 0 600 344" role="img" aria-label="Before-and-after schematic: an insulated container first holds 0.30 kg of water at 20 °C and 0.10 kg of ice at 0 °C. Heat Q is transferred from the water to the ice. At equilibrium the thermometer reads 0 °C, there is 0.375 kg of water and only 0.025 kg of ice is left. The total area of the ice cubes is drawn to scale with the mass of the ice." style="max-width:100%;font-size:24px">
+  <image href="pics/fy3/fy3-14-before-after.webp" x="0" y="0" width="600" height="355" preserveAspectRatio="none"/>
+  <foreignObject x="173" y="198" width="40" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$Q$</div></foreignObject>
   <foreignObject x="-2" y="218" width="34" height="28"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right;color:#6b7480">$0$</div></foreignObject>
   <foreignObject x="-2" y="178" width="34" height="28"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right;color:#6b7480">$10$</div></foreignObject>
   <foreignObject x="-2" y="138" width="34" height="28"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right;color:#6b7480">$20$</div></foreignObject>
   <foreignObject x="-2" y="98" width="34" height="28"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right;color:#6b7480">$30$</div></foreignObject>
-  <foreignObject x="8" y="56" width="80" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$20\,{}^\circ\text{C}$</div></foreignObject>
-  <foreignObject x="53.0" y="4" width="200" height="38"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{initially}$</div></foreignObject>
-  <foreignObject x="31.0" y="276" width="244" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{water } 0.30\,\text{kg},\ 20\,{}^\circ\text{C}$</div></foreignObject>
-  <foreignObject x="31.0" y="309" width="244" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{ice } 0.10\,\text{kg},\ 0\,{}^\circ\text{C}$</div></foreignObject>
-  <path d="M252,166 H306 V152 L334,174 L306,196 V182 H252 Z" fill="#1f2933"/>
-  <path d="M400,96 V250 Q400,262 412,262 H538 Q550,262 550,250 V96 Z" fill="#eef5f9"/>
-  <path d="M402,138 Q420.25,131 438.5,138 T475.0,138 T511.5,138 T548,138 V250 Q548,260 536,260 H414 Q402,260 402,250 Z" fill="url(#fy314-water)"/>
-  <path d="M405,138 Q420.25,132 438.5,138 T475.0,138 T511.5,138 T545,138" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-opacity="0.8"/>
-  <rect x="413.5" y="129.0" width="15" height="15" rx="3.8" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2.5"/>
-  <path d="M416.5,135.3 V132.0 H419.8" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-  <rect x="449.5" y="129.0" width="15" height="15" rx="3.8" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2.5"/>
-  <path d="M452.5,135.3 V132.0 H455.8" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-  <rect x="485.5" y="129.0" width="15" height="15" rx="3.8" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2.5"/>
-  <path d="M488.5,135.3 V132.0 H491.8" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-  <rect x="521.5" y="129.0" width="15" height="15" rx="3.8" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2.5"/>
-  <path d="M524.5,135.3 V132.0 H527.8" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-  <path d="M400,96 V250 Q400,262 412,262 H538 Q550,262 550,250 V96" fill="none" stroke="#1f2933" stroke-width="3"/>
-  <rect x="363" y="96" width="14" height="170" rx="7" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <g stroke="#6b7480" stroke-width="1.5"><line x1="357" y1="232" x2="363" y2="232"/><line x1="357" y1="192" x2="363" y2="192"/><line x1="357" y1="152" x2="363" y2="152"/><line x1="357" y1="112" x2="363" y2="112"/></g>
-  <rect x="367" y="232" width="6" height="26" fill="#1971c2"/>
-  <circle cx="370" cy="258" r="12" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="320" y="218" width="34" height="28"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right;color:#6b7480">$0$</div></foreignObject>
-  <foreignObject x="330" y="56" width="80" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$0\,{}^\circ\text{C}$</div></foreignObject>
-  <foreignObject x="375.0" y="4" width="200" height="38"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{at equilibrium}$</div></foreignObject>
-  <foreignObject x="353.0" y="276" width="244" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{water } 0.375\,\text{kg},\ 0\,{}^\circ\text{C}$</div></foreignObject>
-  <foreignObject x="353.0" y="309" width="244" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{ice } 0.025\,\text{kg},\ 0\,{}^\circ\text{C}$</div></foreignObject>
+  <foreignObject x="8" y="62" width="80" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$20\,{}^\circ\text{C}$</div></foreignObject>
+  <foreignObject x="53" y="11" width="200" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{initially}$</div></foreignObject>
+  <foreignObject x="31" y="281" width="244" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{water } 0.30\,\text{kg},\ 20\,{}^\circ\text{C}$</div></foreignObject>
+  <foreignObject x="31" y="314" width="244" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{ice } 0.10\,\text{kg},\ 0\,{}^\circ\text{C}$</div></foreignObject>
+  <foreignObject x="320" y="220" width="34" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px;color:#6b7480">$0$</div></foreignObject>
+  <foreignObject x="330" y="62" width="80" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$0\,{}^\circ\text{C}$</div></foreignObject>
+  <foreignObject x="375" y="11" width="200" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{at equilibrium}$</div></foreignObject>
+  <foreignObject x="353" y="281" width="244" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{water } 0.375\,\text{kg},\ 0\,{}^\circ\text{C}$</div></foreignObject>
+  <foreignObject x="353" y="314" width="244" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{ice } 0.025\,\text{kg},\ 0\,{}^\circ\text{C}$</div></foreignObject>
 </svg>
 
 When warm water and cold ice are mixed in an insulated container, the final temperature is generally not the mean of the initial temperatures. The solution is based on conservation of energy.
@@ -85,35 +50,23 @@ Q_\text{i} = Q_\text{i,warm} + s m_\text{i}
 ```
 where $c_\text{w}$ is the specific heat capacity of water and $c_\text{i}$ that of ice (J/(kg·K)), $\Delta T_\text{w} = T_\text{w} - 0\,{}^\circ\text{C}$ is the fall in the temperature of the water to the melting point (K), $\Delta T_\text{i} = 0\,{}^\circ\text{C} - T_\text{i}$ is the rise in the temperature of the ice to the melting point (K) and $s$ is the specific latent heat of fusion of ice (J/kg).
 
-<svg viewBox="0 0 600 392" role="img" aria-label="Energy balance bars drawn to scale, in kilojoules: 0.30 kg of water at 20 °C gives out 25.1 kJ when it cools to 0 °C. 0.10 kg of ice at −10 °C needs 2.1 kJ to warm to 0 °C and 33.4 kJ to melt, 35.5 kJ in total. The heat from the water is not enough: the pale part of the bar shows the ice that does not have time to melt." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy314-heat2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
-  <line x1="100" y1="272.0" x2="590" y2="272.0" stroke="#e3dccb" stroke-width="1.5"/>
-  <line x1="100" y1="212.0" x2="590" y2="212.0" stroke="#e3dccb" stroke-width="1.5"/>
-  <line x1="100" y1="152.0" x2="590" y2="152.0" stroke="#e3dccb" stroke-width="1.5"/>
-  <line x1="100" y1="92.0" x2="590" y2="92.0" stroke="#e3dccb" stroke-width="1.5"/>
-  <line x1="100" y1="332" x2="590" y2="332" stroke="#1f2933" stroke-width="2.5"/><line x1="100" y1="68.0" x2="100" y2="332" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="36" y="318.0" width="56" height="28"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right;color:#6b7480">$0$</div></foreignObject>
-  <foreignObject x="36" y="258.0" width="56" height="28"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right;color:#6b7480">$10$</div></foreignObject>
-  <foreignObject x="36" y="198.0" width="56" height="28"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right;color:#6b7480">$20$</div></foreignObject>
-  <foreignObject x="36" y="138.0" width="56" height="28"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right;color:#6b7480">$30$</div></foreignObject>
-  <foreignObject x="36" y="78.0" width="56" height="28"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right;color:#6b7480">$40$</div></foreignObject>
-  <foreignObject x="20" y="6" width="150" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:left">$Q\ (\text{kJ})$</div></foreignObject>
-  <foreignObject x="290" y="2" width="306" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$\text{water } 0.30\,\text{kg},\ 20\,{}^\circ\text{C}$</div></foreignObject>
-  <foreignObject x="290" y="38" width="306" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$\text{ice } 0.10\,\text{kg},\ {-10}\,{}^\circ\text{C}$</div></foreignObject>
-  <rect x="150" y="181.2" width="100" height="150.8" rx="3" fill="url(#fy314-heat2)" stroke="#1f2933" stroke-width="2"/>
-  <rect x="350" y="319.4" width="100" height="12.6" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
-  <rect x="350" y="181.2" width="100" height="138.2" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2"/>
-  <rect x="350" y="119.0" width="100" height="62.2" fill="#a5d8ff" fill-opacity="0.35" stroke="#4f8fbf" stroke-width="2" stroke-dasharray="7 5"/>
-  <line x1="250" y1="181.2" x2="460" y2="181.2" stroke="#1f2933" stroke-width="2" stroke-dasharray="7 5"/>
-  <path d="M460,119.0 H466 V181.2 H460" fill="none" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="472" y="133.07999999999998" width="128" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:left">$\text{ice left over}$</div></foreignObject>
-  <foreignObject x="356" y="153.07999999999998" width="90" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$s\,m_\text{i}$</div></foreignObject>
-  <foreignObject x="472" y="292.7" width="120" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:left">$\text{warming}$</div></foreignObject>
-  <line x1="450" y1="325.7" x2="468" y2="309.7" stroke="#6b7480" stroke-width="1.5"/>
-  <foreignObject x="130" y="143.16" width="140" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$25.1\,\text{kJ}$</div></foreignObject>
-  <foreignObject x="330" y="81.0" width="140" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$35.5\,\text{kJ}$</div></foreignObject>
-  <foreignObject x="110" y="338" width="180" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{water gives out}$</div></foreignObject>
-  <foreignObject x="310" y="338" width="180" height="34"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center">$\text{ice needs}$</div></foreignObject>
+<svg data-fig="energy-balance" viewBox="0 0 600 392" role="img" aria-label="Energy balance bars drawn to scale, in kilojoules: 0.30 kg of water at 20 °C gives out 25.1 kJ when it cools to 0 °C. 0.10 kg of ice at −10 °C needs 2.1 kJ to warm to 0 °C and 33.4 kJ to melt, 35.5 kJ in total. The heat from the water is not enough: the pale part of the bar shows the ice that does not have time to melt." style="max-width:100%;font-size:24px">
+  <image href="pics/fy3/fy3-14-energy-balance.webp" x="0" y="0" width="600" height="397.5" preserveAspectRatio="none"/>
+  <foreignObject x="36" y="320" width="56" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px;color:#6b7480">$0$</div></foreignObject>
+  <foreignObject x="36" y="260" width="56" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px;color:#6b7480">$10$</div></foreignObject>
+  <foreignObject x="36" y="200" width="56" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px;color:#6b7480">$20$</div></foreignObject>
+  <foreignObject x="36" y="140" width="56" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px;color:#6b7480">$30$</div></foreignObject>
+  <foreignObject x="36" y="80" width="56" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px;color:#6b7480">$40$</div></foreignObject>
+  <foreignObject x="20" y="11" width="150" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$Q\ (\text{kJ})$</div></foreignObject>
+  <foreignObject x="290" y="8" width="306" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{water } 0.30\,\text{kg},\ 20\,{}^\circ\text{C}$</div></foreignObject>
+  <foreignObject x="290" y="44" width="306" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px">$\text{ice } 0.10\,\text{kg},\ {-10}\,{}^\circ\text{C}$</div></foreignObject>
+  <foreignObject x="472" y="138" width="128" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\text{ice left over}$</div></foreignObject>
+  <foreignObject x="356" y="158" width="90" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$s\,m_\text{i}$</div></foreignObject>
+  <foreignObject x="472" y="297.5" width="120" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\text{warming}$</div></foreignObject>
+  <foreignObject x="130" y="148" width="140" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$25.1\,\text{kJ}$</div></foreignObject>
+  <foreignObject x="330" y="86" width="140" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$35.5\,\text{kJ}$</div></foreignObject>
+  <foreignObject x="110" y="343" width="180" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{water gives out}$</div></foreignObject>
+  <foreignObject x="310" y="343" width="180" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{ice needs}$</div></foreignObject>
 </svg>
 
 | Quantity | Value |
