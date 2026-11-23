@@ -34,13 +34,14 @@ src = (ROOT / "templates" / "valmentaja.js").read_text()
 code = re.sub(r"/\*.*?\*/", "", src, flags=re.S)
 code = re.sub(r"//.*", "", code)
 bad = [w for w in ("fetch", "XMLHttpRequest", "sendBeacon", "WebSocket", "EventSource", "importScripts", "new Image", "submit(", "navigator.", "document.cookie", "indexedDB") if w in code]
-expect("valmentaja.js makes no network call and keeps nothing but its own key (R5)", not bad and code.count("localStorage.") == 2 and KEY in code, bad)
+uses = sorted(set(re.findall(r"localStorage\.(\w+)", code)))
+expect("valmentaja.js makes no network call and keeps nothing but its own key (R5)", not bad and uses == ["getItem", "removeItem", "setItem"] and KEY in code and "localStorage.removeItem(V.KEY)" in code, (bad, uses))
 expect("the old fl:attempt fields id, kind and state are still sent (lesson.js)", "{ id: taskId(el), kind, state }" in (ROOT / "templates" / "lesson.js").read_text())
 pages = sorted(SITE.rglob("*.html"))
 with_js = sorted(p.relative_to(SITE).as_posix() for p in pages if "valmentaja.js" in p.read_text(errors="ignore"))
 units = sorted(p.name for p in SITE.glob("fy9-*.html"))
-expect("valmentaja.js is on FY9 unit pages with tasks and nowhere else", with_js and all(re.fullmatch(r"(?:(?:en|fi-easy)/)?fy9-[a-z0-9-]+\.html", n) for n in with_js), with_js[:6])
-expect("a FY3 chapter and the module page do not load it", not any("valmentaja.js" in (SITE / n).read_text() for n in ("fy3-1.html", "FY9.html") if (SITE / n).is_file()))
+expect("valmentaja.js is on FY9 unit pages with tasks, the coach page and the FY9 course page (its row), nowhere else", with_js and all(re.fullmatch(r"(?:(?:en|fi-easy)/)?(?:fy9-[a-z0-9-]+|FY9|FY9-valmentaja)\.html", n) for n in with_js), with_js[:6])
+expect("a FY3 chapter and the front page do not load it", not any("valmentaja.js" in (SITE / n).read_text() for n in ("fy3-1.html", "index.html") if (SITE / n).is_file()))
 if not (SITE / "fy9-voimat.html").is_file():
     print("FAIL fy9-voimat.html is not built in", SITE); sys.exit(1)
 

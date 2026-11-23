@@ -135,7 +135,7 @@ def build(lang, unit_pub=None):
     units with three current reviews), their tasks, and the fixed minikokeet and plans whose tasks are all there."""
     s = side(); items = s.get("items", {})
     pub = [u for u in fy9_units(lang) if (lang in unit_pub.get(u, ()) if unit_pub is not None else units.status(u, lang)["state"] == "reviewed")]
-    out_units = [{"id": u, "chapter": units.load(u, lang)["chapter"], "title": units.load(u, lang)["title"]} for u in pub]
+    out_units = [{"id": u, "chapter": units.load(u, lang)["chapter"], "title": units.load(u, lang)["title"], "n": units.number(u)} for u in pub]
     tasks = [t for u in pub for t in tasks_of(u, lang, items)]
     have = {t["id"] for t in tasks}
     mini = [m for m in s.get("minikokeet", []) if set(m.get("short", [])) | set(m.get("long", [])) <= have]
@@ -160,6 +160,49 @@ def write(lang, out, unit_pub=None):
 
 def languages():
     return [l for l in units.languages() if fy9_units(l)]
+
+
+# ---- the pages (work queue 11b PR 4; plan 6.1-6.2): the coach page and the row and tile on the course page ---------------
+PAGE = "FY9-valmentaja.html"
+UI_KEYS = ("diag", "min", "why_stale", "why_wrong", "why_new", "why_more", "basis", "own", "note", "row_one", "row_n", "go", "clear", "clear_confirm", "nostore")
+STATES = ("none", "few", "practise", "growing", "strong", "strongdue")
+
+
+def _esc(s):
+    import html
+    return html.escape(str(s), quote=True)
+
+
+def ui_json(T):
+    """The texts the script shows, as the JSON in data-t (T: the build's translator)."""
+    t = {k: T("coach." + k) for k in UI_KEYS}
+    t.update({"state_" + s: T("coach.state_" + s) for s in STATES})
+    t["comp"] = {c: T("competency." + c) for c in practice.framework()["competencies"]}
+    t["chapter"] = T("site.chapter_n", n="{n}")
+    return _esc(json.dumps(t, ensure_ascii=False))
+
+
+def index_script(index):
+    """The task index inside the page (works offline and from a file; the page makes no request for it)."""
+    return '<script type="application/json" id="fy9-index">' + dumps(index).strip().replace("</", "<\\/") + "</script>"
+
+
+def page_body(T, index, course_page):
+    """The coach page: heading, the next tasks, the competency areas and the data row, filled by templates/valmentaja.js; without the
+    script it says so and links to the lessons and the task mixer (plan 7.3)."""
+    return (f'<h1>{T("coach.title")}</h1>'
+            f'<div class="coach" id="fy9-coach" data-t="{ui_json(T)}" data-diag="fy9-koe.html">'
+            f'<noscript><p class="notice" role="note">{T("coach.nojs")}</p></noscript>'
+            f'<section aria-labelledby="coach-next-h"><h2 id="coach-next-h">{T("coach.next")}</h2><div id="coach-recs"></div>'
+            f'<p class="coach-free"><a href="yo-sekoitin.html">{T("coach.free")}</a> · <a href="{course_page}">{T("site.back_to_course", course="FY9")}</a></p></section>'
+            f'<details class="coach-areas" id="coach-areas" hidden><summary>{T("coach.areas")}</summary><div class="coach-areas-body"></div></details>'
+            f'<div class="coach-data" id="coach-data"></div></div>' + index_script(index) + '<script src="valmentaja.js"></script>')
+
+
+def row_html(T, index):
+    """The row under the course page's heading: hidden until this browser holds evidence (plan 6.1); the script fills it."""
+    return (f'<div class="resume coach-row" id="fy9-coach-row" data-href="{PAGE}" data-t="{ui_json(T)}" hidden></div>'
+            + index_script(index) + '<script src="valmentaja.js"></script>')
 
 
 # ---- check ----------------------------------------------------------------------------------------------------------

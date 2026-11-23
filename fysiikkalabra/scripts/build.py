@@ -1013,6 +1013,16 @@ def end_img(name):
     return svg.replace("<svg", '<svg aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid slice"', 1)
 
 
+def coach_parts(code, c, lang, unit_pub, T):
+    """(row, tile) of the FY9 coach on the course page (scripts/valmentaja.py; work queue 11b PR 4): empty where the course has no coach or
+    this language has published none of its units."""
+    if not c.get("coach"): return "", ""
+    index = valmentaja.build(lang, unit_pub)
+    if not index["units"]: return "", ""
+    tile = cardgrid.grid(cardgrid.card(code, esc(T("coach.title")), valmentaja.PAGE, svg=end_img("coach"), cls=" me-tile"), ' id="valmentaja-laatta"')
+    return valmentaja.row_html(T, index), tile
+
+
 def end_tiles(code, mod, T, lang, built_ids, exam_built, practice_built):
     items = concept_cards.module_section(code, T, lang, chapter_titles(code, built_ids), end_img("deck"))
     if code in exam_built:
@@ -1503,7 +1513,7 @@ def build_language(lang):
             body = kilparobo.hub_body(kr, local_courses.head(code, c, T), local_courses.photos_html(c, T, heading=False), local_courses.quotes_html(c, T, heading=False))
         else:
             body = local_courses.page_body(code, c, T, chapters, {f"{i}.html" for i in built_ids}, [(i, d) for i, d in inv_built.items() if code in d["courses"]],
-                                           guides.course_section(T, published, lang) if code == "FY10" else "", cu)
+                                           guides.course_section(T, published, lang) if code == "FY10" else "", cu, coach_parts(code, c, lang, unit_pub, T))
         prog = local_progress(code, c, lang)                 # Näytä edistyminen before the course's first section (FY9)
         if prog and "<h2" in body: body = body.replace("<h2", prog + "<h2", 1)
         for ph in c.get("photos", []):                  # the course's photos (local_courses.py), shared by every language like a lesson's
@@ -1555,6 +1565,13 @@ def build_language(lang):
         (out / mixer.PAGE).write_text(page(T("mixer.title"), mixer.page_body(T, mixer.items(lang, T, list(practice_built), unit_pub)) + '<script src="invfilter.js"></script>',
                                            f'<a href="index.html">{T("site.name")}</a>{crumb} › {T("mixer.title")}', mixer.PAGE, T("mixer.description")))
         mixer_built.append(mixer.PAGE)
+    if mcode and local_courses.load()[mcode].get("coach") and lang in valmentaja.languages():   # the coach page (scripts/valmentaja.py, work queue 11b PR 4)
+        cindex = valmentaja.build(lang, unit_pub)
+        if cindex["units"]:
+            crumb = f' › <a href="{mcode}.html">{mcode}</a>' if mcode in local else ""
+            (out / valmentaja.PAGE).write_text(page(T("coach.title"), valmentaja.page_body(T, cindex, f"{mcode}.html"),
+                                                    f'<a href="index.html">{T("site.name")}</a>{crumb} › {T("coach.title")}', valmentaja.PAGE, T("coach.description"), main_class="reading coach-page"))
+            mixer_built.append(valmentaja.PAGE)
     if lang in valmentaja.languages():           # the FY9 task index (scripts/valmentaja.py, work queue 11b PR 2): data for a later page, no page of its own
         vf = valmentaja.write(lang, out, unit_pub)
         if vf: expected.append((out.relative_to(SITE) / vf).as_posix())
