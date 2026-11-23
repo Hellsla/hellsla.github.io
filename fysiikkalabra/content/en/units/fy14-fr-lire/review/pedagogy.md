@@ -1,11 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: ad7141695fb701d6
+CONTENT-HASH: 4abe352fc1c53f08
+SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
-## Blocking
-(none)
-
-## Polish
-- The next sentence still starts "English took a very large number of words from French"; with the milder lead it reads well, but adding "For example," would link them.
-
-## Checked
-Delta: "thousands of French words without having studied them" is replaced by an accurate, hedged claim (recognise many words, through English, Swedish and scientific vocabulary); no other place in the unit or its inquiry repeats the thousands claim; the predictions' feedback stays consistent.
+1. Blocking: none
+   Polish: box 1 repeats the example in the list directly above (recall only); box 2 repeats the table row (milliard) but still tests reading.
+2. Checked: each added box for answerability from the preceding paragraph, one idea, short, question last, answer teaches the reason, position (not inside derivation, worked example or list; not pre-empting the next paragraph), duplication with inquiry.json, reading level.
