@@ -1,15 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 13e79572ba322580
+VERDICT: PASS
+CONTENT-HASH: cdf30d1f28121f1a
+SCOPE: delta numbers from 13e79572ba322580 base a2442fe
 
 ## Blocking
-- [Major] solutions.md, Formula step of 4-10 and 10 other solutions (capture fy6-4-open-exercises-L2-1280-1) — the first row of each aligned block now starts `&I = ...` / `&U = ...`, so that row sits in the left column and its `=` is not under the `=` of the rows below (in 4-10 `U = U_L + U_s` stands about 20 px to the right of the next rows) — equals signs must align on one block — start every such row with the left side before the alignment mark: `U &= U_\text{L} + U_\text{s}`, `I &= I_1 + I_2`, `\dfrac{U_{23}}{R_{23}} &= \dfrac{U_{23}}{R_2} + \dfrac{U_{23}}{R_3}`, and so on for all 11 rows (grep `aligned} &` and `\\ &`).
 
 ## Polish
-- [Minor] 4-21 solution (L3-3) — last Formula row writes $R_1/2$ with a slash inside a fraction — write $\dfrac{R_1}{2}$ nested or a colon.
+- [Minor] 4-21 solution (L3-3) — the last Formula row still writes $R_1/2$ with a slash inside a fraction — write the nested fraction or a colon.
+- [Minor] Formula blocks with fractions in every row (4-21, 4-13) are tight vertically; shared mathlayout row spacing, not a per-lesson fix.
 
 ## Checked
-- Delta after the parent's edit during the review (hash changed twice; captures re-made for 13e79572ba322580). Opened 1280 px: open-exercises-L2-1, L3-3 (4-21), 1280-1; diff read.
-- Content seen fine apart from the misaligned first rows; 4-21 block aligned and legible.
-
+- 1280 px with every solution open: L1 part 1 (4-1), L2 parts 1 (4-10, first row `U &= ...`), 4 and 7 (4-13), L3 parts 3 (4-21) and 6 (corrected circuit); L3-3 and L2-1 enlarged to check alignment.
+- Every changed Formula block: the bare $\Sigma U$/$\Sigma I$ labels are gone; rows read `X &= ...`, and the equals signs stand in one column in every block I opened (the first-row offset of the earlier report is fixed). Diff read for all 11 blocks; they are the same pattern.
+- English page opened at L3-6 (corrected circuit): equals signs aligned, nothing clipped.
 ## Scores
-illustrations n/a · typography 3 · Finnish 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

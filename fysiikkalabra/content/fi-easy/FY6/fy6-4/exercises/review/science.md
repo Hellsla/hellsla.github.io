@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: fbfd66f2dc582710
-SCOPE: delta caption-label,md-paragraphs,numbers,reflow,teacher-figure,typography from edc1028be1632df7 base b5600a63ddae
+CONTENT-HASH: e3dadaa5c7980891
+SCOPE: delta wording from fbfd66f2dc582710 base 5ed432a
 
 ## Blocking
 - none
 
 ## Polish
-- solutions.md:233 L2-09 — the row "$U = RI \Rightarrow R = \dots$" jumps over $\tfrac{U}{R} = U\cdot\tfrac{R_1+R_2}{R_1R_2}$. One more row would show where $R$ comes from.
-- solutions.md:191 L3-05 — "$R_\text{sarja} = R_a + R_b$" opens without the step $U = R_a I + R_b I$ that L2-01 shows. Use the same row form as L2-01.
+- content/fi-easy/FY6/fy6-4/exercises/solutions.md:233 — L2-09: the row "$U = RI \Rightarrow R = \dots$" still skips $\tfrac{U}{R} = U\cdot\tfrac{R_1+R_2}{R_1R_2}$ (C).
 
 ## Checked
-- The Kaava steps now open with the lesson's own principle rows, $I = I_1 + I_2$ and $U = U_1 + U_2$. In mid-review they started with an unsigned $\Sigma I = 0$ and $\Sigma U = 0$; that version was edited while I reviewed it, and I re-checked the current file. No $\Sigma$ is left, and the notation matches the brief and the next chapter.
-- I recomputed all 16 changed solutions in one script from the task data: 24 Ω, 110 Ω, 4,787 mA, 35 Ω, 20 Ω, 1,32 kΩ, 50 mA, 4, 150/100 Ω, 60 Ω, 1013 Ω / 102,1 Ω, 198 Ω, 36 mA, 1,32 %, 500 mA. All agree, and no Sijoitus number changed.
-- Every derivation row is algebraically right: the quadratic in L3-03, $I_3 = R_{23}U : (R_3(R_1+R_{23}))$ in L3-01 and L3-04, and the $\tfrac{1}{R_x}$ rearrangements.
-- Symbolic before numeric in every changed solution; the last symbolic row is the one substituted.
-- The L3-05 and fallback-text paragraph splits change no content.
-- The task figures are teacher-approved, and their values match Kuvan lukeminen.
-- Content hash checked at start and end. It changed during the review because of the edit above.
+- Hash e3dadaa5c7980891 at the start and at the end.
+- The delta only moves the alignment marker in the twelve Kaava blocks: "$&I = I_1 + I_2$" becomes "$I &= I_1 + I_2$", and the other rows likewise. No symbol, number or relation changed.
+- The rows are the ones I derived in the previous round. Each final symbolic form is still the one substituted below it.
+- No $\Sigma$ is left, and the opening rows are the lesson's own principle rows.
+- answers.py (shared) recomputed in one script with my own formulas: all 19 answers agree.
