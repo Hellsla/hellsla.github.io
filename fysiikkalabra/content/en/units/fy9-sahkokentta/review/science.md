@@ -1,19 +1,36 @@
 VERDICT: PASS
-CONTENT-HASH: f7ecbe4706b0713d
-SCOPE: delta: new tasks fy9-sahkokentta-s7 and -s8 and the changed intro; older tasks s1–s6 untouched
+CONTENT-HASH: 2099e517d51d3416
+SCOPE: full (focus: the three new ```pysahdy boxes in unit.md; figures redrawn as WebP; solutions.md split into paragraphs)
 
 ## Blocking
 None.
 
 ## Polish
-- s7: the text never gives the plate gap, and the figure does not mark the positive plate. Part d and the a-solution's check ("over the whole gap 250 V : 0.050 m") rely on the positive plate being at $x = 5.0\,\text{cm}$, $V = 250\,\text{V}$, which a student can only infer from where the line ends. Adding "the plates are $5.0\,\text{cm}$ apart" would remove the guess.
-- s7 a, Reasonableness: the comparison with the breakdown field of air does not fit, because the plates are in a vacuum.
-- s8 c: the drawn curve gives $U_\text{D}(30\,\text{mA}) \approx 2.25\,\text{V}$ and so $R_\text{min} \approx 125\,\Omega$. This is inside the tolerance and still rounds up to $130\,\Omega$, but it could be listed under the accepted alternatives.
-- The shared `graph_read` key's base text talks about a slope from two far-apart points, while s7 c and s8 a/d read single values. The `detail` sets this right.
+- Box 2 (spark of 2 mm): the answer uses "=" for $3\,\text{MV/m} \cdot 2\,\text{mm} = 6\,\text{kV}$ after "$\approx$". The Finnish version does the same, and it is correct.
+- The Polish items from my previous report on s7 and s8 (plate gap not stated, the vacuum vs breakdown comparison, $R_\text{min} \approx 125\,\Omega$ from the drawn curve) still apply. They are unchanged and not blocking.
 
 ## Checked
-- I ran `units.py hash --lang en` at the start and the end (f7ecbe4706b0713d, unchanged). The packet's checks say `practice.py check: OK`.
-- I read the English intro, s7 and s8 in tasks.json and their solutions in the en packet. I compared them line by line with fi: every given value, read value, intermediate, answer, unit, tolerance, point and rubric criterion is the same. Decimal points are used throughout. The physics wording is faithful: "uniform field", "internal energy" (never heat), "series resistor", "characteristic curve" and "energy principle" are all correct.
-- My own recomputation (scratchpad `s78.py`, shared with fi) matches every number: E = 5.0 kV/m, a = 2.41e11 m/s², v = 98.2 km/s, V = −50 V; I = 17.27 mA, P_R = 65.6 mW, 63.3 %, R_min = 126.7 Ω, 440 Ω and 110 Ω. It also confirms against the drawn LED curve: self-consistent I = 17.15 mA, U_D = 2.165 and 2.235 V at 5 and 20 mA.
-- Directions are right: the field points against x, and the alpha particle accelerates towards the negative plate. Rounding is to the safe side in c. The "Ohm's law" conclusion is correctly limited to a straight line through the origin.
-- The intro's topic list ("electrical safety", "semiconductors") fits the set. Unit fields are language-neutral. Scope is FY6/FY4 only.
+- I ran `units.py hash fy9-sahkokentta --lang en` at the start and the end: 2099e517d51d3416 both times.
+- **Pysähdy boxes.** I compared all three with `content/fi/units/fy9-sahkokentta/unit.md` (same lines 13, 84, 169). The physics, numbers and units are the same as in fi:
+  - Box 1: the electron is negative, so $\overline{F} = q\overline{E}$ points against the field, that is, left. Correct.
+  - Box 2: $U = E_\text{max}d = 3\,\text{MV/m} \cdot 2\,\text{mm} = 6\,\text{kV}$. Correct, and consistent with the 3 mm → 9 kV of the text.
+  - Box 3: $C \propto 1/d$, so doubling $d$ halves $C$. This holds under the conditions stated in the paragraph just above: $d$ is small compared with the plates and the dielectric fills the gap.
+  - Each box sits right after the paragraph it tests.
+- **Diff since the passed version (33c3acb83).**
+  - unit.md: apart from the boxes, only the drawn SVG shapes were replaced by WebP images. The LaTeX labels are unchanged.
+  - solutions.md: I compared the old and new text word for word (whitespace normalised). It is identical apart from the s1 image swap, so the change is paragraph splits only.
+  - tasks.json, inquiry.json, exit-ticket.json and answers.py are unchanged.
+- **New images.** I looked at each one against its physics:
+  - `levyt`: field down from the + plate to the − plate, proton force down, electron force up.
+  - `kipina`: induced + on the handle, − on the finger, and the field lines point from the plate to the finger.
+  - s1 FBD: weight down, horizontal repulsion away from the other ball, tension along the thread. The drawn components close the triangle: T·cos α ≈ G and T·sin α ≈ F_s. No velocity or extra force is drawn, and the enlarged angle is stated in the text.
+  - hero: an illustration only.
+- **Recomputation.** My own script (`recalc.py` in the session scratchpad; it uses its own formulas and prints its values beside answers.py's) agrees on:
+  - the boxes;
+  - the spark paragraph: 9 kV, 0.9 µC, 4.05 mJ ≈ 4 mJ, and 0.05 C / 0.9 µC ≈ 5.6·10⁴ > 50 000;
+  - s1: 0.493 mN, 18.7 nC, 0.247 mN, 6.35 cm;
+  - s2: 184 pF, 0.830 µC, 1.87 mJ, 804 V, 0.334 mJ;
+  - s6: 40.2 km/s, 87.5 mN, 349 m/s, 1.76 kW;
+  - s7: 5.0 kV/m, 2.41·10¹¹ m/s², 98.2 km/s;
+  - s8: 17.3 mA, 65.6 mW, 127 Ω.
+- **Theory text.** The formulas and their stated conditions are correct: the parallel-plate condition, the work being path-independent, $\lvert Q\rvert U$ in the derivation, the dielectric strength giving $U_\text{max} = E_\text{max}d$, and the efficiency formula for perpendicular light marked as non-MAFY. The common mistakes are physically right. The scope stays within FY6 (plus FY4 for s6).
