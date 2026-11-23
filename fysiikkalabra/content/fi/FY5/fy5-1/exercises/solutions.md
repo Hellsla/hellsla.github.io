@@ -2,7 +2,7 @@
 **Annettu:** voima $F = 150\,\text{N}$ kohtisuoraan vartta vastaan, otekohdan etäisyys mutterin keskeltä $d = 0{,}25\,\text{m}$
 **Kysytty:** voiman momentti $M$ mutterin akselin suhteen yksikössä $\text{Nm}$
 **Periaate:** Mutteri kiertyy akselinsa ympäri, joten voiman vääntövaikutuksen kertoo sen momentti $M = Fr$. Voima on kohtisuorassa vartta vastaan, joten voiman varsi on koko etäisyys otekohtaan, $r = d$.
-**Kaava:** $M = Fr$ ja $r = d$, joten $M = Fd$
+**Kaava:** $$\begin{aligned} M &= Fr \\ r &= d \\ M &= Fd \end{aligned}$$
 **Muunnokset:** Voima on newtoneina ja etäisyys metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $M = 150\,\text{N}\cdot 0{,}25\,\text{m} = 37{,}5\,\text{Nm}$
 **Vastaus:** $37{,}5\,\text{Nm} \approx 38\,\text{Nm}$, kaksi merkitsevää numeroa kuten etäisyydessä $0{,}25\,\text{m}$.
@@ -12,7 +12,7 @@
 **Annettu:** työntövoima $F = 12\,\text{N}$ kohtisuoraan ovea vastaan, kahvan etäisyys saranoista $d = 0{,}80\,\text{m}$
 **Kysytty:** voiman momentti $M$ saranoiden suhteen yksikössä $\text{Nm}$
 **Periaate:** Ovi kiertyy saranoiden kautta kulkevan kiertoakselin ympäri, joten työnnön vääntövaikutuksen kertoo sen momentti. Työntö on kohtisuorassa ovea vastaan, joten voiman varsi on kahvan etäisyys saranoista.
-**Kaava:** $M = Fr$ ja $r = d$, joten $M = Fd$
+**Kaava:** $$\begin{aligned} M &= Fr \\ r &= d \\ M &= Fd \end{aligned}$$
 **Muunnokset:** Voima on newtoneina ja etäisyys metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $M = 12\,\text{N}\cdot 0{,}80\,\text{m} = 9{,}6\,\text{Nm}$
 **Vastaus:** $9{,}6\,\text{Nm}$, kaksi merkitsevää numeroa kuten voimassa $12\,\text{N}$ ja etäisyydessä $0{,}80\,\text{m}$.
@@ -22,7 +22,7 @@
 **Annettu:** tarvittava momentti $M = 45\,\text{Nm}$, otekohdan etäisyys $d = 0{,}30\,\text{m}$, voima kohtisuoraan vartta vastaan
 **Kysytty:** tarvittava voima $F$ yksikössä $\text{N}$
 **Periaate:** Mutterin kiristymisen ratkaisee momentti $M = Fr$. Voima on kohtisuorassa vartta vastaan, joten varsi on $r = d$, ja voima ratkaistaan momentin kaavasta.
-**Kaava:** $M = Fd$, josta $F = \dfrac{M}{d}$
+**Kaava:** $$\begin{aligned} M &= Fr \\ r &= d \\ M &= Fd \\ F &= \dfrac{M}{d} \end{aligned}$$
 **Muunnokset:** Momentti on newtonmetreinä ja etäisyys metreinä, joten voima saadaan suoraan newtoneina.
 **Sijoitus:** $F = \dfrac{45\,\text{Nm}}{0{,}30\,\text{m}} = 150\,\text{N}$
 **Vastaus:** $150\,\text{N} = 1{,}5 \cdot 10^{2}\,\text{N}$, kaksi merkitsevää numeroa kuten momentissa $45\,\text{Nm}$ ja etäisyydessä $0{,}30\,\text{m}$.
@@ -43,7 +43,7 @@
 **Annettu:** voima $F = 60\,\text{N}$, momentti $M = 18\,\text{Nm}$
 **Kysytty:** voiman varsi $r$ yksikössä $\text{m}$
 **Periaate:** Momentti on voiman ja voiman varren tulo $M = Fr$. Kun momentti ja voima tunnetaan, varsi ratkaistaan samasta kaavasta.
-**Kaava:** $M = Fr$, josta $r = \dfrac{M}{F}$
+**Kaava:** $$\begin{aligned} M &= Fr \\ r &= \dfrac{M}{F} \end{aligned}$$
 **Muunnokset:** Momentti on newtonmetreinä ja voima newtoneina, joten varsi saadaan suoraan metreinä: $\tfrac{\text{Nm}}{\text{N}} = \text{m}$.
 **Sijoitus:** $r = \dfrac{18\,\text{Nm}}{60\,\text{N}} = 0{,}30\,\text{m}$
 **Vastaus:** $0{,}30\,\text{m}$, kaksi merkitsevää numeroa kuten momentissa $18\,\text{Nm}$ ja voimassa $60\,\text{N}$.
@@ -96,7 +96,7 @@ Lauseke $M d\sin\alpha$ antaisi suuremman voiman pidemmällä avaimella, vaikka 
 **Annettu:** narun jännitysvoima $F = 40\,\text{N}$, kahvan etäisyys saranoista $d = 0{,}75\,\text{m}$, narun kulma oven tasoon nähden $\alpha = 35^\circ$
 **Kysytty:** narun voiman momentti $M$ saranoiden suhteen yksikössä $\text{Nm}$
 **Periaate:** Ovi kiertyy saranoiden ympäri, joten narun vääntövaikutuksen kertoo sen momentti $M = Fr$. Naru on vinossa ovea vastaan, joten varsi on lyhyempi kuin $d$. Oven taso kulkee saranoista kahvaan, joten kulma $35^\circ$ on voiman ja varren jatkeen välinen kulma, ja $r = d\sin\alpha$.
-**Kaava:** $M = Fr$ ja $r = d\sin\alpha$, joten $M = Fd\sin\alpha$
+**Kaava:** $$\begin{aligned} M &= Fr \\ r &= d\sin\alpha \\ M &= Fd\sin\alpha \end{aligned}$$
 **Muunnokset:** Voima on newtoneina ja etäisyys metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $M = 40\,\text{N}\cdot 0{,}75\,\text{m}\cdot\sin 35^\circ = 30\,\text{Nm}\cdot 0{,}5736 = 17{,}21\,\text{Nm}$
 **Vastaus:** $17\,\text{Nm}$, kaksi merkitsevää numeroa kuten voimassa $40\,\text{N}$ ja etäisyydessä $0{,}75\,\text{m}$.
@@ -106,7 +106,7 @@ Lauseke $M d\sin\alpha$ antaisi suuremman voiman pidemmällä avaimella, vaikka 
 **Annettu:** voima $F = 85\,\text{N}$ kohtisuoraan vartta vastaan, otekohdan etäisyys $d = 35\,\text{cm}$
 **Kysytty:** voiman momentti $M$ mutterin akselin suhteen yksikössä $\text{Nm}$
 **Periaate:** Mutteri kiertyy akselinsa ympäri, joten voiman vääntövaikutuksen kertoo sen momentti $M = Fr$. Voima on kohtisuorassa vartta vastaan, joten varsi on koko etäisyys otekohtaan.
-**Kaava:** $M = Fr$ ja $r = d$, joten $M = Fd$
+**Kaava:** $$\begin{aligned} M &= Fr \\ r &= d \\ M &= Fd \end{aligned}$$
 **Muunnokset:** Etäisyys muunnetaan metreiksi, jotta momentti saadaan newtonmetreinä: $d = 35\,\text{cm} = 35\cdot 0{,}01\,\text{m} = 0{,}35\,\text{m}$.
 **Sijoitus:** $M = 85\,\text{N}\cdot 0{,}35\,\text{m} = 29{,}75\,\text{Nm}$
 **Vastaus:** $30\,\text{Nm}$, kaksi merkitsevää numeroa kuten voimassa $85\,\text{N}$ ja etäisyydessä $35\,\text{cm}$.
@@ -116,7 +116,7 @@ Lauseke $M d\sin\alpha$ antaisi suuremman voiman pidemmällä avaimella, vaikka 
 **Annettu:** voima $F_1 = 30\,\text{N}$ ylöspäin etäisyydellä $r_1 = 0{,}50\,\text{m}$ akselista, voima $F_2 = 40\,\text{N}$ alaspäin etäisyydellä $r_2 = 0{,}20\,\text{m}$; lauta on vaakasuora ja akseli sen vasemmassa päässä
 **Kysytty:** kokonaismomentti $\Sigma M$ akselin suhteen yksikössä $\text{Nm}$, vastapäivään positiivisena
 **Periaate:** Lauta kiertyy akselin ympäri, ja sen kiertymisen ratkaisee kokonaismomentti, joka on voimien momenttien summa etumerkkeineen. Molemmat voimat ovat pystysuoria ja lauta vaakasuora, joten varret ovat etäisyydet akselista. Akselin oikealla puolella ylöspäin vaikuttava voima kiertää lautaa vastapäivään, alaspäin vaikuttava myötäpäivään.
-**Kaava:** $M_1 = F_1 r_1$ ja $M_2 = -F_2 r_2$, joten $\Sigma M = F_1 r_1 - F_2 r_2$
+**Kaava:** $$\begin{aligned} M_1 &= F_1 r_1 \\ M_2 &= -F_2 r_2 \\ \Sigma M &= M_1 + M_2 \\ \Sigma M &= F_1 r_1 - F_2 r_2 \end{aligned}$$
 **Muunnokset:** Voimat ovat newtoneina ja etäisyydet metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Sigma M = 30\,\text{N}\cdot 0{,}50\,\text{m} - 40\,\text{N}\cdot 0{,}20\,\text{m} = 15\,\text{Nm} - 8{,}0\,\text{Nm} = 7{,}0\,\text{Nm}$
 **Vastaus:** $7{,}0\,\text{Nm}$ vastapäivään, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -126,7 +126,7 @@ Lauseke $M d\sin\alpha$ antaisi suuremman voiman pidemmällä avaimella, vaikka 
 **Annettu:** tarvittava momentti $M = 50\,\text{Nm}$, vivun pituus eli otekohdan etäisyys akselista $d = 0{,}25\,\text{m}$, voiman ja vivun jatkeen välinen kulma $\alpha = 60^\circ$
 **Kysytty:** tarvittava voima $F$ yksikössä $\text{N}$
 **Periaate:** Venttiilin kääntymisen ratkaisee momentti $M = Fr$. Voima on vinossa vipua vastaan, joten sen varsi on $r = d\sin\alpha$, lyhyempi kuin vivun pituus. Voima ratkaistaan momentin kaavasta.
-**Kaava:** $M = Fd\sin\alpha$, josta $F = \dfrac{M}{d\sin\alpha}$
+**Kaava:** $$\begin{aligned} M &= Fr \\ r &= d\sin\alpha \\ M &= Fd\sin\alpha \\ F &= \dfrac{M}{d\sin\alpha} \end{aligned}$$
 **Muunnokset:** Momentti on newtonmetreinä ja etäisyys metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $F = \dfrac{50\,\text{Nm}}{0{,}25\,\text{m}\cdot\sin 60^\circ} = \dfrac{50\,\text{Nm}}{0{,}2165\,\text{m}} = 230{,}9\,\text{N}$
 **Vastaus:** $231\,\text{N} \approx 2{,}3 \cdot 10^{2}\,\text{N}$, kaksi merkitsevää numeroa kuten momentissa $50\,\text{Nm}$ ja pituudessa $0{,}25\,\text{m}$.
@@ -136,7 +136,7 @@ Lauseke $M d\sin\alpha$ antaisi suuremman voiman pidemmällä avaimella, vaikka 
 **Annettu:** taulukosta mittaussarja: varsi $r$ ja pienin voima $F$, jolla mutteri lähtee kiertymään (viisi mittausta); voima on kohtisuoraan vartta vastaan
 **Kysytty:** mutterin avaamiseen tarvittava momentti $M$ yksikössä $\text{Nm}$
 **Periaate:** Voima on kohtisuorassa vartta vastaan, joten varsi on $r$ ja momentti $M = Fr$. Mutteri lähtee kiertymään aina samalla momentilla, joten jokaisen mittauksen tulon $Fr$ pitäisi olla sama. Mittaukset vaihtelevat hieman, joten momentti arvioidaan tulojen keskiarvona.
-**Kaava:** $M_i = F_i r_i$ jokaiselle mittaukselle, ja $M = \dfrac{M_1 + M_2 + \ldots + M_5}{5}$
+**Kaava:** $$\begin{aligned} M_i &= F_i r_i \\ M &= \dfrac{M_1 + M_2 + \ldots + M_5}{5} \end{aligned}$$
 **Muunnokset:** Voimat ovat newtoneina ja varret metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** Tulot ovat $251\,\text{N}\cdot 0{,}10\,\text{m} = 25{,}1\,\text{Nm}$, $170\,\text{N}\cdot 0{,}15\,\text{m} = 25{,}5\,\text{Nm}$, $126\,\text{N}\cdot 0{,}20\,\text{m} = 25{,}2\,\text{Nm}$, $83\,\text{N}\cdot 0{,}30\,\text{m} = 24{,}9\,\text{Nm}$ ja $62\,\text{N}\cdot 0{,}40\,\text{m} = 24{,}8\,\text{Nm}$. Summa on $125{,}5\,\text{Nm}$, joten $M = 125{,}5\,\text{Nm} : 5 = 25{,}1\,\text{Nm}$.
 **Vastaus:** $25\,\text{Nm}$, kaksi merkitsevää numeroa kuten varsissa $r$. Tulot ovat lähes samat, joten voima on kääntäen verrannollinen varteen: kaksinkertainen varsi puolittaa tarvittavan voiman.
@@ -146,7 +146,7 @@ Lauseke $M d\sin\alpha$ antaisi suuremman voiman pidemmällä avaimella, vaikka 
 **Annettu:** taulukosta massat $m_A = 200\,\text{g}$, $m_B = 100\,\text{g}$ (vasemmalla, etäisyydet $0{,}300\,\text{m}$ ja $0{,}100\,\text{m}$) ja $m_C = 120\,\text{g}$, $m_D = 50{,}0\,\text{g}$ (oikealla, etäisyydet $0{,}400\,\text{m}$ ja $0{,}200\,\text{m}$); $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** punnusten painojen kokonaismomentti $\Sigma M$ akselin suhteen yksikössä $\text{Nm}$, vastapäivään positiivisena, sekä kepin kiertymissuunta
 **Periaate:** Punnusten painot ovat pystysuoria ja keppi vaakasuora, joten kunkin voiman varsi on punnuksen etäisyys akselista. Kokonaismomentti on momenttien summa etumerkkeineen. Akselin vasemmalla puolella alaspäin vetävä paino kiertää keppiä vastapäivään (positiivinen) ja oikealla puolella myötäpäivään (negatiivinen).
-**Kaava:** $G = mg$ ja $M = Gr$, joten $\Sigma M = g\,(m_A r_A + m_B r_B - m_C r_C - m_D r_D)$
+**Kaava:** $$\begin{aligned} G &= mg \\ M &= Gr \\ \Sigma M &= M_A + M_B - M_C - M_D \\ \Sigma M &= g\,(m_A r_A + m_B r_B - m_C r_C - m_D r_D) \end{aligned}$$
 **Muunnokset:** Massat muunnetaan kilogrammoiksi ja etäisyydet metreiksi: $m_A = 0{,}200\,\text{kg}$, $m_B = 0{,}100\,\text{kg}$, $m_C = 0{,}120\,\text{kg}$, $m_D = 0{,}0500\,\text{kg}$ ja $r_A = 0{,}300\,\text{m}$, $r_B = 0{,}100\,\text{m}$, $r_C = 0{,}400\,\text{m}$, $r_D = 0{,}200\,\text{m}$.
 **Sijoitus:** Vasemman puolen tulot ovat $$\begin{aligned} &0{,}200\cdot 0{,}300 + 0{,}100\cdot 0{,}100 \\ &= 0{,}0700\,\text{kg}\cdot\text{m} \end{aligned}$$ ja oikean puolen $$\begin{aligned} &0{,}120\cdot 0{,}400 + 0{,}0500\cdot 0{,}200 \\ &= 0{,}0580\,\text{kg}\cdot\text{m} \end{aligned}$$. Erotus on $0{,}0700\,\text{kg}\cdot\text{m} - 0{,}0580\,\text{kg}\cdot\text{m} = 0{,}0120\,\text{kg}\cdot\text{m}$, joten $\Sigma M = 9{,}81\,\text{m/s}^2\cdot 0{,}0120\,\text{kg}\cdot\text{m} = 0{,}1177\,\text{Nm}$.
 **Vastaus:** $0{,}118\,\text{Nm}$ vastapäivään, kolme merkitsevää numeroa kuten massoissa ja etäisyyksissä. Kokonaismomentti on positiivinen, joten keppi alkaa kiertyä vastapäivään eli vasen pää laskeutuu.
@@ -156,7 +156,7 @@ Lauseke $M d\sin\alpha$ antaisi suuremman voiman pidemmällä avaimella, vaikka 
 **Annettu:** voima $F = 90\,\text{N}$ kohtisuoraan vartta vastaan, mitattu etäisyys avaimen pään reunasta käteen $0{,}270\,\text{m}$, mutterin keskikohta $0{,}030\,\text{m}$:n päässä reunasta kohti kättä
 **Kysytty:** voiman momentti $M$ mutterin akselin suhteen yksikössä $\text{Nm}$ ja oppilaan virhe
 **Periaate:** Varsi mitataan kiertoakselista, joka on mutterin keskikohta, ei avaimen reunasta. Oppilas mittasi pituuden avaimen reunasta, joten mittaukseen sisältyy matka $0{,}030\,\text{m}$ reunasta akselille, joka on akselin toisella puolella eikä kuulu varteen. Voima on kohtisuorassa vartta vastaan, joten oikea varsi on akselin etäisyys käteen.
-**Kaava:** $r = d - e$ ja $M = Fr$, joten $M = F\,(d - e)$, missä $d$ on mitattu pituus ja $e$ matka reunasta akselille
+**Kaava:** $$\begin{aligned} r &= d - e \\ M &= Fr \\ M &= F\,(d - e) \end{aligned}$$
 **Muunnokset:** Kaikki pituudet ovat metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $r = 0{,}270\,\text{m} - 0{,}030\,\text{m} = 0{,}240\,\text{m}$ ja $M = 90\,\text{N}\cdot 0{,}240\,\text{m} = 21{,}6\,\text{Nm}$
 **Vastaus:** $21{,}6\,\text{Nm} \approx 22\,\text{Nm}$, kaksi merkitsevää numeroa kuten voimassa $90\,\text{N}$. Oppilaan virhe oli mitata varsi avaimen reunasta eikä kiertoakselista, jolloin varsi ja momentti tulivat liian suuriksi.
@@ -168,7 +168,7 @@ Lauseke $M d\sin\alpha$ antaisi suuremman voiman pidemmällä avaimella, vaikka 
 **Periaate:** Kampi kiertyy akselinsa ympäri, joten jalan voiman vääntövaikutuksen kertoo sen momentti $M = Fr$. Voima on pystysuora, joten sen vaikutussuora on polkimen kautta kulkeva pystysuora, ja varsi on polkimen vaakasuora etäisyys akselista.
 
 Se on suurin, kun kampi on vaakasuorassa ($r = d$), ja nolla, kun kampi on pystysuorassa, koska silloin vaikutussuora kulkee akselin kautta. Asennossa $45^\circ$ vaakasuora etäisyys on kulman viereinen kateetti.
-**Kaava:** $M = Fr$ ja $r = d\cos 45^\circ$, joten $M = Fd\cos 45^\circ$
+**Kaava:** $$\begin{aligned} M &= Fr \\ r &= d\cos 45^\circ \\ M &= Fd\cos 45^\circ \end{aligned}$$
 **Muunnokset:** Voima on newtoneina ja etäisyys metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $M = 500\,\text{N}\cdot 0{,}175\,\text{m}\cdot\cos 45^\circ = 87{,}5\,\text{Nm}\cdot 0{,}7071 = 61{,}87\,\text{Nm}$
 **Vastaus:** $61{,}9\,\text{Nm}$, kolme merkitsevää numeroa kuten etäisyydessä $0{,}175\,\text{m}$. Momentti on suurin, $87{,}5\,\text{Nm}$, kun kampi on vaakasuorassa eteenpäin, ja nolla, kun kampi osoittaa suoraan alas tai ylös.
@@ -178,7 +178,7 @@ Se on suurin, kun kampi on vaakasuorassa ($r = d$), ja nolla, kun kampi on pysty
 **Annettu:** aikuisen voima $F_1 = 50\,\text{N}$ ja varsi $r_1 = 0{,}40\,\text{m}$, lapsen voima $F_2 = 20\,\text{N}$; molemmat työntävät kohtisuoraan porttia vastaan
 **Kysytty:** lapsen työnnön etäisyys $r_2$ saranoista yksikössä $\text{m}$
 **Periaate:** Vääntövaikutukset ovat yhtä suuret, kun momentit saranoiden suhteen ovat yhtä suuret. Kohtisuoran työnnön varsi on työntökohdan etäisyys saranoista, joten pienempi voima tarvitsee pidemmän varren.
-**Kaava:** $F_2 r_2 = F_1 r_1$, josta $r_2 = \dfrac{F_1 r_1}{F_2}$
+**Kaava:** $$\begin{aligned} M_2 &= M_1 \\ F_2 r_2 &= F_1 r_1 \\ r_2 &= \dfrac{F_1 r_1}{F_2} \end{aligned}$$
 **Muunnokset:** Voimat ovat newtoneina ja varsi metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $r_2 = \dfrac{50\,\text{N}\cdot 0{,}40\,\text{m}}{20\,\text{N}} = \dfrac{20\,\text{Nm}}{20\,\text{N}} = 1{,}0\,\text{m}$
 **Vastaus:** $1{,}0\,\text{m}$, kaksi merkitsevää numeroa kuten voimissa ja etäisyydessä $0{,}40\,\text{m}$.
@@ -188,7 +188,7 @@ Se on suurin, kun kampi on vaakasuorassa ($r = d$), ja nolla, kun kampi on pysty
 **Annettu:** kummankin käden voima $F = 120\,\text{N}$, vasen alaspäin ja oikea ylöspäin, kummankin vaikutuskohdan etäisyys mutterin keskeltä $d = 0{,}20\,\text{m}$; varret vaakasuorassa
 **Kysytty:** käsien voimien summa ja kokonaismomentti $\Sigma M$ mutterin akselin suhteen yksikössä $\text{Nm}$
 **Periaate:** Voimat ovat yhtä suuret ja vastakkaissuuntaiset, joten niiden summa on nolla eikä avain siirry. Kiertymisen ratkaisee kuitenkin kokonaismomentti. Molemmat voimat ovat pystysuoria ja varret vaakasuoria, joten kummankin varsi on $d$. Akselin vasemmalla puolella alaspäin ja oikealla puolella ylöspäin vaikuttava voima kiertävät molemmat vastapäivään, joten momentit ovat samanmerkkiset ja summautuvat.
-**Kaava:** $\Sigma F = F - F$ ja $\Sigma M = Fd + Fd$, joten $\Sigma M = 2Fd$
+**Kaava:** $$\begin{aligned} \Sigma F &= F - F = 0 \\ M_1 &= Fd \\ M_2 &= Fd \\ \Sigma M &= M_1 + M_2 = 2Fd \end{aligned}$$
 **Muunnokset:** Voimat ovat newtoneina ja etäisyydet metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Sigma F = 120\,\text{N} - 120\,\text{N} = 0$ ja $\Sigma M = 2\cdot 120\,\text{N}\cdot 0{,}20\,\text{m} = 48\,\text{Nm}$
 **Vastaus:** Voimien summa on nolla, ja kokonaismomentti on $48\,\text{Nm}$ vastapäivään, kaksi merkitsevää numeroa kuten etäisyydessä $0{,}20\,\text{m}$.
@@ -198,7 +198,7 @@ Se on suurin, kun kampi on vaakasuorassa ($r = d$), ja nolla, kun kampi on pysty
 **Annettu:** polkimen voima $F_\text{p} = 450\,\text{N}$ kohtisuoraan kampea vastaan, kammen pituus $d = 0{,}175\,\text{m}$, etuhammaspyörän säde $R = 0{,}100\,\text{m}$, takahammaspyörän säde vaihteella 1 taulukosta $r_1 = 9{,}00\,\text{cm}$ (vaihteilla 2 ja 3 $6{,}00\,\text{cm}$ ja $4{,}00\,\text{cm}$)
 **Kysytty:** ketjun voima $F_\text{k}$ ja sen momentti $M$ takapyörän akselin suhteen vaihteella 1 yksikössä $\text{Nm}$; momentit vaihteilla 2 ja 3
 **Periaate:** Polkimen voiman momentti kammen akselin suhteen on $M = Fr$. Tehtävässä kampi ja etuhammaspyörä pyörivät tasaisesti, joten polkimen voiman momentti ja ketjun voiman momentti ovat yhtä suuret (ja vastakkaissuuntaiset). Ketjun voima on sama kummassakin hammaspyörässä, joten takapyörän momentti on tämä voima kertaa takahammaspyörän säde.
-**Kaava:** $M_\text{p} = F_\text{p} d$ ja $M_\text{p} = F_\text{k} R$, joten $F_\text{k} = \dfrac{F_\text{p} d}{R}$; takapyörälle $M = F_\text{k} r$
+**Kaava:** $$\begin{aligned} M_\text{p} &= F_\text{p} d \\ M_\text{p} &= F_\text{k} R \\ F_\text{k} &= \dfrac{F_\text{p} d}{R} \\ M &= F_\text{k} r \end{aligned}$$
 **Muunnokset:** Takahammaspyörän säteet muunnetaan metreiksi: $r_1 = 9{,}00\,\text{cm} = 0{,}0900\,\text{m}$, $r_2 = 0{,}0600\,\text{m}$ ja $r_3 = 0{,}0400\,\text{m}$.
 **Sijoitus:** Kammen momentti on $M_\text{p} = 450\,\text{N}\cdot 0{,}175\,\text{m} = 78{,}75\,\text{Nm}$, ja ketjun voima on $F_\text{k} = \dfrac{78{,}75\,\text{Nm}}{0{,}100\,\text{m}} = 787{,}5\,\text{N}$. Vaihteella 1: $M = 787{,}5\,\text{N}\cdot 0{,}0900\,\text{m} = 70{,}875\,\text{Nm}$, vaihteella 2: $$787{,}5\,\text{N}\cdot 0{,}0600\,\text{m} = 47{,}25\,\text{Nm}$$ ja vaihteella 3: $787{,}5\,\text{N}\cdot 0{,}0400\,\text{m} = 31{,}5\,\text{Nm}$.
 **Vastaus:** $70{,}9\,\text{Nm}$, kolme merkitsevää numeroa kuten annetuissa tiedoissa.
@@ -212,7 +212,7 @@ Jyrkkään ylämäkeen valitaan vaihde 1, koska suurin takahammaspyörä antaa s
 **Annettu:** tarvittava momentti $M = 60{,}0\,\text{Nm}$, taulukosta avaimet A: $d = 0{,}250\,\text{m}$, $\alpha = 90^\circ$; B: $d = 0{,}400\,\text{m}$, $\alpha = 65^\circ$; C: $d = 0{,}600\,\text{m}$, $\alpha = 30^\circ$; henkilön suurin voima $170\,\text{N}$
 **Kysytty:** kunkin avaimen vaatima pienin voima $F$ yksikössä $\text{N}$ ja valittavan avaimen vaatima voima
 **Periaate:** Mutteri lähtee kiertymään, kun momentti on vähintään $60{,}0\,\text{Nm}$. Kulma $\alpha$ on voiman ja varren jatkeen välinen kulma, joten voiman varsi on $r = d\sin\alpha$, ja pienin voima saadaan, kun momentti on juuri $60{,}0\,\text{Nm}$. Avaimen kannattavuuden ratkaisee varsi $r$, ei pelkkä pituus $d$.
-**Kaava:** $M = Fd\sin\alpha$, josta $F = \dfrac{M}{d\sin\alpha}$
+**Kaava:** $$\begin{aligned} M &= Fr \\ r &= d\sin\alpha \\ M &= Fd\sin\alpha \\ F &= \dfrac{M}{d\sin\alpha} \end{aligned}$$
 **Muunnokset:** Pituudet ovat metreinä ja momentti newtonmetreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** Avain A: $r = 0{,}250\,\text{m}\cdot\sin 90^\circ = 0{,}250\,\text{m}$ ja $F = 60{,}0\,\text{Nm} : 0{,}250\,\text{m} = 240\,\text{N}$. Avain B: $r = 0{,}400\,\text{m}\cdot\sin 65^\circ = 0{,}3625\,\text{m}$ ja $F = 60{,}0\,\text{Nm} : 0{,}3625\,\text{m} = 165{,}5\,\text{N}$. Avain C: $r = 0{,}600\,\text{m}\cdot\sin 30^\circ = 0{,}300\,\text{m}$ ja $F = 60{,}0\,\text{Nm} : 0{,}300\,\text{m} = 200\,\text{N}$.
 **Vastaus:** $166\,\text{N}$ avaimella B, kolme merkitsevää numeroa kuten momentissa ja pituudessa. Vain avain B on käyttökelpoinen, koska avaimet A ja C vaatisivat $240\,\text{N}$ ja $200\,\text{N}$. Pisin avain C ei ole paras, koska sen varsi $0{,}300\,\text{m}$ on vinon vedon takia lyhyempi kuin avaimen B varsi.
@@ -223,7 +223,7 @@ Jyrkkään ylämäkeen valitaan vaihde 1, koska suurin takahammaspyörä antaa s
 **Kysytty:** voiman momentti $M$ akselin $O$ suhteen yksikössä $\text{Nm}$
 **Periaate:** Sauva kiertyy akselin $O$ ympäri, joten voiman vääntövaikutuksen kertoo momentti $M = Fr$. Sauvaa vastaan kohtisuoran voiman varsi on koko sauva: vaikutussuora on kohtisuorassa sauvaa $OP$ vastaan kohdassa $P$, joten $r = OP$.
 **Kuvaajan lukeminen:** Piste $P$ on neljä ruutua oikealla ja kolme ruutua ylempänä kuin $O$. Sauva $OP$ on suorakulmaisen kolmion hypotenuusa, jonka kateetit ovat $4$ ja $3$ ruutua. Sen pituus on siis $\sqrt{4^2 + 3^2} = 5$ ruutua.
-**Kaava:** $M = Fr$, missä $r = OP$
+**Kaava:** $$\begin{aligned} M &= Fr \\ r &= OP \\ M &= F\,OP \end{aligned}$$
 **Muunnokset:** $r = 5\cdot 0{,}10\,\text{m} = 0{,}50\,\text{m}$
 **Sijoitus:** $M = 30\,\text{N}\cdot 0{,}50\,\text{m} = 15\,\text{Nm}$
 **Vastaus:** $15\,\text{Nm}$, kaksi merkitsevää numeroa kuten voimassa $30\,\text{N}$; sauvan pituus luetaan ruudukosta tarkasti.
