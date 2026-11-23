@@ -3,87 +3,7 @@
 > **Tutkimuskysymys:** Kuinka suuri on kevyen pallon muotokerroin, kun se määritetään pallon rajanopeudesta?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: kevyt pallo putoaa luokan seinällä olevan pitkän mitta-asteikon edessä. Pallon paikka on piirretty tasaisin aikavälein: välit kasvavat ensin ja tasaantuvat sitten. Huoneen toisella puolella opiskelija kuvaa putoamista videolle kolmijalan päällä olevalla puhelimella, joka on putoamisen alaosan korkeudella." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy10mh-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#dfe9ef"/></linearGradient><linearGradient id="fy10mh-win" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient><linearGradient id="fy10mh-floor" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#fy10mh-wall)"/>
-  <rect x="100" y="110" width="210" height="230" rx="4" fill="url(#fy10mh-win)" stroke="#1f2933" stroke-width="3"/>
-  <path d="M146,215 Q145.5,200.5 162,202.5 Q169,187.5 185.5,192.5 Q201,184 209,200 Q224.5,201.5 222.5,215 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <line x1="205" y1="110" x2="205" y2="340" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="100" y1="225" x2="310" y2="225" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="88" y="340" width="234" height="14" rx="3" fill="#c9c2b2" stroke="#1f2933" stroke-width="3"/>
-  <rect x="0" y="514" width="1200" height="16" fill="#e3dccb" stroke="#1f2933" stroke-width="2"/>
-  <rect x="0" y="530" width="1200" height="70" fill="url(#fy10mh-floor)"/>
-  <line x1="0" y1="550" x2="1200" y2="547" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="570" x2="1200" y2="567" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="590" x2="1200" y2="587" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="530" x2="1200" y2="530" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="500" y="30" width="60" height="500" rx="3" fill="#ffe8a3" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="500" y1="520" x2="528" y2="520" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="510" x2="514" y2="510" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="500" x2="514" y2="500" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="490" x2="514" y2="490" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="480" x2="514" y2="480" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="470" x2="528" y2="470" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="460" x2="514" y2="460" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="450" x2="514" y2="450" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="440" x2="514" y2="440" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="430" x2="514" y2="430" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="420" x2="528" y2="420" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="410" x2="514" y2="410" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="400" x2="514" y2="400" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="390" x2="514" y2="390" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="380" x2="514" y2="380" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="370" x2="528" y2="370" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="360" x2="514" y2="360" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="350" x2="514" y2="350" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="340" x2="514" y2="340" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="330" x2="514" y2="330" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="320" x2="528" y2="320" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="310" x2="514" y2="310" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="300" x2="514" y2="300" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="290" x2="514" y2="290" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="280" x2="514" y2="280" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="270" x2="528" y2="270" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="260" x2="514" y2="260" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="250" x2="514" y2="250" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="240" x2="514" y2="240" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="230" x2="514" y2="230" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="220" x2="528" y2="220" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="210" x2="514" y2="210" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="200" x2="514" y2="200" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="190" x2="514" y2="190" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="180" x2="514" y2="180" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="170" x2="528" y2="170" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="160" x2="514" y2="160" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="150" x2="514" y2="150" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="140" x2="514" y2="140" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="130" x2="514" y2="130" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="120" x2="528" y2="120" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="110" x2="514" y2="110" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="100" x2="514" y2="100" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="90" x2="514" y2="90" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="80" x2="514" y2="80" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="70" x2="528" y2="70" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="60" x2="514" y2="60" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="50" x2="514" y2="50" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="500" y1="40" x2="514" y2="40" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <path d="M921,384 L560,296 L560,516 Z" fill="#ffffff" opacity="0.55"/>
-  <g opacity="1.0"><circle cx="534" cy="60" r="23" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/><path d="M530,88 L534,82 L538,88 Z" fill="#2b8a3e"/><path d="M521.5,55.5 Q522.5,46 531.5,45" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/></g>
-  <g opacity="0.45"><circle cx="534" cy="78" r="23" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/><path d="M530,106 L534,100 L538,106 Z" fill="#2b8a3e"/><path d="M521.5,73.5 Q522.5,64.5 531.5,63" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/></g>
-  <g opacity="0.45"><circle cx="534" cy="123.5" r="23" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/><path d="M530,151.5 L534,145.5 L538,151.5 Z" fill="#2b8a3e"/><path d="M521.5,119 Q522.5,109.5 531.5,108.5" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/></g>
-  <g opacity="0.45"><circle cx="534" cy="181" r="23" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/><path d="M530,209 L534,203 L538,209 Z" fill="#2b8a3e"/><path d="M521.5,176.5 Q522.5,167.5 531.5,166" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/></g>
-  <g opacity="0.45"><circle cx="534" cy="243.5" r="23" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/><path d="M530,271.5 L534,265.5 L538,271.5 Z" fill="#2b8a3e"/><path d="M521.5,238.5 Q522.5,229.5 531.5,228.5" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/></g>
-  <g opacity="0.45"><circle cx="534" cy="307" r="23" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/><path d="M530,335 L534,329 L538,335 Z" fill="#2b8a3e"/><path d="M521.5,302.5 Q522.5,293 531.5,292" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/></g>
-  <g opacity="0.45"><circle cx="534" cy="371" r="23" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/><path d="M530,399 L534,393 L538,399 Z" fill="#2b8a3e"/><path d="M521.5,366 Q522.5,357 531.5,356" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/></g>
-  <g opacity="0.45"><circle cx="534" cy="435" r="23" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/><path d="M530,463 L534,457 L538,463 Z" fill="#2b8a3e"/><path d="M521.5,430.5 Q522.5,421 531.5,420" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/></g>
-  <g opacity="1.0"><circle cx="534" cy="499" r="23" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/><path d="M530,527 L534,521 L538,527 Z" fill="#2b8a3e"/><path d="M521.5,494.5 Q522.5,485 531.5,484" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/></g>
-  <line x1="930" y1="446" x2="936" y2="528" stroke="#6c757d" stroke-width="4" stroke-linecap="butt"/>
-  <line x1="930" y1="446" x2="884" y2="528" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
-  <line x1="930" y1="446" x2="976" y2="528" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
-  <line x1="930" y1="446" x2="930" y2="436" stroke="#1f2933" stroke-width="5" stroke-linecap="butt"/>
-  <rect x="914" y="430" width="32" height="10" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="921" y="368" width="16" height="64" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="921" cy="384" r="5" fill="#1f2933"/>
-  <g transform="translate(2060,0) scale(-1,1)"><path d="M1030,394 L1004.5,525" fill="none" stroke="#1f2933" stroke-width="25.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M987.5,530 h37.5" fill="none" stroke="#6c757d" stroke-width="13.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M1028,278.5 L1120,402" fill="none" stroke="#1971c2" stroke-width="20.4" stroke-linejoin="round" stroke-linecap="round"/><path d="M998,258 Q1060.5,232.5 1053,309 L1050.5,402.5 H999.5 Z" fill="#1971c2" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/><path d="M1030,394 L1055.5,525" fill="none" stroke="#1f2933" stroke-width="25.5" stroke-linejoin="round" stroke-linecap="round"/><path d="M1069,530 h37.5" fill="none" stroke="#6c757d" stroke-width="13.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M1033,275 L1120,402" fill="none" stroke="#1971c2" stroke-width="20.4" stroke-linejoin="round" stroke-linecap="round"/><circle cx="1120" cy="402" r="11.05" fill="#f1dfb5"/><rect x="1020.5" y="224" width="17" height="25.5" fill="#f1dfb5"/><circle cx="1029" cy="202" r="28.9" fill="#f1dfb5"/><path d="M1000,207 Q998.5,169.5 1031,171.5 Q1058,173 1058,193.5 Q1029,186.5 1000,207 Z" fill="#1f2933" stroke-linejoin="round"/></g>
+  <image href="pics/fy10/fy10-muotokerroin-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 Pudotettu ilmapallo tai kevyt jumppapallo ei kiihdy samalla tavalla kuin pieni ja painava kuula, koska ilma vastustaa sen liikettä. Kuinka voimakkaasti ilma vastustaa, riippuu kappaleen koosta, nopeudesta ja muodosta. Muodon vaikutusta kuvataan luvulla, jota kutsutaan **muotokertoimeksi**. Tässä tutkimuksessa kuvaat pallon putoamisen videolle ja määrität mittauksistasi pallon muotokertoimen. Mittaa, analysoi ja päättele itse: tämä sivu kertoo, mitä tutkitaan, ja tukee sinua niin paljon kuin valitsemasi työtapa lupaa.
@@ -124,65 +44,13 @@ Ilmanvastus $\overline{F}_\text{v}$ osoittaa pallon nopeutta vastaan, ja sen suu
 Palloon vaikuttaa lisäksi ilman noste $\overline{F}_\text{noste}$, joka osoittaa ylös. Raskaalla ja pienellä kappaleella noste on painoon verrattuna mitätön, mutta suurella ja kevyellä pallolla, kuten ilmapallolla, se on suuri: ilmapallon noste voi olla moninkertainen pallon kumikalvon painoon verrattuna. Rajanopeudella ilmanvastus on siis yhtä suuri kuin painon ja nosteen erotus, $F_\text{v} = G - F_\text{noste}$, kuten alla olevassa voimakuviossa. Paino $G$ sisältää tässä myös pallon sisällä olevan ilman painon.
 
 <svg data-fig="setup" viewBox="0 0 600 420" role="img" aria-label="Kaaviokuva. Vasemmalla tilannekuva: pallo putoaa pystysuoran mitta-asteikon vieressä. Pallon paikat on piirretty tasaisin aikavälein: ylhäällä välit kasvavat, alhaalla ne ovat yhtä suuret. Alimman pallon vieressä on sininen nopeusnuoli alaspäin. Oikealla voimakuvio rajanopeudella: pallo on suorakulmio, paino G lähtee keskipisteestä alas, noste F_noste keskipisteen vierestä ylös ja ilmanvastus F_v alapinnasta ylös. Ilmapallolla noste on lähes yhtä pitkä kuin paino ja ilmanvastus lyhyt: ylöspäin osoittavat nuolet ovat yhteensä yhtä pitkät kuin paino, joten voimat kumoavat toisensa, F_v on G miinus F_noste. Nopeusnuoli alas on piirretty suorakulmion viereen." style="max-width:100%;font-size:24px">
-  <line x1="300" y1="20" x2="300" y2="400" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 6"/>
+  <image href="pics/fy10/fy10-muotokerroin-setup.webp" x="0" y="0" width="600" height="426.2" preserveAspectRatio="none"/>
   <foreignObject x="102.5" y="11.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{tilanne}$</div></foreignObject>
   <foreignObject x="358.5" y="11.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{rajanopeudella}$</div></foreignObject>
-  <rect x="70" y="60" width="30" height="330" rx="3" fill="#ffe8a3" stroke="#1f2933" stroke-width="2"/>
-  <line x1="70" y1="380" x2="86" y2="380" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="370" x2="78" y2="370" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="360" x2="78" y2="360" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="350" x2="78" y2="350" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="340" x2="78" y2="340" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="330" x2="86" y2="330" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="320" x2="78" y2="320" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="310" x2="78" y2="310" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="300" x2="78" y2="300" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="290" x2="78" y2="290" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="280" x2="86" y2="280" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="270" x2="78" y2="270" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="260" x2="78" y2="260" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="250" x2="78" y2="250" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="240" x2="78" y2="240" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="230" x2="86" y2="230" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="220" x2="78" y2="220" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="210" x2="78" y2="210" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="200" x2="78" y2="200" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="190" x2="78" y2="190" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="180" x2="86" y2="180" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="170" x2="78" y2="170" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="160" x2="78" y2="160" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="150" x2="78" y2="150" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="140" x2="78" y2="140" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="130" x2="86" y2="130" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="120" x2="78" y2="120" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="110" x2="78" y2="110" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="100" x2="78" y2="100" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="90" x2="78" y2="90" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="80" x2="86" y2="80" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="70" x2="78" y2="70" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <line x1="70" y1="60" x2="78" y2="60" stroke="#1f2933" stroke-width="1.2" stroke-linecap="butt"/>
-  <g opacity="0.45"><circle cx="130" cy="76" r="14" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/><path d="M127.5,95 L130,89 L132.5,95 Z" fill="#2b8a3e"/><path d="M122.5,73 Q123,67.5 128.5,67" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/></g>
-  <g opacity="0.45"><circle cx="130" cy="95" r="14" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/><path d="M127.5,114 L130,108 L132.5,114 Z" fill="#2b8a3e"/><path d="M122.5,92 Q123,86.5 128.5,85.5" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/></g>
-  <g opacity="0.45"><circle cx="130" cy="139.5" r="14" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/><path d="M127.5,158.5 L130,152.5 L132.5,158.5 Z" fill="#2b8a3e"/><path d="M122.5,136.5 Q123,131 128.5,130" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/></g>
-  <g opacity="0.45"><circle cx="130" cy="193.5" r="14" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/><path d="M127.5,212.5 L130,206.5 L132.5,212.5 Z" fill="#2b8a3e"/><path d="M122.5,191 Q123,185 128.5,184.5" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/></g>
-  <g opacity="0.45"><circle cx="130" cy="250.5" r="14" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/><path d="M127.5,269.5 L130,263.5 L132.5,269.5 Z" fill="#2b8a3e"/><path d="M122.5,247.5 Q123,242 128.5,241.5" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/></g>
-  <g opacity="0.45"><circle cx="130" cy="308" r="14" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/><path d="M127.5,327 L130,321 L132.5,327 Z" fill="#2b8a3e"/><path d="M122.5,305.5 Q123,300 128.5,299" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/></g>
-  <g opacity="1.0"><circle cx="130" cy="366" r="14" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/><path d="M127.5,385 L130,379 L132.5,385 Z" fill="#2b8a3e"/><path d="M122.5,363 Q123,357.5 128.5,357" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/></g>
-  <line x1="178" y1="300" x2="178" y2="372" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M170,362 L178,378 L186,362" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="194" y="321.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <rect x="385" y="157" width="90" height="56" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="430" y1="185" x2="430" y2="298" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M430,315 L422,297 L438,297 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="437.5" y="296.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="450" y1="185" x2="450" y2="102" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M450,85 L458,103 L442,103 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="454.5" y="74.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{noste}$</div></foreignObject>
-  <line x1="408" y1="243" x2="408" y2="230" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M408,213 L416,231 L400,231 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="351.5" y="228.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{v}$</div></foreignObject>
-  <line x1="540" y1="200" x2="540" y2="278" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M533.5,267 L540,280 L546.5,267" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="545.5" y="255.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
   <foreignObject x="377.5" y="365.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$F_\text{v} = G - F_\text{noste}$</div></foreignObject>
 </svg>

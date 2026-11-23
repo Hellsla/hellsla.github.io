@@ -3,102 +3,7 @@
 > **Tutkimuskysymys:** Kuinka pitkän matkan hissi kulkee, kun matka päätellään pelkästä kiihtyvyysmittauksesta, ja kuinka hyvin tulos vastaa todellista matkaa?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: läpileikkaus nelikerroksisesta koulurakennuksesta. Keskellä on hissikuilu, jossa hissikori on kahden kerroksen välissä matkalla. Korissa seisoo opiskelija, ja korin lattialla on puhelin. Kuilussa kulkee kori köysissä, ja vastapaino on alempana kuilun reunalla. Vasemmalla portaat nousevat toisesta kerroksesta välipohjan aukon kautta kolmanteen kerrokseen. Portaiden alapäässä toinen opiskelija mittaa viivaimella yhden askelman nousua: askelmien määrä kertaa nousu on kerroskorkeus lattiasta seuraavan kerroksen lattiaan. Oikealla kerroksissa on ikkunat." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy10hh-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#dfe9ef"/></linearGradient><linearGradient id="fy10hh-win800436" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe8fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="fy10hh-win990436" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe8fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="fy10hh-win800304" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe8fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="fy10hh-win990304" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe8fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="fy10hh-win800172" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe8fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="fy10hh-win990172" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe8fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="fy10hh-win80040" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe8fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient><linearGradient id="fy10hh-win99040" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe8fb"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#fy10hh-wall)"/>
-  <rect x="480" y="0" width="240" height="600" fill="#d5dde4"/>
-  <line x1="506" y1="0" x2="506" y2="600" stroke="#8a96a3" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="694" y1="0" x2="694" y2="600" stroke="#8a96a3" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="0" y="568" width="480" height="16" fill="#b9c0c7" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="720" y="568" width="480" height="16" fill="#b9c0c7" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="0" y="436" width="480" height="16" fill="#b9c0c7" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="720" y="436" width="480" height="16" fill="#b9c0c7" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="0" y="304" width="150" height="16" fill="#b9c0c7" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="420" y="304" width="60" height="16" fill="#b9c0c7" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="720" y="304" width="480" height="16" fill="#b9c0c7" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="0" y="172" width="480" height="16" fill="#b9c0c7" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="720" y="172" width="480" height="16" fill="#b9c0c7" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="0" y="40" width="480" height="16" fill="#b9c0c7" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="720" y="40" width="480" height="16" fill="#b9c0c7" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="0" y="562" width="480" height="6" fill="#d9b26a"/>
-  <rect x="720" y="562" width="480" height="6" fill="#d9b26a"/>
-  <rect x="466" y="472" width="14" height="96" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <rect x="0" y="430" width="480" height="6" fill="#d9b26a"/>
-  <rect x="720" y="430" width="480" height="6" fill="#d9b26a"/>
-  <rect x="466" y="340" width="14" height="96" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <rect x="0" y="298" width="150" height="6" fill="#d9b26a"/>
-  <rect x="420" y="298" width="60" height="6" fill="#d9b26a"/>
-  <rect x="720" y="298" width="480" height="6" fill="#d9b26a"/>
-  <rect x="466" y="208" width="14" height="96" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <rect x="0" y="166" width="480" height="6" fill="#d9b26a"/>
-  <rect x="720" y="166" width="480" height="6" fill="#d9b26a"/>
-  <rect x="466" y="76" width="14" height="96" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <rect x="477" y="0" width="3" height="600" fill="#1f2933"/>
-  <rect x="720" y="0" width="3" height="600" fill="#1f2933"/>
-  <rect x="800" y="478" width="130" height="62" rx="3" fill="url(#fy10hh-win800436)" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="865" y1="478" x2="865" y2="540" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="990" y="478" width="130" height="62" rx="3" fill="url(#fy10hh-win990436)" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="1055" y1="478" x2="1055" y2="540" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="800" y="346" width="130" height="62" rx="3" fill="url(#fy10hh-win800304)" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="865" y1="346" x2="865" y2="408" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="990" y="346" width="130" height="62" rx="3" fill="url(#fy10hh-win990304)" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="1055" y1="346" x2="1055" y2="408" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="800" y="214" width="130" height="62" rx="3" fill="url(#fy10hh-win800172)" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="865" y1="214" x2="865" y2="276" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="990" y="214" width="130" height="62" rx="3" fill="url(#fy10hh-win990172)" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="1055" y1="214" x2="1055" y2="276" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="800" y="82" width="130" height="62" rx="3" fill="url(#fy10hh-win80040)" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="865" y1="82" x2="865" y2="144" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="990" y="82" width="130" height="62" rx="3" fill="url(#fy10hh-win99040)" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="1055" y1="82" x2="1055" y2="144" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <circle cx="640" cy="22" r="14" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="585" y1="24" x2="585" y2="214" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="593" y1="24" x2="593" y2="214" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="591" y1="10" x2="640" y2="10" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="690" y1="22" x2="690" y2="420" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <rect x="678" y="420" width="24" height="110" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="508" y="214" width="156" height="142" rx="4" fill="#eef2f5" stroke="#1f2933" stroke-width="3"/>
-  <rect x="508" y="344" width="156" height="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="650" y1="268" x2="650" y2="296" stroke="#8a96a3" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M551.5,344 L553.5,294.5 H566.5 L568.5,344 H562 L560,311 L558,344 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M549,298 Q547.5,261.5 560,259.5 Q572.5,261.5 571,298 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <path d="M550,266 L547,298" fill="none" stroke="#1971c2" stroke-width="7.26" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="547" cy="300.5" r="3.63" fill="#f1dfb5"/>
-  <path d="M570,266 L573,298" fill="none" stroke="#1971c2" stroke-width="7.26" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="573" cy="300.5" r="3.63" fill="#f1dfb5"/>
-  <rect x="557" y="253" width="6" height="8" fill="#f1dfb5"/>
-  <circle cx="560" cy="246.5" r="9.9" fill="#f1dfb5"/>
-  <path d="M550,246.5 Q550,234.5 560,235 Q570.5,235 570,245 Q562,241 550,246.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <rect x="603" y="337" width="34" height="7" rx="2" fill="#1f2933"/>
-  <rect x="606" y="338.5" width="28" height="2" fill="#8a96a3"/>
-  <path d="M170,430 v-11 h21 v-11 h21 v-11 h21 v-11 h21 v-11 h21 v-11 h21 v-11 h21 v-11 h21 v-11 h21 v-11 h21 v-11 h21 v-11 h21 L420,320 L200,430 Z" fill="#b9c0c7" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <rect x="158" y="408" width="8" height="22" rx="1" fill="#ffe8a3" stroke="#1f2933" stroke-width="1.5"/>
-  <line x1="158" y1="426" x2="163" y2="426" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="158" y1="422" x2="161" y2="422" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="158" y1="418" x2="163" y2="418" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="158" y1="414" x2="161" y2="414" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <line x1="158" y1="410" x2="163" y2="410" stroke="#1f2933" stroke-width="1" stroke-linecap="butt"/>
-  <path d="M124,390 L119,428.5" fill="none" stroke="#1f2933" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M114,430 h11" fill="none" stroke="#6c757d" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M124.5,356 L158,412" fill="none" stroke="#2b8a3e" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M115.5,350 Q134,342.5 131.5,365 L130,392.5 H115 Z" fill="#2b8a3e" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M124,390 L129,428.5" fill="none" stroke="#1f2933" stroke-width="7.5" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M133,430 h11" fill="none" stroke="#6c757d" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M126,355 L158,412" fill="none" stroke="#2b8a3e" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="158" cy="412" r="3.25" fill="#f1dfb5"/>
-  <rect x="123" y="340" width="5" height="7.5" fill="#f1dfb5"/>
-  <circle cx="125.5" cy="333.5" r="8.5" fill="#f1dfb5"/>
-  <path d="M117,335 Q116.5,324 126,324.5 Q134,325 134,331 Q125.5,329 117,335 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <rect x="120" y="526" width="160" height="10" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
-  <line x1="136" y1="536" x2="136" y2="562" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="264" y1="536" x2="264" y2="562" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="390" y="522" width="30" height="40" rx="4" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="393" cy="498" r="16" fill="#2b8a3e"/>
-  <circle cx="407" cy="484" r="16" fill="#2b8a3e"/>
-  <circle cx="421" cy="502" r="16" fill="#2b8a3e"/>
-  <rect x="140" y="122" width="180" height="10" fill="#e9c98a" stroke="#1f2933" stroke-width="2"/>
-  <line x1="154" y1="132" x2="154" y2="166" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="306" y1="132" x2="306" y2="166" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="780" y="498" width="60" height="64" rx="4" fill="#d0e6fb" stroke="#1f2933" stroke-width="2"/>
+  <image href="pics/fy10/fy10-hissi-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 Puhelimen kiihtyvyysanturi ei näe, missä kerroksessa hissi on, eikä se mittaa nopeutta tai matkaa. Se tuntee vain, miten hissin liike muuttuu. Tässä tutkimuksessa selvität, voiko pelkästä kiihtyvyysdatasta päätellä, kuinka pitkän matkan hissi kulki, ja vertaat tulosta matkaan, jonka saat rakennuksesta muulla tavalla. Mittaa, laske ja päättele itse: tämä sivu kertoo, mitä tutkitaan, ja tukee sinua niin paljon kuin valitsemasi työtapa lupaa.
@@ -195,39 +100,15 @@ Ohjelma laskee suikaleiden kertyvän summan puolestasi samalla periaatteella: ku
 **Vertaa omiin kuvaajiisi ja ennusteeseesi.** Kun hissi kulkee ylöspäin, sen liikkeen vaiheet näyttävät tältä:
 
 <svg data-fig="vaiheet" viewBox="0 0 600 330" role="img" aria-label="Kaaviokuva hissin ylöspäin suuntautuvan matkan kolmesta vaiheesta. Kussakin vaiheessa on hissikori köysissä, ja korin lattialla on puhelin. Vasemmalla hissi lähtee liikkeelle: sininen nopeusnuoli v osoittaa ylöspäin ja oranssi kiihtyvyysnuoli a ylöspäin. Keskellä hissi liikkuu tasaisella nopeudella: nopeusnuoli osoittaa ylöspäin ja on pisin, ja kiihtyvyys on nolla. Oikealla hissi hidastuu: nopeusnuoli osoittaa yhä ylöspäin, mutta kiihtyvyysnuoli osoittaa alaspäin." style="max-width:100%;font-size:24px">
+  <image href="pics/fy10/fy10-hissi-vaiheet.webp" x="2.5" y="-7.4" width="594.1" height="334.2" preserveAspectRatio="none"/>
   <foreignObject x="23" y="10" width="164" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$\text{liikkeellelähtö}$</div></foreignObject>
-  <line x1="105" y1="44" x2="105" y2="96" stroke="#6c757d" stroke-width="2.5" stroke-linecap="butt"/>
-  <rect x="65" y="96" width="80" height="130" rx="4" fill="#eef2f5" stroke="#1f2933" stroke-width="3"/>
-  <rect x="65" y="214" width="80" height="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <rect x="88" y="207" width="34" height="7" rx="2" fill="#1f2933"/>
-  <rect x="91" y="208.5" width="28" height="2" fill="#8a96a3"/>
-  <line x1="51" y1="196" x2="51" y2="163" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M51,150 L57.5,164 L44.5,164 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="12" y="152.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <line x1="159" y1="160" x2="159" y2="123" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M159,110 L165.5,124 L152.5,124 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <foreignObject x="165" y="120.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
+  <foreignObject x="175" y="120.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
   <foreignObject x="223" y="10" width="154" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$\text{tasainen nopeus}$</div></foreignObject>
-  <line x1="300" y1="44" x2="300" y2="96" stroke="#6c757d" stroke-width="2.5" stroke-linecap="butt"/>
-  <rect x="260" y="96" width="80" height="130" rx="4" fill="#eef2f5" stroke="#1f2933" stroke-width="3"/>
-  <rect x="260" y="214" width="80" height="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <rect x="283" y="207" width="34" height="7" rx="2" fill="#1f2933"/>
-  <rect x="286" y="208.5" width="28" height="2" fill="#8a96a3"/>
-  <line x1="246" y1="196" x2="246" y2="119" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M246,106 L252.5,120 L239.5,120 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="207" y="130.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
   <foreignObject x="277.5" y="235.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$a = 0$</div></foreignObject>
   <foreignObject x="428.5" y="10" width="133" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$\text{hidastuminen}$</div></foreignObject>
-  <line x1="495" y1="44" x2="495" y2="96" stroke="#6c757d" stroke-width="2.5" stroke-linecap="butt"/>
-  <rect x="455" y="96" width="80" height="130" rx="4" fill="#eef2f5" stroke="#1f2933" stroke-width="3"/>
-  <rect x="455" y="214" width="80" height="12" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <rect x="478" y="207" width="34" height="7" rx="2" fill="#1f2933"/>
-  <rect x="481" y="208.5" width="28" height="2" fill="#8a96a3"/>
-  <line x1="441" y1="196" x2="441" y2="163" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M441,150 L447.5,164 L434.5,164 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <foreignObject x="402" y="152.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <line x1="549" y1="120" x2="549" y2="157" stroke="#e8590c" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M549,170 L542.5,156 L555.5,156 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <foreignObject x="392" y="152.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
   <foreignObject x="555" y="130.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
   <foreignObject x="197" y="288" width="206" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$\text{hissi kulkee ylöspäin}$</div></foreignObject>
 </svg>

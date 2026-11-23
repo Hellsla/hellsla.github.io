@@ -3,54 +3,7 @@
 > **Tutkimuskysymys:** Kuinka suuri on umpinaisen sylinterin hitausmomentti, kun se määritetään kaltevaa tasoa alas vierivän sylinterin liikkeestä, ja vastaako tulos teoreettista mallia?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: työpöydällä on kirjapinon varaan nojaava lauta, joka muodostaa kaltevan tason. Tason yläpäässä on levossa umpinainen metallisylinteri päästä katsottuna, ja tason poikki pystytetty viivain pitää sitä paikallaan. Tason alapäässä on pehmeä pysäytin. Pöydällä on lisäksi ohutseinäinen putki ja oikealla pystyssä polkupyörän rengas akseleineen." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy10hh-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#dfe9ef"/></linearGradient><linearGradient id="fy10hh-desk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy10hh-board" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e0b878"/><stop offset="1" stop-color="#c99a55"/></linearGradient><radialGradient id="fy10hh-cyl" cx="0.4" cy="0.35" r="0.75"><stop offset="0" stop-color="#e9edf1"/><stop offset="1" stop-color="#c4ccd4"/></radialGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#fy10hh-wall)"/>
-  <rect x="0" y="470" width="1200" height="130" fill="url(#fy10hh-desk)"/>
-  <line x1="0" y1="492" x2="1200" y2="488" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="514" x2="1200" y2="510" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="536" x2="1200" y2="532" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="558" x2="1200" y2="554" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="580" x2="1200" y2="576" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="470" x2="1200" y2="470" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="96" y="429" width="134" height="41" rx="4" fill="#4c6ef5" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="108" y1="449" x2="218" y2="449" stroke="#ffffff" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="100" y="387.5" width="134" height="41" rx="4" fill="#e8590c" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="112" y1="407.5" x2="222" y2="407.5" stroke="#ffffff" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="96" y="346" width="134" height="41" rx="4" fill="#2b8a3e" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="108" y1="366" x2="218" y2="366" stroke="#ffffff" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="100" y="305" width="134" height="41" rx="4" fill="#f08c00" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="112" y1="325" x2="222" y2="325" stroke="#ffffff" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M110,254 L820,452 L815,469.5 L105,271.5 Z" fill="url(#fy10hh-board)" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <rect x="830" y="420" width="46" height="50" rx="10" fill="#495057" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="239.5" cy="236" r="52" fill="url(#fy10hh-cyl)" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="239.5" cy="236" r="3.5" fill="#1f2933"/>
-  <path d="M275.5,300 L283.5,302.5 L318.5,177 L310.5,175 Z" fill="#ffe8a3" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <circle cx="960" cy="426" r="40" fill="none" stroke="#8a96a3" stroke-width="5"/>
-  <circle cx="960" cy="426" r="42.5" fill="none" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="960" cy="426" r="37.5" fill="none" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="960" cy="426" r="3.5" fill="#1f2933"/>
-  <circle cx="1100" cy="378" r="88" fill="none" stroke="#1f2933" stroke-width="10.56"/>
-  <circle cx="1100" cy="378" r="79.2" fill="none" stroke="#8a96a3" stroke-width="3"/>
-  <line x1="1106.5" y1="380.5" x2="1177.5" y2="378" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1105" y1="383" x2="1173" y2="404.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1103" y1="384.5" x2="1159.5" y2="428" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1101" y1="385" x2="1138.5" y2="445" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1098.5" y1="385" x2="1113.5" y2="454.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1096" y1="384" x2="1086.5" y2="454.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1094.5" y1="382" x2="1061.5" y2="445" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1093.5" y1="380" x2="1040.5" y2="428" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1093" y1="377.5" x2="1027" y2="404.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1093.5" y1="375.5" x2="1022.5" y2="378" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1095" y1="373" x2="1027" y2="351.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1097" y1="371.5" x2="1040.5" y2="328" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1099" y1="371" x2="1061.5" y2="311" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1101.5" y1="371" x2="1086.5" y2="301.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1104" y1="372" x2="1113.5" y2="301.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1105.5" y1="374" x2="1138.5" y2="311" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1106.5" y1="376" x2="1159.5" y2="328" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="1107" y1="378.5" x2="1173" y2="351.5" stroke="#8a96a3" stroke-width="1.5" stroke-linecap="butt"/>
-  <circle cx="1100" cy="378" r="8.8" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="1094" y="372" width="12" height="12" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <image href="pics/fy10/fy10-hitausmomentti-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 Pyörä, vauhtipyörä ja pyörivä taitoluistelija liikkuvat eri tavalla kuin suoraan liukuva kappale: pyörimisliikkeessä ei ratkaise pelkkä massa, vaan myös se, miten massa on jakautunut pyörimisakselin ympärille. Tätä kuvaa suure nimeltä **hitausmomentti**. Tässä tutkimuksessa selvität ensin, mitä hitausmomentti tarkoittaa, ja määrität sitten mittaamalla umpinaisen sylinterin hitausmomentin, kun sylinteri vierii kaltevaa tasoa alas. Pyörimisliikkeen energia ja hitausmomentti eivät kuulu lukion fysiikan moduuleihin, joten tarvittava teoria on tiivistetty tälle sivulle. Mittaa, analysoi ja päättele itse: tämä sivu kertoo, mitä tutkitaan, ja tukee sinua niin paljon kuin valitsemasi työtapa lupaa.
@@ -107,16 +60,8 @@ Hitausmomentin yksikkö on $\text{kg}\cdot\text{m}^2$. Hitausmomentti on pyörim
 Umpinaisen ja tasa-aineisen sylinterin, jonka massa on $m$ ja säde $r$, hitausmomentti symmetria-akselinsa suhteen on teoreettisen mallin mukaan $I = \tfrac{1}{2}\, m r^2$. Ohutseinäisen putken massa on lähes kokonaan etäisyydellä $r$ akselista, joten sen hitausmomentti on likimain $m r^2$. Malli olettaa, että sylinterin tiheys on joka kohdassa sama ja että se pyörii symmetria-akselinsa ympäri.
 
 <svg data-fig="concept" viewBox="0 0 600 330" role="img" aria-label="Kaaviokuva: vasemmalla umpinainen tasa-aineinen sylinteri ja oikealla ohutseinäinen putki päästä katsottuna. Kummallakin on sama massa m ja sama säde r, ja pyörimisakseli kulkee keskipisteen kautta kohtisuoraan kuvan tasoa vastaan. Sylinterin massa on jakautunut koko poikkileikkaukselle, putken massa on lähes kokonaan etäisyydellä r akselista. Sylinterin hitausmomentti on puolet m r toiseen, putken likimain m r toiseen." style="max-width:100%;font-size:24px">
-  <defs><radialGradient id="fy10hc-160" cx="0.4" cy="0.35" r="0.75"><stop offset="0" stop-color="#e9edf1"/><stop offset="1" stop-color="#c4ccd4"/></radialGradient></defs>
-  <circle cx="160" cy="125" r="80" fill="url(#fy10hc-160)" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="160" cy="125" r="3.5" fill="#1f2933"/>
-  <line x1="160" y1="125" x2="225.5" y2="79" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <image href="pics/fy10/fy10-hitausmomentti-concept.webp" x="39" y="0" width="550.5" height="309.6" preserveAspectRatio="none"/>
   <foreignObject x="186" y="77.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$r$</div></foreignObject>
-  <circle cx="440" cy="125" r="80" fill="none" stroke="#8a96a3" stroke-width="9.6"/>
-  <circle cx="440" cy="125" r="84.8" fill="none" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="440" cy="125" r="75.2" fill="none" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="440" cy="125" r="3.5" fill="#1f2933"/>
-  <line x1="440" y1="125" x2="505.5" y2="79" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="466" y="77.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$r$</div></foreignObject>
   <foreignObject x="37.5" y="220.5" width="245" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{umpinainen sylinteri}$</div></foreignObject>
   <foreignObject x="323.5" y="220.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{ohutseinäinen putki}$</div></foreignObject>
@@ -135,33 +80,12 @@ Vierivä sylinteri sekä etenee että pyörii, joten sen liike-energia on etenem
 **Vieriminen ilman liukumista.** Kun sylinteri vierii liukumatta, sen keskipisteen nopeus ja kulmanopeus liittyvät toisiinsa yhtälöllä $v = r\omega$. Sylinterin ja tason kosketuskohta on silloin joka hetki levossa tason suhteen, joten lepokitka ei tee työtä eikä muuta mekaanista energiaa lämmöksi. Jos lisäksi vierimisvastus ja ilmanvastus ovat merkityksettömän pieniä, sylinterin mekaaninen energia säilyy: kun sylinterin keskipiste laskee korkeuden $h$, potentiaalienergiaa $mgh$ muuttuu etenemisen ja pyörimisen liike-energiaksi. [[apua:fy4-8|Mekaanisen energian säilyminen]]
 
 <svg data-fig="setup" viewBox="0 0 600 400" role="img" aria-label="Kaaviokuva. Umpinainen sylinteri lähtee levosta kaltevan tason yläosasta ja vierii alas. Matka tason suuntaisesti lähtökohdasta loppukohtaan on s. Sylinterin keskipisteen korkeus laskee matkalla h:n verran. Loppukohdassa sylinterin keskipisteen nopeus v osoittaa tason suuntaisesti alas, ja sylinteri pyörii myötäpäivään kulmanopeudella omega. Sylinterin säde on r." style="max-width:100%;font-size:24px">
-  <defs><radialGradient id="fy10hs-c0" cx="0.4" cy="0.35" r="0.75"><stop offset="0" stop-color="#e9edf1"/><stop offset="1" stop-color="#c4ccd4"/></radialGradient><radialGradient id="fy10hs-c1" cx="0.4" cy="0.35" r="0.75"><stop offset="0" stop-color="#e9edf1"/><stop offset="1" stop-color="#c4ccd4"/></radialGradient></defs>
-  <path d="M40,120 L560,330 L554,345 L34,135 Z" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <line x1="40" y1="347" x2="590" y2="347" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <circle cx="99" cy="107" r="34" fill="url(#fy10hs-c0)" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="99" cy="107" r="3.5" fill="#1f2933"/>
-  <circle cx="433" cy="242" r="34" fill="url(#fy10hs-c1)" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="433" cy="242" r="3.5" fill="#1f2933"/>
+  <image href="pics/fy10/fy10-hitausmomentti-setup.webp" x="0" y="-1.2" width="600" height="406.2" preserveAspectRatio="none"/>
   <foreignObject x="20" y="38.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{lähtö levosta}$</div></foreignObject>
-  <line x1="69" y1="181.5" x2="403" y2="316" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="66" y1="189.5" x2="72.5" y2="173" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="399.5" y1="324.5" x2="406.5" y2="308" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="79.5" y1="155.5" x2="71.5" y2="176" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
-  <line x1="413.5" y1="290" x2="405" y2="310.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
   <foreignObject x="212" y="258.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s$</div></foreignObject>
-  <line x1="139" y1="107" x2="593" y2="107" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
-  <line x1="473" y1="242" x2="593" y2="242" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
-  <line x1="585" y1="107" x2="585" y2="242" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="577" y1="107" x2="593" y2="107" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="577" y1="242" x2="593" y2="242" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="557" y="160" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$h$</div></foreignObject>
-  <line x1="433" y1="242" x2="463.5" y2="227.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="473" y="197.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$r$</div></foreignObject>
-  <line x1="433" y1="242" x2="496" y2="267.5" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M509,272.5 L492.5,273.5 L497.5,261 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="517" y="254" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <path d="M389.5,217 A50,50 0 0 1 458,198.5" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M468.5,204.5 L455,204 L461,193.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <foreignObject x="403" y="155.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\omega$</div></foreignObject>
 </svg>
 

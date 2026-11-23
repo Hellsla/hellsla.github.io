@@ -3,60 +3,7 @@
 > **Tutkimuskysymys:** Mistä heilurin jaksonaika riippuu, ja kuinka suuri on putoamiskiihtyvyys mittauspaikallasi?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: laboratorion työpöydällä on statiivi, jonka varresta riippuu langan varassa metallikuula. Kuula on piirretty useaan kohtaan pienen heilahduksen aikana. Pöydällä ovat rullamitta, sekuntikello, lankarulla ja sakset." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy10hh-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#dfe9ef"/></linearGradient><linearGradient id="fy10hh-desk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#fy10hh-wall)"/>
-  <rect x="0" y="470" width="1200" height="130" fill="url(#fy10hh-desk)"/>
-  <line x1="0" y1="492" x2="1200" y2="488" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="514" x2="1200" y2="510" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="536" x2="1200" y2="532" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="558" x2="1200" y2="554" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="580" x2="1200" y2="576" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="470" x2="1200" y2="470" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="300" y="448" width="260" height="22" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="333" y="50" width="14" height="398" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="334" y="68" width="292" height="12" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="324" y="60" width="32" height="28" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="590" y="78" width="20" height="16" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M548.5,418 A330,330 0 0 0 651.5,418" fill="none" stroke="#6b7480" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 6"/>
-  <line x1="600" y1="92" x2="648.5" y2="398" stroke="#495057" stroke-width="1.5" stroke-opacity="0.25"/>
-  <g opacity="0.3"><circle cx="651.5" cy="418" r="20" fill="#adb5bd" stroke="#495057" stroke-width="2.5"/><circle cx="644.5" cy="411" r="5" fill="#ffffff" fill-opacity="0.6"/></g>
-  <line x1="600" y1="92" x2="642" y2="399" stroke="#495057" stroke-width="1.5" stroke-opacity="0.25"/>
-  <g opacity="0.3"><circle cx="645" cy="419" r="20" fill="#adb5bd" stroke="#495057" stroke-width="2.5"/><circle cx="638" cy="412" r="5" fill="#ffffff" fill-opacity="0.6"/></g>
-  <line x1="600" y1="92" x2="624.5" y2="401" stroke="#495057" stroke-width="1.5" stroke-opacity="0.25"/>
-  <g opacity="0.3"><circle cx="626" cy="421" r="20" fill="#adb5bd" stroke="#495057" stroke-width="2.5"/><circle cx="619" cy="414" r="5" fill="#ffffff" fill-opacity="0.6"/></g>
-  <line x1="600" y1="92" x2="600" y2="402" stroke="#495057" stroke-width="1.5" stroke-opacity="0.25"/>
-  <g opacity="0.3"><circle cx="600" cy="422" r="20" fill="#adb5bd" stroke="#495057" stroke-width="2.5"/><circle cx="593" cy="415" r="5" fill="#ffffff" fill-opacity="0.6"/></g>
-  <line x1="600" y1="92" x2="575.5" y2="401" stroke="#495057" stroke-width="1.5" stroke-opacity="0.25"/>
-  <g opacity="0.3"><circle cx="574" cy="421" r="20" fill="#adb5bd" stroke="#495057" stroke-width="2.5"/><circle cx="567" cy="414" r="5" fill="#ffffff" fill-opacity="0.6"/></g>
-  <line x1="600" y1="92" x2="558" y2="399" stroke="#495057" stroke-width="1.5" stroke-opacity="0.25"/>
-  <g opacity="0.3"><circle cx="555" cy="419" r="20" fill="#adb5bd" stroke="#495057" stroke-width="2.5"/><circle cx="548" cy="412" r="5" fill="#ffffff" fill-opacity="0.6"/></g>
-  <line x1="600" y1="92" x2="551.5" y2="398" stroke="#495057" stroke-width="2" stroke-opacity="1"/>
-  <g opacity="1.0"><circle cx="548.5" cy="418" r="20" fill="#adb5bd" stroke="#495057" stroke-width="2.5"/><circle cx="541.5" cy="411" r="5" fill="#ffffff" fill-opacity="0.6"/></g>
-  <rect x="820" y="418" width="70" height="52" rx="10" fill="#ffd43b" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="855" cy="444" r="10" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="888" y="456" width="90" height="10" fill="#ffe8a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="1064.5" y="380" width="11" height="8" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="1067.5" y="387.5" width="5" height="5" fill="#6c757d"/>
-  <circle cx="1070" cy="425" r="34" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="1070" cy="425" r="27.88" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <line x1="1070" y1="402" x2="1070" y2="398.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1081.5" y1="405" x2="1083.5" y2="402" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1090" y1="413.5" x2="1093" y2="411.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1093" y1="425" x2="1096.5" y2="425" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1090" y1="436.5" x2="1093" y2="438.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1081.5" y1="445" x2="1083.5" y2="448" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1070" y1="448" x2="1070" y2="451.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1058.5" y1="445" x2="1056.5" y2="448" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1050" y1="436.5" x2="1047" y2="438.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1047" y1="425" x2="1043.5" y2="425" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1050" y1="413.5" x2="1047" y2="411.5" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1058.5" y1="405" x2="1056.5" y2="402" stroke="#6b7480" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1070" y1="425" x2="1090.5" y2="415.5" stroke="#c92a2a" stroke-width="2.38" stroke-linecap="round"/>
-  <circle cx="1070" cy="425" r="2.72" fill="#1f2933"/>
-  <rect x="90" y="430" width="46" height="40" rx="4" fill="#1971c2" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="82" y="424" width="62" height="10" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="82" y="466" width="62" height="8" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <g transform="translate(190,446) rotate(-12)" fill="none" stroke="#1f2933" stroke-width="3"><circle cx="0" cy="0" r="10"/><circle cx="0" cy="26" r="10"/><line x1="9" y1="5" x2="70" y2="20"/><line x1="9" y1="21" x2="70" y2="8"/></g>
+  <image href="pics/fy10/fy10-heiluri-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 Vapaasti putoava kappale on ohi hetkessä, joten sen kiihtyvyyttä on vaikea mitata tarkasti tavallisilla välineillä. Heiluri toistaa samaa liikettä yhä uudelleen, ja sen tahti riippuu putoamiskiihtyvyydestä. Tässä tutkimuksessa selvität mittaamalla, mistä heilurin jaksonaika riippuu, ja määrität putoamiskiihtyvyyden pelkän langan, kuulan, mittanauhan ja kellon avulla. Mittaa, piirrä ja päättele itse: tämä sivu kertoo, mitä tutkitaan, ja tukee sinua niin paljon kuin valitsemasi työtapa lupaa.
@@ -97,24 +44,9 @@ Heiluri on **jaksollisessa liikkeessä**: se toistaa samaa liikettä. **Jaksonai
 Kun kuula vedetään sivuun ja päästetään irti, sen paino vetää sitä kohti radan alinta kohtaa. Kuula ohittaa alimman kohdan suurimmalla nopeudellaan, nousee toiselle puolelle, pysähtyy hetkeksi kääntökohdassa ja palaa takaisin. Mitä suurempi putoamiskiihtyvyys on, sitä voimakkaammin paino palauttaa kuulaa kohti alinta kohtaa ja sitä lyhyempi jaksonaika on. [[apua:fy1-6|Putoamiskiihtyvyys]]
 
 <svg data-fig="setup" viewBox="0 0 600 400" role="img" aria-label="Kaaviokuva. Kuula riippuu langan varassa ripustuskohdasta. Heilurin pituus l mitataan ripustuskohdasta kuulan keskipisteeseen. Kuula on vedetty sivuun niin, että lanka on kulmassa theta pystysuoraan nähden. Katkoviiva näyttää kuulan radan ja pystysuoran, ja haaleampi kuula on radan alimmassa kohdassa. Kulma on piirretty selvyyden vuoksi suuremmaksi kuin mittauksissa." style="max-width:100%;font-size:24px">
-  <rect x="170" y="26" width="260" height="14" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="291" y="38" width="18" height="14" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <path d="M207.5,303.5 A270,270 0 0 0 392.5,303.5" fill="none" stroke="#6b7480" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 6"/>
-  <line x1="300" y1="50" x2="300" y2="320" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <g opacity="0.35"><circle cx="300" cy="320" r="22" fill="#adb5bd" stroke="#495057" stroke-width="2.5"/><circle cx="292.5" cy="312.5" r="5.5" fill="#ffffff" fill-opacity="0.6"/></g>
-  <line x1="300" y1="50" x2="385" y2="283" stroke="#495057" stroke-width="2" stroke-linecap="butt"/>
-  <g opacity="1.0"><circle cx="392.5" cy="303.5" r="22" fill="#adb5bd" stroke="#495057" stroke-width="2.5"/><circle cx="384.5" cy="296" r="5.5" fill="#ffffff" fill-opacity="0.6"/></g>
-  <circle cx="392.5" cy="303.5" r="3.5" fill="#1f2933"/>
-  <circle cx="300" cy="320" r="3.5" fill="#1f2933"/>
-  <path d="M300,120 A70,70 0 0 0 324,116" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <image href="pics/fy10/fy10-heiluri-setup.webp" x="0" y="0" width="600" height="406.2" preserveAspectRatio="none"/>
   <foreignObject x="312" y="127.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\theta$</div></foreignObject>
-  <line x1="230" y1="50" x2="230" y2="320" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="220" y1="50" x2="240" y2="50" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="220" y1="320" x2="240" y2="320" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="240" y1="320" x2="274" y2="320" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
   <foreignObject x="198" y="170.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$l$</div></foreignObject>
-  <line x1="303" y1="52" x2="352" y2="84" stroke="#6b7480" stroke-width="1" stroke-linecap="butt"/>
-  <circle cx="301.5" cy="51" r="2.2" fill="#6b7480"/>
   <foreignObject x="358" y="75.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{ripustuskohta}$</div></foreignObject>
   <foreignObject x="196" y="349.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{kuulan keskipiste}$</div></foreignObject>
 </svg>
