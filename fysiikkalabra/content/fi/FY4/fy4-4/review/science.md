@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 55ad78d68d542c59
+CONTENT-HASH: 4ef8727b2f118d47
 
 ## Blocking
 
@@ -8,8 +8,8 @@ CONTENT-HASH: 55ad78d68d542c59
 - None.
 
 ## Checked
-- inquiry.json hook: "moottori vetää yhtä suurella voimalla" with unequal masses gives the loaded truck the smaller acceleration (a = F/m), consistent with the question and the theory; no longer implies equal "effort" ambiguity.
-- explain model answer: N = mg = 1,2·9,81 = 11,77 N, so 12 N with two significant figures (1,2 kg) is right; a = (5,0-3,0)/1,2 = 1,67, so 1,7 m/s²; ΣF = 2,0 N along the push; no leftover "11,8" elsewhere in lesson or inquiry.
-- lesson.md "Kaava ratkaistuna": ΣF = ma now written before T - mg = ma; the order follows the force-diagram rule (forces first, equation after); the signs (up positive) agree with the figure.
-- Worked example unit change (m/s² for m/s²): same unit; mg = 480·9,81 = 4708,8 N, a = 491,2/480 = 1,02 m/s² unchanged.
-- Figure and option-figure changes are only teacher-approval stamps, with no content diff.
+- inquiry.json pred-2 reveal and exp-2 `min` 2 → 3: the sim's mass select offers exactly three values (0,50, 1,0, 1,5 kg; sim.js:52), so three records are reachable with F = 1,0 N locked; model values a = 2,0, 1,0, 0,67 m/s² show the inverse proportion better than two points; the pred-2 feedback numbers (2,0 and 1,0 m/s²) stay correct.
+- exp-2 setup still isolates m: alku, suunta and F locked, only m varied; measured keys m and a unchanged.
+- lesson.md "Kaava" block: only the alignment changed (`&` moved to the equals signs); ΣF = ma, T − mg = ma, a = (T − mg)/m unchanged, forces before the equation, signs up-positive.
+- Worked example block: alignment only; mg = 480·9,81 = 4708,8 N, a = (5200 − 4708,8)/480 = 1,023 ≈ 1,02 m/s² recomputed; continuation rows `&= …` keep each quantity's first row named.
+- Content hash identical at start and end (4ef8727b2f118d47).
