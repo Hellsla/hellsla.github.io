@@ -1,6 +1,6 @@
 ok   lint
 ok   latex
-ok   i18n (en 0 error(s); fi-easy 0 error(s))
+FAIL i18n
 ok   build
 ok   sims
 ok   inquiry (113 passed, 0 failed)
