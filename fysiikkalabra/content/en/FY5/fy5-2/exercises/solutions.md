@@ -131,7 +131,7 @@ The weight is to the left of the right support and rotates the plank anticlockwi
 In the free-body diagram the forces acting on the plank are its weight $G_\text{p}$ downwards from the middle, the force of the person $F_\text{pers} = m_\text{pers} g$ downwards and the support forces $N_1$ and $N_2$ upwards at the ends.
 
 The right end is chosen as the reference point, so $N_2$ drops out. $G_\text{p}$ and $F_\text{pers}$ rotate the plank about it anticlockwise, $N_1$ clockwise.
-**Formula:** $$\begin{aligned} \Sigma M &= 0 \\ G_\text{p} r_\text{p} + F_\text{pers} r_\text{pers} - N_1 L &= 0 \\ N_1 L &= m_\text{p} g\, r_\text{p} + m_\text{pers} g\, r_\text{pers} \\ N_1 &= \dfrac{(m_\text{p} r_\text{p} + m_\text{pers} r_\text{pers})\, g}{L} \end{aligned}$$
+**Formula:** $$\begin{aligned} \Sigma M &= 0 \\ G_\text{p} r_\text{p} + F_\text{pers} r_\text{pers} &= N_1 L \\ N_1 L &= m_\text{p} g\, r_\text{p} \\ &\quad + m_\text{pers} g\, r_\text{pers} \\ N_1 &= \dfrac{(m_\text{p} r_\text{p} + m_\text{pers} r_\text{pers})\, g}{L} \end{aligned}$$
 **Conversions:** None needed, but the lever arms are calculated from the right end: $r_\text{p} = 1.5\,\text{m}$ and $r_\text{pers} = 3.0\,\text{m} - 1.0\,\text{m} = 2.0\,\text{m}$.
 **Substitution:** The moments are $m_\text{p} g\, r_\text{p} = 20\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 1.5\,\text{m} = 294.3\,\text{Nm}$ and $m_\text{pers} g\, r_\text{pers} = 70\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 2.0\,\text{m} = 1373.4\,\text{Nm}$, together $1667.7\,\text{Nm}$. So $N_1 = \dfrac{1667.7\,\text{Nm}}{3.0\,\text{m}} = 555.9\,\text{N}$
 **Answer:** $560\,\text{N}$, two significant figures like the data.
@@ -255,7 +255,7 @@ The correct answer is line 2: the lever arms of all forces are measured about th
 In the free-body diagram the forces acting on the plank are the weight $G_\text{p}$ downwards from the middle, the force of the painter $m_\text{pt} g$ downwards and the support forces upwards.
 
 The right trestle is chosen as the reference point: at the limit $N_1 = 0$, and the moment of the weight of the plank (anticlockwise) cancels the moment of the painter (clockwise).
-**Formula:** $$\begin{aligned} r_1 &= x_2 - x_\text{p} \\ r_2 &= x - x_2 \\ \Sigma M &= 0 \\ m_\text{p} g\, r_1 - m_\text{pt} g\, r_2 &= 0 \\ r_2 &= \dfrac{m_\text{p} r_1}{m_\text{pt}} \\ x &= x_2 + r_2 \\ &= x_2 + \dfrac{m_\text{p}\,(x_2 - x_\text{p})}{m_\text{pt}} \end{aligned}$$
+**Formula:** $$\begin{aligned} r_1 &= x_2 - x_\text{p} \\ r_2 &= x - x_2 \\ \Sigma M &= 0 \\ m_\text{p} g\, r_1 - m_\text{pt} g\, r_2 &= 0 \\ r_2 &= \dfrac{m_\text{p} r_1}{m_\text{pt}} \\ x - x_2 &= r_2 \\ &= \dfrac{m_\text{p}\,(x_2 - x_\text{p})}{m_\text{pt}} \end{aligned}$$
 **Conversions:** None needed: $g$ and the unit of mass cancel, and the lengths are in metres. The lever arm of the weight of the plank from the trestle is $x_2 - x_\text{p} = 3.00\,\text{m} - 2.00\,\text{m} = 1.00\,\text{m}$.
 **Substitution:** $x = 3.00\,\text{m} + \dfrac{20.0\,\text{kg} \cdot 1.00\,\text{m}}{60.0\,\text{kg}} = 3.00\,\text{m} + 0.333\,\text{m} = 3.333\,\text{m}$
 **Answer:** $3.33\,\text{m}$ from the left end of the plank, three significant figures like the data.

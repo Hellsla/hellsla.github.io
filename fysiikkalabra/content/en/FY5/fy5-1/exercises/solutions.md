@@ -166,7 +166,7 @@ The moment $25\,\text{Nm}$ is of the order of tens of newton metres, like ordina
 **Principle:** The weights of the hanging masses are vertical and the stick is horizontal, so the lever arm of each force is the distance of the mass from the axis.
 
 The net moment is the sum of the moments with their signs. On the left of the axis, a weight pulling down turns the stick anticlockwise (positive), and on the right clockwise (negative).
-**Formula:** $$\begin{aligned} G &= mg \\ M &= Gr \\ \Sigma M &= M_A + M_B - M_C - M_D \\ \Sigma M &= g\,(m_A r_A + m_B r_B - m_C r_C - m_D r_D) \end{aligned}$$
+**Formula:** $$\begin{aligned} G &= mg \\ M &= Gr \\ \Sigma M &= M_A + M_B - M_C - M_D \\ \Sigma M &= g\,(m_A r_A + m_B r_B \\ &\qquad - m_C r_C - m_D r_D) \end{aligned}$$
 **Conversions:** The masses are converted to kilograms and the distances to metres: $m_A = 0.200\,\text{kg}$, $m_B = 0.100\,\text{kg}$, $m_C = 0.120\,\text{kg}$, $m_D = 0.0500\,\text{kg}$ and $r_A = 0.300\,\text{m}$, $r_B = 0.100\,\text{m}$, $r_C = 0.400\,\text{m}$, $r_D = 0.200\,\text{m}$.
 **Substitution:** The products on the left are $$\begin{aligned} &0.200\cdot 0.300 + 0.100\cdot 0.100 \\ &= 0.0700\,\text{kg}\cdot\text{m} \end{aligned}$$ and on the right $$\begin{aligned} &0.120\cdot 0.400 + 0.0500\cdot 0.200 \\ &= 0.0580\,\text{kg}\cdot\text{m} \end{aligned}$$. The difference is $0.0700\,\text{kg}\cdot\text{m} - 0.0580\,\text{kg}\cdot\text{m} = 0.0120\,\text{kg}\cdot\text{m}$, so $\Sigma M = 9.81\,\text{m/s}^2\cdot 0.0120\,\text{kg}\cdot\text{m} = 0.1177\,\text{Nm}$.
 **Answer:** $0.118\,\text{Nm}$ anticlockwise, three significant figures like the masses and the distances. The net moment is positive, so the stick starts to turn anticlockwise, that is, the left end goes down.
