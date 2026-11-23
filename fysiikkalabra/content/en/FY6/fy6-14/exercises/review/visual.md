@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: d57c0d0fa3e73c86
-SCOPE: delta numbers from 375cd36a93d31bad base 3076572
+SCOPE: delta numbers from f9910725a21270e0 base c6990df
 
 ## Blocking
 
@@ -9,9 +9,8 @@ SCOPE: delta numbers from 375cd36a93d31bad base 3076572
 - [Minor] Formula block of 14-20 — `\text{self-sufficiency}` as a left side widens the aligned block, so the first rows sit far right; acceptable, optional shorter label.
 
 ## Checked
-- Delta (solutions.md): diff read; all `\text{}` words listed. `\text{osuus}` is gone, now `\text{share}`; no Finnish word remains in the maths (only the abbreviations `kul`, `kk` above).
-- Captures opened: open-exercises-1280-1 (level 1, formula layout and card intact), open-exercises-L3-1280-5 and -6 (14-20 table, Formula aligned rows, substitution, answer; nothing clipped).
-- Rows align at `=`, fractions legible, layout survived.
+- Diff `git diff c6990df -- content/en/FY6/fy6-14/exercises` read: Formula blocks rewritten as aligned rows; `\text{share}` and the other words are English; the only Finnish remnants in the maths are the abbreviations `kul` and `kk` above.
+- Captures (content/en/FY6/fy6-14/review/shots) opened: open-exercises-L3-1280-5 (14-20 table and Formula, nothing clipped); layout survived, rows align at `=`.
 
 ## Scores
 illustrations n/a · typography 5 · Finnish 4 · accessibility 4

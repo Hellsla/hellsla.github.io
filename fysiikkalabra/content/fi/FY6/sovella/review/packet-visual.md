@@ -1,5 +1,5 @@
 # Packet: FY6-sovella (Sovella itsenäisesti, fi)
-Role: **visual** (`.claude/agents/visual-editorial-reviewer.md`). Mode: **full**. Content hash now: `37ff55bd05bc7116`.
+Role: **visual** (`.claude/agents/visual-editorial-reviewer.md`). Mode: **full**. Content hash now: `5d61c029a4d15bd9`.
 House rules: `CLAUDE.md` (in your context). This is not a lesson: no inquiry stages, no exercises; judge the page as the Sovella itsenäisesti it is (an investigation: the student's working instructions by working mode, the figures and set-up sketches, the data tables and graphs, the teacher's notes; a guide: the screenshots of the software are the school's own and are judged for legibility and fit, not redrawn).
 
 ## Your standard (docs/EDITORIAL_QUALITY_STANDARD.md: severity and dimensions 7–10)
@@ -995,7 +995,7 @@ Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvi
 **Periaate:** Salamaan siirtynyt energia on kondensaattorin energian muutos: se on energia ennen salamaa vähennettynä energialla salaman jälkeen. Jännite on energiakaavassa neliönä, joten kumpikin energia lasketaan erikseen; pelkkä jännitteen muutos $\Delta U$ ei riitä.
 **Kaava:** $$\begin{aligned} E_1 &= \dfrac{1}{2} C U_1^2 \\ E_2 &= \dfrac{1}{2} C U_2^2 \\ \Delta E &= E_1 - E_2 \\ &= \dfrac{1}{2} C U_1^2 - \dfrac{1}{2} C U_2^2 \\ \text{osuus} &= \dfrac{\Delta E}{E_1} \end{aligned}$$
 **Muunnokset:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$
-**Sijoitus:** $E_1 = 14{,}85\,\text{J}$ ja $$\begin{aligned} E_2 &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text{V})^2 \\ &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 48\,400\,\text{V}^2 \\ &= 7{,}99\,\text{J} \end{aligned}$$, joten $\Delta E = 14{,}85\,\text{J} - 7{,}99\,\text{J} = 6{,}86\,\text{J}$. Osuus on $\dfrac{6{,}86\,\text{J}}{14{,}85\,\text{J}} = 0{,}46$.
+**Sijoitus:** $E_1 = 14{,}85\,\text{J}$ ja $$\begin{aligned} E_2 &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text{V})^2 \\ &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 48\,400\,\text{V}^2 \\ &= 7{,}99\,\text{J} \end{aligned}$$, joten $$\begin{aligned} \Delta E &= 14{,}85\,\text{J} - 7{,}99\,\text{J} \\ &= 6{,}86\,\text{J} \end{aligned}$$. Osuus on $\dfrac{6{,}86\,\text{J}}{14{,}85\,\text{J}} = 0{,}46$.
 **Vastaus:** Salamaan siirtyi $\Delta E \approx 6{,}86\,\text{J}$, noin $46{,}2\,\%$ varastoidusta energiasta, kolme merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Jännite pieneni vain $\dfrac{80\,\text{V}}{300\,\text{V}} \approx 27\,\%$, mutta energiaa siirtyi $46{,}2\,\%$, koska energia on verrannollinen jännitteen neliöön: $1 - \left(\dfrac{220}{300}\right)^2 = 0{,}46$. Siirtynyt energia on pienempi kuin alkuenergia, kuten pitääkin.
 
@@ -1093,7 +1093,7 @@ Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvi
 | review/shots/FY6-sovella-page-390-40.png | #41 the whole page at 390 px, every box open (teacher's notes included) (part 40/43) | 366×1408 | 687 |
 | review/shots/FY6-sovella-page-390-41.png | #42 the whole page at 390 px, every box open (teacher's notes included) (part 41/43) | 366×1408 | 687 |
 | review/shots/FY6-sovella-page-390-42.png | #43 the whole page at 390 px, every box open (teacher's notes included) (part 42/43) | 366×1408 | 687 |
-| review/shots/FY6-sovella-page-390-43.png | #44 the whole page at 390 px, every box open (teacher's notes included) (part 43/43) | 366×794 | 387 |
+| review/shots/FY6-sovella-page-390-43.png | #44 the whole page at 390 px, every box open (teacher's notes included) (part 43/43) | 366×791 | 386 |
 | review/shots/FY6-sovella-fig-1-390.png | #45 figure 1 in “1Taskulampun paristo 15 pistettä”: Kytkentäkaavio, ei mittakaavassa: pariston mittaus. Vasemmalla on tutkittava paristo, plus | 332×182 | 80 |
 | review/shots/FY6-sovella-fig-2-390.png | #46 figure 2 in “Mallivastaus”: Kuvaaja: pariston napajännite U voltteina virran I funktiona ampeereina. Kuusi mustaa pist | 306×202 | 82 |
 | review/shots/FY6-sovella-fig-3-390.png | #47 figure 3 in “2Mökin pihavalot 15 pistettä”: Kytkentäkaavio, ei mittakaavassa: mökin valaistus. Vasemmalla on 12 voltin akku, plusnapa  | 332×182 | 80 |
@@ -1140,7 +1140,7 @@ Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvi
 | review/shots/FY6-sovella-stage-fy6-s4-390-7.png | #88 inquiry stage Kameran salama 14 pistettä (part 7/10) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s4-390-8.png | #89 inquiry stage Kameran salama 14 pistettä (part 8/10) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s4-390-9.png | #90 inquiry stage Kameran salama 14 pistettä (part 9/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-10.png | #91 inquiry stage Kameran salama 14 pistettä (part 10/10) | 366×653 | 318 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-10.png | #91 inquiry stage Kameran salama 14 pistettä (part 10/10) | 366×651 | 317 |
 | review/shots/FY6-sovella-top-1280.png | #92 first screen at 1280 px | 1280×900 | 1536 |
 | review/shots/FY6-sovella-page-1280-1.png | #93 the whole page at 1280 px, every box open (teacher's notes included) (part 1/33) | 1160×1408 | 2177 |
 | review/shots/FY6-sovella-page-1280-2.png | #94 the whole page at 1280 px, every box open (teacher's notes included) (part 2/33) | 1160×1408 | 2177 |
@@ -1174,7 +1174,7 @@ Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvi
 | review/shots/FY6-sovella-page-1280-30.png | #122 the whole page at 1280 px, every box open (teacher's notes included) (part 30/33) | 1160×1408 | 2177 |
 | review/shots/FY6-sovella-page-1280-31.png | #123 the whole page at 1280 px, every box open (teacher's notes included) (part 31/33) | 1160×1408 | 2177 |
 | review/shots/FY6-sovella-page-1280-32.png | #124 the whole page at 1280 px, every box open (teacher's notes included) (part 32/33) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-33.png | #125 the whole page at 1280 px, every box open (teacher's notes included) (part 33/33) | 1160×661 | 1022 |
+| review/shots/FY6-sovella-page-1280-33.png | #125 the whole page at 1280 px, every box open (teacher's notes included) (part 33/33) | 1160×667 | 1031 |
 
 ## Report: write `content/fi/FY6/sovella/review/visual.md` with the Write tool (format and severities: .claude/agents/visual-editorial-reviewer.md), under 400 words; a report only in your reply is not recorded: the gate reads the file
 Line 1 `VERDICT: PASS` or `VERDICT: FAIL`; line 2 `CONTENT-HASH: <output of python3 scripts/practice.py hash FY6>` run at the start and again at the end. Then `## Blocking` (FAIL if and only if non-empty; `[Critical|Major] file/figure — problem — why it matters — fix`), `## Polish` (at most five `[Minor]`), `## Checked` (the captures you opened; at most ten lines), `## Scores` (illustrations · typography · Finnish · accessibility, 1–5). A PASS needs the captures: if you could not look, FAIL with `visual verification incomplete`. Never edit any file but your report.
