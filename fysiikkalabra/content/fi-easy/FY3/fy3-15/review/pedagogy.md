@@ -1,21 +1,26 @@
 VERDICT: PASS
-CONTENT-HASH: 3b8efcead13c9e9b
+CONTENT-HASH: 9bccab069f2e3300
+
 ## Blocking
+
 (none)
+
 ## Polish
-- lesson.md Kaava — the condenser power $P_\text{L} = c\,q_m\,\Delta T$ and its figure are not used by the worked example, the inquiry or its checks; the lesson already carries chain efficiency, cogeneration and plant types. Either use it in one task or move it out to keep it one lesson.
-- inquiry.json check-1, option "Päättelyssä ei ongelmaa" feedback — "Tämä tehtävä jatkuu harjoitustehtävissä" is a pointer the student cannot act on; delete.
-- inquiry.json ketju/kaukolampo — the Tutki evidence is given tables (source "example"), so the student computes losses rather than discovering them; honest and labelled, but pred-1 is refuted by arithmetic only. Acceptable without a simulation; say once that the efficiencies are typical values.
-- lesson.md end — the radiator figure (data-fig="scene") sits after the Tiivistelmä and explains no paragraph; place beside the cogeneration paragraph or drop.
-- inquiry.json pred-2 — only the right answer (Cem) states a quantitative relation; fine, but Bea's feedback could name the table row that refutes her.
+
+- inquiry.json pred-2 Bea feedback — "yhteistuotannolla ei voitettaisi mitään" is wrong Finnish — "ei voitettaisiin mitään".
+- inquiry.json check-1, check-c2, tyypit — the correct option is the longest and most detailed in each, so length gives it away. Shorten it or lengthen the distractors.
+- inquiry.json tyypit/ketju (Tutki) — kattila, savukaasu, muuntaja, höyrykierto and lauhdutin are met in Tutki before the Teoria stage. This is the Selkeä suomi version, where a hard word is explained the first time. Add a one-line gloss for höyrykierto and muuntaja in the ketju text, or in the pred-1 prompt.
+- lesson.md Sankey figure — the label "lauhdutin 248 MW" covers the whole steam cycle (turbine and condenser). The aria-label says so, but the visible label could read "turbiini ja lauhdutin".
+- inquiry.json kaukolampo-tarve (optional) — it needs linear interpolation. That is fine as an optional task, but the hints should say earlier that the 0,75 is a fraction of the way between the end states.
+
 ## Checked
-- Path: prior chapter (η = W/Q1, Q1 = W + Q2) -> hook -> retrieval -> two predictions -> three numeric table tasks plus a plant-type comparison -> conclusion -> theory -> example; opening question answered; slot goals (chains, efficiencies, condensing vs cogeneration) covered.
-- Predictions committed before evidence; each wrong option's feedback points to the table and repairs the misconception.
-- No simulation is justified (sim-spec): a sim would only compute η1·η2·η3.
-- Mistake feedback in numeric tasks names the specific slip (loss from P_o not P_1, P_2 as loss).
-- Staged example: seven stages, symbolic first, units, estimate and balance check; not a repeat of the Tutki figures.
-- Wind vs coal pysahdy and check-1 repair the "compare efficiencies directly" misconception; the CHP value question (electricity vs heat) is raised twice.
-- Etsi virhe (average of efficiencies) is a real misconception; the transfer task has hints and mistakes.
-- Exit ticket tests the product rule, the core idea.
-- Figures (hero, Sankey, stacked area, bars, condenser) match their paragraphs and are legible in 390 px captures.
-- Selkeä suomi: shorter sentences, terms explained, same content.
+
+- Path: prerequisites (η = W/Q₁, Q₁ = W + Q₂) are retrieved first, optionally. The hook question, "where does the most energy go and could it be used?", is answered only after the student commits in Ennusta and uses the tables. The reflect task returns to it.
+- Predictions: both can be refuted by the Tutki tables. Pred-1 is refuted by the 248 MW computed in ketju. Pred-2 is refuted by the 232 and 120 MW table. Each wrong option's feedback repairs its misconception and appears only after commitment. The speakers are shuffled and the right one is not the first.
+- No simulation, and sim-spec.md justifies that. The table work is something the student acts on, not just reads. Workload is one lesson, because the extra tasks (kaukolampo-tarve, etsi virhe, siirto, check-3) are optional.
+- Theory figures (Sankey, stacked area, bars; captures 390 px) are legible and to scale, with colour never alone, and sit in the Teoria stage after Tutki, so they do not leak the answers.
+- Example: seven stages, one step each, symbolic before numeric, with a check (balance, order of magnitude, typical η).
+- Etsi virhe, siirto and the numeric checks have mistake-based feedback (average, sum, P₂ versus loss, only electricity subtracted). The exit ticket tests the core idea (η as a product).
+- Checks: two concept choices with misconception distractors, one calculation, one explain with observable criteria and a model answer. Check-3 criteria match its question.
+- Finnish: terms (hyötysuhde, lauhdevoimalaitos, yhteistuotanto, hukkalämpö, kaukolämpö) match the glossary. Units are in LaTeX.
+- Not judged: the exercise set, which is reviewed apart. The figure-task rules do not apply, because no task has a "figure" key.

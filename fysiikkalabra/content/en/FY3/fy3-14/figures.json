@@ -4,5 +4,16 @@
  "vesi luovuttaa jäähtyessään ": "water gives out as it cools to ",
  ":seen": " ",
  "jään lämmittäminen ": "warming the ice to ",
- "kaiken jään sulattaminen": "melting all the ice"
+ "kaiken jään sulattaminen": "melting all the ice",
+ "Kaavakuva ennen ja jälkeen: eristetyssä astiassa on aluksi 0,30 kg vettä lämpötilassa 20 °C ja 0,10 kg jäätä lämpötilassa 0 °C. Lämpöä Q siirtyy vedestä jäähän. Tasapainossa lämpömittari näyttää 0 °C, vettä on 0,375 kg ja jäätä on jäljellä enää 0,025 kg. Jääpalojen yhteenlaskettu pinta-ala on mittakaavassa jään massaan nähden.": "Before-and-after schematic: an insulated container first holds 0.30 kg of water at 20 °C and 0.10 kg of ice at 0 °C. Heat Q is transferred from the water to the ice. At equilibrium the thermometer reads 0 °C, there is 0.375 kg of water and only 0.025 kg of ice is left. The total area of the ice cubes is drawn to scale with the mass of the ice.",
+ "alussa": "initially",
+ "vesi ": "water ",
+ "jää ": "ice ",
+ "tasapainossa": "at equilibrium",
+ "Energiataseen palkit mittakaavassa, kilojouleina: 0,30 kg vettä lämpötilassa 20 °C luovuttaa jäähtyessään 0 °C:seen 25.1 kJ. 0,10 kg jäätä lämpötilassa −10 °C tarvitsee lämpenemiseen 0 °C:seen 2.1 kJ ja sulamiseen 33.4 kJ eli yhteensä 35.5 kJ. Veden lämpö ei riitä: palkin vaalea osa kuvaa jäätä, joka ei ehdi sulaa.": "Energy balance bars drawn to scale, in kilojoules: 0.30 kg of water at 20 °C gives out 25.1 kJ when it cools to 0 °C. 0.10 kg of ice at −10 °C needs 2.1 kJ to warm to 0 °C and 33.4 kJ to melt, 35.5 kJ in total. The heat from the water is not enough: the pale part of the bar shows the ice that does not have time to melt.",
+ "jäätä jää": "ice left over",
+ "j": "i",
+ "lämmitys": "warming",
+ "vesi luovuttaa": "water gives out",
+ "jää tarvitsee": "ice needs"
 }

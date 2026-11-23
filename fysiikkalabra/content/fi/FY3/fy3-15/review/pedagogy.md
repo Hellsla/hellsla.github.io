@@ -1,21 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 90a6356cd5aacd67
+CONTENT-HASH: 11fdfd0b3fe68e5d
+
 ## Blocking
-(none)
+
 ## Polish
-- lesson.md Kaava — the condenser power $P_\text{L} = c\,q_m\,\Delta T$ and its figure are not used by the worked example, the inquiry or its checks; the lesson already carries chain efficiency, cogeneration and plant types. Either use it in one task or move it out to keep it one lesson.
-- inquiry.json check-1, option "Päättelyssä ei ongelmaa" feedback — "Tämä tehtävä jatkuu harjoitustehtävissä" is a pointer the student cannot act on; delete.
-- inquiry.json ketju/kaukolampo — the Tutki evidence is given tables (source "example"), so the student computes losses rather than discovering them; honest and labelled, but pred-1 is refuted by arithmetic only. Acceptable without a simulation; say once that the efficiencies are typical values.
-- lesson.md end — the radiator figure (data-fig="scene") sits after the Tiivistelmä and explains no paragraph; place beside the cogeneration paragraph or drop.
-- inquiry.json pred-2 — only the right answer (Cem) states a quantitative relation; fine, but Bea's feedback could name the table row that refutes her.
+- inquiry.json pred-1 feedback (wrong options) — says "Tutki-osan taulukko näyttää, kuinka paljon vaiheet todella häviävät", but the table holds only efficiencies and the task asks one loss (248 MW) — fix: "Tutki-osassa lasket vaiheiden häviöt" or let the task ask for the boiler loss too, so the prediction is compared stage against stage.
+- lesson.md (Kaava, P_L = c q_m ΔT) — the step from Q = cmΔT to power (divide by t, q_m = m/t) is skipped, and the formula is not used in the inquiry — fix: add one sentence "Teho on lämpömäärä aikayksikköä kohti: P = Q/t = c m ΔT / t."
+- inquiry.json johtopaatos prompt — three questions in one (stage, cogeneration, hydro) — fix: split into short numbered parts so the criteria map one to one.
+- lesson.md end of Tiivistelmä — the "scene" (radiator) figure follows a bullet list it does not explain — fix: place it beside the cogeneration paragraph or drop it.
+- inquiry.json hook — "jäähdytysvesi on lämpimämpää" nudges toward the answer before pred-1; acceptable, but a neutral phrasing would keep the prediction open.
+
 ## Checked
-- Path: prior chapter (η = W/Q1, Q1 = W + Q2) -> hook -> retrieval -> two predictions -> three numeric table tasks plus a plant-type comparison -> conclusion -> theory -> example; opening question answered; slot goals (chains, efficiencies, condensing vs cogeneration) covered.
-- Predictions committed before evidence; each wrong option's feedback points to the table and repairs the misconception.
-- No simulation is justified (sim-spec): a sim would only compute η1·η2·η3.
-- Mistake feedback in numeric tasks names the specific slip (loss from P_o not P_1, P_2 as loss).
-- Staged example: seven stages, symbolic first, units, estimate and balance check; not a repeat of the Tutki figures.
-- Wind vs coal pysahdy and check-1 repair the "compare efficiencies directly" misconception; the CHP value question (electricity vs heat) is raised twice.
-- Etsi virhe (average of efficiencies) is a real misconception; the transfer task has hints and mistakes.
-- Exit ticket tests the product rule, the core idea.
-- Figures (hero, Sankey, stacked area, bars, condenser) match their paragraphs and are legible in 390 px captures.
-- Finnish correct; units in LaTeX; glossary terms used.
+- Path: hook, retrieval (optional), two refutable predictions, three data tasks (one optional), explain, theory, reflect, example, error spotting, transfer, checks, exit ticket. The opening question is answered at the end; slot goals met, no extra topics. Workload is about one lesson.
+- Predictions are refutable: the tables give 248 MW of 300 MW total, and a 40 MW drop in electricity against 232 MW of heat. Wrong-option feedback names the misconception (sum or mean instead of product, Bea's equal trade-off, Daniel's pressure claim).
+- No answer disclosed before commitment: theory sits after Tutki; pred feedback only after answering.
+- Figures (captures at 390 px): Sankey, stacked graph, bar chart and condenser are legible, to scale, colour never alone; alt texts give the data without the answer to the predictions.
+- Worked example: seven stages, one step each, symbols first, unit stage, reasonableness and balance check; it does not repeat the inquiry tasks (600 MW, 0,910/0,440/0,950).
+- Etsi virhe (mean vs product) and the transfer task (boiler improvement, 8,6 MW) have repairing hints and mistake feedback.
+- Check 1 and 2 use misconception distractors (non-comparable denominators, heat-engine limit); the explain criteria are observable and match the prompt.
+- Exit ticket tests the core idea (product, not sum or mean).
+- Finnish reads cleanly; glossary terms (hyötysuhde, hukkalämpö, yhteistuotanto, lauhdevoimalaitos) are used consistently; energy is not said to "turn into heat".
+- Exercises not judged (reviewed apart). Hash unchanged at the end.

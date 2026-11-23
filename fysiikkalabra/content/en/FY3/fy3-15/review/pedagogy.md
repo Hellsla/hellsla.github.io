@@ -1,21 +1,24 @@
 VERDICT: PASS
-CONTENT-HASH: 00d526cc7e268abd
+CONTENT-HASH: d89bf7dd1d8a286a
+
 ## Blocking
 (none)
+
 ## Polish
-- lesson.md Kaava — the condenser power $P_\text{L} = c\,q_m\,\Delta T$ and its figure are not used by the worked example, the inquiry or its checks; the lesson already carries chain efficiency, cogeneration and plant types. Either use it in one task or move it out to keep it one lesson.
-- inquiry.json check-1, option "Päättelyssä ei ongelmaa" feedback — "Tämä tehtävä jatkuu harjoitustehtävissä" is a pointer the student cannot act on; delete.
-- inquiry.json ketju/kaukolampo — the Tutki evidence is given tables (source "example"), so the student computes losses rather than discovering them; honest and labelled, but pred-1 is refuted by arithmetic only. Acceptable without a simulation; say once that the efficiencies are typical values.
-- lesson.md end — the radiator figure (data-fig="scene") sits after the Tiivistelmä and explains no paragraph; place beside the cogeneration paragraph or drop.
-- inquiry.json pred-2 — only the right answer (Cem) states a quantitative relation; fine, but Bea's feedback could name the table row that refutes her.
+- inquiry.json `kaukolampo` — the numeric question (waste heat in full district-heating mode, 48 MW) does not itself test pred-2 (electricity falls by 40 MW while heat rises by 232 MW); the refuting comparison is only in the solution's reasonableness line. Ask for the electricity lost per megawatt of heat, or add that comparison to the prompt, so the prediction is confronted by an act, not by reading the solution.
+- inquiry.json `kertaus` — the heat-engine retrieval (800 MJ / 280 MJ) is not asked through the hook's power-plant situation (CLAUDE.md: retrieval belongs to its phenomenon). Use the condenser case: $Q_1$ fuel, $W$ electricity, $Q_2$ to the sea.
+- inquiry.json `check-3` — four criteria in one answer is a lot for a 16-19-year-old; the fourth (what the heat replaces) goes beyond the lesson text, which never mentions separate heating plants. Drop it or add one sentence to the lesson.
+- lesson.md "Common misconception" — the first paragraph states the misconception but the open question "is the energy lost?" is only answered in the next paragraphs; open with the correct statement in bold, then the misconception.
+- exit-ticket.json — near duplicate of the pysahdy check and the Etsi virhe item (product of three efficiencies). A question on the other core idea (why overall efficiency rises but electricity falls) would test more.
+
 ## Checked
-- Path: prior chapter (η = W/Q1, Q1 = W + Q2) -> hook -> retrieval -> two predictions -> three numeric table tasks plus a plant-type comparison -> conclusion -> theory -> example; opening question answered; slot goals (chains, efficiencies, condensing vs cogeneration) covered.
-- Predictions committed before evidence; each wrong option's feedback points to the table and repairs the misconception.
-- No simulation is justified (sim-spec): a sim would only compute η1·η2·η3.
-- Mistake feedback in numeric tasks names the specific slip (loss from P_o not P_1, P_2 as loss).
-- Staged example: seven stages, symbolic first, units, estimate and balance check; not a repeat of the Tutki figures.
-- Wind vs coal pysahdy and check-1 repair the "compare efficiencies directly" misconception; the CHP value question (electricity vs heat) is raised twice.
-- Etsi virhe (average of efficiencies) is a real misconception; the transfer task has hints and mistakes.
-- Exit ticket tests the product rule, the core idea.
-- Figures (hero, Sankey, stacked area, bars, condenser) match their paragraphs and are legible in 390 px captures.
-- English version faithful, terms consistent.
+- Path: hook -> pred-1 and pred-2 -> three table tasks -> conclusion -> theory -> reflect -> example -> transfer; all three slot goals (energy chain, condensing vs CHP efficiencies, conservation) covered, nothing outside FY3 scope.
+- Prior alignment: heat-engine balance and Q = cmΔT are in `prior` with chapter names.
+- Predictions can be argued from the premises; the data (efficiency table, two-mode table) can refute pred-1 and pred-2; wrong-option feedback names the misconception and points to the evidence without stating the number early.
+- No simulation is justified; sim-spec reason is sound; tables and figures serve as the investigation.
+- Speakers: only one of four (Cem) is right; no letter references.
+- Figures (Sankey, bar chart, stacked graph) legible at 390 px, to scale, colour accompanied by labels; stacked graph and Sankey beside the paragraph they explain.
+- Worked example: seven stages, one step each, symbolic first, reasonableness; different numbers from the investigation task.
+- Workload about one lesson: three core numeric tasks, one optional, 1 explain, 3 checks.
+- Mistake values in numeric tasks are real slips (loss of whole fuel power, P2 instead of loss, subtraction of one term only).
+- Hash at start and end identical.
