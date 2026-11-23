@@ -151,30 +151,6 @@ H &= \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 t
 \end{aligned}
 $$
 
-$$
-\begin{aligned}
-\dot{H}_2 &= \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 \\
-H &= \dot{H}_2 t \\
-H &= \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 t
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-\dot{H}_2 &= \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 \\
-H &= \dot{H}_2 t \\
-H &= \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 t
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-\dot{H}_2 &= \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 \\
-H &= \dot{H}_2 t \\
-H &= \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 t
-\end{aligned}
-$$
-
 **Muunnokset:** Aika muutetaan tunneiksi: $t = 5{,}0\,\text{min} = 5{,}0 \cdot \tfrac{1}{60}\,\text{h} = 0{,}08333\,\text{h}$
 
 **Sijoitus:** $$
@@ -199,39 +175,6 @@ $$
 **Periaate:** Keilojen annokset summautuvat vain siellä, missä keilat leikkaavat, eli kasvaimessa. Tulokohdan kautta kulkee vain yksi keila. Tulokohta saa siis vain tämän keilan annoksen, joka on $1{,}3$-kertainen keilan kasvaimeen antamaan annokseen verrattuna. Hoitokertojen annokset lasketaan yhteen.
 
 **Kaava:** Tulokohdan annos johdetaan kasvainannoksesta. Keiloja on $n = 5$, tulokohdan kerroin on $k = 1{,}3$ ja hoitokertoja on $N = 30$:
-
-$$
-\begin{aligned}
-D_\text{keila} &= \dfrac{D_\text{kerta}}{n} \\
-D_\text{tulo} &= k D_\text{keila} \\
-D &= N D_\text{tulo} \\
-&= N k \dfrac{D_\text{kerta}}{n}
-\end{aligned}
-$$
-
-missä $D_\text{kerta} = 2{,}0\,\text{Gy}$ on kasvaimen annos yhdellä hoitokerralla.
-
-$$
-\begin{aligned}
-D_\text{keila} &= \dfrac{D_\text{kerta}}{n} \\
-D_\text{tulo} &= k D_\text{keila} \\
-D &= N D_\text{tulo} \\
-&= N k \dfrac{D_\text{kerta}}{n}
-\end{aligned}
-$$
-
-missä $D_\text{kerta} = 2{,}0\,\text{Gy}$ on kasvaimen annos yhdellä hoitokerralla.
-
-$$
-\begin{aligned}
-D_\text{keila} &= \dfrac{D_\text{kerta}}{n} \\
-D_\text{tulo} &= k D_\text{keila} \\
-D &= N D_\text{tulo} \\
-&= N k \dfrac{D_\text{kerta}}{n}
-\end{aligned}
-$$
-
-missä $D_\text{kerta} = 2{,}0\,\text{Gy}$ on kasvaimen annos yhdellä hoitokerralla.
 
 $$
 \begin{aligned}
@@ -270,33 +213,6 @@ I_\text{B} &= I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{luu}} \\
 \end{aligned}
 $$
 
-$$
-\begin{aligned}
-I_\text{A} &= I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{kudos}} \\
-I_\text{B} &= I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{luu}} \\
-\frac{I_\text{A}}{I_\text{B}} &= \frac{\left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{kudos}}}{\left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{luu}}} \\
-&= 2^{\,d/d_{1/2}^\text{luu} - d/d_{1/2}^\text{kudos}}
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-I_\text{A} &= I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{kudos}} \\
-I_\text{B} &= I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{luu}} \\
-\frac{I_\text{A}}{I_\text{B}} &= \frac{\left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{kudos}}}{\left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{luu}}} \\
-&= 2^{\,d/d_{1/2}^\text{luu} - d/d_{1/2}^\text{kudos}}
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-I_\text{A} &= I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{kudos}} \\
-I_\text{B} &= I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{luu}} \\
-\frac{I_\text{A}}{I_\text{B}} &= \frac{\left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{kudos}}}{\left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{luu}}} \\
-&= 2^{\,d/d_{1/2}^\text{luu} - d/d_{1/2}^\text{kudos}}
-\end{aligned}
-$$
-
 **Muunnokset:** Niitä ei tarvita, koska kaikki paksuudet ovat senttimetreinä.
 
 **Sijoitus:** $\dfrac{I_\text{A}}{I_\text{B}} = 2^{1{,}0\,\text{cm} / 0{,}27\,\text{cm} - 1{,}0\,\text{cm} / 1{,}8\,\text{cm}} = 2^{3{,}7037 - 0{,}5556} = 2^{3{,}1481} = 8{,}87$
@@ -313,33 +229,6 @@ $$
 **Periaate:** Jokainen puoliintumispaksuus puolittaa fotonisäteilyn intensiteetin. Vaimeneminen noudattaa siis yhtälöä $I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$. Paksuus on eksponentissa, joten se ratkaistaan logaritmilla.
 
 **Kaava:** Vaimenemislaki ratkaistaan paksuudelle $d$. Eksponentti saadaan alas luonnollisella logaritmilla ja säännöllä $\ln 2^{x} = x \ln 2$:
-
-$$
-\begin{aligned}
-I &= I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
-\frac{I_0}{I} &= 2^{d/d_{1/2}} \\
-\ln \frac{I_0}{I} &= \frac{d}{d_{1/2}} \cdot \ln 2 \\
-d &= d_{1/2} \cdot \frac{\ln (I_0 : I)}{\ln 2}
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-I &= I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
-\frac{I_0}{I} &= 2^{d/d_{1/2}} \\
-\ln \frac{I_0}{I} &= \frac{d}{d_{1/2}} \cdot \ln 2 \\
-d &= d_{1/2} \cdot \frac{\ln (I_0 : I)}{\ln 2}
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-I &= I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
-\frac{I_0}{I} &= 2^{d/d_{1/2}} \\
-\ln \frac{I_0}{I} &= \frac{d}{d_{1/2}} \cdot \ln 2 \\
-d &= d_{1/2} \cdot \frac{\ln (I_0 : I)}{\ln 2}
-\end{aligned}
-$$
 
 $$
 \begin{aligned}
@@ -474,38 +363,6 @@ H &= k A_0 + H_\text{TT} \\
 \end{aligned}
 $$
 
-$$
-\begin{aligned}
-A_\text{kuv} &= A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \\
-A_0 &= \dfrac{a m}{\left(\tfrac{1}{2}\right)^{t/T_{1/2}}} \\
-H &= k A_0 + H_\text{TT} \\
-&= \dfrac{k a m}{\left(\tfrac{1}{2}\right)^{t/T_{1/2}}} \\
-&\quad + H_\text{TT}
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-A_\text{kuv} &= a m \\
-A_\text{kuv} &= A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \\
-A_0 &= \dfrac{a m}{\left(\tfrac{1}{2}\right)^{t/T_{1/2}}} \\
-H &= k A_0 + H_\text{TT} \\
-&= \dfrac{k a m}{\left(\tfrac{1}{2}\right)^{t/T_{1/2}}} \\
-&\quad + H_\text{TT}
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-A_\text{kuv} &= a m \\
-A_\text{kuv} &= A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \\
-A_0 &= \dfrac{a m}{\left(\tfrac{1}{2}\right)^{t/T_{1/2}}} \\
-H &= k A_0 + H_\text{TT} \\
-&= \dfrac{k a m}{\left(\tfrac{1}{2}\right)^{t/T_{1/2}}} \\
-&\quad + H_\text{TT}
-\end{aligned}
-$$
-
 **Muunnokset:** Niitä ei tarvita, koska odotusaika ja puoliintumisaika ovat molemmat minuutteina. Annoskerroin on millisievertteinä megabecquerelia kohti.
 
 **Sijoitus:** $A_\text{kuv} = 2{,}0\,\tfrac{\text{MBq}}{\text{kg}} \cdot 75\,\text{kg} = 150\,\text{MBq}$ ja $\left(\tfrac{1}{2}\right)^{60\,\text{min} / 110\,\text{min}} = \left(\tfrac{1}{2}\right)^{0{,}5455} = 0{,}6853$, joten $A_0 = \dfrac{150\,\text{MBq}}{0{,}6853} = 218{,}9\,\text{MBq}$. Tällöin $$
@@ -535,60 +392,6 @@ Silloin hyöty potilaalle on suurempi kuin säteilyn aiheuttama pieni lisäriski
 Tarkistuksena voi sovittaa suoran $\ln R$:n ja $d$:n välille kaikkiin viiteen pisteeseen. Se antaa $d_{1/2} = 9{,}18\,\text{mm}$ ja $d_x = 12{,}1\,\text{mm}$ eli saman vastauksen.
 
 **Kaava:** Laskentataajuus noudattaa vaimenemislakia. Se ratkaistaan paksuudelle samoin kuin intensiteetti, käyttäen sääntöä $\ln 2^{x} = x \ln 2$:
-
-$$
-\begin{aligned}
-R &= R_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
-\frac{R_0}{R} &= 2^{d/d_{1/2}} \\
-\ln \frac{R_0}{R} &= \frac{d}{d_{1/2}} \cdot \ln 2 \\
-d &= d_{1/2} \cdot \frac{\ln (R_0 : R)}{\ln 2}
-\end{aligned}
-$$
-
-Kalibroinnissa tunnetaan paksuus $d_{20}$ ja sen laskentataajuus $R_{20}$. Niistä saadaan puoliintumispaksuus ja sen jälkeen tuntemattoman levyn paksuus $d_x$:
-
-$$
-\begin{aligned}
-d_{1/2} &= \dfrac{d_{20} \ln 2}{\ln (R_0 : R_{20})} \\
-d_x &= d_{1/2} \cdot \dfrac{\ln (R_0 : R_x)}{\ln 2}
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-R &= R_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
-\frac{R_0}{R} &= 2^{d/d_{1/2}} \\
-\ln \frac{R_0}{R} &= \frac{d}{d_{1/2}} \cdot \ln 2 \\
-d &= d_{1/2} \cdot \frac{\ln (R_0 : R)}{\ln 2}
-\end{aligned}
-$$
-
-Kalibroinnissa tunnetaan paksuus $d_{20}$ ja sen laskentataajuus $R_{20}$. Niistä saadaan puoliintumispaksuus ja sen jälkeen tuntemattoman levyn paksuus $d_x$:
-
-$$
-\begin{aligned}
-d_{1/2} &= \dfrac{d_{20} \ln 2}{\ln (R_0 : R_{20})} \\
-d_x &= d_{1/2} \cdot \dfrac{\ln (R_0 : R_x)}{\ln 2}
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-R &= R_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
-\frac{R_0}{R} &= 2^{d/d_{1/2}} \\
-\ln \frac{R_0}{R} &= \frac{d}{d_{1/2}} \cdot \ln 2 \\
-d &= d_{1/2} \cdot \frac{\ln (R_0 : R)}{\ln 2}
-\end{aligned}
-$$
-
-Kalibroinnissa tunnetaan paksuus $d_{20}$ ja sen laskentataajuus $R_{20}$. Niistä saadaan puoliintumispaksuus ja sen jälkeen tuntemattoman levyn paksuus $d_x$:
-
-$$
-\begin{aligned}
-d_{1/2} &= \dfrac{d_{20} \ln 2}{\ln (R_0 : R_{20})} \\
-d_x &= d_{1/2} \cdot \dfrac{\ln (R_0 : R_x)}{\ln 2}
-\end{aligned}
-$$
 
 $$
 \begin{aligned}
