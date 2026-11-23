@@ -141,7 +141,7 @@ Efficiency is at most $100\,\%$. In real devices it is usually below $100\,\%$, 
 **Given:** energy taken $E_\text{o} = 36\,\text{kJ}$ and useful energy (kinetic energy) $E_\text{a} = 27\,\text{kJ}$
 **Find:** the energy that becomes losses, $E_\text{h}$, in kilojoules
 **Principle:** Energy is conserved, so the energy taken by the device is divided into useful energy and losses. The losses are found by subtracting the useful energy from the energy taken.
-**Formula:** Energian säilyminen $E_\text{o} = E_\text{a} + E_\text{h}$, josta $E_\text{h} = E_\text{o} - E_\text{a}$
+**Formula:** Conservation of energy $E_\text{o} = E_\text{a} + E_\text{h}$, so $E_\text{h} = E_\text{o} - E_\text{a}$
 **Conversions:** Not needed: both energies are in kilojoules.
 **Substitution:** $E_\text{h} = 36\,\text{kJ} - 27\,\text{kJ} = 9.0\,\text{kJ}$
 **Answer:** $9.0\,\text{kJ}$, two significant figures, as in the given energies.
@@ -151,7 +151,7 @@ Efficiency is at most $100\,\%$. In real devices it is usually below $100\,\%$, 
 **Given:** efficiency $\eta = 90\,\%$ and useful power (electrical power) $P_\text{a} = 180\,\text{kW}$
 **Find:** the power $P_\text{o}$ that the generator takes from the turbine in kilowatts
 **Principle:** The useful power is the share of the power taken given by the efficiency. So the power taken is larger than the useful power, and it is found by dividing the useful power by the efficiency.
-**Formula:** Hyötysuhteen määritelmä $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, josta $P_\text{o} = \dfrac{P_\text{a}}{\eta}$
+**Formula:** Definition of efficiency $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, so $P_\text{o} = \dfrac{P_\text{a}}{\eta}$
 **Conversions:** A percentage is converted to a number by substituting $1\,\% = 0.01$: $90\,\% = 90 \cdot 0.01 = 0.90$. The power does not need converting, because the answer is requested in kilowatts.
 **Substitution:** $P_\text{o} = \dfrac{180\,\text{kW}}{0.90} = 200\,\text{kW}$
 **Answer:** $200\,\text{kW}$ or $2.0 \cdot 10^{2}\,\text{kW}$, two significant figures, as in the efficiency $90\,\%$.

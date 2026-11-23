@@ -2,7 +2,7 @@
 **Given:** potential energy of the stone on the cliff $E_\text{p} = 50\,\text{J}$, kinetic energy on the cliff $0\,\text{J}$, potential energy on the ground $0\,\text{J}$
 **Find:** kinetic energy of the stone $E_\text{k}$ just before it hits the ground in $\text{J}$
 **Principle:** Air resistance is ignored, so no energy enters or leaves the system formed by the stone and the Earth. The system is isolated, so energy is conserved: $E_\text{initial} = E_\text{final}$. Without friction no thermal energy is produced.
-**Formula:** $E_\text{alussa} = E_\text{lopussa}$. At the start there is only potential energy and at the end only kinetic energy, so $E_\text{p} = E_\text{k}$ and $E_\text{k} = E_\text{p}$
+**Formula:** $E_\text{initial} = E_\text{final}$. At the start there is only potential energy and at the end only kinetic energy, so $E_\text{p} = E_\text{k}$ and $E_\text{k} = E_\text{p}$
 **Conversions:** The energy is given in joules and the answer is asked in joules, so no conversions are needed.
 **Substitution:** $E_\text{k} = E_\text{p} = 50\,\text{J}$
 **Answer:** $50\,\text{J}$, two significant figures as in the potential energy $50\,\text{J}$.
@@ -12,7 +12,7 @@
 **Given:** radiant energy absorbed by the leaf $E_\text{rad} = 245\,\text{J}$, chemical energy produced $E_\text{chem} = 6.0\,\text{J}$
 **Find:** energy changed into thermal energy $E_\text{thermal}$ in $\text{J}$
 **Principle:** The leaf changes the absorbed radiant energy into chemical energy and thermal energy, and energy is neither created nor destroyed. By the law of conservation of energy $E_\text{initial} = E_\text{final}$.
-**Formula:** $E_\text{alussa} = E_\text{lopussa}$, so $E_\text{rad} = E_\text{chem} + E_\text{thermal}$, so $E_\text{thermal} = E_\text{rad} - E_\text{chem}$
+**Formula:** $E_\text{initial} = E_\text{final}$, so $E_\text{rad} = E_\text{chem} + E_\text{thermal}$, so $E_\text{thermal} = E_\text{rad} - E_\text{chem}$
 **Conversions:** All energies are in joules, so no conversions are needed.
 **Substitution:** $E_\text{thermal} = 245\,\text{J} - 6.0\,\text{J} = 239\,\text{J}$
 **Answer:** $239\,\text{J}$, in whole joules, because the radiant energy $245\,\text{J}$ is given to the nearest joule and this limits the precision of the difference.
@@ -27,7 +27,7 @@
 At point C there is only the orange kinetic-energy bar, and its top is at the line $500\,\text{J}$; there is no potential energy because the bottom is the zero level.
 
 The bars of point B are not needed.
-**Formula:** $E_\text{alussa} = E_\text{lopussa}$, so $$ \begin{aligned} E_\text{p,A} + E_\text{k,A} &= E_\text{p,C} + E_\text{k,C} \\ &+ E_\text{thermal} \end{aligned} $$, so $$ \begin{aligned} E_\text{thermal} &= (E_\text{p,A} + E_\text{k,A}) \\ &- (E_\text{p,C} + E_\text{k,C}) \end{aligned} $$
+**Formula:** $E_\text{initial} = E_\text{final}$, so $$ \begin{aligned} E_\text{p,A} + E_\text{k,A} &= E_\text{p,C} + E_\text{k,C} \\ &+ E_\text{thermal} \end{aligned} $$, so $$ \begin{aligned} E_\text{thermal} &= (E_\text{p,A} + E_\text{k,A}) \\ &- (E_\text{p,C} + E_\text{k,C}) \end{aligned} $$
 **Conversions:** All energies are in joules, so no conversions are needed.
 **Substitution:** $$
 \begin{aligned}
@@ -56,7 +56,7 @@ So the forms of energy at the start are a) chemical energy, b) radiant energy an
 **Given:** potential energy of the sledge at the top $E_\text{p} = 600\,\text{J}$, energy changed into thermal energy by friction $E_\text{thermal} = 90\,\text{J}$, potential energy at the bottom of the hill $0\,\text{J}$
 **Find:** kinetic energy $E_\text{k}$ at the bottom of the hill in $\text{J}$
 **Principle:** The sledge, the hill and the surroundings form an isolated system, so energy is conserved: $E_\text{initial} = E_\text{final}$. At the start all the energy is potential energy, and at the end it is kinetic energy and thermal energy, into which friction has changed part of it.
-**Formula:** $E_\text{alussa} = E_\text{lopussa}$, so $E_\text{p} = E_\text{k} + E_\text{thermal}$, so $E_\text{k} = E_\text{p} - E_\text{thermal}$
+**Formula:** $E_\text{initial} = E_\text{final}$, so $E_\text{p} = E_\text{k} + E_\text{thermal}$, so $E_\text{k} = E_\text{p} - E_\text{thermal}$
 **Conversions:** All energies are in joules, so no conversions are needed.
 **Substitution:** $E_\text{k} = 600\,\text{J} - 90\,\text{J} = 510\,\text{J}$
 **Answer:** $510\,\text{J}$, three significant figures as in the potential energy $600\,\text{J}$.
@@ -114,7 +114,7 @@ Statements 2 and 4 are false: energy is not used up, and thermal energy is part 
 **Given:** chemical energy released from the battery $E_\text{chem} = 3.00\,\text{kJ}$, kinetic energy of the scooter and rider $E_\text{k} = 2150\,\text{J}$
 **Find:** energy changed into thermal energy $E_\text{thermal}$ in $\text{J}$
 **Principle:** The chemical energy of the battery changes through electrical energy into kinetic energy and thermal energy, and energy is neither created nor destroyed. By the law of conservation of energy $E_\text{initial} = E_\text{final}$.
-**Formula:** $E_\text{alussa} = E_\text{lopussa}$, so $E_\text{chem} = E_\text{k} + E_\text{thermal}$, so $E_\text{thermal} = E_\text{chem} - E_\text{k}$
+**Formula:** $E_\text{initial} = E_\text{final}$, so $E_\text{chem} = E_\text{k} + E_\text{thermal}$, so $E_\text{thermal} = E_\text{chem} - E_\text{k}$
 **Conversions:** The chemical energy is in kilojoules and the kinetic energy in joules. The prefix kilo means a thousand, so we substitute $3.00\,\text{kJ} = 3.00 \cdot 1000\,\text{J} = 3000\,\text{J}$.
 **Substitution:** $E_\text{thermal} = 3000\,\text{J} - 2150\,\text{J} = 850\,\text{J}$
 **Answer:** $850\,\text{J}$, to the nearest ten joules, because the chemical energy $3.00\,\text{kJ}$ is given to the nearest ten joules.
@@ -124,7 +124,7 @@ Statements 2 and 4 are false: energy is not used up, and thermal energy is part 
 **Given:** kinetic energy at the bottom $E_\text{k} = 2400\,\text{J}$, energy changed into thermal energy by friction $E_\text{thermal} = 0.60\,\text{kJ}$, potential energy at the bottom $0\,\text{J}$, the child starts from rest
 **Find:** potential energy $E_\text{p}$ at the top in $\text{kJ}$
 **Principle:** The child, the slide and the water form an isolated system, so energy is conserved: $E_\text{initial} = E_\text{final}$. At the top the child is at rest, so all the energy is potential energy.
-**Formula:** $E_\text{alussa} = E_\text{lopussa}$. At the top the child is at rest and at the bottom the potential energy is zero, so $E_\text{p} = E_\text{k} + E_\text{thermal}$. The formula is already solved for the quantity asked.
+**Formula:** $E_\text{initial} = E_\text{final}$. At the top the child is at rest and at the bottom the potential energy is zero, so $E_\text{p} = E_\text{k} + E_\text{thermal}$. The formula is already solved for the quantity asked.
 **Conversions:** The answer is asked in kilojoules, and the kinetic energy is in joules. The joule is a thousandth of a kilojoule, so we substitute $2400\,\text{J} = 2400 \cdot 0.001\,\text{kJ} = 2.4\,\text{kJ}$.
 **Substitution:** $E_\text{p} = 2.4\,\text{kJ} + 0.60\,\text{kJ} = 3.0\,\text{kJ}$
 **Answer:** $3.0\,\text{kJ}$, two significant figures as in the kinetic energy $2400\,\text{J}$, that is $2.4\,\text{kJ}$.
@@ -134,7 +134,7 @@ Statements 2 and 4 are false: energy is not used up, and thermal energy is part 
 **Given:** potential energy at the highest point $E_\text{p} = 0.36\,\text{kJ}$, the swing starts from rest and finally stops at the lowest point, sound is ignored
 **Find:** total energy changed into thermal energy $E_\text{thermal}$ in $\text{J}$
 **Principle:** The child, the swing, its fixings and the surrounding air form an isolated system, so energy is conserved. At the end the swing is at rest at the lowest point, so it has neither kinetic energy nor potential energy. All the initial energy has changed into thermal energy through air resistance and friction in the fixings.
-**Formula:** $E_\text{alussa} = E_\text{lopussa}$, so $E_\text{p} = E_\text{thermal}$, so $E_\text{thermal} = E_\text{p}$
+**Formula:** $E_\text{initial} = E_\text{final}$, so $E_\text{p} = E_\text{thermal}$, so $E_\text{thermal} = E_\text{p}$
 **Conversions:** The prefix kilo means a thousand, so we substitute $0.36\,\text{kJ} = 0.36 \cdot 1000\,\text{J} = 360\,\text{J}$.
 **Substitution:** $E_\text{thermal} = E_\text{p} = 360\,\text{J}$
 **Answer:** $360\,\text{J}$ or $3.6 \cdot 10^{2}\,\text{J}$, two significant figures as in the given $0.36\,\text{kJ}$.
@@ -144,7 +144,7 @@ Statements 2 and 4 are false: energy is not used up, and thermal energy is part 
 **Given:** electrical energy going into the kettle $E_\text{elec} = 360\,\text{kJ}$, energy transferred to the water as heat $E_\text{water} = 331\,\text{kJ}$
 **Find:** energy ending up in the kettle and the surroundings $E_\text{other}$ in $\text{J}$
 **Principle:** The electrical energy changes into thermal energy, and part of it ends up in the water and the rest in the kettle and the surroundings. Energy is neither created nor destroyed, so $E_\text{initial} = E_\text{final}$.
-**Formula:** $E_\text{alussa} = E_\text{lopussa}$, so $E_\text{elec} = E_\text{water} + E_\text{other}$, so $E_\text{other} = E_\text{elec} - E_\text{water}$
+**Formula:** $E_\text{initial} = E_\text{final}$, so $E_\text{elec} = E_\text{water} + E_\text{other}$, so $E_\text{other} = E_\text{elec} - E_\text{water}$
 **Conversions:** The prefix kilo means a thousand, so we substitute $360\,\text{kJ} = 360 \cdot 1000\,\text{J} = 360\,000\,\text{J}$ and $331\,\text{kJ} = 331 \cdot 1000\,\text{J} = 331\,000\,\text{J}$.
 **Substitution:** $E_\text{other} = 360\,000\,\text{J} - 331\,000\,\text{J} = 29\,000\,\text{J}$
 **Answer:** $29\,000\,\text{J}$ or $2.9 \cdot 10^{4}\,\text{J}$, two significant figures, because the data are given to the nearest kilojoule and the difference is $29\,\text{kJ}$.
@@ -189,7 +189,7 @@ In a real device friction and electricity also change part of the energy into th
 **Given:** electrical energy of each lamp $E_\text{elec} = 216\,\text{kJ}$; energy that changes into light $11\,\text{kJ}$ for the incandescent lamp, $16\,\text{kJ}$ for the halogen lamp and $54\,\text{kJ}$ for the LED lamp (example figures)
 **Find:** the difference between the thermal energies of the incandescent lamp and the LED lamp $\Delta E_\text{thermal}$ in $\text{kJ}$
 **Principle:** A lamp changes electrical energy into light and thermal energy, and energy is neither created nor destroyed, so $E_\text{elec} = E_\text{light} + E_\text{thermal}$.
-**Formula:** $E_\text{alussa} = E_\text{lopussa}$, so $E_\text{thermal} = E_\text{elec} - E_\text{light}$ for both lamps and $$ \begin{aligned} \Delta E_\text{thermal} &= E_\text{thermal,incand} \\ &- E_\text{thermal,LED} \end{aligned} $$
+**Formula:** $E_\text{initial} = E_\text{final}$, so $E_\text{thermal} = E_\text{elec} - E_\text{light}$ for both lamps and $$ \begin{aligned} \Delta E_\text{thermal} &= E_\text{thermal,incand} \\ &- E_\text{thermal,LED} \end{aligned} $$
 **Conversions:** All energies are in kilojoules, so no conversions are needed.
 **Substitution:** $E_\text{thermal,incand} = 216\,\text{kJ} - 11\,\text{kJ} = 205\,\text{kJ}$ and $E_\text{thermal,LED} = 216\,\text{kJ} - 54\,\text{kJ} = 162\,\text{kJ}$, so $\Delta E_\text{thermal} = 205\,\text{kJ} - 162\,\text{kJ} = 43\,\text{kJ}$
 **Answer:** The incandescent lamp produces $43\,\text{kJ}$ more thermal energy. Two significant figures match the accuracy of the energy of light $11\,\text{kJ}$.
@@ -204,7 +204,7 @@ Justification: when the same amount of light is wanted, the LED lamp needs less 
 **Asked:** the share of the initial energy that has changed into thermal energy by point B, as a percentage
 **Principle:** The skater, the half-pipe and the surroundings form an isolated system, so energy is conserved. Friction changes mechanical energy into thermal energy, so the thermal energy is the difference between the initial energy and the mechanical energy at B.
 **Reading the graph:** At A there is only a potential-energy bar, whose top is at the gridline $700\,\text{J}$, and the kinetic energy is zero because the skater is at rest. At B the potential-energy bar and the kinetic-energy bar each reach the gridline $300\,\text{J}$.
-**Formula:** $E_\text{alussa} = E_\text{lopussa}$, so $E_\text{A} = E_\text{B} + E_\text{thermal}$, so $E_\text{thermal} = E_\text{A} - E_\text{B}$, and the share is $p = \dfrac{E_\text{thermal}}{E_\text{A}} \cdot 100\,\%$
+**Formula:** $E_\text{initial} = E_\text{final}$, so $E_\text{A} = E_\text{B} + E_\text{thermal}$, so $E_\text{thermal} = E_\text{A} - E_\text{B}$, and the share is $p = \dfrac{E_\text{thermal}}{E_\text{A}} \cdot 100\,\%$
 **Conversions:** All energies are in joules, so no conversions are needed.
 **Substitution:** $$
 \begin{aligned}

@@ -147,9 +147,13 @@ Sähköverkon häviö $40\,\text{MWh}$ on suurempi kuin kaukolämpöverkon $27\,
 **Periaate:** Asiakkaat tarvitsevat saman energian molemmissa tapauksissa. Pienempi häviö tarkoittaa suurempaa hyötysuhdetta, joten lähtevää energiaa tarvitaan vähemmän. Lasketaan lähtevä energia kummassakin tapauksessa. Sitten vähennetään.
 **Kaava:** $\eta = \dfrac{E_\text{perille}}{E_\text{lähtö}}$, josta $E_\text{lähtö} = \dfrac{E_\text{perille}}{\eta}$, ja säästö $\Delta E = E_\text{lähtö,1} - E_\text{lähtö,2} = E_\text{perille} \left(\dfrac{1}{\eta_1} - \dfrac{1}{\eta_2}\right)$
 **Muunnokset:** $\eta_1 = 100\,\% - 9{,}0\,\% = 91{,}0\,\% = 0{,}910$ ja $\eta_2 = 100\,\% - 6{,}0\,\% = 94{,}0\,\% = 0{,}940$.
-**Sijoitus:** $E_\text{sent,1} = \dfrac{600\,\text{MWh}}{0{,}910} = 659{,}3\,\text{MWh}$
-$E_\text{sent,2} = \dfrac{600\,\text{MWh}}{0{,}940} = 638{,}3\,\text{MWh}$
-$\Delta E = 659{,}3\,\text{MWh} - 638{,}3\,\text{MWh} = 21{,}0\,\text{MWh}$
+**Sijoitus:**
+$$\begin{aligned}
+\Delta E &= E_\text{perille}\left(\dfrac{1}{\eta_1} - \dfrac{1}{\eta_2}\right) \\
+&= 600\,\text{MWh}\left(\dfrac{1}{0,910} - \dfrac{1}{0,940}\right) \\
+&= 659,3\,\text{MWh} - 638,3\,\text{MWh} \\
+&= 21,0\,\text{MWh}
+\end{aligned}$$
 **Vastaus:** $21\,\text{MWh}$, kaksi merkitsevää numeroa. Erotuksen tarkkuutta rajoittavat häviöprosentit $9{,}0\,\%$ ja $6{,}0\,\%$.
 **Järkevyys:** Häviö pienenee kolme prosenttiyksikköä. Kolme prosenttia luvusta $600\,\text{MWh}$ on $18\,\text{MWh}$. Tulos $21\,\text{MWh}$ on hieman suurempi, koska prosentit lasketaan lähtevästä energiasta, ei luvusta $600\,\text{MWh}$.
 
