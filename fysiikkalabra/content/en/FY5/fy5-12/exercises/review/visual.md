@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: fc0cbaa8df160143
-SCOPE: none
+none
 
 ## Blocking
 (none)

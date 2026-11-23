@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 6686402cbc67b037
-SCOPE: delta, Kaava steps rewritten (basic equation, then simplified symbolically)
+none
 
 ## Blocking
 (none)
