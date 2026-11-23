@@ -39,7 +39,10 @@
   // or a solution written in the editor (part 6). It opens what part 8 keeps locked; other scripts may listen too (the progress bar).
   // detail: id (the task: exercise li, activity or Sovella task), kind check | choice | done, state ok | close | no | done.
   const taskId = (el) => (el.closest('#exercises li[id], section.practice-task[id], .activity[id]') || {}).id || '';
-  const attempt = (el, kind, state) => el.dispatchEvent(new CustomEvent('fl:attempt', { bubbles: true, detail: { id: taskId(el), kind, state } }));
+  // Since work queue 11b PR 3 (the FY9 coach's evidence log, valmentaja.js) the detail may carry more, the old fields unchanged:
+  // first (the first attempt at this control on this page), choice (the option picked, its index) and mistake (the index of the
+  // matched common mistake, filled in by inquiry.js a moment later, so a listener reads it after a tick). The same object is kept on the element (flLast).
+  const attempt = (el, kind, state, extra) => { const detail = Object.assign({ id: taskId(el), kind, state }, extra || {}); el.flLast = detail; el.dispatchEvent(new CustomEvent('fl:attempt', { bubbles: true, detail })); };
   window.flAttempt = attempt;
   // A task answered by checking (teacher 2026-11-07, "Tee molemmat"): every Tarkista number and every Vastaa choice of
   // the task checked once, right or wrong, counts it done on the module page's counter (tehty.js), beside a saved
@@ -108,7 +111,7 @@
         state = 'no';
       }
       out.dataset.state = state;
-      attempt(form, 'check', state);
+      attempt(form, 'check', state, { first: tries === 1 });
     });
   });
 

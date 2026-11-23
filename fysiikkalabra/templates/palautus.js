@@ -298,33 +298,21 @@
      Ruukkilabra_<COURSE>_<date>_<time>.json, a new time every save; the ticks keep their own times. */
   function courseWork() {
     const WFORMAT = 'ruukkilabra-tyo', WVERSION = 1, CODE = COURSE.course, PRE = CODE.toLowerCase() + '-';
-    const KEY_RE = new RegExp('(^|[:/])' + CODE.toLowerCase() + '-[a-z0-9]', 'i');
-    // the module page's counter (tehty.js): a solution's first save and the checked tasks, one map for every module in
-    // the browser; the file carries this module's part, and opening it adds what this browser does not have yet
-    const MAPS = ['ruukkilabra:ratkaistu', 'ruukkilabra:tarkistettu'];
-    const plain = (k) => /^(fl:|ruukkilabra:)/.test(k) && k !== 'ruukkilabra:tehty' && !k.startsWith('ruukkilabra:palautus:') && KEY_RE.test(k);
-    const ownKey = (k) => MAPS.includes(k) || plain(k);
-    const readMap = (k) => { try { const v = JSON.parse(localStorage.getItem(k) || '{}'); return v && typeof v === 'object' && !Array.isArray(v) ? v : {}; } catch (e) { return {}; } };
-    const ownRec = (r) => r && typeof r.id === 'string' && r.id.toLowerCase().startsWith(PRE);
+    // which keys and records are the module's, reading them and adding a file's to this browser: padstore.js work()
+    // (shared with the whole-site file, kaikki.js), valid once loadStore() has run
+    let W = null;
     const WKEY = 'ruukkilabra:palautus:' + CODE;
-    const readLocal = () => {
-      const out = {};
-      try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (plain(k)) out[k] = localStorage.getItem(k); } } catch (e) { /* no storage */ }
-      MAPS.forEach((k) => { const m = readMap(k), ids = Object.keys(m).filter((id) => id.toLowerCase().startsWith(PRE)).sort();
-        if (ids.length) out[k] = JSON.stringify(Object.fromEntries(ids.map((id) => [id, m[id]]))); });
-      const sorted = {}; Object.keys(out).sort().forEach((k) => { sorted[k] = out[k]; });
-      return sorted;
-    };
     const pad2 = (n) => String(n).padStart(2, '0');
     const fileName = (d) => `Ruukkilabra_${CODE}_${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())}_${pad2(d.getHours())}${pad2(d.getMinutes())}${pad2(d.getSeconds())}.json`;
     const make = async () => {
       if (window.flPads) { try { await window.flPads.flush(); } catch (e) { throw fail(S('flush')); } }
       try { await loadStore(); } catch (e) { throw fail(S('store')); }
+      W = window.flPadStore.work(CODE);
       let all;
       try { all = await window.flPadStore.all(PRE); } catch (e) { throw fail(S('no_storage')); }
-      const sols = all.solutions.filter(ownRec).sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+      const sols = all.solutions.filter(W.ownRec).sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
       const byId = new Map(sols.map((r) => [r.id, r]));
-      const local = readLocal();
+      const local = W.readLocal();
       const numbers = {};
       Object.keys(local).filter((k) => k.startsWith('ruukkilabra:vastaukset:')).forEach((k) => {
         try { const v = JSON.parse(local[k]); Object.keys((v && v.items) || {}).forEach((ik) => { const m = /^(.+):num\d+$/.exec(ik), val = v.items[ik];
@@ -386,33 +374,22 @@
       if (d.version > WVERSION) throw fail(S('newer'));
       if (d.course !== CODE) throw fail(S('wrong_course', { c: String(d.course).slice(0, 10) }));
       const st = d.store;
+      try { await loadStore(); } catch (e) { throw fail(S('open_failed')); }
+      W = window.flPadStore.work(CODE);
       if (!st || typeof st !== 'object' || !Array.isArray(st.solutions) || !st.local || typeof st.local !== 'object' || Array.isArray(st.local)) throw fail(S('broken'));
       if (await sha256(JSON.stringify({ chapters: d.chapters, progress: d.progress, store: d.store })) !== d.content_sha256) throw fail(S('broken'));
-      const sols = st.solutions.filter((r) => ownRec(r) && typeof r.html === 'string');
-      const local = Object.keys(st.local).filter((k) => ownKey(k) && typeof st.local[k] === 'string');
-      if (sols.length !== st.solutions.length || local.length !== Object.keys(st.local).length) throw fail(S('broken'));
-      try { await loadStore(); } catch (e) { throw fail(S('open_failed')); }
-      let mine;
-      try { mine = new Map((await window.flPadStore.all(PRE)).solutions.map((r) => [r.id, r])); } catch (e) { throw fail(S('open_failed')); }
-      let have = {};
-      try { localStorage.length; have = readLocal(); } catch (e) { throw fail(S('open_failed')); }
-      const diffS = sols.filter((r) => mine.has(r.id) && mine.get(r.id).html !== r.html);
-      const diffL = local.filter((k) => !MAPS.includes(k) && k in have && have[k] !== st.local[k]);
-      const newer = diffS.filter((r) => (mine.get(r.id).updated || '') > (r.updated || '')).length;
-      const replace = diffS.length + diffL.length > 0 && window.confirm(S('conflict', { n: diffS.length + diffL.length, newer }));
-      const putS = sols.filter((r) => !mine.has(r.id) || (replace && mine.get(r.id).html !== r.html));
-      const putL = local.filter((k) => !MAPS.includes(k) && (!(k in have) || (replace && have[k] !== st.local[k])));
-      try { if (putS.length) await window.flPadStore.putAll(putS); } catch (e) { throw fail(S('open_failed')); }
-      try { putL.forEach((k) => localStorage.setItem(k, st.local[k])); } catch (e) { throw fail(S('open_failed')); }
-      local.filter((k) => MAPS.includes(k)).forEach((k) => {   // added to this browser's map; an entry it has stays
-        let add = {}; try { add = JSON.parse(st.local[k]) || {}; } catch (e) { /* nothing to add */ }
-        const m = readMap(k); let n = 0;
-        Object.keys(add).forEach((id) => { if (id.toLowerCase().startsWith(PRE) && !(id in m)) { m[id] = add[id]; n++; } });
-        if (n) try { localStorage.setItem(k, JSON.stringify(m)); } catch (e) { /* the count misses them here */ }
-      });
-      const p = d.progress;
-      if (p && Array.isArray(p.done) && Array.isArray(p.history)) window.flPadStore.mergeDone({ v: 1, done: Object.fromEntries(p.done.filter((x) => Array.isArray(x) && x.length === 2)), log: p.history }, replace);
-      return { n: putS.length, m: putL.length };
+      const sols = st.solutions.filter((r) => W.ownRec(r) && typeof r.html === 'string');
+      const keys = Object.keys(st.local).filter((k) => W.ownKey(k) && typeof st.local[k] === 'string');
+      if (sols.length !== st.solutions.length || keys.length !== Object.keys(st.local).length) throw fail(S('broken'));
+      let r;
+      try {
+        const pl = await W.plan(sols, st.local);
+        const replace = pl.differs > 0 && window.confirm(S('conflict', { n: pl.differs, newer: pl.newer }));
+        r = await W.apply(pl, replace);
+        const p = d.progress;
+        if (p && Array.isArray(p.done) && Array.isArray(p.history)) window.flPadStore.mergeDone({ v: 1, done: Object.fromEntries(p.done.filter((x) => Array.isArray(x) && x.length === 2)), log: p.history }, replace);
+      } catch (e) { throw fail(S('open_failed')); }
+      return r;
     };
     window.flWork = { make, save, open };
 

@@ -3,69 +3,7 @@
 > **Why** can the Sun shine, when its protons are far too slow to reach each other?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: dawn over a dark, hilly landscape. A huge orange Sun is rising behind the hills and lights the sky in yellow and pink. High in the sky a round magnifying lens shows a dark close-up of the inside of the Sun: two tiny red particles move towards each other. Each particle is drawn as a bright centre inside soft, fading rings, as if it were not quite a solid ball." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="qt-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5c7cfa"/><stop offset="1" stop-color="#ffd8a8"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#qt-sky)"/>
-  <defs><radialGradient id="qt-sun" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff3bf"/><stop offset="0.6" stop-color="#ffa94d"/><stop offset="1" stop-color="#e8590c"/></radialGradient><radialGradient id="qt-halo" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffe066" stop-opacity="0.7"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient><radialGradient id="qt-p" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ff8787"/><stop offset="0.35" stop-color="#e03131" stop-opacity="0.75"/><stop offset="1" stop-color="#e03131" stop-opacity="0"/></radialGradient></defs>
-  <circle cx="760" cy="470" r="330" fill="url(#qt-halo)"/>
-  <circle cx="760" cy="470" r="190" fill="url(#qt-sun)"/>
-  <path d="M0,430 Q100,403 200,428 Q300,397 400,429.5 Q500,402 600,428.5 Q700,378 800,433 Q900,389.5 1000,431 Q1100,377.5 1200,433.5 Q1300,386.5 1400,431.5 V600 H0 Z" fill="#3b2f5c" stroke-linejoin="round"/>
-  <path d="M0,466 Q100,438.5 200,463.5 Q300,420.5 400,468.5 Q500,424.5 600,466.5 Q700,444.5 800,462.5 Q900,447.5 1000,463 Q1100,441.5 1200,464 Q1300,430.5 1400,470 V600 H0 Z" fill="#2b2145" stroke-linejoin="round"/>
-  <path d="M0,500 Q100,478 200,499 Q300,459 400,503 Q500,482 600,498 Q700,481 800,498.5 Q900,487.5 1000,497 Q1100,486 1200,497.5 Q1300,470.5 1400,500.5 V600 H0 Z" fill="#231a38" stroke-linejoin="round"/>
-  <path d="M0,527 Q100,496.5 200,529.5 Q300,508 400,525.5 Q500,500 600,526.5 Q700,511.5 800,527 Q900,508.5 1000,524.5 Q1100,495.5 1200,527.5 Q1300,500 1400,526 V600 H0 Z" fill="#181127" stroke-linejoin="round"/>
-  <circle cx="300" cy="210" r="154" fill="#495057" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="300" cy="210" r="140" fill="#2b1d0e"/>
-  <circle cx="300" cy="210" r="140" fill="#e8590c" fill-opacity="0.25"/>
-  <circle cx="194.5" cy="240" r="3.95053" fill="#ffc078"/>
-  <circle cx="218" cy="303" r="3.74343" fill="#ffc078"/>
-  <circle cx="374" cy="130" r="3.84272" fill="#ffc078"/>
-  <circle cx="228.5" cy="182" r="3.05115" fill="#ffc078"/>
-  <circle cx="225.5" cy="215.5" r="2.63941" fill="#ffc078"/>
-  <circle cx="343" cy="144" r="3.36988" fill="#ffc078"/>
-  <circle cx="341" cy="284" r="2.93294" fill="#ffc078"/>
-  <circle cx="388.5" cy="290" r="3.80032" fill="#ffc078"/>
-  <circle cx="306.5" cy="144" r="3.87783" fill="#ffc078"/>
-  <circle cx="400.5" cy="147.5" r="3.23634" fill="#ffc078"/>
-  <circle cx="306" cy="237.5" r="3.55587" fill="#ffc078"/>
-  <circle cx="257" cy="148" r="3.24408" fill="#ffc078"/>
-  <circle cx="344" cy="316" r="3.54514" fill="#ffc078"/>
-  <circle cx="309.5" cy="106" r="3.63986" fill="#ffc078"/>
-  <circle cx="292" cy="207" r="2.63532" fill="#ffc078"/>
-  <circle cx="395" cy="127.5" r="3.88696" fill="#ffc078"/>
-  <circle cx="404.5" cy="186.5" r="3.98168" fill="#ffc078"/>
-  <circle cx="328" cy="204.5" r="3.3036" fill="#ffc078"/>
-  <circle cx="366" cy="268.5" r="3.865" fill="#ffc078"/>
-  <circle cx="329" cy="141" r="3.17458" fill="#ffc078"/>
-  <circle cx="365" cy="119.5" r="3.34807" fill="#ffc078"/>
-  <circle cx="376" cy="201" r="3.28199" fill="#ffc078"/>
-  <circle cx="256.5" cy="208" r="2.46242" fill="#ffc078"/>
-  <circle cx="222.5" cy="136.5" r="3.55581" fill="#ffc078"/>
-  <circle cx="405.5" cy="253.5" r="3.74175" fill="#ffc078"/>
-  <circle cx="336" cy="241" r="2.53046" fill="#ffc078"/>
-  <circle cx="403" cy="207.5" r="2.10564" fill="#ffc078"/>
-  <circle cx="321" cy="221.5" r="3.72145" fill="#ffc078"/>
-  <circle cx="341.5" cy="309.5" r="2.91695" fill="#ffc078"/>
-  <circle cx="333.5" cy="137.5" r="2.18437" fill="#ffc078"/>
-  <circle cx="236" cy="198.5" r="2.44755" fill="#ffc078"/>
-  <circle cx="366" cy="157" r="3.76976" fill="#ffc078"/>
-  <circle cx="388.5" cy="258" r="3.50351" fill="#ffc078"/>
-  <circle cx="405.5" cy="140" r="2.13869" fill="#ffc078"/>
-  <circle cx="244" cy="112.5" r="2.88159" fill="#ffc078"/>
-  <circle cx="238" cy="220" r="54" fill="none" stroke="#ff8787" stroke-width="3" stroke-opacity="0.12"/>
-  <circle cx="238" cy="220" r="40" fill="none" stroke="#ff8787" stroke-width="3" stroke-opacity="0.18"/>
-  <circle cx="238" cy="220" r="28" fill="none" stroke="#ff8787" stroke-width="3" stroke-opacity="0.3"/>
-  <circle cx="238" cy="220" r="30" fill="url(#qt-p)"/>
-  <circle cx="238" cy="220" r="9" fill="#fa5252" stroke="#ffffff" stroke-width="1.5"/>
-  <circle cx="358" cy="202" r="54" fill="none" stroke="#ff8787" stroke-width="3" stroke-opacity="0.12"/>
-  <circle cx="358" cy="202" r="40" fill="none" stroke="#ff8787" stroke-width="3" stroke-opacity="0.18"/>
-  <circle cx="358" cy="202" r="28" fill="none" stroke="#ff8787" stroke-width="3" stroke-opacity="0.3"/>
-  <circle cx="358" cy="202" r="30" fill="url(#qt-p)"/>
-  <circle cx="358" cy="202" r="9" fill="#fa5252" stroke="#ffffff" stroke-width="1.5"/>
-  <line x1="270" y1="274" x2="285.5" y2="270.5" stroke="#ffd8a8" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M296,268 L285.5,276 L283,265.5 Z" fill="#ffd8a8" stroke-linejoin="round"/>
-  <line x1="330" y1="148" x2="314.5" y2="151.5" stroke="#ffd8a8" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M304,154 L314.5,146 L317,156.5 Z" fill="#ffd8a8" stroke-linejoin="round"/>
-  <path d="M400,310 L490,400" fill="none" stroke="#495057" stroke-width="22" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M400,310 L490,400" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <image href="pics/fy14/fy14-quantum-tunnelling-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Electrons one at a time {Slits}

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 062091cb8524d868
+CONTENT-HASH: 15b6140af100a90a
 
 ## Blocking
 - none
@@ -8,7 +8,8 @@ CONTENT-HASH: 062091cb8524d868
 - none
 
 ## Checked
-- delta md-paragraphs (solutions.md): opened open-exercises L3-1280-6, -7, -8 (task 5-22, Vastaus split into three paragraphs) and L2-1280-9, -10 (task 5-21 Mallivastaus). Paragraph gaps even, boxes and maths intact, no clipping; captures current for the hash.
+- delta 8g (Kaava steps as aligned display blocks), economical sample from the lesson's review/shots (current for this hash): fi fy1-5 open-exercises-L3-1280-4 (seven rows), fi fy1-6 L3-1280-7 (five rows with a subscripted left side), en fy1-1 L3-1280-4 and fy1-3 L3-1280-3 (Substitution blocks), fi-easy fy1-7 L3-1280-5 (five single-relation rows).
+- Rows align at the relation sign, fractions and subscripts legible, no clipping or overflow, blocks sit apart from the text, trailing sentences read as their own line; Muunnokset/Sijoitus/Vastaus/Reasonableness survived. This lesson's own capture was not opened; judged from the sampled blocks, which use the same shared component. No figures in the delta.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

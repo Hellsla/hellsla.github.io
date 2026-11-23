@@ -1,26 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 192bf50dde36abe4
+CONTENT-HASH: 74a43218f9d568c4
 
 ## Blocking
-
 None.
 
 ## Polish
+None.
 
-- The planning list now has seven bullets; still questions, but the pixel-width bullet opens with a question and then states the answer. Phrase its second sentence as a hint ("Mitä lukemalle tapahtuu, jos …?") to keep the student planning.
-- The Raportoi link sits in a parenthesis that splits the main clause, and "kuvaajista ja tuloksista ohje …" reads telegraphic (while the guide is unpublished its name runs straight into the sentence). Suggest a sentence of its own after the first: "Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]."
-
-## Checked (delta 2026-10-31)
-
-- Two new planning questions (pixel width, warm air above the lid) are where the student plans and name real systematic errors
-- "(käytä lämpökameran omaa käyttöohjetta)" reads well in the prerequisites; the body repeats it once
-- Body links (kuvaaja, taulukkolaskenta) fit; topic `lampo`
-
-## Delta 2 (2026-10-31)
-
-- Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
-- Still open (polish): the pixel-width bullet still states its answer.
-
-## Delta 4 (2026-10-31)
-
-- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+## Checked (gate 2026-11-23)
+- `git diff HEAD` shows one pedagogical-text change: `\ ` became `\,` between number and unit in the Ohjattu paragraph (15 cm, 20 cm, x = 3 cm). Presentation only; no change to task, scaffolding, data or questions.
+- investigation.json and teacher.md unchanged; the earlier PASS findings (prediction before evidence, variable control, tape-controlled emissivity, report structure, workload, phone/laptop use) stand.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: bc55ddec5aae44aa
+CONTENT-HASH: 043d91dec723e1fb
 
 ## Blocking
 
@@ -39,3 +39,6 @@ None.
 ## Checked (delta 2026-11-18, round 2)
 
 - Subscripts pit and lyh now in LaTeX (\text{pit}, \text{lyh}) in the sentence before the table, matching the headers L_\text{pit}, L_\text{lyh}. Clear to a 16-19-year-old: the sentence still explains lengthening vs shortening the air column. No blocking finding.
+
+## Checked (gate 2026-11-23)
+Only change: `\ ` to `\,` before K in the kelvin conversion (investigation.md). Presentation only; activities, prediction, data, analysis, Finnish and phone/laptop use unchanged. Earlier PASS stands.

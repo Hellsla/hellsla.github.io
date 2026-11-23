@@ -4,7 +4,7 @@
 **Principle:** On a straight line, $s$ increases by the same amount per unit of time everywhere, so the slope is the same whichever two points of the line it is calculated from.
 
 The points are on the line and far apart, so the reading error has only a small effect on the result.
-**Formula:** $k = \dfrac{\Delta s}{\Delta t} = \dfrac{s_2 - s_1}{t_2 - t_1}$
+**Formula:** $$\begin{aligned} k &= \dfrac{\Delta s}{\Delta t} \\ &= \dfrac{s_2 - s_1}{t_2 - t_1} \end{aligned}$$
 **Conversions:** None needed: the distances are in metres and the times in seconds, so the result comes directly in $\text{m/s}$.
 **Substitution:** $k = \dfrac{10.1\,\text{m} - 2.3\,\text{m}}{7.0\,\text{s} - 1.0\,\text{s}} = \dfrac{7.8\,\text{m}}{6.0\,\text{s}} = 1.3\,\text{m/s}$
 **Answer:** $1.3\,\text{m/s}$, two significant figures, because the differences $7.8\,\text{m}$ and $6.0\,\text{s}$ are known to two figures.
@@ -14,7 +14,7 @@ The points are on the line and far apart, so the reading error has only a small 
 **Given:** the line $h = 0.50\,\tfrac{\text{cm}}{\text{min}} \cdot t + 12\,\text{cm}$, that is, $k = 0.50\,\tfrac{\text{cm}}{\text{min}}$ and $b = 12\,\text{cm}$; time $t = 30\,\text{min}$
 **Find:** the height $h$ of the water at $t = 30\,\text{min}$ in centimetres
 **Principle:** The line fitted to the measurements is a linear model of the filling of the pool: the slope tells you the rise per minute and the constant term the height at the start. Substituting the time into the equation of the line gives the height.
-**Formula:** $h = k t + b$
+**Formula:** $$\begin{aligned} h &= k t + b \end{aligned}$$
 **Conversions:** None needed: the time is in minutes as in the unit of the slope, and the height comes out in centimetres.
 **Substitution:** $h = 0.50\,\tfrac{\text{cm}}{\text{min}} \cdot 30\,\text{min} + 12\,\text{cm} = 15\,\text{cm} + 12\,\text{cm} = 27\,\text{cm}$
 **Answer:** $27\,\text{cm}$, two significant figures, like the slope $0.50$ and the constant term $12\,\text{cm}$.
@@ -24,7 +24,7 @@ The points are on the line and far apart, so the reading error has only a small 
 **Given:** the line $h = 0.60\,\tfrac{\text{cm}}{\text{day}} \cdot t + 4.0\,\text{cm}$, that is, $k = 0.60\,\tfrac{\text{cm}}{\text{day}}$ and $b = 4.0\,\text{cm}$; length $h = 10\,\text{cm}$
 **Find:** the time $t$ in days
 **Principle:** The line gives the length as a function of time. Here the length is known and the time is asked for, so the equation of the line is solved for the time.
-**Formula:** $h = k t + b$, from which $t = \dfrac{h - b}{k}$
+**Formula:** $$\begin{aligned} h &= k t + b \\ k t &= h - b \\ t &= \dfrac{h - b}{k} \end{aligned}$$
 **Conversions:** None needed: the lengths are in centimetres and the slope gives centimetres per day.
 **Substitution:** $t = \dfrac{10\,\text{cm} - 4.0\,\text{cm}}{0.60\,\tfrac{\text{cm}}{\text{day}}} = \dfrac{6.0\,\text{cm}}{0.60\,\tfrac{\text{cm}}{\text{day}}} = 10\,\text{days}$
 **Answer:** $10\,\text{days}$, two significant figures, because $6.0\,\text{cm}$ and $0.60\,\tfrac{\text{cm}}{\text{day}}$ are known to two figures.
@@ -34,7 +34,7 @@ The points are on the line and far apart, so the reading error has only a small 
 **Given:** points on the line $(t_1;\ y_1) = (0.0\,\text{h};\ 20.0\,\text{cm})$ and $(t_2;\ y_2) = (4.0\,\text{h};\ 14.0\,\text{cm})$, where $y$ is the length of the candle
 **Find:** the slope $k$ of the line in $\text{cm/h}$
 **Principle:** The candle gets shorter steadily, so the length is a linear function of time. The slope is the change in length divided by the change in time, and it is negative when the quantity decreases.
-**Formula:** $k = \dfrac{\Delta y}{\Delta t} = \dfrac{y_2 - y_1}{t_2 - t_1}$
+**Formula:** $$\begin{aligned} k &= \dfrac{\Delta y}{\Delta t} \\ &= \dfrac{y_2 - y_1}{t_2 - t_1} \end{aligned}$$
 **Conversions:** None needed: the lengths are in centimetres and the times in hours.
 **Substitution:** $k = \dfrac{14.0\,\text{cm} - 20.0\,\text{cm}}{4.0\,\text{h} - 0.0\,\text{h}} = \dfrac{-6.0\,\text{cm}}{4.0\,\text{h}} = -1.5\,\tfrac{\text{cm}}{\text{h}}$
 **Answer:** $-1.5\,\text{cm/h}$, two significant figures, like the differences $-6.0\,\text{cm}$ and $4.0\,\text{h}$.
@@ -44,7 +44,7 @@ The points are on the line and far apart, so the reading error has only a small 
 **Given:** the stack has $N = 250$ sheets and a mass $m = 1.2\,\text{kg}$; the mass is represented by a line through the origin
 **Find:** the mass of one sheet, that is, the slope $k$ in grams per sheet
 **Principle:** The mass is directly proportional to the number of sheets, so the line passes through the origin and its equation is $m = kN$. The slope tells you the mass of one sheet.
-**Formula:** $m = kN$, from which $k = \dfrac{m}{N}$
+**Formula:** $$\begin{aligned} m &= kN \\ k &= \dfrac{m}{N} \end{aligned}$$
 **Conversions:** $1.2\,\text{kg} = 1200\,\text{g}$, because $1\,\text{kg} = 1000\,\text{g}$.
 **Substitution:** $k = \dfrac{1200\,\text{g}}{250} = 4.8\,\text{g}$
 **Answer:** $4.8\,\text{g}$, two significant figures, like the mass $1.2\,\text{kg}$ (the number of sheets is an exact count).
@@ -54,7 +54,7 @@ The points are on the line and far apart, so the reading error has only a small 
 **Given:** points on the line $(t_1;\ s_1) = (2.0\,\text{min};\ 0.30\,\text{km})$ and $(t_2;\ s_2) = (10.0\,\text{min};\ 1.50\,\text{km})$
 **Find:** the slope $k$ in $\text{m/s}$
 **Principle:** The slope of the line in a distance–time graph is the change in distance divided by the change in time. It is the same for any two points on the line, and the units must be converted to SI units before the result is given.
-**Formula:** $k = \dfrac{\Delta s}{\Delta t} = \dfrac{s_2 - s_1}{t_2 - t_1}$
+**Formula:** $$\begin{aligned} k &= \dfrac{\Delta s}{\Delta t} \\ &= \dfrac{s_2 - s_1}{t_2 - t_1} \end{aligned}$$
 **Conversions:** $\Delta s = 1.50\,\text{km} - 0.30\,\text{km} = 1.20\,\text{km} = 1200\,\text{m}$ and $$\begin{aligned} \Delta t &= 10.0\,\text{min} - 2.0\,\text{min} \\ &= 8.0\,\text{min} \\ &= 480\,\text{s} \end{aligned}$$.
 **Substitution:** $k = \dfrac{1200\,\text{m}}{480\,\text{s}} = 2.5\,\text{m/s}$
 **Answer:** $2.5\,\text{m/s}$, two significant figures, because the time interval $8.0\,\text{min}$ is given to two figures.
@@ -67,7 +67,7 @@ The points are on the line and far apart, so the reading error has only a small 
 
 The prediction assumes that the motion continues in the same way after the measured range too.
 **Reading the graph:** The line drawn through the middle of the points passes almost through the origin, and at $6.0\,\text{s}$ it is at $2.9\,\text{m}$. Read these two points from the line, far apart, $(0\,\text{s};\ 0.0\,\text{m})$ and $(6.0\,\text{s};\ 2.9\,\text{m})$, and extend the line to the time $8.0\,\text{s}$.
-**Formula:** $k = \dfrac{s_2 - s_1}{t_2 - t_1}$ and $s = s_1 + k\,(t - t_1)$
+**Formula:** $$\begin{aligned} k &= \dfrac{\Delta s}{\Delta t} \\ &= \dfrac{s_2 - s_1}{t_2 - t_1} \\ s - s_1 &= k\,(t - t_1) \\ s &= s_1 + k\,(t - t_1) \end{aligned}$$
 **Conversions:** None needed: the times are in seconds and the distances in metres.
 **Substitution:** $k = \dfrac{2.9\,\text{m} - 0.0\,\text{m}}{6.0\,\text{s} - 0\,\text{s}} = 0.4833\,\tfrac{\text{m}}{\text{s}}$, so $s = 0.0\,\text{m} + 0.4833\,\tfrac{\text{m}}{\text{s}} \cdot 8.0\,\text{s} = 3.87\,\text{m}$
 **Answer:** $s \approx 3.9\,\text{m}$, two significant figures, because the values read from the line are known to two figures. A fit by eye varies, so about $3.6\ldots4.2\,\text{m}$ is a good answer.
@@ -77,7 +77,7 @@ The prediction assumes that the motion continues in the same way after the measu
 **Given:** points on the line $(V_1;\ m_1) = (3.0\,\textsf{l};\ 3.9\,\text{kg})$ and $(V_2;\ m_2) = (9.0\,\textsf{l};\ 9.9\,\text{kg})$, where $m$ is the combined mass of the canister and the water
 **Find:** the mass of the empty canister, that is, the constant term $b$ in kilograms
 **Principle:** The combined mass is $m = kV + b$: the water adds mass by the amount of the slope per litre, and when $V = 0$ only the mass of the empty canister remains. This is the point where the line crosses the $m$-axis, the constant term $b$.
-**Formula:** $k = \dfrac{m_2 - m_1}{V_2 - V_1}$, and since $m_1 = kV_1 + b$, we get $b = m_1 - kV_1$
+**Formula:** $$\begin{aligned} k &= \dfrac{\Delta m}{\Delta V} \\ &= \dfrac{m_2 - m_1}{V_2 - V_1} \\ m_1 &= kV_1 + b \\ b &= m_1 - kV_1 \end{aligned}$$
 **Conversions:** None needed: the masses are in kilograms and the volumes in litres, so $k$ comes out in $\text{kg/l}$.
 **Substitution:** $k = \dfrac{9.9\,\text{kg} - 3.9\,\text{kg}}{9.0\,\textsf{l} - 3.0\,\textsf{l}} = 1.0\,\tfrac{\text{kg}}{\textsf{l}}$ and $b = 3.9\,\text{kg} - 1.0\,\tfrac{\text{kg}}{\textsf{l}} \cdot 3.0\,\textsf{l} = 0.9\,\text{kg}$
 **Answer:** $0.9\,\text{kg}$, one decimal place like the given masses $3.9\,\text{kg}$ and $9.9\,\text{kg}$.
@@ -87,7 +87,7 @@ The prediction assumes that the motion continues in the same way after the measu
 **Given:** starting charge $b = 4.0\,\text{€}$ and price per kilometre $k = 2.5\,\tfrac{\text{€}}{\text{km}}$; distances $x_1 = 5.0\,\text{km}$ and $x_2 = 10\,\text{km}$
 **Find:** the ratio of the prices $r = \dfrac{y(x_2)}{y(x_1)}$
 **Principle:** The price is a linear function of distance, $y = kx + b$. Since the constant term $b$ is not zero, the price is not directly proportional to the distance: twice the distance does not cost twice the price.
-**Formula:** $y = kx + b$, so $r = \dfrac{kx_2 + b}{kx_1 + b}$
+**Formula:** $$\begin{aligned} y &= kx + b \\ r &= \dfrac{y_2}{y_1} \\ &= \dfrac{kx_2 + b}{kx_1 + b} \end{aligned}$$
 **Conversions:** None needed: the distances are in kilometres and the prices in euros.
 **Substitution:** $r = \dfrac{2.5\,\tfrac{\text{€}}{\text{km}} \cdot 10\,\text{km} + 4.0\,\text{€}}{2.5\,\tfrac{\text{€}}{\text{km}} \cdot 5.0\,\text{km} + 4.0\,\text{€}} = \dfrac{29.0\,\text{€}}{16.5\,\text{€}} = 1.76$
 **Answer:** $1.8$ times, two significant figures, like the price per kilometre $2.5\,\tfrac{\text{€}}{\text{km}}$.
@@ -99,7 +99,7 @@ The prediction assumes that the motion continues in the same way after the measu
 **Principle:** The constant term $b = 0.40\,\text{m}$ is the position at $t = 0$, that is, when the stopwatch was started: the trolley was already $0.40\,\text{m}$ from the start of the track.
 
 So the trolley was at the start of the track before the watch was started, and extending the line backwards gives a negative stopwatch reading.
-**Formula:** $s = kt + b$, from which $t = \dfrac{s - b}{k}$
+**Formula:** $$\begin{aligned} s &= kt + b \\ kt &= s - b \\ t &= \dfrac{s - b}{k} \end{aligned}$$
 **Conversions:** None needed: the position is in metres and the slope gives metres per second.
 **Substitution:** $t = \dfrac{0 - 0.40\,\text{m}}{0.85\,\tfrac{\text{m}}{\text{s}}} = -0.4706\,\text{s}$
 **Answer:** $-0.47\,\text{s}$, two significant figures like the slope $0.85\,\tfrac{\text{m}}{\text{s}}$ and the constant term $0.40\,\text{m}$. The minus sign means that the trolley was at the start of the track $0.47\,\text{s}$ before the stopwatch was started.
@@ -111,7 +111,7 @@ The result assumes that the trolley was already moving at the same speed before 
 **Given:** the temperature $T$ of the coffee: $90\,{}^\circ\text{C}$ ($0\,\text{min}$), $72\,{}^\circ\text{C}$ ($10\,\text{min}$), $60\,{}^\circ\text{C}$ ($20\,\text{min}$) and $51\,{}^\circ\text{C}$ ($30\,\text{min}$)
 **Find:** the ratio of the absolute values of the slopes $\dfrac{|k_1|}{|k_3|}$ in the first and last ten-minute intervals, and a justification of why one line does not fit
 **Principle:** If the data points followed a straight line, the slope would be the same in every time interval. Calculate the slope for the first and last intervals and compare them.
-**Formula:** $k = \dfrac{\Delta T}{\Delta t}$ and $\dfrac{|k_1|}{|k_3|}$
+**Formula:** $$\begin{aligned} k_1 &= \dfrac{\Delta T_1}{\Delta t_1} \\ k_3 &= \dfrac{\Delta T_3}{\Delta t_3} \\ \text{ratio} &= \dfrac{|k_1|}{|k_3|} \end{aligned}$$
 **Conversions:** None needed: a temperature difference is the same in degrees Celsius and in kelvins, and the time is in minutes.
 **Substitution:** $k_1 = \dfrac{72\,{}^\circ\text{C} - 90\,{}^\circ\text{C}}{10\,\text{min}} = -1.8\,\tfrac{{}^\circ\text{C}}{\text{min}}$ and $k_3 = \dfrac{51\,{}^\circ\text{C} - 60\,{}^\circ\text{C}}{10\,\text{min}} = -0.90\,\tfrac{{}^\circ\text{C}}{\text{min}}$, so $\dfrac{|k_1|}{|k_3|} = \dfrac{1.8}{0.90} = 2.0$
 **Answer:** $2.0$ times, two significant figures, because the temperatures were measured to two figures. One line does not fit, because the slope is not constant: the coffee first cools twice as fast as at the end, and the interval 10–$20\,\text{min}$ gives a third value, $-1.2\,\tfrac{{}^\circ\text{C}}{\text{min}}$.
@@ -125,7 +125,7 @@ The points do not lie on a straight line.
 **Principle:** The slope is $k = \Delta y : \Delta x$. When the $x$ values are known accurately, the relative uncertainty of the slope is equal to the relative uncertainty of the difference $\Delta y$.
 
 On a straight line $\Delta y = k\,\Delta x$, so the difference grows with the distance $\Delta x$ between the points, but the reading error stays the same. Here $\Delta y$ and $\Delta x$ are differences between two points, whereas $\Delta k$ and $\Delta y_\text{read}$ are uncertainties.
-**Formula:** $\dfrac{\Delta k}{k} = \dfrac{2\,\Delta y_\text{read}}{\Delta y} = \dfrac{2\,\Delta y_\text{read}}{k\,\Delta x}$, so $\dfrac{(\Delta k : k)_\text{near}}{(\Delta k : k)_\text{far}} = \dfrac{\Delta x_2}{\Delta x_1}$
+**Formula:** $$\begin{aligned} k &= \dfrac{\Delta y}{\Delta x} \\ \Delta y &= k\,\Delta x \\ \dfrac{\Delta k}{k} &= \dfrac{2\,\Delta y_\text{read}}{\Delta y} \\ &= \dfrac{2\,\Delta y_\text{read}}{k\,\Delta x} \\ \dfrac{(\Delta k : k)_\text{near}}{(\Delta k : k)_\text{far}} &= \dfrac{\Delta x_2}{\Delta x_1} \end{aligned}$$
 **Conversions:** None needed: the ratio has no unit.
 **Substitution:** Near: $\Delta y = 2.0 \cdot 0.5 = 1.0$ and $\dfrac{\Delta k}{k} = \dfrac{0.2}{1.0} = 0.20$. Far: $\Delta y = 2.0 \cdot 8.0 = 16$ and $\dfrac{\Delta k}{k} = \dfrac{0.2}{16} = 0.0125$. The ratio is $\dfrac{0.20}{0.0125} = \dfrac{8.0}{0.5} = 16$.
 **Answer:** $16$ times. The reading error cancels out of the ratio, so the number is determined only by the ratio of the $\Delta x$ values, $8.0 : 0.5 = 16$, which is exact; two significant figures are enough. Points far apart are the better choice, because the difference $\Delta y$ is large compared with the reading error.
@@ -157,7 +157,7 @@ It is not the mass at zero volume (that would be the constant term), nor is it a
 **Principle:** The length of the spring is a linear function of the load, $l = km + b$. Without a load $m = 0$, so the length of the spring is where the line crosses the vertical axis, that is, the constant term $b$.
 
 It is calculated from one point of the line and the slope.
-**Formula:** $l_1 = km_1 + b$, from which $b = l_1 - km_1$
+**Formula:** $$\begin{aligned} l &= km + b \\ l_1 &= km_1 + b \\ b &= l_1 - km_1 \end{aligned}$$
 **Conversions:** None needed: the lengths are in centimetres and the masses in kilograms, as in the unit of the slope.
 **Substitution:** $b = 7.0\,\text{cm} - 1.5\,\tfrac{\text{cm}}{\text{kg}} \cdot 3.0\,\text{kg} = 7.0\,\text{cm} - 4.5\,\text{cm} = 2.5\,\text{cm}$
 **Answer:** $2.5\,\text{cm}$, two significant figures, like the given values $7.0\,\text{cm}$ and $1.5\,\tfrac{\text{cm}}{\text{kg}}$.
@@ -170,7 +170,7 @@ It is calculated from one point of the line and the slope.
 
 The line is drawn through the middle of the set of points, and the slope is calculated from points on the line, not from data points.
 **Reading the graph:** The points lie on a rising line with points on both sides of it. The fitted line passes approximately through the points $(0\,\text{g};\ 0.2\,\text{mm})$ and $(300\,\text{g};\ 24.1\,\text{mm})$. They are read from the line and chosen far apart.
-**Formula:** $k = \dfrac{\Delta x}{\Delta m} = \dfrac{x_2 - x_1}{m_2 - m_1}$
+**Formula:** $$\begin{aligned} k &= \dfrac{\Delta x}{\Delta m} \\ &= \dfrac{x_2 - x_1}{m_2 - m_1} \end{aligned}$$
 **Conversions:** None needed: the extension is in millimetres and the mass in grams, as in the requested unit.
 **Substitution:** $k = \dfrac{24.1\,\text{mm} - 0.2\,\text{mm}}{300\,\text{g} - 0\,\text{g}} = \dfrac{23.9\,\text{mm}}{300\,\text{g}} = 0.0797\,\tfrac{\text{mm}}{\text{g}}$
 **Answer:** $0.080\,\text{mm/g}$, two significant figures, because the line is fitted by eye and the slope is therefore obtained only to two figures. Fitting by eye varies, so about $0.076\text{–}0.084\,\text{mm/g}$ is a good answer.
@@ -185,7 +185,7 @@ It is read from the fitted line and not from a data point, because the points ha
 **Reading the graph:** The points lie on a rising line that starts on the vertical axis clearly above zero. The fitted line passes approximately through the points $(0.0\,\text{s};\ 0.83\,\text{m})$ and $(5.0\,\text{s};\ 3.07\,\text{m})$, so the intercept is $0.83\,\text{m}$.
 
 The points $(0.0\,\text{s};\ 0.83\,\text{m})$ and $(5.0\,\text{s};\ 3.07\,\text{m})$ also give the slope, that is, the speed of the trolley.
-**Formula:** $b = x_1 - vt_1$, where $v = \dfrac{x_2 - x_1}{t_2 - t_1}$; when $t_1 = 0$, $b = x_1$
+**Formula:** $$\begin{aligned} v &= \dfrac{\Delta x}{\Delta t} \\ &= \dfrac{x_2 - x_1}{t_2 - t_1} \\ x_1 &= vt_1 + b \\ b &= x_1 - vt_1 \end{aligned}$$
 **Conversions:** None needed: the times are in seconds and the positions in metres.
 **Substitution:** $v = \dfrac{3.07\,\text{m} - 0.83\,\text{m}}{5.0\,\text{s} - 0.0\,\text{s}} = 0.448\,\tfrac{\text{m}}{\text{s}}$ and $b = 0.83\,\text{m} - 0.448\,\tfrac{\text{m}}{\text{s}} \cdot 0.0\,\text{s} = 0.83\,\text{m}$
 **Answer:** $0.83\,\text{m}$, two decimal places, like the positions. Fitting by eye varies, so about $0.75\text{–}0.91\,\text{m}$ is a good answer. The line does not pass through the origin, because when the clock was started the trolley was already $0.83\,\text{m}$ from the mark on the track from which the position is measured.
@@ -200,7 +200,7 @@ The constant term is therefore the position of the trolley when the clock was st
 
 A separate line is fitted for each material in the same coordinate system, and the steeper line belongs to the denser material.
 **Reading the graph:** Both sets of points rise along lines close to the origin, but the points of B are much higher than those of A at every volume. The fitted lines pass approximately through the points $(0\,\text{cm}^3;\ 0.3\,\text{g})$ and $(50\,\text{cm}^3;\ 135.6\,\text{g})$ (A) and $(0\,\text{cm}^3;\ 0.5\,\text{g})$ and $(50\,\text{cm}^3;\ 392.3\,\text{g})$ (B).
-**Formula:** $k = \dfrac{\Delta m}{\Delta V}$ and $\dfrac{k_\text{B}}{k_\text{A}}$
+**Formula:** $$\begin{aligned} k_\text{A} &= \dfrac{\Delta m_\text{A}}{\Delta V} \\ k_\text{B} &= \dfrac{\Delta m_\text{B}}{\Delta V} \\ \text{ratio} &= \dfrac{k_\text{B}}{k_\text{A}} \end{aligned}$$
 **Conversions:** None needed: the ratio has no unit, and the slope of each line comes out in $\text{g/cm}^3$.
 **Substitution:** $k_\text{A} = \dfrac{135.6\,\text{g} - 0.3\,\text{g}}{50\,\text{cm}^3} = 2.71\,\tfrac{\text{g}}{\text{cm}^3}$ and $k_\text{B} = \dfrac{392.3\,\text{g} - 0.5\,\text{g}}{50\,\text{cm}^3} = 7.84\,\tfrac{\text{g}}{\text{cm}^3}$, so $\dfrac{k_\text{B}}{k_\text{A}} = \dfrac{7.84}{2.71} = 2.89$
 **Answer:** $2.9$ times, two significant figures, because the lines are fitted by eye and the slopes $2.7\,\text{g/cm}^3$ and $7.8\,\text{g/cm}^3$ are reliable only to two figures, although the masses are given to three.
@@ -217,7 +217,7 @@ Among the measured points, over the range $100\text{–}500\,\text{g}$ the exten
 **Reading the graph:** The first five points lie on a line with points on both sides of it. The fitted line passes approximately through the points $(0\,\text{g};\ 0.2\,\text{mm})$ and $(500\,\text{g};\ 40.3\,\text{mm})$.
 
 The points $600\,\text{g}$ and $700\,\text{g}$ are above the line, and the difference grows: the line would give $48.3\,\text{mm}$ and $56.3\,\text{mm}$, but the measured values are $51.8\,\text{mm}$ and $68.9\,\text{mm}$. The deviations are $3.5\,\text{mm}$ and $12.6\,\text{mm}$, while inside the range the deviation is at most $0.3\,\text{mm}$.
-**Formula:** $k = \dfrac{\Delta x}{\Delta m} = \dfrac{x_2 - x_1}{m_2 - m_1}$
+**Formula:** $$\begin{aligned} k &= \dfrac{\Delta x}{\Delta m} \\ &= \dfrac{x_2 - x_1}{m_2 - m_1} \end{aligned}$$
 **Conversions:** None needed: the extension is in millimetres and the mass in grams.
 **Substitution:** $k = \dfrac{40.3\,\text{mm} - 0.2\,\text{mm}}{500\,\text{g} - 0\,\text{g}} = \dfrac{40.1\,\text{mm}}{500\,\text{g}} = 0.0802\,\tfrac{\text{mm}}{\text{g}}$
 **Answer:** $0.080\,\text{mm/g}$, two significant figures, because the line is fitted by eye.
@@ -240,7 +240,7 @@ The estimate is simple and does not guarantee that the true value is within the 
 **Reading the graph:** The plotted points rise steadily, and the steepest and the gentlest line both pass through the set of points so that points are left on both sides.
 
 Between the times $1.0\,\text{s}$ and $6.0\,\text{s}$ the steepest line rises $3.50\,\text{m} - 0.75\,\text{m} = 2.75\,\text{m}$, and between the times $2.0\,\text{s}$ and $5.0\,\text{s}$ the gentlest rises $2.60\,\text{m} - 1.40\,\text{m} = 1.20\,\text{m}$. The student's mean and slopes are correct; the error is in the calculation of the uncertainty.
-**Formula:** $k = \dfrac{\Delta s}{\Delta t}$, $\;k = \dfrac{k_\text{max} + k_\text{min}}{2}$, $\;\Delta k = \dfrac{k_\text{max} - k_\text{min}}{2}$ and the relative uncertainty $\dfrac{\Delta k}{k} \cdot 100\,\%$
+**Formula:** $$\begin{aligned} k_\text{max} &= \dfrac{\Delta s_\text{max}}{\Delta t_\text{max}} \\ k_\text{min} &= \dfrac{\Delta s_\text{min}}{\Delta t_\text{min}} \\ k &= \dfrac{k_\text{max} + k_\text{min}}{2} \\ \Delta k &= \dfrac{k_\text{max} - k_\text{min}}{2} \\ \varepsilon_k &= \dfrac{\Delta k}{k} \cdot 100\,\% \end{aligned}$$
 **Conversions:** None needed: the slopes come out in $\text{m/s}$, and the percentage is a ratio without a unit multiplied by $100$.
 **Substitution:** $k_\text{max} = \dfrac{2.75\,\text{m}}{5.0\,\text{s}} = 0.55\,\tfrac{\text{m}}{\text{s}}$ and $k_\text{min} = \dfrac{1.20\,\text{m}}{3.0\,\text{s}} = 0.40\,\tfrac{\text{m}}{\text{s}}$. The mean is $k = \dfrac{0.55 + 0.40}{2}\,\tfrac{\text{m}}{\text{s}} = 0.475\,\tfrac{\text{m}}{\text{s}}$ and $\Delta k = \dfrac{0.55 - 0.40}{2}\,\tfrac{\text{m}}{\text{s}} = 0.075\,\tfrac{\text{m}}{\text{s}}$, so $\dfrac{\Delta k}{k} \cdot 100\,\% = \dfrac{0.075}{0.475} \cdot 100\,\% = 15.8\,\%$
 **Answer:** The student used the whole difference of the slopes, $0.15\,\tfrac{\text{m}}{\text{s}}$, as the uncertainty instead of half of it; the correct uncertainty is $16\,\%$, two significant figures, like the coordinates of the points (for example $0.75\,\text{m}$). The slope is therefore about $(0.48 \pm 0.08)\,\tfrac{\text{m}}{\text{s}}$.
@@ -265,7 +265,7 @@ The formula and the division on line 4 are correct, but it uses the wrong number
 **Given:** volume $V = 45\,\text{cm}^3$; from the table (MAFY table, densities of solids, aluminium) $\rho = 2.70\cdot10^{3}\,\text{kg/m}^3$
 **Asked:** the mass $m$ of the object in $\text{g}$
 **Principle:** The line of a mass–volume graph passes through the origin, so $m = kV$, and the slope $k$ is the density $\rho$ of the material. The density of aluminium is read from the table and used as the slope.
-**Formula:** $m = kV = \rho V$
+**Formula:** $$\begin{aligned} m &= kV \\ &= \rho V \end{aligned}$$
 **Conversions:** $$\begin{aligned} &2.70\cdot10^{3}\,\text{kg/m}^3 \\ &= 2.70\,\text{g/cm}^3 \end{aligned}$$, because $1\,\text{kg} = 10^{3}\,\text{g}$ and $1\,\text{m}^3 = 10^{6}\,\text{cm}^3$. This way the volume can be used in cubic centimetres and the mass comes out in grams.
 **Substitution:** $m = 2.70\,\dfrac{\text{g}}{\text{cm}^3} \cdot 45\,\text{cm}^3 = 121.5\,\text{g}$
 **Answer:** $m \approx 1.2\cdot10^{2}\,\text{g}$ (calculated value $121.5\,\text{g}$), two significant figures as in the volume $45\,\text{cm}^3$. The density is from the MAFY table (densities of solids); an answer within about $\pm 4\,\%$ is accepted.
@@ -286,7 +286,7 @@ At the start of the interval of part b) $t_1 = 6\,\text{h}$, $T_1 = 7.2\,{}^\cir
 
 The temperature is lowest at $4$ o'clock and highest at $16$ o'clock. From $6$ to $12$ o'clock the points lie roughly on a line: the two-hour changes are $3.2$, $3.1$ and $2.8\,{}^\circ\text{C}$.
 
-**Formula:** $k = \dfrac{\Delta T}{\Delta t} = \dfrac{T_2 - T_1}{t_2 - t_1}$ and the linear model $T(t) = T_1 + k(t - t_1)$
+**Formula:** $$\begin{aligned} k &= \dfrac{\Delta T}{\Delta t} \\ &= \dfrac{T_2 - T_1}{t_2 - t_1} \\ T - T_1 &= k\,(t - t_1) \\ T(t) &= T_1 + k\,(t - t_1) \end{aligned}$$
 
 **Conversions:** None: the times are in hours and the temperatures in degrees Celsius. A change in temperature is the same in degrees Celsius and in kelvins, so $1\,{}^\circ\text{C/h} = 1\,\text{K/h}$.
 

@@ -1,21 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 43e1c4e36cbb8f96
+CONTENT-HASH: a6a1e38a7bcef212
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fig-5 (setup, 390 px) — the label "jarru" sits under the track and the dashed line passes close to it; the 390 px labels are small — move "jarru" a little to the left of the dashed line or enlarge it slightly.
-- [Minor] fig-7 / fig-9 (graphs) — the slope label "kulmakerroin μg" is plain text beside the line rather than in the line's colour; fine for a schematic, but say "kaaviokuva" in the aria-label if not already stated.
-- [Minor] fig-3 (forces) — the $\overline{F}_\mu$ arrow starts at the lower edge's left corner, so it reads as applied at the corner; draw it from the contact surface under the middle if the layout allows.
-- for science: fig-3 draws $\overline{N}$ and $\overline{G}$ at the same length with the line of action slightly offset (G from the centre, N from the base). The offset is only a drawing choice, but a check that the forces are shown as acting at one point costs nothing.
+- [Minor] "Miksi juuri nämä akselit?" box (page 390 part 9, 1280 part 5-6) — one 123-word paragraph holding five ideas (axis choice, v0², swapped axes, curved s(v0), offset causes, tilt) — split into two or three paragraphs, or add short ### subheadings ("Muut akselivalinnat", "Mistä vakiotermi?"); nothing to be removed.
+- [Minor] Inline `\dfrac` in "μ = k/g" and "Δμ/μ = Δk/k" sentences (1280 part 5, 390 part 10-11) — tall fractions open the line spacing in running text; use `\tfrac` inline as NOTES §1 says.
+- [Minor] Figure "model" (fig-4) — "kulmakerroin μg" label sits far from the line, top left, and the y-axis title is cramped against the arrow tip; move the label next to the line's end in the figure's own colour and give the axis title a little more room.
+- [Minor] Figure "velocity" (fig-5) — the Δt/Δv triangle sits slightly off the line at its top-left corner; align the corners exactly to the line so the slope triangle reads cleanly.
+- [Minor] Prose — "Tarvitsetko apua?" lines are two separate muted italic lines after one another (Laajennus); put them on one line or in a list to reduce stacking.
 
 ## Checked
-- contact-1 (captures 1–12: top, page 390 parts 1–10).
-- fig-1 hero, fig-3 forces, fig-5 setup, fig-7 model graph and fig-9 velocity graph, all at 390 px.
-- page-1280-4 (theory with force diagram, setup, equations) and page-390-7 (Suunnittele, hints).
-- open-ennusta-1280 (the prediction stage).
-- The text of investigation.md, investigation.json and teacher.md was read in full; the 28×28 captures (fig-2, 4, 6, 8, 10) are empty wrappers, not figures.
+- Contact sheets 1 and 2; opening at 390 (top-390) and 1280 (top-1280).
+- All five figures at 390: fig-1 hero (carts with shrinking gaps, sensor, laptop; reads well), fig-2 forces (force red, v blue, a orange, G/N/F_mu all LaTeX overlines, dashed track line, N = G in length), fig-3 setup (ghost cart at v0, stopped cart, s dimension), fig-4 model graph, fig-5 velocity graph (axes with quantity names, no data points, model lines only, correctly schematic).
+- Page parts at 390 (part 9 and others via contact sheet) and 1280 (parts 3, 5, 8): formulas render without red source, aligned displays, decimal comma and units in LaTeX, no clipping or overflow, one reading column, figures beside/under their paragraphs.
+- Teacher's notes box open in contact sheets (readable, one voice).
+- Finnish text read in full: fluent, glossary terms consistent (liukukitka, liukukitkakerroin), no AI-style stacking.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

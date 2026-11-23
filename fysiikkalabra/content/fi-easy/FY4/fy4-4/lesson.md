@@ -191,9 +191,10 @@ Kysytään kiihtyvyyttä $a$ ja sen suuntaa.
 
 <!-- vaihe -->
 
-**Kaava ratkaistuna.** Kuviosta kirjoitetaan kokonaisvoima $T - mg$, ja sitten ratkaistaan kiihtyvyys:
+**Kaava ratkaistuna.** Lähdetään Newtonin toisesta laista $\Sigma F = ma$. Kuviosta kokonaisvoima on $T - mg$, ja sitten ratkaistaan kiihtyvyys:
 ```latex
 \begin{aligned}
+&\Sigma F = ma \\
 &T - mg = ma \\
 &a = \frac{T - mg}{m}
 \end{aligned}
@@ -209,7 +210,7 @@ Kysytään kiihtyvyyttä $a$ ja sen suuntaa.
 ```latex
 \begin{aligned}
 &a = \frac{T - mg}{m} \\
-&mg = 480\,\text{kg}\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \\
+&mg = 480\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\
 &\phantom{mg} = 4708{,}8\,\text{N} \\
 &a = \frac{5200\,\text{N} - 4708{,}8\,\text{N}}{480\,\text{kg}} \\
 &\phantom{a} \approx 1{,}02\,\text{m/s}^2

@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 56fe6daaa90aa28f
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 87f70b122b0e9621
 
 ## Blocking
 - none
 
 ## Polish
-- Järkevyys for 2,5 m/s (9 km/h): "kävelijälle hyvin reipas vauhti" is generous (9 km/h is race-walking pace); "hidas hölkkä" alone would suffice. Not an error.
+- none
 
 ## Checked
-- Δs = vt now used where the distance travelled is asked (5,5 · 20 = 110 m; 360/45 = 8,0 m/s; 15 · 14 = 210 m; 4500/10 = 450 s; 343 · 5,0 = 1,7 km): dropping the unstated "s0 = 0" assumption is correct, since Δs = vt needs no starting point
-- average speed = change in position / length of interval: correct for this forward-only cyclist and consistent with the solution
-- oppilas → opiskelija; L2 kärry reword keeps data (7,0 m at 2,0 s, 21 m at 6,0 s)
-- answers.py unchanged; en and fi-easy match the fi fixes
-- fi-easy: same changes as fi, meaning preserved
+- New fy1-5-L1-09: MAFY water 20 °C 1482,3 m/s · 2,0 s = 2964,6 m = 2,96 km, recomputed; 3,0 km inside tol 0,04.
+- Rearranged rows (Δs = s − s₀, 2d = ct, meeting-time v₂t₀ = (v₂ − v₁)t, area = vt) algebraically correct.
+- Delta: every changed Kaava step checked against the old one: the new rows start from the basic equation (definition or ratio) and solve symbolically to the same final form the Sijoitus substitutes into; no sign, symbol or condition changed.
+- Numeric tokens of the removed and added lines compared by script: no number lost or changed (only added exponents or symbols of the new rows).
+- answer, unit and tolerance of every exercise identical to the Finnish set (content/fi), all ids present; answers.py rerun, every answer within rounding of its json value (unchanged since the passed version).
+- Paragraph splits of Mallivastaus/Vastaus/Periaate texts: same sentences, same numbers.
+- Teacher-approved pictures and figures in the diff not re-judged (teacher-figure).

@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: acf8f3273c02a82c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 2d8ab788261cf4e2
 
 ## Blocking
 - none
@@ -9,9 +8,11 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- Järkevyys checks now carry units: 0,5 cm/min · 30 min = 15 cm; 0,60 cm/vrk · 10 vrk + 4,0 cm = 10 cm; 0,85 m/s · 0,47 s = 0,40 m; 0,080 mm/g · 100 g = 8 mm; 2,5 m/s = 2,5 · 3,6 km/h = 9 km/h; all recomputed
-- L3-03: Δx as point separation vs Δk, Δy_luku as uncertainties: the added note is correct and the ratio 16 is unchanged
-- (0,475 ± 0,075) m/s = 0,40–0,55 m/s and (0,475 ± 0,15) m/s = 0,33–0,63 m/s correct
-- "suureiden välistä riippuvuutta" (instead of "ilmiön lakia") and "tulos on uskottava" (1,0 kg/l) are more accurate claims; lukumäärä N fine
-- answers.py unchanged; units upright in task texts
-- fi-easy: same changes as fi, meaning preserved
+- New fy1-4-L1-09: MAFY aluminium 2,70 g/cm³ · 45 cm³ = 121,5 g, recomputed; 1,2·10² g inside tol 0,04.
+- New fy1-4-L2-09: k = (16,3 − 7,2)/6 = 1,517 °C/h; model values 10,2, 13,3, 22,4, −1,9 °C, 2-h steps 3,2/3,1/2,8, minimum at 4 h and maximum at 16 h all recomputed; table labelled as invented; extrapolation limit stated.
+- Kaava rows for b = m₁ − kV₁, t = (s − b)/k, Δk/k = 2Δy_luku/(kΔx) correct; L2-06 check 0,83 + 2,2 ≈ 3,0 m is the right sum.
+- Delta: every changed Kaava step checked against the old one: the new rows start from the basic equation (definition or ratio) and solve symbolically to the same final form the Sijoitus substitutes into; no sign, symbol or condition changed.
+- Numeric tokens of the removed and added lines compared by script: no number lost or changed (only added exponents or symbols of the new rows).
+- answer, unit and tolerance of every exercise identical to the Finnish set (content/fi), all ids present; answers.py rerun, every answer within rounding of its json value (unchanged since the passed version).
+- Paragraph splits of Mallivastaus/Vastaus/Periaate texts: same sentences, same numbers.
+- Teacher-approved pictures and figures in the diff not re-judged (teacher-figure).

@@ -3,47 +3,7 @@
 > **Why** can a dim violet lamp free electrons from a metal plate when a bright red lamp cannot?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a darkened laboratory. On a bench stands an evacuated glass tube with a sealed tip, and a grey metal plate lies inside it. On the left, a large lamp shines a wide, bright red beam onto the left half of the plate. On the right, a small lamp shines a narrow, dim violet beam onto the right half. Small blue electrons fly up from the plate only where the violet light falls; under the bright red light the plate stays quiet." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy14pe-h-room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3a46"/><stop offset="1" stop-color="#1f2933"/></linearGradient><linearGradient id="fy14pe-h-red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c92a2a" stop-opacity="0.75"/><stop offset="1" stop-color="#c92a2a" stop-opacity="0.35"/></linearGradient><linearGradient id="fy14pe-h-vio" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7048e8" stop-opacity="0.6"/><stop offset="1" stop-color="#7048e8" stop-opacity="0.25"/></linearGradient><linearGradient id="fy14pe-h-plate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="fy14pe-h-bench" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#a97a35"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#fy14pe-h-room)"/>
-  <line x1="0" y1="120" x2="1200" y2="120" stroke="#3a4754" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="0" y="470" width="1200" height="130" fill="url(#fy14pe-h-bench)"/>
-  <line x1="0" y1="470" x2="1200" y2="470" stroke="#e9c98a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M195,150 L345,118 L600,384 L430,384 Z" fill="url(#fy14pe-h-red)" stroke-linejoin="round"/>
-  <path d="M1000,190 L1012,210 L742,384 L700,384 Z" fill="url(#fy14pe-h-vio)" stroke-linejoin="round"/>
-  <rect x="245" y="150" width="10" height="320" fill="#8a96a3"/>
-  <rect x="210" y="460" width="80" height="12" rx="4" fill="#8a96a3"/>
-  <circle cx="250" cy="150" r="70" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="250" cy="150" r="62" fill="#ffa8a8"/>
-  <circle cx="250" cy="150" r="34.1" fill="#ffffff"/>
-  <circle cx="250" cy="150" r="118" fill="#c92a2a" fill-opacity="0.18"/>
-  <rect x="1005" y="196" width="10" height="274" fill="#8a96a3"/>
-  <rect x="970" y="460" width="80" height="12" rx="4" fill="#8a96a3"/>
-  <circle cx="1010" cy="196" r="34" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="1010" cy="196" r="26" fill="#d0bfff"/>
-  <circle cx="1010" cy="196" r="14.3" fill="#ffffff"/>
-  <circle cx="1010" cy="196" r="49.5" fill="#7048e8" fill-opacity="0.18"/>
-  <rect x="330" y="230" width="540" height="200" rx="100" fill="#eef5f9" fill-opacity="0.22" stroke="#eef5f9" stroke-width="4"/>
-  <path d="M590,230 L590,196 Q600,178 610,196 L610,230" fill="#eef5f9" stroke-linejoin="round" fill-opacity="0.35"/>
-  <path d="M590,230 L590,196 Q600,178 610,196 L610,230" fill="none" stroke="#eef5f9" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M400,252 Q600,236 800,252" fill="none" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.5"/>
-  <rect x="420" y="384" width="360" height="22" rx="3" fill="url(#fy14pe-h-plate)" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M600,406 L600,470" fill="none" stroke="#8a96a3" stroke-width="5" stroke-linejoin="round"/>
-  <rect x="412" y="430" width="16" height="40" fill="#6c757d"/>
-  <rect x="772" y="430" width="16" height="40" fill="#6c757d"/>
-  <line x1="718" y1="378" x2="712" y2="352" stroke="#d0e6fb" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="712" cy="352" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <line x1="740" y1="348" x2="744" y2="318" stroke="#d0e6fb" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="744" cy="318" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <line x1="702" y1="330" x2="690" y2="300" stroke="#d0e6fb" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="690" cy="300" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <line x1="750" y1="298" x2="760" y2="270" stroke="#d0e6fb" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="760" cy="270" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <line x1="726" y1="294" x2="724" y2="262" stroke="#d0e6fb" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="724" cy="262" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <line x1="700" y1="372" x2="700" y2="350" stroke="#d0e6fb" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="700" cy="350" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <line x1="758" y1="362" x2="770" y2="340" stroke="#d0e6fb" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="770" cy="340" r="7" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <image href="pics/fy14/fy14-photoelectric-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## The puzzle: what the wave model predicted {Puzzle}
@@ -72,30 +32,19 @@ In 1905 Albert Einstein suggested that light carries its energy in small packets
 When light falls on a metal, one photon gives all its energy to one electron. The electron needs a minimum energy to escape from the metal surface. This energy is called the **work function** $W$, and it is different for different metals. If $hf < W$, the electron cannot escape, and it soon loses the energy as heat in the metal. If $hf > W$, the electron can leave, and the rest of the photon's energy becomes its kinetic energy.
 
 <svg data-fig="energy" viewBox="0 0 600 384" role="img" aria-label="Energy diagram to scale for sodium, work function 2.36 eV. Left: red light of wavelength 650 nm. The photon energy hf = 1.91 eV is drawn as an arrow from the electron in the metal; it ends below the dashed line of the energy needed to get out of the metal, so the electron stays. Right: violet light of 400 nm. The arrow hf = 3.10 eV reaches above the dashed line: the first 2.36 eV, the work function W, frees the electron, and the remaining 0.74 eV is the largest kinetic energy E_k,max the electron can have. The dashed line is labelled free electron." style="max-width:100%;font-size:24px">
-  <line x1="300" y1="14" x2="300" y2="372" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <image href="pics/fy14/fy14-photoelectric-energy.webp" x="1.2" y="1.2" width="597" height="391.8" preserveAspectRatio="none"/>
   <foreignObject x="96" y="11.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\lambda = 650\,\text{nm}$</div></foreignObject>
-  <rect x="14" y="318" width="112" height="46" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="35" y="326.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{metal}$</div></foreignObject>
-  <circle cx="100" cy="317" r="8" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="140" y="326.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$W = 2.36\,\text{eV}$</div></foreignObject>
-  <line x1="14" y1="153" x2="288" y2="153" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
   <foreignObject x="130" y="122.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{free electron}$</div></foreignObject>
-  <path d="M46,318 H38 V153 H46" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="12" y="221" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$W$</div></foreignObject>
-  <path d="M105,308 L105,204.5 L112,204.5 L100,184.5 L88,204.5 L95,204.5 L95,308 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="120" y="246.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$hf = 1.91\,\text{eV}$</div></foreignObject>
   <foreignObject x="120" y="178" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$hf < W$</div></foreignObject>
   <foreignObject x="396" y="11.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\lambda = 400\,\text{nm}$</div></foreignObject>
-  <rect x="314" y="318" width="112" height="46" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="335" y="326.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{metal}$</div></foreignObject>
-  <circle cx="400" cy="317" r="8" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="440" y="326.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$W = 2.36\,\text{eV}$</div></foreignObject>
-  <line x1="314" y1="153" x2="588" y2="153" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="8 6"/>
-  <path d="M346,318 H338 V153 H346" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="312" y="221" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$W$</div></foreignObject>
-  <path d="M405,308 L405,121 L412,121 L400,101 L388,121 L395,121 L395,308 Z" fill="#7048e8" stroke-linejoin="round"/>
   <foreignObject x="420" y="235" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$hf = 3.10\,\text{eV}$</div></foreignObject>
-  <path d="M416,153 H424 V101 H416" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="432" y="86.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$E_{\text{k,max}}$</div></foreignObject>
   <foreignObject x="432" y="114.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$= 0.74\,\text{eV}$</div></foreignObject>
 </svg>

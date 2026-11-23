@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 72a265bfa9067748
+CONTENT-HASH: 185e679af584e570
 
 ## Blocking
 - none
@@ -8,5 +8,7 @@ CONTENT-HASH: 72a265bfa9067748
 - none
 
 ## Checked
-- solutions.md fy1-4-L2-09 c): 22,4 °C is now correct (7,2 + 1,52·10); the earlier arithmetic polish is fixed.
-- The one-line change touches nothing else; the extrapolation contrast (22,4 vs measured 18,1; -1,9 vs 8,1) still teaches the validity range.
+- Delta (Kaava steps in solutions.md rewritten from basic equations) judged in context on disk: every Kaava line now starts from a basic definition or equation and reaches the working form.
+- Physics and notation consistent with the Periaate, Sovellus and Sijoitus steps; no answer disclosed beyond the model solution.
+- Diagram of aligned equations reads as a staged derivation; added "Tässä ..." definitions are brief and in Finnish.
+- No exercise, figure or feedback wording changed beyond spacing in numeric feedback.

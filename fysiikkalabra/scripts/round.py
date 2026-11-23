@@ -22,7 +22,7 @@ status in every language and regenerates palautus/ (palautus_tasks.py, from a bu
 
 A course unit id (fy9-liike; work queue 0j, 2026-11-18) is recognised by its folder content/<lang>/units/<id>/ and runs the
 same round for the unit's Sovella task set, which is part of the unit's hash and reviews (--sovella is accepted and
-changes nothing: a unit has no other review packet): figcat.py build; units.py check, practice.py check and figures
+changes nothing; the unit's packets hold unit.md, unit.json, inquiry.json and teacher.md with the task set, and a diff since the passed hash): figcat.py build; units.py check, practice.py check and figures
 --check; per language reviews.py carry-item unit <id> --lang <l> (a unit's reviews are full or carried, no delta);
 screenshot.py <id> --lang <l> --if-stale where the visual review is needed; practice.py packet units/<id> --role
 science|pedagogy|visual --lang <l> for every needed review; the units.py hash of every language is printed for the
@@ -202,7 +202,7 @@ def unit_round(uids, only, skip_checks, log, say):
             _, hout = run(["units.py", "hash", uid, "--lang", lang], log)
             say(f"{uid} [{lang}] hash {hout[-1] if hout else '?'}: " + (", ".join(sorted(need, key=ROLES.index)) + " review needed" if need else "nothing to review")
                 + (f"; carried now: {', '.join(carried)}" if carried else ""))
-            if need and not has_sovella(uid, lang): say(f"  {uid} [{lang}] has no Sovella task set: no packet to make (unit text packets do not exist)"); continue
+            if need and not has_sovella(uid, lang): say(f"  {uid} [{lang}] has no Sovella task set: no packet to make"); continue
             if need: needed[(uid, lang)] = need
     for (uid, lang), need in sorted(needed.items()):
         if "visual" in need:

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 35ea97317da552d9
+CONTENT-HASH: e76de909aec34e7f
 
 ## Blocking
 - none
@@ -8,7 +8,10 @@ CONTENT-HASH: 35ea97317da552d9
 - none
 
 ## Checked
-- The diff is exercises.json:373 and solutions.md:169 (fy1-8-L3-04). "mitkä väitteet aineisto tukee" became "mitä väitteitä aineisto tukee", a grammatical case change only.
-- No number, symbol, unit, answer or tolerance changed. The task data are unchanged: 3,12 ± 0,04 s, 3,08 ± 0,04 s and hand timing 0,15 s. The difference is 0,04 s, so the ratio is 0,15/0,04 ≈ 3,8.
-- The question and the solution's "Kysytty" still ask the same thing. The principle (overlapping intervals cannot show a difference; the experiment does not prove the hypothesis) follows the guardrails.
-- The hash is the same at the start and at the end.
+- Cooling-rate rows (L2 rate difference, L3 measuring time): r = −ΔT/Δt = (T_alku − T_loppu)/(t_loppu − t_alku) is now sign-consistent (positive rate of fall); r₁ = 2,4, r₂ = 1,0, Δr = 1,4 K/min and r = 2,0 K/min, T_lasku ≥ 20 K, t ≥ 10 min recomputed.
+- v = Δs/Δt, n = (t_kok − t_val)/(N t_toisto), ε ≤ ε_max → t ≥ Δt/ε_max rows correct; hypothesis wording (overlap shows no difference, does not prove equality) kept.
+- Delta: every changed Kaava step checked against the old one: the new rows start from the basic equation (definition or ratio) and solve symbolically to the same final form the Sijoitus substitutes into; no sign, symbol or condition changed.
+- Numeric tokens of the removed and added lines compared by script: no number lost or changed (only added exponents or symbols of the new rows).
+- answer, unit and tolerance of every exercise identical to the Finnish set (content/fi), all ids present; answers.py rerun, every answer within rounding of its json value (unchanged since the passed version).
+- Paragraph splits of Mallivastaus/Vastaus/Periaate texts: same sentences, same numbers.
+- Teacher-approved pictures and figures in the diff not re-judged (teacher-figure).

@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 331a2d8c7ba45ff5
-SCOPE: delta added-exercise from 67c7aa2652af10a6 base 81db4a6fd727
+CONTENT-HASH: 52b2f576c5d9dea2
 
 ## Blocking
 - none
 
 ## Polish
-- content/fi/FY1/fy1-1/exercises/solutions.md:214 — "kolme merkitsevää numeroa kuten taulukon arvoissa": the table values 695 700 km and 6 378 km carry four figures, so this reason does not explain the three — say "kolme merkitsevää numeroa riittää suuruusvertailuun" or give 109,1.
+- content/fi/FY1/fy1-1/exercises/solutions.md:56 — the Kaava step $N = D/d$ is the only changed one that does not start from the lesson's ratio $k = d_\text{suurempi}/d_\text{pienempi}$ (as L1-02, L1-03 now do) — begin with $N = \dfrac{d_\text{suurempi}}{d_\text{pienempi}} = \dfrac{D}{d}$.
 
 ## Checked
-- fy1-1-L1-10 only (delta, added exercise); hash the same at start and end.
-- Recomputed independently: k = 2r_A/(2r_M) = 695 700/6 378 = 109,08 (key 109.08); the shown 109 is 0,07 % from the key.
-- MAFY values: Sun mean radius 695 700 km (IAU nominal) and Earth equatorial radius 6 378 km are right; the hint names the right table (Aurinkokunta).
-- Physics: the d = 2r step is stated and the factor 2 cancels; the ratio formula is the lesson's own k = d_suurempi/d_pienempi; no units are left in k.
-- Tolerance 0,04 covers other table editions (e.g. 6,96·10⁸ m gives 109,1).
-- Reasonableness: 10⁵ km / 10³ km ≈ 10², which is a real check and agrees with L2-04 (109,4 from 1,39·10⁹ m / 1,27·10⁷ m).
-- Scope: FY1 orders of magnitude, nothing beyond.
+- I checked every changed Kaava step on disk, in its aligned form: L1-01, L1-02, L1-03, L1-04, L1-05, L1-07, L1-08, L1-09, L2-01–L2-05, L3-01, L3-02. Each starts from a basic equation ($s = ct$, $s = Nh$, $V \propto d^3$, the scale ratio $r_\text{malli}/r = d_\text{malli}/d_\text{M}$, the exponent difference), solves for the asked quantity, and ends on the form the Sijoitus uses.
+- I recomputed the numbers myself: 2,5·10⁴; 9,33; 930 thousand; 4,23 a; 23,5 million; 1,31 million; 118 m; 34,6 cm; 1,19·10⁹; 142,46 AU. All agree with the solutions. No number, answer or tolerance changed.
+- The paragraph splits in L1-06, L3-02, L3-03 and L3-04 keep every sentence. The conditions (air resistance small, the 10 min duration exact, the Earth–Sun versus Earth–Voyager distances) are all still there.
+- The L3-05 feedback change is spacing only.
+- The hash was 52b2f576c5d9dea2 at the start and at the end.

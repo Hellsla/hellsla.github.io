@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: a4ab830e4fcf75d5
+CONTENT-HASH: c768525a69b2d6df
 
 ## Blocking
 - none
 
 ## Polish
-- content/fi/FY1/fy1-8/exercises/solutions.md:192 — still from the previous round: "(tarkemmin $1{,}37\,\text{km}$)" rounds a minimum down (computed 1,3736 km) — write "$1{,}374\,\text{km}$" or drop it.
+- content/fi/FY1/fy1-8/exercises/solutions.md:187 — in fy1-8-L3-05 the one aligned block uses $\Delta T$ for the temperature change (row 1) and $\Delta T_\text{lasku}$ for the uncertainty of the fall (row 3), so the same letter means two different things — consider naming the uncertainty differently (for example $\delta T_\text{lasku}$) or saying in the Tunnetut row that $\Delta T_\text{lasku}$ is the uncertainty. This is not an error; the symbols are defined.
 
 ## Checked
-- Delta only: fy1-8-L3-04 in exercises.json and solutions.md, "mitkä väitteet … tukee" → "mitä väitteitä … tukee" (grammar only). The question asked and the physics are unchanged. The hash was the same at the start and the end.
-- Recomputed: d = 3,12 s − 3,08 s = 0,04 s, and k = 0,15 s / 0,04 s ≈ 3,8. The intervals 3,08–3,16 s and 3,04–3,12 s overlap, so a difference cannot be shown. The Periaate says exactly this, as the guardrail requires: it says it cannot be concluded, not that the times are equal.
+- The diff has only two lines: fi solutions.md:105 (L3-02) and :187 (L3-05). In both, the first row is now $r = -\Delta T/\Delta t$.
+- With $\Delta T = T_\text{loppu} - T_\text{alku}$ and $\Delta t = t_\text{loppu} - t_\text{alku}$, $-\Delta T/\Delta t$ equals the second row $(T_\text{alku} - T_\text{loppu})/(t_\text{loppu} - t_\text{alku})$ exactly. The cooling rate is positive, as the Sijoitus needs. The round-1 sign error (A) is fixed.
+- I recomputed the numbers in my own script. L3-02: $r_1 = 2{,}4$ and $r_2 = 1{,}0\,\text{K/min}$, so $\Delta r = 1{,}4\,\text{K/min}$; for comparison $-(68{,}0-80{,}0)/5{,}0 = 2{,}4$. L3-05: $r = 2{,}0\,\text{K/min}$, $T_\text{lasku} \ge 20\,\text{K}$, $t = 10\,\text{min}$. None of these changed.
+- I grepped for any $\Delta T/\Delta t$ row left without its minus sign: there is none.
+- No answer, unit, tolerance, task text or answers.py line changed.
+- The hash was c768525a69b2d6df at the start and at the end.
