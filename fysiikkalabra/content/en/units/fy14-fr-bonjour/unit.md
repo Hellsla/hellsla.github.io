@@ -31,12 +31,6 @@ The greeting follows the same idea. **<span lang="fr">Bonjour</span>** works wit
 **<span lang="fr">Salut</span>** (hi, bye) is only for friends and people your age. In France you say *<span lang="fr">bonjour</span>* before anything else:
 before you ask a question, when you enter a shop, when you meet the guide. Starting without it can sound rude.
 
-```pysahdy
-You meet two adult engineers at the same time and want to greet them with the right word for <em>you</em>. Do you use <span lang="fr">tu</span> or <span lang="fr">vous</span>?
----
-<span lang="fr">Vous</span>. It is the polite word for an adult you do not know, and it is also the only word for two or more people.
-```
-
 The summary table further down puts the *<span lang="fr">tu</span>* and *<span lang="fr">vous</span>* forms of every question side by side.
 
 ## Sounds for Finnish speakers

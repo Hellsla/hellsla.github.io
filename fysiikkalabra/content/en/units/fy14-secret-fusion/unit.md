@@ -51,13 +51,6 @@ In a **pinch**, a strong current flows through the plasma itself. The current ma
   <foreignObject x="117.5" y="321.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
 </svg>
 
-<svg data-fig="neutrons" viewBox="0 0 600 380" role="img" aria-label="Diagram comparing two possible sources of neutrons. Left, a hot plasma: a round orange cloud with twelve dark arrows of equal length pointing out in all directions, labelled fusion in a hot plasma. Right, fast ions: a round cloud with a few long arrows pointing to the right and only short arrows in other directions, labelled a few accelerated ions." style="max-width:100%;font-size:24px">
-  <image href="pics/fy14/fy14-secret-fusion-neutrons.webp" x="1.2" y="-2.5" width="600" height="388.8" preserveAspectRatio="none"/>
-  <foreignObject x="2" y="284.5" width="296" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{fusion in a hot plasma}$</div></foreignObject>
-  <foreignObject x="302" y="284.5" width="296" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{a few accelerated ions}$</div></foreignObject>
-  <foreignObject x="10" y="334.5" width="580" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{Arrows show where neutrons fly.}$</div></foreignObject>
-</svg>
-
 ```pysahdy
 In a Z-pinch the current flows along the plasma column. Why does this squeeze the plasma towards the axis?
 ---
@@ -74,11 +67,12 @@ The largest fusion machine of the 1950s was **ZETA**, a ring-shaped pinch at Har
 
 Neutrons can also come from a few ions that are accelerated by electric fields in an unstable plasma. Such fast ions all move in roughly the same direction, so the neutrons they make also fly out mostly in one direction. In a really hot plasma, ions move in all directions at random, and the fusion neutrons fly out **equally in every direction**. In early 1958 Basil Rose at Harwell measured the directions. The neutrons flew mostly one way, and the direction reversed when the current was reversed. The neutrons were not from a hot plasma. On 16 May 1958 Cockcroft published a correction.
 
-```pysahdy
-In a really hot plasma the fusion neutrons fly out equally in every direction. Why did the neutrons of ZETA flying mostly in one direction count against fusion?
----
-Random thermal motion of hot ions has no preferred direction. Neutrons flying mostly one way show that they came from a few ions accelerated by electric fields, not from a hot plasma.
-```
+<svg data-fig="neutrons" viewBox="0 0 600 380" role="img" aria-label="Diagram comparing two possible sources of neutrons. Left, a hot plasma: a round orange cloud with twelve dark arrows of equal length pointing out in all directions, labelled fusion in a hot plasma. Right, fast ions: a round cloud with a few long arrows pointing to the right and only short arrows in other directions, labelled a few accelerated ions." style="max-width:100%;font-size:24px">
+  <image href="pics/fy14/fy14-secret-fusion-neutrons.webp" x="1.2" y="-2.5" width="600" height="388.8" preserveAspectRatio="none"/>
+  <foreignObject x="2" y="284.5" width="296" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{fusion in a hot plasma}$</div></foreignObject>
+  <foreignObject x="302" y="284.5" width="296" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{a few accelerated ions}$</div></foreignObject>
+  <foreignObject x="10" y="334.5" width="580" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{Arrows show where neutrons fly.}$</div></foreignObject>
+</svg>
 
 ## Geneva 1958: the doors open {Geneva}
 

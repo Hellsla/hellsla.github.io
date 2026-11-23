@@ -49,6 +49,48 @@ When light falls on a metal, one photon gives all its energy to one electron. Th
   <foreignObject x="432" y="114.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$= 0.74\,\text{eV}$</div></foreignObject>
 </svg>
 
+```pysahdy
+If $hf < W$, what happens to the energy of the absorbed photon?
+---
+The electron cannot escape, so it soon loses the energy as heat in the metal.
+```
+
+The photon model explains every observation in the table. Brighter light means *more* photons every second, not *bigger* photons. So more electrons leave, and the current grows, but each electron still gets the energy of just one photon. One photon is absorbed at once, so there is no delay. And if one photon is too small, many photons do not help, because an electron practically never collects the energy of two photons.
+
+Energies at the scale of one electron are small, so physicists measure them in **electronvolts**: $1\ \text{eV}$ is the energy an electron gains when it moves through a voltage of one volt, ${1\ \text{eV} = 1.602 \cdot 10^{-19}\ \text{J}}$. A photon of visible light has an energy of about $1.6\text{–}3.3\ \text{eV}$.
+
+```pysahdy
+An electron moves through a voltage of $2.0\,\text{V}$. How much energy does it gain in electronvolts?
+---
+It gains $2.0\,\text{eV}$, because $1\,\text{eV}$ is the energy gained through a voltage of one volt.
+```
+
+## Formula: Einstein's photoelectric equation
+
+The energy of a photon of frequency $f$ and wavelength $\lambda$ is
+```latex
+E = hf = \frac{hc}{\lambda}
+```
+where ${h = 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$ is Planck's constant and ${c = 2.998 \cdot 10^{8}\ \text{m/s}}$ is the speed of light. Energy is conserved when the photon frees an electron:
+```latex
+\begin{aligned}
+hf &= W + E_{\text{k,max}} \\
+E_{\text{k,max}} &= hf - W
+\end{aligned}
+```
+where $W$ is the work function of the metal and $E_{\text{k,max}}$ is the **largest kinetic energy** of the photoelectrons. Most electrons leave with less, because they lose some energy on their way to the surface. Electrons leave only when $hf > W$, so the threshold frequency is ${f_0 = W/h}$.
+
+### Measuring the energy with a stopping voltage
+
+In a photocell, a **retarding voltage** $U$ between the metal plate and the collector pushes the electrons back. An electron with the charge ${e = 1.602 \cdot 10^{-19}\ \text{C}}$ loses the energy $eU$ on its way. When $U$ is large enough, even the fastest electrons turn back and the current $I$ falls to zero. This voltage is the **stopping voltage** $U_\text{s}$:
+```latex
+\begin{aligned}
+eU_\text{s} &= E_{\text{k,max}} = hf - W \\
+U_\text{s} &= \frac{h}{e}\,f - \frac{W}{e}
+\end{aligned}
+```
+So the stopping voltage is a straight-line function of the frequency, and the slope of the line is $h/e$. It is the same for every metal. The work function only moves the line sideways.
+
 <svg data-fig="usf" viewBox="0 0 600 360" role="img" aria-label="Graph of model values, to scale: the stopping voltage U_s in volts against the frequency f in units of 10^14 Hz, from 0 to 14. Two straight, parallel lines: sodium starts on the frequency axis at its threshold frequency 5.71 · 10^14 Hz and zinc at 10.4 · 10^14 Hz. Five points on the sodium line are the wavelengths 500, 450, 400, 350 and 300 nm. A triangle on the sodium line shows that the stopping voltage rises by 1.65 V when the frequency rises by 4 · 10^14 Hz; this slope is h/e and is the same for both metals. The threshold frequency f_0 of each metal is marked where its line meets the axis." style="max-width:100%;font-size:24px">
   <line x1="132.5" y1="300" x2="132.5" y2="58" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="181" y1="300" x2="181" y2="58" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -115,54 +157,6 @@ When light falls on a metal, one photon gives all its energy to one electron. Th
   <foreignObject x="363.5" y="247.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#e8590c"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{zinc}$</span></div></foreignObject>
   <foreignObject x="113" y="105.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{slope} = h/e$</span></div></foreignObject>
 </svg>
-
-```pysahdy
-If $hf < W$, what happens to the energy of the absorbed photon?
----
-The electron cannot escape, so it soon loses the energy as heat in the metal.
-```
-
-The photon model explains every observation in the table. Brighter light means *more* photons every second, not *bigger* photons. So more electrons leave, and the current grows, but each electron still gets the energy of just one photon. One photon is absorbed at once, so there is no delay. And if one photon is too small, many photons do not help, because an electron practically never collects the energy of two photons.
-
-Energies at the scale of one electron are small, so physicists measure them in **electronvolts**: $1\ \text{eV}$ is the energy an electron gains when it moves through a voltage of one volt, ${1\ \text{eV} = 1.602 \cdot 10^{-19}\ \text{J}}$. A photon of visible light has an energy of about $1.6\text{–}3.3\ \text{eV}$.
-
-```pysahdy
-An electron moves through a voltage of $2.0\,\text{V}$. How much energy does it gain in electronvolts?
----
-It gains $2.0\,\text{eV}$, because $1\,\text{eV}$ is the energy gained through a voltage of one volt.
-```
-
-## Formula: Einstein's photoelectric equation
-
-The energy of a photon of frequency $f$ and wavelength $\lambda$ is
-```latex
-E = hf = \frac{hc}{\lambda}
-```
-where ${h = 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}}$ is Planck's constant and ${c = 2.998 \cdot 10^{8}\ \text{m/s}}$ is the speed of light. Energy is conserved when the photon frees an electron:
-```latex
-\begin{aligned}
-hf &= W + E_{\text{k,max}} \\
-E_{\text{k,max}} &= hf - W
-\end{aligned}
-```
-where $W$ is the work function of the metal and $E_{\text{k,max}}$ is the **largest kinetic energy** of the photoelectrons. Most electrons leave with less, because they lose some energy on their way to the surface. Electrons leave only when $hf > W$, so the threshold frequency is ${f_0 = W/h}$.
-
-### Measuring the energy with a stopping voltage
-
-In a photocell, a **retarding voltage** $U$ between the metal plate and the collector pushes the electrons back. An electron with the charge ${e = 1.602 \cdot 10^{-19}\ \text{C}}$ loses the energy $eU$ on its way. When $U$ is large enough, even the fastest electrons turn back and the current $I$ falls to zero. This voltage is the **stopping voltage** $U_\text{s}$:
-```latex
-\begin{aligned}
-eU_\text{s} &= E_{\text{k,max}} = hf - W \\
-U_\text{s} &= \frac{h}{e}\,f - \frac{W}{e}
-\end{aligned}
-```
-So the stopping voltage is a straight-line function of the frequency, and the slope of the line is $h/e$. It is the same for every metal. The work function only moves the line sideways.
-
-```pysahdy
-Two metals have different work functions. Why do their $U_\text{s}$–$f$ lines have the same slope?
----
-The slope $h/e$ contains only constants. The work function appears only in the term $-W/e$, so it moves the line sideways.
-```
 
 This gives a way to measure Planck's constant: measure $U_\text{s}$ for two or more frequencies, find the slope of the line, and multiply it by $e$:
 ```latex

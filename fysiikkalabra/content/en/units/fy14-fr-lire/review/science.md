@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 4abe352fc1c53f08
+CONTENT-HASH: 90300fec9e6c18a5
 SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
 1. Blocking: none
-2. Checked: Two boxes. Reacteur box: -eur = -or ending strategy, reacteur = reactor; the text uses exactly this example. Polish: strategy 2 (look-alike words) would also give the meaning; 'Which strategy' could read 'Which word ending helps you' to make the answer unique, but the intended answer is clearly derivable. Milliard box: un milliard = 10^9 (billion), false friend; correct, matches the table, LaTeX.
+2. Checked: The réacteur box follows strategy 3 (-eur = -or). The milliard box (10^9, a false friend) matches the false-friends table above it. Markup is well formed; the LaTeX $10^{9}$ is fine. Hash is the same at start and end.

@@ -1,7 +1,6 @@
-VERDICT: PASS
-CONTENT-HASH: 4abe352fc1c53f08
+VERDICT: FAIL
+CONTENT-HASH: 90300fec9e6c18a5
 SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
-1. Blocking: none
-   Polish: box 1 repeats the example in the list directly above (recall only); box 2 repeats the table row (milliard) but still tests reading.
-2. Checked: each added box for answerability from the preceding paragraph, one idea, short, question last, answer teaches the reason, position (not inside derivation, worked example or list; not pre-empting the next paragraph), duplication with inquiry.json, reading level.
+1. Blocking: Box 2 (several milliards of euros: millions or billions?) is check-2 in inquiry.json almost word for word, with the answer. Fix: use another false friend from the table, such as une librairie or éventuellement. Box 1 (réacteur, ending -eur) is fine and stays.
+2. Checked: Box 1 is answerable from strategy 3 and does not duplicate check-3 (aimants, context). Both <em> changes are correct.

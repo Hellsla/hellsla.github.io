@@ -122,26 +122,6 @@ The force is always **perpendicular** both to $\overline{v}$ and to $\overline{B
   <foreignObject x="20" y="55.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\text{the page}$</div></foreignObject>
 </svg>
 
-<svg data-fig="mirror" viewBox="0 0 600 440" role="img" aria-label="Side view of a magnetic mirror. Green field lines run from left to right; they are spread out in the middle and squeezed together at both ends, where two coils make the field four times stronger. A particle path spirals around the axis, moving to the right, and turns back before the right-hand coil. In the middle, the particle&#x27;s velocity arrow, blue, is split into a part along the field, v parallel, and a part across it, v perpendicular; the angle between the velocity and the field is the pitch angle theta." style="max-width:100%;font-size:24px">
-  <image href="pics/fy14/fy14-magnetic-confinement-mirror.webp" x="0" y="-1.2" width="600" height="445" preserveAspectRatio="none"/>
-  <foreignObject x="527" y="191.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
-  <foreignObject x="33.5" y="25.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$B_{\max}$</div></foreignObject>
-  <foreignObject x="533.5" y="25.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$B_{\max}$</div></foreignObject>
-  <foreignObject x="283.5" y="25.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$B_0$</div></foreignObject>
-  <foreignObject x="327" y="119.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{turns back}$</div></foreignObject>
-  <foreignObject x="310.5" y="317" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <foreignObject x="261" y="345" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$v_{\parallel}$</div></foreignObject>
-  <foreignObject x="211.5" y="296" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$v_{\perp}$</div></foreignObject>
-  <foreignObject x="293" y="278.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\theta$</div></foreignObject>
-  <foreignObject x="127.5" y="401.5" width="345" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$B_{\max} = 4B_0\text{: reflected if } \sin^2\theta \geq B_0 / B_{\max}$</div></foreignObject>
-</svg>
-
-<svg data-fig="torus" viewBox="0 0 600 300" role="img" aria-label="Two diagrams. Left: a straight tube with coils around it; green field lines run along it and out of both open ends, and particles spiralling along the field lines escape through the ends. Right: the same coils bent into a ring, seen from above; the green field lines go round and round and close on themselves, so there are no ends to escape through." style="max-width:100%;font-size:24px">
-  <image href="pics/fy14/fy14-magnetic-confinement-torus.webp" x="12.3" y="0" width="588.2" height="302.7" preserveAspectRatio="none"/>
-  <foreignObject x="8.5" y="269.5" width="283" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{open ends: particles leak}$</div></foreignObject>
-  <foreignObject x="371" y="269.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{a ring: no ends}$</div></foreignObject>
-</svg>
-
 ```pysahdy
 A proton moves exactly along a magnetic field line. What is the magnetic force on it?
 ---
@@ -171,6 +151,20 @@ In a **magnetic mirror** the field is stronger at both ends. As a particle moves
 ```
 Particles with smaller pitch angles, inside the **loss cone**, escape through the ends.
 
+<svg data-fig="mirror" viewBox="0 0 600 440" role="img" aria-label="Side view of a magnetic mirror. Green field lines run from left to right; they are spread out in the middle and squeezed together at both ends, where two coils make the field four times stronger. A particle path spirals around the axis, moving to the right, and turns back before the right-hand coil. In the middle, the particle&#x27;s velocity arrow, blue, is split into a part along the field, v parallel, and a part across it, v perpendicular; the angle between the velocity and the field is the pitch angle theta." style="max-width:100%;font-size:24px">
+  <image href="pics/fy14/fy14-magnetic-confinement-mirror.webp" x="0" y="-1.2" width="600" height="445" preserveAspectRatio="none"/>
+  <foreignObject x="527" y="191.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
+  <foreignObject x="33.5" y="25.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$B_{\max}$</div></foreignObject>
+  <foreignObject x="533.5" y="25.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$B_{\max}$</div></foreignObject>
+  <foreignObject x="283.5" y="25.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$B_0$</div></foreignObject>
+  <foreignObject x="327" y="119.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{turns back}$</div></foreignObject>
+  <foreignObject x="310.5" y="317" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
+  <foreignObject x="261" y="345" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$v_{\parallel}$</div></foreignObject>
+  <foreignObject x="211.5" y="296" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$v_{\perp}$</div></foreignObject>
+  <foreignObject x="293" y="278.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\theta$</div></foreignObject>
+  <foreignObject x="127.5" y="401.5" width="345" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$B_{\max} = 4B_0\text{: reflected if } \sin^2\theta \geq B_0 / B_{\max}$</div></foreignObject>
+</svg>
+
 ```pysahdy
 Why does $v_{\parallel}$ shrink when a particle moves into a stronger field?
 ---
@@ -183,11 +177,11 @@ The Earth's magnetic field is a natural mirror: it traps charged particles in th
 
 A straight field always has ends, and every particle with $v_{\parallel} \neq 0$ eventually leaks out. Bending the field into a ring, a **torus**, closes the field lines, so there are no ends.
 
-```pysahdy
-Why does bending the field into a ring remove the leak through the ends?
----
-In a torus the field lines close on themselves, so a particle sliding along a line never reaches an end.
-```
+<svg data-fig="torus" viewBox="0 0 600 300" role="img" aria-label="Two diagrams. Left: a straight tube with coils around it; green field lines run along it and out of both open ends, and particles spiralling along the field lines escape through the ends. Right: the same coils bent into a ring, seen from above; the green field lines go round and round and close on themselves, so there are no ends to escape through." style="max-width:100%;font-size:24px">
+  <image href="pics/fy14/fy14-magnetic-confinement-torus.webp" x="12.3" y="0" width="588.2" height="302.7" preserveAspectRatio="none"/>
+  <foreignObject x="8.5" y="269.5" width="283" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{open ends: particles leak}$</div></foreignObject>
+  <foreignObject x="371" y="269.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{a ring: no ends}$</div></foreignObject>
+</svg>
 
 But in a ring the coils are closer together on the inside, so the field is **stronger near the centre and weaker on the outside**, and the field lines are curved. A circling particle then **drifts** slowly across the field: ions one way, electrons the other. The charges separate, an electric field forms, and the whole plasma drifts outward into the wall. The cure is to **twist** the field lines, which is the topic of the chapter *From Early Machines to Modern Reactors*.
 

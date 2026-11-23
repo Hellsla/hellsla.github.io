@@ -34,12 +34,6 @@ From 70 to 99, France counts with **twenties**, a little like the old English *f
 
 So from 70 and from 90 you count on with the numbers 10–19. *<span lang="fr"><span class="nobr">Quatre-vingts</span></span>* has an *s* only when no number follows it.
 
-```pysahdy
-Without looking at the table, how is <span lang="fr">quatre-vingt-dix-sept</span> built, and which number does it mean?
----
-It is $4 \cdot 20 + 17 = 97$: from 90 on you count on with the numbers 10–19 after <span lang="fr">quatre-vingt</span>.
-```
-
 In Belgium and Switzerland people say **<span lang="fr">septante</span>** (70) and **<span lang="fr">nonante</span>** (90). In three Swiss cantons (Vaud,
 Valais, Fribourg) 80 is **<span lang="fr">huitante</span>**. In France you will hear *<span lang="fr"><span class="nobr">soixante-dix</span></span>* and *<span lang="fr"><span class="nobr">quatre-vingt-dix</span></span>*.
 

@@ -1,6 +1,6 @@
-VERDICT: FAIL
-CONTENT-HASH: ccf16cd7af1c285f
+VERDICT: PASS
+CONTENT-HASH: a0f3206874d2d73a
 SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
-1. Blocking: box 1 ("Each electron lands at one single point. What shows that electrons still behave as waves?" / dots form interference bands) duplicates inquiry.json: Tarkista "1. Concept: what the dots tell us" (same set-up, same answer) and "Particle or wave?" (what looks like a wave). The answer is also in the preceding sentence, so the box gives away both. Fix: delete box 1, or ask something not in inquiry.json (e.g. why the dots do not show the bands after only 30 electrons), or drop the Tarkista item.
-2. Checked: box 2 (why an electron can appear beyond a thin barrier) follows its paragraph, one idea, answerable from the text; does not duplicate checks 2-3 (width factor; the Sun). Box 3 (proton vs electron wavelength at the same E_k) follows the formula and the p = sqrt(2mE) line, not inside the derivation; a small reasoning step, answer clear; Apply and tennis-ball tasks differ. Polish: box 2 answer restates the paragraph almost word for word.
+1. Blocking: none. Polish: box 1 restates the paragraph just above it and overlaps pred-tunnel and check-explain in theme, but it gives no answer to a task. Consider keeping it as a one-line recall.
+2. Checked: Box 1 follows the 'barrier' figure and its paragraph. Box 2 follows the formula paragraph, which gives p=sqrt(2mE_k), so it is answerable by one idea. No inquiry.json prediction or check duplicates either box. The first box was deleted as intended, 2 remain.

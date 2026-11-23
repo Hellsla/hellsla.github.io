@@ -51,12 +51,6 @@ Some French words look like English words but mean something else. They are call
 
 When a look-alike gives a sentence a strange meaning, check it against the context.
 
-```pysahdy
-A French text says a project costs several <span lang="fr">milliards</span> of euros. Is that millions or billions, and how large is one <span lang="fr">milliard</span>?
----
-It is billions: <span lang="fr">un milliard</span> is $10^{9}$, not a million. It is a false friend that looks like <em>million</em>.
-```
-
 ## Summary
 
 | Strategy | Example from the news text |
