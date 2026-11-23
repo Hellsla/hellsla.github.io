@@ -1,19 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 74609c45aabfe90e
+CONTENT-HASH: 89e2449689da973a
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-tasavirta (fi-easy): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-(none)
-
-## Polish
-- [Minor] aside.stop-think, 390 px: the inline fractions in the Vastaus of the mökki paragraph are small (\tfrac); readable. No change needed.
-- [Minor] Selkosuomi: "Sarjaankytkennässä suurempi resistanssi saa suuremman tehon." follows directly after the Pysähdy ja mieti box's topic; fine, optional to add "kun virta on sama".
-
-## Checked
-- intro-390, selita-390-1..6, selita-1280-3 (opened).
-- Stop-think boxes (3): label "PYSÄHDY JA MIETI", question, openable "Vastaus" with math ($P = RI^2$, $U = E - R_\text{s}I$, $12\,\text{V}$) all unclipped at 390 and 1280; green left bar distinct from the "Johda itse" card; no overflow.
-- Figures kartta, mökki, piiri, napa read legibly at 390 px; labels LaTeX, colours consistent (current arrows violet in mökki is the existing figure style).
-- Formulas (kaavat blocks, johda derivations) aligned and unclipped; units upright with thin space.
-- Finnish: plain, fluent selkosuomi; terms explained at first use.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.

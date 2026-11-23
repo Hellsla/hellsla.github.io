@@ -1,19 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: ade08f40cf7c7bfe
+CONTENT-HASH: 7cc0b8b8dfcd46c3
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-liike (en): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-- none
-
-## Polish
-- [Minor] unit.md, Key idea / Uniformly accelerated motion — the "Stop and think" answer is shown open in the capture (every box open); I could not see the closed state, but the summary label "Answer" with its triangle reads as openable. No action.
-- [Minor] unit.md, Common mistakes — the unit-conversion chain is display maths placed inside a list item ("by writing them out: $$...$$."), ending with a stray full stop after the display block. Move the full stop into the sentence or drop it.
-
-## Checked
-- Captures opened: fy9-liike-stage-selita-390-1, -390-3, -390-4, selita-1280-1, selita-1280-3, intro-390 (hero, question, aims, prior knowledge). Capture stamp matches hash ade08f40cf7c7bfe.
-- Three stop-think boxes (Key idea, acceleration, slope/area): green left rule, small-caps label "STOP AND THINK", question with inline (t,x)/(t,v) maths intact, "Answer" disclosure, answer text; no clipping, wraps well at 390 px, one reading column at 1280 px; clearly set apart from body text and figures.
-- Figures kuvaajat and puolisuunnikas (390 and 1280 px): labels LaTeX, axes, dashed guides, shaded area read correctly; kartta recognition chart legible at both widths.
-- English text of the boxes and surrounding prose: fluent, consistent terms, no plain-text quantities seen.
-- Not opened individually: exercise and Sovella captures (unchanged by the box addition; reached only via contact sheets' evidence in the packet, layout checks clean).
-
-## Scores
-illustrations 4 · typography 4 · English 4 · accessibility 4
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.

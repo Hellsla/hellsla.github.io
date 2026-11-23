@@ -1,18 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 3387a78416b285c4
+CONTENT-HASH: 84e65900254f17b0
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-kokeellisuus (fi): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-(none)
-
-## Polish
-- [Minor] Pysähdy ja mieti -laatikot (aside.stop-think), Teoria 1280 px: laatikon vasen reuna on 4 px reunaviiva ja tausta vaaleanvihreä; ulkoasu poikkeaa hieman kortti-ilmeestä (valkoinen, pyöristetty), mutta erottuu selvästi tekstistä. Ei muutosta tarvita.
-- [Minor] Kaavio "mistä tunnistan menetelmän?" 390 px:llä: pienin teksti (harmaa "→ paras arvio") on selvästi muuta tekstiä pienempi ja vaalea. Aiemmin hyväksytty kuva, vain kontrastin hienosäätöä.
-
-## Checked
-- contact-1 (kaikki ensimmäiset 12 kuvaa), intro-390, intro-1280, stage-selita-390-1/-2/-3, stage-selita-1280-1.
-- Kolme uutta laatikkoa (Ydinajatus: yhden muuttujan sääntö; Virhe ja resoluutio; Kulmakertoimen luotettavuus): otsikkoteksti "PYSÄHDY JA MIETI", kysymys, avattava "Vastaus" (avattuna kuvissa), vastausteksti. Ei leikkautumista, ei vaakasuuntaista ylivuotoa 390 px:llä eikä 1280 px:llä; lukuleveys säilyy; luettelomaisia kaavoja ei laatikoissa, joten matematiikka ei leikkaudu. Laatikoiden välit ja kontrasti riittävät, kysymys ja vastaus erottuvat selvästi (vihreä pienkirjain-otsikko, ▼-merkki).
-- Kuva "virhe" (kuvaaja, 390 px) ja kartta-kaavio nähty; ne ovat luettavia, akselit yksiköineen, systemaattinen virhe merkitty. Kaavat (keskiarvo, Δx, ε, y = kx + b) asettuvat 390 px:llä oikein.
-- Kuvia 360 px:llä ei erikseen otettu; check_layout-tulokset ovat paketissa. Tehtäväkuvia (sovella, tarkista) en avannut koko resoluutiolla, koska diff koskee vain Teoriaa.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.
