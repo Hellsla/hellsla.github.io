@@ -155,7 +155,7 @@ tilanyhtälö vakioainemäärälle :: \frac{pV}{T} = \text{vakio}
 eli kahdessa tilassa $\tfrac{p_1 V_1}{T_1} = \tfrac{p_2 V_2}{T_2}$. Siitä saadaan erikoistapaukset: vakiolämpötilassa Boylen laki $p_1V_1 = p_2V_2$, vakiopaineessa $V \propto T$ ja vakiotilavuudessa $p \propto T$. Kelvinlämpötila on
 
 ```pysahdy
-Miksi absoluuttinen nollapiste on vain mallin ennuste?
+Miksi suoran jatkaminen nollapaineeseen on vain kaasumallin ennuste?
 ---
 Todellinen kaasu tiivistyy nesteeksi ennen kuin lämpötila ehtii sinne, joten suoran jatkaminen nollaan on kaasumallin ennuste.
 ```

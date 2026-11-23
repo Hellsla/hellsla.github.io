@@ -152,7 +152,7 @@ Kaavassa indeksi $0$ tarkoittaa alkutilaa. $W$ on muiden voimien kuin painon tek
 ```pysahdy
 Mikä on kitkan tekemän työn etumerkki energiaperiaatteessa? Miksi?
 ---
-Kitkan työ on negatiivinen, $W < 0$. Kitka vähentää mekaanista energiaa. Se muuttaa energiaa sisäenergiaksi.
+Kitkan työ on negatiivinen, $W < 0$. Kitkavoima on liikkeen suuntaa vastaan. Siksi se pienentää mekaanista energiaa. Energia muuttuu sisäenergiaksi.
 ```
 
 ### Liikemäärä ja impulssi

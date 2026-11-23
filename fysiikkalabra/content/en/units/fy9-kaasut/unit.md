@@ -155,7 +155,7 @@ combined gas law (constant amount of gas) :: \frac{pV}{T} = \text{constant}
 that is, for two states $\tfrac{p_1 V_1}{T_1} = \tfrac{p_2 V_2}{T_2}$. From it follow the special cases: at constant temperature Boyle's law $p_1V_1 = p_2V_2$, at constant pressure $V \propto T$ and at constant volume $p \propto T$. The kelvin temperature is
 
 ```pysahdy
-Why is absolute zero only a prediction of the model?
+Why is extending the line to zero pressure only a prediction of the gas model?
 ---
 A real gas condenses into a liquid before the temperature gets there, so extending the line to zero is a prediction of the gas model.
 ```

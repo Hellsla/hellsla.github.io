@@ -197,7 +197,7 @@ When ice and water are mixed, first compare whether the heat the water releases 
 ```pysahdy
 Water and ice are mixed, and the heat given out by the water is not enough to melt all the ice. What is the final temperature?
 ---
-Some ice is left, and the temperature is exactly $0\,{}^\circ\text{C}$.
+When the container holds both ice and water, the temperature is exactly $0\,{}^\circ\text{C}$.
 ```
 
 ### Expansion and heat transfer

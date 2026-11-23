@@ -146,7 +146,7 @@ where the index $0$ means the initial state and $W$ is the work done by forces o
 ```pysahdy
 What is the sign of the work done by friction in the work-energy principle, and why?
 ---
-The work of friction is negative, $W < 0$, because friction decreases the mechanical energy by transforming it into internal energy.
+The work of friction is negative, $W < 0$, because the friction force points against the motion. It therefore decreases the mechanical energy, which turns into internal energy.
 ```
 
 ### Momentum and impulse

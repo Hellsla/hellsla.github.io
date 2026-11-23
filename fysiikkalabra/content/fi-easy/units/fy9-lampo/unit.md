@@ -197,7 +197,7 @@ Kun jäätä ja vettä sekoitetaan, tee ensin vertailu. Vesi luovuttaa lämpöä
 ```pysahdy
 Vettä ja jäätä sekoitetaan. Veden luovuttama lämpö ei riitä sulattamaan kaikkea jäätä. Mikä on lopputilan lämpötila?
 ---
-Jäätä jää jäljelle. Lämpötila on tasan $0\,{}^\circ\text{C}$.
+Kun astiassa on sekä jäätä että vettä, lämpötila on tasan $0\,{}^\circ\text{C}$.
 ```
 
 ### Laajeneminen ja lämmön siirtyminen

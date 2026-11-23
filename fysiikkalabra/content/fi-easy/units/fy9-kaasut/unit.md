@@ -155,7 +155,7 @@ tilanyhtälö vakioainemäärälle :: \frac{pV}{T} = \text{vakio}
 Kahdessa eri tilassa siis $\tfrac{p_1 V_1}{T_1} = \tfrac{p_2 V_2}{T_2}$. Tästä saadaan kolme erikoistapausta. Kun lämpötila on vakio, pätee Boylen laki $p_1V_1 = p_2V_2$. Kun paine on vakio, $V \propto T$. Kun tilavuus on vakio, $p \propto T$. Merkki $\propto$ tarkoittaa, että suureet ovat suoraan verrannolliset. Kelvinlämpötila on
 
 ```pysahdy
-Miksi absoluuttinen nollapiste on vain mallin ennuste?
+Miksi suoran jatkaminen nollapaineeseen on vain kaasumallin ennuste?
 ---
 Todellinen kaasu tiivistyy nesteeksi jo ennen sitä. Siksi suoran jatkaminen nollaan on vain kaasumallin ennuste.
 ```
