@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: dc5b89d1507550a5
+CONTENT-HASH: 3e94f6a46e4cf227
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] sovella/solutions.md s3 d) — pre-existing, not in this diff: text after the framed answer starts with a lowercase fragment; begin the sentence properly.
+- [Minor] unit.md "The big picture" — "Processing measurement data often proceeds from the measurement results and their uncertainties to a graph, where needed to fitting a model and interpreting it, and finally to the result…" is ungrammatical ("where needed to fitting") — "…to a graph and, where needed, to fitting a model and interpreting it, and finally to the result with its uncertainty."
+- [Minor] unit.md, linearisation paragraph — the paragraph before the third stop-think box is a dense 100-word block; acceptable, but one sentence per relationship (motion, gas, liquid) could be a short list.
 
 ## Checked
-- Read git diff origin/main...HEAD for en (sovella/solutions.md only, 52 insertions, 12 deletions): paragraph breaks only; words, maths, figures unchanged. Read the earlier sovella/review/visual.md as evidence.
-- Opened en stage-exercises-390-6 (s1 d: model answer in short paragraphs, display block in Also accepted intact) and -31 (s3 start of next task; other changed spots not separately opened here).
-- Paragraphs are readable at 390 px, no clipping, no stray empty paragraphs, display math blocks unbroken. Hash re-run at the end: unchanged.
+- Captures opened: top-390, selita-390-1..4 (recognition chart, formulas, all three Stop and think boxes, anatomy and linearisation figures), selita-1280-2 (two boxes, formula table, anatomy figure start). Captures current for hash 3e94f6a46e4cf227.
+- Stop and think boxes (aside.stop-think): green left rule, small-caps label, question, openable "Answer" with a disclosure triangle, on both 390 and 1280. Maths ($\bar{x}$, $\Delta x$, $k=\tfrac{a}{2}$, $a=2k$) is rendered, not clipped. Reading width stays within the column and there is no horizontal overflow. The boxes sit after the paragraph they test and do not push figures apart. The answers are closed by default (shown open in the "every box open" captures).
+- English text is fluent apart from the one sentence above. Units and symbols are in LaTeX. Not opened: exercises/sovella/tarkista captures (judged only via the packet's deterministic checks, no changes there in scope).
+
+## Scores
+illustrations 4 · typography 5 · English 4 · accessibility 4

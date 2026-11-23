@@ -1,18 +1,30 @@
 VERDICT: PASS
-CONTENT-HASH: 9b44845a75fe196a
-SCOPE: delta review of the Sovella set: new tasks s7 (Kärry radalla) and s8 (Kaksi kulkijaa samalla tiellä) and the changed intro; s1-s6 not re-judged (previously passed).
+CONTENT-HASH: 67b2709b5b162498
+SCOPE: full review of unit fy9-liike (unit.md, inquiry.json, teacher.md, Sovella s1-s8, answers.py); the new ```pysahdy boxes judged first.
 
 ## Blocking
 - (none)
 
 ## Polish
-- s8 d: the meeting place is given as $14{,}7\,\text{m}$ from data with two significant figures ($2{,}0$ and $1{,}0\,\text{m/s}$, positions read to whole metres); $15\,\text{m}$ (or "noin $15\,\text{m}$") would match the rounding reason used in a-c. Word task, no answer check.
-- s8 figure: the lines cross on a grid crossing, so $4\,\text{s}$ and $12\,\text{m}$ can be read off; nothing is marked and the rubric scores the calculation, so no answer is given away. A Hyväksytään myös line on how a reading-only answer to c scores would help.
+- The kartta figure (pre-existing) says "matka nopeuskuvaajasta → kuvaajan alla pinta-ala", but the text and the new third pysahdy box say the signed area is the *siirtymä*, with the part below the axis counted negative. Distance is the area with every part counted positive. A student who has just read the box may read the figure as a contradiction. "siirtymä" in the figure (or "matka: alat positiivisina") would match.
+- Pysahdy 3: "pienentää siirtymää" is right. Adding "mutta kasvattaa matkaa" would tie the box to the Ydinajatus distinction between displacement and distance. Optional.
+- s4 c model answer: "noin $65$–$100\,\text{km/h}$". With $4{,}5 \pm 1\,\text{s}$ the range is $65$–$103\,\text{km/h}$, so "noin $65$–$105$" would be the honest figure. The conclusion is unchanged.
+- s8 d (carried from the last report): $14{,}7\,\text{m}$ from two-figure data. Round it to $15\,\text{m}$.
 
 ## Checked
-- One script recomputed every number from the figures' own points (fy4-1 figures.py: (0;4), (4;16), (6;16), (10;8); A 4→20 m, B 20→4 m in 8 s) with my own formulas, beside answers.py: s7 $3{,}0$ and $-2{,}0\,\text{m/s}$; $t_1 = 2{,}667\,\text{s}$, $t_2 = 8{,}0\,\text{s}$; $v_\text{ka} = 0{,}40\,\text{m/s}$, path $20\,\text{m}$, mean speed $2{,}0\,\text{m/s}$; s8 $\pm 2{,}0\,\text{m/s}$, $4{,}0\,\text{s}$, $12\,\text{m}$ (also with B's equation), d $5{,}33\,\text{s}$, $14{,}67\,\text{m}$. All agree; the relative tolerances accept the two-figure roundings.
-- Physics: slope = velocity in uniform motion, sign = direction, displacement vs distance and why mean speed ≥ |mean velocity| (equal only without reversal) are right; meeting condition and closing speed right; the corners of the s7 graph are an idealisation the text states ("kussakin vaiheessa liike on tasaista"). Scope FY1/FY4 kinematics.
-- Rubrics: every criterion asks only what its part asks and the solution shows; criterion points equal part points (s7 3+3+4+4, s8 4+5+2+4); common mistakes and Hyväksytään myös right.
-- Figures: neither marks a slope, crossing, path or mean value.
-- Intro: the count now says eight, which matches the set (8 tasks, 124 points).
-- `practice.py check` OK in all three languages; hash the same at start and end.
+- Pysahdy boxes. 1: the slope of the $(t,x)$ graph is velocity and the area under $(t,v)$ is displacement, right and as in the paragraph above it. 2: $v>0$, $a<0$, so the speed decreases. Right, and it matches the formula text, Yleisiä virheitä and lt-4. 3: the area below the axis counts negative and reduces the displacement, right and as in the paragraph above it. Each box has exactly one correct answer, and none goes beyond FY1/FY4.
+- The inquiry model change in tarkistus-3 only adds paragraph breaks. Its physics is right: the car starts from rest and the moped passes at $t=0$, so the speeds are equal at $4\,\text{s}$ and the car catches up at $8\,\text{s}$ with twice the moped's speed.
+- One script recomputed every number from the task data with my own formulas and printed it beside answers.py. All agree:
+  - inquiry: tram $450\,\text{m}$; scooter $22{,}5\,\text{m}$; elk $46{,}8\,\text{m}$; dog $8{,}0\,\text{s}$ (the distractor $5{,}12\,\text{s}$ also checks); ball $-1{,}81\,\text{m/s}$; lift $16{,}0\,\text{m}$; cyclist $30\,\text{km/h}$.
+  - s1: $12{,}0\,\text{s}$, $1{,}25\,\text{m/s}^2$, $17{,}5\,\text{m}$; d: $15{,}4\,\text{s}$, $307\,\text{m}$, $77\,\text{m}$.
+  - s2: $8{,}84\,\text{m}$; $0{,}625\,\text{s}$ and $7{,}08\,\text{m}$; Moon $8{,}68\,\text{m}$; $5{,}87$ and $-6{,}13\,\text{m/s}$.
+  - s3: my own regression gives $-0{,}642\,\text{m/s}^2$, a start at $9{,}84\,\text{s}$ and a stop at $48{,}8\,\text{s}$, so $486\,\text{m}$ against the read-off $481\,\text{m}$. Both are inside the tolerance and the accepted range.
+  - s4: $81{,}8\,\text{km/h}$, $0{,}59$ and $17{,}8\,\text{km/h}$.
+  - s5: $0{,}9375\,\text{m/s}^2$, range $0{,}741$–$1{,}224\,\text{m/s}^2$.
+  - s6: $8{,}88\,\text{m/s}^2$, $\pm 0{,}10$, $9{,}3$ times the uncertainty; corrected $9{,}77\,\text{m/s}^2$; two-point $8{,}92\,\text{m/s}^2$.
+  - s7 and s8 as before.
+- Every multiple-choice item has exactly one correct option, and the distractor feedback is right: lt-1 to lt-6, keskinopeus, rata, tangentti, edellä and tarkistus-1.
+- Rubric criteria ask only what their part asks, and the points add up. Hyväksytään myös covers the alternative methods.
+- Physics is right throughout. The models are stated: constant acceleration, air resistance neglected, extrapolation flagged in s3 d. The s6 scale correction goes the right way. Scope is FY1/FY4 kinematics.
+- The hero is now a raster image with no quantities, so there is nothing to check for physics.
+- `practice.py check` OK. Hash $67b2709b5b162498$ at start and end.

@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 1f0addc601804c04
+CONTENT-HASH: f6825d133f2e7219
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] stage-selita-390-4 — the "Pysähdy ja mieti" answer sits open in the capture (all boxes open by design); the visible label "Vastaus" with a triangle is clear, but the box and the following paragraph repeat the same answer almost word for word ("Nopeus on radan tangentin suuntainen. Normaalikiihtyvyys osoittaa radan keskipisteeseen." appears in the box and in the next paragraph) — cut the repeating paragraph or reword the box question; pedagogy may judge.
+- [Minor] fig geo (stage-selita-390-2) — the label "6 h myöhemmin" touches the dashed line to the Earth; nudge the label up a few px.
 
 ## Checked
-- Read the diff origin/main...HEAD for fi-easy (sovella/solutions.md, inquiry.json, excluding review/): only blank lines inserted inside long Periaate, Mallivastaus, Kuvaaja, Järkevyys and inquiry model fields (24 breaks); words, maths and figures unchanged; every break falls between sentences, none inside a formula or display block, and the paragraphs stay under about 120 words.
-- Opened review/shots/contact-17.png (fi-easy): Sovella model-solution pages show the split paragraphs with normal spacing, no clipping or overflow, labelled blocks and formula rows intact.
-- Opened review/shots/fy9-ympyraliike-stage-sovella-390-4.png (fi): 390 px solution layout readable, formulas not clipped.
-- Read the earlier Sovella visual report (fi-easy, PASS) as evidence; the inquiry model change was judged from the diff only, no capture of that field opened.
-- Hash at end equals hash at start.
+- Full review, captures current for f6825d133f2e7219 (shots.md stamp).
+- Opened selita-390-1, -2, -3, -4, -6, -7 and selita-1280-1: all three new aside.stop-think boxes (Ydinajatus, Tasainen ympyräliike, Gravitaatio ja satelliitit) show the green left rule, small-caps label "PYSÄHDY JA MIETI", the question, and the openable "Vastaus"; inline maths ($r$, $F_\text{g}$, $\tfrac{1}{r^2}$) renders in KaTeX, nothing clipped, no horizontal overflow, readable width at 390 and 1280 px. The 360 px width was not captured; the packet's layout check covers it.
+- Figures: kartta, geo, tilanteet seen at readable size (labels LaTeX, force red, velocity blue, acceleration orange, legible at 390 px). Hero, kaarre and the Sovella graphs only seen at contact-sheet level and on the Finnish unit's PASS.
+- Language: selkosuomi short sentences, terms explained at first use (voiman varsi, vaikutussuora, kumota); no mechanical phrasing found. Numbers with units are in LaTeX.
+- Hash at start and end: f6825d133f2e7219.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

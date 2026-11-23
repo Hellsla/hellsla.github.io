@@ -1,14 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: c216e0b4bbbe64a0
+CONTENT-HASH: f12fc65d9608b516
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- [Minor] stage-selita-390-1, "STOP AND THINK" label: it is interface text from the template; the green box with its open "Answer" disclosure reads clearly and is consistent across the three boxes. No change needed.
+- [Minor] stage-selita-390-4 (virhe graph): the "40" tick and the dashed extrapolated segment sit close to the red b label; legible, optional extra spacing.
+- [Minor] the "Review if needed" list repeats the long chapter titles; fine, only a note.
 
 ## Checked
-- Read `git diff origin/main...HEAD` for this language (excluding review/): only paragraph breaks (blank line / \n\n) in sovella/solutions.md (3 solutions: kallistus/veto method, vaihtoehtoinen tapa/öljyn häviöt, kapeampi mittalasi/ylivuotoastia) and one inquiry.json model answer. Words, maths, units and figures unchanged. Each split falls at a sentence boundary that starts a new idea (alternative method, second way), so the paragraphs are shorter and clearer, none cuts a formula or list.
-- Read the earlier Sovella visual report as evidence.
-- Opened captures review/shots/fy9-kokeellisuus-stage-sovella-390-1.png and -sovella-1280-2.png (fi shots): layout, KaTeX, cards, hints intact, no clipping or overflow. The solutions are behind locked buttons and are not visible in these captures, so the split paragraphs themselves were judged from the source diff, not rendered. Paragraph spacing is the shared component's, already seen in other solutions.
-- Translations checked by diff to match the Finnish cut (same places); only the Finnish captures were opened.
+- contact-1.png; selita-390-1, -2, -3, -4 and selita-1280-1 (all three aside.stop-think boxes, the kartta chart, the formulas, the virhe graph, Common mistakes).
+- Boxes: label, question, openable answer all readable at 366 px and 1280 px; maths not clipped; no overflow; the box sits right after the paragraph it concerns and is not mistaken for a figure.
+- English: natural, consistent with the unit's terms; quantities in LaTeX; no plain-text quantities found in the unit text.
+- Captures current for hash f12fc65d9608b516 (stamp.txt). Not opened individually: the exercise tiles (outside this scope).
+
+## Scores
+illustrations 4 · typography 5 · English 5 · accessibility 4

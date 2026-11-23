@@ -10,6 +10,12 @@
 
 What joins the phenomena of the module is **quantised energy**. Light exchanges energy with matter as photons whose energy is $E = hf$, and one photon gives its energy to one electron. The electrons of an atom and the nucleons of a nucleus can only be in certain energy states, so in transitions a photon of a definite energy is created or disappears. The differences between electron levels are electronvolts, the energies of nuclear levels and nuclear reactions millions of electronvolts. In the nucleus mass and energy are linked: $E = mc^2$.
 
+```pysahdy
+To how many electrons does one photon give its energy?
+---
+One photon gives its energy to one electron.
+```
+
 <svg data-fig="kartta" viewBox="0 0 380 896" role="img" aria-label="Recognition chart: how do I tell which law to use? First see which quantity the task gives, then which sign fits. Frequency or wavelength of a photon: the photon energy is Planck&#x27;s constant times the frequency. Light ejects electrons: in the photoelectric effect the photon energy is the work function plus the maximum kinetic energy of the electron. An atom emits or absorbs: a quantum jump, the photon energy is the difference between the upper and lower energy levels. A nucleus decays as time passes: the decay law, the amount left is the initial amount times e to the power minus the decay constant times the time. How many decays per second: the activity is the decay constant times the number of nuclei. Mass difference of a nuclear reaction: the released energy is the mass difference times the speed of light squared. The type of radiation matters: the equivalent dose is the radiation weighting factor times the absorbed dose. The distance from the source changes: for a point source the dose rate is inversely proportional to the square of the distance. Radiation passes through matter: the attenuation law, the intensity is the initial intensity times e to the power minus the attenuation coefficient times the thickness." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="852" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
@@ -141,6 +147,12 @@ photon momentum :: p = \frac{E}{c} = \frac{h}{\lambda}
 
 where $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ is the Planck constant, $f$ the frequency, $\lambda$ the wavelength, $W$ the work function of the metal, $E_\text{k,max}$ the largest kinetic energy of an emitted electron, $E_\text{u}$ and $E_\text{l}$ the energies of the upper and the lower energy state and $p$ the momentum of the photon. Electrons are emitted only when $hf \geq W$. An atom absorbs only a photon whose energy is exactly the difference of levels, unless the photon ionises the atom. For hydrogen $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$. At the threshold voltage of an LED $eU_\text{k} \approx hf$. Conversions: $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$ and $hc \approx 1240\,\text{eV}\,\text{nm}$.
 
+```pysahdy
+Are electrons released from a metal if the photon energy $hf$ is smaller than the work function $W$?
+---
+No, because electrons are released only when $hf \geq W$.
+```
+
 ### The nucleus and decay
 
 ```kaavat
@@ -152,6 +164,12 @@ energy released in a nuclear reaction :: E = \Delta m c^2
 ```
 
 where $N$ is the number of undecayed nuclei at the time $t$, $N_0$ the number at the start, $T_{1/2}$ the half-life, $A$ the activity ($\text{Bq}$), $\lambda$ the decay constant, $\Delta m$ the mass difference and $E$ the energy released in the reaction. Because $e^{-\lambda T_{1/2}} = \tfrac12$, the decay law can also be written $N = N_0 \left(\tfrac12\right)^{t/T_{1/2}}$, and the same law holds for the activity, $A = A_0 e^{-\lambda t}$. In a decay equation the mass number and the charge number are conserved: in alpha decay $Z$ decreases by two and $A$ by four, in beta minus decay $Z$ increases by one. The decay law describes a large set of nuclei. The binding energy is $E_\text{B} = \Delta m\,c^2$, and $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$. Fission and fusion release energy, because the binding energy per nucleon of the products is larger.
+
+```pysahdy
+What fraction of the nuclei has not decayed after the time $2T_{1/2}$?
+---
+By the decay law $N = N_0 \left(\tfrac12\right)^{t/T_{1/2}}$ we get $N = N_0 \left(\tfrac12\right)^{2} = \tfrac14 N_0$, that is, one quarter.
+```
 
 <svg data-fig="puolitus" viewBox="0 0 600 380" role="img" aria-label="Graph to scale: the remaining fraction as a function of the number n of half-lives or half-value thicknesses, n from zero to five. The curve starts at 1 and falls ever more gently. Dashed lines show that n = 1 gives a half, n = 2 a quarter and n = 3 an eighth. The curve approaches zero but does not reach it: decay and the attenuation of gamma radiation have no end point." style="max-width:100%;font-size:26px">
   <line x1="174" y1="312" x2="174" y2="62" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

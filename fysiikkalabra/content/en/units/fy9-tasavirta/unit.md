@@ -98,6 +98,12 @@ This answers the opening question. The devices of the cottage are connected to t
   <foreignObject x="120" y="329.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$4.5\,\text{A}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Why is the voltage across both the LED lights and the cooler $12\,\text{V}$?
+---
+The devices are connected to the battery in parallel, and components connected in parallel have the same voltage across them as the source.
+```
+
 ## Formula: Direct-current circuits and electrical energy
 
 ### Current, voltage and resistance
@@ -130,6 +136,12 @@ power :: P = \frac{W}{\Delta t}
 
 where $P$ is the power ($\text{W}$) and $W$ the electrical energy transformed in the time $\Delta t$ ($\text{J}$ or $\text{kWh}$). The form $P = UI$ holds for every component. The power of a resistor can also be found from the current alone or from the voltage alone by substituting Ohm's law (Derive it yourself below). In series the larger resistance gets the larger power, in parallel the smaller. Units of energy are converted by substitution: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}$. The letter $W$ is used for energy, because $E$ is the emf.
 
+```pysahdy
+Two resistors are connected in series. Which one gets the greater power?
+---
+The one with the greater resistance. In series the current $I$ is the same, so the power $P = RI^2$ grows with the resistance.
+```
+
 ```johda
 Derive the power $P$ of a resistor in terms of the current $I$ and in terms of the voltage $U$.
 ---
@@ -160,6 +172,12 @@ A battery is described by a model in which the emf $E$ ($\text{V}$) and the inte
   <foreignObject x="494" y="165.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$R$</div></foreignObject>
   <foreignObject x="380" y="19.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
 </svg>
+
+```pysahdy
+Why is the terminal voltage of a battery smaller than its emf when a current flows in the circuit?
+---
+Part of the emf is used up in the internal resistance of the battery. The terminal voltage is $U = E - R_\text{s}I$.
+```
 
 ```johda
 A resistor $R$ is connected to the terminals of a battery. Derive the current $I$ in the circuit and the terminal voltage $U$ of the battery.

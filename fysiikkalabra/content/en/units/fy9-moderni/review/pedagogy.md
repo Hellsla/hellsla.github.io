@@ -1,20 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: f5355edae2761e52
-SCOPE: delta: round 2, the fixes of round 1 in fy9-moderni-s8 and -s9; older tasks untouched
-Round 2: delta against the version round 1 reviewed (fix round 1).
+CONTENT-HASH: 28edb98601f1d43b
 
 ## Blocking
-- (none)
+None.
 
 ## Polish
-- s8 Common mistakes, part a: the example "$\mu = 16 / 20\,\text{cm} = 0.80$" is left over from the old read-off values. With the current points $(0;\,80)$ and $(10;\,20)$ the quotient is $80/20 = 4$ and the wrong result $4/10\,\text{cm} = 0.40\,\text{1/cm}$. Fix the numbers so the student does not see a 16 that is not in the data.
-- s9 a: the grid point now appears only in the solution and criterion, not in the task text; the second point is still the origin. Acceptable.
-- s8 gives the model ready-made (a conscious choice).
+- "Stop and think" boxes (unit.md): all five are answerable and closed, so no answer is shown before the student acts. But three restate the sentence directly above them: photon to one electron, hf < W, and the half-life one. Only the decay-fraction box needs a step the text has not given. Boxes after the formula blocks would work better if they asked for application, e.g. "does a $2.0\,\text{eV}$ photon free an electron from a metal with $W = 2.3\,\text{eV}$?".
+- No box in "Radiation and dose" (dose rate, attenuation), which is the hardest part of the unit.
+- s2: the task text says the lines are "dark" and part d then asks why they are dark. Say "the spectrum has lines" and let the student find that out.
+- s8 and s9: the text gives the model ($\dot H = \dot H_0 e^{-\mu d}$, Hubble's law). This is acceptable at module level, but the model could be left to the student in at least one of the two.
+- The intro says problems 8 and 9 work with a graph. Problem 3 is also a graph task, and problem 5 uses a table the student processes.
+- s4 and s5 solutions: the headings "Yleisiä virheitä" and "Hyväksytään myös" are Finnish in the English file. If the build does not translate them, check the page.
+- s3 points: part c is worth 6, a is worth 4.
 
 ## Checked
-- Opened the en packet: s8 and s9 in tasks.json (own English text), solutions.md and the checks (practice.py check OK); hash same at start and end (f5355edae2761e52).
-- Round-1 items: s9 a text no longer gives $(250;\,18\,000)$, so $H_0$ is read off the graph and `graph_read` measures something. s8 a: second point $(10\,\text{cm};\,20\,\mu\text{Sv/h})$ matches the solution ($\ln 4/10 = 0.14$).
-- s8 d: the assumption is asked in the text ("Also name one assumption ... and its effect"); the criterion matches and what the assumption is stays with the student.
-- s9 c: the reworded task (distances "were zero", constant rate) does not reveal $t = 1/H_0$ or the unit conversion.
-- Translation: same numbers, points, tolerances and criteria as Finnish; decimal points; terms (attenuation coefficient, dose rate, Hubble constant) correct. Results rounded to two figures like the data; aligned calculation rows; unit fields language-neutral.
-- Points 3+3+3+4 and 3+3+4+3 equal the criterion sums; 360 px: check_layout and shots.md, not opened.
+- Unit text: key idea, formula blocks, common mistakes and review links follow the Finnish unit, and the opening question is answered in the text. Terms and notation are consistent.
+- Task set (9 tasks): each has an authentic or source-based situation, several parts of rising demand, and a rubric using the shared criteria with task-specific detail. Variety is good: decay and dose, spectra and redshift, a graph and the Planck constant, claims to assess (radon), error analysis (the barium half-life, with a faulty group conclusion), energy balance, a news source (the fusion article, with a correction note), a graph of attenuation, and Hubble's law.
+- Solutions: all seven steps present, symbolic first, with reasonableness checks. Common mistakes are realistic (the wrong-way-round ratio, a unit error of 10^19, linear instead of exponential).
+- Rubric fairness: no points for irrelevant things. Part-point sums and answer tolerances agree with the criteria.
+- Workload: nine tasks across the unit are heavy for 75 min, but the Sovella set is independent work.
+- Inquiry diff: only a solution of the radiation task, now split into paragraphs. No pedagogical change.

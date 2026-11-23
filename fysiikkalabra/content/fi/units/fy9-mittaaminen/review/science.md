@@ -1,19 +1,36 @@
 VERDICT: PASS
-CONTENT-HASH: 81de44efc34be42b
-SCOPE: delta: round 3, the fixes of round 2 in fy9-mittaaminen-s7 and -s8 (s8 a rubric criterion 5, s7 c formula rows); older tasks s1-s6 untouched (not re-judged).
-Round 3: delta against the version round 2 reviewed (fix round 2).
+CONTENT-HASH: c66703f1d31a22ae
+SCOPE: full. The change is three new `pysahdy` boxes in unit.md, judged first. After that the unit text, inquiry.json, teacher.md and the Sovella task set (s1–s8) were judged with it.
 
 ## Blocking
 None.
 
 ## Polish
-- s8 a, criterion 5 now gives the range of the axis crossing ($+0{,}003\ldots{+}0{,}012\,\text{m}$) and says no line through the origin fits. This is correct, but the model answer (solutions.md row 812) does not show it. A grader should give the point for "small, about the size of the reading uncertainty, does not affect the slope" without the range. Either add the sentence to the model answer or mark the range as extra information.
-- s7 c, rubric detail 3: $\tfrac{1{,}2}{30{,}0} \approx 4{,}1\,\%$ is arithmetically $4{,}0\,\%$. The solution uses $\tfrac{1{,}22}{30{,}0} = 4{,}07\,\%$. Write $1{,}22$ in the rubric too. The result $\pm 0{,}6\,\text{cm}$ does not change.
-- Carried from round 2: s8 c, the interval $10{,}19\ldots10{,}48$ versus $10{,}35 \pm 0{,}15$. Both are defensible.
+- Box 2 (kulmakerroin) gives two reasons: the fitted line represents all the data, and far-apart points shrink the share of the reading error. Both are correct and agree with lahto-3 and the "Yleisiä virheitä" list. It could also say that two measurement points carry their own random errors and leave out the other points, as the lahto-3 feedback does. This is optional (C).
+- Carried from round 3: s8 a criterion 5 range versus the model answer; s7 c rubric $1{,}2/30{,}0$ versus $1{,}22$; s8 c interval wording. None is an error.
 
 ## Checked
-- Round-2 item 1 is fixed. In tasks.json, s8 a criterion 5 no longer says "ei ole merkitsevä". It now says the constant term is small, that every line through all the $\pm 0{,}01\,\text{m}$ bars crosses the $s$ axis at $+0{,}003\ldots{+}0{,}012\,\text{m}$ (I recomputed $+0{,}0033\ldots{+}0{,}012$ in scratchpad s8r2.py, so the rounding is right), and that it does not affect the slope because the line is not forced through the origin. The criterion agrees with the model answer.
-- s7 c: the substitution chain in rubric detail 2 is now a real `aligned` block with newlines and aligned rows ($4{,}5/30{,}0 = 0{,}150\,\text{m} = 15{,}0\,\text{cm}$). It is the same chain as in the solution. Recomputed: $\Delta k = (31{,}27 - 28{,}83)/2 = 1{,}22$, $\Delta x = 0{,}61\,\text{cm}$, $x_\text{min}$/$x_\text{max}$ $14{,}4$/$15{,}6\,\text{cm}$.
-- s7 b, detail: "forcing through the origin is justified here, but not when the constant term stands out" is correct physics.
-- s8 recomputation is unchanged from round 2: slope $5{,}175$/$5{,}177$, bounds $5{,}094$/$5{,}242$, $g = 10{,}35 \pm 0{,}15$, $0{,}0514\,\text{s}$.
-- `practice.py check`: OK (8 tasks, 116 points). The hash is $81de44efc34be42b$ at the start and at the end.
+- Box 1 (clock that always runs fast): this is a systematic error with the same sign in every reading, so averaging does not remove it. Correct (A/B: none). It agrees with the theory paragraph above it, with lahto-2, with virhelaji and with the "Yleisiä virheitä" item.
+- Box 3: $s = \tfrac{a}{2}t^2$, so $k = \tfrac{a}{2}$ and $a = 2k$. Correct. The conditions (start from rest, constant acceleration, time from the start) are stated in the paragraph just before the box. A straight $(t^2, s)$ line through the origin implies them anyway, so there is no unstated condition (B: none). It agrees with lahto-5 and kuula-kouru.
+- Inquiry numbers, recomputed in scratchpad `r/sov.py` and `inq.py`:
+  - lahto-1: $2{,}705 \to 2{,}7\,\text{g/cm}^3$.
+  - tutki-kaasu: $\theta_0 = -271{,}7 \approx -270\,{}^\circ\text{C}$.
+  - kolikot: $2{,}70\,\%$.
+  - jousi-suora: $79{,}0\,\text{N/m}$; mistakes $48{,}6$ and $8$.
+  - kuula-kouru: $1{,}24\,\text{m/s}^2$; mistakes $0{,}62$ and $0{,}31$.
+  - kattila: $10{,}0\,\text{min}$; mistakes $13{,}0$ and $16{,}1$.
+  - tarkista-1: A $(1{,}8033 \pm 0{,}0005)\,\text{m}$, B $(1{,}803 \pm 0{,}015)\,\text{m}$.
+  - tarkista-2: $28\,\text{kg/m}^3$.
+  - The rounded final answers ($1{,}2$, $30$) stay inside their tolerances.
+  - Each multiple-choice question has exactly one correct option, and every distractor's feedback is right.
+- Sovella numbers, recomputed with my own fits (numpy, not answers.py):
+  - s1: $13{,}71 \pm 0{,}19\,\text{s}$, $7{,}29\,\text{m/s}$, bounds $7{,}17$/$7{,}42$, Mira $13{,}96 \pm 0{,}16\,\text{s}$.
+  - s2: $102\,\mu\text{m}$, $79{,}8\,\text{g/m}^2$, $783\,\text{kg/m}^3$.
+  - s3 (row $60\,\text{ml}$ excluded): $k = 0{,}9183$, $b = 118{,}65\,\text{g}$, $V \approx 70{,}5\,\text{ml}$, $1{,}378\,\text{kg}$.
+  - s4: $k = 1{,}0205$, $b \approx 0$, $749{,}7\,\text{g}$.
+  - s5: $0{,}477\,\text{m/s}$, and the report's through-the-origin slope $0{,}6341$ is reproduced.
+  - s6: $pV$ $2269 \to 2454$, $V_0 = 1{,}77\,\text{ml}$, $n = 1{,}06\,\text{mmol}$.
+  - s7 and s8 as in round 3 (answers.py agrees).
+- The other changes to solutions.md since 6b32d6f31 only split paragraphs (carry `md-paragraphs`, carry.tsv 2026-11-18). No number or claim changed.
+- No later-course physics appears: the scope is FY1 measurement, plus Boyle's law and $pV = nRT$ in s6 as the unit states.
+- `practice.py check`: OK. The hash is c66703f1d31a22ae at the start and at the end.

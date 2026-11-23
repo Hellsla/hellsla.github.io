@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 2f9de8817eb2638d
-SCOPE: delta (round 2) s8 fy3-10/pt-suorat, s9 fy3-11/pv-isobaari, changed intro; s1-s7 not re-judged; language: fi
+CONTENT-HASH: 8e65be516f1f6a85
 
 ## Blocking
+None. The earlier blocker is fixed: the second pysahdy box now follows the whole paragraph ending "...todellinen kaasu tiivistyy nesteeksi ennen sitä." and precedes the next heading, so it no longer splits a sentence before the formula.
 
 ## Polish
-- s8 b: criterion tagged units_precision ("same temperature") duplicates the 2-point concept criterion; relabel or drop.
-- s8 b: "Perustele vertailu" / "Justify the comparison" mildly signals the equal-conditions argument; "Perustele, voiko kaasuja vertailla suoraan" would hide it better.
-- s8 solution: state that b uses 0,0602 mol unrounded.
-- s9 b/c: rubric shows 293 K, solution 293,15 K; add "(293,15 K ~ 293 K)" to the rubric.
-- Solutions headings "Yleisia virheita" / "Hyvaksytaan myos" stay Finnish in en (consistent across all 9 tasks, so a convention, not a delta defect).
+- Third box (hyötysuhde) sits right after the formula and its answer is repeated in the next paragraph ("Osa lämmöstä on aina luovutettava kylmempään..."). The student meets the same sentence twice. Consider trimming the paragraph's first sentence.
+- Box 2's answer repeats the preceding sentence almost word for word, so the question is answerable by copying. A question like "Mitä suoran jatkaminen nollaan olettaa kaasusta?" would make the student reason.
 
 ## Checked
-- Round-1 blocker verified fixed: intro no longer says "the last task is the source task"; it says only that one task is a source-based task opening from its link. True for the student.
-- s9 text now has a movable piston with weights holding pressure constant: isobar graph is consistent; ideal-gas and constant-amount assumptions stated.
-- s9 c answer 1172,6 K with 3 % tolerance, 1,2e3 K accepted (2,3 % off); b 0,10 mol (2,5 %) and carry-through c from 0,10 mol (2,6 %) stay inside tolerance. Common-mistake line for c (Celsius quadrupling, 80 C) is correct.
-- Task texts reveal no solution structure or formula; s8 b and s9 d leave the model choice to the student. Parts rise in demand.
-- Solutions follow CLAUDE.md rule 7 (given, asked, principle, graph reading, formula, conversions, substitution, rounding reason, reasonableness) for every part; s9 d has a justified model answer. Alternative methods listed.
-- Rubrics fair: points match demand (s8 11 p, s9 14 p); figure data (A 200/50, 400/100 K/kPa; B 60 kPa at 400 K; isobar 1,0-4,0 l at 250 kPa) agree across text, rubric, solution; names A/B and figure ids consistent; en and fi-easy mirror fi fully.
-- fi-easy: short sentences, new sentences for each assumption, no extra jargon (NOTES.md 12 satisfied).
+- All three pysahdy boxes (text-only check from the packet, no captures opened):
+  - Box 1 follows the worked tyre example (gauge pressure plus 101 kPa). Question and answer name the exact misconception and are placed after the staged calculation.
+  - Box 2 is now in the right place, after the paragraph it checks.
+  - Box 3 comes after the efficiency formula, before the Q1/Q2 reasoning. It is a why-question with a causal answer.
+- The unit text is staged: core idea, worked example, formulas by subsection, johda derivation, common mistakes and revision links. The Finnish is clear.
+- Sovella tasks (titles and point structure only): practice.py check is OK and the tasks have multi-part rubrics with points. I did not re-judge their content, because the previous FAIL was only about the box and the hash is the one the packet gives.

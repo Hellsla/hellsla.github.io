@@ -10,6 +10,12 @@
 
 In thermal physics three concepts must be kept apart. **Temperature** describes how vigorous the thermal motion of the particles is. **Internal energy** is the sum of the kinetic energy of the particles and the energy of their interactions, so it also depends on the amount of substance and on its state. **Heat** is the transfer of energy because of a temperature difference: a body has a temperature and internal energy, but it has no heat.
 
+```pysahdy
+A hot cup of coffee has a temperature and internal energy. Does it also have heat?
+---
+No. Heat is the transfer of energy because of a temperature difference, so it exists only during the transfer.
+```
+
 Every problem of the lesson comes back to conservation of energy. Heat transferred to a substance either raises its temperature or changes its state, and as the temperature rises the substance also expands. In an isolated system the heat released by the hot part equals the heat received by the cold part. The temperature of a house stays constant when the power coming in equals the power going out.
 
 <svg data-fig="kartta" viewBox="0 0 380 784" role="img" aria-label="Recognition chart: how do I tell which law to use? Ask what happens to the substance and see which sign in the task fits. Temperature changes, state does not: heating, the quantity of heat is specific heat capacity times mass times the change of temperature. Ice melts or water freezes: heat of fusion, the quantity of heat is the specific heat of fusion times mass. Water boils or steam condenses: heat of vaporisation, the quantity of heat is the specific heat of vaporisation times mass. Insulated vessel, mixing: thermal equilibrium, the heat released equals the heat absorbed. The length of an object changes: thermal expansion, the length is the original length times one plus the coefficient of linear expansion times the change of temperature. The volume of a liquid changes: thermal expansion, the volume is the original volume times one plus the coefficient of volume expansion times the change of temperature. Heat conducts through a wall: the U-value, the power is the U-value times the area times the temperature difference." style="max-width:100%;font-size:21px">
@@ -101,6 +107,12 @@ heat of vaporisation :: Q = rm
 
 where $s$ is the specific latent heat of fusion and $r$ the specific latent heat of vaporisation ($\text{J/kg}$). At constant pressure the temperature of a pure substance stays constant during the change, because the energy increases the interaction energy of the particles. The same energy is released in solidification and condensation. For water $c = 4190\,\text{J/(kg}\cdot\text{K)}$, for ice $c = 2100\,\text{J/(kg}\cdot\text{K)}$, $s = 334\,\text{kJ/kg}$ and $r = 2260\,\text{kJ/kg}$.
 
+```pysahdy
+When ice melts, energy is transferred to it, but its temperature stays constant. Where does the energy go?
+---
+The energy increases the interaction energy of the particles and not their kinetic energy, so the temperature does not rise.
+```
+
 This gives the answer to the opening question. Warming a kilogram of snow from $-10\,{}^\circ\text{C}$ to $0\,{}^\circ\text{C}$ takes only $21\,\text{kJ}$, but melting it takes $334\,\text{kJ}$, almost as much as heating the meltwater to boiling, $419\,\text{kJ}$.
 
 <svg data-fig="kayra" viewBox="0 0 600 380" role="img" aria-label="Graph to scale: the temperature T of a kilogram of snow in degrees Celsius as a function of the energy transferred Q in kilojoules. The snow warms from −10 degrees to 0 degrees when 21 kJ of energy has been transferred. Then the temperature stays at 0 degrees until 355 kJ of energy has been transferred: melting takes Q = s m = 334 kJ. The meltwater warms to 100 degrees when 774 kJ of energy has been transferred: this takes Q = c m ΔT = 419 kJ. After that the water boils at 100 degrees, and the graph continues as a horizontal arrow, because vaporisation Q = r m would still need 2260 kJ." style="max-width:100%;font-size:24px">
@@ -181,6 +193,12 @@ Q_\text{released} = Q_\text{received}
 ```
 
 When ice and water are mixed, first compare whether the heat the water releases as it cools to $0\,{}^\circ\text{C}$ is enough to warm the ice to $0\,{}^\circ\text{C}$ and melt it. If it is, all the ice melts and the final temperature is at least $0\,{}^\circ\text{C}$. If it is not, some ice is left and the temperature is exactly $0\,{}^\circ\text{C}$. Very cold ice can also freeze some or all of the water.
+
+```pysahdy
+Water and ice are mixed, and the heat given out by the water is not enough to melt all the ice. What is the final temperature?
+---
+When the container holds both ice and water, the temperature is exactly $0\,{}^\circ\text{C}$.
+```
 
 ### Expansion and heat transfer
 

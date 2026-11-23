@@ -1,21 +1,33 @@
 VERDICT: PASS
-CONTENT-HASH: f5355edae2761e52
-SCOPE: delta: round 2, the fixes of round 1 in fy9-moderni-s8, -s9; older tasks s1-s7 and the intro untouched
-Round 2: delta against the version round 1 reviewed (fix round 1).
+CONTENT-HASH: 28edb98601f1d43b
+SCOPE: full; the change since f5355edae2761e52 is three new ```pysahdy boxes in unit.md, the hero and "pallo" figures now WebP (teacher-approved, the same files as fi), and one inquiry solution split into paragraphs
 
 ## Blocking
-None. The three round-1 items are fixed in the en text:
-- s8 d Assumptions: the activity clause is gone; it now reads "The result is also too small if the source is replaced by a stronger one or the time spent grows", after the scattering reason. Both raise the dose, so "thicker" follows.
-- s8 d criterion 4: part d now asks "Also name one assumption of the model that may make the result too small, and its effect", and the criterion's examples are not the given "the dose rate is constant". Points 4 = 1+1+1+1.
-- s9 c: part text "how long ago the distances between the galaxies were zero, assuming that the distances have grown at the same rate", Principle "the distances between the galaxies have grown from zero", criterion 1 "the distance d of a galaxy has grown from zero". Consistent with d and *The evolution of the universe*.
+None.
 
 ## Polish
-- s8 common mistakes, part a: "μ = 16 / 20 cm = 0.80 1/cm" belongs to the old reading point (20 cm; 5.0 µSv/h); with the points now used, (0; 80) and (10; 20), the quotient error is 4 / 10 cm = 0.40 1/cm. Same leftover as in fi.
-- "the same rate $v$" in the s9 c Principle mixes a rate with a velocity symbol; "the same velocity v" or "a constant rate" reads cleaner. Meaning unchanged.
-- Round-1 polish taken as in fi (no grid point in the s9 text, (10 cm; 20 µSv/h) in s8 a, s9 d criterion 2 accepts another valid argument).
+- s8 common mistakes, part a (still open, as in fi): "$\mu = 16 / 20\,\text{cm} = 0.80\,\text{1/cm}$" belongs to the old reading point. With the points now used, (0; 80) and (10; 20), the quotient error is $4 / 10\,\text{cm} = 0.40\,\text{1/cm}$. No physics is wrong.
+- Pysähdy 1: the answer only repeats the Key idea sentence and gives no reason (as in fi). "One photon to one electron" holds for absorption and the photoelectric effect. That is a type C simplification at this level, so no finding.
 
 ## Checked
-- Read the en s8 and s9 tasks.json entries and solutions.md sections. Every number, unit and rounding is the same as in fi (0.14 1/cm, 6.6 µSv/h, 330 h, 2.2 mSv, 3.0 µSv/h, 23.6 -> 24 cm rounded up, 31.6 cm; 72 km/s/Mpc, 117 -> 120 Mpc, 2.33e-18 1/s, 4.29e17 s, 1.4e10 a); the fixed sentences mean what the fi ones mean. Decimal points throughout.
-- The same script as for fi recomputed every value from the figures' data: all agree; results rounded to two significant figures as the data.
-- Aligned calculation rows; unit fields language-neutral; part texts reveal no structure.
-- practice.py check --lang en OK (9 tasks, 136 points); hash the same at start and end.
+- Pysähdy boxes, judged first against fi line by line. The physics is the same:
+  - Box 1 (one photon to one electron) matches the Key idea and s3 d.
+  - Box 2 (no electrons when $hf < W$) matches the formula text "only when $hf \geq W$".
+  - Box 3: after $2T_{1/2}$, $(\tfrac12)^2 = \tfrac14$ is left. This matches the decay law, the "puolitus" figure and the mistakes list.
+  - Each box has one correct answer and fits FY8 scope. Decimal points and LaTeX are as in fi.
+- Diff:
+  - The inquiry lead solution has the same words and numbers, only split into paragraphs; $d_{1/2} = 5.79\,\text{mm}$ recomputed.
+  - The pallo WebP shows a point source, two sphere surfaces and one cone whose area grows with distance. The labels $r_1$, $r_2$, $\dot H_1$, $\dot H_2$ are unchanged, and the figure matches the inverse-square text. Both images are in teacher-figures.tsv and are the same files as in fi.
+- One script (scratchpad rc.py) recomputed the unit's and the task set's numbers from the task data with my own formulas and found each in the en text:
+  - intro: 1.88 eV
+  - s1: 1.87 pm, 1050 Bq/kg, 0.068 mSv, 0.33 ng
+  - s2: 656.5 nm, 7080 km/s, 101 Mpc, 497.6 nm
+  - s3: h ≈ 6.61e-34, f0 5.43e14 Hz, 552 nm
+  - s5: 151 s two-point
+  - s6: 37 %, 1.34e20 1/s, 1650 kg, 1.51 kg, 58 600 kg/s
+  - s7: 1.54, 9.4 kg, 1.05 %
+  - s8: 0.14 1/cm, 6.6 µSv/h, 2.2 mSv, 23.6 → 24 cm rounded to the safe side
+  - s9: 72 km/s/Mpc, 117 Mpc, 1.4e10 a
+  - inquiry: 5.79 mm
+  All agree. Rounding and models are unchanged from the passed version and from fi.
+- practice.py check: OK for en (9 tasks, 136 points). The hash was 28edb98601f1d43b at the start and at the end.

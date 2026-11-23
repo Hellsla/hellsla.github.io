@@ -1,17 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: f7b2fe75776f33d3
-SCOPE: delta review of the Sovella set: new tasks s7 (Kärry radalla) and s8 (Kaksi kulkijaa samalla tiellä) and the changed intro; s1-s6 not re-judged (previously passed).
+CONTENT-HASH: 99ae4e4b048c0906
 
 ## Blocking
-- (none)
+None.
 
 ## Polish
-- s7, s8: both are chapter-level graph tasks (fy4-1, fy4-12) with a figure that names its own structure ("kolmeen vaiheeseen", "kaksi kertaa" in c, "toisiaan kohti"). Fine as a gentle graph-reading pair, but the set's independent-transfer weight stays with s1-s6; the s7 c-part would be a slightly better task if it did not announce that the position occurs twice.
-- s7 d, Yleisiä virheitä: "kuljetusta matkasta" should be "kuljetusta matkasta jaettuna" or "kuljetun matkan"; the wording is unclear about what is wrong.
-- s8 d is the only word task of the pair and carries a real prediction-then-compute demand; good, keep.
-- Language (fi-easy): sentences are short (one idea each), the intro splits the instruction into separate short sentences, "Laske" and "Kirjoita myös etumerkit" are plain imperatives. Keskinopeus, keskivauhti and siirtymä are each explained in the solution ("siirtymä on alkupaikan ja loppupaikan ero", "jaetaan kuljettu matka"); the task text itself in s7 d asks about them without a gloss, but the chapter has taught them and the solution is behind the button, so Polish only.
+- The three new "Pysähdy ja mieti" boxes (Ydinajatus, Kaava/Tasaisesti kiihtyvä liike, Kaava/Kulmakerroin ja pinta-ala) are short, in plain language, and the answer sits behind the box, so nothing is disclosed before the student acts. Boxes 1 and 3 only repeat the sentence just above them (recall). Box 2 (positive velocity, negative acceleration) is the one that asks the student to apply the rule, and it is the best placed. For box 1, a variant that asks for a use ("Miten saat matkan kuvaajasta?") would ask for more than recall. This is optional.
+- Box 3 gives the answer that "Alapuolella oleva pinta-ala lasketaan negatiivisena" is the same sentence as in the text. Asking for a consequence (a car that reverses) would be stronger. Optional.
+- sovella s5 criterion: "kehäpäätelmä" is not explained in the simple-Finnish text (for example "päättely olettaa sen, mitä pitäisi todistaa"). This is only in the rubric, not in the task text.
+- teacher.md names the tasks *Potkulauta*, *Pesäpallon syöttö*, *Hirvi tiellä* and *Koira ja juoksija*. These are not in this task set (the set has *Kiihdytyskaista*, *Kaksi palloa aulassa* and so on). It also says "Teoriatiivistelmä" for what the page calls Teoria. This is not new text and is the same as in the Finnish unit, so it is not blocking. The names should be fixed in both languages.
+- s7 and s8 mostly read values from a graph and solve two linear equations. They are the easiest tasks in the set, and s8 part c is worth 2 points. That is acceptable as the easy end of the range. The set would be better with more mixing of difficulty and variety if one of them were replaced.
+
 ## Checked
-- s7: parts a-d rise from reading a slope to a negative-velocity interpretation, two-phase reasoning (x = 12 m twice) and displacement vs distance; recomputed 3,0 m/s, -2,0 m/s, 2,67 s and 8,0 s, +0,40 m/s, mean speed 2,0 m/s: correct. Rubric points sum to 3+3+4+4, no points for irrelevant things; the typical errors (x/t with nonzero start, missing sign, t = x/v = -6 s, averaging phase velocities) are real.
-- s8: recomputed vA = 2,0, vB = -2,0 m/s, t = 4,0 s, x = 12 m; d: 5,3 s and 14,7 m correct, and the graph argument (flatter B line meets A later and higher) is right. Common mistakes (sign of vB, 16 m / 2 m/s = 8 s, distance travelled instead of position) are real. Both solutions follow the seven-step model with symbolic solution first.
-- Intro: "kahdeksan tehtävää" matches eight tasks; instruction (coordinate system, model choice, symbolic first, reasonableness, open model answer last) fits the course. Workload: two short tasks added, within an hour-sized set.
-- Hash re-checked at the end: unchanged.
+- Reading level of the new boxes: short sentences, "etumerkki", "tangentti" and "kulmakerroin" explained in the text before the box. Terms are the glossary terms.
+- The task set (8 tasks, 124 points, 2–4 parts each, rising demand) at FY9 level. The situations are unfamiliar and authentic: a motorway acceleration lane, balls in a school lobby, phone speed data from a train, average-speed cameras, a lab report to critique, phone video analysis of a falling ball, and graphs. No heading or prompt names the formula. s1 c asks "ehtiikö rekka" without giving the method.
+- Competency spread: transfer, experiment (s5 c design, s6 c systematic error), graph (s3 a), communication (s4 a, s1 d), and critique of a claim (s3 d, s4, s5 b). The rubrics use the shared keys with specific details. No points are given for irrelevant things. Spot checks of the numbers: s1 (12 s, 1,25 m/s², 17,5 m), s4 b (81,8 km/h), s6 c (9,77 m/s²), s7 d (0,4 m/s), s8 (4 s, 12 m) are consistent.
+- The solutions follow the seven steps: given, principle, formula in symbols, conversions, substitution, answer with significant figures, reasonableness. s1 solutions were read in full. The common mistakes are real, such as confusing the v–t intersection with meeting.
+- Workload: about 15 points per task. With the 12 minutes in the lesson plan for the first part of one task and the rest as homework, this fits the 75 minute unit.
+- Inquiry diff: only paragraph breaks in the model of the car and moped task. No content change. The hero figure is now an image with an unchanged aria description.
+- Hash at start and end of review: 99ae4e4b048c0906.

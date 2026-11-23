@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 369cc4ab4a3dead4
+CONTENT-HASH: dca543627b04711a
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] sovella/solutions.md s5 a) — the break leaves the sentence on measurement 5 as a lone paragraph between the Periaate and Kaava lines; optionally keep it inside Periaate. Not needed.
+- [Minor] Pysähdy ja mieti -boksit (selita 390/1280) — vain avattu tila nähty kaappauksissa; suljetun "Vastaus"-osion ulkoasua ei voitu arvioida — varmista suljettu tila ennen julkaisua.
+- [Minor] Boksien kysymysteksti on samaa kokoa kuin leipäteksti; kehotteen pienet-kapiteelit-otsake ("PYSÄHDY JA MIETI") on pieni (~13 px) — hyväksyttävä, mutta kontrasti vihreä/vaaleanvihreä kannattaa tarkistaa.
+- [Minor] Kuva "kalteva", voimakuvio: for science: kitkavoiman F_mu nuolen suunta suhteessa rinteeseen/liikkeeseen (osoittaa oikealle, kappale liukuu vasemmalle alas) — tarkista, osoittaako se rinnettä ylös.
 
 ## Checked
-- Diff origin/main...HEAD for fi (word-level): only blank-line paragraph breaks in sovella/solutions.md and the inquiry.json model field; words, maths, figures unchanged.
-- Every new break falls at a sentence boundary outside inline/display maths (before a voimakuvio fence, after a closing $$, between equilibrium and changed-situation parts); no split chain; paragraphs under about 120 words.
-- Read the previous Sovella visual report (PASS) as evidence.
-- Opened captures: fi/review/shots/fy9-voimat-stage-sovella-390-5.png (fi) and en/.../sovella-1280-3.png (en), the same page structure for all languages: tasks, hints, Näytä ratkaisu cards readable, nothing clipped, no horizontal overflow.
-- Gap: I did not open the captures of the opened model solutions with the new breaks specifically in fi; the captures seen show the closed/just-opened solution start. Figures unchanged and not re-inspected.
+- selita-390-1…3, selita-1280-1…3 (kaikki kolme aside.stop-think-boksia: label, kysymys, avattu Vastaus, matematiikka $N = mg\cos\alpha$, $G_y$ ei leikkaudu), top-390, kartta-kuva ja kalteva-kuva (luettavat 390 px), Kaava-taulukot.
+- Boksit: vihreä vasen reunaviiva, selkeä otsake, kysymys, avattava Vastaus; ei vaakasuuntaista ylivuotoa; hierarkia hyvä kummallakin leveydellä. 360 px:ää ei avattu erikseen (check_layout kattaa).
+- Suomi: sujuva, termit johdonmukaisia; yksiköt LaTeXina; ei havaittuja kielivirheitä.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

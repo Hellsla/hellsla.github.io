@@ -10,6 +10,12 @@
 
 Kaikki tunnin tehtävät alkavat samasta ajatuksesta: **varaus synnyttää ympärilleen sähkökentän, ja kenttä kohdistaa toiseen varaukseen voiman** $\overline{F} = q\overline{E}$. Kohdistaa tarkoittaa, että voima vaikuttaa varaukseen. Positiiviseen varaukseen voima osoittaa kentän suuntaan. Negatiiviseen varaukseen voima osoittaa kenttää vastaan. Kun kenttä siirtää varausta, kenttä tekee työtä. Silloin varauksen potentiaalienergia muuttuu samalla tavalla kuin pallon korkeusenergia muuttuu painovoimakentässä. Kondensaattori varastoi energiaa levyjensä väliseen kenttään. Puolijohdekomponentit ja sähköturvallisuus liittyvät samoihin suureisiin: jännitteeseen, virtaan ja kenttään, jonka eriste kestää.
 
+```pysahdy
+Mihin suuntaan sähkökentän voima osoittaa elektroniin, kun kenttä osoittaa oikealle?
+---
+Elektronin varaus on negatiivinen. Siksi voima osoittaa kenttää vastaan, eli vasemmalle.
+```
+
 <svg data-fig="kartta" viewBox="0 0 380 780" role="img" aria-label="Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Piirrä ensin tilanne ja katso, mikä tehtävän tunnusmerkki sopii. Kaksi varattua kappaletta: Coulombin voima on Coulombin vakio kertaa varausten tulo jaettuna etäisyyden neliöllä. Varaus sähkökentässä: kentän voimakkuus on voima jaettuna varauksella. Levyjen välillä sama kenttä: jännite on kentän voimakkuus kertaa etäisyys. Varaus kiihtyy jännitteessä: kentän työ, varaus kertaa jännite, on yhtä suuri kuin liike-energia. Kondensaattorin varaus: varaus on kapasitanssi kertaa jännite. Levykondensaattorin mitat: kapasitanssi on tyhjiön permittiivisyys kertaa suhteellinen permittiivisyys kertaa pinta-ala jaettuna levyjen välimatkalla. Kondensaattorin energia: puolet kapasitanssin ja jännitteen neliön tulosta. LED tarvitsee etuvastuksen: käytä silmukkaan Kirchhoffin 2. lakia, jännitteiden summa on nolla." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="736" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
@@ -74,6 +80,12 @@ Kaikki tunnin tehtävät alkavat samasta ajatuksesta: **varaus synnyttää ympä
 </svg>
 
 Alun kipinä selittyy näillä laeilla. Kun kävelet villamatolla, kehoosi kertyy varausta. Influenssin vuoksi kahvan metallilevyn lähimpään pintaan siirtyy varaus, jonka merkki on vastakkainen. Influenssi tarkoittaa, että varattu kappale siirtää johteen varauksia, vaikka kappaleet eivät kosketa. Kipinä hyppää, kun ilmavälin kenttä on suurempi kuin ilman läpilyöntilujuus. Se on noin $3\,\text{MV/m}$. Noin $3\,\text{mm}$:n kipinä kertoo siis, että jännite on noin $9\,\text{kV}$.
+
+```pysahdy
+Kuinka suuri jännite on noin $2\,\text{mm}$:n kipinän yli, kun ilman läpilyöntilujuus on $3\,\text{MV/m}$?
+---
+Jännite on $U = Ed \approx 3\,\text{MV/m} \cdot 2\,\text{mm} = 6\,\text{kV}$.
+```
 
 Jännite on suuri. Keho on kuitenkin pieni kondensaattori, jonka kapasitanssi on noin $100\,\text{pF}$. Siksi varausta on vain noin $0{,}9\,\mu\text{C}$ ja energiaa noin $4\,\text{mJ}$. Purkaus kestää noin mikrosekunnin. Vaarallinen virta on noin $50\,\text{mA}$ sekunnin ajan. Se kuljettaisi kehon läpi $0{,}05\,\text{C}$. Se on yli $50\,000$ kertaa enemmän varausta.
 
@@ -153,6 +165,12 @@ kondensaattorin energia :: E = \tfrac12 CU^2
 ```
 
 missä $C$ on kapasitanssi ($\text{F}$), $A$ levyn pinta-ala ($\text{m}^2$), $\varepsilon_0 = 8{,}854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ eristeen suhteellinen permittiivisyys, $E$ kondensaattoriin varastoitunut energia ($\text{J}$), myös $E = \tfrac12 QU$. Levykondensaattorin kaava pätee, kun $d$ on pieni levyjen kokoon verrattuna ja eriste täyttää koko välin. Kun kondensaattori on kytketty lähteeseen, sen jännite pysyy samana. Kun kondensaattori on irrotettu lähteestä, sen varaus pysyy samana.
+
+```pysahdy
+Mitä tapahtuu levykondensaattorin kapasitanssille, kun levyjen väli kaksinkertaistetaan ja muu pysyy samana?
+---
+Kaavassa $C = \varepsilon_0\varepsilon_\text{r}A/d$ etäisyys $d$ on jakajana. Kun $d$ kaksinkertaistuu, kapasitanssi puolittuu.
+```
 
 Eristeen läpilyöntilujuus $E_\text{max}$ ($\text{V/m}$) on suurin sähkökentän voimakkuus, jonka eriste kestää. Jos kenttä on suurempi, eriste alkaa johtaa. Silloin levyjen välillä tapahtuu läpilyönti. Siksi kondensaattorin jännitteellä on suurin arvo $U_\text{max}$ ($\text{V}$).
 

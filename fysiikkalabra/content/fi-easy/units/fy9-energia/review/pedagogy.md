@@ -1,23 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: b3bdcca4582a92f4
-SCOPE: delta: Sovella itsenäisesti tasks s8 (Skeittari half-pipessä) and s9 (Kaksi laitetta energiamittarissa) with solutions, answers.py and the changed intro sentence ("Kaksi viimeistä tehtävää lukevat tiedot kuvasta"); s1-s7 not re-judged.
+CONTENT-HASH: b2479eab4e3b1226
+SCOPE: full request; the diff since the passed hash (b3bdcca4582a92f4) touches only unit.md (three new `pysahdy` boxes, hero and ketju figures now pictures). inquiry.json, tasks.json, solutions.md and exit ticket are unchanged, so the earlier PASS for them stands and they were not re-judged.
 
 ## Blocking
 - (none)
 
 ## Polish
-- s8, figure `fy2-1/kitka-pylvaat`: its alt text ends "Lämpöenergiaa kuvassa ei ole", while the task and solution say sisäenergia (the figure is FY2's and keeps MAOL's lämpöenergia). Harmless, since the figure shows no such bar, but a student using a screen reader meets two names for one thing.
-- s9 c: the solution takes the useful energy as mgh, i.e. the load is at rest before and after (or its kinetic energy is negligible). The task does not say so; one clause ("nostaa ... tasaisella nopeudella") would make the model explicit without revealing the method.
-- s9 a, criterion units_precision: also carries the observation "A:n suora on kolme kertaa jyrkempi". It is a good reasonableness check but is not about units or precision; `reasonableness` would fit.
-- s9 b: a lift motor running 3,0 h a day at constant 0,50 kW is a stretch but is consistent with the task's own premise (the rated power from the graph); fine for practice.
+- Box 1 (after Ydinajatus): "Tehtävässä kysytään..." does not say which task. "Koetehtävässä" would match the paragraph above. The answer is the two sentences just before the box, so it tests recall of the paragraph, not understanding. That is acceptable as a warm-up. A box that asked the student to sort a made-up question ("Kuinka kauan lataus kestää?" teho, "Kuinka suuri osa tulee hyödyksi?" hyötysuhde) would make the student apply the idea.
+- Box 2 (kWh): the display formula `1 kWh = 3,6 MJ` is directly above the box, so the student only reads it back. Putting the box before the formula, or asking "Laite on päällä 2 tuntia teholla 1 kW. Onko tulos kW vai kWh?", would test more.
+- Box 3 (ketju): it comes after the johda derivation, whose last sentence already says the same (alle 1, siksi pienempi). Put it before the derivation as a prediction: the student argues first, then sees the proof. The number question (0,90 · 0,45 · 0,98) matches the figure.
+- Plain-language reading level: all three boxes are fine. They use short sentences and no new difficult words, and "suureet", "hyötyteho" and "tulo" are known from the unit. "Tulo on pienempi kuin pienin luku" holds only because every factor is under 1, and the box says so.
 
 ## Checked
-- Intro: nine tasks, s7 the source task, s8 and s9 the only two with a figure (`figure` field in tasks.json); the sentence is true and reveals nothing of the solutions.
-- s8: figure values (A 700/0 J, B 300/300 J, C 0/500 J) match answers.py, criteria and solution. Chain 700 -> 600 -> 500 J gives 100 J and 200 J; v = 4,7 m/s (4,71), friction 59 N (58,8), v without friction 5,6 m/s (5,58); 29 % = 200/700. Rounding follows the data (45 kg, 3,4 m: two figures; read energies exact on a 100 J grid). Tolerances cover the unrounded values.
-- s8 text states the situation, figure and zero level, and asks last; it names friction (given in the situation) but not the energy-conservation method, "three phases" or the like. Part d asks both the value and the why (2 concept points). Energy-into-heat rule respected: sisäenergia, siirtyy lämpönä; the "katoaa/muuttuu lämmöksi" misconception is named only under common mistakes.
-- s9: graph reading A 120 kJ and B 40 kJ at 80 s equals the figure's alt text; P 1,5 and 0,50 kW; cost 21,6 -> 22 EUR and 7,2 EUR (two figures, 3,0 h data); eta = 29,4/40 = 74 %; loss 0,13 kW = 26 %. The ratio check (3 : 1) is a good internal consistency.
-- Alt text names (A, B, C; laitteet A ja B) equal the task's names. Figures carry no answer values beyond what the student must read ("safe" in REUSE).
-- Calculation chains in the solutions are aligned rows; the 360 px captures of the stage were opened, but the capture set shows the guided Sovella stage and no s8 or s9 card (not found in shots.md), so open-solution layout of the new tasks is left to the visual reviewer and `check_layout.py`.
-- Skills and links (fy2-1, fy4-7, fy4-8; fy2-3, fy2-4) fit the tasks; unit remains language-neutral (answers and figure ids identical across languages).
-- fi-easy version: short sentences, "Kahdessa viimeisessä tehtävässä luet tiedot kuvasta", same data, same criteria, same answers.py keys as fi.
-- Hash identical at start and end.
+- The three boxes fit the lesson. They are short, in the right place, with a question first and the answer behind `---`. They add no stage and no heading. Numbers and units are LaTeX and use a decimal comma. The wording matches the Finnish unit; the physics (teho/energia, kWh = 3,6 MJ, kerrotaan, alle 1) is correct.
+- The energy-into-heat rule is not touched. The "Häviöt" mistake already says sisäenergia and lämpönä.
+- Misconception coverage: boxes 2 and 3 address two of the listed "Yleisiä virheitä" (teho/energia, hyötysuhteiden yhteenlasku). This is real support.
+- Workload: three one-line boxes add under 3 minutes to the 75-minute unit.
+- The hero and ketju figures are now pictures. Their alt texts and labels (foreignObject) are unchanged and give the same data. Looks and legibility go to the visual reviewer.
+- Unchanged parts: the earlier PASS covers the inquiry, the nine Sovella tasks and the solutions. The packet's deterministic check (`practice.py check`) is OK.
+- Hash identical at start and end (b2479eab4e3b1226).

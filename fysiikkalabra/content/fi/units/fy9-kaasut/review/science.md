@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 2f9de8817eb2638d
-SCOPE: delta (round 2): new tasks fy9-kaasut-s8 (fy3-10/pt-suorat) and s9 (fy3-11/pv-isobaari) and the changed intro, judged afresh; s1-s7 not re-judged. Hash at start and end identical. Language: fi.
+CONTENT-HASH: 8e65be516f1f6a85
+SCOPE: delta re-review after FAIL at 9aa2efef9e81542c (commit e5a3f7ab3a). Diff of the unit's content from e5a3f7ab3a to the working tree touches only unit.md: (1) the second pysahdy box question reworded (commit 693d2f77fa); (2) during this review the same box was moved (uncommitted) from before $T = \theta + 273{,}15$ K to after the paragraph ending "…tiivistyy nesteeksi ennen sitä.". Hash was 3c6710f77b96877f at start and 8e65be516f1f6a85 after the move; review redone on 8e65be516f1f6a85, identical at the end. tasks.json, solutions.md, answers.py, inquiry.json, teacher.md and unit.json unchanged. Language: fi.
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- s9: heating air to about 1170 K (about 900 C) is still not plausible for a school cylinder; a smaller volume ratio or a one-line note ("the gas is idealised") would help. Not blocking, the task is explicitly an invented example.
+- Optionally add "Absoluuttinen nollapiste on silti todellinen alin mahdollinen lämpötila." to the box answer, so the box says this outright.
+- Carried over: the third box repeats the next sentence; s5 b) "noin 5–7 %" → "noin 5 %" (recomputed 4.6 % and 5.0 %).
 
 ## Checked
-- Round-1 blockers verified in the current text, not trusted: (1) s9 now says the movable piston carries weights that hold the pressure constant, "light" is gone, consistent with the constant 250 kPa in the figure; (2) s9 b and c both use two significant figures, answer.value 1172.6 K with tolerance 3 %: 1.2e3 K is 2.3 % off, so inside tolerance, and n = 0.10 mol gives 1203 K (2.6 %), also inside; (3) the intro no longer calls the last task the source task, it says only that one of the tasks is source-based; (4) the s9 c common-mistake line now reads "temperature not converted from Celsius to kelvins or the answer says it quadruples in Celsius (80 C)", which is correct.
-- Own recomputation (R = 8.31, 273.15): s8 a n = 100000*2.0e-3/(8.31*400) = 0.0602 mol (200 K / 50 kPa point gives the same); s8 b 60/100 = 0.60, so 40 % smaller, n_B 0.036 mol; s8 c 253.15/400*100 = 63.3 kPa; s9 a 250 kPa*3.0 l = 750 J; s9 b n = 0.1026 mol; s9 c T2 = 4*293.15 = 1172.6 K (880 K rise, 899.5 C). All match tasks.json answers and solutions.
-- s8: rigid vessel, constant V and n, so p proportional to T; comparison at equal T and V is physically sound; reading from two far-apart points; precision (two figures) matches the data; the -20 C part lies within the graph's range logic (253 K between 200 K and 400 K).
-- s9 d: heating at constant pressure, internal energy up, Q = dU + W, so Q > W; sign convention and energy wording correct. Magnitude check (0.04 mol of air per litre at 101 kPa, 2.5x pressure gives 0.10 mol) right.
-- Points add up per part, criteria match the parts, scope FY3, figure values are readable from the figures (V and 20 C given in the text).
-- Fidelity: numbers, criteria and physics identical across fi, en and fi-easy.
+- Previous Blocking 1 (A, definition): fixed. The question now reads "Miksi suoran jatkaminen nollapaineeseen on vain kaasumallin ennuste?". It names the extrapolation, not absolute zero, as the model prediction, and it matches the box answer (real gas condenses first). Nothing now says absolute zero itself is hypothetical.
+- The move fixes the earlier Polish item. "Kelvinlämpötila on" now runs straight into the formula. The box follows the paragraph that introduces the extrapolation ("Se on mallin ennuste: …"), so the paragraph's "se" (the extrapolated zero) and the box agree. The (θ, p) line in the question matches the text's "(θ, p)- tai (θ, V)-suoraa" and s3. The box text is byte-identical to the committed version.
+- Nothing else changed: the diff of content/fi/units/fy9-kaasut, with review/ files left out, is only these two edits. So the previous full check still holds: every number in s1–s9, inquiry.json and teacher.md recomputed against answers.py, choice items, rubrics, force diagrams, scope and figure scale.

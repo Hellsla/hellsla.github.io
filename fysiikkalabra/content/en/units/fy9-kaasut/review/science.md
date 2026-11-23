@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b61fa0a2e8442d35
-SCOPE: delta: en tasks fy9-kaasut-s8 (fy3-10/pt-suorat) and s9 (fy3-11/pv-isobaari) in sovella/tasks.json and solutions.md, and the changed intro (git diff 49ba8f9 HEAD); fidelity to fi; s1-s7 not re-judged. Language: en.
+CONTENT-HASH: e63164d38e934673
+SCOPE: full: unit.md (the three new "Pysähdy ja mieti" boxes first), inquiry.json, teacher.md, sovella tasks s1-s9, solutions.md, answers.py; physics compared with the fi version. Language: en.
 
 ## Blocking
 (none)
 
 ## Polish
-- s9: heating air to about 1170 K (about 900 °C) is implausible for a school cylinder; a smaller volume ratio or "the gas is idealised" would help. The task is labelled an invented example.
+- kone figure (now a webp image under the LaTeX labels): measured arrow widths in the image are Q1 272 px, Q2 178 px (0.654), W 91 px (0.335 instead of 0.35). The caption says "arrow widths to scale". The deviation is small (outgoing arrows 99 % of Q1), but W is 4 % narrow. A 99 px W arrow would match.
+- inquiry `pumppu`: the mistake value 100.0 kPa ("gauge pressure substituted into Boyle's law") comes from no obvious wrong calculation path (gauge 0 kPa gives 0). It is the same in fi. This is not an error, but the trigger is probably unreachable.
 
 ## Checked
-- Recomputed in one script (R = 8.31, 273.15): s8 a n = 1e5*2.0e-3/(8.31*400) = 0.0602 mol (200 K / 50 kPa gives the same); b 60/100 = 0.60, 40 % smaller, n_B = 0.036 mol; c 100*253.15/400 = 63.3 kPa; s9 a 250 kPa*3.0 l = 750 J; b 250/(8.31*293.15) = 0.1026 mol; c T2 = 4*293.15 = 1172.6 K (899 °C). All answers inside tolerances; 1.2e3 K is inside 3 %. Order-of-magnitude checks (0.083 mol in 2 l, 0.042 mol in 1 l of room air) right.
-- Figure source (lessons/FY3/fy3-10, fy3-11 figures.py): A (200 K; 50 kPa), (400 K; 100 kPa), B (200; 30), (400; 60); isobar 250 kPa from 1.0 l to 4.0 l. Readings in the solutions match.
-- Physics: rigid sealed vessel, n and V constant, p proportional to T; comparison at equal T and V; W = p dV at constant pressure as the area; s9 d dU > 0, Q = dU + W, so Q > W, sign convention consistent. Scope FY3. Kelvin conversions explicit.
-- Assessment: criteria sum to part points; criteria ask only what each part asks; alternative methods (slope, V/T constant, Celsius answer) accepted.
-- Fidelity to fi: ids, figures, points, criteria, answer values and tolerances identical; every number in s8/s9 text, criteria and solutions matches fi.
-- Intro: "Nine problems", "one of the problems is source-based", consistent with the set.
-- Hash b61fa0a2e8442d35 (units.py hash --lang en) at start and end.
+- Pysähdy boxes, against fi line by line: (1) gauge reading vs total pressure, 101 + 230 = 331 kPa. (2) The extension to zero is a model prediction because a real gas condenses first. (3) η < 100 % because Q2 to the colder surroundings cannot be avoided, so W = Q1 − Q2 < Q1. Physics, numbers and conditions are the same as fi. All three agree with the surrounding text, the Common mistakes list, lt-6 and tarkistus-1. No guardrail break (no "turns into heat"; the cyclic engine is stated).
+- I recomputed every number in one script (R = 8.31, g = 9.81, 273.15) and set it beside answers.py. Everything agrees. Hook: 285.8 kPa total and 184.8 kPa gauge, −14 % and −20 %. Inquiry: lt-4 1.068, celsius 113.6 kPa, aineisto 0.0602 and 0.0361 mol, luukku 17.66 kN (mistakes 54.0 and 29.4 kN), pumppu 151.5 kPa (40.4), pallo 832 kg (87 942 kg in Celsius, 28 701 mol), manta 750 J, tarkistus-2 58.3 kW, well 10.3 m. Sovella: s1 562.1 kPa, 21.19/25.0/3.81 kJ, 650 kPa, 501 kPa, 0.42 m. s2 2183 mol, 34.92 kg, 485.1 and 174.6 kW, 84 %, 77.6 kW. s3 least squares k 0.1351 ml/°C and −279 °C. The extreme lines (−264.5 and −294.4 °C, ±15) touch the bars at exactly 0.3 ml. s3 also: 1.646 and 1.680 mmol, shift 11 K to −290 °C, −25 °C gives 34 ml. s4 6.0 %. s5 25.45 g/mol, 30 °C gives 26.6, −10 kPa gives 26.7, total-pressure error gives 17.2 (about two thirds). s6 72.0 kg, 11.21, 18.69 and 37.4 kPa, safety factors 5.35, 3.21 and 1.61. s7 37.2 %, 2700 MW, 64.8 GWh = 2.33·10¹⁴ J, 11.3 K (18.0 K from 4300 MW). s8 0.0602 mol, 40 %, 63.3 kPa. s9 750 J, 0.1026 mol, 1173 K.
+- Physics: the force balance on the piston uses the pressure difference, and the outside-air work is explained. s1c: flow continues only while tank pressure ≥ cylinder pressure. The heat-pump COP is distinguished from efficiency. In s6 the pressure force is perpendicular to the glass and the upright pane is carried by static friction ≤ μ0N; its FBDs list no invented forces. The first-law sign convention (W done on the gas) is consistent across text, johda, manta and s9d.
+- Assessment: each part's criteria add up to its points, and each criterion asks only what its part asks. Every choice item has exactly one correct option, and every distractor's feedback is right. Scope is FY3, with FY1/FY4 links. Significant-figure reasons are stated.
+- Hash e63164d38e934673 at start and end.

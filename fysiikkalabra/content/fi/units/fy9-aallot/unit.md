@@ -111,6 +111,12 @@ Tästä saadaan vastaus alun kysymykseen. Pilli värähtelee taajuudella $3{,}0\
   <foreignObject x="201.5" y="327.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1\,\text{m}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Miksi pillin sävel pysyy samana, kun ääni siirtyy ilmasta veteen, vaikka aallonpituus muuttuu?
+---
+Taajuuden määrää lähde, ja se säilyy. Äänen nopeus kasvaa vedessä, joten aaltoyhtälön $v = f\lambda$ mukaan aallonpituus kasvaa.
+```
+
 ## Kaava: Värähtely, aallot ja ääni
 
 ### Värähtelijät
@@ -133,6 +139,12 @@ aaltoliikkeen perusyhtälö :: v = f\lambda
 ```
 
 missä $v$ on aallon nopeus ($\text{m/s}$), $\lambda$ aallonpituus ($\text{m}$) ja $\Delta s$ matkaero kahdesta samassa vaiheessa värähtelevästä lähteestä ($\text{m}$), $n = 0, 1, 2, \ldots$ Ensimmäinen ehto antaa vahvistavan ja toinen heikentävän interferenssin. Diffraktio on voimakasta, kun raon tai esteen leveys on aallonpituuden suuruinen tai pienempi. Heijastuksessa tulokulma on heijastuskulman suuruinen, kun kulmat mitataan pinnan normaalista.
+
+```pysahdy
+Kaksi samassa vaiheessa värähtelevää lähdettä on havaintopisteestä matkaeron $\Delta s = \tfrac12\lambda$ päässä. Vahvistuuko vai heikkeneekö aalto?
+---
+Aalto heikkenee. Matkaero $\left(n + \tfrac12\right)\lambda$ ($n = 0$) on heikentävän interferenssin ehto.
+```
 
 Seisovassa aallossa vierekkäisten solmujen väli on $\tfrac{\lambda}{2}$. Kielellä ja avoimella putkella on ominaistaajuudet $f_n = n \cdot \tfrac{v}{2L}$, $n = 1, 2, 3, \ldots$, ja toisesta päästä suljetulla putkella $f_n = n \cdot \tfrac{v}{4L}$, $n = 1, 3, 5, \ldots$, missä $L$ on kielen tai putken pituus.
 
@@ -166,6 +178,12 @@ intensiteetti :: I = \frac{P}{A}
 ```
 
 missä $f_\text{H}$ on huojuntataajuus ($\text{Hz}$), $f_0$ lähteen ja $f$ kuultu taajuus ($\text{Hz}$), $v$ äänen nopeus, $v_\text{L}$ lähteen ja $v_\text{H}$ havaitsijan nopeus ilman suhteen ($\text{m/s}$). Dopplerin kaavat pätevät, kun vain toinen liikkuu ja nopeus on äänen nopeutta pienempi. Intensiteetti on teho $P$ pinta-alaa $A$ kohti. Pistemäisen lähteen ääni jakautuu etäisyydellä $r$ pallon pinnalle, jonka ala on $A = 4\pi r^2$, kun heijastuksia ei ole. $L$ on intensiteettitaso ja $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Kaiusta etäisyys on $d = \tfrac{vt}{2}$, koska pulssi kulkee matkan kahdesti.
+
+```pysahdy
+Äänilähde liikkuu kohti havaitsijaa. Kuuluuko ääni alkuperäistä korkeampana vai matalampana?
+---
+Korkeampana. Kaavassa $f = f_0\,\tfrac{v}{v - v_\text{L}}$ nimittäjä on pienempi kuin $v$, joten $f > f_0$.
+```
 
 ## Yleisiä virheitä {Virheet}
 

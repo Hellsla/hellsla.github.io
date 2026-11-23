@@ -1,21 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 6e26a08a08a64312
-SCOPE: delta (round 2), s7 Two loudspeakers / Kaksi kaiutinta pihalla, s8 standing wave on a string, changed intro; s1-s6 not re-judged; language: fi
+CONTENT-HASH: e1e86d735a997e1d
 
 ## Blocking
-None. Round-1 blocking items (significant-figure reasons in s7 a, s7 b, s8 a; en decimal points) were verified in the current text and are fixed: s7 a two sf from the 0,50 m square, s7 b three sf from 343 Hz, s8 a three sf from 1,20 m, with exact counts stated as exact. No decimal commas in the en s7/s8 text.
+- None.
 
 ## Polish
-- s7 task text says the loudness difference from unequal distances is ignored, yet the c model answer says P is "not completely silent because the farther loudspeaker is heard more weakly". Drop that sentence or rephrase it as outside the stated model.
-- s7 c "Perustele a- ja b-kohdan tuloksilla" points at the path-difference versus wavelength comparison; acceptable scaffolding, a bare "Justify" would be more exam-like.
-- s7 d: tasks.json value 687 Hz, solution and rubric state about 690 Hz; tolerance covers both, but keep one form.
-- s8 c: the units_precision row also carries the reasonableness check; label it accordingly.
-- s8 d: "nodes cannot be at both ends" and "small amplitude" are loose; "no resonance, small amplitude, no clear nodes" is more exact.
+- Box 1 (pillin sävel): the paragraph above gives the answer almost word for word ("sama taajuus säilyy", "aallonpituus kasvaa"). It checks reading, not understanding. Sharper: "Pilli värähtelee 3,0 kHz. Mikä on taajuus vedessä, ja kasvaako vai pieneneekö aallonpituus?" so the student has to use v = fλ. It sits after the figure, which is fine because the figure belongs to that paragraph.
+- Box 3 (Doppler) comes after a paragraph that states only conditions, not the direction of the shift. It is answerable from the kaavat block above plus FY5 knowledge, and the answer explains through the denominator. Good, but a student who has not read the formulas on a phone may guess. Acceptable.
+- Box 2 (interferenssi) sits between the interference paragraph and the standing-wave paragraph. That is the right place. The answer ties n = 0 to the half-wavelength condition. Good.
+- Titles and text of the Sovella tasks "Seisova aalto narussa" (s8), "Heilurin jaksonaika ja putoamiskiihtyvyys" (s3) and "Kaksi kaiutinta pihalla" name the model. The s8 body says "seisovana aaltona". This is unchanged from the version that passed, and the unit is a review unit. A later pass could use neutral titles ("Naru täryttäjässä").
+- I could not check the render of the pysahdy boxes (whether the answer is closed until the student acts, and the tap target on a phone). No capture was in the packet.
 
 ## Checked
-- Task texts name no solution structure (no interference condition, no L = n lambda/2); grid reading, wavelength, comparison and next maximum emerge from the parts.
-- Solutions follow rule 7: given, find, principle, formula first, conversions, substitution, rounded answer with sf reason, reasonableness; figure reading shown; common mistakes realistic.
-- Rubrics fair: points sum to part points (s7 4+2+3+3, s8 3+3+4+3), alternative routes listed under accepted answers, wrong-model answers not rewarded.
-- Figures fy5-12/ruudukko-tehtava (0,50 m squares, S1 to P 12, S1-S2 5) and fy5-13/kuvio-tehtava (1,20 m, four loops) match the numbers, symbols and names in text and solutions; answers.py values agree (6,0; 6,5; 0,50; 1,00; 687; 0,600; 30; 37,5; 12,5, 25).
-- Changed intro: eight tasks, correct scope (oscillations, waves, sound), clear exam-style instructions.
-- Translation fidelity checked against fi for s7, s8 and intro: numbers, criteria and points identical.
+- Three pysahdy boxes, each with a question and an answer behind `---`. Each is short, each tests the paragraph or formula block just before it, and none needs new material.
+- None gives an unexplained answer. The question comes first and the answer carries the reason, not only the result.
+- The count and spacing are right for a 75-minute review unit (no wall of text). The earlier Ydinajatus paragraphs are under 120 words.
+- Hero and ominais figures changed to webp images with the labels still in LaTeX (foreignObject). The aria-label descriptions stay and carry the content.
+- Task set: 8 tasks, 120 points, a mix of calculation, graph, word and data parts. The set has authentic, unfamiliar situations (bat, bungee, festival, speakers), and parts rise in demand. The teacher.md point totals match (20 + 5×15 + 12 + 13 = 120). practice.py check is OK.
+- Solution text edits in inquiry.json only split paragraphs; the content is unchanged.
