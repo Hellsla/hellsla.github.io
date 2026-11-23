@@ -78,9 +78,8 @@ $$. Nopeus on paljon pienempi kuin valon nopeus, kuten pienellä punasiirtymäll
 
 **Periaate:** Taustasäteily on sähkömagneettista säteilyä, jonka energia on kvantittunut fotoneiksi (luku *Valosähköinen ilmiö ja fotoni*). Fotonin energia on kääntäen verrannollinen sen aallonpituuteen.
 
-**Kaava:** $$
+**Kaava:** $E = hf$ ja $$
 \begin{aligned}
-&E = hf \\
 &f = \frac{c}{\lambda} \\
 &E = h\,\frac{c}{\lambda} \\
 &= \frac{hc}{\lambda}
@@ -110,9 +109,8 @@ $$
 
 **Periaate:** Viivan siirtymästä saadaan punasiirtymä $z$ ja siitä etääntymisnopeus $v = cz$, koska punasiirtymä on pieni. Hubblen ja Lemaîtren lain mukaan nopeus on verrannollinen etäisyyteen, joten etäisyys on nopeus jaettuna Hubblen vakiolla.
 
-**Kaava:** $$
+**Kaava:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ ja $$
 \begin{aligned}
-&z = \frac{\lambda - \lambda_0}{\lambda_0} \\
 &v = c\,z \\
 &v = H_0\,d \\
 &d = \frac{v}{H_0} \\
@@ -136,9 +134,8 @@ $$
 
 **Periaate:** Jos laajenemisnopeus on pysynyt samana, galaksi, joka on nyt etäisyydellä $d$ ja loittonee nopeudella $v = H_0\,d$, oli samassa paikassa kuin me ajan $t = \tfrac{d}{v}$ sitten. Etäisyys supistuu, joten aika on sama kaikille galakseille.
 
-**Kaava:** $$
+**Kaava:** $t = \frac{d}{v}$ ja $$
 \begin{aligned}
-&t = \frac{d}{v} \\
 &v = H_0\,d \\
 &t = \frac{d}{H_0\,d} \\
 &= \frac{1}{H_0}
@@ -160,9 +157,8 @@ $$
 
 **Periaate:** Laajeneminen on venyttänyt jokaisen aallonpituuden $1100$-kertaiseksi, joten vapautuessaan aallonpituus oli $1100$ kertaa lyhyempi kuin nyt. Fotonin energia saadaan aallonpituudesta, kuten luvussa *Valosähköinen ilmiö ja fotoni*.
 
-**Kaava:** $$
+**Kaava:** $\lambda = \frac{\lambda_\text{nyt}}{1100}$ ja $$
 \begin{aligned}
-&\lambda = \frac{\lambda_\text{nyt}}{1100} \\
 &E = hf \\
 &f = \frac{c}{\lambda} \\
 &E = \frac{hc}{\lambda} \\
@@ -195,9 +191,8 @@ Kun lämpötila laski noin $3000\,\text{K}$:iin, niitä oli liian vähän, elekt
 
 **Periaate:** Hubblen ja Lemaîtren lain mukaan kaikilla galakseilla on sama Hubblen vakio, joten nopeuden ja etäisyyden suhde on sama: kuinka monta kertaa nopeammin galaksi loittonee, niin monta kertaa kauempana se on. Galaksien oma liike jätetään huomiotta.
 
-**Kaava:** $$
+**Kaava:** $v = H_0\,d$ ja $$
 \begin{aligned}
-&v = H_0\,d \\
 &H_0 = \frac{v_\text{A}}{d_\text{A}} \\
 &H_0 = \frac{v_\text{B}}{d_\text{B}} \\
 &\frac{v_\text{B}}{d_\text{B}} = \frac{v_\text{A}}{d_\text{A}} \\
@@ -220,9 +215,8 @@ $$
 
 **Periaate:** Koska protonin ja neutronin massat oletetaan yhtä suuriksi, massaosuus on sama kuin nukleonien osuus. Jokaista heliumytimen kahta neutronia kohti heliumytimeen tarvitaan kaksi protonia, joten heliumissa on kaksinkertainen määrä nukleoneja neutroneihin verrattuna. Nukleonien kokonaismäärä ei muutu fuusiossa.
 
-**Kaava:** Olkoon $m$ nukleonin massa. $$
+**Kaava:** Olkoon $m$ nukleonin massa. $m_\text{He} = 2n\,m$ ja $$
 \begin{aligned}
-&m_\text{He} = 2n\,m \\
 &m_\text{yht} = (n + p)\,m \\
 &Y = \frac{m_\text{He}}{m_\text{yht}} \\
 &= \frac{2n}{n + p}
@@ -244,9 +238,8 @@ $$
 
 **Periaate:** Fuusiossa vapautuu energiaa, kun syntyvä ydin on lähtöytimiä tiiviimmin sidottu ja siksi kevyempi kuin ne yhteensä (luku *Massavaje ja ytimen sidosenergia*). Atomimassat käyvät, koska elektroneja on molemmin puolin kuusi.
 
-**Kaava:** $$
+**Kaava:** $Q = \Delta m\,c^2$ ja $$
 \begin{aligned}
-&Q = \Delta m\,c^2 \\
 &\Delta m = m_\text{alku} - m_\text{loppu} \\
 &\Delta m = 3\,m_\text{He} - m_\text{C} \\
 &Q = (3\,m_\text{He} - m_\text{C})\,c^2
@@ -268,9 +261,8 @@ $$
 
 **Periaate:** Punasiirtymässä jokainen aallonpituus kasvaa samassa suhteessa, joten viivojen järjestys säilyy: lyhin vastaa lyhintä ja pisin pisintä. Parit tarkistetaan suhteella: $\tfrac{447{,}2}{434{,}0} = 1{,}030$, $\tfrac{500{,}9}{486{,}1} = 1{,}030$ ja $\tfrac{676{,}2}{656{,}3} = 1{,}030$. Suhde on sama, joten parit ovat oikein, ja $z = 0{,}030$ on pieni, joten $v = cz$. Etäisyys saadaan Hubblen ja Lemaîtren laista. Tarkimmin $z$ saadaan pisimmästä viivasta, jonka siirtymä on suurin.
 
-**Kaava:** $$
+**Kaava:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ ja $$
 \begin{aligned}
-&z = \frac{\lambda - \lambda_0}{\lambda_0} \\
 &v = c\,z \\
 &v = H_0\,d \\
 &d = \frac{v}{H_0} \\
@@ -336,9 +328,8 @@ Supernovat eivät selitä sitä, koska ne ovat yksittäisiä tapahtumia eivätk�
 
 **Kuvaajan lukeminen:** Piirretään vaaka-akselille $d$ ($0\text{–}250\,\text{Mpc}$) ja pystyakselille $v$ ($0\text{–}17\,000\,\text{km/s}$) ja merkitään yhdeksän pistettä. Sovitettu origon kautta kulkeva suora kulkee esimerkiksi pisteen $(200\,\text{Mpc}, 13\,700\,\text{km/s})$ kautta, ja sen kulmakerroin on $\dfrac{13\,700\,\text{km/s}}{200\,\text{Mpc}} = 68{,}5\,\tfrac{\text{km/s}}{\text{Mpc}}$. Silmällä sovitettu suora antaa noin $65$–$72\,\tfrac{\text{km/s}}{\text{Mpc}}$. Tarkista kuvaajasi: suoran tulee kulkea origon kautta.
 
-**Kaava:** Laki ja suoran kulmakerroin; alin rivi on laskennallinen pienimmän neliösumman sovitus origon kautta: $$
+**Kaava:** $v = H_0\,d$. Kulmakerroin kuvaajasta ja laskennallinen pienimmän neliösumman sovitus origon kautta: $$
 \begin{aligned}
-&v = H_0\,d \\
 &H_0 = \frac{\Delta v}{\Delta d} \\
 &H_0 = \frac{\sum d\,v}{\sum d^{2}}
 \end{aligned}
@@ -360,9 +351,8 @@ b) Suora antaa etäisyydellä $28\,\text{Mpc}$ nopeuden $68{,}45 \cdot 28\,\text
 
 **Periaate:** Oppilaan punasiirtymä $z$ ja nopeus $v = c\,z$ ovat oikein, koska $z$ on pieni. Virhe on viimeisessä vaiheessa: Hubblen ja Lemaîtren laki on $v = H_0\,d$, joten etäisyys saadaan jakamalla nopeus Hubblen vakiolla, ei kertomalla. Kertolasku antaa yksikön $\tfrac{\text{km}^2}{\text{s}^2\,\text{Mpc}}$, joka ei ole etäisyyden yksikkö.
 
-**Kaava:** $$
+**Kaava:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ ja $$
 \begin{aligned}
-&z = \frac{\lambda - \lambda_0}{\lambda_0} \\
 &v = c\,z \\
 &v = H_0\,d \\
 &d = \frac{v}{H_0}
@@ -442,9 +432,8 @@ Keskustan lähellä, kohdissa $2\,\text{kpc}$ ja $5\,\text{kpc}$, suhde on $\tfr
 
 **Periaate:** Valon aallonpituus on venynyt samassa suhteessa kuin avaruus, joten venymiskerroin on $k = \tfrac{\lambda}{\lambda_0} = 1 + z$. Kaava $v = c\,z$ on likiarvo vain pienellä punasiirtymällä, noin $z < 0{,}1$. Taustasäteilyn lämpötila oli silloin $k$ kertaa nykyinen. Sääntö täsmää: $2{,}725\,\text{K} \cdot 1100 \approx 3000\,\text{K}$.
 
-**Kaava:** $$
+**Kaava:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ ja $$
 \begin{aligned}
-&z = \frac{\lambda - \lambda_0}{\lambda_0} \\
 &k = 1 + z \\
 &T = k\,T_\text{nyt} \\
 &T = (1 + z)\,T_\text{nyt}
@@ -476,9 +465,8 @@ $$.
 
 **Kuvaajan lukeminen:** Suora kulkee origon ja ruudukon pisteen $(250\,\text{Mpc}, 18\,000\,\text{km/s})$ kautta, joten sen kulmakerroin on $H_0 = \dfrac{18\,000\,\text{km/s}}{250\,\text{Mpc}} = 72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}}$.
 
-**Kaava:** $$
+**Kaava:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ ja $$
 \begin{aligned}
-&z = \frac{\lambda - \lambda_0}{\lambda_0} \\
 &v = c\,z \\
 &v = H_0\,d \\
 &d = \frac{v}{H_0} \\
@@ -507,9 +495,8 @@ c) $d = \dfrac{v}{H_0} = \dfrac{10\,569\,\text{km/s}}{72{,}0\,\tfrac{\text{km/s}
 
 **Kuvaajan lukeminen:** Suora kulkee origon ja ruudukon pisteen $(250\,\text{Mpc}, 18\,000\,\text{km/s})$ kautta, joten $H_0 = \dfrac{18\,000\,\text{km/s}}{250\,\text{Mpc}} = 72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}}$. Suoran nopeus $0{,}10\,c = 2{,}998 \cdot 10^{4}\,\text{km/s}$ on kuvan yläreunaa $21\,000\,\text{km/s}$ suurempi, joten kohta jää kuvan ulkopuolelle.
 
-**Kaava:** $$
+**Kaava:** $v = H_0\,d$ ja $$
 \begin{aligned}
-&v = H_0\,d \\
 &d = \frac{v}{H_0} \\
 &v = 0{,}10\,c \\
 &d = \frac{0{,}10\,c}{H_0}
