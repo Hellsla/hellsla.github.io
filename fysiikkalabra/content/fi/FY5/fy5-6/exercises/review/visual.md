@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 85c0512b54a20440
+CONTENT-HASH: 6686402cbc67b037
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] solutions.md Kaava blocks of 6-8, 6-10 and similar — the first row `r = R + h` or `\Sigma F = ma_\text{n}` and the rows with fractions sit at very different widths, so the `=` column is far from the left edge; readable, optional.
 
 ## Checked
-- Round 1, delta: solutions.md only; long solution paragraphs split in two, words unchanged. Hash re-run at the end: unchanged.
-- Captures: fy5-6-open-exercises-1280-7 (L1-06, centrifugal-force paragraph), fy5-6-open-exercises-L3-1280-5 (L3-04, planet table task and its solution start).
-- Layout survived at 1280 px: reading column, solution panels, formula boxes, spacing between the new paragraphs even; no clipping. Units upright, decimal commas, LaTeX intact.
-- Finnish: the splits fall at sentence boundaries, the second paragraph reads on from the first without a connective being lost.
+- Captures (content/fi/FY5/fy5-6/review/shots, current for this hash): open-exercises-L3-1280-3 (6-row Kaava with roots, Muunnokset, Sijoitus), L2-1280-5 (5-row Kaava, Sijoitus), L3-1280-8 (7-row Kepler Kaava with `a)` label and Periaate inline formulas).
+- Rows align at `=`, KaTeX clean, nested roots and fractions legible, no clipping or overflow; Sijoitus and answers unchanged. Picture radat (teacher-approved, carried) not opened.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
