@@ -387,7 +387,7 @@ The ratio $35 : 10 = 3.5$ is a coefficient of performance and not an efficiency:
 - *Escaping air.* When the pump is detached, and through the valve, air escapes before the weighing, so $\Delta m$ is too small and the result too small.
 - *The volume of the bottle.* The marking $1.5\,\textsf{l}$ is the volume of the drink. The bottle is slightly larger and bulges under pressure, so the real $\Delta n$ is larger than calculated. This increases the calculated result, so it does not explain the value that is too small.
 
-The resolution of the scale, $0.01\,\text{g}$, is less than $1\,\%$ of the increase in mass $3.28\,\text{g}$, so it is not significant. The errors of the temperature and the gauge are each about $5$–$7\,\%$, so the uncertainty is of the same order of magnitude as the difference from the table value. The measurement does not show the table value to be wrong.
+The resolution of the scale, $0.01\,\text{g}$, is less than $1\,\%$ of the increase in mass $3.28\,\text{g}$, so it is not significant. The errors of the temperature and the gauge are each about $5\,\%$, so the uncertainty is of the same order of magnitude as the difference from the table value. The measurement does not show the table value to be wrong.
 
 ### c)
 **Find:** an experimental plan that gives the molar mass of air more reliably

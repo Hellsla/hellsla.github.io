@@ -6,7 +6,7 @@
 - **25–35 min, Theory summary.** Go through the recognition chart and ask the students for one example for each row. Return to Think about it.
 - **35–55 min, Apply.** Four multiple-choice questions in pairs (about $6\,\text{min}$), then four calculations individually. Fast students continue without hints, students who need more support use the hints one at a time.
 - **55–65 min, Check your understanding and exit ticket.** Individually. The explanation task is self-assessed with the criteria.
-- **65–75 min, Problems.** Ten minutes is enough for the start of one long problem in exam conditions, without the model answer: recommended *The wood chip power plant* a–b (a calculation problem) or *The pumped-storage plant in the mine* a–b (combining modules). The rest of the problem and the other five problems are homework, two or three at a time before the next lesson.
+- **65–75 min, Problems.** Ten minutes is enough for the start of one long problem in exam conditions, without the model answer: recommended *The wood chip power plant* a–b (a calculation problem) or *The pumped-storage plant in the mine* a–b (combining modules). The rest of the problem and the other eight problems are homework, two or three at a time before the next lesson.
 
 ## Using the starting-level test
 The Predict questions are a diagnostic test, not a grade. Each question corresponds to one chapter:
@@ -29,4 +29,4 @@ If more than a third of the group answers questions 2 or 3 wrongly, go through p
 - **Students who need more support** do the Apply calculations *The electric sauna stove* and *The pellet boiler* with hints and leave *From fuel to wheels* for home. The *Review if needed* links of the theory summary lead straight to the original chapters, which have basic-level exercises.
 
 ## Assessment
-The long problems are self-assessed with the scoring guide. If the teacher assesses them, the same criteria work: in a calculation part the justification of the principle, the symbolic solution, unit conversions by substitution, precision and reasonableness; in a written part the evaluation of the claim with the numbers of the data. All data are invented examples, not statistics.
+The long problems are self-assessed with the scoring guide. If the teacher assesses them, the same criteria work: in a calculation part the justification of the principle, the symbolic solution, unit conversions by substitution, precision and reasonableness; in a written part the evaluation of the claim with the numbers of the data. The data of problem 7 (*Why does the range of an electric car shrink in frost?*) are real: the winter test of NAF and Motor magazine (checked 16 Nov 2026), whose result page opens from the link in the problem. The situations and numbers of the other eight problems are invented examples, not statistics.

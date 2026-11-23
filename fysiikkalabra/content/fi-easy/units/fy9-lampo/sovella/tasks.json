@@ -356,7 +356,7 @@
             {
               "key": "error_sources",
               "points": 2,
-              "detail": "Yhden mittauksen laskussa oletetaan, että koko teho höyrystää vettä. Todellisuudessa noin $70\\,\\text{W}$ johtuu huoneeseen. Silloin energiaa on laskettu liikaa, ja tulos on noin $12\\,\\%$ liian suuri."
+              "detail": "Yhden mittauksen laskussa oletetaan, että koko teho höyrystää vettä. Todellisuudessa noin $70\\,\\text{W}$ johtuu huoneeseen. Silloin energiaa on laskettu liikaa, ja tulos on noin $13\\,\\%$ liian suuri."
             },
             {
               "key": "conclusion",

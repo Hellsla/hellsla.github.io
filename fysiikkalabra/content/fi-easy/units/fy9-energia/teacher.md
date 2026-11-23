@@ -6,7 +6,7 @@
 - **25–35 min, Teoriatiivistelmä.** Käy tunnistuskaavio läpi. Kysy opiskelijoilta yksi esimerkki jokaisesta rivistä. Palaa Pohdintaan.
 - **35–55 min, Sovella.** Neljä monivalintaa pareittain (noin $6\,\text{min}$), sitten neljä laskua yksin. Nopeat jatkavat ilman vihjeitä. Hitaammat käyttävät vihjeitä yksi kerrallaan.
 - **55–65 min, Tarkista osaamisesi ja exit ticket.** Yksin. Opiskelija arvioi selitystehtävän itse kriteerien avulla.
-- **65–75 min, Tehtävät.** Kymmenessä minuutissa ehtii aloittaa yhden pitkän tehtävän koeolosuhteissa, ilman mallivastausta. Suositus: *Hakevoimala* a–b (laskutehtävä) tai *Kaivoksen pumppuvoimala* a–b (yhdistää moduuleja). Tehtävän loppu ja muut viisi tehtävää ovat kotitehtäviä, kaksi tai kolme kerrallaan ennen seuraavaa tuntia.
+- **65–75 min, Tehtävät.** Kymmenessä minuutissa ehtii aloittaa yhden pitkän tehtävän koeolosuhteissa, ilman mallivastausta. Suositus: *Hakevoimala* a–b (laskutehtävä) tai *Kaivoksen pumppuvoimala* a–b (yhdistää moduuleja). Tehtävän loppu ja muut kahdeksan tehtävää ovat kotitehtäviä, kaksi tai kolme kerrallaan ennen seuraavaa tuntia.
 
 ## Lähtötasotestin käyttö
 Ennusta-kysymykset ovat diagnostinen testi. Niistä ei anneta arvosanaa. Jokainen kysymys vastaa yhtä lukua:
@@ -30,4 +30,4 @@ Jos yli kolmannes ryhmästä vastaa väärin kysymykseen 2 tai 3, käy teho ja e
 - **Suomi toisena kielenä.** Tämä selkosuomen versio näyttää alussa luvun tärkeät käsitteet. Käy ne läpi ennen Ennusta-vaihetta. Pyydä opiskelijoita käyttämään käsitteitä omissa vastauksissaan, erityisesti sanoja teho, kilowattitunti ja hyötysuhde.
 
 ## Arviointi
-Opiskelijat arvioivat pitkät tehtävät itse pisteytyksen avulla. Jos opettaja arvioi niitä, samat kriteerit toimivat. Laskukohdassa arvioidaan periaatteen perustelu, symbolinen ratkaisu, yksikkömuunnokset sijoittamalla, tarkkuus ja järkevyys. Sanallisessa kohdassa arvioidaan, miten opiskelija arvioi väitettä aineiston lukujen avulla. Kaikki aineistot ovat keksittyjä esimerkkejä, eivät tilastoja.
+Opiskelijat arvioivat pitkät tehtävät itse pisteytyksen avulla. Jos opettaja arvioi niitä, samat kriteerit toimivat. Laskukohdassa arvioidaan periaatteen perustelu, symbolinen ratkaisu, yksikkömuunnokset sijoittamalla, tarkkuus ja järkevyys. Sanallisessa kohdassa arvioidaan, miten opiskelija arvioi väitettä aineiston lukujen avulla. Tehtävän 7 (*Miksi sähköauton toimintamatka lyhenee pakkasessa?*) aineisto on oikea: NAF:n ja Motor-lehden talvitesti (tarkistettu 16.11.2026). Sen tulossivu avautuu tehtävän linkistä. Muiden kahdeksan tehtävän tilanteet ja luvut ovat keksittyjä esimerkkejä, eivät tilastoja.

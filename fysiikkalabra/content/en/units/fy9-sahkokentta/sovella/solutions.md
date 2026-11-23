@@ -575,7 +575,7 @@ E &= \dfrac{250\,\text{V} - 50\,\text{V}}{0.050\,\text{m} - 0.010\,\text{m}} \\
 \end{aligned}
 $$
 **Answer:** $E = 5.0\,\text{kV/m}$. The field points from the positive plate to the negative plate, because the potential decreases in that direction: against the $x$ axis. The result has two significant figures, like the values read from the graph.
-**Reasonableness:** Over the whole gap $250\,\text{V} : 0.050\,\text{m}$ = $5.0\,\text{kV/m}$, the same result, as it must be in a uniform field. The field is far smaller than the breakdown field of air, about $3\,\text{MV/m}$.
+**Reasonableness:** Over the whole gap $250\,\text{V} : 0.050\,\text{m}$ = $5.0\,\text{kV/m}$, the same result, as it must be in a uniform field. The plates are in a vacuum, so the breakdown of air does not limit the field. For comparison, the field is only about $0.2\,\%$ of the breakdown field of air, about $3\,\text{MV/m}$, so it is easy to produce.
 
 ### b)
 **Given:** $E = 5.0\,\text{kV/m}$ from part a; the charge of the alpha particle is $q = +2e = 2 \cdot 1.602 \cdot 10^{-19}\,\text{C}$ and its mass is $m = 6.645 \cdot 10^{-27}\,\text{kg}$; only the electric force acts
@@ -595,7 +595,7 @@ a &= \dfrac{1.602 \cdot 10^{-15}\,\text{N}}{6.645 \cdot 10^{-27}\,\text{kg}} \\
 \end{aligned}
 $$
 **Answer:** $a \approx 2.4 \cdot 10^{11}\,\text{m/s}^2$, in the direction of the field, that is towards the negative plate ($x$ decreases). Two significant figures, like the field strength.
-**Reasonableness:** The weight of the particle $mg \approx 6.5 \cdot 10^{-26}\,\text{N}$ is about $2 \cdot 10^{10}$ times smaller than the electric force, so gravity can be ignored. The large acceleration is due to the small mass of the particle.
+**Reasonableness:** The weight of the particle $mg \approx 6.5 \cdot 10^{-26}\,\text{N}$ is about $2.5 \cdot 10^{10}$ times smaller than the electric force, so gravity can be ignored. The large acceleration is due to the small mass of the particle.
 
 ### c)
 **Given:** the alpha particle starts from rest at $x = 4.0\,\text{cm}$; $q = 2e$ and $m$ as in part b; only the electric force does work

@@ -413,7 +413,7 @@
           "points": 5,
           "text": "According to the manufacturer the string withstands a force of at most $8.0\\,\\text{N}$. What is the shortest period at which the platform may be turned with this cart and distance? Assess how reliable the prediction is.",
           "answer": {
-            "value": 0.4948,
+            "value": 0.4937,
             "unit": "s",
             "tolerance": 0.04
           },
@@ -1188,7 +1188,7 @@
               "detail": "$H \\approx 331\\,\\text{N}$ away from the wall and $V \\approx 14.7\\,\\text{N}$ upwards."
             },
             {
-              "text": "Calculates the magnitude from the components: $$\n\\begin{aligned}\nF_\\text{s} &= \\sqrt{H^2 + V^2} \\\\\n&\\approx 332\\,\\text{N}\n\\end{aligned}\n$$.",
+              "text": "Calculates the magnitude from the components: $$\n\\begin{aligned}\nF_\\text{s} &= \\sqrt{H^2 + V^2} \\\\\n&= 331.7\\,\\text{N}\n\\end{aligned}\n$$.",
               "tag": "math",
               "points": 1
             },

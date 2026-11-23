@@ -356,7 +356,7 @@
       {
        "key": "error_sources",
        "points": 2,
-       "detail": "Yhden mittauksen laskussa koko teho oletetaan höyrystämiseen, vaikka noin $70\\,\\text{W}$ johtuu huoneeseen. Silloin energiaa on laskettu liikaa, ja tulos on liian suuri, noin $12\\,\\%$."
+       "detail": "Yhden mittauksen laskussa koko teho oletetaan höyrystämiseen, vaikka noin $70\\,\\text{W}$ johtuu huoneeseen. Silloin energiaa on laskettu liikaa, ja tulos on liian suuri, noin $13\\,\\%$."
       },
       {
        "key": "conclusion",

@@ -356,7 +356,7 @@
             {
               "key": "error_sources",
               "points": 2,
-              "detail": "The calculation from one measurement assumes that all the power goes into vaporisation, although about $70\\,\\text{W}$ is conducted to the room. The energy is then overestimated, and the result is too large, by about $12\\,\\%$."
+              "detail": "The calculation from one measurement assumes that all the power goes into vaporisation, although about $70\\,\\text{W}$ is conducted to the room. The energy is then overestimated, and the result is too large, by about $13\\,\\%$."
             },
             {
               "key": "conclusion",

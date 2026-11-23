@@ -458,7 +458,7 @@ Se on henkilöautoa maantienopeudessa vastustavien voimien suuruusluokkaa.
 Lämmitykseen ja akun sisäenergiaksi kulunut energia sekä suurempi työ vastusvoimia vastaan otetaan kaikki samasta akusta. Jokainen kilometri vaatii siksi akusta enemmän energiaa kuin leudolla säällä, ja kylmästä akusta energiaa saadaan vähemmän, joten toimintamatka lyhenee.
 
 ### d)
-**Kysytty:** miksi pisimmälle ajaneen auton suurimmasta poikkeamasta ei voi päätellä, että auto kestäisi pakkasta muita huonommin
+**Kysytty:** miksi pisimmälle ajaneen auton poikkeamasta ($45{,}8\,\%$, yksi testin suurimmista) ei voi päätellä, että auto kestäisi pakkasta muita huonommin
 **Periaate:** Kahta mittaustulosta voi verrata vain, jos ne on mitattu samoissa olosuhteissa. Jos olosuhteet muuttuvat samalla kuin tutkittava kohde, erosta ei voi päätellä, kumpi sen aiheutti (luku *Mittaaminen ja mittauksen luotettavuus*).
 **Mallivastaus:** Autot eivät ajaneet samoissa olosuhteissa. Aineiston mukaan (tarkistettu 16.11.2026) lämpötila laski reitin varrella Oslon noin $-7\,{}^\circ\text{C}$:sta Folldalin $-32\,{}^\circ\text{C}$:seen. Lyhyen toimintamatkan Hyundai Inster pysähtyi jo kohdassa, jossa oli $-16\,{}^\circ\text{C}$, joten se ajoi koko matkansa reitin leudommassa alkupäässä.
 
@@ -505,7 +505,7 @@ E_\text{mek,C} &= 0\,\text{J} + 500\,\text{J} = 500\,\text{J} \\
 \end{aligned}
 $$
 **Vastaus:** Sisäenergiaa on syntynyt $100\,\text{J}$ matkalla A–B ja $200\,\text{J}$ matkalla A–C.
-**Järkevyys:** Mekaaninen energia pienenee kohdasta toiseen ($700\,\text{J}$, $600\,\text{J}$, $500\,\text{J}$), eikä se koskaan kasva, kuten kitkallisessa radassa kuuluukin. Sisäenergiaa syntyy suunnilleen yhtä paljon kummallakin osamatkalla, mikä sopii kitkan tasaiseen vaikutukseen radalla.
+**Järkevyys:** Mekaaninen energia pienenee kohdasta toiseen ($700\,\text{J}$, $600\,\text{J}$, $500\,\text{J}$), eikä se koskaan kasva, kuten kitkallisessa radassa kuuluukin. Sisäenergiaa syntyy $100\,\text{J}$ sekä osuudella A–B että osuudella B–C. Osuuksien pituuksia ei tiedetä, joten kuvasta ei voi päätellä, onko kitka ollut koko radalla yhtä suuri.
 
 ### b)
 **Annettu:** $E_\text{k,C} = 500\,\text{J}$ kuvasta, massa $m = 45\,\text{kg}$
