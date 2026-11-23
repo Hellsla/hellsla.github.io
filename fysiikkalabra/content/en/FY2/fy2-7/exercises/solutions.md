@@ -146,7 +146,7 @@ District heating network: $E_\text{loss} = 0.090 \cdot 300\,\text{MWh}$, so $E_\
 
 The loss of the electricity grid, $40\,\text{MWh}$, is larger than that of the district heating network, $27\,\text{MWh}$, even though the loss percentage of the district heating network is more than double.
 
-The lost energy is transferred as heat to the surroundings: in the electricity grid it has first been converted into internal energy in the wires, in the district heating network it passes from the hot water through the pipes. Energy does not disappear.
+The lost energy is transferred as heat to the surroundings: in the electricity grid it has first been converted into thermal energy in the wires, in the district heating network it passes from the hot water through the pipes. Energy does not disappear.
 
 ## fy2-7-L3-01
 **Given:** energy needed at the destination $E_\text{arrived} = 600\,\text{MWh}$; loss before $9.0\,\%$ and after $6.0\,\%$ of the sent energy
@@ -278,10 +278,10 @@ $$ times smaller. The result is smaller than $0.25\,\text{MW}$ but positive, as 
 
 ## fy2-7-L2-07
 **Find:** which answer corrects the claim “electricity travels at the speed of light, so there are no losses”.
-**Principle:** The transmission loss occurs when current heats the conductors: part of the electrical energy is converted into internal energy of the conductors, which is transferred as heat to the surroundings. The loss does not depend on how fast the energy is transferred. Energy also does not disappear but is converted into a form that is useless to the user.
+**Principle:** The transmission loss occurs when current heats the conductors: part of the electrical energy is converted into thermal energy of the conductors, which is transferred as heat to the surroundings. The loss does not depend on how fast the energy is transferred. Energy also does not disappear but is converted into a form that is useless to the user.
 **Model answer:** The claim is wrong, because speed does not tell about losses. The current heats the conductor, and this heat does not reach the user, so less energy arrives than is sent.
 
-The loss is not the disappearance of energy: electrical energy is converted into internal energy of the conductor, which is transferred as heat to the surroundings.
+The loss is not the disappearance of energy: electrical energy is converted into thermal energy of the conductor, which is transferred as heat to the surroundings.
 
 About $4\,\%$ of the sent energy is lost in the electricity grid, and that is why a high voltage, which reduces the current, reduces the loss.
 
