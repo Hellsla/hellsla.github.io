@@ -32,7 +32,21 @@
 **Given:** the energy of the gamma photon $E_\gamma = 59.54\,\text{keV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{keV} = 1000\,\text{eV}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the wavelength $\lambda$ of the photon in picometres
 **Principle:** Gamma radiation is electromagnetic radiation, so the energy of a photon is $\tfrac{hc}{\lambda}$, as for a photon of visible light.
-**Formula:** $E_\gamma = \dfrac{hc}{\lambda}$, from which $\lambda = \dfrac{hc}{E_\gamma}$
+**Formula:** Photon energy $E_\gamma = hf$ and the wave relation $c = f\lambda$, so: $$
+\begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\gamma &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\gamma}
+\end{aligned}
+$$
+\begin{aligned}
+E_\gamma &= hf \\
+c &= f\lambda \\
+E_\gamma &= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\gamma}
+\end{aligned}
+$$
 **Conversions:** $E_\gamma = 59.54\,\text{keV} = 59.54 \cdot 1000 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 9.5383 \cdot 10^{-15}\,\text{J}$; finally $1\,\text{m} = 10^{12}\,\text{pm}$.
 **Substitution:** The product $$
 \begin{aligned}
@@ -88,7 +102,24 @@ In beta plus decay a proton changes into a neutron, so the atomic number decreas
 **Given:** the levels of nickel-60 $E_\text{u} = 2505.8\,\text{keV}$ and $E_\text{l} = 1332.5\,\text{keV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{keV} = 1000\,\text{eV}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the wavelength $\lambda$ of the gamma photon in picometres
 **Principle:** The energy of a nucleus is quantised. Energy is conserved, so the energy of the photon that leaves in a transition is the difference between the levels, as in transitions of an atom, and the energy of a photon is $\tfrac{hc}{\lambda}$.
-**Formula:** $\dfrac{hc}{\lambda} = E_\text{u} - E_\text{l}$, from which $\lambda = \dfrac{hc}{E_\text{u} - E_\text{l}}$
+**Formula:** Photon energy is the level difference $E_\gamma = E_\text{u} - E_\text{l}$, and $E_\gamma = hf$ and $c = f\lambda$, so: $$
+\begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\gamma &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\gamma} \\
+&= \frac{hc}{E_\text{u} - E_\text{l}}
+\end{aligned}
+$$
+\begin{aligned}
+E_\gamma &= E_\text{u} - E_\text{l} \\
+E_\gamma &= hf \\
+c &= f\lambda \\
+E_\gamma &= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\gamma} \\
+&= \frac{hc}{E_\text{u} - E_\text{l}}
+\end{aligned}
+$$
 **Conversions:** $$
 \begin{aligned}
 E_\text{u} - E_\text{l} &= 2505.8\,\text{keV} \\
@@ -125,7 +156,19 @@ The difference does not change the wavelength at three-figure precision. Its ene
 **Given:** the energy of the gamma photon $E_\gamma = 661.7\,\text{keV}$, the wavelength of green light $\lambda = 550\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{keV} = 1000\,\text{eV}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the ratio of the energies, how many times $E_\gamma$ is the energy $E_\text{g}$ of a green photon
 **Principle:** The energy of each photon depends only on its wavelength or frequency. The energy of the green photon is calculated from the wavelength, and the comparison is made with one division in the same unit.
-**Formula:** $E_\text{g} = \dfrac{hc}{\lambda}$, and the ratio asked for is $\dfrac{E_\gamma}{E_\text{g}} = \dfrac{E_\gamma \lambda}{hc}$
+**Formula:** Photon energy $E_\text{g} = hf$ and the wave relation $c = f\lambda$, so: $$
+\begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\text{g} &= hf \\
+&= \frac{hc}{\lambda}
+\end{aligned}
+$$ The ratio asked for is $\dfrac{E_\gamma}{E_\text{g}} = \dfrac{E_\gamma \lambda}{hc}$
+\begin{aligned}
+E_\text{g} &= hf \\
+c &= f\lambda \\
+E_\text{g} &= \frac{hc}{\lambda}
+\end{aligned}
+$$, and the ratio asked for is $\dfrac{E_\gamma}{E_\text{g}} = \dfrac{E_\gamma \lambda}{hc}$
 **Conversions:** $\lambda = 550\,\text{nm} = 550 \cdot 10^{-9}\,\text{m}$ and $E_\gamma = 661.7\,\text{keV} = 661.7 \cdot 1000\,\text{eV} = 661\,700\,\text{eV}$; the energy of the green photon is converted to electronvolts by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
 **Substitution:** The product $$
 \begin{aligned}
@@ -242,7 +285,20 @@ The correct answer is line 3.
 **Given:** the levels of the nucleus $0$, $0.40\,\text{MeV}$ and $1.00\,\text{MeV}$, the nucleus at first on the level $1.00\,\text{MeV}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{MeV} = 10^{6}\,\text{eV}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the shortest wavelength $\lambda_\text{min}$ seen in the gamma spectrum, in picometres
 **Principle:** The energy of every gamma photon is the difference between two levels. The possible transitions are $1.00 \to 0$ ($1.00\,\text{MeV}$), $1.00 \to 0.40$ ($0.60\,\text{MeV}$) and $0.40 \to 0$ ($0.40\,\text{MeV}$). Because $\lambda = \tfrac{hc}{E}$, the shortest wavelength comes from the greatest energy, that is, from the direct transition to the ground state.
-**Formula:** $\dfrac{hc}{\lambda_\text{min}} = E_\text{max}$, from which $\lambda_\text{min} = \dfrac{hc}{E_\text{max}}$
+**Formula:** Photon energy $E_\gamma = hf$ and the wave relation $c = f\lambda$, so: $$
+\begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\gamma &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\gamma}
+\end{aligned}
+$$ The shortest wavelength comes from the greatest energy, so $\lambda_\text{min} = \dfrac{hc}{E_\text{max}}$
+\begin{aligned}
+E_\gamma &= hf \\
+c &= f\lambda \\
+\lambda &= \frac{hc}{E_\gamma}
+\end{aligned}
+$$. The shortest wavelength comes from the greatest energy, so $\lambda_\text{min} = \dfrac{hc}{E_\text{max}}$
 **Conversions:** $E_\text{max} = 1.00\,\text{MeV} = 1.00 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.602 \cdot 10^{-13}\,\text{J}$; finally $1\,\text{m} = 10^{12}\,\text{pm}$.
 **Substitution:** The product $$
 \begin{aligned}
@@ -301,7 +357,21 @@ $$ there are two beta decays and one alpha decay.
 
 The greatest energy is the transition from the top level to the ground state, and every line has to be a difference between two levels. With the help of the lowest level $351.2\,\text{keV}$ the remaining levels can be solved uniquely. The missing transition is the one that is not in the table.
 
-**Formula:** $E_\gamma = E_\text{u} - E_\text{l}$ and $\lambda = \dfrac{hc}{E_\gamma}$
+**Formula:** Photon energy is the level difference $E_\gamma = E_\text{u} - E_\text{l}$, and $E_\gamma = hf$ and $c = f\lambda$, so: $$
+\begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\gamma &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\gamma}
+\end{aligned}
+$$
+\begin{aligned}
+E_\gamma &= E_\text{u} - E_\text{l} \\
+E_\gamma &= hf \\
+c &= f\lambda \\
+\lambda &= \frac{hc}{E_\gamma}
+\end{aligned}
+$$
 
 **Conversions:** $E_\text{m} = 1150.2\,\text{keV} = 1150.2 \cdot 1000 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.8427 \cdot 10^{-13}\,\text{J}$; finally $1\,\text{m} = 10^{12}\,\text{pm}$.
 
@@ -367,7 +437,24 @@ $$ is greater than $2158.6\,\text{keV}$.
 **Find:** the energies of levels A, B and C, the energy $E_\text{C}$ of the photon of a direct transition C $\to$ ground state and its wavelength $\lambda$ in picometres
 **Principle:** The energy of a gamma photon is the energy difference of two levels. A higher level is obtained by adding the energy of the transition photon to the lower level, and the levels have to explain all the observed peaks. The wavelength of a photon is obtained from its energy with $\lambda = hc/E$.
 **Reading the graph:** The figure has two peaks, $1173.2\,\text{keV}$ and $1332.5\,\text{keV}$. The figure does not show which of them is the transition A $\to$ ground state.
-**Formula:** $E_\text{A} = E_{\text{A} \to 0}$, $E_\text{B} = E_\text{A} + E_{\text{B} \to \text{A}}$, $E_\text{C} = E_\text{B} + E_{\text{C} \to \text{B}}$ and $\lambda = \dfrac{hc}{E_\text{C}}$
+**Formula:** Photon energy is the level difference $E_\gamma = E_\text{u} - E_\text{l}$, so $E_\text{u} = E_\text{l} + E_\gamma$. For the levels and the wavelength ($E_\text{C} = hf$, $c = f\lambda$): $$
+\begin{aligned}
+E_\text{A} &= E_{\text{A} \to 0} \\
+E_\text{B} &= E_\text{A} + E_{\text{B} \to \text{A}} \\
+E_\text{C} &= E_\text{B} + E_{\text{C} \to \text{B}} \\
+\lambda &= \frac{c}{f} \\
+&= \frac{hc}{E_\text{C}}
+\end{aligned}
+$$
+\begin{aligned}
+E_\text{A} &= E_{\text{A} \to 0} \\
+E_\text{B} &= E_\text{A} + E_{\text{B} \to \text{A}} \\
+E_\text{C} &= E_\text{B} + E_{\text{C} \to \text{B}} \\
+E_\text{C} &= hf \\
+c &= f\lambda \\
+\lambda &= \frac{hc}{E_\text{C}}
+\end{aligned}
+$$
 **Conversions:** $E_\text{C} = 2505.7\,\text{keV} = 2505.7 \cdot 1000 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 4.0141 \cdot 10^{-13}\,\text{J}$ and finally $1\,\text{m} = 10^{12}\,\text{pm}$.
 **Substitution:** a) Try A $\to$ ground state as the peak $1332.5\,\text{keV}$. Then $$
 \begin{aligned}

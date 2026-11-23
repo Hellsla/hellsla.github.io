@@ -21,7 +21,13 @@ $$
 **Given:** wavelength $\lambda = 1550\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the energy $E$ of one photon in electronvolts
 **Principle:** Light consists of photons, and the energy of one photon is inversely proportional to the wavelength of the light.
-**Formula:** $E = \dfrac{hc}{\lambda}$
+**Formula:** $$
+\begin{aligned}
+E &= hf \\
+f &= \dfrac{c}{\lambda} \\
+E &= \dfrac{hc}{\lambda}
+\end{aligned}
+$$
 **Conversions:** $\lambda = 1550\,\text{nm} = 1550 \cdot 10^{-9}\,\text{m}$. Finally joules to electronvolts by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
 **Substitution:** $E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1550 \cdot 10^{-9}\,\text{m}} = 1.2816 \cdot 10^{-19}\,\text{J} = \dfrac{1.2816 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} = 0.80000\,\text{eV}$, when $$
 \begin{aligned}
@@ -37,7 +43,14 @@ $$
 **Given:** energy difference of the levels of the laser transition $E_2 - E_1 = 1.79\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the wavelength $\lambda$ of the laser light in nanometres
 **Principle:** Energy is conserved: when an ion drops from the upper laser level to the lower, its energy decreases by the difference of the levels, and exactly this energy is carried away by one photon.
-**Formula:** $\dfrac{hc}{\lambda} = E_2 - E_1$, from which $\lambda = \dfrac{hc}{E_2 - E_1}$
+**Formula:** $$
+\begin{aligned}
+hf &= E_2 - E_1 \\
+f &= \dfrac{c}{\lambda} \\
+\dfrac{hc}{\lambda} &= E_2 - E_1 \\
+\lambda &= \dfrac{hc}{E_2 - E_1}
+\end{aligned}
+$$
 **Conversions:** $E_2 - E_1 = 1.79\,\text{eV} = 1.79 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 2.8676 \cdot 10^{-19}\,\text{J}$; finally $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** $$
 \begin{aligned}
@@ -56,7 +69,14 @@ $$
 **Given:** energy of the pulse $E = 3.0\,\text{mJ}$, wavelength $\lambda = 1064\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
 **Find:** the number of photons $N$ in the pulse
 **Principle:** All the photons of a laser are identical, so the energy of the pulse is the number of photons multiplied by the energy of one photon $\tfrac{hc}{\lambda}$.
-**Formula:** $E = N \cdot \dfrac{hc}{\lambda}$, from which $N = \dfrac{E\lambda}{hc}$
+**Formula:** $$
+\begin{aligned}
+E &= N \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+E &= N \cdot \dfrac{hc}{\lambda} \\
+N &= \dfrac{E\lambda}{hc}
+\end{aligned}
+$$
 **Conversions:** $E = 3.0\,\text{mJ} = 3.0 \cdot 10^{-3}\,\text{J}$ and $\lambda = 1064\,\text{nm} = 1064 \cdot 10^{-9}\,\text{m}$.
 **Substitution:** $$
 \begin{aligned}
@@ -85,7 +105,17 @@ $$
 **Given:** wavelength of the pump light $\lambda_\text{p} = 808\,\text{nm}$, wavelength of the laser light $\lambda_\text{L} = 1064\,\text{nm}$; one pump photon produces at most one laser photon
 **Find:** the greatest share $\eta$ of the energy of a pump photon that ends up as the energy of a laser photon, as a percentage
 **Principle:** When one pump photon produces one laser photon, the energy of the laser photon is what ends up in it, and the rest stays in the medium as internal energy. The energy of a photon is $\tfrac{hc}{\lambda}$, so the share is the ratio of the energies of the photons.
-**Formula:** $\eta = \dfrac{hc / \lambda_\text{L}}{hc / \lambda_\text{p}}$, from which $\eta = \dfrac{\lambda_\text{p}}{\lambda_\text{L}}$
+**Formula:** $$
+\begin{aligned}
+E &= hf \\
+f &= \dfrac{c}{\lambda} \\
+E_\text{p} &= \dfrac{hc}{\lambda_\text{p}} \\
+E_\text{L} &= \dfrac{hc}{\lambda_\text{L}} \\
+\eta &= \dfrac{E_\text{L}}{E_\text{p}} \\
+&= \dfrac{hc / \lambda_\text{L}}{hc / \lambda_\text{p}} \\
+&= \dfrac{\lambda_\text{p}}{\lambda_\text{L}}
+\end{aligned}
+$$
 **Conversions:** None are needed: the wavelengths are in the same unit, and $hc$ cancels. Finally the share is converted to a percentage by multiplying by $100\,\%$.
 **Substitution:** $\eta = \dfrac{808\,\text{nm}}{1064\,\text{nm}} = 0.75940 = 75.940\,\%$
 **Answer:** $75.9\,\%$, three significant figures like the wavelength $808\,\text{nm}$.
@@ -95,7 +125,15 @@ $$
 **Given:** wavelength of the red laser pointer $\lambda_\text{r} = 650\,\text{nm}$, of the violet one $\lambda_\text{v} = 405\,\text{nm}$, the power of both $P = 5.0\,\text{mW}$
 **Find:** how many times more photons per second the red one emits, that is the ratio $\tfrac{N_\text{r}}{N_\text{v}}$
 **Principle:** Power is the number of photons per second multiplied by the energy of a photon $\tfrac{hc}{\lambda}$. With the same power there are more photons the smaller the energy of one photon is, that is the longer the wavelength.
-**Formula:** $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$, so for lasers with the same power and time the ratio of the numbers of photons is $\dfrac{N_\text{r}}{N_\text{v}} = \dfrac{\lambda_\text{r}}{\lambda_\text{v}}$
+**Formula:** $$
+\begin{aligned}
+P &= \dfrac{N}{t} \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+\dfrac{N}{t} &= \dfrac{P\lambda}{hc} \\
+\dfrac{N_\text{r}}{N_\text{v}} &= \dfrac{P\lambda_\text{r} / (hc)}{P\lambda_\text{v} / (hc)} \\
+&= \dfrac{\lambda_\text{r}}{\lambda_\text{v}}
+\end{aligned}
+$$
 **Conversions:** None are needed: the power, $h$ and $c$ cancel, and the wavelengths are in the same unit.
 **Substitution:** $\dfrac{N_\text{r}}{N_\text{v}} = \dfrac{650\,\text{nm}}{405\,\text{nm}} = 1.6049$
 **Answer:** $1.60$, so the red one emits about $1.60$ times as many photons; three significant figures like the wavelengths.
@@ -105,7 +143,15 @@ $$
 **Given:** wavelength of the light of the larger dot $\lambda_\text{large} = 620\,\text{nm}$, the photon energy of the smaller dot is $\Delta E = 0.35\,\text{eV}$ greater, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the wavelength $\lambda$ of the light of the smaller dot in nanometres
 **Principle:** The energy of a photon is $\tfrac{hc}{\lambda}$. We calculate the photon energy of the larger dot, add $0.35\,\text{eV}$ to it and calculate the wavelength from the new energy. The energy gap of the smaller dot is larger, so its photon energy is greater.
-**Formula:** $E_\text{large} = \dfrac{hc}{\lambda_\text{large}}$ and $\dfrac{hc}{\lambda} = E_\text{large} + \Delta E$, from which $\lambda = \dfrac{hc}{E_\text{large} + \Delta E}$
+**Formula:** $$
+\begin{aligned}
+E &= hf \\
+f &= \dfrac{c}{\lambda} \\
+E_\text{large} &= \dfrac{hc}{\lambda_\text{large}} \\
+\dfrac{hc}{\lambda} &= E_\text{large} + \Delta E \\
+\lambda &= \dfrac{hc}{E_\text{large} + \Delta E}
+\end{aligned}
+$$
 **Conversions:** $\lambda_\text{large} = 620\,\text{nm} = 620 \cdot 10^{-9}\,\text{m}$; energies in electronvolts and joules by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$; finally $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** $E_\text{large} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{620 \cdot 10^{-9}\,\text{m}} = 3.2040 \cdot 10^{-19}\,\text{J} = 2.0000\,\text{eV}$. $$
 \begin{aligned}
@@ -124,7 +170,15 @@ $$. $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.7647 \cdot 10
 **Given:** photons in the pulse $N = 2.7 \cdot 10^{17}$, wavelength $\lambda = 1064\,\text{nm}$, duration of the pulse $t = 10\,\text{ns}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
 **Find:** the average power $P$ of the pulse in megawatts
 **Principle:** The energy of the pulse is the number of photons multiplied by the energy of one photon, and the average power is the energy divided by the time in which it leaves.
-**Formula:** $E = N \cdot \dfrac{hc}{\lambda}$ and $P = \dfrac{E}{t}$, from which $P = \dfrac{N hc}{\lambda t}$
+**Formula:** $$
+\begin{aligned}
+E &= N \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+E &= N \cdot \dfrac{hc}{\lambda} \\
+P &= \dfrac{E}{t} \\
+&= \dfrac{N hc}{\lambda t}
+\end{aligned}
+$$
 **Conversions:** $\lambda = 1064\,\text{nm} = 1064 \cdot 10^{-9}\,\text{m}$, $t = 10\,\text{ns} = 10 \cdot 10^{-9}\,\text{s}$; finally $1\,\text{MW} = 10^{6}\,\text{W}$.
 **Substitution:** $E = 2.7 \cdot 10^{17} \cdot \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1064 \cdot 10^{-9}\,\text{m}} = 2.7 \cdot 10^{17} \cdot 1.8670 \cdot 10^{-19}\,\text{J} = 0.050409\,\text{J}$ and $P = \dfrac{0.050409\,\text{J}}{10 \cdot 10^{-9}\,\text{s}} = 5.0409 \cdot 10^{6}\,\text{W} = 5.0409\,\text{MW}$
 **Answer:** $5.0\,\text{MW}$, two significant figures like the number of photons $2.7 \cdot 10^{17}$ and the duration $10\,\text{ns}$.
@@ -137,7 +191,13 @@ $$. $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.7647 \cdot 10
 
 By assumption the ions do not decay in the middle of the pumping.
 
-**Formula:** $E = \dfrac{N}{2} \cdot \dfrac{hc}{\lambda}$
+**Formula:** $$
+\begin{aligned}
+E &= \dfrac{N}{2} \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+E &= \dfrac{N}{2} \cdot \dfrac{hc}{\lambda}
+\end{aligned}
+$$
 
 **Conversions:** $\lambda = 550\,\text{nm} = 550 \cdot 10^{-9}\,\text{m}$.
 
@@ -156,7 +216,15 @@ One pump photon, $3.6 \cdot 10^{-19}\,\text{J}$ or $2.25\,\text{eV}$, is green l
 
 Energy is conserved: the energy of two photons of $1064\,\text{nm}$ equals that of one photon of $532\,\text{nm}$.
 
-**Formula:** $\dfrac{N_\text{p}}{t} = \dfrac{P\lambda_\text{p}}{hc}$ and $\dfrac{N_\text{g}}{t} = \dfrac{1}{2} \cdot \dfrac{N_\text{p}}{t}$, from which $\dfrac{N_\text{g}}{t} = \dfrac{P\lambda_\text{p}}{2hc}$
+**Formula:** $$
+\begin{aligned}
+P &= \dfrac{N_\text{p}}{t} \cdot hf_\text{p} \\
+f_\text{p} &= \dfrac{c}{\lambda_\text{p}} \\
+\dfrac{N_\text{p}}{t} &= \dfrac{P\lambda_\text{p}}{hc} \\
+\dfrac{N_\text{g}}{t} &= \dfrac{1}{2} \cdot \dfrac{N_\text{p}}{t} \\
+&= \dfrac{P\lambda_\text{p}}{2hc}
+\end{aligned}
+$$
 
 **Conversions:** $\lambda_\text{p} = 808\,\text{nm} = 808 \cdot 10^{-9}\,\text{m}$; the power is already in watts.
 
@@ -170,7 +238,15 @@ Energy is conserved: the energy of two photons of $1064\,\text{nm}$ equals that 
 **Given:** frequency of the photon corresponding to the energy difference of the states of the qubit $f_\text{q} = 5.0\,\text{GHz}$, wavelength of the red light $\lambda = 650\,\text{nm}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
 **Find:** the ratio of the energies $\tfrac{E_\text{light}}{E_\text{q}}$
 **Principle:** The energy of both photons is $hf$, so the ratio of the energies is the ratio of the frequencies, and the Planck constant cancels. The frequency of the red light is obtained from the wavelength, $f = \tfrac{c}{\lambda}$.
-**Formula:** $\dfrac{E_\text{light}}{E_\text{q}} = \dfrac{hc / \lambda}{h f_\text{q}}$, from which $\dfrac{E_\text{light}}{E_\text{q}} = \dfrac{c}{\lambda f_\text{q}}$
+**Formula:** $$
+\begin{aligned}
+E_\text{light} &= hf_\text{light} \\
+E_\text{q} &= hf_\text{q} \\
+f_\text{light} &= \dfrac{c}{\lambda} \\
+\dfrac{E_\text{light}}{E_\text{q}} &= \dfrac{hc / \lambda}{hf_\text{q}} \\
+&= \dfrac{c}{\lambda f_\text{q}}
+\end{aligned}
+$$
 **Conversions:** $f_\text{q} = 5.0\,\text{GHz} = 5.0 \cdot 10^{9}\,\text{Hz}$ and $\lambda = 650\,\text{nm} = 650 \cdot 10^{-9}\,\text{m}$.
 **Substitution:** $\dfrac{E_\text{light}}{E_\text{q}} = \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{650 \cdot 10^{-9}\,\text{m} \cdot 5.0 \cdot 10^{9}\,\text{Hz}} = \dfrac{2.998 \cdot 10^{8}}{3.25 \cdot 10^{3}} = 9.2246 \cdot 10^{4}$
 **Answer:** about $9.2 \cdot 10^{4}$, that is about $92\,000$ times greater, two significant figures like the frequency $5.0\,\text{GHz}$.
@@ -189,7 +265,14 @@ The atom does not absorb a photon in stimulated emission, and its energy does no
 **Given:** power of the laser $P = 5.0\,\text{mW}$, wavelength $\lambda = 532\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
 **Find:** the number of photons emitted per second $\tfrac{N}{t}$
 **Principle:** The photons of a laser are identical, so the power is the number of photons per second multiplied by the energy of one photon $\tfrac{hc}{\lambda}$.
-**Formula:** $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$, from which $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$
+**Formula:** $$
+\begin{aligned}
+P &= \dfrac{N}{t} \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+P &= \dfrac{N}{t} \cdot \dfrac{hc}{\lambda} \\
+\dfrac{N}{t} &= \dfrac{P\lambda}{hc}
+\end{aligned}
+$$
 **Conversions:** $P = 5.0\,\text{mW} = 5.0 \cdot 10^{-3}\,\text{W}$ and $\lambda = 532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$.
 **Substitution:** $$
 \begin{aligned}
@@ -255,7 +338,14 @@ In atomic and ion lasers, population inversion is made by pumping a material tha
 **Find:** the difference $\Delta E$ of the energy gaps between the smallest and the largest dot in electronvolts
 **Principle:** When the energy of the photon is equal to the energy gap of the dot, the gap is obtained from the wavelength with the formula $E = \tfrac{hc}{\lambda}$. We calculate the gap for each dot and compare it with the size of the dot.
 **Reading the graph:** From the table: the diameter $2.0\,\text{nm}$ corresponds to the wavelength $486\,\text{nm}$ and the diameter $6.0\,\text{nm}$ to the wavelength $617\,\text{nm}$. When the diameter increases, the wavelength increases at every step.
-**Formula:** $E = \dfrac{hc}{\lambda}$ and $\Delta E = E_{2.0\,\text{nm}} - E_{6.0\,\text{nm}}$
+**Formula:** $$
+\begin{aligned}
+E &= hf \\
+f &= \dfrac{c}{\lambda} \\
+E &= \dfrac{hc}{\lambda} \\
+\Delta E &= E_{2.0\,\text{nm}} - E_{6.0\,\text{nm}}
+\end{aligned}
+$$
 **Conversions:** $\lambda = 486 \cdot 10^{-9}\,\text{m}$ and so on; joules are converted to electronvolts by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
 **Substitution:** a) $$
 \begin{aligned}
@@ -280,7 +370,13 @@ c) $\Delta E = 2.5514\,\text{eV} - 2.0097\,\text{eV} = 0.5417\,\text{eV}$
 **Find:** the ratio of the greatest and the smallest photon flux $\tfrac{N}{t}$
 **Principle:** The photons of each diode are identical, so the power is the number of photons per second multiplied by the energy of a photon $\tfrac{hc}{\lambda}$. The photon flux thus depends on both the power and the wavelength.
 **Reading the graph:** From the table: the wavelengths of the diodes increase from A to D and the powers decrease from A to D.
-**Formula:** $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$
+**Formula:** $$
+\begin{aligned}
+P &= \dfrac{N}{t} \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+\dfrac{N}{t} &= \dfrac{P\lambda}{hc}
+\end{aligned}
+$$
 **Conversions:** $P = 10\,\text{mW} = 10 \cdot 10^{-3}\,\text{W}$ and so on; $\lambda = 405\,\text{nm} = 405 \cdot 10^{-9}\,\text{m}$ and so on.
 **Substitution:** a) $hc = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Diode A: $\tfrac{N}{t} = \dfrac{10 \cdot 10^{-3}\,\text{W} \cdot 405 \cdot 10^{-9}\,\text{m}}{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 2.039 \cdot 10^{16}\,\tfrac{1}{\text{s}}$. In the same way for diode B $1.571 \cdot 10^{16}\,\tfrac{1}{\text{s}}$, for diode C $1.636 \cdot 10^{16}\,\tfrac{1}{\text{s}}$ and for diode D $1.973 \cdot 10^{16}\,\tfrac{1}{\text{s}}$.
 
@@ -312,7 +408,18 @@ The photon does not split in two, the mirrors are not the explanation for the in
 
 Heat is produced for two reasons: the energy of a laser photon is smaller than the energy of a pump photon, and some of the pump photons do not produce a laser photon.
 
-**Formula:** $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$, so $\eta_\text{q} = \dfrac{P_\text{L}\lambda_\text{L}}{P_\text{p}\lambda_\text{p}}$, thermal power $P_\text{heat} = P_\text{p} - P_\text{L}$ and the unavoidable part $P_\text{unav} = \dfrac{N_\text{L}}{t}\left(\dfrac{hc}{\lambda_\text{p}} - \dfrac{hc}{\lambda_\text{L}}\right)$
+**Formula:** $$
+\begin{aligned}
+P &= \dfrac{N}{t} \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+\dfrac{N}{t} &= \dfrac{P\lambda}{hc} \\
+\eta_\text{q} &= \dfrac{N_\text{L} / t}{N_\text{p} / t} \\
+&= \dfrac{P_\text{L}\lambda_\text{L}}{P_\text{p}\lambda_\text{p}} \\
+P_\text{heat} &= P_\text{p} - P_\text{L} \\
+P_\text{unav} &= \dfrac{N_\text{L}}{t} \left(hf_\text{p} - hf_\text{L}\right) \\
+&= \dfrac{N_\text{L}}{t} \left(\dfrac{hc}{\lambda_\text{p}} - \dfrac{hc}{\lambda_\text{L}}\right)
+\end{aligned}
+$$
 
 **Conversions:** $\lambda_\text{p} = 976 \cdot 10^{-9}\,\text{m}$ and $\lambda_\text{L} = 1070 \cdot 10^{-9}\,\text{m}$; the powers are already in watts.
 
@@ -358,7 +465,16 @@ The points $P_\text{p} \geq 30\,\text{mW}$ lie on a straight line apart from sma
 
 The slope of the line is $\tfrac{\Delta P_\text{L}}{\Delta P_\text{p}} = 0.398$. For example, through the points $(30;\ 2.1)$ and $(70;\ 18.1)$ the slope is $\tfrac{16.0\,\text{mW}}{40\,\text{mW}} = 0.40$.
 
-**Formula:** $\Delta P_\text{L} = \dfrac{\Delta N_\text{L}}{t} \cdot \dfrac{hc}{\lambda_\text{L}}$ and $\Delta P_\text{p} = \dfrac{\Delta N_\text{p}}{t} \cdot \dfrac{hc}{\lambda_\text{p}}$, so $\dfrac{\Delta N_\text{L}}{\Delta N_\text{p}} = \dfrac{\Delta P_\text{L}}{\Delta P_\text{p}} \cdot \dfrac{\lambda_\text{L}}{\lambda_\text{p}}$
+**Formula:** $$
+\begin{aligned}
+\Delta P_\text{L} &= \dfrac{\Delta N_\text{L}}{t} \cdot hf_\text{L} \\
+\Delta P_\text{p} &= \dfrac{\Delta N_\text{p}}{t} \cdot hf_\text{p} \\
+f &= \dfrac{c}{\lambda} \\
+\dfrac{\Delta P_\text{L}}{\Delta P_\text{p}} &= \dfrac{\Delta N_\text{L} \cdot hc / \lambda_\text{L}}{\Delta N_\text{p} \cdot hc / \lambda_\text{p}} \\
+&= \dfrac{\Delta N_\text{L}}{\Delta N_\text{p}} \cdot \dfrac{\lambda_\text{p}}{\lambda_\text{L}} \\
+\dfrac{\Delta N_\text{L}}{\Delta N_\text{p}} &= \dfrac{\Delta P_\text{L}}{\Delta P_\text{p}} \cdot \dfrac{\lambda_\text{L}}{\lambda_\text{p}}
+\end{aligned}
+$$
 
 **Conversions:** Not needed: the powers are in the same unit and the wavelengths in the same unit, and $hc$ cancels.
 
@@ -376,7 +492,14 @@ Then laser oscillation does not start, but the medium emits only weak spontaneou
 **Given:** power of the laser $P = 2.0\,\text{mW}$, wavelength $\lambda = 670\,\text{nm}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$; from the table (MAFY, *Physical constants*) the Planck constant $h = 6.626\,070\,15 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Find:** the number of photons emitted per second $\tfrac{N}{t}$
 **Principle:** The photons of a laser are alike, so the power is the number of photons per second times the energy of one photon, $\tfrac{hc}{\lambda}$. The Planck constant is not among the data of the task, so it is looked up in the table.
-**Formula:** $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$, from which $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$
+**Formula:** $$
+\begin{aligned}
+P &= \dfrac{N}{t} \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+P &= \dfrac{N}{t} \cdot \dfrac{hc}{\lambda} \\
+\dfrac{N}{t} &= \dfrac{P\lambda}{hc}
+\end{aligned}
+$$
 **Conversions:** $P = 2.0\,\text{mW} = 2.0 \cdot 10^{-3}\,\text{W}$ and $\lambda = 670\,\text{nm} = 670 \cdot 10^{-9}\,\text{m}$.
 **Substitution:** First the product $hc$:
 $$
@@ -413,7 +536,13 @@ $$
 
 The point is just below the horizontal line at $4.0$, so $\tfrac{N}{t} \approx 3.9 \cdot 10^{15}\,\tfrac{1}{\text{s}}$.
 
-**Formula:** $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$
+**Formula:** $$
+\begin{aligned}
+P &= \dfrac{N}{t} \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+P &= \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}
+\end{aligned}
+$$
 
 **Conversions:** $\lambda = 520\,\text{nm} = 520 \cdot 10^{-9}\,\text{m}$ and finally $1\,\text{mW} = 10^{-3}\,\text{W}$.
 
@@ -454,7 +583,15 @@ $$
 
 Point Y is at the wavelength $800\,\text{nm}$, on the eighth vertical line, and just above the fourth horizontal line, at the height $4.0$.
 
-**Formula:** $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$, so $\dfrac{P_\text{X}}{P_\text{Y}} = \dfrac{\tfrac{N_\text{X}}{t} \cdot \tfrac{hc}{\lambda_\text{X}}}{\tfrac{N_\text{Y}}{t} \cdot \tfrac{hc}{\lambda_\text{Y}}} = \dfrac{N_\text{X}/t}{N_\text{Y}/t} \cdot \dfrac{\lambda_\text{Y}}{\lambda_\text{X}}$
+**Formula:** $$
+\begin{aligned}
+P &= \dfrac{N}{t} \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+P &= \dfrac{N}{t} \cdot \dfrac{hc}{\lambda} \\
+\dfrac{P_\text{X}}{P_\text{Y}} &= \dfrac{\tfrac{N_\text{X}}{t} \cdot \tfrac{hc}{\lambda_\text{X}}}{\tfrac{N_\text{Y}}{t} \cdot \tfrac{hc}{\lambda_\text{Y}}} \\
+&= \dfrac{N_\text{X} / t}{N_\text{Y} / t} \cdot \dfrac{\lambda_\text{Y}}{\lambda_\text{X}}
+\end{aligned}
+$$
 
 **Conversions:** In a ratio the wavelengths and the numbers of photons are in the same unit and cancel, so nanometres and the unit $10^{15}\,\tfrac{1}{\text{s}}$ need no conversion. The constant $hc$ cancels.
 

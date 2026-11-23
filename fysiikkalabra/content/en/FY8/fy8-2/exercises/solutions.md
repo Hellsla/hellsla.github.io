@@ -18,7 +18,12 @@ $$ and $\Delta E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{502 \cdot 1
 **Given:** energy difference $\Delta E = 2.86\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the wavelength $\lambda$ of the emitted photon in nanometres
 **Principle:** The energy of a photon produced in a transition from an upper state to a lower one is the difference between the states, because energy is conserved. The energy and wavelength of a photon are connected by $E = \tfrac{hc}{\lambda}$.
-**Formula:** $\Delta E = \dfrac{hc}{\lambda}$, so $\lambda = \dfrac{hc}{\Delta E}$
+**Formula:** $$\begin{aligned} \Delta E &= hf \\
+c &= f\lambda \\
+\Delta E &= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{\Delta E}
+\end{aligned}
+$$
 **Conversions:** $\Delta E = 2.86\,\text{eV} = 2.86 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 4.5817 \cdot 10^{-19}\,\text{J}$. Finally $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** $$
 \begin{aligned}
@@ -54,7 +59,12 @@ $$ and $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{4.5817 \cdot
 **Given:** energy difference $\Delta E = 3.03 \cdot 10^{-19}\,\text{J}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
 **Find:** the wavelength $\lambda$ of the photon produced, in nanometres
 **Principle:** The energy of the photon produced in a transition is the difference between the states, because energy is conserved, and the energy of a photon is $\tfrac{hc}{\lambda}$.
-**Formula:** $\Delta E = \dfrac{hc}{\lambda}$, so $\lambda = \dfrac{hc}{\Delta E}$
+**Formula:** $$\begin{aligned} \Delta E &= hf \\
+c &= f\lambda \\
+\Delta E &= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{\Delta E}
+\end{aligned}
+$$
 **Conversions:** The energy is already in joules, so the result is obtained in metres. Finally $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** $$
 \begin{aligned}
@@ -70,7 +80,12 @@ $$ and $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.03 \cdot 1
 **Given:** the energies of the states of the hydrogen atom $E_4 = -0.85\,\text{eV}$ and $E_2 = -3.40\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the wavelength $\lambda$ of the photon produced, in nanometres
 **Principle:** The energy of the atom decreases in the transition from state $4$ to state $2$. Energy is conserved, so the energy of the photon is the difference between the states, and the wavelength is obtained from the energy of the photon.
-**Formula:** $E_4 - E_2 = \dfrac{hc}{\lambda}$, so $\lambda = \dfrac{hc}{E_4 - E_2}$
+**Formula:** $$\begin{aligned} hf &= E_4 - E_2 \\
+c &= f\lambda \\
+\frac{hc}{\lambda} &= E_4 - E_2 \\
+\lambda &= \frac{hc}{E_4 - E_2}
+\end{aligned}
+$$
 **Conversions:** $E_4 - E_2 = -0.85\,\text{eV} - (-3.40\,\text{eV}) = 2.55\,\text{eV} = 2.55 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 4.0851 \cdot 10^{-19}\,\text{J}$. Finally $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** $$
 \begin{aligned}
@@ -86,7 +101,12 @@ $$ and $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{4.0851 \cdot
 **Given:** the energy states of the model atom $E_1 = 0$, $E_2 = 1.85\,\text{eV}$ and $E_3 = 4.00\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the wavelength $\lambda_\text{max}$ of the longest line in nanometres
 **Principle:** Every pair of states gives one line, whose photon energy is the difference between the states. The wavelength is inversely proportional to the energy, so the longest wavelength comes from the smallest difference. The differences are $E_2 - E_1 = 1.85\,\text{eV}$, $E_3 - E_2 = 2.15\,\text{eV}$ and $E_3 - E_1 = 4.00\,\text{eV}$, so the smallest is $1.85\,\text{eV}$.
-**Formula:** $\Delta E_\text{min} = \dfrac{hc}{\lambda_\text{max}}$, so $\lambda_\text{max} = \dfrac{hc}{\Delta E_\text{min}}$
+**Formula:** $$\begin{aligned} \Delta E_\text{min} &= hf_\text{min} \\
+c &= f_\text{min}\lambda_\text{max} \\
+\lambda_\text{max} &= \frac{c}{f_\text{min}} \\
+\lambda_\text{max} &= \frac{hc}{\Delta E_\text{min}}
+\end{aligned}
+$$
 **Conversions:** $\Delta E_\text{min} = 1.85\,\text{eV} = 1.85 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 2.9637 \cdot 10^{-19}\,\text{J}$. Finally $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** $$
 \begin{aligned}
@@ -102,7 +122,12 @@ $$ and $\lambda_\text{max} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2
 **Given:** the energy of the ground state of the hydrogen atom $E_1 = -13.6\,\text{eV}$ and of the next state $E_2 = -3.40\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the wavelength $\lambda$ of the absorbed light in nanometres
 **Principle:** An atom absorbs a photon only if the energy of the photon is exactly the difference between two states. A transition from the ground state to state $2$ therefore requires a photon whose energy is $E_2 - E_1$.
-**Formula:** $E_2 - E_1 = \dfrac{hc}{\lambda}$, so $\lambda = \dfrac{hc}{E_2 - E_1}$
+**Formula:** $$\begin{aligned} hf &= E_2 - E_1 \\
+c &= f\lambda \\
+\frac{hc}{\lambda} &= E_2 - E_1 \\
+\lambda &= \frac{hc}{E_2 - E_1}
+\end{aligned}
+$$
 **Conversions:** $E_2 - E_1 = -3.40\,\text{eV} - (-13.6\,\text{eV}) = 10.2\,\text{eV} = 10.2 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.6340 \cdot 10^{-18}\,\text{J}$. Finally $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** $$
 \begin{aligned}
@@ -136,7 +161,12 @@ $$
 **Given:** energy of the final level $E_2 = -3.40\,\text{eV}$, energy of levels very high up almost $E_\infty = 0$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the shortest wavelength $\lambda_\text{min}$ of the series in nanometres
 **Principle:** The energy of the photon of a line is the difference $E_\text{u} - E_2$ between the states. The higher the level, the greater the energy, but the upper energy cannot exceed $0$, where the electron is freed from the atom. The greatest possible difference is therefore $0 - E_2$, and it gives the shortest wavelength, towards which the lines crowd together.
-**Formula:** $0 - E_2 = \dfrac{hc}{\lambda_\text{min}}$, so $\lambda_\text{min} = \dfrac{hc}{0 - E_2}$
+**Formula:** $$\begin{aligned} hf &= 0 - E_2 \\
+c &= f\lambda_\text{min} \\
+\frac{hc}{\lambda_\text{min}} &= 0 - E_2 \\
+\lambda_\text{min} &= \frac{hc}{0 - E_2}
+\end{aligned}
+$$
 **Conversions:** $0 - E_2 = 3.40\,\text{eV} = 3.40 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 5.4468 \cdot 10^{-19}\,\text{J}$. Finally $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** $$
 \begin{aligned}
@@ -168,7 +198,16 @@ $$ and $\Delta E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{15.0 \cdot 
 **Given:** wavelength of the absorbed UV photon $\lambda_\text{UV} = 365\,\text{nm}$, energy of the first emitted photon $E_1 = 1.20\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the wavelength $\lambda_2$ of the second emitted photon in nanometres
 **Principle:** The molecule returns to the same ground state and no energy is converted to internal energy, so by conservation of energy the sum of the energies of the two emitted photons is the energy of the absorbed photon.
-**Formula:** $E_\text{UV} = \dfrac{hc}{\lambda_\text{UV}} = E_1 + \dfrac{hc}{\lambda_2}$, so $\lambda_2 = \dfrac{hc}{\tfrac{hc}{\lambda_\text{UV}} - E_1}$
+**Formula:** $$\begin{aligned} E_\text{UV} &= E_1 + E_2 \\
+E &= hf \\
+c &= f\lambda \\
+E &= \frac{hc}{\lambda} \\
+E_2 &= E_\text{UV} - E_1 \\
+E_2 &= \frac{hc}{\lambda_\text{UV}} - E_1 \\
+\lambda_2 &= \frac{hc}{E_2} \\
+\lambda_2 &= \frac{hc}{\tfrac{hc}{\lambda_\text{UV}} - E_1}
+\end{aligned}
+$$
 **Conversions:** $365\,\text{nm} = 365 \cdot 10^{-9}\,\text{m}$; electronvolts and joules are converted by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
 **Substitution:** $$
 \begin{aligned}
@@ -229,7 +268,12 @@ $$ and $E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{546.3 \cdot 10^{-9
 **Principle:** The dark lines are an absorption spectrum: the atoms in the cooler atmosphere of the Sun absorb photons whose energy is the difference between two energy states, and the lines are at the same wavelengths as the emission lines of the same element.
 
 Lines B, C and G are lines of hydrogen, A of calcium (a line of the calcium ion), D of magnesium and F of sodium, so the atmosphere contains these elements. The line E ($527.1\,\text{nm}$) does not match any reference line. In absorption the energy of the atom increases by the energy of the photon.
-**Formula:** $E_\text{u} - E_2 = \dfrac{hc}{\lambda}$, so $E_\text{u} = E_2 + \dfrac{hc}{\lambda}$
+**Formula:** $$\begin{aligned} hf &= E_\text{u} - E_2 \\
+c &= f\lambda \\
+E_\text{u} &= E_2 + hf \\
+E_\text{u} &= E_2 + \frac{hc}{\lambda}
+\end{aligned}
+$$
 **Conversions:** $486.0\,\text{nm} = 486.0 \cdot 10^{-9}\,\text{m}$. Joules are converted to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
 **Substitution:** $$
 \begin{aligned}
@@ -306,7 +350,13 @@ However, the atom absorbs only photons whose energy is exactly the difference be
 The sixth line is the transition $E_1 \to 0$, that is, the energy $E_1$, so it is not among the measured ones.
 
 The pairs $E_1$ and $E_3 - E_1$, and $E_2$ and $E_3 - E_2$, each have the sum $E_3$; because $E_1$ is missing, its pair $E_3 - E_1$ has been measured without its pair, and the other pair has been measured completely.
-**Formula:** $E = \dfrac{hc}{\lambda}$ and $E_1 = E_3 - (E_3 - E_1)$, so $\lambda_6 = \dfrac{hc}{E_1}$
+**Formula:** $$\begin{aligned} E &= hf \\
+c &= f\lambda \\
+E &= \frac{hc}{\lambda} \\
+E_1 &= E_3 - (E_3 - E_1) \\
+\lambda_6 &= \frac{hc}{E_1}
+\end{aligned}
+$$
 **Conversions:** $1\,\text{nm} = 10^{-9}\,\text{m}$; joules are converted to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
 **Substitution:** a) $hc = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, so the energies of the lines A–E are $3.90\,\text{eV}$, $2.80\,\text{eV}$, $2.40\,\text{eV}$, $1.50\,\text{eV}$ and $1.30\,\text{eV}$.
 
@@ -324,7 +374,15 @@ The gaps $1.10\,\text{eV}$, $1.30\,\text{eV}$ and $1.50\,\text{eV}$ add up to $3
 **Given:** absorbed light $\lambda_\text{abs}$ and fluorescent light $\lambda_\text{fl}$: A $365\,\text{nm}$ and $450\,\text{nm}$, B $405\,\text{nm}$ and $520\,\text{nm}$, C $450\,\text{nm}$ and $530\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the share $p$ of the energy converted to internal energy of the energy of the absorbed photon, in per cent, the greatest of the three
 **Principle:** The dye absorbs a photon and emits one fluorescence photon. Energy is conserved, so the energy of the absorbed photon is the sum of the energy of the emitted photon and the energy $Q$ converted to internal energy. The fluorescence photon has a longer wavelength, so its energy is smaller.
-**Formula:** $E = \dfrac{hc}{\lambda}$, $Q = E_\text{abs} - E_\text{fl}$ and $p = \dfrac{Q}{E_\text{abs}} = 1 - \dfrac{\lambda_\text{abs}}{\lambda_\text{fl}}$
+**Formula:** $$\begin{aligned} E &= hf \\
+c &= f\lambda \\
+E &= \frac{hc}{\lambda} \\
+Q &= E_\text{abs} - E_\text{fl} \\
+p &= \frac{Q}{E_\text{abs}} \\
+p &= 1 - \frac{E_\text{fl}}{E_\text{abs}} \\
+p &= 1 - \frac{\lambda_\text{abs}}{\lambda_\text{fl}}
+\end{aligned}
+$$
 **Conversions:** $1\,\text{nm} = 10^{-9}\,\text{m}$; joules are converted to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$. In the share $p$ the constants $h$ and $c$ cancel.
 **Substitution:** The energies of dye B are $E_\text{abs} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{405 \cdot 10^{-9}\,\text{m}} = 3.0617\,\text{eV}$ and $E_\text{fl} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{520 \cdot 10^{-9}\,\text{m}} = 2.3846\,\text{eV}$, so $Q = 0.6771\,\text{eV}$ and $p = \dfrac{0.6771\,\text{eV}}{3.0617\,\text{eV}} = 0.2211 = 22.11\,\%$. In part d) $E_\text{abs} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{400 \cdot 10^{-9}\,\text{m}} = 3.1000\,\text{eV}$, $E_\text{fl} = 3.1000\,\text{eV} - 0.50\,\text{eV} = 2.6000\,\text{eV}$ and $\lambda_\text{fl} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2.6000 \cdot 1.602 \cdot 10^{-19}\,\text{J}} = 4.769 \cdot 10^{-7}\,\text{m} = 477\,\text{nm}$. For dyes A and C the corresponding energies are $3.397\,\text{eV}$ and $2.756\,\text{eV}$, and $2.756\,\text{eV}$ and $2.340\,\text{eV}$, and the shares are $1 - \tfrac{365}{450} = 0.189$ and $1 - \tfrac{450}{530} = 0.151$.
 **Answer:** $22.1\,\%$ in dye B, three significant figures like the wavelengths. In the others the share is smaller. The wavelength of the fluorescent light of dye D is $477\,\text{nm}$ (part d).
@@ -340,7 +398,11 @@ A smaller energy means a longer wavelength, because $E = \tfrac{hc}{\lambda}$.
 **Reading the graph:** The small ticks of the wavelength scale are $10\,\text{nm}$ apart and the numbers $50\,\text{nm}$ apart. The blue line is the one closest to $436\,\text{nm}$: it is a little to the left of the number $450\,\text{nm}$, $14\,\text{nm}$ below it.
 
 The other lines are violet at about $405\,\text{nm}$, green at about $546\,\text{nm}$ and yellow at about $577\,\text{nm}$ and $579\,\text{nm}$. The uncertainty of the reading is a few nanometres, so the energy is secure to about $\pm 0.02\,\text{eV}$.
-**Formula:** $E = \dfrac{hc}{\lambda}$
+**Formula:** $$\begin{aligned} E &= hf \\
+c &= f\lambda \\
+E &= \frac{hc}{\lambda}
+\end{aligned}
+$$
 **Conversions:** $436\,\text{nm} = 436 \cdot 10^{-9}\,\text{m}$. Joules are converted to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
 **Substitution:** 
 
@@ -367,7 +429,15 @@ $$\begin{aligned}
 **Asked:** a) the photon energies $E_\text{viol}$ and $E_\text{green}$, b) the energy difference $\Delta E$ of the lower states in electronvolts, c) why $\Delta E$ is not the sum of the energies
 **Principle:** The energy of a photon is the difference between the energies of the initial and final state of the transition. When two transitions start from the same upper state $E_\text{u}$, the difference of their photons' energies is the difference of the lower states, because $E_\text{u}$ cancels.
 **Reading the graph:** The small ticks of the scale are $10\,\text{nm}$ apart. The violet line is near $405\,\text{nm}$ and the green near $546\,\text{nm}$; the other lines are not needed. The uncertainty of the readings is a few nanometres, but subtracting two nearly equal energies loses leading digits, so the difference is secure to two significant figures only.
-**Formula:** $E = \dfrac{hc}{\lambda}$, $E_\text{viol} = E_\text{u} - E_\text{l,viol}$ and $E_\text{green} = E_\text{u} - E_\text{l,green}$, so $\Delta E = E_\text{l,green} - E_\text{l,viol} = E_\text{viol} - E_\text{green}$
+**Formula:** $$\begin{aligned} E &= hf \\
+c &= f\lambda \\
+E &= \frac{hc}{\lambda} \\
+E_\text{viol} &= E_\text{u} - E_\text{l,viol} \\
+E_\text{green} &= E_\text{u} - E_\text{l,green} \\
+E_\text{viol} - E_\text{green} &= E_\text{l,green} - E_\text{l,viol} \\
+\Delta E &= E_\text{viol} - E_\text{green}
+\end{aligned}
+$$
 **Conversions:** $1\,\text{nm} = 10^{-9}\,\text{m}$; joules are converted to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
 **Substitution:** a) $hc = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, so 
 
