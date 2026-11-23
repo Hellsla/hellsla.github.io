@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 9b63646b9d282535
+CONTENT-HASH: c367bdde3ea32b84
+SCOPE: delta numbers from 9b63646b9d282535 base 3076572
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md 13 kohta d) — "Esimerkkejä ovat puhelin, sähköpyörä ja sähköauto." stands as a one-line paragraph apart from "Akku sopii käyttöön, jossa energiaa tarvitaan paljon ja pitkään." — join it to that sentence.
-- [Minor] Same task, "Se on kapasitanssi." and "Sitä mahtuu…" open paragraphs with a pronoun for the previous paragraph's last sentence — move the break one sentence earlier/later if convenient.
+- [Minor] Kaava blocks of 13-23 and 13-18 — `Q = CU` appears twice in the long chain (rows 2 and 6) — for science: drop the repeat or keep it only if intended.
 
 ## Checked
-- Delta (md-paragraphs only): opened exercises-L2-1280-12, -13, -14, L3-1280-3, -4, -7, -8, L1-1280-10, -11 (paragraph breaks, solution-card spacing, no clipping). Samples at 1280 px; breaks are not width-dependent.
+- Delta (numbers, solutions.md only): diff read in full; captures opened: fi-easy open-exercises-L3-1280-5/-6 (8-row Formula block: eight aligned rows, Q = CU twice).
+- Rows align at `=`, fractions legible, nothing clipped, long blocks not shrunk, surrounding card layout intact.
+- Not opened: 390 px solution captures (none for open solutions).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 4

@@ -121,7 +121,7 @@ We calculate the power of each measurement and choose the greatest, and the load
 In a group the LEDs and the resistor are in series, so the same current flows through all of them, and the voltage is shared: $U = U_R + 3U_\text{D}$.
 
 The power of the resistor is $U_R I$ and the power of the whole group $UI$.
-**Formula:** $$\begin{aligned} U &= U_R + 3U_\text{D} \\ P_R &= U_R I \\ P &= UI \\ \text{osuus} &= \dfrac{P_R}{P} = \dfrac{U_R I}{UI} \\ &= \dfrac{U - 3U_\text{D}}{U} \end{aligned}$$
+**Formula:** $$\begin{aligned} U &= U_R + 3U_\text{D} \\ P_R &= U_R I \\ P &= UI \\ \text{share} &= \dfrac{P_R}{P} = \dfrac{U_R I}{UI} \\ &= \dfrac{U - 3U_\text{D}}{U} \end{aligned}$$
 **Conversions:** None needed: the current cancels, and the ratio of the voltages is a ratio. Finally we multiply by a hundred.
 **Substitution:** $\dfrac{12\,\text{V} - 3 \cdot 3.0\,\text{V}}{12\,\text{V}} = \dfrac{3.0\,\text{V}}{12\,\text{V}} = 0.25 = 25\,\%$
 **Answer:** $25\,\%$, two significant figures like the voltage of the LED $3.0\,\text{V}$.
