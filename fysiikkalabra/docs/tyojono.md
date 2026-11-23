@@ -11,6 +11,8 @@ ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta
 Jonon pitää pysyä lyhyenä (alle 200 riviä): tässä on vain se, mitä tekijä tarvitsee aloittaakseen; täysi vanha teksti,
 tehdyt kurssit ja opit ovat `docs/tyojono-loki.md`:ssä ("loki §N"), kirjatut päätökset `docs/decisions/tyojono-paatokset.md`:ssä.
 
+- **FY9 tasavirta s7/s8 → 15 p** (opettaja 2026-11-24, "I agree on 1-4" kohta 4): Varattu: claude/fy9-tasavirta-15p
+
 ## 0. Päivitystyön tehostaminen (opettaja 2026-11-17: "Laita kaikki seuraavaksi työjonoon")
 
 Tehdään ennen uusia kurssikohtaisia läpikäyntejä. Tehty: 0a (`scripts/round.py`, #670), 0b (ohjetiedostot, #673), 0c (esitystapaluokka, #677; loki §0c), 0e (ulkoasun delta vain suomeksi, kun muutos on kielineutraali; sääntöteksti odottaa opettajan hyväksyntää, PR draft; loki §0e), 0d (CI:n selain pilvi-istuntoihin; ei ympäristömuutosta, `ci_env.py` käynnistää Dockerin itse; `round.py` tarkistaa matalan kloonin ja riippuvuudet).
