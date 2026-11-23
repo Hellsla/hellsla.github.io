@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 4b435403c5d88a78
-SCOPE: delta md-paragraphs,numbers,reflow,typography,wording from 1592588b5f48206f base 5b3ca4f
+SCOPE: delta md-paragraphs,numbers,reflow,typography,wording from a1cac1a76ad996ac base 08d90eab0b
 
 ## Blocking
 - none (the earlier blocking issue is fixed: L3-01 Sijoitus now uses ΔE and E_perille, the symbols its Kaava defines, and the E_sent symbol is gone).

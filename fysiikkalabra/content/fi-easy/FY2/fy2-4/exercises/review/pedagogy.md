@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 1cbb64c4124fa188
-SCOPE: delta md-paragraphs,wording from 290ca9ff5936acc5 base 63ede90
+SCOPE: delta md-paragraphs,wording from 290ca9ff5936acc5 base aaf195f064
 
 ## Blocking
 - none

@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 0847076788133655
-SCOPE: delta md-paragraphs,numbers,reflow,teacher-figure,typography,wording from 5ecba3d8a8b1b63d base 5b3ca4f
+SCOPE: delta md-paragraphs,numbers,reflow,teacher-figure,typography,wording from 0f91b2baf35388df base 08d90eab0b
 
 ## Blocking
 
