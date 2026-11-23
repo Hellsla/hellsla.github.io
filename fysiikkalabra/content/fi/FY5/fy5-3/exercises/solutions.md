@@ -12,7 +12,7 @@
 **Annettu:** kärjen etäisyys akselista $r = 0{,}20\,\text{m}$, pyörimistaajuus $f = 15\,\tfrac{1}{\text{s}}$
 **Kysytty:** siiven kärjen ratanopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Siiven kärki on tasaisessa ympyräliikkeessä, jonka säde on kärjen etäisyys akselista. Jokaisella kierroksella kärki kulkee matkan $2\pi r$, ja kierroksia tulee $f$ sekunnissa, joten sekunnissa kuljettu matka on $2\pi r f$.
-**Kaava:** $v = 2\pi r f$
+**Kaava:** $$\begin{aligned} v &= \dfrac{2\pi r}{T} \\ T &= \dfrac{1}{f} \\ v &= 2\pi r f \end{aligned}$$
 **Muunnokset:** Ei tarvita: $\text{m} \cdot \tfrac{1}{\text{s}} = \text{m/s}$.
 **Sijoitus:** $v = 2\pi \cdot 0{,}20\,\text{m} \cdot 15\,\tfrac{1}{\text{s}} = 1{,}257\,\text{m} \cdot 15\,\tfrac{1}{\text{s}} = 18{,}85\,\text{m/s}$
 **Vastaus:** $19\,\text{m/s}$, kaksi merkitsevää numeroa kuten säteessä $0{,}20\,\text{m}$ ja pyörimistaajuudessa $15\,\tfrac{1}{\text{s}}$.
@@ -32,7 +32,7 @@
 **Annettu:** radan säde $r = 1{,}5\,\text{m}$, ratanopeus $v = 3{,}0\,\text{m/s}$, aika katkeamisen jälkeen $t = 2{,}0\,\text{s}$
 **Kysytty:** kiekon etäisyys $d$ radan keskipisteestä yksikössä $\text{m}$
 **Periaate:** Kun naru katkeaa, kiekkoon ei vaikuta vaakasuunnassa voimaa, joten kiekko jatkaa suoraan katkeamishetken nopeudella. Nopeus on radan tangentin suuntainen eli kohtisuorassa sädettä vastaan, joten kiekko liikkuu tangentin suuntaan matkan $s = vt$. Keskipisteestä katkeamiskohtaan on matka $r$ ja siitä eteenpäin kohtisuoraan matka $s$, joten Pythagoraan lauseen mukaan $d^2 = r^2 + s^2$.
-**Kaava:** $d = \sqrt{r^2 + (vt)^2}$
+**Kaava:** $$\begin{aligned} s &= vt \\ d^2 &= r^2 + s^2 \\ d &= \sqrt{r^2 + (vt)^2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: säde on metreinä, aika sekunteina ja nopeus yksikössä $\text{m/s}$.
 **Sijoitus:** $d = \sqrt{(1{,}5\,\text{m})^2 + (3{,}0\,\text{m/s} \cdot 2{,}0\,\text{s})^2} = \sqrt{2{,}25\,\text{m}^2 + 36\,\text{m}^2} = 6{,}185\,\text{m}$
 **Vastaus:** $6{,}2\,\text{m}$, kaksi merkitsevää numeroa kuten tiedoissa $1{,}5\,\text{m}$, $3{,}0\,\text{m/s}$ ja $2{,}0\,\text{s}$.
@@ -52,7 +52,7 @@
 **Annettu:** pyörimistaajuus $f = 45\,\tfrac{1}{\text{min}}$, reunan etäisyys keskipisteestä $r = 8{,}5\,\text{cm}$
 **Kysytty:** levyn reunan ratanopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Levyn reuna on tasaisessa ympyräliikkeessä, jonka säde on reunan etäisyys keskipisteestä. Joka kierroksella reuna kulkee matkan $2\pi r$, ja kierroksia on $f$ aikayksikössä.
-**Kaava:** $v = 2\pi r f$
+**Kaava:** $$\begin{aligned} v &= \dfrac{2\pi r}{T} \\ T &= \dfrac{1}{f} \\ v &= 2\pi r f \end{aligned}$$
 **Muunnokset:** $r = 8{,}5\,\text{cm} = 8{,}5 \cdot 0{,}01\,\text{m} = 0{,}085\,\text{m}$ ja $f = 45\,\tfrac{1}{\text{min}} = \dfrac{45}{60\,\text{s}} = 0{,}75\,\tfrac{1}{\text{s}}$
 **Sijoitus:** $v = 2\pi \cdot 0{,}085\,\text{m} \cdot 0{,}75\,\tfrac{1}{\text{s}} = 0{,}5341\,\text{m} \cdot 0{,}75\,\tfrac{1}{\text{s}} = 0{,}4006\,\text{m/s}$
 **Vastaus:** $0{,}40\,\text{m/s}$, kaksi merkitsevää numeroa kuten säteessä $8{,}5\,\text{cm}$ ja pyörimistaajuudessa $45\,\tfrac{1}{\text{min}}$.
@@ -62,7 +62,7 @@
 **Annettu:** halkaisija $d = 40\,\text{m}$, gondolin vauhti $v = 0{,}35\,\text{m/s}$
 **Kysytty:** kierrosaika $T$ minuutteina
 **Periaate:** Gondoli on tasaisessa ympyräliikkeessä, jonka säde on puolet halkaisijasta. Ratanopeus on kierroksen matka $2\pi r$ jaettuna kierrosajalla, joten kierrosaika saadaan ratkaisemalla se ratanopeuden kaavasta.
-**Kaava:** $v = \dfrac{2\pi r}{T}$, josta $T = \dfrac{2\pi r}{v}$, missä $r = \dfrac{d}{2}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{2\pi r}{T} \\ T &= \dfrac{2\pi r}{v} \\ r &= \dfrac{d}{2} \end{aligned}$$
 **Muunnokset:** $r = \dfrac{40\,\text{m}}{2} = 20\,\text{m}$. Lopuksi sekunnit muunnetaan minuuteiksi sijoittamalla $1\,\text{s} = \tfrac{1}{60}\,\text{min}$.
 **Sijoitus:** $T = \dfrac{2\pi \cdot 20\,\text{m}}{0{,}35\,\text{m/s}} = \dfrac{125{,}66\,\text{m}}{0{,}35\,\text{m/s}} = 359{,}0\,\text{s} = 359{,}0 \cdot \tfrac{1}{60}\,\text{min} = 5{,}98\,\text{min}$
 **Vastaus:** $6{,}0\,\text{min}$, kaksi merkitsevää numeroa kuten vauhdissa $0{,}35\,\text{m/s}$ ja halkaisijassa $40\,\text{m}$.
@@ -72,7 +72,7 @@
 **Annettu:** etäisyys akselista $r = 9{,}5\,\text{cm}$, ratanopeus $v = 45\,\text{m/s}$
 **Kysytty:** pyörimistaajuus $f$ yksikössä $\tfrac{1}{\text{min}}$
 **Periaate:** Koeputken pohja on tasaisessa ympyräliikkeessä. Sekunnissa se kulkee matkan $v$, ja yksi kierros on $2\pi r$, joten kierroksia sekunnissa on matka jaettuna yhden kierroksen pituudella.
-**Kaava:** $v = 2\pi r f$, josta $f = \dfrac{v}{2\pi r}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{2\pi r}{T} \\ T &= \dfrac{1}{f} \\ v &= 2\pi r f \\ f &= \dfrac{v}{2\pi r} \end{aligned}$$
 **Muunnokset:** $r = 9{,}5\,\text{cm} = 9{,}5 \cdot 0{,}01\,\text{m} = 0{,}095\,\text{m}$. Lopuksi $1\,\tfrac{1}{\text{s}} = \tfrac{1}{\frac{1}{60}\,\text{min}} = 60\,\tfrac{1}{\text{min}}$.
 **Sijoitus:** $f = \dfrac{45\,\text{m/s}}{2\pi \cdot 0{,}095\,\text{m}} = \dfrac{45\,\text{m/s}}{0{,}5969\,\text{m}} = 75{,}39\,\tfrac{1}{\text{s}} = 75{,}39 \cdot 60\,\tfrac{1}{\text{min}} = 4523\,\tfrac{1}{\text{min}}$
 **Vastaus:** noin $4{,}5 \cdot 10^{3}\,\tfrac{1}{\text{min}}$ eli $4500$ kierrosta minuutissa, kaksi merkitsevää numeroa kuten ratanopeudessa $45\,\text{m/s}$ ja säteessä $9{,}5\,\text{cm}$.
@@ -82,7 +82,7 @@
 **Annettu:** kärjen etäisyys $r_1 = 52\,\text{m}$ ja ratanopeus $v_1 = 65\,\text{m/s}$, toisen kohdan etäisyys $r_2 = 20\,\text{m}$
 **Kysytty:** kohdan ratanopeus $v_2$ yksikössä $\text{m/s}$
 **Periaate:** Lapa on jäykkä, joten sen kaikki kohdat tekevät kierroksen samassa ajassa $T$. Kaavan $v = \tfrac{2\pi r}{T}$ mukaan ratanopeus on silloin suoraan verrannollinen etäisyyteen akselista.
-**Kaava:** $T = \dfrac{2\pi r_1}{v_1} = \dfrac{2\pi r_2}{v_2}$, josta $v_2 = \dfrac{r_2}{r_1}\, v_1$
+**Kaava:** $$\begin{aligned} v_1 &= \dfrac{2\pi r_1}{T} \\ v_2 &= \dfrac{2\pi r_2}{T} \\ \dfrac{v_2}{v_1} &= \dfrac{r_2}{r_1} \\ v_2 &= \dfrac{r_2}{r_1}\, v_1 \end{aligned}$$
 **Muunnokset:** Ei tarvita: etäisyyksien yksikkö supistuu, ja vauhti on jo yksikössä $\text{m/s}$.
 **Sijoitus:** $v_2 = \dfrac{20\,\text{m}}{52\,\text{m}} \cdot 65\,\text{m/s} = 0{,}3846 \cdot 65\,\text{m/s} = 25{,}0\,\text{m/s}$
 **Vastaus:** $25\,\text{m/s}$, kaksi merkitsevää numeroa kuten etäisyyksissä ja kärjen ratanopeudessa.
@@ -92,7 +92,7 @@
 **Annettu:** sisempi kaari $r_1 = 36{,}5\,\text{m}$, sisemmän vauhti $v_1 = 7{,}0\,\text{m/s}$, ulompi kaari $r_2 = 40{,}2\,\text{m}$; kaaret ovat samankeskisiä puoliympyröitä
 **Kysytty:** ulomman juoksijan vauhti $v_2$ yksikössä $\text{m/s}$
 **Periaate:** Rinnakkain juoksevat ovat koko ajan samalla keskipisteen kautta kulkevalla suoralla, joten he juoksevat puoliympyrän samassa ajassa $t$. Kumpikin on tasaisessa ympyräliikkeessä, ja puolikkaan kierroksen matka on $\pi r$. Kun aika on sama, vauhti on suoraan verrannollinen säteeseen.
-**Kaava:** $t = \dfrac{\pi r_1}{v_1} = \dfrac{\pi r_2}{v_2}$, josta $v_2 = \dfrac{r_2}{r_1}\, v_1$
+**Kaava:** $$\begin{aligned} v_1 &= \dfrac{\pi r_1}{t} \\ v_2 &= \dfrac{\pi r_2}{t} \\ \dfrac{v_2}{v_1} &= \dfrac{r_2}{r_1} \\ v_2 &= \dfrac{r_2}{r_1}\, v_1 \end{aligned}$$
 **Muunnokset:** Ei tarvita: säteiden yksikkö supistuu.
 **Sijoitus:** $v_2 = \dfrac{40{,}2\,\text{m}}{36{,}5\,\text{m}} \cdot 7{,}0\,\text{m/s} = 1{,}1014 \cdot 7{,}0\,\text{m/s} = 7{,}710\,\text{m/s}$
 **Vastaus:** $7{,}7\,\text{m/s}$, kaksi merkitsevää numeroa kuten sisemmän juoksijan vauhdissa $7{,}0\,\text{m/s}$.
@@ -102,7 +102,7 @@
 **Annettu:** vauhti $v = 36\,\text{km/h}$, auto kiertää neljänneksen ympyrästä
 **Kysytty:** nopeuden muutoksen suuruus $|\Delta\overline{v}|$ yksikössä $\text{m/s}$
 **Periaate:** Vauhti pysyy samana, mutta nopeus on aina radan tangentin suuntainen, kohtisuorassa sädettä vastaan. Neljänneskierroksella säde kääntyy $90^\circ$, joten myös nopeus kääntyy $90^\circ$: $\overline{v}_1$ ja $\overline{v}_2$ ovat kohtisuorassa toisiaan vastaan. Kun ne piirretään samasta pisteestä, muutos $\Delta\overline{v} = \overline{v}_2 - \overline{v}_1$ on suorakulmaisen kolmion hypotenuusa, jonka kateetit ovat $v$ ja $v$.
-**Kaava:** $|\Delta\overline{v}|^2 = v^2 + v^2$, josta $|\Delta\overline{v}| = \sqrt{2}\, v$
+**Kaava:** $$\begin{aligned} |\Delta\overline{v}|^2 &= v^2 + v^2 \\ |\Delta\overline{v}| &= \sqrt{2}\, v \end{aligned}$$
 **Muunnokset:** $v = 36\,\tfrac{\text{km}}{\text{h}} = \dfrac{36 \cdot 1000\,\text{m}}{3600\,\text{s}} = 10\,\text{m/s}$
 **Sijoitus:** $|\Delta\overline{v}| = \sqrt{2} \cdot 10\,\text{m/s} = 14{,}14\,\text{m/s}$
 **Vastaus:** $14\,\text{m/s}$, kaksi merkitsevää numeroa kuten vauhdissa $36\,\text{km/h}$.
@@ -112,7 +112,7 @@
 **Annettu:** eturattaan säde $r_\text{e} = 10{,}0\,\text{cm}$, takarattaan säde $r_\text{t} = 4{,}0\,\text{cm}$, takapyörän säde $R = 0{,}34\,\text{m}$, eturattaan pyörimistaajuus $f_\text{e} = 1{,}0\,\tfrac{1}{\text{s}}$; rengas ei luista
 **Kysytty:** pyörän vauhti $u$ yksikössä $\text{km/h}$
 **Periaate:** Ketju liikkuu molempien rattaiden kehällä samalla ratanopeudella $v_\text{k}$, joten $2\pi r_\text{e} f_\text{e} = 2\pi r_\text{t} f_\text{t}$. Takapyörä pyörii samalla taajuudella $f_\text{t}$ kuin takaratas. Kun rengas ei luista, renkaan maata koskettava kohta on hetkellisesti levossa maahan nähden, joten pyörä etenee yhdellä kierroksella renkaan kehän $2\pi R$ verran ja vauhti on $u = 2\pi R f_\text{t}$.
-**Kaava:** $f_\text{t} = \dfrac{r_\text{e}}{r_\text{t}}\, f_\text{e}$ ja $u = 2\pi R f_\text{t}$, josta $u = 2\pi R\, \dfrac{r_\text{e}}{r_\text{t}}\, f_\text{e}$
+**Kaava:** $$\begin{aligned} v_\text{k} &= 2\pi r_\text{e} f_\text{e} \\ v_\text{k} &= 2\pi r_\text{t} f_\text{t} \\ f_\text{t} &= \dfrac{r_\text{e}}{r_\text{t}}\, f_\text{e} \\ u &= 2\pi R f_\text{t} \\ u &= 2\pi R\, \dfrac{r_\text{e}}{r_\text{t}}\, f_\text{e} \end{aligned}$$
 **Muunnokset:** Rattaiden säteiden yksikkö supistuu. Lopuksi $1\,\text{m/s} = \dfrac{0{,}001\,\text{km}}{\frac{1}{3600}\,\text{h}} = 3{,}6\,\tfrac{\text{km}}{\text{h}}$.
 **Sijoitus:** $f_\text{t} = \dfrac{10{,}0\,\text{cm}}{4{,}0\,\text{cm}} \cdot 1{,}0\,\tfrac{1}{\text{s}} = 2{,}5\,\tfrac{1}{\text{s}}$, $u = 2\pi \cdot 0{,}34\,\text{m} \cdot 2{,}5\,\tfrac{1}{\text{s}} = 5{,}341\,\text{m/s} = 5{,}341 \cdot 3{,}6\,\tfrac{\text{km}}{\text{h}} = 19{,}23\,\tfrac{\text{km}}{\text{h}}$
 **Vastaus:** $19\,\text{km/h}$, kaksi merkitsevää numeroa kuten takarattaan säteessä $4{,}0\,\text{cm}$ ja takapyörän säteessä $0{,}34\,\text{m}$.
@@ -206,7 +206,7 @@ v_{\text{geo}} &= \frac{2\pi \cdot 42{,}16 \cdot 10^{6}\,\text{m}}{86\,160\,\tex
 **Annettu:** renkaan halkaisija $d = 64\,\text{cm}$, pyörimistaajuus $f = 8{,}0\,\tfrac{1}{\text{s}}$; oppilaan tulos $32\,\text{m/s}$
 **Kysytty:** oppilaan virhe ja renkaan reunan oikea ratanopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Kaavassa $v = 2\pi r f$ tarvitaan radan säde $r$. Renkaan reunan rata on ympyrä, jonka säde on puolet halkaisijasta, $r = \tfrac{d}{2}$. Oppilas sijoitti kaavaan halkaisijan säteen paikalle.
-**Kaava:** $v = 2\pi r f$, $\quad r = \dfrac{d}{2}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{2\pi r}{T} \\ T &= \dfrac{1}{f} \\ v &= 2\pi r f \\ r &= \dfrac{d}{2} \end{aligned}$$
 **Muunnokset:** $d = 64\,\text{cm} = 0{,}64\,\text{m}$, joten $r = \dfrac{0{,}64\,\text{m}}{2} = 0{,}32\,\text{m}$
 **Sijoitus:** Kaavaan $v = 2\pi r f$ sijoittamalla
 ```latex
@@ -222,7 +222,7 @@ v &= 2\pi \cdot 0{,}32\,\text{m} \cdot 8{,}0\,\tfrac{1}{\text{s}} \\
 **Annettu:** leveysasteet $\varphi_{\text{Kourou}} = 5{,}2\,{}^\circ$, $\varphi_{\text{Canaveral}} = 28{,}5\,{}^\circ$ ja $\varphi_{\text{Plesetsk}} = 62{,}7\,{}^\circ$; Maan säde $R = 6371\,\text{km}$, kierrosaika $T = 86\,164\,\text{s}$, matalan radan vauhti $7{,}7\,\text{km/s}$
 **Kysytty:** laukaisupaikkojen ratanopeudet, Kourousta ja Plesetskista saatavan vauhdin erotus $\Delta v$ yksikössä $\text{m/s}$ ja Kourousta saatava vauhti prosentteina matalan radan vauhdista
 **Periaate:** Maa pyörii jäykkänä, joten jokainen paikka kiertää Maan akselia tasaisessa ympyräliikkeessä kierrosajalla $T$. Paikan rata on leveysympyrä, jonka säde on $r = R\cos\varphi$: Maan keskipisteestä paikkaan piirretty säde $R$ muodostaa leveysasteen $\varphi$ suuruisen kulman päiväntasaajan tason kanssa, ja paikan etäisyys akselista on tämän säteen päiväntasaajan suuntainen osa $R\cos\varphi$. Raketti saa itään laukaistuna lähtövauhdikseen paikan ratanopeuden.
-**Kaava:** $r = R\cos\varphi$, $\quad v = \dfrac{2\pi r}{T}$
+**Kaava:** $$\begin{aligned} r &= R\cos\varphi \\ v &= \dfrac{2\pi r}{T} \\ v &= \dfrac{2\pi R\cos\varphi}{T} \end{aligned}$$
 **Muunnokset:** $R = 6371\,\text{km} = 6{,}371 \cdot 10^{6}\,\text{m}$ ja $7{,}7\,\text{km/s} = 7700\,\text{m/s}$
 **Sijoitus:** Leveysympyröiden säteet ovat $r_{\text{Kourou}} = 6{,}371 \cdot 10^{6}\,\text{m} \cdot \cos 5{,}2\,{}^\circ = 6{,}345 \cdot 10^{6}\,\text{m}$, $r_{\text{Canaveral}} = 5{,}599 \cdot 10^{6}\,\text{m}$ ja $r_{\text{Plesetsk}} = 2{,}922 \cdot 10^{6}\,\text{m}$. Ratanopeudet ovat
 ```latex
@@ -252,7 +252,7 @@ Paikkojen ratanopeudet eroavat, koska kaikki tekevät kierroksen samassa ajassa 
 **Annettu:** ratanopeus $v = 1{,}2\,\text{m/s}$, uran alku $r_1 = 25\,\text{mm}$, uran loppu $r_2 = 58\,\text{mm}$, uran kierrosten väli $1{,}6\,\mu\text{m}$
 **Kysytty:** pyörimistaajuus uran alussa ja lopussa yksikössä $\tfrac{1}{\text{min}}$ sekä soittoaika $t$ minuutteina; vastauslaatikkoon soittoaika
 **Periaate:** Laser lukee uraa vakioratanopeudella, joten ratanopeus on sama joka säteellä. Ratanopeudelle pätee $v = 2\pi r f$, josta pyörimistaajuus on $f = \tfrac{v}{2\pi r}$: kun säde kasvaa, pyörimistaajuus pienenee. Uran kierrosten lukumäärä saadaan jakamalla uran säteen kasvu kierrosten välillä. Kun säde kasvaa tasaisesti, uran pituus on kierrosten lukumäärä kertaa keskimääräisen säteen ympyrän kehä. Vakiovauhdilla soittoaika on uran pituus jaettuna ratanopeudella.
-**Kaava:** $f = \dfrac{v}{2\pi r}$, $\quad N = \dfrac{r_2 - r_1}{\Delta r}$, $\quad s = N \cdot 2\pi r_{\text{ka}}$, $\quad t = \dfrac{s}{v}$
+**Kaava:** $$\begin{aligned} v &= 2\pi r f \\ f &= \dfrac{v}{2\pi r} \\ N &= \dfrac{r_2 - r_1}{\Delta r} \\ s &= N \cdot 2\pi r_{\text{ka}} \\ t &= \dfrac{s}{v} \end{aligned}$$
 **Muunnokset:** $r_1 = 25\,\text{mm} = 0{,}025\,\text{m}$, $r_2 = 0{,}058\,\text{m}$ ja kierrosten väli $\Delta r = 1{,}6\,\mu\text{m} = 1{,}6 \cdot 10^{-6}\,\text{m} = 0{,}0016\,\text{mm}$. Pyörimistaajuus muunnetaan $\tfrac{1}{\text{s}}$:sta yksikköön $\tfrac{1}{\text{min}}$ kertomalla luvulla $60$.
 **Sijoitus:** Kohta a):
 ```latex
@@ -305,7 +305,7 @@ Koska $v = 2\pi r f$, samalla ratanopeudella pyörimistaajuuden täytyy pienenty
 **Kysytty:** ratanopeuksien erotus $v_\text{B} - v_\text{A}$ yksikössä $\text{m/s}$
 **Periaate:** Jäykän karusellin jokaisella pisteellä on sama pyörimistaajuus. Pisteen ratanopeus on $v = 2\pi r f$, joten pisteet eroavat toisistaan vain säteensä vuoksi.
 **Kuvaajan lukeminen:** Mittanuolet näyttävät $r_\text{A} = 0{,}60\,\text{m}$ ja $r_\text{B} = 1{,}80\,\text{m}$, kumpikin mitattuna keskipisteestä.
-**Kaava:** $\Delta v = v_\text{B} - v_\text{A} = 2\pi f\,(r_\text{B} - r_\text{A})$
+**Kaava:** $$\begin{aligned} v_\text{A} &= 2\pi f r_\text{A} \\ v_\text{B} &= 2\pi f r_\text{B} \\ \Delta v &= v_\text{B} - v_\text{A} \\ \Delta v &= 2\pi f\,(r_\text{B} - r_\text{A}) \end{aligned}$$
 **Muunnokset:** $f = 20\,\tfrac{1}{\text{min}} = \dfrac{20}{60\,\text{s}} = 0{,}3333\,\tfrac{1}{\text{s}}$
 **Sijoitus:**
 

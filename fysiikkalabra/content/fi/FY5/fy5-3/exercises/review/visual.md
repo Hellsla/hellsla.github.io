@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f30aa7ced08c859a
+CONTENT-HASH: a87d1199dc24605e
 
 ## Blocking
 (none)
@@ -8,9 +8,8 @@ CONTENT-HASH: f30aa7ced08c859a
 (none)
 
 ## Checked
-- Own capture w3-390-1.png (a Vastaus block in the geostationary-satellite exercise): card layout and maths survive at 390 px. It is not the changed Vastaus at line 244 (search phrase matched another block).
-- Changed blocks (Mallivastaus line 122, Vastaus lines 244 and 275) judged from the diff: same word-for-word paragraph cut, same card spacing as fy5-1/2.
-- scrollWidth 390 and 1280.
+- Captures (content/fi/FY5/fy5-3/review/shots, current for this hash): open-exercises-1280-2 (3-3, unchanged single-line Kaava beside the edited ones), L3-1280-3 (3-22 Kaava start), L3-1280-4 (3-22 Kaava end, Muunnokset, Sijoitus).
+- Multi-row Kaava blocks (5 rows in 3-22) align at `=`, KaTeX clean, subscripts and fractions legible, no clipping or overflow; Sijoitus and answers unchanged. Picture karuselli (teacher-approved, carried) not opened.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4

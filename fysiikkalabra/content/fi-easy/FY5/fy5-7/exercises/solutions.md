@@ -12,7 +12,7 @@
 **Annettu:** taajuus $f = 196\,\text{Hz}$
 **Kysytty:** jaksonaika $T$ millisekunteina
 **Periaate:** Jaksonaika on yhden värähdyksen kesto. Taajuus on värähdysten määrä sekunnissa. Ne ovat toistensa käänteislukuja, joten jaksonaika ratkaistaan taajuuden kaavasta.
-**Kaava:** $f = \dfrac{1}{T}$, josta $T = \dfrac{1}{f}$
+**Kaava:** $$\begin{aligned} f &= \dfrac{1}{T} \\ T &= \dfrac{1}{f} \end{aligned}$$
 **Muunnokset:** $1\,\text{Hz} = 1\,\tfrac{1}{\text{s}}$, joten jaksonaika saadaan sekunteina; lopuksi $1\,\text{s} = 1000\,\text{ms}$.
 **Sijoitus:** $T = \dfrac{1}{196\,\tfrac{1}{\text{s}}} = 0{,}005102\,\text{s} = 0{,}005102 \cdot 1000\,\text{ms} = 5{,}102\,\text{ms}$
 **Vastaus:** $5{,}10\,\text{ms}$, kolme merkitsevää numeroa kuten taajuudessa $196\,\text{Hz}$.
@@ -60,7 +60,7 @@ Lukujen suora vertaaminen ($3{,}0$ on suurempi kuin $0{,}25$) on virhe, koska ne
 **Annettu:** taajuus $f = 1{,}6\,\text{Hz}$, värähdysten määrä $n = 40$
 **Kysytty:** aika $t$, joka kuluu $40$ täyteen värähdykseen, sekunteina
 **Periaate:** Yksi värähdys kestää jaksonajan $T = \tfrac{1}{f}$. Värähdykset ovat keskenään samanlaisia, joten $n$ värähdystä kestää $n$ kertaa jaksonajan.
-**Kaava:** $t = n T$, ja koska $T = \tfrac{1}{f}$, $t = \dfrac{n}{f}$
+**Kaava:** $$\begin{aligned} T &= \dfrac{1}{f} \\ t &= nT \\ t &= \dfrac{n}{f} \end{aligned}$$
 **Muunnokset:** Ei tarvita. $1\,\text{Hz} = 1\,\tfrac{1}{\text{s}}$, joten aika tulee sekunteina.
 **Sijoitus:** $t = \dfrac{40}{1{,}6\,\tfrac{1}{\text{s}}} = 25\,\text{s}$
 **Vastaus:** $25\,\text{s}$, kaksi merkitsevää numeroa kuten taajuudessa $1{,}6\,\text{Hz}$. Värähdysten määrä $40$ on tarkka luku.
@@ -88,7 +88,7 @@ Jaksonaika ei ole kiinteä ominaisuus, koska se muuttuu taajuuden mukana. Se ei 
 **Annettu:** sinisovituksen kerroin $B = 12{,}6\,\tfrac{1}{\text{s}}$
 **Kysytty:** värähtelyn taajuus $f$ hertseinä
 **Periaate:** Sovitusmallissa $y = A \sin(Bt + C) + D$ kerroin $B$ vastaa sinimallin lauseketta $\tfrac{2\pi}{T}$. Yhden jaksonajan aikana sinin argumentti kasvaa $2\pi$:n verran. Jaksonajasta saadaan taajuus käänteislukuna.
-**Kaava:** $B = \dfrac{2\pi}{T}$, josta $T = \dfrac{2\pi}{B}$, ja $f = \dfrac{1}{T}$, joten $f = \dfrac{B}{2\pi}$
+**Kaava:** $$\begin{aligned} B &= \dfrac{2\pi}{T} \\ T &= \dfrac{2\pi}{B} \\ f &= \dfrac{1}{T} \\ f &= \dfrac{B}{2\pi} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Kerroin $B$ on yksikössä $\tfrac{1}{\text{s}}$, joten taajuus saadaan yksikössä $\tfrac{1}{\text{s}} = \text{Hz}$.
 **Sijoitus:** $f = \dfrac{12{,}6\,\tfrac{1}{\text{s}}}{2\pi} = \dfrac{12{,}6\,\tfrac{1}{\text{s}}}{6{,}283} = 2{,}005\,\text{Hz}$
 **Vastaus:** $2{,}01\,\text{Hz}$, kolme merkitsevää numeroa kuten kertoimessa $12{,}6\,\tfrac{1}{\text{s}}$.
@@ -98,7 +98,7 @@ Jaksonaika ei ole kiinteä ominaisuus, koska se muuttuu taajuuden mukana. Se ei 
 **Annettu:** neula liikkuu ylös ja alas $900$ kertaa minuutissa
 **Kysytty:** neulan liikkeen jaksonaika $T$ millisekunteina
 **Periaate:** Yksi ylös–alas-liike on yksi täysi värähdys. Liikkeiden määrä aikayksikössä on siis taajuus. Jaksonaika on taajuuden käänteisluku. Muunnetaan ensin taajuus värähdyksiksi sekunnissa.
-**Kaava:** $f = \dfrac{1}{T}$, josta $T = \dfrac{1}{f}$
+**Kaava:** $$\begin{aligned} f &= \dfrac{1}{T} \\ T &= \dfrac{1}{f} \end{aligned}$$
 **Muunnokset:** $f = 900\,\tfrac{1}{\text{min}} = \dfrac{900}{60\,\text{s}} = 15\,\text{Hz}$; lopuksi $1\,\text{s} = 1000\,\text{ms}$.
 **Sijoitus:** $T = \dfrac{1}{15\,\tfrac{1}{\text{s}}} = 0{,}06667\,\text{s} = 0{,}06667 \cdot 1000\,\text{ms} = 66{,}67\,\text{ms}$
 **Vastaus:** $66{,}7\,\text{ms}$. Lukumäärä $900$ kertaa minuutissa on tarkka. Siksi tulos pyöristetään tavalliseen kolmeen merkitsevään numeroon.
@@ -108,7 +108,7 @@ Jaksonaika ei ole kiinteä ominaisuus, koska se muuttuu taajuuden mukana. Se ei 
 **Annettu:** pienin etäisyys tunnistimesta $d_\text{min} = 32{,}0\,\text{cm}$, suurin $d_\text{max} = 47{,}0\,\text{cm}$
 **Kysytty:** värähtelyn amplitudi $A$ senttimetreinä
 **Periaate:** Pienin ja suurin etäisyys ovat punnuksen ääriasemat. Tasapainoasema on ääriasemien puolivälissä, ja amplitudi mitataan tasapainoasemasta ääriasemaan. Siksi ääriasemien välinen etäisyys on kaksi kertaa amplitudi.
-**Kaava:** $d_\text{max} - d_\text{min} = 2A$, josta $A = \dfrac{d_\text{max} - d_\text{min}}{2}$
+**Kaava:** $$\begin{aligned} d_\text{max} - d_\text{min} &= 2A \\ A &= \dfrac{d_\text{max} - d_\text{min}}{2} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Kumpikin etäisyys on senttimetreinä.
 **Sijoitus:** $A = \dfrac{47{,}0\,\text{cm} - 32{,}0\,\text{cm}}{2} = \dfrac{15{,}0\,\text{cm}}{2} = 7{,}50\,\text{cm}$
 **Vastaus:** $7{,}50\,\text{cm}$, kolme merkitsevää numeroa kuten etäisyyksien erotuksessa $15{,}0\,\text{cm}$.
@@ -119,7 +119,7 @@ Jaksonaika ei ole kiinteä ominaisuus, koska se muuttuu taajuuden mukana. Se ei 
 **Kysytty:** värähtelyn taajuus $f$ hertseinä
 **Periaate:** Kahden peräkkäisen huipun väli on yksi jaksonaika. Huipussa kappale on samassa paikassa ja liikkeen vaihe on sama. Ensimmäisen ja kuudennen huipun välissä on viisi jaksoa, ei kuutta. Kun käytät koko mittaussarjaa, lukemisen epätarkkuus jakautuu usealle jaksolle. Taajuus saadaan jaksonajan käänteislukuna.
 **Taulukon lukeminen:** Taulukosta luetaan ensimmäisen huipun aika $0{,}42\,\text{s}$ ja kuudennen huipun aika $3{,}47\,\text{s}$. Niiden väliin mahtuu viisi huippujen väliä.
-**Kaava:** $T = \dfrac{t_6 - t_1}{5}$ ja $f = \dfrac{1}{T}$
+**Kaava:** $$\begin{aligned} t_6 - t_1 &= 5T \\ T &= \dfrac{t_6 - t_1}{5} \\ f &= \dfrac{1}{T} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Ajat ovat sekunteina, joten taajuus tulee hertseinä.
 **Sijoitus:** $T = \dfrac{3{,}47\,\text{s} - 0{,}42\,\text{s}}{5} = \dfrac{3{,}05\,\text{s}}{5} = 0{,}61\,\text{s}$, joten $f = \dfrac{1}{0{,}61\,\text{s}} = 1{,}639\,\text{Hz}$
 **Vastaus:** $1{,}64\,\text{Hz}$, kolme merkitsevää numeroa kuten taulukon ajoissa.
@@ -129,7 +129,7 @@ Jaksonaika ei ole kiinteä ominaisuus, koska se muuttuu taajuuden mukana. Se ei 
 **Annettu:** viisi mittausta $10$ heilahduksen ajalle: $15{,}2\,\text{s}$, $14{,}8\,\text{s}$, $15{,}4\,\text{s}$, $15{,}0\,\text{s}$ ja $15{,}1\,\text{s}$
 **Kysytty:** heilurin jaksonaika $T$ sekunteina (kohta a). Lisäksi hajonnan arvio ja perustelu (kohta b).
 **Periaate:** Mittaustulokset vaihtelevat satunnaisesti, joten niistä lasketaan keskiarvo $t_{\text{ka}}$. Se on kymmenen heilahduksen aika. Jaksonaika on yhden heilahduksen kesto eli kymmenesosa siitä.
-**Kaava:** $t_{\text{ka}} = \dfrac{\text{aikojen summa}}{5}$ ja $T = \dfrac{t_{\text{ka}}}{10}$
+**Kaava:** $$\begin{aligned} t_{\text{ka}} &= \dfrac{\text{aikojen summa}}{5} \\ t_{\text{ka}} &= 10T \\ T &= \dfrac{t_{\text{ka}}}{10} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Kaikki ajat ovat sekunteina.
 **Sijoitus:** Aikojen summa on $75{,}5\,\text{s}$, joten $t_{\text{ka}} = \dfrac{75{,}5\,\text{s}}{5} = 15{,}1\,\text{s}$ ja $T = \dfrac{15{,}1\,\text{s}}{10} = 1{,}51\,\text{s}$
 **Vastaus:** a) $1{,}51\,\text{s}$, kolme merkitsevää numeroa kuten mittausajoissa. Kohta b): mittausten vaihteluväli on $15{,}4\,\text{s} - 14{,}8\,\text{s} = 0{,}6\,\text{s}$. Hajonnan arvio on sen puolikas, $0{,}3\,\text{s}$ kymmenelle heilahdukselle. Jaksonajalle se on $\tfrac{0{,}3\,\text{s}}{10} = 0{,}03\,\text{s}$, eli $T \approx 1{,}51\,\text{s} \pm 0{,}03\,\text{s}$.
@@ -142,7 +142,7 @@ Käsin ajanotossa virhe on samaa suuruusluokkaa riippumatta heilahdusten määr�
 **Kysytty:** oppilaan virhe ja oikea taajuus $f$ hertseinä
 **Periaate:** Jaksonaika on aika, jonka kuluttua kappale on samassa paikassa ja liikkuu samaan suuntaan. Peräkkäisissä ohituksissa suunta vaihtuu (taulukossa ylös ja alas vuorotellen). Niiden väli on siis vain puoli jaksoa. Täysi jakso mitataan samansuuntaisten ohitusten väliltä.
 **Taulukon lukeminen:** Taulukosta valitaan vain ylöspäin tapahtuvat ohitukset hetkinä $0{,}00\,\text{s}$, $0{,}75\,\text{s}$ ja $1{,}49\,\text{s}$. Ensimmäisen ja viimeisen väliin mahtuu kaksi täyttä jaksoa.
-**Kaava:** $T = \dfrac{t_5 - t_1}{2}$ ja $f = \dfrac{1}{T}$
+**Kaava:** $$\begin{aligned} t_5 - t_1 &= 2T \\ T &= \dfrac{t_5 - t_1}{2} \\ f &= \dfrac{1}{T} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Ajat ovat sekunteina.
 **Sijoitus:** Ylöspäin ohitukset ovat hetkinä $t_1 = 0{,}00\,\text{s}$, $t_3 = 0{,}75\,\text{s}$ ja $t_5 = 1{,}49\,\text{s}$. Niiden välillä on kaksi jaksoa. $T = \dfrac{1{,}49\,\text{s} - 0{,}00\,\text{s}}{2} = 0{,}745\,\text{s}$ ja $f = \dfrac{1}{0{,}745\,\text{s}} = 1{,}342\,\text{Hz}$
 **Vastaus:** $1{,}34\,\text{Hz}$, kolme merkitsevää numeroa kuten taulukon ajoissa. Oppilas käytti jaksonaikana puolta jaksoa, joten hänen taajuutensa oli kaksinkertainen.
@@ -154,7 +154,7 @@ Käsin ajanotossa virhe on samaa suuruusluokkaa riippumatta heilahdusten määr�
 **Periaate:** Värähtely on sinimuotoista, ja ajanotto alkaa tasapainoaseman ohituksesta positiiviseen suuntaan. Siksi $x = A \sin\left(\tfrac{2\pi t}{T}\right)$. Kun $x = \tfrac{A}{2}$, sinin arvo on $\tfrac{1}{2}$. Ensimmäinen kerta vastaa pienintä positiivista kulmaa, jolla sini on $\tfrac{1}{2}$.
 
 Suorakulmaisessa kolmiossa, jonka kulma on $30^\circ$, vastainen kateetti on puolet hypotenuusasta. Siis $\sin 30^\circ = \tfrac{1}{2}$. Koska $180^\circ = \pi$, kulma on $30^\circ = \tfrac{\pi}{6}$. Seuraava kulma $150^\circ$ osuisi vasta laskuvaiheeseen. Amplitudi supistuu pois, joten sitä ei tarvita.
-**Kaava:** $\dfrac{A}{2} = A \sin\left(\dfrac{2\pi t}{T}\right)$, josta $\dfrac{2\pi t}{T} = \dfrac{\pi}{6}$, joten $t = \dfrac{T}{12}$
+**Kaava:** $$\begin{aligned} x &= A \sin\left(\dfrac{2\pi t}{T}\right) \\ x = \dfrac{A}{2} &\Rightarrow \sin\left(\dfrac{2\pi t}{T}\right) = \dfrac{1}{2} \\ \dfrac{2\pi t}{T} &= \dfrac{\pi}{6} \\ t &= \dfrac{T}{12} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Jaksonaika on sekunteina, ja kulma on radiaaneina.
 **Sijoitus:** $t = \dfrac{1{,}2\,\text{s}}{12} = 0{,}10\,\text{s}$
 **Vastaus:** $0{,}10\,\text{s}$, kaksi merkitsevää numeroa kuten jaksonajassa $1{,}2\,\text{s}$.
@@ -164,7 +164,7 @@ Suorakulmaisessa kolmiossa, jonka kulma on $30^\circ$, vastainen kateetti on puo
 **Annettu:** napin etäisyys akselista $r = 15\,\text{cm}$, pyörimistaajuus $45\,\tfrac{1}{\text{min}}$, aika keskikohdan ohituksesta $t = 0{,}20\,\text{s}$
 **Kysytty:** varjon etäisyys $x$ liikkeen keskikohdasta senttimetreinä
 **Periaate:** Nappi on tasaisessa ympyräliikkeessä. Vaakasuora valo heittää seinälle napin korkeuden akselin tasosta. Ympyräliikkeessä olevan pisteen korkeus värähtelee sinimuotoisesti. Amplitudi on ympyrän säde, ja taajuus on pyörimistaajuus. Valo tulee kaukaa ja on yhdensuuntaista, joten varjon etäisyys keskikohdasta on yhtä suuri kuin napin korkeus akselin tasosta. Aika lasketaan keskikohdan ohituksesta ylöspäin, joten käytetään sinimallia.
-**Kaava:** $x = A \sin(2\pi f t)$, missä $A = r$, eli $x = r \sin(2\pi f t)$
+**Kaava:** $$\begin{aligned} x &= A \sin(2\pi f t) \\ A &= r \\ x &= r \sin(2\pi f t) \end{aligned}$$
 **Muunnokset:** $f = 45\,\tfrac{1}{\text{min}} = \dfrac{45}{60\,\text{s}} = 0{,}75\,\text{Hz}$
 **Sijoitus:** $x = 15\,\text{cm} \cdot \sin(2\pi \cdot 0{,}75\,\text{Hz} \cdot 0{,}20\,\text{s}) = 15\,\text{cm} \cdot \sin 0{,}9425 = 15\,\text{cm} \cdot 0{,}8090 = 12{,}14\,\text{cm}$
 **Vastaus:** $12\,\text{cm}$ keskikohdan yläpuolella, kaksi merkitsevää numeroa kuten etäisyydessä $15\,\text{cm}$ ja tahdissa $45\,\tfrac{1}{\text{min}}$.
@@ -174,7 +174,7 @@ Suorakulmaisessa kolmiossa, jonka kulma on $30^\circ$, vastainen kateetti on puo
 **Annettu:** jaksonajat $T_1 = 0{,}60\,\text{s}$ ja $T_2 = 0{,}90\,\text{s}$, molemmat ohittavat tasapainoaseman ylöspäin hetkellä $0$
 **Kysytty:** lyhin aika $t$, jonka kuluttua ne ohittavat tasapainoaseman ylöspäin taas yhtä aikaa
 **Periaate:** Ensimmäinen punnus ohittaa tasapainoaseman ylöspäin aina täyden jaksonajan välein. Hetket ovat $0{,}60\,\text{s}$, $1{,}20\,\text{s}$, $1{,}80\,\text{s}$, … Toinen punnus ohittaa sen hetkinä $0{,}90\,\text{s}$, $1{,}80\,\text{s}$, … Etsitään lyhin aika, joka on kummankin jaksonajan kokonainen monikerta. Etsitään siis kokonaisluvut $k$ ja $m$, joilla $k T_1 = m T_2$.
-**Kaava:** $k T_1 = m T_2$, josta $\dfrac{k}{m} = \dfrac{T_2}{T_1}$, ja $t = k T_1$ pienimmällä kokonaisluvulla $k$
+**Kaava:** $$\begin{aligned} k T_1 &= m T_2 \\ \dfrac{k}{m} &= \dfrac{T_2}{T_1} \\ t &= k T_1 \quad (\text{pienin kokonaisluku }k) \end{aligned}$$
 **Muunnokset:** Ei tarvita. Kumpikin jaksonaika on sekunteina.
 **Sijoitus:** $\dfrac{k}{m} = \dfrac{0{,}90\,\text{s}}{0{,}60\,\text{s}} = 1{,}5 = \dfrac{3}{2}$, joten $k = 3$ ja $t = 3 \cdot 0{,}60\,\text{s} = 1{,}80\,\text{s}$
 **Vastaus:** $1{,}8\,\text{s}$, kaksi merkitsevää numeroa kuten jaksonajoissa $0{,}60\,\text{s}$ ja $0{,}90\,\text{s}$.
@@ -184,7 +184,7 @@ Suorakulmaisessa kolmiossa, jonka kulma on $30^\circ$, vastainen kateetti on puo
 **Annettu:** R-piikkien ajat taulukossa: levossa lyönti 6 eli kuudennen lyöntivälin loppu $t_{\text{lepo}} = 4{,}96\,\text{s}$ ja rasituksen jälkeen $t_{\text{rasitus}} = 2{,}77\,\text{s}$. Kumpikin on laskettu lyönnistä 0 eli ajasta $0\,\text{s}$. Lyöntivälejä on $n = 6$.
 **Kysytty:** pulssin (taajuuden) kasvu $p$ prosentteina levosta rasitukseen
 **Periaate:** Lyönnit toistuvat likimain tasaisesti, joten niitä käsitellään jaksollisena liikkeenä. Lyöntiväli on jaksonaika $T$, ja pulssi on taajuus $f = \tfrac{1}{T}$ eli lyöntejä aikayksikössä. Jaksonaika määritetään koko kuudesta välistä, koska silloin yksittäisten välien vaihtelu tasoittuu. Pulssin kasvu on taajuuksien erotus jaettuna lepotaajuudella.
-**Kaava:** $T = \dfrac{t_6}{6}$, $f = \dfrac{1}{T}$ ja $p = \dfrac{f_{\text{rasitus}} - f_{\text{lepo}}}{f_{\text{lepo}}} \cdot 100\,\%$
+**Kaava:** $$\begin{aligned} t_6 &= 6T \\ T &= \dfrac{t_6}{6} \\ f &= \dfrac{1}{T} \\ p &= \dfrac{f_{\text{rasitus}} - f_{\text{lepo}}}{f_{\text{lepo}}} \cdot 100\,\% \end{aligned}$$
 **Muunnokset:** Pulssi minuutissa: $1\,\text{Hz} = 60\,\tfrac{1}{\text{min}}$. Prosentin laskussa yksiköt supistuvat pois.
 **Sijoitus:** Levossa $T_{\text{lepo}} = \dfrac{4{,}96\,\text{s}}{6} = 0{,}8267\,\text{s}$ ja $f_{\text{lepo}} = \dfrac{1}{0{,}8267\,\text{s}} = 1{,}210\,\text{Hz} = 72{,}6\,\tfrac{1}{\text{min}}$. Rasituksen jälkeen $T_{\text{rasitus}} = \dfrac{2{,}77\,\text{s}}{6} = 0{,}4617\,\text{s}$ ja $f_{\text{rasitus}} = \dfrac{1}{0{,}4617\,\text{s}} = 2{,}166\,\text{Hz} = 130\,\tfrac{1}{\text{min}}$. Kasvu on $p = \dfrac{2{,}166\,\text{Hz} - 1{,}210\,\text{Hz}}{1{,}210\,\text{Hz}} \cdot 100\,\% = 79{,}06\,\%$.
 **Vastaus:** $79{,}1\,\%$, kolme merkitsevää numeroa kuten ajoissa $4{,}96\,\text{s}$ ja $2{,}77\,\text{s}$. Kohdan c) perustelu: yksittäinen väli vaihtelee ($0{,}81\,\text{s}$ … $0{,}85\,\text{s}$ levossa). Kuuden välin kokonaisaika jaettuna kuudella tasoittaa vaihtelun, ja ajanottovirhe jakautuu kuudelle välille.
@@ -195,7 +195,7 @@ Suorakulmaisessa kolmiossa, jonka kulma on $30^\circ$, vastainen kateetti on puo
 **Kysytty:** etäisyys $d$ hetkellä $5{,}0\,\text{s}$ senttimetreinä
 **Periaate:** Värähtely oletetaan sinimuotoiseksi ja vaimenemattomaksi. Mittaus alkaa tasapainoaseman ohituksesta etäisyyden kasvaessa, joten malli on $d = D + A \sin\left(\tfrac{2\pi t}{T}\right)$ ilman vaihetermiä. Parametrit luetaan taulukosta, ja malli ennustaa tulevan arvon.
 **Taulukon lukeminen:** Etäisyys palaa lähtöarvoonsa $40{,}1\,\text{cm}$ ja alkaa taas kasvaa hetkellä $1{,}6\,\text{s}$, joten yksi värähdys kestää $T = 1{,}6\,\text{s}$.
-**Kaava:** $D = \dfrac{d_{\max} + d_{\min}}{2}$, $A = \dfrac{d_{\max} - d_{\min}}{2}$ ja $d = D + A \sin\left(\dfrac{2\pi t}{T}\right)$
+**Kaava:** $$\begin{aligned} d_{\max} &= D + A \\ d_{\min} &= D - A \\ D &= \dfrac{d_{\max} + d_{\min}}{2} \\ A &= \dfrac{d_{\max} - d_{\min}}{2} \\ d &= D + A \sin\left(\dfrac{2\pi t}{T}\right) \end{aligned}$$
 **Muunnokset:** Ei tarvita. Etäisyydet ovat senttimetreinä ja ajat sekunteina. Laskin on radiaanitilassa.
 **Sijoitus:** $D = \dfrac{46{,}0\,\text{cm} + 34{,}0\,\text{cm}}{2} = 40{,}0\,\text{cm}$ ja $A = \dfrac{46{,}0\,\text{cm} - 34{,}0\,\text{cm}}{2} = 6{,}0\,\text{cm}$. Hetkellä $5{,}0\,\text{s}$ sinin argumentti on $19{,}63$, ja $d = 40{,}0\,\text{cm} + 6{,}0\,\text{cm} \cdot \sin 19{,}63 = 40{,}0\,\text{cm} + 6{,}0\,\text{cm} \cdot 0{,}7071 = 44{,}24\,\text{cm}$
 **Vastaus:** $44\,\text{cm}$, kaksi merkitsevää numeroa. Jaksonaika $1{,}6\,\text{s}$ on luettu taulukosta $0{,}2\,\text{s}$:n välein, ja ennuste on ekstrapolointia eli arvio mittausalueen ulkopuolelle. Arvoksi $D$ kelpaa sekä $40{,}0\,\text{cm}$ että $40{,}1\,\text{cm}$.

@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 9bdcb25618c858ae
-ROUND: 2
+CONTENT-HASH: 61e74317205bae5b
+none
 
 ## Blocking
-(none)
 
 ## Polish
-(none) The delta adds "Putken pääkorjausta ei huomioida." to L2-02 and the same remark to its solution; the sentence is clear and fits the task's situation, and the Järkevyys block now reads logically.
+- [Minor] solutions.md L1-03 Kaava: the side condition "(n = 1, 3, 5, ...)" sits at the end of the first row after a wide fraction; on a phone it may wrap, acceptable.
 
 ## Checked
-- open-exercises-L2-1280-3 (L2-02 solution end, Järkevyys block with the new wording; L2-03 solution layout) and open-exercises-L3-1280-3 (L3 closed-tube task): formulas, units and aligned chains render correctly, nothing clipped.
-- The figure change (kuvio-tehtava code, animated flag) is figure code only; fig-4 and fig-5 captures (390 px) show the tube and string figures unchanged and clean.
+- Delta round 1: Kaava steps rewritten as aligned symbolic chains (solutions.md only).
+- Opened fy5-13-open-exercises-1280-2 (13-3 four-row Kaava, Sijoitus), -3 (13-4, unchanged Kaava), L2-1280-6 (13-16 four-row Kaava, Sijoitus), L2-1280-8 (13-17) in fi-easy.
+- Kaava boxes: rows aligned at `=`, subscripts and fractions legible, no clipping or overflow, spacing even.
+- Not opened: 390 px captures and the L3 cards (same component).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

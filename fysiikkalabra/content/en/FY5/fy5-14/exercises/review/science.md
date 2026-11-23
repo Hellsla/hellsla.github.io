@@ -1,16 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 8bde674d3810f5d8
+CONTENT-HASH: 6a9b059b573df89e
+Mode: delta (Formula steps rewritten as aligned derivations from the basic equations)
+Round 1
 
 ## Blocking
+(none)
 
 ## Polish
-- none.
+(none)
 
 ## Checked
-- fy5-14-L2-09 recomputed: λ = 343/432 = 0.7940 m and 343/440 = 0.7795 m; Δλ = 1.44 cm; Δf = 8 Hz (1.8 % lower), λ 1.9 % longer; 8 Hz : 25 Hz ≈ ⅓ semitone; a beat of 8 Hz. Box 0.794 m, tolerance 0.02 right.
-- Physics wording: the speed depends on the medium, not on f; light is about 10¹² times higher in frequency (5·10¹⁴/432 ≈ 1.2·10¹²); the value 432 depends on the unit of time; the wavelength depends on temperature. All right.
-- Claims and facts (1955 standard, the 2 Hz difference, 415 Hz a semitone below, 390–460 Hz, chakras via the site Prince linked, the Nazi theory, 103+107+109+113, 864 and 86 400 s, the article's verdict) agree with the verified Yle source and the Finnish.
-- The blinded randomised study design in part d is sound.
-- fy5-14-L1-04: (415 − 397)/415 = 4.3 % (corrected from 4.2) is right; 397.46 Hz recomputed.
-- Script comparison of fi and en: every number is identical (word order only).
-- Hash unchanged at start and end.
+- All 11 Formula diffs: the Doppler chains now start from $f = v/\lambda$ and the wavelength the moving source leaves, $\lambda = (v \pm v_\text{L})T_0$ with $T_0 = 1/f_0$. The moving-observer chain starts from the relative speed $v + v_\text{H}$ with $\lambda = v/f_0$. All signs are right for approach and recession, and each chain is solved in symbols to the old end formula.
+- L1-04: receding source, $f = f_0 v/(v+v_\text{L})$ gives 397.5 Hz. L2-04: the same relation solved for $v_\text{L} = v(f_0/f - 1)$ gives 23.1 m/s.
+- L2-03: approaching observer, $f = f_0(v+v_\text{H})/v$ gives 697.8 Hz.
+- L3-01: $f_1/f_2 = (v+v_\text{L})/(v-v_\text{L})$; cross-multiplication gives $v_\text{L} = v(f_1-f_2)/(f_1+f_2) = 27.8$ m/s.
+- L2-05 and L2-07: approaching source, $v_\text{L} = v(1 - f_0/f_\text{mean}) = 30.4$ m/s.
+- L3-04: echo from a moving body. The body receives $f_1 = f_0(v+v_\text{b})/v$ as an observer and returns $f = f_1 v/(v-v_\text{b})$ as a source. $\Delta f(v-v_\text{b}) = 2f_0v_\text{b}$ gives $v_\text{b} = v\Delta f/(2f_0+\Delta f)$, checked row by row.
+- L1-01: echo $s = 2d$, so $v = 2d/t = 340.6$ m/s.
+- L2-01: beat $f_\text{H} = N/t$, so $f_2 = 259$ Hz.
+- L2-02: the frequency stays the same across the boundary, so $\lambda_\text{w} = 3.70$ m. L3-05: $L = \lambda_1/2$, so $v = 2Lf_1$.
+- The non-formula hunks are only paragraph splits (script: identical text). The Substitutions, answers and tolerances are unchanged.
+- Hash is the same at the start and the end.

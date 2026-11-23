@@ -2,7 +2,7 @@
 **Given:** length of the vibrating part of the string $L = 1.05\,\text{m}$, speed of the wave in the string $v = 86.1\,\text{m/s}$; the string is fixed at both ends
 **Find:** the fundamental frequency $f_1$ of the string in hertz
 **Principle:** There is a node at each fixed end. At the fundamental frequency the string has one antinode, so half a wavelength fits on the string: $\lambda_1 = 2L$. The frequency follows from the basic wave equation $v = f\lambda$.
-**Formula:** $f_n = n \cdot \dfrac{v}{2L}$, so at the fundamental frequency $n = 1$: $f_1 = \dfrac{v}{2L}$
+**Formula:** $$\begin{aligned} L &= n\dfrac{\lambda_n}{2} \\ v &= f_n\lambda_n \\ f_n &= \dfrac{v}{\lambda_n} = n\dfrac{v}{2L} \\ f_1 &= \dfrac{v}{2L} \quad (n = 1) \end{aligned}$$
 **Conversions:** None are needed: the length is in metres and the speed in metres per second, so $\tfrac{\text{m/s}}{\text{m}} = \tfrac{1}{\text{s}} = \text{Hz}$.
 **Substitution:** $f_1 = \dfrac{86.1\,\text{m/s}}{2 \cdot 1.05\,\text{m}} = \dfrac{86.1\,\text{m/s}}{2.10\,\text{m}} = 41.0\,\text{Hz}$
 **Answer:** $41.0\,\text{Hz}$, three significant figures as in the length $1.05\,\text{m}$ and the speed $86.1\,\text{m/s}$.
@@ -12,7 +12,7 @@
 **Given:** tube open at both ends, length $L = 0.330\,\text{m}$; speed of sound in air $v = 340\,\text{m/s}$
 **Find:** the fundamental frequency $f_1$ of the air column in hertz
 **Principle:** At the open ends the air can move, so there is a displacement antinode at each end. At the fundamental frequency there is one node between the two antinodes, so half a wavelength fits in the tube and the natural frequencies are the same as for a string fixed at both ends.
-**Formula:** $f_n = n \cdot \dfrac{v}{2L}$, so at the fundamental frequency $n = 1$: $f_1 = \dfrac{v}{2L}$
+**Formula:** $$\begin{aligned} L &= n\dfrac{\lambda_n}{2} \\ v &= f_n\lambda_n \\ f_n &= \dfrac{v}{\lambda_n} = n\dfrac{v}{2L} \\ f_1 &= \dfrac{v}{2L} \quad (n = 1) \end{aligned}$$
 **Conversions:** None are needed: the length is in metres and the speed in metres per second.
 **Substitution:** $f_1 = \dfrac{340\,\text{m/s}}{2 \cdot 0.330\,\text{m}} = \dfrac{340\,\text{m/s}}{0.660\,\text{m}} = 515.2\,\text{Hz}$
 **Answer:** $515\,\text{Hz}$, three significant figures as in the length of the tube $0.330\,\text{m}$ and the speed of sound.
@@ -22,7 +22,7 @@
 **Given:** organ pipe closed at its upper end, length $L = 2.60\,\text{m}$; speed of sound in air $v = 340\,\text{m/s}$
 **Find:** the fundamental frequency $f_1$ of the pipe in hertz
 **Principle:** At the closed end the air cannot move, so there is a displacement node; at the open end there is an antinode. From a node to an antinode is a quarter of a wavelength, so at the fundamental frequency $L = \tfrac{\lambda_1}{4}$, that is, $\lambda_1 = 4L$.
-**Formula:** $f_n = n \cdot \dfrac{v}{4L}$, where $n = 1, 3, 5, \ldots$, so at the fundamental frequency $f_1 = \dfrac{v}{4L}$
+**Formula:** $$\begin{aligned} L &= n\dfrac{\lambda_n}{4} \quad (n = 1, 3, 5, \ldots) \\ v &= f_n\lambda_n \\ f_n &= \dfrac{v}{\lambda_n} = n\dfrac{v}{4L} \\ f_1 &= \dfrac{v}{4L} \quad (n = 1) \end{aligned}$$
 **Conversions:** None are needed: the length is in metres and the speed in metres per second.
 **Substitution:** $f_1 = \dfrac{340\,\text{m/s}}{4 \cdot 2.60\,\text{m}} = \dfrac{340\,\text{m/s}}{10.4\,\text{m}} = 32.69\,\text{Hz}$
 **Answer:** $32.7\,\text{Hz}$, three significant figures as in the length of the pipe $2.60\,\text{m}$.
@@ -52,7 +52,7 @@
 **Given:** length of the vibrating part of the string $L = 0.650\,\text{m}$; speed of the wave before tightening $v_1 = 141.0\,\text{m/s}$ and after it $v_2 = 148.0\,\text{m/s}$
 **Find:** the change in the fundamental frequency $\Delta f = f_\text{2} - f_\text{1}$ in hertz
 **Principle:** The string is fixed at both ends, so at the fundamental frequency $f = \tfrac{v}{2L}$. Tightening changes only the speed of the wave; the length of the vibrating part of the string stays the same. The fundamental frequency is therefore directly proportional to the speed.
-**Formula:** $f = \dfrac{v}{2L}$, so $\Delta f = \dfrac{v_2}{2L} - \dfrac{v_1}{2L}$, giving $\Delta f = \dfrac{v_2 - v_1}{2L}$
+**Formula:** $$\begin{aligned} \lambda &= 2L \\ f &= \dfrac{v}{\lambda} = \dfrac{v}{2L} \\ \Delta f &= \dfrac{v_2}{2L} - \dfrac{v_1}{2L} \\ &= \dfrac{v_2 - v_1}{2L} \end{aligned}$$
 **Conversions:** None are needed: the speeds are in metres per second and the length in metres.
 **Substitution:** $\Delta f = \dfrac{148.0\,\text{m/s} - 141.0\,\text{m/s}}{2 \cdot 0.650\,\text{m}} = \dfrac{7.0\,\text{m/s}}{1.300\,\text{m}} = 5.385\,\text{Hz}$
 **Answer:** $5.4\,\text{Hz}$, two significant figures, because the difference of the speeds $7.0\,\text{m/s}$ is known to two figures.
@@ -64,7 +64,7 @@
 **Principle:** At the water surface the air cannot move, so there is a displacement node, and at the open mouth of the tube there is an antinode.
 
 The sound is first amplified when the length of the air column corresponds to the fundamental frequency of a closed tube, that is, a quarter of a wavelength from the node to the antinode. The end correction of the tube is ignored. The speed follows from the basic wave equation.
-**Formula:** $L = \dfrac{\lambda}{4}$ and $v = f\lambda$, so $v = 4 L f$
+**Formula:** $$\begin{aligned} L &= \dfrac{\lambda}{4} \\ v &= f\lambda = 4Lf \end{aligned}$$
 **Conversions:** $L = 19.3\,\text{cm} = 0.193\,\text{m}$
 **Substitution:** $v = 4 \cdot 0.193\,\text{m} \cdot 440\,\text{Hz} = 0.772\,\text{m} \cdot 440\,\text{Hz} = 339.68\,\text{m/s}$
 **Answer:** $340\,\text{m/s}$, three significant figures as in the length of the air column $19.3\,\text{cm}$.
@@ -74,7 +74,7 @@ The sound is first amplified when the length of the air column corresponds to th
 **Given:** tube open at both ends, third natural frequency $f_3 = 1530\,\text{Hz}$; speed of sound in air $v = 340\,\text{m/s}$
 **Find:** the length of the tube $L$ in centimetres
 **Principle:** There is a displacement antinode at the open ends, so the natural frequencies are the same as for a string fixed at both ends, $f_n = n \cdot \tfrac{v}{2L}$. The third natural frequency corresponds to $n = 3$, so three half wavelengths fit in the tube.
-**Formula:** $f_3 = 3 \cdot \dfrac{v}{2L}$, so $L = \dfrac{3v}{2 f_3}$
+**Formula:** $$\begin{aligned} L &= 3\cdot\dfrac{\lambda_3}{2} \\ v &= f_3\lambda_3 \\ f_3 &= \dfrac{v}{\lambda_3} = \dfrac{3v}{2L} \\ L &= \dfrac{3v}{2 f_3} \end{aligned}$$
 **Conversions:** Finally metres to centimetres: $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** $L = \dfrac{3 \cdot 340\,\text{m/s}}{2 \cdot 1530\,\text{Hz}} = \dfrac{1020\,\text{m/s}}{3060\,\text{Hz}} = 0.3333\,\text{m} = 33.33\,\text{cm}$
 **Answer:** $33.3\,\text{cm}$, three significant figures as in the frequency $1530\,\text{Hz}$ and the speed of sound.
@@ -85,7 +85,7 @@ The sound is first amplified when the length of the air column corresponds to th
 **Find:** the speed of the wave in the rope $v$ in metres per second
 **Principle:** The rope vibrates as a standing wave in which the distance between adjacent nodes is half a wavelength. When we know how many half wavelengths fit on the vibrating part, we get the wavelength, and the speed follows from the basic wave equation $v = f\lambda$.
 **Reading the figure:** According to the ruler the vibrator is at $0$ and the pulley at $1.20\,\text{m}$, so the length of the vibrating part is $L = 1.20\,\text{m}$. The rope has four loops, that is, four antinodes and five nodes counting the ends, so $L$ is four half wavelengths: $n = 4$.
-**Formula:** $L = n \cdot \dfrac{\lambda}{2}$ and $v = f\lambda$, so $\lambda = \dfrac{2L}{n}$ and $v = \dfrac{2 L f}{n}$
+**Formula:** $$\begin{aligned} L &= n\dfrac{\lambda}{2} \\ \lambda &= \dfrac{2L}{n} \\ v &= f\lambda = \dfrac{2Lf}{n} \end{aligned}$$
 **Conversions:** None are needed: the length is in metres and the frequency in hertz.
 **Substitution:** $v = \dfrac{2 \cdot 1.20\,\text{m} \cdot 100\,\text{Hz}}{4} = \dfrac{240\,\text{m/s}}{4} = 60.0\,\text{m/s}$
 **Answer:** $60.0\,\text{m/s}$, three significant figures as in the length $1.20\,\text{m}$ read from the ruler and the frequency $100\,\text{Hz}$.
@@ -116,7 +116,7 @@ Dropping to half takes into account only the plug, and becoming four times as hi
 **Principle:** In an open pipe there is a displacement antinode at each end, so at the fundamental frequency $L = \tfrac{\lambda}{2}$. At the closed end there is a node, so at the fundamental frequency of the closed pipe $L = \tfrac{\lambda}{4}$.
 
 The same length therefore corresponds to a wavelength twice as long, and since the speed of sound is the same, the frequency is halved.
-**Formula:** $f_\text{o} = \dfrac{v}{2L}$ and $f_\text{c} = \dfrac{v}{4L}$, so dividing, $\dfrac{f_\text{c}}{f_\text{o}} = \dfrac{2L}{4L} = \dfrac{1}{2}$, giving $f_\text{c} = \dfrac{f_\text{o}}{2}$
+**Formula:** $$\begin{aligned} f_\text{o} &= \dfrac{v}{2L} \\ f_\text{c} &= \dfrac{v}{4L} = \dfrac{1}{2} \cdot \dfrac{v}{2L} \\ &= \dfrac{f_\text{o}}{2} \end{aligned}$$
 **Conversions:** None are needed: the length and the speed are not needed as numbers, because they cancel.
 **Substitution:** $f_\text{c} = \dfrac{262\,\text{Hz}}{2} = 131\,\text{Hz}$
 **Answer:** $131\,\text{Hz}$, three significant figures as in the fundamental frequency $262\,\text{Hz}$.
@@ -126,7 +126,7 @@ The same length therefore corresponds to a wavelength twice as long, and since t
 **Given:** string fixed at both ends; two successive resonance frequencies $f_a = 330\,\text{Hz}$ and $f_b = 440\,\text{Hz}$, no resonance between them
 **Find:** the fundamental frequency $f_1$ of the string in hertz
 **Principle:** The string resonates only at its natural frequencies $f_n = n f_1$, so the resonance frequencies are multiples of the fundamental frequency. Since there are no other resonances in between, the frequencies are successive natural frequencies $f_n$ and $f_{n+1}$, and their difference is one fundamental frequency.
-**Formula:** $f_{n+1} - f_n = (n + 1) f_1 - n f_1$, so $f_1 = f_b - f_a$
+**Formula:** $$\begin{aligned} f_n &= nf_1 \\ f_b - f_a &= f_{n+1} - f_n = (n + 1) f_1 - n f_1 \\ f_1 &= f_b - f_a \end{aligned}$$
 **Conversions:** None are needed.
 **Substitution:** $f_1 = 440\,\text{Hz} - 330\,\text{Hz} = 110\,\text{Hz}$
 **Answer:** $110\,\text{Hz}$, three significant figures, because the frequencies are given to the nearest hertz and the difference $110\,\text{Hz}$ has three digits.
@@ -136,7 +136,7 @@ The same length therefore corresponds to a wavelength twice as long, and since t
 **Given:** tube closed at one end; successive resonance frequencies $f_a = 510\,\text{Hz}$ and $f_b = 850\,\text{Hz}$; speed of sound in air $v = 340\,\text{m/s}$
 **Find:** the length of the tube $L$ in metres
 **Principle:** At the closed end there is a displacement node and at the open end an antinode, so the natural frequencies are $f_n = n \cdot \tfrac{v}{4L} = n f_1$ only for the odd numbers $n = 1, 3, 5, \ldots$ The difference between successive natural frequencies $n$ and $n + 2$ is therefore two fundamental frequencies. Once the fundamental frequency is known, the length follows from the formula for the fundamental frequency.
-**Formula:** $f_b - f_a = (n + 2) f_1 - n f_1 = 2 f_1$, so $f_1 = \dfrac{f_b - f_a}{2}$; and $f_1 = \dfrac{v}{4L}$, so $L = \dfrac{v}{4 f_1}$
+**Formula:** $$\begin{aligned} f_n &= nf_1 \\ f_b - f_a &= (n + 2) f_1 - n f_1 = 2 f_1 \\ f_1 &= \dfrac{f_b - f_a}{2} = \dfrac{v}{4L} \\ L &= \dfrac{v}{4 f_1} \end{aligned}$$
 **Conversions:** None are needed: the speed is in metres per second and the frequencies in hertz.
 **Substitution:** $f_1 = \dfrac{850\,\text{Hz} - 510\,\text{Hz}}{2} = \dfrac{340\,\text{Hz}}{2} = 170\,\text{Hz}$ and $L = \dfrac{340\,\text{m/s}}{4 \cdot 170\,\text{Hz}} = \dfrac{340\,\text{m/s}}{680\,\text{Hz}} = 0.500\,\text{m}$
 **Answer:** $0.500\,\text{m}$, three significant figures as in the frequencies and the speed of sound.
@@ -166,7 +166,7 @@ The option $75\,\text{Hz}$ is lower than the fundamental frequency, but the fund
 **Principle:** There is a node at each fixed end. At the fundamental frequency the string has one antinode in the middle, so the length of the string is only half a wavelength: $L = \tfrac{\lambda_1}{2}$.
 
 The student took the length of the whole string as the wavelength, so the wavelength was half of what it should be and the frequency twice too large. The fundamental frequency follows from the equation $v = f\lambda$.
-**Formula:** $\lambda_1 = 2L$, so $f_1 = \dfrac{v}{\lambda_1} = \dfrac{v}{2L}$
+**Formula:** $$\begin{aligned} v &= f_1\lambda_1 \\ \lambda_1 &= 2L \\ f_1 &= \dfrac{v}{\lambda_1} = \dfrac{v}{2L} \end{aligned}$$
 **Conversions:** None are needed: the length is in metres and the speed in metres per second.
 **Substitution:** $f_1 = \dfrac{120\,\text{m/s}}{2 \cdot 0.60\,\text{m}} = \dfrac{120\,\text{m/s}}{1.20\,\text{m}} = 100\,\text{Hz}$
 **Answer:** $1.0 \cdot 10^{2}\,\text{Hz}$, that is, $100\,\text{Hz}$, two significant figures as in the length $0.60\,\text{m}$. The error is that the student took the length of the string as the wavelength ($\lambda = L$), although at the fundamental frequency the length of the string is half a wavelength ($\lambda_1 = 2L$).
@@ -176,7 +176,7 @@ The student took the length of the whole string as the wavelength, so the wavele
 **Given:** length of the vibrating part of the string $L = 0.640\,\text{m}$; the string is fixed at both ends; $n$ and $f$ of the table (example data), five rows
 **Find:** the speed of the wave in the string $v$ in metres per second
 **Principle:** The natural frequency of a string fixed at both ends is $f_n = n \cdot \tfrac{v}{2L} = n f_1$, so on each row the ratio $\tfrac{f}{n}$ is the fundamental frequency. The measurements differ slightly from one another, so the fundamental frequency is estimated as the mean of the five ratios. Once $f_1$ is known, the speed follows from the formula for the fundamental frequency.
-**Formula:** $\dfrac{f_n}{n} = f_1$ and $f_1 = \dfrac{v}{2L}$, so $v = 2 L f_{1,\text{av}}$
+**Formula:** $$\begin{aligned} f_n &= nf_1 \\ f_1 &= \dfrac{f_n}{n} \\ f_1 &= \dfrac{v}{2L} \\ v &= 2L f_{1,\text{av}} \end{aligned}$$
 **Conversions:** None are needed: the length is in metres and the frequency in hertz.
 **Substitution:** The ratios are $96.0\,\text{Hz}$, $95.5\,\text{Hz}$, $96.33\,\text{Hz}$, $95.75\,\text{Hz}$ and $96.2\,\text{Hz}$. Their sum is $479.78\,\text{Hz}$, so $f_{1,\text{av}} = 479.78\,\text{Hz} : 5 = 95.96\,\text{Hz}$. The speed is $v = 2 \cdot 0.640\,\text{m} \cdot 95.96\,\text{Hz} = 122.8\,\text{m/s}$
 **Answer:** $123\,\text{m/s}$, three significant figures as in the length $0.640\,\text{m}$ and the frequencies.
@@ -188,7 +188,7 @@ The student took the length of the whole string as the wavelength, so the wavele
 **Principle:** At the water surface there is a displacement node and at the mouth of the tube an antinode, so at resonance the length of the air column is an odd number of quarter wavelengths.
 
 The distance between successive resonances is half a wavelength, so the difference between the lengths of the first and the third resonance is a whole wavelength. When the difference is used, the end correction of the tube disappears, because it affects all the lengths equally.
-**Formula:** $\lambda = L_3 - L_1$ and $v = f\lambda$; for part b) $e = \dfrac{\lambda}{4} - L_1$
+**Formula:** $$\begin{aligned} L_1 &= \dfrac{\lambda}{4} - e \\ L_3 &= \dfrac{5\lambda}{4} - e \\ \lambda &= L_3 - L_1 \\ v &= f\lambda \\ e &= \dfrac{\lambda}{4} - L_1 \end{aligned}$$
 **Conversions:** $L_3 - L_1$ is calculated in centimetres and converted to metres: $67.0\,\text{cm} = 0.670\,\text{m}$.
 **Substitution:** $\lambda = 83.3\,\text{cm} - 16.3\,\text{cm} = 67.0\,\text{cm} = 0.670\,\text{m}$, so $v = 512\,\text{Hz} \cdot 0.670\,\text{m} = 343.0\,\text{m/s}$. In part b) $\tfrac{\lambda}{4} = 0.670\,\text{m} : 4 = 16.75\,\text{cm}$ and $e = 16.75\,\text{cm} - 16.3\,\text{cm} = 0.45\,\text{cm}$.
 **Answer:** $343\,\text{m/s}$, three significant figures as in the frequency and the lengths. Part b): the first length is about $0.45\,\text{cm}$ shorter than $\tfrac{\lambda}{4}$, because the antinode is slightly above the mouth of the tube and not exactly at the mouth; the effective length of the air column is $L_1 + e$.
@@ -227,7 +227,7 @@ The prediction is greater than the frequency $163.0\,\text{Hz}$ measured at the 
 **Principle:** The natural frequencies of a tube open at both ends are $f_n = n \cdot \tfrac{v}{2L}$, $n = 1, 2, 3, \ldots$, so the resonances are in the ratio $1 : 2 : 3$. The natural frequencies of a tube closed at one end are $f_n = n \cdot \tfrac{v}{4L}$ only for odd $n$, so the resonances are in the ratio $1 : 3 : 5$.
 
 The ratios reveal the type of the tube, and each data set gives its own estimate of the speed.
-**Formula:** open tube $f_1 = \dfrac{v}{2L}$, so $v = 2 L f_1$; closed tube $f_1 = \dfrac{v}{4L}$, so $v = 4 L f_1$; for both, $f_1$ is the mean of the ratios $\tfrac{f}{n}$ ($n = 1, 2, 3$ for the open tube and $n = 1, 3, 5$ for the closed tube)
+**Formula:** $$\begin{aligned} f_1 &= \dfrac{f_n}{n} \\ v_\text{open} &= f_1 \cdot 2L \\ v_\text{closed} &= f_1 \cdot 4L \end{aligned}$$
 **Conversions:** None are needed: the length is in metres and the frequencies in hertz.
 **Substitution:** a) For tube A the frequencies are about $207\,\text{Hz} \cdot (1, 2, 3)$, so A is open. For tube B they are about $103\,\text{Hz} \cdot (1, 3, 5)$, so B is closed.
 
@@ -245,7 +245,7 @@ The result $331\,\text{m/s}$ corresponds to the speed of sound in air at about $
 **Given:** length of the pipe $L = 0.50\,\text{m}$, open at both ends; from the table (MAFY table, Aaltoliike, speeds of sound in different media, gases at $0\,{}^\circ\text{C}$) the speed of sound in helium $v_\text{He} = 971\,\text{m/s}$ and in air $v_\text{air} = 331.5\,\text{m/s}$
 **Find:** the difference of the fundamental frequencies $\Delta f = f_{1,\text{He}} - f_{1,\text{air}}$ in hertz
 **Principle:** In a pipe open at both ends there is an antinode at each end, so at the fundamental frequency half a wavelength fits in the pipe and $L = \tfrac{\lambda_1}{2}$. The length is the same in both gases but the speed of sound differs, so the fundamental frequencies differ. Both gases are at $0\,{}^\circ\text{C}$, so the comparison is fair.
-**Formula:** $f_1 = \dfrac{v}{2L}$, so $\Delta f = \dfrac{v_\text{He}}{2L} - \dfrac{v_\text{air}}{2L} = \dfrac{v_\text{He} - v_\text{air}}{2L}$
+**Formula:** $$\begin{aligned} \lambda_1 &= 2L \\ f_1 &= \dfrac{v}{\lambda_1} = \dfrac{v}{2L} \\ \Delta f &= f_{1,\text{He}} - f_{1,\text{air}} \\ &= \dfrac{v_\text{He} - v_\text{air}}{2L} \end{aligned}$$
 **Conversions:** None are needed: the length is in metres and the speeds in metres per second.
 **Substitution:** $f_{1,\text{He}} = \dfrac{971\,\text{m/s}}{2 \cdot 0.50\,\text{m}} = 971\,\text{Hz}$ and $f_{1,\text{air}} = \dfrac{331.5\,\text{m/s}}{1.00\,\text{m}} = 331.5\,\text{Hz}$, so $\Delta f = 971\,\text{Hz} - 331.5\,\text{Hz} = 639.5\,\text{Hz}$
 **Answer:** $6.4 \cdot 10^{2}\,\text{Hz}$, that is about $640\,\text{Hz}$, two significant figures like the length $0.50\,\text{m}$. The table values are $971\,\text{m/s}$ and $331.5\,\text{m/s}$; different tables give slightly different values, and the answer is accepted within about $\pm 4\,\%$.
@@ -260,7 +260,7 @@ The difference is positive, as it should be, because helium is a lighter gas tha
 **Find:** the rise of the vibrator's frequency $\Delta f$ in hertz
 **Principle:** The rope vibrates as a standing wave at its natural frequencies $f_n = n\dfrac{v}{2L}$. The vibrator excites the rope at the natural frequency of the loop pattern it makes. The change from four loops to five is the difference of two natural frequencies.
 **Reading the figure:** According to the ruler the vibrator is at $0$ and the pulley at $1.20\,\text{m}$, so $L = 1.20\,\text{m}$. The rope has four loops, so the present pattern is $n = 4$ and the new one is $n = 5$.
-**Formula:** $f_n = n\dfrac{v}{2L}$, so $\Delta f = f_5 - f_4 = (5 - 4)\dfrac{v}{2L} = \dfrac{v}{2L}$
+**Formula:** $$\begin{aligned} L &= n\dfrac{\lambda_n}{2} \\ f_n &= \dfrac{v}{\lambda_n} = n\dfrac{v}{2L} \\ \Delta f &= f_5 - f_4 \\ &= (5 - 4)\dfrac{v}{2L} = \dfrac{v}{2L} \end{aligned}$$
 **Conversions:** None are needed: the length is in metres and the speed in metres per second.
 **Substitution:** $f_4 = \dfrac{4 \cdot 75.0\,\text{m/s}}{2 \cdot 1.20\,\text{m}} = 125\,\text{Hz}$ and $f_5 = \dfrac{5 \cdot 75.0\,\text{m/s}}{2 \cdot 1.20\,\text{m}} = 156.25\,\text{Hz}$, so $\Delta f = 156.25\,\text{Hz} - 125\,\text{Hz} = 31.25\,\text{Hz}$
 **Answer:** $31.3\,\text{Hz}$, three significant figures like the speed $75.0\,\text{m/s}$ and the length $1.20\,\text{m}$ read from the ruler.

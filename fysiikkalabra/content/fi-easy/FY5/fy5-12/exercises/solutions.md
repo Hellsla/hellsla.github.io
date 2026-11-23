@@ -29,7 +29,7 @@ Se saapuu harja harjan kanssa. Heikentävissä pisteissä se on vielä puoli jak
 **Annettu:** aallonpituus $\lambda = 0{,}68\,\text{m}$, kaiuttimet samassa vaiheessa
 **Kysytty:** pienin matkaero $\Delta s$ metreinä, jolla interferenssi on heikentävä
 **Periaate:** Heikentävän interferenssin ehto on $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. Pienin matkaero saadaan pienimmällä kokonaisluvulla $n = 0$. Silloin kauempaa tuleva aalto on puoli jaksoa jäljessä, ja harja saapuu pohjan kanssa.
-**Kaava:** $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. Kun $n = 0$, saadaan $\Delta s = \dfrac{\lambda}{2}$.
+**Kaava:** $$\begin{aligned} \Delta s &= \left(n + \tfrac{1}{2}\right)\lambda \\ \Delta s &= \dfrac{\lambda}{2} \quad (n = 0) \end{aligned}$$
 **Muunnokset:** Ei tarvita. Aallonpituus on metreinä.
 **Sijoitus:** $\Delta s = \dfrac{0{,}68\,\text{m}}{2} = 0{,}34\,\text{m}$
 **Vastaus:** $0{,}34\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa kuten aallonpituudessa $0{,}68\,\text{m}$.
@@ -49,7 +49,7 @@ Se saapuu harja harjan kanssa. Heikentävissä pisteissä se on vielä puoli jak
 **Annettu:** kaiuttimien väli $d = 1{,}20\,\text{m}$, kuulijan etäisyys kaiuttimesta B $s_\text{B} = 1{,}60\,\text{m}$ kohtisuoraan kaiuttimien suoraa vastaan, kaiuttimet samassa vaiheessa
 **Kysytty:** suurin aallonpituus $\lambda$ metreinä, jolla kuulijan kohdalla on hiljaista
 **Periaate:** Kuulija, kaiutin B ja kaiutin A muodostavat suorakulmaisen kolmion. Suora kulma on kaiuttimen B kohdalla. Siksi etäisyys kaiuttimesta A saadaan Pythagoraan lauseella. Hiljaista on heikentävässä interferenssissä, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. Ratkaistuna $\lambda = \tfrac{\Delta s}{n + 1/2}$. Aallonpituus on suurin, kun $n = 0$.
-**Kaava:** $s_\text{A} = \sqrt{d^2 + s_\text{B}^2}$, $\Delta s = s_\text{A} - s_\text{B}$ ja $\Delta s = \tfrac{1}{2}\lambda$, josta $\lambda = 2\left(\sqrt{d^2 + s_\text{B}^2} - s_\text{B}\right)$
+**Kaava:** $$\begin{aligned} s_\text{A} &= \sqrt{d^2 + s_\text{B}^2} \\ \Delta s &= s_\text{A} - s_\text{B} \\ \Delta s &= \tfrac{1}{2}\lambda \\ \lambda &= 2\Delta s \\ \lambda &= 2\left(\sqrt{d^2 + s_\text{B}^2} - s_\text{B}\right) \end{aligned}$$
 **Muunnokset:** Ei tarvita. Kaikki etäisyydet ovat metreinä.
 **Sijoitus:** $s_\text{A} = \sqrt{(1{,}20\,\text{m})^2 + (1{,}60\,\text{m})^2} = \sqrt{4{,}00\,\text{m}^2} = 2{,}00\,\text{m}$, $\lambda = 2 \cdot (2{,}00\,\text{m} - 1{,}60\,\text{m}) = 2 \cdot 0{,}40\,\text{m} = 0{,}80\,\text{m}$
 **Vastaus:** $0{,}80\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, koska matkaero $0{,}40\,\text{m}$ on etäisyyksien erotus sentin tarkkuudella.
@@ -59,7 +59,7 @@ Se saapuu harja harjan kanssa. Heikentävissä pisteissä se on vielä puoli jak
 **Annettu:** taajuus $f = 15\,\text{Hz}$, aallon nopeus $v = 0{,}30\,\text{m/s}$, pisteen Q etäisyys lähempänä olevasta lähteestä $s_2 = 9{,}0\,\text{cm}$. Piste Q on keskinormaalia lähimmällä solmuviivalla.
 **Kysytty:** pisteen Q etäisyys $s_1$ lähteestä $S_1$ senttimetreinä
 **Periaate:** Aallonpituus saadaan yhtälöstä $v = f\lambda$. Solmuviivalla interferenssi on heikentävä, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. Keskinormaalia lähin solmuviiva on $n = 0$. Piste Q on lähempänä lähdettä $S_2$. Siksi etäisyys lähteestä $S_1$ on puoli aallonpituutta suurempi.
-**Kaava:** $\lambda = \dfrac{v}{f}$ ja $s_1 - s_2 = \dfrac{\lambda}{2}$, josta $s_1 = s_2 + \dfrac{v}{2f}$
+**Kaava:** $$\begin{aligned} \lambda &= \dfrac{v}{f} \\ s_1 - s_2 &= \dfrac{\lambda}{2} \\ s_1 &= s_2 + \dfrac{\lambda}{2} \\ s_1 &= s_2 + \dfrac{v}{2f} \end{aligned}$$
 **Muunnokset:** $v = 0{,}30\,\text{m/s} = 0{,}30 \cdot 100\,\text{cm/s} = 30\,\text{cm/s}$. Näin aallonpituus saadaan senttimetreinä kuten $s_2$.
 **Sijoitus:** $s_1 = 9{,}0\,\text{cm} + \dfrac{30\,\text{cm/s}}{2 \cdot 15\,\text{Hz}} = 9{,}0\,\text{cm} + 1{,}0\,\text{cm} = 10{,}0\,\text{cm}$
 **Vastaus:** $10{,}0\,\text{cm}$. Vastaus on millimetrin tarkkuudella kuten etäisyys $9{,}0\,\text{cm}$, koska tulos on tämän etäisyyden ja lisäyksen $1{,}0\,\text{cm}$ summa.
@@ -79,7 +79,7 @@ Se saapuu harja harjan kanssa. Heikentävissä pisteissä se on vielä puoli jak
 **Annettu:** pulssien keskikohtien etäisyys aluksi $s = 1{,}20\,\text{m}$, kummankin pulssin nopeus $v = 0{,}40\,\text{m/s}$. Pulssit ovat yhtä suuret ja samanmuotoiset mutta eri puolilla narua.
 **Kysytty:** aika $t$ sekunteina, kunnes naru on hetken kokonaan suora
 **Periaate:** Superpositioperiaatteen mukaan yhtä suuret ja samanmuotoiset mutta vastakkaiset pulssit kumoavat toisensa joka kohdassa juuri silloin, kun ne ovat täsmälleen päällekkäin. Silloin niiden keskikohdat ovat samassa paikassa. Pulssit lähestyvät toisiaan kumpikin nopeudella $v$. Niiden välimatka lyhenee ajassa $t$ matkan $2vt$.
-**Kaava:** $2vt = s$, josta $t = \dfrac{s}{2v}$
+**Kaava:** $$\begin{aligned} s &= vt + vt \\ s &= 2vt \\ t &= \dfrac{s}{2v} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Etäisyys on metreinä ja nopeus on yksikössä $\text{m/s}$.
 **Sijoitus:** $t = \dfrac{1{,}20\,\text{m}}{2 \cdot 0{,}40\,\text{m/s}} = \dfrac{1{,}20\,\text{m}}{0{,}80\,\text{m/s}} = 1{,}5\,\text{s}$
 **Vastaus:** $1{,}5\,\text{s}$. Vastauksessa on kaksi merkitsevää numeroa kuten nopeudessa $0{,}40\,\text{m/s}$.
@@ -101,7 +101,7 @@ Se lähestyy arvoa $d$ vasta hyvin kaukana sivulla. Kun kuulija kävelee vasemma
 **Annettu:** aallon nopeus $v = 24\,\text{cm/s}$. Piste T on levossa taajuudella $f_1 = 10\,\text{Hz}$ ja seuraavan kerran taajuudella $f_2 = 14\,\text{Hz}$.
 **Kysytty:** matkaero $\Delta s$ pisteessä T senttimetreinä
 **Periaate:** Vesi on levossa, kun interferenssi on heikentävä, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. Piste ei liiku, joten matkaero on molemmilla taajuuksilla sama. Kun taajuus kasvaa, aallonpituus pienenee. Silloin matkaeroon mahtuu enemmän aallonpituuksia. Taajuus $14\,\text{Hz}$ on seuraava heikentävä taajuus. Silloin matkaeroon mahtuu täsmälleen yksi aallonpituus enemmän: $n$ kasvaa yhdellä.
-**Kaava:** $\dfrac{\Delta s}{\lambda_1} = n + \tfrac{1}{2}$ ja $\dfrac{\Delta s}{\lambda_2} = n + \tfrac{3}{2}$. Vähennetään: $\Delta s\left(\dfrac{1}{\lambda_2} - \dfrac{1}{\lambda_1}\right) = 1$. Koska $\dfrac{1}{\lambda} = \dfrac{f}{v}$, saadaan $\Delta s = \dfrac{v}{f_2 - f_1}$.
+**Kaava:** $$\begin{aligned} \lambda &= \dfrac{v}{f} \\ \dfrac{\Delta s}{\lambda_1} &= n + \tfrac{1}{2} \\ \dfrac{\Delta s}{\lambda_2} &= n + \tfrac{3}{2} \\ \dfrac{\Delta s}{\lambda_2} - \dfrac{\Delta s}{\lambda_1} &= 1 \\ \dfrac{\Delta s\,f_2}{v} - \dfrac{\Delta s\,f_1}{v} &= 1 \\ \Delta s &= \dfrac{v}{f_2 - f_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Nopeus on yksikössä $\text{cm/s}$, joten aallonpituudet ja matkaero saadaan senttimetreinä.
 **Sijoitus:** $\Delta s = \dfrac{24\,\text{cm/s}}{14\,\text{Hz} - 10\,\text{Hz}} = \dfrac{24\,\text{cm/s}}{4\,\text{Hz}} = 6{,}0\,\text{cm}$. Tarkistusta varten aallonpituudet ovat $\lambda_1 = \dfrac{24\,\text{cm/s}}{10\,\text{Hz}} = 2{,}4\,\text{cm}$ ja $\lambda_2 = \dfrac{24\,\text{cm/s}}{14\,\text{Hz}} = 1{,}714\,\text{cm}$.
 **Vastaus:** $6{,}0\,\text{cm}$. Vastauksessa on kaksi merkitsevää numeroa kuten taajuuksissa $10\,\text{Hz}$ ja $14\,\text{Hz}$ ja nopeudessa $24\,\text{cm/s}$.
@@ -113,7 +113,7 @@ Se lähestyy arvoa $d$ vasta hyvin kaukana sivulla. Kun kuulija kävelee vasemma
 **Periaate:** Meren aallonharjat ovat aallonmurtajan suuntaisia. Sama harja saapuu siis molempiin aukkoihin samalla hetkellä. Kapeassa aukossa aalto diffraktoituu ja leviää satamaan kaarevina aaltorintamina (luku *Aalto kohtaa esteen tai raon*). Aukot toimivat siis kuin kaksi lähdettä, jotka ovat samassa vaiheessa ja joilla on sama taajuus.
 
 Vene, lähempi aukko ja kauempi aukko muodostavat suorakulmaisen kolmion. Etäisyys kauempaan aukkoon saadaan siksi Pythagoraan lauseella. Keskinormaalia lähin solmuviiva on heikentävä interferenssi luvulla $n = 0$, $\Delta s = \tfrac{1}{2}\lambda$.
-**Kaava:** $s_1 = \sqrt{d^2 + s_2^2}$ ja $s_1 - s_2 = \dfrac{\lambda}{2}$, josta $\lambda = 2\left(\sqrt{d^2 + s_2^2} - s_2\right)$
+**Kaava:** $$\begin{aligned} s_1 &= \sqrt{d^2 + s_2^2} \\ \Delta s &= s_1 - s_2 \\ \Delta s &= \tfrac{1}{2}\lambda \\ \lambda &= 2\Delta s \\ \lambda &= 2\left(\sqrt{d^2 + s_2^2} - s_2\right) \end{aligned}$$
 **Muunnokset:** Ei tarvita. Etäisyydet ovat metreinä.
 **Sijoitus:** $s_1 = \sqrt{(16{,}0\,\text{m})^2 + (30{,}0\,\text{m})^2} = \sqrt{1156\,\text{m}^2} = 34{,}0\,\text{m}$, $\lambda = 2 \cdot (34{,}0\,\text{m} - 30{,}0\,\text{m}) = 2 \cdot 4{,}0\,\text{m} = 8{,}0\,\text{m}$
 **Vastaus:** $8{,}0\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa. Matkaero $4{,}0\,\text{m}$ on kahden etäisyyden erotus. Etäisyydet on annettu kolmella merkitsevällä numerolla, mutta erotuksella on kaksi merkitsevää numeroa.
@@ -133,7 +133,7 @@ Vene, lähempi aukko ja kauempi aukko muodostavat suorakulmaisen kolmion. Etäis
 **Annettu:** etäisyydet $s_1 = 5{,}30\,\text{m}$ ja $s_2 = 4{,}45\,\text{m}$, äänen nopeus $v = 340\,\text{m/s}$, kaiuttimet samassa vaiheessa
 **Kysytty:** pienin taajuus $f$ hertseinä, jolla ääni pisteessä on heikko
 **Periaate:** Heikko ääni syntyy heikentävässä interferenssissä, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. Matkaero on pisteessä aina sama. Pienin taajuus tarkoittaa suurinta aallonpituutta, eli lukua $n = 0$. Silloin $\Delta s = \tfrac{1}{2}\lambda$. Taajuus saadaan yhtälöstä $v = f\lambda$.
-**Kaava:** $\Delta s = s_1 - s_2$, $\lambda = 2\Delta s$ ja $f = \dfrac{v}{\lambda}$, josta $f = \dfrac{v}{2\Delta s}$
+**Kaava:** $$\begin{aligned} \Delta s &= s_1 - s_2 \\ \Delta s &= \tfrac{1}{2}\lambda \\ \lambda &= 2\Delta s \\ f &= \dfrac{v}{\lambda} \\ f &= \dfrac{v}{2\Delta s} \end{aligned}$$
 **Muunnokset:** Ei tarvita: etäisyydet ovat metreinä ja nopeus yksikössä $\text{m/s}$.
 **Sijoitus:** $\Delta s = 5{,}30\,\text{m} - 4{,}45\,\text{m} = 0{,}85\,\text{m}$, $f = \dfrac{340\,\text{m/s}}{2 \cdot 0{,}85\,\text{m}} = 200\,\text{Hz}$
 **Vastaus:** $200\,\text{Hz}$. Vastauksessa on kaksi merkitsevää numeroa, koska matkaero $0{,}85\,\text{m}$ on etäisyyksien erotus ja siinä on kaksi merkitsevää numeroa.
@@ -145,7 +145,7 @@ Vene, lähempi aukko ja kauempi aukko muodostavat suorakulmaisen kolmion. Etäis
 **Periaate:** Kaiuttimien välillä pisteen etäisyydet kaiuttimiin ovat $x$ ja $d - x$. Matkaero on siis $\Delta s = |d - 2x|$. Heikoimman äänen kohdassa interferenssi on heikentävä, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. Vierekkäisten kohtien matkaerot eroavat yhdellä aallonpituudella. Kun $x$ muuttuu määrän $\Delta x$, matkaero muuttuu määrän $2\Delta x$.
 
 Siksi vierekkäisten kohtien väli on $\Delta x = \tfrac{\lambda}{2}$. Sama $\lambda/2$-väli on seisovan aallon solmujen välillä (luku Seisova aalto). Kohdat ovat äänen minimejä eivätkä täyttä hiljaisuutta. Yhden kaiuttimen lähellä aaltojen voimakkuudet ovat erilaiset, eivätkä ne kumoa toisiaan kokonaan.
-**Kaava:** $\Delta x = \dfrac{x_6 - x_1}{5}$, $\lambda = 2\Delta x$ ja $f = \dfrac{v}{\lambda}$, josta $f = \dfrac{v}{2\Delta x}$
+**Kaava:** $$\begin{aligned} \Delta x &= \dfrac{x_6 - x_1}{5} \\ \Delta x &= \dfrac{\lambda}{2} \\ \lambda &= 2\Delta x \\ f &= \dfrac{v}{\lambda} \\ f &= \dfrac{v}{2\Delta x} \end{aligned}$$
 **Muunnokset:** Ei tarvita: paikat ovat metreinä ja nopeus yksikössä $\text{m/s}$.
 **Sijoitus:** Taulukossa on kaikki kohdat valitulta väliltä peräkkäin. Ensimmäisen ja kuudennen kohdan välillä on siis viisi väliä, joten $\Delta x = \dfrac{1{,}63\,\text{m} - 0{,}38\,\text{m}}{5} = 0{,}250\,\text{m}$ ja $f = \dfrac{340\,\text{m/s}}{2 \cdot 0{,}250\,\text{m}} = 680\,\text{Hz}$
 **Vastaus:** $680\,\text{Hz}$. Vastauksessa on kolme merkitsevää numeroa kuten paikoissa ja äänen nopeudessa. Viiden välin keskiarvo pienentää yksittäisten lukemien virhettä.
@@ -170,7 +170,7 @@ Siksi vierekkäisten kohtien väli on $\Delta x = \tfrac{\lambda}{2}$. Sama $\la
 **Annettu:** taajuus $f = 170\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$, kaiuttimen M etäisyys kuulijasta $s_\text{M} = 3{,}00\,\text{m}$, kaiuttimet samassa vaiheessa ja aallot kuulijalla yhtä suuret
 **Kysytty:** a) kaiuttimen N etäisyys $s_\text{N}$ kuulijasta metreinä, b) pienin taajuus $f_2 > 170\,\text{Hz}$, jolla kuulijan kohdalla on voimakas ääni, hertseinä, c) perustelu
 **Periaate:** Hiljaisuus tarkoittaa heikentävää interferenssiä, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. Pienin etäisyys saadaan pienimmällä luvulla $n = 0$. Kaiuttimien paikat pysyvät samoina, joten matkaero $\Delta s$ pysyy samana. Kun taajuus muuttuu, aallonpituus muuttuu. Voimakas ääni syntyy vahvistavassa interferenssissä, $\Delta s = n\lambda$ luvulla $n = 1, 2, \ldots$.
-**Kaava:** $\lambda = \dfrac{v}{f}$, $\Delta s = \tfrac{1}{2}\lambda$ ja $s_\text{N} = s_\text{M} + \Delta s$; uudella taajuudella $\Delta s = \lambda_2$, josta $f_2 = \dfrac{v}{\Delta s}$
+**Kaava:** $$\begin{aligned} \lambda &= \dfrac{v}{f} \\ \Delta s &= \tfrac{1}{2}\lambda \\ s_\text{N} &= s_\text{M} + \Delta s \\ \Delta s &= \lambda_2 \\ \lambda_2 &= \dfrac{v}{f_2} \\ f_2 &= \dfrac{v}{\Delta s} \end{aligned}$$
 **Muunnokset:** Ei tarvita: etäisyydet ovat metreinä ja nopeus yksikössä $\text{m/s}$.
 **Sijoitus:** a) $\lambda = \dfrac{340\,\text{m/s}}{170\,\text{Hz}} = 2{,}00\,\text{m}$, $\Delta s = \dfrac{2{,}00\,\text{m}}{2} = 1{,}00\,\text{m}$ ja $s_\text{N} = 3{,}00\,\text{m} + 1{,}00\,\text{m} = 4{,}00\,\text{m}$. b) Voimakas ääni syntyy ensimmäisenä, kun $\Delta s = \lambda_2$. Silloin $f_2 = \dfrac{340\,\text{m/s}}{1{,}00\,\text{m}} = 340\,\text{Hz}$.
 **Vastaus:** b) $340\,\text{Hz}$. Vastauksessa on kolme merkitsevää numeroa kuten äänen nopeudessa. a) Kaiutin N on $4{,}00\,\text{m}$:n päässä.
@@ -183,7 +183,7 @@ Melussa on kuitenkin monta taajuutta, ja kuulija liikkuu. Vastamelukuulokkeissa 
 **Annettu:** kaiuttimien väli $d = 1{,}00\,\text{m}$, viivan etäisyys kaiuttimista $L = 4{,}00\,\text{m}$, kaiuttimet kohdissa $y = \pm 0{,}50\,\text{m}$, hiljaiset kohdat taulukosta $y_1 = 0{,}82\,\text{m}$ ja $y_2 = 3{,}01\,\text{m}$, $v = 340\,\text{m/s}$
 **Kysytty:** äänen taajuus $f$ hertseinä
 **Periaate:** Kuulijan etäisyydet kaiuttimiin saadaan Pythagoraan lauseella. Niiden erotus on matkaero. Hiljaisissa kohdissa interferenssi on heikentävä, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. Keskinormaalilla $y = 0$ matkaero on nolla ja ääni on voimakas. Kun $y$ kasvaa, matkaero kasvaa tasaisesti. Siksi ensimmäinen hiljainen kohta vastaa lukua $n = 0$ ja seuraava lukua $n = 1$.
-**Kaava:** $s_1 = \sqrt{L^2 + (y + 0{,}50\,\text{m})^2}$ ja $s_2 = \sqrt{L^2 + (y - 0{,}50\,\text{m})^2}$, $\Delta s = s_1 - s_2$, $\lambda = 2\Delta s$ ja $f = \dfrac{v}{\lambda}$
+**Kaava:** $$\begin{aligned} s_1 &= \sqrt{L^2 + (y + 0{,}50\,\text{m})^2} \\ s_2 &= \sqrt{L^2 + (y - 0{,}50\,\text{m})^2} \\ \Delta s &= s_1 - s_2 \\ \lambda &= 2\Delta s \\ f &= \dfrac{v}{\lambda} \\ f &= \dfrac{v}{2\Delta s} \end{aligned}$$
 **Muunnokset:** Ei tarvita: kaikki pituudet ovat metreinä.
 **Sijoitus:** Kohdassa $y_1 = 0{,}82\,\text{m}$: $s_1 = \sqrt{(4{,}00\,\text{m})^2 + (1{,}32\,\text{m})^2} = 4{,}212\,\text{m}$ ja $s_2 = \sqrt{(4{,}00\,\text{m})^2 + (0{,}32\,\text{m})^2} = 4{,}013\,\text{m}$, joten $\Delta s = 4{,}212\,\text{m} - 4{,}013\,\text{m} = 0{,}199\,\text{m}$, $\lambda = 2 \cdot 0{,}199\,\text{m} = 0{,}399\,\text{m}$ ja $f = \dfrac{340\,\text{m/s}}{0{,}399\,\text{m}} = 852{,}6\,\text{Hz}$. Tarkistus kohdassa $y_2 = 3{,}01\,\text{m}$: $s_1 = 5{,}322\,\text{m}$, $s_2 = 4{,}722\,\text{m}$ ja $\Delta s = 0{,}599\,\text{m} = \tfrac{3}{2}\lambda$, joten $\lambda = 0{,}400\,\text{m}$ ja $f = \dfrac{340\,\text{m/s}}{0{,}400\,\text{m}} = 850{,}9\,\text{Hz}$.
 **Vastaus:** $8{,}5 \cdot 10^{2}\,\text{Hz}$ eli $850\,\text{Hz}$. Vastauksessa on kaksi merkitsevää numeroa: kaksi arviota $853\,\text{Hz}$ ja $851\,\text{Hz}$ eroavat alle prosentin. Matkaero on kahden lähes yhtä suuren etäisyyden erotus, joten sen tarkkuus on huonompi kuin etäisyyksien.
@@ -216,7 +216,7 @@ Oikea vastaus on rivi 4. Tarkistus: heikentävän interferenssin matkaerot olisi
 **Kysytty:** matkaero $\Delta s = |s_1 - s_2|$ pisteessä P metreinä
 **Periaate:** Matkaero on kahden etäisyyden erotus. Etäisyydet ovat lähteistä pisteeseen P. Kuvassa kaiuttimet ja piste P muodostavat suorakulmaisen kolmion. Siksi pidemmän etäisyyden saa Pythagoraan lauseella.
 **Kuvaajan lukeminen:** Piste P on samalla vaakaviivalla kuin kaiutin $S_1$, $12$ ruudun päässä. Siis $s_1 = 12 \cdot 0{,}50\,\text{m} = 6{,}0\,\text{m}$. Kaiutin $S_2$ on samalla pystyviivalla $5$ ruutua ylempänä. Kaiuttimien väli on $d = 5 \cdot 0{,}50\,\text{m} = 2{,}5\,\text{m}$. Se on kohtisuorassa $s_1$:tä vastaan.
-**Kaava:** $s_2 = \sqrt{s_1^2 + d^2}$ ja $\Delta s = s_2 - s_1$, joten $\Delta s = \sqrt{s_1^2 + d^2} - s_1$
+**Kaava:** $$\begin{aligned} s_2 &= \sqrt{s_1^2 + d^2} \\ \Delta s &= s_2 - s_1 \\ \Delta s &= \sqrt{s_1^2 + d^2} - s_1 \end{aligned}$$
 **Muunnokset:** Ruudut metreiksi: $12 \cdot 0{,}50\,\text{m} = 6{,}0\,\text{m}$ ja $5 \cdot 0{,}50\,\text{m} = 2{,}5\,\text{m}$.
 **Sijoitus:** $s_2 = \sqrt{(6{,}0\,\text{m})^2 + (2{,}5\,\text{m})^2} = \sqrt{42{,}25\,\text{m}^2} = 6{,}5\,\text{m}$ ja $\Delta s = 6{,}5\,\text{m} - 6{,}0\,\text{m} = 0{,}50\,\text{m}$
 **Vastaus:** $0{,}50\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, koska ruudun koossa $0{,}50\,\text{m}$ on kaksi.
@@ -227,7 +227,7 @@ Oikea vastaus on rivi 4. Tarkistus: heikentävän interferenssin matkaerot olisi
 **Kysytty:** pienin taajuus $f$, jolla pisteessä P on heikentävä interferenssi, hertseinä
 **Periaate:** Heikentävässä interferenssissä matkaero on puoli aallonpituutta yli kokonaisen määrän aallonpituuksia: $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. Pienin taajuus tarkoittaa suurinta aallonpituutta. Se vastaa arvoa $n = 0$. Taajuus saadaan perusyhtälöstä $v = f\lambda$.
 **Kuvaajan lukeminen:** Piste P on samalla vaakaviivalla kuin kaiutin $S_1$, $12$ ruudun päässä. Siis $s_1 = 12 \cdot 0{,}50\,\text{m} = 6{,}0\,\text{m}$. Kaiutin $S_2$ on samalla pystyviivalla $5$ ruutua ylempänä. Kaiuttimien väli on $d = 5 \cdot 0{,}50\,\text{m} = 2{,}5\,\text{m}$, kohtisuorassa $s_1$:tä vastaan. Pythagoraan lauseella $s_2 = 13$ ruutua $= 6{,}5\,\text{m}$. Siis $\Delta s = 6{,}5\,\text{m} - 6{,}0\,\text{m} = 0{,}50\,\text{m}$.
-**Kaava:** $\Delta s = \tfrac{1}{2}\lambda$, josta $\lambda = 2\Delta s$, ja $f = \dfrac{v}{\lambda}$, joten $f = \dfrac{v}{2\Delta s}$
+**Kaava:** $$\begin{aligned} \Delta s &= \tfrac{1}{2}\lambda \\ \lambda &= 2\Delta s \\ f &= \dfrac{v}{\lambda} \\ f &= \dfrac{v}{2\Delta s} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Matkaero on metreinä ja nopeus yksikössä $\text{m/s}$. Siksi $\tfrac{\text{m/s}}{\text{m}} = \text{s}^{-1} = \text{Hz}$.
 **Sijoitus:** $f = \dfrac{340\,\text{m/s}}{2 \cdot 0{,}50\,\text{m}} = \dfrac{340\,\text{m/s}}{1{,}0\,\text{m}} = 340\,\text{Hz}$
 **Vastaus:** $340\,\text{Hz}$. Vastauksessa on kaksi merkitsevää numeroa, koska matkaerossa $0{,}50\,\text{m}$ on kaksi.

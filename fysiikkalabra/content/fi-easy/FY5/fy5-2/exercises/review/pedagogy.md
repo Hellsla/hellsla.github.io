@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 1779ad3ba492da52
-Mode: full (translation review against the reviewed Finnish set; new task fy5-2-L2-08)
-Round 1
+CONTENT-HASH: a013dbc7e633f71e
+none
 
 ## Blocking
 (none)
 
-## Fixed
-- None needed; new task fy5-2-L2-08 was already faithful to content/fi.
-
 ## Polish
-(none)
+- solutions.md line 155 (mass-of-ruler task) — the Kaava starts from r_1 and r_2; add a first row `\Sigma M = 0` like the other tasks.
+- solutions.md line 108 (shelf) — the Kaava step is still a long geometry paragraph with only the last tan row displayed; consider moving the prose to Periaate.
 
 ## Checked
-- fy5-2-L2-08: situation first, question last as its own sentence; same structure, options and reasoning steps as fi; example-data notice kept where fi has it.
-- Solution has the same stages as fi (Find, Principle, Model answer) and can be followed step by step; nothing skipped or added.
-- Feedback repairs the misconception rather than restating the answer, as in fi.
-- Selkosuomi per NOTES.md section 12: short sentences, common words, glossary terms kept; same physics and numbers as fi; decimal comma in text, point in table cells as in fi.
-- No change to level, workload or figure use; check_i18n.py shows nothing for fy5-2; build.py fy5-2 succeeds.
+- Kaava steps now open with the basic condition (ΣM = 0, ΣF = 0, M_1 = M_2) and are simplified symbolically, one equation per row, before Sijoitus.
+- Centre-of-mass tasks derive x_pp from M_1 = M_2 stepwise; the result matches the lesson's formula.
+- Lever, wheelbarrow, plank, arm-muscle, bench and ladder tasks follow the lesson's order: moment point, condition, rearranged symbol, then numbers.
+- Sijoitus, answers and tolerances unchanged; substitution uses the last symbolic form.
+- The paragraph splits in Periaate and Mallivastaus keep every paragraph short and readable.
+- Finnish unchanged and correct.

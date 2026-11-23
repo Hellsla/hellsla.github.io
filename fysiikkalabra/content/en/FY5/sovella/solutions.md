@@ -8,7 +8,7 @@
 The weights tend to tip the jib in its vertical plane, so the moments are calculated about the horizontal moment axis A, which passes through the tower perpendicular to this plane. The lever arm of each weight is the perpendicular distance of its line of action from the axis A.
 
 The weights are vertical and the axis horizontal, so the lever arm is the horizontal distance of the weight from the axis of the tower. The load and the weight of the jib turn the jib towards the side of the load, the counterweight in the opposite direction. In equilibrium with respect to rotation the sum of the moments is zero.
-**Formula:** $m_\text{p} g r_\text{p} + m g r - m_\text{v} g r_\text{v} = 0$. The acceleration of free fall cancels, so $r = \dfrac{m_\text{v} r_\text{v} - m_\text{p} r_\text{p}}{m}$.
+**Formula:** $$\begin{aligned} M &= Fr,\quad F = mg \\ \Sigma M &= m_\text{p} g r_\text{p} + m g r - m_\text{v} g r_\text{v} = 0 \\ m g r &= m_\text{v} g r_\text{v} - m_\text{p} g r_\text{p} \\ r &= \dfrac{m_\text{v} r_\text{v} - m_\text{p} r_\text{p}}{m} \end{aligned}$$
 **Conversions:** $1\,\text{t} = 1000\,\text{kg}$, so $m_\text{p} = 4000\,\text{kg}$ and $m_\text{v} = 9000\,\text{kg}$.
 **Substitution:** $r = \dfrac{9000\,\text{kg} \cdot 10\,\text{m} - 4000\,\text{kg} \cdot 12\,\text{m}}{2000\,\text{kg}} = \dfrac{42\,000\,\text{kg}\cdot\text{m}}{2000\,\text{kg}} = 21\,\text{m}$
 **Answer:** $r \approx 21\,\text{m}$, two significant figures like the distances and masses.
@@ -18,7 +18,7 @@ The weights are vertical and the axis horizontal, so the lever arm is the horizo
 **Given:** the data of part a, trolley at the tip of the jib $r_\text{max} = 40\,\text{m}$, permitted total moment $M_\text{max} = 600\,\text{kNm}$ and $g = 9.81\,\text{m/s}^2$
 **Find:** the greatest load $m$ at the tip of the jib
 **Principle:** When the load is at the tip, the total moment points towards the side of the load, and with the greatest permitted load it is equal to the limit. The moments are calculated about the moment axis A as in part a, with the positive direction of rotation towards the side of the load.
-**Formula:** $m g r_\text{max} + m_\text{p} g r_\text{p} - m_\text{v} g r_\text{v} = M_\text{max}$, so $m = \dfrac{M_\text{max} + m_\text{v} g r_\text{v} - m_\text{p} g r_\text{p}}{g r_\text{max}}$
+**Formula:** $$\begin{aligned} M &= Fr,\quad F = mg \\ M_\text{max} &= m g r_\text{max} + m_\text{p} g r_\text{p} - m_\text{v} g r_\text{v} \\ m g r_\text{max} &= M_\text{max} + m_\text{v} g r_\text{v} - m_\text{p} g r_\text{p} \\ m &= \dfrac{M_\text{max} + m_\text{v} g r_\text{v} - m_\text{p} g r_\text{p}}{g r_\text{max}} \end{aligned}$$
 **Conversions:** $M_\text{max} = 600\,\text{kNm} = 600\,000\,\text{Nm}$
 **Substitution:** $m_\text{p} g r_\text{p} = 4000\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 12\,\text{m} = 470\,880\,\text{Nm}$ and $m_\text{v} g r_\text{v} = 9000\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 10\,\text{m} = 882\,900\,\text{Nm}$. The moment of the load may therefore be $600\,000\,\text{Nm} + 882\,900\,\text{Nm}$ $- 470\,880\,\text{Nm}$ $= 1\,012\,020\,\text{Nm}$, so $m = \dfrac{1\,012\,020\,\text{Nm}}{9.81\,\text{m/s}^2 \cdot 40\,\text{m}} = 2579\,\text{kg}$
 **Answer:** $m \approx 2.6\,\text{t}$, two significant figures like the data of the crane.
@@ -95,7 +95,7 @@ So the load is not thrown outwards but lags behind its straight path only by as 
 **Principle:** The load moves in uniform circular motion, so its acceleration is the centripetal acceleration $a_\text{n} = \tfrac{v^2}{r}$ towards the axis of the tower. The speed is obtained from the period. Newton's second law is written for the free-body diagram of part d by components: axis $x$ horizontally towards the axis of the tower and $y$ upwards.
 
 The tilt moves the load only by centimetres, so the distance of the trolley, $21\,\text{m}$, can be used as the radius of the circle.
-**Formula:** $x$: $S\sin\theta = m\dfrac{v^2}{r}$ and $y$: $S\cos\theta - mg = 0$. Dividing the equations by each other gives $\tan\theta = \dfrac{v^2}{rg}$, where $v = \dfrac{2\pi r}{T}$. The mass cancels.
+**Formula:** $$\begin{aligned} \Sigma F_x &= ma_\text{n}: S\sin\theta = m\dfrac{v^2}{r} \\ \Sigma F_y &= 0: S\cos\theta = mg \\ \tan\theta &= \dfrac{S\sin\theta}{S\cos\theta} = \dfrac{m v^2/r}{mg} \\ \tan\theta &= \dfrac{v^2}{rg} \\ v &= \dfrac{2\pi r}{T} \end{aligned}$$
 **Conversions:** Not needed.
 **Substitution:** $v = \dfrac{2\pi \cdot 21\,\text{m}}{90\,\text{s}} = 1.466\,\text{m/s}$ and $\tan\theta = \dfrac{(1.466\,\text{m/s})^2}{21\,\text{m} \cdot 9.81\,\text{m/s}^2} = 0.01043$, so $\theta = 0.598^\circ$
 **Answer:** $\theta \approx 0.60^\circ$, two significant figures like the period $90\,\text{s}$. The load has moved outwards from the trolley by $15\,\text{m} \cdot 0.01043 \approx 0.16\,\text{m}$.
@@ -205,7 +205,7 @@ According to the model, the slope of the line is $\gamma M$, which is the same f
 **Find:** the mass $M$ of Jupiter
 **Principle:** According to the model $v^2 = \gamma M \cdot \tfrac{1}{r}$, so the slope $k$ of the line is $\gamma M$. The slope is read from a point of the line far from the origin, so that the relative error of the reading is small.
 **Reading the graph:** The line passes through the origin and the point $(5.0 \cdot 10^{-9}\,\tfrac{1}{\text{m}};\ 6.35 \cdot 10^{8}\,\text{m}^2/\text{s}^2)$, so $k = \dfrac{6.35 \cdot 10^{8}\,\text{m}^2/\text{s}^2}{5.0 \cdot 10^{-9}\,\tfrac{1}{\text{m}}} = 1.27 \cdot 10^{17}\,\text{m}^3/\text{s}^2$.
-**Formula:** $k = \gamma M$, so $M = \dfrac{k}{\gamma}$
+**Formula:** $$\begin{aligned} F &= \dfrac{\gamma M m}{r^2} = m\dfrac{v^2}{r} \\ v^2 &= \gamma M \cdot \dfrac{1}{r} = k \cdot \dfrac{1}{r} \\ k &= \gamma M \\ M &= \dfrac{k}{\gamma} \end{aligned}$$
 **Conversions:** $1\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} = 1\,\tfrac{\text{m}^3}{\text{kg}\cdot\text{s}^2}$, because $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$.
 **Substitution:** $M = \dfrac{1.27 \cdot 10^{17}\,\text{m}^3/\text{s}^2}{6.674 \cdot 10^{-11}\,\tfrac{\text{m}^3}{\text{kg}\cdot\text{s}^2}} = 1.90 \cdot 10^{27}\,\text{kg}$
 **Answer:** $M \approx 1.9 \cdot 10^{27}\,\text{kg}$. Two significant figures, because the slope is read from the graph to an accuracy of about two or three figures.
@@ -217,7 +217,7 @@ According to the model, the slope of the line is $\gamma M$, which is the same f
 **Principle:** The probe stays above the same cloud formation only if it orbits Jupiter in the same direction and in the same time as the cloud formation, which the problem assumes to go round in the rotation period of Jupiter, $9.93\,\text{h}$.
 
 The orbit is thus an equatorial circular orbit synchronised with the rotation of Jupiter. The centripetal force of the circular motion of the probe is the gravity of Jupiter, as for the moons, so $v^2 = \dfrac{\gamma M}{r}$, and the orbital speed is $v = \dfrac{2\pi r}{T}$.
-**Formula:** $\dfrac{4\pi^2 r^2}{T^2} = \dfrac{\gamma M}{r}$, so $r^3 = \dfrac{\gamma M T^2}{4\pi^2}$ and $r = \sqrt[3]{\dfrac{\gamma M T^2}{4\pi^2}}$
+**Formula:** $$\begin{aligned} F &= \dfrac{\gamma M m}{r^2} = m\dfrac{v^2}{r} \\ v^2 &= \dfrac{\gamma M}{r},\quad v = \dfrac{2\pi r}{T} \\ \dfrac{4\pi^2 r^2}{T^2} &= \dfrac{\gamma M}{r} \\ r^3 &= \dfrac{\gamma M T^2}{4\pi^2} \\ r &= \sqrt[3]{\dfrac{\gamma M T^2}{4\pi^2}} \end{aligned}$$
 **Conversions:** $T = 9.93 \cdot 3600\,\text{s} = 35\,748\,\text{s}$
 **Substitution:** $r^3 = \dfrac{1.27 \cdot 10^{17}\,\text{m}^3/\text{s}^2 \cdot (35\,748\,\text{s})^2}{4\pi^2} = 4.11 \cdot 10^{24}\,\text{m}^3$, so $r = 1.60 \cdot 10^{8}\,\text{m}$
 **Answer:** $$\begin{aligned} r &\approx 1.6 \cdot 10^{8}\,\text{m} \\ &= 160\,000\,\text{km} \end{aligned}$$ from the centre of Jupiter. Two significant figures like the result of part b.
@@ -333,7 +333,7 @@ When the line is extended to the vertical axis, it meets the axis at about $0.02
 **Find:** the spring constant $k$ of the spring
 **Principle:** According to the model $T^2 = \dfrac{4\pi^2}{k}\,m$ the slope of the line is $\dfrac{4\pi^2}{k}$. The intercept on the vertical axis does not affect the slope, so the spring constant is obtained from the slope although the line does not pass through the origin. The slope is read from two points of the line far apart from each other.
 **Reading the graph:** The line passes through the points $(0.100\,\text{kg};\ 0.226\,\text{s}^2)$ and $(0.350\,\text{kg};\ 0.722\,\text{s}^2)$, so the slope is $\dfrac{0.722\,\text{s}^2 - 0.226\,\text{s}^2}{0.350\,\text{kg} - 0.100\,\text{kg}} = \dfrac{0.496\,\text{s}^2}{0.250\,\text{kg}} = 1.984\,\text{s}^2/\text{kg}$.
-**Formula:** $\dfrac{4\pi^2}{k} = 1.984\,\text{s}^2/\text{kg}$, so $k = \dfrac{4\pi^2}{1.984\,\text{s}^2/\text{kg}}$
+**Formula:** $$\begin{aligned} T &= 2\pi\sqrt{\dfrac{m}{k}} \\ T^2 &= \dfrac{4\pi^2}{k}\,m \\ \text{slope} &= \dfrac{4\pi^2}{k} \\ k &= \dfrac{4\pi^2}{\text{slope}} \end{aligned}$$
 **Conversions:** $1\,\text{kg/s}^2 = 1\,\text{N/m}$, because $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$.
 **Substitution:** $k = \dfrac{4\pi^2}{1.984\,\text{s}^2/\text{kg}} = \dfrac{39.48}{1.984\,\text{s}^2/\text{kg}} = 19.9\,\text{kg/s}^2$
 **Answer:** $k \approx 19.9\,\text{N/m}$, three significant figures, because the masses and times have been measured to three figures and the points are very close to the line.
@@ -360,7 +360,7 @@ From the intercept the extra mass is $$0.028\,\text{s}^2 : 1.984\,\text{s}^2/\te
 **Principle:** The energy of the oscillation is conserved when friction and air resistance are small. At an extreme position the mass is momentarily at rest, and the whole energy $\tfrac{1}{2}kA^2$ is potential energy. At the equilibrium position the displacement is zero, so the whole energy is kinetic energy and the speed is greatest.
 
 For a vertical spring the weight only shifts the equilibrium position, so the displacement is measured from the equilibrium position. In the model of the problem the mass of the spring itself is taken into account as in part c: the lower part of the spring moves with the mass, so a third of the mass of the spring is added to the mass in the kinetic energy.
-**Formula:** $\tfrac{1}{2}m_\text{eff}v_\text{max}^2 = \tfrac{1}{2}kA^2$, where $m_\text{eff} = m + \tfrac{1}{3}m_\text{s}$, so $v_\text{max} = A\sqrt{\dfrac{k}{m_\text{eff}}}$
+**Formula:** $$\begin{aligned} E_\text{k,max} &= \tfrac{1}{2}m_\text{eff}v_\text{max}^2 \\ E_\text{p,max} &= \tfrac{1}{2}kA^2 \\ E_\text{k,max} &= E_\text{p,max} \\ m_\text{eff} &= m + \tfrac{1}{3}m_\text{s} \\ v_\text{max} &= A\sqrt{\dfrac{k}{m_\text{eff}}} \end{aligned}$$
 **Conversions:** $A = 5.0\,\text{cm} = 0.050\,\text{m}$ and $m_\text{s} = 45\,\text{g} = 0.045\,\text{kg}$
 **Substitution:** $m_\text{eff} = 0.250\,\text{kg} + 0.045\,\text{kg} : 3 = 0.265\,\text{kg}$ and $v_\text{max} = 0.050\,\text{m} \cdot \sqrt{\dfrac{19.9\,\text{N/m}}{0.265\,\text{kg}}} = 0.050\,\text{m} \cdot 8.67\,\tfrac{1}{\text{s}} = 0.433\,\text{m/s}$
 **Answer:** $v_\text{max} \approx 0.43\,\text{m/s}$, two significant figures like the amplitude $5.0\,\text{cm}$.
@@ -402,7 +402,7 @@ If the distance between peaks, $2.0\,\text{ms}$, is taken as the period, $500\,\
 **Principle:** A standing wave forms in the air column of the pipe when the sound wave is reflected from the ends of the tube. At an open end the air can move freely, so there is an antinode of the oscillation there.
 
 When both ends are open, in the fundamental mode the tube has two antinodes at the ends and one node in the middle, so the length of the tube is half the wavelength. The wavelength is obtained from the basic equation of waves $v = f\lambda$.
-**Formula:** $L = \dfrac{\lambda}{2}$ and $\lambda = \dfrac{v}{f}$, so $L = \dfrac{v}{2f}$
+**Formula:** $$\begin{aligned} L &= \dfrac{\lambda}{2} \\ v &= f\lambda \Rightarrow \lambda = \dfrac{v}{f} \\ L &= \dfrac{v}{2f} \end{aligned}$$
 **Conversions:** Not needed.
 **Substitution:** $L = \dfrac{343\,\text{m/s}}{2 \cdot 250\,\text{Hz}} = 0.686\,\text{m}$
 **Answer:** $L \approx 0.686\,\text{m}$, three significant figures like the speed of sound.
@@ -412,7 +412,7 @@ When both ends are open, in the fundamental mode the tube has two antinodes at t
 **Given:** $L = 0.686\,\text{m}$, $v = 343\,\text{m/s}$ at a temperature of $20.0\,{}^\circ\text{C}$, the speed of sound decreases by about $0.6\,\text{m/s}$ per degree, winter temperature $8.0\,{}^\circ\text{C}$
 **Find:** the change $\Delta f$ of the fundamental frequency
 **Principle:** The wavelength of the standing wave is determined by the length of the pipe, $\lambda = 2L$, which practically does not change. In cold air sound travels more slowly, so with the same wavelength the frequency $f = \tfrac{v}{\lambda}$ decreases in the same proportion as the speed of sound.
-**Formula:** $v' = v - 0.6\,\tfrac{\text{m/s}}{{}^\circ\text{C}} \cdot \Delta T$, $f' = \dfrac{v'}{2L}$ and $\Delta f = f - f'$
+**Formula:** $$\begin{aligned} v' &= v - 0.6\,\tfrac{\text{m/s}}{{}^\circ\text{C}} \cdot \Delta T \\ f &= \dfrac{v}{\lambda},\quad \lambda = 2L \\ f' &= \dfrac{v'}{2L} \\ \Delta f &= f - f' \end{aligned}$$
 **Conversions:** The temperature falls by $20.0\,{}^\circ\text{C} - 8.0\,{}^\circ\text{C} = 12.0\,{}^\circ\text{C}$.
 **Substitution:** $v' = 343\,\text{m/s} - 12.0 \cdot 0.6\,\text{m/s} = 335.8\,\text{m/s}$ and $f' = \dfrac{335.8\,\text{m/s}}{2 \cdot 0.686\,\text{m}} = 244.8\,\text{Hz}$, so $\Delta f = 250\,\text{Hz} - 244.8\,\text{Hz} = 5.2\,\text{Hz}$
 **Answer:** The fundamental frequency decreases by about $5\,\text{Hz}$ (more precisely $5.2\,\text{Hz}$) to about $245\,\text{Hz}$. The change is known to one significant figure, because the change of speed $0.6\,\text{m/s}$ per degree is given to one figure.
@@ -424,7 +424,7 @@ When both ends are open, in the fundamental mode the tube has two antinodes at t
 **Principle:** When a source radiates uniformly in all directions, the same power spreads over the surface of a sphere $4\pi r^2$, so the intensity is $I = \dfrac{P}{4\pi r^2}$. When the distance is halved, the intensity quadruples.
 
 The change in the intensity level is obtained from the ratio of the intensities. The reference time, in which the same energy dose builds up, halves for every $3\,\text{dB}$ rise.
-**Formula:** $L_2 - L_1 = 10\,\text{dB} \cdot \lg \dfrac{I_2}{I_1}$, where $\dfrac{I_2}{I_1} = \left(\dfrac{r_1}{r_2}\right)^2$; $n = \dfrac{L_2 - L_0}{3\,\text{dB}}$ and $t_\text{ref} = \dfrac{t_0}{2^{\,n}}$
+**Formula:** $$\begin{aligned} I &\propto \dfrac{1}{r^2} \Rightarrow \dfrac{I_2}{I_1} = \left(\dfrac{r_1}{r_2}\right)^2 \\ L_2 - L_1 &= 10\,\text{dB} \cdot \lg \dfrac{I_2}{I_1} \\ n &= \dfrac{L_2 - L_0}{3\,\text{dB}} \\ t_\text{ref} &= \dfrac{t_0}{2^{\,n}} \end{aligned}$$
 **Conversions:** Not needed.
 **Substitution:** $\dfrac{I_2}{I_1} = \left(\dfrac{4.0\,\text{m}}{2.0\,\text{m}}\right)^2 = 4$, so $L_2 = 88\,\text{dB} + 10\,\text{dB} \cdot \lg 4 = 88\,\text{dB} + 6.0\,\text{dB} = 94\,\text{dB}$. $n = \dfrac{94\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 3.0$ and $t_\text{ref} = \dfrac{8\,\text{h}}{2^{3}} = 1.0\,\text{h}$
 **Answer:** $t_\text{ref} \approx 1\,\text{h}$. The dose does not stay below the reference dose: three hours of practice is about three times the reference time, so the dose is about $300\,\%$ of the reference dose. The organist should use hearing protection or practise with quieter stops.

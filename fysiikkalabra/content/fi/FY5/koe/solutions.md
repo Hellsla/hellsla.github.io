@@ -156,7 +156,7 @@ Pultti siis vetää laudan takapäätä alas, ja tukivoima on kaikkien kolmen al
 **Annettu:** $m_\text{l} = 40\,\text{kg}$, $m_\text{h} = 60\,\text{kg}$, laudan pituus $4{,}0\,\text{m}$, tuki B $1{,}2\,\text{m}$:n päässä takapäästä, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** pultin voima $F_\text{A}$ ja tuen tukivoima $N$
 **Periaate:** Momenttiehto tuen B suhteen, koska siinä tuntematon tukivoima ei esiinny. Laudan paino vaikuttaa sen keskeltä, $2{,}0\,\text{m}$:n päästä takapäästä eli $r_G = 0{,}8\,\text{m}$:n päässä tuesta. Hyppääjän voiman varsi on $r_\text{h} = 2{,}8\,\text{m}$ ja pultin voiman $r_\text{A} = 1{,}2\,\text{m}$. Tukivoima saadaan sen jälkeen pystysuorien voimien tasapainosta, kun positiivinen suunta on ylös: $N - F_\text{A} - G - F_\text{h} = 0$.
-**Kaava:** $F_\text{A} r_\text{A} = G r_G + F_\text{h} r_\text{h} \quad\Rightarrow\quad F_\text{A} = \dfrac{G r_G + F_\text{h} r_\text{h}}{r_\text{A}}$ ja $N = F_\text{A} + G + F_\text{h}$
+**Kaava:** $$\begin{aligned} \Sigma M_\text{B} &= 0 \\ F_\text{A} r_\text{A} &= G r_G + F_\text{h} r_\text{h} \\ F_\text{A} &= \dfrac{G r_G + F_\text{h} r_\text{h}}{r_\text{A}} \\ \Sigma F_y &= 0 \\ N &= F_\text{A} + G + F_\text{h} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $G = 40\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} = 392{,}4\,\text{N}$ ja $F_\text{h} = 60\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} = 588{,}6\,\text{N}$. Kun voimat ovat newtoneina ja varret metreinä, $F_\text{A} = \dfrac{392{,}4 \cdot 0{,}8 + 588{,}6 \cdot 2{,}8}{1{,}2}\,\text{N} \approx 1635\,\text{N}$ ja $N = 1635\,\text{N} + 392{,}4\,\text{N} + 588{,}6\,\text{N} \approx 2616\,\text{N}$.
 **Vastaus:** Pultti vetää lautaa alaspäin noin $1{,}6\,\text{kN}$:n voimalla, ja tuki työntää sitä ylöspäin noin $2{,}6\,\text{kN}$:n voimalla. Kaksi merkitsevää numeroa, kuten massoissa ja pituuksissa.
@@ -172,7 +172,7 @@ Kun hyppääjä kävelee kohti tukea, $r_\text{h}$ ja siksi myös pultin voima p
 Tuen kohdalla $r_\text{h} = 0$, mutta laudan paino vaatii vielä pultin voiman $392{,}4 \cdot 0{,}8 : 1{,}2\,\text{N} \approx 262\,\text{N}$.
 
 Pultin voima on nolla vasta, kun hyppääjä on tuen takana etäisyydellä $x$ niin, että hänen momenttinsa kumoaa laudan painon momentin.
-**Kaava:** $F_\text{h} x = G r_G \quad\Rightarrow\quad x = \dfrac{G r_G}{F_\text{h}}$, ja etäisyys takapäästä on $1{,}2\,\text{m} - x$.
+**Kaava:** $$\begin{aligned} \Sigma M &= 0 \\ F_\text{h} x &= G r_G \\ x &= \dfrac{G r_G}{F_\text{h}} \end{aligned}$$ Etäisyys takapäästä on $1{,}2\,\text{m} - x$.
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $x = \dfrac{392{,}4\,\text{N} \cdot 0{,}8\,\text{m}}{588{,}6\,\text{N}} \approx 0{,}533\,\text{m}$, joten etäisyys takapäästä on $1{,}2\,\text{m} - 0{,}533\,\text{m} \approx 0{,}67\,\text{m}$.
 **Vastaus:** Pultin voima pienenee hyppääjän kävellessä kohti tukea. Se on nolla, kun hyppääjä seisoo tuen ja takapään välissä noin $0{,}67\,\text{m}$:n päässä takapäästä eli noin $0{,}53\,\text{m}$ tuen takana.
@@ -182,7 +182,7 @@ Pultin voima on nolla vasta, kun hyppääjä on tuen takana etäisyydellä $x$ n
 **Annettu:** kärjen painuma $x = 9{,}0\,\text{cm}$, $m = 60\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$, laudan massa merkityksetön
 **Kysytty:** jousivakio $k$ ja jaksonaika $T$
 **Periaate:** Kun hyppääjä seisoo levossa kärjessä, kärki on tasapainoasemassa: laudan jousivoima kumoaa hyppääjän painon, $kx = mg$. Kun kärki poikkeaa tasapainoasemasta, jousivoima on harmoninen voima, ja hyppääjä ja kärki värähtelevät kuin kappale jousen päässä.
-**Kaava:** $k = \dfrac{mg}{x}$ ja $T = 2\pi\sqrt{\dfrac{m}{k}}$
+**Kaava:** $$\begin{aligned} kx &= mg \\ k &= \dfrac{mg}{x} \\ T &= 2\pi\sqrt{\dfrac{m}{k}} \end{aligned}$$
 **Muunnokset:** $9{,}0\,\text{cm} = 0{,}090\,\text{m}$
 **Sijoitus:** $k = \dfrac{60\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}}{0{,}090\,\text{m}} \approx 6540\,\tfrac{\text{N}}{\text{m}}$ ja $T = 2\pi\sqrt{\dfrac{60\,\text{kg}}{6540\,\text{N/m}}} \approx 0{,}60\,\text{s}$
 **Vastaus:** Laudan kärjen jousivakio on noin $6{,}5 \cdot 10^3\,\text{N/m}$, ja värähtelyn jaksonaika on noin $0{,}60\,\text{s}$.
@@ -215,7 +215,7 @@ Pultin voima on nolla vasta, kun hyppääjä on tuen takana etäisyydellä $x$ n
 **Annettu:** $r = 6{,}891 \cdot 10^{6}\,\text{m}$ (a-kohta), $M = 5{,}97 \cdot 10^{24}\,\text{kg}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Kysytty:** ratanopeus $v$ ja kiertoaika $T$
 **Periaate:** Satelliitti on tasaisessa ympyräliikkeessä. Ainoa siihen vaikuttava voima on gravitaatiovoima, joka osoittaa kohti Maan keskipistettä ja antaa satelliitille normaalikiihtyvyyden $\tfrac{v^2}{r}$. Newtonin II lain mukaan $\gamma\tfrac{Mm}{r^2} = m\tfrac{v^2}{r}$. Kiertoaika on yhden kierroksen pituus jaettuna ratanopeudella.
-**Kaava:** $v = \sqrt{\dfrac{\gamma M}{r}}$ ja $T = \dfrac{2\pi r}{v}$
+**Kaava:** $$\begin{aligned} F_\text{g} &= ma_\text{n} \\ \gamma\dfrac{Mm}{r^2} &= \dfrac{mv^2}{r} \\ v &= \sqrt{\dfrac{\gamma M}{r}} \\ T &= \dfrac{2\pi r}{v} \end{aligned}$$
 **Muunnokset:** $1\,\text{min} = 60\,\text{s}$
 **Sijoitus:** $v = \sqrt{\dfrac{6{,}674 \cdot 10^{-11} \cdot 5{,}97 \cdot 10^{24}}{6{,}891 \cdot 10^{6}}}\,\tfrac{\text{m}}{\text{s}} \approx 7604\,\tfrac{\text{m}}{\text{s}}$ ja $T = \dfrac{2\pi \cdot 6{,}891 \cdot 10^{6}\,\text{m}}{7604\,\text{m/s}} \approx 5694\,\text{s} \approx 94{,}9\,\text{min}$
 **Vastaus:** Satelliitin ratanopeus on noin $7{,}60\,\text{km/s}$, ja se kiertää Maan noin $95\,\text{min}$:ssa.
@@ -252,7 +252,7 @@ Mikään ”keskipakoisvoima” ei kumoa gravitaatiota: jos kokonaisvoima olisi 
 **Annettu:** $h = 400\,\text{km}$, $R = 6371\,\text{km}$, $M = 5{,}97 \cdot 10^{24}\,\text{kg}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Kysytty:** ratanopeus $v$ $400\,\text{km}$:n korkeudella ja ympyräratamallin pätevyys
 **Periaate:** Ilmanvastus on niin pieni, että satelliitti kiertää jokaisella kierroksella lähes ympyrärataa, jolle pätee b-kohdan malli. Ratanopeus riippuu vain radan säteestä.
-**Kaava:** $v = \sqrt{\dfrac{\gamma M}{r}}$, missä $r = R + h$
+**Kaava:** $$\begin{aligned} F_\text{g} &= ma_\text{n} \\ \gamma\dfrac{Mm}{r^2} &= \dfrac{mv^2}{r} \\ v &= \sqrt{\dfrac{\gamma M}{r}} \\ r &= R + h \end{aligned}$$
 **Muunnokset:** $r = 6371\,\text{km} + 400\,\text{km} = 6771\,\text{km} = 6{,}771 \cdot 10^{6}\,\text{m}$
 **Sijoitus:** $v = \sqrt{\dfrac{6{,}674 \cdot 10^{-11} \cdot 5{,}97 \cdot 10^{24}}{6{,}771 \cdot 10^{6}}}\,\tfrac{\text{m}}{\text{s}} \approx 7671\,\tfrac{\text{m}}{\text{s}}$
 **Vastaus:** Ratanopeus on $400\,\text{km}$:n korkeudella noin $7{,}67\,\text{km/s}$, eli suurempi kuin b-kohdan ylemmän radan nopeus $7{,}60\,\text{km/s}$, vaikka ilmanvastus jarruttaa satelliittia: lähempänä Maata gravitaatio on voimakkaampi, ja ympyräradalla pysyminen vaatii suuremman nopeuden.
@@ -455,7 +455,7 @@ Koska aallon nopeus kielessä on vakio, vain näitä aallonpituuksia vastaavat t
 **Annettu:** $L_1 = 62\,\text{dB}$, kun $r_1 = 1{,}0\,\text{m}$; $r_2 = 8{,}0\,\text{m}$
 **Kysytty:** intensiteettitaso $L_2$ etäisyydellä $8{,}0\,\text{m}$ ja todellinen taso luokassa
 **Periaate:** Pistemäisen lähteen teho jakautuu pallon pinnalle, joten intensiteetti on $I = \tfrac{P}{4\pi r^2}$ ja kääntäen verrannollinen etäisyyden neliöön. Tasojen erotus saadaan intensiteettien suhteesta.
-**Kaava:** $L_2 - L_1 = 10\,\text{dB} \cdot \lg\dfrac{I_2}{I_1}$, missä $\dfrac{I_2}{I_1} = \left(\dfrac{r_1}{r_2}\right)^2$
+**Kaava:** $$\begin{aligned} L_2 - L_1 &= 10\,\text{dB} \cdot \lg\dfrac{I_2}{I_1} \\ \dfrac{I_2}{I_1} &= \left(\dfrac{r_1}{r_2}\right)^2 \\ L_2 &= L_1 + 10\,\text{dB} \cdot \lg\left(\dfrac{r_1}{r_2}\right)^2 \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $\dfrac{I_2}{I_1} = \left(\dfrac{1{,}0\,\text{m}}{8{,}0\,\text{m}}\right)^2 = \dfrac{1}{64}$ ja $L_2 = 62\,\text{dB} + 10\,\text{dB} \cdot \lg\dfrac{1}{64} \approx 62\,\text{dB} - 18\,\text{dB} = 44\,\text{dB}$
 **Vastaus:** Ilman heijastuksia taso olisi $8{,}0\,\text{m}$:n päässä noin $44\,\text{dB}$. Luokkahuoneessa todellinen taso on suurempi, koska seinät, katto ja lattia heijastavat ääntä, ja kuulijalle tulee suoran äänen lisäksi heijastunutta ääntä.
@@ -618,7 +618,7 @@ Tulosta parantaisivat esimerkiksi toistot jokaisella etäisyydellä, pidemmät e
 **Annettu:** $L = 103\,\text{dB}$, $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$, vertailutaso $85\,\text{dB}$
 **Kysytty:** intensiteetti $I$ ja sen suhde tason $85\,\text{dB}$ intensiteettiin
 **Periaate:** Intensiteettitason määritelmästä $L = 10\,\text{dB} \cdot \lg\tfrac{I}{I_0}$ ratkaistaan intensiteetti. Tasojen erotus kertoo intensiteettien suhteen.
-**Kaava:** $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$ ja $\dfrac{I}{I_{85}} = 10^{\,(L - 85\,\text{dB})/(10\,\text{dB})}$
+**Kaava:** $$\begin{aligned} L &= 10\,\text{dB} \cdot \lg\dfrac{I}{I_0} \\ I &= I_0 \cdot 10^{\,L/(10\,\text{dB})} \\ \dfrac{I}{I_{85}} &= 10^{\,(L - 85\,\text{dB})/(10\,\text{dB})} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $I = 1{,}0 \cdot 10^{-12}\,\tfrac{\text{W}}{\text{m}^2} \cdot 10^{10{,}3} \approx 2{,}0 \cdot 10^{-2}\,\tfrac{\text{W}}{\text{m}^2}$ ja $\dfrac{I}{I_{85}} = 10^{1{,}8} \approx 63$
 **Vastaus:** Intensiteetti on noin $2{,}0 \cdot 10^{-2}\,\text{W/m}^2$, noin $63$-kertainen tason $85\,\text{dB}$ intensiteettiin verrattuna.

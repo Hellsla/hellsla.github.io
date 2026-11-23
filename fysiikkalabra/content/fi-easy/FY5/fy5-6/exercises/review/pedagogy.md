@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 7d2542dd563a3195
+CONTENT-HASH: e2c412a0f8374d2d
+none
 
 ## Blocking
 (none)
 
 ## Polish
-- fy5-6-L2-09 c): "Tutki kuvaajan avulla, miten havaintoaineisto tukee lakia" is vague for an S2 reader; add "Katso, ovatko pisteet samalla suoralla ja kulkeeko suora origon kautta" (a question, not the answer).
-- fy5-6-L2-09 d): say "Laske ensin, kuinka moninkertainen Marsin etäisyys on Maahan verrattuna" only if the teacher wants more scaffolding; as it stands the ratio step is left to the student.
-- The task is long; it is marked "Syventävä tehtävä.", so acceptable.
+- solutions.md every `γM = … \quad \cdot …` Sijoitus (about ten tasks) — a hand-placed `\quad` marks a line break in the source; CLAUDE.md says never split a chain by hand. The numbers are unchanged, so no pedagogical harm; let the page wrap it.
+- solutions.md L3 two-satellite task, Kaava b) — the Kaava step mixes prose and display; consider the same one-row-per-equation layout as part a).
 
 ## Checked
-- "Syventävä tehtävä." present; Kepler's law is stated in the task and derived from the circular-orbit model in the solution.
-- The task names the NASA rows in English (Distance from Sun, Orbital Period), their units, and that the Moon column is not used: an S2 reader can find the data. "Isoakselin puolikas" is explained.
-- Recomputed: T²/a³ 0,0399 to 0,0398; Mars 687,1 d; 227,9 gives 686,7 d; Uranus/Saturn/Neptune deviations 0,3/1,3/2,5 %. Solution is staged, the graph reading explained.
-- Set has 11/9/5 tasks at levels 1/2/3, above the minimum; the new task does not repeat the example.
-- Figure fy5-6/radat description gives the data without the answer.
-- L3-04 Vastaus split into five paragraphs (answer, justification, exclusion, correct period, explanation): no word, number or formula changed; the reasoning order is clearer.
+- Every Kaava step now starts from ΣF = m a_n with the gravitational force as the net force, then v = 2πr/T where a period is asked, and simplifies symbolically to v, T, r or M before Sijoitus.
+- Kepler task (c, d) derives T² = 4π²r³/(γM) and then the ratio for Mars; the cancelling of the constant is visible.
+- Surface-circular-orbit tasks (mg = mv²/R, then v = √(gR)) remain easy to follow.
+- Ratio task v_1/v_2 = √(r_2/r_1) is derived from v = √(γM/r) one row at a time.
+- Moon g task starts from F = γMm/r² and g = F/m; the mass m cancels visibly.
+- Sijoitus, answers and tolerances unchanged; substitution uses the last symbolic form.
+- Paragraph splits in Mallivastaus and Vastaus keep each block short.
+- Finnish unchanged and correct.

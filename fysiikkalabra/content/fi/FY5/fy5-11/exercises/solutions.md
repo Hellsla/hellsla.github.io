@@ -37,7 +37,7 @@
 **Annettu:** kaiun viive $t = 1{,}4\,\text{s}$, äänen nopeus $v = 343\,\text{m/s}$
 **Kysytty:** etäisyys $d$ kallioseinään metreinä
 **Periaate:** Ääni etenee tasaisella nopeudella seinälle, heijastuu siitä ja palaa takaisin. Kaiun viiveen aikana ääni kulkee siis matkan $2d$.
-**Kaava:** $2d = v t$, josta $d = \dfrac{v t}{2}$
+**Kaava:** $$\begin{aligned} s &= vt \\ s &= 2d \\ vt &= 2d \\ d &= \dfrac{vt}{2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: nopeus on yksikössä m/s ja aika sekunteina.
 **Sijoitus:** $d = \dfrac{343\,\text{m/s} \cdot 1{,}4\,\text{s}}{2} = \dfrac{480{,}2\,\text{m}}{2} = 240{,}1\,\text{m}$
 **Vastaus:** $240\,\text{m}$ eli $2{,}4 \cdot 10^2\,\text{m}$, kaksi merkitsevää numeroa kuten viiveessä $1{,}4\,\text{s}$.
@@ -59,7 +59,7 @@ Taipumisen voimakkuuteen ei vaikuta aallon energia, ja raon leveys yksinään ei
 **Annettu:** pohjan syvyys $d = 36\,\text{m}$, äänen nopeus vedessä $v = 1500\,\text{m/s}$
 **Kysytty:** kaiun viive $t$ millisekunteina
 **Periaate:** Pulssi etenee tasaisella nopeudella pohjaan, heijastuu ja palaa takaisin. Viiveen aikana se kulkee siis matkan $2d$.
-**Kaava:** $2d = v t$, josta $t = \dfrac{2d}{v}$
+**Kaava:** $$\begin{aligned} s &= vt \\ s &= 2d \\ vt &= 2d \\ t &= \dfrac{2d}{v} \end{aligned}$$
 **Muunnokset:** Tulos saadaan sekunteina, ja lopuksi $1\,\text{s} = 1000\,\text{ms}$.
 **Sijoitus:** $t = \dfrac{2 \cdot 36\,\text{m}}{1500\,\text{m/s}} = \dfrac{72\,\text{m}}{1500\,\text{m/s}} = 0{,}048\,\text{s} = 0{,}048 \cdot 1000\,\text{ms} = 48\,\text{ms}$
 **Vastaus:** $48\,\text{ms}$, kaksi merkitsevää numeroa kuten syvyydessä $36\,\text{m}$.
@@ -69,7 +69,7 @@ Taipumisen voimakkuuteen ei vaikuta aallon energia, ja raon leveys yksinään ei
 **Annettu:** tulokulma $\alpha = 30^\circ$, kohtien $A$ ja $B$ etäisyys seinällä $d = 0{,}60\,\text{m}$, aallon nopeus $v = 0{,}40\,\text{m/s}$
 **Kysytty:** aika $\Delta t$, jonka rintama tarvitsee $A$:sta $B$:hen
 **Periaate:** Kun rintama koskettaa kohtaa $A$, rintaman se piste, joka osuu $B$:hen, on vielä matkan $s$ päässä seinästä säteen suunnassa. Rintama on kohtisuorassa sädettä vastaan, joten matka $s$ on suorakulmaisen kolmion kateetti, jonka hypotenuusa on $d$ ja vastainen kulma $\alpha$, kuten Huygensin rakennelmassa.
-**Kaava:** $s = d \sin\alpha$ ja $s = v\,\Delta t$, joten $\Delta t = \dfrac{d \sin\alpha}{v}$
+**Kaava:** $$\begin{aligned} s &= d\sin\alpha \\ s &= v\,\Delta t \\ v\,\Delta t &= d\sin\alpha \\ \Delta t &= \dfrac{d\sin\alpha}{v} \end{aligned}$$
 **Muunnokset:** Ei tarvita: matka on metreinä ja nopeus yksikössä m/s.
 **Sijoitus:** $\Delta t = \dfrac{0{,}60\,\text{m} \cdot \sin 30^\circ}{0{,}40\,\text{m/s}} = \dfrac{0{,}30\,\text{m}}{0{,}40\,\text{m/s}} = 0{,}75\,\text{s}$
 **Vastaus:** $0{,}75\,\text{s}$, kaksi merkitsevää numeroa kuten etäisyydessä $0{,}60\,\text{m}$ ja nopeudessa $0{,}40\,\text{m/s}$.
@@ -79,7 +79,7 @@ Taipumisen voimakkuuteen ei vaikuta aallon energia, ja raon leveys yksinään ei
 **Annettu:** köyden pituus $L = 8{,}0\,\text{m}$, aika lähtökohtaan palaamiseen $t = 3{,}2\,\text{s}$
 **Kysytty:** pulssin nopeus $v$
 **Periaate:** Pulssi etenee köydessä tasaisella nopeudella puuhun, heijastuu kiinteästä päästä ja palaa samaa köyttä pitkin. Heijastus kääntää pulssin mutta ei muuta sen nopeutta, joten pulssi kulkee ajassa $t$ matkan $2L$.
-**Kaava:** $2L = v t$, josta $v = \dfrac{2L}{t}$
+**Kaava:** $$\begin{aligned} s &= vt \\ s &= 2L \\ v &= \dfrac{2L}{t} \end{aligned}$$
 **Muunnokset:** Ei tarvita: pituus on metreinä ja aika sekunteina.
 **Sijoitus:** $v = \dfrac{2 \cdot 8{,}0\,\text{m}}{3{,}2\,\text{s}} = \dfrac{16\,\text{m}}{3{,}2\,\text{s}} = 5{,}0\,\text{m/s}$
 **Vastaus:** $5{,}0\,\text{m/s}$, kaksi merkitsevää numeroa kuten pituudessa ja ajassa.
@@ -89,7 +89,7 @@ Taipumisen voimakkuuteen ei vaikuta aallon energia, ja raon leveys yksinään ei
 **Annettu:** ensimmäisen kaiun viive $t_1 = 0{,}40\,\text{s}$, toisen $t_2 = 0{,}70\,\text{s}$, äänen nopeus $v = 343\,\text{m/s}$
 **Kysytty:** seinien välinen etäisyys $D$
 **Periaate:** Kumpikin kaiku on ääni, joka on kulkenut omalle seinälleen ja heijastunut takaisin. Lähempi seinä antaa ensimmäisen kaiun. Etäisyys kumpaankin seinään on puolet äänen kulkemasta matkasta, ja seinät ovat eri puolilla kuulijaa, joten etäisyydet lasketaan yhteen.
-**Kaava:** $d_1 = \dfrac{v t_1}{2}$, $d_2 = \dfrac{v t_2}{2}$ ja $D = d_1 + d_2 = \dfrac{v (t_1 + t_2)}{2}$
+**Kaava:** $$\begin{aligned} s &= vt \\ s &= 2d \\ d &= \dfrac{vt}{2} \\ D &= d_1 + d_2 \\ &= \dfrac{v(t_1 + t_2)}{2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: nopeus on yksikössä m/s ja ajat sekunteina.
 **Sijoitus:** $D = \dfrac{343\,\text{m/s} \cdot (0{,}40\,\text{s} + 0{,}70\,\text{s})}{2} = \dfrac{343\,\text{m/s} \cdot 1{,}10\,\text{s}}{2} = 188{,}65\,\text{m}$
 **Vastaus:** $190\,\text{m}$ eli $1{,}9 \cdot 10^2\,\text{m}$, kaksi merkitsevää numeroa kuten viiveissä $0{,}40\,\text{s}$ ja $0{,}70\,\text{s}$.
@@ -99,7 +99,7 @@ Taipumisen voimakkuuteen ei vaikuta aallon energia, ja raon leveys yksinään ei
 **Annettu:** oviaukon leveys $b = 0{,}90\,\text{m}$, äänen nopeus $v = 343\,\text{m/s}$
 **Kysytty:** taajuus $f$, jolla aallonpituus on $\lambda = b$
 **Periaate:** Äänen nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\lambda$ (luku *Aaltojen synty ja eteneminen*). Asetetaan aallonpituus yhtä suureksi kuin aukon leveys ja ratkaistaan taajuus.
-**Kaava:** $v = f\lambda$ ja $\lambda = b$, joten $f = \dfrac{v}{b}$
+**Kaava:** $$\begin{aligned} v &= f\lambda \\ \lambda &= b \\ v &= fb \\ f &= \dfrac{v}{b} \end{aligned}$$
 **Muunnokset:** Ei tarvita: nopeus on yksikössä m/s ja leveys metreinä, joten tulos on hertseinä.
 **Sijoitus:** $f = \dfrac{343\,\text{m/s}}{0{,}90\,\text{m}} = 381{,}1\,\text{Hz}$
 **Vastaus:** $380\,\text{Hz}$ eli $3{,}8 \cdot 10^2\,\text{Hz}$, kaksi merkitsevää numeroa kuten leveydessä $0{,}90\,\text{m}$.
@@ -109,7 +109,7 @@ Taipumisen voimakkuuteen ei vaikuta aallon energia, ja raon leveys yksinään ei
 **Annettu:** ensimmäinen mittaus $d_1 = 20{,}0\,\text{m}$, $t_1 = 0{,}157\,\text{s}$; viimeinen mittaus $d_4 = 80{,}0\,\text{m}$, $t_4 = 0{,}507\,\text{s}$; puhelimen äänentoistolla on tuntematon mutta vakio viive $t_0$ soittokäskyn ja äänen lähdön välillä, joten jokainen mitattu aika on liian pitkä saman verran
 **Kysytty:** äänen nopeus $v$
 **Periaate:** Ääni kulkee seinälle ja takaisin, matkan $2d$. Sovelluksen mittaama aika on tämän kulkuaika ja tuntematon vakioviive $t_0$. Kun otetaan kahden mittauksen aikojen erotus, sama viive kumoutuu, ja jäljelle jää pelkkä lisämatka $2(d_4 - d_1)$, jonka ääni kulkee ajan $t_4 - t_1$ kuluessa.
-**Kaava:** $t = \dfrac{2d}{v} + t_0$, joten $t_4 - t_1 = \dfrac{2(d_4 - d_1)}{v}$ ja $v = \dfrac{2(d_4 - d_1)}{t_4 - t_1}$
+**Kaava:** $$\begin{aligned} t_4 &= \dfrac{2d_4}{v} + t_0 \\ t_1 &= \dfrac{2d_1}{v} + t_0 \\ t_4 - t_1 &= \dfrac{2(d_4 - d_1)}{v} \\ v &= \dfrac{2(d_4 - d_1)}{t_4 - t_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: matkat ovat metreinä ja ajat sekunteina.
 **Sijoitus:**
 $$
@@ -147,7 +147,7 @@ Taulukon havainnot noudattavat siis sääntöä: mitä leveämpi rako on aallonp
 **Annettu:** tulevan ja heijastuneen säteen välinen kulma $\varphi = 64^\circ$
 **Kysytty:** opiskelijan virhe ja oikea tulokulma $\alpha$
 **Periaate:** Opiskelijan virhe on pitää tulevan ja heijastuneen säteen välistä kulmaa tulokulmana. Tulokulma mitataan tulevan säteen ja normaalin välillä, ja heijastuskulma heijastuneen säteen ja normaalin välillä. Normaali jakaa säteiden välisen kulman näihin kahteen osaan, joten $\varphi = \alpha + \beta$. Heijastuslain mukaan $\beta = \alpha$.
-**Kaava:** $\varphi = \alpha + \beta = 2\alpha$, josta $\alpha = \dfrac{\varphi}{2}$
+**Kaava:** $$\begin{aligned} \varphi &= \alpha + \beta \\ \beta &= \alpha \\ \varphi &= 2\alpha \\ \alpha &= \dfrac{\varphi}{2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: kulma on asteina.
 **Sijoitus:** $\alpha = \dfrac{64^\circ}{2} = 32^\circ$
 **Vastaus:** $32^\circ$, kaksi merkitsevää numeroa kuten annettu kulma $64^\circ$.
@@ -164,7 +164,7 @@ Symbaalin aallonpituus on $\lambda = \tfrac{343\,\text{m/s}}{5000\,\text{Hz}} \a
 **Annettu:** merkkien etäisyys $d = 0{,}40\,\text{m}$, viive $\Delta t = 0{,}50\,\text{s}$, aallon nopeus $v = 0{,}30\,\text{m/s}$
 **Kysytty:** tulokulma $\alpha$ asteina
 **Periaate:** Kun harja on kohdassa $A$, sen $B$:hen osuva kohta on vielä matkan $s$ päässä säteen suunnassa, ja se kulkee tämän matkan viiveen aikana. Rintama on kohtisuorassa sädettä vastaan, joten $s$, $d$ ja rintama muodostavat suorakulmaisen kolmion, jonka hypotenuusa on $d$ ja jossa $s$ on tulokulman vastainen kateetti.
-**Kaava:** $s = v\,\Delta t$ ja $\sin\alpha = \dfrac{s}{d}$, joten $\alpha = \sin^{-1}\dfrac{v\,\Delta t}{d}$
+**Kaava:** $$\begin{aligned} s &= v\,\Delta t \\ \sin\alpha &= \dfrac{s}{d} \\ \alpha &= \sin^{-1}\dfrac{v\,\Delta t}{d} \end{aligned}$$
 **Muunnokset:** Ei tarvita: matkat ovat metreinä, nopeus yksikössä m/s ja aika sekunteina.
 **Sijoitus:** $s = 0{,}30\,\text{m/s} \cdot 0{,}50\,\text{s} = 0{,}15\,\text{m}$ ja $\sin\alpha = \dfrac{0{,}15\,\text{m}}{0{,}40\,\text{m}} = 0{,}375$, joten $\alpha = 22{,}02^\circ$
 **Vastaus:** $22^\circ$, kaksi merkitsevää numeroa kuten kaikissa lähtötiedoissa.
@@ -174,7 +174,7 @@ Symbaalin aallonpituus on $\lambda = \tfrac{343\,\text{m/s}}{5000\,\text{Hz}} \a
 **Annettu:** köyden pituus $L = 6{,}0\,\text{m}$, pulssin nopeus $v = 4{,}0\,\text{m/s}$, pulssi alussa ylöspäin; molemmat päät pidetään paikallaan
 **Kysytty:** aika $t$ siihen, kun pulssi saapuu tolpalle toisen kerran
 **Periaate:** Pulssi etenee tasaisella nopeudella. Tolppa on kiinteä pää, ja tiukasti paikallaan pidetty käsi on myös kiinteä pää, joten pulssi kääntyy kummassakin heijastuksessa. Tolpalle toisen kerran pulssi on kulkenut köyden pituuden kolme kertaa: tolpalle, takaisin kädelle ja uudelleen tolpalle.
-**Kaava:** $3L = v t$, josta $t = \dfrac{3L}{v}$
+**Kaava:** $$\begin{aligned} s &= vt \\ s &= 3L \\ t &= \dfrac{3L}{v} \end{aligned}$$
 **Muunnokset:** Ei tarvita: pituus on metreinä ja nopeus yksikössä m/s.
 **Sijoitus:** $t = \dfrac{3 \cdot 6{,}0\,\text{m}}{4{,}0\,\text{m/s}} = \dfrac{18\,\text{m}}{4{,}0\,\text{m/s}} = 4{,}5\,\text{s}$
 **Vastaus:** $4{,}5\,\text{s}$, kaksi merkitsevää numeroa kuten pituudessa ja nopeudessa. Lisäksi poikkeama osoittaa silloin ylöspäin: tolppa käänsi pulssin alaspäin ja käsi takaisin ylöspäin.
@@ -184,7 +184,7 @@ Symbaalin aallonpituus on $\lambda = \tfrac{343\,\text{m/s}}{5000\,\text{Hz}} \a
 **Annettu:** viiveet taulukossa, mittauspisteiden väli $\Delta x = 20{,}0\,\text{m}$, äänen nopeus $v = 1480\,\text{m/s}$; pulssi kulkee pystysuoraan ja pohja on suora pisteiden välillä
 **Kysytty:** a) syvyys $d$ jokaisessa pisteessä; b) jyrkimmän välin kaltevuuskulma $\theta$ vaakatasoon nähden; c) perustelut
 **Periaate:** Pulssi kulkee pohjaan ja takaisin, joten viiveen aikana se kulkee matkan $2d$. Kahden peräkkäisen pisteen syvyyksien erotus $\Delta d$ ja pisteiden vaakaväli $\Delta x$ muodostavat suorakulmaisen kolmion, jonka kulma $\theta$ on pohjan kaltevuus. Jyrkin väli on se, jossa syvyyden muutos on suurin, koska väli $\Delta x$ on aina sama.
-**Kaava:** $d = \dfrac{v t}{2}$ ja $\tan\theta = \dfrac{\Delta d}{\Delta x}$, joten $\theta = \tan^{-1}\dfrac{\Delta d}{\Delta x}$
+**Kaava:** $$\begin{aligned} s &= vt \\ s &= 2d \\ d &= \dfrac{vt}{2} \\ \tan\theta &= \dfrac{\Delta d}{\Delta x} \\ \theta &= \tan^{-1}\dfrac{\Delta d}{\Delta x} \end{aligned}$$
 **Muunnokset:** $1\,\text{ms} = 0{,}001\,\text{s}$, esimerkiksi $54\,\text{ms} = 0{,}054\,\text{s}$.
 **Sijoitus:** a) Syvyys on $d = \tfrac{1480\,\text{m/s} \cdot t}{2} = 740\,\text{m/s} \cdot t$. Syvyydet ovat
 $$
@@ -279,7 +279,7 @@ Pelkkä raon leveys ei ratkaise järjestystä: kapein rako on C:ssä, mutta B:n 
 **Kysytty:** raon leveyden ja uuden aallonpituuden suhde $\tfrac{b}{\lambda'}$ (ei yksikköä)
 **Periaate:** Tehtävä olettaa, että aallon nopeus $v$ pysyy samana, kun taajuutta muutetaan (todellisessa vesialtaassa nopeus riippuu myös aallonpituudesta). Kun $v$ oletetaan samaksi ja $v = f\lambda$, kaksinkertainen taajuus puolittaa aallonpituuden. Raon leveys ei muutu.
 **Kuvaajan lukeminen:** Seinän vasemmalla puolella aaltorintamat ovat pystyviivoilla $1$ ja $5$, joten $\lambda = 4 \cdot 2{,}0\,\text{cm} = 8{,}0\,\text{cm}$. Raon reunat ovat vaakaviivoilla $1$ ja $7$, joten rako on $7 - 1 = 6$ ruudun levyinen: $b = 6 \cdot 2{,}0\,\text{cm} = 12\,\text{cm}$.
-**Kaava:** $v = f\lambda = 2f\lambda'$, joten $\lambda' = \dfrac{\lambda}{2}$ ja $\dfrac{b}{\lambda'} = \dfrac{2b}{\lambda}$
+**Kaava:** $$\begin{aligned} v &= f\lambda \\ v &= 2f\lambda' \\ \lambda' &= \dfrac{v}{2f} \\ &= \dfrac{\lambda}{2} \\ \dfrac{b}{\lambda'} &= \dfrac{2b}{\lambda} \end{aligned}$$
 **Muunnokset:** Ruudut senttimetreiksi: $4 \cdot 2{,}0\,\text{cm} = 8{,}0\,\text{cm}$ ja $6 \cdot 2{,}0\,\text{cm} = 12\,\text{cm}$. Suhteessa pituuksien yksiköt supistuvat.
 **Sijoitus:** $\lambda' = \dfrac{8{,}0\,\text{cm}}{2} = 4{,}0\,\text{cm}$ ja $\dfrac{b}{\lambda'} = \dfrac{12\,\text{cm}}{4{,}0\,\text{cm}} = 3{,}0$
 **Vastaus:** $3{,}0$ (ei yksikköä), kaksi merkitsevää numeroa kuten aallonpituudessa $8{,}0\,\text{cm}$.

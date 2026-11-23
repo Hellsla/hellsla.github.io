@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 469d45abefa175d7
+CONTENT-HASH: 1253e5523bf2b9f5
+none
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md fy5-3-L1-11 (Sijoitus): the new aligned chain breaks after "2π · 0,3333 1/s"; fine on a phone, keep.
+- solutions.md CD task (Vastaus, ~line 275) — the paragraph split cuts the answer in the middle: part c) begins after "Vastauksessa on kaksi merkitsevää numeroa…". Start the new paragraph at "c)".
+- solutions.md L2 Kaava rows of `v = 2πr/T` alone (lines 5, 287, 297) are fine; the unchanged f = 1/T row could say where T comes from, but one step is enough.
 
 ## Checked
-- Diff only: caption markers removed, wording of two Periaate/Järkevyys lines, one re-broken chain.
-- L2-08 Periaate "samalla suoralla, joka kulkee keskipisteen kautta" is the correct condition for runners side by side and is clearer S2 Finnish than "samalla säteellä".
-- L1-10 Järkevyys "hölkkävauhtia" (2,3 m/s) fits; the comparison is concrete.
-- Re-broken chain keeps the same numbers, signs and units in the same order.
-- Every step and justification of the solutions is kept; sentences short.
+- Kaava steps now start from v = 2πr/T and T = 1/f, then simplify to v = 2πrf before substitution.
+- Proportion tasks (rotating blade, runners) derive v_2/v_1 = r_2/r_1 from the basic equation; the cancelling of T (or t) is visible.
+- Chain-drive task: chain speed equal on both sprockets, then f_t, then u; logical and complete.
+- Earth-rotation task: r = R cos φ, then v = 2πr/T combined symbolically.
+- CD task: v = 2πrf, f, N, s, t listed as separate rows; each is simple enough to follow.
+- Sijoitus, answers and tolerances unchanged; substitution uses the last symbolic form.
+- Finnish unchanged and correct.
