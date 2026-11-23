@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 3f48bc8fead4207e
+CONTENT-HASH: 89d7d344021e07ad
+SCOPE: delta md-paragraphs,numbers,paragraphs,reflow,typography from 3f48bc8fead4207e base e238aa9
 
 ## Blocking
 
 ## Polish
-- solutions.md:125 (L1-06 model answer) — "Diodin yli on vain pieni jännite …, koska vastus ottaa suurimman osan" reverses the cause: the diode's voltage is small because of its characteristic (about 0,7 V once it conducts), and the resistor gets the rest — write "Diodin jännite on päästösuunnassa pieni, joten suurin osa jännitteestä jää vastukselle."
-- solutions.md:215 (L2-09 Järkevyys) — "pienempi kuin luvun paneelin suurin teho (0,92 W), kuten pitääkin" holds only if this is the lesson's panel at the same irradiance, which the task does not say — compare with the figure's own short-circuit current times open-circuit voltage only, or say that it is the same panel.
-- lessons/FY6/fy6-14/figures.py:218 (ex-led description, L1-05) — the description does not give the point the task reads (2,2 V at 10 mA), so a reader who cannot see the figure cannot answer the task — add "virta on 10 mA jännitteellä 2,2 V".
+- solutions.md:204 (L3-05 Kaava) — $I_\text{LED} = f(U_\text{D})$ brings in function notation that the lesson does not use. Fix: write it in words ("LEDin virta luetaan ominaiskäyrän taulukosta") (C).
+- The earlier Polish items (L1-06 causal wording, L2-09 comparison with the lesson's panel, the ex-led description) are not in this diff. They still stand.
 
 ## Checked
-- All 20 numeric answers recomputed in one script (R = (U − U_D)/I, P = UI, η = P/(GA), E = Pt, the table maxima in L2-06 and L3-02, the yearly sums 1027 kWh/m² and 5340 kWh in L3-04, the load-line intersection 13,78 mA at 2,02 V in L3-05); all agree with answers.py and exercises.json.
-- L3-04 c: six deficit months (Jan–Mar, Oct–Dec), production 853 kWh, deficit 2517 kWh; "vähintään" is correct because hourly mismatches within a month only add to the purchase.
-- L3-05 a: threshold from the steep part extrapolated, 2,00 V, as the glossary defines; c: 0,10 V over a four-fold current, right.
-- L2-06 table: U/I matches each load resistor within rounding; the powers in the solution are right.
-- L2-08: exactly one correct option and one correct reason; each distractor's feedback names its error correctly (parallel branches are independent; a diode in series blocks the lamp).
-- L1-06, L1-07: each has exactly one correct option; the forward/reverse rule matches the glossary.
-- Rounding: shown answers (e.g. 2,1·10² Ω, 3,9·10² Ω, 17 %, 20 %) fall inside the page check; the limiting data are named correctly under P7(b).
-- L2-01 reverse voltage 9,0 V and the 5 V reverse rating remark: correct and safety-relevant.
-- Figures ex-led (2,2 V at 10 mA from the model m = 0,050 V) and ex-kenno (198,7 mA at 4,0 V) give the read values, and neither writes the answer.
-- Scope: components only, with no p–n microphysics; Level 3 combines Kirchhoff, Ohm and power.
+- Every new Kaava block starts from Kirchhoff's voltage law $U = U_R + U_\text{D}$ (or $U_R + 2U_\text{D}$, $U_R + 3U_\text{D}$) together with Ohm's law $U_R = RI$. It is then solved to $R$ or $I$, as the lesson's Kaava section does. In the reverse-bias task $I = 0$ is correctly set before $U_\text{D} = U$.
+- The efficiency blocks start from $\eta = \tfrac{P_\text{hyöty}}{P_\text{otettu}}$ with $P_\text{otettu} = GA$ and end at the lesson's $\eta = \tfrac{P}{GA}$. In L3-04, $\eta = \tfrac{E}{HA}$ is the same ratio for energies, and $E_\text{vuosi} = \eta A\sum H$ follows from it.
+- L2-06 and the LED-strip share: $P = UI$, $R = \tfrac{U}{I}$ for the load, and share $= \tfrac{U_RI}{UI} = \tfrac{U-3U_\text{D}}{U}$. All are correct.
+- I recomputed every substitution near the diff in one script: 95 Ω, 8,3 mA, 250 Ω, 20,3 %, 0,36, 49,3 W and 5,86 Ω, 25 %, 16,7 %, 207 Ω, 387 Ω, 4683 kWh and 87,7 %, and 13,8 mA. All agree.
+- The paragraph splits in L3-04 (a/b/c) and L3-05 (c, Järkevyys) keep the same sentences and numbers in the same order.
+- exercises.json: only presentation changed.
+- Scope: components only.
+- The hash was the same at the start and at the end.

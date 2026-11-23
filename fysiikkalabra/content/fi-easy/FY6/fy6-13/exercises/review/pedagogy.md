@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 48f32a459da5ae07
+CONTENT-HASH: c367bdde3ea32b84
+SCOPE: delta md-paragraphs,numbers,typography from 48f32a459da5ae07 base 5b3ca4f
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-- fy6-13-L2-09: the answer box tests only b), which does not need the simulation; the simulation work (a, c) is unassessed by the box. Acceptable because the solution states what to observe.
-- a) asks for two data series plus a description: workload is on the upper side for level 2; fine for a lesson hour.
-- Solution a) uses an example calculation (0,44 pF) clearly marked as not a simulation reading: good.
+- (none new; earlier polish notes stand)
 
 ## Checked
-New task against section 6: simulation is the right tool (Q-U proportionality, C vs d), c) asks formula and check, d) compares with a battery from an earlier chapter; 72 mJ, 4x, 0,29 J, 9,6e5 ratio verified; Finnish terms explained; set mix unchanged.
+- The Kaava/Formula step now starts from the basic principle equations (C=Q/U, W=1/2 QU, Q=CU, U=U_R+U_D, U_R=RI, P=UI) and derives the working form line by line; a student can follow each step.
+- Every changed block ends in the same expression the Sijoitus step uses; no jump or missing step.
+- Principle, Reading the graph and Model answer additions explain the reasoning and are observable, answering what each part asks.
+- Set size, levels, order and variety unchanged.

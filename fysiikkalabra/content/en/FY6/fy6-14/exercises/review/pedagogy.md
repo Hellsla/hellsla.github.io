@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 38b2c5ddb83972d4
+CONTENT-HASH: 375cd36a93d31bad
+SCOPE: delta md-paragraphs,numbers,paragraphs,reflow,typography,wording from 38b2c5ddb83972d4 base 98218de
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- (none new; earlier polish notes stand)
 
 ## Checked
-- 210 ohm, 390 ohm, 4700 kWh -> two-figure scientific notation: correct, unambiguous.
-- Power table: 15 ohm row corrected to 1.48 V * 99 mA = 147 mW (146.5), now shown with its working like the 22 ohm row.
-- Maximum 181 mW -> 1.8e2 mW (0.18 W), limiting datum 91 mA named; the 22 ohm choice is unaffected.
-- Caption marker removal changes no value.
+- The Kaava/Formula step now starts from the basic principle equations (C=Q/U, W=1/2 QU, Q=CU, U=U_R+U_D, U_R=RI, P=UI) and derives the working form line by line; a student can follow each step.
+- Every changed block ends in the same expression the Sijoitus step uses; no jump or missing step.
+- Principle, Reading the graph and Model answer additions explain the reasoning and are observable, answering what each part asks.
+- Set size, levels, order and variety unchanged.
