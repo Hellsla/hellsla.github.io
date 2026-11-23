@@ -1,21 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 745807716c462177
-Mode: delta (fi-easy version of the reviewed Finnish fy8-8-L2-09 and fy8-8-L3-06)
-Round 1
+CONTENT-HASH: 4fb09e1c40a5d733
 
 ## Blocking
 
 ## Polish
-- content/fi-easy/FY8/fy8-8/exercises/solutions.md:350 — fy8-8-L3-06: the reason "kolme merkitsevää numeroa kuten annetuissa aallonpituuden vakioissa" is wrong, because h, c and 1 eV are given to four figures. 0,495 is inside the tolerance. Fix: give 0,4949 pm, or keep 0,495 and give a correct reason. This follows the same Polish item on fi.
-- content/fi-easy/FY8/fy8-8/exercises/solutions.md:304 — fy8-8-L2-09: in a sum the decimal places set the precision, so 2158,6 keV (the answer field) is the natural answer. 2159 keV "neljä merkitsevää numeroa" is acceptable but loose. This is optional.
+- content/fi-easy/FY8/fy8-8/exercises/solutions.md (fy8-8-L3-06 Vastaus) — the earlier Polish item still stands. The reason "kolme merkitsevää numeroa kuten annetuissa aallonpituuden vakioissa" is wrong, because h, c and 1 eV have four figures. — Give a correct reason.
 
 ## Checked
-- Recomputed both answers in one script with my own formulas. L2-09: E_X = 1332,5 + 826,1 = 2158,6 keV. L3-06: E_C = 2505,7 keV = 4,0141·10⁻¹³ J, λ = 0,49487 pm. These agree with answers.py and with the JSON (2158,6 keV and 0,495 pm, tolerance 0,02).
-- The physics matches NNDC Ni-60: the levels are 1332,5, 2158,6 and 2505,7 keV, and the weak lines 826,1 keV and 347,1 keV are real. The data are labelled esimerkkiaineisto. The direct C → perustila transition is stated conditionally ("lähettäisi").
-- L3-06 a): the elimination argument is valid. With A = 1173,2 keV, the transition C → A would be 1173,2 keV, so 1332,5 keV would go unexplained.
-- In L2-09 the cascade order is given in the task, so E_1 = 1332,5 keV follows from it.
-- Reasonableness checks: 0,93 pm and 1,06 pm are right, and X lies below 2505,7 keV.
-- Compared with content/fi: the id, level, kind, figure, answer, unit, tolerance, data rows and every number in the texts and solutions are identical. The plainer, shorter sentences change no physics.
-- The notation (E_γ = E_y − E_a, λ = hc/E) and the constants match the brief's Kaava. The tasks are inside the FY8 scope and the slot's täsmennys.
-- Figure fy8-8/spectrum labels both peaks and shows no level diagram, so it does not give the answer away.
+- Delta (work queue 8g): I read the changed Kaava steps of L1-04, L2-01, L2-03, L3-02, L3-05 and L3-06 on disk. They start from $E_\gamma = hf$ (or from $E_\gamma = E_\text{y} - E_\text{a}$) and the wave equation $c = f\lambda$, and they reach $\lambda = hc/E_\gamma$ before substitution. The algebra is correct.
+- L3-06: $E_\text{y} = E_\text{a} + E_\gamma$ gives the level chain A, B, C. The direct transition C → ground state has photon energy $E_\text{C}$, so $\lambda = c/f = hc/E_\text{C}$. This is right.
+- L3-02: the shortest wavelength comes from the largest transition energy. This is stated correctly.
+- The other changes only split paragraphs (L1-06, L1-08 Järkevyys, L3-04, L3-05, L3-06). No numbers or claims changed.
+- One script recomputed the numbers: 20,826 pm; 1,0568 pm; 2,935·10^5; 1,2400 pm; 1,0781 pm; 0,49487 pm. These agree with the solutions. All 22 stored answers agree with answers.py within tolerance.
 - The hash was the same at the start and at the end.

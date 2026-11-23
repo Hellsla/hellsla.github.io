@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: dcbb4a54776d9f88
-SCOPE: delta added-exercise from aa0f837dfa88aba8 base 415cbc7c6bc3
+CONTENT-HASH: 138e75b7962aa4db
 
 ## Blocking
 
 ## Polish
-- content/fi-easy/FY8/fy8-3/exercises/solutions.md:309 — "esimerkiksi 434,0 nm, ne vastaavat siirtymiä 5 → 2 ja 6 → 2" pairs one line with two transitions — write "434,0 nm vastaa siirtymää 5 → 2 ja 410,2 nm siirtymää 6 → 2".
 
 ## Checked
-- Recomputed: 6562,8518 Å = 656,3 nm, hc/λ = 3,0268e-19 J = 1,8894 eV; 486,1 nm gives 4,0866e-19 J = 2,5509 eV ✓.
-- ΔE(3→2) = 13,6 eV·5/36 = 1,8889 eV and ΔE(4→2) = 13,6 eV·3/16 = 2,550 eV; answers.py gives 1,888889 ✓. Box 1,89 eV with relative tolerance 0,02 ✓.
-- Model wavelengths 656,47 nm and 486,27 nm differ from the table by under 0,1 % ✓, as the brief asks; the air-wavelength remark is right.
-- Extra lines checked: 434,0 nm gives 2,857 eV against 5→2 at 2,856 eV, and 410,2 nm gives 3,023 eV against 6→2 at 3,022 eV ✓.
-- Source facts: the table is in Å with air wavelengths for visible lines, the strongest values 6562,8518 and 4861,3615 Å, and close parallel values (fine structure) that may all be used, all on the verified list ✓. The task states 1 Å = 10⁻¹⁰ m = 0,1 nm.
-- The line-spectrum explanation (quantised levels, a photon carries the difference) and the energy-conservation principle are right; constants given; three significant figures justified by 13,6 eV.
-- Hash dcbb4a54776d9f88 at the start and the end.
+- Every changed Kaava step is now an aligned block from hf = E_y − E_a and c = fλ to the solved form: λ = hc/(E5 − E2), hc/(E4 − E3), λ_max = hc/(E2 − E1), λ_L = hc/(E_y − E1), E_k = hc/λ − E_ion, E_n = E2 + hc/λ with n = √(13,6 eV/(−E_n)), f_ion = 13,6 eV/(m²h). All rearrangements correct.
+- Balmer slope task: from hf = E_n − E_2 and E_n = −E_ion/n², f = E_ion/(4h) − (E_ion/h)(1/n²), so the slope against 1/n² is −E_ion/h and E_ion = −hk: right, and the same k the passed solution used.
+- Å task: the added "E = hf ja c = fλ, joten" leaves ΔE = 13,6 eV (1/n_a² − 1/n_y²) unchanged.
+- Paragraph splits (collision-excitation Periaate, the n² error-analysis Periaate): joined text identical to the passed version.
+- exercises.json, answers.py, numbers and tolerances unchanged.
+- Hash 138e75b7962aa4db at the start and the end.

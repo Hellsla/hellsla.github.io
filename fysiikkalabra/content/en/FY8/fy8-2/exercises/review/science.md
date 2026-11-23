@@ -1,12 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: c8d58abe3c8d97bc
+CONTENT-HASH: 3da39fd69be8f71f
+SCOPE: delta kaava-steps (8g)
 
 ## Blocking
+(none)
 
 ## Polish
-- exercises/solutions.md (L2-05) — the solution now gives $2.270\,\text{eV}$ (four figures) while exercises.json shows the answer 2.27; consider answer 2.270 so the shown answer and the solution agree (inside tolerance either way).
+(none)
 
 ## Checked
-- Round-1 blocking items fixed: L2-05 now four significant figures, justified by $546.3\,\text{nm}$ and the constants ($hc/\lambda = 2.2698\,\text{eV} \to 2.270$); L2-07 names only the limiting datum, the reading $16.4\,\text{mm}$ ($\pm 0.05\,\text{mm} \cdot 12\,\text{nm/mm} \approx 0.6\,\text{nm}$, so $497\,\text{nm}$ stands).
-- Recomputed in one script: L2-05 2.2698 eV, L2-07 $12.01 \cdot 16.4 + 299.6 = 496.6\,\text{nm}$; answers and tolerances unchanged and consistent.
-- Hash identical at start and end.
+- Diff parsed hunk by hunk: only Formula lines and paragraph breaks changed; no number dropped from a Formula line; answers.py, answers and tolerances untouched.
+- Every Formula block starts from ΔE = hf (photon energy = level difference) and c = fλ, then solves λ = hc/ΔE symbolically (L1-02, L1-05, L2-01, L2-03, L3-01).
+- L2-02: smallest energy gap gives the longest wavelength, λ_max = hc/ΔE_min: correct.
+- L3-01: ionisation from level 2, hc/λ_min = 0 − E_2: correct.
+- L3-03 (fluorescence cascade): E_UV = E_1 + E_2, λ_2 = hc/(hc/λ_UV − E_1): correct energy conservation.
+- L3-04: levels above ground E_1 < E_2 < E_3, E_1 = E_3 − (E_3 − E_1), λ_6 = hc/E_1; checked against the pairing argument in the Principle (E_1 = 1.10 eV, longest line).
+- L3-05: lost fraction p = 1 − E_fl/E_abs = 1 − λ_abs/λ_fl: correct.
+- L3-06: E_viol − E_green = E_l,green − E_l,viol: correct.
+- Hash 3da39fd69be8f71f at start and end.

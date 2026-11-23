@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f7903aada0819615
-SCOPE: delta added-exercise from a4254015fd08611c base 5b3ca4f81c77
+CONTENT-HASH: ebe98a22a12cb8f4
 
 ## Blocking
 
 ## Polish
-- lessons/FY8/fy8-9/figures.py (pa_points description) — the description still says "Pisteet ovat samat kuin tehtävän taulukossa", which points to the Sovella task's table. L2-09 has no table. — Drop that sentence or reword it.
-- content/fi-easy/FY8/fy8-9/exercises/exercises.json (L2-10 `tolerance` 0.03) — this accepts 0.136–0.144 1/h, which is T½ 4.81–5.10 h. A reading of 5.2 h would give 0.13 and be marked wrong. This is acceptable because 360 kBq at 5.0 h lies on a grid line. — Optionally use 0.05.
 
 ## Checked
-- The hash was f7903aada0819615 at the start and at the end. I judged only L2-09 and L2-10. Their numbers, tolerances and solution steps match the Finnish version, and the S2 version drops no step.
-- Fixed since round 1: the L2-09 tolerance is 0.02, which accepts 69.4–72.3 s and excludes 73.75 s, the answer without background subtraction. The solution now gives that answer as 73,7 s, which is correct.
-- Fixed since round 1: the L2-10 check now uses (1/2)^(1/5,0) = 0.8706 left each hour (about 13 % decays) and 0.8706^5 = 0.500. I recomputed both.
-- Fixed since round 1: the reason for three significant figures has been corrected, and the answers.py comment now says 70,85 → 70,9 s.
-- I recomputed L2-09: 200 s · ln 2 / ln(375/53) = 70.851 s, and answers.py gives 70.850976. log2(375/53) = 2.82 halvings, so the "≈ 71 s" check holds.
-- I recomputed L2-10: ln 2 / 5.0 h = 0.13863 1/h → 0.14, and answers.py gives 0.138629. Two significant figures fit the 5.0 h reading, and no unit conversion is needed.
-- The principle "nettopulssimäärä noudattaa samaa lakia kuin aktiivisuus" is correct. In both solutions the unknown is solved symbolically first, and both stay within the FY8 decay-law scope.
+- Delta (work queue 8g): I read all 13 changed Kaava steps on disk as aligned blocks.
+- L1-03 and L2-01 derive $\lambda = \ln 2/T_{1/2}$ from $N = N_0 e^{-\lambda t}$ at $t = T_{1/2}$.
+- L1-08 and L3-01 take ln of the decay law to get $t = T_{1/2}\ln(A_0/A)/\ln 2$. L2-05, L3-02 and L3-04 do the same for net rates and for the two-time ratio.
+- L2-02 goes from $A = \lambda N$ to $N = A T_{1/2}/\ln 2$. L2-04 adds $m = N m_\text{ydin}$, which gives the mass law.
+- L2-06 gives $R_0/4$ at $2T_{1/2}$. L3-03 cancels $A_0$ in the share $p$. L3-05 uses $\lambda_\text{eff} = \lambda_\text{fys} + \lambda_\text{bio}$, which gives $1/T_\text{bio} = 1/T_\text{eff} - 1/T_\text{fys}$. L2-09 subtracts the background $B$ before taking the logarithm.
+- All of the algebra above is correct.
+- The other changes only split paragraphs. In L1-09 the sentence on graph D was moved to its own paragraph unchanged: $800\,\text{kBq}\cdot e^{-1} = 294\,\text{kBq}$, recomputed. The L2-06 b) explanation and the L2-08 c), d) texts are also split only.
+- One script checked the answers: all 22 stored answers agree with answers.py within tolerance.
+- The hash was the same at the start and at the end.

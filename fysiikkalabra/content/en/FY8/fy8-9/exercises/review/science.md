@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 9136b7411732c7ca
-SCOPE: delta added-exercise from c0842f06ba77912b base 5b3ca4f81c77
+CONTENT-HASH: 3d201d15eeee0bda
+SCOPE: delta (work queue 8g: Kaava step of the model solutions; paragraph breaks)
 
 ## Blocking
 
 ## Polish
-- lessons/FY8/fy8-9/figures.py (pa_points description) — the description still says "Pisteet ovat samat kuin tehtävän taulukossa", which points to the Sovella task's table. L2-09 has no table. — Drop that sentence or reword it.
-- content/en/FY8/fy8-9/exercises/exercises.json (L2-10 `tolerance` 0.03) — this accepts 0.136–0.144 1/h, which is T½ 4.81–5.10 h. A reading of 5.2 h would give 0.13 and be marked wrong. This is acceptable because 360 kBq at 5.0 h lies on a grid line. — Optionally use 0.05.
-- review packet — the packet's exercise brief (the en lesson extract) is empty. I checked the notation (N, N_0, T_{1/2}, λ, A, B) against the Finnish brief and it matches.
 
 ## Checked
-- The hash was 9136b7411732c7ca at the start and at the end. I judged only L2-09 and L2-10. Their numbers, tolerances and solutions match the Finnish version.
-- Fixed since round 1: the L2-09 tolerance is 0.02, which accepts 69.4–72.3 s and excludes 73.75 s, the answer without background subtraction. The solution now says 73.7 s, which is correct.
-- Fixed since round 1: the L2-10 check now uses (1/2)^(1/5.0) = 0.8706 left each hour (about 13 % decays) and 0.8706^5 = 0.500. I recomputed both.
-- Fixed since round 1: the reason for three significant figures has been corrected, and the answers.py comment now says 70,85 → 70,9 s.
-- I recomputed L2-09: 200 s · ln 2 / ln(375/53) = 70.851 s, and answers.py gives 70.850976. log2(375/53) = 2.82 halvings, so the "≈ 71 s" check holds.
-- I recomputed L2-10: ln 2 / 5.0 h = 0.13863 1/h → 0.14, and answers.py gives 0.138629. Two significant figures fit the 5.0 h reading, and no unit conversion is needed.
-- In both solutions the law is stated, the unknown is solved symbolically first and the background is subtracted before the logarithm. Both stay within the FY8 decay-law scope.
+- I compared the removed text with the added text outside the Formula lines, ignoring whitespace. They are identical: the rest of the diff is paragraph breaks only. No number, answer or tolerance changed.
+- L1-03 and L2-01: N = N₀e^(−λt) with N = N₀/2 at t = T½ gives λT½ = ln 2. This is a correct derivation and within the scope note (both forms of the decay law are taught).
+- L2-02: A = λN and λ = ln 2/T½ give N = A·T½/ln 2. L2-04: m = N·m_nucleus carries the decay law over to mass. Both are correct.
+- L1-08, L2-05, L3-01 and L3-02: the logarithm step ln(A₀/A) = (t/T½) ln 2 is correct, and the unknown is isolated before substitution. In L2-05 and L3-02 the background is subtracted from the net counts and rates, as stated.
+- L2-06: R(2T½) = R₀/4 is right.
+- L3-03: equal initial activities (stated in the task), so A₀ cancels symbolically. This is right.
+- L3-04: the ratio A₂(t₂)/A₂(t₁) removes A₂(0), and T₂ follows. The substitution uses total activity at 96 h and 168 h as A₂. This is justified, because the 6.0 h nuclide has decayed away by then (as before).
+- L3-05: λ_eff = λ_phys + λ_bio, which the task gives, divided by ln 2 gives 1/T_bio = 1/T_eff − 1/T_phys. This is correct.
+- L2-09: the net-count form (y − B) is kept through the logarithm. This is correct.
+- I recomputed the touched answers in one script with my own formulas: L1-03 0.023028 1/a, L2-02 7.294e14, L2-04 0.69526 mg, L2-05 149.21 s, L3-02 5.0458 min, L3-03 6.9725 %, L3-04 2.6829 d, L3-05 4.9599 d. All agree with answers.py and lie inside their tolerance. The hash was 3d201d15eeee0bda at the start and at the end.

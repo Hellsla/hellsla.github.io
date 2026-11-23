@@ -1,20 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 1672c605e0f0a0e0
-SCOPE: delta added-exercise from b01d8774ea628a16 base 1bdc56f920e4
+CONTENT-HASH: b81b215185d2bb31
 
 ## Blocking
 
 ## Polish
-- solutions.md fy8-15-L1-10 Periaate — "jokaisella rivillä on sama varaus" holds for the three generation columns only; in the mediator column the rows differ ($g$, $\gamma$, $Z^0$ neutral, $W^\pm$ charged), which the Kuvaajan lukeminen line handles correctly — write "jokaisen sukupolvirivin hiukkasilla on sama varaus" or similar.
+- solutions.md fy8-15-L1-10 Periaate — the earlier note still applies: "jokaisella rivillä on sama varaus" holds only for the generation rows. This is not part of this diff.
 
 ## Checked
-- Recomputed in one script from the figure's boxes: 17 boxes, neutral $\nu_e$, $\nu_\mu$, $\nu_\tau$, $g$, $\gamma$, $Z^0$, $H$ = 7 (answers.py 7, json 7); neutral leptons 3 (b-part, solution 3).
-- L2-08: $q_X = q_t - q_W = \tfrac{2}{3} - 1 = -\tfrac{1}{3}$; answers.py −0,333333, json −0,3333 e. Candidates of charge $-\tfrac{1}{3}e$ in the figure: $d$, $s$, $b$, as the solution says.
-- Physics of L2-08: $t \to W^+ + q$ with $q = d, s, b$ is the real decay (all three allowed by the weak interaction; $b$ dominates), so "varaus ei yksin valitse niistä yhtä" is right and no option is wrongly excluded. $B_X = \tfrac{1}{3}$ follows from the lesson's $B = (n_\text{q} - n_{\bar{\text{q}}})/3$ and is given in the task; the antiquark exclusion ($+\tfrac{1}{3}e$ or $-\tfrac{2}{3}e$) is correct.
-- Figure fy8-15/taulukko: $t$ in the top quark row, column III, label $+2e/3$; $W^\pm$ label $\pm e$; every value the two tasks need is drawn, and the description gives the same charges in words without giving the counts.
-- One $W^\pm$ box with "antihiukkasia ei lasketa" is consistent: the box is charged either way, the count of 17 and 7 is unaffected.
-- Tolerance 0,02: L1-10 an exact integer (6 or 8 fall outside); L2-08 −0,333 and −0,33 accepted (0,1 % and 1 %), −0,3 rejected (10 %), matching an exact fraction.
-- Units: L1-10 dimensionless count, L2-08 in $e$, as the lesson's convention (charges as multiples of $e$).
-- Both solutions complete: given/asked, principle, figure reading, symbolic form before substitution, no conversions stated, rounding reason, real reasonableness checks (10 + 7 = 17; $q_W + q_X = q_t$).
-- Scope: standard model particles and charge conservation, inside FY8 "hiukkasfysiikan standardimalli" and the lesson's Kaava section.
-- Hash the same at the start and the end.
+- The hash was b81b215185d2bb31 at the start and the end. Scope: delta on solutions.md since the version I passed (commit 1f881c20d9).
+- Two Kaava steps changed, in L1-04 and L2-03. Apart from blank lines, everything else is two Periaate paragraphs split in L3-01 and L3-02. A script collapsed whitespace and confirmed their text is unchanged. exercises.json and answers.py are unchanged.
+- L1-04 now starts from energy conservation. $E_\text{alku} = 2m_ec^2$ and $E_\text{loppu} = 2E_\gamma$ give $E_\gamma = m_ec^2$. This is correct for a pair at rest, and Periaate's momentum argument justifies the two equal photons. The answer is $511{,}0\,\text{keV}$, unchanged.
+- L2-03 now starts from $E = hf$ and $c = \lambda f$. The rows $f = c/\lambda$, $E = hc/\lambda$ and $\lambda = hc/E$ are correct. The phrase "$E = hf$ ja $c = \lambda f$, joten" names both basic laws, so the derivation is sound. Recomputed: $\lambda = 1{,}2133\,\text{pm}$, which matches answers.py, so $1{,}21\,\text{pm}$.
+- Both steps end in the symbolic form substituted in Sijoitus. Notation is as in the brief.

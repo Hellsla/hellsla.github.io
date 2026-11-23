@@ -1,21 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: ed910063ab2fcfbb
-Mode: delta (translation of the reviewed Finnish fy8-8-L2-09 and fy8-8-L3-06)
-Round 1
+CONTENT-HASH: 893f7af3e4ffe409
+SCOPE: delta (work queue 8g: Kaava step of the model solutions; paragraph breaks)
 
 ## Blocking
 
 ## Polish
-- content/en/FY8/fy8-8/exercises/solutions.md:348 — fy8-8-L3-06: the reason "three significant figures as in the given constants" is wrong, because h, c and 1 eV are given to four figures. 0.495 is inside the tolerance. Fix: give 0.4949 pm (four figures), or keep 0.495 and give a correct reason. This follows the same Polish item on fi.
-- content/en/FY8/fy8-8/exercises/solutions.md:302 — fy8-8-L2-09: in a sum the decimal places set the precision, so 2158.6 keV (the answer field) is the natural answer. 2159 keV "four figures as in the given energies" is acceptable but loose (1332.5 has five). This is optional.
+- content/en/FY8/fy8-8/exercises/solutions.md (fy8-8-L3-06 Answer): my earlier Polish item still stands. "Three significant figures as in the given constants" gives the wrong reason, because h, c and 1 eV have four figures.
 
 ## Checked
-- Recomputed both answers in one script with my own formulas. L2-09: E_X = 1332.5 + 826.1 = 2158.6 keV. L3-06: E_C = 2505.7 keV = 4.0141·10⁻¹³ J, hc = 1.9865·10⁻²⁵ J m, λ = 0.49487 pm. These agree with answers.py and with the JSON (2158.6 keV and 0.495 pm, tolerance 0.02).
-- The physics matches NNDC Ni-60: the levels are 1332.5, 2158.6 and 2505.7 keV, and the weak lines 826.1 keV and 347.1 keV are real. The data are labelled example data. The direct C → ground transition is stated conditionally ("would emit"), which is correct.
-- L3-06 a): the elimination argument is valid. With A = 1173.2 keV, the transition C → A would again be 1173.2 keV, so 1332.5 keV would go unexplained.
-- In L2-09 the cascade order is given in the task, so E_1 = 1332.5 keV follows from given facts.
-- Reasonableness checks: 0.93 pm and 1.06 pm are right, and X lies below 2505.7 keV.
-- Compared with content/fi: the id, level, kind, figure, answer, unit, tolerance, data rows and every number in the texts and solutions are identical. Decimal points are used in the English text.
-- The notation (E_γ = E_upper − E_lower, λ = hc/E) and the constants match the brief. The tasks are inside FY8 "atomiytimen rakenne ja muutokset" and the slot's täsmennys.
-- Figure fy8-8/spectrum labels both peaks and shows no level diagram, so it does not give the answer away.
-- The hash was the same at the start and at the end.
+- I compared the removed text with the added text outside the Formula lines, ignoring whitespace. They are identical: the rest of the diff is paragraph breaks only. No number, answer or tolerance changed.
+- I read the new Formula blocks on disk; the packet's diff flattens their aligned rows.
+  - L1-04, L2-01, L3-02 and L3-05 start from E_γ = hf and c = fλ and derive λ = hc/E_γ symbolically. L2-01 and L3-05 first state E_γ = E_u − E_l.
+  - L2-03 gets E_g = hc/λ the same way and keeps the ratio E_γλ/(hc).
+  - L3-02 states correctly that λ_min comes from E_max.
+- L3-06: E_u = E_l + E_γ builds up the levels A, B and C. λ = c/f = hc/E_C is right for the direct C → ground transition: the photon energy equals E_C, as the Formula's own note (E_C = hf) says.
+- L2-07, L2-09 and L3-04 have only paragraph breaks; their formulas and reasoning are unchanged.
+- I recomputed every touched answer with my own formulas in one script. All agree with answers.py and lie inside their tolerance: L1-04 20.826 pm, L2-01 1.0568 pm, L2-03 2.935e5, L3-02 1.240 pm, L3-04 n_β = 4, L3-05 1.0781 pm, L2-09 2158.6 keV, L3-06 0.49487 pm.
+- The hash was 893f7af3e4ffe409 at the start and at the end.

@@ -1,14 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: ceed05861c35b96a
+CONTENT-HASH: ecbc4e40fc947ac8
+SCOPE: delta kaava-steps (8g)
 
 ## Blocking
+(none)
 
 ## Polish
-- content/fi/FY8/fy8-6/exercises/solutions.md:395 — "Suoran kaava antaisi … hc/(eU_k)" calls the comparison formula "the line's formula", but hc/(eU_k) is the ideal eU_k = hf relation, not the fitted line U_k = kf + b; the en "the formula" is the better reading — consider "Kaava" alone (or "ideaalinen kaava") in fi.
-- Earlier polish items (L2-09 sig. figs, L2-10 model answer (c) and tolerance, L1-06, L2-06 b, L2-05, L2-08) still apply.
+- exercises/solutions.md fy8-6-L3-02 Formula — say that $\Delta h = \tfrac{h_\text{max} - h_\text{min}}{2}$ is half the range of the steepest and shallowest lines (an estimate, guardrails "Showing uncertainty").
 
 ## Checked
-- Hash ceed05861c35b96a (with --lang en) at start and end.
-- Diff is a word-order change only: same numbers, symbols and units as the version passed; formula hc/(eU_k) now stated with its value, as in fi line 395.
-- Recomputed: hc/(e·2.30 V) = 539.06 nm → 539 nm; c/(5.8·10^14 Hz) = 516.9 nm; hc/(e·516.9 nm) = 2.40 V > 2.30 V, so "measured threshold voltage is lower than hc/(eλ)" and "shorter wavelength" are right in sign and reason.
-- The remark agrees with the Answer (517 nm, green) and with the fitted-line model of the task; no new physics, within FY8 scope.
+- Hash at the start was b12729dd62abae8c (the packet's); in that version L2-06's Formula had $h_0 = 6.626\,\text{J}\,\text{s}$ with the factor $10^{-34}$ missing (the only number lost in the 8g diff). Commit 7eff52543e changed only that line to $6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$; the Finnish file is fixed too. Re-judged at ecbc4e40fc947ac8.
+- Apart from that, only Formula lines and paragraph breaks changed; answers.py, answers and tolerances untouched.
+- L1-04, L1-07, L2-01, L2-02: eU_k = hf = hc/λ, then λ = hc/(eU_k), U_k = hc/(eλ), h = eU_kλ/c: correct.
+- L1-05, L3-01, L3-04: U_k = (h/e)f, slope k = h/e, h = ek: correct.
+- L2-03: N = I/e, P = NE = Ihc/(eλ); L3-03: N_f/N_e = Pλe/(hcI): correct.
+- L2-04, L2-07: ΔE = hc/λ_1 − hc/λ_2 (energy left in the material): correct.
+- L2-05: I = k(U − U_k), U_k = U_1 − I_1/k: correct.
+- Hash ecbc4e40fc947ac8 at the end.

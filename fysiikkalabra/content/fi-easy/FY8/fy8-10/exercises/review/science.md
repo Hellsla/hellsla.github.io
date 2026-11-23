@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 08aaeedc0b23d2ba
-Mode: delta (translation)
+CONTENT-HASH: dacec6a883ef1816
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- New exercises fy8-10-L1-09, L2-09, L3-06 (fi-easy) compared with the reviewed fi set by script: same answer, unit, tolerance, figure, kind, lookup and hint count; every number in task texts and solutions identical to fi.
-- Recomputed independently: deuteron dm = 1.007276466621 + 1.00866491595 - 2.0135532001 = 0.0023882 u, E_B = 2.2246 MeV (2.225); hydrogen-atom mistake gives 2.736 MeV, outside the 2 % tolerance.
-- L2-09: 120 * 8.5 = 1020 MeV (true Sn-120 1020.5), 238 * 7.6 = 1809 MeV; readings agree with the figure description; 5 % tolerance fits a +-0.1 MeV reading.
-- L3-06: Q = 235 * (8.5 - 7.6) = 211.5 MeV (true values about 217 MeV, inside 15 %); Fe-56 estimate 56 * (8.4 - 8.8) = -22 MeV, sign and reasoning right.
-- Added S2 explanations (sidosenergia defined in L1-09, massaluku as nucleon count in L2-09, why a hydrogen atom mass is wrong) are physically correct and match the glossary.
-- Solutions complete (given, principle, symbolic formula, conversions, substitution, rounding reason, reasonableness) and equal to fi; answers.py gives 2.224592, 1020, 211.5.
-- Hash 08aaeedc0b23d2ba at start and end.
+- Delta (work queue 8g): I read the changed Kaava steps of L3-04 and L3-05 on disk.
+- L3-04 a): $m_\text{alku} = m_\text{U} + m_\text{n}$ and $m_\text{loppu} = m_\text{Ba} + m_\text{Kr} + 3m_\text{n}$ give $Q = (m_\text{U} - m_\text{Ba} - m_\text{Kr} - 2m_\text{n})c^2$. This is correct. Atomic masses are valid here because the electrons balance (92 = 56 + 36).
+- L3-05: $E = Lt = \Delta m_\text{a}c^2$, $f = (4m_\text{H} - m_\text{He})/(4m_\text{H})$, $m_\text{vety} = \Delta m_\text{a}/f$ and share $= 10^9 m_\text{vety}/(0{,}70M)$. Each step starts from the basic law, and the chain is correct.
+- Recomputed $Q = 0{,}186033\,\text{u}\cdot 931{,}5 = 173{,}29\,\text{MeV}$, which agrees with the solution.
+- The rest of the diff only adds blank lines inside display blocks and splits paragraphs (L1-09, L2-05, L3-02, L3-05 Järkevyys, L3-06 c). No numbers or claims changed.
+- In the 1280 px L3 capture the blank lines inside the aligned blocks render correctly.
+- One script checked the answers: all 20 stored answers agree with answers.py within tolerance.
+- The hash was the same at the start and at the end.
