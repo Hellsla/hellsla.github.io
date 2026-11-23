@@ -102,7 +102,7 @@
 **Given:** temperatures $80.0\,{}^\circ\text{C}$ at time $0\,\text{min}$, $68.0\,{}^\circ\text{C}$ at $5.0\,\text{min}$, $52.0\,{}^\circ\text{C}$ at $15.0\,\text{min}$ and $47.0\,{}^\circ\text{C}$ at $20.0\,\text{min}$
 **Find:** the difference between the rates of fall during the first and the last five minutes in $\text{K/min}$
 **Principle:** The hypothesis "the temperature falls steadily" predicts the same rate of fall everywhere. So calculate the rate of fall for two periods and compare them. A temperature change is the same in kelvins and in degrees Celsius.
-**Formula:** $$\begin{aligned} r &= \dfrac{\Delta T}{\Delta t} \\ &= \dfrac{T_\text{start} - T_\text{end}}{t_\text{end} - t_\text{start}} \\ \Delta r &= r_1 - r_2 \end{aligned}$$
+**Formula:** $$\begin{aligned} r &= -\dfrac{\Delta T}{\Delta t} \\ &= \dfrac{T_\text{start} - T_\text{end}}{t_\text{end} - t_\text{start}} \\ \Delta r &= r_1 - r_2 \end{aligned}$$
 **Conversions:** A fall in temperature in degrees Celsius equals the fall in kelvins, so a change of $1\,{}^\circ\text{C}$ is $1\,\text{K}$ and no conversion is needed.
 **Substitution:** $r_1 = \dfrac{80.0\,{}^\circ\text{C} - 68.0\,{}^\circ\text{C}}{5.0\,\text{min}} = \dfrac{12.0\,\text{K}}{5.0\,\text{min}} = 2.4\,\text{K/min}$ and $r_2 = \dfrac{52.0\,{}^\circ\text{C} - 47.0\,{}^\circ\text{C}}{5.0\,\text{min}} = \dfrac{5.0\,\text{K}}{5.0\,\text{min}} = 1.0\,\text{K/min}$, so $r_1 - r_2 = 2.4\,\text{K/min} - 1.0\,\text{K/min} = 1.4\,\text{K/min}$
 **Answer:** $1.4\,\text{K/min}$, two significant figures, because the time intervals $5.0\,\text{min}$ and the fall $5.0\,\text{K}$ in the last interval are given with two significant figures.
@@ -222,7 +222,7 @@ and “The hand-timing uncertainty $0.15\,\text{s}$ is about $3.8$ times the dif
 The relative uncertainty stays within the limit only if the measured fall is large enough compared with the uncertainty, just as in a time measurement where the uncertainty of the time is constant.
 
 First the smallest sufficient fall is calculated, and then the time in which the water cools by this amount at the initial rate.
-**Formula:** $$\begin{aligned} r &= \dfrac{\Delta T}{\Delta t} \\ &= \dfrac{T_\text{start} - T_3}{t_3 - t_\text{start}} \\ \varepsilon &= \dfrac{\Delta T_\text{fall}}{T_\text{fall}} \\ \varepsilon &\le \varepsilon_\text{max} \\ T_\text{fall} &\ge \dfrac{\Delta T_\text{fall}}{\varepsilon_\text{max}} \\ t &= \dfrac{T_\text{fall}}{r} \end{aligned}$$
+**Formula:** $$\begin{aligned} r &= -\dfrac{\Delta T}{\Delta t} \\ &= \dfrac{T_\text{start} - T_3}{t_3 - t_\text{start}} \\ \varepsilon &= \dfrac{\Delta T_\text{fall}}{T_\text{fall}} \\ \varepsilon &\le \varepsilon_\text{max} \\ T_\text{fall} &\ge \dfrac{\Delta T_\text{fall}}{\varepsilon_\text{max}} \\ t &= \dfrac{T_\text{fall}}{r} \end{aligned}$$
 **Conversions:** A percent is a hundredth: $5.0\,\% = 0.050$. A fall in temperature is the same in kelvins and degrees Celsius, so $\text{K}$ is suitable as the unit.
 **Substitution:** $r = \dfrac{80.0\,{}^\circ\text{C} - 74.0\,{}^\circ\text{C}}{3.0\,\text{min}} = \dfrac{6.0\,\text{K}}{3.0\,\text{min}} = 2.0\,\text{K/min}$. Then $T_\text{fall} \ge \dfrac{1.0\,\text{K}}{0.050} = 20\,\text{K}$, so $t = \dfrac{20\,\text{K}}{2.0\,\text{K/min}} = 10\,\text{min}$.
 **Answer:** at least $10\,\text{min}$, two significant figures like the time interval $3.0\,\text{min}$ and the uncertainty $1.0\,\text{K}$.
