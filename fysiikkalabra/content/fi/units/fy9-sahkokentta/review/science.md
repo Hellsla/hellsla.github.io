@@ -1,23 +1,28 @@
 VERDICT: PASS
-CONTENT-HASH: 261376c3ea53b297
-SCOPE: delta: new tasks fy9-sahkokentta-s7 and -s8 and the changed intro; older tasks s1–s6 untouched
+CONTENT-HASH: 7013f5c43b745e8d
+SCOPE: delta, Sovella s4 b after commit 6b08a5f2cf (task text, solution Kysytty and model answer, rubric assumptions detail, common-mistake line)
 
 ## Blocking
 None.
 
 ## Polish
-- s7: neither the text nor the figure says where the positive plate is. Part d and the a-solution's check (250 V : 0,050 m) need it at $x = 5{,}0\,\text{cm}$. A student can only infer this from where the line ends, because the figure has nothing marked. Adding "levyjen etäisyys on $5{,}0\,\text{cm}$" to the text would fix this and reveals nothing.
-- s7 a, Järkevyys: the comparison with air's breakdown field does not fit, because the plates are in a vacuum.
-- s8 c: the drawn curve gives $U_\text{D}(30\,\text{mA}) \approx 2{,}25\,\text{V}$, so $R_\text{min} \approx 125\,\Omega$. This is inside the tolerance and still rounds up to $130\,\Omega$, and it could be listed in Hyväksytään myös.
-- The shared key `graph_read` has a base text about a slope from two points, but s7 c and s8 a/d read single values. The `detail` sets this right.
+- Wording only: the rubric's transfer criterion says "ampeerien suuruisen virran", and the model answer gives $1{,}2\,\text{A}$ (one ampere). It still means "of the order of amperes", so this is not a contradiction.
 
 ## Checked
-- `units.py hash` at the start and the end: 261376c3ea53b297. The packet's checks say `practice.py check: OK`.
-- From the packet I read the intro, s7 and s8 in tasks.json, their solutions and their answers.py blocks. I also read the figure sources: ex_vgraph in fy6-12 figures.py and ex_led with i_led/COMP in fy6-14 figures.py.
-- Own script (scratchpad `s78.py`), results:
-  - s7: E = 5000 V/m, F = 1,602e-15 N, a = 2,411e11 m/s², Ek = 3,204e-17 J, v = 98,2 km/s, F/mg = 2,5e10, V = −50 V.
-  - s8: I = 17,27 mA, P_R = 65,6 mW, 63,3 %, LED 38,0 mW, total 103,6 mW, R_min = 126,7 Ω, 29,2 mA at 130 Ω, 440 Ω and 110 Ω.
-  - All agree with answers.py and tasks.json.
-- Drawn LED curve: U_D = 2,165 / 2,235 / 2,255 V at 5 / 20 / 30 mA. Solving the curve and resistor together gives I = 17,15 mA, inside the tolerance. With the curve values, R = 433 Ω and 112 Ω, inside 10 %.
-- Physics: field direction, force on +2e, energy principle and the sign of ΔV, the zero-level change, and the classical limit. Series circuit with Kirchhoff's voltage law, power share U_R/U, the safe-side rounding, and the non-ohmic conclusion.
-- Rubric: points add up (15 + 15), and every criterion matches its part. Unit fields are language-neutral, alt-text names match the task text, and the intro matches the set. Scope is FY6/FY4.
+- `units.py hash fy9-sahkokentta` at the start and the end: 7013f5c43b745e8d. `practice.py check: OK`.
+- My previous blocking item is fixed. The task now asks "enintään kuinka pitkän ilmavälin yli läpilyönti tapahtuu varmasti". The solution's Kysytty line says "pisin ilmaväli, jonka yli läpilyönti tapahtuu varmasti". The model answer says "pisin väli, jonka yli läpilyönti tapahtuu varmasti, on $d = U/E_\text{max} \approx 4\,\text{mm}$".
+  - Physics: in the uniform-field model, breakdown happens when $U/d \ge E_\text{max}$, that is when $d \le U/E_\text{max}$. So 4 mm is the longest gap that certainly breaks down. This holds as an upper bound for "certain" because the field near the thin conductor and the rod tip is stronger than $U/d$. Breakdown at longer gaps is possible, and the text says so.
+- Internal consistency (item 6): four texts now agree.
+  - The assumptions detail: "turvaetäisyyden alaraja, ei turvallinen etäisyys … valokaari voi syttyä selvästi pidemmästäkin välistä".
+  - The solution's paragraph: "alaraja turvaetäisyydelle eikä turvallinen etäisyys".
+  - The common-mistake line: "4 mm esitetään turvallisena etäisyytenä, vaikka se on vain väli, jonka yli läpilyönti tapahtuu varmasti tasaisen kentän mallissa".
+  - The math criterion (4 mm from 12 kV, not 20 kV).
+
+  No phrase with "pienin" or "lyhyen" remains in any language's s4 b. I grepped fi, en and fi-easy sovella.
+- Recomputed, all agreeing with the solution and answers.py:
+  - $20/\sqrt3 = 11{,}55\,\text{kV} \approx 12\,\text{kV}$
+  - $d = 12\,\text{kV}/(3\,\text{MV/m}) = 4{,}0\,\text{mm}$ (3,85 mm from 11,55 kV, so "about 4 mm" is right either way)
+  - Voltage across the bird's feet: $0{,}30\,\Omega/\text{km} \cdot 0{,}05\,\text{m} \cdot 100\,\text{A} = 1{,}5\,\text{mV}$
+  - Current: $12\,\text{kV}/10\,\text{k}\Omega = 1{,}2\,\text{A}$
+- Assessment (item 7): the s4 b points still add up to 5 (1+2+1+1). Every criterion asks only for what the task gives and asks.
+- Not judged again: the rest of s4, s1–s3 and s5–s8. They are unchanged since my earlier PASS.

@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: ce981cbb7ceb9e3a
-SCOPE: delta: round 3, the fixes of round 2 in fy9-mittaaminen-s7 and -s8 (s8 a rubric criterion 5, s7 c formula rows); older tasks s1-s6 untouched (not re-judged).
-Round 3: delta against the version round 2 reviewed (fix round 2).
+CONTENT-HASH: ae3268c24422105d
+SCOPE: full. The change is three new `pysahdy` boxes in unit.md, judged first against the Finnish boxes (fi PASS c66703f1d31a22ae). After that the unit text, unit.json and the Sovella task set s1–s8 were judged with them.
 
 ## Blocking
 None.
 
 ## Polish
-- s8 a, criterion 5: the new sentences "Kaikki suorat, jotka kulkevat pisteiden $\pm 0{,}01\,\text{m}$:n välien kautta, leikkaavat $s$-akselin välillä $+0{,}003\ldots{+}0{,}012\,\text{m}$. Mikään origon kautta kulkeva suora ei sovi." are correct, but the model answer (solutions.md row 812) does not show them. The grader should not require them. Add them to the model answer or mark them as extra.
-- s7 c, rubric detail 3: $\tfrac{1{,}2}{30{,}0} \approx 4{,}1\,\%$ is arithmetically $4{,}0\,\%$. The solution (row 727) uses $1{,}22$, so write $\tfrac{1{,}22}{30{,}0}$. The result $\pm 0{,}6\,\text{cm}$ does not change.
-- Carried from round 2: the interval $10{,}19\ldots10{,}48$ versus $10{,}35 \pm 0{,}15$ in s8 c. Both are defensible.
+- Box 2 says "lukuvirheen osuus". The Finnish box says "lukemisvirheen". "Lukuvirhe" can be read as an arithmetic error. "Lukemisvirhe" (reading error) matches the rest of the unit. This is wording only, not physics.
+- Box 1 asks "Poistaako toisto virheen". The Finnish box names "kellon systemaattisen virheen". The answer explains both error types, so nothing is wrong. Naming the systematic error in the question would match fi exactly.
+- The old Polish items from round 3 still stand: s8 a criterion 5 against the model answer, and s7 c detail $1{,}2/30{,}0$. Both are carried and neither is an error.
 
 ## Checked
-- Round-2 item 1 is fixed in the fi-easy tasks.json. s8 a criterion 5 no longer says "joten se ei ole merkitsevä". It is now split into short sentences: the constant term is about $0{,}01\,\text{m}$, about the size of the reading uncertainty, it is small, zero is excluded, and it does not affect the slope because the line is not forced through the origin. Recomputed (scratchpad s8r2.py): the admissible intercepts are $+0{,}0033\ldots+0{,}012\,\text{m}$, so the rounding is correct. The numbers are identical to fi, and the criterion agrees with the model answer.
-- s7 c, rubric detail 2: the chain is now an `aligned` block with real newlines and aligned rows ($4{,}5/30{,}0 = 0{,}150\,\text{m} = 15{,}0\,\text{cm}$). It is the same chain as the solution. Recomputed: $\Delta k = 1{,}22\,\text{N/m}$, $\Delta x = 0{,}61\,\text{cm}$, $x$ between $14{,}4$ and $15{,}6\,\text{cm}$. Detail 1 ("jousivakio yksikössä $\text{N/m}$") is clear.
-- s7 b detail ("Tässä aineistossa suoran saa pakottaa origon kautta …"): correct physics, simpler wording than fi, same meaning.
-- The unit fields are language-neutral.
-- `practice.py check`: OK for fi-easy (8 tasks, 116 points). The hash is $ce981cbb7ceb9e3a$ at the start and at the end.
+- Box 1, a clock that always runs fast: the physics is the same as fi. Averaging repeated readings reduces the effect of random error. A systematic error has the same direction in every reading, so it stays in the mean. This agrees with the paragraph above the box and with key_concepts "systemaattinen virhe" (category 6).
+- Box 2, why the slope is read from the line and not from data points: the physics is the same as fi. The points scatter around the line, the fitted line represents all the data, and far-apart points give large $\Delta x$, $\Delta y$, so the reading error is a small share. This agrees with the paragraph above the box, the figure "anatomia" and the graph_read criterion.
+- Box 3: $s = \tfrac12 a t^2$, so $k = a/2$ and $a = 2k$. The condition (start from rest, time from the start of the motion) is stated in the paragraph just above the box, and the box says the line goes through the origin. This is the same as fi, and the "linearisointi" figure ($a = 0{,}50$, $k = 0{,}25\,\text{m/s}^2$) agrees.
+- No box gives a wrong option or a misleading picture. Each answer stays inside the unit's scope (FY1 measurement and graphs; kinematics from FY4 is only revised).
+- Since the passed commit 4576e24f0, solutions.md has changed only by paragraph splits (carried as md-paragraphs). I read the diff and every number, sign and unit is unchanged.
+- Recompute: an independent numpy script (scratchpad rc.py) checked s1 v and Δv, s2 thickness, areal density and density, the s3 fit with row 60 ml excluded and the 1,50 l mass, the s4 calibration slope and corrected 765 g, the s5 fit without 1,5 s, the s6 $V(1/p)$ slope, $V_0$ and $n$, the s7 $k = 1/\text{slope}$ and the 4,5 N extension, and the s8 $g = 2k$. All agree with answers.py. The fi-easy part answers equal the fi ones, and `practice.py check` is OK (8 tasks, 116 points).
+- The hash is ae3268c24422105d at the start and at the end.

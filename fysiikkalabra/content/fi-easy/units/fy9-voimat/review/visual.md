@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 58568037df090f6a
+CONTENT-HASH: bcf5e6261c14c7a4
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] sovella/solutions.md s5 a) — the break leaves the sentence on measurement 5 as a lone paragraph between the Periaate and Kaava lines; optionally keep it inside Periaate. Not needed.
+- [Minor] kartta figure at 1280 (selita-1280-1) — the tall flow chart (380 px wide) sits alone in the reading column with a wide empty area beside it; it is not beside its text — optional: leave as is (existing, not new).
+- [Minor] stop-think boxes — the "Vastaus" disclosure was shown open in every capture, so the closed state (question first, answer hidden) was not seen; check by hand that it is closed on load.
+- [Minor] selita-390-2 — "(N)", "(kg)" in the formula legend are set in the upright maths style, slightly heavier than the surrounding text; fine, taste only.
 
 ## Checked
-- Diff origin/main...HEAD for fi-easy (word-level): only blank-line paragraph breaks in sovella/solutions.md and the inquiry.json model field; words, maths, figures unchanged.
-- Every new break falls at a sentence boundary outside inline/display maths (before a voimakuvio fence, after a closing $$, between equilibrium and changed-situation parts); no split chain; paragraphs under about 120 words.
-- Read the previous Sovella visual report (PASS) as evidence.
-- Opened captures: fi-easy/review/shots/fy9-voimat-stage-sovella-390-5.png (fi) and en/.../sovella-1280-3.png (en), the same page structure for all languages: tasks, hints, Näytä ratkaisu cards readable, nothing clipped, no horizontal overflow.
-- Gap: I did not open the captures of the opened model solutions with the new breaks specifically in fi-easy; the captures seen show the closed/just-opened solution start. Figures unchanged and not re-inspected.
+- Theory stage, 390 px: selita-390-1…5. Theory stage, 1280 px: selita-1280-1, -2. Top of page at 390 px (top-390).
+- Three "Pysähdy ja mieti" boxes: green panel with an ink left bar, small-caps label, question, "Vastaus" with an arrow; text readable, nothing clipped,  = mg\cos\alpha$ and $ render cleanly, no horizontal overflow, same look at 390 and 1280. The kalteva figure (390) is legible; the labels are LaTeX with overlines.
+- Hero illustration, top-390: clear, restrained, matches the Miksi question. Captures current (stamp bcf5e6261c14c7a4).
+- Not opened one by one: exercises, sovella and teacher captures (outside the new boxes; check_layout/a11y results in the packet).
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

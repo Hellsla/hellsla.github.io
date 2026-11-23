@@ -10,6 +10,12 @@
 
 The problems of this lesson start in the same way as mechanics problems usually do: **choose the body, draw the free-body diagram and write Newton's second law**. The situation tells what the acceleration is. In equilibrium the body at rest neither starts to move nor starts to turn, so both the sum of the forces and the sum of the moments are zero. In uniform circular motion the acceleration points to the centre of the path, so the sum of the forces points there too. Only gravitation acts on a satellite, so the gravitational force is itself the net force.
 
+```pysahdy
+In which direction does the sum of the forces point in uniform circular motion, and why?
+---
+Towards the centre of the path, because the acceleration points there and the net force has the same direction as the acceleration.
+```
+
 <svg data-fig="kartta" viewBox="0 0 380 870" role="img" aria-label="Recognition chart: how do I tell which law to use? Draw the free-body diagram first and see which sign in the task fits. A rod stays in place: the sum of the moments is zero too. Circular path: the normal acceleration is v squared divided by r. Angular velocity given: the orbital speed is omega times r. Which force bends the path: the sum of the forces is mass times normal acceleration. A bend on a level road: static friction turns the car, and the friction force equals m v squared per r. Two bodies attract each other: the law of gravitation, F g equals gamma M m per r squared. Free-fall acceleration asked: weight is gravitation, m g equals gamma M m per r squared. A satellite orbits: gravity bends the path, gamma M m per r squared equals m v squared per r." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="811" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
@@ -125,6 +131,12 @@ centripetal acceleration :: a_\text{n} = \frac{v^2}{r} = \omega^2 r
 
 where $v$ is the orbital speed ($\text{m/s}$), $r$ the radius of the path ($\text{m}$), $\omega = \tfrac{2\pi}{T} = 2\pi f$ the angular velocity ($\text{rad/s}$), $T$ the period ($\text{s}$) and $f = \tfrac{1}{T}$ the rotation frequency ($\tfrac{1}{\text{s}}$), so $v = \tfrac{2\pi r}{T} = 2\pi r f$, and $a_\text{n}$ the centripetal acceleration ($\text{m/s}^2$). In uniform circular motion the speed is constant. The velocity is along the tangent of the path, and the centripetal acceleration points to the centre of the path.
 
+```pysahdy
+In which direction does the velocity point in uniform circular motion, and in which direction does the normal acceleration point?
+---
+The velocity is along the tangent of the path and the normal acceleration points towards the centre of the path.
+```
+
 By Newton's second law the net force $\Sigma F$ ($\text{N}$) on the body gives it the centripetal acceleration, so the net force points to the centre. The centripetal acceleration $a_\text{n} = \tfrac{v^2}{r}$ also holds at an instant when the speed changes: at the highest and the lowest point of the path there is no force along the tangent. In the equation of motion the forces pointing to the centre are positive, and perpendicular to the plane of the path the sum of the forces is zero.
 
 ```johda
@@ -180,6 +192,12 @@ Newton's law of gravitation :: F_\text{g} = \gamma\frac{m_1 m_2}{r^2}
 where $$
 \gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}
 $$ is the gravitational constant, $F_\text{g}$ the magnitude of the gravitational force ($\text{N}$), $m_1$ and $m_2$ the masses of the bodies ($\text{kg}$) and $r$ the distance between the centres ($\text{m}$). The law holds for point-like and spherically symmetric bodies. The gravitational field strength $g$ ($\text{N/kg}$, that is $\text{m/s}^2$) of a central body of mass $M$ ($\text{kg}$) is the gravitational force per unit mass of a body; at the Earth's surface it is the acceleration due to gravity.
+
+```pysahdy
+How does the magnitude of the gravitational force change when the distance $r$ between the centres of the bodies doubles?
+---
+It becomes one quarter, because $F_\text{g}$ is proportional to $\tfrac{1}{r^2}$.
+```
 
 ```johda
 A body of mass $m$ is at the distance $r$ from the centre of a central body of mass $M$. Derive the gravitational field strength $g$, that is the acceleration due to gravity, at this distance.

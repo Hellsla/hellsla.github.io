@@ -41,9 +41,9 @@ fy4-4	576	T - mg = ma	T - mg = ma
 fy4-4	576	a = \frac{T - mg}{m}	a = \frac{T - mg}{m}					
 fy4-4	590	a = \frac{T - mg}{m}	a = \frac{T - mg}{m}					
 fy4-4	590	mg = 480\,\text{kg}\cdot 9{,}81\,\text{m/s}^2	mg = 480\,\text{kg}\cdot 9.81\,\text{m/s}^2					
-fy4-4	590	\phantom{mg} = 4708{,}8\,\text{N}	\phantom{mg} = 4708.8\,\text{N}					
+fy4-4	590	= 4708{,}8\,\text{N}	= 4708.8\,\text{N}					
 fy4-4	590	a = \frac{5200\,\text{N} - 4708{,}8\,\text{N}}{480\,\text{kg}}	a = \frac{5200\,\text{N} - 4708.8\,\text{N}}{480\,\text{kg}}					
-fy4-4	590	\phantom{a} \approx 1{,}02\,\text{m/s}^2	\phantom{a} \approx 1.02\,\text{m/s}^2					
+fy4-4	590	\approx 1{,}02\,\text{m/s}^2	\approx 1.02\,\text{m/s}^2					
 fy4-5	320	\Sigma\overline{F} = m\overline{a}	\Sigma\overline{F} = m\overline{a}	Newtonin 2. laki (dynamiikan peruslaki)	Newton's second law (fundamental law of dynamics)	MAFY	Mekaniikan kaavoja	
 fy4-5	324	\Sigma F_x = m a_x	\Sigma F_x = m a_x					
 fy4-5	324	\Sigma F_y = m a_y	\Sigma F_y = m a_y					

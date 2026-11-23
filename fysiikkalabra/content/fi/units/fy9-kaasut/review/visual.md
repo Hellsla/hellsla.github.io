@@ -1,13 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 7f3ceb36bf9a1f73
+CONTENT-HASH: 8e65be516f1f6a85
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] capture gap: the shots have no capture of the Sovella solutions that the diff touches, so the paragraph breaks were judged from the diff plus the rendering of the same solution component in the Tehtävät stage.
+- [Minor] unit.md, 2. pysahdy-laatikko (suoran jatkaminen) — vastaus toistaa kysymyksen lähes sanasta sanaan ("suoran jatkaminen nollaan on kaasumallin ennuste") eikä anna syytä lisää — vastauksen alku "Todellinen kaasu tiivistyy nesteeksi ennen kuin lämpötila ehtii sinne" riittää; lopun toisto voi jäädä pois.
+- [Minor] unit.md, hyötysuhdelaatikko — kolmannen laatikon vastaus ja sen jälkeinen kappale ("Osa lämmöstä on aina luovutettava kylmempään, joten ... alle 100 %:n") sanovat saman peräkkäin; kappaleen ensimmäisen virkkeen voi korvata jatkolla lämpötilaerosta.
+- [Minor] pysahdy-laatikot — laatikko ei erotu rakenteeltaan teoriaosan muista lohkoista muuten kuin vihreällä reunalla; toimii, mutta laatikon vasen reuna on lähempänä tekstin reunaa (4 px) kuin kaavalaatikoissa. Ei vaadi toimia.
 
 ## Checked
-- git diff origin/main...HEAD (excluding review/): only solutions.md changed; blank lines inserted between paragraphs (Periaate, Mallivastaus, a sentence after a display formula); words, maths and figures unchanged; no break lands inside a formula.
-- Read sovella/review/visual.md (earlier PASS, same conclusion).
-- Opened stage-sovella-390-4 (fi): KaTeX rows, answer box, reasonableness block and hints render cleanly at 390 px.
+- Opened: contact-1.png; selita-390-1, -2, -4, -5 (Teoria at 390 px: kartta, rengas, three stop-think boxes, kone, johda); selita-1280-2, -4.
+- Stop-think boxes (3): label "PYSÄHDY JA MIETI" small caps, question, openable "Vastaus" summary, answer; KaTeX (30\,\text{kPa}$, $, 00\,\%$) not clipped, no horizontal overflow at 390 px or 1280 px; green left rule and tint consistent with the page, reading column kept. 360 px not separately captured; check_layout covers it per packet.
+- Figures kartta, rengas (bar, axis units, labels LaTeX), kone (arrow widths to scale, Q orange, W green, labelled) legible at 390 px. Hero and top seen in contact sheet only.
+- Calculation chain (331 kPa · 253 K : 293 K ≈ 286 kPa) set as aligned rows, colon division, decimal comma, units upright: fine.
+- Not opened individually: exercise/sovella/tarkista captures (outside the scope given).
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -1,14 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: aca024435b5cc0ff
+CONTENT-HASH: e1e86d735a997e1d
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] aside.stop-think at 390 px (selita-390-5, third box) — the inline \tfrac fraction with subscript $v - v_\text{L}$ in $f = f_0\,\tfrac{v}{v - v_\text{L}}$ is small and the subscript is faint, though not clipped — optional: write the formula once more as display maths in the answer, or leave as is.
+- [Minor] Interaction (captures show every box open): the "Vastaus" disclosure sits in the same green block as the question; a closed state was not captured, so the closed look of the three boxes is judged from source (the label, the question and the `<details>` summary "Vastaus") only.
+- [Minor] Box 2 answer: "Matkaero $\left(n + \tfrac12\right)\lambda$ ($n = 0$)" breaks onto its own line at 390 px (the wrap after the formula); readable, no change needed unless the wording is edited.
 
 ## Checked
-- Read `git diff origin/main...HEAD` for fi (excluding review/): only sovella/solutions.md and inquiry.json, 36 insertions / 12 deletions. Changes are paragraph breaks (blank line inserted between sentences of Periaate and Mallivastaus fields); words, maths, units and figures unchanged. A display-math block that opens mid-paragraph stays in the later paragraph, so no formula is split by the new break.
-- Read the previous Sovella visual report (PASS) as evidence.
-- Opened fi 390 px (sovella-390-2) from review/shots/: Sovella task cards render cleanly, KaTeX and units intact, no clipping or overflow, one reading column.
-- Not opened: captures of the solution panels with the solution button open, so the rendered paragraph spacing inside solutions rests on the diff and the earlier Sovella report, not on my own view.
+- contact-1.png (triage); intro-390 (opening, Miksi, hero, Pohjatiedot).
+- selita-390-2, -3, -4, -5 and selita-1280-2: all three "Pysähdy ja mieti" boxes (label in small caps, question, openable "Vastaus", answer) at 390 px and the first at 1280 px (reading column 660 px); the `pilli` figure beside the first box.
+- Boxes: green tint with a dark left rule, label, question and answer all legible; maths ($\Delta s = \tfrac12\lambda$, $v = f\lambda$, $f > f_0$) is not clipped and there is no horizontal overflow; the box is visually distinct from the formula tables and the Yleisiä virheitä list, and fits the one-column hierarchy.
+- Finnish of the three boxes: natural, terms consistent with the chapter, numbers with units in LaTeX, one voice.
+- Not opened individually: other stages (ennusta, tutki, sovella, exercises, teacher view); they are unchanged by this scope and the deterministic checks are in the packet.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

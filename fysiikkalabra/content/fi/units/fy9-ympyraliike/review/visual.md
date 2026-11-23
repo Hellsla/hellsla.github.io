@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3bfefce6ac5a84bb
+CONTENT-HASH: 45fe09079d5cb888
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] stop-think boxes — answer is a native details summary "Vastaus" with a small triangle; fine, but the answer text uses the same size and colour as the question, so when open the two merge slightly; consider a muted answer colour (shared CSS, not per unit).
+- [Minor] unit.md Tasainen ympyräliike — the formula-name table (Ratanopeus / Normaalikiihtyvyys) leaves a wide empty gap between name and formula at 1280 px; harmless.
 
 ## Checked
-- Read the diff origin/main...HEAD for fi (sovella/solutions.md, inquiry.json, excluding review/): only blank lines inserted inside long Periaate, Mallivastaus, Kuvaaja, Järkevyys and inquiry model fields (24 breaks); words, maths and figures unchanged; every break falls between sentences, none inside a formula or display block, and the paragraphs stay under about 120 words.
-- Opened review/shots/contact-17.png (fi): Sovella model-solution pages show the split paragraphs with normal spacing, no clipping or overflow, labelled blocks and formula rows intact.
-- Opened review/shots/fy9-ympyraliike-stage-sovella-390-4.png (fi): 390 px solution layout readable, formulas not clipped.
-- Read the earlier Sovella visual report (fi, PASS) as evidence; the inquiry model change was judged from the diff only, no capture of that field opened.
-- Hash at end equals hash at start.
+- selita-390-1, -3, -4, -6 and selita-1280-1, -3: all three new "Pysähdy ja mieti" boxes (Ydinajatus, Tasainen ympyräliike, Gravitaatio). Label in small caps, question, openable "Vastaus" with green left rule, tinted background. At 390 px nothing is clipped; inline maths ($r$, $\tfrac{1}{r^2}$, $F_\text{g}$) renders in KaTeX; the box is clearly distinct from the "Johda itse" card (different tint) and sits right after the paragraph it concerns. At 1280 px the box keeps the reading column width, no overflow.
+- Figures kartta and tilanteet seen in those captures: LaTeX labels, force red / velocity blue / acceleration orange consistent, legible at 390 px. Not separately opened: hero, geo, kaarre and the sovella graphs (opened only in passing; the deterministic checks were clean), so no claim on them beyond that.
+- Finnish: the three questions and answers read naturally, glossary terms (normaalikiihtyvyys, kokonaisvoima) consistent; units in LaTeX.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

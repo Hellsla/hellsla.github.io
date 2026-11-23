@@ -10,6 +10,12 @@
 
 Moduulin ilmiöt yhdistää **kvantittunut energia**. Valo vaihtaa energiaa aineen kanssa fotoneina, joiden energia on $E = hf$, ja yksi fotoni luovuttaa energiansa yhdelle elektronille. Atomin elektronit ja ytimen nukleonit voivat olla vain tietyissä energiatiloissa, joten siirtymissä syntyy tai katoaa tietyn energian fotoni. Elektronien tasojen erot ovat elektronivoltteja, ytimen tasojen ja ydinreaktioiden energiat miljoonia elektronivoltteja. Ytimessä massa ja energia liittyvät toisiinsa: $E = mc^2$.
 
+```pysahdy
+Kuinka monelle elektronille yksi fotoni luovuttaa energiansa?
+---
+Yksi fotoni luovuttaa energiansa yhdelle elektronille.
+```
+
 <svg data-fig="kartta" viewBox="0 0 380 896" role="img" aria-label="Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Katso ensin, mikä suure tehtävässä annetaan, ja sitten,  mikä tunnusmerkki sopii. Fotonin taajuus tai aallonpituus: fotonin energia on Planckin vakio kertaa taajuus.  Valo irrottaa elektroneja: valosähköisessä ilmiössä fotonin energia on irrotustyö plus elektronin suurin  liike-energia. Atomi lähettää tai absorboi: kvanttihyppy, fotonin energia on ylemmän ja alemman energiatason  erotus. Ydin hajoaa ajan kuluessa: hajoamislaki, jäljellä oleva määrä on alkumäärä kertaa e potenssiin miinus  hajoamisvakio kertaa aika. Montako hajoamista sekunnissa: aktiivisuus on hajoamisvakio kertaa ytimien määrä.  Ydinreaktion massaero: vapautuva energia on massaero kertaa valonnopeuden neliö. Säteilyn laji otetaan huomioon:  ekvivalenttiannos on säteilyn painokerroin kertaa absorboitunut annos. Etäisyys lähteestä muuttuu: pistemäisen  lähteen annosnopeus on kääntäen verrannollinen etäisyyden neliöön. Säteily läpäisee aineen: heikennyslaki,  intensiteetti on alkuintensiteetti kertaa e potenssiin miinus heikennyskerroin kertaa paksuus." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="852" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
@@ -141,6 +147,12 @@ fotonin liikemäärä :: p = \frac{E}{c} = \frac{h}{\lambda}
 
 missä $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on Planckin vakio, $f$ taajuus, $\lambda$ aallonpituus, $W$ metallin irrotustyö, $E_\text{k,max}$ irtoavan elektronin suurin liike-energia, $E_\text{y}$ ja $E_\text{a}$ ylemmän ja alemman energiatilan energiat ja $p$ fotonin liikemäärä. Elektroneja irtoaa vain, kun $hf \geq W$. Atomi absorboi vain fotonin, jonka energia on täsmälleen tasojen erotus, ellei fotoni ionisoi atomia. Vedyllä $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$. LEDin kynnysjännitteellä $eU_\text{k} \approx hf$. Muunnokset: $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$ ja $hc \approx 1240\,\text{eV}\,\text{nm}$.
 
+```pysahdy
+Irtoaako metallista elektroneja, jos fotonin energia $hf$ on pienempi kuin irrotustyö $W$?
+---
+Ei irtoa, koska elektroneja irtoaa vain, kun $hf \geq W$.
+```
+
 ### Ydin ja hajoaminen
 
 ```kaavat
@@ -152,6 +164,12 @@ ydinreaktiossa vapautuva energia :: E = \Delta m c^2
 ```
 
 missä $N$ on hajoamattomien ytimien määrä hetkellä $t$, $N_0$ määrä alussa, $T_{1/2}$ puoliintumisaika, $A$ aktiivisuus ($\text{Bq}$), $\lambda$ hajoamisvakio, $\Delta m$ massaero ja $E$ reaktiossa vapautuva energia. Koska $e^{-\lambda T_{1/2}} = \tfrac12$, hajoamislaki voidaan kirjoittaa myös $N = N_0 \left(\tfrac12\right)^{t/T_{1/2}}$, ja sama laki pätee aktiivisuudelle, $A = A_0 e^{-\lambda t}$. Hajoamisyhtälössä massaluku ja varausluku säilyvät: alfahajoamisessa $Z$ pienenee kahdella ja $A$ neljällä, beeta miinus -hajoamisessa $Z$ kasvaa yhdellä. Hajoamislaki kuvaa suurta ydinjoukkoa. Sidosenergia on $E_\text{B} = \Delta m\,c^2$, ja $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$. Fissio ja fuusio vapauttavat energiaa, koska tuotteiden sidosenergia nukleonia kohti on suurempi.
+
+```pysahdy
+Kuinka suuri osa ytimistä on hajoamatta ajan $2T_{1/2}$ kuluttua?
+---
+Hajoamislain $N = N_0 \left(\tfrac12\right)^{t/T_{1/2}}$ mukaan $N = N_0 \left(\tfrac12\right)^{2} = \tfrac14 N_0$, eli neljäsosa.
+```
 
 <svg data-fig="puolitus" viewBox="0 0 600 380" role="img" aria-label="Kuvaaja mittakaavassa: jäljellä oleva osuus puoliintumisaikojen tai puoliintumispaksuuksien lukumäärän n funktiona, n nollasta viiteen. Käyrä alkaa arvosta 1 ja laskee yhä loivemmin. Katkoviivat näyttävät, että n = 1 antaa puolet, n = 2 neljäsosan ja n = 3 kahdeksasosan. Käyrä lähestyy nollaa mutta ei saavuta sitä: hajoamisella ja gammasäteilyn vaimenemisella ei ole loppupistettä." style="max-width:100%;font-size:26px">
   <line x1="174" y1="312" x2="174" y2="62" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
