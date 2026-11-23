@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4fe3e018a9850402
-SCOPE: delta numbers from 133385660b043c2e base 4d1dce4
+CONTENT-HASH: 260b819a49c95404
+SCOPE: delta wording from 4fe3e018a9850402 base 5965625
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- fy6-7 shots open-exercises-L3-1280-7 (neighbouring task, layout of the card around the changed Kaava steps); the changed Kaava blocks (E_i = P_i t_i, K = aE, ... 3–5 rows) are plain aligned blocks of the same kind as the fy6-6 and fy6-8 ones I opened; principle → combined form reads in order.
-- Judged at 1280 px (the exercise captures exist at that width only); the Kaava steps are aligned display blocks inside the solution card and follow the same card flow at 390 px.
+- Delta: L3-04 (energy-saving task) Kaava block, now 7 rows with K_kallis/K_halpa rows added; opened review/shots/fy6-7-open-exercises-L3-1280-5.png (fi-easy) and, for the fi capture, -6.
+- Seven one-equation rows, equals signs aligned, fraction and subscripts intact, order principle then symbolic then combined; Kaava box fits, nothing clipped; Sijoitus rows below unchanged and consistent.
+- No 390 px solution capture; the layout checks at 360-1280 px are green.
 
 ## Scores
-illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 4

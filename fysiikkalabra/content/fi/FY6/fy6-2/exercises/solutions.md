@@ -82,7 +82,7 @@
 **Annettu:** pariston jännite $9{,}0\,\text{V}$; jännitemittari sarjassa lampun kanssa; mittarin resistanssi on hyvin suuri lampun resistanssiin verrattuna; lamppu sammuu
 **Kysytty:** jännitemittarin lukema $U_\text{m}$ voltteina
 **Periaate:** Jännitemittari päästää läpi vain hyvin pienen virran, joten sarjaan kytkettynä se pienentää koko piirin virran lähes nollaan. Silloin lampun yli ei juuri jää jännitettä, koska lampun jännite on sen resistanssi kertaa lähes nolla oleva virta, ja pariston koko jännite jää mittarin napojen välille.
-**Kaava:** $$\begin{aligned} &U_\text{paristo} = U_\text{m} + U_\text{lamppu} \\ U_\text{lamppu} &= R_\text{lamppu} I \approx 0 \quad (I \approx 0) \\ U_\text{m} &= U_\text{paristo} - U_\text{lamppu} \\ U_\text{m} &\approx U_\text{paristo} \end{aligned}$$
+**Kaava:** $$\begin{aligned} U_\text{paristo} &= U_\text{m} + U_\text{lamppu} \\ U_\text{lamppu} &= R_\text{lamppu} I \approx 0 \quad (I \approx 0) \\ U_\text{m} &= U_\text{paristo} - U_\text{lamppu} \\ U_\text{m} &\approx U_\text{paristo} \end{aligned}$$
 **Muunnokset:** Ei tarvita: jännite on voltteina.
 **Sijoitus:** $U_\text{m} \approx 9{,}0\,\text{V}$
 **Vastaus:** noin $9{,}0\,\text{V}$, kaksi merkitsevää numeroa kuten pariston jännite.

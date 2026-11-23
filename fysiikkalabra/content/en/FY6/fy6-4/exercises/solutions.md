@@ -12,7 +12,7 @@
 **Given:** resistors in parallel $R_1 = 40\,\Omega$ and $R_2 = 60\,\Omega$
 **Find:** the total resistance $R$ in ohms
 **Principle:** In a parallel connection the same voltage is across both resistors and the branch currents add up. So the reciprocal of the total resistance is the sum of the reciprocals of the branch resistances.
-**Formula:** $$\begin{aligned} &I = I_1 + I_2 \\ U &= RI \Rightarrow \dfrac{U}{R} = \dfrac{U}{R_1} + \dfrac{U}{R_2} \\ \dfrac{1}{R} &= \dfrac{1}{R_1} + \dfrac{1}{R_2} \\ R &= \dfrac{R_1 R_2}{R_1 + R_2} \end{aligned}$$
+**Formula:** $$\begin{aligned} I &= I_1 + I_2 \\ U &= RI \Rightarrow \dfrac{U}{R} = \dfrac{U}{R_1} + \dfrac{U}{R_2} \\ \dfrac{1}{R} &= \dfrac{1}{R_1} + \dfrac{1}{R_2} \\ R &= \dfrac{R_1 R_2}{R_1 + R_2} \end{aligned}$$
 **Conversions:** Not needed, both resistances are in ohms.
 **Substitution:** $R = \dfrac{40\,\Omega \cdot 60\,\Omega}{40\,\Omega + 60\,\Omega} = \dfrac{2400\,\Omega^2}{100\,\Omega} = 24\,\Omega$
 **Answer:** $24\,\Omega$, two significant figures like the values of the resistors.
@@ -42,7 +42,7 @@
 **Given:** three resistors in parallel, each $R_1 = 330\,\Omega$
 **Find:** the total resistance $R$ in ohms
 **Principle:** In a parallel connection the same voltage is across every resistor and the branch currents add up, so the reciprocal of the total resistance is the sum of the reciprocals of the branches. When the resistors are equal, the sum is three times one reciprocal.
-**Formula:** $$\begin{aligned} &I = 3I_1 \\ U &= RI \Rightarrow \dfrac{U}{R} = 3\cdot\dfrac{U}{R_1} \\ \dfrac{1}{R} &= \dfrac{3}{R_1} \\ R &= \dfrac{R_1}{3} \end{aligned}$$
+**Formula:** $$\begin{aligned} I &= 3I_1 \\ U &= RI \Rightarrow \dfrac{U}{R} = 3\cdot\dfrac{U}{R_1} \\ \dfrac{1}{R} &= \dfrac{3}{R_1} \\ R &= \dfrac{R_1}{3} \end{aligned}$$
 **Conversions:** Not needed, the resistance is in ohms.
 **Substitution:** $R = \dfrac{330\,\Omega}{3} = 110\,\Omega$
 **Answer:** $110\,\Omega$, three significant figures like the resistance $330\,\Omega$.
@@ -52,7 +52,7 @@
 **Given:** resistors in series $R_1 = 1.2\,\text{k}\Omega$ and $R_2 = 680\,\Omega$, battery voltage $U = 9.0\,\text{V}$
 **Find:** the current $I$ of the circuit in milliamperes
 **Principle:** In a series connection there is only one route, so the same current passes through both resistors. The connection can be replaced with the total resistance, which is the sum of the resistances, and the current is obtained from Ohm's law.
-**Formula:** $$\begin{aligned} &U = U_1 + U_2 \\ U_1 &= R_1 I, \; U_2 = R_2 I \\ U &= (R_1 + R_2) I \\ I &= \dfrac{U}{R_1 + R_2} \end{aligned}$$
+**Formula:** $$\begin{aligned} U &= U_1 + U_2 \\ U_1 &= R_1 I, \; U_2 = R_2 I \\ U &= (R_1 + R_2) I \\ I &= \dfrac{U}{R_1 + R_2} \end{aligned}$$
 **Conversions:** $R_1 = 1.2\,\text{k}\Omega = 1.2 \cdot 1000\,\Omega = 1200\,\Omega$. At the end $1\,\text{A} = 1000\,\text{mA}$.
 **Substitution:** $I = \dfrac{9.0\,\text{V}}{1200\,\Omega + 680\,\Omega} = \dfrac{9.0\,\text{V}}{1880\,\Omega} = 0.004\,787\,\text{A} = 4.787\,\text{mA}$
 **Answer:** $4.8\,\text{mA}$, two significant figures like the voltage $9.0\,\text{V}$ and the resistance $1.2\,\text{k}\Omega$.
@@ -62,7 +62,7 @@
 **Given:** voltage of the lamp $U_\text{L} = 2.5\,\text{V}$ and current $I = 0.10\,\text{A}$, battery voltage $U = 6.0\,\text{V}$
 **Find:** the resistance $R_\text{s}$ of the series resistor
 **Principle:** The lamp and the resistor are in series, so the same current $I$ must pass through both, and the battery voltage is shared between them. Across the resistor is the part of the voltage that is not left for the lamp, and its resistance is obtained from Ohm's law.
-**Formula:** $$\begin{aligned} &U = U_\text{L} + U_\text{s} \\ U_\text{s} &= U - U_\text{L} \\ U_\text{s} &= R_\text{s} I \\ R_\text{s} &= \dfrac{U_\text{s}}{I} = \dfrac{U - U_\text{L}}{I} \end{aligned}$$
+**Formula:** $$\begin{aligned} U &= U_\text{L} + U_\text{s} \\ U_\text{s} &= U - U_\text{L} \\ U_\text{s} &= R_\text{s} I \\ R_\text{s} &= \dfrac{U_\text{s}}{I} = \dfrac{U - U_\text{L}}{I} \end{aligned}$$
 **Conversions:** Not needed: the voltages are in volts and the current in amperes, and $\tfrac{\text{V}}{\text{A}} = \Omega$.
 **Substitution:** $R_\text{s} = \dfrac{6.0\,\text{V} - 2.5\,\text{V}}{0.10\,\text{A}} = \dfrac{3.5\,\text{V}}{0.10\,\text{A}} = 35\,\Omega$
 **Answer:** $35\,\Omega$, two significant figures like the current $0.10\,\text{A}$.
@@ -72,7 +72,7 @@
 **Given:** resistors in parallel $R_1 = 30\,\Omega$ and an unknown $R_2$, battery voltage $U = 6.0\,\text{V}$, current leaving the battery $I = 0.50\,\text{A}$
 **Find:** the resistance $R_2$ of the unknown resistor
 **Principle:** In a parallel connection the battery voltage is across both resistors, and the current leaving the battery is the sum of the branch currents. The current of the known resistor is obtained from Ohm's law, and the rest of the current passes through the unknown resistor.
-**Formula:** $$\begin{aligned} &I = I_1 + I_2 \\ I_1 &= \dfrac{U}{R_1} \\ I_2 &= I - I_1 = I - \dfrac{U}{R_1} \\ U &= R_2 I_2 \Rightarrow R_2 = \dfrac{U}{I_2} = \dfrac{U}{I - \dfrac{U}{R_1}} \end{aligned}$$
+**Formula:** $$\begin{aligned} I &= I_1 + I_2 \\ I_1 &= \dfrac{U}{R_1} \\ I_2 &= I - I_1 = I - \dfrac{U}{R_1} \\ U &= R_2 I_2 \Rightarrow R_2 = \dfrac{U}{I_2} = \dfrac{U}{I - \dfrac{U}{R_1}} \end{aligned}$$
 **Conversions:** Not needed: the voltage is in volts, the current in amperes and the resistance in ohms.
 **Substitution:** $I_1 = \dfrac{6.0\,\text{V}}{30\,\Omega} = 0.20\,\text{A}$ and $R_2 = \dfrac{6.0\,\text{V}}{0.50\,\text{A} - 0.20\,\text{A}} = \dfrac{6.0\,\text{V}}{0.30\,\text{A}} = 20\,\Omega$
 **Answer:** $20\,\Omega$, two significant figures like the given values.
@@ -82,7 +82,7 @@
 **Given:** resistors in parallel $R_1 = 2.2\,\text{k}\Omega$ and $R_2 = 3.3\,\text{k}\Omega$
 **Find:** the total resistance $R$ in kilohms
 **Principle:** In a parallel connection the same voltage is across both resistors and the branch currents add up, so the reciprocal of the total resistance is the sum of the reciprocals. For two resistors it can be solved in advance.
-**Formula:** $$\begin{aligned} &I = I_1 + I_2 \\ U &= RI \Rightarrow \dfrac{U}{R} = \dfrac{U}{R_1} + \dfrac{U}{R_2} \\ \dfrac{1}{R} &= \dfrac{1}{R_1} + \dfrac{1}{R_2} \\ R &= \dfrac{R_1 R_2}{R_1 + R_2} \end{aligned}$$
+**Formula:** $$\begin{aligned} I &= I_1 + I_2 \\ U &= RI \Rightarrow \dfrac{U}{R} = \dfrac{U}{R_1} + \dfrac{U}{R_2} \\ \dfrac{1}{R} &= \dfrac{1}{R_1} + \dfrac{1}{R_2} \\ R &= \dfrac{R_1 R_2}{R_1 + R_2} \end{aligned}$$
 **Conversions:** $R_1 = 2.2 \cdot 1000\,\Omega = 2200\,\Omega$ and $R_2 = 3.3 \cdot 1000\,\Omega = 3300\,\Omega$. At the end $1\,\text{k}\Omega = 1000\,\Omega$.
 **Substitution:** $R = \dfrac{2200\,\Omega \cdot 3300\,\Omega}{2200\,\Omega + 3300\,\Omega} = \dfrac{7\,260\,000\,\Omega^2}{5500\,\Omega} = 1320\,\Omega = 1.32\,\text{k}\Omega$
 **Answer:** $1.3\,\text{k}\Omega$, two significant figures like the values of the resistors.
@@ -97,7 +97,7 @@ The voltage of the parallel part is the same across both branches, so the curren
 **Reading the figure:** From the figure we read the values $12\,\text{V}$, $R_1 = 40\,\Omega$, $R_2 = 60\,\Omega$ and $R_3 = 120\,\Omega$.
 
 The resistors $R_2$ and $R_3$ are between the same two branching points, that is, in parallel, and the whole current leaving the battery passes through $R_1$ and then through the parallel part, so $R_1$ and the parallel part are one after the other, that is, in series.
-**Formula:** $$\begin{aligned} &\dfrac{U_{23}}{R_{23}} = \dfrac{U_{23}}{R_2} + \dfrac{U_{23}}{R_3} \\ R_{23} &= \dfrac{R_2 R_3}{R_2 + R_3} \\ &U = R_1 I + R_{23} I \\ I &= \dfrac{U}{R_1 + R_{23}} \\ U_{23} &= R_{23} I \\ I_3 &= \dfrac{U_{23}}{R_3} = \dfrac{R_{23} U}{R_3 (R_1 + R_{23})} \end{aligned}$$
+**Formula:** $$\begin{aligned} \dfrac{U_{23}}{R_{23}} &= \dfrac{U_{23}}{R_2} + \dfrac{U_{23}}{R_3} \\ R_{23} &= \dfrac{R_2 R_3}{R_2 + R_3} \\ U &= R_1 I + R_{23} I \\ I &= \dfrac{U}{R_1 + R_{23}} \\ U_{23} &= R_{23} I \\ I_3 &= \dfrac{U_{23}}{R_3} = \dfrac{R_{23} U}{R_3 (R_1 + R_{23})} \end{aligned}$$
 **Conversions:** Not needed during the calculation. At the end $1\,\text{A} = 1000\,\text{mA}$.
 **Substitution:** $R_{23} = \dfrac{60\,\Omega \cdot 120\,\Omega}{180\,\Omega} = 40\,\Omega$, $I = \dfrac{12\,\text{V}}{40\,\Omega + 40\,\Omega} = 0.15\,\text{A}$, $U_{23} = 40\,\Omega \cdot 0.15\,\text{A} = 6.0\,\text{V}$ and $I_3 = \dfrac{6.0\,\text{V}}{120\,\Omega} = 0.050\,\text{A} = 50\,\text{mA}$
 **Answer:** $50\,\text{mA}$, two significant figures like the voltage $12\,\text{V}$.
@@ -145,7 +145,7 @@ Adding resistors increases the total resistance only in a series connection.
 **Given:** resistors in parallel $R_1 = 90\,\Omega$ and an unknown $R_x$, total resistance $R = 36\,\Omega$
 **Find:** the resistance $R_x$ of the unknown resistor
 **Principle:** In a parallel connection the reciprocal of the total resistance is the sum of the reciprocals of the branches. When the total resistance and one branch are known, the reciprocal of the unknown branch is obtained by subtraction, and finally it is inverted.
-**Formula:** $$\begin{aligned} &I = I_1 + I_x \\ U &= RI \Rightarrow \dfrac{U}{R} = \dfrac{U}{R_1} + \dfrac{U}{R_x} \\ \dfrac{1}{R} &= \dfrac{1}{R_1} + \dfrac{1}{R_x} \\ \dfrac{1}{R_x} &= \dfrac{1}{R} - \dfrac{1}{R_1} \end{aligned}$$
+**Formula:** $$\begin{aligned} I &= I_1 + I_x \\ U &= RI \Rightarrow \dfrac{U}{R} = \dfrac{U}{R_1} + \dfrac{U}{R_x} \\ \dfrac{1}{R} &= \dfrac{1}{R_1} + \dfrac{1}{R_x} \\ \dfrac{1}{R_x} &= \dfrac{1}{R} - \dfrac{1}{R_1} \end{aligned}$$
 **Conversions:** Not needed, all the resistances are in ohms.
 **Substitution:** $\dfrac{1}{R_x} = \dfrac{1}{36\,\Omega} - \dfrac{1}{90\,\Omega} = \dfrac{5 - 2}{180\,\Omega} = \dfrac{1}{60\,\Omega}$, so $R_x = 60\,\Omega$
 **Answer:** $60\,\Omega$, two significant figures like the given values.
@@ -171,7 +171,7 @@ b) $\dfrac{1}{R_\text{parallel}} = \dfrac{1}{217\,\Omega} + \dfrac{1}{328\,\Omeg
 
 The result is compared with the value that the formula of the parallel connection gives for the resistors $200\,\Omega$ and $200\,\Omega$.
 **Reading the graph:** No graph; the values are read from the table.
-**Formula:** $$\begin{aligned} U_{23} &= R_{23} I \Rightarrow R_{23} = \dfrac{U_{23}}{I} \\ &\dfrac{U_{23}}{R_{23}} = \dfrac{U_{23}}{R_2} + \dfrac{U_{23}}{R_3} \\ R_{23} &= \dfrac{R_2 R_3}{R_2 + R_3} \;\text{(correct wiring)} \end{aligned}$$
+**Formula:** $$\begin{aligned} U_{23} &= R_{23} I \Rightarrow R_{23} = \dfrac{U_{23}}{I} \\ \dfrac{U_{23}}{R_{23}} &= \dfrac{U_{23}}{R_2} + \dfrac{U_{23}}{R_3} \\ R_{23} &= \dfrac{R_2 R_3}{R_2 + R_3} \;\text{(correct wiring)} \end{aligned}$$
 **Conversions:** $I = 30.2\,\text{mA} = 30.2 \cdot 0.001\,\text{A} = 0.0302\,\text{A}$.
 **Substitution:** $R_{23} = \dfrac{5.98\,\text{V}}{0.0302\,\text{A}} = 198\,\Omega$. In a correctly wired circuit $R_{23} = \dfrac{200\,\Omega \cdot 200\,\Omega}{400\,\Omega} = 100\,\Omega$. The resistance of resistor $R_1$ from the meter readings is $\dfrac{3.02\,\text{V}}{0.0302\,\text{A}} = 100\,\Omega$, so $R_1$ is fine.
 **Answer:** a) $198\,\Omega$, three significant figures like the readings. In a correctly wired circuit it should be $100\,\Omega$. b) The measured value is approximately the resistance of a single $200\,\Omega$ resistor, so one of the parallel resistors is not part of the circuit: its wire is off or the branch is broken, and the current passes through only one resistor.
@@ -184,7 +184,7 @@ The result is compared with the value that the formula of the parallel connectio
 
 The mean of the series of measurements reduces the scatter of a single measurement. When the total resistance and one branch are known, the unknown branch is obtained from the formula of the parallel connection.
 **Reading the graph:** No graph; the values are read from the table. If the points were plotted in an $(I;\ U)$ coordinate system, they would lie on a straight line through the origin whose slope is the total resistance.
-**Formula:** $$\begin{aligned} U &= RI \Rightarrow R = \dfrac{U}{I} \\ &\dfrac{U}{R} = \dfrac{U}{R_1} + \dfrac{U}{R_x} \\ \dfrac{1}{R} &= \dfrac{1}{R_1} + \dfrac{1}{R_x} \\ \dfrac{1}{R_x} &= \dfrac{1}{R} - \dfrac{1}{R_1} \end{aligned}$$
+**Formula:** $$\begin{aligned} U &= RI \Rightarrow R = \dfrac{U}{I} \\ \dfrac{U}{R} &= \dfrac{U}{R_1} + \dfrac{U}{R_x} \\ \dfrac{1}{R} &= \dfrac{1}{R_1} + \dfrac{1}{R_x} \\ \dfrac{1}{R_x} &= \dfrac{1}{R} - \dfrac{1}{R_1} \end{aligned}$$
 **Conversions:** $83\,\text{mA} = 83 \cdot 0.001\,\text{A} = 0.083\,\text{A}$, and similarly the other currents.
 **Substitution:** a) The ratios $U : I$ are $24.1\,\Omega$, $24.1\,\Omega$, $24.3\,\Omega$, $24.0\,\Omega$ and $24.2\,\Omega$. Their sum is $120.7\,\Omega$, so the mean is $R_\text{avg} = \dfrac{120.7\,\Omega}{5} = 24.13\,\Omega$. b) $\dfrac{1}{R_x} = \dfrac{1}{24.13\,\Omega} - \dfrac{1}{60\,\Omega} = 0.02477\,\dfrac{1}{\Omega}$, so $R_x = 40.4\,\Omega$.
 **Answer:** $40\,\Omega$, two significant figures like the voltages and currents; in the calculation one more digit is kept, $40.4\,\Omega$. The ratios vary only between $24.0\,\Omega$ and $24.3\,\Omega$, so the total resistance $24.1\,\Omega$ is reliable.
@@ -199,7 +199,7 @@ The measured $180\,\Omega$ is compared with the value for the correct wiring and
 
 In the repaired circuit the voltage of the parallel part is obtained from Ohm's law and divided by the resistance of resistor $R_3$.
 **Reading the graph:** No graph; the values are read from the table.
-**Formula:** $$\begin{aligned} &\dfrac{U_{23}}{R_{23}} = \dfrac{U_{23}}{R_2} + \dfrac{U_{23}}{R_3} \\ R_{23} &= \dfrac{R_2 R_3}{R_2 + R_3} \\ &U = R_1 I + R_{23} I \\ R &= R_1 + R_{23} \\ I &= \dfrac{U}{R} \\ U_{23} &= R_{23} I \\ I_3 &= \dfrac{U_{23}}{R_3} = \dfrac{R_{23} U}{R_3 R} \end{aligned}$$
+**Formula:** $$\begin{aligned} \dfrac{U_{23}}{R_{23}} &= \dfrac{U_{23}}{R_2} + \dfrac{U_{23}}{R_3} \\ R_{23} &= \dfrac{R_2 R_3}{R_2 + R_3} \\ U &= R_1 I + R_{23} I \\ R &= R_1 + R_{23} \\ I &= \dfrac{U}{R} \\ U_{23} &= R_{23} I \\ I_3 &= \dfrac{U_{23}}{R_3} = \dfrac{R_{23} U}{R_3 R} \end{aligned}$$
 **Conversions:** Not needed during the calculation. At the end $1\,\text{A} = 1000\,\text{mA}$.
 **Substitution:** a) $R_{23} = \dfrac{110\,\Omega \cdot 110\,\Omega}{220\,\Omega} = 55\,\Omega$ and $R = 70\,\Omega + 55\,\Omega = 125\,\Omega$.
 
@@ -216,7 +216,7 @@ c) In the repaired circuit $I = \dfrac{9.0\,\text{V}}{125\,\Omega} = 0.072\,\tex
 
 Only small resistors suit a series connection and only large ones a parallel connection. The total resistances of the candidates are calculated and the deviations $\dfrac{|R - R_\text{target}|}{R_\text{target}}$ are compared.
 **Reading the graph:** No graph; the values are read from the task.
-**Formula:** $$\begin{aligned} &R_\text{series} = R_a + R_b \\ &\dfrac{1}{R_\text{parallel}} = \dfrac{1}{R_a} + \dfrac{1}{R_b} \\ R_\text{parallel} &= \dfrac{R_a R_b}{R_a + R_b} \\ p &= \dfrac{|R - R_\text{target}|}{R_\text{target}} \cdot 100\,\% \end{aligned}$$
+**Formula:** $$\begin{aligned} R_\text{series} &= R_a + R_b \\ \dfrac{1}{R_\text{parallel}} &= \dfrac{1}{R_a} + \dfrac{1}{R_b} \\ R_\text{parallel} &= \dfrac{R_a R_b}{R_a + R_b} \\ p &= \dfrac{|R - R_\text{target}|}{R_\text{target}} \cdot 100\,\% \end{aligned}$$
 **Conversions:** $1.2\,\text{k}\Omega = 1200\,\Omega$, $1.5\,\text{k}\Omega = 1500\,\Omega$, $2.7\,\text{k}\Omega = 2700\,\Omega$ and $5.6\,\text{k}\Omega = 5600\,\Omega$.
 **Substitution:** Series connection: the only resistors smaller than the target $470\,\Omega$ are $100\,\Omega$ and $390\,\Omega$, and their sum is $490\,\Omega$ (deviation $4.3\,\%$). Any other series connection is at least $100\,\Omega + 560\,\Omega = 660\,\Omega$ and worse.
 
@@ -264,7 +264,7 @@ The resistance of circuit B is smaller than that of a single $150\,\Omega$ resis
 **Find:** the total current $I$ leaving the battery in milliamperes
 **Principle:** The resistors are between the same two branching points, so the battery voltage $U$ is across both. The current leaving the battery is the sum of the branch currents. It can also be found by replacing the parallel resistors with one total resistance $R$ and using Ohm's law.
 **Reading the figure:** From the figure we read the values $9.0\,\text{V}$, $R_1 = 30\,\Omega$ and $R_2 = 45\,\Omega$. Each resistor is in its own branch, and the branches start and end at the same points, so the connection is a parallel connection.
-**Formula:** $$\begin{aligned} &I = I_1 + I_2 \\ I &= \dfrac{U}{R_1} + \dfrac{U}{R_2} = U \cdot \dfrac{R_1 + R_2}{R_1 R_2} \\ U &= RI \Rightarrow R = \dfrac{R_1 R_2}{R_1 + R_2} \\ I &= \dfrac{U}{R} \end{aligned}$$
+**Formula:** $$\begin{aligned} I &= I_1 + I_2 \\ I &= \dfrac{U}{R_1} + \dfrac{U}{R_2} = U \cdot \dfrac{R_1 + R_2}{R_1 R_2} \\ U &= RI \Rightarrow R = \dfrac{R_1 R_2}{R_1 + R_2} \\ I &= \dfrac{U}{R} \end{aligned}$$
 **Conversions:** Not needed during the calculation. At the end $1\,\text{A} = 1000\,\text{mA}$.
 **Substitution:** $R = \dfrac{30\,\Omega \cdot 45\,\Omega}{30\,\Omega + 45\,\Omega} = \dfrac{1350\,\Omega^2}{75\,\Omega} = 18\,\Omega$ and $I = \dfrac{9.0\,\text{V}}{18\,\Omega} = 0.50\,\text{A} = 500\,\text{mA}$
 **Answer:** $500\,\text{mA}$, two significant figures like the voltage $9.0\,\text{V}$.

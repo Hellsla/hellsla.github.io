@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 4fe3e018a9850402
-SCOPE: delta md-paragraphs,numbers,typography from 0b42b5134a5c6175 base 5b3ca4f
+CONTENT-HASH: 260b819a49c95404
+SCOPE: delta wording from 4fe3e018a9850402 base 5965625
 
 ## Blocking
 - none
@@ -9,9 +9,7 @@ SCOPE: delta md-paragraphs,numbers,typography from 0b42b5134a5c6175 base 5b3ca4f
 - none
 
 ## Checked
-- Kaava steps now start from basic principle equations (P = UI, U = RI, E = Pt, Kirchhoff loop law) and chain to the working formula; each added step is correct and in the order a student could reproduce.
-- Derivations are shown as aligned display lines, one equation per line: readable at 360 px.
-- Step chains match the Sijoitus step (symbols used are the ones substituted); no symbol appears without being defined in Annettu or Periaate.
-- Split paragraphs in answers/model answers change layout only, content unchanged.
-- Basic-level tasks keep the one-line Kaava where the formula is itself the principle (P = UI, E = Pt).
-- No change to task texts, figures or levels; earlier PASS findings stand.
+- L3-04 (hourly prices, moving the heater load) Kaava block: it now runs E = Pt, then K_kallis = a_kallis E and K_halpa = a_halpa E, then S = K_kallis − K_halpa, then the factored form S = E(a_kallis − a_halpa). The saving is defined as a difference of two costs before the shortcut appears, which is the missing step for students who would otherwise take the factored form on trust.
+- The change touches no numbers, answers, units, levels or figures. The Periaate (energy stays the same, the price changes) matches the new lines.
+- Symbols are consistent with the rest of the solution (K, a, S, E_varaaja) and the substitution line that follows.
+- The same fix is in this language version as in the Finnish one.

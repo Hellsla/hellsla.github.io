@@ -86,7 +86,7 @@ The current $0.35\,\text{A}$ does not fit on the range $200\,\text{mA}$, so $10\
 **Principle:** A voltmeter lets through only a very small current, so connected in series it decreases the current of the whole circuit to almost zero.
 
 Then hardly any voltage is left across the lamp, because the voltage of the lamp is its resistance times the almost zero current, and the whole voltage of the battery is left between the terminals of the meter.
-**Formula:** $$\begin{aligned} &U_\text{battery} = U_\text{m} + U_\text{lamp} \\ U_\text{lamp} &= R_\text{lamp} I \approx 0 \quad (I \approx 0) \\ U_\text{m} &= U_\text{battery} - U_\text{lamp} \\ U_\text{m} &\approx U_\text{battery} \end{aligned}$$
+**Formula:** $$\begin{aligned} U_\text{battery} &= U_\text{m} + U_\text{lamp} \\ U_\text{lamp} &= R_\text{lamp} I \approx 0 \quad (I \approx 0) \\ U_\text{m} &= U_\text{battery} - U_\text{lamp} \\ U_\text{m} &\approx U_\text{battery} \end{aligned}$$
 **Conversions:** Not needed: the voltage is in volts.
 **Substitution:** $U_\text{m} \approx 9.0\,\text{V}$
 **Answer:** about $9.0\,\text{V}$, two significant figures like the voltage of the battery.

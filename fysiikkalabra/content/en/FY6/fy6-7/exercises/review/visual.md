@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: bb4c59d60a1ec530
-SCOPE: delta numbers from f81dc254b142d798 base 4d1dce4
+CONTENT-HASH: 7fda86c22f2d15e3
+SCOPE: delta wording from bb4c59d60a1ec530 base bad608b
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- delta (solutions.md, Formula steps rewritten as aligned principle-first blocks): opened fy6-7-open-exercises-1280 captures -3 at 1280 px.
-- Formula blocks render in KaTeX, equals signs aligned, one equation per row, fractions and subscripts clean, no clipping or overflow; spacing to Conversions and Substitution intact.
-- Units, numbers and notation consistent with the Substitution rows.
+- Delta: L3-04 (energy-saving task) Kaava block, now 7 rows with K_kallis/K_halpa rows added; opened review/shots/fy6-7-open-exercises-L3-1280-5.png (en) and, for the fi capture, -6.
+- Seven one-equation rows, equals signs aligned, fraction and subscripts intact, order principle then symbolic then combined; Kaava box fits, nothing clipped; Sijoitus rows below unchanged and consistent.
+- No 390 px solution capture; the layout checks at 360-1280 px are green.
 
 ## Scores
 illustrations n/a · typography 5 · Finnish 4 · accessibility 4
