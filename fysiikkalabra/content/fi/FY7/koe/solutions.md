@@ -228,10 +228,10 @@ Sähköteho $eI = 0{,}30\,\text{V} \cdot 0{,}50\,\text{A} = 0{,}15\,\text{W}$ mu
 ### b)
 **Annettu:** $e_0 = 17{,}5\,\text{V}$, $N = 90$, $A = 0{,}0150\,\text{m}^2$, $f = 40\,\text{Hz}$
 **Kysytty:** vuontiheys $B$
-**Periaate:** Pyörivässä käämissä magneettivuo $\Phi = BA\cos(2\pi f t)$ muuttuu sinimuotoisesti, ja induktiolain mukaan jännitteen huippuarvo on vuon muutosnopeuden huippu.
+**Periaate:** Pyörivässä käämissä magneettivuo $\Phi = BA\cos(2\pi f t)$ muuttuu sinimuotoisesti, ja induktiolain mukaan jännitteen huippuarvo on $N$ kertaa vuon muutosnopeuden huippu.
 **Kaava:** $$\begin{aligned} \Phi &= BA\cos(2\pi f t) \\ e_0 &= NBA \cdot 2\pi f \\ B &= \dfrac{e_0}{NA \cdot 2\pi f} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
-**Sijoitus:** $B = \dfrac{17{,}5\,\text{V}}{90 \cdot 0{,}0150\,\text{m}^2 \cdot 2\pi \cdot 40\,\text{Hz}} = \dfrac{17{,}5\,\text{V}}{339{,}3\,\text{m}^2/\text{s}}$ $= 0{,}0516\,\text{T}$
+**Sijoitus:** $B = \dfrac{17{,}5\,\text{V}}{90 \cdot 0{,}0150\,\text{m}^2 \cdot 2\pi \cdot 40\,\text{Hz}} = \dfrac{17{,}5\,\text{V}}{339{,}3\,\text{m}^2/\text{s}} = 0{,}0516\,\text{T}$
 **Vastaus:** Vuontiheys on noin $0{,}052\,\text{T}$.
 **Järkevyys:** Arvo on kymmenien millitesloiden luokkaa, kuten pienen kestomagneetin tai sähkömagneetin kenttä.
 
@@ -329,9 +329,9 @@ Korkeammilla kertaluvuilla hajaantuminen on leveämpää ja spektrit menevät p�
 **Annettu:** $P_\text{h,A} = 1{,}728\,\text{MW}$, $P_\text{h,B} = 57{,}1\,\text{kW}$, $4000\,\text{h}$, $50\,\text{€/MWh}$, lisäkustannus $3{,}0\,\text{M€}$
 **Kysytty:** vuosisäästö ja takaisinmaksuaika
 **Periaate:** Häviöenergia on häviöteho kerrottuna ajalla, ja sen arvo saadaan hinnalla. Takaisinmaksuaika on lisäkustannus jaettuna vuosisäästöllä.
-**Kaava:** Merkitään hintaa $p$, lisäkustannusta $K$ ja säästöä $S$. $$\begin{aligned} E &= P_\text{h} t \\ S &= (E_\text{A} - E_\text{B})\,p = (P_\text{h,A} - P_\text{h,B})\,t\,p \\ t_\text{takaisin} &= \dfrac{K}{S} = \dfrac{K}{(P_\text{h,A} - P_\text{h,B})\,t\,p} \end{aligned}$$
-**Muunnokset:** $$\begin{aligned} &1{,}728\,\text{MW} \cdot 4000\,\text{h} \\ &= 6912\,\text{MWh} \end{aligned}$$ ja $$\begin{aligned} &0{,}0571\,\text{MW} \cdot 4000\,\text{h} \\ &= 228{,}5\,\text{MWh} \end{aligned}$$
-**Sijoitus:** säästö $$\begin{aligned} &= (6912\,\text{MWh} - 228{,}5\,\text{MWh}) \\ &\cdot 50\,\text{€/MWh} \\ &= 334\,200\,\text{€} \end{aligned}$$ ja takaisinmaksuaika $= \dfrac{3{,}0 \cdot 10^{6}\,\text{€}}{334\,200\,\text{€/a}} = 8{,}98\,\text{a}$
+**Kaava:** Merkitään hintaa $p$, lisäkustannusta $K$ ja säästöä $S$. $$\begin{aligned} E &= P_\text{h} t_\text{käyttö} \\ S &= (E_\text{A} - E_\text{B})\,p \\ &= (P_\text{h,A} - P_\text{h,B})\,t_\text{käyttö}\,p \\ t_\text{takaisin} &= \dfrac{K}{S} \\ &= \dfrac{K}{(P_\text{h,A} - P_\text{h,B})\,t_\text{käyttö}\,p} \end{aligned}$$
+**Muunnokset:** $E_\text{A} = 1{,}728\,\text{MW} \cdot 4000\,\text{h} = 6912\,\text{MWh}$ ja $E_\text{B} = 0{,}0571\,\text{MW} \cdot 4000\,\text{h} = 228{,}5\,\text{MWh}$
+**Sijoitus:** $$\begin{aligned} S &= (6912\,\text{MWh} - 228{,}5\,\text{MWh}) \\ &\quad \cdot 50\,\text{€/MWh} \\ &= 334\,200\,\text{€} \end{aligned}$$ ja $t_\text{takaisin} = \dfrac{3{,}0 \cdot 10^{6}\,\text{€}}{334\,200\,\text{€/a}} = 8{,}98\,\text{a}$
 **Vastaus:** Vaihtoehto B säästää noin $3{,}3 \cdot 10^{5}\,\text{€}$ vuodessa ja muuntajat maksavat itsensä takaisin noin $9{,}0$ vuodessa.
 **Järkevyys:** Häviöenergian arvo vaihtoehdossa A on noin $346\,000\,\text{€}$ vuodessa, ja B:ssä $11\,400\,\text{€}$ vuodessa; säästö on lähes koko A:n häviön arvo, kuten pitääkin. Huomautus: jos kahden muuntajan omat häviöt ($0{,}5\,\%$ kummallakin eli yhteensä $120\,\text{kW}$, vuodessa $24\,000\,\text{€}$) otetaan huomioon, säästö on $310\,000\,\text{€}$ vuodessa ja takaisinmaksuaika noin $9{,}7\,\text{a}$.
 
