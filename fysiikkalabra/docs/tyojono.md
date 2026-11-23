@@ -83,6 +83,7 @@ Tehtävien, Sovellan ja kokeiden mallivastausten Kaava-vaihe alkaa perusyhtälö
 sitten johdettu kaava, symbolinen sievennys loppuun, vasta sitten sijoitus. Kurssi kerrallaan `/exercises`- ja `/practice`-putkella; yhdistetään saman kurssin
 kesken olevaan tehtäväkatselmointiin (FY5, FY6, FY7), ei rinnakkain.
 Jatko FY5 (8g FY5 -katselmoinnin löydös, PR #814): fy5-4 L3-01 ja L3-03 pyöristävät rajan väärälle puolelle ("enintään" 27,6 km/h → 28 km/h pitäisi olla 27 km/h; "vähintään" r ≥ 201 m → 2,0·10² m pitäisi olla 210 m). Korjaus muuttaa vastauksia ja toleransseja (`exercises.json`, `answers.py`, fi, en, fi-easy), siksi oma `/exercises fy5-4` -PR täysine katselmointeineen.
+Varattu: claude/fy5-4-pyoristys-harventuma (FY5 fy5-4 pyöristys + "harvennus" → "harventuma", työjono 24)
 
 ## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
 Tehty: FY4 (#647), FY5 (#661 ja 0f-PR #671: fy5-7, fy5-11, fy5-17; `docs/audits/2026-11-17-8j-FY5.md`), FY1 (0f-PR #679: fy1-2, -5, -6, -7; `docs/audits/2026-11-17-8j-FY1.md`), FY6 (0f-PR #675: fy6-2…14; `docs/audits/2026-11-17-8j-FY6.md`), FY3 (0f-PR claude/fy3-8j-0f: fy3-1, -3, -4, -5, -6, -7, -9, -10, -12; `docs/audits/2026-11-17-8j-FY3.md`).
