@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 831c7eb12c2a93c2
-SCOPE: delta: CI 360 px fix; s8 d) rubric detail W_air line became a two-row aligned display; fi checked.
+CONTENT-HASH: 12b570ae6be478bd
 
 ## Blocking
-- (none)
+Ei ole.
 
 ## Polish
-- Earlier Polish stays recorded (s7 c explain-question, s8 14 points, s8 d precision, comma after display blocks, s7 d hint); not re-raised.
+- Ensimmäinen laatikko (Ydinajatus) kysyy kaksiosaisesti ("milloin ... ja miksi ... silti"). Se on silti vastattavissa juuri luetusta kappaleesta. Kaksi osaa on puhelimella hieman pitkä, ja kysymyksen voisi jakaa tai tiivistää: "Milloin liikemäärä säilyy?"
+- Toisen laatikon "miksi" (kitkavoima on liikkeen vastainen) ei ole sanatarkasti edeltävässä kappaleessa. Kappale kertoo vain, että työ on negatiivinen ja että $F_\parallel$ on liikkeen suuntainen komponentti. Päättely on kuitenkin yhden askeleen mittainen ja kuuluu pysähdyslaatikon tehtävään.
+- Kolmannen laatikon kysymys ("Mikä säilyy ja mikä ei?") on avoin. Mallivastaus mainitsee ehdon ("impulssi merkityksettömän pieni"), ja se on hyvä, koska se torjuu Yleisiä virheitä -kohdan "säilyminen ilman ehtoa".
 
 ## Checked
-- W_air = 27.4 J - 33.9 J ≈ -6.5 J: same numbers, order, sign and units in the two-row display; arithmetic correct (27.4 - 33.9 = -6.5).
-- Connecting word ("and"/"ja"/fi-easy "ja") and the preceding E_p display unchanged; no new text, hints or content added.
-- Hash at start and end identical.
+- Pysähdy ja mieti -laatikot (3 kpl): jokainen on heti sen kappaleen jälkeen, jota se testaa (Ydinajatus, energiaperiaate, kimmoton törmäys). Jokaiseen voi vastata juuri luetusta tekstistä ilman uutta tietoa. Vastaus on piilossa ennen yritystä (kysymys, `---`, malli). Laatikot ovat lyhyitä, ja yhden lauseen vastaus sopii puhelimelle. Ne kohdistuvat luettelon yleisimpiin virhekäsityksiin (liikemäärän ehto, kitkan etumerkki, liike-energia vs. liikemäärä törmäyksessä) eivätkä toista kaavoja pelkkänä ulkoa muistamisena. Kolme laatikkoa 75 minuutin yksikössä ei kasvata työmäärää.
+- Muu diff: heron kuva vaihdettu kuvatiedostoon, tuulikuvan sijoitus, inquiry-mallivastauksen kappalejako ja teacher.md:n tehtävämäärä "seitsemän" (kahdeksan tehtävää, 124 pistettä). Kaikki ovat johdonmukaisia, eikä niissä ole opetuksellista ongelmaa.
+- Sovella-tehtävät (8 kpl, s1-s8): tehtäväjoukko ja ratkaisut ovat ennallaan edellisestä hyväksytystä versiosta. Otsikot eivät nimeä mallia (esim. Vaijeriliuku järven yli, Curlingkiven lyönti, Jarrutuskoe märällä asfaltilla). practice.py check on OK. Ei uusia havaintoja.
+- Kieli: suomi, termit oikein (liikemäärä, impulssi, sisäenergia).

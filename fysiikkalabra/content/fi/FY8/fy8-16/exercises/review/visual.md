@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 51ba9bcbd9487765
+CONTENT-HASH: 1530a872a68fd59f
+SCOPE: delta numbers,reflow from 51ba9bcbd9487765 base 4b05399
 
 ## Blocking
-- none
+- none (the previous Major, tiny `\frac` fractions in the Kaava rows, is fixed: every Kaava fraction is `\dfrac` and renders at full size, in the aligned blocks and in the inline rows)
 
 ## Polish
-- [Minor] solutions.md L3-06 Vastaus c) — "$285\,\text{Mpc}$:iin" reads awkwardly (open from earlier rounds) — "pisteet ulottuvat vain etäisyydelle $285\,\text{Mpc}$".
-- [Minor] solutions.md L3-06 Vastaus b) — "$4{,}2 \cdot 10^{2}\,\text{Mpc}$ eli noin $416\,\text{Mpc}$" — say "pyöristettynä".
+- [Minor] solutions.md 16-14 and L2 tasks with "z = (λ−λ_0)/λ_0 ja …" — the first formula stands in its own small box above the aligned block; one block would read slightly more evenly.
+- [Minor] exercises.json 16-13 (student's solution) — the closing quotation mark and full stop `.”` sit alone on a line after the display block (open-exercises-L2-1280-5); end the quote before the block or keep the closing words in the same paragraph.
+- [Minor] solutions.md — in "$v = H_0\,d$ ja" the word "ja" sits tight against the formula; a thin space or text before the maths would help.
 
 ## Checked
-- Delta round 1: solutions.md only re-cut into paragraphs (md-paragraphs).
-- fy8-16-open-exercises-L3-1280-9 (L3-06 solution: aligned chains, thin-space units, section order intact) and fy8-16-open-exercises-1280-3 (16-3 solution, Järkevyys block) in content/fi/FY8/fy8-16/review/shots/; no clipping.
+- Delta (every Kaava line rewritten as a short aligned chain, \dfrac). Packet captures current (stamp 1530a872a68fd59f): opened open-exercises-L2-1280-4 (16-13: v_A/d_A, v_B/d_B block with full-size fractions, Sijoitus, Vastaus) and open-exercises-L2-1280-5 (16-14: z fraction and the three-row v = cz, v = H_0 d, d = v/H_0 block).
+- Own 390 px capture with every solution open (fy8-16 preview): Kaava blocks for E = hc/λ with λ_nyt/1100, the H_0 = v_A/d_A block and `v = H_0 d, joten H_0 = v/d`: equals signs aligned, fractions full size, nothing clipped, scrollWidth 390.
+- Layout of the surrounding solution cards survived the edit (no gaps, rows inside the cards).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 5

@@ -55,10 +55,10 @@ $6\,\text{h}$ on kolme puoliintumisaikaa, joten määrä puolittuu kolme kertaa:
 
 Lähde: kirjallisuusarvot NNDC NuDat 3 -tietokannasta (Brookhaven National Laboratory), pyöristetty kolmeen merkitsevään numeroon. Jodi-131:lle käytetään vakiintunutta arvoa $8{,}02\,\text{d}$. Eri arvioinneissa sen puoliintumisaika on noin $8{,}021$–$8{,}025\,\text{d}$, joten pyöristys voi antaa myös $8{,}03\,\text{d}$. Tämän luvun laskuissa käytetään arvoa $8{,}02\,\text{d}$; tarkempi arvo muuttaisi tuloksia vain kolmannessa merkitsevässä numerossa.
 
-<figure class="unit-photo"><img src="pics/fy8/geiger-counter.webp" alt="Vanha beigenvärinen säteilymittari valkoisella pöydällä: laatikossa on viisarinäyttö ja säätönuppi, ja kierrejohdolla siihen on liitetty pyöreä anturi kädensijassa."><figcaption>Geigerin ja Müllerin mittari laskee anturiin osuvia ionisoivia hiukkasia. Kun mittari pidetään samassa kohdassa, pulssitaajuus on verrannollinen lähteen aktiivisuuteen.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy8/geiger-counter.webp" alt="Vanha beigenvärinen säteilymittari valkoisella pöydällä: laatikossa on viisarinäyttö ja säätönuppi, ja kierrejohdolla siihen on liitetty pyöreä anturi kädensijassa."><figcaption>Geigerin ja Müllerin mittari laskee anturiin osuvia ionisoivia hiukkasia. Kun mittari pidetään samassa kohdassa, pulssitaajuus on taustan vähentämisen jälkeen verrannollinen lähteen aktiivisuuteen.</figcaption></figure>
 
 ### Aktiivisuus
-Näytteen **aktiivisuus** $A$ on siinä tapahtuvien hajoamisten määrä aikayksikössä. Sen yksikkö on becquerel: $1\,\text{Bq}$ on yksi hajoaminen sekunnissa eli $1\,\tfrac{1}{\text{s}}$. Koska jokainen ydin hajoaa yhtä todennäköisesti, aktiivisuus on suoraan verrannollinen hajoamattomien ytimien määrään: kun ytimistä on jäljellä puolet, myös aktiivisuus on puolittunut. Säteilymittari ei mittaa aktiivisuutta suoraan, vaan se laskee pulsseja niistä säteilykvanteista, jotka osuvat sen anturiin. Pulssimäärä on verrannollinen aktiivisuuteen, mutta siihen lisätään aina myös ympäristön **taustasäteily**.
+Näytteen **aktiivisuus** $A$ on siinä tapahtuvien hajoamisten määrä aikayksikössä. Sen yksikkö on becquerel: $1\,\text{Bq}$ on yksi hajoaminen sekunnissa eli $1\,\tfrac{1}{\text{s}}$. Koska jokainen ydin hajoaa yhtä todennäköisesti, aktiivisuus on suoraan verrannollinen hajoamattomien ytimien määrään: kun ytimistä on jäljellä puolet, myös aktiivisuus on puolittunut. Säteilymittari ei mittaa aktiivisuutta suoraan, vaan se laskee pulsseja anturiin osuvista ionisoivista hiukkasista ja fotoneista. Pulssimäärä on verrannollinen aktiivisuuteen, mutta siihen lisätään aina myös ympäristön **taustasäteily**.
 
 ## Kaava: Hajoamislaki
 
@@ -256,7 +256,7 @@ A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}
 &= 550\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{20{,}0\,\text{d} / 8{,}02\,\text{d}} \\
 &= 550\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{2{,}4938} \\
 &= 550\,\text{MBq} \cdot 0{,}17754 \\
-&\approx 97{,}65\,\text{MBq}
+&\approx 97{,}6\,\text{MBq}
 \end{aligned}
 ```
 

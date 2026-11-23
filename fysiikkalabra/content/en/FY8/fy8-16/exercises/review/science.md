@@ -1,20 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 7e098a62279429a4
-Mode: delta
+CONTENT-HASH: 07f5a40aa7a1ccdb
+SCOPE: delta md-paragraphs,numbers,reflow,typography,wording from 7e098a62279429a4 base 64d4935
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- content/en/FY8/fy8-16/exercises/solutions.md (L3-06 Answer) — "$4.2 \cdot 10^{2}\,\text{Mpc}$, about $416\,\text{Mpc}$" gives two precisions side by side; the two-figure reason (the limit $0.10\,c$) is right, so "about" could be dropped or the 416 kept only as the unrounded intermediate — optional.
+- exercises/solutions.md:535 (L3-06, carried over) — "$4.2 \cdot 10^{2}\,\text{Mpc}$, about $416\,\text{Mpc}$" gives two precisions side by side. The two-figure reason is right. Fix: keep 416 only as the unrounded intermediate result.
+- exercises/solutions.md:401–415 — the substitution rows of this solution still use `\frac` while the Kaava rows now use `\dfrac`. This is style only; change it if the convention is meant to cover every aligned row.
 
 ## Checked
-- Hash at start and end identical (7e098a62279429a4, `--exercises --lang en`).
-- Figure `fy8-16/hubble-t`: lesson-answers `t2-H0` = 18000/250 = 72 km/s/Mpc; the line is drawn from the origin to (291.7 Mpc, 21 000 km/s), so it passes through the grid point (250, 18 000) as the tasks and the alt text say. A least-squares fit through the origin of the nine points T2 gives 72.4, so the drawn line is a fair fit. The alt text gives the grid point, so a reader who cannot see the figure has the same data. The figure does not give away either answer.
-- L2-09 recomputed independently: z = 15.3/434.0 = 0.03525, v = 10 569 km/s, d = v/H0 = 146.8 Mpc. answers.py gives 146.791, exercises.json 146.8 Mpc, tolerance 2 %; the rounded 147 is 0.1 % off. The bracket check (120 Mpc / 8300 km/s and 160 Mpc / 11 900 km/s are T2 points) is correct.
-- L2-09 conditions: z < 0.1, so v = cz is valid and the solution says so. Three significant figures fit Δλ = 15.3 nm.
-- L3-06 recomputed independently: 0.10c = 29 980 km/s, d = 416.4 Mpc. answers.py gives 416.389; 420 is 0.9 % off and inside the tolerance.
-- L3-06 reasoning: 416/285 ≈ 1.46 ("about 1.5 times"). The top of the figure, 21 000 km/s, is z = 0.070 < 0.10, so v = cz holds for every point. The extrapolation caveat follows the guardrail rule on extrapolation (it says how far and that the points do not show it).
-- L3-06 c): "v = cz is an approximation for small z; z = 3 would give 3c" matches L3-05's wording and is correct for this level (C).
-- Both solutions solve symbolically before substituting; units cancel correctly (km/s ÷ km/s/Mpc gives Mpc). The notation (z, λ0, H0, Hubble–Lemaître law) is the same as in the other tasks of the set.
-- Scope: redshift and Hubble's law belong to "maailmankaikkeuden kehitys"; the data is invented and presented as model data, not as measured.
+- Hash 07f5a40aa7a1ccdb (`--exercises --lang en`) at the start (same as the packet's) and at the end.
+- Mechanical check of the diff: when `\dfrac` is replaced back by `\frac`, every removed line equals an added line. So the change is purely `\frac`→`\dfrac` in the Kaava rows; no symbol, number, sign or unit changed.
+- The physics of the affected Formula steps was re-read and is unchanged and correct:
+  - $E = hc/\lambda$.
+  - $d = cz/H_0 = c(\lambda-\lambda_0)/(H_0\lambda_0)$, with the small-$z$ condition stated.
+  - $t = 1/H_0$, with constant expansion speed stated.
+  - $E = 1100\,hc/\lambda_\text{now}$.
+  - $d_\text{B} = d_\text{A} v_\text{B}/v_\text{A}$.
+  - $Y = m_\text{He}/m_\text{tot}$.
+- exercises.json and answers.py are not in the diff, so the answers and tolerances that were verified last round still hold.

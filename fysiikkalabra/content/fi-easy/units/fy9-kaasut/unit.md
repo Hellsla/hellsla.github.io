@@ -118,6 +118,12 @@ $$. Mittari näyttää enää noin $185\,\text{kPa}$, vaikka ilmaa ei ole vuotan
   <foreignObject x="410" y="256" width="74" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$p\ (\text{kPa})$</div></foreignObject>
 </svg>
 
+```pysahdy
+Miksi kaasun paineen laskussa ei käytetä suoraan mittarin lukemaa $230\,\text{kPa}$?
+---
+Mittari näyttää vain ylipaineen. Kaasun hiukkaset aiheuttavat koko paineen. Siksi ilmanpaine lisätään: $101\,\text{kPa} + 230\,\text{kPa} = 331\,\text{kPa}$.
+```
+
 ## Kaava: Paine, kaasut ja lämpövoimakone
 
 ### Paine ja nesteen paine
@@ -154,6 +160,12 @@ T = \theta + 273{,}15\,\text{K}
 
 Tässä $\theta$ on celsiuslämpötilan lukuarvo. Kokeessa absoluuttinen nollapiste saadaan näin: $(\theta, p)$- tai $(\theta, V)$-suoraa jatketaan nollaan asti. Tulos on mallin ennuste. Todellinen kaasu tiivistyy eli muuttuu nesteeksi jo ennen sitä.
 
+```pysahdy
+Miksi suoran jatkaminen nollapaineeseen on vain kaasumallin ennuste?
+---
+Todellinen kaasu tiivistyy nesteeksi jo ennen sitä. Siksi suoran jatkaminen nollaan on vain kaasumallin ennuste.
+```
+
 ### Kaasun työ ja lämpövoimakone
 
 Kun kaasu laajenee vakiopaineessa, se tekee työn. Kun kaasua puristetaan, siihen tehdään työ:
@@ -174,6 +186,12 @@ Lämpövoimakone toimii kierroksina. Yhden kierroksen aikana kone ottaa kuumasta
 
 ```kaavat
 lämpövoimakoneen hyötysuhde :: \eta = \frac{W}{Q_1}
+```
+
+```pysahdy
+Miksi lämpövoimakoneen hyötysuhde on aina alle $100\,\%$?
+---
+Koneen on luovutettava osa otetusta lämmöstä $Q_1$ kylmempään ympäristöön lämpönä $Q_2$. Siksi työ $W$ on pienempi kuin $Q_1$.
 ```
 
 Osa lämmöstä on aina annettava kylmempään paikkaan. Siksi lämpövoimakoneen hyötysuhde jää selvästi alle $100\,\%$:n. Verrataan lämpötilaeroa $T_1 - T_2$ kuuman lähteen lämpötilaan $T_1$. Mitä pienempi ero on, sitä pienemmän osan lämmöstä kone voi muuttaa työksi. Voimalaitoksessa hyötysuhde lasketaan tehoista: sähköteho jaetaan polttoaineteholla.

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: eeccff04aba30fbe
-SCOPE: delta added-exercise from 7126c6c1848e8249 base 5b3ca4f81c77
+CONTENT-HASH: 7c16a8e1ffdd91f3
+SCOPE: delta md-paragraphs,numbers,reflow,typography from eeccff04aba30fbe base 64d4935
 
 ## Blocking
 
@@ -8,8 +8,9 @@ SCOPE: delta added-exercise from 7126c6c1848e8249 base 5b3ca4f81c77
 
 ## Checked
 
-- L2-10 Järkevyys line (only change): 12 cm lies closer to 10 cm (20) than to 15 cm (10); linear interpolation 20 - 10·2/5 = 16.
-- Convex decreasing curve lies below the chord, so the value is slightly under 16; 80·0,5^2,4 = 15,16, answer 15 is consistent.
-- The earlier line said "above the midpoint 15", which was weak; the new reasoning is correct and teaches the check.
-- Nothing else changed; earlier PASS on L2-10 and L3-06 holds.
-- Method: delta, the changed line in context.
+- Delta (work queue 8g): only the Kaava step of the model solutions changed; numbers, answers and tolerances are untouched.
+- Each Kaava now starts from the basic law (or the stated starting equation) and moves to the derived formula in symbols; the step is followable by a student who could not solve the task.
+- Symbolic simplification ends before the Sijoitus step; the Sijoitus rows use the last symbolic form.
+- Spot-checked the derived chains on disk (aligned blocks, one equation per row, each row following from the previous): no algebra or sign error found.
+- The remaining solution parts (Annettu, Kysytty, Periaate, Muunnokset, Vastaus, Järkevyys) and exercise levels are unchanged and still pass.
+- Hash matches the packet at start and end.

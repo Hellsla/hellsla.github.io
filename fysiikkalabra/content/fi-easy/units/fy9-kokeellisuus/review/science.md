@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: fc1b77921967a9ae
-SCOPE: delta: round 2, the fixes of round 1 in fy9-kokeellisuus-s7 and -s8; the intro and older tasks s1-s6 untouched
-Round 2: delta against the version round 1 reviewed (fix round 1).
+CONTENT-HASH: bfe9479ef3570ebe
+SCOPE: full (as asked): the three new ```pysahdy boxes first, then the unit texts and the Sovella task set
+Round 3: the version passed in round 2 (fc1b77921967a9ae) plus three Pysähdy ja mieti boxes in unit.md and a paragraph break in one inquiry.json model answer.
 
 ## Blocking
 - (none)
 
 ## Polish
-- (none of substance). The s8 c Principle sentence "kutsutaan systemaattiseksi" from fi does not occur in this text.
+- (none)
 
 ## Checked
-- Round 1 Blocking 1 (s8 b heating as a cause of nonlinearity) is fixed in the S2 text. Criterion 3 now reads "tulos on ekstrapolointia ... Käämin ja virtalähteen on kestettävä tällainen virta. Tulos on vain arvio, ja se pitää tarkistaa mittaamalla". Järkevyys says "Mallin $B = \mu_0 n I$ mukaan riippuvuus pysyy suorana, mutta sitä ei ole mitattu tällä alueella", and "ekstrapolointi" is explained as "arvio mittausalueen ulkopuolelle", which helps an S2 reader.
-- Round 1 Blocking 2 is fixed: the "$12 : 6{,}2 \cdot 2{,}5\,\text{A}$" item is gone. The b mistake is now $I = kB$ or no reliability assessment.
-- Round 1 Polish is done. s8 d (model answer and criterion 3) names the drift: of the current under a voltage-set supply, or of the sensor with temperature. s8 a Vastaus says "kaksinumeroisia". In s7 a the scale error clause has also been added ("Väärä asteikko eli kalibrointi antaisi silti suoran origon kautta"), which is correct.
-- Rounding is the same as in fi and matches the data: s7 c $14\,\%$, s8 c $3\,\%$ and $0{,}6\,\%$ with the reason, b $4{,}9\,\text{A}$. The tolerances are the same as in fi. The decimal comma is used, units are language-neutral, and the chains are aligned rows.
-- The numbers were recomputed in the same script as fi: s7 0,2152 ± 0,005, c 0,24 / 0,21 / 14,3 %, d 4,5 % and 0,93 %; s8 2,467 mT/A, 1963 1/m, 4,86 A, 3,08 % and 0,645 %. All agree. Points are still 14 + 14, and the intro "Kahdeksan tehtävää" matches the 8 tasks.
-- Packet rebuilt (fixed text present), `practice.py check: OK`; the hash is the same at start and end.
+- Pysähdy box 1 (one variable at a time): its physics is the same as fi. If two variables change together, the cause of the change cannot be inferred. It sits after the same paragraph and agrees with that paragraph and with Yleisiä virheitä item 2.
+- Pysähdy box 2 (hand timing with a 0,01 s display): the answer is "Ei ole". Resolution alone does not give the uncertainty, and reaction time makes it tenths of a second. This is the same as fi and agrees with the Virhe, epävarmuus ja resoluutio paragraph, Yleisiä virheitä item 3 and s3 a (about 0,1 s, about 13 % of 0,8 s). It is not an A or B finding.
+- Pysähdy box 3 (slope compared with a single point): all points affect the slope, so one point's random error affects it less. This is the same as fi. It speaks of random error only, so it does not clash with the next paragraph, where a constant systematic error shifts the line but leaves the slope unchanged. It is not an A or B finding.
+- fi and fi-easy both have 3 pysahdy blocks, in the same places. The inquiry.json diff splits the model answer into two paragraphs with every word unchanged.
+- I recomputed all the numbers in one script of my own: s2 160 s; s3 t̄ 0,7867 s, g 9,695, gmax 10,67, gmin 8,923, Δg 0,872 m/s² (so 9,7 ± 0,9), 4,45 % and 12,5 %; s4 T² row, least-squares k 4,020 and b 0,103 s², read k 4,0125 giving g 9,839, d 4,98 cm, row by row 8,87 and 9,60, extreme lines 10,10 and 9,61; s5 2677 kg/m³, Δρ 78 kg/m³, 2,9 %; s6 v² 7,7…69,4, a 4,167, μ0 ≥ 0,4247, true a 3,779, 0,385; s7 ratios, mean 0,2152, Δμ 0,005, 14,3 %; s8 k 2,467 mT/A, n 1963 1/m, I 4,86 A, 3,08 % and 0,645 %. All of them match the solutions and answers.py.
+- The physics of s1–s8 is unchanged since rounds 1–2: the model conditions (small swing angle, losses, no change of phase, static friction as an upper limit, extrapolation), the direction of each systematic error, and rounding with its reasons. The Hyväksytään myös ranges contain the recomputed values.
+- The unit text (formulas for mean, half the range and ε; y = kx + b with its range of validity; the tare figure with b ≈ 52 g and k ≈ 0,91 g/cm³) is consistent and has no guardrail break.
+- The hash is bfe9479ef3570ebe at both start and end.

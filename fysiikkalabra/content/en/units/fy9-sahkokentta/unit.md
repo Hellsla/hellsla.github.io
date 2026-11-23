@@ -10,6 +10,12 @@
 
 The tasks of the lesson start from the same idea: **a charge creates an electric field around itself, and the field exerts a force on another charge**, $\overline{F} = q\overline{E}$. On a positive charge the force points in the direction of the field and on a negative charge against the field. When the field moves a charge, it does work, and the potential energy of the charge changes like the gravitational potential energy of a ball in the gravitational field. A capacitor stores energy in the field between its plates. Semiconductor components and electrical safety return to the same quantities: voltage, current and the field a dielectric can withstand.
 
+```pysahdy
+In which direction does the electric force act on an electron when the field points to the right?
+---
+The electron's charge is negative, so the force points against the field, that is, to the left.
+```
+
 <svg data-fig="kartta" viewBox="0 0 380 780" role="img" aria-label="Recognition chart: how do I tell which law to use? Draw the situation first and see which sign in the task fits. Two charged bodies: the Coulomb force is the Coulomb constant times the product of the charges divided by the square of the distance. A charge in an electric field: the field strength is the force divided by the charge. Uniform field between plates: the voltage is the field strength times the distance. A charge accelerated by a voltage: the work of the field, charge times voltage, equals the kinetic energy. Charge of a capacitor: the charge is the capacitance times the voltage. Dimensions of a plate capacitor: the capacitance is the permittivity of vacuum times the relative permittivity times the area divided by the plate separation. Energy of a capacitor: half of the capacitance times the square of the voltage. An LED needs a series resistor: apply Kirchhoff&#x27;s second law to the loop, the sum of the voltages is zero." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="736" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
@@ -74,6 +80,12 @@ The tasks of the lesson start from the same idea: **a charge creates an electric
 </svg>
 
 The spark of the opening is solved with these laws. When you walk on a woollen rug, charge builds up on your body, and because of induction a charge of opposite sign moves to the nearby surface of the metal plate of the handle. The spark jumps when the field in the air gap exceeds the dielectric strength of air, about $3\,\text{MV/m}$. A spark of about $3\,\text{mm}$ therefore tells of a voltage of about $9\,\text{kV}$.
+
+```pysahdy
+What voltage is across a spark of about $2\,\text{mm}$, when the dielectric strength of air is $3\,\text{MV/m}$?
+---
+The voltage is $U = Ed \approx 3\,\text{MV/m} \cdot 2\,\text{mm} = 6\,\text{kV}$.
+```
 
 The voltage is large, but the body is a small capacitor with a capacitance of about $100\,\text{pF}$, so the charge is only about $0.9\,\mu\text{C}$ and the energy about $4\,\text{mJ}$. The discharge lasts about a microsecond. A dangerous current, about $50\,\text{mA}$ for one second, would carry $0.05\,\text{C}$ through the body, over $50\,000$ times more charge.
 
@@ -153,6 +165,12 @@ energy of a capacitor :: E = \tfrac12 CU^2
 ```
 
 where $C$ is the capacitance ($\text{F}$), $A$ the area of a plate ($\text{m}^2$), $\varepsilon_0 = 8.854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ the relative permittivity of the dielectric, $E$ the energy stored in the capacitor ($\text{J}$), also $E = \tfrac12 QU$. The formula of the parallel-plate capacitor holds when $d$ is small compared with the size of the plates and the dielectric fills the gap. For a capacitor connected to a source the voltage stays the same; for a disconnected one, the charge.
+
+```pysahdy
+What happens to the capacitance of a parallel-plate capacitor when the distance between the plates is doubled and everything else stays the same?
+---
+By $C = \varepsilon_0\varepsilon_\text{r}A/d$ the capacitance is inversely proportional to the distance $d$, so it halves.
+```
 
 The dielectric strength $E_\text{max}$ ($\text{V/m}$) of a dielectric is the largest electric field strength it can withstand. If the field grows larger, the dielectric starts to conduct and breakdown occurs between the plates, so the voltage of the capacitor has a largest value $U_\text{max}$ ($\text{V}$).
 

@@ -56,7 +56,15 @@
 
 **Principle:** In annihilation all the energy of the particles turns into the energy of the photons, so energy is conserved. The momentum of particles at rest is zero, so the two photons must leave in opposite directions with equal momentum and therefore equal energy.
 
-**Formula:** $2\,m_e c^2 = 2\,E_\gamma$, so $E_\gamma = m_e c^2$
+**Formula:** Energy is conserved: $E_\text{initial} = E_\text{final}$, so
+$$
+\begin{aligned}
+&E_\text{initial} = 2\,m_e c^2 \\
+&E_\text{final} = 2\,E_\gamma \\
+&2\,m_e c^2 = 2\,E_\gamma \\
+&E_\gamma = m_e c^2
+\end{aligned}
+$$
 
 **Conversions:** Not needed, because the rest energy is given in kiloelectronvolts.
 
@@ -212,7 +220,14 @@ $$
 
 **Principle:** In pair production the masses of the electron and the positron are made from the energy of the photon, so the energy of the photon must be at least the sum of their rest energies. The energy of a photon is $\tfrac{hc}{\lambda}$, so the smallest energy corresponds to the greatest wavelength.
 
-**Formula:** $E = \dfrac{hc}{\lambda}$, so $\lambda = \dfrac{hc}{E}$
+**Formula:** $E = hf$ and $c = \lambda f$, so
+$$
+\begin{aligned}
+&f = \dfrac{c}{\lambda} \\
+&E = \dfrac{hc}{\lambda} \\
+&\lambda = \dfrac{hc}{E}
+\end{aligned}
+$$
 
 **Conversions:** $E = 2 \cdot 0.511 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.6372 \cdot 10^{-13}\,\text{J}$; finally $1\,\text{m} = 10^{12}\,\text{pm}$.
 

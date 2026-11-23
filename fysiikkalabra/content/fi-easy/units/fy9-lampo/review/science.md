@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 689e602ef05c8a50
-SCOPE: delta: fi-easy diff since 49ba8f9 (new tasks fy9-lampo-s7 heating line and s8 melting curve in sovella/tasks.json and solutions.md, intro "kuusi" -> "kahdeksan"); fidelity of s7/s8 to fi; s1-s6 not re-judged.
+CONTENT-HASH: 75fc60790851a73b
+SCOPE: full (fi-easy, since 689e602ef05c8a50): three new ```pysahdy boxes in unit.md judged first against fi; hero SVG to webp; inquiry explain model split into paragraphs; then unit texts and the Sovella task set.
 
 ## Blocking
 (none)
 
 ## Polish
-- s8 Yleisiä virheitä (a): "lämpötilan muutokseksi otetaan 0 °C tai 16 °C". 16 °C is the right size of the change (16 K). The error meant is probably taking -16 °C or 0 °C as ΔT. The same line is in fi.
+- s8 Yleisiä virheitä (a), solutions.md line 522: "lämpötilan muutokseksi otetaan 0 °C tai 16 °C". But 16 K is the right size of the change. The error meant is probably -16 °C or 0 °C used as ΔT. Carried from the last review; fi has the same line.
 
 ## Checked
-- Recomputed in one script from the task text and the figure data (lessons/FY3/fy3-6 heating_line, fy3-7 melting_curve): s7 a 40 K/180 s = 0,222 K/s; b c = 100·180/(0,50·40) = 900 J/(kg·K), 0,45 % from Al 896; c t = 900·0,50·80/100 = 360 s (358 s with Al); s8 a 20 000/(0,60·16) = 2083 (2,1·10^3; the table value 2100 is inside the 2 % tolerance); b 200/0,60 = 333 kJ/kg; c 220 + 4,18·0,60·20 = 270,2 kJ; d (120-20)/333 = 0,300 kg (the wrong path gives 0,36). All keys are within tolerance. The figure's water slope 80/251 K/kJ matches 1/(4,18·0,60).
-- Physics: Pt = cmΔT under the stated assumption that all of the power goes into the block; the plateau is melting at constant temperature, Q = sm. s7 d: the loss grows with the temperature difference, the net power falls, the temperature levels off where the loss equals the heater power, and 360 s is too short. Wording: energy is transferred as heat to the surroundings and increases internal energy; nothing says "turns into heat".
-- Significant figures follow the data. Rounding is explained.
-- Rubrics: s7 3+4+4+3 and s8 4+5+4+3. Each criterion asks only what its part asks and the solution shows. "Hyväksytään myös" covers the rate method, the table c and 2100.
-- Fidelity to fi: ids, figures, skills, links, points, criterion keys and points, answers, tolerances, and the numbers in the text, criteria and solutions are identical (compared with a script).
-- Intro: eight tasks, matching the eight in the set.
-- The hash was the same at start and end.
+- Pysähdy 1 (kahvikuppi): "Ei ole. Lämpö on energian siirtymistä lämpötilaeron takia ... vain siirtymisen aikana". This is the same physics as fi lines 13-17 and agrees with the Ydinajatus definition, the key_concepts "lämpö" and Yleisiä virheitä item 1. It has no "lämmöksi" wording.
+- Pysähdy 2 (sulava jää): the energy raises the interaction energy, not the kinetic energy, so T stays the same. This matches fi lines 110-114 and the paragraph above it, which states the constant-pressure, pure-substance condition.
+- Pysähdy 3 (jää + vesi): ice and water together means exactly 0 °C. This matches fi lines 197-201 and the comparison paragraph. The final state is equilibrium, and the pressure condition is stated earlier in the text (C, not a finding).
+- The order of the boxes and their placement match fi. Each one follows the paragraph it checks.
+- Hero: the webp (viewed) is the same scene as the aria-label and the Miksi question. It has no numbers or physics claims. fi uses the same file.
+- Inquiry explain model: the split changes only the paragraphs; the text is the same. Recomputed: 334·0,050 = 16,7 ≈ 17 kJ, and 16,7 kJ/(4190·0,050) = 79,7 ≈ 80 K.
+- Unit numbers: 2100·10 = 21 kJ; 334 kJ; 4190·100 = 419 kJ. The heating-curve breakpoints are 21, 355 and 774 kJ, plus 2260 kJ for boiling, which matches the aria-label. The formula conditions are stated (ΔU = Q + W with no change in Ek or Ep, Q = cmΔT with no phase change, expansion within about 100 K, P = UAΔT in a steady state).
+- Task set (no change since the PASS at 689e602e): I recomputed every keyed answer in one script with my own formulas and numpy polyfit. s1 21,88 GJ, 17,37 h; s2 81,63 K, 1,667 kW, 35,8 %; s3 2,256 MJ/kg, 69,9 W from the read line (the least-squares fit gives 2,263 and 68,9, inside the tolerance); s5 370,8 and 333,0 kJ/kg; s6 31,48 K, 133,7 K, 40,2 %; s7 0,222 K/s, 900 J/(kg·K), 360 s; s8 2083 J/(kg·K), 333 kJ/kg, 270,2 kJ, 0,300 kg. All of them agree.
+- The hash was 75fc60790851a73b at the start and at the end.

@@ -224,6 +224,12 @@ where $x_\text{max}$ and $x_\text{min}$ are the largest and the smallest result,
 
 Repetition reduces the effect of random error in the mean, but it does not remove systematic error. A gross error is looked for: a deviating result is checked, and it is not removed without a reason.
 
+```pysahdy
+You measure the same time five times and calculate the mean. Does repetition remove the systematic error of a clock that always runs too fast?
+---
+No. Repetition reduces the effect of random error in the mean, but a systematic error has the same direction in every measurement and stays in the mean too.
+```
+
 ### The equation of a line and its interpretation
 
 If the points lie approximately on a straight line, a line is fitted among the points:
@@ -234,6 +240,12 @@ slope :: k = \frac{\Delta y}{\Delta x}
 ```
 
 where $k$ is the slope and $b$ the constant term, that is, the value of $y$ when $x = 0$. The slope is read from two points of the line far apart, not from the measurement points. Its unit is the unit of the vertical axis divided by the unit of the horizontal axis, and it usually has a physical meaning: in a $(V, m)$ graph it is the density. The model has been shown to be valid only in the measured range, so extrapolation outside it must be justified.
+
+```pysahdy
+Why is the slope read from two points of the line far apart rather than from measurement points?
+---
+The measurement points are scattered around the line, but the fitted line represents all the data. For points far apart, $\Delta x$ and $\Delta y$ are large, so the share of the reading error becomes smaller.
+```
 
 <svg data-fig="anatomia" viewBox="0 0 600 410" role="img" aria-label="Graph to scale, invented example data: the temperature θ of water in degrees Celsius as a function of the time t in minutes. Six measurement points at the moments 1–6 min, each with a vertical uncertainty bar of ±1 °C. A solid straight line θ = 6.2 °C/min · t + 19 °C is fitted among the points, and dashed lines show the steepest and the shallowest line that still pass through all the bars. A triangle is drawn on the line between the points t = 1 min and t = 6 min, which are far apart: the horizontal side is Δt and the vertical side Δθ, and the slope is k = Δθ/Δt. The line crosses the vertical axis at b, which is the initial temperature. In the lower right corner a legend says that the dashed line means the steepest and the shallowest line." style="max-width:100%;font-size:27px">
   <line x1="138" y1="356" x2="138" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -335,6 +347,12 @@ m &= \rho V + m_0
 ```
 
 In uniformly accelerated motion from rest, when time is counted from the start of the motion, the $(t^2, s)$ graph is a straight line through the origin with slope $\tfrac{a}{2}$. When the amount and the temperature of a gas stay the same, according to Boyle's law the $(\tfrac{1}{V}, p)$ graph is a straight line; the constant $C$ is the product of the pressure and the volume. The total mass $m$ of a liquid weighed in a container is a straight line with respect to the volume $V$, whose slope is the density $\rho$ and whose constant term is the mass $m_0$ of the container.
+
+```pysahdy
+A $(t^2, s)$ graph is a straight line through the origin. What can you conclude about the acceleration $a$ from its slope $k$?
+---
+The slope is $k = \tfrac{a}{2}$, so the acceleration is twice the slope: $a = 2k$.
+```
 
 <svg data-fig="linearisointi" viewBox="0 0 600 340" role="img" aria-label="Two graphs of the same model data: a trolley accelerating uniformly from rest, acceleration 0.50 m/s². On the left, the distance s in metres as a function of the time t: six points at the moments 0.5–3.0 s lie on a curve that bends upwards. On the right, the same distance as a function of the square of the time t²: the points are on a straight line through the origin whose slope is half the acceleration, 0.25 m/s²." style="max-width:100%;font-size:27px">
   <line x1="94.5" y1="284" x2="94.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

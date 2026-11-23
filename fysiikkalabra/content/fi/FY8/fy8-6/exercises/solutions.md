@@ -48,7 +48,13 @@ $$. Vihreä valo on näkyvän alueen keskellä, ja sen fotonin energia on punais
 **Annettu:** energia-aukko $E_\text{g} = 1{,}42\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** LEDin valon aallonpituus $\lambda$ nanometreinä
 **Periaate:** LEDissä elektroni putoaa johtavuusvyöstä valenssivyön aukkoon ja luovuttaa energiansa yhtenä fotonina. Fotonin energia on likimain energia-aukon suuruinen, $\tfrac{hc}{\lambda} \approx E_\text{g}$.
-**Kaava:** $\dfrac{hc}{\lambda} = E_\text{g}$, joten $\lambda = \dfrac{hc}{E_\text{g}}$
+**Kaava:** Fotonin energia on $E = hf$ ja $c = f\lambda$. Fotonin energia on energia-aukon suuruinen, $E = E_\text{g}$, joten $$
+\begin{aligned}
+E_\text{g} &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\text{g}}
+\end{aligned}
+$$
 **Muunnokset:** $E_\text{g} = 1{,}42\,\text{eV} = 1{,}42 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 2{,}2748 \cdot 10^{-19}\,\text{J}$; tulos metreistä nanometreiksi $1\,\text{m} = 10^{9}\,\text{nm}$
 **Sijoitus:** $$
 \begin{aligned}
@@ -69,7 +75,13 @@ $$. Aallonpituus on yli $700\,\text{nm}$, joten valo on infrapunaa. Se sopii, ko
 **Annettu:** sovitetun suoran kulmakerroin $k = 4{,}10 \cdot 10^{-15}\,\text{V}\,\text{s}$, alkeisvaraus $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
 **Kysytty:** Planckin vakio $h$ yksikössä $\text{J}\,\text{s}$
 **Periaate:** Kynnysjännitteellä elektronin saama energia on likimain fotonin energia, $eU_\text{k} \approx hf$. Siksi kynnysjännite on taajuuden suhteen likimain suora $U_\text{k} \approx \tfrac{h}{e} f$, jonka kulmakerroin on mallissa noin $\tfrac{h}{e}$.
-**Kaava:** $k = \dfrac{h}{e}$, joten $h = ek$
+**Kaava:** Kynnysjännitteellä $eU_\text{k} \approx hf$, ja suoran yhtälö on $U_\text{k} = kf + b$, joten $$
+\begin{aligned}
+U_\text{k} &\approx \dfrac{h}{e}\,f + b \\
+k &= \dfrac{\Delta U_\text{k}}{\Delta f} \approx \dfrac{h}{e} \\
+h &= ek
+\end{aligned}
+$$
 **Muunnokset:** Ei tarvita: $\text{C} \cdot \text{V}\,\text{s} = \text{J}\,\text{s}$, koska $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
 **Sijoitus:** $h = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}10 \cdot 10^{-15}\,\text{V}\,\text{s} = 6{,}568 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Vastaus:** $6{,}57 \cdot 10^{-34}\,\text{J}\,\text{s}$, kolme merkitsevää numeroa kuten kulmakertoimessa $4{,}10 \cdot 10^{-15}\,\text{V}\,\text{s}$.
@@ -84,7 +96,13 @@ $$. Kynnysjännitteisiin perustuvassa mittauksessa muutaman prosentin ero on tav
 **Annettu:** aallonpituus $\lambda = 470\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
 **Kysytty:** pienin jännite eli kynnysjännite $U_\text{k}$ voltteina
 **Periaate:** LED säteilee vasta, kun jokainen elektroni saa jännitelähteeltä vähintään likimain yhden fotonin energian. Kynnysjännitteellä elektronin energia $eU_\text{k}$ on fotonin energian $\tfrac{hc}{\lambda}$ suuruinen.
-**Kaava:** $eU_\text{k} = \dfrac{hc}{\lambda}$, joten $U_\text{k} = \dfrac{hc}{e\lambda}$
+**Kaava:** Kynnysjännitteellä elektronin energia on yhden fotonin energia, $eU_\text{k} = E$, ja $E = hf$, $c = f\lambda$, joten $$
+\begin{aligned}
+eU_\text{k} &= hf \\
+&= \frac{hc}{\lambda} \\
+U_\text{k} &= \frac{hc}{e\lambda}
+\end{aligned}
+$$
 **Muunnokset:** $\lambda = 470\,\text{nm} = 470 \cdot 10^{-9}\,\text{m}$; $1\,\tfrac{\text{J}}{\text{C}} = 1\,\text{V}$
 **Sijoitus:** $$
 \begin{aligned}
@@ -104,7 +122,13 @@ $$. Jännite on suurempi kuin punaisen LEDin noin $1{,}9\,\text{V}$, koska sinis
 **Annettu:** huippuaallonpituus $\lambda = 605\,\text{nm}$, kynnysjännite $U_\text{k} = 1{,}95\,\text{V}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
 **Kysytty:** Planckin vakion arvo $h$ yhden LEDin mittauksesta, yksikössä $\text{J}\,\text{s}$
 **Periaate:** Oletetaan, että kynnysjännitteellä elektronin saama energia $eU_\text{k}$ on täsmälleen yhden fotonin energia $\tfrac{hc}{\lambda}$. Yhtälöstä voi ratkaista Planckin vakion.
-**Kaava:** $eU_\text{k} = \dfrac{hc}{\lambda}$, joten $h = \dfrac{eU_\text{k}\lambda}{c}$
+**Kaava:** Kynnysjännitteellä elektronin energia on yhden fotonin energia, $eU_\text{k} = E$, ja $E = hf$, $c = f\lambda$, joten $$
+\begin{aligned}
+eU_\text{k} &= hf \\
+&= \frac{hc}{\lambda} \\
+h &= \frac{eU_\text{k}\lambda}{c}
+\end{aligned}
+$$
 **Muunnokset:** $\lambda = 605\,\text{nm} = 605 \cdot 10^{-9}\,\text{m}$; $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$
 **Sijoitus:** $eU_\text{k} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}95\,\text{V} = 3{,}1239 \cdot 10^{-19}\,\text{J}$ ja $$
 \begin{aligned}
@@ -125,7 +149,15 @@ $$ hyväksyttyä arvoa pienempi. Ero johtuu siitä, että mitattu kynnysjännite
 **Annettu:** virta $I = 20\,\text{mA}$, aallonpituus $\lambda = 630\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$; jokainen elektroni synnyttää yhden fotonin, joka pääsee ulos
 **Kysytty:** valoteho $P$ milliwatteina
 **Periaate:** Virta kertoo, kuinka paljon varausta kulkee sekunnissa, joten elektronien määrä sekunnissa on $N = \tfrac{I}{e}$. Oletuksen mukaan fotoneja syntyy sekunnissa yhtä monta, ja jokainen vie energian $\tfrac{hc}{\lambda}$. Valoteho on fotonien sekunnissa viemä energia.
-**Kaava:** $N = \dfrac{I}{e}$ ja $P = N \cdot \dfrac{hc}{\lambda}$, joten $P = \dfrac{Ihc}{e\lambda}$
+**Kaava:** Virta $I = Ne$ ($N$ elektronia sekunnissa), fotonin energia $E = hf$, $c = f\lambda$ ja teho $P = NE$ (energia sekunnissa), joten $$
+\begin{aligned}
+N &= \frac{I}{e} \\
+E &= hf \\
+&= \frac{hc}{\lambda} \\
+P &= NE \\
+&= \frac{Ihc}{e\lambda}
+\end{aligned}
+$$
 **Muunnokset:** $I = 20\,\text{mA} = 0{,}020\,\text{A}$, $\lambda = 630\,\text{nm} = 630 \cdot 10^{-9}\,\text{m}$; lopuksi $1\,\text{W} = 1000\,\text{mW}$
 **Sijoitus:** $N = \dfrac{0{,}020\,\text{C/s}}{1{,}602 \cdot 10^{-19}\,\text{C}} = 1{,}2484 \cdot 10^{17}\,\tfrac{1}{\text{s}}$, fotonin energia $\dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{630 \cdot 10^{-9}\,\text{m}} = 3{,}1532 \cdot 10^{-19}\,\text{J}$, joten $$
 \begin{aligned}
@@ -142,7 +174,13 @@ $$
 **Annettu:** sinisen fotonin aallonpituus $\lambda_1 = 450\,\text{nm}$, keltaisen fotonin aallonpituus $\lambda_2 = 560\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** sisäenergiaksi jäävä energia $\Delta E$ yhtä fotonia kohti elektronivoltteina
 **Periaate:** Fluoresenssissa (luku *Spektrit paljastavat atomin energiatasot*) aine absorboi fotonin ja säteilee pienempienergisen fotonin. Energia säilyy, joten absorboidun ja säteillyn fotonin energioiden erotus jää loisteaineeseen sisäenergiaksi.
-**Kaava:** $\Delta E = \dfrac{hc}{\lambda_1} - \dfrac{hc}{\lambda_2}$
+**Kaava:** Fotonin energia on $E = hf$ ja $c = f\lambda$. Energia säilyy, joten loisteaineeseen jäävä energia on absorboidun ja säteillyn fotonin energioiden erotus, joten $$
+\begin{aligned}
+\Delta E &= E_1 - E_2 \\
+&= hf_1 - hf_2 \\
+&= \frac{hc}{\lambda_1} - \frac{hc}{\lambda_2}
+\end{aligned}
+$$
 **Muunnokset:** $\lambda_1 = 450 \cdot 10^{-9}\,\text{m}$, $\lambda_2 = 560 \cdot 10^{-9}\,\text{m}$; energiat jouleista elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
 **Sijoitus:** $\dfrac{hc}{\lambda_1} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{450 \cdot 10^{-9}\,\text{m}} = 4{,}4144 \cdot 10^{-19}\,\text{J} = 2{,}7556\,\text{eV}$ ja $\dfrac{hc}{\lambda_2} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{560 \cdot 10^{-9}\,\text{m}} = 3{,}5473 \cdot 10^{-19}\,\text{J} = 2{,}2143\,\text{eV}$, joten $\Delta E = 2{,}7556\,\text{eV} - 2{,}2143\,\text{eV} = 0{,}5413\,\text{eV}$
 **Vastaus:** $0{,}541\,\text{eV}$, kolme merkitsevää numeroa kuten aallonpituuksissa.
@@ -199,7 +237,15 @@ $$
 **Annettu:** aallonpituus $\lambda = 365\,\text{nm}$, virta $I = 20\,\text{mA}$, säteilyteho $P = 15\,\text{mW}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
 **Kysytty:** ulos pääsevien fotonien määrän osuus LEDin läpi kulkevien elektronien määrästä prosentteina
 **Periaate:** Säteilyteho on fotonien sekunnissa viemä energia, joten fotonien määrä sekunnissa on teho jaettuna yhden fotonin energialla. Virta kertoo elektronien määrän sekunnissa, $\tfrac{I}{e}$. Yksi elektroni voi synnyttää enintään yhden fotonin, joten osuus on enintään $100\,\%$.
-**Kaava:** $N_\text{f} = \dfrac{P}{hc/\lambda} = \dfrac{P\lambda}{hc}$ ja $N_\text{e} = \dfrac{I}{e}$, joten osuus on $\dfrac{N_\text{f}}{N_\text{e}} = \dfrac{P\lambda e}{hcI}$
+**Kaava:** Teho $P = N_\text{f}E$ (fotonien energia sekunnissa), $E = hf$, $c = f\lambda$ ja virta $I = N_\text{e}e$ (varaus sekunnissa), joten $$
+\begin{aligned}
+N_\text{f} &= \frac{P}{E} \\
+&= \frac{P}{hc/\lambda} \\
+&= \frac{P\lambda}{hc} \\
+N_\text{e} &= \frac{I}{e} \\
+\frac{N_\text{f}}{N_\text{e}} &= \frac{P\lambda e}{hcI}
+\end{aligned}
+$$
 **Muunnokset:** $P = 15\,\text{mW} = 0{,}015\,\text{W}$, $I = 20\,\text{mA} = 0{,}020\,\text{A}$, $\lambda = 365 \cdot 10^{-9}\,\text{m}$; lopuksi osuus prosenteiksi kertomalla luvulla $100\,\%$
 **Sijoitus:** $N_\text{f} = \dfrac{0{,}015\,\text{J/s} \cdot 365 \cdot 10^{-9}\,\text{m}}{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 2{,}756 \cdot 10^{16}\,\tfrac{1}{\text{s}}$ ja $N_\text{e} = \dfrac{0{,}020\,\text{C/s}}{1{,}602 \cdot 10^{-19}\,\text{C}} = 1{,}2484 \cdot 10^{17}\,\tfrac{1}{\text{s}}$, joten $\dfrac{N_\text{f}}{N_\text{e}} = \dfrac{2{,}756 \cdot 10^{16}}{1{,}2484 \cdot 10^{17}} = 0{,}2208 = 22{,}1\,\%$
 **Vastaus:** noin $22\,\%$, kaksi merkitsevää numeroa kuten tehossa $15\,\text{mW}$ ja virrassa $20\,\text{mA}$.
@@ -221,7 +267,13 @@ Väärät selitykset ovat muut vaihtoehdot: LEDin valo ei synny lämpenemisestä
 **Annettu:** kynnysjännite $U_\text{k} = 2{,}30\,\text{V}$, $eU_\text{k} = \tfrac{hc}{\lambda}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
 **Kysytty:** LEDin valon aallonpituus $\lambda$ nanometreinä
 **Periaate:** Kynnysjännitteellä elektronin jännitelähteeltä saama energia $eU_\text{k}$ on likimain yhden fotonin energia $\tfrac{hc}{\lambda}$. Yhtälöstä voi ratkaista aallonpituuden, koska valon taajuus ja aallonpituus liittyvät yhtälöön $c = f\lambda$.
-**Kaava:** $eU_\text{k} = \dfrac{hc}{\lambda}$, joten $\lambda = \dfrac{hc}{eU_\text{k}}$
+**Kaava:** Kynnysjännitteellä elektronin energia on yhden fotonin energia, $eU_\text{k} = E$, ja $E = hf$, $c = f\lambda$, joten $$
+\begin{aligned}
+eU_\text{k} &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{eU_\text{k}}
+\end{aligned}
+$$
 **Muunnokset:** Ei tarvita muuta kuin tuloksen muunnos metreistä nanometreiksi: $1\,\text{m} = 10^{9}\,\text{nm}$. Tulossa $e \cdot U_\text{k}$ on $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -252,7 +304,7 @@ $$. Aallonpituus on näkyvän valon vihreällä alueella ($500$–$570\,\text{nm
 **Kysytty:** kynnysjännite $U_\text{k}$ voltteina sekä sen vertailu arvoon $\tfrac{hc}{e\lambda}$
 **Periaate:** Kynnysjännite on se jännite, jolla virta alkaa kasvaa jyrkästi. Se saadaan jatkamalla kuvaajan $(U, I)$ suoraviivaista osaa jänniteakselille, jolla $I = 0$. Menetelmä on toistettavampi kuin hehkun alkamisen arvioiminen silmällä.
 **Kuvaajan lukeminen:** Pisteet $U = 0{,}50\,\text{V}$–$1{,}70\,\text{V}$ ovat kuvaajan loivassa alkuosassa, ja piste $1{,}80\,\text{V}$ on vielä kaarevassa kohdassa. Pisteet $1{,}90\,\text{V}$–$2{,}30\,\text{V}$ ovat suoralla, koska virta kasvaa jokaisella $0{,}10\,\text{V}$:n askeleella likimain yhtä paljon, noin $6\,\text{mA}$. Näihin viiteen pisteeseen sovitettu suora on $I = k(U - U_\text{k})$ kulmakertoimella $k = 61{,}5\,\tfrac{\text{mA}}{\text{V}}$, ja se leikkaa jänniteakselin kohdassa $U_\text{k}$.
-**Kaava:** Suoralla $I = k(U - U_\text{k})$, joten pisteestä $(U_1, I_1)$ suoralta: $U_\text{k} = U_1 - \dfrac{I_1}{k}$. Vertailujännite on $U = \dfrac{hc}{e\lambda}$.
+**Kaava:** Suoralla $I = k(U - U_\text{k})$, joten suoran pisteestä $(U_1, I_1)$: $I_1 = k(U_1 - U_\text{k})$ ja $U_\text{k} = U_1 - \dfrac{I_1}{k}$. Vertailujännite: $eU = hf$ ja $c = f\lambda$, joten $U = \dfrac{hf}{e} = \dfrac{hc}{e\lambda}$.
 **Muunnokset:** Ei tarvita kohdassa b); kohdassa c) $\lambda = 650\,\text{nm} = 650 \cdot 10^{-9}\,\text{m}$ ja $1\,\tfrac{\text{J}}{\text{C}} = 1\,\text{V}$.
 **Sijoitus:** Sovitetun suoran kautta kulkee pisteiden keskipiste $(2{,}10\,\text{V};\ 14{,}92\,\text{mA})$, joten $U_\text{k} = 2{,}10\,\text{V} - \dfrac{14{,}92\,\text{mA}}{61{,}5\,\text{mA/V}} = 2{,}10\,\text{V} - 0{,}243\,\text{V} = 1{,}857\,\text{V}$. Vertailu: $\dfrac{hc}{e\lambda} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 650 \cdot 10^{-9}\,\text{m}} = 1{,}908\,\text{V}$
 **Vastaus:** $U_\text{k} = 1{,}86\,\text{V}$, kolme merkitsevää numeroa kuten jännitteissä. Mitattu kynnysjännite on noin $0{,}05\,\text{V}$ pienempi kuin $\tfrac{hc}{e\lambda} = 1{,}91\,\text{V}$, mikä on tavallinen pieni ero.
@@ -268,7 +320,13 @@ $$, sama arvo. Tulos $1{,}86\,\text{V}$ on suurempi kuin jännite $1{,}80\,\text
 **Kysytty:** kunkin lukutavan antama Planckin vakio $h$ ja Sallan arvon poikkeama hyväksytystä arvosta prosentteina
 **Periaate:** Kun $eU_\text{k} = \tfrac{hc}{\lambda}$, kynnysjännitteestä saadaan $h = \tfrac{eU_\text{k}\lambda}{c}$, joten $h$ on suoraan verrannollinen luettuun jännitteeseen. Systemaattinen virhe kynnysjännitteen lukutavassa siirtää kaikkia mittauksia samaan suuntaan ja näkyy suoraan tuloksessa.
 **Kuvaajan lukeminen:** Taulukon jännitteet on luettu samasta kuvaajasta $(U, I)$: Aino luki jännitteen kuvaajan kaarevasta alusta kohdasta $I = 0{,}1\,\text{mA}$, Eero suoran osan jatkeesta kohdasta $I = 0$ ja Salla suoran osan yläpäästä kohdasta $I = 10\,\text{mA}$. Luetut jännitteet ovat $1{,}74\,\text{V}$, $1{,}88\,\text{V}$ ja $2{,}04\,\text{V}$.
-**Kaava:** $h = \dfrac{eU_\text{k}\lambda}{c}$ ja poikkeama $\dfrac{h - h_0}{h_0} \cdot 100\,\%$, missä $h_0 = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$
+**Kaava:** Kynnysjännitteellä $eU_\text{k} = hf$ ja $c = f\lambda$, joten $$
+\begin{aligned}
+eU_\text{k} &= hf \\
+&= \frac{hc}{\lambda} \\
+h &= \frac{eU_\text{k}\lambda}{c}
+\end{aligned}
+$$, ja poikkeama on $\dfrac{h - h_0}{h_0} \cdot 100\,\%$, missä $h_0 = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ (hyväksytty arvo)
 **Muunnokset:** $\lambda = 630\,\text{nm} = 630 \cdot 10^{-9}\,\text{m}$; $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$
 **Sijoitus:** Ainon arvolle $$
 \begin{aligned}
@@ -289,7 +347,7 @@ $$, joten $h = \dfrac{2{,}0589 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}998 \cdot
 
 Ainon lukema on liian pieni, koska virta $0{,}1\,\text{mA}$ kulkee jo ennen suoran jatkeen antamaa kynnystä, ja Sallan liian suuri, koska virralla $10\,\text{mA}$ elektronit tarvitsevat kynnyksen lisäksi jännitettä virran kasvattamiseen. Eeron lukutapa ei riipu valitusta virrasta.
 
-Sallan arvo osuu sattumalta lähemmäs hyväksyttyä arvoa, koska hänen ylimääräinen noin $0{,}16\,\text{V}$ kumoaa osan siitä, että kynnysjännite on tässä aineistossa noin $0{,}1\,\text{V}$ pienempi kuin $\tfrac{hf}{e}$. Lähellä taulukkoarvoa oleva tulos ei todista lukutapaa oikeaksi; suoran jatkeen jäljelle jäävä ero poistuu kulmakertoimesta.
+Sallan arvo osuu sattumalta lähemmäs hyväksyttyä arvoa, koska hänen ylimääräinen noin $0{,}16\,\text{V}$ kumoaa sen, että kynnysjännite on tässä aineistossa noin $0{,}1\,\text{V}$ pienempi kuin $\tfrac{hf}{e}$, ja menee vielä hieman yli. Lähellä taulukkoarvoa oleva tulos ei todista lukutapaa oikeaksi; suoran jatkeen jäljelle jäävä ero poistuu kulmakertoimesta.
 
 **Järkevyys:** Eeron $h$ poikkeaa hyväksytystä arvosta silti $-4{,}5\,\%$, ja ero on juuri luvun mainitsema noin $0{,}1\,\text{V}$ ($\tfrac{hc}{e\lambda} = 1{,}97\,\text{V}$ ja Eeron $1{,}88\,\text{V}$), joten sitä ei pidä pitää virheellisenä lukutapana. Suunta täsmää: $5{,}86 < 6{,}33 < 6{,}87$ vastaa jännitteiden järjestystä $1{,}74\,\text{V} < 1{,}88\,\text{V} < 2{,}04\,\text{V}$.
 
@@ -298,7 +356,13 @@ Sallan arvo osuu sattumalta lähemmäs hyväksyttyä arvoa, koska hänen ylimä�
 **Kysytty:** huipun aallonpituus $\lambda_\text{p}$, spektrin leveys $\Delta\lambda$ ja fotonien energioiden erotus $\Delta E$ elektronivoltteina
 **Periaate:** LEDin spektri on kapea kaista eikä yksi viiva. Aallonpituudeksi ilmoitetaan huippu, koska se on mitattava ja toistettava arvo, kun taas silmän käsitys värin sävystä vaihtelee. Fotonin energia on $E = \tfrac{hc}{\lambda}$, joten eri aallonpituuksien fotoneilla on eri energia.
 **Kuvaajan lukeminen:** Paperille piirretyssä kuvaajassa $I_\text{rel}(\lambda)$ suurin intensiteetti $1{,}00$ on kohdassa $630\,\text{nm}$, joten $\lambda_\text{p} = 630\,\text{nm}$. Intensiteetti on puolet maksimista, $0{,}50$, kohdissa $\lambda_1 = 620\,\text{nm}$ ja $\lambda_2 = 640\,\text{nm}$, joten leveys on $\Delta\lambda = 640\,\text{nm} - 620\,\text{nm} = 20\,\text{nm}$. Laserdiodin leveys on noin $1\,\text{nm}$, joten LEDin kaista on noin $20$ kertaa leveämpi.
-**Kaava:** $\Delta E = \dfrac{hc}{\lambda_1} - \dfrac{hc}{\lambda_2}$
+**Kaava:** Fotonin energia on $E = hf$ ja $c = f\lambda$. Kahden fotonin energioiden erotus on $\Delta E = E_1 - E_2$, joten $$
+\begin{aligned}
+\Delta E &= E_1 - E_2 \\
+&= hf_1 - hf_2 \\
+&= \frac{hc}{\lambda_1} - \frac{hc}{\lambda_2}
+\end{aligned}
+$$
 **Muunnokset:** $\lambda_1 = 620 \cdot 10^{-9}\,\text{m}$, $\lambda_2 = 640 \cdot 10^{-9}\,\text{m}$; energiat jouleista elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
 **Sijoitus:** $hc = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $\dfrac{hc}{\lambda_1} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{620 \cdot 10^{-9}\,\text{m}} = 3{,}2040 \cdot 10^{-19}\,\text{J} = 2{,}0000\,\text{eV}$ ja $\dfrac{hc}{\lambda_2} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{640 \cdot 10^{-9}\,\text{m}} = 3{,}1039 \cdot 10^{-19}\,\text{J} = 1{,}9375\,\text{eV}$, joten $\Delta E = 2{,}0000\,\text{eV} - 1{,}9375\,\text{eV} = 0{,}0625\,\text{eV}$
 **Vastaus:** $\Delta E = 0{,}0625\,\text{eV}$, kolme merkitsevää numeroa kuten aallonpituuksissa. LED ei ole yksivärinen, koska sen fotonien energiat vaihtelevat: intensiteetti on vähintään puolet maksimista, kun fotonin energia on välillä $1{,}94\,\text{eV}$–$2{,}00\,\text{eV}$, ja nämä fotonit muodostavat spektrin pääosan. Huipun fotonin energia on noin $1{,}97\,\text{eV}$.
@@ -355,7 +419,7 @@ Eroa ei myöskään voi verrata suoraan kulmakertoimen epävarmuuteen $\Delta k$
 **Kysytty:** Planckin vakio $h$ suoran kulmakertoimesta yksikössä $\text{J}\,\text{s}$, sekä korjauksen vaikutus suoraan ja yhden LEDin tulokseen
 **Periaate:** Kynnysjännitteellä $eU_\text{k} \approx hf$, joten $U_\text{k}$ on taajuuden suhteen likimain suora, jonka kulmakerroin on mallissa noin $\tfrac{h}{e}$. Mittarin nollapistevirhe lisää jokaiseen jännitteeseen saman vakion $0{,}05\,\text{V}$. Vakion lisääminen siirtää suoraa ylöspäin mutta ei muuta sen kulmakerrointa, joten virhe näkyy leikkauskohdassa.
 **Kuvaajan lukeminen:** Taajuudet ovat $4{,}759$, $5{,}081$, $5{,}260$, $5{,}710$ ja $6{,}447$ yksikössä $10^{14}\,\text{Hz}$. Sovitus kaikkiin viiteen mitattuun pisteeseen antaa kulmakertoimen $m = 4{,}208 \cdot 10^{-15}\,\text{V}\,\text{s}$ ja leikkauskohdan $b = -0{,}062\,\text{V}$. Korjattujen jännitteiden $U = U_\text{mitattu} - 0{,}05\,\text{V}$ sovitus antaa saman kulmakertoimen $4{,}208 \cdot 10^{-15}\,\text{V}\,\text{s}$ ja leikkauskohdan $-0{,}112\,\text{V}$.
-**Kaava:** $f = \dfrac{c}{\lambda}$, $k = \dfrac{h}{e}$, joten $h = ek$. Yhden LEDin kaava on $h = \dfrac{eU_\text{k}\lambda}{c}$.
+**Kaava:** Taajuus on $f = \dfrac{c}{\lambda}$ ja kynnysjännitteellä $eU_\text{k} \approx hf$, joten $U_\text{k} \approx \dfrac{h}{e}\,f + b$. Suoran kulmakerroin on $k = \dfrac{\Delta U_\text{k}}{\Delta f} \approx \dfrac{h}{e}$, joten $h = ek$. Yhden LEDin $eU_\text{k} = hf = \dfrac{hc}{\lambda}$, joten $h = \dfrac{eU_\text{k}\lambda}{c}$.
 **Muunnokset:** $\lambda = 630 \cdot 10^{-9}\,\text{m}$ jne.; $\tfrac{\text{V}}{\text{Hz}} = \text{V}\,\text{s}$ ja $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$
 **Sijoitus:** $$
 \begin{aligned}
@@ -389,7 +453,7 @@ $$, sama kuin sovituksen kulmakerroin. Korjattu leikkauskohta $-0{,}11\,\text{V}
 **Annettu:** kalibrointisuora $U_\text{k} = kf + b$, $k = 4{,}15 \cdot 10^{-15}\,\text{V}\,\text{s}$, $b = -0{,}10\,\text{V}$; tuntemattoman LEDin $U_\text{k} = 2{,}46\,\text{V}$ ($\pm 0{,}05\,\text{V}$), spektrometrin huippu $483\,\text{nm}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
 **Kysytty:** tuntemattoman LEDin valon aallonpituus $\lambda$ nanometreinä kalibrointisuoran avulla sekä sen epävarmuus
 **Periaate:** Samalla menetelmällä mitatut LEDit ovat samalla suoralla $U_\text{k}(f)$, joten tuntemattoman LEDin taajuus saadaan ratkaisemalla suoran yhtälöstä $f$. Suora sisältää myös vakioeron $b$ mitatun kynnysjännitteen ja arvon $\tfrac{hf}{e}$ välillä, joten se on tarkempi kuin yhtälö $eU_\text{k} = \tfrac{hc}{\lambda}$, joka olettaa $b = 0$.
-**Kaava:** $U_\text{k} = kf + b$, joten $f = \dfrac{U_\text{k} - b}{k}$ ja $\lambda = \dfrac{c}{f}$. Epävarmuus: $\Delta f = \dfrac{\Delta U}{k}$ ja $\Delta\lambda = \lambda\,\dfrac{\Delta f}{f}$. Vertailu: $\lambda = \dfrac{hc}{eU_\text{k}}$.
+**Kaava:** $U_\text{k} = kf + b$, joten $f = \dfrac{U_\text{k} - b}{k}$ ja $\lambda = \dfrac{c}{f}$. Epävarmuus: $\Delta f = \dfrac{\Delta U}{k}$ ja $\Delta\lambda = \lambda\,\dfrac{\Delta f}{f}$. Vertailu: $eU_\text{k} = hf$ ja $c = f\lambda$, joten $\lambda = \dfrac{hc}{eU_\text{k}}$.
 **Muunnokset:** Ei tarvita kohdassa a); tulokset metreistä nanometreiksi $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** $f = \dfrac{2{,}46\,\text{V} - (-0{,}10\,\text{V})}{4{,}15 \cdot 10^{-15}\,\text{V}\,\text{s}} = 6{,}169 \cdot 10^{14}\,\text{Hz}$ ja $\lambda = \dfrac{2{,}998 \cdot 10^8\,\text{m/s}}{6{,}169 \cdot 10^{14}\,\text{Hz}} = 4{,}860 \cdot 10^{-7}\,\text{m} = 486{,}0\,\text{nm}$. Suoraan kaavasta $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 2{,}46\,\text{V}} = 5{,}041 \cdot 10^{-7}\,\text{m} = 504{,}1\,\text{nm}$. Epävarmuus: $\Delta f = \dfrac{0{,}05\,\text{V}}{4{,}15 \cdot 10^{-15}\,\text{V}\,\text{s}} = 1{,}205 \cdot 10^{13}\,\text{Hz}$ ja $\Delta\lambda = 486{,}0\,\text{nm} \cdot \dfrac{1{,}205 \cdot 10^{13}\,\text{Hz}}{6{,}169 \cdot 10^{14}\,\text{Hz}} = 9{,}5\,\text{nm}$.
 **Vastaus:** $\lambda = 486\,\text{nm}$, kolme merkitsevää numeroa kuten kulmakertoimessa $4{,}15 \cdot 10^{-15}\,\text{V}\,\text{s}$. Epävarmuus on $\Delta\lambda \approx 10\,\text{nm}$, joten $\lambda = (486 \pm 10)\,\text{nm}$. Kalibrointisuora poikkeaa spektrometrin tuloksesta $483\,\text{nm}$ vain $0{,}6\,\%$, kun suora kaava $eU_\text{k} = \tfrac{hc}{\lambda}$ antaa $504\,\text{nm}$, $4{,}4\,\%$ liikaa. Suora on parempi menetelmä, koska se ottaa huomioon vakioeron $b = -0{,}10\,\text{V}$: mitattu kynnysjännite on noin $0{,}1\,\text{V}$ pienempi kuin $\tfrac{hf}{e}$, ja kaava olettaa eron olevan nolla.
@@ -411,7 +475,7 @@ $$, sama kuin sovituksen kulmakerroin. Korjattu leikkauskohta $-0{,}11\,\text{V}
 **Kysytty:** mallin $\tfrac{hf}{e}$ ja suoralta luetun kynnysjännitteen erotus $\Delta U$ voltteina sekä sanallinen selitys
 **Periaate:** Yksinkertaisessa mallissa elektronin energia $eU_\text{k}$ on yhden fotonin energia $hf$, joten $U_\text{k} = \tfrac{hf}{e}$. Mitattu kynnysjännite on menetelmällä määritetty likiarvo, joten sitä verrataan malliin.
 **Kuvaajan lukeminen:** Pystysuora ruutuviiva $f = 7{,}0 \cdot 10^{14}\,\text{Hz}$ leikkaa sovitetun suoran vaakasuoran ruutuviivan kohdalla $2{,}80\,\text{V}$. Luettu kynnysjännite on siis $U_\text{suora} = 2{,}80\,\text{V}$. Suora ei kulje origon kautta: sen jatke leikkaisi pystyakselin noin $0{,}12\,\text{V}$ nollan alapuolella.
-**Kaava:** Malli antaa $U_\text{malli} = \dfrac{hf}{e}$, ja erotus on $\Delta U = U_\text{malli} - U_\text{suora}$.
+**Kaava:** Malli antaa $eU_\text{malli} = hf$, joten $U_\text{malli} = \dfrac{hf}{e}$, ja erotus on $\Delta U = U_\text{malli} - U_\text{suora}$.
 **Muunnokset:** Ei tarvita: $f$ on jo hertseinä ja $1\,\tfrac{\text{J}}{\text{C}} = 1\,\text{V}$.
 **Sijoitus:** Ensin fotonin energia: $hf = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 7{,}0 \cdot 10^{14}\,\text{Hz} = 4{,}638 \cdot 10^{-19}\,\text{J}$. Sitten malli: $U_\text{malli} = \dfrac{4{,}638 \cdot 10^{-19}\,\text{J}}{1{,}602 \cdot 10^{-19}\,\text{C}} = 2{,}895\,\text{V}$. Lopuksi erotus: $\Delta U = 2{,}895\,\text{V} - 2{,}80\,\text{V} = 0{,}095\,\text{V}$.
 **Vastaus:** $\Delta U = 0{,}095\,\text{V}$, kaksi merkitsevää numeroa, koska erotus on pieni ero kahden kolmenumeroisen jännitteen välillä. Mitattu arvo on noin $0{,}1\,\text{V}$ pienempi kuin malli.

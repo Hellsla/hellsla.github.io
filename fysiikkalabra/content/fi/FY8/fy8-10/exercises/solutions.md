@@ -544,11 +544,23 @@ $$. Energiaa vapautuu, koska helium-4 on sidosenergiakäyrällä paljon ylempän
 
 **Periaate:** Reaktiossa massaluku ja varausluku säilyvät, mutta massa pienenee, ja massan väheneminen vapautuu energiana $Q = (m_\text{alku} - m_\text{loppu})\,c^2$. Sama energia saadaan sidosenergioista: vapaan neutronin sidosenergia on nolla, joten $Q$ on syntyvien ytimien sidosenergioiden summa vähennettynä uraanin sidosenergialla. Kun yhden ytimen energia tunnetaan, näytteen energia saadaan kertomalla se ytimien lukumäärällä.
 
-**Kaava:** a) $$\begin{aligned} Q &= (m_\text{U} + m_\text{n} - m_\text{Ba} - m_\text{Kr} \\
+**Kaava:** a) $$\begin{aligned} &Q = (m_\text{alku} - m_\text{loppu})\,c^2 \\
 
-&- 3\,m_\text{n})\,c^2
+&m_\text{alku} = m_\text{U} + m_\text{n} \\
 
-\end{aligned}$$; b) $$
+&m_\text{loppu} = m_\text{Ba} + m_\text{Kr} \\
+
+&\quad + 3\,m_\text{n} \\
+
+&Q = (m_\text{U} - m_\text{Ba} \\
+
+&\quad - m_\text{Kr} - 2\,m_\text{n})\,c^2
+
+\end{aligned}
+
+$$
+
+b) $$
 
 \begin{aligned}
 
@@ -641,7 +653,63 @@ $$). Massoista laskettu a-kohdan tulos on tarkempi, koska massat on annettu kuud
 
 **Periaate:** Teho on energiaa aikayksikköä kohti, joten vuodessa säteilty energia on $E = L\,t$. Massan ja energian ekvivalenssin mukaan säteilevän tähden massa pienenee määrällä $\Delta m_\text{a} = \tfrac{E}{c^2}$. Sama massan väheneminen syntyy reaktioissa, joissa neljän vetyatomin massa on suurempi kuin yhden heliumatomin massa, joten kulunut vetymäärä saadaan massan vähenemisestä ja energiaksi muuttuvasta osuudesta.
 
-**Kaava:** a) $\Delta m_\text{a} = \dfrac{L\,t}{c^2}$; b) $f = \dfrac{4\,m_\text{H} - m({}^{4}\text{He})}{4\,m_\text{H}}$; c) $m_\text{vety} = \dfrac{\Delta m_\text{a}}{f}$; d) osuus $= \dfrac{10^{9} \cdot m_\text{vety}}{0{,}70\,M}$
+**Kaava:** a) $$\begin{aligned} &E = L\,t \\
+
+&E = \Delta m_\text{a}\,c^2 \\
+
+&\Delta m_\text{a} = \dfrac{E}{c^2} \\
+
+&= \dfrac{L\,t}{c^2}
+
+\end{aligned}
+
+$$
+
+b)
+
+$$
+
+\begin{aligned}
+
+&\Delta m = 4\,m_\text{H} - m({}^{4}\text{He}) \\
+
+&f = \dfrac{\Delta m}{4\,m_\text{H}} \\
+
+&= \dfrac{4\,m_\text{H} - m({}^{4}\text{He})}{4\,m_\text{H}}
+
+\end{aligned}
+
+$$
+
+c)
+
+$$
+
+\begin{aligned}
+
+&\Delta m_\text{a} = f\,m_\text{vety} \\
+
+&m_\text{vety} = \dfrac{\Delta m_\text{a}}{f}
+
+\end{aligned}
+
+$$
+
+d)
+
+$$
+
+\begin{aligned}
+
+&m_\text{varasto} = 0{,}70\,M \\
+
+&\text{osuus} = \dfrac{10^{9} \cdot m_\text{vety}}{m_\text{varasto}} \\
+
+&= \dfrac{10^{9} \cdot m_\text{vety}}{0{,}70\,M}
+
+\end{aligned}
+
+$$
 
 **Muunnokset:** $t = 365{,}25 \cdot 24 \cdot 3600\,\text{s} = 3{,}15576 \cdot 10^{7}\,\text{s}$ ja $1\,\text{W} \cdot 1\,\text{s} = 1\,\text{J} = 1\,\text{kg} \cdot \tfrac{\text{m}^2}{\text{s}^2}$. Osuus $f$ on suhde, joten atomimassayksikkö supistuu.
 

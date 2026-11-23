@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 831c7eb12c2a93c2
-SCOPE: delta: s8 d rubric detail (tasks.json): inline "W_air = 27,4 J − 33,9 J ≈ −6,5 J" became a two-row aligned display (= row, ≈ row); same numbers, order, signs, units; rest not re-judged. Language: fi.
+CONTENT-HASH: 12b570ae6be478bd
+SCOPE: delta (fi): commit 693d2f77fa against the version I failed (ac36248617b265a1): unit.md pysahdy 2 (one line) and teacher.md (two lines). The rest was judged in full last round and is unchanged.
 
 ## Blocking
 - (none)
 
 ## Polish
-- Earlier Polish stays recorded: s8 b "47 km/h" vs unrounded 45 km/h ("noin 45 km/h"); s7 d closing air-resistance remark is outside the task's assumption.
+- Still open from last round, none of them blocking: pysahdy 3 could add "lyhyen törmäyksen aikana"; s7 d "kuluttaa liike-energiaa" would be more exact as "menettää kitkaan enemmän energiaa"; s8 b "47 km/h" against the unrounded value of about 45 km/h; s7 d's closing remark on air resistance.
 
 ## Checked
-- E_p = 0,43 kg · 9,81 m/s² · 6,5 m ≈ 27,4 J (27,42) unchanged.
-- W_air = 27,4 J − 33,9 J ≈ −6,5 J: same operands, minus sign, unit J; only the line break before "≈" added.
-- Connector word ("ja"/"and") between two display blocks reads fine; nothing new appears.
-- Meaning equal across fi, en, fi-easy.
-- Not judged (visual role): 360 px layout.
-- Hash the same at start and end.
+- Pysahdy 2 now says: "Kitkan työ on negatiivinen, $W < 0$, koska kitkavoima on liikkeen suuntaa vastaan. Siksi se pienentää mekaanista energiaa, joka muuttuu sisäenergiaksi." The cause is now the direction of the force ($W = F_\parallel s$, $F_\parallel < 0$), and the drop in mechanical energy follows from it. This matches the theory paragraph above it, s7 b ("koska kitka on liikettä vastaan") and the Virheet entry. The A finding is fixed.
+- teacher.md, Arviointi: "muut seitsemän Osa II:n tyyppisiä (kuusi 15 ja yksi 14 pistettä), yhteensä 124 pistettä". 20 + 6·15 + 14 = 124, which matches `practice.py check` (8 tasks, 124 points). In the 65–75 min row, "muut seitsemän tehtävää" (8 tasks minus the one started in class) is right. "viisi" no longer appears in any language's teacher.md. The A finding is fixed.
+- Nothing else changed: the parent commit's tree hashes to ac36248617b265a1, the version I failed, and `git diff 693d2f77fa~1 HEAD` touches only those three lines in fi. The same three lines changed in en and fi-easy, with the same meaning. tasks.json, solutions.md, answers.py, inquiry.json and figures are untouched, so last round's recomputation still holds.
+- `practice.py check` OK. Hash 12b570ae6be478bd at start and end.

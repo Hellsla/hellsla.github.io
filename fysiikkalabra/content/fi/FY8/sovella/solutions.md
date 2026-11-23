@@ -5,7 +5,7 @@
 **Kysytty:** värejä vastaavat siirtymät ja kolmannen siirtymän aallonpituus $\lambda_3$
 **Periaate:** Kun atomi siirtyy ylemmältä energiatasolta alemmalle, se lähettää fotonin, jonka energia on tasojen erotus. Lasketaan kummankin värin fotonin energia ja verrataan sitä tasojen erotuksiin. Kolmas mahdollinen siirtymä on ylemmästä viritystilasta suoraan perustilaan.
 **Kuvaajan lukeminen:** Kuvasta luetaan perustila $0$, alempi viritystila $1{,}97\,\text{eV}$ ja ylempi viritystila $4{,}19\,\text{eV}$. Tasojen erotukset ovat $4{,}19\,\text{eV} - 1{,}97\,\text{eV} = 2{,}22\,\text{eV}$, $1{,}97\,\text{eV} - 0 = 1{,}97\,\text{eV}$ ja $4{,}19\,\text{eV} - 0 = 4{,}19\,\text{eV}$.
-**Kaava:** $E = hf = \dfrac{hc}{\lambda}$, josta kolmannelle siirtymälle $\lambda_3 = \dfrac{hc}{E_3}$
+**Kaava:** $$\begin{aligned} E &= hf \\ c &= f\lambda \\ f &= \dfrac{c}{\lambda} \\ E &= \dfrac{hc}{\lambda} \\ \lambda_3 &= \dfrac{hc}{E_3} \end{aligned}$$
 **Muunnokset:** $\lambda_\text{v} = 557{,}7 \cdot 10^{-9}\,\text{m}$ ja $\lambda_\text{p} = 630{,}0 \cdot 10^{-9}\,\text{m}$. Elektronivoltit muunnetaan sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$: $E_3 = 4{,}19 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 6{,}712 \cdot 10^{-19}\,\text{J}$.
 **Sijoitus:** Vihreä: $$\begin{aligned} E_\text{v} &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{557{,}7 \cdot 10^{-9}\,\text{m}} \\ &= 3{,}562 \cdot 10^{-19}\,\text{J} \\ &= \dfrac{3{,}562 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} \\ &= 2{,}22\,\text{eV} \end{aligned}$$, joten vihreä valo syntyy siirtymässä ylemmästä viritystilasta alempaan.
 
@@ -40,7 +40,7 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
 **Annettu:** piin energia-aukko $E = 1{,}12\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$ ja väitteen aallonpituus $1500\,\text{nm}$
 **Kysytty:** pisin havaittava aallonpituus $\lambda_\text{max}$ ja arvio väitteestä
 **Periaate:** Yksi fotoni nostaa yhden elektronin johtavuusvyölle, jos fotonin energia on vähintään $1{,}12\,\text{eV}$. Fotonin energia pienenee aallonpituuden kasvaessa, joten pisin havaittava aallonpituus vastaa juuri tätä energiaa. Säteilyn voimakkuus kertoo fotonien määrän, ei yksittäisen fotonin energiaa.
-**Kaava:** $E = \dfrac{hc}{\lambda}$, josta $\lambda_\text{max} = \dfrac{hc}{E}$
+**Kaava:** $$\begin{aligned} E &= hf \\ c &= f\lambda \\ E &= \dfrac{hc}{\lambda} \\ \lambda_\text{max} &= \dfrac{hc}{E} \end{aligned}$$
 **Muunnokset:** $E = 1{,}12 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}794 \cdot 10^{-19}\,\text{J}$
 **Sijoitus:** $$\begin{aligned} \lambda_\text{max} &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{1{,}794 \cdot 10^{-19}\,\text{J}} \\ &= 1{,}107 \cdot 10^{-6}\,\text{m} \end{aligned}$$. Väitteen säteilylle $$\begin{aligned} E &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{1500 \cdot 10^{-9}\,\text{m}} \\ &= 1{,}324 \cdot 10^{-19}\,\text{J} \\ &= \dfrac{1{,}324 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} \\ &= 0{,}83\,\text{eV} \end{aligned}$$
 **Vastaus:** Kenno havaitsee aallonpituudet $\lambda_\text{max} \approx 1110\,\text{nm}$:iin asti, joten se havaitsee revontulten vihreän ja punaisen valon. Väite on väärä: $1500\,\text{nm}$:n fotonin energia $0{,}83\,\text{eV}$ on pienempi kuin $1{,}12\,\text{eV}$. Voimakkaampi säteily tuo kennolle enemmän fotoneja, mutta yksikään niistä ei nosta elektronia johtavuusvyölle, joten pikseli ei havaitse mitään.
@@ -64,7 +64,7 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
 **Annettu:** atomimassat $m_\text{Pu} = 238{,}049560\,\text{u}$, $m_\text{U} = 234{,}040952\,\text{u}$ ja $m_\text{He} = 4{,}002603\,\text{u}$ sekä $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$
 **Kysytty:** reaktioyhtälö ja yhden hajoamisen energia $Q$
 **Periaate:** Alfahajoamisessa ytimestä lähtee helium-4-ydin, joten nukleoniluku pienenee neljällä ja järjestysluku kahdella. Reaktiotuotteiden yhteismassa on pienempi kuin lähtöytimen, ja massojen erotus vastaa vapautuvaa energiaa. Atomimassoissa ovat mukana elektronit: plutoniumatomissa on $94$ elektronia, uraaniatomissa $92$ ja heliumatomissa $2$, joten elektronien massat kumoutuvat.
-**Kaava:** ${}^{238}_{94}\text{Pu} \rightarrow {}^{234}_{92}\text{U} + {}^{4}_{2}\text{He}$ ja $Q = (m_\text{Pu} - m_\text{U} - m_\text{He})\,c^2$
+**Kaava:** ${}^{238}_{94}\text{Pu} \rightarrow {}^{234}_{92}\text{U} + {}^{4}_{2}\text{He}$ ja $$\begin{aligned} Q &= \Delta m\,c^2 \\ \Delta m &= m_\text{Pu} - m_\text{U} - m_\text{He} \\ Q &= (m_\text{Pu} - m_\text{U} - m_\text{He})\,c^2 \end{aligned}$$
 **Muunnokset:** Massavaje muunnetaan energiaksi sijoittamalla $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$.
 **Sijoitus:** $$\begin{aligned} &m_\text{Pu} - m_\text{U} - m_\text{He} \\ &= 238{,}049560\,\text{u} - 234{,}040952\,\text{u} \\ &- 4{,}002603\,\text{u} \\ &= 0{,}006005\,\text{u} \end{aligned}$$, joten $Q = 0{,}006005 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 5{,}594\,\text{MeV}$
 **Vastaus:** ${}^{238}_{94}\text{Pu} \rightarrow {}^{234}_{92}\text{U} + {}^{4}_{2}\text{He}$, ja yksi hajoaminen vapauttaa $Q \approx 5{,}59\,\text{MeV}$. Massavajeessa $0{,}006005\,\text{u}$ ja muuntokertoimessa $931{,}5\,\tfrac{\text{MeV}}{c^2}$ on kummassakin neljä merkitsevää numeroa, joten kolmen merkitsevän numeron vastaus on varmasti perusteltu; jatkossa lasketaan pyöristämättömällä arvolla $5{,}594\,\text{MeV}$.
@@ -74,7 +74,7 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
 **Annettu:** lämpöteho $P = 2000\,\text{W}$, a-kohdan $Q = 5{,}594\,\text{MeV}$, $T_{1/2} = 87{,}7\,\text{a}$, $m_\text{Pu} = 238{,}049560\,\text{u}$ ja plutoniumdioksidia $4{,}8\,\text{kg}$
 **Kysytty:** plutonium-238:n massa $m$ ja sen osuus generaattorin plutoniumista
 **Periaate:** Jokainen hajoaminen tuottaa lämpöä $Q$, joten aktiivisuus eli hajoamisia sekunnissa on teho jaettuna yhden hajoamisen energialla. Aktiivisuus on verrannollinen hajoamattomien ytimien määrään. Ytimien määrästä saadaan massa yhden atomin massan avulla.
-**Kaava:** $A = \dfrac{P}{Q}$, $A = \lambda N$, missä $\lambda = \dfrac{\ln 2}{T_{1/2}}$, joten $N = \dfrac{A}{\lambda}$ ja $m = N m_\text{Pu}$
+**Kaava:** $$\begin{aligned} P &= AQ \\ A &= \dfrac{P}{Q} \\ A &= \lambda N \\ \lambda &= \dfrac{\ln 2}{T_{1/2}} \\ N &= \dfrac{A}{\lambda} \\ m &= N m_\text{Pu} \end{aligned}$$
 **Muunnokset:** $Q = 5{,}594 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 8{,}961 \cdot 10^{-13}\,\text{J}$. $T_{1/2} = 87{,}7 \cdot 365{,}25 \cdot 24 \cdot 3600\,\text{s} = 2{,}768 \cdot 10^{9}\,\text{s}$. $$\begin{aligned} m_\text{Pu} &= 238{,}049560 \\ &\cdot 1{,}66054 \cdot 10^{-27}\,\text{kg} \\ &= 3{,}953 \cdot 10^{-25}\,\text{kg} \end{aligned}$$.
 **Sijoitus:** $A = \dfrac{2000\,\text{W}}{8{,}961 \cdot 10^{-13}\,\text{J}} = 2{,}232 \cdot 10^{15}\,\tfrac{1}{\text{s}}$, $\lambda = \dfrac{0{,}6931}{2{,}768 \cdot 10^{9}\,\text{s}} = 2{,}505 \cdot 10^{-10}\,\tfrac{1}{\text{s}}$, $N = \dfrac{2{,}232 \cdot 10^{15}\,\tfrac{1}{\text{s}}}{2{,}505 \cdot 10^{-10}\,\tfrac{1}{\text{s}}} = 8{,}911 \cdot 10^{24}$ ja $m = 8{,}911 \cdot 10^{24} \cdot 3{,}953 \cdot 10^{-25}\,\text{kg} = 3{,}52\,\text{kg}$. Plutoniumdioksidin plutoniumia on $4{,}8\,\text{kg} \cdot \dfrac{238}{238 + 2 \cdot 16} = 4{,}23\,\text{kg}$, joten osuus on $3{,}52\,\text{kg} : 4{,}23\,\text{kg} = 0{,}83$.
 **Vastaus:** Generaattorissa on oltava noin $m \approx 3{,}5\,\text{kg}$ plutonium-238:aa, kaksi merkitsevää numeroa kuten polttoaineen massassa ja tehossa. Se on noin $83\,\%$ generaattorin plutoniumista.
@@ -105,7 +105,7 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
 **Annettu:** aktiivisuus $A = 10\,\text{Bq}$, aika $t = 1\,\text{a}$, a-kohdan $Q = 8{,}961 \cdot 10^{-13}\,\text{J}$, keuhkojen massa $m = 1{,}2\,\text{kg}$, $w_\text{R} = 20$ ja $w_\text{T} = 0{,}12$
 **Kysytty:** efektiivinen annos $H_\text{E}$ vuodessa ja vertailu keskimääräiseen vuosiannokseen
 **Periaate:** Alfahiukkaset pysähtyvät muutaman solun matkalle, joten jokaisen hajoamisen energia jää keuhkokudokseen. Aktiivisuus on hajoamisia sekunnissa, ja puoliintumisaika $87{,}7\,\text{a}$ on niin pitkä, että aktiivisuus pysyy vuoden ajan likimain vakiona. Absorboitunut annos on energia massaa kohti. Alfasäteilyn painotuskerroin antaa keuhkojen ekvivalenttiannoksen, ja koska vain keuhkot säteilytetään, efektiivinen annos saadaan keuhkojen painotuskertoimella.
-**Kaava:** $E = AtQ$, $D = \dfrac{E}{m}$, $H_\text{T} = w_\text{R} D$ ja $H_\text{E} = w_\text{T} H_\text{T}$
+**Kaava:** $$\begin{aligned} E &= NQ \\ N &= At \\ E &= AtQ \\ D &= \dfrac{E}{m} \\ H_\text{T} &= w_\text{R} D \\ H_\text{E} &= w_\text{T} H_\text{T} \end{aligned}$$
 **Muunnokset:** $t = 365{,}25 \cdot 24 \cdot 3600\,\text{s} = 3{,}156 \cdot 10^{7}\,\text{s}$
 **Sijoitus:** $$\begin{aligned} E &= 10\,\tfrac{1}{\text{s}} \cdot 3{,}156 \cdot 10^{7}\,\text{s} \\ &\cdot 8{,}961 \cdot 10^{-13}\,\text{J} \\ &= 2{,}83 \cdot 10^{-4}\,\text{J} \end{aligned}$$, $D = \dfrac{2{,}83 \cdot 10^{-4}\,\text{J}}{1{,}2\,\text{kg}} = 2{,}36 \cdot 10^{-4}\,\text{Gy}$, $H_\text{T} = 20 \cdot 2{,}36 \cdot 10^{-4}\,\text{Gy} = 4{,}71 \cdot 10^{-3}\,\text{Sv}$ ja $H_\text{E} = 0{,}12 \cdot 4{,}71 \cdot 10^{-3}\,\text{Sv} = 5{,}66 \cdot 10^{-4}\,\text{Sv}$
 **Vastaus:** Efektiivinen annos olisi noin $H_\text{E} \approx 0{,}57\,\text{mSv}$ vuodessa, kaksi merkitsevää numeroa kuten massassa $1{,}2\,\text{kg}$. Se on noin kymmenesosa suomalaisen keskimääräisestä vuosiannoksesta $5{,}9\,\text{mSv}$, vaikka $10\,\text{Bq}$ on hyvin pieni aktiivisuus. Siksi plutoniumin pääsy elimistöön estetään kestävällä keraamisella polttoaineella ja tiiviillä kapseleilla.
@@ -328,10 +328,10 @@ Kulmakertoimesta saadaan $K = \dfrac{1}{k^2} = 3{,}15 \cdot 10^{4}\,\tfrac{\text
 **Annettu:** b-kohdan $K = 3{,}15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}$ ja $d = 1{,}3\,\text{cm}$, tausta $R_\text{t} = 22{,}4\,\tfrac{1}{\text{min}}$, annosnopeus $3{,}0\,\mu\text{Sv/h}$ $10\,\text{cm}$:n päässä
 **Kysytty:** etäisyys $r$, jolla nettopulssitaajuus on yhtä suuri kuin taustan, ja arvio päättelystä
 **Periaate:** b-kohdan mallin mukaan nettopulssitaajuus pienenee kuten $\tfrac{1}{(r + d)^2}$. Asetetaan se yhtä suureksi kuin taustan pulssitaajuus. Annosnopeus pienenee pistemäisestä lähteestä samalla tavalla etäisyyden neliön mukaan, joten sen voi arvioida samalle etäisyydelle.
-**Kaava:** $\dfrac{K}{(r + d)^2} = R_\text{t}$, josta $r = \sqrt{\dfrac{K}{R_\text{t}}} - d$, ja annosnopeus $H = H_{10} \left(\dfrac{10\,\text{cm}}{r}\right)^2$
+**Kaava:** $$\begin{aligned} R &= \dfrac{K}{(r + d)^2} \\ R &= R_\text{t} \\ \dfrac{K}{(r + d)^2} &= R_\text{t} \\ r &= \sqrt{\dfrac{K}{R_\text{t}}} - d \end{aligned}$$, ja annosnopeus $H = H_{10} \left(\dfrac{10\,\text{cm}}{r}\right)^2$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $r = \sqrt{\dfrac{3{,}15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}}{22{,}4\,\tfrac{1}{\text{min}}}} - 1{,}3\,\text{cm} = 37{,}5\,\text{cm} - 1{,}3\,\text{cm} = 36{,}2\,\text{cm}$ ja $H = 3{,}0\,\mu\text{Sv/h} \cdot \left(\dfrac{10\,\text{cm}}{36{,}2\,\text{cm}}\right)^2 = 0{,}23\,\mu\text{Sv/h}$
-**Vastaus:** Nettopulssitaajuus on taustan suuruinen noin $r \approx 36\,\text{cm}$:n päässä, ja annosnopeus on siellä noin $0{,}2\,\mu\text{Sv/h}$. Päättely on väärä. Lähteen säteily ei lopu, vaan sen annosnopeus pienenee taustasäteilyn suuruusluokkaan, eikä putki tällä laskenta-ajalla erota sitä taustan vaihtelusta. Kaukana lähteestä säteily on silti hyvin vähäistä, joten etäisyys on hyvä suojautumiskeino, kuten myös ajan rajoittaminen.
+**Vastaus:** Nettopulssitaajuus on taustan suuruinen noin $r \approx 36\,\text{cm}$:n päässä, ja annosnopeus on siellä noin $0{,}2\,\mu\text{Sv/h}$. Päättely on väärä. Lähteen säteily ei lopu, vaan sen annosnopeus pienenee taustasäteilyn suuruusluokkaan, ja sen kauempana peittää pian taustan satunnainen vaihtelu tällä laskenta-ajalla. Kaukana lähteestä säteily on silti hyvin vähäistä, joten etäisyys on hyvä suojautumiskeino, kuten myös ajan rajoittaminen.
 **Järkevyys:** Lähteen annosnopeus $0{,}2\,\mu\text{Sv/h}$ on samaa suuruusluokkaa kuin ulkoilman tausta $0{,}05$–$0{,}30\,\mu\text{Sv/h}$, joten pulssimittaus ja annosnopeus kertovat saman asian. Vertailuksi: $45\,\text{min}$ työskentely $10\,\text{cm}$:n päässä antaa noin $3{,}0\,\mu\text{Sv/h} \cdot 0{,}75\,\text{h} \approx 2\,\mu\text{Sv}$, kun suomalainen saa keskimäärin $5{,}9\,\text{mSv} : 365 \approx 16\,\mu\text{Sv}$ päivässä.
 
 ### Hyväksytään myös
@@ -361,7 +361,7 @@ Neutroni on siis raskaampi kuin tuotteet yhteensä, ja hajoamisessa vapautuu noi
 **Annettu:** helium-4:n massaosuus $Y = 0{,}245$
 **Kysytty:** protonien ja neutronien määrien suhde $\tfrac{N_p}{N_n}$ ytimien syntyessä
 **Periaate:** Lähes kaikki neutronit päätyivät helium-4-ytimiin, ja jokaisessa niistä on kaksi neutronia ja kaksi protonia. Jokaista heliumiin päätynyttä neutronia kohti heliumiin päätyi siis myös yksi protoni, ja heliumissa on $2N_n$ nukleonia. Oletetaan protonin ja neutronin massat yhtä suuriksi ja jätetään ytimen sidosenergian pieni vaikutus massaan huomiotta. Silloin massaosuus on sama kuin nukleonien määrien osuus.
-**Kaava:** $Y = \dfrac{2N_n}{N_n + N_p}$, josta $\dfrac{N_p}{N_n} = \dfrac{2 - Y}{Y}$
+**Kaava:** $$\begin{aligned} Y &= \dfrac{M_\text{He}}{M} \\ M_\text{He} &= 2N_n m_\text{N} \\ M &= (N_n + N_p)\,m_\text{N} \\ Y &= \dfrac{2N_n}{N_n + N_p} \\ \dfrac{N_p}{N_n} &= \dfrac{2 - Y}{Y} \end{aligned}$$, missä $m_\text{N}$ on nukleonin massa ja $M$ koko massa
 **Muunnokset:** $24{,}5\,\% = 0{,}245$
 **Sijoitus:** $\dfrac{N_p}{N_n} = \dfrac{2 - 0{,}245}{0{,}245} = \dfrac{1{,}755}{0{,}245} = 7{,}16$
 **Vastaus:** Kun ytimiä syntyi, jokaista neutronia kohti oli noin $7{,}2$ protonia. Oletuksena oli, että nukleonien massat ovat yhtä suuret ja että deuteriumiin, helium-3:een ja litiumiin jäävien neutronien määrä on pieni.
@@ -371,7 +371,7 @@ Neutroni on siis raskaampi kuin tuotteet yhteensä, ja hajoamisessa vapautuu noi
 **Annettu:** hetkellä $t = 1\,\text{s}$ suhde $1 : 6$, b-kohdan suhde $1 : 7{,}16$ ja $T_{1/2} = 609\,\text{s}$
 **Kysytty:** aika alkuräjähdyksestä ytimien syntyyn
 **Periaate:** Tarkastellaan joukkoa, jossa hetkellä $1\,\text{s}$ on yksi neutroni ja kuusi protonia. Jokainen hajoava neutroni muuttuu protoniksi, joten nukleoneja on koko ajan $7$. Kun neutroneja on jäljellä $N_n$, protoneja on $7 - N_n$. Ratkaistaan ensin, milloin niiden suhde on b-kohdan suhde, ja sitten aika hajoamislaista.
-**Kaava:** $\dfrac{7 - N_n}{N_n} = 7{,}16$, josta $N_n = \dfrac{7}{1 + 7{,}16}$. Hajoamislaista $N_n = N_0 \left(\tfrac{1}{2}\right)^{t / T_{1/2}}$, missä $N_0 = 1$, saadaan $\dfrac{t}{T_{1/2}} = \dfrac{\lg \tfrac{N_0}{N_n}}{\lg 2}$.
+**Kaava:** $$\begin{aligned} N_n + N_p &= 7 \\ \dfrac{N_p}{N_n} &= 7{,}16 \\ N_n &= \dfrac{7}{1 + 7{,}16} \\ N_n &= N_0 \left(\tfrac{1}{2}\right)^{t / T_{1/2}} \\ \dfrac{t}{T_{1/2}} &= \dfrac{\lg \tfrac{N_0}{N_n}}{\lg 2} \end{aligned}$$, missä $N_0 = 1$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $N_n = \dfrac{7}{8{,}163} = 0{,}8575$, $\dfrac{t}{T_{1/2}} = \dfrac{\lg \tfrac{1}{0{,}8575}}{\lg 2} = \dfrac{0{,}0668}{0{,}3010} = 0{,}222$, joten $t = 0{,}222 \cdot 609\,\text{s} = 135\,\text{s}$ hetkestä $1\,\text{s}$ lähtien.
 **Vastaus:** Ytimiä alkoi syntyä noin $1\,\text{s} + 135\,\text{s} \approx 140\,\text{s}$ eli noin $2\,\text{min}$ alkuräjähdyksen jälkeen. Kaksi merkitsevää numeroa riittää, koska alkusuhde tunnetaan vain likimain.
@@ -426,7 +426,7 @@ Suhteella $1 : 6$ neutroneista hajoaa vain noin $14\,\%$, suhteella $1 : 5$ noin
 **Annettu:** Oklon teho $P_\text{O} = 100\,\text{kW}$, aika $t_\text{O} = 150\,000\,\text{a}$ ja Olkiluoto 3:n lämpöteho $P_\text{OL3} = 4300\,\text{MW}$
 **Kysytty:** aika $t_\text{OL3}$, jossa Olkiluoto 3 tuottaa saman energian
 **Periaate:** Lämpöenergia on teho kertaa aika. Kun molemmat tuottavat saman energian, ajat ovat kääntäen verrannollisia tehoihin.
-**Kaava:** $P_\text{O} t_\text{O} = P_\text{OL3} t_\text{OL3}$, josta $t_\text{OL3} = \dfrac{P_\text{O}}{P_\text{OL3}}\, t_\text{O}$
+**Kaava:** $$\begin{aligned} E &= Pt \\ E_\text{O} &= E_\text{OL3} \\ P_\text{O} t_\text{O} &= P_\text{OL3} t_\text{OL3} \\ t_\text{OL3} &= \dfrac{P_\text{O}}{P_\text{OL3}}\, t_\text{O} \end{aligned}$$
 **Muunnokset:** $P_\text{O} = 100\,\text{kW} = 0{,}100\,\text{MW}$. Aikaa ei tarvitse muuntaa sekunneiksi, koska tulos saadaan suoraan vuosina.
 **Sijoitus:** $t_\text{OL3} = \dfrac{0{,}100\,\text{MW}}{4300\,\text{MW}} \cdot 150\,000\,\text{a} = 3{,}49\,\text{a}$
 **Vastaus:** Olkiluoto 3 tuottaa saman energian noin $3{,}5$ vuodessa. Teho ja aika ovat vain suuruusluokka-arvioita, joten tuloksessa on korkeintaan kaksi merkitsevää numeroa.

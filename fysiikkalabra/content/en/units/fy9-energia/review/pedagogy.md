@@ -1,23 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 0aa48c67540100e0
-SCOPE: delta: Sovella itsenäisesti tasks s8 (Skeittari half-pipessä) and s9 (Kaksi laitetta energiamittarissa) with solutions, answers.py and the changed intro sentence ("Kaksi viimeistä tehtävää lukevat tiedot kuvasta"); s1-s7 not re-judged.
+CONTENT-HASH: c28ce49ad1728e55
 
 ## Blocking
-- (none)
+None.
 
 ## Polish
-- s8, figure `fy2-1/kitka-pylvaat`: its alt text ends "Lämpöenergiaa kuvassa ei ole", while the task and solution say sisäenergia (the figure is FY2's and keeps MAOL's lämpöenergia). Harmless, since the figure shows no such bar, but a student using a screen reader meets two names for one thing.
-- s9 c: the solution takes the useful energy as mgh, i.e. the load is at rest before and after (or its kinetic energy is negligible). The task does not say so; one clause ("nostaa ... tasaisella nopeudella") would make the model explicit without revealing the method.
-- s9 a, criterion units_precision: also carries the observation "A:n suora on kolme kertaa jyrkempi". It is a good reasonableness check but is not about units or precision; `reasonableness` would fit.
-- s9 b: a lift motor running 3,0 h a day at constant 0,50 kW is a stretch but is consistent with the task's own premise (the rated power from the graph); fine for practice.
+1. New "Pysähdy ja mieti" boxes: all three answers are stated in the sentence just above the box (box 1 repeats the Key idea paragraph's "Power tells that / Efficiency tells that"; box 2 the 3.6 MJ line; box 3 the conclusion line of the derivation). They test recall of a line just read, not inference. Cheap fix with the same box position: box 3 could ask for the product ($0.90 \cdot 0.45 \cdot 0.98 \approx 0.40$) and box 2 for how many joules 2 kWh is.
+2. Box 1 begins "The problem asks…", but no problem has been stated yet. Reword to "A task asks how fast energy is transformed and how large a share of it is useful".
+3. s1c (neighbour's "1.2 kW gives 1.2 kWh") and s2d (CHP overall vs electrical efficiency) repeat two bullets of the unit's Common mistakes almost word for word, so a student who has read them recognises the trap. Reword one side.
+4. The Sovella set gives no per-task time (`minutes` empty) and the intro does not say how many tasks to pick. Nine tasks with 3 to 5 parts each is far more than the 75-minute unit. Say that the student chooses.
+5. s7 depends on a Norwegian page. The table fallback is enough, but name it in the task ("or use the table").
+6. The solution headings "Yleisiä virheitä" and "Hyväksytään myös" are Finnish in the English solutions. This is probably a parsing key, but check that the page shows English headings.
 
 ## Checked
-- Intro: nine tasks, s7 the source task, s8 and s9 the only two with a figure (`figure` field in tasks.json); the sentence is true and reveals nothing of the solutions.
-- s8: figure values (A 700/0 J, B 300/300 J, C 0/500 J) match answers.py, criteria and solution. Chain 700 -> 600 -> 500 J gives 100 J and 200 J; v = 4,7 m/s (4,71), friction 59 N (58,8), v without friction 5,6 m/s (5,58); 29 % = 200/700. Rounding follows the data (45 kg, 3,4 m: two figures; read energies exact on a 100 J grid). Tolerances cover the unrounded values.
-- s8 text states the situation, figure and zero level, and asks last; it names friction (given in the situation) but not the energy-conservation method, "three phases" or the like. Part d asks both the value and the why (2 concept points). Energy-into-heat rule respected: sisäenergia, siirtyy lämpönä; the "katoaa/muuttuu lämmöksi" misconception is named only under common mistakes.
-- s9: graph reading A 120 kJ and B 40 kJ at 80 s equals the figure's alt text; P 1,5 and 0,50 kW; cost 21,6 -> 22 EUR and 7,2 EUR (two figures, 3,0 h data); eta = 29,4/40 = 74 %; loss 0,13 kW = 26 %. The ratio check (3 : 1) is a good internal consistency.
-- Alt text names (A, B, C; laitteet A ja B) equal the task's names. Figures carry no answer values beyond what the student must read ("safe" in REUSE).
-- Calculation chains in the solutions are aligned rows; the 360 px captures of the stage were opened, but the capture set shows the guided Sovella stage and no s8 or s9 card (not found in shots.md), so open-solution layout of the new tasks is left to the visual reviewer and `check_layout.py`.
-- Skills and links (fy2-1, fy4-7, fy4-8; fy2-3, fy2-4) fit the tasks; unit remains language-neutral (answers and figure ids identical across languages).
-- English version: decimal points, same numbers, figure and criteria as the Finnish; intro says nine problems and "last two" (matches s8, s9, the only tasks with a figure).
-- Hash identical at start and end.
+- Three new boxes in unit.md. Each sits right after the paragraph or derivation it concerns, is short, and has the reveal after "---". The first two are not wrong (see Polish 1, 2).
+- The hero and chain figures are now raster images with LaTeX labels overlaid. The pictures exist, the aria-labels are kept, and the data labels stay LaTeX. Visual judges legibility.
+- Nine tasks, each in an unfamiliar authentic context: off-grid solar, a CHP plant, a heating-data graph (build, slope, extrapolate), a three-way energy-supply decision, a student report to critique and then redesign, pumped storage, a real source (winter test), a figure of energy bars, and a graph of two energy meters. The variety is good and the demand rises within each task. Headings and prompts do not name the formula.
+- I recomputed the numbers: s1 1.54 kWh needs 1.84 kWh of production, so the cloudy day (1.5 kWh) is not enough. s2 fuel power 111 MW gives 0.27 and 0.90, and separate production needs 157 MW, which is +63 t/h. s3 slope 4.9 kWh/K, which is 204 W/K, and the line reaches 12 kWh at 16.5 °C. s4 5.3 GWh against 3.0 GWh, 1.7 h of battery, 2100 t. s5 83 %, with errors given a direction. s6 245 MWh to 216 MWh, 36 MW, 0.75. s9 368 W useful. All consistent with the solutions.
+- Rubrics: shared keys plus specific detail. No points go to irrelevant things. The s5c and s7c criteria are observable. Solutions follow the seven-part form and give reasonableness checks. The common mistakes are real, such as rated power used instead of average, GWh not converted, and reading kWh as kW.
+- Coverage doc: not in this packet, so not judged.
+- The hash is unchanged at the end.

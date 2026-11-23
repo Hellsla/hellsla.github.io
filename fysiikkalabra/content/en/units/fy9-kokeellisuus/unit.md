@@ -154,6 +154,12 @@
 ### A plan answers six questions
 In the matriculation exam, a “plan an experiment” task is marked on whether someone else could carry out the experiment from your answer. A good plan says **what is changed**, **what is measured and with which instrument**, **what is kept constant**, **how many measurements and repetitions are made**, **how the result is calculated from a graph** and **which sources of error are the largest and how they are reduced**. In an experiment one variable is changed at a time, because otherwise the cause of a change in the result cannot be inferred.
 
+```pysahdy
+Why is only one variable changed at a time in an experiment?
+---
+If two variables changed at the same time, the cause of the change in the result could not be inferred: either one could have caused it.
+```
+
 <svg data-fig="kartta" viewBox="0 0 380 754" role="img" aria-label="Recognition chart: which method fits the question of an experimental task? There are many results: the best estimate is the mean, the sum of the results divided by their number. How much does the result vary: half the range, the largest minus the smallest result divided by two. State the final result: the mean plus or minus the error estimate. Is the uncertainty small: the relative uncertainty is the error estimate divided by the mean. The quantities depend linearly: fit a line y equals k x plus b. Result from the slope: the slope is read from two points of the line far apart, k equals delta y per delta x. The model passes through the origin but the line does not: the constant b is not zero, which suggests a systematic error." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="710" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
@@ -215,6 +221,12 @@ The **measurement error** is the unknown difference between the result and the t
 
 A random error shows as the spread of repeated results, and in the mean its effect is damped. A **systematic error** shifts all results in the same direction, and repetition does not remove it. It is revealed by comparing with a known value or from a graph: the line does not pass through the origin, although according to the model it should.
 
+```pysahdy
+The watch used to time by hand shows hundredths of a second. Is the measurement uncertainty therefore of the order of a hundredth of a second?
+---
+No. The resolution does not alone give the uncertainty, and the reaction time makes the uncertainty of a hand-timed interval of the order of tenths of a second.
+```
+
 ## Formula: Processing a measurement result
 The best estimate of repeated measurements is the mean, and in this course the estimate of the spread is half the range:
 
@@ -239,6 +251,12 @@ y = kx + b
 ```
 
 where $k = \tfrac{\Delta y}{\Delta x}$ is the slope, read from two points of the line far apart, and $b$ is the point where the line cuts the vertical axis. The model holds only in the measured range, and the line is extended outside it only with good reason. When the quantity sought comes from the slope, all the points affect the result and the random error of a single point less so.
+
+```pysahdy
+Why is a result obtained from the slope more reliable than one calculated from a single measurement point?
+---
+All the points affect the slope, so the effect of the random error of a single point is smaller.
+```
 
 If according to the model the line should pass through the origin but $b$ clearly differs from zero, the measurement probably has a systematic error that is the same at every point. It shifts the line but does not change the slope. In the figure, the mass of oil has been weighed in a beaker that was not tared:
 

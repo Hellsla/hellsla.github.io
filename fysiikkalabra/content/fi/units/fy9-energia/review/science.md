@@ -1,21 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 0fb7773df145af69
-SCOPE: delta: the new Sovella itsenäisesti tasks s8 (skater on a half-pipe, figure fy2-1/kitka-pylvaat) and s9 (two devices on an energy meter, figure fy2-3/graph-ab) with solutions, answers.py, and the changed intro sentence (fi); s1-s7 not re-judged.
+CONTENT-HASH: db20474744c40f0e
+SCOPE: full: unit.md (three new `pysahdy` boxes judged first; hero and ketju now raster images), inquiry.json, teacher.md, Sovella tasks s1–s9 with solutions, answers.py, figures.py.
 
 ## Blocking
 - (none)
 
 ## Polish
-- s8 a, "Reasonableness" in the model solution: "Sisäenergiaa syntyy suunnilleen yhtä paljon kummallakin osamatkalla, mikä sopii kitkan tasaiseen vaikutukseen" is not supported by the task: the path lengths A-B and B-C are not given, and in the figure's parabola A-B is the shorter arc (about 40 % of the path) yet gets as much (100 J) as B-C. Suggest dropping the clause or saying only that energy is produced on both parts. Same sentence in en and fi-easy.
-- s8: the energies are read from bars on a 100 J grid (700, 300, 500 J) and v is given with two figures "like the mass"; defensible since the bars end on gridlines, but a teacher note that the bar values are exact would forestall the question.
-- s8: the 3,4 m path is not tied to a drop height; the figure is schematic, so no check is possible. Not an error.
+- s8 a, Järkevyys: "Sisäenergiaa syntyy suunnilleen yhtä paljon kummallakin osamatkalla, mikä sopii kitkan tasaiseen vaikutukseen" is still not supported, because the task gives no lengths for the A–B and B–C parts of the path (carried over from the last review). Drop the clause.
+- s7 d: the report text does say Lucid had the largest gap (46 %). But the page's own chart data give Opel Grandland 262/484 = −45,9 % and Lucid 520/960 = −45,8 %, so the two are effectively tied. "Testin raportin mukaan" attributes the claim correctly; "yksi suurimmista" would be safer.
+- teacher.md: "Kaikki aineistot ovat keksittyjä esimerkkejä, eivät tilastoja" contradicts s7, which uses real NAF data. "muut viisi tehtävää" is out of date now that the set has nine tasks.
+- s2 c, Järkevyys: a saving of 0,29 is "lähes kolmannes" or "noin 30 %", not "noin kolmannes".
+- Inquiry `lataus`, feedback on the correct option: 600 Wh : 120 W = 5,0 h holds only if 120 W is the power that goes into the battery. If 120 W is the charger's input power and η < 1, the time is 5,0 h/η. The ratio and the correct option are unaffected.
+- `prior` writes E = Hm while the Kaava section writes Q = Hm. Harmless.
 
 ## Checked
-- Hashes at start and end identical (0fb7773df145af69); `practice.py check units/fy9-energia` OK (9 tasks, 134 points, all three languages).
-- Recomputed s8: Em 700/600/500 J; dB 100 J, dC 200 J; v = sqrt(1000/45) = 4,71 -> 4,7 m/s; F = 200/3,4 = 58,8 -> 59 N; weight 441 N, 13 %; v0 = sqrt(1400/45) = 5,58 -> 5,6 m/s; 200/700 = 29 %. All match tasks.json, solutions and answers.py. Energy wording follows P1 (internal energy, transferred as heat; "muuttuu lämmöksi" only as a listed mistake).
-- Figure kitka-pylvaat: bars A 700/0, B 300/300, C 0/500 on 100 J gridlines, B placed at height 300/700 of the rim; alt text names A, B, C as the task does; the figure shows no thermal energy or total, so nothing is given away. Task text does not name the method.
-- Recomputed s9: PA 120/80 = 1,5 kW, PB 0,50 kW; 90 h; 135 and 45 kWh; 21,6 -> 22 EUR and 7,2 EUR; E_hyoty = 150*9,81*20 = 29,4 kJ; eta 0,7358 -> 74 %; P_hyoty 368 W; loss 132 W -> 0,13 kW (26 %, eta + 26 % = 100 %). Consistent in all files; accepted alternatives (73,6 %, 132 W) correct.
-- Figure graph-ab: lines through the origin to (80 s; 120 kJ) and (80 s; 40 kJ), labels A and B as in the task, no powers or slope triangle; alt text consistent. Times (3,0 h, 30 days) are exact-ish given with two figures; results rounded to two figures.
-- Intro: "Yhdeksän" / nine / "Kaksi viimeistä" agree with 9 tasks where only s8 and s9 carry a figure; s7 is still the source task. Same in all languages.
-- en and fi-easy: numbers, point splits, criteria and answers identical to fi; only wording differs.
-- Limit: the committed captures (shots.md) show the unit page without the independent tasks, so layout with solutions open at 360 px is not judged here (visual reviewer's role).
+- Hash at start and at end: db20474744c40f0e.
+- Pysähdy boxes: (1) teho tells how fast and hyötysuhde how large a share: correct, and matches Ydinajatus. (2) kWh is a unit of energy, 1 kWh = 3,6 MJ, kW is a unit of power: correct, and matches the conversion above it. (3) 0,90 · 0,45 · 0,98 = 0,397 < 0,45: each factor is below 1, so the product is below the smallest factor. The reasoning is correct and agrees with the johda box and the figure.
+- Ketju figure (now webp): I measured the bands from the image at 0,347 px/MW: 500, 450, 198 MW and losses 50, 247,5, 4 MW. All agree within a pixel, so the claim that it is drawn to scale holds. The labels match 500·0,90·0,45·0,98 = 198 MW.
+- One script recomputed every number in the unit text (320 MJ ≈ 90 kWh, 17 h), lt-1…lt-6, aineisto (bar heights 400/350/150/140 MW from the SVG; 42,86 % and every listed mistake value), sauna, sahkoauto, pelletti, hissi, tarkistus-1…3, the teacher.md −8 °C sum, and s1–s9 including every intermediate value and "hyväksytään myös" value. All agree with tasks.json, solutions.md and answers.py. Least squares for s3 gives −4,89 kWh/°C and 204 W/K.
+- s7 data checked against the NAF page and its range-test article (fetched today): all three cars' ranges, the 24-car mean of −37,8 %, the 2025 figure of 18 % (−6…+8 °C), Inster stopping at −16 °C, Folldal −32 °C, and consumptions of 21,16 and 21,6 kWh/100 km all match.
+- Energy wording follows P1 throughout. Rubric points match the tasks. Each choice question has exactly one correct option, and every distractor's feedback is correct.

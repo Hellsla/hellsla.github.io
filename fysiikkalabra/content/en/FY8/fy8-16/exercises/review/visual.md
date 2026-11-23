@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 3dcb0cf5337b2375
+CONTENT-HASH: 07f5a40aa7a1ccdb
+SCOPE: delta numbers,reflow from 3dcb0cf5337b2375 base 4b05399
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L3-06 solution, Reasonableness — the display equation still splits the sentence ("Check by multiplying:" / "the same as 0.10 c"); carried from the earlier report, put the remark in one chain or end the sentence before the block.
+- [Minor] Answer and Reasonableness lines: units such as $\tfrac{\text{km/s}}{\text{Mpc}}$ stand as stacked fractions in running text and raise the line height (untouched text).
+- [Minor] No true 390 px capture of the open solutions; phone wrapping rests on check_layout.py (360 px, en/fi/fi-easy: OK).
 
 ## Checked
-- Delta: solutions.md paragraph cuts only. Opened review/shots/fy8-16-open-exercises-L3-1280-9.png and -10.png (L3-06 solution, every part open): paragraphs, aligned chains, units in KaTeX and the answer chip render cleanly, nothing clipped.
-- Hash re-run at the end: unchanged.
+- Delta (solutions.md: \frac to \dfrac in the Kaava step). Opened fy8-16-open-exercises-1280-3 (d = v/H0 inline Formula, substitution), L2-1280-2 (16-11: inline lambda = lambda_now/1100 and aligned E, f block) and L2-1280-3 (E = hc/lambda aligned rows, substitutions).
+- Fractions now read at full display size in the aligned blocks and in the inline Kaava leads; equals signs aligned, nothing clipped, blocks inside their cards.
+- check_layout.py fy8-16 --width 360: OK in all three languages with solutions open.
+- Hash re-run at end: unchanged.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4
