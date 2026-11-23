@@ -2,7 +2,7 @@
 **Given:** energy of the battery when fully charged $W = 64\,\text{kWh}$, charge level rises from $15\,\%$ to $80\,\%$
 **Find:** energy to be stored in the battery $W_\text{battery}$ in kilowatt-hours
 **Principle:** The charge level tells what fraction of the full energy of the battery is stored in it. So the fraction of the full energy given by the difference of the charge levels has to be transferred to the battery.
-**Formula:** $W_\text{battery} = (s_2 - s_1) W$, where $s_1$ and $s_2$ are the charge levels as decimal numbers
+**Formula:** $$\begin{aligned} W_1 &= s_1 W \\ W_2 &= s_2 W \\ W_\text{battery} &= W_2 - W_1 \\ W_\text{battery} &= (s_2 - s_1) W \end{aligned}$$, where $s_1$ and $s_2$ are the charge levels as decimal numbers
 **Conversions:** $s_1 = 15\,\% = 0.15$ and $s_2 = 80\,\% = 0.80$
 **Substitution:** $W_\text{battery} = (0.80 - 0.15) \cdot 64\,\text{kWh} = 0.65 \cdot 64\,\text{kWh} = 41.6\,\text{kWh}$
 **Answer:** $42\,\text{kWh}$, two significant figures like the energy of the battery $64\,\text{kWh}$.
@@ -24,7 +24,7 @@ From an ordinary socket, charging is done with a current of at most $8\,\text{A}
 **Given:** power $P = 11\,\text{kW}$, three phases, phase voltage $U = 230\,\text{V}$
 **Find:** current $I$ of one phase conductor in amperes
 **Principle:** The station draws the same current from each of the three phase conductors, and each phase transfers a power $UI$. The total power is therefore three times the power of one phase.
-**Formula:** $P = 3UI$, so $I = \dfrac{P}{3U}$
+**Formula:** $$\begin{aligned} P &= 3P_1 \\ P_1 &= UI \\ P &= 3UI \\ I &= \dfrac{P}{3U} \end{aligned}$$
 **Conversions:** $P = 11\,\text{kW} = 11\,000\,\text{W}$
 **Substitution:** $I = \dfrac{11\,000\,\text{W}}{3 \cdot 230\,\text{V}} = \dfrac{11\,000\,\text{W}}{690\,\text{V}} = 15.94\,\text{A}$
 **Answer:** $16\,\text{A}$, two significant figures like the power $11\,\text{kW}$.
@@ -55,7 +55,7 @@ From an ordinary socket, charging is done with a current of at most $8\,\text{A}
 **Find:** energy taken from the grid $W_\text{grid}$ in kilowatt-hours
 **Principle:** When the power is constant, the energy is power times time. In the graph the power is constant in two periods, so the energy is the sum of the areas of two rectangles.
 **Reading the graph:** In the first period the power is $P_1 = 11\,\text{kW}$ for the time $0\text{–}2.0\,\text{h}$, so $t_1 = 2.0\,\text{h}$. In the second period the power is $P_2 = 5.5\,\text{kW}$ for the time $2.0\text{–}3.0\,\text{h}$, so $t_2 = 1.0\,\text{h}$. After that the power is zero.
-**Formula:** $W_\text{grid} = P_1 t_1 + P_2 t_2$
+**Formula:** $$\begin{aligned} W_1 &= P_1 t_1 \\ W_2 &= P_2 t_2 \\ W_\text{grid} &= W_1 + W_2 \\ W_\text{grid} &= P_1 t_1 + P_2 t_2 \end{aligned}$$
 **Conversions:** Not needed: with kilowatts and hours the energy comes out directly in kilowatt-hours.
 **Substitution:** $$\begin{aligned} W_\text{grid} &= 11\,\text{kW} \cdot 2.0\,\text{h} \\ &+ 5.5\,\text{kW} \cdot 1.0\,\text{h} \\ &= 22\,\text{kWh} + 5.5\,\text{kWh} \\ &= 27.5\,\text{kWh} \end{aligned}$$
 **Answer:** $28\,\text{kWh}$, two significant figures like the values read from the graph.
@@ -65,7 +65,7 @@ From an ordinary socket, charging is done with a current of at most $8\,\text{A}
 **Given:** $U = 230\,\text{V}$, $I = 16\,\text{A}$, one phase, energy of the battery $60\,\text{kWh}$, charge level $20\,\% \to 80\,\%$, $\eta = 90\,\%$
 **Find:** charging time $t$ in hours
 **Principle:** $60\,\%$ of its energy has to be transferred to the battery. The power is constant, so the energy taken from the grid is power times time, and the fraction given by the efficiency of it is stored in the battery. The power of a single-phase station is voltage times current.
-**Formula:** $\eta P t = W_\text{battery}$ and $P = UI$, so $t = \dfrac{W_\text{battery}}{\eta U I}$
+**Formula:** $$\begin{aligned} \eta &= \dfrac{W_\text{battery}}{W_\text{grid}} \\ W_\text{grid} &= Pt \\ P &= UI \\ W_\text{battery} &= \eta U I t \\ t &= \dfrac{W_\text{battery}}{\eta U I} \end{aligned}$$
 **Conversions:** $W_\text{battery} = (0.80 - 0.20) \cdot 60\,\text{kWh} = 36\,\text{kWh}$; $UI = 230\,\text{V} \cdot 16\,\text{A} = 3680\,\text{W} = 3.68\,\text{kW}$; $\eta = 0.90$
 **Substitution:** $t = \dfrac{36\,\text{kWh}}{0.90 \cdot 3.68\,\text{kW}} = \dfrac{36\,\text{kWh}}{3.312\,\text{kW}} = 10.87\,\text{h}$
 **Answer:** $11\,\text{h}$, two significant figures like the efficiency $90\,\%$.
@@ -77,7 +77,7 @@ From an ordinary socket, charging is done with a current of at most $8\,\text{A}
 **Principle:** There is a main fuse in each phase conductor, and the currents through the same phase conductor are added (chapter *Kirchhoff's laws and potential in a circuit*).
 
 The heater draws the same current from each phase, so its current is obtained from the formula $P = 3UI$. What is left of the $25\,\text{A}$ remains for the car.
-**Formula:** $I_\text{heater} + I_\text{charger} = I_\text{main}$ and $I_\text{heater} = \dfrac{P_\text{heater}}{3U}$, so $I_\text{charger} = I_\text{main} - \dfrac{P_\text{heater}}{3U}$, where $I_\text{main} = 25\,\text{A}$
+**Formula:** $$\begin{aligned} I_\text{heater} + I_\text{charger} &= I_\text{f} \\ P_\text{heater} &= 3UI_\text{heater} \\ I_\text{charger} &= I_\text{f} - I_\text{heater} \\ I_\text{charger} &= I_\text{f} - \dfrac{P_\text{heater}}{3U} \end{aligned}$$, where $I_\text{f} = 25\,\text{A}$
 **Conversions:** $P_\text{heater} = 9.0\,\text{kW} = 9000\,\text{W}$
 **Substitution:** $I_\text{charger} = 25\,\text{A} - \dfrac{9000\,\text{W}}{3 \cdot 230\,\text{V}} = 25\,\text{A} - 13.04\,\text{A} = 11.96\,\text{A}$
 **Answer:** $11\,\text{A}$, two significant figures like the current of the main fuse $25\,\text{A}$. The current may be at most $11.96\,\text{A}$, so the limit is rounded down: $12\,\text{A}$ would exceed the current of the main fuse.
@@ -87,7 +87,7 @@ The heater draws the same current from each phase, so its current is obtained fr
 **Given:** length of cable $l = 30\,\text{m}$, cross-sectional area $A = 2.5\,\text{mm}^2$, current $I = 16\,\text{A}$, $\rho = 1.7 \cdot 10^{-8}\,\Omega\cdot\text{m}$
 **Find:** voltage $U_\text{loss}$ lost in the cable in volts
 **Principle:** The copper conductors of the cable are a resistor through which the charging current flows. The current goes to the station along the phase conductor and returns along the neutral conductor, so the length of copper is $2l$. By Ohm's law the voltage across a resistance is resistance times current.
-**Formula:** $U_\text{loss} = RI$ and $R = \rho \dfrac{2l}{A}$, so $U_\text{loss} = \rho \dfrac{2l}{A} I$
+**Formula:** $$\begin{aligned} U_\text{loss} &= RI \\ R &= \rho \dfrac{2l}{A} \\ U_\text{loss} &= \rho \dfrac{2l}{A} I \end{aligned}$$
 **Conversions:** $A = 2.5\,\text{mm}^2 = 2.5 \cdot (10^{-3}\,\text{m})^2 = 2.5 \cdot 10^{-6}\,\text{m}^2$
 **Substitution:** $$\begin{aligned} U_\text{loss} &= 1.7 \cdot 10^{-8}\,\Omega\cdot\text{m} \\ &\cdot \dfrac{2 \cdot 30\,\text{m}}{2.5 \cdot 10^{-6}\,\text{m}^2} \cdot 16\,\text{A} \\ &= 0.408\,\Omega \cdot 16\,\text{A} \\ &= 6.53\,\text{V} \end{aligned}$$
 **Answer:** $6.5\,\text{V}$, two significant figures like the resistivity $1.7 \cdot 10^{-8}\,\Omega\cdot\text{m}$ and the cross-sectional area $2.5\,\text{mm}^2$.
@@ -97,7 +97,7 @@ The heater draws the same current from each phase, so its current is obtained fr
 **Given:** into the battery in a year $W_\text{battery} = 3000\,\text{kWh}$, efficiencies $\eta_1 = 82\,\%$ (socket) and $\eta_2 = 92\,\%$ (charging station), price $a = 15\,\text{c/kWh}$
 **Find:** saving in a year $\Delta K$ in euros
 **Principle:** The same energy goes into the battery either way, but the energy taken from the grid is the energy going into the battery divided by the efficiency. The saving comes from less being taken from the grid with the charging station, and it is paid at the same price.
-**Formula:** $W_\text{grid} = \dfrac{W_\text{battery}}{\eta}$ and $K = a W_\text{grid}$, so $\Delta K = a \left(\dfrac{W_\text{battery}}{\eta_1} - \dfrac{W_\text{battery}}{\eta_2}\right)$
+**Formula:** $$\begin{aligned} \eta &= \dfrac{W_\text{battery}}{W_\text{grid}} \\ W_\text{grid} &= \dfrac{W_\text{battery}}{\eta} \\ K &= a W_\text{grid} \\ \Delta K &= K_1 - K_2 \\ \Delta K &= a \left(\dfrac{W_\text{battery}}{\eta_1} - \dfrac{W_\text{battery}}{\eta_2}\right) \end{aligned}$$
 **Conversions:** $\eta_1 = 0.82$, $\eta_2 = 0.92$ and $a = 15\,\text{c/kWh} = 0.15\,\text{€/kWh}$
 **Substitution:** $$\begin{aligned} &\Delta K \\ &= 0.15\,\text{€/kWh} \\ &\cdot \left(\dfrac{3000\,\text{kWh}}{0.82} - \dfrac{3000\,\text{kWh}}{0.92}\right) \\ &= 0.15\,\text{€/kWh} \\ &\cdot (3658.5\,\text{kWh} - 3260.9\,\text{kWh}) \\ &= 0.15\,\text{€/kWh} \cdot 397.7\,\text{kWh} \\ &= 59.7\,\text{€} \end{aligned}$$
 **Answer:** $60\,\text{€}$, two significant figures like the efficiencies $82\,\%$ and $92\,\%$.
@@ -109,7 +109,7 @@ The saving is small compared with the price of a charging station; a more import
 **Given:** the current grows from $I_1 = 10\,\text{A}$ to $I_2 = 16\,\text{A}$, the resistance $R$ of the cable stays the same
 **Find:** increase in the heating power as a percentage
 **Principle:** By Joule's law the power dissipated in the cable is $RI^2$. When $R$ stays the same, the power is directly proportional to the square of the current, so the ratio of the powers is the square of the ratio of the currents.
-**Formula:** $P = RI^2$, so $\dfrac{P_2}{P_1} = \dfrac{R I_2^2}{R I_1^2} = \left(\dfrac{I_2}{I_1}\right)^2$ and the increase is $\dfrac{P_2}{P_1} - 1$
+**Formula:** $$\begin{aligned} P_1 &= R I_1^2 \\ P_2 &= R I_2^2 \\ \dfrac{P_2}{P_1} &= \left(\dfrac{I_2}{I_1}\right)^2 \\ \text{increase} &= \dfrac{P_2}{P_1} - 1 \end{aligned}$$
 **Conversions:** Not needed: the amperes cancel. The increase is converted to a percentage by multiplying by a hundred.
 **Substitution:** $\dfrac{P_2}{P_1} = \left(\dfrac{16\,\text{A}}{10\,\text{A}}\right)^2 = 1.6^2 = 2.56$, so the increase is $2.56 - 1 = 1.56 = 156\,\%$
 **Answer:** $1.6 \cdot 10^{2}\,\%$ (calculated $156\,\%$), two significant figures like the currents $10\,\text{A}$ and $16\,\text{A}$.
@@ -121,7 +121,7 @@ The saving is small compared with the price of a charging station; a more import
 **Principle:** The energy going into the battery divided by the efficiency has to be taken from the grid, and it has to be taken in the time available, so the power is at least the energy divided by the time.
 
 The power of a three-phase station is $P = 3UI$ when every phase carries the same current.
-**Formula:** $\eta \cdot 3UI \cdot t = W_\text{battery}$, so $I = \dfrac{W_\text{battery}}{3 \eta U t}$
+**Formula:** $$\begin{aligned} \eta &= \dfrac{W_\text{battery}}{W_\text{grid}} \\ W_\text{grid} &= Pt \\ P &= 3UI \\ W_\text{battery} &= 3\eta U I t \\ I &= \dfrac{W_\text{battery}}{3 \eta U t} \end{aligned}$$
 **Conversions:** $t = 7.00 - 22.00 = 9.0\,\text{h}$; $W_\text{battery} = 40\,\text{kWh} = 40\,000\,\text{Wh}$ so that the result comes out in amperes; $\eta = 0.90$
 **Substitution:** $I = \dfrac{40\,000\,\text{Wh}}{3 \cdot 0.90 \cdot 230\,\text{V} \cdot 9.0\,\text{h}} = \dfrac{40\,000\,\text{Wh}}{5589\,\text{Vh}} = 7.157\,\text{A}$
 **Answer:** $7.2\,\text{A}$, two significant figures like the energy $40\,\text{kWh}$ and the efficiency $90\,\%$. The current must be at least the calculated value, so the limit is rounded up.
@@ -163,7 +163,7 @@ For example, a station of $11\,\text{kW}$ transfers $11\,\text{kWh}$ in an hour.
 **Find:** a) the peak power and its time, b) the largest charging power of the station $P_\text{s}$ during the peak in kilowatts, c) when $11\,\text{kW}$ is allowed
 **Principle:** The main fuse limits the current of each phase conductor, and the loads are divided equally between the phases, so the power of the whole house can be at most $3UI_\text{f}$. The powers of the house and the station are added, and what the house does not use is left for the station.
 **Reading the graph:** From the table the largest power is $6.8\,\text{kW}$ at $19\text{–}20$.
-**Formula:** $P_\text{max} = 3UI_\text{f}$ and $P_\text{house} + P_\text{s} \le P_\text{max}$, so $P_\text{s} = 3UI_\text{f} - P_\text{house}$, where $I_\text{f} = 25\,\text{A}$
+**Formula:** $$\begin{aligned} P_\text{max} &= 3UI_\text{f} \\ P_\text{house} + P_\text{s} &\le P_\text{max} \\ P_\text{s} &= 3UI_\text{f} - P_\text{house} \end{aligned}$$, where $I_\text{f} = 25\,\text{A}$
 **Conversions:** $3UI_\text{f}$ is calculated in watts and converted to kilowatts: $17\,250\,\text{W} = 17.25\,\text{kW}$.
 **Substitution:** $P_\text{max} = 3 \cdot 230\,\text{V} \cdot 25\,\text{A} = 17\,250\,\text{W} = 17.25\,\text{kW}$, so $P_\text{s} = 17.25\,\text{kW} - 6.8\,\text{kW} = 10.45\,\text{kW}$
 **Answer:** In the answer box $10.4\,\text{kW}$, one decimal like the powers in the table. The power may be at most $10.45\,\text{kW}$, so the limit is rounded down. a) The peak power is at $19\text{–}20$.
@@ -183,7 +183,7 @@ In reality, peaks within the hour may require load management.
 **Principle:** In charging, only the fraction of the energy of the battery given by the difference of the charge levels is transferred to the battery, not the whole battery.
 
 Of the energy taken from the grid only the fraction given by the efficiency is stored in the battery, so the charging time is calculated from the energy going into the battery divided by the product of the efficiency and the power.
-**Formula:** $\eta P t = W_\text{battery}$, so $t = \dfrac{W_\text{battery}}{\eta P}$
+**Formula:** $$\begin{aligned} \eta &= \dfrac{W_\text{battery}}{W_\text{grid}} \\ W_\text{grid} &= Pt \\ W_\text{battery} &= \eta P t \\ t &= \dfrac{W_\text{battery}}{\eta P} \end{aligned}$$
 **Conversions:** $W_\text{battery} = (0.80 - 0.20) \cdot 60\,\text{kWh} = 36\,\text{kWh}$ and $\eta = 0.92$
 **Substitution:** $t = \dfrac{36\,\text{kWh}}{0.92 \cdot 7.4\,\text{kW}} = \dfrac{36\,\text{kWh}}{6.808\,\text{kW}} = 5.288\,\text{h}$
 **Answer:** In the answer box $5.3\,\text{h}$, two significant figures like the efficiency $92\,\%$.
@@ -200,7 +200,7 @@ b) The correct charging time is $5.3\,\text{h}$.
 **Find:** a) energy taken from the grid $W_\text{grid}$ in kilowatt-hours, b) average power $P_\text{avg}$ in kilowatts
 **Principle:** The power changes with time, so the energy is not power times time. The energy is the area under the $(t, P)$ graph, and it is obtained by adding the areas of trapezoids half an hour wide. The average power is the energy divided by the total time.
 **Reading the graph:** The points are joined with straight lines, and the area of each half-hour interval is the mean of the powers at the end points of the interval times $\Delta t = 0.5\,\text{h}$. The first and last powers are $11.0\,\text{kW}$ and $1.4\,\text{kW}$, and in between are $11.0$, $10.8$, $8.7$, $5.9$ and $3.1\,\text{kW}$.
-**Formula:** interval by interval $W_i = \Delta t \cdot \dfrac{P_i + P_{i+1}}{2}$, the sum over all the intervals $W_\text{grid} = \sum W_i$, and $P_\text{avg} = \dfrac{W_\text{grid}}{t}$
+**Formula:** $$\begin{aligned} W_i &= \Delta t \cdot \dfrac{P_i + P_{i+1}}{2} \\ W_\text{grid} &= \sum W_i \\ W_\text{grid} &= \Delta t \left(\dfrac{P_\text{first} + P_\text{last}}{2} + \sum P_\text{mid}\right) \\ P_\text{avg} &= \dfrac{W_\text{grid}}{t} \end{aligned}$$, where $P_\text{first}$ and $P_\text{last}$ are the first and last power and $P_\text{mid}$ the powers in between
 **Conversions:** Not needed: kilowatts times hours gives kilowatt-hours.
 **Substitution:** The sum of the intermediate powers is $$\begin{aligned} &11.0 + 10.8 + 8.7 + 5.9 + 3.1 \\ &= 39.5\,\text{kW} \end{aligned}$$ and the mean of the end points $(11.0 + 1.4) : 2 = 6.2\,\text{kW}$, so $$\begin{aligned} W_\text{grid} &= 0.5\,\text{h} \\ &\cdot (6.2\,\text{kW} + 39.5\,\text{kW}) \\ &= 22.85\,\text{kWh} \end{aligned}$$ and $P_\text{avg} = \dfrac{22.85\,\text{kWh}}{3.0\,\text{h}} = 7.617\,\text{kW}$
 **Answer:** In the answer box $23\,\text{kWh}$, two significant figures like the powers. a) The energy taken from the grid is $23\,\text{kWh}$.
@@ -247,7 +247,7 @@ that is, $t \approx 11\,\text{h}$. Losses make charging longer, so both are too 
 **Principle:** The yearly cost is the amount consumed times the price. With the electric car the energy taken from the grid is paid for, so the energy consumed from the battery is divided by the efficiency.
 
 With the petrol car the litres bought are paid for. For both, the consumption is directly proportional to the distance driven, so the consumption per $100\,\text{km}$ is multiplied by the number $s : 100\,\text{km}$.
-**Formula:** $W_\text{grid} = \dfrac{s}{100\,\text{km}} \cdot \dfrac{w}{\eta}$, $K_\text{e} = a W_\text{grid}$, $K_\text{p} = \dfrac{s}{100\,\text{km}} \cdot v b$ and $\Delta K = K_\text{p} - K_\text{e}$, where $w = 16.0\,\text{kWh}$ and $v = 6.50\,\textsf{l}$
+**Formula:** $$\begin{aligned} n &= \dfrac{s}{100\,\text{km}} \\ W_\text{battery} &= n w \\ W_\text{grid} &= \dfrac{W_\text{battery}}{\eta} = \dfrac{n w}{\eta} \\ K_\text{e} &= a W_\text{grid} \\ K_\text{p} &= n v b \\ \Delta K &= K_\text{p} - K_\text{e} \end{aligned}$$, where $w = 16.0\,\text{kWh}$ and $v = 6.50\,\textsf{l}$
 **Conversions:** $a_\text{home} = 15\,\text{c/kWh} = 0.15\,\text{€/kWh}$ and $\eta = 0.900$
 **Substitution:** The sum of the monthly distances is $s = 14\,640\,\text{km}$, so $s : 100\,\text{km} = 146.4$. Electric car: $W_\text{grid} = 146.4 \cdot 16.0\,\text{kWh} : 0.900 = 2602.7\,\text{kWh}$ and $$\begin{aligned} K_\text{e} &= 0.15\,\text{€/kWh} \cdot 2602.7\,\text{kWh} \\ &= 390.4\,\text{€} \end{aligned}$$.
 
@@ -269,7 +269,7 @@ The energy taken from the grid, $17.8\,\text{kWh}$ per hundred kilometres, is la
 **Principle:** The currents through the same phase conductor are added, and the sum may be at most the current of the main fuse. The loads of the house are divided equally between the phases, so the current of the house per phase is obtained from the formula for three-phase power.
 
 A single-phase station loads only one phase, so what is left of that phase remains for it. The copper conductors of the cable are a resistor, in which the power according to Joule's law is $RI^2$.
-**Formula:** $P_\text{house} = 3UI_\text{house}$, so $I_\text{house} = \dfrac{P_\text{house}}{3U}$; $I_\text{house} + I_\text{s} \le I_\text{f}$, so $I_\text{s} = I_\text{f} - I_\text{house}$; $P_\text{cable} = \rho \dfrac{2l}{A} I^2$
+**Formula:** $$\begin{aligned} P_\text{house} &= 3UI_\text{house} \\ I_\text{house} &= \dfrac{P_\text{house}}{3U} \\ I_\text{house} + I_\text{s} &= I_\text{f} \\ I_\text{s} &= I_\text{f} - I_\text{house} \\ R &= \rho \dfrac{2l}{A} \\ P_\text{cable} &= R I^2 = \rho \dfrac{2l}{A} I^2 \end{aligned}$$
 **Conversions:** $$\begin{aligned} P_\text{house} &= 6.0\,\text{kW} + 3.3\,\text{kW} \\ &+ 1.8\,\text{kW} + 0.90\,\text{kW} \\ &= 12.0\,\text{kW} \\ &= 12\,000\,\text{W} \end{aligned}$$ and $A = 2.5\,\text{mm}^2 = 2.5 \cdot 10^{-6}\,\text{m}^2$
 **Substitution:** $I_\text{house} = \dfrac{12\,000\,\text{W}}{3 \cdot 230\,\text{V}} = 17.39\,\text{A}$ and $I_\text{s} = 25\,\text{A} - 17.39\,\text{A} = 7.609\,\text{A}$. The resistance of the cable is $$\begin{aligned} R &= 1.7 \cdot 10^{-8}\,\Omega\cdot\text{m} \\ &\cdot \dfrac{2 \cdot 30\,\text{m}}{2.5 \cdot 10^{-6}\,\text{m}^2} \\ &= 0.408\,\Omega \end{aligned}$$, so $P_\text{cable} = 0.408\,\Omega \cdot (7.609\,\text{A})^2 = 23.6\,\text{W}$ and at a current of $16\,\text{A}$ $P_\text{cable} = 0.408\,\Omega \cdot (16\,\text{A})^2 = 104.4\,\text{W}$.
 **Answer:** In the answer box $7.6\,\text{A}$, two significant figures like the powers of the loads. The current may be at most the calculated value, so the limit is rounded down. a) The current of the house is $17\,\text{A}$ in each phase conductor.
@@ -288,7 +288,7 @@ The power of the station would be only $230\,\text{V} \cdot 7.609\,\text{A} \app
 **Find:** cost of the electricity of the house $K$ in euros from 18 to 22
 **Principle:** When the power is constant, the energy is power times time, and the cost is energy times price. In the graph the power is constant during each hour, so the energy is the sum of the areas of four rectangles.
 **Reading the graph:** The power is $P_1 = 2\,\text{kW}$ at 18–19, $P_2 = 5\,\text{kW}$ at 19–20, $P_3 = 7\,\text{kW}$ at 20–21 and $P_4 = 3\,\text{kW}$ at 21–22. Each period lasts $\Delta t = 1.0\,\text{h}$.
-**Formula:** $W = (P_1 + P_2 + P_3 + P_4) \Delta t$ and $K = a W$
+**Formula:** $$\begin{aligned} W_i &= P_i \Delta t \\ W &= W_1 + W_2 + W_3 + W_4 \\ W &= (P_1 + P_2 + P_3 + P_4) \Delta t \\ K &= a W \end{aligned}$$
 **Conversions:** $a = 16\,\text{c/kWh} = 0.16\,\text{€/kWh}$
 **Substitution:** $$\begin{aligned} W &= (2\,\text{kW} + 5\,\text{kW} + 7\,\text{kW} \\ &+ 3\,\text{kW}) \\ &\cdot 1.0\,\text{h} \\ &= 17\,\text{kWh} \end{aligned}$$ and $K = 0.16\,\text{€/kWh} \cdot 17\,\text{kWh} = 2.72\,\text{€}$
 **Answer:** $2.7\,\text{€}$, two significant figures like the values read from the graph.
