@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: e9115553fe1fb6c4
+CONTENT-HASH: 7013f5c43b745e8d
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] figure kartta (selita-1280-1, selita-390-1) — the recognition diagram uses a serif face and lowercase words, unlike the KaTeX type of the other figures, and at 1280 px stays narrow with an empty column beside it — consider KaTeX labels in the same typeface; optional.
-- [Minor] sovella task 1 solution (sovella-390-4) — the Sijoitus row breaks inside "7,5 \cdot 10^5 V/m" on a phone, and "F = -35,95 \mu N" is then answered as "36 \mu N" without saying the sign only gives direction — add "(suuruus)" to the answer line.
-- [Minor] sovella task 1 solution (sovella-390-6) — "1 N = 10^12 pN" appears as a lone conversion line; fine, but the unit conversion could sit with the others.
+- [Minor] sovella s4 b) mallivastaus — the line "Linjan nimellisjännite … $\tfrac{20\,\text{kV}}{\sqrt{3}} \approx 12\,\text{kV}$:n jännitteessä" sets a fraction chain inside running text; it renders legibly at 1280 px, but check the 390 px wrap. A fix is optional.
+- [Minor] sovella s4 a) — the resistance row sits in its own display box with a trailing comma ("… $\Omega$,"), then the text continues "joten …". It reads fine, but it is a slight rhythm break. Optional.
 
 ## Checked
-- Captures opened: top-1280, intro-390-1, selita-390-1/2/3/6, selita-1280-1, sovella-390-1/4/6/7/8/9. Figures seen: hero, kartta, kipina, levyt, etuvastus (390 px); s1 text solutions and the changed Sovella task wording (sovella-390-9, charging time) read in place.
-- Pysähdy ja mieti boxes render cleanly with the answer inside the box. KaTeX renders everywhere seen, no red source, no overflow; solution chains wrap in aligned rows.
-- Captures current for hash e9115553fe1fb6c4 (stamp.txt). s3 graphs not opened separately; fy9-sahkokentta-s3 figures not judged beyond the packet inventory.
+- Contact sheets 1, 2, 9, 10, 12 and 14 (the opening, ennusta, tutki, selita, esimerkit, tehtävät, tarkista, teacher notes and the Sovella solutions).
+- At readable size: stage-exercises-1280-1 (task card, Ydintehtävä layout) and stage-exercises-1280-25 and -26 (the changed s4 solution a), b) and c) with the new b) wording and Yleisiä virheitä). The text is current for hash 7013f5c43b745e8d.
+- At contact-sheet scale: the figures (hero, kartta, kipina, levyt, etuvastus, s1 voimakuvio, s3 graphs). I did not open each fig-N-390 capture at full size. The earlier PASS covered them, and the diff touched only s4 b) text.
+- In the changed s4 b) text: units are in LaTeX with case endings ("$12\,\text{kV}$:n"), the decimal comma is used, `\cdot` is used, and there are no plain-text quantities and no KaTeX errors. The wording is fluent: it separates the line voltage $20\,\text{kV}$ from the phase voltage $12\,\text{kV}$, calls $4\,\text{mm}$ a lower bound and not a safe distance, and the Yleisiä virheitä items match.
+- Layout: no clipping or overflow is visible, reading width is consistent, and open solutions stay inside their cards.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

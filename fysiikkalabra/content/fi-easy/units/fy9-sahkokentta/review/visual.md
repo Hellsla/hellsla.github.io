@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: debd72cf8d478220
+CONTENT-HASH: fe2ecfbd0b95d72a
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] stage-selita-1280-1 — the narrow `kartta` figure (380 px wide) stands beside empty space in the 660 px column on a laptop, so a tall empty strip sits to its right — let the figure share a row with the text it explains, or centre it. Shared layout, not unit-specific.
-- [Minor] third "Pysähdy ja mieti" answer (stage-selita-390-2) — the chain `U = Ed ≈ 3 MV/m · 2 mm = 6 kV` mixes ≈ and = on the last step; the result of exact inputs is `=` throughout, or ≈ throughout as in the intro text.
+- [Minor] kartta figure at 1280 px (selita-1280-1) — the tall recognition diagram (380 x 780) stands in the left column with an empty area beside it, because the paragraph that follows is not about it. This is a layout property of the figure, not a defect. — Optional: put the figure after a shorter block so it can sit beside text.
+- [Minor] Sovella s4 b solution (exercises-1280-26) — the chain `d = U/E_max = 12·10^3 V / 3·10^6 V/m ≈ 4 mm` uses small inline fractions. They are legible at 1280 px but small at 390 px. — Fine as it is. A display line would help only if a student reports trouble.
 
 ## Checked
-- Captures opened: stage-selita-390-1, -390-2, -390-4 (phone, boxes 1 and 2, derivation cards), stage-selita-1280-1, -1280-2, -1280-4 (laptop, all three stop-think boxes, kipina figure, kaava tables, derivations). I did not open the other captures, the contact sheets or the exercise captures, so the full-page scope is only partly covered.
-- Stop-think boxes: the green left-border box with the small caps label, the question, and the "Vastaus" disclosure inside the same box. Readable at 390 px and 1280 px, the answer's maths wraps inside the box, nothing clipped, clear difference from the "Johda itse" cards. Every number with a unit is LaTeX. Captures show all boxes open; the closed state was not captured.
-- Finnish: the three questions are plain, one idea each, in glossary terms. The answers state the reason (negative charge, d in the denominator).
+- Contact sheets 1 and 14, as a triage of the opening, theory, example, exercises and Sovella parts.
+- intro/top at 390 px (the Pohdinta page, hero figure, "Tällä tunnilla opit", Pohjatiedot).
+- selita-390-2 (kipina figure with the 2 mm Pysähdy ja mieti box, formulas beside it), selita-390-3 (kaavat blocks and the `levyt` figure), selita-1280-1 (Teoria with the `kartta` diagram).
+- sovella-390-7 and -8 (a worked solution with hints, the Muunnokset, Sijoitus and Vastaus blocks, and Järkevyys).
+- exercises-1280-26: the changed Sovella s4 b wording, with the solution open. The text reads fluently. $20\,\text{kV}/\sqrt{3} \approx 12\,\text{kV}$:n, the $4\,\text{mm}$ and the $1{,}2\,\text{A}$ are all in LaTeX with correct case endings. KaTeX shows no red source, the reading width is fine and nothing is clipped.
+- I did not open every one of the roughly 180 captures. The earlier PASS covered the rest, and the diff only touches the s4 b solution and task wording.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

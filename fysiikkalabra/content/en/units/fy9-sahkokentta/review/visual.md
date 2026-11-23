@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e1ef3a1aeef83571
+CONTENT-HASH: 12b4cb1f1fce7b8a
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] unit.md, "Stop and think" box 3 and the kartta chart: the capacitor energy is $E = \tfrac12 CU^2$ in the chart and formula block but $W = \tfrac12 CU^2$ in the spark figure and Prior knowledge; one symbol in the unit would read more steadily (for science: MAFY symbol check).
-- [Minor] Stop-and-think boxes: the Answer is shown open only because the capture opens every box; no issue seen, but the closed default was not captured.
+- [Minor] Task 5.2-4 model answer b), inline fractions $\tfrac{20\,\text{kV}}{\sqrt{3}}$ and $\tfrac{U}{E_\text{max}}$ sit in running text at 1280 px and read small; no clipping, readable. Optional: set the d-chain on its own display row.
+- [Minor] Hint box 3 of the defibrillator task shows its formula in a white inset inside a beige box; fine, only slightly heavier than hint 2.
 
 ## Checked
-- Captures opened: intro-390-1, intro-1280, selita-390-1, selita-390-2, selita-390-5, selita-1280-1 (all three aside.stop-think boxes: electron force, 2 mm spark, doubled plate distance).
-- The three boxes: green left rule, small-caps label "STOP AND THINK", question, collapsible Answer; readable at 390 px and 1280 px, within the reading column, no clipping or overflow, formulas (units upright with thin spaces, aligned chain with ≈ and =) render without red source. They sit after the paragraph they test and do not collide with figures or the Derive-it-yourself box.
-- English: natural, consistent with the surrounding text; all quantities are inline LaTeX. Figures (hero, kartta, kipina) legible at 390 px, labels LaTeX; the exercise and sovella captures were not re-opened (deterministic checks clean per packet).
-- Hash at start and end identical: e1ef3a1aeef83571.
+- Captures are current for this hash (shots stamp 12b4cb1f1fce7b8a). Contact sheets 1, 11, 15, 16, 17 for triage.
+- Changed text, task 5.2-4 "A bird, a fishing rod and a fallen conductor": exercises-1280-26 (model answer a, start of b), -27 (end of b, c, common mistakes), -28 (marking a, start of b), -29 (marking b, c, point total). Wording of the part b model answer (nominal 20 kV between phases, about 12 kV to earth, d about 4 mm, lower-limit remark, current through the angler) reads naturally. Consistent with the rubric criteria; all quantities are LaTeX with upright units and thin spaces; the aligned chain U = RI renders without red source; no clipping or overflow in the card.
+- Sovella-stage captures (sovella-1280-6, sovella-390-8): the defibrillator task with hints and solution at both widths, layout intact. Earlier-reviewed parts of the page (figures, simulation) are unchanged by the diff and were not re-opened.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish (English) 4 · accessibility 5
