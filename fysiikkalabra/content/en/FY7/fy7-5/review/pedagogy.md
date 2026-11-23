@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e8dbb88bdb2870f0
+CONTENT-HASH: e749bb3a8e234fac
 ## Blocking
-(none)
-## Vanhan sisällön löydökset
 (none)
 ## Polish
 (none)
-## Notes
-Adding 'through one turn' removes the ambiguity about the flux and matches the lesson's definition of Delta Phi (flux through one turn) and the formula e = N*dPhi/dt. Answer 8.0 V is correct.
 ## Checked
-batch delta review, round 2: Checked: pysahdy block against the Faraday's law paragraph and formula.
+- inquiry.json transfer-task solution, Reasonableness block: the swept-area rate is now written with its unit, 0.50 m · 4.0 m/s = 2.0 m²/s. The old text gave 2.0 m², which is the wrong unit for a rate. The next step, 0.25 T · 2.0 m²/s = 0.50 Wb/s = 0.50 V, now follows unit by unit, and the same value follows from e = vBl.
+- The answer 0.50 V and the rest of the solution are unchanged and keep the seven-step form.
+- Picture files and lesson.md figures: teacher-approved, not judged.
+- Hash re-run at the end with --lang en: unchanged (e749bb3a8e234fac).
