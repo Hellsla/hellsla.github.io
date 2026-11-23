@@ -1,6 +1,7 @@
 VERDICT: PASS
 CONTENT-HASH: 488bea21891a1bfc
-SCOPE: delta — fy7-10 exercises solutions.md Kaava and Sijoitus of task 10-22 (apparent depth) and the approved protractor figure (10-13); layout checked in captures at 1280 px
+SCOPE: delta numbers,teacher-figure from 799cb028f0c08717 base 146d1b737ca97eeaaeace34f65a0e2ba3434576b
+Covered: fy7-10 exercises solutions.md Kaava and Sijoitus of task 10-22, and the approved protractor figure (10-13); layout checked at 1280 px
 
 ## Blocking
 

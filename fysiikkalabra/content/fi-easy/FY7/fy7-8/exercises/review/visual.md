@@ -1,6 +1,7 @@
 VERDICT: PASS
 CONTENT-HASH: e7ab328442b3a9cb
-SCOPE: delta — fy7-8 exercises solutions.md, Kaava blocks of tasks 8-22 (savings) and the graph-reading task; layout checked in captures at 1280 px
+SCOPE: delta numbers,reflow from 0bdd189e90983d9e base c48271b22b25f0c65ec8fe6c389dee6351710fd9
+Covered: fy7-8 exercises solutions.md, Kaava blocks of tasks 8-22 and the graph-reading task; layout checked at 1280 px
 
 ## Blocking
 
