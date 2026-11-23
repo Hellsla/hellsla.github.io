@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 73ba5f0f571657b0
+CONTENT-HASH: 23a62c16c4efc8c8
+none
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions.md: the second paragraph starts mid-argument ("Väite ..."); acceptable, each paragraph is one idea.
+- [Minor] solutions.md 10-9 Kaava: the first row "v = (x2-x1)/Δt" is not a basic equation of its own; acceptable.
 
 ## Checked
-- Delta round 1: solutions.md only, long solution paragraphs split in two (no figure or formula change).
-- Captures taken afresh (the packet's shots were absent) with scripts/screenshot.py fy5-10 --lang fi-easy; opened fy5-10-open-exercises-1280-7 (split Mallivastaus in the open card).
-- Open solution cards at 1280 px: spacing between the split paragraphs is even, formulas and boxes intact, no gap or overflow; the Mallivastaus/Perustelut text reads as before in the same order.
-- Display formulas keep punctuation inside the box, decimal comma, thin-space units.
-- Not opened: the 390 px captures (the change is text breaks in the same column).
+- Delta round 1: Kaava steps of solutions.md rewritten as aligned symbolic chains.
+- Opened open-exercises-1280-2 (10-3), -4 (10-5), -5, -6 (10-8, unchanged Kaava), -7, -8, -9 (10-10) in fi-easy.
+- Kaava boxes: rows aligned at `=`, fractions in display size, no clipping or overflow, spacing between steps even, Sijoitus/Vastaus/Järkevyys unchanged.
+- Not opened: 390 px captures, the five-row 10-6 and 10-9 cards (same component, same aligned block).
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5
