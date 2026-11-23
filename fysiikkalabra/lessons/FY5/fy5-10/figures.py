@@ -42,7 +42,7 @@ def types():
     f = Fig("fy510-types", 412, "Kaavakuva, ei mittakaavassa. Ylhäällä poikittainen aalto: naru on siniaallon muotoinen, ja sininen "
             "nuoli osoittaa aallon etenemissuunnan oikealle. Kolmessa narun kohdassa pystysuora kaksipäinen nuoli näyttää, "
             "että kohta liikkuu ylös ja alas eli kohtisuoraan etenemissuuntaa vastaan. Alhaalla pitkittäinen aalto: pitkän "
-            "kierrejousen kierrokset ovat paikoin tiheässä (tihentymä) ja paikoin harvassa (harvennus). Yhden kierroksen "
+            "kierrejousen kierrokset ovat paikoin tiheässä (tihentymä) ja paikoin harvassa (harventuma). Yhden kierroksen "
             "yllä vaakasuora kaksipäinen nuoli näyttää, että kierros liikkuu edestakaisin jousen suuntaisesti. Sininen nuoli "
             "osoittaa tämänkin aallon etenemissuunnan oikealle.", anim=True)
     P = WAVE_PERIOD
