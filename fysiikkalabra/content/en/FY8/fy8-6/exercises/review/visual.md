@@ -1,5 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: e4dcc85503760ad7
+SCOPE: delta numbers,reflow,wording from 6fa3173777f1fcd9 base 4b05399
 
 ## Blocking
 (none)
