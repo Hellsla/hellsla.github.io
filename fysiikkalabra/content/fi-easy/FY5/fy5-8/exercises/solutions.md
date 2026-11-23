@@ -104,7 +104,7 @@
 **Annettu:** jousivakio $k = 200\,\text{N/m}$, puristuma $x = 3{,}0\,\text{cm}$, lelun massa $m = 50\,\text{g}$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** nousukorkeus $h$ lähtökohdasta yksikössä $\text{m}$
 **Periaate:** Ilmanvastus ja jousen massa jätetään huomiotta, joten mekaaninen energia säilyy. Lähtökohdassa lelu on levossa. Silloin energia on puristetun jousen potentiaalienergiaa. Korkeimmassa kohdassa lelu on hetken levossa. Silloin koko energia on painovoiman potentiaalienergiaa, kun nollataso on lähtökohdassa.
-**Kaava:** $$\begin{aligned} E_\text{p} &= \tfrac{1}{2}kx^2 \\ E_\text{p} &= mgh \\ h &= \dfrac{E_\text{p}}{mg} = \dfrac{kx^2}{2mg} \end{aligned}$$
+**Kaava:** $$\begin{aligned} E_\text{alku} &= E_\text{loppu} \\ \tfrac{1}{2}kx^2 &= mgh \\ h &= \dfrac{kx^2}{2mg} \end{aligned}$$
 **Muunnokset:** $x = 3{,}0\,\text{cm} = 0{,}030\,\text{m}$ ja $m = 50\,\text{g} = 50 \cdot 0{,}001\,\text{kg} = 0{,}050\,\text{kg}$
 **Sijoitus:** $h = \dfrac{200\,\tfrac{\text{N}}{\text{m}}\cdot(0{,}030\,\text{m})^2}{2\cdot 0{,}050\,\text{kg}\cdot 9{,}81\,\text{m/s}^2} = \dfrac{0{,}18\,\text{J}}{0{,}981\,\text{N}} = 0{,}1835\,\text{m}$
 **Vastaus:** $0{,}18\,\text{m}$ eli noin $18\,\text{cm}$, kaksi merkitsevää numeroa kuten puristumassa $3{,}0\,\text{cm}$ ja massassa $50\,\text{g}$.

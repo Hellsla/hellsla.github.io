@@ -339,7 +339,7 @@ akselit 0
 ```
 **Formula:** Without friction ($F_\mu = 0$): $$\begin{aligned} \Sigma F_y &= N\cos\alpha - mg = 0 \\ \Sigma F_x &= N\sin\alpha = m\dfrac{v_0^2}{r} \\ \tan\alpha &= \dfrac{N\sin\alpha}{N\cos\alpha} \\ \tan\alpha &= \dfrac{v_0^2}{g\,r} \\ v_0 &= \sqrt{g\,r\tan\alpha} \end{aligned}$$
 
-With friction: $$\begin{aligned} \Sigma F_x &= N\sin\alpha + \mu_0 N\cos\alpha \\ \Sigma F_x &= m\dfrac{v^2}{r} \\ \Sigma F_y &= N\cos\alpha - \mu_0 N\sin\alpha \\ \Sigma F_y &= mg \end{aligned}$$
+With friction: $$\begin{aligned} N\sin\alpha + \mu_0 N\cos\alpha &= m\dfrac{v^2}{r} \\ N\cos\alpha - \mu_0 N\sin\alpha &= mg \end{aligned}$$
 
 The equations are divided by each other, so that $N$ and $m$ cancel:
 

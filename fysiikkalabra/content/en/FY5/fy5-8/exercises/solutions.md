@@ -110,7 +110,7 @@ The mass of the car itself was not needed, because only the changes in the force
 **Principle:** Air resistance and the mass of the spring are neglected, so mechanical energy is conserved. At the starting point the toy is at rest, and the energy is the elastic potential energy of the compressed spring.
 
 At the highest point the toy is momentarily at rest, so all the energy is gravitational potential energy, taking the zero level at the starting point.
-**Formula:** $$\begin{aligned} E_\text{p} &= \tfrac{1}{2}kx^2 \\ E_\text{p} &= mgh \\ h &= \dfrac{E_\text{p}}{mg} = \dfrac{kx^2}{2mg} \end{aligned}$$
+**Formula:** $$\begin{aligned} E_\text{start} &= E_\text{end} \\ \tfrac{1}{2}kx^2 &= mgh \\ h &= \dfrac{kx^2}{2mg} \end{aligned}$$
 **Conversions:** $x = 3.0\,\text{cm} = 0.030\,\text{m}$ and $m = 50\,\text{g} = 50 \cdot 0.001\,\text{kg} = 0.050\,\text{kg}$
 **Substitution:** $h = \dfrac{200\,\tfrac{\text{N}}{\text{m}}\cdot(0.030\,\text{m})^2}{2\cdot 0.050\,\text{kg}\cdot 9.81\,\text{m/s}^2} = \dfrac{0.18\,\text{J}}{0.981\,\text{N}} = 0.1835\,\text{m}$
 **Answer:** $0.18\,\text{m}$ or about $18\,\text{cm}$, two significant figures like the compression $3.0\,\text{cm}$ and the mass $50\,\text{g}$.

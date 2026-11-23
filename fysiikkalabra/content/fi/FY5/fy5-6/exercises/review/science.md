@@ -1,13 +1,27 @@
 VERDICT: PASS
-CONTENT-HASH: 7cc36b31da39ce67
+CONTENT-HASH: 6686402cbc67b037
 
 ## Blocking
 
 ## Polish
+- content/fi/FY5/fy5-6/exercises/solutions.md (L1-03), Kaava: the block goes from `\gamma\dfrac{Mm}{r^2} = m\dfrac{v^2}{r}` straight to `a_\text{n} = \dfrac{\gamma M}{r^2}`. The step $a_\text{n} = \tfrac{v^2}{r}$ is not shown. Either write the second row as `= m a_\text{n}` or add that row.
+- solutions.md (L3-02), Kaava: the block ends with the separate rows $v_1$ and $v_2$ and stops short of the combined form. The rule is to simplify to the end, so add `\Delta v = \sqrt{\gamma M/(R+h_2)} - \sqrt{\gamma M/(R+h_1)}` as the last row (the old text had it).
 
 ## Checked
-- The hash was the same at the start and at the end. Round 2. `git diff 09d57eb5ac..HEAD` changes only L2-09 (the task text: `*…*` changed to `<em>…</em>`, same words; the solution's Vastaus split into paragraphs, and the outer-planet sentence rewritten) and one sentence in L2-04's Vastaus (why the heights are exact model values). No line of answers.py changed.
-- Round-1 Polish (Uranus outside the "1–3 %" range) is fixed. I recomputed T²/a³ against Earth from the NASA values in the source notes: Mercury +0,15 %, Venus +0,06 %, Mars −0,04 %, Jupiter −0,20 %, Saturn −1,26 %, Uranus −0,33 %, Neptune −2,46 %. The spread of the five-planet table is 0,35 %. The text now says "noin 0,2 %", "alle 0,4 %", 1,3 %, 0,3 % and 2,5 %, and these are right.
-- L2-09 d is unchanged: 365,2 d · (228,0/149,6)^1,5 = 687,12 d, and with 227,9 it is 686,67 d. The difference from 687,0 d is 0,02 %. The physics (Kepler III holds for ellipses with the semi-major axis; the planet's mass is negligible) is unchanged and right.
-- L2-04: Δv = 1,13 m/s is unchanged. The new reason (the task gives the heights no uncertainty) is consistent with the one-figure remark that follows it.
-- The unchanged exercises rest on the round-1 recomputation of all 23 numeric answers (round-1 report, hash fcb321d5570d6cec), in which every answer was within 0,4 % of my value.
+- The hash was the same at the start and the end. I judged only the diff: 19 Kaava steps were rewritten. Sijoitus, answers, units and tolerances are unchanged (the diffs of exercises.json and answers.py are empty).
+- Every new block starts from $\Sigma F = m a_\text{n}$ with gravitation as the only force, as the lesson's Kaava says. Each solves for the asked quantity in symbols, with $r = R + h$ wherever a height is given.
+- The algebra is right:
+  - $r^3 = \gamma M T^2/(4\pi^2)$ and $T = 2\pi\sqrt{r^3/(\gamma M)}$
+  - $M = \tfrac{4\pi^2}{\gamma}\tfrac{r^3}{T^2}$
+  - $v = \sqrt{gR}$
+  - the ratio $\sqrt{r_2/r_1}$
+  - the synodic $t = T_\text{A}T_\text{B}/(T_\text{B} - T_\text{A})$
+  - $T^2 \propto r^3$ for d)
+- L2-08 (Halley): the circular-orbit ratio is what the task asks for ("ympyräradan ratanopeuksien suhde näillä säteillä"). The Vastaus says the real orbit is an ellipse that the model does not describe, so the new circular-motion derivation leaves no wrong picture.
+- L1-10: $a = \gamma M/r^2$ uses the mean distance, and the figure supports the near-circle assumption.
+- I recomputed every number in one script. All of them match:
+  - 7,44 km/s; 12,0 h; 0,224; 1,02; 1,63
+  - 9570 km; 3,36; 1,68; 650 N
+  - 1,70·10⁴ km; 1,13 m/s; 84,4 min; 17,3; 29,79
+  - 7,45 and 3,87 kN; 5,93 mm/s²; 1,45; 7,72; 687,1 d
+  - 92,4 / 105,0 min and 12,9 h
