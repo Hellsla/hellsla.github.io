@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 4758dd726dc82581
+CONTENT-HASH: b8ddb2da9bed5014
+none
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] fy5-9 L3-1280-6 (9-18, spring-constant regression) — the Formula block is nine rows tall, mostly one short equation per row, so it is the longest block in the set — acceptable as a derivation (each row is a step); optional: nothing needed.
 
 ## Checked
-- Delta, round 1 (English): solutions.md only, paragraph splits in Principle, Model answer, Reading the graph and Substitution blocks; no word or formula changed.
-- Opened the current captures of the opened-solutions pages (stamp matches this hash) at 1280 px, several parts around the split paragraphs (fy5-9 open-exercises L1/L2/L3 tiles); split paragraphs render as separate short paragraphs inside the solution card, spacing and rules between steps intact, formulas and KaTeX boxes unclipped, no overflow, no empty gaps.
-- Formula rows, units (thin space, upright), colon division and answer boxes unchanged and consistent. Decimal point in English is correct.
-- Did not open every capture: layout and a11y checks cover the rest.
+- Delta (Kaava steps as aligned symbolic chains; no figure changed). Opened fy5-9 open-exercises-L3-1280-2 (9-20 end, 9-21 start), L3-1280-6 (nine-row regression block), L3-1280-9 (pendulum, seven-row block end and substitution).
+- Equals signs align, one step per row, symbolic order then substitution intact; no clipping or overflow. The shorter two- to four-row blocks and the ⇒ row of 9-25 not opened individually.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

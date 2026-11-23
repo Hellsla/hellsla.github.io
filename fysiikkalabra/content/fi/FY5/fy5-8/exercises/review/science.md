@@ -15,7 +15,7 @@ CONTENT-HASH: 50ffe8c82ceb5c83
 - L3-01 uses $\Delta F = k\,\Delta x$, which follows from linearity and is stated in the Periaate.
 - L2-06 uses $x = L - L_0$, the extension, not the length. This is right.
 - L3-03: $F_1 = -k_1x$ and $F_2 = -k_2x$ are the force components, and $|\Sigma F| = (k_1+k_2)x$.
-- The paragraph splits in L1-07, L2-05 and L3-04 change no wording or physics.
+- The paragraph splits in L1-07, L2-05 and L2-08 change no wording or physics.
 - I recomputed every changed task in one script, and all of them match:
   - L1: 9000 N/m; 0,15 m
   - L2: 75 N/m and 0,24 J; 500 N/m; 0,54 J; 24,525 N/m; 0,60 J
