@@ -48,7 +48,13 @@ $$. Green light is in the middle of the visible range, and the energy of its pho
 **Given:** energy gap $E_\text{g} = 1.42\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Asked:** the wavelength $\lambda$ of the light of the LED in nanometres
 **Principle:** In an LED an electron falls from the conduction band into a hole of the valence band and gives up its energy as one photon. The energy of the photon is approximately equal to the energy gap, $\tfrac{hc}{\lambda} \approx E_\text{g}$.
-**Formula:** $\dfrac{hc}{\lambda} = E_\text{g}$, so $\lambda = \dfrac{hc}{E_\text{g}}$
+**Formula:** The photon energy is $E = hf$ and $c = f\lambda$. The photon energy equals the energy gap, $E = E_\text{g}$, so $$
+\begin{aligned}
+E_\text{g} &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\text{g}}
+\end{aligned}
+$$
 **Conversions:** $E_\text{g} = 1.42\,\text{eV} = 1.42 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 2.2748 \cdot 10^{-19}\,\text{J}$; the result from metres to nanometres, $1\,\text{m} = 10^{9}\,\text{nm}$
 **Substitution:** $$
 \begin{aligned}
@@ -69,7 +75,13 @@ $$. The wavelength is over $700\,\text{nm}$, so the light is infrared. That fits
 **Given:** slope of the fitted line $k = 4.10 \cdot 10^{-15}\,\text{V}\,\text{s}$, elementary charge $e = 1.602 \cdot 10^{-19}\,\text{C}$
 **Asked:** the Planck constant $h$ in the unit $\text{J}\,\text{s}$
 **Principle:** At the threshold voltage the energy received by an electron is approximately the energy of a photon, $eU_\text{k} \approx hf$. So the threshold voltage is approximately a line with respect to the frequency, $U_\text{k} \approx \tfrac{h}{e} f$, whose slope in the model is about $\tfrac{h}{e}$.
-**Formula:** $k = \dfrac{h}{e}$, so $h = ek$
+**Formula:** At the threshold voltage $eU_\text{k} = hf$, and the line is $U_\text{k} = kf$, so $$
+\begin{aligned}
+U_\text{k} &= \frac{h}{e}\,f \\
+k &= \frac{U_\text{k}}{f} = \frac{h}{e} \\
+h &= ek
+\end{aligned}
+$$
 **Conversions:** None are needed: $\text{C} \cdot \text{V}\,\text{s} = \text{J}\,\text{s}$, because $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
 **Substitution:** $h = 1.602 \cdot 10^{-19}\,\text{C} \cdot 4.10 \cdot 10^{-15}\,\text{V}\,\text{s} = 6.568 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Answer:** $6.57 \cdot 10^{-34}\,\text{J}\,\text{s}$, three significant figures like the slope $4.10 \cdot 10^{-15}\,\text{V}\,\text{s}$.
@@ -84,7 +96,13 @@ $$. In a measurement based on threshold voltages a difference of a few per cent 
 **Given:** wavelength $\lambda = 470\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$
 **Asked:** the smallest voltage, that is the threshold voltage $U_\text{k}$, in volts
 **Principle:** An LED emits light only when each electron receives from the voltage source at least approximately the energy of one photon. At the threshold voltage the energy $eU_\text{k}$ of an electron is equal to the energy $\tfrac{hc}{\lambda}$ of a photon.
-**Formula:** $eU_\text{k} = \dfrac{hc}{\lambda}$, so $U_\text{k} = \dfrac{hc}{e\lambda}$
+**Formula:** At the threshold voltage the electron's energy is one photon's energy, $eU_\text{k} = E$, and $E = hf$, $c = f\lambda$, so $$
+\begin{aligned}
+eU_\text{k} &= hf \\
+&= \frac{hc}{\lambda} \\
+U_\text{k} &= \frac{hc}{e\lambda}
+\end{aligned}
+$$
 **Conversions:** $\lambda = 470\,\text{nm} = 470 \cdot 10^{-9}\,\text{m}$; $1\,\tfrac{\text{J}}{\text{C}} = 1\,\text{V}$
 **Substitution:** $$
 \begin{aligned}
@@ -104,7 +122,13 @@ $$. The voltage is greater than that of a red LED, about $1.9\,\text{V}$, becaus
 **Given:** peak wavelength $\lambda = 605\,\text{nm}$, threshold voltage $U_\text{k} = 1.95\,\text{V}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$
 **Asked:** the value of the Planck constant $h$ from the measurement of one LED, in the unit $\text{J}\,\text{s}$
 **Principle:** We assume that at the threshold voltage the energy $eU_\text{k}$ received by an electron is exactly the energy $\tfrac{hc}{\lambda}$ of one photon. The Planck constant can be solved from the equation.
-**Formula:** $eU_\text{k} = \dfrac{hc}{\lambda}$, so $h = \dfrac{eU_\text{k}\lambda}{c}$
+**Formula:** At the threshold voltage the electron's energy is one photon's energy, $eU_\text{k} = E$, and $E = hf$, $c = f\lambda$, so $$
+\begin{aligned}
+eU_\text{k} &= hf \\
+&= \frac{hc}{\lambda} \\
+h &= \frac{eU_\text{k}\lambda}{c}
+\end{aligned}
+$$
 **Conversions:** $\lambda = 605\,\text{nm} = 605 \cdot 10^{-9}\,\text{m}$; $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$
 **Substitution:** $eU_\text{k} = 1.602 \cdot 10^{-19}\,\text{C} \cdot 1.95\,\text{V} = 3.1239 \cdot 10^{-19}\,\text{J}$ and $$
 \begin{aligned}
@@ -125,7 +149,15 @@ $$ smaller than the accepted value. The difference arises because the measured t
 **Given:** current $I = 20\,\text{mA}$, wavelength $\lambda = 630\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$; every electron creates one photon that gets out
 **Asked:** the light power $P$ in milliwatts
 **Principle:** The current tells how much charge passes every second, so the number of electrons per second is $N = \tfrac{I}{e}$. By the assumption, the same number of photons is created every second, and each carries away the energy $\tfrac{hc}{\lambda}$. The light power is the energy carried away by the photons per second.
-**Formula:** $N = \dfrac{I}{e}$ and $P = N \cdot \dfrac{hc}{\lambda}$, so $P = \dfrac{Ihc}{e\lambda}$
+**Formula:** The current is $I = Ne$ ($N$ electrons per second), the photon energy is $E = hf$, $c = f\lambda$, and the power is $P = NE$ (energy per second), so $$
+\begin{aligned}
+N &= \frac{I}{e} \\
+E &= hf \\
+&= \frac{hc}{\lambda} \\
+P &= NE \\
+&= \frac{Ihc}{e\lambda}
+\end{aligned}
+$$
 **Conversions:** $I = 20\,\text{mA} = 0.020\,\text{A}$, $\lambda = 630\,\text{nm} = 630 \cdot 10^{-9}\,\text{m}$; finally $1\,\text{W} = 1000\,\text{mW}$
 **Substitution:** $N = \dfrac{0.020\,\text{C/s}}{1.602 \cdot 10^{-19}\,\text{C}} = 1.2484 \cdot 10^{17}\,\tfrac{1}{\text{s}}$, the energy of a photon is $\dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{630 \cdot 10^{-9}\,\text{m}} = 3.1532 \cdot 10^{-19}\,\text{J}$, so $$
 \begin{aligned}
@@ -142,7 +174,13 @@ $$
 **Given:** wavelength of the blue photon $\lambda_1 = 450\,\text{nm}$, wavelength of the yellow photon $\lambda_2 = 560\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Asked:** the energy $\Delta E$ left as internal energy per photon, in electronvolts
 **Principle:** In fluorescence (chapter *Spectra reveal the energy levels of atoms*) a substance absorbs a photon and emits a photon of lower energy. Energy is conserved, so the difference between the energies of the absorbed and the emitted photon is left in the phosphor as internal energy.
-**Formula:** $\Delta E = \dfrac{hc}{\lambda_1} - \dfrac{hc}{\lambda_2}$
+**Formula:** The photon energy is $E = hf$ and $c = f\lambda$. Energy is conserved, so the energy left in the material is the difference of the absorbed and emitted photon energies, so $$
+\begin{aligned}
+\Delta E &= E_1 - E_2 \\
+&= hf_1 - hf_2 \\
+&= \frac{hc}{\lambda_1} - \frac{hc}{\lambda_2}
+\end{aligned}
+$$
 **Conversions:** $\lambda_1 = 450 \cdot 10^{-9}\,\text{m}$, $\lambda_2 = 560 \cdot 10^{-9}\,\text{m}$; the energies from joules to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
 **Substitution:** $\dfrac{hc}{\lambda_1} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{450 \cdot 10^{-9}\,\text{m}} = 4.4144 \cdot 10^{-19}\,\text{J} = 2.7556\,\text{eV}$ and $\dfrac{hc}{\lambda_2} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{560 \cdot 10^{-9}\,\text{m}} = 3.5473 \cdot 10^{-19}\,\text{J} = 2.2143\,\text{eV}$, so $\Delta E = 2.7556\,\text{eV} - 2.2143\,\text{eV} = 0.5413\,\text{eV}$
 **Answer:** $0.541\,\text{eV}$, three significant figures like the wavelengths.
@@ -207,7 +245,15 @@ $$
 **Given:** wavelength $\lambda = 365\,\text{nm}$, current $I = 20\,\text{mA}$, radiated power $P = 15\,\text{mW}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$
 **Asked:** the share of the number of photons that get out, of the number of electrons passing through the LED, as a percentage
 **Principle:** The radiated power is the energy carried away by the photons per second, so the number of photons per second is the power divided by the energy of one photon. The current tells the number of electrons per second, $\tfrac{I}{e}$. One electron can create at most one photon, so the share is at most $100\,\%$.
-**Formula:** $N_\text{f} = \dfrac{P}{hc/\lambda} = \dfrac{P\lambda}{hc}$ and $N_\text{e} = \dfrac{I}{e}$, so the share is $\dfrac{N_\text{f}}{N_\text{e}} = \dfrac{P\lambda e}{hcI}$
+**Formula:** The power is $P = N_\text{f}E$ (photon energy per second), $E = hf$, $c = f\lambda$, and the current is $I = N_\text{e}e$ (charge per second), so $$
+\begin{aligned}
+N_\text{f} &= \frac{P}{E} \\
+&= \frac{P}{hc/\lambda} \\
+&= \frac{P\lambda}{hc} \\
+N_\text{e} &= \frac{I}{e} \\
+\frac{N_\text{f}}{N_\text{e}} &= \frac{P\lambda e}{hcI}
+\end{aligned}
+$$
 **Conversions:** $P = 15\,\text{mW} = 0.015\,\text{W}$, $I = 20\,\text{mA} = 0.020\,\text{A}$, $\lambda = 365 \cdot 10^{-9}\,\text{m}$; finally the share to a percentage by multiplying by $100\,\%$
 **Substitution:** $N_\text{f} = \dfrac{0.015\,\text{J/s} \cdot 365 \cdot 10^{-9}\,\text{m}}{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 2.756 \cdot 10^{16}\,\tfrac{1}{\text{s}}$ and $N_\text{e} = \dfrac{0.020\,\text{C/s}}{1.602 \cdot 10^{-19}\,\text{C}} = 1.2484 \cdot 10^{17}\,\tfrac{1}{\text{s}}$, so $\dfrac{N_\text{f}}{N_\text{e}} = \dfrac{2.756 \cdot 10^{16}}{1.2484 \cdot 10^{17}} = 0.2208 = 22.1\,\%$
 **Answer:** about $22\,\%$, two significant figures like the power $15\,\text{mW}$ and the current $20\,\text{mA}$.
@@ -231,7 +277,13 @@ The other options are wrong explanations: the light of an LED is not produced by
 **Given:** threshold voltage $U_\text{k} = 2.30\,\text{V}$, $eU_\text{k} = \tfrac{hc}{\lambda}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$
 **Find:** the wavelength $\lambda$ of the light of the LED in nanometres
 **Principle:** At the threshold voltage the energy $eU_\text{k}$ that an electron receives from the voltage source is approximately the energy of one photon, $\tfrac{hc}{\lambda}$. The wavelength can be solved from the equation because the frequency and the wavelength of light are related by the equation $c = f\lambda$.
-**Formula:** $eU_\text{k} = \dfrac{hc}{\lambda}$, so $\lambda = \dfrac{hc}{eU_\text{k}}$
+**Formula:** At the threshold voltage the electron's energy is one photon's energy, $eU_\text{k} = E$, and $E = hf$, $c = f\lambda$, so $$
+\begin{aligned}
+eU_\text{k} &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{eU_\text{k}}
+\end{aligned}
+$$
 **Conversions:** Only the conversion of the result from metres to nanometres is needed: $1\,\text{m} = 10^{9}\,\text{nm}$. In the product $e \cdot U_\text{k}$, $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
 **Substitution:** $$
 \begin{aligned}
@@ -265,7 +317,7 @@ $$. The wavelength is in the green region of visible light ($500$–$570\,\text{
 
 The line fitted to these five points is $I = k(U - U_\text{k})$ with the slope $k = 61.5\,\tfrac{\text{mA}}{\text{V}}$, and it intersects the voltage axis at $U_\text{k}$.
 
-**Formula:** For the line $I = k(U - U_\text{k})$, so from a point $(U_1, I_1)$ on the line: $U_\text{k} = U_1 - \dfrac{I_1}{k}$. The reference voltage is $U = \dfrac{hc}{e\lambda}$.
+**Formula:** For the line $I = k(U - U_\text{k})$, so from a point $(U_1, I_1)$ on the line: $I_1 = k(U_1 - U_\text{k})$ and $U_\text{k} = U_1 - \dfrac{I_1}{k}$. The reference voltage: $eU = hf$ and $c = f\lambda$, so $U = \dfrac{hf}{e} = \dfrac{hc}{e\lambda}$.
 
 **Conversions:** Not needed in part b); in part c) $\lambda = 650\,\text{nm} = 650 \cdot 10^{-9}\,\text{m}$ and $1\,\tfrac{\text{J}}{\text{C}} = 1\,\text{V}$.
 
@@ -290,7 +342,13 @@ The result $1.86\,\text{V}$ is larger than the voltage $1.80\,\text{V}$ at which
 
 The voltages read are $1.74\,\text{V}$, $1.88\,\text{V}$ and $2.04\,\text{V}$.
 
-**Formula:** $h = \dfrac{eU_\text{k}\lambda}{c}$ and the deviation $\dfrac{h - h_0}{h_0} \cdot 100\,\%$, where $h_0 = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$
+**Formula:** At the threshold voltage $eU_\text{k} = hf$ and $c = f\lambda$, so $$
+\begin{aligned}
+eU_\text{k} &= hf \\
+&= \frac{hc}{\lambda} \\
+h &= \frac{eU_\text{k}\lambda}{c}
+\end{aligned}
+$$, and the deviation is $\dfrac{h - h_0}{h_0} \cdot 100\,\%$, where $h_0 = 6.626\,\text{J}\,\text{s}$ (accepted value)
 
 **Conversions:** $\lambda = 630\,\text{nm} = 630 \cdot 10^{-9}\,\text{m}$; $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$
 
@@ -328,7 +386,13 @@ A result close to the table value does not prove the reading method correct; the
 
 The width of a laser diode is about $1\,\text{nm}$, so the band of the LED is about $20$ times wider.
 
-**Formula:** $\Delta E = \dfrac{hc}{\lambda_1} - \dfrac{hc}{\lambda_2}$
+**Formula:** The photon energy is $E = hf$ and $c = f\lambda$. The difference of two photon energies is $\Delta E = E_1 - E_2$, so $$
+\begin{aligned}
+\Delta E &= E_1 - E_2 \\
+&= hf_1 - hf_2 \\
+&= \frac{hc}{\lambda_1} - \frac{hc}{\lambda_2}
+\end{aligned}
+$$
 
 **Conversions:** $\lambda_1 = 620 \cdot 10^{-9}\,\text{m}$, $\lambda_2 = 640 \cdot 10^{-9}\,\text{m}$; energies from joules to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
 
@@ -395,7 +459,7 @@ Adding a constant shifts the line upwards but does not change its slope, so the 
 
 **Reading the graph:** The frequencies are $4.759$, $5.081$, $5.260$, $5.710$ and $6.447$ in the unit $10^{14}\,\text{Hz}$. A fit to all five measured points gives the slope $m = 4.208 \cdot 10^{-15}\,\text{V}\,\text{s}$ and the intercept $b = -0.062\,\text{V}$. A fit to the corrected voltages $U = U_\text{measured} - 0.05\,\text{V}$ gives the same slope $4.208 \cdot 10^{-15}\,\text{V}\,\text{s}$ and the intercept $-0.112\,\text{V}$.
 
-**Formula:** $f = \dfrac{c}{\lambda}$, $k = \dfrac{h}{e}$, so $h = ek$. The formula for a single LED is $h = \dfrac{eU_\text{k}\lambda}{c}$.
+**Formula:** The frequency is $f = \dfrac{c}{\lambda}$ and at the threshold voltage $eU_\text{k} = hf$, so $U_\text{k} = \dfrac{h}{e}\,f$. The slope is $k = \dfrac{h}{e}$, so $h = ek$. For a single LED $eU_\text{k} = hf = \dfrac{hc}{\lambda}$, so $h = \dfrac{eU_\text{k}\lambda}{c}$.
 
 **Conversions:** $\lambda = 630 \cdot 10^{-9}\,\text{m}$ etc.; $\tfrac{\text{V}}{\text{Hz}} = \text{V}\,\text{s}$ and $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$
 
@@ -440,7 +504,7 @@ $$, the same as the slope of the fit. The corrected intercept $-0.11\,\text{V}$ 
 
 The line also contains the constant difference $b$ between the measured threshold voltage and the value $\tfrac{hf}{e}$, so it is more accurate than the equation $eU_\text{k} = \tfrac{hc}{\lambda}$, which assumes $b = 0$.
 
-**Formula:** $U_\text{k} = kf + b$, so $f = \dfrac{U_\text{k} - b}{k}$ and $\lambda = \dfrac{c}{f}$. Uncertainty: $\Delta f = \dfrac{\Delta U}{k}$ and $\Delta\lambda = \lambda\,\dfrac{\Delta f}{f}$. Comparison: $\lambda = \dfrac{hc}{eU_\text{k}}$.
+**Formula:** $U_\text{k} = kf + b$, so $f = \dfrac{U_\text{k} - b}{k}$ and $\lambda = \dfrac{c}{f}$. Uncertainty: $\Delta f = \dfrac{\Delta U}{k}$ and $\Delta\lambda = \lambda\,\dfrac{\Delta f}{f}$. Comparison: $eU_\text{k} = hf$ and $c = f\lambda$, so $\lambda = \dfrac{hc}{eU_\text{k}}$.
 
 **Conversions:** Not needed in part a); the results from metres to nanometres, $1\,\text{m} = 10^{9}\,\text{nm}$.
 
@@ -475,7 +539,7 @@ Check from the points of the line: it passes through $(4.6;\ 1.80)$ and $(7.0;\ 
 **Find:** the difference $\Delta U$ in volts between $\tfrac{hf}{e}$ of the model and the threshold voltage read from the line, and a verbal explanation
 **Principle:** In the simple model the energy $eU_\text{k}$ of an electron is the energy $hf$ of one photon, so $U_\text{k} = \tfrac{hf}{e}$. The measured threshold voltage is an approximation found by a method, so it is compared with the model.
 **Reading the graph:** The vertical grid line $f = 7.0 \cdot 10^{14}\,\text{Hz}$ meets the fitted line at the horizontal grid line $2.80\,\text{V}$. The threshold voltage read is $U_\text{line} = 2.80\,\text{V}$. The line does not pass through the origin: its extension would cross the vertical axis about $0.12\,\text{V}$ below zero.
-**Formula:** The model gives $U_\text{model} = \dfrac{hf}{e}$, and the difference is $\Delta U = U_\text{model} - U_\text{line}$.
+**Formula:** The model gives $eU_\text{model} = hf$, so $U_\text{model} = \dfrac{hf}{e}$, and the difference is $\Delta U = U_\text{model} - U_\text{line}$.
 **Conversions:** None needed: $f$ is already in hertz and $1\,\tfrac{\text{J}}{\text{C}} = 1\,\text{V}$.
 **Substitution:** First the photon energy: $hf = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 7.0 \cdot 10^{14}\,\text{Hz} = 4.638 \cdot 10^{-19}\,\text{J}$. Then the model: $U_\text{model} = \dfrac{4.638 \cdot 10^{-19}\,\text{J}}{1.602 \cdot 10^{-19}\,\text{C}} = 2.895\,\text{V}$. Finally the difference: $\Delta U = 2.895\,\text{V} - 2.80\,\text{V} = 0.095\,\text{V}$.
 **Answer:** $\Delta U = 0.095\,\text{V}$, two significant figures because it is a small difference between two three-figure voltages. The measured value is about $0.1\,\text{V}$ lower than the model.

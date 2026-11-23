@@ -90,9 +90,7 @@
 
 **Periaate:** Energia massaa kohti antaa kilpirauhasen absorboituneen annoksen. Beetasäteilyn painotuskerroin on $1$, joten ekvivalenttiannoksen lukuarvo on sama. Vain kilpirauhanen saa annoksen. Siksi efektiivinen annos on kilpirauhasen ekvivalenttiannos kerrottuna sen painotuskertoimella.
 
-**Kaava:** $$
-\begin{aligned}
-D_\text{T} &= \dfrac{E}{m} \\
+**Kaava:** $$\begin{aligned} D_\text{T} &= \dfrac{E}{m} \\
 H_\text{T} &= w_\text{R} D_\text{T} \\
 H_\text{E} &= w_\text{T} H_\text{T} \\
 &= w_\text{T} w_\text{R} \dfrac{E}{m}
@@ -114,9 +112,7 @@ $$
 
 **Periaate:** Pistemäisen lähteen annosnopeus pienenee etäisyyden neliön mukaan. Työpisteessä annosnopeus on vakio, joten annos kasvaa suoraan verrannollisesti aikaan.
 
-**Kaava:** $$
-\begin{aligned}
-\dot{H}_2 &= \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 \\
+**Kaava:** $$\begin{aligned} \dot{H}_2 &= \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 \\
 H &= \dot{H}_2 t \\
 t &= \dfrac{H}{\dot{H}_2} \\
 &= \dfrac{H}{\dot{H}_1} \left(\dfrac{r_2}{r_1}\right)^2
@@ -178,9 +174,7 @@ $$ (yksikkönä $\mu\text{Sv/h}$). Kolmen sentin lyijy on tavallinen paksuus gam
 
 **Periaate:** Tavassa A annosnopeutta pienentää etäisyys neliölain mukaan. Tavassa B sitä pienentää lyijy puoliintumispaksuuden mukaan. Työaika on molemmissa sama, joten annokset saadaan kertomalla kummankin annosnopeus samalla ajalla.
 
-**Kaava:** $$
-\begin{aligned}
-\dot{H}_\text{A} &= \dot{H}_1 \left(\dfrac{r_1}{r_\text{A}}\right)^2 \\
+**Kaava:** $$\begin{aligned} \dot{H}_\text{A} &= \dot{H}_1 \left(\dfrac{r_1}{r_\text{A}}\right)^2 \\
 \dot{H}_\text{B} &= \dot{H}_1 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
 H_\text{A} &= \dot{H}_\text{A} t \\
 H_\text{B} &= \dot{H}_\text{B} t \\
@@ -221,9 +215,7 @@ $$
 
 **Periaate:** Alfasäteily säteilyttää vain keuhkot. Sen efektiivinen annos on siis keuhkojen ekvivalenttiannos kerrottuna keuhkojen painotuskertoimella. Gammasäteily säteilyttää koko kehon tasaisesti, ja kudosten painotuskertoimien summa on $1$. Gammasäteilyn efektiivinen annos on siksi sama kuin kehon ekvivalenttiannos. Efektiiviset annokset lasketaan yhteen.
 
-**Kaava:** $$
-\begin{aligned}
-H_\text{T} &= w_{\text{R},\alpha} D_\text{keuhkot} \\
+**Kaava:** $$\begin{aligned} H_\text{T} &= w_{\text{R},\alpha} D_\text{keuhkot} \\
 H_{\text{E},\alpha} &= w_\text{T} H_\text{T} \\
 H_{\text{E},\gamma} &= w_{\text{R},\gamma} D_\gamma \\
 H_\text{E} &= H_{\text{E},\alpha} + H_{\text{E},\gamma} \\
@@ -411,13 +403,12 @@ $$. Se on yli viitearvon $300\,\tfrac{\text{Bq}}{\text{m}^3}$, joten radonkorjau
 240 \to 121 \to 60{,}5 \to 29{,}8\,\mu\text{Sv/h}
 $$. Annosnopeus puolittuu aina, kun paksuus kasvaa $4{,}0\,\text{cm}$ ($240 : 2 = 120 \approx 121$, $121 : 2 \approx 60{,}5$ ja $60{,}5 : 2 \approx 30 \approx 29{,}8$). Siksi $d_{1/2} \approx 4{,}0\,\text{cm}$.
 
-**Kaava:** $$
-\begin{aligned}
-\dot{H}_d &= \dot{H}_1 \left(\dfrac{1}{2}\right)^{d/d_{1/2}} \\
+**Kaava:** $$\begin{aligned} \dot{H}_d &= \dot{H}_1 \left(\dfrac{1}{2}\right)^{d/d_{1/2}} \\
 \dot{H} &= \dot{H}_d \left(\dfrac{r_1}{r_2}\right)^2 \\
 &= \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 \left(\dfrac{1}{2}\right)^{d/d_{1/2}} \\
 H &= \dot{H} t \\
-t &= \dfrac{H}{\dot{H}}
+t &= \dfrac{H}{\dot{H}} \\
+&= \dfrac{H}{\dot{H}_1} \left(\dfrac{r_2}{r_1}\right)^2 2^{d/d_{1/2}}
 \end{aligned}
 $$
 

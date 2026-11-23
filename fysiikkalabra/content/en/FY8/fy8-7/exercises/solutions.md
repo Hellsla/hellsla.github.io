@@ -21,9 +21,7 @@ $$
 **Given:** wavelength $\lambda = 1550\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the energy $E$ of one photon in electronvolts
 **Principle:** Light consists of photons, and the energy of one photon is inversely proportional to the wavelength of the light.
-**Formula:** $$
-\begin{aligned}
-E &= hf \\
+**Formula:** $$\begin{aligned} E &= hf \\
 f &= \dfrac{c}{\lambda} \\
 E &= \dfrac{hc}{\lambda}
 \end{aligned}
@@ -43,9 +41,7 @@ $$
 **Given:** energy difference of the levels of the laser transition $E_2 - E_1 = 1.79\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the wavelength $\lambda$ of the laser light in nanometres
 **Principle:** Energy is conserved: when an ion drops from the upper laser level to the lower, its energy decreases by the difference of the levels, and exactly this energy is carried away by one photon.
-**Formula:** $$
-\begin{aligned}
-hf &= E_2 - E_1 \\
+**Formula:** $$\begin{aligned} hf &= E_2 - E_1 \\
 f &= \dfrac{c}{\lambda} \\
 \dfrac{hc}{\lambda} &= E_2 - E_1 \\
 \lambda &= \dfrac{hc}{E_2 - E_1}
@@ -69,9 +65,7 @@ $$
 **Given:** energy of the pulse $E = 3.0\,\text{mJ}$, wavelength $\lambda = 1064\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
 **Find:** the number of photons $N$ in the pulse
 **Principle:** All the photons of a laser are identical, so the energy of the pulse is the number of photons multiplied by the energy of one photon $\tfrac{hc}{\lambda}$.
-**Formula:** $$
-\begin{aligned}
-E &= N \cdot hf \\
+**Formula:** $$\begin{aligned} E &= N \cdot hf \\
 f &= \dfrac{c}{\lambda} \\
 E &= N \cdot \dfrac{hc}{\lambda} \\
 N &= \dfrac{E\lambda}{hc}
@@ -105,9 +99,7 @@ $$
 **Given:** wavelength of the pump light $\lambda_\text{p} = 808\,\text{nm}$, wavelength of the laser light $\lambda_\text{L} = 1064\,\text{nm}$; one pump photon produces at most one laser photon
 **Find:** the greatest share $\eta$ of the energy of a pump photon that ends up as the energy of a laser photon, as a percentage
 **Principle:** When one pump photon produces one laser photon, the energy of the laser photon is what ends up in it, and the rest stays in the medium as internal energy. The energy of a photon is $\tfrac{hc}{\lambda}$, so the share is the ratio of the energies of the photons.
-**Formula:** $$
-\begin{aligned}
-E &= hf \\
+**Formula:** $$\begin{aligned} E &= hf \\
 f &= \dfrac{c}{\lambda} \\
 E_\text{p} &= \dfrac{hc}{\lambda_\text{p}} \\
 E_\text{L} &= \dfrac{hc}{\lambda_\text{L}} \\
@@ -125,9 +117,7 @@ $$
 **Given:** wavelength of the red laser pointer $\lambda_\text{r} = 650\,\text{nm}$, of the violet one $\lambda_\text{v} = 405\,\text{nm}$, the power of both $P = 5.0\,\text{mW}$
 **Find:** how many times more photons per second the red one emits, that is the ratio $\tfrac{N_\text{r}}{N_\text{v}}$
 **Principle:** Power is the number of photons per second multiplied by the energy of a photon $\tfrac{hc}{\lambda}$. With the same power there are more photons the smaller the energy of one photon is, that is the longer the wavelength.
-**Formula:** $$
-\begin{aligned}
-P &= \dfrac{N}{t} \cdot hf \\
+**Formula:** $$\begin{aligned} P &= \dfrac{N}{t} \cdot hf \\
 f &= \dfrac{c}{\lambda} \\
 \dfrac{N}{t} &= \dfrac{P\lambda}{hc} \\
 \dfrac{N_\text{r}}{N_\text{v}} &= \dfrac{P\lambda_\text{r} / (hc)}{P\lambda_\text{v} / (hc)} \\
@@ -143,9 +133,7 @@ $$
 **Given:** wavelength of the light of the larger dot $\lambda_\text{large} = 620\,\text{nm}$, the photon energy of the smaller dot is $\Delta E = 0.35\,\text{eV}$ greater, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the wavelength $\lambda$ of the light of the smaller dot in nanometres
 **Principle:** The energy of a photon is $\tfrac{hc}{\lambda}$. We calculate the photon energy of the larger dot, add $0.35\,\text{eV}$ to it and calculate the wavelength from the new energy. The energy gap of the smaller dot is larger, so its photon energy is greater.
-**Formula:** $$
-\begin{aligned}
-E &= hf \\
+**Formula:** $$\begin{aligned} E &= hf \\
 f &= \dfrac{c}{\lambda} \\
 E_\text{large} &= \dfrac{hc}{\lambda_\text{large}} \\
 \dfrac{hc}{\lambda} &= E_\text{large} + \Delta E \\
@@ -170,9 +158,7 @@ $$. $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.7647 \cdot 10
 **Given:** photons in the pulse $N = 2.7 \cdot 10^{17}$, wavelength $\lambda = 1064\,\text{nm}$, duration of the pulse $t = 10\,\text{ns}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
 **Find:** the average power $P$ of the pulse in megawatts
 **Principle:** The energy of the pulse is the number of photons multiplied by the energy of one photon, and the average power is the energy divided by the time in which it leaves.
-**Formula:** $$
-\begin{aligned}
-E &= N \cdot hf \\
+**Formula:** $$\begin{aligned} E &= N \cdot hf \\
 f &= \dfrac{c}{\lambda} \\
 E &= N \cdot \dfrac{hc}{\lambda} \\
 P &= \dfrac{E}{t} \\
@@ -191,9 +177,7 @@ $$
 
 By assumption the ions do not decay in the middle of the pumping.
 
-**Formula:** $$
-\begin{aligned}
-E &= \dfrac{N}{2} \cdot hf \\
+**Formula:** $$\begin{aligned} E &= \dfrac{N}{2} \cdot hf \\
 f &= \dfrac{c}{\lambda} \\
 E &= \dfrac{N}{2} \cdot \dfrac{hc}{\lambda}
 \end{aligned}
@@ -216,9 +200,7 @@ One pump photon, $3.6 \cdot 10^{-19}\,\text{J}$ or $2.25\,\text{eV}$, is green l
 
 Energy is conserved: the energy of two photons of $1064\,\text{nm}$ equals that of one photon of $532\,\text{nm}$.
 
-**Formula:** $$
-\begin{aligned}
-P &= \dfrac{N_\text{p}}{t} \cdot hf_\text{p} \\
+**Formula:** $$\begin{aligned} P &= \dfrac{N_\text{p}}{t} \cdot hf_\text{p} \\
 f_\text{p} &= \dfrac{c}{\lambda_\text{p}} \\
 \dfrac{N_\text{p}}{t} &= \dfrac{P\lambda_\text{p}}{hc} \\
 \dfrac{N_\text{g}}{t} &= \dfrac{1}{2} \cdot \dfrac{N_\text{p}}{t} \\
@@ -238,9 +220,7 @@ $$
 **Given:** frequency of the photon corresponding to the energy difference of the states of the qubit $f_\text{q} = 5.0\,\text{GHz}$, wavelength of the red light $\lambda = 650\,\text{nm}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
 **Find:** the ratio of the energies $\tfrac{E_\text{light}}{E_\text{q}}$
 **Principle:** The energy of both photons is $hf$, so the ratio of the energies is the ratio of the frequencies, and the Planck constant cancels. The frequency of the red light is obtained from the wavelength, $f = \tfrac{c}{\lambda}$.
-**Formula:** $$
-\begin{aligned}
-E_\text{light} &= hf_\text{light} \\
+**Formula:** $$\begin{aligned} E_\text{light} &= hf_\text{light} \\
 E_\text{q} &= hf_\text{q} \\
 f_\text{light} &= \dfrac{c}{\lambda} \\
 \dfrac{E_\text{light}}{E_\text{q}} &= \dfrac{hc / \lambda}{hf_\text{q}} \\
@@ -265,9 +245,7 @@ The atom does not absorb a photon in stimulated emission, and its energy does no
 **Given:** power of the laser $P = 5.0\,\text{mW}$, wavelength $\lambda = 532\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$
 **Find:** the number of photons emitted per second $\tfrac{N}{t}$
 **Principle:** The photons of a laser are identical, so the power is the number of photons per second multiplied by the energy of one photon $\tfrac{hc}{\lambda}$.
-**Formula:** $$
-\begin{aligned}
-P &= \dfrac{N}{t} \cdot hf \\
+**Formula:** $$\begin{aligned} P &= \dfrac{N}{t} \cdot hf \\
 f &= \dfrac{c}{\lambda} \\
 P &= \dfrac{N}{t} \cdot \dfrac{hc}{\lambda} \\
 \dfrac{N}{t} &= \dfrac{P\lambda}{hc}
@@ -338,9 +316,7 @@ In atomic and ion lasers, population inversion is made by pumping a material tha
 **Find:** the difference $\Delta E$ of the energy gaps between the smallest and the largest dot in electronvolts
 **Principle:** When the energy of the photon is equal to the energy gap of the dot, the gap is obtained from the wavelength with the formula $E = \tfrac{hc}{\lambda}$. We calculate the gap for each dot and compare it with the size of the dot.
 **Reading the graph:** From the table: the diameter $2.0\,\text{nm}$ corresponds to the wavelength $486\,\text{nm}$ and the diameter $6.0\,\text{nm}$ to the wavelength $617\,\text{nm}$. When the diameter increases, the wavelength increases at every step.
-**Formula:** $$
-\begin{aligned}
-E &= hf \\
+**Formula:** $$\begin{aligned} E &= hf \\
 f &= \dfrac{c}{\lambda} \\
 E &= \dfrac{hc}{\lambda} \\
 \Delta E &= E_{2.0\,\text{nm}} - E_{6.0\,\text{nm}}
@@ -370,9 +346,7 @@ c) $\Delta E = 2.5514\,\text{eV} - 2.0097\,\text{eV} = 0.5417\,\text{eV}$
 **Find:** the ratio of the greatest and the smallest photon flux $\tfrac{N}{t}$
 **Principle:** The photons of each diode are identical, so the power is the number of photons per second multiplied by the energy of a photon $\tfrac{hc}{\lambda}$. The photon flux thus depends on both the power and the wavelength.
 **Reading the graph:** From the table: the wavelengths of the diodes increase from A to D and the powers decrease from A to D.
-**Formula:** $$
-\begin{aligned}
-P &= \dfrac{N}{t} \cdot hf \\
+**Formula:** $$\begin{aligned} P &= \dfrac{N}{t} \cdot hf \\
 f &= \dfrac{c}{\lambda} \\
 \dfrac{N}{t} &= \dfrac{P\lambda}{hc}
 \end{aligned}
@@ -408,9 +382,7 @@ The photon does not split in two, the mirrors are not the explanation for the in
 
 Heat is produced for two reasons: the energy of a laser photon is smaller than the energy of a pump photon, and some of the pump photons do not produce a laser photon.
 
-**Formula:** $$
-\begin{aligned}
-P &= \dfrac{N}{t} \cdot hf \\
+**Formula:** $$\begin{aligned} P &= \dfrac{N}{t} \cdot hf \\
 f &= \dfrac{c}{\lambda} \\
 \dfrac{N}{t} &= \dfrac{P\lambda}{hc} \\
 \eta_\text{q} &= \dfrac{N_\text{L} / t}{N_\text{p} / t} \\
@@ -465,9 +437,7 @@ The points $P_\text{p} \geq 30\,\text{mW}$ lie on a straight line apart from sma
 
 The slope of the line is $\tfrac{\Delta P_\text{L}}{\Delta P_\text{p}} = 0.398$. For example, through the points $(30;\ 2.1)$ and $(70;\ 18.1)$ the slope is $\tfrac{16.0\,\text{mW}}{40\,\text{mW}} = 0.40$.
 
-**Formula:** $$
-\begin{aligned}
-\Delta P_\text{L} &= \dfrac{\Delta N_\text{L}}{t} \cdot hf_\text{L} \\
+**Formula:** $$\begin{aligned} \Delta P_\text{L} &= \dfrac{\Delta N_\text{L}}{t} \cdot hf_\text{L} \\
 \Delta P_\text{p} &= \dfrac{\Delta N_\text{p}}{t} \cdot hf_\text{p} \\
 f &= \dfrac{c}{\lambda} \\
 \dfrac{\Delta P_\text{L}}{\Delta P_\text{p}} &= \dfrac{\Delta N_\text{L} \cdot hc / \lambda_\text{L}}{\Delta N_\text{p} \cdot hc / \lambda_\text{p}} \\
@@ -492,9 +462,7 @@ Then laser oscillation does not start, but the medium emits only weak spontaneou
 **Given:** power of the laser $P = 2.0\,\text{mW}$, wavelength $\lambda = 670\,\text{nm}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$; from the table (MAFY, *Physical constants*) the Planck constant $h = 6.626\,070\,15 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Find:** the number of photons emitted per second $\tfrac{N}{t}$
 **Principle:** The photons of a laser are alike, so the power is the number of photons per second times the energy of one photon, $\tfrac{hc}{\lambda}$. The Planck constant is not among the data of the task, so it is looked up in the table.
-**Formula:** $$
-\begin{aligned}
-P &= \dfrac{N}{t} \cdot hf \\
+**Formula:** $$\begin{aligned} P &= \dfrac{N}{t} \cdot hf \\
 f &= \dfrac{c}{\lambda} \\
 P &= \dfrac{N}{t} \cdot \dfrac{hc}{\lambda} \\
 \dfrac{N}{t} &= \dfrac{P\lambda}{hc}
@@ -536,9 +504,7 @@ $$
 
 The point is just below the horizontal line at $4.0$, so $\tfrac{N}{t} \approx 3.9 \cdot 10^{15}\,\tfrac{1}{\text{s}}$.
 
-**Formula:** $$
-\begin{aligned}
-P &= \dfrac{N}{t} \cdot hf \\
+**Formula:** $$\begin{aligned} P &= \dfrac{N}{t} \cdot hf \\
 f &= \dfrac{c}{\lambda} \\
 P &= \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}
 \end{aligned}
@@ -583,9 +549,7 @@ $$
 
 Point Y is at the wavelength $800\,\text{nm}$, on the eighth vertical line, and just above the fourth horizontal line, at the height $4.0$.
 
-**Formula:** $$
-\begin{aligned}
-P &= \dfrac{N}{t} \cdot hf \\
+**Formula:** $$\begin{aligned} P &= \dfrac{N}{t} \cdot hf \\
 f &= \dfrac{c}{\lambda} \\
 P &= \dfrac{N}{t} \cdot \dfrac{hc}{\lambda} \\
 \dfrac{P_\text{X}}{P_\text{Y}} &= \dfrac{\tfrac{N_\text{X}}{t} \cdot \tfrac{hc}{\lambda_\text{X}}}{\tfrac{N_\text{Y}}{t} \cdot \tfrac{hc}{\lambda_\text{Y}}} \\

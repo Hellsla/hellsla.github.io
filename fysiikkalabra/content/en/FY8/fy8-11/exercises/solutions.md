@@ -5,9 +5,17 @@
 
 **Principle:** The reaction releases an energy that corresponds to the difference between the masses of the starting materials and the products. The sum of the atomic numbers is conserved ($3 + 0 = 2 + 1$), so the electrons in the atomic masses cancel and the atomic masses can be used directly.
 
-**Formula:** $Q = (m_\text{initial} - m_\text{final})\,c^2$, from which $$
+**Formula:** $$
 
 \begin{aligned}
+
+Q &= \Delta m\,c^2 \\
+
+\Delta m &= m_\text{initial} - m_\text{final} \\
+
+m_\text{initial} &= m_\text{Li} + m_\text{n} \\
+
+m_\text{final} &= m_\text{He} + m_\text{T} \\
 
 Q &= (m_\text{Li} + m_\text{n} - m_\text{He} - m_\text{T})\,c^2
 
@@ -38,7 +46,7 @@ $$. The result is smaller than in the fusion of deuterium and tritium ($17.6\,\t
 
 **Principle:** Equivalence of mass and energy: when the mass of the products of a reaction is smaller than that of the starting materials, the energy corresponding to the difference is released as the kinetic energy of the products and as radiation.
 
-**Formula:** $Q = (m_\text{initial} - m_\text{final})\,c^2$, from which $Q = \Delta m\,c^2$
+**Formula:** $Q = \Delta m\,c^2$, where $\Delta m = m_\text{initial} - m_\text{final}$ is given
 
 **Conversions:** $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$; when the mass difference is substituted in this unit, $c^2$ cancels.
 
@@ -72,7 +80,23 @@ $$. The result is smaller than in the fusion of deuterium and tritium ($17.6\,\t
 
 **Principle:** The reaction releases the energy that corresponds to the difference in masses. The sum of the atomic numbers is conserved ($1 + 1 = 2 + 0$), so the electrons in the atomic masses cancel. The starting materials are two deuterium atoms.
 
-**Formula:** $Q = (m_\text{initial} - m_\text{final})\,c^2$, from which $Q = (2m_\text{D} - m_\text{He} - m_\text{n})\,c^2$
+**Formula:** $$
+
+\begin{aligned}
+
+Q &= \Delta m\,c^2 \\
+
+\Delta m &= m_\text{initial} - m_\text{final} \\
+
+m_\text{initial} &= 2m_\text{D} \\
+
+m_\text{final} &= m_\text{He} + m_\text{n} \\
+
+Q &= (2m_\text{D} - m_\text{He} - m_\text{n})\,c^2
+
+\end{aligned}
+
+$$
 
 **Conversions:** $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$, so $c^2$ cancels and the energy comes out in megaelectronvolts.
 
@@ -131,9 +155,27 @@ $$. The result is about a fifth of the energy of the fusion of deuterium and tri
 
 **Principle:** One reaction releases the energy $Q$ that corresponds to the mass difference and uses up one deuterium atom and one tritium atom. The energy per unit mass is the energy of one reaction divided by the mass of the fuel of one reaction.
 
-**Formula:** $$\begin{aligned} Q &= (m_\text{D} + m_\text{T} - m_\text{He} - m_\text{n})\,c^2
+**Formula:** $$
 
-\end{aligned}$$ and $\dfrac{E}{m} = \dfrac{Q}{m_\text{D} + m_\text{T}}$
+\begin{aligned}
+
+Q &= \Delta m\,c^2 \\
+
+\Delta m &= m_\text{D} + m_\text{T} - m_\text{He} - m_\text{n} \\
+
+Q &= (m_\text{D} + m_\text{T} - m_\text{He} \\
+
+&\quad - m_\text{n})\,c^2 \\
+
+E &= Q \\
+
+m &= m_\text{D} + m_\text{T} \\
+
+\dfrac{E}{m} &= \dfrac{Q}{m_\text{D} + m_\text{T}}
+
+\end{aligned}
+
+$$
 
 **Conversions:** $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$; $$
 
@@ -182,13 +224,21 @@ $$; atomic masses $m_\text{U} = 235.0439282\,\text{u}$, $m_\text{Xe} = 139.92164
 
 **Principle:** In a nuclear reaction the mass number is conserved, so the number of neutrons follows from the sums of the mass numbers. The atomic numbers already match ($92 = 54 + 38$), so the electrons in the atomic masses cancel. The energy corresponds to the difference in masses.
 
-**Formula:** $1 + 235 = 140 + 94 + x$, from which $x = 236 - 234 = 2$; $$
+**Formula:** $1 + 235 = 140 + 94 + x$, from which $x = 236 - 234 = 2$; then $$
 
 \begin{aligned}
 
-Q &= (m_\text{n} + m_\text{U} - m_\text{Xe} - m_\text{Sr} \\
+Q &= \Delta m\,c^2 \\
 
-&- 2m_\text{n})\,c^2
+\Delta m &= m_\text{initial} - m_\text{final} \\
+
+m_\text{initial} &= m_\text{n} + m_\text{U} \\
+
+m_\text{final} &= m_\text{Xe} + m_\text{Sr} + 2m_\text{n} \\
+
+Q &= (m_\text{n} + m_\text{U} - m_\text{Xe} \\
+
+&\quad - m_\text{Sr} - 2m_\text{n})\,c^2
 
 \end{aligned}
 
@@ -256,7 +306,23 @@ $$
 
 Each fission uses up one uranium-235 atom, so the mass is the number of fissions times the mass of an atom.
 
-**Formula:** $Pt = NQ$, from which $N = \dfrac{Pt}{Q}$ and $m = N m_\text{U} = \dfrac{Pt\,m_\text{U}}{Q}$
+**Formula:** $$
+
+\begin{aligned}
+
+E &= Pt \\
+
+E &= NQ \\
+
+m &= N m_\text{U} \\
+
+N &= \dfrac{Pt}{Q} \\
+
+m &= \dfrac{Pt\,m_\text{U}}{Q}
+
+\end{aligned}
+
+$$
 
 **Conversions:** $P = 4300 \cdot 10^{6}\,\text{W}$; $t = 24 \cdot 3600\,\text{s} = 86\,400\,\text{s}$; $Q = 200 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.204 \cdot 10^{-11}\,\text{J}$; $$
 
@@ -297,7 +363,23 @@ $$
 
 **Principle:** For each helium nucleus formed, an energy $Q$ is released that corresponds to the difference between the masses of four hydrogen atoms and a helium atom. Because all the energy ends up as radiation, the radiated power is $Q$ times the rate at which helium nuclei are formed.
 
-**Formula:** $Q = (4m_\text{H} - m_\text{He})\,c^2$ and $P = \dfrac{N}{t}\,Q$, from which $\dfrac{N}{t} = \dfrac{P}{Q}$
+**Formula:** $$
+
+\begin{aligned}
+
+Q &= \Delta m\,c^2 \\
+
+\Delta m &= 4m_\text{H} - m_\text{He} \\
+
+Q &= (4m_\text{H} - m_\text{He})\,c^2 \\
+
+P &= \dfrac{N}{t}\,Q \\
+
+\dfrac{N}{t} &= \dfrac{P}{Q}
+
+\end{aligned}
+
+$$
 
 **Conversions:** $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$ and $$
 
