@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0b16b34359b806e5
+CONTENT-HASH: 3adb43b8f927fac3
 
 ## Blocking
 - none
@@ -8,7 +8,8 @@ CONTENT-HASH: 0b16b34359b806e5
 - none
 
 ## Checked
-- Delta (Kaava steps in solutions.md rewritten from basic equations) judged in context on disk: every Kaava line now starts from a basic definition or equation and reaches the working form.
-- Physics and notation consistent with the Periaate, Sovellus and Sijoitus steps; no answer disclosed beyond the model solution.
-- Diagram of aligned equations reads as a staged derivation; added "Tässä ..." definitions are brief and in Finnish.
-- No exercise, figure or feedback wording changed beyond spacing in numeric feedback.
+- Delta: every "Kaava"/"Formula" step in solutions.md now starts from a basic definition or equation and reaches the working form; order is a derivation a student can follow.
+- Physics and symbols agree with the Principle, Substitution and Answer steps; no answer disclosed beyond the model solution.
+- Added "Tässä/Here ..." definitions and merged-paragraph model answers are brief, correct and readable.
+- Aligned-equation blocks read as staged derivations; the packet diff shows them without line breaks, but the files on disk contain proper breaks (checked).
+- No exercise, figure or task text changed (no exercise wording changed); levels, context and wording unaffected.

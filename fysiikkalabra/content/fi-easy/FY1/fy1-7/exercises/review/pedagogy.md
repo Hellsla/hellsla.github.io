@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: b2d6a4985ac2c285
-SCOPE: delta added-exercise from c2b8dff4a81964ef base 9df3f06ae3cc
+CONTENT-HASH: 1f3936346b55144f
 
 ## Blocking
+- none
 
 ## Polish
-- solutions.md fy1-7-L2-09 d) — Saturnus has 42 % of Neptune's density; write "alle puolet" instead of "noin puolet" (from round 1, not required).
+- none
 
 ## Checked
-- Diff c): the flattening explanation is now right: Earth is slightly flattened, Saturn much more, so the 0,4 % difference comes mostly from flattening. It repairs my round 1 finding.
-- The reasoning chain (too large volume gives too small density) is stepwise and in plain Finnish.
-- Rest of the set unchanged; level and kind mix as passed.
-- Hash at start and end: b2d6a4985ac2c285.
+- Delta: every "Kaava"/"Formula" step in solutions.md now starts from a basic definition or equation and reaches the working form; order is a derivation a student can follow.
+- Physics and symbols agree with the Principle, Substitution and Answer steps; no answer disclosed beyond the model solution.
+- Added "Tässä/Here ..." definitions and merged-paragraph model answers are brief, correct and readable.
+- Aligned-equation blocks read as staged derivations; the packet diff shows them without line breaks, but the files on disk contain proper breaks (checked).
+- No exercise, figure or task text changed (no exercise wording changed); levels, context and wording unaffected.

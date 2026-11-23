@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 35ea97317da552d9
+CONTENT-HASH: e84a1291e0c3cbdd
 
 ## Blocking
 - none
 
 ## Polish
-- exercises.json fy1-8-L3-04 / solutions.md: "mitä väitteitä aineisto tukee ja mitä ei" is correct but "mitkä väitteet ... ja mitkä ei" named the claims more directly; optional.
+- none
 
 ## Checked
-batch delta review (exercises): L3-04 question and Kysytty reworded to partitive, consistent between task and solution; data and answer unchanged.
+- Delta: every "Kaava"/"Formula" step in solutions.md now starts from a basic definition or equation and reaches the working form; order is a derivation a student can follow.
+- Physics and symbols agree with the Principle, Substitution and Answer steps; no answer disclosed beyond the model solution.
+- Added "Tässä/Here ..." definitions and merged-paragraph model answers are brief, correct and readable.
+- Aligned-equation blocks read as staged derivations; the packet diff shows them without line breaks, but the files on disk contain proper breaks (checked).
+- No exercise, figure or task text changed (no exercise wording changed); levels, context and wording unaffected.

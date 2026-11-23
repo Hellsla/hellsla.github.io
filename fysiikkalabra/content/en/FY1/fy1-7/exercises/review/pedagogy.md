@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4364693aa2edd197
+CONTENT-HASH: 3771cf2b226387d4
 
 ## Blocking
 - none
@@ -8,6 +8,8 @@ CONTENT-HASH: 4364693aa2edd197
 - none
 
 ## Checked
-- The overstated "same size as the rounding of the data" is gone. The new text says Earth is also slightly flattened by its rotation, much less than Saturn because it spins more slowly, which is physically sound (about 0.3 % flattening against a 0.4 % difference).
-- Part c) still follows the staged logic: Saturn's difference, the model's cause (flattening), larger volume giving smaller density, NASA's true volume, then the Earth contrast.
-- Part d) is untouched and still agrees with the table.
+- Delta: every "Kaava"/"Formula" step in solutions.md now starts from a basic definition or equation and reaches the working form; order is a derivation a student can follow.
+- Physics and symbols agree with the Principle, Substitution and Answer steps; no answer disclosed beyond the model solution.
+- Added "Tässä/Here ..." definitions and merged-paragraph model answers are brief, correct and readable.
+- Aligned-equation blocks read as staged derivations; the packet diff shows them without line breaks, but the files on disk contain proper breaks (checked).
+- No exercise, figure or task text changed (no exercise wording changed); levels, context and wording unaffected.

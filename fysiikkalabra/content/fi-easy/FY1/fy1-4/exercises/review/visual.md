@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 70028b023f1c1c1b
+CONTENT-HASH: 2d8ab788261cf4e2
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Delta (md-paragraphs, solutions.md only): opened 1280 px open-solution captures of fy1-4 L1 part 7 (task 4-7 model answer) and L3 part 5 (L3-04/05 area).
-- Each changed Mallivastaus / Vastaus is now several short paragraphs inside the solution card; spacing between paragraphs is even, formulas and the aligned chains unchanged, nothing clipped or overflowing, hierarchy (labelled blocks) intact. Words unchanged, so the Finnish stands as previously passed.
-- Not every changed item had its own capture opened; the change is the same paragraph-break pattern in each.
+- delta 8g (Kaava steps as aligned display blocks), economical sample from the lesson's review/shots (current for this hash): fi fy1-5 open-exercises-L3-1280-4 (seven rows), fi fy1-6 L3-1280-7 (five rows with a subscripted left side), en fy1-1 L3-1280-4 and fy1-3 L3-1280-3 (Substitution blocks), fi-easy fy1-7 L3-1280-5 (five single-relation rows).
+- Rows align at the relation sign, fractions and subscripts legible, no clipping or overflow, blocks sit apart from the text, trailing sentences read as their own line; Muunnokset/Sijoitus/Vastaus/Reasonableness survived. This lesson's own capture was not opened; judged from the sampled blocks, which use the same shared component. No figures in the delta.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 5

@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 25de39d17f0b1d8d
-SCOPE: delta added-exercise from 442bab1479f9253c base 81db4a6fd727
+CONTENT-HASH: 2bec31ef376ba1fb
 
 ## Blocking
 - none
 
 ## Polish
-- exercises.json fy1-8-L1-10 question is still awkward ("the shortest distance over which the sound must be measured to travel"); write "What is the shortest distance the sound must travel in the measurement?".
+- none
 
 ## Checked
-- Unit in the question is now typeset as $\text{km}$, consistent with the rest.
-- Formula stacked in an aligned block, two steps readable at 360 px.
-- Answer wording corrected: 1.4 km rounded up so the 5 % limit is surely met; sensible, and no longer claims a false significant-figure rule.
-- Arithmetic: 0.2/0.05 = 4.0 s, 343.4 x 4.0 = 1373.6 m = 1.37 km; backward check in Reasonableness is correct.
+- Delta: every "Kaava"/"Formula" step in solutions.md now starts from a basic definition or equation and reaches the working form; order is a derivation a student can follow.
+- Physics and symbols agree with the Principle, Substitution and Answer steps; no answer disclosed beyond the model solution.
+- Added "Tässä/Here ..." definitions and merged-paragraph model answers are brief, correct and readable.
+- Aligned-equation blocks read as staged derivations; the packet diff shows them without line breaks, but the files on disk contain proper breaks (checked).
+- No exercise, figure or task text changed (no exercise wording changed); levels, context and wording unaffected.

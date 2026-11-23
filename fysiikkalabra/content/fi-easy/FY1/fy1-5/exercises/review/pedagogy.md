@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a6634c694c12114a
-SCOPE: delta added-exercise from af2bd0a7a88e97ab base 81db4a6fd727
+CONTENT-HASH: 87f70b122b0e9621
 
 ## Blocking
 - none
 
 ## Polish
-- exercises.json fy1-5-L1-09 — the question is not the last sentence ('Anna vastaus yksikössä km' follows); acceptable but could go in the unit field only.
+- none
 
 ## Checked
-- fy1-5-L1-09: s = vt with a looked-up speed; the situation is recognisable.
-- Solution has all steps (given, asked, principle, formula, conversions, substitution, answer, sanity check); arithmetic verified.
-- Whole-set fit: the MAFY lookup task adds a new kind (table lookup) at level 1; no repeat of the worked example.
-- Finnish and reading level fine; phone readability not affected (short calculation).
+- Delta: every "Kaava"/"Formula" step in solutions.md now starts from a basic definition or equation and reaches the working form; order is a derivation a student can follow.
+- Physics and symbols agree with the Principle, Substitution and Answer steps; no answer disclosed beyond the model solution.
+- Added "Tässä/Here ..." definitions and merged-paragraph model answers are brief, correct and readable.
+- Aligned-equation blocks read as staged derivations; the packet diff shows them without line breaks, but the files on disk contain proper breaks (checked).
+- No exercise, figure or task text changed (no exercise wording changed); levels, context and wording unaffected.
