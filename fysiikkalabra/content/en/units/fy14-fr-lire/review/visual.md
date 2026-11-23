@@ -1,16 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: ad7141695fb701d6
+CONTENT-HASH: 90300fec9e6c18a5
+SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
-Delta review: unit.md "Why you understand more than you think", first sentence now "You can already recognise many French words, especially through English, Swedish and international scientific vocabulary." Previous PASS hash: f5bc3f119dc791ac.
-
-## Blocking
-(none)
-
-## Polish
-(Carried over from the previous report, not part of this diff: News texts can still separate a number from its unit at a line break; use a no-break space.)
-
-## Checked
-- Built preview and scripts/screenshot.py fy14-fr-lire --lang en (47 captures). Opened the paragraph at 390 px (lire-390-0): the italic French and Swedish examples (trottoar, parapluie, byrå, bureau ...) wrap between whole items, `lang="fr"` spans unchanged, no clipping, no horizontal scroll. The new sentence is accurate in tone (no longer "thousands ... without having studied them") and flows into the examples. Diff read: only this sentence changed.
-
-## Scores
-illustrations 5 · typography 5 · English 5 · accessibility 4
+1. Blocking: none
+2. Checked: every stop-think box at 390 and 1280 px (DOM checks: no horizontal overflow, no raw $ or \n, answer details open cleanly; captures of each box with surrounding text/figures); boxes sit after a complete paragraph or figure, none between a sentence and its formula/figure. Consistent look across units. Note: the unit was first built with literal *...* asterisks in boxes of fy14-fr-bonjour/fy14-fr-lire (fixed by the hash change; rebuilt output shows em tags, no asterisks).
