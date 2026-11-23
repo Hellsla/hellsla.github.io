@@ -1,6 +1,7 @@
-VERDICT: FAIL
-CONTENT-HASH: 90300fec9e6c18a5
+VERDICT: PASS
+CONTENT-HASH: e1c14049ce6a5690
 SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
-1. Blocking: Box 2 (several milliards of euros: millions or billions?) is check-2 in inquiry.json almost word for word, with the answer. Fix: use another false friend from the table, such as une librairie or éventuellement. Box 1 (réacteur, ending -eur) is fine and stays.
-2. Checked: Box 1 is answerable from strategy 3 and does not duplicate check-3 (aimants, context). Both <em> changes are correct.
+1. Blocking: none
+   Polish: the box uses réacteur, the very example already given in strategy 3, so it only tests recall and sits after strategy 5; use a new word (e.g. magnétique, difficulté). Does not duplicate check-3 (aimants, context) or the sort task.
+2. Checked: git diff: 6 additions only. One idea, answerable from the list; nothing disclosed. Hash same at start and end.

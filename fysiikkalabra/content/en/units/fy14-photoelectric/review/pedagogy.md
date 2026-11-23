@@ -1,6 +1,7 @@
-VERDICT: FAIL
-CONTENT-HASH: 98de5c06868345fc
+VERDICT: PASS
+CONTENT-HASH: b4c3d625aba2aa9c
 SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
-1. Blocking: (a) The 'usf' figure (stopping voltage against frequency) now sits right after the 'energy' figure, before the text that introduces the photon model, the equation and the stopping voltage. The move shifted the text blocks after the figure instead of moving the box after its figure. The graph appears with no explanation and the first box is cut off from the Key idea paragraph by two figures. Fix: put 'usf' back after the 'slope h/e' paragraph, and put box 1 right after the 'energy' figure. (b) Box 3 (why the lines have the same slope) repeats check-3 (how do the caesium and zinc lines compare?) and answers it in advance. Fix: delete it, or ask something check-3 does not, such as what a larger h/e slope would mean.
-2. Checked: Box 1 (hf<W) is answerable from the paragraph and does not duplicate inquiry.json. Box 2 (eV, 2.0 V) is answerable from the definition just above it and does not touch a task. The formula is not split from its text.
+1. Blocking: none
+   Polish: box 1 (what happens to the energy if hf<W) restates the sentence directly above the figure, so it is recall rather than thought; also appears as a distractor feedback in the inquiry (not a prediction answer). Box 2 (2.0 V gives 2.0 eV) is a one-step check that follows the eV definition paragraph.
+2. Checked: git diff: 12 additions only, no figure/text moved. Box 1 follows the figure showing hf, W and Ek,max, one idea, answerable. Box 2 follows the eV paragraph, one idea, does not duplicate pred-stop/pred-bright/checks, gives nothing away. Hash same at start and end.

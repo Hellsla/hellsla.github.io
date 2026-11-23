@@ -1,6 +1,7 @@
-VERDICT: FAIL
-CONTENT-HASH: f6738c636875e7ed
+VERDICT: PASS
+CONTENT-HASH: 95770be6f21b1896
 SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
-1. Blocking: The box asks how quatre-vingt-dix-sept is built, the same question as the 'notice' task (how are 90–99 built?) and the number of check-1 (97). It discloses both answers, and the table right above it already shows the 97 row. Fix: use another number, such as 76 or 83, and make 'Without looking at the table' real by placing the box after the paragraph on Belgium and Switzerland.
-2. Checked: The box is one idea and sits after the 70–99 table. The <em> change is fine.
+1. Blocking: none
+   Polish: box (z in deux euros, not deux croissants) sits after item 4, but the answer is item 3 (liaison with euros); a position right after item 3 would suit better. Model answer restates item 3.
+2. Checked: git diff: 6 additions only. One idea; no duplicate of check-3 (pronounce six euros) as the box asks for the reason with a contrast; nothing disclosed. Hash same at start and end.

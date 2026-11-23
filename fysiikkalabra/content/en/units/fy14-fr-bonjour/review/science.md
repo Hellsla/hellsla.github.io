@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 20229edeec601da8
+CONTENT-HASH: 5904d3c5edcbdc6a
 SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
 1. Blocking: none
-2. Checked: No physics. The vous box follows the tu/vous list above it (polite form for an adult, the only form for two or more people). The finlandais/finlandaise box follows sound point 1 (silent final s, heard as z when not final). <em> and <span lang> markup are well formed. Hash is the same at start and end.
+2. Checked: Box (after the 'friendly letters' paragraph, end of the sound list): finlandais final s silent, finlandaise s not final so heard as z. Correct French pronunciation (/fɛ̃lɑ̃dɛ/ vs /fɛ̃lɑ̃dɛz/), stated in point 1 before it; one answer; span lang and em markup inside the fence well formed.

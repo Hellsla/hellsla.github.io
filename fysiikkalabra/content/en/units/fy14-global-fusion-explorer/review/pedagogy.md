@@ -1,6 +1,7 @@
-VERDICT: FAIL
-CONTENT-HASH: 5b0351d76e0b90ce
+VERDICT: PASS
+CONTENT-HASH: fb32bb83c19af5b5
 SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
-1. Blocking: The box on 'Model A, 1953–?' repeats check-2 in inquiry.json almost word for word and gives its answer (counted only to 1963, not a fact) before the student acts. Fix: delete the box or use another unknown-year facility that check-2 does not ask about. The <em> change is fine.
-2. Checked: The box follows the bullet list that explains the unknown end year, so it is answerable from what was just read. The <em>…</em> markup is correct.
+1. Blocking: none
+   Polish: none
+2. Checked: git diff: 6 additions only. New box follows the bullet list that introduces company-reported and plan; one idea, an inference the student can make from the text; no overlap with check-1..3, find-error or predictions; nothing disclosed. Hash same at start and end.

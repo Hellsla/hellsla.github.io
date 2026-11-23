@@ -1,6 +1,7 @@
-VERDICT: FAIL
-CONTENT-HASH: 4c8bf127299ad252
+VERDICT: PASS
+CONTENT-HASH: 0fb5ed28dd755d9a
 SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
-1. Blocking: (a) The 'mirror' and 'torus' figures were moved into the Lorentz section, ahead of the formula section and ahead of the text on pitch angle, loss cone and torus that they illustrate. The student sees θ, B_max and 'turns back' before any of it is explained. Box 1 (force along a field line) is separated from its Lorentz paragraph by those two figures. Fix: 'mirror' after the loss-cone paragraph, then box 2; 'torus' after the torus paragraph, then box 3; box 1 straight after the 'lorentz' figure. (b) Box 3 (why a ring removes the leak) restates the check-explain model answer. Fix: delete it, or ask about the drift.
-2. Checked: Box 2 (why v_par shrinks) is answerable from the text and does not give away pred-mirror, which asks which pitch angles turn back. Box 1 is a valid single idea apart from its position.
+1. Blocking: none
+   Polish: box 1 is answered by the single sentence 'A charge that moves along the field feels no force' (a restatement); box 2 is close to the sentence just before it ('more of its motion turns into circling'), though it explains why, which is worthwhile and does not duplicate pred-mirror (which asks which protons turn back).
+2. Checked: git diff: 13 additions only. Both boxes follow the figure for their section, not splitting formula from figure; one idea each; no duplicate of pred-field, pred-mirror or no-work choice; no later task disclosed. Hash same at start and end.

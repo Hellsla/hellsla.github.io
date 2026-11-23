@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: f6738c636875e7ed
+CONTENT-HASH: 95770be6f21b1896
 SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
 1. Blocking: none
-2. Checked: 97 = 4*20 + 17 is correct and matches the table and line 35. The liaison box (deux euros has a z, the x is silent before a consonant) follows sound points 1 and 3. Markup is well formed. Hash is the same at start and end.
+2. Checked: Box (after point 4, before the say exercise): z in deux euros by liaison because euro starts with a vowel; x of deux silent before a consonant. Correct (/døzøʁo/, /døkʁwasɑ̃/); supported by points 1 and 3 above (silent before a consonant, liaison with euros, deux euros dö-zö-RO). One answer, markup well formed.
