@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 92108ccdde3e0001
+CONTENT-HASH: 017653cf72f2fca8
+SCOPE: delta (solutions.md Formula steps as aligned principle rows; multimeter-task picture is teacher-approved)
 
 ## Blocking
 - none
@@ -8,8 +9,8 @@ CONTENT-HASH: 92108ccdde3e0001
 - none new
 
 ## Checked
-- Delta (solutions.md paragraph breaks only, round 2). Opened 1280 px capture: open-exercises-L3-1280-5 (2-22 task and start of its solution); diff read: a)-d) and a)-c) now each start their own paragraph, round-1 Minor resolved.
-- Breaks now stand before part labels or at sentence boundaries; no one-word paragraph, no formula or label clipped, solution-card spacing even.
+- Delta. Diff read in full. Opened 1280 px captures: open-exercises-L3-1280-4 (ammeter-in-parallel model answer, layout around the changed solution) and -8 (five-row Formula R, ΔU, ΔI, ΔR/R, ΔR; Conversions chain).
+- Rows align at the equals sign, subscripts and fractions are readable, nothing clipped, card spacing even. The rewritten b) step of the voltage-divider task is plain and short.
 
 ## Scores
 illustrations n/a · typography 5 · Finnish 4 · accessibility 4

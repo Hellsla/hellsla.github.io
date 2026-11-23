@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ff27a40856f13235
-Mode: delta (md-paragraphs, round 2)
+CONTENT-HASH: 0403a43777fa1082
+SCOPE: delta (Kaava steps of solutions.md)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] solutions.md Kaava rows: a short aligned block puts the first rows at slightly different left offsets (equals signs aligned, as intended); no change needed.
 
 ## Checked
-- fy6-3-open-exercises-L3-1280-7 (L3-05 solution: (1) and (2) now separate paragraphs, nothing clipped). Round-1 Major resolved: breaks before (1)/(2), orphan 'Siinä resistanssin lukuarvo' joined. Other breaks judged from the diff.
+- fy6-3 open-exercises-L2-1280-10 (Kohta b/c Kaava), L3-1280-4, -5, -6, -7, -8
+Kaava blocks now one equation per row, equals signs aligned, fractions in display size, no clipping or overflow; order principle, formula, substitution kept; Finnish text around the blocks unchanged.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

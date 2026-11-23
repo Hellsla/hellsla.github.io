@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ca59d28bdd534f44
-Mode: delta (md-paragraphs, work queue 8c)
+CONTENT-HASH: e0d944a8c7421a99
+SCOPE: delta (Kaava steps of solutions.md; figure multimeter-task teacher-approved, not re-judged)
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md (2-21 and the 4,8 % task) — a paragraph opens with a pronoun whose antecedent is in the paragraph above ("Se ei kerro mittarin vaikutusta piiriin.") and the last paragraph of the 118 Ω task is a one-sentence orphan ("Mittarin resistanssi on suuri…"); move the break one sentence earlier or later.
+- [Minor] solutions.md Kaava rows: a short aligned block puts the first rows at slightly different left offsets (equals signs aligned, as intended); no change needed.
 
 ## Checked
-- fy6-2-open-exercises-L3-1280-3 (the 2-20 solution card, spacing normal, nothing clipped); fy6-2-open-exercises-L2-1280-12 (context only). Remaining paragraph breaks judged from the diff text.
+- fy6-2 open-exercises-L3-1280-4, -5 (10-row Kaava), -6 (Sijoitus after it)
+Kaava blocks now one equation per row, equals signs aligned, fractions in display size, no clipping or overflow; order principle, formula, substitution kept; Finnish text around the blocks unchanged.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

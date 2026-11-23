@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c569d8c95da8ef68
-Mode: delta (md-paragraphs, round 2)
+CONTENT-HASH: 66cbf9bb521d16b8
+SCOPE: delta (Kaava steps of solutions.md; figure kaavio-malli teacher-approved, not re-judged)
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy6-1 solutions.md c): the pronoun-opening 'Se' paragraphs stay as they are (word change not allowed).
+- [Minor] solutions.md Kaava rows: a short aligned block puts the first rows at slightly different left offsets (equals signs aligned, as intended); no change needed.
 
 ## Checked
-- fy6-1-open-exercises-L2-1280-8 (L2-07 a)/b)/c) breaks, formulas, card spacing) ; L1 'Piiri A/B' change judged from the diff text: breaks now fall before b) and c), round-1 finding resolved.
+- fy6-1 open-exercises-1280-1 (1-2 Kaava), open-exercises-L3-1280-5 (7-row battery Kaava)
+Kaava blocks now one equation per row, equals signs aligned, fractions in display size, no clipping or overflow; order principle, formula, substitution kept; Finnish text around the blocks unchanged.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
