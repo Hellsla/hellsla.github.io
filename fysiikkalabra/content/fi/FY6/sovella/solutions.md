@@ -97,7 +97,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Kysytty:** lähdejännite $E$ ja sisäinen resistanssi $R_\text{s}$
 **Periaate:** Mallin mukaan napajännite on $U = E - R_\text{s} I$. Suoran leikkauskohta pystyakselilla on virran arvolla nolla, jolloin pariston sisällä ei synny jännitehäviötä, joten leikkauskohta on $E$. Kulmakerroin kertoo, kuinka paljon napajännite laskee virran kasvaessa, joten se on $-R_\text{s}$.
 **Kuvaajan lukeminen:** Kulmakerroin luetaan piirretyn suoran kahdesta kaukana toisistaan olevasta pisteestä eikä vierekkäisistä mittauspisteistä: $(0{,}10\,\text{A};\ 4{,}48\,\text{V})$ ja $(0{,}60\,\text{A};\ 3{,}88\,\text{V})$. Niiden välillä $\Delta I = 0{,}50\,\text{A}$ ja $\Delta U = -0{,}60\,\text{V}$ (kuvaajan kulmakertoimen kolmio). Suora leikkaa pystyakselin kohdassa $4{,}60\,\text{V}$.
-**Kaava:** $R_\text{s} = -\dfrac{\Delta U}{\Delta I}$ ja $E = U + R_\text{s} I$ mistä tahansa suoran pisteestä.
+**Kaava:** $$\begin{aligned} U &= E - R_\text{s} I \\ \dfrac{\Delta U}{\Delta I} &= -R_\text{s} \\ R_\text{s} &= -\dfrac{\Delta U}{\Delta I} \\ E &= U + R_\text{s} I \end{aligned}$$
 **Muunnokset:** Ei tarvita: jännite on voltteina ja virta ampeereina, ja $1\,\text{V/A} = 1\,\Omega$.
 **Sijoitus:** $R_\text{s} = -\dfrac{-0{,}60\,\text{V}}{0{,}50\,\text{A}} = 1{,}2\,\Omega$ ja $E = 4{,}48\,\text{V} + 1{,}2\,\Omega \cdot 0{,}10\,\text{A} = 4{,}48\,\text{V} + 0{,}12\,\text{V} = 4{,}60\,\text{V}$
 **Vastaus:** $E \approx 4{,}6\,\text{V}$ ja $R_\text{s} \approx 1{,}2\,\Omega$, kaksi merkitsevää numeroa, koska kulmakerroin luetaan kuvaajalta eikä sitä voi lukea tarkemmin kuin kahden numeron tarkkuudella.
@@ -107,7 +107,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Annettu:** $E = 4{,}60\,\text{V}$, $R_\text{s} = 1{,}2\,\Omega$ ja ulkoinen vastus $R = 8{,}0\,\Omega$
 **Kysytty:** vastukseen siirtyvä teho $P$ ja pariston sisäisessä resistanssissa lämpönä siirtyvän tehon osuus pariston koko sähkötehosta
 **Periaate:** Virtapiirissä paristo, sisäinen resistanssi ja vastus ovat sarjassa, joten kaikkien läpi kulkee sama virta. Silmukkasäännön mukaan lähdejännite jakautuu sisäisen resistanssin ja vastuksen yli: $E - R_\text{s} I - R I = 0$. Sähkötehosta siirtyy lämpönä sekä vastuksessa että pariston sisällä, ja pariston koko teho on näiden summa $E I$.
-**Kaava:** $I = \dfrac{E}{R + R_\text{s}}$, $P = R I^2$, $P_\text{s} = R_\text{s} I^2$ ja osuus $\dfrac{P_\text{s}}{P + P_\text{s}} = \dfrac{R_\text{s}}{R + R_\text{s}}$
+**Kaava:** $$\begin{aligned} E - R_\text{s} I - R I &= 0 \\ I &= \dfrac{E}{R + R_\text{s}} \\ P &= UI \\ &= R I \cdot I \\ &= R I^2 \\ P_\text{s} &= R_\text{s} I^2 \\ \dfrac{P_\text{s}}{P + P_\text{s}} &= \dfrac{R_\text{s} I^2}{R I^2 + R_\text{s} I^2} \\ &= \dfrac{R_\text{s}}{R + R_\text{s}} \end{aligned}$$
 **Muunnokset:** Ei tarvita, kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** $I = \dfrac{4{,}60\,\text{V}}{8{,}0\,\Omega + 1{,}2\,\Omega} = \dfrac{4{,}60\,\text{V}}{9{,}2\,\Omega} = 0{,}50\,\text{A}$, $P = 8{,}0\,\Omega \cdot (0{,}50\,\text{A})^2 = 2{,}0\,\text{W}$ ja $P_\text{s} = 1{,}2\,\Omega \cdot (0{,}50\,\text{A})^2 = 0{,}30\,\text{W}$. Osuus on $\dfrac{0{,}30\,\text{W}}{2{,}0\,\text{W} + 0{,}30\,\text{W}} = 0{,}13$.
 **Vastaus:** Vastukseen siirtyy teho $P \approx 2{,}0\,\text{W}$, ja noin $13\,\%$ pariston sähkötehosta siirtyy lämpönä pariston sisällä. Tulos on annettu kahden merkitsevän numeron tarkkuudella kuten lähtötiedot.
@@ -126,13 +126,13 @@ Lämpeneminen muuttaa myös $R_\text{s}$:ää mittauksen aikana (yleensä pienen
 
 Lähdejännitteeseen vaikutus on pieni, koska pienimmällä virralla mitattiin ensin tuoreella paristolla.
 
-*Ajautuman suuruus.* Ajautuma tarkoittaa jännitteen hidasta muutosta ajan kuluessa silloin, kun virta pysyy samana, ja ajautumisnopeus on jännitteen muutos aikayksikössä. Ajautuma osoittaa, että malli on idealisoitu: se käsittelee $E$:tä ja $R_\text{s}$:ää vakioina, vaikka todellinen paristo purkautuu ja lämpenee mittauksen aikana. Uusi mittaus virralla $0{,}10\,\text{A}$ antoi $4{,}45\,\text{V}$ eli $0{,}03\,\text{V}$ vähemmän kuin sarjan alussa. Sarjassa oli kuusi lukemaa, kukin noin minuutin ajan, joten ajautumisnopeus on noin $\dfrac{0{,}03\,\text{V}}{6\,\text{min}} \approx 0{,}005\,\text{V/min}$. Pahimmillaan viimeinen piste on siis noin $0{,}03\,\text{V}$ liian alhaalla, ja kulmakerroin on liian suuri enintään $\dfrac{0{,}03\,\text{V}}{0{,}50\,\text{A}} = 0{,}06\,\Omega$.
+*Ryöminnän suuruus.* Ryömintä tarkoittaa jännitteen hidasta muutosta ajan kuluessa silloin, kun virta pysyy samana, ja ryöminnän nopeus on jännitteen muutos aikayksikössä. Se ei ole sama asia kuin varauksenkuljettajien ryöminnän nopeus johtimessa (millimetrien luokkaa sekunnissa). Ryömintä osoittaa, että malli on idealisoitu: se käsittelee $E$:tä ja $R_\text{s}$:ää vakioina, vaikka todellinen paristo purkautuu ja lämpenee mittauksen aikana. Uusi mittaus virralla $0{,}10\,\text{A}$ antoi $4{,}45\,\text{V}$ eli $0{,}03\,\text{V}$ vähemmän kuin sarjan alussa. Sarjassa oli kuusi lukemaa, kukin noin minuutin ajan, joten ryöminnän nopeus on noin $\dfrac{0{,}03\,\text{V}}{6\,\text{min}} \approx 0{,}005\,\text{V/min}$. Pahimmillaan viimeinen piste on siis noin $0{,}03\,\text{V}$ liian alhaalla, ja kulmakerroin on liian suuri enintään $\dfrac{0{,}03\,\text{V}}{0{,}50\,\text{A}} = 0{,}06\,\Omega$.
 
 *Epävarmuus.* Pisteet poikkeavat sovitetusta suorasta enintään $0{,}02\,\text{V}$. Jos suoran toinen pää nousee ja toinen laskee tämän verran, kulmakerroin muuttuu $\dfrac{2 \cdot 0{,}02\,\text{V}}{0{,}50\,\text{A}} = 0{,}08\,\Omega$ eli $R_\text{s} = (1{,}20 \pm 0{,}08)\,\Omega$. Epävarmuus on pyöristetty yhteen merkitsevään numeroon.
 
 *Parannus.* Virrat mitataan satunnaisessa järjestyksessä tai sarja toistetaan käänteisessä järjestyksessä, ja piiri kytketään päälle vain lukeman ajaksi. Jos tulokset eroavat toisistaan, ero kertoo purkautumisen vaikutuksen suuruuden.
 
-*Johtopäätös.* Ajautuman vaikutus ($0{,}06\,\Omega$) on samaa suuruusluokkaa kuin hajonnan ($0{,}08\,\Omega$), joten $R_\text{s}$ on noin $1{,}1\ldots1{,}2\,\Omega$. Arvo $1{,}2\,\Omega$ on pikemmin yläraja, koska systemaattinen virhe kasvattaa sitä.
+*Johtopäätös.* Ryöminnän vaikutus ($0{,}06\,\Omega$) on samaa suuruusluokkaa kuin hajonnan ($0{,}08\,\Omega$), joten $R_\text{s}$ on noin $1{,}1\ldots1{,}2\,\Omega$. Arvo $1{,}2\,\Omega$ on pikemmin yläraja, koska systemaattinen virhe kasvattaa sitä.
 
 ### Hyväksytään myös
 - a-kohdassa kuvaajan pystyakseli voi alkaa nollasta, kunhan pisteet ja $E$ erottuvat; silloin suora voidaan jatkaa myös vaaka-akselille, jossa $I_\text{k} = \dfrac{E}{R_\text{s}} \approx 3{,}8\,\text{A}$.
@@ -152,7 +152,7 @@ Lähdejännitteeseen vaikutus on pieni, koska pienimmällä virralla mitattiin e
 **Annettu:** lähdejännite $E = 12{,}0\,\text{V}$, kaapelin resistanssi $R_\text{k} = 0{,}80\,\Omega$, lamppu A $12\,\text{V},\ 24\,\text{W}$ ja lamppu B $12\,\text{V},\ 12\,\text{W}$
 **Kysytty:** akustosta kulkeva virta $I$, kun molemmat lamput palavat
 **Periaate:** Lamppu käsitellään vakioresistanssina, jonka arvo saadaan nimellisarvoista: nimellisjännitteellä teho on $P = \dfrac{U^2}{R}$. Lamput A ja B ovat rinnan, joten niillä on sama jännite, ja kaapeli on niiden kanssa sarjassa, joten koko virta kulkee kaapelin kautta. Silloin kokonaisresistanssi on kaapelin resistanssin ja rinnankytkennän korvaavan resistanssin summa.
-**Kaava:** $R_\text{A} = \dfrac{U_\text{n}^2}{P_\text{A}}$, $R_\text{B} = \dfrac{U_\text{n}^2}{P_\text{B}}$, $\dfrac{1}{R_\text{r}} = \dfrac{1}{R_\text{A}} + \dfrac{1}{R_\text{B}}$, $R = R_\text{k} + R_\text{r}$ ja $I = \dfrac{E}{R}$
+**Kaava:** $$\begin{aligned} P &= UI \\ U &= RI \\ P &= \dfrac{U^2}{R} \\ R_\text{A} &= \dfrac{U_\text{n}^2}{P_\text{A}} \\ R_\text{B} &= \dfrac{U_\text{n}^2}{P_\text{B}} \\ I &= I_\text{A} + I_\text{B} \\ \dfrac{U}{R_\text{r}} &= \dfrac{U}{R_\text{A}} + \dfrac{U}{R_\text{B}} \\ \dfrac{1}{R_\text{r}} &= \dfrac{1}{R_\text{A}} + \dfrac{1}{R_\text{B}} \\ E - R_\text{k} I - R_\text{r} I &= 0 \\ R &= R_\text{k} + R_\text{r} \\ E &= RI \\ I &= \dfrac{E}{R} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V}^2/\text{W} = 1\,\Omega$.
 **Sijoitus:** $R_\text{A} = \dfrac{(12\,\text{V})^2}{24\,\text{W}} = 6{,}0\,\Omega$ ja $R_\text{B} = \dfrac{(12\,\text{V})^2}{12\,\text{W}} = 12\,\Omega$. Rinnankytkentä: $\dfrac{1}{R_\text{r}} = \dfrac{1}{6{,}0\,\Omega} + \dfrac{1}{12\,\Omega} = \dfrac{3}{12\,\Omega}$, joten $R_\text{r} = 4{,}0\,\Omega$. Kokonaisresistanssi on $R = 0{,}80\,\Omega + 4{,}0\,\Omega = 4{,}8\,\Omega$ ja virta $I = \dfrac{12{,}0\,\text{V}}{4{,}8\,\Omega} = 2{,}5\,\text{A}$.
 **Vastaus:** $I = 2{,}5\,\text{A}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -162,7 +162,7 @@ Lähdejännitteeseen vaikutus on pieni, koska pienimmällä virralla mitattiin e
 **Annettu:** $E = 12{,}0\,\text{V}$, $R_\text{k} = 0{,}80\,\Omega$, $R_\text{A} = 6{,}0\,\Omega$ ja a-kohdan virta $I = 2{,}5\,\text{A}$
 **Kysytty:** lampun A todellinen teho $P_\text{A}$ ja sen vertailu nimellistehoon $24\,\text{W}$
 **Periaate:** Silmukkasäännön mukaan akun jännite jakautuu kaapelin jännitehäviön ja lamppujen jännitteen kesken: $E - R_\text{k} I - U_\text{L} = 0$. Lamppujen jännite jää siksi nimellisjännitettä pienemmäksi, ja teho lasketaan tästä todellisesta jännitteestä.
-**Kaava:** $U_\text{L} = E - R_\text{k} I$ ja $P_\text{A} = \dfrac{U_\text{L}^2}{R_\text{A}}$
+**Kaava:** $$\begin{aligned} E - R_\text{k} I - U_\text{L} &= 0 \\ U_\text{L} &= E - R_\text{k} I \\ P_\text{A} &= U_\text{L} I_\text{A} \\ I_\text{A} &= \dfrac{U_\text{L}}{R_\text{A}} \\ P_\text{A} &= \dfrac{U_\text{L}^2}{R_\text{A}} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $$\begin{aligned} U_\text{L} &= 12{,}0\,\text{V} - 0{,}80\,\Omega \cdot 2{,}5\,\text{A} \\ &= 12{,}0\,\text{V} - 2{,}0\,\text{V} \\ &= 10{,}0\,\text{V} \end{aligned}$$ ja $P_\text{A} = \dfrac{(10{,}0\,\text{V})^2}{6{,}0\,\Omega} = 16{,}7\,\text{W}$
 **Vastaus:** $P_\text{A} \approx 17\,\text{W}$, noin $70\,\%$ nimellisarvosta $24\,\text{W}$, kaksi merkitsevää numeroa kuten lähtötiedoissa ($0{,}80\,\Omega$, $24\,\text{W}$, $12\,\text{V}$).
@@ -183,7 +183,7 @@ Lähdejännitteeseen vaikutus on pieni, koska pienimmällä virralla mitattiin e
 **Annettu:** $E = 12{,}0\,\text{V}$, $R_\text{k} = 0{,}80\,\Omega$, $R_\text{A} = 6{,}0\,\Omega$, $R_\text{B} = 12\,\Omega$, uusi lamppu C $12\,\text{V},\ 36\,\text{W}$, sulake $3{,}15\,\text{A}$ ja kaapelin raja $4{,}0\,\text{A}$
 **Kysytty:** akuston virta $I$ kolmella lampulla ja sulakkeen toiminta
 **Periaate:** Lamput ovat edelleen rinnan, joten niillä on yhteinen jännite ja resistanssit lasketaan yhteen käänteislukuina. Kaapeli on sarjassa kaikkien kanssa. Sulake on virtapiirin suojalaite: se palaa ja katkaisee piirin, jos virta ylittää sen nimellisvirran liian pitkään.
-**Kaava:** $R_\text{C} = \dfrac{U_\text{n}^2}{P_\text{C}}$, $\dfrac{1}{R_\text{r}} = \dfrac{1}{R_\text{A}} + \dfrac{1}{R_\text{B}} + \dfrac{1}{R_\text{C}}$ ja $I = \dfrac{E}{R_\text{k} + R_\text{r}}$
+**Kaava:** $$\begin{aligned} R_\text{C} &= \dfrac{U_\text{n}^2}{P_\text{C}} \\ I &= I_\text{A} + I_\text{B} + I_\text{C} \\ \dfrac{U}{R_\text{r}} &= \dfrac{U}{R_\text{A}} + \dfrac{U}{R_\text{B}} + \dfrac{U}{R_\text{C}} \\ \dfrac{1}{R_\text{r}} &= \dfrac{1}{R_\text{A}} + \dfrac{1}{R_\text{B}} + \dfrac{1}{R_\text{C}} \\ E - R_\text{k} I - R_\text{r} I &= 0 \\ I &= \dfrac{E}{R_\text{k} + R_\text{r}} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $R_\text{C} = \dfrac{(12\,\text{V})^2}{36\,\text{W}} = 4{,}0\,\Omega$ ja $\dfrac{1}{R_\text{r}} = \dfrac{1}{6{,}0\,\Omega} + \dfrac{1}{12\,\Omega} + \dfrac{1}{4{,}0\,\Omega} = \dfrac{2 + 1 + 3}{12\,\Omega} = \dfrac{1}{2{,}0\,\Omega}$, joten $R_\text{r} = 2{,}0\,\Omega$. Virta on $I = \dfrac{12{,}0\,\text{V}}{0{,}80\,\Omega + 2{,}0\,\Omega} = \dfrac{12{,}0\,\text{V}}{2{,}8\,\Omega} = 4{,}3\,\text{A}$.
 **Vastaus:** $I \approx 4{,}3\,\text{A}$.
@@ -223,7 +223,7 @@ Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvi
 **Annettu:** $q = 6{,}0 \cdot 10^{-13}\,\text{C}$, $U = 6{,}0 \cdot 10^{4}\,\text{V}$, $m = 4{,}0 \cdot 10^{-10}\,\text{kg}$ ja pisara lähtee levosta
 **Kysytty:** pisaran nopeus $v$ osuessaan työkappaleeseen; oletus: paino ja ilmanvastus jätetään pois
 **Periaate:** Sähkökentän pisaraan tekemä työ on varaus kertaa potentiaaliero, $W = qU$, ja se kasvattaa pisaran liike-energiaa. Paino ja ilmanvastus jätetään pois, joten muita voimia ei ole. Tällä tavalla riittää tietää potentiaaliero, eikä kentän voimakkuutta tai kiihtyvyyttä tarvita.
-**Kaava:** $q U = \dfrac{1}{2} m v^2$, josta $v = \sqrt{\dfrac{2 q U}{m}}$
+**Kaava:** $$\begin{aligned} W &= qU \\ W &= \Delta E_\text{k} = \dfrac{1}{2} m v^2 - 0 \\ qU &= \dfrac{1}{2} m v^2 \\ v &= \sqrt{\dfrac{2 q U}{m}} \end{aligned}$$
 **Muunnokset:** Ei tarvita, kaikki suureet ovat perusyksiköissä; $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
 **Sijoitus:** $$\begin{aligned} qU &= 6{,}0 \cdot 10^{-13}\,\text{C} \cdot 6{,}0 \cdot 10^{4}\,\text{V} \\ &= 3{,}6 \cdot 10^{-8}\,\text{J} \end{aligned}$$ ja $v = \sqrt{\dfrac{2 \cdot 3{,}6 \cdot 10^{-8}\,\text{J}}{4{,}0 \cdot 10^{-10}\,\text{kg}}} = \sqrt{180\,\text{m}^2/\text{s}^2} = 13{,}4\,\text{m/s}$
 **Vastaus:** $v \approx 13\,\text{m/s}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -277,7 +277,7 @@ Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvi
 **Annettu:** $C = 330\,\mu\text{F}$, jännite ennen salamaa $U_1 = 300\,\text{V}$ ja sen jälkeen $U_2 = 220\,\text{V}$
 **Kysytty:** salamaan siirtynyt energia $\Delta E$, sen osuus varastoidusta energiasta ja osuuden suuruuden syy
 **Periaate:** Salamaan siirtynyt energia on kondensaattorin energian muutos: se on energia ennen salamaa vähennettynä energialla salaman jälkeen. Jännite on energiakaavassa neliönä, joten kumpikin energia lasketaan erikseen; pelkkä jännitteen muutos $\Delta U$ ei riitä.
-**Kaava:** $\Delta E = \dfrac{1}{2} C U_1^2 - \dfrac{1}{2} C U_2^2$
+**Kaava:** $$\begin{aligned} E_1 &= \dfrac{1}{2} C U_1^2 \\ E_2 &= \dfrac{1}{2} C U_2^2 \\ \Delta E &= E_1 - E_2 \\ &= \dfrac{1}{2} C U_1^2 - \dfrac{1}{2} C U_2^2 \\ \text{osuus} &= \dfrac{\Delta E}{E_1} \end{aligned}$$
 **Muunnokset:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$
 **Sijoitus:** $E_1 = 14{,}85\,\text{J}$ ja $$\begin{aligned} E_2 &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text{V})^2 \\ &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 48\,400\,\text{V}^2 \\ &= 7{,}99\,\text{J} \end{aligned}$$, joten $\Delta E = 14{,}85\,\text{J} - 7{,}99\,\text{J} = 6{,}86\,\text{J}$. Osuus on $\dfrac{6{,}86\,\text{J}}{14{,}85\,\text{J}} = 0{,}46$.
 **Vastaus:** Salamaan siirtyi $\Delta E \approx 6{,}9\,\text{J}$, noin $46\,\%$ varastoidusta energiasta, kaksi merkitsevää numeroa kuten a-kohdassa.
@@ -287,7 +287,7 @@ Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvi
 **Annettu:** $C = 330\,\mu\text{F}$, jännitteen muutos $\Delta U = 300\,\text{V} - 220\,\text{V} = 80\,\text{V}$ ja kesto $\Delta t = 1{,}0\,\text{ms}$
 **Kysytty:** keskimääräinen virta $I$ salaman aikana
 **Periaate:** Virta on varauksen siirtymisnopeus. Kondensaattorin varaus on $Q = C U$, joten jännitteen pienentyessä $80\,\text{V}$ kondensaattorilta on lähtenyt varausta $\Delta Q = C\,\Delta U$ salamaputken kautta.
-**Kaava:** $I = \dfrac{\Delta Q}{\Delta t}$ ja $\Delta Q = C\,\Delta U$
+**Kaava:** $$\begin{aligned} Q &= C U \\ \Delta Q &= C\,\Delta U \\ I &= \dfrac{\Delta Q}{\Delta t} \\ &= \dfrac{C\,\Delta U}{\Delta t} \end{aligned}$$
 **Muunnokset:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$ ja $1{,}0\,\text{ms} = 1{,}0 \cdot 10^{-3}\,\text{s}$
 **Sijoitus:** $$\begin{aligned} \Delta Q &= 330 \cdot 10^{-6}\,\text{F} \cdot 80\,\text{V} \\ &= 0{,}0264\,\text{C} \end{aligned}$$ ja $I = \dfrac{0{,}0264\,\text{C}}{1{,}0 \cdot 10^{-3}\,\text{s}} = 26{,}4\,\text{A}$
 **Vastaus:** $I \approx 26\,\text{A}$, kaksi merkitsevää numeroa kuten keston $1{,}0\,\text{ms}$ tarkkuus.

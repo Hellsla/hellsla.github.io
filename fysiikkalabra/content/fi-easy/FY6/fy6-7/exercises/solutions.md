@@ -53,7 +53,7 @@
 **Kysytty:** ohjelman koko energia $E$ kilowattitunteina
 **Periaate:** Jokaisessa vaiheessa teho pysyy samana. Vaiheen energia on teho kertaa vaiheen kesto. Se on kuvaajan alle jäävän suorakulmion pinta-ala. Koko energia on vaiheiden energioiden summa.
 **Kuvaajan lukeminen:** Lämmitysvaiheessa teho on $2{,}0\,\text{kW}$ välillä $0$–$0{,}25\,\text{h}$. Kesto on siis $0{,}25\,\text{h}$. Pesussa teho on $0{,}2\,\text{kW}$ välillä $0{,}25$–$1{,}25\,\text{h}$ eli $1{,}0\,\text{h}$. Linkouksessa teho on $0{,}4\,\text{kW}$ välillä $1{,}25$–$1{,}5\,\text{h}$ eli $0{,}25\,\text{h}$.
-**Kaava:** $E = P_1 t_1 + P_2 t_2 + P_3 t_3$
+**Kaava:** $$\begin{aligned} E_i &= P_i t_i \\ E &= E_1 + E_2 + E_3 \\ E &= P_1 t_1 + P_2 t_2 + P_3 t_3 \end{aligned}$$
 **Muunnokset:** Ei tarvita: tehot luetaan kilowatteina ja ajat tunteina. Siksi energia tulee kilowattitunteina.
 **Sijoitus:** $$\begin{aligned} E &= 2{,}0\,\text{kW} \cdot 0{,}25\,\text{h} \\ &+ 0{,}2\,\text{kW} \cdot 1{,}0\,\text{h} \\ &+ 0{,}4\,\text{kW} \cdot 0{,}25\,\text{h} \\ &= 0{,}80\,\text{kWh} \end{aligned}$$
 **Vastaus:** $0{,}80\,\text{kWh}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska arvot luetaan $0{,}2\,\text{kW}$:n ja $0{,}25\,\text{h}$:n ruudukkoviivoilta.
@@ -63,7 +63,7 @@
 **Annettu:** jännite $U = 230\,\text{V}$, virta $I = 8{,}7\,\text{A}$, aika $t = 4{,}0\,\text{min}$
 **Kysytty:** sähköenergia $E$ kilojouleina
 **Periaate:** Keittimen teho on jännite kertaa virta. Kun teho pysyy samana, energia on teho kertaa aika. Kun jännite on voltteina, virta ampeereina ja aika sekunteina, energia tulee jouleina.
-**Kaava:** $P = UI$ ja $E = Pt$, joten $E = UIt$
+**Kaava:** $$\begin{aligned} P &= UI \\ E &= Pt \\ E &= UIt \end{aligned}$$
 **Muunnokset:** $t = 4{,}0\,\text{min} = 4{,}0 \cdot 60\,\text{s} = 240\,\text{s}$; lopuksi $1\,\text{kJ} = 1000\,\text{J}$
 **Sijoitus:** $E = 230\,\text{V} \cdot 8{,}7\,\text{A} \cdot 240\,\text{s} = 480\,240\,\text{J} = 480{,}24\,\text{kJ}$
 **Vastaus:** $4{,}8 \cdot 10^{2}\,\text{kJ}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten virta $8{,}7\,\text{A}$ ja aika $4{,}0\,\text{min}$.
@@ -73,7 +73,7 @@
 **Annettu:** valmiustilan teho $P = 4{,}5\,\text{W}$ koko vuoden, $365$ vuorokautta, hinta $a = 17\,\text{snt/kWh}$
 **Kysytty:** vuoden kustannus $K$ euroina
 **Periaate:** Valmiustilan teho on pieni mutta pysyy samana. Laitteet ovat valmiustilassa ympäri vuorokauden. Energia on teho kertaa aika, ja kustannus on hinta kertaa energia.
-**Kaava:** $E = Pt$ ja $K = aE$, joten $K = aPt$
+**Kaava:** $$\begin{aligned} E &= Pt \\ K &= aE \\ K &= aPt \end{aligned}$$
 **Muunnokset:** $P = 4{,}5\,\text{W} = 0{,}0045\,\text{kW}$; $t = 365 \cdot 24\,\text{h} = 8760\,\text{h}$; $a = 17\,\text{snt/kWh} = 0{,}17\,\text{€/kWh}$
 **Sijoitus:** $E = 0{,}0045\,\text{kW} \cdot 8760\,\text{h} = 39{,}42\,\text{kWh}$ ja $K = 0{,}17\,\tfrac{\text{€}}{\text{kWh}} \cdot 39{,}42\,\text{kWh} = 6{,}70\,\text{€}$
 **Vastaus:** $6{,}7\,\text{€}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten teho $4{,}5\,\text{W}$ ja hinta $17\,\text{snt/kWh}$.
@@ -83,7 +83,7 @@
 **Annettu:** hehkulampun teho $P_1 = 60\,\text{W}$, LED-lampun teho $P_2 = 8{,}0\,\text{W}$, paloaika $4{,}0\,\text{h}$ vuorokaudessa, $365$ vuorokautta
 **Kysytty:** vuoden energiansäästö $\Delta E$ kilowattitunteina
 **Periaate:** Lamput palavat yhtä kauan. Säästö on siis tehojen erotus kertaa paloaika. Kummankin lampun energiaa ei tarvitse laskea erikseen.
-**Kaava:** $\Delta E = P_1 t - P_2 t$, josta $\Delta E = (P_1 - P_2)t$
+**Kaava:** $$\begin{aligned} E &= Pt \\ \Delta E &= E_1 - E_2 \\ \Delta E &= P_1 t - P_2 t \\ \Delta E &= (P_1 - P_2)t \end{aligned}$$
 **Muunnokset:** $P_1 - P_2 = 60\,\text{W} - 8{,}0\,\text{W} = 52\,\text{W} = 0{,}052\,\text{kW}$; $t = 365 \cdot 4{,}0\,\text{h} = 1460\,\text{h}$
 **Sijoitus:** $\Delta E = 0{,}052\,\text{kW} \cdot 1460\,\text{h} = 75{,}92\,\text{kWh}$
 **Vastaus:** $76\,\text{kWh}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten tehot $60\,\text{W}$ ja $8{,}0\,\text{W}$ sekä paloaika $4{,}0\,\text{h}$.
@@ -93,7 +93,7 @@
 **Annettu:** keittimen teho $P_1 = 2200\,\text{W}$, aika $t_1 = 3{,}0\,\text{min}$, lampun teho $P_2 = 15\,\text{W}$
 **Kysytty:** lampun paloaika $t_2$ tunteina
 **Periaate:** Lamppu käyttää saman energian kuin keitin. Kummankin energia on teho kertaa aika. Pienemmällä teholla sama energia riittää siksi pidemmäksi ajaksi.
-**Kaava:** $P_2 t_2 = P_1 t_1$, josta $t_2 = \dfrac{P_1 t_1}{P_2}$
+**Kaava:** $$\begin{aligned} E &= Pt \\ E_2 &= E_1 \\ P_2 t_2 &= P_1 t_1 \\ t_2 &= \dfrac{P_1 t_1}{P_2} \end{aligned}$$
 **Muunnokset:** Tehojen yksikkö W supistuu, joten aika tulee minuutteina. Lopuksi $1\,\text{h} = 60\,\text{min}$.
 **Sijoitus:** $t_2 = \dfrac{2200\,\text{W} \cdot 3{,}0\,\text{min}}{15\,\text{W}} = 440\,\text{min} = \tfrac{440}{60}\,\text{h} = 7{,}33\,\text{h}$
 **Vastaus:** $7{,}3\,\text{h}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten aika $3{,}0\,\text{min}$ ja teho $15\,\text{W}$.
@@ -103,7 +103,7 @@
 **Annettu:** laskun summa $K = 64{,}20\,\text{€}$, perusmaksut $K_\text{perus} = 8{,}50\,\text{€}$, hinta $a = 15{,}0\,\text{snt/kWh}$
 **Kysytty:** kuukauden energia $E$ kilowattitunteina
 **Periaate:** Lasku koostuu kahdesta osasta. Perusmaksut eivät riipu kulutuksesta. Kulutusmaksu on hinta kertaa energia. Kun perusmaksut vähennetään summasta, jäljelle jää kulutusmaksu. Energia saadaan jakamalla kulutusmaksu hinnalla.
-**Kaava:** $K = aE + K_\text{perus}$, josta $E = \dfrac{K - K_\text{perus}}{a}$
+**Kaava:** $$\begin{aligned} K &= K_\text{perus} + aE \\ aE &= K - K_\text{perus} \\ E &= \dfrac{K - K_\text{perus}}{a} \end{aligned}$$
 **Muunnokset:** $a = 15{,}0\,\text{snt/kWh} = 0{,}150\,\text{€/kWh}$
 **Sijoitus:** $E = \dfrac{64{,}20\,\text{€} - 8{,}50\,\text{€}}{0{,}150\,\text{€/kWh}} = \dfrac{55{,}70\,\text{€}}{0{,}150\,\text{€/kWh}} = 371{,}3\,\text{kWh}$
 **Vastaus:** $371\,\text{kWh}$. Vastaus on annettu kolmella merkitsevällä numerolla kuten hinta $15{,}0\,\text{snt/kWh}$.
@@ -113,7 +113,7 @@
 **Annettu:** lämmitysvastuksen resistanssi $R = 26{,}5\,\Omega$, jännite $U = 230\,\text{V}$, aika $t = 2{,}50\,\text{h}$
 **Kysytty:** sähköenergia $E$ kilowattitunteina
 **Periaate:** Ohmin lain mukaan vastuksen virta on jännite jaettuna resistanssilla. Vastuksen teho on jännite kertaa virta. Resistanssi pysyy samana, joten teho pysyy samana. Energia on teho kertaa aika. Sähköenergia muuttuu vastuksen sisäenergiaksi, ja se siirtyy lämpönä veteen.
-**Kaava:** $I = \dfrac{U}{R}$, $P = UI$ ja $E = Pt$, joten $E = UIt$
+**Kaava:** $$\begin{aligned} U &= RI \\ I &= \dfrac{U}{R} \\ P &= UI \\ E &= Pt \\ E &= UIt \end{aligned}$$
 **Muunnokset:** Teho muunnetaan kilowateiksi ($1\,\text{kW} = 1000\,\text{W}$). Silloin tunneilla laskettu energia tulee kilowattitunteina.
 **Sijoitus:** $I = \dfrac{230\,\text{V}}{26{,}5\,\Omega} = 8{,}679\,\text{A}$, $P = 230\,\text{V} \cdot 8{,}679\,\text{A} = 1996\,\text{W} = 1{,}996\,\text{kW}$ ja $E = 1{,}996\,\text{kW} \cdot 2{,}50\,\text{h} = 4{,}99\,\text{kWh}$
 **Vastaus:** $4{,}99\,\text{kWh}$. Vastaus on annettu kolmella merkitsevällä numerolla kuten resistanssi $26{,}5\,\Omega$ ja aika $2{,}50\,\text{h}$.
@@ -128,7 +128,7 @@
 **Annettu:** teho $P = 0{,}90\,\text{kW}$, käyttöaika $15\,\text{min}$ vuorokaudessa, $30$ vuorokautta, hinta $a = 18\,\text{snt/kWh}$
 **Kysytty:** kustannus $K$ euroina
 **Periaate:** Kahvinkeittimen teho pysyy samana, kun se on päällä. Energia on siis teho kertaa koko käyttöaika. Kustannus on hinta kertaa energia. Perusmaksut jätetään pois, kuten tehtävässä sanotaan.
-**Kaava:** $E = Pt$ ja $K = aE$
+**Kaava:** $$\begin{aligned} E &= Pt \\ K &= aE \\ K &= aPt \end{aligned}$$
 **Muunnokset:** $t = 30 \cdot 15\,\text{min} = 450\,\text{min} = \tfrac{450}{60}\,\text{h} = 7{,}5\,\text{h}$; $a = 18\,\text{snt/kWh} = 0{,}18\,\text{€/kWh}$
 **Sijoitus:** $E = 0{,}90\,\text{kW} \cdot 7{,}5\,\text{h} = 6{,}75\,\text{kWh}$ ja $K = 0{,}18\,\tfrac{\text{€}}{\text{kWh}} \cdot 6{,}75\,\text{kWh} = 1{,}215\,\text{€}$
 **Vastaus:** $1{,}2\,\text{€}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten teho $0{,}90\,\text{kW}$ ja hinta $18\,\text{snt/kWh}$.
@@ -148,7 +148,7 @@
 **Annettu:** laitteiden tehot ja käyttöajat vuorokaudessa taulukosta, $365$ vuorokautta
 **Kysytty:** laitteiden yhteinen energia $E_\text{vuosi}$ kilowattitunteina, suurin kuluttaja ja säästökohde
 **Periaate:** Jokaisen laitteen teho pysyy samana, kun laite on käytössä. Laitteen energia vuorokaudessa on siis teho kertaa käyttöaika. Laitteiden energiat lasketaan yhteen. Vuoden energia on vuorokauden energia kertaa $365$.
-**Kaava:** $E_\text{vrk} = Pt$ jokaiselle laitteelle ja $E_\text{vuosi} = 365 \cdot E_\text{vrk,yht}$
+**Kaava:** $$\begin{aligned} E_{\text{vrk},i} &= P_i t_i \\ E_{\text{vrk},\text{yht}} &= \Sigma E_{\text{vrk},i} \\ E_\text{vuosi} &= 365 \cdot E_{\text{vrk},\text{yht}} \end{aligned}$$
 **Muunnokset:** $90\,\text{W} = 0{,}090\,\text{kW}$, $110\,\text{W} = 0{,}110\,\text{kW}$, $60\,\text{W} = 0{,}060\,\text{kW}$, $1200\,\text{W} = 1{,}200\,\text{kW}$ ja $800\,\text{W} = 0{,}800\,\text{kW}$
 **Sijoitus:** Valaistus $0{,}090\,\text{kW} \cdot 5{,}0\,\text{h} = 0{,}45\,\text{kWh}$; televisio $0{,}110\,\text{kW} \cdot 4{,}0\,\text{h} = 0{,}44\,\text{kWh}$; tietokone $0{,}060\,\text{kW} \cdot 6{,}0\,\text{h} = 0{,}36\,\text{kWh}$; pölynimuri $1{,}200\,\text{kW} \cdot 0{,}50\,\text{h} = 0{,}60\,\text{kWh}$; leivänpaahdin $0{,}800\,\text{kW} \cdot 0{,}20\,\text{h} = 0{,}16\,\text{kWh}$. Summa on $2{,}01\,\text{kWh}$ vuorokaudessa. Siis $E_\text{vuosi} = 365 \cdot 2{,}01\,\text{kWh} = 733{,}65\,\text{kWh}$.
 **Vastaus:** Vastauslaatikkoon $7{,}3 \cdot 10^{2}\,\text{kWh}$. a) Eniten energiaa käyttää pölynimuri, vaikka se on päällä vain puoli tuntia.
@@ -192,8 +192,7 @@ c) Huoneen lämpötila on mittauksen aikana eri kuin vuoden keskiarvo. Oven avau
 **Annettu:** kulutus $E$ ja hinta $a$ kuudella neljän tunnin jaksolla taulukosta; varaajan teho $P = 2{,}0\,\text{kW}$, aika $t = 3{,}0\,\text{h}$ jaksolla klo $16$–$20$
 **Kysytty:** vuorokauden kokonaiskustannus ja keskihinta sekä säästö $S$ euroina, kun varaajan lämmitys siirretään jaksolle klo $00$–$04$
 **Periaate:** Jokaisen jakson kustannus on jakson hinta kertaa jakson energia. Kokonaiskustannus on näiden summa. Keskihinta on kokonaiskustannus jaettuna kokonaisenergialla. Kun varaajan lämmitys siirretään, varaajan energia pysyy samana. Se maksetaan kuitenkin toisen jakson hinnalla. Säästö on siirretyn energian ja hintojen erotuksen tulo.
-**Kaava:** $K = \sum aE$ jaksoittain, $a_\text{ka} = \dfrac{K}{E_\text{yht}}$ ja $E_\text{varaaja} = Pt$. Säästö on
-$$S = E_\text{varaaja}\,(a_\text{kallis} - a_\text{halpa}).$$
+**Kaava:** $$\begin{aligned} K &= \Sigma aE \\ a_\text{ka} &= \dfrac{K}{E_\text{yht}} \\ E_\text{varaaja} &= Pt \\ S &= aE_\text{varaaja} \\ S &= E_\text{varaaja}\,(a_\text{kallis} - a_\text{halpa}) \end{aligned}$$
 **Muunnokset:** Kustannukset lasketaan sentteinä. Lopuksi ne muunnetaan euroiksi: $100\,\text{snt} = 1\,\text{€}$.
 **Sijoitus:** Jaksojen kustannukset ovat $4{,}68$; $12{,}96$; $32{,}24$; $19{,}20$; $162{,}96$ ja $35{,}40$ senttiä. Esimerkiksi ensimmäinen jakso on $1{,}2\,\text{kWh} \cdot 3{,}9\,\tfrac{\text{snt}}{\text{kWh}} = 4{,}68\,\text{snt}$. Summa on $267{,}44\,\text{snt} = 2{,}674\,\text{€}$. Kokonaisenergia on $19{,}0\,\text{kWh}$, joten $a_\text{ka} = 267{,}44\,\text{snt} : 19{,}0\,\text{kWh} = 14{,}08\,\text{snt/kWh}$. Varaajan energia on $E_\text{varaaja} = 2{,}0\,\text{kW} \cdot 3{,}0\,\text{h} = 6{,}0\,\text{kWh}$. Säästö on $S = 6{,}0\,\text{kWh} \cdot (19{,}4 - 3{,}9)\,\tfrac{\text{snt}}{\text{kWh}} = 93{,}0\,\text{snt} = 0{,}930\,\text{€}$.
 **Vastaus:** Vastauslaatikkoon $0{,}93\,\text{€}$. a) $2{,}7\,\text{€}$ ja keskihinta $14\,\text{snt/kWh}$.
@@ -250,7 +249,7 @@ Uuni käyttää noin $0{,}060\,\text{kWh}$ eli $60\,\text{Wh}$ sähköenergiaa. 
 **Kysytty:** ohjelman sähkön hinta $K$ euroina
 **Periaate:** Jokaisessa vaiheessa teho pysyy samana. Vaiheen energia on teho kertaa vaiheen kesto. Se on kuvaajan alle jäävän suorakulmion pinta-ala. Koko energia on vaiheiden energioiden summa. Hinta on hinta kertaa energia.
 **Kuvaajan lukeminen:** Kuumennuksessa teho on $2{,}4\,\text{kW}$ välillä $0$–$0{,}5\,\text{h}$, joten kesto on $0{,}5\,\text{h}$. Kuivauksessa teho on $1{,}2\,\text{kW}$ välillä $0{,}5$–$1{,}5\,\text{h}$ eli $1{,}0\,\text{h}$. Jäähdytyksessä teho on $0{,}2\,\text{kW}$ välillä $1{,}5$–$2{,}0\,\text{h}$ eli $0{,}5\,\text{h}$.
-**Kaava:** $E = P_1 t_1 + P_2 t_2 + P_3 t_3$ ja $K = aE$
+**Kaava:** $$\begin{aligned} E_i &= P_i t_i \\ E &= E_1 + E_2 + E_3 \\ E &= P_1 t_1 + P_2 t_2 + P_3 t_3 \\ K &= aE \end{aligned}$$
 **Muunnokset:** $a = 18\,\text{snt/kWh} = 0{,}18\,\text{€/kWh}$
 **Sijoitus:** $$\begin{aligned} E &= 2{,}4\,\text{kW} \cdot 0{,}5\,\text{h} \\ &+ 1{,}2\,\text{kW} \cdot 1{,}0\,\text{h} \\ &+ 0{,}2\,\text{kW} \cdot 0{,}5\,\text{h} \\ &= 1{,}2\,\text{kWh} + 1{,}2\,\text{kWh} \\ &+ 0{,}10\,\text{kWh} \\ &= 2{,}5\,\text{kWh} \end{aligned}$$ ja $K = 0{,}18\,\tfrac{\text{€}}{\text{kWh}} \cdot 2{,}5\,\text{kWh} = 0{,}45\,\text{€}$
 **Vastaus:** $0{,}45\,\text{€}$, kaksi merkitsevää numeroa, koska arvot luetaan $0{,}4\,\text{kW}$:n ja $0{,}25\,\text{h}$:n ruudukkoviivoilta.

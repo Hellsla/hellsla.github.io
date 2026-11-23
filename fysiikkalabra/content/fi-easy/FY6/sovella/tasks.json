@@ -6,14 +6,14 @@
       "title": "Taskulampun paristo",
       "source": "example",
       "source_note": "Mittaustulokset on keksitty tätä tehtävää varten. Ne ovat kuitenkin samaa kokoluokkaa kuin uuden litteän taskulamppupariston mittauksessa.",
-      "text": "Oppilas tutkii uutta litteää taskulamppuparistoa. Pariston kyljessä lukee $4{,}5\\,\\text{V}$. Hän kytkee paristoon säädettävän vastuksen ja ampeerimittarin. Jännitemittarin hän kytkee suoraan pariston napoihin (kuva). Hän säätää vastuksella virran ja lukee jännitemittarista napajännitteen $U$. Napajännite on jännite pariston napojen välillä. Mittarit näyttävät virran $0{,}01\\,\\text{A}$:n tarkkuudella ja jännitteen $0{,}01\\,\\text{V}$:n tarkkuudella. Oppilas mittasi virran kasvavassa järjestyksessä. Piiri oli kytkettynä jokaisen lukeman ajan noin minuutin. Paristo lämpeni mittausten aikana vähän. Jännite näytti laskevan hitaasti myös silloin, kun virtaa ei muutettu. Tätä jännitteen hidasta muutosta ajan kuluessa sanotaan ajautumaksi. Sarjan jälkeen oppilas mittasi jännitteen vielä kerran virralla $0{,}10\\,\\text{A}$. Lukema oli $4{,}45\\,\\text{V}$ eli $0{,}03\\,\\text{V}$ pienempi kuin sarjan alussa.\n\nMittaustulokset (virta $I$, napajännite $U$):\n\n- $I = 0{,}10\\,\\text{A}$, $U = 4{,}48\\,\\text{V}$\n- $I = 0{,}20\\,\\text{A}$, $U = 4{,}37\\,\\text{V}$\n- $I = 0{,}30\\,\\text{A}$, $U = 4{,}22\\,\\text{V}$\n- $I = 0{,}40\\,\\text{A}$, $U = 4{,}13\\,\\text{V}$\n- $I = 0{,}50\\,\\text{A}$, $U = 3{,}99\\,\\text{V}$\n- $I = 0{,}60\\,\\text{A}$, $U = 3{,}89\\,\\text{V}$",
+      "text": "Oppilas tutkii uutta litteää taskulamppuparistoa. Pariston kyljessä lukee $4{,}5\\,\\text{V}$. Hän kytkee paristoon säädettävän vastuksen ja ampeerimittarin. Jännitemittarin hän kytkee suoraan pariston napoihin (kuva). Hän säätää vastuksella virran ja lukee jännitemittarista napajännitteen $U$. Napajännite on jännite pariston napojen välillä. Mittarit näyttävät virran $0{,}01\\,\\text{A}$:n tarkkuudella ja jännitteen $0{,}01\\,\\text{V}$:n tarkkuudella. Oppilas mittasi virran kasvavassa järjestyksessä. Piiri oli kytkettynä jokaisen lukeman ajan noin minuutin. Paristo lämpeni mittausten aikana vähän. Jännite näytti laskevan hitaasti myös silloin, kun virtaa ei muutettu. Tätä jännitteen hidasta muutosta ajan kuluessa sanotaan ryömimiseksi. Se ei ole sama asia kuin varauksenkuljettajien ajautumisnopeus johtimessa. Sarjan jälkeen oppilas mittasi jännitteen vielä kerran virralla $0{,}10\\,\\text{A}$. Lukema oli $4{,}45\\,\\text{V}$ eli $0{,}03\\,\\text{V}$ pienempi kuin sarjan alussa.\n\nMittaustulokset (virta $I$, napajännite $U$):\n\n- $I = 0{,}10\\,\\text{A}$, $U = 4{,}48\\,\\text{V}$\n- $I = 0{,}20\\,\\text{A}$, $U = 4{,}37\\,\\text{V}$\n- $I = 0{,}30\\,\\text{A}$, $U = 4{,}22\\,\\text{V}$\n- $I = 0{,}40\\,\\text{A}$, $U = 4{,}13\\,\\text{V}$\n- $I = 0{,}50\\,\\text{A}$, $U = 3{,}99\\,\\text{V}$\n- $I = 0{,}60\\,\\text{A}$, $U = 3{,}89\\,\\text{V}$",
       "figure": "fy6-sovella/fy6-s1-circuit",
       "parts": [
         {
           "id": "a",
           "kind": "graph",
           "points": 4,
-          "text": "Oppilas haluaa selvittää, millainen jännitelähde paristo on. Mallinna paristoa. Tee mittausaineistosta kuvaaja, jonka pisteisiin mallin mukaan sopii suora.",
+          "text": "Oppilas haluaa selvittää, miten pariston napajännite riippuu virrasta. Valitse paristolle sopiva malli. Esitä mittausaineisto kuvaajana, josta mallin suureet voi lukea.",
           "criteria": [
             {
               "text": "Mallintaa pariston ideaaliseksi jännitelähteeksi ja sen kanssa sarjassa olevaksi sisäiseksi resistanssiksi. Silloin napajännite on $U = E - R_\\text{s} I$. Valitsee kuvaajan suureiksi $I$ ja $U$.",
@@ -40,7 +40,7 @@
           "id": "b",
           "kind": "calc",
           "points": 4,
-          "text": "Määritä kuvaajasta pariston lähdejännite $E$ ja sisäinen resistanssi $R_\\text{s}$.",
+          "text": "Määritä kuvaajasta mallisi kaksi parametria. Kerro, mitä ne kertovat paristosta.",
           "answer": [
             {
               "name": "E",
@@ -119,7 +119,7 @@
           "id": "d",
           "kind": "word",
           "points": 4,
-          "text": "Arvioi, miten pariston purkautuminen ja lämpeneminen vaikuttavat b-kohdan tulokseen. Arvioi myös, kuinka suuri epävarmuus pisteiden hajonnasta tulee arvoon $R_\\text{s}$. Pisteet poikkeavat sovitetusta suorasta enintään $0{,}02\\,\\text{V}$. Ehdota mittaukseen parannus.",
+          "text": "Arvioi, miten mittaustapa ja pariston muuttuminen mittauksen aikana vaikuttavat b-kohdan tulokseen. Arvioi myös, kuinka suuri epävarmuus pisteiden hajonnasta tulee arvoon $R_\\text{s}$. Pisteet poikkeavat sovitetusta suorasta enintään $0{,}02\\,\\text{V}$. Ehdota mittaukseen parannus.",
           "criteria": [
             {
               "key": "error_sources",
@@ -139,7 +139,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Arvioi ajautuman vaikutuksen. Jännite laski sarjan aikana noin $0{,}03\\,\\text{V}$, joten kulmakerroin on enintään noin $\\dfrac{0{,}03\\,\\text{V}}{0{,}50\\,\\text{A}} = 0{,}06\\,\\Omega$ liian suuri. Tämä on samaa suuruusluokkaa kuin hajonta $0{,}08\\,\\Omega$. Siksi $R_\\text{s}$ on noin $1{,}1\\ldots1{,}2\\,\\Omega$, ja arvo $1{,}2\\,\\Omega$ on pikemmin yläraja."
+              "detail": "Arvioi ryöminnän vaikutuksen. Jännite laski sarjan aikana noin $0{,}03\\,\\text{V}$, joten kulmakerroin on enintään noin $\\dfrac{0{,}03\\,\\text{V}}{0{,}50\\,\\text{A}} = 0{,}06\\,\\Omega$ liian suuri. Tämä on samaa suuruusluokkaa kuin hajonta $0{,}08\\,\\Omega$. Siksi $R_\\text{s}$ on noin $1{,}1\\ldots1{,}2\\,\\Omega$, ja arvo $1{,}2\\,\\Omega$ on pikemmin yläraja."
             }
           ]
         }
@@ -253,7 +253,7 @@
           "id": "d",
           "kind": "calc",
           "points": 4,
-          "text": "Omistaja lisää piiriin rinnan kolmannen lampun C. Se on merkitty $12\\,\\text{V},\\ 36\\,\\text{W}$. Kuinka suuri virta akustosta kulkee nyt? Mitä sulakkeelle tapahtuu? Miksi sulakkeen nimellisvirta on valittu kaapelin mukaan? Laske myös lamppujen jännite.",
+          "text": "Omistaja lisää piiriin rinnan kolmannen lampun C. Se on merkitty $12\\,\\text{V},\\ 36\\,\\text{W}$. Kuinka suuri virta akustosta kulkee nyt? Arvioi, toimiiko piirin suojaus. Perustele, millä perusteella sulakkeen nimellisvirta valitaan. Laske myös lamppujen jännite.",
           "answer": {
             "value": 4.3,
             "unit": "A",
@@ -302,7 +302,7 @@
           "id": "a",
           "kind": "calc",
           "points": 4,
-          "text": "Kuinka suuri sähkövoima pisaraan vaikuttaa? Onko perusteltua jättää pisaran paino huomiotta? Syntyykö kenttään kipinöintiä?",
+          "text": "Kuinka suuri sähkövoima pisaraan vaikuttaa? Mitkä muut voimat vaikuttavat pisaraan, ja ovatko ne merkittäviä? Kestääkö ilma kentän?",
           "answer": {
             "value": 1.8e-07,
             "unit": "N",
@@ -542,7 +542,7 @@
           "id": "d",
           "kind": "word",
           "points": 4,
-          "text": "Korjaaja irrottaa salamalaitteesta pariston ja avaa laitteen heti sen jälkeen. Selitä, miksi kondensaattori voi olla edelleen vaarallinen. Kuvitellaan tilanne, jossa ihminen koskettaa kondensaattoria. Ihmisen kehon resistanssi on noin $1{,}0\\,\\text{k}\\Omega$. Arvioi laskemalla, kuinka suuri virta kulkisi kehon läpi. Miksi laitteen turvallinen huolto kuuluu ammattilaiselle, joka on perehtynyt tehtävään? Miksi myös kondensaattorin jännitteettömyyden varmistaminen kuuluu ammattilaiselle?",
+          "text": "Korjaaja irrottaa salamalaitteesta pariston ja avaa laitteen heti sen jälkeen. Arvioi, voiko laitteen avata turvallisesti heti pariston irrottamisen jälkeen. Perustele. Kuvitellaan tilanne, jossa ihminen koskettaa kondensaattoria. Ihmisen kehon resistanssi on noin $1{,}0\\,\\text{k}\\Omega$. Arvioi laskemalla, kuinka suuri virta kulkisi kehon läpi. Miksi laitteen turvallinen huolto kuuluu ammattilaiselle, joka on perehtynyt tehtävään? Miksi myös kondensaattorin jännitteettömyyden varmistaminen kuuluu ammattilaiselle?",
           "criteria": [
             {
               "text": "Tietää, että kondensaattori säilyttää varauksensa ja energiansa, kun paristo irrotetaan. Se on edelleen $300\\,\\text{V}$:ssa ja siinä on noin $15\\,\\text{J}$, vaikka laitetta syöttää pieni paristo.",

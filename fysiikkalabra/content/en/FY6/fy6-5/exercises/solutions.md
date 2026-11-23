@@ -2,7 +2,7 @@
 **Given:** arriving currents $2.4\,\text{A}$ and $0.6\,\text{A}$, leaving current $1.8\,\text{A}$
 **Find:** the current $I$ of the other leaving wire in amperes
 **Principle:** Kirchhoff's current law: charge neither disappears nor collects at the junction, so the sum of the arriving currents is equal to the sum of the leaving currents.
-**Formula:** $I_\text{in1} + I_\text{in2} = I_\text{out1} + I$, from which $I = I_\text{in1} + I_\text{in2} - I_\text{out1}$
+**Formula:** $$\begin{aligned} \Sigma I_\text{in} &= \Sigma I_\text{out} \\ I_\text{in1} + I_\text{in2} &= I_\text{out1} + I \\ I &= I_\text{in1} + I_\text{in2} - I_\text{out1} \end{aligned}$$
 **Conversions:** Not needed: all the currents are in amperes.
 **Substitution:** $I = 2.4\,\text{A} + 0.6\,\text{A} - 1.8\,\text{A} = 1.2\,\text{A}$
 **Answer:** $1.2\,\text{A}$, to one decimal place like the given currents.
@@ -12,7 +12,7 @@
 **Given:** voltage of the source $U = 12.0\,\text{V}$, voltage of the first resistor $U_1 = 4.5\,\text{V}$
 **Find:** the voltage $U_2$ of the second resistor in volts
 **Principle:** Kirchhoff's voltage law: when a loop is traversed, the sum of the changes of potential is zero. The rise in the source is equal to the total of the drops in the resistors.
-**Formula:** $U - U_1 - U_2 = 0$, from which $U_2 = U - U_1$
+**Formula:** $$\begin{aligned} \Sigma U &= 0 \\ U - U_1 - U_2 &= 0 \\ U_2 &= U - U_1 \end{aligned}$$
 **Conversions:** Not needed: the voltages are in volts.
 **Substitution:** $U_2 = 12.0\,\text{V} - 4.5\,\text{V} = 7.5\,\text{V}$
 **Answer:** $7.5\,\text{V}$, to one decimal place like the given voltages.
@@ -53,7 +53,7 @@
 **Given:** $R = 220\,\Omega$, $I = 25\,\text{mA}$, $V_A = 9.0\,\text{V}$; the current flows from the point $A$ to the point $B$
 **Find:** the potential $V_B$ of the point $B$ in volts
 **Principle:** In a resistor the potential drops in the direction of the current by the voltage $RI$ given by Ohm's law. The point $B$ is after the resistor, so its potential is smaller than that of the point $A$.
-**Formula:** $V_A - V_B = RI$, from which $V_B = V_A - RI$
+**Formula:** $$\begin{aligned} U_{AB} &= V_A - V_B \\ U_{AB} &= RI \\ V_A - V_B &= RI \\ V_B &= V_A - RI \end{aligned}$$
 **Conversions:** $I = 25\,\text{mA} = 25 \cdot 0.001\,\text{A} = 0.025\,\text{A}$
 **Substitution:** $V_B = 9.0\,\text{V} - 220\,\Omega \cdot 0.025\,\text{A} = 9.0\,\text{V} - 5.5\,\text{V} = 3.5\,\text{V}$
 **Answer:** $3.5\,\text{V}$, to one decimal place like the potential $9.0\,\text{V}$.
@@ -63,9 +63,9 @@
 **Given:** $U = 12.0\,\text{V}$, $R_1 = 200\,\Omega$ (on the side of the positive terminal), $R_2 = 400\,\Omega$ (on the side of the negative terminal); the negative terminal is the zero point
 **Find:** the potential $V$ of the wire between the resistors in volts
 **Principle:** In a series connection the same current flows through both resistors, and the total resistance is the sum of the resistances. Between the middle wire and the negative terminal there is only the resistor $R_2$, so the potential of the middle wire is the voltage of the resistor $R_2$.
-**Formula:** $I = \dfrac{U}{R_1 + R_2}$ and $V = R_2 I$, so $V = \dfrac{R_2 U}{R_1 + R_2}$
+**Formula:** $$\begin{aligned} U &= R_1 I + R_2 I \\ I &= \dfrac{U}{R_1 + R_2} \\ V &= R_2 I \\ V &= \dfrac{R_2 U}{R_1 + R_2} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
-**Substitution:** $I = \dfrac{12.0\,\text{V}}{200\,\Omega + 400\,\Omega} = 0.020\,\text{A}$ and $V = 400\,\Omega \cdot 0.020\,\text{A} = 8.0\,\text{V}$
+**Substitution:** $V = \dfrac{400\,\Omega \cdot 12.0\,\text{V}}{200\,\Omega + 400\,\Omega} = \dfrac{4800\,\Omega\,\text{V}}{600\,\Omega} = 8.0\,\text{V}$. The current is $I = \dfrac{12.0\,\text{V}}{600\,\Omega} = 0.020\,\text{A}$.
 **Answer:** $8.0\,\text{V}$, two significant figures, because the resistances are given to two figures.
 **Reasonableness:** The voltage of the resistor $R_1$ is $200\,\Omega \cdot 0.020\,\text{A} = 4.0\,\text{V}$, and $4.0\,\text{V} + 8.0\,\text{V} = 12.0\,\text{V}$. The larger resistor gets the larger share of the voltage, as it should in a series connection.
 
@@ -73,7 +73,7 @@
 **Given:** from the figure $U = 6.0\,\text{V}$, parallel resistors $R_2 = 20\,\Omega$ and $R_3 = 30\,\Omega$
 **Find:** the current $I$ of the main wire in amperes
 **Principle:** Each branch forms with the source a loop that has no other resistors, so by the voltage law the voltage of each resistor is the voltage of the source. By the current law the current of the main wire is the sum of the currents of the branches.
-**Formula:** $I_2 = \dfrac{U}{R_2}$, $I_3 = \dfrac{U}{R_3}$ and $I = I_2 + I_3$, so $I = \dfrac{U}{R_2} + \dfrac{U}{R_3}$
+**Formula:** $$\begin{aligned} U_2 &= U_3 = U \\ I_2 &= \dfrac{U}{R_2} \\ I_3 &= \dfrac{U}{R_3} \\ I &= I_2 + I_3 \\ I &= \dfrac{U}{R_2} + \dfrac{U}{R_3} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
 **Substitution:** $I = \dfrac{6.0\,\text{V}}{20\,\Omega} + \dfrac{6.0\,\text{V}}{30\,\Omega} = 0.30\,\text{A} + 0.20\,\text{A} = 0.50\,\text{A}$
 **Answer:** $0.50\,\text{A}$, two significant figures like the initial data.
@@ -83,7 +83,7 @@
 **Given:** $U = 9.0\,\text{V}$, $R_1 = 120\,\Omega$, current $I = 50\,\text{mA}$
 **Find:** the resistance $R_2$ in ohms
 **Principle:** In a series connection the same current flows through both resistors. By the voltage law the voltage of the source is shared among the resistors: $U = R_1 I + R_2 I$.
-**Formula:** $U = R_1 I + R_2 I$, from which $R_2 = \dfrac{U - R_1 I}{I}$
+**Formula:** $$\begin{aligned} U - R_1 I - R_2 I &= 0 \\ R_2 I &= U - R_1 I \\ R_2 &= \dfrac{U - R_1 I}{I} \end{aligned}$$
 **Conversions:** $I = 50\,\text{mA} = 50 \cdot 0.001\,\text{A} = 0.050\,\text{A}$
 **Substitution:** $R_2 = \dfrac{9.0\,\text{V} - 120\,\Omega \cdot 0.050\,\text{A}}{0.050\,\text{A}} = \dfrac{3.0\,\text{V}}{0.050\,\text{A}} = 60\,\Omega$
 **Answer:** $60\,\Omega$, two significant figures like the voltage and the current.
@@ -93,9 +93,9 @@
 **Given:** $U = 12\,\text{V}$, $R_1 = 30\,\Omega$, $R_2 = 50\,\Omega$, $R_3 = 40\,\Omega$ in series; the zero point is between the resistors $R_1$ and $R_2$
 **Find:** the potential $V_-$ of the negative terminal of the source in volts, with its sign
 **Principle:** In a series connection the same current flows through all the resistors. When we go from the zero point in the direction of the current to the negative terminal, the potential drops in the resistors $R_2$ and $R_3$ by their voltages. So the potential of the negative terminal is negative.
-**Formula:** $I = \dfrac{U}{R_1 + R_2 + R_3}$ and $0 - R_2 I - R_3 I = V_-$, so $V_- = -(R_2 + R_3) I$
+**Formula:** $$\begin{aligned} U &= R_1 I + R_2 I + R_3 I \\ I &= \dfrac{U}{R_1 + R_2 + R_3} \\ V_- &= 0 - R_2 I - R_3 I \\ V_- &= -\dfrac{(R_2 + R_3)\,U}{R_1 + R_2 + R_3} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
-**Substitution:** $I = \dfrac{12\,\text{V}}{30\,\Omega + 50\,\Omega + 40\,\Omega} = 0.10\,\text{A}$ and $V_- = -(50\,\Omega + 40\,\Omega) \cdot 0.10\,\text{A} = -9.0\,\text{V}$
+**Substitution:** $V_- = -\dfrac{(50\,\Omega + 40\,\Omega) \cdot 12\,\text{V}}{30\,\Omega + 50\,\Omega + 40\,\Omega} = -\dfrac{1080\,\Omega\,\text{V}}{120\,\Omega} = -9.0\,\text{V}$. The current is $I = \dfrac{12\,\text{V}}{120\,\Omega} = 0.10\,\text{A}$.
 **Answer:** $-9.0\,\text{V}$, two significant figures like the voltage $12\,\text{V}$.
 **Reasonableness:** The potential of the positive terminal is $R_1 I = 3.0\,\text{V}$, so the voltage between the terminals of the source is $3.0\,\text{V} - (-9.0\,\text{V}) = 12\,\text{V}$, as it should be. Moving the zero point did not change the voltages, only the values of the potentials.
 
@@ -105,7 +105,7 @@
 **Principle:** The whole current flows through the resistor $R_1$. By the voltage law the common voltage of the branches is the voltage of the source minus the voltage of the resistor $R_1$.
 
 By the current law the current of the resistor $R_3$ is the current of the main wire minus the current of the resistor $R_2$, and Ohm's law gives the resistance.
-**Formula:** $U_{23} = U - R_1 I_1$, $I_3 = I_1 - \dfrac{U_{23}}{R_2}$ and $R_3 = \dfrac{U_{23}}{I_3}$
+**Formula:** $$\begin{aligned} U_{23} &= U - R_1 I_1 \\ I_2 &= \dfrac{U_{23}}{R_2} \\ I_1 &= I_2 + I_3 \\ I_3 &= I_1 - \dfrac{U_{23}}{R_2} \\ R_3 &= \dfrac{U_{23}}{I_3} \end{aligned}$$
 **Conversions:** Not needed: all quantities are in base units.
 **Substitution:** $U_{23} = 12\,\text{V} - 40\,\Omega \cdot 0.20\,\text{A} = 4.0\,\text{V}$, $I_3 = 0.20\,\text{A} - \dfrac{4.0\,\text{V}}{60\,\Omega} = 0.1333\,\text{A}$ and $R_3 = \dfrac{4.0\,\text{V}}{0.1333\,\text{A}} = 30.0\,\Omega$
 **Answer:** $30\,\Omega$, two significant figures like the current $0.20\,\text{A}$.
@@ -119,7 +119,7 @@ The current of the resistor $R_3$ is twice the current of the resistor $R_2$, be
 **Principle:** The resistances of the source and the wires are neglected. Between the junction of the resistor and the bulbs and the negative terminal there is the bulb branch, so the potential of the junction is the voltage of the bulbs.
 
 By the voltage law it is the voltage of the source minus the voltage $RI$ of the series resistor. When a bulb is removed, the resistance of the branch increases, the current decreases, the voltage of the series resistor decreases and the voltage of the bulb increases.
-**Formula:** $V = \dfrac{R_\text{b}}{R + R_\text{b}}\, U$, where $R_\text{b}$ is the resistance of the bulb branch; $\Delta V = V_\text{one} - V_\text{two}$
+**Formula:** $$\begin{aligned} I &= \dfrac{U}{R + R_\text{b}} \\ V &= R_\text{b} I \\ V &= \dfrac{R_\text{b}}{R + R_\text{b}}\, U \\ \Delta V &= V_\text{one} - V_\text{two} \end{aligned}$$, where $R_\text{b}$ is the resistance of the bulb branch (parallel connection)
 **Conversions:** Not needed: all quantities are in base units.
 **Substitution:** Two bulbs: $R_\text{b} = 30\,\Omega$ and $V_\text{two} = \dfrac{30\,\Omega}{50\,\Omega} \cdot 12\,\text{V} = 7.2\,\text{V}$. One bulb: $R_\text{b} = 60\,\Omega$ and $V_\text{one} = \dfrac{60\,\Omega}{80\,\Omega} \cdot 12\,\text{V} = 9.0\,\text{V}$. $\Delta V = 9.0\,\text{V} - 7.2\,\text{V} = 1.8\,\text{V}$
 **Answer:** $1.8\,\text{V}$, two significant figures like the resistances.
@@ -149,7 +149,7 @@ So what stays unchanged is not the potentials but the voltages and the currents.
 **Given:** $V_A = 9.0\,\text{V}$, $R_1 = 60\,\Omega$, $R_2 = 90\,\Omega$, $I = 0.040\,\text{A}$
 **Find:** the potential $V_C$ of the point $C$ in volts
 **Principle:** The same current flows through both resistors. In a resistor the potential drops in the direction of the current by the voltage $RI$, so when going from the point $A$ to the point $C$ the potential drops by the voltage of each resistor.
-**Formula:** $V_C = V_A - R_1 I - R_2 I$
+**Formula:** $$\begin{aligned} V_B &= V_A - R_1 I \\ V_C &= V_B - R_2 I \\ V_C &= V_A - R_1 I - R_2 I \end{aligned}$$
 **Conversions:** Not needed: all quantities are in base units.
 **Substitution:** $$\begin{aligned} V_C &= 9.0\,\text{V} - 60\,\Omega \cdot 0.040\,\text{A} \\ &- 90\,\Omega \cdot 0.040\,\text{A} \\ &= 9.0\,\text{V} - 2.4\,\text{V} - 3.6\,\text{V} \\ &= 3.0\,\text{V} \end{aligned}$$
 **Answer:** $3.0\,\text{V}$, two significant figures like the given values.
@@ -159,7 +159,7 @@ So what stays unchanged is not the potentials but the voltages and the currents.
 **Given:** $U = 12\,\text{V}$, $R_1 = 60\,\Omega$, $R_2 = 80\,\Omega$, $R_3 = 50\,\Omega$ in parallel; readings $\text{A}_0$: $0.50\,\text{A}$, $\text{A}_1$: $0.20\,\text{A}$, $\text{A}_2$: $0.15\,\text{A}$, $\text{A}_3$: $0.24\,\text{A}$
 **Find:** the wrong reading and the correct reading $I_0$ of the meter $\text{A}_0$ in the main wire in amperes
 **Principle:** The voltage of each resistor of the parallel branches is the voltage of the source, so Ohm's law $I = U : R$ gives the branch currents, and the branch meters can be checked with them. By Kirchhoff's current law the current of the main wire is the sum of the branch currents.
-**Formula:** $I_k = \dfrac{U}{R_k}$ and $I_0 = I_1 + I_2 + I_3$
+**Formula:** $$\begin{aligned} U_k &= U \\ I_k &= \dfrac{U_k}{R_k} \\ I_0 &= I_1 + I_2 + I_3 \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
 **Substitution:** $\dfrac{12\,\text{V}}{60\,\Omega} = 0.20\,\text{A}$, $\dfrac{12\,\text{V}}{80\,\Omega} = 0.15\,\text{A}$ and $\dfrac{12\,\text{V}}{50\,\Omega} = 0.24\,\text{A}$, as the branch meters show. The sum of the branch currents is $$\begin{aligned} &0.20\,\text{A} + 0.15\,\text{A} + 0.24\,\text{A} \\ &= 0.59\,\text{A} \end{aligned}$$.
 **Answer:** $0.59\,\text{A}$. The wrong reading is that of the meter in the main wire, $0.50\,\text{A}$, because it is smaller than the sum of the branch currents.
@@ -171,9 +171,9 @@ So what stays unchanged is not the potentials but the voltages and the currents.
 **Principle:** Between the points $B$ and $C$ there is only a wire, in which the potential does not change ($\Delta V = 0$), so they have the same potential.
 
 The resistor $R_2$ is between the points $C$ and $D$, so its voltage is the difference of the potentials. In a series connection the same current flows through it, and Ohm's law gives the resistance.
-**Formula:** $U_2 = V_C - V_D$ and $R_2 = \dfrac{U_2}{I}$
+**Formula:** $$\begin{aligned} U_2 &= V_C - V_D \\ U_2 &= R_2 I \\ R_2 &= \dfrac{U_2}{I} = \dfrac{V_C - V_D}{I} \end{aligned}$$
 **Conversions:** Not needed: the potentials are in volts and the current in amperes.
-**Substitution:** $U_2 = 8.4\,\text{V} - 3.6\,\text{V} = 4.8\,\text{V}$ and $R_2 = \dfrac{4.8\,\text{V}}{0.12\,\text{A}} = 40\,\Omega$
+**Substitution:** $R_2 = \dfrac{8.4\,\text{V} - 3.6\,\text{V}}{0.12\,\text{A}} = \dfrac{4.8\,\text{V}}{0.12\,\text{A}} = 40\,\Omega$
 **Answer:** $40\,\Omega$, two significant figures like the current.
 **Reasonableness:** The voltages of the resistors are $12.0\,\text{V} - 8.4\,\text{V} = 3.6\,\text{V}$, $4.8\,\text{V}$ and $3.6\,\text{V} - 0\,\text{V} = 3.6\,\text{V}$, together $12.0\,\text{V}$, the voltage of the source. The resistances $30\,\Omega$, $40\,\Omega$ and $30\,\Omega$ give the current $12.0\,\text{V} : 100\,\Omega = 0.12\,\text{A}$, which is the measured reading.
 
@@ -183,9 +183,9 @@ The resistor $R_2$ is between the points $C$ and $D$, so its voltage is the diff
 **Principle:** The student's current is correct but the sign is wrong. In a resistor the potential drops in the direction of the current, and the current flows from the positive terminal through the resistor $R_1$.
 
 When the zero point is the positive terminal, the potential of the wire between the resistors is therefore below zero: $V = 0 - R_1 I$.
-**Formula:** $I = \dfrac{U}{R_1 + R_2}$ and $V = 0 - R_1 I$
+**Formula:** $$\begin{aligned} U &= R_1 I + R_2 I \\ I &= \dfrac{U}{R_1 + R_2} \\ V &= 0 - R_1 I \\ V &= -\dfrac{R_1 U}{R_1 + R_2} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
-**Substitution:** $I = \dfrac{9.0\,\text{V}}{100\,\Omega + 200\,\Omega} = 0.030\,\text{A}$ and $V = 0 - 100\,\Omega \cdot 0.030\,\text{A} = -3.0\,\text{V}$
+**Substitution:** $V = -\dfrac{100\,\Omega \cdot 9.0\,\text{V}}{100\,\Omega + 200\,\Omega} = -\dfrac{900\,\Omega\,\text{V}}{300\,\Omega} = -3.0\,\text{V}$. The current is $I = \dfrac{9.0\,\text{V}}{300\,\Omega} = 0.030\,\text{A}$.
 **Answer:** $-3.0\,\text{V}$, two significant figures. The error was in the sign: the student treated the drop in the resistor as a rise.
 **Reasonableness:** The potential of the negative terminal is $-9.0\,\text{V}$. The voltage of the resistor $R_1$ is $0 - (-3.0\,\text{V}) = 3.0\,\text{V}$ and the voltage of the resistor $R_2$ is $$-3.0\,\text{V} - (-9.0\,\text{V}) = 6.0\,\text{V}$$, and they correspond to the products $100\,\Omega \cdot 0.030\,\text{A}$ and $200\,\Omega \cdot 0.030\,\text{A}$.
 
@@ -195,15 +195,9 @@ When the zero point is the positive terminal, the potential of the wire between 
 **Principle:** At the junction $P$ the current law gives $I_1 + I_3 = I_2$. The left loop (source $U_1$, resistors $R_1$ and $R_2$) and the right loop (source $U_2$, resistors $R_3$ and $R_2$) are traversed in the direction of the current, and by the voltage law the sum of the changes of potential is zero in each.
 
 Three equations are enough for three unknown currents. In the energy balance the power produced by the sources turns completely into internal energy of the resistors, because no energy is lost in ideal sources and wires.
-**Formula:** $I_1 + I_3 = I_2$, $U_1 - R_1 I_1 - R_2 I_2 = 0$ and $U_2 - R_3 I_3 - R_2 I_2 = 0$. From the loop equations $I_1 = \dfrac{U_1 - R_2 I_2}{R_1}$ and $I_3 = \dfrac{U_2 - R_2 I_2}{R_3}$. Power: $P = UI$ in a source and $P = RI^2$ in a resistor.
+**Formula:** $$\begin{aligned} I_1 + I_3 &= I_2 \\ U_1 - R_1 I_1 - R_2 I_2 &= 0 \\ U_2 - R_3 I_3 - R_2 I_2 &= 0 \\ I_1 &= \dfrac{U_1 - R_2 I_2}{R_1} \\ I_3 &= \dfrac{U_2 - R_2 I_2}{R_3} \\ I_2 &= \dfrac{U_1 R_3 + U_2 R_1}{R_1 R_3 + R_2 R_3 + R_1 R_2} \\ P_\text{source} &= UI \\ P_\text{resistor} &= RI^2 \end{aligned}$$
 **Conversions:** Not needed: all quantities are in base units.
-**Substitution:** From the loop equations (the units $\text{V}$, $\Omega$ and $\text{A}$ left out):
-
-$$\begin{aligned} I_1 &= \frac{12 - 20\, I_2}{30} \\ I_3 &= \frac{9.0 - 20\, I_2}{30} \end{aligned}$$
-
-From the current law $I_1 + I_3 = I_2$:
-
-$$\begin{aligned} \frac{21 - 40\, I_2}{30} &= I_2 \\ 21 &= 70\, I_2 \\ I_2 &= 0.30\,\text{A} \end{aligned}$$
+**Substitution:** The numerator is $12\,\text{V} \cdot 30\,\Omega + 9.0\,\text{V} \cdot 30\,\Omega = 630\,\text{V}\,\Omega$ and the denominator $30\,\Omega \cdot 30\,\Omega + 20\,\Omega \cdot 30\,\Omega + 30\,\Omega \cdot 20\,\Omega = 2100\,\Omega^2$, so $I_2 = \dfrac{630\,\text{V}\,\Omega}{2100\,\Omega^2} = 0.30\,\text{A}$.
 
 Then $I_1 = \dfrac{12\,\text{V} - 6.0\,\text{V}}{30\,\Omega} = 0.20\,\text{A}$ and $I_3 = \dfrac{9.0\,\text{V} - 6.0\,\text{V}}{30\,\Omega} = 0.10\,\text{A}$.
 
@@ -223,7 +217,19 @@ When a load is connected, by the current law the current of the resistor $R_1$ d
 The load decreases the resistance of the branch, the total current increases, the voltage of the resistor $R_1$ increases and by the voltage law $V_P = U - R_1 I$ decreases.
 
 The asked resistance is obtained by inverting the divider formula: first the resistance $R_\text{p}$ of the branch, from which the load.
-**Formula:** Unloaded: $V_P = \dfrac{R_2}{R_1 + R_2}\, U$. Loaded: $\dfrac{1}{R_\text{p}} = \dfrac{1}{R_2} + \dfrac{1}{R_\text{L}}$ and $V_P = \dfrac{R_\text{p}}{R_1 + R_\text{p}}\, U$. When $V_P$ is known, $R_\text{p} = \dfrac{R_1 V_P}{U - V_P}$ and $R_\text{L} = \dfrac{R_\text{p} R_2}{R_2 - R_\text{p}}$ (solved from the formula of the parallel connection).
+**Formula:** Unloaded:
+
+$$\begin{aligned} I &= \dfrac{U}{R_1 + R_2} \\ V_P &= R_2 I \\ V_P &= \dfrac{R_2}{R_1 + R_2}\, U \end{aligned}$$
+
+Loaded:
+
+$$\begin{aligned} \dfrac{1}{R_\text{p}} &= \dfrac{1}{R_2} + \dfrac{1}{R_\text{L}} \\ I &= \dfrac{U}{R_1 + R_\text{p}} \\ V_P &= R_\text{p} I \\ V_P &= \dfrac{R_\text{p}}{R_1 + R_\text{p}}\, U \end{aligned}$$
+
+Solving:
+
+$$\begin{aligned} V_P (R_1 + R_\text{p}) &= R_\text{p} U \\ R_\text{p} &= \dfrac{R_1 V_P}{U - V_P} \\ \dfrac{1}{R_\text{L}} &= \dfrac{1}{R_\text{p}} - \dfrac{1}{R_2} \\ R_\text{L} &= \dfrac{R_\text{p} R_2}{R_2 - R_\text{p}} \end{aligned}$$
+
+
 **Conversions:** Not needed: all quantities are in base units.
 **Substitution:** a) Without a load the resistors $R_1$ and $R_2$ are in series, so the current is the same everywhere and by the voltage law the voltage of the source divides between them.
 

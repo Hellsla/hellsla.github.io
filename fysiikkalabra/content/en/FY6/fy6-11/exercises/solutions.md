@@ -22,7 +22,7 @@
 **Given:** voltage between the plates $U = 600\,\text{V}$, plate distance $d = 0.040\,\text{m}$
 **Find:** the electric field strength $E$ in the unit $\text{V/m}$
 **Principle:** Between parallel plates the field is uniform. When a charge moves from one plate to the other, the field does the work $qEd$, and by the definition of voltage the same work is $qU$, so the electric field strength is the voltage divided by the plate distance.
-**Formula:** $qEd = qU$, so $E = \dfrac{U}{d}$
+**Formula:** $$\begin{aligned} W &= qEd \\ W &= qU \\ qEd &= qU \\ E &= \dfrac{U}{d} \end{aligned}$$
 **Conversions:** Not needed: the distance is in metres.
 **Substitution:** $E = \dfrac{600\,\text{V}}{0.040\,\text{m}} = 15\,000\,\text{V/m}$
 **Answer:** $1.5 \cdot 10^{4}\,\text{V/m}$, two significant figures like the distance $0.040\,\text{m}$.
@@ -63,7 +63,7 @@
 **Given:** voltage between the plates $U = 4.5\,\text{kV}$, plate distance $d = 9.0\,\text{mm}$, charge of the ball $q = 4.0\,\text{nC}$
 **Find:** the electric force $F$ on the ball in millinewtons
 **Principle:** Between the plates the field is uniform, so its strength is obtained from the voltage and the distance. The force on a charge is the charge times the electric field strength, and it does not depend on where between the plates the ball is.
-**Formula:** $E = \dfrac{U}{d}$ and $F = qE$, so $F = \dfrac{qU}{d}$
+**Formula:** $$\begin{aligned} E &= \dfrac{U}{d} \\ F &= qE \\ &= \dfrac{qU}{d} \end{aligned}$$
 **Conversions:** $U = 4.5\,\text{kV} = 4.5 \cdot 1000\,\text{V} = 4500\,\text{V}$, $d = 9.0\,\text{mm} = 9.0 \cdot 10^{-3}\,\text{m}$, $q = 4.0 \cdot 10^{-9}\,\text{C}$; finally $1\,\text{N} = 1000\,\text{mN}$.
 **Substitution:** $E = \dfrac{4500\,\text{V}}{9.0 \cdot 10^{-3}\,\text{m}} = 5.0 \cdot 10^{5}\,\text{V/m}$ and $F = 4.0 \cdot 10^{-9}\,\text{C} \cdot 5.0 \cdot 10^{5}\,\text{V/m} = 2.0 \cdot 10^{-3}\,\text{N} = 2.0\,\text{mN}$
 **Answer:** $2.0\,\text{mN}$, two significant figures like the given values.
@@ -73,7 +73,7 @@
 **Given:** plate distance $d = 5.0\,\text{cm}$, charge of the ball $q = 8.0\,\text{nC}$, electric force $F = 2.4\,\text{mN}$
 **Find:** the voltage $U$ between the plates in kilovolts
 **Principle:** The electric field strength is obtained from the force and the charge, and in the uniform field between the plates the voltage is the electric field strength times the plate distance.
-**Formula:** $E = \dfrac{F}{q}$ and $E = \dfrac{U}{d}$, so $U = \dfrac{Fd}{q}$
+**Formula:** $$\begin{aligned} F &= qE \\ E &= \dfrac{F}{q} \\ E &= \dfrac{U}{d} \\ U &= Ed \\ &= \dfrac{Fd}{q} \end{aligned}$$
 **Conversions:** $F = 2.4\,\text{mN} = 2.4 \cdot 10^{-3}\,\text{N}$, $d = 5.0\,\text{cm} = 0.050\,\text{m}$, $q = 8.0 \cdot 10^{-9}\,\text{C}$; finally $1\,\text{kV} = 1000\,\text{V}$.
 **Substitution:** $E = \dfrac{2.4 \cdot 10^{-3}\,\text{N}}{8.0 \cdot 10^{-9}\,\text{C}} = 3.0 \cdot 10^{5}\,\text{N/C}$ and $U = Ed = 3.0 \cdot 10^{5}\,\text{N/C} \cdot 0.050\,\text{m} = 15\,000\,\text{V} = 15\,\text{kV}$
 **Answer:** $15\,\text{kV}$, two significant figures like the given values.
@@ -83,7 +83,7 @@
 **Given:** voltage $U = 3.0\,\text{kV}$, plate distance $d = 6.0\,\text{mm}$, charge of the particle $q = 1.6 \cdot 10^{-17}\,\text{C}$ and mass $m = 4.0 \cdot 10^{-14}\,\text{kg}$, $g = 9.81\,\text{m/s}^2$
 **Find:** the ratio of the electric force to the weight $F : G$
 **Principle:** Between the plates the field is uniform, $E = U : d$, and the electric force $qE$ acts on the particle. Gravity is $mg$. The ratio tells which force determines the motion of the particle.
-**Formula:** $\dfrac{F}{G} = \dfrac{qE}{mg} = \dfrac{qU}{mgd}$
+**Formula:** $$\begin{aligned} F &= qE \\ E &= \dfrac{U}{d} \\ F &= \dfrac{qU}{d} \\ G &= mg \\ \dfrac{F}{G} &= \dfrac{qU}{mgd} \end{aligned}$$
 **Conversions:** $U = 3.0 \cdot 1000\,\text{V} = 3000\,\text{V}$, $d = 6.0 \cdot 10^{-3}\,\text{m}$.
 **Substitution:** $F = \dfrac{1.6 \cdot 10^{-17}\,\text{C} \cdot 3000\,\text{V}}{6.0 \cdot 10^{-3}\,\text{m}} = 8.0 \cdot 10^{-12}\,\text{N}$, $G = 4.0 \cdot 10^{-14}\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 3.924 \cdot 10^{-13}\,\text{N}$ and $\dfrac{F}{G} = \dfrac{8.0 \cdot 10^{-12}\,\text{N}}{3.924 \cdot 10^{-13}\,\text{N}} = 20.4$
 **Answer:** about $20$ times, two significant figures like the given values.
@@ -93,7 +93,7 @@
 **Given:** at first the force $F_1 = 0.15\,\text{mN}$ and the distance $d_1 = 6.0\,\text{cm}$, at the end the distance $d_2 = 2.0\,\text{cm}$; the voltage and the charge of the ball stay the same
 **Find:** the new force $F_2$ in millinewtons
 **Principle:** The ball is far from the ends of the plates, so the field is uniform and $E = U : d$. The force is $F = qE = qU : d$, and when $q$ and $U$ stay the same, the force is inversely proportional to the plate distance.
-**Formula:** $\dfrac{F_2}{F_1} = \dfrac{qU : d_2}{qU : d_1} = \dfrac{d_1}{d_2}$, so $F_2 = F_1 \cdot \dfrac{d_1}{d_2}$
+**Formula:** $$\begin{aligned} E &= \dfrac{U}{d} \\ F &= qE = \dfrac{qU}{d} \\ \dfrac{F_2}{F_1} &= \dfrac{qU : d_2}{qU : d_1} \\ &= \dfrac{d_1}{d_2} \\ F_2 &= F_1 \cdot \dfrac{d_1}{d_2} \end{aligned}$$
 **Conversions:** Not needed: the distances are in the same unit, so the unit cancels.
 **Substitution:** $F_2 = 0.15\,\text{mN} \cdot \dfrac{6.0\,\text{cm}}{2.0\,\text{cm}} = 0.15\,\text{mN} \cdot 3.0 = 0.45\,\text{mN}$
 **Answer:** $0.45\,\text{mN}$, two significant figures like the given values.
@@ -103,7 +103,7 @@
 **Given:** at first the voltage $U_1 = 450\,\text{V}$ and the charge $q_1 = 3e$, at the end the charge $q_2 = 4e$; the mass and the plate distance stay the same
 **Find:** the voltage $U_2$ at which the droplet hovers
 **Principle:** A hovering droplet is at rest, so the electric force up and the weight down are equal: $qE = mg$. The field of the plates is uniform, $E = U : d$. When $m$, $g$ and $d$ stay the same, the product $qU$ must stay the same: a larger charge needs a smaller voltage.
-**Formula:** $\dfrac{q_1 U_1}{d} = mg = \dfrac{q_2 U_2}{d}$, so $U_2 = U_1 \cdot \dfrac{q_1}{q_2}$
+**Formula:** $$\begin{aligned} F &= G \\ qE &= mg \\ E &= \dfrac{U}{d} \\ q_1U_1 &= mgd \\ q_2U_2 &= mgd \\ q_1U_1 &= q_2U_2 \\ U_2 &= U_1 \cdot \dfrac{q_1}{q_2} \end{aligned}$$
 **Conversions:** Not needed: the elementary charge $e$ cancels.
 **Substitution:** $U_2 = 450\,\text{V} \cdot \dfrac{3e}{4e} = 450\,\text{V} \cdot 0.75 = 337.5\,\text{V}$
 **Answer:** $338\,\text{V}$ ($337.5\,\text{V}$), rounded to three significant figures according to the precision of the voltage $450\,\text{V}$; the numbers of elementary charges are exact.
@@ -115,7 +115,7 @@
 **Principle:** In a uniform field a constant force $eE$ acts on the electron towards the positive plate, and the plates are in vacuum, so there are no other forces (the weight is negligibly small).
 
 By Newton's second law the acceleration $a = eE : m$ is constant, so the motion is uniformly accelerated, and for a body that has travelled the distance $d$ from rest $v^2 = 2ad$ holds.
-**Formula:** $a = \dfrac{eE}{m} = \dfrac{eU}{md}$ and $v^2 = 2ad$, so $v = \sqrt{2ad} = \sqrt{\dfrac{2eU}{m}}$
+**Formula:** $$\begin{aligned} \Sigma F &= ma \\ eE &= ma \\ a &= \dfrac{eE}{m} = \dfrac{eU}{md} \\ v^2 &= 2ad \\ v &= \sqrt{2ad} \\ &= \sqrt{\dfrac{2eU}{m}} \end{aligned}$$
 **Conversions:** $d = 1.0\,\text{cm} = 0.010\,\text{m}$; finally $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Substitution:** $E = \dfrac{50\,\text{V}}{0.010\,\text{m}} = 5000\,\text{V/m}$, $a = \dfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot 5000\,\text{V/m}}{9.109 \cdot 10^{-31}\,\text{kg}} = 8.794 \cdot 10^{14}\,\text{m/s}^2$ and $$\begin{aligned} v &= \sqrt{2 \cdot 8.794 \cdot 10^{14}\,\text{m/s}^2 \cdot 0.010\,\text{m}} \\ &= 4.19 \cdot 10^{6}\,\text{m/s} \end{aligned}$$
 **Answer:** about $4.2 \cdot 10^{3}\,\text{km/s}$ or $4.2 \cdot 10^{6}\,\text{m/s}$, two significant figures like the voltage and the distance.
@@ -127,7 +127,7 @@ By Newton's second law the acceleration $a = eE : m$ is constant, so the motion 
 **Principle:** The forces on the ball are the weight $mg$ down, the electric force $qE$ horizontally and the tension of the thread along the thread. The ball is at rest, so the sum of the forces is zero.
 
 In the vertical direction the vertical component of the tension, $T\cos\alpha$, cancels the weight, and in the horizontal direction its horizontal component, $T\sin\alpha$, cancels the electric force.
-**Formula:** $T\sin\alpha = qE$ and $T\cos\alpha = mg$; dividing gives $\tan\alpha = \dfrac{qE}{mg}$, so $q = \dfrac{mg\tan\alpha}{E}$
+**Formula:** $$\begin{aligned} \Sigma \overline{F} &= \overline{0} \\ T\sin\alpha &= qE \\ T\cos\alpha &= mg \\ \tan\alpha &= \dfrac{qE}{mg} \\ q &= \dfrac{mg\tan\alpha}{E} \end{aligned}$$
 **Conversions:** $m = 2.0\,\text{g} = 2.0 \cdot 10^{-3}\,\text{kg}$; finally $1\,\text{C} = 10^{9}\,\text{nC}$.
 **Substitution:** $$\begin{aligned} mg\tan\alpha &= 2.0 \cdot 10^{-3}\,\text{kg} \\ &\cdot 9.81\,\text{m/s}^2 \cdot \tan 10^\circ \\ &= 3.459 \cdot 10^{-3}\,\text{N} \end{aligned}$$ and $q = \dfrac{3.459 \cdot 10^{-3}\,\text{N}}{1.5 \cdot 10^{5}\,\text{N/C}} = 2.306 \cdot 10^{-8}\,\text{C} = 23\,\text{nC}$
 **Answer:** $23\,\text{nC}$, two significant figures like the mass and the electric field strength.
@@ -226,7 +226,9 @@ In diagram D the weight is missing, although it is about half of the electric fo
 **Given:** example data: distance of the plates $d = 8.0\,\text{mm}$, positive plate on top, $g = 9.81\,\text{m/s}^2$; masses of the droplets $3.8$; $4.6$; $3.2$; $5.1$ and $4.2 \cdot 10^{-15}\,\text{kg}$ and hovering voltages $931\,\text{V}$, $746\,\text{V}$, $1580\,\text{V}$, $627\,\text{V}$ and $683\,\text{V}$
 **Find:** a) the charges of the droplets and the sign, b) the numbers of elementary charges and an estimate of the elementary charge, c) a comparison with the literature value, d) how the air purifier works; the estimate of the elementary charge in coulombs in the answer box
 **Principle:** A hovering droplet is at rest, so the electric force $qE$ and the weight $mg$ are equal. The field between the plates is uniform, $E = U : d$. So $qU : d = mg$. All the charges are whole-number multiples of the same step. The smallest charge is assumed to be one step if the ratios of the others to it are whole numbers.
-**Formula:** $qE = mg$ and $E = \dfrac{U}{d}$, so $q = \dfrac{mgd}{U}$; $e \approx \dfrac{S}{N}$, where $S$ is the sum of the ratios $q : n$ and $N = 5$ is the number of droplets
+**Formula:** $$\begin{aligned} F &= G \\ qE &= mg \\ E &= \dfrac{U}{d} \\ q &= \dfrac{mgd}{U} \end{aligned}$$
+
+$e \approx \dfrac{S}{N}$, where $S$ is the sum of the ratios $q : n$ and $N = 5$ is the number of droplets
 **Conversions:** $d = 8.0\,\text{mm} = 8.0 \cdot 10^{-3}\,\text{m}$ and $m = 3.8 \cdot 10^{-15}\,\text{kg}$ and so on.
 **Substitution:** a) For droplet 1 the weight is $mg = 3.8 \cdot 10^{-15}\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 3.73 \cdot 10^{-14}\,\text{N}$ and $mgd = 3.73 \cdot 10^{-14}\,\text{N} \cdot 8.0 \cdot 10^{-3}\,\text{m} = 2.98 \cdot 10^{-16}\,\text{J}$, so $q_1 = 2.98 \cdot 10^{-16}\,\text{J} : 931\,\text{V} = 3.20 \cdot 10^{-19}\,\text{C}$. In the same way, for droplets 2–5 we get $4.84 \cdot 10^{-19}\,\text{C}$, $1.59 \cdot 10^{-19}\,\text{C}$, $6.38 \cdot 10^{-19}\,\text{C}$ and $4.83 \cdot 10^{-19}\,\text{C}$. The electric force must point up towards the positive plate, so the droplets are negative.
 

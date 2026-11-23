@@ -53,7 +53,7 @@
 **Find:** the whole energy of the program $E$ in kilowatt-hours
 **Principle:** In each phase the power is constant, so the energy of the phase is power times the duration of the phase, that is the area of the rectangle under the graph. The whole energy is the sum of the energies of the phases.
 **Reading the graph:** In the heating phase the power is $2.0\,\text{kW}$ between $0$ and $0.25\,\text{h}$, so the duration is $0.25\,\text{h}$. In the wash the power is $0.2\,\text{kW}$ between $0.25$ and $1.25\,\text{h}$, that is $1.0\,\text{h}$. In the spin the power is $0.4\,\text{kW}$ between $1.25$ and $1.5\,\text{h}$, that is $0.25\,\text{h}$.
-**Formula:** $E = P_1 t_1 + P_2 t_2 + P_3 t_3$
+**Formula:** $$\begin{aligned} E_i &= P_i t_i \\ E &= E_1 + E_2 + E_3 \\ E &= P_1 t_1 + P_2 t_2 + P_3 t_3 \end{aligned}$$
 **Conversions:** Not needed: the powers are read in kilowatts and the times in hours, so the energy comes out in kilowatt-hours.
 **Substitution:** $$\begin{aligned} E &= 2.0\,\text{kW} \cdot 0.25\,\text{h} \\ &+ 0.2\,\text{kW} \cdot 1.0\,\text{h} \\ &+ 0.4\,\text{kW} \cdot 0.25\,\text{h} \\ &= 0.80\,\text{kWh} \end{aligned}$$
 **Answer:** $0.80\,\text{kWh}$, two significant figures, because the values are read from the grid lines of $0.2\,\text{kW}$ and $0.25\,\text{h}$.
@@ -63,7 +63,7 @@
 **Given:** voltage $U = 230\,\text{V}$, current $I = 8.7\,\text{A}$, time $t = 4.0\,\text{min}$
 **Find:** the electrical energy $E$ in kilojoules
 **Principle:** The power of the kettle is voltage times current, and at constant power the energy is power times time. When the voltage is in volts, the current in amperes and the time in seconds, the energy comes out in joules.
-**Formula:** $P = UI$ and $E = Pt$, so $E = UIt$
+**Formula:** $$\begin{aligned} P &= UI \\ E &= Pt \\ E &= UIt \end{aligned}$$
 **Conversions:** $t = 4.0\,\text{min} = 4.0 \cdot 60\,\text{s} = 240\,\text{s}$; finally $1\,\text{kJ} = 1000\,\text{J}$
 **Substitution:** $E = 230\,\text{V} \cdot 8.7\,\text{A} \cdot 240\,\text{s} = 480\,240\,\text{J} = 480.24\,\text{kJ}$
 **Answer:** $4.8 \cdot 10^{2}\,\text{kJ}$, two significant figures like the current $8.7\,\text{A}$ and the time $4.0\,\text{min}$.
@@ -73,7 +73,7 @@
 **Given:** standby power $P = 4.5\,\text{W}$ all year, $365$ days, price $a = 17\,\text{c/kWh}$
 **Find:** the cost of a year $K$ in euros
 **Principle:** The standby power is small but constant, and the devices are in that state around the clock. Energy is power times time, and the cost is price times energy.
-**Formula:** $E = Pt$ and $K = aE$, so $K = aPt$
+**Formula:** $$\begin{aligned} E &= Pt \\ K &= aE \\ K &= aPt \end{aligned}$$
 **Conversions:** $P = 4.5\,\text{W} = 0.0045\,\text{kW}$; $t = 365 \cdot 24\,\text{h} = 8760\,\text{h}$; $a = 17\,\text{c/kWh} = 0.17\,\text{€/kWh}$
 **Substitution:** $E = 0.0045\,\text{kW} \cdot 8760\,\text{h} = 39.42\,\text{kWh}$ and $K = 0.17\,\tfrac{\text{€}}{\text{kWh}} \cdot 39.42\,\text{kWh} = 6.70\,\text{€}$
 **Answer:** $6.7\,\text{€}$, two significant figures like the power $4.5\,\text{W}$ and the price $17\,\text{c/kWh}$.
@@ -83,7 +83,7 @@
 **Given:** power of the filament lamp $P_1 = 60\,\text{W}$, power of the LED lamp $P_2 = 8.0\,\text{W}$, burning time $4.0\,\text{h}$ per day, $365$ days
 **Find:** the energy saving of a year $\Delta E$ in kilowatt-hours
 **Principle:** The lamps burn equally long, so the saving is the difference of the powers times the burning time. There is no need to calculate the energy of each separately.
-**Formula:** $\Delta E = P_1 t - P_2 t$, so $\Delta E = (P_1 - P_2)t$
+**Formula:** $$\begin{aligned} E &= Pt \\ \Delta E &= E_1 - E_2 \\ \Delta E &= P_1 t - P_2 t \\ \Delta E &= (P_1 - P_2)t \end{aligned}$$
 **Conversions:** $P_1 - P_2 = 60\,\text{W} - 8.0\,\text{W} = 52\,\text{W} = 0.052\,\text{kW}$; $t = 365 \cdot 4.0\,\text{h} = 1460\,\text{h}$
 **Substitution:** $\Delta E = 0.052\,\text{kW} \cdot 1460\,\text{h} = 75.92\,\text{kWh}$
 **Answer:** $76\,\text{kWh}$, two significant figures like the powers $60\,\text{W}$ and $8.0\,\text{W}$ and the burning time $4.0\,\text{h}$.
@@ -93,7 +93,7 @@
 **Given:** power of the kettle $P_1 = 2200\,\text{W}$, time $t_1 = 3.0\,\text{min}$, power of the lamp $P_2 = 15\,\text{W}$
 **Find:** the burning time of the lamp $t_2$ in hours
 **Principle:** The lamp uses the same energy as the kettle. The energy of each is power times time, so with a smaller power the same energy lasts for a longer time.
-**Formula:** $P_2 t_2 = P_1 t_1$, so $t_2 = \dfrac{P_1 t_1}{P_2}$
+**Formula:** $$\begin{aligned} E &= Pt \\ E_2 &= E_1 \\ P_2 t_2 &= P_1 t_1 \\ t_2 &= \dfrac{P_1 t_1}{P_2} \end{aligned}$$
 **Conversions:** The unit W of the powers cancels, so the time comes out in minutes; finally $1\,\text{h} = 60\,\text{min}$.
 **Substitution:** $t_2 = \dfrac{2200\,\text{W} \cdot 3.0\,\text{min}}{15\,\text{W}} = 440\,\text{min} = \tfrac{440}{60}\,\text{h} = 7.33\,\text{h}$
 **Answer:** $7.3\,\text{h}$, two significant figures like the time $3.0\,\text{min}$ and the power $15\,\text{W}$.
@@ -103,7 +103,7 @@
 **Given:** total of the bill $K = 64.20\,\text{€}$, basic charges $K_\text{base} = 8.50\,\text{€}$, price $a = 15.0\,\text{c/kWh}$
 **Find:** the energy of the month $E$ in kilowatt-hours
 **Principle:** The bill consists of basic charges that do not depend on consumption and a consumption charge, which is price times energy. When the basic charges are subtracted from the total, the consumption charge is left, and the energy follows by dividing by the price.
-**Formula:** $K = aE + K_\text{base}$, so $E = \dfrac{K - K_\text{base}}{a}$
+**Formula:** $$\begin{aligned} K &= K_\text{base} + aE \\ aE &= K - K_\text{base} \\ E &= \dfrac{K - K_\text{base}}{a} \end{aligned}$$
 **Conversions:** $a = 15.0\,\text{c/kWh} = 0.150\,\text{€/kWh}$
 **Substitution:** $E = \dfrac{64.20\,\text{€} - 8.50\,\text{€}}{0.150\,\text{€/kWh}} = \dfrac{55.70\,\text{€}}{0.150\,\text{€/kWh}} = 371.3\,\text{kWh}$
 **Answer:** $371\,\text{kWh}$, three significant figures like the price $15.0\,\text{c/kWh}$.
@@ -115,7 +115,7 @@
 **Principle:** By Ohm's law the current of a resistor is the voltage divided by the resistance. The power of the resistor is voltage times current, and since the resistance stays constant, the power is constant and the energy is power times time.
 
 The electrical energy becomes the internal energy of the resistor, which is transferred as heat to the water.
-**Formula:** $I = \dfrac{U}{R}$, $P = UI$ and $E = Pt$, so $E = UIt$
+**Formula:** $$\begin{aligned} U &= RI \\ I &= \dfrac{U}{R} \\ P &= UI \\ E &= Pt \\ E &= UIt \end{aligned}$$
 **Conversions:** The power is converted to kilowatts ($1\,\text{kW} = 1000\,\text{W}$), so that the energy calculated with hours comes out in kilowatt-hours.
 **Substitution:** $I = \dfrac{230\,\text{V}}{26.5\,\Omega} = 8.679\,\text{A}$, $P = 230\,\text{V} \cdot 8.679\,\text{A} = 1996\,\text{W} = 1.996\,\text{kW}$ and $E = 1.996\,\text{kW} \cdot 2.50\,\text{h} = 4.99\,\text{kWh}$
 **Answer:** $4.99\,\text{kWh}$, three significant figures like the resistance $26.5\,\Omega$ and the time $2.50\,\text{h}$.
@@ -134,7 +134,7 @@ Current is not the right answer, because its unit is the ampere and an electrici
 **Given:** power $P = 0.90\,\text{kW}$, time of use $15\,\text{min}$ a day, $30$ days, price $a = 18\,\text{c/kWh}$
 **Find:** the cost $K$ in euros
 **Principle:** The power of the coffee maker is constant when it is on, so the energy is power times the total time of use. The cost is price times energy. The basic charges are left out as the task says.
-**Formula:** $E = Pt$ and $K = aE$
+**Formula:** $$\begin{aligned} E &= Pt \\ K &= aE \\ K &= aPt \end{aligned}$$
 **Conversions:** $t = 30 \cdot 15\,\text{min} = 450\,\text{min} = \tfrac{450}{60}\,\text{h} = 7.5\,\text{h}$; $a = 18\,\text{c/kWh} = 0.18\,\text{€/kWh}$
 **Substitution:** $E = 0.90\,\text{kW} \cdot 7.5\,\text{h} = 6.75\,\text{kWh}$ and $K = 0.18\,\tfrac{\text{€}}{\text{kWh}} \cdot 6.75\,\text{kWh} = 1.215\,\text{€}$
 **Answer:** $1.2\,\text{€}$, two significant figures like the power $0.90\,\text{kW}$ and the price $18\,\text{c/kWh}$.
@@ -158,7 +158,7 @@ A check of the units reveals the error.
 **Given:** the powers and the daily times of use of the appliances from the table, $365$ days
 **Find:** the combined energy $E_\text{year}$ of the appliances in kilowatt-hours, the biggest consumer and a target for saving
 **Principle:** The power of each appliance is constant while it is in use, so the energy of the appliance per day is power times time of use. The energies of the appliances are added together, and the energy of a year is the energy of a day times $365$.
-**Formula:** $E_\text{day} = Pt$ for each appliance and $E_\text{year} = 365 \cdot E_\text{day,tot}$
+**Formula:** $$\begin{aligned} E_{\text{day},i} &= P_i t_i \\ E_{\text{day},\text{tot}} &= \Sigma E_{\text{day},i} \\ E_\text{year} &= 365 \cdot E_{\text{day},\text{tot}} \end{aligned}$$
 **Conversions:** $90\,\text{W} = 0.090\,\text{kW}$, $110\,\text{W} = 0.110\,\text{kW}$, $60\,\text{W} = 0.060\,\text{kW}$, $1200\,\text{W} = 1.200\,\text{kW}$ and $800\,\text{W} = 0.800\,\text{kW}$
 **Substitution:** Lighting $0.090\,\text{kW} \cdot 5.0\,\text{h} = 0.45\,\text{kWh}$; television $0.110\,\text{kW} \cdot 4.0\,\text{h} = 0.44\,\text{kWh}$; computer $0.060\,\text{kW} \cdot 6.0\,\text{h} = 0.36\,\text{kWh}$; vacuum cleaner $1.200\,\text{kW} \cdot 0.50\,\text{h} = 0.60\,\text{kWh}$; toaster $0.800\,\text{kW} \cdot 0.20\,\text{h} = 0.16\,\text{kWh}$. The sum is $2.01\,\text{kWh}$ per day, so $E_\text{year} = 365 \cdot 2.01\,\text{kWh} = 733.65\,\text{kWh}$.
 **Answer:** In the answer box: $7.3 \cdot 10^{2}\,\text{kWh}$. a) The vacuum cleaner uses the most energy, even though it is on for only half an hour.
@@ -210,8 +210,7 @@ c) The room temperature during the measurement is different from the yearly aver
 **Principle:** The cost of each period is the price of the period times the energy of the period, and the total cost is the sum of these.
 
 The average price is the total cost divided by the total energy. When the heating of the heater is moved, the energy of the heater stays the same but it is paid for at the price of another period, so the saving is the moved energy times the difference of the prices.
-**Formula:** $K = \sum aE$ by periods, $a_\text{avg} = \dfrac{K}{E_\text{tot}}$ and $E_\text{heater} = Pt$. The saving is
-$$S = E_\text{heater}\,(a_\text{high} - a_\text{low}).$$
+**Formula:** $$\begin{aligned} K &= \Sigma aE \\ a_\text{avg} &= \dfrac{K}{E_\text{tot}} \\ E_\text{heater} &= Pt \\ S &= aE_\text{heater} \\ S &= E_\text{heater}\,(a_\text{high} - a_\text{low}) \end{aligned}$$
 **Conversions:** The costs are calculated in cents and converted to euros at the end: $100\,\text{c} = 1\,\text{€}$.
 **Substitution:** The costs of the periods are $4.68$; $12.96$; $32.24$; $19.20$; $162.96$ and $35.40$ cents. For example the first period is $1.2\,\text{kWh} \cdot 3.9\,\tfrac{\text{c}}{\text{kWh}} = 4.68\,\text{c}$.
 
@@ -278,7 +277,7 @@ Reasonableness: a device of one kilowatt uses $1\,\text{kWh}$ in an hour, and th
 **Find:** the cost of the electricity of the program $K$ in euros
 **Principle:** In each phase the power is constant, so the energy of the phase is power times the duration of the phase, that is the area of the rectangle under the graph. The whole energy is the sum of the energies of the phases, and the cost is price times energy.
 **Reading the graph:** In the heating the power is $2.4\,\text{kW}$ between $0$ and $0.5\,\text{h}$, so the duration is $0.5\,\text{h}$. In the drying the power is $1.2\,\text{kW}$ between $0.5$ and $1.5\,\text{h}$, that is $1.0\,\text{h}$. In the cooling the power is $0.2\,\text{kW}$ between $1.5$ and $2.0\,\text{h}$, that is $0.5\,\text{h}$.
-**Formula:** $E = P_1 t_1 + P_2 t_2 + P_3 t_3$ and $K = aE$
+**Formula:** $$\begin{aligned} E_i &= P_i t_i \\ E &= E_1 + E_2 + E_3 \\ E &= P_1 t_1 + P_2 t_2 + P_3 t_3 \\ K &= aE \end{aligned}$$
 **Conversions:** $a = 18\,\text{c/kWh} = 0.18\,\text{€/kWh}$
 **Substitution:** $$\begin{aligned} E &= 2.4\,\text{kW} \cdot 0.5\,\text{h} \\ &+ 1.2\,\text{kW} \cdot 1.0\,\text{h} \\ &+ 0.2\,\text{kW} \cdot 0.5\,\text{h} \\ &= 1.2\,\text{kWh} + 1.2\,\text{kWh} \\ &+ 0.10\,\text{kWh} \\ &= 2.5\,\text{kWh} \end{aligned}$$ and $K = 0.18\,\tfrac{\text{€}}{\text{kWh}} \cdot 2.5\,\text{kWh} = 0.45\,\text{€}$
 **Answer:** $0.45\,\text{€}$, two significant figures, because the values are read from the grid lines of $0.4\,\text{kW}$ and $0.25\,\text{h}$.

@@ -6,14 +6,14 @@
       "title": "Flashlight battery",
       "source": "example",
       "source_note": "The measurement results have been made up for the task, but they are of the same order of magnitude as in a measurement of a new flat flashlight battery.",
-      "text": "A student investigates a new flat flashlight battery marked $4.5\\,\\text{V}$ on its side. She connects an adjustable resistor and an ammeter to the battery, and a voltmeter directly across the terminals of the battery (figure). She adjusts the current with the resistor and reads the corresponding terminal voltage $U$. The meters show the current to the nearest $0.01\\,\\text{A}$ and the voltage to the nearest $0.01\\,\\text{V}$. The student measured the current in increasing order, and the circuit was connected for about a minute for each reading. The battery warmed up slightly during the measurements, and the voltage seemed to fall slowly even when the current was not changed. This slow change of the voltage with time is called drift. After the series the student measured the voltage once more at a current of $0.10\\,\\text{A}$: the reading was $4.45\\,\\text{V}$, that is $0.03\\,\\text{V}$ lower than at the beginning of the series.\n\nMeasurement results (current $I$, terminal voltage $U$):\n\n- $I = 0.10\\,\\text{A}$, $U = 4.48\\,\\text{V}$\n- $I = 0.20\\,\\text{A}$, $U = 4.37\\,\\text{V}$\n- $I = 0.30\\,\\text{A}$, $U = 4.22\\,\\text{V}$\n- $I = 0.40\\,\\text{A}$, $U = 4.13\\,\\text{V}$\n- $I = 0.50\\,\\text{A}$, $U = 3.99\\,\\text{V}$\n- $I = 0.60\\,\\text{A}$, $U = 3.89\\,\\text{V}$",
+      "text": "A student investigates a new flat flashlight battery marked $4.5\\,\\text{V}$ on its side. She connects an adjustable resistor and an ammeter to the battery, and a voltmeter directly across the terminals of the battery (figure). She adjusts the current with the resistor and reads the corresponding terminal voltage $U$. The meters show the current to the nearest $0.01\\,\\text{A}$ and the voltage to the nearest $0.01\\,\\text{V}$. The student measured the current in increasing order, and the circuit was connected for about a minute for each reading. The battery warmed up slightly during the measurements, and the voltage seemed to fall slowly even when the current was not changed. This slow change of the voltage with time is called creep of the reading. It is not the same thing as the drift velocity of charge carriers in a conductor. After the series the student measured the voltage once more at a current of $0.10\\,\\text{A}$: the reading was $4.45\\,\\text{V}$, that is $0.03\\,\\text{V}$ lower than at the beginning of the series.\n\nMeasurement results (current $I$, terminal voltage $U$):\n\n- $I = 0.10\\,\\text{A}$, $U = 4.48\\,\\text{V}$\n- $I = 0.20\\,\\text{A}$, $U = 4.37\\,\\text{V}$\n- $I = 0.30\\,\\text{A}$, $U = 4.22\\,\\text{V}$\n- $I = 0.40\\,\\text{A}$, $U = 4.13\\,\\text{V}$\n- $I = 0.50\\,\\text{A}$, $U = 3.99\\,\\text{V}$\n- $I = 0.60\\,\\text{A}$, $U = 3.89\\,\\text{V}$",
       "figure": "fy6-sovella/fy6-s1-circuit",
       "parts": [
         {
           "id": "a",
           "kind": "graph",
           "points": 4,
-          "text": "The student wants to find out what kind of voltage source the battery is. Model the battery and draw a graph from the data so that, according to the model, a straight line fits the points.",
+          "text": "The student wants to find out how the terminal voltage of the battery depends on the current. Choose a suitable model for the battery and present the data as a graph from which the quantities of the model can be read.",
           "criteria": [
             {
               "text": "Models the battery as an ideal voltage source with an internal resistance in series with it, so that the terminal voltage is $U = E - R_\\text{int} I$, and chooses $I$ and $U$ as the quantities of the graph.",
@@ -40,7 +40,7 @@
           "id": "b",
           "kind": "calc",
           "points": 4,
-          "text": "Determine from the graph the source voltage $E$ and the internal resistance $R_\\text{int}$ of the battery.",
+          "text": "Determine from the graph the two parameters of your model and state what they tell about the battery.",
           "answer": [
             {
               "name": "E",
@@ -119,7 +119,7 @@
           "id": "d",
           "kind": "word",
           "points": 4,
-          "text": "Evaluate how the discharging and warming of the battery affect the result of part b. Also estimate how much uncertainty the scatter of the points leaves in the value of $R_\\text{int}$ (the points deviate from the fitted line by at most $0.02\\,\\text{V}$), and suggest an improvement to the measurement.",
+          "text": "Evaluate how the way of measuring and the changing of the battery during the measurement affect the result of part b. Also estimate how much uncertainty the scatter of the points leaves in the value of $R_\\text{int}$ (the points deviate from the fitted line by at most $0.02\\,\\text{V}$), and suggest an improvement to the measurement.",
           "criteria": [
             {
               "key": "error_sources",
@@ -139,7 +139,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Estimates the effect of the drift: the voltage fell by about $0.03\\,\\text{V}$ during the series, so the slope is too large by at most about $\\dfrac{0.03\\,\\text{V}}{0.50\\,\\text{A}} = 0.06\\,\\Omega$. This is of the same order of magnitude as the scatter $0.08\\,\\Omega$, so $R_\\text{int}$ is about $1.1\\ldots1.2\\,\\Omega$ and the value $1.2\\,\\Omega$ is rather an upper limit."
+              "detail": "Estimates the effect of the creep: the voltage fell by about $0.03\\,\\text{V}$ during the series, so the slope is too large by at most about $\\dfrac{0.03\\,\\text{V}}{0.50\\,\\text{A}} = 0.06\\,\\Omega$. This is of the same order of magnitude as the scatter $0.08\\,\\Omega$, so $R_\\text{int}$ is about $1.1\\ldots1.2\\,\\Omega$ and the value $1.2\\,\\Omega$ is rather an upper limit."
             }
           ]
         }
@@ -253,7 +253,7 @@
           "id": "d",
           "kind": "calc",
           "points": 4,
-          "text": "The owner adds a third lamp C in parallel to the circuit, marked $12\\,\\text{V},\\ 36\\,\\text{W}$. How large a current will now flow from the battery bank? What happens to the fuse, and why is the rated current of the fuse chosen according to the cable? Also calculate the voltage of the lamps.",
+          "text": "The owner adds a third lamp C in parallel to the circuit, marked $12\\,\\text{V},\\ 36\\,\\text{W}$. How large a current will now flow from the battery bank? Evaluate whether the protection of the circuit works, and justify on what basis the rated current of the fuse is chosen. Also calculate the voltage of the lamps.",
           "answer": {
             "value": 4.3,
             "unit": "A",
@@ -302,7 +302,7 @@
           "id": "a",
           "kind": "calc",
           "points": 4,
-          "text": "How large is the electric force acting on the droplet? Is it justified to ignore the weight of the droplet, and will sparking occur in the field?",
+          "text": "How large is the electric force acting on the droplet? Evaluate which other forces act on the droplet and whether they matter, and evaluate whether the air withstands the field.",
           "answer": {
             "value": 1.8e-07,
             "unit": "N",
@@ -542,7 +542,7 @@
           "id": "d",
           "kind": "word",
           "points": 4,
-          "text": "A repairer removes the battery from the flash unit and opens the unit right after that. Explain why the capacitor can still be dangerous. Estimate by calculation the size of the current through the body in an imagined contact situation in which the resistance of a human body is about $1.0\\,\\text{k}\\Omega$. Why do the safe servicing of the device and making sure that the capacitor is de-energised belong to a professional trained for the task?",
+          "text": "A repairer removes the battery from the flash unit and opens the unit right after that. Evaluate whether the unit can be opened safely right after the battery is removed, and justify your answer. Estimate by calculation the size of the current through the body in an imagined contact situation in which the resistance of a human body is about $1.0\\,\\text{k}\\Omega$. Why do the safe servicing of the device and making sure that the capacitor is de-energised belong to a professional trained for the task?",
           "criteria": [
             {
               "text": "Knows that the capacitor keeps its charge and energy when the battery is removed: it is still at $300\\,\\text{V}$ and holds about $15\\,\\text{J}$, even though the device is supplied by a small battery.",
