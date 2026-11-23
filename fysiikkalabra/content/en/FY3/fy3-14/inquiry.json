@@ -161,7 +161,7 @@
       "min": 3,
       "question": {
         "type": "numeric",
-        "prompt": "Use the slider (step $0.5\\,{}^\\circ\\text{C}$) to find the initial temperature of the water at which no ice is left but the final temperature does not yet exceed $0\\,{}^\\circ\\text{C}$. Then calculate the exact temperature and answer in degrees Celsius.",
+        "prompt": "Use the slider (step $0.5\\,{}^\\circ\\text{C}$) to find two consecutive initial temperatures of the water between which the ice disappears completely. Then calculate the exact initial temperature at which all the ice just melts and the final state is $0\\,{}^\\circ\\text{C}$, and answer in degrees Celsius.",
         "answer": 26.6,
         "unit": "°C",
         "tolerance": 0.05,

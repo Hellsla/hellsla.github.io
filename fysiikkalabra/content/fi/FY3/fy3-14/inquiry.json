@@ -157,7 +157,7 @@
       "min": 3,
       "question": {
         "type": "numeric",
-        "prompt": "Rajaa liukusäätimellä (askel $0{,}5\\,{}^\\circ\\text{C}$) veden alkulämpötila, jolla jäätä ei ole enää jäljellä mutta lopputilan lämpötila ei vielä ylitä $0\\,{}^\\circ\\text{C}$:ta. Laske sitten tarkka lämpötila ja vastaa celsiusasteina.",
+        "prompt": "Rajaa liukusäätimellä (askel $0{,}5\\,{}^\\circ\\text{C}$) kaksi peräkkäistä veden alkulämpötilaa, joiden välissä jää loppuu kokonaan. Laske sitten tarkka alkulämpötila, jolla kaikki jää juuri sulaa ja lopputila on $0\\,{}^\\circ\\text{C}$, ja vastaa celsiusasteina.",
         "answer": 26.6,
         "unit": "°C",
         "tolerance": 0.05,
