@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: bb084e9586f15f33
+CONTENT-HASH: f8a8e923c8dbc625
+SCOPE: delta numbers,reflow,teacher-figure from bb084e9586f15f33 base 9102119
 
 ## Blocking
 (none)
@@ -8,8 +9,9 @@ CONTENT-HASH: bb084e9586f15f33
 (none)
 
 ## Checked
-- Delta (md-paragraphs, round 2): diff of solutions.md (L2-07, L3-04, L3-05: part labels b), c), e) now start paragraphs; sentences inside a part run together); exercises.json caption marker removal is outside my judgement.
-- Opened fy6-11-open-exercises-L3-1280-6, -8 and -9 at 1280 px: spacing even, formulas intact, nothing clipped. No 390 px exercise captures; the 360 px check is green.
+- Diff read in full: Kaava steps start from basic equations (W = qEd, F = G, ΣF = ma, ΣF-vector = 0 and so on) as `aligned` blocks; the four pick-* force-diagram pictures of L2-08 are teacher-approved drawings.
+- Opened at 1280 px: open-exercises-L2-1280-5, -6, -8 and L3-1280-3. L2-08 shows diagrams A to D side by side, labels `\overline{G}`, `\overline{F}_\text{s}`, `\overline{v}` legible, force red and velocity blue, feedback inside the card; Sijoitus rows aligned, no clipping.
+- Layout checks at 360-1280 px are green in the packet.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

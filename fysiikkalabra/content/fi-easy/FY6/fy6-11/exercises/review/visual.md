@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a555d02f7a803565
-Mode: delta (md-paragraphs, round 2)
+CONTENT-HASH: 143de208888628e3
+SCOPE: delta numbers,reflow,teacher-figure from a555d02f7a803565 base 9102119
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- fy6-11-open-exercises-L3-1280-7 (droplet task, card spacing, formulas intact); other changed solutions (a)/b)/c), (a)-(e) breaks, Millikan b)) from the diff text. Round-1 Minor ('Se saavuttaa') is now inside part e), no orphan.
+- Diff read in full: Kaava steps start from basic equations as `aligned` blocks; the four pick-* force-diagram pictures of L2-08 are teacher-approved drawings.
+- Opened at 1280 px: open-exercises-L2-1280-8. Diagrams A to D legible, labels in LaTeX, force red and velocity blue, feedback inside the card, layout intact.
+- Layout checks at 360-1280 px are green in the packet.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
