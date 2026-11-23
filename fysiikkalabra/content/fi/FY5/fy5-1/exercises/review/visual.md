@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 845bbf8761a73937
+CONTENT-HASH: 93d3c3e0471d2a02
+none
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md weights task (Kaava, `\qquad` continuation row) — not opened as a capture; manual row break inside the aligned block is fragile, check at 360 px.
+(none)
 
 ## Checked
-- Captures (content/fi/FY5/fy5-1/review/shots, current for this hash): fy5-1-open-exercises-1280-1 (door, 3-row Kaava), L2-1280-4 (valve Kaava/Sijoitus tail), L3-1280-4, L3-1280-5 (bike, 4-row Kaava with fraction, Muunnokset, Sijoitus).
-- Kaava blocks render as aligned rows with equals signs in one column, KaTeX clean, subscripts legible, no clipping or overflow; Sijoitus, answers unchanged.
-- Figure (ruutu) not opened; teacher-approved, carried.
+- Delta, round 2: the 1-17 (student's error) Kaava now opens with the sentence defining $d$ and $e$. Opened review/shots/fy5-1-open-exercises-L2-1280-6.png (fi, current for this hash).
+- The definition line reads cleanly, both symbols are in LaTeX and the three-row aligned block (r = d - e, M = Fr, M = F(d - e)) is unchanged and aligned at the equals signs. Sijoitus, Vastaus and Järkevyys are intact. No clipping.
+- The earlier Major (symbols $d$ and $e$ undefined) is fixed. Other Kaava rewrites keep the previous PASS.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4

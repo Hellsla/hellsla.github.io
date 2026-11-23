@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 068776269f373906
+CONTENT-HASH: add6ed1f8827f58d
 none
 
 ## Blocking
@@ -9,8 +9,9 @@ none
 (none)
 
 ## Checked
-- Delta (Kaava steps rewritten as aligned display blocks). Opened fy5-1 open-exercises-1280-1 (1-2), L2-1280-2 (1-13, signed moments), L3-1280-2 (1-19) and L3-1280-5 (cycling, four-row chain with fraction, subscripts).
-- Equals signs align in one column, one equation per row, order principle, symbolic chain, then substitution intact; no clipping or overflow in the captures. Figure fy5-1/ruutu is teacher-approved (carry).
+- Delta, round 2: the 1-17 (student's error) Kaava now opens with the sentence defining $d$ and $e$. Opened review/shots/fy5-1-open-exercises-L2-1280-6.png (en, current for this hash).
+- The definition line reads cleanly, both symbols are in LaTeX and the three-row aligned block (r = d - e, M = Fr, M = F(d - e)) is unchanged and aligned at the equals signs. Sijoitus, Vastaus and Järkevyys are intact. No clipping.
+- The earlier Major (symbols $d$ and $e$ undefined) is fixed. Other Kaava rewrites keep the previous PASS.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
