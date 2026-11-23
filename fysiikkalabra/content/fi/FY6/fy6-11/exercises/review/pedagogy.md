@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b380572990b00c2b
+CONTENT-HASH: f8a8e923c8dbc625
+SCOPE: delta caption-label,md-paragraphs,numbers,paragraphs,reflow,teacher-figure,typography from b380572990b00c2b base 98218de
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- Pisarakoe L-task, Vastaus — $338\,\text{V}$ rests on reading $450\,\text{V}$ as three figures; add "jännite $450\,\text{V}$ on annettu kolmen numeron tarkkuudella" if that is the intent.
-- Charged-ball task, Järkevyys — $mg\tan 10^\circ \approx 0{,}18 \cdot 0{,}020\,\text{N} = 3{,}6\,\text{mN}$ now differs from the $3{,}459 \cdot 10^{-3}\,\text{N}$ above (rounded factors); write "$\approx 3{,}5\,\text{mN}$" or keep $0{,}176$.
+(none)
 
 ## Checked
-- $1{,}0 \cdot 10^{2}\,\mu\text{N}$ and $4{,}2 \cdot 10^{3}\,\text{km/s}$ are unambiguous two-figure forms.
-- "Vaakanopeudella ... pisara kulkee levyjen ohi" is clearer Finnish than before.
-- Principle, steps and checks intact.
+- The Kaava/Formula step of the model solutions now starts from the basic principle equation (F = qE, W = qU, energy conservation, Newton's laws, Coulomb) and derives the result row by row; each row follows from the previous one.
+- The derivations match the Principle step above them; no step is skipped and no new symbol appears without explanation.
+- Re-broken aligned rows keep numbers, signs and units unchanged; no task, data, level or answer changed.
+- Split solution and model-answer paragraphs read more easily, text unchanged in substance.
+- Rows are short, so they stay readable at 360 px.
