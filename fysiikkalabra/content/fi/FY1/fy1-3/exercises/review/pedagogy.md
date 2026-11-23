@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 49dfaa86f7573fbd
+CONTENT-HASH: 1d39d74a7173b860
 
 ## Blocking
 - none
 
 ## Polish
-- solutions.md fy1-3-L2-09 c) (still open from the earlier report): "seuraavaksi neljä Gran Sasson koetta (Borexino, ICARUS, LVD ja OPERA) mittasi kaikki kulkuajan, joka sopii valon nopeuteen" repeats ICARUS and "sopii"; write "Myöhemmin kaikki neljä Gran Sasson koetta (Borexino, ICARUS, LVD ja OPERA) mittasivat valon nopeuteen sopivan kulkuajan."
-- exercises.json fy1-3-L2-09 b): three questions in one part; split the distance question into its own sentence.
+- solutions.md:143 — the last Kaava line `Δx_v : Δx_t = Δx_v/Δx_t` restates the ratio, not a basic equation — drop it or state the ratio as asked.
+- solutions.md:197 — the Kaava is a prose-defined formula, not in the aligned form of the others — optional.
 
 ## Checked
-- Delta is paragraph splitting in L1-06, L1-07, L2-06, L2-07, L2-08 and L2-09 solutions: words, numbers and units the same, each split falls where the subject changes (result vs. remark, claims vs. precision), so solutions are easier to follow.
-- L1-09 Sijoitus: mean now in its own aligned block (matrix in numerator breaks the sum over two lines); same values, 1,010 g/cm³ and 1,18 % unchanged. Phone readability left to the visual reviewer.
-- L2-09 b) "Matkan mittaus ei siis voinut..." now its own paragraph after the 18 m vs 20 cm comparison; reasoning intact.
-- Levels, counts and tasks unchanged.
+- Delta (Kaava steps in solutions.md rewritten from basic equations) judged in context on disk: every Kaava line now starts from a basic definition or equation and reaches the working form.
+- Physics and notation consistent with the Periaate, Sovellus and Sijoitus steps; no answer disclosed beyond the model solution.
+- Diagram of aligned equations reads as a staged derivation; added "Tässä ..." definitions are brief and in Finnish.
+- No exercise, figure or feedback wording changed beyond spacing in numeric feedback.

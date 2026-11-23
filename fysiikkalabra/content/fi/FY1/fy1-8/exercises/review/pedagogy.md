@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a4ab830e4fcf75d5
+CONTENT-HASH: 0134f21ed9127ea2
 
 ## Blocking
 - none
 
 ## Polish
-- exercises.json fy1-8-L3-04 / solutions.md: "mitä väitteitä aineisto tukee ja mitä ei" is correct but "mitkä väitteet ... ja mitkä ei" named the claims more directly; optional.
+- none
 
 ## Checked
-batch delta review (exercises): L3-04 question and Kysytty reworded to partitive ('mitä väitteitä aineisto tukee ja mitä ei'), consistent between task and solution; data and answer unchanged.
+- Delta (Kaava steps in solutions.md rewritten from basic equations) judged in context on disk: every Kaava line now starts from a basic definition or equation and reaches the working form.
+- Physics and notation consistent with the Periaate, Sovellus and Sijoitus steps; no answer disclosed beyond the model solution.
+- Diagram of aligned equations reads as a staged derivation; added "Tässä ..." definitions are brief and in Finnish.
+- No exercise, figure or feedback wording changed beyond spacing in numeric feedback.
