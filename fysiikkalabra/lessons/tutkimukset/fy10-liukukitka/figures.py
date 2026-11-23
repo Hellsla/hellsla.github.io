@@ -101,7 +101,7 @@ def forces():
     backwards, velocity forwards and acceleration backwards beside the body."""
     m, mu = 1.0, 0.30
     G = m * g; Fm = mu * G
-    f = Fig("fy10l-forces", 330, "Voimakuvio: radalla oikealle liukuva ja hidastuva vaunu suorakulmiona. Paino G osoittaa "
+    f = Fig("fy10l-forces", 330, "Kaaviokuva, voimakuvio: radalla oikealle liukuva ja hidastuva vaunu suorakulmiona. Paino G osoittaa "
             "keskipisteestä alas. Radan tukivoima N osoittaa alapinnasta ylös, ja se on yhtä pitkä kuin paino. Liukukitka "
             "F myy osoittaa alapinnan takakulmasta vasemmalle eli liikettä vastaan, ja se on paljon lyhyempi kuin paino. "
             "Kappaleen yläpuolella sininen nopeusnuoli v osoittaa oikealle ja oranssi kiihtyvyysnuoli a vasemmalle.")

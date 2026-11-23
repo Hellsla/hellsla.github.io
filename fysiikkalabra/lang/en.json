@@ -527,6 +527,9 @@
     "palautus_broken": "The file is not a Ruukkilabra work file, or it is damaged. Nothing was opened.",
     "palautus_newer": "The file was made with a newer version of Ruukkilabra. Reload the page and try again.",
     "palautus_conflict": "This browser already has different data in {{n}} places, {{newer}} of them newer than in the file.\n\nOK: the file replaces them.\nCancel: this browser keeps its data, and only what is missing is added from the file.",
+    "kaikki_save": "Save all my work to a file",
+    "kaikki_open": "Open all my work from a file",
+    "kaikki_wrong": "This file is one module's work file. Open it on that module's page.",
     "palautus_open_failed": "The work could not be opened because this browser does not allow saving. Nothing was changed."
   },
   "sims": {

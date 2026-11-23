@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a4ab830e4fcf75d5
+CONTENT-HASH: c768525a69b2d6df
 
 ## Blocking
 - none
 
 ## Polish
-- exercises.json fy1-8-L3-04 / solutions.md: "mitä väitteitä aineisto tukee ja mitä ei" is correct but "mitkä väitteet ... ja mitkä ei" named the claims more directly; optional.
+- none
 
 ## Checked
-batch delta review (exercises): L3-04 question and Kysytty reworded to partitive ('mitä väitteitä aineisto tukee ja mitä ei'), consistent between task and solution; data and answer unchanged.
+- Delta: the sign fix r = -ΔT/Δt in the cooling-rate steps (two places) judged in context: with ΔT = T_end - T_start negative, the next line (T_start - T_end)/(t_end - t_start) follows exactly and r is positive.
+- Matches the Sijoitus values (2,4 / 1,0 K/min; 2,0 K/min) and the rest of the solution; no answer disclosed, no step skipped.
+- No exercise, figure or feedback text changed; earlier PASS stands for the rest.

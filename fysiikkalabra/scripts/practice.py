@@ -591,6 +591,7 @@ def unit_packet(code, role, lang=i18n.SOURCE):
     lines += ["", "## Shared criteria (lang \"criteria\"; use the key, add `detail` for the task's specifics)"] + [f"- {k} [{t}]: {T('criteria.' + k)}" for k, t in fw["criteria"].items()]
     errs = check(code, lang)
     lines += ["", "## Deterministic checks", "\n".join(errs) if errs else "practice.py check: OK"]
+    lines += unit_text_lines(uid, role, lang)
     for name, path in files(code, lang):
         if path.is_file():
             txt = re.sub(r"<svg\b.*?</svg>", "<svg …figure from figures.py…>", path.read_text(), flags=re.S) if name == "solutions.md" else path.read_text()
@@ -598,6 +599,33 @@ def unit_packet(code, role, lang=i18n.SOURCE):
     out = folder(code, lang) / "review" / f"packet-{role}.md"
     out.parent.mkdir(parents=True, exist_ok=True); out.write_text("\n".join(lines) + "\n")
     return out
+
+
+def unit_text_lines(uid, role, lang):
+    """The unit's own texts (units.TEXTS: unit.md, unit.json, inquiry.json, teacher.md) for the packet: they are part of the
+    unit's hash, so the reviews judge them with the task set. A role that has passed an earlier hash also gets the diff of
+    the texts since that version (the way a lesson's delta packet shows it), when the version is in git history; the
+    texts follow in full either way. The pedagogy packet collapses figure bodies as a lesson's does."""
+    import difflib, units, reviews
+    fdir = units.folder(uid, lang); texts = [(n, fdir / n) for n in units.TEXTS if (fdir / n).is_file()]
+    st = units.status(uid, lang)
+    lines = ["", f"## The unit's texts (unit hash now {st['hash']}: `python scripts/units.py hash {uid}" + (f" --lang {lang}" if lang != i18n.SOURCE else "")
+             + "`; the Sovella task set below is part of it; judge the texts and the task set together)"]
+    rep = reviews.report(fdir, role) if role in reviews.REVIEWS else None
+    if rep and rep[0] == "PASS" and rep[1] != st["hash"]:
+        base = reviews._item_base("unit", uid, lang, rep[1])
+        if base:
+            src = reviews.Commit(base); d = []
+            for n, path in texts:
+                old = src.read(path.relative_to(ROOT).as_posix()) or ""
+                d += list(difflib.unified_diff(old.splitlines(), path.read_text().splitlines(), f"{n} (passed)", f"{n} (now)", lineterm="", n=2))
+            if d: lines += ["", f"### Changes since the version you passed (hash {rep[1]}, commit {base[:9]})", "```diff", *d, "```"]
+        else: lines += ["", f"(the version you passed, hash {rep[1]}, is not in git history: judge the texts in full)"]
+    for n, path in texts:
+        txt = path.read_text()
+        if role == "pedagogy" and n == "unit.md": txt = re.sub(r"<svg\b.*?</svg>", "<svg …figure body omitted: see the captures…>", txt, flags=re.S)
+        lines += ["", f"### {path.relative_to(ROOT)}", "```", txt.rstrip(), "```"]
+    return lines
 
 
 if __name__ == "__main__":

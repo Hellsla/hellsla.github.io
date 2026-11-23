@@ -3,198 +3,7 @@
 > **Why** is the electron of an atom drawn in a chemistry book as a fuzzy cloud and not as a small ball going round the nucleus along an orbit?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: an open book lies on a desk. On the left page is an old picture of an atom in which a small electron goes round the nucleus along a circular orbit. On the right page the same atom is drawn as a blue cloud of dots, and next to it is a two-lobed p orbital. A desk lamp lights the book." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy85h-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6f1e6"/><stop offset="1" stop-color="#f1dfb5"/></linearGradient><linearGradient id="fy85h-desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#a97a35"/></linearGradient><radialGradient id="fy85h-light" cx="0.5" cy="0" r="0.9"><stop offset="0" stop-color="#ffc078" stop-opacity="0.55"/><stop offset="1" stop-color="#ffc078" stop-opacity="0"/></radialGradient><radialGradient id="fy85h-cloud"><stop offset="0" stop-color="#1971c2" stop-opacity="0.85"/><stop offset="1" stop-color="#1971c2" stop-opacity="0"/></radialGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#fy85h-wall)"/>
-  <rect x="0" y="330" width="1200" height="270" fill="url(#fy85h-desk)"/>
-  <line x1="0" y1="330" x2="1200" y2="330" stroke="#a97a35" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M930,150 L560,560 L1140,560 Z" fill="url(#fy85h-light)" stroke-linejoin="round"/>
-  <path d="M330,520 L600,540 L600,330 L360,300 Z" fill="#e9c98a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M870,520 L600,540 L600,330 L840,300 Z" fill="#e9c98a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M342,508 L600,528 L600,318 L370,290 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M858,508 L600,528 L600,318 L830,290 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M596,320 L604,320 L604,528 L596,528 Z" fill="#c9c2b2" stroke-linejoin="round"/>
-  <ellipse cx="478" cy="410" rx="88" ry="64" fill="none" stroke="#6b7480" stroke-width="3"/>
-  <circle cx="478" cy="410" r="13" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="560" cy="384" r="9" fill="#1971c2" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="682" cy="408" r="78" fill="url(#fy85h-cloud)"/>
-  <circle cx="674" cy="421.5" r="3" fill="#1971c2"/>
-  <circle cx="678" cy="419.5" r="3" fill="#1971c2"/>
-  <circle cx="686" cy="403.5" r="3" fill="#1971c2"/>
-  <circle cx="649" cy="401.5" r="3" fill="#1971c2"/>
-  <circle cx="714" cy="432" r="3" fill="#1971c2"/>
-  <circle cx="667.5" cy="422" r="3" fill="#1971c2"/>
-  <circle cx="692.5" cy="428" r="3" fill="#1971c2"/>
-  <circle cx="666.5" cy="415" r="3" fill="#1971c2"/>
-  <circle cx="683" cy="398" r="3" fill="#1971c2"/>
-  <circle cx="674.5" cy="391" r="3" fill="#1971c2"/>
-  <circle cx="704.5" cy="384.5" r="3" fill="#1971c2"/>
-  <circle cx="668" cy="398.5" r="3" fill="#1971c2"/>
-  <circle cx="650.5" cy="401" r="3" fill="#1971c2"/>
-  <circle cx="654.5" cy="411" r="3" fill="#1971c2"/>
-  <circle cx="683.5" cy="385" r="3" fill="#1971c2"/>
-  <circle cx="676.5" cy="426.5" r="3" fill="#1971c2"/>
-  <circle cx="684" cy="406" r="3" fill="#1971c2"/>
-  <circle cx="667.5" cy="432" r="3" fill="#1971c2"/>
-  <circle cx="676.5" cy="374" r="3" fill="#1971c2"/>
-  <circle cx="689.5" cy="379.5" r="3" fill="#1971c2"/>
-  <circle cx="676" cy="408" r="3" fill="#1971c2"/>
-  <circle cx="674.5" cy="410" r="3" fill="#1971c2"/>
-  <circle cx="660.5" cy="396.5" r="3" fill="#1971c2"/>
-  <circle cx="689.5" cy="379" r="3" fill="#1971c2"/>
-  <circle cx="692" cy="405" r="3" fill="#1971c2"/>
-  <circle cx="686.5" cy="409.5" r="3" fill="#1971c2"/>
-  <circle cx="684.5" cy="408.5" r="3" fill="#1971c2"/>
-  <circle cx="666" cy="424" r="3" fill="#1971c2"/>
-  <circle cx="678" cy="383.5" r="3" fill="#1971c2"/>
-  <circle cx="681" cy="410.5" r="3" fill="#1971c2"/>
-  <circle cx="673.5" cy="390.5" r="3" fill="#1971c2"/>
-  <circle cx="691.5" cy="407.5" r="3" fill="#1971c2"/>
-  <circle cx="698.5" cy="417.5" r="3" fill="#1971c2"/>
-  <circle cx="688" cy="421" r="3" fill="#1971c2"/>
-  <circle cx="704" cy="414.5" r="3" fill="#1971c2"/>
-  <circle cx="688" cy="405.5" r="3" fill="#1971c2"/>
-  <circle cx="678" cy="412.5" r="3" fill="#1971c2"/>
-  <circle cx="696" cy="393.5" r="3" fill="#1971c2"/>
-  <circle cx="682" cy="388" r="3" fill="#1971c2"/>
-  <circle cx="689" cy="416" r="3" fill="#1971c2"/>
-  <circle cx="679" cy="367" r="3" fill="#1971c2"/>
-  <circle cx="683" cy="404" r="3" fill="#1971c2"/>
-  <circle cx="649.5" cy="389.5" r="3" fill="#1971c2"/>
-  <circle cx="680" cy="399" r="3" fill="#1971c2"/>
-  <circle cx="694.5" cy="378" r="3" fill="#1971c2"/>
-  <circle cx="675.5" cy="412.5" r="3" fill="#1971c2"/>
-  <circle cx="678.5" cy="400" r="3" fill="#1971c2"/>
-  <circle cx="715" cy="414" r="3" fill="#1971c2"/>
-  <circle cx="676.5" cy="429" r="3" fill="#1971c2"/>
-  <circle cx="668.5" cy="420" r="3" fill="#1971c2"/>
-  <circle cx="658.5" cy="407" r="3" fill="#1971c2"/>
-  <circle cx="678.5" cy="420.5" r="3" fill="#1971c2"/>
-  <circle cx="704" cy="392.5" r="3" fill="#1971c2"/>
-  <circle cx="674" cy="407.5" r="3" fill="#1971c2"/>
-  <circle cx="679" cy="390" r="3" fill="#1971c2"/>
-  <circle cx="731" cy="402" r="3" fill="#1971c2"/>
-  <circle cx="701" cy="410.5" r="3" fill="#1971c2"/>
-  <circle cx="691.5" cy="399.5" r="3" fill="#1971c2"/>
-  <circle cx="695" cy="426" r="3" fill="#1971c2"/>
-  <circle cx="616.5" cy="421.5" r="3" fill="#1971c2"/>
-  <circle cx="617.5" cy="417" r="3" fill="#1971c2"/>
-  <circle cx="691" cy="403.5" r="3" fill="#1971c2"/>
-  <circle cx="672.5" cy="412.5" r="3" fill="#1971c2"/>
-  <circle cx="722" cy="379" r="3" fill="#1971c2"/>
-  <circle cx="681.5" cy="405.5" r="3" fill="#1971c2"/>
-  <circle cx="680.5" cy="388" r="3" fill="#1971c2"/>
-  <circle cx="709.5" cy="394" r="3" fill="#1971c2"/>
-  <circle cx="690.5" cy="423" r="3" fill="#1971c2"/>
-  <circle cx="699.5" cy="388.5" r="3" fill="#1971c2"/>
-  <circle cx="709" cy="405" r="3" fill="#1971c2"/>
-  <circle cx="690" cy="414.5" r="3" fill="#1971c2"/>
-  <circle cx="680.5" cy="409.5" r="3" fill="#1971c2"/>
-  <circle cx="671" cy="424" r="3" fill="#1971c2"/>
-  <circle cx="679.5" cy="406.5" r="3" fill="#1971c2"/>
-  <circle cx="691.5" cy="436" r="3" fill="#1971c2"/>
-  <circle cx="652" cy="414.5" r="3" fill="#1971c2"/>
-  <circle cx="670.5" cy="370.5" r="3" fill="#1971c2"/>
-  <circle cx="688" cy="425.5" r="3" fill="#1971c2"/>
-  <circle cx="693" cy="419.5" r="3" fill="#1971c2"/>
-  <circle cx="684" cy="430" r="3" fill="#1971c2"/>
-  <circle cx="681" cy="409" r="3" fill="#1971c2"/>
-  <circle cx="674" cy="410" r="3" fill="#1971c2"/>
-  <circle cx="682" cy="424" r="3" fill="#1971c2"/>
-  <circle cx="681.5" cy="414" r="3" fill="#1971c2"/>
-  <circle cx="673" cy="398.5" r="3" fill="#1971c2"/>
-  <circle cx="718" cy="421.5" r="3" fill="#1971c2"/>
-  <circle cx="687" cy="430.5" r="3" fill="#1971c2"/>
-  <circle cx="704.5" cy="379.5" r="3" fill="#1971c2"/>
-  <circle cx="694" cy="388" r="3" fill="#1971c2"/>
-  <circle cx="687" cy="391.5" r="3" fill="#1971c2"/>
-  <circle cx="684" cy="413" r="3" fill="#1971c2"/>
-  <circle cx="656" cy="398" r="3" fill="#1971c2"/>
-  <circle cx="653" cy="408" r="3" fill="#1971c2"/>
-  <circle cx="701" cy="420.5" r="3" fill="#1971c2"/>
-  <circle cx="698" cy="399" r="3" fill="#1971c2"/>
-  <circle cx="684" cy="401.5" r="3" fill="#1971c2"/>
-  <circle cx="681.5" cy="422.5" r="3" fill="#1971c2"/>
-  <circle cx="687.5" cy="433" r="3" fill="#1971c2"/>
-  <circle cx="676" cy="399" r="3" fill="#1971c2"/>
-  <circle cx="692" cy="423" r="3" fill="#1971c2"/>
-  <circle cx="665" cy="473.5" r="3" fill="#1971c2"/>
-  <circle cx="694.5" cy="434.5" r="3" fill="#1971c2"/>
-  <circle cx="654.5" cy="437" r="3" fill="#1971c2"/>
-  <circle cx="719" cy="407" r="3" fill="#1971c2"/>
-  <circle cx="719" cy="409" r="3" fill="#1971c2"/>
-  <circle cx="689.5" cy="413" r="3" fill="#1971c2"/>
-  <circle cx="682" cy="434.5" r="3" fill="#1971c2"/>
-  <circle cx="715.5" cy="388.5" r="3" fill="#1971c2"/>
-  <circle cx="681" cy="395" r="3" fill="#1971c2"/>
-  <circle cx="686.5" cy="420" r="3" fill="#1971c2"/>
-  <circle cx="678" cy="432.5" r="3" fill="#1971c2"/>
-  <circle cx="686.5" cy="395.5" r="3" fill="#1971c2"/>
-  <circle cx="659" cy="363" r="3" fill="#1971c2"/>
-  <circle cx="682.5" cy="410.5" r="3" fill="#1971c2"/>
-  <circle cx="687" cy="396" r="3" fill="#1971c2"/>
-  <circle cx="694.5" cy="401" r="3" fill="#1971c2"/>
-  <circle cx="668.5" cy="406" r="3" fill="#1971c2"/>
-  <circle cx="678.5" cy="403" r="3" fill="#1971c2"/>
-  <circle cx="682.5" cy="414" r="3" fill="#1971c2"/>
-  <circle cx="657.5" cy="391.5" r="3" fill="#1971c2"/>
-  <circle cx="697.5" cy="413.5" r="3" fill="#1971c2"/>
-  <circle cx="655.5" cy="407.5" r="3" fill="#1971c2"/>
-  <circle cx="664" cy="421" r="3" fill="#1971c2"/>
-  <circle cx="718.5" cy="366.5" r="3" fill="#1971c2"/>
-  <circle cx="652" cy="410" r="3" fill="#1971c2"/>
-  <circle cx="696.5" cy="387.5" r="3" fill="#1971c2"/>
-  <circle cx="653.5" cy="435.5" r="3" fill="#1971c2"/>
-  <circle cx="686.5" cy="392.5" r="3" fill="#1971c2"/>
-  <circle cx="683.5" cy="400" r="3" fill="#1971c2"/>
-  <circle cx="681.5" cy="437" r="3" fill="#1971c2"/>
-  <circle cx="670" cy="428" r="3" fill="#1971c2"/>
-  <circle cx="698" cy="404.5" r="3" fill="#1971c2"/>
-  <circle cx="711.5" cy="396" r="3" fill="#1971c2"/>
-  <circle cx="680.5" cy="397" r="3" fill="#1971c2"/>
-  <circle cx="673" cy="404" r="3" fill="#1971c2"/>
-  <circle cx="714.5" cy="430" r="3" fill="#1971c2"/>
-  <circle cx="687" cy="420.5" r="3" fill="#1971c2"/>
-  <circle cx="679" cy="386.5" r="3" fill="#1971c2"/>
-  <circle cx="676.5" cy="396.5" r="3" fill="#1971c2"/>
-  <circle cx="653.5" cy="429.5" r="3" fill="#1971c2"/>
-  <circle cx="691.5" cy="417" r="3" fill="#1971c2"/>
-  <circle cx="667.5" cy="442" r="3" fill="#1971c2"/>
-  <circle cx="687" cy="350.5" r="3" fill="#1971c2"/>
-  <circle cx="710.5" cy="391.5" r="3" fill="#1971c2"/>
-  <circle cx="691.5" cy="415" r="3" fill="#1971c2"/>
-  <circle cx="684" cy="401" r="3" fill="#1971c2"/>
-  <circle cx="695.5" cy="382" r="3" fill="#1971c2"/>
-  <circle cx="692.5" cy="411" r="3" fill="#1971c2"/>
-  <circle cx="673.5" cy="435.5" r="3" fill="#1971c2"/>
-  <circle cx="692.5" cy="437.5" r="3" fill="#1971c2"/>
-  <circle cx="668.5" cy="374.5" r="3" fill="#1971c2"/>
-  <circle cx="674" cy="429" r="3" fill="#1971c2"/>
-  <circle cx="687.5" cy="404.5" r="3" fill="#1971c2"/>
-  <circle cx="649.5" cy="429" r="3" fill="#1971c2"/>
-  <circle cx="629.5" cy="441.5" r="3" fill="#1971c2"/>
-  <circle cx="680" cy="386.5" r="3" fill="#1971c2"/>
-  <circle cx="665.5" cy="422.5" r="3" fill="#1971c2"/>
-  <circle cx="682.5" cy="420.5" r="3" fill="#1971c2"/>
-  <circle cx="680" cy="407.5" r="3" fill="#1971c2"/>
-  <circle cx="684" cy="410" r="3" fill="#1971c2"/>
-  <circle cx="695" cy="395" r="3" fill="#1971c2"/>
-  <circle cx="656.5" cy="420.5" r="3" fill="#1971c2"/>
-  <circle cx="682.5" cy="418" r="3" fill="#1971c2"/>
-  <circle cx="658.5" cy="419" r="3" fill="#1971c2"/>
-  <circle cx="655.5" cy="372" r="3" fill="#1971c2"/>
-  <circle cx="682" cy="408" r="7" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
-  <path d="M796,408 L767.5,397 L765.5,394 L763.5,390.5 L762.5,387.5 L761.5,384 L761,380.5 L761,377 L761.5,373.5 L762.5,370 L764,366.5 L765.5,363.5 L767.5,360 L769.5,357.5 L772.5,355 L775,352.5 L778.5,350.5 L781.5,349 L785,347.5 L788.5,347 L792.5,346 L796,346 L799.5,346 L803.5,347 L807,347.5 L810.5,349 L813.5,350.5 L817,352.5 L819.5,355 L822.5,357.5 L824.5,360 L826.5,363.5 L828,366.5 L829.5,370 L830.5,373.5 L831,377 L831,380.5 L830.5,384 L829.5,387.5 L828.5,390.5 L826.5,394 L824.5,397 Z" fill="#d0e6fb" stroke="#1971c2" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M796,416 L767.5,427 L765.5,430 L763.5,433.5 L762.5,436.5 L761.5,440 L761,443.5 L761,447 L761.5,450.5 L762.5,454 L764,457.5 L765.5,460.5 L767.5,464 L769.5,466.5 L772.5,469 L775,471.5 L778.5,473.5 L781.5,475 L785,476.5 L788.5,477 L792.5,478 L796,478 L799.5,478 L803.5,477 L807,476.5 L810.5,475 L813.5,473.5 L817,471.5 L819.5,469 L822.5,466.5 L824.5,464 L826.5,460.5 L828,457.5 L829.5,454 L830.5,450.5 L831,447 L831,443.5 L830.5,440 L829.5,436.5 L828.5,433.5 L826.5,430 L824.5,427 Z" fill="#d0e6fb" stroke="#1971c2" stroke-width="3" stroke-linejoin="round"/>
-  <circle cx="796" cy="412" r="6" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
-  <path d="M1040,560 h120 v-16 q0,-12 -12,-12 h-96 q-12,0 -12,12 Z" fill="#6c757d" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M1100,532 L1060,250" fill="none" stroke="#1f2933" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M1060,250 L960,150" fill="none" stroke="#1f2933" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M990,120 L900,190 L880,165 L960,96 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <circle cx="1060" cy="250" r="10" fill="#8a96a3" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M250,560 L420,548 L428,556 L258,570 Z" fill="#ffc078" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M420,548 L446,552 L428,556 Z" fill="#d9b26a" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M120,420 h90 v110 q0,14 -14,14 h-62 q-14,0 -14,-14 Z" fill="#d0e6fb" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M210,445 q34,0 34,30 q0,30 -34,30" fill="none" stroke="#1f2933" stroke-width="5" stroke-linejoin="round"/>
+  <image href="pics/fy8/fy8-5-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Key idea
@@ -208,53 +17,20 @@ In the chapter *Light and electrons as waves and particles* we also saw that ele
 A guitar string is fixed at both ends, so only those standing waves arise in it in which the ends of the string are nodes. There are therefore only certain ways of vibrating: one antinode, two antinodes, three antinodes and so on. The electric attraction of the nucleus binds the electron, and its wave must likewise fit around the nucleus. Lasting states arise only for certain wave shapes, and each shape has its own energy. The quantisation of energy is thus not a separate assumption as in the Bohr model, but follows from the fact that a bound wave can only be a standing wave. In a string, an extra node raises the frequency of the vibration. In the hydrogen atom the energy of a state is greater the more nodes the wave has; in an atom with many electrons this holds for states of the same shape (s, p, …).
 
 <svg data-fig="string" viewBox="0 0 600 330" role="img" aria-label="Schematic figure: the first three standing waves of a string fixed at both ends. In the top one the string vibrates as one antinode and there is no node in its middle, in the middle one there is one node and two antinodes, and in the bottom one two nodes and three antinodes. No other ways of vibrating arise, because the ends of the string stay in place. The more nodes, the greater the frequency of the vibration." style="max-width:100%;font-size:24px">
-  <rect x="96" y="52" width="12" height="68" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="456" y="52" width="12" height="68" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <path d="M112,86 L115.5,85 L119,84 L122,83 L125.5,82 L129,81.5 L132.5,80.5 L136,79.5 L139,78.5 L142.5,77.5 L146,76.5 L149.5,76 L153,75 L156,74 L159.5,73 L163,72.5 L166.5,71.5 L170,70.5 L173,70 L176.5,69 L180,68.5 L183.5,67.5 L187,67 L190,66 L193.5,65.5 L197,65 L200.5,64 L204,63.5 L207,63 L210.5,62.5 L214,61.5 L217.5,61 L221,60.5 L224,60 L227.5,59.5 L231,59.5 L234.5,59 L238,58.5 L241,58 L244.5,58 L248,57.5 L251.5,57 L255,57 L258,56.5 L261.5,56.5 L265,56.5 L268.5,56 L272,56 L275,56 L278.5,56 L282,56 L285.5,56 L289,56 L292,56 L295.5,56 L299,56.5 L302.5,56.5 L306,56.5 L309,57 L312.5,57 L316,57.5 L319.5,58 L323,58 L326,58.5 L329.5,59 L333,59.5 L336.5,59.5 L340,60 L343,60.5 L346.5,61 L350,61.5 L353.5,62.5 L357,63 L360,63.5 L363.5,64 L367,65 L370.5,65.5 L374,66 L377,67 L380.5,67.5 L384,68.5 L387.5,69 L391,70 L394,70.5 L397.5,71.5 L401,72.5 L404.5,73 L408,74 L411,75 L414.5,76 L418,76.5 L421.5,77.5 L425,78.5 L428,79.5 L431.5,80.5 L435,81.5 L438.5,82 L442,83 L445,84 L448.5,85 L452,86" fill="none" stroke="#2f74b5" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M112,86 L115.5,87 L119,88 L122,89 L125.5,90 L129,90.5 L132.5,91.5 L136,92.5 L139,93.5 L142.5,94.5 L146,95.5 L149.5,96 L153,97 L156,98 L159.5,99 L163,99.5 L166.5,100.5 L170,101.5 L173,102 L176.5,103 L180,103.5 L183.5,104.5 L187,105 L190,106 L193.5,106.5 L197,107 L200.5,108 L204,108.5 L207,109 L210.5,109.5 L214,110.5 L217.5,111 L221,111.5 L224,112 L227.5,112.5 L231,112.5 L234.5,113 L238,113.5 L241,114 L244.5,114 L248,114.5 L251.5,115 L255,115 L258,115.5 L261.5,115.5 L265,115.5 L268.5,116 L272,116 L275,116 L278.5,116 L282,116 L285.5,116 L289,116 L292,116 L295.5,116 L299,115.5 L302.5,115.5 L306,115.5 L309,115 L312.5,115 L316,114.5 L319.5,114 L323,114 L326,113.5 L329.5,113 L333,112.5 L336.5,112.5 L340,112 L343,111.5 L346.5,111 L350,110.5 L353.5,109.5 L357,109 L360,108.5 L363.5,108 L367,107 L370.5,106.5 L374,106 L377,105 L380.5,104.5 L384,103.5 L387.5,103 L391,102 L394,101.5 L397.5,100.5 L401,99.5 L404.5,99 L408,98 L411,97 L414.5,96 L418,95.5 L421.5,94.5 L425,93.5 L428,92.5 L431.5,91.5 L435,90.5 L438.5,90 L442,89 L445,88 L448.5,87 L452,86" fill="none" stroke="#a9d1f0" stroke-width="3" stroke-linejoin="round" stroke-dasharray="7 5"/>
-  <line x1="112" y1="86" x2="452" y2="86" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
+  <image href="pics/fy8/fy8-5-string.webp" x="-1.3" y="1.3" width="603" height="341.7" preserveAspectRatio="none"/>
   <foreignObject x="49" y="71.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$1.$</div></foreignObject>
   <foreignObject x="482" y="71.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{0 nodes}$</div></foreignObject>
-  <rect x="96" y="152" width="12" height="68" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="456" y="152" width="12" height="68" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <path d="M112,186 L115.5,184 L119,182 L122,180.5 L125.5,178.5 L129,176.5 L132.5,175 L136,173 L139,171.5 L142.5,170 L146,168.5 L149.5,167 L153,165.5 L156,164 L159.5,163 L163,161.5 L166.5,160.5 L170,159.5 L173,159 L176.5,158 L180,157.5 L183.5,157 L187,156.5 L190,156 L193.5,156 L197,156 L200.5,156 L204,156 L207,156.5 L210.5,157 L214,157.5 L217.5,158 L221,159 L224,159.5 L227.5,160.5 L231,161.5 L234.5,163 L238,164 L241,165.5 L244.5,167 L248,168.5 L251.5,170 L255,171.5 L258,173 L261.5,175 L265,176.5 L268.5,178.5 L272,180.5 L275,182 L278.5,184 L282,186 L285.5,188 L289,190 L292,191.5 L295.5,193.5 L299,195.5 L302.5,197 L306,199 L309,200.5 L312.5,202 L316,203.5 L319.5,205 L323,206.5 L326,208 L329.5,209 L333,210.5 L336.5,211.5 L340,212.5 L343,213 L346.5,214 L350,214.5 L353.5,215 L357,215.5 L360,216 L363.5,216 L367,216 L370.5,216 L374,216 L377,215.5 L380.5,215 L384,214.5 L387.5,214 L391,213 L394,212.5 L397.5,211.5 L401,210.5 L404.5,209 L408,208 L411,206.5 L414.5,205 L418,203.5 L421.5,202 L425,200.5 L428,199 L431.5,197 L435,195.5 L438.5,193.5 L442,191.5 L445,190 L448.5,188 L452,186" fill="none" stroke="#2f74b5" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M112,186 L115.5,188 L119,190 L122,191.5 L125.5,193.5 L129,195.5 L132.5,197 L136,199 L139,200.5 L142.5,202 L146,203.5 L149.5,205 L153,206.5 L156,208 L159.5,209 L163,210.5 L166.5,211.5 L170,212.5 L173,213 L176.5,214 L180,214.5 L183.5,215 L187,215.5 L190,216 L193.5,216 L197,216 L200.5,216 L204,216 L207,215.5 L210.5,215 L214,214.5 L217.5,214 L221,213 L224,212.5 L227.5,211.5 L231,210.5 L234.5,209 L238,208 L241,206.5 L244.5,205 L248,203.5 L251.5,202 L255,200.5 L258,199 L261.5,197 L265,195.5 L268.5,193.5 L272,191.5 L275,190 L278.5,188 L282,186 L285.5,184 L289,182 L292,180.5 L295.5,178.5 L299,176.5 L302.5,175 L306,173 L309,171.5 L312.5,170 L316,168.5 L319.5,167 L323,165.5 L326,164 L329.5,163 L333,161.5 L336.5,160.5 L340,159.5 L343,159 L346.5,158 L350,157.5 L353.5,157 L357,156.5 L360,156 L363.5,156 L367,156 L370.5,156 L374,156 L377,156.5 L380.5,157 L384,157.5 L387.5,158 L391,159 L394,159.5 L397.5,160.5 L401,161.5 L404.5,163 L408,164 L411,165.5 L414.5,167 L418,168.5 L421.5,170 L425,171.5 L428,173 L431.5,175 L435,176.5 L438.5,178.5 L442,180.5 L445,182 L448.5,184 L452,186" fill="none" stroke="#a9d1f0" stroke-width="3" stroke-linejoin="round" stroke-dasharray="7 5"/>
-  <line x1="112" y1="186" x2="452" y2="186" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
-  <circle cx="282" cy="186" r="6" fill="#1f2933"/>
   <foreignObject x="49" y="171.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$2.$</div></foreignObject>
   <foreignObject x="482" y="171.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{1 node}$</div></foreignObject>
-  <rect x="96" y="252" width="12" height="68" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="456" y="252" width="12" height="68" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <path d="M112,286 L115.5,283 L119,280.5 L122,277.5 L125.5,275 L129,272.5 L132.5,270 L136,267.5 L139,265.5 L142.5,263.5 L146,261.5 L149.5,260 L153,259 L156,258 L159.5,257 L163,256.5 L166.5,256 L170,256 L173,256 L176.5,256.5 L180,257.5 L183.5,258.5 L187,259.5 L190,261 L193.5,263 L197,265 L200.5,267 L204,269 L207,271.5 L210.5,274 L214,276.5 L217.5,279.5 L221,282 L224,285 L227.5,288 L231,290.5 L234.5,293.5 L238,296 L241,299 L244.5,301.5 L248,303.5 L251.5,306 L255,308 L258,309.5 L261.5,311.5 L265,312.5 L268.5,314 L272,315 L275,315.5 L278.5,316 L282,316 L285.5,316 L289,315.5 L292,315 L295.5,314 L299,312.5 L302.5,311.5 L306,309.5 L309,308 L312.5,306 L316,303.5 L319.5,301.5 L323,299 L326,296 L329.5,293.5 L333,290.5 L336.5,288 L340,285 L343,282 L346.5,279.5 L350,276.5 L353.5,274 L357,271.5 L360,269 L363.5,267 L367,265 L370.5,263 L374,261 L377,259.5 L380.5,258.5 L384,257.5 L387.5,256.5 L391,256 L394,256 L397.5,256 L401,256.5 L404.5,257 L408,258 L411,259 L414.5,260 L418,261.5 L421.5,263.5 L425,265.5 L428,267.5 L431.5,270 L435,272.5 L438.5,275 L442,277.5 L445,280.5 L448.5,283 L452,286" fill="none" stroke="#2f74b5" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M112,286 L115.5,289 L119,291.5 L122,294.5 L125.5,297 L129,299.5 L132.5,302 L136,304.5 L139,306.5 L142.5,308.5 L146,310.5 L149.5,312 L153,313 L156,314 L159.5,315 L163,315.5 L166.5,316 L170,316 L173,316 L176.5,315.5 L180,314.5 L183.5,313.5 L187,312.5 L190,311 L193.5,309 L197,307 L200.5,305 L204,303 L207,300.5 L210.5,298 L214,295.5 L217.5,292.5 L221,290 L224,287 L227.5,284 L231,281.5 L234.5,278.5 L238,276 L241,273 L244.5,270.5 L248,268.5 L251.5,266 L255,264 L258,262.5 L261.5,260.5 L265,259.5 L268.5,258 L272,257 L275,256.5 L278.5,256 L282,256 L285.5,256 L289,256.5 L292,257 L295.5,258 L299,259.5 L302.5,260.5 L306,262.5 L309,264 L312.5,266 L316,268.5 L319.5,270.5 L323,273 L326,276 L329.5,278.5 L333,281.5 L336.5,284 L340,287 L343,290 L346.5,292.5 L350,295.5 L353.5,298 L357,300.5 L360,303 L363.5,305 L367,307 L370.5,309 L374,311 L377,312.5 L380.5,313.5 L384,314.5 L387.5,315.5 L391,316 L394,316 L397.5,316 L401,315.5 L404.5,315 L408,314 L411,313 L414.5,312 L418,310.5 L421.5,308.5 L425,306.5 L428,304.5 L431.5,302 L435,299.5 L438.5,297 L442,294.5 L445,291.5 L448.5,289 L452,286" fill="none" stroke="#a9d1f0" stroke-width="3" stroke-linejoin="round" stroke-dasharray="7 5"/>
-  <line x1="112" y1="286" x2="452" y2="286" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
-  <circle cx="225.5" cy="286" r="6" fill="#1f2933"/>
-  <circle cx="338.5" cy="286" r="6" fill="#1f2933"/>
   <foreignObject x="49" y="271.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$3.$</div></foreignObject>
   <foreignObject x="482" y="271.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{2 nodes}$</div></foreignObject>
-  <foreignObject x="253" y="215.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{node}$</span></div></foreignObject>
-  <line x1="282" y1="218" x2="282" y2="196" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="253" y="215.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{node}$</div></foreignObject>
 </svg>
 
 In an atom the wave is three-dimensional, so its nodes are surfaces, and the electron is not detected on a nodal surface. The wave of the lowest state, the $1\text{s}$ state, has no node. The states of the shell $n = 2$ have one node: in the $2\text{s}$ state it is a spherical surface around the nucleus, and in the $2\text{p}$ state a plane through the nucleus. The number in the name of the state is the principal quantum number $n$, and there are $n - 1$ nodes altogether. The letter tells the shape of the wave: an s state is spherically symmetric, and a p state has two lobes on opposite sides of the nucleus.
 
 <svg data-fig="nodes" viewBox="0 0 600 360" role="img" aria-label="Schematic figure, not to scale: cross-sections through the nucleus of three orbitals of the hydrogen atom. The 1s orbital is a sphere with no node. The 2s orbital is a sphere with a nodal sphere inside it: the electron is not detected there, and inside and outside it the wave oscillates in opposite phases. The 2p orbital has two lobes, one on each side of the nucleus, and between them a nodal plane through the nucleus. The figure shows one of the three 2p orbitals, with vertical lobes; the other two point in two other directions. The nucleus is a red dot." style="max-width:100%;font-size:24px">
-  <defs><radialGradient id="fy85-cloud"><stop offset="0" stop-color="#1971c2" stop-opacity="0.95"/><stop offset="1" stop-color="#1971c2" stop-opacity="0.12"/></radialGradient><radialGradient id="fy85-ring" r="0.5"><stop offset="0.42" stop-color="#1971c2" stop-opacity="0"/><stop offset="0.5" stop-color="#1971c2" stop-opacity="0.12"/><stop offset="0.72" stop-color="#1971c2" stop-opacity="0.55"/><stop offset="1" stop-color="#1971c2" stop-opacity="0.08"/></radialGradient></defs>
-  <line x1="200" y1="30" x2="200" y2="300" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <line x1="400" y1="30" x2="400" y2="300" stroke="#c9c2b2" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <circle cx="100" cy="150" r="48" fill="url(#fy85-cloud)"/>
-  <circle cx="100" cy="150" r="48" fill="none" stroke="#1971c2" stroke-width="2"/>
-  <circle cx="300" cy="150" r="86" fill="url(#fy85-ring)"/>
-  <circle cx="300" cy="150" r="86" fill="none" stroke="#1971c2" stroke-width="2"/>
-  <circle cx="300" cy="150" r="22" fill="url(#fy85-cloud)"/>
-  <circle cx="300" cy="150" r="34" fill="none" stroke="#6b7480" stroke-width="2"/>
-  <circle cx="300" cy="150" r="34" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="6 5"/>
-  <path d="M499.5,150 L498,150 L496.5,149.5 L494.5,149 L492.5,148.5 L490,147.5 L488,146.5 L485.5,145.5 L483,144 L480.5,142.5 L478.5,140.5 L476,138.5 L474,136 L472,133.5 L470,131 L468.5,128 L467,125 L465.5,122 L464.5,119 L464,115.5 L463,112 L463,108.5 L463,105 L463,102 L463.5,98.5 L464,95 L465,92 L466.5,88.5 L468,85.5 L469.5,82.5 L471.5,80 L474,77.5 L476,75 L479,73 L481.5,71.5 L484.5,69.5 L487.5,68.5 L490.5,67.5 L493.5,66.5 L497,66 L500,66 L503,66 L506.5,66.5 L509.5,67.5 L512.5,68.5 L515.5,69.5 L518.5,71.5 L521,73 L524,75 L526,77.5 L528.5,80 L530.5,82.5 L532,85.5 L533.5,88.5 L535,92 L536,95 L536.5,98.5 L537,102 L537,105 L537,108.5 L537,112 L536,115.5 L535.5,119 L534.5,122 L533,125 L531.5,128 L530,131 L528,133.5 L526,136 L524,138.5 L521.5,140.5 L519.5,142.5 L517,144 L514.5,145.5 L512,146.5 L510,147.5 L507.5,148.5 L505.5,149 L503.5,149.5 L502,150 L500.5,150 Z" fill="url(#fy85-cloud)" stroke="#1971c2" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M499.5,150 L498,150 L496.5,150.5 L494.5,151 L492.5,151.5 L490,152.5 L488,153.5 L485.5,154.5 L483,156 L480.5,157.5 L478.5,159.5 L476,161.5 L474,164 L472,166.5 L470,169 L468.5,172 L467,175 L465.5,178 L464.5,181 L464,184.5 L463,188 L463,191.5 L463,195 L463,198 L463.5,201.5 L464,205 L465,208 L466.5,211.5 L468,214.5 L469.5,217.5 L471.5,220 L474,222.5 L476,225 L479,227 L481.5,228.5 L484.5,230.5 L487.5,231.5 L490.5,232.5 L493.5,233.5 L497,234 L500,234 L503,234 L506.5,233.5 L509.5,232.5 L512.5,231.5 L515.5,230.5 L518.5,228.5 L521,227 L524,225 L526,222.5 L528.5,220 L530.5,217.5 L532,214.5 L533.5,211.5 L535,208 L536,205 L536.5,201.5 L537,198 L537,195 L537,191.5 L537,188 L536,184.5 L535.5,181 L534.5,178 L533,175 L531.5,172 L530,169 L528,166.5 L526,164 L524,161.5 L521.5,159.5 L519.5,157.5 L517,156 L514.5,154.5 L512,153.5 L510,152.5 L507.5,151.5 L505.5,151 L503.5,150.5 L502,150 L500.5,150 Z" fill="url(#fy85-cloud)" stroke="#1971c2" stroke-width="2" stroke-linejoin="round"/>
-  <line x1="420" y1="150" x2="580" y2="150" stroke="#6b7480" stroke-width="2" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <circle cx="100" cy="150" r="6" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
-  <circle cx="300" cy="150" r="6" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
-  <circle cx="500" cy="150" r="6" fill="#c92a2a" stroke="#ffffff" stroke-width="1.5"/>
+  <image href="pics/fy8/fy8-5-nodes.webp" x="0" y="0" width="600" height="368.8" preserveAspectRatio="none"/>
   <foreignObject x="83.5" y="261.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{1s}$</div></foreignObject>
   <foreignObject x="25" y="301.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{no node}$</div></foreignObject>
   <foreignObject x="283.5" y="261.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{2s}$</div></foreignObject>

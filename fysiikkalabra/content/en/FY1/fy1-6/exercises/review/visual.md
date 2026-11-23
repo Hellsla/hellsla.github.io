@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6b9dd01c8f2c35d6
+CONTENT-HASH: bfb82ec10be5d89c
 
 ## Blocking
 - none
@@ -8,7 +8,8 @@ CONTENT-HASH: 6b9dd01c8f2c35d6
 - none
 
 ## Checked
-Delta (md-paragraphs, solutions.md only; captures current for this hash, content/en/FY1/fy1-6/review/shots/). Opened open-exercises L3-2 (6-19), L3-4 (6-21 filter-paper Principle split), L3-6 (clock-zero task, Principle split around a display formula). Paragraph breaks render as separate paragraphs inside each solution step; step labels, equals alignment and formulas unchanged; no gaps, clipping or overflow. The other split steps (two-gate, fit-by-eye, offset line) use the same component and were not individually opened.
+- delta 8g (Kaava steps as aligned display blocks), economical sample from the lesson's review/shots (current for this hash): fi fy1-5 open-exercises-L3-1280-4 (seven rows), fi fy1-6 L3-1280-7 (five rows with a subscripted left side), en fy1-1 L3-1280-4 and fy1-3 L3-1280-3 (Substitution blocks), fi-easy fy1-7 L3-1280-5 (five single-relation rows).
+- Rows align at the relation sign, fractions and subscripts legible, no clipping or overflow, blocks sit apart from the text, trailing sentences read as their own line; Muunnokset/Sijoitus/Vastaus/Reasonableness survived. This lesson's own capture was not opened; judged from the sampled blocks, which use the same shared component. No figures in the delta.
 
 ## Scores
-illustrations 5 · typography 4 · English 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

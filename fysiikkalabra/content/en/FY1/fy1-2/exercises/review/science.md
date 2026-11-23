@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0d4d9d3c45daf76b
+CONTENT-HASH: 6929ceaecaea8a2b
 
 ## Blocking
 - none
@@ -8,11 +8,9 @@ CONTENT-HASH: 0d4d9d3c45daf76b
 - none
 
 ## Checked
-- Hash (--exercises --lang en) 0d4d9d3c45daf76b at start and end.
-- Independent recompute: 1 mg / 1 kg = 1e-6 = 1e-4 % = answers.py 0.0001 = exercises.json answer; unit %, tolerance 0.02.
-- BIPM drift 25 µg = 2.5e-8 kg → 2.5e-6 %; ratio 1 mg / 25 µg = 40, as stated.
-- Planck constant 6.626 070 15·10^-34 J s exact; the kilogram follows from h with the metre and second definitions: correct.
-- Reason for redefinition (drift of the copies, the IPK exactly 1 kg by definition, so no one knows which object changes) is correct physics and matches the Finnish version (1889, 2018, 1989–1991 verification, median 25 µg).
-- Part d) keeps definition and measurement uncertainty apart (resolution, calibration, conditions): consistent with the guardrails' terms.
-- One significant figure justified by the 1 mg datum; reasonableness check (one millionth = 0.0001 %) is a real check.
-- Inside FY1 scope (SI system, prefixes, relative change).
+- Delta (work queue 8g): only the Formula steps of solutions.md changed (aligned blocks from the basic equation); every other changed line in the diff is a paragraph split or spacing, no number, sign or unit changed.
+- Each new Formula block checked line by line: every equality and rearrangement is algebraically valid and leads to the formula the unchanged Substitution uses.
+- Script comparison with the Finnish Kaava steps (which passed science review): same number of aligned rows, inequalities and numerals in every solution.
+- answers.py and exercises.json values not in the diff; answers, units and tolerances unchanged from the passed version.
+- Hash recomputed at start and end with --exercises --lang en: unchanged.
+- 2d = ct (echo), P = E/t, V = qt, unit conversions (km^2, knot) rewritten correctly; dimensional-analysis step only lost a full stop.

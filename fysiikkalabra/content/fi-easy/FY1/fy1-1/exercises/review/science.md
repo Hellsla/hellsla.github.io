@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 975837ebd5d3d00b
-SCOPE: delta added-exercise from 53e65cceaa271704 base 81db4a6fd727
+CONTENT-HASH: 38d1b5f602474f97
 
 ## Blocking
 - none
@@ -9,9 +8,10 @@ SCOPE: delta added-exercise from 53e65cceaa271704 base 81db4a6fd727
 - none
 
 ## Checked
-- fy1-1-L1-10: MAFY values right (Sun mean radius 695 700 km, the IAU nominal value; Earth equatorial radius 6 378 km); k = d_A/d_M = r_A/r_M, the factor 2 cancels, stated in symbols before substitution.
-- Recomputed independently: 695 700 / 6 378 = 109,08; answers.py and exercises.json agree; unit "kertaa" (dimensionless ratio) fine.
-- Tolerance 0,04: an answer of 109 or 110 is accepted; three significant figures justified by the table values.
-- Reasonableness check (10^5 km / 10^3 km ~ 10^2) is a real order-of-magnitude check, as the lesson teaches.
-- Inside FY1 scope (ratio of sizes, powers of ten); notation k, d_suurempi/d_pienempi as in the brief.
-- Same numbers, answer, unit and tolerance as the Finnish original (content/fi).
+- fy1-1-L2-04: V ∝ d³ stated before the ratio; L3-01 proportion r_malli/r = d_malli/d_M correct; L1-09 feedback change is spacing only.
+- s = ct, s = Nh, h = dN rows rearranged correctly; FY1 scope kept.
+- Delta: every changed Kaava step checked against the old one: the new rows start from the basic equation (definition or ratio) and solve symbolically to the same final form the Sijoitus substitutes into; no sign, symbol or condition changed.
+- Numeric tokens of the removed and added lines compared by script: no number lost or changed (only added exponents or symbols of the new rows).
+- answer, unit and tolerance of every exercise identical to the Finnish set (content/fi), all ids present; answers.py rerun, every answer within rounding of its json value (unchanged since the passed version).
+- Paragraph splits of Mallivastaus/Vastaus/Periaate texts: same sentences, same numbers.
+- Teacher-approved pictures and figures in the diff not re-judged (teacher-figure).

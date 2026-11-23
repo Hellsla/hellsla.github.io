@@ -55,7 +55,7 @@ Tuuli pyörittää voimalan roottoria, ja roottorin akseli pyörittää generaat
 
 **Teho** kertoo, kuinka paljon energiaa muuntuu tai siirtyy aikayksikössä: $P = \dfrac{\Delta E}{\Delta t}$. Voimalan **sähköteho** on energia, jonka generaattori siirtää kuormaan sekunnissa. [[apua:fy2-3|Teho]]
 
-Sähkötehoa ei yleensä lueta suoraan mittarista, vaan se lasketaan kahdesta mitattavasta suureesta. **Sähkövirta** $I$ kertoo, kuinka paljon sähkövarausta kulkee kuorman läpi sekunnissa. Sen yksikkö on ampeeri, $1\ \text{A} = 1\ \text{C/s}$, missä coulomb $\text{C}$ on varauksen yksikkö. **Jännite** $U$ kertoo, kuinka paljon energiaa varaus luovuttaa kuormaan varausyksikköä kohti. Sen yksikkö on voltti, $1\ \text{V} = 1\ \text{J/C}$. Kun jännite ja sähkövirta kerrotaan, saadaan kuormaan sekunnissa siirtyvä energia eli sähköteho:
+Sähkötehoa ei yleensä lueta suoraan mittarista, vaan se lasketaan kahdesta mitattavasta suureesta. **Sähkövirta** $I$ kertoo, kuinka paljon sähkövarausta kulkee kuorman läpi sekunnissa. Sen yksikkö on ampeeri, $1\,\text{A} = 1\,\text{C/s}$, missä coulomb $\text{C}$ on varauksen yksikkö. **Jännite** $U$ kertoo, kuinka paljon energiaa varaus luovuttaa kuormaan varausyksikköä kohti. Sen yksikkö on voltti, $1\,\text{V} = 1\,\text{J/C}$. Kun jännite ja sähkövirta kerrotaan, saadaan kuormaan sekunnissa siirtyvä energia eli sähköteho:
 
 ```latex
 P = UI
@@ -150,7 +150,7 @@ Laskuihin ja kuvaajaan käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran oh
 
 ## Epävarmuus ja luotettavuus
 
-Arvioi tehon epävarmuus $\Delta P$ jokaisessa mittauspisteessä, vähintään parhaassa pisteessä ja sen naapuripisteissä, jotta voit verrata pisteiden välisiä eroja epävarmuuteen. Ilmoita sähköteho epävarmuuksineen ainakin sillä tekijän arvolla, jolla voimala toimi parhaiten, muodossa $P = (P \pm \Delta P)\ \text{W}$, ja perustele, miten arvioit epävarmuuden.
+Arvioi tehon epävarmuus $\Delta P$ jokaisessa mittauspisteessä, vähintään parhaassa pisteessä ja sen naapuripisteissä, jotta voit verrata pisteiden välisiä eroja epävarmuuteen. Ilmoita sähköteho epävarmuuksineen ainakin sillä tekijän arvolla, jolla voimala toimi parhaiten, muodossa $P = (P \pm \Delta P)\,\text{W}$, ja perustele, miten arvioit epävarmuuden.
 
 ::: tuki OO
 Tehon epävarmuuden voit arvioida näin:
@@ -186,7 +186,7 @@ Kuinka suuri osa tuulen tehosta muuttuu sähköksi? Roottorin läpi virtaavan tu
 P_\text{tuuli} = \tfrac{1}{2}\rho A v^3
 ```
 
-missä $\rho$ on ilman tiheys (huoneilmassa noin $1{,}2\ \text{kg/m}^3$; tiheys riippuu lämpötilasta ja ilmanpaineesta), $A = \pi r^2$ roottorin pyyhkäisemä pinta-ala, $r$ roottorin säde eli etäisyys navan keskeltä lavan kärkeen ja $v$ tuulen nopeus. Malli olettaa, että tuuli puhaltaa kohtisuoraan roottoria kohti ja sen nopeus on sama koko pinta-alalla. Nopeus $v$ on tuulen nopeus ennen kuin roottori hidastaa ilmaa. [[apua:fy4-15|Tuulivoimalan teho]]
+missä $\rho$ on ilman tiheys (huoneilmassa noin $1{,}2\,\text{kg/m}^3$; tiheys riippuu lämpötilasta ja ilmanpaineesta), $A = \pi r^2$ roottorin pyyhkäisemä pinta-ala, $r$ roottorin säde eli etäisyys navan keskeltä lavan kärkeen ja $v$ tuulen nopeus. Malli olettaa, että tuuli puhaltaa kohtisuoraan roottoria kohti ja sen nopeus on sama koko pinta-alalla. Nopeus $v$ on tuulen nopeus ennen kuin roottori hidastaa ilmaa. [[apua:fy4-15|Tuulivoimalan teho]]
 
 <svg data-fig="swept" viewBox="0 0 600 340" role="img" aria-label="Kaaviokuva. Vasemmalla roottori edestä: kolmen lavan kärjet piirtävät pyöriessään katkoviivalla merkityn ympyrän. Ympyrän säde r on etäisyys navan keskeltä lavan kärkeen, ja ympyrän pinta-ala on roottorin pyyhkäisemä pinta-ala A, joka on pii kertaa r toiseen. Oikealla sama roottori sivulta: kolme sinistä nopeusnuolta v osoittaa vasemmalta kohti roottoria, kohtisuoraan roottorin tasoa vastaan." style="max-width:100%;font-size:24px">
   <image href="pics/fy10/fy10-tuulivoimala-swept.webp" x="1.2" y="0" width="597" height="345.8" preserveAspectRatio="none"/>

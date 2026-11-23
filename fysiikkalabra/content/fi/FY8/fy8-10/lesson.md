@@ -3,68 +3,7 @@
 > **Miksi** helium-4-atomi on kevyempi kuin kaksi vetyatomia ja kaksi neutronia yhteensä, vaikka se koostuu juuri niistä?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: laboratorion pöydällä on vanhanaikainen vaaka. Vasemmassa, alempana olevassa vaakakupissa on erillään kaksi punaista protonia ja kaksi harmaata neutronia. Oikeassa, ylempänä olevassa kupissa samat neljä hiukkasta ovat tiiviisti yhdessä heliumytimenä, joka hehkuu ja lähettää kaksi oranssia fotonia. Erilliset hiukkaset painavat enemmän kuin niistä koottu ydin." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy810h-floor" gradientUnits="userSpaceOnUse" x1="0" y1="470" x2="0" y2="600"><stop offset="0" stop-color="#e3dccb"/><stop offset="1" stop-color="#c9c2b2"/></linearGradient><linearGradient id="fy810h-table" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="470" fill="#f6f1e6"/>
-  <line x1="0" y1="0" x2="0" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="75" y1="0" x2="75" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="150" y1="0" x2="150" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="225" y1="0" x2="225" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="300" y1="0" x2="300" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="375" y1="0" x2="375" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="450" y1="0" x2="450" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="525" y1="0" x2="525" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="600" y1="0" x2="600" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="675" y1="0" x2="675" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="750" y1="0" x2="750" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="825" y1="0" x2="825" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="900" y1="0" x2="900" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="975" y1="0" x2="975" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1050" y1="0" x2="1050" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1125" y1="0" x2="1125" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1200" y1="0" x2="1200" y2="470" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="0" x2="1200" y2="0" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="75" x2="1200" y2="75" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="150" x2="1200" y2="150" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="225" x2="1200" y2="225" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="300" x2="1200" y2="300" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="375" x2="1200" y2="375" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="0" y1="450" x2="1200" y2="450" stroke="#e3dccb" stroke-width="2" stroke-linecap="butt"/>
-  <rect x="0" y="470" width="1200" height="130" fill="url(#fy810h-floor)"/>
-  <ellipse cx="95" cy="588" rx="30" ry="5" fill="#6b7480" fill-opacity="0.3"/>
-  <ellipse cx="1105" cy="588" rx="30" ry="5" fill="#6b7480" fill-opacity="0.3"/>
-  <rect x="40" y="470" width="1120" height="40" rx="4" fill="url(#fy810h-table)" stroke="#1f2933" stroke-width="3"/>
-  <path d="M50,480 q280,-2.5 560,0 t540,0" fill="none" stroke="#a97a35" stroke-width="1.5" stroke-linejoin="round" stroke-opacity="0.6"/>
-  <path d="M50,490 q280,-2.5 560,0 t540,0" fill="none" stroke="#a97a35" stroke-width="1.5" stroke-linejoin="round" stroke-opacity="0.6"/>
-  <path d="M50,500 q280,-2.5 560,0 t540,0" fill="none" stroke="#a97a35" stroke-width="1.5" stroke-linejoin="round" stroke-opacity="0.6"/>
-  <rect x="80" y="510" width="30" height="76" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <rect x="1090" y="510" width="30" height="76" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <path d="M520,470 L680,470 L650,440 L550,440 Z" fill="#8a96a3" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="588" y="170" width="24" height="272" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <path d="M300.5,190 L898,132.5 L899.5,150 L302,207.5 Z" fill="#6c757d" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <circle cx="600" cy="170" r="16" fill="#8a96a3" stroke="#1f2933" stroke-width="3"/>
-  <path d="M593,184 L607,184 L596.5,290 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <line x1="301.5" y1="207" x2="196.5" y2="374" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="301.5" y1="207" x2="406.5" y2="374" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M176.5,374 Q301.5,444 426.5,374 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <circle cx="301.5" cy="207" r="7" fill="#1f2933"/>
-  <line x1="898.5" y1="149" x2="793.5" y2="316" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="898.5" y1="149" x2="1003.5" y2="316" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M773.5,316 Q898.5,386 1023.5,316 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <circle cx="898.5" cy="149" r="7" fill="#1f2933"/>
-  <circle cx="223.5" cy="350" r="24" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="275.5" cy="356" r="24" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="327.5" cy="356" r="24" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="379.5" cy="350" r="24" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="898.5" cy="276" r="66" fill="#ffc078"/>
-  <circle cx="898.5" cy="276" r="52" fill="#f6f1e6"/>
-  <circle cx="878.5" cy="256" r="22" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="919" cy="256" r="22" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="878.5" cy="296.5" r="22" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="919" cy="296.5" r="22" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
-  <polyline points="956.5,224 958,223.5 960.5,223.5 962.5,223.5 964,223 964,221 963,217.5 961.5,214 960.5,211.5 961,209.5 962.5,209 965.5,210 969,211 972.5,212.5 975.5,213 977,212.5 977.5,211 976.5,208 975,204.5 973.5,201 972.5,198 973,196.5 975,196 977.5,196.5 981.5,198 985,199.5 987.5,200 989.5,199.5 990,198 989,195 987.5,191.5 986,188 985,185 985.5,183.5 987,183 990,183.5 993.5,185 997,186 1000,187 1002,186.5 1002,184.5 1001.5,182 999.5,178.5 998,175 997.5,172 997.5,170 999.5,170 1002.5,170.5 1006,172 1009.5,173 1012.5,173.5 1014,173.5 1014.5,171.5 1013.5,168.5 1012,165 1010.5,161.5 1009.5,159 1010,157 1011.5,156.5 1014.5,157.5 1018,158.5 1022,160 1024.5,160.5 1026.5,160 1026.5,158.5 1026,155.5 1024.5,152 1023,148.5 1022,145.5 1022.5,144 1024,143.5 1027,144 1030.5,145.5 1033,146 1034.5,145 1035,143.5 1035,141.5" fill="none" stroke="#e8590c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M1048.5,126 L1042,147.5 L1027.5,134 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <polyline points="840.5,224 840.5,222.5 841,220.5 841.5,218.5 841,216.5 839,216 835.5,217 832,217.5 829,217.5 827.5,217 827.5,215 828.5,212.5 830.5,209.5 832.5,206 834,203.5 834,201.5 832.5,201 829.5,201 825.5,202 822,202.5 819,202.5 817.5,202 817.5,200 818.5,197.5 820.5,194.5 822.5,191 824,188.5 824,186.5 822.5,186 819.5,186 815.5,187 812,187.5 809,187.5 807.5,187 807.5,185 808.5,182.5 810.5,179.5 812.5,176 814,173.5 814,171.5 812.5,171 809.5,171 805.5,172 802,172.5 799,172.5 797.5,172 797.5,170 798.5,167.5 800.5,164.5 803,161 804,158.5 804,156.5 802.5,156 799.5,156 795.5,157 792,157.5 789,157.5 787.5,157 787.5,155 788.5,152.5 790.5,149.5 793,146 794,143.5 794,141.5 792.5,141 789.5,141 785.5,142 782,142.5 779,142.5 778.5,141 779.5,139 780.5,136.5 780.5,134.5 780,133" fill="none" stroke="#e8590c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M768.5,116 L788,127.5 L771.5,138.5 Z" fill="#e8590c" stroke-linejoin="round"/>
+  <image href="pics/fy8/fy8-10-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Ydinajatus
@@ -140,22 +79,11 @@ $$ on ytimen **massavaje** $\Delta m$, noin $0{,}76\,\%$ atomin massasta. Vetyat
 Massavaje ei ole kadonnutta ainetta. Einsteinin suhteellisuusteorian mukaan massa ja energia ovat **ekvivalentit**: kappaleen energian muutos $\Delta E$ muuttaa sen massaa määrällä $\tfrac{\Delta E}{c^2}$, missä $c$ on valon nopeus. Kun protonit ja neutronit sitoutuvat ytimeksi, vahva vuorovaikutus vetää ne yhteen ja energiaa vapautuu, esimerkiksi gammafotoneina. Syntyneen ytimen energia ja siksi myös massa on pienempi kuin erillisten nukleonien. Sama energia tarvitaan, jos ydin hajotetaan takaisin erillisiksi nukleoneiksi. Tämä energia on ytimen **sidosenergia** $E_\text{B}$.
 
 <svg data-fig="energia" viewBox="0 0 600 345" role="img" aria-label="Kaavakuva, ei mittakaavassa: energiatasot. Ylempi vaakaviiva on erillisten protonien ja neutronien energia: sen päällä on kaksi punaista protonia ja kaksi harmaata neutronia erillään. Alempi vaakaviiva on helium-4-ytimen energia: sen päällä samat neljä nukleonia tiiviisti yhdessä. Vasemmalla oranssi nuoli ylöspäin: ytimen hajottaminen nukleoneiksi vaatii sidosenergian E B. Oikealla oranssi nuoli alaspäin: kun ydin muodostuu, sama energia vapautuu. Tasojen väliin on kirjoitettu E B = Δm c²." style="max-width:100%;font-size:24px">
+  <image href="pics/fy8/fy8-10-energia.webp" x="0" y="0" width="600" height="355" preserveAspectRatio="none"/>
   <foreignObject x="136.5" y="25.5" width="357" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{erilliset protonit ja neutronit}$</div></foreignObject>
-  <line x1="140" y1="112" x2="490" y2="112" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <circle cx="205" cy="92" r="17" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="275" cy="92" r="17" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="355" cy="92" r="17" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="425" cy="92" r="17" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <line x1="140" y1="285" x2="490" y2="285" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <circle cx="301" cy="240" r="15" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="329" cy="240" r="15" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="301" cy="268" r="15" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="329" cy="268" r="15" fill="#c92a2a" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="259" y="301.5" width="112" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ydin}\ {}^{4}_{2}\text{He}$</div></foreignObject>
   <foreignObject x="261" y="135.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$E_\text{B} = \Delta m\,c^2$</div></foreignObject>
-  <path d="M102,282 L102,140 L110,140 L95,116 L80,140 L88,140 L88,282 Z" fill="#e8590c" stroke-linejoin="round"/>
   <foreignObject x="118" y="185.5" width="149" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{tarvitaan}\ E_\text{B}$</div></foreignObject>
-  <path d="M531,116 L531,258 L523,258 L538,282 L553,258 L545,258 L545,116 Z" fill="#e8590c" stroke-linejoin="round"/>
   <foreignObject x="378" y="185.5" width="137" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$\text{vapautuu}\ E_\text{B}$</div></foreignObject>
 </svg>
 

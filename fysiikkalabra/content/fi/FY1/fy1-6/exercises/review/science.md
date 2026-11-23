@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 168f21fdc9f07e20
-SCOPE: delta added-exercise from cbd7c30a036d9d76 base 81db4a6fd727
+CONTENT-HASH: 3adb43b8f927fac3
 
 ## Blocking
 - none
@@ -9,9 +8,15 @@ SCOPE: delta added-exercise from cbd7c30a036d9d76 base 81db4a6fd727
 - none
 
 ## Checked
-- fy1-6-L1-09 only (delta, added exercise); hash the same at start and end.
-- Recomputed independently: v = gt = 1,62 m/s² · 3,0 s = 4,86 m/s (key 4.866 from MAFY 1,622 m/s²).
-- MAFY Moon surface free-fall acceleration 1,62 m/s² is right; the hint names the right table (Aurinkokunta).
-- Conditions: the task states both that the hammer falls from rest and that there is no air resistance, so v = gt holds. This is the chapter's own model.
-- Rounding: 4,9 m/s, two figures as in t = 3,0 s, is justified; it is 0,7 % from the key, inside the tolerance 0,04.
-- Reasonableness: about one sixth of the Earth value of 29,4 m/s, which is a real check.
+- Round-1 Blocking fixed: the three Kaava steps that had been shifted by one task are back with their own tasks.
+  - L2-04 (solutions.md:87) is $g = \dfrac{\Delta v}{\Delta t} = \dfrac{v_2 - v_1}{t_2 - t_1}$, which is the form its Sijoitus uses.
+  - L3-01 (:97) is $v_1 = gt$, $v_2 = gt$, $\dfrac{v_2}{v_1} = \dfrac{gt}{gt} = 1$.
+  - L3-02 (:107) is $g = \dfrac{\Delta v}{\Delta t} = \dfrac{v_1}{t_1}$, $v_2 = g t_2$, $t_2 = \dfrac{v_2}{g}$. It solves for the asked $t_2$ before the Sijoitus.
+  - $\Delta v = v_1$ needs the stone to start from rest, and the Annettu states that it does.
+- The en and fi-easy versions got the same three corrections.
+- I recomputed the numbers myself and they agree with answers.py:
+  - L2-04: $19{,}6/2{,}0 = 9{,}8\,\text{m/s}^2$;
+  - L3-01: ratio $1{,}0$;
+  - L3-02: $g = 3{,}70\,\text{m/s}^2$, $t_2 = 8{,}108\,\text{s}$, given as $8{,}1\,\text{s}$.
+- The other changed steps are unchanged since round 1 and correct as judged then.
+- The hash was 3adb43b8f927fac3 at the start and at the end.

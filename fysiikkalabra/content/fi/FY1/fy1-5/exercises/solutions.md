@@ -2,7 +2,7 @@
 **Annettu:** nopeus $v = 5{,}5\,\text{m/s}$, aika $t = 20\,\text{s}$
 **Kysytty:** kuljettu matka $\Delta s$ metreinä
 **Periaate:** Nopeus on vakio, joten liike on tasaista, ja matka on suoraan verrannollinen aikaan.
-**Kaava:** $\Delta s = vt$
+**Kaava:** $$\begin{aligned} v &= \dfrac{\Delta s}{t} \\ \Delta s &= vt \end{aligned}$$
 **Muunnokset:** Ei tarvita: nopeus on m/s ja aika sekunteina, joten tulo on metreinä.
 **Sijoitus:** $\Delta s = 5{,}5\,\tfrac{\text{m}}{\text{s}} \cdot 20\,\text{s} = 110\,\text{m}$
 **Vastaus:** $110\,\text{m}$, kaksi merkitsevää numeroa kuten nopeudessa $5{,}5\,\text{m/s}$.
@@ -12,7 +12,7 @@
 **Annettu:** matka $\Delta s = 360\,\text{m}$, aika $t = 45\,\text{s}$; liike on tasaista
 **Kysytty:** nopeus $v$ yksikössä m/s
 **Periaate:** Tasaisessa liikkeessä nopeus on kuljettu matka jaettuna siihen kuluneella ajalla.
-**Kaava:** $\Delta s = vt$, josta $v = \dfrac{\Delta s}{t}$
+**Kaava:** $$\begin{aligned} \Delta s &= vt \\ v &= \dfrac{\Delta s}{t} \end{aligned}$$
 **Muunnokset:** Ei tarvita: matka on metreinä ja aika sekunteina.
 **Sijoitus:** $v = \dfrac{360\,\text{m}}{45\,\text{s}} = 8{,}0\,\tfrac{\text{m}}{\text{s}}$
 **Vastaus:** $8{,}0\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajassa $45\,\text{s}$.
@@ -23,7 +23,7 @@
 **Kysytty:** aika $t$ sekunteina, kun matka on $150\,\text{m}$
 **Periaate:** Suora viiva origosta tarkoittaa tasaista liikettä, ja viivan kulmakerroin on nopeus. Kun nopeus tunnetaan, aika kuvaajan ulkopuolellekin saadaan jakamalla matka nopeudella.
 **Kuvaajan lukeminen:** Viiva kulkee ruudukon risteyksen kautta, jossa $t_1 = 0\,\text{s}$ ja $s_1 = 0\,\text{m}$ (origo), sekä risteyksen kautta, jossa $t_2 = 8\,\text{s}$ ja $s_2 = 20\,\text{m}$. Muut risteykset ovat esimerkiksi $(4\,\text{s};\,10\,\text{m})$ ja $(10\,\text{s};\,25\,\text{m})$. Lukema on tarkka ruudukosta, joten vastauksen hyväksytään poikkeavan korkeintaan $3\,\%$.
-**Kaava:** $v = \dfrac{\Delta s}{\Delta t}$ ja $s = vt$, josta $t = \dfrac{s}{v}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{\Delta s}{\Delta t} \\ s &= vt \\ t &= \dfrac{s}{v} \end{aligned}$$
 **Muunnokset:** Ei tarvita: matka on metreinä ja aika sekunteina.
 **Sijoitus:** $v = \dfrac{20\,\text{m} - 0\,\text{m}}{8\,\text{s} - 0\,\text{s}} = 2{,}5\,\dfrac{\text{m}}{\text{s}}$ ja $t = \dfrac{150\,\text{m}}{2{,}5\,\frac{\text{m}}{\text{s}}} = 60\,\text{s}$
 **Vastaus:** $60\,\text{s}$ eli yksi minuutti; nopeus on luettu kahdella merkitsevällä numerolla, joten vastaus on annettu samalla tarkkuudella.
@@ -33,7 +33,7 @@
 **Annettu:** $s_1 = 18\,\text{m}$ ajassa $t_1 = 4{,}0\,\text{s}$; kysytty aika $t_2 = 10\,\text{s}$; liike alkaa lähtöpisteestä, joten $s_0 = 0$
 **Kysytty:** matka $s_2$ ajassa $t_2$ metreinä
 **Periaate:** Liike on tasaista ja alkaa nollakohdasta, joten matka on suoraan verrannollinen aikaan: suhde $s : t$ on molemmilla ajoilla sama.
-**Kaava:** $\dfrac{s_2}{t_2} = \dfrac{s_1}{t_1}$, josta $s_2 = s_1\,\dfrac{t_2}{t_1}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{s_1}{t_1} \\ v &= \dfrac{s_2}{t_2} \\ \dfrac{s_1}{t_1} &= \dfrac{s_2}{t_2} \\ s_2 &= s_1\,\dfrac{t_2}{t_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: ajat ovat sekunteina, ja sekunnit supistuvat.
 **Sijoitus:** $s_2 = 18\,\text{m} \cdot \dfrac{10\,\text{s}}{4{,}0\,\text{s}} = 45\,\text{m}$
 **Vastaus:** $45\,\text{m}$, kaksi merkitsevää numeroa kuten matkassa $18\,\text{m}$.
@@ -43,7 +43,7 @@
 **Annettu:** hetkellä $t_1 = 2{,}0\,\text{s}$ paikka $s_1 = 7{,}0\,\text{m}$ ja hetkellä $t_2 = 6{,}0\,\text{s}$ paikka $s_2 = 21\,\text{m}$; liike on tasaista
 **Kysytty:** nopeus $v$ yksikössä m/s
 **Periaate:** Tasaisessa liikkeessä nopeus on vakio, joten se on paikan muutos jaettuna aikavälillä. Alkupaikalla ei ole väliä, koska se kumoutuu erotuksessa.
-**Kaava:** $v = \dfrac{\Delta s}{\Delta t} = \dfrac{s_2 - s_1}{t_2 - t_1}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{\Delta s}{\Delta t} \\ &= \dfrac{s_2 - s_1}{t_2 - t_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: paikat ovat metreinä ja ajat sekunteina.
 **Sijoitus:** $v = \dfrac{21\,\text{m} - 7{,}0\,\text{m}}{6{,}0\,\text{s} - 2{,}0\,\text{s}} = \dfrac{14\,\text{m}}{4{,}0\,\text{s}} = 3{,}5\,\tfrac{\text{m}}{\text{s}}$
 **Vastaus:** $3{,}5\,\text{m/s}$, kaksi merkitsevää numeroa kuten paikoissa $7{,}0\,\text{m}$ ja ajoissa $2{,}0\,\text{s}$.
@@ -53,7 +53,7 @@
 **Annettu:** nopeus $v = 54\,\text{km/h}$, aika $t = 14\,\text{s}$
 **Kysytty:** matka $\Delta s$ metreinä
 **Periaate:** Auto ajaa vakionopeudella, joten liike on tasaista ja $\Delta s = vt$. Nopeus ja aika täytyy saada yhteensopiviin yksiköihin.
-**Kaava:** $\Delta s = vt$
+**Kaava:** $$\begin{aligned} v &= \dfrac{\Delta s}{t} \\ \Delta s &= vt \end{aligned}$$
 **Muunnokset:** sijoitetaan $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{h} = 3600\,\text{s}$: $v = 54\,\text{km/h} = \dfrac{54\cdot1000\,\text{m}}{3600\,\text{s}} = 15\,\text{m/s}$.
 **Sijoitus:** $\Delta s = 15\,\tfrac{\text{m}}{\text{s}} \cdot 14\,\text{s} = 210\,\text{m}$
 **Vastaus:** $210\,\text{m}$, kaksi merkitsevää numeroa kuten nopeudessa $54\,\text{km/h}$ ja ajassa $14\,\text{s}$.
@@ -63,7 +63,7 @@
 **Annettu:** nopeus $v = 36\,\text{km/h}$, matka $\Delta s = 4{,}5\,\text{km}$; liike on tasaista
 **Kysytty:** aika $t$ sekunteina
 **Periaate:** Linja-auto ajaa vakionopeudella, joten matka on verrannollinen aikaan ja aika on matka jaettuna nopeudella.
-**Kaava:** $\Delta s = vt$, josta $t = \dfrac{\Delta s}{v}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{\Delta s}{t} \\ vt &= \Delta s \\ t &= \dfrac{\Delta s}{v} \end{aligned}$$
 **Muunnokset:** $v = 36\,\text{km/h} = \dfrac{36\cdot1000\,\text{m}}{3600\,\text{s}} = 10\,\text{m/s}$ ja $\Delta s = 4{,}5\,\text{km} = 4500\,\text{m}$.
 **Sijoitus:** $t = \dfrac{4500\,\text{m}}{10\,\tfrac{\text{m}}{\text{s}}} = 450\,\text{s}$
 **Vastaus:** $450\,\text{s}$, kaksi merkitsevää numeroa kuten tiedoissa $36\,\text{km/h}$ ja $4{,}5\,\text{km}$.
@@ -73,7 +73,7 @@
 **Annettu:** alkupaikka $s_0 = 1{,}5\,\text{km}$ mökistä, nopeus $v = 1{,}5\,\text{m/s}$ poispäin mökistä, aika $t = 10\,\text{min}$
 **Kysytty:** etäisyys mökistä $s$ kilometreinä
 **Periaate:** Retkeilijä kävelee vakionopeudella, joten liike on tasaista. Alkupaikka ei ole nolla, joten paikka on alkupaikka lisättynä kuljetulla matkalla.
-**Kaava:** $s = s_0 + vt$
+**Kaava:** $$\begin{aligned} \Delta s &= s - s_0 \\ v &= \dfrac{\Delta s}{t} \\ \Delta s &= vt \\ s - s_0 &= vt \\ s &= s_0 + vt \end{aligned}$$
 **Muunnokset:** $s_0 = 1{,}5\,\text{km} = 1500\,\text{m}$ ja $t = 10\,\text{min} = 600\,\text{s}$. Lopuksi $1\,\text{km} = 1000\,\text{m}$.
 **Sijoitus:** $s = 1500\,\text{m} + 1{,}5\,\tfrac{\text{m}}{\text{s}} \cdot 600\,\text{s} = 1500\,\text{m} + 900\,\text{m} = 2400\,\text{m} = 2{,}4\,\text{km}$
 **Vastaus:** $2{,}4\,\text{km}$, kaksi merkitsevää numeroa kuten tiedoissa $1{,}5\,\text{km}$ ja $1{,}5\,\text{m/s}$.
@@ -83,7 +83,7 @@
 **Annettu:** aika $t = 5{,}0\,\text{s}$, äänen nopeus $v = 343\,\text{m/s}$; valon kulkuaika jätetään huomiotta
 **Kysytty:** salaman etäisyys $\Delta s$ kilometreinä
 **Periaate:** Ääni etenee vakionopeudella, joten sen kulkema matka on $\Delta s = vt$. Valo saapuu käytännössä heti, joten jyrähdyksen viive on äänen kulkuaika koko matkalla.
-**Kaava:** $\Delta s = vt$
+**Kaava:** $$\begin{aligned} v &= \dfrac{\Delta s}{t} \\ \Delta s &= vt \end{aligned}$$
 **Muunnokset:** Matka lasketaan metreinä, ja lopuksi $1\,\text{km} = 1000\,\text{m}$.
 **Sijoitus:** $\Delta s = 343\,\tfrac{\text{m}}{\text{s}} \cdot 5{,}0\,\text{s} = 1715\,\text{m} = 1{,}7\,\text{km}$
 **Vastaus:** $1{,}7\,\text{km}$, kaksi merkitsevää numeroa kuten ajassa $5{,}0\,\text{s}$.
@@ -93,7 +93,7 @@
 **Annettu:** $s_0 = 119{,}0\,\text{AU}$ hetkellä $t = 0$ (5. marraskuuta 2018), $v = 15{,}341\,\text{km/s}$, $s = 150\,\text{AU}$, $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$, $1\,\text{vrk} = 86\,400\,\text{s}$
 **Kysytty:** aika $t$ vuorokausina, kun luotain on etäisyydellä $150\,\text{AU}$
 **Periaate:** Nopeus oletetaan vakioksi, joten tasaisen liikkeen malli $s = s_0 + vt$ pätee. Tulos on mallin arvo, koska Auringon vetovoima hidastaa luotainta hieman ja todellinen aika on siksi vähän pidempi.
-**Kaava:** $s = s_0 + vt$, josta $t = \dfrac{s - s_0}{v}$
+**Kaava:** $$\begin{aligned} \Delta s &= s - s_0 \\ v &= \dfrac{\Delta s}{t} \\ vt &= s - s_0 \\ t &= \dfrac{s - s_0}{v} \end{aligned}$$
 **Muunnokset:** Nopeus tähtitieteellisiksi yksiköiksi vuorokaudessa sijoittamalla $1\,\text{km} = \tfrac{1}{149\,597\,870{,}7}\,\text{AU}$ ja $1\,\text{s} = \tfrac{1}{86\,400}\,\text{vrk}$: $v = 15{,}341\,\tfrac{\text{km}}{\text{s}} = \dfrac{15{,}341 \cdot \tfrac{1}{149\,597\,870{,}7}\,\text{AU}}{\tfrac{1}{86\,400}\,\text{vrk}} = 0{,}0088602\,\tfrac{\text{AU}}{\text{vrk}}$.
 **Sijoitus:** $t = \dfrac{150\,\text{AU} - 119{,}0\,\text{AU}}{0{,}0088602\,\text{AU/vrk}} = \dfrac{31{,}0\,\text{AU}}{0{,}0088602\,\text{AU/vrk}} = 3498{,}8\,\text{vrk}$
 **Vastaus:** $3{,}50 \cdot 10^{3}\,\text{vrk}$ eli noin $3500\,\text{vrk}$, kolme merkitsevää numeroa: $150\,\text{AU}$ on tarkka raja-arvo, ja erotus $31{,}0\,\text{AU}$ on kolmen numeron tarkkuudella.
@@ -103,7 +103,7 @@
 **Annettu:** etäisyys $d = 150\,\text{AU}$, signaalin nopeus $c = 299\,792\,458\,\text{m/s}$, $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$
 **Kysytty:** edestakaisen matkan kulkuaika $t$ tunteina
 **Periaate:** Radiosignaali etenee tyhjiössä vakionopeudella, joten sen kulkema matka on $s = ct$. Komento ja vastaus kulkevat kumpikin matkan $d$, joten kokonaismatka on $2d$. Luotain liikkuu tänä aikana noin $$\begin{aligned} &15\,\text{km/s} \cdot 1{,}5 \cdot 10^{5}\,\text{s} \\ &\approx 2{,}3 \cdot 10^{6}\,\text{km} \\ &\approx 0{,}015\,\text{AU} \end{aligned}$$, mikä on vain $0{,}01\,\%$ etäisyydestä $150\,\text{AU}$. Maa liikkuu samassa ajassa noin $$\begin{aligned} &30\,\text{km/s} \cdot 1{,}5 \cdot 10^{5}\,\text{s} \\ &\approx 0{,}03\,\text{AU} \end{aligned}$$, vain noin $0{,}02\,\%$, joten kummankaan liikkeen voi jättää huomiotta.
-**Kaava:** $2d = ct$, josta $t = \dfrac{2d}{c}$
+**Kaava:** $$\begin{aligned} \Delta s &= 2d \\ c &= \dfrac{\Delta s}{t} \\ t &= \dfrac{\Delta s}{c} \\ &= \dfrac{2d}{c} \end{aligned}$$
 **Muunnokset:** $d = 150 \cdot 149\,597\,870{,}7\,\text{km} = 2{,}2440 \cdot 10^{10}\,\text{km} = 2{,}2440 \cdot 10^{13}\,\text{m}$. Lopuksi $1\,\text{h} = 3600\,\text{s}$.
 **Sijoitus:** $t = \dfrac{2 \cdot 2{,}2440 \cdot 10^{13}\,\text{m}}{299\,792\,458\,\text{m/s}} = 1{,}497 \cdot 10^{5}\,\text{s} = \dfrac{1{,}497 \cdot 10^{5}\,\text{s}}{3600\,\text{s/h}} = 41{,}58\,\text{h}$
 **Vastaus:** $41{,}6\,\text{h}$. Annetut arvot ovat tarkkoja (oletettu etäisyys $150\,\text{AU}$ sekä määritelmän mukaiset valon nopeus ja $1\,\text{AU}$), joten tarkkuus valitaan: kolme merkitsevää numeroa riittää.
@@ -113,7 +113,7 @@
 **Annettu:** kävelijän nopeus $v_1 = 1{,}5\,\text{m/s}$, pyöräilijän nopeus $v_2 = 4{,}5\,\text{m/s}$, pyöräilijän viive $t_0 = 40\,\text{s}$; molemmat lähtevät ovelta, joten $s_0 = 0$
 **Kysytty:** etäisyys ovelta $s$ siinä kohdassa, jossa pyöräilijä saavuttaa kävelijän
 **Periaate:** Molemmat liikkuvat tasaisesti. He ovat samassa paikassa silloin, kun heidän etäisyytensä ovelta ovat yhtä suuret. Aika $t$ mitataan kävelijän lähdöstä, joten pyöräilijä on liikkunut ajan $t - t_0$.
-**Kaava:** $s_1 = v_1 t$ ja $s_2 = v_2 (t - t_0)$. Ehdosta $s_1 = s_2$ saadaan $v_1 t = v_2 (t - t_0)$, josta $t = \dfrac{v_2 t_0}{v_2 - v_1}$ ja $s = v_1 t$.
+**Kaava:** $$\begin{aligned} s_1 &= v_1 t \\ s_2 &= v_2 (t - t_0) \\ s_1 &= s_2 \\ v_1 t &= v_2 t - v_2 t_0 \\ v_2 t_0 &= (v_2 - v_1)\,t \\ t &= \dfrac{v_2 t_0}{v_2 - v_1} \\ s &= v_1 t \end{aligned}$$
 **Muunnokset:** Ei tarvita: nopeudet ovat m/s ja viive sekunteina.
 **Sijoitus:** $t = \dfrac{4{,}5\,\tfrac{\text{m}}{\text{s}} \cdot 40\,\text{s}}{4{,}5\,\tfrac{\text{m}}{\text{s}} - 1{,}5\,\tfrac{\text{m}}{\text{s}}} = 60\,\text{s}$ ja $s = 1{,}5\,\tfrac{\text{m}}{\text{s}} \cdot 60\,\text{s} = 90\,\text{m}$
 **Vastaus:** $90\,\text{m}$, kaksi merkitsevää numeroa kuten nopeuksissa.
@@ -129,7 +129,7 @@
 **Kysytty:** kuljettu matka $\Delta s$ metreinä
 **Periaate:** $(t, v)$-kuvaajassa vaakasuora viiva on suorakulmion yläreuna. Suorakulmion korkeus on nopeus $v$ ja leveys aika $t$, joten sen pinta-ala $vt$ on tasaisessa liikkeessä kuljettu matka.
 **Kuvaajan lukeminen:** Korkeus on $v = 0{,}80\,\text{m/s}$ ja leveys $t = 12\,\text{s} - 0\,\text{s} = 12\,\text{s}$.
-**Kaava:** $\Delta s = vt$ (suorakulmion pinta-ala = korkeus $\cdot$ leveys)
+**Kaava:** $$\begin{aligned} \Delta s &= A_\text{suorakulmio} \\ A_\text{suorakulmio} &= vt \end{aligned}$$
 **Muunnokset:** Ei tarvita: nopeus on m/s ja aika sekunteina, ja $\tfrac{\text{m}}{\text{s}} \cdot \text{s} = \text{m}$.
 **Sijoitus:** $\Delta s = 0{,}80\,\tfrac{\text{m}}{\text{s}} \cdot 12\,\text{s} = 9{,}6\,\text{m}$
 **Vastaus:** $9{,}6\,\text{m}$, kaksi merkitsevää numeroa kuten nopeudessa $0{,}80\,\text{m/s}$ ja ajassa $12\,\text{s}$.
@@ -139,7 +139,7 @@
 **Annettu:** matka $s = 2{,}4\,\text{km}$, aika $t = 16\,\text{min}$; liike on tasaista ja alkaa nollakohdasta
 **Kysytty:** nopeus $v$ yksikössä m/s
 **Periaate:** Tasaisessa liikkeessä nopeus on kuljettu matka jaettuna siihen kuluneella ajalla. Kilometrit ja minuutit muunnetaan metreiksi ja sekunneiksi ennen jakamista.
-**Kaava:** $s = vt$, josta $v = \dfrac{s}{t}$
+**Kaava:** $$\begin{aligned} s &= vt \\ v &= \dfrac{s}{t} \end{aligned}$$
 **Muunnokset:** sijoitetaan $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{min} = 60\,\text{s}$: $s = 2{,}4 \cdot 1000\,\text{m} = 2400\,\text{m}$ ja $t = 16 \cdot 60\,\text{s} = 960\,\text{s}$.
 **Sijoitus:** $v = \dfrac{2400\,\text{m}}{960\,\text{s}} = 2{,}5\,\tfrac{\text{m}}{\text{s}}$
 **Vastaus:** $2{,}5\,\text{m/s}$, kaksi merkitsevää numeroa kuten tiedoissa $2{,}4\,\text{km}$ ja $16\,\text{min}$.
@@ -150,7 +150,7 @@
 **Kysytty:** kävelijän paikka $s$ hetkellä $t = 12\,\text{s}$ metreinä
 **Periaate:** Tasaisessa liikkeessä paikka on ajan lineaarinen funktio $s = s_0 + vt$. Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi, joten suora sovitetaan pisteiden joukon keskeltä ja nopeus luetaan sitä pitkin.
 **Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle, jonka molemmille puolille jää pisteitä. Sovitettu suora kulkee likimain pisteiden $(0\,\text{s};\ 1{,}2\,\text{m})$ ja $(5{,}0\,\text{s};\ 8{,}2\,\text{m})$ kautta. Ne luetaan suoralta ja valitaan kaukana toisistaan. Alkupaikka on $s_0 = 1{,}2\,\text{m}$, koska suora leikkaa $s$-akselin siinä.
-**Kaava:** $v = \dfrac{\Delta s}{\Delta t}$ ja $s = s_0 + vt$
+**Kaava:** $$\begin{aligned} v &= \dfrac{\Delta s}{\Delta t} \\ s - s_0 &= vt \\ s &= s_0 + vt \end{aligned}$$
 **Muunnokset:** Ei tarvita: paikat ovat metreinä ja ajat sekunteina.
 **Sijoitus:** $v = \dfrac{8{,}2\,\text{m} - 1{,}2\,\text{m}}{5{,}0\,\text{s} - 0\,\text{s}} = 1{,}4\,\tfrac{\text{m}}{\text{s}}$ ja $s = 1{,}2\,\text{m} + 1{,}4\,\tfrac{\text{m}}{\text{s}} \cdot 12\,\text{s} = 1{,}2\,\text{m} + 16{,}8\,\text{m} = 18\,\text{m}$
 **Vastaus:** noin $18\,\text{m}$, kaksi merkitsevää numeroa. Silmämääräinen sovitus vaihtelee, joten noin $17{,}3\text{–}18{,}7\,\text{m}$ on hyvä vastaus. Ennuste on mallin arvo, ei mittaus: hetki $12\,\text{s}$ on mitatun alueen $0\text{–}5\,\text{s}$ ulkopuolella, ja se on oikein vain, jos kävelijä jatkaa samalla nopeudella. Tämä on oletus, jota mittaus ei ole tarkistanut.
@@ -160,7 +160,7 @@
 **Annettu:** alkupaikka $s_0 = 8{,}0\,\text{m}$, paikka $s_1 = 11\,\text{m}$ hetkellä $t_1 = 2{,}0\,\text{s}$; opiskelijan päätelmä on $s = 33\,\text{m}$ hetkellä $t_2 = 6{,}0\,\text{s}$
 **Kysytty:** opiskelijan virhe ja oikea paikka $s$ hetkellä $6{,}0\,\text{s}$ metreinä
 **Periaate:** Tasaisessa liikkeessä vain kuljettu matka $\Delta s = vt$ on suoraan verrannollinen aikaan. Paikka $s = s_0 + vt$ on verrannollinen aikaan vain, kun $s_0 = 0$. Opiskelija sekoitti paikan ja matkan: hän kolminkertaisti paikan, vaikka olisi pitänyt kolminkertaistaa matka.
-**Kaava:** $v = \dfrac{\Delta s}{\Delta t}$ ja $s = s_0 + vt$
+**Kaava:** $$\begin{aligned} v &= \dfrac{\Delta s}{\Delta t} \\ s - s_0 &= vt \\ s &= s_0 + vt \end{aligned}$$
 **Muunnokset:** Ei tarvita: paikat ovat metreinä ja ajat sekunteina.
 **Sijoitus:** $v = \dfrac{11\,\text{m} - 8{,}0\,\text{m}}{2{,}0\,\text{s}} = 1{,}5\,\tfrac{\text{m}}{\text{s}}$ ja $s = 8{,}0\,\text{m} + 1{,}5\,\tfrac{\text{m}}{\text{s}} \cdot 6{,}0\,\text{s} = 8{,}0\,\text{m} + 9{,}0\,\text{m} = 17\,\text{m}$
 **Vastaus:** Kärry on kohdassa $17\,\text{m}$, ei kohdassa $33\,\text{m}$. Virhe on se, että paikka kolminkertaistettiin: alkupaikka $s_0 = 8{,}0\,\text{m}$ ei ole nolla, joten vain matka kolminkertaistuu ($3{,}0\,\text{m} \to 9{,}0\,\text{m}$), ja alkupaikka on lisättävä siihen.
@@ -170,7 +170,7 @@
 **Annettu:** nopeus noin $v = 0{,}80\,\text{m/s}$, ajanoton epävarmuus $\Delta t = 0{,}2\,\text{s}$ (sama kaikilla ajoilla; tässä $\Delta t$ on epävarmuus, ei aikaväli), suhteellisen epävarmuuden raja $2{,}0\,\%$
 **Kysytty:** pienin matka $s$ metreinä
 **Periaate:** Ajan suhteellinen epävarmuus on $\varepsilon = \Delta t : t$. Koska $\Delta t$ on vakio, suhteellinen epävarmuus pienenee, kun mitattu aika kasvaa. Raja antaa pienimmän ajan, ja tasaisessa liikkeessä matka on nopeus kertaa aika.
-**Kaava:** $\varepsilon = \dfrac{\Delta t}{t} \le 0{,}020$, josta $t \ge \dfrac{\Delta t}{0{,}020}$, ja $s = vt$
+**Kaava:** $$\begin{aligned} \varepsilon &= \dfrac{\Delta t}{t} \\ \dfrac{\Delta t}{t} &\le 0{,}020 \\ t &\ge \dfrac{\Delta t}{0{,}020} \\ s &= vt \end{aligned}$$
 **Muunnokset:** Ei tarvita: ajat ovat sekunteina ja nopeus m/s. Prosentti on $2{,}0\,\% = 0{,}020$.
 **Sijoitus:** $t \ge \dfrac{0{,}2\,\text{s}}{0{,}020} = 10\,\text{s}$ ja $s = 0{,}80\,\tfrac{\text{m}}{\text{s}} \cdot 10\,\text{s} = 8{,}0\,\text{m}$
 **Vastaus:** Auton on kuljettava vähintään $8{,}0\,\text{m}$. Pitkä matka parantaa mittausta, koska se kestää kauemmin ja ajanoton epävarmuus $0{,}2\,\text{s}$ on silloin pienempi osa koko ajasta. Lyhyellä matkalla, esimerkiksi $1{,}0\,\text{m}$ ($t = 1{,}25\,\text{s}$), suhteellinen epävarmuus olisi $16\,\%$.
@@ -181,7 +181,7 @@
 **Kysytty:** keskinopeus $v_\text{ka}$ aikavälillä $5{,}0\text{–}35\,\text{s}$ ja syy, miksi se ei ole osien nopeuksien keskiarvo
 **Periaate:** Kuvaajassa pisteet asettuvat kahdelle suoralle osalle, joiden kulmakertoimet ovat eri suuret, joten yksi suora ei sovi koko liikkeeseen. Liike mallinnetaan paloittain: kummallakin osalla on oma tasainen nopeutensa, ja hetken $35\,\text{s}$ paikka lasketaan jälkimmäisen osan mallista. Keskinopeus on paikan muutos jaettuna aikavälin pituudella.
 **Kuvaajan lukeminen:** Pisteet aikavälillä $0\text{–}10\,\text{s}$ ovat samalla jyrkällä suoralla. Hetkestä $10\,\text{s}$ alkaen suora on loivempi, ja pisteet $(10\,\text{s};\ 30\,\text{m})$, $(20\,\text{s};\ 40\,\text{m})$ ja $(40\,\text{s};\ 60\,\text{m})$ ovat samalla loivalla suoralla. Nopeus muuttuu siis hetkellä $t = 10\,\text{s}$.
-**Kaava:** osan nopeus $v = \dfrac{\Delta s}{\Delta t}$, paikka loivalla osalla $s = s_{10} + v_2 (t - 10\,\text{s})$ ja keskinopeus $v_\text{ka} = \dfrac{s(35\,\text{s}) - s(5{,}0\,\text{s})}{35\,\text{s} - 5{,}0\,\text{s}}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{\Delta s}{\Delta t} \\ s &= s_{10} + v_2 (t - 10\,\text{s}) \\ v_\text{ka} &= \dfrac{\Delta s}{\Delta t} \\ &= \dfrac{s(35\,\text{s}) - s(5{,}0\,\text{s})}{35\,\text{s} - 5{,}0\,\text{s}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: paikat ovat metreinä ja ajat sekunteina.
 **Sijoitus:** Osa 1: $v_1 = \dfrac{30\,\text{m} - 0\,\text{m}}{10\,\text{s} - 0\,\text{s}} = 3{,}0\,\tfrac{\text{m}}{\text{s}}$. Osa 2: $v_2 = \dfrac{60\,\text{m} - 30\,\text{m}}{40\,\text{s} - 10\,\text{s}} = 1{,}0\,\tfrac{\text{m}}{\text{s}}$. Paikka hetkellä $35\,\text{s}$: $s = 30\,\text{m} + 1{,}0\,\tfrac{\text{m}}{\text{s}} \cdot 25\,\text{s} = 55\,\text{m}$. Keskinopeus: $v_\text{ka} = \dfrac{55\,\text{m} - 15\,\text{m}}{35\,\text{s} - 5{,}0\,\text{s}} = \dfrac{40\,\text{m}}{30\,\text{s}} = 1{,}33\,\tfrac{\text{m}}{\text{s}}$.
 **Vastaus:** $1{,}3\,\text{m/s}$, kaksi merkitsevää numeroa kuten tiedoissa. Osien nopeuksien keskiarvo olisi $(3{,}0 + 1{,}0)\,\text{m/s} : 2 = 2{,}0\,\text{m/s}$, mutta se olisi väärin, koska osat kestävät eri ajan: nopeus $3{,}0\,\text{m/s}$ on voimassa vain $5{,}0\,\text{s}$ ja nopeus $1{,}0\,\text{m/s}$ peräti $25\,\text{s}$.
@@ -192,7 +192,7 @@
 **Kysytty:** luodin nopeus $v$ yksikössä m/s sekä kuvaajan nousu ja kuvausvälin pituus senttimetreinä
 **Periaate:** Paikka kasvaa joka kuvausvälillä yhtä paljon ($3{,}0\,\text{m}$), joten liike on tasaista ja nopeus on kuvaajan kulmakerroin $\Delta s : \Delta t$. Kappaleella on jokaisella hetkellä vain yksi paikka, joten jokaista ajan arvoa vastaa yksi paikan arvo. Pystysuorassa viivassa olisi $\Delta t = 0$ ja $\Delta s \neq 0$, jolloin osamäärä ei olisi mikään luku.
 **Kuvaajan lukeminen:** Taulukon pisteet ovat samalla suoralla, ja kahden peräkkäisen pisteen välillä paikka muuttuu $\Delta s = 5{,}0\,\text{m} - 2{,}0\,\text{m} = 3{,}0\,\text{m}$ ajassa $\Delta t = 0{,}010\,\text{s}$.
-**Kaava:** $v = \dfrac{\Delta s}{\Delta t}$; piirroksessa pituus on mitta-arvo kertaa mittakaava
+**Kaava:** $$\begin{aligned} v &= \dfrac{\Delta s}{\Delta t} \\ L_\text{piirros} &= a_\text{mitta} \cdot k_\text{mittakaava} \end{aligned}$$
 **Muunnokset:** Ei tarvita nopeuden laskussa. Piirroksessa $\Delta s = 3{,}0 \cdot 1{,}0\,\text{cm} = 3{,}0\,\text{cm}$ ja $\Delta t = 0{,}010 \cdot 10\,\text{cm} = 0{,}10\,\text{cm}$.
 **Sijoitus:** $v = \dfrac{3{,}0\,\text{m}}{0{,}010\,\text{s}} = 300\,\tfrac{\text{m}}{\text{s}}$. Viiva nousee yhdessä kuvausvälissä $3{,}0\,\text{cm}$ ja etenee vaakasuunnassa vain $0{,}10\,\text{cm}$, eli $1{,}0\,\text{mm}$.
 **Vastaus:** $300\,\text{m/s}$, kaksi merkitsevää numeroa kuten paikkojen erotuksessa $3{,}0\,\text{m}$.
@@ -216,7 +216,7 @@ Kuvaajassa A suora nousee, eli paikka kasvaisi ja kävelijä menisi poispäin. K
 **Annettu:** aika $t = 2{,}0\,\text{s}$; taulukosta (MAFY-taulukko, Äänen nopeuksia eri väliaineissa, nesteet, vesi $20\,{}^\circ\text{C}$) äänen nopeus $v = 1482{,}3\,\text{m/s}$
 **Kysytty:** kuljettu matka $s$ yksikössä $\text{km}$
 **Periaate:** Ääni etenee vedessä tasaisella nopeudella, joten liike on tasaista ja matka on nopeus kerrottuna ajalla.
-**Kaava:** $s = vt$
+**Kaava:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= vt \end{aligned}$$
 **Muunnokset:** $1\,\text{km} = 1000\,\text{m}$, joten $s$ muunnetaan metreistä kilometreiksi jakamalla luvulla $1000$.
 **Sijoitus:** $s = 1482{,}3\,\tfrac{\text{m}}{\text{s}} \cdot 2{,}0\,\text{s} = 2964{,}6\,\text{m} = 2{,}9646\,\text{km}$
 **Vastaus:** $3{,}0\,\text{km}$ (tarkemmin $2{,}96\,\text{km}$), kaksi merkitsevää numeroa kuten ajassa $2{,}0\,\text{s}$. Taulukon arvosta riippuen vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.

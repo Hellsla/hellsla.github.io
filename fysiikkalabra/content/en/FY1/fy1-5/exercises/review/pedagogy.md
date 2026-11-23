@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 30cb6983115dbf4a
-SCOPE: delta added-exercise from d354f1f5a2bbfb83 base 81db4a6fd727
+CONTENT-HASH: 2ccd524b645fe8c9
 
 ## Blocking
 - none
@@ -9,6 +8,8 @@ SCOPE: delta added-exercise from d354f1f5a2bbfb83 base 81db4a6fd727
 - none
 
 ## Checked
-- Added exercise judged: level 1, wording (situation then question), table lookup is needed and stated, step-by-step solution, arithmetic verified.
-- Fit within the set of 22: progression, kinds and no repeat of the worked example.
-- Phone/language: nothing in the added text that clips; English reads plainly.
+- Delta: every "Kaava"/"Formula" step in solutions.md now starts from a basic definition or equation and reaches the working form; order is a derivation a student can follow.
+- Physics and symbols agree with the Principle, Substitution and Answer steps; no answer disclosed beyond the model solution.
+- Added "Tässä/Here ..." definitions and merged-paragraph model answers are brief, correct and readable.
+- Aligned-equation blocks read as staged derivations; the packet diff shows them without line breaks, but the files on disk contain proper breaks (checked).
+- No exercise, figure or task text changed (no exercise wording changed); levels, context and wording unaffected.

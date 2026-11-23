@@ -71,7 +71,7 @@ The points are not joined into a broken line, because every measurement has a sm
 **Find:** the speed $v$ of the ball on the floor
 **Principle:** On the floor the points lie on a line, so the ball moves uniformly: its position is $s = s_0 + vt$, and the speed is the slope of the fitted line. The points from the ramp are left out, because there the speed is still increasing.
 **Reading the graph:** Two points far apart are read from the line, $(0.6\,\text{s};\ 0.32\,\text{m})$ and $(2.0\,\text{s};\ 1.44\,\text{m})$. They are points of the line, not measurement points.
-**Formula:** $v = \dfrac{\Delta s}{\Delta t} = \dfrac{s_2 - s_1}{t_2 - t_1}$
+**Formula:** $$\begin{aligned} v &= \dfrac{\Delta s}{\Delta t} \\ &= \dfrac{s_2 - s_1}{t_2 - t_1} \end{aligned}$$
 **Conversions:** The positions have already been read in metres: $320\,\text{mm} = 0.32\,\text{m}$ and $1440\,\text{mm} = 1.44\,\text{m}$.
 **Substitution:** $v = \dfrac{1.44\,\text{m} - 0.32\,\text{m}}{2.0\,\text{s} - 0.6\,\text{s}} = \dfrac{1.12\,\text{m}}{1.4\,\text{s}} = 0.80\,\text{m/s}$
 **Answer:** $v \approx 0.80\,\text{m/s}$. The precision is justified in part c.
@@ -123,7 +123,7 @@ The constant term of the fitted line is about $s_0 = -0.16\,\text{m}$. It is not
 **Principle:** The mean of the repeats is the best estimate of the rolling time. Half of the range is a simple estimate of the scatter of the individual measurements, and here it is used as a cautious uncertainty estimate for the comparison.
 
 The uncertainty of the mean itself is usually smaller than this. A difference can be said to be shown only if it is clearly larger than these uncertainty estimates.
-**Formula:** $\bar{t} = \dfrac{t_1 + t_2 + t_3 + t_4 + t_5}{5}$ and $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$
+**Formula:** $$\begin{aligned} \bar{t} &= \dfrac{t_1 + t_2 + t_3 + t_4 + t_5}{5} \\ \Delta t &= \dfrac{t_\text{max} - t_\text{min}}{2} \end{aligned}$$
 **Conversions:** Not needed, all the times are in seconds.
 **Substitution:** Steel: $\bar{t} = \dfrac{11.85\,\text{s}}{5} = 2.37\,\text{s}$ and $\Delta t = \dfrac{2.45\,\text{s} - 2.29\,\text{s}}{2} = 0.08\,\text{s}$.
 Plastic: $\bar{t} = \dfrac{12.00\,\text{s}}{5} = 2.40\,\text{s}$ and $\Delta t = \dfrac{2.47\,\text{s} - 2.33\,\text{s}}{2} = 0.07\,\text{s}$.

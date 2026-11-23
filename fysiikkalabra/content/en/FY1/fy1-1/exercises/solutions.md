@@ -2,7 +2,7 @@
 **Given:** diameter $d = 7.5\cdot10^{-6}\,\text{m}$ and $1\,\mu\text{m} = 10^{-6}\,\text{m}$
 **Find:** the diameter $d$ in micrometres, in the unit $\mu\text{m}$
 **Principle:** A micrometre is a millionth of a metre: $1\,\mu\text{m} = 10^{-6}\,\text{m}$. When a length is written in the form $a\cdot10^{-6}\,\text{m}$, the part $10^{-6}\,\text{m}$ can be replaced by the unit $\mu\text{m}$.
-**Formula:** $10^{-6}\,\text{m} = 1\,\mu\text{m}$
+**Formula:** $$\begin{aligned} 10^{-6}\,\text{m} &= 1\,\mu\text{m} \end{aligned}$$
 **Conversions:** The diameter is already in the form $7.5\cdot10^{-6}\,\text{m}$, so no other rewriting is needed.
 **Substitution:** $d = 7.5\cdot10^{-6}\,\text{m} = 7.5\cdot1\,\mu\text{m} = 7.5\,\mu\text{m}$
 **Answer:** $7.5\,\mu\text{m}$, two significant figures like the given diameter.
@@ -13,7 +13,7 @@
 **Find:** the difference of the orders of magnitude, that is, the number of steps of powers of ten
 **Principle:** On the axis, each line is a power of ten, and one step to the right is a tenfold size. The exponent of the order of magnitude of an object is read from the line at its mark, and the number of steps is the difference of the exponents.
 **Reading the graph:** The mark of the hydrogen atom is at the line $10^{-10}\,\text{m}$, so $n_\text{atom} = -10$. The mark of the ant is at the line $10^{-2}\,\text{m}$, so $n_\text{ant} = -2$.
-**Formula:** $\text{steps} = n_\text{ant} - n_\text{atom}$
+**Formula:** $$\begin{aligned} \text{steps} &= n_\text{larger} - n_\text{smaller} \\ &= n_\text{ant} - n_\text{atom} \end{aligned}$$
 **Conversions:** Not needed: the exponents are numbers without a unit.
 **Substitution:** $\text{steps} = -2 - (-10) = -2 + 10 = 8$
 **Answer:** $8$ orders of magnitude; the number is an integer, because the marks are exactly at the lines.
@@ -23,7 +23,7 @@
 **Given:** $d = 1.27\cdot10^{7}\,\text{m}$ and $1\,\text{km} = 1000\,\text{m} = 10^{3}\,\text{m}$
 **Find:** the diameter $d$ in kilometres, in the unit $\text{km}$
 **Principle:** A kilometre is a thousand metres, $1\,\text{km} = 10^{3}\,\text{m}$. Write the length in a form that has the factor $10^{3}\,\text{m}$, and replace it with the unit $\text{km}$.
-**Formula:** $10^{3}\,\text{m} = 1\,\text{km}$
+**Formula:** $$\begin{aligned} 10^{3}\,\text{m} &= 1\,\text{km} \end{aligned}$$
 **Conversions:** $10^{7} = 10^{4}\cdot10^{3}$, so $$\begin{aligned} &1.27\cdot10^{7}\,\text{m} \\ &= 1.27\cdot10^{4}\cdot10^{3}\,\text{m} \end{aligned}$$.
 **Substitution:** $d = 1.27\cdot10^{4}\cdot10^{3}\,\text{m} = 1.27\cdot10^{4}\,\text{km} = 12\,700\,\text{km}$
 **Answer:** $12\,700\,\text{km}$, that is $1.27\cdot10^{4}\,\text{km}$, three significant figures like the given diameter.
@@ -33,7 +33,7 @@
 **Given:** the diameter of a lead atom $d_\text{atom} = 3.5\cdot10^{-10}\,\text{m}$ and the diameter of its nucleus $d_\text{nucleus} = 1.4\cdot10^{-14}\,\text{m}$
 **Find:** the ratio of the sizes $k$ (how many times larger the atom is than its nucleus)
 **Principle:** The question "how many times larger" is a division: divide the larger size by the smaller.
-**Formula:** $k = \dfrac{d_\text{atom}}{d_\text{nucleus}}$
+**Formula:** $$\begin{aligned} k &= \dfrac{d_\text{larger}}{d_\text{smaller}} \\ &= \dfrac{d_\text{atom}}{d_\text{nucleus}} \end{aligned}$$
 **Conversions:** Not needed: both diameters are in metres, so the units cancel and $k$ is just a number.
 **Substitution:** $k = \dfrac{3.5\cdot10^{-10}\,\text{m}}{1.4\cdot10^{-14}\,\text{m}} = 2.5\cdot10^{4}$
 **Answer:** $25\,000$ times, that is $2.5\cdot10^{4}$; two significant figures like the given diameters.
@@ -43,7 +43,7 @@
 **Given:** the thickness of a hair $d_\text{hair} = 7.0\cdot10^{-5}\,\text{m}$ and the diameter of a red blood cell $d_\text{cell} = 7.5\cdot10^{-6}\,\text{m}$
 **Find:** the ratio of the sizes $k$ (how many times thicker the hair is)
 **Principle:** The question "how many times larger" is a division: divide the larger size by the smaller.
-**Formula:** $k = \dfrac{d_\text{hair}}{d_\text{cell}}$
+**Formula:** $$\begin{aligned} k &= \dfrac{d_\text{larger}}{d_\text{smaller}} \\ &= \dfrac{d_\text{hair}}{d_\text{cell}} \end{aligned}$$
 **Conversions:** Not needed: both lengths are in metres, so the units cancel and $k$ is just a number.
 **Substitution:** $k = \dfrac{7.0\cdot10^{-5}\,\text{m}}{7.5\cdot10^{-6}\,\text{m}} = 9.33$
 **Answer:** $9.3$ times; two significant figures like the given measurements ($9.33$ also fits in the field).
@@ -53,7 +53,7 @@
 **Given:** the diameter of the Milky Way $1.0\cdot10^{5}$ light-years, $1$ light-year $= 9.46\cdot10^{15}\,\text{m}$ and the diameter of the observable universe $D = 8.8\cdot10^{26}\,\text{m}$
 **Find:** how many Milky Way diameters $N$ fit across the diameter of the observable universe, in thousands
 **Principle:** The number of diameters in a row is the ratio of the lengths: divide the larger length by the smaller. The lengths must be in the same unit, so the diameter of the Milky Way is first converted to metres.
-**Formula:** $N = \dfrac{D}{d}$, where $d$ is the diameter of the Milky Way in metres
+**Formula:** $$\begin{aligned} N &= \dfrac{D}{d} \end{aligned}$$ Here $d$ is the diameter of the Milky Way in metres.
 **Conversions:** $d = 1.0\cdot10^{5}\cdot9.46\cdot10^{15}\,\text{m} = 9.46\cdot10^{20}\,\text{m}$. Finally, to get thousands, divide by $1000$.
 **Substitution:** $N = \dfrac{8.8\cdot10^{26}\,\text{m}}{9.46\cdot10^{20}\,\text{m}} = 0.930\cdot10^{6} = 9.30\cdot10^{5} = 930\ \text{thousand}$
 **Answer:** about $930$ thousand, that is $9.3\cdot10^{5}$; two significant figures like the diameter of the Milky Way and the diameter of the universe.
@@ -63,7 +63,7 @@
 **Given:** distance $s = 4.0\cdot10^{16}\,\text{m}$, $c = 2.998\cdot10^{8}\,\text{m/s}$, one year $3.156\cdot10^{7}\,\text{s}$
 **Find:** the travel time of light $t$ in years
 **Principle:** Light travels at a constant speed, so the time is the distance divided by the speed. The time is first found in seconds and then converted to years.
-**Formula:** $s = c\,t$, so $t = \dfrac{s}{c}$
+**Formula:** $$\begin{aligned} s &= c\,t \\ t &= \dfrac{s}{c} \end{aligned}$$
 **Conversions:** One year is $3.156\cdot10^{7}\,\text{s}$, so the number of years is found by dividing the seconds by the seconds in one year: how many times a year fits in the time.
 **Substitution:** $t = \dfrac{4.0\cdot10^{16}\,\text{m}}{2.998\cdot10^{8}\,\text{m/s}} = 1.334\cdot10^{8}\,\text{s}$ and in years $$\begin{aligned} &1.334\cdot10^{8}\,\text{s} : 3.156\cdot10^{7}\,\text{s} \\ &= 4.23 \end{aligned}$$, so $t = 4.23\,\text{a}$
 **Answer:** $4.2\,\text{a}$, two significant figures like the distance $4.0\cdot10^{16}\,\text{m}$ ($4.23$ also fits in the field).
@@ -73,7 +73,7 @@
 **Given:** circumference $s = 4.0\cdot10^{7}\,\text{m}$ and the height of one person $h = 1.7\,\text{m}$
 **Find:** the number of people $N$ in millions
 **Principle:** The line reaches all the way around when the heights of the people together equal the circumference. So the number is the circumference divided by the height of one person.
-**Formula:** $N\,h = s$, so $N = \dfrac{s}{h}$
+**Formula:** $$\begin{aligned} s &= N\,h \\ N &= \dfrac{s}{h} \end{aligned}$$
 **Conversions:** The lengths are in the same unit, so the result is just a number. When given in millions, the $10^{6}$ is left out: $1\text{ million} = 10^{6}$.
 **Substitution:** $N = \dfrac{4.0\cdot10^{7}\,\text{m}}{1.7\,\text{m}} = \dfrac{4.0}{1.7}\cdot10^{7} = 2.35\cdot10^{7} = 23.5\cdot10^{6}$
 **Answer:** $24$ million people, that is $2.4\cdot10^{7}$, two significant figures like the given data ($23.5$ also fits in the field).
@@ -83,7 +83,7 @@
 **Given:** the diameter of the Sun $d_\text{S} = 1.39\cdot10^{9}\,\text{m}$, the diameter of Earth $d_\text{E} = 1.27\cdot10^{7}\,\text{m}$; volume $V \propto d^{3}$
 **Find:** the ratio of the volumes $\dfrac{V_\text{S}}{V_\text{E}}$ in millions, that is, how many Earth volumes fit in the volume of the Sun
 **Principle:** When the volume is directly proportional to the cube of the diameter, the ratio of the volumes is the third power of the ratio of the diameters. The ratio of the diameters is calculated first.
-**Formula:** $\dfrac{V_\text{S}}{V_\text{E}} = \left(\dfrac{d_\text{S}}{d_\text{E}}\right)^{3}$
+**Formula:** $$\begin{aligned} V &\propto d^{3} \\ \dfrac{V_\text{S}}{V_\text{E}} &= \dfrac{d_\text{S}^{3}}{d_\text{E}^{3}} \\ &= \left(\dfrac{d_\text{S}}{d_\text{E}}\right)^{3} \end{aligned}$$
 **Conversions:** The diameters are in the same unit, so the ratio is just a number. The answer is given in millions: $1\text{ million} = 10^{6}$.
 **Substitution:** $\dfrac{d_\text{S}}{d_\text{E}} = \dfrac{1.39\cdot10^{9}}{1.27\cdot10^{7}} = 109.4$ and $\left(109.4\right)^{3} = 1.31\cdot10^{6} = 1.31$ million
 **Answer:** $1.31$ million, that is $1.31\cdot10^{6}$, three significant figures like the diameters. So the volume of the Sun is about 1.3 million Earth volumes.
@@ -95,7 +95,7 @@ As solid spheres, fewer Earths would fit, because there would be empty space bet
 **Given:** the diameter of Earth in the scale model $d_\text{model} = 1.0\,\text{cm}$; the real diameter $d_\text{E} = 1.27\cdot10^{7}\,\text{m}$ and the distance from the Sun $r = 1.50\cdot10^{11}\,\text{m}$
 **Find:** the distance of the Sun in the scale model $r_\text{model}$ in metres
 **Principle:** In a scale model, all lengths shrink by the same factor, so the ratio of the distance to the diameter is the same as in reality: $\dfrac{r_\text{model}}{d_\text{model}} = \dfrac{r}{d_\text{E}}$.
-**Formula:** $r_\text{model} = d_\text{model}\cdot\dfrac{r}{d_\text{E}}$
+**Formula:** $$\begin{aligned} \dfrac{r_\text{model}}{r} &= \dfrac{d_\text{model}}{d_\text{E}} \\ r_\text{model} &= r\cdot\dfrac{d_\text{model}}{d_\text{E}} \\ &= d_\text{model}\cdot\dfrac{r}{d_\text{E}} \end{aligned}$$
 **Conversions:** $d_\text{model} = 1.0\,\text{cm} = 0.010\,\text{m}$, so that the result comes out in metres.
 **Substitution:** $r_\text{model} = 0.010\,\text{m}\cdot\dfrac{1.50\cdot10^{11}\,\text{m}}{1.27\cdot10^{7}\,\text{m}} = 0.010\,\text{m}\cdot1.18\cdot10^{4} = 118\,\text{m}$
 **Answer:** $120\,\text{m}$, that is $1.2\cdot10^{2}\,\text{m}$, two significant figures like the diameter $1.0\,\text{cm}$ ($118$ also fits in the field).
@@ -105,7 +105,7 @@ As solid spheres, fewer Earths would fit, because there would be empty space bet
 **Given:** orders of magnitude: Planck length $1.6\cdot10^{-35}\,\text{m}$, proton $1.7\cdot10^{-15}\,\text{m}$, person $1.7\,\text{m}$
 **Find:** which gap has more orders of magnitude, and how many
 **Principle:** First the order of magnitude of each size: the factor is less than about 3 in every number, so the exponent of the order of magnitude is the exponent written in the number. Then the difference between two sizes is the difference of the exponents.
-**Formula:** $n_\text{Planck} = -35$, $n_\text{proton} = -15$, $n_\text{person} = 0$ and $\text{steps} = n_\text{larger} - n_\text{smaller}$
+**Formula:** $$\begin{aligned} n_\text{Planck} &= -35 \\ n_\text{proton} &= -15 \\ n_\text{person} &= 0 \\ \text{steps} &= n_\text{larger} - n_\text{smaller} \end{aligned}$$
 **Conversions:** Not needed: the exponents are numbers without a unit.
 **Substitution:** From the Planck length to the proton $-15 - (-35) = 20$ steps and from the proton to a person $0 - (-15) = 15$ steps
 **Answer:** The larger difference is $20$ orders of magnitude, between the Planck length and the proton; the number is an integer, because the orders of magnitude are whole powers of ten.
@@ -115,7 +115,7 @@ As solid spheres, fewer Earths would fit, because there would be empty space bet
 **Given:** the size of a virus $d_\text{v} = 1.0\cdot10^{-7}\,\text{m}$ is $5.0\,\text{cm}$ in the picture; the size of a red blood cell $d_\text{c} = 7.5\cdot10^{-6}\,\text{m}$
 **Find:** the width of the red blood cell in the picture $w_\text{c}$ in centimetres
 **Principle:** The same picture magnifies all lengths by the same factor $M$. The magnification is found from the virus, and it multiplies the real size of the red blood cell.
-**Formula:** $M = \dfrac{w_\text{v}}{d_\text{v}}$ and $w_\text{c} = M\,d_\text{c}$
+**Formula:** $$\begin{aligned} M &= \dfrac{w_\text{v}}{d_\text{v}} \\ w_\text{c} &= M\,d_\text{c} \end{aligned}$$
 **Conversions:** $w_\text{v} = 5.0\,\text{cm} = 0.050\,\text{m}$, so that the lengths are in the same unit.
 **Substitution:** $M = \dfrac{0.050\,\text{m}}{1.0\cdot10^{-7}\,\text{m}} = 5.0\cdot10^{5}$ and $w_\text{c} = 5.0\cdot10^{5}\cdot7.5\cdot10^{-6}\,\text{m} = 3.75\,\text{m} = 375\,\text{cm}$
 **Answer:** $380\,\text{cm}$, that is $3.8\cdot10^{2}\,\text{cm}$, two significant figures like the given measurements ($375$ also fits in the field).
@@ -136,7 +136,7 @@ A model is not a repeated observation, an unchangeable theory or the whole truth
 **Given:** distance $s = 3.84\cdot10^{8}\,\text{m}$ and speed of light $c = 2.998\cdot10^{8}\,\text{m/s}$
 **Find:** the travel time of light $t$ in seconds
 **Principle:** Light travels in a vacuum at a constant speed, so the travel time is the distance divided by the speed.
-**Formula:** $s = c\,t$, so $t = \dfrac{s}{c}$
+**Formula:** $$\begin{aligned} s &= c\,t \\ t &= \dfrac{s}{c} \end{aligned}$$
 **Conversions:** Not needed: the distance is in metres and the speed in metres per second, so the result comes out in seconds.
 **Substitution:** $t = \dfrac{3.84\cdot10^{8}\,\text{m}}{2.998\cdot10^{8}\,\text{m/s}} = 1.2808\,\text{s}$
 **Answer:** $1.28\,\text{s}$, three significant figures like the given values.
@@ -146,7 +146,7 @@ A model is not a repeated observation, an unchangeable theory or the whole truth
 **Given:** the order of magnitude of a grain of sand $10^{-3}\,\text{m}$ and of a virus $10^{-7}\,\text{m}$
 **Find:** the ratio of the sizes $k$, that is, how many times larger the grain of sand is
 **Principle:** Orders of magnitude are powers of ten, and every step from one power of ten to the next is a factor of ten in size. When there are $n_1 - n_2$ steps, the ratio is $10^{n_1 - n_2}$, not $n_1 - n_2$.
-**Formula:** $k = \dfrac{10^{n_\text{sand}}}{10^{n_\text{virus}}} = 10^{\,n_\text{sand} - n_\text{virus}}$
+**Formula:** $$\begin{aligned} k &= \dfrac{10^{n_\text{sand}}}{10^{n_\text{virus}}} \\ &= 10^{\,n_\text{sand} - n_\text{virus}} \end{aligned}$$
 **Conversions:** Not needed: the sizes are in the same unit, so the ratio is a pure number.
 **Substitution:** $k = \dfrac{10^{-3}\,\text{m}}{10^{-7}\,\text{m}} = 10^{-3-(-7)} = 10^{4} = 10\,000$
 **Answer:** $10\,000$, that is $10^{4}$; based on the orders of magnitude, the diameter of the grain of sand is about ten thousand times the diameter of the virus.
@@ -158,7 +158,7 @@ The ratio of the given orders of magnitude is exactly $10^{4}$, but it does not 
 **Given:** from the table the distances $r_\text{Jupiter} = 5.20\,\text{AU}$ and $r_\text{Neptune} = 30.1\,\text{AU}$; in the model Neptune is $r_\text{model,N} = 2.0\,\text{m}$ from the Sun
 **Find:** the distance of Jupiter from the Sun in the model $r_\text{model,J}$ in centimetres, and the planet closest to the point $1.0\,\text{m}$
 **Principle:** All distances are reduced by the same factor, so the ratio of the distances of two planets is the same in the model as in reality: $\dfrac{r_\text{model,J}}{r_\text{model,N}} = \dfrac{r_\text{Jupiter}}{r_\text{Neptune}}$.
-**Formula:** $r_\text{model,J} = r_\text{model,N}\cdot\dfrac{r_\text{Jupiter}}{r_\text{Neptune}}$
+**Formula:** $$\begin{aligned} \dfrac{r_\text{model,J}}{r_\text{model,N}} &= \dfrac{r_\text{Jupiter}}{r_\text{Neptune}} \\ r_\text{model,J} &= r_\text{model,N}\cdot\dfrac{r_\text{Jupiter}}{r_\text{Neptune}} \end{aligned}$$
 **Conversions:** $r_\text{model,N} = 2.0\,\text{m} = 2.0\cdot100\,\text{cm} = 200\,\text{cm}$. The astronomical units cancel from the ratio.
 **Substitution:** $r_\text{model,J} = 200\,\text{cm}\cdot\dfrac{5.20\,\text{AU}}{30.1\,\text{AU}} = 200\,\text{cm}\cdot0.1727 = 34.6\,\text{cm}$
 **Answer:** $35\,\text{cm}$, two significant figures like the length $2.0\,\text{m}$ of the model ($34.6$ also fits in the field). The planet closest to the point $1.0\,\text{m}$ is Uranus: the point $100\,\text{cm}$ corresponds to the real distance $$\begin{aligned} &100\,\text{cm} : 200\,\text{cm} \\ &\cdot30.1\,\text{AU} \\ &= 15.05\,\text{AU} \end{aligned}$$, which is closer to the value of Uranus, $19.2\,\text{AU}$ (difference $4.15\,\text{AU}$), than to the value of Saturn, $9.58\,\text{AU}$ (difference $5.47\,\text{AU}$).
@@ -168,7 +168,7 @@ The ratio of the given orders of magnitude is exactly $10^{4}$, but it does not 
 **Given:** from the table $d = a\cdot10^{n}\,\text{m}$: human $1.7\cdot10^{0}$, Earth $1.27\cdot10^{7}$, Sun $1.39\cdot10^{9}$ and Milky Way $9.46\cdot10^{20}$
 **Find:** the orders of magnitude of the objects and the difference in orders of magnitude between a human and the Milky Way
 **Principle:** The order of magnitude of the number $a\cdot10^{n}$ is the nearest power of ten: it is $10^{n}$ when $a$ is less than about $3$, and $10^{n+1}$ when $a$ is more than about $3$. The difference in orders of magnitude is the difference of the exponents.
-**Formula:** $\text{steps} = n_\text{Milky Way} - n_\text{human}$, where $n$ is the exponent of the order of magnitude
+**Formula:** $$\begin{aligned} \text{steps} &= n_\text{larger} - n_\text{smaller} \\ &= n_\text{Milky Way} - n_\text{human} \end{aligned}$$ Here $n$ is the exponent of the order of magnitude.
 **Conversions:** Not needed: the exponents are numbers without a unit.
 **Substitution:** Human $1.7 < 3$, so $10^{0}\,\text{m}$. Earth $1.27 < 3$, so $10^{7}\,\text{m}$. Sun $1.39 < 3$, so $10^{9}\,\text{m}$. Milky Way $9.46 > 3$, so $10^{20+1} = 10^{21}\,\text{m}$. Thus $\text{steps} = 21 - 0 = 21$.
 **Answer:** $21$, that is, there are $21$ orders of magnitude between a human and the Milky Way; the number is an integer because the orders of magnitude are whole powers of ten.
@@ -183,7 +183,7 @@ The order of magnitude of the Milky Way is $10^{21}\,\text{m}$ because the facto
 **Reading the graph:** The points lie on a rising line with points on both sides of it. The fitted line passes through the origin.
 
 The height of the stack is read from the fitted line at $N = 300$, not directly from the table: from the line we get $h \approx 30.6\,\text{mm}$, and the measured point $30.5\,\text{mm}$ of the table is slightly below the line.
-**Formula:** $h = dN$, so the slope of the line is $d = \dfrac{h}{N}$
+**Formula:** $$\begin{aligned} h &= dN \\ d &= \dfrac{h}{N} \end{aligned}$$ Here $d$ is the slope of the line.
 **Conversions:** Not needed: the height is already in millimetres, and the number of sheets is a pure number.
 **Substitution:** $d = \dfrac{30.6\,\text{mm}}{300} = 0.102\,\text{mm}$
 **Answer:** $0.10\,\text{mm}$, two significant figures, because the line is fitted by eye and the height of the stack has other sources of error besides reading the ruler. A fit by eye varies, so about $0.097\text{–}0.107\,\text{mm}$ is a good answer.
@@ -200,7 +200,7 @@ The total uncertainty of the measurement is also affected by other sources of er
 **Given:** growth of the water layer $5.0\,\text{mm/h}$, duration of the shower $\Delta t = 10\,\text{min}$, area of the pitch $A = 6.0\cdot10^{3}\,\text{m}^2$, diameter of a drop $2.0\,\text{mm}$ and volume of a sphere $V = 4\pi r^{3}/3$
 **Find:** the number of drops $N$ in billions; the assumption whose $20\,\%$ error affects the result most
 **Principle:** The volume of water that fell on the pitch is divided by the volume of one drop. The estimate is a model whose assumptions are in plain view: the drops are spheres of the same size, and the rain is steady.
-**Formula:** $V_\text{rain} = h\,A$, $V_\text{drop} = \dfrac{4}{3}\pi r^{3}$ and $N = \dfrac{V_\text{rain}}{V_\text{drop}}$
+**Formula:** $$\begin{aligned} V_\text{rain} &= h\,A \\ V_\text{drop} &= \dfrac{4}{3}\pi r^{3} \\ N &= \dfrac{V_\text{rain}}{V_\text{drop}} \end{aligned}$$
 **Conversions:** $h = 5.0\,\text{mm/h}\cdot(10 : 60)\,\text{h} = 0.833\,\text{mm} = 8.33\cdot10^{-4}\,\text{m}$ and $r = 2.0\,\text{mm} : 2 = 1.0\cdot10^{-3}\,\text{m}$.
 **Substitution:** $V_\text{rain} = 8.33\cdot10^{-4}\,\text{m}\cdot6.0\cdot10^{3}\,\text{m}^2 = 5.0\,\text{m}^3$ and $V_\text{drop} = \dfrac{4}{3}\pi\left(1.0\cdot10^{-3}\,\text{m}\right)^{3} = 4.19\cdot10^{-9}\,\text{m}^3$, so $N = \dfrac{5.0\,\text{m}^3}{4.19\cdot10^{-9}\,\text{m}^3} = 1.19\cdot10^{9}$
 **Answer:** about $1.2$ billion drops, two significant figures like the measured given values ($1.19$ fits in the field).
@@ -214,7 +214,7 @@ If the diameter of the drop is $20\,\%$ too large, the volume of the drop increa
 **Given:** $d_0 = 119.0\,\text{AU}$, $v = 15.341\,\text{km/s}$, $t = 7.25\,\text{a}$, $1\,\text{AU} = 1.496\cdot10^{8}\,\text{km}$, $1\,\text{a} = 3.156\cdot10^{7}\,\text{s}$ and the observation $143.05\,\text{AU}$ from the Earth (JPL, February 2026)
 **Find:** the student's error, the prediction of the model $d$ in AU and what the measurement tells about the model
 **Principle:** The distance of Voyager is modelled as uniform motion, $d = d_0 + vt$, because the speed changes very little over this interval. In sums and products the units of the quantities must match.
-**Formula:** $s = vt$ and $d = d_0 + s$. Before the numerical values are added, both distances are expressed in AU.
+**Formula:** $$\begin{aligned} s &= vt \\ d &= d_0 + s \end{aligned}$$ Before the numerical values are added, both distances are expressed in AU.
 **Conversions:** $t = 7.25\,\text{a} = 7.25\cdot3.156\cdot10^{7}\,\text{s} = 2.288\cdot10^{8}\,\text{s}$.
 **Substitution:** $s = 15.341\,\text{km/s}\cdot2.288\cdot10^{8}\,\text{s} = 3.510\cdot10^{9}\,\text{km} = \dfrac{3.510\cdot10^{9}\,\text{km}}{1.496\cdot10^{8}\,\text{km/AU}} = 23.46\,\text{AU}$ and $d = 119.0\,\text{AU} + 23.46\,\text{AU} = 142.46\,\text{AU}$
 **Answer:** $142.5\,\text{AU}$, one decimal like the initial distance $119.0\,\text{AU}$, which is the least precise number in the sum. The student multiplied the speed in $\text{km/s}$ by years instead of seconds, so the result was not a distance, and in addition added kilometres and astronomical units. The model was not wrong.
@@ -236,7 +236,7 @@ The value $1.5\cdot10^{8}\,\text{m}$ is less than half the distance of the Moon,
 **Given:** from the table (MAFY table, Aurinkokunta) the Sun's mean radius $r_\text{A} = 695\,700\,\text{km}$ and the Earth's radius at the equator $r_\text{M} = 6\,378\,\text{km}$
 **Asked:** the ratio $k$ of the diameters of the Sun and the Earth
 **Principle:** The diameter of a sphere is twice its radius, $d = 2r$. The ratio of the sizes is the larger size divided by the smaller; when both are in the same unit, the units cancel.
-**Formula:** $k = \dfrac{d_\text{A}}{d_\text{M}} = \dfrac{2r_\text{A}}{2r_\text{M}} = \dfrac{r_\text{A}}{r_\text{M}}$
+**Formula:** $$\begin{aligned} k &= \dfrac{d_\text{A}}{d_\text{M}} \\ &= \dfrac{2r_\text{A}}{2r_\text{M}} \\ &= \dfrac{r_\text{A}}{r_\text{M}} \end{aligned}$$
 **Conversions:** Both radii are already in kilometres, so no conversions are needed; the factor $2$ cancels.
 **Substitution:** $k = \dfrac{695\,700\,\text{km}}{6\,378\,\text{km}} = 109.08$
 **Answer:** $k \approx 109$, three significant figures as in the table values. The values are from the MAFY table (Aurinkokunta); an answer within about $\pm 4\,\%$ is accepted.

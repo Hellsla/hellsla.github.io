@@ -2,7 +2,7 @@
 **Given:** mass of the metal ingot $m = 340\,\text{g}$ and volume $V = 30.0\,\text{cm}^3$
 **Find:** the density $\rho$ of the substance of the ingot in $\text{g/cm}^3$
 **Principle:** Density is mass per unit of volume. The ingot is made of one substance, so the ratio of its mass to its volume is the density of the substance.
-**Formula:** $\rho = \dfrac{m}{V}$
+**Formula:** $$\begin{aligned} \rho &= \dfrac{m}{V} \end{aligned}$$
 **Conversions:** Not needed: the mass is in grams and the volume in cubic centimetres, and the answer is asked in $\text{g/cm}^3$.
 **Substitution:** $\rho = \dfrac{340\,\text{g}}{30.0\,\text{cm}^3} = 11.33\,\tfrac{\text{g}}{\text{cm}^3}$
 **Answer:** $11.3\,\tfrac{\text{g}}{\text{cm}^3}$, three significant figures like the volume $30.0\,\text{cm}^3$.
@@ -12,7 +12,7 @@
 **Given:** volume of the aluminium plate $V = 35.0\,\text{cm}^3$ and density $\rho = 2.70\,\tfrac{\text{g}}{\text{cm}^3}$
 **Find:** the mass $m$ of the plate in grams
 **Principle:** The mass of a given substance is directly proportional to volume, and the constant of proportionality is the density. The plate is aluminium all the way through.
-**Formula:** Solve for the mass from the definition of density $\rho = \dfrac{m}{V}$: $m = \rho V$
+**Formula:** $$\begin{aligned} \rho &= \dfrac{m}{V} \\ \rho V &= m \\ m &= \rho V \end{aligned}$$
 **Conversions:** Not needed: the density is in $\text{g/cm}^3$ and the volume in $\text{cm}^3$, so the mass comes out directly in grams.
 **Substitution:** $m = 2.70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 35.0\,\text{cm}^3 = 94.5\,\text{g}$
 **Answer:** $94.5\,\text{g}$, three significant figures like the given values.
@@ -22,7 +22,7 @@
 **Given:** mass of the ethanol $m = 316\,\text{g}$ and density $\rho = 0.79\,\tfrac{\text{g}}{\text{cm}^3}$
 **Find:** the volume $V$ of the liquid in cubic centimetres
 **Principle:** Density is mass per unit of volume, so when the mass and the density are known, the volume is obtained by dividing the mass by the density.
-**Formula:** Solve for the volume from $\rho = \dfrac{m}{V}$: $V = \dfrac{m}{\rho}$
+**Formula:** $$\begin{aligned} \rho &= \dfrac{m}{V} \\ \rho V &= m \\ V &= \dfrac{m}{\rho} \end{aligned}$$
 **Conversions:** Not needed: the mass is in grams and the density in $\text{g/cm}^3$, so the gram cancels and $\text{cm}^3$ remains.
 **Substitution:** $V = \dfrac{316\,\text{g}}{0.79\,\tfrac{\text{g}}{\text{cm}^3}} = 400\,\text{cm}^3$
 **Answer:** $4.0 \cdot 10^2\,\text{cm}^3$, two significant figures, because the density $0.79\,\tfrac{\text{g}}{\text{cm}^3}$ is known to two figures.
@@ -32,7 +32,7 @@
 **Given:** volume of the slab $V = 0.75\,\text{m}^3$ and density of concrete $\rho = 2400\,\tfrac{\text{kg}}{\text{m}^3}$
 **Find:** the mass $m$ of the slab in kilograms
 **Principle:** The slab is concrete all the way through, so the mass is directly proportional to volume and the constant is the density.
-**Formula:** $\rho = \dfrac{m}{V}$, so $m = \rho V$
+**Formula:** $$\begin{aligned} \rho &= \dfrac{m}{V} \\ \rho V &= m \\ m &= \rho V \end{aligned}$$
 **Conversions:** Not needed: the density is in $\text{kg/m}^3$ and the volume in $\text{m}^3$, so the mass comes out in kilograms.
 **Substitution:** $m = 2400\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0.75\,\text{m}^3 = 1800\,\text{kg}$
 **Answer:** $1.8 \cdot 10^3\,\text{kg}$, two significant figures like the volume $0.75\,\text{m}^3$.
@@ -42,7 +42,7 @@
 **Given:** mass of the block of ice $m = 36.8\,\text{kg}$ and volume $V = 0.0400\,\text{m}^3$
 **Find:** the density $\rho$ of ice in $\text{kg/m}^3$
 **Principle:** Density is mass per unit of volume, and the block is made of one substance.
-**Formula:** $\rho = \dfrac{m}{V}$
+**Formula:** $$\begin{aligned} \rho &= \dfrac{m}{V} \end{aligned}$$
 **Conversions:** Not needed: the mass is in kilograms and the volume in cubic metres, and the answer is asked in $\text{kg/m}^3$.
 **Substitution:** $\rho = \dfrac{36.8\,\text{kg}}{0.0400\,\text{m}^3} = 920\,\tfrac{\text{kg}}{\text{m}^3}$
 **Answer:** $9.20 \cdot 10^2\,\tfrac{\text{kg}}{\text{m}^3}$, three significant figures like the given values.
@@ -52,7 +52,7 @@
 **Given:** dimensions of the ingot $10.0\,\text{cm}$, $5.0\,\text{cm}$ and $2.0\,\text{cm}$; density of gold $\rho = 19\,300\,\tfrac{\text{kg}}{\text{m}^3}$
 **Find:** the mass $m$ of the ingot in kilograms
 **Principle:** The ingot is gold all the way through, so the mass is density times volume. The volume of a rectangular block is the product of the three dimensions.
-**Formula:** $V = a\,b\,c$ and $m = \rho V = \rho\,a\,b\,c$
+**Formula:** $$\begin{aligned} \rho &= \dfrac{m}{V} \\ V &= a\,b\,c \\ m &= \rho V \\ &= \rho\,a\,b\,c \end{aligned}$$
 **Conversions:** The density is in $\text{kg/m}^3$, so the dimensions are converted to metres: $10.0\,\text{cm} = 10.0 \cdot 0.01\,\text{m} = 0.100\,\text{m}$, $5.0\,\text{cm} = 5.0 \cdot 0.01\,\text{m} = 0.050\,\text{m}$ and $2.0\,\text{cm} = 2.0 \cdot 0.01\,\text{m} = 0.020\,\text{m}$.
 **Substitution:** $$\begin{aligned} m &= 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0.100\,\text{m} \\ &\cdot 0.050\,\text{m} \cdot 0.020\,\text{m} \\ &= 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1.0 \cdot 10^{-4}\,\text{m}^3 \\ &= 1.93\,\text{kg} \end{aligned}$$
 **Answer:** $1.9\,\text{kg}$, two significant figures, because the dimensions $5.0\,\text{cm}$ and $2.0\,\text{cm}$ are known to two figures.
@@ -62,7 +62,7 @@
 **Given:** volume of the ethanol $V = 2.5\,\text{dm}^3$ and density $\rho = 790\,\tfrac{\text{kg}}{\text{m}^3}$
 **Find:** the mass $m$ of the liquid in kilograms
 **Principle:** The liquid is one substance, so the mass is directly proportional to volume and the constant is the density.
-**Formula:** $\rho = \dfrac{m}{V}$, so $m = \rho V$
+**Formula:** $$\begin{aligned} \rho &= \dfrac{m}{V} \\ \rho V &= m \\ m &= \rho V \end{aligned}$$
 **Conversions:** The unit of density is $\text{kg/m}^3$, so $2.5\,\text{dm}^3 = 2.5 \cdot 10^{-3}\,\text{m}^3 = 0.0025\,\text{m}^3$, because $1\,\text{dm}^3 = 10^{-3}\,\text{m}^3$.
 **Substitution:** $m = 790\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0.0025\,\text{m}^3 = 1.975\,\text{kg}$
 **Answer:** $2.0\,\text{kg}$, two significant figures like the volume $2.5\,\text{dm}^3$.
@@ -77,7 +77,7 @@
 After that, the water reaches the long mark halfway between the numbers $40$ and $60$, $V_2 = 50\,\text{ml}$.
 
 An answer is accepted if it deviates by at most $3\,\%$.
-**Formula:** $V = V_2 - V_1$ and $\rho = \dfrac{m}{V}$
+**Formula:** $$\begin{aligned} V &= V_2 - V_1 \\ \rho &= \dfrac{m}{V} \\ &= \dfrac{m}{V_2 - V_1} \end{aligned}$$
 **Conversions:** $V = 50\,\text{ml} - 40\,\text{ml} = 10\,\text{ml} = 10\,\text{cm}^3 = 10 \cdot 10^{-6}\,\text{m}^3 = 1.0 \cdot 10^{-5}\,\text{m}^3$ and $89.0\,\text{g} = 89.0 \cdot 10^{-3}\,\text{kg} = 0.0890\,\text{kg}$.
 **Substitution:** $\rho = \dfrac{0.0890\,\text{kg}}{1.0 \cdot 10^{-5}\,\text{m}^3} = 8900\,\tfrac{\text{kg}}{\text{m}^3}$
 **Answer:** $8.9 \cdot 10^3\,\tfrac{\text{kg}}{\text{m}^3}$, two significant figures, because the volume $10\,\text{ml}$ is read from the scale to about $1\,\text{ml}$.
@@ -87,7 +87,7 @@ An answer is accepted if it deviates by at most $3\,\%$.
 **Given:** mass of the empty flask $m_0 = 215\,\text{g}$, volume of the liquid $V = 250\,\text{cm}^3$ and total mass of the flask and the liquid $m_\text{tot} = 412\,\text{g}$
 **Find:** the density $\rho$ of the liquid in $\text{kg/m}^3$
 **Principle:** The balance shows the total mass of the flask and the liquid, but the density is calculated from the mass of the liquid alone. The mass of the flask is subtracted, and the rest is the mass of the liquid.
-**Formula:** $m = m_\text{tot} - m_0$ and $\rho = \dfrac{m}{V} = \dfrac{m_\text{tot} - m_0}{V}$
+**Formula:** $$\begin{aligned} m &= m_\text{tot} - m_0 \\ \rho &= \dfrac{m}{V} \\ &= \dfrac{m_\text{tot} - m_0}{V} \end{aligned}$$
 **Conversions:** $m = 412\,\text{g} - 215\,\text{g} = 197\,\text{g} = 197 \cdot 10^{-3}\,\text{kg} = 0.197\,\text{kg}$ and $250\,\text{cm}^3 = 250 \cdot 10^{-6}\,\text{m}^3 = 2.50 \cdot 10^{-4}\,\text{m}^3$.
 **Substitution:** $\rho = \dfrac{0.197\,\text{kg}}{2.50 \cdot 10^{-4}\,\text{m}^3} = 788\,\tfrac{\text{kg}}{\text{m}^3}$
 **Answer:** $788\,\tfrac{\text{kg}}{\text{m}^3}$, three significant figures like the difference of the masses, $197\,\text{g}$. The volume of the volumetric flask, $250\,\text{cm}^3$, is an exact value, so it does not limit the precision.
@@ -97,8 +97,7 @@ An answer is accepted if it deviates by at most $3\,\%$.
 **Given:** the copper object and the aluminium object have equal masses, $m_\text{Cu} = m_\text{Al} = m$; from the table $\rho_\text{Cu} = 8960\,\tfrac{\text{kg}}{\text{m}^3}$ and $\rho_\text{Al} = 2700\,\tfrac{\text{kg}}{\text{m}^3}$
 **Find:** the ratio of the volumes $V_\text{Al} : V_\text{Cu}$
 **Principle:** The mass of each object is density times volume. Because the masses are equal, the products of density and volume are equal, so a greater density means a smaller volume.
-**Formula:** $\rho_\text{Al} V_\text{Al} = \rho_\text{Cu} V_\text{Cu}$, from which
-$$\frac{V_\text{Al}}{V_\text{Cu}} = \frac{\rho_\text{Cu}}{\rho_\text{Al}}$$
+**Formula:** $$\begin{aligned} m &= \rho_\text{Al} V_\text{Al} \\ m &= \rho_\text{Cu} V_\text{Cu} \\ \rho_\text{Al} V_\text{Al} &= \rho_\text{Cu} V_\text{Cu} \\ \dfrac{V_\text{Al}}{V_\text{Cu}} &= \dfrac{\rho_\text{Cu}}{\rho_\text{Al}} \end{aligned}$$
 **Conversions:** Not needed: the densities are in the same unit and the mass $m$ cancels.
 **Substitution:** $\dfrac{V_\text{Al}}{V_\text{Cu}} = \dfrac{8960\,\tfrac{\text{kg}}{\text{m}^3}}{2700\,\tfrac{\text{kg}}{\text{m}^3}} = 3.32$
 **Answer:** $3.32$ times, three significant figures, because the densities in the table are given to three significant figures ($8.96\,\text{g/cm}^3$ and $2.70\,\text{g/cm}^3$).
@@ -108,8 +107,7 @@ $$\frac{V_\text{Al}}{V_\text{Cu}} = \frac{\rho_\text{Cu}}{\rho_\text{Al}}$$
 **Given:** aluminium $V_1 = 100\,\text{cm}^3$, $\rho_1 = 2.70\,\tfrac{\text{g}}{\text{cm}^3}$ and iron $V_2 = 50\,\text{cm}^3$, $\rho_2 = 7.87\,\tfrac{\text{g}}{\text{cm}^3}$; the volumes add up
 **Find:** the average density $\bar{\rho}$ of the object in $\text{g/cm}^3$
 **Principle:** Densities are not added or averaged directly. The masses and the volumes are added, and the density of the whole object is the total mass divided by the total volume.
-**Formula:** $m_i = \rho_i V_i$, and
-$$\bar{\rho} = \frac{m_1 + m_2}{V_1 + V_2} = \frac{\rho_1 V_1 + \rho_2 V_2}{V_1 + V_2}$$
+**Formula:** $$\begin{aligned} m_i &= \rho_i V_i \\ \bar{\rho} &= \dfrac{m_1 + m_2}{V_1 + V_2} \\ &= \dfrac{\rho_1 V_1 + \rho_2 V_2}{V_1 + V_2} \end{aligned}$$
 **Conversions:** Not needed: all quantities are in the units $\text{g}$ and $\text{cm}^3$.
 **Substitution:** The masses are $m_1 = 2.70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 100\,\text{cm}^3 = 270\,\text{g}$ and $m_2 = 7.87\,\tfrac{\text{g}}{\text{cm}^3} \cdot 50\,\text{cm}^3 = 393.5\,\text{g}$, so $\bar{\rho} = \dfrac{270\,\text{g} + 393.5\,\text{g}}{150\,\text{cm}^3} = 4.42\,\tfrac{\text{g}}{\text{cm}^3}$
 **Answer:** $4.42\,\tfrac{\text{g}}{\text{cm}^3}$, three significant figures like the densities in the table, $2.70\,\text{g/cm}^3$ and $7.87\,\text{g/cm}^3$. The volumes $100\,\text{cm}^3$ and $50\,\text{cm}^3$ are exact values, so they do not limit the precision.
@@ -119,8 +117,7 @@ $$\bar{\rho} = \frac{m_1 + m_2}{V_1 + V_2} = \frac{\rho_1 V_1 + \rho_2 V_2}{V_1 
 **Given:** mass of the wire $m = 0.50\,\text{kg}$, diameter $d = 1.0\,\text{mm}$, so radius $r = 0.50\,\text{mm}$; from the table $\rho = 8960\,\tfrac{\text{kg}}{\text{m}^3}$
 **Find:** the length $L$ of the wire in metres
 **Principle:** The volume is obtained from the mass and the density. The wire is a long cylinder whose volume is the area of the cross-section times the length, so the length is obtained by dividing the volume by the area.
-**Formula:** $V = \dfrac{m}{\rho}$, $A = \pi r^2$ and $V = A L$, so
-$$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
+**Formula:** $$\begin{aligned} \rho &= \dfrac{m}{V} \\ V &= \dfrac{m}{\rho} \\ A &= \pi r^2 \\ V &= A L \\ L &= \dfrac{V}{A} \\ &= \dfrac{m}{\rho\,\pi r^2} \end{aligned}$$
 **Conversions:** The radius is $r = 0.50\,\text{mm} = 0.50 \cdot 10^{-3}\,\text{m}$, so $r^2 = 2.5 \cdot 10^{-7}\,\text{m}^2$.
 **Substitution:** $V = \dfrac{0.50\,\text{kg}}{8960\,\tfrac{\text{kg}}{\text{m}^3}} = 5.58 \cdot 10^{-5}\,\text{m}^3$ and $A = \pi \cdot 2.5 \cdot 10^{-7}\,\text{m}^2 = 7.85 \cdot 10^{-7}\,\text{m}^2$, so $L = \dfrac{5.58 \cdot 10^{-5}\,\text{m}^3}{7.85 \cdot 10^{-7}\,\text{m}^2} = 71.1\,\text{m}$
 **Answer:** $71\,\text{m}$, two significant figures, because the diameter $1.0\,\text{mm}$ is known to two figures.
@@ -145,7 +142,7 @@ The oil does not mix with the water, so the density decides which liquid is on t
 **Given:** volume of the lead sinker $V = 5.00\,\text{cm}^3$ and density of lead $\rho = 11.3\,\tfrac{\text{g}}{\text{cm}^3}$
 **Find:** the mass $m$ of the sinker in grams
 **Principle:** The sinker is lead all the way through, so the mass is directly proportional to volume and the constant of proportionality is the density of lead.
-**Formula:** Solve for the mass from $\rho = \dfrac{m}{V}$: $m = \rho V$
+**Formula:** $$\begin{aligned} \rho &= \dfrac{m}{V} \\ \rho V &= m \\ m &= \rho V \end{aligned}$$
 **Conversions:** Not needed: the volume is in cubic centimetres and the density in $\text{g/cm}^3$, so $\text{cm}^3$ cancels and grams remain.
 **Substitution:** $m = 11.3\,\tfrac{\text{g}}{\text{cm}^3} \cdot 5.00\,\text{cm}^3 = 56.5\,\text{g}$
 **Answer:** $56.5\,\text{g}$, three significant figures like the given values.
@@ -158,7 +155,7 @@ The oil does not mix with the water, so the density decides which liquid is on t
 
 The line is drawn through the middle of the set of points, and the slope is calculated from points on the line, not from a single measurement point.
 **Reading the graph:** The points lie on a rising straight line with points on both sides of it. The fitted line passes approximately through the points $(0\,\text{cm}^3;\ 0\,\text{g})$ and $(50.0\,\text{cm}^3;\ 135\,\text{g})$. The points are read from the line and chosen far apart.
-**Formula:** $\rho = \dfrac{\Delta m}{\Delta V} = \dfrac{m_2 - m_1}{V_2 - V_1}$
+**Formula:** $$\begin{aligned} \rho &= \dfrac{\Delta m}{\Delta V} \\ &= \dfrac{m_2 - m_1}{V_2 - V_1} \end{aligned}$$
 **Conversions:** Not needed: the mass is in grams and the volume in cubic centimetres, like the requested unit $\text{g/cm}^3$.
 **Substitution:** $\rho = \dfrac{135\,\text{g} - 0\,\text{g}}{50.0\,\text{cm}^3 - 0\,\text{cm}^3} = 2.70\,\tfrac{\text{g}}{\text{cm}^3}$
 **Answer:** $2.7\,\tfrac{\text{g}}{\text{cm}^3}$, two significant figures, because the line is fitted by eye. A fit by eye varies, so about $2.62\text{–}2.78\,\text{g/cm}^3$ is a good answer. In the table the density of aluminium is $2.70\,\text{g/cm}^3$, so the substance is aluminium.
@@ -169,7 +166,7 @@ The line is drawn through the middle of the set of points, and the slope is calc
 **Find:** the density $\rho$ of the liquid in $\text{kg/m}^3$, the mass $m_0$ of the empty measuring cylinder and the reason why the line does not pass through the origin
 **Principle:** The balance shows the total mass of the measuring cylinder and the liquid, which follows the linear model $m_\text{tot} = \rho V + m_0$. The density of the liquid is the slope of the line, and the mass $m_0$ of the empty cylinder is the intercept of the line on the vertical axis.
 **Reading the graph:** The points lie on a rising straight line with points on both sides of it. The fitted line passes approximately through the points $(0\,\text{cm}^3;\ 85\,\text{g})$ and $(100\,\text{cm}^3;\ 177\,\text{g})$. The point $(0\,\text{cm}^3;\ 85\,\text{g})$ is where the line crosses the vertical axis.
-**Formula:** $\rho = \dfrac{\Delta m_\text{tot}}{\Delta V} = \dfrac{m_2 - m_1}{V_2 - V_1}$ and $m_0 = m_1 - \rho V_1$
+**Formula:** $$\begin{aligned} m_\text{tot} &= m_0 + \rho V \\ \rho &= \dfrac{\Delta m_\text{tot}}{\Delta V} \\ &= \dfrac{m_2 - m_1}{V_2 - V_1} \\ m_1 &= m_0 + \rho V_1 \\ m_0 &= m_1 - \rho V_1 \end{aligned}$$
 **Conversions:** $1\,\tfrac{\text{g}}{\text{cm}^3} = 1000\,\tfrac{\text{kg}}{\text{m}^3}$.
 **Substitution:** $\rho = \dfrac{177\,\text{g} - 85\,\text{g}}{100\,\text{cm}^3 - 0\,\text{cm}^3} = \dfrac{92\,\text{g}}{100\,\text{cm}^3} = 0.92\,\tfrac{\text{g}}{\text{cm}^3} = 920\,\tfrac{\text{kg}}{\text{m}^3}$ and $m_0 = 85\,\text{g}$ (where the line crosses the vertical axis)
 **Answer:** the density of the liquid is $9.2 \cdot 10^2\,\tfrac{\text{kg}}{\text{m}^3}$, two significant figures, because the line is fitted by eye.
@@ -195,7 +192,7 @@ In the table the density of copper is $8.96\,\tfrac{\text{g}}{\text{cm}^3}$, so 
 **Given:** mass of the object $m = 113\,\text{g}$, readings of the measuring cylinder $V_1 = 50.0\,\text{ml}$ and $V_2 = 62.0\,\text{ml}$, volume of the air bubble $V_\text{b} = 2.0\,\text{ml}$; from the table the density of copper $8.96\,\tfrac{\text{g}}{\text{cm}^3}$ and of lead $11.3\,\tfrac{\text{g}}{\text{cm}^3}$
 **Find:** the true density $\rho$ of the object in $\text{g/cm}^3$, the density $\rho'$ obtained by the student, its percentage error and the metals that the densities suggest
 **Principle:** In the water displacement method the volume is the difference of the readings $V_2 - V_1$. The bubble displaces water along with the object, so the difference includes both the volume of the object and the volume of the bubble. The mass is weighed separately, so the error comes only from the volume.
-**Formula:** $V' = V_2 - V_1$, $V = V' - V_\text{b}$, $\rho = \dfrac{m}{V}$ and $\rho' = \dfrac{m}{V'}$; the percentage error is $\dfrac{\rho' - \rho}{\rho} \cdot 100\,\%$
+**Formula:** $$\begin{aligned} V' &= V_2 - V_1 \\ V &= V' - V_\text{b} \\ \rho &= \dfrac{m}{V} \\ \rho' &= \dfrac{m}{V'} \\ p &= \dfrac{\rho' - \rho}{\rho} \cdot 100\,\% \end{aligned}$$
 **Conversions:** $1\,\text{ml} = 1\,\text{cm}^3$, so $V' = 12.0\,\text{cm}^3$ and $V_\text{b} = 2.0\,\text{cm}^3$.
 **Substitution:** $V' = 62.0\,\text{ml} - 50.0\,\text{ml} = 12.0\,\text{ml}$ and $V = 12.0\,\text{cm}^3 - 2.0\,\text{cm}^3 = 10.0\,\text{cm}^3$. The true density is $\rho = \dfrac{113\,\text{g}}{10.0\,\text{cm}^3} = 11.3\,\tfrac{\text{g}}{\text{cm}^3}$ and the student’s result is $\rho' = \dfrac{113\,\text{g}}{12.0\,\text{cm}^3} = 9.42\,\tfrac{\text{g}}{\text{cm}^3}$. The error is $\dfrac{9.42 - 11.3}{11.3} \cdot 100\,\% = -16.7\,\%$.
 **Answer:** The true density is $11.3\,\tfrac{\text{g}}{\text{cm}^3}$, three significant figures, because the mass and the readings are given to three figures.
@@ -211,7 +208,7 @@ The bubble can be removed by tapping the object, and it can be noticed by lookin
 **Given:** volume of the alloy object $V = 100\,\text{cm}^3$ and mass $m = 520\,\text{g}$; from the table $\rho_\text{Cu} = 8.96\,\tfrac{\text{g}}{\text{cm}^3}$ and $\rho_\text{Al} = 2.70\,\tfrac{\text{g}}{\text{cm}^3}$; the volumes add up
 **Find:** the volume $V_\text{Cu}$ of copper in cubic centimetres
 **Principle:** The total volume is the sum of the volumes of the parts and the total mass is the sum of the masses of the parts. The mass of each part is density times volume. There are two unknowns, $V_\text{Cu}$ and $V_\text{Al}$, so two equations are needed: the sum of the volumes and the sum of the masses.
-**Formula:** For the volumes $V_\text{Cu} + V_\text{Al} = V$ and for the masses $\rho_\text{Cu} V_\text{Cu} + \rho_\text{Al} V_\text{Al} = m$. Substituting $V_\text{Al} = V - V_\text{Cu}$ into the second equation gives $V_\text{Cu} = \dfrac{m - \rho_\text{Al} V}{\rho_\text{Cu} - \rho_\text{Al}}$
+**Formula:** $$\begin{aligned} V_\text{Cu} + V_\text{Al} &= V \\ \rho_\text{Cu} V_\text{Cu} + \rho_\text{Al} V_\text{Al} &= m \\ V_\text{Al} &= V - V_\text{Cu} \\ \rho_\text{Cu} V_\text{Cu} + \rho_\text{Al} (V - V_\text{Cu}) &= m \\ (\rho_\text{Cu} - \rho_\text{Al}) V_\text{Cu} &= m - \rho_\text{Al} V \\ V_\text{Cu} &= \dfrac{m - \rho_\text{Al} V}{\rho_\text{Cu} - \rho_\text{Al}} \end{aligned}$$
 **Conversions:** Not needed: the masses are in grams, the volumes in cubic centimetres and the densities in $\text{g/cm}^3$.
 **Substitution:** $V_\text{Cu} = \dfrac{520\,\text{g} - 2.70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 100\,\text{cm}^3}{8.96\,\tfrac{\text{g}}{\text{cm}^3} - 2.70\,\tfrac{\text{g}}{\text{cm}^3}} = \dfrac{250\,\text{g}}{6.26\,\tfrac{\text{g}}{\text{cm}^3}} = 39.9\,\text{cm}^3$
 **Answer:** $39.9\,\text{cm}^3$, three significant figures, because the densities in the table have three figures. The volume $100\,\text{cm}^3$ and the mass $520\,\text{g}$ are exact values, so they do not limit the precision. The volume of aluminium is $$\begin{aligned} V_\text{Al} &= 100\,\text{cm}^3 - 39.9\,\text{cm}^3 \\ &= 60.1\,\text{cm}^3 \end{aligned}$$.
@@ -262,7 +259,7 @@ Object B would float in water and the others would sink. The order by mass would
 **Given:** volume $V = 50\,\text{cm}^3$; from the table (MAFY table, Tiheyksiä, solids, copper) density $\rho = 8.96 \cdot 10^3\,\text{kg/m}^3$
 **Find:** mass $m$ in $\text{kg}$
 **Principle:** The density of a substance tells the mass per volume, so the mass is the density times the volume.
-**Formula:** $\rho = \dfrac{m}{V}$, so $m = \rho V$
+**Formula:** $$\begin{aligned} \rho &= \dfrac{m}{V} \\ \rho V &= m \\ m &= \rho V \end{aligned}$$
 **Conversions:** $1\,\text{cm}^3 = 10^{-6}\,\text{m}^3$, so $V = 50 \cdot 10^{-6}\,\text{m}^3 = 5.0 \cdot 10^{-5}\,\text{m}^3$.
 **Substitution:** $m = 8.96 \cdot 10^3\,\tfrac{\text{kg}}{\text{m}^3} \cdot 5.0 \cdot 10^{-5}\,\text{m}^3 = 0.448\,\text{kg}$
 **Answer:** $0.45\,\text{kg}$ (more precisely $0.448\,\text{kg}$), two significant figures as in the volume $50\,\text{cm}^3$. The answer is accepted within about $\pm 4\,\%$.
@@ -298,7 +295,7 @@ The graph has no single rising or falling curve on which the points lie.
 
 Even within the groups the order does not follow size: Mercury is the smallest planet but almost as dense as the Earth, and the smallest giant, Neptune, is the densest giant.
 
-**Formula:** $V = \dfrac{\pi d^3}{6}$, so $\rho = \dfrac{m}{V} = \dfrac{6m}{\pi d^3}$
+**Formula:** $$\begin{aligned} \rho &= \dfrac{m}{V} \\ V &= \dfrac{\pi d^3}{6} \\ \rho &= \dfrac{m}{\pi d^3 / 6} \\ &= \dfrac{6m}{\pi d^3} \end{aligned}$$
 
 **Conversions:** The diameter into metres and the mass into kilograms: for the Earth $d = 12\,756\,\text{km} = 1.2756\cdot10^{7}\,\text{m}$ and $m = 5.97\cdot10^{24}\,\text{kg}$, for Saturn $d = 120\,536\,\text{km} = 1.20536\cdot10^{8}\,\text{m}$ and $m = 568\cdot10^{24}\,\text{kg} = 5.68\cdot10^{26}\,\text{kg}$.
 
@@ -379,7 +376,7 @@ The slope is read from two points of the line far apart, for example the origin 
 
 **Model answer b):** The model is $m = kV$ with $k = 2.70\,\tfrac{\text{kg}}{\textsf{l}}$. The slope is the density of aluminium, $\rho = k$. The ratios $\dfrac{m}{V}$ are the same on every row to three figures, so the density does not depend on the size of the block. The small variation in the fourth figure comes from rounding the volume reading to $0.01\,\textsf{l}$.
 
-**Formula:** $\rho = \dfrac{m}{V}$, or $m = \rho V$; the prediction $m_\text{pred} = \rho V_\text{pred}$
+**Formula:** $$\begin{aligned} \rho &= \dfrac{m}{V} \\ m &= \rho V \\ m_\text{pred} &= \rho V_\text{pred} \end{aligned}$$
 
 **Conversions:** $1\,\textsf{l} = 1\,\text{dm}^3 = 10^{-3}\,\text{m}^3$, so
 

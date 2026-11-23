@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 345f81b9645c72ee
+CONTENT-HASH: 3dc160f22d876a08
 
 ## Blocking
-
 None.
 
 ## Polish
+None new.
 
-None.
-
-## Checked (delta 2026-11-16)
-
-- Read the diff against origin/main in context. Finnish quotation marks and the line on the meter's high resistance reworded ("mittari näyttää käytännössä indusoituneen jännitteen"): same reasoning, one reason kept (small current, little braking).
-- Nothing a student needs was lost and no instruction became unclear; no figure changed.
+## Checked (gate review 2026-11-23)
+`git diff HEAD` of the folder: investigation.md changed on two lines only (`\ ` to `\,` in 1 Wb and 0,10 m - 0,80 m); investigation.json and teacher.md unchanged. Presentation only; the learning path, controls, data tasks and phone/laptop usability judged in the earlier PASS (hash 345f81b9645c72ee) are unaffected.

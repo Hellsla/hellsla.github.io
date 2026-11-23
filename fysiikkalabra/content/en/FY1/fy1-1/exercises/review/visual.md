@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1f5c7e385a38fbc3
+CONTENT-HASH: b9c63226fe777121
 
 ## Blocking
 - none
@@ -8,9 +8,8 @@ CONTENT-HASH: 1f5c7e385a38fbc3
 - none
 
 ## Checked
-- Delta 8c (md-paragraphs), changed: Milky Way Answer (L2), rain-drops Answer (L3), eclipse Model answer (L1-9).
-- Opened contact-7.png, contact-8.png and at full size fy1-1-open-exercises-L2-1280-7.png, fy1-1-open-exercises-1280-10.png, fy1-1-open-exercises-L3-1280-5.png: each break is a separate paragraph inside the same labelled block, even spacing, labels not detached, $...$ and display chains intact, nothing clipped. No figures in the delta.
-- Not opened: the 390 px captures (no layout risk from plain paragraphs).
+- delta 8g (Kaava steps as aligned display blocks), economical sample from the lesson's review/shots (current for this hash): fi fy1-5 open-exercises-L3-1280-4 (seven rows), fi fy1-6 L3-1280-7 (five rows with a subscripted left side), en fy1-1 L3-1280-4 and fy1-3 L3-1280-3 (Substitution blocks), fi-easy fy1-7 L3-1280-5 (five single-relation rows).
+- Rows align at the relation sign, fractions and subscripts legible, no clipping or overflow, blocks sit apart from the text, trailing sentences read as their own line; Muunnokset/Sijoitus/Vastaus/Reasonableness survived. This lesson's own capture was not opened; judged from the sampled blocks, which use the same shared component. No figures in the delta.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 5

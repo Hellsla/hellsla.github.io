@@ -1,21 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 96467992e17e2aa4
+CONTENT-HASH: 2554de77f83e90de
 
 ## Blocking
 None.
 
 ## Polish
-None.
 
-## Checked (delta 2026-10-31)
-- `topic` "liike" fits the physics area.
-- Guides mittausohjelma, kuvaaja, nopeus-datasta fit reading velocities from motion-sensor data; taulukkolaskenta fits the momentum sums.
-- Report link `[[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]` fits the report task; no physics changed.
+- investigation.md line 218: the example question "onko liikemäärä jälkeen useimmiten pienempi kuin ennen?" would fit the negative case better with "suuruus".
+- Model graph: the slope is drawn at about 31° (carried from the previous report). Equal axis scales would show "kulmakerroin 1" more clearly.
 
-## Delta 2 (2026-10-31)
-- Raportoi: the tvt-tyoselostus link moved to its own sentence; wording only, no physics changed.
+## Checked
 
-## Delta 4 (2026-10-31)
-
-- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
-- Momentum sums as GA Pro calculated columns; consistent with json.
+- teacher.md, first velocity bullet: the first sentence now reads "vierimisvastus näkyy järjestelmällisenä erona kokonaisliikemäärissä ennen törmäystä ja sen jälkeen". It claims no sign, so it is correct, and it no longer contradicts the conditioned sign rule that follows it.
+- Sign rule at investigation.md line 240 and in teacher.md: if each cart moves along $p_\text{kok}$ or is at rest before the collision, the net rolling-resistance force before and after the collision opposes $p_\text{kok}$.
+  - After the collision, only the lighter cart can bounce back, for any $0 \le e \le 1$.
+  - So $|p'_\text{kok}| < |p_\text{kok}|$ in the measurement: the points lie below the line for $p>0$ and above it for $p<0$.
+  - My script checked 200 000 random collisions of this kind (read 0,5 s off the collision, a stopping cart clamped at zero) and found 0 violations.
+  - Bounce case with the target at rest and $m_1<m_2$: 0,205 → 0,195, still a decrease.
+- Head-on case: before the collision the friction impulses partly cancel ($\propto m_1-m_2$). After it, they depend on the directions of the velocities. "riippuu vaunujen massoista ja nopeuksista" is correct in both files.
+- The first sentence at line 240 ("poikkeavat järjestelmällisesti", no sign) is correct.
+- The model-figure aria-label ("Mallikuvaaja … mallin mukaan") matches the figure. Its claim that a point lies below the line when the magnitude decreases covers only the positive quadrant shown, so it is correct.
+- I found no other sign claim on this point in investigation.md, teacher.md or investigation.json; lines 125, 164 and 256 are only qualitative.

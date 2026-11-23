@@ -72,45 +72,11 @@ The skin therefore receives a lot of energy in a short time, although the air te
 The only horizontal force is static friction, and it must point backwards, because it slows the box down as much as the brakes slow down the trailer. There is no forward “force of motion”: the box would continue moving forwards if there were no friction.
 
 <svg data-fig="fy9-harjoituskoe-s2-fbd" viewBox="0 0 600 330" role="img" aria-label="Free-body diagram: a toolbox as a rectangle on the horizontal bed of a trailer, while the trailer brakes and moves to the right. The weight G points from the centre of the box straight down, the normal force N from the bottom surface straight up and is as long as the weight, and the static friction F μ0 points from the lower left corner of the bottom surface to the left, that is backwards. Above the box a blue velocity arrow v points to the right and an orange acceleration arrow a to the left." style="max-width:100%;font-size:24px">
-  <line x1="150" y1="241" x2="520" y2="241" stroke="#1f2933" stroke-width="3" stroke-linecap="round"/>
-  <line x1="150" y1="241" x2="140" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="166" y1="241" x2="156" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="182" y1="241" x2="172" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="198" y1="241" x2="188" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="214" y1="241" x2="204" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="230" y1="241" x2="220" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="246" y1="241" x2="236" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="262" y1="241" x2="252" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="278" y1="241" x2="268" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="294" y1="241" x2="284" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="310" y1="241" x2="300" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="326" y1="241" x2="316" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="342" y1="241" x2="332" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="358" y1="241" x2="348" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="374" y1="241" x2="364" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="390" y1="241" x2="380" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="406" y1="241" x2="396" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="422" y1="241" x2="412" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="438" y1="241" x2="428" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="454" y1="241" x2="444" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="470" y1="241" x2="460" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="486" y1="241" x2="476" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="502" y1="241" x2="492" y2="253" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="255" y="151" width="150" height="90" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="330" y1="196" x2="330" y2="296.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M330,313.5 L322,295.5 L338,295.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <image href="pics/fy9/fy9-harjoituskoe-sovella-fy9-harjoituskoe-s2-fbd.webp" x="3.8" y="0" width="596.2" height="342.6" preserveAspectRatio="none"/>
   <foreignObject x="343.5" y="299" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="370" y1="241" x2="370" y2="140.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M370,123.5 L378,141.5 L362,141.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="383.5" y="113" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
-  <line x1="255" y1="241" x2="224" y2="241" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M207,241 L225,233 L225,249 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="172" y="200.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_{\mu 0}$</div></foreignObject>
-  <line x1="440" y1="40" x2="508" y2="40" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M497,46.5 L510,40 L497,33.5" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="517.5" y="25.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <line x1="220" y1="40" x2="162" y2="40" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M173,33.5 L160,40 L173,46.5" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="121.5" y="25.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
 </svg>
 

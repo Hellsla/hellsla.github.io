@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b9f6ab4d8dcb8ba1
-SCOPE: delta added-exercise from 813984b325501084 base 81db4a6fd727
+CONTENT-HASH: 15b6140af100a90a
 
 ## Blocking
 - none
@@ -9,9 +8,8 @@ SCOPE: delta added-exercise from 813984b325501084 base 81db4a6fd727
 - none
 
 ## Checked
-- fy1-5-L1-09 only (delta, added exercise); hash the same at start and end.
-- Recomputed independently: s = vt = 1482 m/s · 2,0 s = 2964 m = 2,96 km (key 2.9646).
-- MAFY speed of sound in water at 20 °C, 1482,3 m/s, is right; the hint names the right table.
-- Model: uniform motion s = vt, which the task states ("tasaisella nopeudella"). This is in FY1 scope.
-- Rounding: 3,0 km, two figures as in t = 2,0 s, is justified; it is 1,2 % from the key, inside the tolerance 0,04.
-- Conversion m → km is right. Reasonableness: about 1,5 km/s, 4,3 times the speed in air, which is a real check.
+- Round-1 Blocking fixed: in fy1-5-L1-09 (solutions.md:219) the Kaava step now runs $v = \dfrac{s}{t}$ → $s = vt$. It starts from the definition and ends on the form the Sijoitus uses, like the other L1 tasks. The en and fi-easy versions got the same change.
+- I recomputed it myself: $1482{,}3\,\text{m/s} \cdot 2{,}0\,\text{s} = 2964{,}6\,\text{m} = 2{,}96\,\text{km}$, given as $3{,}0\,\text{km}$ with two significant figures. The answer, unit and tolerance are unchanged.
+- I read the other Kaava steps on disk in their aligned form (L1-01–L1-08, L2-01–L2-08, L3-01–L3-03). None changed since round 1, and they are still correct as judged then.
+- The packet's diff shows the aligned blocks flattened into one line. On disk each block is a proper `aligned` environment with one equation per row.
+- The hash was 15b6140af100a90a at the start and at the end.

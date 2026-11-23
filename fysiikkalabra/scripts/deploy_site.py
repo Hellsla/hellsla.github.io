@@ -3,7 +3,7 @@
 
 The source stays in this repository; the workflow .github/workflows/ruukkilabra-deploy.yml runs this script after the
 fysiikkalabra-ci run of an approved main commit has passed, and pushes the result to the separate public repository
-that GitHub Pages serves at the domain. The published root is the committed site/ folder, so the front page is
+that GitHub Pages serves at the domain. The published root is the built site/ folder (CI builds it; it is not committed), so the front page is
 https://ruukkilab.fi/ and every relative link works as it does under site/.
 
     python scripts/deploy_site.py OUT [--models DIR] [--audio DIR]

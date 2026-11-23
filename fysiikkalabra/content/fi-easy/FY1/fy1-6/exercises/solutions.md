@@ -2,7 +2,7 @@
 **Annettu:** pallo lähtee levosta, $t = 3{,}0\,\text{s}$, putoamiskiihtyvyys $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** pallon nopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Ilmanvastus jätetään huomiotta, joten pallo on vapaassa pudotuksessa. Silloin nopeus kasvaa joka sekunti saman verran. Levosta lähteneen kappaleen nopeus on suoraan verrannollinen aikaan.
-**Kaava:** $v = g\,t$. Kaava on jo ratkaistu kysytyn nopeuden suhteen.
+**Kaava:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v}{t} \\ v &= g\,t \end{aligned}$$
 **Muunnokset:** Aika on sekunteina ja $g$ yksikössä $\text{m/s}^2$. Tulos tulee siis suoraan yksikössä $\text{m/s}$. Muunnoksia ei tarvita.
 **Sijoitus:** $v = 9{,}81\,\text{m/s}^2 \cdot 3{,}0\,\text{s} = 29{,}43\,\text{m/s}$
 **Vastaus:** $29\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajassa $3{,}0\,\text{s}$.
@@ -12,7 +12,7 @@
 **Annettu:** omena lähtee levosta, $t = 0{,}80\,\text{s}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** omenan nopeus $v$ osuessaan maahan yksikössä $\text{m/s}$
 **Periaate:** Ilmanvastus jätetään huomiotta, joten omena on vapaassa pudotuksessa ja lähtee levosta. Silloin nopeus on putoamiskiihtyvyyden ja kuluneen ajan tulo.
-**Kaava:** $v = g\,t$. Kaava on jo ratkaistu kysytyn nopeuden suhteen.
+**Kaava:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v}{t} \\ v &= g\,t \end{aligned}$$
 **Muunnokset:** Aika on annettu sekunteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $v = 9{,}81\,\text{m/s}^2 \cdot 0{,}80\,\text{s} = 7{,}848\,\text{m/s}$
 **Vastaus:** $7{,}8\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajassa $0{,}80\,\text{s}$.
@@ -22,7 +22,7 @@
 **Annettu:** kivi lähtee levosta, $t = 4{,}0\,\text{s}$, Kuun putoamiskiihtyvyys $g_\text{Kuu} = 1{,}62\,\text{m/s}^2$ (tehtävänannosta)
 **Kysytty:** kiven nopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Kuussa ei ole ilmakehää, joten kivi putoaa vapaasti. Levosta lähteneen vapaasti putoavan kappaleen nopeus on kiihtyvyyden ja ajan tulo. Kiihtyvyys on tässä Kuun $g$.
-**Kaava:** $v = g_\text{Kuu}\,t$. Kaava on jo ratkaistu kysytyn nopeuden suhteen.
+**Kaava:** $$\begin{aligned} g_\text{Kuu} &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v}{t} \\ v &= g_\text{Kuu}\,t \end{aligned}$$
 **Muunnokset:** Aika on sekunteina ja kiihtyvyys yksikössä $\text{m/s}^2$. Tulos tulee siis yksikössä $\text{m/s}$. Muunnoksia ei tarvita.
 **Sijoitus:** $v = 1{,}62\,\text{m/s}^2 \cdot 4{,}0\,\text{s} = 6{,}48\,\text{m/s}$
 **Vastaus:** $6{,}5\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajassa $4{,}0\,\text{s}$.
@@ -33,7 +33,7 @@
 **Kysytty:** putoamiskiihtyvyys $g$ yksikössä $\text{m/s}^2$
 **Periaate:** Vapaasti putoavan kappaleen nopeus kasvaa joka sekunti saman verran, joten $(t, v)$-kuvaaja on suora. Suoran kulmakerroin on nopeuden muutos jaettuna ajan muutoksella. Se on putoamiskiihtyvyys.
 **Kuvaajan lukeminen:** Kaksi annettua pistettä ovat suoralla. Nousu $\Delta v = v_2 - v_1$ luetaan pystysuunnassa. Eteneminen $\Delta t = t_2 - t_1$ luetaan vaakasuunnassa. Pisteet ovat kaukana toisistaan, joten lukuvirhe jää pieneksi.
-**Kaava:** $g = \dfrac{\Delta v}{\Delta t} = \dfrac{v_2 - v_1}{t_2 - t_1}$
+**Kaava:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v_2 - v_1}{t_2 - t_1} \end{aligned}$$
 **Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$ ja ajat sekunteina. Tulos tulee siis yksikössä $\text{m/s}^2$. Muunnoksia ei tarvita.
 **Sijoitus:** $g = \dfrac{49\,\text{m/s} - 0\,\text{m/s}}{5{,}0\,\text{s} - 0\,\text{s}} = \dfrac{49\,\text{m/s}}{5{,}0\,\text{s}} = 9{,}8\,\text{m/s}^2$
 **Vastaus:** $9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten luvuissa $49\,\text{m/s}$ ja $5{,}0\,\text{s}$.
@@ -43,7 +43,7 @@
 **Annettu:** kappale lähtee levosta, $t = 6{,}0\,\text{s}$, Marsin putoamiskiihtyvyys $g_\text{Mars} = 3{,}71\,\text{m/s}^2$ (tehtävänannosta)
 **Kysytty:** kappaleen nopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Tehtävässä ei ole ilmanvastusta, joten kappale on vapaassa pudotuksessa. Nopeus kasvaa joka sekunti saman verran. Kun kappale lähtee levosta, nopeus on $g\,t$ Marsin $g$:llä.
-**Kaava:** $v = g_\text{Mars}\,t$. Kaava on jo ratkaistu kysytyn nopeuden suhteen.
+**Kaava:** $$\begin{aligned} g_\text{Mars} &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v}{t} \\ v &= g_\text{Mars}\,t \end{aligned}$$
 **Muunnokset:** Aika on sekunteina ja kiihtyvyys yksikössä $\text{m/s}^2$, joten muunnoksia ei tarvita.
 **Sijoitus:** $v = 3{,}71\,\text{m/s}^2 \cdot 6{,}0\,\text{s} = 22{,}26\,\text{m/s}$
 **Vastaus:** $22\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajassa $6{,}0\,\text{s}$.
@@ -53,7 +53,7 @@
 **Annettu:** pallo lähtee levosta, loppunopeus $v = 12{,}0\,\text{m/s}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** pudotuksen kesto $t$ yksikössä $\text{s}$
 **Periaate:** Ilmanvastus jätetään huomiotta, joten pallo on vapaassa pudotuksessa. Levosta lähteneen kappaleen nopeus on $v = g\,t$. Kun nopeus tunnetaan, aika saadaan ratkaisemalla kaava ajan suhteen.
-**Kaava:** $v = g\,t$, josta $t = \dfrac{v}{g}$
+**Kaava:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v}{t} \\ t &= \dfrac{v}{g} \end{aligned}$$
 **Muunnokset:** Nopeus on yksikössä $\text{m/s}$ ja $g$ yksikössä $\text{m/s}^2$. Osamäärän yksikkö on siis $\dfrac{\text{m/s}}{\text{m/s}^2} = \text{s}$. Muunnoksia ei tarvita.
 **Sijoitus:** $t = \dfrac{12{,}0\,\text{m/s}}{9{,}81\,\text{m/s}^2} = 1{,}223\,\text{s}$
 **Vastaus:** $1{,}22\,\text{s}$, kolme merkitsevää numeroa kuten nopeudessa $12{,}0\,\text{m/s}$.
@@ -64,7 +64,7 @@
 **Kysytty:** aika $t_\text{B}$, jonka kuluttua planeetan B kappaleella on sama nopeus kuin planeetan A kappaleella ajan $t_\text{A}$ kuluttua
 **Periaate:** Vapaassa pudotuksessa levosta nopeus kasvaa joka sekunti saman verran. Siksi nopeus on $v = g\,t$. Kuvaaja $(t, v)$ on origosta alkava suora, ja sen kulmakerroin on planeetan $g$. Lasketaan ensin A:n nopeus. Sitten lasketaan aika, jonka B tarvitsee samaan nopeuteen.
 **Kuvaajan lukeminen:** Planeetan A suora kulkee ruudukon risteyksen $(5{,}0\,\text{s};\, 20\,\text{m/s})$ kautta. Siksi A:n kappaleella on $v_\text{A} = 20\,\text{m/s}$ ajan $5{,}0\,\text{s}$ kuluttua. Planeetan B suora kulkee risteyksen $(5{,}0\,\text{s};\, 40\,\text{m/s})$ kautta. Lukemat ovat ruudukon risteyksissä. Siksi ne ovat tarkkoja.
-**Kaava:** $g_\text{B} = \dfrac{v}{t}$ ja $t_\text{B} = \dfrac{v_\text{A}}{g_\text{B}}$
+**Kaava:** $$\begin{aligned} g_\text{B} &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v}{t} \\ v_\text{A} &= g_\text{B}\,t_\text{B} \\ t_\text{B} &= \dfrac{v_\text{A}}{g_\text{B}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja ajat sekunteina.
 **Sijoitus:** $g_\text{B} = \dfrac{40\,\text{m/s}}{5{,}0\,\text{s}} = 8{,}0\,\text{m/s}^2$ ja $t_\text{B} = \dfrac{20\,\text{m/s}}{8{,}0\,\text{m/s}^2} = 2{,}5\,\text{s}$
 **Vastaus:** $2{,}5\,\text{s}$, kaksi merkitsevää numeroa kuten luetuissa arvoissa ja ajassa $5{,}0\,\text{s}$.
@@ -74,7 +74,7 @@
 **Annettu:** nopeus alussa $v_1 = 12{,}0\,\text{m/s}$, aikaväli $\Delta t = 1{,}50\,\text{s}$, $g = 9{,}81\,\text{m/s}^2$, ei ilmanvastusta
 **Kysytty:** nopeus $v_2$ yksikössä $\text{m/s}$ aikavälin lopussa
 **Periaate:** Kappale ei lähde tässä levosta, mutta kiihtyvyys on silti vakio $g$. Nopeus kasvaa siis joka sekunti saman verran. Nopeuden muutos aikavälillä on $\Delta v = g\,\Delta t$. Uusi nopeus on vanha nopeus lisättynä muutoksella.
-**Kaava:** $v_2 = v_1 + \Delta v$ ja $\Delta v = g\,\Delta t$, joten $v_2 = v_1 + g\,\Delta t$
+**Kaava:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ \Delta v &= g\,\Delta t \\ v_2 - v_1 &= g\,\Delta t \\ v_2 &= v_1 + g\,\Delta t \end{aligned}$$
 **Muunnokset:** Ajat ovat sekunteina ja nopeudet yksikössä $\text{m/s}$, joten muunnoksia ei tarvita.
 **Sijoitus:** $v_2 = 12{,}0\,\text{m/s} + 9{,}81\,\text{m/s}^2 \cdot 1{,}50\,\text{s} = 12{,}0\,\text{m/s} + 14{,}715\,\text{m/s} = 26{,}715\,\text{m/s}$
 **Vastaus:** $26{,}7\,\text{m/s}$, kolme merkitsevää numeroa kuten tiedoissa $12{,}0\,\text{m/s}$ ja $1{,}50\,\text{s}$.
@@ -84,7 +84,7 @@
 **Annettu:** mittaukset $(t_1;\, v_1) = (1{,}0\,\text{s};\, 9{,}7\,\text{m/s})$ ja $(t_2;\, v_2) = (3{,}0\,\text{s};\, 29{,}3\,\text{m/s})$
 **Kysytty:** putoamiskiihtyvyys $g$ yksikössä $\text{m/s}^2$
 **Periaate:** Vapaassa pudotuksessa nopeus kasvaa joka sekunti yhtä paljon. Siksi $g$ on nopeuden muutos jaettuna ajan muutoksella. Voit laskea sen mistä tahansa kahdesta mittauksesta. Se onnistuu myös silloin, kun kumpikaan mittaus ei ole hetkellä nolla.
-**Kaava:** $g = \dfrac{\Delta v}{\Delta t} = \dfrac{v_2 - v_1}{t_2 - t_1}$
+**Kaava:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v_2 - v_1}{t_2 - t_1} \end{aligned}$$
 **Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$ ja ajat sekunteina. Tulos tulee siis yksikössä $\text{m/s}^2$. Muunnoksia ei tarvita.
 **Sijoitus:** $g = \dfrac{29{,}3\,\text{m/s} - 9{,}7\,\text{m/s}}{3{,}0\,\text{s} - 1{,}0\,\text{s}} = \dfrac{19{,}6\,\text{m/s}}{2{,}0\,\text{s}} = 9{,}8\,\text{m/s}^2$
 **Vastaus:** $9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa, koska aikaväli $2{,}0\,\text{s}$ on annettu kahdella numerolla.
@@ -94,7 +94,7 @@
 **Annettu:** kaksi palloa tyhjiössä, massat $m_1 = 0{,}50\,\text{kg}$ ja $m_2 = 4{,}0\,\text{kg}$, molemmat lähtevät levosta, $t = 1{,}5\,\text{s}$
 **Kysytty:** nopeuksien suhde $\dfrac{v_2}{v_1}$ (ei yksikköä)
 **Periaate:** Tyhjiössä ei ole ilmanvastusta, joten kumpikin pallo on vapaassa pudotuksessa. Putoamiskiihtyvyys $g$ on kaikille kappaleille sama massasta riippumatta. Kummankin nopeus on siis $g\,t$.
-**Kaava:** $v_1 = g\,t$ ja $v_2 = g\,t$, joten $\dfrac{v_2}{v_1} = \dfrac{g\,t}{g\,t}$
+**Kaava:** $$\begin{aligned} v_1 &= g\,t \\ v_2 &= g\,t \\ \dfrac{v_2}{v_1} &= \dfrac{g\,t}{g\,t} \\ &= 1 \end{aligned}$$
 **Muunnokset:** Ajat ovat sekunteina, ja massoja ei tarvita laskussa. Muunnoksia ei tarvita.
 **Sijoitus:** $v_1 = v_2 = 9{,}81\,\text{m/s}^2 \cdot 1{,}5\,\text{s} = 14{,}715\,\text{m/s}$, joten $\dfrac{v_2}{v_1} = \dfrac{14{,}715\,\text{m/s}}{14{,}715\,\text{m/s}} = 1{,}0$
 **Vastaus:** $1{,}0$ eli nopeudet ovat yhtä suuret. Suhde on tarkalleen yksi, koska kummankin pallon nopeus on $g\,t$. Massa ei ole mukana kaavassa. Siksi tulos ei riipu ajan $1{,}5\,\text{s}$ tarkkuudesta.
@@ -104,7 +104,7 @@
 **Annettu:** planeetalla ei ole ilmakehää, kivi lähtee levosta, $v_1 = 14{,}8\,\text{m/s}$ hetkellä $t_1 = 4{,}0\,\text{s}$, haluttu nopeus $v_2 = 30{,}0\,\text{m/s}$
 **Kysytty:** aika $t_2$ yksikössä $\text{s}$, jolloin nopeus on $30{,}0\,\text{m/s}$
 **Periaate:** Ilmakehää ei ole, joten kivi on vapaassa pudotuksessa. Nopeus on suoraan verrannollinen aikaan: $v = g\,t$. Planeetan $g$:tä ei tunneta. Ratkaise se ensin annetusta mittauksesta. Käytä sitä sitten ajan laskemiseen.
-**Kaava:** $g = \dfrac{v_1}{t_1}$ ja $t_2 = \dfrac{v_2}{g}$, joten $t_2 = \dfrac{v_2\,t_1}{v_1}$
+**Kaava:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v_1}{t_1} \\ v_2 &= g\,t_2 \\ t_2 &= \dfrac{v_2}{g} \end{aligned}$$
 **Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$ ja ajat sekunteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $g = \dfrac{14{,}8\,\text{m/s}}{4{,}0\,\text{s}} = 3{,}70\,\text{m/s}^2$ ja $t_2 = \dfrac{30{,}0\,\text{m/s}}{3{,}70\,\text{m/s}^2} = 8{,}108\,\text{s}$
 **Vastaus:** $8{,}1\,\text{s}$, kaksi merkitsevää numeroa. Aika $4{,}0\,\text{s}$ on annettu kahdella numerolla, ja se rajoittaa tulosta.
@@ -114,7 +114,7 @@
 **Annettu:** mitattu nopeus ilmassa $v_\text{mitattu} = 25{,}0\,\text{m/s}$ hetkellä $t = 3{,}00\,\text{s}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** erotus $\Delta v = v_\text{vapaa} - v_\text{mitattu}$ yksikössä $\text{m/s}$
 **Periaate:** Vapaassa pudotuksessa ilman ilmanvastusta levosta lähtevän kappaleen nopeus olisi $v_\text{vapaa} = g\,t$. Ilma hidastaa palloa, joten mitattu nopeus on pienempi. Erotus kertoo, kuinka paljon ilmanvastus pienentää nopeutta.
-**Kaava:** $v_\text{vapaa} = g\,t$ ja $\Delta v = g\,t - v_\text{mitattu}$
+**Kaava:** $$\begin{aligned} v_\text{vapaa} &= g\,t \\ \Delta v &= v_\text{vapaa} - v_\text{mitattu} \\ &= g\,t - v_\text{mitattu} \end{aligned}$$
 **Muunnokset:** Aika on sekunteina ja nopeudet yksikössä $\text{m/s}$, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Delta v = 9{,}81\,\text{m/s}^2 \cdot 3{,}00\,\text{s} - 25{,}0\,\text{m/s} = 29{,}43\,\text{m/s} - 25{,}0\,\text{m/s} = 4{,}43\,\text{m/s}$
 **Vastaus:** $4{,}4\,\text{m/s}$. Aika $3{,}00\,\text{s}$ antaa nopeudelle $29{,}43\,\text{m/s}$ kolme merkitsevää numeroa. Erotuksella on kuitenkin yhtä monta desimaalia kuin heikoimmalla luvulla eli mitatulla arvolla $25{,}0\,\text{m/s}$.
@@ -135,7 +135,7 @@
 **Annettu:** nopeuden kasvu sekunnissa on $g = 9{,}81\,\text{m/s}^2$ eli $9{,}81\,\text{m/s}$ joka sekunti
 **Kysytty:** nopeuden kasvu sekunnissa yksikössä $\text{km/h}$
 **Periaate:** Putoamiskiihtyvyys kertoo nopeuden kasvun sekunnissa. Sen voi ilmoittaa toisessa yksikössä. Silloin nopeus muunnetaan yksiköstä $\text{m/s}$ yksikköön $\text{km/h}$.
-**Kaava:** $\Delta v = g\,\Delta t$. Kaava on jo ratkaistu kysytyn suureen suhteen.
+**Kaava:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ \Delta v &= g\,\Delta t \end{aligned}$$
 **Muunnokset:** Kun $\Delta t = 1\,\text{s}$, nopeus kasvaa $g$:n verran. Nopeudella $1\,\text{m/s}$ kuljetaan tunnissa ($3600\,\text{s}$) $3600\,\text{m} = 3{,}6\,\text{km}$. Siis $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
 **Sijoitus:** $\Delta v = 9{,}81\,\text{m/s}^2 \cdot 1\,\text{s} = 9{,}81 \cdot 1\,\text{m/s} = 9{,}81 \cdot 3{,}6\,\text{km/h} = 35{,}316\,\text{km/h}$
 **Vastaus:** $35{,}3\,\text{km/h}$ sekunnissa, kolme merkitsevää numeroa kuten luvussa $9{,}81$.
@@ -146,7 +146,7 @@
 **Kysytty:** putoamiskiihtyvyys $g$ yksikössä $\text{m/s}^2$ ja sen vertailu taulukkoarvoon $9{,}81\,\text{m/s}^2$
 **Periaate:** Kappale lähtee levosta ja ilmanvastus on pieni. Siksi pisteisiin sopii suora $v = g\,t$. Suoran kulmakerroin on putoamiskiihtyvyys. Suora piirretään pisteiden joukon keskeltä. Kulmakerroin lasketaan suoran pisteistä, ei mittauspisteistä.
 **Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle. Suoran molemmille puolille jää pisteitä. Suora kulkee lähes origon kautta. Sovitettu suora kulkee likimain pisteiden $(0\,\text{s};\ 0\,\text{m/s})$ ja $(0{,}60\,\text{s};\ 5{,}85\,\text{m/s})$ kautta. Ne luetaan suoralta ja valitaan kaukana toisistaan.
-**Kaava:** $g = \dfrac{\Delta v}{\Delta t} = \dfrac{v_2 - v_1}{t_2 - t_1}$
+**Kaava:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v_2 - v_1}{t_2 - t_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: nopeus on yksikössä $\text{m/s}$ ja aika yksikössä $\text{s}$.
 **Sijoitus:** $g = \dfrac{5{,}85\,\text{m/s} - 0\,\text{m/s}}{0{,}60\,\text{s} - 0\,\text{s}} = 9{,}75\,\text{m/s}^2$
 **Vastaus:** $g \approx 9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa, koska suora sovitetaan silmällä. Silmällä sovitus vaihtelee, joten noin $9{,}3\text{–}10{,}2\,\text{m/s}^2$ on hyvä vastaus. Tulos $9{,}75\,\text{m/s}^2$ on $0{,}6\,\%$ pienempi kuin taulukkoarvo $9{,}81\,\text{m/s}^2$. Ero on alle prosentin. Mittaus tukee siis mallia $v = g\,t$. Mittauspisteitä jää suoran molemmille puolille. Se sopii satunnaiseen hajontaan.
@@ -157,7 +157,7 @@
 **Kysytty:** aika $t_0$ pudotuksen alun ja mittauksen alun välillä yksikössä $\text{s}$
 **Periaate:** Nopeus kasvaa tasaisesti, joten pisteisiin sopii suora $v = k\,t + b$. Sen kulmakerroin $k$ on putoamiskiihtyvyys $g$. Suora ei kulje origon kautta, koska kappale liikkui jo hetkellä $t = 0$. Vakiotermi $b$ on nopeus mittauksen alkaessa. Levosta lähtenyt kappale saavuttaa nopeuden $b$ ajassa $\dfrac{b}{g}$. Tämä on aika pudotuksen alusta mittauksen alkuun.
 **Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle. Suora leikkaa $v$-akselin kohdassa $b \approx 2{,}0\,\text{m/s}$. Sovitettu suora kulkee likimain pisteiden $(0{,}0\,\text{s};\ 2{,}0\,\text{m/s})$ ja $(0{,}5\,\text{s};\ 6{,}9\,\text{m/s})$ kautta. Siis $k = \dfrac{6{,}9\,\text{m/s} - 2{,}0\,\text{m/s}}{0{,}5\,\text{s} - 0\,\text{s}} = 9{,}8\,\text{m/s}^2$.
-**Kaava:** $t_0 = \dfrac{b}{k}$, koska $v = k\,t_0$ kertoo ajan, jossa levosta lähtenyt kappale saavuttaa nopeuden $b$
+**Kaava:** $$\begin{aligned} v &= k\,t \\ b &= k\,t_0 \\ t_0 &= \dfrac{b}{k} \end{aligned}$$
 **Muunnokset:** Ei tarvita: nopeus on yksikössä $\text{m/s}$ ja kulmakerroin yksikössä $\text{m/s}^2$.
 **Sijoitus:** $t_0 = \dfrac{2{,}0\,\text{m/s}}{9{,}8\,\text{m/s}^2} = 0{,}20\,\text{s}$
 **Vastaus:** $0{,}20\,\text{s}$, kaksi merkitsevää numeroa, koska vakiotermi luetaan kuvaajasta kahden numeron tarkkuudella. Suoran ja $v$-akselin leikkauskohta $b \approx 2{,}0\,\text{m/s}$ on kappaleen nopeus mittauksen alkaessa. Suora ei kulje origon kautta, koska aika $t$ lasketaan mittauksen alusta eikä pudotuksen alusta.
@@ -173,7 +173,7 @@ Tämä on keskinopeus katkoksen aikana. Tasaisesti kiihtyvässä liikkeessä se 
 Nopeus kasvaa tasaisesti, joten kiihtyvyys on nopeuden muutos jaettuna ajan muutoksella: $g = \dfrac{\Delta v}{\Delta t}$.
 
 Pudotushetkeä ei tarvita, koska tulokseen vaikuttavat vain aikaero $t_2 - t_1$ ja nopeuksien erotus. Jos kellon lukema pudotushetkellä on väärä, se siirtää molempia aikoja yhtä paljon ja kumoutuu erotuksessa.
-**Kaava:** $v = \dfrac{L}{\Delta t_\text{valo}}$ ja $g = \dfrac{v_2 - v_1}{t_2 - t_1}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{L}{\Delta t_\text{valo}} \\ g &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v_2 - v_1}{t_2 - t_1} \end{aligned}$$
 **Muunnokset:** $L = 5{,}0\,\text{cm} = 0{,}050\,\text{m}$, koska $1\,\text{cm} = 0{,}01\,\text{m}$. $\Delta t_\text{valo,1} = 25{,}0\,\text{ms} = 0{,}0250\,\text{s}$ ja $\Delta t_\text{valo,2} = 11{,}1\,\text{ms} = 0{,}0111\,\text{s}$, koska $1\,\text{ms} = 0{,}001\,\text{s}$.
 **Sijoitus:** $v_1 = \dfrac{0{,}050\,\text{m}}{0{,}0250\,\text{s}} = 2{,}00\,\text{m/s}$ ja $v_2 = \dfrac{0{,}050\,\text{m}}{0{,}0111\,\text{s}} = 4{,}50\,\text{m/s}$. Sitten $g = \dfrac{4{,}50\,\text{m/s} - 2{,}00\,\text{m/s}}{0{,}575\,\text{s} - 0{,}320\,\text{s}} = \dfrac{2{,}50\,\text{m/s}}{0{,}255\,\text{s}} = 9{,}8\,\text{m/s}^2$
 **Vastaus:** $g \approx 9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa, koska kappaleen pituus $L = 5{,}0\,\text{cm}$ on annettu kahdella numerolla ja rajoittaa tulosta. Kahden portin avulla saatu $g$ ei vaadi tietoa pudotushetkestä. Nopeudet saadaan kappaleen pituudesta ja valon katkeamisajasta. Kiihtyvyys saadaan aikaerosta $t_2 - t_1$.
@@ -186,7 +186,7 @@ Pudotushetkeä ei tarvita, koska tulokseen vaikuttavat vain aikaero $t_2 - t_1$ 
 
 Suodatinpaperi on kevyt ja leveä, joten ilma hidastaa sitä. Sen kuvaaja on aluksi samalla suoralla, mutta kaartuu siitä alaspäin. Lopuksi kuvaaja tasoittuu lähes vakionopeuteen $1{,}5\,\text{m/s}$. Ilmanvastus kasvaa nopeuden kasvaessa, ja lopulta se melkein kumoaa nopeuden kasvun.
 **Kuvaajan lukeminen:** Hetkellä $0{,}05\,\text{s}$ paperin piste on pallon suoralla. Hetkellä $0{,}10\,\text{s}$ paperin nopeus $0{,}93\,\text{m/s}$ jää mallin arvosta $0{,}98\,\text{m/s}$ jo $\dfrac{0{,}98 - 0{,}93}{0{,}98} \approx 5\,\%$. Kriteeriksi otetaan, että poikkeama on yli $5\,\%$. Hetken $0{,}30\,\text{s}$ jälkeen paperin nopeus ei enää juuri kasva, vaikka pallon nopeus kasvaa edelleen.
-**Kaava:** $v_\text{malli} = g\,t$ ja vaje $= \dfrac{v_\text{malli} - v_\text{paperi}}{v_\text{malli}} \cdot 100\,\%$
+**Kaava:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ v_\text{malli} &= g\,t \\ \text{vaje} &= \dfrac{v_\text{malli} - v_\text{paperi}}{v_\text{malli}}\cdot 100\,\% \end{aligned}$$
 **Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja ajat yksikössä $\text{s}$.
 **Sijoitus:** $v_\text{malli} = 9{,}81\,\text{m/s}^2 \cdot 0{,}40\,\text{s} = 3{,}924\,\text{m/s}$. Erotus on $$\begin{aligned} &3{,}924\,\text{m/s} - 1{,}49\,\text{m/s} \\ &= 2{,}434\,\text{m/s} \end{aligned}$$, joten
 $$\begin{aligned} \text{vaje} &= \dfrac{2{,}434\,\text{m/s}}{3{,}924\,\text{m/s}} \cdot 100\,\% \\ &= 62{,}0\,\% \end{aligned}$$
@@ -197,7 +197,7 @@ $$\begin{aligned} \text{vaje} &= \dfrac{2{,}434\,\text{m/s}}{3{,}924\,\text{m/s}
 **Annettu:** kellon lukemat ja nopeudet: $(0{,}65\,\text{s};\ 4{,}9\,\text{m/s})$, $(1{,}65\,\text{s};\ 14{,}7\,\text{m/s})$ ja $(2{,}65\,\text{s};\ 24{,}5\,\text{m/s})$; kappale lähti levosta, kello oli käynnissä jo ennen pudotusta
 **Kysytty:** miksi osamäärät $\dfrac{v}{t}$ eroavat, putoamiskiihtyvyys $g$ yksikössä $\text{m/s}^2$ ja kellon käynnistyksen ja pudotuksen väli $t_0$ yksikössä $\text{s}$
 **Periaate:** Kaava $v = g\,t$ pätee, kun $t$ on aika pudotuksen alusta. Kellon lukema on $t = t_0 + t_\text{putoaa}$. Siksi osamäärä $\dfrac{v}{t}$ on liian pieni. Virhe on suhteellisesti suurin lyhyellä lukemalla. Nopeuden muutos $\Delta v$ ja aikaero $\Delta t$ eivät riipu kellon nollakohdasta, koska $t_0$ kumoutuu erotuksessa. Siksi $g = \dfrac{\Delta v}{\Delta t}$ on oikea menetelmä.
-**Kaava:** $g = \dfrac{\Delta v}{\Delta t} = \dfrac{v_2 - v_1}{t_2 - t_1}$ ja $t_0 = t - t_\text{putoaa} = t - \dfrac{v}{g}$
+**Kaava:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v_2 - v_1}{t_2 - t_1} \\ t_\text{putoaa} &= \dfrac{v}{g} \\ t_0 &= t - t_\text{putoaa} \\ &= t - \dfrac{v}{g} \end{aligned}$$
 **Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja ajat yksikössä $\text{s}$.
 **Sijoitus:** Osamäärät: $\dfrac{4{,}9}{0{,}65} = 7{,}5$, $\dfrac{14{,}7}{1{,}65} = 8{,}9$ ja $\dfrac{24{,}5}{2{,}65} = 9{,}2$ (yksikkö $\text{m/s}^2$). Ne lähestyvät arvoa $9{,}8$, kun kellon lukema kasvaa. Kulmakerroin: $g = \dfrac{24{,}5\,\text{m/s} - 4{,}9\,\text{m/s}}{2{,}65\,\text{s} - 0{,}65\,\text{s}} = \dfrac{19{,}6\,\text{m/s}}{2{,}00\,\text{s}} = 9{,}8\,\text{m/s}^2$. Myös pareilla $(1)$ ja $(2)$ sekä $(2)$ ja $(3)$ saadaan sama arvo. Todellinen putoamisaika ensimmäisellä rivillä on $\dfrac{4{,}9\,\text{m/s}}{9{,}8\,\text{m/s}^2} = 0{,}50\,\text{s}$. Siis $t_0 = 0{,}65\,\text{s} - 0{,}50\,\text{s} = 0{,}15\,\text{s}$.
 **Vastaus:** $t_0 = 0{,}15\,\text{s}$, kaksi merkitsevää numeroa kuten kellon lukemissa. Putoamiskiihtyvyys on $9{,}8\,\text{m/s}^2$. Osamäärät $\dfrac{v}{t}$ ovat liian pieniä, koska kellon lukema on aina $0{,}15\,\text{s}$ liian suuri. Virhe vaikuttaa eniten lyhyeen lukemaan. Kulmakerroin toimii, koska nopeuden muutos ja aikaero eivät riipu kellon nollakohdasta.
@@ -212,7 +212,7 @@ $$\begin{aligned} \text{vaje} &= \dfrac{2{,}434\,\text{m/s}}{3{,}924\,\text{m/s}
 **Annettu:** aika $t = 3{,}0\,\text{s}$, alkunopeus $0$; taulukosta (MAFY-taulukko, Aurinkokunta, Kuu) putoamiskiihtyvyys $g = 1{,}622\,\text{m/s}^2$
 **Kysytty:** nopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Ilmanvastusta ei ole, joten vasara putoaa vapaasti. Se lähtee levosta. Silloin nopeus kasvaa tasaisesti ja $v = gt$.
-**Kaava:** $v = g\,t$
+**Kaava:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v}{t} \\ v &= g\,t \end{aligned}$$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Muunnoksia ei tarvita.
 **Sijoitus:** $v = 1{,}622\,\tfrac{\text{m}}{\text{s}^2} \cdot 3{,}0\,\text{s} = 4{,}866\,\tfrac{\text{m}}{\text{s}}$
 **Vastaus:** $4{,}9\,\text{m/s}$. Aika $3{,}0\,\text{s}$ on annettu kahdella merkitsevällä numerolla, joten vastauskin on. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.

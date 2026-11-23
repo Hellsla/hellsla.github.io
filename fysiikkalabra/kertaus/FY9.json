@@ -1,0 +1,256 @@
+{
+ "version": 1,
+ "items": {
+  "fy9-koe#testi-1": {
+   "unit": "fy9-mittaaminen"
+  },
+  "fy9-koe#testi-2": {
+   "unit": "fy9-mittaaminen"
+  },
+  "fy9-koe#testi-3": {
+   "unit": "fy9-mittaaminen"
+  },
+  "fy9-koe#testi-4": {
+   "unit": "fy9-energia"
+  },
+  "fy9-koe#testi-5": {
+   "unit": "fy9-energia"
+  },
+  "fy9-koe#testi-6": {
+   "unit": "fy9-energia"
+  },
+  "fy9-koe#testi-7": {
+   "unit": "fy9-lampo"
+  },
+  "fy9-koe#testi-8": {
+   "unit": "fy9-kaasut"
+  },
+  "fy9-koe#testi-9": {
+   "unit": "fy9-lampo"
+  },
+  "fy9-koe#testi-10": {
+   "unit": "fy9-liike"
+  },
+  "fy9-koe#testi-11": {
+   "unit": "fy9-voimat"
+  },
+  "fy9-koe#testi-12": {
+   "unit": "fy9-sailymislait"
+  },
+  "fy9-koe#testi-13": {
+   "unit": "fy9-ympyraliike"
+  },
+  "fy9-koe#testi-14": {
+   "unit": "fy9-aallot"
+  },
+  "fy9-koe#testi-15": {
+   "unit": "fy9-aallot"
+  },
+  "fy9-koe#testi-16": {
+   "unit": "fy9-tasavirta"
+  },
+  "fy9-koe#testi-17": {
+   "unit": "fy9-tasavirta"
+  },
+  "fy9-koe#testi-18": {
+   "unit": "fy9-tasavirta"
+  },
+  "fy9-koe#testi-19": {
+   "unit": "fy9-magnetismi-valo"
+  },
+  "fy9-koe#testi-20": {
+   "unit": "fy9-magnetismi-valo"
+  },
+  "fy9-koe#testi-21": {
+   "unit": "fy9-magnetismi-valo"
+  },
+  "fy9-koe#testi-22": {
+   "unit": "fy9-moderni"
+  },
+  "fy9-koe#testi-23": {
+   "unit": "fy9-moderni"
+  },
+  "fy9-koe#testi-24": {
+   "unit": "fy9-moderni"
+  }
+ },
+ "misconceptions": {},
+ "minikokeet": [
+  {
+   "id": "m30-aihe-1",
+   "kind": "aihe",
+   "minutes": 30,
+   "points": 10,
+   "chapter": 1,
+   "short": [
+    "fy9-koe#check-1",
+    "fy9-koe#testi-3",
+    "fy9-kokeellisuus#valine",
+    "fy9-koe#check-2",
+    "fy9-mittaaminen#kolikot"
+   ]
+  },
+  {
+   "id": "m30-aihe-2",
+   "kind": "aihe",
+   "minutes": 30,
+   "points": 10,
+   "chapter": 2,
+   "short": [
+    "fy9-koe#testi-6",
+    "fy9-koe#testi-7",
+    "fy9-kaasut#celsius",
+    "fy9-koe#testi-4",
+    "fy9-lampo#amme"
+   ]
+  },
+  {
+   "id": "m30-aihe-3",
+   "kind": "aihe",
+   "minutes": 30,
+   "points": 10,
+   "chapter": 3,
+   "short": [
+    "fy9-liike#keskinopeus",
+    "fy9-voimat#nosturi",
+    "fy9-sailymislait#virhe-kimpoaminen",
+    "fy9-ympyraliike#poljin",
+    "fy9-koe#testi-10"
+   ]
+  },
+  {
+   "id": "m30-aihe-4",
+   "kind": "aihe",
+   "minutes": 30,
+   "points": 10,
+   "chapter": 4,
+   "short": [
+    "fy9-koe#testi-15",
+    "fy9-koe#testi-14",
+    "fy9-aallot#virhe-kaiku",
+    "fy9-aallot#jousitus",
+    "fy9-aallot#poiju"
+   ]
+  },
+  {
+   "id": "m30-aihe-5",
+   "kind": "aihe",
+   "minutes": 30,
+   "points": 10,
+   "chapter": 5,
+   "short": [
+    "fy9-koe#testi-16",
+    "fy9-sahkokentta#kolme-varausta",
+    "fy9-koe#testi-20",
+    "fy9-koe#testi-18",
+    "fy9-sahkokentta#polyhiukkanen"
+   ]
+  },
+  {
+   "id": "m30-aihe-6",
+   "kind": "aihe",
+   "minutes": 30,
+   "points": 10,
+   "chapter": 6,
+   "short": [
+    "fy9-koe#testi-22",
+    "fy9-koe#testi-24",
+    "fy9-koe#testi-23",
+    "fy9-moderni#rontgen",
+    "fy9-moderni#radiohiili"
+   ]
+  },
+  {
+   "id": "m30-osa1-1",
+   "kind": "osa1",
+   "minutes": 30,
+   "points": 10,
+   "answer": 5,
+   "short": [
+    "fy9-koe#testi-1",
+    "fy9-koe#testi-5",
+    "fy9-koe#testi-11",
+    "fy9-aallot#juna",
+    "fy9-koe#testi-17",
+    "fy9-moderni#fuusio"
+   ]
+  },
+  {
+   "id": "m30-osa1-2",
+   "kind": "osa1",
+   "minutes": 30,
+   "points": 10,
+   "answer": 5,
+   "short": [
+    "fy9-mittaaminen#jousi-suora",
+    "fy9-koe#testi-9",
+    "fy9-koe#testi-12",
+    "fy9-aallot#lue-kuvaaja",
+    "fy9-koe#testi-19",
+    "fy9-moderni#virhe-laser"
+   ]
+  },
+  {
+   "id": "m60-osa2-1",
+   "kind": "osa2",
+   "minutes": 60,
+   "points": 21,
+   "short": [
+    "fy9-koe#testi-2",
+    "fy9-liike#potkulauta",
+    "fy9-tasavirta#virhe-teho"
+   ],
+   "long": [
+    "fy9-energia-s2",
+    "fy9-aallot-s1"
+   ],
+   "choose": 1
+  },
+  {
+   "id": "m60-osa2-2",
+   "kind": "osa2",
+   "minutes": 60,
+   "points": 21,
+   "short": [
+    "fy9-energia#virhe-kwh",
+    "fy9-aallot#konsertti",
+    "fy9-moderni#lue-kayra"
+   ],
+   "long": [
+    "fy9-liike-s1",
+    "fy9-tasavirta-s1"
+   ],
+   "choose": 1
+  },
+  {
+   "id": "m60-aineisto-1",
+   "kind": "aineisto",
+   "minutes": 60,
+   "points": 20,
+   "long": [
+    "fy9-lampo-s3",
+    "fy9-tasavirta-s3"
+   ],
+   "choose": 1
+  },
+  {
+   "id": "m60-aineisto-2",
+   "kind": "aineisto",
+   "minutes": 60,
+   "points": 20,
+   "long": [
+    "fy9-liike-s3",
+    "fy9-moderni-s3"
+   ],
+   "choose": 1
+  }
+ ],
+ "plans": {
+  "2": {
+   "days": 14
+  },
+  "4": {
+   "days": 28
+  }
+ }
+}

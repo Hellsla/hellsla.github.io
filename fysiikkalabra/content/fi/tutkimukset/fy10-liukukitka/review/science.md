@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 43e1c4e36cbb8f96
+CONTENT-HASH: a6a1e38a7bcef212
 
 ## Blocking
 None.
@@ -7,9 +7,7 @@ None.
 ## Polish
 None.
 
-## Checked (delta 2026-11-15)
-- Every changed sentence read in context. investigation.json `why` (fy4-6), the *Teoriaa lyhyesti* paragraph, the force-diagram aria-label in investigation.md and figures.py (they match): "liukukitka $F_\mu = \mu N$" fits the situation. The brake slides on the track, so this is sliding (kinetic) friction. The force opposes the motion, and the vehicle decelerates with $a = \mu g$ on a level track. That agrees with the P8 terms in docs/physics-guardrails.md (Friction).
-- Two later edits remove the doubled terms the rename left. Line 48 now reads "...jarrun ja radan välinen liukukitkakerroin epävarmuuksineen". Line 83 now reads "missä $\mu$ on liukukitkakerroin." Both remove only a repeated name, and the physics is unchanged. $\mu$ is still defined once, as dimensionless, with the model's assumption (the brake carries the whole weight) still stated.
-- No "liikekitka" or "liikekitkakerroin" is left in investigation.json, investigation.md, teacher.md or figures.py. teacher.md uses only "kitkavoima" and "kitkakerroin", which stay consistent with the new terms.
-- The investigation never brings in static friction ("lepokitka" or "lähtökitka"). That is right: the cart slides from the first moment of measurement. So nothing had to be named "täysin kehittynyt lepokitka eli lähtökitka", and nothing contradicts that term.
-- The content hash is `43e1c4e36cbb8f96`, checked again at the end.
+## Checked (delta 2026-11-23)
+- `git diff HEAD` on content/fi/tutkimukset/fy10-liukukitka and lessons/tutkimukset/fy10-liukukitka: the only change to content is the prefix "Kaaviokuva, " on the forces figure's aria-label. It is identical in investigation.md and figures.py. The figure's numbers (m = 1.0, mu = 0.30), image, labels, investigation.json and teacher.md are unchanged.
+- The description's physics is unchanged and correct: G is drawn down from the centre, N up from the bottom surface with the same length as G (level track, no vertical acceleration), and sliding friction F_mu backwards against the motion, much shorter than G (0.3 G). v points right and a points left (decelerating). The velocity and acceleration are drawn above the body as separate arrows, not as forces. Calling it a "kaaviokuva" (schematic diagram) does not claim it is to scale, so the earlier review of the physics (F_mu = mu N, a = mu g, the stated model assumption) still holds.
+- The content hash `a6a1e38a7bcef212` was checked at the start and again at the end.
