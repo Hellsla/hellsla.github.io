@@ -1,19 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: cb7758cef4b63834
+VERDICT: FAIL
+CONTENT-HASH: 267c472d1f553fa3
 SCOPE: delta added-exercise from 3f3114ccfa6f8f33 base 5b3ca4f81c77
 
 ## Blocking
-(none)
+- solutions.md fy8-6-L2-06 Kaava (line 329) — `h_0 = 6{,}626\,\text{J}\,\text{s}` lacks the factor $10^{-34}$; the accepted value is $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, as in Annettu. Fix the value.
 
 ## Polish
-- L2-09 solution, "Järkevyys"/Reasonableness: the closing sentence about the 539 nm of the model versus the measured line is correct (line gives 2.40 V model vs 2.30 V read at 5.8) but dense for a level-2 student; one clause naming the 0.1 V offset would make it easier to follow.
-- L2-10 part c is not graded by the answer box; the model answer is hedged ("varies"), which is acceptable but gives the student no single observable criterion.
+- solutions.md fy8-6 Kaava rows that remain one-liners (L1-01, L3-01) skip the E = hf, c = f\lambda base; consistent with their level, optional.
 
 ## Checked
-- L2-09: reading f at 2.30 V from the line points (4.6; 1.80) and (7.0; 2.80) gives 5.8e14 Hz; lambda 516.9 nm = 517 nm, green; figure gives every value needed, its description does not state the answer.
-- L2-10: 2.80 V read, hf/e = 2.895 V, difference 0.095 V; arithmetic and sig figs consistent; tolerance fits reading error.
-- Level 2 fits: read a graph, one conversion or one model comparison, short explanation; neither repeats the worked example (that fits the line and uses lambda directly).
-- Progression: both use the figure after the table-based L2-08, a new data kind (graph reading) and a distinct question from each other; mix of kinds improved.
-- Situation first, question last; solutions staged with principle, graph reading, formula, conversion, substitution.
-- Language: terms and number format correct; no case or glossary errors found.
-- Method: delta, added exercises only, texts read from the packet.
+- 8g diff: the Kaava step now lists the basic laws first (E = hf, c = f\lambda), then the derived formula, symbolic until Sijoitus; each Kaava block is an aligned list, one equation per row (the packet diff shows it flattened). A student can follow the derivation; numbers, answers and levels unchanged.
+- The added closing sentences in model answers and the split Vastaus/Sijoitus paragraphs close gaps in the explanations and read clearly.
+- Method: delta text in packet plus the aligned Kaava blocks read in solutions.md; no captures needed.

@@ -1,23 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 3c71dfde0dd50970
-Mode: delta (new graph tasks fy8-12-L2-09 and L3-07 on fy8-12/tuntematon, unit 1/min -> min⁻¹, paragraph splits)
+CONTENT-HASH: 4334b85dabe8a52a
+Mode: delta (work queue 8g: only the Formula steps of the model solutions changed)
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises/solutions.md:500, 502, 521–527: the new English solutions use decimal commas ($2{,}5$, $0{,}17678$, $141{,}42$, $5{,}6439$, $67{,}73$), but every other English solution uses a decimal point. Use decimal points in the en text. The numbers are right.
-- exercises/solutions.md:502–504: Substitution, Answer and Reasonableness in L2-09 have no blank lines between them, unlike every other solution. Add the blank lines so each stage is its own block.
-- figure fy8-12/tuntematon (shown on the en page): the axis label `\text{pulssia}\ /\ \text{min}` and the description are Finnish. For the visual and editorial reviewer: give the English page an English label.
-- exercises/exercises.json:319 (carried over): the source URL still has "anti%2D5g". Use a plain hyphen.
+- exercises/solutions.md:76–82 (L1-05) — "$E = hf$, from which: $f = c/\lambda$" — $f = c/\lambda$ does not follow from $E = hf$; it is the wave equation, a second basic law. Fix: "$E = hf$ and $c = f\lambda$, from which: …".
+- exercises/solutions.md:492–498 (L3-05) — "$R = \dots$, from which: $T = (\tfrac12)^{d/d_{1/2}}$, $R = A T \eta$" — the transmitted fraction and $R = AT\eta$ are separate relations, not consequences of the net-rate formula. Fix: list the three basic relations, then "from which $A = R/(T\eta)$".
+- exercises/solutions.md:143–148 (L2-02) — the same: $I_2 = I_1(\tfrac12)^{d_\text{b}/d_{1/2,\text{b}}}$ is the attenuation law applied a second time, not derived from $I_1$. Fix: "and the concrete gives $I_2 = \dots$, so $I_2/I_0 = \dots$".
 
 ## Checked
-- Hash 3c71dfde0dd50970 (`--exercises --lang en`) at the start and the end.
-- Figure data: lesson-answers.py has CHK_R0 = 800 and CHK_D = 12.0. The curve is 800·(1/2)^(d/12) on 0–48 mm with a 2 mm and 50/min grid, so 400 at 12 mm and 200 at 24 mm can be read off. The figure does not give either answer away.
-- L2-09 recomputed: 800·0.5^2.5 = 141.42/min. answers.py gives 141.421 and the JSON answer is 141.4. The stated 140 lies within 0.99 % (tolerance 2 %). Two figures, limited by the read-off 12 mm, is justified.
-- L3-07 recomputed: d = 12 mm·ln 50/ln 2 = 67.73 mm. answers.py gives 67.726 and the answer is 68 (tolerance 2 %, so 67.7 is also accepted). Rounding up is right: the shield must be at least this thick for an "at most" rate.
-- L3-07 conclusion: at 48 mm the rate is 800/2⁴ = 50/min, above the allowed 16/min, so 48 mm is not enough. That is correct. The bracket check 1/32 < 1/50 < 1/64, giving 60–72 mm, is a real check. The rendered page (L3 shot 13) shows correct aligned rows.
-- Physics of both tasks: the graph shows the net rate, so no background subtraction is needed, and the solutions say so. The attenuation law and the symbolic solving before substitution match the lesson's notation. d½ = 12 mm is a realistic value (like iron at 662 keV). Both tasks are inside FY8 scope.
-- L1-07: only the unit changed (min⁻¹). Recomputed 1215/0.75 min − 90/min = 1530/min, which matches.
-- L3-02, L2-01 and the other edits only change unit notation or split paragraphs. No number, sign or formula changed.
-- L2-08 is unchanged: 14.48 µeV recomputed again.
+- Hash 4334b85dabe8a52a (`--exercises --lang en`) at the start and the end.
+- The packet diff flattens the aligned blocks. I read the real `aligned` blocks on disk (lines 76–590): every row is a correct equation.
+- L2-03, L2-06, L3-04: the steps go from the attenuation law to the ratio $=2^{d/d_{1/2}}$, then the ln, then $d_{1/2} = d\ln2/\ln(\dots)$. The algebra is right and the result is unchanged.
+- L3-02: both blocks are right. $(\tfrac12)^{d/d_{1/2}} = R_\text{t}/(R_0-R_\text{t})$ inverts to $d = d_{1/2}\ln\frac{R_0-R_\text{t}}{R_\text{t}}/\ln2$, which is the same as answers.py (net rate down to 30/min).
+- L2-04: equal fractions give equal exponents, and $d_\text{b}$ is solved correctly.
+- L2-01, L1-07: the net counts are formed first and then the rate. Both are right, and the background is subtracted from the count, not from the rate units.
+- L3-07: $\ln(R_0/R) = (d/d_{1/2})\ln2$ gives $d$, as before.
+- answers.py run against exercises.json: all 21 numeric answers lie within their tolerances. Only solutions.md changed, so the numbers, answers and tolerances are unchanged.
+- The symbols ($N_\text{t}$, $d_{1/2}$, $R_\text{t}$) are the same as in the rest of the set. Every unknown is still solved symbolically before substitution.

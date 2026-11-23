@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e622704b652606af
-SCOPE: delta added-exercise from 885867bb6cc17240 base 80f97fd263d3
+CONTENT-HASH: 39f7d7b31a4f79c6
+SCOPE: delta kaava-steps (8g)
 
 ## Blocking
 
 ## Polish
-
-- fy8-3-L2-09 box — it asks only for ΔE(3→2) from the level formula, so the data reading (a, b) is not checked by the box and overlaps L2-01/L2-05; ask for the photon energy of the red line from the table, or for the difference between table and model, in the box.
-- fy8-3-L2-09 text — "Å" and "wavelength in air" are new to the student; one sentence that air and vacuum wavelengths differ by about 0.03 % would explain why they may ignore it.
+- solutions.md fy8-3-L1-01, L1-02, L1-08, L2-07, L3-01, L3-03 — Kaava still a one-liner; L3-01 and L3-03 are multi-step tasks and would profit from the aligned step list used in L2-01.
+- fy8-3-L2-05 — the step $f = E_\text{ion}/(4h) - \dots$ appears without the line that subtracts $E_2$; add $E_2 = -E_\text{ion}/4$.
 
 ## Checked
-
-- Level 2: unit conversion, E = hc/λ and level differences, then matching and explanation; rising demand a to d, not a repeat of L2-05 (Balmer table given in the task).
-- Authentic NIST aineisto the student must interpret; free choice of lines is covered by the solution's example and the remark on other lines.
-- Numbers verified: 1240/656,3 = 1,889 eV; 13,6·5/36 = 1,889 eV; model wavelengths 656,5 and 486,3 nm; differences under 0,1 %.
-- Solution explains the principle (energy conservation, quantised levels) before the formula; line-spectrum answer is complete.
+- Delta judged: Kaava steps only; the basic laws come first, then the derived formula, simplified symbolically before substitution; numbers, answers and tolerances untouched.
+- Each Kaava block is a single column of aligned steps (readable at 360 px; one relation per line), so the student sees where the formula comes from.
+- L2-02 and L3-04 keep the derived $n$ and $f_\text{ion}$ symbolic, then substitute; no unit or number was changed.

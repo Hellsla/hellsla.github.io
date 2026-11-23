@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 04d9947faaf13eb6
+CONTENT-HASH: a06061f1b4a8852f
+SCOPE: delta (work queue 8g: Kaava step and split model answers)
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- solutions.md fy8-2-L3-05 and L3-06 (Sijoitus) — chains are joined without a separator ("...\,\text{J}\,\text{m} E = ...", "...\text{eV}$ ja ... $ ... $. b)"); a student reads "J m E =" as one expression. Put each equation in its own row or join with "ja".
-- solutions.md fy8-2-L3-05 — wording "lämmöksi/lämpönä" was changed to sisäenergia only in part; check "lämmön" remnants in the other solutions for one term.
+- fy8-2-L3 absorption task — the added sentence "Absorptiossa atomin energia kasvaa fotonin energian verran." sits between Periaate and Kaava as a loose line; fold it into Periaate.
+- Earlier "lämmöksi" polish still stands if any remnant exists in other solutions.
 
 ## Checked
-- Diff: lämpö → sisäenergia in L3-03 and L3-05 task texts and solutions; physics, answers and levels unchanged; L3-03 wording "ettei energiaa muutu sisäenergiaksi" is clear.
-- Significant-figure notes revised (2,270 eV four figures, 497 nm from the least precise reading) are correct and justified.
-- Typo fix voltteiksi → volteiksi; layout splits of L3-0x Sijoitus lines keep every step.
+- The earlier polish (chains joined without a separator) is fixed: Kaava is now a list of basic laws (hf = ΔE, c = fλ), then λ = hc/ΔE, in symbols before any number.
+- Moved or added paragraphs (fingerprint, mercury conclusion, calibration line, mirror-image level argument, sum-not-allowed answer) belong to their parts and make the reasoning easier to follow.
+- Answers, numbers and tolerances unchanged by the diff.
+- Method: delta; diff and the previous report read.

@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c25c9ef41e63025f
+CONTENT-HASH: f341f3b768cc86fe
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions 10-24, Principle — "(" still ends a row and "117 + 118 = 235)" starts the next; a non-breaking join in the shared renderer would fix it.
+- [Minor] none from the diff.
 
 ## Checked
-- Delta (solutions.md cut into paragraphs, words unchanged), en, 1280 px, solutions open: opened open-exercises-L3-1280-10 (10-24) and open-exercises-L2-1280-12 (10-18).
-- Paragraph cuts read naturally; one idea per block; aligned rows, units upright with thin space, answer boxes and reasonableness blocks intact; no clipping, no plain quantities seen.
+Delta (Kaava step of solutions.md re-set as aligned rows). Opened open-exercises captures at 1280 px (column ~664 px): the aligned Formula blocks, one equation per row, = signs in one column, fractions and subscripts legible, no clipping, no overlap with Substitution/Conversions blocks. Only the 1280 px captures exist for open solutions; the rows are short (widest ~270 px), so a 360 px phone should hold them. Opened fy8-10 L2-3 (10-13) and L3-4 (the cv/ΔT chain): rows aligned, units upright.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

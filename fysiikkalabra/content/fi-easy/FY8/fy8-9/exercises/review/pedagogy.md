@@ -1,22 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f7903aada0819615
-SCOPE: delta added-exercise from a4254015fd08611c base 5b3ca4f81c77
+CONTENT-HASH: ebe98a22a12cb8f4
+SCOPE: delta (8g: Kaava step of the model solutions, paragraph breaks)
 
 ## Blocking
-
 (none)
 
 ## Polish
-
-1. fy8-9-L2-09 — the two readings (380, 58) are still given in the task text, so the figure is not needed to answer (earlier polish 1, unchanged; optional): give only the background and let the student read the values.
-2. solutions.md L2-09 "Kuvaajan lukeminen" — "Se erottaa tuloksen" has no clear referent; say what the 2 % margin separates: "Tämä tarkkuus erottaa tuloksen vielä taustaa vähentämättä saatavasta 73,7 s:sta."
+(none)
 
 ## Checked
-
-- L2-09 tolerance 0,02: answer 70,9 s accepts 69,5-72,3 s; the no-background result 73,7 s (3,9 % off) now falls outside "oikein", so the task's point counts. Corrects my earlier 73,9 s; 73,7 s verified.
-- The solution's reading paragraph now honestly says the readings are approximate and why the margin is 2 %; the "wider tolerance" wording is gone.
-- "\dfrac{375}{53}" replaces the colon (earlier polish 4 done), also in the no-background check.
-- L2-10 check: 0,5^(1/5,0) = 0,871 each hour, 0,871^5 = 0,50 is exact and cleaner than 0,86^5 = 0,47; the 13 % decay figure matches.
-- answers.py comment 70,85 -> 70,9 matches the solution and the json.
-- Seven solution steps, level, figure and phone captures unchanged by the diff.
-- Method: delta; hash unchanged at start and end.
+- Only Kaava blocks and whitespace changed (normalised diff); numbers, answers, tolerances unchanged.
+- Decay tasks now show the law, the logarithm step (ln(A0/A) = t/T ln 2) and only then the solved formula, before any substitution (L1-08, L2-05, L3-01, L3-02, L3-04).
+- L3-03 supistaa A0 symbolically before numbers; L3-05 gives the given λ_eff relation in Annettu and derives 1/T_bio step by step.
+- L1-03 and L2-01 derive λ = ln2/T from the exponential law and the half-life condition; good for a student who only knows the half form.
+- Single-line Kaava on easy tasks left as they were, which fits level 1.

@@ -326,7 +326,7 @@ eU_\text{k} &= hf \\
 &= \frac{hc}{\lambda} \\
 h &= \frac{eU_\text{k}\lambda}{c}
 \end{aligned}
-$$, ja poikkeama on $\dfrac{h - h_0}{h_0} \cdot 100\,\%$, missä $h_0 = 6{,}626\,\text{J}\,\text{s}$ (hyväksytty arvo)
+$$, ja poikkeama on $\dfrac{h - h_0}{h_0} \cdot 100\,\%$, missä $h_0 = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ (hyväksytty arvo)
 **Muunnokset:** $\lambda = 630\,\text{nm} = 630 \cdot 10^{-9}\,\text{m}$; $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$
 **Sijoitus:** Ainon arvolle $$
 \begin{aligned}
