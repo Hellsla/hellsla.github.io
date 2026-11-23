@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: adcf382f1148c000
-Mode: delta review (one sentence in the S2 solutions, "Muut perusteet" of task fy2-s1)
+CONTENT-HASH: 92e65712da6bbe51
+Mode: full review (round 1; this round only the Kaava steps were rewritten)
 
 ## Blocking
 - none
 
 ## Polish
-- none new (earlier: gloss 'tuotantoketju' in the S2 biomass note).
+- fy2-s1 e) model answer: the stand-alone sentence about biomass share (noin 11 %) should join the "Muut perusteet" paragraph.
 
 ## Checked
-- The sentence now says the plant needs "vain noin kuudesosan siitä, mitä se tarvitsisi taulukon tyypillisellä käyttöasteella 0,70". It is consistent with the biomass share of about 11 % (0,70 : 6 = 0,117) and fixes the vague "täydellä käyttöasteella".
-- The value 0,70 is the table's own, so the student can verify it; the rubric and the other solution parts are unchanged.
-- S2: short sentence, term "käyttöaste" already in use; no step dropped.
+- Kaava blocks are identical to the Finnish version's formulas (all 41 formula lines match) and start from the basic principle, solved in symbols before substitution.
+- Easy-Finnish version splits long sentences ("Näin saadaan voimaloiden määrä. Määrä on kokonaisluku.") without losing a reason or changing a task, point or rubric.
+- Tasks still demand independent application; common mistakes and variety as in the Finnish review.

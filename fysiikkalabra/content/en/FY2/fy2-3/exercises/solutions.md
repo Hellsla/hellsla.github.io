@@ -58,7 +58,7 @@ $$. The typical power of a kettle is about $2\,\text{kW}$, so the result fits.
 **Given:** power $P = 6.0\,\text{kW}$, time $t = 150\,\text{min}$, price $0.20\,\text{€/kWh}$
 **Find:** cost in euros
 **Principle:** The sauna heater transforms energy at a steady power. First we calculate the energy consumed in kilowatt-hours, then its cost.
-**Formula:** $E = P\,t$ and $\text{cost} = E \cdot \text{unit price}$
+**Formula:** $E = P\,t$ and $\text{cost} = E \cdot \text{unit price}$, so $\text{cost} = P\,t \cdot \text{unit price}$
 **Conversions:** The power is already in kilowatts. Time: $1\,\text{min} = 1\,\text{h} : 60$, so $150\,\text{min} = 150 \cdot (1\,\text{h} : 60) = 2.5\,\text{h}$. Price $20\,\text{c/kWh} = 0.20\,\text{€/kWh}$.
 **Substitution:** $E = 6.0\,\text{kW} \cdot 2.5\,\text{h} = 15\,\text{kWh}$ and $\text{cost} = 15\,\text{kWh} \cdot 0.20\,\text{€/kWh} = 3.0\,\text{€}$
 **Answer:** $3.0\,\text{€}$, two significant figures as in the power $6.0\,\text{kW}$.
@@ -88,7 +88,7 @@ $$. The typical power of a kettle is about $2\,\text{kW}$, so the result fits.
 **Given:** six lights, power of each $1.5\,\text{W}$, time $8760\,\text{h}$
 **Find:** total energy $E$ in kilowatt-hours
 **Principle:** The lights use a steady power, so the total power is the sum of the individual powers, and the energy is the total power times time.
-**Formula:** $P_\text{tot} = 6 \cdot P$ and $E = P_\text{tot}\,t$
+**Formula:** $P = \dfrac{E}{t}$, so $E = P_\text{tot}\,t$, and $P_\text{tot} = 6 \cdot P$, so $E = 6\,P\,t$
 **Conversions:** $6 \cdot 1.5\,\text{W} = 9.0\,\text{W}$, and substituting $1\,\text{W} = 10^{-3}\,\text{kW}$ gives $9.0\,\text{W} = 9.0 \cdot 10^{-3}\,\text{kW} = 0.0090\,\text{kW}$.
 **Substitution:** $E = 0.0090\,\text{kW} \cdot 8760\,\text{h} = 78.84\,\text{kWh}$
 **Answer:** $79\,\text{kWh}$, two significant figures as in the power $1.5\,\text{W}$.
@@ -98,7 +98,7 @@ $$. The typical power of a kettle is about $2\,\text{kW}$, so the result fits.
 **Given:** power of the incandescent bulb $60\,\text{W}$, of the LED $8.0\,\text{W}$, usage time $4.0\,\text{h}$ a day for $365\,\text{days}$, price $0.20\,\text{€/kWh}$
 **Find:** the cost saved in a year in euros
 **Principle:** The saving is the difference between the energy consumption of the two lamps times the price. Both have a steady power, so the energy is power times time.
-**Formula:** $\Delta E = (P_1 - P_2)\,t$ and $\text{saving} = \Delta E \cdot \text{unit price}$
+**Formula:** $E = P\,t$, so $\Delta E = E_1 - E_2 = P_1\,t - P_2\,t = (P_1 - P_2)\,t$, and $\text{saving} = \Delta E \cdot \text{unit price}$
 **Conversions:** $P_1 - P_2 = 60\,\text{W} - 8.0\,\text{W} = 52\,\text{W} = 52 \cdot 10^{-3}\,\text{kW} = 0.052\,\text{kW}$ and $t = 4.0\,\text{h} \cdot 365 = 1460\,\text{h}$.
 **Substitution:** $\Delta E = 0.052\,\text{kW} \cdot 1460\,\text{h} = 75.92\,\text{kWh}$ and $\text{saving} = 75.92\,\text{kWh} \cdot 0.20\,\text{€/kWh} = 15.18\,\text{€}$
 **Answer:** $15\,\text{€}$, two significant figures as in the power $8.0\,\text{W}$ and the time $4.0\,\text{h}$.
@@ -125,7 +125,7 @@ Consumption builds up from short moments of high power and long moments of low p
 **Given:** consumption $18\,\text{kWh}$ per hundred kilometres, charging at a power of $2.3\,\text{kW}$ for a time of $8.0\,\text{h}$, losses are ignored
 **Find:** distance $s$ in kilometres
 **Principle:** First we calculate the charging energy at a steady power, $E = P\,t$. Then we ask how many hundred-kilometre distances the energy is enough for when each consumes $18\,\text{kWh}$.
-**Formula:** $E = P\,t$ and $s = \dfrac{E}{k} \cdot 100\,\text{km}$, where $k = 18\,\text{kWh}$ is the consumption per hundred kilometres
+**Formula:** $E = P\,t$. The consumption per hundred kilometres is $k = \dfrac{E}{s} \cdot 100\,\text{km}$, so $s = \dfrac{E}{k} \cdot 100\,\text{km}$ and further $s = \dfrac{P\,t}{k} \cdot 100\,\text{km}$, where $k = 18\,\text{kWh}$
 **Conversions:** Not needed: the power is in kilowatts and the time in hours, so the energy is in kilowatt-hours.
 **Substitution:** $E = 2.3\,\text{kW} \cdot 8.0\,\text{h} = 18.4\,\text{kWh}$ and $s = \dfrac{18.4\,\text{kWh}}{18\,\text{kWh}} \cdot 100\,\text{km} = 102.2\,\text{km}$
 **Answer:** $100\,\text{km}$ (that is $1.0 \cdot 10^{2}\,\text{km}$), two significant figures as in the power $2.3\,\text{kW}$.
@@ -161,7 +161,7 @@ The slope is not the total energy, because the total energy is read from the hei
 **Given:** the appliances in the table: fridge $100\,\text{W}$ and $8.0\,\text{h}$, television $80\,\text{W}$ and $3.5\,\text{h}$, laptop $50\,\text{W}$ and $6.0\,\text{h}$, kettle $2000\,\text{W}$ and $0.20\,\text{h}$, hair dryer $1800\,\text{W}$ and $0.10\,\text{h}$
 **Find:** the total energy $E$ in a day in kilowatt-hours and the appliance that consumes the most energy
 **Principle:** Each appliance runs at a steady power, so its energy is power times time, $E = P\,t$. The total energy is the sum of the energies of the appliances. The appliance that consumes the most is the one with the greatest product $P\,t$, not necessarily the one with the greatest power.
-**Formula:** $E = P\,t$ and $E_\text{tot} = E_1 + E_2 + \dots$
+**Formula:** $E = P\,t$ and $E_\text{tot} = E_1 + E_2 + \dots$, so $E_\text{tot} = P_1\,t_1 + P_2\,t_2 + \dots$
 **Conversions:** The calculation is done in watt-hours and converted at the end: $1\,\text{Wh} = 10^{-3}\,\text{kWh}$.
 **Substitution:**
 $E_\text{fridge} = 100\,\text{W} \cdot 8.0\,\text{h} = 800\,\text{Wh}$
@@ -210,7 +210,7 @@ $$, which corresponds to the first reading in the table, $0.31\,\text{kWh}$.
 **Given:** the hours and average powers in the table (consumption $P_\text{c}$, production $P_\text{p}$ in megawatts): 05–06 $8400$ and $8900$, 06–07 $9100$ and $8900$, 07–08 $9900$ and $9300$, 08–09 $10\,400$ and $9600$, 09–10 $10\,600$ and $9800$, 10–11 $10\,300$ and $9900$, 11–12 $9800$ and $9900$, 12–13 $9600$ and $9800$
 **Find:** the sum of the missing electrical energy $E$ in gigawatt-hours over the period when consumption exceeds production; the moment of peak consumption and the balancing power output needed
 **Principle:** The power in each hour is an average power, so the energy of an hour is $E = P\,\Delta t$ with $\Delta t = 1\,\text{h}$. The missing power is the difference $\Delta P = P_\text{c} - P_\text{p}$ when it is positive. The missing energies are calculated hour by hour and summed.
-**Formula:** $\Delta P = P_\text{c} - P_\text{p}$ and $E = \Delta P\,\Delta t$
+**Formula:** $P = \dfrac{\Delta E}{\Delta t}$, so $E = P\,\Delta t$. The missing power is $\Delta P = P_\text{c} - P_\text{p}$, so $E = (P_\text{c} - P_\text{p})\,\Delta t$
 **Conversions:** $1\,\text{MWh} = 10^{-3}\,\text{GWh}$, because $1\,\text{MW} = 10^{-3}\,\text{GW}$.
 **Substitution:** Differences hour by hour: 05–06 $-500\,\text{MW}$ (surplus production), 06–07 $200\,\text{MW}$, 07–08 $600\,\text{MW}$, 08–09 $800\,\text{MW}$, 09–10 $800\,\text{MW}$, 10–11 $400\,\text{MW}$, 11–12 $-100\,\text{MW}$ and 12–13 $-200\,\text{MW}$. Consumption exceeds production in the hours 06–11. The sum is $$
 \begin{aligned}
@@ -232,7 +232,7 @@ Wind power is not suitable because it depends on the weather, and neither is a n
 **Principle:** The compressor runs at $100\,\text{W}$ for only part of the time, so the average power is the running power multiplied by the fraction of the total time spent running.
 
 The annual consumption is the average power times the time in a year, and the saving is the difference in consumption times the price. The model assumes that the measured periods describe the whole year.
-**Formula:** $\text{fraction} = \dfrac{t_\text{on}}{t_\text{on} + t_\text{off}}$, $P_\text{avg} = \text{fraction} \cdot P$, $E = P_\text{avg}\,t$ and $$ \begin{aligned} \text{saving} &= (E - E_\text{new}) \\ &\cdot \text{unit price} \end{aligned} $$
+**Formula:** $E = P\,t$ and $\text{fraction} = \dfrac{t_\text{on}}{t_\text{on} + t_\text{off}}$, $P_\text{avg} = \text{fraction} \cdot P$, so $E = P_\text{avg}\,t = \text{fraction} \cdot P\,t$ and $$ \begin{aligned} \text{saving} &= (E - E_\text{new}) \\ &\cdot \text{unit price} \end{aligned} $$
 **Conversions:** The average power is converted to kilowatts by substituting $1\,\text{W} = 10^{-3}\,\text{kW}$.
 **Substitution:** The sum of the running times is $$
 \begin{aligned}
@@ -305,7 +305,7 @@ When the time is halved and the energy stays the same, the power doubles. The po
 **Asked:** the ratio of the powers $P_\text{A}/P_\text{B}$
 **Principle:** When a device converts energy steadily, the slope of the line in the energy-time graph is the power of the device: power is the energy converted divided by the time. The ratio is found by dividing one power by the other.
 **Reading the graph:** The steeper line is A and the less steep is B. The points are at crossings of gridlines, so the values can be read exactly.
-**Formula:** $P = \dfrac{\Delta E}{\Delta t}$ and $\dfrac{P_\text{A}}{P_\text{B}}$
+**Formula:** $P = \dfrac{\Delta E}{\Delta t}$, so $\dfrac{P_\text{A}}{P_\text{B}} = \dfrac{\Delta E_\text{A} : \Delta t_\text{A}}{\Delta E_\text{B} : \Delta t_\text{B}}$
 **Conversions:** $\Delta E_\text{A} = 120\,\text{kJ} - 60\,\text{kJ} = 60\,\text{kJ} = 60\,000\,\text{J}$ with $\Delta t_\text{A} = 80\,\text{s} - 40\,\text{s} = 40\,\text{s}$, and $\Delta E_\text{B} = 40\,\text{kJ} = 40\,000\,\text{J}$.
 **Substitution:** $P_\text{A} = \dfrac{60\,000\,\text{J}}{40\,\text{s}} = 1500\,\text{W}$ and $P_\text{B} = \dfrac{40\,000\,\text{J}}{80\,\text{s}} = 500\,\text{W}$, so $\dfrac{P_\text{A}}{P_\text{B}} = \dfrac{1500\,\text{W}}{500\,\text{W}} = 3.0$
 **Answer:** The power of device A is $3.0$ times the power of device B.

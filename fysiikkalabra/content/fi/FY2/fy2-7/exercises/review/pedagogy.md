@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d678f4eb5ef3254a
+CONTENT-HASH: a087415b76d715f9
+SCOPE: delta numbers,reflow,teacher-figure,wording from d678f4eb5ef3254a base 08d90eab0b
 
 ## Blocking
 - none
 
 ## Polish
-- Earlier Polish remains recorded; the change adds none.
+- none
 
 ## Checked
-- Delta: one solution (L2-10 Lisäksi a) now states the difference as a words-plus-formula split; numbers unchanged (262 - 210 = 52 MW, 0,45 %).
-- Pure layout edit for 360 px; the pedagogy of the tasks is unchanged from the earlier PASS.
+- Round-1 Blocking fixed: heating-network saving task now uses only E_lähtö,1/2 in the Kaava and a symbolic-first Sijoitus chain E_perille(1/eta_1 - 1/eta_2); no undefined or English symbols remain.
+- Other Kaava lines start from eta = E_perille/E_lähtö, P = E/t, E_lähtö = E_perille + E_häviö and combine symbolically; Sijoitus is one chain from the last symbolic form; answers unchanged.
+- Sankey difference task: (p_kl - p_s) E_lähtö = 12,5 MWh consistent with the teacher-approved figure (9 % and 4 %).
+- Long Vastaus blocks split into short paragraphs; content identical.

@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8c66783eeff22dc0
+CONTENT-HASH: 92e65712da6bbe51
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md s1 e, "Biomassan osuus energiasta on vain noin $11\,\%$." — still a one-sentence paragraph (round 1 note); join it to the previous paragraph.
+- [Minor] solutions.md s1 e): yhden virkkeen kappale "Biomassan osuus energiasta on vain noin $11\,\%$." jää irralliseksi vastauksen jälkeen. Liitä edelliseen kappaleeseen.
+- [Minor] solutions.md s1 c), Kaava: $P_\text{k}$ (kaupungin keskiteho) nimetään vasta kaavassa; lisää se Kysytty-riville. S2-lukijalle uusi symboli ilman selitystä on turha kynnys.
 
 ## Checked
-- Delta review (round 2) of solutions.md, fi-easy: the diff is five blank lines inserted before lists (after "Tyynenä pakkasiltana tehoa voisivat tuottaa", after the "Hyväksytään myös" intro paragraph of s1, and after the headings "Yleisiä virheitä" (s1), "Hyväksytään myös" and "Yleisiä virheitä" (s2)). No word, number or formula changed.
-- Read every list in the file (lines 45, 97, 106, 127, 171, 178): each now has a blank line before it, and a list item is never joined to the paragraph before it. The paragraph splits from round 1 are unchanged.
-- Opened content/fi/FY2/sovella/review/shots/contact-4.png (Finnish captures, same structure; the fi-easy page is not captured). #39 shows the power-source list rendered as bullets under its lead line. #42–#43 show the list of acceptable answers and the Yleisiä virheitä list as bullets, with the display formulas inside the items set in boxes. #48 shows the source-selection task's list as bullets. No list is run into a paragraph and no paragraph break is out of place.
-- Hash from the packet (the hash command did not accept this item id).
+- Täysi arvio, kierros 1; muutos: Kaava-vaiheet perusperiaatteista. Hash alussa ja lopussa 92e65712da6bbe51.
+- Paketin kaappaukset puuttuivat eikä screenshot.py kaappaa käännettyä Sovellaa, joten kaappasin preview/fi-easy/FY2-sovella.html:n itse 390 px:ssä (kaikki laatikot auki): ei vaakavieritystä (scrollWidth 390). Avattu fi-easy-0-4 (Kaava, Sijoitus, Vastaus, Järkevyys a-kohta) ja fi-easy-0-7 (c-kohdan Kaava ja Sijoitus): rivit kohdistuvat, mitään ei leikkaudu, lauseet lyhyitä ja selkeitä.
+- Suomenkieliset kaappaukset (contact-3, stage-fy2-s1-390-5/6/8/12) vahvistavat saman rakenteen. 1280 px ei kaapattu. Ei kuvia.
 
 ## Scores
 illustrations 4 (no figures) · typography 5 · Finnish 4 · accessibility 4

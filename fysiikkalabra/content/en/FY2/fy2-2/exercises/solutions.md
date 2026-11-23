@@ -142,7 +142,7 @@ $$ litres, so about ten million litres is the right order of magnitude. The litr
 **Given:** energy in a hundred grams $E_{100} = 2400\,\text{kJ}$ and mass of the nuts in the bag $m = 50\,\text{g}$
 **Find:** energy of the nuts in the bag $E$ in kilojoules
 **Principle:** Energy is directly proportional to mass. The bag contains half of a hundred grams, so it contains half of the energy of a hundred grams.
-**Formula:** $E = \dfrac{m}{m_{100}} \cdot E_{100}$, where $m_{100}$ is the mass of a hundred grams
+**Formula:** Energy is directly proportional to mass: $\dfrac{E}{m} = \dfrac{E_{100}}{m_{100}}$, so $E = \dfrac{m}{m_{100}} \cdot E_{100}$, where $m_{100}$ is the mass of a hundred grams
 **Conversions:** Not needed: the energy is given in kilojoules as asked.
 **Substitution:** $E = \dfrac{50\,\text{g}}{100\,\text{g}} \cdot 2400\,\text{kJ} = 0.50 \cdot 2400\,\text{kJ} = 1200\,\text{kJ}$
 **Answer:** $1200\,\text{kJ}$, that is, $1.2\,\text{MJ}$, two significant figures as in the data $50\,\text{g}$ and $2400\,\text{kJ}$.
@@ -177,12 +177,12 @@ $$.
 **Given:** foods of the table: porridge $250\,\text{g}$ ($300\,\text{kJ}$ per hundred grams), banana $120\,\text{g}$ ($400\,\text{kJ}$) and orange juice $200\,\text{g}$ ($190\,\text{kJ}$); energy used in walking $220\,\text{kJ}$ per kilometre
 **Find:** energy of the breakfast $E$ in megajoules and the corresponding walking distance $s$ in kilometres
 **Principle:** The energy of each food is obtained by multiplying the energy of a hundred grams by its mass divided by a hundred grams. The energies are added in the same unit. The walking distance is obtained by dividing the energy by the energy per kilometre, because every kilometre uses the same energy.
-**Formula:** $E_\text{food} = \dfrac{m}{100\,\text{g}} \cdot E_{100}$, $$
+**Formula:** Energy is directly proportional to mass: $\dfrac{E_\text{food}}{m} = \dfrac{E_{100}}{100\,\text{g}}$, so $E_\text{food} = \dfrac{m}{100\,\text{g}} \cdot E_{100}$, $$
 \begin{aligned}
 E &= E_\text{porridge} + E_\text{banana} \\
 &+ E_\text{juice}
 \end{aligned}
-$$ and $s = E : E_\text{km}$
+$$ and $E = s \cdot E_\text{km}$, so $s = E : E_\text{km}$
 **Conversions:** Calculate in kilojoules and convert at the end: $1\,\text{MJ} = 1000\,\text{kJ}$.
 **Substitution:** $E_\text{porridge} = 2.5 \cdot 300\,\text{kJ} = 750\,\text{kJ}$, $E_\text{banana} = 1.2 \cdot 400\,\text{kJ} = 480\,\text{kJ}$ and $E_\text{juice} = 2.0 \cdot 190\,\text{kJ} = 380\,\text{kJ}$. The sum is $1610\,\text{kJ} = 1.6\,\text{MJ}$, so $s = 1610\,\text{kJ} : 220\,\text{kJ/km} = 7.3\,\text{km}$.
 **Answer:** The walking distance is about $7.3\,\text{km}$ and the energy of the breakfast about $1.6\,\text{MJ}$, two significant figures as in the data.
@@ -206,7 +206,7 @@ $$
 **Find:** slope $k$ of the fitted line in kJ/km and the walking distance $s$ in kilometres
 **Principle:** The energy used grows steadily with the distance, so the points fit a model in which $E$ is approximately proportional to the distance $s$. The slope tells how much energy is used per kilometre. When the slope is known, the distance is obtained by dividing the energy by the slope.
 **Reading the graph:** The points lie on a rising straight line with points on both sides of it. Draw a line through the points on paper or with a graphing program. The fitted line passes approximately through the points $(0\,\text{km};\ 8\,\text{kJ})$ and $(5.0\,\text{km};\ 1260\,\text{kJ})$. These two points are taken from the drawn line, and they are chosen far apart.
-**Formula:** $k = \dfrac{\Delta E}{\Delta s} = \dfrac{E_2 - E_1}{s_2 - s_1}$ and $s = E : k$
+**Formula:** $k = \dfrac{\Delta E}{\Delta s} = \dfrac{E_2 - E_1}{s_2 - s_1}$ and $E = k \cdot s$, so $s = E : k$
 **Conversions:** Energy of the chocolate bar in kilojoules: $1.5\,\text{MJ} = 1.5 \cdot 1000\,\text{kJ} = 1500\,\text{kJ}$.
 **Substitution:** $k = \dfrac{1260\,\text{kJ} - 8\,\text{kJ}}{5.0\,\text{km} - 0\,\text{km}} = 250\,\dfrac{\text{kJ}}{\text{km}}$, and $s = 1500\,\text{kJ} : 250\,\text{kJ/km} = 6.0\,\text{km}$.
 **Answer:** The slope is about $250\,\text{kJ/km}$ and the energy of the chocolate bar corresponds to a walk of about $6.0\,\text{km}$. Fitting by eye varies, so $5.8\text{–}6.2\,\text{km}$ is a good answer. The slope tells that every kilometre walked uses about $250\,\text{kJ}$ of energy.
@@ -238,7 +238,7 @@ $$ houses), and energies are not compared by their numbers; the units must be co
 **Given:** energies of the food $1.4\,\text{MJ}$, $3200\,\text{kJ}$, $650\,\text{kJ}$, $0.0042\,\text{GJ}$ and $900\,\text{kJ}$; use $E_\text{basic} = 10.2\,\text{MJ}$ per day; walking $s = 5.0\,\text{km}$ per day, $250\,\text{kJ/km}$; energy of fat $37\,\text{MJ/kg}$; time $30$ days
 **Find:** mass of the fat used up $m$ in kilograms
 **Principle:** Energy is conserved. If the energy obtained from food is less than the use, the missing energy is taken from the body's fat store, whose chemical energy turns into motion and thermal energy. The daily deficit is multiplied by the number of days and divided by the energy of fat per kilogram.
-**Formula:** $E_\text{use} = E_\text{basic} + s \cdot E_\text{km}$, $\Delta E = E_\text{use} - E_\text{food}$ and $m = \dfrac{30 \cdot \Delta E}{37\,\text{MJ/kg}}$
+**Formula:** $E_\text{use} = E_\text{basic} + s \cdot E_\text{km}$, $\Delta E = E_\text{use} - E_\text{food}$ and the energy of the burnt fat $30 \cdot \Delta E = m \cdot H$, where $H = 37\,\text{MJ/kg}$, so $m = \dfrac{30 \cdot \Delta E}{H} = \dfrac{30 \cdot \Delta E}{37\,\text{MJ/kg}}$
 **Conversions:** All to megajoules: $3200\,\text{kJ} = 3.2\,\text{MJ}$, $650\,\text{kJ} = 0.65\,\text{MJ}$, $0.0042\,\text{GJ} = 4.2\,\text{MJ}$, $900\,\text{kJ} = 0.90\,\text{MJ}$ and walking $1250\,\text{kJ} = 1.25\,\text{MJ}$.
 **Substitution:** The meals together are $$
 \begin{aligned}

@@ -1,13 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: cef163f17e81a48e
-SCOPE: delta added-exercise from 3fd6b99e7d223fc3 base 07af77a4596f
+CONTENT-HASH: 3abf4d8724bef942
+SCOPE: delta md-paragraphs,numbers,typography from cef163f17e81a48e base 5b3ca4f
 
 ## Blocking
 - none
 
 ## Polish
-- Earlier Polish remains recorded; the change adds none.
+- none
 
 ## Checked
-- Delta: one solution (L2-11 c) now writes the three export values as separate inline formulas; numbers unchanged (+2142, +1124, -152 MW).
-- Pure layout edit for 360 px; the pedagogy of the tasks is unchanged from the earlier PASS.
+- Delta: every Kaava line now starts from the basic relation (m = eE, E = Hm, E = Vh, E = qA) and combines symbolically; numbers and answers unchanged.
+- Emission-ratio and area-ratio tasks: the common factor E is shown cancelling (m2/m1 = e2/e1; A_b/A_a = q_a/q_b), which teaches why the comparison needs only the coefficients; the area ratio 0,50/0,010 = 50 matches the answer.
+- Emission-saving task: m1 - m2 = e1 E - e2 E = (e1 - e2) E, derived from m = eE.
+- Petrol-versus-electric task: equal-emission equation e E = e_b V h written first, then solved for e; units consistent with the substitution (736 g/kWh).
+- Bus-versus-car task: the ratio formula with N is correct and consistent with the substitution (4,14).
+- Unit-conversion task (g/MJ to g/kWh): derived from m = e_MJ E_MJ and E_MJ = 3,6 E_kWh; clear.
+- Long Johtopäätös, Vastaus and Sijoitus blocks (CO2 trend, Fingrid data task, Fingrid-OWID comparison) split into short paragraphs; content identical, easier on a phone.
+- Finnish of the changed lines correct; glossary terms intact.

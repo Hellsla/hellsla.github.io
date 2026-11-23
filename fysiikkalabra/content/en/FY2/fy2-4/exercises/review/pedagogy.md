@@ -1,8 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 0742e66b95ebc481
-SCOPE: delta added-exercise from eddb481aa99052bc base 611fb7d5c174
+CONTENT-HASH: f6e0c13fb90edba1
 Mode: delta
-Round: 2
 
 ## Blocking
 (none)
@@ -11,5 +9,7 @@ Round: 2
 (none)
 
 ## Checked
-- L1-09 solution: 'the task uses this MAFY value' fits the accepted 4 % tolerance; no numbers changed.
-- L2-09 solution: the added orienting sentence 'Here we read the energy-flow diagram' helps; values 8 and 2 squares unchanged.
+- Previous Blocking fixed: the Formula lines that began in Finnish now read "Conservation of energy ..." and "Definition of efficiency ..."; no Finnish words or subscripts remain.
+- Every Formula line starts from the definition of efficiency, E = Pt or conservation of energy, then derives the old formula correctly; no number or answer changed.
+- Multi-part chains (LED vs incandescent, motor, fuel vs electric car, heat share per year) stay complete and ordered.
+- Split paragraphs: wording identical.

@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d82fee78a025d07e
+CONTENT-HASH: dc35cec443f64e55
+SCOPE: delta numbers,wording from d82fee78a025d07e base 3076572c597d
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none (paragraph breaks only)
+- [Minor] solutions.md Formula lines — several chains stack "so … so" (or "; … ;") in one line; a full stop or "and" between the principle and the rearrangement would read slightly better. Optional.
 
 ## Checked
-- Delta: solutions.md cut into paragraphs and (a)/(b) parts (1-3, 1-4, 1-5, 1-6, 1-8, 2-4, 2-5, 2-7, 2-8, 3-1, 3-3 and the others in the diff).
-- en captures opened (content/en/FY2/fy2-1/review/shots/): open-exercises-1280-3, -5, -6, -7 (1-3 graph solution, 1-4 a/b/c, 1-5, 1-6, 1-7, 1-8 start); open-exercises-L2-1280-5, -8 (1-15 table task and solution, 1-17 lamps); open-exercises-L3-1280-1, -3 (1-19, 1-21 nuclear chain, bounce task).
-- Each part/step is its own paragraph; KaTeX, thin-space units, aligned rows, boxed answers and reasonableness blocks intact; no clipping or empty gaps. Not every changed paragraph was opened (2-4, 2-5 parts between those captures were not individually viewed).
+- Delta (solutions.md Formula/Substitution lines; round 2 fixes). en captures opened: open-exercises-1280-1 (1-2 full solution, Formula now E_initial = E_final), open-exercises-L2-1280-5 (1-16, 1-17).
+- Aligned rows, fractions, units with thin spaces, answer boxes and reasonableness blocks render intact; no Finnish symbols or words left in the changed English text (remaining Finnish strings are MAFY table names, proper names).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

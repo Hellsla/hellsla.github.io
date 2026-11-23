@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6bfe5ddbe100df3b
+CONTENT-HASH: 47ef9f21a9aab27e
 Mode: delta
 
 ## Blocking
@@ -9,8 +9,8 @@ Mode: delta
 (none)
 
 ## Checked
-- Oil H changed 43 to 40.6 MJ/kg (MAFY table) in L3-01, L3-04, L3-05, in the texts, solutions and answers.py; the text of L3-01 and L3-04 now names the source.
-- L3-01: 120/40.6 = 2.956 kg, 8.0 - 2.96 = 5.04, answer 5.0 kg; check 2.71 x 2.96 = 8.0 correct.
-- L3-04: oil 53 200/40.6 = 1310 kg; ratio of masses 2.5, of heats 40.6:17 = 2.4, 2.4 x 0.90/0.85 = 2.5: the explanation of the efficiency still holds; answer (pellets 3300 kg) unchanged.
-- L3-05: oil 36 000/(0.90 x 40.6) = 985 kg (990); "more than twice" and 40.6:15 = 2.7 correct; answer 940 kg unchanged.
-- Edited during the review: the L3-05 table row for the oil boiler now reads 40.6 MJ/kg (light heating oil, MAFY table), matching the solution's 'from the table'; a necessary and correct fix.
+- Formula lines start from e = E/m, eta, E = Hm, P = E/t or equal energy and combine into one correct expression.
+- Substitution rows (wood/oil, 40 %/20 % moisture) are now aligned lines: m_wood, m_oil, then the difference; values 8.0, 2.96, 5.04, 19.23, 13.61, 5.62 kg agree with the earlier ones.
+- L2-09 wording: "the condition that both fuels release the same energy" replaces the loose conservation-of-energy phrase; clearer, answer 34.4 kg unchanged.
+- The heating-table solution shows the three fuel calculations on separate lines.
+- No Finnish words remain except the name of the MAFY source table.
