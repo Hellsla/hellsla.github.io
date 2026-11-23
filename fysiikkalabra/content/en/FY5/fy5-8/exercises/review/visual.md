@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c20e086d07c18edd
+CONTENT-HASH: 42e62b5db7bbd438
+none
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md, Reasonableness blocks with a display chain in the middle of a sentence (e.g. "The mass of the star is [box] solar masses", fy5-6 6-24; "the speed would be [box] a little more than ...", fy5-8): the sentence is cut by the display box; end the sentence before the display or put the display last when the file is next edited.
-- [Minor] solutions.md, Formula steps where the first equation sits outside the boxed block and the rest inside (fy5-7 7-L3 sine fit, "D = ..." then boxed A, d): put the formulas in one display block.
+(none)
 
 ## Checked
-- Delta of solutions.md only (paragraph splits, no wording change). Rendered captures in content/en/FY5/fy5-8/review/shots/ (current for this hash): exercises 1280 parts L2-8 (spring constant answer), L3-5 (rubber band), L3-9 (crossbow reasonableness).
-- Split paragraphs read as separate blocks inside the solution card at 1280 px, spacing even, display chains and boxed answers intact, no clipping or overflow, step labels and order unchanged.
-- Hash re-run at the end: c20e086d07c18edd (unchanged).
+- Delta (Kaava steps as aligned symbolic chains; no figure changed). Opened fy5-8 open-exercises-1280-3 (8-3, 8-4 graph), L2-1280-3 and -4 (8-12 graph and solution, 8-14), L3-1280-2 (8-17 end, start of the 8-18 block "E_start = E_end").
+- Equals signs align, one step per row, symbolic order then substitution intact; graphs with units and ticks unchanged; no clipping or overflow. The longer five-row blocks (8-7, 8-13, 8-15) not opened separately.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

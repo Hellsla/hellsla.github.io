@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 682917e1074659db
-SCOPE: delta added-exercise from 23f25874b515562a base 81db4a6fd727
+CONTENT-HASH: 93d3c3e0471d2a02
+none
 
 ## Blocking
 (none)
 
 ## Polish
-1. solutions.md (L1-10) — Järkevyys is good; the Pythagoras step (3-4-5) makes it a light two-step task, acceptable at level 1.
+(none)
 
 ## Checked
-- L1-10 reworked: perpendicular force at P, arm = whole bar read from the grid (5 squares by Pythagoras), M = 30 N · 0,50 m = 15 Nm; recomputed, correct.
-- No longer repeats L1-04 (horizontal force, arm 3 squares, M from F): this one practises that a perpendicular force has the full bar as its arm, plus reading length from a grid; L1-05 is the inverse M/r, not this.
-- Figure shows O, P and a horizontal force; the task says it is replaced, so no confusion; the answer is not drawn.
-- Level 1 fits; mix of kinds unchanged. Text and solution read only (no renders).
+- The only change is the Kaava step of the wrench error-analysis task (solutions.md): it now defines d (measured length) and e (distance from the edge to the axis) before r = d - e. This repairs my earlier Polish 1.
+- The definition sits in the same step as the equations, before any number, so a student who could not solve the task can follow r = d - e, M = Fr, M = F(d - e) in order.
+- Sijoitus and Vastaus are unchanged and use the same numbers (0,270 m, 0,030 m, 90 N, 21,6 Nm), so the Kaava, the Sijoitus and the Periaate still agree.
+- Finnish is correct and in plain style: "Olkoon d mitattu pituus ja e matka reunasta akselille."
+- The rest of the set, and the earlier PASS, are unaffected. Text only.

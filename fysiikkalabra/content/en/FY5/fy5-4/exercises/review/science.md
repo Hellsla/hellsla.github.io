@@ -1,13 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 972e8efd5f7c706b
+CONTENT-HASH: 0531a6d54a3e8f40
+Mode: delta (Formula steps rewritten as aligned derivations from the basic equations)
+Round 1
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- The hash was 972e8efd5f7c706b at the start and at the end. I judged only the diff (solutions.md, the L2-07 Reasonableness and the L3-05 Model answer on the justification).
-- L2-07: I recomputed the numbers. a = 4.32 m/s² = 0.440 g, mg = 8.34 kN, and the student's 7344 N / 8.34 kN = 0.881. No number changed.
-- L2-07: "would already require very good grip" is correct for 0.88. It agrees with line 184 (0.92, possible on dry asphalt) and line 323 (dry asphalt 0.7–0.9). The contradiction is gone.
-- L3-05: "friction does not have to supply the whole net force towards the centre" is correct. The net force is N sin α + F cos α. The wrong reference to work is gone.
-- Both sentences say the same as the Finnish version.
+- All 16 Formula diffs: each new chain starts from $\Sigma F = ma_\text{n}$ (or $\Sigma F_y = 0$) and $a_\text{n} = v^2/r$, and is solved in symbols to the form the Substitution uses. Every step is algebraically right, and the end formulas are the same as before.
+- L2-01 and L2-03: the signs (centre above at the bottom of a dip, below at the top of a hump) give $N = m(g \pm v^2/r)$ correctly.
+- L3-01, L2-06, L3-03: $N = mg$ on level ground. Static friction is the centripetal force, and it equals $\mu_0 N$ only at the limit, which is stated as an inequality in L3-03. The results $v = \sqrt{\mu_0 gr}$, $\mu_0 = v^2/(gr)$ and $r \ge v^2/(0.25g)$ are right.
+- L3-04: the two equations of motion keep their axes. The Force diagram fixes $y$ up at the bottom; at the top the axis points down towards the centre, so the term is $+mg$. $N_2 = 0$ gives $v_\text{min} = \sqrt{gr}$.
+- L3-05: banked curve without friction gives $\tan\alpha = v_0^2/(gr)$. At maximum speed friction points down the slope, so the signs in both component equations are right; dividing and then dividing through by $\cos\alpha$ gives the $v_\text{max}$ formula.
+- L2-05: $F = (m/r)v^2$, so the slope of the $(v^2, F)$ line is $k = m/r$ and $m = kr$.
+- Non-formula hunks: the text is the same word for word once paragraph breaks are ignored (checked by script); the L3-05 friction equations moved into their own display.
+- Substitutions, answers and tolerances are unchanged. Spot-recomputed: 5.0 m/s², 1.75 m/s², 6.67 N, 7.91 m/s, 1.10 kN, 6.01 kN, 2.06 kN, 27.6 km/h, 1.41 Hz, 201 m, 0.548, 3.67 kN, 13.9 m and 0.680.
+- Hash is the same at the start and the end.

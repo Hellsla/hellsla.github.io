@@ -8,7 +8,7 @@
 Painot pyrkivät kallistamaan puomia sen pystytasossa. Siksi momentit lasketaan vaakasuoran momenttiakselin A suhteen. Akseli A kulkee tornin kohdalla, ja se on kohtisuorassa tätä tasoa vastaan. Voiman varsi on matka akselilta A voiman vaikutussuoralle.
 
 Painot ovat pystysuoria ja akseli on vaakasuora. Siksi varsi on painon vaakasuora etäisyys tornin akselista. Kuorma ja puomin paino kiertävät puomia kuorman puolelle. Vastapaino kiertää puomia vastakkaiseen suuntaan. Tasapainossa momenttien summa on nolla.
-**Kaava:** $m_\text{p} g r_\text{p} + m g r - m_\text{v} g r_\text{v} = 0$. Putoamiskiihtyvyys supistuu, joten $r = \dfrac{m_\text{v} r_\text{v} - m_\text{p} r_\text{p}}{m}$.
+**Kaava:** $$\begin{aligned} M &= Fr,\quad F = mg \\ \Sigma M &= m_\text{p} g r_\text{p} + m g r - m_\text{v} g r_\text{v} = 0 \\ m g r &= m_\text{v} g r_\text{v} - m_\text{p} g r_\text{p} \\ r &= \dfrac{m_\text{v} r_\text{v} - m_\text{p} r_\text{p}}{m} \end{aligned}$$
 **Muunnokset:** $1\,\text{t} = 1000\,\text{kg}$, joten $m_\text{p} = 4000\,\text{kg}$ ja $m_\text{v} = 9000\,\text{kg}$.
 **Sijoitus:** $r = \dfrac{9000\,\text{kg} \cdot 10\,\text{m} - 4000\,\text{kg} \cdot 12\,\text{m}}{2000\,\text{kg}} = \dfrac{42\,000\,\text{kg}\cdot\text{m}}{2000\,\text{kg}} = 21\,\text{m}$
 **Vastaus:** $r \approx 21\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, kuten etäisyyksissä ja massoissa.
@@ -18,7 +18,7 @@ Painot ovat pystysuoria ja akseli on vaakasuora. Siksi varsi on painon vaakasuor
 **Annettu:** a-kohdan tiedot, vaunu puomin kärjessä $r_\text{max} = 40\,\text{m}$, sallittu kokonaismomentti $M_\text{max} = 600\,\text{kNm}$ ja $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** suurin kuorma $m$ puomin kärjessä
 **Periaate:** Kun kuorma on kärjessä, kokonaismomentti osoittaa kuorman puolelle. Suurimmalla sallitulla kuormalla se on yhtä suuri kuin raja. Momentit lasketaan momenttiakselin A suhteen kuten a-kohdassa. Positiivinen kiertosuunta on kuorman puolelle.
-**Kaava:** $m g r_\text{max} + m_\text{p} g r_\text{p} - m_\text{v} g r_\text{v} = M_\text{max}$, josta $m = \dfrac{M_\text{max} + m_\text{v} g r_\text{v} - m_\text{p} g r_\text{p}}{g r_\text{max}}$
+**Kaava:** $$\begin{aligned} M &= Fr,\quad F = mg \\ M_\text{max} &= m g r_\text{max} + m_\text{p} g r_\text{p} - m_\text{v} g r_\text{v} \\ m g r_\text{max} &= M_\text{max} + m_\text{v} g r_\text{v} - m_\text{p} g r_\text{p} \\ m &= \dfrac{M_\text{max} + m_\text{v} g r_\text{v} - m_\text{p} g r_\text{p}}{g r_\text{max}} \end{aligned}$$
 **Muunnokset:** $M_\text{max} = 600\,\text{kNm} = 600\,000\,\text{Nm}$
 **Sijoitus:** $m_\text{p} g r_\text{p} = 4000\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 12\,\text{m} = 470\,880\,\text{Nm}$ ja $m_\text{v} g r_\text{v} = 9000\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 10\,\text{m} = 882\,900\,\text{Nm}$. Kuorman momentti saa siis olla $600\,000\,\text{Nm} + 882\,900\,\text{Nm}$ $- 470\,880\,\text{Nm}$ $= 1\,012\,020\,\text{Nm}$. Siitä saadaan $m = \dfrac{1\,012\,020\,\text{Nm}}{9{,}81\,\text{m/s}^2 \cdot 40\,\text{m}} = 2579\,\text{kg}$
 **Vastaus:** $m \approx 2{,}6\,\text{t}$. Vastauksessa on kaksi merkitsevää numeroa, kuten nosturin tiedoissa.
@@ -95,7 +95,7 @@ Kuorma ei siis heitty ulospäin. Se jää jälkeen suoraviivaisesta radastaan va
 **Periaate:** Kuorma kiertää tasaista ympyräliikettä. Sen kiihtyvyys on siis normaalikiihtyvyys $a_\text{n} = \tfrac{v^2}{r}$ kohti tornin akselia. Ratanopeus saadaan kierrosajasta. Newtonin toinen laki kirjoitetaan d-kohdan voimakuviosta komponenteittain. Akseli $x$ on vaakasuoraan kohti tornin akselia ja akseli $y$ ylöspäin.
 
 Kallistuminen siirtää kuormaa vain senttejä. Ympyrän säteenä voi siis käyttää vaunun etäisyyttä $21\,\text{m}$.
-**Kaava:** $x$: $S\sin\theta = m\dfrac{v^2}{r}$ ja $y$: $S\cos\theta - mg = 0$. Kun yhtälöt jaetaan keskenään, saadaan $\tan\theta = \dfrac{v^2}{rg}$, missä $v = \dfrac{2\pi r}{T}$. Massa supistuu.
+**Kaava:** $$\begin{aligned} \Sigma F_x &= ma_\text{n}: S\sin\theta = m\dfrac{v^2}{r} \\ \Sigma F_y &= 0: S\cos\theta = mg \\ \tan\theta &= \dfrac{S\sin\theta}{S\cos\theta} = \dfrac{m v^2/r}{mg} \\ \tan\theta &= \dfrac{v^2}{rg} \\ v &= \dfrac{2\pi r}{T} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $v = \dfrac{2\pi \cdot 21\,\text{m}}{90\,\text{s}} = 1{,}466\,\text{m/s}$ ja $\tan\theta = \dfrac{(1{,}466\,\text{m/s})^2}{21\,\text{m} \cdot 9{,}81\,\text{m/s}^2} = 0{,}01043$, joten $\theta = 0{,}598^\circ$
 **Vastaus:** $\theta \approx 0{,}60^\circ$. Vastauksessa on kaksi merkitsevää numeroa, kuten kierrosajassa $90\,\text{s}$. Kuorma on siirtynyt vaunun kohdalta ulospäin $15\,\text{m} \cdot 0{,}01043 \approx 0{,}16\,\text{m}$.
@@ -205,7 +205,7 @@ Suoran kulmakerroin on mallin mukaan $\gamma M$. Se on sama kaikille kuille, vai
 **Kysytty:** Jupiterin massa $M$
 **Periaate:** Mallin mukaan $v^2 = \gamma M \cdot \tfrac{1}{r}$, joten suoran kulmakerroin $k$ on $\gamma M$. Kulmakerroin luetaan suoralta pisteestä, joka on kaukana origosta. Silloin lukemisen suhteellinen virhe on pieni.
 **Kuvaajan lukeminen:** Suora kulkee origon ja pisteen $(5{,}0 \cdot 10^{-9}\,\tfrac{1}{\text{m}};\ 6{,}35 \cdot 10^{8}\,\text{m}^2/\text{s}^2)$ kautta, joten $k = \dfrac{6{,}35 \cdot 10^{8}\,\text{m}^2/\text{s}^2}{5{,}0 \cdot 10^{-9}\,\tfrac{1}{\text{m}}} = 1{,}27 \cdot 10^{17}\,\text{m}^3/\text{s}^2$.
-**Kaava:** $k = \gamma M$, josta $M = \dfrac{k}{\gamma}$
+**Kaava:** $$\begin{aligned} F &= \dfrac{\gamma M m}{r^2} = m\dfrac{v^2}{r} \\ v^2 &= \gamma M \cdot \dfrac{1}{r} = k \cdot \dfrac{1}{r} \\ k &= \gamma M \\ M &= \dfrac{k}{\gamma} \end{aligned}$$
 **Muunnokset:** $1\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} = 1\,\tfrac{\text{m}^3}{\text{kg}\cdot\text{s}^2}$, koska $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$.
 **Sijoitus:** $M = \dfrac{1{,}27 \cdot 10^{17}\,\text{m}^3/\text{s}^2}{6{,}674 \cdot 10^{-11}\,\tfrac{\text{m}^3}{\text{kg}\cdot\text{s}^2}} = 1{,}90 \cdot 10^{27}\,\text{kg}$
 **Vastaus:** $M \approx 1{,}9 \cdot 10^{27}\,\text{kg}$. Vastauksessa on kaksi merkitsevää numeroa, koska kulmakerroin luetaan kuvaajalta noin kahden tai kolmen numeron tarkkuudella.
@@ -217,7 +217,7 @@ Suoran kulmakerroin on mallin mukaan $\gamma M$. Se on sama kaikille kuille, vai
 **Periaate:** Luotain pysyy saman pilvimuodostelman yläpuolella vain, jos se kiertää Jupiteria samaan suuntaan ja samassa ajassa kuin pilvimuodostelma. Tehtävässä oletetaan, että pilvimuodostelma kiertää Jupiterin pyörähdysajassa $9{,}93\,\text{h}$.
 
 Rata on siis Jupiterin pyörimiseen synkronoitu päiväntasaajan ympyrärata. Luotaimen ympyräliikkeen keskeisvoima on Jupiterin gravitaatio, kuten kuilla. Siksi $v^2 = \dfrac{\gamma M}{r}$, ja ratanopeus on $v = \dfrac{2\pi r}{T}$.
-**Kaava:** $\dfrac{4\pi^2 r^2}{T^2} = \dfrac{\gamma M}{r}$, josta $r^3 = \dfrac{\gamma M T^2}{4\pi^2}$ ja $r = \sqrt[3]{\dfrac{\gamma M T^2}{4\pi^2}}$
+**Kaava:** $$\begin{aligned} F &= \dfrac{\gamma M m}{r^2} = m\dfrac{v^2}{r} \\ v^2 &= \dfrac{\gamma M}{r},\quad v = \dfrac{2\pi r}{T} \\ \dfrac{4\pi^2 r^2}{T^2} &= \dfrac{\gamma M}{r} \\ r^3 &= \dfrac{\gamma M T^2}{4\pi^2} \\ r &= \sqrt[3]{\dfrac{\gamma M T^2}{4\pi^2}} \end{aligned}$$
 **Muunnokset:** $T = 9{,}93 \cdot 3600\,\text{s} = 35\,748\,\text{s}$
 **Sijoitus:** $r^3 = \dfrac{1{,}27 \cdot 10^{17}\,\text{m}^3/\text{s}^2 \cdot (35\,748\,\text{s})^2}{4\pi^2} = 4{,}11 \cdot 10^{24}\,\text{m}^3$, joten $r = 1{,}60 \cdot 10^{8}\,\text{m}$
 **Vastaus:** $$\begin{aligned} r &\approx 1{,}6 \cdot 10^{8}\,\text{m} \\ &= 160\,000\,\text{km} \end{aligned}$$ Jupiterin keskipisteestä. Vastauksessa on kaksi merkitsevää numeroa, kuten b-kohdan tuloksessa.
@@ -333,7 +333,7 @@ Kun suoraa jatketaan pystyakselille, se leikkaa akselin noin kohdassa $0{,}028\,
 **Kysytty:** jousen jousivakio $k$
 **Periaate:** Mallin $T^2 = \dfrac{4\pi^2}{k}\,m$ mukaan suoran kulmakerroin on $\dfrac{4\pi^2}{k}$. Pystyakselin leikkauskohta ei vaikuta kulmakertoimeen. Jousivakio saadaan siis kulmakertoimesta, vaikka suora ei kulje origon kautta. Kulmakerroin luetaan suoran kahdesta pisteestä, jotka ovat kaukana toisistaan.
 **Kuvaajan lukeminen:** Suora kulkee pisteiden $(0{,}100\,\text{kg};\ 0{,}226\,\text{s}^2)$ ja $(0{,}350\,\text{kg};\ 0{,}722\,\text{s}^2)$ kautta, joten kulmakerroin on $\dfrac{0{,}722\,\text{s}^2 - 0{,}226\,\text{s}^2}{0{,}350\,\text{kg} - 0{,}100\,\text{kg}} = \dfrac{0{,}496\,\text{s}^2}{0{,}250\,\text{kg}} = 1{,}984\,\text{s}^2/\text{kg}$.
-**Kaava:** $\dfrac{4\pi^2}{k} = 1{,}984\,\text{s}^2/\text{kg}$, josta $k = \dfrac{4\pi^2}{1{,}984\,\text{s}^2/\text{kg}}$
+**Kaava:** $$\begin{aligned} T &= 2\pi\sqrt{\dfrac{m}{k}} \\ T^2 &= \dfrac{4\pi^2}{k}\,m \\ \text{kulmakerroin} &= \dfrac{4\pi^2}{k} \\ k &= \dfrac{4\pi^2}{\text{kulmakerroin}} \end{aligned}$$
 **Muunnokset:** $1\,\text{kg/s}^2 = 1\,\text{N/m}$, koska $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$.
 **Sijoitus:** $k = \dfrac{4\pi^2}{1{,}984\,\text{s}^2/\text{kg}} = \dfrac{39{,}48}{1{,}984\,\text{s}^2/\text{kg}} = 19{,}9\,\text{kg/s}^2$
 **Vastaus:** $k \approx 19{,}9\,\text{N/m}$. Vastauksessa on kolme merkitsevää numeroa, koska massat ja ajat on mitattu kolmen numeron tarkkuudella ja pisteet ovat hyvin lähellä suoraa.
@@ -360,7 +360,7 @@ Leikkauskohdasta saadaan lisämassa $$0{,}028\,\text{s}^2 : 1{,}984\,\text{s}^2/
 **Periaate:** Värähtelyn energia säilyy, kun kitka ja ilmanvastus ovat pieniä. Ääriasennossa punnus on hetken levossa. Silloin koko energia $\tfrac{1}{2}kA^2$ on potentiaalienergiaa. Tasapainoasemassa poikkeama on nolla, joten koko energia on liike-energiaa ja nopeus on suurimmillaan.
 
 Pystysuorassa jousessa paino vain siirtää tasapainoasemaa. Siksi poikkeama mitataan tasapainoasemasta. Tehtävän mallissa jousen oma massa otetaan huomioon samoin kuin c-kohdassa. Jousen alaosa liikkuu punnuksen mukana. Siksi liike-energiaan lasketaan punnuksen lisäksi kolmasosa jousen massasta.
-**Kaava:** $\tfrac{1}{2}m_\text{eff}v_\text{max}^2 = \tfrac{1}{2}kA^2$, missä $m_\text{eff} = m + \tfrac{1}{3}m_\text{j}$, josta $v_\text{max} = A\sqrt{\dfrac{k}{m_\text{eff}}}$
+**Kaava:** $$\begin{aligned} E_\text{k,max} &= \tfrac{1}{2}m_\text{eff}v_\text{max}^2 \\ E_\text{p,max} &= \tfrac{1}{2}kA^2 \\ E_\text{k,max} &= E_\text{p,max} \\ m_\text{eff} &= m + \tfrac{1}{3}m_\text{j} \\ v_\text{max} &= A\sqrt{\dfrac{k}{m_\text{eff}}} \end{aligned}$$
 **Muunnokset:** $A = 5{,}0\,\text{cm} = 0{,}050\,\text{m}$ ja $m_\text{j} = 45\,\text{g} = 0{,}045\,\text{kg}$
 **Sijoitus:** $m_\text{eff} = 0{,}250\,\text{kg} + 0{,}045\,\text{kg} : 3 = 0{,}265\,\text{kg}$ ja $v_\text{max} = 0{,}050\,\text{m} \cdot \sqrt{\dfrac{19{,}9\,\text{N/m}}{0{,}265\,\text{kg}}} = 0{,}050\,\text{m} \cdot 8{,}67\,\tfrac{1}{\text{s}} = 0{,}433\,\text{m/s}$
 **Vastaus:** $v_\text{max} \approx 0{,}43\,\text{m/s}$. Vastauksessa on kaksi merkitsevää numeroa, kuten amplitudissa $5{,}0\,\text{cm}$.
@@ -402,7 +402,7 @@ Jos jaksonajaksi otetaan huippujen väli $2{,}0\,\text{ms}$, saadaan virheellise
 **Periaate:** Pillin ilmapatsaaseen syntyy seisova aalto, kun ääniaalto heijastuu putken päistä. Avoimessa päässä ilma pääsee liikkumaan vapaasti, ja siinä on värähtelyn kupu.
 
 Kun molemmat päät ovat avoimia, perusvärähtelyssä putkessa on kaksi kupua päissä ja yksi solmu keskellä. Putken pituus on silloin puolet aallonpituudesta. Aallonpituus saadaan aallon perusyhtälöstä $v = f\lambda$.
-**Kaava:** $L = \dfrac{\lambda}{2}$ ja $\lambda = \dfrac{v}{f}$, joten $L = \dfrac{v}{2f}$
+**Kaava:** $$\begin{aligned} L &= \dfrac{\lambda}{2} \\ v &= f\lambda \Rightarrow \lambda = \dfrac{v}{f} \\ L &= \dfrac{v}{2f} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $L = \dfrac{343\,\text{m/s}}{2 \cdot 250\,\text{Hz}} = 0{,}686\,\text{m}$
 **Vastaus:** $L \approx 0{,}686\,\text{m}$. Vastauksessa on kolme merkitsevää numeroa, kuten äänen nopeudessa.
@@ -412,7 +412,7 @@ Kun molemmat päät ovat avoimia, perusvärähtelyssä putkessa on kaksi kupua p
 **Annettu:** $L = 0{,}686\,\text{m}$, $v = 343\,\text{m/s}$ lämpötilassa $20{,}0\,{}^\circ\text{C}$, äänen nopeus pienenee noin $0{,}6\,\text{m/s}$ astetta kohti, talvilämpötila $8{,}0\,{}^\circ\text{C}$
 **Kysytty:** perustaajuuden muutos $\Delta f$
 **Periaate:** Seisovan aallon aallonpituuden määrää pillin pituus, $\lambda = 2L$. Se ei käytännössä muutu. Kylmässä ilmassa ääni etenee hitaammin. Samalla aallonpituudella taajuus $f = \tfrac{v}{\lambda}$ pienenee samassa suhteessa kuin äänen nopeus.
-**Kaava:** $v' = v - 0{,}6\,\tfrac{\text{m/s}}{{}^\circ\text{C}} \cdot \Delta T$, $f' = \dfrac{v'}{2L}$ ja $\Delta f = f - f'$
+**Kaava:** $$\begin{aligned} v' &= v - 0{,}6\,\tfrac{\text{m/s}}{{}^\circ\text{C}} \cdot \Delta T \\ f &= \dfrac{v}{\lambda},\quad \lambda = 2L \\ f' &= \dfrac{v'}{2L} \\ \Delta f &= f - f' \end{aligned}$$
 **Muunnokset:** Lämpötila laskee $20{,}0\,{}^\circ\text{C} - 8{,}0\,{}^\circ\text{C} = 12{,}0\,{}^\circ\text{C}$.
 **Sijoitus:** $v' = 343\,\text{m/s} - 12{,}0 \cdot 0{,}6\,\text{m/s} = 335{,}8\,\text{m/s}$ ja $f' = \dfrac{335{,}8\,\text{m/s}}{2 \cdot 0{,}686\,\text{m}} = 244{,}8\,\text{Hz}$, joten $\Delta f = 250\,\text{Hz} - 244{,}8\,\text{Hz} = 5{,}2\,\text{Hz}$
 **Vastaus:** Perustaajuus pienenee noin $5\,\text{Hz}$ (tarkemmin $5{,}2\,\text{Hz}$) arvoon noin $245\,\text{Hz}$. Muutos tunnetaan yhden merkitsevän numeron tarkkuudella, koska nopeuden muutos $0{,}6\,\text{m/s}$ astetta kohti on annettu yhdellä numerolla.
@@ -424,7 +424,7 @@ Kun molemmat päät ovat avoimia, perusvärähtelyssä putkessa on kaksi kupua p
 **Periaate:** Kun lähde säteilee tasaisesti joka suuntaan, sama teho jakautuu pallon pinnalle $4\pi r^2$. Intensiteetti on silloin $I = \dfrac{P}{4\pi r^2}$. Kun etäisyys puolittuu, intensiteetti nelinkertaistuu.
 
 Intensiteettitason muutos saadaan intensiteettien suhteesta. Vertailuaika on aika, jossa sama energia-annos kertyy. Se puolittuu jokaista $3\,\text{dB}$:n nousua kohti.
-**Kaava:** $L_2 - L_1 = 10\,\text{dB} \cdot \lg \dfrac{I_2}{I_1}$, missä $\dfrac{I_2}{I_1} = \left(\dfrac{r_1}{r_2}\right)^2$; $n = \dfrac{L_2 - L_0}{3\,\text{dB}}$ ja $t_\text{v} = \dfrac{t_0}{2^{\,n}}$
+**Kaava:** $$\begin{aligned} I &\propto \dfrac{1}{r^2} \Rightarrow \dfrac{I_2}{I_1} = \left(\dfrac{r_1}{r_2}\right)^2 \\ L_2 - L_1 &= 10\,\text{dB} \cdot \lg \dfrac{I_2}{I_1} \\ n &= \dfrac{L_2 - L_0}{3\,\text{dB}} \\ t_\text{v} &= \dfrac{t_0}{2^{\,n}} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $\dfrac{I_2}{I_1} = \left(\dfrac{4{,}0\,\text{m}}{2{,}0\,\text{m}}\right)^2 = 4$, joten $L_2 = 88\,\text{dB} + 10\,\text{dB} \cdot \lg 4 = 88\,\text{dB} + 6{,}0\,\text{dB} = 94\,\text{dB}$. $n = \dfrac{94\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 3{,}0$ ja $t_\text{v} = \dfrac{8\,\text{h}}{2^{3}} = 1{,}0\,\text{h}$
 **Vastaus:** $t_\text{v} \approx 1\,\text{h}$. Annos ei jää vertailuannosta pienemmäksi. Kolmen tunnin harjoitus on noin kolminkertainen vertailuaikaan nähden, joten annos on noin $300\,\%$ vertailuannoksesta. Urkurin kannattaa käyttää kuulonsuojaimia tai harjoitella hiljaisemmilla äänikerroilla.

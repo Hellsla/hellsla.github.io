@@ -2,7 +2,7 @@
 **Annettu:** radan säde $r = 7196\,\text{km}$, Maan massa $M = 5{,}97 \cdot 10^{24}\,\text{kg}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Kysytty:** ratanopeus $v$ kilometreinä sekunnissa
 **Periaate:** Satelliittiin vaikuttaa vain Maan gravitaatiovoima. Se on siis ympyräliikkeen kokonaisvoima: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$. Satelliitin massa supistuu pois.
-**Kaava:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$, josta $v = \sqrt{\dfrac{\gamma M}{r}}$
+**Kaava:** $$\begin{aligned} \Sigma F &= m a_\text{n} \\ \gamma\dfrac{Mm}{r^2} &= m\dfrac{v^2}{r} \\ v^2 &= \dfrac{\gamma M}{r} \\ v &= \sqrt{\dfrac{\gamma M}{r}} \end{aligned}$$
 **Muunnokset:** $r = 7196\,\text{km} = 7{,}196 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 5{,}97 \cdot 10^{24}\,\text{kg} \\ &= 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $v = \sqrt{\dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{7{,}196 \cdot 10^{6}\,\text{m}}} = 7441\,\text{m/s} = 7{,}441\,\text{km/s}$
 **Vastaus:** $7{,}44\,\text{km/s}$, kolme merkitsevää numeroa kuten Maan massassa $5{,}97 \cdot 10^{24}\,\text{kg}$.
@@ -22,7 +22,7 @@
 **Annettu:** radan säde $r = 42\,164\,\text{km}$, Maan massa $M = 5{,}97 \cdot 10^{24}\,\text{kg}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Kysytty:** normaalikiihtyvyys $a_\text{n}$
 **Periaate:** Satelliittiin vaikuttaa vain gravitaatiovoima, joten se on kokonaisvoima. Newtonin toisen lain mukaan $\gamma \tfrac{Mm}{r^2} = m a_\text{n}$. Normaalikiihtyvyys on siis sama kuin gravitaatiovoiman antama kiihtyvyys samalla etäisyydellä.
-**Kaava:** $\gamma \dfrac{Mm}{r^2} = m a_\text{n}$, josta $a_\text{n} = \dfrac{\gamma M}{r^2}$
+**Kaava:** $$\begin{aligned} \Sigma F &= m a_\text{n} \\ \gamma\dfrac{Mm}{r^2} &= m\dfrac{v^2}{r} \\ a_\text{n} &= \dfrac{\gamma M}{r^2} \end{aligned}$$
 **Muunnokset:** $r = 42\,164\,\text{km} = 4{,}2164 \cdot 10^{7}\,\text{m}$
 **Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 5{,}97 \cdot 10^{24}\,\text{kg} \\ &= 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $a_\text{n} = \dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{(4{,}2164 \cdot 10^{7}\,\text{m})^2} = 0{,}2241\,\text{m/s}^2$
 **Vastaus:** $0{,}224\,\text{m/s}^2$, kolme merkitsevää numeroa kuten Maan massassa.
@@ -42,7 +42,7 @@
 **Annettu:** radan säde $r = 1847\,\text{km}$, Kuun massa $M = 7{,}35 \cdot 10^{22}\,\text{kg}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Kysytty:** luotaimen ratanopeus $v$ kilometreinä sekunnissa
 **Periaate:** Luotaimeen vaikuttaa vain Kuun gravitaatiovoima. Se on siis ympyräliikkeen kokonaisvoima. Keskuskappaleena on nyt Kuu.
-**Kaava:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$, josta $v = \sqrt{\dfrac{\gamma M}{r}}$
+**Kaava:** $$\begin{aligned} \Sigma F &= m a_\text{n} \\ \gamma\dfrac{Mm}{r^2} &= m\dfrac{v^2}{r} \\ v^2 &= \dfrac{\gamma M}{r} \\ v &= \sqrt{\dfrac{\gamma M}{r}} \end{aligned}$$
 **Muunnokset:** $r = 1847\,\text{km} = 1{,}847 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 7{,}35 \cdot 10^{22}\,\text{kg} \\ &= 4{,}905 \cdot 10^{12}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $v = \sqrt{\dfrac{4{,}905 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{1{,}847 \cdot 10^{6}\,\text{m}}} = 1630\,\text{m/s} = 1{,}630\,\text{km/s}$
 **Vastaus:** $1{,}63\,\text{km/s}$, kolme merkitsevää numeroa kuten Kuun massassa $7{,}35 \cdot 10^{22}\,\text{kg}$.
@@ -52,7 +52,7 @@
 **Annettu:** ratanopeus $v = 5{,}00\,\text{km/s}$, Maan massa $M = 5{,}97 \cdot 10^{24}\,\text{kg}$ ja säde $R = 6371\,\text{km}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Kysytty:** korkeus maanpinnasta $h$ kilometreinä
 **Periaate:** Gravitaatiovoima on satelliitin ainoa voima ja siis ympyräliikkeen kokonaisvoima. Yhtälöstä ratkaistaan ensin radan säde $r$. Se mitataan Maan keskipisteestä. Korkeus on $h = r - R$.
-**Kaava:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$, josta $r = \dfrac{\gamma M}{v^2}$ ja $h = r - R$
+**Kaava:** $$\begin{aligned} \Sigma F &= m a_\text{n} \\ \gamma\dfrac{Mm}{r^2} &= m\dfrac{v^2}{r} \\ v^2 &= \dfrac{\gamma M}{r} \\ r &= \dfrac{\gamma M}{v^2} \\ h &= r - R \end{aligned}$$
 **Muunnokset:** $v = 5{,}00\,\text{km/s} = 5000\,\text{m/s}$, $R = 6371\,\text{km} = 6{,}371 \cdot 10^{6}\,\text{m}$
 **Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 5{,}97 \cdot 10^{24}\,\text{kg} \\ &= 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $r = \dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{(5000\,\text{m/s})^2} = 1{,}5938 \cdot 10^{7}\,\text{m}$, joten $h = 1{,}5938 \cdot 10^{7}\,\text{m} - 6{,}371 \cdot 10^{6}\,\text{m} = 9{,}567 \cdot 10^{6}\,\text{m} = 9567\,\text{km}$
 **Vastaus:** $9{,}57 \cdot 10^{3}\,\text{km}$ eli noin $9570\,\text{km}$, kolme merkitsevää numeroa kuten nopeudessa $5{,}00\,\text{km/s}$.
@@ -62,7 +62,7 @@
 **Annettu:** korkeus $h = 400\,\text{km}$, Marsin massa $M = 6{,}42 \cdot 10^{23}\,\text{kg}$ ja säde $R = 3390\,\text{km}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Kysytty:** ratanopeus $v$ kilometreinä sekunnissa
 **Periaate:** Luotaimeen vaikuttaa vain Marsin gravitaatiovoima. Se on siis ympyräliikkeen kokonaisvoima. Radan säde mitataan Marsin keskipisteestä: $r = R + h$.
-**Kaava:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$, josta $v = \sqrt{\dfrac{\gamma M}{R + h}}$
+**Kaava:** $$\begin{aligned} r &= R + h \\ \Sigma F &= m a_\text{n} \\ \gamma\dfrac{Mm}{r^2} &= m\dfrac{v^2}{r} \\ v^2 &= \dfrac{\gamma M}{r} \\ v &= \sqrt{\dfrac{\gamma M}{R + h}} \end{aligned}$$
 **Muunnokset:** $r = 3390\,\text{km} + 400\,\text{km} = 3790\,\text{km} = 3{,}790 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 6{,}42 \cdot 10^{23}\,\text{kg} \\ &= 4{,}285 \cdot 10^{13}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $v = \sqrt{\dfrac{4{,}285 \cdot 10^{13}\,\text{m}^3/\text{s}^2}{3{,}790 \cdot 10^{6}\,\text{m}}} = 3362\,\text{m/s} = 3{,}362\,\text{km/s}$
 **Vastaus:** $3{,}36\,\text{km/s}$, kolme merkitsevää numeroa kuten Marsin massassa $6{,}42 \cdot 10^{23}\,\text{kg}$.
@@ -72,7 +72,7 @@
 **Annettu:** Kuun pinnan putoamiskiihtyvyys $g = 1{,}62\,\text{m/s}^2$ ja säde $R = 1737\,\text{km}$; ei ilmakehää
 **Kysytty:** ympyräradan nopeus $v$ aivan Kuun pinnan yläpuolella
 **Periaate:** Luotaimeen vaikuttaa vain Kuun gravitaatiovoima. Se on ympyräliikkeen kokonaisvoima. Pinnan tasolla gravitaatiovoiman antama kiihtyvyys on $\tfrac{\gamma M}{R^2} = g$ (luku *Kappaleiden välinen gravitaatiovoima*). Kuun massaa ei siis tarvita. Normaalikiihtyvyyden on oltava $g$.
-**Kaava:** $m g = \dfrac{m v^2}{R}$, josta $v = \sqrt{g R}$
+**Kaava:** $$\begin{aligned} \Sigma F &= m a_\text{n} \\ mg &= m\dfrac{v^2}{R} \\ v^2 &= gR \\ v &= \sqrt{gR} \end{aligned}$$
 **Muunnokset:** $R = 1737\,\text{km} = 1{,}737 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Sijoitus:** $v = \sqrt{1{,}62\,\text{m/s}^2 \cdot 1{,}737 \cdot 10^{6}\,\text{m}} = 1677\,\text{m/s} = 1{,}677\,\text{km/s}$
 **Vastaus:** $1{,}68\,\text{km/s}$, kolme merkitsevää numeroa kuten putoamiskiihtyvyydessä $1{,}62\,\text{m/s}^2$.
@@ -92,7 +92,7 @@
 **Annettu:** Marsin pyörähdysaika $T = 24\,\text{h}\;37\,\text{min}$, massa $M = 6{,}42 \cdot 10^{23}\,\text{kg}$ ja säde $R = 3390\,\text{km}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Kysytty:** satelliitin korkeus Marsin pinnasta $h$ kilometreinä
 **Periaate:** Satelliitti pysyy saman pinnan kohdan yläpuolella, kun kaksi ehtoa täyttyy. Sen kiertoajan on oltava Marsin pyörähdysaika. Sen on myös kierrettävä päiväntasaajan yläpuolella samaan suuntaan kuin Mars pyörii. Gravitaatiovoima on satelliitin ympyräliikkeen kokonaisvoima, ja nopeus on $v = \tfrac{2\pi r}{T}$.
-**Kaava:** $\dfrac{\gamma M}{r} = v^2 = \dfrac{4\pi^2 r^2}{T^2}$, josta $r = \sqrt[3]{\dfrac{\gamma M T^2}{4\pi^2}}$ ja $h = r - R$
+**Kaava:** $$\begin{aligned} \Sigma F &= m a_\text{n} \\ \gamma\dfrac{Mm}{r^2} &= m\dfrac{v^2}{r} \\ v &= \dfrac{2\pi r}{T} \\ \dfrac{\gamma M}{r} &= \dfrac{4\pi^2 r^2}{T^2} \\ r^3 &= \dfrac{\gamma M T^2}{4\pi^2} \\ r &= \sqrt[3]{\dfrac{\gamma M T^2}{4\pi^2}} \\ h &= r - R \end{aligned}$$
 **Muunnokset:** $T = 24 \cdot 3600\,\text{s} + 37 \cdot 60\,\text{s} = 88\,620\,\text{s}$, $R = 3390\,\text{km} = 3{,}390 \cdot 10^{6}\,\text{m}$
 **Sijoitus:** $\gamma M T^2$ $= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot$ $6{,}42 \cdot 10^{23}\,\text{kg} \cdot (88\,620\,\text{s})^2$ $= 3{,}3650 \cdot 10^{23}\,\text{m}^3$, joten $r = \sqrt[3]{\dfrac{3{,}3650 \cdot 10^{23}\,\text{m}^3}{4\pi^2}} = \sqrt[3]{8{,}524 \cdot 10^{21}\,\text{m}^3} = 2{,}0427 \cdot 10^{7}\,\text{m}$, joten $h = 2{,}0427 \cdot 10^{7}\,\text{m} - 3{,}390 \cdot 10^{6}\,\text{m} = 1{,}7037 \cdot 10^{7}\,\text{m} = 17\,037\,\text{km}$
 **Vastaus:** noin $1{,}70 \cdot 10^{4}\,\text{km}$ eli $17\,000\,\text{km}$, kolme merkitsevää numeroa kuten Marsin massassa $6{,}42 \cdot 10^{23}\,\text{kg}$.
@@ -102,7 +102,7 @@
 **Annettu:** korkeus ennen $h_1 = 400\,\text{km}$ ja jälkeen $h_2 = 398\,\text{km}$, Maan massa $M = 5{,}97 \cdot 10^{24}\,\text{kg}$ ja säde $R = 6371\,\text{km}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Kysytty:** ratanopeuden muutos $\Delta v = v_2 - v_1$ metreinä sekunnissa
 **Periaate:** Rata pysyy lähes ympyränä koko ajan. Siksi kummallakin korkeudella ratanopeus on ympyräradan nopeus, jonka gravitaatio määrää. Jarrutus madaltaa rataa. Alempana ympyräradan nopeus on suurempi, joten asema päätyy liikkumaan nopeammin.
-**Kaava:** $v = \sqrt{\dfrac{\gamma M}{r}}$, joten $\Delta v = \sqrt{\dfrac{\gamma M}{R + h_2}} - \sqrt{\dfrac{\gamma M}{R + h_1}}$
+**Kaava:** $$\begin{aligned} \Sigma F &= m a_\text{n} \\ \gamma\dfrac{Mm}{r^2} &= m\dfrac{v^2}{r} \\ v &= \sqrt{\dfrac{\gamma M}{r}} \\ \Delta v &= v_2 - v_1 \\ v_1 &= \sqrt{\dfrac{\gamma M}{R + h_1}} \\ v_2 &= \sqrt{\dfrac{\gamma M}{R + h_2}} \end{aligned}$$
 **Muunnokset:** $r_1 = 6771\,\text{km} = 6{,}771 \cdot 10^{6}\,\text{m}$, $r_2 = 6769\,\text{km} = 6{,}769 \cdot 10^{6}\,\text{m}$, ja $\gamma M = 3{,}98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2$. Kaksi nopeutta on lähes yhtä suuria. Niiden erotus on vain noin yksi metri sekunnissa. Siksi välituloksia ei pyöristetä ennen vähennystä. Nopeudet lasketaan kahden desimaalin tarkkuudella, ja vasta sitten ne vähennetään.
 **Sijoitus:** $v_1 = \sqrt{\dfrac{3{,}98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{6{,}771 \cdot 10^{6}\,\text{m}}} = 7671{,}03\,\text{m/s}$, $v_2 = \sqrt{\dfrac{3{,}98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{6{,}769 \cdot 10^{6}\,\text{m}}} = 7672{,}17\,\text{m/s}$, joten $\Delta v = 7672{,}17\,\text{m/s} - 7671{,}03\,\text{m/s} = 1{,}13\,\text{m/s}$
 **Vastaus:** Ratanopeus kasvaa noin $1{,}13\,\text{m/s}$. Kolme merkitsevää numeroa kuten Maan massassa $5{,}97 \cdot 10^{24}\,\text{kg}$: korkeudet käsitellään tässä mallin tarkkoina arvoina, koska tehtävä ei anna niille mittausepävarmuutta. Kilometrin tarkkuudella mitattujen korkeuksien erotuksessa $2\,\text{km}$ olisi vain yksi merkitsevä numero, ja tulos olisi noin $1\,\text{m/s}$.
@@ -112,7 +112,7 @@
 **Annettu:** Maan massa $M = 5{,}97 \cdot 10^{24}\,\text{kg}$ ja säde $R = 6371\,\text{km}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$; Maa oletetaan palloksi
 **Kysytty:** pyörähdysaika $T$, jolla päiväntasaajalla seisova ihminen olisi painoton, minuutteina
 **Periaate:** Kun Maa pyörii, ihminen kiertää ympyrää, jonka säde on $R$. Hän on painoton, kun maa ei paina häntä eli tukivoima on nolla. Silloin gravitaatiovoima yksin on juuri ympyräliikkeen kokonaisvoima, kuten ympyräradalla kiertävällä satelliitilla.
-**Kaava:** $\gamma \dfrac{Mm}{R^2} = \dfrac{mv^2}{R}$ ja $v = \dfrac{2\pi R}{T}$, joten $\dfrac{\gamma M}{R} = \dfrac{4\pi^2 R^2}{T^2}$ ja $T = 2\pi\sqrt{\dfrac{R^3}{\gamma M}}$
+**Kaava:** $$\begin{aligned} \Sigma F &= m a_\text{n} \\ \gamma\dfrac{Mm}{R^2} &= m\dfrac{v^2}{R} \\ v &= \dfrac{2\pi R}{T} \\ \dfrac{\gamma M}{R} &= \dfrac{4\pi^2 R^2}{T^2} \\ T^2 &= \dfrac{4\pi^2 R^3}{\gamma M} \\ T &= 2\pi\sqrt{\dfrac{R^3}{\gamma M}} \end{aligned}$$
 **Muunnokset:** $R = 6371\,\text{km} = 6{,}371 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{min} = 60\,\text{s}$.
 **Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 5{,}97 \cdot 10^{24}\,\text{kg} \\ &= 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $T = 2\pi\sqrt{\dfrac{(6{,}371 \cdot 10^{6}\,\text{m})^3}{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}} = 5062\,\text{s} = 5062 : 60\,\text{min} = 84{,}36\,\text{min}$
 **Vastaus:** noin $84{,}4\,\text{min}$, kolme merkitsevää numeroa kuten Maan massassa.
@@ -129,7 +129,7 @@ Sitä ei siis tarvita selitykseen. Gravitaatio on ainoa voima ja ympyräliikkeen
 **Annettu:** radan säde $r = 4{,}22 \cdot 10^{5}\,\text{km}$, Jupiterin massa $M = 1{,}90 \cdot 10^{27}\,\text{kg}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Kysytty:** Ion ratanopeus $v$ kilometreinä sekunnissa
 **Periaate:** Ioon vaikuttaa vain Jupiterin gravitaatiovoima. Se on siis ympyräliikkeen kokonaisvoima. Keskuskappale on nyt Jupiter.
-**Kaava:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$, josta $v = \sqrt{\dfrac{\gamma M}{r}}$
+**Kaava:** $$\begin{aligned} \Sigma F &= m a_\text{n} \\ \gamma\dfrac{Mm}{r^2} &= m\dfrac{v^2}{r} \\ v^2 &= \dfrac{\gamma M}{r} \\ v &= \sqrt{\dfrac{\gamma M}{r}} \end{aligned}$$
 **Muunnokset:** $r = 4{,}22 \cdot 10^{5}\,\text{km} = 4{,}22 \cdot 10^{8}\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 1{,}90 \cdot 10^{27}\,\text{kg} \\ &= 1{,}268 \cdot 10^{17}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $v = \sqrt{\dfrac{1{,}268 \cdot 10^{17}\,\text{m}^3/\text{s}^2}{4{,}22 \cdot 10^{8}\,\text{m}}} = 17\,335\,\text{m/s} = 17{,}335\,\text{km/s}$
 **Vastaus:** $17{,}3\,\text{km/s}$, kolme merkitsevää numeroa kuten massassa $1{,}90 \cdot 10^{27}\,\text{kg}$.
@@ -149,7 +149,7 @@ Sitä ei siis tarvita selitykseen. Gravitaatio on ainoa voima ja ympyräliikkeen
 **Annettu:** taulukosta $r$ ja $T$ neljälle kuulle, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Kysytty:** Jupiterin massa $M$ yksikössä $10^{27}\,\text{kg}$
 **Periaate:** Kuuhun vaikuttaa vain Jupiterin gravitaatiovoima. Se on ympyräliikkeen kokonaisvoima: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$ ja $v = \tfrac{2\pi r}{T}$. Tämä on oppitunnin kaava $v = \sqrt{\tfrac{\gamma M}{r}}$ yhdistettynä kaavaan $v = \tfrac{2\pi r}{T}$. Siitä seuraa, että suhde $\tfrac{r^3}{T^2}$ on sama kaikille kuille. Suhde riippuu vain keskuskappaleen massasta. Mittausten pienet erot tasataan keskiarvolla.
-**Kaava:** $\dfrac{\gamma M}{r} = \dfrac{4\pi^2 r^2}{T^2}$, josta $\dfrac{r^3}{T^2} = \dfrac{\gamma M}{4\pi^2}$ ja $M = \dfrac{4\pi^2}{\gamma} \cdot \dfrac{r^3}{T^2}$
+**Kaava:** $$\begin{aligned} \Sigma F &= m a_\text{n} \\ \gamma\dfrac{Mm}{r^2} &= m\dfrac{v^2}{r} \\ v &= \dfrac{2\pi r}{T} \\ \dfrac{\gamma M}{r} &= \dfrac{4\pi^2 r^2}{T^2} \\ \dfrac{r^3}{T^2} &= \dfrac{\gamma M}{4\pi^2} \\ M &= \dfrac{4\pi^2}{\gamma} \cdot \dfrac{r^3}{T^2} \end{aligned}$$
 **Muunnokset:** $r$ metreiksi: $421{,}7 \cdot 10^{3}\,\text{km} = 4{,}217 \cdot 10^{8}\,\text{m}$, $6{,}711 \cdot 10^{8}\,\text{m}$, $1{,}070 \cdot 10^{9}\,\text{m}$ ja $1{,}883 \cdot 10^{9}\,\text{m}$. $T$ sekunneiksi: $1{,}769 \cdot 86\,400\,\text{s} = 152\,842\,\text{s}$, $3{,}551 \cdot 86\,400\,\text{s} = 306\,806\,\text{s}$, $7{,}155 \cdot 86\,400\,\text{s} = 618\,192\,\text{s}$ ja $16{,}69 \cdot 86\,400\,\text{s} = 1\,442\,016\,\text{s}$.
 **Sijoitus:** Suhteet ovat Iolle $3{,}2102 \cdot 10^{15}\,\text{m}^3/\text{s}^2$, Europalle $3{,}2110 \cdot 10^{15}\,\text{m}^3/\text{s}^2$, Ganymedekselle $3{,}2056 \cdot 10^{15}\,\text{m}^3/\text{s}^2$ ja Callistolle $3{,}2108 \cdot 10^{15}\,\text{m}^3/\text{s}^2$. Ne eroavat toisistaan alle $0{,}2\,\%$. Summa on $1{,}2837 \cdot 10^{16}\,\text{m}^3/\text{s}^2$, joten keskiarvo on $3{,}2094 \cdot 10^{15}\,\text{m}^3/\text{s}^2$. Tällöin $4\pi^2 \cdot 3{,}2094 \cdot 10^{15}\,\text{m}^3/\text{s}^2 = 1{,}2670 \cdot 10^{17}\,\text{m}^3/\text{s}^2$, joten $M = \dfrac{1{,}2670 \cdot 10^{17}\,\text{m}^3/\text{s}^2}{6{,}674 \cdot 10^{-11}\,\text{N}\cdot\text{m}^2/\text{kg}^2} = 1{,}898 \cdot 10^{27}\,\text{kg}$
 **Vastaus:** $1{,}90 \cdot 10^{27}\,\text{kg}$, kolme merkitsevää numeroa: taulukon arvoissa on neljä, mutta kuiden suhteet eroavat toisistaan jo neljännessä numerossa, joten massan neljäs numero on epävarma.
@@ -159,7 +159,7 @@ Sitä ei siis tarvita selitykseen. Gravitaatio on ainoa voima ja ympyräliikkeen
 **Annettu:** taulukosta korkeudet $h$ ja nopeudet $v$, Maan massa $M = 5{,}97 \cdot 10^{24}\,\text{kg}$ ja säde $R = 6371\,\text{km}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Kysytty:** väärän nopeuden oikea arvo $v$ kilometreinä sekunnissa
 **Periaate:** Satelliittiin vaikuttaa vain gravitaatiovoima. Se on ympyräliikkeen kokonaisvoima. Siksi ratanopeus riippuu radan säteestä $r = R + h$. Säde mitataan Maan keskipisteestä. Lasketaan jokaisen rivin nopeus ja verrataan sitä taulukon arvoon.
-**Kaava:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$, josta $v = \sqrt{\dfrac{\gamma M}{R + h}}$
+**Kaava:** $$\begin{aligned} r &= R + h \\ \Sigma F &= m a_\text{n} \\ \gamma\dfrac{Mm}{r^2} &= m\dfrac{v^2}{r} \\ v^2 &= \dfrac{\gamma M}{r} \\ v &= \sqrt{\dfrac{\gamma M}{R + h}} \end{aligned}$$
 **Muunnokset:** $r = R + h$ on riveillä $6771\,\text{km}$, $7571\,\text{km}$, $25\,471\,\text{km}$ ja $42\,157\,\text{km}$. Ne muutetaan metreiksi, esimerkiksi $7571\,\text{km} = 7{,}571 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Sijoitus:** $\gamma M = 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2$. Rivien nopeudet ovat A: $7{,}67\,\text{km/s}$, C: $3{,}96\,\text{km/s}$ ja D: $3{,}07\,\text{km/s}$. Ne täsmäävät taulukon kanssa. Riville B tulee $v = \sqrt{\dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{7{,}571 \cdot 10^{6}\,\text{m}}} = 7254\,\text{m/s} = 7{,}254\,\text{km/s}$, kun taulukossa on $7{,}52\,\text{km/s}$.
 **Vastaus:** satelliitin B nopeus on $7{,}25\,\text{km/s}$, kolme merkitsevää numeroa kuten Maan massassa $5{,}97 \cdot 10^{24}\,\text{kg}$ ja taulukon nopeuksissa. Taulukossa kaksi numeroa on vaihtanut paikkaa ($7{,}52$ ja $7{,}25$).
@@ -169,7 +169,7 @@ Sitä ei siis tarvita selitykseen. Gravitaatio on ainoa voima ja ympyräliikkeen
 **Annettu:** massat $m_1 = 500\,\text{kg}$ ja $m_2 = 2000\,\text{kg}$, korkeus $h = 800\,\text{km}$, Maan massa $M = 5{,}97 \cdot 10^{24}\,\text{kg}$ ja säde $R = 6371\,\text{km}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Kysytty:** a) gravitaatiovoimat $F_1$ ja $F_2$, b) raskaamman satelliitin ratanopeus $v$ kilometreinä sekunnissa, c) virhe oppilaan päättelyssä
 **Periaate:** Satelliittiin vaikuttaa vain Maan gravitaatiovoima. Se on ympyräliikkeen kokonaisvoima: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$. Raskaampaan satelliittiin vaikuttaa todella suurempi voima. Mutta myös sen massa on suurempi, joten sen tarvitsema voima $\tfrac{mv^2}{r}$ kasvaa samassa suhteessa. Massa supistuu pois. Ratanopeus riippuu vain radan säteestä ja Maan massasta.
-**Kaava:** a) $F = \gamma \dfrac{Mm}{r^2}$, b) $v = \sqrt{\dfrac{\gamma M}{r}}$, missä $r = R + h$
+**Kaava:** $$\begin{aligned} r &= R + h \\ F &= \gamma\dfrac{Mm}{r^2} \\ F &= m\dfrac{v^2}{r} \\ v^2 &= \dfrac{\gamma M}{r} \\ v &= \sqrt{\dfrac{\gamma M}{r}} \end{aligned}$$
 **Muunnokset:** $r = 6371\,\text{km} + 800\,\text{km} = 7171\,\text{km} = 7{,}171 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Sijoitus:** $\gamma M = 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2$. a) $F_1 = \dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \cdot 500\,\text{kg}}{(7{,}171 \cdot 10^{6}\,\text{m})^2} = 3874\,\text{N}$ ja $F_2 = \dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \cdot 2000\,\text{kg}}{(7{,}171 \cdot 10^{6}\,\text{m})^2} = 15\,496\,\text{N}$. b) $v = \sqrt{\dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{7{,}171 \cdot 10^{6}\,\text{m}}} = 7454\,\text{m/s} = 7{,}454\,\text{km/s}$
 **Vastaus:** raskaamman satelliitin ratanopeus on $7{,}45\,\text{km/s}$, kolme merkitsevää numeroa kuten Maan massassa. Voimat ovat $3{,}87\,\text{kN}$ ja $15{,}5\,\text{kN}$. Voima on siis neljä kertaa suurempi raskaammalla. Virhe: oppilas ottaa huomioon vain voiman kasvun. Hän ei huomaa, että myös kiihdytettävä massa kasvaa nelinkertaiseksi. Kevyen satelliitin ratanopeus on sama $7{,}45\,\text{km/s}$.
@@ -179,7 +179,7 @@ Sitä ei siis tarvita selitykseen. Gravitaatio on ainoa voima ja ympyräliikkeen
 **Annettu:** taulukosta $r$ ja $T$ planeetoille b, c, d ja e, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$; tähden massa tuntematon
 **Kysytty:** a) väärä kiertoaika ja perustelu, b) tähden massa $M$ yksikössä $10^{30}\,\text{kg}$, c) väärin mitatun planeetan oikea kiertoaika
 **Periaate:** Planeettaan vaikuttaa vain tähden gravitaatiovoima. Se on ympyräliikkeen kokonaisvoima: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$ ja $v = \tfrac{2\pi r}{T}$. Siitä seuraa, että suhde $\tfrac{r^3}{T^2} = \tfrac{\gamma M}{4\pi^2}$ on sama kaikille planeetoille. Planeettojen massoja ei tarvita. Suhteesta tunnistetaan mittaus, joka poikkeaa muista.
-**Kaava:** $\dfrac{r^3}{T^2} = \dfrac{\gamma M}{4\pi^2}$, josta $M = \dfrac{4\pi^2}{\gamma} \cdot \dfrac{r^3}{T^2}$
+**Kaava:** $$\begin{aligned} \Sigma F &= m a_\text{n} \\ \gamma\dfrac{Mm}{r^2} &= m\dfrac{v^2}{r} \\ v &= \dfrac{2\pi r}{T} \\ \dfrac{\gamma M}{r} &= \dfrac{4\pi^2 r^2}{T^2} \\ \dfrac{r^3}{T^2} &= \dfrac{\gamma M}{4\pi^2} \\ M &= \dfrac{4\pi^2}{\gamma} \cdot \dfrac{r^3}{T^2} \end{aligned}$$
 **Muunnokset:** $r$ metreiksi: $6{,}0 \cdot 10^{9}\,\text{m}$, $1{,}05 \cdot 10^{10}\,\text{m}$, $1{,}70 \cdot 10^{10}\,\text{m}$ ja $2{,}70 \cdot 10^{10}\,\text{m}$. $T$ sekunneiksi: $3{,}29 \cdot 86\,400\,\text{s} = 284\,256\,\text{s}$, $7{,}57 \cdot 86\,400\,\text{s} = 654\,048\,\text{s}$, $7{,}82 \cdot 86\,400\,\text{s} = 675\,648\,\text{s}$ ja $31{,}4 \cdot 86\,400\,\text{s} = 2{,}713 \cdot 10^{6}\,\text{s}$.
 **Sijoitus:** a) Suhteet $\tfrac{r^3}{T^2}$ ovat b: $2{,}67 \cdot 10^{18}\,\text{m}^3/\text{s}^2$, c: $2{,}71 \cdot 10^{18}\,\text{m}^3/\text{s}^2$, d: $1{,}08 \cdot 10^{19}\,\text{m}^3/\text{s}^2$ ja e: $2{,}67 \cdot 10^{18}\,\text{m}^3/\text{s}^2$. Planeetan d suhde on noin nelinkertainen muihin verrattuna. b) Kolmen muun suhteen summa on $8{,}054 \cdot 10^{18}\,\text{m}^3/\text{s}^2$, joten keskiarvo on $2{,}685 \cdot 10^{18}\,\text{m}^3/\text{s}^2$ ja $4\pi^2 \cdot 2{,}685 \cdot 10^{18}\,\text{m}^3/\text{s}^2 = 1{,}0599 \cdot 10^{20}\,\text{m}^3/\text{s}^2$, joten $M = \dfrac{1{,}0599 \cdot 10^{20}\,\text{m}^3/\text{s}^2}{6{,}674 \cdot 10^{-11}\,\text{N}\cdot\text{m}^2/\text{kg}^2} = 1{,}588 \cdot 10^{30}\,\text{kg}$. c) $T_\text{d} = \sqrt{\dfrac{r^3}{2{,}685 \cdot 10^{18}\,\text{m}^3/\text{s}^2}} = \sqrt{\dfrac{4{,}913 \cdot 10^{30}\,\text{m}^3}{2{,}685 \cdot 10^{18}\,\text{m}^3/\text{s}^2}} = 1{,}353 \cdot 10^{6}\,\text{s} = 15{,}7\,\text{d}$
 **Vastaus:** tähden massa on $1{,}59 \cdot 10^{30}\,\text{kg}$, kolme merkitsevää numeroa kuten kiertoajoissa ja säteissä $10{,}5 \cdot 10^{9}\,\text{m}$ ja $27{,}0 \cdot 10^{9}\,\text{m}$. Säteessä $6{,}0 \cdot 10^{9}\,\text{m}$ on vain kaksi merkitsevää numeroa. Siksi planeetan b suhde on epävarmempi. Se sopii kuitenkin planeettojen c ja e suhteisiin, ja niiden keskiarvo antaa yksinään saman tuloksen $1{,}59 \cdot 10^{30}\,\text{kg}$.
@@ -197,7 +197,7 @@ Selitys: jokaisella kierroksella on tulkittu kaksi kirkkauden heikkenemistä ohi
 **Annettu:** korkeudet $h_\text{A} = 400\,\text{km}$ ja $h_\text{B} = 1000\,\text{km}$, Maan massa $M = 5{,}97 \cdot 10^{24}\,\text{kg}$ ja säde $R = 6371\,\text{km}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$; ilmanvastus ja satelliittien massan vaikutus oletetaan merkityksettömiksi
 **Kysytty:** a) kiertoajat $T_\text{A}$ ja $T_\text{B}$, b) aika $t$ seuraavaan samalle suoralle tuloon tunteina, c) miksi massoja ei tarvita
 **Periaate:** Kumpaankin satelliittiin vaikuttaa vain Maan gravitaatiovoima. Se on ympyräliikkeen kokonaisvoima: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$ ja $v = \tfrac{2\pi r}{T}$. Siitä saadaan kiertoaika. Massa $m$ supistuu pois, joten massoja ei tarvita (kohta c). Alempi satelliitti A kiertää nopeammin. Kun satelliitit ovat ensimmäisen kerran taas samalla suoralla samalla puolella, A on kiertänyt yhden kierroksen enemmän kuin B.
-**Kaava:** a) $T = 2\pi\sqrt{\dfrac{r^3}{\gamma M}}$, missä $r = R + h$. b) Ajassa $t$ satelliitti A tekee $\tfrac{t}{T_\text{A}}$ ja B $\tfrac{t}{T_\text{B}}$ kierrosta, ja A on tehnyt yhden kierroksen enemmän: $\dfrac{t}{T_\text{A}} - \dfrac{t}{T_\text{B}} = 1$, josta $t = \dfrac{T_\text{A} T_\text{B}}{T_\text{B} - T_\text{A}}$
+**Kaava:** a) $$\begin{aligned} r &= R + h \\ \Sigma F &= m a_\text{n} \\ \gamma\dfrac{Mm}{r^2} &= m\dfrac{v^2}{r} \\ v &= \dfrac{2\pi r}{T} \\ \dfrac{\gamma M}{r} &= \dfrac{4\pi^2 r^2}{T^2} \\ T^2 &= \dfrac{4\pi^2 r^3}{\gamma M} \\ T &= 2\pi\sqrt{\dfrac{r^3}{\gamma M}} \end{aligned}$$ b) Ajassa $t$ satelliitti A tekee $\tfrac{t}{T_\text{A}}$ ja B $\tfrac{t}{T_\text{B}}$ kierrosta, ja A on tehnyt yhden kierroksen enemmän: $$\begin{aligned} N_\text{A} &= \dfrac{t}{T_\text{A}} \\ N_\text{B} &= \dfrac{t}{T_\text{B}} \\ N_\text{A} - N_\text{B} &= 1 \\ t\left(\dfrac{1}{T_\text{A}} - \dfrac{1}{T_\text{B}}\right) &= 1 \\ t &= \dfrac{T_\text{A} T_\text{B}}{T_\text{B} - T_\text{A}} \end{aligned}$$
 **Muunnokset:** $r_\text{A} = 6371\,\text{km} + 400\,\text{km} = 6771\,\text{km} = 6{,}771 \cdot 10^{6}\,\text{m}$ ja $r_\text{B} = 6371\,\text{km} + 1000\,\text{km} = 7371\,\text{km} = 7{,}371 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{h} = 3600\,\text{s}$.
 **Sijoitus:** $\gamma M = 3{,}98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2$. a) $T_\text{A} = 2\pi\sqrt{\dfrac{(6{,}771 \cdot 10^{6}\,\text{m})^3}{3{,}98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2}} = 5546{,}0\,\text{s} = 92{,}4\,\text{min}$ ja $T_\text{B} = 2\pi\sqrt{\dfrac{(7{,}371 \cdot 10^{6}\,\text{m})^3}{3{,}98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2}} = 6299{,}3\,\text{s} = 105{,}0\,\text{min}$. b) $t = \dfrac{5546{,}0\,\text{s} \cdot 6299{,}3\,\text{s}}{6299{,}3\,\text{s} - 5546{,}0\,\text{s}} = 46\,379\,\text{s} = 46\,379 : 3600\,\text{h} = 12{,}88\,\text{h}$
 **Vastaus:** satelliitit ovat taas samalla suoralla noin $12{,}9\,\text{h}$:n kuluttua, kolme merkitsevää numeroa kuten Maan massassa. Kiertoajat ovat $92{,}4\,\text{min}$ ja $105{,}0\,\text{min}$. Massoja ei tarvita, koska satelliitin massa supistuu liikeyhtälöstä pois.
@@ -227,7 +227,7 @@ Sekuntien jakaminen luvulla $60$ antaa noin $460\,\text{h}$. Tulos on järkevä:
 **Kysytty:** Maan kiihtyvyys $a$ yksikössä $\text{mm/s}^2$
 **Periaate:** Maahan vaikuttaa vain Auringon gravitaatiovoima, joka on ympyräliikkeen kokonaisvoima. Newtonin toisen lain mukaan $ma = \gamma\tfrac{Mm}{r^2}$, joten kiihtyvyys on $a = \gamma\tfrac{M}{r^2}$ ja se osoittaa kohti Aurinkoa. Maan rata on lähes ympyrä, joten säteeksi kelpaa etäisyyksien keskiarvo.
 **Kuvaajan lukeminen:** Kuvan vasemman puolen alle on merkitty Maan radan etäisyydet: pienin $147{,}1\,\text{milj. km}$ ja suurin $152{,}1\,\text{milj. km}$. Rata ja sen päälle piirretty katkoviivaympyrä eivät eroa toisistaan, joten ympyrämalli sopii.
-**Kaava:** $r = \dfrac{r_\text{min} + r_\text{max}}{2}$ ja $a = \dfrac{\gamma M}{r^2}$
+**Kaava:** $$\begin{aligned} r &= \dfrac{r_\text{min} + r_\text{max}}{2} \\ \Sigma F &= ma \\ \gamma\dfrac{Mm}{r^2} &= ma \\ a &= \dfrac{\gamma M}{r^2} \end{aligned}$$
 **Muunnokset:** $r = \dfrac{147{,}1 + 152{,}1}{2}\,\text{milj. km} = 149{,}6\,\text{milj. km} = 1{,}496 \cdot 10^{11}\,\text{m}$; lopuksi $1\,\text{mm/s}^2 = 10^{-3}\,\text{m/s}^2$.
 **Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 1{,}99 \cdot 10^{30}\,\text{kg} \\ &= 1{,}3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $a = \dfrac{1{,}3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2}{(1{,}496 \cdot 10^{11}\,\text{m})^2} = 5{,}934 \cdot 10^{-3}\,\text{m/s}^2 = 5{,}934\,\text{mm/s}^2$
 **Vastaus:** $5{,}93\,\text{mm/s}^2$, kolme merkitsevää numeroa kuten Auringon massassa.
@@ -237,7 +237,7 @@ Sekuntien jakaminen luvulla $60$ antaa noin $460\,\text{h}$. Tulos on järkevä:
 **Annettu:** radan säde Kuun keskipisteestä $r = 1840\,\text{km}$; MAFY-taulukosta (Aurinkokunta, Kuu) massa $M = 7{,}346 \cdot 10^{22}\,\text{kg}$; $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Kysytty:** Kuun gravitaatiokiihtyvyys $g$ radalla yksikössä $\text{m/s}^2$
 **Periaate:** Kuun gravitaatiovoima massaltaan $m$ olevaan luotaimeen on $F = \gamma \tfrac{Mm}{r^2}$, ja sen aiheuttama kiihtyvyys on $g = \tfrac{F}{m}$; luotaimen massa $m$ supistuu pois.
-**Kaava:** $g = \dfrac{\gamma M}{r^2}$
+**Kaava:** $$\begin{aligned} F &= \gamma\dfrac{Mm}{r^2} \\ g &= \dfrac{F}{m} \\ g &= \dfrac{\gamma M}{r^2} \end{aligned}$$
 **Muunnokset:** $r = 1840\,\text{km} = 1840 \cdot 1000\,\text{m} = 1{,}840 \cdot 10^{6}\,\text{m}$
 **Sijoitus:** $$\begin{aligned} \gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\ &\quad \cdot 7{,}346 \cdot 10^{22}\,\text{kg} \\ &= 4{,}9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2 \end{aligned}$$, joten $g = \dfrac{4{,}9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{(1{,}840 \cdot 10^{6}\,\text{m})^2} = 1{,}448\,\text{m/s}^2$
 **Vastaus:** $1{,}45\,\text{m/s}^2$, kolme merkitsevää numeroa: säteessä $1840\,\text{km}$ ja massassa $7{,}346 \cdot 10^{22}\,\text{kg}$ on neljä, mutta eri taulukoiden arvot poikkeavat hieman, joten neljäs numero ei olisi luotettava. Arvo on MAFY-taulukosta (Aurinkokunta, Kuu), ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
@@ -248,7 +248,7 @@ Sekuntien jakaminen luvulla $60$ antaa noin $460\,\text{h}$. Tulos on järkevä:
 **Kysytty:** ympyräradan ratanopeuksien suhde $\dfrac{v_1}{v_2}$ näillä säteillä
 **Periaate:** Ympyräradalla gravitaatiovoima on kokonaisvoima: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$. Siitä saadaan $v = \sqrt{\tfrac{\gamma M}{r}}$. Auringon massa $M$ on kummassakin tapauksessa sama. Siksi se supistuu suhteesta pois.
 **Kuvaajan lukeminen:** Kuvan oikean puolen alla ovat Halleyn komeetan radan etäisyydet. Pienin on $88\,\text{milj. km}$ ja suurin $5250\,\text{milj. km}$.
-**Kaava:** $\dfrac{v_1}{v_2} = \dfrac{\sqrt{\gamma M / r_1}}{\sqrt{\gamma M / r_2}} = \sqrt{\dfrac{r_2}{r_1}}$
+**Kaava:** $$\begin{aligned} \Sigma F &= m a_\text{n} \\ \gamma\dfrac{Mm}{r^2} &= m\dfrac{v^2}{r} \\ v &= \sqrt{\dfrac{\gamma M}{r}} \\ \dfrac{v_1}{v_2} &= \dfrac{\sqrt{\gamma M / r_1}}{\sqrt{\gamma M / r_2}} \\ &= \sqrt{\dfrac{r_2}{r_1}} \end{aligned}$$
 **Muunnokset:** Muunnoksia ei tarvita. Etäisyydet ovat samassa yksikössä, ja suhteella ei ole yksikköä.
 **Sijoitus:** $\dfrac{v_1}{v_2} = \sqrt{\dfrac{5250\,\text{milj. km}}{88\,\text{milj. km}}} = \sqrt{59{,}66} = 7{,}724$
 **Vastaus:** noin $7{,}7$-kertainen, kaksi merkitsevää numeroa, koska etäisyys $88\,\text{milj. km}$ on ilmoitettu vain kahdella (pyöristämätön arvo $7{,}724$). Suurin etäisyys on noin $60$ kertaa pienin. Neliöjuuren vuoksi nopeus on vain noin $7{,}7$-kertainen. Komeetan oikea rata on kuvan mukaan hyvin pitkä ellipsi. Ympyrämalli ei kuvaa sitä. Tehtävässä verrataan vain mallin nopeuksia.
@@ -280,7 +280,7 @@ Malli siis ennustaa Keplerin kolmannen lain, kun radan säde $r$ on isoakselin p
 | Jupiter | $471{,}8$ | $18{,}76$ | $0{,}0398$ |
 
 Kohta c): pisteet ovat samalla suoralla, joka kulkee origon kautta. Jupiterin piste on kaukana, ja neljä muuta pistettä ovat lähellä origoa. Siksi sisäplaneetat kannattaa piirtää myös omaan kuvaajaansa. Kulmakerroin luetaan sovitetun suoran kahdesta pisteestä, jotka ovat kaukana toisistaan. Esimerkiksi pisteistä $(100;\ 4{,}0)$ ja $(400;\ 15{,}9)$ saadaan $k = \dfrac{15{,}9 - 4{,}0}{400 - 100} \approx 0{,}040$ taulukon yksiköissä. Sama näkyy suhteista $\tfrac{T^2}{a^3}$: ne eroavat toisistaan alle $0{,}4\,\%$.
-**Kaava:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$ ja $v = \dfrac{2\pi r}{T}$, joten $\dfrac{\gamma M}{r} = \dfrac{4\pi^2 r^2}{T^2}$ ja $T^2 = \dfrac{4\pi^2}{\gamma M} r^3$. Kohta d): Maalle ja Marsille kerroin on sama, joten $\dfrac{T_\text{Mars}^2}{T_\text{Maa}^2} = \dfrac{a_\text{Mars}^3}{a_\text{Maa}^3}$, josta $T_\text{Mars} = T_\text{Maa}\left(\dfrac{a_\text{Mars}}{a_\text{Maa}}\right)^{3/2}$
+**Kaava:** $$\begin{aligned} \Sigma F &= m a_\text{n} \\ \gamma\dfrac{Mm}{r^2} &= m\dfrac{v^2}{r} \\ v &= \dfrac{2\pi r}{T} \\ \dfrac{\gamma M}{r} &= \dfrac{4\pi^2 r^2}{T^2} \\ T^2 &= \dfrac{4\pi^2}{\gamma M} r^3 \end{aligned}$$ Kohta d): Maalle ja Marsille kerroin on sama, joten $\dfrac{T_\text{Mars}^2}{T_\text{Maa}^2} = \dfrac{a_\text{Mars}^3}{a_\text{Maa}^3}$, josta $T_\text{Mars} = T_\text{Maa}\left(\dfrac{a_\text{Mars}}{a_\text{Maa}}\right)^{3/2}$
 **Muunnokset:** Kuvaajaa varten $a$ muutetaan yksikköön $10^{8}\,\text{km}$ ja $T$ yksikköön $10^{3}\,\text{d}$. Esimerkiksi Maalle $$
 \begin{aligned}
 &149{,}6 \cdot 10^{6}\,\text{km} \\

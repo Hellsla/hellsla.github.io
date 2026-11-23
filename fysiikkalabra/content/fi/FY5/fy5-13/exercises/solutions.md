@@ -2,7 +2,7 @@
 **Annettu:** kielen värähtelevän osan pituus $L = 1{,}05\,\text{m}$, aallon nopeus kielessä $v = 86{,}1\,\text{m/s}$; kieli on kiinni kummastakin päästä
 **Kysytty:** kielen perustaajuus $f_1$ hertseinä
 **Periaate:** Kummassakin kiinnitetyssä päässä on solmu. Perustaajuudella kielessä on yksi kupu, joten kielen pituudelle mahtuu puolikas aallonpituus: $\lambda_1 = 2L$. Taajuus saadaan aallon perusyhtälöstä $v = f\lambda$.
-**Kaava:** $f_n = n \cdot \dfrac{v}{2L}$, josta perustaajuudella $n = 1$: $f_1 = \dfrac{v}{2L}$
+**Kaava:** $$\begin{aligned} L &= n\dfrac{\lambda_n}{2} \\ v &= f_n\lambda_n \\ f_n &= \dfrac{v}{\lambda_n} = n\dfrac{v}{2L} \\ f_1 &= \dfrac{v}{2L} \quad (n = 1) \end{aligned}$$
 **Muunnokset:** Ei tarvita: pituus on metreinä ja nopeus metreinä sekunnissa, joten $\tfrac{\text{m/s}}{\text{m}} = \tfrac{1}{\text{s}} = \text{Hz}$.
 **Sijoitus:** $f_1 = \dfrac{86{,}1\,\text{m/s}}{2 \cdot 1{,}05\,\text{m}} = \dfrac{86{,}1\,\text{m/s}}{2{,}10\,\text{m}} = 41{,}0\,\text{Hz}$
 **Vastaus:** $41{,}0\,\text{Hz}$, kolme merkitsevää numeroa kuten pituudessa $1{,}05\,\text{m}$ ja nopeudessa $86{,}1\,\text{m/s}$.
@@ -12,7 +12,7 @@
 **Annettu:** molemmista päistä avoin putki, pituus $L = 0{,}330\,\text{m}$; äänen nopeus ilmassa $v = 340\,\text{m/s}$
 **Kysytty:** ilmapatsaan perustaajuus $f_1$ hertseinä
 **Periaate:** Avoimissa päissä ilma pääsee liikkumaan, joten kummassakin päässä on siirtymän kupu. Kahden kuvun välissä on perustaajuudella yksi solmu, joten putkeen mahtuu puolikas aallonpituus ja ominaistaajuudet ovat samat kuin kahdesta päästä kiinnitetyllä kielellä.
-**Kaava:** $f_n = n \cdot \dfrac{v}{2L}$, josta perustaajuudella $n = 1$: $f_1 = \dfrac{v}{2L}$
+**Kaava:** $$\begin{aligned} L &= n\dfrac{\lambda_n}{2} \\ v &= f_n\lambda_n \\ f_n &= \dfrac{v}{\lambda_n} = n\dfrac{v}{2L} \\ f_1 &= \dfrac{v}{2L} \quad (n = 1) \end{aligned}$$
 **Muunnokset:** Ei tarvita: pituus on metreinä ja nopeus metreinä sekunnissa.
 **Sijoitus:** $f_1 = \dfrac{340\,\text{m/s}}{2 \cdot 0{,}330\,\text{m}} = \dfrac{340\,\text{m/s}}{0{,}660\,\text{m}} = 515{,}2\,\text{Hz}$
 **Vastaus:** $515\,\text{Hz}$, kolme merkitsevää numeroa kuten putken pituudessa $0{,}330\,\text{m}$ ja äänen nopeudessa.
@@ -22,7 +22,7 @@
 **Annettu:** yläpäästään suljettu urkupilli, pituus $L = 2{,}60\,\text{m}$; äänen nopeus ilmassa $v = 340\,\text{m/s}$
 **Kysytty:** pillin perustaajuus $f_1$ hertseinä
 **Periaate:** Suljetussa päässä ilma ei pääse liikkumaan, joten siellä on siirtymän solmu; avoimessa päässä on kupu. Solmusta kupuun on neljännes aallonpituutta, joten perustaajuudella $L = \tfrac{\lambda_1}{4}$ eli $\lambda_1 = 4L$.
-**Kaava:** $f_n = n \cdot \dfrac{v}{4L}$, kun $n = 1, 3, 5, \ldots$, josta perustaajuudella $f_1 = \dfrac{v}{4L}$
+**Kaava:** $$\begin{aligned} L &= n\dfrac{\lambda_n}{4} \quad (n = 1, 3, 5, \ldots) \\ v &= f_n\lambda_n \\ f_n &= \dfrac{v}{\lambda_n} = n\dfrac{v}{4L} \\ f_1 &= \dfrac{v}{4L} \quad (n = 1) \end{aligned}$$
 **Muunnokset:** Ei tarvita: pituus on metreinä ja nopeus metreinä sekunnissa.
 **Sijoitus:** $f_1 = \dfrac{340\,\text{m/s}}{4 \cdot 2{,}60\,\text{m}} = \dfrac{340\,\text{m/s}}{10{,}4\,\text{m}} = 32{,}69\,\text{Hz}$
 **Vastaus:** $32{,}7\,\text{Hz}$, kolme merkitsevää numeroa kuten pillin pituudessa $2{,}60\,\text{m}$.
@@ -52,7 +52,7 @@
 **Annettu:** kielen värähtelevän osan pituus $L = 0{,}650\,\text{m}$; aallon nopeus ennen kiristämistä $v_1 = 141{,}0\,\text{m/s}$ ja sen jälkeen $v_2 = 148{,}0\,\text{m/s}$
 **Kysytty:** perustaajuuden muutos $\Delta f = f_\text{2} - f_\text{1}$ hertseinä
 **Periaate:** Kieli on kiinni kummastakin päästä, joten perustaajuudella $f = \tfrac{v}{2L}$. Kiristäminen muuttaa vain aallon nopeutta; kielen värähtelevän osan pituus pysyy samana. Perustaajuus on siksi suoraan verrannollinen nopeuteen.
-**Kaava:** $f = \dfrac{v}{2L}$, joten $\Delta f = \dfrac{v_2}{2L} - \dfrac{v_1}{2L}$, josta $\Delta f = \dfrac{v_2 - v_1}{2L}$
+**Kaava:** $$\begin{aligned} \lambda &= 2L \\ f &= \dfrac{v}{\lambda} = \dfrac{v}{2L} \\ \Delta f &= \dfrac{v_2}{2L} - \dfrac{v_1}{2L} \\ &= \dfrac{v_2 - v_1}{2L} \end{aligned}$$
 **Muunnokset:** Ei tarvita: nopeudet ovat metreinä sekunnissa ja pituus metreinä.
 **Sijoitus:** $\Delta f = \dfrac{148{,}0\,\text{m/s} - 141{,}0\,\text{m/s}}{2 \cdot 0{,}650\,\text{m}} = \dfrac{7{,}0\,\text{m/s}}{1{,}300\,\text{m}} = 5{,}385\,\text{Hz}$
 **Vastaus:** $5{,}4\,\text{Hz}$, kaksi merkitsevää numeroa, koska nopeuksien erotus $7{,}0\,\text{m/s}$ tunnetaan kahden numeron tarkkuudella.
@@ -62,7 +62,7 @@
 **Annettu:** äänirauta $f = 440\,\text{Hz}$; lyhin resonoiva ilmapatsas $L = 19{,}3\,\text{cm}$, alapäästään veden pinnan sulkema
 **Kysytty:** äänen nopeus ilmassa $v$ metreinä sekunnissa
 **Periaate:** Veden pinnalla ilma ei pääse liikkumaan, joten siellä on siirtymän solmu, ja putken avoimessa suussa on kupu. Ääni voimistuu ensimmäisen kerran, kun ilmapatsaan pituus vastaa suljetun putken perustaajuutta, eli solmusta kupuun on neljännes aallonpituutta. Putken pääkorjausta ei huomioida. Nopeus saadaan aallon perusyhtälöstä.
-**Kaava:** $L = \dfrac{\lambda}{4}$ ja $v = f\lambda$, josta $v = 4 L f$
+**Kaava:** $$\begin{aligned} L &= \dfrac{\lambda}{4} \\ v &= f\lambda = 4Lf \end{aligned}$$
 **Muunnokset:** $L = 19{,}3\,\text{cm} = 0{,}193\,\text{m}$
 **Sijoitus:** $v = 4 \cdot 0{,}193\,\text{m} \cdot 440\,\text{Hz} = 0{,}772\,\text{m} \cdot 440\,\text{Hz} = 339{,}68\,\text{m/s}$
 **Vastaus:** $340\,\text{m/s}$, kolme merkitsevää numeroa kuten ilmapatsaan pituudessa $19{,}3\,\text{cm}$.
@@ -72,7 +72,7 @@
 **Annettu:** molemmista päistä avoin putki, kolmas ominaistaajuus $f_3 = 1530\,\text{Hz}$; äänen nopeus ilmassa $v = 340\,\text{m/s}$
 **Kysytty:** putken pituus $L$ senttimetreinä
 **Periaate:** Avoimissa päissä on siirtymän kupu, joten ominaistaajuudet ovat samat kuin kahdesta päästä kiinnitetyllä kielellä, $f_n = n \cdot \tfrac{v}{2L}$. Kolmas ominaistaajuus vastaa lukua $n = 3$, jolloin putkeen mahtuu kolme puolikasta aallonpituutta.
-**Kaava:** $f_3 = 3 \cdot \dfrac{v}{2L}$, josta $L = \dfrac{3v}{2 f_3}$
+**Kaava:** $$\begin{aligned} L &= 3\cdot\dfrac{\lambda_3}{2} \\ v &= f_3\lambda_3 \\ f_3 &= \dfrac{v}{\lambda_3} = \dfrac{3v}{2L} \\ L &= \dfrac{3v}{2 f_3} \end{aligned}$$
 **Muunnokset:** Lopuksi metrit senttimetreiksi: $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $L = \dfrac{3 \cdot 340\,\text{m/s}}{2 \cdot 1530\,\text{Hz}} = \dfrac{1020\,\text{m/s}}{3060\,\text{Hz}} = 0{,}3333\,\text{m} = 33{,}33\,\text{cm}$
 **Vastaus:** $33{,}3\,\text{cm}$, kolme merkitsevää numeroa kuten taajuudessa $1530\,\text{Hz}$ ja äänen nopeudessa.
@@ -83,7 +83,7 @@
 **Kysytty:** aallon nopeus narussa $v$ metreinä sekunnissa
 **Periaate:** Naru värähtelee seisovana aaltona, jossa vierekkäisten solmujen etäisyys on puoli aallonpituutta. Kun tiedetään, kuinka monta puolikasta aallonpituutta värähtelevälle osalle mahtuu, saadaan aallonpituus, ja nopeus seuraa aallon perusyhtälöstä $v = f\lambda$.
 **Kuvaajan lukeminen:** Viivaimen mukaan täryttäjä on kohdassa $0$ ja väkipyörä kohdassa $1{,}20\,\text{m}$, joten värähtelevän osan pituus on $L = 1{,}20\,\text{m}$. Narussa on neljä silmukkaa eli neljä kupua ja viisi solmua päät mukaan lukien, joten $L$ on neljä puolikasta aallonpituutta: $n = 4$.
-**Kaava:** $L = n \cdot \dfrac{\lambda}{2}$ ja $v = f\lambda$, josta $\lambda = \dfrac{2L}{n}$ ja $v = \dfrac{2 L f}{n}$
+**Kaava:** $$\begin{aligned} L &= n\dfrac{\lambda}{2} \\ \lambda &= \dfrac{2L}{n} \\ v &= f\lambda = \dfrac{2Lf}{n} \end{aligned}$$
 **Muunnokset:** Ei tarvita: pituus on metreinä ja taajuus hertseinä.
 **Sijoitus:** $v = \dfrac{2 \cdot 1{,}20\,\text{m} \cdot 100\,\text{Hz}}{4} = \dfrac{240\,\text{m/s}}{4} = 60{,}0\,\text{m/s}$
 **Vastaus:** $60{,}0\,\text{m/s}$, kolme merkitsevää numeroa kuten viivaimelta luetussa pituudessa $1{,}20\,\text{m}$ ja taajuudessa $100\,\text{Hz}$.
@@ -108,7 +108,7 @@ Taajuudet ovat samat, eli $f_1' = f_1$. Pituuden puolittuminen kaksinkertaistaa 
 **Annettu:** avoimen urkupillin perustaajuus $f_\text{a} = 262\,\text{Hz}$; pillin pituus $L$ ja äänen nopeus $v$ pysyvät samoina, kun yläpää suljetaan
 **Kysytty:** suljetun pillin perustaajuus $f_\text{s}$ hertseinä
 **Periaate:** Avoimen pillin kummassakin päässä on siirtymän kupu, joten perustaajuudella $L = \tfrac{\lambda}{2}$. Suljetussa päässä on solmu, joten suljetun pillin perustaajuudella $L = \tfrac{\lambda}{4}$. Sama pituus vastaa siis kaksinkertaista aallonpituutta, ja koska äänen nopeus on sama, taajuus puolittuu.
-**Kaava:** $f_\text{a} = \dfrac{v}{2L}$ ja $f_\text{s} = \dfrac{v}{4L}$, joten jakamalla $\dfrac{f_\text{s}}{f_\text{a}} = \dfrac{2L}{4L} = \dfrac{1}{2}$, josta $f_\text{s} = \dfrac{f_\text{a}}{2}$
+**Kaava:** $$\begin{aligned} f_\text{a} &= \dfrac{v}{2L} \\ f_\text{s} &= \dfrac{v}{4L} = \dfrac{1}{2} \cdot \dfrac{v}{2L} \\ &= \dfrac{f_\text{a}}{2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: pituutta ja nopeutta ei tarvita lukuarvoina, koska ne supistuvat pois.
 **Sijoitus:** $f_\text{s} = \dfrac{262\,\text{Hz}}{2} = 131\,\text{Hz}$
 **Vastaus:** $131\,\text{Hz}$, kolme merkitsevää numeroa kuten perustaajuudessa $262\,\text{Hz}$.
@@ -118,7 +118,7 @@ Taajuudet ovat samat, eli $f_1' = f_1$. Pituuden puolittuminen kaksinkertaistaa 
 **Annettu:** kahdesta päästä kiinnitetty kieli; kaksi peräkkäistä resonanssitaajuutta $f_a = 330\,\text{Hz}$ ja $f_b = 440\,\text{Hz}$, niiden välissä ei resonanssia
 **Kysytty:** kielen perustaajuus $f_1$ hertseinä
 **Periaate:** Kieli resonoi vain ominaistaajuuksillaan $f_n = n f_1$, joten resonanssitaajuudet ovat perustaajuuden monikertoja. Koska väliin ei jää muita resonansseja, taajuudet ovat peräkkäiset ominaistaajuudet $f_n$ ja $f_{n+1}$, ja niiden erotus on yksi perustaajuus.
-**Kaava:** $f_{n+1} - f_n = (n + 1) f_1 - n f_1$, josta $f_1 = f_b - f_a$
+**Kaava:** $$\begin{aligned} f_n &= nf_1 \\ f_b - f_a &= f_{n+1} - f_n = (n + 1) f_1 - n f_1 \\ f_1 &= f_b - f_a \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $f_1 = 440\,\text{Hz} - 330\,\text{Hz} = 110\,\text{Hz}$
 **Vastaus:** $110\,\text{Hz}$, kolme merkitsevää numeroa, koska taajuudet on annettu hertsin tarkkuudella ja erotus $110\,\text{Hz}$ on kolminumeroinen.
@@ -128,7 +128,7 @@ Taajuudet ovat samat, eli $f_1' = f_1$. Pituuden puolittuminen kaksinkertaistaa 
 **Annettu:** toisesta päästä suljettu putki; peräkkäiset resonanssitaajuudet $f_a = 510\,\text{Hz}$ ja $f_b = 850\,\text{Hz}$; äänen nopeus ilmassa $v = 340\,\text{m/s}$
 **Kysytty:** putken pituus $L$ metreinä
 **Periaate:** Suljetussa päässä on siirtymän solmu ja avoimessa kupu, joten ominaistaajuudet ovat $f_n = n \cdot \tfrac{v}{4L} = n f_1$ vain parittomilla luvuilla $n = 1, 3, 5, \ldots$ Peräkkäisten ominaistaajuuksien $n$ ja $n + 2$ erotus on siksi kaksi perustaajuutta. Kun perustaajuus tunnetaan, pituus saadaan perustaajuuden kaavasta.
-**Kaava:** $f_b - f_a = (n + 2) f_1 - n f_1 = 2 f_1$, josta $f_1 = \dfrac{f_b - f_a}{2}$; ja $f_1 = \dfrac{v}{4L}$, josta $L = \dfrac{v}{4 f_1}$
+**Kaava:** $$\begin{aligned} f_n &= nf_1 \\ f_b - f_a &= (n + 2) f_1 - n f_1 = 2 f_1 \\ f_1 &= \dfrac{f_b - f_a}{2} = \dfrac{v}{4L} \\ L &= \dfrac{v}{4 f_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: nopeus on metreinä sekunnissa ja taajuudet hertseinä.
 **Sijoitus:** $f_1 = \dfrac{850\,\text{Hz} - 510\,\text{Hz}}{2} = \dfrac{340\,\text{Hz}}{2} = 170\,\text{Hz}$ ja $L = \dfrac{340\,\text{m/s}}{4 \cdot 170\,\text{Hz}} = \dfrac{340\,\text{m/s}}{680\,\text{Hz}} = 0{,}500\,\text{m}$
 **Vastaus:** $0{,}500\,\text{m}$, kolme merkitsevää numeroa kuten taajuuksissa ja äänen nopeudessa.
@@ -148,7 +148,7 @@ Taajuudet ovat samat, eli $f_1' = f_1$. Pituuden puolittuminen kaksinkertaistaa 
 **Annettu:** kielen värähtelevän osan pituus $L = 0{,}60\,\text{m}$, aallon nopeus $v = 120\,\text{m/s}$; kieli on kiinni kummastakin päästä; opiskelijan tulos $200\,\text{Hz}$
 **Kysytty:** a) opiskelijan virhe; b) oikea perustaajuus $f_1$ hertseinä
 **Periaate:** Kummassakin kiinnitetyssä päässä on solmu. Perustaajuudella kielessä on yksi kupu keskellä, joten kielen pituus on vain puolikas aallonpituus: $L = \tfrac{\lambda_1}{2}$. Opiskelija otti aallonpituudeksi koko kielen pituuden, joten hänen aallonpituutensa oli puolet liian pieni ja taajuus kaksi kertaa liian suuri. Perustaajuus saadaan yhtälöstä $v = f\lambda$.
-**Kaava:** $\lambda_1 = 2L$, joten $f_1 = \dfrac{v}{\lambda_1} = \dfrac{v}{2L}$
+**Kaava:** $$\begin{aligned} v &= f_1\lambda_1 \\ \lambda_1 &= 2L \\ f_1 &= \dfrac{v}{\lambda_1} = \dfrac{v}{2L} \end{aligned}$$
 **Muunnokset:** Ei tarvita: pituus on metreinä ja nopeus metreinä sekunnissa.
 **Sijoitus:** $f_1 = \dfrac{120\,\text{m/s}}{2 \cdot 0{,}60\,\text{m}} = \dfrac{120\,\text{m/s}}{1{,}20\,\text{m}} = 100\,\text{Hz}$
 **Vastaus:** $1{,}0 \cdot 10^{2}\,\text{Hz}$ eli $100\,\text{Hz}$, kaksi merkitsevää numeroa kuten pituudessa $0{,}60\,\text{m}$. Virhe on se, että opiskelija piti aallonpituutena kielen pituutta ($\lambda = L$), vaikka perustaajuudella kielen pituus on puolikas aallonpituus ($\lambda_1 = 2L$).
@@ -158,7 +158,7 @@ Taajuudet ovat samat, eli $f_1' = f_1$. Pituuden puolittuminen kaksinkertaistaa 
 **Annettu:** kielen värähtelevän osan pituus $L = 0{,}640\,\text{m}$; kieli on kiinni kummastakin päästä; taulukon $n$ ja $f$ (esimerkkiaineisto), viisi riviä
 **Kysytty:** aallon nopeus kielessä $v$ metreinä sekunnissa
 **Periaate:** Kahdesta päästä kiinnitetyn kielen ominaistaajuus on $f_n = n \cdot \tfrac{v}{2L} = n f_1$, joten jokaisella rivillä suhde $\tfrac{f}{n}$ on perustaajuus. Mittaukset poikkeavat hieman toisistaan, joten perustaajuus arvioidaan viiden suhteen keskiarvona. Kun $f_1$ tunnetaan, nopeus saadaan perustaajuuden kaavasta.
-**Kaava:** $\dfrac{f_n}{n} = f_1$ ja $f_1 = \dfrac{v}{2L}$, josta $v = 2 L f_{1,\text{ka}}$
+**Kaava:** $$\begin{aligned} f_n &= nf_1 \\ f_1 &= \dfrac{f_n}{n} \\ f_1 &= \dfrac{v}{2L} \\ v &= 2L f_{1,\text{ka}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: pituus on metreinä ja taajuus hertseinä.
 **Sijoitus:** Suhteet ovat $96{,}0\,\text{Hz}$, $95{,}5\,\text{Hz}$, $96{,}33\,\text{Hz}$, $95{,}75\,\text{Hz}$ ja $96{,}2\,\text{Hz}$. Niiden summa on $479{,}78\,\text{Hz}$, joten $f_{1,\text{ka}} = 479{,}78\,\text{Hz} : 5 = 95{,}96\,\text{Hz}$. Nopeus on $v = 2 \cdot 0{,}640\,\text{m} \cdot 95{,}96\,\text{Hz} = 122{,}8\,\text{m/s}$
 **Vastaus:** $123\,\text{m/s}$, kolme merkitsevää numeroa kuten pituudessa $0{,}640\,\text{m}$ ja taajuuksissa.
@@ -168,7 +168,7 @@ Taajuudet ovat samat, eli $f_1' = f_1$. Pituuden puolittuminen kaksinkertaistaa 
 **Annettu:** äänirauta $f = 512\,\text{Hz}$; ilmapatsaan pituudet resonansseissa $L_1 = 16{,}3\,\text{cm}$, $L_2 = 49{,}9\,\text{cm}$ ja $L_3 = 83{,}3\,\text{cm}$; veden pinta on suljettu pää
 **Kysytty:** a) äänen nopeus ilmassa $v$ metreinä sekunnissa; b) ensimmäisen pituuden poikkeama neljänneksestä aallonpituutta ja sen syy
 **Periaate:** Veden pinnalla on siirtymän solmu ja putken suulla kupu, joten resonanssissa ilmapatsaan pituus on pariton määrä aallonpituuden neljänneksiä. Peräkkäisten resonanssien välimatka on puoli aallonpituutta, joten ensimmäisen ja kolmannen resonanssin pituuksien erotus on kokonainen aallonpituus. Erotusta käytettäessä putken pääkorjaus häviää, koska se vaikuttaa kaikkiin pituuksiin yhtä paljon.
-**Kaava:** $\lambda = L_3 - L_1$ ja $v = f\lambda$; kohtaa b) varten $e = \dfrac{\lambda}{4} - L_1$
+**Kaava:** $$\begin{aligned} L_1 &= \dfrac{\lambda}{4} - e \\ L_3 &= \dfrac{5\lambda}{4} - e \\ \lambda &= L_3 - L_1 \\ v &= f\lambda \\ e &= \dfrac{\lambda}{4} - L_1 \end{aligned}$$
 **Muunnokset:** $L_3 - L_1$ lasketaan senttimetreinä ja muutetaan metreiksi: $67{,}0\,\text{cm} = 0{,}670\,\text{m}$.
 **Sijoitus:** $\lambda = 83{,}3\,\text{cm} - 16{,}3\,\text{cm} = 67{,}0\,\text{cm} = 0{,}670\,\text{m}$, joten $v = 512\,\text{Hz} \cdot 0{,}670\,\text{m} = 343{,}0\,\text{m/s}$. Kohdassa b) $\tfrac{\lambda}{4} = 0{,}670\,\text{m} : 4 = 16{,}75\,\text{cm}$ ja $e = 16{,}75\,\text{cm} - 16{,}3\,\text{cm} = 0{,}45\,\text{cm}$.
 **Vastaus:** $343\,\text{m/s}$, kolme merkitsevää numeroa kuten taajuudessa ja pituuksissa. Kohta b): ensimmäinen pituus on noin $0{,}45\,\text{cm}$ lyhyempi kuin $\tfrac{\lambda}{4}$, koska kupu on hieman putken suun yläpuolella eikä aivan suulla; ilmapatsaan vaikuttava pituus on $L_1 + e$.
@@ -197,7 +197,7 @@ Ennuste on kohtuullisen luotettava, koska sama kieli ja sama malli kuvaavat koko
 **Annettu:** kaksi putkea, kummankin pituus $L = 0{,}800\,\text{m}$; kolme alinta resonanssitaajuutta (esimerkkiaineisto): putki A $207\,\text{Hz}$, $413\,\text{Hz}$, $621\,\text{Hz}$ ja putki B $103\,\text{Hz}$, $311\,\text{Hz}$, $517\,\text{Hz}$; putken pääkorjaus jätetään huomiotta
 **Kysytty:** a) kumpi putki on avoin ja kumpi suljettu; b) äänen nopeus ilmassa $v$ metreinä sekunnissa, kun lasketaan putkien tulosten keskiarvo; c) miksi putket kuulostavat erilaisilta
 **Periaate:** Molemmista päistä avoimen putken ominaistaajuudet ovat $f_n = n \cdot \tfrac{v}{2L}$, $n = 1, 2, 3, \ldots$, joten resonanssit ovat suhteessa $1 : 2 : 3$. Toisesta päästä suljetun putken ominaistaajuudet ovat $f_n = n \cdot \tfrac{v}{4L}$ vain parittomilla $n$, joten resonanssit ovat suhteessa $1 : 3 : 5$. Suhteet kertovat putken tyypin, ja kummastakin aineistosta saadaan oma arvio nopeudelle.
-**Kaava:** avoin putki $f_1 = \dfrac{v}{2L}$, josta $v = 2 L f_1$; suljettu putki $f_1 = \dfrac{v}{4L}$, josta $v = 4 L f_1$; molemmille $f_1$ on suhteiden $\tfrac{f}{n}$ keskiarvo ($n = 1, 2, 3$ avoimella ja $n = 1, 3, 5$ suljetulla)
+**Kaava:** $$\begin{aligned} f_1 &= \dfrac{f_n}{n} \\ v_\text{avoin} &= f_1 \cdot 2L \\ v_\text{suljettu} &= f_1 \cdot 4L \end{aligned}$$
 **Muunnokset:** Ei tarvita: pituus on metreinä ja taajuudet hertseinä.
 **Sijoitus:** a) Putkella A taajuudet ovat noin $207\,\text{Hz} \cdot (1, 2, 3)$, joten A on avoin. Putkella B ne ovat noin $103\,\text{Hz} \cdot (1, 3, 5)$, joten B on suljettu.
 
@@ -209,7 +209,7 @@ b) Avoimella A: suhteiden $207{,}0$, $206{,}5$ ja $207{,}0$ summa on $620{,}5\,\
 **Annettu:** pillin pituus $L = 0{,}50\,\text{m}$, pilli on molemmista päistä avoin; taulukosta (MAFY-taulukko, Aaltoliike, Äänen nopeuksia eri väliaineissa, kaasut $0\,{}^\circ\text{C}$) äänen nopeus heliumissa $v_\text{He} = 971\,\text{m/s}$ ja ilmassa $v_\text{ilma} = 331{,}5\,\text{m/s}$
 **Kysytty:** perustaajuuksien erotus $\Delta f = f_{1,\text{He}} - f_{1,\text{ilma}}$ hertseinä
 **Periaate:** Molemmista päistä avoimessa putkessa on kummassakin päässä kupu, joten perustaajuudella putkeen mahtuu puoli aallonpituutta ja $L = \tfrac{\lambda_1}{2}$. Pituus on sama kummassakin kaasussa, mutta äänen nopeus on eri, joten perustaajuudet ovat eri. Kummankin kaasun lämpötila on $0\,{}^\circ\text{C}$, joten vertailu on reilu.
-**Kaava:** $f_1 = \dfrac{v}{2L}$, joten $\Delta f = \dfrac{v_\text{He}}{2L} - \dfrac{v_\text{ilma}}{2L} = \dfrac{v_\text{He} - v_\text{ilma}}{2L}$
+**Kaava:** $$\begin{aligned} \lambda_1 &= 2L \\ f_1 &= \dfrac{v}{\lambda_1} = \dfrac{v}{2L} \\ \Delta f &= f_{1,\text{He}} - f_{1,\text{ilma}} \\ &= \dfrac{v_\text{He} - v_\text{ilma}}{2L} \end{aligned}$$
 **Muunnokset:** Ei tarvita: pituus on metreinä ja nopeudet metreinä sekunnissa.
 **Sijoitus:** $f_{1,\text{He}} = \dfrac{971\,\text{m/s}}{2 \cdot 0{,}50\,\text{m}} = 971\,\text{Hz}$ ja $f_{1,\text{ilma}} = \dfrac{331{,}5\,\text{m/s}}{1{,}00\,\text{m}} = 331{,}5\,\text{Hz}$, joten $\Delta f = 971\,\text{Hz} - 331{,}5\,\text{Hz} = 639{,}5\,\text{Hz}$
 **Vastaus:** $6{,}4 \cdot 10^{2}\,\text{Hz}$ eli noin $640\,\text{Hz}$, kaksi merkitsevää numeroa kuten pituudessa $0{,}50\,\text{m}$. Taulukon arvot ovat $971\,\text{m/s}$ ja $331{,}5\,\text{m/s}$; eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
@@ -220,7 +220,7 @@ b) Avoimella A: suhteiden $207{,}0$, $206{,}5$ ja $207{,}0$ summa on $620{,}5\,\
 **Kysytty:** täryttäjän taajuuden nousu $\Delta f$ hertseinä
 **Periaate:** Naru värähtelee seisovana aaltona ominaistaajuuksillaan $f_n = n\dfrac{v}{2L}$. Täryttäjä herättää narun sen silmukkakuvion ominaistaajuudella. Siirtyminen neljästä silmukasta viiteen on kahden ominaistaajuuden erotus.
 **Kuvaajan lukeminen:** Viivaimen mukaan täryttäjä on kohdassa $0$ ja väkipyörä kohdassa $1{,}20\,\text{m}$, joten $L = 1{,}20\,\text{m}$. Narussa on neljä silmukkaa, joten nykyinen kuvio on $n = 4$ ja uusi $n = 5$.
-**Kaava:** $f_n = n\dfrac{v}{2L}$, joten $\Delta f = f_5 - f_4 = (5 - 4)\dfrac{v}{2L} = \dfrac{v}{2L}$
+**Kaava:** $$\begin{aligned} L &= n\dfrac{\lambda_n}{2} \\ f_n &= \dfrac{v}{\lambda_n} = n\dfrac{v}{2L} \\ \Delta f &= f_5 - f_4 \\ &= (5 - 4)\dfrac{v}{2L} = \dfrac{v}{2L} \end{aligned}$$
 **Muunnokset:** Ei tarvita: pituus on metreinä ja nopeus metreinä sekunnissa.
 **Sijoitus:** $f_4 = \dfrac{4 \cdot 75{,}0\,\text{m/s}}{2 \cdot 1{,}20\,\text{m}} = 125\,\text{Hz}$ ja $f_5 = \dfrac{5 \cdot 75{,}0\,\text{m/s}}{2 \cdot 1{,}20\,\text{m}} = 156{,}25\,\text{Hz}$, joten $\Delta f = 156{,}25\,\text{Hz} - 125\,\text{Hz} = 31{,}25\,\text{Hz}$
 **Vastaus:** $31{,}3\,\text{Hz}$, kolme merkitsevää numeroa kuten nopeudessa $75{,}0\,\text{m/s}$ ja viivaimelta luetussa pituudessa $1{,}20\,\text{m}$.

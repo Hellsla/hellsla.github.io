@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8a3bb847f1c530b5
+CONTENT-HASH: d46ab117a3ae9b49
 
 ## Blocking
 
 ## Polish
-- content/fi/FY5/fy5-12/exercises/solutions.md (L2-10, Sijoitus and Vastaus) — the earlier Polish still applies: "1,20 m" has three significant figures, but the sentence says the results have two, as λ = 0,80 m has. This is outside the diff. — Write 1,2 m.
+- content/fi/FY5/fy5-12/exercises/solutions.md (L3-05 Kaava) — The block jumps from $\Delta s = s_1 - s_2$ to $\lambda = 2\Delta s$ without the row $\Delta s = \tfrac{1}{2}\lambda$ ($n = 0$) that L2-01, L3-03, L1-08 and L3-06 now show. The Periaate states the condition, so this is only uneven form.
 
 ## Checked
-- The hash was 8a3bb847f1c530b5 at the start and at the end.
-- solutions.md:157 (L2-06): "ei muutu solmuviivoilla sisäenergiaksi" is correct physics and fits the guardrail. Heat is energy in transfer, so energy cannot "turn into heat". The claim says interference itself does not dissipate energy. That is true: the energy is redistributed and none is lost at the nodal lines. The rest of the model answer still agrees with the brief's Kaava section.
-- Every other hunk only splits a paragraph (L1-03, L1-05, L2-01, L2-04, L2-07, L2-08, L2-10 a and d). No number, symbol or claim changed. The split text reads in the same order and keeps its meaning.
-- The deterministic checks (lint, build, latex) are green, so the blank lines inside the fields do not break the rendering.
+- Delta: the Kaava steps of L1-04, L2-01, L2-02, L2-04, L3-02, L3-03, L1-08, L2-05, L3-04, L3-05, L2-09 and L3-06 are now aligned blocks. They start from the conditions for destructive and constructive interference, $\Delta s = (n + \tfrac{1}{2})\lambda$ and $\Delta s = n\lambda$, from Pythagoras for the path lengths, and from $v = f\lambda$. Each ends at the form the Sijoitus uses. Every rearrangement is algebraically right.
+- L3-02: subtracting the two conditions gives $\Delta s\,(f_2 - f_1)/v = 1$, so $\Delta s = v/(f_2 - f_1)$.
+- L2-04: the two pulses close the distance $s = vt + vt$.
+- L2-05: along the line between the sources, adjacent minima are $\Delta x = \lambda/2$ apart, because $\Delta s = |d - 2x|$.
+- L3-04: the path difference stays the same, so the loud sound comes first when $\Delta s = \lambda_2$.
+- One script recomputed every changed task. L1-04 0,34 m, L2-01 0,80 m, L2-02 10,0 cm, L2-04 1,5 s, L3-02 6,0 cm (2,5 and 3,5 wavelengths, consistent), L3-03 8,0 m, L1-08 200 Hz, L2-05 680 Hz, L3-04 4,00 m and 340 Hz, L3-05 852,6 Hz and 850,9 Hz, giving 850 Hz, L2-09 0,50 m, L3-06 340 Hz. All match the Sijoitus lines and answers.py, which are unchanged.
+- The drawing and picture fy5-12/ruudukko-tehtava were approved by the teacher. L2-09 and L3-06 still read the right triangle 6,0 m by 2,5 m from it, with hypotenuse 6,5 m.
+- Hash d46ab117a3ae9b49 at the start and at the end.

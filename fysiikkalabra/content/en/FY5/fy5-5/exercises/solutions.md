@@ -30,7 +30,7 @@ F &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\
 **Given:** mass of Mercury $M = 3.30 \cdot 10^{23}\,\text{kg}$ and radius $R = 2.44 \cdot 10^{6}\,\text{m}$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Find:** the gravitational field strength $g$ on the surface of Mercury
 **Principle:** The planet is approximately spherically symmetric, so it attracts as if its mass were at its centre. On the surface the distance from the centre is the radius of the planet.
-**Formula:** $g = \gamma \dfrac{M}{R^2}$
+**Formula:** $$\begin{aligned} m g &= \gamma\dfrac{Mm}{R^2} \\ g &= \gamma\dfrac{M}{R^2} \end{aligned}$$
 **Conversions:** None needed: the mass is in kilograms and the radius in metres, so the result is in $\text{m/s}^2$.
 **Substitution:**
 
@@ -63,7 +63,7 @@ F &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\
 **Given:** original force $F = 36\,\mu\text{N}$; the distance grows from $r$ to $3r$, the masses stay the same
 **Find:** the new gravitational force $F'$ in micronewtons
 **Principle:** By Newton's law of gravitation the force is inversely proportional to the square of the distance. When the masses do not change, the ratio of the forces depends only on the ratio of the distances.
-**Formula:** $\dfrac{F'}{F} = \dfrac{r^2}{(3r)^2} = \dfrac{1}{9}$, so $F' = \dfrac{F}{9}$
+**Formula:** $$\begin{aligned} F &= \gamma\dfrac{m_1 m_2}{r^2} \\ F' &= \gamma\dfrac{m_1 m_2}{(3r)^2} \\ &= \dfrac{1}{9}\,\gamma\dfrac{m_1 m_2}{r^2} \\ &= \dfrac{F}{9} \end{aligned}$$
 **Conversions:** None needed: the force stays in micronewtons.
 **Substitution:** $F' = \dfrac{36\,\mu\text{N}}{9} = 4.0\,\mu\text{N}$
 **Answer:** $4.0\,\mu\text{N}$, two significant figures as in the force $36\,\mu\text{N}$.
@@ -73,7 +73,7 @@ F &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\
 **Given:** distance between the centres of the spheres $r = 0.40\,\text{m}$, force $F = 0.60\,\mu\text{N}$, equal masses $m_1 = m_2 = m$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Find:** the mass $m$ of each sphere
 **Principle:** The lead spheres are uniform spheres, so the law of gravitation holds when $r$ is the distance between the centres. Because the masses are equal, the law contains the product $m \cdot m = m^2$, from which the mass is solved.
-**Formula:** $F = \gamma \dfrac{m^2}{r^2}$, so $m = r\sqrt{\dfrac{F}{\gamma}}$
+**Formula:** $$\begin{aligned} F &= \gamma\dfrac{m \cdot m}{r^2} \\ m^2 &= \dfrac{F r^2}{\gamma} \\ m &= r\sqrt{\dfrac{F}{\gamma}} \end{aligned}$$
 **Conversions:** $F = 0.60\,\mu\text{N} = 0.60 \cdot 10^{-6}\,\text{N}$
 **Substitution:** $m = 0.40\,\text{m} \cdot \sqrt{\dfrac{0.60 \cdot 10^{-6}\,\text{N}}{6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}}} = 0.40\,\text{m} \cdot 94.82\,\tfrac{\text{kg}}{\text{m}} = 37.93\,\text{kg}$
 **Answer:** $38\,\text{kg}$, two significant figures as in the force and the distance.
@@ -83,7 +83,7 @@ F &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\
 **Given:** on the surface of Venus $g = 8.87\,\text{m/s}^2$, radius $R = 6052\,\text{km}$, mass of the Earth $M_\text{E} = 5.97 \cdot 10^{24}\,\text{kg}$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Find:** the ratio of the mass of Venus to the mass of the Earth, $\tfrac{M}{M_\text{E}}$, without a unit
 **Principle:** The gravitational field strength on the surface of a spherically symmetric planet is $g = \gamma \tfrac{M}{R^2}$, so the mass of the planet can be solved from the measured $g$ and the radius. The mass is then compared with the mass of the Earth by dividing.
-**Formula:** $g = \gamma \dfrac{M}{R^2}$, so $M = \dfrac{g R^2}{\gamma}$ and the ratio is $\dfrac{M}{M_\text{E}} = \dfrac{g R^2}{\gamma M_\text{E}}$
+**Formula:** $$\begin{aligned} m g &= \gamma\dfrac{Mm}{R^2} \\ g &= \gamma\dfrac{M}{R^2} \\ M &= \dfrac{g R^2}{\gamma} \\ \dfrac{M}{M_\text{E}} &= \dfrac{g R^2}{\gamma M_\text{E}} \end{aligned}$$
 **Conversions:** $R = 6052\,\text{km} = 6052 \cdot 10^{3}\,\text{m} = 6.052 \cdot 10^{6}\,\text{m}$
 **Substitution:**
 
@@ -105,7 +105,7 @@ M &= \dfrac{g R^2}{\gamma} \\
 **Given:** mass of the probe $m = 1200\,\text{kg}$, force $F = 1.00\,\text{kN}$, mass of the Earth $M = 5.97 \cdot 10^{24}\,\text{kg}$ and radius $R = 6378\,\text{km}$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Find:** the height $h$ above the Earth's surface in kilometres
 **Principle:** The Earth attracts the probe as if its mass were at its centre, so the law of gravitation first gives the distance $r$ from the Earth's centre. The height above the surface is this distance minus the radius of the Earth.
-**Formula:** $F = \gamma \dfrac{M m}{r^2}$, so $r = \sqrt{\dfrac{\gamma M m}{F}}$ and $h = r - R = \sqrt{\dfrac{\gamma M m}{F}} - R$
+**Formula:** $$\begin{aligned} F &= \gamma\dfrac{Mm}{r^2} \\ r^2 &= \dfrac{\gamma M m}{F} \\ r &= \sqrt{\dfrac{\gamma M m}{F}} \\ h &= r - R \\ &= \sqrt{\dfrac{\gamma M m}{F}} - R \end{aligned}$$
 **Conversions:** $F = 1.00\,\text{kN} = 1000\,\text{N}$; $R = 6378\,\text{km} = 6.378 \cdot 10^{6}\,\text{m}$; finally $1\,\text{km} = 1000\,\text{m}$
 **Substitution:** The numerator is
 
@@ -143,7 +143,7 @@ The force $1.00\,\text{kN}$ is about $\tfrac{1}{11.8}$ of that, so the distance 
 **Given:** flight altitude $h = 11.0\,\text{km}$, radius of the Earth $R = 6378\,\text{km}$
 **Find:** by what percentage the field strength $g_h$ is smaller than the surface value $g_0$
 **Principle:** The Earth's gravitational field strength is inversely proportional to the square of the distance from the Earth's centre. When the ratio $\tfrac{g_h}{g_0}$ is calculated, $\gamma$ and the mass of the Earth cancel, so they are not needed.
-**Formula:** $\dfrac{g_h}{g_0} = \dfrac{\gamma \tfrac{M}{(R + h)^2}}{\gamma \tfrac{M}{R^2}} = \left(\dfrac{R}{R + h}\right)^2$, so the relative change is $1 - \left(\dfrac{R}{R + h}\right)^2$
+**Formula:** $$\begin{aligned} m g &= \gamma\dfrac{Mm}{r^2} \\ g &= \gamma\dfrac{M}{r^2} \\ g_0 &= \gamma\dfrac{M}{R^2} \\ g_h &= \gamma\dfrac{M}{(R + h)^2} \\ \dfrac{g_h}{g_0} &= \left(\dfrac{R}{R + h}\right)^2 \\ \dfrac{g_0 - g_h}{g_0} &= 1 - \left(\dfrac{R}{R + h}\right)^2 \end{aligned}$$
 **Conversions:** None needed: the radius and the altitude are both in kilometres, and the unit cancels. Finally the ratio is converted to a percentage by multiplying by $100\,\%$.
 **Substitution:** $1 - \left(\dfrac{6378\,\text{km}}{6378\,\text{km} + 11.0\,\text{km}}\right)^2 = 1 - 0.996560 = 0.003440 = 0.3440\,\%$
 **Answer:** $0.344\,\%$, three significant figures as in the altitude $11.0\,\text{km}$.
@@ -153,7 +153,7 @@ The force $1.00\,\text{kN}$ is about $\tfrac{1}{11.8}$ of that, so the distance 
 **Given:** mass of the Earth $M = 5.97 \cdot 10^{24}\,\text{kg}$, mass of the Moon $m_\text{M} = 7.35 \cdot 10^{22}\,\text{kg}$, distance between the centres $d = 3.84 \cdot 10^{5}\,\text{km}$
 **Find:** the distance $x$ from the Earth's centre at which the forces exerted on the probe by the Earth and the Moon are equal
 **Principle:** When the probe is between the Earth and the Moon, its distance from the Earth's centre is $x$ and from the Moon's centre $d - x$. Each force is obtained from the law of gravitation, and they are set equal; the mass of the probe and $\gamma$ cancel.
-**Formula:** $\gamma \dfrac{M m}{x^2} = \gamma \dfrac{m_\text{M} m}{(d - x)^2}$, so $\dfrac{d - x}{x} = \sqrt{\dfrac{m_\text{M}}{M}}$ and $x = \dfrac{d}{1 + \sqrt{\tfrac{m_\text{M}}{M}}}$
+**Formula:** $$\begin{aligned} F_\text{E} &= F_\text{M} \\ \gamma\dfrac{M m}{x^2} &= \gamma\dfrac{m_\text{M} m}{(d - x)^2} \\ \dfrac{(d - x)^2}{x^2} &= \dfrac{m_\text{M}}{M} \\ \dfrac{d - x}{x} &= \sqrt{\dfrac{m_\text{M}}{M}} \\ \dfrac{d}{x} &= 1 + \sqrt{\dfrac{m_\text{M}}{M}} \\ x &= \dfrac{d}{1 + \sqrt{\tfrac{m_\text{M}}{M}}} \end{aligned}$$
 **Conversions:** None needed: the distance can be kept in kilometres, because the answer is asked in kilometres, and in the ratio of the masses the unit cancels.
 **Substitution:** $\sqrt{\dfrac{7.35 \cdot 10^{22}\,\text{kg}}{5.97 \cdot 10^{24}\,\text{kg}}} = 0.11096$ and $x = \dfrac{3.84 \cdot 10^{5}\,\text{km}}{1.11096} = 3.456 \cdot 10^{5}\,\text{km}$
 **Answer:** $346\,000\,\text{km}$, that is, $3.46 \cdot 10^{5}\,\text{km}$, three significant figures as in the masses and the distance.
@@ -163,7 +163,7 @@ The force $1.00\,\text{kN}$ is about $\tfrac{1}{11.8}$ of that, so the distance 
 **Given:** radius of the planet $R_\text{p} = 2R$, the same mean density $\rho$ as the Earth, on the Earth's surface $g = 9.81\,\text{m/s}^2$
 **Find:** the gravitational field strength $g_\text{p}$ on the surface of the planet
 **Principle:** The field on the surface of a spherically symmetric planet is $g = \gamma \tfrac{M}{R^2}$. When the density is the same, the mass is the density times the volume of the sphere, $M = \rho \cdot \tfrac{4}{3}\pi R^3$, so the mass grows with the cube of the radius while the denominator grows only with the square. Then $g$ is directly proportional to the radius.
-**Formula:** $g = \gamma \dfrac{\rho \cdot \tfrac{4}{3}\pi R^3}{R^2} = \tfrac{4}{3}\pi\gamma\rho R$, so $\dfrac{g_\text{p}}{g} = \dfrac{R_\text{p}}{R}$ and $g_\text{p} = \dfrac{R_\text{p}}{R}\, g$
+**Formula:** $$\begin{aligned} M &= \rho\,\tfrac{4}{3}\pi R^3 \\ g &= \gamma\dfrac{M}{R^2} \\ &= \tfrac{4}{3}\pi\gamma\rho R \\ \dfrac{g_\text{p}}{g} &= \dfrac{R_\text{p}}{R} \\ g_\text{p} &= \dfrac{R_\text{p}}{R}\, g \end{aligned}$$
 **Conversions:** None needed: the ratio of the radii has no unit.
 **Substitution:** $g_\text{p} = \dfrac{2R}{R} \cdot 9.81\,\text{m/s}^2 = 19.62\,\text{m/s}^2$
 **Answer:** $19.6\,\text{m/s}^2$, three significant figures as in the value for the Earth, $9.81\,\text{m/s}^2$.
@@ -173,7 +173,7 @@ The force $1.00\,\text{kN}$ is about $\tfrac{1}{11.8}$ of that, so the distance 
 **Given:** mass of the Sun $M_\text{S} = 1.99 \cdot 10^{30}\,\text{kg}$ and distance $r_\text{S} = 1.50 \cdot 10^{8}\,\text{km}$; mass of the Moon $M_\text{M} = 7.35 \cdot 10^{22}\,\text{kg}$ and distance $r_\text{M} = 3.84 \cdot 10^{5}\,\text{km}$
 **Find:** the ratio $\tfrac{F_\text{S}}{F_\text{M}}$ of the forces exerted on the Earth by the Sun and the Moon
 **Principle:** Each force is obtained from Newton's law of gravitation when the distances are measured between the centres. In the ratio $\gamma$ and the mass of the Earth cancel, so only the masses and distances are needed.
-**Formula:** $\dfrac{F_\text{S}}{F_\text{M}} = \dfrac{\gamma \tfrac{M_\text{S} m}{r_\text{S}^2}}{\gamma \tfrac{M_\text{M} m}{r_\text{M}^2}} = \dfrac{M_\text{S}}{M_\text{M}} \cdot \left(\dfrac{r_\text{M}}{r_\text{S}}\right)^2$
+**Formula:** $$\begin{aligned} F_\text{S} &= \gamma\dfrac{M_\text{S} m}{r_\text{S}^2} \\ F_\text{M} &= \gamma\dfrac{M_\text{M} m}{r_\text{M}^2} \\ \dfrac{F_\text{S}}{F_\text{M}} &= \dfrac{M_\text{S}}{M_\text{M}} \cdot \left(\dfrac{r_\text{M}}{r_\text{S}}\right)^2 \end{aligned}$$
 **Conversions:** None needed: the distances are both in kilometres, and the units cancel.
 **Substitution:**
 
@@ -218,7 +218,7 @@ The law of gravitation holds in space, the force is not divided by two, and the 
 **Find:** a) the field strength $g$ on the surface of each planet; b) the ratio $\tfrac{g_\text{N}}{g_\text{U}}$; c) why the field of Saturn is almost the same as that of Neptune
 **Principle:** The field on the surface of a spherically symmetric planet is $g = \gamma \tfrac{M}{R^2}$, when $R$ is the radius of the planet. In the ratio $\gamma$ cancels.
 **Reading the graph:** The mass and the radius of each planet are read from the table. The mass is in the unit $10^{24}\,\text{kg}$ and the radius in kilometres.
-**Formula:** $g = \gamma \dfrac{M}{R^2}$ and $\dfrac{g_\text{N}}{g_\text{U}} = \dfrac{M_\text{N}}{M_\text{U}} \cdot \left(\dfrac{R_\text{U}}{R_\text{N}}\right)^2$
+**Formula:** $$\begin{aligned} m g &= \gamma\dfrac{Mm}{R^2} \\ g &= \gamma\dfrac{M}{R^2} \\ \dfrac{g_\text{N}}{g_\text{U}} &= \dfrac{M_\text{N}}{M_\text{U}} \cdot \left(\dfrac{R_\text{U}}{R_\text{N}}\right)^2 \end{aligned}$$
 **Conversions:** The masses are $M_\text{S} = 5.68 \cdot 10^{26}\,\text{kg}$, $M_\text{U} = 8.68 \cdot 10^{25}\,\text{kg}$ and $M_\text{N} = 1.02 \cdot 10^{26}\,\text{kg}$. The radii are $R_\text{S} = 5.8232 \cdot 10^{7}\,\text{m}$, $R_\text{U} = 2.5362 \cdot 10^{7}\,\text{m}$ and $R_\text{N} = 2.4622 \cdot 10^{7}\,\text{m}$.
 **Substitution:** Part a, when $g = \gamma \tfrac{M}{R^2}$:
 ```latex
@@ -248,7 +248,7 @@ Part c: the mass of Saturn is $\tfrac{568}{102} \approx 5.6$ times the mass of N
 **Find:** a) $\gamma$ from each measurement and their mean; b) a comparison with the known value and the shape of the graph of $F$ against $\tfrac{1}{r^2}$
 **Principle:** The spheres are spherically symmetric, so $F = \gamma \tfrac{M m}{r^2}$, when $r$ is the distance between the centres. Solving for $\gamma$ gives a value from each measurement, and the random variation is reduced by taking the mean of the values.
 **Reading the graph:** From each row of the table the distance $r$ and the force $F$ are read. After this the units are converted to SI units.
-**Formula:** $\gamma = \dfrac{F r^2}{M m}$ and the mean $\gamma_\text{av} = \dfrac{\gamma_1 + \gamma_2 + \gamma_3 + \gamma_4}{4}$
+**Formula:** $$\begin{aligned} F &= \gamma\dfrac{Mm}{r^2} \\ \gamma &= \dfrac{F r^2}{M m} \\ \gamma_\text{av} &= \dfrac{\gamma_1 + \gamma_2 + \gamma_3 + \gamma_4}{4} \end{aligned}$$
 **Conversions:** $m = 20.0\,\text{g} = 0.0200\,\text{kg}$; $r = 4.0\,\text{cm} = 0.040\,\text{m}$ and similarly for the others; $F = 1.29\,\text{nN} = 1.29 \cdot 10^{-9}\,\text{N}$ and similarly for the others. The product is $M m = 1.50\,\text{kg} \cdot 0.0200\,\text{kg} = 0.0300\,\text{kg}^2$.
 **Substitution:**
 ```latex
@@ -273,7 +273,7 @@ The mean is close to the known value, so the measurement supports the law of gra
 **Find:** a) the value of the product $g\,(R + h)^2$ in each row and the mean; b) which quantity the product corresponds to and what its constancy shows
 **Principle:** By the law of gravitation $g = \gamma \tfrac{M}{r^2}$, when $r = R + h$ is the distance from the centre of the Earth. If this holds, the product $g\,r^2$ is equal to $\gamma M$ at all heights.
 **Reading the graph:** From the table the height and the field strength are read. The distance from the centre is $r = R + h$.
-**Formula:** $g\,r^2 = g\,(R + h)^2$ and the mean $\dfrac{p_1 + p_2 + p_3 + p_4 + p_5}{5}$, where $p$ is the product
+**Formula:** $$\begin{aligned} m g &= \gamma\dfrac{Mm}{r^2} \\ g &= \gamma\dfrac{M}{r^2} \\ g\,r^2 &= \gamma M \\ p &= g\,(R + h)^2 \\ p_\text{av} &= \dfrac{p_1 + p_2 + p_3 + p_4 + p_5}{5} \end{aligned}$$
 **Conversions:** $R = 6378\,\text{km} = 6.378 \cdot 10^{6}\,\text{m}$; $h = 400\,\text{km} = 4.00 \cdot 10^{5}\,\text{m}$ and similarly for the other heights. The distances $r$ are $6.378 \cdot 10^{6}\,\text{m}$, $6.778 \cdot 10^{6}\,\text{m}$, $7.378 \cdot 10^{6}\,\text{m}$, $8.378 \cdot 10^{6}\,\text{m}$ and $9.378 \cdot 10^{6}\,\text{m}$.
 **Substitution:**
 ```latex
@@ -297,7 +297,7 @@ Its staying approximately constant shows that $g$ is inversely proportional to t
 **Given:** $g = 9.81\,\text{m/s}^2$, mean radius of the Earth $R = 6371\,\text{km}$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$; densities of rocks: granite $2700\,\text{kg/m}^3$, basalt $3000\,\text{kg/m}^3$, sandstone $2400\,\text{kg/m}^3$
 **Find:** a) the mass $M$ of the Earth; b) the mean density $\rho$ of the Earth; c) whether the Earth can consist entirely of the rocks of the table and what this tells about its interior
 **Principle:** The Earth is spherically symmetric, so on the surface $g = \gamma \tfrac{M}{R^2}$, from which the mass can be solved. The mean density is the mass divided by the volume of the sphere $V = \tfrac{4}{3}\pi R^3$. The product $g R^2$ is equal to $\gamma M$. Finally the mean density is compared with the densities of the rocks of the crust.
-**Formula:** $M = \dfrac{g R^2}{\gamma}$ and $\rho = \dfrac{M}{V} = \dfrac{M}{\tfrac{4}{3}\pi R^3}$
+**Formula:** $$\begin{aligned} m g &= \gamma\dfrac{Mm}{R^2} \\ M &= \dfrac{g R^2}{\gamma} \\ V &= \tfrac{4}{3}\pi R^3 \\ \rho &= \dfrac{M}{V} \\ &= \dfrac{M}{\tfrac{4}{3}\pi R^3} \end{aligned}$$
 **Conversions:** $R = 6371\,\text{km} = 6371 \cdot 10^{3}\,\text{m} = 6.371 \cdot 10^{6}\,\text{m}$
 **Substitution:** Part a:
 ```latex
@@ -324,7 +324,7 @@ The real mean density is almost twice as great: $\tfrac{5510}{3000} \approx 1.8$
 **Principle:** The person moves along a circular path, so they have a centripetal acceleration $a_\text{n} = \tfrac{v^2}{R}$ towards the centre of the Earth, and $v = \tfrac{2\pi R}{T}$. The positive direction is chosen towards the centre.
 
 The forces on the person are the gravitational force $mg$ towards the centre and the support force $N$ of the scale away from the centre. The net force $mg - N$ towards the centre is equal to $m a_\text{n}$. The reading of the scale is the magnitude of the support force $N$.
-**Formula:** $a_\text{n} = \dfrac{(2\pi R / T)^2}{R}$ and $N = m\,(g - a_\text{n})$. The same formula works in part b when $T$ is replaced by the period $T_\text{b}$.
+**Formula:** $$\begin{aligned} v &= \dfrac{2\pi R}{T} \\ a_\text{n} &= \dfrac{v^2}{R} = \dfrac{(2\pi R / T)^2}{R} \\ m g - N &= m a_\text{n} \\ N &= m\,(g - a_\text{n}) \end{aligned}$$ The same formula works in part b when $T$ is replaced by the period $T_\text{b}$.
 **Conversions:** $T = 24.0\,\text{h} = 24.0 \cdot 3600\,\text{s} = 86\,400\,\text{s}$; $T_\text{b} = 6.0\,\text{h} = 6.0 \cdot 3600\,\text{s} = 21\,600\,\text{s}$; $R = 6378\,\text{km} = 6.378 \cdot 10^{6}\,\text{m}$
 **Substitution:** Part a, when $v = \tfrac{2\pi R}{T}$:
 ```latex
@@ -402,7 +402,7 @@ The force is equally great on both, and the larger mass of A makes it accelerate
 **Find:** the gravitational force $F$ of Jupiter on the probe in the unit $\text{kN}$
 **Principle:** The strength of the gravitational field decreases with the square of the distance, and the distance is measured from the centre of the planet: $r = R + h$. When the field strength at the probe is known, the force is $F = mg$.
 **Reading the figure:** The arrow of Jupiter has the label $24.8\,\text{m/s}^2$, so on the surface $g_0 = 24.8\,\text{m/s}^2$.
-**Formula:** $g = g_0\left(\dfrac{R}{R + h}\right)^2$ and $F = mg$
+**Formula:** $$\begin{aligned} g_0 &= \gamma\dfrac{M}{R^2} \\ g &= \gamma\dfrac{M}{(R + h)^2} \\ \dfrac{g}{g_0} &= \left(\dfrac{R}{R + h}\right)^2 \\ g &= g_0\left(\dfrac{R}{R + h}\right)^2 \\ F &= mg \end{aligned}$$
 **Conversions:** $r = R + h = 7.15 \cdot 10^{7}\,\text{m} + 7.15 \cdot 10^{7}\,\text{m} = 1.430 \cdot 10^{8}\,\text{m} = 2R$; finally $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $g = 24.8\,\text{m/s}^2\cdot\left(\dfrac{7.15 \cdot 10^{7}\,\text{m}}{1.430 \cdot 10^{8}\,\text{m}}\right)^2 = 24.8\,\text{m/s}^2\cdot\dfrac{1}{4} = 6.20\,\text{m/s}^2$ and $F = 850\,\text{kg}\cdot 6.20\,\text{m/s}^2 = 5270\,\text{N} = 5.27\,\text{kN}$
 **Answer:** $5.27\,\text{kN}$, three significant figures like the value $24.8\,\text{m/s}^2$ in the figure and the radius. The value in the figure holds at the equatorial radius, so the same radius is used.

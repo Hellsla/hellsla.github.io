@@ -12,7 +12,7 @@
 **Given:** distance of the tip from the axis $r = 0.20\,\text{m}$, rotation frequency $f = 15\,\tfrac{1}{\text{s}}$
 **Find:** the speed $v$ of the tip of the blade in $\text{m/s}$
 **Principle:** The tip of the blade is in uniform circular motion whose radius is the distance of the tip from the axis. In every revolution the tip travels the distance $2\pi r$, and there are $f$ revolutions per second, so the distance travelled per second is $2\pi r f$.
-**Formula:** $v = 2\pi r f$
+**Formula:** $$\begin{aligned} v &= \dfrac{2\pi r}{T} \\ T &= \dfrac{1}{f} \\ v &= 2\pi r f \end{aligned}$$
 **Conversions:** None needed: $\text{m} \cdot \tfrac{1}{\text{s}} = \text{m/s}$.
 **Substitution:** $v = 2\pi \cdot 0.20\,\text{m} \cdot 15\,\tfrac{1}{\text{s}} = 1.257\,\text{m} \cdot 15\,\tfrac{1}{\text{s}} = 18.85\,\text{m/s}$
 **Answer:** $19\,\text{m/s}$, two significant figures like the radius $0.20\,\text{m}$ and the rotation frequency $15\,\tfrac{1}{\text{s}}$.
@@ -34,7 +34,7 @@
 **Principle:** When the string breaks, no force acts on the puck horizontally, so the puck continues straight with the velocity it had at the moment of the break. The velocity is along the tangent of the path, that is, perpendicular to the radius, so the puck moves along the tangent the distance $s = vt$.
 
 From the centre to the point of the break the distance is $r$, and from there onwards perpendicular to it the distance is $s$, so by the Pythagorean theorem $d^2 = r^2 + s^2$.
-**Formula:** $d = \sqrt{r^2 + (vt)^2}$
+**Formula:** $$\begin{aligned} s &= vt \\ d^2 &= r^2 + s^2 \\ d &= \sqrt{r^2 + (vt)^2} \end{aligned}$$
 **Conversions:** None needed: the radius is in metres, the time in seconds and the speed in $\text{m/s}$.
 **Substitution:** $d = \sqrt{(1.5\,\text{m})^2 + (3.0\,\text{m/s} \cdot 2.0\,\text{s})^2} = \sqrt{2.25\,\text{m}^2 + 36\,\text{m}^2} = 6.185\,\text{m}$
 **Answer:** $6.2\,\text{m}$, two significant figures like the data $1.5\,\text{m}$, $3.0\,\text{m/s}$ and $2.0\,\text{s}$.
@@ -54,7 +54,7 @@ From the centre to the point of the break the distance is $r$, and from there on
 **Given:** rotation frequency $f = 45\,\tfrac{1}{\text{min}}$, distance of the edge from the centre $r = 8.5\,\text{cm}$
 **Find:** the speed $v$ of the edge of the record in $\text{m/s}$
 **Principle:** The edge of the record is in uniform circular motion whose radius is the distance of the edge from the centre. In every revolution the edge travels the distance $2\pi r$, and there are $f$ revolutions per unit of time.
-**Formula:** $v = 2\pi r f$
+**Formula:** $$\begin{aligned} v &= \dfrac{2\pi r}{T} \\ T &= \dfrac{1}{f} \\ v &= 2\pi r f \end{aligned}$$
 **Conversions:** $r = 8.5\,\text{cm} = 8.5 \cdot 0.01\,\text{m} = 0.085\,\text{m}$ and $f = 45\,\tfrac{1}{\text{min}} = \dfrac{45}{60\,\text{s}} = 0.75\,\tfrac{1}{\text{s}}$
 **Substitution:** $v = 2\pi \cdot 0.085\,\text{m} \cdot 0.75\,\tfrac{1}{\text{s}} = 0.5341\,\text{m} \cdot 0.75\,\tfrac{1}{\text{s}} = 0.4006\,\text{m/s}$
 **Answer:** $0.40\,\text{m/s}$, two significant figures like the radius $8.5\,\text{cm}$ and the rotation frequency $45\,\tfrac{1}{\text{min}}$.
@@ -64,7 +64,7 @@ From the centre to the point of the break the distance is $r$, and from there on
 **Given:** diameter $d = 40\,\text{m}$, speed of the gondola $v = 0.35\,\text{m/s}$
 **Find:** the period $T$ in minutes
 **Principle:** The gondola is in uniform circular motion whose radius is half of the diameter. The speed is the distance $2\pi r$ of one revolution divided by the period, so the period is obtained by solving it from the formula of the speed.
-**Formula:** $v = \dfrac{2\pi r}{T}$, so $T = \dfrac{2\pi r}{v}$, where $r = \dfrac{d}{2}$
+**Formula:** $$\begin{aligned} v &= \dfrac{2\pi r}{T} \\ T &= \dfrac{2\pi r}{v} \\ r &= \dfrac{d}{2} \end{aligned}$$
 **Conversions:** $r = \dfrac{40\,\text{m}}{2} = 20\,\text{m}$. Finally seconds are converted to minutes by substituting $1\,\text{s} = \tfrac{1}{60}\,\text{min}$.
 **Substitution:** $T = \dfrac{2\pi \cdot 20\,\text{m}}{0.35\,\text{m/s}} = \dfrac{125.66\,\text{m}}{0.35\,\text{m/s}} = 359.0\,\text{s} = 359.0 \cdot \tfrac{1}{60}\,\text{min} = 5.98\,\text{min}$
 **Answer:** $6.0\,\text{min}$, two significant figures like the speed $0.35\,\text{m/s}$ and the diameter $40\,\text{m}$.
@@ -74,7 +74,7 @@ From the centre to the point of the break the distance is $r$, and from there on
 **Given:** distance from the axis $r = 9.5\,\text{cm}$, speed $v = 45\,\text{m/s}$
 **Find:** the rotation frequency $f$ in $\tfrac{1}{\text{min}}$
 **Principle:** The bottom of the test tube is in uniform circular motion. In a second it travels the distance $v$, and one revolution is $2\pi r$, so the number of revolutions per second is the distance divided by the length of one revolution.
-**Formula:** $v = 2\pi r f$, so $f = \dfrac{v}{2\pi r}$
+**Formula:** $$\begin{aligned} v &= \dfrac{2\pi r}{T} \\ T &= \dfrac{1}{f} \\ v &= 2\pi r f \\ f &= \dfrac{v}{2\pi r} \end{aligned}$$
 **Conversions:** $r = 9.5\,\text{cm} = 9.5 \cdot 0.01\,\text{m} = 0.095\,\text{m}$. Finally $1\,\tfrac{1}{\text{s}} = \tfrac{1}{\frac{1}{60}\,\text{min}} = 60\,\tfrac{1}{\text{min}}$.
 **Substitution:** $f = \dfrac{45\,\text{m/s}}{2\pi \cdot 0.095\,\text{m}} = \dfrac{45\,\text{m/s}}{0.5969\,\text{m}} = 75.39\,\tfrac{1}{\text{s}} = 75.39 \cdot 60\,\tfrac{1}{\text{min}} = 4523\,\tfrac{1}{\text{min}}$
 **Answer:** about $4.5 \cdot 10^{3}\,\tfrac{1}{\text{min}}$, that is, $4500$ revolutions per minute, two significant figures like the speed $45\,\text{m/s}$ and the radius $9.5\,\text{cm}$.
@@ -84,7 +84,7 @@ From the centre to the point of the break the distance is $r$, and from there on
 **Given:** distance of the tip $r_1 = 52\,\text{m}$ and speed $v_1 = 65\,\text{m/s}$, distance of the other point $r_2 = 20\,\text{m}$
 **Find:** the speed $v_2$ of the point in $\text{m/s}$
 **Principle:** The blade is rigid, so all its points complete a revolution in the same time $T$. By the formula $v = \tfrac{2\pi r}{T}$ the speed is then directly proportional to the distance from the axis.
-**Formula:** $T = \dfrac{2\pi r_1}{v_1} = \dfrac{2\pi r_2}{v_2}$, so $v_2 = \dfrac{r_2}{r_1}\, v_1$
+**Formula:** $$\begin{aligned} v_1 &= \dfrac{2\pi r_1}{T} \\ v_2 &= \dfrac{2\pi r_2}{T} \\ \dfrac{v_2}{v_1} &= \dfrac{r_2}{r_1} \\ v_2 &= \dfrac{r_2}{r_1}\, v_1 \end{aligned}$$
 **Conversions:** None needed: the unit of the distances cancels, and the speed is already in $\text{m/s}$.
 **Substitution:** $v_2 = \dfrac{20\,\text{m}}{52\,\text{m}} \cdot 65\,\text{m/s} = 0.3846 \cdot 65\,\text{m/s} = 25.0\,\text{m/s}$
 **Answer:** $25\,\text{m/s}$, two significant figures like the distances and the speed of the tip.
@@ -94,7 +94,7 @@ From the centre to the point of the break the distance is $r$, and from there on
 **Given:** inner arc $r_1 = 36.5\,\text{m}$, speed of the inner runner $v_1 = 7.0\,\text{m/s}$, outer arc $r_2 = 40.2\,\text{m}$; the arcs are concentric semicircles
 **Find:** the speed $v_2$ of the outer runner in $\text{m/s}$
 **Principle:** Runners who run side by side are all the time on the same straight line through the centre, so they run the semicircle in the same time $t$. Each is in uniform circular motion, and the distance of half a revolution is $\pi r$. When the time is the same, the speed is directly proportional to the radius.
-**Formula:** $t = \dfrac{\pi r_1}{v_1} = \dfrac{\pi r_2}{v_2}$, so $v_2 = \dfrac{r_2}{r_1}\, v_1$
+**Formula:** $$\begin{aligned} v_1 &= \dfrac{\pi r_1}{t} \\ v_2 &= \dfrac{\pi r_2}{t} \\ \dfrac{v_2}{v_1} &= \dfrac{r_2}{r_1} \\ v_2 &= \dfrac{r_2}{r_1}\, v_1 \end{aligned}$$
 **Conversions:** None needed: the unit of the radii cancels.
 **Substitution:** $v_2 = \dfrac{40.2\,\text{m}}{36.5\,\text{m}} \cdot 7.0\,\text{m/s} = 1.1014 \cdot 7.0\,\text{m/s} = 7.710\,\text{m/s}$
 **Answer:** $7.7\,\text{m/s}$, two significant figures like the speed of the inner runner $7.0\,\text{m/s}$.
@@ -108,7 +108,7 @@ In a race the starting positions of the outer lanes are staggered forwards so th
 **Principle:** The speed stays the same, but the velocity is always along the tangent of the path, perpendicular to the radius. In a quarter of a revolution the radius turns $90^\circ$, so the velocity also turns $90^\circ$: $\overline{v}_1$ and $\overline{v}_2$ are perpendicular to each other.
 
 When they are drawn from the same point, the change $\Delta\overline{v} = \overline{v}_2 - \overline{v}_1$ is the hypotenuse of a right triangle whose legs are $v$ and $v$.
-**Formula:** $|\Delta\overline{v}|^2 = v^2 + v^2$, so $|\Delta\overline{v}| = \sqrt{2}\, v$
+**Formula:** $$\begin{aligned} |\Delta\overline{v}|^2 &= v^2 + v^2 \\ |\Delta\overline{v}| &= \sqrt{2}\, v \end{aligned}$$
 **Conversions:** $v = 36\,\tfrac{\text{km}}{\text{h}} = \dfrac{36 \cdot 1000\,\text{m}}{3600\,\text{s}} = 10\,\text{m/s}$
 **Substitution:** $|\Delta\overline{v}| = \sqrt{2} \cdot 10\,\text{m/s} = 14.14\,\text{m/s}$
 **Answer:** $14\,\text{m/s}$, two significant figures like the speed $36\,\text{km/h}$.
@@ -120,7 +120,7 @@ When they are drawn from the same point, the change $\Delta\overline{v} = \overl
 **Principle:** The chain moves on the rim of both sprockets at the same speed $v_\text{c}$, so $2\pi r_\text{f} f_\text{f} = 2\pi r_\text{r} f_\text{r}$. The rear wheel turns at the same frequency $f_\text{r}$ as the rear sprocket.
 
 When the tyre does not slip, the point of the tyre touching the ground is momentarily at rest relative to the ground, so in one revolution the bicycle advances the circumference $2\pi R$ of the tyre, and the speed is $u = 2\pi R f_\text{r}$.
-**Formula:** $f_\text{r} = \dfrac{r_\text{f}}{r_\text{r}}\, f_\text{f}$ and $u = 2\pi R f_\text{r}$, so $u = 2\pi R\, \dfrac{r_\text{f}}{r_\text{r}}\, f_\text{f}$
+**Formula:** $$\begin{aligned} v_\text{c} &= 2\pi r_\text{f} f_\text{f} \\ v_\text{c} &= 2\pi r_\text{r} f_\text{r} \\ f_\text{r} &= \dfrac{r_\text{f}}{r_\text{r}}\, f_\text{f} \\ u &= 2\pi R f_\text{r} \\ u &= 2\pi R\, \dfrac{r_\text{f}}{r_\text{r}}\, f_\text{f} \end{aligned}$$
 **Conversions:** The unit of the radii of the sprockets cancels. Finally $1\,\text{m/s} = \dfrac{0.001\,\text{km}}{\frac{1}{3600}\,\text{h}} = 3.6\,\tfrac{\text{km}}{\text{h}}$.
 **Substitution:** $f_\text{r} = \dfrac{10.0\,\text{cm}}{4.0\,\text{cm}} \cdot 1.0\,\tfrac{1}{\text{s}} = 2.5\,\tfrac{1}{\text{s}}$, $u = 2\pi \cdot 0.34\,\text{m} \cdot 2.5\,\tfrac{1}{\text{s}} = 5.341\,\text{m/s} = 5.341 \cdot 3.6\,\tfrac{\text{km}}{\text{h}} = 19.23\,\tfrac{\text{km}}{\text{h}}$
 **Answer:** $19\,\text{km/h}$, two significant figures like the radius of the rear sprocket $4.0\,\text{cm}$ and the radius of the rear wheel $0.34\,\text{m}$.
@@ -224,7 +224,7 @@ In the data the circumference grows farther away, but the period grows even more
 **Given:** diameter of the tyre $d = 64\,\text{cm}$, rotation frequency $f = 8.0\,\tfrac{1}{\text{s}}$; the result of the student $32\,\text{m/s}$
 **Find:** the mistake of the student and the correct speed $v$ of the rim of the tyre in $\text{m/s}$
 **Principle:** The formula $v = 2\pi r f$ needs the radius $r$ of the path. The path of the rim of the tyre is a circle whose radius is half of the diameter, $r = \tfrac{d}{2}$. The student substituted the diameter in place of the radius into the formula.
-**Formula:** $v = 2\pi r f$, $\quad r = \dfrac{d}{2}$
+**Formula:** $$\begin{aligned} v &= \dfrac{2\pi r}{T} \\ T &= \dfrac{1}{f} \\ v &= 2\pi r f \\ r &= \dfrac{d}{2} \end{aligned}$$
 **Conversions:** $d = 64\,\text{cm} = 0.64\,\text{m}$, so $r = \dfrac{0.64\,\text{m}}{2} = 0.32\,\text{m}$
 **Substitution:** Substituting into the formula $v = 2\pi r f$
 ```latex
@@ -244,7 +244,7 @@ v &= 2\pi \cdot 0.32\,\text{m} \cdot 8.0\,\tfrac{1}{\text{s}} \\
 The path of a place is a circle of latitude whose radius is $r = R\cos\varphi$: the radius $R$ drawn from the centre of the Earth to the place makes the angle $\varphi$ with the plane of the equator, and the distance of the place from the axis is the part of this radius in the direction of the equator, $R\cos\varphi$.
 
 A rocket launched eastwards gets the speed of the place as its initial speed.
-**Formula:** $r = R\cos\varphi$, $\quad v = \dfrac{2\pi r}{T}$
+**Formula:** $$\begin{aligned} r &= R\cos\varphi \\ v &= \dfrac{2\pi r}{T} \\ v &= \dfrac{2\pi R\cos\varphi}{T} \end{aligned}$$
 **Conversions:** $R = 6371\,\text{km} = 6.371 \cdot 10^{6}\,\text{m}$ and $7.7\,\text{km/s} = 7700\,\text{m/s}$
 **Substitution:** The radii of the circles of latitude are $r_{\text{Kourou}} = 6.371 \cdot 10^{6}\,\text{m} \cdot \cos 5.2\,{}^\circ = 6.345 \cdot 10^{6}\,\text{m}$, $r_{\text{Canaveral}} = 5.599 \cdot 10^{6}\,\text{m}$ and $r_{\text{Plesetsk}} = 2.922 \cdot 10^{6}\,\text{m}$. The speeds are
 ```latex
@@ -280,7 +280,7 @@ At the pole the radius is zero and so is the speed, so the speed decreases as th
 The number of turns of the groove is obtained by dividing the growth of the radius of the groove by the spacing of the turns.
 
 When the radius grows steadily, the length of the groove is the number of turns times the circumference of the circle of the mean radius. At a constant speed the playing time is the length of the groove divided by the speed.
-**Formula:** $f = \dfrac{v}{2\pi r}$, $\quad N = \dfrac{r_2 - r_1}{\Delta r}$, $\quad s = N \cdot 2\pi r_{\text{av}}$, $\quad t = \dfrac{s}{v}$
+**Formula:** $$\begin{aligned} v &= 2\pi r f \\ f &= \dfrac{v}{2\pi r} \\ N &= \dfrac{r_2 - r_1}{\Delta r} \\ s &= N \cdot 2\pi r_{\text{av}} \\ t &= \dfrac{s}{v} \end{aligned}$$
 **Conversions:** $r_1 = 25\,\text{mm} = 0.025\,\text{m}$, $r_2 = 0.058\,\text{m}$ and the spacing of the turns $\Delta r = 1.6\,\mu\text{m} = 1.6 \cdot 10^{-6}\,\text{m} = 0.0016\,\text{mm}$. The rotation frequency is converted from $\tfrac{1}{\text{s}}$ to $\tfrac{1}{\text{min}}$ by multiplying by $60$.
 **Substitution:** Part a):
 ```latex
@@ -337,7 +337,7 @@ There are $20\,625$ turns and the playing time is $74.7\,\text{min}$, so the mea
 **Find:** the difference $v_\text{B} - v_\text{A}$ of the orbital speeds in the unit $\text{m/s}$
 **Principle:** Every point of a rigid carousel has the same frequency, so the orbital speed of a point is $v = 2\pi r f$ and the points differ only by their radius.
 **Reading the figure:** The dimension lines show $r_\text{A} = 0.60\,\text{m}$ and $r_\text{B} = 1.80\,\text{m}$, both measured from the centre.
-**Formula:** $\Delta v = v_\text{B} - v_\text{A} = 2\pi f\,(r_\text{B} - r_\text{A})$
+**Formula:** $$\begin{aligned} v_\text{A} &= 2\pi f r_\text{A} \\ v_\text{B} &= 2\pi f r_\text{B} \\ \Delta v &= v_\text{B} - v_\text{A} \\ \Delta v &= 2\pi f\,(r_\text{B} - r_\text{A}) \end{aligned}$$
 **Conversions:** $f = 20\,\tfrac{1}{\text{min}} = \dfrac{20}{60\,\text{s}} = 0.3333\,\tfrac{1}{\text{s}}$
 **Substitution:**
 

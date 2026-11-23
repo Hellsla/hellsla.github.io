@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 0cac72ac69c52cc1
-ROUND: 1
+CONTENT-HASH: 17ed22ef1a49baa7
+none
 
 ## Blocking
+- none
 
 ## Polish
+- [Minor] solutions.md 8-17 (neljä jousta), Kaava — `\Delta F` appears first in `4\,\Delta F = \Delta m\, g` without a name; Periaate gives `F_2 - F_1`. Add "Yhden jousen voiman lisäys on $\Delta F = F_2 - F_1$." to Periaate.
+- [Minor] solutions.md 8-? (oppilaan virhe, `L - L_0`) — the last Kaava row `k = \tfrac{F_\text{v}}{x} = \tfrac{mg}{L - L_0}` holds two `=` on one row; keep one equation per row (`k = F_v/x` and then `k = mg/(L - L_0)` on its own row).
+- [Minor] Stacked small fractions for units in Sijoitus (`\tfrac{\text{N}}{\text{m}}`) are unchanged; legible.
 
 ## Checked
-- Delta: solutions.md only; the diff splits long Mallivastaus/Vastaus paragraphs into two, same words and order, no formula changed.
-- Opened lesson-folder capture fy5-8-open-exercises-L2-1280-3.png (neighbouring solution blocks) at 1280 px: split paragraphs render as separate blocks inside the solution card, spacing normal, no clipping, no gap, maths intact.
-- Hash matched the stamp of the captures (exercises 0cac72ac69c52cc1); run again at the end: 0cac72ac69c52cc1.
+- Delta, Kaava rewrites in solutions.md (defining law first, then the solved form; Sijoitus unchanged). Opened open-exercises-1280-3 (8-3, 8-4 start), L2-1280-3 (8-9 end, 8-12 graph with its Kaava start), L3-1280-1 (8-17), L3-1280-2 (8-17 end, 8-18 Kaava start), L3-1280-4 (8-? two springs with force diagram).
+- Layout survived at 1280 px with solutions open: rows aligned at `=`, one equation per row (except the note above), no clipping or overlap, units upright with thin space; force diagram colours and `\overline{F}` labels unchanged and separate from the scalar Kaava rows.
+- Not opened: the energy-difference and arrow-loss Kaava (5 rows), the 8-? two-spring energy comparison.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

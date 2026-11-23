@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 682917e1074659db
-SCOPE: delta added-exercise from 23f25874b515562a base 81db4a6fd727
+CONTENT-HASH: 93d3c3e0471d2a02
+none
 
 ## Blocking
 
 ## Polish
+- content/fi/FY5/fy5-1/exercises/solutions.md:149 — L2-06 Kaava still splits the last row by hand inside the bracket (`m_B r_B \\ &\qquad - m_C r_C`) — write it on one row and let the layout wrap it (carried over from the previous round, not part of this diff).
 
 ## Checked
-- Hash oli sama alussa ja lopussa. Arvioin vain tehtävän L1-10 (kierros 3).
-- Laskin uudelleen figures.py:n datasta: P on 4 ruutua oikealla ja 3 ylempänä, joten OP = √(4² + 3²) = 5 ruutua = 0,50 m. Sauvaa vastaan kohtisuoran voiman varsi on koko sauva, joten M = 30 N · 0,50 m = 15 Nm. Tulos on sama kuin answers.py:ssä ja exercises.json:ssa.
-- Toistoa ei ole: L1-04 lukee samasta kuvasta vaakavoiman varren (3 ruutua). L1-10 lukee sauvan pituuden (5 ruutua) ja käyttää uutta voiman suuntaa. Edellisen kierroksen huoli on siis poistunut.
-- Merkitsevät numerot: 30 N:ssa on kaksi merkitsevää numeroa ja vastauksessa 15 Nm samoin. Ruudukosta luettu pituus on tarkka, ja toleranssi 2 % sopii.
-- Ratkaisussa on kaikki seitsemän osaa, ja r = OP perustellaan symbolisesti ennen sijoitusta. Järkevyystarkistus vertaa kuvan vaakavoimaan (0,30 m, 9,0 Nm), ja tarkistus on oikein.
-- Kuva ja sen kuvaus antavat tiedot, jotka tehtävä tarvitsee, eivätkä ne paljasta vastausta.
+- Hash the same at the start and the end (93d3c3e0471d2a02). Judged only the diff: L2-07 Kaava now defines $d$ (mitattu pituus) and $e$ (matka reunasta akselille) before the aligned block.
+- The definitions match the Annettu line and the task text: $d = 0{,}270\,\text{m}$ from the outer edge to the hand, $e = 0{,}030\,\text{m}$ from the edge to the axis towards the hand, so $r = d - e$ is right (the edge lies beyond the axis).
+- Block $r = d - e$, $M = Fr$, $M = F(d-e)$ is symbolic before Sijoitus, which substitutes the same symbols.
+- Recomputed in one script with my own formulas: $r = 0{,}240\,\text{m}$, $M = 21{,}6\,\text{Nm}$; answers.py and exercises.json agree (21.6 Nm, tolerance 2 %). Re-ran all 17 numeric answers: all agree.
+- The previous round's finding is fixed; nothing else in the set changed.

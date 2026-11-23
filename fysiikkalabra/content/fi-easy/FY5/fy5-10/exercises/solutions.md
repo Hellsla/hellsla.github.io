@@ -12,7 +12,7 @@
 **Annettu:** taajuus $f = 440\,\text{Hz}$, äänen nopeus ilmassa $v = 343\,\text{m/s}$
 **Kysytty:** aallonpituus $\lambda$
 **Periaate:** Ääni on ilmassa etenevä pitkittäinen aalto. Sekin noudattaa aaltoliikkeen perusyhtälöä: yhden jaksonajan aikana ääni etenee yhden aallonpituuden. Taajuus on kaiuttimen kalvon värähtelyn taajuus.
-**Kaava:** $v = f\lambda$, josta $\lambda = \dfrac{v}{f}$
+**Kaava:** $$\begin{aligned} v &= f\lambda \\ \lambda &= \dfrac{v}{f} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Yksiköt menevät näin: $\tfrac{\text{m/s}}{\text{Hz}} = \tfrac{\text{m/s}}{1/\text{s}} = \text{m}$.
 **Sijoitus:** $\lambda = \dfrac{343\,\text{m/s}}{440\,\text{s}^{-1}} = 0{,}7795\,\text{m}$
 **Vastaus:** $0{,}780\,\text{m}$. Vastauksessa on kolme merkitsevää numeroa, koska nopeudessa $343\,\text{m/s}$ ja taajuudessa $440\,\text{Hz}$ on kolme.
@@ -22,7 +22,7 @@
 **Annettu:** aallon nopeus $v = 6{,}0\,\text{m/s}$, harjojen väli eli aallonpituus $\lambda = 1{,}5\,\text{m}$
 **Kysytty:** taajuus $f$
 **Periaate:** Kahden peräkkäisen harjan väli on aallonpituus. Narun jokainen kohta värähtelee samalla taajuudella kuin käsi. Siksi aallon taajuus on heilutuksen taajuus. Sen saa perusyhtälöstä.
-**Kaava:** $v = f\lambda$, josta $f = \dfrac{v}{\lambda}$
+**Kaava:** $$\begin{aligned} v &= f\lambda \\ f &= \dfrac{v}{\lambda} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Yksiköt menevät näin: $\tfrac{\text{m/s}}{\text{m}} = \text{s}^{-1} = \text{Hz}$.
 **Sijoitus:** $f = \dfrac{6{,}0\,\text{m/s}}{1{,}5\,\text{m}} = 4{,}0\,\text{s}^{-1} = 4{,}0\,\text{Hz}$
 **Vastaus:** $4{,}0\,\text{Hz}$. Vastauksessa on kaksi merkitsevää numeroa, koska lähtötiedoissa $6{,}0\,\text{m/s}$ ja $1{,}5\,\text{m}$ on kaksi.
@@ -42,7 +42,7 @@
 **Annettu:** aallon nopeus $v = 4{,}8\,\text{m/s}$, aallonpituus $\lambda = 1{,}2\,\text{m}$
 **Kysytty:** jaksonaika $T$
 **Periaate:** Jaksonaika on aika, jossa aalto etenee yhden aallonpituuden. Sen saa perusyhtälön muodosta $v = \tfrac{\lambda}{T}$. Jaksonaika on myös aika, jonka narun jokainen kohta käyttää yhteen täyteen värähdykseen.
-**Kaava:** $v = \dfrac{\lambda}{T}$, josta $T = \dfrac{\lambda}{v}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{\lambda}{T} \\ T &= \dfrac{\lambda}{v} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Yksiköt menevät näin: $\tfrac{\text{m}}{\text{m/s}} = \text{s}$.
 **Sijoitus:** $T = \dfrac{1{,}2\,\text{m}}{4{,}8\,\text{m/s}} = 0{,}25\,\text{s}$
 **Vastaus:** $0{,}25\,\text{s}$. Vastauksessa on kaksi merkitsevää numeroa, koska nopeudessa $4{,}8\,\text{m/s}$ ja aallonpituudessa $1{,}2\,\text{m}$ on kaksi.
@@ -63,7 +63,7 @@
 **Annettu:** $N = 18$ täyttä heilahdusta ajassa $t = 12{,}0\,\text{s}$, harjojen väli eli aallonpituus $\lambda = 1{,}40\,\text{m}$
 **Kysytty:** aallon nopeus $v$
 **Periaate:** Narun jokainen kohta värähtelee käden taajuudella. Siksi aallon taajuus on käden heilahdusten määrä sekunnissa. Nopeuden saa sitten perusyhtälöstä, koska yhden jakson aikana aalto etenee yhden aallonpituuden.
-**Kaava:** $f = \dfrac{N}{t}$ ja $v = f\lambda$, joten $v = \dfrac{N\lambda}{t}$
+**Kaava:** $$\begin{aligned} f &= \dfrac{N}{t} \\ v &= f\lambda \\ v &= \dfrac{N\lambda}{t} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Yksiköt menevät näin: $\text{s}^{-1} = \text{Hz}$ ja $\text{Hz} \cdot \text{m} = \text{m/s}$.
 **Sijoitus:** $f = \dfrac{18}{12{,}0\,\text{s}} = 1{,}5\,\text{Hz}$ ja $v = 1{,}5\,\text{s}^{-1} \cdot 1{,}40\,\text{m} = 2{,}10\,\text{m/s}$
 **Vastaus:** $2{,}10\,\text{m/s}$. Vastauksessa on kolme merkitsevää numeroa, koska ajassa $12{,}0\,\text{s}$ ja aallonpituudessa $1{,}40\,\text{m}$ on kolme. Heilahdusten määrä $18$ on laskettu lukumäärä. Se ei rajoita merkitseviä numeroita.
@@ -73,7 +73,7 @@
 **Annettu:** ilmassa $v_\text{i} = 343\,\text{m/s}$ ja $\lambda_\text{i} = 0{,}750\,\text{m}$, vedessä $v_\text{v} = 1480\,\text{m/s}$
 **Kysytty:** aallonpituus vedessä $\lambda_\text{v}$
 **Periaate:** Kun aalto siirtyy väliaineesta toiseen, taajuus säilyy. Ilman värähtely rajapinnalla heiluttaa nimittäin vettä samassa tahdissa. Nopeus muuttuu väliaineen mukana, joten aallonpituus muuttuu. Kummassakin väliaineessa pätee $v = f\lambda$.
-**Kaava:** $f = \dfrac{v_\text{i}}{\lambda_\text{i}}$ ja $\lambda_\text{v} = \dfrac{v_\text{v}}{f}$, joten $\lambda_\text{v} = \dfrac{v_\text{v}\lambda_\text{i}}{v_\text{i}}$
+**Kaava:** $$\begin{aligned} v_\text{i} &= f\lambda_\text{i} \\ f &= \dfrac{v_\text{i}}{\lambda_\text{i}} \\ \lambda_\text{v} &= \dfrac{v_\text{v}}{f} \\ \lambda_\text{v} &= \dfrac{v_\text{v}\lambda_\text{i}}{v_\text{i}} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Nopeudet ovat samassa yksikössä, joten niiden suhteella ei ole yksikköä. Aallonpituus on metreinä.
 **Sijoitus:** $f = \dfrac{343\,\text{m/s}}{0{,}750\,\text{m}} = 457{,}3\,\text{Hz}$ ja $\lambda_\text{v} = \dfrac{1480\,\text{m/s}}{457{,}3\,\text{s}^{-1}} = 3{,}236\,\text{m}$
 **Vastaus:** $3{,}24\,\text{m}$. Vastauksessa on kolme merkitsevää numeroa, koska lähtötiedoissa $343\,\text{m/s}$, $0{,}750\,\text{m}$ ja $1480\,\text{m/s}$ on kolme.
@@ -93,7 +93,7 @@
 **Annettu:** harja kohdassa $x_1 = 0{,}60\,\text{m}$ ja $\Delta t = 0{,}15\,\text{s}$ myöhemmin kohdassa $x_2 = 1{,}05\,\text{m}$; harja ei ole kulkenut yhtä aallonpituutta; harjojen väli $\lambda = 1{,}20\,\text{m}$
 **Kysytty:** heilutuksen taajuus $f$
 **Periaate:** Harja on aallon osa, joten se etenee aallon nopeudella $v = \tfrac{\Delta x}{\Delta t}$. Harja on kulkenut alle aallonpituuden. Siksi kuvissa on sama harja eikä jo seuraava. Harjan siirtymä ei ole narun aineen siirtymä. Narun kohdat liikkuvat vain ylös ja alas. Harja on aina siinä kohdassa, joka on sillä hetkellä ylimmässä asemassaan. Taajuuden saa perusyhtälöstä.
-**Kaava:** $v = \dfrac{x_2 - x_1}{\Delta t}$ ja $v = f\lambda$, joten $f = \dfrac{x_2 - x_1}{\lambda\,\Delta t}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{x_2 - x_1}{\Delta t} \\ v &= f\lambda \\ f &= \dfrac{v}{\lambda} \\ f &= \dfrac{x_2 - x_1}{\lambda\,\Delta t} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Kaikki pituudet ovat metreinä ja aika sekunteina.
 **Sijoitus:** $v = \dfrac{1{,}05\,\text{m} - 0{,}60\,\text{m}}{0{,}15\,\text{s}} = \dfrac{0{,}45\,\text{m}}{0{,}15\,\text{s}} = 3{,}0\,\text{m/s}$ ja $f = \dfrac{3{,}0\,\text{m/s}}{1{,}20\,\text{m}} = 2{,}5\,\text{Hz}$
 **Vastaus:** $2{,}5\,\text{Hz}$. Vastauksessa on kaksi merkitsevää numeroa, koska aika $0{,}15\,\text{s}$ ja siirtymä $0{,}45\,\text{m}$ tunnetaan kahden numeron tarkkuudella.
@@ -103,7 +103,7 @@
 **Annettu:** aikaero $\Delta t = 0{,}50\,\text{s}$, äänen nopeus teräksessä $v_\text{t} = 5100\,\text{m/s}$ ja ilmassa $v_\text{i} = 340\,\text{m/s}$
 **Kysytty:** kiskon pituus $d$
 **Periaate:** Vasaran isku synnyttää äänen sekä kiskoon että ilmaan. Aallon nopeus riippuu väliaineesta. Siksi kumpikin ääni kulkee saman matkan $d$ eri nopeudella ja saapuu eri aikaan. Teräksessä kulkenut ääni saapuu ensin. Kumpikin etenee tasaisella nopeudella, joten kulkuaika on $\tfrac{d}{v}$. Aikaero on kulkuaikojen erotus.
-**Kaava:** $\Delta t = \dfrac{d}{v_\text{i}} - \dfrac{d}{v_\text{t}}$, josta $d = \dfrac{\Delta t}{\dfrac{1}{v_\text{i}} - \dfrac{1}{v_\text{t}}}$
+**Kaava:** $$\begin{aligned} t_\text{i} &= \dfrac{d}{v_\text{i}} \\ t_\text{t} &= \dfrac{d}{v_\text{t}} \\ \Delta t &= t_\text{i} - t_\text{t} \\ \Delta t &= d\left(\dfrac{1}{v_\text{i}} - \dfrac{1}{v_\text{t}}\right) \\ d &= \dfrac{\Delta t}{\dfrac{1}{v_\text{i}} - \dfrac{1}{v_\text{t}}} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Nopeudet ovat metreinä sekunnissa ja aika sekunteina.
 **Sijoitus:** $d = \dfrac{0{,}50\,\text{s}}{\dfrac{1}{340\,\text{m/s}} - \dfrac{1}{5100\,\text{m/s}}} = \dfrac{0{,}50\,\text{s}}{0{,}002\,745\,\text{s/m}} = 182{,}1\,\text{m}$
 **Vastaus:** $1{,}8 \cdot 10^{2}\,\text{m}$ eli noin $180\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, koska aikaero $0{,}50\,\text{s}$ tunnetaan kahden numeron tarkkuudella.
@@ -114,7 +114,7 @@
 **Annettu:** viive vierustoveriin $\Delta t = 0{,}050\,\text{s}$, istuinten väli $\Delta x = 0{,}55\,\text{m}$, rivin pituus $s = 440\,\text{m}$
 **Kysytty:** aika $t$, jossa aalto kiertää katsomon kerran
 **Periaate:** Katsomon aalto on esimerkki aaltoliikkeestä. Jokainen katsoja toistaa vierustoverinsa liikkeen pienellä viiveellä. Siksi nouseminen eli häiriö etenee rivissä, vaikka katsojat pysyvät paikoillaan ja vain nousevat ja istuvat. Häiriö etenee yhden istuinvälin ajassa $\Delta t$. Sen nopeus on siis vakio. Kierrokseen kuluva aika on matka jaettuna nopeudella.
-**Kaava:** $v = \dfrac{\Delta x}{\Delta t}$ ja $s = vt$, joten $t = \dfrac{s}{v} = \dfrac{s\,\Delta t}{\Delta x}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{\Delta x}{\Delta t} \\ s &= vt \\ t &= \dfrac{s}{v} \\ t &= \dfrac{s\,\Delta t}{\Delta x} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Pituudet ovat metreinä ja aika sekunteina.
 **Sijoitus:** $v = \dfrac{0{,}55\,\text{m}}{0{,}050\,\text{s}} = 11\,\text{m/s}$ ja $t = \dfrac{440\,\text{m}}{11\,\text{m/s}} = 40\,\text{s}$
 **Vastaus:** $40\,\text{s}$. Vastauksessa on kaksi merkitsevää numeroa, koska viiveessä $0{,}050\,\text{s}$ ja istuinvälissä $0{,}55\,\text{m}$ on kaksi.
@@ -271,7 +271,7 @@ $v = f\lambda = 1{,}5\,\text{Hz} \cdot 1{,}2\,\text{m}$, eli $v = 1{,}8\,\text{m
 **Annettu:** taajuus $f = 1{,}00\,\text{kHz}$. Tangon lämpötila on $20\,{}^\circ\text{C}$. Taulukosta (MAFY, *Äänen nopeuksia eri väliaineissa: Kiinteät aineet*, rauta) äänen nopeus on $v = 5120\,\text{m/s}$.
 **Kysytty:** aallonpituus $\lambda$ metreinä
 **Periaate:** Aaltoliikkeen perusyhtälö $v = f\lambda$ pätee kaikille jaksollisille aalloille. Nopeus riippuu väliaineesta. Tässä väliaine on rauta, ja nopeus luetaan taulukosta. Taajuus tulee lähteestä. Siksi taajuudesta ja nopeudesta saadaan aallonpituus.
-**Kaava:** $v = f\lambda$, josta $\lambda = \dfrac{v}{f}$
+**Kaava:** $$\begin{aligned} v &= f\lambda \\ \lambda &= \dfrac{v}{f} \end{aligned}$$
 **Muunnokset:** $1{,}00\,\text{kHz} = 1{,}00 \cdot 1000\,\text{Hz} = 1000\,\text{Hz}$. Lisäksi $1\,\text{Hz} = 1\,\text{s}^{-1}$.
 **Sijoitus:** $\lambda = \dfrac{5120\,\text{m/s}}{1000\,\text{Hz}} = \dfrac{5120\,\text{m/s}}{1000\,\text{s}^{-1}} = 5{,}12\,\text{m}$
 **Vastaus:** $5{,}12\,\text{m}$. Vastauksessa on kolme merkitsevää numeroa, koska taulukkoarvossa $5120\,\text{m/s}$ ja taajuudessa $1{,}00\,\text{kHz}$ on kolme.
@@ -282,7 +282,7 @@ $v = f\lambda = 1{,}5\,\text{Hz} \cdot 1{,}2\,\text{m}$, eli $v = 1{,}8\,\text{m
 **Kysytty:** jaksonaika $T$
 **Periaate:** Valokuvan vaaka-akselilla on paikka. Siksi kahden peräkkäisen harjan väli on aallonpituus $\lambda$. Yhdessä jaksonajassa aalto etenee yhden aallonpituuden, joten $v = \dfrac{\lambda}{T}$.
 **Kuvaajan lukeminen:** Harjat ovat ruudukon viivoilla kohdissa $0{,}5\,\text{m}$, $2{,}0\,\text{m}$ ja $3{,}5\,\text{m}$. Kahden peräkkäisen harjan väli on $2{,}0\,\text{m} - 0{,}5\,\text{m} = 1{,}5\,\text{m}$. Sama väli on kohtien $2{,}0\,\text{m}$ ja $3{,}5\,\text{m}$ välillä. Siis $\lambda = 1{,}5\,\text{m}$. Amplitudia $4\,\text{cm}$ ei tarvita.
-**Kaava:** $v = \dfrac{\lambda}{T}$, josta $T = \dfrac{\lambda}{v}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{\lambda}{T} \\ T &= \dfrac{\lambda}{v} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Aallonpituus on metreinä ja nopeus yksikössä $\text{m/s}$.
 **Sijoitus:** $T = \dfrac{1{,}5\,\text{m}}{3{,}0\,\text{m/s}} = 0{,}50\,\text{s}$
 **Vastaus:** $0{,}50\,\text{s}$. Vastauksessa on kaksi merkitsevää numeroa, koska nopeudessa $3{,}0\,\text{m/s}$ ja kuvasta luetussa aallonpituudessa $1{,}5\,\text{m}$ on kaksi.

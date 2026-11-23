@@ -22,7 +22,7 @@
 **Given:** the meter reading, taken as the sound intensity level in a free sound field, $L = 95\,\text{dB}$, threshold of hearing $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$
 **Find:** the intensity $I$ in $\text{W/m}^2$
 **Principle:** The level is ten times the logarithm of the ratio of the intensities. The intensity is obtained by dividing the equation by $10\,\text{dB}$ and using the definition of the logarithm: if $\lg x = y$, then $x = 10^y$.
-**Formula:** $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$, so $\lg \dfrac{I}{I_0} = \dfrac{L}{10\,\text{dB}}$ and $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$
+**Formula:** $$\begin{aligned} L &= 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB} \\ \lg \dfrac{I}{I_0} &= \dfrac{L}{10\,\text{dB}} \\ I &= I_0 \cdot 10^{\,L/(10\,\text{dB})} \end{aligned}$$
 **Conversions:** Not needed: $\dfrac{L}{10\,\text{dB}} = \dfrac{95\,\text{dB}}{10\,\text{dB}} = 9.5$, the decibels cancel.
 **Substitution:** $I = 1.0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{9.5} = 3.16 \cdot 10^{-3}\,\text{W/m}^2 = 0.00316\,\text{W/m}^2$
 **Answer:** $0.0032\,\text{W/m}^2$, two significant figures, because the level is given in whole decibels.
@@ -32,7 +32,7 @@
 **Given:** sound power of the siren $P = 2.0\,\text{W}$, distance $r = 25\,\text{m}$, the sound spreads evenly in all directions and is not reflected
 **Find:** the intensity $I$ in $\text{W/m}^2$
 **Principle:** The siren acts as a point source: when the sound is neither reflected nor absorbed, the whole power passes through a spherical surface of radius $25\,\text{m}$ around the siren and is spread evenly over it.
-**Formula:** $I = \dfrac{P}{A} = \dfrac{P}{4\pi r^2}$
+**Formula:** $$\begin{aligned} I &= \dfrac{P}{A} \\ A &= 4\pi r^2 \\ I &= \dfrac{P}{4\pi r^2} \end{aligned}$$
 **Conversions:** Not needed: the power is in watts and the distance in metres.
 **Substitution:** $I = \dfrac{2.0\,\text{W}}{4\pi \cdot (25\,\text{m})^2} = \dfrac{2.0\,\text{W}}{7854\,\text{m}^2} = 2.55 \cdot 10^{-4}\,\text{W/m}^2 = 0.000255\,\text{W/m}^2$
 **Answer:** $0.00025\,\text{W/m}^2$, two significant figures like the power $2.0\,\text{W}$ and the distance $25\,\text{m}$.
@@ -42,7 +42,7 @@
 **Given:** ratio of the intensities $\dfrac{I_2}{I_1} = 100$
 **Find:** the difference in levels $L_2 - L_1$ in decibels
 **Principle:** The difference in levels depends only on the ratio of the intensities, because the threshold of hearing $I_0$ cancels when the levels are subtracted.
-**Formula:** $L_2 - L_1 = 10\,\text{dB} \cdot \lg \dfrac{I_2}{I_1}$
+**Formula:** $$\begin{aligned} L_2 - L_1 &= 10\,\text{dB} \cdot \lg \dfrac{I_2}{I_0} - 10\,\text{dB} \cdot \lg \dfrac{I_1}{I_0} \\ &= 10\,\text{dB} \cdot \lg \dfrac{I_2}{I_1} \end{aligned}$$
 **Conversions:** Not needed: the ratio is a plain number.
 **Substitution:** $L_2 - L_1 = 10\,\text{dB} \cdot \lg 100 = 10\,\text{dB} \cdot 2 = 20\,\text{dB}$
 **Answer:** $20\,\text{dB}$; the factor $100$ is exact, so the result is exact.
@@ -52,7 +52,7 @@
 **Given:** sound power of the loudspeaker $P = 0.050\,\text{W}$, distance $r = 3.0\,\text{m}$, threshold of hearing $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$; the sound spreads evenly and is not reflected
 **Find:** the sound intensity level $L$ in decibels
 **Principle:** The loudspeaker is a point source whose power is spread evenly over a spherical surface of radius $3.0\,\text{m}$. First the intensity is calculated, then it is compared with the threshold of hearing.
-**Formula:** $I = \dfrac{P}{4\pi r^2}$ and $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$, so $L = 10\,\text{dB} \cdot \lg \dfrac{P}{4\pi r^2 I_0}$
+**Formula:** $$\begin{aligned} I &= \dfrac{P}{4\pi r^2} \\ L &= 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB} \\ &= 10\,\text{dB} \cdot \lg \dfrac{P}{4\pi r^2 I_0} \end{aligned}$$
 **Conversions:** Not needed: the power is in watts and the distance in metres.
 **Substitution:** $I = \dfrac{0.050\,\text{W}}{4\pi \cdot (3.0\,\text{m})^2} = 4.42 \cdot 10^{-4}\,\text{W/m}^2$, so $L = 10\,\text{dB} \cdot \lg \dfrac{4.42 \cdot 10^{-4}\,\text{W/m}^2}{1.0 \cdot 10^{-12}\,\text{W/m}^2} = 10\,\text{dB} \cdot \lg (4.42 \cdot 10^{8}) = 86.45\,\text{dB}$
 **Answer:** $86\,\text{dB}$, in whole decibels, because the power and the distance are given to two significant figures.
@@ -62,14 +62,7 @@
 **Given:** lawn mower alone $L_1 = 85\,\text{dB}$, leaf blower alone $L_2 = 88\,\text{dB}$, threshold of hearing $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$
 **Find:** by how much the combined level $L$ is greater than $L_2$, that is $L - L_2$ in decibels
 **Principle:** The machines are independent sound sources, so their intensities add up. Decibels cannot be added, so the levels are first converted to intensities.
-**Formula:** $L - L_2 = 10\,\text{dB} \cdot \lg \dfrac{I_1 + I_2}{I_0} - L_2$, where the intensities and the combined level are
-```latex
-\begin{aligned}
-&I_1 = I_0 \cdot 10^{\,L_1/(10\,\text{dB})} \\
-&I_2 = I_0 \cdot 10^{\,L_2/(10\,\text{dB})} \\
-&L = 10\,\text{dB} \cdot \lg \dfrac{I_1 + I_2}{I_0}
-\end{aligned}
-```
+**Formula:** $$\begin{aligned} I_1 &= I_0 \cdot 10^{\,L_1/(10\,\text{dB})} \\ I_2 &= I_0 \cdot 10^{\,L_2/(10\,\text{dB})} \\ L &= 10\,\text{dB} \cdot \lg \dfrac{I_1 + I_2}{I_0} \\ L - L_2 &= 10\,\text{dB} \cdot \lg \dfrac{I_1 + I_2}{I_0} - L_2 \end{aligned}$$
 **Conversions:** Not needed: all levels are in decibels and the intensities in $\text{W/m}^2$.
 **Substitution:** $I_1 = 10^{-12}\,\text{W/m}^2 \cdot 10^{8.5} = 3.16 \cdot 10^{-4}\,\text{W/m}^2$ and $I_2 = 10^{-12}\,\text{W/m}^2 \cdot 10^{8.8} = 6.31 \cdot 10^{-4}\,\text{W/m}^2$, so $L = 10\,\text{dB} \cdot \lg (9.47 \cdot 10^{8}) = 89.76\,\text{dB}$ and $L - L_2 = 89.76\,\text{dB} - 88\,\text{dB} = 1.76\,\text{dB}$
 **Answer:** $1.8\,\text{dB}$, to two significant figures, because the levels are given in whole decibels.
@@ -79,7 +72,7 @@
 **Given:** level $L_1 = 85\,\text{dB}$ at distance $r_1 = 3.0\,\text{m}$, new distance $r_2 = 12\,\text{m}$; the sound spreads evenly and is not reflected
 **Find:** the level $L_2$ at distance $r_2$ in decibels
 **Principle:** The intensity of a point source is inversely proportional to the square of the distance, because the same power is spread over a spherical surface $4\pi r^2$. The difference in levels is obtained from the ratio of the intensities.
-**Formula:** $\dfrac{I_2}{I_1} = \dfrac{r_1^2}{r_2^2}$ and $L_2 - L_1 = 10\,\text{dB} \cdot \lg \dfrac{I_2}{I_1}$, so $L_2 = L_1 + 10\,\text{dB} \cdot \lg \dfrac{r_1^2}{r_2^2}$
+**Formula:** $$\begin{aligned} I_1 &= \dfrac{P}{4\pi r_1^2} \\ I_2 &= \dfrac{P}{4\pi r_2^2} \\ \dfrac{I_2}{I_1} &= \dfrac{r_1^2}{r_2^2} \\ L_2 - L_1 &= 10\,\text{dB} \cdot \lg \dfrac{I_2}{I_1} \\ L_2 &= L_1 + 10\,\text{dB} \cdot \lg \dfrac{r_1^2}{r_2^2} \end{aligned}$$
 **Conversions:** Not needed: both distances are in metres, and the units cancel.
 **Substitution:** $\dfrac{r_1^2}{r_2^2} = \dfrac{(3.0\,\text{m})^2}{(12\,\text{m})^2} = \dfrac{1}{16}$, so $L_2 = 85\,\text{dB} + 10\,\text{dB} \cdot \lg \dfrac{1}{16} = 85\,\text{dB} - 12.04\,\text{dB} = 72.96\,\text{dB}$
 **Answer:** $73\,\text{dB}$, in whole decibels like the initial level $85\,\text{dB}$.
@@ -89,7 +82,7 @@
 **Given:** one saw $L_1 = 85\,\text{dB}$, all saws together $L = 91\,\text{dB}$, the saws are identical and equally far from the meter
 **Find:** the number of saws $N$
 **Principle:** The intensities of independent sources add up. When $N$ identical saws are running, the intensity is $N$ times as great, so the difference in levels tells the ratio $N$ of the intensities.
-**Formula:** $L - L_1 = 10\,\text{dB} \cdot \lg \dfrac{N I_1}{I_1} = 10\,\text{dB} \cdot \lg N$, so $\lg N = \dfrac{L - L_1}{10\,\text{dB}}$ and $N = 10^{\,(L - L_1)/(10\,\text{dB})}$
+**Formula:** $$\begin{aligned} I &= N I_1 \\ L - L_1 &= 10\,\text{dB} \cdot \lg \dfrac{I}{I_1} \\ &= 10\,\text{dB} \cdot \lg N \\ \lg N &= \dfrac{L - L_1}{10\,\text{dB}} \\ N &= 10^{\,(L - L_1)/(10\,\text{dB})} \end{aligned}$$
 **Conversions:** Not needed: the levels are in decibels, and the decibels cancel.
 **Substitution:** $N = 10^{\,(91\,\text{dB} - 85\,\text{dB})/(10\,\text{dB})} = 10^{0.6} = 3.98$
 **Answer:** $4$ saws; the number is a whole number, and $3.98$ rounds to it, because the levels are given in whole decibels.
@@ -118,13 +111,7 @@ So the intensity on the street is about $10\,000$ times as great. The ratio $2$ 
 **Given:** spectators $N = 12\,000$, level of one shout at the centre of the rink $L_1 = 42\,\text{dB}$, level of the public address system alone $L_K = 80\,\text{dB}$; the shouts are equally strong and all sources are independent
 **Find:** the combined level $L$ of all the sounds in decibels
 **Principle:** The intensities of independent sources add up, the decibels do not. First the combined level of the shouts is calculated: when each shout produces the same intensity $I_1$, the intensity of the shouts is $N I_1$. Then the intensities of the shouts and of the public address system are added.
-**Formula:** shouts together $L_H = L_1 + 10\,\text{dB} \cdot \lg N$, and the whole sound
-```latex
-\begin{aligned}
-&L = 10\,\text{dB} \cdot \lg \frac{I_H + I_K}{I_0} \\
-&I = I_0 \cdot 10^{\,L/(10\,\text{dB})}
-\end{aligned}
-```
+**Formula:** $$\begin{aligned} L_H &= 10\,\text{dB} \cdot \lg \dfrac{N I_1}{I_0} \\ &= L_1 + 10\,\text{dB} \cdot \lg N \\ I_H &= I_0 \cdot 10^{\,L_H/(10\,\text{dB})} \\ I_K &= I_0 \cdot 10^{\,L_K/(10\,\text{dB})} \\ L &= 10\,\text{dB} \cdot \lg \dfrac{I_H + I_K}{I_0} \end{aligned}$$
 **Conversions:** Not needed: the levels are in decibels, $N$ is a plain number and the intensities are in $\text{W/m}^2$.
 **Substitution:** $L_H = 42\,\text{dB} + 10\,\text{dB} \cdot \lg 12\,000 = 42\,\text{dB} + 40.79\,\text{dB} = 82.79\,\text{dB}$, so $I_H = 10^{-12}\,\text{W/m}^2 \cdot 10^{8.279} = 1.90 \cdot 10^{-4}\,\text{W/m}^2$ and $I_K = 10^{-12}\,\text{W/m}^2 \cdot 10^{8} = 1.0 \cdot 10^{-4}\,\text{W/m}^2$, so $L = 10\,\text{dB} \cdot \lg \dfrac{2.90 \cdot 10^{-4}\,\text{W/m}^2}{1.0 \cdot 10^{-12}\,\text{W/m}^2} = 84.63\,\text{dB}$
 **Answer:** $85\,\text{dB}$, in whole decibels, because the levels are given in whole decibels.
@@ -134,7 +121,7 @@ So the intensity on the street is about $10\,000$ times as great. The ratio $2$ 
 **Given:** level $L_1 = 30\,\text{dB}$ at distance $r_1 = 0.50\,\text{m}$, level of the threshold of hearing $L_2 = 0\,\text{dB}$; a point source, even spreading, no reflections, absorption or background sounds
 **Find:** the distance $r_2$ at which the level is $0\,\text{dB}$, in metres
 **Principle:** The intensity of a point source is inversely proportional to the square of the distance. The difference in levels tells by what factor the intensity must decrease, and from it the ratio of the distances is obtained.
-**Formula:** $L_1 - L_2 = 10\,\text{dB} \cdot \lg \dfrac{I_1}{I_2} = 10\,\text{dB} \cdot \lg \dfrac{r_2^2}{r_1^2}$, so $\dfrac{r_2^2}{r_1^2} = 10^{\,(L_1 - L_2)/(10\,\text{dB})}$ and $r_2 = r_1 \sqrt{10^{\,(L_1 - L_2)/(10\,\text{dB})}}$
+**Formula:** $$\begin{aligned} I_1 &= \dfrac{P}{4\pi r_1^2} \\ I_2 &= \dfrac{P}{4\pi r_2^2} \\ L_1 - L_2 &= 10\,\text{dB} \cdot \lg \dfrac{I_1}{I_2} \\ &= 10\,\text{dB} \cdot \lg \dfrac{r_2^2}{r_1^2} \\ \dfrac{r_2^2}{r_1^2} &= 10^{\,(L_1 - L_2)/(10\,\text{dB})} \\ r_2 &= r_1 \sqrt{10^{\,(L_1 - L_2)/(10\,\text{dB})}} \end{aligned}$$
 **Conversions:** Not needed: the distance is in metres, and the decibels cancel.
 **Substitution:** $r_2 = 0.50\,\text{m} \cdot \sqrt{10^{\,(30\,\text{dB} - 0\,\text{dB})/(10\,\text{dB})}} = 0.50\,\text{m} \cdot \sqrt{1000} = 0.50\,\text{m} \cdot 31.6 = 15.8\,\text{m}$
 **Answer:** $16\,\text{m}$, two significant figures like the distance $0.50\,\text{m}$.
@@ -222,10 +209,7 @@ L &= 10\,\text{dB} \cdot \lg \dfrac{1.0\,\text{W/m}^2}{1.0 \cdot 10^{-12}\,\text
 **Given:** from the table $L(1.0\,\text{m}) = 86.0\,\text{dB}$ and $L(8.0\,\text{m}) = 71.9\,\text{dB}$; the distance increases by the factor $\dfrac{8.0\,\text{m}}{1.0\,\text{m}} = 8.0$
 **Find:** the difference between the measured level $L_\text{obs}$ and the prediction of the point source model $L_\text{mod}$, $L_\text{obs} - L_\text{mod}$, in decibels
 **Principle:** If the sound travelled from a point source without reflections, the intensity would be inversely proportional to the square of the distance, and the difference in levels would depend only on the ratio of the distances. The prediction is calculated from the reading at $1.0\,\text{m}$ and compared with the measurement.
-**Formula:** $\Delta L = L_\text{obs} - L_\text{mod}$, where the prediction is
-```latex
-L_\text{mod} = L_1 - 10\,\text{dB} \cdot \lg \left[\left(\dfrac{r_2}{r_1}\right)^{2}\right]
-```
+**Formula:** $$\begin{aligned} \dfrac{I_2}{I_1} &= \dfrac{r_1^2}{r_2^2} \\ L_\text{mod} - L_1 &= 10\,\text{dB} \cdot \lg \dfrac{I_2}{I_1} \\ &= -10\,\text{dB} \cdot \lg \left[\left(\dfrac{r_2}{r_1}\right)^{2}\right] \\ L_\text{mod} &= L_1 - 10\,\text{dB} \cdot \lg \left[\left(\dfrac{r_2}{r_1}\right)^{2}\right] \\ \Delta L &= L_\text{obs} - L_\text{mod} \end{aligned}$$
 **Conversions:** Not needed: the distances are in metres and the ratio has no unit.
 **Substitution:** the ratio of the distances is $8.0$, so
 ```latex
@@ -247,10 +231,7 @@ The direct sound weakens with distance, but the reflected sound does not nearly 
 **Given:** from the table the levels of the reference meter $50.0\,\text{dB}$, $60.0\,\text{dB}$, $70.0\,\text{dB}$ and $80.0\,\text{dB}$ and the readings of the phone $54.1\,\text{dB}$, $63.8\,\text{dB}$, $74.2\,\text{dB}$ and $83.9\,\text{dB}$; in addition $90.0\,\text{dB}$ and $88.6\,\text{dB}$
 **Find:** the factor $k = \dfrac{I_\text{phone}}{I_\text{ref}}$, that is, by what factor the phone overestimates the intensity
 **Principle:** The error of the phone $\Delta L = L_\text{phone} - L_\text{ref}$ is almost the same at the four lowest levels, so it is a systematic error. The difference in levels depends only on the ratio of the intensities, so the ratio of the intensities can be obtained from the mean error.
-**Formula:** $\Delta L_\text{avg} = \dfrac{\Sigma \Delta L}{4}$ and $\Delta L_\text{avg} = 10\,\text{dB} \cdot \lg k$, so
-```latex
-k = 10^{\,\Delta L_\text{avg}/(10\,\text{dB})}
-```
+**Formula:** $$\begin{aligned} \Delta L_\text{avg} &= \dfrac{\Sigma \Delta L}{4} \\ \Delta L_\text{avg} &= 10\,\text{dB} \cdot \lg k \\ \lg k &= \dfrac{\Delta L_\text{avg}}{10\,\text{dB}} \\ k &= 10^{\,\Delta L_\text{avg}/(10\,\text{dB})} \end{aligned}$$
 **Conversions:** Not needed: all levels are in decibels, and the ratio $k$ has no unit.
 **Substitution:** The errors are $4.1\,\text{dB}$, $3.8\,\text{dB}$, $4.2\,\text{dB}$ and $3.9\,\text{dB}$. Their sum is $16.0\,\text{dB}$, so
 ```latex
@@ -270,13 +251,7 @@ Result of part c): at $90.0\,\text{dB}$ the error would be expected to be $+4\,\
 **Given:** from the table the distances $5.0\,\text{m}$, $10.0\,\text{m}$, $20.0\,\text{m}$ and $40.0\,\text{m}$ and the levels $91.1\,\text{dB}$, $84.8\,\text{dB}$, $79.3\,\text{dB}$ and $72.6\,\text{dB}$; limit $L_\text{limit} = 55\,\text{dB}$ and threshold of hearing $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$; point source, even spreading, no reflections or attenuation
 **Find:** a) the sound power $P$ of the loudspeaker and b) the distance $r$ at which the level is $55\,\text{dB}$, in metres
 **Principle:** The intensity is calculated from each reading using the level equation, and for a point source $I = \dfrac{P}{4\pi r^2}$ gives the power $P = I \cdot 4\pi r^2$. Because the readings contain measurement error, the power is the mean of all the values. When the power is known, the same formula is solved for the distance at which the intensity corresponds to the limit level.
-**Formula:** $r = \sqrt{\dfrac{P}{4\pi I_\text{limit}}}$, where the power and the intensities are
-```latex
-\begin{aligned}
-&I = I_0 \cdot 10^{\,L/(10\,\text{dB})} \\
-&P = I \cdot 4\pi r^2
-\end{aligned}
-```
+**Formula:** $$\begin{aligned} I &= I_0 \cdot 10^{\,L/(10\,\text{dB})} \\ P &= 4\pi r^2 I \\ I_\text{limit} &= I_0 \cdot 10^{\,L_\text{limit}/(10\,\text{dB})} \\ r^2 &= \dfrac{P}{4\pi I_\text{limit}} \\ r &= \sqrt{\dfrac{P}{4\pi I_\text{limit}}} \end{aligned}$$
 **Conversions:** Not needed: the distances are in metres and the intensities in $\text{W/m}^2$.
 **Substitution:** From the readings the intensities are $1.288 \cdot 10^{-3}\,\text{W/m}^2$, $3.020 \cdot 10^{-4}\,\text{W/m}^2$, $8.51 \cdot 10^{-5}\,\text{W/m}^2$ and $1.820 \cdot 10^{-5}\,\text{W/m}^2$, and the powers $0.4047\,\text{W}$, $0.3795\,\text{W}$, $0.4278\,\text{W}$ and $0.3659\,\text{W}$. The sum of the powers is $1.578\,\text{W}$, so the mean is $P = 0.3945\,\text{W}$. The intensity at the limit level is $I_\text{limit} = 1.0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{5.5} = 3.162 \cdot 10^{-7}\,\text{W/m}^2$, and
 ```latex
@@ -299,13 +274,7 @@ Over a long distance, the attenuation of sound by air, attenuation by the ground
 **Principle:** The sources are independent, so their intensities are added. The intensity of the amplifier is obtained from the power with the formula $I = \dfrac{P}{4\pi r^2}$, and that of the drums from the level using the level equation and the effect of doubling the distance.
 
 Both intensities decrease like $\dfrac{1}{r^2}$, so the total intensity does too, and the distance is obtained from the ratio.
-**Formula:** $r_\text{limit} = r \sqrt{\dfrac{I}{I_\text{limit}}}$, where the total intensity and the level are
-```latex
-\begin{aligned}
-&I = I_1 + I_2 \\
-&L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}
-\end{aligned}
-```
+**Formula:** $$\begin{aligned} I_1 &= \dfrac{P_1}{4\pi r^2} \\ I_2 &= I_0 \cdot 10^{\,L_2/(10\,\text{dB})} \cdot \left(\dfrac{r_2}{r}\right)^{2} \\ I &= I_1 + I_2 \\ L &= 10\,\text{dB} \cdot \lg \dfrac{I}{I_0} \\ I r^2 &= I_\text{limit} r_\text{limit}^2 \\ r_\text{limit} &= r \sqrt{\dfrac{I}{I_\text{limit}}} \end{aligned}$$
 **Conversions:** Not needed: the distances are in metres and the levels in decibels.
 **Substitution:** Amplifier: $I_1 = \dfrac{0.20\,\text{W}}{4\pi \cdot (8.0\,\text{m})^2} = 2.487 \cdot 10^{-4}\,\text{W/m}^2$. Drums: from the level $90\,\text{dB}$ nearby we get $I = 10^{-12}\,\text{W/m}^2 \cdot 10^{9} = 1.0 \cdot 10^{-3}\,\text{W/m}^2$ at a distance of $2.0\,\text{m}$, and at a distance of $8.0\,\text{m}$ the intensity is $\left(\dfrac{2.0}{8.0}\right)^2 = \dfrac{1}{16}$ of that, that is, $I_2 = 6.25 \cdot 10^{-5}\,\text{W/m}^2$. Thus
 ```latex
@@ -337,7 +306,7 @@ The logarithmic scale compresses this range into the numbers $0\,\text{dB}$–$1
 **Find:** the intensity $I$ in $\text{W/m}^2$
 **Principle:** The level is ten times the logarithm of the ratio of the intensities. The intensity is obtained by dividing the equation by $10\,\text{dB}$ and using the definition of the logarithm: if $\lg x = y$, then $x = 10^y$.
 **Reading the figure:** At the distance $4.0\,\text{m}$ the marked point is at the level $L = 74.0\,\text{dB}$.
-**Formula:** $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$, so $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$
+**Formula:** $$\begin{aligned} L &= 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB} \\ \lg \dfrac{I}{I_0} &= \dfrac{L}{10\,\text{dB}} \\ I &= I_0 \cdot 10^{\,L/(10\,\text{dB})} \end{aligned}$$
 **Conversions:** None are needed: $\dfrac{L}{10\,\text{dB}} = \dfrac{74.0\,\text{dB}}{10\,\text{dB}} = 7.40$, the decibels cancel.
 **Substitution:** $I = 1.0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{7.40} = 2.51 \cdot 10^{-5}\,\text{W/m}^2$
 **Answer:** $2.5 \cdot 10^{-5}\,\text{W/m}^2$, that is $0.000025\,\text{W/m}^2$, two significant figures, because the level $74.0\,\text{dB}$ read from the figure is given to a tenth of a decibel and $\pm 0.1\,\text{dB}$ changes the intensity by about $\pm 2.3\,\%$, so the third figure is not certain.
@@ -348,7 +317,7 @@ The logarithmic scale compresses this range into the numbers $0\,\text{dB}$–$1
 **Find:** the sound power $P$ in $\text{mW}$
 **Principle:** The sound power of a point source is spread evenly over a spherical surface of area $4\pi r^2$, so $I = \dfrac{P}{4\pi r^2}$. From the level read from the figure we first calculate the intensity and then the sound power.
 **Reading the figure:** At the distance $2.0\,\text{m}$ the marked point is at the level $L = 80.0\,\text{dB}$.
-**Formula:** $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$ and $I = \dfrac{P}{4\pi r^2}$, so $P = 4\pi r^2 I$
+**Formula:** $$\begin{aligned} L &= 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB} \\ I &= I_0 \cdot 10^{\,L/(10\,\text{dB})} \\ I &= \dfrac{P}{4\pi r^2} \\ P &= 4\pi r^2 I \end{aligned}$$
 **Conversions:** $\dfrac{L}{10\,\text{dB}} = 8.00$. The result comes out in watts, and $1\,\text{W} = 1000\,\text{mW}$.
 **Substitution:** $I = 1.0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{8.00} = 1.0 \cdot 10^{-4}\,\text{W/m}^2$, and $P = 4\pi \cdot (2.0\,\text{m})^2 \cdot 1.0 \cdot 10^{-4}\,\text{W/m}^2 = 5.03 \cdot 10^{-3}\,\text{W} = 5.03\,\text{mW}$
 **Answer:** $5.0\,\text{mW}$, two significant figures like the distance $2.0\,\text{m}$ read from the figure.

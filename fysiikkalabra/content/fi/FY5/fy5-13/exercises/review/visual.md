@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9af6d9f3ec3711d8
+CONTENT-HASH: 2202db538a6cde53
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Delta (round 2): fy5-13-L2-02 text and solution add "Putken pääkorjausta ei huomioida." and reword the Järkevyys line; no figure, number or formula changed.
-- Wording read in the diff: fluent, quantities in LaTeX with units, the sentence sits before the question as the task form requires; solution order principle, formula, substitution, answer, check intact.
-- Layout checks clean per packet; earlier-passed exercise captures (open-exercises-L2) unaffected by a one-sentence change.
+- Delta round 1: Kaava steps of solutions.md rewritten as aligned blocks (basic equations, symbolic simplification, then Sijoitus unchanged).
+- Opened open-exercises-1280-1 (13-2) and open-exercises-L2-1280-5 (13-13): aligned block renders in KaTeX in a white box, equals signs/rows aligned, no clipping, Sijoitus and Vastaus intact. Layout checks clean per packet (360-1280 px).
+- Read all changed Kaava blocks in the diff: notation consistent ($\lambda_n$, $f_n$, $n$), units untouched.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: cc5d56c6b2fe7c00
+CONTENT-HASH: 42cd21b19728b90c
+none
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md, "Hyväksytään myös" (en), part d bullet — the paragraph split leaves "The point for the result requires…" outside the bullet list, so it reads as a free paragraph, not a continuation of the bullet — indent the continuation by two spaces, or rejoin it to the bullet.
-- [Minor] solutions.md, Graph a (Io) — the display `$$…$$` still sits mid-sentence before ", so $v^2 = …$"; it renders fine (fi capture), but the sentence is now the start of a new paragraph and reads better if the example is its own line — optional.
-- [Minor] tasks.json — the English page is not captured by screenshot.py; the fi captures were the visual reference, so the English wording of the split steps is judged from the source.
+- [Minor] solutions.md, Kaava blocks (fy5-s1 a, b, e) — the first row `M = Fr, F = mg` is centred apart from the `=` column of the rows below, so the chain does not align at `=` — put the definition on its own aligned row (`&M = Fr,\ F = mg`) if the shared layout allows.
+- [Minor] solutions.md fy5-s1 c — several display formulas stand mid-sentence and are followed by ", so …" or "." — an optional own line for each.
+- [Minor] English page is not captured (screenshot.py takes only fi for Sovella sets); the English wording was judged from the packet source, layout from the fi capture, which has the same maths and figures.
 
 ## Checked
-- Diff 2dc38e00^ of en solutions.md and tasks.json (all split points read as one idea per paragraph, the question last in the three tasks).
-- fi captures (the reference): contact-2.png; FY5-sovella-page-390-16.png (Jupiter a, the Io display chain and the table) and FY5-sovella-page-390-8.png (crane d, operator's explanation split, \overline{a}_\text{n}).
-- The split paragraphs are intact at 390 px; no display maths is cut, clipped or overflowing, and the spacing between the new paragraphs is even.
-- Not opened: the 1280 px captures and the other stages (the diff does not touch them).
+- Source of the en tasks.json and solutions.md: the rewritten Kaava steps (principle, then equation, then symbolic simplification; Sijoitus uses the last symbolic form); all quantities with units in LaTeX, `\cdot`, colon division, `\overline`.
+- fi captures (same maths and figures): contact-1.png; page-390-5 (crane b: Kaava, Sijoitus, Vastaus), page-390-10 (crane e Kaava and Sijoitus, Hyväksytään myös); fig-1, fig-2, fig-3, fig-4 at 390 px.
+- Kaava chains render without clipping or overflow; rows wrap legibly; figures unchanged by the diff and legible, with labels, units and distinct data points.
+- Not opened: 1280 px captures, fig-5, the other tasks' pages.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 5a4d90ef9afdba0b
+CONTENT-HASH: fb1a29be4e3f4801
+none
 
 ## Blocking
 (none)
 
 ## Polish
-- fy5-17-L2-10: the opening is one paragraph of about 170 words; split it (what to open / what the tables contain / what magnitude is), as the 120-word rule asks.
-- fy5-17-L2-10 d): the circle-intersection reasoning for several stations is not prepared by b) and c); a short cue ("Piirrä asemasta ympyrä") would help an S2 reader.
-- fy5-17-L2-10 a): "Kirjoita näkyviin ... päivä, jona luit aineiston" is good; add that the student should open the 2026 or any year table.
+- solutions.md:45 — Kaava is only "v = √(gh)" with a remark; fine for a one-step task, keep it.
+- The "Kohta a)" and "Kohta b)" paragraphs of the earthquake task are now split into shorter paragraphs; good. The a) paragraph is still long because it holds a dated example from the data page; a later edit could shorten it.
 
 ## Checked
-- The task tells exactly where to go: main page, link at its end, the table's columns, natural quakes only so any row will do, magnitude 0 to 4; matches the verified source (row 149, Orivesi, M 1,0, asterisk on 2026).
-- c) 28,57 s − 16,67 s = 11,9 s, 8,4 km per second recomputed; answer 11,905 tolerance 0,03 consistent.
-- Solution a) reads a real row, notes preliminary data; b) correct on P/S, fluid; d) explains one station gives a distance, three stations a point.
-- Set has 9/10/5 tasks; the new task is the data-reading step above the calculation tasks.
+- The diff in the packet shows the aligned rows without their line breaks; on disk each Kaava is an aligned block (25 blocks), so only the diff view is garbled.
+- The echo-depth rows start from v = s/t, s = 2d, then solve d = vt/2. This shows why the distance is doubled instead of quoting "2d = vt".
+- The seismic chain derives Δt = d(1/v_S − 1/v_P) and then d = v_P v_S Δt/(v_P − v_S); the same derivation is reused in the three-station task, followed by the circle subtraction x = (d_A² − d_B² + 120²)/240. Algebra correct.
+- The bat case: s = vt = d + (d − v_lep t), so d = (v + v_lep)t/2, correct. The fat–muscle layer and shallow-water rows (λ2/λ1 = v2/v1 = √(h2/h1)) are correct, and the symbolic form is reached before Sijoitus.
+- Sijoitus, answers and tolerances unchanged; the exercises.json change is only reflow.

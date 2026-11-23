@@ -22,7 +22,7 @@
 **Given:** mass $m = 0.20\,\text{kg}$, spring constant $k = 80\,\text{N/m}$
 **Find:** the frequency $f$ in $\text{Hz}$
 **Principle:** The figure oscillates under the harmonic force of the spring, so the period is obtained from the formula for a mass on a spring. The frequency is the reciprocal of the period: it tells us how many cycles occur in a second.
-**Formula:** $T = 2\pi\sqrt{\dfrac{m}{k}}$ and $f = \dfrac{1}{T}$, so $f = \dfrac{1}{2\pi}\sqrt{\dfrac{k}{m}}$
+**Formula:** $$\begin{aligned} f &= \dfrac{1}{T} \\ T &= 2\pi\sqrt{\dfrac{m}{k}} \\ f &= \dfrac{1}{2\pi}\sqrt{\dfrac{k}{m}} \end{aligned}$$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $f = \dfrac{1}{2\pi}\sqrt{\dfrac{80\,\text{N/m}}{0.20\,\text{kg}}} = \dfrac{1}{2\pi}\sqrt{400\,\tfrac{1}{\text{s}^2}} = \dfrac{20\,\tfrac{1}{\text{s}}}{2\pi} = 3.183\,\text{Hz}$
 **Answer:** $3.2\,\text{Hz}$, two significant figures as in the mass $0.20\,\text{kg}$ and the spring constant $80\,\text{N/m}$.
@@ -52,7 +52,7 @@
 **Given:** period $T = 1.50\,\text{s}$, small swings, air resistance neglected, $g = 9.81\,\text{m/s}^2$
 **Find:** the length of the pendulum $l$ in $\text{m}$
 **Principle:** For small swings a pendulum is a simple harmonic oscillator whose period depends only on the length and the acceleration of free fall. The length is solved from the formula for the period.
-**Formula:** $T = 2\pi\sqrt{\dfrac{l}{g}}$, so $T^2 = 4\pi^2\dfrac{l}{g}$ and $l = \dfrac{gT^2}{4\pi^2}$
+**Formula:** $$\begin{aligned} T &= 2\pi\sqrt{\dfrac{l}{g}} \\ T^2 &= 4\pi^2\dfrac{l}{g} \\ l &= \dfrac{gT^2}{4\pi^2} \end{aligned}$$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $l = \dfrac{9.81\,\text{m/s}^2 \cdot (1.50\,\text{s})^2}{4\pi^2} = \dfrac{22.07\,\text{m}}{39.48} = 0.5591\,\text{m}$
 **Answer:** $0.559\,\text{m}$, three significant figures as in the period $1.50\,\text{s}$.
@@ -62,7 +62,7 @@
 **Given:** mass of the weight $m_1 = 0.30\,\text{kg}$, the spring stays the same, the period doubles: $T_2 = 2T_1$
 **Find:** the mass to be added $\Delta m$ in $\text{kg}$
 **Principle:** The period of a mass on a spring is proportional to the square root of the mass when the spring constant stays the same. Doubling the period therefore requires four times the mass.
-**Formula:** $\dfrac{T_2}{T_1} = \sqrt{\dfrac{m_2}{m_1}}$, so $m_2 = \left(\dfrac{T_2}{T_1}\right)^2 m_1 = 4m_1$ and $\Delta m = m_2 - m_1 = 3m_1$
+**Formula:** $$\begin{aligned} T_1 &= 2\pi\sqrt{\dfrac{m_1}{k}} \\ T_2 &= 2\pi\sqrt{\dfrac{m_2}{k}} \\ \dfrac{T_2}{T_1} &= \sqrt{\dfrac{m_2}{m_1}} \\ m_2 &= \left(\dfrac{T_2}{T_1}\right)^2 m_1 \\ &= 4m_1 \\ \Delta m &= m_2 - m_1 = 3m_1 \end{aligned}$$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $\Delta m = 3 \cdot 0.30\,\text{kg} = 0.90\,\text{kg}$
 **Answer:** $0.90\,\text{kg}$, two significant figures as in the mass $0.30\,\text{kg}$.
@@ -72,7 +72,7 @@
 **Given:** mass $m = 0.40\,\text{kg}$, spring constant $k = 25\,\text{N/m}$, amplitude $A = 8.0\,\text{cm}$, frictionless track, released from rest
 **Find:** the greatest speed $v_\text{max}$ in $\text{m/s}$
 **Principle:** There is no friction on the track, so the mechanical energy of the oscillator is conserved. At the extreme position all the energy is the elastic potential energy of the spring, at the equilibrium position all of it is kinetic energy, and there the speed is greatest.
-**Formula:** $\dfrac{1}{2}mv_\text{max}^2 = \dfrac{1}{2}kA^2$, so $v_\text{max} = A\sqrt{\dfrac{k}{m}}$
+**Formula:** $$\begin{aligned} \dfrac{1}{2}mv_\text{max}^2 &= \dfrac{1}{2}kA^2 \\ v_\text{max}^2 &= \dfrac{k}{m}A^2 \\ v_\text{max} &= A\sqrt{\dfrac{k}{m}} \end{aligned}$$
 **Conversions:** $8.0\,\text{cm} = 8.0 \cdot 0.01\,\text{m} = 0.080\,\text{m}$
 **Substitution:** $v_\text{max} = 0.080\,\text{m} \cdot \sqrt{\dfrac{25\,\text{N/m}}{0.40\,\text{kg}}} = 0.080\,\text{m} \cdot 7.906\,\tfrac{1}{\text{s}} = 0.6325\,\text{m/s}$
 **Answer:** $0.63\,\text{m/s}$, two significant figures as in the data.
@@ -82,7 +82,7 @@
 **Given:** period on the Earth $T_\text{E} = 2.00\,\text{s}$, $g_\text{E} = 9.81\,\text{m/s}^2$, on Mars $g_\text{Mars} = 3.71\,\text{m/s}^2$, small swings
 **Find:** the period on Mars $T_\text{Mars}$ in $\text{s}$
 **Principle:** For small swings the period of a pendulum is $2\pi\sqrt{\tfrac{l}{g}}$. The length of the pendulum stays the same, so the period is inversely proportional to the square root of the acceleration of free fall. The length does not need to be calculated.
-**Formula:** $\dfrac{T_\text{Mars}}{T_\text{E}} = \sqrt{\dfrac{g_\text{E}}{g_\text{Mars}}}$, so $T_\text{Mars} = T_\text{E}\sqrt{\dfrac{g_\text{E}}{g_\text{Mars}}}$
+**Formula:** $$\begin{aligned} T_\text{Mars} &= 2\pi\sqrt{\dfrac{l}{g_\text{Mars}}} \\ T_\text{E} &= 2\pi\sqrt{\dfrac{l}{g_\text{E}}} \\ \dfrac{T_\text{Mars}}{T_\text{E}} &= \sqrt{\dfrac{g_\text{E}}{g_\text{Mars}}} \\ T_\text{Mars} &= T_\text{E}\sqrt{\dfrac{g_\text{E}}{g_\text{Mars}}} \end{aligned}$$
 **Conversions:** The unit of both accelerations of free fall is $\text{m/s}^2$, and the unit cancels, so no conversions are needed.
 **Substitution:** $T_\text{Mars} = 2.00\,\text{s} \cdot \sqrt{\dfrac{9.81\,\text{m/s}^2}{3.71\,\text{m/s}^2}} = 2.00\,\text{s} \cdot \sqrt{2.644} = 2.00\,\text{s} \cdot 1.626 = 3.252\,\text{s}$
 **Answer:** $3.25\,\text{s}$, three significant figures as in the period $2.00\,\text{s}$ and the acceleration of free fall $3.71\,\text{m/s}^2$.
@@ -94,7 +94,7 @@
 **Principle:** In frictionless oscillation the mechanical energy is conserved. At every point the sum of the kinetic energy and the elastic potential energy of the spring equals the energy at the extreme position, where the speed is zero.
 
 At the displacement $x$ some of the energy is still in the spring, so the speed is smaller than at the equilibrium position.
-**Formula:** $\dfrac{1}{2}mv^2 + \dfrac{1}{2}kx^2 = \dfrac{1}{2}kA^2$, so $v^2 = \dfrac{k}{m}(A^2 - x^2)$ and $v = \sqrt{\dfrac{k}{m}(A^2 - x^2)}$
+**Formula:** $$\begin{aligned} E &= \dfrac{1}{2}mv^2 + \dfrac{1}{2}kx^2 \\ E &= \dfrac{1}{2}kA^2 \\ \dfrac{1}{2}mv^2 &= \dfrac{1}{2}k(A^2 - x^2) \\ v^2 &= \dfrac{k}{m}(A^2 - x^2) \\ v &= \sqrt{\dfrac{k}{m}(A^2 - x^2)} \end{aligned}$$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** First $\dfrac{k}{m} = \dfrac{200\,\text{N/m}}{0.50\,\text{kg}} = 400\,\tfrac{1}{\text{s}^2}$ and $$
 \begin{aligned}
@@ -112,7 +112,7 @@ $$, so $v = \sqrt{400\,\tfrac{1}{\text{s}^2} \cdot 0.00750\,\text{m}^2} = \sqrt{
 **Principle:** Two ideas. First the spring constant: when the passenger has sat down and the car is at rest again, the extra force of the spring equals the weight of the passenger, so $k\Delta x = m_\text{p}g$.
 
 Then the period: in vertical oscillation the weight only shifts the equilibrium position, so the period is $2\pi\sqrt{\tfrac{m}{k}}$, where $m$ is the whole oscillating mass, the car and the passenger.
-**Formula:** $k = \dfrac{m_\text{p}g}{\Delta x}$ and $T = 2\pi\sqrt{\dfrac{m}{k}}$, so $T = 2\pi\sqrt{\dfrac{m\,\Delta x}{m_\text{p}g}}$
+**Formula:** $$\begin{aligned} m_\text{p}g &= k\,\Delta x \\ k &= \dfrac{m_\text{p}g}{\Delta x} \\ T &= 2\pi\sqrt{\dfrac{m}{k}} \\ &= 2\pi\sqrt{\dfrac{m\,\Delta x}{m_\text{p}g}} \end{aligned}$$
 **Conversions:** $\Delta x = 3.0\,\text{cm} = 3.0 \cdot 0.01\,\text{m} = 0.030\,\text{m}$; the oscillating mass $m = 1200\,\text{kg} + 80\,\text{kg} = 1280\,\text{kg}$
 **Substitution:** $k = \dfrac{80\,\text{kg} \cdot 9.81\,\text{m/s}^2}{0.030\,\text{m}} = 26\,160\,\text{N/m}$ and $T = 2\pi\sqrt{\dfrac{1280\,\text{kg}}{26\,160\,\text{N/m}}} = 2\pi\sqrt{0.04893\,\text{s}^2} = 2\pi \cdot 0.2212\,\text{s} = 1.390\,\text{s}$
 **Answer:** $1.4\,\text{s}$, two significant figures as in the sinking $3.0\,\text{cm}$.
@@ -124,7 +124,7 @@ Then the period: in vertical oscillation the weight only shifts the equilibrium 
 **Principle:** For small swings the period is $2\pi\sqrt{\tfrac{l}{g}}$, so a longer pendulum swings more slowly. The clock counts cycles and adds the period $T$ it had in spring for each of them, although the real cycle lasts $T'$.
 
 In a day it manages to make only $\tfrac{t}{T'}$ of the longer cycles $T'$, so it shows the time $\tfrac{t}{T'}T$ and falls behind. The acceleration of free fall cancels in the ratio of the periods.
-**Formula:** $\dfrac{T'}{T} = \sqrt{\dfrac{l + \Delta l}{l}}$ and $\Delta t = t - \dfrac{t}{T'}T$, so $\Delta t = t\left(1 - \dfrac{T}{T'}\right) = t\left(1 - \sqrt{\dfrac{l}{l + \Delta l}}\right)$
+**Formula:** $$\begin{aligned} T &= 2\pi\sqrt{\dfrac{l}{g}} \\ T' &= 2\pi\sqrt{\dfrac{l + \Delta l}{g}} \\ \dfrac{T'}{T} &= \sqrt{\dfrac{l + \Delta l}{l}} \\ N &= \dfrac{t}{T'} \\ \Delta t &= t - NT = t - \dfrac{t}{T'}T \\ &= t\left(1 - \dfrac{T}{T'}\right) \\ &= t\left(1 - \sqrt{\dfrac{l}{l + \Delta l}}\right) \end{aligned}$$
 **Conversions:** $\Delta l = 0.50\,\text{mm} = 0.50 \cdot 0.001\,\text{m} = 0.00050\,\text{m}$; a day $t = 24 \cdot 3600\,\text{s} = 86\,400\,\text{s}$
 **Substitution:** $\Delta t = 86\,400\,\text{s} \cdot \left(1 - \sqrt{\dfrac{0.994\,\text{m}}{0.9945\,\text{m}}}\right) = 86\,400\,\text{s} \cdot (1 - 0.999\,749) = 86\,400\,\text{s} \cdot 0.000\,251 = 21.7\,\text{s}$. The intermediate result must not be rounded: even rounding $1 - 0.9997 = 0.0003$ would give $26\,\text{s}$.
 **Answer:** $22\,\text{s}$, two significant figures as in the lengthening $0.50\,\text{mm}$.
@@ -158,7 +158,7 @@ The greater speed compensates for the longer distance exactly so that one cycle 
 **Reading the graph:** A suitable scale for the axes is $0$–$1.0\,\text{m}$ and $0$–$4.5\,\text{s}^2$. The squares of the periods are $0.81\,\text{s}^2$, $1.61\,\text{s}^2$, $2.40\,\text{s}^2$, $3.24\,\text{s}^2$ and $4.04\,\text{s}^2$. They lie on a rising line with points on both sides of it.
 
 The fitted line passes through the origin and approximately through the point $(1.00\,\text{m};\ 4.04\,\text{s}^2)$. The slope is read from points of the fitted line that are far apart, not from adjacent measured points.
-**Formula:** $a = \dfrac{T^2}{l} = \dfrac{4\pi^2}{g}$, so $g = \dfrac{4\pi^2}{a}$
+**Formula:** $$\begin{aligned} a &= \dfrac{T^2}{l} \\ T^2 &= 4\pi^2\dfrac{l}{g} \\ a &= \dfrac{4\pi^2}{g} \\ g &= \dfrac{4\pi^2}{a} \end{aligned}$$
 **Conversions:** Not needed: the length is in metres and the time in seconds.
 **Substitution:** $a = \dfrac{4.04\,\text{s}^2}{1.00\,\text{m}} = 4.04\,\tfrac{\text{s}^2}{\text{m}}$ and $g = \dfrac{4\pi^2}{4.04\,\text{s}^2/\text{m}} = 9.772\,\text{m/s}^2$
 **Answer:** $9.77\,\text{m/s}^2$, three significant figures, because the reading of the fit rests on the point $(1.00\,\text{m};\ 2.01\,\text{s})$, whose values have three figures. The values of the shortest pendulum ($0.20\,\text{m}$ and $0.90\,\text{s}$) have only two, but they do not limit the slope that was read. Fitting by eye gives slightly different results, so a small variation is expected.
@@ -169,7 +169,7 @@ The fitted line passes through the origin and approximately through the point $(
 **Find:** the spring constant $k$ in $\text{N/m}$
 **Principle:** The period of a body on a spring is $T = 2\pi\sqrt{\tfrac{m}{k}}$, so $T^2 = \tfrac{4\pi^2}{k}\,m$. The square of the period is directly proportional to the mass, and the points lie on a line through the origin whose slope is $\tfrac{4\pi^2}{k}$. The line passes through the origin because the mass of the spring is neglected.
 **Reading the graph:** The period is $T = \tfrac{t_{10}}{10}$, so the periods are $0.45\,\text{s}$, $0.62\,\text{s}$, $0.77\,\text{s}$, $0.89\,\text{s}$ and $0.99\,\text{s}$ and their squares $0.20\,\text{s}^2$, $0.38\,\text{s}^2$, $0.59\,\text{s}^2$, $0.79\,\text{s}^2$ and $0.98\,\text{s}^2$. The line fitted through the points passes through the origin and the point $(0.500\,\text{kg};\ 0.98\,\text{s}^2)$.
-**Formula:** $a = \dfrac{T^2}{m} = \dfrac{4\pi^2}{k}$, so $k = \dfrac{4\pi^2}{a}$
+**Formula:** $$\begin{aligned} a &= \dfrac{T^2}{m} \\ T^2 &= 4\pi^2\dfrac{m}{k} \\ a &= \dfrac{4\pi^2}{k} \\ k &= \dfrac{4\pi^2}{a} \end{aligned}$$
 **Conversions:** The period is obtained from the time of ten cycles by dividing by ten, for example $4.5\,\text{s} : 10 = 0.45\,\text{s}$. The mass is already in kilograms.
 **Substitution:** $a = \dfrac{0.98\,\text{s}^2}{0.500\,\text{kg}} = 1.96\,\tfrac{\text{s}^2}{\text{kg}}$ and $k = \dfrac{4\pi^2}{1.96\,\text{s}^2/\text{kg}} = 20.14\,\text{N/m}$
 **Answer:** $20\,\text{N/m}$ (intermediate result $20.14\,\text{N/m}$), two significant figures, because the times of ten cycles $t_{10}$, for example $4.5\,\text{s}$, are given with two significant figures. Fitting by eye varies slightly.
@@ -196,7 +196,7 @@ The spring constant is therefore obtained from the slope, and $m_0$ from the rat
 **Reading the graph:** The squares of the periods are $0.112\,\text{s}^2$, $0.187\,\text{s}^2$, $0.271\,\text{s}^2$, $0.345\,\text{s}^2$, $0.430\,\text{s}^2$ and $0.501\,\text{s}^2$. They lie on a rising line that intersects the $T^2$ axis at $b = 0.033\,\text{s}^2$, so it does not pass through the origin.
 
 The line passes through the points $(0\,\text{kg};\ 0.033\,\text{s}^2)$ and $(0.300\,\text{kg};\ 0.504\,\text{s}^2)$; they are read from the fitted line, not from the measured points.
-**Formula:** $a = \dfrac{\Delta (T^2)}{\Delta m}$ and $k = \dfrac{4\pi^2}{a}$; also $m_0 = \dfrac{b}{a}$ and from a single measurement $k_1 = \dfrac{4\pi^2 m}{T^2}$, whereupon the error is $\dfrac{k_1 - k}{k} \cdot 100\,\%$
+**Formula:** $$\begin{aligned} T^2 &= \dfrac{4\pi^2}{k}(m + m_0) \\ &= am + b \\ a &= \dfrac{\Delta (T^2)}{\Delta m} = \dfrac{4\pi^2}{k} \\ k &= \dfrac{4\pi^2}{a} \\ b &= am_0 \\ m_0 &= \dfrac{b}{a} \\ k_1 &= \dfrac{4\pi^2 m}{T^2} \\ \delta &= \dfrac{k_1 - k}{k} \cdot 100\,\% \end{aligned}$$
 **Conversions:** Not needed: the masses are in kilograms and the times in seconds.
 **Substitution:** $a = \dfrac{0.504\,\text{s}^2 - 0.033\,\text{s}^2}{0.300\,\text{kg} - 0\,\text{kg}} = 1.570\,\tfrac{\text{s}^2}{\text{kg}}$ and $k = \dfrac{4\pi^2}{1.570\,\text{s}^2/\text{kg}} = 25.14\,\text{N/m}$.
 
@@ -219,7 +219,7 @@ $$), because the share of the mass of the spring decreases as the weight increas
 **Principle:** Three ideas. With a small starting angle the period is $T = 2\pi\sqrt{\tfrac{l}{g}}$, and the time from the extreme position to the lowest point is a quarter of a cycle.
 
 Energy is conserved, because only the weight does work and the string is always perpendicular to the motion, so the potential energy at the extreme position changes into kinetic energy at the lowest point. In the harmonic model $\tfrac{1}{2}\tfrac{mg}{l}A^2 = \tfrac{1}{2}mv^2$, and it is an approximation, because it uses $\sin\alpha \approx \alpha$.
-**Formula:** $t = \dfrac{T}{4}$; $h = l(1 - \cos\alpha_0)$ and $mgh = \dfrac{1}{2}mv^2$, so $v = \sqrt{2gh}$; with the harmonic model $A = l\alpha_0$ and $v_\text{h} = A\sqrt{\dfrac{g}{l}}$
+**Formula:** $$\begin{aligned} t &= \dfrac{T}{4} \\ T &= 2\pi\sqrt{\dfrac{l}{g}} \\ h &= l(1 - \cos\alpha_0) \\ mgh &= \dfrac{1}{2}mv^2 \\ v &= \sqrt{2gh} \\ A &= l\alpha_0 \\ v_\text{h} &= A\sqrt{\dfrac{g}{l}} \end{aligned}$$
 **Conversions:** The angle in radians: $\alpha_0 = 10.0\,{}^\circ = 10.0 \cdot \dfrac{\pi}{180} = 0.17453$.
 **Substitution:** Part a): $T = 2\pi\sqrt{\dfrac{1.20\,\text{m}}{9.81\,\text{m/s}^2}} = 2.198\,\text{s}$, so $t = \dfrac{2.198\,\text{s}}{4} = 0.549\,\text{s}$. Part b): $h = 1.20\,\text{m} \cdot (1 - \cos 10.0\,{}^\circ) = 0.01823\,\text{m}$ and $v = \sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot 0.01823\,\text{m}} = 0.5981\,\text{m/s}$. Part c): $A = 1.20\,\text{m} \cdot 0.17453 = 0.2094\,\text{m}$ and $v_\text{h} = 0.2094\,\text{m} \cdot \sqrt{\dfrac{9.81}{1.20}}\,\dfrac{1}{\text{s}} = 0.5988\,\text{m/s}$, so the difference is $\dfrac{0.59883 - 0.59807}{0.59807} \cdot 100\,\% = 0.13\,\%$ and the harmonic model gives the greater speed.
 **Answer:** a) $0.549\,\text{s}$. b) $0.598\,\text{m/s}$, and the height of the extreme position is about $1.82\,\text{cm}$. c) $0.599\,\text{m/s}$, and the harmonic model gives a speed about $0.13\,\%$ greater. The time and the speeds have three significant figures as in the length $1.20\,\text{m}$ and the angle $10.0\,{}^\circ$.
@@ -276,7 +276,7 @@ The force of the spring depends only on the displacement and the spring constant
 **Find:** the greatest speed of the body $v_{\max}$
 **Principle:** The oscillation energy $\tfrac12 kA^2$ is all kinetic energy at the equilibrium position, $\tfrac12 m v_{\max}^2 = \tfrac12 kA^2$. The period $T = 2\pi\sqrt{m/k}$ gives $\sqrt{k/m} = 2\pi/T$, so neither the mass nor the spring constant is needed: the amplitude and the period are read from the graph.
 **Reading the graph:** The peaks are at the height $x = 3.0\,\text{cm}$, so $A = 3.0\,\text{cm} = 0.030\,\text{m}$. The peaks are at the times $0$, $0.40\,\text{s}$ and $0.80\,\text{s}$, so $T = 0.40\,\text{s}$. The troughs at $0.20\,\text{s}$ and $0.60\,\text{s}$ confirm this.
-**Formula:** $v_{\max} = A\sqrt{\dfrac{k}{m}} = \dfrac{2\pi A}{T}$
+**Formula:** $$\begin{aligned} v_{\max} &= A\sqrt{\dfrac{k}{m}} \\ T &= 2\pi\sqrt{\dfrac{m}{k}} \Rightarrow \sqrt{\dfrac{k}{m}} = \dfrac{2\pi}{T} \\ v_{\max} &= \dfrac{2\pi A}{T} \end{aligned}$$
 **Conversions:** $A = 3.0\,\text{cm} = 3.0 \cdot 0.01\,\text{m} = 0.030\,\text{m}$
 **Substitution:** $v_{\max} = \dfrac{2\pi \cdot 0.030\,\text{m}}{0.40\,\text{s}} = \dfrac{0.1885\,\text{m}}{0.40\,\text{s}} = 0.471\,\text{m/s}$
 **Answer:** $0.47\,\text{m/s}$, two significant figures like the amplitude $3.0\,\text{cm}$ and the period $0.40\,\text{s}$.

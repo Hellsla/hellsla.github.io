@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 72e6c51b611d4fe9
+CONTENT-HASH: ef00ff8a2f8f9fa0
+none
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json fy5-1-L1-10 — 'Kuvan voima korvataan voimalla.' is clumsy, and the figure still shows the horizontal force F — write 'Kuvan vaakasuora voima poistetaan. Kohtaan P vaikuttaa sen sijaan 30 N:n voima kohtisuorassa sauvaa OP vastaan.'
+(none)
 
 ## Checked
-- L1-10 reworked: figure gives the 4-3 grid squares, description gives the same data without the length 0,50 m; the student must find OP as 5 squares.
-- Still level 1 (read the length, M = Fr); the old trap (arm 0,30 m of the horizontal force) is turned into the sanity check.
-- Solution staged, principle explained, check 9,0 Nm < 15 Nm correct.
-- Finnish clear, 'voiman varsi' correct, 30 N:n case right.
+- The only change is the Kaava step of the wrench error-analysis task (solutions.md): it now defines d (measured length) and e (distance from the edge to the axis) before r = d - e. This repairs my earlier Polish 1.
+- The definition sits in the same step as the equations, before any number, so a student who could not solve the task can follow r = d - e, M = Fr, M = F(d - e) in order.
+- Sijoitus and Vastaus are unchanged and use the same numbers (0,270 m, 0,030 m, 90 N, 21,6 Nm), so the Kaava, the Sijoitus and the Periaate still agree.
+- Finnish is correct and in plain style: "Olkoon d mitattu pituus ja e matka reunasta akselille."
+- The rest of the set, and the earlier PASS, are unaffected. Text only.

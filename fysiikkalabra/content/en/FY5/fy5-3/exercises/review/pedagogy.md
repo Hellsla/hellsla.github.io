@@ -1,16 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 557c1c077663a50d
+CONTENT-HASH: fd9908d0a3796bfd
+none
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md (L1-10 reasonableness) — 11 m in 5 s is 2.3 m/s, a brisk walk to an easy jog; "a jogging pace" is acceptable, "a fast walk or slow jog" would be exact.
+- solutions.md:67 (the gondola, L2-02) — r = d/2 comes last in the chain, after it has been used in T = 2πr/v; put r = d/2 first or add T = πd/v. Not an error: the Conversions step computes r first.
+- solutions.md:283 (the CD, L3-05) — r_av appears in s = N·2πr_av without its own line r_av = (r_1 + r_2)/2; add it to the chain.
+- solutions.md:185 (the carousel seat, L2-… with ten revolutions) — the Kaava is still a row of separate formulas (t_av, T, v). The data task fits that, but T = t_av/10 could be substituted into v = 2πr/T to give one final symbolic expression.
 
 ## Checked
-- Diff is wording only plus a re-broken calculation row; no number, symbol or unit changed.
-- Runner solution: "on the same straight line through the centre" is a clearer, correct reason than "same radius" (the two runners are at different radii); the proportionality conclusion follows.
-- L2-08 re-broken substitution: same numbers, signs, units in order; each row readable at 360 px width as a chain (f in 1/s, r difference, result 2.513 m/s).
-- Reasonableness lines in both tasks still compare with a real situation (carousel).
-- The marker removal in the captions leaves the figure captions plain and understandable.
-- Figure karuselli unchanged: needed for r, description matches, gives no speeds.
+- The diff in the packet shows the new Kaava steps flattened to one line; the file has them as aligned rows, one equation per row, in the order basic equation → rearrangement → last form.
+- The blade tip, record and test tube tasks start from v = 2πr/T and T = 1/f before v = 2πrf; the frequency form is derived rather than assumed.
+- The proportion tasks (the blade point and the runners) write each speed from the basic equation, divide them and end with v_2 = (r_2/r_1) v_1; the cancellation of T (or t) is visible.
+- The puck first gets s = vt, then the Pythagorean step, and d = sqrt(r² + (vt)²).
+- The bicycle task derives the chain speed, then f_r, then u, and ends with the symbolic form u = 2πR (r_f/r_r) f_f used in the substitution.
+- The latitude task ends in v = 2πR cos φ / T, and the Substitution uses it.
+- The sprockets of the record player: same pattern. Principle paragraphs are split into one idea each; no reasoning is lost.
+- Substitution, answers and tolerances unchanged; the figure karuselli is unchanged.
+- The content hash at the start and end is the same as the packet's.

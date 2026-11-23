@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: a614ea5207d21950
+CONTENT-HASH: 50ffe8c82ceb5c83
+none
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] solutions.md 8-18 Kaava — `\tfrac{1}{2}kx^2` on the left-hand side is small next to `mgh`; legible, optionally `\dfrac` in the display row.
 
 ## Checked
-- Round 1, delta: solutions.md only; long solution paragraphs split in two, words unchanged. Hash re-run at the end: unchanged.
-- Captures: fy5-8-open-exercises-L2-1280-5 (solution page with its formula boxes, next task 8-13); the L1-07, L2-05 and L2-08 splits are plain paragraph breaks, not opened individually.
-- Layout survived at 1280 px: reading column, solution panels, formula boxes, spacing between the new paragraphs even; no clipping. Units upright, decimal commas, LaTeX intact.
-- Finnish: the splits fall at sentence boundaries, the second paragraph reads on from the first without a connective being lost.
+- Delta: only the Kaava block of 8-18 changed (now E_alku = E_loppu, then the energies, then h solved). Opened open-exercises-L3-1280-2 (task text, Periaate, Kaava rows) and L3-1280-3 (Muunnokset, Sijoitus, Vastaus, Järkevyys, next task).
+- Three rows align at `=`, KaTeX clean, subscripts `\text{alku}`/`\text{loppu}` legible, no clipping or overflow; Sijoitus, answer 0,18 m and the surrounding layout unchanged.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
