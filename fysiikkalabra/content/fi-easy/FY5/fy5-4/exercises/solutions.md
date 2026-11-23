@@ -22,7 +22,7 @@
 **Annettu:** $m = 0{,}50\,\text{kg}$, $r = 1{,}2\,\text{m}$, $v = 4{,}0\,\text{m/s}$, rata vaakasuora
 **Kysytty:** kiveen vaikuttava kokonaisvoima $\Sigma F$ yksikössä $\text{N}$
 **Periaate:** Kivi on tasaisessa ympyräliikkeessä, joten sen kiihtyvyys on normaalikiihtyvyys kohti keskipistettä. Newtonin toisen lain mukaan kokonaisvoima on massan ja kiihtyvyyden tulo. Se osoittaa samaan suuntaan kuin kiihtyvyys.
-**Kaava:** $\Sigma F = m a_\text{n}$ ja $a_\text{n} = \dfrac{v^2}{r}$, joten $\Sigma F = m\dfrac{v^2}{r}$
+**Kaava:** $$\begin{aligned} \Sigma F &= m a_\text{n} \\ a_\text{n} &= \dfrac{v^2}{r} \\ \Sigma F &= m\dfrac{v^2}{r} \end{aligned}$$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Sigma F = 0{,}50\,\text{kg}\cdot\dfrac{(4{,}0\,\text{m/s})^2}{1{,}2\,\text{m}} = 0{,}50\,\text{kg}\cdot 13{,}33\,\text{m/s}^2 = 6{,}667\,\text{N}$
 **Vastaus:** $6{,}7\,\text{N}$ kohti radan keskipistettä. Vastauksessa on kaksi merkitsevää numeroa, kuten lähtötiedoissa.
@@ -32,7 +32,7 @@
 **Annettu:** normaalikiihtyvyys $a_\text{n} = 2{,}5\,\text{m/s}^2$, säde $r = 25\,\text{m}$
 **Kysytty:** ratanopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Liikenneympyrässä auto kiertää ympyrää. Jos vauhti on tasainen, liike on tasaista ympyräliikettä. Silloin normaalikiihtyvyys riippuu ratanopeudesta ja säteestä.
-**Kaava:** $a_\text{n} = \dfrac{v^2}{r}$, joten $v^2 = a_\text{n} r$ ja $v = \sqrt{a_\text{n} r}$
+**Kaava:** $$\begin{aligned} a_\text{n} &= \dfrac{v^2}{r} \\ v^2 &= a_\text{n} r \\ v &= \sqrt{a_\text{n} r} \end{aligned}$$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $v = \sqrt{2{,}5\,\text{m/s}^2\cdot 25\,\text{m}} = \sqrt{62{,}5\,\text{m}^2/\text{s}^2} = 7{,}906\,\text{m/s}$
 **Vastaus:** $7{,}9\,\text{m/s}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kiihtyvyydessä ja säteessä.
@@ -61,7 +61,7 @@ a ylös
 v oikea
 akselit 0
 ```
-**Kaava:** $y$: $N - mg = m\dfrac{v^2}{r}$, joten $N = m\left(g + \dfrac{v^2}{r}\right)$
+**Kaava:** $$\begin{aligned} \Sigma F_y &= N - mg \\ \Sigma F_y &= m a_\text{n} \\ a_\text{n} &= \dfrac{v^2}{r} \\ N - mg &= m\dfrac{v^2}{r} \\ N &= m\left(g + \dfrac{v^2}{r}\right) \end{aligned}$$
 **Muunnokset:** Suureet ovat SI-yksiköissä. Tulos muutetaan lopuksi kilonewtoneiksi, $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** $$\begin{aligned} &N \\ &= 80\,\text{kg}\cdot\left(9{,}81\,\text{m/s}^2 + \dfrac{(8{,}0\,\text{m/s})^2}{16\,\text{m}}\right) \\ &= 80\,\text{kg}\cdot 13{,}81\,\text{m/s}^2 \\ &= 1104{,}8\,\text{N} \\ &= 1{,}1048\,\text{kN} \end{aligned}$$
 **Vastaus:** $1{,}1\,\text{kN}$ ylöspäin. Vastauksessa on kaksi merkitsevää numeroa, kuten nopeudessa $8{,}0\,\text{m/s}$ ja säteessä $16\,\text{m}$.
@@ -90,7 +90,7 @@ a alas
 v oikea
 akselit 0
 ```
-**Kaava:** $y$: $N - mg = -m\dfrac{v^2}{r}$, joten $N = m\left(g - \dfrac{v^2}{r}\right)$
+**Kaava:** $$\begin{aligned} \Sigma F_y &= N - mg \\ \Sigma F_y &= -m a_\text{n} \\ a_\text{n} &= \dfrac{v^2}{r} \\ N - mg &= -m\dfrac{v^2}{r} \\ N &= m\left(g - \dfrac{v^2}{r}\right) \end{aligned}$$
 **Muunnokset:** Suureet ovat SI-yksiköissä. Tulos muutetaan lopuksi kilonewtoneiksi, $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** $N = 1200\,\text{kg}\cdot\left(9{,}81\,\text{m/s}^2 - \dfrac{(12\,\text{m/s})^2}{30\,\text{m}}\right) = 1200\,\text{kg}\cdot 5{,}01\,\text{m/s}^2 = 6012\,\text{N} = 6{,}012\,\text{kN}$
 **Vastaus:** $6{,}0\,\text{kN}$ ylöspäin. Vastauksessa on kaksi merkitsevää numeroa, kuten nopeudessa $12\,\text{m/s}$ ja säteessä $30\,\text{m}$.
@@ -100,7 +100,7 @@ akselit 0
 **Annettu:** $m = 7{,}26\,\text{kg}$, säde $r = 1{,}8\,\text{m}$, kierrosaika $T = 0{,}50\,\text{s}$, rata vaakasuora ympyrä
 **Kysytty:** moukariin vaikuttava kokonaisvoima $\Sigma F$ yksikössä $\text{kN}$
 **Periaate:** Mallissa moukari on tasaisessa ympyräliikkeessä. Newtonin toisen lain mukaan kokonaisvoima osoittaa siis kohti ympyrän keskipistettä, ja sen suuruus on $m\tfrac{v^2}{r}$. Ratanopeus lasketaan kierrosajasta.
-**Kaava:** $v = \dfrac{2\pi r}{T}$ ja $\Sigma F = m\dfrac{v^2}{r}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{2\pi r}{T} \\ \Sigma F &= m a_\text{n} \\ a_\text{n} &= \dfrac{v^2}{r} \\ \Sigma F &= m\dfrac{v^2}{r} \end{aligned}$$
 **Muunnokset:** Suureet ovat SI-yksiköissä. Tulos muutetaan lopuksi kilonewtoneiksi, $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** $v = \dfrac{2\pi\cdot 1{,}8\,\text{m}}{0{,}50\,\text{s}} = 22{,}62\,\text{m/s}$ ja $\Sigma F = 7{,}26\,\text{kg}\cdot\dfrac{(22{,}62\,\text{m/s})^2}{1{,}8\,\text{m}} = 2064\,\text{N} = 2{,}064\,\text{kN}$
 **Vastaus:** $2{,}1\,\text{kN}$ kohti keskipistettä. Vastauksessa on kaksi merkitsevää numeroa, kuten säteessä $1{,}8\,\text{m}$ ja kierrosajassa $0{,}50\,\text{s}$.
@@ -121,7 +121,7 @@ F_mu 10 oikea
 a oikea
 akselit 0
 ```
-**Kaava:** $y$: $N - mg = 0$ ja $x$: $\mu_0 N = m\dfrac{v^2}{r}$, joten $\mu_0 mg = m\dfrac{v^2}{r}$ ja $v = \sqrt{\mu_0 g r}$
+**Kaava:** $$\begin{aligned} \Sigma F_y &= 0 \Rightarrow N = mg \\ F_\mu &= \mu_0 N = \mu_0 mg \\ F_\mu &= m a_\text{n} = m\dfrac{v^2}{r} \\ v^2 &= \mu_0 g r \\ v &= \sqrt{\mu_0 g r} \end{aligned}$$
 **Muunnokset:** Tulos muutetaan lopuksi yksikköön $\text{km/h}$: $1\,\text{m/s} = \dfrac{0{,}001\,\text{km}}{\tfrac{1}{3600}\,\text{h}} = 3{,}6\,\text{km/h}$.
 **Sijoitus:** $v = \sqrt{0{,}10\cdot 9{,}81\,\text{m/s}^2\cdot 60\,\text{m}} = \sqrt{58{,}86\,\text{m}^2/\text{s}^2} = 7{,}672\,\text{m/s} = 7{,}672\cdot 3{,}6\,\text{km/h} = 27{,}62\,\text{km/h}$
 **Vastaus:** $28\,\text{km/h}$. Vastauksessa on kaksi merkitsevää numeroa, kuten säteessä $60\,\text{m}$ ja kertoimessa $0{,}10$.
@@ -140,7 +140,7 @@ T 25 0
 a oikea
 akselit 0
 ```
-**Kaava:** $x$: $T = m\dfrac{v^2}{r}$, missä $T$ on narun jännitysvoima, joten $v = \sqrt{\dfrac{T r}{m}}$. Lisäksi $v = 2\pi r f$, joten $f = \dfrac{v}{2\pi r}$
+**Kaava:** $$\begin{aligned} \Sigma F_x &= T = m a_\text{n} \\ a_\text{n} &= \dfrac{v^2}{r} \\ v &= \sqrt{\dfrac{T r}{m}} \\ v &= 2\pi r f \\ f &= \dfrac{v}{2\pi r} \end{aligned}$$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. $1\,\text{Hz} = 1\,\text{1/s}$.
 **Sijoitus:** $v = \sqrt{\dfrac{25\,\text{N}\cdot 0{,}80\,\text{m}}{0{,}40\,\text{kg}}} = \sqrt{50\,\text{m}^2/\text{s}^2} = 7{,}071\,\text{m/s}$ ja $f = \dfrac{7{,}071\,\text{m/s}}{2\pi\cdot 0{,}80\,\text{m}} = 1{,}407\,\text{Hz}$
 **Vastaus:** $1{,}4\,\text{Hz}$. Vastauksessa on kaksi merkitsevää numeroa, kuten massassa, säteessä ja narun kestossa.
@@ -159,7 +159,7 @@ F_mu 25 oikea
 a oikea
 akselit 0
 ```
-**Kaava:** $y$: $N - mg = 0$ ja $x$: $F_\mu = m\dfrac{v^2}{r}$. Ehto $F_\mu \le 0{,}25\,mg$ antaa $m\dfrac{v^2}{r} \le 0{,}25\,mg$, joten $r \ge \dfrac{v^2}{0{,}25\,g}$
+**Kaava:** $$\begin{aligned} \Sigma F_y &= 0 \Rightarrow N = mg \\ F_\mu &= m a_\text{n} = m\dfrac{v^2}{r} \\ F_\mu &\le 0{,}25\,mg \\ r &\ge \dfrac{v^2}{0{,}25\,g} \end{aligned}$$
 **Muunnokset:** $v = 80\,\text{km/h} = \dfrac{80\cdot 1000\,\text{m}}{3600\,\text{s}} = 22{,}22\,\text{m/s}$
 **Sijoitus:** $r = \dfrac{(22{,}22\,\text{m/s})^2}{0{,}25\cdot 9{,}81\,\text{m/s}^2} = \dfrac{493{,}8\,\text{m}^2/\text{s}^2}{2{,}4525\,\text{m/s}^2} = 201{,}4\,\text{m}$
 **Vastaus:** $200\,\text{m}$ eli $2{,}0 \cdot 10^{2}\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, kuten nopeudessa $80\,\text{km/h}$ ja kertoimessa $0{,}25$.
@@ -181,7 +181,7 @@ Väite keskipakoisvoimasta on väärä, koska mikään kappale ei vedä matkusta
 **Annettu:** alkuperäinen normaalikiihtyvyys $a_1 = 1{,}0\,\text{m/s}^2$, uusi nopeus $v_2 = 3\,v_1$, sama kaarre eli sama säde $r$
 **Kysytty:** uusi normaalikiihtyvyys $a_2$ yksikössä $\text{m/s}^2$
 **Periaate:** Kaarre on sama, joten säde ei muutu. Normaalikiihtyvyys $\tfrac{v^2}{r}$ on suoraan verrannollinen nopeuden neliöön. Kun nopeus kolminkertaistuu, kiihtyvyys kasvaa yhdeksänkertaiseksi.
-**Kaava:** $a_1 = \dfrac{v_1^2}{r}$ ja $a_2 = \dfrac{(3\,v_1)^2}{r} = 9\,\dfrac{v_1^2}{r}$, joten $a_2 = 9\,a_1$
+**Kaava:** $$\begin{aligned} a_1 &= \dfrac{v_1^2}{r} \\ a_2 &= \dfrac{(3\,v_1)^2}{r} \\ a_2 &= 9\,\dfrac{v_1^2}{r} \\ a_2 &= 9\,a_1 \end{aligned}$$
 **Muunnokset:** Muunnoksia ei tarvita. Kiihtyvyys on jo yksikössä $\text{m/s}^2$, ja nopeus esiintyy vain suhteena.
 **Sijoitus:** $a_2 = 9\cdot 1{,}0\,\text{m/s}^2 = 9{,}0\,\text{m/s}^2$
 **Vastaus:** $9{,}0\,\text{m/s}^2$. Vastauksessa on kaksi merkitsevää numeroa, kuten alkuperäisessä kiihtyvyydessä $1{,}0\,\text{m/s}^2$.
@@ -194,7 +194,7 @@ Väite keskipakoisvoimasta on väärä, koska mikään kappale ei vedä matkusta
 **Kuvaajan lukeminen:** Lasketaan $v^2$ jokaiselle riville: $9{,}0$, $16$, $25$, $36$ ja $49\,\text{m}^2/\text{s}^2$. Pisteet $(v^2, F)$ ovat suoran lähellä mutta eivät aivan sen päällä, koska mittauksissa on pientä hajontaa. Suora piirrettiin silmämääräisesti origon kautta pisteiden lomaan.
 
 Se sattuu kulkemaan pisteen $(49\,\text{m}^2/\text{s}^2,\ 1{,}53\,\text{N})$ kautta. Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä: origosta ja tästä pisteestä. Tarkistus: suureiden $F/v^2$ keskiarvo on $0{,}0312\,\text{kg/m}$, ja pienimmän neliösumman sovitus antaa saman massan $25{,}0\,\text{g}$.
-**Kaava:** $k = \dfrac{\Delta F}{\Delta(v^2)}$ ja $k = \dfrac{m}{r}$, joten $m = k\,r$
+**Kaava:** $$\begin{aligned} F &= m a_\text{n} = m\dfrac{v^2}{r} \\ F &= \dfrac{m}{r}\,v^2 \\ k &= \dfrac{\Delta F}{\Delta(v^2)} = \dfrac{m}{r} \\ m &= k\,r \end{aligned}$$
 **Muunnokset:** $1\,\text{kg} = 1000\,\text{g}$, joten $m$ muutetaan lopuksi grammoiksi.
 **Sijoitus:** $k = \dfrac{1{,}53\,\text{N} - 0\,\text{N}}{49\,\text{m}^2/\text{s}^2 - 0\,\text{m}^2/\text{s}^2} = 0{,}03122\,\text{kg/m}$ ja $m = 0{,}03122\,\tfrac{\text{kg}}{\text{m}}\cdot 0{,}80\,\text{m} = 0{,}02498\,\text{kg} = 24{,}98\,\text{g}$
 **Vastaus:** $25\,\text{g}$. Vastauksessa on kaksi merkitsevää numeroa, kuten säteessä $0{,}80\,\text{m}$.
@@ -213,7 +213,7 @@ F_mu 55 oikea
 a oikea
 akselit 0
 ```
-**Kaava:** $y$: $N - mg = 0$ ja $x$: $\mu_0 N = m\dfrac{v^2}{r}$, joten $\mu_0\, mg = m\dfrac{v^2}{r}$ ja $\mu_0 = \dfrac{v^2}{g\,r}$
+**Kaava:** $$\begin{aligned} \Sigma F_y &= 0 \Rightarrow N = mg \\ F_\mu &= \mu_0 N = \mu_0 mg \\ F_\mu &= m a_\text{n} = m\dfrac{v^2}{r} \\ \mu_0 &= \dfrac{F_\mu}{mg} = \dfrac{v^2}{g\,r} \end{aligned}$$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** Riveittäin: $\mu_0 = \dfrac{(10{,}4\,\text{m/s})^2}{9{,}81\,\text{m/s}^2\cdot 20\,\text{m}} = 0{,}551$, $\ 0{,}539$, $\ 0{,}558$ ja $0{,}542$. Summa on $2{,}191$, joten keskiarvo on $\mu_{0,\text{ka}} = \dfrac{2{,}191}{4} = 0{,}5477$
 **Vastaus:** $0{,}55$. Vastauksessa on kaksi merkitsevää numeroa, kuten nopeuksissa ja säteissä.
@@ -223,7 +223,7 @@ akselit 0
 **Annettu:** $m = 850\,\text{kg}$, $v = 18\,\text{m/s}$, $r = 75\,\text{m}$, tie vaakasuora; oppilaan tulos $7344\,\text{N}$
 **Kysytty:** a) oppilaan virhe, b) kitkavoima $F_\mu$ yksikössä $\text{kN}$
 **Periaate:** Auto on tasaisessa ympyräliikkeessä. Newtonin toisen lain mukaan autoon vaikuttavien todellisten voimien summa osoittaa kohti keskipistettä ja on $m\tfrac{v^2}{r}$. Vaakasuunnassa ainoa todellinen voima on tien kitka, joten kitka on tämä summa. Todellista keskipakoisvoimaa ei ole. Siksi sitä ei piirretä voimakuvioon eikä lasketa mukaan.
-**Kaava:** $x$ (kohti keskipistettä): $F_\mu = m\dfrac{v^2}{r}$
+**Kaava:** $$\begin{aligned} \Sigma F_x &= F_\mu \\ \Sigma F_x &= m a_\text{n} \\ a_\text{n} &= \dfrac{v^2}{r} \\ F_\mu &= m\dfrac{v^2}{r} \end{aligned}$$
 **Muunnokset:** Suureet ovat SI-yksiköissä. Tulos muutetaan lopuksi kilonewtoneiksi, $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** $F_\mu = 850\,\text{kg}\cdot\dfrac{(18\,\text{m/s})^2}{75\,\text{m}} = 850\,\text{kg}\cdot 4{,}32\,\text{m/s}^2 = 3672\,\text{N} = 3{,}672\,\text{kN}$
 **Vastaus:** $3{,}7\,\text{kN}$ kohti kaarteen keskipistettä. Vastauksessa on kaksi merkitsevää numeroa, kuten nopeudessa $18\,\text{m/s}$ ja säteessä $75\,\text{m}$.
@@ -250,7 +250,7 @@ Tukivoima osoittaa alas ja on puolet painosta, kuten kuviossa C. Kuviossa A tuki
 **Kysytty:** kaarteen säde $r$ yksikössä $\text{m}$
 **Periaate:** Auto on tasaisessa ympyräliikkeessä. Silloin normaalikiihtyvyys eli kohti keskipistettä osoittava kiihtyvyys on $a_\text{n} = \tfrac{v^2}{r}$. Kaikki käyrän pisteet kuuluvat samaan kaarteeseen. Siksi yksi luettu piste riittää säteen laskemiseen.
 **Kuvaajan lukeminen:** Merkitty piste on kohdassa, jossa pystysuora apuviiva $v = 15\,\text{m/s}$ ja vaakasuora apuviiva $a_\text{n} = 3{,}0\,\text{m/s}^2$ kohtaavat. Luetaan siitä nopeus ja kiihtyvyys. Säde lasketaan niistä.
-**Kaava:** $a_\text{n} = \dfrac{v^2}{r}$, josta $r = \dfrac{v^2}{a_\text{n}}$
+**Kaava:** $$\begin{aligned} a_\text{n} &= \dfrac{v^2}{r} \\ r &= \dfrac{v^2}{a_\text{n}} \end{aligned}$$
 **Muunnokset:** Yksiköt ovat jo $\text{m/s}$ ja $\text{m/s}^2$. Muunnoksia ei tarvita.
 **Sijoitus:** $r = \dfrac{(15\,\text{m/s})^2}{3{,}0\,\text{m/s}^2} = \dfrac{225\,\text{m}^2/\text{s}^2}{3{,}0\,\text{m/s}^2} = 75\,\text{m}$
 **Vastaus:** $r = 75\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, koska luettu kiihtyvyys $3{,}0\,\text{m/s}^2$ on kahdella numerolla.
@@ -282,7 +282,7 @@ a 270
 v 180
 akselit 0
 ```
-**Kaava:** $r = \dfrac{v^2}{a_\text{n}}$. Alhaalla $y$ ylös: $N_1 - mg = ma_1$, joten $N_1 = m(g + a_1)$. Ylhäällä $y$ alas kohti keskipistettä: $N_2 + mg = ma_2$, joten $N_2 = m(a_2 - g)$. Tukivoima on nolla, kun $mg = m\tfrac{v_\text{min}^2}{r}$, joten $v_\text{min} = \sqrt{g\,r}$
+**Kaava:** $$\begin{aligned} a_\text{n} &= \dfrac{v^2}{r} \\ r &= \dfrac{v^2}{a_\text{n}} \\ \Sigma F_1 &= N_1 - mg = m a_1 \\ N_1 &= m(g + a_1) \\ \Sigma F_2 &= N_2 + mg = m a_2 \\ N_2 &= m(a_2 - g) \\ N_2 &= 0 \Rightarrow a_2 = g \\ a_2 &= \dfrac{v_\text{min}^2}{r} \\ v_\text{min} &= \sqrt{g\,r} \end{aligned}$$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** a) $r_1 = \dfrac{(27{,}2\,\text{m/s})^2}{53{,}2\,\text{m/s}^2} = 13{,}91\,\text{m}$ ja $r_2 = \dfrac{(14{,}0\,\text{m/s})^2}{14{,}1\,\text{m/s}^2} = 13{,}90\,\text{m}$. Summa on $27{,}81\,\text{m}$, joten keskiarvo on $13{,}90\,\text{m}$.
 b) $N_2 = 60{,}0\,\text{kg}\cdot(14{,}1 - 9{,}81)\,\text{m/s}^2 = 60{,}0\,\text{kg}\cdot 4{,}29\,\text{m/s}^2 = 257{,}4\,\text{N}$ ja $N_1 = 60{,}0\,\text{kg}\cdot(9{,}81 + 53{,}2)\,\text{m/s}^2 = 3780{,}6\,\text{N}$. Painoa $mg = 588{,}6\,\text{N}$ verrataan: $\tfrac{N_1}{mg} = \tfrac{3780{,}6}{588{,}6} = 6{,}42$.
@@ -305,7 +305,11 @@ F_mu 42,8 alas
 a vasen
 akselit 0
 ```
-**Kaava:** Ilman kitkaa ($F_\mu = 0$): $x$: $N\sin\alpha = m\dfrac{v_0^2}{r}$ ja $y$: $N\cos\alpha = mg$, joten jakamalla $\tan\alpha = \dfrac{v_0^2}{g\,r}$ ja $v_0 = \sqrt{g\,r\tan\alpha}$. Kitkan kanssa: $x$: $N\sin\alpha + \mu_0 N\cos\alpha = m\dfrac{v^2}{r}$ ja $y$: $N\cos\alpha - \mu_0 N\sin\alpha = mg$. Yhtälöt jaetaan keskenään, jolloin $N$ ja $m$ supistuvat:
+**Kaava:** Ilman kitkaa ($F_\mu = 0$): $$\begin{aligned} \Sigma F_y &= N\cos\alpha - mg = 0 \\ \Sigma F_x &= N\sin\alpha = m\dfrac{v_0^2}{r} \\ \tan\alpha &= \dfrac{N\sin\alpha}{N\cos\alpha} \\ \tan\alpha &= \dfrac{v_0^2}{g\,r} \\ v_0 &= \sqrt{g\,r\tan\alpha} \end{aligned}$$
+
+Kitkan kanssa: $$\begin{aligned} \Sigma F_x &= N\sin\alpha + \mu_0 N\cos\alpha \\ \Sigma F_x &= m\dfrac{v^2}{r} \\ \Sigma F_y &= N\cos\alpha - \mu_0 N\sin\alpha \\ \Sigma F_y &= mg \end{aligned}$$
+
+Yhtälöt jaetaan keskenään, jolloin $N$ ja $m$ supistuvat:
 
 $$\dfrac{\sin\alpha + \mu_0\cos\alpha}{\cos\alpha - \mu_0\sin\alpha} = \dfrac{v^2}{g\,r}$$
 
@@ -330,7 +334,7 @@ Vaakasuorassa kaarteessa ($\alpha = 0$) olisi $v = \sqrt{\mu_0\,g\,r} = \sqrt{0{
 **Kysytty:** pienin lepokitkakerroin $\mu_0$ (ei yksikköä)
 **Periaate:** Kitka on ainoa vaakasuuntainen voima. Siksi se on kokonaisvoima kohti kaarteen keskipistettä. Tie on vaakasuora eikä auto kiihdy pystysuunnassa, joten tukivoima on $N = mg$. Auto pysyy tiellä, kun tarvittava kitka ei ole suurempi kuin lähtökitka $\mu_0 N$. Rajatapauksessa $F = \mu_0 N$.
 **Kuvaajan lukeminen:** Käyrälle merkitty piste on kohdassa, jossa apuviivat $v = 20\,\text{m/s}$ ja $F = 8{,}0\,\text{kN}$ kohtaavat. Pystyakselin yksikkö on kilonewton. Tarvittava kitka nopeudella $20\,\text{m/s}$ luetaan siis arvoksi $F = 8{,}0\,\text{kN}$.
-**Kaava:** $F = \mu_0 N$ ja $N = mg$, joten $\mu_0 = \dfrac{F}{mg}$
+**Kaava:** $$\begin{aligned} F &= \mu_0 N \\ N &= mg \\ \mu_0 &= \dfrac{F}{mg} \end{aligned}$$
 **Muunnokset:** $F = 8{,}0\,\text{kN} = 8{,}0 \cdot 1000\,\text{N} = 8000\,\text{N}$
 **Sijoitus:** $\mu_0 = \dfrac{8000\,\text{N}}{1200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2} = \dfrac{8000\,\text{N}}{11772\,\text{N}} = 0{,}6796$
 **Vastaus:** $\mu_0 \approx 0{,}68$. Vastauksessa on kaksi merkitsevää numeroa, koska luettu voima $8{,}0\,\text{kN}$ on kahdella numerolla.

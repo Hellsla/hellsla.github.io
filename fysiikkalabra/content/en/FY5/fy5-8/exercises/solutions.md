@@ -12,7 +12,7 @@
 **Given:** stretching force $F_\text{v} = 450\,\text{N}$, extension $x = 0.050\,\text{m}$
 **Find:** the spring constant $k$ in $\text{N/m}$
 **Principle:** The force stretching a spring is directly proportional to the extension when the spring is not stretched too much. The constant of proportionality is the spring constant, which tells how many newtons are needed per metre of extension.
-**Formula:** $F_\text{v} = kx$, so $k = \dfrac{F_\text{v}}{x}$
+**Formula:** $$\begin{aligned} F_\text{v} &= kx \\ k &= \dfrac{F_\text{v}}{x} \end{aligned}$$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $k = \dfrac{450\,\text{N}}{0.050\,\text{m}} = 9000\,\text{N/m}$
 **Answer:** $9000\,\text{N/m}$ or $9.0 \cdot 10^{3}\,\text{N/m}$, two significant figures like the extension $0.050\,\text{m}$.
@@ -43,7 +43,7 @@
 **Given:** spring constant $k = 40\,\text{N/m}$, stretching force $F_\text{v} = 6.0\,\text{N}$
 **Find:** the extension $x$ in $\text{m}$
 **Principle:** The force stretching a spring is directly proportional to the extension. When the force and the spring constant are known, the extension is obtained by solving it from the expression.
-**Formula:** $F_\text{v} = kx$, so $x = \dfrac{F_\text{v}}{k}$
+**Formula:** $$\begin{aligned} F_\text{v} &= kx \\ x &= \dfrac{F_\text{v}}{k} \end{aligned}$$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $x = \dfrac{6.0\,\text{N}}{40\,\text{N/m}} = 0.15\,\text{m}$
 **Answer:** $0.15\,\text{m}$, two significant figures like the force $6.0\,\text{N}$ and the spring constant $40\,\text{N/m}$.
@@ -53,7 +53,7 @@
 **Given:** extension $x = 8.0\,\text{cm}$, stretching force $F_\text{v} = 6.0\,\text{N}$ at the end of the extension
 **Find:** the elastic potential energy $E_\text{p}$ in $\text{J}$
 **Principle:** The reading of the force meter is the stretching force. From it and the extension we first get the spring constant. The elastic potential energy is the work of the stretching force, the area of the triangle of the $(x, F_\text{v})$ graph.
-**Formula:** $F_\text{v} = kx$, so $k = \dfrac{F_\text{v}}{x}$, and $E_\text{p} = \tfrac{1}{2}kx^2$
+**Formula:** $$\begin{aligned} F_\text{v} &= kx \\ k &= \dfrac{F_\text{v}}{x} \\ E_\text{p} &= \tfrac{1}{2}F_\text{v}x \\ E_\text{p} &= \tfrac{1}{2}kx^2 \end{aligned}$$
 **Conversions:** $x = 8.0\,\text{cm} = 8.0 \cdot 0.01\,\text{m} = 0.080\,\text{m}$
 **Substitution:** $k = \dfrac{6.0\,\text{N}}{0.080\,\text{m}} = 75\,\text{N/m}$ and $E_\text{p} = \tfrac{1}{2}\cdot 75\,\tfrac{\text{N}}{\text{m}}\cdot(0.080\,\text{m})^2 = 0.24\,\text{J}$
 **Answer:** $0.24\,\text{J}$, two significant figures like the force $6.0\,\text{N}$ and the extension $8.0\,\text{cm}$.
@@ -63,7 +63,7 @@
 **Given:** compression $x = 6.0\,\text{cm}$, elastic potential energy $E_\text{p} = 0.90\,\text{J}$
 **Find:** the spring constant $k$ in $\text{N/m}$
 **Principle:** The elastic potential energy of a compressed spring depends on the square of the compression in the same way as that of a stretched spring on the extension. When the energy and the compression are known, the spring constant is solved from the expression for the energy.
-**Formula:** $E_\text{p} = \tfrac{1}{2}kx^2$, so $k = \dfrac{2E_\text{p}}{x^2}$
+**Formula:** $$\begin{aligned} E_\text{p} &= \tfrac{1}{2}kx^2 \\ k &= \dfrac{2E_\text{p}}{x^2} \end{aligned}$$
 **Conversions:** $x = 6.0\,\text{cm} = 6.0 \cdot 0.01\,\text{m} = 0.060\,\text{m}$
 **Substitution:** $k = \dfrac{2\cdot 0.90\,\text{J}}{(0.060\,\text{m})^2} = \dfrac{1.80\,\text{J}}{0.0036\,\text{m}^2} = 500\,\text{N/m}$
 **Answer:** $500\,\text{N/m}$ or $5.0 \cdot 10^{2}\,\text{N/m}$, two significant figures like the energy and the compression.
@@ -73,7 +73,7 @@
 **Given:** spring constant $k = 150\,\text{N/m}$, initial extension $x_1 = 3.0\,\text{cm}$, final extension $x_2 = 9.0\,\text{cm}$
 **Find:** the increase $\Delta E_\text{p}$ in the elastic potential energy in $\text{J}$
 **Principle:** The elastic potential energy depends on the extension from the rest length, not on the change in the extension. The increase is the difference between the energies of the final and initial states. In the graph it is the difference between the areas of two triangles.
-**Formula:** $\Delta E_\text{p} = \tfrac{1}{2}kx_2^2 - \tfrac{1}{2}kx_1^2 = \tfrac{1}{2}k\left(x_2^2 - x_1^2\right)$
+**Formula:** $$\begin{aligned} \Delta E_\text{p} &= E_\text{p2} - E_\text{p1} \\ E_\text{p} &= \tfrac{1}{2}kx^2 \\ \Delta E_\text{p} &= \tfrac{1}{2}kx_2^2 - \tfrac{1}{2}kx_1^2 \\ &= \tfrac{1}{2}k\left(x_2^2 - x_1^2\right) \end{aligned}$$
 **Conversions:** $x_1 = 3.0\,\text{cm} = 0.030\,\text{m}$ and $x_2 = 9.0\,\text{cm} = 0.090\,\text{m}$
 **Substitution:** $\Delta E_\text{p} = \tfrac{1}{2}\cdot 150\,\tfrac{\text{N}}{\text{m}}\cdot\left((0.090\,\text{m})^2 - (0.030\,\text{m})^2\right) = 75\,\tfrac{\text{N}}{\text{m}}\cdot 0.0072\,\text{m}^2 = 0.54\,\text{J}$
 **Answer:** $0.54\,\text{J}$, two significant figures like the extensions.
@@ -96,7 +96,7 @@
 **Principle:** The springs are already compressed by the weight of the car itself, but for a harmonic force the force is directly proportional to the compression, so the change in the force is proportional to the change in the compression: $F_2 - F_1 = k(x_2 - x_1) = k\,\Delta x$.
 
 The car is at rest before and after, so the increase in the forces of the springs cancels the weight of the passengers. The load is shared equally, so one spring carries a quarter of it.
-**Formula:** $4k\,\Delta x = \Delta m\, g$, so $k = \dfrac{\Delta m\, g}{4\,\Delta x}$
+**Formula:** $$\begin{aligned} 4\,\Delta F &= \Delta m\, g \\ \Delta F &= k\,\Delta x \\ 4k\,\Delta x &= \Delta m\, g \\ k &= \dfrac{\Delta m\, g}{4\,\Delta x} \end{aligned}$$
 **Conversions:** $\Delta x = 3.0\,\text{cm} = 3.0 \cdot 0.01\,\text{m} = 0.030\,\text{m}$; finally $1\,\text{kN/m} = 1000\,\text{N/m}$
 **Substitution:** $k = \dfrac{300\,\text{kg}\cdot 9.81\,\text{m/s}^2}{4\cdot 0.030\,\text{m}} = \dfrac{2943\,\text{N}}{0.12\,\text{m}} = 24\,525\,\text{N/m} = 24.525\,\text{kN/m}$
 **Answer:** $25\,\text{kN/m}$, two significant figures like the compression $3.0\,\text{cm}$.
@@ -110,7 +110,7 @@ The mass of the car itself was not needed, because only the changes in the force
 **Principle:** Air resistance and the mass of the spring are neglected, so mechanical energy is conserved. At the starting point the toy is at rest, and the energy is the elastic potential energy of the compressed spring.
 
 At the highest point the toy is momentarily at rest, so all the energy is gravitational potential energy, taking the zero level at the starting point.
-**Formula:** $\tfrac{1}{2}kx^2 = mgh$, so $h = \dfrac{kx^2}{2mg}$
+**Formula:** $$\begin{aligned} E_\text{p} &= \tfrac{1}{2}kx^2 \\ E_\text{p} &= mgh \\ h &= \dfrac{E_\text{p}}{mg} = \dfrac{kx^2}{2mg} \end{aligned}$$
 **Conversions:** $x = 3.0\,\text{cm} = 0.030\,\text{m}$ and $m = 50\,\text{g} = 50 \cdot 0.001\,\text{kg} = 0.050\,\text{kg}$
 **Substitution:** $h = \dfrac{200\,\tfrac{\text{N}}{\text{m}}\cdot(0.030\,\text{m})^2}{2\cdot 0.050\,\text{kg}\cdot 9.81\,\text{m/s}^2} = \dfrac{0.18\,\text{J}}{0.981\,\text{N}} = 0.1835\,\text{m}$
 **Answer:** $0.18\,\text{m}$ or about $18\,\text{cm}$, two significant figures like the compression $3.0\,\text{cm}$ and the mass $50\,\text{g}$.
@@ -134,7 +134,7 @@ F_2 2000 vasen @oikea työntö
 a vasen
 akselit 0
 ```
-**Formula:** $x$: $\Sigma F = F_1 + F_2 = -k_1x - k_2x = -(k_1 + k_2)\,x$, and the magnitude of the net force is $|\Sigma F| = (k_1 + k_2)\,x$
+**Formula:** $$\begin{aligned} \Sigma F &= F_1 + F_2 \\ F_1 &= -k_1x \\ F_2 &= -k_2x \\ \Sigma F &= -(k_1 + k_2)\,x \\ |\Sigma F| &= (k_1 + k_2)\,x \end{aligned}$$
 **Conversions:** $x = 4.0\,\text{cm} = 4.0 \cdot 0.01\,\text{m} = 0.040\,\text{m}$
 **Substitution:** $|\Sigma F| = \left(30\,\tfrac{\text{N}}{\text{m}} + 50\,\tfrac{\text{N}}{\text{m}}\right)\cdot 0.040\,\text{m} = 80\,\tfrac{\text{N}}{\text{m}}\cdot 0.040\,\text{m} = 3.2\,\text{N}$
 **Answer:** $3.2\,\text{N}$ to the left, towards the equilibrium position, two significant figures like the displacement $4.0\,\text{cm}$.
@@ -199,7 +199,7 @@ close to the value of the fitted line. The order of magnitude is usual for a lab
 **Given:** rest length $L_0 = 12.0\,\text{cm}$, length of the loaded spring $L = 20.0\,\text{cm}$, mass $m = 0.200\,\text{kg}$; $g = 9.81\,\text{m/s}^2$
 **Find:** the student's error and the correct spring constant $k$ in $\text{N/m}$
 **Principle:** In the expression $F_\text{v} = kx$ the quantity $x$ is the extension of the spring from its rest length, not the whole length of the spring. A mass hanging at rest pulls the spring with the force $F_\text{v} = mg$, and the spring has then become longer than its rest length.
-**Formula:** $x = L - L_0$ and $F_\text{v} = mg = kx$, so $k = \dfrac{mg}{L - L_0}$
+**Formula:** $$\begin{aligned} x &= L - L_0 \\ F_\text{v} &= mg \\ F_\text{v} &= kx \\ k &= \dfrac{F_\text{v}}{x} = \dfrac{mg}{L - L_0} \end{aligned}$$
 **Conversions:** $L - L_0 = 20.0\,\text{cm} - 12.0\,\text{cm} = 8.0\,\text{cm} = 8.0 \cdot 0.01\,\text{m} = 0.080\,\text{m}$
 **Substitution:** $k = \dfrac{0.200\,\text{kg}\cdot 9.81\,\text{m/s}^2}{0.080\,\text{m}} = \dfrac{1.962\,\text{N}}{0.080\,\text{m}} = 24.525\,\text{N/m}$
 **Answer:** The student used the whole length of the spring $0.200\,\text{m}$ as the extension and not the extension $0.080\,\text{m}$. The correct spring constant is $25\,\text{N/m}$ (more precisely $24.525\,\text{N/m}$), two significant figures like the extension $8.0\,\text{cm}$.
@@ -209,7 +209,7 @@ close to the value of the fitted line. The order of magnitude is usual for a lab
 **Given:** stretching force $F_\text{v} = 12\,\text{N}$ for both, $k_1 = 80\,\text{N/m}$, $k_2 = 240\,\text{N/m}$
 **Find:** a) the extensions $x_1$ and $x_2$, b) the energies $E_1$ and $E_2$ and c) the energy difference $\Delta E = E_1 - E_2$ in $\text{J}$
 **Principle:** The force stretching a spring is $F_\text{v} = kx$, so the extension is $x = \tfrac{F_\text{v}}{k}$. The elastic potential energy of a spring is the area of the triangle of the $(x, F_\text{v})$ graph, $E_\text{p} = \tfrac{1}{2}kx^2$. With the same force the soft spring stretches more, so the base of its triangle is longer and its area larger.
-**Formula:** $x = \dfrac{F_\text{v}}{k}$, $E_\text{p} = \tfrac{1}{2}kx^2 = \tfrac{1}{2}F_\text{v}x$ and $\Delta E = E_1 - E_2$
+**Formula:** $$\begin{aligned} F_\text{v} &= kx \\ x &= \dfrac{F_\text{v}}{k} \\ E_\text{p} &= \tfrac{1}{2}F_\text{v}x \\ \Delta E &= E_1 - E_2 \end{aligned}$$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** The extensions are $x_1 = \dfrac{12\,\text{N}}{80\,\text{N/m}} = 0.15\,\text{m}$ and $x_2 = \dfrac{12\,\text{N}}{240\,\text{N/m}} = 0.050\,\text{m}$. The energies are $E_1 = \tfrac{1}{2}\cdot 12\,\text{N}\cdot 0.15\,\text{m} = 0.90\,\text{J}$ and $E_2 = \tfrac{1}{2}\cdot 12\,\text{N}\cdot 0.050\,\text{m} = 0.30\,\text{J}$. The difference is $\Delta E = 0.90\,\text{J} - 0.30\,\text{J} = 0.60\,\text{J}$.
 **Answer:** The softer spring has $0.60\,\text{J}$ more energy, two significant figures like the force $12\,\text{N}$. The student is wrong: with the same force the energy is larger in the soft spring.
@@ -266,7 +266,7 @@ The arrow starts from rest, so its kinetic energy at launch is $\tfrac{1}{2}mv^2
 **Reading the graph:** The points are close to a line through the origin that passes through the point $(0.50\,\text{m};\ 151\,\text{N})$.
 
 The quotients $\tfrac{F_\text{v}}{x}$ are $295$, $307$, $303$ and $302\,\text{N/m}$, so they are approximately constant and the harmonic force is acceptable. The slope is read from two points of the fitted line: the origin and the point $(0.50\,\text{m};\ 151\,\text{N})$.
-**Formula:** $k = \dfrac{F_\text{v}}{x}$, $E_\text{p} = \tfrac{1}{2}kx^2$, $E_\text{k} = \tfrac{1}{2}mv^2$ and $\eta = \dfrac{E_\text{k}}{E_\text{p}}$
+**Formula:** $$\begin{aligned} F_\text{v} &= kx \\ k &= \dfrac{F_\text{v}}{x} \\ E_\text{p} &= \tfrac{1}{2}kx^2 \\ E_\text{k} &= \tfrac{1}{2}mv^2 \\ \eta &= \dfrac{E_\text{k}}{E_\text{p}} \end{aligned}$$
 **Conversions:** $x = 50\,\text{cm} = 50 \cdot 0.01\,\text{m} = 0.50\,\text{m}$ and $m = 25\,\text{g} = 25 \cdot 0.001\,\text{kg} = 0.025\,\text{kg}$
 **Substitution:** $k = \dfrac{151\,\text{N}}{0.50\,\text{m}} = 302\,\text{N/m}$, and the energy is
 ```latex
