@@ -1,6 +1,6 @@
 # Sovella itsenäisesti FY6 (fi): pedagogy packet
 
-Course: FY6 Sähkö, 2 op. Content hash now: 5fb6f421aeb38b44 (python scripts/practice.py hash FY6). Reports: science=stale, pedagogy=stale, visual=stale
+Course: FY6 Sähkö, 2 op. Content hash now: 37ff55bd05bc7116 (python scripts/practice.py hash FY6). Reports: science=stale, pedagogy=stale, visual=stale
 
 ## Scope
 Central contents: jännite ja sähkövirta tasavirtapiireissä; resistanssi ja Ohmin laki; sähköteho ja Joulen laki; vastusten kytkennät ja Kirchhoffin lait; akut ja akun latauspiiri; Coulombin laki ja homogeeninen sähkökenttä; potentiaalienergia ja potentiaali homogeenisessa sähkökentässä; kondensaattori ja kondensaattorin energia; puolijohteet, diodi ja LED komponentteina virtapiirissä; sähköturvallisuus: sulake, suojausluokitus ja läpilyöntilujuus
@@ -46,7 +46,7 @@ practice.py check: OK
 {"fy6-s1-fit-slope": -1.1943, "fy6-s1-fit-icpt": 4.598, "fy6-s1-slope": -1.2, "fy6-s1-b-E": 4.6, "fy6-s1-b-Rs": 1.2, "fy6-s1-Ik": 3.833, "fy6-s1-c-P": 2.0, "fy6-s1-c-I": 0.5, "fy6-s1-c-Pbatt": 0.3, "fy6-s1-c-osuus": 13.04, "fy6-s1-c-U": 4.0, "fy6-s1-d-dRs": 0.08, "fy6-s1-d-maxres": 0.02, "fy6-s2-RA": 6.0, "fy6-s2-RB": 12.0, "fy6-s2-Rp": 4.0, "fy6-s2-Rtot": 4.8, "fy6-s2-a": 2.5, "fy6-s2-a-UL": 10.0, "fy6-s2-b": 16.667, "fy6-s2-b-PB": 8.333, "fy6-s2-b-Pc": 5.0, "fy6-s2-b-Pbatt": 30.0, "fy6-s2-b-eff": 0.8333, "fy6-s2-c-I": 1.7647, "fy6-s2-c-UA": 10.5882, "fy6-s2-c-PA": 18.685, "fy6-s2-c-Pc": 2.491, "fy6-s2-c-Ucable": 1.412, "fy6-s2-c-Ucable0": 2.0, "fy6-s2-RC": 4.0, "fy6-s2-d-Rp": 2.0, "fy6-s2-d": 4.2857, "fy6-s2-d-UL": 8.571, "fy6-s2-d-PC": 18.367, "fy6-s2-d-Pc": 14.694, "fy6-s3-a-E": 300000, "fy6-s3-a": 1.8e-07, "fy6-s3-a-G": 3.924e-09, "fy6-s3-a-ratio": 45.87, "fy6-s3-a-Eair": 0.1, "fy6-s3-a-acc": 450.0, "fy6-s3-b": 13.416, "fy6-s3-b-W": 3.6e-08, "fy6-s3-b-Wg": 7.848e-10, "fy6-s3-c-Ek": 5e-09, "fy6-s3-c-share": 0.1389, "fy6-s3-c-rest": 3.1e-08, "fy6-s3-d": 3.2356799999999993e-09, "fy6-s3-d-vsF": 0.018, "fy6-s3-d-vsG": 0.825, "fy6-s4-a": 14.85, "fy6-s4-b-E": 6.864, "fy6-s4-b-Eb": 7.986, "fy6-s4-b-share": 46.22, "fy6-s4-c": 26.4, "fy6-s4-c-dQ": 26.4, "fy6-s4-c-P": 6864.0, "fy6-s4-Qa": 0.099, "fy6-s4-d-I": 0.3}
 
 ## Your job
-Judge the files below as the pedagogy reviewer (.claude/agents/pedagogy-reviewer.md, "Sovella itsenäisesti"). Write content/fi/FY6/sovella/review/pedagogy.md: line 1 `VERDICT: PASS|FAIL`, line 2 `CONTENT-HASH: 5fb6f421aeb38b44`, then Blocking, Polish, Checked (under 400 words).
+Judge the files below as the pedagogy reviewer (.claude/agents/pedagogy-reviewer.md, "Sovella itsenäisesti"). Write content/fi/FY6/sovella/review/pedagogy.md: line 1 `VERDICT: PASS|FAIL`, line 2 `CONTENT-HASH: 37ff55bd05bc7116`, then Blocking, Polish, Checked (under 400 words).
 
 ## content/fi/FY6/sovella/tasks.json
 ```
@@ -516,7 +516,7 @@ Judge the files below as the pedagogy reviewer (.claude/agents/pedagogy-reviewer
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$E \\approx 15\\,\\text{J}$"
+              "detail": "$E \\approx 14{,}9\\,\\text{J}$ (kolme merkitsevää numeroa)"
             }
           ]
         },
@@ -553,12 +553,12 @@ Judge the files below as the pedagogy reviewer (.claude/agents/pedagogy-reviewer
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$$\\begin{aligned} E_2 &= \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (220\\,\\text{V})^2 \\\\ &= 7{,}99\\,\\text{J} \\end{aligned}$$ ja $\\Delta E = 14{,}85\\,\\text{J} - 7{,}99\\,\\text{J} = 6{,}9\\,\\text{J}$."
+              "detail": "$$\\begin{aligned} E_2 &= \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (220\\,\\text{V})^2 \\\\ &= 7{,}99\\,\\text{J} \\end{aligned}$$ ja $\\Delta E = 14{,}85\\,\\text{J} - 7{,}99\\,\\text{J} = 6{,}86\\,\\text{J}$."
             },
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "Osuus on noin $46\\,\\%$, vaikka jännite pieneni vain noin $27\\,\\%$, koska energia riippuu jännitteen neliöstä: $1 - \\left(\\dfrac{220}{300}\\right)^2 \\approx 0{,}46$."
+              "detail": "Osuus on noin $46{,}2\\,\\%$, vaikka jännite pieneni vain noin $27\\,\\%$, koska energia riippuu jännitteen neliöstä: $1 - \\left(\\dfrac{220}{300}\\right)^2 \\approx 0{,}46$."
             }
           ]
         },
@@ -693,7 +693,7 @@ Lämpeneminen muuttaa myös $R_\text{s}$:ää mittauksen aikana (yleensä pienen
 
 Lähdejännitteeseen vaikutus on pieni, koska pienimmällä virralla mitattiin ensin tuoreella paristolla.
 
-*Ryöminnän suuruus.* Ryömintä tarkoittaa jännitteen hidasta muutosta ajan kuluessa silloin, kun virta pysyy samana, ja ryöminnän nopeus on jännitteen muutos aikayksikössä. Se ei ole sama asia kuin varauksenkuljettajien ryöminnän nopeus johtimessa (millimetrien luokkaa sekunnissa). Ryömintä osoittaa, että malli on idealisoitu: se käsittelee $E$:tä ja $R_\text{s}$:ää vakioina, vaikka todellinen paristo purkautuu ja lämpenee mittauksen aikana. Uusi mittaus virralla $0{,}10\,\text{A}$ antoi $4{,}45\,\text{V}$ eli $0{,}03\,\text{V}$ vähemmän kuin sarjan alussa. Sarjassa oli kuusi lukemaa, kukin noin minuutin ajan, joten ryöminnän nopeus on noin $\dfrac{0{,}03\,\text{V}}{6\,\text{min}} \approx 0{,}005\,\text{V/min}$. Pahimmillaan viimeinen piste on siis noin $0{,}03\,\text{V}$ liian alhaalla, ja kulmakerroin on liian suuri enintään $\dfrac{0{,}03\,\text{V}}{0{,}50\,\text{A}} = 0{,}06\,\Omega$.
+*Ryöminnän suuruus.* Ryömintä tarkoittaa jännitteen hidasta muutosta ajan kuluessa silloin, kun virta pysyy samana, ja ryöminnän suuruutta kuvaa jännitteen muutosnopeus eli muutos aikayksikössä. Se ei ole sama asia kuin varauksenkuljettajien ajautumisnopeus johtimessa, joka on vain alle millimetri sekunnissa (noin $0{,}07\,\text{mm/s}$ kuparijohtimessa, jonka poikkipinta-ala on $0{,}5\,\text{mm}^2$ ja virta $0{,}5\,\text{A}$). Ryömintä osoittaa, että malli on idealisoitu: se käsittelee $E$:tä ja $R_\text{s}$:ää vakioina, vaikka todellinen paristo purkautuu ja lämpenee mittauksen aikana. Uusi mittaus virralla $0{,}10\,\text{A}$ antoi $4{,}45\,\text{V}$ eli $0{,}03\,\text{V}$ vähemmän kuin sarjan alussa. Sarjassa oli kuusi lukemaa, kukin noin minuutin ajan, joten jännitteen muutosnopeus on noin $\dfrac{0{,}03\,\text{V}}{6\,\text{min}} \approx 0{,}005\,\text{V/min}$. Pahimmillaan viimeinen piste on siis noin $0{,}03\,\text{V}$ liian alhaalla, ja kulmakerroin on liian suuri enintään $\dfrac{0{,}03\,\text{V}}{0{,}50\,\text{A}} = 0{,}06\,\Omega$.
 
 *Epävarmuus.* Pisteet poikkeavat sovitetusta suorasta enintään $0{,}02\,\text{V}$. Jos suoran toinen pää nousee ja toinen laskee tämän verran, kulmakerroin muuttuu $\dfrac{2 \cdot 0{,}02\,\text{V}}{0{,}50\,\text{A}} = 0{,}08\,\Omega$ eli $R_\text{s} = (1{,}20 \pm 0{,}08)\,\Omega$. Epävarmuus on pyöristetty yhteen merkitsevään numeroon.
 
@@ -765,7 +765,6 @@ Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvi
 ### Hyväksytään myös
 - a-kohdan voi laskea lampun nimellisvirroista $I = \dfrac{P}{U}$ ja resistansseista $R = \dfrac{U}{I}$, kunhan tulokset ovat samat: $2{,}0\,\text{A}$ ja $1{,}0\,\text{A}$, $6{,}0\,\Omega$ ja $12\,\Omega$.
 - b-kohdassa lampun jännitteen saa laskea myös suoraan $U_\text{L} = R_\text{r} I = 4{,}0\,\Omega \cdot 2{,}5\,\text{A}$.
-- d-kohdassa lamppujen jännitteen ($8{,}6\,\text{V}$) voi lisäksi laskea ja todeta, että lamput palavat himmeämmin kuin aiemmin.
 
 ### Yleisiä virheitä
 - Lamppujen resistanssit lasketaan kaavalla $R = \dfrac{P}{U}$ tai $R = \dfrac{U}{P}$.
@@ -837,8 +836,8 @@ Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvi
 **Kaava:** $E = \dfrac{1}{2} C U^2$
 **Muunnokset:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$
 **Sijoitus:** $E = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (300\,\text{V})^2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 90\,000\,\text{V}^2 = 14{,}85\,\text{J}$
-**Vastaus:** $E \approx 15\,\text{J}$ ($14{,}85\,\text{J}$), kaksi merkitsevää numeroa, koska jännitteen $300\,\text{V}$ ja kapasitanssin $330\,\mu\text{F}$ tarkkuus on enintään kaksi tai kolme numeroa.
-**Järkevyys:** Energia on joulen luokkaa, kuten pienen salamalaitteen kondensaattorissa. Jos tämä energia siirtyisi nostamaan kilon painoista kappaletta, se nousisi noin $1{,}5\,\text{m}$.
+**Vastaus:** $E \approx 14{,}9\,\text{J}$ ($14{,}85\,\text{J}$), kolme merkitsevää numeroa, koska jännite $300\,\text{V}$ ja kapasitanssi $330\,\mu\text{F}$ on annettu kolmen merkitsevän numeron tarkkuudella.
+**Järkevyys:** Energia on kymmenen joulen luokkaa, kuten pienen salamalaitteen kondensaattorissa. Jos tämä energia siirtyisi nostamaan kappaletta, jonka massa on $1{,}0\,\text{kg}$, se nousisi noin $1{,}5\,\text{m}$.
 
 ### b)
 **Annettu:** $C = 330\,\mu\text{F}$, jännite ennen salamaa $U_1 = 300\,\text{V}$ ja sen jälkeen $U_2 = 220\,\text{V}$
@@ -847,8 +846,8 @@ Sulake mitoitetaan suojaamaan piirin heikointa osaa eli kaapelia: sen nimellisvi
 **Kaava:** $$\begin{aligned} E_1 &= \dfrac{1}{2} C U_1^2 \\ E_2 &= \dfrac{1}{2} C U_2^2 \\ \Delta E &= E_1 - E_2 \\ &= \dfrac{1}{2} C U_1^2 - \dfrac{1}{2} C U_2^2 \\ \text{osuus} &= \dfrac{\Delta E}{E_1} \end{aligned}$$
 **Muunnokset:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$
 **Sijoitus:** $E_1 = 14{,}85\,\text{J}$ ja $$\begin{aligned} E_2 &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text{V})^2 \\ &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 48\,400\,\text{V}^2 \\ &= 7{,}99\,\text{J} \end{aligned}$$, joten $\Delta E = 14{,}85\,\text{J} - 7{,}99\,\text{J} = 6{,}86\,\text{J}$. Osuus on $\dfrac{6{,}86\,\text{J}}{14{,}85\,\text{J}} = 0{,}46$.
-**Vastaus:** Salamaan siirtyi $\Delta E \approx 6{,}9\,\text{J}$, noin $46\,\%$ varastoidusta energiasta, kaksi merkitsevää numeroa kuten a-kohdassa.
-**Järkevyys:** Jännite pieneni vain $\dfrac{80\,\text{V}}{300\,\text{V}} \approx 27\,\%$, mutta energiaa siirtyi $46\,\%$, koska energia on verrannollinen jännitteen neliöön: $1 - \left(\dfrac{220}{300}\right)^2 = 0{,}46$. Siirtynyt energia on pienempi kuin alkuenergia, kuten pitääkin.
+**Vastaus:** Salamaan siirtyi $\Delta E \approx 6{,}86\,\text{J}$, noin $46{,}2\,\%$ varastoidusta energiasta, kolme merkitsevää numeroa kuten lähtötiedoissa.
+**Järkevyys:** Jännite pieneni vain $\dfrac{80\,\text{V}}{300\,\text{V}} \approx 27\,\%$, mutta energiaa siirtyi $46{,}2\,\%$, koska energia on verrannollinen jännitteen neliöön: $1 - \left(\dfrac{220}{300}\right)^2 = 0{,}46$. Siirtynyt energia on pienempi kuin alkuenergia, kuten pitääkin.
 
 ### c)
 **Annettu:** $C = 330\,\mu\text{F}$, jännitteen muutos $\Delta U = 300\,\text{V} - 220\,\text{V} = 80\,\text{V}$ ja kesto $\Delta t = 1{,}0\,\text{ms}$
