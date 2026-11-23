@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 78dc8c2332232d74
+CONTENT-HASH: 5fb6f421aeb38b44
 
 ## Blocking
-(none)
+None. No task names its model or formula in a heading or prompt. Every part has a rubric, the solutions run from the given data through the principle and the symbolic form to the check, and the mistakes are real.
 
 ## Polish
-- s3 b "Kerro oletuksesi" still hints that an assumption exists, but the student must still name it (weight, air resistance) and justify the energy principle; acceptable.
-- s4 b "selitä ero" signals that the fractions differ; the student must still show why (E ~ U^2). Acceptable, could be "Vertaa ja selitä mahdollinen ero".
-- Drift: defined in the task text, rate (about 0.005 V/min) and idealisation (E and R_s constant) stated in solution and rubric detail, at an 16-19-year-old level.
+- fy6-s1 text: it states the sources of error before part d asks for them ("Paristo lämpeni", the drift, the 0,03 V repeat reading). That makes d guided rather than independent. Give the repeat reading, but leave the heating and discharge for the student to name.
+- fy6-s1 text: the sentence "ei ole sama asia kuin varauksenkuljettajien ajautumisnopeus" is about a different concept and adds load to the opening text. It belongs in the solution only.
+- fy6-s4 is the weakest task. It has no source material to interpret (no graph, table or figure). Parts a to c are one formula each, and a gives away the model ("kondensaattoriin varastoitunut energia"). Rising demand comes only in b and d. Either add authentic material, for example a discharge-voltage table to interpret, or tighten a to c.
+- fy6-s4 d: one of its four rubric points is recall of the rule "huolto kuuluu ammattilaiselle". The criterion is soft and could be given to a student who writes anything sensible about safety. Make it observable: name one correct way to remove the charge, and state that the danger comes from stored energy and not from the battery.
+- fy6-s2 d asks four things at once: current, protection, the basis for choosing the fuse, and the lamp voltage. Split the lamp voltage into its own sentence or drop it. The fuse's slow response to a 36 % overload is noted as a simplification, which is honest. Keep it that way.
+- fy6-s3 "Muita tietoja" lists g and k, which hints that weight and Coulomb's law are needed. Consider giving k and g in a general constants line, so the student decides what is relevant.
+- Coverage: docs/coverage/FY6.md still lists the gap "kuvaajan laatiminen aineistosta: ohut näyttö, 2 p". Only fy6-s1 a closes it. The other gaps are closed by real tasks. Also note that no task touches a diode, LED or solar cell (fy6-14), and none touches charging or battery circuits (fy6-9) or the electric-car chapter (fy6-16), although the course scope lists them. Four tasks cannot cover everything, but s2 or s4 could take a semiconductor element.
+- Variety: the four tasks use four different kinds of source (data, circuit, field, capacitor). Only s1 and s2 have figures that must be interpreted.
 
 ## Checked
-- s3 b/c: b no longer states "no air resistance"; c "poikkeaa" no longer says smaller; the answer to c is not given by b.
-- s2 b: "todellisuudessa" removed; a does not reveal b.
-- s1: drift defined before use; solution adds the rate and idealisation; arithmetic consistent (0.03 V / 6 min).
-- Task types, levels, rubric and workload unchanged.
+Level, authenticity, rubric fairness, workload (about 15 points per task, 4 tasks, plausible for 2 op), solution quality, common mistakes, links, coverage file. I did not run the page or look at the figures; I read figures.py and the figure descriptions only.
