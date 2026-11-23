@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 665b27fbb36f8dfa
-SCOPE: delta (solutions.md Formula steps as aligned principle rows)
+SCOPE: delta md-paragraphs,numbers,typography,wording from 2a633435c63ab47d base 5b3ca4f
 
 ## Blocking
 - none

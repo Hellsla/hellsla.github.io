@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: e0d944a8c7421a99
-SCOPE: delta
+SCOPE: delta caption-label,md-paragraphs,numbers,reflow,teacher-figure,typography from f3c6399e3049def6 base e238aa9
 
 ## Blocking
 - none

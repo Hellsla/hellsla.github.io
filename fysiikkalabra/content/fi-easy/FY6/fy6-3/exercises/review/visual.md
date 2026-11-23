@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 0403a43777fa1082
-SCOPE: delta (Kaava steps of solutions.md)
+SCOPE: delta answers,comments,md-paragraphs,numbers,reflow,structure,typography,wording from 950adae5af06a27a base 8f23aa7
 
 ## Blocking
 - none

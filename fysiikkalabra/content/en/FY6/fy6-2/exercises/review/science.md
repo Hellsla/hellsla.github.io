@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 5d5b49dbc8de8981
-SCOPE: delta added-exercise from d1e122ce80fd069c base 8f23aa7ae3bd
+CONTENT-HASH: 017653cf72f2fca8
+SCOPE: delta caption-label,md-paragraphs,numbers,reflow,teacher-figure,typography,wording from 5d5b49dbc8de8981 base 98218de
 
 ## Blocking
-- none
 
 ## Polish
-- exercises/solutions.md fy6-2-L2-10 Answer — "the reading is not consistent with the manufacturer's value" can read as if the lamp or reading were faulty; the real point (already in Reasonableness) is that the lamp is not running at its rated voltage, the meter's error cannot explain the 0.08 V gap. Could say "the lamp's voltage really differs from the rated value" in the Answer line too.
-- exercises/solutions.md fy6-2-L2-09 Reasonableness — "the same follows from 0.03 V : 1.37 V" restates the result rather than checking it; a check against the range-share argument (0.02 V of digits dominates) is already there and is enough.
+- solutions.md fy6-2-L2-03 and L3-04 Formula — the new blocks label the loop and junction equations "$\Sigma U = 0$" and "$\Sigma I = 0$", the notation of the later Kirchhoff chapter; the equations themselves ($U_\text{battery} = U_\text{m} + U_\text{lamp}$, $I_1 = I_2 + I_\text{m}$) are what the solutions already used — drop the labels or say in words "the voltages of the loop add up to the source voltage".
+- solutions.md fy6-2-L2-07 Formula — the new symbol $s$ for half the range is easily read as a standard deviation, and L3-04 uses $s$ for the relative decrease and L1-03 for $\Delta U : U$ — name it in words where it is introduced ("estimate of the spread $s$") or pick distinct symbols.
+- solutions.md fy6-2-L3-05 Formula — the last row $\Delta R = \tfrac{\Delta R}{R} \cdot R$ is circular as written — write $\Delta R = \left(\tfrac{\Delta U}{U} + \tfrac{\Delta I}{I}\right) R$.
+- Previous polish on L2-10 Answer wording still applies.
 
 ## Checked
-- L2-09 recomputed: ΔU = 0.005 · 1.37 V + 2 · 0.01 V = 0.02685 V ≈ 0.03 V; answers.py, exercises.json agree; a student's 0.03 V is 11.7 % off and stays inside tolerance 0.12.
-- L2-10 recomputed: (1.45 V − 1.37 V) : 0.02685 V = 2.98; with the rounded ΔU = 0.03 V a student gets 2.67, 10.6 % off, inside 0.12; unit empty (pure number) correct.
-- Figure fy6-2/multimeter-task: display 1.37 V, pointer at −35° on the 20 V range, the error limit not shown; the description gives the same reading and range; resolution 0.01 V on 20 V with two decimals is realistic for a 3½-digit meter.
-- Error-limit model ±(p % of reading + n digits) and the consistency criterion (difference ≤ error limit, the rated value taken as exact) match the lesson's model and the guardrail term "valmistajan ilmoittama virheraja".
-- Interval 1.34–1.40 V excludes 1.45 V: conclusion consistent with the ratio > 1.
-- Both solutions complete (given, principle, symbolic formula, conversion of 0.5 %, substitution with units, rounding reason, check).
-- Inside FY6 scope (basic electrical measurements).
-- Content hash checked at start and end.
+- Diff only: Formula lines rewritten as aligned blocks (the packet's diff view drops `&` and `\\`; checked in the file that each is a proper aligned block), starting from $\Delta x = p\cdot x + n\cdot r$, the loop sum and the junction sum; algebra in L3-04 ($U = U_0 : (1 + R_1/R_2 + R_1/R_\text{m})$) correct, and the moved derivation text from Substitution into Formula loses no step.
+- Recomputed in one script: 10.6 %, 3.20, 2.17 %, 0.1522 V, 12.49 V, 0.08245 V, 5.714 V, 4.76 %, 0.0486 V, 5.997 V / 0.05 %, 117.71 Ω, 2.90 Ω, 2.98: all agree.
+- L2-03 $U_\text{lamp} = R_\text{lamp} I \approx 0$ with the condition $I \approx 0$ stated: correct model of a voltmeter in series.
+- exercises.json: only "Example data:" removed from two captions; the Given lines still say example data. answers.py unchanged.
+- Guardrails: half the range is still "a simple estimate of the spread, not the uncertainty of the mean"; error limit as manufacturer's limit; consistency criterion unchanged.
+- Picture fy6-2-multimeter-task teacher-approved; code still shows 1,37 V on the 20 V range.
+- Hash read at start and end: unchanged.

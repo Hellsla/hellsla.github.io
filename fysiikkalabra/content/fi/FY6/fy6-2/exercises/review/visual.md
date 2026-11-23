@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: f57c156658def7ed
-SCOPE: delta — Kaava step now an aligned principle-equation chain; multimeter-task figure and caption marker change
+SCOPE: delta caption-label,md-paragraphs,numbers,reflow,teacher-figure,typography,wording from 7a0d19ceab83f0dd base e238aa9
 
 ## Blocking
 (none)
