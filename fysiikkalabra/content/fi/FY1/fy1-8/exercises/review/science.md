@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: c768525a69b2d6df
-SCOPE: delta round 2 (work queue 8g, sign fix in the cooling-rate Kaava rows)
 
 ## Blocking
 - none

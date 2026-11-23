@@ -86,8 +86,7 @@ Pilotti tehty (#649, `Fig(anim=True)`/`vibrate()`) ja opettajan hyväksymä (com
 FY3 (fy3-9 micro-boyle, fy3-3 micro-model; PR #757) hyväksytty (opettaja 2026-11-19, "hyväksyn") ja katselmoitu (kaikki PASS, kolme kieltä); jäljellä FY4 (fy4-10 vuorovaikutus ja tyypit).
 
 ## 8g. Mallivastaukset perusperiaatteesta (opettaja 2026-11-13)
-Tehty: FY4 (#727, 2026-11-18; 5d FY4: FY4.tsv:n rivit jäivät, CI-selain näkee 4–6 px:n leikkaukset). FY7 tehty (PR #726, loki §8g FY7). Jäljellä FY5, FY6, FY1–FY3, FY8.
-Varattu: claude/8g-fy1 (8g FY1)
+Tehty: FY4 (#727, 2026-11-18; 5d FY4: FY4.tsv:n rivit jäivät, CI-selain näkee 4–6 px:n leikkaukset). FY7 tehty (PR #726, loki §8g FY7). FY1 tehty (PR #813: kaikki 8 lukua, Sovella ja koe, kolme kieltä; loki §8g FY1). Jäljellä FY5, FY6, FY2, FY3, FY8.
 Tehtävien, Sovellan ja kokeiden mallivastausten Kaava-vaihe alkaa perusyhtälöistä ($\eta = E_\text{hyöty}/E$, $E = Pt$, $Q = rm$, energiatase),
 sitten johdettu kaava, symbolinen sievennys loppuun, vasta sitten sijoitus. Kurssi kerrallaan `/exercises`- ja `/practice`-putkella; yhdistetään saman kurssin
 kesken olevaan tehtäväkatselmointiin (FY5, FY6, FY7), ei rinnakkain.

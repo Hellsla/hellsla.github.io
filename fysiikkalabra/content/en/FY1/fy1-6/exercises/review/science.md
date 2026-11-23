@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: bfb82ec10be5d89c
-SCOPE: delta 8g Formula-step rewrite (en), round 1
 
 ## Blocking
 - none

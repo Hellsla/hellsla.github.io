@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: a9ca591a0e693d7d
-SCOPE: delta round 2 (work queue 8g, Formula steps from basic equations; round-1 sign error fixed)
 
 ## Blocking
 - none

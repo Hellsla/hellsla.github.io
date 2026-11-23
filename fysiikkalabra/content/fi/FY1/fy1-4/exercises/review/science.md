@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 185e679af584e570
-SCOPE: delta round 1 (work queue 8g, Kaava steps from basic equations)
 
 ## Blocking
 - none
