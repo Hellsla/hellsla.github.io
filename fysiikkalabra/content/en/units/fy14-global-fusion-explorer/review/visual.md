@@ -1,6 +1,6 @@
-VERDICT: FAIL
-CONTENT-HASH: 92afe02bd2d70e19
+VERDICT: PASS
+CONTENT-HASH: fb32bb83c19af5b5
 SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
-1. Blocking: [Major] The box question shows literal asterisks: '*Model A, 1953–?*. Does...' (the closing * after '?' is not parsed as emphasis; the same defect as fy14-fr-nombres). Fix: use <em>Model A, 1953–?</em> in the pysahdy block (or fix the renderer).
-2. Checked: built page HTML placement of every box (each follows a complete paragraph or list, none between a sentence and its formula/figure, no raw markup), captures of the stage tiles; fusion-reactions selita-390-2 opened for layout around the box
+1. Blocking: none. No stray asterisks, raw $ or \n in the built HTML (the only \n are LaTeX \nu and \neq); no horizontal overflow at 390 or 1280 px; answers open cleanly and math renders.
+2. Checked: the single box after the pitfalls list, 390 and 1280.
