@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: cad0abb245786510
-SCOPE: delta added-exercise from b3bb05decca98c14 base 81db4a6fd727
+CONTENT-HASH: bbb119c55d2a3d4c
 
 ## Blocking
 - none
 
 ## Polish
-- exercises.json fy1-6-L1-09 — '3,0 s pudotuksen alkamisesta' → 'Mikä on vasaran nopeus 3,0 s kuluttua pudotuksen alkamisesta?'
+- none
 
 ## Checked
-- fy1-6-L1-09: v = gt from rest, Moon g from the table, sanity check against Earth.
-- Solution has all steps (given, asked, principle, formula, conversions, substitution, answer, sanity check); arithmetic verified.
-- Whole-set fit: the MAFY lookup task adds a new kind (table lookup) at level 1; no repeat of the worked example.
-- Finnish and reading level fine; phone readability not affected (short calculation).
+- Delta: every "Kaava"/"Formula" step in solutions.md now starts from a basic definition or equation and reaches the working form; order is a derivation a student can follow.
+- Physics and symbols agree with the Principle, Substitution and Answer steps; no answer disclosed beyond the model solution.
+- Added "Tässä/Here ..." definitions and merged-paragraph model answers are brief, correct and readable.
+- Aligned-equation blocks read as staged derivations; the packet diff shows them without line breaks, but the files on disk contain proper breaks (checked).
+- No exercise, figure or task text changed (no exercise wording changed); levels, context and wording unaffected.

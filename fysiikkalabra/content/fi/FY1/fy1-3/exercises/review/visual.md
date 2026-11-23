@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 49dfaa86f7573fbd
+CONTENT-HASH: 1d39d74a7173b860
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md 3-9 Sijoitus — numerator broken with a nested matrix reads fine at 1280 px; check once at 360 px that the stacked sums are not clipped.
+- [Minor] solutions.md fy1-3 task 3-7 Vastaus — the sentence after the answer pill starts with a lone "; virhearvio …" — drop the semicolon, start with a capital letter. (Not in this diff.)
 
 ## Checked
-batch delta review: fy1-3-open-exercises-1280-9 and -10 (3-9 Kaava, Sijoitus rows, Vastaus, Järkevyys). Captures from the lesson's shots folder, same hash.
+- delta 8g (Kaava steps as aligned display blocks), captures from the lesson's review/shots folder (current for this hash): open-exercises-1280-5 (3-7 Kaava, Vastaus).
+- Rows align at the relation sign, no clipping or overflow, fractions and subscripts legible, blocks sit apart from the text, the trailing "Tässä …" sentences read as their own line under the block; Muunnokset, Sijoitus, Vastaus and Järkevyys survived. No figures in the delta.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

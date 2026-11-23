@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: b9f6ab4d8dcb8ba1
-SCOPE: delta added-exercise from 813984b325501084 base 81db4a6fd727
+CONTENT-HASH: 15b6140af100a90a
 
 ## Blocking
 - none
 
 ## Polish
-- fy1-5-L1-09 -- Answer line `Taulukon arvosta riippuen vastaus hyväksytään ...` is vague; write `vastaus hyväksytään noin ±4 % tarkkuudella`. Text `ääni kulkee ... ajan 2,0 s` is awkward: `ääni kulkee vedessä tasaisella nopeudella 2,0 s`. Resembles fy1-5-L2-04 (sound in air) but at the right level.
+- none
 
 ## Checked
-- fy1-5-L1-09: arithmetic and solution steps verified; solution follows given, asked, principle, formula, conversion, substitution, answer, sanity check; tolerance 4 % consistent with the stated answer.
-- Placement at the end of level 1 and mix of kinds in the whole set: fits; one MAFY lookup task per lesson, hint names the table.
-- Delta scope: only the added exercise judged; other exercises not re-reviewed.
+- Delta: every "Kaava"/"Formula" step in solutions.md now starts from a basic definition or equation and reaches the working form; order is a derivation a student can follow.
+- Physics and symbols agree with the Principle, Substitution and Answer steps; no answer disclosed beyond the model solution.
+- Added "Tässä/Here ..." definitions and merged-paragraph model answers are brief, correct and readable.
+- Aligned-equation blocks read as staged derivations; the packet diff shows them without line breaks, but the files on disk contain proper breaks (checked).
+- No exercise, figure or task text changed (no exercise wording changed); levels, context and wording unaffected.

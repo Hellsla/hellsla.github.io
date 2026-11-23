@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 25de39d17f0b1d8d
-SCOPE: delta added-exercise from 442bab1479f9253c base 81db4a6fd727
+CONTENT-HASH: a9ca591a0e693d7d
 
 ## Blocking
 - none
 
 ## Polish
-- exercises.json fy1-8-L1-10 question is still awkward ("the shortest distance over which the sound must be measured to travel"); write "What is the shortest distance the sound must travel in the measurement?".
+- none
 
 ## Checked
-- Unit in the question is now typeset as $\text{km}$, consistent with the rest.
-- Formula stacked in an aligned block, two steps readable at 360 px.
-- Answer wording corrected: 1.4 km rounded up so the 5 % limit is surely met; sensible, and no longer claims a false significant-figure rule.
-- Arithmetic: 0.2/0.05 = 4.0 s, 343.4 x 4.0 = 1373.6 m = 1.37 km; backward check in Reasonableness is correct.
+- Delta: the sign fix r = -ΔT/Δt in the cooling-rate steps (two places) judged in context: with ΔT = T_end - T_start negative, the next line (T_start - T_end)/(t_end - t_start) follows exactly and r is positive.
+- Matches the Sijoitus values (2,4 / 1,0 K/min; 2,0 K/min) and the rest of the solution; no answer disclosed, no step skipped.
+- No exercise, figure or feedback text changed; earlier PASS stands for the rest.
