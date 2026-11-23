@@ -1,16 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 1d2e344571e5d8dc
+VERDICT: PASS
+CONTENT-HASH: f6e0c13fb90edba1
 Mode: delta
 
 ## Blocking
-- fy2-4/exercises/solutions.md:144 — the Formula line starts in Finnish ("Energian säilyminen ... josta") in the English solutions — fix: "Conservation of energy $E_\text{o} = E_\text{a} + E_\text{h}$, so $E_\text{h} = E_\text{o} - E_\text{a}$".
-- fy2-4/exercises/solutions.md:154 — the Formula line starts in Finnish ("Hyötysuhteen määritelmä ... josta") — fix: "Definition of efficiency $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, so $P_\text{o} = \dfrac{P_\text{a}}{\eta}$".
+(none)
 
 ## Polish
 (none)
 
 ## Checked
-- Delta: all other Formula lines start from the definition of efficiency, E = P t or conservation of energy and derive the old formula correctly; no number or answer changed.
-- The compound chains (LED vs incandescent, motor, fuel car vs electric car, heat share per year) are complete and in a sensible order.
-- Long Model answer / Answer paragraphs only split into short paragraphs; wording identical.
-- The grid-arrow Formula line (thickness proportional to energy) is correct.
+- Previous Blocking fixed: the Formula lines that began in Finnish now read "Conservation of energy ..." and "Definition of efficiency ..."; no Finnish words or subscripts remain.
+- Every Formula line starts from the definition of efficiency, E = Pt or conservation of energy, then derives the old formula correctly; no number or answer changed.
+- Multi-part chains (LED vs incandescent, motor, fuel vs electric car, heat share per year) stay complete and ordered.
+- Split paragraphs: wording identical.

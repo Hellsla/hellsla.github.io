@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 488edba2bc8932a7
-SCOPE: delta md-paragraphs,numbers,typography,wording from 575f3df5f4e893ad base 29cd249
+SCOPE: delta numbers,reflow,wording from 575f3df5f4e893ad base 5b3ca4f
 
 ## Blocking
 - none
@@ -9,9 +9,7 @@ SCOPE: delta md-paragraphs,numbers,typography,wording from 575f3df5f4e893ad base
 - none
 
 ## Checked
-- Delta: every Kaava line now opens from E_alussa = E_lopussa (or H = E/m for E = Hm, osuus = osa/kokonaisuus for the share task) before the task-specific form; answers and numbers unchanged.
-- L1-10: H = E/m before E = Hm is the basic law first, as the house rule asks.
-- L2 and L3 with the kitka-pylvaat figure: the conservation line precedes the A/C and A/B balances; the figure-reading step is untouched and gives no answer away.
-- L3-02 (perpetual motion) Kaava now names the principle before the arithmetic; the reasoning stays followable.
-- Long model answers (L1-04, L1-08, L1-09, L3-03, L3-04, L3-06) split into short paragraphs; no content lost, easier to read on a phone.
-- Finnish of the changed lines is correct and uses glossary terms (energian säilymislaki, lämpöenergia).
+- Delta (round 2): every Kaava line now opens with E_alussa = E_lopussa or the quantity's definition (H = E/m, osuus = osa/kokonaisuus) before the working form; derivation order is basic principle, then combined formula.
+- L1-10: H = E/m, so E = Hm; L3 chain task: E_tulo = E_ulos + E_lämpö first; L3 perpetual-motion task: conservation named before the loop calculation.
+- Long model answers split into short paragraphs; content identical, answers and tolerances unchanged.
+- Finnish of the changed lines correct; glossary terms intact.

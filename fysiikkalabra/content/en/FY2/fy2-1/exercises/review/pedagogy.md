@@ -1,14 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 1079c8766e1b2551
+VERDICT: PASS
+CONTENT-HASH: dc35cec443f64e55
 Mode: delta
 
 ## Blocking
-- fy2-1/exercises/solutions.md lines 5, 15, 30, 59, 117, 127, 137, 147, 192, 207 — the new opening Formula line uses Finnish subscripts, $E_\text{alussa} = E_\text{lopussa}$, in the English solutions. The lesson (Kaava, line 80) and the Principle lines of these same solutions use $E_\text{initial} = E_\text{final}$, so the student meets two different symbols for one quantity — fix: replace `alussa`/`lopussa` with `initial`/`final` in all ten lines.
-
-## Polish
 (none)
 
+## Polish
+- fy2-1/exercises/solutions.md, first Formula line (stone, L1): "so $E_\text{p} = E_\text{k}$ and $E_\text{k} = E_\text{p}$" says the same thing twice; keep "so $E_\text{k} = E_\text{p}$".
+
 ## Checked
-- Delta: Formula lines now start from E_initial = E_final (or from the definition H = E/m, share = part/whole); the derived equations are unchanged and no number changed.
-- The Reading the graph and Model answer paragraphs split into short paragraphs: content identical, easier to read on a phone.
-- L1-04, L1-05, L2 and L3 answers: split only, wording unchanged.
+- Previous Blocking fixed: no Finnish subscripts (alussa/lopussa) remain; all Formula lines use E_initial = E_final.
+- Formula lines start from E_initial = E_final, H = E/m or share = part/whole; derived equations and answers unchanged.
+- Added sentences (perpetual motion not possible; two thirds ends up as spread thermal energy) are correct and match the lesson.
+- Split paragraphs: content identical, easier on a phone.

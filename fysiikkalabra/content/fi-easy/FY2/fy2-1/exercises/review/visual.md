@@ -1,17 +1,16 @@
 VERDICT: PASS
 CONTENT-HASH: ac4d1750f63b5dec
-SCOPE: delta numbers,wording from ee5987621a7db704 base 3076572
+SCOPE: delta — Kaava lines of solutions.md rewritten to start from the basic principle (E_alussa = E_lopussa, osuus, H = E/m).
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] shared component (not this change) — in the open-exercise captures the expand button at a task's top right overlaps the end of the first text line (e.g. fy2-4 4-17, fy2-7 7-15, fy2-5 5-16) — give the task heading row its own space or right padding in the shared card.
 
 ## Checked
-- Delta: solutions.md Kaava lines rewritten to open with E_alussa = E_lopussa or the defining law (about 14 solutions).
-- fi-easy captures opened (content/fi-easy/FY2/fy2-1/review/shots/): open-exercises-1280-1 (1-2), -3 (1-3 two display blocks "eli ... joten"), -6 (1-7), open-exercises-L2-1280-2 (1-13 one-row Kaava, 1-17 inline plus display Kaava), -6.
-- Formulas render in KaTeX with units upright, equals signs aligned, no clipping or overflow; the Kaava row reads principle, then symbolic equation, then solved form, before Muunnokset and Sijoitus. Finnish reads naturally. Figures not touched by the diff.
+- fy2-1 captures opened: open-exercises-1280-1 (1-2 Kaava), open-exercises-L3-1280-4, -5 (1-22 Kaava, Muunnokset, Sijoitus rows).
+- New Kaava lines read as principle, then symbolic form, then solved form; KaTeX, units and aligned blocks intact, no clipping, solution cards undisturbed. Other changed Kaava lines are the same pattern; their captures were not each opened.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

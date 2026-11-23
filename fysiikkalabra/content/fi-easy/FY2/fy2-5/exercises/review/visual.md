@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 514101bffd1fe463
-SCOPE: delta caption-label,numbers,typography from 36d0b7187a011dd1 base 5dfe89c
+CONTENT-HASH: b1a4001c20ea8979
+SCOPE: delta — Sijoitus rows of L2-05 and L3-01 and L2-09 Kaava wording.
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md 5-23 Vastaus — the line "vastauslaatikkoon kohdan b) tulos 940 kg." still starts in lower case under VASTAUS (carried from the previous report) — capitalise: "Vastauslaatikkoon kirjoitetaan kohdan b) tulos 940 kg."
-- [Minor] solutions.md 5-18 and 5-19 Sijoitus — the substitution shows "Δm = E(1/H − 1/H) = 8,0 kg − 2,96 kg" and gives the masses only afterwards in the "missä" clause; the jump is correct but reads as a missing step. Set the two masses first, then the difference, as 5-23 does.
+- [Minor] shared component (not this change) — in the open-exercise captures the expand button at a task's top right overlaps the end of the first text line (e.g. fy2-4 4-17, fy2-7 7-15, fy2-5 5-16) — give the task heading row its own space or right padding in the shared card.
 
 ## Checked
-- Delta: exercises.json caption marker removed; Kaava and Sijoitus rewritten (basic law, combined form, then one substitution into the last symbolic form, intermediate value in parentheses) in about 11 solutions.
-- Captures opened (content/fi-easy/FY2/fy2-5/review/shots/): open-exercises-1280-5 and -7, open-exercises-L2-1280-3 and -4 (5-13 Kaava rows and Sijoitus, 5-15), open-exercises-L3-1280-7 and -8 (5-23 task, table, Kaava, nested-fraction Sijoitus blocks, Vastaus a-d).
-- Nested fractions (MJ/kg as a small stacked fraction in the denominator) are legible; blocks break at meaningful points, equals signs aligned, no clipping or overflow. Finnish reads naturally.
+- fy2-5 captures opened: open-exercises-L3-1280-1 (5-19 Sijoitus: three chains now rows aligned at = with a bare chain per quantity), -L2-1280-9 (L2-09 Kaava and Sijoitus), -L2-1280-5 (5-16 context).
+- Each Sijoitus chain starts with its quantity, equals signs aligned, units LaTeX; the 5-19 sample is the visible L3-01. L2-05's own Sijoitus capture was not located and not opened.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
