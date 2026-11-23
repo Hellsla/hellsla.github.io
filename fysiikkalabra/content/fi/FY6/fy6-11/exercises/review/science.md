@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b380572990b00c2b
+CONTENT-HASH: f8a8e923c8dbc625
+SCOPE: delta caption-label,md-paragraphs,numbers,paragraphs,reflow,teacher-figure,typography from b380572990b00c2b base 98218de
+Delta review of the Kaava steps rewritten to start from the basic equations (queue 8g) and of the model answers split into paragraphs. Categories and base come from `reviews.py` scope for science.
 
 ## Blocking
 
 ## Polish
-- solutions.md:208 — L3-04: the answer $1{,}60 \cdot 10^{-19}\,\text{C}$ (three figures) comes from masses with two figures, and it still has no rounding reason (rule 7, step 6). You could add "kolme merkitsevää numeroa, koska keskiarvo viidestä tuloksesta", or round to $1{,}6 \cdot 10^{-19}\,\text{C}$.
-- solutions.md:49 — L1-05: "voima on $120\,\mu\text{N}$ kahden merkitsevän numeron tarkkuudella" says out loud that a trailing zero is not significant, which is allowed under P7 (b) but is clumsy. Simpler: "kahden merkitsevän numeron tarkkuudella kuten varaus $4{,}0\,\text{nC}$".
 
 ## Checked
-- Hash b380572990b00c2b at the start and at the end.
-- I recomputed all 17 numeric answers in one script with my own formulas (E = F/q, F = qE, E = U/d, F/G, v = √(2eU/m), q = mg·tanα/E, q = mgd/U with integer multiples, y = ½a(L/v₀)²). All agree with answers.py and exercises.json. My least-squares slope for L1-05 is 29,9 µN/nC, which is 0,2 % from the key.
-- The round-1 blocking items are fixed. L3-01 (:109) now reads 338 V, three figures as in 450 V, and the counts 3e and 4e are exact. L3-02 (:119) reads $4{,}2 \cdot 10^{3}\,\text{km/s}$ eli $4{,}2 \cdot 10^{6}\,\text{m/s}$. The round-1 polish item for L1-02 is done too: only $1{,}0 \cdot 10^{2}\,\mu\text{N}$ is given.
-- P7 (b) elsewhere: 600 V has three figures and is never named as limiting. 70 mV, the 20-fold ratio, 50 V, 10° and 15 kV have two, and their justifications are right.
-- P7 (c): the L1-09 maximum voltage, 7,5 kV = 3,0 kV/mm · 2,5 mm, is exact, so it needs no rounding.
-- L2-05: the products are 408, 393, 408, 390, 408 and 393,6 V, with mean 400,1 V. L2-07: the points within 3 % are x = 0–6 cm, with mean 2,98·10⁴ V/m against U : d = 3,0·10⁴ V/m.
-- L3-04: n = 2, 3, 1, 4, 3. L3-05: F/G = 1360, y = 1,67 mm < 2,5 mm, and at double the voltage the drop hits at x = 8,7 mm.
-- L2-08 force diagrams: object = the grain; interactions = the Earth and the field only (vacuum). B shows G and F_s both down, with F_s ≈ 2G. Each wrong figure carries only its one intended error.
-- L1-06 and L1-07 each have exactly one correct option, and every distractor's feedback is right physics. L3-03 uses tension components without double counting.
-- Scope (Coulomb's law and the uniform field) and notation ($\overline{E}$, $\overline{F}_\text{s}$, E = U : d) match the brief.
+- The hash was f8a8e923c8dbc625 at the start and at the end. The packet's diff shows the aligned blocks flattened, so I read the actual Kaava lines on disk (solutions.md:25–126, :223). They are proper `aligned` blocks.
+- The chains start from the right basics: $W = qEd = qU$ for $E = U : d$; $F = qE$; $F = G$ with $qE = mg$ for hovering drops; $\Sigma F = ma$ for the electron; $\Sigma \overline{F} = \overline{0}$ with the tension components $T\sin\alpha = qE$ and $T\cos\alpha = mg$ (no double counting). Each is solved in symbols before substitution, and every algebraic step is right.
+- L2 drop task: $q_1U_1 = mgd = q_2U_2$ gives $U_2 = U_1 q_1 : q_2$, which is right because $m$, $g$ and $d$ are fixed.
+- The paragraph splits (L1-06 model answer, L2-07 parts a–c, L2-08 figure explanations, L3-04, L3-05 principle and parts) keep every sentence, number and causal step. The physics is unchanged.
+- The notation matches the brief: $\overline{E}$, $\overline{F}$, $E = U : d$, $F = qE$.
+- I recomputed in one script: 15 000 V/m; 2,0 mN; 15 kV; F : G = 20,4; 0,45 mN; 337,5 V; 4,19·10³ km/s; 23 nC; q₁ = 3,20·10⁻¹⁹ C. All agree with the solutions.
+- The teacher-approved pick figures and the caption-marker removal are carried (teacher-figure, caption-label). No answer, tolerance or option correctness changed.
