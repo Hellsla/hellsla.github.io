@@ -507,7 +507,7 @@
      "id": "b",
      "kind": "word",
      "points": 5,
-     "text": "Kalastaja heittää hiilikuituvavalla linjan alla. Selitä, miksi hän voi saada sähköiskun, vaikka vapa ei koske johtimeen. Arvioi pienin ilmaväli, joka voi lyödä läpi.",
+     "text": "Kalastaja heittää hiilikuituvavalla linjan alla. Selitä, miksi hän voi saada sähköiskun, vaikka vapa ei koske johtimeen. Arvioi, kuinka lyhyen ilmavälin yli läpilyönti tapahtuu varmasti.",
      "criteria": [
       {
        "text": "Selittää, että hiilikuitu johtaa sähköä, joten vavan kärki on lähes maan potentiaalissa, kun kalastaja seisoo maassa; ilmavälin yli on silloin koko johtimen ja maan välinen jännite.",

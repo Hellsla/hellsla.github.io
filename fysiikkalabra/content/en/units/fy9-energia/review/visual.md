@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 15b3f14e5f4b4e1a
+CONTENT-HASH: c28ce49ad1728e55
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] unit.md Key idea, after the chart — "recognising which sign the problem gives" is a literal rendering of "merkki" and reads oddly in English; write "recognising which type of problem it is" (or "which clue the problem gives") and then writing its law.
+- [Minor] unit.md Formula section — "(W)", "(J)", "(s)" after "where P is the power" are plain-text units in untouched reviewed text; set as $(\text{W})$ when next edited.
+- [Minor] Stop-and-think boxes — the answer summary "Answer" is shown open in every-box-open captures; closed state not judged from a capture (the box's `details` is visible and styled consistently), so confirm the answers are closed by default in the browser.
 
 ## Checked
-- Diff origin/main...HEAD for content/en/units/fy9-energia (excluding review/): only sovella/solutions.md changed, 30 insertions and 9 deletions; each change is a paragraph break inside a Mallivastaus or inquiry-solution field. Words, maths, units and figures unchanged. Breaks fall at sensible thought boundaries (a conclusion or a new line of argument); no break sits inside a display equation. The break after "Mallivastaus:" before a bullet list is a normal list start.
-- Opened captures: fy9-energia-stage-sovella-1280-5.png and fy9-energia-stage-sovella-390-6.png (Finnish shots dir, current layout of the Sovella stage: cards, hints, closed Näytä ratkaisu button, no clipping or overflow). These show the solutions closed, so the new breaks themselves were judged from the diff, not seen rendered.
-- Read the earlier Sovella visual report as evidence; it passed the same change.
-- Content hash rerun at the end: 15b3f14e5f4b4e1a (unchanged).
+- Opened: selita-390-1, -2, -3, -4 (three "Stop and think" boxes at 366 px: label, question, openable "Answer", maths $\eta$, $1\,\text{kWh}=3.6\,\text{MJ}$ and decimals in the answers not clipped, green left rule, readable contrast), selita-1280-1 and -2 (boxes within the 38 rem column, consistent with the formula cards and figures), intro-390 (hero, goals, prior knowledge).
+- Figures kartta (recognition chart) and ketju (to-scale energy-flow diagram) inspected at 390 px: labels LaTeX, legible, no clipping, bands to scale as the text says.
+- Equation display, the derivation (aligned rows) and the worked chain at 390 px read cleanly; KaTeX, decimal point and \cdot correct in English.
+- English text read for the whole unit page: fluent, glossary terms consistent, one voice; boxes' questions and answers clear and not repetitive of the neighbouring paragraph beyond their purpose.
+- Not opened individually: exercise, tarkista and teacher captures (outside the boxes' scope; deterministic checks in packet).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish (English) 4 · accessibility 4

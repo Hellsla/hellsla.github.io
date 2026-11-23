@@ -507,7 +507,7 @@
           "id": "b",
           "kind": "word",
           "points": 5,
-          "text": "An angler casts with a carbon-fibre rod under the line. Explain why he can get an electric shock although the rod does not touch the conductor. Estimate the smallest air gap that can break down.",
+          "text": "An angler casts with a carbon-fibre rod under the line. Explain why he can get an electric shock although the rod does not touch the conductor. Estimate how short an air gap must be for breakdown to be certain.",
           "criteria": [
             {
               "text": "Explains that carbon fibre conducts electricity, so the tip of the rod is almost at earth potential when the angler stands on the ground; the whole voltage between the conductor and earth is then across the air gap.",

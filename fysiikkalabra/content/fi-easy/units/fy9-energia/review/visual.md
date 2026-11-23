@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 79ff0bd6c42ae048
+CONTENT-HASH: b2479eab4e3b1226
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] stage selita 390/1280 — the three "Pysähdy ja mieti" boxes read well. In the all-open captures the "Vastaus" is shown open, so the closed first state is not visible there; the boxes are otherwise consistent with the "Johda itse" card (green rule, small-caps label, triangle summary).
+- [Minor] stage selita 1280 — "Tunnistuskaavio" figure is about 380 px wide and left-aligned with an empty area to its right. This is the existing figure layout, not a new problem.
+- [Minor] stage selita 390-5 — in the "Yleisiä virheitä" list the bold lead-ins sit close to the left edge. Subtle spacing only.
 
 ## Checked
-- Diff origin/main...HEAD for content/fi-easy/units/fy9-energia (excluding review/): only sovella/solutions.md changed, 30 insertions and 9 deletions; each change is a paragraph break inside a Mallivastaus or inquiry-solution field. Words, maths, units and figures unchanged. Breaks fall at sensible thought boundaries (a conclusion or a new line of argument); no break sits inside a display equation. The break after "Mallivastaus:" before a bullet list is a normal list start.
-- Opened captures: fy9-energia-stage-sovella-1280-5.png and fy9-energia-stage-sovella-390-6.png (Finnish shots dir, current layout of the Sovella stage: cards, hints, closed Näytä ratkaisu button, no clipping or overflow). These show the solutions closed, so the new breaks themselves were judged from the diff, not seen rendered.
-- Read the earlier Sovella visual report as evidence; it passed the same change.
-- Content hash rerun at the end: 79ff0bd6c42ae048 (unchanged).
+- Captures opened: top and intro at 390 px (intro-390), stage-selita-390-1…5, stage-selita-1280-1 and 1280-3.
+- Boxes (aside.stop-think) 1–3: label, question and openable "Vastaus" render at 390 and 1280. Inline maths ($1\,\text{kWh} = 3{,}6\,\text{MJ}$, $0{,}90$, $0{,}45$) is not clipped and uses a decimal comma. Contrast is good, the reading column is kept, and nothing overflows.
+- Figures seen: hero (intro-390), kartta (390 and 1280), ketju energy-flow diagram (390 and 1280, drawn to scale, labels legible, colours consistent). The graph in the sovella solutions was not opened; I judged only the new boxes and the unit page.
+- Finnish: the box texts are plain selkosuomi with the glossary terms, one voice. Display formulas are aligned at "=" and units are upright with a thin space.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

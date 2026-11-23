@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 69b429912617e62d
+CONTENT-HASH: 75fc60790851a73b
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] kartta figure at 1280 px — narrow tall flowchart (380 px wide) leaves a wide empty area beside it; known shared-layout behaviour, no change asked.
 
 ## Checked
-- Diff origin/main...HEAD (excluding review/): one line in inquiry.json, a long text field in which two paragraph breaks (\n\n) were inserted; words, maths and figures unchanged. The same change is in all three languages.
-- Read the earlier Sovella visual report (fi-easy, PASS) as evidence.
-- Opened review/shots: contact-1.png and fy9-lampo-stage-sovella-1280-2.png (fi, en), contact-1.png (fi-easy). Layout, maths and reading column are intact; no clipping or overflow.
-- Not opened: the changed field is a long explanatory text (apparently the model / "Mallin oletukset" box, closed by default), which I did not find in an opened-state capture. Judged from the diff: the split follows the sentence boundaries, with the display formula staying in the middle paragraph, so the presentation can only improve.
+- top-390, intro-390-1, intro-1280, contact-1 (opening, hero, Tällä tunnilla opit, Pohjatiedot: fine).
+- selita-390-1, -3, -4 and selita-1280-1: all four Pysähdy ja mieti boxes (small green label, question, Vastaus details open, all maths such as $0\,{}^\circ\text{C}$ rendered, nothing clipped, no overflow); kartta, kayra figures, formula blocks.
+- Boxes at 1280 px sit in the 38 rem column with the same layout. The 360 px width was not captured; the 390 px capture shows no tight spots.
+- Scores: illustrations 5, typography 5, Finnish 5, accessibility 5.
