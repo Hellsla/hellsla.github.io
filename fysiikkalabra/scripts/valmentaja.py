@@ -130,13 +130,33 @@ def tasks_of(uid, lang, items):
     return before + long_ + [t for t in short if t not in before]
 
 
+HOME_SHARE = 0.4    # a unit belongs to a course when that course holds at least this share of its tasks' review chapters (PR 4b)
+
+
+def home_course(unit_tasks):
+    """The course (1-8) a unit revises, or None for a unit that spans the course (the exam unit, the practice exam): the course that holds
+    at least HOME_SHARE of the review chapters of the unit's tasks, a tie going to the earlier course. Inferred, never written by hand."""
+    n = {}
+    for t in unit_tasks:
+        for l in t.get("review", []):
+            c = courses.course_of(l)
+            if c and re.fullmatch(r"FY[1-8]", c): n[int(c[2:])] = n.get(int(c[2:]), 0) + 1
+    total = sum(n.values())
+    if not total: return None
+    best = min(n, key=lambda c: (-n[c], c))
+    return best if n[best] / total >= HOME_SHARE else None
+
+
 def build(lang, unit_pub=None):
     """The index of one language: the FY9 units it holds and has published (unit_pub: {unit id: languages}; default the
     units with three current reviews), their tasks, and the fixed minikokeet and plans whose tasks are all there."""
     s = side(); items = s.get("items", {})
     pub = [u for u in fy9_units(lang) if (lang in unit_pub.get(u, ()) if unit_pub is not None else units.status(u, lang)["state"] == "reviewed")]
-    out_units = [{"id": u, "chapter": units.load(u, lang)["chapter"], "title": units.load(u, lang)["title"], "n": units.number(u)} for u in pub]
     tasks = [t for u in pub for t in tasks_of(u, lang, items)]
+    out_units = [{"id": u, "chapter": units.load(u, lang)["chapter"], "title": units.load(u, lang)["title"], "n": units.number(u)} for u in pub]
+    for o in out_units:       # PR 4b: the course a unit revises (the student's courses decide which units show)
+        c = home_course([t for t in tasks if t["unit"] == o["id"]])
+        if c: o["course"] = c
     have = {t["id"] for t in tasks}
     mini = [m for m in s.get("minikokeet", []) if set(m.get("short", [])) | set(m.get("long", [])) <= have]
     return {"version": VERSION, "course": COURSE, "lang": lang, "units": out_units, "tasks": tasks,
@@ -164,7 +184,7 @@ def languages():
 
 # ---- the pages (work queue 11b PR 4; plan 6.1-6.2): the coach page and the row and tile on the course page ---------------
 PAGE = "FY9-valmentaja.html"
-UI_KEYS = ("diag", "min", "why_stale", "why_wrong", "why_new", "why_more", "basis", "own", "note", "row_one", "row_n", "go", "clear", "clear_confirm", "nostore")
+UI_KEYS = ("diag", "min", "why_stale", "why_wrong", "why_new", "why_more", "basis", "own", "note", "row_one", "row_n", "go", "clear", "clear_confirm", "nostore", "goal_h", "goal_lead", "goal_none", "goal_LE", "goal_MC", "goal_BA", "courses_h", "courses_lead", "courses_none", "set_note")
 STATES = ("none", "few", "practise", "growing", "strong", "strongdue")
 
 
@@ -195,6 +215,7 @@ def page_body(T, index, course_page):
             f'<noscript><p class="notice" role="note">{T("coach.nojs")}</p></noscript>'
             f'<section aria-labelledby="coach-next-h"><h2 id="coach-next-h">{T("coach.next")}</h2><div id="coach-recs"></div>'
             f'<p class="coach-free"><a href="yo-sekoitin.html">{T("coach.free")}</a> · <a href="{course_page}">{T("site.back_to_course", course="FY9")}</a></p></section>'
+            f'<details class="coach-set" id="coach-set" hidden><summary>{T("coach.goal_h")}</summary><div class="coach-set-body"></div></details>'
             f'<details class="coach-areas" id="coach-areas" hidden><summary>{T("coach.areas")}</summary><div class="coach-areas-body"></div></details>'
             f'<div class="coach-data" id="coach-data"></div></div>' + index_script(index) + '<script src="valmentaja.js"></script>')
 
