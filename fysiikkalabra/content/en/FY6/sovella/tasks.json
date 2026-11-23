@@ -501,7 +501,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$$\\begin{aligned} E_2 &= \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (220\\,\\text{V})^2 \\\\ &= 7.99\\,\\text{J} \\end{aligned}$$ and $\\Delta E = 14.85\\,\\text{J} - 7.99\\,\\text{J} = 6.86\\,\\text{J}$."
+              "detail": "$$\\begin{aligned} E_2 &= \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (220\\,\\text{V})^2 \\\\ &= 7.99\\,\\text{J} \\end{aligned}$$ and $$\\begin{aligned} \\Delta E &= 14.85\\,\\text{J} - 7.99\\,\\text{J} \\\\ &= 6.86\\,\\text{J} \\end{aligned}$$."
             },
             {
               "key": "reasonableness",

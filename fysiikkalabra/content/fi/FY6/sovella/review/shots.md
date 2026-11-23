@@ -1,6 +1,6 @@
 # Screenshots of FY6-sovella (preview/FY6-sovella.html)
 
-Captured for: 5d61c029a4d15bd9 page 66caa4ce8f0c0520 (review/shots/stamp.txt). Open the contact sheets first, then only the captures your questions need (Read tool). Cost ≈ width·height/750 tokens each.
+Captured for: 2d8bc437a6bc72e9 page d72bb291edc75532 (review/shots/stamp.txt). Open the contact sheets first, then only the captures your questions need (Read tool). Cost ≈ width·height/750 tokens each.
 
 | file | shows | px | ≈ tokens |
 |---|---|---|---|
@@ -58,7 +58,7 @@ Captured for: 5d61c029a4d15bd9 page 66caa4ce8f0c0520 (review/shots/stamp.txt). O
 | review/shots/FY6-sovella-page-390-40.png | #41 the whole page at 390 px, every box open (teacher's notes included) (part 40/43) | 366×1408 | 687 |
 | review/shots/FY6-sovella-page-390-41.png | #42 the whole page at 390 px, every box open (teacher's notes included) (part 41/43) | 366×1408 | 687 |
 | review/shots/FY6-sovella-page-390-42.png | #43 the whole page at 390 px, every box open (teacher's notes included) (part 42/43) | 366×1408 | 687 |
-| review/shots/FY6-sovella-page-390-43.png | #44 the whole page at 390 px, every box open (teacher's notes included) (part 43/43) | 366×791 | 386 |
+| review/shots/FY6-sovella-page-390-43.png | #44 the whole page at 390 px, every box open (teacher's notes included) (part 43/43) | 366×909 | 443 |
 | review/shots/FY6-sovella-fig-1-390.png | #45 figure 1 in “1Taskulampun paristo 15 pistettä”: Kytkentäkaavio, ei mittakaavassa: pariston mittaus. Vasemmalla on tutkittava paristo, plus | 332×182 | 80 |
 | review/shots/FY6-sovella-fig-2-390.png | #46 figure 2 in “Mallivastaus”: Kuvaaja: pariston napajännite U voltteina virran I funktiona ampeereina. Kuusi mustaa pist | 306×202 | 82 |
 | review/shots/FY6-sovella-fig-3-390.png | #47 figure 3 in “2Mökin pihavalot 15 pistettä”: Kytkentäkaavio, ei mittakaavassa: mökin valaistus. Vasemmalla on 12 voltin akku, plusnapa  | 332×182 | 80 |
@@ -105,7 +105,7 @@ Captured for: 5d61c029a4d15bd9 page 66caa4ce8f0c0520 (review/shots/stamp.txt). O
 | review/shots/FY6-sovella-stage-fy6-s4-390-7.png | #88 inquiry stage Kameran salama 14 pistettä (part 7/10) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s4-390-8.png | #89 inquiry stage Kameran salama 14 pistettä (part 8/10) | 366×1408 | 687 |
 | review/shots/FY6-sovella-stage-fy6-s4-390-9.png | #90 inquiry stage Kameran salama 14 pistettä (part 9/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-10.png | #91 inquiry stage Kameran salama 14 pistettä (part 10/10) | 366×651 | 317 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-10.png | #91 inquiry stage Kameran salama 14 pistettä (part 10/10) | 366×768 | 374 |
 | review/shots/FY6-sovella-top-1280.png | #92 first screen at 1280 px | 1280×900 | 1536 |
 | review/shots/FY6-sovella-page-1280-1.png | #93 the whole page at 1280 px, every box open (teacher's notes included) (part 1/33) | 1160×1408 | 2177 |
 | review/shots/FY6-sovella-page-1280-2.png | #94 the whole page at 1280 px, every box open (teacher's notes included) (part 2/33) | 1160×1408 | 2177 |
@@ -139,4 +139,4 @@ Captured for: 5d61c029a4d15bd9 page 66caa4ce8f0c0520 (review/shots/stamp.txt). O
 | review/shots/FY6-sovella-page-1280-30.png | #122 the whole page at 1280 px, every box open (teacher's notes included) (part 30/33) | 1160×1408 | 2177 |
 | review/shots/FY6-sovella-page-1280-31.png | #123 the whole page at 1280 px, every box open (teacher's notes included) (part 31/33) | 1160×1408 | 2177 |
 | review/shots/FY6-sovella-page-1280-32.png | #124 the whole page at 1280 px, every box open (teacher's notes included) (part 32/33) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-33.png | #125 the whole page at 1280 px, every box open (teacher's notes included) (part 33/33) | 1160×667 | 1031 |
+| review/shots/FY6-sovella-page-1280-33.png | #125 the whole page at 1280 px, every box open (teacher's notes included) (part 33/33) | 1160×785 | 1214 |
