@@ -379,7 +379,7 @@ For the near points the source and the tube should be fixed on a stand where the
 **Substitution:** $r = \sqrt{\dfrac{3.15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}}{22.4\,\tfrac{1}{\text{min}}}} - 1.3\,\text{cm} = 37.5\,\text{cm} - 1.3\,\text{cm} = 36.2\,\text{cm}$ and $H = 3.0\,\mu\text{Sv/h} \cdot \left(\dfrac{10\,\text{cm}}{36.2\,\text{cm}}\right)^2 = 0.23\,\mu\text{Sv/h}$
 **Answer:** The net count rate equals that of the background at a distance of about $r \approx 36\,\text{cm}$, and the dose rate there is about $0.2\,\mu\text{Sv/h}$.
 
-The reasoning is wrong. The radiation of the source does not stop; its dose rate decreases to the order of magnitude of background radiation, and with this counting time the tube cannot distinguish it from the variation of the background.
+The reasoning is wrong. The radiation of the source does not stop; its dose rate decreases to the order of magnitude of background radiation, and farther out it is soon lost in the random variation of the background with this counting time.
 
 Far from the source the radiation is still very weak, so distance is a good means of protection, as is limiting the time.
 **Reasonableness:** The dose rate of the source, $0.2\,\mu\text{Sv/h}$, is of the same order of magnitude as the outdoor background $0.05$–$0.30\,\mu\text{Sv/h}$, so the pulse measurement and the dose rate tell the same thing. For comparison: working for $45\,\text{min}$ at $10\,\text{cm}$ gives about $3.0\,\mu\text{Sv/h} \cdot 0.75\,\text{h} \approx 2\,\mu\text{Sv}$, while a person in Finland receives on average $5.9\,\text{mSv} : 365 \approx 16\,\mu\text{Sv}$ a day.

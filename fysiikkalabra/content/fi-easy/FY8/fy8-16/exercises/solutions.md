@@ -80,9 +80,9 @@ $$. Nopeus on paljon pienempi kuin valon nopeus, kuten pienellä punasiirtymäll
 
 **Kaava:** $E = hf$ ja $$
 \begin{aligned}
-&f = \frac{c}{\lambda} \\
-&E = h\,\frac{c}{\lambda} \\
-&= \frac{hc}{\lambda}
+&f = \dfrac{c}{\lambda} \\
+&E = h\,\dfrac{c}{\lambda} \\
+&= \dfrac{hc}{\lambda}
 \end{aligned}
 $$
 
@@ -109,13 +109,13 @@ $$
 
 **Periaate:** Viivan siirtymästä saadaan punasiirtymä $z$ ja siitä etääntymisnopeus $v = cz$, koska punasiirtymä on pieni. Hubblen ja Lemaîtren lain mukaan nopeus on verrannollinen etäisyyteen. Siksi etäisyys on nopeus jaettuna Hubblen vakiolla.
 
-**Kaava:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ ja $$
+**Kaava:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ ja $$
 \begin{aligned}
 &v = c\,z \\
 &v = H_0\,d \\
-&d = \frac{v}{H_0} \\
-&= \frac{c\,z}{H_0} \\
-&= \frac{c\,(\lambda - \lambda_0)}{H_0\,\lambda_0}
+&d = \dfrac{v}{H_0} \\
+&= \dfrac{c\,z}{H_0} \\
+&= \dfrac{c\,(\lambda - \lambda_0)}{H_0\,\lambda_0}
 \end{aligned}
 $$
 
@@ -134,11 +134,11 @@ $$
 
 **Periaate:** Oletetaan, että laajenemisnopeus on pysynyt samana. Galaksi on nyt etäisyydellä $d$ ja loittonee nopeudella $v = H_0\,d$. Se oli samassa paikassa kuin me ajan $t = \tfrac{d}{v}$ sitten. Etäisyys supistuu pois, joten aika on sama kaikille galakseille.
 
-**Kaava:** $t = \frac{d}{v}$ ja $$
+**Kaava:** $t = \dfrac{d}{v}$ ja $$
 \begin{aligned}
 &v = H_0\,d \\
-&t = \frac{d}{H_0\,d} \\
-&= \frac{1}{H_0}
+&t = \dfrac{d}{H_0\,d} \\
+&= \dfrac{1}{H_0}
 \end{aligned}
 $$
 
@@ -157,12 +157,12 @@ $$
 
 **Periaate:** Laajeneminen on venyttänyt jokaisen aallonpituuden $1100$-kertaiseksi. Vapautuessaan aallonpituus oli siis $1100$ kertaa lyhyempi kuin nyt. Fotonin energia saadaan aallonpituudesta, kuten luvussa *Valosähköinen ilmiö ja fotoni*.
 
-**Kaava:** $\lambda = \frac{\lambda_\text{nyt}}{1100}$ ja $$
+**Kaava:** $\lambda = \dfrac{\lambda_\text{nyt}}{1100}$ ja $$
 \begin{aligned}
 &E = hf \\
-&f = \frac{c}{\lambda} \\
-&E = \frac{hc}{\lambda} \\
-&= \frac{1100\,hc}{\lambda_\text{nyt}}
+&f = \dfrac{c}{\lambda} \\
+&E = \dfrac{hc}{\lambda} \\
+&= \dfrac{1100\,hc}{\lambda_\text{nyt}}
 \end{aligned}
 $$
 
@@ -193,10 +193,10 @@ Elektronit sitoutuivat atomeihin, ja valo pääsi kulkemaan vapaasti.
 
 **Kaava:** $v = H_0\,d$ ja $$
 \begin{aligned}
-&H_0 = \frac{v_\text{A}}{d_\text{A}} \\
-&H_0 = \frac{v_\text{B}}{d_\text{B}} \\
-&\frac{v_\text{B}}{d_\text{B}} = \frac{v_\text{A}}{d_\text{A}} \\
-&d_\text{B} = d_\text{A} \cdot \frac{v_\text{B}}{v_\text{A}}
+&H_0 = \dfrac{v_\text{A}}{d_\text{A}} \\
+&H_0 = \dfrac{v_\text{B}}{d_\text{B}} \\
+&\dfrac{v_\text{B}}{d_\text{B}} = \dfrac{v_\text{A}}{d_\text{A}} \\
+&d_\text{B} = d_\text{A} \cdot \dfrac{v_\text{B}}{v_\text{A}}
 \end{aligned}
 $$
 
@@ -218,8 +218,8 @@ $$
 **Kaava:** Olkoon $m$ yhden nukleonin massa. $m_\text{He} = 2n\,m$ ja $$
 \begin{aligned}
 &m_\text{yht} = (n + p)\,m \\
-&Y = \frac{m_\text{He}}{m_\text{yht}} \\
-&= \frac{2n}{n + p}
+&Y = \dfrac{m_\text{He}}{m_\text{yht}} \\
+&= \dfrac{2n}{n + p}
 \end{aligned}
 $$
 
@@ -263,13 +263,13 @@ $$
 
 Punasiirtymä $z$ saadaan tarkimmin pisimmästä viivasta, koska sen siirtymä on suurin.
 
-**Kaava:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ ja $$
+**Kaava:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ ja $$
 \begin{aligned}
 &v = c\,z \\
 &v = H_0\,d \\
-&d = \frac{v}{H_0} \\
-&= \frac{c\,z}{H_0} \\
-&= \frac{c\,(\lambda - \lambda_0)}{H_0\,\lambda_0}
+&d = \dfrac{v}{H_0} \\
+&= \dfrac{c\,z}{H_0} \\
+&= \dfrac{c\,(\lambda - \lambda_0)}{H_0\,\lambda_0}
 \end{aligned}
 $$
 
@@ -332,8 +332,8 @@ Ne ovat yksittäisiä tapahtumia, eivätkä ne tuota lähes täsmälleen samanla
 
 **Kaava:** $v = H_0\,d$. Kulmakerroin kuvaajasta ja laskennallinen pienimmän neliösumman sovitus origon kautta: $$
 \begin{aligned}
-&H_0 = \frac{\Delta v}{\Delta d} \\
-&H_0 = \frac{\sum d\,v}{\sum d^{2}}
+&H_0 = \dfrac{\Delta v}{\Delta d} \\
+&H_0 = \dfrac{\sum d\,v}{\sum d^{2}}
 \end{aligned}
 $$
 
@@ -353,11 +353,11 @@ b) Suora antaa etäisyydellä $28\,\text{Mpc}$ nopeuden $68{,}45 \cdot 28\,\text
 
 **Periaate:** Oppilaan punasiirtymä $z$ ja nopeus $v = c\,z$ ovat oikein, koska $z$ on pieni. Virhe on viimeisessä vaiheessa. Hubblen ja Lemaîtren laki on $v = H_0\,d$. Etäisyys saadaan siis jakamalla nopeus Hubblen vakiolla, ei kertomalla. Kertolasku antaa yksikön $\tfrac{\text{km}^2}{\text{s}^2\,\text{Mpc}}$. Se ei ole etäisyyden yksikkö.
 
-**Kaava:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ ja $$
+**Kaava:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ ja $$
 \begin{aligned}
 &v = c\,z \\
 &v = H_0\,d \\
-&d = \frac{v}{H_0}
+&d = \dfrac{v}{H_0}
 \end{aligned}
 $$
 
@@ -436,7 +436,7 @@ Malli toimii siis siellä, missä näkyvä aine hallitsee.
 
 **Periaate:** Valon aallonpituus on venynyt samassa suhteessa kuin avaruus. Venymiskerroin on siis $k = \tfrac{\lambda}{\lambda_0} = 1 + z$. Kaava $v = c\,z$ on likiarvo vain pienellä punasiirtymällä, noin kun $z < 0{,}1$. Taustasäteilyn lämpötila oli silloin $k$ kertaa nykyinen. Sääntö täsmää: $2{,}725\,\text{K} \cdot 1100 \approx 3000\,\text{K}$.
 
-**Kaava:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ ja $$
+**Kaava:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ ja $$
 \begin{aligned}
 &k = 1 + z \\
 &T = k\,T_\text{nyt} \\
@@ -469,12 +469,12 @@ $$.
 
 **Kuvaajan lukeminen:** Suora kulkee origon ja ruudukon pisteen $(250\,\text{Mpc}, 18\,000\,\text{km/s})$ kautta, joten sen kulmakerroin on $H_0 = \dfrac{18\,000\,\text{km/s}}{250\,\text{Mpc}} = 72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}}$.
 
-**Kaava:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ ja $$
+**Kaava:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ ja $$
 \begin{aligned}
 &v = c\,z \\
 &v = H_0\,d \\
-&d = \frac{v}{H_0} \\
-&= \frac{c\,z}{H_0}
+&d = \dfrac{v}{H_0} \\
+&= \dfrac{c\,z}{H_0}
 \end{aligned}
 $$
 
@@ -501,9 +501,9 @@ c) $d = \dfrac{v}{H_0} = \dfrac{10\,569\,\text{km/s}}{72{,}0\,\tfrac{\text{km/s}
 
 **Kaava:** $v = H_0\,d$ ja $$
 \begin{aligned}
-&d = \frac{v}{H_0} \\
+&d = \dfrac{v}{H_0} \\
 &v = 0{,}10\,c \\
-&d = \frac{0{,}10\,c}{H_0}
+&d = \dfrac{0{,}10\,c}{H_0}
 \end{aligned}
 $$
 

@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 436f1b251dc71773
+CONTENT-HASH: b81b215185d2bb31
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+- [Minor] solutions.md L2-03 (pair production) Kaava — the block lists f = c/λ, E = hc/λ, λ = hc/E; E = hf is only in the sentence above, so the second row seems to appear from nowhere. Put "E = hf" as a first row.
+- [Minor] solutions.md L1-03 Kaava — the rows start with & and are left-aligned (equals signs not in one column); acceptable for four distinct equations.
 
 ## Checked
-- Delta round 1, hash 436f1b251dc71773 at start and end: solutions.md only re-cut into paragraphs (md-paragraphs).
-- Opened fy8-15-open-exercises-1280-3 (task 15-4 solution: aligned Kaava/Sijoitus/Vastaus/Järkevyys blocks) and fy8-15-open-exercises-L3-1280-4 (15-21 solution end, 15-22 text, table, answer row). Layout survived: no clipping, blocks and maths in order, units upright.
+- Delta (two Kaava steps re-set as aligned blocks). Opened contact-5, and at full size open-exercises-1280-3 (annihilation task, the block with its intro "Energia säilyy: …, joten") and open-exercises-L2-1280-3 (minimum photon wavelength: Kaava, Muunnokset, Sijoitus rows aligned, Vastaus, Järkevyys).
+- The `$$` block directly after the intro line renders as a separate block, not inline.
+- No 390 px capture with solutions open; the packet's layout check at 360 and 390 px is clean.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

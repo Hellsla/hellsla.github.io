@@ -80,9 +80,9 @@ $$. Nopeus on paljon pienempi kuin valon nopeus, kuten pienellä punasiirtymäll
 
 **Kaava:** $E = hf$ ja $$
 \begin{aligned}
-&f = \frac{c}{\lambda} \\
-&E = h\,\frac{c}{\lambda} \\
-&= \frac{hc}{\lambda}
+&f = \dfrac{c}{\lambda} \\
+&E = h\,\dfrac{c}{\lambda} \\
+&= \dfrac{hc}{\lambda}
 \end{aligned}
 $$
 
@@ -109,13 +109,13 @@ $$
 
 **Periaate:** Viivan siirtymästä saadaan punasiirtymä $z$ ja siitä etääntymisnopeus $v = cz$, koska punasiirtymä on pieni. Hubblen ja Lemaîtren lain mukaan nopeus on verrannollinen etäisyyteen, joten etäisyys on nopeus jaettuna Hubblen vakiolla.
 
-**Kaava:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ ja $$
+**Kaava:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ ja $$
 \begin{aligned}
 &v = c\,z \\
 &v = H_0\,d \\
-&d = \frac{v}{H_0} \\
-&= \frac{c\,z}{H_0} \\
-&= \frac{c\,(\lambda - \lambda_0)}{H_0\,\lambda_0}
+&d = \dfrac{v}{H_0} \\
+&= \dfrac{c\,z}{H_0} \\
+&= \dfrac{c\,(\lambda - \lambda_0)}{H_0\,\lambda_0}
 \end{aligned}
 $$
 
@@ -134,11 +134,11 @@ $$
 
 **Periaate:** Jos laajenemisnopeus on pysynyt samana, galaksi, joka on nyt etäisyydellä $d$ ja loittonee nopeudella $v = H_0\,d$, oli samassa paikassa kuin me ajan $t = \tfrac{d}{v}$ sitten. Etäisyys supistuu, joten aika on sama kaikille galakseille.
 
-**Kaava:** $t = \frac{d}{v}$ ja $$
+**Kaava:** $t = \dfrac{d}{v}$ ja $$
 \begin{aligned}
 &v = H_0\,d \\
-&t = \frac{d}{H_0\,d} \\
-&= \frac{1}{H_0}
+&t = \dfrac{d}{H_0\,d} \\
+&= \dfrac{1}{H_0}
 \end{aligned}
 $$
 
@@ -157,12 +157,12 @@ $$
 
 **Periaate:** Laajeneminen on venyttänyt jokaisen aallonpituuden $1100$-kertaiseksi, joten vapautuessaan aallonpituus oli $1100$ kertaa lyhyempi kuin nyt. Fotonin energia saadaan aallonpituudesta, kuten luvussa *Valosähköinen ilmiö ja fotoni*.
 
-**Kaava:** $\lambda = \frac{\lambda_\text{nyt}}{1100}$ ja $$
+**Kaava:** $\lambda = \dfrac{\lambda_\text{nyt}}{1100}$ ja $$
 \begin{aligned}
 &E = hf \\
-&f = \frac{c}{\lambda} \\
-&E = \frac{hc}{\lambda} \\
-&= \frac{1100\,hc}{\lambda_\text{nyt}}
+&f = \dfrac{c}{\lambda} \\
+&E = \dfrac{hc}{\lambda} \\
+&= \dfrac{1100\,hc}{\lambda_\text{nyt}}
 \end{aligned}
 $$
 
@@ -193,10 +193,10 @@ Kun lämpötila laski noin $3000\,\text{K}$:iin, niitä oli liian vähän, elekt
 
 **Kaava:** $v = H_0\,d$ ja $$
 \begin{aligned}
-&H_0 = \frac{v_\text{A}}{d_\text{A}} \\
-&H_0 = \frac{v_\text{B}}{d_\text{B}} \\
-&\frac{v_\text{B}}{d_\text{B}} = \frac{v_\text{A}}{d_\text{A}} \\
-&d_\text{B} = d_\text{A} \cdot \frac{v_\text{B}}{v_\text{A}}
+&H_0 = \dfrac{v_\text{A}}{d_\text{A}} \\
+&H_0 = \dfrac{v_\text{B}}{d_\text{B}} \\
+&\dfrac{v_\text{B}}{d_\text{B}} = \dfrac{v_\text{A}}{d_\text{A}} \\
+&d_\text{B} = d_\text{A} \cdot \dfrac{v_\text{B}}{v_\text{A}}
 \end{aligned}
 $$
 
@@ -218,8 +218,8 @@ $$
 **Kaava:** Olkoon $m$ nukleonin massa. $m_\text{He} = 2n\,m$ ja $$
 \begin{aligned}
 &m_\text{yht} = (n + p)\,m \\
-&Y = \frac{m_\text{He}}{m_\text{yht}} \\
-&= \frac{2n}{n + p}
+&Y = \dfrac{m_\text{He}}{m_\text{yht}} \\
+&= \dfrac{2n}{n + p}
 \end{aligned}
 $$
 
@@ -261,13 +261,13 @@ $$
 
 **Periaate:** Punasiirtymässä jokainen aallonpituus kasvaa samassa suhteessa, joten viivojen järjestys säilyy: lyhin vastaa lyhintä ja pisin pisintä. Parit tarkistetaan suhteella: $\tfrac{447{,}2}{434{,}0} = 1{,}030$, $\tfrac{500{,}9}{486{,}1} = 1{,}030$ ja $\tfrac{676{,}2}{656{,}3} = 1{,}030$. Suhde on sama, joten parit ovat oikein, ja $z = 0{,}030$ on pieni, joten $v = cz$. Etäisyys saadaan Hubblen ja Lemaîtren laista. Tarkimmin $z$ saadaan pisimmästä viivasta, jonka siirtymä on suurin.
 
-**Kaava:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ ja $$
+**Kaava:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ ja $$
 \begin{aligned}
 &v = c\,z \\
 &v = H_0\,d \\
-&d = \frac{v}{H_0} \\
-&= \frac{c\,z}{H_0} \\
-&= \frac{c\,(\lambda - \lambda_0)}{H_0\,\lambda_0}
+&d = \dfrac{v}{H_0} \\
+&= \dfrac{c\,z}{H_0} \\
+&= \dfrac{c\,(\lambda - \lambda_0)}{H_0\,\lambda_0}
 \end{aligned}
 $$
 
@@ -330,8 +330,8 @@ Supernovat eivät selitä sitä, koska ne ovat yksittäisiä tapahtumia eivätk�
 
 **Kaava:** $v = H_0\,d$. Kulmakerroin kuvaajasta ja laskennallinen pienimmän neliösumman sovitus origon kautta: $$
 \begin{aligned}
-&H_0 = \frac{\Delta v}{\Delta d} \\
-&H_0 = \frac{\sum d\,v}{\sum d^{2}}
+&H_0 = \dfrac{\Delta v}{\Delta d} \\
+&H_0 = \dfrac{\sum d\,v}{\sum d^{2}}
 \end{aligned}
 $$
 
@@ -351,11 +351,11 @@ b) Suora antaa etäisyydellä $28\,\text{Mpc}$ nopeuden $68{,}45 \cdot 28\,\text
 
 **Periaate:** Oppilaan punasiirtymä $z$ ja nopeus $v = c\,z$ ovat oikein, koska $z$ on pieni. Virhe on viimeisessä vaiheessa: Hubblen ja Lemaîtren laki on $v = H_0\,d$, joten etäisyys saadaan jakamalla nopeus Hubblen vakiolla, ei kertomalla. Kertolasku antaa yksikön $\tfrac{\text{km}^2}{\text{s}^2\,\text{Mpc}}$, joka ei ole etäisyyden yksikkö.
 
-**Kaava:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ ja $$
+**Kaava:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ ja $$
 \begin{aligned}
 &v = c\,z \\
 &v = H_0\,d \\
-&d = \frac{v}{H_0}
+&d = \dfrac{v}{H_0}
 \end{aligned}
 $$
 
@@ -432,7 +432,7 @@ Keskustan lähellä, kohdissa $2\,\text{kpc}$ ja $5\,\text{kpc}$, suhde on $\tfr
 
 **Periaate:** Valon aallonpituus on venynyt samassa suhteessa kuin avaruus, joten venymiskerroin on $k = \tfrac{\lambda}{\lambda_0} = 1 + z$. Kaava $v = c\,z$ on likiarvo vain pienellä punasiirtymällä, noin $z < 0{,}1$. Taustasäteilyn lämpötila oli silloin $k$ kertaa nykyinen. Sääntö täsmää: $2{,}725\,\text{K} \cdot 1100 \approx 3000\,\text{K}$.
 
-**Kaava:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ ja $$
+**Kaava:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ ja $$
 \begin{aligned}
 &k = 1 + z \\
 &T = k\,T_\text{nyt} \\
@@ -465,12 +465,12 @@ $$.
 
 **Kuvaajan lukeminen:** Suora kulkee origon ja ruudukon pisteen $(250\,\text{Mpc}, 18\,000\,\text{km/s})$ kautta, joten sen kulmakerroin on $H_0 = \dfrac{18\,000\,\text{km/s}}{250\,\text{Mpc}} = 72{,}0\,\tfrac{\text{km/s}}{\text{Mpc}}$.
 
-**Kaava:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ ja $$
+**Kaava:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ ja $$
 \begin{aligned}
 &v = c\,z \\
 &v = H_0\,d \\
-&d = \frac{v}{H_0} \\
-&= \frac{c\,z}{H_0}
+&d = \dfrac{v}{H_0} \\
+&= \dfrac{c\,z}{H_0}
 \end{aligned}
 $$
 
@@ -497,9 +497,9 @@ c) $d = \dfrac{v}{H_0} = \dfrac{10\,569\,\text{km/s}}{72{,}0\,\tfrac{\text{km/s}
 
 **Kaava:** $v = H_0\,d$ ja $$
 \begin{aligned}
-&d = \frac{v}{H_0} \\
+&d = \dfrac{v}{H_0} \\
 &v = 0{,}10\,c \\
-&d = \frac{0{,}10\,c}{H_0}
+&d = \dfrac{0{,}10\,c}{H_0}
 \end{aligned}
 $$
 

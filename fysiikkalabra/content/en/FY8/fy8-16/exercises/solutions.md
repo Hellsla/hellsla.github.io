@@ -80,9 +80,9 @@ $$. The speed is much smaller than the speed of light, as it should be for a sma
 
 **Formula:** $E = hf$ and $$
 \begin{aligned}
-&f = \frac{c}{\lambda} \\
-&E = h\,\frac{c}{\lambda} \\
-&= \frac{hc}{\lambda}
+&f = \dfrac{c}{\lambda} \\
+&E = h\,\dfrac{c}{\lambda} \\
+&= \dfrac{hc}{\lambda}
 \end{aligned}
 $$
 
@@ -109,13 +109,13 @@ $$
 
 **Principle:** The shift of the line gives the redshift $z$, and from it the recession speed $v = cz$, because the redshift is small. According to the Hubble–Lemaître law, the speed is proportional to the distance, so the distance is the speed divided by the Hubble constant.
 
-**Formula:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ and $$
+**Formula:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ and $$
 \begin{aligned}
 &v = c\,z \\
 &v = H_0\,d \\
-&d = \frac{v}{H_0} \\
-&= \frac{c\,z}{H_0} \\
-&= \frac{c\,(\lambda - \lambda_0)}{H_0\,\lambda_0}
+&d = \dfrac{v}{H_0} \\
+&= \dfrac{c\,z}{H_0} \\
+&= \dfrac{c\,(\lambda - \lambda_0)}{H_0\,\lambda_0}
 \end{aligned}
 $$
 
@@ -134,11 +134,11 @@ $$
 
 **Principle:** If the speed of the expansion has stayed the same, a galaxy that is now at distance $d$ and recedes at the speed $v = H_0\,d$ was in the same place as we were a time $t = \tfrac{d}{v}$ ago. The distance cancels, so the time is the same for all galaxies.
 
-**Formula:** $t = \frac{d}{v}$ and $$
+**Formula:** $t = \dfrac{d}{v}$ and $$
 \begin{aligned}
 &v = H_0\,d \\
-&t = \frac{d}{H_0\,d} \\
-&= \frac{1}{H_0}
+&t = \dfrac{d}{H_0\,d} \\
+&= \dfrac{1}{H_0}
 \end{aligned}
 $$
 
@@ -157,12 +157,12 @@ $$
 
 **Principle:** The expansion has stretched every wavelength by a factor of $1100$, so when it was released, the wavelength was $1100$ times shorter than now. The energy of a photon is obtained from the wavelength, as in the chapter *The photoelectric effect and the photon*.
 
-**Formula:** $\lambda = \frac{\lambda_\text{now}}{1100}$ and $$
+**Formula:** $\lambda = \dfrac{\lambda_\text{now}}{1100}$ and $$
 \begin{aligned}
 &E = hf \\
-&f = \frac{c}{\lambda} \\
-&E = \frac{hc}{\lambda} \\
-&= \frac{1100\,hc}{\lambda_\text{now}}
+&f = \dfrac{c}{\lambda} \\
+&E = \dfrac{hc}{\lambda} \\
+&= \dfrac{1100\,hc}{\lambda_\text{now}}
 \end{aligned}
 $$
 
@@ -193,10 +193,10 @@ When the temperature fell to about $3000\,\text{K}$, there were too few of them,
 
 **Formula:** $v = H_0\,d$ and $$
 \begin{aligned}
-&H_0 = \frac{v_\text{A}}{d_\text{A}} \\
-&H_0 = \frac{v_\text{B}}{d_\text{B}} \\
-&\frac{v_\text{B}}{d_\text{B}} = \frac{v_\text{A}}{d_\text{A}} \\
-&d_\text{B} = d_\text{A} \cdot \frac{v_\text{B}}{v_\text{A}}
+&H_0 = \dfrac{v_\text{A}}{d_\text{A}} \\
+&H_0 = \dfrac{v_\text{B}}{d_\text{B}} \\
+&\dfrac{v_\text{B}}{d_\text{B}} = \dfrac{v_\text{A}}{d_\text{A}} \\
+&d_\text{B} = d_\text{A} \cdot \dfrac{v_\text{B}}{v_\text{A}}
 \end{aligned}
 $$
 
@@ -220,8 +220,8 @@ The total number of nucleons does not change in fusion.
 **Formula:** Let $m$ be the mass of a nucleon. $m_\text{He} = 2n\,m$ and $$
 \begin{aligned}
 &m_\text{tot} = (n + p)\,m \\
-&Y = \frac{m_\text{He}}{m_\text{tot}} \\
-&= \frac{2n}{n + p}
+&Y = \dfrac{m_\text{He}}{m_\text{tot}} \\
+&= \dfrac{2n}{n + p}
 \end{aligned}
 $$
 
@@ -265,13 +265,13 @@ $$
 
 The distance is obtained from the Hubble–Lemaître law. The most accurate $z$ comes from the longest line, whose shift is the greatest.
 
-**Formula:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ and $$
+**Formula:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ and $$
 \begin{aligned}
 &v = c\,z \\
 &v = H_0\,d \\
-&d = \frac{v}{H_0} \\
-&= \frac{c\,z}{H_0} \\
-&= \frac{c\,(\lambda - \lambda_0)}{H_0\,\lambda_0}
+&d = \dfrac{v}{H_0} \\
+&= \dfrac{c\,z}{H_0} \\
+&= \dfrac{c\,(\lambda - \lambda_0)}{H_0\,\lambda_0}
 \end{aligned}
 $$
 
@@ -340,8 +340,8 @@ Check your graph: the line must pass through the origin.
 
 **Formula:** $v = H_0\,d$. The slope from the graph and the least-squares fit through the origin by calculation: $$
 \begin{aligned}
-&H_0 = \frac{\Delta v}{\Delta d} \\
-&H_0 = \frac{\sum d\,v}{\sum d^{2}}
+&H_0 = \dfrac{\Delta v}{\Delta d} \\
+&H_0 = \dfrac{\sum d\,v}{\sum d^{2}}
 \end{aligned}
 $$
 
@@ -363,11 +363,11 @@ The deviation is due to the galaxy's own motion, typically a few hundred kilomet
 
 **Principle:** The student's redshift $z$ and speed $v = c\,z$ are correct, because $z$ is small. The error is in the last step: the Hubble–Lemaître law is $v = H_0\,d$, so the distance is obtained by dividing the speed by the Hubble constant, not by multiplying. The multiplication gives the unit $\tfrac{\text{km}^2}{\text{s}^2\,\text{Mpc}}$, which is not a unit of distance.
 
-**Formula:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ and $$
+**Formula:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ and $$
 \begin{aligned}
 &v = c\,z \\
 &v = H_0\,d \\
-&d = \frac{v}{H_0}
+&d = \dfrac{v}{H_0}
 \end{aligned}
 $$
 
@@ -450,7 +450,7 @@ Near the centre, at $2\,\text{kpc}$ and $5\,\text{kpc}$, the ratio is $\tfrac{95
 
 **Principle:** The wavelength of the light has stretched in the same proportion as space, so the stretching factor is $k = \tfrac{\lambda}{\lambda_0} = 1 + z$. The formula $v = c\,z$ is an approximation only for a small redshift, about $z < 0.1$. The temperature of the background radiation was then $k$ times the present one. The rule checks out: $2.725\,\text{K} \cdot 1100 \approx 3000\,\text{K}$.
 
-**Formula:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ and $$
+**Formula:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ and $$
 \begin{aligned}
 &k = 1 + z \\
 &T = k\,T_\text{now} \\
@@ -487,12 +487,12 @@ $$.
 
 **Reading the graph:** The line passes through the origin and the grid point $(250\,\text{Mpc}, 18\,000\,\text{km/s})$, so its slope is $H_0 = \dfrac{18\,000\,\text{km/s}}{250\,\text{Mpc}} = 72.0\,\tfrac{\text{km/s}}{\text{Mpc}}$.
 
-**Formula:** $z = \frac{\lambda - \lambda_0}{\lambda_0}$ and $$
+**Formula:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ and $$
 \begin{aligned}
 &v = c\,z \\
 &v = H_0\,d \\
-&d = \frac{v}{H_0} \\
-&= \frac{c\,z}{H_0}
+&d = \dfrac{v}{H_0} \\
+&= \dfrac{c\,z}{H_0}
 \end{aligned}
 $$
 
@@ -519,9 +519,9 @@ c) $d = \dfrac{v}{H_0} = \dfrac{10\,569\,\text{km/s}}{72.0\,\tfrac{\text{km/s}}{
 
 **Formula:** $v = H_0\,d$ and $$
 \begin{aligned}
-&d = \frac{v}{H_0} \\
+&d = \dfrac{v}{H_0} \\
 &v = 0.10\,c \\
-&d = \frac{0.10\,c}{H_0}
+&d = \dfrac{0.10\,c}{H_0}
 \end{aligned}
 $$
 

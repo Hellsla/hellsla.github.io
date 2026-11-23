@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 15261a26498e83ce
+CONTENT-HASH: fb46aec0512cf1e0
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+- [Minor] solutions.md L1-05 Kaava — the block lists f = c/λ, E = hc/λ, λ = hc/E without the step E = hf; the rows read as three separate equations. Add "E = hf" as the first row (also L2-03 of fy8-15).
+- [Minor] solutions.md L3 14-row blocks — nested sub/superscripts (d_{1/2}) in aligned rows are small but legible.
 
 ## Checked
-- Delta: unit $\tfrac{1}{\text{min}}$ changed to $\text{min}^{-1}$ in L1-07 and L3-02 texts and solutions, answer-field unit "min⁻¹" (also L2-09, not opened).
-- Opened fy8-12-open-exercises-1280-5 (L1-07: task text, field "min⁻¹", Annettu/Kysytty/Sijoitus rows aligned, answer block, Järkevyys; $27\,\tfrac{1}{\text{s}}$ kept as is) and fy8-12-open-exercises-L3-1280-2 (L3-02 beginning: Annettu, Kysytty, Kaava render, no clipping).
-- Layout checks at 360-1280 px clean per packet.
+- Delta (Kaava step re-set as aligned blocks in solutions.md). Opened contact-6 and contact-7, and at full size open-exercises-1280-4 (12-5: three-row block, rows aligned, fractions display size), open-exercises-L2-1280-2 (12-12: three-row ln block, no clipping), open-exercises-L3-1280-3 (12-20: two blocks with intro sentences).
+- No exercise capture exists at 390 px with solutions open; layout at 360 and 390 px is clean per the packet (checks measure clipped formulas), and the rows are short (about 25 characters).
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

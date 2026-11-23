@@ -1,21 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 35eb2ff6a77795e8
-Mode: delta, round 2 (new tasks L2-09 and L3-06 on figure fy8-16/hubble-t; "(esimerkkiaineisto)" removed from two table captions)
+CONTENT-HASH: 5512292a4a3afd87
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- solutions.md (several Kaava steps, e.g. L2-01, L2-03, L3-03) — the lead-in now uses inline `\frac` ($z = \frac{\lambda - \lambda_0}{\lambda_0}$), where the rest of the file uses `\dfrac`. This is typography only.
 
 ## Checked
-- Round-1 finding 1 (L3-06 c, "mahdoton galaksin nopeudeksi") is fixed in fi, en and fi-easy. The text now says $v = cz$ is only the small-$z$ approximation and that $z = 3{,}00 \to 3{,}00\,c$ is "merkki siitä, että likiarvo ei enää päde". It no longer claims recession faster than $c$ is impossible.
-- Round-1 finding 2 (rounding reason) is fixed in all three languages. "Kaksi merkitsevää numeroa b)-kohdassa", because $0{,}10\,c$ has two figures, and $H_0 = 72{,}0$ is read from the grid point with three.
-- I recomputed both answers in one script. L2-09: $z = 0{,}035253$, $v = 10\,569\,\text{km/s}$, $d = 146{,}79\,\text{Mpc}$. L3-06: $d = 0{,}10c/72 = 416{,}39\,\text{Mpc}$. Both match answers.py and exercises.json (146,8 and 416,4).
-- Tolerance 2 %: a student who rounds to 147 Mpc is off by 0,14 % and one who rounds to $4{,}2 \cdot 10^2$ Mpc by 0,87 %, so both stay inside it.
-- Figure: the line uses $H_0 = 18000/250 = 72$. A least-squares fit through the origin of the nine T2 points gives $72{,}4$, so the drawn line is a fair fit. Neither the figure nor its description gives either answer away.
-- L2-09: $z < 0{,}1$, so $v = cz$ is valid. The solution is symbolic first ($d = cz/H_0$), and the 147 Mpc sits between the points at 120 and 160 Mpc, whose speeds bracket $v$.
-- L3-06: the extrapolation beyond the 285 Mpc data (×1,46) and the assumption it rests on are stated, as the guardrail on extrapolation asks. The top of the axis, $21\,000\,\text{km/s}$, corresponds to $z = 0{,}070$.
-- The task texts give $c$, the $z < 0{,}10$ condition, the axis end and the farthest point. Both tasks stay inside the FY8 scope and use the brief's notation.
-- Removing the caption labels changes no physics.
-- Hash at start and end: 35eb2ff6a77795e8.
+- The hash was 5512292a4a3afd87 at the start and the end. Scope: delta on solutions.md since the version I passed (commit c9c77c41ba).
+- A script removed the Kaava steps, collapsed whitespace and compared the rest of the file: it is identical. The changed Järkevyys and Mallivastaus lines (L2-03, conceptual MCQs, L3-04) are only paragraph splits. exercises.json and answers.py are unchanged.
+- Each Kaava step now starts from the basic laws:
+  - L1-05 and L2-03: $E = hf$ and $f = c/\lambda$. The L2-03 stretch $\lambda = \lambda_\text{nyt}/1100$ is unchanged.
+  - L2-01, L3-03, L2-06, L2-09: $z$, then $v = cz$ and $v = H_0 d$, then $d = v/H_0 = cz/H_0$. The condition $z < 0{,}1$ is still stated in the tasks.
+  - L2-02: $t = d/v$ with $v = H_0 d$ gives $t = 1/H_0$. Correct.
+  - L2-04: $H_0$ is equal for A and B, giving $d_\text{B} = d_\text{A} v_\text{B}/v_\text{A}$.
+  - L3-01: $Y = m_\text{He}/m_\text{yht} = 2n/(n+p)$. This is correct with equal nucleon masses, as answers.py states.
+  - L3-02: $Q = \Delta m c^2$, $\Delta m = 3m_\text{He} - m_\text{C}$. Atomic masses are fine, because the electrons balance.
+  - L3-05: $k = 1 + z$ and $T = (1+z)T_\text{nyt}$. This is the correct scaling of the background temperature.
+  - L2-05: slope and least-squares fit through the origin, $\sum dv/\sum d^2$.
+  - L3-06: $d = 0{,}10c/H_0$.
+- I recomputed L2-02 $14{,}5 \cdot 10^9\,\text{a}$, L2-04 $160{,}9\,\text{Mpc}$, L3-02 $7{,}274\,\text{MeV}$, L3-05 $10{,}9\,\text{K}$ and L3-06 $416{,}4\,\text{Mpc}$. All match answers.py.
+- Every step ends in the symbolic form substituted in Sijoitus. Notation is as in the brief.
