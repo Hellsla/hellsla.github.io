@@ -11,6 +11,7 @@ Sovella-kuvat (4: `fy9-harjoituskoe-s2-fbd`, `fy9-kaasut-s6-pysty`, `fy9-kaasut-
 EI VIETY: 11 voimakuviota `fy9-voimat/nimeton-N` (1, 2, 3, 5, 6, 8, 9, 10, 11, 13, 14): sivun voimakuviot syntyvät kirjastosta rakennettaessa, eikä niillä ole `figures.py`-kuvaa tai tunnistetta; `figimage` ei voi liittää niihin kuvaa. WebP:t ja rivit poistettu tästä PR:stä.
 
 Huomiot:
+- `fy9-harjoituskoe-s2-fbd`: oikean reunan taustakaista (34 px, ei-taustapikseleitä 0) rajattu lähde-PNG:stä ja `ASETTELU`-leveys 609,1 → 596,2, koska kuva ylitti viewBoxin oikealla 12,9 yks. ja `check_layout` kaatui (640–1920 px, "the picture is not in its figure"); `check_layout` kaikilla leveyksillä (360–1920) ja kielillä läpi. Lupa: opettaja koordinaattorin chatissa 2026-11-23 "Etene suositusten mukaisesti" (kirjaus työjonon kohdassa 24, koordinaattorin välittämänä); rajattu kuva odottaa opettajan hyväksyntää suoraan tähän sessioon (`approve-figures` ei ajettu).
 - `figimage.py check` ja `flat` eivät tunne jaksojen kuvia (`figcat` ei hae `lessons/units/`): ilman taustaa -sarake laskettu samalla menetelmällä erillisellä skriptillä (`fy9-magnetismi-valo/ympyra` [7], `fy9-moderni/pallo` [3, 4], `fy9-ympyraliike/geo` [3]).
 - `fy9-energia/ketju` ja `fy9-magnetismi-valo/rajakulma`: merkintöjen siirrot paketin mukaan.
 - `fy9-energia/ketju`, `fy9-kaasut/kone`, `fy9-sahkokentta/levyt`, `fy9-ympyraliike/geo`: PAATOS.txt:n huomiot (mittasuhteita ei mitattu) hyväksytty sellaisinaan.
