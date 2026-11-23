@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3d69ecbee253c3bb
+CONTENT-HASH: 7a46917d3f0bf707
+SCOPE: delta numbers,reflow,wording from 3d69ecbee253c3bb base 4b05399
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] solutions.md L3-04 Kaava: the line now reads eU_k ≈ hf and then eU_k = hf = hc/λ; the switch from ≈ to = within one step is fine for a single LED, but "yhden LEDin" could say so. Optional.
 
 ## Checked
-- Delta round 1: solutions.md only cut into paragraphs (L1-06, L2-06, L2-07, L2-08 changed blocks).
-- Opened (shared capture folder, stamp current for this exercises hash): open-exercises-1280-6 (6-6, Mallivastaus now in two paragraphs), open-exercises-1280-4, open-exercises-L2-1280-6, -7, -11, -12 (6-13, 6-15 with the split Vastaus paragraphs, aligned chains, Järkevyys block, 6-16 table).
-- Paragraph breaks sit at idea boundaries, the answer chip and Vastaus text stay together, nothing clipped or overflowing; no word, number or formula changed. L2-06 and L2-08 splits were judged from the diff (not separately opened).
+- Delta: L3-04 Kaava (open-exercises-L3-1280-5/-6): fractions full size, aligned rows, nothing clipped; the opening line "eU_k ≈ hf" renders correctly. check_layout at 360 px passes (packet), so the phone width is covered by that check; I did not open a 360/390 px capture of these blocks, since the shots are 1280 px only.
+- L2-06 changed sentence is plain prose with inline LaTeX units (0,16 V, 0,1 V, hf/e), all in LaTeX, no layout change. Source diff read; its own 1280 px capture not opened.
+- Content hash unchanged at the end.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

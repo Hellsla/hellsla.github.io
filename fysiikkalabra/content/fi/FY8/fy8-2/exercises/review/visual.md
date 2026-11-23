@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 351f8c4db0b3d511
+CONTENT-HASH: a06061f1b4a8852f
+SCOPE: delta numbers,reflow from 351f8c4db0b3d511 base 4b05399
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] Tehtävän 2-20 (L3, fy8-2-open-exercises-L3-1280-5) taulukon otsikko "Malliatomin mitatut emissioviivat" rivittyy kolmelle riville kapean taulukon leveyteen; leveämpi otsikko riittäisi (jaettu komponentti).
+- none
 
 ## Checked
-- Delta: markkerin "esimerkkiaineisto" poisto kuvatekstistä ja solutions.md:n kappalejako.
-- Avasin fy8-2-open-exercises-L3-1280-1 (ratkaisun rakenne ja kaavat) ja fy8-2-open-exercises-L3-1280-5 (taulukko, kuvateksti, ratkaisu): kaavat, rivitykset ja yksiköt kunnossa, ei leikkautumista.
+- Delta (8g, Kaava step of solutions.md only). Rendered every Kaava block of the exercise solutions at 390 px (own Playwright capture, `?ratkaisut=1`, all boxes open; the packet's shots are 1280 px only): no clipping, scrollWidth 390, equals signs aligned in one column, one equation per row, symbols and units unchanged. Also contact captures of the 1280 px open-exercises set from screenshot.py.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography  · Finnish 5 · accessibility 5

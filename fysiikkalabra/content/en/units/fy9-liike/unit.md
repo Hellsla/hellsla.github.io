@@ -12,6 +12,12 @@ Motion is always described in a chosen coordinate system: a straight $x$ axis, a
 
 The same motion can be shown as three graphs: $(t,x)$, $(t,v)$ and $(t,a)$. You move between the graphs in two ways. Downwards: the **slope** of a graph is the value of the next quantity, so the slope of the $(t,x)$ graph is the velocity and the slope of the $(t,v)$ graph the acceleration. Upwards: the **area** between a graph and the time axis is the change in the previous quantity, so the area of the $(t,v)$ graph is the displacement.
 
+```pysahdy
+What does the slope of a $(t,x)$ graph tell, and what does the area under a $(t,v)$ graph tell?
+---
+The slope of a $(t,x)$ graph is the velocity and the area under a $(t,v)$ graph is the displacement.
+```
+
 <svg data-fig="kartta" viewBox="0 0 380 724" role="img" aria-label="Recognition chart: how do I tell which law to use? See what the task gives or which graph is given. Constant velocity: position in time, x equals x zero plus v t. Constant acceleration: velocity in time, v equals v zero plus a t. Constant acceleration and the distance is asked: position, x equals x zero plus v zero t plus half a t squared. Constant acceleration, a not known: average velocity, so the displacement is the mean of the initial and final velocity times the time. Velocity from the position graph: the slope, v equals delta x per delta t. Acceleration from the velocity graph: the slope, a equals delta v per delta t. Distance from the velocity graph: the area between the graph and the time axis." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="680" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
@@ -109,9 +115,21 @@ position in uniformly accelerated linear motion :: x = x_0 + v_0\,t + \tfrac{1}{
 
 where $v_0$ is the initial velocity ($\text{m/s}$) and $a$ the acceleration ($\text{m/s}^2$). The speed increases when $a$ and $v$ point in the same direction and decreases when they point in opposite directions. In free fall $a = g = 9.81\,\text{m/s}^2$ downwards when air resistance is small.
 
+```pysahdy
+A body moves in the positive direction and its acceleration is negative. Does the speed increase or decrease?
+---
+The speed decreases, because the velocity and the acceleration point in opposite directions.
+```
+
 ### Slope and area
 
 The instantaneous velocity on a curved $(t,x)$ graph is the slope $k$ of the tangent. A ratio calculated through two points of the curve is the average velocity. The displacement is the area between the $(t,v)$ graph and the time axis, and the part below the axis is counted as negative.
+
+```pysahdy
+Part of a $(t,v)$ graph lies below the time axis. How does this part affect the displacement?
+---
+The area below the axis is counted as negative, so it reduces the displacement.
+```
 
 <svg data-fig="kuvaajat" viewBox="0 0 440 650" role="img" aria-label="Schematic of one motion as two graphs with the same time axis. Below, the velocity graph: the velocity grows uniformly from zero until t1, stays constant until t2 and falls uniformly to zero at t3. The region under the graph is coloured green, and its area is the displacement Δx. Above, the position graph: first a curve bending upwards, then a rising straight line and finally a curve that levels off to horizontal. Over the whole motion the position grows by Δx in total. A blue tangent is drawn at the point P of the curve; its slope k is the velocity v_P, and the same value is marked in the lower graph." style="max-width:100%;font-size:21px">
   <line x1="49" y1="280" x2="370" y2="280" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>

@@ -90,7 +90,12 @@
 
 **Periaate:** Energia massaa kohti antaa kilpirauhasen absorboituneen annoksen. Beetasäteilyn painotuskerroin on $1$, joten ekvivalenttiannos on lukuarvoltaan sama. Vain kilpirauhanen saa annoksen, joten efektiivinen annos on sen ekvivalenttiannos kerrottuna sen painotuskertoimella.
 
-**Kaava:** $D_\text{T} = \dfrac{E}{m}$, $H_\text{T} = w_\text{R} D_\text{T}$ ja $H_\text{E} = w_\text{T} H_\text{T}$, joten $H_\text{E} = w_\text{T} w_\text{R} \dfrac{E}{m}$
+**Kaava:** $$\begin{aligned} D_\text{T} &= \dfrac{E}{m} \\
+H_\text{T} &= w_\text{R} D_\text{T} \\
+H_\text{E} &= w_\text{T} H_\text{T} \\
+&= w_\text{T} w_\text{R} \dfrac{E}{m}
+\end{aligned}
+$$
 
 **Muunnokset:** $E = 0{,}60\,\text{mJ} = 0{,}60 \cdot 0{,}001\,\text{J} = 0{,}00060\,\text{J}$ ja $m = 20\,\text{g} = 20 \cdot 0{,}001\,\text{kg} = 0{,}020\,\text{kg}$; $1\,\tfrac{\text{J}}{\text{kg}}$ on painotettuna $1\,\text{Sv}$.
 
@@ -107,7 +112,12 @@
 
 **Periaate:** Pistemäisen lähteen annosnopeus pienenee etäisyyden neliön mukaan. Työpisteessä annosnopeus on vakio, joten annos kasvaa suoraan verrannollisesti aikaan.
 
-**Kaava:** $\dot{H}_2 = \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2$ ja $H = \dot{H}_2 t$, joten $t = \dfrac{H}{\dot{H}_1} \left(\dfrac{r_2}{r_1}\right)^2$
+**Kaava:** $$\begin{aligned} \dot{H}_2 &= \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 \\
+H &= \dot{H}_2 t \\
+t &= \dfrac{H}{\dot{H}_2} \\
+&= \dfrac{H}{\dot{H}_1} \left(\dfrac{r_2}{r_1}\right)^2
+\end{aligned}
+$$
 
 **Muunnokset:** Ei tarvita: annos on mikrosieverteinä ja annosnopeus yksikössä $\mu\text{Sv/h}$, joten aika saadaan tunteina.
 
@@ -164,7 +174,14 @@ $$ (yksikkönä $\mu\text{Sv/h}$). Kolmen sentin lyijy on tavallinen gammalähte
 
 **Periaate:** Tavassa A annosnopeutta pienentää etäisyys neliölain mukaan, tavassa B lyijy puoliintumispaksuuden mukaan. Työaika on molemmissa sama, joten annokset saadaan kertomalla kummankin annosnopeus samalla ajalla.
 
-**Kaava:** $H_\text{A} = \dot{H}_1 \left(\dfrac{r_1}{r_\text{A}}\right)^2 t$ ja $H_\text{B} = \dot{H}_1 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} t$, joten $H_\text{A} - H_\text{B} = \dot{H}_1 t \left[\left(\tfrac{r_1}{r_\text{A}}\right)^2 - \left(\tfrac{1}{2}\right)^{d/d_{1/2}}\right]$
+**Kaava:** $$\begin{aligned} \dot{H}_\text{A} &= \dot{H}_1 \left(\dfrac{r_1}{r_\text{A}}\right)^2 \\
+\dot{H}_\text{B} &= \dot{H}_1 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
+H_\text{A} &= \dot{H}_\text{A} t \\
+H_\text{B} &= \dot{H}_\text{B} t \\
+H_\text{A} - H_\text{B} &= \left(\dot{H}_\text{A} - \dot{H}_\text{B}\right) t \\
+&= \dot{H}_1 t \left[\left(\tfrac{r_1}{r_\text{A}}\right)^2 - \left(\tfrac{1}{2}\right)^{d/d_{1/2}}\right]
+\end{aligned}
+$$
 
 **Muunnokset:** $t = 30\,\text{min} = 30 \cdot \tfrac{1}{60}\,\text{h} = 0{,}50\,\text{h}$
 
@@ -198,7 +215,13 @@ $$ (yksikkönä $\mu\text{Sv/h}$). Kolmen sentin lyijy on tavallinen gammalähte
 
 **Periaate:** Alfasäteily säteilyttää vain keuhkot, joten sen efektiivinen annos on keuhkojen ekvivalenttiannos kerrottuna keuhkojen painotuskertoimella. Gammasäteily säteilyttää koko kehon tasaisesti, ja kudosten painotuskertoimien summa on $1$, joten sen efektiivinen annos on sama kuin kehon ekvivalenttiannos. Efektiiviset annokset lasketaan yhteen.
 
-**Kaava:** $H_\text{E} = w_\text{T} w_{\text{R},\alpha} D_\text{keuhkot} + w_{\text{R},\gamma} D_\gamma$
+**Kaava:** $$\begin{aligned} H_\text{T} &= w_{\text{R},\alpha} D_\text{keuhkot} \\
+H_{\text{E},\alpha} &= w_\text{T} H_\text{T} \\
+H_{\text{E},\gamma} &= w_{\text{R},\gamma} D_\gamma \\
+H_\text{E} &= H_{\text{E},\alpha} + H_{\text{E},\gamma} \\
+&= w_\text{T} w_{\text{R},\alpha} D_\text{keuhkot} + w_{\text{R},\gamma} D_\gamma
+\end{aligned}
+$$
 
 **Muunnokset:** Ei tarvita: kun absorboituneet annokset ovat milligrayna, painotetut annokset saadaan millisieverteinä.
 
@@ -380,7 +403,14 @@ $$ eli yli viitearvon $300\,\tfrac{\text{Bq}}{\text{m}^3}$, joten radonkorjausta
 240 \to 121 \to 60{,}5 \to 29{,}8\,\mu\text{Sv/h}
 $$: annosnopeus puolittuu aina, kun paksuus kasvaa $4{,}0\,\text{cm}$ ($240 : 2 = 120 \approx 121$, $121 : 2 \approx 60{,}5$ ja $60{,}5 : 2 \approx 30 \approx 29{,}8$). Siksi $d_{1/2} \approx 4{,}0\,\text{cm}$.
 
-**Kaava:** $\dot{H} = \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 \left(\dfrac{1}{2}\right)^{d/d_{1/2}}$ ja $H = \dot{H} t$, joten $t = \dfrac{H}{\dot{H}}$
+**Kaava:** $$\begin{aligned} \dot{H}_d &= \dot{H}_1 \left(\dfrac{1}{2}\right)^{d/d_{1/2}} \\
+\dot{H} &= \dot{H}_d \left(\dfrac{r_1}{r_2}\right)^2 \\
+&= \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 \left(\dfrac{1}{2}\right)^{d/d_{1/2}} \\
+H &= \dot{H} t \\
+t &= \dfrac{H}{\dot{H}} \\
+&= \dfrac{H}{\dot{H}_1} \left(\dfrac{r_2}{r_1}\right)^2 2^{d/d_{1/2}}
+\end{aligned}
+$$
 
 **Muunnokset:** Ei tarvita: paksuus ja puoliintumispaksuus ovat senttimetreinä, etäisyydet metreinä ja annos mikrosieverteinä.
 

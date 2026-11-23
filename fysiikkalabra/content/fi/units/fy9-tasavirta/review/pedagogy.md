@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 9298f8fbb6e98905
-SCOPE: delta (round 2) new s7 (fy6-3/lamp-curve), s8 (fy6-4/siirto-mixed) and changed intro, language fi; s1-s6 not re-judged
+CONTENT-HASH: 202f81d31b383f25
 
 ## Blocking
-None.
+- (none)
 
 ## Polish
-- s7 d: the rubric item for the 75 % conclusion is keyed units_precision; a conclusion-style key would fit better. Points are fair as they are.
-- s8 a repeats the FY6 chapter's transfer task (same figure and values); fine as retrieval, optionally change the values.
-- s7 a-b overlap the FY6 resistance exercise; c-d are the new part.
-- s7 c says "one resistor is available", which hints that a resistor is needed, but not how it is connected; acceptable.
+- Kaikki kolme "Pysähdy ja mieti" -laatikkoa ovat lähes suoraa takaisinlukua: vastaus on jo edellisessä kappaleessa lähes samoin sanoin ("Siksi rinnakkaisten haarojen yli on sama jännite", "Sarjassa suurempi resistanssi saa suuremman tehon", "napajännite on lähdejännitettä pienempi"). Ne tarkistavat lukemisen mutta eivät ennustamista. Parempi: kysy lähes uusi tapaus, esim. laatikko 2: "Entä jos samat vastukset kytketään rinnan, kumpi saa suuremman tehon?" ja laatikko 3: "Mitä napajännitteelle tapahtuu, jos virta kasvaa?".
+- Laatikon 2 vastaus käyttää muotoa P = RI^2 ennen kuin Johda itse -laatikko johtaa sen. Maininta "kun tehoon sijoitetaan Ohmin laki" tukee sitä, mutta sanoisin vastauksessa "P = UI ja U = RI".
+- Laatikko 1 on Ydinajatus-osan lopussa kuvan jälkeen. Vastaus on kappaleessa heti kuvan yläpuolella, joten kuva erottaa kysymyksen kappaleesta; siirrä laatikko kuvan edelle.
+- Laatikko 3: napajännitteen sanallinen perustelu on jo kappaleen virkkeessä ennen kuvaa; ok, mutta kuvan jälkeinen paikka olisi sama.
 
 ## Checked
-- Round 1 fixes verified in the files: s7 text states that battery internal resistance and wire resistance are neglected; s8 d solution has a Kaava line (R = R3 + R1, I = E/R, U1 = E - I R3, P = U1^2/R1). Neither round-1 item was blocking; both are now fixed.
-- Task text: neither s7 nor s8 names the model or reveals the connection structure (s8 a gives only the figure); titles neutral; s8 d prediction is asked for first.
-- Solutions: all rule 7 items (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) present in every part; symbolic before numeric; independent checks (R_total, power sum, current sum, P = R I^2); common mistakes realistic.
-- Rubric: points sum to part points (s7 16, s8 18); graph-read tolerance 0.20-0.22 A; answers recomputed (9.5; 12; 4.0; 75 %; 0.30; 0.10/0.20; 1.8/3.6; 1.35 W).
-- Figure and names: ids match catalog; Rp, R1-R3, E, U_L, U_R consistent across task, rubric and solution.
-- Language fidelity: this version matches fi in numbers, structure and rubric keys; solutions headings of the shared solutions file follow the repo convention.
-- fi-easy (NOTES.md section 12): short sentences, one idea each, task questions split into separate sentences, same content and points as fi.
+- Laatikot: 3 kpl, kukin vastattavissa juuri luetusta kappaleesta (ei uutta tietoa), lyhyitä, toimivat puhelimella (yksi virke kysymys, vastaus piilossa). Sijoitus: 2 ja 3 heti testaamansa asian jälkeen, 1 kuvan takana.
+- Yksikkö: ydinajatus, kaavat, Johda itse, Yleisiä virheitä ja Kertaa kattavat FY6-tavoitteet; koukku (mökin akku) palaa vastaukseen laskettuna.
+- Sovella-tehtävät s1-s8 (tasks.json, ratkaisut): autenttiset, monivaiheiset, pisteytys konkreettinen, ei nimeä kaavaa otsikossa; työmäärä sopiva.
+- Yksikön tarkistus (practice.py check) OK. Hero-kuva ja muut kuvat ohitettu (rungot poistettu paketista).

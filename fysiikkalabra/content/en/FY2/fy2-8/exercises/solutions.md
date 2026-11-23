@@ -34,7 +34,7 @@ $$, close to the result. The emission is only under a quarter of a kilogram per 
 **Given:** emission factor of rooftop panels $e_1 = 41\,\text{g/kWh}$; emission factor of natural gas electricity $e_2 = 490\,\text{g/kWh}$; the same energy $E$
 **Find:** how many times as large the emission $m_2$ of natural gas electricity is compared with the emission $m_1$ of rooftop panels
 **Principle:** Each emission is the factor times the energy, $m = e \cdot E$. When the energy is the same, it cancels in the comparison, so the ratio of the emissions is the ratio of the emission factors. We compare by division.
-**Formula:** $m = e \cdot E$; when the energy $E$ is the same, the emission of natural gas electricity compared with that of rooftop panels is as many times as large as the factor, so we compare the factors: ratio $= e_2 : e_1$
+**Formula:** $m_1 = e_1 \cdot E$ and $m_2 = e_2 \cdot E$, so $\dfrac{m_2}{m_1} = \dfrac{e_2 \cdot E}{e_1 \cdot E} = \dfrac{e_2}{e_1}$, because the same energy $E$ cancels
 **Conversions:** Not needed: the factors are in the same unit $\text{g/kWh}$, so the unit cancels.
 **Substitution:** $e_2 : e_1 = 490\,\text{g/kWh} : 41\,\text{g/kWh} = 11.95$
 **Answer:** about $12$ times, two significant figures like the factor $41\,\text{g/kWh}$.
@@ -64,7 +64,7 @@ $$, close to the result. The emission is only under a quarter of a kilogram per 
 **Given:** energy $E = 3600\,\text{kWh}$; for coal $e_1 = 820\,\text{g/kWh}$ and for wind power $e_2 = 12\,\text{g/kWh}$
 **Find:** decrease in the emission $m_1 - m_2$ in tonnes
 **Principle:** The amount of energy stays the same, only the way of producing it changes. The decrease in the emission is the difference between the old and the new emission, and each emission is the factor times the energy.
-**Formula:** $m_1 - m_2 = e_1 \cdot E - e_2 \cdot E = (e_1 - e_2) \cdot E$
+**Formula:** $m_1 = e_1 \cdot E$ and $m_2 = e_2 \cdot E$, so $m_1 - m_2 = e_1 \cdot E - e_2 \cdot E = (e_1 - e_2) \cdot E$
 **Conversions:** The kilowatt-hours cancel, so the result comes out in grams. Finally $1\,\text{g} = 10^{-6}\,\text{t}$.
 **Substitution:** $$
 \begin{aligned}
@@ -95,7 +95,7 @@ $$
 **Given:** emission factor of petrol $e = 69\,\text{g/MJ}$; $1\,\text{kWh} = 3.6\,\text{MJ}$
 **Find:** emission factor in the unit $\text{g/kWh}$
 **Principle:** The emission factor gives the emission per unit of energy. One kilowatt-hour of fuel energy is $3.6\,\text{MJ}$, so its emission is $3.6$ times the emission per megajoule.
-**Formula:** $e_\text{kWh} = e_\text{MJ} \cdot 3.6\,\text{MJ/kWh}$
+**Formula:** $m = e_\text{MJ} \cdot E_\text{MJ}$ and $E_\text{MJ} = 3.6\,\text{MJ/kWh} \cdot E_\text{kWh}$, so $m = e_\text{MJ} \cdot 3.6\,\text{MJ/kWh} \cdot E_\text{kWh}$ and $e_\text{kWh} = \dfrac{m}{E_\text{kWh}} = e_\text{MJ} \cdot 3.6\,\text{MJ/kWh}$
 **Conversions:** The unit $\text{MJ}$ cancels: $\text{g/MJ} \cdot \text{MJ/kWh} = \text{g/kWh}$.
 **Substitution:** $e_\text{kWh} = 69\,\text{g/MJ} \cdot 3.6\,\text{MJ/kWh} = 248.4\,\text{g/kWh}$
 **Answer:** $250\,\text{g/kWh}$, two significant figures like the factor $69\,\text{g/MJ}$.
@@ -109,7 +109,7 @@ Per unit of electricity the emission would be larger, because in a power plant o
 **Given:** petrol car $V = 6.0\,\textsf{l}$ per hundred kilometres, $32\,\text{MJ/}\textsf{l}$, $69\,\text{g/MJ}$; electric car $E = 18\,\text{kWh}$ per hundred kilometres
 **Find:** emission factor of electricity $e$ in the unit $\text{g/kWh}$ at which the emissions are equal
 **Principle:** Calculate the emission of the petrol car per hundred kilometres as the factor times the energy. The emission of the electric car is $e \cdot E$, and it is set equal to the emission of the petrol car.
-**Formula:** $m_\text{petrol} = e_\text{p} \cdot V \cdot h$ and $m_\text{petrol} = e \cdot E$, so $e = \dfrac{m_\text{petrol}}{E}$, where $e_\text{p}$ is the emission factor of petrol and $h$ is its energy content per litre
+**Formula:** energy of the petrol $E_\text{p} = V \cdot h$ and emission $m_\text{petrol} = e_\text{p} \cdot E_\text{p} = e_\text{p} \cdot V \cdot h$; emission of the electric car $m = e \cdot E$. The emissions are equal, $e \cdot E = e_\text{p} \cdot V \cdot h$, so $e = \dfrac{e_\text{p} \cdot V \cdot h}{E}$, where $e_\text{p}$ is the emission factor of petrol and $h$ is its energy content per litre
 **Conversions:** Not needed: the litres and megajoules cancel, and the emission comes out in grams.
 **Substitution:** $m_\text{petrol} = 69\,\text{g/MJ} \cdot 6.0\,\textsf{l} \cdot 32\,\text{MJ/}\textsf{l} = 13\,248\,\text{g}$, and $e = 13\,248\,\text{g} : 18\,\text{kWh} = 736\,\text{g/kWh}$
 **Answer:** $740\,\text{g/kWh}$, two significant figures like the consumption $6.0\,\textsf{l}$ and $18\,\text{kWh}$.
@@ -129,7 +129,7 @@ With coal electricity the emission reduction of an electric car is therefore sma
 **Given:** energy $E = 100\,\text{GWh}$ per year; yield of the solar park $q_\text{a} = 0.50\,\text{GWh/ha}$ and yield of the energy field $q_\text{b} = 0.010\,\text{GWh/ha}$ per year; $1\,\text{ha} = 0.01\,\text{km}^2$
 **Find:** ratio of the field area $A_\text{b}$ needed by biomass electricity to the area of the solar park $A_\text{a}$ (areas calculated in square kilometres)
 **Principle:** Every hectare produces the same energy per year, so the energy of a year is the yield per hectare times the area, in the same way as the emission is the factor times the energy. The area is obtained by dividing the energy needed by the yield per hectare.
-**Formula:** $E = q \cdot A$, so $A = \dfrac{E}{q}$, and the ratio is $A_\text{b} : A_\text{a}$
+**Formula:** $E = q \cdot A$, so $A = \dfrac{E}{q}$; ratio $\dfrac{A_\text{b}}{A_\text{a}} = \dfrac{E / q_\text{b}}{E / q_\text{a}} = \dfrac{q_\text{a}}{q_\text{b}}$, because the same energy $E$ cancels
 **Conversions:** The gigawatt-hours cancel, so the area comes out in hectares. Hectares are converted into square kilometres by substituting $1\,\text{ha} = 0.01\,\text{km}^2$.
 **Substitution:** $A_\text{b} = 100\,\text{GWh} : 0.010\,\text{GWh/ha} = 10\,000\,\text{ha} = 10\,000 \cdot 0.01\,\text{km}^2 = 100\,\text{km}^2$, and $A_\text{a} = 100\,\text{GWh} : 0.50\,\text{GWh/ha} = 200\,\text{ha} = 200 \cdot 0.01\,\text{km}^2 = 2.0\,\text{km}^2$, so $A_\text{b} : A_\text{a} = 100\,\text{km}^2 : 2.0\,\text{km}^2 = 50$
 **Answer:** the field area needed is $50$ times the area of the solar park ($100\,\text{km}^2$ and $2.0\,\text{km}^2$), two significant figures like the yields $0.50\,\text{GWh/ha}$ and $0.010\,\text{GWh/ha}$.
@@ -142,7 +142,7 @@ The emission factor tells only the greenhouse gases per kilowatt-hour; it does n
 **Given:** bus $30\,\textsf{l}$ per hundred kilometres, $36\,\text{MJ/}\textsf{l}$, $74\,\text{g/MJ}$, $25$ passengers; car $6.0\,\textsf{l}$ per hundred kilometres, $32\,\text{MJ/}\textsf{l}$, $69\,\text{g/MJ}$, one passenger
 **Find:** ratio of the emission of the car to the emission of the bus per passenger
 **Principle:** Calculate the emission of each vehicle per hundred kilometres as the factor times the energy and divide the emission of the bus among the passengers. Then compare the emissions of one person by division.
-**Formula:** $m_\text{bus} = e_\text{b} \cdot V_\text{b} \cdot h_\text{b} : N$, $m_\text{car} = e_\text{c} \cdot V_\text{c} \cdot h_\text{c}$ and the ratio is $m_\text{car} : m_\text{bus}$, where $N$ is the number of passengers on the bus, $e$ the emission factor, $V$ the amount of fuel and $h$ the energy content per litre
+**Formula:** energy of the fuel $E = V \cdot h$ and emission $m = e \cdot E$; the bus's emission per passenger $m_\text{bus} = \dfrac{e_\text{b} \cdot V_\text{b} \cdot h_\text{b}}{N}$, the car's $m_\text{car} = e_\text{c} \cdot V_\text{c} \cdot h_\text{c}$ and the ratio $\dfrac{m_\text{car}}{m_\text{bus}} = \dfrac{e_\text{c} \cdot V_\text{c} \cdot h_\text{c} \cdot N}{e_\text{b} \cdot V_\text{b} \cdot h_\text{b}}$, where $N$ is the number of passengers on the bus, $e$ the emission factor, $V$ the amount of fuel and $h$ the energy content per litre
 **Conversions:** Not needed: the litres and megajoules cancel, and the emissions come out in grams.
 **Substitution:** $m_\text{bus} = 74\,\text{g/MJ} \cdot 30\,\textsf{l} \cdot 36\,\text{MJ/}\textsf{l} : 25 = 79\,920\,\text{g} : 25 = 3196.8\,\text{g}$, $m_\text{car} = 69\,\text{g/MJ} \cdot 6.0\,\textsf{l} \cdot 32\,\text{MJ/}\textsf{l} = 13\,248\,\text{g}$, and $13\,248\,\text{g} : 3196.8\,\text{g} = 4.14$
 **Answer:** $4.1$ times, two significant figures like the consumptions $6.0\,\textsf{l}$ and $30\,\textsf{l}$.
@@ -307,7 +307,7 @@ The production $1000\,\text{GWh}$ is in a different column from the emission, an
 **Given:** mass of natural gas $m = 2.0\,\text{kg}$; heat of combustion from the MAFY table (Polttoaineiden LHV-lämpöarvoja, maakaasu) $H = 47\,\tfrac{\text{MJ}}{\text{kg}}$; emission factor $e = 55\,\tfrac{\text{g}}{\text{MJ}}$
 **Find:** the mass of carbon dioxide produced, $m_\text{CO2}$, in kilograms
 **Principle:** The emission is proportional to the energy released in burning: the emission factor gives the emission per unit of energy. We first calculate the energy released using the heat of combustion and then the emission.
-**Formula:** $E = Hm$ and $m_\text{CO2} = eE$
+**Formula:** $E = Hm$ and $m_\text{CO2} = eE$, so $m_\text{CO2} = e \cdot H \cdot m$
 **Conversions:** $5170\,\text{g} = 5.17\,\text{kg}$, because $1000\,\text{g} = 1\,\text{kg}$.
 **Substitution:** $E = 47\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2.0\,\text{kg} = 94\,\text{MJ}$ and $m_\text{CO2} = 55\,\tfrac{\text{g}}{\text{MJ}} \cdot 94\,\text{MJ} = 5170\,\text{g} = 5.17\,\text{kg}$
 **Answer:** $m_\text{CO2} \approx 5.2\,\text{kg}$, two significant figures like the mass $2.0\,\text{kg}$. The heat of combustion $47\,\tfrac{\text{MJ}}{\text{kg}}$ is from the MAFY table (Polttoaineiden LHV-lämpöarvoja); different tables differ slightly, and the answer is accepted within about $\pm 4\,\%$.
@@ -318,7 +318,7 @@ The production $1000\,\text{GWh}$ is in a different column from the emission, an
 **Find:** the decrease of the emission $\Delta m$ in tonnes
 **Principle:** The emission is the emission factor times the electrical energy, $m = eE$. We calculate the emission for each way of producing electricity and subtract.
 **Reading the graph:** The number $820$ is printed at the end of the coal bar and $490$ at the natural gas bar. The unit on the horizontal axis is $\text{g CO}_2\text{-eq./kWh}$, so $e_\text{coal} = 820\,\tfrac{\text{g}}{\text{kWh}}$ and $e_\text{gas} = 490\,\tfrac{\text{g}}{\text{kWh}}$.
-**Formula:** $\Delta m = (e_\text{coal} - e_\text{gas})E$
+**Formula:** $m = eE$, so $\Delta m = m_\text{coal} - m_\text{gas} = e_\text{coal} E - e_\text{gas} E = (e_\text{coal} - e_\text{gas})E$
 **Conversions:** $20.0\,\text{MWh} = 20\,000\,\text{kWh}$; finally $1\,\text{t} = 10^{6}\,\text{g}$.
 **Substitution:** $$
 \begin{aligned}

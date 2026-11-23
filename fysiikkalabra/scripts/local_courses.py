@@ -198,10 +198,10 @@ def quotes_html(c, T, heading=True):
     return out
 
 
-def page_body(code, c, T, chapters, published, investigations=(), guides_html="", course_units=()):
+def page_body(code, c, T, chapters, published, investigations=(), guides_html="", course_units=(), coach=("", "")):
     """The course landing page. chapters: lesson id -> (module code, title) in this language; published: the page
     names this language built. Planned parts say so, and a chapter not published here is named without a link."""
-    out = head(code, c, T) + photos_html(c, T) + quotes_html(c, T)
+    out = head(code, c, T) + coach[0] + photos_html(c, T) + quotes_html(c, T)   # coach: the FY9 coach's row under the heading and its tile (scripts/valmentaja.py)
     if c.get("chapters"):                # the course's chapters and their units (scripts/units.py) as cards (scripts/cardgrid.py,
         import cardgrid, units           # teacher 2026-11-04): a section per chapter with its question, a card per unit with
         hrefs = {u: (ul, href) for u, ul, href in course_units}   # its opening illustration and question; a unit still coming is dashed
@@ -233,6 +233,7 @@ def page_body(code, c, T, chapters, published, investigations=(), guides_html=""
     if c.get("mixer"):                   # the YO-sekoitin: every exam-style task of the site (scripts/mixer.py)
         out += (f'<h2 id="sekoitin">{T("mixer.course_heading")}</h2><p class="section-lead">{T("mixer.course_lead")}</p>'
                 f'<ul class="lessons practice-link"><li class="live"><a href="yo-sekoitin.html">{T("mixer.title")}</a></li></ul>')
+    out += coach[1]
     if investigations:                   # the course's published investigations: canonical pages it refers to, never copies
         import investigations as inv     # the bank with its filter (teacher 2026-10-31)
         order = {i: n for n, i in enumerate(c.get("pathway", []))}

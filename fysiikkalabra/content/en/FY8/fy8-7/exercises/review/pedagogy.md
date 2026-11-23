@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 7ff4568c0902edd0
-SCOPE: delta added-exercise from e73b4e5e83dd72e3 base 5b3ca4f81c77
+CONTENT-HASH: ff46a59fd2b8b611
+SCOPE: delta md-paragraphs,numbers,reflow,typography,wording from 7ff4568c0902edd0 base 64d4935
 
 ## Blocking
 (none)
@@ -9,7 +9,8 @@ SCOPE: delta added-exercise from e73b4e5e83dd72e3 base 5b3ca4f81c77
 (none)
 
 ## Checked
-- Delta: the only change is the graph-reading sentence of fy8-7-L2-08 in solutions.md. New wording: "just below the horizontal line at 4.0" is clear.
-- The fix removes the counting of lines (the earlier "fourth horizontal line" was the eighth on a grid of 0,5), so the student reads the value 4,0 from the axis label as the figure shows it.
-- No numbers, symbols or answers changed; 520 nm, 3,9e15 1/s and 1,5 mW still agree with the task and tolerance checked in round 1.
-- Sentence is grammatical and short enough for 360 px.
+- Delta: the Kaava step of the solutions now runs basic law, then derived formula, then symbolic simplification, and the substitution uses the last symbolic form, as CLAUDE.md "Start from the basic principle and derive" asks.
+- Each chain ends in the same formula as before the change, so the substitution rows, answers and tolerances still follow from it.
+- Each Kaava step is a short aligned chain (one relation per step), a student who could not solve the task can follow it.
+- Paragraph splitting in Principle, Reading the graph and Model answer keeps one idea per paragraph and drops no reason or step.
+- Level mix, task wording and figures are untouched by the change.

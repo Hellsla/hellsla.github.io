@@ -2,7 +2,12 @@
 **Given:** wavelength $\lambda = 532\,\text{nm}$, Planck constant $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, speed of light $c = 2.998 \cdot 10^8\,\text{m/s}$
 **Find:** the energy $E$ of one photon in joules
 **Principle:** The energy of light is quantised into photons, and the energy of one photon depends only on the frequency of the light: $E = hf$. Since the wavelength is known, the frequency is expressed with the basic equation of wave motion $c = f\lambda$.
-**Formula:** $E = hf$ and $f = \dfrac{c}{\lambda}$, so $E = \dfrac{hc}{\lambda}$
+**Formula:** $$\begin{aligned} E &= hf \\
+c &= f\lambda \\
+f &= \dfrac{c}{\lambda} \\
+E &= h\dfrac{c}{\lambda} = \dfrac{hc}{\lambda}
+\end{aligned}
+$$
 **Conversions:** $\lambda = 532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$
 **Substitution:** $$
 \begin{aligned}
@@ -44,7 +49,12 @@ $$. The energies of photons of visible light are about $1.8$–$3.1\,\text{eV}$,
 **Given:** wavelength $\lambda = 254\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the energy $E$ of one photon in electronvolts
 **Principle:** The photon energy is $E = hf$, and the frequency is obtained from the wavelength, because the radiation travels at the speed of light: $f = \tfrac{c}{\lambda}$. The result in joules is finally converted to electronvolts.
-**Formula:** $E = \dfrac{hc}{\lambda}$
+**Formula:** $$\begin{aligned} E &= hf \\
+c &= f\lambda \\
+f &= \dfrac{c}{\lambda} \\
+E &= h\dfrac{c}{\lambda} = \dfrac{hc}{\lambda}
+\end{aligned}
+$$
 **Conversions:** $\lambda = 254\,\text{nm} = 254 \cdot 10^{-9}\,\text{m}$; the energy from joules to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
 **Substitution:** $$
 \begin{aligned}
@@ -77,7 +87,12 @@ An electron cannot collect energy from several photons, and so a larger number o
 **Given:** work function of potassium $W = 2.30\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$, wavelength of the red light $650\,\text{nm}$
 **Find:** a) the threshold frequency $f_0$ in hertz, b) the threshold wavelength $\lambda_0$ and whether light of $650\,\text{nm}$ releases electrons
 **Principle:** An electron is released only if the energy of the photon is at least equal to the work function. At the threshold frequency $hf_0 = W$ and the kinetic energy is zero. The wavelength is obtained from the frequency with the equation $c = f\lambda$, and a greater wavelength corresponds to a smaller photon energy.
-**Formula:** a) $hf_0 = W$, so $f_0 = \dfrac{W}{h}$; b) $\lambda_0 = \dfrac{c}{f_0}$
+**Formula:** $$\begin{aligned} \text{a)}\ hf_0 &= W \\
+f_0 &= \dfrac{W}{h} \\
+\text{b)}\ c &= f_0\lambda_0 \\
+\lambda_0 &= \dfrac{c}{f_0}
+\end{aligned}
+$$
 **Conversions:** $W = 2.30\,\text{eV} = 2.30 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.685 \cdot 10^{-19}\,\text{J}$; $1\,\text{m} = 10^{9}\,\text{nm}$
 **Substitution:** a) $f_0 = \dfrac{3.685 \cdot 10^{-19}\,\text{J}}{6.626 \cdot 10^{-34}\,\text{J}\,\text{s}} = 5.561 \cdot 10^{14}\,\text{Hz}$; b) $\lambda_0 = \dfrac{2.998 \cdot 10^8\,\text{m/s}}{5.561 \cdot 10^{14}\,\text{Hz}} = 5.391 \cdot 10^{-7}\,\text{m} = 539.1\,\text{nm}$
 **Answer:** a) $5.56 \cdot 10^{14}\,\text{Hz}$, three significant figures like the work function $2.30\,\text{eV}$; b) $\lambda_0 = 539\,\text{nm}$. The wavelength of the red light, $650\,\text{nm}$, is greater than $539\,\text{nm}$, so its photon energy is too small and red light does not release electrons from potassium.
@@ -133,7 +148,13 @@ The photon energy of lamp B, $2.25\,\text{eV}$, is smaller than the work functio
 **Given:** work function of caesium $W = 2.14\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the longest wavelength that releases electrons, that is the threshold wavelength $\lambda_0$, in nanometres
 **Principle:** An electron is released only if the energy of one photon is at least equal to the work function. The photon energy decreases as the wavelength grows, so the longest wavelength that releases electrons is the one at which the photon energy is exactly $W$ and the kinetic energy is zero.
-**Formula:** $\dfrac{hc}{\lambda_0} = W$, so $\lambda_0 = \dfrac{hc}{W}$
+**Formula:** $$\begin{aligned} E &= hf_0 \\
+c &= f_0\lambda_0 \\
+E &= W \\
+\dfrac{hc}{\lambda_0} &= W \\
+\lambda_0 &= \dfrac{hc}{W}
+\end{aligned}
+$$
 **Conversions:** $W = 2.14\,\text{eV} = 2.14 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.428 \cdot 10^{-19}\,\text{J}$; the result from metres to nanometres, $1\,\text{m} = 10^{9}\,\text{nm}$
 **Substitution:** $$
 \begin{aligned}
@@ -153,7 +174,12 @@ $$. This is yellow light, so green and blue light release electrons from caesium
 **Given:** power of the laser $P = 5.0\,\text{mW}$, wavelength $\lambda = 650\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$
 **Find:** the number $N$ of photons emitted per second, in the unit $\tfrac{1}{\text{s}}$
 **Principle:** The energy of light travels as photons that all have the same energy $E = \tfrac{hc}{\lambda}$, because laser light has a single wavelength. Power is the energy emitted per second, so the number of photons per second is the power divided by the energy of one photon.
-**Formula:** $P = N E = N \dfrac{hc}{\lambda}$, so $N = \dfrac{P \lambda}{hc}$
+**Formula:** $$\begin{aligned} E &= hf \\
+f &= \dfrac{c}{\lambda} \\
+P &= NE = N\dfrac{hc}{\lambda} \\
+N &= \dfrac{P\lambda}{hc}
+\end{aligned}
+$$
 **Conversions:** $P = 5.0\,\text{mW} = 5.0 \cdot 10^{-3}\,\text{W}$, $\lambda = 650\,\text{nm} = 650 \cdot 10^{-9}\,\text{m}$
 **Substitution:** $$
 \begin{aligned}
@@ -169,7 +195,12 @@ $$, so $N = \dfrac{5.0 \cdot 10^{-3}\,\text{W} \cdot 650 \cdot 10^{-9}\,\text{m}
 **Given:** wavelength $\lambda = 222\,\text{nm}$, work function of magnesium $W = 3.68\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the maximum kinetic energy $E_\text{k,max}$ of the released electrons in electronvolts
 **Principle:** One photon gives its energy to one electron, and energy is conserved: of the photon energy, the work function is used up and the rest remains as kinetic energy (the photoelectric equation). The photon energy is calculated from the wavelength.
-**Formula:** $hf = W + E_\text{k,max}$ and $hf = \dfrac{hc}{\lambda}$, so $E_\text{k,max} = \dfrac{hc}{\lambda} - W$
+**Formula:** $$\begin{aligned} hf &= W + E_\text{k,max} \\
+c &= f\lambda \\
+E_\text{k,max} &= hf - W \\
+&= \dfrac{hc}{\lambda} - W
+\end{aligned}
+$$
 **Conversions:** $\lambda = 222\,\text{nm} = 222 \cdot 10^{-9}\,\text{m}$; the photon energy from joules to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
 **Substitution:** $$
 \begin{aligned}
@@ -189,7 +220,12 @@ $$, and $5.6\,\text{eV} - 3.7\,\text{eV} \approx 1.9\,\text{eV}$. The photon ene
 **Given:** wavelength $\lambda = 300\,\text{nm}$, maximum kinetic energy $E_\text{k,max} = 1.85\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the work function $W$ of the metal in electronvolts
 **Principle:** The photoelectric equation expresses conservation of energy: the photon energy is the sum of the work function and the maximum kinetic energy. When the photon energy and the maximum kinetic energy are known, the work function is their difference.
-**Formula:** $\dfrac{hc}{\lambda} = W + E_\text{k,max}$, so $W = \dfrac{hc}{\lambda} - E_\text{k,max}$
+**Formula:** $$\begin{aligned} hf &= W + E_\text{k,max} \\
+c &= f\lambda \\
+W &= hf - E_\text{k,max} \\
+&= \dfrac{hc}{\lambda} - E_\text{k,max}
+\end{aligned}
+$$
 **Conversions:** $\lambda = 300\,\text{nm} = 300 \cdot 10^{-9}\,\text{m}$; the photon energy from joules to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
 **Substitution:** $$
 \begin{aligned}
@@ -210,7 +246,14 @@ Because of the measurement uncertainty the measurement points are usually not ex
 **Reading the graph:** The frequencies are $f = \tfrac{c}{\lambda}$: $8.21$, $7.40$, $6.88$, $6.38$ and $5.94$ in the unit $10^{14}\,\text{Hz}$. A line is fitted through the points so that it passes between the points. Two points far apart are chosen on the line, for example $(6.0 \cdot 10^{14}\,\text{Hz};\ 0.179\,\text{V})$ and $(8.0 \cdot 10^{14}\,\text{Hz};\ 1.018\,\text{V})$.
 
 The threshold frequency is read at the point where the line crosses the frequency axis.
-**Formula:** $k = \dfrac{\Delta U_\text{s}}{\Delta f}$ and $k = \dfrac{h}{e}$, so $h = ek$; at the threshold frequency $hf_0 = W$
+**Formula:** $$\begin{aligned} hf &= W + E_\text{k,max} \\
+E_\text{k,max} &= eU_\text{s} \\
+U_\text{s} &= \dfrac{h}{e}f - \dfrac{W}{e} \\
+k &= \dfrac{\Delta U_\text{s}}{\Delta f} = \dfrac{h}{e} \\
+h &= ek \\
+hf_0 &= W
+\end{aligned}
+$$
 **Conversions:** The frequencies were calculated from the wavelengths $\lambda = 365\,\text{nm} = 365 \cdot 10^{-9}\,\text{m}$ etc.; no other conversions are needed.
 **Substitution:** $k = \dfrac{1.018\,\text{V} - 0.179\,\text{V}}{8.0 \cdot 10^{14}\,\text{Hz} - 6.0 \cdot 10^{14}\,\text{Hz}} = 4.195 \cdot 10^{-15}\,\tfrac{\text{V}}{\text{Hz}}$, so $$
 \begin{aligned}
@@ -247,7 +290,13 @@ $$, and all the measured wavelengths, $365$–$505\,\text{nm}$, are shorter than
 
 At the threshold frequency $E_\text{k,max} = 0$, so the threshold frequency is read at the point where the line crosses the horizontal axis, that is the frequency axis.
 **Reading the graph:** The student's reading $-2.1\,\text{eV}$ is the intersection with the vertical axis, and its unit is the unit of energy, eV, not the unit of frequency, Hz. The threshold frequency is the intersection with the horizontal axis. The slope of the line is calculated from the first and the last point.
-**Formula:** $k = \dfrac{E_3 - E_1}{f_3 - f_1}$; at the threshold frequency $0 = E_1 + k(f_0 - f_1)$, so $f_0 = f_1 - \dfrac{E_1}{k}$, and $W = kf_0$
+**Formula:** $$\begin{aligned} E_\text{k,max} &= hf - W \\
+k &= \dfrac{E_3 - E_1}{f_3 - f_1} = h \\
+0 &= E_1 + k(f_0 - f_1) \\
+f_0 &= f_1 - \dfrac{E_1}{k} \\
+W &= hf_0 = kf_0
+\end{aligned}
+$$
 **Conversions:** Not needed: the energy is in electronvolts and the frequency in hertz, so the slope is in the unit $\text{eV/Hz}$.
 **Substitution:** $k = \dfrac{1.79\,\text{eV} - 0.55\,\text{eV}}{9.5 \cdot 10^{14}\,\text{Hz} - 6.5 \cdot 10^{14}\,\text{Hz}} = 4.133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, so $$
 \begin{aligned}
@@ -278,7 +327,14 @@ $$, so its absolute value is the same as $W$, and the student's reading $-2.1\,\
 **Principle:** The fastest electrons receive the maximum kinetic energy $E_\text{k,max} = hf - W$ (the photoelectric equation, conservation of energy). The speed is obtained from the kinetic energy $E_\text{k} = \tfrac{1}{2} m v^2$, which holds because the speed remains much smaller than the speed of light (this is checked at the end).
 
 The kinetic energy must be in joules for the speed to come out in $\text{m/s}$.
-**Formula:** $E_\text{k,max} = \dfrac{hc}{\lambda} - W$ and $\dfrac{1}{2} m v^2 = E_\text{k,max}$, so $v = \sqrt{\dfrac{2 E_\text{k,max}}{m}}$
+**Formula:** $$\begin{aligned} hf &= W + E_\text{k,max} \\
+c &= f\lambda \\
+E_\text{k,max} &= hf - W \\
+&= \dfrac{hc}{\lambda} - W \\
+\tfrac{1}{2}mv^2 &= E_\text{k,max} \\
+v &= \sqrt{\dfrac{2E_\text{k,max}}{m}}
+\end{aligned}
+$$
 **Conversions:** $\lambda = 350\,\text{nm} = 350 \cdot 10^{-9}\,\text{m}$; $W = 2.28\,\text{eV} = 2.28 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.653 \cdot 10^{-19}\,\text{J}$
 **Substitution:** $$
 \begin{aligned}
@@ -303,7 +359,12 @@ $$, so $v = \sqrt{\dfrac{2 \cdot 2.023 \cdot 10^{-19}\,\text{J}}{9.109 \cdot 10^
 **Given:** work function $W = 2.28\,\text{eV}$, intensity $I = 1.0 \cdot 10^{-6}\,\text{W/m}^2$, collecting area of the electron $A = 1.0 \cdot 10^{-20}\,\text{m}^2$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$; assumption: all the energy hitting the area accumulates in one electron
 **Find:** the time $t$ in which the electron collects an amount of energy equal to the work function, in days
 **Principle:** In the wave model the energy of light is spread evenly over the whole wavefront. Intensity is power per unit area, so the power arriving at the area $A$ is $P = IA$, and in time $t$ the electron receives the energy $E = Pt = IAt$. The release would begin when $E = W$.
-**Formula:** $W = I A t$, so $t = \dfrac{W}{I A}$
+**Formula:** $$\begin{aligned} P &= IA \\
+E &= Pt = IAt \\
+E &= W \\
+t &= \dfrac{W}{IA}
+\end{aligned}
+$$
 **Conversions:** $W = 2.28\,\text{eV} = 2.28 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.653 \cdot 10^{-19}\,\text{J}$; the time from seconds to days, $1\,\text{day} = 24 \cdot 3600\,\text{s} = 86\,400\,\text{s}$
 **Substitution:** $t = \dfrac{3.653 \cdot 10^{-19}\,\text{J}}{1.0 \cdot 10^{-6}\,\text{W/m}^2 \cdot 1.0 \cdot 10^{-20}\,\text{m}^2} = 3.653 \cdot 10^{7}\,\text{s} = \dfrac{3.653 \cdot 10^{7}}{86\,400}\,\text{days} = 422.8\,\text{days}$
 **Answer:** about $420\,\text{days}$, that is more than a year, two significant figures like the intensity and the area.
@@ -313,7 +374,13 @@ $$, so $v = \sqrt{\dfrac{2 \cdot 2.023 \cdot 10^{-19}\,\text{J}}{9.109 \cdot 10^
 **Given:** measurement points $(f_1, E_1) = (7.0 \cdot 10^{14}\,\text{Hz};\ 0.60\,\text{eV})$ and $(f_2, E_2) = (1.00 \cdot 10^{15}\,\text{Hz};\ 1.84\,\text{eV})$, where $E$ is the maximum kinetic energy; the dependence is linear
 **Find:** the threshold frequency $f_0$ in hertz
 **Principle:** According to the photoelectric equation, $E_\text{k,max} = hf - W$ is a straight line as a function of the frequency. At the threshold frequency an electron is just barely released, so the maximum kinetic energy is zero: the threshold frequency is the point where the line crosses the frequency axis. The slope of the line is obtained from the two measurement points.
-**Formula:** slope $k = \dfrac{E_2 - E_1}{f_2 - f_1}$, and on the line $E = E_1 + k(f - f_1)$; the condition $E = 0$ gives $f_0 = f_1 - \dfrac{E_1}{k}$
+**Formula:** $$\begin{aligned} E_\text{k,max} &= hf - W \\
+k &= \dfrac{E_2 - E_1}{f_2 - f_1} \\
+E &= E_1 + k(f - f_1) \\
+0 &= E_1 + k(f_0 - f_1) \\
+f_0 &= f_1 - \dfrac{E_1}{k}
+\end{aligned}
+$$
 **Conversions:** Not needed: the energies are in the same unit and the frequencies are in hertz, so the units cancel.
 **Substitution:** $k = \dfrac{1.84\,\text{eV} - 0.60\,\text{eV}}{1.00 \cdot 10^{15}\,\text{Hz} - 7.0 \cdot 10^{14}\,\text{Hz}} = \dfrac{1.24\,\text{eV}}{3.0 \cdot 10^{14}\,\text{Hz}} = 4.133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, so $$
 \begin{aligned}
@@ -340,7 +407,17 @@ $$, and it is. The threshold frequency is smaller than both measurement frequenc
 **Principle:** The stopping voltage is the smallest reverse voltage at which the current is zero, and it stops even the fastest electrons: $eU_\text{s} = E_\text{k,max} = hf - W$. In the saturation current all the released electrons end up at the anode, so the number of electrons per second is $\tfrac{I}{e}$.
 
 The number of photons per second is the power divided by the energy of one photon, $\tfrac{hc}{\lambda}$.
-**Formula:** $W = \dfrac{hc}{\lambda} - eU_\text{s}$; $N_\text{f} = \dfrac{P\lambda}{hc}$, $N_\text{e} = \dfrac{I}{e}$ and $\eta = \dfrac{N_\text{e}}{N_\text{f}}$
+**Formula:** $$\begin{aligned} hf &= W + E_\text{k,max} \\
+E_\text{k,max} &= eU_\text{s} \\
+E_\text{f} &= hf = \dfrac{hc}{\lambda} \\
+W &= \dfrac{hc}{\lambda} - eU_\text{s} \\
+P &= N_\text{f}E_\text{f} \\
+N_\text{f} &= \dfrac{P\lambda}{hc} \\
+I &= N_\text{e}e \\
+N_\text{e} &= \dfrac{I}{e} \\
+\eta &= \dfrac{N_\text{e}}{N_\text{f}}
+\end{aligned}
+$$
 **Conversions:** $\lambda = 400\,\text{nm} = 400 \cdot 10^{-9}\,\text{m}$, $P_1 = 1.0 \cdot 10^{-3}\,\text{W}$, $I_1 = 0.30\,\mu\text{A} = 0.30 \cdot 10^{-6}\,\text{A}$; the energy from $\text{J}$ to $\text{eV}$ by dividing by $1.602 \cdot 10^{-19}$
 **Substitution:** a) $U_\text{s} = 0.80\,\text{V}$ and the photon energy is $\tfrac{hc}{\lambda} = \tfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{400 \cdot 10^{-9}\,\text{m}} = 4.966 \cdot 10^{-19}\,\text{J} = 3.100\,\text{eV}$, so $W = 3.100\,\text{eV} - 0.80\,\text{eV} = 2.30\,\text{eV}$. b) $N_\text{f} = \dfrac{1.0 \cdot 10^{-3}\,\text{W}}{4.966 \cdot 10^{-19}\,\text{J}} = 2.014 \cdot 10^{15}\,\tfrac{1}{\text{s}}$ and $N_\text{e} = \dfrac{0.30 \cdot 10^{-6}\,\text{A}}{1.602 \cdot 10^{-19}\,\text{C}} = 1.873 \cdot 10^{12}\,\tfrac{1}{\text{s}}$, so $\eta = \dfrac{1.873 \cdot 10^{12}}{2.014 \cdot 10^{15}} = 9.30 \cdot 10^{-4} = 0.0930\,\%$. c) At the power $P_2$: $N_\text{f} = 4.027 \cdot 10^{15}\,\tfrac{1}{\text{s}}$ and $N_\text{e} = 3.745 \cdot 10^{12}\,\tfrac{1}{\text{s}}$, so $\eta = 0.0930\,\%$ now too.
 **Answer:** $\eta = 0.093\,\%$, two significant figures like the power $1.0\,\text{mW}$ and the current $0.30\,\mu\text{A}$; that is, about one photon in a thousand releases an electron. In addition $U_\text{s} = 0.80\,\text{V}$ and $W = 2.30\,\text{eV}$.
@@ -358,7 +435,15 @@ Far fewer electrons are released than photons arrive ($1.9 \cdot 10^{12}$ and $2
 **Principle:** A source releases electrons only if its photon energy $\tfrac{hc}{\lambda}$ is at least $W$; power does not make up for photon energy. The number of photons per second of a releasing source is $N_\text{f} = \tfrac{P\lambda}{hc}$, the number of released electrons is $\eta N_\text{f}$ and the current is $I = e \eta N_\text{f}$.
 
 The currents of the different sources are added. The stopping voltage is determined by the greatest kinetic energy, so it is given by the greatest photon energy.
-**Formula:** $E_\text{f} = \dfrac{hc}{\lambda}$; $I = \dfrac{e \eta P \lambda}{hc}$ for each releasing source; $U_\text{s} = \dfrac{E_\text{f,max} - W}{e}$
+**Formula:** $$\begin{aligned} E_\text{f} &= hf = \dfrac{hc}{\lambda} \\
+P &= N_\text{f}E_\text{f} \\
+N_\text{e} &= \eta N_\text{f} \\
+I &= N_\text{e}e \\
+&= \dfrac{e\eta P\lambda}{hc} \\
+eU_\text{s} &= E_\text{f,max} - W \\
+U_\text{s} &= \dfrac{E_\text{f,max} - W}{e}
+\end{aligned}
+$$
 **Conversions:** $\lambda = 470\,\text{nm} = 470 \cdot 10^{-9}\,\text{m}$ etc., $P_\text{A} = 4.0\,\text{mW} = 4.0 \cdot 10^{-3}\,\text{W}$, $\eta = 0.10\,\% = 1.0 \cdot 10^{-3}$; the photon energy from $\text{J}$ to $\text{eV}$ by dividing by $1.602 \cdot 10^{-19}$
 **Substitution:** a) $E_\text{A} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{470 \cdot 10^{-9}\,\text{m}} = 4.227 \cdot 10^{-19}\,\text{J} = 2.64\,\text{eV}$, $E_\text{B} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{620 \cdot 10^{-9}\,\text{m}} = 3.204 \cdot 10^{-19}\,\text{J} = 2.00\,\text{eV}$ and $E_\text{C} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{365 \cdot 10^{-9}\,\text{m}} = 5.443 \cdot 10^{-19}\,\text{J} = 3.40\,\text{eV}$. Sources A and C exceed $2.30\,\text{eV}$, source B does not. b) $$
 \begin{aligned}
@@ -391,7 +476,12 @@ $$ per second. The $8.0\,\text{mW}$ of the red source corresponds to $2.5 \cdot 
 **Given:** work function of calcium from the MAFY table (*Irrotustöitä*, calcium) $W = 3.20\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Asked:** the longest wavelength, that is the threshold wavelength $\lambda_0$, in nanometres
 **Principle:** An electron is released only if the photon energy is enough for the work function: $hf \geq W$. At the longest wavelength and the lowest frequency the photon energy is exactly the work function, $hf_0 = W$. The work function is not given in the task, so it is looked up in the table.
-**Formula:** $hf_0 = W$ and $f_0 = \dfrac{c}{\lambda_0}$, so $\lambda_0 = \dfrac{hc}{W}$
+**Formula:** $$\begin{aligned} hf_0 &= W \\
+c &= f_0\lambda_0 \\
+f_0 &= \dfrac{c}{\lambda_0} \\
+\lambda_0 &= \dfrac{hc}{W}
+\end{aligned}
+$$
 **Conversions:** $W = 3.20\,\text{eV} = 3.20 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 5.126 \cdot 10^{-19}\,\text{J}$
 **Substitution:** $$
 \begin{aligned}

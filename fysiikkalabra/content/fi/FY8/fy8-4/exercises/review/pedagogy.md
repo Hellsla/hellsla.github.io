@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 2d131b382d63c27b
-SCOPE: delta added-exercise from df0225f5b9796ad4 base cabadc3e6179
+CONTENT-HASH: a55f5a63698fbd03
+SCOPE: delta md-paragraphs,numbers,reflow,typography from 2d131b382d63c27b base 64d4935
 
 ## Blocking
 (none)
 
 ## Polish
-- fy8-4-L1-10 — four chained steps (hc, E in J, E in eV, ratio) plus a table lookup is the upper end of level 1; acceptable because the solution splits them and the hint names the table, but a note "voit laskea suoraan eV:ssa kaavalla 1240 eV nm / λ" could shorten it.
-- fy8-4-L2-09 — level 2 is justified only by reading two levels and the difference E3 - E1 before p = E/c; keep it as the lighter L2 task. The skipped level E2 is a fair trap.
+- fy8-4 Compton-energy solution — Kaava now gives hf = hf' + Ek then Ek = hf - hf'; good, but name that the electron's initial energy is taken as zero.
+- fy8-4 double-slit e) — the split Vastaus (c, d, e as separate paragraphs) is clearer; keep the one-line summary at the end of e).
 
 ## Checked
-- L1-09: green line is the only green line, readable to a few nm from the 10 nm ticks; the figure gives all the data, the description says the same without naming 546 nm; answer 1.21 within tolerance of the read range; level 1, new kind (graph reading) and no repeat of L1-01/L1-07.
-- L1-10: MAFY lookup is a real table skill (CLAUDE.md), the hint names the table without the value, the solution explains MeV/c^2 as rest energy; links to Compton (L2-01, L2-06) without repeating them.
-- L2-09: energy-level figure is needed to answer; the description lists levels but not the transition or the answer; p = E/c step explained; sig. figures and tolerance handled.
-- Solutions follow situation, principle, reading, formula, substitution, sanity check; the sanity checks use lesson values.
-- Whole set: 24 tasks, mix of kinds improved (graph, data, table now at level 1-2); progression within levels holds; no worked-example repeat.
-- Method: text of the three added exercises and figure descriptions; captures not needed.
+- Kaava steps start from P = (N/t)·hf or hf = hf' + Ek, then c = fλ, then the combined form; symbolic until Sijoitus.
+- The long Vastaus and Kuvaajan lukeminen paragraphs are split into one idea each (b, c, d, e); the slope check 2,43 pm is a useful addition.
+- Answers, numbers, tolerances unchanged.
+- Method: delta; diff read.

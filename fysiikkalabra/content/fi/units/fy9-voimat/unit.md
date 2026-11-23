@@ -83,6 +83,12 @@ Kaikki tämän tunnin tehtävät ratkaistaan samalla tavalla: **ensin voimakuvio
 
 Alun kysymyksen ratkaisee kappaleen valinta. Auto ja kärry vaikuttavat toisiinsa yhtä suurilla voimilla, mutta voimat vaikuttavat **eri kappaleisiin**, joten ne eivät kumoa toisiaan. Kärryn liikkeen ratkaisevat vain kärryyn vaikuttavat voimat: kiihdytettäessä vetoaisa vetää sitä eteenpäin enemmän kuin vierimisvastus jarruttaa.
 
+```pysahdy
+Auto vetää kärryä eteenpäin ja kärry autoa taaksepäin yhtä suurella voimalla. Miksi nämä voimat eivät kumoa toisiaan?
+---
+Ne vaikuttavat eri kappaleisiin. Kärryn liikkeen ratkaisevat vain kärryyn vaikuttavat voimat.
+```
+
 ## Kaava: Newtonin lait ja voimat
 
 ### Newtonin lait
@@ -94,6 +100,12 @@ Newtonin 2. laki (dynamiikan peruslaki) :: \Sigma\overline{F} = m\overline{a}
 ```
 
 missä $\Sigma\overline{F}$ on kappaleeseen vaikuttavien voimien summa ($\text{N}$), $m$ massa ($\text{kg}$), $\overline{a}$ kiihtyvyys ($\text{m/s}^2$) ja $\overline{F}_{AB}$ voima, jolla A vaikuttaa B:hen. Laskussa toinen laki kirjoitetaan komponenteittain, $\Sigma F_x = ma_x$ ja $\Sigma F_y = ma_y$, ja vinon voiman komponentit ovat $F\cos\alpha$ ja $F\sin\alpha$. Kokonaisvoima osoittaa kiihtyvyyden suuntaan, ei aina nopeuden suuntaan.
+
+```pysahdy
+Kappale jarruttaa suoralla tiellä. Mihin suuntaan siihen vaikuttavien voimien summa osoittaa?
+---
+Kiihtyvyyden suuntaan eli nyt liikettä vastaan. Kokonaisvoima ei aina osoita nopeuden suuntaan.
+```
 
 ### Paino, kitka ja rinne
 
@@ -121,6 +133,12 @@ Rinteessä, jonka kaltevuuskulma on $\alpha$, painon komponentit ovat $G_x = mg\
   <foreignObject x="501.5" y="284" width="52" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#c92a2a">$\overline{G}_{y}$</div></foreignObject>
   <foreignObject x="450.5" y="223" width="23" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$\alpha$</div></foreignObject>
 </svg>
+
+```pysahdy
+Kappale liukuu rinnettä, jonka kaltevuuskulma on $\alpha$, ja pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima. Mikä on tukivoiman suuruus?
+---
+$N = mg\cos\alpha$, sillä tukivoima kumoaa painon pintaa vastaan kohtisuoran komponentin $G_y$. Se on pienempi kuin $mg$.
+```
 
 ### Kytketyt kappaleet ja ilmanvastus
 

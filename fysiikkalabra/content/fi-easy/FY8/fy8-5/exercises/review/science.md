@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: eed6b5fdfdb577a9
-SCOPE: delta added-exercise from 70fd32648a0639fc base 5b3ca4f81c77
+CONTENT-HASH: cca2bc526200a65c
+SCOPE: delta md-paragraphs,numbers,reflow,teacher-figure,typography from eed6b5fdfdb577a9 base 64d4935
 
 ## Blocking
 
 ## Polish
-- exercises.json fy8-5-L2-08 (teksti, c-kohta) — vetyatomissa on yksi elektroni, joten c) kysyy alikuorten kapasiteettia; ratkaisun neon-tarkistus tekee tämän selväksi (C, sopiva yksinkertaistus) — halutessa lisää "atomissa, jossa on enemmän elektroneja".
 
 ## Checked
-- Recomputed in one script: L2-08 2·(1+1+3) = 10 (answers.py 10, unit kpl); L2-09 E_4 − E_2 = 2.55 eV = 4.0851e-19 J, hc = 1.98647e-25 J m, λ = 486.27 nm (answers.py 486.273, answer 486 nm, Hβ). Tolerance and 3 s.f. fit the readings.
-- L2-08: the task's own definition "Solmu on kohta, jossa elektronia ei koskaan havaita" agrees with the solution (aalto nolla → todennäköisyys nolla); 1s no node, 2s solmupallo, 2p solmutaso through the nucleus; "aalto on tila, jolla ei ole rataa" is right.
-- Figure `fy8-5/nodes` stated not to scale; node sphere drawn between the inner region and the outer shell; 2p lobes vertical, nodal plane horizontal through the nucleus.
-- Figure `fy8-5/levels-n4`: linear energy axis, ticks −0,850 / −1,51 / −3,40 / −13,6 eV = −13,6 eV/n²; 1/3/5/7 boxes, 16 on n = 4; no wavelength shown.
-- 4s→2p and 4d→2p both allowed; part c)'s reason matches the brief's Kaava ("saman kuoren tiloilla on sama energia") and Esimerkki (3d→2p = 3s→2p).
-- Solutions complete (seven parts), symbolic λ = hc/(E_4 − E_2) first, reasonableness real (näkyvä valo, Balmerin toinen viiva, lyhyempi kuin 656 nm koska 2,55 > 1,89 eV; 8 + 2 = 10, neon).
-- Same numbers, symbols and physics as the English version; symbols E_n, N_max, hc/λ as in the brief.
-- Scope inside FY8 central contents; no Schrödinger equation.
-- Hash the same at the start and the end.
+- Counting tasks: P_ulko = 1 − p, k = P·N = (1 − p)N; P = p90 − p50, k = (p90 − p50)N; P = p − p_sisä: the probability is named before the count, as the passed solutions computed.
+- Shell capacity: N = N1 + N2 + N_ulko with N_n = 2n² gives N − 2·1² − 2·2²: correct.
+- Ionisation: E3 + E_i = 0, E3 = −13,6 eV/3², E_i = 13,6 eV/9: correct sign.
+- Transitions: E_f = hf, c = fλ, E_f = E3 − E1, E4 − E2, 0 − E2, E_n − E1 to λ = hc/ΔE, λ_max = hc/(−E2), λ_max = hc/E_i, n = √(13,6 eV/(−E_n)), N_orb = n²: all right.
+- Balmer graph: E_f = E_n − E_2 = 13,6 eV (1/4 − 1/n²), slope ΔE_f/Δ(1/4 − 1/n²): correct; the 13,62 eV fit sentence was already in the passed text (split only).
+- Standing wave: L = mλ/2, λ = 2L/m, f = v/λ: correct.
+- Paragraph splits in two orbital model answers: joined text identical to the passed version. Teacher-approved figures nodes/string are carried.
+- exercises.json, answers.py, numbers and tolerances unchanged.
+- Hash cca2bc526200a65c at the start and the end.

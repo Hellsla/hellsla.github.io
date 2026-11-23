@@ -58,7 +58,14 @@ $$
 **Annettu:** tulevan fotonin aallonpituus $\lambda = 0{,}0711\,\text{nm}$, sironneen fotonin $\lambda' = 0{,}0735\,\text{nm}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** elektronin saama liike-energia $E_\text{k}$ elektronivoltteina
 **Periaate:** Comptonin ilmiössä fotoni törmää lähes vapaaseen elektroniin. Energia säilyy. Elektroni saa siis sen energian, jonka fotoni menettää: $hf = hf' + E_\text{k}$. Fotonien energiat saadaan aallonpituuksista.
-**Kaava:** $\dfrac{hc}{\lambda} = \dfrac{hc}{\lambda'} + E_\text{k}$, josta $E_\text{k} = \dfrac{hc}{\lambda} - \dfrac{hc}{\lambda'}$
+**Kaava:** $hf = hf' + E_\text{k}$ ja $$
+\begin{aligned}
+E_\text{k} &= hf - hf' \\
+f &= \dfrac{c}{\lambda} \\
+f' &= \dfrac{c}{\lambda'} \\
+E_\text{k} &= \dfrac{hc}{\lambda} - \dfrac{hc}{\lambda'}
+\end{aligned}
+$$
 **Muunnokset:** $0{,}0711\,\text{nm} = 0{,}0711 \cdot 10^{-9}\,\text{m}$ ja $0{,}0735\,\text{nm} = 0{,}0735 \cdot 10^{-9}\,\text{m}$. Lopuksi joulet muutetaan elektronivolteiksi: $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -102,7 +109,13 @@ $$ ja elektronivoltteina $E_\text{k} = \dfrac{9{,}123 \cdot 10^{-17}\,\text{J}}{
 **Annettu:** fotoneja sekunnissa $\tfrac{N}{t} = 2{,}40 \cdot 10^4\,\tfrac{1}{\text{s}}$, aallonpituus $\lambda = 550\,\text{nm}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$
 **Kysytty:** valon teho $P$ yksikössä $10^{-15}\,\text{W}$
 **Periaate:** Teho on sekunnissa saapuvien fotonien yhteenlaskettu energia. Jokaisen fotonin energia on $hf = \tfrac{hc}{\lambda}$, koska valo on yhden aallonpituuden valoa.
-**Kaava:** $P = \dfrac{N}{t} \cdot hf$, missä $hf = \dfrac{hc}{\lambda}$, joten $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$
+**Kaava:** $P = \dfrac{N}{t} \cdot hf$ ja $$
+\begin{aligned}
+c &= f\lambda \\
+hf &= \dfrac{hc}{\lambda} \\
+P &= \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}
+\end{aligned}
+$$
 **Muunnokset:** $550\,\text{nm} = 550 \cdot 10^{-9}\,\text{m}$
 **Sijoitus:** $$
 \begin{aligned}
@@ -134,7 +147,15 @@ $$, joten $N = \dfrac{1{,}146 \cdot 10^{-23}\,\text{kg}\cdot\text{m/s}}{1{,}1250
 **Annettu:** tulevan fotonin aallonpituus $\lambda = 0{,}0500\,\text{nm}$, elektronin liike-energia $E_\text{k} = 1{,}00\,\text{keV}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** sironneen fotonin aallonpituus $\lambda'$ nanometreinä
 **Periaate:** Comptonin ilmiössä energia säilyy. Tulevan fotonin energia jakautuu sironneelle fotonille ja elektronille. Sironneen fotonin energiasta saadaan sen aallonpituus.
-**Kaava:** $\dfrac{hc}{\lambda} = \dfrac{hc}{\lambda'} + E_\text{k}$, josta $\lambda' = \dfrac{hc}{hc/\lambda - E_\text{k}}$
+**Kaava:** $hf = hf' + E_\text{k}$ ja $$
+\begin{aligned}
+hf' &= hf - E_\text{k} \\
+f &= \dfrac{c}{\lambda} \\
+f' &= \dfrac{c}{\lambda'} \\
+\dfrac{hc}{\lambda'} &= \dfrac{hc}{\lambda} - E_\text{k} \\
+\lambda' &= \dfrac{hc}{hc/\lambda - E_\text{k}}
+\end{aligned}
+$$
 **Muunnokset:** $0{,}0500\,\text{nm} = 0{,}0500 \cdot 10^{-9}\,\text{m}$ ja $$
 \begin{aligned}
 1{,}00\,\text{keV} &= 1{,}00 \cdot 10^3 \\
@@ -171,7 +192,13 @@ Se ei myöskään kulje kuulan tavoin vain toisen raon kautta, koska kuulamalli 
 **Annettu:** aallonpituus $\lambda = 405\,\text{nm}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** fotonin energia $E$ elektronivoltteina
 **Periaate:** Fotonin energia on $E = hf$. Valon taajuus saadaan aallonpituudesta yhtälöllä $c = f\lambda$. Energia on siis kääntäen verrannollinen aallonpituuteen. Mitä lyhyempi aallonpituus, sitä suurempi energia.
-**Kaava:** $E = hf = \dfrac{hc}{\lambda}$
+**Kaava:** $E = hf$ ja $$
+\begin{aligned}
+c &= f\lambda \\
+f &= \dfrac{c}{\lambda} \\
+E &= \dfrac{hc}{\lambda}
+\end{aligned}
+$$
 **Muunnokset:** $405\,\text{nm} = 405 \cdot 10^{-9}\,\text{m}$. Lopuksi muutetaan joulet elektronivolteiksi: $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -223,7 +250,14 @@ Suoran kulmakerroin on siis $k \approx 2{,}43\,\text{pm}$ (sovituksesta tarkemmi
 **Annettu:** laserin aallonpituus $\lambda = 633\,\text{nm}$ ja teho $P = 2{,}0\,\text{mW}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$
 **Kysytty:** a) missä oppilaan virhe on ja b) fotonien määrä sekunnissa $\tfrac{N}{t}$ yksikössä $10^{15}\,\tfrac{1}{\text{s}}$
 **Periaate:** Teho on sekunnissa lähtevien fotonien energia yhteensä. Siksi $\tfrac{N}{t} = \tfrac{P}{hf}$ ja $hf = \tfrac{hc}{\lambda}$. Kaavassa aallonpituus on metreinä, koska $h$ ja $c$ ovat SI-yksiköissä.
-**Kaava:** $\dfrac{N}{t} = \dfrac{P}{hf}$, missä $hf = \dfrac{hc}{\lambda}$, joten $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$
+**Kaava:** $P = \dfrac{N}{t} \cdot hf$ ja $$
+\begin{aligned}
+\dfrac{N}{t} &= \dfrac{P}{hf} \\
+c &= f\lambda \\
+hf &= \dfrac{hc}{\lambda} \\
+\dfrac{N}{t} &= \dfrac{P\lambda}{hc}
+\end{aligned}
+$$
 **Muunnokset:** Oppilas sijoitti aallonpituuden nanometreinä: $633\,\text{nm} = 633 \cdot 10^{-9}\,\text{m}$. Virhe on $10^{-9}$-kertainen fotonin energiassa. Teho: $2{,}0\,\text{mW} = 2{,}0 \cdot 10^{-3}\,\text{W}$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -260,7 +294,16 @@ Oikea perustelu on, että sironneen fotonin energia on pienempi ja fotonin energ
 **Annettu:** aallonpituus $\lambda = 532\,\text{nm}$, rakoihin tulevan valon teho $P = 1{,}5 \cdot 10^{-15}\,\text{W}$. Rakoihin tulevista fotoneista $20\,\%$ kulkee rakojen läpi ja osuu ilmaisimen alueelle. Ilmaisin rekisteröi $40\,\%$ siihen osuvista fotoneista. Tavoite on $5000$ osumaa, laitteen pituus on $1{,}5\,\text{m}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$
 **Kysytty:** osumien keräämiseen kuluva aika $t$ sekunteina, fotonien keskimääräinen väli $d$ ja perustelu sille, miksi reitin tunteminen tuhoaisi raitakuvion
 **Periaate:** Teho on fotonien energia sekunnissa. Rakoihin tulee siis $\tfrac{P}{hf}$ fotonia sekunnissa. Vain osa rakoihin tulevista fotoneista rekisteröidään osumaksi. Ensin $20\,\%$ kulkee rakojen läpi ja osuu ilmaisimeen. Siitä $40\,\%$ rekisteröidään. Osumia tulee siis $0{,}20 \cdot 0{,}40 = 0{,}080$ kertaa rakoihin tulevien fotonien määrä. Fotonit etenevät nopeudella $c$. Niiden väli on sekunnissa kuljettu matka jaettuna fotonien määrällä sekunnissa.
-**Kaava:** $hf = \dfrac{hc}{\lambda}$, $\dfrac{N}{t} = \dfrac{P}{hf}$, rekisteröidyt osumat sekunnissa $r = 0{,}20 \cdot 0{,}40 \cdot \dfrac{N}{t}$, aika $t = \dfrac{5000}{r}$ ja väli $d = \dfrac{c}{N/t}$
+**Kaava:** $P = \dfrac{N}{t} \cdot hf$ ja $$
+\begin{aligned}
+c &= f\lambda \\
+hf &= \dfrac{hc}{\lambda} \\
+\dfrac{N}{t} &= \dfrac{P}{hf} \\
+r &= 0{,}20 \cdot 0{,}40 \cdot \dfrac{N}{t} \\
+t &= \dfrac{5000}{r} \\
+d &= \dfrac{c}{N/t}
+\end{aligned}
+$$
 **Muunnokset:** $532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$ sekä $20\,\% = 0{,}20$ ja $40\,\% = 0{,}40$. Teho on jo watteina eli jouleina sekunnissa.
 **Sijoitus:** a) $$
 \begin{aligned}
@@ -282,7 +325,7 @@ Se ei voi syntyä siitä, että fotoni kulkee vain toisen raon kautta ja sen voi
 **Annettu:** tulevan fotonin aallonpituus $\lambda = 0{,}07110\,\text{nm}$, sironneen $\lambda' = 0{,}07476\,\text{nm}$ kulmalla $\theta = 120\,{}^\circ$ (taulukon kolmas rivi), elektroni aluksi levossa, $m_\text{e} = 9{,}109 \cdot 10^{-31}\,\text{kg}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** elektronin liikemäärän suuruus $p_\text{e}$ yksikössä $10^{-23}\,\text{kg}\cdot\text{m/s}$ ja liike-energioiden vertailu
 **Periaate:** Liikemäärä säilyy vektorisuureena: $\overline{p} = \overline{p}' + \overline{p}_e$, joten $\overline{p}_e = \overline{p} - \overline{p}'$. Vektorit $\overline{p}$, $\overline{p}'$ ja $\overline{p}_e$ muodostavat kolmion. Vektorien $\overline{p}$ ja $\overline{p}'$ välinen kulma on sirontakulma $\theta$. Fotonin liikemäärä on $\tfrac{h}{\lambda}$. Myös energia säilyy. Elektronin liike-energia on sama kuin fotonin menettämä energia.
-**Kaava:** $p = \dfrac{h}{\lambda}$, $p' = \dfrac{h}{\lambda'}$ ja kosinilauseella $p_\text{e} = \sqrt{p^2 + p'^2 - 2pp'\cos\theta}$. Liike-energia on $E_\text{k} = \dfrac{p_\text{e}^2}{2m_\text{e}}$ tai $E_\text{k} = \dfrac{hc}{\lambda} - \dfrac{hc}{\lambda'}$.
+**Kaava:** $p = \dfrac{h}{\lambda}$, $p' = \dfrac{h}{\lambda'}$ ja kosinilauseella $p_\text{e} = \sqrt{p^2 + p'^2 - 2pp'\cos\theta}$. Liike-energia on $E_\text{k} = \dfrac{p_\text{e}^2}{2m_\text{e}}$ tai $E_\text{k} = hf - hf' = \dfrac{hc}{\lambda} - \dfrac{hc}{\lambda'}$.
 **Muunnokset:** $$
 \begin{aligned}
 &0{,}07110\,\text{nm} \\
@@ -339,7 +382,14 @@ $$
 **Annettu:** röntgenfotonin aallonpituus $\lambda = 0{,}0711\,\text{nm}$; taulukosta (MAFY, *Hiukkasten ominaisuuksia*, elektroni) lepomassa $m_\text{e} = 0{,}511\,\tfrac{\text{MeV}}{\text{c}^2}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** fotonin energian $E$ osuus elektronin lepoenergiasta $m_\text{e}c^2$ prosentteina
 **Periaate:** Fotonin energia on $E = \dfrac{hc}{\lambda}$. Massa ja energia ovat sama asia eri muodossa. Elektronin lepoenergia eli energia, joka elektronilla on levossa, on $m_\text{e}c^2$. Yksikkö $\tfrac{\text{MeV}}{\text{c}^2}$ tarkoittaa, että lepoenergia on taulukon luku megaelektronivoltteina: $m_\text{e}c^2 = 0{,}511\,\text{MeV}$. Kun fotonin energiaa verrataan lepoenergiaan, nähdään, kuinka paljon fotoni voi menettää energiaa Comptonin ilmiössä.
-**Kaava:** $E = \dfrac{hc}{\lambda}$ ja osuus $= \dfrac{E}{m_\text{e}c^2} \cdot 100\,\%$
+**Kaava:** $E = hf$ ja $$
+\begin{aligned}
+c &= f\lambda \\
+f &= \dfrac{c}{\lambda} \\
+E &= \dfrac{hc}{\lambda} \\
+\text{osuus} &= \dfrac{E}{m_\text{e}c^2} \cdot 100\,\%
+\end{aligned}
+$$
 **Muunnokset:** $0{,}0711\,\text{nm} = 0{,}0711 \cdot 10^{-9}\,\text{m}$. Lepoenergia: $0{,}511\,\text{MeV} = 0{,}511 \cdot 10^{6}\,\text{eV} = 5{,}11 \cdot 10^{5}\,\text{eV}$. Fotonin energia muutetaan jouleista elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
 **Sijoitus:** Ensin tulo $hc$:
 $$

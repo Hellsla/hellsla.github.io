@@ -53,9 +53,9 @@
 **Given:** according to the label $1200\,\text{kJ}$ per hundred grams, mass of the slice $m = 40\,\text{g}$
 **Find:** the energy $E$ of the slice, in kilojoules
 **Principle:** The label gives the energy content of the food, that is the energy the body can use, per unit of mass. It is not a heat of combustion, but the calculation is done in the same way: the label is converted to megajoules per kilogram and multiplied by the mass.
-**Formula:** $E = em$, where the energy content $e$ is the energy on the label divided by the mass on the label
+**Formula:** $e = \dfrac{E_\text{label}}{m_\text{label}}$ and $E = em$, together $E = E_\text{label}\,\dfrac{m}{m_\text{label}}$, where $E_\text{label}$ and $m_\text{label}$ are the energy and the mass on the label
 **Conversions:** $1200\,\text{kJ} = 1200 \cdot (1 : 1000)\,\text{MJ} = 1.2\,\text{MJ}$, $100\,\text{g} = 100 \cdot (1 : 1000)\,\text{kg} = 0.100\,\text{kg}$ and $40\,\text{g} = 40 \cdot (1 : 1000)\,\text{kg} = 0.040\,\text{kg}$.
-**Substitution:** $e = 1.2\,\text{MJ} : 0.100\,\text{kg} = 12\,\tfrac{\text{MJ}}{\text{kg}}$ and $E = 12\,\tfrac{\text{MJ}}{\text{kg}} \cdot 0.040\,\text{kg} = 0.48\,\text{MJ} = 480\,\text{kJ}$
+**Substitution:** $E = 1.2\,\text{MJ} \cdot \dfrac{0.040\,\text{kg}}{0.100\,\text{kg}} = 0.48\,\text{MJ} = 480\,\text{kJ}$ (intermediate value $e = 12\,\tfrac{\text{MJ}}{\text{kg}}$)
 **Answer:** $480\,\text{kJ}$, two significant figures like the mass $40\,\text{g}$.
 **Reasonableness:** The slice is $40\,\%$ of a hundred grams, and $40\,\%$ of $1200\,\text{kJ}$ is $0.4 \cdot 1200\,\text{kJ} = 480\,\text{kJ}$. The result is smaller than $1200\,\text{kJ}$, as it should be.
 
@@ -73,9 +73,9 @@
 **Given:** wood pellets, mass $m = 40\,\text{kg}$ and heat of combustion $H = 17\,\tfrac{\text{MJ}}{\text{kg}}$; efficiency of the boiler $\eta = 85\,\% = 0.85$
 **Find:** the useful energy $E_\text{useful}$ in megajoules
 **Principle:** The pellets release the energy $E_\text{in} = Hm$. Efficiency is the share of the energy taken in that is obtained as useful energy (chapter *Efficiency*), so only part of the released energy ends up heating the house.
-**Formula:** $E_\text{in} = Hm$ and $\eta = \dfrac{E_\text{useful}}{E_\text{in}}$, so $E_\text{useful} = \eta\, E_\text{in}$
+**Formula:** $\eta = \dfrac{E_\text{useful}}{E_\text{in}}$ and $E_\text{in} = Hm$, together $E_\text{useful} = \eta H m$
 **Conversions:** Not needed: the mass is in kilograms and $85\,\% = 0.85$.
-**Substitution:** $E_\text{in} = 17\,\tfrac{\text{MJ}}{\text{kg}} \cdot 40\,\text{kg} = 680\,\text{MJ}$ and $E_\text{useful} = 0.85 \cdot 680\,\text{MJ} = 578\,\text{MJ}$
+**Substitution:** $E_\text{useful} = \eta H m = 0.85 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}} \cdot 40\,\text{kg} = 578\,\text{MJ}$ (intermediate value $E_\text{in} = Hm = 680\,\text{MJ}$)
 **Answer:** $580\,\text{MJ}$, two significant figures like the data $40\,\text{kg}$ and $85\,\%$.
 **Reasonableness:** The useful energy is smaller than the $680\,\text{MJ}$ released, because part of the heat leaves with the flue gases. Estimate: $0.85 \approx 0.9$ and $0.9 \cdot 680\,\text{MJ} \approx 610\,\text{MJ}$, so $578\,\text{MJ}$ is of the right order of magnitude.
 
@@ -83,9 +83,9 @@
 **Given:** useful energy $E_\text{useful} = 48\,\text{MJ}$, efficiency $\eta = 25\,\% = 0.25$, heat of combustion of petrol $H = 43\,\tfrac{\text{MJ}}{\text{kg}}$
 **Find:** the mass $m$ of petrol, in kilograms
 **Principle:** The engine transforms only part of the energy of the petrol into motion (chapter *Efficiency*). First we use the efficiency to find the energy needed from the petrol, and then the law $E = Hm$ to find the mass.
-**Formula:** $\eta = \dfrac{E_\text{useful}}{E_\text{in}}$, so $E_\text{in} = \dfrac{E_\text{useful}}{\eta}$; $E_\text{in} = Hm$, so $m = \dfrac{E_\text{in}}{H}$
+**Formula:** $\eta = \dfrac{E_\text{useful}}{E_\text{in}}$ and $E_\text{in} = Hm$, so $\eta = \dfrac{E_\text{useful}}{Hm}$ and $m = \dfrac{E_\text{useful}}{\eta H}$
 **Conversions:** Not needed: $25\,\% = 0.25$ and the energies are in megajoules.
-**Substitution:** $E_\text{in} = 48\,\text{MJ} : 0.25 = 192\,\text{MJ}$ and $m = 192\,\text{MJ} : 43\,\tfrac{\text{MJ}}{\text{kg}} = 4.465\,\text{kg}$
+**Substitution:** $m = \dfrac{E_\text{useful}}{\eta H} = \dfrac{48\,\text{MJ}}{0.25 \cdot 43\,\tfrac{\text{MJ}}{\text{kg}}} = 4.465\,\text{kg}$ (intermediate value $E_\text{in} = 192\,\text{MJ}$)
 **Answer:** $4.5\,\text{kg}$, two significant figures like the data $48\,\text{MJ}$ and $25\,\%$.
 **Reasonableness:** The density of petrol is about $0.74\,\tfrac{\text{kg}}{\textsf{l}}$, so $4.5\,\text{kg}$ is about $6\,\textsf{l}$, a typical consumption per hundred kilometres. The energy of the petrol, $192\,\text{MJ}$, is four times the useful energy, because the efficiency is one quarter.
 
@@ -93,9 +93,17 @@
 **Given:** the energy needed $E = 120\,\text{MJ}$, air-dried firewood $H_\text{wood} = 15\,\tfrac{\text{MJ}}{\text{kg}}$ and heating oil $H_\text{oil} = 40.6\,\tfrac{\text{MJ}}{\text{kg}}$
 **Find:** how many kilograms more wood than oil are needed, $\Delta m = m_\text{wood} - m_\text{oil}$
 **Principle:** The same energy $E$ must be released from both fuels. By the law $E = Hm$ the mass is the energy divided by the heat of combustion, so a smaller heat of combustion needs a larger mass.
-**Formula:** $E = Hm$, so $m = \dfrac{E}{H}$ for each fuel, and $\Delta m = m_\text{wood} - m_\text{oil}$
+**Formula:** $E = Hm$, so $m = \dfrac{E}{H}$ for each fuel; $\Delta m = m_\text{wood} - m_\text{oil} = E\left(\dfrac{1}{H_\text{wood}} - \dfrac{1}{H_\text{oil}}\right)$
 **Conversions:** Not needed: the energy is in megajoules and the heats of combustion in megajoules per kilogram.
-**Substitution:** $m_\text{wood} = 120\,\text{MJ} : 15\,\tfrac{\text{MJ}}{\text{kg}} = 8.0\,\text{kg}$ and $m_\text{oil} = 120\,\text{MJ} : 40.6\,\tfrac{\text{MJ}}{\text{kg}} = 2.96\,\text{kg}$. Difference: $\Delta m = 8.0\,\text{kg} - 2.96\,\text{kg} = 5.04\,\text{kg}$.
+**Substitution:** $$
+\begin{aligned}
+m_\text{wood} &= \dfrac{120\,\text{MJ}}{15\,\tfrac{\text{MJ}}{\text{kg}}} = 8.0\,\text{kg} \\
+m_\text{oil} &= \dfrac{120\,\text{MJ}}{40.6\,\tfrac{\text{MJ}}{\text{kg}}} = 2.96\,\text{kg} \\
+\Delta m &= m_\text{wood} - m_\text{oil} \\
+&= 8.0\,\text{kg} - 2.96\,\text{kg} \\
+&= 5.04\,\text{kg}
+\end{aligned}
+$$
 **Answer:** $5.0\,\text{kg}$ more wood is needed, two significant figures like the data $120\,\text{MJ}$ and $15\,\tfrac{\text{MJ}}{\text{kg}}$. More wood is needed because one kilogram of wood contains less chemical energy than one kilogram of oil.
 **Reasonableness:** The mass of wood is about $2.7$ times the mass of oil, since $40.6 : 15 = 2.71$. So $2.71 \cdot 2.96\,\text{kg} \approx 8.0\,\text{kg}$, and the difference is $2.71 - 1 = 1.71$ times the mass of oil: $1.71 \cdot 2.96\,\text{kg} \approx 5.0\,\text{kg}$, as it should be.
 
@@ -103,9 +111,9 @@
 **Given:** energy content of the food $e = 18\,\tfrac{\text{MJ}}{\text{kg}}$, mass $m = 2.4\,\text{kg}$, daily consumption $12\,\text{MJ}$
 **Find:** the number of daily rations $N$ that the food provides (as a decimal number)
 **Principle:** The total energy obtainable from the food is found by multiplying the energy content by the mass, as with a fuel by the law $E = Hm$. The number of rations is how many times the daily consumption fits into the total energy, so $N = E : \text{daily consumption}$.
-**Formula:** $E = em$ and the number of days $N = \dfrac{E}{12\,\text{MJ}}$
+**Formula:** $E = em$ and the number of days $N = \dfrac{E}{12\,\text{MJ}}$, together $N = \dfrac{em}{12\,\text{MJ}}$
 **Conversions:** Not needed: the mass is in kilograms and the energy in megajoules.
-**Substitution:** $E = 18\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2.4\,\text{kg} = 43.2\,\text{MJ}$ and $N = 43.2\,\text{MJ} : 12\,\text{MJ} = 3.6$
+**Substitution:** $N = \dfrac{em}{12\,\text{MJ}} = \dfrac{18\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2.4\,\text{kg}}{12\,\text{MJ}} = 3.6$ (intermediate value $E = 43.2\,\text{MJ}$)
 **Answer:** $3.6$ daily rations, two significant figures like the data $2.4\,\text{kg}$ and $18\,\tfrac{\text{MJ}}{\text{kg}}$.
 **Reasonableness:** The need for three rations is $36\,\text{MJ}$ and for four $48\,\text{MJ}$. There is $43.2\,\text{MJ}$ of food, so the result lies between three and four: three full days and part of a fourth.
 
@@ -113,9 +121,9 @@
 **Given:** peat $m = 36\,\text{t}$ per hour, $H = 10\,\tfrac{\text{MJ}}{\text{kg}}$, efficiency of electricity production $\eta = 35\,\% = 0.35$, time $t = 1\,\text{h}$
 **Find:** the electric power $P$ in megawatts
 **Principle:** In one hour the peat releases the energy $E_\text{in} = Hm$. By the efficiency, only the share $\eta$ of it becomes electricity (chapter *Efficiency*). Power is energy per unit of time, so power = energy : time (chapter *Power: $P = \Delta E/\Delta t$*).
-**Formula:** $E_\text{in} = Hm$, $E_\text{useful} = \eta\, E_\text{in}$ and $P = \dfrac{E_\text{useful}}{t}$, together $P = \dfrac{\eta H m}{t}$
+**Formula:** $P = \dfrac{E_\text{useful}}{t}$ (that is $E_\text{useful} = Pt$), $E_\text{useful} = \eta\, E_\text{in}$ and $E_\text{in} = Hm$, together $P = \dfrac{\eta H m}{t}$
 **Conversions:** $36\,\text{t} = 36 \cdot 1000\,\text{kg} = 36\,000\,\text{kg}$ and $1\,\text{h} = 3600\,\text{s}$. Since $1\,\text{MJ/s} = 1\,\text{MW}$, the unit of power comes out directly in megawatts.
-**Substitution:** $E_\text{in} = 10\,\tfrac{\text{MJ}}{\text{kg}} \cdot 36\,000\,\text{kg} = 360\,000\,\text{MJ}$, $E_\text{useful} = 0.35 \cdot 360\,000\,\text{MJ} = 126\,000\,\text{MJ}$ and $P = 126\,000\,\text{MJ} : 3600\,\text{s} = 35\,\text{MJ/s} = 35\,\text{MW}$
+**Substitution:** $P = \dfrac{\eta H m}{t} = \dfrac{0.35 \cdot 10\,\tfrac{\text{MJ}}{\text{kg}} \cdot 36\,000\,\text{kg}}{3600\,\text{s}} = 35\,\text{MJ/s} = 35\,\text{MW}$ (intermediate value $E_\text{in} = 360\,000\,\text{MJ}$)
 **Answer:** $35\,\text{MW}$, two significant figures like the data $10\,\tfrac{\text{MJ}}{\text{kg}}$ and $35\,\%$.
 **Reasonableness:** If all the energy of the peat became electricity, the power would be $$
 \begin{aligned}
@@ -159,9 +167,17 @@ $$. The heat of combustion does not tell the temperature of the flame, and it do
 **Given:** the energy needed $E = 200\,\text{MJ}$; from the table the heat of combustion $H_{20} = 14.7\,\tfrac{\text{MJ}}{\text{kg}}$ at moisture content $20\,\%$ and $H_{40} = 10.4\,\tfrac{\text{MJ}}{\text{kg}}$ at $40\,\%$
 **Find:** the difference of the masses $\Delta m = m_{40} - m_{20}$ in kilograms
 **Principle:** The same energy has to be released from both kinds of wood. By the law $E = Hm$, the mass is the energy divided by the heat of combustion. Moist wood gives less energy per kilogram, because part of its mass is water, which does not burn and whose evaporation consumes energy.
-**Formula:** $E = Hm$, so $m = \dfrac{E}{H}$, and $\Delta m = m_{40} - m_{20}$
+**Formula:** $E = Hm$, so $m = \dfrac{E}{H}$; $\Delta m = m_{40} - m_{20} = E\left(\dfrac{1}{H_{40}} - \dfrac{1}{H_{20}}\right)$
 **Conversions:** Not needed: the energy is in megajoules and the heats of combustion in megajoules per kilogram.
-**Substitution:** $m_{20} = 200\,\text{MJ} : 14.7\,\tfrac{\text{MJ}}{\text{kg}} = 13.61\,\text{kg}$ and $m_{40} = 200\,\text{MJ} : 10.4\,\tfrac{\text{MJ}}{\text{kg}} = 19.23\,\text{kg}$. The difference is $\Delta m = 19.23\,\text{kg} - 13.61\,\text{kg} = 5.62\,\text{kg}$.
+**Substitution:** $$
+\begin{aligned}
+m_{40} &= \dfrac{200\,\text{MJ}}{10.4\,\tfrac{\text{MJ}}{\text{kg}}} = 19.23\,\text{kg} \\
+m_{20} &= \dfrac{200\,\text{MJ}}{14.7\,\tfrac{\text{MJ}}{\text{kg}}} = 13.61\,\text{kg} \\
+\Delta m &= m_{40} - m_{20} \\
+&= 19.23\,\text{kg} - 13.61\,\text{kg} \\
+&= 5.62\,\text{kg}
+\end{aligned}
+$$
 **Answer:** $5.6\,\text{kg}$ more moist wood is needed, two significant figures like the data $200\,\text{MJ}$.
 **Reasonableness:** The ratio of the heats of combustion is $14.7 : 10.4 = 1.41$, so the mass of the moist wood is about $1.41$ times as large: $1.41 \cdot 13.61\,\text{kg} = 19.2\,\text{kg}$. Moist wood gives less energy per kilogram, so more mass is needed, and the difference is positive.
 
@@ -189,7 +205,7 @@ The thousandfold error also shows in an estimate: one kilogram of coal already g
 A suitable line is drawn through the points and its slope is read from the ends of the line, which pass through the points $(0\,\text{min}, 12.00\,\text{kg})$ and $(40\,\text{min}, 9.40\,\text{kg})$: $k = \dfrac{9.40\,\text{kg} - 12.00\,\text{kg}}{40\,\text{min} - 0\,\text{min}} = -0.065\,\tfrac{\text{kg}}{\text{min}}$.
 
 The minus sign shows that the mass decreases, so the rate at which mass burns is $0.065\,\tfrac{\text{kg}}{\text{min}}$.
-**Formula:** $E = Hm$ and $P = \dfrac{E}{t}$, together $P = H \cdot \dfrac{m}{t}$
+**Formula:** $P = \dfrac{E}{t}$ and $E = Hm$, together $P = \dfrac{Hm}{t} = H \cdot \dfrac{m}{t}$
 **Conversions:** $1\,\text{min} = 60\,\text{s}$, so $0.065\,\tfrac{\text{kg}}{\text{min}} = 0.065\,\text{kg} : 60\,\text{s}$. The heat of combustion is $17\,\tfrac{\text{MJ}}{\text{kg}} = 17 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}$, and $1\,\text{W} = 1\,\tfrac{\text{J}}{\text{s}}$.
 **Substitution:** $P = 17 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}} \cdot \dfrac{0.065\,\text{kg}}{60\,\text{s}} = 18\,417\,\text{W} = 18.4\,\text{kW}$
 **Answer:** $18\,\text{kW}$, two significant figures like the heat of combustion $17\,\tfrac{\text{MJ}}{\text{kg}}$.
@@ -201,15 +217,15 @@ The minus sign shows that the mass decreases, so the rate at which mass burns is
 **Principle:** The energy in the table is the useful energy that ends up in the heating. The efficiency is the share of the energy released from the fuel that becomes useful energy, so the energy released is $E_\text{in} = E_\text{useful} : \eta$ and the mass of the fuel follows from the law $E = Hm$.
 
 Energy is conserved: what does not end up in the heating is lost in the flue gases and the boiler (chapter *Efficiency*).
-**Formula:** $E_\text{in} = \dfrac{E_\text{useful}}{\eta}$ and $E_\text{in} = Hm$, so $m = \dfrac{E_\text{useful}}{\eta H}$
+**Formula:** $\eta = \dfrac{E_\text{useful}}{E_\text{in}}$ and $E_\text{in} = Hm$, so $\eta = \dfrac{E_\text{useful}}{Hm}$ and $m = \dfrac{E_\text{useful}}{\eta H}$
 **Conversions:** $1\,\text{kWh} = 3.6\,\text{MJ}$, so $E_\text{useful} = 13\,300 \cdot 3.6\,\text{MJ}$. Efficiencies $85\,\% = 0.85$, $90\,\% = 0.90$ and $70\,\% = 0.70$.
 **Substitution:** Add the months in groups of four: $2100 + 1900 + 1600 + 1100$ that is $6700$, $600 + 250 + 200 + 250$ that is $1300$ and $600 + 1100 + 1600 + 2000$ that is $5300$, so the sum is $6700 + 1300 + 5300 = 13\,300$, so $E_\text{useful} = 13\,300\,\text{kWh} = 13\,300 \cdot 3.6\,\text{MJ} = 47\,880\,\text{MJ}$.
 
-With pellets $E_\text{in} = 47\,880\,\text{MJ} : 0.85 = 56\,329\,\text{MJ}$ and $m_\text{p} = 56\,329\,\text{MJ} : 17\,\tfrac{\text{MJ}}{\text{kg}} = 3313\,\text{kg}$.
+With pellets $m_\text{p} = \dfrac{E_\text{useful}}{\eta_\text{p} H_\text{p}} = \dfrac{47\,880\,\text{MJ}}{0.85 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}}} = 3313\,\text{kg}$.
 
-With oil $E_\text{in} = 47\,880\,\text{MJ} : 0.90 = 53\,200\,\text{MJ}$ and $m_\text{oil} = 53\,200\,\text{MJ} : 40.6\,\tfrac{\text{MJ}}{\text{kg}} = 1310\,\text{kg}$.
+With oil $m_\text{oil} = \dfrac{E_\text{useful}}{\eta_\text{oil} H_\text{oil}} = \dfrac{47\,880\,\text{MJ}}{0.90 \cdot 40.6\,\tfrac{\text{MJ}}{\text{kg}}} = 1310\,\text{kg}$.
 
-At efficiency $0.70$ the pellets need $47\,880\,\text{MJ} : 0.70 = 68\,400\,\text{MJ}$ and $m_\text{p}' = 68\,400\,\text{MJ} : 17\,\tfrac{\text{MJ}}{\text{kg}} = 4024\,\text{kg}$, so the extra consumption is $4024\,\text{kg} - 3313\,\text{kg} = 710\,\text{kg}$.
+At efficiency $0.70$ the pellets need $m_\text{p}' = \dfrac{E_\text{useful}}{\eta_\text{p}' H_\text{p}} = \dfrac{47\,880\,\text{MJ}}{0.70 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}}} = 4024\,\text{kg}$, so the extra consumption is $4024\,\text{kg} - 3313\,\text{kg} = 710\,\text{kg}$.
 **Answer:** The heating energy of the year is $13\,300\,\text{kWh} = 47\,900\,\text{MJ}$. The pellets used are $3300\,\text{kg}$, about $3.3$ tonnes, two significant figures like the efficiency $85\,\%$ and the heat of combustion $17\,\tfrac{\text{MJ}}{\text{kg}}$. The oil used is $1300\,\text{kg}$, and with poor adjustment about $710\,\text{kg}$ more pellets are used.
 
 The mass of pellets is about $2.5$ times the mass of oil, but the ratio of the heats of combustion is $40.6 : 17 = 2.4$. The difference is due to the efficiencies: the efficiency of the oil boiler is higher ($0.90$ instead of $0.85$), so even less oil is needed, and $2.4 \cdot (0.90 : 0.85) = 2.5$.
@@ -221,9 +237,9 @@ A drop in efficiency increases the consumption, because the same useful energy h
 **Given:** the useful energy of the year $E_\text{useful} = 36\,000\,\text{MJ}$; from the table wood $H = 15\,\tfrac{\text{MJ}}{\text{kg}}$, $\eta = 0.70$; pellets $H = 17\,\tfrac{\text{MJ}}{\text{kg}}$, $\eta = 0.85$; oil $H = 40.6\,\tfrac{\text{MJ}}{\text{kg}}$, $\eta = 0.90$
 **Find:** the difference of the masses of wood and pellets $\Delta m = m_\text{wood} - m_\text{pellet}$ in kilograms; also the mass of each fuel and the consumption of pellets at efficiency $0.75$
 **Principle:** A model: the energy released from the fuel is $E_\text{in} = Hm$, and only the share $\eta$ of it becomes useful energy, $E_\text{useful} = \eta H m$. The smaller the heat of combustion and the efficiency, the larger the mass. The model is simple: the efficiency of the boiler is assumed to stay constant.
-**Formula:** $E_\text{useful} = \eta H m$, so $m = \dfrac{E_\text{useful}}{\eta H}$, and $\Delta m = m_\text{wood} - m_\text{pellet}$
+**Formula:** $E_\text{in} = Hm$ and $\eta = \dfrac{E_\text{useful}}{E_\text{in}}$, so $E_\text{useful} = \eta H m$ and $m = \dfrac{E_\text{useful}}{\eta H}$; $\Delta m = m_\text{wood} - m_\text{pellet} = \dfrac{E_\text{useful}}{\eta_\text{wood} H_\text{wood}} - \dfrac{E_\text{useful}}{\eta_\text{pellet} H_\text{pellet}}$
 **Conversions:** Not needed: the energy is in megajoules and the heats of combustion in megajoules per kilogram. The percentages as ratios are $70\,\% = 0.70$, $85\,\% = 0.85$, $90\,\% = 0.90$ and $75\,\% = 0.75$.
-**Substitution:** $m_\text{wood} = \dfrac{36\,000\,\text{MJ}}{0.70 \cdot 15\,\tfrac{\text{MJ}}{\text{kg}}} = 3429\,\text{kg}$, $m_\text{pellet} = \dfrac{36\,000\,\text{MJ}}{0.85 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}}} = 2491\,\text{kg}$ and $m_\text{oil} = \dfrac{36\,000\,\text{MJ}}{0.90 \cdot 40.6\,\tfrac{\text{MJ}}{\text{kg}}} = 985\,\text{kg}$. The difference is $\Delta m = 3429\,\text{kg} - 2491\,\text{kg} = 938\,\text{kg}$. At efficiency $0.75$ the pellets used are $m_\text{pellet}' = \dfrac{36\,000\,\text{MJ}}{0.75 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}}} = 2824\,\text{kg}$.
+**Substitution:** $m_\text{wood} = \dfrac{36\,000\,\text{MJ}}{0.70 \cdot 15\,\tfrac{\text{MJ}}{\text{kg}}} = 3429\,\text{kg}$, $m_\text{pellet} = \dfrac{36\,000\,\text{MJ}}{0.85 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}}} = 2491\,\text{kg}$ and $m_\text{oil} = \dfrac{36\,000\,\text{MJ}}{0.90 \cdot 40.6\,\tfrac{\text{MJ}}{\text{kg}}} = 985\,\text{kg}$. The difference is $\Delta m = \dfrac{36\,000\,\text{MJ}}{0.70 \cdot 15\,\tfrac{\text{MJ}}{\text{kg}}} - \dfrac{36\,000\,\text{MJ}}{0.85 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}}} = 3429\,\text{kg} - 2491\,\text{kg} = 938\,\text{kg}$. At efficiency $0.75$ the pellets used are $m_\text{pellet}' = \dfrac{36\,000\,\text{MJ}}{0.75 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}}} = 2824\,\text{kg}$.
 **Answer:** in the answer box, the result of part b), $940\,\text{kg}$.
 
 a) The wood used is $3400\,\text{kg}$, the pellets $2500\,\text{kg}$ and the oil $990\,\text{kg}$.
@@ -266,8 +282,8 @@ Estimate: petrol has more than $40\,\text{MJ}$ per kilogram but only a small amo
 **Find:** the mass of firewood $m_\text{w}$ that releases the same energy
 **Principle:** The energy released by each fuel is $E = Hm$. The energies must be equal, so we first calculate the energy of the petrol and then solve for the mass of firewood.
 **Reading the graph:** The heats of combustion are printed at the ends of the bars: $43$ at the petrol bar and $15$ at the firewood bar. The unit on the horizontal axis is $\text{MJ/kg}$, so $H_\text{p} = 43\,\tfrac{\text{MJ}}{\text{kg}}$ and $H_\text{w} = 15\,\tfrac{\text{MJ}}{\text{kg}}$.
-**Formula:** $H_\text{w}m_\text{w} = H_\text{p}m_\text{p} \Rightarrow m_\text{w} = \dfrac{H_\text{p}m_\text{p}}{H_\text{w}}$
+**Formula:** $E = Hm$ for each fuel and the condition that both fuels release the same energy, $E_\text{w} = E_\text{p}$, so $H_\text{w}m_\text{w} = H_\text{p}m_\text{p}$ and $m_\text{w} = \dfrac{H_\text{p}m_\text{p}}{H_\text{w}}$
 **Conversions:** Not needed: the masses are in kilograms.
-**Substitution:** $E = 43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 12\,\text{kg} = 516\,\text{MJ}$, so $m_\text{w} = \dfrac{516\,\text{MJ}}{15\,\tfrac{\text{MJ}}{\text{kg}}} = 34.4\,\text{kg}$
+**Substitution:** $m_\text{w} = \dfrac{H_\text{p}m_\text{p}}{H_\text{w}} = \dfrac{43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 12\,\text{kg}}{15\,\tfrac{\text{MJ}}{\text{kg}}} = 34.4\,\text{kg}$ (intermediate value $E = 516\,\text{MJ}$)
 **Answer:** $m_\text{w} \approx 34\,\text{kg}$, two significant figures like the mass $12\,\text{kg}$.
 **Reasonableness:** The heat of combustion of petrol is about three times that of firewood ($43 : 15 \approx 2.9$), so about three times the mass of wood is needed: $3 \cdot 12\,\text{kg} \approx 36\,\text{kg}$. The result fits.

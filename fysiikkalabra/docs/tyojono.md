@@ -78,8 +78,7 @@ Turha pystyväli kuvan vierellä, kuva ja pieni taulukko tai kaksi pientä taulu
 viereen, valokuva kuvateksteineen oikealle palstalle (`build.py fig_rows`, site.css, `check_layout.py`). Ennen/jälkeen-kuvat: fy3-8, fy4-3, fy1-1 (1280, 1440, 1920 px). Täysi kuvaus: loki §8e.
 
 ## 8g. Mallivastaukset perusperiaatteesta (opettaja 2026-11-13)
-Tehty: FY4 (#727, 2026-11-18; 5d FY4: FY4.tsv:n rivit jäivät, CI-selain näkee 4–6 px:n leikkaukset). FY7 tehty (PR #726, loki §8g FY7). FY1 tehty (PR #813: kaikki 8 lukua, Sovella ja koe, kolme kieltä; loki §8g FY1). Jäljellä FY5, FY6, FY2, FY3, FY8.
-Varattu: claude/8g-fy5 (8g FY5)
+Tehty: FY4 (#727, 2026-11-18; 5d FY4: FY4.tsv:n rivit jäivät, CI-selain näkee 4–6 px:n leikkaukset). FY7 tehty (PR #726, loki §8g FY7). FY8 tehty (PR #823, loki §8g FY8). FY1 tehty (PR #813: kaikki 8 lukua, Sovella ja koe, kolme kieltä; loki §8g FY1). FY2 tehty (PR #817: kaikki 8 lukua, Sovella ja koe, kolme kieltä; Sovella fi, en ja fi-easy, koe vain fi). FY5 tehty (PR #814: kaikki 17 lukua, Sovella ja koe, kolme kieltä; Sovella fi, en ja fi-easy, koe vain fi; loki §8g FY5). Jäljellä FY6, FY3.
 Tehtävien, Sovellan ja kokeiden mallivastausten Kaava-vaihe alkaa perusyhtälöistä ($\eta = E_\text{hyöty}/E$, $E = Pt$, $Q = rm$, energiatase),
 sitten johdettu kaava, symbolinen sievennys loppuun, vasta sitten sijoitus. Kurssi kerrallaan `/exercises`- ja `/practice`-putkella; yhdistetään saman kurssin
 kesken olevaan tehtäväkatselmointiin (FY5, FY6, FY7), ei rinnakkain.
@@ -112,8 +111,9 @@ toleransseihin, tallennusavaimiin ja palautustiedostoon ei kosketa. Täysi mää
 ## 11b. FY9: adaptiivinen YO-valmentaja (opettaja 2026-11-14)
 Suunnitelma `docs/FY9_ADAPTIVE_PLAN.md` (#566), hyväksytty P1–P12. PR 1 (YTL/Abitti-tietojen tarkistus, sisältö) voi alkaa heti; PR 2–8 jaettuja, yksin, kohdan 10 PR 5:n ja U1:n jälkeen;
 PR 9 Abitti 2 -ohje; PR 10 kielimallin selvitys. Ei palvelinta, ei tekoälyrajapintaa; jokainen uusi käyttöliittymäteksti hyväksytään PR kerrallaan. Arvio 2,5–3,5 M tokenia.
-PR 1 tehty (e2c7f5c, YTL/Abitti-tiedot). PR 2 tehty (#824: tehtäväindeksi `valmentaja/fy9.json`, `kertaus/FY9.json`, `valmentaja.py`; R9 tarkistettu, harmiton). Minikoesarjat ja diagnostisten tehtävien jaksokartoitus (`kertaus/FY9.json`, ehdotus P8) **hyväksytty: opettaja 2026-11-23 ("ok")**. Jaetun kaistan järjestys (opettaja 2026-11-23): 17b → 0g PR 3 → 11b PR 2–8 → 11 U3. PR 3 (näytön kirjaus) työn alla (#826; tietosuojatekstit odottavat opettajan hyväksyntää tekijäsessioon).
-Varattu: claude/11b-pr3-naytonkirjaus (PR 3 näytön kirjaus)
+PR 1 tehty (e2c7f5c, YTL/Abitti-tiedot). PR 2 tehty (#824: tehtäväindeksi `valmentaja/fy9.json`, `kertaus/FY9.json`, `valmentaja.py`; R9 tarkistettu, harmiton). Minikoesarjat ja diagnostisten tehtävien jaksokartoitus (`kertaus/FY9.json`, ehdotus P8) **hyväksytty: opettaja 2026-11-23 ("ok")**. Jaetun kaistan järjestys (opettaja 2026-11-23): 17b → 0g PR 3 → 11b PR 2–8 → 11 U3. PR 3 tehty (#826, näytön kirjaus).
+Varattu: claude/11b-pr4-osaamisnakyma (PR 4 osaamisnäkymä)
+PR 4 (#830): uudet käyttöliittymätekstit, tietosuojalause, kuvat ja laattakuva `coach.svg` hyväksytty: opettaja 2026-11-23 tekijäsessioon ("Hyväksyn tekstit ja kuvat").
 
 ## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
 17a PR 1 (#720) ja PR 2 (#741, manifesti ja pysyvä tallennus) sekä 17b PR 1 (#818, koko työ yhteen tiedostoon; tekstit opettaja 2026-11-23) tehty; webkit.org sallittu ympäristöön 2026-11-19, opettajan luvalla.
@@ -137,11 +137,12 @@ Raportti tehty (#721, `docs/audits/2026-11-18-lopputarkistus-FY1-FY8.md`). **Hyv
 - FY2: fy2-4 M1, M2, M3 tehty ja katselmoitu (PR #738, 9 katselmointia PASS).
 - FY6: fy6-5 kirjoitusvirhe "sisäenergiakseen" (FY6 Sovella-hionnan PR:ssä).
 - FY7: fy7-5 tehty ja katselmoitu (PR #821, 9 katselmointia PASS; muut löydökset jo korjattu mainissa). Jäljellä vain 8g-polish (koe k3-c, k4-c, k6-a, k6-c, k4-b; fy7-8 L3-04, L2-09; fy7-10 näennäissyvyys): opettaja päättää, kannattaako tehdä.
-- FY4: fy4-4 tehty ja katselmoitu (PR #820, 9 katselmointia PASS; M4 oli jo korjattu mainissa). Jäljellä vain polish: koe-2:n pisteet (`min: 2`), `valitse_d`-kuvan toinen virhe (kuva), esimerkin 4/6 aligned-rivitys.
+- FY8: fy8-9 tehty (PR #823: "säteilykvanteista", 97,65 → 97,6 MBq, Geiger-kuvateksti; muut löydökset kuvaan, tehtäväkäytäntöön tai ohjelmakuvaukseen liittyvinä jäävät: kuva 14 apuviiva, "Graphical Analysis Prossa", $A=\lambda N$ valinnaisessa tehtävässä, kriteeri 4, tehtävien 9–14 taulukon kuvateksti).
 
 ## 20. Opettajan päätökset 2026-11-18 klo 18.33 (koordinaattorin chatissa, "mennään ehdotustesi mukaisesti")
 Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jälkeen; tämä rivi on hyväksynnän kirjaus (sääntö 5).
-- Pysähdy ja mieti tehty FY1–FY8 (#760, #765, #766 ja #772, #745, #770, #777, #779, #783), kaikki kielet, katselmoitu; FY5:stä alkaen rajattu laajuus, vanhan sisällön löydökset PR:ien kuvauksissa. **Opettaja 2026-11-19 aamulla ("kaikki ok"): laajennetaan muihin kursseihin**; seuraavaksi FY9 ja muut kurssit, kurssi kerrallaan.
+- Pysähdy ja mieti tehty FY1–FY8 (#760, #765, #766 ja #772, #745, #770, #777, #779, #783) ja FY9 (#825: 14 yksikköä, fi täysi katselmointi, en ja fi-easy vain tiede; en- ja fi-easy-yksikkösivut draft, kunnes pedagogia ja ulkoasu on tehty), kaikki kielet, katselmoitu; FY5:stä alkaen rajattu laajuus, vanhan sisällön löydökset PR:ien kuvauksissa. **Opettaja 2026-11-19 aamulla ("kaikki ok"): laajennetaan muihin kursseihin**; seuraavaksi FY9 ja muut kurssit, kurssi kerrallaan.
+- Pysähdy ja mieti FY9 (#825): **opettaja 2026-11-23 (tekijän sessiossa, "Vain fi täysi, en/fi-easy kevyesti")**: fi:lle tiede, pedagogia ja ulkoasu, en:lle ja fi-easylle vain tiede (70 katselmointia 126:n sijaan); en- ja fi-easy-sivut jäävät draftiksi, kunnes kaikki kolme katselmointia ovat voimassa.
 - 8j: fy1-1, fy1-8 ja fy2-1 ohitetaan (ei kertaustehtävää).
 - 5d: FY5:n 16 ja FY6:n 25 jäljellä olevaa riviä jäävät listalle (myös fy5-7 `x = A \sin(…)`).
 - Pysähdy ja mieti FY2 (#765): **opettaja 2026-11-19 klo 22.3x ("1 yes"): fy2-4:lle sallitaan neljäs, rajattu katselmointikierros** (tiede ja pedagogia delta, en full) kolmannen kierroksen esteen (johtopäätöksen kriteeri 3) korjauksen vahvistamiseksi; poikkeus lesson.md:n kolmen kierroksen rajaan vain tähän.
@@ -160,7 +161,6 @@ Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jäl
 - Pysähdy ja mieti FY7 (#779): **opettaja 2026-11-21 klo 16.4x ("hyväksyn", koordinaattorin suositus 1)**: fy7-1:lle neljäs, rajattu katselmointikierros (tiede en/fi/fi-easy delta ja pedagogia delta), vain tähän lukuun; PASS, yhdistetty.
 - Pysähdy ja mieti FY8 (#783): **opettaja 2026-11-22 klo 03.2x ("Hyväksyn suosituksesi", koordinaattorin suositus 1)**: fy8-4:lle, fy8-15:lle ja fy8-16:lle neljäs, rajattu katselmointikierros (tiede ja pedagogia delta, kaikki kielet; visual delta vanhentuneen tilan vuoksi), vain näihin lukuihin; PASS.
 - Mahdollinen myöhempi sisältötyö: FY3/5/6:n käsin jaetut Pysähdy-ketjut (fy3-4, fy5-3, fy5-9, fy6-4, fy6-6…8, fy6-11…16) yhdeksi ketjuksi `mathlayout.display_chains`in (#782) varaan; sanamuoto muuttuu, joten katselmointi.
-- Varattu: claude/unit-packet-unitmd (jaettu: unit_packet kattaa unit.md:n, FY9 Pysähdyn edellytys)
 
 ## 24. Uudet kuvat sivustolle (opettaja 2026-11-19; kuvat hyväksytty 15.–18.11.)
 Osa 1 (kuvapohja, `scripts/figimage.py`, NOTES.md §3) ja FY2-pilotti (#768) **hyväksytty: opettaja 2026-11-20 klo 01.4x ("I approve")**.

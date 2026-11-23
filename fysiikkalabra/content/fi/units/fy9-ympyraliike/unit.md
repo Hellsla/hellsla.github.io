@@ -10,6 +10,12 @@
 
 Tämän tunnin tehtävät alkavat samoin kuin mekaniikan tehtävät yleensä: **valitse kappale, piirrä voimakuvio ja kirjoita Newtonin toinen laki**. Tilanne kertoo, mikä kiihtyvyys on. Tasapainossa kappale ei etene eikä kierry, joten sekä voimien summa että momenttien summa ovat nolla. Tasaisessa ympyräliikkeessä kiihtyvyys osoittaa radan keskipisteeseen, joten myös voimien summa osoittaa sinne. Satelliittiin vaikuttaa vain gravitaatio, joten gravitaatiovoima on itse kokonaisvoima.
 
+```pysahdy
+Mihin suuntaan voimien summa osoittaa tasaisessa ympyräliikkeessä ja miksi?
+---
+Radan keskipisteeseen, koska kiihtyvyys osoittaa sinne ja kokonaisvoima on samansuuntainen kuin kiihtyvyys.
+```
+
 <svg data-fig="kartta" viewBox="0 0 380 870" role="img" aria-label="Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Piirrä ensin voimakuvio ja katso, mikä tehtävän tunnusmerkki sopii. Tanko pysyy paikallaan: myös momenttien summa on nolla. Ympyrärata: normaalikiihtyvyys on v toiseen jaettuna r:llä. Kulmanopeus annettu: ratanopeus on omega kertaa r. Mikä voima kaartaa rataa: voimien summa on massa kertaa normaalikiihtyvyys. Kaarre tasaisella tiellä: lepokitka kaartaa, ja kitkavoima on m v toiseen per r. Kaksi kappaletta vetää toisiaan: gravitaatiolaki, F g on gamma M m per r toiseen. Putoamiskiihtyvyys kysytään: paino on gravitaatiota, m g on gamma M m per r toiseen. Satelliitti kiertää: gravitaatio kaartaa rataa, gamma M m per r toiseen on m v toiseen per r." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="811" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
@@ -125,6 +131,12 @@ normaalikiihtyvyys :: a_\text{n} = \frac{v^2}{r} = \omega^2 r
 
 missä $v$ on ratanopeus ($\text{m/s}$), $r$ radan säde ($\text{m}$), $\omega = \tfrac{2\pi}{T} = 2\pi f$ kulmanopeus ($\text{rad/s}$), $T$ kierrosaika ($\text{s}$) ja $f = \tfrac{1}{T}$ kierrostaajuus ($\tfrac{1}{\text{s}}$), joten $v = \tfrac{2\pi r}{T} = 2\pi r f$, ja $a_\text{n}$ normaalikiihtyvyys ($\text{m/s}^2$). Tasaisessa ympyräliikkeessä vauhti on vakio. Nopeus on radan tangentin suuntainen, ja normaalikiihtyvyys osoittaa radan keskipisteeseen.
 
+```pysahdy
+Mihin suuntaan nopeus osoittaa tasaisessa ympyräliikkeessä ja mihin normaalikiihtyvyys?
+---
+Nopeus on radan tangentin suuntainen ja normaalikiihtyvyys osoittaa radan keskipisteeseen.
+```
+
 Newtonin 2. lain mukaan kappaleeseen vaikuttava kokonaisvoima $\Sigma F$ ($\text{N}$) antaa sille normaalikiihtyvyyden, joten kokonaisvoima osoittaa keskipisteeseen. Normaalikiihtyvyys $a_\text{n} = \tfrac{v^2}{r}$ pätee myös hetkellisesti, kun vauhti muuttuu: radan ylimmässä ja alimmassa kohdassa tangentin suuntaista voimaa ei ole. Liikeyhtälössä keskipisteeseen osoittavat voimat ovat positiivisia, ja kohtisuoraan ratatasoa vastaan voimien summa on nolla.
 
 ```johda
@@ -180,6 +192,12 @@ Newtonin gravitaatiolaki :: F_\text{g} = \gamma\frac{m_1 m_2}{r^2}
 missä $$
 \gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}
 $$ on gravitaatiovakio, $F_\text{g}$ gravitaatiovoiman suuruus ($\text{N}$), $m_1$ ja $m_2$ kappaleiden massat ($\text{kg}$) ja $r$ etäisyys keskipisteiden välillä ($\text{m}$). Laki pätee pistemäisille ja pallosymmetrisille kappaleille. Keskuskappaleen, jonka massa on $M$ ($\text{kg}$), gravitaatiokentän voimakkuus $g$ ($\text{N/kg}$ eli $\text{m/s}^2$) on gravitaatiovoima kappaleen massaa kohden; Maan pinnalla se on putoamiskiihtyvyys.
+
+```pysahdy
+Miten gravitaatiovoiman suuruus muuttuu, kun kappaleiden keskipisteiden etäisyys $r$ kaksinkertaistuu?
+---
+Se pienenee neljäsosaan, koska $F_\text{g}$ on verrannollinen suureeseen $\tfrac{1}{r^2}$.
+```
 
 ```johda
 Kappale, jonka massa on $m$, on etäisyydellä $r$ keskuskappaleen keskipisteestä, ja keskuskappaleen massa on $M$. Johda gravitaatiokentän voimakkuus $g$ eli putoamiskiihtyvyys tällä etäisyydellä.

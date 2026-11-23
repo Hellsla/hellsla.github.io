@@ -34,7 +34,7 @@ Submitted work is handled in the school's teaching in the same way as work retur
 
 ## How do I delete it?
 
-You can clear the data saved in your browser at any time by deleting the site data in your browser settings (Cookies and site data). On a shared computer, clear it when you finish or use a private window. The work files you saved are ordinary files on your device, so delete them yourself. Clearing the browser does not delete a file you have already submitted. The task record is removed together with the browser's site data.
+You can clear the data saved in your browser at any time by deleting the site data in your browser settings (Cookies and site data). On a shared computer, clear it when you finish or use a private window. The work files you saved are ordinary files on your device, so delete them yourself. Clearing the browser does not delete a file you have already submitted. The task record is removed together with the browser's site data. On the coach page you can remove the task record alone with the button Clear the coach's data.
 
 ## Outside services
 

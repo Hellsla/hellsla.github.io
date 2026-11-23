@@ -10,6 +10,12 @@
 
 Moduulin ilmiöt liittyvät kahteen kenttään. **Magneettikenttä** $\overline{B}$ ei vaikuta levossa olevaan varaukseen. Liikkuvaan varaukseen ja virtajohtimeen se kohdistaa voiman, kun liike tai virta ei ole kentän suuntainen. Kohdistaa tarkoittaa, että voima vaikuttaa niihin. Voima on kohtisuorassa sekä liikettä että kenttää vastaan. **Muuttuva magneettivuo** synnyttää jännitteen. Magneettivuo kertoo, kuinka paljon magneettikenttää kulkee pinnan läpi. Generaattori, muuntaja, induktioliesi ja pyörrevirtajarru toimivat tämän ilmiön avulla. Sähkökenttä ja magneettikenttä voivat muuttua ja synnyttää toisensa. Silloin syntyy **sähkömagneettinen aalto**. Sen näkyvä osa on valo.
 
+```pysahdy
+Mitä käämin magneettivuolle täytyy tapahtua, jotta käämiin indusoituu jännite?
+---
+Magneettivuon täytyy muuttua. Jos vuo pysyy samana, jännitettä ei synny.
+```
+
 <svg data-fig="kartta" viewBox="0 0 380 866" role="img" aria-label="Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Tee ensin kuva ja merkitse suunnat. Katso sitten, mikä tehtävän tunnusmerkki sopii. Hiukkanen liikkuu kentässä: magneettinen voima on varaus kertaa nopeus kertaa kohtisuora magneettivuon tiheys. Virtajohdin kentässä: voima on virta kertaa johtimen pituus kertaa kohtisuora magneettivuon tiheys. Hiukkanen kiertää ympyrää: magneettinen voima on keskeisvoima, ja säde on massa kertaa nopeus jaettuna varauksen ja magneettivuon tiheyden tulolla. Magneettivuo muuttuu: käämiin indusoituva jännite on miinus kierrosluku kertaa vuon muutos jaettuna ajalla. Muuntaja: kierroslukujen suhde on jännitteiden suhde. Generaattori pyörii: jännitteen huippuarvo on kierrosluku kertaa pinta-ala kertaa magneettivuon tiheys kertaa kaksi pii kertaa taajuus. Valo kulkee aineesta toiseen: käytä Snellin lakia. Valo ei pääse ulos aineesta: rajakulman sini on taitekertoimien suhde. Valo osuu hilaan: hilayhtälö, rakoväli kertaa kulman sini on kertaluku kertaa aallonpituus." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="822" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
@@ -118,6 +124,12 @@ missä $F_\text{M}$ on magneettinen voima ($\text{N}$), $Q$ varaus ($\text{C}$),
 
 Varattu hiukkanen liikkuu homogeenisessa magneettikentässä. Homogeeninen kenttä on joka kohdassa samanlainen. Hiukkasen massa on $m$ ($\text{kg}$), varaus $Q$ ja vauhti $v$. Nopeus on kohtisuorassa kenttää vastaan. Silloin magneettinen voima on koko ajan kohtisuorassa nopeutta vastaan, ja hiukkanen kulkee ympyrärataa. Radan säde on $r$ ($\text{m}$).
 
+```pysahdy
+Miksi magneettinen voima ei muuta varatun hiukkasen vauhtia?
+---
+Voima on koko ajan kohtisuorassa nopeutta vastaan. Siksi se muuttaa vain liikkeen suuntaa.
+```
+
 <svg data-fig="ympyra" viewBox="0 0 600 420" role="img" aria-label="Kaavakuva: positiivinen hiukkanen homogeenisessa magneettikentässä. Kenttä osoittaa paperiin sisään (vihreät ristit). Hiukkasen rata on ympyrä, joka on piirretty katkoviivalla. Hiukkanen kiertää ympyrää vastapäivään. Radalla on neljä kohtaa. Niissä sininen nopeusnuoli on radan suuntainen. Punainen nuoli on magneettinen voima. Se osoittaa ympyrän keskipisteeseen, kohtisuoraan nopeutta vastaan. Säde r on merkitty keskipisteestä rataan." style="max-width:100%;font-size:24px">
   <image href="pics/fy9/fy9-magnetismi-valo-ympyra.webp" x="0" y="0" width="600" height="425" preserveAspectRatio="none"/>
   <foreignObject x="302" y="169.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$r$</div></foreignObject>
@@ -192,6 +204,12 @@ I = I_0\cos^2\theta
 missä $c = 3{,}00 \cdot 10^8\,\text{m/s}$, $f$ taajuus, $\lambda$ aallonpituus, $T$ absoluuttinen lämpötila ($\text{K}$), $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$, $n = \tfrac{c}{v}$ taitekerroin ja $v$ valon nopeus aineessa, $\alpha_1$ tulokulma ja $\alpha_2$ taitekulma normaalista, $d$ hilavakio, hilayhtälössä $\alpha$ maksimin suunta ja $n = 0, 1, 2, \ldots$ kertaluku ja $I_0$ polarisoituneen valon intensiteetti ennen analysaattoria. Normaali on suora, joka on kohtisuorassa rajapintaa vastaan. Malusin laissa $\theta$ on kahden suunnan välinen kulma: polarisaation suunnan ja analysaattorin läpäisysuunnan. Ohuessa kalvossa matkaero on $2nd$, kun valo tulee lähes kohtisuoraan. Jos vain toinen heijastus kääntää aallon, $2nd = \left(k + \tfrac12\right)\lambda$ antaa vahvistavan interferenssin. Jos molemmat heijastukset kääntävät aallon, ehto on $2nd = k\lambda$.
 
 Valo voi tulla aineesta, jossa taitekerroin on suurempi, aineeseen, jossa taitekerroin on pienempi ($n_1 > n_2$). Silloin taitekulma on suurempi kuin tulokulma. Rajakulma $\alpha_\text{r}$ on se tulokulma, jolla taitekulma on $90^\circ$. Kun tulokulma on suurempi kuin rajakulma, valo kokonaisheijastuu eli heijastuu kokonaan takaisin.
+
+```pysahdy
+Taittuuko valo kohti pinnan normaalia vai siitä poispäin, kun se tulee aineesta, jonka taitekerroin on suurempi, aineeseen, jonka taitekerroin on pienempi?
+---
+Silloin taitekulma on suurempi kuin tulokulma. Siksi säde taittuu pois normaalista.
+```
 
 <svg data-fig="rajakulma" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva, ei lukuarvoja. Alhaalla on aine, jonka taitekerroin n 1 on suurempi. Ylhäällä on aine, jonka taitekerroin n 2 on pienempi. Pohjalla on lamppu. Se lähettää kaksi valonsädettä rajapintaan. Kohtiin, joissa säteet osuvat pintaan, on piirretty pinnan normaali katkoviivana. Vasemman säteen tulokulma on rajakulma alfa r. Sen taittunut säde kulkee pitkin rajapintaa. Taitekulma alfa 2 on siis 90 astetta. Heikko osa valosta heijastuu takaisin. Oikean säteen tulokulma on suurempi kuin rajakulma. Valo ei taitu ylempään aineeseen. Koko säde heijastuu takaisin. Tätä kutsutaan kokonaisheijastumiseksi." style="max-width:100%;font-size:24px">
   <image href="pics/fy9/fy9-magnetismi-valo-rajakulma.webp" x="1.2" y="1.2" width="597" height="335.8" preserveAspectRatio="none"/>

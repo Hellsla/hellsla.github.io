@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f84ec544751b6b2e
+CONTENT-HASH: 3d201d15eeee0bda
+SCOPE: delta numbers from f84ec544751b6b2e base d2a2c56
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] fy8-9 L2-09 solution, Järkevyys — the no-background chain renders as a small nested fraction (carried over; shared layout matter).
+- [Minor] none from the diff.
 
 ## Checked
-- Delta (en): fy8-9-open-exercises-L2-1280-13 and -14 (tasks 9-18, 9-19, every solution open): paragraphs read in order, formulas aligned, answer set apart, nothing clipped or red; figure fig-28 unchanged.
+Delta (Kaava step of solutions.md re-set as aligned rows). Opened open-exercises captures at 1280 px (column ~664 px): the aligned Formula blocks, one equation per row, = signs in one column, fractions and subscripts legible, no clipping, no overlap with Substitution/Conversions blocks. Only the 1280 px captures exist for open solutions; the rows are short (widest ~270 px), so a 360 px phone should hold them. Opened fy8-9 L2-3 (9-13: m, N, m0 rows aligned) and L3-4 (iodine/caesium share p: aligned, trailing comma set correctly).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

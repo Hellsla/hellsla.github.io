@@ -10,6 +10,12 @@
 
 A large share of the mechanics problems in the exam can be solved with two conservation laws. **Energy is always conserved**: mechanical energy is transformed into internal energy when friction, air resistance or the deformation of a body does work, but the total energy stays the same. **Momentum is conserved** when the sum of the external forces on the system is zero or their impulse during the collision is negligible.
 
+```pysahdy
+When is momentum conserved, and why can mechanical energy still decrease?
+---
+Momentum is conserved when the sum of the external forces is zero or their impulse is negligibly small. Mechanical energy decreases when friction, air resistance or deformation transforms it into internal energy; the total energy is conserved.
+```
+
 <svg data-fig="kartta" viewBox="0 0 380 870" role="img" aria-label="Recognition chart: how do I tell which law to use? First see the sign in the task. No friction, only gravity: mechanical energy is conserved, so the sum of the initial potential and kinetic energy equals the final sum. Friction or a motor does work: the work-energy principle, where the work of the other forces is added to the initial mechanical energy. A body is moving: kinetic energy is half m v squared. Height changes: potential energy is m g h. Collision or explosion: momentum is conserved, before equals after. Elastic collision: kinetic energy is conserved too, its change is zero. A force acts for a time: the impulse is the change of momentum. Power or efficiency asked: efficiency is the output power divided by the input power." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="826" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
@@ -137,6 +143,12 @@ work-energy principle of mechanics :: E_{\text{p}0} + E_{\text{k}0} + W = E_\tex
 
 where the index $0$ means the initial state and $W$ is the work done by forces other than the weight ($\text{J}$). The work done by a constant force is $W = F_\parallel\,s$, where $F_\parallel$ is the component of the force along the motion; the work done by friction and air resistance is negative. When $W = 0$, mechanical energy is conserved: $E_{\text{p}0} + E_{\text{k}0} = E_\text{p} + E_\text{k}$.
 
+```pysahdy
+What is the sign of the work done by friction in the work-energy principle, and why?
+---
+The work of friction is negative, $W < 0$, because the friction force points against the motion. It therefore decreases the mechanical energy, which turns into internal energy.
+```
+
 ### Momentum and impulse
 
 ```kaavat
@@ -152,6 +164,12 @@ m_1 v_1 + m_2 v_2 = m_1 v_1' + m_2 v_2'
 ```
 
 In an elastic collision kinetic energy is also conserved. In a perfectly inelastic collision the bodies move on with a common velocity, $v_1' = v_2' = v'$, and the largest share of kinetic energy is transformed into internal energy.
+
+```pysahdy
+Two bodies collide perfectly inelastically and move on together. What is conserved and what is not?
+---
+Momentum is conserved, because the impulse of the external forces is negligibly small. Kinetic energy is transformed into internal energy, so it is not conserved.
+```
 
 ### Applications
 

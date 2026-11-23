@@ -34,7 +34,7 @@ Palautettua työtä käsitellään koulun opetuksessa samoin kuin muissakin koul
 
 ## Miten poistan tiedot?
 
-Voit tyhjentää selaimeen tallentuneet tiedot milloin tahansa poistamalla selaimen sivustotiedot (selaimen asetuksista kohdasta Evästeet ja sivustotiedot). Jos käytät yhteiskäyttöistä konetta, tyhjennä tiedot lopuksi tai käytä yksityistä selausikkunaa. Tallentamasi työtiedostot ovat laitteellasi tavallisia tiedostoja, joten poista ne itse. Tyhjentäminen ei poista tiedostoa, jonka olet jo palauttanut. Tehtäväkirjaus poistuu samalla, kun poistat selaimen sivustotiedot.
+Voit tyhjentää selaimeen tallentuneet tiedot milloin tahansa poistamalla selaimen sivustotiedot (selaimen asetuksista kohdasta Evästeet ja sivustotiedot). Jos käytät yhteiskäyttöistä konetta, tyhjennä tiedot lopuksi tai käytä yksityistä selausikkunaa. Tallentamasi työtiedostot ovat laitteellasi tavallisia tiedostoja, joten poista ne itse. Tyhjentäminen ei poista tiedostoa, jonka olet jo palauttanut. Tehtäväkirjaus poistuu samalla, kun poistat selaimen sivustotiedot. Valmentajan sivulla voit poistaa pelkän tehtäväkirjauksen painikkeella Tyhjennä valmentajan tiedot.
 
 ## Ulkopuoliset palvelut
 

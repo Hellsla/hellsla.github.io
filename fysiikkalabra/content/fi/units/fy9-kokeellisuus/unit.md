@@ -154,6 +154,12 @@
 ### Suunnitelma vastaa kuuteen kysymykseen
 Ylioppilaskokeen tehtävä ”suunnittele koe” arvostelee sen, voisiko toinen tehdä kokeen vastauksesi perusteella. Hyvä suunnitelma kertoo, **mitä muutetaan**, **mitä mitataan ja millä välineellä**, **mitä pidetään vakiona**, **montako mittausta ja toistoa tehdään**, **miten tulos lasketaan kuvaajasta** ja **mitkä virhelähteet ovat suurimmat ja miten niitä pienennetään**. Kokeessa muutetaan yhtä muuttujaa kerrallaan, koska muuten tuloksen muutoksen syytä ei voi päätellä.
 
+```pysahdy
+Miksi kokeessa muutetaan vain yhtä muuttujaa kerrallaan?
+---
+Jos muuttuisi kaksi muuttujaa yhtä aikaa, tuloksen muutoksen syytä ei voisi päätellä: muutos voisi johtua kummasta tahansa.
+```
+
 <svg data-fig="kartta" viewBox="0 0 380 754" role="img" aria-label="Tunnistuskaavio: mikä menetelmä sopii kokeellisen tehtävän kysymykseen? Mittaustuloksia on monta: paras arvio on keskiarvo, eli tulosten summa jaettuna lukumäärällä. Kuinka paljon tulos vaihtelee: vaihteluvälin puolikas, suurin miinus pienin tulos jaettuna kahdella. Ilmoita lopullinen tulos: keskiarvo plus miinus virhearvio. Onko epävarmuus pieni: suhteellinen epävarmuus on virhearvio jaettuna keskiarvolla. Suureet riippuvat lineaarisesti: sovita suora y on k x plus b. Tulos kulmakertoimesta: kulmakerroin luetaan suoran kahdesta kaukana toisistaan olevasta pisteestä, k on delta y per delta x. Malli kulkee origon kautta, mutta suora ei: vakio b ei ole nolla, mikä viittaa systemaattiseen virheeseen." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="710" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
@@ -215,6 +221,12 @@ Ylioppilaskokeen tehtävä ”suunnittele koe” arvostelee sen, voisiko toinen 
 
 Satunnaisvirhe näkyy toistettujen tulosten hajontana, ja keskiarvossa sen vaikutus vaimenee. **Systemaattinen virhe** siirtää kaikkia tuloksia samaan suuntaan, eikä toistaminen poista sitä. Se paljastuu vertaamalla tunnettuun arvoon tai kuvaajasta: suora ei kulje origon kautta, vaikka mallin mukaan sen pitäisi.
 
+```pysahdy
+Käsin otetun ajan kello näyttää sadasosasekunnit. Onko mittausepävarmuus siksi sadasosasekunnin luokkaa?
+---
+Ei ole. Resoluutio ei yksin kerro epävarmuutta, ja reaktioaika tekee käsin otetun ajan epävarmuudesta sekunnin kymmenesosien luokkaa.
+```
+
 ## Kaava: Mittaustuloksen käsittely
 Toistettujen mittausten paras arvio on keskiarvo, ja tässä kurssissa hajonnan arvio on vaihteluvälin puolikas:
 
@@ -239,6 +251,12 @@ y = kx + b
 ```
 
 missä $k = \tfrac{\Delta y}{\Delta x}$ on kulmakerroin, joka luetaan suoran kahdesta kaukana toisistaan olevasta pisteestä, ja $b$ on suoran ja pystyakselin leikkauskohta. Malli pätee vain mitatulla alueella, ja suoraa jatketaan sen ulkopuolelle vain perustellusti. Kun haettu suure saadaan kulmakertoimesta, kaikki pisteet vaikuttavat tulokseen ja yksittäisen pisteen satunnaisvirhe vähemmän.
+
+```pysahdy
+Miksi kulmakertoimesta saatu tulos on luotettavampi kuin yhdestä mittauspisteestä laskettu?
+---
+Kulmakertoimeen vaikuttavat kaikki pisteet, joten yhden pisteen satunnaisvirheen vaikutus on pienempi.
+```
 
 Jos mallin mukaan suoran pitäisi kulkea origon kautta mutta $b$ poikkeaa selvästi nollasta, mittauksessa on todennäköisesti systemaattinen virhe, joka on joka pisteessä sama. Se siirtää suoraa mutta ei muuta kulmakerrointa. Kuvassa öljyn massa on punnittu lasissa, jota ei taarattu:
 

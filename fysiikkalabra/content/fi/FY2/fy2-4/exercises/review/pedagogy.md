@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 6c7acbf24ababf6e
-
-Round: 2
+CONTENT-HASH: 47ad0bab5c624779
+SCOPE: delta numbers,reflow,wording,teacher-figure from 6c7acbf24ababf6e base 1a2125278c
 
 ## Blocking
+- none
 
 ## Polish
-- exercises.json fy2-4-L3-03 — still only 240 J x 6/8 from the same figure as L2-09; a question needing more of the lesson would be better. Optional.
+- none
 
 ## Checked
-- solutions.md L1-09: "tehtävässä käytetään tätä MAFY-arvoa" removes the claim that other tables are accepted and matches the teacher decision; the tolerance statement is consistent.
-- solutions.md L2-09: "Luetaan energiavuokaaviota" names the figure type before reading it; no change to numbers.
-- Hash identical at start and end (6c7acbf24ababf6e).
+- Delta (round 2): Kaava lines now name the definition first (hyötysuhteen määritelmä, E = Pt, energian säilyminen) and combine symbolically; the student can see where each working formula comes from.
+- Tasks where eta is already isolated say so ("sieventämistä ei tarvita"), which is honest and avoids a fake derivation.
+- Multi-step tasks (lamp comparison, two cars, annual LED cost) derive each step from definitions; Sijoitus and answers unchanged.
+- Long paragraphs split; grid figure teacher-approved; no answers changed.

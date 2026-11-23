@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5b31514997a4592b
+CONTENT-HASH: dc35cec443f64e55
 Mode: delta
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- fy2-1/exercises/solutions.md, first Formula line (stone, L1): "so $E_\text{p} = E_\text{k}$ and $E_\text{k} = E_\text{p}$" says the same thing twice; keep "so $E_\text{k} = E_\text{p}$".
 
 ## Checked
-- Delta: only the L1-10 Reasonableness line; "dry wood, 16.2 MJ/kg in the MAFY tables" is consistent with the table lookup and still supports the point (petrol holds much more per kilogram).
-- 40 MJ/kg x 2 kg = 80 MJ, 87 MJ = 24 kWh: arithmetic right. Rest of the set unchanged.
+- Previous Blocking fixed: no Finnish subscripts (alussa/lopussa) remain; all Formula lines use E_initial = E_final.
+- Formula lines start from E_initial = E_final, H = E/m or share = part/whole; derived equations and answers unchanged.
+- Added sentences (perpetual motion not possible; two thirds ends up as spread thermal energy) are correct and match the lesson.
+- Split paragraphs: content identical, easier on a phone.
