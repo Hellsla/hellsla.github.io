@@ -2,7 +2,7 @@
 **Given:** energy taken by the device $E_\text{o} = 400\,\text{J}$ and useful energy (kinetic energy) $E_\text{a} = 340\,\text{J}$
 **Find:** the efficiency $\eta$ of the motor as a percentage
 **Principle:** Efficiency tells what share of the energy taken by the device becomes useful. Both energies are known, so the efficiency is their ratio.
-**Formula:** $\eta = \dfrac{E_\text{a}}{E_\text{o}}$
+**Formula:** Definition of efficiency $\eta = \dfrac{E_\text{a}}{E_\text{o}}$; the unknown $\eta$ is already alone, so no rearranging is needed
 **Conversions:** Not needed: both energies are in joules, so the units cancel. The result is converted to a percentage by substituting $1 = 100\,\%$.
 **Substitution:** $\eta = \dfrac{340\,\text{J}}{400\,\text{J}} = 0.85 = 0.85 \cdot 100\,\% = 85\,\%$
 **Answer:** $85\,\%$, two significant figures, because the energies were given to two figures.
@@ -12,7 +12,7 @@
 **Given:** power taken by the device $P_\text{o} = 8.0\,\text{W}$ and useful power (light) $P_\text{a} = 2.4\,\text{W}$
 **Find:** the efficiency $\eta$ of the LED lamp as a percentage
 **Principle:** Efficiency can be calculated as a ratio of powers, because the device runs at constant power: in a time $t$ the energies are $P_\text{a} \cdot t$ and $P_\text{o} \cdot t$, and the time cancels.
-**Formula:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$
+**Formula:** At constant power $E = Pt$, so $\eta = \dfrac{E_\text{a}}{E_\text{o}} = \dfrac{P_\text{a} t}{P_\text{o} t} = \dfrac{P_\text{a}}{P_\text{o}}$
 **Conversions:** Not needed: both powers are in watts. The result is converted to a percentage by substituting $1 = 100\,\%$.
 **Substitution:** $\eta = \dfrac{2.4\,\text{W}}{8.0\,\text{W}} = 0.30 = 0.30 \cdot 100\,\% = 30\,\%$
 **Answer:** $30\,\%$, two significant figures, as in the powers $2.4\,\text{W}$ and $8.0\,\text{W}$.
@@ -22,7 +22,7 @@
 **Given:** efficiency $\eta = 5.0\,\%$ and power taken $P_\text{o} = 60\,\text{W}$
 **Find:** the light power, that is, the useful power $P_\text{a}$ in watts
 **Principle:** Efficiency is the share of the useful power in the power taken. When the efficiency and the power taken are known, the useful power is found by multiplying.
-**Formula:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, so $P_\text{a} = \eta \cdot P_\text{o}$
+**Formula:** Definition of efficiency with powers $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, so $P_\text{a} = \eta \cdot P_\text{o}$
 **Conversions:** A percentage is converted to a number by substituting $1\,\% = 0.01$: $5.0\,\% = 5.0 \cdot 0.01 = 0.050$.
 **Substitution:** $P_\text{a} = 0.050 \cdot 60\,\text{W} = 3.0\,\text{W}$
 **Answer:** $3.0\,\text{W}$, two significant figures, as in the efficiency $5.0\,\%$.
@@ -32,7 +32,7 @@
 **Given:** efficiency $\eta = 90\,\%$ and useful energy $E_\text{a} = 1800\,\text{J}$
 **Find:** the electrical energy $E_\text{o}$ taken by the motor in joules
 **Principle:** The efficiency tells what share of the energy taken becomes useful energy. So the energy taken is larger than the useful energy, and it is found by dividing the useful energy by the efficiency.
-**Formula:** $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, so $E_\text{o} = \dfrac{E_\text{a}}{\eta}$
+**Formula:** Definition of efficiency $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, so $E_\text{o} = \dfrac{E_\text{a}}{\eta}$
 **Conversions:** A percentage is converted to a number by substituting $1\,\% = 0.01$: $90\,\% = 90 \cdot 0.01 = 0.90$.
 **Substitution:** $E_\text{o} = \dfrac{1800\,\text{J}}{0.90} = 2000\,\text{J}$
 **Answer:** $2000\,\text{J}$ or $2.0 \cdot 10^{3}\,\text{J}$, two significant figures, as in the efficiency $90\,\%$.
@@ -42,7 +42,7 @@
 **Given:** radiation energy hitting the panel $E_\text{o} = 5.0\,\text{kJ}$ and efficiency $\eta = 20\,\%$
 **Find:** the energy that becomes losses, $E_\text{h}$, in kilojoules
 **Principle:** Energy is conserved: the energy taken divides into useful energy and losses, $E_\text{o} = E_\text{a} + E_\text{h}$. The useful energy is found from the efficiency, and the rest is losses.
-**Formula:** $E_\text{a} = \eta \cdot E_\text{o}$ and $E_\text{h} = E_\text{o} - E_\text{a}$
+**Formula:** Definition of efficiency $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, so $E_\text{a} = \eta \cdot E_\text{o}$; conservation of energy $E_\text{o} = E_\text{a} + E_\text{h}$, so $E_\text{h} = E_\text{o} - E_\text{a}$
 **Conversions:** A percentage is converted to a number by substituting $1\,\% = 0.01$: $20\,\% = 20 \cdot 0.01 = 0.20$. The energies stay in kilojoules.
 **Substitution:** $E_\text{a} = 0.20 \cdot 5.0\,\text{kJ} = 1.0\,\text{kJ}$, so $E_\text{h} = 5.0\,\text{kJ} - 1.0\,\text{kJ} = 4.0\,\text{kJ}$
 **Answer:** $4.0\,\text{kJ}$, two significant figures, as in the given values.
@@ -52,7 +52,7 @@
 **Given:** power taken $P_\text{o} = 1.0\,\text{kW}$, efficiency $\eta = 80\,\%$ and running time $t = 2.0\,\text{min}$
 **Find:** the kinetic energy given by the motor, that is, the useful energy $E_\text{a}$ in kilojoules
 **Principle:** The motor runs at constant power, so the energy taken is power multiplied by time. The efficiency tells what share of the energy taken is useful energy.
-**Formula:** $E_\text{o} = P_\text{o} \cdot t$ and $E_\text{a} = \eta \cdot E_\text{o}$, so $E_\text{a} = \eta \cdot P_\text{o} \cdot t$
+**Formula:** At constant power $E = Pt$, so $E_\text{o} = P_\text{o} \cdot t$; definition of efficiency $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, so $E_\text{a} = \eta \cdot E_\text{o} = \eta \cdot P_\text{o} \cdot t$
 **Conversions:** $1.0\,\text{kW} = 1.0 \cdot 1000\,\text{W} = 1000\,\text{W}$, $2.0\,\text{min} = 2.0 \cdot 60\,\text{s} = 120\,\text{s}$ and $80\,\% = 80 \cdot 0.01 = 0.80$.
 **Substitution:** $E_\text{o} = 1000\,\text{W} \cdot 120\,\text{s} = 120\,000\,\text{J}$, so $E_\text{a} = 0.80 \cdot 120\,000\,\text{J} = 96\,000\,\text{J} = 96\,\text{kJ}$
 **Answer:** $96\,\text{kJ}$, two significant figures, as in the given values.
@@ -62,7 +62,7 @@
 **Given:** LED lamp: $\eta_\text{LED} = 30\,\%$ and $P_\text{o,LED} = 9.0\,\text{W}$; incandescent lamp: $\eta_\text{inc} = 5.0\,\%$; the light power of both is the same
 **Find:** the power taken by the incandescent lamp, $P_\text{o,inc}$, in watts
 **Principle:** When the light power is the same, the useful powers of the lamps are equal. First calculate the useful power of the LED lamp from its efficiency, and then the power that the incandescent lamp needs to give the same useful power.
-**Formula:** $P_\text{a} = \eta_\text{LED} \cdot P_\text{o,LED}$ and $P_\text{o,inc} = \dfrac{P_\text{a}}{\eta_\text{inc}}$
+**Formula:** Definition of efficiency $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, so for the LED $P_\text{a} = \eta_\text{LED} \cdot P_\text{o,LED}$ and for the incandescent lamp $P_\text{a} = \eta_\text{inc} \cdot P_\text{o,inc}$, so $P_\text{o,inc} = \dfrac{P_\text{a}}{\eta_\text{inc}}$
 **Conversions:** Percentages are converted to numbers by substituting $1\,\% = 0.01$: $30\,\% = 0.30$ and $5.0\,\% = 0.050$.
 **Substitution:** $P_\text{a} = 0.30 \cdot 9.0\,\text{W} = 2.7\,\text{W}$, so $P_\text{o,inc} = \dfrac{2.7\,\text{W}}{0.050} = 54\,\text{W}$
 **Answer:** $54\,\text{W}$, two significant figures, as in the efficiencies.
@@ -72,7 +72,7 @@
 **Given:** power taken $P_\text{o} = 60\,\text{W}$, efficiency $\eta = 5.0\,\%$ and burning time $t = 4.0\,\text{h}$
 **Find:** the electrical energy that becomes heat, that is, the loss energy $E_\text{h}$ in kilowatt-hours
 **Principle:** The lamp burns at constant power, so the energy taken is power multiplied by time. The efficiency tells what share becomes light, and the rest is losses, that is, heat, because energy is conserved.
-**Formula:** $E_\text{o} = P_\text{o} \cdot t$ and $E_\text{h} = E_\text{o} - \eta \cdot E_\text{o} = (1 - \eta) \cdot E_\text{o}$
+**Formula:** At constant power $E = Pt$, so $E_\text{o} = P_\text{o} \cdot t$; conservation of energy $E_\text{o} = E_\text{a} + E_\text{h}$ and $E_\text{a} = \eta \cdot E_\text{o}$, so $E_\text{h} = E_\text{o} - \eta \cdot E_\text{o} = (1 - \eta) \cdot E_\text{o}$
 **Conversions:** Power to kilowatts: $60\,\text{W} = 60 \cdot 0.001\,\text{kW} = 0.060\,\text{kW}$. When the power is in kilowatts and the time in hours, the energy is obtained directly in kilowatt-hours. In addition, $5.0\,\% = 5.0 \cdot 0.01 = 0.050$.
 **Substitution:** $E_\text{o} = 0.060\,\text{kW} \cdot 4.0\,\text{h} = 0.24\,\text{kWh}$, so $E_\text{h} = (1 - 0.050) \cdot 0.24\,\text{kWh} = 0.228\,\text{kWh}$
 **Answer:** $0.23\,\text{kWh}$, two significant figures, as in the given values.
@@ -87,7 +87,7 @@ $$.
 **Given:** efficiency $\eta = 25\,\%$ and useful power $P_\text{a} = 15\,\text{kW}$
 **Find:** the loss power $P_\text{h}$ in kilowatts
 **Principle:** The power taken by the petrol engine divides into useful power and loss power, because energy is conserved: $P_\text{o} = P_\text{a} + P_\text{h}$. The power taken is found from the useful power and the efficiency, and the loss power is the difference.
-**Formula:** $P_\text{o} = \dfrac{P_\text{a}}{\eta}$ and $P_\text{h} = P_\text{o} - P_\text{a}$
+**Formula:** Conservation of energy with powers $P_\text{o} = P_\text{a} + P_\text{h}$ and $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, so $P_\text{o} = \dfrac{P_\text{a}}{\eta}$ and $P_\text{h} = P_\text{o} - P_\text{a}$
 **Conversions:** A percentage is converted to a number by substituting $1\,\% = 0.01$: $25\,\% = 0.25$. The powers stay in kilowatts.
 **Substitution:** $P_\text{o} = \dfrac{15\,\text{kW}}{0.25} = 60\,\text{kW}$, so $P_\text{h} = 60\,\text{kW} - 15\,\text{kW} = 45\,\text{kW}$
 **Answer:** $45\,\text{kW}$, two significant figures, as in the given values.
@@ -97,7 +97,7 @@ $$.
 **Given:** device A: $E_\text{o,A} = 200\,\text{J}$ and $E_\text{a,A} = 150\,\text{J}$; device B: $E_\text{o,B} = 4.0\,\text{kJ}$ and $E_\text{h,B} = 2.0\,\text{kJ}$
 **Find:** the ratio of the efficiencies $\eta_\text{A} : \eta_\text{B}$, that is, how many times as large $\eta_\text{A}$ is compared with $\eta_\text{B}$
 **Principle:** The efficiency of device A is found directly from the useful energy. For device B the losses were given, so the useful energy is found from conservation of energy: $E_\text{a} = E_\text{o} - E_\text{h}$. The comparison is made by dividing the efficiencies by each other.
-**Formula:** $\eta_\text{A} = \dfrac{E_\text{a,A}}{E_\text{o,A}}$, $\eta_\text{B} = \dfrac{E_\text{o,B} - E_\text{h,B}}{E_\text{o,B}}$ and the comparison $\eta_\text{A} : \eta_\text{B}$
+**Formula:** Definition of efficiency $\eta = \dfrac{E_\text{a}}{E_\text{o}}$; for device A directly $\eta_\text{A} = \dfrac{E_\text{a,A}}{E_\text{o,A}}$; for device B conservation of energy $E_\text{o,B} = E_\text{a,B} + E_\text{h,B}$, so $E_\text{a,B} = E_\text{o,B} - E_\text{h,B}$ and $\eta_\text{B} = \dfrac{E_\text{o,B} - E_\text{h,B}}{E_\text{o,B}}$; the comparison $\eta_\text{A} : \eta_\text{B}$
 **Conversions:** Efficiencies are ratios, so the unit does not affect them as long as the energies of each device are in the same unit. So the kilojoules of device B do not need to be converted to joules.
 **Substitution:** $\eta_\text{A} = \dfrac{150\,\text{J}}{200\,\text{J}} = 0.75$ and $\eta_\text{B} = \dfrac{4.0\,\text{kJ} - 2.0\,\text{kJ}}{4.0\,\text{kJ}} = 0.50$, so $\eta_\text{A} : \eta_\text{B} = 0.75 : 0.50 = 1.5$
 **Answer:** $1.5$ times, two significant figures, as in the given values.
@@ -107,7 +107,7 @@ $$.
 **Given:** power taken $P_\text{o} = 1.2\,\text{kW}$, efficiency $\eta = 20\,\%$ and electrical energy to be produced $E_\text{a} = 0.50\,\text{MJ}$
 **Find:** the time $t$ in seconds
 **Principle:** The efficiency tells what share of the power taken becomes the useful power of the panel. At constant power the useful energy is useful power multiplied by time, so the time is found by dividing the useful energy by the useful power.
-**Formula:** $P_\text{a} = \eta \cdot P_\text{o}$ and $E_\text{a} = P_\text{a} \cdot t$, so $t = \dfrac{E_\text{a}}{\eta \cdot P_\text{o}}$
+**Formula:** Definition of efficiency $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, so $P_\text{a} = \eta \cdot P_\text{o}$; at constant power $E_\text{a} = P_\text{a} \cdot t$, so $t = \dfrac{E_\text{a}}{P_\text{a}} = \dfrac{E_\text{a}}{\eta \cdot P_\text{o}}$
 **Conversions:** $1.2\,\text{kW} = 1.2 \cdot 1000\,\text{W} = 1200\,\text{W}$, $0.50\,\text{MJ} = 0.50 \cdot 10^{6}\,\text{J} = 500\,000\,\text{J}$ and $20\,\% = 20 \cdot 0.01 = 0.20$.
 **Substitution:** $t = \dfrac{500\,000\,\text{J}}{0.20 \cdot 1200\,\text{W}} = \dfrac{500\,000\,\text{J}}{240\,\text{W}} = 2083\,\text{s}$
 **Answer:** $2083\,\text{s}$ or about $2.1 \cdot 10^{3}\,\text{s}$, two significant figures, as in the given values.
@@ -123,7 +123,7 @@ $$, and a time five times as long corresponds to an efficiency of $20\,\%$.
 **Find:** the energy that becomes losses, $E_\text{h}$, in joules
 **Principle:** In an energy flow diagram drawn to scale, the thickness of an arrow is proportional to energy. So one square always corresponds to the same energy, and the thickness and the energy of the incoming arrow tell how much. Energy is conserved, so the thicknesses of the outgoing arrows add up to the thickness of the incoming arrow.
 **Reading the graph:** The incoming arrow spans eight squares from top to bottom. The green arrow of useful energy on the right edge is two squares thick and the orange loss arrow is six squares thick; the thickness is read from the straight part of the arrow, before the head. Check: $2 + 6 = 8$ squares.
-**Formula:** $\dfrac{E_\text{h}}{E_\text{o}} = \dfrac{d_\text{h}}{d_\text{o}}$, so $E_\text{h} = \dfrac{d_\text{h}}{d_\text{o}} \cdot E_\text{o}$
+**Formula:** Arrow thickness is proportional to energy, so $\dfrac{E_\text{h}}{E_\text{o}} = \dfrac{d_\text{h}}{d_\text{o}}$, so $E_\text{h} = \dfrac{d_\text{h}}{d_\text{o}} \cdot E_\text{o}$
 **Conversions:** Not needed: the thicknesses are in the same unit (squares), so they cancel, and the energy is in joules.
 **Substitution:** $E_\text{h} = \dfrac{6}{8} \cdot 240\,\text{J} = 0.75 \cdot 240\,\text{J} = 180\,\text{J}$
 **Answer:** $180\,\text{J}$ or $1.8 \cdot 10^{2}\,\text{J}$, two significant figures, as in the incoming energy $240\,\text{J}$.
@@ -141,7 +141,7 @@ Efficiency is at most $100\,\%$. In real devices it is usually below $100\,\%$, 
 **Given:** energy taken $E_\text{o} = 36\,\text{kJ}$ and useful energy (kinetic energy) $E_\text{a} = 27\,\text{kJ}$
 **Find:** the energy that becomes losses, $E_\text{h}$, in kilojoules
 **Principle:** Energy is conserved, so the energy taken by the device is divided into useful energy and losses. The losses are found by subtracting the useful energy from the energy taken.
-**Formula:** $E_\text{o} = E_\text{a} + E_\text{h}$, so $E_\text{h} = E_\text{o} - E_\text{a}$
+**Formula:** Conservation of energy $E_\text{o} = E_\text{a} + E_\text{h}$, so $E_\text{h} = E_\text{o} - E_\text{a}$
 **Conversions:** Not needed: both energies are in kilojoules.
 **Substitution:** $E_\text{h} = 36\,\text{kJ} - 27\,\text{kJ} = 9.0\,\text{kJ}$
 **Answer:** $9.0\,\text{kJ}$, two significant figures, as in the given energies.
@@ -151,7 +151,7 @@ Efficiency is at most $100\,\%$. In real devices it is usually below $100\,\%$, 
 **Given:** efficiency $\eta = 90\,\%$ and useful power (electrical power) $P_\text{a} = 180\,\text{kW}$
 **Find:** the power $P_\text{o}$ that the generator takes from the turbine in kilowatts
 **Principle:** The useful power is the share of the power taken given by the efficiency. So the power taken is larger than the useful power, and it is found by dividing the useful power by the efficiency.
-**Formula:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, so $P_\text{o} = \dfrac{P_\text{a}}{\eta}$
+**Formula:** Definition of efficiency $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, so $P_\text{o} = \dfrac{P_\text{a}}{\eta}$
 **Conversions:** A percentage is converted to a number by substituting $1\,\% = 0.01$: $90\,\% = 90 \cdot 0.01 = 0.90$. The power does not need converting, because the answer is requested in kilowatts.
 **Substitution:** $P_\text{o} = \dfrac{180\,\text{kW}}{0.90} = 200\,\text{kW}$
 **Answer:** $200\,\text{kW}$ or $2.0 \cdot 10^{2}\,\text{kW}$, two significant figures, as in the efficiency $90\,\%$.
@@ -166,7 +166,7 @@ $$, that is, $10\,\%$ of the power taken.
 **Given:** from the table, the power taken $P_\text{o}$ and the light power $P_\text{a}$ of the lamps: incandescent lamp $60\,\text{W}$ and $3.0\,\text{W}$, halogen lamp $40\,\text{W}$ and $2.8\,\text{W}$, fluorescent lamp $18\,\text{W}$ and $3.6\,\text{W}$, LED lamp $9.0\,\text{W}$ and $2.7\,\text{W}$
 **Find:** the ratio of the efficiency of the LED lamp to the efficiency of the halogen lamp, that is, how many times as large the efficiency of the LED is
 **Principle:** The lamps run at constant power, so the efficiency is the ratio of the useful power to the power taken. It is calculated separately for each lamp, and the comparison is made by dividing the efficiency of the LED by the efficiency of the halogen lamp.
-**Formula:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$
+**Formula:** Definition of efficiency $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, calculated separately for each lamp; the unknown is already alone, so no rearranging is needed
 **Conversions:** Not needed: all powers are in watts, so the units cancel. The efficiencies are calculated as ratios, and they are converted to percentages by substituting $1 = 100\,\%$.
 **Substitution:** Incandescent lamp $\eta = \dfrac{3.0\,\text{W}}{60\,\text{W}} = 0.050 = 5.0\,\%$, halogen lamp $\eta = \dfrac{2.8\,\text{W}}{40\,\text{W}} = 0.070 = 7.0\,\%$, fluorescent lamp $\eta = \dfrac{3.6\,\text{W}}{18\,\text{W}} = 0.20 = 20\,\%$ and LED lamp $\eta = \dfrac{2.7\,\text{W}}{9.0\,\text{W}} = 0.30 = 30\,\%$. The ratio of the LED to the halogen lamp is $\dfrac{0.30}{0.070} = 4.3$.
 **Answer:** The efficiency of the LED lamp is about $4.3$ times the efficiency of the halogen lamp. The result is given to two significant figures, as the values in the table.
@@ -182,7 +182,7 @@ Note that the fluorescent lamp gives the most light ($3.6\,\text{W}$), but it do
 **Principle:** Efficiency is the share of the useful energy in the energy taken. The energies have been measured from the start (at $t = 0$ both are zero), so the efficiency is obtained directly from each row.
 
 The efficiency of a steadily running motor does not depend on how long a period is examined, so the values of the rows are the same within the accuracy of the measurement, and the row of the whole period gives the result.
-**Formula:** $\eta = \dfrac{E_\text{a}}{E_\text{o}}$
+**Formula:** Definition of efficiency $\eta = \dfrac{E_\text{a}}{E_\text{o}}$; the unknown $\eta$ is already alone, so no rearranging is needed
 **Conversions:** Not needed: both energies are in kilojoules, so the units cancel. The result is converted to a percentage by substituting $1 = 100\,\%$.
 **Substitution:** The rows: $\dfrac{24\,\text{kJ}}{30\,\text{kJ}} = 0.80$, $\dfrac{48\,\text{kJ}}{61\,\text{kJ}} = 0.79$, $\dfrac{71\,\text{kJ}}{89\,\text{kJ}} = 0.80$ and $\dfrac{95\,\text{kJ}}{120\,\text{kJ}} = 0.792$. All are about $0.79$–$0.80$, and from the row of the whole period $\eta = 0.792 \cdot 100\,\% = 79\,\%$.
 **Answer:** The efficiency of the motor is about $79\,\%$, two significant figures. There is a little scatter in the measurement points, so a more exact number would be misleading.
@@ -206,7 +206,7 @@ The loss power of A is $2.0\,\text{kW} - 1.5\,\text{kW} = 0.5\,\text{kW}$ and th
 &= 3.6\,\text{MJ}
 \end{aligned}
 $$. The useful energy is the efficiency multiplied by the energy taken. Energy is conserved: the energy taken is useful energy and losses (heat).
-**Formula:** $E_\text{p} = V \cdot h$, $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, so $E_\text{a} = \eta \cdot E_\text{o}$, and the comparison $\dfrac{E_\text{p}}{E_\text{e}}$
+**Formula:** Energy of the fuel $E_\text{p} = V \cdot h$; definition of efficiency $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, so $E_\text{a} = \eta \cdot E_\text{o}$; the comparison $\dfrac{E_\text{p}}{E_\text{e}}$
 **Conversions:** $$
 \begin{aligned}
 1\,\text{kWh} &= 1000\,\text{W} \cdot 3600\,\text{s} \\
@@ -228,7 +228,7 @@ The difference in the energy taken is due to the efficiency: the electric car us
 
 Energy is conserved, so $E_\text{o} = E_\text{a} + E_\text{h}$. Power is $P = E : t$, the energy in a year is the power multiplied by the operating time, and the share of heat in it is the share of the losses in the energy taken.
 **Reading the graph:** The ratio $E_\text{o} : t$ is the same on every row, $540\,\text{J} : 60\,\text{s} = 9.0\,\text{W}$, so the power taken is $9.0\,\text{W}$. The share of the loss is about $0.70$ on every row.
-**Formula:** $E_\text{a} = E_\text{o} - E_\text{h}$, $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, $P = \dfrac{E}{t}$, $E_\text{o,y} = P \cdot t_\text{y}$ and $E_\text{h,y} = \dfrac{E_\text{h}}{E_\text{o}} \cdot E_\text{o,y}$
+**Formula:** Conservation of energy $E_\text{o} = E_\text{a} + E_\text{h}$, so $E_\text{a} = E_\text{o} - E_\text{h}$; definition of efficiency $\eta = \dfrac{E_\text{a}}{E_\text{o}}$; power $P = \dfrac{E}{t}$, so $E_\text{o,y} = P \cdot t_\text{y}$; the heat share is the same on every row, so $E_\text{h,y} = \dfrac{E_\text{h}}{E_\text{o}} \cdot E_\text{o,y}$
 **Conversions:** The operating time in a year is $t_\text{y} = 3.0\,\text{h} \cdot 365 = 1095\,\text{h}$. The power is $9.0\,\text{W} = 0.0090\,\text{kW}$.
 **Substitution:** The student's error: they divided the loss energy by the energy taken, so $0.70$ is the share of the losses and not the efficiency. The light energy is $E_\text{a} = 2160\,\text{J} - 1510\,\text{J} = 650\,\text{J}$, and $\eta = \dfrac{650\,\text{J}}{2160\,\text{J}} = 0.301 = 30\,\%$.
 In a year the lamp takes the energy $E_\text{o,y} = 0.0090\,\text{kW} \cdot 1095\,\text{h} = 9.855\,\text{kWh}$. The share $\dfrac{1510}{2160} = 0.699$ of it becomes heat, that is, $E_\text{h,y} = 0.699 \cdot 9.855\,\text{kWh} = 6.89\,\text{kWh}$. The cost is $$
@@ -276,7 +276,7 @@ Check: an efficiency of $167\,\%$ would be over $100\,\%$, and the correct resul
 **Given:** mass of oil $m = 2.5\,\text{kg}$ and useful energy $E_\text{a} = 80\,\text{MJ}$; from the table (MAFY table, heating values of fuels, fuel oil, light) $H = 40.6\,\text{MJ/kg}$
 **Asked:** the efficiency $\eta$ as a percentage
 **Principle:** Efficiency is the share of the energy taken into a device that becomes useful energy. The energy taken in is the chemical energy released when the fuel burns, found from the heating value and the mass.
-**Formula:** $E_\text{o} = Hm$ and $\eta = \dfrac{E_\text{a}}{E_\text{o}}$
+**Formula:** Energy released in burning $E_\text{o} = Hm$; definition of efficiency $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, already solved for the unknown
 **Conversions:** All energies are in megajoules, so no conversions are needed. As a percentage $\eta \cdot 100\,\%$.
 **Substitution:** $E_\text{o} = 40.6\,\dfrac{\text{MJ}}{\text{kg}} \cdot 2.5\,\text{kg} = 101.5\,\text{MJ}$ and $\eta = \dfrac{80\,\text{MJ}}{101.5\,\text{MJ}} = 0.788 = 78.8\,\%$
 **Answer:** The efficiency of the boiler is about $79\,\%$. The heating value $H = 40.6\,\text{MJ/kg}$ is from the MAFY table (heating values of fuels, light fuel oil); the task uses this MAFY value, and an answer within about $\pm 4\,\%$ is accepted.

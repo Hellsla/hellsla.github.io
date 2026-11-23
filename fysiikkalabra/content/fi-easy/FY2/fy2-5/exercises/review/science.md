@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 02606fa88d01b0b2
-Round: 4
+CONTENT-HASH: b1a4001c20ea8979
+SCOPE: delta answers,comments,md-paragraphs,numbers,reflow,structure,teacher-figure,typography,wording from 02606fa88d01b0b2 base c7f5e91
 
 ## Blocking
-(none)
 
 ## Polish
-- Finnish source (not editable here): L2-08 solution says petrol has "lähes 40 MJ/kg" but H = 43; "yli 40" is accurate. Fixed in this translation only.
+- exercises.json:149 (fy2-5-L2-05, unchanged) — "Tehollinen lämpöarvo on se energia, joka puusta oikeasti saadaan lämmitykseen" mixes up the heating value with the useful energy. The boiler's losses come on top of the heating value. — Fix: "Tehollisessa lämpöarvossa ei ole mukana savukaasun vesihöyryn tiivistymislämpöä."
+- solutions.md (L2-05, L3-01) — the Kaava ends in $E\left(\frac{1}{H_1} - \frac{1}{H_2}\right)$, but the Sijoitus computes the two masses separately. Both are correct. — Fix (optional): add a row $\Delta m = 120\,\text{MJ}\left(\frac{1}{15} - \frac{1}{40{,}6}\right)\frac{\text{kg}}{\text{MJ}}$, so that the substitution goes into the final form.
 
 ## Checked
-- New task fy2-5-L2-08 (order, YO form) compared with the reviewed Finnish: data (43/1500 g, 15/5.0 kg, 26/0.0040 t, 10/12 kg), order items, answer string, unit "", tolerance 0.02, kind equal.
-- Recomputed: 43*1.5=64.5, 15*5.0=75, 26*4.0=104, 10*12=120 MJ; order petrol < firewood < coal < milled peat is correct; 1500 g=1.5 kg, 0.0040 t=4.0 kg.
-- Mass-order remark (petrol 1.5, coal 4.0, firewood 5.0, peat 12 kg) correct; firewood and coal swap.
-- No formula, number or unit lost; L2-08 solution numbers equal the Finnish.
-- Language: selkosuomi per NOTES.md section 12: heat of combustion explained in a sentence, same physics, decimal comma.
-- check_i18n.py: nothing for fy2-5; build.py fy2-5 succeeds. Earlier 16 tasks unchanged since round 2.
-- Round 3 -> 4 (commit 442c889ba): L3-04 Substitution line split into groups of four months (2100+1900+1600+1100 = 6700, 600+250+200+250 = 1300, 600+1100+1600+2000 = 5300, sum 6700+1300+5300 = 13 300); recomputed, correct, same numbers and wording pattern as the Finnish. No other change; no edits needed.
+- L2-09 Kaava (round-2 fix): equality is now justified by "energioiden on oltava yhtä suuret" and no longer by conservation. $H_\text{p}m_\text{p} = H_\text{b}m_\text{b}$ gives $43 \cdot 12/15 = 34{,}4\,\text{kg}$, and the answer 34 kg is inside ±2 %. `fy2-5/lampoarvot` prints 43 and 15 and does not give the answer away.
+- L2-05 and L3-01 Sijoitus (round-2 fix): each is now an aligned block with one equation per row. $m_{40} = 19{,}23$, $m_{20} = 13{,}61$, $\Delta m = 5{,}62\,\text{kg}$; $m_\text{puu} = 8{,}0$, $m_\text{öljy} = 2{,}96$, $\Delta m = 5{,}04\,\text{kg}$.
+- Light fuel oil 40,6 MJ/kg (MAFY) is the same in the L3-01, L3-04 and L3-05 texts, the table, the solutions and answers.py. Recomputed: oil 1310 kg and 985 kg; the mass ratio $2{,}53 = 2{,}39 \cdot 0{,}90/0{,}85$; 710 kg extra at $\eta = 0{,}70$; 3313 kg, 937 kg and 2824 kg.
+- L1-09 (ethanol): the MAFY LHV of 26,7 MJ/kg suits burning, and $26{,}7 \cdot 0{,}50 = 13{,}35\,\text{MJ}$. The ±4 % tolerance covers neighbouring table values.
+- Rewritten Kaava lines (bread slice, pellets, petrol, rations, peat plant, burner, L3-04, L3-05) start from $\eta = E_\text{hyöty}/E_\text{sisään}$, $E = Hm$, $P = E/t$ and $e = E/m$, combine symbolically and substitute into the final form: 0,48 MJ, 578 MJ, 4,465 kg, 3,6, 35 MW and 18,4 kW.
+- answers.py matches all 20 numeric answers within tolerance (one script, `python -I`).
+- Hash b1a4001c20ea8979 at the start and at the end.

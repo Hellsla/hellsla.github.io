@@ -4,7 +4,15 @@
 **Annettu:** tuulivoimalan nimellisteho $P_\text{n} = 5{,}0\,\text{MW}$, käyttöaste $k = 0{,}32$, vuoden pituus $t = 8760\,\text{h}$ ja kaupungin vuosikulutus $E = 380\,\text{GWh}$
 **Kysytty:** tarvittavien tuulivoimaloiden määrä $N$
 **Periaate:** Tuulivoimala ei käy koko vuotta nimellisteholla, koska tuuli vaihtelee. Käyttöaste kertoo vuoden keskitehon: $P_\text{keski} = k \cdot P_\text{n}$. Teho vaihtelee, mutta vuoden energia on keskiteho kertaa aika. Kun yhden voimalan vuosienergia tiedetään, voimaloiden määrä on kulutus jaettuna sillä. Määrä on kokonaisluku, ja sen on oltava vähintään laskettu arvo.
-**Kaava:** $E_1 = k \cdot P_\text{n} \cdot t$ ja $N = \dfrac{E}{E_1}$
+**Kaava:**
+$$
+\begin{aligned}
+P_\text{keski} &= k P_\text{n} \\
+E_1 &= P_\text{keski} t = k P_\text{n} t \\
+E &= N E_1 \\
+N &= \dfrac{E}{E_1} = \dfrac{E}{k P_\text{n} t}
+\end{aligned}
+$$
 **Muunnokset:** Kun teho on megawatteina ja aika tunteina, energia on megawattitunteina: $1\,\text{GWh} = 1000\,\text{MWh}$.
 **Sijoitus:** $E_1 = 0{,}32 \cdot 5{,}0\,\text{MW} \cdot 8760\,\text{h} = 14\,016\,\text{MWh} = 14{,}0\,\text{GWh}$ ja $N = \dfrac{380\,\text{GWh}}{14{,}0\,\text{GWh}} = 27{,}1$
 **Vastaus:** Tarvitaan $28$ tuulivoimalaa. Laskettu arvo $27{,}1$ pyöristetään ylöspäin, koska $27$ voimalaa tuottaisi vain $27 \cdot 14{,}0\,\text{GWh} = 378\,\text{GWh}$ eli liian vähän. Määrä on kokonaisluku, joten merkitsevien numeroiden sääntö ei sitä rajoita.
@@ -14,7 +22,16 @@
 **Annettu:** vuosikulutus $E = 380\,\text{GWh}$ ja elinkaaren päästökertoimet: kivihiili $e = 820\,\text{g/kWh}$, maakaasu $490\,\text{g/kWh}$ ja tuulivoima maalla $11\,\text{g/kWh}$
 **Kysytty:** vuotuinen päästö $m$ kullakin tavalla ja päästön pieneneminen prosentteina kivihiileen verrattuna
 **Periaate:** Päästökerroin kertoo, montako grammaa hiilidioksidiekvivalenttia syntyy kilowattituntia kohti, kun mukaan lasketaan koko elinkaari. Kun kaikki kilowattitunnit tuotetaan samalla tavalla, päästö on suoraan verrannollinen energiaan. Prosentuaalinen pieneneminen on päästöjen erotus suhteessa kivihiilen päästöön. Energia on kaikissa vaihtoehdoissa sama, joten se supistuu, ja suhteen voi laskea suoraan päästökertoimista.
-**Kaava:** $m = e \cdot E$ ja pieneneminen $\dfrac{m_\text{hiili} - m}{m_\text{hiili}} = 1 - \dfrac{e}{e_\text{hiili}}$
+**Kaava:**
+$$
+\begin{aligned}
+e &= \dfrac{m}{E} \\
+m &= e E \\
+\dfrac{m_\text{hiili} - m}{m_\text{hiili}} &= 1 - \dfrac{m}{m_\text{hiili}} \\
+&= 1 - \dfrac{e E}{e_\text{hiili} E} \\
+&= 1 - \dfrac{e}{e_\text{hiili}}
+\end{aligned}
+$$
 **Muunnokset:** $E = 380\,\text{GWh} = 380 \cdot 10^{6}\,\text{kWh}$, koska kerroin on yksikössä $\text{g/kWh}$. Lopuksi $1\,\text{t} = 10^{6}\,\text{g}$.
 **Sijoitus:** Kivihiili: $m = 820\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} = 3{,}116 \cdot 10^{11}\,\text{g} = 3{,}116 \cdot 10^{5}\,\text{t}$. Maakaasu: $m = 490\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} = 1{,}862 \cdot 10^{11}\,\text{g} = 1{,}862 \cdot 10^{5}\,\text{t}$. Tuulivoima: $m = 11\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} = 4{,}18 \cdot 10^{9}\,\text{g} = 4{,}18 \cdot 10^{3}\,\text{t}$. Pieneneminen: maakaasu $1 - \dfrac{490\,\text{g/kWh}}{820\,\text{g/kWh}} = 0{,}40$ ja tuulivoima $1 - \dfrac{11\,\text{g/kWh}}{820\,\text{g/kWh}} = 0{,}99$
 **Vastaus:** Kivihiilellä $m \approx 3{,}1 \cdot 10^{5}\,\text{t}$, maakaasulla $1{,}9 \cdot 10^{5}\,\text{t}$ ja tuulivoimalla $4{,}2 \cdot 10^{3}\,\text{t}$ vuodessa, kahden merkitsevän numeron tarkkuudella kuten päästökertoimissa. Maakaasu pienentää päästöä noin $40\,\%$, tuulivoima noin $99\,\%$.
@@ -24,7 +41,16 @@
 **Annettu:** $N = 28$ tuulivoimalaa, yhden vuosienergia $E_1 = 14{,}0\,\text{GWh}$, talven osuus tuulivoiman vuosienergiasta $32\,\%$ ja kaupungin vuosikulutuksesta $31\,\%$, kulutus $E = 380\,\text{GWh}$, talven pituus $90\,\text{d}$, huipputeho $80\,\text{MW}$ ja tyynen jakson teho alle $5\,\%$ nimellistehosta
 **Kysytty:** tuulivoimaloiden keskiteho $P_\text{t}$ joulu–helmikuussa ja riittääkö se kaupungin tarpeeseen
 **Periaate:** Taulukosta saadaan, kuinka suuri osa vuoden energiasta tuotetaan ja kulutetaan talvella. Talven keskiteho on talven energia jaettuna talven tunneilla. Keskiteho kertoo vain, riittääkö energia keskimäärin: kulutus ja tuuli vaihtelevat talvenkin aikana, joten tarvetta on verrattava myös huipputehoon ja tyynen jakson tehoon.
-**Kaava:** $P_\text{t} = \dfrac{0{,}32 \cdot N E_1}{t}$ ja kaupungin talven keskiteho $P_\text{k} = \dfrac{0{,}31 \cdot E}{t}$
+**Kaava:**
+$$
+\begin{aligned}
+E &= P t \\
+P &= \dfrac{E}{t} \\
+E_\text{talvi} &= 0{,}32 N E_1 \\
+P_\text{t} &= \dfrac{E_\text{talvi}}{t} = \dfrac{0{,}32 N E_1}{t} \\
+P_\text{k} &= \dfrac{0{,}31 E}{t}
+\end{aligned}
+$$
 **Muunnokset:** $t = 90 \cdot 24\,\text{h} = 2160\,\text{h}$ ja $1\,\text{GWh} = 1000\,\text{MWh}$
 **Sijoitus:** $N E_1 = 28 \cdot 14{,}016\,\text{GWh} = 392{,}4\,\text{GWh}$. $P_\text{t} = \dfrac{0{,}32 \cdot 392{,}4\,\text{GWh}}{2160\,\text{h}} = \dfrac{125\,600\,\text{MWh}}{2160\,\text{h}} = 58{,}1\,\text{MW}$ ja $P_\text{k} = \dfrac{0{,}31 \cdot 380\,\text{GWh}}{2160\,\text{h}} = \dfrac{117\,800\,\text{MWh}}{2160\,\text{h}} = 54{,}5\,\text{MW}$. Tyynellä jaksolla teho on $P_\text{tuuli} < 0{,}05 \cdot 28 \cdot 5{,}0\,\text{MW} = 7\,\text{MW}$, joten muualta tarvitaan $P_\text{muualta} > 80\,\text{MW} - 7\,\text{MW} = 73\,\text{MW}$.
 **Vastaus:** Tuulivoimaloiden keskiteho talvella on $P_\text{t} \approx 58\,\text{MW}$, kahden merkitsevän numeron tarkkuudella kuten taulukon prosenttiosuuksissa. Se on hieman suurempi kuin kaupungin talven keskimääräinen tarve $55\,\text{MW}$, joten talven energia riittää keskimäärin. Tyynenä pakkasiltana tuulivoimaloiden yhteisteho voi kuitenkin jäädä alle $7\,\text{MW}$:n. Jos kaupungin tehontarve on silloin $80\,\text{MW}$, muualta tarvitaan yli $73\,\text{MW}$ sähkötehoa.

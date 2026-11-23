@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 095d05500287de55
+CONTENT-HASH: 92395fcf3d320d88
 Mode: delta
 
 ## Blocking
@@ -9,5 +9,6 @@ Mode: delta
 (none)
 
 ## Checked
-- Delta: L3-04 Reasonableness 45 000 houses changed to 46 000. 3.2e6 / 70 = 45 714, so 46 000 is the correct rounding; the answer (49 000) is untouched.
-- Calculation chains only re-broken into rows in exercises.json: no number changed.
+- Delta: new Kaava lines start from direct proportionality (E/m = E100/m100), from E = k s and from m H = 30 dE; each derives the old formula correctly, no number or answer changed.
+- Reasonableness and Answer paragraphs only split into short paragraphs; wording identical.
+- figures.json: only the English translation of the scale-figure description and label added; matches the Finnish values (1 J apple, 1 kJ match, 10 MJ day of food, 1.6 GJ tank, 140 TJ per day).

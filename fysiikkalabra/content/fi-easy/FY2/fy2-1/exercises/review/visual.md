@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ee5987621a7db704
+CONTENT-HASH: ac4d1750f63b5dec
+SCOPE: delta numbers,wording from ee5987621a7db704 base 3076572c597d
 
 ## Blocking
 - none
 
 ## Polish
-- none (paragraph breaks only)
+- [Minor] shared component (not this change) — in the open-exercise captures the expand button at a task's top right overlaps the end of the first text line (e.g. fy2-4 4-17, fy2-7 7-15, fy2-5 5-16) — give the task heading row its own space or right padding in the shared card.
 
 ## Checked
-- Delta: solutions.md paragraph breaks in 1-4, 1-8, 1-9, 3-1 (nuclear chain), 3-4, 3-5.
-- fi-easy captures opened (content/fi-easy/FY2/fy2-1/review/shots/): open-exercises-1280-5 (1-4 a/b/c paragraphs, 1-5), -8 (1-8 chain in four paragraphs, 1-9); open-exercises-L3-1280-4 (nuclear a/b paragraphs, 1-22 task and table), -7 (3-5 solution rows).
-- Breaks read cleanly; KaTeX and units intact, no clipping or overflow, spacing consistent with the rest of the solution blocks. The 3-4 solution's later steps were not opened.
+- fy2-1 captures opened: open-exercises-1280-1 (1-2 Kaava), open-exercises-L3-1280-4, -5 (1-22 Kaava, Muunnokset, Sijoitus rows).
+- New Kaava lines read as principle, then symbolic form, then solved form; KaTeX, units and aligned blocks intact, no clipping, solution cards undisturbed. Other changed Kaava lines are the same pattern; their captures were not each opened.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -78,7 +78,7 @@ Turha pystyväli kuvan vierellä, kuva ja pieni taulukko tai kaksi pientä taulu
 viereen, valokuva kuvateksteineen oikealle palstalle (`build.py fig_rows`, site.css, `check_layout.py`). Ennen/jälkeen-kuvat: fy3-8, fy4-3, fy1-1 (1280, 1440, 1920 px). Täysi kuvaus: loki §8e.
 
 ## 8g. Mallivastaukset perusperiaatteesta (opettaja 2026-11-13)
-Tehty: FY4 (#727, 2026-11-18; 5d FY4: FY4.tsv:n rivit jäivät, CI-selain näkee 4–6 px:n leikkaukset). FY7 tehty (PR #726, loki §8g FY7). FY8 tehty (PR #823, loki §8g FY8). FY1 tehty (PR #813: kaikki 8 lukua, Sovella ja koe, kolme kieltä; loki §8g FY1). Jäljellä FY5, FY6, FY2, FY3.
+Tehty: FY4 (#727, 2026-11-18; 5d FY4: FY4.tsv:n rivit jäivät, CI-selain näkee 4–6 px:n leikkaukset). FY7 tehty (PR #726, loki §8g FY7). FY8 tehty (PR #823, loki §8g FY8). FY1 tehty (PR #813: kaikki 8 lukua, Sovella ja koe, kolme kieltä; loki §8g FY1). FY2 tehty (PR #817: kaikki 8 lukua, Sovella ja koe, kolme kieltä; Sovella fi, en ja fi-easy, koe vain fi). Jäljellä FY5, FY6, FY3.
 Tehtävien, Sovellan ja kokeiden mallivastausten Kaava-vaihe alkaa perusyhtälöistä ($\eta = E_\text{hyöty}/E$, $E = Pt$, $Q = rm$, energiatase),
 sitten johdettu kaava, symbolinen sievennys loppuun, vasta sitten sijoitus. Kurssi kerrallaan `/exercises`- ja `/practice`-putkella; yhdistetään saman kurssin
 kesken olevaan tehtäväkatselmointiin (FY5, FY6, FY7), ei rinnakkain.
@@ -111,8 +111,9 @@ toleransseihin, tallennusavaimiin ja palautustiedostoon ei kosketa. Täysi mää
 ## 11b. FY9: adaptiivinen YO-valmentaja (opettaja 2026-11-14)
 Suunnitelma `docs/FY9_ADAPTIVE_PLAN.md` (#566), hyväksytty P1–P12. PR 1 (YTL/Abitti-tietojen tarkistus, sisältö) voi alkaa heti; PR 2–8 jaettuja, yksin, kohdan 10 PR 5:n ja U1:n jälkeen;
 PR 9 Abitti 2 -ohje; PR 10 kielimallin selvitys. Ei palvelinta, ei tekoälyrajapintaa; jokainen uusi käyttöliittymäteksti hyväksytään PR kerrallaan. Arvio 2,5–3,5 M tokenia.
-PR 1 tehty (e2c7f5c, YTL/Abitti-tiedot). PR 2 tehty (#824: tehtäväindeksi `valmentaja/fy9.json`, `kertaus/FY9.json`, `valmentaja.py`; R9 tarkistettu, harmiton). Minikoesarjat ja diagnostisten tehtävien jaksokartoitus (`kertaus/FY9.json`, ehdotus P8) **hyväksytty: opettaja 2026-11-23 ("ok")**. Jaetun kaistan järjestys (opettaja 2026-11-23): 17b → 0g PR 3 → 11b PR 2–8 → 11 U3. PR 3 (näytön kirjaus) työn alla (#826; tietosuojatekstit odottavat opettajan hyväksyntää tekijäsessioon).
-PR 3 tehty (#826). PR 4b (uusi, PR 4:n jälkeen): tavoite L–E / M–C / B–A ja käydyt kurssit, suunnitelman P13 ja PR 4b; **opettaja 2026-11-23 ("yes, go with the recommendations")**; uudet tekstit hyväksytään tekijäsessioon.
+PR 1 tehty (e2c7f5c, YTL/Abitti-tiedot). PR 2 tehty (#824: tehtäväindeksi `valmentaja/fy9.json`, `kertaus/FY9.json`, `valmentaja.py`; R9 tarkistettu, harmiton). Minikoesarjat ja diagnostisten tehtävien jaksokartoitus (`kertaus/FY9.json`, ehdotus P8) **hyväksytty: opettaja 2026-11-23 ("ok")**. Jaetun kaistan järjestys (opettaja 2026-11-23): 17b → 0g PR 3 → 11b PR 2–8 → 11 U3. PR 3 tehty (#826, näytön kirjaus).
+PR 4 tehty (#830): uudet käyttöliittymätekstit, tietosuojalause, kuvat ja laattakuva `coach.svg` hyväksytty: opettaja 2026-11-23 tekijäsessioon ("Hyväksyn tekstit ja kuvat").
+PR 4b (seuraavaksi, ennen PR 5:tä): tavoite L–E / M–C / B–A ja käydyt kurssit, suunnitelman P13 ja PR 4b; **opettaja 2026-11-23 ("yes, go with the recommendations")**; uudet tekstit hyväksytään tekijäsessioon.
 
 ## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
 17a PR 1 (#720) ja PR 2 (#741, manifesti ja pysyvä tallennus) sekä 17b PR 1 (#818, koko työ yhteen tiedostoon; tekstit opettaja 2026-11-23) tehty; webkit.org sallittu ympäristöön 2026-11-19, opettajan luvalla.

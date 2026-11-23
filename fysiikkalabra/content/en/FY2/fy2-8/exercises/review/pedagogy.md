@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 09e49c1d1adb4b79
-SCOPE: delta added-exercise from 6448ead13918f143 base 6ecef1197865
+CONTENT-HASH: ab1a8e6751c19379
+Mode: delta
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- Earlier Polish remains recorded; the change adds none.
+(none)
 
 ## Checked
-- Delta: one solution (L2-11 c) now writes the three export values as separate inline formulas; numbers unchanged (+2142, +1124, -152 MW).
-- Pure layout edit for 360 px; the pedagogy of the tasks is unchanged from the earlier PASS.
+- Delta: Formula lines now start from m = e E (and E = V h, E = Hm, E = q A) and derive the ratios and differences; the cancelling of the same E in m2/m1 = e2/e1 and A_b/A_a = q_a/q_b is shown and correct.
+- Petrol-equals-electric-car line: equal emissions e E = e_p V h gives e = e_p V h / E; consistent with the old formula, no number changed.
+- Unit conversion line: e_kWh = e_MJ x 3.6 MJ/kWh now derived from m = e_MJ E_MJ; correct.
+- Bus vs car: energy of the fuel, emission and per-passenger division stated in order.
+- Long Model answer, Conclusion and Reasonableness paragraphs split for 360 px; wording identical; no Finnish left.

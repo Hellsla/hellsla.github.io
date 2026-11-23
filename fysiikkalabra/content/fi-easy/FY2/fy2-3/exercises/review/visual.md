@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: aee059f98fb0851b
+CONTENT-HASH: 9bd85e906508526b
+SCOPE: delta numbers from aee059f98fb0851b base 3076572
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] solutions.md, Järkevyys/Reasonableness of 3-20: the re-broken chain sits in a boxed row inside the sentence, and the sentence's comma lands inside the box ("= 75 kWh,"); acceptable, but a comma after the box would read slightly cleaner.
+- [Minor] 3-10 Kaava — the ratio row $\frac{P_A}{P_B} = \frac{\Delta E_A : \Delta t_A}{\Delta E_B : \Delta t_B}$ stacks colons inside a fraction and is dense; it is correct and legible, so only an option: write $\frac{P_A}{P_B}$ from the two $P = \Delta E/\Delta t$ rows.
 
 ## Checked
-- Delta (reflow of solutions.md, fi-easy): opened fy2-3-open-exercises-L2-1280-5 (Mallivastaus rows P1, P2, P2:P1: aligned at =, in boxes, text between intact), L3-1280-1 and -2 (3-20 Järkevyys row, 3-21 chain), and the 3-20 conversions and substitution blocks (aligned, nothing clipped). Fi page was checked in all of these; the en and fi-easy pages were cut as the Finnish one.
-- Not opened: the 1-01 Järkevyys row (same form as 3-20).
+- Delta: solutions.md Kaava lines rewritten from the basic law (E = Pt, P = ΔE/Δt, k, proportions) in 3-1, 3-6/3-7, 3-12, 3-15, 3-18, 3-20, 3-21, 3-24, 3-10.
+- Captures opened (content/fi-easy/FY2/fy2-3/review/shots/): open-exercises-1280-9 and -10 (3-10 graph, Kaava, Sijoitus), open-exercises-L3-1280-1 (3-20 Kaava as aligned rows), -6 and -7 (3-24 Kaava, Sijoitus rows, Vastaus).
+- Formulas render in KaTeX with upright units, aligned equals signs, display blocks break at meaningful points, no clipping or overflow. The graph figure of 3-10 is unchanged and legible (axes with units, A orange, B blue). Finnish natural.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
