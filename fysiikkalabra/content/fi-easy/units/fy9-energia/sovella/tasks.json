@@ -130,7 +130,7 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "$E = Hm$ hakkeelle, joka poltetaan tunnissa, ja $P_0 = \\dfrac{E}{t}$"
+              "detail": "$Q = Hm$ hakkeelle, joka poltetaan tunnissa, ja $P_0 = \\dfrac{Q}{t}$"
             },
             {
               "key": "calculation",

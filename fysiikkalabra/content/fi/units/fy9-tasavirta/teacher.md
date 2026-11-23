@@ -6,7 +6,7 @@
 - **25–35 min, Teoriatiivistelmä.** Käy tunnistuskaavio läpi rivi kerrallaan: mistä tehtävän sanoista tunnistaa virran ja resistanssin, kytkennät, tehon ja energian, lähteen. Kysy jokaisen kaavan kohdalla, milloin se pätee (Ohmin laki vakiolämpötilassa, Joulen lain muodot vain vastukselle, $E$ ja $R_\text{s}$ vakioita). Palaa Pohdintaan mökkipiirin avulla.
 - **35–55 min, Sovella.** Neljä monivalintaa pareittain (noin $6\,\text{min}$), sitten neljä laskua yksin. Nopeat jatkavat ilman vihjeitä; hitaat käyttävät vihjeitä yksi kerrallaan ja tekevät tunnilla vain laskut *Auton akku pakkasaamuna* ja *Sekakytkentä kytkentälevyllä*, muut kotona. Jos aika loppuu, laskut *Leivänpaahtimen lämmityslanka* ja *Vedenkeitin sähkölaskussa* ovat kaikille kotitehtäviä.
 - **55–65 min, Tarkista osaamisesi ja exit ticket.** Yksin: käsite- ja laskutehtävä sekä exit ticket. Selitystehtävä (kaksi lamppua sarjassa) on kotitehtävä, ja se arvioidaan kriteereillä itse.
-- **65–75 min, Tehtävät.** Kymmenessä minuutissa ehtii yhden pitkän tehtävän alun koeolosuhteissa, ilman mallivastausta: suositus *Takalasin lämmitin* a–b (laskutehtävä) tai *Taskulampun paristot kuormitettuna* a (kuvaaja). Tehtävän loppu ja muut viisi tehtävää ovat kotitehtäviä, kaksi tai kolme kerrallaan ennen seuraavaa tuntia.
+- **65–75 min, Tehtävät.** Kymmenessä minuutissa ehtii yhden pitkän tehtävän alun koeolosuhteissa, ilman mallivastausta: suositus *Takalasin lämmitin* a–b (laskutehtävä) tai *Taskulampun paristot kuormitettuna* a (kuvaaja). Tehtävän loppu ja muut seitsemän tehtävää ovat kotitehtäviä, kaksi tai kolme kerrallaan ennen seuraavaa tuntia.
 
 ## Lähtötasotestin käyttö
 Ennusta-kysymykset ovat diagnostinen testi, eivät arvosana. Jokainen kysymys vastaa yhtä lukua:

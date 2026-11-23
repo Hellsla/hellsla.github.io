@@ -1052,14 +1052,14 @@
           },
           "criteria": [
             {
-              "text": "Justifies: the vertical acceleration of the car is zero, so $N = mg$, and static friction is at most $$\n\\begin{aligned}\nF_\\text{max} &= \\mu_\\text{s} N \\\\\n&= \\mu_\\text{s} mg\n\\end{aligned}\n$$. At the limit the friction is as large as it can be.",
+              "text": "Justifies: the vertical acceleration of the car is zero, so $N = mg$, and static friction is at most $$\n\\begin{aligned}\nF_\\text{max} &= \\mu_0 N \\\\\n&= \\mu_0 mg\n\\end{aligned}\n$$. At the limit the friction is as large as it can be.",
               "tag": "concept",
               "points": 1
             },
             {
               "key": "equation",
               "points": 1,
-              "detail": "$\\Sigma F = ma_\\text{n}$ at the limit: $\\mu_\\text{s} mg = \\dfrac{mv^2}{r}$, so $v_\\text{max} = \\sqrt{\\mu_\\text{s} g r}$ and the mass cancels."
+              "detail": "$\\Sigma F = ma_\\text{n}$ at the limit: $\\mu_0 mg = \\dfrac{mv^2}{r}$, so $v_\\text{max} = \\sqrt{\\mu_0 g r}$ and the mass cancels."
             },
             {
               "key": "calculation",
@@ -1074,7 +1074,7 @@
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "The greatest friction $\\mu_\\text{s} g$ gives $a_\\text{n} \\approx 4.9\\,\\text{m/s}^2$ at about $19\\,\\text{m/s}$ in the graph, and $15\\,\\text{m/s}$ is less than that."
+              "detail": "The greatest friction $\\mu_0 g$ gives $a_\\text{n} \\approx 4.9\\,\\text{m/s}^2$ at about $19\\,\\text{m/s}$ in the graph, and $15\\,\\text{m/s}$ is less than that."
             }
           ]
         },
@@ -1085,7 +1085,7 @@
           "text": "The car is loaded with passengers and luggage, and its mass is $1500\\,\\text{kg}$. How does the load affect the greatest speed in the bend on the wet road? Does the graph change? Justify by calculating.",
           "criteria": [
             {
-              "text": "Justifies that the mass cancels from the equation of motion $\\mu_\\text{s} mg = \\dfrac{mv^2}{r}$, so the greatest speed $$\n\\begin{aligned}\n\\sqrt{\\mu_\\text{s} g r} &\\approx 19\\,\\text{m/s}\n\\end{aligned}\n$$ does not change.",
+              "text": "Justifies that the mass cancels from the equation of motion $\\mu_0 mg = \\dfrac{mv^2}{r}$, so the greatest speed $$\n\\begin{aligned}\n\\sqrt{\\mu_0 g r} &\\approx 19\\,\\text{m/s}\n\\end{aligned}\n$$ does not change.",
               "tag": "concept",
               "points": 1
             },

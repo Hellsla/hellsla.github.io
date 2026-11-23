@@ -59,7 +59,7 @@ $$.
 **Annettu:** tunnissa poltettavan hakkeen massa $m = 42\,\text{t}$, aika $t = 1\,\text{h}$, lämpöarvo $H = 9{,}5\,\text{MJ/kg}$
 **Kysytty:** polttoaineteho $P_0$ megawatteina
 **Periaate:** Hakkeesta vapautuva energia on lämpöarvo kertaa palanut massa, koska lämpöarvo on energia yhtä kilogrammaa kohti (luku *Polttoaineet ja lämpöarvo*). Polttoaineteho on tämä energia jaettuna sillä ajalla, jossa energia vapautuu (luku *Teho*).
-**Kaava:** $E = Hm$ ja $P_0 = \dfrac{E}{t}$, joten $P_0 = \dfrac{Hm}{t}$
+**Kaava:** $Q = Hm$ ja $P_0 = \dfrac{Q}{t}$, joten $P_0 = \dfrac{Hm}{t}$
 **Muunnokset:** $42\,\text{t} = 42 \cdot 1000\,\text{kg} = 42\,000\,\text{kg}$, $9{,}5\,\text{MJ/kg} = 9{,}5 \cdot 10^{6}\,\text{J/kg}$ ja $1\,\text{h} = 3600\,\text{s}$. Lopuksi $1\,\text{W} = 10^{-6}\,\text{MW}$.
 **Sijoitus:** $P_0 = \dfrac{9{,}5 \cdot 10^{6}\,\text{J}/\text{kg} \cdot 42\,000\,\text{kg}}{3600\,\text{s}} = \dfrac{3{,}99 \cdot 10^{11}\,\text{J}}{3600\,\text{s}} = 1{,}108 \cdot 10^{8}\,\text{W} = 110{,}8\,\text{MW}$
 **Vastaus:** $P_0 \approx 1{,}1 \cdot 10^{2}\,\text{MW}$. Vastauksessa on kaksi merkitsevää numeroa, kuten lämpöarvossa $9{,}5\,\text{MJ/kg}$ ja massassa $42\,\text{t}$. Seuraavissa kohdissa käytetään pyöristämätöntä arvoa $110{,}8\,\text{MW}$.

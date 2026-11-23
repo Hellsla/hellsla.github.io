@@ -130,7 +130,7 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "$E = Hm$ for the chips burnt in an hour and $P_0 = \\dfrac{E}{t}$"
+              "detail": "$Q = Hm$ for the chips burnt in an hour and $P_0 = \\dfrac{Q}{t}$"
             },
             {
               "key": "calculation",

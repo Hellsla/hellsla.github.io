@@ -59,7 +59,7 @@ $$.
 **Given:** mass of chips burnt in an hour $m = 42\,\text{t}$, time $t = 1\,\text{h}$, heat of combustion $H = 9.5\,\text{MJ/kg}$
 **Find:** the fuel power $P_0$ in megawatts
 **Principle:** The energy released from the chips is the heat of combustion multiplied by the mass burnt, because the heat of combustion is energy per kilogram (chapter *Fuels and heat of combustion*). The fuel power is this energy divided by the time in which it is released (chapter *Power*).
-**Formula:** $E = Hm$ and $P_0 = \dfrac{E}{t}$, so $P_0 = \dfrac{Hm}{t}$
+**Formula:** $Q = Hm$ and $P_0 = \dfrac{Q}{t}$, so $P_0 = \dfrac{Hm}{t}$
 **Conversions:** $42\,\text{t} = 42 \cdot 1000\,\text{kg} = 42\,000\,\text{kg}$, $9.5\,\text{MJ/kg} = 9.5 \cdot 10^{6}\,\text{J/kg}$ and $1\,\text{h} = 3600\,\text{s}$; finally $1\,\text{W} = 10^{-6}\,\text{MW}$.
 **Substitution:** $P_0 = \dfrac{9.5 \cdot 10^{6}\,\text{J}/\text{kg} \cdot 42\,000\,\text{kg}}{3600\,\text{s}} = \dfrac{3.99 \cdot 10^{11}\,\text{J}}{3600\,\text{s}} = 1.108 \cdot 10^{8}\,\text{W} = 110.8\,\text{MW}$
 **Answer:** $P_0 \approx 1.1 \cdot 10^{2}\,\text{MW}$, two significant figures like the heat of combustion $9.5\,\text{MJ/kg}$ and the mass $42\,\text{t}$. The later parts use the unrounded value $110.8\,\text{MW}$.
