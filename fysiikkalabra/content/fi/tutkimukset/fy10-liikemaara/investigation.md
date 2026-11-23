@@ -237,7 +237,7 @@ Vastaa:
   <foreignObject x="297" y="190" width="164" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$\text{suuruus pienenee}$</div></foreignObject>
 </svg>
 
-Jos ulkoinen voima, kuten vierimisvastus, on pienentänyt kokonaisliikemäärän suuruutta (itseisarvoa), tai nopeudet on luettu liian kaukaa törmäyksestä, pisteet poikkeavat suoralta järjestelmällisesti. Jos kumpikin vaunu liikkuu kokonaisliikemäärän suuntaan tai on levossa (esimerkiksi vaunu 2 on aluksi levossa), pisteet ovat suoran alapuolella, kun $p_\text{kok} > 0$, ja yläpuolella, kun $p_\text{kok} < 0$. Vastakkaisessa törmäyksessä vierimisvastuksen impulssit kumoavat osin toisensa, joten poikkeaman suunta riippuu vaunujen massoista.
+Jos ulkoinen voima, kuten vierimisvastus, on pienentänyt kokonaisliikemäärän suuruutta (itseisarvoa), tai nopeudet on luettu liian kaukaa törmäyksestä, pisteet poikkeavat suoralta järjestelmällisesti. Jos kumpikin vaunu liikkuu kokonaisliikemäärän suuntaan tai on levossa (esimerkiksi vaunu 2 on aluksi levossa), pisteet ovat suoran alapuolella, kun $p_\text{kok} > 0$, ja yläpuolella, kun $p_\text{kok} < 0$. Vastakkaisessa törmäyksessä vierimisvastuksen impulssit kumoavat osin toisensa, joten poikkeaman suunta riippuu vaunujen massoista ja nopeuksista.
 :::
 
 ## Epävarmuus ja luotettavuus
