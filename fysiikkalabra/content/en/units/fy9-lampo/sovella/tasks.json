@@ -916,7 +916,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$s \\approx 3.3 \\cdot 10^{2}\\,\\text{kJ/kg}$, two significant figures; the same as the table value $333\\,\\text{kJ/kg}$."
+              "detail": "$s \\approx 3.3 \\cdot 10^{2}\\,\\text{kJ/kg}$, two significant figures; the same as the table value $334\\,\\text{kJ/kg}$ to two significant figures."
             }
           ]
         },

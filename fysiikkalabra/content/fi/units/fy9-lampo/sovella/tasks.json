@@ -916,7 +916,7 @@
       {
        "key": "units_precision",
        "points": 1,
-       "detail": "$s \\approx 3{,}3 \\cdot 10^{2}\\,\\text{kJ/kg}$, kaksi merkitsevää numeroa; sama kuin taulukon arvo $333\\,\\text{kJ/kg}$."
+       "detail": "$s \\approx 3{,}3 \\cdot 10^{2}\\,\\text{kJ/kg}$, kaksi merkitsevää numeroa; sama kuin taulukon arvo $334\\,\\text{kJ/kg}$."
       }
      ]
     },
