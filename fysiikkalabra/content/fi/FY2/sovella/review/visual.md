@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 4fe8fb633b724488
+CONTENT-HASH: 83530c0cd8777982
 
 ## Blocking
-(none) Kierroksen 1 Major on korjattu: viisi listaa (Hyväksytään myös, Yleiset virheet, Mallivastaus a–e) renderöityy nyt listoina, kun niiden eteen on lisätty tyhjä rivi.
+(none)
 
 ## Polish
-- [Minor] solutions.md (e-kohdan pisteytys, 1280 px): "$7\,\text{MW}$:n" ja "$2{,}0$ GWh:ssa" jättävät hieman leveän välin taivutuspäätteen eteen. Valinnainen; ei muutettu.
+- [Minor] solutions.md fy2-s1 e), kappale "Biomassan osuus energiasta on vain noin $11\,\%$." jää irralliseksi yhden virkkeen kappaleeksi vastaperusteen vastauksen jälkeen. Liitä edelliseen kappaleeseen ("…suurimmillaan. Biomassan osuus…").
+- [Minor] solutions.md fy2-s1 c), Kaava: $P_\text{k}$ (kaupungin keskiteho) esiintyy ensi kertaa kaavassa, eikä Kysytty-rivi nimeä sitä. Lisää Kysytty-riville "ja kaupungin keskiteho $P_\text{k}$".
+- [Minor] solutions.md fy2-s1 e), Kaava puuttuu (vain Mallivastaus); ei estä, koska kohta on sanallinen.
 
 ## Checked
-- Delta, kierros 2: solutions.md:ssä on tyhjä rivi ennen viittä listaa; sanat ja luvut ennallaan. Hash ajettu alussa ja lopussa, vastaa kaappausten leimaa.
-- Kontaktilehdet 6 ja 7; kaappaukset stage-fy2-s1-390-12 (lyhyet kappaleet, ei leikkautuneita kaavoja), stage-fy2-s1-390-13 (Hyväksytään myös on luettelo, display-kaavat sisennetty ja kohdistettu), stage-fy2-s2-390-8 (Yleiset virheet -luettelo, Pisteytys ja kortit kunnossa), page-1280-12 (pisteytyskortit ja 0/1-painikkeet, ei vaakavieritystä).
-- fy2-s2 kontaktilehdillä (#73–#78): luettelot renderöityvät; ei vastaavaa vikaa.
-- Ei avattu yksitellen: muut 1280 px:n kaappaukset (vain ratkaisut muuttuneet).
+- Täysi arvio, kierros 1; muutos: Kaava-vaiheet kirjoitettu perusperiaatteista. Hash alussa ja lopussa 83530c0cd8777982 (vastaa kaappausten leimaa).
+- Avattu: top-390, contact-3, stage-fy2-s1-390-5, -6, -7, -8, -12, page-1280-12. Kaava a), b), c) renderöityvät aligned-riveinä, yhtäsuuruusmerkit samassa sarakkeessa (a-kohta suurennettuna), mikään kaava ei leikkaudu 390 px:ssä, ei vaakavieritystä.
+- Ei kuvia (inventaario tyhjä); fy2-s2:n kaappaukset vain contact-3/4:n kautta, ei muutoksia.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 (no figures) · typography 5 · Finnish 4 · accessibility 4
