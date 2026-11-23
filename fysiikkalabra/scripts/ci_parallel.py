@@ -244,7 +244,7 @@ def gate(args):
         if hangs: notes.append(f"{name}: no verdict at first (hung), run again alone: {' '.join(hangs)}")
         if fails: bad.append(f"{name}: failed: {' '.join(fails)}")
         rows.append((name, len(rs), len(uni), sum(u["pages"] for u in units), len(fails), sum(u["seconds"] for u in every) / 60, max(r["wall"] for r in rs) / 60))
-    if args.pages == "full":   # a full run's lists are compared with the committed site and sources, read here again
+    if args.pages == "full":   # a full run's lists are compared with the built site and sources, read here again
         for kind in ("layout", "inquiry"):
             mine = sorted(universe(kind))
             for r in reports:

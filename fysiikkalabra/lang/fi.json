@@ -527,6 +527,9 @@
     "palautus_broken": "Tiedosto ei ole Ruukkilabran työtiedosto, tai se on vioittunut. Mitään ei avattu.",
     "palautus_newer": "Tiedosto on tehty Ruukkilabran uudemmalla versiolla. Lataa sivu uudelleen ja yritä uudelleen.",
     "palautus_conflict": "Tässä selaimessa on jo eri tietoja {{n}} kohdassa, ja niistä {{newer}} on uudempia kuin tiedostossa.\n\nOK: tiedoston tiedot korvaavat ne.\nPeruuta: tämän selaimen tiedot säilyvät, ja tiedostosta lisätään vain puuttuvat.",
+    "kaikki_save": "Tallenna kaikki työni tiedostoon",
+    "kaikki_open": "Avaa kaikki työni tiedostosta",
+    "kaikki_wrong": "Tiedosto on yhden opintojakson työtiedosto. Avaa se opintojakson sivulla.",
     "palautus_open_failed": "Työtä ei voitu avata, koska selain ei salli tallentamista. Mitään ei muutettu."
   },
   "sims": {
