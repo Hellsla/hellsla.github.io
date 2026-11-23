@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 345f81b9645c72ee
+CONTENT-HASH: 3dc160f22d876a08
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fig flux (fig-3-390) — the magnet's poles are only coloured (blue/red), with no N/S label; colour carries the information alone — add $\text{N}$ and $\text{S}$ inside the halves (the teacher notes already warn about N versus the symbol N, so keep the poles upright text).
-- [Minor] fig flux — the green field lines run straight through the coil as fans and the coil's "N kierrosta" label sits far from the coil — move the label closer or add a thin leader line.
-- [Minor] fig setup (fig-6-390) — the magnet is small, and h is measured from its centre to the top of the coil; the dashed rules are light grey — make the h dashed rules darker (#6b7480) so that the start and end of h read on a phone.
-- [Minor] fig pulse (fig-9-390) — the second pulse is deeper and narrower, and the figure does not say it is schematic — add "kaavakuva" to the aria-label or a caption; for science: confirm the areas of the two pulses are drawn as the text claims.
-- [Minor] fig-1/top-390 — the hero shows the laptop screen blank and the coil leads cross the second coil; harmless, optional.
+- [Minor] fig-4 (pulse, 390 px) — the second pulse is drawn about as tall as the first and only slightly narrower, while the text says it is faster and so shorter and larger; the "S" area is shaded only for pulse 1, which is right — make the second peak visibly taller and narrower so the picture matches the sentence "sama vuon muutos tapahtuu lyhyemmässä ajassa". For science: check the amplitude ratio of the model curve.
+- [Minor] fig-2 (flux, 390 px) — the labels "magneetti" and "käämi, N kierrosta" are small grey text and thin next to the field lines; the field lines leave the magnet's red end and run through the coil as straight lines, which reads as schematic only. The description says "Kaaviokuva", so this is acceptable; consider also saying "ei mittakaavassa".
+- [Minor] fig-3 (setup) — the setup figure carries no label for the dashed rule that marks the coil's upper edge, so the reference point of $h$ is clear only from the text. A short label "käämin yläreuna" would help.
+- [Minor] investigation.md, Mittaa — the two empty tables are narrow and mostly white at 390 px; usable, but a one-line caption saying "täytä mittaustuloksilla" is not needed. No change required; noted only for density.
 
-## Checked (delta 2026-11-16)
-- Changed: Finnish quotes ”…”, 'mittari näyttää käytännössä indusoituneen jännitteen'. Opened page-1280-4 (the reworded paragraph reads fluently, nothing clipped). Quotes in the quote passages are in the same text parts; typographic quotes render.
-- Delta of text and typography only; no figure changed (figure findings above are the teacher's redraw queue, not Blocking).
+## Checked
+- top-390, top-1280, contact-1 (page overview, first 12 captures)
+- fig-1 (hero), fig-2 (flux), fig-3 (setup), fig-4 (pulse) at 390 px, opened at readable size
+- page-1280-3 and page-1280-5 (investigation task, prediction, theory, formulas, Suunnittele with set-up figure)
+- Not opened individually: the remaining page strips and contact sheets 2–3 (judged from the contact sheet only: the tables, uncertainty section and extension showed no clipping or overflow)
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4
