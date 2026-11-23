@@ -29,6 +29,12 @@ Good readers of a foreign language use five strategies:
    the *<span lang="fr">aimants</span>* hold a hot gas, so they must be **magnets**.
 5. **Skip what you do not need.** You rarely need every word to get the message.
 
+```pysahdy
+You see the word <span lang="fr">réacteur</span> in a news text. Which strategy gives you its meaning, and what does it mean?
+---
+The word ending: French <span lang="fr">‑eur</span> has the regular English partner *‑or*, so <span lang="fr">réacteur</span> means *reactor*.
+```
+
 ## False friends
 
 Some French words look like English words but mean something else. They are called **false friends**:
@@ -44,6 +50,12 @@ Some French words look like English words but mean something else. They are call
 | <span lang="fr">le calendrier</span> | a calendar, but also a schedule |
 
 When a look-alike gives a sentence a strange meaning, check it against the context.
+
+```pysahdy
+A French text says a project costs several <span lang="fr">milliards</span> of euros. Is that millions or billions, and how large is one <span lang="fr">milliard</span>?
+---
+It is billions: <span lang="fr">un milliard</span> is $10^{9}$, not a million. It is a false friend that looks like *million*.
+```
 
 ## Summary
 

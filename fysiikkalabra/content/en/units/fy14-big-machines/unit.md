@@ -14,6 +14,12 @@ After the Culham measurement of 1969, laboratories in many countries built tokam
 
 A tokamak plasma carries a large electric current. Like the current in a kettle, it heats the plasma because the plasma has electrical resistance. This is **ohmic heating**. But a hot plasma is a better conductor than a cold one: as the temperature rises, the resistance falls, and the current heats less and less. Above about $20$–$30$ million kelvin, ohmic heating is no longer enough, and other methods are needed.
 
+```pysahdy
+Why does ohmic heating fade as the plasma gets hotter?
+---
+The resistance of a plasma falls as its temperature rises. With less resistance the same current produces less heat, so the current alone cannot heat the plasma much beyond $20\text{–}30$ million kelvin.
+```
+
 The main new method of the 1970s was **neutral beam injection**. Ions of hydrogen or deuterium are accelerated to tens of kiloelectronvolts and then turned into **neutral** atoms, so that the magnetic field does not deflect them on their way in. Inside the plasma the fast atoms are ionised, trapped by the field and share their energy with the plasma in collisions. A second method uses **radio waves**: an antenna sends waves at a frequency that matches the circling motion of the ions or electrons, and the particles absorb their energy.
 
 In Princeton, the **Princeton Large Torus (PLT)** started in December 1975. With four neutral beam injectors, it reached ion temperatures of about $60$ million kelvin on the night of 24 July 1978. The result was shown at a conference in Innsbruck in August 1978: a tokamak could reach the temperatures a reactor needs. Temperature alone is not enough, though: density and confinement time had to improve too.
@@ -31,6 +37,12 @@ In Princeton, the **Princeton Large Torus (PLT)** started in December 1975. With
 The magnetic field of a tokamak comes from coils of copper. Copper has resistance, so a strong field needs huge electric power and heats the coils, and the machines could run only in short pulses. A **superconductor** has no electrical resistance at all when it is cooled to a few kelvin, usually with liquid helium. A current then flows without losses, and a strong field can be kept for a long time. The Soviet tokamak **T-7** at the Kurchatov Institute was the first to use superconducting magnets, in 1979. Its larger successor **T-15** produced its first plasma in 1988. Today ITER and many other machines use superconducting magnets.
 
 <figure class="unit-photo"><img src="units/fy14/pics/t15-stamp.jpg" alt="Soviet postage stamp from 1987 showing a drawing of a large tokamak machine." width="565" height="800" loading="lazy"><figcaption>A 1987 Soviet stamp celebrating the T-15 tokamak at the Kurchatov Institute. Tokamaks were a source of national pride in the USSR. <span class="photo-credit">Photo: Scanned and processed by Mariluna, public domain, via Wikimedia Commons</span></figcaption></figure>
+
+```pysahdy
+What advantage does a superconducting coil have over a copper coil?
+---
+A superconductor has no electrical resistance, so the current flows without heating losses. A strong field can then be kept for a long time without huge electric power.
+```
 
 ## Oil, money and big machines {Oil}
 

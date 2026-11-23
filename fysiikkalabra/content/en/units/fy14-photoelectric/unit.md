@@ -31,6 +31,12 @@ In 1905 Albert Einstein suggested that light carries its energy in small packets
 
 When light falls on a metal, one photon gives all its energy to one electron. The electron needs a minimum energy to escape from the metal surface. This energy is called the **work function** $W$, and it is different for different metals. If $hf < W$, the electron cannot escape, and it soon loses the energy as heat in the metal. If $hf > W$, the electron can leave, and the rest of the photon's energy becomes its kinetic energy.
 
+```pysahdy
+If $hf < W$, what happens to the energy of the absorbed photon?
+---
+The electron cannot escape, so it soon loses the energy as heat in the metal.
+```
+
 <svg data-fig="energy" viewBox="0 0 600 384" role="img" aria-label="Energy diagram to scale for sodium, work function 2.36 eV. Left: red light of wavelength 650 nm. The photon energy hf = 1.91 eV is drawn as an arrow from the electron in the metal; it ends below the dashed line of the energy needed to get out of the metal, so the electron stays. Right: violet light of 400 nm. The arrow hf = 3.10 eV reaches above the dashed line: the first 2.36 eV, the work function W, frees the electron, and the remaining 0.74 eV is the largest kinetic energy E_k,max the electron can have. The dashed line is labelled free electron." style="max-width:100%;font-size:24px">
   <image href="pics/fy14/fy14-photoelectric-energy.webp" x="1.2" y="1.2" width="597" height="391.8" preserveAspectRatio="none"/>
   <foreignObject x="96" y="11.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\lambda = 650\,\text{nm}$</div></foreignObject>
@@ -52,6 +58,12 @@ When light falls on a metal, one photon gives all its energy to one electron. Th
 The photon model explains every observation in the table. Brighter light means *more* photons every second, not *bigger* photons. So more electrons leave, and the current grows, but each electron still gets the energy of just one photon. One photon is absorbed at once, so there is no delay. And if one photon is too small, many photons do not help, because an electron practically never collects the energy of two photons.
 
 Energies at the scale of one electron are small, so physicists measure them in **electronvolts**: $1\ \text{eV}$ is the energy an electron gains when it moves through a voltage of one volt, ${1\ \text{eV} = 1.602 \cdot 10^{-19}\ \text{J}}$. A photon of visible light has an energy of about $1.6\text{–}3.3\ \text{eV}$.
+
+```pysahdy
+An electron moves through a voltage of $2.0\,\text{V}$. How much energy does it gain in electronvolts?
+---
+It gains $2.0\,\text{eV}$, because $1\,\text{eV}$ is the energy gained through a voltage of one volt.
+```
 
 ## Formula: Einstein's photoelectric equation
 
@@ -78,6 +90,12 @@ U_\text{s} &= \frac{h}{e}\,f - \frac{W}{e}
 \end{aligned}
 ```
 So the stopping voltage is a straight-line function of the frequency, and the slope of the line is $h/e$. It is the same for every metal. The work function only moves the line sideways.
+
+```pysahdy
+Two metals have different work functions. Why do their $U_\text{s}$–$f$ lines have the same slope?
+---
+The slope $h/e$ contains only constants. The work function appears only in the term $-W/e$, so it moves the line sideways.
+```
 
 <svg data-fig="usf" viewBox="0 0 600 360" role="img" aria-label="Graph of model values, to scale: the stopping voltage U_s in volts against the frequency f in units of 10^14 Hz, from 0 to 14. Two straight, parallel lines: sodium starts on the frequency axis at its threshold frequency 5.71 · 10^14 Hz and zinc at 10.4 · 10^14 Hz. Five points on the sodium line are the wavelengths 500, 450, 400, 350 and 300 nm. A triangle on the sodium line shows that the stopping voltage rises by 1.65 V when the frequency rises by 4 · 10^14 Hz; this slope is h/e and is the same for both metals. The threshold frequency f_0 of each metal is marked where its line meets the axis." style="max-width:100%;font-size:24px">
   <line x1="132.5" y1="300" x2="132.5" y2="58" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

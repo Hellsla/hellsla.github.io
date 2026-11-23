@@ -3354,9 +3354,21 @@ In 1924 the French physicist Louis de Broglie suggested that electrons might be 
 
 Each electron arrives at one single point, like a particle. But where it arrives is not decided like a bullet's path: after thousands of electrons, the dots form the bands of a wave pattern. At the Fotoni lab visit you can study a double-slit experiment repeated with single photons (unit *Fotoni lab visit: modern physics experiments*).
 
+```pysahdy
+Single electrons arrive one by one at single points. Why does a band pattern still appear after thousands of electrons?
+---
+The wave decides the probability of arrival, and the probability is large where the wave is strong. Many arrivals therefore build up the interference bands.
+```
+
 ## Through the wall {Tunnel}
 
 Roll a ball towards a hill. If its kinetic energy is less than the energy needed to reach the top, it always rolls back. In classical physics the region beyond the hill is simply forbidden. A small particle such as an electron behaves differently. Its wave does not stop at the edge of an **energy barrier**: inside the barrier the wave shrinks quickly, and if the barrier is thin, a small wave comes out on the other side. So the particle has a chance of appearing beyond the barrier. This is **quantum tunnelling**.
+
+```pysahdy
+A ball with too little energy always rolls back from a hill. Why can an electron sometimes appear on the far side of a thin energy barrier?
+---
+The electron's wave does not stop at the edge of the barrier but shrinks inside it. If the barrier is thin, a small wave comes out on the other side, so there is a small probability of finding the electron there.
+```
 
 <svg data-fig="barrier" viewBox="0 0 600 340" role="img" aria-label="Schematic drawing, not to scale. A grey rectangle in the middle is an energy barrier whose top is higher than the particle&#x27;s energy, shown as a dashed line. On the left, a blue wave of large amplitude moves towards the barrier. Inside the barrier the wave does not oscillate but shrinks smoothly. On the right of the barrier a wave with the same wavelength but a much smaller amplitude continues. The square of the amplitude tells the probability of finding the particle." style="max-width:100%;font-size:24px">
   <rect x="260" y="70" width="80" height="230" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
@@ -3395,6 +3407,12 @@ A particle with the momentum $p = mv$ has the wavelength
 \lambda = \frac{h}{p} = \frac{h}{mv}
 ```
 where $h = 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}$. If the kinetic energy $E_\text{k} = \tfrac{1}{2}mv^2$ is known, the momentum is $p = \sqrt{2mE_\text{k}}$. The chance of tunnelling falls very fast, roughly exponentially, when the barrier becomes wider or higher, or when the particle is heavier.
+
+```pysahdy
+Does a proton or an electron with the same kinetic energy have the longer de Broglie wavelength?
+---
+The electron. With the same $E_\text{k}$ the momentum is $p = \sqrt{2mE_\text{k}}$, which is smaller for the smaller mass, so $\lambda = h/p$ is longer.
+```
 
 ## Tunnelling and the Sun {Sun}
 

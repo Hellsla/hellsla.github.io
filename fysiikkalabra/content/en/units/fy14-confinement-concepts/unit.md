@@ -25,6 +25,12 @@ In a **theta-pinch** a coil around the tube carries a fast-rising current. Its m
 
 Pinches compress plasma well but hold it badly. A Z-pinch column is unstable: it wriggles into **kinks** and pinches off into **sausages**. In 1958 the British machine ZETA reported neutrons, but they came from these instabilities, not from thermonuclear fusion. The theta-pinch Scylla I at Los Alamos made real thermonuclear fusion in 1958, but its plasma escaped through the open ends of the tube.
 
+```pysahdy
+Why does a Z-pinch compress plasma but hold it badly?
+---
+The plasma column is unstable: it wriggles into kinks and pinches off into sausages, so the plasma escapes before it can be held long enough.
+```
+
 ## Inertial confinement: a very fast squeeze {Inertial}
 
 **Inertial confinement fusion** uses no magnetic field at all. A tiny capsule of frozen deuterium and tritium is squeezed so fast that it fuses before it can fly apart: only its own **inertia** holds it together, for less than a billionth of a second.
@@ -66,6 +72,12 @@ On **5 December 2022** NIF's lasers delivered $2.05\ \text{MJ}$ to a target, and
 </svg>
 
 What it does *not* mean: making the $2.05\ \text{MJ}$ laser pulse took about $300\ \text{MJ}$ of electricity, about a hundred times the fusion energy. In 2014 NIF fired about one shot every two days, and most of its shots are not ignition attempts, while a power plant would need several shots every second, each with a cheap target. It is a scientific milestone, not a power plant.
+
+```pysahdy
+NIF's target gain was above one in 2022. Does this mean that the facility made more energy than it used?
+---
+No. The gain compares the fusion energy only with the laser energy delivered to the target. The lasers drew about $300\,\text{MJ}$ of electricity, far more than the $3.15\,\text{MJ}$ of fusion energy.
+```
 
 ## Spherical tokamaks and stronger magnets {Compact}
 

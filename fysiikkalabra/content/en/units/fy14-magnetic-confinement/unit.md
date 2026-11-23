@@ -16,6 +16,12 @@ A charge that moves along the field feels no force.
 
 The force is always **perpendicular** both to $\overline{v}$ and to $\overline{B}$. For a positive charge, the right-hand rule gives its direction; a negative charge is pushed the opposite way. Because the force is perpendicular to the motion, it does no work: it changes the direction of the particle, not its speed.
 
+```pysahdy
+A proton moves exactly along a magnetic field line. What is the magnetic force on it?
+---
+Zero. The force is $F = |q|\,vB\sin\alpha$, and along the field $\alpha = 0$, so $\sin\alpha = 0$.
+```
+
 <svg data-fig="lorentz" viewBox="0 0 600 380" role="img" aria-label="Diagram: a uniform magnetic field into the page, shown by a grid of green crossed circles. A positive particle moves anticlockwise on a circle of radius r. At the bottom of the circle its velocity arrow, blue, points to the right and the magnetic force arrow, red, points up to the centre. At the right-hand side of the circle the velocity points up and the force points left, again to the centre. The force is always perpendicular to the velocity." style="max-width:100%;font-size:24px">
   <circle cx="34" cy="160" r="8" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.2"/>
   <line x1="28.5" y1="154.5" x2="39.5" y2="165.5" stroke="#2b8a3e" stroke-width="2.2" stroke-linecap="butt"/>
@@ -139,6 +145,12 @@ The radius $r$ is called the **gyroradius**. A stronger field gives a smaller ci
 Usually the velocity has a part along the field, $v_{\parallel} = v\cos\theta$, and a part across it, $v_{\perp} = v\sin\theta$. The angle $\theta$ is the **pitch angle**. The field does not affect $v_{\parallel}$, so the particle circles *around* a field line and slides *along* it: its path is a **helix**. The particle is tied to its field line, but it can run freely along it.
 
 In a **magnetic mirror** the field is stronger at both ends. As a particle moves into the stronger field, more of its motion turns into circling and $v_{\parallel}$ shrinks. If $v_{\parallel}$ reaches zero, the particle turns back. The condition for this is below: $B_0$ is the field in the middle and $B_{\max}$ the field at the ends.
+
+```pysahdy
+Why does $v_{\parallel}$ shrink when a particle moves into a stronger field?
+---
+The magnetic force does no work, so the kinetic energy stays the same. More of the motion turns into circling around the field line, and less is left for sliding along it.
+```
 ```latex
 \sin^2\theta \geq \frac{B_0}{B_{\max}}
 ```
@@ -163,6 +175,12 @@ The Earth's magnetic field is a natural mirror: it traps charged particles in th
 ## Why a ring, and why it is still hard {Torus}
 
 A straight field always has ends, and every particle with $v_{\parallel} \neq 0$ eventually leaks out. Bending the field into a ring, a **torus**, closes the field lines, so there are no ends.
+
+```pysahdy
+Why does bending the field into a ring remove the leak through the ends?
+---
+In a torus the field lines close on themselves, so a particle sliding along a line never reaches an end.
+```
 
 <svg data-fig="torus" viewBox="0 0 600 300" role="img" aria-label="Two diagrams. Left: a straight tube with coils around it; green field lines run along it and out of both open ends, and particles spiralling along the field lines escape through the ends. Right: the same coils bent into a ring, seen from above; the green field lines go round and round and close on themselves, so there are no ends to escape through." style="max-width:100%;font-size:24px">
   <image href="pics/fy14/fy14-magnetic-confinement-torus.webp" x="12.3" y="0" width="588.2" height="302.7" preserveAspectRatio="none"/>

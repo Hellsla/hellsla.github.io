@@ -34,6 +34,12 @@ From 70 to 99, France counts with **twenties**, a little like the old English *f
 
 So from 70 and from 90 you count on with the numbers 10–19. *<span lang="fr"><span class="nobr">Quatre-vingts</span></span>* has an *s* only when no number follows it.
 
+```pysahdy
+Without looking at the table, how is <span lang="fr">quatre-vingt-dix-sept</span> built, and which number does it mean?
+---
+It is $4 \cdot 20 + 17 = 97$: from 90 on you count on with the numbers 10–19 after <span lang="fr">quatre-vingt</span>.
+```
+
 In Belgium and Switzerland people say **<span lang="fr">septante</span>** (70) and **<span lang="fr">nonante</span>** (90). In three Swiss cantons (Vaud,
 Valais, Fribourg) 80 is **<span lang="fr">huitante</span>**. In France you will hear *<span lang="fr"><span class="nobr">soixante-dix</span></span>* and *<span lang="fr"><span class="nobr">quatre-vingt-dix</span></span>*.
 
@@ -69,6 +75,12 @@ The hints in italics use Finnish letters, as in the first lesson: capitals show 
    <span lang="fr">un euro</span> *ẽ-nö-RO*, <span lang="fr">vingt euros</span> *vẽ-tö-RO*.
 4. **Stress at the end.** A French number is one long word with the stress on its last syllable:
    <span lang="fr"><span class="nobr">quatre-vingt-dix-sept</span></span> *ka-trö-vẽ-di-SET*. Listen for the end: it tells you the units.
+
+```pysahdy
+Why do you hear a *z* in <span lang="fr">deux euros</span> but not in <span lang="fr">deux croissants</span>?
+---
+<span lang="fr">Euro</span> starts with a vowel, so the silent final consonant of <span lang="fr">deux</span> is linked to it in a liaison. Before a consonant the *x* stays silent.
+```
 
 <div class="fx" data-fx="say" id="fx-say-sounds"><script type="application/json">{"phrases": [{"fr": "six, dix, six croissants", "en": "Final consonants", "tip": "*SIS, DIS, si krwa-SÃ*"}, {"fr": "vingt, vingt-deux, quatre-vingt-un", "en": "Vingt", "tip": "*VẼ, vẽt-DÖ, ka-trö-vẽ-Ẽ*"}, {"fr": "deux euros, six euros, dix euros", "en": "Liaison", "tip": "*dö-zö-RO, si-zö-RO, di-zö-RO*"}, {"fr": "quatre-vingt-dix-sept euros", "en": "Stress at the end", "tip": "*ka-trö-vẽ-di-se-tö-RO*: the *t* of *{fr}sept{/fr}* is linked to *{fr}euros{/fr}*."}]}</script></div>
 

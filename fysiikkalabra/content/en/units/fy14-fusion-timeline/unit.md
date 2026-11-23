@@ -31,6 +31,12 @@ Choose an era, a theme or a search word. Click a mark on the year strip to open 
 
 **Claims and checks.** The Huemul claim (1951), ZETA's neutrons (1958) and cold fusion (1989) were announced before others could check them, and all failed when others checked them. Only ZETA's team withdrew its claim; Huemul was exposed by an inspection, and other laboratories could not repeat cold fusion. The T-3 result (1968) went the other way: it was doubted, then confirmed by an independent measurement in 1969. In every case, checking by others decided.
 
+```pysahdy
+Why was the T-3 result accepted in 1969 but cold fusion rejected in 1989?
+---
+Other scientists could check the results. The British team measured T-3 independently and confirmed it, but other laboratories could not repeat cold fusion.
+```
+
 **Slow steps.** The first tokamak, T-1, started in 1958. Almost forty years later, in 1997, JET produced $16\ \text{MW}$ of fusion power, still with less fusion power out than heating power in. Each step needed a bigger and more expensive machine, so progress came in decades, not years. From Eddington's idea in 1920 to ITER's planned deuterium–tritium operation in 2039 (the plan as of November 2026) is about 120 years.
 
 ## Common misconception
