@@ -1,15 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: b12729dd62abae8c
+VERDICT: PASS
+CONTENT-HASH: 02af06d85c6fff13
 
 ## Blocking
-- solutions.md fy8-6-L2-06, Formula — $h_0 = 6.626\,\text{J}\,\text{s}$ lacks the factor $10^{-34}$ (wrong value of a constant in the shown formula; Given has it right) — write $h_0 = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$.
 
 ## Polish
-- fy8-6-L3-02 — Kaava gives $\Delta h = (h_\text{max}-h_\text{min})/2$ without saying it is a half-range uncertainty; add that clause.
-- fy8-6-L3-04, L3-05, L2-05 — Kaava is a prose paragraph; split into the aligned step list as in L2-01.
-- fy8-6-L1-01, L1-08, L2-09, L2-10 — one-line; fine.
+
+- solutions.md (energy-gap task, Kaava) — the last row jumps from `E_g = hc/λ` to `λ = hc/E_g` with no remark that it is being solved for λ. Fix: add "solving for λ:" in the lead-in or put the rearrangement as its own row.
+- solutions.md (Kaava blocks of the LED tasks) — `\frac` and `\dfrac` are mixed between the aligned rows and the text; use `\dfrac` throughout for a consistent look.
+- solutions.md (slope task, Kaava) — the line `k = ΔU_k/Δf ≈ h/e` appears without saying that k is the slope read from the fit; one clause fixes it.
 
 ## Checked
-- Delta judged: Kaava steps only; the basic laws come first, then the derived formula, simplified symbolically before substitution; numbers, answers and tolerances untouched.
-- Each Kaava block is a single column of aligned steps (readable at 360 px; one relation per line), so the student sees where the formula comes from.
-- L1-04, L1-07, L2-01, L2-02, L2-03, L3-03 are exemplary: each introduces its starting laws in a sentence, then aligned steps.
+
+- The diff changes Kaava steps only; each now opens with the basic laws (E = hf, c = fλ, eU_k = E, I = Ne, P = NE) and derives the formula by rows. Numbers, answers and tolerances are unchanged.
+- The packet's diff shows the aligned blocks flattened (e.g. "hf = hc/λ λ = …"); the file itself is correct, with one relation per row and the equals signs aligned.
+- The earlier blocking item (L2-06: h_0 without 10^-34) is fixed; h_0 = 6.626·10^-34 J s is now right in the formula.
+- L1-05, L3-04 and L2-06 Kaava are now stepwise. The earlier L3-04, L3-05 and L2-05 prose-paragraph polish items are done.
+- The symbolic chain is simplified to the end before Substitution in every changed solution; each first row starts with the quantity it computes.
+- The power and photon-ratio tasks keep a clear order (N, E, P), so a student can follow them without skipping a step.
