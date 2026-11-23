@@ -195,9 +195,9 @@ When the zero point is the positive terminal, the potential of the wire between 
 **Principle:** At the junction $P$ the current law gives $I_1 + I_3 = I_2$. The left loop (source $U_1$, resistors $R_1$ and $R_2$) and the right loop (source $U_2$, resistors $R_3$ and $R_2$) are traversed in the direction of the current, and by the voltage law the sum of the changes of potential is zero in each.
 
 Three equations are enough for three unknown currents. In the energy balance the power produced by the sources turns completely into internal energy of the resistors, because no energy is lost in ideal sources and wires.
-**Formula:** $$\begin{aligned} I_1 + I_3 &= I_2 \\ U_1 - R_1 I_1 - R_2 I_2 &= 0 \\ U_2 - R_3 I_3 - R_2 I_2 &= 0 \\ I_1 &= \dfrac{U_1 - R_2 I_2}{R_1} \\ I_3 &= \dfrac{U_2 - R_2 I_2}{R_3} \\ I_2 &= \dfrac{U_1 R_3 + U_2 R_1}{R_1 R_3 + R_2 R_3 + R_1 R_2} \\ P_\text{source} &= UI \\ P_\text{resistor} &= RI^2 \end{aligned}$$
+**Formula:** $$\begin{aligned} I_1 + I_3 &= I_2 \\ R_1 I_1 + R_2 I_2 &= U_1 \\ R_3 I_3 + R_2 I_2 &= U_2 \\ I_1 &= \dfrac{U_1 - R_2 I_2}{R_1} \\ I_3 &= \dfrac{U_2 - R_2 I_2}{R_3} \\ I_2 &= \dfrac{U_1 R_3 + U_2 R_1}{D} \\ D &= R_1 R_3 + R_2 R_3 + R_1 R_2 \\ P_\text{source} &= UI \\ P_\text{resistor} &= RI^2 \end{aligned}$$
 **Conversions:** Not needed: all quantities are in base units.
-**Substitution:** The numerator is $12\,\text{V} \cdot 30\,\Omega + 9.0\,\text{V} \cdot 30\,\Omega = 630\,\text{V}\,\Omega$ and the denominator $30\,\Omega \cdot 30\,\Omega + 20\,\Omega \cdot 30\,\Omega + 30\,\Omega \cdot 20\,\Omega = 2100\,\Omega^2$, so $I_2 = \dfrac{630\,\text{V}\,\Omega}{2100\,\Omega^2} = 0.30\,\text{A}$.
+**Substitution:** The numerator is $12\,\text{V} \cdot 30\,\Omega + 9.0\,\text{V} \cdot 30\,\Omega = 630\,\text{V}\,\Omega$ The denominator is $$\begin{aligned} D &= 30\,\Omega \cdot 30\,\Omega + 20\,\Omega \cdot 30\,\Omega \\ &\quad + 30\,\Omega \cdot 20\,\Omega = 2100\,\Omega^2 \end{aligned}$$ So $I_2 = \dfrac{630\,\text{V}\,\Omega}{2100\,\Omega^2} = 0.30\,\text{A}$.
 
 Then $I_1 = \dfrac{12\,\text{V} - 6.0\,\text{V}}{30\,\Omega} = 0.20\,\text{A}$ and $I_3 = \dfrac{9.0\,\text{V} - 6.0\,\text{V}}{30\,\Omega} = 0.10\,\text{A}$.
 
