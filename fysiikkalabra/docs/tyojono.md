@@ -87,6 +87,7 @@ FY3 (fy3-9 micro-boyle, fy3-3 micro-model; PR #757) hyväksytty (opettaja 2026-1
 
 ## 8g. Mallivastaukset perusperiaatteesta (opettaja 2026-11-13)
 Tehty: FY4 (#727, 2026-11-18; 5d FY4: FY4.tsv:n rivit jäivät, CI-selain näkee 4–6 px:n leikkaukset). FY7 tehty (PR #726, loki §8g FY7). Jäljellä FY5, FY6, FY1–FY3, FY8.
+Varattu: claude/8g-fy1 (8g FY1)
 Tehtävien, Sovellan ja kokeiden mallivastausten Kaava-vaihe alkaa perusyhtälöistä ($\eta = E_\text{hyöty}/E$, $E = Pt$, $Q = rm$, energiatase),
 sitten johdettu kaava, symbolinen sievennys loppuun, vasta sitten sijoitus. Kurssi kerrallaan `/exercises`- ja `/practice`-putkella; yhdistetään saman kurssin
 kesken olevaan tehtäväkatselmointiin (FY5, FY6, FY7), ei rinnakkain.
