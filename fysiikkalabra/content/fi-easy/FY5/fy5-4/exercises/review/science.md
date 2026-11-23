@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f1b67e3925bfc7d6
-Mode: delta (Kaava steps rewritten as aligned derivations from Newton II and a_n = v²/r; paragraph splits)
-Round 1
+CONTENT-HASH: 1d513d89dd494e99
+SCOPE: delta answers,numbers from f1b67e3925bfc7d6 base 48ff417
 
 ## Blocking
-(none)
 
 ## Polish
-- solutions.md:143 (L3-02) — the derivation goes from $a_\text{n} = v^2/r$ straight to $v = \sqrt{Tr/m}$, so the combined row $T = m\,v^2/r$ is left out — add that row before the root.
-- solutions.md:285 (L3-04) — the old text gave the axis for each row ("alhaalla $y$ ylös", "ylhäällä $y$ alas kohti keskipistettä"), and the new $\Sigma F_1$, $\Sigma F_2$ rows do not. The force-diagram text implies the directions, so this is not an error, but a short note such as "(positiivinen kohti keskipistettä)" would make the sign of $N_2 + mg$ explicit.
+- content/fi-easy/FY5/fy5-4/exercises/solutions.md:166 (L3-03, reasonableness check) — "about 450 m" for 120 km/h is the exact 2,25 · 201,4 m = 453 m. It is also a smallest allowed radius, and by the same rule it would round up to 460 m (or 2,25 · 210 m ≈ 470 m). It is not wrong as an estimate. — Optionally write "about 460 m".
 
 ## Checked
-- Every rewritten Kaava block starts from the basic equation ($\Sigma F = m a_\text{n}$ in the stated direction, or $\Sigma F_y = 0$ for the vertical balance), uses $a_\text{n} = v^2/r$, and is simplified symbolically to the form the unchanged Sijoitus substitutes into.
-- The signs are right in every task. Hill crest: $\Sigma F_y = -m a_\text{n}$ with $y$ up. Dip: $+m a_\text{n}$. Loop top: $N_2 + mg = m a_2$ toward the centre, so $N_2 = 0$ gives $a_2 = g$ and $v_\text{min} = \sqrt{gr}$.
-- In the friction tasks, $F_\mu = \mu_0 N$ is used only at the limit (maximum speed, minimum radius, measured skid limits), as the guardrails require. $F_\mu \le 0{,}25\,mg$ gives $r \ge v^2/(0{,}25\,g)$ in the right direction.
-- Banked curve (L3-05): $\Sigma F_y = N\cos\alpha - mg = 0$ and $\Sigma F_x = N\sin\alpha = m v_0^2/r$ give $\tan\alpha = v_0^2/(gr)$. With friction, the component equations are unchanged in content.
-- Plug data (L2-02): $F = (m/r)\,v^2$, so slope $= m/r$ and $m = kr$. This is correct and matches the graph reading.
-- Recomputed all affected answers in one script: 6.667 N, 7.906 m/s, 1104.8 N, 6012 N, 2064 N, 27.62 km/h, 1.407 Hz, 201.4 m, 24.98 g, μ₀ = 0.551, 3672 N, 75 m, r = 13.91/13.90 m, N = 257.4 N / 3780.6 N, v_min = 11.7 m/s, μ₀ = 0.680. All agree with the solutions.
-- Sijoitus, answers and tolerances are unchanged. The paragraph splits (L1-05 b, L1-06, L2-02, L2-08, L3-04) change no physics.
+- The hash was the same at the start and the end. I judged only the diff (L3-01, L3-03: answer, tolerance, the Answer line, answers.py). My previous Polish item (limits rounded to the unsafe side) is fixed.
+- I recomputed in one script with my own formulas: L3-01 v = sqrt(mu0 g r) = 7,672 m/s = 27,62 km/h; L3-03 r = v²/(0,25 g) = 201,36 m. answers.py now gives 27 (floor) and 210 (ceil to two figures). These match exercises.json in this language.
+- Direction of rounding: L3-01 asks for the greatest speed ("at most"), so it rounds down to 27 km/h; L3-03 asks how large the radius must be at least ("at least"), so it rounds up to 210 m = 2,1·10² m. Both follow CLAUDE.md P7 (limit values to the safe side). Two figures are right (60 m, 0,10; 80 km/h, 0,25).
+- Tolerances, checked with the page's rule max(2 %, tol, half a unit): L3-01 (tol 0,03) accepts 27 and the exact 27,6, and 28 is only "near"; L3-03 (tol 0,045) accepts 210, 201 and 201,4, and 200 is only "near". So the exact value is accepted and the unsafe rounding is not.
+- The new Answer lines state the exact value, the significant figures and the reason for the rounding direction correctly. The Sijoitus rows above them are unchanged (27,62 km/h; 201,4 m).
+- The L3-01 check (sqrt 8 · 27,62 ≈ 78 km/h on dry asphalt) is still consistent.

@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 05a351bf9e86775d
-SCOPE: delta: L3-01 and L3-03 answers, tolerances, solutions' Answer lines and answers.py (limit values rounded to the safe side)
+SCOPE: delta answers,numbers from 0531a6d54a3e8f40 base 48ff417
 
 ## Blocking
 (none)
