@@ -1,25 +1,24 @@
 VERDICT: PASS
-CONTENT-HASH: d63f5c2e6544c73f
+CONTENT-HASH: 9aede579190b60ce
 
 ## Blocking
 None.
 
 ## Polish
-- fy7-k4 b Kaava: the step now runs through a derivative, $e = -N\,\text{d}\Phi/\text{d}t$, $\Phi = BA\cos(2\pi f t)$. Physics and sign are right, but the course sheet gives $e_0 = NBA \cdot 2\pi f$ directly, and a student without the long maths syllabus cannot follow a derivative. Consider the sheet's form with the derivative as an aside. Not an error (C).
-- fy7-k3 d Mallivastaus: the hypothetical case says "vastus [saisi] lämpöä". Following P1, "vastuksen sisäenergia kasvaisi" would match the next paragraph. Inside a counterfactual; not blocking.
+- fy7-k4 b: the derivative row is gone, as asked. That leaves Periaate's sentence "jännitteen huippuarvo on vuon muutosnopeuden huippu" without the factor $N$: the peak voltage is $N$ times the peak rate of change of the flux. Suggested wording: "huippuarvo on $N$ kertaa vuon muutosnopeuden huippu". The Kaava line $e_0 = NBA \cdot 2\pi f$ itself is right (C/B borderline, not blocking).
+- k3 c, k4 c, k6 a, k6 c: every Kaava now ends in a fully simplified form ($P = elBv/R$, $I_1 = P/U_1$, $P_\text{h} = RP^2/U^2$, $t_\text{takaisin} = K/((P_\text{h,A}-P_\text{h,B})tp)$). Sijoitus still substitutes step by step through the earlier forms ($I$, then $F$, then $P$, and so on). The numbers are the same either way. Whether to substitute into the last form is a pedagogy call.
+- k6 c: $t$ is the yearly operating time (4000 h) inside the formula for $t_\text{takaisin}$. That is correct, but two quantities share the letter. $t_\text{v}$ or $t_\text{käyttö}$ would be clearer.
+- fy7-k3 d (carried over): the counterfactual's "vastus [saisi] lämpöä" could follow P1 ("vastuksen sisäenergia kasvaisi").
 
 ## Checked
-- Full review of tasks.json, solutions.md and answers.py. Focus: the rewritten Kaava steps (8g). Each starts from the basic law. Each is solved symbolically before substitution, and each derivation is algebraically correct: $r^2 = m_\text{e}^2v^2/(e^2B^2) = 2m_\text{e}U/(eB^2)$, and $\Delta\Phi = Blv\Delta t$.
-- Kaava steps ending in several unknowns (k3 c, k4 c, k6 a–c): every unknown is expressed only in givens or in unknowns solved earlier. In k6 c, the note defining p, K and S is consistent with Sijoitus and with the rubric.
-- I recomputed everything in my own script. Every number agrees with answers.py and with the solutions:
-  - k1 d: 0,08 / 0,12 / 0,40 mV; k1 i: 73,7°.
-  - k2: r² and error bars; least-squares fit 1,739·10¹¹; slope read from the graph 1,72·10¹¹; extreme lines verified inside all five bars; 1,68 and 1,85·10¹¹, so ±0,084·10¹¹.
-  - k3: 0,30 V, 0,50 A, 0,060 N, 0,15 W, I²R = 0,15 W.
-  - k4: 40 Hz, 12,37 V, B = 0,0516 T, N₂ = 2788/2789, I₁ = 3,72 A.
-  - k5: d = 3,327, 3,347, 3,321 µm; Δd = 27, 12, 6 nm; k_max = 6 (6,26); 73,4°.
-  - k6: 600 A, 1,728 MW (14,4 %); 109,1 A, 57,1 kW (0,48 %); N₁ = 500; 6912 and 228,5 MWh; 334 175 €; 8,98 a; with transformer losses 9,67 a.
-  - k7: b = 2,758·10⁻³ (origin fit), 2,75·10⁻³ read; 4,8 %; random 2,6 %; all λT below literature; 9,47 µm; 5269 K.
-- k3 b direction: v to the right × B into the page gives the force up, which agrees with Lenz's law (current counterclockwise).
-- Osa 1: exactly one correct option per item, and the distractor explanations are right.
-- Scope: within FY7; no self-induction; polarisation qualitative.
-- Hash d63f5c2e6544c73f at start and end.
+- Full review of tasks.json, solutions.md and answers.py. Focus: the five changed Kaava steps.
+  - Each new symbolic form is algebraically correct and follows from the rows above it: $F = IlB = elB/R$; $P = Fv = elBv/R$; $I_1 = I_2U_2/U_1 = P/U_1$ (ideal transformer: power is conserved); $P_\text{h} = R(P/U)^2$; and $S = (P_\text{h,A}-P_\text{h,B})tp$, from which the payback time follows.
+  - k4 b without the derivative still matches the course sheet's form $e_0 = NBA\cdot 2\pi f$.
+- I recomputed everything in my own script from the task data, using the new symbolic forms. All values agree with answers.py, tasks.json and solutions.md:
+  - k3: 0,30 V, 0,50 A, 0,060 N, 0,15 W; $I^2R$ = 0,15 W.
+  - k4: 40 Hz, 12,37 V; $B$ = 0,0516 T (denominator 339,3 m²/s); $N_2$ = 2788 (2789 with 12,37 V); $I_1 = P/U_1$ = 3,72 A, the same as $I_2U_2/U_1$.
+  - k6: 600 A and 1,728 MW (14,4 %); 109,1 A and 57,1 kW (0,476 %); $N_1$ = 500; savings 334 175 €/a; payback 8,98 a.
+  - Unchanged parts recomputed as spot checks: k1 i 73,7°; k2 read slope 1,72·10¹¹ C/kg; k5 3,327/3,347/3,321 µm and $k_\text{max}$ = 6 (6,26); k7 $b$ = 2,758·10⁻³ m·K, 4,8 %, 9,47 µm, 5269 K, all $\lambda T$ below the literature value.
+- Ids, answers and tolerances are unchanged. practice.py check: OK.
+- Osa 1 is unchanged: exactly one correct option per item. Scope stays within FY7.
+- Hash 9aede579190b60ce at start and end.
