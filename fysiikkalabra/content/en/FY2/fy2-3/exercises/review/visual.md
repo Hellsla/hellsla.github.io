@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: bb73879b2ce8497d
+CONTENT-HASH: 5cc65374e69c3347
+SCOPE: delta numbers from bb73879b2ce8497d base 3076572
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] solutions.md, Järkevyys/Reasonableness of 3-20: the re-broken chain sits in a boxed row inside the sentence, and the sentence's comma lands inside the box ("= 75 kWh,"); acceptable, but a comma after the box would read slightly cleaner.
+- [Minor] exercises 3-20 and 3-23 (untouched text): in 3-20 "(60 W)" and "(8.0 W)" are plain text, not inline maths; the expand button also sits over the end of the first line of the task text in L3 captures (shared component).
 
 ## Checked
-- Delta (reflow of solutions.md, en): opened fy2-3-open-exercises-L2-1280-5 (Mallivastaus rows P1, P2, P2:P1: aligned at =, in boxes, text between intact), L3-1280-1 and -2 (3-20 Järkevyys row, 3-21 chain), and the 3-20 conversions and substitution blocks (aligned, nothing clipped). Fi page was checked in all of these; the en and fi-easy pages were cut as the Finnish one.
-- Not opened: the 1-01 Järkevyys row (same form as 3-20).
+- Delta: solutions.md Formula lines (3-3 sauna, lights, lamp saving, EV charging, appliances, grid balance, duty cycle, graph ratio) read in source.
+- Captures opened: open-exercises-L2-1280-1 (3-12 layout), L3-1280-1 (3-20 Formula: principle, aligned chain, then "and saving = ..."; Conversions, Substitution), L3-1280-4 (3-21 Substitution, Answer, 3-23 table and task).
+- The new "so" chains read in order principle, symbolic equation, solved form; aligned rows, thin-space units, boxed answers intact, nothing clipped. Other changed lines not individually viewed.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
