@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: eabed0026abee629
+CONTENT-HASH: 250518ce070eda9b
+SCOPE: delta md-paragraphs,numbers,typography from eabed0026abee629 base 5b3ca4f
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-- fy6-15-L2-09 c): the task does not say where the panel socket sits on the group, but the solution assumes it is between the fuse and the other loads (19,5 A). Add one sentence to the task or solution to say this as an assumption in the task.
-- The solution refers to what "aineisto nimeää" though the page could not be checked (known); the physics stands without it.
-- a) has three questions in one part; consider splitting the energy-direction comparison.
+- Earlier polish items stand unchanged (not touched by this diff).
+- Kaava-lohkon rivit ovat lyhyitä, mahtuvat 360 px:n näyttöön eikä mitään leikkaudu.
 
 ## Checked
-New task against section 6: critical-reading element (d separates turvallinen and sallittu, CE marking explained), b) 3,48 A verified, c) uses chapter physics (parallel loads, P = RI^2, 1,48x); terms (vaihtosuuntaaja, sähkökeskus, Tukes) explained; set mix unchanged.
+- Diff is the queue 8g change: the Kaava/Formula step now starts from basic-principle equations (P_k = UI_k, I = sum of I_k, Ohm's law per part, U = sum of parts, P = RI^2) and ends in the working formula; the order is principle, then derivation, then result, which a student who could not solve the task can follow.
+- Prose changes in solutions are reflow only (one sentence per paragraph); I compared the words removed and added and found no change in meaning, numbers or answers.
+- Series-resistance derivation (U_body + U_k) and the step-voltage lines are consistent with the chapter and with the previous chapter's Ohm's law; no step skipped.
+- Task texts, levels, counts and answers untouched; level mix as passed earlier.
+- Disk check: the aligned blocks render as separate lines in solutions.md (the packet diff shows them collapsed, a display artefact).
+- Hash unchanged at start and end.

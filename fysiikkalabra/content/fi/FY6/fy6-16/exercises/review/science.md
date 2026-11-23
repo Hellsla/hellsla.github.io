@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 9dcbe1d153d30989
+CONTENT-HASH: 12b82b09f5af8447
+SCOPE: delta md-paragraphs,numbers,reflow,typography from 9dcbe1d153d30989 base e238aa9
 
 ## Blocking
 
 ## Polish
+- solutions.md:25 — the per-phase power is named $P_1$ ($P = 3P_1$, $P_1 = UI$); elsewhere in the set and in the brief $P_1$ is the first period's or device's power. Not wrong inside this task; $P_\text{v}$ or "yhden vaiheen teho $UI$" would avoid the overlap.
 
 ## Checked
-- All 20 numeric answers recomputed with my own formulas in one script and compared with answers.py: every value agrees (L2-05 key 10,4 = 10,45 rounded down; L2-08 options 15,3 / 11,1 / 13,0 / 5,1 h).
-- L2-03 judged against the teacher's rule of 2026-11-15 (an answer check accepts a limit rounded either way; P7c applies only to the model solution): exact limit 25 A − 9000 W : (3 · 230 V) = 11,96 A; key 11,5 A with tolerance 0.05 accepts 10,93–12,08 A, so 11, 11,96 and 12 A pass, and 13 A (13 A + 13,04 A = 26,04 A > 25 A) fails. Correct.
-- L2-03 model solution: symbolic form I_a = I_p − P_k : (3U) first, 13,04 A and 11,96 A right, answer "11 A" rounded down with the right safety reason, check 13,0 A + 11 A = 24 A < 25 A and 7,6 kW. Unchanged and consistent with answers.py's comment.
-- Physics of P = UI and P = 3UI under the stated power factor ≈ 1 and equal phase currents; t = W_akku : (ηP); K = aW_verkko; P_johto = ρ·2l : A · I² with out-and-back copper (L2-04 0,408 Ω, 6,53 V; L3-05 23,6 W and 104 W).
-- L2-07 trapezoid sum 22,85 kWh and mean 7,62 kW; L3-04 distance 14 640 km, 390,4 € vs 1760,5 €, difference 1370,1 €, public charging 1171,2 € (saving 589 €, about 780 € less).
-- Limit roundings: L3-03 up (at least 7,16 A), L3-05 and L2-05 down (at most), each with its reason (P7c).
-- Exactly one correct option in L1-06 and L2-08, and the answer field equals that option; every distractor's feedback names the actual mistake.
-- Figures lataus-ex and talo-ex give the values L2-01 (27,5 kWh) and L2-09 (17 kWh, 2,72 €) need without giving the answer.
-- Scope inside FY6 (power, Joule's law, batteries and charging, fuses); notation matches the brief.
-- Hash the same at the start and the end.
+- The packet's diff dropped the `\\ &` separators; I read the Kaava lines on disk (solutions.md:5–261): every one is a proper aligned block.
+- Charging-time chains (lines 66, 116, 174) start from $\eta = W_\text{akku} : W_\text{verkko}$ and $W_\text{verkko} = Pt$ (and $P = UI$ or $3UI$), as the brief's Kaava does; recomputed 10,87 h, 7,157 A, 5,288 h.
+- Three-phase and main-fuse chains (25, 76, 160, 246): $P = 3UI$ from equal phase currents, currents in one phase conductor summed; equality at the limit is right for the largest allowed current. Recomputed 15,94 A, 11,96 A, 10,45 kW, 7,609 A.
+- Cable chains (86, 106, 246): $R = \rho\,2l : A$, $U_\text{h} = RI$, $P = RI^2$; 0,408 Ω, 6,53 V, 156 %, 23,6 W and 104,4 W recomputed.
+- Energy and cost chains (5, 56, 96, 189, 232, 261): 41,6 kWh, 27,5 kWh, 59,7 € (59,65 unrounded), the trapezoid rewrite $\Delta t\,[(P_\text{alku} + P_\text{loppu}) : 2 + \sum P_\text{väli}]$ algebraically equal to $\sum W_i$, 22,85 kWh and 7,617 kW, 390,4 € and 1760,5 €, 17 kWh and 2,72 €.
+- $\Delta K = K_1 - K_2$ has the right sign ($\eta_1 = 0{,}82$ is the costlier case).
+- Every new chain is solved symbolically before substitution; substitutions, answers and roundings are unchanged.
+- L1-06 model answer split into paragraphs: the wording and claims are unchanged.
+- Notation ($W_\text{akku}$, $W_\text{verkko}$, $\eta$, $a$, $\rho$, $I_\text{p}$) is the same as in the brief.
+- Hash read at start and end: unchanged.
