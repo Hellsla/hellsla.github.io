@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 510344e7120d02fd
-SCOPE: delta md-paragraphs,typography,wording from 6a32e9655e538bee base 5b3ca4f
+SCOPE: delta md-paragraphs,typography,wording from ff4878db594db81d base 5b3ca4f
 
 ## Blocking
 - none
