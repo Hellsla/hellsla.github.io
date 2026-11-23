@@ -119,6 +119,7 @@ toleransseihin, tallennusavaimiin ja palautustiedostoon ei kosketa. Täysi mää
 ## 11b. FY9: adaptiivinen YO-valmentaja (opettaja 2026-11-14)
 Suunnitelma `docs/FY9_ADAPTIVE_PLAN.md` (#566), hyväksytty P1–P12. PR 1 (YTL/Abitti-tietojen tarkistus, sisältö) voi alkaa heti; PR 2–8 jaettuja, yksin, kohdan 10 PR 5:n ja U1:n jälkeen;
 PR 9 Abitti 2 -ohje; PR 10 kielimallin selvitys. Ei palvelinta, ei tekoälyrajapintaa; jokainen uusi käyttöliittymäteksti hyväksytään PR kerrallaan. Arvio 2,5–3,5 M tokenia.
+Varattu: claude/11b-pr2-tehtavaindeksi (PR 2 tehtäväindeksi)
 
 ## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
 17a PR 1 (#720) ja PR 2 (#741, manifesti ja pysyvä tallennus) tehty; webkit.org sallittu ympäristöön 2026-11-19, opettajan luvalla.
