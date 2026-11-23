@@ -893,7 +893,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$$\n\\begin{aligned}\nv_\\text{r} &= 44.5\\,\\text{m/s} \\cdot \\sqrt{\\dfrac{736\\,\\text{N}}{623\\,\\text{N}}} \\\\\n&\\approx 48\\,\\text{m/s}\n\\end{aligned}\n$$"
+              "detail": "$$\n\\begin{aligned}\nv_\\text{t} &= 44.5\\,\\text{m/s} \\cdot \\sqrt{\\dfrac{736\\,\\text{N}}{623\\,\\text{N}}} \\\\\n&\\approx 48\\,\\text{m/s}\n\\end{aligned}\n$$"
             },
             {
               "key": "reasonableness",
@@ -921,7 +921,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$$\n\\begin{aligned}\nk &= \\dfrac{623\\,\\text{N}}{(44.5\\,\\text{m/s})^2} \\\\\n&\\approx 0.31\\,\\text{kg/m}\n\\end{aligned}\n$$ and $$\n\\begin{aligned}\nv_\\text{r}' &= \\sqrt{\\dfrac{100\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2}{0.315\\,\\text{kg/m}}} \\\\\n&\\approx 56\\,\\text{m/s}\n\\end{aligned}\n$$"
+              "detail": "$$\n\\begin{aligned}\nk &= \\dfrac{623\\,\\text{N}}{(44.5\\,\\text{m/s})^2} \\\\\n&\\approx 0.31\\,\\text{kg/m}\n\\end{aligned}\n$$ and $$\n\\begin{aligned}\nv_\\text{t}' &= \\sqrt{\\dfrac{100\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2}{0.315\\,\\text{kg/m}}} \\\\\n&\\approx 56\\,\\text{m/s}\n\\end{aligned}\n$$"
             },
             {
               "key": "conclusion",

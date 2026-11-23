@@ -1,18 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: cd634be9954c2f85
+CONTENT-HASH: 1a2221b9b237abfe
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-moderni (fi): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-- none
-
-## Polish
-- [Minor] unit.md l. 168–172 (Pysähdy ja mieti, puoliintumisaika) — the answer ends with a lone "eli neljäsosa." under the aligned rows; fine, but the closing words could go into the last row's sentence if the chain is ever re-cut.
-- [Minor] stop-think boxes — the green block touches the left edge with a rule and has no card border, unlike the neighbouring formula cards; consistent within itself, so only a taste note.
-
-## Checked
-- intro-390, intro-1280 (opening, hero, Tällä tunnilla opit, Pohjatiedot).
-- stage-selita-390-1…4 (all three stop-think boxes open: label, question, Vastaus, maths; the $N=N_0(\tfrac12)^2$ chain wraps into rows, nothing clipped), kartta and fotonit figures, puolitus graph.
-- stage-selita-1280-1 (box 1 at laptop width: one column, label, question, answer aligned, readable).
-- Not separately opened: every other capture of the contact sheets (no change in this scope).
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.

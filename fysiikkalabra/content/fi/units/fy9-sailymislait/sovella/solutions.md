@@ -568,8 +568,8 @@ v &= \sqrt{\dfrac{2 \cdot 37{,}5\,\text{J}}{3{,}0\,\text{kg}}} \\
 &= 5{,}0\,\text{m/s}
 \end{aligned}
 $$
-**Vastaus:** Nopeus ei muutu, vaan on edelleen $5{,}0\,\text{m/s}$. Painavampi kelkka menettää kitkaan enemmän energiaa ($22{,}5\,\text{J} > 15\,\text{J}$), mutta sillä on alussa myös enemmän energiaa ($60\,\text{J} > 40\,\text{J}$), ja molemmat kasvavat samassa suhteessa.
-**Järkevyys:** Samoin kuin vapaassa pudotuksessa raskas ja kevyt kappale saavuttavat saman nopeuden, kun vastus on pieni. Tässä kitka noudattaa samaa sääntöä, koska sekin kasvaa massan mukana. Todellisuudessa ilmanvastus ei kasva massan mukana, joten raskaampi kelkka olisi hieman nopeampi.
+**Vastaus:** Nopeus ei muutu, vaan on edelleen $5{,}0\,\text{m/s}$. Painavampaan kelkkaan kohdistuva kitka tekee suuremman työn ($22{,}5\,\text{J} > 15\,\text{J}$), eli enemmän mekaanista energiaa muuttuu sisäenergiaksi, mutta sillä on alussa myös enemmän energiaa ($60\,\text{J} > 40\,\text{J}$), ja molemmat kasvavat samassa suhteessa.
+**Järkevyys:** Samoin kuin vapaassa pudotuksessa raskas ja kevyt kappale saavuttavat saman nopeuden, kun vastus on pieni. Tässä kitka noudattaa samaa sääntöä, koska sekin kasvaa massan mukana. Todellisuudessa ilmanvastuksen voima ei kasva massan mukana, joten se veisi raskaammalta kelkalta pienemmän osan energiasta ja raskaampi kelkka olisi hieman nopeampi. Tehtävässä ilmanvastus oletetaan merkityksettömäksi.
 
 ### Yleisiä virheitä
 - a-kohdassa korkeudeksi lasketaan rinteen pituus $6{,}0\,\text{m}$ tai potentiaalienergia jaetaan pelkällä massalla.
@@ -618,7 +618,7 @@ v &= \dfrac{5{,}4\,\text{kg m/s}}{0{,}43\,\text{kg}} \\
 \end{aligned}
 $$
 **Vastaus:** $v \approx 13\,\text{m/s}$ ylöspäin, kaksi merkitsevää numeroa kuten massa ja impulssi.
-**Järkevyys:** $13\,\text{m/s}$ on noin $47\,\text{km/h}$. Se on tavallinen nopeus pehmeälle potkulle; kovat laukaukset ovat yli $25\,\text{m/s}$.
+**Järkevyys:** $12{,}56\,\text{m/s}$ on noin $45\,\text{km/h}$. Se on tavallinen nopeus pehmeälle potkulle; kovat laukaukset ovat yli $25\,\text{m/s}$.
 
 ### c)
 **Annettu:** $m = 0{,}43\,\text{kg}$, $v = 12{,}56\,\text{m/s}$ potkun jälkeen, nollataso potkun korkeudella

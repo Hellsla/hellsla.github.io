@@ -1018,12 +1018,12 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$t = \\dfrac{16\\,\\text{m}}{3{,}0\\,\\text{m/s}} \\approx 5{,}3\\,\\text{s}$ ja $$\n\\begin{aligned}\nx &= 4\\,\\text{m} + 2{,}0\\,\\text{m/s} \\cdot 5{,}33\\,\\text{s} \\\\\n&\\approx 14{,}7\\,\\text{m}\n\\end{aligned}\n$$"
+              "detail": "$t = \\dfrac{16\\,\\text{m}}{3{,}0\\,\\text{m/s}} \\approx 5{,}3\\,\\text{s}$ ja $$\n\\begin{aligned}\nx &= 4\\,\\text{m} + 2{,}0\\,\\text{m/s} \\cdot 5{,}33\\,\\text{s} \\\\\n&\\approx 15\\,\\text{m}\n\\end{aligned}\n$$"
             },
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Kohtaaminen tapahtuisi myöhemmin ($5{,}3\\,\\text{s} > 4{,}0\\,\\text{s}$). Paikka olisi lähempänä B:n alkupaikkaa ($14{,}7\\,\\text{m} > 12\\,\\text{m}$). Välimatka pienenee hitaammin, joten A ehtii kulkea pidemmälle."
+              "detail": "Kohtaaminen tapahtuisi myöhemmin ($5{,}3\\,\\text{s} > 4{,}0\\,\\text{s}$). Paikka olisi lähempänä B:n alkupaikkaa ($15\\,\\text{m} > 12\\,\\text{m}$). Välimatka pienenee hitaammin, joten A ehtii kulkea pidemmälle."
             }
           ]
         }

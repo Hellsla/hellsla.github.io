@@ -363,8 +363,8 @@
           "feedback": "You multiplied the wrong way round. When the volume decreases, the pressure increases: $p_2 = p_1 \\cdot \\tfrac{V_1}{V_2}$, and $\\tfrac{V_1}{V_2} = 2.5$."
         },
         {
-          "value": 100.0,
-          "feedback": "The total pressure is substituted into Boyle's law, not the gauge pressure. At the start the total pressure is $101\\,\\text{kPa}$, even though the gauge then shows zero."
+          "value": 353.5,
+          "feedback": "You added the air pressure to the total pressure. The gauge reading is the difference between the total pressure and the air pressure: $\\Delta p = p_2 - p_0$, not the sum."
         }
       ],
       "solution": "**Given:** initial volume $V_1 = 0.30\\,\\textsf{l}$, initial pressure $p_1 = 101\\,\\text{kPa}$ (air pressure), final volume $V_2 = 0.12\\,\\textsf{l}$; constant temperature\n\n**Find:** the gauge reading, that is, the gauge pressure $\\Delta p$ in kilopascals\n\n**Principle:** The nozzle is blocked, so the amount of air stays the same, and the slow compression keeps the temperature constant. Then Boyle's law applies, and the total pressure is substituted into it. The gauge shows the difference between the total pressure and the air pressure (chapter *Changes of state of a gas and Boyle's law*).\n\n**Formula:** $p_1V_1 = p_2V_2$, so $p_2 = \\dfrac{p_1V_1}{V_2}$ and $\\Delta p = p_2 - p_1 = \\dfrac{p_1V_1}{V_2} - p_1$\n\n**Conversions:** Not needed: the litres cancel, and the pressure comes out directly in kilopascals.\n\n**Substitution:** $p_2 = \\dfrac{101\\,\\text{kPa} \\cdot 0.30\\,\\textsf{l}}{0.12\\,\\textsf{l}} = 252.5\\,\\text{kPa}$ and $\\Delta p = 252.5\\,\\text{kPa} - 101\\,\\text{kPa} = 151.5\\,\\text{kPa}$\n\n**Answer:** The gauge shows about $150\\,\\text{kPa}$, two significant figures like the volumes $0.30\\,\\textsf{l}$ and $0.12\\,\\textsf{l}$.\n\n**Reasonableness:** The volume decreases by a factor of $2.5$, so the total pressure becomes $2.5$ times as large, about $250\\,\\text{kPa}$. The gauge pressure is smaller than this by the air pressure. The reading is of the usual order of magnitude for a bicycle tyre."

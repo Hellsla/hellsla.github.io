@@ -595,19 +595,19 @@ mg &= 1200\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
 $$, and the friction is about $\dfrac{3.6}{11.8} \approx 31\,\%$ of it. In ordinary driving in a bend the friction is clearly less than the weight, which is plausible.
 
 ### c)
-**Given:** coefficient of static friction $\mu_\text{s} = 0.50$, radius $r = 75\,\text{m}$ from part a; $g = 9.81\,\text{m/s}^2$
+**Given:** coefficient of static friction $\mu_0 = 0.50$, radius $r = 75\,\text{m}$ from part a; $g = 9.81\,\text{m/s}^2$
 **Find:** the greatest speed $v_\text{max}$ at which the car does not slip
 **Principle:** The free-body diagram is the same as in part b. In the vertical direction $N = mg$. Static friction is at most $$
 \begin{aligned}
-F_\text{max} &= \mu_\text{s} N \\
-&= \mu_\text{s} mg
+F_\text{max} &= \mu_0 N \\
+&= \mu_0 mg
 \end{aligned}
-$$ (chapter *Weight, friction and the inclined plane*). The greatest speed is found when the friction is as large as possible. Then the horizontal equation of motion $\Sigma F_x = ma_\text{n}$ is $\mu_\text{s} mg = \dfrac{mv_\text{max}^2}{r}$ (chapter *Centripetal acceleration and the equation of motion in a circle*).
-**Formula:** $v_\text{max} = \sqrt{\mu_\text{s} g r}$, because the mass cancels
+$$ (chapter *Weight, friction and the inclined plane*). The greatest speed is found when the friction is as large as possible. Then the horizontal equation of motion $\Sigma F_x = ma_\text{n}$ is $\mu_0 mg = \dfrac{mv_\text{max}^2}{r}$ (chapter *Centripetal acceleration and the equation of motion in a circle*).
+**Formula:** $v_\text{max} = \sqrt{\mu_0 g r}$, because the mass cancels
 **Conversions:** Finally $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** $$
 \begin{aligned}
-v_\text{max} &= \sqrt{\mu_\text{s} g r} \\
+v_\text{max} &= \sqrt{\mu_0 g r} \\
 &= \sqrt{0.50 \cdot 9.81\,\text{m/s}^2 \cdot 75\,\text{m}} \\
 &= \sqrt{367.9\,\text{m}^2/\text{s}^2} \\
 &= 19.18\,\text{m/s}
@@ -625,17 +625,17 @@ $$
 **Answer:** $v_\text{max} \approx 19\,\text{m/s}$ or about $69\,\text{km/h}$. Two significant figures like the radius and the coefficient of friction.
 **Reasonableness:** The greatest friction gives the centripetal acceleration $$
 \begin{aligned}
-a_\text{n} &= \mu_\text{s} g \\
+a_\text{n} &= \mu_0 g \\
 &\approx 4.9\,\text{m/s}^2
 \end{aligned}
-$$. The curve of the graph reaches this value at the speed $\sqrt{4.9 \cdot 75} \approx 19\,\text{m/s}$. At $15\,\text{m/s}$ the friction needed, $3.6\,\text{kN}$, is less than the greatest friction $\mu_\text{s} mg \approx 5.9\,\text{kN}$ (about $61\,\%$ of it), so the car does not slip.
+$$. The curve of the graph reaches this value at the speed $\sqrt{4.9 \cdot 75} \approx 19\,\text{m/s}$. At $15\,\text{m/s}$ the friction needed, $3.6\,\text{kN}$, is less than the greatest friction $\mu_0 mg \approx 5.9\,\text{kN}$ (about $61\,\%$ of it), so the car does not slip.
 
 ### d)
 **Find:** how the greatest speed and the graph change when $m = 1500\,\text{kg}$
-**Principle:** The equation of motion $\mu_\text{s} mg = \dfrac{mv_\text{max}^2}{r}$ is the same as in part c, and the mass $m$ appears on both sides of it (chapter *Centripetal acceleration and the equation of motion in a circle*, chapter *Weight, friction and the inclined plane*). The radius of the bend and the coefficient of friction do not depend on the mass.
+**Principle:** The equation of motion $\mu_0 mg = \dfrac{mv_\text{max}^2}{r}$ is the same as in part c, and the mass $m$ appears on both sides of it (chapter *Centripetal acceleration and the equation of motion in a circle*, chapter *Weight, friction and the inclined plane*). The radius of the bend and the coefficient of friction do not depend on the mass.
 **Model answer:** The mass cancels, so $$
 \begin{aligned}
-v_\text{max} &= \sqrt{\mu_\text{s} g r} \\
+v_\text{max} &= \sqrt{\mu_0 g r} \\
 &\approx 19\,\text{m/s}
 \end{aligned}
 $$ does not change. The graph does not change either, because $a_\text{n} = \dfrac{v^2}{r}$ does not depend on the mass. The forces do change. At $15\,\text{m/s}$ the friction needed is $$
@@ -646,7 +646,7 @@ F &= m a_\text{n} \\
 \end{aligned}
 $$and the greatest possible friction is $$
 \begin{aligned}
-\mu_\text{s} mg &= 0.50 \cdot 1500\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+\mu_0 mg &= 0.50 \cdot 1500\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
 &\approx 7400\,\text{N}
 \end{aligned}
 $$.
@@ -656,7 +656,7 @@ So the heavier car needs a larger friction force, but the tyres give proportiona
 ### Yleisiä virheitä
 - In part a the numbers are divided the wrong way ($r = a_\text{n} : v^2$), or the speed is not squared.
 - In part b a centrifugal force is drawn or the friction is drawn pointing out of the bend. The only horizontal force is static friction towards the centre.
-- In part c sliding friction is used or the coefficient of friction is multiplied by the speed. At the limit the greatest value of static friction $\mu_\text{s} mg$ is used, and the speed comes from the equation of motion.
+- In part c sliding friction is used or the coefficient of friction is multiplied by the speed. At the limit the greatest value of static friction $\mu_0 mg$ is used, and the speed comes from the equation of motion.
 - In part d it is assumed that a heavier car can go through the bend slower or faster. The mass cancels from the equation of motion, so the speed limit does not depend on it.
 
 ### Hyväksytään myös
@@ -669,7 +669,7 @@ F &= \dfrac{mv^2}{r} \\
 $$, the same result.
 - In part c the greatest speed can be read from the graph: the curve reaches the value $$
 \begin{aligned}
-a_\text{n} &= \mu_\text{s} g \\
+a_\text{n} &= \mu_0 g \\
 &\approx 4.9\,\text{m/s}^2
 \end{aligned}
 $$ at a speed of about $19\,\text{m/s}$.
@@ -804,7 +804,7 @@ H' &= T\cos 45^\circ \\
 &= 270.5\,\text{N} \cdot 0.7071 \\
 &= 191.3\,\text{N}
 \end{aligned}
-$$ Before it was $331\,\text{N}$, so the force of the hinge also decreases. Fixing the cable higher thus strains both the cable and the hinge less.
+$$ Before, the horizontal component was $331\,\text{N}$, so the force of the hinge also decreases. Fixing the cable higher thus strains both the cable and the hinge less.
 
 ### Yleisiä virheitä
 - In part a the weight of the rod is taken at the end of the rod or its moment is forgotten. The weight of a uniform rod acts at the middle, with the lever arm $\tfrac{L}{2}$.

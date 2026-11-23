@@ -395,7 +395,7 @@ Measurement 5 is left out, because a gross error is recorded in the report: a qu
 - In part c the pull is not made at a constant velocity, so the pull is not equal to the friction, or sliding friction is measured from the limiting angle, which gives static friction.
 
 ### Hyväksytään myös
-- In part a the tangent of each angle separately and their mean ($0.415$).
+- In part a the tangent of each angle separately and their mean ($0.414$).
 - The standard error of the mean as the uncertainty, when it is calculated and named correctly.
 
 ## fy9-voimat-s6

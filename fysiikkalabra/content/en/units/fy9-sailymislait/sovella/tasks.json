@@ -934,7 +934,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "The speed does not change: it is still $5.0\\,\\text{m/s}$, because the mass does not affect the speed when air resistance is negligible. A heavier sled loses more kinetic energy to friction, but it also has more energy to begin with."
+              "detail": "The speed does not change: it is still $5.0\\,\\text{m/s}$, because the mass does not affect the speed when air resistance is negligible. Friction does more work on the heavier sled, so more mechanical energy becomes internal energy, but the sled also has more energy to begin with."
             }
           ]
         }

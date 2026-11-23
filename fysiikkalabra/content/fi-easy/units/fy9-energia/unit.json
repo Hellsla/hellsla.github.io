@@ -30,7 +30,7 @@
     },
     {
       "term": "lämpöarvo",
-      "explain": "Kertoo, kuinka paljon energiaa vapautuu, kun kilogramma polttoainetta palaa. Energia on $E = Hm$."
+      "explain": "Kertoo, kuinka paljon energiaa vapautuu, kun kilogramma polttoainetta palaa. Energia on $Q = Hm$."
     }
   ]
 }

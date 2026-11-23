@@ -1,19 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: b2479eab4e3b1226
+CONTENT-HASH: fe735814878a79ef
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-energia (fi-easy): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-(none)
-
-## Polish
-- [Minor] stage selita 390/1280 — the three "Pysähdy ja mieti" boxes read well. In the all-open captures the "Vastaus" is shown open, so the closed first state is not visible there; the boxes are otherwise consistent with the "Johda itse" card (green rule, small-caps label, triangle summary).
-- [Minor] stage selita 1280 — "Tunnistuskaavio" figure is about 380 px wide and left-aligned with an empty area to its right. This is the existing figure layout, not a new problem.
-- [Minor] stage selita 390-5 — in the "Yleisiä virheitä" list the bold lead-ins sit close to the left edge. Subtle spacing only.
-
-## Checked
-- Captures opened: top and intro at 390 px (intro-390), stage-selita-390-1…5, stage-selita-1280-1 and 1280-3.
-- Boxes (aside.stop-think) 1–3: label, question and openable "Vastaus" render at 390 and 1280. Inline maths ($1\,\text{kWh} = 3{,}6\,\text{MJ}$, $0{,}90$, $0{,}45$) is not clipped and uses a decimal comma. Contrast is good, the reading column is kept, and nothing overflows.
-- Figures seen: hero (intro-390), kartta (390 and 1280), ketju energy-flow diagram (390 and 1280, drawn to scale, labels legible, colours consistent). The graph in the sovella solutions was not opened; I judged only the new boxes and the unit page.
-- Finnish: the box texts are plain selkosuomi with the glossary terms, one voice. Display formulas are aligned at "=" and units are upright with a thin space.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.

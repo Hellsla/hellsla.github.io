@@ -6,7 +6,7 @@
 - **23–33 min, Teoriatiivistelmä.** Käy tunnistuskaavio läpi: piirrä taululle rinteen voimakuvio ja kysy, mitkä nuolet ovat voimia ja mitkä komponentteja. Palaa Pohdintaan.
 - **33–55 min, Sovella.** Neljä monivalintaa pareittain (noin $8\,\text{min}$), sitten laskut *Nosturi laskee kuormaa* ja *Jyrkkä pulkkamäki* yksin. *Pulkan veto vinossa* ja *Ylös lyöty lentopallo* ovat tunnilla valinnaisia nopeille; muut tekevät ne kotona. Jokaisessa laskussa voimakuvio piirretään vihkoon ennen yhtälöä; tarkista kuviot kiertämällä luokassa.
 - **55–65 min, Tarkista osaamisesi ja exit ticket.** Yksin. Selitystehtävä arvioidaan kriteereillä itse.
-- **65–75 min, Tehtävät.** Yhden pitkän tehtävän alku koeolosuhteissa ilman mallivastausta: suositus *Veneen vinssaus* a–b (voimakuvio ja laskutehtävä) tai *Moottorikelkka ja kaksi rekeä* a–b (kytketyt kappaleet). Tehtävän loppu ja muut viisi tehtävää ovat kotitehtäviä, kaksi tai kolme kerrallaan ennen seuraavaa tuntia.
+- **65–75 min, Tehtävät.** Yhden pitkän tehtävän alku koeolosuhteissa ilman mallivastausta: suositus *Veneen vinssaus* a–b (voimakuvio ja laskutehtävä) tai *Moottorikelkka ja kaksi rekeä* a–b (kytketyt kappaleet). Tehtävän loppu ja muut seitsemän tehtävää ovat kotitehtäviä, kaksi tai kolme kerrallaan ennen seuraavaa tuntia.
 
 ## Lähtötasotestin käyttö
 Ennusta-kysymykset ovat diagnostinen testi, eivät arvosana. Jokainen kysymys vastaa yhtä lukua:
@@ -32,4 +32,4 @@ Kokeessa voimakuvion pisteet menetetään puuttuvasta, ylimääräisestä tai v�
 - **Hitaat** tekevät Sovella-laskut *Nosturi laskee kuormaa* ja *Jyrkkä pulkkamäki* vihjeiden kanssa ja jättävät *Ylös lyöty lentopallo* kotiin. Teoriatiivistelmän *Kertaa tarvittaessa* -linkit vievät suoraan alkuperäisiin lukuihin, joissa on voimakuvion piirtämisen vaiheet ja perustason harjoituksia.
 
 ## Arviointi
-Pitkät tehtävät arvioidaan itse pisteytyksen avulla. Laskutehtävät, sanallinen tehtävä, kokeellinen tehtävä ja moduuleja yhdistävä tehtävä ovat $15$ pisteen tehtäviä (kokeen osa II), kuvaajatehtävä *Vaunu ja voima-anturi* $20$ pisteen tehtävä (osa III). Jos opettaja arvioi niitä, voimakuvio ja liikeyhtälöt arvioidaan erikseen, jotta väärä kuvio ei vie muuten oikeaa laskua. Kaikki aineistot ovat keksittyjä esimerkkejä; Tutki-kuvaajan käyrät ovat simulaation mallin arvoja.
+Pitkät tehtävät arvioidaan itse pisteytyksen avulla. Laskutehtävät, sanallinen tehtävä, kokeellinen tehtävä ja moduuleja yhdistävä tehtävä ovat $15$ pisteen tehtäviä (kokeen osa II), kuvaajatehtävä *Vaunu ja voima-anturi* $20$ pisteen tehtävä (osa III). Tehtävät *Laskuvarjohyppääjä ennen varjon avaamista* ($17$ pistettä) ja *Hissi ja voima-anturilevy* ($19$ pistettä) ovat laajempia; yhteensä pisteitä on $131$. Jos opettaja arvioi niitä, voimakuvio ja liikeyhtälöt arvioidaan erikseen, jotta väärä kuvio ei vie muuten oikeaa laskua. Kaikki aineistot ovat keksittyjä esimerkkejä; Tutki-kuvaajan käyrät ovat simulaation mallin arvoja.

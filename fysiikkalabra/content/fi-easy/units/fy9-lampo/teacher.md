@@ -6,7 +6,7 @@
 - **25–35 min, Teoriatiivistelmä.** Käy läpi tunnistuskaavio ja lämpenemiskäyrä. Pyydä opiskelijoilta jokaisesta rivistä yksi arkinen esimerkki. Palaa lopuksi Pohdintaan.
 - **35–55 min, Sovella.** Ensin neljä monivalintaa pareittain (noin $6\,\text{min}$), sitten neljä laskua yksin. Nopeat opiskelijat jatkavat ilman vihjeitä. Hitaammat käyttävät vihjeitä yksi kerrallaan.
 - **55–65 min, Tarkista osaamisesi ja exit ticket.** Yksin. Opiskelija arvioi selitystehtävän itse kriteerien avulla.
-- **65–75 min, Tehtävät.** Kymmenessä minuutissa ehtii aloittaa yhden pitkän tehtävän koeolosuhteissa ilman mallivastausta. Suositus: *Jäähallin uusi jää* a (laskutehtävä) tai *Jarrut tunturitiellä* a–b (tehtävä yhdistää moduuleja). Tehtävän loppu ja muut viisi tehtävää ovat kotitehtäviä, kaksi tai kolme kerrallaan ennen seuraavaa tuntia. *Kiehuvan veden höyrystyminen* ($20$ pistettä) tehdään kotona millimetripaperilla tai taulukkolaskennalla.
+- **65–75 min, Tehtävät.** Kymmenessä minuutissa ehtii aloittaa yhden pitkän tehtävän koeolosuhteissa ilman mallivastausta. Suositus: *Jäähallin uusi jää* a (laskutehtävä) tai *Jarrut tunturitiellä* a–b (tehtävä yhdistää moduuleja). Tehtävän loppu ja muut seitsemän tehtävää ovat kotitehtäviä, kaksi tai kolme kerrallaan ennen seuraavaa tuntia. *Kiehuvan veden höyrystyminen* ($20$ pistettä) tehdään kotona millimetripaperilla tai taulukkolaskennalla.
 
 ## Lähtötasotestin käyttö
 Ennusta-kysymykset ovat diagnostinen testi. Testi näyttää, mitä opiskelija osaa, eikä siitä anneta arvosanaa. Jokainen kysymys vastaa yhtä lukua:
