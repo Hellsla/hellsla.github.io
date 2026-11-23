@@ -4,9 +4,9 @@ Ruukkilabra ei kerää tietoja sinusta. Sivustolla ei ole kirjautumista. Sivusto
 
 ## Mitä tallentuu?
 
-Sivusto tallentaa työsi vain tämän laitteen selaimeen. Esimerkiksi ratkaisusi, vastauksesi, mittaustuloksesi, itsearviosi ja edistymisesi tallentuvat. Myös ratkaisuihin liittämäsi kuvat tallentuvat. Näin työ ei katoa, kun suljet sivun. Selain tallentaa myös avaamasi sivut tälle laitteelle. Silloin sivut aukeavat ilman nettiä. Sivusto ei lähetä tietoja opettajalle itsestään. Opettaja ei näe niitä selaimestasi.
+Sivusto tallentaa työsi vain tämän laitteen selaimeen. Esimerkiksi ratkaisusi, vastauksesi, mittaustuloksesi, itsearviosi ja edistymisesi tallentuvat. Myös ratkaisuihin liittämäsi kuvat tallentuvat. Näin työ ei katoa, kun suljet sivun. Selain tallentaa myös avaamasi sivut tälle laitteelle. Silloin sivut aukeavat ilman nettiä. FY9-kertauskurssilla selain muistaa myös, mitä tehtäviä olet yrittänyt. Se muistaa, oliko vastauksesi oikein, melkein oikein vai väärin. Se muistaa myös, montako vihjettä avasit ja minkä pisteet annoit itse omalle vastauksellesi. Tiedot ovat vain tämän laitteen selaimessa. Niissä ei ole nimeäsi eikä sitä, mitä kirjoitit. Niitä ei lähetetä minnekään. Sivusto ei lähetä tietoja opettajalle itsestään. Opettaja ei näe niitä selaimestasi.
 
-Voit tallentaa kaiken tämän selaimen työn yhteen tiedostoon laitteellesi. Tiedoston voi avata toisella laitteella. Tiedostossa ovat kaikkien opintojaksojen työt, käsitekorttien eteneminen ja viimeksi avattu luku. Siinä ei ole nimeäsi eikä yhteystietojasi. Tämä tiedosto ei ole palautus. Palautat työn opintojakson omalla työtiedostolla.
+Voit tallentaa kaiken tämän selaimen työn yhteen tiedostoon laitteellesi. Tiedoston voi avata toisella laitteella. Tiedostossa ovat kaikkien opintojaksojen työt, FY9-kurssin tehtäväkirjaus, käsitekorttien eteneminen ja viimeksi avattu luku. Siinä ei ole nimeäsi eikä yhteystietojasi. Tämä tiedosto ei ole palautus. Palautat työn opintojakson omalla työtiedostolla.
 
 <div class="work-tools" id="kaikki-tyo" hidden></div>
 
@@ -31,7 +31,7 @@ Koulu vastaa palautetuista töistä. Lue lisää koulusi tietosuojaselosteesta.
 
 ## Miten poistan tiedot?
 
-Poista sivuston tiedot selaimen asetuksista. Jos kone on yhteinen, poista tiedot lopuksi. Poista myös tallentamasi työtiedostot, jos et tarvitse niitä. Jo palauttamasi tiedosto ei poistu.
+Poista sivuston tiedot selaimen asetuksista. Jos kone on yhteinen, poista tiedot lopuksi. Poista myös tallentamasi työtiedostot, jos et tarvitse niitä. Jo palauttamasi tiedosto ei poistu. Tehtäväkirjaus poistuu samalla, kun poistat selaimen sivustotiedot.
 
 ## Muut palvelut
 
