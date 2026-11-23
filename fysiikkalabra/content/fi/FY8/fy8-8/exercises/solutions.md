@@ -40,20 +40,6 @@ E_\gamma &= hf \\
 \lambda &= \frac{hc}{E_\gamma}
 \end{aligned}
 $$
-\begin{aligned}
-f &= \frac{c}{\lambda} \\
-E_\gamma &= hf \\
-&= \frac{hc}{\lambda} \\
-\lambda &= \frac{hc}{E_\gamma}
-\end{aligned}
-$$
-\begin{aligned}
-E_\gamma &= hf \\
-c &= f\lambda \\
-E_\gamma &= \frac{hc}{\lambda} \\
-\lambda &= \frac{hc}{E_\gamma}
-\end{aligned}
-$$
 **Muunnokset:** $E_\gamma = 59{,}54\,\text{keV} = 59{,}54 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 9{,}5383 \cdot 10^{-15}\,\text{J}$; lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.
 **Sijoitus:** Tulo $$
 \begin{aligned}
@@ -115,23 +101,6 @@ E_\gamma &= hf \\
 &= \frac{hc}{E_\text{y} - E_\text{a}}
 \end{aligned}
 $$
-\begin{aligned}
-f &= \frac{c}{\lambda} \\
-E_\gamma &= hf \\
-&= \frac{hc}{\lambda} \\
-\lambda &= \frac{hc}{E_\gamma} \\
-&= \frac{hc}{E_\text{y} - E_\text{a}}
-\end{aligned}
-$$
-\begin{aligned}
-E_\gamma &= E_\text{y} - E_\text{a} \\
-E_\gamma &= hf \\
-c &= f\lambda \\
-E_\gamma &= \frac{hc}{\lambda} \\
-\lambda &= \frac{hc}{E_\gamma} \\
-&= \frac{hc}{E_\text{y} - E_\text{a}}
-\end{aligned}
-$$
 **Muunnokset:** $$
 \begin{aligned}
 E_\text{y} - E_\text{a} &= 2505{,}8\,\text{keV} \\
@@ -175,18 +144,6 @@ E_\text{v} &= hf \\
 &= \frac{hc}{\lambda}
 \end{aligned}
 $$ Kysytty suhde on $\dfrac{E_\gamma}{E_\text{v}} = \dfrac{E_\gamma \lambda}{hc}$
-\begin{aligned}
-f &= \frac{c}{\lambda} \\
-E_\text{v} &= hf \\
-&= \frac{hc}{\lambda}
-\end{aligned}
-$$ Kysytty suhde on $\dfrac{E_\gamma}{E_\text{v}} = \dfrac{E_\gamma \lambda}{hc}$
-\begin{aligned}
-E_\text{v} &= hf \\
-c &= f\lambda \\
-E_\text{v} &= \frac{hc}{\lambda}
-\end{aligned}
-$$, ja kysytty suhde on $\dfrac{E_\gamma}{E_\text{v}} = \dfrac{E_\gamma \lambda}{hc}$
 **Muunnokset:** $\lambda = 550\,\text{nm} = 550 \cdot 10^{-9}\,\text{m}$ ja $E_\gamma = 661{,}7\,\text{keV} = 661{,}7 \cdot 1000\,\text{eV} = 661\,700\,\text{eV}$; vihreän fotonin energia muunnetaan elektronivolteiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
 **Sijoitus:** Tulo $$
 \begin{aligned}
@@ -299,19 +256,6 @@ E_\gamma &= hf \\
 \lambda &= \frac{hc}{E_\gamma}
 \end{aligned}
 $$ Lyhin aallonpituus tulee suurimmasta energiasta, joten $\lambda_\text{min} = \dfrac{hc}{E_\text{max}}$
-\begin{aligned}
-f &= \frac{c}{\lambda} \\
-E_\gamma &= hf \\
-&= \frac{hc}{\lambda} \\
-\lambda &= \frac{hc}{E_\gamma}
-\end{aligned}
-$$ Lyhin aallonpituus tulee suurimmasta energiasta, joten $\lambda_\text{min} = \dfrac{hc}{E_\text{max}}$
-\begin{aligned}
-E_\gamma &= hf \\
-c &= f\lambda \\
-\lambda &= \frac{hc}{E_\gamma}
-\end{aligned}
-$$. Lyhin aallonpituus tulee suurimmasta energiasta, joten $\lambda_\text{min} = \dfrac{hc}{E_\text{max}}$
 **Muunnokset:** $E_\text{max} = 1{,}00\,\text{MeV} = 1{,}00 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}602 \cdot 10^{-13}\,\text{J}$; lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.
 **Sijoitus:** Tulo $$
 \begin{aligned}
@@ -367,20 +311,6 @@ $$ on kaksi beetahajoamista ja yksi alfahajoaminen.
 f &= \frac{c}{\lambda} \\
 E_\gamma &= hf \\
 &= \frac{hc}{\lambda} \\
-\lambda &= \frac{hc}{E_\gamma}
-\end{aligned}
-$$
-\begin{aligned}
-f &= \frac{c}{\lambda} \\
-E_\gamma &= hf \\
-&= \frac{hc}{\lambda} \\
-\lambda &= \frac{hc}{E_\gamma}
-\end{aligned}
-$$
-\begin{aligned}
-E_\gamma &= E_\text{y} - E_\text{a} \\
-E_\gamma &= hf \\
-c &= f\lambda \\
 \lambda &= \frac{hc}{E_\gamma}
 \end{aligned}
 $$
@@ -442,23 +372,6 @@ E_\text{B} &= E_\text{A} + E_{\text{B} \to \text{A}} \\
 E_\text{C} &= E_\text{B} + E_{\text{C} \to \text{B}} \\
 \lambda &= \frac{c}{f} \\
 &= \frac{hc}{E_\text{C}}
-\end{aligned}
-$$
-\begin{aligned}
-E_\text{A} &= E_{\text{A} \to 0} \\
-E_\text{B} &= E_\text{A} + E_{\text{B} \to \text{A}} \\
-E_\text{C} &= E_\text{B} + E_{\text{C} \to \text{B}} \\
-\lambda &= \frac{c}{f} \\
-&= \frac{hc}{E_\text{C}}
-\end{aligned}
-$$
-\begin{aligned}
-E_\text{A} &= E_{\text{A} \to 0} \\
-E_\text{B} &= E_\text{A} + E_{\text{B} \to \text{A}} \\
-E_\text{C} &= E_\text{B} + E_{\text{C} \to \text{B}} \\
-E_\text{C} &= hf \\
-c &= f\lambda \\
-\lambda &= \frac{hc}{E_\text{C}}
 \end{aligned}
 $$
 **Muunnokset:** $E_\text{C} = 2505{,}7\,\text{keV} = 2505{,}7 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 4{,}0141 \cdot 10^{-13}\,\text{J}$ ja lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.

@@ -40,20 +40,6 @@ E_\gamma &= hf \\
 \lambda &= \frac{hc}{E_\gamma}
 \end{aligned}
 $$
-\begin{aligned}
-f &= \frac{c}{\lambda} \\
-E_\gamma &= hf \\
-&= \frac{hc}{\lambda} \\
-\lambda &= \frac{hc}{E_\gamma}
-\end{aligned}
-$$
-\begin{aligned}
-E_\gamma &= hf \\
-c &= f\lambda \\
-E_\gamma &= \frac{hc}{\lambda} \\
-\lambda &= \frac{hc}{E_\gamma}
-\end{aligned}
-$$
 **Conversions:** $E_\gamma = 59.54\,\text{keV} = 59.54 \cdot 1000 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 9.5383 \cdot 10^{-15}\,\text{J}$; finally $1\,\text{m} = 10^{12}\,\text{pm}$.
 **Substitution:** The product $$
 \begin{aligned}
@@ -118,23 +104,6 @@ E_\gamma &= hf \\
 &= \frac{hc}{E_\text{u} - E_\text{l}}
 \end{aligned}
 $$
-\begin{aligned}
-f &= \frac{c}{\lambda} \\
-E_\gamma &= hf \\
-&= \frac{hc}{\lambda} \\
-\lambda &= \frac{hc}{E_\gamma} \\
-&= \frac{hc}{E_\text{u} - E_\text{l}}
-\end{aligned}
-$$
-\begin{aligned}
-E_\gamma &= E_\text{u} - E_\text{l} \\
-E_\gamma &= hf \\
-c &= f\lambda \\
-E_\gamma &= \frac{hc}{\lambda} \\
-\lambda &= \frac{hc}{E_\gamma} \\
-&= \frac{hc}{E_\text{u} - E_\text{l}}
-\end{aligned}
-$$
 **Conversions:** $$
 \begin{aligned}
 E_\text{u} - E_\text{l} &= 2505.8\,\text{keV} \\
@@ -178,18 +147,6 @@ E_\text{g} &= hf \\
 &= \frac{hc}{\lambda}
 \end{aligned}
 $$ The ratio asked for is $\dfrac{E_\gamma}{E_\text{g}} = \dfrac{E_\gamma \lambda}{hc}$
-\begin{aligned}
-f &= \frac{c}{\lambda} \\
-E_\text{g} &= hf \\
-&= \frac{hc}{\lambda}
-\end{aligned}
-$$ The ratio asked for is $\dfrac{E_\gamma}{E_\text{g}} = \dfrac{E_\gamma \lambda}{hc}$
-\begin{aligned}
-E_\text{g} &= hf \\
-c &= f\lambda \\
-E_\text{g} &= \frac{hc}{\lambda}
-\end{aligned}
-$$, and the ratio asked for is $\dfrac{E_\gamma}{E_\text{g}} = \dfrac{E_\gamma \lambda}{hc}$
 **Conversions:** $\lambda = 550\,\text{nm} = 550 \cdot 10^{-9}\,\text{m}$ and $E_\gamma = 661.7\,\text{keV} = 661.7 \cdot 1000\,\text{eV} = 661\,700\,\text{eV}$; the energy of the green photon is converted to electronvolts by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
 **Substitution:** The product $$
 \begin{aligned}
@@ -314,19 +271,6 @@ E_\gamma &= hf \\
 \lambda &= \frac{hc}{E_\gamma}
 \end{aligned}
 $$ The shortest wavelength comes from the greatest energy, so $\lambda_\text{min} = \dfrac{hc}{E_\text{max}}$
-\begin{aligned}
-f &= \frac{c}{\lambda} \\
-E_\gamma &= hf \\
-&= \frac{hc}{\lambda} \\
-\lambda &= \frac{hc}{E_\gamma}
-\end{aligned}
-$$ The shortest wavelength comes from the greatest energy, so $\lambda_\text{min} = \dfrac{hc}{E_\text{max}}$
-\begin{aligned}
-E_\gamma &= hf \\
-c &= f\lambda \\
-\lambda &= \frac{hc}{E_\gamma}
-\end{aligned}
-$$. The shortest wavelength comes from the greatest energy, so $\lambda_\text{min} = \dfrac{hc}{E_\text{max}}$
 **Conversions:** $E_\text{max} = 1.00\,\text{MeV} = 1.00 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.602 \cdot 10^{-13}\,\text{J}$; finally $1\,\text{m} = 10^{12}\,\text{pm}$.
 **Substitution:** The product $$
 \begin{aligned}
@@ -390,20 +334,6 @@ The greatest energy is the transition from the top level to the ground state, an
 f &= \frac{c}{\lambda} \\
 E_\gamma &= hf \\
 &= \frac{hc}{\lambda} \\
-\lambda &= \frac{hc}{E_\gamma}
-\end{aligned}
-$$
-\begin{aligned}
-f &= \frac{c}{\lambda} \\
-E_\gamma &= hf \\
-&= \frac{hc}{\lambda} \\
-\lambda &= \frac{hc}{E_\gamma}
-\end{aligned}
-$$
-\begin{aligned}
-E_\gamma &= E_\text{u} - E_\text{l} \\
-E_\gamma &= hf \\
-c &= f\lambda \\
 \lambda &= \frac{hc}{E_\gamma}
 \end{aligned}
 $$
@@ -479,23 +409,6 @@ E_\text{B} &= E_\text{A} + E_{\text{B} \to \text{A}} \\
 E_\text{C} &= E_\text{B} + E_{\text{C} \to \text{B}} \\
 \lambda &= \frac{c}{f} \\
 &= \frac{hc}{E_\text{C}}
-\end{aligned}
-$$
-\begin{aligned}
-E_\text{A} &= E_{\text{A} \to 0} \\
-E_\text{B} &= E_\text{A} + E_{\text{B} \to \text{A}} \\
-E_\text{C} &= E_\text{B} + E_{\text{C} \to \text{B}} \\
-\lambda &= \frac{c}{f} \\
-&= \frac{hc}{E_\text{C}}
-\end{aligned}
-$$
-\begin{aligned}
-E_\text{A} &= E_{\text{A} \to 0} \\
-E_\text{B} &= E_\text{A} + E_{\text{B} \to \text{A}} \\
-E_\text{C} &= E_\text{B} + E_{\text{C} \to \text{B}} \\
-E_\text{C} &= hf \\
-c &= f\lambda \\
-\lambda &= \frac{hc}{E_\text{C}}
 \end{aligned}
 $$
 **Conversions:** $E_\text{C} = 2505.7\,\text{keV} = 2505.7 \cdot 1000 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 4.0141 \cdot 10^{-13}\,\text{J}$ and finally $1\,\text{m} = 10^{12}\,\text{pm}$.

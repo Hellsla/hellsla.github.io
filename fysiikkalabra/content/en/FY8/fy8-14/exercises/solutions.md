@@ -141,7 +141,15 @@
 
 **Principle:** The patient is treated as a point source, so the dose rate is inversely proportional to the square of the distance (chapter *Radiation dose and radiation safety in Finland*). The dose rate stays constant during this time, so the dose is the dose rate times the time.
 
-**Formula:** The dose rate falls with the square of the distance, and the dose is the dose rate times the time:
+**Formula:** The dose is the dose rate times the time, $H = \dot{H} t$, and the dose rate falls with the square of the distance:
+
+$$
+\begin{aligned}
+\dot{H}_2 &= \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 \\
+H &= \dot{H}_2 t \\
+H &= \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 t
+\end{aligned}
+$$
 
 $$
 \begin{aligned}
@@ -206,6 +214,17 @@ $$
 
 where $D_\text{session} = 2.0\,\text{Gy}$ is the tumour dose of one session.
 
+$$
+\begin{aligned}
+D_\text{beam} &= \dfrac{D_\text{session}}{n} \\
+D_\text{entry} &= k D_\text{beam} \\
+D &= N D_\text{entry} \\
+&= N k \dfrac{D_\text{session}}{n}
+\end{aligned}
+$$
+
+where $D_\text{session} = 2.0\,\text{Gy}$ is the tumour dose of one session.
+
 **Conversions:** Not needed: all doses are in grays.
 
 **Substitution:** $D = 30 \cdot 1.3 \cdot \dfrac{2.0\,\text{Gy}}{5} = 30 \cdot 1.3 \cdot 0.40\,\text{Gy} = 30 \cdot 0.52\,\text{Gy} = 15.6\,\text{Gy}$
@@ -221,7 +240,16 @@ where $D_\text{session} = 2.0\,\text{Gy}$ is the tumour dose of one session.
 
 **Principle:** The beams are equally long and otherwise pass through the same soft tissue, so the shares from the other layers are the same for both and cancel from the ratio. The difference comes only from the $1.0\,\text{cm}$ layer: for beam A it is soft tissue, for beam B calcification. The shares that get through the layers are multiplied.
 
-**Formula:** The intensity $I_0$ arriving at the layer $d$ is the same for both beams, and the shares of the other layers cancel from the ratio:
+**Formula:** A layer lets through the share $I : I_0 = \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$. The $I_0$ reaching the layer $d$ is the same for both beams, and the other layers cancel from the ratio:
+
+$$
+\begin{aligned}
+I_\text{A} &= I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{tissue}} \\
+I_\text{B} &= I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{bone}} \\
+\frac{I_\text{A}}{I_\text{B}} &= \frac{\left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{tissue}}}{\left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{bone}}} \\
+&= 2^{\,d/d_{1/2}^\text{bone} - d/d_{1/2}^\text{tissue}}
+\end{aligned}
+$$
 
 $$
 \begin{aligned}
@@ -257,6 +285,15 @@ $$
 **Principle:** Each half-value thickness halves the intensity of photon radiation, so the attenuation follows the equation $I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$. The thickness is in the exponent, so it is solved with a logarithm.
 
 **Formula:** The attenuation law is solved for the thickness $d$. The exponent is brought down with the natural logarithm and the rule $\ln 2^{x} = x \ln 2$:
+
+$$
+\begin{aligned}
+I &= I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
+\frac{I_0}{I} &= 2^{d/d_{1/2}} \\
+\ln \frac{I_0}{I} &= \frac{d}{d_{1/2}} \cdot \ln 2 \\
+d &= d_{1/2} \cdot \frac{\ln (I_0 : I)}{\ln 2}
+\end{aligned}
+$$
 
 $$
 \begin{aligned}
@@ -392,7 +429,17 @@ b) $A_\text{decay} = 500\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{12.0\,\tex
 
 The dose depends on the injected activity, and the doses of the PET part and the CT part are added together.
 
-**Formula:** The activity needed for the scan must remain after the waiting time. The injected activity $A_0$ is solved from the decay law, and the dose is the sum of the PET part and the CT part:
+**Formula:** The scan activity is $A_\text{scan} = a m$. The injected $A_0$ is solved from the decay law, and the dose is the sum of the PET part and the CT part:
+
+$$
+\begin{aligned}
+A_\text{scan} &= A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \\
+A_0 &= \dfrac{a m}{\left(\tfrac{1}{2}\right)^{t/T_{1/2}}} \\
+H &= k A_0 + H_\text{CT} \\
+&= \dfrac{k a m}{\left(\tfrac{1}{2}\right)^{t/T_{1/2}}} \\
+&\quad + H_\text{CT}
+\end{aligned}
+$$
 
 $$
 \begin{aligned}
@@ -449,6 +496,24 @@ The dose of the PET part, $4.2\,\text{mSv}$, is of the same order of magnitude a
 So every $5.0\,\text{mm}$ of plate reduces the count rate to the same fraction, which fits exponential attenuation. In part b) the half-value thickness is calculated from the first and the last row of the table. As a check, a line fitted to all five points between $\ln R$ and $d$ gives $d_{1/2} = 9.18\,\text{mm}$ and $d_x = 12.1\,\text{mm}$, that is, the same answer.
 
 **Formula:** The count rate follows the attenuation law. It is solved for the thickness like the intensity, using the rule $\ln 2^{x} = x \ln 2$:
+
+$$
+\begin{aligned}
+R &= R_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
+\frac{R_0}{R} &= 2^{d/d_{1/2}} \\
+\ln \frac{R_0}{R} &= \frac{d}{d_{1/2}} \cdot \ln 2 \\
+d &= d_{1/2} \cdot \frac{\ln (R_0 : R)}{\ln 2}
+\end{aligned}
+$$
+
+In the calibration the thickness $d_{20}$ and its count rate $R_{20}$ are known, so the half-value thickness and then the thickness $d_x$ of the unknown plate are
+
+$$
+\begin{aligned}
+d_{1/2} &= \dfrac{d_{20} \ln 2}{\ln (R_0 : R_{20})} \\
+d_x &= d_{1/2} \cdot \dfrac{\ln (R_0 : R_x)}{\ln 2}
+\end{aligned}
+$$
 
 $$
 \begin{aligned}
