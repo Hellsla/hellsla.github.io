@@ -10,7 +10,7 @@
   "Energia säilyy: se muuttuu ja siirtyy mutta ei katoa (luku *Energialajit ja energian säilyminen*)",
   "Teho on energia aikaa kohti, ja $1\\,\\text{kWh} = 3{,}6\\,\\text{MJ}$ (luku *Teho*)",
   "Hyötysuhde on hyötyenergian osuus otetusta energiasta (luku *Hyötysuhde*)",
-  "Polttoaineesta vapautuva energia on $E = Hm$ (luku *Polttoaineet ja lämpöarvo*)",
+  "Polttoaineesta vapautuva energia on $Q = Hm$ (luku *Polttoaineet ja lämpöarvo*)",
   "Voimalaitoksen vaiheiden hyötysuhteet kerrotaan (luku *Energiantuotanto ja voimalaitosten hyötysuhde*)"
  ],
  "activities": [
@@ -122,7 +122,7 @@
    "choices": [
     {
      "text": "Puu, koska sitä on kaksi kertaa enemmän massaa.",
-     "feedback": "Massa on kaksinkertainen, mutta lämpöarvo on alle puolet. Vapautuva energia on $E = Hm$: puu $30\\,\\text{MJ}$, bensiini $43\\,\\text{MJ}$. Kertaa luvussa *Polttoaineet ja lämpöarvo*."
+     "feedback": "Massa on kaksinkertainen, mutta lämpöarvo on alle puolet. Vapautuva energia on $Q = Hm$: puu $30\\,\\text{MJ}$, bensiini $43\\,\\text{MJ}$. Kertaa luvussa *Polttoaineet ja lämpöarvo*."
     },
     {
      "text": "Bensiini, koska $Hm$ on sillä suurempi.",
@@ -131,7 +131,7 @@
     },
     {
      "text": "Yhtä paljon, koska molemmat palavat kokonaan.",
-     "feedback": "Kokonaan palaminen ei tee energioista yhtä suuria: energia riippuu sekä lämpöarvosta että massasta, $E = Hm$. Kertaa luvussa *Polttoaineet ja lämpöarvo*."
+     "feedback": "Kokonaan palaminen ei tee energioista yhtä suuria: energia riippuu sekä lämpöarvosta että massasta, $Q = Hm$. Kertaa luvussa *Polttoaineet ja lämpöarvo*."
     }
    ]
   },

@@ -934,7 +934,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Nopeus ei muutu: se on edelleen $5{,}0\\,\\text{m/s}$, koska massa ei vaikuta nopeuteen, kun ilmanvastus on merkityksetön. Raskaampi kelkka menettää kitkaan enemmän energiaa, mutta sillä on myös enemmän energiaa alussa."
+              "detail": "Nopeus ei muutu: se on edelleen $5{,}0\\,\\text{m/s}$, koska massa ei vaikuta nopeuteen, kun ilmanvastus on merkityksetön. Painavampaan kelkkaan kohdistuva kitka tekee suuremman työn, eli enemmän mekaanista energiaa muuttuu sisäenergiaksi. Sillä on kuitenkin myös enemmän energiaa alussa."
             }
           ]
         }

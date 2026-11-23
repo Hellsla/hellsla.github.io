@@ -59,7 +59,7 @@ $$.
 **Annettu:** tunnissa poltettavan hakkeen massa $m = 42\,\text{t}$, aika $t = 1\,\text{h}$, lämpöarvo $H = 9{,}5\,\text{MJ/kg}$
 **Kysytty:** polttoaineteho $P_0$ megawatteina
 **Periaate:** Hakkeesta vapautuva energia on lämpöarvo kertaa palanut massa, koska lämpöarvo on energia kilogrammaa kohti (luku *Polttoaineet ja lämpöarvo*). Polttoaineteho on tämä energia jaettuna ajalla, jossa se vapautuu (luku *Teho*).
-**Kaava:** $E = Hm$ ja $P_0 = \dfrac{E}{t}$, joten $P_0 = \dfrac{Hm}{t}$
+**Kaava:** $Q = Hm$ ja $P_0 = \dfrac{Q}{t}$, joten $P_0 = \dfrac{Hm}{t}$
 **Muunnokset:** $42\,\text{t} = 42 \cdot 1000\,\text{kg} = 42\,000\,\text{kg}$, $9{,}5\,\text{MJ/kg} = 9{,}5 \cdot 10^{6}\,\text{J/kg}$ ja $1\,\text{h} = 3600\,\text{s}$; lopuksi $1\,\text{W} = 10^{-6}\,\text{MW}$.
 **Sijoitus:** $P_0 = \dfrac{9{,}5 \cdot 10^{6}\,\text{J}/\text{kg} \cdot 42\,000\,\text{kg}}{3600\,\text{s}} = \dfrac{3{,}99 \cdot 10^{11}\,\text{J}}{3600\,\text{s}} = 1{,}108 \cdot 10^{8}\,\text{W} = 110{,}8\,\text{MW}$
 **Vastaus:** $P_0 \approx 1{,}1 \cdot 10^{2}\,\text{MW}$, kaksi merkitsevää numeroa kuten lämpöarvo $9{,}5\,\text{MJ/kg}$ ja massa $42\,\text{t}$. Jatkokohdissa käytetään pyöristämätöntä arvoa $110{,}8\,\text{MW}$.
@@ -458,7 +458,7 @@ Se on henkilöautoa maantienopeudessa vastustavien voimien suuruusluokkaa.
 Lämmitykseen ja akun sisäenergiaksi kulunut energia sekä suurempi työ vastusvoimia vastaan otetaan kaikki samasta akusta. Jokainen kilometri vaatii siksi akusta enemmän energiaa kuin leudolla säällä, ja kylmästä akusta energiaa saadaan vähemmän, joten toimintamatka lyhenee.
 
 ### d)
-**Kysytty:** miksi pisimmälle ajaneen auton suurimmasta poikkeamasta ei voi päätellä, että auto kestäisi pakkasta muita huonommin
+**Kysytty:** miksi pisimmälle ajaneen auton poikkeamasta ($45{,}8\,\%$, yksi testin suurimmista) ei voi päätellä, että auto kestäisi pakkasta muita huonommin
 **Periaate:** Kahta mittaustulosta voi verrata vain, jos ne on mitattu samoissa olosuhteissa. Jos olosuhteet muuttuvat samalla kuin tutkittava kohde, erosta ei voi päätellä, kumpi sen aiheutti (luku *Mittaaminen ja mittauksen luotettavuus*).
 **Mallivastaus:** Autot eivät ajaneet samoissa olosuhteissa. Aineiston mukaan (tarkistettu 16.11.2026) lämpötila laski reitin varrella Oslon noin $-7\,{}^\circ\text{C}$:sta Folldalin $-32\,{}^\circ\text{C}$:seen. Lyhyen toimintamatkan Hyundai Inster pysähtyi jo kohdassa, jossa oli $-16\,{}^\circ\text{C}$, joten se ajoi koko matkansa reitin leudommassa alkupäässä.
 
@@ -505,7 +505,7 @@ E_\text{mek,C} &= 0\,\text{J} + 500\,\text{J} = 500\,\text{J} \\
 \end{aligned}
 $$
 **Vastaus:** Sisäenergiaa on syntynyt $100\,\text{J}$ matkalla A–B ja $200\,\text{J}$ matkalla A–C.
-**Järkevyys:** Mekaaninen energia pienenee kohdasta toiseen ($700\,\text{J}$, $600\,\text{J}$, $500\,\text{J}$), eikä se koskaan kasva, kuten kitkallisessa radassa kuuluukin. Sisäenergiaa syntyy suunnilleen yhtä paljon kummallakin osamatkalla, mikä sopii kitkan tasaiseen vaikutukseen radalla.
+**Järkevyys:** Mekaaninen energia pienenee kohdasta toiseen ($700\,\text{J}$, $600\,\text{J}$, $500\,\text{J}$), eikä se koskaan kasva, kuten kitkallisessa radassa kuuluukin. Sisäenergiaa syntyy $100\,\text{J}$ sekä osuudella A–B että osuudella B–C. Osuuksien pituuksia ei tiedetä, joten kuvasta ei voi päätellä, onko kitka ollut koko radalla yhtä suuri.
 
 ### b)
 **Annettu:** $E_\text{k,C} = 500\,\text{J}$ kuvasta, massa $m = 45\,\text{kg}$

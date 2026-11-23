@@ -1,15 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 92d38a396fa55df5
+CONTENT-HASH: d8a6f721562df046
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-magnetismi-valo (fi-easy): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-- none
-
-## Polish
-- [Minor] unit.md, johda "Siirtojännite $U$ ei ole johdon yli" — hard for an S2 reader — "Johdon yli oleva jännite ei ole siirtojännite $U$. Johdon päiden välinen jännite on jännitehäviö $RI$."
-- [Minor] fig rajakulma (selita-390-7) — angle and "$\alpha_1 > \alpha_r$" labels are small at 390 px — enlarge if the figure is next redrawn.
-
-## Checked
-- Captures opened: intro-390, selita-390-1/3/5/7, selita-1280-1 (captures current for 92d38a396fa55df5).
-- Stop-think boxes (3 seen at 390 px, 1 at 1280 px): green left rule, small-caps label "Pysähdy ja mieti", question, openable "Vastaus" with answer; no clipping or overflow, math (\overline{B}, symbols) readable, spacing to the neighbouring figure and Johda-itse cards consistent, text 17 px or more. Fits the reading column on both widths.
-- Figures kartta, ympyra, rajakulma, hero seen in these captures: legible, LaTeX labels, force red / velocity blue kept.
-- Formulas and derivation rows wrap cleanly at 390 px; numbers with units in LaTeX; Finnish reads as clear selkosuomi.
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.

@@ -130,7 +130,7 @@
       {
        "key": "equation",
        "points": 1,
-       "detail": "$E = Hm$ tunnissa poltetulle hakkeelle ja $P_0 = \\dfrac{E}{t}$"
+       "detail": "$Q = Hm$ tunnissa poltetulle hakkeelle ja $P_0 = \\dfrac{Q}{t}$"
       },
       {
        "key": "calculation",
@@ -815,7 +815,7 @@
      "id": "d",
      "kind": "word",
      "points": 2,
-     "text": "Testin raportin mukaan pisimmälle ajaneen auton toimintamatka jäi suhteellisesti eniten jälkeen ilmoitetusta. Selitä aineiston avulla, miksi tästä ei voi päätellä, että se kestäisi pakkasta muita autoja huonommin.",
+     "text": "Testin raportin mukaan pisimmälle ajaneen auton toimintamatka jäi ilmoitetusta $46\\,\\%$ lyhyemmäksi, mikä on yksi testin suurimmista poikkeamista. Selitä aineiston avulla, miksi tästä ei voi päätellä, että se kestäisi pakkasta muita autoja huonommin.",
      "criteria": [
       {
        "text": "Käyttää aineistoa: lämpötila laski reitin varrella $-7\\,{}^\\circ\\text{C}$:sta $-32\\,{}^\\circ\\text{C}$:seen, joten pisimmälle ajanut auto ajoi suuren osan matkastaan kylmimmällä osuudella ja oli pakkasessa pisimpään, kun taas lyhyen toimintamatkan auto pysähtyi jo $-16\\,{}^\\circ\\text{C}$:n kohdalla.",

@@ -59,7 +59,7 @@ $$.
 **Given:** mass of chips burnt in an hour $m = 42\,\text{t}$, time $t = 1\,\text{h}$, heat of combustion $H = 9.5\,\text{MJ/kg}$
 **Find:** the fuel power $P_0$ in megawatts
 **Principle:** The energy released from the chips is the heat of combustion multiplied by the mass burnt, because the heat of combustion is energy per kilogram (chapter *Fuels and heat of combustion*). The fuel power is this energy divided by the time in which it is released (chapter *Power*).
-**Formula:** $E = Hm$ and $P_0 = \dfrac{E}{t}$, so $P_0 = \dfrac{Hm}{t}$
+**Formula:** $Q = Hm$ and $P_0 = \dfrac{Q}{t}$, so $P_0 = \dfrac{Hm}{t}$
 **Conversions:** $42\,\text{t} = 42 \cdot 1000\,\text{kg} = 42\,000\,\text{kg}$, $9.5\,\text{MJ/kg} = 9.5 \cdot 10^{6}\,\text{J/kg}$ and $1\,\text{h} = 3600\,\text{s}$; finally $1\,\text{W} = 10^{-6}\,\text{MW}$.
 **Substitution:** $P_0 = \dfrac{9.5 \cdot 10^{6}\,\text{J}/\text{kg} \cdot 42\,000\,\text{kg}}{3600\,\text{s}} = \dfrac{3.99 \cdot 10^{11}\,\text{J}}{3600\,\text{s}} = 1.108 \cdot 10^{8}\,\text{W} = 110.8\,\text{MW}$
 **Answer:** $P_0 \approx 1.1 \cdot 10^{2}\,\text{MW}$, two significant figures like the heat of combustion $9.5\,\text{MJ/kg}$ and the mass $42\,\text{t}$. The later parts use the unrounded value $110.8\,\text{MW}$.
@@ -458,7 +458,7 @@ That is of the order of magnitude of the forces that resist a passenger car at h
 The energy used for heating and the energy that becomes internal energy of the battery, as well as the larger work against the resistive forces, are all taken from the same battery. Every kilometre therefore takes more energy from the battery than in mild weather, and less energy is available from a cold battery, so the range shrinks.
 
 ### d)
-**Find:** why the largest deviation of the car that drove the furthest does not show that the car withstands frost worse than the others
+**Find:** why the deviation of the car that drove the furthest ($45.8\,\%$, one of the largest in the test) does not show that the car withstands frost worse than the others
 **Principle:** Two measurement results can be compared only if they were measured in the same conditions. If the conditions change together with the object studied, the difference does not tell which of them caused it (chapter *Measuring and the reliability of a measurement*).
 **Model answer:** The cars did not drive in the same conditions. According to the source (checked 16 Nov 2026) the temperature fell along the route from about $-7\,{}^\circ\text{C}$ in Oslo to $-32\,{}^\circ\text{C}$ at Folldal. The short-range Hyundai Inster stopped already at a point where it was $-16\,{}^\circ\text{C}$, so it drove its whole distance in the milder first part of the route.
 
@@ -505,7 +505,7 @@ E_\text{mech,C} &= 0\,\text{J} + 500\,\text{J} = 500\,\text{J} \\
 \end{aligned}
 $$
 **Answer:** $100\,\text{J}$ of internal energy has been produced from A to B and $200\,\text{J}$ from A to C.
-**Reasonableness:** The mechanical energy decreases from point to point ($700\,\text{J}$, $600\,\text{J}$, $500\,\text{J}$) and never grows, as on a track with friction it should. About the same amount of internal energy is produced on each part of the way, which fits a steady effect of friction on the track.
+**Reasonableness:** The mechanical energy decreases from point to point ($700\,\text{J}$, $600\,\text{J}$, $500\,\text{J}$) and never grows, as on a track with friction it should. Internal energy of $100\,\text{J}$ is produced on both the part A–B and the part B–C. The lengths of the parts are not known, so the figure does not show whether the friction was equally large along the whole track.
 
 ### b)
 **Given:** $E_\text{k,C} = 500\,\text{J}$ from the figure, mass $m = 45\,\text{kg}$

@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 75fc60790851a73b
+CONTENT-HASH: a65eeaeb662d4b9b
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-lampo (fi-easy): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-(none)
-
-## Polish
-- [Minor] kartta figure at 1280 px — narrow tall flowchart (380 px wide) leaves a wide empty area beside it; known shared-layout behaviour, no change asked.
-
-## Checked
-- top-390, intro-390-1, intro-1280, contact-1 (opening, hero, Tällä tunnilla opit, Pohjatiedot: fine).
-- selita-390-1, -3, -4 and selita-1280-1: all four Pysähdy ja mieti boxes (small green label, question, Vastaus details open, all maths such as $0\,{}^\circ\text{C}$ rendered, nothing clipped, no overflow); kartta, kayra figures, formula blocks.
-- Boxes at 1280 px sit in the 38 rem column with the same layout. The 360 px width was not captured; the 390 px capture shows no tight spots.
-- Scores: illustrations 5, typography 5, Finnish 5, accessibility 5.
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.

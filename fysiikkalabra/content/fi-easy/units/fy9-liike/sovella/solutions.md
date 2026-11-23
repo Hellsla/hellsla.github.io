@@ -346,7 +346,7 @@ $$. Pitkän osuuden kulkuaika on $3000\,\text{m} : 22{,}2\,\text{m/s} = 135\,\te
 &80\,\text{km/h} \cdot 1\,\text{s} : 135\,\text{s} \\
 &\approx 0{,}6\,\text{km/h}
 \end{aligned}
-$$. Lyhyellä osuudella kulkuaika on vain $100\,\text{m} : 22{,}2\,\text{m/s} = 4{,}5\,\text{s}$. Yhden sekunnin virhe on siitä yli $20\,\%$. Mitattu keskinopeus voisi silloin olla noin $65$–$100\,\text{km/h}$, eli epävarmuus on noin $18\,\text{km/h}$. Kolmas kannanotto ei siis pidä. Lyhyellä osuudella järjestelmä ei pystyisi erottamaan rajoitusnopeutta ajavaa kuljettajaa ylinopeutta ajavasta. Tulos voisi mennä kumpaan suuntaan tahansa. Valvontaosuuden on oltava pitkä, jotta ajanoton epävarmuus on pieni verrattuna kulkuaikaan.
+$$. Lyhyellä osuudella kulkuaika on vain $100\,\text{m} : 22{,}2\,\text{m/s} = 4{,}5\,\text{s}$. Yhden sekunnin virhe on siitä yli $20\,\%$. Mitattu keskinopeus voisi silloin olla noin $65$–$103\,\text{km/h}$, eli epävarmuus on noin $18\,\text{km/h}$. Kolmas kannanotto ei siis pidä. Lyhyellä osuudella järjestelmä ei pystyisi erottamaan rajoitusnopeutta ajavaa kuljettajaa ylinopeutta ajavasta. Tulos voisi mennä kumpaan suuntaan tahansa. Valvontaosuuden on oltava pitkä, jotta ajanoton epävarmuus on pieni verrattuna kulkuaikaan.
 
 ### Yleisiä virheitä
 - b-kohdassa lasketaan nopeuksien keskiarvo tai matkoilla painotettu keskiarvo ($\tfrac{2}{3} \cdot 100 + \tfrac{1}{3} \cdot 60 \approx 87\,\text{km/h}$), tai matka jaetaan väärällä nopeudella.
@@ -647,9 +647,9 @@ $$ Paikka on $$
 \begin{aligned}
 x &= 4\,\text{m} + 2{,}0\,\text{m/s} \cdot 5{,}33\,\text{s} \\
 &\approx 4\,\text{m} + 10{,}7\,\text{m} \\
-&\approx 14{,}7\,\text{m}
+&\approx 15\,\text{m}
 \end{aligned}
-$$ Kohtaaminen tapahtuisi siis myöhemmin ($5{,}3\,\text{s} > 4{,}0\,\text{s}$). Se tapahtuisi lähempänä B:n alkupaikkaa ($14{,}7\,\text{m} > 12\,\text{m}$). Välimatka $16\,\text{m}$ pienenee nyt hitaammin, nopeudella $3{,}0\,\text{m/s}$ eikä $4{,}0\,\text{m/s}$. Siksi A ehtii kulkea pidemmälle ennen kohtaamista. Hetki $5{,}3\,\text{s}$ on yhä kuvaajan aikavälillä $0\ldots 8\,\text{s}$.
+$$ Kohtaaminen tapahtuisi siis myöhemmin ($5{,}3\,\text{s} > 4{,}0\,\text{s}$). Se tapahtuisi lähempänä B:n alkupaikkaa ($15\,\text{m} > 12\,\text{m}$). Välimatka $16\,\text{m}$ pienenee nyt hitaammin, nopeudella $3{,}0\,\text{m/s}$ eikä $4{,}0\,\text{m/s}$. Siksi A ehtii kulkea pidemmälle ennen kohtaamista. Hetki $5{,}3\,\text{s}$ on yhä kuvaajan aikavälillä $0\ldots 8\,\text{s}$.
 
 ### Yleisiä virheitä
 - B:n nopeuden etumerkki unohdetaan ($v_\text{B} = +2{,}0\,\text{m/s}$). Silloin yhtälöllä $4 + 2t = 20 + 2t$ ei ole ratkaisua, tai kohtaamishetki tulee väärin.
