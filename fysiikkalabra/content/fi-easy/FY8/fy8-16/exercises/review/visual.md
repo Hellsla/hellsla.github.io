@@ -2,14 +2,14 @@ VERDICT: PASS
 CONTENT-HASH: b4a317e3e12c35cd
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] The packet hash was d1c6e6bd72420c6b; solutions.md was then edited (commit f7ec48a4b7: \frac to \dfrac in the fy8-16 Kaava blocks). My 390 px captures predate it and showed the tiny inline fractions (z = (lambda - lambda_0)/lambda_0, t = d/v); the edit addresses exactly that, nothing else changed. Check after the next build that those boxes now read larger.
+- [Minor] the packet was stale (hash d1c6e6bd72420c6b; solutions.md edited afterwards for `\dfrac`), so I re-took the captures for b4a317e3e12c35cd; they carry the current hash. Only 1280 px open-solution captures exist, no 390 px capture of the aligned blocks; rows are short (one equation per row) and check_layout covers 360 px.
 
 ## Checked
-- Delta (the aligned Kaava blocks of fy8-16: v = cz chain, E = hf rows, Hubble fit, t = 1/H_0, He fraction, k = 1+z) at 390 px, 12 blocks viewed. Own 390 px clips of every Kaava block (preview build; packet captures of exercises are 1280 only): no overflow, no red KaTeX.
-- Rows aligned at =, chains one equation per row, nothing clipped.
+- Hash run at start (b4a317e3e12c35cd) and end: unchanged.
+- fy8-16-open-exercises-1280-3 (16-4 Kaava `d = v/H_0` with `\dfrac`, Sijoitus, Järkevyys), L2-1280-3 (16-11 aligned `E` chain, fractions full size), L2-1280-5 (16-14 Kaava rows `z`, `v = cz`, `v = H_0 d`, `d = v/H_0`; the pupil's display block), L3-1280-3 (16-19 Järkevyys, 16-20 start).
+- Fractions in Kaava rows read at full size with legible subscripts (`\lambda_0`, `H_0`); `=` signs align in one column; no red source, no clipping, decimal comma, units upright with a thin space.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

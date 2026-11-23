@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 0fc0bfaf02d8e737
+CONTENT-HASH: 44874ddf209d177a
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy8-6 solutions.md — the Kaava steps that open with a sentence and then an aligned block are fully readable at 390 px, but several are long; no change needed.
+- [Minor] fy8-6 solutions.md — several Kaava steps open with a sentence and then an aligned block; fully readable at 390 px, no change needed.
 
 ## Checked
-- The packet was made for hash 2f5f896a98ba9818; the content has since been edited (L2-06 h_0 fix, then a Kaava edit with \approx and `+ b`, hash 9a9b923... then 0fc0bfaf02d8e737, the working-tree solutions.md). I reviewed the page as built from the 9a9b state and read the later diff (same presentation form, \dfrac and \approx inline/aligned).
-- Rendered all 25 Kaava blocks at 390 px (own capture, all solutions open): no clipping, scrollWidth 390, rows aligned at =, h_0 = 6,626 · 10^-34 J s correct.
-- If the coordinator edits solutions.md again, the hash goes stale and a delta is needed.
+- Delta (Kaava of the U_k(f) task: `U_k = kf + b`, `h = ek`; `h = ek` in the later chain). Own 390 px capture with every solution open: the Kaava block (U_k ≈ (h/e) f + b / k = ΔU_k/Δf ≈ h/e / h = ek) sits in one aligned column, fractions at full size, nothing clipped; page scrollWidth 390, no element past the right edge in the exercises.
+- The U_k and the other Kaava rows (e.g. the U = hf/e = hc/(eλ) block) also checked at 390 px: readable.
+- Packet captures current for this hash (shots stamp); open-exercises-L2-1280 level boxes consistent with the previous pass; the diff changes only the presentation of two Kaava lines (≈ → =), no layout change.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
