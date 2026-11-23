@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 006256f025db0ed7
+CONTENT-HASH: e98134b4daccc02f
 
 ## Blocking
 None.
@@ -19,3 +19,9 @@ None.
 ## Delta 4 (2026-10-31)
 
 - Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+
+## Delta 5 (2026-11-23)
+
+- investigation.md only, 6 lines: the unit spacing `\ ` became the thin space `\,` in $2$–$4\,\text{m}$, $0{,}1\,\text{rad}$, $1\,\text{nm} = 10^{-9}\,\text{m}$, $(d \pm \Delta d)\,\mu\text{m}$ (twice) and $0{,}3\,\text{mm}$. Values, units and formulas are unchanged and still read correctly; no other text changed.
+- Rechecked the small-angle claim: for $\theta < 0{,}1\,\text{rad}$, $\tan\theta/\sin\theta = 1/\cos\theta < 1{,}005$, so the difference is under 1 %; $0{,}1\,\text{rad} \approx 5{,}7^\circ$ fits "alle noin $6^\circ$".
+- investigation.json and teacher.md unchanged.

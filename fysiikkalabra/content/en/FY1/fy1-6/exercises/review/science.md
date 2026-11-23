@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: eca909dafc4a2318
-SCOPE: delta added-exercise from 0c444b9a373a531a base 81db4a6fd727
+CONTENT-HASH: bfb82ec10be5d89c
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- content/en/FY1/fy1-6/exercises/solutions.md:109 (fy1-6-L3-02) — the new block stops at t2 = v2/g with g still numeric; the passed version simplified to t2 = v2 t1/v1 (house rule: simplify symbolically to the end) — add the row t2 = v2 t1/v1, same in Finnish.
 
 ## Checked
-- Added task fy1-6-L1-09 only; hash recomputed at start and end.
-- Table value: free-fall acceleration on the Moon 1.622 m/s^2 (about 1.62); correct.
-- Conditions for v = gt stated in the task: from rest, no air resistance; matches the FY1 linear model v = gt.
-- Independent recompute 4.866 m/s = answers.py; the shown 4.9 m/s is 0.7 % above it, within 4 %.
-- Two significant figures from t = 3.0 s; reasonableness via Earth's 29.4 m/s and the ratio 9.81/1.622 = 6.05 is right.
-- en numbers identical to the Finnish original.
+- Delta (work queue 8g): only the Formula steps of solutions.md changed (aligned blocks from the basic equation); every other changed line in the diff is a paragraph split or spacing, no number, sign or unit changed.
+- Each new Formula block checked line by line: every equality and rearrangement is algebraically valid and leads to the formula the unchanged Substitution uses.
+- Script comparison with the Finnish Kaava steps (which passed science review): same number of aligned rows, inequalities and numerals in every solution.
+- answers.py and exercises.json values not in the diff; answers, units and tolerances unchanged from the passed version.
+- Hash recomputed at start and end with --exercises --lang en: unchanged.
+- g = Delta v/Delta t = v/t used only in tasks whose Given says the object starts from rest (checked L1-01..05, L3-05 and the Moon hammer); L3-04 keeps v = gt valid only for time from the start of the fall.
+- (Finnish re-review after its fix pending; this verdict covers the en text as it is.)

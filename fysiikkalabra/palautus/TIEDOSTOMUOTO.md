@@ -158,3 +158,26 @@ ja *Palauta*, moduulisivun *Tallenna työ tiedostoon* ja editorin *Tallennetut r
   omalle rivilleen (avain `<lomakkeen rivi>#<luku>`). Taulukkoon ja arviointinäkymään tulevat vain Tehty-merkinnät
   (`Eteneminen`: `<annettuja>|<tehtävä>,…`). Valmistumisaikoja ja etenemisgraafia ei näytetä eikä käytetä arviointiin.
   Vanhat luvun tiedostot (`ruukkilabra-palautus`, versiot 1–4) kelpaavat edelleen.
+
+## Koko työn varmuuskopio `Ruukkilabra_kaikki_<pvm>_<aika>.json` (ruukkilabra-kaikki, versio 1, 17b PR 1, 2026-11-23)
+
+Tietosuoja-sivun painikkeet *Tallenna kaikki työni tiedostoon* ja *Avaa kaikki työni tiedostosta* (`templates/kaikki.js`).
+**Ei palautus**: tiedostoa ei lähetetä opettajalle, ja arviointisivun tuonti (`rlValidate_`) hylkää sen viestillä
+"tiedosto on koko työn varmuuskopio, ei palautus". Opintojakson työtiedostoon (`ruukkilabra-tyo`) ei lisätty mitään.
+
+```
+{ "format": "ruukkilabra-kaikki", "version": 1, "lang": "fi", "created": ISO-aika, "content_sha256": 64 hex,
+  "modules": { "FY3": { "store": { "local": { avain: teksti }, "solutions": [padstore-tietue] } }, … },   (vain moduulit, joilla on työtä)
+  "progress": { "v": 1, "done": { tehtävä-id: ISO-aika }, "log": [[id, ISO-aika, 1|0]] } | null,
+  "site": { "ruukkilabra:kortit": teksti, "ruukkilabra:kortit-suunta": teksti, "ruukkilabra:viimeisin": teksti } }   (vain olemassa olevat avaimet)
+```
+
+- Moduulin `store` on täsmälleen sama kuin työtiedoston `store`: koodi on yhteinen (`padstore.js` `work(<MODUULI>)`:
+  mitkä avaimet ja tietueet ovat moduulin, lukeminen, ja tuonnin kaksi vaihetta `plan` ja `apply`).
+- `content_sha256` = SHA-256 merkkijonosta `JSON.stringify({ modules, progress, site })`.
+- Avaus tarkistaa koko tiedoston (muoto, versio, tarkistussumma, jokainen tietue ja avain) ennen kuin mitään kirjoitetaan.
+  Sääntö on sama kuin työtiedostolla: puuttuva lisätään; jos tässä selaimessa on eri tieto, yksi kysymys kaikista yhteensä:
+  OK korvaa tiedoston tiedoilla, Peruuta jättää tämän selaimen tiedot ja lisää vain puuttuvat. Tehty-rastit yhdistetään ajan mukaan.
+- Tiedostossa ei ole nimeä, yhteystietoja, ääneenluvun asetuksia, mallia eikä verkottoman käytön välimuistia.
+- Työtiedosto, jota yritetään avata tässä, hylätään viestillä (`kaikki_wrong`); kaikki-tiedosto opintojakson sivulla
+  hylätään kuten mikä tahansa vieras tiedosto.

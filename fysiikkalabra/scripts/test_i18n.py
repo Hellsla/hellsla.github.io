@@ -46,7 +46,7 @@ if "exercises: draft" in subprocess.run([sys.executable, str(SRC / "scripts/revi
     # an exercise set awaiting its reviews: the site keeps its last reviewed version from git, which this copy has no history for
     _ex = lambda h: re.sub(r'<section class="stage stage-practice" id="exercises".*?</section>', "", h, flags=re.S)
     fi_page, site_page = _ex(fi_page), _ex(site_page)
-expect("one language: the build is the committed site, without language links", code == 0 and fi_page == site_page and 'class="lang"' not in fi_page, out[-400:])
+expect("one language: the build is the site CI built (site/ is not committed), without language links", code == 0 and fi_page == site_page and 'class="lang"' not in fi_page, out[-400:])
 
 # a second language: lang/en.json and content/en/, nothing else
 en = json.loads((T / "lang/fi.json").read_text())

@@ -3,103 +3,7 @@
 > **Why** did fusion machines grow so large in the 1970s and 1980s?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a vast, brightly lit experimental hall with a travelling crane under the roof. In the middle stands a huge ring-shaped machine as tall as a three-storey house: a grey vacuum vessel inside large D-shaped blue coils, surrounded by pipes. To its right, a big box on legs points a tube into the ring. Five small people in different coloured shirts stand on the floor in front of it and look tiny next to the machine." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="bm-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8edf1"/><stop offset="1" stop-color="#c9d3db"/></linearGradient><linearGradient id="bm-floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aa6b0"/><stop offset="1" stop-color="#7a8792"/></linearGradient><linearGradient id="bm-vessel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient><linearGradient id="bm-nbi" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#bm-wall)"/>
-  <line x1="0" y1="0" x2="0" y2="470" stroke="#b7c2cc" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="150" y1="0" x2="150" y2="470" stroke="#b7c2cc" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="300" y1="0" x2="300" y2="470" stroke="#b7c2cc" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="450" y1="0" x2="450" y2="470" stroke="#b7c2cc" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="600" y1="0" x2="600" y2="470" stroke="#b7c2cc" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="750" y1="0" x2="750" y2="470" stroke="#b7c2cc" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="900" y1="0" x2="900" y2="470" stroke="#b7c2cc" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="1050" y1="0" x2="1050" y2="470" stroke="#b7c2cc" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="1200" y1="0" x2="1200" y2="470" stroke="#b7c2cc" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="0" y="40" width="1200" height="16" fill="#6c757d"/>
-  <rect x="330" y="56" width="560" height="28" fill="#e8590c" stroke="#1f2933" stroke-width="2"/>
-  <line x1="610" y1="84" x2="610" y2="140" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M596,140 h28 l-6,16 h-16 Z" fill="#6c757d" stroke-linejoin="round"/>
-  <rect x="0" y="470" width="1200" height="130" fill="url(#bm-floor)"/>
-  <line x1="-300" y1="470" x2="-520" y2="600" stroke="#8a96a1" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="-180" y1="470" x2="-400" y2="600" stroke="#8a96a1" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="-60" y1="470" x2="-280" y2="600" stroke="#8a96a1" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="60" y1="470" x2="-160" y2="600" stroke="#8a96a1" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="180" y1="470" x2="-40" y2="600" stroke="#8a96a1" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="300" y1="470" x2="80" y2="600" stroke="#8a96a1" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="420" y1="470" x2="200" y2="600" stroke="#8a96a1" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="540" y1="470" x2="320" y2="600" stroke="#8a96a1" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="660" y1="470" x2="440" y2="600" stroke="#8a96a1" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="780" y1="470" x2="560" y2="600" stroke="#8a96a1" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="900" y1="470" x2="680" y2="600" stroke="#8a96a1" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1020" y1="470" x2="800" y2="600" stroke="#8a96a1" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1140" y1="470" x2="920" y2="600" stroke="#8a96a1" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1260" y1="470" x2="1040" y2="600" stroke="#8a96a1" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="1380" y1="470" x2="1160" y2="600" stroke="#8a96a1" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M250,460 V190 Q250,130 305.0,130 Q360,130 360,220 V380 Q360,460 305.0,460 Z" fill="none" stroke="#8fb3d9" stroke-width="26" stroke-linejoin="round"/>
-  <path d="M340,460 V190 Q340,130 395.0,130 Q450,130 450,220 V380 Q450,460 395.0,460 Z" fill="none" stroke="#8fb3d9" stroke-width="26" stroke-linejoin="round"/>
-  <path d="M430,460 V190 Q430,130 485.0,130 Q540,130 540,220 V380 Q540,460 485.0,460 Z" fill="none" stroke="#8fb3d9" stroke-width="26" stroke-linejoin="round"/>
-  <path d="M520,460 V190 Q520,130 575.0,130 Q630,130 630,220 V380 Q630,460 575.0,460 Z" fill="none" stroke="#8fb3d9" stroke-width="26" stroke-linejoin="round"/>
-  <path d="M610,460 V190 Q610,130 665.0,130 Q720,130 720,220 V380 Q720,460 665.0,460 Z" fill="none" stroke="#8fb3d9" stroke-width="26" stroke-linejoin="round"/>
-  <path d="M700,460 V190 Q700,130 755.0,130 Q810,130 810,220 V380 Q810,460 755.0,460 Z" fill="none" stroke="#8fb3d9" stroke-width="26" stroke-linejoin="round"/>
-  <path d="M790,460 V190 Q790,130 845.0,130 Q900,130 900,220 V380 Q900,460 845.0,460 Z" fill="none" stroke="#8fb3d9" stroke-width="26" stroke-linejoin="round"/>
-  <rect x="240" y="230" width="690" height="160" rx="70" fill="url(#bm-vessel)" stroke="#1f2933" stroke-width="3"/>
-  <path d="M290,460 V170 Q290,110 350.0,110 Q410,110 410,200 V380 Q410,460 350.0,460 Z" fill="none" stroke="#1971c2" stroke-width="26" stroke-linejoin="round"/>
-  <path d="M395,460 V170 Q395,110 455.0,110 Q515,110 515,200 V380 Q515,460 455.0,460 Z" fill="none" stroke="#1971c2" stroke-width="26" stroke-linejoin="round"/>
-  <path d="M500,460 V170 Q500,110 560.0,110 Q620,110 620,200 V380 Q620,460 560.0,460 Z" fill="none" stroke="#1971c2" stroke-width="26" stroke-linejoin="round"/>
-  <path d="M605,460 V170 Q605,110 665.0,110 Q725,110 725,200 V380 Q725,460 665.0,460 Z" fill="none" stroke="#1971c2" stroke-width="26" stroke-linejoin="round"/>
-  <path d="M710,460 V170 Q710,110 770.0,110 Q830,110 830,200 V380 Q830,460 770.0,460 Z" fill="none" stroke="#1971c2" stroke-width="26" stroke-linejoin="round"/>
-  <path d="M815,460 V170 Q815,110 875.0,110 Q935,110 935,200 V380 Q935,460 875.0,460 Z" fill="none" stroke="#1971c2" stroke-width="26" stroke-linejoin="round"/>
-  <line x1="160" y1="300" x2="250" y2="300" stroke="#6c757d" stroke-width="8" stroke-linecap="butt"/>
-  <line x1="160" y1="330" x2="250" y2="330" stroke="#6c757d" stroke-width="8" stroke-linecap="butt"/>
-  <rect x="120" y="260" width="60" height="210" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="960" y="230" width="190" height="120" rx="8" fill="url(#bm-nbi)" stroke="#1f2933" stroke-width="3"/>
-  <rect x="900" y="280" width="70" height="26" fill="#8a96a3" stroke="#1f2933" stroke-width="2"/>
-  <rect x="975" y="350" width="16" height="120" fill="#6c757d"/>
-  <rect x="1120" y="350" width="16" height="120" fill="#6c757d"/>
-  <path d="M290.5,560 L293,506 H307 L309.5,560 H302 L300,524 L298,560 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M288,509.5 Q286.5,470 300,468 Q313.5,470 312,509.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <path d="M289,475 L285.5,509.5" fill="none" stroke="#c92a2a" stroke-width="7.92" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="285.5" cy="512.5" r="3.96" fill="#f1dfb5"/>
-  <path d="M311,475 L314.5,509.5" fill="none" stroke="#c92a2a" stroke-width="7.92" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="314.5" cy="512.5" r="3.96" fill="#f1dfb5"/>
-  <rect x="297" y="460.5" width="6.5" height="8.5" fill="#f1dfb5"/>
-  <circle cx="300" cy="453.5" r="10.8" fill="#f1dfb5"/>
-  <path d="M289,453.5 Q289,440.5 300,441 Q311.5,441 311,452 Q302,447.5 289,453.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M350.5,560 L353,506 H367 L369.5,560 H362 L360,524 L358,560 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M348,509.5 Q346.5,470 360,468 Q373.5,470 372,509.5 Z" fill="#2b8a3e" stroke-linejoin="round"/>
-  <path d="M349,475 L345.5,509.5" fill="none" stroke="#2b8a3e" stroke-width="7.92" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="345.5" cy="512.5" r="3.96" fill="#f1dfb5"/>
-  <path d="M371,475 L374.5,509.5" fill="none" stroke="#2b8a3e" stroke-width="7.92" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="374.5" cy="512.5" r="3.96" fill="#f1dfb5"/>
-  <rect x="357" y="460.5" width="6.5" height="8.5" fill="#f1dfb5"/>
-  <circle cx="360" cy="453.5" r="10.8" fill="#f1dfb5"/>
-  <path d="M349,453.5 Q349,440.5 360,441 Q371.5,441 371,452 Q362,447.5 349,453.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M690.5,560 L693,506 H707 L709.5,560 H702 L700,524 L698,560 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M688,509.5 Q686.5,470 700,468 Q713.5,470 712,509.5 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <path d="M689,475 L685.5,509.5" fill="none" stroke="#1971c2" stroke-width="7.92" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="685.5" cy="512.5" r="3.96" fill="#f1dfb5"/>
-  <path d="M711,475 L714.5,509.5" fill="none" stroke="#1971c2" stroke-width="7.92" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="714.5" cy="512.5" r="3.96" fill="#f1dfb5"/>
-  <rect x="697" y="460.5" width="6.5" height="8.5" fill="#f1dfb5"/>
-  <circle cx="700" cy="453.5" r="10.8" fill="#f1dfb5"/>
-  <path d="M689,453.5 Q689,440.5 700,441 Q711.5,441 711,452 Q702,447.5 689,453.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M750.5,560 L753,506 H767 L769.5,560 H762 L760,524 L758,560 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M748,509.5 Q746.5,470 760,468 Q773.5,470 772,509.5 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <path d="M749,475 L745.5,509.5" fill="none" stroke="#e8590c" stroke-width="7.92" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="745.5" cy="512.5" r="3.96" fill="#f1dfb5"/>
-  <path d="M771,475 L774.5,509.5" fill="none" stroke="#e8590c" stroke-width="7.92" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="774.5" cy="512.5" r="3.96" fill="#f1dfb5"/>
-  <rect x="757" y="460.5" width="6.5" height="8.5" fill="#f1dfb5"/>
-  <circle cx="760" cy="453.5" r="10.8" fill="#f1dfb5"/>
-  <path d="M749,453.5 Q749,440.5 760,441 Q771.5,441 771,452 Q762,447.5 749,453.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M1030.5,560 L1033,506 H1047 L1049.5,560 H1042 L1040,524 L1038,560 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M1028,509.5 Q1026.5,470 1040,468 Q1053.5,470 1052,509.5 Z" fill="#7e22ce" stroke-linejoin="round"/>
-  <path d="M1029,475 L1025.5,509.5" fill="none" stroke="#7e22ce" stroke-width="7.92" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="1025.5" cy="512.5" r="3.96" fill="#f1dfb5"/>
-  <path d="M1051,475 L1054.5,509.5" fill="none" stroke="#7e22ce" stroke-width="7.92" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="1054.5" cy="512.5" r="3.96" fill="#f1dfb5"/>
-  <rect x="1037" y="460.5" width="6.5" height="8.5" fill="#f1dfb5"/>
-  <circle cx="1040" cy="453.5" r="10.8" fill="#f1dfb5"/>
-  <path d="M1029,453.5 Q1029,440.5 1040,441 Q1051.5,441 1051,452 Q1042,447.5 1029,453.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <image href="pics/fy14/fy14-big-machines-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## After the stampede {Stampede}
@@ -115,26 +19,10 @@ The main new method of the 1970s was **neutral beam injection**. Ions of hydroge
 In Princeton, the **Princeton Large Torus (PLT)** started in December 1975. With four neutral beam injectors, it reached ion temperatures of about $60$ million kelvin on the night of 24 July 1978. The result was shown at a conference in Innsbruck in August 1978: a tokamak could reach the temperatures a reactor needs. Temperature alone is not enough, though: density and confinement time had to improve too.
 
 <svg data-fig="heating" viewBox="0 0 600 492" role="img" aria-label="Diagram of three ways to heat a tokamak plasma, drawn on a cross-section of the plasma ring seen from above. In the middle, an orange ring of plasma. A dark arrow along the ring shows the plasma current: ohmic heating. From the right, outside the ring, a box labelled neutral beam sends a short arrow and a row of dark dots, fast neutral atoms, into the plasma band, where the dots fade out: the atoms are caught in the plasma. From the lower left, an antenna sends curved wave lines into the plasma: radio waves." style="max-width:100%;font-size:24px">
-  <rect x="0" y="0" width="600" height="492" fill="#ffffff"/>
-  <ellipse cx="260" cy="250" rx="180" ry="150" fill="none" stroke="#ffc078" stroke-width="64"/>
-  <ellipse cx="260" cy="250" rx="180" ry="150" fill="none" stroke="#e8590c" stroke-width="6" stroke-opacity="0.5"/>
-  <path d="M89,203.5 L92.5,195 L97,186 L102.5,177.5 L108,169.5 L114.5,162 L121.5,154.5 L129,147.5 L137,140.5 L145.5,134.5 L154,128.5 L163.5,123.5 L173.5,118.5 L183.5,114.5 L193.5,110.5 L204.5,107.5 L215,104.5 L226.5,102.5 L237.5,101 L248.5,100.5 L260,100 L271.5,100.5 L282.5,101 L293.5,102.5 L305,104.5 L315.5,107.5 L326.5,110.5 L336.5,114.5 L346.5,118.5 L356.5,123.5 L366,128.5" fill="none" stroke="#1f2933" stroke-width="5" stroke-linejoin="round"/>
-  <line x1="346.5" y1="118.5" x2="364.5" y2="128" stroke="#1f2933" stroke-width="5" stroke-linecap="butt"/>
-  <path d="M381,136.5 L359,135.5 L367.5,119.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <image href="pics/fy14/fy14-big-machines-heating.webp" x="0" y="0" width="600" height="496.2" preserveAspectRatio="none"/>
   <foreignObject x="80" y="23.5" width="360" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{current: ohmic heating}$</div></foreignObject>
-  <rect x="500" y="215" width="90" height="70" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="495" y="143.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{neutral}$</div></foreignObject>
   <foreignObject x="495" y="173.5" width="100" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{beam}$</div></foreignObject>
-  <line x1="500" y1="250" x2="491" y2="250" stroke="#1f2933" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M478,250 L492,243.5 L492,256.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <circle cx="462" cy="250" r="8" fill="#1f2933" fill-opacity="1.00"/>
-  <circle cx="446" cy="250" r="8" fill="#1f2933" fill-opacity="0.78"/>
-  <circle cx="430" cy="250" r="8" fill="#1f2933" fill-opacity="0.56"/>
-  <circle cx="414" cy="250" r="8" fill="#1f2933" fill-opacity="0.34"/>
-  <rect x="20" y="440" width="90" height="34" rx="4" fill="#b8622d" stroke="#1f2933" stroke-width="2"/>
-  <path d="M80,392.5 A50,50 0 0,1 112.5,425" fill="none" stroke="#b8622d" stroke-width="4"/>
-  <path d="M90,360 A84,84 0 0,1 145,415" fill="none" stroke="#b8622d" stroke-width="4"/>
-  <path d="M100.5,328 A118,118 0 0,1 177,404.5" fill="none" stroke="#b8622d" stroke-width="4"/>
   <foreignObject x="124" y="442.5" width="260" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{antenna: radio waves}$</div></foreignObject>
 </svg>
 

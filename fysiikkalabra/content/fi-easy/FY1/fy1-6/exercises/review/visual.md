@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: d8e66ca82e009cca
+CONTENT-HASH: bbb119c55d2a3d4c
 
 ## Blocking
 - none
@@ -8,8 +8,8 @@ CONTENT-HASH: d8e66ca82e009cca
 - none
 
 ## Checked
-- Delta 8c md-paragraphs (light-gate task Periaate in four paragraphs; filter-paper task Periaate). Opened fy1-6-open-exercises-L2-1280-9, L2-1280-10, L2-1280-11, L3-1280-3, L3-1280-4, L3-1280-6, L3-1280-7. Paragraph breaks read clearly, formulas aligned, nothing clipped.
-- Hash run at start; the content was not edited meanwhile.
+- delta 8g (Kaava steps as aligned display blocks), economical sample from the lesson's review/shots (current for this hash): fi fy1-5 open-exercises-L3-1280-4 (seven rows), fi fy1-6 L3-1280-7 (five rows with a subscripted left side), en fy1-1 L3-1280-4 and fy1-3 L3-1280-3 (Substitution blocks), fi-easy fy1-7 L3-1280-5 (five single-relation rows).
+- Rows align at the relation sign, fractions and subscripts legible, no clipping or overflow, blocks sit apart from the text, trailing sentences read as their own line; Muunnokset/Sijoitus/Vastaus/Reasonableness survived. This lesson's own capture was not opened; judged from the sampled blocks, which use the same shared component. No figures in the delta.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

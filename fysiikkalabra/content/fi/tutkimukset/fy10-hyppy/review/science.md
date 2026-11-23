@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9fdb422985439073
+CONTENT-HASH: d851c6b8f267c458
 
 ## Blocking
 None.
@@ -7,5 +7,5 @@ None.
 ## Polish
 None.
 
-## Checked (delta 2026-11-18)
-Headers $h_\text{imp}$ and $h_\text{lento}$ defined in the sentence before the table (from the impulse and from the flight time); they match the two methods (h = v_0^2/2g and h = g t_lento^2/8) and the later $\bar{h} \pm \Delta h$ and $h_\text{max}, h_\text{min}$ use plain h without clash. No physics changed.
+## Checked (delta 2026-11-23)
+Diff since 6f7dff5c0a~3: only the forces figure's aria-label (investigation.md and figures.py) gained the prefix "Kaaviokuva:". The description still matches the physics: at rest N = G (equal arrows, G from the centre down, N from the contact surface up); during the push N > G and the acceleration a points up, drawn as a separate orange arrow beside the body, not as a force. investigation.json and teacher.md unchanged. No physics or mathematics changed; earlier PASS (9fdb422985439073) stands.

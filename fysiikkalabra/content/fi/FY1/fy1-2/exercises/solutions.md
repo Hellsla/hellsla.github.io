@@ -2,7 +2,7 @@
 **Annettu:** hiuksen paksuus $l = 82\,\mu\text{m}$
 **Kysytty:** paksuus $l$ millimetreinä
 **Periaate:** Suure ei muutu, kun sen yksikkö vaihdetaan; vain lukuarvo muuttuu. Etuliite mikro tarkoittaa kerrointa $10^{-6}$ ja etuliite milli kerrointa $10^{-3}$, joten $1\,\mu\text{m} = 10^{-3}\,\text{mm}$.
-**Kaava:** $1\,\mu\text{m} = 10^{-3}\,\text{mm}$
+**Kaava:** $$\begin{aligned} 1\,\mu\text{m} &= 10^{-3}\,\text{mm} \end{aligned}$$
 **Muunnokset:** Mikrometrin paikalle kirjoitetaan sen arvo millimetreinä, $10^{-3}\,\text{mm}$.
 **Sijoitus:** $l = 82\,\mu\text{m} = 82\cdot 10^{-3}\,\text{mm} = 0{,}082\,\text{mm}$
 **Vastaus:** $0{,}082\,\text{mm}$, kaksi merkitsevää numeroa kuten lähtöarvossa $82\,\mu\text{m}$ (johtava nolla ei ole merkitsevä).
@@ -12,7 +12,7 @@
 **Annettu:** Maan ja Kuun etäisyys $s = 384\,400\,\text{km}$; $1\,\text{Mm} = 10^{6}\,\text{m}$
 **Kysytty:** etäisyys $s$ megametreinä
 **Periaate:** Etäisyys on sama riippumatta yksiköstä. Etuliite mega on $10^{6}$ ja etuliite kilo $10^{3}$, joten $1\,\text{Mm} = 10^{3}\,\text{km}$.
-**Kaava:** $1\,\text{km} = 10^{-3}\,\text{Mm}$
+**Kaava:** $$\begin{aligned} 1\,\text{km} &= 10^{-3}\,\text{Mm} \end{aligned}$$
 **Muunnokset:** Megametri on tuhat kilometriä, joten kilometri on tuhannesosa megametristä. Kilometrin paikalle kirjoitetaan $10^{-3}\,\text{Mm}$.
 **Sijoitus:** $s = 384\,400\,\text{km} = 384\,400\cdot 10^{-3}\,\text{Mm} = 384{,}4\,\text{Mm}$
 **Vastaus:** $384{,}4\,\text{Mm}$. Loppunolliin päättyvänä kokonaislukuna annettu $384\,400\,\text{km}$ on tämän kirjan tehtävissä tarkka arvo, ja $1\,\text{km} = 10^{-3}\,\text{Mm}$ on tarkka, joten lukuarvo vain jaetaan tuhannella eikä tulosta pyöristetä.
@@ -22,7 +22,7 @@
 **Annettu:** pituus $l = 1{,}85\,\text{m}$ (kolme merkitsevää numeroa), leveys $w = 0{,}92\,\text{m}$ (kaksi merkitsevää numeroa)
 **Kysytty:** pinta-ala $A$ neliömetreinä
 **Periaate:** Suorakulmion ala on sivujen tulo. Tulon merkitsevien numeroiden määrä on sama kuin epätarkimman tekijän: tulosta ei voi ilmoittaa tarkemmin kuin mittaustulos, jonka tarkkuus on pienin.
-**Kaava:** $A = l\,w$
+**Kaava:** $$\begin{aligned} A &= l\,w \end{aligned}$$
 **Muunnokset:** Ei tarvita: kumpikin sivu on jo metreinä, joten ala tulee yksikössä $\text{m}\cdot\text{m} = \text{m}^2$.
 **Sijoitus:** $A = 1{,}85\,\text{m}\cdot 0{,}92\,\text{m} = 1{,}702\,\text{m}^2$
 **Vastaus:** $1{,}7\,\text{m}^2$, kaksi merkitsevää numeroa, koska leveys $0{,}92\,\text{m}$ on epätarkin tieto.
@@ -33,7 +33,7 @@
 **Kysytty:** tangon pituus $l$ millimetreinä
 **Periaate:** Tanko ei ala viivaimen nollakohdasta, joten pituus ei ole oikean pään lukema vaan päiden lukemien erotus. Suure ei muutu, kun yksikkö vaihdetaan, joten senttimetrin paikalle kirjoitetaan sen arvo millimetreinä.
 **Kuvan lukeminen:** Vasen pää on kohdassa $x_1 = 2{,}0\,\text{cm}$ (kaksi pitkää viivaa nollasta). Oikea pää on kohdassa $x_2 = 13{,}6\,\text{cm}$ (kolmetoista pitkää viivaa ja kuusi millimetriviivaa sen jälkeen). Kumpikin pää osuu millimetriviivan kohdalle, joten lukemat saadaan millimetrin tarkkuudella.
-**Kaava:** $l = x_2 - x_1$
+**Kaava:** $$\begin{aligned} l &= x_2 - x_1 \end{aligned}$$
 **Muunnokset:** Yksi senttimetri on kymmenen millimetriä, joten senttimetrin paikalle kirjoitetaan $10\,\text{mm}$.
 **Sijoitus:** $l = 13{,}6\,\text{cm} - 2{,}0\,\text{cm} = 11{,}6\,\text{cm} = 11{,}6\cdot10\,\text{mm} = 116\,\text{mm}$
 **Vastaus:** $116\,\text{mm}$, kolme merkitsevää numeroa, koska molemmat lukemat on luettu millimetrin tarkkuudella ja siksi myös niiden erotus tunnetaan millimetrin tarkkuudella.
@@ -43,7 +43,7 @@
 **Annettu:** Kuun halkaisija $D_\text{Kuu} = 3474\,\text{km}$ vastaa yhtä kuvapistettä; Auringon halkaisija $D_\text{Aurinko} = 1{,}392\cdot10^{6}\,\text{km}$
 **Kysytty:** Auringon leveys kuvapisteinä $N$
 **Periaate:** Kuva on mittakaavassa, joten kaikki pituudet pienenevät samassa suhteessa. Kuvapisteiden määrä on pituuden ja Kuun halkaisijan suhde.
-**Kaava:** $N = \dfrac{D_\text{Aurinko}}{D_\text{Kuu}}\cdot 1\,\text{px}$
+**Kaava:** $$\begin{aligned} \dfrac{N}{1\,\text{px}} &= \dfrac{D_\text{Aurinko}}{D_\text{Kuu}} \\ N &= \dfrac{D_\text{Aurinko}}{D_\text{Kuu}}\cdot 1\,\text{px} \end{aligned}$$
 **Muunnokset:** Ei tarvita: molemmat halkaisijat ovat kilometreinä ja yksiköt supistuvat.
 **Sijoitus:** $N = \dfrac{1{,}392\cdot10^{6}\,\text{km}}{3474\,\text{km}}\cdot 1\,\text{px} = 400{,}69\,\text{px}$
 **Vastaus:** $400{,}7\,\text{px}$, neljä merkitsevää numeroa kuten lähtöarvoissa $1{,}392\cdot10^{6}\,\text{km}$ ja $3474\,\text{km}$.
@@ -58,7 +58,7 @@
 **Annettu:** nopeus $v = 18\,\text{km/h}$
 **Kysytty:** nopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Suure ei muutu, kun yksikkö vaihdetaan; vain lukuarvo muuttuu. Nopeuden yksikkö on pituus jaettuna ajalla, joten sekä kilometri että tunti korvataan arvollaan SI-yksiköissä.
-**Kaava:** nopeus on matka jaettuna ajalla, $v = \dfrac{s}{t}$, joten yksikkö on pituusyksikkö jaettuna aikayksiköllä
+**Kaava:** $$\begin{aligned} v &= \dfrac{s}{t} \end{aligned}$$ Yksikkö on pituusyksikkö jaettuna aikayksiköllä.
 **Muunnokset:** Kilometrin paikalle kirjoitetaan $1000\,\text{m}$ ja tunnin paikalle $3600\,\text{s}$, koska $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{h} = 3600\,\text{s}$.
 **Sijoitus:** $v = 18\,\text{km/h} = 18\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}} = 5{,}0\,\text{m/s}$
 **Vastaus:** $5{,}0\,\text{m/s}$, kaksi merkitsevää numeroa kuten lähtöarvossa $18\,\text{km/h}$.
@@ -80,7 +80,7 @@ Neliöity aika nimittäjässä antaa yksikön $\text{km/h}^2$, joka on kiihtyvyy
 **Annettu:** kellotaajuus $f = 3{,}2\,\text{GHz}$, aika $t = 5{,}0\,\text{ms}$; $1\,\text{GHz} = 10^{9}\,\text{Hz}$ ja $1\,\text{Hz} = 1/\text{s}$
 **Kysytty:** kellojaksojen lukumäärä $N$
 **Periaate:** Taajuus kertoo, montako jaksoa tapahtuu sekunnissa. Kun taajuus on vakio, jaksojen lukumäärä on taajuuden ja ajan tulo. Taajuus ja aika on ilmoitettava samassa aikayksikössä, joten kumpikin muunnetaan SI-yksiköihin.
-**Kaava:** $N = f\,t$
+**Kaava:** $$\begin{aligned} N &= f\,t \end{aligned}$$
 **Muunnokset:** $f = 3{,}2\,\text{GHz} = 3{,}2\cdot10^{9}\,\text{Hz} = 3{,}2\cdot10^{9}\,\text{1/s}$ ja $t = 5{,}0\,\text{ms} = 5{,}0\cdot10^{-3}\,\text{s}$.
 **Sijoitus:** $N = 3{,}2\cdot10^{9}\,\dfrac{1}{\text{s}}\cdot 5{,}0\cdot10^{-3}\,\text{s} = 16\cdot10^{6} = 1{,}6\cdot10^{7}$
 **Vastaus:** $16\,000\,000$ eli $1{,}6\cdot10^{7}$ jaksoa, kaksi merkitsevää numeroa kuten lähtöarvoissa $3{,}2\,\text{GHz}$ ja $5{,}0\,\text{ms}$.
@@ -90,7 +90,7 @@ Neliöity aika nimittäjässä antaa yksikön $\text{km/h}^2$, joka on kiihtyvyy
 **Annettu:** bakteerin pituus $l = 2{,}0\,\mu\text{m}$, matka $L = 1{,}0\,\text{mm}$
 **Kysytty:** bakteerien lukumäärä $N$
 **Periaate:** Lukumäärä on matkan ja yhden bakteerin pituuden suhde. Suhde on mielekäs vain, kun molemmat pituudet ovat samassa yksikössä, joten toinen muunnetaan.
-**Kaava:** $N = \dfrac{L}{l}$
+**Kaava:** $$\begin{aligned} N &= \dfrac{L}{l} \end{aligned}$$
 **Muunnokset:** $L = 1{,}0\,\text{mm} = 1{,}0\cdot10^{-3}\,\text{m}$ ja $l = 2{,}0\,\mu\text{m} = 2{,}0\cdot10^{-6}\,\text{m}$.
 **Sijoitus:** $N = \dfrac{1{,}0\cdot10^{-3}\,\text{m}}{2{,}0\cdot10^{-6}\,\text{m}} = 0{,}50\cdot10^{3} = 5{,}0\cdot10^{2} = 500$
 **Vastaus:** $500$ bakteeria, kaksi merkitsevää numeroa kuten lähtöarvoissa $1{,}0\,\text{mm}$ ja $2{,}0\,\mu\text{m}$.
@@ -100,7 +100,7 @@ Neliöity aika nimittäjässä antaa yksikön $\text{km/h}^2$, joka on kiihtyvyy
 **Annettu:** pinta-ala $A = 2{,}4\,\text{km}^2$; $1\,\text{ha} = 10\,000\,\text{m}^2$
 **Kysytty:** pinta-ala $A$ hehtaareina
 **Periaate:** Yksikön paikalle kirjoitetaan sen arvo toisessa yksikössä. Pinta-alan yksikkö on kahden pituuden tulo, joten $$\begin{aligned} 1\,\text{km}^2 &= 1000\,\text{m}\cdot1000\,\text{m} \\ &= 10^{6}\,\text{m}^2 \end{aligned}$$, ei $1000\,\text{m}^2$. Sen jälkeen lasketaan, montako hehtaaria neliömetrimäärään mahtuu.
-**Kaava:** $1\,\text{km}^2 = 10^{6}\,\text{m}^2$ ja $1\,\text{ha} = 10^{4}\,\text{m}^2$, joten $1\,\text{km}^2 = (10^{6} : 10^{4})\,\text{ha} = 100\,\text{ha}$
+**Kaava:** $$\begin{aligned} 1\,\text{km}^2 &= 10^{6}\,\text{m}^2 \\ 1\,\text{ha} &= 10^{4}\,\text{m}^2 \\ 1\,\text{km}^2 &= (10^{6} : 10^{4})\,\text{ha} \\ &= 100\,\text{ha} \end{aligned}$$
 **Muunnokset:** Neliökilometrin paikalle kirjoitetaan $100\,\text{ha}$.
 **Sijoitus:** $A = 2{,}4\,\text{km}^2 = 2{,}4\cdot100\,\text{ha} = 240\,\text{ha}$
 **Vastaus:** $240\,\text{ha}$, kirjoitettuna $2{,}4\cdot10^{2}\,\text{ha}$, kaksi merkitsevää numeroa kuten lähtöarvossa $2{,}4\,\text{km}^2$.
@@ -110,7 +110,7 @@ Neliöity aika nimittäjässä antaa yksikön $\text{km/h}^2$, joka on kiihtyvyy
 **Annettu:** nopeus $v = 15{,}341\,\text{km/s}$ (vakio), aika $t = 1\,\text{vrk}$
 **Kysytty:** matka $s$ miljoonina kilometreinä ($10^{6}\,\text{km}$)
 **Periaate:** Luotain etenee oletuksen mukaan tasaisella nopeudella, joten matka on nopeuden ja ajan tulo. Aika on ilmoitettava sekunteina, jotta se sopii nopeuden yksikköön.
-**Kaava:** $s = vt$
+**Kaava:** $$\begin{aligned} s &= vt \end{aligned}$$
 **Muunnokset:** $1\,\text{vrk} = 24\cdot 3600\,\text{s} = 86\,400\,\text{s}$. Lopuksi $1\,\text{milj. km} = 10^{6}\,\text{km}$.
 **Sijoitus:** $s = 15{,}341\,\dfrac{\text{km}}{\text{s}}\cdot 86\,400\,\text{s} = 1\,325\,462\,\text{km} = 1{,}3255\cdot10^{6}\,\text{km}$
 **Vastaus:** $1{,}3255$ milj. km, viisi merkitsevää numeroa kuten nopeudessa $15{,}341\,\text{km/s}$; vuorokauden pituus on tarkka.
@@ -120,7 +120,7 @@ Neliöity aika nimittäjässä antaa yksikön $\text{km/h}^2$, joka on kiihtyvyy
 **Annettu:** taulukosta nopeudet: pikalaiva $38{,}0$ solmua, juna $66{,}0\,\text{km/h}$, pyöräilijä $9{,}0\,\text{m/s}$ ja kalastusvene $12{,}0$ solmua; $1\,\text{solmu} = 1{,}852\,\text{km/h}$
 **Kysytty:** nopein kulkuneuvo ja sen nopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Lukuarvoja voi verrata vasta, kun ne on ilmoitettu samassa yksikössä. Siksi kaikki nopeudet muunnetaan yksikköön $\text{m/s}$, ja suurin valitaan. Taulukon suurin lukuarvo $66{,}0$ ei kerro mitään, koska se on eri yksikössä kuin muut.
-**Kaava:** $1\,\text{solmu} = 1{,}852\,\text{km/h}$ ja $1\,\text{km/h} = \dfrac{1000\,\text{m}}{3600\,\text{s}}$, joten $v = n\cdot 1{,}852\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}}$, kun solmuja on $n$
+**Kaava:** $$\begin{aligned} 1\,\text{solmu} &= 1{,}852\,\text{km/h} \\ 1\,\text{km/h} &= \dfrac{1000\,\text{m}}{3600\,\text{s}} \\ v &= n\cdot 1{,}852\,\text{km/h} \\ &= n\cdot 1{,}852\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}} \end{aligned}$$ Tässä $n$ on solmujen määrä.
 **Muunnokset:** Pikalaiva $$\begin{aligned} &38{,}0\cdot1{,}852\,\text{km/h} \\ &= 70{,}38\,\text{km/h} \end{aligned}$$, kalastusvene $$\begin{aligned} &12{,}0\cdot1{,}852\,\text{km/h} \\ &= 22{,}22\,\text{km/h} \end{aligned}$$. Pyöräilijä on jo yksikössä $\text{m/s}$.
 **Sijoitus:** pikalaiva $70{,}38\,\text{km/h} = 70{,}38\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}} = 19{,}55\,\text{m/s}$; juna $66{,}0\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}} = 18{,}33\,\text{m/s}$; kalastusvene $22{,}22\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}} = 6{,}17\,\text{m/s}$; pyöräilijä $9{,}0\,\text{m/s}$. Nopeusjärjestys on pikalaiva, juna, pyöräilijä, kalastusvene.
 **Vastaus:** nopein on pikalaiva, $19{,}5\,\text{m/s}$, kolme merkitsevää numeroa kuten lähtöarvossa $38{,}0$ solmua; muunnoskerroin $1{,}852$ on tarkka.
@@ -130,7 +130,7 @@ Neliöity aika nimittäjässä antaa yksikön $\text{km/h}^2$, joka on kiihtyvyy
 **Annettu:** taulukosta viiden omenan massat $152{,}4$, $147{,}9$, $160{,}8$, $155{,}3$ ja $158{,}1$; sarakkeen otsikossa yksikkö $\text{kg}$
 **Kysytty:** virhe taulukossa ja omenan keskimassa $m_{\text{ka}}$ kilogrammoina
 **Periaate:** Mittaustulosta arvioidaan aina järkevyydellä. Omenan massa ei voi olla $150\,\text{kg}$, joten otsikon yksikkö on väärin: lukuarvot on mitattu grammoina. Keskiarvo on massojen summa jaettuna lukumäärällä, ja yksikkö korjataan sijoittamalla.
-**Kaava:** $$m_{\text{ka}} = \dfrac{m_1 + m_2 + m_3 + m_4 + m_5}{5}$$
+**Kaava:** $$\begin{aligned} m_{\text{ka}} &= \dfrac{m_1 + m_2 + m_3 + m_4 + m_5}{5} \end{aligned}$$
 **Muunnokset:** Oikea otsikko on $m\,(\text{g})$. Gramman paikalle kirjoitetaan sen arvo kilogrammoina, $1\,\text{g} = 10^{-3}\,\text{kg}$.
 **Sijoitus:** Massojen summa on $$\begin{aligned} &152{,}4\,\text{g} + 147{,}9\,\text{g} + 160{,}8\,\text{g} + 155{,}3\,\text{g} \\ &+ 158{,}1\,\text{g} \\ &= 774{,}5\,\text{g} \end{aligned}$$, joten $m_{\text{ka}} = \dfrac{774{,}5\,\text{g}}{5} = 154{,}9\,\text{g} = 154{,}9\cdot10^{-3}\,\text{kg} = 0{,}1549\,\text{kg}$
 **Vastaus:** $0{,}1549\,\text{kg}$, neljä merkitsevää numeroa kuten punnituksissa, jotka on annettu kymmenesosagrammaan. Omenoiden lukumäärä on tarkka luku.
@@ -140,7 +140,7 @@ Neliöity aika nimittäjässä antaa yksikön $\text{km/h}^2$, joka on kiihtyvyy
 **Annettu:** virtaama $q = 0{,}20\,\textsf{l}/\text{s}$ ja ämpärin tilavuus $V = 12\,\textsf{l}$; oppilaan tulos $t = qV = 2{,}4$ sekuntia
 **Kysytty:** oppilaan virhe ja oikea täyttöaika $t$ minuutteina
 **Periaate:** Aikaa laskettaessa tuloksen yksikön on oltava aikayksikkö. Virtaama kertoo, montako litraa tulee sekunnissa, joten kaavan on oltava $V = qt$.
-**Kaava:** $V = qt$, josta $t = \dfrac{V}{q}$
+**Kaava:** $$\begin{aligned} V &= qt \\ t &= \dfrac{V}{q} \end{aligned}$$
 **Muunnokset:** Yksikkö tarkistetaan sijoittamalla: oppilaan kaavassa $\textsf{l}/\text{s}\cdot\textsf{l} = \textsf{l}^2/\text{s}$, mikä ei ole aikayksikkö, joten kaava on väärä. Sekunnit muunnetaan lopuksi minuuteiksi: $1\,\text{min} = 60\,\text{s}$.
 **Sijoitus:** $t = \dfrac{12\,\textsf{l}}{0{,}20\,\textsf{l}/\text{s}} = 60\,\text{s} = \dfrac{60}{60}\,\text{min} = 1{,}0\,\text{min}$
 **Vastaus:** $1{,}0\,\text{min}$, kaksi merkitsevää numeroa kuten virtaamassa $0{,}20\,\textsf{l}/\text{s}$ ja tilavuudessa $12\,\textsf{l}$. Oppilaan $2{,}4$ ei ole sekunteja vaan yksikössä $\textsf{l}^2/\text{s}$.
@@ -150,7 +150,7 @@ Neliöity aika nimittäjässä antaa yksikön $\text{km/h}^2$, joka on kiihtyvyy
 **Annettu:** $c = 2{,}998\cdot10^{5}\,\text{km/s}$, $1\,\text{a} = 3{,}156\cdot10^{7}\,\text{s}$, $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$
 **Kysytty:** yhden valovuoden pituus $L$ astronomisina yksikköinä
 **Periaate:** Valovuosi on pituusyksikkö, ei aikayksikkö: se on matka, jonka valo kulkee tyhjiössä vuodessa. Valo etenee tasaisella nopeudella, joten annettu kaava $s = ct$ antaa matkan kilometreinä, ja sen jälkeen matka jaetaan AU:n pituudella.
-**Kaava:** $L = c\,t$
+**Kaava:** $$\begin{aligned} L &= c\,t \end{aligned}$$
 **Muunnokset:** $t = 1\,\text{a} = 3{,}156\cdot10^{7}\,\text{s}$ on jo sekunteina. Astronomisina yksikköinä matka saadaan, kun lasketaan, montako AU:ta ($1{,}496\cdot10^{8}\,\text{km}$) siihen mahtuu.
 **Sijoitus:** $$\begin{aligned} L &= 2{,}998\cdot10^{5}\,\dfrac{\text{km}}{\text{s}}\cdot 3{,}156\cdot10^{7}\,\text{s} \\ &= 9{,}462\cdot10^{12}\,\text{km} \end{aligned}$$ ja $9{,}462\cdot10^{12}\,\text{km} : 1{,}496\cdot10^{8}\,\text{km} = 6{,}325\cdot10^{4}$, eli $L = 6{,}325\cdot10^{4}\,\text{AU}$
 **Vastaus:** $63\,250\,\text{AU}$, kirjoitettuna $6{,}325\cdot10^{4}\,\text{AU}$, neljä merkitsevää numeroa kuten lähtöarvoissa.
@@ -160,7 +160,7 @@ Neliöity aika nimittäjässä antaa yksikön $\text{km/h}^2$, joka on kiihtyvyy
 **Annettu:** näytön leveys $W = 1920\,\text{px}$ (tarkka luku); Kuun halkaisija $D = 3474\,\text{km} = 1\,\text{px}$; matka $a = 30{,}07\,\text{AU}$; $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$
 **Kysytty:** kuinka moninkertainen matka on kuvassa yhden näytön leveyteen verrattuna, suhde $N$
 **Periaate:** Kuva on mittakaavassa, joten kilometrit muuttuvat kuvapisteiksi jakamalla Kuun halkaisijalla. Suhde $N$ on kuvapisteiden määrä jaettuna yhden näytön leveydellä.
-**Kaava:** $N = \dfrac{a}{D}\cdot\dfrac{1\,\text{px}}{W}$
+**Kaava:** $$\begin{aligned} N &= \dfrac{a}{D}\cdot\dfrac{1\,\text{px}}{W} \end{aligned}$$
 **Muunnokset:** Matka kilometreinä: $a = 30{,}07\,\text{AU} = 30{,}07\cdot 1{,}496\cdot10^{8}\,\text{km} = 4{,}498\cdot10^{9}\,\text{km}$. Jokainen $3474\,\text{km}$ on yksi kuvapiste, joten kuvapisteitä on $$\begin{aligned} &4{,}498\cdot10^{9}\,\text{km} : 3474\,\text{km} \\ &= 1{,}295\cdot10^{6} \end{aligned}$$.
 **Sijoitus:** $N = \dfrac{1{,}295\cdot10^{6}\,\text{px}}{1920\,\text{px}} = 674{,}4$
 **Vastaus:** noin $674{,}4$-kertainen eli $674{,}4$ näytön leveyttä, neljä merkitsevää numeroa kuten tiedoissa $30{,}07\,\text{AU}$, $1{,}496\cdot10^{8}\,\text{km}$ ja $3474\,\text{km}$; näytön leveys $1920\,\text{px}$ on tarkka luku eikä rajoita.
@@ -170,7 +170,7 @@ Neliöity aika nimittäjässä antaa yksikön $\text{km/h}^2$, joka on kiihtyvyy
 **Annettu:** etäisyys $d = 145\,\text{AU}$, $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$, $c = 2{,}998\cdot10^{5}\,\text{km/s}$; komento menee perille ja vahvistus palaa heti
 **Kysytty:** koko edestakaisen matkan aika $t$ tunteina
 **Periaate:** Valo etenee tasaisella nopeudella $c$, joten annettu kaava $s = ct$ antaa ajan. Komento ja vahvistus kulkevat kumpikin matkan $d$, joten koko matka on $2d$ eikä pelkkä $d$.
-**Kaava:** $t = \dfrac{2d}{c}$
+**Kaava:** $$\begin{aligned} 2d &= c\,t \\ t &= \dfrac{2d}{c} \end{aligned}$$
 **Muunnokset:** $d = 145\cdot 1{,}496\cdot10^{8}\,\text{km} = 2{,}169\cdot10^{10}\,\text{km}$. Lopuksi $1\,\text{h} = 3600\,\text{s}$.
 **Sijoitus:** $t = \dfrac{2\cdot 2{,}169\cdot10^{10}\,\text{km}}{2{,}998\cdot10^{5}\,\text{km/s}} = 1{,}447\cdot10^{5}\,\text{s}$. Tunteja on $1{,}447\cdot10^{5}\,\text{s} : 3600\,\text{s} = 40{,}2$, joten $t = 40{,}2\,\text{h}$
 **Vastaus:** $40{,}2\,\text{h}$, kolme merkitsevää numeroa kuten etäisyydessä $145\,\text{AU}$.
@@ -180,7 +180,7 @@ Neliöity aika nimittäjässä antaa yksikön $\text{km/h}^2$, joka on kiihtyvyy
 **Annettu:** $T = k\,L^{a}g^{b}m^{c}$, jossa $k$ on yksikötön; $L_1 = 0{,}250\,\text{m}$, $T_1 = 1{,}00\,\text{s}$, $L_2 = 1{,}00\,\text{m}$
 **Kysytty:** eksponentit $a$, $b$ ja $c$ sekä jaksonaika $T_2$ sekunteina
 **Periaate:** Yhtälön kummallakin puolella on oltava sama yksikkö. Yksiköistä saadaan siis ehdot eksponenteille. Kaavan muoto on tämän jälkeen tiedossa, ja yksikötön kerroin $k$ jää samaksi, kun heilurin pituus vaihtuu samassa paikassa, koska $k$ on heilahdusilmiön oma vakio eikä riipu pituudesta tai paikasta. Yksikkötarkastelu ei kuitenkaan anna lukua $k$: se kertoo vain, miten $T$ riippuu suureista, ei kertoimen suuruutta.
-**Kaava:** Yksiköt: $\text{s} = \text{m}^{a}\cdot\left(\tfrac{\text{m}}{\text{s}^2}\right)^{b}\cdot\text{kg}^{c} = \text{m}^{a+b}\,\text{s}^{-2b}\,\text{kg}^{c}$. Kilogramma esiintyy vain massassa, joten $c = 0$. Sekunnit antavat $-2b = 1$, eli $b = -\tfrac{1}{2}$, ja metrit $a + b = 0$, eli $a = \tfrac{1}{2}$. Siis $T = k\sqrt{\dfrac{L}{g}}$, ja koska $k$ ja $g$ pysyvät samoina, $T_2 = T_1\sqrt{\dfrac{L_2}{L_1}}$.
+**Kaava:** Yksiköt: $$\begin{aligned} \text{s} &= \text{m}^{a}\cdot\left(\tfrac{\text{m}}{\text{s}^2}\right)^{b}\cdot\text{kg}^{c} \\ &= \text{m}^{a+b}\,\text{s}^{-2b}\,\text{kg}^{c} \end{aligned}$$ Kilogramma esiintyy vain massassa, joten $c = 0$. Sekunnit antavat $-2b = 1$, eli $b = -\tfrac{1}{2}$, ja metrit $a + b = 0$, eli $a = \tfrac{1}{2}$. Siis $T = k\sqrt{\dfrac{L}{g}}$. Koska $k$ ja $g$ pysyvät samoina, $$\begin{aligned} T_1 &= k\sqrt{\dfrac{L_1}{g}} \\ T_2 &= k\sqrt{\dfrac{L_2}{g}} \\ \dfrac{T_2}{T_1} &= \sqrt{\dfrac{L_2}{L_1}} \\ T_2 &= T_1\sqrt{\dfrac{L_2}{L_1}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: pituudet ovat metreinä ja aika sekunteina.
 **Sijoitus:** $T_2 = 1{,}00\,\text{s}\cdot\sqrt{\dfrac{1{,}00\,\text{m}}{0{,}250\,\text{m}}} = 1{,}00\,\text{s}\cdot\sqrt{4{,}00} = 2{,}00\,\text{s}$
 **Vastaus:** $a = \tfrac{1}{2}$, $b = -\tfrac{1}{2}$ ja $c = 0$; $T_2 = 2{,}00\,\text{s}$, kolme merkitsevää numeroa kuten mittauksessa. Massa ei vaikuta jaksonaikaan. Yksiköt eivät anna kerrointa: pienillä heilahduksilla pätee $T = 2\pi\sqrt{\dfrac{L}{g}}$, jossa $2\pi$ on yksikötön luku, jota yksikkötarkastelu ei voi antaa. Tässä tehtävässä sitä ei tarvita, koska $k$ supistuu suhteesta $T_2/T_1$.
@@ -190,7 +190,7 @@ Neliöity aika nimittäjässä antaa yksikön $\text{km/h}^2$, joka on kiihtyvyy
 **Annettu:** taulukosta virtalähde A: $E_\text{A} = 0{,}65\,\text{kWh}$, $P_\text{A} = 85{,}0\,\text{W}$; virtalähde B: $E_\text{B} = 2{,}20\,\text{MJ}$, $P_\text{B} = 0{,}100\,\text{kW}$; $1\,\text{W} = 1\,\text{J/s}$
 **Kysytty:** kumpi virtalähde toimii kauemmin ja kuinka monta tuntia kauemmin
 **Periaate:** Lukuarvoja $0{,}65$ ja $2{,}20$ ei voi verrata, koska yksiköt $\text{kWh}$ ja $\text{MJ}$ ovat eri suuria. Virtalähde toimii ajan $t = \tfrac{E}{P}$, kunnes varastoitu energia on kulunut. Energia ja teho muunnetaan siksi yksiköihin J ja W.
-**Kaava:** $t = \dfrac{E}{P}$
+**Kaava:** $$\begin{aligned} P &= \dfrac{E}{t} \\ t &= \dfrac{E}{P} \end{aligned}$$
 **Muunnokset:** Kilowattitunnin paikalle kirjoitetaan $1000\,\text{W}\cdot3600\,\text{s}$, eli $1\,\text{kWh} = 3{,}6\,\text{MJ}$. $E_\text{A} = 0{,}65\cdot1000\,\text{W}\cdot3600\,\text{s} = 2{,}34\cdot10^{6}\,\text{J}$, $E_\text{B} = 2{,}20\cdot10^{6}\,\text{J}$ ja $P_\text{B} = 0{,}100\cdot1000\,\text{W} = 100\,\text{W}$. Sekunnit muunnetaan tunneiksi, $1\,\text{h} = 3600\,\text{s}$.
 **Sijoitus:** $t_\text{A} = \dfrac{2{,}34\cdot10^{6}\,\text{J}}{85{,}0\,\text{W}} = 2{,}753\cdot10^{4}\,\text{s} = 7{,}647\,\text{h}$ ja $t_\text{B} = \dfrac{2{,}20\cdot10^{6}\,\text{J}}{100\,\text{W}} = 2{,}20\cdot10^{4}\,\text{s} = 6{,}111\,\text{h}$. Erotus $7{,}647\,\text{h} - 6{,}111\,\text{h} = 1{,}54\,\text{h} \approx 1{,}5\,\text{h}$
 **Vastaus:** virtalähde A toimii kauemmin, noin $1{,}5\,\text{h}$, kaksi merkitsevää numeroa kuten energiassa $0{,}65\,\text{kWh}$. Virtalähteen B energia on vain $0{,}61\,\text{kWh}$, ja sen teho on suurempi. Väite ei siis ole oikein.
@@ -200,7 +200,7 @@ Neliöity aika nimittäjässä antaa yksikön $\text{km/h}^2$, joka on kiihtyvyy
 **Annettu:** taulukosta (MAFY-taulukko, Aurinkokunta) Kuun keskietäisyys Maasta $s = 384\,400\,\text{km}$; valon nopeus $c = 2{,}998\cdot10^{8}\,\text{m/s}$
 **Kysytty:** signaalin kulkuaika $t$ yksikössä $\text{s}$
 **Periaate:** Radiosignaali kulkee tyhjiössä vakionopeudella $c$, joten kulkuaika on matka jaettuna nopeudella.
-**Kaava:** $t = \dfrac{s}{c}$
+**Kaava:** $$\begin{aligned} s &= c\,t \\ t &= \dfrac{s}{c} \end{aligned}$$
 **Muunnokset:** Nopeus on yksikössä $\text{m/s}$, joten matka muunnetaan metreiksi: $s = 384\,400\,\text{km} = 384\,400\cdot10^{3}\,\text{m} = 3{,}844\cdot10^{8}\,\text{m}$.
 **Sijoitus:** $t = \dfrac{3{,}844\cdot10^{8}\,\text{m}}{2{,}998\cdot10^{8}\,\text{m/s}} = 1{,}282\,\text{s} \approx 1{,}28\,\text{s}$
 **Vastaus:** $t \approx 1{,}28\,\text{s}$ kolmella merkitsevällä numerolla. Kuun etäisyys MAFY-taulukossa (Aurinkokunta) on keskiarvo keskipisteestä keskipisteeseen, eikä signaalin kulkema matka ole tarkalleen se, joten kolme merkitsevää numeroa riittää. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
@@ -219,7 +219,7 @@ Uudessa määritelmässä Planckin vakiolle on päätetty tarkka lukuarvo $h = 6
 
 Kappaleeseen perustuvasta määritelmästä luovuttiin, koska vertailuissa kansallisten kopioiden massat erkanivat kansainvälisen kappaleen massasta. Kukaan ei voinut tietää, mikä kappaleista muuttui, sillä määritelmän mukaan kansainvälisen kappaleen massa oli aina tasan $1\,\text{kg}$.
 
-**Kaava:** suhteellinen muutos $\varepsilon = \dfrac{\Delta m}{m} \cdot 100\,\%$
+**Kaava:** $$\begin{aligned} \varepsilon &= \dfrac{\Delta m}{m} \cdot 100\,\% \end{aligned}$$
 
 **Muunnokset:** $\Delta m = 1\,\text{mg} = 10^{-6}\,\text{kg}$ ja $25\,\mu\text{g} = 25\cdot10^{-9}\,\text{kg} = 2{,}5\cdot10^{-8}\,\text{kg}$
 

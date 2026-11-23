@@ -1,22 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 9fdb422985439073
+CONTENT-HASH: d851c6b8f267c458
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fig-5 (model graph, 390 px) — the figure is 330 px wide, so the tick labels and the circled phase numbers 1–6 come out very small and the numbers ② and ⑥ sit close to the curve — set the figure to full column width on a phone or add a few px of space around the numbers.
-- [Minor] fig-5 — the six phases appear only as numbers; their names are in the aria-label only, so a sighted student gets no key — a one-line list of phases 1–6 under the figure would help, or ask the student explicitly to name them (Käsittele tulokset, question 1 already does).
-- [Minor] investigation.md Tutkimustehtävä, Turvallisuus and teacher.md — "hyppääjän paino ja massa ovat henkilökohtaisia tietoja" is said three times in nearly the same words — keep the full wording in Turvallisuus and shorten the others.
-- [Minor] Teoria — the model graph sits at the end of the closed "tuki O OO" block, after a long run of formulas, so a student in the independent mode never sees it (intended?) — the pedagogue should confirm.
-- [Minor] Mittaa tables — header "hyppy" is lowercase beside the capitalised cells and units (plain ordinary words); fine, but consider "Hyppy".
+- [Minor] fig-2 (forces, investigation.md:80–89) — the label $\overline{G}$ at the bottom left of each box is crossed by the box's left edge and sits tight against the plate — move the label outside the box (left of the edge) or raise it clear of the plate.
+- [Minor] Tutkimustehtävä, "voimat voi ilmoittaa painon monikertoina $\dfrac{N}{G}$" — a display fraction inline makes the line taller than its neighbours — use `\tfrac{N}{G}` inline (the same in the "I/G" and "N/G" inline uses in the guided box).
+- [Minor] "Päätät itse:" paragraph — one very long sentence listing seven choices (about 70 words), hard to scan on a phone — make it a short list or split after "hylkäät epäonnistuneen hypyn".
+- [Minor] fig-3 (model graph) — N and t axes carry no unit and no stated scale; the aria-label says "ilman lukuarvoja", but a visible short note "kaaviokuva, ei mittakaavassa" in the text beside it would make the schematic status clear to a sighted reader.
+- [Minor] for science: in fig-2 right panel check that the length of $\overline{N}$ against $\overline{G}$ and the size of $\overline{a}$ are only qualitative (they are not to scale, and the description should say so).
 
 ## Checked
-- Delta 2026-11-18: headers $h_\text{imp}$, $h_\text{lento}$ and the added sentence. Opened page-390-9 and -7: both tables fit 390 px, headers on one line, sentence names both heights; formulas beside unchanged.
-
-## Earlier checked (delta 2026-11-16)
-- Changed: privacy sentence shortened in Tutkimustehtävä, table headers 'Hyppy'. Opened page-1280-3 (task text and safety list read well, $N/G$ fraction renders; the repeated privacy wording is now in Turvallisuus only; header capitalisation resolved).
-- Delta of text and typography only; no figure changed (figure findings above are the teacher's redraw queue, not Blocking).
+- Opened fig-1-390, fig-2-390, fig-3-390 (all three figures), top-390 and top-1280.
+- Contact sheet 1 (captures #1–#12, the whole 390 px page).
+- 1280 px page parts 3, 4, 5, 6 and 7: safety, Tutkimustehtävä, Ennusta, Teoriaa lyhyesti with its figures, the display formulas, Suunnittele, Mittaa (both tables), Käsittele tulokset.
+- Not opened separately: 1280 parts 1–2 and 8–10, 390 parts 13–15, the open-ennusta capture, contact sheets 2 and 3. The text of the page was read in full from the packet.
+- Hero reads at 390 px (student in the middle third, no text); formulas render without red source; tables do not scroll sideways.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

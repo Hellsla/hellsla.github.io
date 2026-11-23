@@ -286,6 +286,7 @@ function rlValidate_(text, deep, work) {
   else try { data = JSON.parse(text); } catch (e) { throw rlError_('tiedosto ei ole JSON-tiedosto'); }
   if (!data || typeof data !== 'object' || Array.isArray(data)) throw rlError_('tiedoston rakenne on virheellinen');
   if (!work && data.format === RL_WORK_FORMAT) return rlValidateWork_(data, deep);
+  if (!work && data.format === 'ruukkilabra-kaikki') throw rlError_('tiedosto on koko työn varmuuskopio, ei palautus; palauta opintojakson työtiedosto');   // 17b: varmuuskopio ei mene opettajalle
   if (data.format !== RL_FORMAT) throw rlError_('tiedosto ei ole RuukkiLabran palautustiedosto');
   if (typeof data.version !== 'number') throw rlError_('tiedostomuodon versio puuttuu');
   if (data.version > RL_VERSION) throw rlError_('tiedostomuodon versio ' + data.version + ' on uudempi kuin tämä skripti tuntee');

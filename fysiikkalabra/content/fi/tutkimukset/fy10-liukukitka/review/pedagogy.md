@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 43e1c4e36cbb8f96
+CONTENT-HASH: a6a1e38a7bcef212
 
 ## Blocking
 
@@ -9,6 +9,6 @@ None.
 
 None.
 
-## Checked (delta round 2, 2026-11-15)
+## Checked (delta, 2026-11-23)
 
-Line 48 now reads "liukukitkakerroin epävarmuuksineen" and line 83 reads "missä $\mu$ on liukukitkakerroin. Kerroin on yksikötön." Both tautologies are gone and the sentences read correctly in context. No "liikekitka" is left in the md, json or teacher.md. Hash recomputed at the start and the end: 43e1c4e36cbb8f96.
+Diff since the earlier PASS (43e1c4e36cbb8f96): only the aria-label of the forces figure, now starting "Kaaviokuva, voimakuvio: ...". The description still gives a screen-reader user the same data (weights, directions, v and a) and discloses nothing beyond what the figure shows. No change to tasks, feedback, workload or phone usability. The earlier pedagogy findings stand.

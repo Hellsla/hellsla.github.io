@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 97cad8f01ce0cb21
+CONTENT-HASH: 1f3936346b55144f
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] Task 7-24 Järkevyys: four one-sentence paragraphs in a row read choppy; join the 270 g and 896 g sentences into one paragraph.
-- [Minor] Planet task Mallivastaus c) and d): many one-sentence paragraphs; grouping by idea (model assumption, rotation, NASA, Earth) would read better. Not blocking.
+- none
 
 ## Checked
-- Delta 8c md-paragraphs (lead density Vastaus, copper-aluminium Järkevyys, planet data task c) and d), PhET density task d). Opened fy1-7-open-exercises-L3-1280-5, L3-1280-6, L3-1280-7, L2-1280-14, L2-1280-15, L2-1280-17. Spacing even, formulas, tables and answer boxes intact, nothing clipped.
-- Hash run at start; the content was not edited meanwhile.
+- delta 8g (Kaava steps as aligned display blocks), economical sample from the lesson's review/shots (current for this hash): fi fy1-5 open-exercises-L3-1280-4 (seven rows), fi fy1-6 L3-1280-7 (five rows with a subscripted left side), en fy1-1 L3-1280-4 and fy1-3 L3-1280-3 (Substitution blocks), fi-easy fy1-7 L3-1280-5 (five single-relation rows).
+- Rows align at the relation sign, fractions and subscripts legible, no clipping or overflow, blocks sit apart from the text, trailing sentences read as their own line; Muunnokset/Sijoitus/Vastaus/Reasonableness survived. This lesson's own capture was not opened; judged from the sampled blocks, which use the same shared component. No figures in the delta.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

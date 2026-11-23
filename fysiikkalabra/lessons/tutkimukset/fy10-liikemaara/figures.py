@@ -133,8 +133,8 @@ def velocity():
 
 def model():
     """The conservation model: total momentum after against before is the line p' = p through the origin, slope 1."""
-    f = Fig("fy10l-model", 330, "Kuvaaja: kokonaisliikemäärä törmäyksen jälkeen kokonaisliikemäärän ennen törmäystä funktiona, "
-            "jos liikemäärä säilyy. Kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on yksi. Kuvassa näkyy "
+    f = Fig("fy10l-model", 330, "Mallikuvaaja: kokonaisliikemäärä törmäyksen jälkeen kokonaisliikemäärän ennen törmäystä funktiona "
+            "mallin mukaan, jos liikemäärä säilyy. Kuvaaja on origon kautta kulkeva suora, jonka kulmakerroin on yksi. Kuvassa näkyy "
             "positiivisten liikemäärien osa: jos liikemäärän suuruus pienenee törmäyksessä, piste on suoran alapuolella. "
             "Kuvaajassa ei ole mittauspisteitä.")
     ax = Axes(f, (90, 280), (470, 50), x=(0, 10), y=(0, 10), xticks=[], yticks=[], xlabel=r"p_\text{kok}",

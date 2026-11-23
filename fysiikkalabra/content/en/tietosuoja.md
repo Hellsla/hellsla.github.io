@@ -6,7 +6,13 @@ Ruukkilabra does not collect any information about students. The site has no ser
 
 So that your work is not lost when you close the page, Ruukkilabra saves some things only in this device's browser: your solutions and answers (solutions written in the editor with their formulas and pasted pictures, numerical answers, choices and written answers), your predictions and measurements, self-assessments, the times of tasks counted as done, lesson progress, concept card progress, and the read-aloud settings and voice model. When you save your first solution, the site asks the browser to keep the data persistently, so that the browser does not delete it by itself when disk space runs low. The browser also saves the pages you open, with their files, on this device, so that they open without a network connection.
 
+On the FY9 review course the browser also records which tasks you have tried, whether an attempt was right, close or wrong, how many hints you opened and the points you gave your own answer. This record stays in this device's browser only. It contains no name and none of the text you wrote, and it is not sent anywhere.
+
 Ruukkilabra does not send this data automatically to your teacher or anywhere else, and your teacher cannot see it in your browser.
+
+As a backup you can save all the work in this browser to one file on your device and open it on another device. The file holds the work of every module (solutions and answers, self-assessments, the times of tasks counted as done, the FY9 task record) as well as concept card progress and the chapter opened last, and a checksum. It has no name, no contact details and no read-aloud settings. This file is not a submission: the teacher's grading page does not accept it, and you submit work with the module's own work file.
+
+<div class="work-tools" id="kaikki-tyo" hidden></div>
 
 ## The work file
 
@@ -28,7 +34,7 @@ Submitted work is handled in the school's teaching in the same way as work retur
 
 ## How do I delete it?
 
-You can clear the data saved in your browser at any time by deleting the site data in your browser settings (Cookies and site data). On a shared computer, clear it when you finish or use a private window. The work files you saved are ordinary files on your device, so delete them yourself. Clearing the browser does not delete a file you have already submitted.
+You can clear the data saved in your browser at any time by deleting the site data in your browser settings (Cookies and site data). On a shared computer, clear it when you finish or use a private window. The work files you saved are ordinary files on your device, so delete them yourself. Clearing the browser does not delete a file you have already submitted. The task record is removed together with the browser's site data.
 
 ## Outside services
 

@@ -3,51 +3,7 @@
 > **Why** can a popular video about ITER be both useful and out of date at the same time?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a desk seen from the front. On it stands an open laptop. Its screen shows a video of a huge, bright assembly hall: an overhead crane on rails lifts a giant curved steel segment, and two smaller segments stand on the floor below. A large round play button sits in the middle of the screen and a progress bar runs along the bottom. Beside the laptop lie an open notebook with empty lines, a pencil and a magnifying glass." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy14iv-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e7f5ff"/><stop offset="1" stop-color="#d0ebff"/></linearGradient><linearGradient id="fy14iv-desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#a97a35"/></linearGradient><linearGradient id="fy14iv-hall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8f9fa"/><stop offset="1" stop-color="#ced4da"/></linearGradient><linearGradient id="fy14iv-steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a96a3"/><stop offset="0.3" stop-color="#ffffff"/><stop offset="0.65" stop-color="#c4ccd4"/><stop offset="1" stop-color="#8a96a3"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#fy14iv-wall)"/>
-  <rect x="0" y="470" width="1200" height="130" fill="url(#fy14iv-desk)"/>
-  <line x1="0" y1="470" x2="1200" y2="470" stroke="#e9c98a" stroke-width="4" stroke-linecap="butt"/>
-  <rect x="250" y="70" width="620" height="380" rx="16" fill="#1f2933" stroke="#1f2933" stroke-width="3"/>
-  <rect x="270" y="90" width="580" height="330" fill="url(#fy14iv-hall)"/>
-  <rect x="270" y="96" width="580" height="16" fill="#6c757d"/>
-  <rect x="270" y="112" width="580" height="4" fill="#8a96a3"/>
-  <rect x="300" y="132" width="520" height="22" fill="#e8590c" stroke="#1f2933" stroke-width="2"/>
-  <line x1="310" y1="132" x2="336" y2="154" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="362" y1="132" x2="388" y2="154" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="414" y1="132" x2="440" y2="154" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="466" y1="132" x2="492" y2="154" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="518" y1="132" x2="544" y2="154" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="570" y1="132" x2="596" y2="154" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="622" y1="132" x2="648" y2="154" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="674" y1="132" x2="700" y2="154" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="726" y1="132" x2="752" y2="154" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="778" y1="132" x2="804" y2="154" stroke="#1f2933" stroke-width="1.5" stroke-linecap="butt"/>
-  <rect x="540" y="154" width="36" height="18" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <line x1="548" y1="172" x2="548" y2="196" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="568" y1="172" x2="568" y2="196" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M500,196 L616,196 Q660,250 640,330 L600,330 Q612,262 576,232 L540,232 Q504,262 516,330 L476,330 Q456,250 500,196 Z" fill="url(#fy14iv-steel)" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M330,410 L360,300 L410,300 L440,410 Z" fill="#adb5bd" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M710,410 L740,300 L790,300 L820,410 Z" fill="#adb5bd" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <line x1="270" y1="410" x2="850" y2="410" stroke="#8a96a3" stroke-width="3" stroke-linecap="butt"/>
-  <circle cx="560" cy="262" r="54" fill="#ffffff"/>
-  <circle cx="560" cy="262" r="54" fill="#1f2933" fill-opacity="0.55"/>
-  <path d="M542,232 L586,262 L542,292 Z" fill="#ffffff" stroke-linejoin="round"/>
-  <rect x="290" y="396" width="540" height="8" rx="4" fill="#495057"/>
-  <rect x="290" y="396" width="200" height="8" rx="4" fill="#c92a2a"/>
-  <circle cx="490" cy="400" r="9" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
-  <path d="M190,450 L930,450 L980,486 L140,486 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <rect x="500" y="458" width="120" height="14" rx="4" fill="#8a96a3"/>
-  <path d="M940,500 L1150,488 L1170,590 L955,600 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <line x1="960" y1="520" x2="1150" y2="509" stroke="#d0e6fb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="960.5" y1="535" x2="1153" y2="524" stroke="#d0e6fb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="961" y1="550" x2="1156" y2="539" stroke="#d0e6fb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="962" y1="565" x2="1159" y2="554" stroke="#d0e6fb" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="962.5" y1="580" x2="1162" y2="569" stroke="#d0e6fb" stroke-width="2" stroke-linecap="butt"/>
-  <path d="M1000,560 L1130,520 L1138,530 L1008,570 Z" fill="#ffc078" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M1130,520 L1150,518 L1138,530 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <circle cx="100" cy="520" r="46" fill="#eef5f9" stroke="#1f2933" stroke-width="6"/>
-  <circle cx="100" cy="520" r="40" fill="#a5d8ff" fill-opacity="0.35"/>
-  <path d="M134,552 L190,592" fill="none" stroke="#1f2933" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+  <image href="pics/fy14/fy14-iter-video-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## The video checked against verified facts {Checked}

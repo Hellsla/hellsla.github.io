@@ -103,7 +103,7 @@ Lopuksi kävelijä on $2\,\text{m}$:n päässä lähtöpaikastaan. Lukema $6\,\t
 **Kysytty:** lyheneminen minuutissa eli suoran kulmakertoimen itseisarvo, ja mallin yhtälö
 **Periaate:** Pisteet ovat suoralla, joten pituus muuttuu tasaisesti: malli on $L = kt + b$. Kulmakerroin $k$ kertoo pituuden muutoksen minuutissa, ja se lasketaan suoralta kahdesta kaukana toisistaan olevasta pisteestä.
 **Kuvaajan lukeminen:** Suoralta luetaan pisteet $(0\,\text{min};\ 15{,}0\,\text{cm})$ ja $(51\,\text{min};\ 9{,}0\,\text{cm})$. Ne ovat suoran pisteitä, eivät mittauspisteitä. Vakiotermi on $b = 15{,}0\,\text{cm}$.
-**Kaava:** $k = \dfrac{\Delta L}{\Delta t} = \dfrac{L_2 - L_1}{t_2 - t_1}$
+**Kaava:** $$\begin{aligned} k &= \dfrac{\Delta L}{\Delta t} \\ &= \dfrac{L_2 - L_1}{t_2 - t_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: lyheneminen kysytään yksikössä $\text{cm/min}$.
 **Sijoitus:** $k = \dfrac{9{,}0\,\text{cm} - 15{,}0\,\text{cm}}{51\,\text{min} - 0\,\text{min}} = \dfrac{-6{,}0\,\text{cm}}{51\,\text{min}} \approx -0{,}118\,\tfrac{\text{cm}}{\text{min}}$
 **Vastaus:** Kynttilä lyhenee noin $0{,}12\,\text{cm}$ minuutissa. Malli on $L = -0{,}12\,\tfrac{\text{cm}}{\text{min}} \cdot t + 15{,}0\,\text{cm}$. Kaksi merkitsevää numeroa riittää, koska suoralta luettu pituuden muutos $6{,}0\,\text{cm}$ tunnetaan noin millimetrin tarkkuudella. Kulmakerroin on negatiivinen, koska pituus pienenee.
@@ -113,7 +113,7 @@ Lopuksi kävelijä on $2\,\text{m}$:n päässä lähtöpaikastaan. Lukema $6\,\t
 **Annettu:** $L = -0{,}118\,\tfrac{\text{cm}}{\text{min}} \cdot t + 15{,}0\,\text{cm}$ ja $L = 2{,}0\,\text{cm}$
 **Kysytty:** hetki $t$, jolloin kynttilä on $2{,}0\,\text{cm}$ pitkä
 **Periaate:** Oletetaan, että kynttilä palaa samaan tahtiin kuin mittausten aikana, ja ratkaistaan aika mallin yhtälöstä.
-**Kaava:** $L = kt + b \quad\Rightarrow\quad t = \dfrac{L - b}{k}$
+**Kaava:** $$\begin{aligned} L &= kt + b \\ kt &= L - b \\ t &= \dfrac{L - b}{k} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $t = \dfrac{2{,}0\,\text{cm} - 15{,}0\,\text{cm}}{-0{,}118\,\tfrac{\text{cm}}{\text{min}}} = \dfrac{-13{,}0\,\text{cm}}{-0{,}118\,\tfrac{\text{cm}}{\text{min}}} \approx 110\,\text{min}$
 **Vastaus:** Mallin mukaan kynttilä on $2{,}0\,\text{cm}$ pitkä noin $110\,\text{min}$ eli vajaan kahden tunnin kuluttua sytyttämisestä. Kaksi merkitsevää numeroa, kuten kulmakertoimessa.
@@ -194,7 +194,7 @@ Lopuksi kävelijä on $2\,\text{m}$:n päässä lähtöpaikastaan. Lukema $6\,\t
 **Annettu:** $v_\text{E} = 3{,}2\,\text{m/s}$, $v_\text{A} = 6{,}0\,\text{m/s}$ ja Aaron lähtöhetki $t_0 = 5{,}0\,\text{min}$
 **Kysytty:** saavutushetki $t$ ja paikka $s$
 **Periaate:** Molemmat liikkuvat tasaisesti, joten paikat ovat ajan lineaarisia funktioita. Aaro saavuttaa Elinan, kun molemmat ovat samassa paikassa samalla hetkellä.
-**Kaava:** $s_\text{E} = v_\text{E}t$ ja $s_\text{A} = v_\text{A}(t - t_0)$. Kun $s_\text{E} = s_\text{A}$: $v_\text{E}t = v_\text{A}t - v_\text{A}t_0$, joten $t = \dfrac{v_\text{A}t_0}{v_\text{A} - v_\text{E}}$.
+**Kaava:** $$\begin{aligned} s_\text{E} &= v_\text{E}t \\ s_\text{A} &= v_\text{A}(t - t_0) \\ s_\text{E} &= s_\text{A} \\ v_\text{E}t &= v_\text{A}t - v_\text{A}t_0 \\ (v_\text{A} - v_\text{E})t &= v_\text{A}t_0 \\ t &= \dfrac{v_\text{A}t_0}{v_\text{A} - v_\text{E}} \end{aligned}$$
 **Muunnokset:** $t_0 = 5{,}0 \cdot 60\,\text{s} = 300\,\text{s}$
 **Sijoitus:** $t = \dfrac{6{,}0\,\tfrac{\text{m}}{\text{s}} \cdot 300\,\text{s}}{6{,}0\,\tfrac{\text{m}}{\text{s}} - 3{,}2\,\tfrac{\text{m}}{\text{s}}} = \dfrac{1800\,\text{m}}{2{,}8\,\tfrac{\text{m}}{\text{s}}} \approx 643\,\text{s}$ ja $s = v_\text{E}t = 3{,}2\,\tfrac{\text{m}}{\text{s}} \cdot 643\,\text{s} \approx 2060\,\text{m}$
 **Vastaus:** Aaro saavuttaa Elinan noin $640\,\text{s}$ eli noin $11\,\text{min}$ Elinan lähdön jälkeen noin $2{,}1\,\text{km}$:n päässä kotoa. Kaksi merkitsevää numeroa, kuten nopeuksissa.
@@ -230,7 +230,7 @@ Elinan nopeuden suhteellinen epävarmuus on $\tfrac{0{,}2}{3{,}2} \approx 6\,\%$
 **Annettu:** $t_{10}$: $14{,}2$; $14{,}5$; $13{,}9$; $14{,}4$; $14{,}1\,\text{s}$ (karkea virhe poistettu)
 **Kysytty:** yhden heilahduksen kesto $T$ ja sen epävarmuus $\Delta T$
 **Periaate:** Toistojen keskiarvo on paras arvio. Tässä kurssissa tulosten hajontaa arvioidaan vaihteluvälin puolikkaalla, ja sitä käytetään varovaisena epävarmuusarviona. Yksi heilahdus on kymmenesosa kymmenen heilahduksen ajasta, joten sekä keskiarvo että epävarmuus jaetaan kymmenellä.
-**Kaava:** $\bar{t}_{10} = \dfrac{t_1 + \dots + t_5}{5}$, $\Delta t_{10} = \dfrac{t_\text{max} - t_\text{min}}{2}$, $T = \dfrac{\bar{t}_{10}}{10}$ ja $\Delta T = \dfrac{\Delta t_{10}}{10}$
+**Kaava:** $$\begin{aligned} \bar{t}_{10} &= \dfrac{t_1 + \dots + t_5}{5} \\ \Delta t_{10} &= \dfrac{t_\text{max} - t_\text{min}}{2} \\ T &= \dfrac{\bar{t}_{10}}{10} \\ \Delta T &= \dfrac{\Delta t_{10}}{10} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $\bar{t}_{10} = \dfrac{71{,}1\,\text{s}}{5} = 14{,}22\,\text{s}$ ja $\Delta t_{10} = \dfrac{14{,}5\,\text{s} - 13{,}9\,\text{s}}{2} = 0{,}3\,\text{s}$, joten $T = \dfrac{14{,}22\,\text{s}}{10} = 1{,}422\,\text{s}$ ja $\Delta T = \dfrac{0{,}3\,\text{s}}{10} = 0{,}03\,\text{s}$.
 **Vastaus:** $T = (1{,}42 \pm 0{,}03)\,\text{s}$. Epävarmuus pyöristetään yhteen merkitsevään numeroon ja tulos samaan desimaaliin.
@@ -257,7 +257,7 @@ Elinan nopeuden suhteellinen epävarmuus on $\tfrac{0{,}2}{3{,}2} \approx 6\,\%$
 **Annettu:** $m = 96\,\text{g}$, vedenpinnan lukemat $50{,}0\,\text{ml}$ ja $62{,}5\,\text{ml}$
 **Kysytty:** ruuvien tiheys $\rho$
 **Periaate:** Tiheys on massa tilavuusyksikköä kohti. Upotetut ruuvit syrjäyttävät oman tilavuutensa verran vettä, joten niiden tilavuus on vedenpinnan lukemien erotus.
-**Kaava:** $\rho = \dfrac{m}{V}$, kun $V = V_2 - V_1$
+**Kaava:** $$\begin{aligned} V &= V_2 - V_1 \\ \rho &= \dfrac{m}{V} \\ &= \dfrac{m}{V_2 - V_1} \end{aligned}$$
 **Muunnokset:** $1\,\text{ml} = 1\,\text{cm}^3$, joten $V = 62{,}5\,\text{cm}^3 - 50{,}0\,\text{cm}^3 = 12{,}5\,\text{cm}^3$.
 **Sijoitus:** $\rho = \dfrac{96\,\text{g}}{12{,}5\,\text{cm}^3} \approx 7{,}68\,\tfrac{\text{g}}{\text{cm}^3}$
 **Vastaus:** $\rho \approx 7{,}7\,\text{g/cm}^3$. Kaksi merkitsevää numeroa, koska massa $96\,\text{g}$ on annettu kahdella.
@@ -272,7 +272,7 @@ Elinan nopeuden suhteellinen epävarmuus on $\tfrac{0{,}2}{3{,}2} \approx 6\,\%$
 **Annettu:** lukemien epävarmuus $0{,}5\,\text{ml}$ kumpikin, $m = 96\,\text{g}$
 **Kysytty:** tiheyden vaihteluväli ja voiko messingin sulkea pois
 **Periaate:** Tilavuus on kahden lukeman erotus, joten pahimmassa tapauksessa molempien lukemien virheet kasvattavat tai pienentävät sitä samaan suuntaan. Tiheyden ääriarvot lasketaan tilavuuden ääriarvoilla.
-**Kaava:** $\rho_\text{min} = \dfrac{m}{V + \Delta V}$ ja $\rho_\text{max} = \dfrac{m}{V - \Delta V}$, kun $\Delta V = 2 \cdot 0{,}5\,\text{ml}$
+**Kaava:** $$\begin{aligned} \rho &= \dfrac{m}{V} \\ \rho_\text{min} &= \dfrac{m}{V + \Delta V} \\ \rho_\text{max} &= \dfrac{m}{V - \Delta V} \\ \Delta V &= 2 \cdot 0{,}5\,\text{ml} \end{aligned}$$
 **Muunnokset:** $\Delta V = 1{,}0\,\text{ml} = 1{,}0\,\text{cm}^3$, joten $V$ on $11{,}5$–$13{,}5\,\text{cm}^3$.
 **Sijoitus:** $\rho_\text{min} = \dfrac{96\,\text{g}}{13{,}5\,\text{cm}^3} \approx 7{,}11\,\tfrac{\text{g}}{\text{cm}^3}$ ja $\rho_\text{max} = \dfrac{96\,\text{g}}{11{,}5\,\text{cm}^3} \approx 8{,}35\,\tfrac{\text{g}}{\text{cm}^3}$
 **Vastaus:** Tiheys on välillä $7{,}1$–$8{,}3\,\text{g/cm}^3$. Messingin tiheys $8{,}5\,\text{g/cm}^3$ on juuri välin ulkopuolella, joten messinki on epätodennäköinen, mutta vain niukasti. Varma erottelu teräksestä vaatisi tarkemman mittauksen.
@@ -361,7 +361,7 @@ Elinan nopeuden suhteellinen epävarmuus on $\tfrac{0{,}2}{3{,}2} \approx 6\,\%$
 **Kysytty:** pallon putoamiskiihtyvyys $g$ ja vertailu arvoon $9{,}81\,\text{m/s}^2$
 **Periaate:** Levosta putoavan kappaleen nopeus on $v = gt$, kun ilmanvastus on merkityksetön. Pallon pisteet ovat origon kautta kulkevalla suoralla, joten malli sopii, ja $g$ on suoran kulmakerroin.
 **Kuvaajan lukeminen:** Suoralta luetaan origo $(0\,\text{s};\ 0\,\text{m/s})$ ja piste $(0{,}40\,\text{s};\ 3{,}87\,\text{m/s})$.
-**Kaava:** $g = \dfrac{\Delta v}{\Delta t}$
+**Kaava:** $$\begin{aligned} v &= gt \\ g &= \dfrac{v}{t} = \dfrac{\Delta v}{\Delta t} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $g = \dfrac{3{,}87\,\tfrac{\text{m}}{\text{s}} - 0\,\tfrac{\text{m}}{\text{s}}}{0{,}40\,\text{s} - 0\,\text{s}} \approx 9{,}7\,\tfrac{\text{m}}{\text{s}^2}$
 **Vastaus:** $g \approx 9{,}7\,\text{m/s}^2$, kaksi merkitsevää numeroa, koska aikaväli $0{,}40\,\text{s}$ on annettu kahdella. Tulos on noin $1\,\%$ pienempi kuin $9{,}81\,\text{m/s}^2$.
@@ -469,7 +469,9 @@ Mitataan useita eri arkkimääriä, piirretään $(N, d)$-kuvaaja ja määritet�
 **Kysytty:** yhden arkin paksuus mikrometreinä ja sen epävarmuus
 **Periaate:** Suoran kulmakerroin on paksuuden lisäys arkkia kohti. Pinon paksuuden epävarmuus jakautuu kaikille arkeille.
 **Kuvaajan lukeminen:** Suoralta luetaan origo ja piste $(500;\ 51\,\text{mm})$.
-**Kaava:** $d_1 = \dfrac{d - 0}{N - 0} = \dfrac{d}{N}$ ja $\Delta d_1 = \dfrac{\Delta d}{N}$, kun $\Delta d$ on lukeman epävarmuus
+**Kaava:** $$\begin{aligned} d_1 &= \dfrac{d - 0}{N - 0} \\ &= \dfrac{d}{N} \\ \Delta d_1 &= \dfrac{\Delta d}{N} \end{aligned}$$
+
+Tässä $\Delta d$ on lukeman epävarmuus.
 **Muunnokset:** $1\,\text{mm} = 1000\,\mu\text{m}$
 **Sijoitus:** $d_1 = \dfrac{51\,\text{mm} - 0\,\text{mm}}{500 - 0} = 0{,}102\,\text{mm} = 0{,}102 \cdot 1000\,\mu\text{m} = 102\,\mu\text{m}$ ja $\Delta d_1 = \dfrac{1\,\text{mm}}{500} = 0{,}002\,\text{mm} = 2\,\mu\text{m}$
 **Vastaus:** Yhden arkin paksuus on $d_1 = (102 \pm 2)\,\mu\text{m}$, kun annettu lukeman epävarmuus $1\,\text{mm}$ jaetaan $500$ arkilla.
@@ -479,7 +481,7 @@ Mitataan useita eri arkkimääriä, piirretään $(N, d)$-kuvaaja ja määritet�
 **Annettu:** neliömassa $80\,\text{g/m}^2$ ja $d_1 = 102\,\mu\text{m}$
 **Kysytty:** paperin tiheys ja vertailu veden tiheyteen
 **Periaate:** Tarkastellaan yhden neliömetrin kokoista arkkia: sen massa on $80\,\text{g}$, ja sen tilavuus on pinta-ala kertaa paksuus.
-**Kaava:** $\rho = \dfrac{m}{V}$, kun $V = A \cdot d_1$
+**Kaava:** $$\begin{aligned} V &= A \cdot d_1 \\ \rho &= \dfrac{m}{V} = \dfrac{m}{A \cdot d_1} \end{aligned}$$
 **Muunnokset:** $80\,\text{g} = 0{,}080\,\text{kg}$ ja $102\,\mu\text{m} = 102 \cdot 10^{-6}\,\text{m} = 1{,}02 \cdot 10^{-4}\,\text{m}$
 **Sijoitus:** $V = 1\,\text{m}^2 \cdot 1{,}02 \cdot 10^{-4}\,\text{m} = 1{,}02 \cdot 10^{-4}\,\text{m}^3$ ja $\rho = \dfrac{0{,}080\,\text{kg}}{1{,}02 \cdot 10^{-4}\,\text{m}^3} \approx 784\,\tfrac{\text{kg}}{\text{m}^3}$
 **Vastaus:** $\rho \approx 780\,\text{kg/m}^3$. Pakkauksen neliömassa $80\,\text{g/m}^2$ on tarkka arvo, joten tarkkuutta rajoittaa arkin paksuus: sen noin $2\,\%$:n epävarmuus tekee tiheyteen noin $20\,\text{kg/m}^3$:n epävarmuuden, ja tulos pyöristetään kymmeniin. Paperin tiheys on noin $80\,\%$ veden tiheydestä $1000\,\text{kg/m}^3$.

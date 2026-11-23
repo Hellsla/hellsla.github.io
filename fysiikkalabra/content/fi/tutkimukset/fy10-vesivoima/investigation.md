@@ -141,7 +141,7 @@ Vastaa:
 ::: tuki OO
 **Kuvaajan valinta.** Kaksi luontevaa kuvaajaa ovat hyötysuhde $\eta$ muutetun suureen funktiona sekä sähköteho $P_\text{s}$ veden tehon $P_\text{o}$ funktiona. Jälkimmäisessä kuvaajassa hyötysuhde on origosta mittauspisteeseen piirretyn suoran kulmakerroin. Jos kaikki pisteet ovat samalla origon kautta kulkevalla suoralla, hyötysuhde on sama kaikissa mittauksissa. Jos pisteet eivät ole sellaisella suoralla, hyötysuhde muuttuu. Mieti, mitä kuvaajan muoto kertoo häviöistä.
 
-<svg data-fig="eta" viewBox="0 0 600 380" role="img" aria-label="Kuvaaja: vaaka-akselilla veden teho P o ja pystyakselilla sähköteho P s, samassa mittakaavassa. Katkoviiva origosta on suora, jolla hyötysuhde on yksi eli sata prosenttia; sen yläpuolelle ei voi päätyä, koska energia säilyy. Toinen origon kautta kulkeva suora näyttää, että kaikilla saman origon kautta kulkevan suoran pisteillä on sama hyötysuhde. Kuvaajassa ei ole mittauspisteitä." style="max-width:100%;font-size:24px">
+<svg data-fig="eta" viewBox="0 0 600 380" role="img" aria-label="Mallikuvaaja: vaaka-akselilla veden teho P o ja pystyakselilla sähköteho P s, samassa mittakaavassa. Katkoviiva origosta on suora, jolla hyötysuhde on yksi eli sata prosenttia; sen yläpuolelle ei voi päätyä, koska energia säilyy. Toinen origon kautta kulkeva suora näyttää, että kaikilla saman origon kautta kulkevan suoran pisteillä on sama hyötysuhde. Kuvaajassa ei ole mittauspisteitä." style="max-width:100%;font-size:24px">
   <line x1="149" y1="330" x2="424" y2="330" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M436,330 L423,336 L423,324 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="150" y1="331" x2="150" y2="56" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>

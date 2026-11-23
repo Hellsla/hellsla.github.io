@@ -93,7 +93,7 @@ Kuvaaja esittää mallin muotoa, ei mittaustuloksia: samassa kohdassa lämpötil
 Ennen mittaamista päätä ja kirjaa ylös, millä suureella vertailet materiaaleja, mitä pidät vakiona ja miten varmistat, että lämpökamera mittaa kaikkien kappaleiden lämpötilaa yhtä luotettavasti.
 
 ::: tuki O
-**Ohjattu.** Käytä samankokoisia sauvoja tai liuskoja, esimerkiksi noin $15\ \text{cm}$ – $20\ \text{cm}$ pitkiä, ja päällystä niiden vedenpinnan yläpuoliset osat samanlaisella mattapintaisella teipillä. Työnnä kappaleet eristävän kannen reikien läpi niin, että ne ovat yhtä syvällä kuumassa vedessä eivätkä kosketa toisiaan. Kiinnitä lämpökamera jalustaan niin, että kaikki kappaleet näkyvät samassa kuvassa. Tutki ainakin kolmea materiaalia, esimerkiksi kuparia, terästä ja puuta, ja lue lämpötilat yhdestä mittauskohdasta kannen yläpuolelta, esimerkiksi $x = 3\ \text{cm}$. Jos aikaa jää, voit lisätä materiaaleja tai toisen mittauskohdan. Mittaa veden lämpötila lämpömittarilla mittauksen alussa ja lopussa.
+**Ohjattu.** Käytä samankokoisia sauvoja tai liuskoja, esimerkiksi noin $15\,\text{cm}$ – $20\,\text{cm}$ pitkiä, ja päällystä niiden vedenpinnan yläpuoliset osat samanlaisella mattapintaisella teipillä. Työnnä kappaleet eristävän kannen reikien läpi niin, että ne ovat yhtä syvällä kuumassa vedessä eivätkä kosketa toisiaan. Kiinnitä lämpökamera jalustaan niin, että kaikki kappaleet näkyvät samassa kuvassa. Tutki ainakin kolmea materiaalia, esimerkiksi kuparia, terästä ja puuta, ja lue lämpötilat yhdestä mittauskohdasta kannen yläpuolelta, esimerkiksi $x = 3\,\text{cm}$. Jos aikaa jää, voit lisätä materiaaleja tai toisen mittauskohdan. Mittaa veden lämpötila lämpömittarilla mittauksen alussa ja lopussa.
 :::
 
 ::: tuki OO

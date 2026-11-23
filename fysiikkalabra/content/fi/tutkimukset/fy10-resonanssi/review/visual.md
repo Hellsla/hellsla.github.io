@@ -1,26 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: bc55ddec5aae44aa
+CONTENT-HASH: 043d91dec723e1fb
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] investigation.md (Epävarmuus ja luotettavuus, 390 px) — the line break falls after `lukuarvo ±` so the sign is separated from `epävarmuus`; use `lukuarvo $\pm$~epävarmuus` or a no-break space.
-- [Minor] fig-9 (model graph) and fig-12 (frequency graph) — axis titles $L$, $\lambda$, $1/f$ have no unit, and the y axis has no ticks — the graphs are schematic, but the NOTES §3 rule asks for quantity and unit on each axis — write $L\ (\text{m})$, $\lambda\ (\text{m})$, $\dfrac{1}{f}\ (\dfrac{1}{\text{Hz}})$ and say "kaaviokuva, ei mittakaavassa" in the aria-label.
-- [Minor] fig-9 — the line starts at about n = 0.7 on the axis and never shows the negative intercept $-(\lambda/4+e)$ that the next sentence asks about — a dashed extension to n = 0 (extrapolation) would support the hint — extend dashed to the y axis.
-- [Minor] fig-3 (standing wave) — the left antinode is drawn exactly at the tube mouth, while the theory text says the antinode is slightly outside — add a short dashed overshoot or a note, as fig-7 does with $e$.
-- [Minor] investigation.md, Tunnettu arvo — `\ \text{m/s}` and `\ \text{K}` use a normal space in the formula; the house form is the thin space `\,`.
-- [Minor] Epävarmuus section — "lukuarvo ± epävarmuus" is plain text, while the formula in the line below is LaTeX — write "$\pm$" in maths. "Kaksi tapaa käsitellä tulokset" reads better as "…tuloksia".
+- [Minor] fig-5, fig-6 (graphs) — axes show only the symbols L, n and λ, 1/f, no units or "kaavio, ei mittaustuloksia" note in the figure itself — the descriptions say they are model sketches; add "(mallin mukainen suora)" or units in the caption if the teacher wants.
+- [Minor] fig-5 — the line starts at n≈0,7 and the origin "0" sits at the corner while the line's intercept is not shown; a short dashed extension to the n axis (n = 1/2) would show what the "vakiotermi" question refers to.
+- [Minor] fig-3 (set-up) — the text labels (kaiutin, mäntä, taajuusgeneraattori) are lighter grey than those in fig-2; use one label colour.
+- [Minor] Mittaa, the empty table at 390 px — columns are narrow and the headings small; fine to use but the cells are cramped for writing.
 
 ## Checked
-- Delta 2026-11-18: headers $L_\text{pit}$, $L_\text{lyh}$ and the added sentence. Opened page-390-8 (table fits, no break) and -9, -11 (surroundings fine).
-
-## Checked (delta 2026-11-18, round 2)
-- Subscripts $\text{pit}$ and $\text{lyh}$ in the sentence before the table are now maths. Opened page-390-8: "Alaindeksi pit tarkoittaa ilmapatsaan pidentämistä ja lyh sen lyhentämistä." reads well, table fits, no overflow. The earlier Minor on this sentence is closed.
-
-## Earlier checked (delta 2026-11-16)
-- Changes: heading ”Kaksi tapaa käsitellä tuloksia”, `\pm` as maths, thin spaces in the speed formula. Opened page-1280-6 and -7: heading, ± and `(\ldots \pm \ldots)\,\text{m/s}` render correctly.
-- Figures untouched by this branch (not judged now); no overflow or clipping seen in the opened captures.
-- Phone (390 px): page-390-8, page-390-10 (heading, ±, (… ± …) m/s, formula): fine, no overflow.
+- review/shots contact-1 and contact-3 (whole page at 390 and 1280 px, every box open); stale captures were regenerated first.
+- fig-1 to fig-6 at 390 px, each opened at readable size: hero illustration, standing wave, set-up, three resonances, both graphs; labels legible, nothing clipped, colours consistent, no misleading geometry.
+- page-390-9 (data table, the two ways to process results, graph) and page-1280-4 (theory, formula, figures, "Tarkista kirjauksesi" box); the display formulas read well, the decimal comma and the units are in LaTeX.
+- Finnish read through these parts: fluent, one voice, no mechanical phrases.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 56d8bf510a4fbe1c
+CONTENT-HASH: 3771cf2b226387d4
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md 7-18 Model answer c) and d) — many one-sentence paragraphs ("NASA divides the mass by the planet's true volume.", "Size does not tell us the density.") read choppy; merge the short neighbours into 2-3 sentence paragraphs where they continue one idea.
+- none
 
 ## Checked
-Delta (md-paragraphs, solutions.md only; captures current for this hash, content/en/FY1/fy1-7/review/shots/). Opened open-exercises L3-2 (7-21 Formula/Substitution), L3-5 (bubble task: Answer split into four paragraphs, Reasonableness), L2-14 (planet density Model answers c, d). Breaks render as separate paragraphs inside each step; labels, equals alignment and formulas unchanged; no gaps, clipping or overflow. Other split steps (7-19 graph, oil/water, line fit, alloy Reasonableness, ranking Principle) use the same component and were not individually opened.
+- delta 8g (Kaava steps as aligned display blocks), economical sample from the lesson's review/shots (current for this hash): fi fy1-5 open-exercises-L3-1280-4 (seven rows), fi fy1-6 L3-1280-7 (five rows with a subscripted left side), en fy1-1 L3-1280-4 and fy1-3 L3-1280-3 (Substitution blocks), fi-easy fy1-7 L3-1280-5 (five single-relation rows).
+- Rows align at the relation sign, fractions and subscripts legible, no clipping or overflow, blocks sit apart from the text, trailing sentences read as their own line; Muunnokset/Sijoitus/Vastaus/Reasonableness survived. This lesson's own capture was not opened; judged from the sampled blocks, which use the same shared component. No figures in the delta.
 
 ## Scores
-illustrations 5 · typography 4 · English 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

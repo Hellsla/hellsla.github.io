@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import media_tips, ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, stopthink, svgids, units, tablefit
+import media_tips, ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, stopthink, svgids, units, tablefit, valmentaja
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -47,7 +47,7 @@ if SITE.name == "site.tmp":
 else:
     SITE.mkdir(exist_ok=True)                         # preview/ is shared by agents building at the same time, so it is never wiped
 TPL = ROOT / "templates"
-for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "jatka.js", "mediafilter.js", "ahjo.js", "lumatutor.js", "offline.js"): shutil.copy(TPL / f, SITE / f)
+for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "valmentaja.js", "jatka.js", "mediafilter.js", "ahjo.js", "lumatutor.js", "offline.js", "kaikki.js"): shutil.copy(TPL / f, SITE / f)
 card_files = concept_cards.publish(SITE)   # site/kortit/<module>.json, read by Käsitetakomo (scripts/concept_cards.py)
 # p5 + KaTeX, no CDN needed. The read-aloud model and onnxruntime-web are not part of the site (teacher 2026-11-04,
 # UI fix 3): they are in the repository Hellsla/ruukkilabra-models, copied into the published site's models/ folder
@@ -216,6 +216,15 @@ def progress_section(course, lang, mod=None):
     themes = [{"t": th["title"], "first": th["first"]} for th in (mod or {}).get("themes", [])]
     view = progress_view(themes, bool(ASSIGNED.get(course)), block)
     return view.replace('</button></div>', '</button><div class="work-tools" id="oma-tyo" hidden></div></div>', 1) + f'<script src="palautus.js" data-course="{course}"{ret}></script>'
+
+
+def kaikki_block():
+    """Whole-work file (work queue 17b PR 1): the texts and scripts of Tallenna kaikki työni tiedostoon / Avaa kaikki
+    työni tiedostosta on Tietosuoja (templates/kaikki.js; its place is <div id="kaikki-tyo"> in tietosuoja.md)."""
+    strings = {k: v for k, v in T("js").items() if k.startswith("kaikki_") or k in ("palautus_busy", "palautus_failed", "palautus_no_storage", "palautus_opened", "palautus_nothing",
+                                                                                     "palautus_broken", "palautus_newer", "palautus_conflict", "palautus_open_failed")}
+    return ('<script id="fl-kaikki" type="application/json">' + json.dumps(strings, ensure_ascii=False).replace("</", "<\\/") + "</script>"
+            '<script src="padstore.js"></script><script src="kaikki.js"></script>')
 
 
 def local_progress(code, c, lang):
@@ -1169,6 +1178,7 @@ def build_units(lang, out, unit_pub):
                 .replace("{{toc}}", toc).replace("{{main}}", f'<article id="teoria" class="inquiry unit unit-{d["kind"]}" data-course="{code.lower()}">{body}{units.course_nav(uid, lang, T, published)}{tail}</article>' + embedded)   # Previous / Next before the credits (teacher 2026-11-06)
                 .replace("{{scripts}}", f'<script src="inquiry.js"></script>' + ('<script src="selfassess.js"></script>' if tasks_html else "")
                          + (f'<script src="units/{code.lower()}/units.js"></script>' if cdir.is_dir() else "")
+                         + ('<script src="valmentaja.js"></script>' if code == "FY9" else "")   # the evidence log of the FY9 coach (work queue 11b PR 3; invisible)
                          + (submission_script(lang, uid) if tasks_html else ""))
                 .replace("{{description}}", esc(d["description"])).replace("{{url}}", URL + f"{uid}.html")
                 .replace("{{languages}}", languages_nav(f"{uid}.html") if len(unit_pub[uid]) > 1 else ""))   # a unit in one language has none
@@ -1545,6 +1555,9 @@ def build_language(lang):
         (out / mixer.PAGE).write_text(page(T("mixer.title"), mixer.page_body(T, mixer.items(lang, T, list(practice_built), unit_pub)) + '<script src="invfilter.js"></script>',
                                            f'<a href="index.html">{T("site.name")}</a>{crumb} › {T("mixer.title")}', mixer.PAGE, T("mixer.description")))
         mixer_built.append(mixer.PAGE)
+    if lang in valmentaja.languages():           # the FY9 task index (scripts/valmentaja.py, work queue 11b PR 2): data for a later page, no page of its own
+        vf = valmentaja.write(lang, out, unit_pub)
+        if vf: expected.append((out.relative_to(SITE) / vf).as_posix())
     local_notes = "".join(f'<p class="unavailable" id="unavailable-{code}" role="note" tabindex="-1">'
                           f'{T("site.local_unavailable_note", title=esc(code + " " + c["title"]))}</p>'
                           for code, c in local_courses.load().items() if code not in local)
@@ -1673,7 +1686,7 @@ def build_language(lang):
     # Tietosuoja (teacher 2026-11-04): content/<lang>/tietosuoja.md (the Finnish where a language has none), linked from every footer
     priv_md = next((f for f in (ROOT / "content" / lang / "tietosuoja.md", ROOT / "content" / i18n.SOURCE / "tietosuoja.md") if f.is_file()), None)
     if priv_md:
-        (out / PRIVACY).write_text(page(T("site.privacy"), f'<article class="privacy">{render_md(priv_md.read_text())}</article>',
+        (out / PRIVACY).write_text(page(T("site.privacy"), f'<article class="privacy">{render_md(priv_md.read_text())}</article>' + kaikki_block(),
                                         f'<a href="index.html">{T("site.name")}</a> › {T("site.privacy")}', PRIVACY, T("site.privacy_lead"), main_class="reading privacy-page"))
     if SITE.name == "site.tmp":                  # a lesson leaves the live site only with a warning (an annotation on CI)
         live = LIVE / out.relative_to(SITE)
@@ -1713,7 +1726,7 @@ link_languages()
 i18n.set_lang(i18n.SOURCE)
 # Cache busting (teacher 2026-11-03: a page fetched just after a deploy showed new HTML with yesterday's cached site.css):
 # every link to a shared stylesheet or script carries ?v=<first 8 hex of its SHA-256>, so a changed file is a new URL.
-SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "jatka.js", "ahjo.js", "lumatutor.js", "offline.js")
+SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "valmentaja.js", "jatka.js", "ahjo.js", "lumatutor.js", "offline.js", "kaikki.js")
 _ver = {f: hashlib.sha256((SITE / f).read_bytes()).hexdigest()[:8] for f in SHARED if (SITE / f).is_file()}
 # Service worker (work queue 17a PR 1): site/sw.js at the root covers the language folders too. Its text carries the hash of the shared
 # files, so a new release is a new worker. FL_SW_KILL=1 publishes the self-removing worker instead (docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md).
@@ -1730,7 +1743,7 @@ for _page in SITE.rglob("*.html"):
     if 'class="kc-item"' in _new: _new = tablefit.kc_items(_new, re.search(r'<html[^>]*\blang="fi\b', _new[:400]) is not None)   # the card list without scripts (work queue 8d)
     if _new != _old: _page.write_text(_new)
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
-    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "jatka.js", "ahjo.js", "lumatutor.js", "offline.js", "sw.js"] + [("" if l == i18n.SOURCE else l + "/") + "manifest.webmanifest" for l in LANGS] + card_files + assets
+    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "valmentaja.js", "jatka.js", "ahjo.js", "lumatutor.js", "offline.js", "kaikki.js", "sw.js"] + [("" if l == i18n.SOURCE else l + "/") + "manifest.webmanifest" for l in LANGS] + card_files + assets
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]
     if broken or not (SITE / "vendor").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/']}")
     old = ROOT / "site.old"

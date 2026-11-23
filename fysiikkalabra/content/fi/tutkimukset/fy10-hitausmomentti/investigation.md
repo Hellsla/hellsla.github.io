@@ -204,7 +204,7 @@ Laskuihin ja kuvaajiin käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran oh
 
 ## Epävarmuus ja luotettavuus
 
-Ilmoita mittaamasi hitausmomentti muodossa $I = (I \pm \Delta I)\ \text{kg}\cdot\text{m}^2$ ja perustele, miten arvioit epävarmuuden $\Delta I$. Ilmoita samoin mallin antama arvo epävarmuuksineen. Mahtuvatko arvot toistensa epävarmuusväleihin? Päällekkäiset välit tarkoittavat, että tulos on sopusoinnussa mallin kanssa, eivät sitä, että arvot on todistettu samoiksi.
+Ilmoita mittaamasi hitausmomentti muodossa $I = (I \pm \Delta I)\,\text{kg}\cdot\text{m}^2$ ja perustele, miten arvioit epävarmuuden $\Delta I$. Ilmoita samoin mallin antama arvo epävarmuuksineen. Mahtuvatko arvot toistensa epävarmuusväleihin? Päällekkäiset välit tarkoittavat, että tulos on sopusoinnussa mallin kanssa, eivät sitä, että arvot on todistettu samoiksi.
 
 ::: tuki OO
 **Epävarmuuden arviointi.** Määritä ensin kulmakertoimen epävarmuus $\Delta a$ sovitusohjelman keskivirheestä tai jyrkimmän ja loivimman suoran avulla: $\Delta a = \dfrac{a_\text{max} - a_\text{min}}{2}$. Etene sitten vaihe kerrallaan:

@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6a0a33a715c949de
+CONTENT-HASH: 6f84f2c00e8197fd
 
 ## Blocking
 - none
 
 ## Polish
-- solutions.md fy1-7-L2-09 d) — Saturnus/Neptunus tiheys 687/1638 = 0,42, so "vain noin puolet sen tiheydestä" -> "alle puolet sen tiheydestä" (carried from round 1, still open).
+- none
 
 ## Checked
-- L2-09 c): the Earth sentence is now physically right: Earth is slightly flattened (about 1/298), which makes the equatorial-radius sphere about 0,3 % too large, matching the 0,4 % gap; "enimmäkseen" is fair.
-- The comparison "paljon vähemmän kuin Saturnus, koska pyörii hitaammin" explains the contrast without claiming more than the student can follow.
-- Saturn's 10 % gap and its explanation unchanged and correct; the rest of c) and d) untouched.
+- Delta (Kaava steps in solutions.md rewritten from basic equations) judged in context on disk: every Kaava line now starts from a basic definition or equation and reaches the working form.
+- Physics and notation consistent with the Periaate, Sovellus and Sijoitus steps; no answer disclosed beyond the model solution.
+- Diagram of aligned equations reads as a staged derivation; added "Tässä ..." definitions are brief and in Finnish.
+- No exercise, figure or feedback wording changed beyond spacing in numeric feedback.
