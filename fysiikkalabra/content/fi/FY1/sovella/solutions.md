@@ -67,7 +67,7 @@
 **Kysytty:** pallon nopeus $v$ lattialla
 **Periaate:** Lattialla pisteet ovat suoralla, joten pallo liikkuu tasaisesti: sen paikka on $s = s_0 + vt$, ja nopeus on sovitetun suoran kulmakerroin. Rampin pisteet jätetään pois, koska niissä nopeus vasta kasvaa.
 **Kuvaajan lukeminen:** Suoralta luetaan kaksi kaukana toisistaan olevaa pistettä, $(0{,}6\,\text{s};\ 0{,}32\,\text{m})$ ja $(2{,}0\,\text{s};\ 1{,}44\,\text{m})$. Ne ovat suoran pisteitä, eivät mittauspisteitä.
-**Kaava:** $v = \dfrac{\Delta s}{\Delta t} = \dfrac{s_2 - s_1}{t_2 - t_1}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{\Delta s}{\Delta t} \\ &= \dfrac{s_2 - s_1}{t_2 - t_1} \end{aligned}$$
 **Muunnokset:** Paikat on jo luettu metreinä: $320\,\text{mm} = 0{,}32\,\text{m}$ ja $1440\,\text{mm} = 1{,}44\,\text{m}$.
 **Sijoitus:** $v = \dfrac{1{,}44\,\text{m} - 0{,}32\,\text{m}}{2{,}0\,\text{s} - 0{,}6\,\text{s}} = \dfrac{1{,}12\,\text{m}}{1{,}4\,\text{s}} = 0{,}80\,\text{m/s}$
 **Vastaus:** $v \approx 0{,}80\,\text{m/s}$. Tarkkuus perustellaan c-kohdassa.
@@ -117,7 +117,7 @@ Sovitetun suoran vakiotermi on noin $s_0 = -0{,}16\,\text{m}$. Se ei ole pallon 
 **Annettu:** teräskuulan ajat $2{,}31$; $2{,}45$; $2{,}38$; $2{,}29$; $2{,}42\,\text{s}$ ja muovikuulan ajat $2{,}40$; $2{,}33$; $2{,}47$; $2{,}36$; $2{,}44\,\text{s}$
 **Kysytty:** keskiarvot $\bar{t}$ ja tulosten epävarmuusarviot $\Delta t$ sekä päätelmä erosta
 **Periaate:** Toistojen keskiarvo on paras arvio vierimisajasta. Vaihteluvälin puolikas on yksinkertainen arvio yksittäisten mittausten hajonnasta, ja tässä sitä käytetään varovaisena epävarmuusarviona vertailussa. Keskiarvon oma epävarmuus on yleensä tätä pienempi. Eron voi sanoa osoitetuksi vain, jos se on selvästi suurempi kuin nämä epävarmuusarviot.
-**Kaava:** $\bar{t} = \dfrac{t_1 + t_2 + t_3 + t_4 + t_5}{5}$ ja $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$
+**Kaava:** $$\begin{aligned} \bar{t} &= \dfrac{t_1 + t_2 + t_3 + t_4 + t_5}{5} \\ \Delta t &= \dfrac{t_\text{max} - t_\text{min}}{2} \end{aligned}$$
 **Muunnokset:** Ei tarvita, kaikki ajat ovat sekunteina.
 **Sijoitus:** Teräs: $\bar{t} = \dfrac{11{,}85\,\text{s}}{5} = 2{,}37\,\text{s}$ ja $\Delta t = \dfrac{2{,}45\,\text{s} - 2{,}29\,\text{s}}{2} = 0{,}08\,\text{s}$.
 Muovi: $\bar{t} = \dfrac{12{,}00\,\text{s}}{5} = 2{,}40\,\text{s}$ ja $\Delta t = \dfrac{2{,}47\,\text{s} - 2{,}33\,\text{s}}{2} = 0{,}07\,\text{s}$.
