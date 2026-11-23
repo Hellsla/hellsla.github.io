@@ -45,6 +45,7 @@ Tehty ja poistettu jonosta: 8q (#690), 8r (#694), kuvan .side-arvio (#775); koht
 Taulukko-otsakkeet 390 px tehty (#731). Auditointi tehty (#536), Major-korjaukset ja sisältöosa tehty (#549, #645; loki §4). Erä 1 (jaetut komponentit) tehty (PR #709: apulinkit, listojen numerointi, laskurivit listoissa, tyhjät taulukkorivit, 28×28-kaappaukset; loki §4). Jäljellä, opettajan päätettävä: Minor-erä ja yhteinen kuvasääntö (nimiöt vähintään noin 12 px 390 px:ssä,
 mallikuvaajan akseleilla suure ja yksikkö, kaaviokuvan kuvateksti sanoo sen kaaviokuvaksi, malliksi merkitty luonnoskuvaaja).
 Kuviin ei kosketa: opettaja piirtää ne itse.
+Varattu: claude/fy10-minor-kuvasaanto (Minor-erä + kuvasääntöraportti)
 
 ## 5b. Leikkautuva kaava: avoimet päätökset (opettaja päättää)
 Tarkistus ja `reflow`-carry tehty (#594). Auki: (1) lasketaanko vierityslinjalle jäävä inline-kaava leikkautuneeksi (nyt
