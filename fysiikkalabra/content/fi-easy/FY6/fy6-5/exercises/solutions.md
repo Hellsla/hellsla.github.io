@@ -177,7 +177,7 @@ Vastusten virta ei muutu, koska nollakohta on vain valinta laskemista varten. Se
 **Periaate:** Haarautumispisteessä $P$ virtalaki antaa $I_1 + I_3 = I_2$. Vasen silmukka (lähde $U_1$, vastukset $R_1$ ja $R_2$) ja oikea silmukka (lähde $U_2$, vastukset $R_3$ ja $R_2$) kierretään virran suuntaan. Jännitelain mukaan potentiaalin muutosten summa on kummassakin silmukassa nolla. Kolme yhtälöä riittää kolmelle tuntemattomalle virralle.
 
 Energiataseessa lähteiden tuottama teho muuttuu kokonaan vastusten sisäenergiaksi. Ideaalisissa lähteissä ja johtimissa ei häviä energiaa.
-**Kaava:** $$\begin{aligned} I_1 + I_3 &= I_2 \\ R_1 I_1 + R_2 I_2 &= U_1 \\ R_3 I_3 + R_2 I_2 &= U_2 \\ I_1 &= \dfrac{U_1 - R_2 I_2}{R_1} \\ I_3 &= \dfrac{U_2 - R_2 I_2}{R_3} \\ I_2 &= \dfrac{U_1 R_3 + U_2 R_1}{D} \\ D &= R_1 R_3 + R_2 R_3 + R_1 R_2 \\ P_\text{lähde} &= UI \\ P_\text{vastus} &= RI^2 \end{aligned}$$
+**Kaava:** $$\begin{aligned} I_1 + I_3 &= I_2 \\ R_1 I_1 + R_2 I_2 &= U_1 \\ R_3 I_3 + R_2 I_2 &= U_2 \\ I_1 &= \dfrac{U_1 - R_2 I_2}{R_1} \\ I_3 &= \dfrac{U_2 - R_2 I_2}{R_3} \\ R_1 R_3 I_2 &= R_3 (U_1 - R_2 I_2) \\ &\quad + R_1 (U_2 - R_2 I_2) \\ D &= R_1 R_3 + R_2 R_3 + R_1 R_2 \\ I_2 D &= U_1 R_3 + U_2 R_1 \\ I_2 &= \dfrac{U_1 R_3 + U_2 R_1}{D} \\ P_\text{lähde} &= UI \\ P_\text{vastus} &= RI^2 \end{aligned}$$
 **Muunnokset:** Ei tarvita, koska kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** Osoittaja on $12\,\text{V} \cdot 30\,\Omega + 9{,}0\,\text{V} \cdot 30\,\Omega = 630\,\text{V}\,\Omega$ Nimittäjä on $$\begin{aligned} D &= 30\,\Omega \cdot 30\,\Omega + 20\,\Omega \cdot 30\,\Omega \\ &\quad + 30\,\Omega \cdot 20\,\Omega = 2100\,\Omega^2 \end{aligned}$$ Siten $I_2 = \dfrac{630\,\text{V}\,\Omega}{2100\,\Omega^2} = 0{,}30\,\text{A}$.
 

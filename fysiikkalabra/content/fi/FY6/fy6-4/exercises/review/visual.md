@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0b598d282f9c3642
+CONTENT-HASH: f3db54128b103065
+SCOPE: delta numbers,teacher-figure from 0b598d282f9c3642 base 9102119
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions, Sijoitus step with a bare "c)" (fy6-2 L2) / "b)" (fy6-4 L2) label alone on its line above a calculation box: the part letter reads orphaned; give it a short lead-in ("c) Virheraja on") as in the neighbouring parts.
+- [Minor] solutions.md, Kaava blocks — the `aligned` rows are not always aligned at `=` (rows with `\Rightarrow` or a long left side sit slightly off the column) — optional; shared mathlayout, not a per-lesson fix.
 
 ## Checked
-- Delta (md-paragraphs): the diff of solutions.md; every added one-line paragraph checked (no one-word or mid-thought orphans).
-- Opened open-exercises captures at 1280 px (lesson review/shots, stamp matches this exercises hash): fy6-1 L1-5 and L2-8, fy6-2 L2-8, fy6-3 L2-9, fy6-4 L2-9. Paragraph spacing inside solution cards is even, nothing clipped. No 390 px exercise captures exist; the 360 px layout check is green.
+- fy6-4 exercises at 1280 px with every solution open: level 1 part 1 (4-1), level 2 parts 4 and 7 (the new multi-row Kaava with `\Sigma I = 0 \Rightarrow`, 4-13), level 3 parts 3 and 6 (series/parallel ratio, corrected circuit). New Kaava rows read principle, then equation, then result; KaTeX renders, no overflow. The two teacher-approved task pictures (task-mixed, task-parallel) were carried over and not opened separately.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

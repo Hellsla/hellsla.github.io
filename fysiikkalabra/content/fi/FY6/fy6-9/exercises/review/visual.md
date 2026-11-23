@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 88128d0e80473690
+CONTENT-HASH: 9074195cdd27281d
+SCOPE: delta caption-label,numbers from 88128d0e80473690 base b65e579
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] solutions L2-09 Kohta d): the unbroken paragraph "Toinen tyypillinen ohje ..." that follows the new paragraphs has no blank line before it, so it sits tight under the previous paragraph and is one long block (about 100 words); add a blank line (and optionally split it).
+- [Minor] Kaava blocks — `\Sigma U = 0` and the following row are not aligned at `=` with the rest — optional.
 
 ## Checked
-- Delta (solutions.md paragraph breaks only), opened 1280 px captures: open-exercises-1280-6 (L1-06 model answer), L2-1280-12 and -13 (L2-09 c, d), L3-1280-6 (77 % answer, Selitys).
-- Each break is one thought; no one-word paragraph, nothing mid-thought, nothing clipped, spacing in the solution card even.
+- fy6-9 exercises at 1280 px, solutions open: level 2 parts 6 and 8 (resistance from graph, charge/energy chain with Q_k = I_k t_k), level 3 part 7 (staged charging with `\Sigma U = 0`). New Kaava rows readable, no clipping; exercises.json marker removal has no visible effect.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

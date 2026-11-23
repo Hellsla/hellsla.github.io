@@ -1,15 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 7a6a4a96cc364108
+VERDICT: FAIL
+CONTENT-HASH: 9074195cdd27281d
+SCOPE: delta caption-label,md-paragraphs,numbers,typography from 7a6a4a96cc364108 base 5b3ca4f
 
 ## Blocking
+- content/fi/FY6/fy6-9/exercises/solutions.md:57, 67, 107, 189, 275 — (B, consistency) five Kaava blocks open with $\Sigma U = 0$. The lesson's latauspiiri section and the chapter *Kirchhoffin lait ja potentiaali virtapiirissä* state the voltage law as $\sum \Delta V = 0$, with signed potential changes. A sum of voltages, which are positive here, is not zero. The row also does not match the lesson's statement. Fix: write $\sum \Delta V = 0$, or "Jännitelaki:", on the first row. The signed row that follows, $U_\text{lat} - RI - R_\text{s}I - E = 0$, is right.
 
 ## Polish
+- content/fi/FY6/fy6-9/exercises/solutions.md (L2 internal-energy task, Kaava) — $U = R_\text{s} I$ reuses $U$, which in this chapter is the terminal voltage ($U = E + R_\text{s}I$). Write $U_\text{s} = R_\text{s} I$.
 
 ## Checked
-- Round-1 Blocking (fy6-9-L2-09 d) is fixed. The two instructions are now the student's own choice. The examples are presented as "tyypillisiä latausohjeita" with "tarkista sanamuoto aineistosta", and each reason is marked as the solution's own physics, not the source's. The cold-battery reason is no longer attributed to the source and is left outside the chapter's physics. Nothing specific is now said to be on the Tukes page.
-- The physics in d) is unchanged and correct. I = (U_lat − E)/(R + R_s) with a small R_s gives a large I. R_sI² quadruples when I doubles. An internal short turns the stored 1,8 MJ quickly into internal energy. The safety wording is not unsafe.
-- Round-1 Polish (c) is fixed. The 120 W is now named as the power into the battery, and the loss is R_sI² with only EI stored. The charger's own losses are a separate remark about the energy taken from the socket. The falling current through the rising E and the Li-ion charger's taper match the brief.
-- Answer recomputed: W = UQ = 504 Wh = 1,81 MJ and t = UQ/P = 4,2 h, matching answers.py and exercises.json (tolerance 0,02). The cross-check I = P/U → 4,2 h is a real check.
-- Annettu now names the source only as the place the student reads the instructions; no claims are attributed to it.
-- Reflowed chains in the older tasks: same numbers, signs and units in the same order.
-- Hash read at start and end: unchanged.
+- Hash 9074195cdd27281d at start and end. Delta: the Kaava blocks of 15 tasks and the split paragraphs (L1-06, L3-01 c–d, L3-02).
+- Every new derivation is algebraically correct and starts from $Q = It$, $W = UQ$, $W = Pt$, $P = UI$ or $\eta = W_\text{akku}/W_\text{lat}$, as the lesson writes them.
+- L2 slope task: $I = U_\text{lat}/R_\text{kok} - E/R_\text{kok}$ gives slope $1/R_\text{kok}$, so 0,40 Ω.
+- Discharge cell: $E = U_\text{ka} + R_\text{s}I$ matches the lesson's $U = E - R_\text{s}I$. It gives 0,10 Ω, and E = 3,75 V for both currents.
+- Recomputed: I = 5,0 A; $R_\text{s}$ = 0,20 Ω; 97,5 min; 3240 J. answers.py runs; answers unchanged.
+- The split paragraphs (c, d, Vastaus) keep the same claims and the safety wording.
