@@ -1,17 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 3401498419e442f3
-SCOPE: delta added-exercise from b75218b13b7a7480 base 81db4a6fd727
+CONTENT-HASH: 2ad7083dd45f5c91
+Mode: delta (Formula steps rewritten as aligned derivations from the basic equations)
+Round 1
 
 ## Blocking
 (none)
 
 ## Polish
-- none.
+(none)
 
 ## Checked
-- fy5-11-L2-09: λ = 4 squares = 8.0 cm; v = fλ = 32 cm/s. Realism checked: deep-water limit √(gλ/2π) = 0.35 m/s, so f ≤ 4.4 Hz for λ = 8 cm; 0.32 m/s corresponds to about 1.5 cm depth, plausible for a ripple tank.
-- fy5-11-L2-10: b = 6 squares = 12 cm, λ' = λ/2 = 4.0 cm, b/λ' = 3.0; the constant-speed assumption is stated in the task and its limit (dispersion) named in the solution (B condition met).
-- Diffraction conclusion (wider gap relative to λ, less spreading) correct.
-- Figure fy5-11/rako-ruudukko: English labels "direction of the waves", "wall", "1 square = 2.0 cm" agree with the solutions; λ and b not marked.
-- Compared with the Finnish set by script: all numbers, answers, units and tolerances identical; answers.py agrees.
-- Hash unchanged at start and end.
+- All 12 Formula diffs: each chain starts from $s = vt$ (with $s = 2d$, $2L$ or $3L$ as the geometry says), $v = f\lambda$ or the law of reflection, and is solved in symbols to the old end formula that the Substitution uses. Every row was checked.
+- L1-05, L1-08 and L2-03: echo distances halve the path, $d = vt/2$, and $D = v(t_1+t_2)/2$ is right.
+- L2-05: the offset $t_0$ cancels in $t_4 - t_1$, giving $v = 2(d_4-d_1)/(t_4-t_1)$.
+- L2-01 and L3-02: the wavefront geometry $s = d\sin\alpha$ with $s = v\Delta t$ is consistent both ways.
+- L2-07: $\varphi = \alpha + \beta$ with $\beta = \alpha$ gives $\alpha = \varphi/2$.
+- L2-10: at a constant speed, $v = f\lambda = 2f\lambda'$, so $\lambda' = \lambda/2$ and $b/\lambda' = 2b/\lambda$. The constant-speed condition is still stated.
+- L3-04: $d = vt/2$ per row, then the slope angle from $\tan\theta = \Delta d/\Delta x$.
+- The non-formula hunks are only paragraph splits (script: identical text).
+- Substitutions, answers and tolerances are unchanged. Spot-recomputed: 3.0 cm, 240 m, 48 ms, 0.75 s, 5.0 m/s, 188.65 m, 381 Hz, 32°, 22.0°, 4.5 s, 32 cm/s and 3.0.
+- Hash is the same at the start and the end. The SCOPE line in the packet belongs to the earlier report, so no SCOPE line is given here.

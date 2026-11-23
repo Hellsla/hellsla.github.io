@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 4f57cbe8a8fe14f8
+CONTENT-HASH: 04d9b348c053a3dc
+none
 
 ## Blocking
 (none)
 
 ## Polish
-- fy5-14-L2-09 c): "lukumystiikka" and "salaliittoteoria" are not explained; add "(luvuille annetaan salaperäinen merkitys)" and "(väite, jonka mukaan joku salaa jotain)".
-- fy5-14-L2-09 c): tell the student what to look for in the article ("Etsi kohdat, joissa kerrotaan, mitä 432 Hz:n sanotaan tekevän"); "chakra" is not explained until the solution.
-- The title "Onko 432 Hz luonnon parantava taajuus?" states the claim; "Väitetäänkö ... ?" is a more neutral wording.
+- solutions.md:15, 239 — Kaava "v = fλ, josta λ = v/f" and lines 25, 117, 144, 166, 222 stay in the old one-line form; fine for one-step tasks, but the aligned form would match the rest.
 
 ## Checked
-- Source claims in the solution match the notes (Yle 25.1.2020: spectrum/chakras, "luonnon oma taajuus", 440 as manipulation, Nazi theory, 103+107+109+113, 432·2 = 864; 2 Hz audible; 415 Hz a semitone below; 390–460 Hz); the article's verdict is reported.
-- a) 343/432 = 0,794 m and 0,780 m, answer box tolerance fine; b) 8 Hz is about a third of a semitone: correct.
-- The three claim groups correspond to the article; d) explains a reliable study (blinding, randomisation, pre-set measure).
-- Solution keeps all steps and a limits paragraph (an article is not a study).
-- Set has 10/9/5 tasks; no repeat of the example.
+- The diff in the packet shows the aligned rows without their line breaks; on disk each Kaava is an aligned block (19 blocks), so only the diff view is garbled.
+- The Doppler formulas are now derived from the wavefront picture: moving source away, λ = (v + v_L)T0 and f = v/λ = f0 v/(v + v_L); approaching, λ = (v − v_L)T0; moving listener, v_rel = v + v_H and λ = v T0. All correct, and the derivation explains the sign, which is the common error.
+- Algebra verified: v_L = v(f0/f − 1); v_L = v(f1 − f2)/(f1 + f2) with the cross-multiplication shown; the blood-flow task gives Δf(v − v_v) = 2 f0 v_v, so v_v = vΔf/(2f0 + Δf); beats f2 = f1 − N/t.
+- Sijoitus, answers and tolerances unchanged.
+- Paragraph splits in L1-05, L2, L3 solutions only improve readability; no content change.

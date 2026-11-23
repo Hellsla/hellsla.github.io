@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 41a2bdbdc3e4fe81
+CONTENT-HASH: fd9908d0a3796bfd
+none
 
 ## Blocking
 (none)
 
 ## Polish
-(none) The round-1 Minor is resolved: the Kourou Principle paragraph is rejoined into one paragraph ("...is r = R cos φ: the radius R drawn from the centre ..."); a colon before a lowercase word is correct.
+- [Minor] fy5-3 open-exercises-1280-1 (3-2) — in the Formula block the fraction rows $\tfrac{2\pi r}{T}$ and $\tfrac{1}{f}$ sit close to the next row (the $T$ nearly touches the $1$) — shared aligned-row spacing, not per-lesson; leave.
 
 ## Checked
-- Delta: the single changed paragraph in solutions.md (fy5-3 L3 Kourou Principle). Opened review/shots/fy5-3-open-exercises-L3-1280-5.png.
-- The rejoined paragraph renders cleanly in KaTeX (r = R cos φ, φ, R): spacing fine, no overflow or clipping; the surrounding Given, Find, Principle, Formula, Conversions and Substitution blocks keep their layout.
-- Hash matched the packet (41a2bdbdc3e4fe81), so the captures are current. Other captures not opened; the diff is one paragraph.
+- Delta (Kaava steps as aligned symbolic chains). Opened fy5-3 open-exercises-1280-1 (3-2), -9 (carousel, unchanged formula), L3-1280-8 (record groove, five-step chain).
+- Equals signs align, one step per row, symbolic order then substitution intact; no clipping or overflow. Figure karuselli is teacher-approved (carry).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

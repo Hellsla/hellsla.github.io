@@ -31,7 +31,7 @@ The size of the path difference alone does not decide: the larger path differenc
 **Given:** wavelength $\lambda = 0.68\,\text{m}$, loudspeakers in phase
 **Find:** the smallest path difference $\Delta s$ in metres at which the interference is destructive
 **Principle:** The condition for destructive interference is $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$, and the smallest path difference comes from the smallest whole number $n = 0$. Then the wave from farther away lags half a period, and a crest arrives with a trough.
-**Formula:** $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$, and when $n = 0$: $\Delta s = \dfrac{\lambda}{2}$
+**Formula:** $$\begin{aligned} \Delta s &= \left(n + \tfrac{1}{2}\right)\lambda \\ \Delta s &= \dfrac{\lambda}{2} \quad (n = 0) \end{aligned}$$
 **Conversions:** None needed: the wavelength is in metres.
 **Substitution:** $\Delta s = \dfrac{0.68\,\text{m}}{2} = 0.34\,\text{m}$
 **Answer:** $0.34\,\text{m}$, two significant figures like the wavelength $0.68\,\text{m}$.
@@ -51,7 +51,7 @@ The size of the path difference alone does not decide: the larger path differenc
 **Given:** distance between the loudspeakers $d = 1.20\,\text{m}$, listener's distance from loudspeaker B $s_\text{B} = 1.60\,\text{m}$ perpendicular to the line between the loudspeakers, loudspeakers in phase
 **Find:** the greatest wavelength $\lambda$ in metres at which it is quiet at the listener's position
 **Principle:** The listener, loudspeaker B and loudspeaker A form a right triangle with the right angle at loudspeaker B, so the distance from loudspeaker A follows from the Pythagorean theorem. It is quiet in destructive interference, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. Solved for the wavelength, $\lambda = \tfrac{\Delta s}{n + 1/2}$, which is greatest when $n = 0$.
-**Formula:** $s_\text{A} = \sqrt{d^2 + s_\text{B}^2}$, $\Delta s = s_\text{A} - s_\text{B}$ and $\Delta s = \tfrac{1}{2}\lambda$, so $\lambda = 2\left(\sqrt{d^2 + s_\text{B}^2} - s_\text{B}\right)$
+**Formula:** $$\begin{aligned} s_\text{A} &= \sqrt{d^2 + s_\text{B}^2} \\ \Delta s &= s_\text{A} - s_\text{B} \\ \Delta s &= \tfrac{1}{2}\lambda \\ \lambda &= 2\Delta s \\ \lambda &= 2\left(\sqrt{d^2 + s_\text{B}^2} - s_\text{B}\right) \end{aligned}$$
 **Conversions:** None needed: all distances are in metres.
 **Substitution:** $s_\text{A} = \sqrt{(1.20\,\text{m})^2 + (1.60\,\text{m})^2} = \sqrt{4.00\,\text{m}^2} = 2.00\,\text{m}$, $\lambda = 2 \cdot (2.00\,\text{m} - 1.60\,\text{m}) = 2 \cdot 0.40\,\text{m} = 0.80\,\text{m}$
 **Answer:** $0.80\,\text{m}$, two significant figures, because the path difference $0.40\,\text{m}$ is the difference of the distances to a centimetre.
@@ -61,7 +61,7 @@ The size of the path difference alone does not decide: the larger path differenc
 **Given:** frequency $f = 15\,\text{Hz}$, wave speed $v = 0.30\,\text{m/s}$, distance of point Q from the nearer source $s_2 = 9.0\,\text{cm}$; Q is on the nodal line nearest to the perpendicular bisector
 **Find:** the distance $s_1$ of point Q from source $S_1$ in centimetres
 **Principle:** The wavelength follows from $v = f\lambda$. On a nodal line the interference is destructive, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$, and the nodal line nearest to the perpendicular bisector is $n = 0$. Since Q is nearer to source $S_2$, the distance from source $S_1$ is half a wavelength greater.
-**Formula:** $\lambda = \dfrac{v}{f}$ and $s_1 - s_2 = \dfrac{\lambda}{2}$, so $s_1 = s_2 + \dfrac{v}{2f}$
+**Formula:** $$\begin{aligned} \lambda &= \dfrac{v}{f} \\ s_1 - s_2 &= \dfrac{\lambda}{2} \\ s_1 &= s_2 + \dfrac{\lambda}{2} \\ s_1 &= s_2 + \dfrac{v}{2f} \end{aligned}$$
 **Conversions:** $v = 0.30\,\text{m/s} = 0.30 \cdot 100\,\text{cm/s} = 30\,\text{cm/s}$, so that the wavelength comes out in centimetres like $s_2$.
 **Substitution:** $s_1 = 9.0\,\text{cm} + \dfrac{30\,\text{cm/s}}{2 \cdot 15\,\text{Hz}} = 9.0\,\text{cm} + 1.0\,\text{cm} = 10.0\,\text{cm}$
 **Answer:** $10.0\,\text{cm}$, to a millimetre like the distance $9.0\,\text{cm}$, because the result is the sum of this distance and the addition $1.0\,\text{cm}$.
@@ -85,7 +85,7 @@ In opposite phase a crest of one wave is always at a trough of the other, and by
 **Principle:** By the principle of superposition, equally large pulses of the same shape on opposite sides cancel each other at every point exactly when they are exactly on top of each other, that is, when their centres are at the same place.
 
 The pulses approach each other, each at the speed $v$, so the distance between them shrinks by $2vt$ in the time $t$.
-**Formula:** $2vt = s$, so $t = \dfrac{s}{2v}$
+**Formula:** $$\begin{aligned} s &= vt + vt \\ s &= 2vt \\ t &= \dfrac{s}{2v} \end{aligned}$$
 **Conversions:** None needed: the distance is in metres and the speed in $\text{m/s}$.
 **Substitution:** $t = \dfrac{1.20\,\text{m}}{2 \cdot 0.40\,\text{m/s}} = \dfrac{1.20\,\text{m}}{0.80\,\text{m/s}} = 1.5\,\text{s}$
 **Answer:** $1.5\,\text{s}$, two significant figures like the speed $0.40\,\text{m/s}$.
@@ -111,7 +111,7 @@ A path difference of $3.5\,\text{m}$ would be greater than the distance between 
 **Principle:** The water is at rest when the interference is destructive, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. The point does not move, so the path difference is the same at both frequencies. When the frequency grows, the wavelength gets smaller and more wavelengths fit into the path difference.
 
 Since $14\,\text{Hz}$ is the next destructive frequency, exactly one more wavelength then fits into the path difference: $n$ grows by one.
-**Formula:** $\dfrac{\Delta s}{\lambda_1} = n + \tfrac{1}{2}$ and $\dfrac{\Delta s}{\lambda_2} = n + \tfrac{3}{2}$. Subtract: $\Delta s\left(\dfrac{1}{\lambda_2} - \dfrac{1}{\lambda_1}\right) = 1$. Since $\dfrac{1}{\lambda} = \dfrac{f}{v}$, we get $\Delta s = \dfrac{v}{f_2 - f_1}$
+**Formula:** $$\begin{aligned} \lambda &= \dfrac{v}{f} \\ \dfrac{\Delta s}{\lambda_1} &= n + \tfrac{1}{2} \\ \dfrac{\Delta s}{\lambda_2} &= n + \tfrac{3}{2} \\ \dfrac{\Delta s}{\lambda_2} - \dfrac{\Delta s}{\lambda_1} &= 1 \\ \dfrac{\Delta s\,f_2}{v} - \dfrac{\Delta s\,f_1}{v} &= 1 \\ \Delta s &= \dfrac{v}{f_2 - f_1} \end{aligned}$$
 **Conversions:** None needed: the speed is in $\text{cm/s}$, so the wavelengths and the path difference come out in centimetres.
 **Substitution:** $\Delta s = \dfrac{24\,\text{cm/s}}{14\,\text{Hz} - 10\,\text{Hz}} = \dfrac{24\,\text{cm/s}}{4\,\text{Hz}} = 6.0\,\text{cm}$. For the check, the wavelengths: $\lambda_1 = \dfrac{24\,\text{cm/s}}{10\,\text{Hz}} = 2.4\,\text{cm}$ and $\lambda_2 = \dfrac{24\,\text{cm/s}}{14\,\text{Hz}} = 1.714\,\text{cm}$
 **Answer:** $6.0\,\text{cm}$, two significant figures like the frequencies $10\,\text{Hz}$ and $14\,\text{Hz}$ and the speed $24\,\text{cm/s}$.
@@ -125,7 +125,7 @@ Since $14\,\text{Hz}$ is the next destructive frequency, exactly one more wavele
 In a narrow gap the wave diffracts and spreads into the harbour in curved wavefronts (chapter *A wave meets an obstacle or a gap*), so the gaps act like two sources of the same frequency and in phase.
 
 The boat, the nearer gap and the farther gap form a right triangle, so the distance to the farther gap follows from the Pythagorean theorem. The nodal line nearest to the perpendicular bisector is destructive interference with $n = 0$, $\Delta s = \tfrac{1}{2}\lambda$.
-**Formula:** $s_1 = \sqrt{d^2 + s_2^2}$ and $s_1 - s_2 = \dfrac{\lambda}{2}$, so $\lambda = 2\left(\sqrt{d^2 + s_2^2} - s_2\right)$
+**Formula:** $$\begin{aligned} s_1 &= \sqrt{d^2 + s_2^2} \\ \Delta s &= s_1 - s_2 \\ \Delta s &= \tfrac{1}{2}\lambda \\ \lambda &= 2\Delta s \\ \lambda &= 2\left(\sqrt{d^2 + s_2^2} - s_2\right) \end{aligned}$$
 **Conversions:** None needed: the distances are in metres.
 **Substitution:** $s_1 = \sqrt{(16.0\,\text{m})^2 + (30.0\,\text{m})^2} = \sqrt{1156\,\text{m}^2} = 34.0\,\text{m}$, $\lambda = 2 \cdot (34.0\,\text{m} - 30.0\,\text{m}) = 2 \cdot 4.0\,\text{m} = 8.0\,\text{m}$
 **Answer:** $8.0\,\text{m}$, two significant figures, because the path difference $4.0\,\text{m}$ is the difference of two distances given to three significant figures and has two significant figures.
@@ -149,7 +149,7 @@ The condition $\Delta s = n\lambda$ is satisfied with $n = 0$ whatever the wavel
 **Given:** distances $s_1 = 5.30\,\text{m}$ and $s_2 = 4.45\,\text{m}$, speed of sound $v = 340\,\text{m/s}$, loudspeakers in phase
 **Find:** the lowest frequency $f$ in hertz at which the sound at the point is weak
 **Principle:** A weak sound results from destructive interference, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. The path difference at the point is fixed, so the lowest frequency means the greatest wavelength, that is $n = 0$, where $\Delta s = \tfrac{1}{2}\lambda$. The frequency follows from $v = f\lambda$.
-**Formula:** $\Delta s = s_1 - s_2$, $\lambda = 2\Delta s$ and $f = \dfrac{v}{\lambda}$, so $f = \dfrac{v}{2\Delta s}$
+**Formula:** $$\begin{aligned} \Delta s &= s_1 - s_2 \\ \Delta s &= \tfrac{1}{2}\lambda \\ \lambda &= 2\Delta s \\ f &= \dfrac{v}{\lambda} \\ f &= \dfrac{v}{2\Delta s} \end{aligned}$$
 **Conversions:** None needed: the distances are in metres and the speed in $\text{m/s}$.
 **Substitution:** $\Delta s = 5.30\,\text{m} - 4.45\,\text{m} = 0.85\,\text{m}$, $f = \dfrac{340\,\text{m/s}}{2 \cdot 0.85\,\text{m}} = 200\,\text{Hz}$
 **Answer:** $200\,\text{Hz}$, two significant figures, because the path difference $0.85\,\text{m}$ is a difference of distances and has two significant figures.
@@ -163,7 +163,7 @@ The condition $\Delta s = n\lambda$ is satisfied with $n = 0$ whatever the wavel
 Since a change $\Delta x$ in $x$ changes the path difference by $2\Delta x$, the spacing of adjacent points is $\Delta x = \tfrac{\lambda}{2}$. This is the same $\lambda/2$ spacing as between the nodes of a standing wave (chapter Standing wave).
 
 The points are sound minima and not complete silence, because near one loudspeaker the waves differ in strength and do not cancel each other completely.
-**Formula:** $\Delta x = \dfrac{x_6 - x_1}{5}$, $\lambda = 2\Delta x$ and $f = \dfrac{v}{\lambda}$, so $f = \dfrac{v}{2\Delta x}$
+**Formula:** $$\begin{aligned} \Delta x &= \dfrac{x_6 - x_1}{5} \\ \Delta x &= \dfrac{\lambda}{2} \\ \lambda &= 2\Delta x \\ f &= \dfrac{v}{\lambda} \\ f &= \dfrac{v}{2\Delta x} \end{aligned}$$
 **Conversions:** None needed: the positions are in metres and the speed in $\text{m/s}$.
 **Substitution:** The table lists all the points in the chosen range in order, so there are five intervals between the first and the sixth point, and $\Delta x = \dfrac{1.63\,\text{m} - 0.38\,\text{m}}{5} = 0.250\,\text{m}$ and $f = \dfrac{340\,\text{m/s}}{2 \cdot 0.250\,\text{m}} = 680\,\text{Hz}$
 **Answer:** $680\,\text{Hz}$, three significant figures like the positions and the speed of sound; the average over five intervals reduces the scatter of the individual readings.
@@ -192,7 +192,7 @@ So the greatest amplitudes in the table, at $\Delta s = 0.0\,\text{cm}$, $2.0\,\
 **Given:** frequency $f = 170\,\text{Hz}$, speed of sound $v = 340\,\text{m/s}$, distance of loudspeaker M from the listener $s_\text{M} = 3.00\,\text{m}$, loudspeakers in phase and their waves equally large at the listener
 **Find:** a) the distance $s_\text{N}$ of loudspeaker N from the listener in metres, b) the lowest frequency $f_2 > 170\,\text{Hz}$ at which the sound at the listener is loud, in hertz, c) a justification
 **Principle:** Silence means destructive interference, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$, and the smallest distance corresponds to the smallest number $n = 0$. When the positions of the loudspeakers stay the same, the path difference $\Delta s$ stays the same, but the wavelength changes when the frequency changes. A loud sound results from constructive interference, $\Delta s = n\lambda$ with $n = 1, 2, \ldots$.
-**Formula:** $\lambda = \dfrac{v}{f}$, $\Delta s = \tfrac{1}{2}\lambda$ and $s_\text{N} = s_\text{M} + \Delta s$; at the new frequency $\Delta s = \lambda_2$, so $f_2 = \dfrac{v}{\Delta s}$
+**Formula:** $$\begin{aligned} \lambda &= \dfrac{v}{f} \\ \Delta s &= \tfrac{1}{2}\lambda \\ s_\text{N} &= s_\text{M} + \Delta s \\ \Delta s &= \lambda_2 \\ \lambda_2 &= \dfrac{v}{f_2} \\ f_2 &= \dfrac{v}{\Delta s} \end{aligned}$$
 **Conversions:** None needed: the distances are in metres and the speed in $\text{m/s}$.
 **Substitution:** a) $\lambda = \dfrac{340\,\text{m/s}}{170\,\text{Hz}} = 2.00\,\text{m}$, $\Delta s = \dfrac{2.00\,\text{m}}{2} = 1.00\,\text{m}$ and $s_\text{N} = 3.00\,\text{m} + 1.00\,\text{m} = 4.00\,\text{m}$. b) A loud sound first results when $\Delta s = \lambda_2$, so $f_2 = \dfrac{340\,\text{m/s}}{1.00\,\text{m}} = 340\,\text{Hz}$.
 **Answer:** b) $340\,\text{Hz}$, three significant figures like the speed of sound; a) loudspeaker N is $4.00\,\text{m}$ from the listener.
@@ -207,7 +207,7 @@ In noise-cancelling headphones a microphone measures the noise, and a loudspeake
 **Principle:** The distances of the listener from the loudspeakers follow from the Pythagorean theorem, and their difference is the path difference. At quiet points the interference is destructive, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$.
 
 On the perpendicular bisector $y = 0$ the path difference is zero and the sound is loud, and the path difference grows steadily as $y$ increases. So the first quiet point corresponds to $n = 0$ and the next to $n = 1$.
-**Formula:** $s_1 = \sqrt{L^2 + (y + 0.50\,\text{m})^2}$ and $s_2 = \sqrt{L^2 + (y - 0.50\,\text{m})^2}$, $\Delta s = s_1 - s_2$, $\lambda = 2\Delta s$ and $f = \dfrac{v}{\lambda}$
+**Formula:** $$\begin{aligned} s_1 &= \sqrt{L^2 + (y + 0.50\,\text{m})^2} \\ s_2 &= \sqrt{L^2 + (y - 0.50\,\text{m})^2} \\ \Delta s &= s_1 - s_2 \\ \lambda &= 2\Delta s \\ f &= \dfrac{v}{\lambda} \\ f &= \dfrac{v}{2\Delta s} \end{aligned}$$
 **Conversions:** None needed: all lengths are in metres.
 **Substitution:** At the point $y_1 = 0.82\,\text{m}$: $s_1 = \sqrt{(4.00\,\text{m})^2 + (1.32\,\text{m})^2} = 4.212\,\text{m}$ and $s_2 = \sqrt{(4.00\,\text{m})^2 + (0.32\,\text{m})^2} = 4.013\,\text{m}$, so $\Delta s = 4.212\,\text{m} - 4.013\,\text{m} = 0.199\,\text{m}$, $\lambda = 2 \cdot 0.199\,\text{m} = 0.399\,\text{m}$ and $f = \dfrac{340\,\text{m/s}}{0.399\,\text{m}} = 852.6\,\text{Hz}$. Check at the point $y_2 = 3.01\,\text{m}$: $s_1 = 5.322\,\text{m}$, $s_2 = 4.722\,\text{m}$ and $\Delta s = 0.599\,\text{m} = \tfrac{3}{2}\lambda$, so $\lambda = 0.400\,\text{m}$ and $f = \dfrac{340\,\text{m/s}}{0.400\,\text{m}} = 850.9\,\text{Hz}$.
 **Answer:** $8.5 \cdot 10^{2}\,\text{Hz}$ or $850\,\text{Hz}$, two significant figures: the two estimates $853\,\text{Hz}$ and $851\,\text{Hz}$ differ by less than a percent, and the path difference is a difference of two almost equal distances, so its accuracy is poorer than that of the distances.
@@ -244,7 +244,7 @@ The correct answer is line 4. Check: with this wavelength the path differences o
 **Find:** the path difference $\Delta s = |s_1 - s_2|$ at the point P in metres
 **Principle:** The path difference is the difference of the distances from the two sources to the point P. In the figure the loudspeakers and the point P form a right triangle, so the longer distance follows from the Pythagorean theorem.
 **Reading the graph:** The point P is on the same horizontal line as the loudspeaker $S_1$, $12$ squares away, so $s_1 = 12 \cdot 0.50\,\text{m} = 6.0\,\text{m}$. The loudspeaker $S_2$ is on the same vertical line $5$ squares higher, so the distance between the loudspeakers is $d = 5 \cdot 0.50\,\text{m} = 2.5\,\text{m}$, perpendicular to $s_1$.
-**Formula:** $s_2 = \sqrt{s_1^2 + d^2}$ and $\Delta s = s_2 - s_1$, so $\Delta s = \sqrt{s_1^2 + d^2} - s_1$
+**Formula:** $$\begin{aligned} s_2 &= \sqrt{s_1^2 + d^2} \\ \Delta s &= s_2 - s_1 \\ \Delta s &= \sqrt{s_1^2 + d^2} - s_1 \end{aligned}$$
 **Conversions:** Squares to metres: $12 \cdot 0.50\,\text{m} = 6.0\,\text{m}$ and $5 \cdot 0.50\,\text{m} = 2.5\,\text{m}$.
 **Substitution:** $s_2 = \sqrt{(6.0\,\text{m})^2 + (2.5\,\text{m})^2} = \sqrt{42.25\,\text{m}^2} = 6.5\,\text{m}$ and $\Delta s = 6.5\,\text{m} - 6.0\,\text{m} = 0.50\,\text{m}$
 **Answer:** $0.50\,\text{m}$, two significant figures like the size of a square, $0.50\,\text{m}$.
@@ -255,7 +255,7 @@ The correct answer is line 4. Check: with this wavelength the path differences o
 **Find:** the lowest frequency $f$ at which the interference at the point P is destructive, in hertz
 **Principle:** In destructive interference the path difference is half a wavelength more than a whole number of wavelengths, $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$. The lowest frequency means the longest wavelength, and that is $n = 0$. The frequency follows from the basic wave equation $v = f\lambda$.
 **Reading the graph:** The point P is on the same horizontal line as the loudspeaker $S_1$, $12$ squares away, so $s_1 = 12 \cdot 0.50\,\text{m} = 6.0\,\text{m}$. The loudspeaker $S_2$ is on the same vertical line $5$ squares higher, so the distance between the loudspeakers is $d = 5 \cdot 0.50\,\text{m} = 2.5\,\text{m}$, perpendicular to $s_1$. By the Pythagorean theorem $s_2 = 13$ squares $= 6.5\,\text{m}$, so $\Delta s = 6.5\,\text{m} - 6.0\,\text{m} = 0.50\,\text{m}$.
-**Formula:** $\Delta s = \tfrac{1}{2}\lambda$, so $\lambda = 2\Delta s$, and $f = \dfrac{v}{\lambda}$, so $f = \dfrac{v}{2\Delta s}$
+**Formula:** $$\begin{aligned} \Delta s &= \tfrac{1}{2}\lambda \\ \lambda &= 2\Delta s \\ f &= \dfrac{v}{\lambda} \\ f &= \dfrac{v}{2\Delta s} \end{aligned}$$
 **Conversions:** Not needed: the path difference is in metres and the speed in $\text{m/s}$, so $\tfrac{\text{m/s}}{\text{m}} = \text{s}^{-1} = \text{Hz}$.
 **Substitution:** $f = \dfrac{340\,\text{m/s}}{2 \cdot 0.50\,\text{m}} = \dfrac{340\,\text{m/s}}{1.0\,\text{m}} = 340\,\text{Hz}$
 **Answer:** $340\,\text{Hz}$, two significant figures like the path difference $0.50\,\text{m}$.

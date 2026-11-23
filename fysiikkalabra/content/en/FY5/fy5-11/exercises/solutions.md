@@ -39,7 +39,7 @@ Nothing pulls it down, so the rope returns to its equilibrium position in the sa
 **Given:** delay of the echo $t = 1.4\,\text{s}$, speed of sound $v = 343\,\text{m/s}$
 **Find:** the distance $d$ to the cliff wall in metres
 **Principle:** Sound travels at a steady speed to the wall, is reflected from it and returns. So during the delay of the echo the sound travels a distance of $2d$.
-**Formula:** $2d = v t$, so $d = \dfrac{v t}{2}$
+**Formula:** $$\begin{aligned} s &= vt \\ s &= 2d \\ vt &= 2d \\ d &= \dfrac{vt}{2} \end{aligned}$$
 **Conversions:** Not needed: the speed is in m/s and the time in seconds.
 **Substitution:** $d = \dfrac{343\,\text{m/s} \cdot 1.4\,\text{s}}{2} = \dfrac{480.2\,\text{m}}{2} = 240.1\,\text{m}$
 **Answer:** $240\,\text{m}$ or $2.4 \cdot 10^2\,\text{m}$, two significant figures like the delay $1.4\,\text{s}$.
@@ -63,7 +63,7 @@ The strength of the bending is not affected by the energy of the wave, and the w
 **Given:** depth of the bottom $d = 36\,\text{m}$, speed of sound in water $v = 1500\,\text{m/s}$
 **Find:** the delay of the echo $t$ in milliseconds
 **Principle:** The pulse travels at a steady speed to the bottom, is reflected and returns. During the delay it thus travels a distance of $2d$.
-**Formula:** $2d = v t$, so $t = \dfrac{2d}{v}$
+**Formula:** $$\begin{aligned} s &= vt \\ s &= 2d \\ vt &= 2d \\ t &= \dfrac{2d}{v} \end{aligned}$$
 **Conversions:** The result comes out in seconds, and finally $1\,\text{s} = 1000\,\text{ms}$.
 **Substitution:** $t = \dfrac{2 \cdot 36\,\text{m}}{1500\,\text{m/s}} = \dfrac{72\,\text{m}}{1500\,\text{m/s}} = 0.048\,\text{s} = 0.048 \cdot 1000\,\text{ms} = 48\,\text{ms}$
 **Answer:** $48\,\text{ms}$, two significant figures like the depth $36\,\text{m}$.
@@ -75,7 +75,7 @@ The strength of the bending is not affected by the energy of the wave, and the w
 **Principle:** When the front touches point $A$, the point of the front that hits $B$ is still a distance $s$ from the wall along the ray.
 
 The front is perpendicular to the ray, so the distance $s$ is a leg of a right triangle whose hypotenuse is $d$ and whose opposite angle is $\alpha$, as in the Huygens construction.
-**Formula:** $s = d \sin\alpha$ and $s = v\,\Delta t$, so $\Delta t = \dfrac{d \sin\alpha}{v}$
+**Formula:** $$\begin{aligned} s &= d\sin\alpha \\ s &= v\,\Delta t \\ v\,\Delta t &= d\sin\alpha \\ \Delta t &= \dfrac{d\sin\alpha}{v} \end{aligned}$$
 **Conversions:** Not needed: the distance is in metres and the speed in m/s.
 **Substitution:** $\Delta t = \dfrac{0.60\,\text{m} \cdot \sin 30^\circ}{0.40\,\text{m/s}} = \dfrac{0.30\,\text{m}}{0.40\,\text{m/s}} = 0.75\,\text{s}$
 **Answer:** $0.75\,\text{s}$, two significant figures like the distance $0.60\,\text{m}$ and the speed $0.40\,\text{m/s}$.
@@ -85,7 +85,7 @@ The front is perpendicular to the ray, so the distance $s$ is a leg of a right t
 **Given:** length of the rope $L = 8.0\,\text{m}$, time to return to the starting point $t = 3.2\,\text{s}$
 **Find:** the speed $v$ of the pulse
 **Principle:** The pulse travels at a steady speed along the rope to the tree, is reflected from the fixed end and returns along the same rope. Reflection inverts the pulse but does not change its speed, so in the time $t$ the pulse travels a distance of $2L$.
-**Formula:** $2L = v t$, so $v = \dfrac{2L}{t}$
+**Formula:** $$\begin{aligned} s &= vt \\ s &= 2L \\ v &= \dfrac{2L}{t} \end{aligned}$$
 **Conversions:** Not needed: the length is in metres and the time in seconds.
 **Substitution:** $v = \dfrac{2 \cdot 8.0\,\text{m}}{3.2\,\text{s}} = \dfrac{16\,\text{m}}{3.2\,\text{s}} = 5.0\,\text{m/s}$
 **Answer:** $5.0\,\text{m/s}$, two significant figures like the length and the time.
@@ -95,7 +95,7 @@ The front is perpendicular to the ray, so the distance $s$ is a leg of a right t
 **Given:** delay of the first echo $t_1 = 0.40\,\text{s}$, of the second $t_2 = 0.70\,\text{s}$, speed of sound $v = 343\,\text{m/s}$
 **Find:** the distance $D$ between the walls
 **Principle:** Each echo is sound that has travelled to its own wall and been reflected back. The nearer wall gives the first echo. The distance to each wall is half of the distance travelled by the sound, and the walls are on opposite sides of the listener, so the distances are added.
-**Formula:** $d_1 = \dfrac{v t_1}{2}$, $d_2 = \dfrac{v t_2}{2}$ and $D = d_1 + d_2 = \dfrac{v (t_1 + t_2)}{2}$
+**Formula:** $$\begin{aligned} s &= vt \\ s &= 2d \\ d &= \dfrac{vt}{2} \\ D &= d_1 + d_2 \\ &= \dfrac{v(t_1 + t_2)}{2} \end{aligned}$$
 **Conversions:** Not needed: the speed is in m/s and the times in seconds.
 **Substitution:** $D = \dfrac{343\,\text{m/s} \cdot (0.40\,\text{s} + 0.70\,\text{s})}{2} = \dfrac{343\,\text{m/s} \cdot 1.10\,\text{s}}{2} = 188.65\,\text{m}$
 **Answer:** $190\,\text{m}$ or $1.9 \cdot 10^2\,\text{m}$, two significant figures like the delays $0.40\,\text{s}$ and $0.70\,\text{s}$.
@@ -105,7 +105,7 @@ The front is perpendicular to the ray, so the distance $s$ is a leg of a right t
 **Given:** width of the doorway $b = 0.90\,\text{m}$, speed of sound $v = 343\,\text{m/s}$
 **Find:** the frequency $f$ at which the wavelength is $\lambda = b$
 **Principle:** The speed, frequency and wavelength of sound are related by the equation $v = f\lambda$ (chapter *How waves form and travel*). Set the wavelength equal to the width of the opening and solve for the frequency.
-**Formula:** $v = f\lambda$ and $\lambda = b$, so $f = \dfrac{v}{b}$
+**Formula:** $$\begin{aligned} v &= f\lambda \\ \lambda &= b \\ v &= fb \\ f &= \dfrac{v}{b} \end{aligned}$$
 **Conversions:** Not needed: the speed is in m/s and the width in metres, so the result is in hertz.
 **Substitution:** $f = \dfrac{343\,\text{m/s}}{0.90\,\text{m}} = 381.1\,\text{Hz}$
 **Answer:** $380\,\text{Hz}$ or $3.8 \cdot 10^2\,\text{Hz}$, two significant figures like the width $0.90\,\text{m}$.
@@ -117,7 +117,7 @@ The front is perpendicular to the ray, so the distance $s$ is a leg of a right t
 **Principle:** The sound travels to the wall and back, a distance of $2d$. The time measured by the app is the travel time of this plus the unknown constant delay $t_0$.
 
 When the difference of the times of two measurements is taken, the same delay cancels, and only the extra distance $2(d_4 - d_1)$ remains, which the sound travels during the time $t_4 - t_1$.
-**Formula:** $t = \dfrac{2d}{v} + t_0$, so $t_4 - t_1 = \dfrac{2(d_4 - d_1)}{v}$ and $v = \dfrac{2(d_4 - d_1)}{t_4 - t_1}$
+**Formula:** $$\begin{aligned} t_4 &= \dfrac{2d_4}{v} + t_0 \\ t_1 &= \dfrac{2d_1}{v} + t_0 \\ t_4 - t_1 &= \dfrac{2(d_4 - d_1)}{v} \\ v &= \dfrac{2(d_4 - d_1)}{t_4 - t_1} \end{aligned}$$
 **Conversions:** Not needed: the distances are in metres and the times in seconds.
 **Substitution:**
 $$
@@ -159,7 +159,7 @@ The observations of the table thus follow the rule: the wider the gap is compare
 **Principle:** The error of the student is to take the angle between the incoming and the reflected ray as the angle of incidence. The angle of incidence is measured between the incoming ray and the normal, and the angle of reflection between the reflected ray and the normal.
 
 The normal divides the angle between the rays into these two parts, so $\varphi = \alpha + \beta$. By the law of reflection $\beta = \alpha$.
-**Formula:** $\varphi = \alpha + \beta = 2\alpha$, so $\alpha = \dfrac{\varphi}{2}$
+**Formula:** $$\begin{aligned} \varphi &= \alpha + \beta \\ \beta &= \alpha \\ \varphi &= 2\alpha \\ \alpha &= \dfrac{\varphi}{2} \end{aligned}$$
 **Conversions:** Not needed: the angle is in degrees.
 **Substitution:** $\alpha = \dfrac{64^\circ}{2} = 32^\circ$
 **Answer:** $32^\circ$, two significant figures like the given angle $64^\circ$.
@@ -178,7 +178,7 @@ The wavelength of the cymbal is $\lambda = \tfrac{343\,\text{m/s}}{5000\,\text{H
 **Principle:** When the crest is at $A$, the point of it that hits $B$ is still a distance $s$ away along the ray, and it travels this distance during the delay.
 
 The front is perpendicular to the ray, so $s$, $d$ and the front form a right triangle whose hypotenuse is $d$ and in which $s$ is the leg opposite the angle of incidence.
-**Formula:** $s = v\,\Delta t$ and $\sin\alpha = \dfrac{s}{d}$, so $\alpha = \sin^{-1}\dfrac{v\,\Delta t}{d}$
+**Formula:** $$\begin{aligned} s &= v\,\Delta t \\ \sin\alpha &= \dfrac{s}{d} \\ \alpha &= \sin^{-1}\dfrac{v\,\Delta t}{d} \end{aligned}$$
 **Conversions:** Not needed: the distances are in metres, the speed in m/s and the time in seconds.
 **Substitution:** $s = 0.30\,\text{m/s} \cdot 0.50\,\text{s} = 0.15\,\text{m}$ and $\sin\alpha = \dfrac{0.15\,\text{m}}{0.40\,\text{m}} = 0.375$, so $\alpha = 22.02^\circ$
 **Answer:** $22^\circ$, two significant figures like all the data.
@@ -190,7 +190,7 @@ The front is perpendicular to the ray, so $s$, $d$ and the front form a right tr
 **Principle:** The pulse travels at a steady speed. The post is a fixed end, and a hand holding the rope firmly in place is also a fixed end, so the pulse is inverted in both reflections.
 
 To reach the post for the second time the pulse has travelled three times the length of the rope: to the post, back to the hand and again to the post.
-**Formula:** $3L = v t$, so $t = \dfrac{3L}{v}$
+**Formula:** $$\begin{aligned} s &= vt \\ s &= 3L \\ t &= \dfrac{3L}{v} \end{aligned}$$
 **Conversions:** Not needed: the length is in metres and the speed in m/s.
 **Substitution:** $t = \dfrac{3 \cdot 6.0\,\text{m}}{4.0\,\text{m/s}} = \dfrac{18\,\text{m}}{4.0\,\text{m/s}} = 4.5\,\text{s}$
 **Answer:** $4.5\,\text{s}$, two significant figures like the length and the speed. In addition, the displacement then points upwards: the post inverted the pulse downwards and the hand back upwards.
@@ -202,7 +202,7 @@ To reach the post for the second time the pulse has travelled three times the le
 **Principle:** The pulse travels to the bottom and back, so during the delay it travels a distance of $2d$. The difference $\Delta d$ of the depths of two successive points and the horizontal distance $\Delta x$ of the points form a right triangle whose angle $\theta$ is the slope of the bottom.
 
 The steepest interval is the one where the change of depth is the greatest, because the interval $\Delta x$ is always the same.
-**Formula:** $d = \dfrac{v t}{2}$ and $\tan\theta = \dfrac{\Delta d}{\Delta x}$, so $\theta = \tan^{-1}\dfrac{\Delta d}{\Delta x}$
+**Formula:** $$\begin{aligned} s &= vt \\ s &= 2d \\ d &= \dfrac{vt}{2} \\ \tan\theta &= \dfrac{\Delta d}{\Delta x} \\ \theta &= \tan^{-1}\dfrac{\Delta d}{\Delta x} \end{aligned}$$
 **Conversions:** $1\,\text{ms} = 0.001\,\text{s}$, for example $54\,\text{ms} = 0.054\,\text{s}$.
 **Substitution:** a) The depth is $d = \tfrac{1480\,\text{m/s} \cdot t}{2} = 740\,\text{m/s} \cdot t$. The depths are
 $$
@@ -309,7 +309,7 @@ The width of the slit alone does not decide the order: the narrowest slit is in 
 **Find:** the ratio of the width of the gap to the new wavelength $\tfrac{b}{\lambda'}$ (no unit)
 **Principle:** The task assumes that the speed $v$ of the wave stays the same when the frequency is changed (in a real water tank the speed also depends on the wavelength). With $v$ assumed constant and $v = f\lambda$, doubling the frequency halves the wavelength. The width of the gap does not change.
 **Reading the graph:** To the left of the wall the wavefronts are on vertical lines $1$ and $5$, so $\lambda = 4 \cdot 2.0\,\text{cm} = 8.0\,\text{cm}$. The edges of the gap are on horizontal lines $1$ and $7$, so the gap is $7 - 1 = 6$ squares wide: $b = 6 \cdot 2.0\,\text{cm} = 12\,\text{cm}$.
-**Formula:** $v = f\lambda = 2f\lambda'$, so $\lambda' = \dfrac{\lambda}{2}$ and $\dfrac{b}{\lambda'} = \dfrac{2b}{\lambda}$
+**Formula:** $$\begin{aligned} v &= f\lambda \\ v &= 2f\lambda' \\ \lambda' &= \dfrac{v}{2f} \\ &= \dfrac{\lambda}{2} \\ \dfrac{b}{\lambda'} &= \dfrac{2b}{\lambda} \end{aligned}$$
 **Conversions:** Squares to centimetres: $4 \cdot 2.0\,\text{cm} = 8.0\,\text{cm}$ and $6 \cdot 2.0\,\text{cm} = 12\,\text{cm}$. In the ratio the units of length cancel.
 **Substitution:** $\lambda' = \dfrac{8.0\,\text{cm}}{2} = 4.0\,\text{cm}$ and $\dfrac{b}{\lambda'} = \dfrac{12\,\text{cm}}{4.0\,\text{cm}} = 3.0$
 **Answer:** $3.0$ (no unit), two significant figures like the wavelength $8.0\,\text{cm}$.

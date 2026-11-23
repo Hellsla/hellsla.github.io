@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: a138b3319b58764e
+CONTENT-HASH: eb20b821dc5ff1d9
+Mode: delta (Kaava steps rewritten as aligned derivations from the decibel definition and equal-dose condition; paragraph splits)
+Round 1
 
 ## Blocking
+(none)
 
 ## Polish
-- exercises.json (fy5-16-L2-10 text) — "Energia-annos tarkoittaa korvaan tulleen äänen energian määrää" is strictly energy per unit area (I·t), as the solution's Periaate says; a fair simplification (C), optional "pinta-alaa kohti".
+(none)
 
 ## Checked
-- Hash same at start and end. Delta, round 1 (fi-easy): four captions lost "(esimerkkiaineisto)" (teacher's no-badge rule; data unchanged), added fy5-16-L2-10 (TTL Melu, source task).
-- Script comparison with content/fi/FY5/fy5-16: same ids, answer, unit, tolerance, level, kind; every number in the L2-10 text and solution identical in fi and fi-easy.
-- Source claims match sources.md: 80/85/87 dB(A) as 8-hour levels; 85 dB: noise-control programme, compulsory protectors, marked areas; limit assessed inside the protector; impulsive-noise quotation; no 3 dB rule attributed to TTL.
-- Recomputed: 10^0,3 = 1,995; 10^1 = 10; 10^0,9 = 7,943; t2 = 8 h/7,943 = 1,007 h -> 1,0 h (tol 3 %); rule of thumb 8 h/2³ = 1 h.
-- 94 dB all day: 7 dB above 87 dB(A); 1 h of 94 dB with a quiet rest of day: 94 + 10 lg(1/8) = 84,97 ≈ 85 dB(A), below 87, as stated.
-- 1 dB changes I by +26 %/−21 %, "noin neljänneksen" fine; reference values span 80–87 = 7 dB.
-- Model limits right: computed reference time, not a safe time; impulsive noise not covered.
-- answers.py lines for L2-10 compute the right physics.
-- No SCOPE line printed in the packet's instructions, so none written.
+- Every reference-time derivation starts from the same basic principle: the dose is energy, so $I\,t_\text{v} = I_\text{v}\,t_0$ with $I = 2^{\,n} I_\text{v}$. This gives $t_\text{v} = t_0/2^{\,n}$. It is the equal-energy model the Periaate states, and "every $3\,\text{dB}$ doubles $I$" is the stated approximation ($10^{0{,}3} = 1{,}995$), not a hidden one.
+- Two equal sources: $L_1 = 10\,\text{dB}\lg(I_1/I_0)$ and $L = 10\,\text{dB}\lg(2I_1/I_0)$ give $L - L_1 = 10\,\text{dB}\lg 2$. This is correct: the intensities add, not the levels.
+- Distance: $I_2/I_1 = r_1^2/r_2^2$ (point source, the condition named in the Periaate). This gives $L_1 - L_2 = 20\,\text{dB}\lg(r_2/r_1) = 20\,\text{dB}\lg 2^{\,k} \approx k \cdot 6\,\text{dB}$, which is correct.
+- Reverberation: equal decay rate, $(L_1 - L_2)/\Delta t = 60\,\text{dB}/T$, is correct under the stated steady-decay assumption.
+- Multi-phase dose and protectors: $D = \sum t_i/t_{\text{v},i}$. A protector reduces every phase's $I$ by the same factor $2^{\Delta L/(3\,\text{dB})}$, so $D_\text{korva} = D/2^{\Delta L/(3\,\text{dB})} \le 1$. This is correct and consistent with the Periaate.
+- Every final symbolic form is the one the unchanged Sijoitus line substitutes into.
+- Recomputed in one script: 2.0 h, 73.01 dB, 82 dB (exact 81.98), 4.0 h, 150 %, 16 m, 0.90 s, 125 %, 46 dB, 2.52 h, 75.6 min. All agree with the solutions.
+- Sijoitus, answers and tolerances are unchanged. The paragraph splits (L1-04 and L2-04 Järkevyys, L3-03 Mallivastaus, L2-10 Järkevyys) change no physics, model limits or safety statements.

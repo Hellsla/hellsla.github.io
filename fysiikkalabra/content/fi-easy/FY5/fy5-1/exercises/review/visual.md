@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 25dea4849607eed1
-ROUND: 1
+CONTENT-HASH: ef00ff8a2f8f9fa0
+none
 
 ## Blocking
-- none
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- Delta (md-paragraphs): solutions.md only, paragraph splits. Opened open-exercises-1280-7 (1-7 split), L3-1280-1 (crank), L3-1280-3, L3-1280-5 (gear Vastaus split).
-- Layout survived at 1280 px with all solutions open: each split paragraph is its own block inside the solution panel, labels (Annettu, Periaate, Vastaus) and calculation rows unchanged, no clipping or overlap, units upright with thin space, decimal comma consistent.
-- Wording unchanged by the splits; each paragraph holds one idea.
+- Delta, round 2: the 1-17 (student's error) Kaava now opens with the sentence defining $d$ and $e$. Opened review/shots/fy5-1-open-exercises-L2-1280-6.png (fi-easy, current for this hash).
+- The definition line reads cleanly, both symbols are in LaTeX and the three-row aligned block (r = d - e, M = Fr, M = F(d - e)) is unchanged and aligned at the equals signs. Sijoitus, Vastaus and Järkevyys are intact. No clipping.
+- The earlier Major (symbols $d$ and $e$ undefined) is fixed. Other Kaava rewrites keep the previous PASS.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

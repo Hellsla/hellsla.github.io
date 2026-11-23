@@ -383,6 +383,21 @@ with sync_playwright() as pw:
         if w == 1280: a.screenshot(path=str(ROOT / "preview" / "writepad-image-size.png"))
         expect(f"{page} {w}px: no script errors while resizing a picture", not errs, errs)
         ctx.close()
+    # "Avaa isoksi" (teacher 2026-11-23): a short task (stack mode) keeps its text at most 44 rem wide, while the editor takes the whole
+    # width of the big view up to 92 rem; Abitti's toolbar stays on the window's top edge, above the dialog's bar, and nothing scrolls sideways
+    ctx = b.new_context(viewport={"width": 1920, "height": 1080})
+    pg = ctx.new_page(); visit(); pg.locator("#exercises .ex-big").first.evaluate("e => e.click()"); pg.wait_for_timeout(500)
+    if pg.evaluate("() => !!document.querySelector('dialog.ex-focus[open] .ex-focus-body.stack')"):
+        pg.locator("dialog.ex-focus[open] .rich-text-editor").first.click(); pg.wait_for_timeout(600)
+        m = pg.evaluate("""() => { const d = document.querySelector('dialog.ex-focus[open]'), rem = parseFloat(getComputedStyle(document.documentElement).fontSize), q = s => d.querySelector(s).getBoundingClientRect(),
+            t = document.querySelector('.rich-text-editor-toolbar-root > div'), tb = t && t.getBoundingClientRect(), bar = q('.ex-focus-bar');
+            return { rem, task: q('.ex-focus-task').width, ed: q('.rich-text-editor').width, scroll: document.documentElement.scrollWidth - innerWidth,
+                     tbLeft: tb && tb.left, tbRight: tb && tb.right, tbBottom: tb && tb.bottom, barTop: bar.top }; }""")
+        expect(f"{page} 1920 px: Avaa isoksi, a short task: text at most 44 rem, editor wider than the text and at most 92 rem",
+               m["task"] <= 44 * m["rem"] + 1 and m["ed"] > m["task"] + 100 and m["ed"] <= 92 * m["rem"] + 1, m)
+        expect(f"{page} 1920 px: Avaa isoksi: Abitti's toolbar stays inside the window, above the dialog's bar, and the page does not scroll sideways",
+               m["scroll"] <= 0 and m["tbLeft"] is not None and m["tbLeft"] >= -1 and m["tbRight"] <= 1921 and m["tbBottom"] <= m["barTop"] + 1, m)
+    ctx.close()
     # storage failure: the write throws QuotaExceededError -> an error is shown, never "Tallennettu"
     ctx = b.new_context(viewport={"width": 1280, "height": 900})
     ctx.add_init_script("IDBObjectStore.prototype.put = function () { throw new DOMException('full', 'QuotaExceededError'); };")

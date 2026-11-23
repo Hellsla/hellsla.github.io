@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 000b14e87e0db8d2
+CONTENT-HASH: 206ea06db80075c7
 
 ## Blocking
-(none)
 
 ## Polish
-- solutions.md (L2-09 c) — "Princen linkkaaman sivuston": the student does not know who Prince is unless they read the article; write "artikkelissa mainitun sivuston".
-- exercises.json (L2-09 c) — the three category names give much of the structure away; acceptable as scaffolding for a data task.
+- solutions.md L1 (kaksi Kaava-riviä, "v = fλ, josta λ = v/f" ja "f_n = n f_1") — jätetty entiselleen; ne ovat yhden askeleen tehtäviä, joten riittävät.
+- solutions.md, kaksoisdoppler (verenvirtaus) — Kaava on pitkä, mutta etenee askel askeleelta (f_1, f, Δf, ratkaisu); puhelimella se jakautuu riveiksi, ei estävä.
 
 ## Checked
-- c) now asks for a sorting into three kinds; d) builds on it group by group: a clear progression from reading to evaluating.
-- Solution c) and d) mirror the groups; the Nazi theory is placed with number mysticism with a reason.
-- Long paragraphs now split into short ones; no text wall.
-- L1 note on 3,7 / 3,70 in the answer box fine.
-- Fact content (390-460 Hz, 10^12 ratio) not changed.
+- Diff: jokainen muutettu Kaava alkaa perusyhtälöstä (v = fλ, λ = (v ± v_L)T_0, T_0 = 1/f_0, v_rel = v + v_H) ja johtaa lopulliseen Doppler-kaavaan ennen sijoitusta; sama polku kuin luvun Kaava-osa, joten opiskelija näkee, mistä kaava tulee.
+- Tiedostossa Kaava-rivit ovat kunnollisia aligned-lohkoja (`\\`-erottimet); erotinmerkit puuttuvat vain diffin esityksestä, ei lähteestä.
+- Ratkaisu symbolisesti loppuun: v_L = v(f_0/f − 1), v_L = v(f_1−f_2)/(f_1+f_2), v_v = vΔf/(2f_0+Δf) ennen lukuja; Sijoitus, vastaukset ja toleranssit ennallaan.
+- Liikkuvan kuulijan johto (λ = vT_0, f = v_rel/λ) on fysikaalisesti oikea ja vastaa lukua.
+- Pitkät Periaate- ja Mallivastaus-kappaleet jaettu lyhyiksi kappaleiksi (huojunta, klarinetti, kaksoisdoppler, kitaran kieli); kysymys ja sisältö ennallaan.
+- Huojunta-tehtävän periaate: "kieli oli jo valmiiksi korkeammalla" perusteltu; 436 Hz -vaihtoehto omana kappaleenaan selkeämpi.
+- Suomi ja termit oikein; ei uusia kielivirheitä.

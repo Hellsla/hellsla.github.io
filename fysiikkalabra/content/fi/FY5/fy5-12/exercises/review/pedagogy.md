@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 8a3bb847f1c530b5
+CONTENT-HASH: d46ab117a3ae9b49
 
 ## Blocking
-(none)
 
 ## Polish
-- solutions.md (L2-10 a) — "paineen vaihtelun" in the sound view is still unverified against the live simulation; consider "kuvio".
+- solutions.md:186 (L3 hiljaiset kohdat, Kaava) — the chain jumps from Δs = s_1 − s_2 to λ = 2Δs without the row Δs = ½λ (n = 0), which is in the other tasks. Add `Δs &= \tfrac{1}{2}\lambda` before λ = 2Δs. Periaate gives the condition but the chain should show it.
+- solutions.md:244 (L3 c) task, Kaava) — it is still a prose paragraph with the conditions Δs = nλ and (n + ½)λ. Optional: show them as aligned rows.
 
 ## Checked
-- The diff changes no numbers or symbols: only paragraph breaks inside long Periaate and Mallivastaus fields (L1-03, L1-04, the breakwater task, the microphone task, L2-10, the standing-wave and room tasks), plus one word.
-- The breaks fall at sentence boundaries that make the reasoning easier to read (rule, then application; model, then real room); no step is separated from what it needs.
-- "sisäenergiaksi" is the right FY term; "lämmöksi" was a loose term for energy transformed in the medium. The sentence still refutes the student's claim (energy redistributed, not lost).
-- The unchanged Kaava, Sijoitus and Vastaus fields, including the 0,40 m answer, are untouched.
-- Hash is 8a3bb847f1c530b5 at start and end.
+- Delta review. The Kaava steps are now aligned `\begin{aligned}` rows, one equation per row, ending in the form that the Sijoitus step uses. The answers, tolerances and numbers are unchanged.
+- The interference tasks start from the condition (Δs = (n + ½)λ with n = 0), then solve for λ and f. The student sees that the smallest frequency means the largest wavelength.
+- The Pythagoras tasks (s_A = √(d² + s_B²), Δs = s_A − s_B) give the geometry before the condition, in the order a student works.
+- The two-frequency task (Δs/λ_1 = n + ½, Δs/λ_2 = n + 3/2, subtract, Δs = v/(f_2 − f_1)) is a clear derivation of the combined formula. The cancellation of n is easy to follow.
+- The pulses-on-a-rope task (s = vt + vt) shows why the closing distance is 2vt.
+- The figure change (ruudukko-tehtava) is a teacher-approved drawing; the solutions read it the same way as before.

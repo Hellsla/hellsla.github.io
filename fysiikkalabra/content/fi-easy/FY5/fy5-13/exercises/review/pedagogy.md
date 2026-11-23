@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 9bdcb25618c858ae
+CONTENT-HASH: 61e74317205bae5b
+none
 
 ## Blocking
+(none)
 
 ## Polish
-- exercises.json L2-02 / solutions.md — "pääkorjaus" is mentioned without a definition in the task; students may not know it. Add a short clause: "(ilmapatsas jatkuu hieman putken suun ulkopuolelle)", or say "Oleta, että kupu on täsmälleen putken suulla."
-- Round-1 polish still open: L2-04 and L2-09 read the same figure with the same step; L3-01 is a single halving.
+(none)
 
 ## Checked
-- The added sentence in L2-02 removes the real ambiguity: the answer 339,68 m/s (4Lf) is only right without end correction, so stating it makes the task fair.
-- Solution Periaate now says the end correction is ignored before the formula, in the right place.
-- Järkevyys is clearer: it separates the real measurement (end correction shortens the first resonance) from this task's idealisation; the earlier advice to "compare two resonances" is dropped, which is fine since the task gives only one.
-- No numbers or symbols changed; the answer field and unit are unchanged.
-- Level counts and the other solutions are as passed in round 1.
+- Kaava rows now derive the eigenfrequencies from the standing-wave condition (L = nλ/2 or nλ/4) and v = fλ instead of quoting f_n = n v/(2L); each is solved symbolically to the end before Sijoitus.
+- Closed pipe: L = nλ_n/4 with n odd gives f_n = n v/(4L), correct. Open pipe/string and the end-correction row (L1 = λ/4 − e, L3 = 5λ/4 − e, so λ = L3 − L1) are correct.
+- Difference tasks (f_b − f_a = f1; 2 f1 for the closed pipe; Δf = v/(2L) for n = 4 to 5) are derived from f_n = n f1, algebra correct.
+- The two-pipe L3 task gives f1 = f_n/n and v = 2L f1 or 4L f1; compact and clear.
+- Sijoitus, answers and tolerances unchanged; every aligned block is short enough for a phone.

@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 483576fe55c9f08f
+CONTENT-HASH: 719006f25019fc2b
+none
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md c-kohdan "Leikkauskohdasta saadaan lisämassa $$…$$. Se on noin kolmasosa…" and the Io velocity "Esimerkiksi Iolle $$…$$. Siitä saadaan…" — display maths inside a sentence followed by ". Capital" reads as a new sentence after a loose formula; the build moves the full stop into the maths and the fi page reads well, so this is only a style note — optionally write "…$$, mikä on noin kolmasosa jousen massasta."
-- [Minor] fi-easy split paragraphs: some new paragraphs are two or three short sentences ("Kallistuminen siirtää kuormaa vain senttejä. Ympyrän säteenä voi siis käyttää…"). They are fine as steps, but they do not all follow the Periaate/Kaava/Sijoitus labels; acceptable for the simpler language.
+- [Minor] solutions.md, Kaava blocks (fy5-s1 a, b, e) — the first row `M = Fr, F = mg` is centred apart from the `=` column below — put it on its own aligned row if the shared layout allows.
+- [Minor] solutions.md fy5-s1 c — display formulas mid-sentence followed by "." — optional own line each.
+- [Minor] The fi-easy page itself is not captured (screenshot.py captures Sovella sets in fi only); wording judged from source, layout from the fi capture with the same cuts and formulas.
 
 ## Checked
-- Source diff `git diff 2dc38e00^ -- content/fi-easy/FY5/sovella` (solutions.md paragraph splits, three tasks.json text splits with `\n\n`).
-- Freshly built site/FY5-sovella.html (fi), read as HTML structure only: split paragraphs become separate `<p>`; display maths, aligned chains and the `\text{,}` / `\text{.}` punctuation handling are intact. I opened no screenshot; no screenshot or image was opened for this delta. This is a text-only paragraph split, with no figure, table or maths change, so no capture was needed for judgement.
-- Every split sits at a sentence boundary; no inline maths or unit is cut; LaTeX units and the decimal comma are unchanged. No plain-text quantity was added.
-- The set's figures were not in the diff and were not re-reviewed.
-- The fi-easy page (site/fi-easy/FY5-sovella.html) does not exist, as expected for a draft set.
-- Hash at start and end: 483576fe55c9f08f.
+- Source of the fi-easy tasks.json and solutions.md: Kaava steps now start from the basic equation, simplified symbolically, Sijoitus unchanged; decimal comma `{,}`, units in LaTeX, case endings after maths ("$40\,\text{m}$:n"), "normaalikiihtyvyys" explained at first use in d, instructions plain and ordered.
+- fi captures (same formulas and figures): contact-1.png; page-390-5, page-390-10; fig-1, fig-2, fig-3, fig-4 at 390 px.
+- No clipped or overflowing Kaava or Sijoitus rows at 390 px; figures legible and consistent with the palette.
+- Not opened: 1280 px captures, fig-5, other tasks' pages.
 
 ## Scores
-illustrations 4 (not in the diff) · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
