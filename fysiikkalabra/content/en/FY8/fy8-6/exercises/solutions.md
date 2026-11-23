@@ -75,11 +75,11 @@ $$. The wavelength is over $700\,\text{nm}$, so the light is infrared. That fits
 **Given:** slope of the fitted line $k = 4.10 \cdot 10^{-15}\,\text{V}\,\text{s}$, elementary charge $e = 1.602 \cdot 10^{-19}\,\text{C}$
 **Asked:** the Planck constant $h$ in the unit $\text{J}\,\text{s}$
 **Principle:** At the threshold voltage the energy received by an electron is approximately the energy of a photon, $eU_\text{k} \approx hf$. So the threshold voltage is approximately a line with respect to the frequency, $U_\text{k} \approx \tfrac{h}{e} f$, whose slope in the model is about $\tfrac{h}{e}$.
-**Formula:** At the threshold voltage $eU_\text{k} \approx hf$, and the line is $U_\text{k} \approx kf + b$, so $$
+**Formula:** At the threshold voltage $eU_\text{k} \approx hf$, and the line is $U_\text{k} = kf + b$, so $$
 \begin{aligned}
 U_\text{k} &\approx \dfrac{h}{e}\,f + b \\
 k &= \dfrac{\Delta U_\text{k}}{\Delta f} \approx \dfrac{h}{e} \\
-h &\approx ek
+h &= ek
 \end{aligned}
 $$
 **Conversions:** None are needed: $\text{C} \cdot \text{V}\,\text{s} = \text{J}\,\text{s}$, because $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
@@ -459,7 +459,7 @@ Adding a constant shifts the line upwards but does not change its slope, so the 
 
 **Reading the graph:** The frequencies are $4.759$, $5.081$, $5.260$, $5.710$ and $6.447$ in the unit $10^{14}\,\text{Hz}$. A fit to all five measured points gives the slope $m = 4.208 \cdot 10^{-15}\,\text{V}\,\text{s}$ and the intercept $b = -0.062\,\text{V}$. A fit to the corrected voltages $U = U_\text{measured} - 0.05\,\text{V}$ gives the same slope $4.208 \cdot 10^{-15}\,\text{V}\,\text{s}$ and the intercept $-0.112\,\text{V}$.
 
-**Formula:** The frequency is $f = \dfrac{c}{\lambda}$ and at the threshold voltage $eU_\text{k} = hf$, so $U_\text{k} \approx \dfrac{h}{e}\,f + b$. The slope is $k = \dfrac{\Delta U_\text{k}}{\Delta f} \approx \dfrac{h}{e}$, so $h \approx ek$. For a single LED $eU_\text{k} = hf = \dfrac{hc}{\lambda}$, so $h = \dfrac{eU_\text{k}\lambda}{c}$.
+**Formula:** The frequency is $f = \dfrac{c}{\lambda}$ and at the threshold voltage $eU_\text{k} = hf$, so $U_\text{k} \approx \dfrac{h}{e}\,f + b$. The slope is $k = \dfrac{\Delta U_\text{k}}{\Delta f} \approx \dfrac{h}{e}$, so $h = ek$. For a single LED $eU_\text{k} = hf = \dfrac{hc}{\lambda}$, so $h = \dfrac{eU_\text{k}\lambda}{c}$.
 
 **Conversions:** $\lambda = 630 \cdot 10^{-9}\,\text{m}$ etc.; $\tfrac{\text{V}}{\text{Hz}} = \text{V}\,\text{s}$ and $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$
 
