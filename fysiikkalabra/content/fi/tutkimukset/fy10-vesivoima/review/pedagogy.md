@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: cf0c59c0faa0170b
+CONTENT-HASH: 41226f41e1427776
 
 ## Blocking
 
@@ -7,22 +7,4 @@ None.
 
 ## Polish
 
-- The Raportoi link sits in a parenthesis that splits the main clause, and "kuvaajista ja tuloksista ohje …" reads telegraphic (while the guide is unpublished its name runs straight into the sentence). Suggest a sentence of its own after the first: "Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]."
-
-## Checked (delta 2026-10-31)
-
-- New splash sentence sits in a planning bullet and names the direction of the error (η too large); clear
-- teacher.md true-RMS note consistent with tuulivoimala
-- Body links (kuvaaja, taulukkolaskenta) fit; topic `lampo`; Raportoi names aligned
-
-## Delta 2 (2026-10-31)
-
-- Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
-
-## Delta 4 (2026-10-31)
-
-- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
-
-## Checked (delta 2026-11-16)
-
-- Text/typography diff read in context: thin space in 1 V·1 A = 1 W only. No blocking finding.
+None. Delta: only the aria-label of the efficiency graph changed ("Kuvaaja:" to "Mallikuvaaja:"). It tells a screen-reader user the figure is a model with no measured points, which fits the description's last sentence; the description still gives no answer away. No other lesson text or physics touched.

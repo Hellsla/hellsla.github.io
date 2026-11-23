@@ -114,3 +114,8 @@ Muut kaaviot alkavat sanalla Kaaviokuva tai Kytkentäkaavio; avauskuvat ovat Kuv
 1. Hyväksytäänkö 11,3–11,4 px rajatapauksena vai nostetaanko nimiöt isommiksi?
 2. Vaaditaanko mallikuvaajan akselille yksikkö vai riittääkö suureen symboli (aiemmissa auditoinneissa "mallille hyväksyttävä")?
 3. Lisätäänkö näkyvä "malli"-merkintä kuvaan vai riittääkö kuvateksti?
+
+## Opettajan päätökset (2026-11-23, koordinaattorin chatissa "Go with recommendations"; välitetty koordinaattorin kautta)
+1. **Nimiöt:** 11 px ja yli hyväksytään rajatapauksina. Alle 11 px:n kuvat (esim. hyppy/model 9,2 px) jätetään nyt ennalleen ja kirjataan myöhemmäksi kohdaksi; uusi piirros vaatii opettajan hyväksynnän.
+2. **Mallikuvaajan akseli:** suureen symboli riittää, yksikköä ei vaadita.
+3. **Malli- ja kaaviokuvamerkintä:** kuvateksti riittää. Puuttuvat sanat lisättiin kuvatekstiin (vain tekstimuutos, kuvia ei muutettu; lähde `lessons/tutkimukset/<id>/figures.py`, kuvat uudelleen generoitu): `Kaaviokuva` hyppy/forces ja liukukitka/forces; `Mallikuvaaja` / `mallin mukaan` jaahtyminen/model ja /linear, liikemaara/model, vesivoima/eta. Katselmoinnit ajettu normaalisti.

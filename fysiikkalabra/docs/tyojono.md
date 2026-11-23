@@ -45,8 +45,8 @@ Tehty ja poistettu jonosta: 8q (#690), 8r (#694), kuvan .side-arvio (#775); koht
 Taulukko-otsakkeet 390 px tehty (#731). Auditointi tehty (#536), Major-korjaukset ja sisältöosa tehty (#549, #645; loki §4). Erä 1 (jaetut komponentit) tehty (PR #709: apulinkit, listojen numerointi, laskurivit listoissa, tyhjät taulukkorivit, 28×28-kaappaukset; loki §4). Jäljellä, opettajan päätettävä: Minor-erä ja yhteinen kuvasääntö (nimiöt vähintään noin 12 px 390 px:ssä,
 mallikuvaajan akseleilla suure ja yksikkö, kaaviokuvan kuvateksti sanoo sen kaaviokuvaksi, malliksi merkitty luonnoskuvaaja).
 Kuviin ei kosketa: opettaja piirtää ne itse.
-Kuvasääntöraportti tehty (`docs/audits/2026-11-23-fy10-kuvasaanto.md`, PR #819): opettaja päättää kuvien korjauksista.
-Minor-erä tarkistettu 2026-11-23: suurin osa auditoinnin Minor-löydöksistä on jo korjattu tai koskee kuvia. Jäljellä vain ohuet välit (`\ ` → `\,`, 32 kohtaa 8 tutkimuksessa); ne vaativat uuden katselmoinnin (ei carry-luokkaa, 8 × 3 katselmointia), joten ei tehty. Opettaja päättää: katselmoidaanko vai lisätäänkö jaettu carry-luokka.
+Kuvasääntöraportti tehty (`docs/audits/2026-11-23-fy10-kuvasaanto.md`, PR #819); opettajan päätökset (2026-11-23 koordinaattorin chatissa): nimiöt 11 px ja yli kelpaavat; yksikköä ei vaadita mallikuvaajan akselille; kuvateksti riittää malli- ja kaaviokuvamerkinnäksi, puuttuvat sanat lisätty 6 kuvan kuvatekstiin (PR #819). **Myöhempi kohta:** alle 11 px:n nimiöt (24 kuvaa, raportin kohta 1; pienin hyppy/model 9,2 px) jätetty ennalleen; uusi piirros vaatii opettajan hyväksynnän.
+Minor-erä tehty PR:ssä #819 (opettaja 2026-11-23 koordinaattorin kautta): ohuet välit yksiköissä (32 kohtaa 8 tutkimuksessa) ja yksi lainausmerkki, katselmoinnit normaalisti. Muut auditoinnin Minor-löydökset oli jo korjattu tai koskevat kuvia.
 
 ## 5b. Leikkautuva kaava: avoimet päätökset (opettaja päättää)
 Tarkistus ja `reflow`-carry tehty (#594). Auki: (1) lasketaanko vierityslinjalle jäävä inline-kaava leikkautuneeksi (nyt
