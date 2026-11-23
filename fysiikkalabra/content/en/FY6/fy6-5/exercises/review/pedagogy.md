@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 424e9d97bbd2962e
-SCOPE: delta md-paragraphs,numbers,reflow,teacher-figure,typography,wording from 17c2425172d0b70e base b5600a6
+CONTENT-HASH: cf7a8a854854967f
+SCOPE: delta wording from 424e9d97bbd2962e base a2442fe
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- solutions.md L3-04 Substitution — "= 630 V Ω The denominator is" lacks a full stop and has display maths inside the sentence; split it.
+- solutions.md L3-04, power sentence ends `$$…$$.` with a stray full stop; drop it.
 
 ## Checked
-- The delta is the Formula step of the model solutions, now built from the basic principle equations (Kirchhoff's current and voltage laws, U = RI, Q = It, P = UI) as aligned lines, one step per line.
-- Each derivation starts from the law the Principle step names and reaches the working formula; the steps follow in order and none is skipped (for example 1/R from I = I1 + I2 and U = RI; the divider and the loaded divider in several lines).
-- The Principle, Substitution, Answer and Reasonableness steps are unchanged and still match the new Formula lines; the aligned blocks fit a phone because each line is short, with long ones split.
-- Task texts, levels, figures and answers are unchanged, so the earlier judgement of levels and wording stands.
+- L3-04 Formula derives I_2 step by step (node equation times R_1R_3, D, closed form); matches the Finnish version.
+- Numbers recomputed: I_2 0.30 A, I_1 0.20 A, I_3 0.10 A, 3.3 W balance.
+- Notation aligned with the lesson; wording-only changes otherwise.

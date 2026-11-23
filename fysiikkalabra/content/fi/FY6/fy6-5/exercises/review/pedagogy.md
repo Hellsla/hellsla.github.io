@@ -1,17 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 86c8c78f68c7e9d1
+VERDICT: PASS
+CONTENT-HASH: 33b9c3bf1b8baf23
+SCOPE: delta caption-label,md-paragraphs,numbers,reflow,teacher-figure,typography,wording from 86c8c78f68c7e9d1 base a5182aa
 
 ## Blocking
-- solutions.md:171-186 (fy6-5-L3-04) — the Kaava now states `I_2 = (U_1 R_3 + U_2 R_1) / D` and `D = R_1 R_3 + R_2 R_3 + R_1 R_2` with no derivation, and the substitution of the old solution (insert I_1 and I_3 into the node equation, solve for I_2) was removed from Sijoitus. A student who could not solve the task cannot see where the closed form comes from, which breaks rule 7 (the asked quantity solved in symbols). Fix: after the five rows, add `(U_1 - R_2 I_2)/R_1 + (U_2 - R_2 I_2)/R_3 = I_2`, multiply by `R_1 R_3`, `U_1 R_3 + U_2 R_1 = I_2 (R_1 R_3 + R_2 R_3 + R_1 R_2)`, then the result.
 
 ## Polish
-- solutions.md:184 — the Sijoitus sentence runs "…= 630 V Ω Nimittäjä on $$…$$ Siten": missing full stop before Nimittäjä, and display maths inside a sentence; split into rows or sentences.
-- solutions.md:185 — the power sentence ends `$$…$$.` with a stray full stop on its own after the display block.
-- L2 solutions: the first Kaava row `\Sigma U = 0` followed by `U - U_1 - U_2 = 0` is fine, but the sign convention (rise positive, drop negative) is named only in Periaate; one phrase in the first row's context would help.
+- solutions.md L3-04 Sijoitus — "= 630 V Ω Nimittäjä on" lacks a full stop, and display maths sits inside the sentence; end the sentence "…$630\,\text{V}\,\Omega$." and start "Nimittäjä on…" afresh.
+- solutions.md L3-04, power sentence ends `$$…$$.` with a stray full stop on its own line; drop it.
+- L2 solutions: name the sign convention (rise +, drop −) in the first Kaava row's context, not only in Periaate.
 
 ## Checked
-- Other changed Kaava rows (node law, loop law, potential V_B = V_A - RI, voltage divider, current from U = R_1 I + R_2 I) start from the principle and are correct and followable; Sijoitus now substitutes into the last symbolic form.
-- Closed-form divider results (8,0 V, -9,0 V, -3,0 V) recomputed: correct, and the current is kept as a separate sentence.
-- Loaded divider task derivation (V_P (R_1 + R_p) = R_p U, then R_k) is complete.
-- Split Periaate paragraphs read well, one idea each; no numbers or answers changed in the exercises.
-- Two task figures (teacher-approved) unchanged.
+- L3-04 Kaava now derives I_2: R_1R_3 I_2 = R_3(U_1 − R_2 I_2) + R_1(U_2 − R_2 I_2), D, I_2 D = U_1R_3 + U_2R_1, I_2 = (…)/D. The earlier blocking finding is fixed.
+- Numbers recomputed: 630 V·Ω, D = 2100 Ω², I_2 = 0,30 A, I_1 = 0,20 A, I_3 = 0,10 A, power 3,3 W on both sides.
+- Kaava rows now run from the principle (node law, loop law, potential, divider) to the asked quantity, and Sijoitus substitutes into the last symbolic form.
+- Kirchhoff notation (ΣI, ΣΔV, U_AB = V_A − V_B) matches the lesson's Kaava.
+- Loaded divider (L3-05) derivation is complete; Periaate paragraphs are split, one idea each.
+- Task figures are teacher-approved and unchanged; no exercise numbers or answers changed.

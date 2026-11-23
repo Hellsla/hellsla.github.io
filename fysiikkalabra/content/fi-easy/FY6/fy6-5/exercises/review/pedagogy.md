@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5893f860309dce5f
-SCOPE: delta numbers,typography,reflow,caption-label,md-paragraphs,teacher-figure,wording from 5cfc1e1a443815c4 base a5182aa
+CONTENT-HASH: 7411b0bebaf66c44
+SCOPE: delta wording from 5893f860309dce5f base 0e8231e
 
 ## Blocking
-- none
 
 ## Polish
-- Kirchhoff's two-loop task: the long Kaava with D = R1R3 + R2R3 + R1R2 is heavy for a fi-easy reader, but the Sijoitus explains each part.
+- solutions.md L3-04 Sijoitus — "= 630 V Ω Nimittäjä on" lacks a full stop and has display maths inside the sentence; split it.
+- solutions.md L3-04, power sentence ends `$$…$$.` with a stray full stop; drop it.
 
 ## Checked
-- Kaava steps now start from a basic principle (ΣI = 0, ΣU = 0, U = RI) and derive the working formula line by line; the chain is correct and follows the lesson's own derivation.
-- Each solution keeps its order Annettu, Kysytty, Periaate, Kaava, Sijoitus, Vastaus, Järkevyys; Periaate and Kaava no longer repeat each other.
-- Reflowed paragraphs and substitution lines carry the same numbers and units as before; answers unchanged.
-- Voltage-divider solutions now give V directly and the current second; clear, with the unit check V·Ω/Ω.
-- Figure changes (teacher-approved) leave the task text and figure description unchanged in meaning; no answer disclosed.
+- L3-04 Kaava derives I_2 step by step (node equation times R_1R_3, D, closed form); matches the Finnish version.
+- Numbers recomputed: I_2 0,30 A, I_1 0,20 A, I_3 0,10 A, 3,3 W balance.
+- Plain-Finnish wording kept; notation aligned with the lesson.
