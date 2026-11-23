@@ -1,17 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: ad7141695fb701d6
+CONTENT-HASH: 4abe352fc1c53f08
+SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
-Delta review of the editorial correction 57b67249 in "Why you understand more than you think": "You already know thousands of French words without having studied them." → "You can already recognise many French words, especially through English, Swedish and international scientific vocabulary." Nothing else changed.
-
-## Blocking
-
-None.
-
-## Polish
-
-1. (Carried over, still open) `fx-say-article`, line 4: *C'est une expérience* respelled *se-ty-neks-…*; elsewhere *c'est* is *sè*. Write *sè-ty-nèks-pe-RJÃS sjã-ti-FIK*.
-
-## Checked
-
-- Fact: the new sentence removes an unquantified claim ("thousands … know") and says something defensible: recognition of French words through English (large French/Latin borrowing), Swedish loans (*trottoar*, *paraply*, *byrå*) and international scientific terms, which the examples that follow illustrate. The examples are unchanged and correct.
-- No French text, task answer or ITER/CEA fact changed; the previous checks stand.
+1. Blocking: none
+2. Checked: Two boxes. Reacteur box: -eur = -or ending strategy, reacteur = reactor; the text uses exactly this example. Polish: strategy 2 (look-alike words) would also give the meaning; 'Which strategy' could read 'Which word ending helps you' to make the answer unique, but the intended answer is clearly derivable. Milliard box: un milliard = 10^9 (billion), false friend; correct, matches the table, LaTeX.
