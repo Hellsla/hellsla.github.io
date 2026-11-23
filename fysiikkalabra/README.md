@@ -4,7 +4,7 @@ The site is called **Ruukkilabra**, subtitle *Lukion fysiikka* / *Upper secondar
 folder, the URL and the scripts keep the old working name fysiikkalabra. Logos: `assets/shared/brand/`.
 
 A digital textbook for Finnish upper-secondary physics (LOPS 2019): theory, p5.js simulations and exercises,
-written and reviewed with Claude Code agents, published from the site that CI builds (the `site` artifact; a committed `site/` remains only until work queue 0g PR 3) at
+written and reviewed with Claude Code agents, published from the site that CI builds (the `site` artifact; `site/` is no longer committed, work queue 0g PR 3) at
 `https://ruukkilab.fi/` (see "Publishing at ruukkilab.fi" below). House rules for agents: `CLAUDE.md`; writing rules: `NOTES.md`.
 
 ## Quick start
