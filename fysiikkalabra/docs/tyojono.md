@@ -135,7 +135,6 @@ ei muuteta ilman todettua virhettä; lähdekoodia ei muokata. Raportin rakenne j
 Raportti tehty (#721, `docs/audits/2026-11-18-lopputarkistus-FY1-FY8.md`). **Hyväksytty: opettaja 2026-11-18 klo 18.33** (koordinaattorin chatissa, "mennään ehdotustesi mukaisesti"): korjataan kaikki raportin löydökset, kurssi kerrallaan omissa PR:issään saman kurssin keskeneräisen PR:n jälkeen:
 - FY2: fy2-4 M1, M2, M3 tehty ja katselmoitu (PR #738, 9 katselmointia PASS).
 - FY6: fy6-5 kirjoitusvirhe "sisäenergiakseen": ei löytynyt enää mistään kielestä (tarkistettu PR #815:ssä), ei korjattavaa.
-- FY7: fy7-5 tehty ja katselmoitu (PR #821, 9 katselmointia PASS; muut löydökset jo korjattu mainissa). Jäljellä vain 8g-polish (koe k3-c, k4-c, k6-a, k6-c, k4-b; fy7-8 L3-04, L2-09; fy7-10 näennäissyvyys): opettaja päätti 2026-11-24 "I agree on 1-4", että tehdään. **Varattu: claude/15-fy7-polish**.
 - FY8: fy8-9 tehty (PR #823: "säteilykvanteista", 97,65 → 97,6 MBq, Geiger-kuvateksti; muut löydökset kuvaan, tehtäväkäytäntöön tai ohjelmakuvaukseen liittyvinä jäävät: kuva 14 apuviiva, "Graphical Analysis Prossa", $A=\lambda N$ valinnaisessa tehtävässä, kriteeri 4, tehtävien 9–14 taulukon kuvateksti).
 
 ## 20. Opettajan päätökset 2026-11-18 klo 18.33 (koordinaattorin chatissa, "mennään ehdotustesi mukaisesti")
