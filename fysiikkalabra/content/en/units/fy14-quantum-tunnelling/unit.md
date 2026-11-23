@@ -3355,9 +3355,9 @@ In 1924 the French physicist Louis de Broglie suggested that electrons might be 
 Each electron arrives at one single point, like a particle. But where it arrives is not decided like a bullet's path: after thousands of electrons, the dots form the bands of a wave pattern. At the Fotoni lab visit you can study a double-slit experiment repeated with single photons (unit *Fotoni lab visit: modern physics experiments*).
 
 ```pysahdy
-Single electrons arrive one by one at single points. Why does a band pattern still appear after thousands of electrons?
+Each electron lands at one single point. What shows that electrons still behave as waves?
 ---
-The wave decides the probability of arrival, and the probability is large where the wave is strong. Many arrivals therefore build up the interference bands.
+After thousands of electrons the dots form interference bands, which is a wave pattern.
 ```
 
 ## Through the wall {Tunnel}

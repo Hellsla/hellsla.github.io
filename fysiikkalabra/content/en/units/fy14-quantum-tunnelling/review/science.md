@@ -1,31 +1,6 @@
-VERDICT: PASS
-CONTENT-HASH: 04f3108ac7d6230d
+VERDICT: FAIL
+CONTENT-HASH: 22ffd8f3a164f259
+SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
-Science re-review of fy14-quantum-tunnelling, 2026-11-01. It covers the fixes in commit cdc675d6.
-Update for commit 3dd4228a: in the worked example the momentum root is now written as $\sqrt{2.919 \cdot 10^{-47}} \cdot \sqrt{\text{kg}^2 \cdot \text{m}^2/\text{s}^2}$. That is mathematically correct, and $p = 5.402 \cdot 10^{-24}\ \text{kg} \cdot \text{m/s}$ is unchanged.
-
-
-## Previous findings
-All are resolved:
-1. **Strong force and the slow Sun.**
-   - The strong nuclear force now only "acts" within a few femtometres. The text and the sunbarrier aria-label both say so.
-   - The Sun section says that tunnelling only lets two protons get close.
-   - It says that two protons alone cannot stay together, and that one must turn into a neutron ($\text{p} + \text{p} \to \text{d} + \text{e}^+ + \nu$, the weak interaction). That slow step is why the average proton waits about 9 billion years.
-   - check-3's feedback says the same. This now agrees with `fy14-fusion-reactions` and with Wikipedia *Proton–proton chain*.
-2. **Gamow:** the Sun section now says "Gamow's tunnelling (1928)".
-3. **Electron biprism:** the text now says "an electron biprism, which acts like two slits".
-4. **Turning distance:** check-explain's model answer says "roughly 1000 fm".
-
-## Changes since the last review
-- **pred-tunnel** now asks what happens when the barrier is made twice as wide.
-  - The correct option ("far more rarely through the wide one") is the only right one.
-  - The numbers in the feedback agree with the table: 7.7 % → 0.60 %, a factor of 12.8 ≈ 13.
-  - The "half as often" option is correctly called wrong, because the fall is exponential.
-- **proton-wave, Reasonableness:** it compares 779 fm with about 1000 fm, and both values are right.
-- **Worked example:** only the unit typesetting changed. The numbers are unchanged (0.123 nm, v = 5.9·10⁶ m/s).
-
-## Blocking
-None.
-
-## Polish
-None.
+1. Blocking: - Box after the single-electron double-slit paragraph: "Single electrons arrive one by one at single points. Why does a band pattern still appear after thousands of electrons?" The answer ("The wave decides the probability of arrival ...") is correct physics, but the probability meaning of the wave is not in the paragraph just read; it first appears in Key idea (Born 1926), about 40 lines later. The question cannot be answered from the text read so far (answer not supported by the text yet). Fix: move the box unchanged to just after the Born paragraph in Key idea; or keep it here and ask what the paragraph gives, e.g. "Each electron lands at one point. What shows that electrons still behave as waves?" --- "After thousands of electrons the dots form interference bands, a wave pattern." 
+2. Checked: Three boxes. Box 1: see Blocking. Box 2 (tunnelling): the wave shrinks inside the barrier, a small wave emerges if thin, small probability beyond; matches the paragraph ("a chance of appearing beyond the barrier") and the guardrail (no borrowed energy). Box 3: same $E_\text{k}$, $p=\sqrt{2mE_\text{k}}$, electron has smaller $p$ and longer $\lambda$; recomputed $\lambda_e/\lambda_p = \sqrt{m_p/m_e} \approx 42.9$; correct.
