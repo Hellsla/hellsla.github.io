@@ -121,6 +121,7 @@ Osat: 17a verkoton käyttö (service worker, manifesti, moduuli laitteelle), 17b
 Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, sitten 17f PR 3, 17a PR 3, 17b PR 2. Osien sisältö: loki §17.
 
 ## 18. Oikoluvun korjaukset FY1–FY9 (opettaja 2026-11-15)
+Varattu: claude/fy9-vanhat-loydokset (FY9-yksiköiden vanhan sisällön löydökset, PR #825:n kuvaus, opettaja 2026-11-20 "Ok do it"; sisältää fy9-lampo-rivin).
 Kaikki kurssit tehty (loki §18); FY5:n rivi tehty (#703). Jäljellä vain `docs/physics-phrases-known/`:n rivit (FY9; FY6 tehty §8t): korjaus poistaa rivin; samat virkkeet fi-easy ja en samalla.
 Päätökset P1–P9: `docs/audits/2026-11-15-oikoluku.md`; raja-arvotehtävien tarkistus hyväksyy poikkeaman molempiin suuntiin.
 
