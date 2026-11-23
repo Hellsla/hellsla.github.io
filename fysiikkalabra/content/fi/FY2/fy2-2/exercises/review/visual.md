@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 4e7c5cec5ef77cce
-SCOPE: delta: solutions.md Kaava lines of the proportion, rate and fat-mass tasks (principle, then formula); checked in captures.
+SCOPE: delta numbers,reflow from c6fcc6ca33f40463 base 3076572c597d
 
 ## Blocking
 - none

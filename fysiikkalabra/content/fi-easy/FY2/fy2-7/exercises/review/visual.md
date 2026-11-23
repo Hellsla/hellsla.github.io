@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 4b435403c5d88a78
-SCOPE: delta — Kaava and Sijoitus rows, L3-01 symbols; teacher-approved picture fy2-7-sankey.webp seen as is.
+SCOPE: delta numbers,reflow,teacher-figure,wording from ddb9ea3646cc9276 base 5d4ee2361db4
 
 ## Blocking
 - none

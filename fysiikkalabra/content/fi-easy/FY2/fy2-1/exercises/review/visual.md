@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: ac4d1750f63b5dec
-SCOPE: delta — Kaava lines of solutions.md rewritten to start from the basic principle (E_alussa = E_lopussa, osuus, H = E/m).
+SCOPE: delta numbers,wording from ee5987621a7db704 base 3076572c597d
 
 ## Blocking
 - none

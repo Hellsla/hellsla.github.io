@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 1cbb64c4124fa188
-SCOPE: delta — Kaava lines rewritten from the definition of efficiency / energy conservation; teacher-approved picture fy2-4-grid.webp seen as is.
+SCOPE: delta numbers,teacher-figure,wording from 31aa80002bbd8de9 base 5d4ee2361db4
 
 ## Blocking
 - none

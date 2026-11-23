@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: c5e3f249e10f5fbe
-SCOPE: delta: solutions.md Kaava and Sijoitus lines (principle first, one substitution chain); checked in captures.
+SCOPE: delta numbers from 7bdf29ba918c82a7 base 3076572c597d
 
 ## Blocking
 - none

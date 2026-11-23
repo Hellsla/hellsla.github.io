@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 47ef9f21a9aab27e
-SCOPE: delta caption-label,numbers,reflow,typography from 020a2d39a5af90ba base 23d6dfc
+SCOPE: delta caption-label,numbers,reflow,typography from 09a8d27941359877 base 23d6dfc025aa
 
 ## Blocking
 (none)

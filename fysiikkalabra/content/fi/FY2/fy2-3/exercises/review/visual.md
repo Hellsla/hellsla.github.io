@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 9f921f95949e73e1
-SCOPE: delta: solutions.md Kaava lines (E = Pt, P = ΔE/Δt chains); checked in captures.
+SCOPE: delta numbers from 9f81aa7a215c2f28 base 3076572c597d
 
 ## Blocking
 - none

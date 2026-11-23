@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: b1a4001c20ea8979
-SCOPE: delta — Sijoitus rows of L2-05 and L3-01 and L2-09 Kaava wording.
+SCOPE: delta numbers,reflow,wording from 514101bffd1fe463 base 63ede907e94c
 
 ## Blocking
 - none

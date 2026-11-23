@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 3abf4d8724bef942
-SCOPE: delta: solutions.md Kaava lines (symbolic derivation from the basic relation); checked in captures.
+SCOPE: delta numbers from c66dc1298fe0e516 base 3076572c597d
 
 ## Blocking
 - none
