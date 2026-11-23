@@ -577,7 +577,13 @@ def item_packet(iid, lang=courses.SOURCE_LANG):
     """The visual packet of an investigation, a TVT guide or a Sovella set (<COURSE>-sovella). These have no carry rows,
     so a review is full unless the visual report already passes the current hash."""
     import guides, investigations, practice
-    if iid.endswith("-sovella"):
+    extra, shot_id = [], iid
+    if iid.startswith(practice.UNIT_PREFIX) and iid.endswith("-sovella"):    # a unit (units/<id>-sovella): its texts and its task set, one hash (scripts/units.py)
+        import units
+        uid = practice.set_slug(iid[:-len("-sovella")]); kind, folder, st = "course unit", units.folder(uid, lang), units.status(uid, lang)
+        names, hash_cmd, shot_id = list(units.TEXTS), f"python3 scripts/units.py hash {uid}", uid
+        extra = [practice.folder(units.task_key(uid), lang) / n for n in practice.TEXTS] + [practice.code_folder(units.task_key(uid)) / n for n in practice.CODE]
+    elif iid.endswith("-sovella"):
         code = iid[:-len("-sovella")]; kind, folder, st = "Sovella itsenäisesti", practice.folder(code, lang), practice.status(code, lang)
         names, hash_cmd = ["tasks.json", "solutions.md"], f"python3 scripts/practice.py hash {code}"
     elif iid.endswith("-koe"):
@@ -598,9 +604,9 @@ def item_packet(iid, lang=courses.SOURCE_LANG):
            f"a guide: the screenshots of the software are the school's own and are judged for legibility and fit, not redrawn).\n")
     if mode == "none": out += "\n## No review needed\nYour PASS is for the current hash.\n"
     else:
-        out += visual_rules() + "\n## The text you judge (figure bodies collapsed)\n" + "".join(collapsed(folder / n) for n in names)
-        out += figure_inventory([folder / n for n in names if n.endswith(".md")])
-        out += shots_visual(folder / "review", st["hash"], f"python3 scripts/screenshot.py {iid} --if-stale") + visual_report_rules(f"{folder.relative_to(ROOT)}/review/visual.md", hash_cmd)
+        out += visual_rules() + "\n## The text you judge (figure bodies collapsed)\n" + "".join(collapsed(folder / n) for n in names) + "".join(collapsed(p) for p in extra if p.suffix in (".json", ".md"))
+        out += figure_inventory([folder / n for n in names if n.endswith(".md")] + [p for p in extra if p.suffix == ".md"])
+        out += shots_visual(folder / "review", st["hash"], f"python3 scripts/screenshot.py {shot_id} --if-stale") + visual_report_rules(f"{folder.relative_to(ROOT)}/review/visual.md", hash_cmd)
     f = folder / "review" / "packet-visual.md"; f.parent.mkdir(parents=True, exist_ok=True); f.write_text(out)
     print(f"{f.relative_to(ROOT)}: {mode}, {len(out.encode())} bytes ≈ {len(out.encode()) // 4} tokens")
     return mode
