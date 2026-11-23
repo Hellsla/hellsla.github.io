@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 01d24220fed87317
+CONTENT-HASH: dedbfc65251465a3
+SCOPE: none
 
 ## Blocking
 (none)
@@ -8,9 +9,8 @@ CONTENT-HASH: 01d24220fed87317
 (none)
 
 ## Checked
-- Delta, round 1 (English): solutions.md only, paragraph splits in Principle, Model answer, Reading the graph and Substitution blocks; no word or formula changed.
-- Opened the current captures of the opened-solutions pages (stamp matches this hash) at 1280 px, several parts around the split paragraphs (fy5-10 open-exercises L1/L2/L3 tiles); split paragraphs render as separate short paragraphs inside the solution card, spacing and rules between steps intact, formulas and KaTeX boxes unclipped, no overflow, no empty gaps.
-- Formula rows, units (thin space, upright), colon division and answer boxes unchanged and consistent. Decimal point in English is correct.
+- Delta, solutions.md only: Kaava steps rewritten as aligned multi-row blocks (basic equation, rearrangements, final symbolic form).
+- Opened open-exercises-1280-1, -7, L2-3, L2-5, L2-6, L3-4 (stamp matches hash): Formula blocks render as aligned boxes, equals signs aligned, fractions unclipped, unit thin spaces upright, no overflow; Substitution, Answer and Reasonableness blocks unchanged.
 - Did not open every capture: layout and a11y checks cover the rest.
 
 ## Scores
