@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: edc1028be1632df7
-SCOPE: delta added-exercise from 7c99e4251271e391 base 8f23aa7ae3bd
+CONTENT-HASH: 0b05edf64718632e
+SCOPE: delta numbers,typography,reflow,caption-label,md-paragraphs,teacher-figure from edc1028be1632df7 base b5600a6
 
 ## Blocking
 - none
 
 ## Polish
-- fy6-4-L2-09 is close to L1-02 and L2-04 (two resistors in parallel, total resistance); its new part is reading the figure and the total current in mA. Sensible, but it sits at the lower edge of level 2.
+- Some Kaava lines (e.g. L1-02) are long single display lines; shorter lines per step would read better on a phone.
 
 ## Checked
-- L2-09: figure task, reads 9,0 V, 30 Ω and 45 Ω, then R = 18 Ω and I = 0,50 A = 500 mA; arithmetic correct.
-- Solution is stepwise: why the same voltage is across both, parallel formula, conversion at the end, and a check through branch currents (0,30 + 0,20 A).
-- Figure task-parallel gives all values; its description matches and does not give the current or total resistance.
-- Situation first (ideal battery, wires neglected), question last as its own sentence, unit asked for explicitly.
-- Finnish correct; no trap beyond what the lesson teaches; the set keeps a mix of kinds at level 2.
+- Kaava steps now start from a basic principle (ΣI = 0, ΣU = 0, U = RI) and derive the working formula line by line; the chain is correct and follows the lesson's own derivation.
+- Each solution keeps its order Annettu, Kysytty, Periaate, Kaava, Sijoitus, Vastaus, Järkevyys; Periaate and Kaava no longer repeat each other.
+- Reflowed paragraphs and substitution lines carry the same numbers and units as before; answers unchanged.
+- L3 E12 solution split into short paragraphs: the search for the best pair is easier to follow.
+- Figure changes (teacher-approved) leave the task text and figure description unchanged in meaning; no answer disclosed.

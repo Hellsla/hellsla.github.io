@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 36c2c5b745ea76ef
+CONTENT-HASH: d8a327719d5a4c10
+SCOPE: delta numbers,typography,wording,md-paragraphs from 36c2c5b745ea76ef base 5b3ca4f
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- fy6-9-L2-09 d): the Tukes page could not be checked (known); the solution says to verify the wording, and any two instructions are accepted. Only a- and b) are fully material-independent, so the task is partly a standard calculation; acceptable at level 2.
-- The d) solution is very long (three examples); consider trimming the third (cold battery) which it says is out of scope.
-- c) solution first says 120 W goes into the battery, then that power is not constant: clear enough, but one sentence linking the two would help.
+- Kohta d) model answer is long; the paragraph splits help, but a student may skim it.
 
 ## Checked
-New task against section 6: 36 V x 14 Ah = 504 Wh = 1.8 MJ, 4.2 h verified; c) and d) reason with chapter physics (internal resistance, charger voltage); terms (kenno, oikosulku, häviö) explained; set mix unchanged.
+- Kaava steps now start from a basic principle (ΣI = 0, ΣU = 0, U = RI) and derive the working formula line by line; the chain is correct and follows the lesson's own derivation.
+- Each solution keeps its order Annettu, Kysytty, Periaate, Kaava, Sijoitus, Vastaus, Järkevyys; Periaate and Kaava no longer repeat each other.
+- Reflowed paragraphs and substitution lines carry the same numbers and units as before; answers unchanged.
+- Charging-loop derivations (ΣU = 0 to I and R_s) show every step; the efficiency and power chains are complete.
+- Figure changes (teacher-approved) leave the task text and figure description unchanged in meaning; no answer disclosed.
