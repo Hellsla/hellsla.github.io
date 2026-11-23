@@ -1,17 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 3c6710f77b96877f
+VERDICT: PASS
+CONTENT-HASH: 8e65be516f1f6a85
 
 ## Blocking
-1. Box 2 (absoluuttinen nollapiste, "Miksi suoran jatkaminen nollapaineeseen on vain kaasumallin ennuste?") is in the wrong place. It splits a sentence: the text before it ends "Kelvinlämpötila on", and the formula `T = θ + 273,15 K` comes after the box. On a phone the reader sees a broken sentence, then a box, then a formula that completes it. Worse, the paragraph the student has just read says nothing about extending a line to zero or about condensing. The tested idea ("Absoluuttinen nollapiste saadaan ... Se on mallin ennuste: todellinen kaasu tiivistyy") comes only after the box, so the answer cannot be worked out from the text just read. Move the box to after that paragraph, following the formula and the sentence on the model's prediction. Better still, reword the question to ask for the cause, for example "Mitä todelliselle kaasulle tapahtuu ennen nollapistettä?", so it is not answered by reading the next line.
+None. The earlier blocker is fixed: the second pysahdy box now follows the whole paragraph ending "...todellinen kaasu tiivistyy nesteeksi ennen sitä." and precedes the next heading, so it no longer splits a sentence before the formula.
 
 ## Polish
-- Box 3 (hyötysuhde < 100 %) sits before the sentence "Osa lämmöstä on aina luovutettava kylmempään..." that states its answer. The preceding paragraph does define Q_2 and W, so it is answerable, but the box then repeats the next sentence almost word for word. Put it after that sentence and ask something not yet said, for example what would have to hold for η = 100 % (Q_2 = 0).
-- Box 3's answer says "työ W on pienempi kuin Q_1" without naming the energy balance W = Q_1 − Q_2. The `johda` box right after it derives that. Either link the two or leave the box out.
-- Box 1 (mittarin lukema, 230 kPa) is well placed right after the worked tyre example. It is answerable from the paragraph just read and it targets the main misconception. Its answer repeats the paragraph's numbers, which is fine as a check.
-- Three boxes in one unit is light. A box after the Boyle/hydrostatic text (for example, why the pressure at depth does not depend on the vessel's shape) would be natural, but this is optional.
+- Third box (hyötysuhde) sits right after the formula and its answer is repeated in the next paragraph ("Osa lämmöstä on aina luovutettava kylmempään..."). The student meets the same sentence twice. Consider trimming the paragraph's first sentence.
+- Box 2's answer repeats the preceding sentence almost word for word, so the question is answerable by copying. A question like "Mitä suoran jatkaminen nollaan olettaa kaasusta?" would make the student reason.
 
 ## Checked
-- Pysahdy boxes 1 to 3: placement, whether the answer is in the paragraph just read, and how they read on a phone (short question, short answer, no scrolling).
-- unit.md text, the Ydinajatus, "Yleisiä virheitä" and "Kertaa" sections, the `johda` derivation (it follows the 1st law and signs correctly), and the deterministic check (practice.py check OK).
-- Task set (9 tasks, the Sovella tasks.json): skimmed titles, the criteria of s1 (paineilmanostin) and the mix of contexts (korjaamo, biokaasu, laiva, ydinvoimala, kuumailmapallo). The set is varied, uses authentic situations and has multi-part tasks with rubrics tied to observable steps. Nothing new blocks since the passed version; I judged only the change in depth.
-- The full task set was not re-read in detail, because the diff touches only unit.md.
+- All three pysahdy boxes (text-only check from the packet, no captures opened):
+  - Box 1 follows the worked tyre example (gauge pressure plus 101 kPa). Question and answer name the exact misconception and are placed after the staged calculation.
+  - Box 2 is now in the right place, after the paragraph it checks.
+  - Box 3 comes after the efficiency formula, before the Q1/Q2 reasoning. It is a why-question with a causal answer.
+- The unit text is staged: core idea, worked example, formulas by subsection, johda derivation, common mistakes and revision links. The Finnish is clear.
+- Sovella tasks (titles and point structure only): practice.py check is OK and the tasks have multi-part rubrics with points. I did not re-judge their content, because the previous FAIL was only about the box and the hash is the one the packet gives.
