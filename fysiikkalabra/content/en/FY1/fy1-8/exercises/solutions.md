@@ -32,7 +32,7 @@
 **Given:** five measurements $24.1\,\text{cm}$, $24.4\,\text{cm}$, $24.0\,\text{cm}$, $24.3\,\text{cm}$ and $24.2\,\text{cm}$
 **Find:** the uncertainty $\Delta x$ in centimetres
 **Principle:** Here the uncertainty is estimated simply as half of the range: it describes the spread of the repeated measurements around the mean. Repeats do not reveal a systematic error.
-**Formula:** $$\begin{aligned} \Delta x &= \dfrac{x_\text{max} - x_\text{min}{2} \end{aligned}$$
+**Formula:** $$\begin{aligned} \Delta x &= \dfrac{x_\text{max} - x_\text{min}}{2} \end{aligned}$$
 **Conversions:** All lengths are in centimetres, so no conversions are needed.
 **Substitution:** $\Delta x = \dfrac{24.4\,\text{cm} - 24.0\,\text{cm}}{2} = \dfrac{0.4\,\text{cm}}{2} = 0.2\,\text{cm}$
 **Answer:** $0.2\,\text{cm}$, one significant figure, because the uncertainty is given with one figure.
@@ -42,7 +42,7 @@
 **Given:** on the row of the lab record, distance $s = 2.00\,\text{m}$, mean of the times $\bar{t} = 4.73\,\text{s}$ and half of the range $\Delta t = 0.15\,\text{s}$
 **Find:** the relative uncertainty $\varepsilon$ of the time as a percentage
 **Principle:** The relative uncertainty tells what fraction of the measured time the uncertainty is. You get it by dividing the uncertainty written in the lab record by the mean time; the distance is not needed.
-**Formula:** $$\begin{aligned} \varepsilon &= \dfrac{\Delta t}{\bar{t} \end{aligned}$$
+**Formula:** $$\begin{aligned} \varepsilon &= \dfrac{\Delta t}{\bar{t}} \end{aligned}$$
 **Conversions:** Both times are in seconds, so no conversions are needed. The quotient is multiplied by one hundred to get a percentage.
 **Substitution:** $\varepsilon = \dfrac{0.15\,\text{s}}{4.73\,\text{s}} = 0.0317 = 3.2\,\%$
 **Answer:** $3.2\,\%$, two significant figures like the uncertainty $0.15\,\text{s}$.
@@ -52,7 +52,7 @@
 **Given:** five times $7.8\,\text{s}$, $8.2\,\text{s}$, $7.9\,\text{s}$, $8.1\,\text{s}$ and $8.0\,\text{s}$
 **Find:** the relative uncertainty $\varepsilon$ of the result as a percentage, when the uncertainty is half of the range
 **Principle:** First calculate the mean and a simple estimate of the uncertainty, half of the range. The relative uncertainty is the uncertainty divided by the mean, so it tells the quality of the measurement regardless of the unit.
-**Formula:** $$\begin{aligned} \bar{t} &= \dfrac{\sum t_i}{5} \\ \Delta t &= \dfrac{t_\text{max} - t_\text{min}{2} \\ \varepsilon &= \dfrac{\Delta t}{\bar{t} \end{aligned}$$
+**Formula:** $$\begin{aligned} \bar{t} &= \dfrac{\sum t_i}{5} \\ \Delta t &= \dfrac{t_\text{max} - t_\text{min}}{2} \\ \varepsilon &= \dfrac{\Delta t}{\bar{t}} \end{aligned}$$
 **Conversions:** All times are in seconds, so no conversions are needed. The quotient is multiplied by one hundred to get a percentage.
 **Substitution:** $\bar{t} = \dfrac{40.0\,\text{s}}{5} = 8.0\,\text{s}$ and $\Delta t = \dfrac{8.2\,\text{s} - 7.8\,\text{s}}{2} = 0.2\,\text{s}$, so $\varepsilon = \dfrac{0.2\,\text{s}}{8.0\,\text{s}} = 0.025 = 2.5\,\%$
 **Answer:** $2.5\,\%$ (calculator value). The uncertainty $0.2\,\text{s}$ is a rough estimate with one figure, so in a report it is enough to round the relative uncertainty to one significant figure, about $3\,\%$. The answer field accepts both.
@@ -92,7 +92,7 @@
 **Given:** slope of the steepest line $v_\text{max} = 0.463\,\text{m/s}$, of the shallowest $v_\text{min} = 0.397\,\text{m/s}$
 **Find:** the uncertainty $\Delta v$ of the speed in $\text{m/s}$
 **Principle:** All lines that fit the data points within their uncertainties are plausible, so the speed is probably between the slopes of the steepest and the shallowest line. The best estimate is their mean, and the uncertainty is half of the difference.
-**Formula:** $$\begin{aligned} v &= \dfrac{v_\text{max} + v_\text{min}{2} \\ \Delta v &= \dfrac{v_\text{max} - v_\text{min}{2} \end{aligned}$$
+**Formula:** $$\begin{aligned} v &= \dfrac{v_\text{max} + v_\text{min}}{2} \\ \Delta v &= \dfrac{v_\text{max} - v_\text{min}}{2} \end{aligned}$$
 **Conversions:** The slopes are already in the same unit, $\text{m/s}$, so no conversions are needed.
 **Substitution:** $\Delta v = \dfrac{0.463\,\text{m/s} - 0.397\,\text{m/s}}{2} = \dfrac{0.066\,\text{m/s}}{2} = 0.033\,\text{m/s}$
 **Answer:** $0.033\,\text{m/s}$ (calculated value; the difference $0.066\,\text{m/s}$ is a two-figure number). As a stated uncertainty it is rounded to one significant figure, so the speed is $v = 0.43\,\text{m/s} \pm 0.03\,\text{m/s}$. The answer field accepts both.
@@ -154,7 +154,7 @@ The question “Is a pendulum nice?” does not concern a measurable quantity.
 **Given:** times of the light ball $3.12\,\text{s}$, $3.08\,\text{s}$, $3.16\,\text{s}$, $3.10\,\text{s}$ and $3.14\,\text{s}$; times of the heavy ball $3.06\,\text{s}$, $3.12\,\text{s}$, $3.04\,\text{s}$, $3.10\,\text{s}$ and $3.08\,\text{s}$
 **Find:** the difference of the means as a percentage of the uncertainty, and the conclusion on whether the data supports the claim
 **Principle:** When the means of two groups are compared, the difference must be compared with the spread of the measurements. Here half of the range is used as a simple estimate of the spread. If the difference does not exceed the spread and the intervals overlap, the difference cannot be shown.
-**Formula:** $$\begin{aligned} \bar{t} &= \dfrac{t_1 + \dots + t_5}{5} \\ \Delta t &= \dfrac{t_\text{max} - t_\text{min}{2} \\ p &= \dfrac{|\bar{t}_{50} - \bar{t}_{200}|}{\Delta t} \cdot 100\,\% \end{aligned}$$
+**Formula:** $$\begin{aligned} \bar{t} &= \dfrac{t_1 + \dots + t_5}{5} \\ \Delta t &= \dfrac{t_\text{max} - t_\text{min}}{2} \\ p &= \dfrac{|\bar{t}_{50} - \bar{t}_{200}|}{\Delta t} \cdot 100\,\% \end{aligned}$$
 **Conversions:** All times are in seconds, so no conversions are needed.
 **Substitution:** The sum of the times of the light ball is $15.60\,\text{s}$, so $\bar{t}_{50} = \dfrac{15.60\,\text{s}}{5} = 3.12\,\text{s}$ and $\Delta t_{50} = \dfrac{3.16\,\text{s} - 3.08\,\text{s}}{2} = 0.04\,\text{s}$. The sum for the heavy ball is $15.40\,\text{s}$, so $\bar{t}_{200} = \dfrac{15.40\,\text{s}}{5} = 3.08\,\text{s}$ and $\Delta t_{200} = \dfrac{3.12\,\text{s} - 3.04\,\text{s}}{2} = 0.04\,\text{s}$. The difference of the means is $3.12\,\text{s} - 3.08\,\text{s} = 0.04\,\text{s}$, so $\dfrac{0.04\,\text{s}}{0.04\,\text{s}} \cdot 100\,\% = 100\,\%$.
 **Answer:** $100\,\%$. The difference of the means is as large as the uncertainty. The intervals $3.12\,\text{s} \pm 0.04\,\text{s}$, that is $3.08$–$3.16\,\text{s}$, and $3.08\,\text{s} \pm 0.04\,\text{s}$, that is $3.04$–$3.12\,\text{s}$, overlap, so the data does not support the claim “the heavy ball is faster”.
@@ -222,7 +222,7 @@ and “The hand-timing uncertainty $0.15\,\text{s}$ is about $3.8$ times the dif
 The relative uncertainty stays within the limit only if the measured fall is large enough compared with the uncertainty, just as in a time measurement where the uncertainty of the time is constant.
 
 First the smallest sufficient fall is calculated, and then the time in which the water cools by this amount at the initial rate.
-**Formula:** $$\begin{aligned} r &= \dfrac{\Delta T}{\Delta t} \\ &= \dfrac{T_\text{start} - T_3}{t_3 - t_\text{start}} \\ \varepsilon &= \dfrac{\Delta T_\text{fall}}{T_\text{fall}} \\ \varepsilon &\le \varepsilon_\text{max} \\ T_\text{fall} &\ge \dfrac{\Delta T_\text{fall}}{\varepsilon_\text{max} \\ t &= \dfrac{T_\text{fall}}{r} \end{aligned}$$
+**Formula:** $$\begin{aligned} r &= \dfrac{\Delta T}{\Delta t} \\ &= \dfrac{T_\text{start} - T_3}{t_3 - t_\text{start}} \\ \varepsilon &= \dfrac{\Delta T_\text{fall}}{T_\text{fall}} \\ \varepsilon &\le \varepsilon_\text{max} \\ T_\text{fall} &\ge \dfrac{\Delta T_\text{fall}}{\varepsilon_\text{max}} \\ t &= \dfrac{T_\text{fall}}{r} \end{aligned}$$
 **Conversions:** A percent is a hundredth: $5.0\,\% = 0.050$. A fall in temperature is the same in kelvins and degrees Celsius, so $\text{K}$ is suitable as the unit.
 **Substitution:** $r = \dfrac{80.0\,{}^\circ\text{C} - 74.0\,{}^\circ\text{C}}{3.0\,\text{min}} = \dfrac{6.0\,\text{K}}{3.0\,\text{min}} = 2.0\,\text{K/min}$. Then $T_\text{fall} \ge \dfrac{1.0\,\text{K}}{0.050} = 20\,\text{K}$, so $t = \dfrac{20\,\text{K}}{2.0\,\text{K/min}} = 10\,\text{min}$.
 **Answer:** at least $10\,\text{min}$, two significant figures like the time interval $3.0\,\text{min}$ and the uncertainty $1.0\,\text{K}$.
@@ -238,7 +238,7 @@ In reality cooling slows down (compare the earlier cooling exercise), and in the
 **Given:** timing uncertainty $\Delta t = 0.2\,\text{s}$, largest allowed relative uncertainty $\varepsilon_\text{max} = 5\,\% = 0.05$; from the table (MAFY table, Äänen nopeuksia eri väliaineissa, air $20\,{}^\circ\text{C}$) the speed of sound $v = 343.4\,\text{m/s}$
 **Find:** shortest measured distance $s$ in $\text{km}$
 **Principle:** The relative uncertainty is $\Delta t : t$, and it must be at most $\varepsilon_\text{max}$. So the measured time must be at least $\Delta t : \varepsilon_\text{max}$. Sound travels at a constant speed, so the distance for this time is $s = vt$.
-**Formula:** $$\begin{aligned} \varepsilon &= \dfrac{\Delta t}{t} \\ \varepsilon &\le \varepsilon_\text{max} \\ t &\ge \dfrac{\Delta t}{\varepsilon_\text{max} \\ t_\text{min} &= \dfrac{\Delta t}{\varepsilon_\text{max} \\ s &= v\,t_\text{min} \end{aligned}$$
+**Formula:** $$\begin{aligned} \varepsilon &= \dfrac{\Delta t}{t} \\ \varepsilon &\le \varepsilon_\text{max} \\ t &\ge \dfrac{\Delta t}{\varepsilon_\text{max}} \\ t_\text{min} &= \dfrac{\Delta t}{\varepsilon_\text{max}} \\ s &= v\,t_\text{min} \end{aligned}$$
 **Conversions:** $1\,\text{km} = 1000\,\text{m}$, so $s$ is converted from metres to kilometres by dividing by $1000$.
 **Substitution:** $t_\text{min} = \dfrac{0.2\,\text{s}}{0.05} = 4.0\,\text{s}$ and $s = 343.4\,\tfrac{\text{m}}{\text{s}} \cdot 4.0\,\text{s} = 1373.6\,\text{m} = 1.3736\,\text{km}$
 **Answer:** $1.4\,\text{km}$ (more precisely $1.37\,\text{km}$), a design estimate given to practical precision and rounded up so that the $5\,\%$ limit is surely met. The answer is accepted within about $\pm 4\,\%$.

@@ -83,7 +83,7 @@
 **Annettu:** tyhjän pullon massa $m_0 = 215\,\text{g}$, nesteen tilavuus $V = 250\,\text{cm}^3$, pullon ja nesteen yhteismassa $m_\text{yht} = 412\,\text{g}$
 **Kysytty:** nesteen tiheys $\rho$ yksikössä $\text{kg/m}^3$
 **Periaate:** Vaaka näyttää pullon ja nesteen yhteismassan. Tiheys lasketaan kuitenkin pelkän nesteen massasta. Vähennä pullon massa. Loput on nesteen massaa.
-**Kaava:** $$\begin{aligned} m &= m_\text{tot} - m_0 \\ \rho &= \dfrac{m}{V} \\ &= \dfrac{m_\text{tot} - m_0}{V} \end{aligned}$$
+**Kaava:** $$\begin{aligned} m &= m_\text{yht} - m_0 \\ \rho &= \dfrac{m}{V} \\ &= \dfrac{m_\text{yht} - m_0}{V} \end{aligned}$$
 **Muunnokset:** $m = 412\,\text{g} - 215\,\text{g} = 197\,\text{g} = 197 \cdot 10^{-3}\,\text{kg} = 0{,}197\,\text{kg}$ ja $250\,\text{cm}^3 = 250 \cdot 10^{-6}\,\text{m}^3 = 2{,}50 \cdot 10^{-4}\,\text{m}^3$.
 **Sijoitus:** $\rho = \dfrac{0{,}197\,\text{kg}}{2{,}50 \cdot 10^{-4}\,\text{m}^3} = 788\,\tfrac{\text{kg}}{\text{m}^3}$
 **Vastaus:** $788\,\tfrac{\text{kg}}{\text{m}^3}$. Vastauksessa on kolme merkitsevää numeroa kuten massojen erotuksessa $197\,\text{g}$. Mittapullon tilavuus $250\,\text{cm}^3$ on tarkka arvo. Se ei rajoita tarkkuutta.
@@ -93,7 +93,7 @@
 **Annettu:** kuparikappaleella ja alumiinikappaleella on sama massa, $m_\text{Cu} = m_\text{Al} = m$; taulukosta $\rho_\text{Cu} = 8960\,\tfrac{\text{kg}}{\text{m}^3}$ ja $\rho_\text{Al} = 2700\,\tfrac{\text{kg}}{\text{m}^3}$
 **Kysytty:** tilavuuksien suhde $V_\text{Al} : V_\text{Cu}$
 **Periaate:** Kummankin kappaleen massa on tiheys kertaa tilavuus. Massat ovat yhtä suuret, joten tiheyden ja tilavuuden tulot ovat yhtä suuret. Suurempi tiheys tarkoittaa siis pienempää tilavuutta.
-**Kaava:** $$\begin{aligned} m &= \rho_\text{Al} V_\text{Al} \\ m &= \rho_\text{Cu} V_\text{Cu} \\ \rho_\text{Al} V_\text{Al} &= \rho_\text{Cu} V_\text{Cu} \\ \dfrac{V_\text{Al}{V_\text{Cu} &= \dfrac{\rho_\text{Cu}{\rho_\text{Al} \end{aligned}$$
+**Kaava:** $$\begin{aligned} m &= \rho_\text{Al} V_\text{Al} \\ m &= \rho_\text{Cu} V_\text{Cu} \\ \rho_\text{Al} V_\text{Al} &= \rho_\text{Cu} V_\text{Cu} \\ \dfrac{V_\text{Al}}{V_\text{Cu}} &= \dfrac{\rho_\text{Cu}}{\rho_\text{Al}} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Tiheydet ovat samassa yksikössä. Massa $m$ supistuu pois.
 **Sijoitus:** $\dfrac{V_\text{Al}}{V_\text{Cu}} = \dfrac{8960\,\tfrac{\text{kg}}{\text{m}^3}}{2700\,\tfrac{\text{kg}}{\text{m}^3}} = 3{,}32$
 **Vastaus:** $3{,}32$ kertaa. Vastauksessa on kolme merkitsevää numeroa. Taulukon tiheydet on annettu kolmen merkitsevän numeron tarkkuudella ($8{,}96\,\text{g/cm}^3$ ja $2{,}70\,\text{g/cm}^3$).
@@ -156,7 +156,7 @@
 **Kysytty:** nesteen tiheys $\rho$ yksikössä $\text{kg/m}^3$, tyhjän mittalasin massa $m_0$ ja syy siihen, miksi suora ei kulje origon kautta
 **Periaate:** Vaaka näyttää mittalasin ja nesteen yhteismassan. Se noudattaa lineaarista mallia $m_\text{yht} = \rho V + m_0$. Nesteen tiheys on suoran kulmakerroin. Tyhjän lasin massa $m_0$ on kohta, jossa suora leikkaa pystyakselin.
 **Kuvaajan lukeminen:** Pisteet ovat nousevalla suoralla, ja suoran molemmin puolin on pisteitä. Sovitettu suora kulkee likimain pisteiden $(0\,\text{cm}^3;\ 85\,\text{g})$ ja $(100\,\text{cm}^3;\ 177\,\text{g})$ kautta. Piste $(0\,\text{cm}^3;\ 85\,\text{g})$ on kohta, jossa suora leikkaa pystyakselin.
-**Kaava:** $$\begin{aligned} m_\text{tot} &= m_0 + \rho V \\ \rho &= \dfrac{\Delta m_\text{tot}}{\Delta V} \\ &= \dfrac{m_2 - m_1}{V_2 - V_1} \\ m_1 &= m_0 + \rho V_1 \\ m_0 &= m_1 - \rho V_1 \end{aligned}$$
+**Kaava:** $$\begin{aligned} m_\text{yht} &= m_0 + \rho V \\ \rho &= \dfrac{\Delta m_\text{yht}}{\Delta V} \\ &= \dfrac{m_2 - m_1}{V_2 - V_1} \\ m_1 &= m_0 + \rho V_1 \\ m_0 &= m_1 - \rho V_1 \end{aligned}$$
 **Muunnokset:** $1\,\tfrac{\text{g}}{\text{cm}^3} = 1000\,\tfrac{\text{kg}}{\text{m}^3}$.
 **Sijoitus:** $\rho = \dfrac{177\,\text{g} - 85\,\text{g}}{100\,\text{cm}^3 - 0\,\text{cm}^3} = \dfrac{92\,\text{g}}{100\,\text{cm}^3} = 0{,}92\,\tfrac{\text{g}}{\text{cm}^3} = 920\,\tfrac{\text{kg}}{\text{m}^3}$ ja $m_0 = 85\,\text{g}$ (kohta, jossa suora leikkaa pystyakselin)
 **Vastaus:** nesteen tiheys on $9{,}2 \cdot 10^2\,\tfrac{\text{kg}}{\text{m}^3}$, kaksi merkitsevää numeroa, koska suora sovitetaan silmällä. Tyhjän mittalasin massa on noin $85\,\text{g}$. Suora ei kulje origon kautta, koska vaaka näyttää myös tyhjän mittalasin massan. Jos nestettä ei ole, $V = 0$, ja vaaka näyttää silti $m_0$.
@@ -176,7 +176,7 @@
 **Annettu:** kappaleen massa $m = 113\,\text{g}$, mittalasin lukemat $V_1 = 50{,}0\,\text{ml}$ ja $V_2 = 62{,}0\,\text{ml}$, ilmakuplan tilavuus $V_\text{k} = 2{,}0\,\text{ml}$; taulukosta kuparin tiheys $8{,}96\,\tfrac{\text{g}}{\text{cm}^3}$ ja lyijyn tiheys $11{,}3\,\tfrac{\text{g}}{\text{cm}^3}$
 **Kysytty:** kappaleen todellinen tiheys $\rho$ yksikössä $\text{g/cm}^3$, oppilaan saama tiheys $\rho'$, sen prosenttivirhe ja metallit, joihin tiheydet viittaavat
 **Periaate:** Vedensiirtomenetelmässä tilavuus on lukemien erotus $V_2 - V_1$. Kupla syrjäyttää vettä kappaleen mukana. Siksi erotus sisältää sekä kappaleen että kuplan tilavuuden. Massa punnitaan erikseen, joten virhe tulee vain tilavuudesta.
-**Kaava:** $$\begin{aligned} V' &= V_2 - V_1 \\ V &= V' - V_\text{b} \\ \rho &= \dfrac{m}{V} \\ \rho' &= \dfrac{m}{V'} \\ p &= \dfrac{\rho' - \rho}{\rho} \cdot 100\,\% \end{aligned}$$
+**Kaava:** $$\begin{aligned} V' &= V_2 - V_1 \\ V &= V' - V_\text{k} \\ \rho &= \dfrac{m}{V} \\ \rho' &= \dfrac{m}{V'} \\ p &= \dfrac{\rho' - \rho}{\rho} \cdot 100\,\% \end{aligned}$$
 **Muunnokset:** $1\,\text{ml} = 1\,\text{cm}^3$, joten $V' = 12{,}0\,\text{cm}^3$ ja $V_\text{k} = 2{,}0\,\text{cm}^3$.
 **Sijoitus:** $V' = 62{,}0\,\text{ml} - 50{,}0\,\text{ml} = 12{,}0\,\text{ml}$ ja $V = 12{,}0\,\text{cm}^3 - 2{,}0\,\text{cm}^3 = 10{,}0\,\text{cm}^3$. Todellinen tiheys on $\rho = \dfrac{113\,\text{g}}{10{,}0\,\text{cm}^3} = 11{,}3\,\tfrac{\text{g}}{\text{cm}^3}$ ja oppilaan tulos on $\rho' = \dfrac{113\,\text{g}}{12{,}0\,\text{cm}^3} = 9{,}42\,\tfrac{\text{g}}{\text{cm}^3}$. Virhe on $\dfrac{9{,}42 - 11{,}3}{11{,}3} \cdot 100\,\% = -16{,}7\,\%$.
 **Vastaus:** Todellinen tiheys on $11{,}3\,\tfrac{\text{g}}{\text{cm}^3}$, kolme merkitsevää numeroa, koska massa ja lukemat on annettu kolmella numerolla.
@@ -192,7 +192,7 @@ Kuplan voi poistaa napauttamalla kappaletta. Sen voi huomata katsomalla mittalas
 **Annettu:** seoskappaleen tilavuus $V = 100\,\text{cm}^3$ ja massa $m = 520\,\text{g}$; taulukosta $\rho_\text{Cu} = 8{,}96\,\tfrac{\text{g}}{\text{cm}^3}$ ja $\rho_\text{Al} = 2{,}70\,\tfrac{\text{g}}{\text{cm}^3}$; tilavuudet lasketaan yhteen
 **Kysytty:** kuparin tilavuus $V_\text{Cu}$ kuutiosenttimetreinä
 **Periaate:** Kokonaistilavuus on osien tilavuuksien summa. Kokonaismassa on osien massojen summa. Kummankin osan massa on tiheys kertaa tilavuus. Tuntemattomia on kaksi, $V_\text{Cu}$ ja $V_\text{Al}$. Siksi tarvitaan kaksi yhtälöä: tilavuuksien summa ja massojen summa.
-**Kaava:** $$\begin{aligned} V_\text{Cu} + V_\text{Al} &= V \\ \rho_\text{Cu} V_\text{Cu} + \rho_\text{Al} V_\text{Al} &= m \\ V_\text{Al} &= V - V_\text{Cu} \\ \rho_\text{Cu} V_\text{Cu} + \rho_\text{Al} (V - V_\text{Cu}) &= m \\ (\rho_\text{Cu} - \rho_\text{Al}) V_\text{Cu} &= m - \rho_\text{Al} V \\ V_\text{Cu} &= \dfrac{m - \rho_\text{Al} V}{\rho_\text{Cu} - \rho_\text{Al} \end{aligned}$$
+**Kaava:** $$\begin{aligned} V_\text{Cu} + V_\text{Al} &= V \\ \rho_\text{Cu} V_\text{Cu} + \rho_\text{Al} V_\text{Al} &= m \\ V_\text{Al} &= V - V_\text{Cu} \\ \rho_\text{Cu} V_\text{Cu} + \rho_\text{Al} (V - V_\text{Cu}) &= m \\ (\rho_\text{Cu} - \rho_\text{Al}) V_\text{Cu} &= m - \rho_\text{Al} V \\ V_\text{Cu} &= \dfrac{m - \rho_\text{Al} V}{\rho_\text{Cu} - \rho_\text{Al}} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Massat ovat grammoina, tilavuudet kuutiosenttimetreinä ja tiheydet yksikössä $\text{g/cm}^3$.
 **Sijoitus:** $V_\text{Cu} = \dfrac{520\,\text{g} - 2{,}70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 100\,\text{cm}^3}{8{,}96\,\tfrac{\text{g}}{\text{cm}^3} - 2{,}70\,\tfrac{\text{g}}{\text{cm}^3}} = \dfrac{250\,\text{g}}{6{,}26\,\tfrac{\text{g}}{\text{cm}^3}} = 39{,}9\,\text{cm}^3$
 **Vastaus:** $39{,}9\,\text{cm}^3$, kolme merkitsevää numeroa, koska taulukon tiheydet on annettu kolmella numerolla. Tilavuus $100\,\text{cm}^3$ ja massa $520\,\text{g}$ ovat tarkkoja arvoja. Ne eivät rajoita tarkkuutta. Alumiinin tilavuus on $$\begin{aligned} V_\text{Al} &= 100\,\text{cm}^3 - 39{,}9\,\text{cm}^3 \\ &= 60{,}1\,\text{cm}^3 \end{aligned}$$.
@@ -352,7 +352,7 @@ Tarkistuspiste, jota ei käytetty mallin muodostamiseen: tilavuudella $V_\text{e
 
 **Mallivastaus b):** Malli on $m = kV$, missä $k = 2{,}70\,\tfrac{\text{kg}}{\textsf{l}}$. Kulmakerroin on alumiinin tiheys, $\rho = k$. Suhteet $\dfrac{m}{V}$ ovat kaikilla riveillä samat kolmen numeron tarkkuudella, joten tiheys ei riipu kappaleen koosta. Neljännessä numerossa näkyvä pieni vaihtelu johtuu tilavuuden lukeman pyöristyksestä $0{,}01\,\textsf{l}$:n tarkkuuteen.
 
-**Kaava:** $$\begin{aligned} \rho &= \dfrac{m}{V} \\ m &= \rho V \\ m_\text{pred} &= \rho V_\text{pred} \end{aligned}$$
+**Kaava:** $$\begin{aligned} \rho &= \dfrac{m}{V} \\ m &= \rho V \\ m_\text{enn} &= \rho V_\text{enn} \end{aligned}$$
 
 **Muunnokset:** $1\,\textsf{l} = 1\,\text{dm}^3 = 10^{-3}\,\text{m}^3$, joten
 
