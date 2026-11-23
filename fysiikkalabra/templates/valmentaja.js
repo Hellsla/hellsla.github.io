@@ -90,7 +90,11 @@
   window.flValmentaja = { KEY, unit, read, write, canStore: () => canStore };
 })();
 
-/* (b) the competence model, (c) the recommendations, (d) the views (work queue 11b PR 4; plan sections 5 and 6).
+/* (e) the goal and the courses taken (work queue 11b PR 4b, P13): the student's own two settings under the key ruukkilabra:fy9-tavoite
+   { v: 1, goal: "LE" | "MC" | "BA" | null, courses: [1..8] }, this device only, carried by the whole-work file (the key names fy9-) and removed by
+   Tyhjennä. The goal changes what is recommended, never a state word, and locks nothing; no grade is shown or predicted (R10). Courses: when any
+   is ticked, a unit whose home course (index unit.course; the exam units have none) is not ticked is left out of the recommendations and the table.
+   (b) the competence model, (c) the recommendations, (d) the views (work queue 11b PR 4; plan sections 5 and 6).
    The model and the recommendations are pure functions of the log, the task index and a day: window.flCoach.cells(log, index, today, summary)
    and window.flCoach.recommend(index, d, today, opts); the tests run them on fixed logs (scripts/test_valmentaja_coach.py). No
    randomness (a tie goes by the order of the course), no model at run time, nothing sent. The index is in the page itself
@@ -180,8 +184,10 @@
   // the page checks when some cell needs work (need 0.5 or more); a tie goes by the order of the course, then of the page.
   const recommend = (index, d, todayStr, opts) => {
     opts = opts || {};
-    const log = d.log || [], cs = cells(log, index, todayStr, d.cells), t0 = num(todayStr);
-    const have = evidence(log, index);
+    const log = d.log || [], goal = GOALS.includes(opts.goal) ? opts.goal : null, t0 = num(todayStr);
+    const have = evidence(log, index);   // the diagnostic is offered on the evidence of the whole index, whatever the courses
+    index = within(index, opts.courses);
+    const cs = cells(log, index, todayStr, d.cells);
     if (!have.length && !Object.keys(d.cells || {}).length) return { diag: true, recs: [], cells: cs };
     const touched = new Map();
     for (const r of log) { const day = dayOf(r[0]); if (day && (!touched.has(r[1]) || touched.get(r[1]) < day)) touched.set(r[1], day); }
@@ -196,18 +202,21 @@
       if (opts.budget != null && t.min > opts.budget) return;
       let best = null;
       for (const c of compsOf(t)) {
-        const cell = cs[t.unit + '|' + c], need = cell.W === 0 ? 0.6 : 1 - cell.M, pull = 3 * need + (cell.due ? 2 : 0);   // the cell that needs the task most: of a task of several competencies
+        const cell = cs[t.unit + '|' + c], need = cell.W === 0 ? 0.6 : goal && sufficient(goal, c) && cell.W >= 2 && cell.M >= 0.5 ? 0 : 1 - cell.M, pull = 3 * need + (cell.due ? 2 : 0);   // the cell that needs the task most: of a task of several competencies
         if (!best || pull > best.pull) best = { key: t.unit + '|' + c, cell, need, pull };
       }
       if (!best) return;
       const terms = { need: 3 * best.need, due: best.cell.due ? 2 : 0, wrong: follow.has(t.id) ? 2 : 0, fresh: seen ? 0.3 : 1 };
-      const score = terms.need + terms.due + terms.wrong + terms.fresh;
+      const score = terms.need + terms.due + terms.wrong + terms.fresh + (goal && fits(goal, t) ? 1.5 : 0);
       cand.push({ task: t, i, score, key: best.key, cell: best.cell, need: best.need, terms });
     });
     cand.sort((a, b) => b.score - a.score || (order.get(a.task.unit) - order.get(b.task.unit)) || a.i - b.i);
     const ok = (set, c) => !set.some((x) => x.key === c.key) && set.filter((x) => x.task.unit === c.task.unit).length < 2;
     let pick = [];
-    for (const c of cand) { if (pick.length >= 3) break; if (ok(pick, c)) pick.push(c); }
+    const lim = goal ? LIMIT_OF[goal] : {}, within_ = (set, c) => Object.keys(lim).every((k) => set.filter((x) => klass(x.task).includes(k)).length + (klass(c.task).includes(k) ? 1 : 0) <= lim[k]);
+    for (const c of cand) { if (pick.length >= 3) break; if (ok(pick, c) && within_(pick, c)) pick.push(c); }
+    for (const c of cand) { if (pick.length >= 3) break; if (!pick.includes(c) && ok(pick, c)) pick.push(c); }   // the mix is a wish: a short list is filled
+    pick.sort((a, b) => cand.indexOf(a) - cand.indexOf(b));
     if (pick.some((c) => c.need >= 0.5) && !pick.some((c) => c.task.check === 'auto')) {
       const rest = pick.slice(0, -1), a = cand.find((c) => c.task.check === 'auto' && ok(rest, c));
       if (a) pick = rest.concat(a);
@@ -237,7 +246,34 @@
     d.log = d.log.slice(d.log.length - KEEP);
     return true;
   };
-  window.flCoach = { cells, recommend, compact, evidence, today, COMPS };
+  // the settings (PR 4b): read leniently, written only by the student's own choice
+  const SET_KEY = 'ruukkilabra:fy9-tavoite', GOALS = ['LE', 'MC', 'BA'], CORE = ['concept', 'math', 'graph'];
+  const readSet = () => {
+    try {
+      const o = JSON.parse(localStorage.getItem(SET_KEY));
+      if (o && o.v === 1) return { goal: GOALS.includes(o.goal) ? o.goal : null, courses: [...new Set((Array.isArray(o.courses) ? o.courses : []).filter((c) => Number.isInteger(c) && c >= 1 && c <= 8))].sort((a, b) => a - b) };
+    } catch (e) { /* none or damaged: no settings */ }
+    return { goal: null, courses: [] };
+  };
+  const writeSet = (st) => {
+    try {
+      if (!st.goal && !st.courses.length) localStorage.removeItem(SET_KEY); else localStorage.setItem(SET_KEY, JSON.stringify({ v: 1, goal: st.goal || null, courses: st.courses }));
+      return true;
+    } catch (e) { return false; }
+  };
+  // the index of the courses taken: no courses ticked is the whole index
+  const within = (index, courses) => {
+    if (!courses || !courses.length) return index;
+    const units = index.units.filter((u) => !u.course || courses.includes(u.course)), ids = new Set(units.map((u) => u.id));
+    return Object.assign({}, index, { units, tasks: index.tasks.filter((t) => ids.has(t.unit)) });
+  };
+  // what each goal asks of a cell and of the three (plan PR 4b): a state that is enough for the goal stops pulling, a task kind that fits adds
+  // 1.5, and a limit keeps the mix (B-A no long task while short ones are left, M-C at most two long and two short, L-E at most one task the page checks by itself)
+  const sufficient = (goal, comp) => goal === 'BA' || (goal === 'MC' && !CORE.includes(comp));
+  const fits = (goal, t) => (goal === 'BA' ? t.check === 'auto' && t.kind !== 'long' : goal === 'LE' ? ['long', 'explain', 'interpret'].includes(t.kind) : false);
+  const LIMIT_OF = { BA: { long: 0 }, MC: { long: 2, short: 2 }, LE: { plain: 1 } };
+  const klass = (t) => [t.kind === 'long' ? 'long' : 'short', t.kind === 'choice' || t.kind === 'numeric' ? 'plain' : ''];
+  window.flCoach = { cells, recommend, compact, evidence, today, COMPS, readSet, writeSet, within, SET_KEY, GOALS };
 
   // ---- (d) the views ----
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
@@ -255,7 +291,7 @@
   const SYMBOL = { none: '○', few: '◔', practise: '▲', growing: '◑', strong: '●', strongdue: '●' };
 
   if (row) {
-    const d = data(), res = recommend(index, d, today());
+    const st = readSet(), d = data(), res = recommend(index, d, today(), { goal: st.goal, courses: st.courses });
     if (res.diag || !res.recs.length) return;
     const n = res.recs.length, go = el('a', 'resume-go', T.go); go.href = row.dataset.href || 'FY9-valmentaja.html';
     row.replaceChildren(go, el('p', 'resume-text', fmt(n === 1 ? T.row_one : T.row_n, { n, m: Math.round(minutes(res.recs) / 5) * 5 || minutes(res.recs) })));
@@ -266,61 +302,96 @@
   // the coach page
   const d = data(), t = today();
   if (compact(d, index)) V.write(d);   // (a damaged or newer log is not compacted: data() is then empty and is never written)
-  const res = recommend(index, d, t);
-  const next = document.getElementById('coach-recs');
-  if (next) {
-    if (res.diag) {
-      const a = el('a', 'coach-go', T.diag); a.href = page.dataset.diag || 'fy9-koe.html'; next.replaceChildren(a);
-    } else {
-      const ol = el('ol', 'coach-recs');
-      for (const r of res.recs) {
-        const li = el('li', 'coach-rec'), a = el('a', 'coach-task', r.task.title); a.href = r.task.href;
-        li.append(a, el('span', 'coach-where', where(r.task)), el('span', 'coach-min', fmt(T.min, { n: r.task.min })), el('span', 'coach-why', reason(r.reason)));
-        ol.append(li);
+  let st = readSet();
+  const next = document.getElementById('coach-recs'), areas = document.getElementById('coach-areas');
+  const render = () => {
+    const res = recommend(index, d, t, { goal: st.goal, courses: st.courses });
+    if (next) {
+      if (res.diag) {
+        const a = el('a', 'coach-go', T.diag); a.href = page.dataset.diag || 'fy9-koe.html'; next.replaceChildren(a);
+      } else {
+        const ol = el('ol', 'coach-recs');
+        for (const r of res.recs) {
+          const li = el('li', 'coach-rec'), a = el('a', 'coach-task', r.task.title); a.href = r.task.href;
+          li.append(a, el('span', 'coach-where', where(r.task)), el('span', 'coach-min', fmt(T.min, { n: r.task.min })), el('span', 'coach-why', reason(r.reason)));
+          ol.append(li);
+        }
+        next.replaceChildren(ol);
       }
-      next.replaceChildren(ol);
     }
-  }
-  const areas = document.getElementById('coach-areas');
-  if (areas && !res.diag) {
-    const names = T.comp || {}, unitName = (id) => { const u = index.units.find((x) => x.id === id); return u ? (u.n ? u.n + ' ' : '') + u.title : id; };
-    const box = document.createDocumentFragment();
-    for (const c of COMPS) {
-      const mine = index.units.map((u) => [u.id, res.cells[u.id + '|' + c]]).filter((x) => x[1]);
-      if (!mine.length) continue;
-      const count = {}; mine.forEach(([, s]) => { count[s.state] = (count[s.state] || 0) + 1; });
-      const det = el('details', 'coach-comp'), sum = el('summary'), tab = el('table', 'coach-table');
-      sum.append(el('span', 'coach-comp-name', names[c] || c));
-      const strong = (count.strong || 0) + (count.strongdue || 0);
-      sum.append(el('span', 'coach-comp-sum', [strong && T.state_strong + ' ' + strong, count.growing && T.state_growing + ' ' + count.growing, count.practise && T.state_practise + ' ' + count.practise].filter(Boolean).join(' · ') || T.state_none));
-      const body = el('tbody');
-      for (const [id, s] of mine) {
-        const tr = el('tr'), th = el('th', '', unitName(id)); th.scope = 'row';
-        const td = el('td', 'coach-state s-' + s.state), word = el('span', 'coach-word', T['state_' + s.state]);
-        td.append(el('span', 'coach-mark', SYMBOL[s.state]), word);
-        if (s.W > 0) td.append(el('span', 'coach-basis', fmt(T.basis, { n: s.n, d: s.days }) + (s.own ? ' · ' + T.own : '')));
-        td.querySelector('.coach-mark').setAttribute('aria-hidden', 'true');
-        tr.append(th, td); body.append(tr);
+    if (areas && !res.diag) {
+      const names = T.comp || {}, unitName = (id) => { const u = index.units.find((x) => x.id === id); return u ? (u.n ? u.n + ' ' : '') + u.title : id; };
+      const box = document.createDocumentFragment(), shown = within(index, st.courses).units;
+      for (const c of COMPS) {
+        const mine = shown.map((u) => [u.id, res.cells[u.id + '|' + c]]).filter((x) => x[1]);
+        if (!mine.length) continue;
+        const count = {}; mine.forEach(([, s]) => { count[s.state] = (count[s.state] || 0) + 1; });
+        const det = el('details', 'coach-comp'), sum = el('summary'), tab = el('table', 'coach-table');
+        sum.append(el('span', 'coach-comp-name', names[c] || c));
+        const strong = (count.strong || 0) + (count.strongdue || 0);
+        sum.append(el('span', 'coach-comp-sum', [strong && T.state_strong + ' ' + strong, count.growing && T.state_growing + ' ' + count.growing, count.practise && T.state_practise + ' ' + count.practise].filter(Boolean).join(' · ') || T.state_none));
+        const body = el('tbody');
+        for (const [id, s] of mine) {
+          const tr = el('tr'), th = el('th', '', unitName(id)); th.scope = 'row';
+          const td = el('td', 'coach-state s-' + s.state), word = el('span', 'coach-word', T['state_' + s.state]);
+          td.append(el('span', 'coach-mark', SYMBOL[s.state]), word);
+          if (s.W > 0) td.append(el('span', 'coach-basis', fmt(T.basis, { n: s.n, d: s.days }) + (s.own ? ' · ' + T.own : '')));
+          td.querySelector('.coach-mark').setAttribute('aria-hidden', 'true');
+          tr.append(th, td); body.append(tr);
+        }
+        tab.append(body); det.append(sum, tab); box.append(det);
       }
-      tab.append(body); det.append(sum, tab); box.append(det);
+      const holder = areas.querySelector('.coach-areas-body');
+      holder.replaceChildren(box, el('p', 'coach-note', T.note));
+      areas.hidden = false;
     }
-    const holder = areas.querySelector('.coach-areas-body');
-    holder.replaceChildren(box, el('p', 'coach-note', T.note));
-    areas.hidden = false;
+  };
+  render();
+
+  // the two settings (PR 4b): saved the moment they change, on this device only
+  const set = document.getElementById('coach-set');
+  if (set) {
+    const save = () => { const ok = writeSet(st); if (!ok) note.hidden = false; render(); showClear(); };
+    const goals = el('fieldset', 'coach-opts'), gl = el('legend', '', T.goal_lead);
+    goals.append(gl);
+    for (const g of [''].concat(GOALS)) {
+      const lab = el('label', 'coach-opt'), r = el('input'); r.type = 'radio'; r.name = 'coach-goal'; r.value = g; r.checked = (st.goal || '') === g;
+      r.addEventListener('change', () => { st.goal = g || null; save(); });
+      lab.append(r, el('span', '', g ? T['goal_' + g] : T.goal_none)); goals.append(lab);
+    }
+    const cs = el('fieldset', 'coach-opts coach-courses'), cl = el('legend', '', T.courses_h);
+    cs.append(cl, el('p', 'coach-set-lead', T.courses_lead + ' ' + T.courses_none));
+    const grid = el('div', 'coach-course-grid');
+    for (let n = 1; n <= 8; n++) {
+      const lab = el('label', 'coach-opt'), c = el('input'); c.type = 'checkbox'; c.value = String(n); c.checked = st.courses.includes(n);
+      c.addEventListener('change', () => { st.courses = [...grid.querySelectorAll('input:checked')].map((x) => Number(x.value)); save(); });
+      lab.append(c, el('span', '', 'FY' + n)); grid.append(lab);
+    }
+    cs.append(grid);
+    const note = el('p', 'notice', T.nostore); note.hidden = true;
+    set.querySelector('.coach-set-body').replaceChildren(goals, cs, el('p', 'coach-note', T.set_note), note);
+    set.hidden = false;
   }
+
   const keep = document.getElementById('coach-data');
+  let showClear = () => {};
   if (keep) {
-    let raw = null, store = true;   // anything under our key, a damaged log too, can be cleared; no storage at all is said
-    try { raw = localStorage.getItem(V.KEY); } catch (e) { store = false; }
+    let store = true;
+    try { localStorage.getItem(V.KEY); } catch (e) { store = false; }   // anything under our keys, a damaged log too, can be cleared; no storage at all is said
     if (!store) keep.append(el('p', 'notice', T.nostore));
-    if (raw !== null) {
-      const b = el('button', 'coach-clear', T.clear); b.type = 'button';
-      b.addEventListener('click', () => {
-        if (!window.confirm(T.clear_confirm)) return;
-        try { localStorage.removeItem(V.KEY); } catch (e) { /* no storage */ }
-        location.reload();
-      });
-      keep.append(b);
-    }
+    const has = () => { try { return localStorage.getItem(V.KEY) !== null || localStorage.getItem(SET_KEY) !== null; } catch (e) { return false; } };
+    let b = null;
+    showClear = () => {
+      if (!b && has()) {
+        b = el('button', 'coach-clear', T.clear); b.type = 'button';
+        b.addEventListener('click', () => {
+          if (!window.confirm(T.clear_confirm)) return;
+          try { localStorage.removeItem(V.KEY); localStorage.removeItem(SET_KEY); } catch (e) { /* no storage */ }
+          location.reload();
+        });
+        keep.append(b);
+      }
+    };
+    showClear();
   }
 })();

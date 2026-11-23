@@ -2335,6 +2335,15 @@ main.home>.resume{margin:0 0 1rem}
 .s-strong .coach-mark,.s-strongdue .coach-mark{color:var(--accent-deep)}
 .s-practise .coach-word{text-decoration:underline;text-decoration-thickness:2px}
 .coach-note{margin:.8rem 0 0;color:var(--ink-2);font-size:var(--fs-small)}
+.coach-set{margin:1.4rem 0 0}
+.coach-set[hidden]{display:none}
+.coach-set>summary{font:700 var(--fs-h3) var(--sans);cursor:pointer;min-height:44px;display:flex;align-items:center}
+.coach-opts{margin:.8rem 0 0;padding:0;border:0;min-width:0}
+.coach-opts legend{padding:0;font:600 var(--fs-ui) var(--sans)}
+.coach-set-lead{margin:.3rem 0 0;color:var(--ink-2);font-size:var(--fs-ui)}
+.coach-opt{display:flex;align-items:center;gap:.6rem;min-height:44px;font-size:var(--fs-ui);cursor:pointer}
+.coach-opt input{width:22px;height:22px;flex:none;accent-color:var(--accent-deep)}
+.coach-course-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(7rem,1fr));gap:0 .8rem}
 .coach-data{margin:1.6rem 0 0}
 .coach-clear{min-height:44px;padding:0 1rem;border:1px solid var(--ink-2);border-radius:999px;background:transparent;color:var(--ink-2);font:600 var(--fs-ui) var(--sans);cursor:pointer}
 .coach-clear:hover{color:var(--ink)}
