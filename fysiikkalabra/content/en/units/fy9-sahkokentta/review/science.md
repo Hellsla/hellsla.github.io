@@ -1,30 +1,31 @@
-VERDICT: FAIL
-CONTENT-HASH: e1ef3a1aeef83571
-SCOPE: delta (since PASS at 2099e517d51d3416: commit 6d9de17f9a, only the s4 b question in sovella/tasks.json)
+VERDICT: PASS
+CONTENT-HASH: 12b4cb1f1fce7b8a
+SCOPE: delta (since my FAIL at e1ef3a1aeef83571: commit 6b08a5f2cf, only s4 b in sovella/tasks.json and solutions.md)
 
 ## Blocking
-- **s4 b, solutions.md: the solution now contradicts the new question and is wrong in its direction (A, internal consistency 6).** The new question asks "how short an air gap must be for breakdown to be certain". Under the uniform-field model the answer is "at most about $4\,\text{mm}$": every gap up to $d = U/E_\text{max}$ breaks down, so $4\,\text{mm}$ is the *longest* gap that certainly breaks down. The solution still says:
-  - the **Find** line: "the smallest air gap that can break down";
-  - the model answer: "With the uniform field model the smallest gap that breaks down is $d = \ldots \approx 4\,\text{mm}$".
-
-  A shorter gap breaks down even more readily, so "smallest gap that breaks down" gives the wrong picture. It also no longer matches the question. Fix, for example:
-  - Find: "why the angler can get a shock without touching the conductor, and how short an air gap breaks down for certain";
-  - model answer: "With the uniform field model the gap breaks down whenever it is at most $d = \tfrac{U}{E_\text{max}} = \ldots \approx 4\,\text{mm}$."
-
-  The Finnish solution has the same wording ("Tasaisen kentän mallilla pienin läpilyövä väli", line 374) and needs the same fix, which then carries into en and fi-easy.
+None.
 
 ## Polish
-- The 12 kV is the RMS value. Its peak is about $16\,\text{kV}$, which in the uniform model gives about $5\,\text{mm}$. This makes "certain at ≤ 4 mm" conservative, which suits the wording, so no change is needed. A model answer could mention it in one clause.
+- `sovella/review/packet-visual.md` (en and fi) still quotes the old "smallest air gap that can break down" wording. It is a generated packet, not content, so regenerating it before the next visual review is enough.
+- Carried over: 12 kV is an RMS value. Its peak, about 16 kV, gives about 5 mm, so "certain up to about 4 mm" is on the conservative side. One clause could say this; it is optional.
 
 ## Checked
-- `units.py hash fy9-sahkokentta --lang en`: e1ef3a1aeef83571 at the start and at the end.
-- The diff since my PASS: `git show 6d9de17f9a`. In this unit only the text of s4 b changed. The rubric, solutions.md and answers.py are unchanged. The en question matches fi ("kuinka lyhyen ilmavälin yli läpilyönti tapahtuu varmasti").
-- The new wording is physically right. It now asks for an upper bound on the gap, which is what $U/E_\text{max}$ gives. It also agrees with the `assumptions` criterion and the solution's remark that $4\,\text{mm}$ is a lower limit for the safety distance, since arcs can strike across longer gaps too. It agrees with the common mistake "4 mm presented as a safe distance" as well.
-- The rubric for s4 b fits the new question. The math criterion ($12\,\text{kV}/3\,\text{MV/m} \approx 4\,\text{mm}$, not 20 kV), the concept criterion, `assumptions` and the transfer criterion each ask only what the task gives and asks. The points total 1+2+1+1 = 5.
-- I recomputed:
-  - $20\,\text{kV}/\sqrt3 = 11.5\,\text{kV} \approx 12\,\text{kV}$;
-  - $d = 12\,\text{kV}/3\,\text{MV/m} = 4.0\,\text{mm}$ (11.5 kV gives 3.8 mm; the peak value gives 5.4 mm);
-  - $I = 12\,\text{kV}/10\,\text{k}\Omega = 1.2\,\text{A}$.
+- `units.py hash fy9-sahkokentta --lang en` gave 12b4cb1f1fce7b8a at the start and at the end.
+- I read the diff in `git show 6b08a5f2cf`. In en it changes only the s4 b task text, the `assumptions` detail, the solution's Find line and model answer, and one common-mistake line. The rubric's math, concept and transfer criteria and answers.py did not change.
+- s4 b is now consistent everywhere (6, internal consistency):
+  - Task: "Estimate up to what length of air gap breakdown is certain."
+  - Find: "the longest air gap across which breakdown is certain".
+  - Model answer: "the longest gap across which breakdown is certain is d = U/E_max ≈ 4 mm".
+  - Rubric `assumptions` detail and the solution's next paragraph: "a lower limit for the safety distance, not a safe distance".
+  - Common-mistake line: "only the gap across which breakdown is certain in the uniform field model".
+  - All of these give one upper bound on the gap, which is the direction U/E_max gives. The "smallest gap" error from my FAIL is gone.
+- Physics: under the uniform-field model, every gap d ≤ U/E_max breaks down, so 4 mm is the longest certain gap. Real conditions (strong field near a thin conductor and the rod tip, humidity, dirt, the fishing line) let an arc strike across longer gaps. The text says so, which is why 4 mm is presented as a lower limit for the safety distance. No A or B finding.
+- Recomputed:
+  - 20 kV/√3 = 11.5 kV, rounded to 12 kV;
+  - 12 kV / 3 MV/m = 4.0 mm (11.5 kV gives 3.8 mm; the peak value gives 5.4 mm);
+  - 12 kV / 10 kΩ = 1.2 A.
 
-  These agree with answers.py (`s4-gap-mm`, `s4-I-body`).
-- Everything else carries over from my previous full PASS unchanged.
+  These match answers.py (`s4-gap-mm`, `s4-I-body`). The math criterion still uses 12 kV, not 20 kV.
+- s4 b points total 1+2+1+1 = 5, unchanged. Every criterion asks only what the task gives and asks.
+- The en wording matches fi in tasks.json line 510 ("enintään kuinka pitkän ilmavälin yli läpilyönti tapahtuu varmasti") and in solutions.md lines 370, 374 and 397.
+- Everything else carries over from my earlier full PASS, unchanged.

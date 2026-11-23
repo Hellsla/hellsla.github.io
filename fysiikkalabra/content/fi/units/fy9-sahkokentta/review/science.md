@@ -1,28 +1,28 @@
-VERDICT: FAIL
-CONTENT-HASH: e9115553fe1fb6c4
-SCOPE: delta, s4 b after the rewording of the question (task text, rubric, worked solution)
+VERDICT: PASS
+CONTENT-HASH: 7013f5c43b745e8d
+SCOPE: delta, Sovella s4 b after commit 6b08a5f2cf (task text, solution Kysytty and model answer, rubric assumptions detail, common-mistake line)
 
 ## Blocking
-- s4 b, solutions.md, A (error; internal consistency, item 6). The task now asks "Arvioi, kuinka lyhyen ilmavälin yli läpilyönti tapahtuu varmasti". The worked solution still has the old reading in two places:
-  - `**Kysytty:** ... ja pienin ilmaväli, joka voi lyödä läpi`
-  - "Tasaisen kentän mallilla pienin läpilyövä väli on $d = \tfrac{U}{E_\text{max}} \approx 4\,\text{mm}$"
-
-  In the uniform-field model the gap breaks down when $U/d \ge E_\text{max}$, that is when $d \le U/E_\text{max}$. So 4 mm is the longest gap that certainly breaks down, not the smallest. Every shorter gap breaks down too. Fix: "kysytty ... ilmavälin pituus, jonka yli läpilyönti tapahtuu varmasti" and "Tasaisen kentän mallilla läpilyönti tapahtuu varmasti, kun väli on enintään $d = \tfrac{U}{E_\text{max}} \approx 4\,\text{mm}$". Also check the same lines in en and fi-easy.
+None.
 
 ## Polish
-- The task wording "kuinka lyhyen ... varmasti" is physically correct: breakdown is certain for gaps of 4 mm or less, and the answer is that limit. "Enintään kuinka pitkän" would read more plainly. That is wording, not physics.
-- The rubric's math criterion and its assumptions criterion ("Arvio on alaraja ... valokaari voi syttyä selvästi pidemmästäkin välistä") agree with the new question. They also agree with the solution's "alaraja turvaetäisyydelle". Once the Kysytty line and the model-answer sentence are fixed, all three texts agree.
-- The rubric asks for 4 mm from 12 kV. With $20/\sqrt3 = 11{,}55\,\text{kV}$ the result is 3,85 mm, so an answer of "about 4 mm" from either value is right.
+- Wording only: the rubric's transfer criterion says "ampeerien suuruisen virran", and the model answer gives $1{,}2\,\text{A}$ (one ampere). It still means "of the order of amperes", so this is not a contradiction.
 
 ## Checked
-- `units.py hash fy9-sahkokentta` at the start and the end: e9115553fe1fb6c4. `practice.py check: OK`.
-- Recomputed:
-  - $20/\sqrt3 = 11{,}55\,\text{kV}$
-  - $12\,\text{kV}/(3\,\text{MV/m}) = 4{,}0\,\text{mm}$
-  - $U$ across the feet $= 1{,}5\,\text{mV}$
-  - $12\,\text{kV}/10\,\text{k}\Omega = 1{,}2\,\text{A}$
+- `units.py hash fy9-sahkokentta` at the start and the end: 7013f5c43b745e8d. `practice.py check: OK`.
+- My previous blocking item is fixed. The task now asks "enintään kuinka pitkän ilmavälin yli läpilyönti tapahtuu varmasti". The solution's Kysytty line says "pisin ilmaväli, jonka yli läpilyönti tapahtuu varmasti". The model answer says "pisin väli, jonka yli läpilyönti tapahtuu varmasti, on $d = U/E_\text{max} \approx 4\,\text{mm}$".
+  - Physics: in the uniform-field model, breakdown happens when $U/d \ge E_\text{max}$, that is when $d \le U/E_\text{max}$. So 4 mm is the longest gap that certainly breaks down. This holds as an upper bound for "certain" because the field near the thin conductor and the rod tip is stronger than $U/d$. Breakdown at longer gaps is possible, and the text says so.
+- Internal consistency (item 6): four texts now agree.
+  - The assumptions detail: "turvaetäisyyden alaraja, ei turvallinen etäisyys … valokaari voi syttyä selvästi pidemmästäkin välistä".
+  - The solution's paragraph: "alaraja turvaetäisyydelle eikä turvallinen etäisyys".
+  - The common-mistake line: "4 mm esitetään turvallisena etäisyytenä, vaikka se on vain väli, jonka yli läpilyönti tapahtuu varmasti tasaisen kentän mallissa".
+  - The math criterion (4 mm from 12 kV, not 20 kV).
 
-  All four agree with the solution and answers.py.
-- Physics of the new question: the field near the thin conductor and the rod tip is stronger than $U/d$. So when the mean field is at or above $E_\text{max}$, breakdown is certain, and longer gaps can also break down. The 4 mm is therefore the right "certain" threshold, and calling it a lower bound for the safety distance is correct.
-- The rubric points still add up to 5 (1+2+1+1). Every criterion asks only for what the task gives and asks.
-- The rest of s4, and s1–s3 and s5–s8, are unchanged since my earlier PASS and were not judged again.
+  No phrase with "pienin" or "lyhyen" remains in any language's s4 b. I grepped fi, en and fi-easy sovella.
+- Recomputed, all agreeing with the solution and answers.py:
+  - $20/\sqrt3 = 11{,}55\,\text{kV} \approx 12\,\text{kV}$
+  - $d = 12\,\text{kV}/(3\,\text{MV/m}) = 4{,}0\,\text{mm}$ (3,85 mm from 11,55 kV, so "about 4 mm" is right either way)
+  - Voltage across the bird's feet: $0{,}30\,\Omega/\text{km} \cdot 0{,}05\,\text{m} \cdot 100\,\text{A} = 1{,}5\,\text{mV}$
+  - Current: $12\,\text{kV}/10\,\text{k}\Omega = 1{,}2\,\text{A}$
+- Assessment (item 7): the s4 b points still add up to 5 (1+2+1+1). Every criterion asks only for what the task gives and asks.
+- Not judged again: the rest of s4, s1–s3 and s5–s8. They are unchanged since my earlier PASS.
