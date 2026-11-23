@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 45f15bceac913270
-SCOPE: delta added-exercise from 2c9fdf155f72e6a3 base 141dc47a8c70
+CONTENT-HASH: ac4d1750f63b5dec
+SCOPE: delta md-paragraphs,numbers,reflow,typography,wording from 45f15bceac913270 base 90f2071
 
 ## Blocking
 
 ## Polish
-- solutions.md:75 (fy2-1-L1-10): the solution still gives wood as "noin 16 MJ/kg", while fy2-5 uses 15 MJ/kg for air-dry firewood. Fix: "ilmakuivan polttopuun, noin 15 MJ/kg".
-- exercises.json:156 (fy2-1-L1-10): "Se muuttuu liike-energiaksi ja lämpöenergiaksi" skips the step where combustion first makes thermal energy and the engine turns only part of it into kinetic energy. This is a fair level-1 simplification (C). Fix (optional): "suurin osa muuttuu lämpöenergiaksi, osa liike-energiaksi".
+- solutions.md (fy2-1-L2-07), Kaava: "$E_\text{alussa} = E_\text{lopussa}$, eli $E_\text{lämpö} = E_\text{sähkö} - E_\text{valo}$" jumps from the general law to the solved form. The balance it skips, $E_\text{sähkö} = E_\text{valo} + E_\text{lämpö}$, appears only in the Periaate. Fix: "…, eli $E_\text{sähkö} = E_\text{valo} + E_\text{lämpö}$, joten $E_\text{lämpö} = E_\text{sähkö} - E_\text{valo}$ kummallekin lampulle …".
+- solutions.md (fy2-1-L1-10), Järkevyys: dry wood is now "$16{,}2\,\text{MJ/kg}$" from MAFY, while fy2-5 uses $15\,\text{MJ/kg}$ for air-dry firewood. Both values are correct for their kind of wood (P9 allows a small difference like this), and the word "kuivaan" here keeps them apart. Nothing needs to change.
 
 ## Checked
-- L1-10, change in this round: H = 43,4 MJ/kg is now the same in the task, the solution (Annettu, Sijoitus, Vastaus) and answers.py ("MAFY LHV"). The lower heating value is the right one for an engine.
-- L1-10, numbers: I recomputed 43,4 MJ/kg · 2,0 kg = 86,8 MJ. It matches answers.py and exercises.json (86.8 MJ). The answer "≈ 87 MJ" has 2 significant figures, set by m = 2,0 kg.
-- L1-10, tolerance: ±4 % accepts 83,3 to 90,3 MJ, which covers table values of H from about 41,7 to 45,1 MJ/kg. A student who uses 43 MJ/kg (as in fy2-5) gets 86 MJ, which is 0,9 % off and is accepted. Rounding 43,4 to 43 in fy2-5 is consistent with this value.
-- L1-10, checks: 86,8 MJ / 3,6 = 24,1 ≈ 24 kWh is correct, and the estimate 40 · 2 = 80 MJ is a real order-of-magnitude check.
-- L1-10, scope and physics: E = Hm is in FY2 scope. The task does not claim the system is isolated. The Periaate (chemical energy changes form and the amount is conserved) is right. The solution is complete and symbolic first.
-- L2-08, unchanged since round 2: I recomputed 100 · (700 − 600)/700 = 14,29 %. answers.py and the json value 14.3 agree, and ±3 % accepts 13,9 to 14,7, so 14 is accepted. FRICTION (A 700/0, B 300/300) matches the readings and the alt text. The figure shows no thermal-energy or total bar, so it does not give the answer away.
-- Hash 45f15bceac913270 at the start and at the end.
+- Every rewritten Kaava line (L1-01, L1-02, L1-03, L1-05, L2-01…L2-08, L3-01, L3-05) now starts from $E_\text{alussa} = E_\text{lopussa}$ (or, at each step, from $E_\text{tulo} = E_\text{ulos} + E_\text{lämpö}$) and then solves for the unknown in symbols. Each balance has the energy forms its Periaate names.
+- L2-02: the added condition (at rest at the top, $E_\text{p} = 0$ at the bottom) is right, and the solution correctly says the formula is already solved for $E_\text{p}$.
+- L2-05: share = part / whole, and the whole is the sum. This is a correct basic definition, and the order of the formulas is fine.
+- L2-06: "laite ei voi tuottaa energiaa tyhjästä" is a correct statement of the conservation principle for the perpetual-motion claim, and $E_\text{luotu} = 100\,\text{J} - 80\,\text{J} = 20\,\text{J}$ is unchanged.
+- L1-10: $H = E/m$, so $E = Hm$, is the right definition. The hint now names MAFY's table *Polttoaineiden LHV-lämpöarvoja*. The LHV is the right value for an engine, and it agrees with answers.py (43,4 MJ/kg).
+- I recomputed every substitution in the diff: 239, 200, 510, 850 J; 3,0 kJ; 360 J; 29 000 J; 60,0 %; 20 J; 43 kJ; 14,3 %; 130 J; 39,2 %; 218 GJ; more than 70 PJ; 4,86 MJ and 86 %. All agree with the solutions.
+- answers.py, run with `python -I`, matches all 17 numeric answers in exercises.json, and each answer is inside its tolerance. No answer, unit or tolerance changed.
+- The paragraph splits in L1-04, L1-08, L1-09, L3-03, L3-04 and L3-05 change no claim or number.
+- Hash ac4d1750f63b5dec at the start and at the end.
