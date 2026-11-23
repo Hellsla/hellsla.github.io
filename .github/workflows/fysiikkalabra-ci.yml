@@ -90,13 +90,11 @@ jobs:
       - name: a pull request removes no published page without a row in docs/site-removals.tsv (work queue 20; the pages the base render has and this one lacks)
         if: github.event_name == 'pull_request'
         run: python scripts/check_site_removals.py --built /tmp/base-tree/fysiikkalabra/site site
-      - name: "the built site against the committed site/ (the hand-over of work queue 0g PR 2 - the main run of the merge must say IDENTICAL; reports only)"
-        if: github.event_name == 'push'
-        continue-on-error: true
+      - name: no tracked site/ (the site is built by CI and published from its artifact; a committed copy would again make every pull request conflict; work queue 0g PR 3)
         run: |
-          n=$(git status --porcelain site/ | wc -l)
-          if [ "$n" = 0 ]; then echo "### Built site against the committed site/: IDENTICAL" | tee -a "$GITHUB_STEP_SUMMARY"
-          else { echo "### Built site against the committed site/: DIFFERENT ($n paths)"; git status --short site/ | head -40 | sed 's/^/    /'; } | tee -a "$GITHUB_STEP_SUMMARY"; echo "::warning::the built site differs from the committed site/ in $n paths"; fi
+          n=$(git ls-files fysiikkalabra/site | wc -l)
+          if [ "$n" != 0 ]; then echo "::error::$n files of fysiikkalabra/site/ are tracked: site/ is git-ignored and built by CI. Run scripts/site_migrate.sh (git rm -r --cached fysiikkalabra/site)"; git ls-files fysiikkalabra/site | head -10; exit 1; fi
+          echo "### No tracked site/: OK" | tee -a "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4   # the site to open (a pull request: site-preview, 14 days) and, on main, the site ruukkilabra-deploy.yml publishes (site)
         with: { name: "${{ github.event_name == 'pull_request' && 'site-preview' || 'site' }}", path: fysiikkalabra/site, if-no-files-found: error, retention-days: 14 }
   checks-1:   # the sources, the build and the built pages
@@ -208,7 +206,7 @@ jobs:
       - run: python scripts/test_inquiry.py
       - name: the answer check reads typed numbers and accepts half a unit in the shown last digit (templates/lesson.js part 1, teacher 2026-11-10)
         run: python scripts/test_answer_check.py
-  checks-3:   # carried reviews, the course and language pipelines, answer positions, the committed site, LaTeX
+  checks-3:   # carried reviews, the course and language pipelines, answer positions, the built site, LaTeX
     runs-on: ubuntu-latest
     container: { image: "mcr.microsoft.com/playwright/python:v1.65.0-noble", options: "--ipc=host" }   # Chromium and its system packages preinstalled (see the header)
     timeout-minutes: 120
@@ -220,7 +218,7 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
       - run: python --version && python -m pip --version && python -m pip install -r requirements-ci.txt   # the container's own Python 3.12 (actions/setup-python's build does not run in it); the browser and its system packages are in the image (the Playwright version requirements-ci.txt pins)
-      - run: python scripts/build.py --all && python scripts/build.py   # site/ too: test_courses.py compares its copy of fy3-2 with it, and a committed site/ is stale after any shared script change (work queue 0g PR 2: nobody commits it)
+      - run: python scripts/build.py --all && python scripts/build.py   # site/ too: test_courses.py compares its copy of fy3-2 with it, and test_unit_i18n.py its FY14 units (site/ is built, not committed; work queue 0g PR 3)
       - run: python scripts/reviews.py verify
       - name: a temporary FY4 course through the whole pipeline (nothing is published)
         run: python scripts/test_courses.py
@@ -237,7 +235,7 @@ jobs:
         run: python scripts/reviews.py impact "origin/${{ github.base_ref }}" | tee -a "$GITHUB_STEP_SUMMARY"
       - name: correct options are spread over the positions in every course (as the pages show them)
         run: python scripts/check_choices.py --all
-      - name: the build is deterministic (two renders of the same commit are the same files; replaces "committed site/ is a fresh render", work queue 0g PR 2)
+      - name: the build is deterministic (two renders of the same commit are the same files; replaces the former "committed site/ is a fresh render", work queue 0g PR 2)
         run: |
           python scripts/build.py
           rm -rf /tmp/site-first && cp -a site /tmp/site-first

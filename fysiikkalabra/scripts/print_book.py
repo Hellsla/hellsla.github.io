@@ -9,7 +9,7 @@ Writes two PDFs:
   <out>/<C>-<lang>-A4-tulostus.pdf two A5 pages on each A4 sheet in cut-and-stack order: print double-sided
                                     (flip on the short edge), cut the stack in half, put the left half on top of the
                                     right half and bind the left edge (staples or comb binding).
-Reads the committed site/ pages, so build the site first. Needs playwright, segno, pypdf and reportlab."""
+Reads the built site/ pages (not committed), so build the site first. Needs playwright, segno, pypdf and reportlab."""
 import argparse, html, io, json, pathlib, re, sys
 
 import segno
