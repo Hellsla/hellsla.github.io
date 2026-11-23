@@ -179,7 +179,7 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "$\\dfrac{1}{R_\\text{par}} = \\dfrac{1}{R_\\text{A}} + \\dfrac{1}{R_\\text{B}}$, $R = R_\\text{c} + R_\\text{par}$ and $I = \\dfrac{E}{R}$ solved before the numerical values."
+              "detail": "$\\dfrac{1}{R_\\text{par}} = \\dfrac{1}{R_\\text{A}} + \\dfrac{1}{R_\\text{B}}$, $R = R_\\text{k} + R_\\text{par}$ and $I = \\dfrac{E}{R}$ solved before the numerical values."
             },
             {
               "key": "calculation",
@@ -207,7 +207,7 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "The loop rule $E - R_\\text{c} I - U_\\text{L} = 0$ gives the voltage of the lamps $U_\\text{L} = E - R_\\text{c} I$; the power of the lamp is $P = \\dfrac{U_\\text{L}^2}{R_\\text{A}}$."
+              "detail": "The loop rule $E - R_\\text{k} I - U_\\text{L} = 0$ gives the voltage of the lamps $U_\\text{L} = E - R_\\text{k} I$; the power of the lamp is $P = \\dfrac{U_\\text{L}^2}{R_\\text{A}}$."
             },
             {
               "key": "calculation",
@@ -233,7 +233,7 @@
               "points": 1
             },
             {
-              "text": "Justifies that a smaller current reduces the voltage drop in the cable ($R_\\text{c} I$ decreases), so a larger voltage is left for lamp A and it shines brighter, and that the power transferred to the cable, $R_\\text{c} I^2$, decreases from about $5.0\\,\\text{W}$ to $2.5\\,\\text{W}$, so the cable warms up less.",
+              "text": "Justifies that a smaller current reduces the voltage drop in the cable ($R_\\text{k} I$ decreases), so a larger voltage is left for lamp A and it shines brighter, and that the power transferred to the cable, $R_\\text{k} I^2$, decreases from about $5.0\\,\\text{W}$ to $2.5\\,\\text{W}$, so the cable warms up less.",
               "tag": "concept",
               "points": 1
             },
@@ -263,7 +263,7 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "Three parallel lamps: $\\dfrac{1}{R_\\text{par}} = \\dfrac{1}{R_\\text{A}} + \\dfrac{1}{R_\\text{B}} + \\dfrac{1}{R_\\text{C}}$ and $I = \\dfrac{E}{R_\\text{c} + R_\\text{par}}$."
+              "detail": "Three parallel lamps: $\\dfrac{1}{R_\\text{par}} = \\dfrac{1}{R_\\text{A}} + \\dfrac{1}{R_\\text{B}} + \\dfrac{1}{R_\\text{C}}$ and $I = \\dfrac{E}{R_\\text{k} + R_\\text{par}}$."
             },
             {
               "key": "calculation",
@@ -464,7 +464,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$E \\approx 15\\,\\text{J}$"
+              "detail": "$E \\approx 14.9\\,\\text{J}$ (three significant figures)"
             }
           ]
         },
@@ -501,12 +501,12 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$$\\begin{aligned} E_2 &= \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (220\\,\\text{V})^2 \\\\ &= 7.99\\,\\text{J} \\end{aligned}$$ and $\\Delta E = 14.85\\,\\text{J} - 7.99\\,\\text{J} = 6.9\\,\\text{J}$."
+              "detail": "$$\\begin{aligned} E_2 &= \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (220\\,\\text{V})^2 \\\\ &= 7.99\\,\\text{J} \\end{aligned}$$ and $\\Delta E = 14.85\\,\\text{J} - 7.99\\,\\text{J} = 6.86\\,\\text{J}$."
             },
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "The fraction is about $46\\,\\%$, although the voltage decreased by only about $27\\,\\%$, because energy depends on the square of the voltage: $1 - \\left(\\dfrac{220}{300}\\right)^2 \\approx 0.46$."
+              "detail": "The fraction is about $46.2\\,\\%$, although the voltage decreased by only about $27\\,\\%$, because energy depends on the square of the voltage: $1 - \\left(\\dfrac{220}{300}\\right)^2 \\approx 0.46$."
             }
           ]
         },

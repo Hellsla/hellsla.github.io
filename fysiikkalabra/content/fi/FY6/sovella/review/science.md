@@ -1,18 +1,21 @@
-VERDICT: PASS
-CONTENT-HASH: 78dc8c2332232d74
+VERDICT: FAIL
+CONTENT-HASH: 5fb6f421aeb38b44
 
 ## Blocking
+1. **fy6-s1 d, *Ryöminnän suuruus* (A: definition, magnitude).** The solution says "Se ei ole sama asia kuin varauksenkuljettajien **ryöminnän nopeus** johtimessa". The sentence before has just defined *ryöminnän nopeus* as a voltage change per minute, so one name now stands for two quantities. Use the task's term, *ajautumisnopeus*. "millimetrien luokkaa sekunnissa" is about ten times too large: 0,5 A in 0,5 mm² copper gives $v = I/(nAe) \approx 0{,}07\,\text{mm/s}$. Write "alle millimetri sekunnissa".
+2. **fy6-s4 a–b, significant figures (A: rounding reason, rubric).** 300 V, 330 µF and 220 V each have three figures (P7: rated values' trailing zeros count). The reason "enintään kaksi tai kolme numeroa" is therefore wrong. The answers should be 14,9 J, 6,86 J and 46,2 %, not 15 J, 6,9 J and 46 %. Fix the rubric `units_precision` row (E ≈ 15 J) and b's "kaksi merkitsevää numeroa" too, or have the task state two-figure data.
 
 ## Polish
-- lessons/FY6/sovella/answers.py — the new drift rate $0{,}005\,\text{V/min}$ (s1 d solution) is the one solution number answers.py does not compute — add `"fy6-s1-d-drift": 0.03 / 6`.
-- solutions.md fy6-s3 c **Kysytty** still says "on paljon pienempi kuin b-kohdan tulos"; harmless behind the button, but it could follow the new task wording ("poikkeaa").
+- fy6-s2 d *Hyväksytään myös*: "lamppujen jännitteen voi lisäksi laskea" is out of date. The task now asks for it.
+- fy6-s3 b/c: the "yläraja" also leaves out gravity, which adds about 1 % (13,6 m/s).
 
 ## Checked
-- One script recomputed every number from the task data: s1 fit (−1,194 V/A, 4,598 V, max residual 0,020 V), E 4,60 V, R_s 1,2 Ω, I 0,50 A, P 2,0 W, share 13 %, scatter 0,08 Ω, drift 0,06 Ω; s2 2,5 A, 16,7 W (30 W balance), 1,76 A/10,6 V/18,7 W/2,5 W, 4,29 A/8,6 V/15 W; s3 1,8e-7 N, mg 2,2 %, E/E_b 0,10, 13,4 m/s, 5,0e-9 J/14 %/3,1e-8 J, 3,2e-9 N (1,8 %, 0,82 mg); s4 14,85 J, 6,86 J/46 % vs 27 %, 26,4 A, 6,9 kW, 0,30 A. All agree with tasks.json and answers.py.
-- s1 drift: definition (slow change of U with time at unchanged current) is right and matches the task text; rate 0,03 V over six ~1 min readings ≈ 0,005 V/min is consistent, and the worst-case last point ~0,03 V low → slope ≤ 0,06 Ω follows from it.
-- s1 idealisation: model $U = E - R_\text{s} I$ assumes E and R_s constant; discharge lowers E (steeper line, R_s high), warming usually lowers R_s (direction uncertain) — correct, and the error_sources detail now states it.
-- s2 b without "todellisuudessa": still asks the power at the real lamp voltage; answer 16,7 W and rubric (loop rule, 10,0 V) unchanged and consistent.
-- s3 b "Kerro oletuksesi": only the no-drag, no-weight energy model is computable from the data, so the expected 13 m/s is unique; the new rubric clause asks for exactly that assumption; a) already justifies dropping weight.
-- s3 c "poikkeaa" no longer gives away the direction; criteria (drag, 14 %, energy to air, b as upper limit) still match.
-- s4 b reworded: the relative-voltage comparison (27 %) is now asked, and the reasonableness criterion asks exactly that; no answer revealed.
-- Energy wording: "ilman sisäenergia kasvaa ja siirtyy lämpönä" follows P1; scope inside FY6; points per part sum to the criteria.
+- My own script recomputed every number from the task data. All agree with answers.py and the solutions:
+  - s1: fit −1,194 V/A, 4,598 V; largest residual 0,020 V; c) 0,50 A, 2,0 W, 13 %; d) ±0,08 Ω, 0,06 Ω, 0,005 V/min.
+  - s2: 2,5 A; 16,7 + 8,3 + 5,0 = 30 W; c) 1,76 A, 10,6 V, 18,7 W, 2,5 W; d) 4,29 A, 8,6 V, 14,7 W.
+  - s3: 1,8·10⁻⁷ N; mg/F 2,2 %; 0,1 of breakdown; 13,4 m/s; 14 %; 3,2·10⁻⁹ N (0,82 mg).
+  - s4: 14,85 J, 6,86 J, 46,2 %, 26,4 A, 6,9 kW, 0,30 A.
+- The Kaava steps start from the basic equations (loop rule, P = UI with U = RI, branch currents summed, W = ΔE_k) and are solved in symbols first.
+- The models' conditions are stated, and the energy goes to the air's internal energy. Point charges hold: droplet radius about 46 µm ≪ 1 mm.
+- Scope stays within FY6. Rubric points add up, each criterion asks only what its task asks, and other correct methods are accepted.
+- Figures match the data and the circuits.

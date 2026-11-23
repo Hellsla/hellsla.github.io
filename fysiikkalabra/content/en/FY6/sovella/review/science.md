@@ -10,7 +10,7 @@ CONTENT-HASH: 8d806aafb6c72eb4
 - fy6-s2 Hyväksytään myös, item 3, "the voltage of the lamps may also be calculated": part d now asks for this voltage, so the line is stale.
 - fy6-s2 figure: it labels the cable R_k and has the Finnish "sulake", but the en text uses R_c.
 - fy6-s1 c Principle: "heat is produced" should be "energy is transferred as heat".
-- fy6-s3 c criterion 1: credit any correct air-resistance explanation. Do not require drag ≈ electric force.
+- fy6-s3 c criterion 1: credit any correct air-resistance explanation. without requiring drag ≈ electric force.
 
 ## Checked
 - All solution numbers, recomputed in my own script. They agree with answers.py and the rubrics:
@@ -24,6 +24,6 @@ CONTENT-HASH: 8d806aafb6c72eb4
   - Uniform field with the energy principle; Coulomb's law for point charges.
   - Capacitor energy, ΔQ = CΔU, and the stored-charge hazard.
   - Formula steps start from the basic equations.
-- Scope: within FY6, with no exponentials and no capacitor connections.
-- Assessment: the points add up in every part, the criteria match the tasks, other methods are listed, and the data is declared invented.
+- Scope: within FY6 (no exponentials, no capacitor connections).
+- Assessment: the points add up in every part, the criteria match the tasks, other methods are listed, data declared invented.
 - Figures: meters placed correctly, current + → −, field from +60 kV to ground.

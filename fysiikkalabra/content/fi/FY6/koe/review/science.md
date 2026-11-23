@@ -1,23 +1,39 @@
-VERDICT: PASS
-CONTENT-HASH: e5734c9f1a8e175a
+VERDICT: FAIL
+CONTENT-HASH: acf43efe11978945
 
 ## Blocking
+1. **A, fy6-k1 b, solutions.md.** The feedback on the distractor "Mittari näyttää nollaa, eikä lampun kirkkaus muutu" says that it "kuvaa rinnalle kytkettyä jännitemittaria". A voltmeter across the lamp shows the lamp's voltage, not zero. Say instead that the option would fit a meter of very large resistance: almost no current passes through it, so it would read about zero and leave the lamp unchanged.
 
 ## Polish
-- fy6-k1 b, Perustelu (open from round 1): it says only the battery's internal resistance and the wires limit the current, but the exam intro makes internal resistance negligible. Name the ammeter's own small resistance as well. Category 6; the right option is unaffected.
+- fy6-k1 b: the solution limits the current by the battery's internal resistance, but the intro calls internal resistance negligible. Add "todellisuudessa".
+- fy6-k3 b Kaava: name $p$, $n$ and $r$.
+- fy6-k6 c: the slope is read from a measured point near the origin. A point on the line near $1000\,\text{m}^{-2}$ would follow graph_read better.
+- fy6-k7 d: "vapauttaa sen" (the whole $10\,\text{kWh}$) overstates it. Write "suuren osan siitä nopeasti".
 
 ## Checked
-- Full review, round 2. Hash e5734c9f1a8e175a at the start and the end.
-- Round 1 polish on k7 a is fixed: the rubric detail now says $W \approx 10{,}2\,\text{kWh}$, which matches the solution and the answer check (10,24, 2 %).
-- Round 1 polish on k7 d is fixed. Total dissipation is $EI_\text{k} \approx 330\,\text{kW}$, almost all in the 8 mΩ of the cells. A wrench and contacts of about 0,2 mΩ at 6 kA take about 8 kW. So "satoja kilowatteja, enimmäkseen kennojen sisäisessä resistanssissa" and "kilowatteja ... jakoavaimen ja liitosten pieneen resistanssiin" are both right, and the causal link holds.
-- One script recomputed every number from the task data with my own formulas; all agree with answers.py and the solutions:
-  - k1: e 2,5; f 0,40 Ω and 4,0 A; d 1/2 → 2/3 and 1/2 → 1/3; j 9,13 / 7,61 / 9,35 / 13,48 A. Each item has exactly one correct option.
-  - k2: 17,99 Ω; 8,93 / 20,0 Ω; series point 188,6 mA and 2,61 V.
-  - k3: 200 Ω and 13,6 mA; ΔI 0,84 mA; 40 / 80 %; 11,8–17,6 and 13,2–14,1 mA.
-  - k4: 4,02·10⁴ m/s; 1,10·10¹⁹ 1/s; 0,207 kg per day; 1936 W, equal to N·½mv².
-  - k5: 4,76 J; 255 s; 3,33 / 7,5 mA; 411 / 542 s.
-  - k6: 2,24 mN; fitted slope 5,62·10⁻⁶ N·m², q 25,0 nC; 12 % (3 cm) and 5 % (4 cm) short of the model.
-  - k7: 51,2 V and 10,24 kWh; 7,58 / 9,22 kWh, 1,64 kWh left; 97,7 A and 114 W (exact solution 100 A); 6400 A; 391 A, 610 W, 76 W (exact 467 A, 874 W).
-- Causality is right: the grid spacing drops out (Fd = eU); constant-power discharge; charge redistribution on the conducting spheres; I²R losses against the system voltage.
-- The figures match the tasks: k1 d topology, battery line, charging shapes, k3 LED polarity, k2 curve, k6 line.
-- Scope stays within FY6: capacitor discharge only qualitative, no exponential law. practice.py check OK.
+- One script recomputed every number from the task data. All agree with answers.py and the solutions, rounding included:
+  - k1 c, d, e, f, j
+  - k2: $18{,}0\,\Omega$; $8{,}9$ and $20\,\Omega$; $189\,\text{mA}$ and $2{,}6\,\text{V}$
+  - k3: $200\,\Omega$; $13{,}6\,\text{mA}$; $(13{,}5 \pm 0{,}8)\,\text{mA}$; $136$ and $74\,\text{mW}$; $40$ and $80\,\%$; the current ranges in d
+  - k4: $1{,}38 \cdot 10^{6}\,\text{V/m}$; $2{,}2 \cdot 10^{-13}\,\text{N}$; $40\,\text{km/s}$; $1{,}1 \cdot 10^{19}\,\text{1/s}$; $0{,}21\,\text{kg}$; $1936\,\text{W}$
+  - k5: $2{,}1\,\text{C}$; $4{,}76$ and $3{,}82\,\text{J}$; $255\,\text{s}$; $3{,}3$ and $7{,}5\,\text{mA}$; $411$ and $542\,\text{s}$
+  - k6: $25\,\text{nC}$; $12\,\%$ shortfall
+  - k7: $51{,}2\,\text{V}$; $10{,}24$, $7{,}58$ and $9{,}22\,\text{kWh}$; $97{,}7\,\text{A}$ and $114\,\text{W}$; $6{,}4\,\text{kA}$; $391\,\text{A}$, $610$ and $76\,\text{W}$
+- Every Kaava step starts from a basic equation (the Kirchhoff loop, $W = eU$, $\eta$, $W_1 - W_2$) and solves it symbolically before substitution.
+- The physics is sound:
+  - field direction and why the grid gap does not matter;
+  - Newton III in Coulomb's law;
+  - charge redistribution on conducting spheres;
+  - series and parallel internal resistance;
+  - suojajänniteraja;
+  - "siirtyy lämpönä".
+- Scope: charging is qualitative only, with no capacitor connections.
+- Figures:
+  - k1 d topology matches the solution;
+  - the LEDs are forward-biased;
+  - the battery line is right;
+  - charging graph C is right;
+  - the model graphs are to scale.
+- Each Osa 1 item has exactly one correct option. Every rubric sums to its part's points, and other valid methods are accepted.
+- All data is marked `source: example`.
+- The hash was unchanged at the start and the end.

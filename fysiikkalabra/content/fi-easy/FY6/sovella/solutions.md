@@ -116,7 +116,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$. Silloin pisteiden pieni l
 
 Suora laskee liian jyrkästi, ja $R_\text{s}$ tulee liian suureksi. Lämpeneminen muuttaa myös $R_\text{s}$:ää mittauksen aikana (yleensä pienentää sitä). Sen vaikutuksen suunta on siksi epävarma. Lähdejännitteeseen vaikutus on pieni, koska pienin virta mitattiin ensin tuoreella paristolla.
 
-*Ryöminnän suuruus.* Ryömintä tarkoittaa jännitteen hidasta muutosta ajan kuluessa, vaikka virta pysyy samana. Ryöminnän nopeus kertoo, kuinka paljon jännite muuttuu aikayksikössä. Se ei ole sama asia kuin varauksenkuljettajien ryöminnän nopeus johtimessa. Se on millimetrien luokkaa sekunnissa. Ryömintä osoittaa, että malli on idealisoitu: se käsittelee $E$:tä ja $R_\text{s}$:ää vakioina, vaikka todellinen paristo purkautuu ja lämpenee mittauksen aikana. Uusi mittaus virralla $0{,}10\,\text{A}$ antoi $4{,}45\,\text{V}$ eli $0{,}03\,\text{V}$ vähemmän kuin sarjan alussa. Sarjassa oli kuusi lukemaa, kukin noin minuutin ajan. Siksi ryöminnän nopeus on noin $\dfrac{0{,}03\,\text{V}}{6\,\text{min}} \approx 0{,}005\,\text{V/min}$. Pahimmillaan viimeinen piste on siis noin $0{,}03\,\text{V}$ liian alhaalla. Silloin kulmakerroin on liian suuri enintään $\dfrac{0{,}03\,\text{V}}{0{,}50\,\text{A}} = 0{,}06\,\Omega$.
+*Ryöminnän suuruus.* Ryömintä tarkoittaa jännitteen hidasta muutosta ajan kuluessa, vaikka virta pysyy samana. Jännitteen muutosnopeus kertoo, kuinka paljon jännite muuttuu aikayksikössä. Se ei ole sama asia kuin varauksenkuljettajien ajautumisnopeus johtimessa. Ajautumisnopeus on alle millimetri sekunnissa (noin $0{,}07\,\text{mm/s}$ kuparijohtimessa, jonka poikkipinta-ala on $0{,}5\,\text{mm}^2$ ja virta $0{,}5\,\text{A}$). Ryömintä osoittaa, että malli on idealisoitu: se käsittelee $E$:tä ja $R_\text{s}$:ää vakioina, vaikka todellinen paristo purkautuu ja lämpenee mittauksen aikana. Uusi mittaus virralla $0{,}10\,\text{A}$ antoi $4{,}45\,\text{V}$ eli $0{,}03\,\text{V}$ vähemmän kuin sarjan alussa. Sarjassa oli kuusi lukemaa, kukin noin minuutin ajan. Siksi jännitteen muutosnopeus on noin $\dfrac{0{,}03\,\text{V}}{6\,\text{min}} \approx 0{,}005\,\text{V/min}$. Pahimmillaan viimeinen piste on siis noin $0{,}03\,\text{V}$ liian alhaalla. Silloin kulmakerroin on liian suuri enintään $\dfrac{0{,}03\,\text{V}}{0{,}50\,\text{A}} = 0{,}06\,\Omega$.
 
 *Epävarmuus.* Pisteet poikkeavat sovitetusta suorasta enintään $0{,}02\,\text{V}$. Oletetaan, että suoran toinen pää nousee ja toinen laskee tämän verran. Silloin kulmakerroin muuttuu $\dfrac{2 \cdot 0{,}02\,\text{V}}{0{,}50\,\text{A}} = 0{,}08\,\Omega$ eli $R_\text{s} = (1{,}20 \pm 0{,}08)\,\Omega$. Epävarmuus on pyöristetty yhteen merkitsevään numeroon.
 
@@ -184,7 +184,6 @@ Lamppujen jännite on $R_\text{r} I = 2{,}0\,\Omega \cdot 4{,}3\,\text{A} \appro
 ### Hyväksytään myös
 - a-kohdan voi laskea lampun nimellisvirroista $I = \dfrac{P}{U}$ ja resistansseista $R = \dfrac{U}{I}$, kunhan tulokset ovat samat: $2{,}0\,\text{A}$ ja $1{,}0\,\text{A}$, $6{,}0\,\Omega$ ja $12\,\Omega$.
 - b-kohdassa lampun jännitteen saa laskea myös suoraan $U_\text{L} = R_\text{r} I = 4{,}0\,\Omega \cdot 2{,}5\,\text{A}$.
-- d-kohdassa lamppujen jännitteen ($8{,}6\,\text{V}$) voi lisäksi laskea ja todeta, että lamput palavat himmeämmin kuin aiemmin.
 
 ### Yleisiä virheitä
 - Lamppujen resistanssit lasketaan kaavalla $R = \dfrac{P}{U}$ tai $R = \dfrac{U}{P}$.
@@ -256,8 +255,8 @@ Lamppujen jännite on $R_\text{r} I = 2{,}0\,\Omega \cdot 4{,}3\,\text{A} \appro
 **Kaava:** $E = \dfrac{1}{2} C U^2$
 **Muunnokset:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$
 **Sijoitus:** $E = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (300\,\text{V})^2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 90\,000\,\text{V}^2 = 14{,}85\,\text{J}$
-**Vastaus:** $E \approx 15\,\text{J}$ ($14{,}85\,\text{J}$). Vastauksessa on kaksi merkitsevää numeroa, koska jännitteen $300\,\text{V}$ ja kapasitanssin $330\,\mu\text{F}$ tarkkuus on enintään kaksi tai kolme numeroa.
-**Järkevyys:** Energia on joulen luokkaa, kuten pienen salamalaitteen kondensaattorissa. Jos tämä energia nostaisi kilon painoista kappaletta, kappale nousisi noin $1{,}5\,\text{m}$.
+**Vastaus:** $E \approx 14{,}9\,\text{J}$ ($14{,}85\,\text{J}$). Vastauksessa on kolme merkitsevää numeroa, koska jännite $300\,\text{V}$ ja kapasitanssi $330\,\mu\text{F}$ on annettu kolmen merkitsevän numeron tarkkuudella.
+**Järkevyys:** Energia on kymmenen joulen luokkaa, kuten pienen salamalaitteen kondensaattorissa. Jos tämä energia nostaisi kappaletta, jonka massa on $1{,}0\,\text{kg}$, kappale nousisi noin $1{,}5\,\text{m}$.
 
 ### b)
 **Annettu:** $C = 330\,\mu\text{F}$, jännite ennen salamaa $U_1 = 300\,\text{V}$ ja sen jälkeen $U_2 = 220\,\text{V}$
@@ -266,8 +265,8 @@ Lamppujen jännite on $R_\text{r} I = 2{,}0\,\Omega \cdot 4{,}3\,\text{A} \appro
 **Kaava:** $$\begin{aligned} E_1 &= \dfrac{1}{2} C U_1^2 \\ E_2 &= \dfrac{1}{2} C U_2^2 \\ \Delta E &= E_1 - E_2 \\ &= \dfrac{1}{2} C U_1^2 - \dfrac{1}{2} C U_2^2 \\ \text{osuus} &= \dfrac{\Delta E}{E_1} \end{aligned}$$
 **Muunnokset:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$
 **Sijoitus:** $E_1 = 14{,}85\,\text{J}$ ja $$\begin{aligned} E_2 &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text{V})^2 \\ &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 48\,400\,\text{V}^2 \\ &= 7{,}99\,\text{J} \end{aligned}$$, joten $\Delta E = 14{,}85\,\text{J} - 7{,}99\,\text{J} = 6{,}86\,\text{J}$. Osuus on $\dfrac{6{,}86\,\text{J}}{14{,}85\,\text{J}} = 0{,}46$.
-**Vastaus:** Salamaan siirtyi $\Delta E \approx 6{,}9\,\text{J}$. Se on noin $46\,\%$ varastoidusta energiasta. Vastauksessa on kaksi merkitsevää numeroa, kuten a-kohdassa.
-**Järkevyys:** Jännite pieneni vain $\dfrac{80\,\text{V}}{300\,\text{V}} \approx 27\,\%$, mutta energiaa siirtyi $46\,\%$. Syy on se, että energia riippuu jännitteen neliöstä: $1 - \left(\dfrac{220}{300}\right)^2 = 0{,}46$. Siirtynyt energia on pienempi kuin alkuenergia, kuten pitääkin.
+**Vastaus:** Salamaan siirtyi $\Delta E \approx 6{,}86\,\text{J}$. Se on noin $46{,}2\,\%$ varastoidusta energiasta. Vastauksessa on kolme merkitsevää numeroa, kuten lähtötiedoissa.
+**Järkevyys:** Jännite pieneni vain $\dfrac{80\,\text{V}}{300\,\text{V}} \approx 27\,\%$, mutta energiaa siirtyi $46{,}2\,\%$. Syy on se, että energia riippuu jännitteen neliöstä: $1 - \left(\dfrac{220}{300}\right)^2 = 0{,}46$. Siirtynyt energia on pienempi kuin alkuenergia, kuten pitääkin.
 
 ### c)
 **Annettu:** $C = 330\,\mu\text{F}$, jännitteen muutos $\Delta U = 300\,\text{V} - 220\,\text{V} = 80\,\text{V}$ ja kesto $\Delta t = 1{,}0\,\text{ms}$

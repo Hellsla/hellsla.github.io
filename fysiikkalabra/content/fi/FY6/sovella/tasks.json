@@ -464,7 +464,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$E \\approx 15\\,\\text{J}$"
+              "detail": "$E \\approx 14{,}9\\,\\text{J}$ (kolme merkitsevää numeroa)"
             }
           ]
         },
@@ -501,12 +501,12 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$$\\begin{aligned} E_2 &= \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (220\\,\\text{V})^2 \\\\ &= 7{,}99\\,\\text{J} \\end{aligned}$$ ja $\\Delta E = 14{,}85\\,\\text{J} - 7{,}99\\,\\text{J} = 6{,}9\\,\\text{J}$."
+              "detail": "$$\\begin{aligned} E_2 &= \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (220\\,\\text{V})^2 \\\\ &= 7{,}99\\,\\text{J} \\end{aligned}$$ ja $\\Delta E = 14{,}85\\,\\text{J} - 7{,}99\\,\\text{J} = 6{,}86\\,\\text{J}$."
             },
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "Osuus on noin $46\\,\\%$, vaikka jännite pieneni vain noin $27\\,\\%$, koska energia riippuu jännitteen neliöstä: $1 - \\left(\\dfrac{220}{300}\\right)^2 \\approx 0{,}46$."
+              "detail": "Osuus on noin $46{,}2\\,\\%$, vaikka jännite pieneni vain noin $27\\,\\%$, koska energia riippuu jännitteen neliöstä: $1 - \\left(\\dfrac{220}{300}\\right)^2 \\approx 0{,}46$."
             }
           ]
         },

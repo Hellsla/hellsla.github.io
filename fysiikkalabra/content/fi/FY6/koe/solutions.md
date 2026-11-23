@@ -14,11 +14,11 @@ Virta ei voi myöskään kasvaa, koska lamppu ei tuota varausta.
 
 Kun se kytketään lampun rinnalle, lähes koko virta kulkee mittarin kautta: lampun jännite on lähes nolla, ja lamppu sammuu.
 
-Piirin virtaa rajoittavat enää pariston sisäinen resistanssi ja johdot, joten virta on suuri, ja mittarin sulake voi palaa.
+Todellisuudessa piirin virtaa rajoittavat enää pariston sisäinen resistanssi ja johdot, joten virta on suuri, ja mittarin sulake voi palaa.
 
 Mittari näyttää lampun virran oikein vain lampun kanssa sarjaan kytkettynä.
 
-Vaihtoehto, jossa mittari näyttää nollaa eikä lamppu muutu, kuvaa rinnalle kytkettyä jännitemittaria, jonka resistanssi on suuri.
+Vaihtoehto, jossa mittari näyttää nollaa eikä lamppu muutu, sopisi mittariin, jonka resistanssi on hyvin suuri: sen läpi ei kulkisi juuri lainkaan virtaa, joten se näyttäisi lähes nollaa eikä vaikuttaisi lamppuun. Virtamittarin resistanssi on kuitenkin pieni, joten tämä ei kuvaa sitä.
 
 ### c)
 **Perustelu:** Kytkennässä I resistanssit lasketaan yhteen: $R + R = 2R$.
