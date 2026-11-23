@@ -41,6 +41,13 @@ E_\gamma &= hf \\
 \end{aligned}
 $$
 \begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\gamma &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\gamma}
+\end{aligned}
+$$
+\begin{aligned}
 E_\gamma &= hf \\
 c &= f\lambda \\
 E_\gamma &= \frac{hc}{\lambda} \\
@@ -112,6 +119,14 @@ E_\gamma &= hf \\
 \end{aligned}
 $$
 \begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\gamma &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\gamma} \\
+&= \frac{hc}{E_\text{u} - E_\text{l}}
+\end{aligned}
+$$
+\begin{aligned}
 E_\gamma &= E_\text{u} - E_\text{l} \\
 E_\gamma &= hf \\
 c &= f\lambda \\
@@ -157,6 +172,12 @@ The difference does not change the wavelength at three-figure precision. Its ene
 **Find:** the ratio of the energies, how many times $E_\gamma$ is the energy $E_\text{g}$ of a green photon
 **Principle:** The energy of each photon depends only on its wavelength or frequency. The energy of the green photon is calculated from the wavelength, and the comparison is made with one division in the same unit.
 **Formula:** Photon energy $E_\text{g} = hf$ and the wave relation $c = f\lambda$, so: $$
+\begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\text{g} &= hf \\
+&= \frac{hc}{\lambda}
+\end{aligned}
+$$ The ratio asked for is $\dfrac{E_\gamma}{E_\text{g}} = \dfrac{E_\gamma \lambda}{hc}$
 \begin{aligned}
 f &= \frac{c}{\lambda} \\
 E_\text{g} &= hf \\
@@ -294,6 +315,13 @@ E_\gamma &= hf \\
 \end{aligned}
 $$ The shortest wavelength comes from the greatest energy, so $\lambda_\text{min} = \dfrac{hc}{E_\text{max}}$
 \begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\gamma &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\gamma}
+\end{aligned}
+$$ The shortest wavelength comes from the greatest energy, so $\lambda_\text{min} = \dfrac{hc}{E_\text{max}}$
+\begin{aligned}
 E_\gamma &= hf \\
 c &= f\lambda \\
 \lambda &= \frac{hc}{E_\gamma}
@@ -358,6 +386,13 @@ $$ there are two beta decays and one alpha decay.
 The greatest energy is the transition from the top level to the ground state, and every line has to be a difference between two levels. With the help of the lowest level $351.2\,\text{keV}$ the remaining levels can be solved uniquely. The missing transition is the one that is not in the table.
 
 **Formula:** Photon energy is the level difference $E_\gamma = E_\text{u} - E_\text{l}$, and $E_\gamma = hf$ and $c = f\lambda$, so: $$
+\begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\gamma &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\gamma}
+\end{aligned}
+$$
 \begin{aligned}
 f &= \frac{c}{\lambda} \\
 E_\gamma &= hf \\
@@ -438,6 +473,14 @@ $$ is greater than $2158.6\,\text{keV}$.
 **Principle:** The energy of a gamma photon is the energy difference of two levels. A higher level is obtained by adding the energy of the transition photon to the lower level, and the levels have to explain all the observed peaks. The wavelength of a photon is obtained from its energy with $\lambda = hc/E$.
 **Reading the graph:** The figure has two peaks, $1173.2\,\text{keV}$ and $1332.5\,\text{keV}$. The figure does not show which of them is the transition A $\to$ ground state.
 **Formula:** Photon energy is the level difference $E_\gamma = E_\text{u} - E_\text{l}$, so $E_\text{u} = E_\text{l} + E_\gamma$. For the levels and the wavelength ($E_\text{C} = hf$, $c = f\lambda$): $$
+\begin{aligned}
+E_\text{A} &= E_{\text{A} \to 0} \\
+E_\text{B} &= E_\text{A} + E_{\text{B} \to \text{A}} \\
+E_\text{C} &= E_\text{B} + E_{\text{C} \to \text{B}} \\
+\lambda &= \frac{c}{f} \\
+&= \frac{hc}{E_\text{C}}
+\end{aligned}
+$$
 \begin{aligned}
 E_\text{A} &= E_{\text{A} \to 0} \\
 E_\text{B} &= E_\text{A} + E_{\text{B} \to \text{A}} \\

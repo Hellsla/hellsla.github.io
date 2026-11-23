@@ -151,7 +151,7 @@ Vaihtoehto $16\,\text{h}$ on neljä puoliintumisaikaa, jolloin aktiivisuus on vi
 **Kysytty:** Planckin vakio $h$
 **Periaate:** Kynnysjännitteellä elektronin saama energia on likimain yhden fotonin energia, $eU_\text{k} \approx hf$. Kun $U_\text{k}$ on pystyakselilla ja $f$ vaaka-akselilla, suoran kulmakerroin on $\tfrac{h}{e}$.
 **Kuvaajan lukeminen:** Suoralta luetaan mittausalueella olevat, kaukana toisistaan olevat pisteet $(5{,}0 \cdot 10^{14}\,\text{Hz};\ 2{,}02\,\text{V})$ ja $(6{,}8 \cdot 10^{14}\,\text{Hz};\ 2{,}78\,\text{V})$.
-**Kaava:** $h = e \cdot \dfrac{\Delta U_\text{k}}{\Delta f}$
+**Kaava:** $$\begin{aligned} eU_\text{k} &= hf \\ U_\text{k} &= \dfrac{h}{e}\,f \\ \dfrac{\Delta U_\text{k}}{\Delta f} &= \dfrac{h}{e} \\ h &= e \cdot \dfrac{\Delta U_\text{k}}{\Delta f} \end{aligned}$$
 **Muunnokset:** Taajuudet ovat suoraan hertseinä, ja $1\,\text{V} = 1\,\text{J/C}$.
 **Sijoitus:** $\Delta U_\text{k} = 2{,}78\,\text{V} - 2{,}02\,\text{V} = 0{,}76\,\text{V}$ ja $\Delta f = 6{,}8 \cdot 10^{14}\,\text{Hz} - 5{,}0 \cdot 10^{14}\,\text{Hz} = 1{,}8 \cdot 10^{14}\,\text{Hz}$, joten kulmakerroin $\dfrac{0{,}76\,\text{V}}{1{,}8 \cdot 10^{14}\,\text{Hz}} \approx 4{,}22 \cdot 10^{-15}\,\text{V}\,\text{s}$ ja $$\begin{aligned} h &= 1{,}602 \cdot 10^{-19}\,\text{C} \\ &\cdot 4{,}22 \cdot 10^{-15}\,\text{V}\,\text{s} \\ &\approx 6{,}8 \cdot 10^{-34}\,\text{J}\,\text{s} \end{aligned}$$
 **Vastaus:** Planckin vakio on noin $6{,}8 \cdot 10^{-34}\,\text{J}\,\text{s}$.
@@ -162,7 +162,7 @@ Vaihtoehto $16\,\text{h}$ on neljä puoliintumisaikaa, jolloin aktiivisuus on vi
 **Kysytty:** $h$:n epävarmuus ja sopusointu tunnetun arvon kanssa
 **Periaate:** Piirretään jyrkin ja loivin suora, jotka vielä mahtuvat virhepalkkien sisään. Niiden kulmakertoimista saadaan $h$:n suurin ja pienin arvo, ja epävarmuus on niiden eron puolikas.
 **Kuvaajan lukeminen:** Jyrkin suora, joka vielä kulkee kaikkien viiden virhepalkin sisällä, kulkee pisteen $(5{,}08;\ 2{,}02)$ (toisen palkin alapää) ja pisteen $(6{,}97;\ 2{,}89)$ (viimeisen palkin yläpää) kautta. Loivin suora kulkee pisteen $(4{,}80;\ 1{,}96)$ (ensimmäisen palkin yläpää) ja pisteen $(6{,}38;\ 2{,}57)$ (neljännen palkin alapää) kautta. Taajuudet ovat yksikössä $10^{14}\,\text{Hz}$ ja jännitteet voltteina; muut kolme palkkia ovat suorien sisällä.
-**Kaava:** $\Delta h = \dfrac{h_\text{max} - h_\text{min}}{2}$, missä $h = e \cdot \text{kulmakerroin}$
+**Kaava:** Jokaiselle suoralle $h = e \cdot \dfrac{\Delta U}{\Delta f}$ (kohta b), joten $$\begin{aligned} h_\text{max} &= e \cdot \dfrac{\Delta U_\text{max}}{\Delta f_\text{max}} \\ h_\text{min} &= e \cdot \dfrac{\Delta U_\text{min}}{\Delta f_\text{min}} \\ \Delta h &= \dfrac{h_\text{max} - h_\text{min}}{2} \end{aligned}$$
 **Muunnokset:** Jyrkin suora: $\Delta f = (6{,}97 - 5{,}08) \cdot 10^{14}\,\text{Hz} = 1{,}89 \cdot 10^{14}\,\text{Hz}$; loivin suora: $\Delta f = (6{,}38 - 4{,}80) \cdot 10^{14}\,\text{Hz} = 1{,}58 \cdot 10^{14}\,\text{Hz}$.
 **Sijoitus:** $$\begin{aligned} h_\text{max} &= 1{,}602 \cdot 10^{-19}\,\text{C} \\ &\cdot \dfrac{0{,}87\,\text{V}}{1{,}89 \cdot 10^{14}\,\text{Hz}} \\ &\approx 7{,}4 \cdot 10^{-34}\,\text{J}\,\text{s} \end{aligned}$$ ja $$\begin{aligned} h_\text{min} &= 1{,}602 \cdot 10^{-19}\,\text{C} \\ &\cdot \dfrac{0{,}61\,\text{V}}{1{,}58 \cdot 10^{14}\,\text{Hz}} \\ &\approx 6{,}2 \cdot 10^{-34}\,\text{J}\,\text{s} \end{aligned}$$, joten $\Delta h = \dfrac{7{,}4 - 6{,}2}{2} \cdot 10^{-34}\,\text{J}\,\text{s} \approx 0{,}6 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Vastaus:** $h = (6{,}8 \pm 0{,}6) \cdot 10^{-34}\,\text{J}\,\text{s}$. Tunnettu arvo $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on tällä välillä, joten mittaus on sopusoinnussa tunnetun arvon kanssa.
@@ -290,7 +290,7 @@ Yksi syy on, että LEDin valo on leveä spektri ja LED alkaa tuottaa valoa kaist
 **Annettu:** $T_{1/2} = 3{,}2\,\text{min}$, $N_0 = 800$, $t = 15\,\text{min}$
 **Kysytty:** hajoamisvakio $\lambda$ ja pulssien lukumäärä $N$ hetkellä $t = 15\,\text{min}$ alkavassa $30\,\text{s}$:n ikkunassa
 **Periaate:** Puoliintumisaika ja hajoamisvakio liittyvät toisiinsa, ja hajoamislaki antaa lukumäärän ajan funktiona. Ikkunan pituus on sama kuin mittauksissa, joten alkuarvo $N_0$ on mittausikkunan lukumäärä.
-**Kaava:** $\lambda = \dfrac{\ln 2}{T_{1/2}}$ ja $N = N_0 e^{-\lambda t}$
+**Kaava:** Hajoamislaki $N = N_0 e^{-\lambda t}$. Puoliintumisajan kuluttua $N = \tfrac{N_0}{2}$, joten $$\begin{aligned} \tfrac{N_0}{2} &= N_0 e^{-\lambda T_{1/2}} \\ \tfrac{1}{2} &= e^{-\lambda T_{1/2}} \\ \ln 2 &= \lambda T_{1/2} \\ \lambda &= \dfrac{\ln 2}{T_{1/2}} \end{aligned}$$ ja ennuste lasketaan laista $N = N_0 e^{-\lambda t}$.
 **Muunnokset:** Aika pysyy minuutteina, koska $\lambda$ ja $t$ ovat samassa yksikössä.
 **Sijoitus:** $\lambda = \dfrac{0{,}693}{3{,}2\,\text{min}} \approx 0{,}217\,\text{min}^{-1}$. Eksponentti on $\lambda t = 0{,}217\,\text{min}^{-1} \cdot 15\,\text{min} = 3{,}25$, joten $N = 800 \cdot e^{-3{,}25} \approx 800 \cdot 0{,}0386 \approx 31$
 **Vastaus:** Hajoamisvakio on noin $0{,}22\,\text{min}^{-1}$, ja $30\,\text{s}$:n aikana rekisteröidään noin $31$ pulssia.
@@ -322,7 +322,7 @@ Yksi syy on, että LEDin valo on leveä spektri ja LED alkaa tuottaa valoa kaist
 **Annettu:** $m({}^{4}\text{He}) = 4{,}002603\,\text{u}$, $m({}^{1}\text{H}) = 1{,}007825\,\text{u}$, $m_\text{n} = 1{,}008665\,\text{u}$, $1\,\text{u} = 931{,}5\,\text{MeV}/c^2$
 **Kysytty:** sidosenergia $E_\text{s}$ ja sidosenergia nukleonia kohti
 **Periaate:** Sidosenergia on energia, joka vapautuu, kun ydin muodostuu erillisistä nukleoneista, eli massavaje kerrottuna $c^2$:lla. Atomimassoilla vetyatomien massa $m_\text{H}$ huomioi elektronit.
-**Kaava:** $$E_\text{s} = (Zm_\text{H} + Nm_\text{n} - m_\text{atomi})\,c^2$$
+**Kaava:** $$\begin{aligned} \Delta m &= Zm_\text{H} + Nm_\text{n} - m_\text{atomi} \\ E_\text{s} &= \Delta m \cdot c^2 \\ &= (Zm_\text{H} + Nm_\text{n} - m_\text{atomi})\,c^2 \\ \dfrac{E_\text{s}}{A} &= \dfrac{E_\text{s}}{Z + N} \end{aligned}$$
 **Muunnokset:** Massavaje lasketaan atomimassayksiköissä, ja $1\,\text{u} \cdot c^2 = 931{,}5\,\text{MeV}$.
 **Sijoitus:** $$\begin{aligned} \Delta m &= 2 \cdot 1{,}007825\,\text{u} + 2 \cdot 1{,}008665\,\text{u} \\ &- 4{,}002603\,\text{u} \\ &= 0{,}030377\,\text{u} \end{aligned}$$, joten $E_\text{s} = 0{,}030377\,\text{u} \cdot 931{,}5\,\text{MeV/u} \approx 28{,}3\,\text{MeV}$ ja nukleonia kohti $\tfrac{28{,}3\,\text{MeV}}{4} \approx 7{,}07\,\text{MeV}$
 **Vastaus:** Helium-4:n sidosenergia on noin $28{,}3\,\text{MeV}$ eli noin $7{,}07\,\text{MeV}$ nukleonia kohti.
@@ -332,7 +332,7 @@ Yksi syy on, että LEDin valo on leveä spektri ja LED alkaa tuottaa valoa kaist
 **Annettu:** $m(\text{D}) = 2{,}014102\,\text{u}$, $m(\text{T}) = 3{,}016049\,\text{u}$, $m({}^{4}\text{He}) = 4{,}002603\,\text{u}$, $m_\text{n} = 1{,}008665\,\text{u}$
 **Kysytty:** reaktion vapauttama energia $Q$
 **Periaate:** Energia vapautuu, kun reaktiossa syntyvien hiukkasten yhteismassa on pienempi kuin lähtöhiukkasten. Massaero kerrottuna $c^2$:lla on vapautuva energia. Elektronien määrä on reaktiossa sama, joten atomimassat voi sijoittaa suoraan.
-**Kaava:** $Q = (m_\text{alku} - m_\text{loppu})\,c^2$
+**Kaava:** $$\begin{aligned} \Delta m &= m_\text{alku} - m_\text{loppu} \\ Q &= \Delta m \cdot c^2 \\ &= (m_\text{alku} - m_\text{loppu})\,c^2 \end{aligned}$$
 **Muunnokset:** $1\,\text{u} \cdot c^2 = 931{,}5\,\text{MeV}$
 **Sijoitus:** $m_\text{alku} = 2{,}014102\,\text{u} + 3{,}016049\,\text{u} = 5{,}030151\,\text{u}$ ja $m_\text{loppu} = 4{,}002603\,\text{u} + 1{,}008665\,\text{u} = 5{,}011268\,\text{u}$, joten $\Delta m = 0{,}018883\,\text{u}$ ja $Q = 0{,}018883\,\text{u} \cdot 931{,}5\,\text{MeV/u} \approx 17{,}59\,\text{MeV}$
 **Vastaus:** Yhdessä reaktiossa vapautuu energiaa noin $17{,}6\,\text{MeV}$.
@@ -342,7 +342,7 @@ Yksi syy on, että LEDin valo on leveä spektri ja LED alkaa tuottaa valoa kaist
 **Annettu:** $Q = 17{,}59\,\text{MeV}$, atomimassat, $1\,\text{u} = 1{,}6605 \cdot 10^{-27}\,\text{kg}$, kivihiilen palamislämpö $30\,\text{MJ/kg}$
 **Kysytty:** energia yhtä polttoainekilogrammaa kohti ja vertailu kivihiileen
 **Periaate:** Yhteen reaktioon kuluu yksi deuterium- ja yksi tritiumatomi. Energia kilogrammaa kohti on reaktion energia jaettuna näiden atomien yhteismassalla.
-**Kaava:** $\dfrac{E}{m} = \dfrac{Q}{m_\text{D} + m_\text{T}}$
+**Kaava:** $$\begin{aligned} E &= Q \\ m &= m_\text{D} + m_\text{T} \\ \dfrac{E}{m} &= \dfrac{Q}{m_\text{D} + m_\text{T}} \end{aligned}$$
 **Muunnokset:** $Q = 17{,}59 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 2{,}818 \cdot 10^{-12}\,\text{J}$ ja massa $$\begin{aligned} m_\text{D} + m_\text{T} &= 5{,}030151\,\text{u} \\ &= 5{,}030151 \\ &\cdot 1{,}6605 \cdot 10^{-27}\,\text{kg} \\ &= 8{,}353 \cdot 10^{-27}\,\text{kg} \end{aligned}$$
 **Sijoitus:** $\dfrac{E}{m} = \dfrac{2{,}818 \cdot 10^{-12}\,\text{J}}{8{,}353 \cdot 10^{-27}\,\text{kg}} \approx 3{,}37 \cdot 10^{14}\,\text{J/kg}$ ja suhde kivihiileen $\dfrac{3{,}37 \cdot 10^{14}\,\text{J/kg}}{30 \cdot 10^{6}\,\text{J/kg}} \approx 1{,}1 \cdot 10^{7}$
 **Vastaus:** Yhdestä kilogrammasta polttoainetta vapautuu noin $3{,}4 \cdot 10^{14}\,\text{J}$, mikä on noin $10^{7}$-kertaisesti kivihiilen palamislämpöön verrattuna.

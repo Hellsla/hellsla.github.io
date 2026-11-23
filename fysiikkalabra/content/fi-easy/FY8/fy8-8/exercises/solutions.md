@@ -41,6 +41,13 @@ E_\gamma &= hf \\
 \end{aligned}
 $$
 \begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\gamma &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\gamma}
+\end{aligned}
+$$
+\begin{aligned}
 E_\gamma &= hf \\
 c &= f\lambda \\
 E_\gamma &= \frac{hc}{\lambda} \\
@@ -109,6 +116,14 @@ E_\gamma &= hf \\
 \end{aligned}
 $$
 \begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\gamma &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\gamma} \\
+&= \frac{hc}{E_\text{y} - E_\text{a}}
+\end{aligned}
+$$
+\begin{aligned}
 E_\gamma &= E_\text{y} - E_\text{a} \\
 E_\gamma &= hf \\
 c &= f\lambda \\
@@ -154,6 +169,12 @@ Energia on vähän pienempi kuin toisen fotonin energia $1332{,}5\,\text{keV}$. 
 **Kysytty:** energioiden suhde, kuinka monta kertaa $E_\gamma$ on vihreän fotonin energia $E_\text{v}$
 **Periaate:** Kummankin fotonin energia riippuu vain sen aallonpituudesta tai taajuudesta. Vihreän fotonin energia lasketaan aallonpituudesta. Vertailu tehdään yhdellä jakolaskulla samassa yksikössä.
 **Kaava:** Fotonin energia $E_\text{v} = hf$ ja aaltoyhtälö $c = f\lambda$, joten: $$
+\begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\text{v} &= hf \\
+&= \frac{hc}{\lambda}
+\end{aligned}
+$$ Kysytty suhde on $\dfrac{E_\gamma}{E_\text{v}} = \dfrac{E_\gamma \lambda}{hc}$
 \begin{aligned}
 f &= \frac{c}{\lambda} \\
 E_\text{v} &= hf \\
@@ -280,6 +301,13 @@ E_\gamma &= hf \\
 \end{aligned}
 $$ Lyhin aallonpituus tulee suurimmasta energiasta, joten $\lambda_\text{min} = \dfrac{hc}{E_\text{max}}$
 \begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\gamma &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\gamma}
+\end{aligned}
+$$ Lyhin aallonpituus tulee suurimmasta energiasta, joten $\lambda_\text{min} = \dfrac{hc}{E_\text{max}}$
+\begin{aligned}
 E_\gamma &= hf \\
 c &= f\lambda \\
 \lambda &= \frac{hc}{E_\gamma}
@@ -337,6 +365,13 @@ $$ on kaksi beetahajoamista ja yksi alfahajoaminen.
 **Kysytty:** puuttuvan gammaviivan energia $E_\text{p}$ ja aallonpituus $\lambda$ pikometreinä
 **Periaate:** Gammafotonin energia on kahden tason erotus. Kolmella viritystasolla ja perustilalla on kuusi mahdollista siirtymää. Niistä viisi näkyy taulukossa. Suurin energia on siirtymä ylimmältä tasolta perustilaan. Jokaisen viivan täytyy olla kahden tason erotus. Alimman tason $351{,}2\,\text{keV}$ avulla jäljelle jäävät tasot ratkeavat yksikäsitteisesti. Puuttuva siirtymä on se, jota taulukossa ei ole.
 **Kaava:** Fotonin energia on tasojen erotus $E_\gamma = E_\text{y} - E_\text{a}$, ja $E_\gamma = hf$ sekä $c = f\lambda$, joten: $$
+\begin{aligned}
+f &= \frac{c}{\lambda} \\
+E_\gamma &= hf \\
+&= \frac{hc}{\lambda} \\
+\lambda &= \frac{hc}{E_\gamma}
+\end{aligned}
+$$
 \begin{aligned}
 f &= \frac{c}{\lambda} \\
 E_\gamma &= hf \\
@@ -403,6 +438,14 @@ $$ on suurempi kuin $2158{,}6\,\text{keV}$.
 **Periaate:** Gammafotonin energia on kahden tason energiaerotus. Ylempi taso saadaan lisäämällä alemman tason energiaan siirtymän fotonin energia, ja tasot voivat olla vain sellaisia, että kaikki havaitut piikit selittyvät samoilla tasoilla. Fotonin aallonpituus saadaan energiasta kaavalla $\lambda = hc/E$.
 **Kuvaajan lukeminen:** Kuvassa on kaksi piikkiä, $1173{,}2\,\text{keV}$ ja $1332{,}5\,\text{keV}$. Kuvasta ei näe, kumpi niistä on siirtymä A $\to$ perustila.
 **Kaava:** Fotonin energia on tasojen erotus $E_\gamma = E_\text{y} - E_\text{a}$, joten $E_\text{y} = E_\text{a} + E_\gamma$. Tasoille ja aallonpituudelle ($E_\text{C} = hf$, $c = f\lambda$): $$
+\begin{aligned}
+E_\text{A} &= E_{\text{A} \to 0} \\
+E_\text{B} &= E_\text{A} + E_{\text{B} \to \text{A}} \\
+E_\text{C} &= E_\text{B} + E_{\text{C} \to \text{B}} \\
+\lambda &= \frac{c}{f} \\
+&= \frac{hc}{E_\text{C}}
+\end{aligned}
+$$
 \begin{aligned}
 E_\text{A} &= E_{\text{A} \to 0} \\
 E_\text{B} &= E_\text{A} + E_{\text{B} \to \text{A}} \\
