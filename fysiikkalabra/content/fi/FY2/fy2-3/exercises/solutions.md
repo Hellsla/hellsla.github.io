@@ -58,7 +58,7 @@ $$. Vedenkeittimen tyypillinen teho on noin $2\,\text{kW}$, joten tulos sopii.
 **Annettu:** teho $P = 6{,}0\,\text{kW}$, aika $t = 150\,\text{min}$, hinta $0{,}20\,\text{€/kWh}$
 **Kysytty:** hinta euroina
 **Periaate:** Kiuas muuntaa energiaa tasaisella teholla. Ensin lasketaan kulutettu energia kilowattitunteina, sitten sen hinta.
-**Kaava:** $E = P\,t$ ja $\text{hinta} = E \cdot \text{yksikköhinta}$
+**Kaava:** $E = P\,t$ ja $\text{hinta} = E \cdot \text{yksikköhinta}$, joten $\text{hinta} = P\,t \cdot \text{yksikköhinta}$
 **Muunnokset:** Teho on jo kilowatteina. Aika: $1\,\text{min} = 1\,\text{h} : 60$, joten $150\,\text{min} = 150 \cdot (1\,\text{h} : 60) = 2{,}5\,\text{h}$. Hinta $20\,\text{snt/kWh} = 0{,}20\,\text{€/kWh}$.
 **Sijoitus:** $E = 6{,}0\,\text{kW} \cdot 2{,}5\,\text{h} = 15\,\text{kWh}$ ja $\text{hinta} = 15\,\text{kWh} \cdot 0{,}20\,\text{€/kWh} = 3{,}0\,\text{€}$
 **Vastaus:** $3{,}0\,\text{€}$, kaksi merkitsevää numeroa kuten tehossa $6{,}0\,\text{kW}$.
@@ -88,7 +88,7 @@ $$. Vedenkeittimen tyypillinen teho on noin $2\,\text{kW}$, joten tulos sopii.
 **Annettu:** kuusi valoa, kunkin teho $1{,}5\,\text{W}$, aika $8760\,\text{h}$
 **Kysytty:** yhteenlaskettu energia $E$ kilowattitunteina
 **Periaate:** Valot käyttävät tasaista tehoa, joten kokonaisteho on yksittäisten tehojen summa, ja energia on kokonaisteho kertaa aika.
-**Kaava:** $P_\text{yht} = 6 \cdot P$ ja $E = P_\text{yht}\,t$
+**Kaava:** $P = \dfrac{E}{t}$, josta $E = P_\text{yht}\,t$, ja $P_\text{yht} = 6 \cdot P$, joten $E = 6\,P\,t$
 **Muunnokset:** $6 \cdot 1{,}5\,\text{W} = 9{,}0\,\text{W}$, ja sijoittamalla $1\,\text{W} = 10^{-3}\,\text{kW}$ saadaan $9{,}0\,\text{W} = 9{,}0 \cdot 10^{-3}\,\text{kW} = 0{,}0090\,\text{kW}$.
 **Sijoitus:** $E = 0{,}0090\,\text{kW} \cdot 8760\,\text{h} = 78{,}84\,\text{kWh}$
 **Vastaus:** $79\,\text{kWh}$, kaksi merkitsevää numeroa kuten tehossa $1{,}5\,\text{W}$.
@@ -98,7 +98,7 @@ $$. Vedenkeittimen tyypillinen teho on noin $2\,\text{kW}$, joten tulos sopii.
 **Annettu:** hehkulampun teho $60\,\text{W}$, LEDin $8{,}0\,\text{W}$, käyttöaika $4{,}0\,\text{h}$ vuorokaudessa $365\,\text{vrk}$, hinta $0{,}20\,\text{€/kWh}$
 **Kysytty:** vuodessa säästyvä hinta euroina
 **Periaate:** Säästö on kahden lampun energiankulutuksen erotus kertaa hinta. Teho on molemmilla tasainen, joten energia on teho kertaa aika.
-**Kaava:** $\Delta E = (P_1 - P_2)\,t$ ja $\text{säästö} = \Delta E \cdot \text{yksikköhinta}$
+**Kaava:** $E = P\,t$, joten $\Delta E = E_1 - E_2 = P_1\,t - P_2\,t = (P_1 - P_2)\,t$, ja $\text{säästö} = \Delta E \cdot \text{yksikköhinta}$
 **Muunnokset:** $P_1 - P_2 = 60\,\text{W} - 8{,}0\,\text{W} = 52\,\text{W} = 52 \cdot 10^{-3}\,\text{kW} = 0{,}052\,\text{kW}$ ja $t = 4{,}0\,\text{h} \cdot 365 = 1460\,\text{h}$.
 **Sijoitus:** $\Delta E = 0{,}052\,\text{kW} \cdot 1460\,\text{h} = 75{,}92\,\text{kWh}$ ja $\text{säästö} = 75{,}92\,\text{kWh} \cdot 0{,}20\,\text{€/kWh} = 15{,}18\,\text{€}$
 **Vastaus:** $15\,\text{€}$, kaksi merkitsevää numeroa kuten tehossa $8{,}0\,\text{W}$ ja ajassa $4{,}0\,\text{h}$.
@@ -125,7 +125,7 @@ Kulutus kertyy lyhyistä suuritehoisista ja pitkistä pienitehoisista hetkistä,
 **Annettu:** kulutus $18\,\text{kWh}$ sadalla kilometrillä, lataus teholla $2{,}3\,\text{kW}$ ajan $8{,}0\,\text{h}$, häviöt jätetään huomiotta
 **Kysytty:** matka $s$ kilometreinä
 **Periaate:** Ensin lasketaan latausenergia tasaisella teholla, $E = P\,t$. Sitten kysytään, kuinka monta sadan kilometrin matkaa energia riittää, kun jokainen kuluttaa $18\,\text{kWh}$.
-**Kaava:** $E = P\,t$ ja $s = \dfrac{E}{k} \cdot 100\,\text{km}$, missä $k = 18\,\text{kWh}$ on kulutus sadalla kilometrillä
+**Kaava:** $E = P\,t$. Kulutus sadalla kilometrillä on $k = \dfrac{E}{s} \cdot 100\,\text{km}$, josta $s = \dfrac{E}{k} \cdot 100\,\text{km}$ ja edelleen $s = \dfrac{P\,t}{k} \cdot 100\,\text{km}$, missä $k = 18\,\text{kWh}$
 **Muunnokset:** Ei tarvita: teho on kilowatteina ja aika tunteina, joten energia on kilowattitunteina.
 **Sijoitus:** $E = 2{,}3\,\text{kW} \cdot 8{,}0\,\text{h} = 18{,}4\,\text{kWh}$ ja $s = \dfrac{18{,}4\,\text{kWh}}{18\,\text{kWh}} \cdot 100\,\text{km} = 102{,}2\,\text{km}$
 **Vastaus:** $100\,\text{km}$ (eli $1{,}0 \cdot 10^{2}\,\text{km}$), kaksi merkitsevää numeroa kuten tehossa $2{,}3\,\text{kW}$.
@@ -161,7 +161,7 @@ Jyrkkyys ei ole kokonaisenergia, koska kokonaisenergia luetaan suoran korkeudest
 **Annettu:** taulukon laitteet: jääkaappi $100\,\text{W}$ ja $8{,}0\,\text{h}$, televisio $80\,\text{W}$ ja $3{,}5\,\text{h}$, kannettava tietokone $50\,\text{W}$ ja $6{,}0\,\text{h}$, vedenkeitin $2000\,\text{W}$ ja $0{,}20\,\text{h}$, hiustenkuivain $1800\,\text{W}$ ja $0{,}10\,\text{h}$
 **Kysytty:** vuorokauden kokonaisenergia $E$ kilowattitunteina sekä eniten energiaa kuluttava laite
 **Periaate:** Jokainen laite käy tasaisella teholla, joten sen energia on teho kertaa aika, $E = P\,t$. Kokonaisenergia on laitteiden energioiden summa. Eniten kuluttaa se laite, jonka tulo $P\,t$ on suurin, ei välttämättä suurimman tehon laite.
-**Kaava:** $E = P\,t$ ja $E_\text{yht} = E_1 + E_2 + \dots$
+**Kaava:** $E = P\,t$ ja $E_\text{yht} = E_1 + E_2 + \dots$, joten $E_\text{yht} = P_1\,t_1 + P_2\,t_2 + \dots$
 **Muunnokset:** Lasketaan wattitunteina ja muunnetaan lopuksi: $1\,\text{Wh} = 10^{-3}\,\text{kWh}$.
 **Sijoitus:**
 $E_\text{jääkaappi} = 100\,\text{W} \cdot 8{,}0\,\text{h} = 800\,\text{Wh}$
@@ -210,7 +210,7 @@ $$, mikä vastaa taulukon ensimmäistä lukemaa $0{,}31\,\text{kWh}$.
 **Annettu:** taulukon tunnit ja keskitehot (kulutus $P_\text{k}$, tuotanto $P_\text{t}$ megawatteina): klo 05–06 $8400$ ja $8900$, 06–07 $9100$ ja $8900$, 07–08 $9900$ ja $9300$, 08–09 $10\,400$ ja $9600$, 09–10 $10\,600$ ja $9800$, 10–11 $10\,300$ ja $9900$, 11–12 $9800$ ja $9900$, 12–13 $9600$ ja $9800$
 **Kysytty:** puuttuvan sähköenergian summa $E$ gigawattitunteina aikavälillä, jolloin kulutus ylittää tuotannon; kulutuksen huippuhetki ja tarvittava säätövoiman teho
 **Periaate:** Kunkin tunnin teho on keskiteho, joten tunnin energia on $E = P\,\Delta t$ ja $\Delta t = 1\,\text{h}$. Puuttuva teho on erotus $\Delta P = P_\text{k} - P_\text{t}$, kun se on positiivinen. Puuttuvat energiat lasketaan tunneittain ja summataan.
-**Kaava:** $\Delta P = P_\text{k} - P_\text{t}$ ja $E = \Delta P\,\Delta t$
+**Kaava:** $P = \dfrac{\Delta E}{\Delta t}$, josta $E = P\,\Delta t$. Puuttuva teho on $\Delta P = P_\text{k} - P_\text{t}$, joten $E = (P_\text{k} - P_\text{t})\,\Delta t$
 **Muunnokset:** $1\,\text{MWh} = 10^{-3}\,\text{GWh}$, koska $1\,\text{MW} = 10^{-3}\,\text{GW}$.
 **Sijoitus:** Erotukset tunneittain: klo 05–06 $-500\,\text{MW}$ (tuotantoa yli), 06–07 $200\,\text{MW}$, 07–08 $600\,\text{MW}$, 08–09 $800\,\text{MW}$, 09–10 $800\,\text{MW}$, 10–11 $400\,\text{MW}$, 11–12 $-100\,\text{MW}$ ja 12–13 $-200\,\text{MW}$. Kulutus ylittää tuotannon tunteina 06–11. Summa on $$
 \begin{aligned}
@@ -232,7 +232,7 @@ Tuulivoima ei sovi, koska se riippuu säästä, eikä ydinvoimala, koska se on t
 **Periaate:** Kompressori käy teholla $100\,\text{W}$ vain osan ajasta, joten keskiteho on käyntiteho kerrottuna käyntiajan osuudella kokonaisajasta.
 
 Vuosikulutus on keskiteho kertaa vuoden aika, ja säästö on kulutusten erotus kertaa hinta. Malli olettaa, että mitatut jaksot kuvaavat koko vuotta.
-**Kaava:** $\text{osuus} = \dfrac{t_\text{käy}}{t_\text{käy} + t_\text{seis}}$, $P_\text{ka} = \text{osuus} \cdot P$, $E = P_\text{ka}\,t$ ja $$ \begin{aligned} \text{säästö} &= (E - E_\text{uusi}) \\ &\cdot \text{yksikköhinta} \end{aligned} $$
+**Kaava:** $E = P\,t$ ja $\text{osuus} = \dfrac{t_\text{käy}}{t_\text{käy} + t_\text{seis}}$, $P_\text{ka} = \text{osuus} \cdot P$, joten $E = P_\text{ka}\,t = \text{osuus} \cdot P\,t$ ja $$ \begin{aligned} \text{säästö} &= (E - E_\text{uusi}) \\ &\cdot \text{yksikköhinta} \end{aligned} $$
 **Muunnokset:** Keskiteho muunnetaan kilowateiksi sijoittamalla $1\,\text{W} = 10^{-3}\,\text{kW}$.
 **Sijoitus:** Käyntiaikojen summa on $$
 \begin{aligned}
@@ -305,7 +305,7 @@ Kun aika puolittuu ja energia pysyy samana, teho kasvaa kaksinkertaiseksi. Teho 
 **Kysytty:** tehojen suhde $P_\text{A}/P_\text{B}$
 **Periaate:** Kun laite muuntaa energiaa tasaisesti, energia-aikakuvaajan suoran kulmakerroin on laitteen teho: teho on muuntunut energia jaettuna ajalla. Suhde saadaan jakamalla tehot keskenään.
 **Kuvaajan lukeminen:** Jyrkempi suora on A ja loivempi B. Pisteet ovat ruudukon leikkauskohdissa, joten arvot voi lukea tarkasti.
-**Kaava:** $P = \dfrac{\Delta E}{\Delta t}$ ja $\dfrac{P_\text{A}}{P_\text{B}}$
+**Kaava:** $P = \dfrac{\Delta E}{\Delta t}$, joten $\dfrac{P_\text{A}}{P_\text{B}} = \dfrac{\Delta E_\text{A} : \Delta t_\text{A}}{\Delta E_\text{B} : \Delta t_\text{B}}$
 **Muunnokset:** $\Delta E_\text{A} = 120\,\text{kJ} - 60\,\text{kJ} = 60\,\text{kJ} = 60\,000\,\text{J}$ ja $\Delta t_\text{A} = 80\,\text{s} - 40\,\text{s} = 40\,\text{s}$ sekä $\Delta E_\text{B} = 40\,\text{kJ} = 40\,000\,\text{J}$.
 **Sijoitus:** $P_\text{A} = \dfrac{60\,000\,\text{J}}{40\,\text{s}} = 1500\,\text{W}$ ja $P_\text{B} = \dfrac{40\,000\,\text{J}}{80\,\text{s}} = 500\,\text{W}$, joten $\dfrac{P_\text{A}}{P_\text{B}} = \dfrac{1500\,\text{W}}{500\,\text{W}} = 3{,}0$
 **Vastaus:** Laitteen A teho on $3{,}0$ kertaa laitteen B teho.

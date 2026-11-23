@@ -34,7 +34,7 @@ $$. Tämä on lähellä tulosta. Päästö on vain vajaa neljännes kilogrammaa 
 **Annettu:** kattopaneelien päästökerroin $e_1 = 41\,\text{g/kWh}$; maakaasusähkön päästökerroin $e_2 = 490\,\text{g/kWh}$; sama energia $E$
 **Kysytty:** kuinka moninkertainen maakaasusähkön päästö $m_2$ on kattopaneelien päästöön $m_1$ verrattuna
 **Periaate:** Kummankin päästö on kerroin kertaa energia, $m = e \cdot E$. Kun energia on sama, se supistuu vertailussa. Siksi päästöjen suhde on päästökertoimien suhde. Verrataan jakolaskulla.
-**Kaava:** $m = e \cdot E$. Energia $E$ on sama. Siksi päästöjen suhde on sama kuin kertoimien suhde. Verrataan siis kertoimia: suhde $= e_2 : e_1$
+**Kaava:** $m_1 = e_1 \cdot E$ ja $m_2 = e_2 \cdot E$. Energia $E$ on sama, joten $\dfrac{m_2}{m_1} = \dfrac{e_2 \cdot E}{e_1 \cdot E} = \dfrac{e_2}{e_1}$
 **Muunnokset:** Ei tarvita: kertoimet ovat samassa yksikössä $\text{g/kWh}$, joten yksikkö supistuu.
 **Sijoitus:** $e_2 : e_1 = 490\,\text{g/kWh} : 41\,\text{g/kWh} = 11{,}95$
 **Vastaus:** noin $12$ kertaa. Tuloksessa on kaksi merkitsevää numeroa, kuten kertoimessa $41\,\text{g/kWh}$.
@@ -64,7 +64,7 @@ $$. Tämä on lähellä tulosta. Päästö on vain vajaa neljännes kilogrammaa 
 **Annettu:** energia $E = 3600\,\text{kWh}$; kivihiilen $e_1 = 820\,\text{g/kWh}$ ja tuulivoiman $e_2 = 12\,\text{g/kWh}$
 **Kysytty:** päästöjen pieneneminen $m_1 - m_2$ tonneina
 **Periaate:** Energian määrä pysyy samana. Vain tuotantotapa vaihtuu. Päästöjen pieneneminen on vanhan ja uuden päästön erotus. Kummankin päästö on kerroin kertaa energia.
-**Kaava:** $m_1 - m_2 = e_1 \cdot E - e_2 \cdot E = (e_1 - e_2) \cdot E$
+**Kaava:** $m_1 = e_1 \cdot E$ ja $m_2 = e_2 \cdot E$, joten $m_1 - m_2 = e_1 \cdot E - e_2 \cdot E = (e_1 - e_2) \cdot E$
 **Muunnokset:** Kilowattitunnit supistuvat, joten tulos tulee grammoina. Lopuksi $1\,\text{g} = 10^{-6}\,\text{t}$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -95,7 +95,7 @@ $$
 **Annettu:** bensiinin päästökerroin $e = 69\,\text{g/MJ}$; $1\,\text{kWh} = 3{,}6\,\text{MJ}$
 **Kysytty:** päästökerroin yksikössä $\text{g/kWh}$
 **Periaate:** Päästökerroin kertoo päästön energiayksikköä kohti. Yksi kilowattitunti polttoaineen energiaa on $3{,}6\,\text{MJ}$. Siksi sen päästö on $3{,}6$ kertaa päästö megajoulea kohti.
-**Kaava:** $e_\text{kWh} = e_\text{MJ} \cdot 3{,}6\,\text{MJ/kWh}$
+**Kaava:** $m = e_\text{MJ} \cdot E_\text{MJ}$ ja $E_\text{MJ} = 3{,}6\,\text{MJ/kWh} \cdot E_\text{kWh}$, joten $m = e_\text{MJ} \cdot 3{,}6\,\text{MJ/kWh} \cdot E_\text{kWh}$ ja $e_\text{kWh} = \dfrac{m}{E_\text{kWh}} = e_\text{MJ} \cdot 3{,}6\,\text{MJ/kWh}$
 **Muunnokset:** Yksikkö $\text{MJ}$ supistuu: $\text{g/MJ} \cdot \text{MJ/kWh} = \text{g/kWh}$.
 **Sijoitus:** $e_\text{kWh} = 69\,\text{g/MJ} \cdot 3{,}6\,\text{MJ/kWh} = 248{,}4\,\text{g/kWh}$
 **Vastaus:** $250\,\text{g/kWh}$. Tuloksessa on kaksi merkitsevää numeroa, kuten kertoimessa $69\,\text{g/MJ}$.
@@ -105,7 +105,7 @@ $$
 **Annettu:** bensiiniauto $V = 6{,}0\,\textsf{l}$ sadalla kilometrillä, $32\,\text{MJ/}\textsf{l}$, $69\,\text{g/MJ}$; sähköauto $E = 18\,\text{kWh}$ sadalla kilometrillä
 **Kysytty:** sähkön päästökerroin $e$ yksikössä $\text{g/kWh}$, jolla päästöt ovat yhtä suuret
 **Periaate:** Lasketaan bensiiniauton päästö sadalta kilometriltä kertoimella kertaa energia. Sähköauton päästö on $e \cdot E$. Se asetetaan yhtä suureksi kuin bensiiniauton päästö.
-**Kaava:** $m_\text{bensa} = e_\text{b} \cdot V \cdot h$ ja $m_\text{bensa} = e \cdot E$, josta $e = \dfrac{m_\text{bensa}}{E}$, missä $e_\text{b}$ on bensiinin päästökerroin ja $h$ sen energiasisältö litraa kohti
+**Kaava:** bensiinin energia $E_\text{b} = V \cdot h$ ja päästö $m_\text{bensa} = e_\text{b} \cdot E_\text{b} = e_\text{b} \cdot V \cdot h$; sähköauton päästö $m = e \cdot E$. Päästöt ovat yhtä suuret, $e \cdot E = e_\text{b} \cdot V \cdot h$, josta $e = \dfrac{e_\text{b} \cdot V \cdot h}{E}$, missä $e_\text{b}$ on bensiinin päästökerroin ja $h$ sen energiasisältö litraa kohti
 **Muunnokset:** Ei tarvita: litrat ja megajoulet supistuvat, ja päästö tulee grammoina.
 **Sijoitus:** $m_\text{bensa} = 69\,\text{g/MJ} \cdot 6{,}0\,\textsf{l} \cdot 32\,\text{MJ/}\textsf{l} = 13\,248\,\text{g}$, ja $e = 13\,248\,\text{g} : 18\,\text{kWh} = 736\,\text{g/kWh}$
 **Vastaus:** $740\,\text{g/kWh}$. Tuloksessa on kaksi merkitsevää numeroa, kuten kulutuksessa $6{,}0\,\textsf{l}$ ja $18\,\text{kWh}$.
@@ -121,7 +121,7 @@ $$.
 **Annettu:** energia $E = 100\,\text{GWh}$ vuodessa; aurinkopuiston tuotto $q_\text{a} = 0{,}50\,\text{GWh/ha}$ ja energiapellon tuotto $q_\text{b} = 0{,}010\,\text{GWh/ha}$ vuodessa; $1\,\text{ha} = 0{,}01\,\text{km}^2$
 **Kysytty:** biomassasähkön tarvitseman peltoalan $A_\text{b}$ suhde aurinkopuiston alaan $A_\text{a}$ (alat lasketaan neliökilometreinä)
 **Periaate:** Jokainen hehtaari tuottaa vuodessa saman energian. Siksi vuoden energia on tuotto hehtaaria kohti kertaa pinta-ala. Tämä toimii samalla tavalla kuin päästö, joka on kerroin kertaa energia. Pinta-ala saadaan jakamalla tarvittava energia tuotolla hehtaaria kohti.
-**Kaava:** $E = q \cdot A$, josta $A = \dfrac{E}{q}$, ja suhde on $A_\text{b} : A_\text{a}$
+**Kaava:** $E = q \cdot A$, josta $A = \dfrac{E}{q}$; suhde $\dfrac{A_\text{b}}{A_\text{a}} = \dfrac{E / q_\text{b}}{E / q_\text{a}} = \dfrac{q_\text{a}}{q_\text{b}}$, koska sama energia $E$ supistuu
 **Muunnokset:** Gigawattitunnit supistuvat. Siksi ala tulee hehtaareina. Hehtaarit muutetaan neliökilometreiksi sijoittamalla $1\,\text{ha} = 0{,}01\,\text{km}^2$.
 **Sijoitus:** $A_\text{b} = 100\,\text{GWh} : 0{,}010\,\text{GWh/ha} = 10\,000\,\text{ha} = 10\,000 \cdot 0{,}01\,\text{km}^2 = 100\,\text{km}^2$, ja $A_\text{a} = 100\,\text{GWh} : 0{,}50\,\text{GWh/ha} = 200\,\text{ha} = 200 \cdot 0{,}01\,\text{km}^2 = 2{,}0\,\text{km}^2$, joten $A_\text{b} : A_\text{a} = 100\,\text{km}^2 : 2{,}0\,\text{km}^2 = 50$
 **Vastaus:** peltoalaa tarvitaan $50$ kertaa aurinkopuiston ala ($100\,\text{km}^2$ ja $2{,}0\,\text{km}^2$). Tuloksessa on kaksi merkitsevää numeroa, kuten tuotoissa $0{,}50\,\text{GWh/ha}$ ja $0{,}010\,\text{GWh/ha}$.
@@ -131,7 +131,7 @@ $$.
 **Annettu:** bussi $30\,\textsf{l}$ sadalla kilometrillä, $36\,\text{MJ/}\textsf{l}$, $74\,\text{g/MJ}$, $25$ matkustajaa; auto $6{,}0\,\textsf{l}$ sadalla kilometrillä, $32\,\text{MJ/}\textsf{l}$, $69\,\text{g/MJ}$, yksi matkustaja
 **Kysytty:** auton päästön ja bussin päästön suhde matkustajaa kohti
 **Periaate:** Lasketaan kummankin ajoneuvon päästö sadalta kilometriltä kertoimella kertaa energia. Bussin päästö jaetaan matkustajien kesken. Sen jälkeen verrataan yhden henkilön päästöjä jakolaskulla.
-**Kaava:** $m_\text{bussi} = e_\text{b} \cdot V_\text{b} \cdot h_\text{b} : N$, $m_\text{auto} = e_\text{a} \cdot V_\text{a} \cdot h_\text{a}$ ja suhde on $m_\text{auto} : m_\text{bussi}$, missä $N$ on bussin matkustajien määrä, $e$ päästökerroin, $V$ polttoaineen määrä ja $h$ energiasisältö litraa kohti
+**Kaava:** polttoaineen energia $E = V \cdot h$ ja päästö $m = e \cdot E$; bussin päästö matkustajaa kohti $m_\text{bussi} = \dfrac{e_\text{b} \cdot V_\text{b} \cdot h_\text{b}}{N}$, auton $m_\text{auto} = e_\text{a} \cdot V_\text{a} \cdot h_\text{a}$ ja suhde $\dfrac{m_\text{auto}}{m_\text{bussi}} = \dfrac{e_\text{a} \cdot V_\text{a} \cdot h_\text{a} \cdot N}{e_\text{b} \cdot V_\text{b} \cdot h_\text{b}}$, missä $N$ on bussin matkustajien määrä, $e$ päästökerroin, $V$ polttoaineen määrä ja $h$ energiasisältö litraa kohti
 **Muunnokset:** Ei tarvita: litrat ja megajoulet supistuvat, ja päästöt tulevat grammoina.
 **Sijoitus:** $m_\text{bussi} = 74\,\text{g/MJ} \cdot 30\,\textsf{l} \cdot 36\,\text{MJ/}\textsf{l} : 25 = 79\,920\,\text{g} : 25 = 3196{,}8\,\text{g}$, $m_\text{auto} = 69\,\text{g/MJ} \cdot 6{,}0\,\textsf{l} \cdot 32\,\text{MJ/}\textsf{l} = 13\,248\,\text{g}$, ja $13\,248\,\text{g} : 3196{,}8\,\text{g} = 4{,}14$
 **Vastaus:** $4{,}1$ kertaa. Tuloksessa on kaksi merkitsevää numeroa, kuten kulutuksissa $6{,}0\,\textsf{l}$ ja $30\,\textsf{l}$.
@@ -264,7 +264,7 @@ Päästö muuttui, vaikka tuotanto ei muuttunut.
 **Annettu:** maakaasun massa $m = 2{,}0\,\text{kg}$; lämpöarvo MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja, maakaasu) $H = 47\,\tfrac{\text{MJ}}{\text{kg}}$; päästökerroin $e = 55\,\tfrac{\text{g}}{\text{MJ}}$
 **Kysytty:** syntyvän hiilidioksidin massa $m_\text{CO2}$ kilogrammoina
 **Periaate:** Päästö kasvaa samassa suhteessa kuin vapautuva energia. Päästökerroin kertoo päästön yhtä energiayksikköä kohti. Lasketaan ensin energia lämpöarvolla. Sitten lasketaan päästö.
-**Kaava:** $E = Hm$ ja $m_\text{CO2} = eE$
+**Kaava:** $E = Hm$ ja $m_\text{CO2} = eE$, joten $m_\text{CO2} = e \cdot H \cdot m$
 **Muunnokset:** $5170\,\text{g} = 5{,}17\,\text{kg}$, koska $1000\,\text{g} = 1\,\text{kg}$.
 **Sijoitus:** $E = 47\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2{,}0\,\text{kg} = 94\,\text{MJ}$ ja $m_\text{CO2} = 55\,\tfrac{\text{g}}{\text{MJ}} \cdot 94\,\text{MJ} = 5170\,\text{g} = 5{,}17\,\text{kg}$
 **Vastaus:** $m_\text{CO2} \approx 5{,}2\,\text{kg}$, kaksi merkitsevää numeroa kuten massassa $2{,}0\,\text{kg}$. Lämpöarvo $47\,\tfrac{\text{MJ}}{\text{kg}}$ on MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja). Eri taulukoiden arvot eroavat vähän. Vastaus kelpaa, kun se on noin $\pm 4\,\%$ sisällä.
@@ -275,7 +275,7 @@ Päästö muuttui, vaikka tuotanto ei muuttunut.
 **Kysytty:** päästön pieneneminen $\Delta m$ tonneina
 **Periaate:** Päästö on päästökerroin kerrottuna sähköenergialla: $m = eE$. Lasketaan päästö kummallakin tuotantotavalla. Sitten vähennetään.
 **Kuvaajan lukeminen:** Kivihiilen pylvään päässä on luku $820$ ja maakaasun pylvään päässä $490$. Akselin yksikkö on $\text{g CO}_2\text{-ekv./kWh}$. Siis $e_\text{kivihiili} = 820\,\tfrac{\text{g}}{\text{kWh}}$ ja $e_\text{kaasu} = 490\,\tfrac{\text{g}}{\text{kWh}}$.
-**Kaava:** $\Delta m = (e_\text{kivihiili} - e_\text{kaasu})E$
+**Kaava:** $m = eE$, joten $\Delta m = m_\text{kivihiili} - m_\text{kaasu} = e_\text{kivihiili} E - e_\text{kaasu} E = (e_\text{kivihiili} - e_\text{kaasu})E$
 **Muunnokset:** $20{,}0\,\text{MWh} = 20\,000\,\text{kWh}$; lopuksi $1\,\text{t} = 10^{6}\,\text{g}$.
 **Sijoitus:** $$
 \begin{aligned}
