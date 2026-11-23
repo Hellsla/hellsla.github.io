@@ -1,17 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 74a741769156fbc5
+CONTENT-HASH: 46ac8e1c30d0df71
+SCOPE: delta Kaava step of the model solutions (exam as a whole judged from the packet)
 
 ## Blocking
-None. The round 1 blocker is closed: fy8-k4 d now gives only the deuterium (1,11 MeV) and tritium (2,83 MeV) values and refers to "a-kohdassa laskemasi" helium-4 value without stating it, so a is no longer disclosed. The a-answer (7,07 MeV) appears nowhere in k4's text or in another task's text; d still needs the student's own a result for the comparison.
 
 ## Polish
-1. fy8-k1 d and h are mostly arithmetic ("noin 5,4-kertainen", order of magnitude); a ranking or predict-the-change item for fy8-15 or fy8-12 would test more concepts, as the exam guidelines prefer.
-2. fy8-k4 d: the "noin sadan miljoonan kelvinin" temperature is given in the question, so only the reason (Coulomb repulsion against short-range strong force) is asked, which is fine, but the rubric could state that naming the repulsion alone earns 1 p of the 2.
+
+- solutions.md (fy8-k6-e Hyväksytään) — the accepted-alternatives line gives two relative uncertainties (3,4 % and 3,7 %) without saying which comparison to what; name `ΔN : N` and `ΔN : N_netto`.
+- solutions.md (fy8-k4 Kaava) — E_s per nucleon gives A = Z + N after the formula; say `A = Z + N` in Annettu (optional).
+- solutions.md (fy8-k2-b) — the h = e ΔU/Δf derivation is fine; a short note on units V·s/Hz·C would help the weakest (optional).
 
 ## Checked
-- Structure follows the guidelines: Osa 1 ten items of 2 p (20 p), Osa 2 four tasks of 15 p choose two (30 p), Osa 3 two tasks of 20 p choose one (20 p), maximum 70 p, 120 min. The check reports OK.
-- Osa 1: distractors are real misconceptions (intensity raises kinetic energy, squared instead of inverse scaling, linear halving, absorbed dose confused with equivalent dose, strong force for beta decay); only item f is nearly pure definition and its options test the meaning.
-- Osa 2: every choice meets a graph from data (k2, k3), an explanation part, measurement uncertainty (k2 c, k3 d) and the main quantitative models (k3 decay law, k4 binding energy, k5 levels); any two chosen cover the core.
-- Osa 3: k6 (lead shielding, linearisation not named, uncertainty judgement in e) and k7 (decay, annihilation, dose, comparison of two tracers) differ in kind, start with an accessible part and end in evaluation; no formula is named in a demanding part.
-- Rubrics sum to the part points; the single-error-once rule is stated in the intro.
-- Workload: about 120 minutes for the chosen parts is realistic.
+
+- Kaava step: basic law first, then derivation by aligned lines, simplification before substitution (k2-b, k3, k4, k5, k6-b/d/e, k7).
+- k5, k7 name c = fλ before λ = hc/E; k3 derives λ = ln2/T½ from the decay law.
+- k1 multiple-choice distractors keep their named misconceptions (k1-b J/eV, k1-d 1/n, k1-g linear, k1-h prefix); numbers (2,7 V, 20 h, 5·10^7) re-checked.
+- k6-d derivation with the 1/9 distance factor before the logarithm is correct and followable.
+- Numbers, answers and tolerances unchanged; I judged only what the packet lists.
+- Hash unchanged at end.

@@ -1,23 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 674123fb01d9ff37
-SCOPE: delta added-exercise from 9fd9fa6cd5fce3bb base 5b3ca4f81c77
+CONTENT-HASH: c25c9461478e13cd
+SCOPE: delta added-exercise (Kaava reflow, whole solutions.md)
 
 ## Blocking
 
-(none)
-
 ## Polish
 
-- exercises.json fy8-14-L2-08, text — "Luun voi korvata laskennassa pehmytkudoskerroksella, joka päästää läpi yhtä suuren osuuden" kertoo menetelmän ennen kuin oppilas on yrittänyt, ja suunta on käänteinen c-kohtaan nähden (kysytään luun paksuutta). Poista lause tai kirjoita: "Kaksi kerrosta päästää läpi yhtä suuren osuuden, kun niiden paksuus on sama määrä puoliintumispaksuuksia."
-- exercises.json fy8-14-L2-08 — käyttää samoja arvoja (3,4 cm ja 1,1 cm) ja samaa periaatetta kuin esimerkki, vain kysymys on käänteinen ja luku luetaan kuvaajasta. Hyväksyttävä, koska uutta on kuvaajan lukeminen; harkitse eri kudospaksuutta tai energiaa jos halutaan erottua.
-- exercises.json fy8-14-L2-09, tolerance 0.04 — oppilas, joka lukee T½ = 105 min (lukutarkkuus 5 min), saa 315 min ja jää toleranssin (317–343) ulkopuolelle. Nosta toleranssi arvoon 0.06.
-- solutions.md fy8-14-L2-09 — "kaksikantainen logaritmi" voi olla vieras; lisää rinnalle yksi lause: "tai puolita kolme kertaa: 480 → 240 → 120 → 60".
-- Sarja: L2-09 on lähellä L1-09:ää ja L3-04:ää (hajoaminen ajan yli), mutta kuvaajan lukeminen on uusi muoto.
+- solutions.md (L3-01, Kaava) — the Kaava step already carries the numbers n = 5, k = 1,3, N = 30; move them to Annettu/Sijoitus so the Kaava stays symbolic.
+- solutions.md (L1-03, Kaava) — `H_E = 0,019 mSv/MBq · A` is a data coefficient, not a law; name it `k` and give the value in Annettu.
+- solutions.md (L3-04) — the PET dose derivation ends with `\quad + H_TT` on a wrapped line; fine, but check it at 360 px.
 
 ## Checked
 
-- L2-08: luettavat arvot (0,36; 3,4 cm; 1,1 cm) ja ratkaisun 1,6 cm täsmäävät; ratkaisu etenee periaate, luku, kaava, sijoitus, tarkistus.
-- L2-09: 480 MBq, 110 min, 3 puoliintumisaikaa, 330 min täsmäävät; kuva antaa kaiken tarvittavan ilman vastausta.
-- Kuvien kuvaukset antavat näkemättömälle lukijalle saman datan paljastamatta vastausta.
-- Taso 2 säilyy (neljä lukua ja yksi päättely); tehtävälajit monipuolistuvat (kaksi kuvaajatehtävää).
-- Suomi: kielioppi ja yksiköt kunnossa; tilanne ensin, kysymys viimeisenä.
+- Kaava step per task: basic law, then derived formula, aligned and symbolic (L2-01, L2-02, L2-04, L3-02, L3-03, L3-05, L2-08, L2-09).
+- Decay-law and attenuation-law logarithm derivations are complete (ln 2^x = x ln 2 stated); L2-09 via log2 also correct.
+- L3-02 cancels I_0 and the common layers before substituting; the student can follow it.
+- Sijoitus/answers/tolerances not changed.
+- Hash unchanged at end.

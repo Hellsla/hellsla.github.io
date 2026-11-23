@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 81b5cf5d2daaa058
+CONTENT-HASH: 6559f6723de456c3
 
 ## Blocking
 
 ## Polish
-- solutions.md (fy8-12-L1-07, L3-02 Järkevyys): $\text{min}^{-1}$ now sits next to $\tfrac{1}{\text{s}}$ in the same sentence ("$1620\,\text{min}^{-1}$ on noin $27\,\tfrac{1}{\text{s}}$"). This is physically correct. Writing both rates the same way ($\text{s}^{-1}$) would only be more consistent. Optional.
+- exercises/solutions.md:76 (L1-05 Kaava) — "$E = hf$, josta:" is followed by $f = \tfrac{c}{\lambda}$, which does not follow from $E = hf$ alone but from the wave equation $c = \lambda f$. Fix: "$E = hf$ ja $c = \lambda f$, joten:" (the same wording as fy8-15).
+- exercises/solutions.md:470 (L3 activity task Kaava) — "$R = \ldots$, josta:" leads into $T = (\tfrac{1}{2})^{d/d_{1/2}}$, which is a separate law and is not derived from $R$. Fix: "…, ja seinän läpäisevä osuus on:" or "ja".
 
 ## Checked
-- Hash 81b5cf5d2daaa058 (`reviews.py hash fy8-12 --exercises --lang fi-easy`) at the start and the end.
-- The whole diff is covered by a script. It joined every removed line and every added line, collapsed the whitespace and swapped `\tfrac{1}{\text{min}}` for `\text{min}^{-1}` and `"1/min"` for `"min⁻¹"`. After that, the removed text and the added text are identical (7208 characters each). No word, number, sign or formula changed. The rest of the diff only cuts paragraphs and adds blank lines.
-- Unit change: $\tfrac{1}{\text{min}} \to \text{min}^{-1}$ in L1-07 (task text and unit field) and in L2-09 (unit field). The two forms are the same unit. The answers 1530 and 141,4 and the tolerances 0,02 are unchanged. The task text and the unit field now agree in L1-07.
-- I recomputed the numbers the changed lines touch: L1-07 $1215/0{,}75\,\text{min} - 90\,\text{min}^{-1} = 1530\,\text{min}^{-1}$. L3-02 $d_{1/2} = 11{,}0\,\text{mm}\cdot\ln 2/\ln(2370/600) = 5{,}55\,\text{mm}$ and $d = 34{,}99\,\text{mm} \to 35\,\text{mm}$. L2-09 $800\cdot 0{,}5^{2{,}5} = 141{,}4$. L1-05 $hc/E = 9{,}8412\cdot 10^{-8}\,\text{m}$. All four agree with answers.py and the solutions.
-- Split paragraphs (L2 Järkevyys moved to its own paragraph; the beta/gamma model answer; the RIVM a, c, d model answers; L3 d) uncertainty; Comptonin/parinmuodostus b, c): the words are in the same order and no causal step was lost. Each "koska" stays in the same paragraph as its claim.
-- L1-05: the blank lines inside the `$$ … \begin{aligned}` block are the same as in the Finnish version. In the fi-easy preview they render as one display block, so the physics shown is unchanged.
+- Hash 6559f6723de456c3 (`reviews.py hash fy8-12 --exercises --lang fi-easy`) at the start and the end.
+- The packet's diff view joins the rows of each aligned block into one line. I judged the file on disk: every new Kaava block is a separate aligned row per equation, so the joined chains such as "$f = \tfrac{c}{\lambda} E = \ldots$" are an artefact of the packet only.
+- `git diff origin/main`: only solutions.md changed, and every removed line is a `**Kaava:**` line. Givens, Muunnokset, Sijoitus, answers, answers.py and tolerances are unchanged.
+- Every new block starts from the basic law (vaimenemislaki, $E = hf$, $N_\text{netto} = N - N_\text{t}$, $R_\text{kok} = N/t$) and ends with the same solved form as before.
+- I checked each derived form numerically: $d_{1/2} = d\ln 2 / \ln\tfrac{N_0-N_\text{t}}{N-N_\text{t}}$ puts the value back into the law exactly. So do $d = d_{1/2}\ln(1:p)/\ln 2$, $d = d_{1/2}\ln\tfrac{R_0-R_\text{t}}{R_\text{t}}/\ln 2$ (with $(\tfrac12)^{d/d_{1/2}} = R_\text{t}/(R_0-R_\text{t})$) and the two-barrier product of the fractions.
+- The equal-attenuation condition $(\tfrac12)^{d_\text{b}/d_{1/2,\text{b}}} = (\tfrac12)^{d_\text{Pb}/d_{1/2,\text{Pb}}}$ gives the right equality of exponents.
+- The activity chain $A = R/(T\eta)$ keeps the stated assumption of one photon per decay.

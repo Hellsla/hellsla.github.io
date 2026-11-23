@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: eeccff04aba30fbe
+CONTENT-HASH: 7c16a8e1ffdd91f3
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md:313 (L2-10 Järkevyys): this is a language matter for the Selkeä suomi version, not physics. "suora interpolointi", "kupera" and "janan alapuolella" are hard words for an S2 reader. Possible wording: "Jos arvo luettaisiin suoraan välistä, se olisi noin $16\,\mu\text{Sv/h}$. Kuvaaja kaartuu tämän suoran alapuolelle, joten arvo on vähän pienempi."
+- exercises/solutions.md:93, 115, 177, 218, 406 — each display block opens on the same line as "**Kaava:**" ("**Kaava:** $$\begin{aligned} …"). The physics is right. Whether it renders as a display block is for the visual reviewer to look at.
 
 ## Checked
-- The hash eeccff04aba30fbe was the same at the start and the end. I judged the diff: the L2-10 Järkevyys line (the L3-06 text and the answers.py comment were already judged in round 2).
-- L2-10 Järkevyys: on the chord between (10 cm, 20) and (15 cm, 10), the value at 12 cm is $16\,\mu\text{Sv/h}$. The convex curve runs below it: $80 \cdot 0{,}5^{2{,}4} = 15{,}16\,\mu\text{Sv/h} < 16$. The reasoning is now correct, and the round-2 blocking item is fixed.
-- "lähempänä $10\,\text{cm}$:ä" is correct (2 cm against 3 cm).
-- Recomputed: L2-10 15,157 (answers.py 15,157166); L3-06 $5{,}0\,\mu\text{Sv/h}$, $t = 4{,}0\,\text{h}$. Both match answers.py.
-- The changed line matches the fi version word for word.
+- Hash 7c16a8e1ffdd91f3 (`reviews.py hash fy8-13 --exercises --lang fi-easy`) at the start and the end.
+- `git diff origin/main`: only solutions.md changed, and every removed line is a `**Kaava:**` line. Answers, answers.py, tolerances and the Sijoitus steps are unchanged.
+- Dose chain $D_\text{T} = E/m$, $H_\text{T} = w_\text{R}D_\text{T}$, $H_\text{E} = w_\text{T}H_\text{T}$ gives $w_\text{T}w_\text{R}E/m$: correct.
+- Inverse-square time $t = H/\dot H_2 = (H/\dot H_1)(r_2/r_1)^2$: correct.
+- Distance-versus-shield comparison: $H_\text{A}-H_\text{B} = (\dot H_\text{A}-\dot H_\text{B})t$ gives the earlier bracket form.
+- Radon plus gamma: $H_\text{E} = w_\text{T}w_{\text{R},\alpha}D_\text{keuhkot} + w_{\text{R},\gamma}D_\gamma$ is the same as before, now built from $H_\text{T}$ and the two parts.
+- Combined shield and distance: $t = (H/\dot H_1)(r_2/r_1)^2\,2^{d/d_{1/2}}$ is the same as $H/\dot H$. I checked this numerically. The factors commute, so applying the shield before the distance is valid.
