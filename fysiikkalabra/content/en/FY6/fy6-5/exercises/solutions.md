@@ -217,17 +217,11 @@ When a load is connected, by the current law the current of the resistor $R_1$ d
 The load decreases the resistance of the branch, the total current increases, the voltage of the resistor $R_1$ increases and by the voltage law $V_P = U - R_1 I$ decreases.
 
 The asked resistance is obtained by inverting the divider formula: first the resistance $R_\text{p}$ of the branch, from which the load.
-**Formula:** Unloaded:
+**Formula:** Unloaded: $$\begin{aligned} I &= \dfrac{U}{R_1 + R_2} \\ V_P &= R_2 I \\ V_P &= \dfrac{R_2}{R_1 + R_2}\, U \end{aligned}$$
 
-$$\begin{aligned} I &= \dfrac{U}{R_1 + R_2} \\ V_P &= R_2 I \\ V_P &= \dfrac{R_2}{R_1 + R_2}\, U \end{aligned}$$
+Loaded: $$\begin{aligned} \dfrac{1}{R_\text{p}} &= \dfrac{1}{R_2} + \dfrac{1}{R_\text{L}} \\ I &= \dfrac{U}{R_1 + R_\text{p}} \\ V_P &= R_\text{p} I \\ V_P &= \dfrac{R_\text{p}}{R_1 + R_\text{p}}\, U \end{aligned}$$
 
-Loaded:
-
-$$\begin{aligned} \dfrac{1}{R_\text{p}} &= \dfrac{1}{R_2} + \dfrac{1}{R_\text{L}} \\ I &= \dfrac{U}{R_1 + R_\text{p}} \\ V_P &= R_\text{p} I \\ V_P &= \dfrac{R_\text{p}}{R_1 + R_\text{p}}\, U \end{aligned}$$
-
-Solving:
-
-$$\begin{aligned} V_P (R_1 + R_\text{p}) &= R_\text{p} U \\ R_\text{p} &= \dfrac{R_1 V_P}{U - V_P} \\ \dfrac{1}{R_\text{L}} &= \dfrac{1}{R_\text{p}} - \dfrac{1}{R_2} \\ R_\text{L} &= \dfrac{R_\text{p} R_2}{R_2 - R_\text{p}} \end{aligned}$$
+Solving: $$\begin{aligned} V_P (R_1 + R_\text{p}) &= R_\text{p} U \\ R_\text{p} &= \dfrac{R_1 V_P}{U - V_P} \\ \dfrac{1}{R_\text{L}} &= \dfrac{1}{R_\text{p}} - \dfrac{1}{R_2} \\ R_\text{L} &= \dfrac{R_\text{p} R_2}{R_2 - R_\text{p}} \end{aligned}$$
 
 
 **Conversions:** Not needed: all quantities are in base units.

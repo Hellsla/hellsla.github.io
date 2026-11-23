@@ -13,7 +13,7 @@
 **Given:** capacitance $C = 470\,\mu\text{F}$, voltage $U = 9.0\,\text{V}$
 **Find:** the charge $Q$ in millicoulombs
 **Principle:** After charging, the voltage of the capacitor is the voltage of the battery, and the charge is the capacitance times the voltage, because the capacitance is the ratio of the charge to the voltage.
-**Formula:** $C = \dfrac{Q}{U}$, from which $Q = CU$
+**Formula:** $$\begin{aligned} C &= \dfrac{Q}{U} \\ Q &= C U \end{aligned}$$
 **Conversions:** $C = 470\,\mu\text{F} = 470 \cdot 10^{-6}\,\text{F}$
 **Substitution:** $Q = 470 \cdot 10^{-6}\,\text{F} \cdot 9.0\,\text{V} = 4.23 \cdot 10^{-3}\,\text{C} = 4.23\,\text{mC}$
 **Answer:** $4.2\,\text{mC}$, two significant figures like the voltage $9.0\,\text{V}$.
@@ -54,7 +54,7 @@
 **Given:** thickness of the paper layer $d = 0.020\,\text{mm}$, dielectric strength $E_\text{max} = 16\,\text{MV/m}$
 **Find:** the greatest voltage $U_\text{max}$ in volts
 **Principle:** Between the plates there is a uniform field $E = \tfrac{U}{d}$. A breakdown happens when the field exceeds the dielectric strength of the dielectric, so the greatest allowed voltage is obtained when the field is exactly the dielectric strength.
-**Formula:** $E_\text{max} = \dfrac{U_\text{max}}{d}$, from which $U_\text{max} = E_\text{max} d$
+**Formula:** $$\begin{aligned} E_\text{max} &= \dfrac{U_\text{max}}{d} \\ U_\text{max} &= E_\text{max} d \end{aligned}$$
 **Conversions:** $E_\text{max} = 16\,\text{MV/m} = 16 \cdot 10^{6}\,\text{V/m}$ and $d = 0.020\,\text{mm} = 0.020 \cdot 10^{-3}\,\text{m}$
 **Substitution:** $U_\text{max} = 16 \cdot 10^{6}\,\tfrac{\text{V}}{\text{m}} \cdot 0.020 \cdot 10^{-3}\,\text{m} = 3.2 \cdot 10^{2}\,\text{V}$
 **Answer:** $3.2 \cdot 10^{2}\,\text{V}$, two significant figures like the thickness and the dielectric strength.
@@ -64,7 +64,7 @@
 **Given:** area of the plate $A = 100\,\text{cm}^2$, thickness of the dielectric layer $d = 0.10\,\text{mm}$, capacitance $C = 3.3\,\text{nF}$, electric constant $\varepsilon_0 = 8.854 \cdot 10^{-12}\,\text{F/m}$
 **Find:** the relative permittivity $\varepsilon_\text{r}$ of the dielectric
 **Principle:** The capacitor is a parallel-plate capacitor, and the dielectric fills the space between the plates, so its capacitance is $\varepsilon_\text{r}$ times that in vacuum. When the capacitance and the dimensions are known, the relative permittivity can be solved.
-**Formula:** $C = \dfrac{\varepsilon_0 \varepsilon_\text{r} A}{d}$, from which $\varepsilon_\text{r} = \dfrac{C d}{\varepsilon_0 A}$
+**Formula:** $$\begin{aligned} C &= \dfrac{\varepsilon_0 \varepsilon_\text{r} A}{d} \\ \varepsilon_\text{r} &= \dfrac{C d}{\varepsilon_0 A} \end{aligned}$$
 **Conversions:** $A = 100\,\text{cm}^2 = 100 \cdot (0.01\,\text{m})^2 = 10^{-2}\,\text{m}^2$, $d = 0.10\,\text{mm} = 0.10 \cdot 10^{-3}\,\text{m} = 10^{-4}\,\text{m}$ and $C = 3.3\,\text{nF} = 3.3 \cdot 10^{-9}\,\text{F}$
 **Substitution:** $\varepsilon_\text{r} = \dfrac{3.3 \cdot 10^{-9}\,\text{F} \cdot 10^{-4}\,\text{m}}{8.854 \cdot 10^{-12}\,\text{F/m} \cdot 10^{-2}\,\text{m}^2} \approx 3.73$
 **Answer:** $3.7$, two significant figures like the capacitance and the thickness. The relative permittivity is a ratio that has no unit.
@@ -74,7 +74,7 @@
 **Given:** energy $W = 200\,\text{J}$, voltage $U = 2.0\,\text{kV}$
 **Find:** the capacitance $C$ in microfarads
 **Principle:** The energy of a capacitor depends on the capacitance and the voltage, $W = \tfrac{1}{2} C U^2$. When the energy and the voltage are known, the capacitance is solved from this equation.
-**Formula:** $W = \tfrac{1}{2} C U^2$, from which $C = \dfrac{2W}{U^2}$
+**Formula:** $$\begin{aligned} W &= \tfrac{1}{2} Q U \\ Q &= C U \\ W &= \tfrac{1}{2} C U^2 \\ C &= \dfrac{2W}{U^2} \end{aligned}$$
 **Conversions:** $U = 2.0\,\text{kV} = 2.0 \cdot 1000\,\text{V} = 2000\,\text{V}$
 **Substitution:** $C = \dfrac{2 \cdot 200\,\text{J}}{(2000\,\text{V})^2} = \dfrac{400\,\text{J}}{4.0 \cdot 10^{6}\,\text{V}^2} = 1.0 \cdot 10^{-4}\,\text{F} = 100\,\mu\text{F}$
 **Answer:** $1.0 \cdot 10^{2}\,\mu\text{F}$, that is, $100\,\mu\text{F}$, two significant figures like the voltage $2.0\,\text{kV}$.
@@ -84,7 +84,7 @@
 **Given:** capacitance $C = 10\,\text{F}$, voltage $U = 2.7\,\text{V}$, power of the lamp $P = 0.50\,\text{W}$
 **Find:** the time the lamp stays lit $t$ in seconds
 **Principle:** The whole energy $\tfrac{1}{2} C U^2$ of the capacitor is assumed to be available to the lamp. Power is energy per unit of time, and the power is assumed constant, so the time is the energy divided by the power.
-**Formula:** $W = \tfrac{1}{2} C U^2$ and $P = \dfrac{W}{t}$, from which $t = \dfrac{C U^2}{2P}$
+**Formula:** $$\begin{aligned} W &= \tfrac{1}{2} Q U \\ Q &= C U \\ W &= \tfrac{1}{2} C U^2 \\ P &= \dfrac{W}{t} \\ t &= \dfrac{W}{P} = \dfrac{C U^2}{2P} \end{aligned}$$
 **Conversions:** Not needed: all the quantities are in base units, and $\tfrac{\text{J}}{\text{W}} = \text{s}$.
 **Substitution:** $t = \dfrac{10\,\text{F} \cdot (2.7\,\text{V})^2}{2 \cdot 0.50\,\text{W}} = \dfrac{72.9\,\text{J}}{1.0\,\text{W}} = 72.9\,\text{s}$
 **Answer:** $73\,\text{s}$, two significant figures like the capacitance and the power.
@@ -96,7 +96,7 @@
 **Principle:** The charge of a disconnected capacitor cannot change, because the charge has no path from one plate to the other. The capacitance of a parallel-plate capacitor is inversely proportional to the distance of the plates, so it halves, and the voltage $U = \tfrac{Q}{C}$ doubles.
 
 The increase in energy is the work done in pulling the plates apart.
-**Formula:** $Q = C_1 U_1$, $C_2 = \tfrac{1}{2} C_1$, $U_2 = \dfrac{Q}{C_2}$ and $\Delta W = \tfrac{1}{2} Q U_2 - \tfrac{1}{2} Q U_1$, from which $\Delta W = \tfrac{1}{2} Q (U_2 - U_1)$
+**Formula:** $$\begin{aligned} Q &= C_1 U_1 \\ C_2 &= \tfrac{1}{2} C_1 \\ U_2 &= \dfrac{Q}{C_2} \\ W &= \tfrac{1}{2} Q U \\ \Delta W &= \tfrac{1}{2} Q U_2 - \tfrac{1}{2} Q U_1 \\ &= \tfrac{1}{2} Q (U_2 - U_1) \end{aligned}$$
 **Conversions:** $C_1 = 120\,\text{pF} = 120 \cdot 10^{-12}\,\text{F}$
 **Substitution:** $Q = 120 \cdot 10^{-12}\,\text{F} \cdot 500\,\text{V} = 60 \cdot 10^{-9}\,\text{C}$, $U_2 = \dfrac{60 \cdot 10^{-9}\,\text{C}}{60 \cdot 10^{-12}\,\text{F}} = 1000\,\text{V}$ and $\Delta W = \tfrac{1}{2} \cdot 60 \cdot 10^{-9}\,\text{C} \cdot 500\,\text{V} = 15.0 \cdot 10^{-6}\,\text{J}$
 **Answer:** $15.0\,\mu\text{J}$, three significant figures like the capacitance $120\,\text{pF}$ and the voltage $500\,\text{V}$.
@@ -106,7 +106,7 @@ The increase in energy is the work done in pulling the plates apart.
 **Given:** capacitance with air $C_1 = 220\,\text{pF}$, voltage $U = 1.5\,\text{kV}$, $\varepsilon_\text{r} = 5.6$ for glass, the source stays connected
 **Find:** the additional charge $\Delta Q$ that moves from the source to the capacitor in microcoulombs
 **Principle:** The source keeps the voltage the same all the time. The dielectric makes the capacitance $\varepsilon_\text{r}$ times as large, so at the same voltage the plates have $\varepsilon_\text{r}$ times the charge, and the source brings the difference.
-**Formula:** $Q_1 = C_1 U$ and $Q_2 = \varepsilon_\text{r} C_1 U$, from which $\Delta Q = Q_2 - Q_1 = (\varepsilon_\text{r} - 1) C_1 U$
+**Formula:** $$\begin{aligned} Q &= C U \\ Q_1 &= C_1 U \\ C_2 &= \varepsilon_\text{r} C_1 \\ Q_2 &= C_2 U = \varepsilon_\text{r} C_1 U \\ \Delta Q &= Q_2 - Q_1 = (\varepsilon_\text{r} - 1) C_1 U \end{aligned}$$
 **Conversions:** $C_1 = 220\,\text{pF} = 220 \cdot 10^{-12}\,\text{F}$ and $U = 1.5\,\text{kV} = 1.5 \cdot 1000\,\text{V} = 1500\,\text{V}$
 **Substitution:** $$\begin{aligned} \Delta Q &= (5.6 - 1) \cdot 220 \cdot 10^{-12}\,\text{F} \\ &\cdot 1500\,\text{V} \\ &= 1.518 \cdot 10^{-6}\,\text{C} \end{aligned}$$
 **Answer:** $1.5\,\mu\text{C}$, two significant figures like the voltage $1.5\,\text{kV}$ and the relative permittivity $5.6$.
@@ -118,7 +118,7 @@ The increase in energy is the work done in pulling the plates apart.
 **Principle:** The field between the plates is $E = \tfrac{U}{d}$. The field may be at most half of the dielectric strength, so the dielectric must be at least thick enough that the field does not exceed this limit.
 
 When the thickness is known, the area that gives the desired capacitance is solved from the formula of a parallel-plate capacitor.
-**Formula:** $\tfrac{1}{2} E_\text{max} = \dfrac{U}{d}$, from which $d = \dfrac{2U}{E_\text{max}}$, and $C = \dfrac{\varepsilon_0 \varepsilon_\text{r} A}{d}$, from which $A = \dfrac{C d}{\varepsilon_0 \varepsilon_\text{r}}$
+**Formula:** $$\begin{aligned} \tfrac{1}{2} E_\text{max} &= \dfrac{U}{d} \\ d &= \dfrac{2U}{E_\text{max}} \\ C &= \dfrac{\varepsilon_0 \varepsilon_\text{r} A}{d} \\ A &= \dfrac{C d}{\varepsilon_0 \varepsilon_\text{r}} \end{aligned}$$
 **Conversions:** $U = 6.0\,\text{kV} = 6000\,\text{V}$, $E_\text{max} = 24 \cdot 10^{6}\,\text{V/m}$, $C = 1.0 \cdot 10^{-9}\,\text{F}$ and finally $1\,\text{m}^2 = 100\,\text{cm} \cdot 100\,\text{cm} = 10\,000\,\text{cm}^2$
 **Substitution:** $d = \dfrac{2 \cdot 6000\,\text{V}}{24 \cdot 10^{6}\,\text{V/m}} = 5.0 \cdot 10^{-4}\,\text{m}$ and $A = \dfrac{1.0 \cdot 10^{-9}\,\text{F} \cdot 5.0 \cdot 10^{-4}\,\text{m}}{8.854 \cdot 10^{-12}\,\text{F/m} \cdot 2.6} \approx 0.0217\,\text{m}^2 = 217\,\text{cm}^2$
 **Answer:** $220\,\text{cm}^2$, that is, $2.2 \cdot 10^{2}\,\text{cm}^2$, two significant figures like the capacitance and the voltage.
@@ -144,7 +144,7 @@ The energy $W = \tfrac{1}{2} Q U$ decreases too.
 **Given:** capacitance $C = 1000\,\mu\text{F}$, voltages $U_1 = 6.0\,\text{V}$ and $U_2 = 18\,\text{V}$
 **Find:** the increase in energy $\Delta W$ in millijoules
 **Principle:** The energy of a capacitor is $\tfrac{1}{2} C U^2$ and depends on the square of the voltage. The capacitance does not change, so the increase in energy is the difference between the final and the initial energy.
-**Formula:** $W = \tfrac{1}{2} C U^2$ and $\Delta W = W_2 - W_1 = \tfrac{1}{2} C (U_2^2 - U_1^2)$
+**Formula:** $$\begin{aligned} W &= \tfrac{1}{2} Q U \\ Q &= C U \\ W &= \tfrac{1}{2} C U^2 \\ \Delta W &= W_2 - W_1 = \tfrac{1}{2} C (U_2^2 - U_1^2) \end{aligned}$$
 **Conversions:** $C = 1000\,\mu\text{F} = 1000 \cdot 10^{-6}\,\text{F} = 1.0 \cdot 10^{-3}\,\text{F}$
 **Substitution:** $W_1 = \tfrac{1}{2} \cdot 1.0 \cdot 10^{-3}\,\text{F} \cdot (6.0\,\text{V})^2 = 0.018\,\text{J}$, $W_2 = \tfrac{1}{2} \cdot 1.0 \cdot 10^{-3}\,\text{F} \cdot (18\,\text{V})^2 = 0.162\,\text{J}$ and $\Delta W = 0.162\,\text{J} - 0.018\,\text{J} = 0.144\,\text{J} = 144\,\text{mJ}$
 **Answer:** $1.4 \cdot 10^{2}\,\text{mJ}$, or $0.14\,\text{J}$ (calculated $144\,\text{mJ}$), two significant figures like the voltages $6.0\,\text{V}$ and $18\,\text{V}$.
@@ -190,7 +190,7 @@ The same energy is the area $\tfrac{1}{2} Q U$ of the triangle between the line 
 **Reading the graph:** The points lie on a rising straight line with points on both sides of it, and the line passes through the origin.
 
 The slope is read from two points of the fitted line that are far apart, the origin and the point $(12\,\text{V};\ 566\,\mu\text{C})$: $\tfrac{566\,\mu\text{C}}{12\,\text{V}} \approx 47.2\,\tfrac{\mu\text{C}}{\text{V}}$, so the capacitance is about $47.2\,\mu\text{F}$.
-**Formula:** $C = \dfrac{Q}{U}$ (the slope of the line) and $W = \tfrac{1}{2} C U^2$
+**Formula:** $$\begin{aligned} C &= \dfrac{Q}{U} \\ W &= \tfrac{1}{2} Q U \\ Q &= C U \\ W &= \tfrac{1}{2} C U^2 \end{aligned}$$
 **Conversions:** $C = 47.2\,\tfrac{\mu\text{C}}{\text{V}} = 47.2\,\mu\text{F} = 47.2 \cdot 10^{-6}\,\text{F}$
 **Substitution:** $W = \tfrac{1}{2} \cdot 47.2 \cdot 10^{-6}\,\text{F} \cdot (12\,\text{V})^2 = 3.40 \cdot 10^{-3}\,\text{J} = 3.40\,\text{mJ}$
 **Answer:** $3.4\,\text{mJ}$, two significant figures like the voltage and the slope. Fitting by eye varies, so about $3.3\text{–}3.5\,\text{mJ}$ is a good answer.
@@ -232,7 +232,7 @@ The other half, about $63\,\text{mJ}$, becomes internal energy of the wires and 
 
 When the capacitance is known, the energy released in the shock is the energy of the capacitor $\tfrac{1}{2} C U^2$, and the average power is obtained by dividing it by the discharge time.
 **Reading the graph:** The points lie on a straight line through the origin, and the voltage grows by about $100\,\text{V}$ per second. The slope is read from two points of the fitted line that are far apart, the origin and the point $(12\,\text{s};\ 1200\,\text{V})$: $\tfrac{1200\,\text{V}}{12\,\text{s}} = 100\,\tfrac{\text{V}}{\text{s}}$.
-**Formula:** $\dfrac{I}{C} = k$, from which $C = \dfrac{I}{k}$, and $W = \tfrac{1}{2} C U^2$ and $P = \dfrac{W}{t}$
+**Formula:** $$\begin{aligned} Q &= I t \\ Q &= C U \\ U &= \dfrac{I}{C}\,t = k t \\ C &= \dfrac{I}{k} \\ W &= \tfrac{1}{2} Q U \\ Q &= C U \\ W &= \tfrac{1}{2} C U^2 \\ P &= \dfrac{W}{t} \end{aligned}$$
 **Conversions:** $I = 15\,\text{mA} = 15 \cdot 10^{-3}\,\text{A}$, $U = 1.8\,\text{kV} = 1800\,\text{V}$ and $t = 5.0\,\text{ms} = 5.0 \cdot 10^{-3}\,\text{s}$
 **Substitution:** $C = \dfrac{15 \cdot 10^{-3}\,\text{A}}{100\,\text{V/s}} = 1.5 \cdot 10^{-4}\,\text{F} = 150\,\mu\text{F}$, $W = \tfrac{1}{2} \cdot 1.5 \cdot 10^{-4}\,\text{F} \cdot (1800\,\text{V})^2 = 243\,\text{J}$ and $P = \dfrac{243\,\text{J}}{5.0 \cdot 10^{-3}\,\text{s}} = 4.86 \cdot 10^{4}\,\text{W}$
 **Answer:** $48.6\,\text{kW}$, that is, about $49\,\text{kW}$, two significant figures like the discharge time.
@@ -247,7 +247,7 @@ Touching the terminals would let a current pass through the body, and the discha
 **Principle:** The allowed field is $\tfrac{1}{2} E_\text{max}$, so the greatest voltage is $U = \tfrac{1}{2} E_\text{max} d$. The capacitance of a parallel-plate capacitor is obtained from the formula $C = \tfrac{\varepsilon_0 \varepsilon_\text{r} A}{d}$, and the energy is $W = \tfrac{1}{2} C U^2$.
 
 The ratio of the energies shows which dielectric stores more energy in the same volume.
-**Formula:** $U = \tfrac{1}{2} E_\text{max} d$, $C = \dfrac{\varepsilon_0 \varepsilon_\text{r} A}{d}$ and $W = \tfrac{1}{2} C U^2$
+**Formula:** $$\begin{aligned} U &= \tfrac{1}{2} E_\text{max} d \\ C &= \dfrac{\varepsilon_0 \varepsilon_\text{r} A}{d} \\ W &= \tfrac{1}{2} Q U \\ Q &= C U \\ W &= \tfrac{1}{2} C U^2 \end{aligned}$$
 **Conversions:** $A = 100\,\text{cm}^2 = 1.0 \cdot 10^{-2}\,\text{m}^2$, $d = 0.050\,\text{mm} = 5.0 \cdot 10^{-5}\,\text{m}$, $60\,\text{MV/m} = 60 \cdot 10^{6}\,\text{V/m}$ and $14\,\text{MV/m} = 14 \cdot 10^{6}\,\text{V/m}$
 **Substitution:** Teflon: $U = \tfrac{1}{2} \cdot 60 \cdot 10^{6}\,\tfrac{\text{V}}{\text{m}} \cdot 5.0 \cdot 10^{-5}\,\text{m} = 1500\,\text{V}$, $\varepsilon_0 \varepsilon_\text{r} A = 1.86 \cdot 10^{-13}\,\text{F} \cdot \text{m}$, from which $C = \dfrac{1.86 \cdot 10^{-13}\,\text{F} \cdot \text{m}}{5.0 \cdot 10^{-5}\,\text{m}} = 3.72\,\text{nF}$ and $W = \tfrac{1}{2} \cdot 3.72 \cdot 10^{-9}\,\text{F} \cdot (1500\,\text{V})^2 = 4.18\,\text{mJ}$.
 
@@ -275,7 +275,7 @@ The ratio is $\tfrac{18.4}{2.7} \approx 6.9$: Teflon withstands a much greater v
 **Asked:** the stored energy $W$ in microjoules
 **Principle:** The capacitance is the ratio of charge to voltage, which is constant, so the $(Q, U)$ graph is a straight line through the origin. The capacitance can therefore be found from any point on the line. The energy is calculated from the capacitance and the voltage.
 **Reading the graph:** The end point of the line is at the gridlines $Q = 120\,\mu\text{C}$ and $U = 8\,\text{V}$. The capacitance is calculated from this point, and the voltage $7.0\,\text{V}$ is given in the task.
-**Formula:** $C = \dfrac{Q}{U}$ and $W = \tfrac{1}{2} C U^2$
+**Formula:** $$\begin{aligned} C &= \dfrac{Q}{U} \\ W &= \tfrac{1}{2} Q U \\ Q &= C U \\ W &= \tfrac{1}{2} C U^2 \end{aligned}$$
 **Conversions:** $Q = 120\,\mu\text{C} = 120 \cdot 10^{-6}\,\text{C}$ and finally $1\,\mu\text{J} = 10^{-6}\,\text{J}$
 **Substitution:** $C = \dfrac{120 \cdot 10^{-6}\,\text{C}}{8\,\text{V}} = 15 \cdot 10^{-6}\,\text{F}$ and $W = \tfrac{1}{2} \cdot 15 \cdot 10^{-6}\,\text{F} \cdot (7.0\,\text{V})^2 = 3.675 \cdot 10^{-4}\,\text{J} = 367.5\,\mu\text{J}$
 **Answer:** $W \approx 3.7 \cdot 10^{2}\,\mu\text{J}$, two significant figures like the voltage $7.0\,\text{V}$.
@@ -300,7 +300,7 @@ What follows is an example calculation, not a reading from the simulation: an ai
 Then $$\begin{aligned} C &= \dfrac{\varepsilon_0 A}{d} \\ &= \dfrac{8.854 \cdot 10^{-12}\,\tfrac{\text{F}}{\text{m}} \cdot 2.0 \cdot 10^{-4}\,\text{m}^2}{4.0 \cdot 10^{-3}\,\text{m}} \\ &\approx 0.44\,\text{pF} \end{aligned}$$. With a separation of $8.0\,\text{mm}$ the same calculation gives $0.22\,\text{pF}$, half of that.
 
 At a voltage of $1.5\,\text{V}$ the charge of the first capacitor is $$\begin{aligned} Q &= CU \\ &= 0.44\,\text{pF} \cdot 1.5\,\text{V} \\ &\approx 0.66\,\text{pC} \end{aligned}$$.
-**Formula:** Part b): $W = \tfrac{1}{2} Q U$ and $Q = CU$, so $W = \tfrac{1}{2} C U^2$
+**Formula:** Part b): $$\begin{aligned} W &= \tfrac{1}{2} Q U \\ Q &= C U \\ W &= \tfrac{1}{2} C U^2 \end{aligned}$$
 **Conversions:** $C = 1000\,\mu\text{F} = 1000 \cdot 10^{-6}\,\text{F}$, at the end $1\,\text{mJ} = 10^{-3}\,\text{J}$, and in the comparison of part d) $1\,\text{Wh} = 3600\,\text{J}$
 **Substitution:** $W = \tfrac{1}{2} \cdot 1000 \cdot 10^{-6}\,\text{F} \cdot (12\,\text{V})^2 = 0.072\,\text{J} = 72\,\text{mJ}$
 **Part c):** When the voltage is $2U$ and the capacitance is the same, the energy is $$\begin{aligned} W_2 &= \tfrac{1}{2} C (2U)^2 \\ &= 4 \cdot \tfrac{1}{2} C U^2 \\ &= 4W \end{aligned}$$.

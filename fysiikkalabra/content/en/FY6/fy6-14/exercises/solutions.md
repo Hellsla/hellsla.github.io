@@ -12,7 +12,7 @@
 **Given:** voltage of the source $U = 5.0\,\text{V}$, voltage of the LED $U_\text{D} = 3.1\,\text{V}$, current $I = 20\,\text{mA}$
 **Find:** the resistance $R$ of the series resistor in ohms
 **Principle:** The source, the resistor and the LED are in series, so the same current flows through all of them. By Kirchhoff's voltage law the voltage of the source is shared: $U = U_R + U_\text{D}$. The resistor obeys Ohm's law, $U_R = RI$.
-**Formula:** $U = RI + U_\text{D}$, from which $R = \dfrac{U - U_\text{D}}{I}$
+**Formula:** $$\begin{aligned} U &= U_R + U_\text{D} \\ U_R &= RI \\ U &= RI + U_\text{D} \\ R &= \dfrac{U - U_\text{D}}{I} \end{aligned}$$
 **Conversions:** $I = 20\,\text{mA} = 20 \cdot 10^{-3}\,\text{A} = 0.020\,\text{A}$
 **Substitution:** $R = \dfrac{5.0\,\text{V} - 3.1\,\text{V}}{0.020\,\text{A}} = \dfrac{1.9\,\text{V}}{0.020\,\text{A}} = 95\,\Omega$
 **Answer:** $95\,\Omega$, two significant figures like the difference of the voltages $1.9\,\text{V}$ and the current.
@@ -22,7 +22,7 @@
 **Given:** voltage of the battery $U = 9.0\,\text{V}$, resistor $R = 1.0\,\text{k}\Omega$, voltage of the diode $U_\text{D} = 0.70\,\text{V}$, diode in the forward direction
 **Find:** the current $I$ in milliamperes
 **Principle:** The diode is in the forward direction, so current flows, and the voltage of the diode is the $0.70\,\text{V}$ given in the task. The battery, the resistor and the diode are in series: the voltage of the battery is shared between the resistor and the diode, and the voltage of the resistor is $U_R = RI$.
-**Formula:** $U = RI + U_\text{D}$, from which $I = \dfrac{U - U_\text{D}}{R}$
+**Formula:** $$\begin{aligned} U &= U_R + U_\text{D} \\ U_R &= RI \\ U &= RI + U_\text{D} \\ I &= \dfrac{U - U_\text{D}}{R} \end{aligned}$$
 **Conversions:** $R = 1.0\,\text{k}\Omega = 1.0 \cdot 1000\,\Omega = 1000\,\Omega$
 **Substitution:** $I = \dfrac{9.0\,\text{V} - 0.70\,\text{V}}{1000\,\Omega} = \dfrac{8.3\,\text{V}}{1000\,\Omega} = 0.0083\,\text{A} = 8.3\,\text{mA}$
 **Answer:** $8.3\,\text{mA}$, two significant figures like the voltage $9.0\,\text{V}$ and the resistance $1.0\,\text{k}\Omega$.
@@ -53,7 +53,7 @@
 **Given:** voltage of the battery $U = 9.0\,\text{V}$, series resistor $R = 470\,\Omega$, LED in the reverse direction; assumption: no current flows in the reverse direction
 **Find:** the voltage $U_\text{D}$ of the LED in volts
 **Principle:** In the reverse direction practically no current flows through the diode. Since the LED and the resistor are in series, the current of the resistor is also zero, so by Ohm's law the voltage of the resistor is zero. By Kirchhoff's voltage law the whole voltage of the battery is then across the LED.
-**Formula:** $U = U_R + U_\text{D}$ and $U_R = RI$, so with the current $I = 0$ we get $U_\text{D} = U - RI = U$
+**Formula:** $$\begin{aligned} U &= U_R + U_\text{D} \\ U_R &= RI \\ I &= 0 \\ U_\text{D} &= U - RI = U \end{aligned}$$
 **Conversions:** None needed: the current is zero, so the value of the resistor does not need converting.
 **Substitution:** $U_\text{D} = 9.0\,\text{V} - 470\,\Omega \cdot 0\,\text{A} = 9.0\,\text{V}$
 **Answer:** $9.0\,\text{V}$, two significant figures like the voltage of the battery.
@@ -63,7 +63,7 @@
 **Given:** voltage of the battery $U = 9.0\,\text{V}$, two LEDs in series, the voltage of each $U_\text{D} = 2.0\,\text{V}$, current $I = 20\,\text{mA}$
 **Find:** the resistance $R$ of the series resistor in ohms
 **Principle:** All the components are in series, so the same current flows through them. The voltage of the battery is shared between the resistor and both LEDs: $U = U_R + 2U_\text{D}$. The voltage of the resistor is $U_R = RI$.
-**Formula:** $U = RI + 2U_\text{D}$, from which $R = \dfrac{U - 2U_\text{D}}{I}$
+**Formula:** $$\begin{aligned} U &= U_R + 2U_\text{D} \\ U_R &= RI \\ U &= RI + 2U_\text{D} \\ R &= \dfrac{U - 2U_\text{D}}{I} \end{aligned}$$
 **Conversions:** $I = 20\,\text{mA} = 0.020\,\text{A}$
 **Substitution:** $R = \dfrac{9.0\,\text{V} - 2 \cdot 2.0\,\text{V}}{0.020\,\text{A}} = \dfrac{5.0\,\text{V}}{0.020\,\text{A}} = 250\,\Omega$
 **Answer:** $250\,\Omega$, two significant figures like the voltages and the current.
@@ -73,7 +73,7 @@
 **Given:** area $A = 1.6\,\text{m}^2$, irradiance $G = 800\,\text{W/m}^2$, electric power $P = 260\,\text{W}$
 **Find:** the efficiency $\eta$ as a percentage
 **Principle:** Efficiency is the useful power divided by the power taken in. The panel receives the power of the light, which is the irradiance times the area, and the useful power is the electric power given by the panel.
-**Formula:** $\eta = \dfrac{P}{GA}$
+**Formula:** $$\begin{aligned} \eta &= \dfrac{P_\text{useful}}{P_\text{in}} \\ P_\text{in} &= GA \\ P_\text{useful} &= P \\ \eta &= \dfrac{P}{GA} \end{aligned}$$
 **Conversions:** None needed: $\tfrac{\text{W}}{\text{m}^2} \cdot \text{m}^2 = \text{W}$. Finally the ratio is changed to a percentage by multiplying by a hundred.
 **Substitution:** $\eta = \dfrac{260\,\text{W}}{800\,\tfrac{\text{W}}{\text{m}^2} \cdot 1.6\,\text{m}^2} = \dfrac{260\,\text{W}}{1280\,\text{W}} = 0.203 = 20.3\,\%$
 **Answer:** $20\,\%$, two significant figures like the area $1.6\,\text{m}^2$.
@@ -95,7 +95,7 @@
 **Principle:** By assumption the voltage of the LED stays the same, so the whole change in voltage falls on the resistor. The current is obtained from Kirchhoff's voltage law and Ohm's law.
 
 The voltage of the resistor decreases proportionally more than the voltage of the batteries, because the constant voltage of the LED has been subtracted from it.
-**Formula:** $I = \dfrac{U - U_\text{D}}{R}$, so $I_1 = \dfrac{U_1 - U_\text{D}}{R}$, $I_2 = \dfrac{U_2 - U_\text{D}}{R}$ and the relative change is $\dfrac{I_1 - I_2}{I_1}$
+**Formula:** $$\begin{aligned} U &= U_R + U_\text{D} \\ U_R &= RI \\ I &= \dfrac{U - U_\text{D}}{R} \\ I_1 &= \dfrac{U_1 - U_\text{D}}{R} \\ I_2 &= \dfrac{U_2 - U_\text{D}}{R} \\ \text{change} &= \dfrac{I_1 - I_2}{I_1} \end{aligned}$$
 **Conversions:** None needed: the currents are divided by each other, so the unit cancels. The ratio is changed to a percentage by multiplying by a hundred.
 **Substitution:** $I_1 = \dfrac{4.5\,\text{V} - 2.0\,\text{V}}{120\,\Omega} = 0.02083\,\text{A}$, $I_2 = \dfrac{3.6\,\text{V} - 2.0\,\text{V}}{120\,\Omega} = 0.01333\,\text{A}$ and $\dfrac{I_1 - I_2}{I_1} = \dfrac{0.00750\,\text{A}}{0.02083\,\text{A}} = 0.36$
 **Answer:** $36\,\%$, two significant figures like the voltages.
@@ -107,7 +107,7 @@ The voltage of the resistor decreases proportionally more than the voltage of th
 **Principle:** The power of the panel is $P = UI$. It is zero in a short circuit and at open circuit, so the greatest power is between them, at the maximum power point.
 
 We calculate the power of each measurement and choose the greatest, and the load resistance is obtained from Ohm's law $U = RI$ for the load, because the voltage of the load is the voltage of the panel and its current is the current of the panel.
-**Formula:** $P = UI$, and at the maximum power point $U = RI$, from which $R = \dfrac{U}{I}$
+**Formula:** $$\begin{aligned} P &= UI \\ U &= RI \\ R &= \dfrac{U}{I} \end{aligned}$$
 **Conversions:** None needed: the voltages are in volts and the currents in amperes.
 **Substitution:** The powers are $0\,\text{W}$, $32.5\,\text{W}$, $44.5\,\text{W}$, $48.8\,\text{W}$, $49.3\,\text{W}$, $45.9\,\text{W}$, $36.1\,\text{W}$, $19.0\,\text{W}$ and $0\,\text{W}$. The greatest is $17.0\,\text{V} \cdot 2.90\,\text{A} = 49.3\,\text{W}$, so $R = \dfrac{17.0\,\text{V}}{2.90\,\text{A}} = 5.86\,\Omega$
 **Answer:** $5.9\,\Omega$, two significant figures, because the greatest power and the neighbouring $48.8\,\text{W}$ are so close to each other that the true maximum power point may lie between the measurements.
@@ -121,7 +121,7 @@ We calculate the power of each measurement and choose the greatest, and the load
 In a group the LEDs and the resistor are in series, so the same current flows through all of them, and the voltage is shared: $U = U_R + 3U_\text{D}$.
 
 The power of the resistor is $U_R I$ and the power of the whole group $UI$.
-**Formula:** $U_R = U - 3U_\text{D}$ and the share is $\dfrac{U_R I}{UI}$, so the share is $\dfrac{U - 3U_\text{D}}{U}$
+**Formula:** $$\begin{aligned} U &= U_R + 3U_\text{D} \\ P_R &= U_R I \\ P &= UI \\ \text{osuus} &= \dfrac{P_R}{P} = \dfrac{U_R I}{UI} \\ &= \dfrac{U - 3U_\text{D}}{U} \end{aligned}$$
 **Conversions:** None needed: the current cancels, and the ratio of the voltages is a ratio. Finally we multiply by a hundred.
 **Substitution:** $\dfrac{12\,\text{V} - 3 \cdot 3.0\,\text{V}}{12\,\text{V}} = \dfrac{3.0\,\text{V}}{12\,\text{V}} = 0.25 = 25\,\%$
 **Answer:** $25\,\%$, two significant figures like the voltage of the LED $3.0\,\text{V}$.
@@ -153,7 +153,7 @@ The resistor takes the extra voltage of the battery for itself and keeps the cur
 **Given:** area $A = 12\,\text{cm}^2$, irradiance $G = 1000\,\text{W/m}^2$, voltage $U = 2.0\,\text{V}$, current $I = 100\,\text{mA}$
 **Find:** the efficiency $\eta$ as a percentage
 **Principle:** The efficiency is the electric power of the cell divided by the power of the light falling on the cell. The electric power is the voltage times the current, and the power of the light is the irradiance times the area.
-**Formula:** $P = UI$ and $\eta = \dfrac{P}{GA}$
+**Formula:** $$\begin{aligned} P &= UI \\ P_\text{in} &= GA \\ \eta &= \dfrac{P}{P_\text{in}} \\ &= \dfrac{P}{GA} \end{aligned}$$
 **Conversions:** $A = 12\,\text{cm}^2 = 12 \cdot 10^{-4}\,\text{m}^2 = 0.0012\,\text{m}^2$ and $I = 100\,\text{mA} = 0.100\,\text{A}$
 **Substitution:** $P = 2.0\,\text{V} \cdot 0.100\,\text{A} = 0.20\,\text{W}$ and $\eta = \dfrac{0.20\,\text{W}}{1000\,\tfrac{\text{W}}{\text{m}^2} \cdot 0.0012\,\text{m}^2} = \dfrac{0.20\,\text{W}}{1.2\,\text{W}} = 0.167 = 16.7\,\%$
 **Answer:** $17\,\%$, two significant figures like the voltage and the area.
@@ -167,7 +167,7 @@ The resistor takes the extra voltage of the battery for itself and keeps the cur
 Since the current is the same for all, by Ohm's law $R = U_R : I$ the greatest voltage of the resistor gives the greatest resistance.
 
 The largest series resistor is therefore needed for the LED with the smallest voltage, that is, the red LED.
-**Formula:** $R = \dfrac{U - U_\text{D}}{I}$
+**Formula:** $$\begin{aligned} U &= U_R + U_\text{D} \\ U_R &= RI \\ R &= \dfrac{U - U_\text{D}}{I} \end{aligned}$$
 **Conversions:** $I = 15\,\text{mA} = 0.015\,\text{A}$
 **Substitution:** For the red LED $R = \dfrac{5.0\,\text{V} - 1.90\,\text{V}}{0.015\,\text{A}} = \dfrac{3.1\,\text{V}}{0.015\,\text{A}} = 207\,\Omega$
 **Answer:** $2.1 \cdot 10^{2}\,\Omega$ (the series resistor of the red LED), two significant figures like the current.
@@ -191,7 +191,7 @@ The largest series resistor is therefore needed for the LED with the smallest vo
 Ohm's law $R = U_R : I$ concerns the voltage of the resistor itself, not the whole voltage of the battery. The student used the whole voltage of the battery as the voltage of the resistor and forgot the voltage of the LED.
 
 The error makes the resistor too large, so the current would be smaller than desired.
-**Formula:** $R = \dfrac{U - U_\text{D}}{I}$
+**Formula:** $$\begin{aligned} U &= U_R + U_\text{D} \\ U_R &= RI \\ R &= \dfrac{U - U_\text{D}}{I} \end{aligned}$$
 **Conversions:** $I = 15\,\text{mA} = 0.015\,\text{A}$
 **Substitution:** $R = \dfrac{9.0\,\text{V} - 3.2\,\text{V}}{0.015\,\text{A}} = \dfrac{5.8\,\text{V}}{0.015\,\text{A}} = 387\,\Omega$
 **Answer:** $3.9 \cdot 10^{2}\,\Omega$, two significant figures like the voltages and the current.
@@ -222,7 +222,7 @@ The need for a series resistor is a true fact, but it does not tell the directio
 **Principle:** The efficiency is the electrical energy divided by the radiation energy falling on the panels. The radiation energy is the radiation energy per square metre times the area, $H A$, so the electrical energy produced is $E = \eta H A$.
 
 The annual production is obtained by adding up the radiation energies of the months, and the degree of self-sufficiency is the ratio of the annual production to the annual consumption.
-**Formula:** $E = \eta A \sum H$ and degree of self-sufficiency $= \dfrac{E}{\sum E_\text{kul}}$
+**Formula:** $$\begin{aligned} \eta &= \dfrac{E}{HA} \\ E &= \eta H A \\ E_\text{year} &= \eta A \sum H \\ \text{self-sufficiency} &= \dfrac{E_\text{year}}{\sum E_\text{kul}} \end{aligned}$$
 **Conversions:** $\eta = 19\,\% = 0.19$. No others: the energies are in kilowatt-hours.
 **Substitution:** a) The sum of the radiation energies is $\sum H = 1027\,\text{kWh/m}^2$, so $E = 0.19 \cdot 24\,\text{m}^2 \cdot 1027\,\tfrac{\text{kWh}}{\text{m}^2} = 4683\,\text{kWh}$.
 
@@ -245,7 +245,7 @@ The operating point is the voltage at which these two currents are equal: the in
 **Reading the graph:** a) The steep straight part of the characteristic curve lies between the last two points of the table: the current grows from $20\,\text{mA}$ to $41\,\text{mA}$ when the voltage grows from $2.05\,\text{V}$ to $2.10\,\text{V}$, so the slope of the line is $\dfrac{41\,\text{mA} - 20\,\text{mA}}{2.10\,\text{V} - 2.05\,\text{V}} = 420\,\tfrac{\text{mA}}{\text{V}}$.
 
 The line meets the voltage axis at $2.05\,\text{V} - \dfrac{20\,\text{mA}}{420\,\text{mA/V}} = 2.05\,\text{V} - 0.048\,\text{V} = 2.00\,\text{V}$. The threshold voltage is about $2.0\,\text{V}$.
-**Formula:** $I = \dfrac{U - U_\text{D}}{R}$ through the resistor and the current of the characteristic curve from the table
+**Formula:** $$\begin{aligned} U &= U_R + U_\text{D} \\ U_R &= RI \\ I &= \dfrac{U - U_\text{D}}{R} \\ I_\text{LED} &= f(U_\text{D}) \text{ (table)} \end{aligned}$$
 **Conversions:** Not needed: the voltages are in volts and the resistance in ohms, and the result $\text{V} : \Omega = \text{A}$ is converted to milliamperes by multiplying by $1000$.
 **Substitution:** The current coming through the resistor is, at the voltage $2.00\,\text{V}$, $\dfrac{4.5\,\text{V} - 2.00\,\text{V}}{180\,\Omega} = 13.9\,\text{mA}$ and, at the voltage $2.05\,\text{V}$, $\dfrac{4.5\,\text{V} - 2.05\,\text{V}}{180\,\Omega} = 13.6\,\text{mA}$. The current of the LED at these voltages is $9.8\,\text{mA}$ and $20\,\text{mA}$. At the voltage $2.00\,\text{V}$ the current coming through the resistor is greater than the current of the LED, and at $2.05\,\text{V}$ it is smaller, so the intersection lies in between. Drawn as straight lines, the intersection is at $U_\text{D} \approx 2.02\,\text{V}$ and $I \approx 13.8\,\text{mA}$. Check: $\dfrac{4.5\,\text{V} - 2.02\,\text{V}}{180\,\Omega} = 13.8\,\text{mA}$.
 

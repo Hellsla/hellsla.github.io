@@ -2,7 +2,7 @@
 **Annettu:** tulevat virrat $2{,}4\,\text{A}$ ja $0{,}6\,\text{A}$, lähtevä virta $1{,}8\,\text{A}$
 **Kysytty:** toisen lähtevän johtimen virta $I$ ampeereina
 **Periaate:** Kirchhoffin virtalaki: varaus ei katoa eikä kerry haarautumispisteeseen, joten tulevien virtojen summa on yhtä suuri kuin lähtevien virtojen summa.
-**Kaava:** $$\begin{aligned} \Sigma I_\text{t} &= \Sigma I_\text{l} \\ I_\text{t1} + I_\text{t2} &= I_\text{l1} + I \\ I &= I_\text{t1} + I_\text{t2} - I_\text{l1} \end{aligned}$$
+**Kaava:** $$\begin{aligned} \Sigma I_\text{tulo} &= \Sigma I_\text{lähtö} \\ I_\text{t1} + I_\text{t2} &= I_\text{l1} + I \\ I &= I_\text{t1} + I_\text{t2} - I_\text{l1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: kaikki virrat ovat ampeereina.
 **Sijoitus:** $I = 2{,}4\,\text{A} + 0{,}6\,\text{A} - 1{,}8\,\text{A} = 1{,}2\,\text{A}$
 **Vastaus:** $1{,}2\,\text{A}$, yhden desimaalin tarkkuudella kuten annetut virrat.
@@ -199,17 +199,11 @@ Kuormitettaessa virtalain mukaan vastuksen $R_1$ virta jakautuu vastuksen $R_2$ 
 Kuorma pienentää haaran resistanssia, kokonaisvirta kasvaa, vastuksen $R_1$ jännite kasvaa ja jännitelain mukaan $V_P = U - R_1 I$ pienenee.
 
 Kysytty resistanssi saadaan kääntämällä jakajan kaava: ensin haaran resistanssi $R_\text{p}$, josta kuorma.
-**Kaava:** Kuormittamaton:
+**Kaava:** Kuormittamaton: $$\begin{aligned} I &= \dfrac{U}{R_1 + R_2} \\ V_P &= R_2 I \\ V_P &= \dfrac{R_2}{R_1 + R_2}\, U \end{aligned}$$
 
-$$\begin{aligned} I &= \dfrac{U}{R_1 + R_2} \\ V_P &= R_2 I \\ V_P &= \dfrac{R_2}{R_1 + R_2}\, U \end{aligned}$$
+Kuormitettu: $$\begin{aligned} \dfrac{1}{R_\text{p}} &= \dfrac{1}{R_2} + \dfrac{1}{R_\text{k}} \\ I &= \dfrac{U}{R_1 + R_\text{p}} \\ V_P &= R_\text{p} I \\ V_P &= \dfrac{R_\text{p}}{R_1 + R_\text{p}}\, U \end{aligned}$$
 
-Kuormitettu:
-
-$$\begin{aligned} \dfrac{1}{R_\text{p}} &= \dfrac{1}{R_2} + \dfrac{1}{R_\text{k}} \\ I &= \dfrac{U}{R_1 + R_\text{p}} \\ V_P &= R_\text{p} I \\ V_P &= \dfrac{R_\text{p}}{R_1 + R_\text{p}}\, U \end{aligned}$$
-
-Ratkaistaan:
-
-$$\begin{aligned} V_P (R_1 + R_\text{p}) &= R_\text{p} U \\ R_\text{p} &= \dfrac{R_1 V_P}{U - V_P} \\ \dfrac{1}{R_\text{k}} &= \dfrac{1}{R_\text{p}} - \dfrac{1}{R_2} \\ R_\text{k} &= \dfrac{R_\text{p} R_2}{R_2 - R_\text{p}} \end{aligned}$$
+Ratkaistaan: $$\begin{aligned} V_P (R_1 + R_\text{p}) &= R_\text{p} U \\ R_\text{p} &= \dfrac{R_1 V_P}{U - V_P} \\ \dfrac{1}{R_\text{k}} &= \dfrac{1}{R_\text{p}} - \dfrac{1}{R_2} \\ R_\text{k} &= \dfrac{R_\text{p} R_2}{R_2 - R_\text{p}} \end{aligned}$$
 
 
 **Muunnokset:** Ei tarvita: kaikki suureet ovat perusyksiköissä.
