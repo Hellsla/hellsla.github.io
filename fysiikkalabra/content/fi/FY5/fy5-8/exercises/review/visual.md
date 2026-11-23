@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 945476e5b7ef9fb3
+CONTENT-HASH: 50ffe8c82ceb5c83
+none
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md, Kaava blocks with fractions (e.g. 8-14, 8-20) — rows with `\dfrac` sit tight against each other; readable — optional `\\[0.3em]` row spacing.
+- [Minor] solutions.md 8-18 Kaava — `\tfrac{1}{2}kx^2` on the left-hand side is small next to `mgh`; legible, optionally `\dfrac` in the display row.
 
 ## Checked
-- Delta, solutions.md Kaava rows only. Opened (lesson review/shots): open-exercises-L2-1280-2 (8-11 with the 4-row ΔE_p derivation, Muunnokset and Sijoitus below), L2-1280-5 (8-14 x = L − L_0 … k chain), L3-1280-8 (the bow task with five Kaava rows).
-- The aligned Kaava blocks render in KaTeX in the white formula box, equals signs aligned in one column, no clipping, no horizontal overflow at 1280 px (check_layout 360/390 ok per packet). Order principle → basic law → rearranged form reads correctly; Sijoitus, Vastaus and Järkevyys unchanged and consistent with the Kaava symbols (E_p, F_v, k upright subscripts, \Delta, units upright).
-- Other changed tasks (8-1, 8-4, 8-6, 8-9, 8-13, 8-17) are the same short aligned form; not each opened.
+- Delta: only the Kaava block of 8-18 changed (now E_alku = E_loppu, then the energies, then h solved). Opened open-exercises-L3-1280-2 (task text, Periaate, Kaava rows) and L3-1280-3 (Muunnokset, Sijoitus, Vastaus, Järkevyys, next task).
+- Three rows align at `=`, KaTeX clean, subscripts `\text{alku}`/`\text{loppu}` legible, no clipping or overflow; Sijoitus, answer 0,18 m and the surrounding layout unchanged.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
