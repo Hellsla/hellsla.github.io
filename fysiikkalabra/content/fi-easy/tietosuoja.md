@@ -31,7 +31,7 @@ Koulu vastaa palautetuista töistä. Lue lisää koulusi tietosuojaselosteesta.
 
 ## Miten poistan tiedot?
 
-Poista sivuston tiedot selaimen asetuksista. Jos kone on yhteinen, poista tiedot lopuksi. Poista myös tallentamasi työtiedostot, jos et tarvitse niitä. Jo palauttamasi tiedosto ei poistu. Tehtäväkirjaus poistuu samalla, kun poistat selaimen sivustotiedot.
+Poista sivuston tiedot selaimen asetuksista. Jos kone on yhteinen, poista tiedot lopuksi. Poista myös tallentamasi työtiedostot, jos et tarvitse niitä. Jo palauttamasi tiedosto ei poistu. Tehtäväkirjaus poistuu samalla, kun poistat selaimen sivustotiedot. Valmentajan sivulla voit poistaa vain tehtäväkirjauksen. Paina painiketta Tyhjennä valmentajan tiedot.
 
 ## Muut palvelut
 

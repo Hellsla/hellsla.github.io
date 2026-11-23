@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9f04f3d49ce52074
+CONTENT-HASH: b1a4001c20ea8979
+SCOPE: delta numbers,reflow,wording from 514101bffd1fe463 base 63ede90
 
 ## Blocking
 - none
 
 ## Polish
-- L3-01/L3-04/L3-05: the oil is now MAFY's 40,6 while the lesson's diesel is 43; the labels say "MAFY-taulukko", which suffices.
+- none new.
 
 ## Checked
-- Delta review of L3-01: 120 : 15 - 120 : 40,6 = 8,0 - 2,96 = 5,04 -> 5,0 kg; answer, answers.py and solution agree.
-- L3-04: oil 47 880 : 0,90 : 40,6 = 1310 kg, pellets 3313 kg, ratio 2,5 and 40,6 : 17 = 2,4, 2,4 · 0,90 : 0,85 = 2,5; consistent.
-- L3-05: oil 985 -> 990 kg, 40,6 : 15 = 2,7; answer 940 kg unchanged.
-- Data table row names the fuel and source (40.6 in JSON) so the student sees where the value comes from; no step dropped from the S2 solutions.
+- L2-05 and L3-01 Sijoitus are now aligned rows (m_puu, m_öljy, then Δm) with each chain starting from its quantity and substituting into the last symbolic form; numbers unchanged (8,0; 2,96; 5,04 kg and 19,23; 13,61; 5,62 kg).
+- L2-09 wording: "energioiden on oltava yhtä suuret, E_p = E_b" states the basis of the balance more plainly; the formula chain is unchanged and answer 34 kg stands.
+- The packet's flat diff shows the rows without line breaks; the source has them as an aligned block, so no run-on chain.

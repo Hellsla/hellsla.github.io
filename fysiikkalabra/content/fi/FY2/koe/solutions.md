@@ -42,7 +42,13 @@
 **Annettu:** akun kapasiteetti $64\,\text{kWh}$, varaus $20\,\%\to 80\,\%$, latauksen hyötysuhde $\eta = 0{,}90$
 **Kysytty:** akkuun ladattu energia $E_\text{akku}$ ja verkosta otettu energia $E_\text{verkko}$
 **Periaate:** Akkuun ladataan varauksen muutoksen verran eli $60\,\%$ kapasiteetista. Hyötysuhde on hyödyksi saadun ja otetun energian suhde, joten verkosta otetaan enemmän kuin akkuun päätyy.
-**Kaava:** $E_\text{akku} = 0{,}60 \cdot 64\,\text{kWh}$ ja $\eta = \dfrac{E_\text{akku}}{E_\text{verkko}} \Rightarrow E_\text{verkko} = \dfrac{E_\text{akku}}{\eta}$
+**Kaava:** $$
+\begin{aligned}
+E_\text{akku} &= 0{,}60 \cdot E_\text{kapasiteetti} \\
+\eta &= \dfrac{E_\text{akku}}{E_\text{verkko}} \\
+E_\text{verkko} &= \dfrac{E_\text{akku}}{\eta}
+\end{aligned}
+$$
 **Muunnokset:** $80\,\% - 20\,\% = 60\,\% = 0{,}60$
 **Sijoitus:** $E_\text{akku} = 0{,}60 \cdot 64\,\text{kWh} = 38{,}4\,\text{kWh}$ ja $E_\text{verkko} = \dfrac{38{,}4\,\text{kWh}}{0{,}90} \approx 42{,}7\,\text{kWh}$
 **Vastaus:** Akkuun ladataan noin $38\,\text{kWh}$ ja verkosta otetaan noin $43\,\text{kWh}$, kaksi merkitsevää numeroa kuten kapasiteetissa ja hyötysuhteessa.
@@ -89,9 +95,15 @@ $$
 **Annettu:** lämmöntarve $E_\text{hyöty} = 18\,000\,\text{kWh}$, $\eta = 0{,}85$, $H = 17\,\text{MJ/kg}$
 **Kysytty:** pellettien massa $m$
 **Periaate:** Kattila muuttaa vain $85\,\%$ polttoaineen energiasta $E_\text{pa}$ talon lämmöksi, joten polttoaineen energiaa tarvitaan enemmän kuin lämpöä. Polttoaineen energia on lämpöarvo kertaa massa.
-**Kaava:** $E_\text{pa} = \dfrac{E_\text{hyöty}}{\eta}$ ja $E_\text{pa} = Hm \Rightarrow m = \dfrac{E_\text{pa}}{H}$
-**Muunnokset:** $1\,\text{kWh} = 3{,}6\,\text{MJ}$, joten $E_\text{pa} = \dfrac{18\,000\,\text{kWh}}{0{,}85} \approx 21\,180\,\text{kWh} = 21\,180 \cdot 3{,}6\,\text{MJ} \approx 76\,200\,\text{MJ}$
-**Sijoitus:** $m = \dfrac{76\,200\,\text{MJ}}{17\,\tfrac{\text{MJ}}{\text{kg}}} \approx 4480\,\text{kg}$
+**Kaava:** $$
+\begin{aligned}
+\eta &= \dfrac{E_\text{hyöty}}{E_\text{pa}} \Rightarrow E_\text{pa} = \dfrac{E_\text{hyöty}}{\eta} \\
+E_\text{pa} &= Hm \Rightarrow m = \dfrac{E_\text{pa}}{H} \\
+m &= \dfrac{E_\text{hyöty}}{\eta H}
+\end{aligned}
+$$
+**Muunnokset:** $1\,\text{kWh} = 3{,}6\,\text{MJ}$, joten $E_\text{hyöty} = 18\,000 \cdot 3{,}6\,\text{MJ} = 64\,800\,\text{MJ}$
+**Sijoitus:** $m = \dfrac{64\,800\,\text{MJ}}{0{,}85 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}}} \approx 4480\,\text{kg}$
 **Vastaus:** Pellettejä tarvitaan noin $4500\,\text{kg} = 4{,}5\,\text{t}$ vuodessa, kaksi merkitsevää numeroa kuten lämpöarvossa.
 **Järkevyys:** Noin $12\,\text{kg}$ päivässä on muutaman pellettisäkin luokkaa viikossa, mikä on omakotitalolle uskottava.
 
@@ -99,9 +111,15 @@ $$
 **Annettu:** $E_\text{hyöty} = 18\,000\,\text{kWh}$, $\eta = 0{,}90$, $H = 42{,}7\,\text{MJ/kg}$
 **Kysytty:** öljyn massa ja selitys massojen erolle
 **Periaate:** Sama periaate kuin a-kohdassa.
-**Kaava:** $m = \dfrac{E_\text{hyöty}}{\eta H}$
-**Muunnokset:** $\dfrac{18\,000\,\text{kWh}}{0{,}90} = 20\,000\,\text{kWh} = 72\,000\,\text{MJ}$
-**Sijoitus:** $m = \dfrac{72\,000\,\text{MJ}}{42{,}7\,\tfrac{\text{MJ}}{\text{kg}}} \approx 1690\,\text{kg}$
+**Kaava:** $$
+\begin{aligned}
+\eta &= \dfrac{E_\text{hyöty}}{E_\text{pa}} \Rightarrow E_\text{pa} = \dfrac{E_\text{hyöty}}{\eta} \\
+E_\text{pa} &= Hm \Rightarrow m = \dfrac{E_\text{pa}}{H} \\
+m &= \dfrac{E_\text{hyöty}}{\eta H}
+\end{aligned}
+$$
+**Muunnokset:** $E_\text{hyöty} = 18\,000 \cdot 3{,}6\,\text{MJ} = 64\,800\,\text{MJ}$
+**Sijoitus:** $m = \dfrac{64\,800\,\text{MJ}}{0{,}90 \cdot 42{,}7\,\tfrac{\text{MJ}}{\text{kg}}} \approx 1690\,\text{kg}$
 **Vastaus:** Öljyä tarvitaan noin $1700\,\text{kg}$ vuodessa. Öljyä tarvitaan alle puolet pellettien massasta pääosin siksi, että öljyn lämpöarvo on noin $2{,}5$-kertainen pellettien lämpöarvoon verrattuna. Hyötysuhteiden ero ($90\,\%$ ja $85\,\%$) vaikuttaa vain noin $6\,\%$.
 **Järkevyys:** Massojen suhde $\tfrac{4480}{1690} \approx 2{,}7$ on lähellä lämpöarvojen suhdetta $2{,}5$, kuten pitääkin.
 
@@ -232,7 +250,13 @@ $$
 **Annettu:** $E = 175{,}2\,\text{GWh}$, talteen $70\,\%$, talon tarve $15\,000\,\text{kWh}$
 **Kysytty:** kuinka monen talon lämmöntarve katetaan
 **Periaate:** Talteen saatu lämpö jaetaan yhden talon vuotuisella tarpeella.
-**Kaava:** $N = \dfrac{0{,}70 \cdot E}{E_\text{talo}}$
+**Kaava:** $$
+\begin{aligned}
+E_\text{lämpö} &= 0{,}70 \cdot E \\
+N &= \dfrac{E_\text{lämpö}}{E_\text{talo}} \\
+N &= \dfrac{0{,}70 \cdot E}{E_\text{talo}}
+\end{aligned}
+$$
 **Muunnokset:** $1\,\text{GWh} = 10^{6}\,\text{kWh}$, joten $0{,}70 \cdot 175{,}2\,\text{GWh} \approx 122{,}6\,\text{GWh} = 122{,}6 \cdot 10^{6}\,\text{kWh}$
 **Sijoitus:** $N = \dfrac{122{,}6 \cdot 10^{6}\,\text{kWh}}{15\,000\,\text{kWh}} \approx 8200$
 **Vastaus:** Talteen otetulla lämmöllä voitaisiin lämmittää noin $8000$ omakotitaloa.
@@ -284,7 +308,13 @@ $$, joten sähköä vietiin.
 **Annettu:** tuulivoimaa $9000\,\text{MW}$ ja osuus $30\,\%$, ydinvoimaa $4400\,\text{MW}$ ja osuus $90\,\%$
 **Kysytty:** vuosituotannot ja arvio väitteestä
 **Periaate:** Väite vertaa tehoja, mutta korvaamiseen tarvitaan sama energia vuodessa ja sähköä myös silloin, kun ei tuule. Vuosituotanto on teho kertaa vuoden tunnit kertaa osuus, jonka voimala keskimäärin tuottaa täydestä tehostaan.
-**Kaava:** $E = \text{osuus} \cdot P \cdot t$
+**Kaava:** $$
+\begin{aligned}
+E &= P_\text{ka}\,t \\
+P_\text{ka} &= \text{osuus} \cdot P \\
+E &= \text{osuus} \cdot P \cdot t
+\end{aligned}
+$$
 **Muunnokset:** $t = 8760\,\text{h}$ ja $1\,\text{TWh} = 10^{6}\,\text{MWh}$
 **Sijoitus:** Tuuli: $E = 0{,}30 \cdot 9000\,\text{MW} \cdot 8760\,\text{h} \approx 23{,}7 \cdot 10^{6}\,\text{MWh} \approx 24\,\text{TWh}$. Ydin: $E = 0{,}90 \cdot 4400\,\text{MW} \cdot 8760\,\text{h} \approx 34{,}7 \cdot 10^{6}\,\text{MWh} \approx 35\,\text{TWh}$.
 **Vastaus:** Vaikka tuulivoiman teho on suurempi, se tuottaa vuodessa noin $24\,\text{TWh}$ ja ydinvoima noin $35\,\text{TWh}$. Lisäksi tuulivoiman tuotanto vaihtelee tunneittain lähes nollasta täyteen tehoon, kuten taulukosta näkyy, joten tyynellä säällä tarvitaan säätövoimaa, varastointia tai tuontia. Väite ei siis pidä sellaisenaan: tuulivoima voisi korvata ydinvoiman vain, jos tuulivoimaa olisi selvästi enemmän ja lisäksi säätövoimaa ja varastoja.
@@ -309,9 +339,15 @@ $$, joten sähköä vietiin.
 **Annettu:** $P = 150\,\text{W}$, $t = 1\,\text{h}$, $\eta = 0{,}25$, banaani $0{,}45\,\text{MJ}$
 **Kysytty:** ravintoenergia $E_\text{ravinto}$ ja banaanien määrä
 **Periaate:** Lihasten antama energia on teho kertaa aika. Lihakset muuttavat vain neljäsosan ravinnon energiasta polkemiseksi, joten ravintoenergiaa kuluu nelinkertaisesti.
-**Kaava:** $E = Pt$ ja $E_\text{ravinto} = \dfrac{E}{\eta}$
+**Kaava:** $$
+\begin{aligned}
+E &= Pt \\
+\eta &= \dfrac{E}{E_\text{ravinto}} \Rightarrow E_\text{ravinto} = \dfrac{E}{\eta} \\
+E_\text{ravinto} &= \dfrac{Pt}{\eta}
+\end{aligned}
+$$
 **Muunnokset:** $t = 1\,\text{h} = 3600\,\text{s}$
-**Sijoitus:** $E = 150\,\text{W} \cdot 3600\,\text{s} = 540\,000\,\text{J}$ ja $E_\text{ravinto} = \dfrac{540\,000\,\text{J}}{0{,}25} = 2\,160\,000\,\text{J} \approx 2{,}2\,\text{MJ}$; banaaneja $\dfrac{2{,}16\,\text{MJ}}{0{,}45\,\text{MJ}} \approx 4{,}8$
+**Sijoitus:** $E_\text{ravinto} = \dfrac{150\,\text{W} \cdot 3600\,\text{s}}{0{,}25} = 2\,160\,000\,\text{J} \approx 2{,}2\,\text{MJ}$; banaaneja $\dfrac{2{,}16\,\text{MJ}}{0{,}45\,\text{MJ}} \approx 4{,}8$
 **Vastaus:** Tunnin polkeminen kuluttaa noin $2{,}2\,\text{MJ}$ ravintoenergiaa, mikä vastaa noin viittä banaania. Kaksi merkitsevää numeroa, koska hyötysuhde on likiarvo.
 **Järkevyys:** Aikuisen ravintoenergian tarve on noin $10\,\text{MJ}$ vuorokaudessa, joten tunnin reipas pyöräily kuluttaa siitä noin viidenneksen, mikä on uskottavaa.
 
@@ -319,9 +355,15 @@ $$, joten sähköä vietiin.
 **Annettu:** akku $500\,\text{Wh}$, $\eta = 0{,}80$, $P = 150\,\text{W}$
 **Kysytty:** aika $t$, jonka akku riittää
 **Periaate:** Yksinkertaistetussa mallissa pyöräilijä ei polje, vaan koko $150\,\text{W}$:n hyötyteho tulee moottorista. Moottori ja voimansiirto muuttavat akun energiasta $80\,\%$ pyörää liikuttavaksi hyötyenergiaksi. Aika saadaan hyödyksi saadusta energiasta ja tehosta.
-**Kaava:** $t = \dfrac{\eta E}{P}$
+**Kaava:** $$
+\begin{aligned}
+\eta &= \dfrac{E_\text{hyöty}}{E_\text{akku}} \Rightarrow E_\text{hyöty} = \eta E_\text{akku} \\
+P &= \dfrac{E_\text{hyöty}}{t} \Rightarrow t = \dfrac{E_\text{hyöty}}{P} \\
+t &= \dfrac{\eta E_\text{akku}}{P}
+\end{aligned}
+$$
 **Muunnokset:** $0{,}67\,\text{h} = 0{,}67 \cdot 60\,\text{min} \approx 40\,\text{min}$
-**Sijoitus:** $\eta E = 0{,}80 \cdot 500\,\text{Wh} = 400\,\text{Wh}$ ja $t = \dfrac{400\,\text{Wh}}{150\,\text{W}} \approx 2{,}67\,\text{h}$
+**Sijoitus:** $t = \dfrac{0{,}80 \cdot 500\,\text{Wh}}{150\,\text{W}} \approx 2{,}67\,\text{h}$
 **Vastaus:** Akku riittää noin $2{,}7\,\text{h}$ eli noin $2\,\text{h}\ 40\,\text{min}$.
 **Järkevyys:** Täysi akku sisältää vähemmän energiaa ($1{,}8\,\text{MJ}$) kuin tunnin polkemisen ravintoenergia ($2{,}2\,\text{MJ}$), mutta moottori käyttää sen paljon paremmalla hyötysuhteella, joten se jaksaa pidempään. Tavallinen sähköavusteinen pyörä vain avustaa polkemista, joten siinä pyöräilijä polkee itsekin ja akku riittää vielä pidempään.
 

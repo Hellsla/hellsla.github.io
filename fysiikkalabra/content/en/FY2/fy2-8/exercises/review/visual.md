@@ -1,14 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: b302dce4cfd5c711
+CONTENT-HASH: ab1a8e6751c19379
+SCOPE: delta numbers from b302dce4cfd5c711 base 3076572
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] solutions.md 8-21 Formula: the opening "energy of the petrol $E_\text{p} = V \cdot h$ and emission" runs a definition and a chain into one sentence; two short sentences would read more easily.
+- [Minor] expand button over the end of the first task line (8-13, 8-21) at 1280 px, shared component.
 
 ## Checked
-Delta (md-paragraphs, solutions only): opened en open-exercises-L2-1280 parts 9-18 and L3-1280 parts 4-12 (as pairs; tasks 8-17 to 8-26, the 1280 px solution captures): new paragraphs render as separate blocks with even spacing, a), b), c), d) labels stay with their text, calculation rows and Sijoitus rows intact, no clipping. Break points judged: each starts a new thought or sub-answer. Hash re-run at the end: b302dce4cfd5c711.
+- Delta: all changed Formula lines read in source (8-3, 8-8, 8-13, 8-15, 8-21 area ratio, car/bus, CO2 and graph tasks).
+- Captures opened: open-exercises-L2-1280-3 (8-13 Formula chain, Substitution, Answer), L3-1280-1 (8-21 Formula with display blocks between sentences), L3-1280-3 (area-ratio task: Formula fraction chain, Substitution rows, Reasonableness).
+- Principle → symbolic → substitution order holds; fractions, thin-space units, boxed answers intact; nothing clipped. English text throughout, no stray Finnish. Other changed tasks not individually viewed.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

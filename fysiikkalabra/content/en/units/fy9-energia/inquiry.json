@@ -10,7 +10,7 @@
     "Energy is conserved: it is transformed and transferred but does not disappear (chapter *Forms of energy and conservation of energy*)",
     "Power is energy per unit time, and $1\\,\\text{kWh} = 3.6\\,\\text{MJ}$ (chapter *Power*)",
     "Efficiency is the fraction of the energy taken in that is useful (chapter *Efficiency*)",
-    "The energy released from a fuel is $E = Hm$ (chapter *Fuels and heat of combustion*)",
+    "The energy released from a fuel is $Q = Hm$ (chapter *Fuels and heat of combustion*)",
     "The efficiencies of the stages of a power plant are multiplied (chapter *Energy production and the efficiency of power plants*)"
   ],
   "activities": [
@@ -122,7 +122,7 @@
       "choices": [
         {
           "text": "The wood, because there is twice as much mass of it.",
-          "feedback": "The mass is double, but the heat of combustion is less than half. The energy released is $E = Hm$: wood $30\\,\\text{MJ}$, petrol $43\\,\\text{MJ}$. Review the chapter *Fuels and heat of combustion*."
+          "feedback": "The mass is double, but the heat of combustion is less than half. The energy released is $Q = Hm$: wood $30\\,\\text{MJ}$, petrol $43\\,\\text{MJ}$. Review the chapter *Fuels and heat of combustion*."
         },
         {
           "text": "The petrol, because its $Hm$ is greater.",
@@ -131,7 +131,7 @@
         },
         {
           "text": "The same, because both burn completely.",
-          "feedback": "Burning completely does not make the energies equal: the energy depends on both the heat of combustion and the mass, $E = Hm$. Review the chapter *Fuels and heat of combustion*."
+          "feedback": "Burning completely does not make the energies equal: the energy depends on both the heat of combustion and the mass, $Q = Hm$. Review the chapter *Fuels and heat of combustion*."
         }
       ]
     },

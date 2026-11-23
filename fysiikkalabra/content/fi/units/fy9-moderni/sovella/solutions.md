@@ -592,7 +592,7 @@ $$
 **Oletukset:** Malli jättää sironnan huomiotta: seinästä ja ympäristöstä sironnut säteily tuo lisäannosta, joten todellinen annosnopeus on laskettua suurempi. Samoin tulos on liian pieni, jos lähde vaihdetaan vahvempaan tai oleskeluaika pitenee. Siksi todellinen seinä kannattaa tehdä tulosta paksummaksi, esimerkiksi $25\,\text{cm}$ tai enemmän.
 
 ### Yleisiä virheitä
-- a-kohdassa suhteesta otetaan logaritmin sijaan pelkkä osamäärä: $\mu = 16 / 20\,\text{cm} = 0{,}80\,\text{1/cm}$. Toinen virhe on kääntää suhde, jolloin $\mu$ tulee negatiiviseksi.
+- a-kohdassa suhteesta otetaan logaritmin sijaan pelkkä osamäärä: $\mu = 4 / 10\,\text{cm} = 0{,}40\,\text{1/cm}$. Toinen virhe on kääntää suhde, jolloin $\mu$ tulee negatiiviseksi.
 - b-kohdassa annosnopeudeksi lasketaan lineaarisesti $80\,\mu\text{Sv/h} - 18 \cdot 3{,}0\,\mu\text{Sv/h}$ tai $e$:n eksponentin etumerkki unohdetaan.
 - c-kohdassa annosnopeus kerrotaan vain yhden työpäivän ajalla $1{,}5\,\text{h}$, tai $\mu\text{Sv}$ ja $\text{mSv}$ sekoitetaan ($6{,}6 \cdot 330 = 2178\,\text{mSv}$).
 - d-kohdassa vuosiannosraja $1{,}0\,\text{mSv}$ käytetään annosnopeutena $1{,}0\,\mu\text{Sv/h}$, jolloin paksuudeksi tulee $31{,}6\,\text{cm}$, eli kuvaajan ulkopuolinen väärä arvo.

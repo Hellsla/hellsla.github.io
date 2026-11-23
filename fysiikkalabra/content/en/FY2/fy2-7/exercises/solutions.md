@@ -25,7 +25,7 @@ At its branch that curves downward it says $9\,\%$ (loss), and at the branch tha
 
 The upper flow is the electricity grid and is not needed.
 
-**Formula:** $E_\text{loss} = 0.09 \cdot E_\text{sent}$
+**Formula:** $E_\text{sent} = E_\text{arrived} + E_\text{loss}$ and the loss share $p = \dfrac{E_\text{loss}}{E_\text{sent}}$, so $E_\text{loss} = p\, E_\text{sent}$
 **Conversions:** Percentage to decimal number: $9\,\% = 9 \cdot 0.01 = 0.09$. The energy stays in megawatt-hours.
 **Substitution:** $E_\text{loss} = 0.09 \cdot 360\,\text{MWh} = 32.4\,\text{MWh}$
 **Answer:** about $32\,\text{MWh}$, two significant figures, because the percentage in the figure is rounded to whole percent.
@@ -55,7 +55,7 @@ $$ is $4.0\,\%$ of the sent energy, which is a usual loss for an electricity gri
 **Given:** sent power $P_\text{sent} = 125\,\text{MW}$, loss $4.0\,\%$ of the sent power
 **Find:** the power that arrives $P_\text{arrived}$ in megawatts
 **Principle:** The loss percentage applies to power in the same way as to energy. When $4.0\,\%$ is lost, $96.0\,\%$ of the sent power arrives.
-**Formula:** $P_\text{arrived} = \eta\, P_\text{sent}$
+**Formula:** $\eta = \dfrac{P_\text{arrived}}{P_\text{sent}}$, so $P_\text{arrived} = \eta\, P_\text{sent}$
 **Conversions:** $\eta = 100\,\% - 4.0\,\% = 96.0\,\% = 96.0 : 100 = 0.960$.
 **Substitution:** $P_\text{arrived} = 0.960 \cdot 125\,\text{MW} = 120.0\,\text{MW}$
 **Answer:** $120\,\text{MW}$, three significant figures as in the sent power $125\,\text{MW}$.
@@ -85,9 +85,9 @@ $$. The result is a little below $125\,\text{MW}$, as it should be.
 **Given:** arrived energy $E_\text{arrived} = 600\,\text{MWh}$, loss $20\,\%$ of the sent energy
 **Find:** the energy lost $E_\text{loss}$ in megawatt-hours
 **Principle:** The loss percentage belongs to the sent energy, not to the energy that arrived. So first calculate the sent energy using the efficiency, and then the loss as a difference.
-**Formula:** $\eta = \dfrac{E_\text{arrived}}{E_\text{sent}}$, so $E_\text{sent} = \dfrac{E_\text{arrived}}{\eta}$, and $E_\text{loss} = E_\text{sent} - E_\text{arrived}$
+**Formula:** $\eta = \dfrac{E_\text{arrived}}{E_\text{sent}}$ and $E_\text{loss} = E_\text{sent} - E_\text{arrived}$, so $E_\text{sent} = \dfrac{E_\text{arrived}}{\eta}$ and $E_\text{loss} = \dfrac{E_\text{arrived}}{\eta} - E_\text{arrived}$
 **Conversions:** $\eta = 100\,\% - 20\,\% = 80\,\% = 80 : 100 = 0.80$. The unit of energy stays megawatt-hours.
-**Substitution:** $E_\text{sent} = \dfrac{600\,\text{MWh}}{0.80} = 750\,\text{MWh}$, and $E_\text{loss} = 750\,\text{MWh} - 600\,\text{MWh} = 150\,\text{MWh}$
+**Substitution:** $E_\text{loss} = \dfrac{600\,\text{MWh}}{0.80} - 600\,\text{MWh} = 750\,\text{MWh} - 600\,\text{MWh} = 150\,\text{MWh}$
 **Answer:** $150\,\text{MWh}$, two significant figures as in the loss percentage $20\,\%$.
 **Reasonableness:** The loss is $$
 20\,\% \cdot 750\,\text{MWh} = 150\,\text{MWh}
@@ -114,9 +114,9 @@ $$, which is $20\,\%$ of $1500\,\text{MWh}$. The sent energy is larger than the 
 **Given:** energy fed into the network $E_\text{sent} = 2.40\,\text{TWh}$, loss $4.0\,\%$ of the sent energy, time $t = 8760\,\text{h}$
 **Find:** the average power of the losses $P_\text{loss}$ in megawatts
 **Principle:** The energy lost is the loss percentage of the sent energy. The average power is this energy divided by the time, because power tells the rate at which energy is transferred (chapter *Power: $P = \Delta E/\Delta t$*).
-**Formula:** $E_\text{loss} = p\, E_\text{sent}$, where $p$ is the loss fraction, and $P_\text{loss} = \dfrac{E_\text{loss}}{t}$
+**Formula:** $P = \dfrac{E}{t}$ and $E_\text{loss} = p\, E_\text{sent}$, where $p$ is the loss fraction, so $P_\text{loss} = \dfrac{E_\text{loss}}{t} = \dfrac{p\, E_\text{sent}}{t}$
 **Conversions:** $p = 4.0 : 100 = 0.040$ and $1\,\text{TWh} = 1\,000\,000\,\text{MWh}$, so $2.40\,\text{TWh} = 2.40 \cdot 1\,000\,000\,\text{MWh} = 2\,400\,000\,\text{MWh}$.
-**Substitution:** $E_\text{loss} = 0.040 \cdot 2\,400\,000\,\text{MWh} = 96\,000\,\text{MWh}$, and $P_\text{loss} = \dfrac{96\,000\,\text{MWh}}{8760\,\text{h}} = 10.96\,\text{MW}$
+**Substitution:** $P_\text{loss} = \dfrac{0.040 \cdot 2\,400\,000\,\text{MWh}}{8760\,\text{h}} = \dfrac{96\,000\,\text{MWh}}{8760\,\text{h}} = 10.96\,\text{MW}$
 **Answer:** $11\,\text{MW}$, two significant figures, because the loss percentage $4.0\,\%$ is known to two figures (the least precise value).
 **Reasonableness:** Estimate: $4\,\%$ of $2400$ is about $100$, and $100\,000\,\text{MWh} : 8760\,\text{h}$ is about $11\,\text{MW}$. So the loss power of the electricity grid is on average about as large as the power of a small power plant.
 
@@ -124,9 +124,9 @@ $$, which is $20\,\%$ of $1500\,\text{MWh}$. The sent energy is larger than the 
 **Given:** power needed by the building $P_\text{arrived} = 40.0\,\text{kW}$, loss $20\,\%$ of the sent power, time $t = 24\,\text{h}$
 **Find:** the energy fed in by the heating plant per day $E_\text{sent}$ in kilowatt-hours
 **Principle:** The loss percentage applies to the sent power, so first calculate the sent power using the efficiency. The power is steady, so the energy is obtained from the power and the time.
-**Formula:** $P_\text{sent} = \dfrac{P_\text{arrived}}{\eta}$ and $E_\text{sent} = P_\text{sent} \cdot t$
+**Formula:** $\eta = \dfrac{P_\text{arrived}}{P_\text{sent}}$ and $E = Pt$, so $P_\text{sent} = \dfrac{P_\text{arrived}}{\eta}$ and $E_\text{sent} = P_\text{sent}\, t = \dfrac{P_\text{arrived}\, t}{\eta}$
 **Conversions:** $\eta = 100\,\% - 20\,\% = 80\,\% = 80 : 100 = 0.80$. A kilowatt times an hour is directly a kilowatt-hour.
-**Substitution:** $P_\text{sent} = \dfrac{40.0\,\text{kW}}{0.80} = 50.0\,\text{kW}$, and $E_\text{sent} = 50.0\,\text{kW} \cdot 24\,\text{h} = 1200\,\text{kWh}$
+**Substitution:** $E_\text{sent} = \dfrac{40.0\,\text{kW} \cdot 24\,\text{h}}{0.80} = \dfrac{960\,\text{kWh}}{0.80} = 1200\,\text{kWh}$
 **Answer:** $1200\,\text{kWh}$, or $1.2 \cdot 10^3\,\text{kWh}$, two significant figures as in the loss percentage $20\,\%$ (the least precise value).
 **Reasonableness:** Without losses the energy would be $40.0\,\text{kW} \cdot 24\,\text{h} = 960\,\text{kWh}$. The loss is $$
 \begin{aligned}
@@ -152,9 +152,15 @@ The lost energy is transferred as heat to the surroundings: in the electricity g
 **Given:** energy needed at the destination $E_\text{arrived} = 600\,\text{MWh}$; loss before $9.0\,\%$ and after $6.0\,\%$ of the sent energy
 **Find:** the decrease in the energy fed in by the heating plant in megawatt-hours
 **Principle:** Customers need the same energy in both cases. A smaller loss means a higher efficiency, so less sent energy is needed. Calculate the sent energy in both cases and subtract.
-**Formula:** $E_\text{sent} = \dfrac{E_\text{arrived}}{\eta}$ and saving $\Delta E = E_\text{sent,1} - E_\text{sent,2}$
+**Formula:** $\eta = \dfrac{E_\text{arrived}}{E_\text{sent}}$, so $E_\text{sent} = \dfrac{E_\text{arrived}}{\eta}$, and saving $\Delta E = E_\text{sent,1} - E_\text{sent,2} = E_\text{arrived} \left(\dfrac{1}{\eta_1} - \dfrac{1}{\eta_2}\right)$
 **Conversions:** $\eta_1 = 100\,\% - 9.0\,\% = 91.0\,\% = 0.910$ and $\eta_2 = 100\,\% - 6.0\,\% = 94.0\,\% = 0.940$.
-**Substitution:** $E_\text{sent,1} = \dfrac{600\,\text{MWh}}{0.910} = 659.3\,\text{MWh}$, $E_\text{sent,2} = \dfrac{600\,\text{MWh}}{0.940} = 638.3\,\text{MWh}$, so $\Delta E = 659.3\,\text{MWh} - 638.3\,\text{MWh} = 21.0\,\text{MWh}$
+**Substitution:**
+$$\begin{aligned}
+\Delta E &= E_\text{arrived}\left(\dfrac{1}{\eta_1} - \dfrac{1}{\eta_2}\right) \\
+&= 600\,\text{MWh}\left(\dfrac{1}{0.910} - \dfrac{1}{0.940}\right) \\
+&= 659.3\,\text{MWh} - 638.3\,\text{MWh} \\
+&= 21.0\,\text{MWh}
+\end{aligned}$$
 **Answer:** $21\,\text{MWh}$, two significant figures: the precision of the difference is limited by the loss percentages $9.0\,\%$ and $6.0\,\%$.
 **Reasonableness:** The loss decreases by three percentage points, and three per cent of $600\,\text{MWh}$ is $18\,\text{MWh}$. The result $21\,\text{MWh}$ is slightly larger because the percentages are taken of the sent energy, not of $600\,\text{MWh}$.
 
@@ -162,9 +168,9 @@ The lost energy is transferred as heat to the surroundings: in the electricity g
 **Given:** network A: $E_\text{sent,A} = 500\,\text{MWh}$, $\eta_\text{A} = 91.0\,\%$; network B: $E_\text{sent,B} = 520\,\text{MWh}$, $\eta_\text{B} = 85.0\,\%$
 **Find:** which network brings more heat to customers and how many megawatt-hours more
 **Principle:** For customers, what matters is the energy that arrives, not the energy fed into the network. The arrived energy is the efficiency times the sent energy, so it is calculated for each network separately and compared.
-**Formula:** $E_\text{arrived} = \eta\, E_\text{sent}$ and difference $\Delta E = E_\text{arrived,A} - E_\text{arrived,B}$
+**Formula:** $\eta = \dfrac{E_\text{arrived}}{E_\text{sent}}$, so $E_\text{arrived} = \eta\, E_\text{sent}$, and difference $\Delta E = E_\text{arrived,A} - E_\text{arrived,B} = \eta_\text{A} E_\text{sent,A} - \eta_\text{B} E_\text{sent,B}$
 **Conversions:** $\eta_\text{A} = 91.0 : 100 = 0.910$ and $\eta_\text{B} = 85.0 : 100 = 0.850$. The energies are in the same unit.
-**Substitution:** $E_\text{arrived,A} = 0.910 \cdot 500\,\text{MWh} = 455.0\,\text{MWh}$, $E_\text{arrived,B} = 0.850 \cdot 520\,\text{MWh} = 442.0\,\text{MWh}$, so $\Delta E = 455.0\,\text{MWh} - 442.0\,\text{MWh} = 13.0\,\text{MWh}$
+**Substitution:** $E_\text{arrived,A} = 0.910 \cdot 500\,\text{MWh} = 455.0\,\text{MWh}$ and $E_\text{arrived,B} = 0.850 \cdot 520\,\text{MWh} = 442.0\,\text{MWh}$, so $\Delta E = 455.0\,\text{MWh} - 442.0\,\text{MWh} = 13.0\,\text{MWh}$
 **Answer:** network A brings customers $13.0\,\text{MWh}$ more, three significant figures as in the efficiencies and energies.
 **Reasonableness:** Network B feeds in $20\,\text{MWh}$ more, but its loss $$
 \begin{aligned}
@@ -182,9 +188,9 @@ $$ matches.
 **Given:** loss power $P_\text{loss} = 150\,\text{kW}$ steadily, time $t = 8760\,\text{h}$, annual consumption of one house $E_\text{house} = 20\,\text{MWh}$
 **Find:** the number of houses $N$ whose annual consumption the loss corresponds to
 **Principle:** The power is steady, so the energy lost in a year is power times time. The number of houses is obtained by comparing this energy with the consumption of one house, and the comparison makes the size of the loss easier to grasp.
-**Formula:** $E_\text{loss} = P_\text{loss} \cdot t$ and $N = \dfrac{E_\text{loss}}{E_\text{house}}$
+**Formula:** $P = \dfrac{E}{t}$, so $E_\text{loss} = P_\text{loss}\, t$, and $N = \dfrac{E_\text{loss}}{E_\text{house}} = \dfrac{P_\text{loss}\, t}{E_\text{house}}$
 **Conversions:** $1\,\text{kWh} = 0.001\,\text{MWh}$, so the energy is converted into megawatt-hours in the substitution.
-**Substitution:** $E_\text{loss} = 150\,\text{kW} \cdot 8760\,\text{h} = 1\,314\,000\,\text{kWh} = 1\,314\,000 \cdot 0.001\,\text{MWh} = 1314\,\text{MWh}$, and $N = \dfrac{1314\,\text{MWh}}{20\,\text{MWh}} = 65.7$
+**Substitution:** $N = \dfrac{150\,\text{kW} \cdot 8760\,\text{h}}{20\,\text{MWh}} = \dfrac{1\,314\,000\,\text{kWh}}{20\,\text{MWh}} = \dfrac{1314\,\text{MWh}}{20\,\text{MWh}} = 65.7$
 **Answer:** about $66$ houses, two significant figures as in the consumption of a house, $20\,\text{MWh}$ (the least precise value).
 **Reasonableness:** Estimate: $$
 \begin{aligned}
@@ -204,14 +210,14 @@ Voltage does not add energy, and the loss still does not disappear completely: a
 **Given:** sent energy $E_\text{sent} = 250\,\text{MWh}$ and arrived energy $E_\text{arrived} = 238\,\text{MWh}$
 **Find:** the share of the sent energy that is lost, as a percentage
 **Principle:** The loss is the difference between the sent and the arrived energy, and the share of the loss is calculated from the sent energy.
-**Formula:** $E_\text{loss} = E_\text{sent} - E_\text{arrived}$, and the share $p = \dfrac{E_\text{loss}}{E_\text{sent}}$
+**Formula:** $E_\text{sent} = E_\text{arrived} + E_\text{loss}$, so $E_\text{loss} = E_\text{sent} - E_\text{arrived}$, and the share $p = \dfrac{E_\text{loss}}{E_\text{sent}} = \dfrac{E_\text{sent} - E_\text{arrived}}{E_\text{sent}}$
 **Conversions:** The quotient is a decimal number, which is converted into a percentage by multiplying by one hundred: $$
 \begin{aligned}
 0.048 &= 0.048 \cdot 100\,\% \\
 &= 4.8\,\%
 \end{aligned}
 $$.
-**Substitution:** $E_\text{loss} = 250\,\text{MWh} - 238\,\text{MWh} = 12\,\text{MWh}$, and $p = \dfrac{12\,\text{MWh}}{250\,\text{MWh}} = 0.048 = 4.8\,\%$
+**Substitution:** $p = \dfrac{250\,\text{MWh} - 238\,\text{MWh}}{250\,\text{MWh}} = \dfrac{12\,\text{MWh}}{250\,\text{MWh}} = 0.048 = 4.8\,\%$
 **Answer:** $4.8\,\%$, two significant figures, because the difference $12\,\text{MWh}$ is a two-digit number.
 **Reasonableness:** Four per cent of $250\,\text{MWh}$ would be $10\,\text{MWh}$, and the loss $12\,\text{MWh}$ is slightly greater, so $4.8\,\%$ is of the right size. Also $$
 \begin{aligned}
@@ -224,7 +230,7 @@ $$.
 **Given:** sent power $P_\text{sent} = 800\,\text{kW}$ and arrived power $P_\text{arrived} = 728\,\text{kW}$
 **Find:** the loss power $P_\text{loss}$ in kilowatts
 **Principle:** Power is the rate of energy transfer, so the sent power divides into the arrived power and the lost power in the same way as energy does.
-**Formula:** $P_\text{loss} = P_\text{sent} - P_\text{arrived}$
+**Formula:** $P_\text{sent} = P_\text{arrived} + P_\text{loss}$, so $P_\text{loss} = P_\text{sent} - P_\text{arrived}$
 **Conversions:** Not needed: both powers are in kilowatts.
 **Substitution:** $P_\text{loss} = 800\,\text{kW} - 728\,\text{kW} = 72\,\text{kW}$
 **Answer:** $72\,\text{kW}$, two significant figures, because the precision of the difference is limited by the power $728\,\text{kW}$ in whole kilowatts.
@@ -283,7 +289,7 @@ About $4\,\%$ of the sent energy is lost in the electricity grid, and that is wh
 **Given:** from the table, the loss powers: external walls $2.4\,\text{kW}$, upper floor $1.5\,\text{kW}$, windows $1.8\,\text{kW}$; reductions $50\,\%$, $60\,\%$ and $40\,\%$; loss of the district heating network $9.0\,\%$ of the sent energy; time $t = 5000\,\text{h}$
 **Find:** the energy that the best improvement saves at the heating plant in megawatt-hours; the justification of the choice
 **Principle:** An improvement reduces the loss power by a certain share, and energy is obtained from power and time. The saving of the house is heat that has arrived. The loss of the network is calculated from the sent energy, so the saving of the heating plant is the saving of the house divided by the efficiency.
-**Formula:** $\Delta P = r\, P_\text{loss}$, $\Delta E_\text{house} = \Delta P \cdot t$ and $\Delta E_\text{plant} = \dfrac{\Delta E_\text{house}}{\eta}$
+**Formula:** $\Delta P = r\, P_\text{loss}$, $\Delta E_\text{house} = \Delta P\, t$ and $\eta = \dfrac{E_\text{arrived}}{E_\text{sent}}$, so $\Delta E_\text{plant} = \dfrac{\Delta E_\text{house}}{\eta} = \dfrac{r\, P_\text{loss}\, t}{\eta}$
 **Conversions:** $\eta = 100\,\% - 9.0\,\% = 91.0\,\% = 0.910$ and $r$ is the reduction as a decimal number, for example $50\,\% = 0.50$. A kilowatt times an hour is directly a kilowatt-hour, and $1000\,\text{kWh} = 1\,\text{MWh}$.
 **Substitution:** A: $\Delta P = 0.50 \cdot 2.4\,\text{kW} = 1.2\,\text{kW}$ and $\Delta E_\text{house} = 1.2\,\text{kW} \cdot 5000\,\text{h} = 6000\,\text{kWh}$. B: $$
 \begin{aligned}
@@ -295,7 +301,7 @@ $$. C: $$
 &0.60 \cdot 1.5\,\text{kW} \cdot 5000\,\text{h} \\
 &= 4500\,\text{kWh}
 \end{aligned}
-$$. A saves the most, and $\Delta E_\text{plant} = \dfrac{6.0\,\text{MWh}}{0.910} = 6.593\,\text{MWh}$
+$$. A saves the most, and $\Delta E_\text{plant} = \dfrac{0.50 \cdot 2.4\,\text{kW} \cdot 5000\,\text{h}}{0.910} = \dfrac{6.0\,\text{MWh}}{0.910} = 6.593\,\text{MWh}$
 **Answer:** $6.6\,\text{MWh}$, two significant figures as in the loss power $2.4\,\text{kW}$.
 
 Choice: insulating the external walls, because the loss power of the walls is the greatest and its reduction of $50\,\%$ is large, so the saving of $6000\,\text{kWh}$ beats improvements B ($3600\,\text{kWh}$) and C ($4500\,\text{kWh}$).
@@ -351,7 +357,7 @@ $$ matches the sum $42.09\,\text{MWh}$.
 **Given:** energy fed into the grid $E_\text{in} = 500\,\text{kWh}$; loss $4.0\,\%$ of the energy fed in; conversion from the MAFY table (Yksikkömuunnoksia, energy/work, kilowatt-hour) $1\,\text{kWh} = 3.6 \cdot 10^{6}\,\text{J}$
 **Find:** the energy lost $E_\text{loss}$ in megajoules
 **Principle:** The loss is a given share of the energy fed into the grid. We first calculate it in kilowatt-hours and then convert it to joules.
-**Formula:** $E_\text{loss} = 0.040 \cdot E_\text{in}$
+**Formula:** $p = \dfrac{E_\text{loss}}{E_\text{in}}$, so $E_\text{loss} = p\, E_\text{in}$
 **Conversions:** $4.0\,\% = 0.040$ and $1\,\text{kWh} = 3.6 \cdot 10^{6}\,\text{J} = 3.6\,\text{MJ}$.
 **Substitution:** $E_\text{loss} = 0.040 \cdot 500\,\text{kWh} = 20\,\text{kWh}$ and $20\,\text{kWh} \cdot 3.6\,\tfrac{\text{MJ}}{\text{kWh}} = 72\,\text{MJ}$
 **Answer:** $72\,\text{MJ}$, two significant figures like the loss percentage $4.0\,\%$. The conversion factor is from the MAFY table (Yksikkömuunnoksia); the conversion $1\,\text{kWh} = 3.6\,\text{MJ}$ is exact, and the answer is accepted within about $\pm 4\,\%$.
@@ -362,16 +368,16 @@ $$ matches the sum $42.09\,\text{MWh}$.
 **Find:** the difference of the losses $\Delta E$ in megawatt-hours
 **Principle:** The loss is a share of the energy fed into the network. We calculate the loss of each network and subtract the loss of the electricity grid from that of the district heating network.
 **Reading the graph:** From the flow of the electricity grid $4\,\%$ branches off as a loss, and from the flow of the district heating network $9\,\%$. The energy fed in is $100\,\%$ in both, so the shares can be used directly.
-**Formula:** $E_\text{loss} = p \cdot E_\text{in}$ and $\Delta E = E_\text{loss,dh} - E_\text{loss,el}$
+**Formula:** $E_\text{loss} = p\, E_\text{in}$ and $\Delta E = E_\text{loss,dh} - E_\text{loss,el}$, so $\Delta E = (p_\text{dh} - p_\text{el})\, E_\text{in}$
 **Conversions:** $9\,\% = 0.09$ and $4\,\% = 0.04$.
-**Substitution:** $E_\text{loss,dh} = 0.09 \cdot 250\,\text{MWh} = 22.5\,\text{MWh}$ and $E_\text{loss,el} = 0.04 \cdot 250\,\text{MWh} = 10.0\,\text{MWh}$, so $\Delta E = 22.5\,\text{MWh} - 10.0\,\text{MWh} = 12.5\,\text{MWh}$
+**Substitution:** $\Delta E = (0.09 - 0.04) \cdot 250\,\text{MWh} = 0.05 \cdot 250\,\text{MWh} = 12.5\,\text{MWh}$
 **Answer:** $\Delta E \approx 13\,\text{MWh}$ (calculated $12.5\,\text{MWh}$), two significant figures, because the percentages in the figure, $9\,\%$ and $4\,\%$, are rounded to whole percent.
 **Reasonableness:** The difference of the shares is $9\,\% - 4\,\% = 5\,\%$, and $5\,\%$ of $250\,\text{MWh}$ is $12.5\,\text{MWh}$. More is lost in the district heating network, as the wider loss flow in the figure shows.
 ## fy2-7-L2-10
 **Given:** from the table (Fingrid, read 16.11.2026 at 10.48) consumption power $P_\text{c} = 11\,603\,\text{MW}$, production power $P_\text{p} = 11\,341\,\text{MW}$, net import $210\,\text{MW}$ (the table value is $-210\,\text{MW}$, because import is negative), wind power $5571\,\text{MW}$ and nuclear power $2594\,\text{MW}$; the time interval $\Delta t = 1\,\text{h}$ is set by the task and exact.
 **Find:** a) the comparison of consumption, production and import; b) the energy consumed $E$ in $\text{GWh}$; c) why production need not match consumption at every moment; d) the shares of wind and nuclear power and why one moment does not show the annual structure
 **Principle:** Power is energy divided by time, $P = \Delta E : \Delta t$, so at a steady power $E = P\,\Delta t$. The consumption power in the table is the reading of one moment; when it is assumed to stay the same for an hour, the formula for a steady power applies. A share is the ratio of a part to the whole.
-**Formula:** $E = P\,\Delta t$, so $E = P_\text{c}\,\Delta t$. In part a) the difference is $\Delta P = P_\text{c} - P_\text{p}$ and in part d) the share is $p = P_\text{source} : P_\text{p}$.
+**Formula:** $P = \dfrac{\Delta E}{\Delta t}$, so $E = P\,\Delta t$, hence $E = P_\text{c}\,\Delta t$. In part a) the difference is $\Delta P = P_\text{c} - P_\text{p}$ and in part d) the share is $p = P_\text{source} : P_\text{p}$.
 **Conversions:** $1\,\text{MW} \cdot 1\,\text{h} = 1\,\text{MWh}$ and $1000\,\text{MWh} = 1\,\text{GWh}$.
 **Substitution:** b)
 

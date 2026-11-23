@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9f81aa7a215c2f28
+CONTENT-HASH: 9f921f95949e73e1
+SCOPE: delta numbers from 9f81aa7a215c2f28 base 3076572c597d
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] solutions.md, Järkevyys/Reasonableness of 3-20: the re-broken chain sits in a boxed row inside the sentence, and the sentence's comma lands inside the box ("= 75 kWh,"); acceptable, but a comma after the box would read slightly cleaner.
+- [Minor] 1-10 Kaava (fy2-3-open-exercises-1280-9.png) — the fraction $\dfrac{\Delta E_\text{A} : \Delta t_\text{A}}{\Delta E_\text{B} : \Delta t_\text{B}}$ has colons inside numerator and denominator and reads slightly cramped — optional: write $\dfrac{P_\text{A}}{P_\text{B}} = \dfrac{\Delta E_\text{A}/\Delta t_\text{A}}{\dots}$ only if the teacher prefers; the colon-for-division convention is followed.
 
 ## Checked
-- Delta (reflow of solutions.md, fi): opened fy2-3-open-exercises-L2-1280-5 (Mallivastaus rows P1, P2, P2:P1: aligned at =, in boxes, text between intact), L3-1280-1 and -2 (3-20 Järkevyys row, 3-21 chain), and the 3-20 conversions and substitution blocks (aligned, nothing clipped). Fi page was checked in all of these; the en and fi-easy pages were cut as the Finnish one.
-- Not opened: the 1-01 Järkevyys row (same form as 3-20).
+- fy2-3-open-exercises-L3-1280-3.png (3-22 new Kaava with fractions and display), -4.png, -5.png (3-23 ΔP chain), -8.png; fy2-3-open-exercises-1280-9.png and -10.png (1-10 ratio and graph); L2-1280-8.png. KaTeX intact, units upright, no clipping or overflow, layout unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

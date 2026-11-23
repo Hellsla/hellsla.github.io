@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 09a8d27941359877
+CONTENT-HASH: 47ef9f21a9aab27e
+SCOPE: delta caption-label,numbers,reflow,typography from 09a8d27941359877 base 23d6dfc025aa
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] 5-23 Answer (L3-1280-8) — the first line "in the answer box, the result of part b), 940 kg." starts in lower case under ANSWER — start with a capital ("In the answer box: …"). Predates the paragraph change.
+- [Minor] solutions.md Formula lines — several chains stack "so … so" (or "; … ;") in one line; a full stop or "and" between the principle and the rearrangement would read slightly better. Optional.
 
 ## Checked
-- Delta (solutions.md paragraph breaks). Opened fy2-5-open-exercises-L2-1280-6 to -10 (5-15 to 5-18: 5-15 error-analysis split, 5-16 Reading the graph split, 5-17 Model answer) and L3-1280-4 to -8 (5-21 to 5-23: Principle, Substitution, Answer splits, a)-d) lines): paragraphs separate cleanly, chain boxes and Reasonableness panels intact, nothing clipped.
+- Delta (solutions.md Formula/Substitution lines; round 2 fixes). en captures opened: open-exercises-L3-1280-1 (5-19: symbolic form, then aligned substitution rows m_wood, m_oil, Delta m).
+- Aligned rows, fractions, units with thin spaces, answer boxes and reasonableness blocks render intact; no Finnish symbols or words left in the changed English text (remaining Finnish strings are MAFY table names, proper names).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

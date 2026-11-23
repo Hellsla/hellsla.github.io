@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: a1cac1a76ad996ac
+CONTENT-HASH: 4b435403c5d88a78
+SCOPE: delta md-paragraphs,numbers,reflow,teacher-figure,typography,wording from a1cac1a76ad996ac base 5b3ca4f
 
 ## Blocking
-(none)
 
 ## Polish
-- content/fi-easy/FY2/fy2-7/exercises/solutions.md fy2-7-L2-10 c) — 12 791 − 10 647 = 2144 MW, while "joten nettovienti oli 2142 MW" reads as derived; 2142 MW is Fingrid's own net-export reading (same 2 MW measurement mismatch as the 52 MW in a), and the Finnish says the same) — optionally "Fingridin mukaan nettovienti oli 2142 MW"; not an error, same in fi/en.
+- solutions.md (fy2-7-L2-10 c)) — "nettovienti oli $2142\,\text{MW}$" reads as if it were derived from $12\,791 - 10\,647 = 2144\,\text{MW}$. — Fix: "Fingridin mukaan nettovienti oli $2142\,\text{MW}$".
 
 ## Checked
-- Delta: Periaate adds P = ΔE : Δt before E = PΔt, as in the Finnish and the lesson's notation; correct under the steady-power assumption that is stated.
-- a) 2,3 %: 262/11 341 = 2,31 %; 262 = 11 603 − 11 341; 52 MW = 0,45 % of 11 603 MW; split "erotus 262 MW − 210 MW on 52 MW" same numbers.
-- c) adds wind 7639 MW at 1:00, same value as d) and the Finnish line 335; 12 791 MW, 10 647 MW, 2142 MW unchanged.
-- Every number in the changed lines equals the Finnish; earlier Polish (missing 2,3 %) resolved.
-- Hash identical at start and end.
+- L3-01, the round-2 fix: the English subscripts $E_\text{sent,…}$ are gone from both the fi-easy and the Finnish solutions.md. The Sijoitus now substitutes into the Kaava's final form: $\Delta E = E_\text{perille}(1/\eta_1 - 1/\eta_2) = 600(1/0{,}910 - 1/0{,}940) = 21{,}0\,\text{MWh}$, a single aligned chain that starts from the quantity.
+- Every rewritten Kaava line starts from a basic relation: conservation $E_\text{lähtö} = E_\text{perille} + E_\text{häviö}$ (or the same with powers), $\eta = E_\text{perille}/E_\text{lähtö}$, $p = E_\text{häviö}/E_\text{lähtö}$, or $P = E/t$. Each solves symbolically and substitutes into the final form.
+- Recomputed in one script: 150 MWh, 10,96 MW, 1200 kWh, 21,0 MWh, 13,0 MWh, 65,7 houses, 4,8 %, 6,593 MWh, 12,5 MWh and 72 MJ. All agree with the solutions.
+- Heat-plant improvement: $\Delta E_\text{laitos} = rP_\text{häviö}t/\eta$ is right. The house's saving is energy that arrives, and the loss is taken from the energy sent.
+- `fy2-7/sankey`, the figure the teacher approved: it shows only 96/4 % and 91/9 %, drawn to scale, and the alt text agrees.
+- The paragraph splits (L3-02, L3-03, L3-04, L3-05) change no claim or number.
+- answers.py matches all 21 numeric answers within tolerance. No answer changed.
+- Hash 4b435403c5d88a78 at the start and at the end.

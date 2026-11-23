@@ -568,8 +568,8 @@ v &= \sqrt{\dfrac{2 \cdot 37.5\,\text{J}}{3.0\,\text{kg}}} \\
 &= 5.0\,\text{m/s}
 \end{aligned}
 $$
-**Answer:** The speed does not change: it is still $5.0\,\text{m/s}$. The heavier sled loses more energy to friction ($22.5\,\text{J} > 15\,\text{J}$), but it also has more energy at the start ($60\,\text{J} > 40\,\text{J}$), and both grow in the same ratio.
-**Reasonableness:** As in a free fall, a heavy and a light object reach the same speed when the resistance is small. Here friction follows the same rule because it also grows with the mass. In reality air resistance does not grow with the mass, so the heavier sled would be slightly faster.
+**Answer:** The speed does not change: it is still $5.0\,\text{m/s}$. Friction does more work on the heavier sled ($22.5\,\text{J} > 15\,\text{J}$), so more mechanical energy becomes internal energy, but the sled also has more energy at the start ($60\,\text{J} > 40\,\text{J}$), and both grow in the same ratio.
+**Reasonableness:** As in a free fall, a heavy and a light object reach the same speed when the resistance is small. Here friction follows the same rule because it also grows with the mass. In reality the force of air resistance does not grow with the mass, so it would take a smaller share of the heavier sled's energy and the heavier sled would be slightly faster. In this task air resistance is assumed negligible.
 
 ### Yleisiä virheitä
 - In part a) the length of the slope $6.0\,\text{m}$ is used as the height, or the potential energy is divided by the mass alone.
@@ -618,7 +618,7 @@ v &= \dfrac{5.4\,\text{kg m/s}}{0.43\,\text{kg}} \\
 \end{aligned}
 $$
 **Answer:** $v \approx 13\,\text{m/s}$ upwards, two significant figures like the mass and the impulse.
-**Reasonableness:** $13\,\text{m/s}$ is about $47\,\text{km/h}$. This is an ordinary speed for a soft kick; hard shots exceed $25\,\text{m/s}$.
+**Reasonableness:** $12.56\,\text{m/s}$ is about $45\,\text{km/h}$. This is an ordinary speed for a soft kick; hard shots exceed $25\,\text{m/s}$.
 
 ### c)
 **Given:** $m = 0.43\,\text{kg}$, $v = 12.56\,\text{m/s}$ after the kick, zero level at the height of the kick

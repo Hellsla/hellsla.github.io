@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 66d2635ac1dd2950
-Mode: delta
+CONTENT-HASH: efd3289961c2953a
+Mode: full review (round 1; this round only the Formula steps were rewritten)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- fy2-s1 e) model answer: the stand-alone sentence about biomass being about 11 % of the energy belongs inside the "Other grounds" paragraph (same as the Finnish version).
 
 ## Checked
-- Delta review of the en line of the one-sentence correction in solutions.md ("Other arguments"): the biomass plant needs "about a sixth of what it would need at the table's typical capacity factor, 0.70".
-- Consistent with the solution: the plant's factor is about 0.11 (line 66), and 0.11 / 0.70 = 0.16, about a sixth. The earlier phrase "full capacity factor" was wrong (full would be 1); the new one names the value the student can find in the table.
-- Nothing else in the en text changed.
+- Formula steps in a), b), c) mirror the Finnish ones and start from the basic principle (P_avg = kP_n, E = NE_1; e = m/E; E = Pt), solved in symbols before substitution.
+- Numbers, points and rubrics match the Finnish set; tasks demand independent application with unfamiliar data and no named model; mistakes and variety as in the Finnish review.
+- The English is clear and keeps the "calculation assumption, not a claim" wording about biomass.

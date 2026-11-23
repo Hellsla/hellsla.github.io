@@ -138,7 +138,7 @@ $$ litraa, joten kymmenisen miljoonaa litraa on oikea suuruusluokka. Litrat jä�
 **Annettu:** energia sadassa grammassa $E_{100} = 2400\,\text{kJ}$ ja pussin pähkinöiden massa $m = 50\,\text{g}$
 **Kysytty:** pussin pähkinöiden energia $E$ kilojouleina
 **Periaate:** Energia on suoraan verrannollinen massaan. Pussissa on puolet sadasta grammasta, joten siinä on puolet sadan gramman energiasta.
-**Kaava:** $E = \dfrac{m}{m_{100}} \cdot E_{100}$, missä $m_{100}$ on sadan gramman massa
+**Kaava:** Energia on suoraan verrannollinen massaan: $\dfrac{E}{m} = \dfrac{E_{100}}{m_{100}}$, josta $E = \dfrac{m}{m_{100}} \cdot E_{100}$, missä $m_{100}$ on sadan gramman massa
 **Muunnokset:** Ei tarvita: energia on annettu kilojouleina kuten kysytty.
 **Sijoitus:** $E = \dfrac{50\,\text{g}}{100\,\text{g}} \cdot 2400\,\text{kJ} = 0{,}50 \cdot 2400\,\text{kJ} = 1200\,\text{kJ}$
 **Vastaus:** $1200\,\text{kJ}$ eli $1{,}2\,\text{MJ}$, kaksi merkitsevää numeroa kuten tiedoissa $50\,\text{g}$ ja $2400\,\text{kJ}$.
@@ -173,12 +173,12 @@ $$.
 **Annettu:** taulukon ruoat: kaurapuuro $250\,\text{g}$ ($300\,\text{kJ}$ sadassa grammassa), banaani $120\,\text{g}$ ($400\,\text{kJ}$) ja appelsiinimehu $200\,\text{g}$ ($190\,\text{kJ}$); kävelyn kulutus $220\,\text{kJ}$ kilometriä kohti
 **Kysytty:** aamupalan energia $E$ megajouleina ja sitä vastaava kävelymatka $s$ kilometreinä
 **Periaate:** Jokaisen ruoan energia saadaan kertomalla sen massa sadan gramman energialla jaettuna sadalla grammalla. Energiat lasketaan yhteen samassa yksikössä. Kävelymatka saadaan jakamalla energia energialla kilometriä kohti, koska jokainen kilometri kuluttaa saman energian.
-**Kaava:** $E_\text{ruoka} = \dfrac{m}{100\,\text{g}} \cdot E_{100}$, $$
+**Kaava:** Energia on suoraan verrannollinen massaan: $\dfrac{E_\text{ruoka}}{m} = \dfrac{E_{100}}{100\,\text{g}}$, josta $E_\text{ruoka} = \dfrac{m}{100\,\text{g}} \cdot E_{100}$, $$
 \begin{aligned}
 E &= E_\text{puuro} + E_\text{banaani} \\
 &+ E_\text{mehu}
 \end{aligned}
-$$ ja $s = E : E_\text{km}$
+$$ ja $E = s \cdot E_\text{km}$, josta $s = E : E_\text{km}$
 **Muunnokset:** Lasketaan kilojouleina ja muunnetaan lopuksi: $1\,\text{MJ} = 1000\,\text{kJ}$.
 **Sijoitus:** $E_\text{puuro} = 2{,}5 \cdot 300\,\text{kJ} = 750\,\text{kJ}$, $E_\text{banaani} = 1{,}2 \cdot 400\,\text{kJ} = 480\,\text{kJ}$ ja $E_\text{mehu} = 2{,}0 \cdot 190\,\text{kJ} = 380\,\text{kJ}$. Summa on $1610\,\text{kJ} = 1{,}6\,\text{MJ}$, joten $s = 1610\,\text{kJ} : 220\,\text{kJ/km} = 7{,}3\,\text{km}$.
 **Vastaus:** Kävelymatka on noin $7{,}3\,\text{km}$ ja aamupalan energia noin $1{,}6\,\text{MJ}$, kaksi merkitsevää numeroa kuten tiedoissa.
@@ -202,7 +202,7 @@ $$
 **Kysytty:** sovitetun suoran kulmakerroin $k$ yksikössä kJ/km ja kävelymatka $s$ kilometreinä
 **Periaate:** Kulunut energia kasvaa tasaisesti matkan mukana, joten pisteisiin sopii malli, jossa $E$ on likimain verrannollinen matkaan $s$. Kulmakerroin kertoo, kuinka paljon energiaa kuluu yhtä kilometriä kohti. Kun kulmakerroin tunnetaan, matka saadaan jakamalla energia kulmakertoimella.
 **Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle, jonka molemmille puolille jää pisteitä. Piirretään pisteisiin suora paperille tai kuvaajaohjelmalla. Sovitettu suora kulkee likimain pisteiden $(0\,\text{km};\ 8\,\text{kJ})$ ja $(5{,}0\,\text{km};\ 1260\,\text{kJ})$ kautta. Nämä kaksi pistettä on otettu piirretyltä suoralta, ja ne valitaan kaukana toisistaan.
-**Kaava:** $k = \dfrac{\Delta E}{\Delta s} = \dfrac{E_2 - E_1}{s_2 - s_1}$ ja $s = E : k$
+**Kaava:** $k = \dfrac{\Delta E}{\Delta s} = \dfrac{E_2 - E_1}{s_2 - s_1}$ ja $E = k \cdot s$, josta $s = E : k$
 **Muunnokset:** Suklaalevyn energia kilojouleina: $1{,}5\,\text{MJ} = 1{,}5 \cdot 1000\,\text{kJ} = 1500\,\text{kJ}$.
 **Sijoitus:** $k = \dfrac{1260\,\text{kJ} - 8\,\text{kJ}}{5{,}0\,\text{km} - 0\,\text{km}} = 250\,\dfrac{\text{kJ}}{\text{km}}$, ja $s = 1500\,\text{kJ} : 250\,\text{kJ/km} = 6{,}0\,\text{km}$.
 **Vastaus:** Kulmakerroin on noin $250\,\text{kJ/km}$ ja suklaalevyn energia vastaa noin $6{,}0\,\text{km}$:n kävelyä. Silmämääräinen sovitus vaihtelee, joten $5{,}8\text{–}6{,}2\,\text{km}$ on hyvä vastaus. Kulmakerroin kertoo, että jokainen kävelty kilometri kuluttaa energiaa noin $250\,\text{kJ}$.
@@ -232,7 +232,7 @@ $$ taloa), ja kaikkia energioita ei tarvitse vertailla lukuarvoista, vaan yksik�
 **Annettu:** ruoan energiat $1{,}4\,\text{MJ}$, $3200\,\text{kJ}$, $650\,\text{kJ}$, $0{,}0042\,\text{GJ}$ ja $900\,\text{kJ}$; kulutus $E_\text{perus} = 10{,}2\,\text{MJ}$ päivässä; kävely $s = 5{,}0\,\text{km}$ päivässä, $250\,\text{kJ/km}$; rasvan energia $37\,\text{MJ/kg}$; aika $30$ vuorokautta
 **Kysytty:** kuluvan rasvan massa $m$ kilogrammoina
 **Periaate:** Energia säilyy. Jos ruoasta saatu energia on pienempi kuin kulutus, puuttuva energia otetaan kehon rasvavarastosta, jonka kemiallinen energia muuttuu liikkeeksi ja lämpöenergiaksi. Päivän vaje kerrotaan vuorokausien määrällä ja jaetaan rasvan energialla kiloa kohti.
-**Kaava:** $E_\text{kulutus} = E_\text{perus} + s \cdot E_\text{km}$, $\Delta E = E_\text{kulutus} - E_\text{ruoka}$ ja $m = \dfrac{30 \cdot \Delta E}{37\,\text{MJ/kg}}$
+**Kaava:** $E_\text{kulutus} = E_\text{perus} + s \cdot E_\text{km}$, $\Delta E = E_\text{kulutus} - E_\text{ruoka}$ ja kuluvan rasvan energia $30 \cdot \Delta E = m \cdot H$, missä $H = 37\,\text{MJ/kg}$, josta $m = \dfrac{30 \cdot \Delta E}{H} = \dfrac{30 \cdot \Delta E}{37\,\text{MJ/kg}}$
 **Muunnokset:** Kaikki megajouleiksi: $3200\,\text{kJ} = 3{,}2\,\text{MJ}$, $650\,\text{kJ} = 0{,}65\,\text{MJ}$, $0{,}0042\,\text{GJ} = 4{,}2\,\text{MJ}$, $900\,\text{kJ} = 0{,}90\,\text{MJ}$ ja kävely $1250\,\text{kJ} = 1{,}25\,\text{MJ}$.
 **Sijoitus:** Ateriat yhteensä ovat $$
 \begin{aligned}

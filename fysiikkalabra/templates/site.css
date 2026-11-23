@@ -1525,8 +1525,10 @@ html.ex-focus-on{overflow:hidden}
   .ex-focus-pad .pad .rich-text-editor{min-height:calc(100dvh - 15rem)}
   .ex-focus-body.no-pad{grid-template-columns:minmax(0,44rem);justify-content:center}
   /* a short task (under half the view's height, lesson.js part 10): the task on top and the editor under it, filling the rest */
-  .ex-focus-body.stack{display:block;max-width:48rem;overflow-y:auto}
+  /* the task text stays 44 rem wide to read; the editor and its formula toolbar use the whole view, up to 92 rem (teacher 2026-11-23) */
+  .ex-focus-body.stack{display:block;max-width:92rem;width:100%;box-sizing:border-box;margin:0 auto;padding:0 2rem;overflow-y:auto}
   .ex-focus-body.stack>.ex-focus-task,.ex-focus-body.stack>.ex-focus-pad{overflow:visible;padding:1.4rem 0 0}
+  .ex-focus-body.stack>.ex-focus-task{max-width:44rem}
   .ex-focus-body.stack>.ex-focus-pad{border-left:0;border-top:1px solid var(--line);margin-top:1.2rem;padding-bottom:3rem}
   .ex-focus-body.stack .ex-focus-pad .pad .rich-text-editor{min-height:max(14rem,calc(100dvh - var(--tb,0px) - var(--th,0px) - 16rem))}
 }
@@ -2306,6 +2308,48 @@ main.home>.resume{margin:0 0 1rem}
 .ch-state.is-done{color:var(--accent-deep)}
 .ch-state.is-done::before{content:"\2713\00a0"}
 @media print{.resume,.ch-state{display:none!important}}
+/* FY9 coach (work queue 11b PR 4, templates/valmentaja.js): the page FY9-valmentaja.html and the row on the course page. One column; a state is a
+   word and a mark, never colour alone. */
+.coach-row .resume-text{font-weight:600}
+.coach-recs{list-style:none;margin:.6rem 0 0;padding:0;display:grid;gap:.7rem}
+.coach-rec{display:grid;grid-template-columns:1fr auto;gap:.15rem .8rem;padding:.8rem 1rem;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.coach-task{grid-column:1;display:flex;align-items:center;min-height:44px;font:700 var(--fs-body)/1.35 var(--sans);color:var(--accent-deep);overflow-wrap:anywhere}
+.coach-min{grid-column:2;grid-row:1;align-self:start;color:var(--ink-2);font-size:var(--fs-ui);white-space:nowrap}
+.coach-where,.coach-why{grid-column:1/-1;color:var(--ink-2);font-size:var(--fs-ui);line-height:1.4}
+.coach-why{color:var(--ink)}
+.coach-go{display:inline-flex;align-items:center;min-height:44px;padding:0 1.1rem;border-radius:999px;background:var(--accent-deep);color:#fff;font:700 var(--fs-ui) var(--sans);text-decoration:none}
+.coach-go:hover{background:var(--accent)}
+.coach-free{margin:.8rem 0 0;font-size:var(--fs-ui)}
+.coach-free a{display:inline-flex;align-items:center;min-height:44px}
+.coach-areas{margin:1.4rem 0 0}
+.coach-areas[hidden]{display:none}
+.coach-areas>summary{font:700 var(--fs-h3) var(--sans);cursor:pointer;min-height:44px;display:flex;align-items:center}
+.coach-comp{margin:.5rem 0 0;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.coach-comp>summary{display:flex;flex-wrap:wrap;gap:.1rem .8rem;align-items:baseline;min-height:44px;padding:.5rem 1rem;cursor:pointer;font:600 var(--fs-ui) var(--sans)}
+.coach-comp-sum{color:var(--ink-2);font-weight:500}
+.coach-table{width:100%;border-collapse:collapse;font-size:var(--fs-ui);margin:0 0 .4rem}
+.coach-table th,.coach-table td{padding:.5rem 1rem;border-top:1px solid var(--line-2);text-align:left;vertical-align:top;font-weight:400}
+.coach-table th{width:45%;background:none;overflow-wrap:anywhere}
+.coach-state{display:flex;flex-wrap:wrap;gap:.1rem .5rem;align-items:baseline}
+.coach-mark{font-size:1.05em;line-height:1}
+.coach-word{font-weight:700}
+.coach-basis{flex-basis:100%;color:var(--ink-2);font-size:var(--fs-small)}
+.s-strong .coach-mark,.s-strongdue .coach-mark{color:var(--accent-deep)}
+.s-practise .coach-word{text-decoration:underline;text-decoration-thickness:2px}
+.coach-note{margin:.8rem 0 0;color:var(--ink-2);font-size:var(--fs-small)}
+.coach-set{margin:1.4rem 0 0}
+.coach-set[hidden]{display:none}
+.coach-set>summary{font:700 var(--fs-h3) var(--sans);cursor:pointer;min-height:44px;display:flex;align-items:center}
+.coach-opts{margin:.8rem 0 0;padding:0;border:0;min-width:0}
+.coach-opts legend{padding:0;font:600 var(--fs-ui) var(--sans)}
+.coach-set-lead{margin:.3rem 0 0;color:var(--ink-2);font-size:var(--fs-ui)}
+.coach-opt{display:flex;align-items:center;gap:.6rem;min-height:44px;font-size:var(--fs-ui);cursor:pointer}
+.coach-opt input{width:22px;height:22px;flex:none;accent-color:var(--accent-deep)}
+.coach-course-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(7rem,1fr));gap:0 .8rem}
+.coach-data{margin:1.6rem 0 0}
+.coach-clear{min-height:44px;padding:0 1rem;border:1px solid var(--ink-2);border-radius:999px;background:transparent;color:var(--ink-2);font:600 var(--fs-ui) var(--sans);cursor:pointer}
+.coach-clear:hover{color:var(--ink)}
+@media print{.coach-row,.coach-clear{display:none!important}}
 
 /* The theory's two heading levels apart, and one text face in the lesson (design audit 2026-11-10, problem 6;
    docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md, step 1). A theory section's heading (## in lesson.md) was 18 px
