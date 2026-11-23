@@ -210,7 +210,7 @@ c) The room temperature during the measurement is different from the yearly aver
 **Principle:** The cost of each period is the price of the period times the energy of the period, and the total cost is the sum of these.
 
 The average price is the total cost divided by the total energy. When the heating of the heater is moved, the energy of the heater stays the same but it is paid for at the price of another period, so the saving is the moved energy times the difference of the prices.
-**Formula:** $$\begin{aligned} K &= \Sigma aE \\ a_\text{avg} &= \dfrac{K}{E_\text{tot}} \\ E_\text{heater} &= Pt \\ S &= aE_\text{heater} \\ S &= E_\text{heater}\,(a_\text{high} - a_\text{low}) \end{aligned}$$
+**Formula:** $$\begin{aligned} K &= \Sigma aE \\ a_\text{avg} &= \dfrac{K}{E_\text{tot}} \\ E_\text{heater} &= Pt \\ K_\text{high} &= a_\text{high}E_\text{heater} \\ K_\text{low} &= a_\text{low}E_\text{heater} \\ S &= K_\text{high} - K_\text{low} \\ S &= E_\text{heater}\,(a_\text{high} - a_\text{low}) \end{aligned}$$
 **Conversions:** The costs are calculated in cents and converted to euros at the end: $100\,\text{c} = 1\,\text{€}$.
 **Substitution:** The costs of the periods are $4.68$; $12.96$; $32.24$; $19.20$; $162.96$ and $35.40$ cents. For example the first period is $1.2\,\text{kWh} \cdot 3.9\,\tfrac{\text{c}}{\text{kWh}} = 4.68\,\text{c}$.
 

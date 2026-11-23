@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9c608f6808629688
+CONTENT-HASH: 78866b2922922eef
+SCOPE: delta md-paragraphs,numbers,reflow,typography from 9c608f6808629688 base 3768fde
 
 ## Blocking
 
 ## Polish
-- solutions.md:260 (fy6-7-L2-09) — "tilavuusluokka 15–17,9 ft³" is a filter value that the task does not give and nobody re-checked. It is harmless, but it can be dropped, since the task only says "suodattimet Type ja Capacity".
-- solutions.md (fy6-7-L2-09, Kohta d) — "Jääkaapin kompressori ei käy koko ajan" fits these models. An inverter compressor runs most of the time at reduced speed, so "yleensä" or "tavallinen kompressori" would keep the claim exact without changing the point (C, not blocking).
 
 ## Checked
-- One independent script recomputed all 22 numeric answers and compared them with exercises.json: all are inside tolerance. L2-07 as a least-squares fit gives 299,1 kWh, inside 5 % of 299,3.
-- L2-09 data matches the pair read on 15 Nov 2026: LG LT18S1100* 344 kWh/a and LT18S1200* 440 kWh/a, both Top Freezer, 17,5 ft³. The task says it is a standardised test result, not a home measurement.
-- L2-09 a) 96 kWh, 440/344 = 1,279 → 28 %. b) P_ka = E/t: 39,27 W and 50,23 W with t = 8760 h, solved symbolically first. c) K = naE: 688 € and 880 €, difference 192 €. The rounding to 690/880/190 € is justified by 0,20 €/kWh.
-- L2-09 d): the duty-cycle mechanism (thermostat, compressor power above the mean, P_ka ≈ kP_käy) is correct. The 100 W figure is marked as a general order of magnitude, not as source data. k ≈ 0,39 is consistent.
-- 1 ft³ ≈ 28,3 l is correct (28,32 l), so 17,5 ft³ ≈ 495 l. The answer 39,269 W with tolerance 0,02 suits three significant figures.
-- Nothing in the solution is attributed to the source beyond the table values and the field names (Type, Capacity, Annual Energy Use).
-- Reflowed chains (L2-08 and the rest): same numbers, signs and units in the same order.
-- The notation matches the brief (E = Pt, K = aE, kWh, snt → €). Everything is within FY6 scope (household energy).
-- Hash read at start and end: unchanged.
+- Hash 8999366fea1ff628 at start; it changed to 78866b2922922eef during the review (solutions.md:195 only), so the review was redone on the new content; hash unchanged at the end.
+- solutions.md:195 (price-period task): the row $S = aE_\text{varaaja}$, which stated the cost as the saving, is now $K_\text{kallis} = a_\text{kallis}E_\text{varaaja}$, $K_\text{halpa} = a_\text{halpa}E_\text{varaaja}$, $S = K_\text{kallis} - K_\text{halpa}$, $S = E_\text{varaaja}(a_\text{kallis} - a_\text{halpa})$: correct, and the form Sijoitus uses.
+- Delta judged: Kaava steps of 11 solutions rewritten from $E = Pt$, $P = UI$, $U = RI$, $K = K_\text{perus} + aE$; paragraph splits in L2-09.
+- All new chains are correct derivations ending in the form the unchanged Sijoitus uses (washer and dryer $E_i = P_it_i$ summed, kettle $E = UIt$, standby $K = aPt$, lamp $\Delta E = (P_1 - P_2)t$, equal energy $t_2 = P_1t_1 : P_2$, bill $E = (K - K_\text{perus}) : a$, resistor $E = UIt$, coffee maker, daily list $\Sigma E_{\text{vrk},i}$).
+- One script recomputed every touched number: 0,80 kWh, 480,24 kJ, 6,70 €, 75,92 kWh, 7,33 h, 371,3 kWh, 4,99 kWh, 1,215 €, 733,65 kWh, 93,0 snt, 0,45 €: all agree; answers.py unchanged since the PASS.
+- L2-09 paragraph splits: same sentences, numbers and claims in the same order; the duty-cycle reasoning unchanged.
