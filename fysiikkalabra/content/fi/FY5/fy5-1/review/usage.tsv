@@ -1,0 +1,2 @@
+date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache_read	cache_write	context	turns	seconds	calls	verdict	cost_usd	source	ref
+2026-11-23T14:41Z	fy5-1	FY5	orchestrator	orchestrate	claude-sonnet-5-5		session	1	41144295	582	62822	40629365	451526	256892	234	40535	201		10.5614	transcript	1561e20e6eff
