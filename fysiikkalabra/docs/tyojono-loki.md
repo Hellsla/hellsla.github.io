@@ -777,3 +777,7 @@ Avoimet huomiot (Polish, ei uusia kierroksia): koe k3-c, k4-c, k6-a, k6-c: sieve
 - Huomio: `check_lesson.py fy1-2` epäonnistuu `check_choices.py`-tarkistukseen (oikean vaihtoehdon paikka 3: 46 % > 45 %, FY1:n 24 valintatehtävää); virhe ei johdu tästä PR:stä (inquiry.json ja exit-ticket ennallaan), joten fy1-2:n paketit tehtiin `--skip-checks`-valinnalla. Korjaus kuuluu erilliseen kohtaan.
 - Reviewerien vapaamuotoiset `SCOPE:`-rivit poistettiin raporteista (`reviews.py verify` hylkää muun kuin added-exercise-deltan SCOPE-rivin).
 - Opetus: pakettien diff näyttää `aligned`-lohkojen `\\`-rivinvaihdot poistettuina; reviewer arvioi tiedoston, ei diffiä. Kaava-rivien rinnakkaisessa kirjoituksessa (viisi kehittäjää) kolme riviä siirtyi väärän tehtävän alle: ohjeeseen "pidä rivi omassa tehtävässään, tarkista `git diff` tehtävän otsikoita vasten".
+
+8 Virhekäsitys ja tiivistelmä avattaviin laatikoihin (opettaja 2026-11-13): sivupohja #713; "Yleinen virhekäsitys" -osa kaikissa FY1–FY8:n luvuissa (tarkistettu 2026-11-23, tekijät FY4 ja FY7 sekä grep). Kohta poistettu jonosta.
+
+8f Animoitu kuva (opettaja 2026-11-13): pilotti fy3-8 #649; FY3 fy3-9, fy3-3 #757; FY4 fy4-10 #761 (opettaja 2026-11-19 "ok"). Kohta poistettu jonosta.

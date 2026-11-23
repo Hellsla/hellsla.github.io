@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: d58d45b9716a4b7f
+CONTENT-HASH: b2a47a0e93d5bdb5
 
 ## Blocking
 
@@ -31,3 +31,6 @@ None.
 ## Checked (delta 2026-11-16)
 
 - Text/typography diff read in context: Finnish quotes and thin spaces only; meaning unchanged. No blocking finding.
+
+
+Gate re-review: diff since the earlier PASS is one typographic change in teacher.md (ASCII quotes to ”…”); nothing pedagogical changed, earlier findings stand.

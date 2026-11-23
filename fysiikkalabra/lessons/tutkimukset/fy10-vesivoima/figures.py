@@ -134,7 +134,7 @@ def setup():
 def eta_graph():
     """Reading a P_s–P_o graph: the line eta = 1 bounds what is possible, and every line from the origin is one
     constant efficiency (reference lines only, no measured points)."""
-    f = Fig("fy10v-eta", 380, "Kuvaaja: vaaka-akselilla veden teho P o ja pystyakselilla sähköteho P s, samassa mittakaavassa. "
+    f = Fig("fy10v-eta", 380, "Mallikuvaaja: vaaka-akselilla veden teho P o ja pystyakselilla sähköteho P s, samassa mittakaavassa. "
             "Katkoviiva origosta on suora, jolla hyötysuhde on yksi eli sata prosenttia; sen yläpuolelle ei voi päätyä, "
             "koska energia säilyy. Toinen origon kautta kulkeva suora näyttää, että kaikilla saman origon kautta kulkevan "
             "suoran pisteillä on sama hyötysuhde. Kuvaajassa ei ole mittauspisteitä.")

@@ -94,7 +94,7 @@ T_ROOM, T0, K = 2.0, 9.0, 0.23        # model units only: the figure has no numb
 def model():
     """The model T(t): the temperature falls fastest at first and approaches the room temperature (dashed line); the
     difference halves in every equal interval t½ (three vertical bars)."""
-    f = Fig("fy10jt-model", 400, "Kuvaaja: veden lämpötila T ajan t funktiona Newtonin jäähtymislain mukaan. Lämpötila "
+    f = Fig("fy10jt-model", 400, "Mallikuvaaja: veden lämpötila T ajan t funktiona Newtonin jäähtymislain mallin mukaan. Lämpötila "
             "lähtee alkulämpötilasta T nolla ja laskee aluksi jyrkästi, sitten yhä loivemmin, ja lähestyy katkoviivalla "
             "merkittyä huoneen lämpötilaa T huone mutta ei laske sen alle. Kolme pystysuoraa janaa näyttää veden ja huoneen "
             "lämpötilaeron kolmena hetkenä, jotka ovat yhtä pitkän ajan t puoli päässä toisistaan: jana on joka kerta "
@@ -121,8 +121,8 @@ def model():
 
 def linear():
     """The linearised model: ln(T - T_huone) against t is a falling straight line with slope -k."""
-    f = Fig("fy10jt-linear", 360, "Kuvaaja: lämpötilaeron T miinus T huone luonnollinen logaritmi ajan t funktiona "
-            "Newtonin jäähtymislain mukaan. Kuvaaja on laskeva suora, joka alkaa pystyakselilta kohdasta luonnollinen "
+    f = Fig("fy10jt-linear", 360, "Mallikuvaaja: lämpötilaeron T miinus T huone luonnollinen logaritmi ajan t funktiona "
+            "Newtonin jäähtymislain mallin mukaan. Kuvaaja on laskeva suora, joka alkaa pystyakselilta kohdasta luonnollinen "
             "logaritmi T nolla miinus T huone ja jonka kulmakerroin on miinus k. Kuvaajassa ei ole mittauspisteitä.")
     ax = Axes(f, (90, 300), (470, 60), x=(0, 10), y=(0, 10), xticks=[], yticks=[], xlabel=r"t",
               ylabel=r"\ln(T - T_\text{huone})", grid=False)

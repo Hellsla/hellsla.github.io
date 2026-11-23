@@ -1,25 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 2d84a1de83570817
+CONTENT-HASH: db95bbe75962f18c
 
 ## Blocking
-
-None.
+- None.
 
 ## Polish
+- None.
 
-- The body names suoran sovitus, kulmakerroin and taulukkolaskenta (three links, matching the analysis step); tvt-epavarmuus is in the prerequisite but not linked where Δ of the slope is asked. Consider linking it in *Epävarmuus ja luotettavuus*.
-- The Raportoi link sits in a parenthesis that splits the main clause, and "kuvaajista ja tuloksista ohje …" reads telegraphic (while the guide is unpublished its name runs straight into the sentence). Suggest a sentence of its own after the first: "Kuvaajien ja tulosten esittämisessä auttaa ohje [[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]."
-
-## Checked (delta 2026-10-31)
-
-- Body links fit "piirtämiseen ja sovitukseen"
-- topic `aine` fits
-- Raportoi names aligned
-
-## Delta 2 (2026-10-31)
-
-- Raportoi: the guide link is now its own sentence after the main clause — reads cleanly; earlier note closed.
-
-## Delta 4 (2026-10-31)
-
-- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+## Checked
+- Diff since the earlier PASS: only `\ ` to `\,` between number and unit (6 lines in investigation.md); no task, prediction, data step, uncertainty or report wording changed.
+- Learning path, variable control, workload and phone/laptop use unchanged from the earlier PASS; thin space does not affect legibility.
