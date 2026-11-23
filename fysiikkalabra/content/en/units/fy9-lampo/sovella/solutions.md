@@ -216,7 +216,7 @@ The circled points in the graph are the two points of the line from which the sl
 
 ### d)
 **Find:** why the result $2.54\,\text{MJ/kg}$ from one measurement is too large and which result is more reliable
-**Principle:** Energy is conserved: the energy $P\,t$ of the heater is divided between vaporisation and heat conducted to the room, $P\,t = r\,\Delta m + P_\text{loss}\,t$ (chapter *Changes of state*).
+**Principle:** Energy is conserved: the energy $P\,t$ of the heater becomes internal energy of the water and the container; part of it vaporises the water and part is transferred as heat to the room, $P\,t = r\,\Delta m + P_\text{loss}\,t$ (chapter *Changes of state*).
 **Model answer:** In the calculation $r = \dfrac{P\,t}{\Delta m}$ from one measurement, all the energy of the heater is assumed to have gone into vaporisation. In reality about $70\,\text{W}$ is conducted to the room, so at the power $600\,\text{W}$ only about $530\,\text{W}$ is left for vaporisation. The calculation therefore has too much energy per unit of mass, and the result is about $\dfrac{P}{P - P_\text{h}} = 600 : 530 \approx 1.13$ times, that is about $13\,\%$, too large. The result from the graph is more reliable. A constant loss power shifts the line sideways but does not change its slope, so the $r$ calculated from the slope does not include the loss. In addition, five measurements and a line fitted between them reduce the effect of the random error of a single reading. The method assumes that the loss power is the same at all powers. This is justified, because boiling water is always at $100\,{}^\circ\text{C}$, and the points lying on a straight line support the assumption.
 
 ### Yleisiä virheitä
@@ -295,7 +295,7 @@ s &= \dfrac{21\,537\,\text{J} - 1890\,\text{J} - 2996\,\text{J}}{0.0500\,\text{k
 &= 333\,\text{kJ/kg}
 \end{aligned}
 $$
-**Answer:** $333\,\text{kJ/kg}$, three significant figures like the measurements. The group's conclusion does not hold: the corrected result agrees with the table value $334\,\text{kJ/kg}$, and the difference came from a wrong assumption, not from the table. Nor does the cup explain the difference. If the cup took heat, the group's formula would also credit that to the ice, and the result would indeed be too large, but the difference $1890\,\text{J}$ would require a heat capacity of about $1890\,\text{J} : 25.7\,\text{K} \approx 70\,\text{J/K}$ for the cup. The heat capacity of a polystyrene cup of a few grams is only a few $\text{J/K}$, and the corrected value already agrees with the table.
+**Answer:** $333\,\text{kJ/kg}$, three significant figures like the measurements. The group's conclusion does not hold: the corrected result agrees with the table value $334\,\text{kJ/kg}$, and the difference came from a wrong assumption, not from the table. Nor does the cup explain the difference. If the cup took heat, the group's formula would also credit that to the ice, and the result would indeed be too large, but the difference $1890\,\text{J}$ would require a heat capacity of about $1890\,\text{J} : 25.7\,\text{K} \approx 73.5\,\text{J/K}$ for the cup. The heat capacity of a polystyrene cup of a few grams is only a few $\text{J/K}$, and the corrected value already agrees with the table.
 **Reasonableness:** The warming of the ice takes $1890\,\text{J}$, only about $9\,\%$ of the heat released by the water, but divided by the small mass of ice it is $38\,\text{kJ/kg}$, exactly the difference of the results $371 - 333$. The corrected value differs from the table by less than one per cent, which is within the precision of the measurements.
 
 ### c)
@@ -484,7 +484,7 @@ s &= \dfrac{200\,\text{kJ}}{0.60\,\text{kg}} \\
 &\approx 333\,\text{kJ/kg}
 \end{aligned}
 $$
-**Answer:** $s \approx 3.3 \cdot 10^{2}\,\text{kJ/kg}$, two significant figures. The table value is $333\,\text{kJ/kg}$, so the result is the same.
+**Answer:** $s \approx 3.3 \cdot 10^{2}\,\text{kJ/kg}$, two significant figures. The table value is $334\,\text{kJ/kg}$, so the result is the same to two significant figures.
 **Reasonableness:** Melting takes $200\,\text{kJ}$, ten times the $20\,\text{kJ}$ used for warming the ice, although the temperature does not change: melting needs a lot of energy. $333\,\text{kJ/kg}$ corresponds to warming water by about $80\,\text{K}$.
 
 ### c)

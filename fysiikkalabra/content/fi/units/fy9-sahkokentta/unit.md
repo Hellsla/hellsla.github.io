@@ -161,10 +161,10 @@ Esimerkiksi alkeisvaraus saa jännitteen $1\,\text{V}$ läpi liike-energian $1\,
 ```kaavat
 kondensaattorilaki :: Q = CU
 levykondensaattorin kapasitanssi :: C = \varepsilon_0\varepsilon_\text{r}\,\frac{A}{d}
-kondensaattorin energia :: E = \tfrac12 CU^2
+kondensaattorin energia :: W = \tfrac12 CU^2
 ```
 
-missä $C$ on kapasitanssi ($\text{F}$), $A$ levyn pinta-ala ($\text{m}^2$), $\varepsilon_0 = 8{,}854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ eristeen suhteellinen permittiivisyys, $E$ kondensaattoriin varastoitunut energia ($\text{J}$), myös $E = \tfrac12 QU$. Levykondensaattorin kaava pätee, kun $d$ on pieni levyjen kokoon verrattuna ja eriste täyttää välin. Lähteeseen kytketyn kondensaattorin jännite pysyy samana, irrotetun varaus.
+missä $C$ on kapasitanssi ($\text{F}$), $A$ levyn pinta-ala ($\text{m}^2$), $\varepsilon_0 = 8{,}854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ eristeen suhteellinen permittiivisyys, $W$ kondensaattoriin varastoitunut energia ($\text{J}$), myös $W = \tfrac12 QU$. Levykondensaattorin kaava pätee, kun $d$ on pieni levyjen kokoon verrattuna ja eriste täyttää välin. Lähteeseen kytketyn kondensaattorin jännite pysyy samana, irrotetun varaus.
 
 ```pysahdy
 Mitä tapahtuu levykondensaattorin kapasitanssille, kun levyjen väli kaksinkertaistetaan ja muu pysyy samana?

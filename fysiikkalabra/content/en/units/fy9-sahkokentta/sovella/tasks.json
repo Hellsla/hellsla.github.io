@@ -855,7 +855,7 @@
         "fy4-7"
       ],
       "figure": "fy6-12/ex-vgraph",
-      "text": "Two large metal plates are parallel in a vacuum, and there is a uniform electric field between them. The graph shows the potential $V$ as a function of the distance $x$, where $x$ is measured from the negative plate. An alpha particle (a helium nucleus, charge $+2e$) is between the plates, and only the electric force acts on it.\n\n- elementary charge $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$\n- mass of the alpha particle $6.645 \\cdot 10^{-27}\\,\\text{kg}$",
+      "text": "Two large metal plates are parallel in a vacuum, $5.0\\,\\text{cm}$ apart, and there is a uniform electric field between them. The graph shows the potential $V$ as a function of the distance $x$, where $x$ is measured from the negative plate. An alpha particle (a helium nucleus, charge $+2e$) is between the plates, and only the electric force acts on it.\n\n- elementary charge $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$\n- mass of the alpha particle $6.645 \\cdot 10^{-27}\\,\\text{kg}$",
       "parts": [
         {
           "id": "a",

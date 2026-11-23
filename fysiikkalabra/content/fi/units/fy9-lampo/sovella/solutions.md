@@ -216,7 +216,7 @@ Kuvaajassa ympyröidyt kohdat ovat ne kaksi suoran pistettä, joista b-kohdan ku
 
 ### d)
 **Kysytty:** miksi yhden mittauksen tulos $2{,}54\,\text{MJ/kg}$ on liian suuri ja kumpi tulos on luotettavampi
-**Periaate:** Energia säilyy: kuumentimen energia $P\,t$ jakautuu höyrystämiseen ja huoneeseen johtuvaan lämpöön, $P\,t = r\,\Delta m + P_\text{h}\,t$ (luku *Olomuodon muutokset*).
+**Periaate:** Energia säilyy: kuumentimen energia $P\,t$ muuttuu veden ja astian sisäenergiaksi, josta osa höyrystää vettä ja osa siirtyy lämpönä huoneeseen, $P\,t = r\,\Delta m + P_\text{h}\,t$ (luku *Olomuodon muutokset*).
 **Mallivastaus:** Yhden mittauksen laskussa $r = \dfrac{P\,t}{\Delta m}$ koko kuumentimen energia oletetaan kuluneen höyrystämiseen. Todellisuudessa noin $70\,\text{W}$ johtuu huoneeseen, joten teholla $600\,\text{W}$ höyrystämiseen jää vain noin $530\,\text{W}$. Laskussa on siis liikaa energiaa samaa massaa kohti, ja tulos on noin $\dfrac{P}{P - P_\text{h}} = 600 : 530 \approx 1{,}13$-kertainen eli noin $13\,\%$ liian suuri. Kuvaajasta saatu tulos on luotettavampi. Vakiona pysyvä häviöteho siirtää suoraa sivulle mutta ei muuta sen kulmakerrointa, joten kulmakertoimesta laskettu $r$ ei sisällä häviötä. Lisäksi viisi mittausta ja niiden lomitse sovitettu suora pienentävät yksittäisen lukeman satunnaisvirheen vaikutusta. Menetelmä olettaa, että häviöteho on sama kaikilla tehoilla. Se on perusteltua, koska kiehuva vesi on aina $100\,{}^\circ\text{C}$:ssa, ja pisteiden asettuminen suoralle tukee oletusta.
 
 ### Yleisiä virheitä
@@ -295,7 +295,7 @@ s &= \dfrac{21\,537\,\text{J} - 1890\,\text{J} - 2996\,\text{J}}{0{,}0500\,\text
 &= 333\,\text{kJ/kg}
 \end{aligned}
 $$
-**Vastaus:** $333\,\text{kJ/kg}$, kolme merkitsevää numeroa kuten mittaustulokset. Ryhmän johtopäätös ei pidä: korjattu tulos on taulukkoarvon $334\,\text{kJ/kg}$ mukainen, ja ero johtui virheellisestä oletuksesta, ei taulukosta. Muki ei myöskään selitä eroa. Jos muki ottaisi lämpöä, ryhmän kaava lukisi senkin jään hyväksi, ja tulos olisi tosin liian suuri, mutta erotus $1890\,\text{J}$ vaatisi mukilta noin $1890\,\text{J} : 25{,}7\,\text{K} \approx 70\,\text{J/K}$ lämpökapasiteetin. Muutaman gramman styroksimukin lämpökapasiteetti on vain muutama $\text{J/K}$, ja korjattu arvo on jo taulukon mukainen.
+**Vastaus:** $333\,\text{kJ/kg}$, kolme merkitsevää numeroa kuten mittaustulokset. Ryhmän johtopäätös ei pidä: korjattu tulos on taulukkoarvon $334\,\text{kJ/kg}$ mukainen, ja ero johtui virheellisestä oletuksesta, ei taulukosta. Muki ei myöskään selitä eroa. Jos muki ottaisi lämpöä, ryhmän kaava lukisi senkin jään hyväksi, ja tulos olisi tosin liian suuri, mutta erotus $1890\,\text{J}$ vaatisi mukilta noin $1890\,\text{J} : 25{,}7\,\text{K} \approx 73{,}5\,\text{J/K}$ lämpökapasiteetin. Muutaman gramman styroksimukin lämpökapasiteetti on vain muutama $\text{J/K}$, ja korjattu arvo on jo taulukon mukainen.
 **Järkevyys:** Jään lämpeneminen vie $1890\,\text{J}$ eli vain noin $9\,\%$ veden luovuttamasta lämmöstä, mutta jaettuna pienellä jäämassalla se on $38\,\text{kJ/kg}$, juuri tulosten ero $371 - 333$. Korjattu arvo poikkeaa taulukosta alle prosentin, mikä on mittausten tarkkuuden rajoissa.
 
 ### c)
@@ -484,7 +484,7 @@ s &= \dfrac{200\,\text{kJ}}{0{,}60\,\text{kg}} \\
 &\approx 333\,\text{kJ/kg}
 \end{aligned}
 $$
-**Vastaus:** $s \approx 3{,}3 \cdot 10^{2}\,\text{kJ/kg}$, kaksi merkitsevää numeroa. Taulukon arvo on $333\,\text{kJ/kg}$, joten tulos on sama.
+**Vastaus:** $s \approx 3{,}3 \cdot 10^{2}\,\text{kJ/kg}$, kaksi merkitsevää numeroa. Taulukon arvo on $334\,\text{kJ/kg}$, joten tulos on sama kahden merkitsevän numeron tarkkuudella.
 **Järkevyys:** Sulamiseen kuluu $200\,\text{kJ}$ eli kymmenkertainen määrä jään lämmittämiseen kuluneeseen $20\,\text{kJ}$:iin verrattuna, vaikka lämpötila ei muutu: sulaminen on energiavaltainen vaihe. $333\,\text{kJ/kg}$ vastaa veden lämmittämistä noin $80\,\text{K}$.
 
 ### c)

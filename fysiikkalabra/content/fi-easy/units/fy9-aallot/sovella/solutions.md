@@ -77,23 +77,23 @@ $$, koska nopeus on sama.
 **Annettu:** kaiun kulkuaika $t = 12{,}0\,\text{ms}$, äänen nopeus $v = 340\,\text{m/s}$, lepakon nopeus $6{,}0\,\text{m/s}$
 **Kysytty:** hyönteisen etäisyys $d$ ja se, miten lepakon liike vaikuttaa siihen
 **Periaate:** Pulssi kulkee lepakosta hyönteiseen ja kaikuna takaisin. Siksi se kulkee matkan $d$ kahdesti tasaisella nopeudella (luku *Soveltava luku: ultraäänikuvaus ja maanjäristysaallot*). Lepakon oma liike kaiun aikana arvioidaan erikseen.
-**Kaava:** $2d = vt$, joten $d = \dfrac{vt}{2}$; lepakon siirtymä $s = v_\text{l} t$
+**Kaava:** $2d = vt$, joten $d = \dfrac{vt}{2}$; lepakon siirtymä $s = v_\text{L} t$
 **Muunnokset:** $12{,}0\,\text{ms} = 12{,}0 \cdot 0{,}001\,\text{s} = 0{,}0120\,\text{s}$
 **Sijoitus:** $d = \dfrac{340\,\tfrac{\text{m}}{\text{s}} \cdot 0{,}0120\,\text{s}}{2} = 2{,}04\,\text{m}$ ja $s = 6{,}0\,\tfrac{\text{m}}{\text{s}} \cdot 0{,}0120\,\text{s} = 0{,}072\,\text{m}$
 **Vastaus:** Hyönteinen on noin $2{,}04\,\text{m}$:n päässä. Vastauksessa on kolme merkitsevää numeroa kuten kulkuajassa $12{,}0\,\text{ms}$. Lepakko liikkuu kaiun aikana noin $7\,\text{cm}$ eli noin $3{,}5\,\%$ etäisyydestä. Siksi etäisyys tunnetaan oikeastaan vain noin $2{,}0\,\text{m}$:n tarkkuudella.
 **Järkevyys:** Kahden metrin matka edestakaisin on $4\,\text{m}$. Ääni kulkee sen noin sadasosasekunnissa, kuten mitattiin. Lepakon nopeus on alle $2\,\%$ äänen nopeudesta. Siksi lepakon liikkeen vaikutus on pieni.
 
 ### c)
-**Annettu:** pulssin taajuus $f_0 = 30{,}0\,\text{kHz}$, lepakon nopeus $v_\text{l} = 6{,}0\,\text{m/s}$ kohti seinää, äänen nopeus $v = 340\,\text{m/s}$, seinä on paikallaan
+**Annettu:** pulssin taajuus $f_0 = 30{,}0\,\text{kHz}$, lepakon nopeus $v_\text{L} = 6{,}0\,\text{m/s}$ kohti seinää, äänen nopeus $v = 340\,\text{m/s}$, seinä on paikallaan
 **Kysytty:** taajuus $f$, jolla lepakko kuulee kaiun
-**Periaate:** Dopplerin ilmiö tapahtuu kahdesti (luku *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*). Lepakko on ensin lähde ja sitten kuulija. Sen nopeus on $v_\text{l}$.
+**Periaate:** Dopplerin ilmiö tapahtuu kahdesti (luku *Ääni aaltona: korkeus, sointiväri ja Dopplerin ilmiö*). Lepakko on ensin lähde ja sitten kuulija. Sen nopeus on lähteenä $v_\text{L}$ ja kuulijana $v_\text{H} = v_\text{L}$.
 
 Ensin lepakko on liikkuva lähde, ja seinä on paikallaan oleva vastaanottaja. Lähestyvän lähteen edessä aallonpituus lyhenee. Sitten seinä heijastaa taajuuden, jonka se vastaanotti. Seinä on nyt paikallaan oleva lähde. Lepakko on nyt kuulija, joka lähestyy seinää. Siksi lepakko kohtaa aaltorintamat useammin. Kummassakin vaiheessa lähestyminen nostaa taajuutta.
-**Kaava:** $f_\text{s} = f_0 \cdot \dfrac{v}{v - v_\text{l}}$ ja $f = f_\text{s} \cdot \dfrac{v + v_\text{l}}{v}$, joten $f = f_0 \cdot \dfrac{v + v_\text{l}}{v - v_\text{l}}$
+**Kaava:** $f_\text{s} = f_0 \cdot \dfrac{v}{v - v_\text{L}}$ ja $f = f_\text{s} \cdot \dfrac{v + v_\text{H}}{v}$, ja koska $v_\text{H} = v_\text{L}$, $f = f_0 \cdot \dfrac{v + v_\text{L}}{v - v_\text{L}}$
 **Muunnokset:** Taajuus pysyy yksikössä $\text{kHz}$, koska nopeuksien suhteella ei ole yksikköä.
 **Sijoitus:** $f_\text{s} = 30{,}0\,\text{kHz} \cdot \dfrac{340\,\text{m/s}}{334\,\text{m/s}} = 30{,}54\,\text{kHz}$ ja $f = 30{,}54\,\text{kHz} \cdot \dfrac{346\,\text{m/s}}{340\,\text{m/s}} = 31{,}08\,\text{kHz}$
 **Vastaus:** $f \approx 31{,}1\,\text{kHz}$ eli noin $1{,}1\,\text{kHz}$ korkeampi kuin lähetetty pulssi. Vastauksessa on kolme merkitsevää numeroa kuten taajuudessa $30{,}0\,\text{kHz}$.
-**Järkevyys:** Pienillä nopeuksilla kumpikin vaihe nostaa taajuutta noin osuudella $\tfrac{v_\text{l}}{v} = \tfrac{6{,}0}{340} \approx 1{,}8\,\%$. Yhteensä nousu on noin $3{,}5\,\%$, ja $$
+**Järkevyys:** Pienillä nopeuksilla kumpikin vaihe nostaa taajuutta noin osuudella $\tfrac{v_\text{L}}{v} = \tfrac{6{,}0}{340} \approx 1{,}8\,\%$. Yhteensä nousu on noin $3{,}5\,\%$, ja $$
 30{,}0\,\text{kHz} \cdot 1{,}035 \approx 31{,}1\,\text{kHz}
 $$. Kuultu taajuus on suurempi kuin $f_0$, kuten lähestyessä pitää olla.
 
@@ -111,7 +111,7 @@ Ultraäänen aallonpituus $11\,\text{mm}$ on hyttysen kokoluokkaa. Siksi hyttyne
 - d-kohdassa sanotaan, että matala ääni on heikompi. Ratkaisevaa on kuitenkin aallonpituuden ja kohteen koon suhde.
 
 ### Hyväksytään myös
-- c-kohdassa ratkaisu suoraan yhdistetyllä kaavalla $f = f_0 \cdot \dfrac{v + v_\text{l}}{v - v_\text{l}}$, kun kaavan kaksi vaihetta on perusteltu.
+- c-kohdassa ratkaisu suoraan yhdistetyllä kaavalla $f = f_0 \cdot \dfrac{v + v_\text{L}}{v - v_\text{L}}$, kun kaavan kaksi vaihetta on perusteltu.
 
 ## fy9-aallot-s3
 
@@ -508,7 +508,7 @@ $$
 **Annettu:** $\Delta s = 0{,}50\,\text{m}$ ja $\lambda = 1{,}00\,\text{m}$; kaiuttimet toistavat ääntä samassa vaiheessa
 **Kysytty:** onko pisteessä $\text{P}$ ääni voimakas vai vaimea
 **Periaate:** Kun lähteet ovat samassa vaiheessa, aallot vahvistavat toisiaan, jos $\Delta s = n\lambda$. Ne kumoavat toisensa, jos $\Delta s = \left(n + \tfrac{1}{2}\right)\lambda$ (luku *Aaltojen yhteisvaikutus: superpositio ja interferenssi*). Siksi matkaeroa verrataan aallonpituuteen.
-**Mallivastaus:** Matkaero on $\dfrac{\Delta s}{\lambda} = \dfrac{0{,}50\,\text{m}}{1{,}00\,\text{m}} = 0{,}50$ eli puoli aallonpituutta. Toinen aalto on kulkenut puoli aallonpituutta pidemmän matkan. Se saapuu pisteeseen $\text{P}$ vastakkaisvaiheessa. Kun toinen aalto painaa ilmaa kokoon, toinen harventaa sitä. Aallot kumoavat toisensa. Piste $\text{P}$ on siis vaimean äänen kohta, lähes hiljainen solmuviiva. Täysin hiljainen se ei ole, koska kauempana oleva kaiutin kuuluu hieman heikommin.
+**Mallivastaus:** Matkaero on $\dfrac{\Delta s}{\lambda} = \dfrac{0{,}50\,\text{m}}{1{,}00\,\text{m}} = 0{,}50$ eli puoli aallonpituutta. Toinen aalto on kulkenut puoli aallonpituutta pidemmän matkan. Se saapuu pisteeseen $\text{P}$ vastakkaisvaiheessa. Kun toinen aalto painaa ilmaa kokoon, toinen harventaa sitä. Aallot kumoavat toisensa. Piste $\text{P}$ on siis vaimean äänen kohta, solmuviiva. Tehtävän oletuksen mukaan kaiuttimien eri etäisyydestä johtuva voimakkuusero jätetään huomiotta. Siksi aaltojen amplitudit ovat yhtä suuret ja aallot kumoavat toisensa kokonaan: pisteessä $\text{P}$ on hiljaista.
 
 ### d)
 **Annettu:** $\Delta s = 0{,}50\,\text{m}$ ja $v = 343{,}4\,\text{m/s}$; alussa $f = 343\,\text{Hz}$, jolloin $\Delta s = \tfrac{1}{2}\lambda$

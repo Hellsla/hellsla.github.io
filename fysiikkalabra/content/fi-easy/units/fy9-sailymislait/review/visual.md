@@ -1,20 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: c24d068e46b34b98
+CONTENT-HASH: b3e3ee5b4e82ab7c
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-sailymislait (fi-easy): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-(none)
-
-## Polish
-- [Minor] stage-selita-1280-1 — the tall "kartta" figure (380 px wide) stands alone under the first Pysähdy ja mieti box with an empty right column beside it (text above/below is full width) — acceptable, existing layout; optional: none needed.
-- [Minor] unit.md "Kaavoissa $m$ on massa ($\text{kg}$)" and "($\text{m/s}$)" — unit alone in a parenthesis is fine; "Reaktioajan $t_\text{r}$ ($\text{s}$) auto kulkee" reads slightly clipped for S2 readers — consider "Reaktioaika $t_\text{r}$ ($\text{s}$) on aika, jonka auto kulkee vakionopeudella $v_0$".
-- [Minor] first box: two questions in one line ("Milloin liikemäärä säilyy? Miksi mekaaninen energia voi silti vähentyä?") — works; a line break between them would help S2 readers.
-
-## Checked
-- Opened: top-390, selita-390-1, -3, -4, selita-1280-1, -3 (all three aside.stop-think boxes at 390 and 1280).
-- Boxes: green left-rule card, small-caps label "PYSÄHDY JA MIETI", question at body size, openable "Vastaus" (shown open in captures), inline maths ($W < 0$) renders, no clipping or overflow at 390/1280, one reading column, hierarchy clear and distinct from formula cards. 360 px covered by check_layout results in packet (not separately opened).
-- Figures kartta, pysahtyminen seen in captures: legible, labels LaTeX, v/t graph areas labelled. Hero: train scene, restrained, middle third, consistent with palette.
-- Finnish (selkosuomi): fluent, short sentences, terms explained (säilymislaki, nollataso, komponentti); box answers complete and consistent with glossary.
-- Not opened individually: exercise/sovella/tarkista captures beyond contact sheets' scope of this task (box scope was the focus).
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.

@@ -1,18 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: dca543627b04711a
+CONTENT-HASH: c7bd857714016ab6
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-voimat (fi): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-(none)
-
-## Polish
-- [Minor] Pysähdy ja mieti -boksit (selita 390/1280) — vain avattu tila nähty kaappauksissa; suljetun "Vastaus"-osion ulkoasua ei voitu arvioida — varmista suljettu tila ennen julkaisua.
-- [Minor] Boksien kysymysteksti on samaa kokoa kuin leipäteksti; kehotteen pienet-kapiteelit-otsake ("PYSÄHDY JA MIETI") on pieni (~13 px) — hyväksyttävä, mutta kontrasti vihreä/vaaleanvihreä kannattaa tarkistaa.
-- [Minor] Kuva "kalteva", voimakuvio: for science: kitkavoiman F_mu nuolen suunta suhteessa rinteeseen/liikkeeseen (osoittaa oikealle, kappale liukuu vasemmalle alas) — tarkista, osoittaako se rinnettä ylös.
-
-## Checked
-- selita-390-1…3, selita-1280-1…3 (kaikki kolme aside.stop-think-boksia: label, kysymys, avattu Vastaus, matematiikka $N = mg\cos\alpha$, $G_y$ ei leikkaudu), top-390, kartta-kuva ja kalteva-kuva (luettavat 390 px), Kaava-taulukot.
-- Boksit: vihreä vasen reunaviiva, selkeä otsake, kysymys, avattava Vastaus; ei vaakasuuntaista ylivuotoa; hierarkia hyvä kummallakin leveydellä. 360 px:ää ei avattu erikseen (check_layout kattaa).
-- Suomi: sujuva, termit johdonmukaisia; yksiköt LaTeXina; ei havaittuja kielivirheitä.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.

@@ -1,17 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: bfe9479ef3570ebe
+CONTENT-HASH: a7053b7857211354
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-kokeellisuus (fi-easy): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-(none)
-
-## Polish
-- [Minor] kartta-kuva at 1280 (selita-1280-1) — the decision map is only about 380 px wide and leaves the right of the column empty; its text paragraph is short, so no side-by-side. Shared figure layout; acceptable.
-- [Minor] fig "virhe" at 390 — axis/tick labels render small (about 11 px effective); readable, not clipped.
-
-## Checked
-- Opened top-390, selita-390-1/-2/-3/-4, selita-1280-1 (four Pysähdy ja mieti boxes: label, question, Vastaus open, text and inline math intact at 390 and 1280, no clipping or overflow; green box is consistent with the page, hierarchy clear; the answer is a native details so keyboard-reachable).
-- Figures seen: hero, kartta (decision map), virhe (graph with data points, fit, dashed extrapolation, labelled intercept).
-- Finnish (selkosuomi): the box questions and answers are plain, one idea each, terms (resoluutio, epävarmuus, kulmakerroin) consistent with the surrounding text; no AI-phrasing.
-- Not opened individually: the sovella/tarkista/teacher captures (unchanged by this diff; the packet's deterministic checks are clean).
-
-Scores: illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.
