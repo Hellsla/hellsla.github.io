@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f2d06e99ef2be864
+CONTENT-HASH: 66cbf9bb521d16b8
+SCOPE: delta
 
 ## Blocking
 - none
 
 ## Polish
-- solutions.md L2-07 (battery energy), Vastaus — "epätarkin yhteenlaskettava" is jargon for this reading level; fix: "Summa annetaan samalla tarkkuudella kuin tarkkuudeltaan heikoin luku, eli yhden desimaalin tarkkuudella."
+- solutions.md L2-07 Vastaus: "epätarkin yhteenlaskettava" is jargon (carried over); fix: "Summa annetaan yhden desimaalin tarkkuudella, kuten heikoin luku."
 
 ## Checked
-- Diff only adds the reason for three significant figures (each hour's energy is a product of two-figure numbers, the sum is rounded to the least precise decimal); the reasoning is correct and 12,5 Wh stays consistent with the steps.
-- Task, figures and the other solution parts unchanged.
+- Every Kaava step now opens from the basic equation (I = Q/t, U = E/Q, Q = Ne) and then rearranges, in aligned rows; the order is principle, then derived form, then substitution.
+- L3-04 and L3-06 chains (E = UQ, Q = It, sums) follow in logical order and agree with the Sijoitus rows.
+- Long answers in L1-05, L1-06, L1-07, L2-06 and L2-07 are split into short paragraphs; no content lost.
+- Task text, figures and numbers unchanged.

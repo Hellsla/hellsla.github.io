@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 2eb18a63c0e1ad44
+CONTENT-HASH: 58ff29a1ecb104bc
+SCOPE: delta
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- exercises.json fy6-3-L2-08 — part d (lamp) is not tied to the simulation; the student could add the Circuit Construction Kit bulb and see the curve — optional extension.
-- fy6-3-L2-08 — the graph has I on the vertical axis, unlike the lesson's characteristic curve; the solution says so, a hint in the task would also do.
+- solutions.md L2-08 Kaava — "Kohta b): $$…$$ Kohta c): $P = UI$" puts a display block in the middle of a line; give c) its own line so the page does not break oddly.
+- Earlier polish on L2-08 still open (hint on the axes: I vertical, unlike the lesson's curve).
 
 ## Checked
-- New task: applied, simulation needed, 4 parts rising (measure, graph/R, power, model limit), calculation and reasoning mixed, within fy6-3 scope.
-- Example table lets the task run without the simulation and checks the method; answer 40 ohm matches the solution.
-- Set: 10/8/5 tasks, levels and order intact; no overlap found with the other level-2 data task beyond the shared U-I table form.
+- Kaava steps now list the basic equations (R = U/I, R = ρl/A, r = d/2, A = πr²) before the rearranged form, on aligned rows; the doubled-wire proof ends symbolically in R_2 = 4R_1 before any number.
+- Long Periaate and Mallivastaus texts (lamp, diode, wire-temperature experiment errors, graph options A to D) split into one idea per paragraph; nothing removed.
+- Graph-option explanations name each error (I : U slope, constant voltage, non-ohmic curve), which repairs the misconception.
+- L2-08 Annettu split keeps the note that the table is an example measurement and that own readings differ.
+- No number or unit changed.

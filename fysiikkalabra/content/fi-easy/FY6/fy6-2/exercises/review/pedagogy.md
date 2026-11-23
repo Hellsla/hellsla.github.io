@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: f3c6399e3049def6
+CONTENT-HASH: e0d944a8c7421a99
+SCOPE: delta
 
 ## Blocking
 - none
@@ -8,4 +9,7 @@ CONTENT-HASH: f3c6399e3049def6
 - none
 
 ## Checked
-- Diff is one spelling change, "virhe-arvio" to "virhearvio" (compound written together, correct Finnish); nothing else changed.
+- Kaava steps are aligned rows that start from the base law (Kirchhoff, Σ U = 0 and Σ I = 0 in the divider and meter-in-series tasks; Δx = p·x + n·r before ratios).
+- The divider derivation moved from Sijoitus to Kaava, so symbols are solved before numbers; Sijoitus now only substitutes 12,0 V : 2,10 = 5,714 V, correct.
+- Long model answers (fuse blown, OL, repeat measurement, divider, R = U : I) are split into short paragraphs; content unchanged.
+- Task, figure and numbers unchanged.
