@@ -41,7 +41,7 @@ def speaker(f, x, y, sc=1.0):
 def longitudinal():
     f = Fig("fy514-long", 356, "Kaavakuva, ei mittakaavassa. Ylhäällä vasemmalla kaiutin, jonka edessä on ilmaa putkessa. Ilman "
             "hiukkaset on piirretty sinisinä pisteinä, ja ne ovat paikoin tiheässä ja paikoin harvassa: tiheät kohdat ovat "
-            "tihentymiä ja harvat harventumia. Hiukkaset värähtelevät edestakaisin aallon etenemissuunnassa, mitä esittää "
+            "tihentymiä ja harvat harvennuksia. Hiukkaset värähtelevät edestakaisin aallon etenemissuunnassa, mitä esittää "
             "pieni kaksipäinen nuoli, ja aalto etenee oikealle, mitä esittää sininen nuoli. Alhaalla on saman hetken paine "
             "paikan funktiona: käyrä vaihtelee normaalin ilmanpaineen p0 molemmin puolin, ja sen huiput ovat tihentymien "
             "kohdalla. Kahden vierekkäisen tihentymän etäisyys on aallonpituus lambda.")
