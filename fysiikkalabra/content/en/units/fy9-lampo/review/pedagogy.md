@@ -1,8 +1,9 @@
-VERDICT: FAIL
-CONTENT-HASH: f675e8b2f98303da
+VERDICT: PASS
+CONTENT-HASH: 0894ff446efa15c2
 SCOPE: delta (old-content fixes, git diff origin/main)
 
-Blocking
-1. content/en/units/fy9-lampo/teacher.md row 9 (65-75 min): the unit has 8 tasks, but the text still says the other five tasks are homework (`muut viisi` / `other five`). Fix: seven (`seitsemän`).
-Checked
-2. Numbers changed (13 %, 73.5 J/K, 334 kJ/kg) recompute; rubric, solution and model answer agree. The fi, en and fi-easy versions carry the same changes with the same meaning.
+Blocking: none.
+
+1. Teacher.md: 'other seven tasks are homework' matches eight tasks. Earlier delta lines (solutions, tasks) still consistent across languages.
+2. Earlier delta lines re-read briefly: the changes touch only counts, points and notation; no misconception feedback, hint ladder or rubric criterion was weakened, and no answer is disclosed early.
+3. Polish: none.

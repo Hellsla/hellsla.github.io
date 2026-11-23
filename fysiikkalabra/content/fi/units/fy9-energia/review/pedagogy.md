@@ -1,8 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 43b0eee1dd94226d
+CONTENT-HASH: 3271ecde73bf4128
 SCOPE: delta (old-content fixes, git diff origin/main)
 
-Polish
-1. tasks.json and solutions.md (Hakevoimala, `E = Hm`) still use E while unit.md and the inquiry now use Q = Hm. E is here a general energy used in P0 = E/t, so it is understandable; Q would be more consistent.
-Checked
-2. Task 7 text now gives the 46 % figure (solution 45.8 %); the teacher count (9 tasks, eight homework) and the 'Järkevyys' sentence on friction no longer overclaim.
+Blocking: none.
+
+1. Teacher.md: 'other eight tasks are homework' matches nine tasks; sovella s2 formula and rubric now Q = Hm in all three languages and consistent with the solution. Points sum (134) is not claimed in teacher.md.
+2. Earlier delta lines re-read briefly: the changes touch only counts, points and notation; no misconception feedback, hint ladder or rubric criterion was weakened, and no answer is disclosed early.
+3. Polish: none.

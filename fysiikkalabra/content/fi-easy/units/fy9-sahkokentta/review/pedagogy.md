@@ -1,8 +1,9 @@
-VERDICT: FAIL
-CONTENT-HASH: 6ba8d1b82a782ed6
+VERDICT: PASS
+CONTENT-HASH: 233a15d91997fca8
 SCOPE: delta (old-content fixes, git diff origin/main)
 
-Blocking
-1. content/fi-easy/units/fy9-sahkokentta/teacher.md row 9: the unit has 8 tasks, but the text still says the other five tasks are homework, while row 33 was updated (seven, 125 points). Fix: seven.
-Checked
-2. Task s7 now states the plate separation 5.0 cm and the solution (250 V : 0.050 m) matches; ratio 2.5e10 recomputes; W for capacitor energy is consistent in unit.md. The fi, en and fi-easy versions carry the same changes with the same meaning.
+Blocking: none.
+
+1. Teacher.md: 'other seven' matches eight tasks; points (20 + seven 15 = 125) match tasks.json in all three languages.
+2. Earlier delta lines re-read briefly: the changes touch only counts, points and notation; no misconception feedback, hint ladder or rubric criterion was weakened, and no answer is disclosed early.
+3. Polish: none.

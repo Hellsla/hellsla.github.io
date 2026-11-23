@@ -1,8 +1,9 @@
-VERDICT: FAIL
-CONTENT-HASH: 8d1e60d378711784
+VERDICT: PASS
+CONTENT-HASH: d8a6f721562df046
 SCOPE: delta (old-content fixes, git diff origin/main)
 
-Blocking
-1. content/fi-easy/units/fy9-magnetismi-valo/teacher.md row 9: the unit has 9 tasks, but the text still says the other five tasks are homework, while the points paragraph (row 33) was updated to 8+1. Fix: eight (`kahdeksan`).
-Checked
-2. Points 20 + 7 x 15 + 12 = 137 agree with tasks.json; the added condition for e = vBl (v, B and rod mutually perpendicular) is clear to the student. The fi, en and fi-easy versions carry the same changes with the same meaning.
+Blocking: none.
+
+1. Teacher.md: 'other eight' matches nine tasks; points line (20 + seven 15 + 12 = 137) matches tasks.json sums, identical in fi, en, fi-easy.
+2. Earlier delta lines re-read briefly: the changes touch only counts, points and notation; no misconception feedback, hint ladder or rubric criterion was weakened, and no answer is disclosed early.
+3. Polish: none.
