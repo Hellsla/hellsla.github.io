@@ -1,21 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ffb46e541b24ba0a
-SCOPE: delta added-exercise from 2f696bac3aa33109 base 5b3ca4f81c77
+CONTENT-HASH: a6713c0322ee81f2
+SCOPE: delta md-paragraphs,numbers,reflow,typography,wording from ffb46e541b24ba0a base 64d4935
 
 ## Blocking
-
 (none)
 
 ## Polish
-
-- solutions.md fy8-10-L1-09 Järkevyys/Reasonableness — refers to "the deuterium point in the graph", but this exercise shows no graph — fix: "kuten lukujen kuvaajassa" or drop the clause.
-- solutions.md fy8-10-L3-06 Mallivastaus c) — "/bin/bash{,}9\,\text{MeV}$ jokaista ffb46e541b24ba0a35$ nukleonia kohti" is clumsy — fix: "noin /bin/bash{,}9\,\text{MeV}$ jokaista nukleonia kohti (ffb46e541b24ba0a35$ nukleonia)".
+- fy8-10-L2-02, L3-01: Q = (m_alku − m_loppu)c² opens the step; Q = Δm c² first, with Δm written out, would match fy8-11. L3-02 uses Q = E_B(He) − 2E_B(H) without stating Q = E_B,loppu − E_B,alku as in L3-06.
 
 ## Checked
-
-- L1-09: level 1, one lookup in MAFY, one subtraction, one conversion; the particle-versus-atom mass trap is stated and explained; does not repeat the worked example (helium-4 from atomic masses) and complements L2-06.
-- L2-09: reading a graph at two points, multiplying by A, then total versus per-nucleon in part c: the exact misconception the slot needs; level 2; the figure gives every value, its description lists 120 and 240 readings without the answer.
-- L3-06: combines graph reading, fission and a reasoned contrast with iron-56; differs from L3-04 (masses) and meets the bank's "reading from the graph" aim; answer box tolerance matches reading error.
-- Solutions step by step: principle explained, reading of the graph described in grid terms, plausibility check present.
-- Set mix: level 1 gains a data task, level 2 a graph task, level 3 a graph-reasoning task; no repeat; progression holds.
-- Judged from the packet; no capture opened.
+- Read every Kaava step of the set from solutions.md: basic law first, derived formula after, symbolic simplification to the end; the Sijoitus rows use the last symbolic form.
+- Mass-defect, binding-energy and reaction-energy tasks; the long multi-part L3-04 and L3-05 give each part its own symbolic block.
+- Numbers, answers and tolerances unchanged; the rows are short aligned chains, fine on a phone.
+- Principle explained before the formula; the diagram order and levels (1, 2, 3) are as passed earlier.

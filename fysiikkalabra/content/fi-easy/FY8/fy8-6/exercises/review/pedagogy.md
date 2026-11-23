@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: cb7758cef4b63834
-SCOPE: delta added-exercise from 3f3114ccfa6f8f33 base 5b3ca4f81c77
+CONTENT-HASH: cea2d4f0fbef37cb
+SCOPE: delta md-paragraphs,numbers,reflow,typography from cb7758cef4b63834 base 64d4935
 
 ## Blocking
-(none)
 
 ## Polish
-- L2-09 solution, "Järkevyys"/Reasonableness: the closing sentence about the 539 nm of the model versus the measured line is correct (line gives 2.40 V model vs 2.30 V read at 5.8) but dense for a level-2 student; one clause naming the 0.1 V offset would make it easier to follow.
-- L2-10 part c is not graded by the answer box; the model answer is hedged ("varies"), which is acceptable but gives the student no single observable criterion.
+- solutions.md L1-01, L3-01 Kaava rows stay one-liners and skip the E = hf, c = f\lambda base; fine at their level, optional.
+- solutions.md L3-02 Kaava: the sentence "..., ja poikkeama on ..." continues after the closing aligned block; optional split into two sentences.
 
 ## Checked
-- L2-09: reading f at 2.30 V from the line points (4.6; 1.80) and (7.0; 2.80) gives 5.8e14 Hz; lambda 516.9 nm = 517 nm, green; figure gives every value needed, its description does not state the answer.
-- L2-10: 2.80 V read, hf/e = 2.895 V, difference 0.095 V; arithmetic and sig figs consistent; tolerance fits reading error.
-- Level 2 fits: read a graph, one conversion or one model comparison, short explanation; neither repeats the worked example (that fits the line and uses lambda directly).
-- Progression: both use the figure after the table-based L2-08, a new data kind (graph reading) and a distinct question from each other; mix of kinds improved.
-- Situation first, question last; solutions staged with principle, graph reading, formula, conversion, substitution.
-- Language: terms and number format correct; no case or glossary errors found.
-- Method: delta, added exercises only, texts read from the packet.
+- Delta only: L2-06 paragraph now says Salla's extra 0,16 V cancels the roughly 0,1 V deficit "ja menee vielä hieman yli". This is arithmetically consistent (0,16 > 0,1) and explains why her value lands near the table value without proving her reading method.
+- The new wording keeps the point that the remaining offset drops out of the slope; the Järkevyys line (-4,5 %, the order 5,86 < 6,33 < 6,87) is unchanged and still agrees.
+- L3-04 Kaava now starts with eU_k ≈ hf and U_k ≈ (h/e) f + b, matching the lesson's Kaava (≈ for the model, = only for the single-LED photon relation). Better than before.
+- Numbers, answers, levels and the figure use are unchanged; the earlier PASS conclusions stand.
+- Finnish of the changed sentences is correct (no case-after-number-unit problems).
+- Hash identical at start and end (cea2d4f0fbef37cb).
+- Method: diff in context; no captures needed.

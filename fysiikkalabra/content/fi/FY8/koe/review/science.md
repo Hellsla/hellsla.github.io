@@ -1,28 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 74a741769156fbc5
+CONTENT-HASH: 46ac8e1c30d0df71
 
 ## Blocking
-None.
 
 ## Polish
-- k4-d rubric, criterion 1: the comparison is written "$7{,}07$ vs. $1{,}11$ ja $2{,}83\,\text{MeV}$". Since the task text no longer gives the helium-4 value, a student who carries a wrong a) value into d) should still get these 2 p, as the intro promises. Adding "(tai a-kohdan oma arvo)" would make that explicit.
-- k3-c Sijoitus (from round 1, unchanged): the text writes $0{,}217 \cdot 15 = 3{,}25$, but the product is $3{,}255$. The factor $0{,}0386$ belongs to $3{,}255$ ($e^{-3{,}25} = 0{,}0388$). The result $31$ holds either way.
-- k4-c Muunnokset: the aligned row "$= 5{,}030151$" leaves out the unit, and the next row "$\cdot\,1{,}6605 \cdot 10^{-27}\,\text{kg}$" multiplies it. This is correct, but "$5{,}030151 \cdot 1{,}6605 \cdot 10^{-27}\,\text{kg/u} \cdot \text{u}$" or "$\ldots\,\text{u} \cdot 1{,}6605 \cdot 10^{-27}\,\text{kg/u}$" would carry the unit through.
+- solutions.md fy8-k6 (Kaava for $d_{1/2}$) — the row $\tfrac{R_0}{2} = R_0 e^{-\mu d_{1/2}}$ jumps straight to $d_{1/2} = \ln 2/\mu$. This is correct. Optionally add $\ln 2 = \mu d_{1/2}$ as in k3.
 
 ## Checked
-The hash was 74a741769156fbc5 at the start and at the end. This was a delta review against the version I passed in round 1 (word diff of tasks.json, solutions.md and answers.py).
-- **k4 d.** The task now gives only D $1{,}11$ and T $2{,}83\,\text{MeV}$ per nucleon and refers to the helium-4 value from part a. Both stated values are right ($1{,}112$ and $2{,}827\,\text{MeV}$ from the atomic masses), and part a is now not given away. The model answer and the rubric still compare per-nucleon binding energies. That holds here because the nucleon number is conserved and the free neutron has no binding energy: in total, $28{,}3 > 2{,}22 + 8{,}48\,\text{MeV}$. The Coulomb-barrier reasoning is unchanged and correct.
-- **Intro.** "$1\,\text{u} = 931{,}5\,\text{MeV}/c^2$ eli $1\,\text{u} = 1{,}6605 \cdot 10^{-27}\,\text{kg}$" is correct.
-- **k4-c rubric detail.** "$17{,}59\,\text{MeV}$ eli $2{,}818 \cdot 10^{-12}\,\text{J}$" is correct.
-- **solutions.md reflow.** Every chain that was joined or re-broken into aligned rows has the same numbers, signs, units and order as before: k1-b, k2-b/c, k3-c, k4-a/b/c, k5-a/b/c, k6-a/d, k7-a/b/c/d. The aligned blocks are mathematically valid: each continuation row is "$\cdot$", "$-$", "$=$" or "$\approx$" of the line before. The typo fix (Valosähköisessä) is wording only.
-- **Recomputed in my own script.**
-  - k1-b: $W = 3{,}71 \cdot 10^{-19}\,\text{J} = 2{,}32\,\text{eV}$.
-  - k2: $h = 6{,}76$, $7{,}37$ and $6{,}18 \cdot 10^{-34}\,\text{J}\,\text{s}$.
-  - k3-c: $30{,}9 \approx 31$.
-  - k4: $E_\text{s} = 28{,}30\,\text{MeV}$, $7{,}07\,\text{MeV}$ per nucleon, $Q = 17{,}59\,\text{MeV}$, $3{,}37 \cdot 10^{14}\,\text{J/kg}$, ratio $1{,}1 \cdot 10^{7}$.
-  - k5: $656{,}5\,\text{nm}$, $121{,}6\,\text{nm}$, $2{,}80\,\text{eV}$.
-  - k6-d: $31{,}4\,\text{mm}$.
-  - k7: $0{,}321$, $1540\,\text{MBq}$, $511\,\text{keV}$, $2{,}43\,\text{pm}$, $5{,}32\,\text{mSv}$.
-
-  All agree with answers.py and the solutions.
-- **Rubric sums.** Unchanged, and practice.py check is OK.
+- The hash was 46ac8e1c30d0df71 at the start and the end.
+- The previous science PASS was for 74a741769156fbc5 (commit 0e62ee5a0d). Since then only solutions.md changed among the judged files: tasks.json and answers.py are unchanged.
+- A script removed the Kaava steps, collapsed whitespace and compared the rest: it is identical. The other edits are paragraph splits in Perustelu and Mallivastaus texts.
+- k2 b) and c): $eU_\text{k} = hf$ gives $U_\text{k} = \tfrac{h}{e}f$, so slope $= h/e$ and $h = e\,\Delta U_\text{k}/\Delta f$. Each extreme line gives its $h$, and $\Delta h = (h_\text{max} - h_\text{min})/2$. Recomputed: $h = 6{,}81 \cdot 10^{-34}\,\text{J}\,\text{s}$, which matches answers.py.
+- k3: $N_0/2 = N_0 e^{-\lambda T_{1/2}}$ gives $\lambda = \ln 2/T_{1/2}$. The derivation is correct.
+- k4 a)–c): $\Delta m$, $E_\text{s} = \Delta m c^2$, $E_\text{s}/A$; $Q = \Delta m c^2$; $E/m = Q/(m_\text{D} + m_\text{T})$. Recomputed: $28{,}30\,\text{MeV}$ ($7{,}07$ per nucleon), $Q = 17{,}59\,\text{MeV}$ and $3{,}37 \cdot 10^{14}\,\text{J/kg}$.
+- k5 a)–c): $E = hf$ and $c = f\lambda$ give $\lambda = hc/E$. The ionisation balance from $n = 2$ is $E_\text{fotoni} = \lvert E_2\rvert + E_\text{k}$, which is right. Recomputed: $656{,}5\,\text{nm}$, $121{,}6\,\text{nm}$ and $2{,}80\,\text{eV}$.
+- k6 c)–e):
+  - The linearisation $\ln R = \ln R_0 - \mu d$ is correct.
+  - The inverse-square factor at $r = 3r_0$ is $1/9$, combined with the attenuation, giving $d = \tfrac{1}{\mu}\ln\tfrac{\dot H_0/9}{\dot H}$. Recomputed: $31{,}4\,\text{mm}$.
+  - The Poisson net-count uncertainty $\sqrt{N + N_\text{t}}$ is now derived from the two counts' $\sqrt{N}$ added in quadrature. Recomputed: $3{,}9\,\%$.
+- k7: annihilation at rest, $2E = 2m_\text{e}c^2$, then $\lambda = hc/E$. Recomputed: $2{,}43\,\text{pm}$ and $0{,}321$ of the F-18 left after $3\,\text{h}$.
+- Every new Kaava step starts from the basic law and ends in the form substituted. No points, rubric or answer changed.

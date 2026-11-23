@@ -21,7 +21,11 @@ $$
 **Annettu:** aallonpituus $\lambda = 1550\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** yhden fotonin energia $E$ elektronivoltteina
 **Periaate:** Valo koostuu fotoneista, ja yhden fotonin energia on kääntäen verrannollinen valon aallonpituuteen.
-**Kaava:** $E = \dfrac{hc}{\lambda}$
+**Kaava:** $$\begin{aligned} E &= hf \\
+f &= \dfrac{c}{\lambda} \\
+E &= \dfrac{hc}{\lambda}
+\end{aligned}
+$$
 **Muunnokset:** $\lambda = 1550\,\text{nm} = 1550 \cdot 10^{-9}\,\text{m}$. Lopuksi joulet elektronivolteiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
 **Sijoitus:** $E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1550 \cdot 10^{-9}\,\text{m}} = 1{,}2816 \cdot 10^{-19}\,\text{J} = \dfrac{1{,}2816 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 0{,}80000\,\text{eV}$, kun $$
 \begin{aligned}
@@ -37,7 +41,12 @@ $$
 **Annettu:** lasersiirtymän tasojen energiaero $E_2 - E_1 = 1{,}79\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** laservalon aallonpituus $\lambda$ nanometreinä
 **Periaate:** Energia säilyy: kun ioni putoaa ylemmältä lasertasolta alemmalle, sen energia pienenee tasojen erotuksen verran, ja juuri tämän energian vie yksi fotoni.
-**Kaava:** $\dfrac{hc}{\lambda} = E_2 - E_1$, josta $\lambda = \dfrac{hc}{E_2 - E_1}$
+**Kaava:** $$\begin{aligned} hf &= E_2 - E_1 \\
+f &= \dfrac{c}{\lambda} \\
+\dfrac{hc}{\lambda} &= E_2 - E_1 \\
+\lambda &= \dfrac{hc}{E_2 - E_1}
+\end{aligned}
+$$
 **Muunnokset:** $E_2 - E_1 = 1{,}79\,\text{eV} = 1{,}79 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 2{,}8676 \cdot 10^{-19}\,\text{J}$; lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -56,7 +65,12 @@ $$
 **Annettu:** pulssin energia $E = 3{,}0\,\text{mJ}$, aallonpituus $\lambda = 1064\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
 **Kysytty:** fotonien määrä $N$ pulssissa
 **Periaate:** Laserin kaikki fotonit ovat samanlaisia, joten pulssin energia on fotonien määrä kerrottuna yhden fotonin energialla $\tfrac{hc}{\lambda}$.
-**Kaava:** $E = N \cdot \dfrac{hc}{\lambda}$, josta $N = \dfrac{E\lambda}{hc}$
+**Kaava:** $$\begin{aligned} E &= N \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+E &= N \cdot \dfrac{hc}{\lambda} \\
+N &= \dfrac{E\lambda}{hc}
+\end{aligned}
+$$
 **Muunnokset:** $E = 3{,}0\,\text{mJ} = 3{,}0 \cdot 10^{-3}\,\text{J}$ ja $\lambda = 1064\,\text{nm} = 1064 \cdot 10^{-9}\,\text{m}$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -85,7 +99,15 @@ $$
 **Annettu:** pumppausvalon aallonpituus $\lambda_\text{p} = 808\,\text{nm}$, laservalon aallonpituus $\lambda_\text{L} = 1064\,\text{nm}$; yksi pumppausfotoni tuottaa enintään yhden laserfotonin
 **Kysytty:** suurin osuus $\eta$ pumppausfotonin energiasta, joka päätyy laserfotonin energiaksi, prosentteina
 **Periaate:** Kun yksi pumppausfotoni tuottaa yhden laserfotonin, laserfotoniin päätyy sen energia ja loput jää aineeseen sisäenergiaksi. Fotonin energia on $\tfrac{hc}{\lambda}$, joten osuus on fotonien energioiden suhde.
-**Kaava:** $\eta = \dfrac{hc / \lambda_\text{L}}{hc / \lambda_\text{p}}$, josta $\eta = \dfrac{\lambda_\text{p}}{\lambda_\text{L}}$
+**Kaava:** $$\begin{aligned} E &= hf \\
+f &= \dfrac{c}{\lambda} \\
+E_\text{p} &= \dfrac{hc}{\lambda_\text{p}} \\
+E_\text{L} &= \dfrac{hc}{\lambda_\text{L}} \\
+\eta &= \dfrac{E_\text{L}}{E_\text{p}} \\
+&= \dfrac{hc / \lambda_\text{L}}{hc / \lambda_\text{p}} \\
+&= \dfrac{\lambda_\text{p}}{\lambda_\text{L}}
+\end{aligned}
+$$
 **Muunnokset:** Ei tarvita: aallonpituudet ovat samassa yksikössä, ja $hc$ supistuu pois. Lopuksi osuus muunnetaan prosenteiksi kertomalla luvulla $100\,\%$.
 **Sijoitus:** $\eta = \dfrac{808\,\text{nm}}{1064\,\text{nm}} = 0{,}75940 = 75{,}940\,\%$
 **Vastaus:** $75{,}9\,\%$, kolme merkitsevää numeroa kuten aallonpituudessa $808\,\text{nm}$.
@@ -95,7 +117,13 @@ $$
 **Annettu:** punaisen laserosoittimen aallonpituus $\lambda_\text{r} = 650\,\text{nm}$, violetin $\lambda_\text{v} = 405\,\text{nm}$, molempien teho $P = 5{,}0\,\text{mW}$
 **Kysytty:** kuinka monta kertaa enemmän fotoneja punainen lähettää sekunnissa, eli suhde $\tfrac{N_\text{r}}{N_\text{v}}$
 **Periaate:** Teho on fotonien määrä sekunnissa kerrottuna fotonin energialla $\tfrac{hc}{\lambda}$. Samalla teholla fotoneja on sitä enemmän, mitä pienempi yhden fotonin energia on eli mitä pidempi aallonpituus.
-**Kaava:** $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$, joten saman tehon ja ajan laserien fotonimäärien suhde on $\dfrac{N_\text{r}}{N_\text{v}} = \dfrac{\lambda_\text{r}}{\lambda_\text{v}}$
+**Kaava:** $$\begin{aligned} P &= \dfrac{N}{t} \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+\dfrac{N}{t} &= \dfrac{P\lambda}{hc} \\
+\dfrac{N_\text{r}}{N_\text{v}} &= \dfrac{P\lambda_\text{r} / (hc)}{P\lambda_\text{v} / (hc)} \\
+&= \dfrac{\lambda_\text{r}}{\lambda_\text{v}}
+\end{aligned}
+$$
 **Muunnokset:** Ei tarvita: teho, $h$ ja $c$ supistuvat, ja aallonpituudet ovat samassa yksikössä.
 **Sijoitus:** $\dfrac{N_\text{r}}{N_\text{v}} = \dfrac{650\,\text{nm}}{405\,\text{nm}} = 1{,}6049$
 **Vastaus:** $1{,}60$, eli punainen lähettää noin $1{,}60$-kertaisesti fotoneja; kolme merkitsevää numeroa kuten aallonpituuksissa.
@@ -105,7 +133,13 @@ $$
 **Annettu:** isomman pisteen valon aallonpituus $\lambda_\text{iso} = 620\,\text{nm}$, pienemmän pisteen fotonin energia on $\Delta E = 0{,}35\,\text{eV}$ suurempi, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** pienemmän pisteen valon aallonpituus $\lambda$ nanometreinä
 **Periaate:** Fotonin energia on $\tfrac{hc}{\lambda}$. Lasketaan isomman pisteen fotonin energia, lisätään siihen $0{,}35\,\text{eV}$ ja lasketaan uudesta energiasta aallonpituus. Pienemmän pisteen energia-aukko on suurempi, joten sen fotonin energia on suurempi.
-**Kaava:** $E_\text{iso} = \dfrac{hc}{\lambda_\text{iso}}$ ja $\dfrac{hc}{\lambda} = E_\text{iso} + \Delta E$, josta $\lambda = \dfrac{hc}{E_\text{iso} + \Delta E}$
+**Kaava:** $$\begin{aligned} E &= hf \\
+f &= \dfrac{c}{\lambda} \\
+E_\text{iso} &= \dfrac{hc}{\lambda_\text{iso}} \\
+\dfrac{hc}{\lambda} &= E_\text{iso} + \Delta E \\
+\lambda &= \dfrac{hc}{E_\text{iso} + \Delta E}
+\end{aligned}
+$$
 **Muunnokset:** $\lambda_\text{iso} = 620\,\text{nm} = 620 \cdot 10^{-9}\,\text{m}$; energiat elektronivoltteina ja jouleina sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$; lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** $E_\text{iso} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{620 \cdot 10^{-9}\,\text{m}} = 3{,}2040 \cdot 10^{-19}\,\text{J} = 2{,}0000\,\text{eV}$. $$
 \begin{aligned}
@@ -124,7 +158,13 @@ $$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}7647 \cdo
 **Annettu:** fotoneja pulssissa $N = 2{,}7 \cdot 10^{17}$, aallonpituus $\lambda = 1064\,\text{nm}$, pulssin kesto $t = 10\,\text{ns}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
 **Kysytty:** pulssin keskimääräinen teho $P$ megawatteina
 **Periaate:** Pulssin energia on fotonien määrä kerrottuna yhden fotonin energialla, ja keskimääräinen teho on energia jaettuna ajalla, jonka kuluessa se lähtee.
-**Kaava:** $E = N \cdot \dfrac{hc}{\lambda}$ ja $P = \dfrac{E}{t}$, josta $P = \dfrac{N hc}{\lambda t}$
+**Kaava:** $$\begin{aligned} E &= N \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+E &= N \cdot \dfrac{hc}{\lambda} \\
+P &= \dfrac{E}{t} \\
+&= \dfrac{N hc}{\lambda t}
+\end{aligned}
+$$
 **Muunnokset:** $\lambda = 1064\,\text{nm} = 1064 \cdot 10^{-9}\,\text{m}$, $t = 10\,\text{ns} = 10 \cdot 10^{-9}\,\text{s}$; lopuksi $1\,\text{MW} = 10^{6}\,\text{W}$.
 **Sijoitus:** $E = 2{,}7 \cdot 10^{17} \cdot \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1064 \cdot 10^{-9}\,\text{m}} = 2{,}7 \cdot 10^{17} \cdot 1{,}8670 \cdot 10^{-19}\,\text{J} = 0{,}050409\,\text{J}$ ja $P = \dfrac{0{,}050409\,\text{J}}{10 \cdot 10^{-9}\,\text{s}} = 5{,}0409 \cdot 10^{6}\,\text{W} = 5{,}0409\,\text{MW}$
 **Vastaus:** $5{,}0\,\text{MW}$, kaksi merkitsevää numeroa kuten fotonien määrässä $2{,}7 \cdot 10^{17}$ ja kestossa $10\,\text{ns}$.
@@ -134,7 +174,11 @@ $$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}7647 \cdo
 **Annettu:** kromi-ionien määrä $N = 1{,}0 \cdot 10^{19}$, pumppausvalon aallonpituus $\lambda = 550\,\text{nm}$, yksi pumppausfotoni nostaa yhden ionin ylemmälle lasertasolle, lasersiirtymä päättyy perustilaan, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
 **Kysytty:** pienin absorboituva pumppausenergia $E$ jouleina
 **Periaate:** Populaatioinversiossa ylemmällä lasertasolla on enemmän ioneja kuin alemmalla. Koska alempi lasertaso on perustila, ylemmälle tasolle on nostettava yli puolet ioneista, eli vähintään $\tfrac{N}{2}$, ja kukin tarvitsee yhden pumppausfotonin. Oletuksen mukaan ionit eivät purkaudu kesken pumppauksen.
-**Kaava:** $E = \dfrac{N}{2} \cdot \dfrac{hc}{\lambda}$
+**Kaava:** $$\begin{aligned} E &= \dfrac{N}{2} \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+E &= \dfrac{N}{2} \cdot \dfrac{hc}{\lambda}
+\end{aligned}
+$$
 **Muunnokset:** $\lambda = 550\,\text{nm} = 550 \cdot 10^{-9}\,\text{m}$.
 **Sijoitus:** $E = \dfrac{1{,}0 \cdot 10^{19}}{2} \cdot \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{550 \cdot 10^{-9}\,\text{m}} = 5{,}0 \cdot 10^{18} \cdot 3{,}6118 \cdot 10^{-19}\,\text{J} = 1{,}8059\,\text{J}$
 **Vastaus:** $1{,}8\,\text{J}$, kaksi merkitsevää numeroa kuten ionien määrässä $1{,}0 \cdot 10^{19}$; inversio vaatii hieman tätä enemmän.
@@ -144,7 +188,13 @@ $$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}7647 \cdo
 **Annettu:** pumppausvalon aallonpituus $\lambda_\text{p} = 808\,\text{nm}$ ja teho $P = 1{,}0\,\text{W}$; yksi pumppausfotoni tuottaa enintään yhden $1064\,\text{nm}$:n fotonin; kaksi $1064\,\text{nm}$:n fotonia yhdistyy yhdeksi $532\,\text{nm}$:n fotoniksi; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
 **Kysytty:** vihreiden fotonien suurin määrä sekunnissa $\tfrac{N_\text{v}}{t}$
 **Periaate:** Lasketaan ensin pumppausfotonien määrä sekunnissa teholla ja fotonin energialla. Infrapunafotoneja voi syntyä enintään yhtä monta, ja kahdesta infrapunafotonista syntyy yksi vihreä, joten vihreitä on enintään puolet pumppausfotonien määrästä. Energia säilyy: kahden $1064\,\text{nm}$:n fotonin energia on yhtä suuri kuin yhden $532\,\text{nm}$:n fotonin.
-**Kaava:** $\dfrac{N_\text{p}}{t} = \dfrac{P\lambda_\text{p}}{hc}$ ja $\dfrac{N_\text{v}}{t} = \dfrac{1}{2} \cdot \dfrac{N_\text{p}}{t}$, josta $\dfrac{N_\text{v}}{t} = \dfrac{P\lambda_\text{p}}{2hc}$
+**Kaava:** $$\begin{aligned} P &= \dfrac{N_\text{p}}{t} \cdot hf_\text{p} \\
+f_\text{p} &= \dfrac{c}{\lambda_\text{p}} \\
+\dfrac{N_\text{p}}{t} &= \dfrac{P\lambda_\text{p}}{hc} \\
+\dfrac{N_\text{v}}{t} &= \dfrac{1}{2} \cdot \dfrac{N_\text{p}}{t} \\
+&= \dfrac{P\lambda_\text{p}}{2hc}
+\end{aligned}
+$$
 **Muunnokset:** $\lambda_\text{p} = 808\,\text{nm} = 808 \cdot 10^{-9}\,\text{m}$; teho on valmiiksi watteina.
 **Sijoitus:** $\dfrac{N_\text{v}}{t} = \dfrac{1{,}0\,\text{W} \cdot 808 \cdot 10^{-9}\,\text{m}}{2 \cdot 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = \dfrac{4{,}0675 \cdot 10^{18}}{2}\,\tfrac{1}{\text{s}} = 2{,}0338 \cdot 10^{18}\,\tfrac{1}{\text{s}}$
 **Vastaus:** $2{,}0 \cdot 10^{18}$ vihreää fotonia sekunnissa, kaksi merkitsevää numeroa kuten teho $1{,}0\,\text{W}$.
@@ -154,7 +204,13 @@ $$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}7647 \cdo
 **Annettu:** kubitin tilojen energiaeroa vastaavan fotonin taajuus $f_\text{q} = 5{,}0\,\text{GHz}$, punaisen valon aallonpituus $\lambda = 650\,\text{nm}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
 **Kysytty:** energioiden suhde $\tfrac{E_\text{valo}}{E_\text{q}}$
 **Periaate:** Kummankin fotonin energia on $hf$, joten energioiden suhde on taajuuksien suhde, ja Planckin vakio supistuu. Punaisen valon taajuus saadaan aallonpituudesta, $f = \tfrac{c}{\lambda}$.
-**Kaava:** $\dfrac{E_\text{valo}}{E_\text{q}} = \dfrac{hc / \lambda}{h f_\text{q}}$, josta $\dfrac{E_\text{valo}}{E_\text{q}} = \dfrac{c}{\lambda f_\text{q}}$
+**Kaava:** $$\begin{aligned} E_\text{valo} &= hf_\text{valo} \\
+E_\text{q} &= hf_\text{q} \\
+f_\text{valo} &= \dfrac{c}{\lambda} \\
+\dfrac{E_\text{valo}}{E_\text{q}} &= \dfrac{hc / \lambda}{hf_\text{q}} \\
+&= \dfrac{c}{\lambda f_\text{q}}
+\end{aligned}
+$$
 **Muunnokset:** $f_\text{q} = 5{,}0\,\text{GHz} = 5{,}0 \cdot 10^{9}\,\text{Hz}$ ja $\lambda = 650\,\text{nm} = 650 \cdot 10^{-9}\,\text{m}$.
 **Sijoitus:** $\dfrac{E_\text{valo}}{E_\text{q}} = \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{650 \cdot 10^{-9}\,\text{m} \cdot 5{,}0 \cdot 10^{9}\,\text{Hz}} = \dfrac{2{,}998 \cdot 10^{8}}{3{,}25 \cdot 10^{3}} = 9{,}2246 \cdot 10^{4}$
 **Vastaus:** noin $9{,}2 \cdot 10^{4}$ eli noin $92\,000$ kertaa suurempi, kaksi merkitsevää numeroa kuten taajuudessa $5{,}0\,\text{GHz}$.
@@ -171,7 +227,12 @@ Siksi stimuloitu emissio vahvistaa valoa ja tekee siitä suuntautunutta ja koher
 **Annettu:** laserin teho $P = 5{,}0\,\text{mW}$, aallonpituus $\lambda = 532\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
 **Kysytty:** sekunnissa lähtevien fotonien määrä $\tfrac{N}{t}$
 **Periaate:** Laserin fotonit ovat samanlaisia, joten teho on fotonien määrä sekunnissa kerrottuna yhden fotonin energialla $\tfrac{hc}{\lambda}$.
-**Kaava:** $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$, josta $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$
+**Kaava:** $$\begin{aligned} P &= \dfrac{N}{t} \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+P &= \dfrac{N}{t} \cdot \dfrac{hc}{\lambda} \\
+\dfrac{N}{t} &= \dfrac{P\lambda}{hc}
+\end{aligned}
+$$
 **Muunnokset:** $P = 5{,}0\,\text{mW} = 5{,}0 \cdot 10^{-3}\,\text{W}$ ja $\lambda = 532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -230,7 +291,12 @@ $$\begin{aligned}
 **Kysytty:** energia-aukkojen erotus $\Delta E$ pienimmän ja suurimman pisteen välillä elektronivoltteina
 **Periaate:** Kun fotonin energia on yhtä suuri kuin pisteen energia-aukko, saadaan energia-aukko aallonpituudesta kaavalla $E = \tfrac{hc}{\lambda}$. Lasketaan energia-aukko jokaiselle pisteelle ja verrataan sitä pisteen kokoon.
 **Kuvaajan lukeminen:** Taulukosta: halkaisija $2{,}0\,\text{nm}$ vastaa aallonpituutta $486\,\text{nm}$ ja halkaisija $6{,}0\,\text{nm}$ aallonpituutta $617\,\text{nm}$. Kun halkaisija kasvaa, aallonpituus kasvaa joka välillä.
-**Kaava:** $E = \dfrac{hc}{\lambda}$ ja $\Delta E = E_{2{,}0\,\text{nm}} - E_{6{,}0\,\text{nm}}$
+**Kaava:** $$\begin{aligned} E &= hf \\
+f &= \dfrac{c}{\lambda} \\
+E &= \dfrac{hc}{\lambda} \\
+\Delta E &= E_{2{,}0\,\text{nm}} - E_{6{,}0\,\text{nm}}
+\end{aligned}
+$$
 **Muunnokset:** $\lambda = 486 \cdot 10^{-9}\,\text{m}$ ja niin edelleen; joulet elektronivolteiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
 **Sijoitus:** a) $$
 \begin{aligned}
@@ -253,7 +319,11 @@ c) $\Delta E = 2{,}5514\,\text{eV} - 2{,}0097\,\text{eV} = 0{,}5417\,\text{eV}$
 **Kysytty:** suurimman ja pienimmän fotonivuon $\tfrac{N}{t}$ suhde
 **Periaate:** Jokaisen diodin fotonit ovat samanlaisia, joten teho on fotonien määrä sekunnissa kerrottuna fotonin energialla $\tfrac{hc}{\lambda}$. Fotonivuo riippuu siis sekä tehosta että aallonpituudesta.
 **Kuvaajan lukeminen:** Taulukosta: diodien aallonpituudet kasvavat A:sta D:hen ja tehot pienenevät A:sta D:hen.
-**Kaava:** $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$
+**Kaava:** $$\begin{aligned} P &= \dfrac{N}{t} \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+\dfrac{N}{t} &= \dfrac{P\lambda}{hc}
+\end{aligned}
+$$
 **Muunnokset:** $P = 10\,\text{mW} = 10 \cdot 10^{-3}\,\text{W}$ ja niin edelleen; $\lambda = 405\,\text{nm} = 405 \cdot 10^{-9}\,\text{m}$ ja niin edelleen.
 **Sijoitus:** a) $hc = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Diodi A: $\tfrac{N}{t} = \dfrac{10 \cdot 10^{-3}\,\text{W} \cdot 405 \cdot 10^{-9}\,\text{m}}{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 2{,}039 \cdot 10^{16}\,\tfrac{1}{\text{s}}$. Samalla tavalla diodille B $1{,}571 \cdot 10^{16}\,\tfrac{1}{\text{s}}$, diodille C $1{,}636 \cdot 10^{16}\,\tfrac{1}{\text{s}}$ ja diodille D $1{,}973 \cdot 10^{16}\,\tfrac{1}{\text{s}}$.
 
@@ -276,7 +346,16 @@ Saapuva fotoni ei anna energiaansa ja jatkaa matkaansa, joten valon energia kasv
 **Annettu:** pumppausvalon aallonpituus $\lambda_\text{p} = 976\,\text{nm}$ ja teho $P_\text{p} = 20{,}0\,\text{W}$, laservalon aallonpituus $\lambda_\text{L} = 1070\,\text{nm}$ ja teho $P_\text{L} = 15{,}0\,\text{W}$, kaikki pumppausvalo absorboituu, loput energiasta on lämpöä, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
 **Kysytty:** kvanttihyötysuhde $\eta_\text{q} = \tfrac{N_\text{L}}{N_\text{p}}$ prosentteina
 **Periaate:** Teho on fotonien määrä sekunnissa kerrottuna fotonin energialla $\tfrac{hc}{\lambda}$, joten fotonien määrät saadaan tehoista. Energia säilyy, joten lämpöteho on pumppausteho miinus laserteho. Lämpöä syntyy kahdesta syystä: laserfotonin energia on pumppausfotonin energiaa pienempi, ja osa pumppausfotoneista ei tuota laserfotonia.
-**Kaava:** $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$, joten $\eta_\text{q} = \dfrac{P_\text{L}\lambda_\text{L}}{P_\text{p}\lambda_\text{p}}$, lämpöteho $P_\text{lämpö} = P_\text{p} - P_\text{L}$ ja pakollinen osa $P_\text{pak} = \dfrac{N_\text{L}}{t}\left(\dfrac{hc}{\lambda_\text{p}} - \dfrac{hc}{\lambda_\text{L}}\right)$
+**Kaava:** $$\begin{aligned} P &= \dfrac{N}{t} \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+\dfrac{N}{t} &= \dfrac{P\lambda}{hc} \\
+\eta_\text{q} &= \dfrac{N_\text{L} / t}{N_\text{p} / t} \\
+&= \dfrac{P_\text{L}\lambda_\text{L}}{P_\text{p}\lambda_\text{p}} \\
+P_\text{lämpö} &= P_\text{p} - P_\text{L} \\
+P_\text{pak} &= \dfrac{N_\text{L}}{t} \left(hf_\text{p} - hf_\text{L}\right) \\
+&= \dfrac{N_\text{L}}{t} \left(\dfrac{hc}{\lambda_\text{p}} - \dfrac{hc}{\lambda_\text{L}}\right)
+\end{aligned}
+$$
 **Muunnokset:** $\lambda_\text{p} = 976 \cdot 10^{-9}\,\text{m}$ ja $\lambda_\text{L} = 1070 \cdot 10^{-9}\,\text{m}$; tehot ovat valmiiksi watteina.
 **Sijoitus:**
 
@@ -311,7 +390,14 @@ d) Energiahyötysuhde on $\tfrac{15{,}0\,\text{W}}{20{,}0\,\text{W}} = 0{,}750 =
 
 Suora leikkaa vaaka-akselin, kun $P_\text{L} = 0$, eli $P_\text{p} = \tfrac{9{,}86\,\text{mW}}{0{,}398} = 24{,}8\,\text{mW}$. Kynnysteho on siis noin $25\,\text{mW}$. Suoran kulmakerroin on $\tfrac{\Delta P_\text{L}}{\Delta P_\text{p}} = 0{,}398$. Esimerkiksi pisteiden $(30;\ 2{,}1)$ ja $(70;\ 18{,}1)$ kautta kulmakerroin on $\tfrac{16{,}0\,\text{mW}}{40\,\text{mW}} = 0{,}40$.
 
-**Kaava:** $\Delta P_\text{L} = \dfrac{\Delta N_\text{L}}{t} \cdot \dfrac{hc}{\lambda_\text{L}}$ ja $\Delta P_\text{p} = \dfrac{\Delta N_\text{p}}{t} \cdot \dfrac{hc}{\lambda_\text{p}}$, joten $\dfrac{\Delta N_\text{L}}{\Delta N_\text{p}} = \dfrac{\Delta P_\text{L}}{\Delta P_\text{p}} \cdot \dfrac{\lambda_\text{L}}{\lambda_\text{p}}$
+**Kaava:** $$\begin{aligned} \Delta P_\text{L} &= \dfrac{\Delta N_\text{L}}{t} \cdot hf_\text{L} \\
+\Delta P_\text{p} &= \dfrac{\Delta N_\text{p}}{t} \cdot hf_\text{p} \\
+f &= \dfrac{c}{\lambda} \\
+\dfrac{\Delta P_\text{L}}{\Delta P_\text{p}} &= \dfrac{\Delta N_\text{L} \cdot hc / \lambda_\text{L}}{\Delta N_\text{p} \cdot hc / \lambda_\text{p}} \\
+&= \dfrac{\Delta N_\text{L}}{\Delta N_\text{p}} \cdot \dfrac{\lambda_\text{p}}{\lambda_\text{L}} \\
+\dfrac{\Delta N_\text{L}}{\Delta N_\text{p}} &= \dfrac{\Delta P_\text{L}}{\Delta P_\text{p}} \cdot \dfrac{\lambda_\text{L}}{\lambda_\text{p}}
+\end{aligned}
+$$
 
 **Muunnokset:** Ei tarvita: tehot ovat samassa yksikössä ja aallonpituudet samassa yksikössä, ja $hc$ supistuu pois.
 
@@ -329,7 +415,12 @@ Kynnyksellä vahvistus on yhtä suuri kuin häviöt, ja kynnyksen yläpuolella l
 **Annettu:** laserin teho $P = 2{,}0\,\text{mW}$, aallonpituus $\lambda = 670\,\text{nm}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$; taulukosta (MAFY, *Luonnonvakiot*) Planckin vakio $h = 6{,}626\,070\,15 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Kysytty:** sekunnissa lähtevien fotonien määrä $\tfrac{N}{t}$
 **Periaate:** Laserin fotonit ovat samanlaisia, joten teho on fotonien määrä sekunnissa kerrottuna yhden fotonin energialla $\tfrac{hc}{\lambda}$. Planckin vakio ei kuulu tehtävän tietoihin, joten se haetaan taulukosta.
-**Kaava:** $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$, josta $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$
+**Kaava:** $$\begin{aligned} P &= \dfrac{N}{t} \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+P &= \dfrac{N}{t} \cdot \dfrac{hc}{\lambda} \\
+\dfrac{N}{t} &= \dfrac{P\lambda}{hc}
+\end{aligned}
+$$
 **Muunnokset:** $P = 2{,}0\,\text{mW} = 2{,}0 \cdot 10^{-3}\,\text{W}$ ja $\lambda = 670\,\text{nm} = 670 \cdot 10^{-9}\,\text{m}$.
 **Sijoitus:** Ensin tulo $hc$:
 $$
@@ -363,7 +454,11 @@ $$
 **Kysytty:** laserin teho $P$ milliwatteina
 **Periaate:** Laserin fotonit ovat samanlaisia, joten teho on fotonien määrä sekunnissa kerrottuna yhden fotonin energialla $\tfrac{hc}{\lambda}$. Sekä aallonpituus että fotonien määrä tulevat kuvasta.
 **Kuvaajan lukeminen:** Vaaka-akselilla on aallonpituus ja ruudukon väli on $100\,\text{nm}$. Piste on viidennen ja kuudennen pystyviivan välissä, viidennen viivan jälkeen $20\,\text{nm}$:n verran, joten $\lambda = 520\,\text{nm}$. Pystyakselilla on fotonien määrä sekunnissa yksikössä $10^{15}\,\tfrac{1}{\text{s}}$ ja ruudukon väli on $0{,}5$. Piste on hieman vaakaviivan $4{,}0$ alapuolella, joten $\tfrac{N}{t} \approx 3{,}9 \cdot 10^{15}\,\tfrac{1}{\text{s}}$.
-**Kaava:** $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$
+**Kaava:** $$\begin{aligned} P &= \dfrac{N}{t} \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+P &= \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}
+\end{aligned}
+$$
 **Muunnokset:** $\lambda = 520\,\text{nm} = 520 \cdot 10^{-9}\,\text{m}$ ja lopuksi $1\,\text{mW} = 10^{-3}\,\text{W}$.
 **Sijoitus:** Ensin tulo $hc$:
 $$
@@ -397,7 +492,13 @@ $$
 **Kysytty:** tehojen suhde $\tfrac{P_\text{X}}{P_\text{Y}}$
 **Periaate:** Kummankin laserin teho on fotonien määrä sekunnissa kerrottuna yhden fotonin energialla $\tfrac{hc}{\lambda}$. Suuri fotonimäärä ei yksin tarkoita suurta tehoa, koska lyhyen aallonpituuden fotoni kantaa enemmän energiaa kuin pitkän.
 **Kuvaajan lukeminen:** Vaaka-akselin ruudukon väli on $100\,\text{nm}$ ja pystyakselin $1 \cdot 10^{15}\,\tfrac{1}{\text{s}}$. Piste X on aallonpituudella $450\,\text{nm}$ eli neljännen ja viidennen pystyviivan puolivälissä, ja se on $6{,}8$ yksikön korkeudella, hieman alle seitsemännen vaakaviivan. Piste Y on aallonpituudella $800\,\text{nm}$ eli kahdeksannen pystyviivan kohdalla, ja se on aivan neljännen vaakaviivan yläpuolella, $4{,}0$ yksikön korkeudella.
-**Kaava:** $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$, joten $\dfrac{P_\text{X}}{P_\text{Y}} = \dfrac{\tfrac{N_\text{X}}{t} \cdot \tfrac{hc}{\lambda_\text{X}}}{\tfrac{N_\text{Y}}{t} \cdot \tfrac{hc}{\lambda_\text{Y}}} = \dfrac{N_\text{X}/t}{N_\text{Y}/t} \cdot \dfrac{\lambda_\text{Y}}{\lambda_\text{X}}$
+**Kaava:** $$\begin{aligned} P &= \dfrac{N}{t} \cdot hf \\
+f &= \dfrac{c}{\lambda} \\
+P &= \dfrac{N}{t} \cdot \dfrac{hc}{\lambda} \\
+\dfrac{P_\text{X}}{P_\text{Y}} &= \dfrac{\tfrac{N_\text{X}}{t} \cdot \tfrac{hc}{\lambda_\text{X}}}{\tfrac{N_\text{Y}}{t} \cdot \tfrac{hc}{\lambda_\text{Y}}} \\
+&= \dfrac{N_\text{X} / t}{N_\text{Y} / t} \cdot \dfrac{\lambda_\text{Y}}{\lambda_\text{X}}
+\end{aligned}
+$$
 **Muunnokset:** Suhteessa aallonpituudet ja fotonimäärät supistuvat samassa yksikössä, joten nanometrejä ja yksikköä $10^{15}\,\tfrac{1}{\text{s}}$ ei tarvitse muuntaa. Vakio $hc$ supistuu.
 **Sijoitus:** Ensin fotonimäärien suhde:
 $$

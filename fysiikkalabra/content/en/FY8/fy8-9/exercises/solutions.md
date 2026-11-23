@@ -39,7 +39,7 @@
 
 **Principle:** At the half-life half of the nuclei are undecayed, so in the form $N = N_0 e^{-\lambda t}$ of the decay law $e^{-\lambda T_{1/2}} = \tfrac{1}{2}$. This gives the relation between the decay constant and the half-life.
 
-**Formula:** $\lambda T_{1/2} = \ln 2$, from which $\lambda = \dfrac{\ln 2}{T_{1/2}}$
+**Formula:** $$\begin{aligned} N &= N_0 e^{-\lambda t} \\ \tfrac{N_0}{2} &= N_0 e^{-\lambda T_{1/2}} \\ \lambda T_{1/2} &= \ln 2 \\ \lambda &= \dfrac{\ln 2}{T_{1/2}} \end{aligned}$$
 
 **Conversions:** None are needed: when the half-life is in years, the decay constant is obtained directly in the unit $\tfrac{1}{\text{a}}$.
 
@@ -130,7 +130,7 @@ $$. The sample is not empty, but only a small fraction of it is left.
 
 **Principle:** The activity follows the decay law, $A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$. The wanted time is in the exponent, so it is solved using a logarithm.
 
-**Formula:** $\dfrac{A}{A_0} = \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, so $\ln \dfrac{A_0}{A} = \dfrac{t}{T_{1/2}} \ln 2$ and $t = T_{1/2} \cdot \dfrac{\ln (A_0 / A)}{\ln 2}$
+**Formula:** $$\begin{aligned} \dfrac{A}{A_0} &= \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \\ \ln\dfrac{A_0}{A} &= \dfrac{t}{T_{1/2}} \ln 2 \\ t &= T_{1/2} \cdot \dfrac{\ln (A_0 / A)}{\ln 2} \end{aligned}$$
 
 **Conversions:** None are needed: $\tfrac{A_0}{A} = \tfrac{1}{0.100} = 10.0$ is a pure number, and the time is obtained in the same unit as the half-life, that is, in years.
 
@@ -170,7 +170,7 @@ At the time $2.0\,\text{h}$ it gives $800\,\text{kBq} \cdot e^{-1} \approx 294\,
 
 **Principle:** At the half-life $e^{-\lambda T_{1/2}} = \tfrac{1}{2}$, because half of the nuclei have decayed. The decay constant is wanted in seconds, so the half-life is first converted to seconds.
 
-**Formula:** $\lambda T_{1/2} = \ln 2$, from which $\lambda = \dfrac{\ln 2}{T_{1/2}}$
+**Formula:** $$\begin{aligned} N &= N_0 e^{-\lambda t} \\ \tfrac{N_0}{2} &= N_0 e^{-\lambda T_{1/2}} \\ \lambda T_{1/2} &= \ln 2 \\ \lambda &= \dfrac{\ln 2}{T_{1/2}} \end{aligned}$$
 
 **Conversions:** $1\,\text{d} = 24 \cdot 3600\,\text{s} = 86\,400\,\text{s}$, so $T_{1/2} = 8.02 \cdot 86\,400\,\text{s} = 692\,928\,\text{s}$.
 
@@ -187,7 +187,7 @@ At the time $2.0\,\text{h}$ it gives $800\,\text{kBq} \cdot e^{-1} \approx 294\,
 
 **Principle:** The activity is the product of the decay constant and the number of nuclei, $A = \lambda N$, and the decay constant is obtained from the half-life. Because the activity is decays per second, the decay constant must be in the unit $\tfrac{1}{\text{s}}$.
 
-**Formula:** $A = \lambda N$ and $\lambda = \dfrac{\ln 2}{T_{1/2}}$, so $N = \dfrac{A}{\lambda} = \dfrac{A\,T_{1/2}}{\ln 2}$
+**Formula:** $$\begin{aligned} A &= \lambda N \\ \lambda &= \dfrac{\ln 2}{T_{1/2}} \\ N &= \dfrac{A}{\lambda} \\ &= \dfrac{A\,T_{1/2}}{\ln 2} \end{aligned}$$
 
 **Conversions:** $A = 37\,\text{kBq} = 37 \cdot 10^{3}\,\tfrac{1}{\text{s}}$ and $T_{1/2} = 433 \cdot 365.25 \cdot 86\,400\,\text{s} = 1.36644 \cdot 10^{10}\,\text{s}$.
 
@@ -221,7 +221,7 @@ At the time $2.0\,\text{h}$ it gives $800\,\text{kBq} \cdot e^{-1} \approx 294\,
 
 **Principle:** Every cobalt-60 nucleus has the same mass, so the mass of the undecayed cobalt is proportional to the number of undecayed nuclei and follows the same decay law as $N$.
 
-**Formula:** $N = N_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$ and $m \propto N$, so $m = m_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$
+**Formula:** $$\begin{aligned} N &= N_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \\ m &= N\,m_\text{nucleus} \\ m_0 &= N_0\,m_\text{nucleus} \\ m &= m_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \end{aligned}$$
 
 **Conversions:** None are needed: the time and the half-life are in years, and the mass is obtained in milligrams.
 
@@ -238,7 +238,7 @@ At the time $2.0\,\text{h}$ it gives $800\,\text{kBq} \cdot e^{-1} \approx 294\,
 
 **Principle:** The counter counts the pulses of both the sample and the background. Only the contribution of the sample decreases according to the decay law, so the background is subtracted first. The measurement points vary at random, so the half-life is read through two points that are far apart.
 
-**Formula:** $\dfrac{R}{R_0} = \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, so $T_{1/2} = \dfrac{t \ln 2}{\ln (R_0 / R)}$, where $R_0$ and $R$ are the net pulse counts
+**Formula:** $$\begin{aligned} \dfrac{R}{R_0} &= \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \\ \ln\dfrac{R_0}{R} &= \dfrac{t}{T_{1/2}} \ln 2 \\ T_{1/2} &= \dfrac{t \ln 2}{\ln (R_0 / R)} \end{aligned}$$, where $R_0$ and $R$ are the net pulse counts
 
 **Conversions:** a) The net pulse counts are $291 - 8 = 283$, $250 - 8 = 242$, $204 - 8 = 196$, $178 - 8 = 170$, $143 - 8 = 135$, $126 - 8 = 118$, $103 - 8 = 95$, $90 - 8 = 82$, $72 - 8 = 64$, $66 - 8 = 58$ and $51 - 8 = 43$ ($t = 0, 40, \ldots, 400\,\text{s}$). The unit of time is the second, like in the answer, so no other conversions are needed.
 
@@ -255,7 +255,7 @@ At the time $2.0\,\text{h}$ it gives $800\,\text{kBq} \cdot e^{-1} \approx 294\,
 
 **Principle:** Only the net pulse count caused by the sample decreases according to the decay law. The background stays the same throughout the measurement, so it must be subtracted before looking for the halving.
 
-**Formula:** $R = R_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, so after two half-lives $R = \tfrac{R_0}{4}$, where $R_0$ and $R$ are the net pulse counts
+**Formula:** $$\begin{aligned} R &= R_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \\ R(2T_{1/2}) &= R_0 \left(\tfrac{1}{2}\right)^{2} \\ &= \dfrac{R_0}{4} \end{aligned}$$, where $R_0$ and $R$ are the net pulse counts
 
 **Conversions:** The net pulse counts are $200 - 20 = 180$, $148 - 20 = 128$, $108 - 20 = 88$, $84 - 20 = 64$, $65 - 20 = 45$, $50 - 20 = 30$ and $43 - 20 = 23$ ($t = 0, 30, \ldots, 180\,\text{s}$). No other conversions: the time is in seconds, like in the answer.
 
@@ -324,7 +324,7 @@ The concentration depends on the species and the place, and there are often few 
 
 **Principle:** In living wood the fraction of carbon-14 stays constant, so at the moment of death the activity per gram was the same as in living wood. After that the activity has decreased according to the decay law. When the fraction $\tfrac{A}{A_0}$ is known, the elapsed time is solved from the exponent with a logarithm.
 
-**Formula:** $\dfrac{A}{A_0} = \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, so $\ln \dfrac{A_0}{A} = \dfrac{t}{T_{1/2}} \ln 2$ and $t = T_{1/2} \cdot \dfrac{\ln (A_0 / A)}{\ln 2}$
+**Formula:** $$\begin{aligned} \dfrac{A}{A_0} &= \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \\ \ln\dfrac{A_0}{A} &= \dfrac{t}{T_{1/2}} \ln 2 \\ t &= T_{1/2} \cdot \dfrac{\ln (A_0 / A)}{\ln 2} \end{aligned}$$
 
 **Conversions:** None are needed: $\tfrac{A_0}{A} = \tfrac{100\,\%}{38.0\,\%}$ is a pure number, and the time is obtained in the same unit as the half-life, that is, in years.
 
@@ -341,7 +341,7 @@ The concentration depends on the species and the place, and there are often few 
 
 **Principle:** The meter counts both the radiation of the sample and that of the surroundings. Only the part from the sample is proportional to its activity and decreases according to the decay law, so the background is subtracted first. The background is assumed to stay the same during the whole measurement.
 
-**Formula:** $\dfrac{R_1}{R_0} = \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, so $\ln \dfrac{R_0}{R_1} = \dfrac{t}{T_{1/2}} \ln 2$ and $T_{1/2} = \dfrac{t \ln 2}{\ln (R_0 / R_1)}$, where $R_0$ and $R_1$ are the net pulse rates of the sample
+**Formula:** $$\begin{aligned} \dfrac{R_1}{R_0} &= \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \\ \ln\dfrac{R_0}{R_1} &= \dfrac{t}{T_{1/2}} \ln 2 \\ T_{1/2} &= \dfrac{t \ln 2}{\ln (R_0 / R_1)} \end{aligned}$$, where $R_0$ and $R_1$ are the net pulse rates of the sample
 
 **Conversions:** No unit conversions: the ratio of the pulse rates is a pure number, and the time is in minutes. The net pulse rates: $R_0 = 820 - 30 = 790$ and $R_1 = 230 - 30 = 200$ pulses per minute.
 
@@ -358,7 +358,7 @@ The concentration depends on the species and the place, and there are often few 
 
 **Principle:** Each isotope decays with its own half-life independently of the other, and the activity of each follows the decay law. The total activity is their sum. Because the initial activities are equal, $A_0$ cancels from the fraction.
 
-**Formula:** $A_\text{I} = A_0 \left(\tfrac{1}{2}\right)^{t/T_\text{I}}$ and $A_\text{Cs} = A_0 \left(\tfrac{1}{2}\right)^{t/T_\text{Cs}}$, so the share is $p = \dfrac{A_\text{I}}{A_\text{I} + A_\text{Cs}} = \dfrac{\left(\tfrac{1}{2}\right)^{t/T_\text{I}}}{\left(\tfrac{1}{2}\right)^{t/T_\text{I}} + \left(\tfrac{1}{2}\right)^{t/T_\text{Cs}}}$
+**Formula:** $$\begin{aligned} A_\text{I} &= A_0 \left(\tfrac{1}{2}\right)^{t/T_\text{I}} \\ A_\text{Cs} &= A_0 \left(\tfrac{1}{2}\right)^{t/T_\text{Cs}} \\ p &= \dfrac{A_\text{I}}{A_\text{I} + A_\text{Cs}} \\ &= \dfrac{\left(\tfrac{1}{2}\right)^{t/T_\text{I}}}{\left(\tfrac{1}{2}\right)^{t/T_\text{I}} + \left(\tfrac{1}{2}\right)^{t/T_\text{Cs}}} \end{aligned}$$, after $A_0$ cancels
 
 **Conversions:** $T_\text{Cs} = 30.1\,\text{a} = 30.1 \cdot 365.25\,\text{d} = 10\,994\,\text{d}$, so that all times are in days.
 
@@ -377,7 +377,7 @@ That is why after an accident iodine is a big problem for the first weeks, caesi
 
 **Principle:** Each nuclide follows its own decay law, and the total activity is their sum. The activity of the shorter-lived one has dropped almost to zero in the last measurements: at $96\,\text{h}$ there have passed $\tfrac{96}{6.0} = 16$ half-lives, and $\left(\tfrac{1}{2}\right)^{16} \approx 1.5 \cdot 10^{-5}$. So the late points describe only the longer-lived nuclide.
 
-**Formula:** $\dfrac{A_2(t_2)}{A_2(t_1)} = \left(\tfrac{1}{2}\right)^{(t_2 - t_1)/T_2}$, so $T_2 = \dfrac{(t_2 - t_1) \ln 2}{\ln \left(A_2(t_1) / A_2(t_2)\right)}$
+**Formula:** $$\begin{aligned} A_2(t_1) &= A_2(0) \left(\tfrac{1}{2}\right)^{t_1/T_2} \\ A_2(t_2) &= A_2(0) \left(\tfrac{1}{2}\right)^{t_2/T_2} \\ \dfrac{A_2(t_2)}{A_2(t_1)} &= \left(\tfrac{1}{2}\right)^{(t_2 - t_1)/T_2} \\ \ln \dfrac{A_2(t_1)}{A_2(t_2)} &= \dfrac{t_2 - t_1}{T_2} \ln 2 \\ T_2 &= \dfrac{(t_2 - t_1) \ln 2}{\ln \left(A_2(t_1) / A_2(t_2)\right)} \end{aligned}$$
 
 **Conversions:** The points $t_1 = 96\,\text{h}$ and $t_2 = 168\,\text{h}$ are $\Delta t = 72\,\text{h}$ apart. The result is converted to days by dividing by $24\,\tfrac{\text{h}}{\text{d}}$.
 
@@ -414,7 +414,7 @@ $$. The initial activity $800\,\text{MBq}$ has halved twice ($12\,\text{h} = 2 \
 
 **Principle:** The measured activity decreases according to the decay law with the effective half-life, because both decay and removal reduce the iodine in the body. The decay constants are added, and $\lambda = \tfrac{\ln 2}{T_{1/2}}$ gives the half-lives. The biological constant is obtained by subtracting the physical one from the total.
 
-**Formula:** $T_\text{eff} = \dfrac{t \ln 2}{\ln (A_0 / A)}$ and $\lambda_\text{bio} = \lambda_\text{eff} - \lambda_\text{phys}$, that is, $\dfrac{1}{T_\text{bio}} = \dfrac{1}{T_\text{eff}} - \dfrac{1}{T_\text{phys}}$
+**Formula:** $$\begin{aligned} A &= A_0 \left(\tfrac{1}{2}\right)^{t/T_\text{eff}} \\ \ln \dfrac{A_0}{A} &= \dfrac{t}{T_\text{eff}} \ln 2 \\ T_\text{eff} &= \dfrac{t \ln 2}{\ln (A_0 / A)} \\ \lambda_\text{eff} &= \lambda_\text{phys} + \lambda_\text{bio} \\ \dfrac{\ln 2}{T_\text{eff}} &= \dfrac{\ln 2}{T_\text{phys}} + \dfrac{\ln 2}{T_\text{bio}} \\ \dfrac{1}{T_\text{bio}} &= \dfrac{1}{T_\text{eff}} - \dfrac{1}{T_\text{phys}} \end{aligned}$$
 
 **Conversions:** All times are in days, so no unit conversions are needed. The equation $\lambda = \tfrac{\ln 2}{T_{1/2}}$ divided by $\ln 2$ gives $\tfrac{1}{T_\text{bio}} = \tfrac{1}{T_\text{eff}} - \tfrac{1}{T_\text{phys}}$.
 
@@ -443,7 +443,7 @@ $$. On the basis of part c), biological removal decreases the iodine-131 activit
 
 **Reading the graph:** The counts were read from the points at $t = 0$ and $t = 200\,\text{s}$: about $380$ and $58$. Points do not lie exactly on the curve because of random variation, so the readings are only approximate and the answer is accepted within $2\,\%$, which still separates it from the $73.7\,\text{s}$ obtained without the background subtraction.
 
-**Formula:** $y_1 - B = (y_0 - B)\left(\tfrac{1}{2}\right)^{t_1/T_{1/2}}$, so $T_{1/2} = \dfrac{t_1 \ln 2}{\ln\left(\dfrac{y_0 - B}{y_1 - B}\right)}$
+**Formula:** $$\begin{aligned} y_1 - B &= (y_0 - B) \left(\tfrac{1}{2}\right)^{t_1/T_{1/2}} \\ \ln \dfrac{y_0 - B}{y_1 - B} &= \dfrac{t_1}{T_{1/2}} \ln 2 \\ T_{1/2} &= \dfrac{t_1 \ln 2}{\ln\left(\dfrac{y_0 - B}{y_1 - B}\right)} \end{aligned}$$
 
 **Conversions:** The time is already in seconds, so none are needed.
 

@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c55461f4fa2a8ea8
-SCOPE: delta added-exercise from 08a5298251fe93cc base 415cbc7c6bc3
+CONTENT-HASH: 30e34ca50690ea4b
+SCOPE: delta md-paragraphs,numbers,reflow,typography from c55461f4fa2a8ea8 base 64d4935
 
 ## Blocking
-
 (none)
 
 ## Polish
-
-- fy8-1-L2-10 text, a) — a) and b) overlap (both find where electrons stop coming); merge into one step or let a) ask for the colours, so the sub-parts do not repeat. 
-- fy8-1-L2-10 d) — the model answer is good, but ask for one observation from a) and one from c) explicitly, so the explain criterion is observable.
+- solutions.md fy8-1-L1-01 vs L1-07 — the Kaava step is now basic laws then derived formula; in L1-07 the a)/b) labels sit inside one aligned block, which reads well; keep this form for later two-part tasks.
+- fy8-1-L2-10 (carried from the earlier report) — a) and b) still overlap; ask d) for one observation from a) and one from c).
 
 ## Checked
-
-- The task needs the PhET simulation: the box answer comes from the student's own slider reading, so the data is necessary (audit section 2/6 point 2).
-- Link answers 200; tolerance 0,05 eV covers readings 530-550 nm (2,25-2,34 eV).
-- Steps a) investigate, b) calculate, c) vary intensity then wavelength (variable control), d) model limit: the audit's progression. Four parts, fits.
-- Solution step by step, with a sanity check against W of sodium; not a repeat of L2-05/06/08/09 (graph tasks) or L1-06.
-- Method: delta, added exercise only; text and solution read, no captures opened.
+- Every changed Kaava starts from the basic law (E = hf, c = fλ, hf = W + Ek,max, P = IA) and ends in the symbolic form that the Sijoitus step substitutes into; numbers, answers and tolerances are untouched.
+- Aligned Kaava blocks render one equation per row with signs aligned (open-solution captures L1 part 1, L2 task 1-23, L3 part 10); nothing clipped.
+- Split model answers (L1-06, L1-08, L3 kvanttisaanto, L3 kolmen lähteen, L2-10 d) keep the Vastaus/Järkevyys boxes intact on the page; the second paragraph carries the explanation, no paragraph over about 120 words.
+- Finnish of the new sentences is correct; no plain unit outside LaTeX.
+- Method: delta; diff and captures read, no lesson file opened.

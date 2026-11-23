@@ -141,7 +141,15 @@
 
 **Periaate:** Potilasta pidetään pistemäisenä lähteenä, joten annosnopeus on kääntäen verrannollinen etäisyyden neliöön (luku *Säteilyannos ja säteilyturvallisuus Suomessa*). Annosnopeus pysyy tämän ajan vakiona, joten annos on annosnopeus kertaa aika.
 
-**Kaava:** $\dot{H}_2 = \dot{H}_1 \left(\tfrac{r_1}{r_2}\right)^2$ ja $H = \dot{H}_2 t$, joten $H = \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 t$
+**Kaava:** Annos on annosnopeus kertaa aika, $H = \dot{H} t$, ja annosnopeus pienenee etäisyyden neliön mukaan:
+
+$$
+\begin{aligned}
+\dot{H}_2 &= \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 \\
+H &= \dot{H}_2 t \\
+H &= \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 t
+\end{aligned}
+$$
 
 **Muunnokset:** $t = 5{,}0\,\text{min} = 5{,}0 \cdot \tfrac{1}{60}\,\text{h} = 0{,}08333\,\text{h}$
 
@@ -166,7 +174,18 @@ $$
 
 **Periaate:** Keilojen annokset summautuvat vain siellä, missä keilat leikkaavat, eli kasvaimessa. Tulokohdan kautta kulkee vain yksi keila, joten se saa vain tämän keilan annoksen, joka on $1{,}3$-kertainen keilan kasvaimeen antamaan annokseen. Hoitokertojen annokset lasketaan yhteen.
 
-**Kaava:** yhden keilan kasvainannos $\tfrac{2{,}0\,\text{Gy}}{5}$, joten $D = 30 \cdot 1{,}3 \cdot \dfrac{D_\text{kerta}}{5}$, missä $D_\text{kerta} = 2{,}0\,\text{Gy}$
+**Kaava:** Tulokohdan annos kertaa kohden johdetaan kasvainannoksesta. Keilojen lukumäärä on $n = 5$, tulokohdan kerroin $k = 1{,}3$ ja hoitokertoja on $N = 30$:
+
+$$
+\begin{aligned}
+D_\text{keila} &= \dfrac{D_\text{kerta}}{n} \\
+D_\text{tulo} &= k D_\text{keila} \\
+D &= N D_\text{tulo} \\
+&= N k \dfrac{D_\text{kerta}}{n}
+\end{aligned}
+$$
+
+missä $D_\text{kerta} = 2{,}0\,\text{Gy}$ on kasvaimen annos yhdellä hoitokerralla.
 
 **Muunnokset:** Ei tarvita: kaikki annokset ovat grayna.
 
@@ -183,7 +202,16 @@ $$
 
 **Periaate:** Säteet ovat yhtä pitkiä ja kulkevat muuten saman pehmytkudoksen läpi, joten muiden kerrosten osuudet ovat molemmille samat ja supistuvat suhteesta. Ero tulee vain $1{,}0\,\text{cm}$:n kerroksesta: säteellä A se on pehmytkudosta, säteellä B kalkkeumaa. Kerrosten läpi päässeet osuudet kerrotaan.
 
-**Kaava:** $\dfrac{I_\text{A}}{I_\text{B}} = \dfrac{\left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{kudos}}}{\left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{luu}}} = 2^{d/d_{1/2}^\text{luu} - d/d_{1/2}^\text{kudos}}$
+**Kaava:** Kerros päästää läpi osuuden $I : I_0 = \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$. Kerroksen $d$ eteen tuleva $I_0$ on kummallakin säteellä sama, ja muut kerrokset supistuvat suhteesta:
+
+$$
+\begin{aligned}
+I_\text{A} &= I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{kudos}} \\
+I_\text{B} &= I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{luu}} \\
+\frac{I_\text{A}}{I_\text{B}} &= \frac{\left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{kudos}}}{\left(\tfrac{1}{2}\right)^{d/d_{1/2}^\text{luu}}} \\
+&= 2^{\,d/d_{1/2}^\text{luu} - d/d_{1/2}^\text{kudos}}
+\end{aligned}
+$$
 
 **Muunnokset:** Ei tarvita: kaikki paksuudet ovat senttimetreinä.
 
@@ -200,7 +228,16 @@ $$
 
 **Periaate:** Jokainen puoliintumispaksuus puolittaa fotonisäteilyn intensiteetin, joten vaimeneminen noudattaa yhtälöä $I = I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$. Paksuus on eksponentissa, joten se ratkaistaan logaritmilla.
 
-**Kaava:** $\dfrac{I_0}{I} = 2^{d/d_{1/2}}$. Otetaan molemmilta puolilta luonnollinen logaritmi ja käytetään sääntöä $\ln 2^{x} = x \ln 2$: $\ln \dfrac{I_0}{I} = \dfrac{d}{d_{1/2}} \cdot \ln 2$, josta $d = d_{1/2} \cdot \dfrac{\ln (I_0 : I)}{\ln 2}$
+**Kaava:** Vaimenemislaki ratkaistaan paksuudelle $d$. Eksponentti saadaan alas luonnollisella logaritmilla ja säännöllä $\ln 2^{x} = x \ln 2$:
+
+$$
+\begin{aligned}
+I &= I_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
+\frac{I_0}{I} &= 2^{d/d_{1/2}} \\
+\ln \frac{I_0}{I} &= \frac{d}{d_{1/2}} \cdot \ln 2 \\
+d &= d_{1/2} \cdot \frac{\ln (I_0 : I)}{\ln 2}
+\end{aligned}
+$$
 
 **Muunnokset:** $5{,}0\,\% = 0{,}050$, joten ${I_0 : I} = {1 : 0{,}050} = 20$. Paksuus saadaan millimetreinä kuten puoliintumispaksuus.
 
@@ -314,7 +351,17 @@ b) $A_\text{hajoaminen} = 500\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{12{,}
 
 **Periaate:** Kuvaukseen tarvittava aktiivisuus $A_\text{kuv} = a m$ on oltava jäljellä odotusajan jälkeen, ja aktiivisuus pienenee odotusaikana vain hajoamalla. Siksi ruiskutettava aktiivisuus $A_0$ on suurempi kuin $A_\text{kuv}$, ja pienin sopiva arvo saadaan hajoamislaista. Annos riippuu ruiskutetusta aktiivisuudesta, ja PET-osan ja TT-osan annokset lasketaan yhteen.
 
-**Kaava:** $A_\text{kuv} = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, josta $A_0 = \dfrac{a m}{\left(\tfrac{1}{2}\right)^{t/T_{1/2}}}$, ja $H = k A_0 + H_\text{TT}$
+**Kaava:** Kuvauksen aktiivisuus on $A_\text{kuv} = a m$. Ruiskutettava $A_0$ ratkaistaan hajoamislaista, ja annos on PET-osan ja TT-osan summa:
+
+$$
+\begin{aligned}
+A_\text{kuv} &= A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}} \\
+A_0 &= \dfrac{a m}{\left(\tfrac{1}{2}\right)^{t/T_{1/2}}} \\
+H &= k A_0 + H_\text{TT} \\
+&= \dfrac{k a m}{\left(\tfrac{1}{2}\right)^{t/T_{1/2}}} \\
+&\quad + H_\text{TT}
+\end{aligned}
+$$
 
 **Muunnokset:** Ei tarvita: odotusaika ja puoliintumisaika ovat molemmat minuutteina, ja annoskerroin on millisievertteinä megabecquerelia kohti.
 
@@ -344,7 +391,25 @@ Annos optimoidaan käyttämällä pienintä aktiivisuutta, jolla kuva onnistuu.
 
 Tarkistuksena kaikkiin viiteen pisteeseen sovitettu suora $\ln R$:n ja $d$:n välillä antaa $d_{1/2} = 9{,}18\,\text{mm}$ ja $d_x = 12{,}1\,\text{mm}$, eli saman vastauksen.
 
-**Kaava:** $\dfrac{R_0}{R} = 2^{d/d_{1/2}}$, josta $d = d_{1/2} \cdot \dfrac{\ln (R_0 : R)}{\ln 2}$. Kalibroinnista $d_{1/2} = \dfrac{d_{20} \ln 2}{\ln (R_0 : R_{20})}$ ja tuntemattomalle $d_x = d_{1/2} \cdot \dfrac{\ln (R_0 : R_x)}{\ln 2}$.
+**Kaava:** Laskentataajuus noudattaa vaimenemislakia. Se ratkaistaan paksuudelle samoin kuin intensiteetti, käyttäen sääntöä $\ln 2^{x} = x \ln 2$:
+
+$$
+\begin{aligned}
+R &= R_0 \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
+\frac{R_0}{R} &= 2^{d/d_{1/2}} \\
+\ln \frac{R_0}{R} &= \frac{d}{d_{1/2}} \cdot \ln 2 \\
+d &= d_{1/2} \cdot \frac{\ln (R_0 : R)}{\ln 2}
+\end{aligned}
+$$
+
+Kalibroinnissa tunnetaan paksuus $d_{20}$ ja sen laskentataajuus $R_{20}$, joten puoliintumispaksuus ja sen jälkeen tuntemattoman levyn paksuus $d_x$ ovat
+
+$$
+\begin{aligned}
+d_{1/2} &= \dfrac{d_{20} \ln 2}{\ln (R_0 : R_{20})} \\
+d_x &= d_{1/2} \cdot \dfrac{\ln (R_0 : R_x)}{\ln 2}
+\end{aligned}
+$$
 
 **Muunnokset:** Ei tarvita: paksuudet ovat millimetreinä, ja laskentataajuuksien suhde on paljas luku.
 

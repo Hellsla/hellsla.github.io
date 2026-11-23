@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 6fa3173777f1fcd9
+CONTENT-HASH: e4dcc85503760ad7
+SCOPE: delta numbers,reflow,wording from 6fa3173777f1fcd9 base 4b05399
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] fy8-6 L2-09 — earlier polish items (circular wording, significant-figure justification) unchanged.
+- [Minor] solutions L2-06 Answer: "…cancels the fact that the threshold voltage is … smaller than $\tfrac{hf}{e}$, and overshoots it a little." — "it" is ambiguous (the voltage or the fact) — e.g. "…smaller than $\tfrac{hf}{e}$; with the extra voltage it overshoots a little."
 
 ## Checked
-- Delta (md-paragraphs in solutions.md): opened fy8-6-open-exercises-1280-2 (solution 6-2, GIVEN to REASONABLENESS) and fy8-6-open-exercises-L2-1280-8 (task 6-14 with its solution start).
-- Solutions read as separate blocks per step, chains aligned, units upright, no clipping or overflow, following tasks intact.
+- Delta: L3-04 Formula (fy8-6-open-exercises-L3-1280-6): "eU_k ≈ hf" in running text, aligned blocks and fractions intact, no red KaTeX, blocks inside their card.
+- Delta: L2-06 Answer (fy8-6-open-exercises-L2-1280-8): changed Salla sentence reads fully, layout around it survived.
+- Hash re-run at end: unchanged.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

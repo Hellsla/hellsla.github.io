@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 98f3808a9f419fe0
+CONTENT-HASH: f10e9d39ee6a7796
+SCOPE: delta numbers,reflow from 98f3808a9f419fe0 base 4b05399
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] Kaava rows: the block now stacks every step, incl. the repeated "E = hf, f = c/lambda" opener; acceptable, no change asked.
 
 ## Checked
-- Delta (fi-easy): solutions.md paragraph cut only (md-paragraphs).
-- Opened lesson review/shots: open-exercises-1280-3 (11-3, 11-4: Annettu to Järkevyys in separate blocks, aligned Sijoitus), open-exercises-L2-1280-5 (Sijoitus, answer line, Järkevyys), open-exercises-L3-1280-5 (table, solution with stacked units, formula rows).
-- Cards keep order, solutions open inside their cards, no clipping, decimal commas and \cdot kept.
+- Delta (solutions.md, Kaava step re-set as aligned blocks). Source read; rendered the built fi-easy page at 390 px with every solution open and opened the three tallest Kaava blocks (own captures; the packet has no phone-width solution shots) plus lesson-level capture open-exercises-1280.
+- Result: one equation per row, equals signs aligned, fractions and subscripts legible, no clipping, scrollWidth 390, no KaTeX element beyond the viewport; the rest of the solution (Sijoitus, Vastaus, Järkevyys) unchanged.
+- Other captures not opened.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
