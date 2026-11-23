@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 017653cf72f2fca8
-SCOPE: delta caption-label,md-paragraphs,numbers,reflow,teacher-figure,typography,wording from 5d5b49dbc8de8981 base 98218de
+CONTENT-HASH: 7bf074f5d538ca25
+SCOPE: delta wording from 017653cf72f2fca8 base 0e8231e
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none new
+- [Minor] voltmeter-load task 2-22, Kaava block — the stacked-fraction rows sit close together vertically (last rows nearly touch) — shared aligned-block spacing, not per lesson; legible as is.
 
 ## Checked
-- Delta. Diff read in full. Opened 1280 px captures: open-exercises-L3-1280-4 (ammeter-in-parallel model answer, layout around the changed solution) and -8 (five-row Formula R, ΔU, ΔI, ΔR/R, ΔR; Conversions chain).
-- Rows align at the equals sign, subscripts and fractions are readable, nothing clipped, card spacing even. The rewritten b) step of the voltage-divider task is plain and short.
+- Opened en fy6-2-open-exercises-L3-1280-5, -6 (2-22 Formula block, ten rows aligned, Conversions, Substitution).
+- Both changed Kaava blocks lost the "Sigma U = 0" and "(Sigma U/Sigma I)" annotations; remaining rows keep one "=" column, every row starts with its quantity, no clipping at 1280 px.
+- The lamp-in-series task (2-12, core card) has no open-solution capture; its four-row block uses the same component and was judged from source.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

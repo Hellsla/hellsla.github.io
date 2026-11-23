@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: e0d944a8c7421a99
-SCOPE: delta caption-label,md-paragraphs,numbers,reflow,teacher-figure,typography from f3c6399e3049def6 base e238aa9
+CONTENT-HASH: 9e36ae77fccc1465
+SCOPE: delta wording from e0d944a8c7421a99 base 0e8231e
 
 ## Blocking
 - none
@@ -9,7 +9,6 @@ SCOPE: delta caption-label,md-paragraphs,numbers,reflow,teacher-figure,typograph
 - none
 
 ## Checked
-- Kaava steps are aligned rows that start from the base law (Kirchhoff, Σ U = 0 and Σ I = 0 in the divider and meter-in-series tasks; Δx = p·x + n·r before ratios).
-- The divider derivation moved from Sijoitus to Kaava, so symbols are solved before numbers; Sijoitus now only substitutes 12,0 V : 2,10 = 5,714 V, correct.
-- Long model answers (fuse blown, OL, repeat measurement, divider, R = U : I) are split into short paragraphs; content unchanged.
-- Task, figure and numbers unchanged.
+- The bare ΣU = 0 and ΣI = 0 labels are gone from the Kaava rows of L2-04 and L3 (voltage divider with meter); the Periaate text still says the voltages are in the same loop and the currents add, so the principle stays explained.
+- Rows now start from an equation with aligned equals signs; the L2-04 row is less cramped (my earlier polish point is met).
+- Derivation order, numbers, units and answers unchanged; no new trap for the student.

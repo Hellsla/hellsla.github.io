@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f57c156658def7ed
-SCOPE: delta caption-label,md-paragraphs,numbers,reflow,teacher-figure,typography,wording from 7a0d19ceab83f0dd base e238aa9
+CONTENT-HASH: 1d250e8158d4a046
+SCOPE: delta wording from f57c156658def7ed base 0e8231e
 
 ## Blocking
 - none
 
 ## Polish
-- solutions.md L2-04 Kaava — the row "U_lamppu = R_lamppu I ≈ 0 (I ≈ 0)" is a little cramped; "I ≈ 0, joten …" on its own line in the Periaate would read easier. Optional.
+- none
 
 ## Checked
-- The Kaava steps now start from the basic laws (ΣU = 0, ΣI = 0, the error-limit definition) and simplify symbolically to the end; the divider derivation (L3) follows every step with nothing skipped.
-- L2-04 begins from Kirchhoff's voltage law and shows why the lamp voltage is almost zero; the student can follow it.
-- Long model answers (fuse blown, ammeter placement, OL, battery check) split into one idea per paragraph; content unchanged.
-- The multimeter figure (teacher-approved) is not touched in meaning; the caption marker removal changes no task text.
-- No number, unit or answer changed.
+- The bare ΣU = 0 and ΣI = 0 labels are gone from the Kaava rows of L2-04 and L3 (voltage divider with meter); the Periaate text still says the voltages are in the same loop and the currents add, so the principle stays explained.
+- Rows now start from an equation with aligned equals signs; the L2-04 row is less cramped (my earlier polish point is met).
+- Derivation order, numbers, units and answers unchanged; no new trap for the student.
