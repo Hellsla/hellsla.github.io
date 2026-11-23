@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8e4c5b58f136d617
+CONTENT-HASH: b1a896e1400b409c
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] fy6-koe-fig-6-390 (fy6-k6 set-up) — labels "eristetanko" and "vaaka" are small at 390 px — enlarge slightly if the figure is next edited.
 
 ## Checked
-- Delta review: the change since the last PASS is paragraph breaks in solutions.md (git diff origin/main, all hunks read).
-- contact-1, contact-2, contact-3, contact-6 (triage); page-390-10 (k1 h, i, j) and page-1280-5 (k1 a, b) at readable size; k3 d, k6 d and k7 d, e in the contact sheets.
-- Each break is one thought per paragraph, nothing starts mid-thought, no one-word paragraph, spacing inside the solution card even, nothing clipped at 390 or 1280 px.
-- Inline display `$$aligned$$` pieces (k1 e, f) keep their own line and render intact.
+- Round 2, text-only changes since the earlier PASS; the figures are unchanged. Opened fig-1 to fig-7 at 390 px (switch circuit, battery graph, charging graphs A-D, resistor/lamp graph, LED circuits, balance set-up, Coulomb graph): legible, labelled with LaTeX units, data points distinct from model lines, nothing clipped.
+- Opened contact-1 (top, intro, exam structure, k1 choices with figures, solutions): layout intact, maths set correctly, no red KaTeX source, no overflow. Read the task and solution text in the packet: units in LaTeX, decimal comma, fluent Finnish.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

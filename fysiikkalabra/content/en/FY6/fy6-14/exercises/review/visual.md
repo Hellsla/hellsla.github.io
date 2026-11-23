@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f9910725a21270e0
+CONTENT-HASH: d57c0d0fa3e73c86
+SCOPE: delta numbers from f9910725a21270e0 base c6990df
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] solutions.md exercise 14-20, exercises.json (table header, text) — `E_\text{kul}` and `E_\text{kk}` are Finnish abbreviations in the English set — use `E_\text{cons}` and `E_\text{month}` (the table header is shared with the Finnish data).
+- [Minor] Formula block of 14-20 — `\text{self-sufficiency}` as a left side widens the aligned block, so the first rows sit far right; acceptable, optional shorter label.
 
 ## Checked
-- delta (solutions.md paragraph breaks): read the diff; breaks now sit right before the part labels, round-1 findings resolved, no word changes.
-- Opened sample captures at 1280 px (fy6-11 L3-7, fy6-16 L3-5 and L3-8): paragraph spacing even, nothing clipped.
+- Diff `git diff c6990df -- content/en/FY6/fy6-14/exercises` read: Formula blocks rewritten as aligned rows; `\text{share}` and the other words are English; the only Finnish remnants in the maths are the abbreviations `kul` and `kk` above.
+- Captures (content/en/FY6/fy6-14/review/shots) opened: open-exercises-L3-1280-5 (14-20 table and Formula, nothing clipped); layout survived, rows align at `=`.
 
 ## Scores
 illustrations n/a · typography 5 · Finnish 4 · accessibility 4

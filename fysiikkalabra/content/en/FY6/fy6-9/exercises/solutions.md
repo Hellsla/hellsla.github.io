@@ -32,7 +32,7 @@
 **Given:** capacity $Q = 2.4\,\text{Ah}$, current $I = 0.15\,\text{A}$
 **Find:** the time $t$ in hours that the lamp stays on
 **Principle:** The lamp draws a constant current, so the charge passing through the battery is current times time. The battery is empty when the charge equals the capacity.
-**Formula:** $Q = It$, from which $t = \dfrac{Q}{I}$
+**Formula:** $$\begin{aligned} Q &= It \\ t &= \dfrac{Q}{I} \end{aligned}$$
 **Conversions:** Not needed: the quotient of ampere-hours and amperes is hours.
 **Substitution:** $t = \dfrac{2.4\,\text{Ah}}{0.15\,\text{A}} = 16\,\text{h}$
 **Answer:** $16\,\text{h}$, two significant figures like the capacity and the current.
@@ -43,7 +43,7 @@
 **Find:** the charge $Q$ that passed through the battery in ampere-hours
 **Principle:** With a constant current the charge is current times time, that is, the area under the graph of current against time. The current is constant in two parts, so the charge is the sum of the areas of two rectangles.
 **Reading the graph:** The current is on the $2.0\,\text{A}$ grid line from time $0$ to time $1.5\,\text{h}$ and on the $1.0\,\text{A}$ line from time $1.5\,\text{h}$ to time $2.5\,\text{h}$, after which it is zero.
-**Formula:** $Q = I_1 t_1 + I_2 t_2$
+**Formula:** $$\begin{aligned} Q_1 &= I_1 t_1 \\ Q_2 &= I_2 t_2 \\ Q &= Q_1 + Q_2 \\ Q &= I_1 t_1 + I_2 t_2 \end{aligned}$$
 **Conversions:** Not needed: an ampere times an hour is an ampere-hour. The duration of the second part is $t_2 = 2.5\,\text{h} - 1.5\,\text{h} = 1.0\,\text{h}$.
 **Substitution:** $Q = 2.0\,\text{A} \cdot 1.5\,\text{h} + 1.0\,\text{A} \cdot 1.0\,\text{h} = 3.0\,\text{Ah} + 1.0\,\text{Ah} = 4.0\,\text{Ah}$
 **Answer:** $4.0\,\text{Ah}$, two significant figures. The values are read from grid lines whose spacing is $0.5\,\text{A}$ and $0.5\,\text{h}$.
@@ -53,7 +53,7 @@
 **Given:** $E = 12.4\,\text{V}$, $R_\text{s} = 40\,\text{m}\Omega$, $U_\text{ch} = 14.4\,\text{V}$, $R = 0.36\,\Omega$
 **Find:** the charging current $I$ in amperes
 **Principle:** The circuit has one loop, so by the voltage law the voltage of the charger is the sum of the potential drops. The current passes through the battery from the positive terminal to the negative terminal, so the potential drops in the battery both in the internal resistance and by the source voltage.
-**Formula:** $U_\text{ch} - RI - R_\text{s} I - E = 0$, from which $I = \dfrac{U_\text{ch} - E}{R + R_\text{s}}$
+**Formula:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{ch} - RI - R_\text{s} I - E &= 0 \\ U_\text{ch} - E &= (R + R_\text{s})I \\ I &= \dfrac{U_\text{ch} - E}{R + R_\text{s}} \end{aligned}$$
 **Conversions:** $R_\text{s} = 40\,\text{m}\Omega = 40 \cdot 0.001\,\Omega = 0.040\,\Omega$
 **Substitution:** $I = \dfrac{14.4\,\text{V} - 12.4\,\text{V}}{0.36\,\Omega + 0.040\,\Omega} = \dfrac{2.0\,\text{V}}{0.40\,\Omega} = 5.0\,\text{A}$
 **Answer:** $5.0\,\text{A}$, two significant figures like the voltage difference $2.0\,\text{V}$ and the resistances.
@@ -63,7 +63,7 @@
 **Given:** $U_\text{ch} = 5.0\,\text{V}$, $E = 3.8\,\text{V}$, $R = 0.80\,\Omega$, $I = 1.2\,\text{A}$
 **Find:** the internal resistance $R_\text{s}$ of the cell in ohms
 **Principle:** By the voltage law, the difference between the voltage of the charger and the source voltage of the cell equals the sum of the voltages of the resistances in the loop. When the current is known, we get the sum of the resistances and from it the share of the cell.
-**Formula:** $U_\text{ch} - RI - R_\text{s} I - E = 0$, from which $R_\text{s} = \dfrac{U_\text{ch} - E}{I} - R$
+**Formula:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{ch} - RI - R_\text{s} I - E &= 0 \\ R_\text{s} I &= U_\text{ch} - E - RI \\ R_\text{s} &= \dfrac{U_\text{ch} - E}{I} - R \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Substitution:** $R_\text{s} = \dfrac{5.0\,\text{V} - 3.8\,\text{V}}{1.2\,\text{A}} - 0.80\,\Omega = 1.0\,\Omega - 0.80\,\Omega = 0.20\,\Omega$
 **Answer:** $0.2\,\Omega$, to a tenth of an ohm like the term $(U_\text{ch} - E) : I = 1.0\,\Omega$, which limits the precision of the difference.
@@ -73,7 +73,7 @@
 **Given:** capacity $4500\,\text{mAh}$, charge level $15\,\%$ → $80\,\%$, average current $I = 1.8\,\text{A}$
 **Find:** the charging time $t$ in minutes
 **Principle:** The charge passing through the battery must be the part of the capacity by which the charge level rises. With the average current the charge is current times time.
-**Formula:** $Q = (0.80 - 0.15) \cdot Q_\text{cap}$ and $Q = It$, from which $t = \dfrac{(0.80 - 0.15)\, Q_\text{cap}}{I}$
+**Formula:** $$\begin{aligned} Q &= (0.80 - 0.15)\,Q_\text{cap} \\ Q &= It \\ It &= (0.80 - 0.15)\,Q_\text{cap} \\ t &= \dfrac{(0.80 - 0.15)\,Q_\text{cap}}{I} \end{aligned}$$
 **Conversions:** $Q_\text{cap} = 4500\,\text{mAh} = 4500 \cdot 0.001\,\text{Ah} = 4.5\,\text{Ah}$ and finally $1\,\text{h} = 60\,\text{min}$
 **Substitution:** $t = \dfrac{0.65 \cdot 4.5\,\text{Ah}}{1.8\,\text{A}} = \dfrac{2.925\,\text{Ah}}{1.8\,\text{A}} = 1.625\,\text{h} = 1.625 \cdot 60\,\text{min} = 97.5\,\text{min}$
 **Answer:** $98\,\text{min}$, two significant figures like the current $1.8\,\text{A}$.
@@ -83,7 +83,7 @@
 **Given:** nominal voltage $U = 36\,\text{V}$, capacity $Q = 14\,\text{Ah}$, energy taken from the mains $W_\text{ch} = 600\,\text{Wh}$
 **Find:** the efficiency of charging $\eta$ in percent
 **Principle:** The efficiency is the ratio of the energy stored in the battery to the energy taken. By the assumption of the task, the energy stored in the battery is the nominal voltage times the capacity. The rest of the energy taken becomes internal energy of the charger, the wires and the battery.
-**Formula:** $W_\text{batt} = UQ$ and $\eta = \dfrac{W_\text{batt}}{W_\text{ch}}$, from which $\eta = \dfrac{UQ}{W_\text{ch}}$
+**Formula:** $$\begin{aligned} W_\text{batt} &= UQ \\ \eta &= \dfrac{W_\text{batt}}{W_\text{ch}} \\ \eta &= \dfrac{UQ}{W_\text{ch}} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh}$, and finally $0.84 = 84\,\%$.
 **Substitution:** $\eta = \dfrac{36\,\text{V} \cdot 14\,\text{Ah}}{600\,\text{Wh}} = \dfrac{504\,\text{Wh}}{600\,\text{Wh}} = 0.84$
 **Answer:** $84\,\%$, two significant figures like the voltage and the capacity.
@@ -93,7 +93,7 @@
 **Given:** car battery $U_1 = 12\,\text{V}$, $Q_1 = 60\,\text{Ah}$, half usable; scooter battery $U_2 = 36\,\text{V}$, $Q_2 = 7.8\,\text{Ah}$, fully usable
 **Find:** the ratio of the usable energies $W_1 : W_2$
 **Principle:** Ampere-hours tell only the charge. The voltages of the batteries are different, so they are compared by the energy $W = UQ$. Only half of the capacity is drawn from the car battery, so its usable energy is calculated from half the charge.
-**Formula:** $W_1 = 0.5\, U_1 Q_1$ and $W_2 = U_2 Q_2$, from which $\dfrac{W_1}{W_2} = \dfrac{0.5\, U_1 Q_1}{U_2 Q_2}$
+**Formula:** $$\begin{aligned} W &= UQ \\ W_1 &= 0.5\,U_1 Q_1 \\ W_2 &= U_2 Q_2 \\ \dfrac{W_1}{W_2} &= \dfrac{0.5\,U_1 Q_1}{U_2 Q_2} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh}$, and in the ratio the units cancel.
 **Substitution:** $\dfrac{W_1}{W_2} = \dfrac{0.5 \cdot 12\,\text{V} \cdot 60\,\text{Ah}}{36\,\text{V} \cdot 7.8\,\text{Ah}} = \dfrac{360\,\text{Wh}}{280.8\,\text{Wh}} \approx 1.28$
 **Answer:** $1.3$ times, two significant figures like the voltages and the capacities.
@@ -103,7 +103,7 @@
 **Given:** $U_\text{ch} = 13.8\,\text{V}$, source voltage at the start $E_1 = 12.0\,\text{V}$ and at the end $E_2 = 12.6\,\text{V}$, resistances in total $R_\text{tot} = 0.30\,\Omega$
 **Find:** the relative decrease of the charging current in percent
 **Principle:** By the voltage law, the charging current is driven by the difference between the voltage of the charger and the source voltage, and the resistances stay constant. When the source voltage grows, the difference and the current decrease. The decrease is compared with the initial current.
-**Formula:** $I = \dfrac{U_\text{ch} - E}{R_\text{tot}}$, and the decrease is $\dfrac{I_1 - I_2}{I_1}$
+**Formula:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{ch} - R_\text{tot} I - E &= 0 \\ I &= \dfrac{U_\text{ch} - E}{R_\text{tot}} \\ \text{decrease} &= \dfrac{I_1 - I_2}{I_1} \end{aligned}$$
 **Conversions:** Not needed: the voltages are in volts and the resistance in ohms. Finally the ratio is converted to percent.
 **Substitution:** $I_1 = \dfrac{13.8\,\text{V} - 12.0\,\text{V}}{0.30\,\Omega} = 6.0\,\text{A}$, $I_2 = \dfrac{13.8\,\text{V} - 12.6\,\text{V}}{0.30\,\Omega} = 4.0\,\text{A}$ and $\dfrac{6.0\,\text{A} - 4.0\,\text{A}}{6.0\,\text{A}} = 0.333 = 33.3\,\%$
 **Answer:** $33\,\%$, two significant figures like the voltage differences $1.8\,\text{V}$ and $1.2\,\text{V}$.
@@ -115,7 +115,7 @@
 **Principle:** The charging current passes through the internal resistance of the battery, and by Ohm's law the voltage of the resistance is $R_\text{s} I$. Electric power is voltage times current (chapter *Electric power and the heating of a resistor*), and at constant power energy is power times time.
 
 This energy becomes internal energy of the battery, which is transferred to the surroundings as heat.
-**Formula:** $P = R_\text{s} I \cdot I = R_\text{s} I^2$ and $W = Pt$, from which $W = R_\text{s} I^2 t$
+**Formula:** $$\begin{aligned} P &= UI \\ U &= R_\text{s} I \\ P &= R_\text{s} I \cdot I = R_\text{s} I^2 \\ W &= Pt \\ W &= R_\text{s} I^2 t \end{aligned}$$
 **Conversions:** $t = 1.5\,\text{h} = 1.5 \cdot 3600\,\text{s} = 5400\,\text{s}$ and finally $1\,\text{kJ} = 1000\,\text{J}$
 **Substitution:** $W = 0.15\,\Omega \cdot (2.0\,\text{A})^2 \cdot 5400\,\text{s} = 0.60\,\text{W} \cdot 5400\,\text{s} = 3240\,\text{J} = 3.24\,\text{kJ}$
 **Answer:** $3.2\,\text{kJ}$, two significant figures like the current, the time and the resistance.
@@ -143,7 +143,7 @@ The current does not stop, since thanks to it the chemical energy increases, and
 **Given:** capacity $Q = 2600\,\text{mAh}$, charging current $I = 0.50\,\text{A}$
 **Find:** the charging time $t$ in hours
 **Principle:** With a constant current the charge passing through the battery is current times time. Charging an empty battery is complete when a charge equal to the capacity has passed through.
-**Formula:** $Q = It$, from which $t = \dfrac{Q}{I}$
+**Formula:** $$\begin{aligned} Q &= It \\ t &= \dfrac{Q}{I} \end{aligned}$$
 **Conversions:** $2600\,\text{mAh} = 2600 \cdot 0.001\,\text{Ah} = 2.6\,\text{Ah}$
 **Substitution:** $t = \dfrac{2.6\,\text{Ah}}{0.50\,\text{A}} = 5.2\,\text{h}$
 **Answer:** $5.2\,\text{h}$, two significant figures like the current $0.50\,\text{A}$.
@@ -174,7 +174,7 @@ In $UQt$ the time is included twice, because the ampere-hour already contains ti
 **Principle:** Power is voltage times current, and with a constant current the voltage changes with time. The voltage is assumed to change uniformly between the measurements, so the mean voltage of each interval is the average of the voltages at the ends of the interval.
 
 The energy is current times time times mean voltage, summed over all the intervals.
-**Formula:** $$\begin{aligned} W &= I\,\Delta t\,(U_{1,\text{avg}} + U_{2,\text{avg}} + \dots \\ &+ U_{5,\text{avg}}) \end{aligned}$$, where $U_{k,\text{avg}}$ is the mean voltage of interval $k$
+**Formula:** $$\begin{aligned} P_k &= U_{k,\text{avg}} I \\ W_k &= P_k \Delta t \\ W &= W_1 + \dots + W_5 \\ W &= I\,\Delta t\,(U_{1,\text{avg}} + \dots \\ &+ U_{5,\text{avg}}) \end{aligned}$$
 **Conversions:** Not needed: an ampere times an hour times a volt is a watt-hour.
 **Substitution:** The mean voltages of the intervals are $4.035\,\text{V}$, $3.86\,\text{V}$, $3.755\,\text{V}$, $3.645\,\text{V}$ and $3.35\,\text{V}$, and their sum is $18.645\,\text{V}$. So $W = 0.50\,\text{A} \cdot 1.0\,\text{h} \cdot 18.645\,\text{V} = 9.3225\,\text{Wh}$
 **Answer:** $9.3\,\text{Wh}$, two significant figures like the current $0.50\,\text{A}$ and the measurement interval $1.0\,\text{h}$.
@@ -186,7 +186,7 @@ The energy is current times time times mean voltage, summed over all the interva
 **Principle:** a) The $12.6\,\text{Wh}$ calculated by the student is the energy given by the charger, $U_\text{ch} I t$, and it is correct. The error is the assumption that everything is stored in the battery: only the part $E I t$, given by the source voltage, becomes chemical energy in the battery. The rest, the part of the voltage difference $U_\text{ch} - E$, is used to drive the current through the resistances and becomes their internal energy, which is transferred to the surroundings as heat.
 
 b) The loss is the difference between the energy given by the charger and the energy stored in the battery.
-**Formula:** $W_\text{loss} = U_\text{ch} I t - E I t$, from which $W_\text{loss} = (U_\text{ch} - E)\, I t$
+**Formula:** $$\begin{aligned} W_\text{loss} &= W_\text{ch} - W_\text{batt} \\ W_\text{ch} &= U_\text{ch} I t \\ W_\text{batt} &= E I t \\ W_\text{loss} &= (U_\text{ch} - E)\,I t \end{aligned}$$
 **Conversions:** Not needed: hours and amperes multiplied by volts give watt-hours directly.
 **Substitution:** $$\begin{aligned} W_\text{loss} &= (4.2\,\text{V} - 3.7\,\text{V}) \cdot 2.0\,\text{A} \\ &\cdot 1.5\,\text{h} \\ &= 0.5\,\text{V} \cdot 3.0\,\text{Ah} \\ &= 1.5\,\text{Wh} \end{aligned}$$
 **Answer:** $1.5\,\text{Wh}$, two significant figures like the current $2.0\,\text{A}$ and the time $1.5\,\text{h}$; the result is to a tenth of a watt-hour like the difference of the energies $12.6\,\text{Wh} - 11.1\,\text{Wh}$. Answer to a): what is wrong in the student's reasoning is that all the energy given by the charger is stored in the battery, since part of it becomes internal energy of the resistances.
@@ -201,7 +201,7 @@ The resistances are together $0.5\,\text{V} : 2.0\,\text{A} = 0.25\,\Omega$, and
 
 The slope of its graph is $1 : R_\text{tot}$. Because of measurement uncertainty the data points are usually not exactly on one line, so the slope is read from the fitted line and not from two neighbouring data points.
 **Reading the graph:** The points are plotted in an $(U_\text{ch}, I)$ coordinate system and a straight line is fitted among them. Two points far apart from each other are read from the line, $(13.0\,\text{V};\ 1.5\,\text{A})$ and $(14.6\,\text{V};\ 5.5\,\text{A})$.
-**Formula:** slope $k = \dfrac{\Delta I}{\Delta U_\text{ch}} = \dfrac{1}{R_\text{tot}}$, from which $R_\text{tot} = \dfrac{\Delta U_\text{ch}}{\Delta I}$
+**Formula:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{ch} - R_\text{tot} I - E &= 0 \\ I &= \dfrac{1}{R_\text{tot}}\,U_\text{ch} - \dfrac{E}{R_\text{tot}} \\ k &= \dfrac{\Delta I}{\Delta U_\text{ch}} = \dfrac{1}{R_\text{tot}} \\ R_\text{tot} &= \dfrac{\Delta U_\text{ch}}{\Delta I} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Substitution:** $R_\text{tot} = \dfrac{14.6\,\text{V} - 13.0\,\text{V}}{5.5\,\text{A} - 1.5\,\text{A}} = \dfrac{1.6\,\text{V}}{4.0\,\text{A}} = 0.40\,\Omega$
 **Answer:** $0.40\,\Omega$, two significant figures like the current readings. A line fitted by hand gives the result to within a few percent.
@@ -214,7 +214,7 @@ The slope of its graph is $1 : R_\text{tot}$. Because of measurement uncertainty
 
 By the assumption of the task, the energy stored in the battery is the nominal voltage times the charge.
 **Reading the graph:** The current is $2.0\,\text{A}$ from $0$ to $1.0\,\text{h}$, $1.5\,\text{A}$ from $1.0\,\text{h}$ to $3.0\,\text{h}$ and $0.5\,\text{A}$ from $3.0\,\text{h}$ to $4.0\,\text{h}$, and zero after that.
-**Formula:** $Q = I_1 t_1 + I_2 t_2 + I_3 t_3$ and $W = UQ$, so $W = U\,(I_1 t_1 + I_2 t_2 + I_3 t_3)$
+**Formula:** $$\begin{aligned} Q_k &= I_k t_k \\ Q &= Q_1 + Q_2 + Q_3 \\ W &= UQ \\ W &= U\,(I_1 t_1 + I_2 t_2 \\ &+ I_3 t_3) \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh}$. The durations are $t_1 = 1.0\,\text{h}$, $t_2 = 3.0\,\text{h} - 1.0\,\text{h} = 2.0\,\text{h}$ and $t_3 = 4.0\,\text{h} - 3.0\,\text{h} = 1.0\,\text{h}$.
 **Substitution:** $$\begin{aligned} Q &= 2.0\,\text{A} \cdot 1.0\,\text{h} + 1.5\,\text{A} \cdot 2.0\,\text{h} \\ &+ 0.5\,\text{A} \cdot 1.0\,\text{h} \\ &= 2.0\,\text{Ah} + 3.0\,\text{Ah} + 0.5\,\text{Ah} \\ &= 5.5\,\text{Ah} \end{aligned}$$ and $W = 11.1\,\text{V} \cdot 5.5\,\text{Ah} = 61.05\,\text{Wh}$
 **Answer:** $61\,\text{Wh}$, two significant figures like the current readings. The values are read from the grid lines, which are $0.5\,\text{A}$ and $0.5\,\text{h}$ apart.
@@ -228,7 +228,7 @@ By the assumption of the task, the energy stored in the battery is the nominal v
 Power is energy per time, so at constant power $W = Pt$ (chapter *Electric power and the heating of a resistor*). When there are no losses, all the energy the charger gives is stored in the battery.
 
 That is why the calculated time is the shortest possible.
-**Formula:** $W = UQ$ and $W = Pt$, from which $t = \dfrac{W}{P} = \dfrac{UQ}{P}$
+**Formula:** $$\begin{aligned} W &= UQ \\ W &= Pt \\ Pt &= UQ \\ t &= \dfrac{UQ}{P} \end{aligned}$$
 **Conversions:** $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh}$ and $1\,\text{Wh} = 1\,\text{W} \cdot 3600\,\text{s} = 3600\,\text{J}$. The time comes out directly in hours, because $1\,\text{Wh} : 1\,\text{W} = 1\,\text{h}$.
 **Substitution:** a) $W = 36\,\text{V} \cdot 14\,\text{Ah} = 504\,\text{Wh}$ and in joules $W = 504 \cdot 3600\,\text{J} = 1.8144 \cdot 10^{6}\,\text{J} \approx 1.8\,\text{MJ}$. b) $t = \dfrac{504\,\text{Wh}}{120\,\text{W}} = 4.2\,\text{h}$
 **Part c):** The time of part b) is a lower limit for two reasons. The power $120\,\text{W}$ is the power going into the battery. The first reason is the internal resistance of the battery.
@@ -271,7 +271,7 @@ The energy $504\,\text{Wh}$ would run a $1000\,\text{W}$ kettle for about half a
 **Principle:** Before each discharge the cell is charged full from the same empty state. With a constant current the charge is $Q = It$, and the energy is the mean voltage times the charge, $W = U_\text{avg} Q$.
 
 The efficiency is the ratio of the energy obtained in discharging to the energy used in charging. The terminal voltage in discharging is $U = E - R_\text{s} I$, so when the source voltage $E$ is the same at both currents, the difference between the terminal voltages at the two currents is due only to the internal resistance.
-**Formula:** $Q = It$ and $W = U_\text{avg} Q$, and $\eta = \dfrac{W}{W_\text{ch}}$ and $R_\text{s} = \dfrac{U_{1,\text{avg}} - U_{2,\text{avg}}}{I_2 - I_1}$
+**Formula:** $$\begin{aligned} Q &= It \\ W &= U_\text{avg} Q \\ \eta &= \dfrac{W}{W_\text{ch}} \\ E &= U_\text{avg} + R_\text{s} I \\ U_{1,\text{avg}} + R_\text{s} I_1 &= U_{2,\text{avg}} + R_\text{s} I_2 \\ R_\text{s} &= \dfrac{U_{1,\text{avg}} - U_{2,\text{avg}}}{I_2 - I_1} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh}$ and $1\,\text{V} : 1\,\text{A} = 1\,\Omega$. Finally $0.7745 = 77.45\,\%$.
 **Substitution:** a) $Q_1 = 0.50\,\text{A} \cdot 5.2\,\text{h} = 2.6\,\text{Ah}$ and $W_1 = 3.70\,\text{V} \cdot 2.6\,\text{Ah} = 9.62\,\text{Wh}$, and $Q_2 = 2.0\,\text{A} \cdot 1.2\,\text{h} = 2.4\,\text{Ah}$ and $W_2 = 3.55\,\text{V} \cdot 2.4\,\text{Ah} = 8.52\,\text{Wh}$. b) $\eta = \dfrac{8.52\,\text{Wh}}{11.0\,\text{Wh}} = 0.7745$. c) $R_\text{s} = \dfrac{3.70\,\text{V} - 3.55\,\text{V}}{2.0\,\text{A} - 0.50\,\text{A}} = \dfrac{0.15\,\text{V}}{1.5\,\text{A}} = 0.10\,\Omega$
 **Answer:** $77\,\%$ (more precisely $77.45\,\%$), two significant figures like the duration of the discharge $1.2\,\text{h}$. Explanation: with a large current the voltage drop $R_\text{s} I$ is larger, so the terminal voltage falls to the limit $3.00\,\text{V}$ sooner and part of the capacity remains unused, $2.4\,\text{Ah}$ and not $2.6\,\text{Ah}$. In the internal resistance a power $R_\text{s} I^2$ becomes internal energy, and with a current four times as large it is $16$ times as large. In fast charging the current is large, so a small $R_\text{s}$ keeps the losses and the heating of the battery small.
@@ -287,7 +287,7 @@ With the small current the efficiency is $$9.62\,\text{Wh} : 11.0\,\text{Wh} \ap
 Therefore the charging is divided into stages in which the current is approximately constant, and in each stage the charge is $\Delta Q = It$.
 
 The current of a stage is calculated from the mean of the source voltage, because the source voltage changes during the stage.
-**Formula:** $I_k = \dfrac{U_\text{ch} - E_{k,\text{avg}}}{R_\text{tot}}$, $t_k = \dfrac{\Delta Q}{I_k}$ and $t = t_1 + t_2 + t_3$
+**Formula:** $$\begin{aligned} \sum \Delta V &= 0 \\ U_\text{ch} - R_\text{tot} I_k - E_{k,\text{avg}} &= 0 \\ I_k &= \dfrac{U_\text{ch} - E_{k,\text{avg}}}{R_\text{tot}} \\ \Delta Q &= I_k t_k \\ t_k &= \dfrac{\Delta Q}{I_k} \\ t &= t_1 + t_2 + t_3 \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$ and $1\,\text{Ah} : 1\,\text{A} = 1\,\text{h}$. In each stage the charge level rises by $20\,\%$, so $\Delta Q = 0.20 \cdot 50\,\text{Ah} = 10\,\text{Ah}$.
 **Substitution:** a) The mean source voltages are $12.10\,\text{V}$, $12.30\,\text{V}$ and $12.50\,\text{V}$. The currents are $I_1 = 1.90\,\text{V} : 0.40\,\Omega = 4.75\,\text{A}$, $I_2 = 1.70\,\text{V} : 0.40\,\Omega = 4.25\,\text{A}$ and $I_3 = 1.50\,\text{V} : 0.40\,\Omega = 3.75\,\text{A}$. The durations are $t_1 = 10\,\text{Ah} : 4.75\,\text{A} = 2.105\,\text{h}$, $t_2 = 10\,\text{Ah} : 4.25\,\text{A} = 2.353\,\text{h}$ and $t_3 = 10\,\text{Ah} : 3.75\,\text{A} = 2.667\,\text{h}$, so $t = 2.105\,\text{h} + 2.353\,\text{h} + 2.667\,\text{h} = 7.125\,\text{h}$.
 

@@ -1,13 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 6a32e9655e538bee
+CONTENT-HASH: 510344e7120d02fd
+SCOPE: delta md-paragraphs,typography,wording from ff4878db594db81d base 5b3ca4f
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- solutions.md fy6-1-L2-07 (b) and L3-04 (Substitution, charge and the first energy) — a display `$$aligned$$` block sits in the middle of a sentence ("the sum is $$…$$, so the average is …"), so the following ", so …" may land on its own line; consider closing the sentence before the block or leaving these short chains inline.
+- solutions.md fy6-1-L2-02 and L1-08 Formula — "Ne = It" is an extra row between Q = Ne and N = It/e; harmless, but it could be one row less.
 
 ## Checked
-- The change is one rewritten Answer line (fy6-1 battery-discharge task): significant figures now explained (products of two-figure numbers known to 0.1 Wh, a sum rounded to the least precise decimal place).
-- The explanation is correct and teaches the rule instead of only naming it; the 12.5 Wh result and all other steps are unchanged.
-- The caption marker removal changes no value.
+- Every Formula step now starts from the basic equations (I = Q/t, U = E/Q, Q = Ne) and solves symbolically, one equation per row; the final combined form comes last.
+- The L3-04 chain (U = E/Q, Q = It, E_k, sum, U_avg, estimate) is ordered from the principle to the asked quantities; numbers unchanged (12.5 Wh, 3.35 Ah).
+- The L2-03 average-current task keeps Q = ΣIΔt then I_avg = Q/t; consistent with its substitution.
+- Long principle, model-answer and reasonableness paragraphs are split into one idea each, no content removed; question order unchanged.
+- The L3-03 model answer splits into short paragraphs, all points retained.
+- Task texts, answers and level counts untouched; the earlier PASS holds for them.
+- Figure fy6-1/kaavio-malli: teacher-approved, unchanged.

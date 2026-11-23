@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9fea3cb47d59f117
+CONTENT-HASH: 9531f6927031d399
 
 ## Blocking
+None.
 
 ## Polish
-- lessons/FY6/sovella/answers.py — the new drift rate $0{,}005\,\text{V/min}$ is not computed — add it (shared with fi).
-- solutions.md fy6-s3 c **Kysytty** still says "on paljon pienempi"; could follow the new task wording ("poikkeaa").
+None new. The earlier polish items are unchanged and remain optional.
 
 ## Checked
-- Same data and answers.py as fi; one script recomputed every number of s1–s4: all agree with tasks.json and the solutions.
-- s1 drift defined in the task ("Tätä jännitteen hidasta muutosta ajan kuluessa sanotaan ajautumaksi") and the solution (with ajautumisnopeus); 0,03 V / 6 min ≈ 0,005 V/min consistent with six ~1 min readings and with the 0,06 Ω slope bound.
-- Idealisation (E and R_s treated as constant though the battery discharges and warms) correct, in the solution and the error_sources detail.
-- s2 b, s3 b ("Kerro oletuksesi" + "Oppilas sanoo tämän oletuksen"), s3 c ("poikkeaa"), s4 b (suhteellinen pieneneminen 27 % vs 46 %) answerable with the same expected answers; rubric consistent.
-- Energy wording follows the internal-energy guardrail.
+- Delta since my round-3 PASS (commit f85fea8bc0): only tasks.json, fy6-s4 b rubric criterion `calculation` detail. The inline `ΔE = 14,85 J − 7,99 J = 6,86 J` is now a two-row aligned block (`ΔE &= 14,85 J − 7,99 J` then `&= 6,86 J`). The numbers, units and criterion points are unchanged. No other task, solutions.md or answers.py line changed (git show, git diff HEAD).
+- Recomputed with my own formulas: E₁ = ½·330 µF·(300 V)² = 14,85 J, E₂ = ½·330 µF·(220 V)² = 7,986 J, ΔE = 6,864 J (46,2 %). These agree with the rubric, the solution and answers.py.
+- Both aligned rows are correct equalities, and the criterion still asks only what the task and the solution show.
+- The physics, scope, significant figures and point totals are as judged before, so the earlier verdict holds.
+- practice.py check: OK. Hash 9531f6927031d399 at start and end.

@@ -12,7 +12,7 @@
 **Given:** the resistance of the resistor $R = 220\,\Omega$ and the current $I = 15\,\text{mA}$
 **Find:** the voltage $U$ across the resistor in volts
 **Principle:** The resistor obeys Ohm's law, so the voltage is the product of the resistance and the current. The same equation follows from the definition of resistance $R = U : I$ by multiplying both sides by the current.
-**Formula:** $R = \dfrac{U}{I}$, so $U = R I$
+**Formula:** $$\begin{aligned} R &= \dfrac{U}{I} \\ U &= R I \end{aligned}$$
 **Conversions:** $I = 15\,\text{mA} = 15 \cdot 10^{-3}\,\text{A} = 0.015\,\text{A}$
 **Substitution:** $U = 220\,\Omega \cdot 0.015\,\text{A} = 3.3\,\text{V}$
 **Answer:** $3.3\,\text{V}$, two significant figures like the current $15\,\text{mA}$.
@@ -22,7 +22,7 @@
 **Given:** the resistance of the heating wires $R = 1.2\,\Omega$ and the voltage $U = 12\,\text{V}$
 **Find:** the current $I$ through the wires in amperes
 **Principle:** The current in a heating wire follows from the definition of resistance when the voltage and the resistance are known. The given resistance applies to the wires in use.
-**Formula:** $R = \dfrac{U}{I}$, so $I = \dfrac{U}{R}$
+**Formula:** $$\begin{aligned} R &= \dfrac{U}{I} \\ I &= \dfrac{U}{R} \end{aligned}$$
 **Conversions:** Not needed: the voltage is in volts and the resistance in ohms, and $1\,\text{V}/\Omega = 1\,\text{A}$.
 **Substitution:** $I = \dfrac{12\,\text{V}}{1.2\,\Omega} = 10\,\text{A}$
 **Answer:** $10\,\text{A}$, two significant figures like the voltage and the resistance.
@@ -52,7 +52,7 @@
 **Given:** at first $U_1 = 6.0\,\text{V}$ and $I_1 = 0.25\,\text{A}$; at the end $U_2 = 9.0\,\text{V}$; the temperature stays the same
 **Find:** the current $I_2$ at the voltage $9.0\,\text{V}$
 **Principle:** The temperature of the resistor stays the same, so it obeys Ohm's law and its resistance is the same at both voltages. The resistance is calculated from the first measurement and used for the second.
-**Formula:** $R = \dfrac{U_1}{I_1}$ and $I_2 = \dfrac{U_2}{R}$
+**Formula:** $$\begin{aligned} R &= \dfrac{U_1}{I_1} \\ I_2 &= \dfrac{U_2}{R} \end{aligned}$$
 **Conversions:** Not needed: the voltages are in volts and the current in amperes.
 **Substitution:** $R = \dfrac{6.0\,\text{V}}{0.25\,\text{A}} = 24\,\Omega$ and $I_2 = \dfrac{9.0\,\text{V}}{24\,\Omega} = 0.375\,\text{A}$
 **Answer:** $0.38\,\text{A}$, two significant figures like the voltages and the current $0.25\,\text{A}$.
@@ -73,7 +73,7 @@
 **Given:** copper conductor, $l = 50\,\text{m}$, $\rho = 1.7 \cdot 10^{-8}\,\Omega\cdot\text{m}$; resistance at most $R = 0.50\,\Omega$
 **Find:** the smallest cross-sectional area $A$ in square millimetres
 **Principle:** The resistance of a uniform conductor is inversely proportional to its cross-sectional area, so the largest allowed resistance gives the smallest allowed cross-sectional area.
-**Formula:** $R = \rho \dfrac{l}{A}$, so $A = \dfrac{\rho l}{R}$
+**Formula:** $$\begin{aligned} R &= \rho \dfrac{l}{A} \\ A &= \dfrac{\rho l}{R} \end{aligned}$$
 **Conversions:** The result comes out in square metres, and $1\,\text{m}^2 = (10^3\,\text{mm})^2 = 10^6\,\text{mm}^2$.
 **Substitution:** $A = \dfrac{1.7 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot 50\,\text{m}}{0.50\,\Omega} = 1.7 \cdot 10^{-6}\,\text{m}^2 = 1.7 \cdot 10^{-6} \cdot 10^6\,\text{mm}^2 = 1.7\,\text{mm}^2$
 **Answer:** $1.7\,\text{mm}^2$, two significant figures like the data.
@@ -83,7 +83,7 @@
 **Given:** constantan wire, diameter $d = 0.40\,\text{mm}$, length $l = 2.0\,\text{m}$, $\rho = 5.0 \cdot 10^{-7}\,\Omega\cdot\text{m}$
 **Find:** the resistance $R$ of the wire in ohms
 **Principle:** The wire is uniform, so $R = \rho l : A$. The cross-section is a circle, so the cross-sectional area is calculated from the radius, which is half the diameter.
-**Formula:** $A = \pi r^2 = \pi \left(\dfrac{d}{2}\right)^2$ and $R = \dfrac{\rho l}{A}$
+**Formula:** $$\begin{aligned} r &= \dfrac{d}{2} \\ A &= \pi r^2 \\ R &= \dfrac{\rho l}{A} \end{aligned}$$
 **Conversions:** $d = 0.40\,\text{mm} = 0.40 \cdot 10^{-3}\,\text{m}$, so $r = 0.20 \cdot 10^{-3}\,\text{m}$.
 **Substitution:** $A = \pi \cdot (0.20 \cdot 10^{-3}\,\text{m})^2 = 1.257 \cdot 10^{-7}\,\text{m}^2$ and $R = \dfrac{5.0 \cdot 10^{-7}\,\Omega\cdot\text{m} \cdot 2.0\,\text{m}}{1.257 \cdot 10^{-7}\,\text{m}^2} = 7.96\,\Omega$
 **Answer:** $8.0\,\Omega$, two significant figures like the diameter, the length and the resistivity.
@@ -95,7 +95,7 @@
 **Principle:** The wire is of the same material and uniform, so $R = \rho l : A$. The volume $V = A l$ stays the same, so when the length doubles, the cross-sectional area is halved.
 
 Both changes increase the resistance: the length doubles it, and the half-size cross-sectional area doubles it again. So the resistance changes more than the length.
-**Formula:** $R_1 = \rho \dfrac{l_1}{A_1}$ and $R_2 = \rho \dfrac{l_2}{A_2}$, where $l_2 = 2 l_1$ and $A_2 = \dfrac{A_1}{2}$, so $R_2 = \rho \dfrac{2 l_1}{A_1 / 2} = 4 R_1$
+**Formula:** $$\begin{aligned} R_1 &= \rho \dfrac{l_1}{A_1} \\ R_2 &= \rho \dfrac{l_2}{A_2} \\ l_2 &= 2 l_1, \quad A_2 = \dfrac{A_1}{2} \\ R_2 &= \rho \dfrac{2 l_1}{A_1 / 2} \\ &= 4 \rho \dfrac{l_1}{A_1} = 4 R_1 \end{aligned}$$
 **Conversions:** Not needed: the resistances are in ohms, and the comparison is made with ratios.
 **Substitution:** $R_2 = 4 \cdot 0.80\,\Omega = 3.2\,\Omega$
 **Answer:** $3.2\,\Omega$, two significant figures like the original resistance.
@@ -107,7 +107,7 @@ Both changes increase the resistance: the length doubles it, and the half-size c
 **Principle:** The resistance for each length is $R = U : I$. The resistance of a uniform wire is $R = \rho l : A$, so $R$ is directly proportional to the length and the ratio $R : l$ is the constant $\rho : A$.
 
 In real data sets the points are usually not exactly on the same line because of measurement uncertainty, so all the measurements are used.
-**Formula:** $R = \dfrac{U}{I}$ and $R = \rho \dfrac{l}{A}$, so $\rho = \dfrac{R}{l} \cdot A$
+**Formula:** $$\begin{aligned} R &= \dfrac{U}{I} \\ R &= \rho \dfrac{l}{A} \\ \rho &= \dfrac{R}{l} \cdot A \end{aligned}$$
 **Conversions:** $A = 0.20\,\text{mm}^2 = 0.20 \cdot 10^{-6}\,\text{m}^2$. Finally $10^{-6}\,\Omega\cdot\text{m} = 1\,\mu\Omega\cdot\text{m}$.
 **Substitution:** The resistances are $2.00\,\text{V} : 0.91\,\text{A} = 2.20\,\Omega$, $4.35\,\Omega$, $6.67\,\Omega$ and $8.70\,\Omega$, and the ratios $R : l$ are $5.49$, $5.43$, $5.56$ and $5.43\,\Omega/\text{m}$. The slope of the line fitted through the origin is $5.47\,\Omega/\text{m}$, so $\rho = 5.47\,\tfrac{\Omega}{\text{m}} \cdot 0.20 \cdot 10^{-6}\,\text{m}^2 = 1.09 \cdot 10^{-6}\,\Omega\cdot\text{m}$
 **Answer:** $1.1\,\mu\Omega\cdot\text{m}$, two significant figures like the cross-sectional area and the currents $0.30\,\text{A}$ and $0.23\,\text{A}$.
@@ -117,7 +117,7 @@ In real data sets the points are usually not exactly on the same line because of
 **Given:** the resistance of the cold lamp $R_\text{cold} = 1.0\,\Omega$; in use $U = 3.0\,\text{V}$ and $I = 0.25\,\text{A}$
 **Find:** the current $I_\text{cold}$ at the moment of switching on at the voltage $3.0\,\text{V}$
 **Principle:** At the moment of switching on, the wire is still at room temperature, so its resistance is the value for the cold lamp. The wire heats up only after current has flowed through it for a moment. The current follows from the definition of resistance.
-**Formula:** $R_\text{cold} = \dfrac{U}{I_\text{cold}}$, so $I_\text{cold} = \dfrac{U}{R_\text{cold}}$
+**Formula:** $$\begin{aligned} R_\text{cold} &= \dfrac{U}{I_\text{cold}} \\ I_\text{cold} &= \dfrac{U}{R_\text{cold}} \end{aligned}$$
 **Conversions:** Not needed: the voltage is in volts and the resistance in ohms.
 **Substitution:** $I_\text{cold} = \dfrac{3.0\,\text{V}}{1.0\,\Omega} = 3.0\,\text{A}$
 **Answer:** $3.0\,\text{A}$, two significant figures like the voltage and the resistance.
@@ -153,7 +153,7 @@ A longer wire does not give the current more room either: the room for the curre
 **Given:** at first $U = 4.5\,\text{V}$ and $I_1 = 0.60\,\text{A}$; the new wire is of the same copper, equally thick and twice as long; the voltage and the temperature stay the same
 **Find:** the current $I_2$ through the longer wire
 **Principle:** The wire is of the same material and equally thick, so $R = \rho l : A$ is directly proportional to the length. The resistance of a wire twice as long is double. The voltage stays the same, so by the definition of resistance the current is inversely proportional to the resistance.
-**Formula:** $R = \dfrac{U}{I}$, so $R_1 = \dfrac{U}{I_1}$, $R_2 = 2 R_1$ and $I_2 = \dfrac{U}{R_2}$
+**Formula:** $$\begin{aligned} R &= \dfrac{U}{I} \\ R_1 &= \dfrac{U}{I_1} \\ R_2 &= 2 R_1 \\ I_2 &= \dfrac{U}{R_2} \end{aligned}$$
 **Conversions:** Not needed: the voltage is in volts, the current in amperes and the resistance in ohms.
 **Substitution:** $R_1 = \dfrac{4.5\,\text{V}}{0.60\,\text{A}} = 7.5\,\Omega$, $R_2 = 2 \cdot 7.5\,\Omega = 15\,\Omega$ and $I_2 = \dfrac{4.5\,\text{V}}{15\,\Omega} = 0.30\,\text{A}$
 **Answer:** $0.30\,\text{A}$, two significant figures like the voltage and the current.
@@ -305,7 +305,7 @@ The voltages are chosen from a wide range and at even intervals, so that the sha
 A point far from the origin is read from the line, so that the share of the reading error is small: when $U = 15.0\,\text{V}$, the line is at $I = 0.375\,\text{A}$.
 
 The slope of this graph is $\dfrac{\Delta I}{\Delta U}$, that is, the reciprocal of the resistance, $\dfrac{1}{R}$. In the characteristic curve of the chapter the axes are the other way round (the current on the horizontal axis), and then the slope is $R$ itself.
-**Formula:** Part b): the definition of resistance $R = \dfrac{U}{I}$ gives $I = \dfrac{1}{R} \cdot U$, so the slope of the line is $\dfrac{\Delta I}{\Delta U} = \dfrac{1}{R}$ and $R = \dfrac{\Delta U}{\Delta I}$. Part c): $P = UI$
+**Formula:** Part b): $$\begin{aligned} R &= \dfrac{U}{I} \\ I &= \dfrac{1}{R} \cdot U \\ \dfrac{\Delta I}{\Delta U} &= \dfrac{1}{R} \\ R &= \dfrac{\Delta U}{\Delta I} \end{aligned}$$ Part c): $P = UI$
 **Conversions:** None needed: the voltage is in volts and the current in amperes, so the resistance comes out in ohms ($1\,\Omega = 1\,\text{V/A}$) and the power in watts ($1\,\text{W} = 1\,\text{V} \cdot 1\,\text{A}$).
 **Substitution:** Part b): $R = \dfrac{15.0\,\text{V} - 0\,\text{V}}{0.375\,\text{A} - 0\,\text{A}} = 40.0\,\Omega$. Part c): at the voltage $6.0\,\text{V}$ the power is $P_1 = U_1 I_1 = 6.0\,\text{V} \cdot 0.150\,\text{A} = 0.90\,\text{W}$ and at the voltage $12.0\,\text{V}$ the power is $P_2 = U_2 I_2 = 12.0\,\text{V} \cdot 0.300\,\text{A} = 3.60\,\text{W}$
 **Part b):** The points lie on a straight line through the origin, so the current is directly proportional to the voltage and the resistance is constant.

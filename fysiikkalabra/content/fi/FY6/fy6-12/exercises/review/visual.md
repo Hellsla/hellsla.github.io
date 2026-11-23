@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 1f8c74036f192058
+CONTENT-HASH: 870b888366bc5011
+SCOPE: delta numbers from 1f8c74036f192058 base 3076572
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none new
+(none)
 
 ## Checked
-- Delta (solutions.md paragraph breaks only, round 2). Opened 1280 px capture: open-exercises-L3-1280-7 (energy-distribution task, merged b) paragraph with display chain; the card spacing even, nothing clipped).
-- Breaks now stand before part labels or at sentence boundaries; no one-word paragraph, no formula or label clipped, solution-card spacing even.
+- Diff read in full: Kaava steps start from basic equations as `aligned` blocks, one equation per row; numbers, units and substitutions unchanged.
+- Opened at 1280 px: open-exercises-L3-1280-1 (L3-01 energy conservation, five-row Kaava with subscripts `E_{\text{k},A}`, the longest): equals signs aligned, subscripts and roots legible, nothing clipped.
+- Layout checks at 360-1280 px are green in the packet.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

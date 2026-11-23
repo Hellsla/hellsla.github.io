@@ -2,7 +2,7 @@
 **Annettu:** akun energia täyteen ladattuna $W = 64\,\text{kWh}$, varaustaso nousee $15\,\%$:sta $80\,\%$:iin
 **Kysytty:** akkuun varastoitava energia $W_\text{akku}$ kilowattitunteina
 **Periaate:** Varaustaso kertoo, kuinka suuri osa akun täydestä energiasta siihen on varastoitunut. Akkuun pitää siis siirtää varaustasojen erotuksen osuus täydestä energiasta.
-**Kaava:** $W_\text{akku} = (s_2 - s_1) W$, missä $s_1$ ja $s_2$ ovat varaustasot desimaalilukuina
+**Kaava:** $$\begin{aligned} W_1 &= s_1 W \\ W_2 &= s_2 W \\ W_\text{akku} &= W_2 - W_1 \\ W_\text{akku} &= (s_2 - s_1) W \end{aligned}$$, missä $s_1$ ja $s_2$ ovat varaustasot desimaalilukuina
 **Muunnokset:** $s_1 = 15\,\% = 0{,}15$ ja $s_2 = 80\,\% = 0{,}80$
 **Sijoitus:** $W_\text{akku} = (0{,}80 - 0{,}15) \cdot 64\,\text{kWh} = 0{,}65 \cdot 64\,\text{kWh} = 41{,}6\,\text{kWh}$
 **Vastaus:** $42\,\text{kWh}$, kaksi merkitsevää numeroa kuten akun energiassa $64\,\text{kWh}$.
@@ -22,7 +22,7 @@
 **Annettu:** teho $P = 11\,\text{kW}$, kolme vaihetta, vaihejännite $U = 230\,\text{V}$
 **Kysytty:** yhden vaihejohtimen virta $I$ ampeereina
 **Periaate:** Asema ottaa jokaisesta kolmesta vaihejohtimesta saman virran, ja jokainen vaihe siirtää tehon $UI$. Kokonaisteho on siis kolme kertaa yhden vaiheen teho.
-**Kaava:** $P = 3UI$, josta $I = \dfrac{P}{3U}$
+**Kaava:** $$\begin{aligned} P &= 3P_1 \\ P_1 &= UI \\ P &= 3UI \\ I &= \dfrac{P}{3U} \end{aligned}$$
 **Muunnokset:** $P = 11\,\text{kW} = 11\,000\,\text{W}$
 **Sijoitus:** $I = \dfrac{11\,000\,\text{W}}{3 \cdot 230\,\text{V}} = \dfrac{11\,000\,\text{W}}{690\,\text{V}} = 15{,}94\,\text{A}$
 **Vastaus:** $16\,\text{A}$, kaksi merkitsevää numeroa kuten tehossa $11\,\text{kW}$.
@@ -53,7 +53,7 @@
 **Kysytty:** verkosta otettu energia $W_\text{verkko}$ kilowattitunteina
 **Periaate:** Kun teho on vakio, energia on teho kertaa aika. Kuvaajassa teho on kahdessa vakiotehoisessa jaksossa, joten energia on kahden suorakulmion pinta-alojen summa.
 **Kuvaajan lukeminen:** Ensimmäisessä jaksossa teho on $P_1 = 11\,\text{kW}$ ajan $0\text{–}2{,}0\,\text{h}$, joten $t_1 = 2{,}0\,\text{h}$. Toisessa jaksossa teho on $P_2 = 5{,}5\,\text{kW}$ ajan $2{,}0\text{–}3{,}0\,\text{h}$, joten $t_2 = 1{,}0\,\text{h}$. Sen jälkeen teho on nolla.
-**Kaava:** $W_\text{verkko} = P_1 t_1 + P_2 t_2$
+**Kaava:** $$\begin{aligned} W_1 &= P_1 t_1 \\ W_2 &= P_2 t_2 \\ W_\text{verkko} &= W_1 + W_2 \\ W_\text{verkko} &= P_1 t_1 + P_2 t_2 \end{aligned}$$
 **Muunnokset:** Ei tarvita: kilowateilla ja tunneilla energia saadaan suoraan kilowattitunteina.
 **Sijoitus:** $$\begin{aligned} W_\text{verkko} &= 11\,\text{kW} \cdot 2{,}0\,\text{h} \\ &+ 5{,}5\,\text{kW} \cdot 1{,}0\,\text{h} \\ &= 22\,\text{kWh} + 5{,}5\,\text{kWh} \\ &= 27{,}5\,\text{kWh} \end{aligned}$$
 **Vastaus:** $28\,\text{kWh}$, kaksi merkitsevää numeroa kuten kuvaajasta luetuissa arvoissa.
@@ -63,7 +63,7 @@
 **Annettu:** $U = 230\,\text{V}$, $I = 16\,\text{A}$, yksi vaihe, akun energia $60\,\text{kWh}$, varaustaso $20\,\% \to 80\,\%$, $\eta = 90\,\%$
 **Kysytty:** latausaika $t$ tunteina
 **Periaate:** Akkuun pitää siirtää $60\,\%$ sen energiasta. Teho on vakio, joten verkosta otettu energia on teho kertaa aika, ja akkuun siitä varastoituu hyötysuhteen osuus. Yksivaiheisen aseman teho on jännite kertaa virta.
-**Kaava:** $\eta P t = W_\text{akku}$ ja $P = UI$, joten $t = \dfrac{W_\text{akku}}{\eta U I}$
+**Kaava:** $$\begin{aligned} \eta &= \dfrac{W_\text{akku}}{W_\text{verkko}} \\ W_\text{verkko} &= Pt \\ P &= UI \\ W_\text{akku} &= \eta U I t \\ t &= \dfrac{W_\text{akku}}{\eta U I} \end{aligned}$$
 **Muunnokset:** $W_\text{akku} = (0{,}80 - 0{,}20) \cdot 60\,\text{kWh} = 36\,\text{kWh}$; $UI = 230\,\text{V} \cdot 16\,\text{A} = 3680\,\text{W} = 3{,}68\,\text{kW}$; $\eta = 0{,}90$
 **Sijoitus:** $t = \dfrac{36\,\text{kWh}}{0{,}90 \cdot 3{,}68\,\text{kW}} = \dfrac{36\,\text{kWh}}{3{,}312\,\text{kW}} = 10{,}87\,\text{h}$
 **Vastaus:** $11\,\text{h}$, kaksi merkitsevää numeroa kuten hyötysuhteessa $90\,\%$.
@@ -73,7 +73,7 @@
 **Annettu:** pääsulakkeet $3 \cdot 25\,\text{A}$, kiukaan teho $P_\text{k} = 9{,}0\,\text{kW}$ kolmessa vaiheessa, $U = 230\,\text{V}$
 **Kysytty:** latausaseman suurin sallittu virta $I_\text{a}$ yhdessä vaihejohtimessa
 **Periaate:** Pääsulake on jokaisessa vaihejohtimessa, ja saman vaihejohtimen kautta kulkevat virrat lasketaan yhteen (luku *Kirchhoffin lait ja potentiaali virtapiirissä*). Kiuas ottaa jokaisesta vaiheesta saman virran, joten sen virta saadaan kaavasta $P = 3UI$. Autolle jää se, mikä jää jäljelle $25\,\text{A}$:sta.
-**Kaava:** $I_\text{k} + I_\text{a} = I_\text{p}$ ja $I_\text{k} = \dfrac{P_\text{k}}{3U}$, joten $I_\text{a} = I_\text{p} - \dfrac{P_\text{k}}{3U}$, missä $I_\text{p} = 25\,\text{A}$
+**Kaava:** $$\begin{aligned} I_\text{k} + I_\text{a} &= I_\text{p} \\ P_\text{k} &= 3UI_\text{k} \\ I_\text{a} &= I_\text{p} - I_\text{k} \\ I_\text{a} &= I_\text{p} - \dfrac{P_\text{k}}{3U} \end{aligned}$$, missä $I_\text{p} = 25\,\text{A}$
 **Muunnokset:** $P_\text{k} = 9{,}0\,\text{kW} = 9000\,\text{W}$
 **Sijoitus:** $I_\text{a} = 25\,\text{A} - \dfrac{9000\,\text{W}}{3 \cdot 230\,\text{V}} = 25\,\text{A} - 13{,}04\,\text{A} = 11{,}96\,\text{A}$
 **Vastaus:** $11\,\text{A}$, kaksi merkitsevää numeroa kuten pääsulakkeen virrassa $25\,\text{A}$. Virta saa olla enintään $11{,}96\,\text{A}$, joten raja-arvo pyöristetään alaspäin: $12\,\text{A}$ ylittäisi pääsulakkeen virran.
@@ -83,7 +83,7 @@
 **Annettu:** kaapelin pituus $l = 30\,\text{m}$, poikkipinta-ala $A = 2{,}5\,\text{mm}^2$, virta $I = 16\,\text{A}$, $\rho = 1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m}$
 **Kysytty:** kaapelissa häviävä jännite $U_\text{h}$ voltteina
 **Periaate:** Kaapelin kuparijohtimet ovat vastus, jonka läpi kulkee latausvirta. Virta kulkee vaihejohdinta pitkin asemalle ja nollajohdinta pitkin takaisin, joten kuparin pituus on $2l$. Ohmin lain mukaan resistanssin yli oleva jännite on resistanssi kertaa virta.
-**Kaava:** $U_\text{h} = RI$ ja $R = \rho \dfrac{2l}{A}$, joten $U_\text{h} = \rho \dfrac{2l}{A} I$
+**Kaava:** $$\begin{aligned} U_\text{h} &= RI \\ R &= \rho \dfrac{2l}{A} \\ U_\text{h} &= \rho \dfrac{2l}{A} I \end{aligned}$$
 **Muunnokset:** $A = 2{,}5\,\text{mm}^2 = 2{,}5 \cdot (10^{-3}\,\text{m})^2 = 2{,}5 \cdot 10^{-6}\,\text{m}^2$
 **Sijoitus:** $$\begin{aligned} U_\text{h} &= 1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m} \\ &\cdot \dfrac{2 \cdot 30\,\text{m}}{2{,}5 \cdot 10^{-6}\,\text{m}^2} \cdot 16\,\text{A} \\ &= 0{,}408\,\Omega \cdot 16\,\text{A} \\ &= 6{,}53\,\text{V} \end{aligned}$$
 **Vastaus:** $6{,}5\,\text{V}$, kaksi merkitsevää numeroa kuten resistiivisyydessä $1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m}$ ja poikkipinta-alassa $2{,}5\,\text{mm}^2$.
@@ -93,7 +93,7 @@
 **Annettu:** akkuun vuodessa $W_\text{akku} = 3000\,\text{kWh}$, hyötysuhteet $\eta_1 = 82\,\%$ (pistorasia) ja $\eta_2 = 92\,\%$ (latausasema), hinta $a = 15\,\text{snt/kWh}$
 **Kysytty:** vuoden säästö $\Delta K$ euroina
 **Periaate:** Akkuun menee kummallakin tavalla sama energia, mutta verkosta otetaan akkuun menevä energia jaettuna hyötysuhteella. Säästö syntyy siitä, että latausasemalla verkosta otetaan vähemmän, ja se maksetaan samalla hinnalla.
-**Kaava:** $W_\text{verkko} = \dfrac{W_\text{akku}}{\eta}$ ja $K = a W_\text{verkko}$, joten $\Delta K = a \left(\dfrac{W_\text{akku}}{\eta_1} - \dfrac{W_\text{akku}}{\eta_2}\right)$
+**Kaava:** $$\begin{aligned} \eta &= \dfrac{W_\text{akku}}{W_\text{verkko}} \\ W_\text{verkko} &= \dfrac{W_\text{akku}}{\eta} \\ K &= a W_\text{verkko} \\ \Delta K &= K_1 - K_2 \\ \Delta K &= a \left(\dfrac{W_\text{akku}}{\eta_1} - \dfrac{W_\text{akku}}{\eta_2}\right) \end{aligned}$$
 **Muunnokset:** $\eta_1 = 0{,}82$, $\eta_2 = 0{,}92$ ja $a = 15\,\text{snt/kWh} = 0{,}15\,\text{€/kWh}$
 **Sijoitus:** $$\begin{aligned} &\Delta K \\ &= 0{,}15\,\text{€/kWh} \\ &\cdot \left(\dfrac{3000\,\text{kWh}}{0{,}82} - \dfrac{3000\,\text{kWh}}{0{,}92}\right) \\ &= 0{,}15\,\text{€/kWh} \\ &\cdot (3658{,}5\,\text{kWh} - 3260{,}9\,\text{kWh}) \\ &= 0{,}15\,\text{€/kWh} \cdot 397{,}7\,\text{kWh} \\ &= 59{,}7\,\text{€} \end{aligned}$$
 **Vastaus:** $60\,\text{€}$, kaksi merkitsevää numeroa kuten hyötysuhteissa $82\,\%$ ja $92\,\%$.
@@ -103,7 +103,7 @@
 **Annettu:** virta kasvaa $I_1 = 10\,\text{A}$:sta $I_2 = 16\,\text{A}$:iin, kaapelin resistanssi $R$ pysyy samana
 **Kysytty:** lämpenemistehon kasvu prosentteina
 **Periaate:** Joulen lain mukaan kaapeliin tuleva teho on $RI^2$. Kun $R$ pysyy samana, teho on verrannollinen virran neliöön, joten tehojen suhde on virtojen suhteen neliö.
-**Kaava:** $P = RI^2$, joten $\dfrac{P_2}{P_1} = \dfrac{R I_2^2}{R I_1^2} = \left(\dfrac{I_2}{I_1}\right)^2$ ja kasvu on $\dfrac{P_2}{P_1} - 1$
+**Kaava:** $$\begin{aligned} P_1 &= R I_1^2 \\ P_2 &= R I_2^2 \\ \dfrac{P_2}{P_1} &= \left(\dfrac{I_2}{I_1}\right)^2 \\ \text{kasvu} &= \dfrac{P_2}{P_1} - 1 \end{aligned}$$
 **Muunnokset:** Ei tarvita: ampeerit supistuvat. Kasvu muunnetaan prosenteiksi kertomalla sadalla.
 **Sijoitus:** $\dfrac{P_2}{P_1} = \left(\dfrac{16\,\text{A}}{10\,\text{A}}\right)^2 = 1{,}6^2 = 2{,}56$, joten kasvu on $2{,}56 - 1 = 1{,}56 = 156\,\%$
 **Vastaus:** $1{,}6 \cdot 10^{2}\,\%$ (laskettu $156\,\%$), kaksi merkitsevää numeroa kuten virroissa $10\,\text{A}$ ja $16\,\text{A}$.
@@ -113,7 +113,7 @@
 **Annettu:** akkuun varastoitava energia $W_\text{akku} = 40\,\text{kWh}$, aika kello $22.00\text{–}7.00$, $\eta = 90\,\%$, kolme vaihetta, $U = 230\,\text{V}$
 **Kysytty:** pienin vakiovirta $I$ yhdessä vaihejohtimessa
 **Periaate:** Verkosta pitää ottaa akkuun menevä energia jaettuna hyötysuhteella, ja se pitää ottaa käytettävissä olevassa ajassa, joten teho on vähintään energia jaettuna ajalla. Kolmivaiheisen aseman teho on $P = 3UI$, kun jokaisessa vaiheessa on sama virta.
-**Kaava:** $\eta \cdot 3UI \cdot t = W_\text{akku}$, joten $I = \dfrac{W_\text{akku}}{3 \eta U t}$
+**Kaava:** $$\begin{aligned} \eta &= \dfrac{W_\text{akku}}{W_\text{verkko}} \\ W_\text{verkko} &= Pt \\ P &= 3UI \\ W_\text{akku} &= 3\eta U I t \\ I &= \dfrac{W_\text{akku}}{3 \eta U t} \end{aligned}$$
 **Muunnokset:** $t = 7.00 - 22.00 = 9{,}0\,\text{h}$; $W_\text{akku} = 40\,\text{kWh} = 40\,000\,\text{Wh}$, jotta tulos saadaan ampeereina; $\eta = 0{,}90$
 **Sijoitus:** $I = \dfrac{40\,000\,\text{Wh}}{3 \cdot 0{,}90 \cdot 230\,\text{V} \cdot 9{,}0\,\text{h}} = \dfrac{40\,000\,\text{Wh}}{5589\,\text{Vh}} = 7{,}157\,\text{A}$
 **Vastaus:** $7{,}2\,\text{A}$, kaksi merkitsevää numeroa kuten energiassa $40\,\text{kWh}$ ja hyötysuhteessa $90\,\%$. Virran on oltava vähintään laskettu arvo, joten raja-arvo pyöristetään ylöspäin.
@@ -157,7 +157,7 @@ Esimerkiksi $11\,\text{kW}$:n asema siirtää tunnissa $11\,\text{kWh}$.
 **Kysytty:** a) huipputeho ja sen aika, b) aseman suurin latausteho $P_\text{a}$ huipun aikana kilowatteina, c) milloin $11\,\text{kW}$ sallitaan
 **Periaate:** Pääsulake rajoittaa jokaisen vaihejohtimen virtaa, ja kuormat jakautuvat tasan vaiheille, joten koko talon teho voi olla enintään $3UI_\text{p}$. Talon ja aseman tehot lasketaan yhteen, ja asemalle jää se, mitä talo ei käytä.
 **Kuvaajan lukeminen:** Taulukosta suurin teho on $6{,}8\,\text{kW}$ kello $19\text{–}20$.
-**Kaava:** $P_\text{max} = 3UI_\text{p}$ ja $P_\text{talo} + P_\text{a} \le P_\text{max}$, joten $P_\text{a} = 3UI_\text{p} - P_\text{talo}$, missä $I_\text{p} = 25\,\text{A}$
+**Kaava:** $$\begin{aligned} P_\text{max} &= 3UI_\text{p} \\ P_\text{talo} + P_\text{a} &\le P_\text{max} \\ P_\text{a} &= 3UI_\text{p} - P_\text{talo} \end{aligned}$$, missä $I_\text{p} = 25\,\text{A}$
 **Muunnokset:** $3UI_\text{p}$ lasketaan watteina ja muunnetaan kilowateiksi: $17\,250\,\text{W} = 17{,}25\,\text{kW}$.
 **Sijoitus:** $P_\text{max} = 3 \cdot 230\,\text{V} \cdot 25\,\text{A} = 17\,250\,\text{W} = 17{,}25\,\text{kW}$, joten $P_\text{a} = 17{,}25\,\text{kW} - 6{,}8\,\text{kW} = 10{,}45\,\text{kW}$
 **Vastaus:** Vastauslaatikkoon $10{,}4\,\text{kW}$, yksi desimaali kuten taulukon tehoissa. Teho saa olla enintään $10{,}45\,\text{kW}$, joten raja-arvo pyöristetään alaspäin. a) Huipputeho on kello $19\text{–}20$.
@@ -171,7 +171,7 @@ c) Asema saa käyttää täyttä tehoa $11\,\text{kW}$, kun talon teho on enint�
 **Annettu:** akun energia $60\,\text{kWh}$, varaustaso $20\,\% \to 80\,\%$, verkosta otettu teho $P = 7{,}4\,\text{kW}$, $\eta = 92\,\%$
 **Kysytty:** a) kaksi virhettä opiskelijan ratkaisussa, b) oikea latausaika $t$ tunteina
 **Periaate:** Latauksessa akkuun siirretään vain varaustasojen erotuksen osuus akun energiasta, eikä koko akkua. Verkosta otetusta energiasta vain hyötysuhteen osuus varastoituu akkuun, joten latausaika lasketaan akkuun menevästä energiasta jaettuna hyötysuhteen ja tehon tulolla.
-**Kaava:** $\eta P t = W_\text{akku}$, joten $t = \dfrac{W_\text{akku}}{\eta P}$
+**Kaava:** $$\begin{aligned} \eta &= \dfrac{W_\text{akku}}{W_\text{verkko}} \\ W_\text{verkko} &= Pt \\ W_\text{akku} &= \eta P t \\ t &= \dfrac{W_\text{akku}}{\eta P} \end{aligned}$$
 **Muunnokset:** $W_\text{akku} = (0{,}80 - 0{,}20) \cdot 60\,\text{kWh} = 36\,\text{kWh}$ ja $\eta = 0{,}92$
 **Sijoitus:** $t = \dfrac{36\,\text{kWh}}{0{,}92 \cdot 7{,}4\,\text{kW}} = \dfrac{36\,\text{kWh}}{6{,}808\,\text{kW}} = 5{,}288\,\text{h}$
 **Vastaus:** Vastauslaatikkoon $5{,}3\,\text{h}$, kaksi merkitsevää numeroa kuten hyötysuhteessa $92\,\%$. a) Ensimmäinen virhe: opiskelija käyttää koko akun energiaa $60\,\text{kWh}$, vaikka akkuun siirretään vain $60\,\%$ siitä eli $36\,\text{kWh}$.
@@ -186,7 +186,7 @@ b) Oikea latausaika on $5{,}3\,\text{h}$.
 **Kysytty:** a) verkosta otettu energia $W_\text{verkko}$ kilowattitunteina, b) keskiteho $P_\text{ka}$ kilowatteina
 **Periaate:** Teho muuttuu ajan mukana, joten energia ei ole teho kertaa aika. Energia on $(t, P)$-kuvaajan alle jäävä pinta-ala, ja se saadaan summaamalla puolen tunnin mittaisten puolisuunnikkaiden pinta-alat. Keskiteho on energia jaettuna kokonaisajalla.
 **Kuvaajan lukeminen:** Pisteet yhdistetään suorilla, ja jokaisen puolen tunnin välin pinta-ala on välin päätepisteiden tehojen keskiarvo kertaa $\Delta t = 0{,}5\,\text{h}$. Ensimmäinen ja viimeinen teho ovat $11{,}0\,\text{kW}$ ja $1{,}4\,\text{kW}$, ja välissä ovat $11{,}0$, $10{,}8$, $8{,}7$, $5{,}9$ ja $3{,}1\,\text{kW}$.
-**Kaava:** väli kerrallaan $W_i = \Delta t \cdot \dfrac{P_i + P_{i+1}}{2}$, kaikkien välien summa $W_\text{verkko} = \sum W_i$, ja $P_\text{ka} = \dfrac{W_\text{verkko}}{t}$
+**Kaava:** $$\begin{aligned} W_i &= \Delta t \cdot \dfrac{P_i + P_{i+1}}{2} \\ W_\text{verkko} &= \sum W_i \\ W_\text{verkko} &= \Delta t \Bigl(\dfrac{P_\text{alku} + P_\text{loppu}}{2} \\ &\qquad + \sum P_\text{väli}\Bigr) \\ P_\text{ka} &= \dfrac{W_\text{verkko}}{t} \end{aligned}$$, missä $P_\text{alku}$ ja $P_\text{loppu}$ ovat ensimmäinen ja viimeinen teho ja $P_\text{väli}$ välissä olevat tehot
 **Muunnokset:** Ei tarvita: kilowatit kertaa tunnit antaa kilowattitunnit.
 **Sijoitus:** Välitehojen summa on $$\begin{aligned} &11{,}0 + 10{,}8 + 8{,}7 + 5{,}9 + 3{,}1 \\ &= 39{,}5\,\text{kW} \end{aligned}$$ ja päätepisteiden keskiarvo $(11{,}0 + 1{,}4) : 2 = 6{,}2\,\text{kW}$, joten $$\begin{aligned} W_\text{verkko} &= 0{,}5\,\text{h} \\ &\cdot (6{,}2\,\text{kW} + 39{,}5\,\text{kW}) \\ &= 22{,}85\,\text{kWh} \end{aligned}$$ ja $P_\text{ka} = \dfrac{22{,}85\,\text{kWh}}{3{,}0\,\text{h}} = 7{,}617\,\text{kW}$
 **Vastaus:** Vastauslaatikkoon $23\,\text{kWh}$, kaksi merkitsevää numeroa kuten tehoissa. a) Verkosta otettu energia on $23\,\text{kWh}$.
@@ -229,7 +229,7 @@ eli $t \approx 11\,\text{h}$. Häviöt pidentävät latausta, joten kumpikin on 
 **Annettu:** kuukausimatkat taulukosta, sähköauto $16{,}0\,\text{kWh}$ akusta sadalla kilometrillä, $\eta = 90{,}0\,\%$, $a_\text{koti} = 15\,\text{snt/kWh}$, $a_\text{julk} = 0{,}45\,\text{€/kWh}$, bensiiniauto $6{,}50\,\textsf{l}$ sadalla kilometrillä, bensiinin hinta $b = 1{,}85\,\text{€/}\textsf{l}$
 **Kysytty:** b) bensiiniauton ja sähköauton kotilatauksen vuosikustannusten erotus $\Delta K$ euroina
 **Periaate:** Vuosikustannus on kulutettu määrä kertaa hinta. Sähköautolla maksetaan verkosta otetusta energiasta, joten akusta kulutettu energia jaetaan hyötysuhteella. Bensiiniautolla maksetaan ostetuista litroista. Molemmilla kulutus on suoraan verrannollinen ajettuun matkaan, joten $100\,\text{km}$:n kulutus kerrotaan lukumäärällä $s : 100\,\text{km}$.
-**Kaava:** $W_\text{verkko} = \dfrac{s}{100\,\text{km}} \cdot \dfrac{w}{\eta}$, $K_\text{s} = a W_\text{verkko}$, $K_\text{b} = \dfrac{s}{100\,\text{km}} \cdot v b$ ja $\Delta K = K_\text{b} - K_\text{s}$, missä $w = 16{,}0\,\text{kWh}$ ja $v = 6{,}50\,\textsf{l}$
+**Kaava:** $$\begin{aligned} n &= \dfrac{s}{100\,\text{km}} \\ W_\text{akku} &= n w \\ W_\text{verkko} &= \dfrac{W_\text{akku}}{\eta} = \dfrac{n w}{\eta} \\ K_\text{s} &= a W_\text{verkko} \\ K_\text{b} &= n v b \\ \Delta K &= K_\text{b} - K_\text{s} \end{aligned}$$, missä $w = 16{,}0\,\text{kWh}$ ja $v = 6{,}50\,\textsf{l}$
 **Muunnokset:** $a_\text{koti} = 15\,\text{snt/kWh} = 0{,}15\,\text{€/kWh}$ ja $\eta = 0{,}900$
 **Sijoitus:** Kuukausimatkojen summa on $s = 14\,640\,\text{km}$, joten $s : 100\,\text{km} = 146{,}4$. Sähköauto: $W_\text{verkko} = 146{,}4 \cdot 16{,}0\,\text{kWh} : 0{,}900 = 2602{,}7\,\text{kWh}$ ja $$\begin{aligned} K_\text{s} &= 0{,}15\,\text{€/kWh} \cdot 2602{,}7\,\text{kWh} \\ &= 390{,}4\,\text{€} \end{aligned}$$. Bensiiniauto: $K_\text{b} = 146{,}4 \cdot 6{,}50\,\textsf{l} \cdot 1{,}85\,\text{€/}\textsf{l} = 1760{,}5\,\text{€}$. Erotus on $\Delta K = 1760{,}5\,\text{€} - 390{,}4\,\text{€} = 1370{,}1\,\text{€}$.
 **Vastaus:** Vastauslaatikkoon $1{,}37 \cdot 10^{3}\,\text{€}$ eli pyöristettynä kymmeneen euroon, koska sähkön kustannus $390\,\text{€}$ on kahden merkitsevän numeron tarkkuudella. a) Vuosittainen ajomatka on $14\,640\,\text{km}$.
@@ -243,7 +243,7 @@ c) Julkisella latauksella $$\begin{aligned} K_\text{s} &= 0{,}45\,\text{€/kWh}
 **Annettu:** pääsulakkeet $3 \cdot 25\,\text{A}$, $U = 230\,\text{V}$, kuormat $6{,}0\,\text{kW}$, $3{,}3\,\text{kW}$, $1{,}8\,\text{kW}$ ja $0{,}90\,\text{kW}$ jaettuna tasan kolmelle vaiheelle, kaapeli $l = 30\,\text{m}$, $A = 2{,}5\,\text{mm}^2$, $\rho = 1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m}$
 **Kysytty:** b) suurin latausvirta $I_\text{a}$ ampeereina ja c) kaapelin lämpenemisteho $P_\text{johto}$ kahdella virralla
 **Periaate:** Saman vaihejohtimen kautta kulkevat virrat lasketaan yhteen, ja summa saa olla enintään pääsulakkeen virta. Talon kuormat jakautuvat tasan vaiheille, joten talon virta vaihetta kohti saadaan kolmivaiheisen tehon kaavasta. Yksivaiheinen asema kuormittaa vain yhtä vaihetta, joten sille jää se, mikä siltä vaiheelta jää jäljelle. Kaapelin kuparijohtimet ovat vastus, jossa Joulen lain mukainen teho on $RI^2$.
-**Kaava:** $P_\text{talo} = 3UI_\text{talo}$, joten $I_\text{talo} = \dfrac{P_\text{talo}}{3U}$; $I_\text{talo} + I_\text{a} \le I_\text{p}$, joten $I_\text{a} = I_\text{p} - I_\text{talo}$; $P_\text{johto} = \rho \dfrac{2l}{A} I^2$
+**Kaava:** $$\begin{aligned} P_\text{talo} &= 3UI_\text{talo} \\ I_\text{talo} &= \dfrac{P_\text{talo}}{3U} \\ I_\text{talo} + I_\text{a} &= I_\text{p} \\ I_\text{a} &= I_\text{p} - I_\text{talo} \\ R &= \rho \dfrac{2l}{A} \\ P_\text{johto} &= R I^2 = \rho \dfrac{2l}{A} I^2 \end{aligned}$$
 **Muunnokset:** $$\begin{aligned} P_\text{talo} &= 6{,}0\,\text{kW} + 3{,}3\,\text{kW} \\ &+ 1{,}8\,\text{kW} + 0{,}90\,\text{kW} \\ &= 12{,}0\,\text{kW} \\ &= 12\,000\,\text{W} \end{aligned}$$ ja $A = 2{,}5\,\text{mm}^2 = 2{,}5 \cdot 10^{-6}\,\text{m}^2$
 **Sijoitus:** $I_\text{talo} = \dfrac{12\,000\,\text{W}}{3 \cdot 230\,\text{V}} = 17{,}39\,\text{A}$ ja $I_\text{a} = 25\,\text{A} - 17{,}39\,\text{A} = 7{,}609\,\text{A}$. Kaapelin resistanssi on $$\begin{aligned} R &= 1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m} \\ &\cdot \dfrac{2 \cdot 30\,\text{m}}{2{,}5 \cdot 10^{-6}\,\text{m}^2} \\ &= 0{,}408\,\Omega \end{aligned}$$, joten $P_\text{johto} = 0{,}408\,\Omega \cdot (7{,}609\,\text{A})^2 = 23{,}6\,\text{W}$ ja virralla $16\,\text{A}$ $P_\text{johto} = 0{,}408\,\Omega \cdot (16\,\text{A})^2 = 104{,}4\,\text{W}$.
 **Vastaus:** Vastauslaatikkoon $7{,}6\,\text{A}$, kaksi merkitsevää numeroa kuten kuormien tehoissa. Virta saa olla enintään laskettu arvo, joten raja-arvo pyöristetään alaspäin. a) Talon virta on $17\,\text{A}$ jokaisessa vaihejohtimessa.
@@ -258,7 +258,7 @@ c) Kaapelin lämpenemisteho on $24\,\text{W}$ virralla $7{,}6\,\text{A}$ ja $104
 **Kysytty:** talon sähkön kustannus $K$ euroina kello 18–22
 **Periaate:** Kun teho on vakio, energia on teho kertaa aika, ja kustannus on energia kertaa hinta. Kuvaajassa teho on vakio jokaisen tunnin ajan, joten energia on neljän suorakulmion pinta-alojen summa.
 **Kuvaajan lukeminen:** Teho on $P_1 = 2\,\text{kW}$ kello 18–19, $P_2 = 5\,\text{kW}$ kello 19–20, $P_3 = 7\,\text{kW}$ kello 20–21 ja $P_4 = 3\,\text{kW}$ kello 21–22. Jokainen jakso kestää $\Delta t = 1{,}0\,\text{h}$.
-**Kaava:** $W = (P_1 + P_2 + P_3 + P_4) \Delta t$ ja $K = a W$
+**Kaava:** $$\begin{aligned} W_i &= P_i \Delta t \\ W &= W_1 + W_2 + W_3 + W_4 \\ W &= (P_1 + P_2 + P_3 + P_4) \Delta t \\ K &= a W \end{aligned}$$
 **Muunnokset:** $a = 16\,\text{snt/kWh} = 0{,}16\,\text{€/kWh}$
 **Sijoitus:** $$\begin{aligned} W &= (2\,\text{kW} + 5\,\text{kW} + 7\,\text{kW} \\ &+ 3\,\text{kW}) \\ &\cdot 1{,}0\,\text{h} \\ &= 17\,\text{kWh} \end{aligned}$$ ja $K = 0{,}16\,\text{€/kWh} \cdot 17\,\text{kWh} = 2{,}72\,\text{€}$
 **Vastaus:** $2{,}7\,\text{€}$, kaksi merkitsevää numeroa kuten kuvaajasta luetuissa arvoissa.

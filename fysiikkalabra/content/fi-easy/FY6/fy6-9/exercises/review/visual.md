@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e41da43196589eba
+CONTENT-HASH: 754be9e49009ab18
+SCOPE: delta caption-label,numbers from e41da43196589eba base b65e579
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md fy6-9-L2 (task 9-18) Kohta d) — the paragraph 'Toinen tyypillinen ohje…' follows 'Silloin akku kuumenee…' with no blank line in the source, so it renders with tight spacing as if a line break; add the blank line. Also 'Hän voi irrottaa laturin…' and 'Se voi myös jatkaa…' open on a pronoun whose referent is in the previous paragraph (mid-thought): move the break one sentence earlier or name the subject.
+- [Minor] solutions.md 9-11 and the other voltage-law solutions — the Kaava now opens with "$\sum \Delta V = 0$" while the rows below use $U_\text{lat}$, $E$ and $RI$; the symbol $\Delta V$ is not named in the text. A short "(potentiaalin muutosten summa)" in Periaate would tie it together. For science: confirm $\sum \Delta V = 0$ is the notation the course uses.
 
 ## Checked
-- Delta (md-paragraphs only, solutions.md): opened solution captures at 1280 px (open-exercises) for the changed tasks; paragraph breaks fall between ideas, spacing in the solution card is even, nothing clipped, formulas intact. Sample only, as the orchestrator asked; 390 px captures not opened.
+- fy6-9-open-exercises-L2-1280-1 (task 9-11: ΣΔV Kaava block, Sijoitus, Vastaus, Järkevyys), L2-1280-7 (graph task 9-17 and the neighbouring card), L3-1280-3 (9-21: five-row Kaava starting from P = UI). Re-captured at the current hash. The other new Kaava blocks (Q = It, W = UQ, η, slope derivation) judged from the diff text: each is an aligned `=` column, one step per row, symbols and units as maths, no plain-text quantities.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

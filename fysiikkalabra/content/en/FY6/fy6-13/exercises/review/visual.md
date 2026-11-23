@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b6b4a1468e05b4b5
+CONTENT-HASH: e9e7e93f13bca666
+SCOPE: delta numbers from b6b4a1468e05b4b5 base 3076572
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] No new Minors. Paragraph breaks in solutions.md fall at sentence boundaries; one idea per paragraph, no one-word paragraphs, no paragraph starts mid-thought.
+- [Minor] Kaava blocks of 13-23 and 13-18 — `Q = CU` appears twice in the long chain (rows 2 and 6) — for science: drop the repeat or keep it only if intended.
 
 ## Checked
-- Delta (md-paragraphs only, solutions.md). Opened at 1280 px: open-exercises-1280-6 (13-6 split Principle/Model answer), open-exercises-L2-1280-8 (13-6 model answer, 13-17 Principle), open-exercises-L3-1280-6, -7 (13-23 safety paragraph split; 13-24 Principle and Given), -9 (end of card).
-- Spacing inside the solution card consistent (same gap between paragraphs as between labelled blocks); nothing clipped; formulas intact.
-- 390 px: no exercise captures exist for this part; the layout is the shared card, judged from the 1280 captures.
+- Delta (numbers, solutions.md only): diff read in full; captures opened: en open-exercises-L3-1280-5/-6 (8-row Formula block: eight aligned rows, Q = CU twice).
+- Rows align at `=`, fractions legible, nothing clipped, long blocks not shrunk, surrounding card layout intact.
+- Not opened: 390 px solution captures (none for open solutions).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 4

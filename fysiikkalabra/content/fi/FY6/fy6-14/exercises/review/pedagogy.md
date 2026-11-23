@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0c746c938ac9ccb7
+CONTENT-HASH: 5bb4e6ce076f9a5c
+SCOPE: delta md-paragraphs,numbers,paragraphs,reflow,typography from 0c746c938ac9ccb7 base e238aa9
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- Max-power task: the table row for $15\,\Omega$ now shows its working ($1{,}48\,\text{V} \cdot 99\,\text{mA} = 147\,\text{mW}$, correct: $146{,}5$); the $22\,\Omega$ value $181\,\text{mW}$ and $20\,\Omega$ $178\,\text{mW}$ both round to $1{,}8 \cdot 10^{2}\,\text{mW}$, so say "laskettu arvo ratkaisee suurimman" in one clause.
+- (none new; earlier polish notes stand)
 
 ## Checked
-- $2{,}1 \cdot 10^{2}\,\Omega$, $3{,}9 \cdot 10^{2}\,\Omega$, $4{,}7 \cdot 10^{3}\,\text{kWh}$ and $1{,}8 \cdot 10^{2}\,\text{mW}$ are unambiguous and match the stated figure counts.
-- The $88\,\%$ answer and the reasoning check are unchanged and correct.
-- Caption marker removal touches no task text.
+- The Kaava/Formula step now starts from the basic principle equations (C=Q/U, W=1/2 QU, Q=CU, U=U_R+U_D, U_R=RI, P=UI) and derives the working form line by line; a student can follow each step.
+- Every changed block ends in the same expression the Sijoitus step uses; no jump or missing step.
+- Principle, Reading the graph and Model answer additions explain the reasoning and are observable, answering what each part asks.
+- Set size, levels, order and variety unchanged.

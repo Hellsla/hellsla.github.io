@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: edc1028be1632df7
-SCOPE: delta added-exercise from 7c99e4251271e391 base 8f23aa7ae3bd
+CONTENT-HASH: e3dadaa5c7980891
+SCOPE: delta numbers from 0b05edf64718632e base a2442fe
 
 ## Blocking
 - none
 
 ## Polish
-- fy6-4-L2-09 is close to L1-02 and L2-04 (two resistors in parallel, total resistance); its new part is reading the figure and the total current in mA. Sensible, but it sits at the lower edge of level 2.
+- Some Kaava lines (e.g. L1-02) are still long display lines on a phone (carried over).
 
 ## Checked
-- L2-09: figure task, reads 9,0 V, 30 Ω and 45 Ω, then R = 18 Ω and I = 0,50 A = 500 mA; arithmetic correct.
-- Solution is stepwise: why the same voltage is across both, parallel formula, conversion at the end, and a check through branch currents (0,30 + 0,20 A).
-- Figure task-parallel gives all values; its description matches and does not give the current or total resistance.
-- Situation first (ideal battery, wires neglected), question last as its own sentence, unit asked for explicitly.
-- Finnish correct; no trap beyond what the lesson teaches; the set keeps a mix of kinds at level 2.
+- Diff only removes the bare $\Sigma U = 0$ / $\Sigma I = 0$ labels from Kaava rows (all solutions); each row now starts at the plain statement ($I = I_1 + I_2$, $U = U_1 + U_2$, $R_\text{sarja} = R_a + R_b$), so the chapter no longer uses Kirchhoff notation before it is taught: the earlier Polish on this is resolved.
+- Aligned rows (`&=`) stay consistent: every step still follows from the previous one, and the Periaate lines state the same rule in words.
+- No answer, number or figure value changed; the figure tasks (task-parallel, task-mixed) are untouched and still give all values.
+- Levels, task wording, Finnish and phone captures are unchanged from the passed version.

@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 2af55d67694057c3
+CONTENT-HASH: 3098d1d5d8e3fef6
+SCOPE: delta md-paragraphs,numbers,reflow,typography from 2af55d67694057c3 base e238aa9
 
 ## Blocking
 
 ## Polish
+- solutions.md:242 — L3-05 Sijoitus "virralla $16\,\text{A}$ $P_\text{johto} = …$": two formulas sit side by side with no separator — add a comma or "on".
 
 ## Checked
-- All 20 numeric answers recomputed with my own formulas in one script and compared with answers.py: every value agrees (L2-05 key 10,4 = 10,45 rounded down; L2-08 options 15,3 / 11,1 / 13,0 / 5,1 h).
-- L2-03 judged against the teacher's rule of 2026-11-15 (an answer check accepts a limit rounded either way; P7c applies only to the model solution): exact limit 25 A − 9000 W : (3 · 230 V) = 11,96 A; key 11,5 A with tolerance 0.05 accepts 10,93–12,08 A, so 11, 11,96 and 12 A pass, and 13 A (13 A + 13,04 A = 26,04 A > 25 A) fails. Correct.
-- L2-03 model solution: symbolic form I_a = I_p − P_k : (3U) first, 13,04 A and 11,96 A right, answer "11 A" rounded down with the right safety reason, check 13,0 A + 11 A = 24 A < 25 A and 7,6 kW. Unchanged and consistent with answers.py's comment.
-- Physics of P = UI and P = 3UI under the stated power factor ≈ 1 and equal phase currents; t = W_akku : (ηP); K = aW_verkko; P_johto = ρ·2l : A · I² with out-and-back copper (L2-04 0,408 Ω, 6,53 V; L3-05 23,6 W and 104 W).
-- L2-07 trapezoid sum 22,85 kWh and mean 7,62 kW; L3-04 distance 14 640 km, 390,4 € vs 1760,5 €, difference 1370,1 €, public charging 1171,2 € (saving 589 €, about 780 € less).
-- Limit roundings: L3-03 up (at least 7,16 A), L3-05 and L2-05 down (at most), each with its reason (P7c).
-- Exactly one correct option in L1-06 and L2-08, and the answer field equals that option; every distractor's feedback names the actual mistake.
-- Figures lataus-ex and talo-ex give the values L2-01 (27,5 kWh) and L2-09 (17 kWh, 2,72 €) need without giving the answer.
-- Scope inside FY6 (power, Joule's law, batteries and charging, fuses); notation matches the brief.
-- Numbers in solutions.md identical to the Finnish version; answers, units and tolerances the same in exercises.json.
-- Hash the same at the start and the end.
+- Every changed Kaava step (L1-01, L1-03, L2-01, L2-02, L2-03, L2-04, L2-05, L2-06, L3-03, L2-08, L2-09, L2-07, L3-04, L3-05, L3-06) is on disk as an aligned block. Each starts from the basic law ($\eta = W_\text{akku} : W_\text{verkko}$, $W_\text{verkko} = Pt$, $P = UI$ per phase → $P = 3UI$, current sum at the main fuse, $U = RI$, $R = \rho\,2l : A$, $P = RI^2$, $K = aW_\text{verkko}$, $W_i = P_i\Delta t$). Each simplifies symbolically to the form that is substituted. Every row is algebraically right.
+- Notation matches the brief: $W_\text{akku}$, $W_\text{verkko}$, $\eta$, $P = 3UI$ with $U = 230\,\text{V}$ phase voltage, $P_\text{johto} = \rho\,(2l : A)\,I^2$, $K = aW_\text{verkko}$.
+- L2-07 trapezoid form $\Delta t\bigl(\tfrac{P_\text{alku}+P_\text{loppu}}{2} + \sum P_\text{väli}\bigr)$ equals $\sum W_i$, and its symbols are named. $W = 22{,}85\,\text{kWh}$, $P_\text{ka} = 7{,}617\,\text{kW}$.
+- L3-04 b) $n = s : 100\,\text{km}$, $W_\text{akku} = nw$, $W_\text{verkko} = nw : \eta$: consistent with the 100 km consumption taken from the battery.
+- L3-05 and L2-03: the limit is written as an equality to find the largest current. This is right for a maximum. The safe-side rounding (L2-03 11 A, L2-05 10,4 kW) is unchanged.
+- One script recomputed every number and compared it with answers.py, and all agree: 41,6 kWh; 15,94 A; 27,5 kWh; 10,87 h; 11,96 A; 6,53 V; 59,7 €; 156 %; 7,157 A; 10,45 kW; 5,288 h; 22,85 kWh; 1370,1 €; 7,609 A / 23,6 W / 104,4 W; 2,72 €.
+- No answer, unit, tolerance or number in the task data changed. The paragraph split in L1-06 changes no claim.
+- Hash identical at start and end.

@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0b42b5134a5c6175
+CONTENT-HASH: 260b819a49c95404
+SCOPE: delta wording from 4fe3e018a9850402 base 5965625
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- fy6-7-L2-09: the statement is long (about 230 words) before part a); consider moving the filter instructions into a short list. Everything else is explained (database, kuutiojalka, kompressori).
-- d) quotes "noin sata wattia" as general knowledge and says so: fine. The solution c) rounding (690/190 euro) vs exact 688/192 is explained.
-- English-only database is a known constraint; the table fallback covers it.
+- none
 
 ## Checked
-New task against section 6: authentic, data needed for a-c, 4 parts rising from reading to explaining, calculations verified (344/8760 h = 39.27 W; 28 %; 688/880/192 euro). Selkeä suomi: terms explained, no step dropped. Set mix unchanged.
+- L3-04 (hourly prices, moving the heater load) Kaava block: it now runs E = Pt, then K_kallis = a_kallis E and K_halpa = a_halpa E, then S = K_kallis − K_halpa, then the factored form S = E(a_kallis − a_halpa). The saving is defined as a difference of two costs before the shortcut appears, which is the missing step for students who would otherwise take the factored form on trust.
+- The change touches no numbers, answers, units, levels or figures. The Periaate (energy stays the same, the price changes) matches the new lines.
+- Symbols are consistent with the rest of the solution (K, a, S, E_varaaja) and the substitution line that follows.
+- The same fix is in this language version as in the Finnish one.

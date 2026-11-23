@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 0b598d282f9c3642
+CONTENT-HASH: 43cd3baad13c0746
+SCOPE: delta numbers from f3db54128b103065 base e000744
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] solutions, Sijoitus step with a bare "c)" (fy6-2 L2) / "b)" (fy6-4 L2) label alone on its line above a calculation box: the part letter reads orphaned; give it a short lead-in ("c) Virheraja on") as in the neighbouring parts.
+- [Minor] 4-21 solution (L3-3) — the last Formula row still writes $R_1/2$ with a slash inside a fraction — write the nested fraction or a colon.
+- [Minor] Formula blocks with fractions in every row (4-21, 4-13) are tight vertically; shared mathlayout row spacing, not a per-lesson fix.
 
 ## Checked
-- Delta (md-paragraphs): the diff of solutions.md; every added one-line paragraph checked (no one-word or mid-thought orphans).
-- Opened open-exercises captures at 1280 px (lesson review/shots, stamp matches this exercises hash): fy6-1 L1-5 and L2-8, fy6-2 L2-8, fy6-3 L2-9, fy6-4 L2-9. Paragraph spacing inside solution cards is even, nothing clipped. No 390 px exercise captures exist; the 360 px layout check is green.
-
+- 1280 px with every solution open: L1 part 1 (4-1), L2 parts 1 (4-10, first row `U &= ...`), 4 and 7 (4-13), L3 parts 3 (4-21) and 6 (corrected circuit); L3-3 and L2-1 enlarged to check alignment.
+- Every changed Formula block: the bare $\Sigma U$/$\Sigma I$ labels are gone; rows read `X &= ...`, and the equals signs stand in one column in every block I opened (the first-row offset of the earlier report is fixed). Diff read for all 11 blocks; they are the same pattern.
+- Layout survived around the changed blocks; no clipping.
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

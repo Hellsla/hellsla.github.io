@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d29240691e2c2f1f
+CONTENT-HASH: 2b6ae75f760733f9
+SCOPE: delta caption-label,md-paragraphs,numbers,reflow,typography from d29240691e2c2f1f base b5600a6
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Diff: solutions.md fy6-12-L2-09, Kaava and Sijoitus lines only; \frac became \dfrac and \tfrac, and the Kaava line now reads "..., josta v = ...", which is clearer than the arrow.
-- No number, step, unit or answer changed (8,387 · 10^6 m/s, 8,4 · 10^6 m/s with two figures); the earlier PASS conclusions on level, figure and solution hold.
+- The Kaava/Formula step of the model solutions now starts from the basic principle equation (F = qE, W = qU, energy conservation, Newton's laws, Coulomb) and derives the result row by row; each row follows from the previous one.
+- The derivations match the Principle step above them; no step is skipped and no new symbol appears without explanation.
+- Re-broken aligned rows keep numbers, signs and units unchanged; no task, data, level or answer changed.
+- Split solution and model-answer paragraphs read more easily, text unchanged in substance.
+- Rows are short, so they stay readable at 360 px.

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: d41d82457f2f3aac
-SCOPE: delta added-exercise from bd18cf01612b6d99 base c7f5e91173b0
+CONTENT-HASH: 1286237925d4cb6c
+SCOPE: delta caption-label,md-paragraphs,numbers,reflow,typography from d41d82457f2f3aac base b5600a6
 
 ## Blocking
 - none
@@ -9,9 +9,9 @@ SCOPE: delta added-exercise from bd18cf01612b6d99 base c7f5e91173b0
 - none
 
 ## Checked
-- L2-09: level 2 fits (read a stepped P(t) graph, E = Pt in three parts, sum, kJ); the lesson teaches E = Pt.
-- Arithmetic: 360 + 300 + 120 = 780 kJ correct; the mean power check (1,08 kW) is right.
-- Solution splits the reading, conversions and sum step by step and names the area interpretation.
-- Figure ex-pt gives every value (2000, 1000, 500 W; 3,0, 8,0, 12 min) with gridlines, its description matches and gives no energy.
-- Question is its own sentence; the situation (hob plate) is familiar; Finnish correct.
-- Adds the piecewise-power idea; not a repeat of L1-05 (P against I) or L2-05; mix of kinds in the set stays varied.
+- Kaava steps now start from basic principle equations (P = UI, U = RI, E = Pt, Kirchhoff loop law) and chain to the working formula; each added step is correct and in the order a student could reproduce.
+- Derivations are shown as aligned display lines, one equation per line: readable at 360 px.
+- Step chains match the Sijoitus step (symbols used are the ones substituted); no symbol appears without being defined in Annettu or Periaate.
+- Split paragraphs in answers/model answers change layout only, content unchanged.
+- Basic-level tasks keep the one-line Kaava where the formula is itself the principle (P = UI, E = Pt).
+- No change to task texts, figures or levels; earlier PASS findings stand.

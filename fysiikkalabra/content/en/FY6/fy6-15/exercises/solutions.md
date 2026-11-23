@@ -12,7 +12,7 @@
 **Given:** rated current of the fuse $I_\text{f} = 10\,\text{A}$, voltage $U = 230\,\text{V}$
 **Find:** the greatest total power $P_\text{max}$ in watts
 **Principle:** The devices of the circuit are in parallel at the same voltage, so their currents add up and the current in the circuit cable is the total power divided by the voltage. The rated current is not exceeded when this current is at most $I_\text{f}$.
-**Formula:** $I = \dfrac{P_1 + P_2 + \dots}{U} \le I_\text{f}$, so $P_\text{max} = UI_\text{f}$
+**Formula:** $$\begin{aligned} P_k &= UI_k \\ I &= I_1 + I_2 + \dots \\ &= \dfrac{P_1 + P_2 + \dots}{U} \\ I &\le I_\text{f} \\ P_\text{max} &= UI_\text{f} \end{aligned}$$
 **Conversions:** None needed: $1\,\text{V} \cdot 1\,\text{A} = 1\,\text{W}$.
 **Substitution:** $P_\text{max} = 230\,\text{V} \cdot 10\,\text{A} = 2300\,\text{W}$
 **Answer:** $2300\,\text{W}$, that is, $2.3\,\text{kW}$, two significant figures like the rated current $10\,\text{A}$.
@@ -113,7 +113,7 @@ The current of situation D exceeds the limit $30\,\text{mA}$ at which breathing 
 **Given:** rated current $I_\text{f} = 16\,\text{A}$, voltage $U = 230\,\text{V}$, powers that are on $P_1 = 2000\,\text{W}$ and $P_2 = 1200\,\text{W}$
 **Find:** the power $P_\text{extra}$ that can still be connected to the circuit
 **Principle:** The devices of the circuit are in parallel, so the currents add up and the total current is the total power divided by the voltage. The rated current is not exceeded when the total power is at most $UI_\text{f}$; the extra power left is the difference between this and the power in use.
-**Formula:** $\dfrac{P_1 + P_2 + P_\text{extra}}{U} = I_\text{f}$, so $P_\text{extra} = UI_\text{f} - (P_1 + P_2)$
+**Formula:** $$\begin{aligned} P_k &= UI_k \\ I_1 + I_2 + I_\text{extra} &= I_\text{f} \\ \dfrac{P_1 + P_2 + P_\text{extra}}{U} &= I_\text{f} \\ P_\text{extra} &= UI_\text{f} - (P_1 + P_2) \end{aligned}$$
 **Conversions:** None needed: $1\,\text{V} \cdot 1\,\text{A} = 1\,\text{W}$.
 **Substitution:** $$\begin{aligned} P_\text{extra} &= 230\,\text{V} \cdot 16\,\text{A} \\ &- (2000\,\text{W} + 1200\,\text{W}) \\ &= 3680\,\text{W} - 3200\,\text{W} \\ &= 480\,\text{W} \end{aligned}$$
 **Answer:** about $480\,\text{W}$. The difference is calculated from large numbers, so it is only indicative: the rated current $16\,\text{A}$ has two significant figures.
@@ -125,7 +125,7 @@ The current of situation D exceeds the limit $30\,\text{mA}$ at which breathing 
 **Principle:** The extension cord is in series with the heater, so the current of the heater flows through it. The current is obtained from the power of the heater, and in the cord electrical energy is transformed into internal energy at the rate $RI^2$.
 
 Assumption: the voltage drop in the cord is so small that the current of the heater is the same as without the extension cord.
-**Formula:** $P = UI$, so $I = \dfrac{P}{U}$; in the cord $P_\text{c} = RI^2$, so $P_\text{c} = R\left(\dfrac{P}{U}\right)^2$
+**Formula:** $$\begin{aligned} P &= UI \\ I &= \dfrac{P}{U} \\ P_\text{c} &= RI^2 \\ &= R\left(\dfrac{P}{U}\right)^2 \end{aligned}$$
 **Conversions:** None needed: all quantities are in base units.
 **Substitution:** $I = \dfrac{2000\,\text{W}}{230\,\text{V}} = 8.696\,\text{A}$ and $P_\text{c} = 0.30\,\Omega \cdot (8.696\,\text{A})^2 = 22.68\,\text{W}$
 **Answer:** $23\,\text{W}$, two significant figures like the resistance $0.30\,\Omega$.
@@ -171,7 +171,7 @@ At the same voltage, moisture and bare skin increase the current to over sixty t
 **Given:** rated current of the fuse $I_\text{f} = 10\,\text{A}$, voltage $U = 230\,\text{V}$; powers from the table: kettle $2000\,\text{W}$, vacuum cleaner $1400\,\text{W}$, iron $1100\,\text{W}$, toaster $800\,\text{W}$, coffee maker $600\,\text{W}$
 **Find:** a) the pairs whose total current exceeds $I_\text{f}$; b) the greatest total power that does not exceed the limit, and the corresponding current $I$ in amperes
 **Principle:** The devices of the circuit are in parallel at the same voltage, so their currents add up and the current in the circuit cable is the total power divided by the voltage. The rated current of the fuse is exceeded when the total power is larger than $P_\text{max} = UI_\text{f}$.
-**Formula:** $P_\text{max} = UI_\text{f}$ and $I = \dfrac{P_1 + P_2}{U}$
+**Formula:** $$\begin{aligned} P_k &= UI_k \\ I &= I_1 + I_2 \\ &= \dfrac{P_1 + P_2}{U} \\ I &\le I_\text{f} \\ P_\text{max} &= UI_\text{f} \end{aligned}$$
 **Conversions:** None needed: $1\,\text{W} : 1\,\text{V} = 1\,\text{A}$.
 **Substitution:** $P_\text{max} = 230\,\text{V} \cdot 10\,\text{A} = 2300\,\text{W}$. Total powers of the pairs: kettle and vacuum cleaner $3400\,\text{W}$, kettle and iron $3100\,\text{W}$, kettle and toaster $2800\,\text{W}$, kettle and coffee maker $2600\,\text{W}$, vacuum cleaner and iron $2500\,\text{W}$; all are over $2300\,\text{W}$.
 
@@ -255,7 +255,7 @@ So the danger does not come from the size of the current but from the fact that 
 **Principle:** In the conductors, electrical energy is transformed into internal energy at the rate $P = RI^2$. The resistance is the same in both situations, so the ratio of the powers depends only on the ratio of the currents squared.
 
 A $25\,\text{A}$ fuse does not cut off a current of $22\,\text{A}$, so the cable is loaded beyond its rating.
-**Formula:** $P_1 = RI_1^2$ and $P_2 = RI_2^2$, so $\dfrac{P_2}{P_1} = \dfrac{I_2^2}{I_1^2}$
+**Formula:** $$\begin{aligned} P_1 &= RI_1^2 \\ P_2 &= RI_2^2 \\ \dfrac{P_2}{P_1} &= \dfrac{RI_2^2}{RI_1^2} \\ &= \dfrac{I_2^2}{I_1^2} \end{aligned}$$
 **Conversions:** None needed: the currents are in the same unit, and the units cancel.
 **Substitution:** $P_1 = 0.50\,\Omega \cdot (10\,\text{A})^2 = 50\,\text{W}$, $P_2 = 0.50\,\Omega \cdot (22\,\text{A})^2 = 242\,\text{W}$ and $\dfrac{P_2}{P_1} = \dfrac{242\,\text{W}}{50\,\text{W}} = 4.84$
 **Answer:** about $4.8$ times as large, two significant figures like the current $22\,\text{A}$.
@@ -267,7 +267,7 @@ The cable therefore heats up much more than it was designed to withstand, and th
 **Given:** voltage $U = 230\,\text{V}$, resistance of the body $R_\text{body} = 1.5\,\text{k}\Omega$, resistance of the shoes and the floor $R_\text{sh} = 100\,\text{k}\Omega$
 **Find:** the current $I$ through the body in milliamperes
 **Principle:** The current flows through the body, the shoes and the floor one after another, so the resistances are in series and their total resistance is the sum (chapter *Resistors in series and in parallel*). The same current flows through each, and it is obtained from Ohm's law with the total resistance.
-**Formula:** $R = R_\text{body} + R_\text{sh}$ and $I = \dfrac{U}{R}$, so $I = \dfrac{U}{R_\text{body} + R_\text{sh}}$
+**Formula:** $$\begin{aligned} U_\text{body} &= R_\text{body}I \\ U_\text{sh} &= R_\text{sh}I \\ U &= U_\text{body} + U_\text{sh} \\ &= (R_\text{body} + R_\text{sh})I \\ I &= \dfrac{U}{R_\text{body} + R_\text{sh}} \end{aligned}$$
 **Conversions:** $R_\text{body} = 1.5 \cdot 1000\,\Omega = 1500\,\Omega$ and $R_\text{sh} = 100 \cdot 1000\,\Omega = 100\,000\,\Omega$; $1\,\text{A} = 1000\,\text{mA}$.
 **Substitution:** $I = \dfrac{230\,\text{V}}{1500\,\Omega + 100\,000\,\Omega} = \dfrac{230\,\text{V}}{101\,500\,\Omega} = 0.002266\,\text{A} = 2.3\,\text{mA}$
 **Answer:** $2.3\,\text{mA}$, two significant figures like the resistance of the body $1.5\,\text{k}\Omega$.
@@ -280,7 +280,7 @@ A wet floor, a damaged shoe or touching a tap or an earthed device at the same t
 **Find:** the current $I$ flowing from one foot to the other in milliamperes
 **Principle:** The voltage between the feet, that is, the step voltage, is the difference of the potentials of the ground at the feet. The current flows from one foot through the body to the other foot, and it is obtained from Ohm's law.
 **Reading the graph:** At $r = 2.0\,\text{m}$ the curve passes through an intersection of the grid at the value $V_1 = 600\,\text{V}$ and at $r = 3.0\,\text{m}$ at the value $V_2 = 400\,\text{V}$. The step voltage is their difference.
-**Formula:** $U = V_1 - V_2$ and $I = \dfrac{U}{R}$, so $I = \dfrac{V_1 - V_2}{R}$
+**Formula:** $$\begin{aligned} U &= V_1 - V_2 \\ U &= RI \\ I &= \dfrac{U}{R} \\ &= \dfrac{V_1 - V_2}{R} \end{aligned}$$
 **Conversions:** $R = 4.0\,\text{k}\Omega = 4.0 \cdot 1000\,\Omega = 4000\,\Omega$; $1\,\text{A} = 1000\,\text{mA}$.
 **Substitution:** $I = \dfrac{600\,\text{V} - 400\,\text{V}}{4000\,\Omega} = \dfrac{200\,\text{V}}{4000\,\Omega} = 0.050\,\text{A} = 50\,\text{mA}$
 **Answer:** $50\,\text{mA}$, two significant figures like the resistance $4.0\,\text{k}\Omega$.
@@ -301,7 +301,7 @@ When no power is produced, the cord is at the temperature of the surroundings, s
 **Reading the graph:** The points $(P, \Delta T)$ are $(6.4\,\text{W};\ 2.1\,\text{K})$, $(25.6\,\text{W};\ 7.6\,\text{K})$, $(57.6\,\text{W};\ 17.2\,\text{K})$ and $(102.4\,\text{W};\ 30.4\,\text{K})$. They lie almost on a straight line through the origin: the ratios $\Delta T : P$ are $0.33$; $0.30$; $0.30$ and $0.30\,\text{K/W}$ (the first differs, because a small rise in temperature can be read less accurately).
 
 The slope of the line fitted through the origin is $k = \dfrac{\sum P\,\Delta T}{\sum P^2}$.
-**Formula:** $\Delta T = kP = kRI^2$, so $I_\text{max} = \sqrt{\dfrac{\Delta T_\text{max}}{kR}}$
+**Formula:** $$\begin{aligned} P &= RI^2 \\ \Delta T &= kP \\ &= kRI^2 \\ I_\text{max}^2 &= \dfrac{\Delta T_\text{max}}{kR} \\ I_\text{max} &= \sqrt{\dfrac{\Delta T_\text{max}}{kR}} \end{aligned}$$
 **Conversions:** None needed: a rise in temperature is the same in kelvins and in degrees Celsius, and $1\,\text{K/W}$ comes directly from the units of the table.
 **Substitution:** $$\begin{aligned} \sum P\,\Delta T &= 6.4 \cdot 2.1 + 25.6 \cdot 7.6 \\ &+ 57.6 \cdot 17.2 \\ &+ 102.4 \cdot 30.4 \\ &= 4311.7 \end{aligned}$$ and $$\begin{aligned} \sum P^2 &= 6.4^2 + 25.6^2 + 57.6^2 \\ &+ 102.4^2 \\ &= 14\,499.8 \end{aligned}$$, so $k = \dfrac{4311.7}{14\,499.8}\,\dfrac{\text{K}}{\text{W}} = 0.2974\,\dfrac{\text{K}}{\text{W}}$.
 
@@ -317,7 +317,7 @@ The current grows by the factor $20.5 : 16 = 1.28$, so the power and the rise in
 **Principle:** The leakage flows from the live conductor through the insulation to the frame, from the frame through the person to the ground and back, so the resistances $R_\text{e}$ and $R_\text{k}$ are in series and the resistance of the whole current path is their sum (chapter *Resistors in series and in parallel*).
 
 The same current flows through the person and the residual current device, and it is obtained from Ohm's law. The residual current device trips when the current exceeds $I_\text{limit} = 30\,\text{mA}$, so at the limit $R_\text{e} + R_\text{k} = U : I_\text{limit}$.
-**Formula:** $I = \dfrac{U}{R_\text{e} + R_\text{k}}$; at the limit $I_\text{limit} = \dfrac{U}{R_\text{e} + R_\text{k}}$, so $R_\text{e} = \dfrac{U}{I_\text{limit}} - R_\text{k}$
+**Formula:** $$\begin{aligned} U_\text{e} &= R_\text{e}I \\ U_\text{k} &= R_\text{k}I \\ U &= U_\text{e} + U_\text{k} \\ &= (R_\text{e} + R_\text{k})I \\ I_\text{limit} &= \dfrac{U}{R_\text{e} + R_\text{k}} \\ R_\text{e} &= \dfrac{U}{I_\text{limit}} - R_\text{k} \end{aligned}$$
 **Conversions:** $R_\text{k} = 1.5\,\text{k}\Omega = 1500\,\Omega$; $I_\text{limit} = 30\,\text{mA} = 0.030\,\text{A}$; for example $R_\text{e} = 900\,\text{k}\Omega = 900\,000\,\Omega$; the currents from amperes to milliamperes: $1\,\text{A} = 1000\,\text{mA}$; the result from ohms to kilohms: $1\,\text{k}\Omega = 1000\,\Omega$.
 **Substitution:** At the limit $R_\text{e} = \dfrac{230\,\text{V}}{0.030\,\text{A}} - 1500\,\Omega = 7667\,\Omega - 1500\,\Omega = 6167\,\Omega = 6.167\,\text{k}\Omega$. The currents: week 1: $\dfrac{230\,\text{V}}{900\,000\,\Omega + 1500\,\Omega} = 0.26\,\text{mA}$; week 3: $\dfrac{230\,\text{V}}{121\,500\,\Omega} = 1.9\,\text{mA}$; week 5: $\dfrac{230\,\text{V}}{41\,500\,\Omega} = 5.5\,\text{mA}$; week 7: $\dfrac{230\,\text{V}}{13\,500\,\Omega} = 17.0\,\text{mA}$; week 9: $\dfrac{230\,\text{V}}{5500\,\Omega} = 41.8\,\text{mA}$
 **Answer:** $6.2\,\text{k}\Omega$, two significant figures like the resistance of the body $1.5\,\text{k}\Omega$. Part b): the residual current device trips only in the measurement of week 9, where the current exceeds the limit; in weeks 3, 5 and 7 the current is above the threshold of perception, and in week 7 it also exceeds the let-go threshold $10\,\text{mA}$, so the grip may not release even though the residual current device does not trip. A residual current device is an additional protective device against electric shock. It does not, however, remove every danger of an electric shock: a dangerous current can flow through a person even when the tripping limit of the residual current device is not exceeded. Therefore the protective earthing and the insulation of the device must be in order, and a faulty device must not be used.

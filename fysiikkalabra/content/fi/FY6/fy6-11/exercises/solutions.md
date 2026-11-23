@@ -22,7 +22,7 @@
 **Annettu:** levyjen välinen jännite $U = 600\,\text{V}$, levyjen etäisyys $d = 0{,}040\,\text{m}$
 **Kysytty:** sähkökentän voimakkuus $E$ yksikössä $\text{V/m}$
 **Periaate:** Yhdensuuntaisten levyjen välissä kenttä on homogeeninen. Kun varaus kulkee levyltä toiselle, kenttä tekee työn $qEd$, ja jännitteen mukaan sama työ on $qU$, joten sähkökentän voimakkuus on jännite jaettuna levyjen etäisyydellä.
-**Kaava:** $qEd = qU$, josta $E = \dfrac{U}{d}$
+**Kaava:** $$\begin{aligned} W &= qEd \\ W &= qU \\ qEd &= qU \\ E &= \dfrac{U}{d} \end{aligned}$$
 **Muunnokset:** Ei tarvita: etäisyys on metreinä.
 **Sijoitus:** $E = \dfrac{600\,\text{V}}{0{,}040\,\text{m}} = 15\,000\,\text{V/m}$
 **Vastaus:** $1{,}5 \cdot 10^{4}\,\text{V/m}$, kaksi merkitsevää numeroa kuten etäisyydessä $0{,}040\,\text{m}$.
@@ -63,7 +63,7 @@
 **Annettu:** levyjen välinen jännite $U = 4{,}5\,\text{kV}$, levyjen etäisyys $d = 9{,}0\,\text{mm}$, pallon varaus $q = 4{,}0\,\text{nC}$
 **Kysytty:** palloon kohdistuva sähköinen voima $F$ millinewtoneina
 **Periaate:** Levyjen välissä kenttä on homogeeninen, joten sen voimakkuus saadaan jännitteestä ja etäisyydestä. Varaukseen kohdistuva voima on varaus kertaa sähkökentän voimakkuus, eikä se riipu siitä, missä kohtaa levyjen väliä pallo on.
-**Kaava:** $E = \dfrac{U}{d}$ ja $F = qE$, joten $F = \dfrac{qU}{d}$
+**Kaava:** $$\begin{aligned} E &= \dfrac{U}{d} \\ F &= qE \\ &= \dfrac{qU}{d} \end{aligned}$$
 **Muunnokset:** $U = 4{,}5\,\text{kV} = 4{,}5 \cdot 1000\,\text{V} = 4500\,\text{V}$, $d = 9{,}0\,\text{mm} = 9{,}0 \cdot 10^{-3}\,\text{m}$, $q = 4{,}0 \cdot 10^{-9}\,\text{C}$; lopuksi $1\,\text{N} = 1000\,\text{mN}$.
 **Sijoitus:** $E = \dfrac{4500\,\text{V}}{9{,}0 \cdot 10^{-3}\,\text{m}} = 5{,}0 \cdot 10^{5}\,\text{V/m}$ ja $F = 4{,}0 \cdot 10^{-9}\,\text{C} \cdot 5{,}0 \cdot 10^{5}\,\text{V/m} = 2{,}0 \cdot 10^{-3}\,\text{N} = 2{,}0\,\text{mN}$
 **Vastaus:** $2{,}0\,\text{mN}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -73,7 +73,7 @@
 **Annettu:** levyjen etäisyys $d = 5{,}0\,\text{cm}$, pallon varaus $q = 8{,}0\,\text{nC}$, sähköinen voima $F = 2{,}4\,\text{mN}$
 **Kysytty:** levyjen välinen jännite $U$ kilovoltteina
 **Periaate:** Voimasta ja varauksesta saadaan sähkökentän voimakkuus, ja levyjen välisessä homogeenisessa kentässä jännite on sähkökentän voimakkuus kertaa levyjen etäisyys.
-**Kaava:** $E = \dfrac{F}{q}$ ja $E = \dfrac{U}{d}$, joten $U = \dfrac{Fd}{q}$
+**Kaava:** $$\begin{aligned} F &= qE \\ E &= \dfrac{F}{q} \\ E &= \dfrac{U}{d} \\ U &= Ed \\ &= \dfrac{Fd}{q} \end{aligned}$$
 **Muunnokset:** $F = 2{,}4\,\text{mN} = 2{,}4 \cdot 10^{-3}\,\text{N}$, $d = 5{,}0\,\text{cm} = 0{,}050\,\text{m}$, $q = 8{,}0 \cdot 10^{-9}\,\text{C}$; lopuksi $1\,\text{kV} = 1000\,\text{V}$.
 **Sijoitus:** $E = \dfrac{2{,}4 \cdot 10^{-3}\,\text{N}}{8{,}0 \cdot 10^{-9}\,\text{C}} = 3{,}0 \cdot 10^{5}\,\text{N/C}$ ja $U = Ed = 3{,}0 \cdot 10^{5}\,\text{N/C} \cdot 0{,}050\,\text{m} = 15\,000\,\text{V} = 15\,\text{kV}$
 **Vastaus:** $15\,\text{kV}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -83,7 +83,7 @@
 **Annettu:** jännite $U = 3{,}0\,\text{kV}$, levyjen etäisyys $d = 6{,}0\,\text{mm}$, hiukkasen varaus $q = 1{,}6 \cdot 10^{-17}\,\text{C}$ ja massa $m = 4{,}0 \cdot 10^{-14}\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** sähköisen voiman ja painon suhde $F : G$
 **Periaate:** Levyjen välissä kenttä on homogeeninen, $E = U : d$, ja hiukkaseen kohdistuu sähköinen voima $qE$. Painovoima on $mg$. Suhde kertoo, kumpi voima määrää hiukkasen liikkeen.
-**Kaava:** $\dfrac{F}{G} = \dfrac{qE}{mg} = \dfrac{qU}{mgd}$
+**Kaava:** $$\begin{aligned} F &= qE \\ E &= \dfrac{U}{d} \\ F &= \dfrac{qU}{d} \\ G &= mg \\ \dfrac{F}{G} &= \dfrac{qU}{mgd} \end{aligned}$$
 **Muunnokset:** $U = 3{,}0 \cdot 1000\,\text{V} = 3000\,\text{V}$, $d = 6{,}0 \cdot 10^{-3}\,\text{m}$.
 **Sijoitus:** $F = \dfrac{1{,}6 \cdot 10^{-17}\,\text{C} \cdot 3000\,\text{V}}{6{,}0 \cdot 10^{-3}\,\text{m}} = 8{,}0 \cdot 10^{-12}\,\text{N}$, $G = 4{,}0 \cdot 10^{-14}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 3{,}924 \cdot 10^{-13}\,\text{N}$ ja $\dfrac{F}{G} = \dfrac{8{,}0 \cdot 10^{-12}\,\text{N}}{3{,}924 \cdot 10^{-13}\,\text{N}} = 20{,}4$
 **Vastaus:** noin $20$-kertainen, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -93,7 +93,7 @@
 **Annettu:** alussa voima $F_1 = 0{,}15\,\text{mN}$ ja etäisyys $d_1 = 6{,}0\,\text{cm}$, lopussa etäisyys $d_2 = 2{,}0\,\text{cm}$; jännite ja pallon varaus pysyvät samoina
 **Kysytty:** uusi voima $F_2$ millinewtoneina
 **Periaate:** Pallo on kaukana levyjen päistä, joten kenttä on homogeeninen ja $E = U : d$. Voima on $F = qE = qU : d$, ja kun $q$ ja $U$ pysyvät samoina, voima on kääntäen verrannollinen levyjen etäisyyteen.
-**Kaava:** $\dfrac{F_2}{F_1} = \dfrac{qU : d_2}{qU : d_1} = \dfrac{d_1}{d_2}$, josta $F_2 = F_1 \cdot \dfrac{d_1}{d_2}$
+**Kaava:** $$\begin{aligned} E &= \dfrac{U}{d} \\ F &= qE = \dfrac{qU}{d} \\ \dfrac{F_2}{F_1} &= \dfrac{qU : d_2}{qU : d_1} \\ &= \dfrac{d_1}{d_2} \\ F_2 &= F_1 \cdot \dfrac{d_1}{d_2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: etäisyydet ovat samassa yksikössä, joten yksikkö supistuu.
 **Sijoitus:** $F_2 = 0{,}15\,\text{mN} \cdot \dfrac{6{,}0\,\text{cm}}{2{,}0\,\text{cm}} = 0{,}15\,\text{mN} \cdot 3{,}0 = 0{,}45\,\text{mN}$
 **Vastaus:** $0{,}45\,\text{mN}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -103,7 +103,7 @@
 **Annettu:** alussa jännite $U_1 = 450\,\text{V}$ ja varaus $q_1 = 3e$, lopussa varaus $q_2 = 4e$; massa ja levyjen etäisyys pysyvät samoina
 **Kysytty:** jännite $U_2$, jolla pisara leijuu
 **Periaate:** Leijuva pisara on levossa, joten sähköinen voima ylöspäin ja paino alaspäin ovat yhtä suuret: $qE = mg$. Levyjen kenttä on homogeeninen, $E = U : d$. Kun $m$, $g$ ja $d$ pysyvät samoina, tulon $qU$ täytyy pysyä samana: suurempi varaus tarvitsee pienemmän jännitteen.
-**Kaava:** $\dfrac{q_1 U_1}{d} = mg = \dfrac{q_2 U_2}{d}$, josta $U_2 = U_1 \cdot \dfrac{q_1}{q_2}$
+**Kaava:** $$\begin{aligned} F &= G \\ qE &= mg \\ E &= \dfrac{U}{d} \\ q_1U_1 &= mgd \\ q_2U_2 &= mgd \\ q_1U_1 &= q_2U_2 \\ U_2 &= U_1 \cdot \dfrac{q_1}{q_2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: alkeisvaraus $e$ supistuu.
 **Sijoitus:** $U_2 = 450\,\text{V} \cdot \dfrac{3e}{4e} = 450\,\text{V} \cdot 0{,}75 = 337{,}5\,\text{V}$
 **Vastaus:** $338\,\text{V}$ ($337{,}5\,\text{V}$), pyöristettynä kolmeen merkitsevään numeroon jännitteen $450\,\text{V}$ tarkkuuden mukaan; alkeisvarausten lukumäärät ovat tarkkoja.
@@ -113,7 +113,7 @@
 **Annettu:** jännite $U = 50\,\text{V}$, levyjen etäisyys $d = 1{,}0\,\text{cm}$, elektronin massa $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$ ja varaus $e = 1{,}602 \cdot 10^{-19}\,\text{C}$; alkunopeus $v_0 = 0$
 **Kysytty:** elektronin nopeus $v$ positiivisella levyllä kilometreinä sekunnissa
 **Periaate:** Homogeenisessa kentässä elektroniin kohdistuu vakiovoima $eE$ kohti positiivista levyä, ja levyt ovat tyhjiössä, joten muita voimia ei ole (paino on häviävän pieni). Newtonin toisen lain mukaan kiihtyvyys $a = eE : m$ on vakio, joten liike on tasaisesti kiihtyvää, ja levosta matkan $d$ kulkeneen kappaleen nopeudelle pätee $v^2 = 2ad$.
-**Kaava:** $a = \dfrac{eE}{m} = \dfrac{eU}{md}$ ja $v^2 = 2ad$, joten $v = \sqrt{2ad} = \sqrt{\dfrac{2eU}{m}}$
+**Kaava:** $$\begin{aligned} \Sigma F &= ma \\ eE &= ma \\ a &= \dfrac{eE}{m} = \dfrac{eU}{md} \\ v^2 &= 2ad \\ v &= \sqrt{2ad} \\ &= \sqrt{\dfrac{2eU}{m}} \end{aligned}$$
 **Muunnokset:** $d = 1{,}0\,\text{cm} = 0{,}010\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Sijoitus:** $E = \dfrac{50\,\text{V}}{0{,}010\,\text{m}} = 5000\,\text{V/m}$, $a = \dfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 5000\,\text{V/m}}{9{,}109 \cdot 10^{-31}\,\text{kg}} = 8{,}794 \cdot 10^{14}\,\text{m/s}^2$ ja $$\begin{aligned} v &= \sqrt{2 \cdot 8{,}794 \cdot 10^{14}\,\text{m/s}^2 \cdot 0{,}010\,\text{m}} \\ &= 4{,}19 \cdot 10^{6}\,\text{m/s} \end{aligned}$$
 **Vastaus:** noin $4{,}2 \cdot 10^{3}\,\text{km/s}$ eli $4{,}2 \cdot 10^{6}\,\text{m/s}$, kaksi merkitsevää numeroa kuten jännite ja etäisyys.
@@ -123,7 +123,7 @@
 **Annettu:** pallon massa $m = 2{,}0\,\text{g}$, sähkökentän voimakkuus $E = 1{,}5 \cdot 10^{5}\,\text{N/C}$ vaakasuoraan, langan kulma pystysuorasta $\alpha = 10^\circ$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** pallon varaus $q$ nanocoulombeina
 **Periaate:** Palloon vaikuttavat paino $mg$ alas, sähköinen voima $qE$ vaakasuoraan ja langan jännitysvoima langan suuntaan. Pallo on levossa, joten voimien summa on nolla. Pystysuunnassa jännitysvoiman pystykomponentti $T\cos\alpha$ kumoaa painon ja vaakasuunnassa sen vaakakomponentti $T\sin\alpha$ kumoaa sähköisen voiman.
-**Kaava:** $T\sin\alpha = qE$ ja $T\cos\alpha = mg$; jakamalla $\tan\alpha = \dfrac{qE}{mg}$, josta $q = \dfrac{mg\tan\alpha}{E}$
+**Kaava:** $$\begin{aligned} \Sigma \overline{F} &= \overline{0} \\ T\sin\alpha &= qE \\ T\cos\alpha &= mg \\ \tan\alpha &= \dfrac{qE}{mg} \\ q &= \dfrac{mg\tan\alpha}{E} \end{aligned}$$
 **Muunnokset:** $m = 2{,}0\,\text{g} = 2{,}0 \cdot 10^{-3}\,\text{kg}$; lopuksi $1\,\text{C} = 10^{9}\,\text{nC}$.
 **Sijoitus:** $$\begin{aligned} mg\tan\alpha &= 2{,}0 \cdot 10^{-3}\,\text{kg} \\ &\cdot 9{,}81\,\text{m/s}^2 \cdot \tan 10^\circ \\ &= 3{,}459 \cdot 10^{-3}\,\text{N} \end{aligned}$$ ja $q = \dfrac{3{,}459 \cdot 10^{-3}\,\text{N}}{1{,}5 \cdot 10^{5}\,\text{N/C}} = 2{,}306 \cdot 10^{-8}\,\text{C} = 23\,\text{nC}$
 **Vastaus:** $23\,\text{nC}$, kaksi merkitsevää numeroa kuten massassa ja sähkökentän voimakkuudessa.
@@ -220,7 +220,9 @@ Elektronin paino voidaan jättää huomiotta, mutta pölyhiukkasen ei.
 **Annettu:** esimerkkiaineisto: levyjen etäisyys $d = 8{,}0\,\text{mm}$, positiivinen levy ylempänä, $g = 9{,}81\,\text{m/s}^2$; pisaroiden massat $3{,}8$; $4{,}6$; $3{,}2$; $5{,}1$ ja $4{,}2 \cdot 10^{-15}\,\text{kg}$ sekä leijumisjännitteet $931\,\text{V}$, $746\,\text{V}$, $1580\,\text{V}$, $627\,\text{V}$ ja $683\,\text{V}$
 **Kysytty:** a) pisaroiden varaukset ja merkki, b) alkeisvarausten lukumäärät ja alkeisvarauksen arvio, c) vertaus kirjallisuusarvoon, d) ilmanpuhdistimen toiminta; vastauslaatikkoon alkeisvarauksen arvio coulombeina
 **Periaate:** Leijuva pisara on levossa, joten sähköinen voima $qE$ ja paino $mg$ ovat yhtä suuret. Levyjen välinen kenttä on homogeeninen, $E = U : d$. Siis $qU : d = mg$. Kaikki varaukset ovat saman askeleen kokonaislukukertoja. Pienimmän varauksen oletetaan olevan yksi askel, jos muiden suhteet siihen ovat kokonaislukuja.
-**Kaava:** $qE = mg$ ja $E = \dfrac{U}{d}$, joten $q = \dfrac{mgd}{U}$; $e \approx \dfrac{S}{N}$, missä $S$ on suhteiden $q : n$ summa ja $N = 5$ pisaroiden lukumäärä
+**Kaava:** $$\begin{aligned} F &= G \\ qE &= mg \\ E &= \dfrac{U}{d} \\ q &= \dfrac{mgd}{U} \end{aligned}$$
+
+$e \approx \dfrac{S}{N}$, missä $S$ on suhteiden $q : n$ summa ja $N = 5$ pisaroiden lukumäärä
 **Muunnokset:** $d = 8{,}0\,\text{mm} = 8{,}0 \cdot 10^{-3}\,\text{m}$ ja $m = 3{,}8 \cdot 10^{-15}\,\text{kg}$ ja niin edelleen.
 **Sijoitus:** a) Pisaralle 1 paino on $mg = 3{,}8 \cdot 10^{-15}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 3{,}73 \cdot 10^{-14}\,\text{N}$ ja $mgd = 3{,}73 \cdot 10^{-14}\,\text{N} \cdot 8{,}0 \cdot 10^{-3}\,\text{m} = 2{,}98 \cdot 10^{-16}\,\text{J}$, joten $q_1 = 2{,}98 \cdot 10^{-16}\,\text{J} : 931\,\text{V} = 3{,}20 \cdot 10^{-19}\,\text{C}$. Samoin pisaroille 2–5 saadaan $4{,}84 \cdot 10^{-19}\,\text{C}$, $1{,}59 \cdot 10^{-19}\,\text{C}$, $6{,}38 \cdot 10^{-19}\,\text{C}$ ja $4{,}83 \cdot 10^{-19}\,\text{C}$. Sähköisen voiman täytyy osoittaa ylös kohti positiivista levyä, joten pisarat ovat negatiivisia.
 

@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f81dc254b142d798
+CONTENT-HASH: 7fda86c22f2d15e3
+SCOPE: delta wording from bb4c59d60a1ec530 base bad608b
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- delta (md-paragraphs, solutions.md only): read every inserted paragraph break in the diff; each splits at a sentence boundary, one thing per paragraph, none starts mid-thought, no one-word or orphan paragraph.
-- Opened at 1280 px: fy6-7-open-exercises-L2-1280-7; paragraph spacing inside the solution card is even, nothing clipped or overflowing.
-- Words, numbers, signs and units unchanged in the diff.
+- Delta: L3-04 (energy-saving task) Kaava block, now 7 rows with K_kallis/K_halpa rows added; opened review/shots/fy6-7-open-exercises-L3-1280-5.png (en) and, for the fi capture, -6.
+- Seven one-equation rows, equals signs aligned, fraction and subscripts intact, order principle then symbolic then combined; Kaava box fits, nothing clipped; Sijoitus rows below unchanged and consistent.
+- No 390 px solution capture; the layout checks at 360-1280 px are green.
 
 ## Scores
 illustrations n/a · typography 5 · Finnish 4 · accessibility 4

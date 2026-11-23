@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 12b932ede392efe9
+CONTENT-HASH: 330f0b13549100e6
+SCOPE: delta md-paragraphs,numbers,typography,wording from 12b932ede392efe9 base 5b3ca4f
 
 ## Blocking
 (none)
 
 ## Polish
-- fy6-13-L2-09 — part b is unrelated to the simulation (1000 uF, 12 V is outside the simulation's range); the box answer does not need the source. Consider stating that the simulation uses much smaller capacitances.
-- Part d needs the battery comparison data from another chapter; the task gives none, so a student answers only qualitatively. Acceptable.
+- (none new; earlier polish notes stand)
 
 ## Checked
-- New task: simulation needed for a and c check; 4 parts, tutkii then calculates then compares; fits the capacitor scope (no exponential).
-- Variable control in a stated (area and distance fixed, then distance varied).
-- Solution a gives a labelled example, not a simulation reading.
-- Set 10/9/5, order and mix intact.
+- The Kaava/Formula step now starts from the basic principle equations (C=Q/U, W=1/2 QU, Q=CU, U=U_R+U_D, U_R=RI, P=UI) and derives the working form line by line; a student can follow each step.
+- Every changed block ends in the same expression the Sijoitus step uses; no jump or missing step.
+- Principle, Reading the graph and Model answer additions explain the reasoning and are observable, answering what each part asks.
+- Set size, levels, order and variety unchanged.

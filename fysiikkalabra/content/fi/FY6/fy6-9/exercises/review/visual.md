@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 88128d0e80473690
+CONTENT-HASH: f4c96813537f2d5f
+SCOPE: delta wording from 9074195cdd27281d base e000744
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] solutions L2-09 Kohta d): the unbroken paragraph "Toinen tyypillinen ohje ..." that follows the new paragraphs has no blank line before it, so it sits tight under the previous paragraph and is one long block (about 100 words); add a blank line (and optionally split it).
+- [Minor] Kaava blocks (level 2 parts 6 and 8, level 3 part 7, level 1 charging-current and internal-resistance tasks) — `\sum \Delta V = 0` renders the sum sign in display size, so the first row is taller than the rest and the row spacing is slightly uneven; the symbol itself reads correctly — optional: `\textstyle\sum \Delta V` or `\Sigma \Delta V`.
+- [Minor] Same blocks — the first row is not aligned at `=` with the rows below; as in the previous round, optional. For science: confirm `\sum \Delta V = 0` (potential changes round the loop) is the notation the course wants in place of `\Sigma U = 0`.
 
 ## Checked
-- Delta (solutions.md paragraph breaks only), opened 1280 px captures: open-exercises-1280-6 (L1-06 model answer), L2-1280-12 and -13 (L2-09 c, d), L3-1280-6 (77 % answer, Selitys).
-- Each break is one thought; no one-word paragraph, nothing mid-thought, nothing clipped, spacing in the solution card even.
+- fy6-9 exercises at 1280 px, solutions open: level 3 part 7 (staged charging, Kaava block with `\sum \Delta V = 0`), level 2 part 6 (resistance from the graph, Kaava block and Sijoitus), level 1 part 3 (unchanged Kaava block, for comparison).
+- `\sum \Delta V = 0` renders in KaTeX without red source, clipping or overflow; the rows below it are unchanged and readable.
+- The other changed Kaava blocks (charging current, internal resistance, relative current drop) use the same markup and were not opened separately.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

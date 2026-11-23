@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: ff27a40856f13235
-Mode: delta (md-paragraphs, round 2)
+CONTENT-HASH: 0403a43777fa1082
+SCOPE: delta md-paragraphs,reflow,typography from 950adae5af06a27a base 8f23aa7
 
 ## Blocking
 - none
@@ -9,7 +9,9 @@ Mode: delta (md-paragraphs, round 2)
 - none
 
 ## Checked
-- fy6-3-open-exercises-L3-1280-7 (L3-05 solution: (1) and (2) now separate paragraphs, nothing clipped). Round-1 Major resolved: breaks before (1)/(2), orphan 'Siinä resistanssin lukuarvo' joined. Other breaks judged from the diff.
+- Delta judged from git diff 8f23aa7 against the current captures in content/fi-easy/FY6/fy6-3/review/shots/ (stamp current): the changes are the Kaava/Formula steps now written as aligned blocks of basic equations, and long Principle/Model answer paragraphs split into one idea each.
+- Opened the longest changed blocks (fy6-1 L3 1280-5: seven-row Formula block; fy6-3 L3 1280-2/-3: three-row and chain blocks, fy6-1 L2 1280-9): rows aligned at =, fractions and subscripts legible, nothing clipped, Substitution chains and boxed answers intact, spacing between split paragraphs even.
+- The unchanged figures and layout of the rest of the page were not re-judged; no figure or caption text in the diff beyond what is named in SCOPE.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

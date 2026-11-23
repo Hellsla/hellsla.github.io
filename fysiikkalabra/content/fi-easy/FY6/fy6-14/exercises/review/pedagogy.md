@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 3f48bc8fead4207e
+CONTENT-HASH: 89d7d344021e07ad
+SCOPE: delta md-paragraphs,numbers,paragraphs,reflow,typography from 3f48bc8fead4207e base e238aa9
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- solutions.md (maximum power task) — the answer is now 1,8 · 10^2 mW while the table line says 181 mW; fine, but say in Järkevyys that 181 mW is the calculator value so the student does not suspect an error.
+- (none new; earlier polish notes stand)
 
 ## Checked
-- 15 Ω line now shows the product 1,48 V · 99 mA = 147 mW (was a bare number); correct, the step is followable.
-- 207 Ω to 2,1 · 10^2 Ω, 387 Ω to 3,9 · 10^2 Ω, 4683 kWh to 4,7 · 10^3 kWh: two figures, consistent with the data.
-- 181 mW to two figures, reason given (91 mA).
-- Caption marker removal is a content-free change.
+- The Kaava/Formula step now starts from the basic principle equations (C=Q/U, W=1/2 QU, Q=CU, U=U_R+U_D, U_R=RI, P=UI) and derives the working form line by line; a student can follow each step.
+- Every changed block ends in the same expression the Sijoitus step uses; no jump or missing step.
+- Principle, Reading the graph and Model answer additions explain the reasoning and are observable, answering what each part asks.
+- Set size, levels, order and variety unchanged.
