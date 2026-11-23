@@ -52,7 +52,7 @@
 **Given:** reading $I = 0.35\,\text{A}$ on the range $10\,\text{A}$, resolution $r = 0.01\,\text{A}$, error limit $\pm(2.0\,\% + 3\ \text{digits})$
 **Find:** the relative error limit $\dfrac{\Delta I}{I}$ as a percentage
 **Principle:** First the error limit is calculated from the manufacturer's statement: a share of the reading and three steps of the last digit. Then the error limit is compared with the reading. When the reading is small compared with the range, the share of the digits is large.
-**Formula:** $\Delta I = p \cdot I + n \cdot r$, so $\dfrac{\Delta I}{I} = \dfrac{p \cdot I + n \cdot r}{I}$
+**Formula:** $$\begin{aligned} \Delta I &= p \cdot I + n \cdot r \\ \dfrac{\Delta I}{I} &= \dfrac{p \cdot I + n \cdot r}{I} \end{aligned}$$
 **Conversions:** $p = 2.0\,\% = 0.020$; all currents are in amperes.
 **Substitution:** $\Delta I = 0.020 \cdot 0.35\,\text{A} + 3 \cdot 0.01\,\text{A} = 0.007\,\text{A} + 0.03\,\text{A} = 0.037\,\text{A}$, so $\dfrac{\Delta I}{I} = \dfrac{0.037\,\text{A}}{0.35\,\text{A}} = 0.106 = 10.6\,\%$
 **Answer:** about $11\,\%$, two significant figures, because the first digit is 1.
@@ -74,7 +74,7 @@ The current $0.35\,\text{A}$ does not fit on the range $200\,\text{mA}$, so $10\
 **Given:** on the range $2\,\text{V}$ the reading $U_2 = 1.234\,\text{V}$ and the resolution $r_2 = 0.001\,\text{V}$; on the range $20\,\text{V}$ the reading $U_{20} = 1.23\,\text{V}$ and the resolution $r_{20} = 0.01\,\text{V}$; for both the error limit $\pm(0.5\,\% + 2\ \text{digits})$
 **Find:** the ratio of the error limits $\dfrac{\Delta U_{20}}{\Delta U_2}$ as a pure number
 **Principle:** The percentage part is almost the same on both ranges, because the reading is the same. The difference comes from the share of the digits: on the larger range the last digit is ten times coarser.
-**Formula:** $\Delta U = p \cdot U + n \cdot r$, so $\dfrac{\Delta U_{20}}{\Delta U_2} = \dfrac{p \cdot U_{20} + n \cdot r_{20}}{p \cdot U_2 + n \cdot r_2}$
+**Formula:** $$\begin{aligned} \Delta U &= p \cdot U + n \cdot r \\ \Delta U_{2} &= p \cdot U_{2} + n \cdot r_{2} \\ \Delta U_{20} &= p \cdot U_{20} + n \cdot r_{20} \\ \dfrac{\Delta U_{20}}{\Delta U_{2}} &= \dfrac{p \cdot U_{20} + n \cdot r_{20}}{p \cdot U_{2} + n \cdot r_{2}} \end{aligned}$$
 **Conversions:** $p = 0.5\,\% = 0.005$; the voltages are in volts.
 **Substitution:** $$\begin{aligned} \Delta U_2 &= 0.005 \cdot 1.234\,\text{V} \\ &+ 2 \cdot 0.001\,\text{V} \\ &= 0.00817\,\text{V} \end{aligned}$$ and $\Delta U_{20} = 0.005 \cdot 1.23\,\text{V} + 2 \cdot 0.01\,\text{V} = 0.02615\,\text{V}$, so $\dfrac{\Delta U_{20}}{\Delta U_2} = \dfrac{0.02615\,\text{V}}{0.00817\,\text{V}} = 3.20$
 **Answer:** $3.2$; the ratio is calculated from the unrounded error limits, and because they are estimates, two figures are enough: the error limit of the range $20\,\text{V}$ is about three times as large.
@@ -86,7 +86,7 @@ The current $0.35\,\text{A}$ does not fit on the range $200\,\text{mA}$, so $10\
 **Principle:** A voltmeter lets through only a very small current, so connected in series it decreases the current of the whole circuit to almost zero.
 
 Then hardly any voltage is left across the lamp, because the voltage of the lamp is its resistance times the almost zero current, and the whole voltage of the battery is left between the terminals of the meter.
-**Formula:** $U_\text{m} + U_\text{lamp} = U_\text{battery}$ and $U_\text{lamp} \approx 0$, so $U_\text{m} \approx U_\text{battery}$
+**Formula:** $$\begin{aligned} \Sigma U &= 0 \Rightarrow U_\text{battery} = U_\text{m} + U_\text{lamp} \\ U_\text{lamp} &= R_\text{lamp} I \approx 0 \quad (I \approx 0) \\ U_\text{m} &= U_\text{battery} - U_\text{lamp} \\ U_\text{m} &\approx U_\text{battery} \end{aligned}$$
 **Conversions:** Not needed: the voltage is in volts.
 **Substitution:** $U_\text{m} \approx 9.0\,\text{V}$
 **Answer:** about $9.0\,\text{V}$, two significant figures like the voltage of the battery.
@@ -98,7 +98,7 @@ Then hardly any voltage is left across the lamp, because the voltage of the lamp
 **Principle:** The resistance of a real ammeter is not zero, so a small voltage is left across the meter. According to the manual it grows in the same proportion as the current passing through the meter.
 
 This voltage is taken away from the lamp and the resistor, so the meter decreases the current of the circuit slightly.
-**Formula:** $U_\text{m} = k \cdot I$, where $k = 1.0\,\tfrac{\text{mV}}{\text{mA}}$, so $\dfrac{U_\text{m}}{U_0} = \dfrac{k \cdot I}{U_0}$
+**Formula:** $$\begin{aligned} U_\text{m} &= k \cdot I \\ \dfrac{U_\text{m}}{U_0} &= \dfrac{k \cdot I}{U_0} \end{aligned}$$ where $k = 1.0\,\tfrac{\text{mV}}{\text{mA}}$
 **Conversions:** $U_0 = 4.5\,\text{V} = 4.5 \cdot 1000\,\text{mV} = 4500\,\text{mV}$
 **Substitution:** $U_\text{m} = 1.0\,\tfrac{\text{mV}}{\text{mA}} \cdot 97.8\,\text{mA} = 97.8\,\text{mV}$, so $\dfrac{U_\text{m}}{U_0} = \dfrac{97.8\,\text{mV}}{4500\,\text{mV}} = 0.0217 = 2.17\,\%$
 **Answer:** $2.2\,\%$, two significant figures like the voltage drop $1.0\,\text{mV}$ per milliampere and the voltage of the batteries $4.5\,\text{V}$.
@@ -108,7 +108,7 @@ This voltage is taken away from the lamp and the resistor, so the meter decrease
 **Given:** meter A: reading $U_\text{A} = 5.02\,\text{V}$, error limit $\pm(0.5\,\% + 2\ \text{digits})$; meter B: reading $U_\text{B} = 5.14\,\text{V}$, error limit $\pm(1.5\,\% + 3\ \text{digits})$; for both resolution $r = 0.01\,\text{V}$; difference of the readings $0.12\,\text{V}$
 **Find:** the sum of the error limits $\Delta U_\text{A} + \Delta U_\text{B}$ in volts, and whether the difference can be taken as evidence of a fault
 **Principle:** According to the manufacturer, the true value is within its own error limit of each reading. The readings are in agreement if their intervals overlap, that is if the difference is smaller than the sum of the error limits. Then the difference cannot be shown to be due to a fault in the meters.
-**Formula:** $\Delta U = p \cdot U + n \cdot r$, so $$\begin{aligned} &\Delta U_\text{A} + \Delta U_\text{B} \\ &= p_\text{A} \cdot U_\text{A} + n_\text{A} \cdot r + p_\text{B} \cdot U_\text{B} \\ &+ n_\text{B} \cdot r \end{aligned}$$
+**Formula:** $$\begin{aligned} \Delta U_\text{A} &= p_\text{A} \cdot U_\text{A} + n_\text{A} \cdot r \\ \Delta U_\text{B} &= p_\text{B} \cdot U_\text{B} + n_\text{B} \cdot r \\ \Delta U_\text{A} + \Delta U_\text{B} &= p_\text{A} \cdot U_\text{A} + n_\text{A} \cdot r \\ &\quad + p_\text{B} \cdot U_\text{B} + n_\text{B} \cdot r \end{aligned}$$
 **Conversions:** $p_\text{A} = 0.5\,\% = 0.005$ and $p_\text{B} = 1.5\,\% = 0.015$; the voltages are in volts.
 **Substitution:** $\Delta U_\text{A} = 0.005 \cdot 5.02\,\text{V} + 2 \cdot 0.01\,\text{V} = 0.0451\,\text{V}$ and $\Delta U_\text{B} = 0.015 \cdot 5.14\,\text{V} + 3 \cdot 0.01\,\text{V} = 0.1071\,\text{V}$, so $$\begin{aligned} &\Delta U_\text{A} + \Delta U_\text{B} \\ &= 0.0451\,\text{V} + 0.1071\,\text{V} \\ &= 0.1522\,\text{V} \end{aligned}$$
 **Answer:** $0.15\,\text{V}$, two significant figures, because the first figure of the sum of the error limits is 1. The difference of the readings $0.12\,\text{V}$ is smaller than $0.15\,\text{V}$, so the intervals $4.97$–$5.07\,\text{V}$ and $5.03$–$5.25\,\text{V}$ overlap: on the basis of the difference neither meter can be said to be faulty. However, this does not prove that the meters would always show the same.
@@ -194,7 +194,7 @@ Moving to a smaller range would not help, because the current already exceeds th
 **Principle:** Repeated measurement tells how much the readings spread. Half of the range of variation is a simple estimate of the spread, not the uncertainty of the mean.
 
 The error limit of the meter does not become smaller by repeating, because it belongs to the meter. The result is consistent with a reference value if the difference of the values is smaller than the error limit.
-**Formula:** $U_\text{avg} = \dfrac{\text{sum of the readings}}{N}$, the estimate of the spread $\dfrac{U_\text{max} - U_\text{min}}{2}$ and the error limit $\Delta U = p \cdot U_\text{avg} + n \cdot r$
+**Formula:** $$\begin{aligned} U_\text{avg} &= \dfrac{\text{sum of the readings}}{N} \\ s &= \dfrac{U_\text{max} - U_\text{min}}{2} \\ \Delta U &= p \cdot U_\text{avg} + n \cdot r \end{aligned}$$
 **Conversions:** $p = 0.5\,\% = 0.005$; all voltages are in volts.
 **Substitution:** a) The sum of the readings is $62.45\,\text{V}$ and the number of readings is $N = 5$, so $U_\text{avg} = 62.45\,\text{V} : 5 = 12.49\,\text{V}$. b) The estimate of the spread is $$(12.52\,\text{V} - 12.46\,\text{V}) : 2 = 0.03\,\text{V}$$. c) $\Delta U = 0.005 \cdot 12.49\,\text{V} + 2 \cdot 0.01\,\text{V} = 0.06245\,\text{V} + 0.02\,\text{V} = 0.08245\,\text{V}$
 **Answer:** the error limit of part c) is $0.08\,\text{V}$, one significant figure, because the first digit is 8 (calculator value $0.08245\,\text{V}$). The mean is $12.49\,\text{V}$ and the estimate of the spread $0.03\,\text{V}$. The difference of the rest voltage and the mean is $12.60\,\text{V} - 12.49\,\text{V} = 0.11\,\text{V}$, which is larger than the error limit $0.08\,\text{V}$. The result $12.49\,\text{V} \pm 0.08\,\text{V}$ is not consistent with the rest voltage of a fully charged battery: the battery is probably partly discharged. Repeating would not help, because the spread $0.03\,\text{V}$ is already small and the error limit belongs to the meter.
@@ -210,11 +210,11 @@ The error limit $0.08\,\text{V}$ is almost three times the estimate of the sprea
 The current through the resistor $R_1$ is the sum of the currents of the resistor $R_2$ and the meter. The voltages are in the same loop: $U_1 + U = U_0$.
 
 The current is obtained from the voltage and the resistance of a resistor: $I = U : R$.
-**Formula:** $\dfrac{U_0 - U}{R_1} = \dfrac{U}{R_2} + \dfrac{U}{R_\text{m}}$, from which $U = \dfrac{U_0}{1 + \dfrac{R_1}{R_2} + \dfrac{R_1}{R_\text{m}}}$; the decrease $\dfrac{U_\text{without} - U}{U_\text{without}}$
+**Formula:** $$\begin{aligned} U_0 &= U_1 + U \quad (\Sigma U = 0) \\ U_1 &= R_1 I_1 \\ I_1 &= I_2 + I_\text{m} \quad (\Sigma I = 0) \\ I_2 &= \dfrac{U}{R_2} \\ I_\text{m} &= \dfrac{U}{R_\text{m}} \\ \dfrac{U_0 - U}{R_1} &= \dfrac{U}{R_2} + \dfrac{U}{R_\text{m}} \\ U_0 - U &= U \cdot \dfrac{R_1}{R_2} + U \cdot \dfrac{R_1}{R_\text{m}} \\ U_0 &= U \left(1 + \dfrac{R_1}{R_2} + \dfrac{R_1}{R_\text{m}}\right) \\ U &= \dfrac{U_0}{1 + \dfrac{R_1}{R_2} + \dfrac{R_1}{R_\text{m}}} \\ s &= \dfrac{U_\text{without} - U}{U_\text{without}} \end{aligned}$$
 **Conversions:** The ratios of the resistances are plain numbers, so the megaohms do not need to be converted: $\dfrac{R_1}{R_2} = 1.0$ and $\dfrac{R_1}{R_\text{m}} = \dfrac{1.0\,\text{M}\Omega}{10\,\text{M}\Omega} = 0.10$.
 **Substitution:** a) Without the meter the resistors have the same current and the same resistance, so the voltage is divided equally: $U_\text{without} = 12.0\,\text{V} : 2 = 6.00\,\text{V}$.
 
-b) Multiply the equation $\dfrac{U_0 - U}{R_1} = \dfrac{U}{R_2} + \dfrac{U}{R_\text{m}}$ on both sides by the resistance $R_1$: $U_0 - U = U \cdot \dfrac{R_1}{R_2} + U \cdot \dfrac{R_1}{R_\text{m}}$. Move $U$ to the same side: $U_0 = U \left(1 + \dfrac{R_1}{R_2} + \dfrac{R_1}{R_\text{m}}\right)$, and divide by the bracket. Then $U = \dfrac{12.0\,\text{V}}{1 + 1.0 + 0.10} = \dfrac{12.0\,\text{V}}{2.10} = 5.714\,\text{V}$.
+b) Then $U = \dfrac{12.0\,\text{V}}{1 + 1.0 + 0.10} = \dfrac{12.0\,\text{V}}{2.10} = 5.714\,\text{V}$.
 
 c) The decrease is $6.00\,\text{V} - 5.714\,\text{V} = 0.286\,\text{V}$, so $\dfrac{0.286\,\text{V}}{6.00\,\text{V}} = 0.0476 = 4.76\,\%$.
 
@@ -232,7 +232,7 @@ With the smaller resistors $U = 12.0\,\text{V} : 2.001 = 5.997\,\text{V}$, which
 **Principle:** The resistance is calculated from the measurement results as the quotient $R = U : I$, and its error limit is obtained from the rule for a quotient: the relative error limit is the sum of the relative error limits of the voltage and the current.
 
 The result is consistent with the nominal value if the nominal value fits in the result interval. A mere difference from the calculated value does not show a fault.
-**Formula:** $R = \dfrac{U}{I}$, $\Delta U = p_U \cdot U + n_U \cdot r_U$, $\Delta I = p_I \cdot I + n_I \cdot r_I$ and $\dfrac{\Delta R}{R} = \dfrac{\Delta U}{U} + \dfrac{\Delta I}{I}$
+**Formula:** $$\begin{aligned} R &= \dfrac{U}{I} \\ \Delta U &= p_U \cdot U + n_U \cdot r_U \\ \Delta I &= p_I \cdot I + n_I \cdot r_I \\ \dfrac{\Delta R}{R} &= \dfrac{\Delta U}{U} + \dfrac{\Delta I}{I} \\ \Delta R &= \dfrac{\Delta R}{R} \cdot R \end{aligned}$$
 **Conversions:** $p_U = 0.5\,\% = 0.005$ and $p_I = 1.0\,\% = 0.010$; the current is converted to amperes: $I = 38.4\,\text{mA} = 0.0384\,\text{A}$.
 **Substitution:** a) $R = \dfrac{4.52\,\text{V}}{0.0384\,\text{A}} = 117.71\,\Omega$.
 
@@ -287,7 +287,7 @@ The correct answer is line 3.
 **Find:** the ratio $\dfrac{U_0 - U}{\Delta U}$ as a pure number and a conclusion
 **Principle:** A reading is consistent with the rated value if the difference of the values is at most the error limit of the reading. So the difference is compared with the error limit.
 **Reading the graph:** The reading on the display is $U = 1.37\,\text{V}$ and the selector is on the range $20\,\text{V}$, so the resolution is $r = 0.01\,\text{V}$ (two decimals).
-**Formula:** $\Delta U = p \cdot U + n \cdot r$ and $\dfrac{U_0 - U}{\Delta U}$
+**Formula:** $$\begin{aligned} \Delta U &= p \cdot U + n \cdot r \\ q &= \dfrac{U_0 - U}{\Delta U} \end{aligned}$$
 **Conversions:** $p = 0.5\,\% = 0.005$. All voltages are in volts.
 **Substitution:** $\Delta U = 0.005 \cdot 1.37\,\text{V} + 2 \cdot 0.01\,\text{V} = 0.02685\,\text{V}$ and the difference is $U_0 - U = 1.45\,\text{V} - 1.37\,\text{V} = 0.08\,\text{V}$, so $\dfrac{0.08\,\text{V}}{0.02685\,\text{V}} = 2.98$
 **Answer:** about $3.0$ times. The difference is three times the error limit, that is larger than the error limit, so the reading is not consistent with the manufacturer's value. The error limit of the meter does not explain the difference.
