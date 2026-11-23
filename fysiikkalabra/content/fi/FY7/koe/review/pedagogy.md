@@ -1,26 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: d63f5c2e6544c73f
+CONTENT-HASH: 9aede579190b60ce
 
 ## Blocking
-None. The exam fits the brief: 10 concept-based Osa 1 items with misconception distractors, four Osa 2 tasks covering graph and uncertainty (k2, k5), explanation and the main model, and two Osa 3 tasks of different kind (k6 societal, k7 data-driven). No part names its model. Rubrics sum to the points. The workload fits 120 min.
+None.
 
 ## Polish
-Kaava step (queue 8g). The basic law comes first and the derived formula follows everywhere, but "simplify symbolically to the end, then substitute" is not done in four places:
-- k4-c: `I_1 = I_2 U_2 / U_1` with `I_2 = P/U_2` should reduce to `I_1 = P/U_1` before substitution.
-- k6-a: `I = P/U` and `P_h = RI^2` should combine into `P_h = R(P/U)^2`. The asked share `P_h/P` is not in the Kaava block either.
-- k6-c: `S = (E_A - E_B)p` is substituted in pieces.
-- k3-c: `P = Fv` is not reduced to `e^2/R` or to `P = I^2R`.
-
-"Every chain shows what it computes": the k6-c Muunnokset rows begin with a bare numeric expression (`&1,728 MW · 4000 h`). In k7-c the first sentence is `(2,898 - 2,76)/2,898 = 0,048`, a bare fraction. Start each with `E_A =` or `\delta =`.
-
-Task design:
-- k6-a to k6-c are routine `P = UI`, `RI^2` and chained arithmetic. They repeat item k1-g (100-fold loss) and k4-d. The choice and evaluation sit only in k6-d. Making the choice harder would raise the transfer demand, for example a cable resistance that depends on cross-section, or a second route.
-- The k6 statement says the calculation assumes constant resistance and a DC-like transmission. That names part of what k6-d asks the student to find. Leave the assumptions out of the statement.
-- k7-a is the hardest step (choosing `1/T`) and comes first, and k7-b depends on it. Osa 3 should open accessibly. Swap the order, or give the data pairs in b so a student who fails a can still continue.
-- k3 has no figure of the rails and the field. A simple figure would help and would not give an answer away. The question "ylöspäin vai alaspäin" depends on the orientation.
-- k5-b solution: it says the results "sopivat yhteen" within 0,8 %, but later notes that the k=2 and k=3 spread (0,026 µm) exceeds the summed reading uncertainties (0,018 µm). Align the rubric's conclusion with this.
-- k1-e: the wrong option "kuparin tiheys, joten ilma vastustaa enemmän" is a contrived distractor and not a real student error. Replace it with, for example, "kupari on paramagneettista" (not in FY7 scope, so use a different one) or "magneetti kuumenee ja menettää magneettisuutensa".
-- k1-c solution: "Johtimen toisen johtimen kohdalla aiheuttama kenttä" is awkward.
+- k4-b Kaava: with the derivative row removed the chain jumps from $\Phi = BA\cos(2\pi f t)$ to $e_0 = NBA \cdot 2\pi f$. Periaate names the law and the teacher's sheet gives $e_0$, so a student can follow, but house rule "start from the basic principle" is not shown in the chain. Open it with $|e| = N\Delta\Phi/\Delta t$ and add one sentence in Periaate ("vuon muutosnopeuden huippu on $BA \cdot 2\pi f$"), or accept $e_0$ as the sheet's given formula.
+- "Substitute into the last symbolic form" is not followed in four Sijoitus steps, although the Kaava steps themselves now simplify to the end:
+  - k3-c: $F = IlB$ and $P = Fv$ are computed stepwise from the numbers, not from $F = e\,lB/R$ and $P = e\,lBv/R$ (the Järkevyys check $I^2R$ is good).
+  - k4-c: $I_1$ is substituted from $I_2 U_2/U_1$, not from the final $P/U_1$.
+  - k6-a: $P_\text{h} = RI^2$ is used, not $RP^2/U^2$ (the intermediate $I$ is still a worthwhile printed step).
+  - k6-c: the substitution uses $(E_\text{A}-E_\text{B})p$ from Muunnokset, not the final $(P_\text{h,A}-P_\text{h,B})\,t\,p$.
+  The numbers and answers are right, so this is only consistency; either substitute into the last form or keep the stepwise lines and label the intermediate result.
+- k6-c: $t$ is both the 4000 h of operation and the base of $t_\text{takaisin}$; rename the payback time $T_\text{takaisin}$ or $n$ to avoid reading the same letter two ways.
+- k6-c: $P_\text{h,B}$ is given as $57{,}1\,\text{kW}$ in Annettu and $0{,}0571\,\text{MW}$ in Muunnokset; consistent, but the rounding is visible in the answer ($334\,200$ vs $334\,175$). Harmless.
 
 ## Checked
-tasks.json: structure, sections, selection rules, criteria against the framework, whether the text discloses the method. solutions.md: every Kaava block (order and derivation), the sequence of steps, common mistakes (real ones), "Hyväksytään myös" and the k1 distractor feedback. Figures were not opened (the packet omits them); the page layout and the coverage doc are not in this packet.
+- Read the Kaava, Sijoitus and Vastaus of the five changed steps (k3-c, k4-b, k4-c, k6-a, k6-c) and their neighbours in the packet.
+- Symbolic chains end in one closed form for the asked quantity: k3-c $F$, $P$; k4-c $N_2$, $I_1 = P/U_1$; k6-a $P_\text{h} = RP^2/U^2$; k6-c $S$ and $t_\text{takaisin}$. Each starts from a basic law or the stated principle (except k4-b above).
+- Rubric points and answers unchanged: all numbers match the answers.py output (0,30 V; 0,06 N; 0,15 W; 12,37 V; 2788; 3,72 A; 600 A; 1,728 MW; 334 175 €; 8,98 a).
+- Finnish, notation (overline, units in LaTeX, decimal comma) and the Muunnokset/Järkevyys steps in these parts are intact. The change causes no new misconception and no jump a student cannot follow beyond the k4-b note.
