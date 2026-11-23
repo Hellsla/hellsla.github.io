@@ -1,22 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 9aede579190b60ce
+CONTENT-HASH: addb9d598021ee63
 
 ## Blocking
 None.
 
 ## Polish
-- k4-b Kaava: with the derivative row removed the chain jumps from $\Phi = BA\cos(2\pi f t)$ to $e_0 = NBA \cdot 2\pi f$. Periaate names the law and the teacher's sheet gives $e_0$, so a student can follow, but house rule "start from the basic principle" is not shown in the chain. Open it with $|e| = N\Delta\Phi/\Delta t$ and add one sentence in Periaate ("vuon muutosnopeuden huippu on $BA \cdot 2\pi f$"), or accept $e_0$ as the sheet's given formula.
-- "Substitute into the last symbolic form" is not followed in four Sijoitus steps, although the Kaava steps themselves now simplify to the end:
-  - k3-c: $F = IlB$ and $P = Fv$ are computed stepwise from the numbers, not from $F = e\,lB/R$ and $P = e\,lBv/R$ (the Järkevyys check $I^2R$ is good).
-  - k4-c: $I_1$ is substituted from $I_2 U_2/U_1$, not from the final $P/U_1$.
-  - k6-a: $P_\text{h} = RI^2$ is used, not $RP^2/U^2$ (the intermediate $I$ is still a worthwhile printed step).
-  - k6-c: the substitution uses $(E_\text{A}-E_\text{B})p$ from Muunnokset, not the final $(P_\text{h,A}-P_\text{h,B})\,t\,p$.
-  The numbers and answers are right, so this is only consistency; either substitute into the last form or keep the stepwise lines and label the intermediate result.
-- k6-c: $t$ is both the 4000 h of operation and the base of $t_\text{takaisin}$; rename the payback time $T_\text{takaisin}$ or $n$ to avoid reading the same letter two ways.
-- k6-c: $P_\text{h,B}$ is given as $57{,}1\,\text{kW}$ in Annettu and $0{,}0571\,\text{MW}$ in Muunnokset; consistent, but the rounding is visible in the answer ($334\,200$ vs $334\,175$). Harmless.
+- "Substitute into the last symbolic form" is still not followed in four Sijoitus steps, although the Kaava chains now end in one closed form (numbers all correct):
+  - k3-c: $F = IlB$ and $P = Fv$ are computed stepwise, not from $F = e\,lB/R$ and $P = e\,lBv/R$.
+  - k4-c: $I_1$ uses $I_2U_2/U_1$, not the final $P/U_1$.
+  - k6-a: $P_\text{h} = RI^2$ is used, not $RP^2/U^2$; the share $P_\text{h}/P$ is not in the Kaava although the question asks for it.
+  - k6-c: Sijoitus uses $S = (E_\text{A}-E_\text{B})\,p$ from Muunnokset, not the last form $(P_\text{h,A}-P_\text{h,B})\,t_\text{käyttö}\,p$ or $t_\text{takaisin}$ with it.
+  Either substitute into the last form or label the intermediate results as deliberate steps.
+- k6-c: $t_\text{käyttö}$ is now distinct, but $t_\text{takaisin}$ still reads as the same letter; $T_\text{takaisin}$ or $n$ would be clearer.
+- k4-b: the Kaava now gives $e_0 = NBA\cdot 2\pi f$ straight from $\Phi = BA\cos(2\pi f t)$; Periaate names the law, so it is followable, but opening with $|e| = N\Delta\Phi/\Delta t$ would show the basic principle.
+- k6 statement: "tehon $12\,\text{MW}$ vastaavan energian vuodessa $4000\,\text{h}$ ajan" is awkward; "Puisto tuottaa tehoa $12\,\text{MW}$ vuodessa $4000\,\text{h}$ ajan" reads more naturally.
 
 ## Checked
-- Read the Kaava, Sijoitus and Vastaus of the five changed steps (k3-c, k4-b, k4-c, k6-a, k6-c) and their neighbours in the packet.
-- Symbolic chains end in one closed form for the asked quantity: k3-c $F$, $P$; k4-c $N_2$, $I_1 = P/U_1$; k6-a $P_\text{h} = RP^2/U^2$; k6-c $S$ and $t_\text{takaisin}$. Each starts from a basic law or the stated principle (except k4-b above).
-- Rubric points and answers unchanged: all numbers match the answers.py output (0,30 V; 0,06 N; 0,15 W; 12,37 V; 2788; 3,72 A; 600 A; 1,728 MW; 334 175 €; 8,98 a).
-- Finnish, notation (overline, units in LaTeX, decimal comma) and the Muunnokset/Järkevyys steps in these parts are intact. The change causes no new misconception and no jump a student cannot follow beyond the k4-b note.
+- Read all of tasks.json and solutions.md; the changed steps k3-c, k4-b (now one chain, B = e0/(NA 2πf) = 0,0516 T), k4-c, k6-a, k6-c and their neighbours.
+- Symbolic chains end in closed forms for the asked quantities; the N factor in k4-c (2789 from 12,37 V, 2788 exact, answer "noin 2790") is within tolerance and explained in Annettu.
+- Numbers, points and rubrics unchanged and match answers.py (0,30 V; 0,060 N; 0,15 W; 12,37 V; 3,72 A; 600 A; 1,728 MW; 334 175 €; 8,98 a).
+- Tasks still demand independent application: unnamed models, source data, rising parts, evaluation endings (k6-d, k7-e); variety across the four basic tasks (graph, induction, generator, grating) and two applied tasks (societal numbers, experimental data) is good; Lenz direction in k3-b is correct.
+- Finnish, overline notation, units in LaTeX and decimal comma intact; workload fits 120 min.
