@@ -1,18 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 5fb6f421aeb38b44
+CONTENT-HASH: 37ff55bd05bc7116
 
 ## Blocking
-None. No task names its model or formula in a heading or prompt. Every part has a rubric, the solutions run from the given data through the principle and the symbolic form to the check, and the mistakes are real.
+None.
 
 ## Polish
-- fy6-s1 text: it states the sources of error before part d asks for them ("Paristo lämpeni", the drift, the 0,03 V repeat reading). That makes d guided rather than independent. Give the repeat reading, but leave the heating and discharge for the student to name.
-- fy6-s1 text: the sentence "ei ole sama asia kuin varauksenkuljettajien ajautumisnopeus" is about a different concept and adds load to the opening text. It belongs in the solution only.
-- fy6-s4 is the weakest task. It has no source material to interpret (no graph, table or figure). Parts a to c are one formula each, and a gives away the model ("kondensaattoriin varastoitunut energia"). Rising demand comes only in b and d. Either add authentic material, for example a discharge-voltage table to interpret, or tighten a to c.
-- fy6-s4 d: one of its four rubric points is recall of the rule "huolto kuuluu ammattilaiselle". The criterion is soft and could be given to a student who writes anything sensible about safety. Make it observable: name one correct way to remove the charge, and state that the danger comes from stored energy and not from the battery.
-- fy6-s2 d asks four things at once: current, protection, the basis for choosing the fuse, and the lamp voltage. Split the lamp voltage into its own sentence or drop it. The fuse's slow response to a 36 % overload is noted as a simplification, which is honest. Keep it that way.
-- fy6-s3 "Muita tietoja" lists g and k, which hints that weight and Coulomb's law are needed. Consider giving k and g in a general constants line, so the student decides what is relevant.
-- Coverage: docs/coverage/FY6.md still lists the gap "kuvaajan laatiminen aineistosta: ohut näyttö, 2 p". Only fy6-s1 a closes it. The other gaps are closed by real tasks. Also note that no task touches a diode, LED or solar cell (fy6-14), and none touches charging or battery circuits (fy6-9) or the electric-car chapter (fy6-16), although the course scope lists them. Four tasks cannot cover everything, but s2 or s4 could take a semiconductor element.
-- Variety: the four tasks use four different kinds of source (data, circuit, field, capacitor). Only s1 and s2 have figures that must be interpreted.
+- fy6-s1 text: the sentence on ryömintä versus the drift velocity of charge carriers is a vocabulary aside inside a task. It is kept short enough and is needed for part d. If it is trimmed, keep "jännitteen hidas muutos ajan kuluessa".
+- fy6-s2 b: the criterion says "17 W" (two figures) while the answer is 16,7 W with tolerance 0,03. State once which the student should give.
+- fy6-s4 a: the solution says three significant figures (14,9 J) and the stored answer is 14,85 J. This is fine within the tolerance, but the rubric detail could say "14,85 J ≈ 14,9 J".
+- fy6-s3 c: the 5,0 m/s measurement is given without a source line. The source_note covers it, so this is acceptable.
 
 ## Checked
-Level, authenticity, rubric fairness, workload (about 15 points per task, 4 tasks, plausible for 2 op), solution quality, common mistakes, links, coverage file. I did not run the page or look at the figures; I read figures.py and the figure descriptions only.
+- Round 2 changes (drift-velocity wording in s1, s4 significant figures): the s1 wording separates ryömintä from drift velocity correctly and gives a usable estimate (0,03 V over six minutes, at most 0,06 Ω of slope error). The s4 figures (14,85 J, 6,86 J, 46,2 %, 26,4 A) agree with answers.py.
+- Independent application: the four tasks differ in situation (battery measurement, cable and lamps, spray painting, flash capacitor) and in competency (graph and experiment, circuit and reasoning, field and energy, capacitor and safety). Each has four connected parts of rising demand. No heading or prompt names the formula or model. s1 a asks the student to choose the model, s3 b the energy principle, s4 b to see that energy must be computed before and after.
+- Source material: the s1 data table with a graph the student builds, the s2 circuit with ratings, the s3 measured speed against the model. All three are interpreted, not just plugged into a formula.
+- Rubric: criteria are specific and observable, and no points go to irrelevant things. Points per part match the number of criteria. The shared keys are used with task-specific detail.
+- Solutions: all seven stages are present, and symbolic work comes before numbers. The graph reading is shown. "Hyväksytään myös" is useful. The common mistakes are real (kilovolts and microfarads not converted, R = P/U, ΔU squared, energy "lost").
+- Physics wording: energy goes to the air, becomes internal energy and is transferred as heat (s3 c). The s4 d body-current estimate is marked as an idealised order of magnitude, and the safety framing leaves servicing to a qualified person.
+- Workload: four tasks of 14 to 15 points each fit a module-end set of 2 op. Variety is good, and every course goal (experiment, field and potential, safety) is covered.
+- Coverage gaps: not re-opened this round; the tasks close the experiment, field and safety gaps in content.
+- Hash re-verified at the end: 37ff55bd05bc7116.
