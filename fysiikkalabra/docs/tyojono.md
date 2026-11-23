@@ -141,7 +141,7 @@ Raportti tehty (#721, `docs/audits/2026-11-18-lopputarkistus-FY1-FY8.md`). **Hyv
 
 ## 20. Opettajan päätökset 2026-11-18 klo 18.33 (koordinaattorin chatissa, "mennään ehdotustesi mukaisesti")
 Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jälkeen; tämä rivi on hyväksynnän kirjaus (sääntö 5).
-- Pysähdy ja mieti tehty FY1–FY8 (#760, #765, #766 ja #772, #745, #770, #777, #779, #783) ja FY9 (#825: 14 yksikköä, fi täysi katselmointi, en ja fi-easy vain tiede; en- ja fi-easy-yksikkösivut draft, kunnes pedagogia ja ulkoasu on tehty), kaikki kielet, katselmoitu; FY5:stä alkaen rajattu laajuus, vanhan sisällön löydökset PR:ien kuvauksissa. **Opettaja 2026-11-19 aamulla ("kaikki ok"): laajennetaan muihin kursseihin**; seuraavaksi FY9 ja muut kurssit, kurssi kerrallaan.
+- Pysähdy ja mieti tehty FY1–FY8 (#760, #765, #766 ja #772, #745, #770, #777, #779, #783) ja FY14 (29 yksikköä, 56 laatikkoa, vain en, kolme katselmointia jokaiselle; FY10 ei, opettaja 2026-11-24 "I agree on 1-4") ja FY9 (#825: 14 yksikköä, fi täysi katselmointi, en ja fi-easy vain tiede; en- ja fi-easy-yksikkösivut draft, kunnes pedagogia ja ulkoasu on tehty), kaikki kielet, katselmoitu; FY5:stä alkaen rajattu laajuus, vanhan sisällön löydökset PR:ien kuvauksissa. **Opettaja 2026-11-19 aamulla ("kaikki ok"): laajennetaan muihin kursseihin**; seuraavaksi FY9 ja muut kurssit, kurssi kerrallaan.
 - Pysähdy ja mieti FY9 (#825): **opettaja 2026-11-23 (tekijän sessiossa, "Vain fi täysi, en/fi-easy kevyesti")**: fi:lle tiede, pedagogia ja ulkoasu, en:lle ja fi-easylle vain tiede (70 katselmointia 126:n sijaan); en- ja fi-easy-sivut jäävät draftiksi, kunnes kaikki kolme katselmointia ovat voimassa.
 - 8j: fy1-1, fy1-8 ja fy2-1 ohitetaan (ei kertaustehtävää).
 - 5d: FY5:n 16 ja FY6:n 25 jäljellä olevaa riviä jäävät listalle (myös fy5-7 `x = A \sin(…)`).
@@ -160,7 +160,6 @@ Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jäl
 - Kirjavinkkien Finna-tietuelinkit ja podcastien YouTube-linkit odottavat: Finna estää koneellisen haun (Cloudflare), YouTube-linkki vaatisi jaetun muutoksen (`media_tips.py`) ja opettajan päätöksen.
 - Pysähdy ja mieti FY7 (#779): **opettaja 2026-11-21 klo 16.4x ("hyväksyn", koordinaattorin suositus 1)**: fy7-1:lle neljäs, rajattu katselmointikierros (tiede en/fi/fi-easy delta ja pedagogia delta), vain tähän lukuun; PASS, yhdistetty.
 - Pysähdy ja mieti FY8 (#783): **opettaja 2026-11-22 klo 03.2x ("Hyväksyn suosituksesi", koordinaattorin suositus 1)**: fy8-4:lle, fy8-15:lle ja fy8-16:lle neljäs, rajattu katselmointikierros (tiede ja pedagogia delta, kaikki kielet; visual delta vanhentuneen tilan vuoksi), vain näihin lukuihin; PASS.
-- Varattu: claude/20-pysahdy-fy14 (Pysähdy ja mieti FY14, vain en; opettaja 2026-11-24 "I agree on 1-4")
 - Mahdollinen myöhempi sisältötyö: FY3/5/6:n käsin jaetut Pysähdy-ketjut (fy3-4, fy5-3, fy5-9, fy6-4, fy6-6…8, fy6-11…16) yhdeksi ketjuksi `mathlayout.display_chains`in (#782) varaan; sanamuoto muuttuu, joten katselmointi.
 
 ## 24. Uudet kuvat sivustolle (opettaja 2026-11-19; kuvat hyväksytty 15.–18.11.)
