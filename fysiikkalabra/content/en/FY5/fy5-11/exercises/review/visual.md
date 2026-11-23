@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f881637ba53c5cef
+CONTENT-HASH: 2ad7083dd45f5c91
+SCOPE: none
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] 11-11 Formula row: the comma after `d_1 = vt_1/2` stands alone before the next display row; put d_1 and d_2 in the same aligned block or drop the comma.
+- [Minor] Formula block, stacked fraction rows (e.g. fy5-11 L2 speed-of-sound task, fy5-13 L2 standing-wave task): the denominator of one row sits very close to the numerator of the next; legible, only tight. Shared component spacing, not per lesson.
 
 ## Checked
-- Delta, round 1 (English): solutions.md only, paragraph splits in Principle, Model answer, Reading the graph and Substitution blocks; no word or formula changed.
-- Opened the current captures of the opened-solutions pages (stamp matches this hash) at 1280 px, several parts around the split paragraphs (fy5-11 open-exercises L1/L2/L3 tiles); split paragraphs render as separate short paragraphs inside the solution card, spacing and rules between steps intact, formulas and KaTeX boxes unclipped, no overflow, no empty gaps.
-- Formula rows, units (thin space, upright), colon division and answer boxes unchanged and consistent. Decimal point in English is correct.
+- Delta (solutions.md Kaava rewrites; teacher-approved figure/caption changes carry over). Opened open-exercises-L2-1280-6 and L3-1280-4: Formula blocks aligned at =, one equation per row, no clipping or overflow; Substitution, Answer, Reasonableness unchanged and consistent; units thin-spaced and upright.
 - Did not open every capture: layout and a11y checks cover the rest.
 
 ## Scores

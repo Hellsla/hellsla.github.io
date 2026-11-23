@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 1c382f450cb2acc7
-ROUND: 1 (delta: md-paragraphs / typography in solutions.md; en)
+CONTENT-HASH: 6a9b059b573df89e
+SCOPE: none
 
 ## Blocking
+(none)
 
 ## Polish
+- [Minor] Formula block of the Doppler data task (L2): six stacked fraction rows with tight line spacing; legible and aligned. Shared component spacing.
 
 ## Checked
-- Own reading of review/shots in content/en/FY5/fy5-14/review/shots (newer than solutions.md): open-exercises captures at 1280 px (levels 1, 2, 3, sampled across the changed solutions; this set's sample: fy5-13 L1-6, L2-6, L3-4; fy5-14 L2-5; fy5-15 L2-8; fy5-16 L2-6; fy5-17 L2-9).
-- Split Principle and Reasonableness paragraphs read as separate blocks inside the solution card, each on its own, spacing even, no empty gaps, no clipped formulas, calculation rows aligned, no KaTeX errors seen.
-- Wording unchanged by the diff (paragraph cuts only); no figures changed.
+- Delta (solutions.md, exercises.json). Opened open-exercises-L2-6 and L3-4 (stamp matches hash): six-row Formula block aligned at =, nested fractions and the parenthesis unclipped, Substitution and Answer unchanged, units correct.
+- Did not open every capture: layout and a11y checks cover the rest.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

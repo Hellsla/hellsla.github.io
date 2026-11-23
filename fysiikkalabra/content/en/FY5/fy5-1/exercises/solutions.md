@@ -180,7 +180,7 @@ The net moment is the sum of the moments with their signs. On the left of the ax
 The student measured the length from the edge of the spanner, so the measurement includes the distance $0.030\,\text{m}$ from the edge to the axis, which is on the other side of the axis and is not part of the lever arm.
 
 The force is perpendicular to the handle, so the correct lever arm is the distance from the axis to the hand.
-**Formula:** $$\begin{aligned} r &= d - e \\ M &= Fr \\ M &= F\,(d - e) \end{aligned}$$
+**Formula:** Let $d$ be the measured length and $e$ the distance from the edge to the axis. $$\begin{aligned} r &= d - e \\ M &= Fr \\ M &= F\,(d - e) \end{aligned}$$
 **Conversions:** All lengths are in metres, so no conversions are needed.
 **Substitution:** $r = 0.270\,\text{m} - 0.030\,\text{m} = 0.240\,\text{m}$ and $M = 90\,\text{N}\cdot 0.240\,\text{m} = 21.6\,\text{Nm}$
 **Answer:** $21.6\,\text{Nm} \approx 22\,\text{Nm}$, two significant figures like the force $90\,\text{N}$. The student's error was to measure the lever arm from the edge of the spanner and not from the axis of rotation, so the lever arm and the moment came out too large.

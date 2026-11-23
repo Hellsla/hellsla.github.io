@@ -156,7 +156,7 @@ Lauseke $M d\sin\alpha$ antaisi suuremman voiman pidemmällä avaimella, vaikka 
 **Annettu:** voima $F = 90\,\text{N}$ kohtisuoraan vartta vastaan, mitattu etäisyys avaimen pään reunasta käteen $0{,}270\,\text{m}$, mutterin keskikohta $0{,}030\,\text{m}$:n päässä reunasta kohti kättä
 **Kysytty:** voiman momentti $M$ mutterin akselin suhteen yksikössä $\text{Nm}$ ja oppilaan virhe
 **Periaate:** Varsi mitataan kiertoakselista, joka on mutterin keskikohta, ei avaimen reunasta. Oppilas mittasi pituuden avaimen reunasta, joten mittaukseen sisältyy matka $0{,}030\,\text{m}$ reunasta akselille, joka on akselin toisella puolella eikä kuulu varteen. Voima on kohtisuorassa vartta vastaan, joten oikea varsi on akselin etäisyys käteen.
-**Kaava:** $$\begin{aligned} r &= d - e \\ M &= Fr \\ M &= F\,(d - e) \end{aligned}$$
+**Kaava:** Olkoon $d$ mitattu pituus ja $e$ matka reunasta akselille. $$\begin{aligned} r &= d - e \\ M &= Fr \\ M &= F\,(d - e) \end{aligned}$$
 **Muunnokset:** Kaikki pituudet ovat metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $r = 0{,}270\,\text{m} - 0{,}030\,\text{m} = 0{,}240\,\text{m}$ ja $M = 90\,\text{N}\cdot 0{,}240\,\text{m} = 21{,}6\,\text{Nm}$
 **Vastaus:** $21{,}6\,\text{Nm} \approx 22\,\text{Nm}$, kaksi merkitsevää numeroa kuten voimassa $90\,\text{N}$. Oppilaan virhe oli mitata varsi avaimen reunasta eikä kiertoakselista, jolloin varsi ja momentti tulivat liian suuriksi.
