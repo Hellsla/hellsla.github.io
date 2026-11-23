@@ -77,7 +77,7 @@
       "justify": true,
       "reveal": {
         "after": "exp-2",
-        "min": 2
+        "min": 3
       },
       "prompt": "Naru vetää kärryä levosta vakiovoimalla $1{,}0\\,\\text{N}$. Kärryyn lisätään punnuksia, ja sen massa kaksinkertaistuu. Mitä kiihtyvyydelle tapahtuu?",
       "choices": [
@@ -233,7 +233,7 @@
           "label": "$a_x$ (m/s$^2$)"
         }
       ],
-      "min": 2
+      "min": 3
     },
     {
       "id": "exp-3",
