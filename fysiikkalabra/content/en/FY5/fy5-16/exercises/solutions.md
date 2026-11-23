@@ -2,7 +2,7 @@
 **Given:** noise level $L = 91\,\text{dB}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
 **Find:** the daily reference time $t_\text{ref}$ in hours
 **Principle:** Noise exposure is calculated as an average of energy: every rise of $3\,\text{dB}$ doubles the intensity, so the same dose is reached in half the time.
-**Formula:** $t_\text{ref} = \dfrac{t_0}{2^{\,n}}$, where $n = \dfrac{L - L_0}{3\,\text{dB}}$
+**Formula:** Let $I_\text{ref}$ be the intensity at level $L_0$. $$\begin{aligned} n &= \dfrac{L - L_0}{3\,\text{dB}} \\ I &= 2^{\,n}\,I_\text{ref} \\ I\,t_\text{ref} &= I_\text{ref}\,t_0 \\ t_\text{ref} &= t_0\,\dfrac{I_\text{ref}}{I} = \dfrac{t_0}{2^{\,n}} \end{aligned}$$
 **Conversions:** Not needed: the levels are in decibels and the time comes out in hours.
 **Substitution:** $n = \dfrac{91\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 2$, $t_\text{ref} = \dfrac{8\,\text{h}}{2^2} = 2.0\,\text{h}$
 **Answer:** $2.0\,\text{h}$. The levels are whole decibels and the rule is an estimate, so two significant figures are enough.
@@ -12,7 +12,7 @@
 **Given:** level of one fan $L_1 = 70\,\text{dB}$; two identical fans
 **Find:** the combined level $L$ in decibels
 **Principle:** The intensities of two sources add, not the levels. Two equally strong sources double the intensity (chapter *Intensity and the decibel scale*).
-**Formula:** $L = L_1 + 10\,\text{dB} \cdot \lg \dfrac{2 I_1}{I_1} = L_1 + 10\,\text{dB} \cdot \lg 2$
+**Formula:** $$\begin{aligned} L_1 &= 10\,\text{dB}\cdot\lg\dfrac{I_1}{I_0} \\ L &= 10\,\text{dB}\cdot\lg\dfrac{2I_1}{I_0} \\ L - L_1 &= 10\,\text{dB}\cdot\lg\dfrac{2I_1}{I_1} \\ L &= L_1 + 10\,\text{dB}\cdot\lg 2 \end{aligned}$$
 **Conversions:** Not needed.
 **Substitution:** $L = 70\,\text{dB} + 10\,\text{dB} \cdot \lg 2 = 70\,\text{dB} + 3.01\,\text{dB} = 73.01\,\text{dB}$
 **Answer:** $73\,\text{dB}$, in whole decibels like the given value.
@@ -22,7 +22,7 @@
 **Given:** $L_1 = 88\,\text{dB}$ at a distance $r_1 = 4.0\,\text{m}$, new distance $r_2 = 8.0\,\text{m}$; point source in an open space
 **Find:** the level $L_2$ at the distance $r_2$
 **Principle:** The intensity of a point source is inversely proportional to the square of the distance, so double the distance gives a quarter of the intensity. That lowers the level by $10\,\text{dB} \cdot \lg 4 \approx 6\,\text{dB}$ (chapter *Intensity and the decibel scale*).
-**Formula:** $L_2 = L_1 - 6\,\text{dB}$, when $r_2 = 2 r_1$
+**Formula:** $$\begin{aligned} \dfrac{I_2}{I_1} &= \dfrac{r_1^2}{r_2^2} = \dfrac{r_1^2}{(2r_1)^2} = \dfrac{1}{4} \\ L_2 - L_1 &= 10\,\text{dB}\cdot\lg\dfrac{I_2}{I_1} \\ L_2 &= L_1 + 10\,\text{dB}\cdot\lg\dfrac{1}{4} \\ &\approx L_1 - 6\,\text{dB} \end{aligned}$$
 **Conversions:** Not needed: $r_2 : r_1 = 8.0\,\text{m} : 4.0\,\text{m} = 2$.
 **Substitution:** $L_2 = 88\,\text{dB} - 6\,\text{dB} = 82\,\text{dB}$
 **Answer:** $82\,\text{dB}$, in whole decibels like the given value.
@@ -55,7 +55,7 @@ c) Earplugs attenuate sound only at the ear. d) Panels fitted in the ceiling do 
 **Given:** two identical machines, each $L_1 = 85\,\text{dB}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
 **Find:** the daily reference time $t_\text{ref}$ in hours
 **Principle:** The intensities of two equally strong sources add, so the intensity doubles and the level rises by about $3\,\text{dB}$. Then every $3\,\text{dB}$ above the action value halves the reference time.
-**Formula:** $L = L_1 + 3\,\text{dB}$ and $t_\text{ref} = \dfrac{t_0}{2^{\,n}}$, where $n = \dfrac{L - L_0}{3\,\text{dB}}$
+**Formula:** Let $I_\text{ref}$ be the intensity at level $L_0$. $$\begin{aligned} L &= L_1 + 10\,\text{dB}\cdot\lg\dfrac{2I_1}{I_1} \\ &\approx L_1 + 3\,\text{dB} \\ n &= \dfrac{L - L_0}{3\,\text{dB}} \\ I &= 2^{\,n}\,I_\text{ref} \\ I\,t_\text{ref} &= I_\text{ref}\,t_0 \\ t_\text{ref} &= t_0\,\dfrac{I_\text{ref}}{I} = \dfrac{t_0}{2^{\,n}} \end{aligned}$$
 **Conversions:** Not needed.
 **Substitution:** $L = 85\,\text{dB} + 3\,\text{dB} = 88\,\text{dB}$, $n = \dfrac{88\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 1$, $t_\text{ref} = \dfrac{8\,\text{h}}{2^1} = 4.0\,\text{h}$
 **Answer:** $4.0\,\text{h}$. The rule is an estimate, so two significant figures are enough.
@@ -65,7 +65,7 @@ c) Earplugs attenuate sound only at the ear. d) Panels fitted in the ceiling do 
 **Given:** level at the ear $L = 94\,\text{dB}$, listening time $t = 1.5\,\text{h}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
 **Find:** the dose as a percentage of the reference dose
 **Principle:** First calculate the reference time at a level of $94\,\text{dB}$: in that time exactly the reference dose builds up. The share of the dose is the ratio of the listening time to the reference time, because the level is the same all the time.
-**Formula:** $t_\text{ref} = \dfrac{t_0}{2^{\,n}}$, where $n = \dfrac{L - L_0}{3\,\text{dB}}$, and share $= \dfrac{t}{t_\text{ref}} \cdot 100\,\%$
+**Formula:** Let $I_\text{ref}$ be the intensity at level $L_0$. $$\begin{aligned} n &= \dfrac{L - L_0}{3\,\text{dB}} \\ I &= 2^{\,n}\,I_\text{ref} \\ I\,t_\text{ref} &= I_\text{ref}\,t_0 \\ t_\text{ref} &= t_0\,\dfrac{I_\text{ref}}{I} = \dfrac{t_0}{2^{\,n}} \\ \text{share} &= \dfrac{t}{t_\text{ref}}\cdot 100\,\% \end{aligned}$$
 **Conversions:** Not needed: the times are in hours, and the unit cancels.
 **Substitution:** $n = \dfrac{94\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 3$, $t_\text{ref} = \dfrac{8\,\text{h}}{2^3} = 1.0\,\text{h}$, share $= \dfrac{1.5\,\text{h}}{1.0\,\text{h}} \cdot 100\,\% = 150\,\%$
 **Answer:** $150\,\%$, two significant figures as in the time $1.5\,\text{h}$.
@@ -75,7 +75,7 @@ c) Earplugs attenuate sound only at the ear. d) Panels fitted in the ceiling do 
 **Given:** $L_1 = 78\,\text{dB}$ at a distance $r_1 = 2.0\,\text{m}$, desired level $L_2 = 60\,\text{dB}$; point source in an open space
 **Find:** the distance $r_2$ in metres
 **Principle:** In an open space every doubling of the distance lowers the level by $6\,\text{dB}$, because the intensity falls to a quarter (chapter *Intensity and the decibel scale*). We calculate how many doublings are needed.
-**Formula:** $k = \dfrac{L_1 - L_2}{6\,\text{dB}}$ and $r_2 = 2^{\,k} \cdot r_1$
+**Formula:** $$\begin{aligned} \dfrac{r_2}{r_1} &= 2^{\,k} \\ L_1 - L_2 &= 10\,\text{dB}\cdot\lg\dfrac{I_1}{I_2} \\ &= 10\,\text{dB}\cdot\lg\dfrac{r_2^2}{r_1^2} \\ &= 20\,\text{dB}\cdot\lg 2^{\,k} \\ &\approx k\cdot 6\,\text{dB} \\ k &= \dfrac{L_1 - L_2}{6\,\text{dB}} \\ r_2 &= 2^{\,k}\,r_1 \end{aligned}$$
 **Conversions:** Not needed.
 **Substitution:** $k = \dfrac{78\,\text{dB} - 60\,\text{dB}}{6\,\text{dB}} = 3$, $r_2 = 2^3 \cdot 2.0\,\text{m} = 16\,\text{m}$
 **Answer:** $16\,\text{m}$, two significant figures as in the distance $2.0\,\text{m}$.
@@ -87,7 +87,7 @@ c) Earplugs attenuate sound only at the ear. d) Panels fitted in the ceiling do 
 **Principle:** When the level falls steadily, it falls by the same number of decibels every second. The reverberation time follows from the rate of fall: a fall of $60\,\text{dB}$ takes as many times longer as the measured fall is smaller.
 
 The measurement is often done this way, because the background noise of the room hides the full drop of $60\,\text{dB}$.
-**Formula:** $T = \dfrac{60\,\text{dB}}{L_1 - L_2} \cdot \Delta t$
+**Formula:** $$\begin{aligned} \dfrac{L_1 - L_2}{\Delta t} &= \dfrac{60\,\text{dB}}{T} \\ T &= \dfrac{60\,\text{dB}}{L_1 - L_2}\cdot\Delta t \end{aligned}$$
 **Conversions:** Not needed.
 **Substitution:** $T = \dfrac{60\,\text{dB}}{92\,\text{dB} - 62\,\text{dB}} \cdot 0.45\,\text{s} = 2 \cdot 0.45\,\text{s} = 0.90\,\text{s}$
 **Answer:** $0.90\,\text{s}$, two significant figures as in the time $0.45\,\text{s}$.
@@ -114,7 +114,7 @@ Nor is the action value a safety limit, so the measurement does not show working
 **Given:** $t_1 = 4.0\,\text{h}$ at a level $L_1 = 88\,\text{dB}$, $t_2 = 4.0\,\text{h}$ at a level $L_2 = 82\,\text{dB}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
 **Find:** the day's dose as a percentage of the reference dose
 **Principle:** The dose is the energy accumulated in the ear, so the shares of the different periods are added. The share of each period is the ratio of its duration to the reference time at that level.
-**Formula:** $t_{\text{ref},i} = \dfrac{t_0}{2^{\,n_i}}$, where $n_i = \dfrac{L_i - L_0}{3\,\text{dB}}$, and dose $= \left(\dfrac{t_1}{t_{\text{ref},1}} + \dfrac{t_2}{t_{\text{ref},2}}\right) \cdot 100\,\%$
+**Formula:** Let $I_\text{ref}$ be the intensity at level $L_0$. $$\begin{aligned} n_i &= \dfrac{L_i - L_0}{3\,\text{dB}} \\ I_i &= 2^{\,n_i}\,I_\text{ref} \\ I_i\,t_{\text{ref},i} &= I_\text{ref}\,t_0 \\ t_{\text{ref},i} &= \dfrac{t_0}{2^{\,n_i}} \\ \text{dose} &= \left(\dfrac{t_1}{t_{\text{ref},1}} + \dfrac{t_2}{t_{\text{ref},2}}\right)\cdot 100\,\% \end{aligned}$$
 **Conversions:** Not needed: the times are in hours, and the unit cancels.
 **Substitution:** $n_1 = 1$, so $t_{\text{ref},1} = 8\,\text{h} : 2 = 4.0\,\text{h}$. $n_2 = \dfrac{82\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = -1$, so $t_{\text{ref},2} = 8\,\text{h} \cdot 2 = 16\,\text{h}$. The dose $D = \dfrac{4.0\,\text{h}}{4.0\,\text{h}} + \dfrac{4.0\,\text{h}}{16\,\text{h}} = 1 + 0.25 = 1.25 = 125\,\%$
 **Answer:** $125\,\%$. The times are given to two figures, so the result is an estimate, about $1.3$ times the dose. The daily exposure exceeds the upper action value, so hearing protectors must be used and the noise must be reduced.
@@ -124,7 +124,7 @@ Nor is the action value a safety limit, so the measurement does not show working
 **Given:** two identical units, each $L_1 = 55\,\text{dB}$ at a distance $r_1 = 3.0\,\text{m}$; the window's distance from each $r_2 = 12\,\text{m}$; point sources in an open space
 **Find:** the level $L$ at the window when both are running
 **Principle:** First calculate the level of one unit at the window: every doubling of the distance lowers the level by $6\,\text{dB}$. The intensities of two equally strong sources add, so the combined level is $3\,\text{dB}$ higher.
-**Formula:** $L_\text{one} = L_1 - k \cdot 6\,\text{dB}$, where $2^{\,k} = \dfrac{r_2}{r_1}$, and $L = L_\text{one} + 3\,\text{dB}$
+**Formula:** $$\begin{aligned} \dfrac{r_2}{r_1} &= 2^{\,k} \\ L_1 - L_\text{one} &= 10\,\text{dB}\cdot\lg\dfrac{I_1}{I_\text{one}} \\ &= 20\,\text{dB}\cdot\lg 2^{\,k} \\ &\approx k\cdot 6\,\text{dB} \\ L_\text{one} &= L_1 - k\cdot 6\,\text{dB} \\ L &= L_\text{one} + 10\,\text{dB}\cdot\lg 2 \\ &\approx L_\text{one} + 3\,\text{dB} \end{aligned}$$
 **Conversions:** Not needed: $r_2 : r_1 = 12\,\text{m} : 3.0\,\text{m} = 4$, so $2^{\,k} = 4$ and $k = 2$.
 **Substitution:** $L_\text{one} = 55\,\text{dB} - 2 \cdot 6\,\text{dB} = 43\,\text{dB}$. $L = 43\,\text{dB} + 3\,\text{dB} = 46\,\text{dB}$
 **Answer:** $46\,\text{dB}$, in whole decibels like the given value.
@@ -168,7 +168,7 @@ In a loudspeaker the magnet stays in place, and the production of sound is not b
 **Find:** the shortening of the reverberation time as a percentage
 **Principle:** When the level falls steadily, the reverberation time is the time in which the fall is $60\,\text{dB}$. It is calculated for both measurements from the measured drop and time, and the times are compared.
 **Reading the table:** The drop before the panels is $$\begin{aligned} \Delta L_1 &= 90.3\,\text{dB} - 74.4\,\text{dB} \\ &= 15.9\,\text{dB} \end{aligned}$$ and after the panels $$\begin{aligned} \Delta L_2 &= 90.2\,\text{dB} - 50.1\,\text{dB} \\ &= 40.1\,\text{dB} \end{aligned}$$.
-**Formula:** $T = \dfrac{60\,\text{dB}}{\Delta L} \cdot \Delta t$ and shortening $= \dfrac{T_1 - T_2}{T_1} \cdot 100\,\%$
+**Formula:** $$\begin{aligned} \dfrac{\Delta L}{\Delta t} &= \dfrac{60\,\text{dB}}{T} \\ T &= \dfrac{60\,\text{dB}}{\Delta L}\cdot\Delta t \\ \text{shortening} &= \dfrac{T_1 - T_2}{T_1}\cdot 100\,\% \end{aligned}$$
 **Conversions:** Not needed.
 **Substitution:**
 $$\begin{aligned}
@@ -205,7 +205,7 @@ The wavelengths are $\lambda_{125} = \dfrac{343\,\text{m/s}}{125\,\text{Hz}} = 2
 **Given:** level at the workstation $L = 109\,\text{dB}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$; the student's result $1.0\,\text{h}$
 **Find:** a) what is wrong in the student's reasoning; b) the correct reference time $t_\text{ref}$ in minutes
 **Principle:** Every $3\,\text{dB}$ above the action value halves the reference time, so the time is divided by two for each step of $3\,\text{dB}$. The steps multiply: the time is divided by the number $2^{\,n}$, not by the number $n$.
-**Formula:** $n = \dfrac{L - L_0}{3\,\text{dB}}$ and $t_\text{ref} = \dfrac{t_0}{2^{\,n}}$
+**Formula:** Let $I_\text{ref}$ be the intensity at level $L_0$. $$\begin{aligned} n &= \dfrac{L - L_0}{3\,\text{dB}} \\ I &= 2^{\,n}\,I_\text{ref} \\ I\,t_\text{ref} &= I_\text{ref}\,t_0 \\ t_\text{ref} &= t_0\,\dfrac{I_\text{ref}}{I} = \dfrac{t_0}{2^{\,n}} \end{aligned}$$
 **Conversions:** $1\,\text{h} = 60\,\text{min}$.
 **Substitution:**
 $$\begin{aligned}
@@ -225,7 +225,7 @@ Check by halving: three halvings take the time $8\,\text{h} \to 1\,\text{h}$, an
 **Given:** sawing $L_1 = 97\,\text{dB}$, $t_1 = 1.0\,\text{h}$; planing $L_2 = 91\,\text{dB}$, $t_2 = 2.0\,\text{h}$; assembly $L_3 = 85\,\text{dB}$, $t_3 = 3.0\,\text{h}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
 **Find:** a) the day's dose as a percentage; b) the smallest attenuation $\Delta L$ of the hearing protectors; c) whether enclosing the saw is enough
 **Principle:** The dose is the energy accumulated in the ear, so the shares of the stages are added. The share is the ratio of the duration to the reference time at that level. A hearing protector lowers the intensity of all stages by the same factor, so the dose is divided by the number $2^{\,\Delta L / (3\,\text{dB})}$.
-**Formula:** $t_{\text{ref},i} = \dfrac{t_0}{2^{\,n_i}}$, where $n_i = \dfrac{L_i - L_0}{3\,\text{dB}}$; dose $D = \sum \dfrac{t_i}{t_{\text{ref},i}}$; condition $\dfrac{D}{2^{\,\Delta L / (3\,\text{dB})}} \le 1$
+**Formula:** Let $I_\text{ref}$ be the intensity at level $L_0$. $$\begin{aligned} n_i &= \dfrac{L_i - L_0}{3\,\text{dB}} \\ I_i &= 2^{\,n_i}\,I_\text{ref} \\ I_i\,t_{\text{ref},i} &= I_\text{ref}\,t_0 \\ t_{\text{ref},i} &= \dfrac{t_0}{2^{\,n_i}} \\ D &= \sum\dfrac{t_i}{t_{\text{ref},i}} \\ I_\text{ear} &= \dfrac{I}{2^{\,\Delta L/(3\,\text{dB})}} \\ D_\text{ear} &= \dfrac{D}{2^{\,\Delta L/(3\,\text{dB})}} \\ D_\text{ear} &\le 1 \end{aligned}$$
 **Conversions:** Not needed: the times are in hours, and the unit cancels.
 **Substitution:**
 Sawing: $n_1 = \dfrac{97 - 85}{3} = 4$, so $t_{\text{ref},1} = 8\,\text{h} : 16 = 0.50\,\text{h}$ and the share is $1.0\,\text{h} : 0.50\,\text{h} = 2.0$. Planing: $n_2 = 2$, $t_{\text{ref},2} = 2.0\,\text{h}$ and the share $1.0$. Assembly: $n_3 = 0$, $t_{\text{ref},3} = 8\,\text{h}$ and the share $0.375$.
@@ -248,7 +248,7 @@ Part c: the enclosure lowers the level of sawing to $87\,\text{dB}$, whereby $n_
 **Given:** $L_1 = 112\,\text{dB}$ at a distance $r_1 = 2.0\,\text{m}$, listener at a distance $r_2 = 8.0\,\text{m}$; attenuation of the earplugs $\Delta L = 8\,\text{dB}$; duration of the concert $t = 3.0\,\text{h}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
 **Find:** a) the level without earplugs; b) the reference time with earplugs; c) the dose as a percentage and whether it stays below the reference dose at a distance of $16\,\text{m}$
 **Principle:** The level of a point source falls by $6\,\text{dB}$ every time the distance doubles. The earplugs lower the level reaching the ear by their attenuation, and the reference time follows from the rule in which every $3\,\text{dB}$ above the action value halves the time. The dose is the ratio of the listening time to the reference time.
-**Formula:** $L_2 = L_1 - k \cdot 6\,\text{dB}$, where $2^{\,k} = \dfrac{r_2}{r_1}$; $L = L_2 - \Delta L$; $t_\text{ref} = \dfrac{t_0}{2^{\,n}}$, where $n = \dfrac{L - L_0}{3\,\text{dB}}$
+**Formula:** Let $I_\text{ref}$ be the intensity at level $L_0$. $$\begin{aligned} \dfrac{r_2}{r_1} &= 2^{\,k} \\ L_1 - L_2 &= 20\,\text{dB}\cdot\lg\dfrac{r_2}{r_1} \\ &\approx k\cdot 6\,\text{dB} \\ L_2 &= L_1 - k\cdot 6\,\text{dB} \\ L &= L_2 - \Delta L \\ n &= \dfrac{L - L_0}{3\,\text{dB}} \\ I &= 2^{\,n}\,I_\text{ref} \\ I\,t_\text{ref} &= I_\text{ref}\,t_0 \\ t_\text{ref} &= t_0\,\dfrac{I_\text{ref}}{I} = \dfrac{t_0}{2^{\,n}} \end{aligned}$$
 **Conversions:** Not needed: $r_2 : r_1 = 8.0\,\text{m} : 2.0\,\text{m} = 4$, so $k = 2$.
 **Substitution:**
 Part a: $L_2 = 112\,\text{dB} - 2 \cdot 6\,\text{dB} = 100\,\text{dB}$.
@@ -272,7 +272,7 @@ That does not guarantee safe hearing, but it reduces the strain clearly.
 **Asked:** the reference time $t_\text{v}$ in hours
 **Principle:** Noise exposure is calculated as an energy average: every rise of $3\,\text{dB}$ doubles the intensity and halves the time in which the same dose builds up.
 **Reading the graph:** On the scale the lawn mower's mark is at $90\,\text{dB}$, inside the red hearing-damage range that starts at $85\,\text{dB}$.
-**Formula:** $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, where $n = \dfrac{L - L_0}{3\,\text{dB}}$
+**Formula:** Let $I_\text{v}$ be the intensity at level $L_0$. $$\begin{aligned} n &= \dfrac{L - L_0}{3\,\text{dB}} \\ I &= 2^{\,n}\,I_\text{v} \\ I\,t_\text{v} &= I_\text{v}\,t_0 \\ t_\text{v} &= t_0\,\dfrac{I_\text{v}}{I} = \dfrac{t_0}{2^{\,n}} \end{aligned}$$
 **Conversions:** None needed: the levels are in decibels and the time comes out in hours.
 **Substitution:** $n = \dfrac{90\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{5}{3}$, $t_\text{v} = \dfrac{8\,\text{h}}{2^{5/3}} = \dfrac{8\,\text{h}}{3.175} = 2.52\,\text{h}$
 **Answer:** $2.5\,\text{h}$. The level is read from the figure as a whole decibel and the rule is an estimate, so two significant figures are enough.
@@ -283,7 +283,7 @@ That does not guarantee safe hearing, but it reduces the strain clearly.
 **Asked:** the reference time $t_\text{v}$ in minutes
 **Principle:** The earplugs lower the level at the ear, and the dose depends on the level at the ear. Every rise of $3\,\text{dB}$ halves the reference time, because noise exposure is calculated as an energy average.
 **Reading the graph:** The rock concert's mark is on the scale at $105\,\text{dB}$, in the hearing-damage range.
-**Formula:** $L_\text{ear} = L - \Delta L$ and $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, where $n = \dfrac{L_\text{ear} - L_0}{3\,\text{dB}}$
+**Formula:** Let $I_\text{v}$ be the intensity at level $L_0$. $$\begin{aligned} L_\text{ear} &= L - \Delta L \\ n &= \dfrac{L_\text{ear} - L_0}{3\,\text{dB}} \\ I &= 2^{\,n}\,I_\text{v} \\ I\,t_\text{v} &= I_\text{v}\,t_0 \\ t_\text{v} &= t_0\,\dfrac{I_\text{v}}{I} = \dfrac{t_0}{2^{\,n}} \end{aligned}$$
 **Conversions:** $t_0 = 8\,\text{h} = 8 \cdot 60\,\text{min} = 480\,\text{min}$.
 **Substitution:** $L_\text{ear} = 105\,\text{dB} - 12\,\text{dB} = 93\,\text{dB}$, $n = \dfrac{93\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{8}{3}$, $t_\text{v} = \dfrac{480\,\text{min}}{2^{8/3}} = \dfrac{480\,\text{min}}{6.350} = 75.6\,\text{min}$
 **Answer:** $76\,\text{min}$. The level is read from the figure as a whole decibel and the rule is an estimate, so two significant figures are enough.
