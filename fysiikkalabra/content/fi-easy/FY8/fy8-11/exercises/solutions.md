@@ -5,11 +5,9 @@
 
 **Periaate:** Reaktiossa vapautuu energiaa, joka vastaa lähtöaineiden ja tuotteiden massojen erotusta. Järjestyslukujen summa säilyy ($3 + 0 = 2 + 1$). Siksi atomimassojen elektronit kumoutuvat, ja atomimassoja voi käyttää suoraan.
 
-**Kaava:** $$
+**Kaava:** $Q = \Delta m\,c^2$, josta $$
 
 \begin{aligned}
-
-Q &= \Delta m\,c^2 \\
 
 \Delta m &= m_\text{alku} - m_\text{loppu} \\
 
@@ -80,11 +78,9 @@ $$. Tulos on pienempi kuin deuteriumin ja tritiumin fuusiossa ($17{,}6\,\text{Me
 
 **Periaate:** Reaktiossa vapautuu massojen erotusta vastaava energia. Järjestyslukujen summa säilyy ($1 + 1 = 2 + 0$), joten atomimassojen elektronit kumoutuvat. Lähtöaineina on kaksi deuteriumatomia.
 
-**Kaava:** $$
+**Kaava:** $Q = \Delta m\,c^2$, josta $$
 
 \begin{aligned}
-
-Q &= \Delta m\,c^2 \\
 
 \Delta m &= m_\text{alku} - m_\text{loppu} \\
 
@@ -155,19 +151,15 @@ $$. Tulos on noin viidesosa deuteriumin ja tritiumin fuusion energiasta. Tämä 
 
 **Periaate:** Yksi reaktio vapauttaa massaeroa vastaavan energian $Q$ ja kuluttaa yhden deuteriumatomin ja yhden tritiumatomin. Energia massayksikköä kohti on yhden reaktion energia jaettuna yhden reaktion polttoaineen massalla.
 
-**Kaava:** $$
+**Kaava:** $Q = \Delta m\,c^2$ ja $E = Q$ josta $$
 
 \begin{aligned}
-
-Q &= \Delta m\,c^2 \\
 
 \Delta m &= m_\text{D} + m_\text{T} - m_\text{He} - m_\text{n} \\
 
 Q &= (m_\text{D} + m_\text{T} - m_\text{He} \\
 
 &\quad - m_\text{n})\,c^2 \\
-
-E &= Q \\
 
 m &= m_\text{D} + m_\text{T} \\
 
@@ -224,11 +216,9 @@ $$; atomimassat $m_\text{U} = 235{,}0439282\,\text{u}$, $m_\text{Xe} = 139{,}921
 
 **Periaate:** Ydinreaktiossa massaluku säilyy, joten neutronien määrä saadaan massalukujen summista. Järjestysluvut täsmäävät jo ($92 = 54 + 38$), joten atomimassojen elektronit kumoutuvat. Energia vastaa massojen erotusta.
 
-**Kaava:** $1 + 235 = 140 + 94 + x$, josta $x = 236 - 234 = 2$; sitten $$
+**Kaava:** $1 + 235 = 140 + 94 + x$, josta $x = 236 - 234 = 2$; sitten $Q = \Delta m\,c^2$, josta $$
 
 \begin{aligned}
-
-Q &= \Delta m\,c^2 \\
 
 \Delta m &= m_\text{alku} - m_\text{loppu} \\
 
@@ -304,19 +294,15 @@ $$
 
 **Periaate:** Tehtävän oletuksen mukaan koko lämpöteho syntyy uraani-235:n fissioista. Todellisessa reaktorissa osa tulee plutonium-239:n fissioista. Lämpöteho on fissioissa vapautuva energia aikayksikössä, joten fissioiden määrä on vapautunut energia jaettuna yhden fission energialla. Jokainen fissio kuluttaa yhden uraani-235-atomin, joten massa on fissioiden määrä kertaa atomin massa.
 
-**Kaava:** $$
+**Kaava:** $E = Pt$, $E = NQ$ ja $m = N m_\text{U}$, josta $$
 
 \begin{aligned}
 
-E &= Pt \\
-
-E &= NQ \\
+N &= \dfrac{Pt}{Q} \\
 
 m &= N m_\text{U} \\
 
-N &= \dfrac{Pt}{Q} \\
-
-m &= \dfrac{Pt\,m_\text{U}}{Q}
+&= \dfrac{Pt\,m_\text{U}}{Q}
 
 \end{aligned}
 
@@ -361,17 +347,13 @@ $$
 
 **Periaate:** Jokaista syntyvää heliumydintä kohti vapautuu energia $Q$. Se vastaa neljän vetyatomin ja yhden heliumatomin massojen erotusta. Kaikki energia päätyy säteilyksi, joten säteilyteho on $Q$ kertaa heliumytimien syntymisnopeus.
 
-**Kaava:** $$
+**Kaava:** $Q = \Delta m\,c^2$ ja $P = \dfrac{N}{t}\,Q$, josta $$
 
 \begin{aligned}
-
-Q &= \Delta m\,c^2 \\
 
 \Delta m &= 4m_\text{H} - m_\text{He} \\
 
 Q &= (4m_\text{H} - m_\text{He})\,c^2 \\
-
-P &= \dfrac{N}{t}\,Q \\
 
 \dfrac{N}{t} &= \dfrac{P}{Q}
 

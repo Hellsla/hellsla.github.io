@@ -371,7 +371,7 @@ Deuterium- ja tritiumytimillä on positiivinen varaus, joten ne hylkivät toisia
 **Annettu:** $E_n = -\dfrac{13{,}6\,\text{eV}}{n^2}$, siirtymä $n = 3 \to 2$
 **Kysytty:** fotonin aallonpituus $\lambda$
 **Periaate:** Kun atomi siirtyy ylemmältä energiatasolta alemmalle, se lähettää fotonin, jonka energia on tasojen energiaero. Fotonin energia ja aallonpituus liittyvät yhtälöllä $E = hf = \tfrac{hc}{\lambda}$.
-**Kaava:** $E = E_3 - E_2$ ja $\lambda = \dfrac{hc}{E}$
+**Kaava:** $$\begin{aligned} E &= E_3 - E_2 \\ E &= hf \\ c &= f\lambda \\ \lambda &= \dfrac{c}{f} = \dfrac{hc}{E} \end{aligned}$$
 **Muunnokset:** $$\begin{aligned} 1{,}889\,\text{eV} &= 1{,}889 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} \\ &= 3{,}026 \cdot 10^{-19}\,\text{J} \end{aligned}$$
 **Sijoitus:** $E = -\dfrac{13{,}6\,\text{eV}}{9} - \left(-\dfrac{13{,}6\,\text{eV}}{4}\right) = 1{,}889\,\text{eV}$. Ensin $$\begin{aligned} hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\ &= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m} \end{aligned}$$. Sitten $\lambda = \dfrac{hc}{E} = \dfrac{1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}026 \cdot 10^{-19}\,\text{J}} \approx 6{,}565 \cdot 10^{-7}\,\text{m}$
 **Vastaus:** Fotonin aallonpituus on noin $656\,\text{nm}$, eli valo on näkyvää punaista valoa.
@@ -381,7 +381,7 @@ Deuterium- ja tritiumytimillä on positiivinen varaus, joten ne hylkivät toisia
 **Annettu:** vetykaasu perustilassa $n = 1$
 **Kysytty:** miksi näkyvän valon alueella ei ole absorptioviivoja ja pisin absorboituva aallonpituus
 **Periaate:** Atomi absorboi fotonin vain, jos fotonin energia on täsmälleen jonkin sallitun tasoparin energiaero. Perustilassa olevan atomin pienin mahdollinen energianotto on siirtymä $1 \to 2$.
-**Kaava:** $\lambda = \dfrac{hc}{E_2 - E_1}$
+**Kaava:** $$\begin{aligned} E &= E_2 - E_1 \\ E &= hf \\ c &= f\lambda \\ \lambda &= \dfrac{c}{f} = \dfrac{hc}{E_2 - E_1} \end{aligned}$$
 **Muunnokset:** $E_2 - E_1 = -3{,}4\,\text{eV} + 13{,}6\,\text{eV} = 10{,}2\,\text{eV} = 1{,}634 \cdot 10^{-18}\,\text{J}$
 **Sijoitus:** Ensin $$\begin{aligned} hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\ &= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m} \end{aligned}$$. Sitten $\lambda = \dfrac{hc}{E_2 - E_1} = \dfrac{1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}634 \cdot 10^{-18}\,\text{J}} \approx 1{,}216 \cdot 10^{-7}\,\text{m}$
 **Vastaus:** Perustilassa oleva vety absorboi fotoneja vain, kun fotonin energia on vähintään $10{,}2\,\text{eV}$. Näkyvän valon fotonien energiat ovat noin $1{,}8\text{–}3{,}1\,\text{eV}$, joten ne eivät riitä viemään atomia perustilalta yhdellekään ylemmälle tasolle, eikä kylmään vetykaasuun synny absorptioviivoja näkyvälle alueelle. Pisin absorboituva aallonpituus on noin $122\,\text{nm}$ eli ultravioletti.
@@ -391,7 +391,7 @@ Deuterium- ja tritiumytimillä on positiivinen varaus, joten ne hylkivät toisia
 **Annettu:** atomi tilassa $n = 2$, $\lambda = 200\,\text{nm}$
 **Kysytty:** ionisoiko fotoni atomin, ja elektronin liike-energia
 **Periaate:** Tilassa $n = 2$ olevan atomin ionisoimiseen tarvitaan energia $\lvert E_2 \rvert$. Jos fotonin energia on suurempi, ylimääräinen energia muuttuu vapautuneen elektronin liike-energiaksi (energian säilyminen).
-**Kaava:** $E_\text{k} = \dfrac{hc}{\lambda} - \lvert E_2 \rvert$
+**Kaava:** $$\begin{aligned} E_\text{fotoni} &= hf \\ c &= f\lambda \\ E_\text{fotoni} &= \dfrac{hc}{\lambda} \\ E_\text{fotoni} &= \lvert E_2 \rvert + E_\text{k} \\ E_\text{k} &= \dfrac{hc}{\lambda} - \lvert E_2 \rvert \end{aligned}$$
 **Muunnokset:** $\lambda = 200\,\text{nm} = 2{,}00 \cdot 10^{-7}\,\text{m}$ ja $\lvert E_2 \rvert = \dfrac{13{,}6\,\text{eV}}{4} = 3{,}4\,\text{eV}$
 **Sijoitus:** Ensin $$\begin{aligned} hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\ &= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m} \end{aligned}$$. Fotonin energia on $\dfrac{hc}{\lambda} = \dfrac{1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}00 \cdot 10^{-7}\,\text{m}} = 9{,}93 \cdot 10^{-19}\,\text{J} = 6{,}20\,\text{eV}$. Liike-energia on $E_\text{k} = \dfrac{hc}{\lambda} - \lvert E_2 \rvert = 6{,}20\,\text{eV} - 3{,}4\,\text{eV} = 2{,}8\,\text{eV}$
 **Vastaus:** Fotonin energia $6{,}2\,\text{eV}$ on suurempi kuin ionisaatioenergia $3{,}4\,\text{eV}$, joten atomi ionisoituu. Vapautuvan elektronin liike-energia on noin $2{,}8\,\text{eV}$ eli $4{,}5 \cdot 10^{-19}\,\text{J}$.
@@ -499,7 +499,7 @@ Ytimen ympärille rajoitettu elektronin tila on seisova aalto, ja vain tietyt se
 **Kysytty:** vaimennuskerroin $\mu$ ja puoliintumispaksuus $d_{1/2}$
 **Periaate:** Suoran $\ln R = \ln R_0 - \mu d$ kulmakerroin on $-\mu$. Puoliintumispaksuus on paksuus, joka puolittaa pulssinopeuden: $e^{-\mu d_{1/2}} = \tfrac{1}{2}$.
 **Kuvaajan lukeminen:** Suoralta luetaan pisteet $(0;\ 4{,}78)$ ja $(24\,\text{mm};\ 2{,}05)$.
-**Kaava:** $\mu = -\dfrac{\Delta(\ln R)}{\Delta d}$ ja $d_{1/2} = \dfrac{\ln 2}{\mu}$
+**Kaava:** $$\begin{aligned} R &= R_0 e^{-\mu d} \\ \ln R &= \ln R_0 - \mu d \\ \mu &= -\dfrac{\Delta(\ln R)}{\Delta d} \\ \tfrac{R_0}{2} &= R_0 e^{-\mu d_{1/2}} \\ d_{1/2} &= \dfrac{\ln 2}{\mu} \end{aligned}$$
 **Muunnokset:** Ei tarvita; paksuus pysyy millimetreinä.
 **Sijoitus:** $\mu = -\dfrac{2{,}05 - 4{,}78}{24\,\text{mm} - 0} = 0{,}114\,\text{mm}^{-1}$ ja $d_{1/2} = \dfrac{0{,}693}{0{,}114\,\text{mm}^{-1}} \approx 6{,}1\,\text{mm}$
 **Vastaus:** Vaimennuskerroin on noin $0{,}114\,\text{mm}^{-1}$ ja puoliintumispaksuus noin $6{,}1\,\text{mm}$.
@@ -509,7 +509,7 @@ Ytimen ympärille rajoitettu elektronin tila on seisova aalto, ja vain tietyt se
 **Annettu:** $\dot{H}_0 = 160\,\mu\text{Sv/h}$ etäisyydellä $1{,}0\,\text{m}$, etäisyys $3{,}0\,\text{m}$, oleskelu $2000\,\text{h/a}$, raja $1\,\text{mSv/a}$, $\mu = 0{,}114\,\text{mm}^{-1}$
 **Kysytty:** lyijylevyn paksuus $d$
 **Periaate:** Sallittu annosnopeus saadaan vuosirajasta ja oleskeluajasta. Ilman suojaa annosnopeus pienenee etäisyyden neliön käänteisluvun mukaan, ja lyijy vaimentaa sen sitten eksponentiaalisesti, kunnes annosnopeus on sallittu.
-**Kaava:** $\dot{H} = \dfrac{\dot{H}_0}{9} e^{-\mu d}$, josta $d = \dfrac{1}{\mu} \ln \dfrac{\dot{H}_0 / 9}{\dot{H}}$
+**Kaava:** Etäisyys on kolminkertainen ($r = 3r_0$), joten $$\begin{aligned} \dot{H}_\text{ilman} &= \dot{H}_0 \cdot \dfrac{r_0^2}{r^2} = \dfrac{\dot{H}_0}{9} \\ \dot{H} &= \dot{H}_\text{ilman}\, e^{-\mu d} \\ \dot{H} &= \dfrac{\dot{H}_0}{9}\, e^{-\mu d} \\ e^{-\mu d} &= \dfrac{\dot{H}_0 / 9}{\dot{H}} \\ d &= \dfrac{1}{\mu} \ln \dfrac{\dot{H}_0 / 9}{\dot{H}} \end{aligned}$$ Tässä $\dot{H}$ on sallittu annosnopeus.
 **Muunnokset:** $1\,\text{mSv} = 1000\,\mu\text{Sv}$
 **Sijoitus:** $\dot{H} = \dfrac{1000\,\mu\text{Sv}}{2000\,\text{h}} = 0{,}5\,\mu\text{Sv/h}$ ja ilman suojaa $\dot{H}_0 / 9 = \dfrac{160\,\mu\text{Sv/h}}{9} = 17{,}8\,\mu\text{Sv/h}$; $d = \dfrac{1}{0{,}1137\,\text{mm}^{-1}} \ln\dfrac{17{,}8}{0{,}5} = \dfrac{3{,}57}{0{,}1137\,\text{mm}^{-1}} \approx 31\,\text{mm}$
 **Vastaus:** Tarvitaan noin $31\,\text{mm}$ paksu lyijylevy.
@@ -519,7 +519,7 @@ Ytimen ympärille rajoitettu elektronin tila on seisova aalto, ja vain tietyt se
 **Annettu:** $R(24\,\text{mm}) = 8{,}7\,\text{s}^{-1}$, taustapulssinopeus $0{,}8\,\text{s}^{-1}$, mittausaika $100\,\text{s}$
 **Kysytty:** nettopulssinopeuden suhteellinen epävarmuus, vastauksen luotettavuus ja mitoitus
 **Periaate:** Pulssien lukumäärän hajonta on $\sqrt{N}$. Nettolukumäärä on kahden mitatun lukumäärän erotus, ja erotuksen epävarmuus on erillisten epävarmuuksien neliöiden summan neliöjuuri.
-**Kaava:** $\Delta N_\text{netto} = \sqrt{N + N_\text{t}}$ ja suhteellinen epävarmuus $\dfrac{\Delta N_\text{netto}}{N - N_\text{t}}$
+**Kaava:** $$\begin{aligned} N_\text{netto} &= N - N_\text{t} \\ \Delta N &= \sqrt{N} \\ \Delta N_\text{t} &= \sqrt{N_\text{t}} \\ \Delta N_\text{netto} &= \sqrt{(\Delta N)^2 + (\Delta N_\text{t})^2} \\ &= \sqrt{N + N_\text{t}} \\ \dfrac{\Delta N_\text{netto}}{N_\text{netto}} &= \dfrac{\sqrt{N + N_\text{t}}}{N - N_\text{t}} \end{aligned}$$
 **Muunnokset:** $N = 8{,}7\,\text{s}^{-1} \cdot 100\,\text{s} = 870$ ja $N_\text{t} = 0{,}8\,\text{s}^{-1} \cdot 100\,\text{s} = 80$
 **Sijoitus:** $\Delta N_\text{netto} = \sqrt{870 + 80} = 31$ ja $\dfrac{31}{870 - 80} = \dfrac{31}{790} \approx 0{,}039$
 **Vastaus:** Suhteellinen epävarmuus on noin $3{,}9\,\%$. Pisteet ovat hyvin suoralla, joten malli sopii mitatulle alueelle $0\text{–}24\,\text{mm}$, mutta tulos $31\,\text{mm}$ on ekstrapolointia mitatun alueen ulkopuolelle.
@@ -564,7 +564,7 @@ Malli olettaa kapean, yhden energian säteilykimpun; todellisessa säteilyssä o
 **Annettu:** $m_\text{e} = 9{,}109 \cdot 10^{-31}\,\text{kg}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Kysytty:** miksi kaksi fotonia, yhden fotonin energia ja aallonpituus
 **Periaate:** Liikemäärän säilymisen mukaan lähes levossa olevan hiukkasparin kokonaisliikemäärä on nolla, ja syntyvien fotonien kokonaisliikemäärän täytyy olla nolla. Yksi fotoni ei voi täyttää ehtoa, koska sillä on aina liikemäärä, joten fotoneja on kaksi ja ne lähtevät vastakkaisiin suuntiin. Energian säilymisen mukaan hiukkasten lepoenergia $2m_\text{e}c^2$ jakautuu kahdelle yhtä suurelle fotonille.
-**Kaava:** $E = m_\text{e}c^2$ ja $\lambda = \dfrac{hc}{E}$
+**Kaava:** $$\begin{aligned} 2E &= 2m_\text{e}c^2 \\ E &= m_\text{e}c^2 \\ E &= hf \\ c &= f\lambda \\ \lambda &= \dfrac{c}{f} = \dfrac{hc}{E} \end{aligned}$$
 **Muunnokset:** $1\,\text{keV} = 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Sijoitus:** Ensin $c^2 = (2{,}998 \cdot 10^{8}\,\text{m/s})^2 = 8{,}988 \cdot 10^{16}\,\text{m}^2/\text{s}^2$. Sitten $$\begin{aligned} E &= m_\text{e}c^2 \\ &= 9{,}109 \cdot 10^{-31}\,\text{kg} \\ &\cdot 8{,}988 \cdot 10^{16}\,\text{m}^2/\text{s}^2 \\ &= 8{,}187 \cdot 10^{-14}\,\text{J} \end{aligned}$$, ja $E = \dfrac{8{,}187 \cdot 10^{-14}\,\text{J}}{1{,}602 \cdot 10^{-16}\,\text{J/keV}} \approx 511\,\text{keV}$. Aallonpituudelle: $$\begin{aligned} hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\ &\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\ &= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m} \end{aligned}$$. Sitten $\lambda = \dfrac{hc}{E} = \dfrac{1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}}{8{,}187 \cdot 10^{-14}\,\text{J}} \approx 2{,}43 \cdot 10^{-12}\,\text{m}$
 **Vastaus:** Syntyy kaksi vastakkaisiin suuntiin lähtevää fotonia. Kummankin energia on noin $511\,\text{keV}$ ja aallonpituus noin $2{,}4\,\text{pm}$.

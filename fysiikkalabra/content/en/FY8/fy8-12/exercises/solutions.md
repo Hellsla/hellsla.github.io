@@ -73,7 +73,14 @@
 
 **Principle:** A single photon can ionise a molecule only if its energy is at least the ionisation energy. The energy of a photon is $E = hf = \tfrac{hc}{\lambda}$, so the longer the wavelength, the smaller the energy. The longest ionising wavelength corresponds to a photon whose energy is exactly the ionisation energy.
 
-**Formula:** $E = \dfrac{hc}{\lambda}$, from which $\lambda = \dfrac{hc}{E}$
+**Formula:** derived from the basic equations:
+
+$$\begin{aligned}
+E &= hf \\
+f &= \dfrac{c}{\lambda} \\
+E &= \dfrac{hc}{\lambda} \\
+\lambda &= \dfrac{hc}{E}
+\end{aligned}$$
 
 **Conversions:** $12.6\,\text{eV} = 12.6 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 2.0185 \cdot 10^{-18}\,\text{J}$, and finally $1\,\text{m} = 10^{9}\,\text{nm}$.
 
@@ -112,7 +119,13 @@ $$.
 
 **Principle:** A GM counter counts all ionising events, so the reading measured near the source also includes background radiation. The contribution of the source, the net pulse count, is obtained by subtracting the pulses of the background, and the pulse rate is the pulse count divided by the measuring time.
 
-**Formula:** $R = \dfrac{N - N_\text{t}}{t}$
+**Formula:** $N_\text{net}$ is the net count:
+
+$$\begin{aligned}
+N_\text{net} &= N - N_\text{t} \\
+R &= \dfrac{N_\text{net}}{t} \\
+&= \dfrac{N - N_\text{t}}{t}
+\end{aligned}$$
 
 **Conversions:** $t = 3.00\,\text{min} = 3.00 \cdot 60\,\text{s} = 180\,\text{s}$
 
@@ -129,7 +142,13 @@ $$.
 
 **Principle:** Lead lets through the fraction $\left(\tfrac{1}{2}\right)^{d_\text{Pb}/d_{1/2,\text{Pb}}}$. The weakened radiation arrives at the concrete, and the concrete lets through its own fraction of it, so the fractions are multiplied. The exponents tell the number of half-value thicknesses of each barrier.
 
-**Formula:** $I_1 = I_0 \left(\tfrac{1}{2}\right)^{d_\text{Pb}/d_{1/2,\text{Pb}}}$ and $I_2 = I_1 \left(\tfrac{1}{2}\right)^{d_\text{b}/d_{1/2,\text{b}}}$, so $\dfrac{I_2}{I_0} = \left(\tfrac{1}{2}\right)^{d_\text{Pb}/d_{1/2,\text{Pb}} + d_\text{b}/d_{1/2,\text{b}}}$
+**Formula:** derived from the basic equations:
+
+$$\begin{aligned}
+&I_1 = I_0 \left(\tfrac{1}{2}\right)^{d_\text{Pb}/d_{1/2,\text{Pb}}} \\
+&I_2 = I_1 \left(\tfrac{1}{2}\right)^{d_\text{b}/d_{1/2,\text{b}}} \\
+&\dfrac{I_2}{I_0} = \left(\tfrac{1}{2}\right)^{\frac{d_\text{Pb}}{d_{1/2,\text{Pb}}} + \frac{d_\text{b}}{d_{1/2,\text{b}}}}
+\end{aligned}$$
 
 **Conversions:** $d_\text{b} = 20\,\text{cm} = 200\,\text{mm}$ and $d_{1/2,\text{b}} = 3.9\,\text{cm} = 39\,\text{mm}$; the ratio of each barrier is calculated in the same units. Finally $1 = 100\,\%$.
 
@@ -146,7 +165,14 @@ $$.
 
 **Principle:** Lead attenuates only the radiation of the source, not the background, so the net pulse counts $N_0 - N_\text{t}$ and $N - N_\text{t}$ are substituted into the attenuation law. They are proportional to the intensities. The half-value thickness is in the exponent, so it is solved with a logarithm.
 
-**Formula:** $N - N_\text{t} = (N_0 - N_\text{t}) \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$; logarithm of both sides: $\ln \tfrac{N_0 - N_\text{t}}{N - N_\text{t}} = \tfrac{d}{d_{1/2}} \ln 2$, from which $d_{1/2} = \dfrac{d \ln 2}{\ln \tfrac{N_0 - N_\text{t}}{N - N_\text{t}}}$
+**Formula:** derived from the basic equations:
+
+$$\begin{aligned}
+&N - N_\text{t} = (N_0 - N_\text{t}) \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
+&\dfrac{N_0 - N_\text{t}}{N - N_\text{t}} = 2^{d/d_{1/2}} \\
+&\ln \dfrac{N_0 - N_\text{t}}{N - N_\text{t}} = \dfrac{d}{d_{1/2}} \ln 2 \\
+&d_{1/2} = \dfrac{d \ln 2}{\ln \dfrac{N_0 - N_\text{t}}{N - N_\text{t}}}
+\end{aligned}$$
 
 **Conversions:** Not needed: the pulse counts are from periods of equal length, so their ratio is a pure number, and the thickness is in millimetres.
 
@@ -163,7 +189,14 @@ $$.
 
 **Principle:** Two barriers attenuate equally much when they let through the same fraction. The fraction that gets through is $\left(\tfrac{1}{2}\right)^{d/d_{1/2}}$, so the fractions are the same when both barriers contain the same number of half-value thicknesses.
 
-**Formula:** $\dfrac{d_\text{b}}{d_{1/2,\text{b}}} = \dfrac{d_\text{Pb}}{d_{1/2,\text{Pb}}}$, from which $d_\text{b} = \dfrac{d_\text{Pb}}{d_{1/2,\text{Pb}}} \cdot d_{1/2,\text{b}}$
+**Formula:** derived from the basic equations:
+
+$$\begin{aligned}
+&\left(\tfrac{1}{2}\right)^{d_\text{b}/d_{1/2,\text{b}}} \\
+&= \left(\tfrac{1}{2}\right)^{d_\text{Pb}/d_{1/2,\text{Pb}}} \\
+&\dfrac{d_\text{b}}{d_{1/2,\text{b}}} = \dfrac{d_\text{Pb}}{d_{1/2,\text{Pb}}} \\
+&d_\text{b} = \dfrac{d_\text{Pb}}{d_{1/2,\text{Pb}}} \cdot d_{1/2,\text{b}}
+\end{aligned}$$
 
 **Conversions:** Not needed: all thicknesses are in millimetres.
 
@@ -207,7 +240,20 @@ $$ and the beta particle about $1.0 \cdot 10^{6} : 34 : 360 \approx 82$ ion pair
 
 **Principle:** Lead attenuates only the radiation of the source, so the background is subtracted first: the net pulse rates are $2370$ and $600$ pulses per minute. They follow the attenuation law, so the measurements first give the half-value thickness and with it the required thickness. Both are solved with a logarithm.
 
-**Formula:** $R_1 - R_\text{t} = (R_0 - R_\text{t}) \left(\tfrac{1}{2}\right)^{d_1/d_{1/2}}$, from which $d_{1/2} = \dfrac{d_1 \ln 2}{\ln \tfrac{R_0 - R_\text{t}}{R_1 - R_\text{t}}}$; similarly $d = \dfrac{d_{1/2} \ln \tfrac{R_0 - R_\text{t}}{R_\text{t}}}{\ln 2}$
+**Formula:** derived from the basic equations:
+
+$$\begin{aligned}
+&R_1 - R_\text{t} = (R_0 - R_\text{t}) \left(\tfrac{1}{2}\right)^{d_1/d_{1/2}} \\
+&\ln \dfrac{R_0 - R_\text{t}}{R_1 - R_\text{t}} = \dfrac{d_1}{d_{1/2}} \ln 2 \\
+&d_{1/2} = \dfrac{d_1 \ln 2}{\ln \dfrac{R_0 - R_\text{t}}{R_1 - R_\text{t}}}
+\end{aligned}$$
+
+In the same way the required net count rate $30\,\text{min}^{-1}$ gives the thickness
+
+$$\begin{aligned}
+&\left(\tfrac{1}{2}\right)^{d/d_{1/2}} = \dfrac{R_\text{t}}{R_0 - R_\text{t}} \\
+&d = \dfrac{d_{1/2} \ln \dfrac{R_0 - R_\text{t}}{R_\text{t}}}{\ln 2}
+\end{aligned}$$
 
 **Conversions:** Not needed: all pulse rates are in pulses per minute and the thicknesses in millimetres.
 
@@ -250,7 +296,13 @@ An aluminium plate, a lead plate and a concrete wall are thicker, so they stop b
 
 **Principle:** A GM counter counts all ionising events, so the measured pulse rate also includes the background radiation. The share of the source is obtained by subtracting the pulse rate of the background from the total pulse rate.
 
-**Formula:** $R = \dfrac{N}{t} - R_\text{t}$
+**Formula:** $R_\text{tot}$ is the total count rate and $R$ the source's part:
+
+$$\begin{aligned}
+R_\text{tot} &= \dfrac{N}{t} \\
+R &= R_\text{tot} - R_\text{t} \\
+&= \dfrac{N}{t} - R_\text{t}
+\end{aligned}$$
 
 **Conversions:** $t = 45\,\text{s} = \dfrac{45}{60}\,\text{min} = 0.75\,\text{min}$, so that the pulse rates are in the same unit.
 
@@ -322,7 +374,14 @@ Reasonableness: the iron shield has only two and a half half-value thicknesses, 
 
 At the value $900$ the curve passes between the thicknesses $3\,\text{mm}$ ($1240$) and $6\,\text{mm}$ ($840$): linear interpolation gives $3\,\text{mm} + \dfrac{1240 - 900}{1240 - 840} \cdot 3\,\text{mm} = 5.6\,\text{mm}$. So the half-value thickness read from the graph is about $5.6\,\text{mm}$.
 
-**Formula:** $N - N_\text{t} = (N_0 - N_\text{t}) \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$, from which $d_{1/2} = \dfrac{d \cdot \ln 2}{\ln \tfrac{N_0 - N_\text{t}}{N - N_\text{t}}}$
+**Formula:** derived from the basic equations:
+
+$$\begin{aligned}
+&N - N_\text{t} = (N_0 - N_\text{t}) \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
+&\dfrac{N_0 - N_\text{t}}{N - N_\text{t}} = 2^{d/d_{1/2}} \\
+&\ln \dfrac{N_0 - N_\text{t}}{N - N_\text{t}} = \dfrac{d}{d_{1/2}} \ln 2 \\
+&d_{1/2} = \dfrac{d \ln 2}{\ln \dfrac{N_0 - N_\text{t}}{N - N_\text{t}}}
+\end{aligned}$$
 
 **Conversions:** Not needed: the pulse counts are from periods of equal length and the thicknesses are in millimetres.
 
@@ -410,7 +469,16 @@ The range of beta particles is short, so their pulse count would drop almost to 
 
 A steady halving is the attenuation of gamma radiation, and the curve is still clearly above zero at the thickness $30\,\text{mm}$, so it is not a matter of a range. So the radiation is gamma and not beta (part a).
 
-**Formula:** $N - N_\text{t} = (N_0 - N_\text{t}) \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$, from which $d_{1/2} = \dfrac{d \cdot \ln 2}{\ln \tfrac{N_0 - N_\text{t}}{N - N_\text{t}}}$; the thickness for a certain fraction $p$ is $d = d_{1/2} \cdot \dfrac{\ln (1 : p)}{\ln 2}$
+**Formula:** derived from the basic equations:
+
+$$\begin{aligned}
+&N - N_\text{t} = (N_0 - N_\text{t}) \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
+&\dfrac{N_0 - N_\text{t}}{N - N_\text{t}} = 2^{d/d_{1/2}} \\
+&\ln \dfrac{N_0 - N_\text{t}}{N - N_\text{t}} = \dfrac{d}{d_{1/2}} \ln 2 \\
+&d_{1/2} = \dfrac{d \ln 2}{\ln \dfrac{N_0 - N_\text{t}}{N - N_\text{t}}}
+\end{aligned}$$
+
+Thickness for a given fraction $p$: $\left(\tfrac{1}{2}\right)^{d/d_{1/2}} = p$, so $d = d_{1/2} \cdot \dfrac{\ln (1 : p)}{\ln 2}$
 
 **Conversions:** Not needed: the pulse counts are from periods of equal length and the thicknesses are in millimetres. The per cent is converted into a ratio: $1.0\,\% = 0.010$.
 
@@ -431,7 +499,14 @@ Justification of part d): with the thickest plate there are few pulses, so the r
 
 Activity is the number of decays per second, and by assumption each decay emits one photon, so the photons per second of the source are obtained by dividing the pulse rate by the fraction that reaches the tube.
 
-**Formula:** $R = \dfrac{N_\text{s,mean} - N_\text{t,mean}}{t}$, the fraction passing through the wall $T = \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$ and $R = A \cdot T \cdot \eta$, from which $A = \dfrac{R}{T \cdot \eta}$
+**Formula:** derived from the basic equations:
+
+$$\begin{aligned}
+R &= \dfrac{N_\text{s,mean} - N_\text{t,mean}}{t} \\
+T &= \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
+R &= A \cdot T \cdot \eta \\
+A &= \dfrac{R}{T \cdot \eta}
+\end{aligned}$$
 
 **Conversions:** $t = 60\,\text{s}$ and $1.5\,\% = 0.015$. Finally $1\,\text{kBq} = 1000\,\text{Bq}$ and $1\,\text{Bq} = 1\,\tfrac{1}{\text{s}}$.
 
@@ -512,7 +587,13 @@ The number of half-value thicknesses is $\dfrac{30\,\text{mm}}{12\,\text{mm}} = 
 
 **Reading the graph:** The start is $800\,\text{pulses/min}$. Half, $400\,\text{pulses/min}$, is reached at $d = 12\,\text{mm}$, so $d_{1/2} = 12\,\text{mm}$. The last point, $d = 48\,\text{mm}$, is at about $50\,\text{pulses/min}$, above the allowed $16\,\text{pulses/min}$.
 
-**Formula:** $\tfrac{R}{R_0} = \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$; take the logarithm of both sides: $\ln \tfrac{R_0}{R} = \tfrac{d}{d_{1/2}} \ln 2$, so $d = d_{1/2} \cdot \dfrac{\ln \tfrac{R_0}{R}}{\ln 2}$
+**Formula:** derived from the basic equations:
+
+$$\begin{aligned}
+&\dfrac{R}{R_0} = \left(\tfrac{1}{2}\right)^{d/d_{1/2}} \\
+&\ln \dfrac{R_0}{R} = \dfrac{d}{d_{1/2}} \ln 2 \\
+&d = d_{1/2} \cdot \dfrac{\ln \dfrac{R_0}{R}}{\ln 2}
+\end{aligned}$$
 
 **Conversions:** None needed: the thickness is already in millimetres and $\tfrac{R_0}{R} = 50$ is a pure number.
 
