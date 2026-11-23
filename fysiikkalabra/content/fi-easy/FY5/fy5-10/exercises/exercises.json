@@ -49,7 +49,7 @@
       "kind": [
         "concept"
       ],
-      "answer": "Jousen kohdat värähtelevät etenemissuunnan suuntaisesti, ja jouseen syntyy tihentymiä ja harventumia",
+      "answer": "Jousen kohdat värähtelevät etenemissuunnan suuntaisesti, ja jouseen syntyy tihentymiä ja harvennuksia",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
@@ -62,8 +62,8 @@
           "feedback": "Aalto ei kuljeta ainetta mukanaan. Jousen kohdat värähtelevät tasapainoasemansa ympärillä ja palaavat paikalleen. Eteenpäin siirtyy vain häiriö ja energia."
         },
         {
-          "text": "Jousen kohdat värähtelevät etenemissuunnan suuntaisesti, ja jouseen syntyy tihentymiä ja harventumia",
-          "feedback": "Oikein: pitkittäisessä aallossa aineen kohdat värähtelevät etenemissuunnan suuntaisesti. Jouseen syntyy tihentymiä, joissa kierteet ovat tiheässä, ja harventumia, joissa ne ovat harvassa. Ne etenevät jousessa. Ääni ilmassa on samanlainen aalto.",
+          "text": "Jousen kohdat värähtelevät etenemissuunnan suuntaisesti, ja jouseen syntyy tihentymiä ja harvennuksia",
+          "feedback": "Oikein: pitkittäisessä aallossa aineen kohdat värähtelevät etenemissuunnan suuntaisesti. Jouseen syntyy tihentymiä, joissa kierteet ovat tiheässä, ja harvennuksia, joissa ne ovat harvassa. Ne etenevät jousessa. Ääni ilmassa on samanlainen aalto.",
           "correct": true
         },
         {

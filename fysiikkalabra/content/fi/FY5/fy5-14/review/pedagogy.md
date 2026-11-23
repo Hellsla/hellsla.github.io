@@ -1,12 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: a4cede17b02123ad
+VERDICT: PASS
+CONTENT-HASH: 6867eb1e1e7bd0d1
 
 ## Blocking
-- fi/FY5/fy5-14/lesson.md:14 — "tiheät kohdat ovat tihentymiä ja harvat harvennuksia" still uses the retired term next to the new "harventuma" elsewhere in the chapter — change to "harventumia".
+- none. Round 1 block 1 is fixed: the spectrum question (peaks at 250, 500, 750 Hz) is not asked elsewhere and is not a repeat of the Selitystehtävä.
 
 ## Polish
-none
+- Block 2 (beats, 220 Hz and 224 Hz): correct and answerable from the formula just above, but it has the same form as the exit ticket (440 Hz and 437 Hz). Consider other numbers or accept the repeat.
+- Block 1 answer states the fundamental but only says that the pitch "is determined by" it; fine for a recall-level block, optional to add that the pitch is that of 50\,\text{Hz}$.
 
 ## Checked
-- Diff (harvennus to harventuma, harventumat) correct and consistent with the glossary.
-- No other harvennu* in fy5-14 fi text, inquiry or exercises; no numbers, symbols or figures changed.
+- 3 blocks (fi): spectrum after the sointi figure, beats after the huojunta figure, Doppler source after the doppler figure. Each follows the paragraph it tests and is answerable from it; placement sensible. Physics correct (fundamental = lowest peak; \text{H}=4\,\text{Hz}$, /bin/bash{,}25\,\text{s}$; wavefronts bunch in front). Nothing the later checks ask (hook, predictions, Selitystehtävä) is given away.
+- Language: 
+- Rendering (fi preview at 360 px, answers opened): label, question and answer readable, no overflow (scrollWidth 360), formulas intact; shared component, same in every language.
+
+## Vanhan sisällön löydökset
+- Figure aria-label "sointi": "äänirauralla" should be "ääniraudalla".

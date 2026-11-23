@@ -452,7 +452,7 @@
         {
           "text": "Se värähtelee edestakaisin äänen etenemissuunnan suuntaisesti.",
           "correct": true,
-          "feedback": "Oikein. Ääni ilmassa on pitkittäinen aalto. Kaiuttimen kalvo työntää ja vetää ilmaa. Molekyylit värähtelevät etenemissuunnassa, ja syntyy eteneviä tihentymiä ja harventumia. Molekyyli ei kulje kaiuttimesta kuulijalle."
+          "feedback": "Oikein. Ääni ilmassa on pitkittäinen aalto. Kaiuttimen kalvo työntää ja vetää ilmaa. Molekyylit värähtelevät etenemissuunnassa, ja syntyy eteneviä tihentymiä ja harvennuksia. Molekyyli ei kulje kaiuttimesta kuulijalle."
         },
         {
           "text": "Se värähtelee ylös ja alas kohtisuoraan äänen etenemissuuntaa vastaan.",
