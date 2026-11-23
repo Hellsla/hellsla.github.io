@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 3d69ecbee253c3bb
+CONTENT-HASH: 0fc0bfaf02d8e737
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy8-6 solutions.md — the Kaava steps that open with a sentence and then an aligned block are fully readable at 390 px, but several are long; no change needed.
 
 ## Checked
-- Delta round 1: solutions.md only cut into paragraphs (L1-06, L2-06, L2-07, L2-08 changed blocks).
-- Opened (shared capture folder, stamp current for this exercises hash): open-exercises-1280-6 (6-6, Mallivastaus now in two paragraphs), open-exercises-1280-4, open-exercises-L2-1280-6, -7, -11, -12 (6-13, 6-15 with the split Vastaus paragraphs, aligned chains, Järkevyys block, 6-16 table).
-- Paragraph breaks sit at idea boundaries, the answer chip and Vastaus text stay together, nothing clipped or overflowing; no word, number or formula changed. L2-06 and L2-08 splits were judged from the diff (not separately opened).
+- The packet was made for hash 2f5f896a98ba9818; the content has since been edited (L2-06 h_0 fix, then a Kaava edit with \approx and `+ b`, hash 9a9b923... then 0fc0bfaf02d8e737, the working-tree solutions.md). I reviewed the page as built from the 9a9b state and read the later diff (same presentation form, \dfrac and \approx inline/aligned).
+- Rendered all 25 Kaava blocks at 390 px (own capture, all solutions open): no clipping, scrollWidth 390, rows aligned at =, h_0 = 6,626 · 10^-34 J s correct.
+- If the coordinator edits solutions.md again, the hash goes stale and a delta is needed.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

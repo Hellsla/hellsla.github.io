@@ -1,14 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 95af307e85665247
+CONTENT-HASH: b0752e30d8691243
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Task 5-18: "n = 1–4" in the task text breaks across lines ("1-" / "4") at 390 px; keep it together as $n = 1$–$4$. Carried from the previous report.
+(none)
 
 ## Checked
-- Delta (solutions.md paragraphs only): opened fy8-5-open-exercises-L2-1280-11 and -12: task 5-17 solution and task 5-18 start, paragraphs cleanly separated (given, asked, principle, reading the graph, formula, substitution, answer, reasonableness), formulas and units intact, figures unclipped. Hash re-run at the end: unchanged.
+- delta, en (8g: the Kaava step of the model solutions as aligned blocks, one equation per row). The packet's 390 px captures did not exist for the exercise solutions, so I rebuilt preview/en/fy8-5.html and took my own 390 px captures (all details open) of the Formula blocks: the three to four tallest per set, opened and read.
+- Measured at 360 and 390 px with every solution open: no clipped or overflowing KaTeX in any solution step, no page-level horizontal overflow, no red KaTeX source.
+- Opened the two changed pictures (assets/pics/fy8-5-nodes.webp: three orbital shapes, nodes dashed; fy8-5-string.webp: three standing-wave modes, nodes marked): clean, uncluttered, no text, nothing clipped.
+- Equals signs align in one column, left sides right-aligned, fractions in display size, subscripts legible, prose and blocks interleave correctly; the changed rows sit in their cards.
+- Hash re-run at the end: unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

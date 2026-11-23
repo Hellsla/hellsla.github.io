@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 685e2a41e56bc41e
-
-Round 1 (delta): solutions.md, paragraph cuts only.
+CONTENT-HASH: a6daf3bf862bbc3a
 
 ## Blocking
-- None.
+(none)
 
 ## Polish
-- None.
+- [Minor] The Compton task's Formula step mixes inline fractions with prose (p = h/λ, p' = h/λ' ...) before the block; \tfrac would keep the line height even.
 
 ## Checked
-- Opened open-exercises-1280-1 (task 4-1, all solution blocks), open-exercises-L2-1280-5 (4-15 with data table and photon-flow solution) and open-exercises-L3-1280-4 (recoil solution). Principle paragraphs split cleanly, rows aligned, units upright, answer boxes and reasonableness blocks intact, no clipping.
+- delta, en (8g: the Kaava step of the model solutions as aligned blocks, one equation per row). The packet's 390 px captures did not exist for the exercise solutions, so I rebuilt preview/en/fy8-4.html and took my own 390 px captures (all details open) of the Formula blocks: the three to four tallest per set, opened and read.
+- Measured at 360 and 390 px with every solution open: no clipped or overflowing KaTeX in any solution step, no page-level horizontal overflow, no red KaTeX source.
+- Equals signs align in one column, left sides right-aligned, fractions in display size, subscripts legible, prose and blocks interleave correctly; the changed rows sit in their cards.
+- Hash re-run at the end: unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

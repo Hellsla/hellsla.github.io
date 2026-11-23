@@ -75,11 +75,11 @@ $$. Aallonpituus on yli $700\,\text{nm}$, joten valo on infrapunaa. Se sopii, ko
 **Annettu:** sovitetun suoran kulmakerroin $k = 4{,}10 \cdot 10^{-15}\,\text{V}\,\text{s}$, alkeisvaraus $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
 **Kysytty:** Planckin vakio $h$ yksikössä $\text{J}\,\text{s}$
 **Periaate:** Kynnysjännitteellä elektronin saama energia on likimain fotonin energia, $eU_\text{k} \approx hf$. Siksi kynnysjännite on taajuuden suhteen likimain suora $U_\text{k} \approx \tfrac{h}{e} f$, jonka kulmakerroin on mallissa noin $\tfrac{h}{e}$.
-**Kaava:** Kynnysjännitteellä $eU_\text{k} = hf$, ja suoran yhtälö on $U_\text{k} = kf$, joten $$
+**Kaava:** Kynnysjännitteellä $eU_\text{k} \approx hf$, ja suoran yhtälö on $U_\text{k} \approx kf + b$, joten $$
 \begin{aligned}
-U_\text{k} &= \frac{h}{e}\,f \\
-k &= \frac{U_\text{k}}{f} = \frac{h}{e} \\
-h &= ek
+U_\text{k} &\approx \dfrac{h}{e}\,f + b \\
+k &= \dfrac{\Delta U_\text{k}}{\Delta f} \approx \dfrac{h}{e} \\
+h &\approx ek
 \end{aligned}
 $$
 **Muunnokset:** Ei tarvita: $\text{C} \cdot \text{V}\,\text{s} = \text{J}\,\text{s}$, koska $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
@@ -419,7 +419,7 @@ Eroa ei myöskään voi verrata suoraan kulmakertoimen epävarmuuteen $\Delta k$
 **Kysytty:** Planckin vakio $h$ suoran kulmakertoimesta yksikössä $\text{J}\,\text{s}$, sekä korjauksen vaikutus suoraan ja yhden LEDin tulokseen
 **Periaate:** Kynnysjännitteellä $eU_\text{k} \approx hf$, joten $U_\text{k}$ on taajuuden suhteen likimain suora, jonka kulmakerroin on mallissa noin $\tfrac{h}{e}$. Mittarin nollapistevirhe lisää jokaiseen jännitteeseen saman vakion $0{,}05\,\text{V}$. Vakion lisääminen siirtää suoraa ylöspäin mutta ei muuta sen kulmakerrointa, joten virhe näkyy leikkauskohdassa.
 **Kuvaajan lukeminen:** Taajuudet ovat $4{,}759$, $5{,}081$, $5{,}260$, $5{,}710$ ja $6{,}447$ yksikössä $10^{14}\,\text{Hz}$. Sovitus kaikkiin viiteen mitattuun pisteeseen antaa kulmakertoimen $m = 4{,}208 \cdot 10^{-15}\,\text{V}\,\text{s}$ ja leikkauskohdan $b = -0{,}062\,\text{V}$. Korjattujen jännitteiden $U = U_\text{mitattu} - 0{,}05\,\text{V}$ sovitus antaa saman kulmakertoimen $4{,}208 \cdot 10^{-15}\,\text{V}\,\text{s}$ ja leikkauskohdan $-0{,}112\,\text{V}$.
-**Kaava:** Taajuus on $f = \dfrac{c}{\lambda}$ ja kynnysjännitteellä $eU_\text{k} = hf$, joten $U_\text{k} = \dfrac{h}{e}\,f$. Suoran kulmakerroin on $k = \dfrac{h}{e}$, joten $h = ek$. Yhden LEDin $eU_\text{k} = hf = \dfrac{hc}{\lambda}$, joten $h = \dfrac{eU_\text{k}\lambda}{c}$.
+**Kaava:** Taajuus on $f = \dfrac{c}{\lambda}$ ja kynnysjännitteellä $eU_\text{k} = hf$, joten $U_\text{k} \approx \dfrac{h}{e}\,f + b$. Suoran kulmakerroin on $k = \dfrac{\Delta U_\text{k}}{\Delta f} \approx \dfrac{h}{e}$, joten $h \approx ek$. Yhden LEDin $eU_\text{k} = hf = \dfrac{hc}{\lambda}$, joten $h = \dfrac{eU_\text{k}\lambda}{c}$.
 **Muunnokset:** $\lambda = 630 \cdot 10^{-9}\,\text{m}$ jne.; $\tfrac{\text{V}}{\text{Hz}} = \text{V}\,\text{s}$ ja $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$
 **Sijoitus:** $$
 \begin{aligned}
