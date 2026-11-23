@@ -157,7 +157,7 @@ Sähköverkon häviö $40\,\text{MWh}$ on suurempi kuin kaukolämpöverkon $27\,
 **Periaate:** Asiakkaille ratkaisee perille tuleva energia, ei verkkoon syötetty energia. Perille tuleva energia on hyötysuhde kertaa lähtevä energia, joten se lasketaan kummallekin verkolle erikseen ja verrataan.
 **Kaava:** $\eta = \dfrac{E_\text{perille}}{E_\text{lähtö}}$, josta $E_\text{perille} = \eta\, E_\text{lähtö}$, ja ero $\Delta E = E_\text{perille,A} - E_\text{perille,B} = \eta_\text{A} E_\text{lähtö,A} - \eta_\text{B} E_\text{lähtö,B}$
 **Muunnokset:** $\eta_\text{A} = 91{,}0 : 100 = 0{,}910$ ja $\eta_\text{B} = 85{,}0 : 100 = 0{,}850$. Energiat ovat samassa yksikössä.
-**Sijoitus:** $\Delta E = 0{,}910 \cdot 500\,\text{MWh} - 0{,}850 \cdot 520\,\text{MWh} = 455{,}0\,\text{MWh} - 442{,}0\,\text{MWh} = 13{,}0\,\text{MWh}$
+**Sijoitus:** $E_\text{perille,A} = 0{,}910 \cdot 500\,\text{MWh} = 455{,}0\,\text{MWh}$ ja $E_\text{perille,B} = 0{,}850 \cdot 520\,\text{MWh} = 442{,}0\,\text{MWh}$, joten $\Delta E = 455{,}0\,\text{MWh} - 442{,}0\,\text{MWh} = 13{,}0\,\text{MWh}$
 **Vastaus:** verkko A tuo asiakkaille $13{,}0\,\text{MWh}$ enemmän, kolme merkitsevää numeroa kuten hyötysuhteissa ja energioissa.
 **Järkevyys:** Verkko B syöttää $20\,\text{MWh}$ enemmän, mutta sen häviö $$
 \begin{aligned}

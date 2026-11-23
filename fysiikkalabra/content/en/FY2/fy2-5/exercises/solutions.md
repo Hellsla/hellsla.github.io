@@ -95,7 +95,7 @@
 **Principle:** The same energy $E$ must be released from both fuels. By the law $E = Hm$ the mass is the energy divided by the heat of combustion, so a smaller heat of combustion needs a larger mass.
 **Formula:** $E = Hm$, so $m = \dfrac{E}{H}$ for each fuel; $\Delta m = m_\text{wood} - m_\text{oil} = E\left(\dfrac{1}{H_\text{wood}} - \dfrac{1}{H_\text{oil}}\right)$
 **Conversions:** Not needed: the energy is in megajoules and the heats of combustion in megajoules per kilogram.
-**Substitution:** $\Delta m = E\left(\dfrac{1}{H_\text{wood}} - \dfrac{1}{H_\text{oil}}\right) = 120\,\text{MJ} \cdot \left(\dfrac{1}{15\,\tfrac{\text{MJ}}{\text{kg}}} - \dfrac{1}{40.6\,\tfrac{\text{MJ}}{\text{kg}}}\right) = 8.0\,\text{kg} - 2.96\,\text{kg} = 5.04\,\text{kg}$, where $m_\text{wood} = 8.0\,\text{kg}$ and $m_\text{oil} = 2.96\,\text{kg}$.
+**Substitution:** $\Delta m = E\left(\dfrac{1}{H_\text{wood}} - \dfrac{1}{H_\text{oil}}\right) = 8.0\,\text{kg} - 2.96\,\text{kg} = 5.04\,\text{kg}$, where $m_\text{wood} = \dfrac{120\,\text{MJ}}{15\,\tfrac{\text{MJ}}{\text{kg}}} = 8.0\,\text{kg}$ and $m_\text{oil} = \dfrac{120\,\text{MJ}}{40.6\,\tfrac{\text{MJ}}{\text{kg}}} = 2.96\,\text{kg}$.
 **Answer:** $5.0\,\text{kg}$ more wood is needed, two significant figures like the data $120\,\text{MJ}$ and $15\,\tfrac{\text{MJ}}{\text{kg}}$. More wood is needed because one kilogram of wood contains less chemical energy than one kilogram of oil.
 **Reasonableness:** The mass of wood is about $2.7$ times the mass of oil, since $40.6 : 15 = 2.71$. So $2.71 \cdot 2.96\,\text{kg} \approx 8.0\,\text{kg}$, and the difference is $2.71 - 1 = 1.71$ times the mass of oil: $1.71 \cdot 2.96\,\text{kg} \approx 5.0\,\text{kg}$, as it should be.
 
@@ -161,7 +161,7 @@ $$. The heat of combustion does not tell the temperature of the flame, and it do
 **Principle:** The same energy has to be released from both kinds of wood. By the law $E = Hm$, the mass is the energy divided by the heat of combustion. Moist wood gives less energy per kilogram, because part of its mass is water, which does not burn and whose evaporation consumes energy.
 **Formula:** $E = Hm$, so $m = \dfrac{E}{H}$; $\Delta m = m_{40} - m_{20} = E\left(\dfrac{1}{H_{40}} - \dfrac{1}{H_{20}}\right)$
 **Conversions:** Not needed: the energy is in megajoules and the heats of combustion in megajoules per kilogram.
-**Substitution:** $\Delta m = E\left(\dfrac{1}{H_{40}} - \dfrac{1}{H_{20}}\right) = 200\,\text{MJ} \cdot \left(\dfrac{1}{10.4\,\tfrac{\text{MJ}}{\text{kg}}} - \dfrac{1}{14.7\,\tfrac{\text{MJ}}{\text{kg}}}\right) = 19.23\,\text{kg} - 13.61\,\text{kg} = 5.62\,\text{kg}$, where $m_{20} = 13.61\,\text{kg}$ and $m_{40} = 19.23\,\text{kg}$.
+**Substitution:** $\Delta m = E\left(\dfrac{1}{H_{40}} - \dfrac{1}{H_{20}}\right) = 19.23\,\text{kg} - 13.61\,\text{kg} = 5.62\,\text{kg}$, where $m_{40} = \dfrac{200\,\text{MJ}}{10.4\,\tfrac{\text{MJ}}{\text{kg}}} = 19.23\,\text{kg}$ and $m_{20} = \dfrac{200\,\text{MJ}}{14.7\,\tfrac{\text{MJ}}{\text{kg}}} = 13.61\,\text{kg}$.
 **Answer:** $5.6\,\text{kg}$ more moist wood is needed, two significant figures like the data $200\,\text{MJ}$.
 **Reasonableness:** The ratio of the heats of combustion is $14.7 : 10.4 = 1.41$, so the mass of the moist wood is about $1.41$ times as large: $1.41 \cdot 13.61\,\text{kg} = 19.2\,\text{kg}$. Moist wood gives less energy per kilogram, so more mass is needed, and the difference is positive.
 

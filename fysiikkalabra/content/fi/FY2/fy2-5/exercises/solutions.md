@@ -95,7 +95,7 @@
 **Periaate:** Kummastakin polttoaineesta pitää vapautua sama energia $E$. Lain $E = Hm$ mukaan massa on energia jaettuna lämpöarvolla, joten pienemmällä lämpöarvolla tarvitaan suurempi massa.
 **Kaava:** $E = Hm$, josta $m = \dfrac{E}{H}$ kummallekin polttoaineelle; $\Delta m = m_\text{puu} - m_\text{öljy} = E\left(\dfrac{1}{H_\text{puu}} - \dfrac{1}{H_\text{öljy}}\right)$
 **Muunnokset:** Ei tarvita: energia on megajouleina ja lämpöarvot megajouleina kilogrammaa kohti.
-**Sijoitus:** $\Delta m = E\left(\dfrac{1}{H_\text{puu}} - \dfrac{1}{H_\text{öljy}}\right) = 120\,\text{MJ} \cdot \left(\dfrac{1}{15\,\tfrac{\text{MJ}}{\text{kg}}} - \dfrac{1}{40{,}6\,\tfrac{\text{MJ}}{\text{kg}}}\right) = 8{,}0\,\text{kg} - 2{,}96\,\text{kg} = 5{,}04\,\text{kg}$, missä $m_\text{puu} = 8{,}0\,\text{kg}$ ja $m_\text{öljy} = 2{,}96\,\text{kg}$.
+**Sijoitus:** $\Delta m = E\left(\dfrac{1}{H_\text{puu}} - \dfrac{1}{H_\text{öljy}}\right) = 8{,}0\,\text{kg} - 2{,}96\,\text{kg} = 5{,}04\,\text{kg}$, missä $m_\text{puu} = \dfrac{120\,\text{MJ}}{15\,\tfrac{\text{MJ}}{\text{kg}}} = 8{,}0\,\text{kg}$ ja $m_\text{öljy} = \dfrac{120\,\text{MJ}}{40{,}6\,\tfrac{\text{MJ}}{\text{kg}}} = 2{,}96\,\text{kg}$.
 **Vastaus:** Puuta tarvitaan $5{,}0\,\text{kg}$ enemmän, kaksi merkitsevää numeroa kuten tiedoissa $120\,\text{MJ}$ ja $15\,\tfrac{\text{MJ}}{\text{kg}}$. Puuta tarvitaan enemmän, koska yksi kilogramma puuta sisältää vähemmän kemiallista energiaa kuin kilogramma öljyä.
 **Järkevyys:** Puun massa on noin $2{,}7$-kertainen öljyn massaan verrattuna, sillä $40{,}6 : 15 = 2{,}71$. Siksi $2{,}71 \cdot 2{,}96\,\text{kg} \approx 8{,}0\,\text{kg}$, ja erotus on $2{,}71 - 1 = 1{,}71$ kertaa öljyn massa: $1{,}71 \cdot 2{,}96\,\text{kg} \approx 5{,}0\,\text{kg}$, kuten pitää.
 
@@ -161,7 +161,7 @@ $$. Lämpöarvo ei kerro liekin lämpötilaa, eikä se tarkoita, että energiaa 
 **Periaate:** Kummastakin puusta pitää vapautua sama energia. Lain $E = Hm$ mukaan massa on energia jaettuna lämpöarvolla. Kostea puu antaa kilogrammaa kohti vähemmän energiaa, koska osa sen massasta on vettä, joka ei pala ja jonka höyrystäminen kuluttaa energiaa.
 **Kaava:** $E = Hm$, josta $m = \dfrac{E}{H}$; $\Delta m = m_{40} - m_{20} = E\left(\dfrac{1}{H_{40}} - \dfrac{1}{H_{20}}\right)$
 **Muunnokset:** Ei tarvita: energia on megajouleina ja lämpöarvot megajouleina kilogrammaa kohti.
-**Sijoitus:** $\Delta m = E\left(\dfrac{1}{H_{40}} - \dfrac{1}{H_{20}}\right) = 200\,\text{MJ} \cdot \left(\dfrac{1}{10{,}4\,\tfrac{\text{MJ}}{\text{kg}}} - \dfrac{1}{14{,}7\,\tfrac{\text{MJ}}{\text{kg}}}\right) = 19{,}23\,\text{kg} - 13{,}61\,\text{kg} = 5{,}62\,\text{kg}$, missä $m_{20} = 13{,}61\,\text{kg}$ ja $m_{40} = 19{,}23\,\text{kg}$.
+**Sijoitus:** $\Delta m = E\left(\dfrac{1}{H_{40}} - \dfrac{1}{H_{20}}\right) = 19{,}23\,\text{kg} - 13{,}61\,\text{kg} = 5{,}62\,\text{kg}$, missä $m_{40} = \dfrac{200\,\text{MJ}}{10{,}4\,\tfrac{\text{MJ}}{\text{kg}}} = 19{,}23\,\text{kg}$ ja $m_{20} = \dfrac{200\,\text{MJ}}{14{,}7\,\tfrac{\text{MJ}}{\text{kg}}} = 13{,}61\,\text{kg}$.
 **Vastaus:** Kosteaa puuta tarvitaan $5{,}6\,\text{kg}$ enemmän, kaksi merkitsevää numeroa kuten tiedoissa $200\,\text{MJ}$.
 **Järkevyys:** Lämpöarvojen suhde on $14{,}7 : 10{,}4 = 1{,}41$, joten kostean puun massa on noin $1{,}41$-kertainen: $1{,}41 \cdot 13{,}61\,\text{kg} = 19{,}2\,\text{kg}$. Kostea puu antaa vähemmän energiaa kilogrammaa kohti, joten massaa tarvitaan enemmän, ja erotus on positiivinen.
 

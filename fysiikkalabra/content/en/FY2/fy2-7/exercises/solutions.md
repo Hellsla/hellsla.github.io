@@ -164,7 +164,7 @@ The lost energy is transferred as heat to the surroundings: in the electricity g
 **Principle:** For customers, what matters is the energy that arrives, not the energy fed into the network. The arrived energy is the efficiency times the sent energy, so it is calculated for each network separately and compared.
 **Formula:** $\eta = \dfrac{E_\text{arrived}}{E_\text{sent}}$, so $E_\text{arrived} = \eta\, E_\text{sent}$, and difference $\Delta E = E_\text{arrived,A} - E_\text{arrived,B} = \eta_\text{A} E_\text{sent,A} - \eta_\text{B} E_\text{sent,B}$
 **Conversions:** $\eta_\text{A} = 91.0 : 100 = 0.910$ and $\eta_\text{B} = 85.0 : 100 = 0.850$. The energies are in the same unit.
-**Substitution:** $\Delta E = 0.910 \cdot 500\,\text{MWh} - 0.850 \cdot 520\,\text{MWh} = 455.0\,\text{MWh} - 442.0\,\text{MWh} = 13.0\,\text{MWh}$
+**Substitution:** $E_\text{perille,A} = 0{.}910 \cdot 500\,\text{MWh} = 455{.}0\,\text{MWh}$ and $E_\text{perille,B} = 0{.}850 \cdot 520\,\text{MWh} = 442{.}0\,\text{MWh}$, so $\Delta E = 455{.}0\,\text{MWh} - 442{.}0\,\text{MWh} = 13{.}0\,\text{MWh}$
 **Answer:** network A brings customers $13.0\,\text{MWh}$ more, three significant figures as in the efficiencies and energies.
 **Reasonableness:** Network B feeds in $20\,\text{MWh}$ more, but its loss $$
 \begin{aligned}
