@@ -3,71 +3,7 @@
 > **Why** can a small glass tube, a lamp and a voltmeter tell us something about the whole universe of quantum physics?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a dim university teaching laboratory. On a long bench stand three experiments. On the left, a small black box with a vacuum tube and a row of coloured LEDs, red, yellow, green, blue and violet, connected to a meter. In the middle, a round glass bulb stands between two large copper coils, and a thin glowing beam inside the bulb bends into a closed circle. On the right, a glowing gas tube shines through a grating, and four coloured lines appear on a small white screen. Two students without faces stand behind the bench, one looking at the coils and one writing on a clipboard." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy14fo-h-room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3a46"/><stop offset="1" stop-color="#1f2933"/></linearGradient><linearGradient id="fy14fo-h-bench" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#a97a35"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#fy14fo-h-room)"/>
-  <line x1="0" y1="140" x2="1200" y2="140" stroke="#3a4754" stroke-width="3" stroke-linecap="butt"/>
-  <path d="M435,720 L443,517.5 H497 L505,720 H478 L470,585 L462,720 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M424,531 Q418.5,382.5 470,374.5 Q521.5,382.5 516,531 Z" fill="#e8590c" stroke-linejoin="round"/>
-  <path d="M429.5,401.5 L416,531" fill="none" stroke="#e8590c" stroke-width="29.7" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="416" cy="542" r="14.85" fill="#f1dfb5"/>
-  <path d="M510.5,401.5 L524,531" fill="none" stroke="#e8590c" stroke-width="29.7" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="524" cy="542" r="14.85" fill="#f1dfb5"/>
-  <rect x="458" y="347.5" width="24.5" height="32.5" fill="#f1dfb5"/>
-  <circle cx="470" cy="320.5" r="40.5" fill="#f1dfb5"/>
-  <path d="M428,320.5 Q429.5,272 470,274.5 Q513,274.5 512,315 Q478,299 428,320.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M825,720 L833,517.5 H887 L895,720 H868 L860,585 L852,720 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <path d="M814,531 Q808.5,382.5 860,374.5 Q911.5,382.5 906,531 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <path d="M819.5,401.5 L806,531" fill="none" stroke="#1971c2" stroke-width="29.7" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="806" cy="542" r="14.85" fill="#f1dfb5"/>
-  <path d="M900.5,401.5 L914,531" fill="none" stroke="#1971c2" stroke-width="29.7" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="914" cy="542" r="14.85" fill="#f1dfb5"/>
-  <rect x="848" y="347.5" width="24.5" height="32.5" fill="#f1dfb5"/>
-  <circle cx="860" cy="320.5" r="40.5" fill="#f1dfb5"/>
-  <path d="M818,320.5 Q819.5,272 860,274.5 Q903,274.5 902,315 Q868,299 818,320.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <rect x="790" y="330" width="76" height="96" rx="4" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <line x1="802" y1="352" x2="854" y2="352" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="802" y1="370" x2="854" y2="370" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="802" y1="388" x2="854" y2="388" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <line x1="802" y1="406" x2="854" y2="406" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="0" y="430" width="1200" height="170" fill="url(#fy14fo-h-bench)"/>
-  <line x1="0" y1="430" x2="1200" y2="430" stroke="#e9c98a" stroke-width="4" stroke-linecap="butt"/>
-  <rect x="70" y="330" width="230" height="100" rx="8" fill="#343a40" stroke="#1f2933" stroke-width="3"/>
-  <rect x="120" y="250" width="110" height="80" rx="40" fill="#eef5f9" fill-opacity="0.3" stroke="#eef5f9" stroke-width="3"/>
-  <rect x="140" y="272" width="16" height="46" rx="2" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <rect x="196" y="272" width="8" height="46" fill="#8a96a3"/>
-  <circle cx="96" cy="402" r="20" fill="#c92a2a" fill-opacity="0.25"/>
-  <circle cx="96" cy="402" r="10" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="136" cy="402" r="20" fill="#fab005" fill-opacity="0.25"/>
-  <circle cx="136" cy="402" r="10" fill="#fab005" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="176" cy="402" r="20" fill="#2b8a3e" fill-opacity="0.25"/>
-  <circle cx="176" cy="402" r="10" fill="#2b8a3e" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="216" cy="402" r="20" fill="#1971c2" fill-opacity="0.25"/>
-  <circle cx="216" cy="402" r="10" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="256" cy="402" r="20" fill="#7048e8" fill-opacity="0.25"/>
-  <circle cx="256" cy="402" r="10" fill="#7048e8" stroke="#ffffff" stroke-width="2"/>
-  <rect x="320" y="350" width="90" height="80" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <rect x="332" y="362" width="66" height="34" rx="3" fill="#e6fcf5" stroke="#1f2933" stroke-width="2"/>
-  <line x1="345" y1="388" x2="380" y2="368" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <circle cx="365" cy="412" r="6" fill="#1f2933"/>
-  <circle cx="640" cy="300" r="118" fill="none" stroke="#b8622d" stroke-width="22"/>
-  <circle cx="640" cy="300" r="118" fill="none" stroke="#e8a272" stroke-width="4" stroke-opacity="0.7"/>
-  <circle cx="640" cy="300" r="88" fill="#eef5f9" fill-opacity="0.18" stroke="#eef5f9" stroke-width="3"/>
-  <circle cx="640" cy="312" r="46" fill="none" stroke="#3bc9db" stroke-width="12" stroke-opacity="0.25"/>
-  <circle cx="640" cy="312" r="46" fill="none" stroke="#3bc9db" stroke-width="4"/>
-  <rect x="632" y="358" width="16" height="22" fill="#8a96a3"/>
-  <rect x="570" y="418" width="140" height="14" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="630" y="410" width="20" height="12" fill="#6c757d"/>
-  <rect x="930" y="220" width="22" height="200" rx="11" fill="#cc5de8" fill-opacity="0.85"/>
-  <rect x="922" y="212" width="38" height="216" rx="19" fill="#cc5de8" fill-opacity="0.18"/>
-  <rect x="920" y="410" width="42" height="22" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <path d="M960,300 L1040,268 L1040,332 Z" fill="#e5dbff" stroke-linejoin="round" fill-opacity="0.35"/>
-  <rect x="1036" y="262" width="10" height="76" rx="2" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="1080" y="230" width="90" height="140" rx="4" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <rect x="1096" y="244" width="5" height="112" fill="#7048e8"/>
-  <rect x="1104" y="244" width="5" height="112" fill="#4263eb"/>
-  <rect x="1126" y="244" width="5" height="112" fill="#15aabf"/>
-  <rect x="1156" y="244" width="5" height="112" fill="#c92a2a"/>
-  <rect x="1118" y="370" width="14" height="62" fill="#8a96a3"/>
+  <image href="pics/fy14/fy14-fotoni-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 ## Before the visit: the physics of each station {Stations}
@@ -85,33 +21,11 @@ LEDs of different colours shine on the metal plate of a vacuum tube (a **photoce
 A heated cathode emits electrons, and an **accelerating voltage** $U$ of about $100\text{–}300\ \text{V}$ speeds them up. The tube contains a little helium, so the beam glows. Two coils make a nearly uniform magnetic field $\overline{B}$, and the beam bends into a circle of radius $r$, as in the unit *Charged particles and magnetic confinement*.
 
 <svg data-fig="em" viewBox="0 0 600 543" role="img" aria-label="Sketch, not to scale: the glass bulb of the e/m tube seen along the axis of the two coils. The magnetic field points out of the page, shown by green circles with a dot and labelled B. An electron leaves the electron gun at the bottom moving to the right and travels on a circle of radius r. At one point of the circle a blue arrow shows its velocity v along the circle and a red arrow shows the magnetic force F, which points to the centre of the circle." style="max-width:100%;font-size:24px">
-  <circle cx="300" cy="278.5" r="245.5" fill="#eef5f9" fill-opacity="0.5" stroke="#8a96a3" stroke-width="3"/>
-  <circle cx="131.5" cy="154.5" r="15" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
-  <circle cx="131.5" cy="154.5" r="5" fill="#2b8a3e"/>
-  <circle cx="414.5" cy="88.5" r="15" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
-  <circle cx="414.5" cy="88.5" r="5" fill="#2b8a3e"/>
-  <circle cx="114.5" cy="328.5" r="15" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
-  <circle cx="114.5" cy="328.5" r="5" fill="#2b8a3e"/>
-  <circle cx="214.5" cy="71.5" r="15" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
-  <circle cx="214.5" cy="71.5" r="5" fill="#2b8a3e"/>
-  <circle cx="471.5" cy="414.5" r="15" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
-  <circle cx="471.5" cy="414.5" r="5" fill="#2b8a3e"/>
-  <circle cx="143" cy="445.5" r="15" fill="#ffffff" stroke="#2b8a3e" stroke-width="3"/>
-  <circle cx="143" cy="445.5" r="5" fill="#2b8a3e"/>
+  <image href="pics/fy14/fy14-fotoni-em.webp" x="0" y="0" width="600" height="546.2" preserveAspectRatio="none"/>
   <foreignObject x="355.5" y="74" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
-  <circle cx="300" cy="264.5" r="140" fill="none" stroke="#3bc9db" stroke-width="12" stroke-opacity="0.3"/>
-  <circle cx="300" cy="264.5" r="140" fill="none" stroke="#3bc9db" stroke-width="4"/>
-  <rect x="237" y="391.5" width="57" height="25.5" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
   <foreignObject x="243" y="432" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{gun}$</div></foreignObject>
-  <circle cx="300" cy="264.5" r="5" fill="#1f2933"/>
-  <line x1="300" y1="264.5" x2="160" y2="264.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7 5"/>
   <foreignObject x="220" y="228" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$r$</div></foreignObject>
-  <circle cx="440" cy="264.5" r="8" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <line x1="440" y1="264.5" x2="440" y2="165" stroke="#1971c2" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M440,150 L447,166 L433,166 Z" fill="#1971c2" stroke-linejoin="round"/>
   <foreignObject x="454" y="155.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <line x1="440" y1="264.5" x2="360.5" y2="264.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M345.5,264.5 L361.5,257 L361.5,271.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="372" y="280" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
 </svg>
 
