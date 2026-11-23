@@ -154,17 +154,17 @@ tilanyhtälö vakioainemäärälle :: \frac{pV}{T} = \text{vakio}
 
 eli kahdessa tilassa $\tfrac{p_1 V_1}{T_1} = \tfrac{p_2 V_2}{T_2}$. Siitä saadaan erikoistapaukset: vakiolämpötilassa Boylen laki $p_1V_1 = p_2V_2$, vakiopaineessa $V \propto T$ ja vakiotilavuudessa $p \propto T$. Kelvinlämpötila on
 
-```pysahdy
-Miksi suoran jatkaminen nollapaineeseen on vain kaasumallin ennuste?
----
-Todellinen kaasu tiivistyy nesteeksi ennen kuin lämpötila ehtii sinne, joten suoran jatkaminen nollaan on kaasumallin ennuste.
-```
-
 ```latex
 T = \theta + 273{,}15\,\text{K}
 ```
 
 missä $\theta$ on celsiuslämpötilan lukuarvo. Absoluuttinen nollapiste saadaan kokeessa jatkamalla $(\theta, p)$- tai $(\theta, V)$-suoraa nollaan. Se on mallin ennuste: todellinen kaasu tiivistyy nesteeksi ennen sitä.
+
+```pysahdy
+Miksi suoran jatkaminen nollapaineeseen on vain kaasumallin ennuste?
+---
+Todellinen kaasu tiivistyy nesteeksi ennen kuin lämpötila ehtii sinne, joten suoran jatkaminen nollaan on kaasumallin ennuste.
+```
 
 ### Kaasun työ ja lämpövoimakone
 

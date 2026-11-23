@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 261376c3ea53b297
-SCOPE: delta: new tasks s7 (Alfahiukkanen levyjen välissä) and s8 (Vihreä merkkivalo) and the changed intro; older tasks untouched
+CONTENT-HASH: 1cc3d386f9a407a0
 
 ## Blocking
-- (none)
+- None.
 
 ## Polish
-- s8 d: the prompt asks what the results tell about the LED and Ohm's law, but the fourth criterion (communication, 1 p) rewards explaining why an LED cannot be connected straight to a source and what the series resistor does. A student who answers exactly what is asked loses the point. Add "ja miksi LEDin kanssa tarvitaan etuvastus" to the prompt, or fold the point into the concept criterion.
-- s7 b: the concept criterion requires "Painovoima on mitätön" unprompted; the solution justifies it only in Järkevyys. Make it "Hyväksytään myös" or leave it out of the scored text.
-- s7 c: the "Hyväksytään myös" route ($v^2 = 2as$) skips the energy concept point the rubric gives; say how that route is scored.
-- s8 figure: nothing marked, so the 2,2 V plateau must be found by the student; good. An alt-text sentence naming the axes ($I$ in mA, $U_\text{D}$ in V) as the task text does would help a reader who cannot see the plot (shared with fy6-14 ex-led).
+- Pysähdy ja mieti, 3 laatikkoa. Jokainen on vastattavissa juuri luetusta kappaleesta ja heti sen jälkeen: (1) elektronin voiman suunta heti Ydinajatuksen säännön jälkeen, (2) 2 mm:n kipinän jännite heti 3 MV/m -> 9 kV -esimerkin jälkeen (kaava U = Ed ei ole vielä näkyvissä, mutta esimerkki riittää, joten tehtävä on päätelmä eikä muistamista), (3) levyvälin kaksinkertaistuminen heti C-kaavan jälkeen. Vastaukset ovat lyhyitä ja avautuvat napauttamalla, joten puhelimella ne eivät kasvata sivua. Kohdan 1 vastaus on melkein sana sanalta kappaleessa. Pyydä mieluummin vaihtoehtoa "entä protoni?" tai "kenttä osoittaa alas, mihin elektroni lähtee?", jotta ajatteleminen ei ole pelkkää kopiointia.
+- Kolmas laatikko on kappaleen perässä, jonka viimeinen virke käsittelee jännitettä ja varausta (lähde vs. irrotettu). Siirrä laatikko heti kaavarivin ja "missä"-selitteen jälkeen tai lisää sen perään toinen laatikko irrotetusta kondensaattorista: se on lähtötason kysymys 4 ja Yleisiä virheitä -listan kohta.
+- Osiot Potentiaali ja energia sekä Komponentit ja turvallisuus eivät saa laatikkoa, vaikka niissä on harhaluuloja (energia QU vs. 1/2 QU; etuvastus ilman LEDin jännitettä). Yksi lisälaatikko kumpaankin olisi hyödyllinen.
+- teacher.md on osin vanhentunut: Arviointi-kohta puhuu viidestä Osa II -tehtävästä ja 95 pisteestä, mutta Sovella-sarjassa on kahdeksan tehtävää (s3 20 p, muut 15 p, yhteensä 125 p), ja tuntisuunnitelma nimeää vain neljä pitkää tehtävää (Kaksi varattua palloa, Lintu ja Vihreä merkkivalo puuttuvat). Päivitä luvut.
 
 ## Checked
-- Read the fi packet's s7 and s8 tasks, solutions and the answers.py lines, and the changed intro (eight tasks, matches the set).
-- Demand: both are unfamiliar, authentic set-ups with a graph the student must read, four parts of rising demand (read, apply, combine, interpret). Neither text or heading names the model: s7 does not say "energy principle" or "slope"; s8 does not say Kirchhoff or divider. s7 d (zero level) and s8 d (LED is not ohmic) are real conceptual checks, not recall.
-- Rubric: points per criterion sum to part points (s7 4/4/4/3, s8 4/4/3/4); no points for irrelevant things apart from the s8 d note above.
-- Numbers recomputed by hand: E 5,0 kV/m, a 2,41·10^11, v 98,2 km/s, V -50 V; I 17,27 mA, P 65,6 mW, share 63 %, R_min 126,7 Ω, R 440/110 Ω. Results rounded to two significant figures like the data; calculation chains are aligned rows; units are plain.
-- Solutions: stepwise, principle named with the chapter, Järkevyys checks (work check, power sum); common mistakes are real (2e vs e, 250/5 without conversion, 6,0/220).
-- Task names and figure names agree ($V$, $x$, $U_\text{D}$, $I$). Workload fits an exam-style set. practice.py check OK. Layout: shots.md 390 px captures exist for the current hash; hash unchanged at the end.
+- Kolme pysahdy-laatikkoa: vastattavuus, sijainti, puhelinkäyttö (ks. Polish).
+- Tehtäväsarja s1-s8: tilanteet ovat vieraita ja uskottavia, otsikot eivät nimeä mallia, osat nousevat vaativammiksi (s1 voimakuvio, tasapaino, Coulomb, varausten jako, vertailu; s3 kuvaaja, linearisointi, epävarmuus; s5 raportin arviointi ja koesuunnittelu; s4 turvallisuus; s6-s8 energia, kuvaaja, ominaiskäyrä). Vaihtelu hyvä: laskenta, kuvaaja, kokeellinen päättely, väitteen arviointi. Ratkaisut seuraavat Annettu-Kysytty-Periaate-Kaava-Sijoitus-Vastaus-Järkevyys -rakennetta, voimakuvio ennen yhtälöä s1:ssä; Yleisiä virheitä ovat uskottavia (puolikas etäisyys sinissä, varauksen jako). Työmäärä: 125 p, kotitehtäviksi sopiva, ei yhden tunnin.
+- inquiry.json: lähtötaso 1-6 vastaa FY6-lukuja ja teacher.md:n kysymysmerkintöjä; Sovella-monivalinnoissa vastaehdot perustuvat harhaluuloihin.
+- Deterministiset tarkistukset: practice.py check OK. En avannut selainta enkä kuvia, koska muutos koskee vain tekstilaatikoita.
