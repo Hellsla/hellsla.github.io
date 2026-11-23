@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e84a1291e0c3cbdd
+CONTENT-HASH: e76de909aec34e7f
 
 ## Blocking
 - none
@@ -8,8 +8,8 @@ CONTENT-HASH: e84a1291e0c3cbdd
 - none
 
 ## Checked
-- delta 8g (Kaava steps as aligned display blocks), economical sample from the lesson's review/shots (current for this hash): fi fy1-5 open-exercises-L3-1280-4 (seven rows), fi fy1-6 L3-1280-7 (five rows with a subscripted left side), en fy1-1 L3-1280-4 and fy1-3 L3-1280-3 (Substitution blocks), fi-easy fy1-7 L3-1280-5 (five single-relation rows).
-- Rows align at the relation sign, fractions and subscripts legible, no clipping or overflow, blocks sit apart from the text, trailing sentences read as their own line; Muunnokset/Sijoitus/Vastaus/Reasonableness survived. This lesson's own capture was not opened; judged from the sampled blocks, which use the same shared component. No figures in the delta.
+- Round 2 delta (sign fix `r = -ΔT/Δt` in two Kaava blocks). Opened the fi-easy fy1-8-open-exercises-L3-1280-7 (six-row Kaava with the fix); the first block uses the same structure and was not opened separately.
+- Rows align at the relation sign, the minus reads clearly before the fraction, nothing clipped; Muunnokset and Sijoitus intact.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 5

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2bec31ef376ba1fb
+CONTENT-HASH: a9ca591a0e693d7d
 
 ## Blocking
 - none
@@ -8,8 +8,6 @@ CONTENT-HASH: 2bec31ef376ba1fb
 - none
 
 ## Checked
-- Delta: every "Kaava"/"Formula" step in solutions.md now starts from a basic definition or equation and reaches the working form; order is a derivation a student can follow.
-- Physics and symbols agree with the Principle, Substitution and Answer steps; no answer disclosed beyond the model solution.
-- Added "Tässä/Here ..." definitions and merged-paragraph model answers are brief, correct and readable.
-- Aligned-equation blocks read as staged derivations; the packet diff shows them without line breaks, but the files on disk contain proper breaks (checked).
-- No exercise, figure or task text changed (no exercise wording changed); levels, context and wording unaffected.
+- Delta: the sign fix r = -ΔT/Δt in the cooling-rate steps (two places) judged in context: with ΔT = T_end - T_start negative, the next line (T_start - T_end)/(t_end - t_start) follows exactly and r is positive.
+- Matches the Sijoitus values (2,4 / 1,0 K/min; 2,0 K/min) and the rest of the solution; no answer disclosed, no step skipped.
+- No exercise, figure or feedback text changed; earlier PASS stands for the rest.

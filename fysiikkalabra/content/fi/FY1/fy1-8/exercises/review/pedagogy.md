@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0134f21ed9127ea2
+CONTENT-HASH: c768525a69b2d6df
 
 ## Blocking
 - none
@@ -8,7 +8,6 @@ CONTENT-HASH: 0134f21ed9127ea2
 - none
 
 ## Checked
-- Delta (Kaava steps in solutions.md rewritten from basic equations) judged in context on disk: every Kaava line now starts from a basic definition or equation and reaches the working form.
-- Physics and notation consistent with the Periaate, Sovellus and Sijoitus steps; no answer disclosed beyond the model solution.
-- Diagram of aligned equations reads as a staged derivation; added "Tässä ..." definitions are brief and in Finnish.
-- No exercise, figure or feedback wording changed beyond spacing in numeric feedback.
+- Delta: the sign fix r = -ΔT/Δt in the cooling-rate steps (two places) judged in context: with ΔT = T_end - T_start negative, the next line (T_start - T_end)/(t_end - t_start) follows exactly and r is positive.
+- Matches the Sijoitus values (2,4 / 1,0 K/min; 2,0 K/min) and the rest of the solution; no answer disclosed, no step skipped.
+- No exercise, figure or feedback text changed; earlier PASS stands for the rest.
