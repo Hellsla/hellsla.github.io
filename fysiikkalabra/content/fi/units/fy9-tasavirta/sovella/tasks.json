@@ -840,7 +840,7 @@
     {
      "id": "a",
      "kind": "calc",
-     "points": 4,
+     "points": 3,
      "text": "Määritä lampun resistanssi, kun lampun jännite on $2{,}0\\,\\text{V}$.",
      "answer": {
       "value": 9.5,
@@ -862,11 +862,6 @@
        "key": "calculation",
        "points": 1,
        "detail": "$R = \\dfrac{2{,}0\\,\\text{V}}{0{,}21\\,\\text{A}} = 9{,}5\\,\\Omega$"
-      },
-      {
-       "key": "units_precision",
-       "points": 1,
-       "detail": "$R \\approx 9{,}5\\,\\Omega$ kahdella merkitsevällä numerolla, kuten kuvaajasta luetut arvot."
       }
      ]
     },
@@ -983,7 +978,7 @@
     {
      "id": "a",
      "kind": "calc",
-     "points": 5,
+     "points": 4,
      "text": "Kuinka suuri virta kulkee paristosta?",
      "answer": {
       "value": 0.3,
@@ -1007,11 +1002,6 @@
        "detail": "$R_\\text{p} = 20\\,\\Omega$, $R = 40\\,\\Omega$ ja $I = \\dfrac{12\\,\\text{V}}{40\\,\\Omega} = 0{,}30\\,\\text{A}$"
       },
       {
-       "key": "units_precision",
-       "points": 1,
-       "detail": "$I = 0{,}30\\,\\text{A}$ kahdella merkitsevällä numerolla."
-      },
-      {
        "key": "reasonableness",
        "points": 1,
        "detail": "Virta on pienempi kuin pelkästä $20\\,\\Omega$:n vastuksesta ($0{,}60\\,\\text{A}$) ja suurempi kuin jos kaikki vastukset olisivat sarjassa ($\\approx 0{,}11\\,\\text{A}$)."
@@ -1021,7 +1011,7 @@
     {
      "id": "b",
      "kind": "calc",
-     "points": 5,
+     "points": 4,
      "text": "Kuinka suuri virta kulkee $60\\,\\Omega$:n vastuksessa ja kuinka suuri $30\\,\\Omega$:n vastuksessa?",
      "answer": [
       {
@@ -1049,11 +1039,6 @@
        "detail": "$$\n\\begin{aligned}\nU_\\text{p} &= 12\\,\\text{V} \\\\\n&\\quad - 0{,}30\\,\\text{A} \\cdot 20\\,\\Omega \\\\\n&= 6{,}0\\,\\text{V}\n\\end{aligned}\n$$, $I_{60} = \\dfrac{6{,}0\\,\\text{V}}{60\\,\\Omega} = 0{,}10\\,\\text{A}$ ja $I_{30} = \\dfrac{6{,}0\\,\\text{V}}{30\\,\\Omega} = 0{,}20\\,\\text{A}$"
       },
       {
-       "key": "units_precision",
-       "points": 1,
-       "detail": "$I_{60} = 0{,}10\\,\\text{A}$ ja $I_{30} = 0{,}20\\,\\text{A}$ yksiköineen."
-      },
-      {
        "key": "reasonableness",
        "points": 1,
        "detail": "Virrat ovat yhdessä pariston virta: $0{,}10\\,\\text{A} + 0{,}20\\,\\text{A} = 0{,}30\\,\\text{A}$, ja pienempi resistanssi vie suuremman virran."
@@ -1063,7 +1048,7 @@
     {
      "id": "c",
      "kind": "calc",
-     "points": 4,
+     "points": 3,
      "text": "Laske $20\\,\\Omega$:n vastuksen teho ja koko kytkennän teho.",
      "answer": [
       {
@@ -1089,11 +1074,6 @@
        "key": "calculation",
        "points": 1,
        "detail": "$P_{20} = 20\\,\\Omega \\cdot (0{,}30\\,\\text{A})^2 = 1{,}8\\,\\text{W}$ ja $P = 12\\,\\text{V} \\cdot 0{,}30\\,\\text{A} = 3{,}6\\,\\text{W}$"
-      },
-      {
-       "key": "units_precision",
-       "points": 1,
-       "detail": "$P_{20} = 1{,}8\\,\\text{W}$ ja $P = 3{,}6\\,\\text{W}$ yksiköineen."
       },
       {
        "key": "reasonableness",
