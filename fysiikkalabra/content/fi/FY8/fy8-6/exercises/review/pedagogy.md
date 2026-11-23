@@ -1,6 +1,6 @@
 VERDICT: FAIL
 CONTENT-HASH: 2f5f896a98ba9818
-SCOPE: delta (work queue 8g: Kaava step and split model answers)
+SCOPE: delta added-exercise from ac413b952791b551 base 5b3ca4f81c77
 
 ## Blocking
 - solutions.md:329 (fy8-6 Planck-constant error task, Kaava) — the accepted value is written `h_0 = 6{,}626\,\text{J}\,\text{s}`, the factor $\cdot 10^{-34}$ is missing; it is the 8g rewrite that dropped it and a student reads a value 10^34 too large — fix: `h_0 = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}`.

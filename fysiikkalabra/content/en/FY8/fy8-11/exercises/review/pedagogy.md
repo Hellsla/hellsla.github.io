@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 364279c08bcfaf40
-SCOPE: delta 8g (Kaava step of the model solutions)
 
 ## Blocking
 (none)

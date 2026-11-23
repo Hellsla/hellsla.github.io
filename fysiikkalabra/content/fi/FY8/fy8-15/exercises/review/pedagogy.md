@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: b81b215185d2bb31
-SCOPE: delta added-exercise (Kaava reflow, whole solutions.md)
+SCOPE: delta added-exercise from b01d8774ea628a16 base 1bdc56f920e4
 
 ## Blocking
 

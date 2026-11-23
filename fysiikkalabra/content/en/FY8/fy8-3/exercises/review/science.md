@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 39f7d7b31a4f79c6
-SCOPE: delta kaava-steps (8g)
 
 ## Blocking
 (none)

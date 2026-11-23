@@ -1,6 +1,5 @@
 VERDICT: FAIL
 CONTENT-HASH: c355f45d310c2f53
-SCOPE: full
 
 ## Blocking
 - solutions.md:382 and tasks.json:464 (fy8-s3 d, conclusion) — A, an error: "with this counting time the tube cannot distinguish it from the variation of the background" / "the tube can no longer distinguish it". At r ≈ 36 cm the net rate equals the background, 22.4 1/min. In a 1.0 min count that is about 45 pulses against 22.4 ± 0.9 (five-minute background), so net = 22 ± 7 1/min, about 3σ. The source is still clearly detected there, and a student who says so would lose the point. — Write that the source's count rate (and dose rate) has fallen to the size of the background, so further away it is soon lost in the background's random variation; the radiation does not stop. Use the same words in the rubric detail and in the Finnish version.

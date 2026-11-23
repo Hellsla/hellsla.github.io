@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 46ac8e1c30d0df71
-SCOPE: delta Kaava step of the model solutions (exam as a whole judged from the packet)
 
 ## Blocking
 

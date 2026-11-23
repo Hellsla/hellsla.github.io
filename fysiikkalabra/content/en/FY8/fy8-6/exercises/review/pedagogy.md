@@ -1,6 +1,5 @@
 VERDICT: FAIL
 CONTENT-HASH: b12729dd62abae8c
-SCOPE: delta kaava-steps (8g)
 
 ## Blocking
 - solutions.md fy8-6-L2-06, Formula — $h_0 = 6.626\,\text{J}\,\text{s}$ lacks the factor $10^{-34}$ (wrong value of a constant in the shown formula; Given has it right) — write $h_0 = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$.

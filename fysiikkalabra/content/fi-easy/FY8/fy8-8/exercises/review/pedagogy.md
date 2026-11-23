@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 4fb09e1c40a5d733
-SCOPE: delta (8g: Kaava step of the model solutions, paragraph breaks)
+SCOPE: delta added-exercise from 193a1334ab5f0ba7 base 5b3ca4f81c77
 
 ## Blocking
 (none)

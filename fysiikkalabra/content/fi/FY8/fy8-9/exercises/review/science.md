@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: b05067dea6428416
-SCOPE: delta (work queue 8g, Kaava steps of the model solutions)
+SCOPE: delta added-exercise from d9ba28cfd425b32a base 5b3ca4f81c77
 
 ## Blocking
 

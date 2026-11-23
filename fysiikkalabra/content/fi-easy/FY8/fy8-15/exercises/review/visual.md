@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5e99dcd5ae068804
+CONTENT-HASH: a2afeaaa3712cf73
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] solutions.md, reaction block (q_alku = q_loppu, then B_alku = B_loppu and Q ... > 0): the `> 0` row sits under the `=` of the row above; consider `&> 0` aligned to the same column; the text "reaktiolle (3)" follows the box abruptly.
 
 ## Checked
-- Delta: exercises/solutions.md paragraph cuts only (md-paragraphs).
-- fy8-15-open-exercises-1280-5 (tasks 15-5 solution end, 15-6 with feedback and full solution open): solution order, LaTeX units and formulas, paragraphs read well, no clipping.
+- Delta (the changed Kaava blocks of fy8-15: energy conservation, E=hf rows, quark mass, charge/baryon-number box, threshold energy) at 390 px, 8 blocks viewed. Own 390 px clips of every Kaava block (preview build; packet captures of exercises are 1280 only): no overflow, no red KaTeX.
+- One equation per row, fractions and subscripts legible, nothing clipped.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

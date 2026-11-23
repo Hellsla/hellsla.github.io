@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 37809b21af7c6c0d
-SCOPE: delta (three text fixes from the final audit; figures approved by the teacher)
 
 ## Blocking
 

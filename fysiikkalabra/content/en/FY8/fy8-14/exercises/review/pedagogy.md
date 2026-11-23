@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 3fa68b4c45b18eee
-SCOPE: delta Kaava step of model solutions (work queue 8g) and paragraph splitting
+SCOPE: delta added-exercise from 1e964fbac349ac61 base 5b3ca4f81c77
 
 ## Blocking
 
