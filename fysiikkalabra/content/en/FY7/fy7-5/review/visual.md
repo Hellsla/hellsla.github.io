@@ -1,10 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: e8dbb88bdb2870f0
+CONTENT-HASH: e749bb3a8e234fac
+
 ## Blocking
 (none)
+
 ## Polish
 (none)
-## Vanhan sisällön löydökset
-(none found in the captures; old content is untouched by this change)
+
 ## Checked
-batch delta review: the new "Stop and think" blocks (```pysahdy) rendered at 390 px with the answer open (aside, question, Answer summary, answer text and aligned calculation rows): no clipping or horizontal overflow (page scrollWidth 390), maths in KaTeX with units upright and a thin space, decimal point and \cdot/colon notation as the English text uses, fluent wording, block placed right after the paragraph it tests; listed figure captures and fig-row unchanged in layout. Hash identical at start and end.
+- Delta round 5 (changed: five approved figure pictures, the rod task's solution in inquiry.json, lesson.md figure markup).
+- fig-1-390 (hero/dynamo cyclist), fig-2-390 (Faraday), fig-3-390 (flux), fig-5-390 (rod): clean, legible, no clipping; labels in LaTeX, colours consistent (v blue, F red, B green, E brown), figure 5 shows the + and - ends and the l dimension.
+- top-1280 (opening with hero beside the goals): layout intact.
+- open-tarkista-1280-2 and -3: the rod task with hints and the opened solution; the aligned substitution rows, Answer box and Reasonableness chains render cleanly with upright units and thin spaces.
+- Hash identical at start and end.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

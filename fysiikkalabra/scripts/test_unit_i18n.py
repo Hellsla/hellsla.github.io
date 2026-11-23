@@ -5,7 +5,7 @@ In a temporary copy of the project, fy9-koe's en version is removed and made aga
 then apply with the Finnish texts as the "translation"); then the language check, the unit check, the build (an
 unreviewed translation is not published, the course pages link the Finnish unit), the hash of its own, and the
 build with stand-in PASS reports and FY9 in content/en/local-courses.json: the page at site/en/fy9-koe.html, the
-language links between the versions, the course page and the YO-sekoitin. FY14's units build as the committed site.
+language links between the versions, the course page and the YO-sekoitin. FY14's units build as the site CI built (site/ is not committed; work queue 0g PR 3).
 The real project is not touched."""
 import hashlib, json, os, pathlib, re, shutil, subprocess, sys, tempfile
 HERE = pathlib.Path(__file__).resolve().parent
@@ -79,7 +79,7 @@ def first_diff(u):   # the unit and its first differing line, so a failure says 
     i = next((i for i, (x, y) in enumerate(zip(a, b)) if x != y), min(len(a), len(b)))
     return u, i + 1, (a[i] if i < len(a) else "<end>")[:300], (b[i] if i < len(b) else "<end>")[:300]
 fy14_diff = [first_diff(u["id"]) for u in fy14 if (T / f"site/en/{u['id']}.html").read_text() != (SRC / f"site/en/{u['id']}.html").read_text()]
-expect("FY14's units build as the committed site", fy14 and not fy14_diff, f"{len(fy14_diff)} differ, first: {fy14_diff[:1]}")
+expect("FY14's units build as the built site", fy14 and not fy14_diff, f"{len(fy14_diff)} differ, first: {fy14_diff[:1]}")
 
 for role in ("science", "pedagogy", "visual"):
     (EN / "review").mkdir(exist_ok=True); (EN / f"review/{role}.md").write_text(f"VERDICT: PASS\nCONTENT-HASH: {h_en}\n\n## Blocking\nnone\n")

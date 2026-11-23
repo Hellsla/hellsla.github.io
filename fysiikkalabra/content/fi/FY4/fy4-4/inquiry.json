@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Liikennevaloissa seisoo vierekkäin kaksi samanlaista puutavara-autoa. Toinen on tyhjä, toinen täynnä tukkeja. Valo vaihtuu vihreäksi, ja molemmat kuljettajat kiihdyttävät yhtä voimakkaasti. Muutamassa sekunnissa tyhjä auto on selvästi edellä.",
+      "text": "Liikennevaloissa seisoo vierekkäin kaksi samanlaista puutavara-autoa. Toinen on tyhjä, toinen täynnä tukkeja. Valo vaihtuu vihreäksi, ja molemmissa autoissa moottori vetää yhtä suurella voimalla. Muutamassa sekunnissa tyhjä auto on selvästi edellä.",
       "question": "Mikä ratkaisee, kuinka nopeasti kappaleen nopeus muuttuu, ja miksi sama moottori ei vie lastattua autoa yhtä nopeasti vauhtiin?"
     },
     {
@@ -513,7 +513,7 @@
           "detail": "Vaakasuunnassa $F - F_\\mu = ma$ ja pystysuunnassa $N - mg = 0$, positiiviset suunnat nimettyinä; $a \\approx 1{,}7\\,\\text{m/s}^2$."
         }
       ],
-      "model": "Kirjaan vaikuttavat Maa (paino $\\overline{G}$), pöytä (tukivoima $\\overline{N}$ ja kitkavoima $\\overline{F}_\\mu$) ja käsi (työntövoima $\\overline{F}$). Pystysuunnassa kirja ei kiihdy, joten $N - mg = 0$ ja $$\\begin{aligned} &N = mg \\\\ &= 1{,}2\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &\\approx 11{,}8\\,\\text{N} \\end{aligned}$$. Vaakasuunnassa, kun positiivinen suunta on työnnön suunta, $F - F_\\mu = ma$, joten $$\\begin{aligned} &a = \\dfrac{F - F_\\mu}{m} \\\\ &= \\dfrac{5{,}0\\,\\text{N} - 3{,}0\\,\\text{N}}{1{,}2\\,\\text{kg}} \\\\ &\\approx 1{,}7\\,\\text{m/s}^2 \\end{aligned}$$. Kokonaisvoima $2{,}0\\,\\text{N}$ ja kiihtyvyys osoittavat työnnön suuntaan."
+      "model": "Kirjaan vaikuttavat Maa (paino $\\overline{G}$), pöytä (tukivoima $\\overline{N}$ ja kitkavoima $\\overline{F}_\\mu$) ja käsi (työntövoima $\\overline{F}$). Pystysuunnassa kirja ei kiihdy, joten $N - mg = 0$ ja $$\\begin{aligned} &N = mg \\\\ &= 1{,}2\\,\\text{kg}\\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &\\approx 12\\,\\text{N} \\end{aligned}$$. Vaakasuunnassa, kun positiivinen suunta on työnnön suunta, $F - F_\\mu = ma$, joten $$\\begin{aligned} &a = \\dfrac{F - F_\\mu}{m} \\\\ &= \\dfrac{5{,}0\\,\\text{N} - 3{,}0\\,\\text{N}}{1{,}2\\,\\text{kg}} \\\\ &\\approx 1{,}7\\,\\text{m/s}^2 \\end{aligned}$$. Kokonaisvoima $2{,}0\\,\\text{N}$ ja kiihtyvyys osoittavat työnnön suuntaan."
     },
     {
       "id": "lahtolippu",

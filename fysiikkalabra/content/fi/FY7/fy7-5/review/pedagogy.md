@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9bcd4eb18046d472
+CONTENT-HASH: 787c4681f8c9b1b1
 
 ## Blocking
 (none)
@@ -7,8 +7,8 @@ CONTENT-HASH: 9bcd4eb18046d472
 ## Polish
 (none)
 
-## Vanhan sisällön löydökset
-(none)
-
 ## Checked
-batch delta review (round 2, vain pysahdy-lohkot): kolme lohkoa; "yhden kierroksen läpi" vastaa luvun kaavan ΔΦ-määritelmää, 200·0,020:0,50 = 8,0 V ja e = vBl = 0,30 V laskettu uudelleen.
+- Delta round 5: inquiry.json transfer-task solution, Järkevyys line only; figure images and lesson.md figure approvals are teacher-approved, not re-judged.
+- Pinta-alan muutosnopeus 0,50 m · 4,0 m/s = 2,0 m²/s nyt yksiköllisesti oikein (aiemmin kirjoitettu "4,0 m", mikä oli yksikkövirhe).
+- 0,25 T · 2,0 m²/s = 0,50 Wb/s = 0,50 V, sama kuin e = vBl = 0,50 V; laskettu uudelleen.
+- Perustelu auttaa opiskelijaa: kaksi reittiä samaan tulokseen vahvistaa yhteyden induktiolakiin; tähän ei liity uutta oppimiskuormaa.

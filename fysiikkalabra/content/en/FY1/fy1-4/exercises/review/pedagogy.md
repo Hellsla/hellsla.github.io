@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9446a1ba13882d4d
+CONTENT-HASH: 473bd73c289cfb43
 
 ## Blocking
 - none
 
 ## Polish
-- none new. The earlier polish on the L2-09 answer-box line (it applies to the table's 6-12 h rate) is not in this diff; check it is still wanted.
+- none
 
 ## Checked
-- 16 o'clock value: 7.2 + 1.52*10 = 22.4 degC, now consistent with the earlier report; the 0 h value (-1.9 degC) and the 8 h and 10 h values are unchanged and correct.
-- The change is one number; the staging and the validity-range reasoning of part c) are unchanged.
+- Delta: every "Kaava"/"Formula" step in solutions.md now starts from a basic definition or equation and reaches the working form; order is a derivation a student can follow.
+- Physics and symbols agree with the Principle, Substitution and Answer steps; no answer disclosed beyond the model solution.
+- Added "Tässä/Here ..." definitions and merged-paragraph model answers are brief, correct and readable.
+- Aligned-equation blocks read as staged derivations; the packet diff shows them without line breaks, but the files on disk contain proper breaks (checked).
+- No exercise, figure or task text changed (no exercise wording changed); levels, context and wording unaffected.

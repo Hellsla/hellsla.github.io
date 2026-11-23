@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3c06960d03f1f9c8
+CONTENT-HASH: 8fde4935a0ee72f4
 
 ## Blocking
 
 ## Polish
-- 480 kg could be read as two significant figures (trailing zero); the sentence is fine but a teacher may prefer "480 kg (kolme merkitsevää numeroa)" stated as the data in the problem text.
+- inquiry.json hook: "the engine of each pulls with the same force" now states the equal-force premise outright; fine, but the sentence reads slightly stiff ("each engine pulls with the same force").
 
 ## Checked
-batch delta review: the result-step significant-figures sentence is correct (all given values three figures, so three in the result), consistent with the Tarkista and solutions at three figures, clear for 16-19-year-olds.
+- Hook: replacing "equal effort" with equal engine force removes the ambiguity (effort is not a physical quantity) and sets up the question without disclosing the answer (mass); the opening question is unchanged.
+- Check-item model answer: N = 12 N with 1.2 kg (two significant figures) is correct and consistent with a = 1.7 m/s2 at two figures; no learner-facing contradiction with the data.
+- Worked example, "Rearranged formula" stage: now starts from ΣF = ma, then T - mg = ma, then a (house rule: basic principle first; still one step per stage, diagram before equation preserved).
+- tfrac to text m/s^2 is presentation only; no effect on pedagogy.
+- Pictures and figures approved by the teacher, unchanged in meaning; not re-judged.

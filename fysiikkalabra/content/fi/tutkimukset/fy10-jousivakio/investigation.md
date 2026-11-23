@@ -138,7 +138,7 @@ Kuvaajan sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohje
 
 ## Epävarmuus ja luotettavuus
 
-Ilmoita jousivakio muodossa $k = (k \pm \Delta k)\ \text{N/m}$ ja perustele, miten arvioit epävarmuuden $\Delta k$.
+Ilmoita jousivakio muodossa $k = (k \pm \Delta k)\,\text{N/m}$ ja perustele, miten arvioit epävarmuuden $\Delta k$.
 
 ::: tuki O OO
 Kulmakertoimen epävarmuuden voit arvioida jommallakummalla tavalla:
@@ -162,7 +162,7 @@ Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kai
 - **Tausta ja teoria:** jousivoiman laki, miksi $F = mg$ ja miksi valitsit juuri nämä akselit.
 - **Koejärjestely ja menetelmä:** mitä muutit, mitä mittasit ja mitä pidit vakiona, myös miten käsittelit punnustelineen.
 - **Mittaustulokset:** alkuperäinen pituus $l$ omassa sarakkeessaan ja johdetut suureet sen oikealla puolella.
-- **Tulos:** $k = (k \pm \Delta k)\ \text{N/m}$ oikein pyöristettynä.
+- **Tulos:** $k = (k \pm \Delta k)\,\text{N/m}$ oikein pyöristettynä.
 - **Luotettavuus:** konkreettiset epävarmuuden lähteet ja niiden vaikutuksen suunta.
 
 ## Laajennus: jousivakio värähtelystä

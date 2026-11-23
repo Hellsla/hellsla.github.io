@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 035e29afae684cf1
+CONTENT-HASH: c768525a69b2d6df
 
 ## Blocking
 - none
@@ -8,7 +8,8 @@ CONTENT-HASH: 035e29afae684cf1
 - none
 
 ## Checked
-- delta: opened open-exercises-1280-9, -10 (Mallivastaus 1-5 split), L3-1280-5 (8-20 Vastaus in paragraphs), L3-1280-7, -8 (8-21 Vastaus and Järkevyys). Spacing even, maths intact, no clipping; captures current for the hash.
+- Round 2 delta (sign fix `r = -ΔT/Δt` in two Kaava blocks). Opened fy1-8-open-exercises-L3-1280-7 (six-row Kaava with the fix) and L2-1280-7 (a plain aligned block).
+- Rows align at the relation sign, the leading minus before the fraction reads clearly, nothing clipped or overflowing; Muunnokset, Sijoitus, Vastaus and Järkevyys survived.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

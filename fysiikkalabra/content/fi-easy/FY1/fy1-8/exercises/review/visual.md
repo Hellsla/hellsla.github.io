@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: d3a93f2474a8d1b8
+CONTENT-HASH: e76de909aec34e7f
 
 ## Blocking
 - none
@@ -8,8 +8,8 @@ CONTENT-HASH: d3a93f2474a8d1b8
 - none
 
 ## Checked
-- Delta 8c md-paragraphs (true/false Mallivastaus, Vastaus of the two experiment-design tasks). Opened fy1-8-open-exercises-1280-9, L3-1280-6, L3-1280-8. Breaks clean, formulas and Järkevyys block intact, nothing clipped.
-- Hash run at start; the content was not edited meanwhile.
+- Round 2 delta (sign fix `r = -ΔT/Δt` in two Kaava blocks). Opened the fi-easy fy1-8-open-exercises-L3-1280-7 (six-row Kaava with the fix); the first block uses the same structure and was not opened separately.
+- Rows align at the relation sign, the minus reads clearly before the fraction, nothing clipped; Muunnokset and Sijoitus intact.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

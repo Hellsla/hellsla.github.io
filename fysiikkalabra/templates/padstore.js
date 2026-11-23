@@ -63,6 +63,54 @@
       localStorage.setItem(FIRST, JSON.stringify(m));
     } catch (e) { /* the graph then uses the last save */ }
   };
+  // One module's work in this browser (work queue 17b PR 1: moved here unchanged from palautus.js courseWork, so the
+  // module's work file "ruukkilabra-tyo" v1 and the whole-site file "ruukkilabra-kaikki" v1, kaikki.js, read and write
+  // it with the same code): which keys and solutions are the module's (CODE, "FY3"), reading them, and adding a file's
+  // to this browser in two steps, plan (what differs) then apply (nothing is written before the caller has asked).
+  // The module page's counter keeps two maps, one for every module: the file carries this module's part.
+  const MAPS = ['ruukkilabra:ratkaistu', 'ruukkilabra:tarkistettu'];
+  const work = (CODE) => {
+    const PRE = CODE.toLowerCase() + '-';
+    const KEY_RE = new RegExp('(^|[:/])' + CODE.toLowerCase() + '-[a-z0-9]', 'i');
+    const plain = (k) => /^(fl:|ruukkilabra:)/.test(k) && k !== 'ruukkilabra:tehty' && !k.startsWith('ruukkilabra:palautus:') && KEY_RE.test(k);
+    const ownKey = (k) => MAPS.includes(k) || plain(k);
+    const readMap = (k) => { try { const v = JSON.parse(localStorage.getItem(k) || '{}'); return v && typeof v === 'object' && !Array.isArray(v) ? v : {}; } catch (e) { return {}; } };
+    const ownRec = (r) => r && typeof r.id === 'string' && r.id.toLowerCase().startsWith(PRE);
+    const readLocal = () => {
+      const out = {};
+      try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (plain(k)) out[k] = localStorage.getItem(k); } } catch (e) { /* no storage */ }
+      MAPS.forEach((k) => { const m = readMap(k), ids = Object.keys(m).filter((id) => id.toLowerCase().startsWith(PRE)).sort();
+        if (ids.length) out[k] = JSON.stringify(Object.fromEntries(ids.map((id) => [id, m[id]]))); });
+      const sorted = {}; Object.keys(out).sort().forEach((k) => { sorted[k] = out[k]; });
+      return sorted;
+    };
+    // what a checked file (sols: records, local: { key: text }, only the module's own) would change; rejects with code "open" when this browser cannot be read
+    const plan = async (sols, local) => {   // local: { key: text }
+      let mine, have = {};
+      try { mine = new Map((await api.all(PRE)).solutions.map((r) => [r.id, r])); } catch (e) { throw fail('open', e); }
+      try { localStorage.length; have = readLocal(); } catch (e) { throw fail('open', e); }
+      const diffS = sols.filter((r) => mine.has(r.id) && mine.get(r.id).html !== r.html);
+      const diffL = Object.keys(local).filter((k) => !MAPS.includes(k) && k in have && have[k] !== local[k]);
+      const newer = diffS.filter((r) => (mine.get(r.id).updated || '') > (r.updated || '')).length;
+      return { sols, local, mine, have, diffS, diffL, newer, differs: diffS.length + diffL.length };
+    };
+    // replace: the file's records win where both differ (OK in the question), else only what this browser lacks is added
+    const apply = async (pl, replace) => {
+      const { sols, local, mine, have } = pl;
+      const putS = sols.filter((r) => !mine.has(r.id) || (replace && mine.get(r.id).html !== r.html));
+      const putL = Object.keys(local).filter((k) => !MAPS.includes(k) && (!(k in have) || (replace && have[k] !== local[k])));
+      try { if (putS.length) await api.putAll(putS); } catch (e) { throw fail('open', e); }
+      try { putL.forEach((k) => localStorage.setItem(k, local[k])); } catch (e) { throw fail('open', e); }
+      Object.keys(local).filter((k) => MAPS.includes(k)).forEach((k) => {   // added to this browser's map; an entry it has stays
+        let add = {}; try { add = JSON.parse(local[k]) || {}; } catch (e) { /* nothing to add */ }
+        const m = readMap(k); let n = 0;
+        Object.keys(add).forEach((id) => { if (id.toLowerCase().startsWith(PRE) && !(id in m)) { m[id] = add[id]; n++; } });
+        if (n) try { localStorage.setItem(k, JSON.stringify(m)); } catch (e) { /* the count misses them here */ }
+      });
+      return { n: putS.length, m: putL.length };
+    };
+    return { PRE, ownKey, ownRec, readMap, readLocal, plan, apply };
+  };
   const api = {
     // the saved html of one task, '' when there is none; a damaged record rejects with code "corrupt"
     get: (id) => run('readonly', (s) => s.get(id)).then((r) => {
@@ -91,7 +139,7 @@
     },
     // records written in one transaction, all or nothing (the work file, palautus.js)
     putAll: (rs) => { const ok = rs.filter(valid).map(clean); return run('readwrite', (s) => { ok.forEach((r) => s.put(r)); return null; }).then(() => { if (ok.length) keep(); changed({ all: true }); return ok.length; }); },
-    mergeDone, readDone,
+    mergeDone, readDone, work,
     FORMAT, VERSION,
   };
   window.flPadStore = api;

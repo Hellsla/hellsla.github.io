@@ -14,7 +14,7 @@ def expect(name, cond, detail=""):
 
 
 T = pathlib.Path(tempfile.mkdtemp(prefix="fysiikkalabra-practice-"))
-for f in ("curriculum.json", "competencies.json", "glossary.json"): shutil.copy(SRC / f, T / f)
+for f in ("curriculum.json", "competencies.json", "glossary.json", "NOTES.md"): shutil.copy(SRC / f, T / f)
 for d in ("scripts", "templates", "content", "lessons", "lang"): shutil.copytree(SRC / d, T / d, ignore=shutil.ignore_patterns("__pycache__", "packet-*", "shots*"))
 for p in [*(T / "lang").glob("*.json"), *(T / "content").iterdir()]:     # Finnish only: the test adds its own "en"
     if p.stem not in ("fi", "_gold"): shutil.rmtree(p) if p.is_dir() else p.unlink()
@@ -115,6 +115,18 @@ exam_broken("exam task ids are <slug>-k<n>", lambda d: d["tasks"][6].update(id="
 E.write_text(EORIG)
 sys.path.insert(0, str(T / "scripts")); os.environ["FYSIIKKALABRA_ROOT"] = str(T)
 expect("max_points: Osa 1 all, best two of four, best one of two", practice.max_points(json.loads(EORIG)) == 70, practice.max_points(json.loads(EORIG)))
+# a unit's review packets carry unit.md (work queue 20, FY9 Pysähdy ja mieti): a change of unit.md reaches the science, pedagogy and visual packets
+UM = T / "content/fi/units/fy9-voimat/unit.md"; MARK = "TESTIMUUTOS-unit-md-7431"
+UM.write_text(UM.read_text() + f"\n\n{MARK} Tämä lause on uusi.\n")
+def packet(role):
+    r = subprocess.run([sys.executable, str(T / "scripts/practice.py"), "packet", "units/fy9-voimat", "--role", role], capture_output=True, text=True, cwd=T, env=ENV, timeout=300)
+    pf = next(T.glob(f"content/fi/units/fy9-voimat/**/packet-{role}.md"), None)
+    return r.returncode, (pf.read_text() if pf else ""), r.stdout + r.stderr
+for role in ("science", "pedagogy", "visual"):
+    code, txt, out = packet(role)
+    expect(f"a unit's {role} packet holds the changed unit.md", code == 0 and MARK in txt and "unit hash now" in txt or role == "visual" and MARK in txt, out[-300:])
+code, txt, out = packet("visual")
+expect("the visual packet of a changed unit is not 'none' and names the unit's hash command", "Mode: **full**" in txt and "units.py hash fy9-voimat" in txt, txt[:400])
 shutil.rmtree(T, ignore_errors=True)
 print(f"\n{'FAILED: ' + ', '.join(failures) if failures else 'all practice tests passed'}")
 sys.exit(1 if failures else 0)

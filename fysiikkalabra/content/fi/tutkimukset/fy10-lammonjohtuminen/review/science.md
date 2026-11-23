@@ -1,22 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 192bf50dde36abe4
+CONTENT-HASH: 74a43218f9d568c4
 
 ## Blocking
 None.
 
 ## Polish
+- Table header (line 122) still uses `\ ` between a symbol and its parenthesised unit, e.g. `$t\ (\text{min})$`; a word space before a bracketed unit is acceptable, change to `\,` only if the house style wants it uniform. Not physics.
+
+## Polish (earlier rounds)
 None.
 
-## Checked (delta 2026-10-31)
-- `topic` "lampo" fits the physics area.
-- New questions are correct systematic effects: a target only a few pixels wide mixes in background temperature; warm air above the lid heats rods from outside (convection, not conduction).
-- Thermal-camera prerequisite now points to the camera's own manual; `tvt-kuvaaja` fits the comparison graph.
-- Report bullets renamed to the template's section names (Koejärjestely ja menetelmä); content unchanged.
-
-## Delta 2 (2026-10-31)
-- Raportoi: the tvt-tyoselostus link moved to its own sentence; wording only, no physics changed.
-- The few-pixel question now asks what happens to the reading instead of stating it; still a correct, answerable prompt (background mixes into the reading), no claim lost elsewhere.
-
-## Delta 4 (2026-10-31)
-
-- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+## Checked (delta 2026-11-23, gate)
+- Diff against HEAD: Ohjattu tuki only, `15\ \text{cm}` – `20\ \text{cm}` and `x = 3\ \text{cm}` became `15\,\text{cm}` – `20\,\text{cm}` and `x = 3\,\text{cm}`. Numbers, units and symbols unchanged; thin space between number and unit is the SI/house convention. Reads correctly.
+- Diff since my last PASS (hash 192bf50dde36abe4): besides the above, only the inline SVG drawings of hero, emission and setup became teacher-approved raster images (`approve-figures`) with the same LaTeX labels and aria-labels. Viewed all three: emission still shows a strong emitted ray from the matte part, a weak own emission plus a reflected ambient ray from the shiny part, one body at one temperature; setup shows equal-depth rods taped above the water, insulating lid, thermometer in the water, x measured from the lid top, camera on a stand; hero shows five taped rods in a lidded pot. Consistent with the text; no physics change.
+- investigation.json and teacher.md unchanged since the last PASS; earlier checks stand.

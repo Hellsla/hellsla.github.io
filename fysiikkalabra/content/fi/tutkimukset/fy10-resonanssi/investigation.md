@@ -220,7 +220,7 @@ Vastaa tutkimuskysymykseen mittaustesi perusteella. Vertaa saamaasi äänen nope
 v = 331{,}3\,\text{m/s}\cdot\sqrt{\frac{T}{273{,}15\,\text{K}}}
 ```
 
-mukaan, missä $T$ on ilman lämpötila kelvineinä: $T = \left(\dfrac{\theta}{{}^\circ\text{C}} + 273{,}15\right)\ \text{K}$, missä $\theta$ on celsiuslämpötila. Ilman kosteus suurentaa äänen nopeutta hieman.
+mukaan, missä $T$ on ilman lämpötila kelvineinä: $T = \left(\dfrac{\theta}{{}^\circ\text{C}} + 273{,}15\right)\,\text{K}$, missä $\theta$ on celsiuslämpötila. Ilman kosteus suurentaa äänen nopeutta hieman.
 :::
 
 ## Raportoi
