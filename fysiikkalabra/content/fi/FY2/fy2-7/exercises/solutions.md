@@ -150,9 +150,9 @@ Sähköverkon häviö $40\,\text{MWh}$ on suurempi kuin kaukolämpöverkon $27\,
 **Sijoitus:**
 $$\begin{aligned}
 \Delta E &= E_\text{perille}\left(\dfrac{1}{\eta_1} - \dfrac{1}{\eta_2}\right) \\
-&= 600\,\text{MWh}\left(\dfrac{1}{0,910} - \dfrac{1}{0,940}\right) \\
-&= 659,3\,\text{MWh} - 638,3\,\text{MWh} \\
-&= 21,0\,\text{MWh}
+&= 600\,\text{MWh}\left(\dfrac{1}{0{,}910} - \dfrac{1}{0{,}940}\right) \\
+&= 659{,}3\,\text{MWh} - 638{,}3\,\text{MWh} \\
+&= 21{,}0\,\text{MWh}
 \end{aligned}$$
 **Vastaus:** $21\,\text{MWh}$, kaksi merkitsevää numeroa: erotuksen tarkkuutta rajoittavat häviöprosentit $9{,}0\,\%$ ja $6{,}0\,\%$.
 **Järkevyys:** Häviö pienenee kolme prosenttiyksikköä, ja kolme prosenttia luvusta $600\,\text{MWh}$ on $18\,\text{MWh}$. Tulos $21\,\text{MWh}$ on hieman suurempi, koska prosentit lasketaan lähtevästä energiasta, ei $600\,\text{MWh}$:sta.

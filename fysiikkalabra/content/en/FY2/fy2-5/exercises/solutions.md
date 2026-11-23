@@ -95,7 +95,15 @@
 **Principle:** The same energy $E$ must be released from both fuels. By the law $E = Hm$ the mass is the energy divided by the heat of combustion, so a smaller heat of combustion needs a larger mass.
 **Formula:** $E = Hm$, so $m = \dfrac{E}{H}$ for each fuel; $\Delta m = m_\text{wood} - m_\text{oil} = E\left(\dfrac{1}{H_\text{wood}} - \dfrac{1}{H_\text{oil}}\right)$
 **Conversions:** Not needed: the energy is in megajoules and the heats of combustion in megajoules per kilogram.
-**Substitution:** $\Delta m = E\left(\dfrac{1}{H_\text{wood}} - \dfrac{1}{H_\text{oil}}\right) = 8.0\,\text{kg} - 2.96\,\text{kg} = 5.04\,\text{kg}$, where $m_\text{wood} = \dfrac{120\,\text{MJ}}{15\,\tfrac{\text{MJ}}{\text{kg}}} = 8.0\,\text{kg}$ and $m_\text{oil} = \dfrac{120\,\text{MJ}}{40.6\,\tfrac{\text{MJ}}{\text{kg}}} = 2.96\,\text{kg}$.
+**Substitution:** $$
+\begin{aligned}
+m_\text{wood} &= \dfrac{120\,\text{MJ}}{15\,\tfrac{\text{MJ}}{\text{kg}}} = 8.0\,\text{kg} \\
+m_\text{oil} &= \dfrac{120\,\text{MJ}}{40.6\,\tfrac{\text{MJ}}{\text{kg}}} = 2.96\,\text{kg} \\
+\Delta m &= m_\text{wood} - m_\text{oil} \\
+&= 8.0\,\text{kg} - 2.96\,\text{kg} \\
+&= 5.04\,\text{kg}
+\end{aligned}
+$$
 **Answer:** $5.0\,\text{kg}$ more wood is needed, two significant figures like the data $120\,\text{MJ}$ and $15\,\tfrac{\text{MJ}}{\text{kg}}$. More wood is needed because one kilogram of wood contains less chemical energy than one kilogram of oil.
 **Reasonableness:** The mass of wood is about $2.7$ times the mass of oil, since $40.6 : 15 = 2.71$. So $2.71 \cdot 2.96\,\text{kg} \approx 8.0\,\text{kg}$, and the difference is $2.71 - 1 = 1.71$ times the mass of oil: $1.71 \cdot 2.96\,\text{kg} \approx 5.0\,\text{kg}$, as it should be.
 
@@ -161,7 +169,15 @@ $$. The heat of combustion does not tell the temperature of the flame, and it do
 **Principle:** The same energy has to be released from both kinds of wood. By the law $E = Hm$, the mass is the energy divided by the heat of combustion. Moist wood gives less energy per kilogram, because part of its mass is water, which does not burn and whose evaporation consumes energy.
 **Formula:** $E = Hm$, so $m = \dfrac{E}{H}$; $\Delta m = m_{40} - m_{20} = E\left(\dfrac{1}{H_{40}} - \dfrac{1}{H_{20}}\right)$
 **Conversions:** Not needed: the energy is in megajoules and the heats of combustion in megajoules per kilogram.
-**Substitution:** $\Delta m = E\left(\dfrac{1}{H_{40}} - \dfrac{1}{H_{20}}\right) = 19.23\,\text{kg} - 13.61\,\text{kg} = 5.62\,\text{kg}$, where $m_{40} = \dfrac{200\,\text{MJ}}{10.4\,\tfrac{\text{MJ}}{\text{kg}}} = 19.23\,\text{kg}$ and $m_{20} = \dfrac{200\,\text{MJ}}{14.7\,\tfrac{\text{MJ}}{\text{kg}}} = 13.61\,\text{kg}$.
+**Substitution:** $$
+\begin{aligned}
+m_{40} &= \dfrac{200\,\text{MJ}}{10.4\,\tfrac{\text{MJ}}{\text{kg}}} = 19.23\,\text{kg} \\
+m_{20} &= \dfrac{200\,\text{MJ}}{14.7\,\tfrac{\text{MJ}}{\text{kg}}} = 13.61\,\text{kg} \\
+\Delta m &= m_{40} - m_{20} \\
+&= 19.23\,\text{kg} - 13.61\,\text{kg} \\
+&= 5.62\,\text{kg}
+\end{aligned}
+$$
 **Answer:** $5.6\,\text{kg}$ more moist wood is needed, two significant figures like the data $200\,\text{MJ}$.
 **Reasonableness:** The ratio of the heats of combustion is $14.7 : 10.4 = 1.41$, so the mass of the moist wood is about $1.41$ times as large: $1.41 \cdot 13.61\,\text{kg} = 19.2\,\text{kg}$. Moist wood gives less energy per kilogram, so more mass is needed, and the difference is positive.
 
@@ -266,7 +282,7 @@ Estimate: petrol has more than $40\,\text{MJ}$ per kilogram but only a small amo
 **Find:** the mass of firewood $m_\text{w}$ that releases the same energy
 **Principle:** The energy released by each fuel is $E = Hm$. The energies must be equal, so we first calculate the energy of the petrol and then solve for the mass of firewood.
 **Reading the graph:** The heats of combustion are printed at the ends of the bars: $43$ at the petrol bar and $15$ at the firewood bar. The unit on the horizontal axis is $\text{MJ/kg}$, so $H_\text{p} = 43\,\tfrac{\text{MJ}}{\text{kg}}$ and $H_\text{w} = 15\,\tfrac{\text{MJ}}{\text{kg}}$.
-**Formula:** $E = Hm$ for each fuel and conservation of energy $E_\text{w} = E_\text{p}$, so $H_\text{w}m_\text{w} = H_\text{p}m_\text{p}$ and $m_\text{w} = \dfrac{H_\text{p}m_\text{p}}{H_\text{w}}$
+**Formula:** $E = Hm$ for each fuel and the condition that both fuels release the same energy, $E_\text{w} = E_\text{p}$, so $H_\text{w}m_\text{w} = H_\text{p}m_\text{p}$ and $m_\text{w} = \dfrac{H_\text{p}m_\text{p}}{H_\text{w}}$
 **Conversions:** Not needed: the masses are in kilograms.
 **Substitution:** $m_\text{w} = \dfrac{H_\text{p}m_\text{p}}{H_\text{w}} = \dfrac{43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 12\,\text{kg}}{15\,\tfrac{\text{MJ}}{\text{kg}}} = 34.4\,\text{kg}$ (intermediate value $E = 516\,\text{MJ}$)
 **Answer:** $m_\text{w} \approx 34\,\text{kg}$, two significant figures like the mass $12\,\text{kg}$.

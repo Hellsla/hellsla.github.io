@@ -95,7 +95,15 @@
 **Periaate:** Kummastakin polttoaineesta pitää vapautua sama energia $E$. Lain $E = Hm$ mukaan massa on energia jaettuna lämpöarvolla, joten pienemmällä lämpöarvolla tarvitaan suurempi massa.
 **Kaava:** $E = Hm$, josta $m = \dfrac{E}{H}$ kummallekin polttoaineelle; $\Delta m = m_\text{puu} - m_\text{öljy} = E\left(\dfrac{1}{H_\text{puu}} - \dfrac{1}{H_\text{öljy}}\right)$
 **Muunnokset:** Ei tarvita: energia on megajouleina ja lämpöarvot megajouleina kilogrammaa kohti.
-**Sijoitus:** $\Delta m = E\left(\dfrac{1}{H_\text{puu}} - \dfrac{1}{H_\text{öljy}}\right) = 8{,}0\,\text{kg} - 2{,}96\,\text{kg} = 5{,}04\,\text{kg}$, missä $m_\text{puu} = \dfrac{120\,\text{MJ}}{15\,\tfrac{\text{MJ}}{\text{kg}}} = 8{,}0\,\text{kg}$ ja $m_\text{öljy} = \dfrac{120\,\text{MJ}}{40{,}6\,\tfrac{\text{MJ}}{\text{kg}}} = 2{,}96\,\text{kg}$.
+**Sijoitus:** $$
+\begin{aligned}
+m_\text{puu} &= \dfrac{120\,\text{MJ}}{15\,\tfrac{\text{MJ}}{\text{kg}}} = 8{,}0\,\text{kg} \\
+m_\text{öljy} &= \dfrac{120\,\text{MJ}}{40{,}6\,\tfrac{\text{MJ}}{\text{kg}}} = 2{,}96\,\text{kg} \\
+\Delta m &= m_\text{puu} - m_\text{öljy} \\
+&= 8{,}0\,\text{kg} - 2{,}96\,\text{kg} \\
+&= 5{,}04\,\text{kg}
+\end{aligned}
+$$
 **Vastaus:** Puuta tarvitaan $5{,}0\,\text{kg}$ enemmän, kaksi merkitsevää numeroa kuten tiedoissa $120\,\text{MJ}$ ja $15\,\tfrac{\text{MJ}}{\text{kg}}$. Puuta tarvitaan enemmän, koska yksi kilogramma puuta sisältää vähemmän kemiallista energiaa kuin kilogramma öljyä.
 **Järkevyys:** Puun massa on noin $2{,}7$-kertainen öljyn massaan verrattuna, sillä $40{,}6 : 15 = 2{,}71$. Siksi $2{,}71 \cdot 2{,}96\,\text{kg} \approx 8{,}0\,\text{kg}$, ja erotus on $2{,}71 - 1 = 1{,}71$ kertaa öljyn massa: $1{,}71 \cdot 2{,}96\,\text{kg} \approx 5{,}0\,\text{kg}$, kuten pitää.
 
@@ -161,7 +169,15 @@ $$. Lämpöarvo ei kerro liekin lämpötilaa, eikä se tarkoita, että energiaa 
 **Periaate:** Kummastakin puusta pitää vapautua sama energia. Lain $E = Hm$ mukaan massa on energia jaettuna lämpöarvolla. Kostea puu antaa kilogrammaa kohti vähemmän energiaa, koska osa sen massasta on vettä, joka ei pala ja jonka höyrystäminen kuluttaa energiaa.
 **Kaava:** $E = Hm$, josta $m = \dfrac{E}{H}$; $\Delta m = m_{40} - m_{20} = E\left(\dfrac{1}{H_{40}} - \dfrac{1}{H_{20}}\right)$
 **Muunnokset:** Ei tarvita: energia on megajouleina ja lämpöarvot megajouleina kilogrammaa kohti.
-**Sijoitus:** $\Delta m = E\left(\dfrac{1}{H_{40}} - \dfrac{1}{H_{20}}\right) = 19{,}23\,\text{kg} - 13{,}61\,\text{kg} = 5{,}62\,\text{kg}$, missä $m_{40} = \dfrac{200\,\text{MJ}}{10{,}4\,\tfrac{\text{MJ}}{\text{kg}}} = 19{,}23\,\text{kg}$ ja $m_{20} = \dfrac{200\,\text{MJ}}{14{,}7\,\tfrac{\text{MJ}}{\text{kg}}} = 13{,}61\,\text{kg}$.
+**Sijoitus:** $$
+\begin{aligned}
+m_{40} &= \dfrac{200\,\text{MJ}}{10{,}4\,\tfrac{\text{MJ}}{\text{kg}}} = 19{,}23\,\text{kg} \\
+m_{20} &= \dfrac{200\,\text{MJ}}{14{,}7\,\tfrac{\text{MJ}}{\text{kg}}} = 13{,}61\,\text{kg} \\
+\Delta m &= m_{40} - m_{20} \\
+&= 19{,}23\,\text{kg} - 13{,}61\,\text{kg} \\
+&= 5{,}62\,\text{kg}
+\end{aligned}
+$$
 **Vastaus:** Kosteaa puuta tarvitaan $5{,}6\,\text{kg}$ enemmän, kaksi merkitsevää numeroa kuten tiedoissa $200\,\text{MJ}$.
 **Järkevyys:** Lämpöarvojen suhde on $14{,}7 : 10{,}4 = 1{,}41$, joten kostean puun massa on noin $1{,}41$-kertainen: $1{,}41 \cdot 13{,}61\,\text{kg} = 19{,}2\,\text{kg}$. Kostea puu antaa vähemmän energiaa kilogrammaa kohti, joten massaa tarvitaan enemmän, ja erotus on positiivinen.
 
@@ -262,7 +278,7 @@ Arvio: bensiinissä on yli $40\,\text{MJ}$ kilogrammaa kohti mutta vain pieni m�
 **Kysytty:** polttopuun massa $m_\text{p}$, jolla vapautuu sama energia
 **Periaate:** Kummastakin polttoaineesta vapautuva energia on $E = Hm$. Energioiden on oltava yhtä suuret, joten laskemme ensin bensiinin energian ja ratkaisemme sitten polttopuun massan.
 **Kuvaajan lukeminen:** Pylväiden päihin on merkitty lämpöarvot: bensiinin pylvään päässä on $43$ ja polttopuun pylvään päässä $15$. Vaaka-akselin yksikkö on $\text{MJ/kg}$, joten $H_\text{b} = 43\,\tfrac{\text{MJ}}{\text{kg}}$ ja $H_\text{p} = 15\,\tfrac{\text{MJ}}{\text{kg}}$.
-**Kaava:** $E = Hm$ kummallekin polttoaineelle ja energian säilyminen $E_\text{p} = E_\text{b}$, joten $H_\text{p}m_\text{p} = H_\text{b}m_\text{b}$ ja $m_\text{p} = \dfrac{H_\text{b}m_\text{b}}{H_\text{p}}$
+**Kaava:** $E = Hm$ kummallekin polttoaineelle ja energioiden on oltava yhtä suuret, $E_\text{p} = E_\text{b}$, joten $H_\text{p}m_\text{p} = H_\text{b}m_\text{b}$ ja $m_\text{p} = \dfrac{H_\text{b}m_\text{b}}{H_\text{p}}$
 **Muunnokset:** Ei tarvita: massat ovat kilogrammoina.
 **Sijoitus:** $m_\text{p} = \dfrac{H_\text{b}m_\text{b}}{H_\text{p}} = \dfrac{43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 12\,\text{kg}}{15\,\tfrac{\text{MJ}}{\text{kg}}} = 34{,}4\,\text{kg}$ (väliarvo $E = 516\,\text{MJ}$)
 **Vastaus:** $m_\text{p} \approx 34\,\text{kg}$, kaksi merkitsevää numeroa kuten massassa $12\,\text{kg}$.
