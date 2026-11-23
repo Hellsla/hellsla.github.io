@@ -111,6 +111,12 @@ This gives the answer to the opening question. The whistle vibrates at the frequ
   <foreignObject x="201.5" y="327.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1\,\text{m}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Why does the pitch of a whistle stay the same when the sound passes from air into water, even though the wavelength changes?
+---
+The source determines the frequency, and it stays the same. The speed of sound is greater in water, so by the wave equation $v = f\lambda$ the wavelength grows.
+```
+
 ## Formula: Oscillation, waves and sound
 
 ### Oscillators
@@ -133,6 +139,12 @@ wave equation :: v = f\lambda
 ```
 
 where $v$ is the speed of the wave ($\text{m/s}$), $\lambda$ the wavelength ($\text{m}$) and $\Delta s$ the path difference from two sources oscillating in phase ($\text{m}$), $n = 0, 1, 2, \ldots$ The first condition gives constructive and the second destructive interference. Diffraction is strong when the width of the gap or obstacle is about the wavelength or smaller. In reflection the angle of incidence equals the angle of reflection, when the angles are measured from the normal to the surface.
+
+```pysahdy
+Two sources oscillating in phase are at a path difference of $\Delta s = \tfrac12\lambda$ from the observation point. Does the wave get stronger or weaker?
+---
+It gets weaker. A path difference $\left(n + \tfrac12\right)\lambda$ ($n = 0$) is the condition for destructive interference.
+```
 
 In a standing wave the distance between neighbouring nodes is $\tfrac{\lambda}{2}$. A string and an open tube have the natural frequencies $f_n = n \cdot \tfrac{v}{2L}$, $n = 1, 2, 3, \ldots$, and a tube closed at one end $f_n = n \cdot \tfrac{v}{4L}$, $n = 1, 3, 5, \ldots$, where $L$ is the length of the string or the tube.
 
@@ -166,6 +178,12 @@ sound intensity level :: L = 10\lg\left(\frac{I}{I_0}\right)\,\text{dB}
 ```
 
 where $f_\text{H}$ is the beat frequency ($\text{Hz}$), $f_0$ the frequency of the source and $f$ the heard frequency ($\text{Hz}$), $v$ the speed of sound, $v_\text{L}$ the speed of the source and $v_\text{H}$ the speed of the observer relative to the air ($\text{m/s}$). The Doppler formulas hold when only one of them moves and the speed is smaller than the speed of sound. The intensity is the power $P$ per unit area $A$. The sound of a point source spreads at the distance $r$ over a sphere of area $A = 4\pi r^2$, when there are no reflections. $L$ is the intensity level and $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$. The distance from an echo is $d = \tfrac{vt}{2}$, because the pulse travels the distance twice.
+
+```pysahdy
+A sound source moves towards the observer. Is the sound heard higher or lower than the original?
+---
+Higher. In $f = f_0\,\tfrac{v}{v - v_\text{L}}$ the denominator is smaller than $v$, so $f > f_0$.
+```
 
 ## Common mistakes {Virheet}
 

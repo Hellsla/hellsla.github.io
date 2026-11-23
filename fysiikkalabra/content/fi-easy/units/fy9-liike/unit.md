@@ -12,6 +12,12 @@ Liike kuvataan aina valitussa koordinaatistossa. Koordinaatistossa on suora $x$-
 
 Saman liikkeen voi esittää kolmena kuvaajana: $(t,x)$, $(t,v)$ ja $(t,a)$. Kuvaajasta toiseen siirrytään kahdella tavalla. Alaspäin: kuvaajan **kulmakerroin** eli jyrkkyys on seuraavan suureen arvo. $(t,x)$-kuvaajan kulmakerroin on siis nopeus, ja $(t,v)$-kuvaajan kulmakerroin on kiihtyvyys. Ylöspäin: kuvaajan ja aika-akselin välinen **pinta-ala** on edellisen suureen muutos. $(t,v)$-kuvaajan pinta-ala on siis siirtymä.
 
+```pysahdy
+Mitä $(t,x)$-kuvaajan kulmakerroin kertoo ja mitä $(t,v)$-kuvaajan pinta-ala kertoo?
+---
+$(t,x)$-kuvaajan kulmakerroin on nopeus. $(t,v)$-kuvaajan pinta-ala on siirtymä.
+```
+
 <svg data-fig="kartta" viewBox="0 0 380 724" role="img" aria-label="Tunnistuskaavio auttaa valitsemaan oikean lain tai menetelmän. Katso, mitä tehtävässä tiedetään tai mikä kuvaaja on annettu. Vakionopeus: paikka ajan mukaan on x on x nolla plus v t. Kiihtyvyys on vakio: nopeus ajan mukaan on v on v nolla plus a t. Kiihtyvyys on vakio ja matkaa kysytään: paikka on x nolla plus v nolla t plus puolet a t toiseen potenssiin. Vakiokiihtyvyys, a ei tiedossa: keskinopeus, jolloin siirtymä on alku- ja loppunopeuden keskiarvo kertaa aika. Nopeus paikkakuvaajasta: kulmakerroin, v on delta x per delta t. Kiihtyvyys nopeuskuvaajasta: kulmakerroin, a on delta v per delta t. Matka nopeuskuvaajasta: kuvaajan ja aika-akselin väliin jäävä pinta-ala." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="680" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
@@ -109,9 +115,21 @@ paikka tasaisesti kiihtyvässä suoraviivaisessa liikkeessä :: x = x_0 + v_0\,t
 
 Tässä $v_0$ on alkunopeus ($\text{m/s}$) ja $a$ on kiihtyvyys ($\text{m/s}^2$). Vauhti kasvaa, kun $a$ ja $v$ ovat samansuuntaiset. Vauhti pienenee, kun ne ovat vastakkaissuuntaiset. Vapaassa pudotuksessa $a = g = 9{,}81\,\text{m/s}^2$ alaspäin, kun ilmanvastus on pieni.
 
+```pysahdy
+Kappale liikkuu positiiviseen suuntaan ja sen kiihtyvyys on negatiivinen. Kasvaako vai pieneneekö vauhti?
+---
+Vauhti pienenee. Nopeus ja kiihtyvyys ovat vastakkaissuuntaiset.
+```
+
 ### Kulmakerroin ja pinta-ala
 
 Kun $(t,x)$-kuvaaja on kaareva, hetkellinen nopeus on tangentin kulmakerroin $k$. Tangentti on suora, joka sivuaa eli koskettaa käyrää yhdessä pisteessä. Jos suhde lasketaan käyrän kahden pisteen kautta, saadaan keskinopeus. Siirtymä on $(t,v)$-kuvaajan ja aika-akselin välinen pinta-ala. Akselin alapuolella oleva osa lasketaan negatiivisena.
+
+```pysahdy
+Osa $(t,v)$-kuvaajasta on aika-akselin alapuolella. Miten tämä osa vaikuttaa siirtymään?
+---
+Alapuolella oleva pinta-ala lasketaan negatiivisena. Siksi se pienentää siirtymää.
+```
 
 <svg data-fig="kuvaajat" viewBox="0 0 440 650" role="img" aria-label="Kaavakuva: yksi liike kahtena kuvaajana. Kuvaajilla on sama aika-akseli. Alhaalla on nopeuden kuvaaja. Nopeus kasvaa nollasta tasaisesti hetkeen t1 asti. Se pysyy vakiona hetkeen t2 asti. Sitten se pienenee tasaisesti nollaan hetkellä t3. Kuvaajan alle jäävä alue on vihreä. Sen pinta-ala on siirtymä Δx. Ylhäällä on paikan kuvaaja. Ensin on käyrä, joka kaartuu ylöspäin. Sitten on nouseva suora. Lopuksi on käyrä, joka loivenee vaakasuoraksi. Paikka kasvaa koko liikkeen aikana yhteensä Δx. Käyrän pisteeseen P on piirretty sininen tangentti. Sen kulmakerroin k on nopeus v_P. Sama arvo on merkitty myös alempaan kuvaajaan." style="max-width:100%;font-size:21px">
   <line x1="49" y1="280" x2="370" y2="280" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
