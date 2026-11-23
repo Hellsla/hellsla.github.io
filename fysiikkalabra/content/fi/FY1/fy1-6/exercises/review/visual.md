@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 781e52dc9f0c3723
+CONTENT-HASH: 0b16b34359b806e5
 
 ## Blocking
 - none
@@ -8,7 +8,8 @@ CONTENT-HASH: 781e52dc9f0c3723
 - none
 
 ## Checked
-- delta: opened open-exercises L2-1280-9, -10 (task 6-16, Periaate in four paragraphs), L3-1280-3, -5, -6, -7 (surrounding tasks, filter-paper Vastaus). Paragraph spacing consistent, formulas and boxes intact, no clipping; captures current for the hash.
+- delta 8g (Kaava steps as aligned display blocks), captures from the lesson's review/shots folder (current for this hash): open-exercises-L3-1280-7 (five-row Kaava).
+- Rows align at the relation sign, no clipping or overflow, fractions and subscripts legible, blocks sit apart from the text, the trailing "Tässä …" sentences read as their own line under the block; Muunnokset, Sijoitus, Vastaus and Järkevyys survived. No figures in the delta.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5
