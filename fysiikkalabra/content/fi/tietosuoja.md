@@ -6,9 +6,11 @@ Ruukkilabra ei kerää opiskelijoiden tietoja. Sivustolla ei ole palvelinta, jok
 
 Jotta työsi ei katoa, kun suljet sivun, Ruukkilabra tallentaa joitakin asioita vain tämän laitteen selaimeen: tehtävien ratkaisut ja vastaukset (editoriin kirjoitetut ratkaisut kaavoineen ja liitettyine kuvineen, numerovastaukset, valinnat ja kirjoitetut vastaukset), ennusteet ja mittaustulokset, itsearviot, tehdyiksi laskettujen tehtävien ajat, oppitunnin edistymisen, käsitekorttien etenemisen sekä ääneenluvun asetukset ja puhemallin. Kun tallennat ensimmäisen ratkaisun, sivusto pyytää selainta säilyttämään tiedot pysyvästi, jotta selain ei poista niitä itsestään levytilan käydessä vähiin. Lisäksi selain tallentaa avaamasi sivut tiedostoineen tälle laitteelle, jotta ne avautuvat myös ilman verkkoyhteyttä.
 
+FY9-kertauskurssilla selain kirjaa lisäksi, mitä tehtäviä olet yrittänyt, meniko yritys oikein, melkein oikein vai väärin, montako vihjettä avasit ja mitä pisteitä itse annoit vastauksellesi. Kirjaus on vain tämän laitteen selaimessa. Siinä ei ole nimeäsi eikä kirjoittamaasi tekstiä, eikä sitä lähetetä minnekään.
+
 Ruukkilabra ei lähetä näitä tietoja automaattisesti opettajalle eikä muualle, eikä opettaja näe niitä selaimestasi.
 
-Varmuuskopioksi voit tallentaa kaiken tämän selaimen työn yhteen tiedostoon laitteellesi ja avata sen toisella laitteella. Tiedostossa ovat kaikkien opintojaksojen työt (ratkaisut ja vastaukset, itsearviot, tehdyiksi laskettujen tehtävien ajat) sekä käsitekorttien eteneminen ja viimeksi avattu luku sekä tarkistussumma. Siinä ei ole nimeäsi, yhteystietojasi eikä ääneenluvun asetuksia. Tämä tiedosto ei ole palautus: opettajan arviointisivu ei ota sitä vastaan, vaan palautat työn opintojakson omalla työtiedostolla.
+Varmuuskopioksi voit tallentaa kaiken tämän selaimen työn yhteen tiedostoon laitteellesi ja avata sen toisella laitteella. Tiedostossa ovat kaikkien opintojaksojen työt (ratkaisut ja vastaukset, itsearviot, tehdyiksi laskettujen tehtävien ajat, FY9-kurssin tehtäväkirjaus) sekä käsitekorttien eteneminen ja viimeksi avattu luku sekä tarkistussumma. Siinä ei ole nimeäsi, yhteystietojasi eikä ääneenluvun asetuksia. Tämä tiedosto ei ole palautus: opettajan arviointisivu ei ota sitä vastaan, vaan palautat työn opintojakson omalla työtiedostolla.
 
 <div class="work-tools" id="kaikki-tyo" hidden></div>
 
@@ -32,7 +34,7 @@ Palautettua työtä käsitellään koulun opetuksessa samoin kuin muissakin koul
 
 ## Miten poistan tiedot?
 
-Voit tyhjentää selaimeen tallentuneet tiedot milloin tahansa poistamalla selaimen sivustotiedot (selaimen asetuksista kohdasta Evästeet ja sivustotiedot). Jos käytät yhteiskäyttöistä konetta, tyhjennä tiedot lopuksi tai käytä yksityistä selausikkunaa. Tallentamasi työtiedostot ovat laitteellasi tavallisia tiedostoja, joten poista ne itse. Tyhjentäminen ei poista tiedostoa, jonka olet jo palauttanut.
+Voit tyhjentää selaimeen tallentuneet tiedot milloin tahansa poistamalla selaimen sivustotiedot (selaimen asetuksista kohdasta Evästeet ja sivustotiedot). Jos käytät yhteiskäyttöistä konetta, tyhjennä tiedot lopuksi tai käytä yksityistä selausikkunaa. Tallentamasi työtiedostot ovat laitteellasi tavallisia tiedostoja, joten poista ne itse. Tyhjentäminen ei poista tiedostoa, jonka olet jo palauttanut. Tehtäväkirjaus poistuu samalla, kun poistat selaimen sivustotiedot.
 
 ## Ulkopuoliset palvelut
 

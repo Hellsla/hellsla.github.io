@@ -125,7 +125,7 @@ def hero():
 
 def forces():
     """Force diagrams of the jumper as a rectangle: at rest N = G; during the push N > G and the acceleration is up."""
-    f = Fig("fy10h-forces", 340, "Kaksi voimakuviota, hyppääjä suorakulmiona. Vasemmalla hyppääjä seisoo levossa "
+    f = Fig("fy10h-forces", 340, "Kaaviokuva: kaksi voimakuviota, hyppääjä suorakulmiona. Vasemmalla hyppääjä seisoo levossa "
             "voimalevyllä: paino G osoittaa keskipisteestä alas ja levyn tukivoima N alapinnasta ylös, ja nuolet ovat "
             "yhtä pitkät. Oikealla hyppääjä ponnistaa: tukivoima N on pidempi kuin paino G, ja hyppääjän vieressä "
             "oleva oranssi nuoli a näyttää kiihtyvyyden ylöspäin.")

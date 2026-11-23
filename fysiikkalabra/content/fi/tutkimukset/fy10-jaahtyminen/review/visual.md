@@ -1,19 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: e443be27d6efa8e8
+CONTENT-HASH: d1d2bc69e563c49b
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] linear figure (fig-3 at 1280, ln graph) — the y-axis label `\ln(T-T_\text{huone})` sits right at the arrowhead and the grey `\ln(T_0-T_\text{huone})` is above the intercept dot, not level with it — put the intercept label at the dot's height, shift the axis title up.
-- [Minor] model graph — the curve carries no markers and no note that it is schematic, not data — add "kaaviokuva, ei mittaustulos" to the description or caption.
-- [Minor] displayed equation `\ln(T-T_\text{huone}) = \ln(T_0-T_\text{huone}) - k\cdot t` wraps with the `- k\cdot t` centred on its own row; fine on a phone, but at 1280 px it is short enough to fit on one line — let mathlayout keep it on one line where it fits.
-- [Minor] `$1\ \text{dl}$` uses `\ ` where the house form is `\,` (thin space) — change to `1\,\text{dl}` (also check other units).
-- [Minor] fig-2/4/6/8-390 captures are blank 1-px files (lazy-loaded figures); the figures themselves were judged from the contact sheet and page captures — fix the capture script, not the page.
+- [Minor] fig 3 (linear model graph) — the grey axis intercept label $\ln(T_0-T_\text{huone})$ sits slightly off the y-axis next to the point; a short leader or placing it directly beside the dot would read more clearly.
+- [Minor] fig 2 (model graph) — the green "lämpötilaero", "puolet" and "neljännes" labels are small at 390 px (about 9 px); a slightly larger type would help a phone reader.
+- [Minor] fig 4 (set-up) — the room thermometer's reading is not marked as the second sensor ("toinen lämpötilamittari"); the caption or an aria text could say it is the room reference.
+- [Minor] page, Suunnittele and Mittaa — the empty data table has only three rows and no caption; a short "esimerkkitaulukko" caption would tell it is a template (optional).
 
-## Checked (delta 2026-11-16)
-- Changed: `\,` in units, in table headers and in teacher.md. Opened page-390-7 (1 dl, 60 degC and 10 s render with thin spaces; the earlier Polish on `\ ` is resolved).
-- Delta of text and typography only; no figure changed (figure findings above are the teacher's redraw queue, not Blocking).
+## Checked
+- Opened at readable size: top-390, top-1280, fig-1…fig-4 (390), contact-1 and contact-2 (all captures triaged), page-1280-3, -5, -6, page-390-6 and -10 (theory, model graphs, planning, measurement table, fitting options).
+- Figures: hero illustration clean and restrained; model graph and ln graph have quantities, T_huone dashed, half-life markers, no clipping; set-up diagram labelled in LaTeX, legible.
+- Maths: KaTeX renders, display equations centred, $\cdot$ used, units upright with thin space ($1\,\text{dl}$, $60\,{}^\circ\text{C}$), long chain wraps on a phone (page-390-6).
+- Finnish: natural, consistent instruction voice, headings consistent; no mechanical phrasing found. Draft banner "Luonnos" expected.
+- Not separately opened: the remaining part captures (read through contact sheets only), open-ennusta-1280.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -2,7 +2,7 @@
 **Given:** $t_1 = 0.52\,\text{s}$, $t_2 = 0.48\,\text{s}$, $t_3 = 0.55\,\text{s}$, $t_4 = 0.49\,\text{s}$; the number of measurements is $n = 4$
 **Find:** the mean of the series $\bar{t}$ in the unit $\text{s}$
 **Principle:** Every measurement has a random error, which throws the result in one direction or another. When the results are added up and the sum is divided by the number of measurements, the deviations partly cancel each other. So the mean is a better estimate than a single result.
-**Formula:** $\bar{t} = \dfrac{t_1 + t_2 + t_3 + t_4}{n}$
+**Formula:** $$\begin{aligned} \bar{t} &= \dfrac{\sum t_i}{n} \\ &= \dfrac{t_1 + t_2 + t_3 + t_4}{4} \end{aligned}$$
 **Conversions:** All times are in seconds, so there is no need to convert units.
 **Substitution:** The sum is $0.52\,\text{s} + 0.48\,\text{s} + 0.55\,\text{s} + 0.49\,\text{s} = 2.04\,\text{s}$, so $\bar{t} = \dfrac{2.04\,\text{s}}{4} = 0.51\,\text{s}$
 **Answer:** $0.51\,\text{s}$, two significant figures like the measurement results (the divisor $4$ is an exact count).
@@ -29,7 +29,7 @@ Only the two extremes determine the range, so the other points are not needed.
 **Reading the graph:** The vertical lines of the axis are $0.1\,\text{s}$ apart and the numbers $0.2\,\text{s}$ apart. The leftmost point is on the line $12.2\,\text{s}$, so $t_\text{min} = 12.2\,\text{s}$. The rightmost point is on the line that is one interval to the right of the number $12.8$, so $t_\text{max} = 12.9\,\text{s}$.
 
 The other points are at $12.4\,\text{s}$, $12.6\,\text{s}$ and $12.7\,\text{s}$.
-**Formula:** $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$
+**Formula:** $$\begin{aligned} \Delta t &= \tfrac{1}{2}\left(t_\text{max} - t_\text{min}\right) \\ &= \dfrac{t_\text{max} - t_\text{min}}{2} \end{aligned}$$
 **Conversions:** All times are in seconds, so no conversions are needed.
 **Substitution:** $\Delta t = \dfrac{12.9\,\text{s} - 12.2\,\text{s}}{2} = \dfrac{0.7\,\text{s}}{2} = 0.35\,\text{s}$
 **Answer:** $0.35\,\text{s}$ is exactly half of the range. The uncertainty is stated with one significant figure, so in a report it is $0.4\,\text{s}$. Both answers are accepted.
@@ -39,7 +39,7 @@ The other points are at $12.4\,\text{s}$, $12.6\,\text{s}$ and $12.7\,\text{s}$.
 **Given:** the reading of the scale when empty (zero reading) $m_0 = 0.9\,\text{g}$, the reading with the object $m_\text{reading} = 36.4\,\text{g}$
 **Find:** the mass of the object $m$ in the unit $\text{g}$
 **Principle:** The scale adds the same amount $0.9\,\text{g}$ to every reading, because it already shows it when empty. This is a systematic error, and it is corrected by subtracting the zero reading from the reading.
-**Formula:** $m = m_\text{reading} - m_0$
+**Formula:** $$\begin{aligned} m_\text{reading} &= m + m_0 \\ m &= m_\text{reading} - m_0 \end{aligned}$$
 **Conversions:** Both readings are in grams, so no conversions are needed.
 **Substitution:** $m = 36.4\,\text{g} - 0.9\,\text{g} = 35.5\,\text{g}$
 **Answer:** $35.5\,\text{g}$, three significant figures; both readings are known to one decimal place.
@@ -51,7 +51,7 @@ The other points are at $12.4\,\text{s}$, $12.6\,\text{s}$ and $12.7\,\text{s}$.
 **Principle:** A reading is taken from the scale according to the nearest scale mark.
 
 In a simple situation the uncertainty of the reading is estimated as half of a scale division; the total uncertainty can be larger if, for example, the edge of the object is unclear or the scale is viewed from the side.
-**Formula:** $\Delta x = \dfrac{d}{2}$
+**Formula:** $$\begin{aligned} \Delta x &= \tfrac{1}{2} d \\ &= \dfrac{d}{2} \end{aligned}$$
 **Conversions:** The scale division is already in millimetres, so no conversions are needed.
 **Substitution:** $\Delta x = \dfrac{1.0\,\text{mm}}{2} = 0.5\,\text{mm}$
 **Answer:** $0.5\,\text{mm}$; the error estimate is a rough estimate, so it is stated with one significant figure.
@@ -63,7 +63,7 @@ So the uncertainty of the reading is smaller than a scale division, but the tota
 **Given:** $t = 1.84\,\text{s}$, $1.91\,\text{s}$, $1.78\,\text{s}$, $1.88\,\text{s}$, $1.96\,\text{s}$ and $1.82\,\text{s}$; $n = 6$, $t_\text{min} = 1.78\,\text{s}$, $t_\text{max} = 1.96\,\text{s}$
 **Find:** the ratio of the estimate of random error $\Delta t$ to the mean $\bar{t}$ as a percentage
 **Principle:** The estimate of random error is half of the range, and the precision of the result is best described by its ratio to the result, the relative uncertainty. The mean is taken as the result, because it reduces the effect of random error.
-**Formula:** $\bar{t} = \dfrac{t_1 + \dots + t_6}{n}$, $\Delta t = \dfrac{t_\text{max} - t_\text{min}}{2}$ and $\varepsilon = \dfrac{\Delta t}{\bar{t}} \cdot 100\,\%$
+**Formula:** $$\begin{aligned} \bar{t} &= \dfrac{t_1 + \dots + t_6}{6} \\ \Delta t &= \dfrac{t_\text{max} - t_\text{min}}{2} \\ \varepsilon &= \dfrac{\Delta t}{\bar{t}} \cdot 100\,\% \end{aligned}$$
 **Conversions:** The times are in seconds and the ratio has no unit. It is multiplied by a hundred to get percent.
 **Substitution:** $\bar{t} = \dfrac{11.19\,\text{s}}{6} = 1.865\,\text{s}$ and $\Delta t = \dfrac{1.96\,\text{s} - 1.78\,\text{s}}{2} = 0.09\,\text{s}$, so $\varepsilon = \dfrac{0.09\,\text{s}}{1.865\,\text{s}} \cdot 100\,\% = 4.83\,\%$
 **Answer:** $5\,\%$, one significant figure like the error estimate $0.09\,\text{s}$ (calculator value $4.83\,\%$).
@@ -75,7 +75,7 @@ So the uncertainty of the reading is smaller than a scale division, but the tota
 **Principle:** The rod is the same length all the time, and the worn start of the tape adds the same amount to every reading: this is a systematic error.
 
 The readings vary slightly because of random error, so the error is estimated as the difference between the mean of the readings and the true value.
-**Formula:** $\bar{L} = \dfrac{L_1 + L_2 + L_3}{3}$ and $\Delta L_\text{sys} = \bar{L} - L_0$
+**Formula:** $$\begin{aligned} \bar{L} &= \dfrac{L_1 + L_2 + L_3}{3} \\ \Delta L_\text{sys} &= \bar{L} - L_0 \end{aligned}$$
 **Conversions:** The result comes out in metres. Since $1\,\text{m} = 1000\,\text{mm}$, $1000\,\text{mm}$ is written in place of the metre.
 **Substitution:** The sum is $$\begin{aligned} &1.012\,\text{m} + 1.009\,\text{m} \\ &+ 1.011\,\text{m} \\ &= 3.032\,\text{m} \end{aligned}$$, so $\bar{L} = \dfrac{3.032\,\text{m}}{3} = 1.01067\,\text{m}$ and $\Delta L_\text{sys} = 1.01067\,\text{m} - 1.000\,\text{m} = 0.01067\,\text{m}$, that is, $\Delta L_\text{sys} = 0.01067 \cdot 1000\,\text{mm} = 10.67\,\text{mm}$
 **Answer:** $10.7\,\text{mm}$ (calculator value $10.67\,\text{mm}$). The half-range of the readings is $1.5\,\text{mm}$; its first figure is 1, so it is given with two figures and the result to tenths of a millimetre: $10.7\,\text{mm} \pm 1.5\,\text{mm}$.
@@ -85,7 +85,7 @@ The readings vary slightly because of random error, so the error is estimated as
 **Given:** $L_1 = 12.4\,\text{cm}$, $L_2 = 0.125\,\text{m}$, $L_3 = 123\,\text{mm}$
 **Find:** the mean $\bar{L}$ in the unit $\text{cm}$
 **Principle:** A mean can be calculated only from numbers in the same unit, because numbers in different units cannot be added. So convert all results to centimetres first.
-**Formula:** $\bar{L} = \dfrac{L_1 + L_2 + L_3}{3}$
+**Formula:** $$\begin{aligned} \bar{L} &= \dfrac{\sum L_i}{n} \\ &= \dfrac{L_1 + L_2 + L_3}{3} \end{aligned}$$
 **Conversions:** $100\,\text{cm}$ is written in place of the metre and $0.1\,\text{cm}$ in place of the millimetre: $0.125 \cdot 100\,\text{cm} = 12.5\,\text{cm}$ and $123 \cdot 0.1\,\text{cm} = 12.3\,\text{cm}$.
 **Substitution:** The sum is $$\begin{aligned} &12.4\,\text{cm} + 12.5\,\text{cm} \\ &+ 12.3\,\text{cm} \\ &= 37.2\,\text{cm} \end{aligned}$$, so $\bar{L} = \dfrac{37.2\,\text{cm}}{3} = 12.4\,\text{cm}$
 **Answer:** $12.4\,\text{cm}$, three significant figures like the measurement results.
@@ -95,7 +95,7 @@ The readings vary slightly because of random error, so the error is estimated as
 **Given:** instrument A: $5.2$, $5.6$, $5.4$, $5.3$ and $5.5\,\text{cm}$; instrument B: $5.40$, $5.43$, $5.41$, $5.42$ and $5.44\,\text{cm}$
 **Find:** the ratio $k = \dfrac{\Delta x_\text{A}}{\Delta x_\text{B}}$, where $\Delta x$ is half of the range
 **Principle:** Half of the range describes the size of the random error, that is, how well the measurement repeats. A smaller half means better repeatability, so the ratio tells how much better one instrument repeats.
-**Formula:** $\Delta x = \dfrac{x_\text{max} - x_\text{min}}{2}$ for both instruments, and $k = \dfrac{\Delta x_\text{A}}{\Delta x_\text{B}}$
+**Formula:** $$\begin{aligned} \Delta x_\text{A} &= \dfrac{x_\text{max,A} - x_\text{min,A}}{2} \\ \Delta x_\text{B} &= \dfrac{x_\text{max,B} - x_\text{min,B}}{2} \\ k &= \dfrac{\Delta x_\text{A}}{\Delta x_\text{B}} \end{aligned}$$
 **Conversions:** All lengths are in centimetres. In the ratio the units cancel, so no conversions are needed.
 **Substitution:** $\Delta x_\text{A} = \dfrac{5.6\,\text{cm} - 5.2\,\text{cm}}{2} = 0.2\,\text{cm}$ and $\Delta x_\text{B} = \dfrac{5.44\,\text{cm} - 5.40\,\text{cm}}{2} = 0.02\,\text{cm}$, so $k = \dfrac{0.2\,\text{cm}}{0.02\,\text{cm}} = 10$
 **Answer:** $10$ times; the differences $0.4\,\text{cm}$ and $0.04\,\text{cm}$ are one-figure numbers, so the ratio is given with one significant figure.
@@ -105,7 +105,7 @@ The readings vary slightly because of random error, so the error is estimated as
 **Given:** starting delay $\tau_1 = 0.18\,\text{s}$ (the stopwatch starts too late), stopping delay $\tau_2 = 0.12\,\text{s}$ (the stopwatch stops too late)
 **Find:** the systematic error $\Delta t_\text{sys}$ = reading − true time, with its sign, in the unit $\text{s}$
 **Principle:** The delays are the same in every measurement, so they are systematic. A stopwatch that starts late lags behind and the reading is too short, and a stopwatch that stops late shows too much. So the delays act in opposite directions.
-**Formula:** reading $= t_\text{true} - \tau_1 + \tau_2$, so the error is $\Delta t_\text{sys} = \tau_2 - \tau_1$
+**Formula:** $$\begin{aligned} t_\text{reading} &= t_\text{true} - \tau_1 + \tau_2 \\ \Delta t_\text{sys} &= t_\text{reading} - t_\text{true} \\ &= \tau_2 - \tau_1 \end{aligned}$$
 **Conversions:** Both delays are in seconds, so no conversions are needed.
 **Substitution:** $\Delta t_\text{sys} = 0.12\,\text{s} - 0.18\,\text{s} = -0.06\,\text{s}$
 **Answer:** $-0.06\,\text{s}$, two decimal places like the delays. The minus sign tells that the reading is too short.
@@ -117,7 +117,7 @@ If the reading were $3.44\,\text{s}$, the true time would be $3.50\,\text{s}$.
 **Given:** the number of sheets $n = 250$, the smallest scale division $d = 1.0\,\text{mm}$
 **Find:** the error estimate of the thickness of one sheet $\Delta h_1$ in the unit $\mu\text{m}$
 **Principle:** The thickness of the stack is the sum of $n$ equally thick sheets, $h = n h_1$. The reading of the stack's thickness has an uncertainty, and because the number of sheets is exact, the uncertainty of the thickness of one sheet is the uncertainty of the stack divided by $n$.
-**Formula:** $\Delta h = \dfrac{d}{2}$ and $\Delta h_1 = \dfrac{\Delta h}{n}$, so $\Delta h_1 = \dfrac{d}{2n}$
+**Formula:** $$\begin{aligned} \Delta h &= \dfrac{d}{2} \\ \Delta h_1 &= \dfrac{\Delta h}{n} \\ &= \dfrac{d}{2n} \end{aligned}$$
 **Conversions:** The result comes out in millimetres. Since $1\,\text{mm} = 1000\,\mu\text{m}$, $1000\,\mu\text{m}$ is written in place of the millimetre.
 **Substitution:** $\Delta h_1 = \dfrac{1.0\,\text{mm}}{2 \cdot 250} = \dfrac{0.5\,\text{mm}}{250} = 0.0020\,\text{mm}$, that is, $\Delta h_1 = 0.0020 \cdot 1000\,\mu\text{m} = 2.0\,\mu\text{m}$
 **Answer:** $2\,\mu\text{m}$, one significant figure, because the error estimate is rounded to one significant figure; the number of sheets is an exact number.
@@ -127,7 +127,7 @@ If the reading were $3.44\,\text{s}$, the true time would be $3.50\,\text{s}$.
 **Given:** true value $x_\text{true} = 8.00\,\text{cm}$; readings $8.04$, $8.07$, $8.05$, $8.09$ and $8.05\,\text{cm}$; $n = 5$
 **Find:** the estimate of the systematic error $\Delta x_\text{sys}$ in the unit $\text{cm}$
 **Principle:** The readings are close together but all clearly above the true value. The mean reduces random error, so its difference from the true value describes the systematic error that remains.
-**Formula:** $\bar{x} = \dfrac{x_1 + \dots + x_5}{n}$ and $\Delta x_\text{sys} = \bar{x} - x_\text{true}$
+**Formula:** $$\begin{aligned} \bar{x} &= \dfrac{x_1 + \dots + x_5}{5} \\ \Delta x_\text{sys} &= \bar{x} - x_\text{true} \end{aligned}$$
 **Conversions:** All lengths are in centimetres, so no conversions are needed.
 **Substitution:** The sum is $$\begin{aligned} &8.04\,\text{cm} + 8.07\,\text{cm} + 8.05\,\text{cm} \\ &+ 8.09\,\text{cm} + 8.05\,\text{cm} \\ &= 40.30\,\text{cm} \end{aligned}$$, so $\bar{x} = \dfrac{40.30\,\text{cm}}{5} = 8.06\,\text{cm}$ and $\Delta x_\text{sys} = 8.06\,\text{cm} - 8.00\,\text{cm} = 0.06\,\text{cm}$
 **Answer:** $0.06\,\text{cm}$, one significant figure; the difference is to two decimal places.
@@ -148,7 +148,7 @@ The wrongly recorded number $34.2\,\text{s}$ is a gross error, which is checked 
 **Given:** $x_1 = 5.41\,\text{cm}$, $x_2 = 5.47\,\text{cm}$, $x_3 = 5.39\,\text{cm}$, $x_4 = 5.44\,\text{cm}$, $x_5 = 5.43\,\text{cm}$; $n = 5$
 **Find:** the mean $\bar{x}$ in $\text{cm}$, rounded to the precision of the error estimate $\Delta x$
 **Principle:** The result is given in the form $\bar{x} \pm \Delta x$. The error estimate is rounded to one significant figure (two if the first figure is 1), and the mean is rounded to the same decimal place, because the figures after the decimal place of the error estimate are already uncertain.
-**Formula:** $\bar{x} = \dfrac{x_1 + x_2 + x_3 + x_4 + x_5}{n}$ and $\Delta x = \dfrac{x_\text{max} - x_\text{min}}{2}$
+**Formula:** $$\begin{aligned} \bar{x} &= \dfrac{x_1 + x_2 + x_3 + x_4 + x_5}{5} \\ \Delta x &= \dfrac{x_\text{max} - x_\text{min}}{2} \end{aligned}$$
 **Conversions:** All lengths are in centimetres, so no conversions are needed.
 **Substitution:** The sum of the results is $$\begin{aligned} &5.41\,\text{cm} + 5.47\,\text{cm} + 5.39\,\text{cm} \\ &+ 5.44\,\text{cm} + 5.43\,\text{cm} \\ &= 27.14\,\text{cm} \end{aligned}$$, so $\bar{x} = \dfrac{27.14\,\text{cm}}{5} = 5.428\,\text{cm}$ and $\Delta x = \dfrac{5.47\,\text{cm} - 5.39\,\text{cm}}{2} = 0.04\,\text{cm}$
 **Answer:** $5.43\,\text{cm}$, because the error estimate $0.04\,\text{cm}$ is a one-figure number at the hundredths place (the first figure is not 1). The result is $5.43\,\text{cm} \pm 0.04\,\text{cm}$.
@@ -160,7 +160,7 @@ The wrongly recorded number $34.2\,\text{s}$ is a gross error, which is checked 
 **Principle:** The uncertainty of each reading is estimated as half of the smallest reading interval: when reading a scale, the reading is placed between the marks, and a digital display rounds the reading to the nearest step.
 
 A smaller reading interval means a smaller reading uncertainty, so the calliper is the more precise instrument. This is an estimate of the reading; the total uncertainty of a measurement can also be affected by the instrument and the method.
-**Formula:** $\Delta x = \dfrac{d}{2}$ for both instruments, and the comparison is the ratio $\Delta x_\text{r} : \Delta x_\text{c}$
+**Formula:** $$\begin{aligned} \Delta x_\text{r} &= \dfrac{d_\text{r}}{2} \\ \Delta x_\text{c} &= \dfrac{d_\text{c}}{2} \\ \Delta x_\text{r} : \Delta x_\text{c} &= \dfrac{\Delta x_\text{r}}{\Delta x_\text{c}} \end{aligned}$$
 **Conversions:** Both intervals are in millimetres, so no conversions are needed.
 **Substitution:** $\Delta x_\text{r} = \dfrac{1.0\,\text{mm}}{2} = 0.5\,\text{mm}$ and $\Delta x_\text{c} = \dfrac{0.01\,\text{mm}}{2} = 0.005\,\text{mm}$, so $0.5\,\text{mm} : 0.005\,\text{mm} = 100$
 **Answer:** $100$ times smaller. The ratio is exact, because both uncertainties are estimated with the same rule (half of the reading interval). The reading uncertainty of the calliper is a hundredth of that of the ruler.
@@ -172,7 +172,7 @@ A smaller reading interval means a smaller reading uncertainty, so the calliper 
 **Principle:** A time taken by hand has a random error, so the result is the mean and the error estimate is half of the range.
 
 The time of one revolution is obtained from the time of ten revolutions by dividing both the mean and the error estimate by the exact number $10$.
-**Formula:** $\bar{t}_{10} = \dfrac{t_1 + \dots + t_8}{n}$, $\;\Delta t_{10} = \dfrac{t_\text{max} - t_\text{min}}{2}$, $\;\bar{T} = \dfrac{\bar{t}_{10}}{10}$ and $\Delta T = \dfrac{\Delta t_{10}}{10}$
+**Formula:** $$\begin{aligned} \bar{t}_{10} &= \dfrac{t_1 + \dots + t_8}{8} \\ \Delta t_{10} &= \dfrac{t_\text{max} - t_\text{min}}{2} \\ \bar{T} &= \dfrac{\bar{t}_{10}}{10} \\ \Delta T &= \dfrac{\Delta t_{10}}{10} \end{aligned}$$
 **Conversions:** Not needed: all times are in seconds.
 **Substitution:** The sum is $145.61\,\text{s}$, so $\bar{t}_{10} = \dfrac{145.61\,\text{s}}{8} = 18.20125\,\text{s}$ and $\Delta t_{10} = \dfrac{18.35\,\text{s} - 18.05\,\text{s}}{2} = 0.15\,\text{s}$. Thus $\bar{T} = \dfrac{18.20125\,\text{s}}{10} = 1.820125\,\text{s}$ and $\Delta T = \dfrac{0.15\,\text{s}}{10} = 0.015\,\text{s}$.
 **Answer:** The error estimate $0.015\,\text{s}$ is a two-figure number because the first figure is 1, so the result is rounded to thousandths: $T = 1.820\,\text{s} \pm 0.015\,\text{s}$.
@@ -184,7 +184,7 @@ Timing ten revolutions reduces the relative share of the reaction time: the erro
 **Given:** known volume $V_\text{true} = 50.0\,\text{ml}$; the results of group A $50.9\,\text{ml}$, $51.1\,\text{ml}$, $50.8\,\text{ml}$, $51.0\,\text{ml}$, $50.9\,\text{ml}$ and the results of group B $49.4\,\text{ml}$, $50.5\,\text{ml}$, $49.8\,\text{ml}$, $50.3\,\text{ml}$, $50.1\,\text{ml}$
 **Find:** the deviation of the mean of series A $\bar{V}_\text{A} - V_\text{true}$ with its sign in $\text{ml}$; which series is more repeatable and which is closer to the true value
 **Principle:** Repeatability tells about random error, and it is described by the half-range $\Delta V$. The difference between the mean and the known value tells about systematic error, which repeating does not reduce.
-**Formula:** $\bar{V} = \dfrac{V_1 + \dots + V_5}{n}$, $\;\Delta V = \dfrac{V_\text{max} - V_\text{min}}{2}$ and deviation $\bar{V}_\text{A} - V_\text{true}$
+**Formula:** $$\begin{aligned} \bar{V} &= \dfrac{V_1 + \dots + V_5}{5} \\ \Delta V &= \dfrac{V_\text{max} - V_\text{min}}{2} \\ \text{deviation} &= \bar{V}_\text{A} - V_\text{true} \end{aligned}$$
 **Conversions:** Not needed: all volumes are in millilitres.
 **Substitution:** $\bar{V}_\text{A} = \dfrac{254.7\,\text{ml}}{5} = 50.94\,\text{ml}$, so the deviation is $50.94\,\text{ml} - 50.0\,\text{ml} = 0.94\,\text{ml}$. In addition $\Delta V_\text{A} = \dfrac{51.1\,\text{ml} - 50.8\,\text{ml}}{2} = 0.15\,\text{ml}$ and $\Delta V_\text{B} = \dfrac{50.5\,\text{ml} - 49.4\,\text{ml}}{2} = 0.55\,\text{ml}$; $\bar{V}_\text{B} = 50.02\,\text{ml}$.
 **Answer:** $+0.94\,\text{ml}$. The readings are three-figure numbers, and since the error estimate $\Delta V_\text{A} = 0.15\,\text{ml}$ is to hundredths, the deviation is also given in hundredths. Series A is more repeatable ($0.15\,\text{ml} < 0.55\,\text{ml}$), but all its results are over $50\,\text{ml}$, so it has a systematic error.
@@ -196,7 +196,7 @@ The mean of series B is closer to the true value, although its scatter is larger
 **Given:** period $T \approx 1.5\,\text{s}$; uncertainty due to reaction time for the whole measured time $\Delta t = 0.2\,\text{s}$ (an estimate); required relative uncertainty at most $1\,\%$
 **Find:** the minimum number of swings $N$
 **Principle:** Reaction time acts once at the start and once at the end, whether the measured time is short or long. When $N$ swings are timed and the time is divided by $N$, the uncertainty is divided by $N$ as well.
-**Formula:** $\Delta T = \dfrac{\Delta t}{N}$ and the requirement $\dfrac{\Delta T}{T} \le 0.01$, so $\dfrac{\Delta t}{N \cdot T} \le 0.01$, from which $N \ge \dfrac{\Delta t}{0.01 \cdot T}$
+**Formula:** $$\begin{aligned} \Delta T &= \dfrac{\Delta t}{N} \\ \dfrac{\Delta T}{T} &\le 0.01 \\ \dfrac{\Delta t}{N \cdot T} &\le 0.01 \\ N &\ge \dfrac{\Delta t}{0.01 \cdot T} \end{aligned}$$
 **Conversions:** Not needed: all times are in seconds, and $1\,\% = 0.01$.
 **Substitution:** $N \ge \dfrac{0.2\,\text{s}}{0.01 \cdot 1.5\,\text{s}} = 13.33\ldots$
 **Answer:** At least $14$ swings must be timed, because $N$ is an integer and $13$ is not enough ($0.2\,\text{s} : (13 \cdot 1.5\,\text{s}) \approx 1.03\,\%$).
@@ -209,7 +209,7 @@ The mean of series B is closer to the true value, although its scatter is larger
 **Principle:** A clearly deviating result is checked, but it is not removed merely because it deviates. It may be left out only if the reason for the gross error is found and the omission is justified and recorded. Here the notebook note gives the reason: the clock was stopped late.
 
 If no reason is found, the result stays in the data and the deviation is described in the uncertainty.
-**Formula:** $\bar{t} = \dfrac{t_1 + \dots + t_n}{n}$, where $n = 7$ remaining results
+**Formula:** $$\begin{aligned} \bar{t} &= \dfrac{\sum t_i}{n} \\ &= \dfrac{t_1 + \dots + t_n}{n} \\ n &= 7 \end{aligned}$$
 **Conversions:** Not needed: all times are in seconds.
 **Substitution:** The sum of the results is $$\begin{aligned} &2.41\,\text{s} + 2.38\,\text{s} + 2.44\,\text{s} + 2.40\,\text{s} \\ &+ 2.43\,\text{s} + 2.39\,\text{s} + 2.42\,\text{s} \\ &= 16.87\,\text{s} \end{aligned}$$, so $\bar{t} = \dfrac{16.87\,\text{s}}{7} = 2.41\,\text{s}$
 **Answer:** The result may be left out, because the notebook note gives the reason and the omission is recorded; the mean is $2.41\,\text{s}$, three significant figures like the measurements. The half-range is $(2.44\,\text{s} - 2.38\,\text{s}) : 2 = 0.03\,\text{s}$.
@@ -251,7 +251,7 @@ To detect a difference, more accurate timing would be needed, for example a ligh
 **Given:** measurements $1.004$; $1.012$; $1.008$; $1.014$; $1.012$ (in $\text{g/cm}^3$); from the table (MAFY table, density of water at different temperatures) $\rho_\text{table} = 0.998206\,\text{g/cm}^3$ at $20\,{}^\circ\text{C}$
 **Asked:** the deviation of the mean $\bar{x}$ from the table value in percent
 **Principle:** The measurement result is the mean $\bar{x}$, and it is compared with the known table value. The deviation is divided by the table value and given as a percentage.
-**Formula:** $$\bar{x} = \dfrac{x_1 + x_2 + x_3 + x_4 + x_5}{5}$$ and $\text{deviation} = \dfrac{\bar{x} - \rho_\text{table}}{\rho_\text{table}}\cdot100\,\%$
+**Formula:** $$\begin{aligned} \bar{x} &= \dfrac{x_1 + x_2 + x_3 + x_4 + x_5}{5} \\ \text{deviation} &= \dfrac{\bar{x} - \rho_\text{table}}{\rho_\text{table}}\cdot100\,\% \end{aligned}$$
 **Conversions:** All densities are in $\text{g/cm}^3$, so no conversions are needed; the deviation is a dimensionless ratio multiplied by one hundred to give percent.
 **Substitution:** $$\begin{aligned} \bar{x} &= \dfrac{\begin{matrix} 1.004 + 1.012 + 1.008 \\ {} + 1.014 + 1.012 \end{matrix}}{5}\,\dfrac{\text{g}}{\text{cm}^3} \\ &= 1.010\,\dfrac{\text{g}}{\text{cm}^3} \end{aligned}$$ and $$\begin{aligned} &\text{deviation} \\ &= \dfrac{1.010 - 0.998206}{0.998206} \\ &\cdot100\,\% \\ &= 1.18\,\% \end{aligned}$$
 **Answer:** $1.2\,\%$ (more precisely $1.18\,\%$), two significant figures, because the difference $$\begin{aligned} &1.010\,\text{g/cm}^3 \\ &- 0.998\,\text{g/cm}^3 \\ &= 0.012\,\text{g/cm}^3 \end{aligned}$$ has two significant figures. The table value is from the MAFY table (density of water at different temperatures); an answer within about $\pm 4\,\%$ is accepted.
@@ -272,7 +272,7 @@ The speed of light in a vacuum $c = 2.998\cdot10^{8}\,\text{m/s}$ and the deviat
 
 The neutrinos seemed to arrive about $60\,\text{ns}$ sooner than light could have. The result was surprising because by Einstein's theory of relativity nothing travels faster than light, and many earlier experiments had found no deviation from the theory.
 
-**Formula:** In uniform motion $s = ct$, so $t = \dfrac{s}{c}$; the relative deviation $\dfrac{\Delta t}{t}$ and the distance light travels $\Delta s = c\,\Delta t$
+**Formula:** $$\begin{aligned} s &= ct \\ t &= \dfrac{s}{c} \\ \Delta s &= c\,\Delta t \\ \text{relative deviation} &= \dfrac{\Delta t}{t} \end{aligned}$$
 
 **Conversions:** $s = 730\,\text{km} = 7.30\cdot10^{5}\,\text{m}$ and $\Delta t = 60\,\text{ns} = 60\cdot10^{-9}\,\text{s} = 6.0\cdot10^{-8}\,\text{s}$
 

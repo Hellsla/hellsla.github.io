@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 975837ebd5d3d00b
-SCOPE: delta added-exercise from 53e65cceaa271704 base 81db4a6fd727
+CONTENT-HASH: 38d1b5f602474f97
 
 ## Blocking
 - none
 
 ## Polish
-- exercises.json fy1-1-L1-10 — the Sun/Earth diameter ratio is also the start of fy1-1-L2-04 (Sun and Earth diameters, then a sphere comparison) — consider another pair (e.g. Jupiter/Earth) so the two do not feel like repeats.
+- none
 
 ## Checked
-- fy1-1-L1-10: level 1 (one division, lookup given with table name); the halving of d = 2r is explained.
-- Solution has all steps (given, asked, principle, formula, conversions, substitution, answer, sanity check); arithmetic verified.
-- Whole-set fit: the MAFY lookup task adds a new kind (table lookup) at level 1; no repeat of the worked example.
-- Finnish and reading level fine; phone readability not affected (short calculation).
+- Delta: every "Kaava"/"Formula" step in solutions.md now starts from a basic definition or equation and reaches the working form; order is a derivation a student can follow.
+- Physics and symbols agree with the Principle, Substitution and Answer steps; no answer disclosed beyond the model solution.
+- Added "Tässä/Here ..." definitions and merged-paragraph model answers are brief, correct and readable.
+- Aligned-equation blocks read as staged derivations; the packet diff shows them without line breaks, but the files on disk contain proper breaks (checked).
+- No exercise, figure or task text changed (one numeric-feedback spacing fix in exercises.json); levels, context and wording unaffected.

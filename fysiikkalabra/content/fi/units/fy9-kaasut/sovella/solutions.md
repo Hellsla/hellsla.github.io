@@ -420,17 +420,10 @@ Jos pisteet ovat suoralla mutta suora ei kulje origon kautta, se paljastaa syste
 Lisäksi levyyn vaikuttavat paino ja laikan reunan tukivoima, joka painaa levyä alas. Pienimmällä alipaineella reunan tukivoima on nolla: levy on irtoamisen rajalla. Levy kiihtyy ylös, joten Newtonin toisen lain mukaan voimien summa on $ma$ ylöspäin (luku *Newtonin toinen laki*).
 
 <svg data-fig="fy9-kaasut-s6-vaaka" viewBox="0 0 420 270" role="img" aria-label="Voimakuvio: vaakasuora lasilevy kapeana suorakulmiona, kun nosto kiihtyy ylöspäin ja alipaine on pienin mahdollinen. Laikka on harmaana levyn yläpinnan keskellä. Paino G lähtee levyn keskipisteestä suoraan alas. Paine-eron voima F p lähtee levyn yläpinnasta laikan kohdalta ylös, ja se on painoa pidempi, koska levy kiihtyy ylöspäin. Laikan reunan tukivoima on tässä rajatapauksessa nolla. Erillään oranssi kiihtyvyysnuoli a ylöspäin." style="max-width:100%;font-size:24px">
-  <rect x="144" y="113" width="72" height="12" rx="4" fill="#6b7480" stroke="#1f2933" stroke-width="1.5"/>
+  <image href="pics/fy9/fy9-kaasut-sovella-fy9-kaasut-s6-vaaka.webp" x="0" y="0" width="420" height="275.6" preserveAspectRatio="none"/>
   <foreignObject x="70" y="96" width="64" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{laikka}$</div></foreignObject>
-  <rect x="50" y="125" width="260" height="20" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="180" y1="135" x2="180" y2="195.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M180,212.5 L172,194.5 L188,194.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="189.5" y="202" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="180" y1="125" x2="180" y2="55" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M180,38 L188,56 L172,56 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="187.5" y="29.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{p}$</div></foreignObject>
-  <line x1="370" y1="165" x2="370" y2="107" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M376.5,118 L370,105 L363.5,118" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="373.5" y="94.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
 </svg>
 
@@ -456,23 +449,12 @@ $$, joten kiihtyvyys lisää tarvetta noin $12\,\%$, kuten suhde $1{,}2 : 9{,}81
 Vaakasuunnassa levy ei kiihdy, joten $N = F_\text{p}$. Painoa ja kiihdyttävää voimaa vastaan levyä kannattaa vain laikan reunan lepokitka, joka on enintään $\mu_0 N$ (luku *Paino, kitka ja kalteva taso*). Pienimmällä alipaineella lepokitka on suurimmillaan.
 
 <svg data-fig="fy9-kaasut-s6-pysty" viewBox="0 0 420 400" role="img" aria-label="Voimakuvio: pystyasentoon käännetty lasilevy kapeana pystysuorana suorakulmiona, laikka levyn vasemmalla pinnalla, harmaana. Paino G keskipisteestä suoraan alas. Paine-eron voima F p työntää levyä oikealta vaakasuoraan vasemmalle kohti laikkaa. Laikan reunan tukivoima N työntää levyä vasemmalta vaakasuoraan oikealle; se on yhtä suuri kuin F p. Lepokitka F μ0 lähtee levyn vasemmasta yläkulmasta ylös, ja se on painoa pidempi, koska levy kiihtyy ylöspäin. N on noin 1,7 kertaa kitkan pituinen, koska kitka on pienimmillä alipaineella 0,60 kertaa tukivoima. Erillään oranssi kiihtyvyysnuoli a ylöspäin." style="max-width:100%;font-size:24px">
-  <rect x="176" y="160" width="12" height="100" rx="4" fill="#6b7480" stroke="#1f2933" stroke-width="1.5"/>
+  <image href="pics/fy9/fy9-kaasut-sovella-fy9-kaasut-s6-pysty.webp" x="0.9" y="0.9" width="417.9" height="399.6" preserveAspectRatio="none"/>
   <foreignObject x="106" y="265" width="64" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{laikka}$</div></foreignObject>
-  <rect x="188" y="85" width="24" height="250" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="200" y1="210" x2="200" y2="253" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M200,270 L192,252 L208,252 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="211.5" y="255.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="324.5" y1="190" x2="229" y2="190" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M212,190 L230,182 L230,198 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="326" y="153.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_\text{p}$</div></foreignObject>
-  <line x1="75.5" y1="230" x2="171" y2="230" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M188,230 L170,238 L170,222 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="35" y="193.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
-  <line x1="188" y1="85" x2="188" y2="34.5" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M188,17.5 L196,35.5 L180,35.5 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="129" y="11" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_{\mu 0}$</div></foreignObject>
-  <line x1="385" y1="265" x2="385" y2="207" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M391.5,218 L385,205 L378.5,218" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="388.5" y="194.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
 </svg>
 

@@ -2,7 +2,7 @@
 **Annettu:** halkaisija $d = 7{,}5\cdot10^{-6}\,\text{m}$ ja $1\,\mu\text{m} = 10^{-6}\,\text{m}$
 **Kysytty:** halkaisija $d$ mikrometreinä, yksikössä $\mu\text{m}$
 **Periaate:** Mikrometri on miljoonasosa metristä: $1\,\mu\text{m} = 10^{-6}\,\text{m}$. Kun pituus on kirjoitettu muotoon $a\cdot10^{-6}\,\text{m}$, osan $10^{-6}\,\text{m}$ voi korvata yksiköllä $\mu\text{m}$.
-**Kaava:** $10^{-6}\,\text{m} = 1\,\mu\text{m}$
+**Kaava:** $$\begin{aligned} 10^{-6}\,\text{m} &= 1\,\mu\text{m} \end{aligned}$$
 **Muunnokset:** Halkaisija on jo valmiiksi muodossa $7{,}5\cdot10^{-6}\,\text{m}$, joten muuta muokkausta ei tarvita.
 **Sijoitus:** $d = 7{,}5\cdot10^{-6}\,\text{m} = 7{,}5\cdot1\,\mu\text{m} = 7{,}5\,\mu\text{m}$
 **Vastaus:** $7{,}5\,\mu\text{m}$, kaksi merkitsevää numeroa kuten annetussa halkaisijassa.
@@ -13,7 +13,7 @@
 **Kysytty:** suuruusluokkien ero eli kymmenpotenssin askelten määrä
 **Periaate:** Akselilla jokainen viiva on kymmenpotenssi. Yksi askel oikealle on kymmenkertainen koko. Kohteen suuruusluokan eksponentti luetaan sen kohdalla olevasta viivasta. Askelten määrä on eksponenttien erotus.
 **Kuvaajan lukeminen:** Vetyatomin merkki on viivalla $10^{-10}\,\text{m}$, joten $n_\text{atomi} = -10$. Muurahaisen merkki on viivalla $10^{-2}\,\text{m}$, joten $n_\text{muurahainen} = -2$.
-**Kaava:** $\text{askelia} = n_\text{muurahainen} - n_\text{atomi}$
+**Kaava:** $$\begin{aligned} \text{askelia} &= n_\text{suurempi} - n_\text{pienempi} \\ &= n_\text{muurahainen} - n_\text{atomi} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Eksponentit ovat lukuja, joilla ei ole yksikköä.
 **Sijoitus:** $\text{askelia} = -2 - (-10) = -2 + 10 = 8$
 **Vastaus:** $8$ suuruusluokkaa; luku on kokonaisluku, koska merkit ovat tasan viivoilla.
@@ -23,7 +23,7 @@
 **Annettu:** $d = 1{,}27\cdot10^{7}\,\text{m}$ ja $1\,\text{km} = 1000\,\text{m} = 10^{3}\,\text{m}$
 **Kysytty:** halkaisija $d$ kilometreinä, yksikössä $\text{km}$
 **Periaate:** Kilometri on tuhat metriä, $1\,\text{km} = 10^{3}\,\text{m}$. Kirjoitetaan pituus muotoon, jossa on tekijä $10^{3}\,\text{m}$, ja korvataan se yksiköllä $\text{km}$.
-**Kaava:** $10^{3}\,\text{m} = 1\,\text{km}$
+**Kaava:** $$\begin{aligned} 10^{3}\,\text{m} &= 1\,\text{km} \end{aligned}$$
 **Muunnokset:** $10^{7} = 10^{4}\cdot10^{3}$, joten $$\begin{aligned} &1{,}27\cdot10^{7}\,\text{m} \\ &= 1{,}27\cdot10^{4}\cdot10^{3}\,\text{m} \end{aligned}$$.
 **Sijoitus:** $d = 1{,}27\cdot10^{4}\cdot10^{3}\,\text{m} = 1{,}27\cdot10^{4}\,\text{km} = 12\,700\,\text{km}$
 **Vastaus:** $12\,700\,\text{km}$ eli $1{,}27\cdot10^{4}\,\text{km}$, kolme merkitsevää numeroa kuten annetussa halkaisijassa.
@@ -33,7 +33,7 @@
 **Annettu:** lyijyatomin halkaisija $d_\text{atomi} = 3{,}5\cdot10^{-10}\,\text{m}$ ja sen ytimen halkaisija $d_\text{ydin} = 1{,}4\cdot10^{-14}\,\text{m}$
 **Kysytty:** kokojen suhde $k$ (kuinka monta kertaa atomi on ydintään suurempi)
 **Periaate:** Kysymys ”kuinka monta kertaa suurempi” on jakolasku: suurempi koko jaetaan pienemmällä.
-**Kaava:** $k = \dfrac{d_\text{atomi}}{d_\text{ydin}}$
+**Kaava:** $$\begin{aligned} k &= \dfrac{d_\text{suurempi}}{d_\text{pienempi}} \\ &= \dfrac{d_\text{atomi}}{d_\text{ydin}} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Molemmat halkaisijat ovat metreinä, joten yksiköt supistuvat ja $k$ on pelkkä luku.
 **Sijoitus:** $k = \dfrac{3{,}5\cdot10^{-10}\,\text{m}}{1{,}4\cdot10^{-14}\,\text{m}} = 2{,}5\cdot10^{4}$
 **Vastaus:** $25\,000$ kertaa eli $2{,}5\cdot10^{4}$; kaksi merkitsevää numeroa kuten annetuissa halkaisijoissa.
@@ -43,7 +43,7 @@
 **Annettu:** hiuksen paksuus $d_\text{hius} = 7{,}0\cdot10^{-5}\,\text{m}$ ja punasolun halkaisija $d_\text{punasolu} = 7{,}5\cdot10^{-6}\,\text{m}$
 **Kysytty:** kokojen suhde $k$ (kuinka monta kertaa hius on paksumpi)
 **Periaate:** Kysymys ”kuinka monta kertaa suurempi” on jakolasku: suurempi koko jaetaan pienemmällä.
-**Kaava:** $k = \dfrac{d_\text{hius}}{d_\text{punasolu}}$
+**Kaava:** $$\begin{aligned} k &= \dfrac{d_\text{suurempi}}{d_\text{pienempi}} \\ &= \dfrac{d_\text{hius}}{d_\text{punasolu}} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Molemmat pituudet ovat metreinä, joten yksiköt supistuvat ja $k$ on pelkkä luku.
 **Sijoitus:** $k = \dfrac{7{,}0\cdot10^{-5}\,\text{m}}{7{,}5\cdot10^{-6}\,\text{m}} = 9{,}33$
 **Vastaus:** $9{,}3$ kertaa; kaksi merkitsevää numeroa kuten annetuissa mitoissa (kenttään sopii $9{,}33$).
@@ -53,7 +53,7 @@
 **Annettu:** Linnunradan halkaisija $1{,}0\cdot10^{5}$ valovuotta, $1$ valovuosi $= 9{,}46\cdot10^{15}\,\text{m}$ ja havaittavan maailmankaikkeuden halkaisija $D = 8{,}8\cdot10^{26}\,\text{m}$
 **Kysytty:** kuinka monta Linnunradan halkaisijaa $N$ mahtuu havaittavan maailmankaikkeuden halkaisijalle, tuhansina
 **Periaate:** Rivissä olevien halkaisijoiden lukumäärä on pituuksien suhde: suurempi pituus jaetaan pienemmällä. Pituuksien pitää olla samassa yksikössä, joten Linnunradan halkaisija muunnetaan ensin metreiksi.
-**Kaava:** $N = \dfrac{D}{d}$, missä $d$ on Linnunradan halkaisija metreinä
+**Kaava:** $$\begin{aligned} N &= \dfrac{D}{d} \end{aligned}$$ Tässä $d$ on Linnunradan halkaisija metreinä.
 **Muunnokset:** $d = 1{,}0\cdot10^{5}\cdot9{,}46\cdot10^{15}\,\text{m} = 9{,}46\cdot10^{20}\,\text{m}$. Lopuksi tuhansiksi jakamalla luvulla $1000$.
 **Sijoitus:** $N = \dfrac{8{,}8\cdot10^{26}\,\text{m}}{9{,}46\cdot10^{20}\,\text{m}} = 0{,}930\cdot10^{6} = 9{,}30\cdot10^{5} = 930\ \text{tuhatta}$
 **Vastaus:** noin $930$ tuhatta eli $9{,}3\cdot10^{5}$; kaksi merkitsevää numeroa kuten Linnunradan halkaisijassa ja maailmankaikkeuden halkaisijassa.
@@ -63,7 +63,7 @@
 **Annettu:** matka $s = 4{,}0\cdot10^{16}\,\text{m}$, $c = 2{,}998\cdot10^{8}\,\text{m/s}$, yksi vuosi $3{,}156\cdot10^{7}\,\text{s}$
 **Kysytty:** valon matka-aika $t$ vuosina
 **Periaate:** Valo kulkee tasaisella nopeudella, joten aika on matka jaettuna nopeudella. Aika saadaan ensin sekunteina ja muutetaan sitten vuosiksi.
-**Kaava:** $s = c\,t$, joten $t = \dfrac{s}{c}$
+**Kaava:** $$\begin{aligned} s &= c\,t \\ t &= \dfrac{s}{c} \end{aligned}$$
 **Muunnokset:** Yksi vuosi on $3{,}156\cdot10^{7}\,\text{s}$, joten vuosien määrä saadaan, kun sekunnit jaetaan yhden vuoden sekunneilla: montako kertaa vuosi mahtuu aikaan.
 **Sijoitus:** $t = \dfrac{4{,}0\cdot10^{16}\,\text{m}}{2{,}998\cdot10^{8}\,\text{m/s}} = 1{,}334\cdot10^{8}\,\text{s}$ ja vuosina $$\begin{aligned} &1{,}334\cdot10^{8}\,\text{s} : 3{,}156\cdot10^{7}\,\text{s} \\ &= 4{,}23 \end{aligned}$$, eli $t = 4{,}23\,\text{a}$
 **Vastaus:** $4{,}2\,\text{a}$, kaksi merkitsevää numeroa kuten matkassa $4{,}0\cdot10^{16}\,\text{m}$ (kenttään sopii $4{,}23$).
@@ -73,7 +73,7 @@
 **Annettu:** ympärysmitta $s = 4{,}0\cdot10^{7}\,\text{m}$ ja yhden ihmisen pituus $h = 1{,}7\,\text{m}$
 **Kysytty:** ihmisten lukumäärä $N$ miljoonina
 **Periaate:** Jono ulottuu ympäri, kun ihmisten pituudet yhteensä ovat ympärysmitan pituiset. Lukumäärä on siis ympärysmitta jaettuna yhden ihmisen pituudella.
-**Kaava:** $N\,h = s$, joten $N = \dfrac{s}{h}$
+**Kaava:** $$\begin{aligned} s &= N\,h \\ N &= \dfrac{s}{h} \end{aligned}$$
 **Muunnokset:** Pituudet ovat samassa yksikössä, joten tulos on pelkkä luku. Miljoonina ilmaistuna $10^{6}$ jää pois: $1\text{ miljoona} = 10^{6}$.
 **Sijoitus:** $N = \dfrac{4{,}0\cdot10^{7}\,\text{m}}{1{,}7\,\text{m}} = \dfrac{4{,}0}{1{,}7}\cdot10^{7} = 2{,}35\cdot10^{7} = 23{,}5\cdot10^{6}$
 **Vastaus:** $24$ miljoonaa ihmistä eli $2{,}4\cdot10^{7}$, kaksi merkitsevää numeroa kuten annetuissa tiedoissa (kenttään sopii $23{,}5$).
@@ -83,7 +83,7 @@
 **Annettu:** Auringon halkaisija $d_\text{A} = 1{,}39\cdot10^{9}\,\text{m}$, Maan halkaisija $d_\text{M} = 1{,}27\cdot10^{7}\,\text{m}$; tilavuus $V \propto d^{3}$
 **Kysytty:** tilavuuksien suhde $\dfrac{V_\text{A}}{V_\text{M}}$ miljoonina eli kuinka monta Maan tilavuutta mahtuu Auringon tilavuuteen
 **Periaate:** Kun tilavuus on suoraan verrannollinen halkaisijan kuutioon, tilavuuksien suhde on halkaisijoiden suhteen kolmas potenssi. Halkaisijoiden suhde lasketaan ensin.
-**Kaava:** $\dfrac{V_\text{A}}{V_\text{M}} = \left(\dfrac{d_\text{A}}{d_\text{M}}\right)^{3}$
+**Kaava:** $$\begin{aligned} V &\propto d^{3} \\ \dfrac{V_\text{A}}{V_\text{M}} &= \dfrac{d_\text{A}^{3}}{d_\text{M}^{3}} \\ &= \left(\dfrac{d_\text{A}}{d_\text{M}}\right)^{3} \end{aligned}$$
 **Muunnokset:** Halkaisijat ovat samassa yksikössä, joten suhde on pelkkä luku. Vastaus annetaan miljoonina: $1\text{ miljoona} = 10^{6}$.
 **Sijoitus:** $\dfrac{d_\text{A}}{d_\text{M}} = \dfrac{1{,}39\cdot10^{9}}{1{,}27\cdot10^{7}} = 109{,}4$ ja $\left(109{,}4\right)^{3} = 1{,}31\cdot10^{6} = 1{,}31$ miljoonaa
 **Vastaus:** $1{,}31$ miljoonaa eli $1{,}31\cdot10^{6}$, kolme merkitsevää numeroa kuten halkaisijoissa. Auringon tilavuus on siis noin 1,3 miljoonaa Maan tilavuutta.
@@ -93,7 +93,7 @@
 **Annettu:** Maan halkaisija pienoismallissa $d_\text{malli} = 1{,}0\,\text{cm}$; todellinen halkaisija $d_\text{M} = 1{,}27\cdot10^{7}\,\text{m}$ ja etäisyys Auringosta $r = 1{,}50\cdot10^{11}\,\text{m}$
 **Kysytty:** Auringon etäisyys pienoismallissa $r_\text{malli}$ metreinä
 **Periaate:** Pienoismallissa kaikki pituudet pienenevät samalla kertoimella, joten etäisyyden ja halkaisijan suhde on sama kuin todellisuudessa: $\dfrac{r_\text{malli}}{d_\text{malli}} = \dfrac{r}{d_\text{M}}$.
-**Kaava:** $r_\text{malli} = d_\text{malli}\cdot\dfrac{r}{d_\text{M}}$
+**Kaava:** $$\begin{aligned} \dfrac{r_\text{malli}}{r} &= \dfrac{d_\text{malli}}{d_\text{M}} \\ r_\text{malli} &= r\cdot\dfrac{d_\text{malli}}{d_\text{M}} \\ &= d_\text{malli}\cdot\dfrac{r}{d_\text{M}} \end{aligned}$$
 **Muunnokset:** $d_\text{malli} = 1{,}0\,\text{cm} = 0{,}010\,\text{m}$, jotta tulos tulee metreinä.
 **Sijoitus:** $r_\text{malli} = 0{,}010\,\text{m}\cdot\dfrac{1{,}50\cdot10^{11}\,\text{m}}{1{,}27\cdot10^{7}\,\text{m}} = 0{,}010\,\text{m}\cdot1{,}18\cdot10^{4} = 118\,\text{m}$
 **Vastaus:** $120\,\text{m}$ eli $1{,}2\cdot10^{2}\,\text{m}$, kaksi merkitsevää numeroa kuten halkaisijassa $1{,}0\,\text{cm}$ (kenttään sopii $118$).
@@ -103,7 +103,7 @@
 **Annettu:** suuruusluokat: Planckin pituus $1{,}6\cdot10^{-35}\,\text{m}$, protoni $1{,}7\cdot10^{-15}\,\text{m}$, ihminen $1{,}7\,\text{m}$
 **Kysytty:** kummassa välissä on enemmän suuruusluokkia, ja kuinka monta
 **Periaate:** Ensin haetaan kunkin koon suuruusluokka. Kerroin on alle noin 3 jokaisessa luvussa, joten suuruusluokan eksponentti on lukuun kirjoitettu eksponentti. Sitten kahden koon ero on eksponenttien erotus.
-**Kaava:** $n_\text{Planck} = -35$, $n_\text{protoni} = -15$, $n_\text{ihminen} = 0$ ja $\text{askelia} = n_\text{suurempi} - n_\text{pienempi}$
+**Kaava:** $$\begin{aligned} n_\text{Planck} &= -35 \\ n_\text{protoni} &= -15 \\ n_\text{ihminen} &= 0 \\ \text{askelia} &= n_\text{suurempi} - n_\text{pienempi} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Eksponentit ovat yksiköttömiä lukuja.
 **Sijoitus:** Planckin pituudesta protoniin $-15 - (-35) = 20$ askelta ja protonista ihmiseen $0 - (-15) = 15$ askelta
 **Vastaus:** Suurempi ero on $20$ suuruusluokkaa, Planckin pituuden ja protonin välillä. Luku on kokonaisluku, koska suuruusluokat ovat kokonaisia kymmenpotensseja.
@@ -113,7 +113,7 @@
 **Annettu:** viruksen koko $d_\text{v} = 1{,}0\cdot10^{-7}\,\text{m}$ kuvassa $5{,}0\,\text{cm}$; punasolun koko $d_\text{p} = 7{,}5\cdot10^{-6}\,\text{m}$
 **Kysytty:** punasolun leveys kuvassa $w_\text{p}$ senttimetreinä
 **Periaate:** Sama kuva suurentaa kaikkia pituuksia samalla kertoimella $M$. Suurennus saadaan viruksesta. Sillä kerrotaan punasolun todellinen koko.
-**Kaava:** $M = \dfrac{w_\text{v}}{d_\text{v}}$ ja $w_\text{p} = M\,d_\text{p}$
+**Kaava:** $$\begin{aligned} M &= \dfrac{w_\text{v}}{d_\text{v}} \\ w_\text{p} &= M\,d_\text{p} \end{aligned}$$
 **Muunnokset:** $w_\text{v} = 5{,}0\,\text{cm} = 0{,}050\,\text{m}$, jotta pituudet ovat samassa yksikössä.
 **Sijoitus:** $M = \dfrac{0{,}050\,\text{m}}{1{,}0\cdot10^{-7}\,\text{m}} = 5{,}0\cdot10^{5}$ ja $w_\text{p} = 5{,}0\cdot10^{5}\cdot7{,}5\cdot10^{-6}\,\text{m} = 3{,}75\,\text{m} = 375\,\text{cm}$
 **Vastaus:** $380\,\text{cm}$ eli $3{,}8\cdot10^{2}\,\text{cm}$, kaksi merkitsevää numeroa kuten annetuissa mitoissa (kenttään sopii $375$).
@@ -132,7 +132,7 @@ Malli ei ole toistettu havainto, muuttumaton teoria eikä täydellinen totuus. J
 **Annettu:** etäisyys $s = 3{,}84\cdot10^{8}\,\text{m}$ ja valon nopeus $c = 2{,}998\cdot10^{8}\,\text{m/s}$
 **Kysytty:** valon kulkuaika $t$ sekunteina
 **Periaate:** Valo kulkee tyhjiössä tasaisella nopeudella. Kulkuaika on siis matka jaettuna nopeudella.
-**Kaava:** $s = c\,t$, joten $t = \dfrac{s}{c}$
+**Kaava:** $$\begin{aligned} s &= c\,t \\ t &= \dfrac{s}{c} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Matka on metreinä ja nopeus metreinä sekunnissa, joten tulos tulee sekunteina.
 **Sijoitus:** $t = \dfrac{3{,}84\cdot10^{8}\,\text{m}}{2{,}998\cdot10^{8}\,\text{m/s}} = 1{,}2808\,\text{s}$
 **Vastaus:** $1{,}28\,\text{s}$, kolme merkitsevää numeroa kuten annetuissa tiedoissa.
@@ -142,7 +142,7 @@ Malli ei ole toistettu havainto, muuttumaton teoria eikä täydellinen totuus. J
 **Annettu:** hiekanjyvän suuruusluokka $10^{-3}\,\text{m}$ ja viruksen suuruusluokka $10^{-7}\,\text{m}$
 **Kysytty:** kokojen suhde $k$ eli kuinka monta kertaa suurempi hiekanjyvä on
 **Periaate:** Suuruusluokat ovat kymmenpotensseja. Jokainen askel kymmenpotenssista seuraavaan on kymmenkertainen koko. Kun askelia on $n_1 - n_2$, suhde on $10^{n_1 - n_2}$, ei $n_1 - n_2$.
-**Kaava:** $k = \dfrac{10^{n_\text{hiekka}}}{10^{n_\text{virus}}} = 10^{\,n_\text{hiekka} - n_\text{virus}}$
+**Kaava:** $$\begin{aligned} k &= \dfrac{10^{n_\text{hiekka}}}{10^{n_\text{virus}}} \\ &= 10^{\,n_\text{hiekka} - n_\text{virus}} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Koot ovat samassa yksikössä, joten suhde on pelkkä luku.
 **Sijoitus:** $k = \dfrac{10^{-3}\,\text{m}}{10^{-7}\,\text{m}} = 10^{-3-(-7)} = 10^{4} = 10\,000$
 **Vastaus:** $10\,000$ eli $10^{4}$. Suuruusluokkien perusteella hiekanjyvän halkaisija on noin kymmenentuhatta kertaa viruksen halkaisija. Annettujen suuruusluokkien suhde on tarkalleen $10^{4}$. Se ei kuitenkaan kerro tarkasti todellisten halkaisijoiden suhdetta. Suuruusluokkien ero on neljä askelta, mutta koko ero on kymmenentuhatkertainen eikä nelinkertainen.
@@ -152,7 +152,7 @@ Malli ei ole toistettu havainto, muuttumaton teoria eikä täydellinen totuus. J
 **Annettu:** taulukosta etäisyydet $r_\text{Jupiter} = 5{,}20\,\text{AU}$ ja $r_\text{Neptunus} = 30{,}1\,\text{AU}$. Pienoismallissa Neptunus on $r_\text{malli,N} = 2{,}0\,\text{m}$ päässä Auringosta.
 **Kysytty:** Jupiterin etäisyys Auringosta pienoismallissa $r_\text{malli,J}$ senttimetreinä sekä planeetta, joka on lähimpänä kohtaa $1{,}0\,\text{m}$
 **Periaate:** Kaikki etäisyydet pienenevät samalla kertoimella. Kahden planeetan etäisyyksien suhde on siksi mallissa sama kuin todellisuudessa: $\dfrac{r_\text{malli,J}}{r_\text{malli,N}} = \dfrac{r_\text{Jupiter}}{r_\text{Neptunus}}$.
-**Kaava:** $r_\text{malli,J} = r_\text{malli,N}\cdot\dfrac{r_\text{Jupiter}}{r_\text{Neptunus}}$
+**Kaava:** $$\begin{aligned} \dfrac{r_\text{malli,J}}{r_\text{malli,N}} &= \dfrac{r_\text{Jupiter}}{r_\text{Neptunus}} \\ r_\text{malli,J} &= r_\text{malli,N}\cdot\dfrac{r_\text{Jupiter}}{r_\text{Neptunus}} \end{aligned}$$
 **Muunnokset:** $r_\text{malli,N} = 2{,}0\,\text{m} = 2{,}0\cdot100\,\text{cm} = 200\,\text{cm}$. Tähtitieteelliset yksiköt supistuvat suhteesta pois.
 **Sijoitus:** $r_\text{malli,J} = 200\,\text{cm}\cdot\dfrac{5{,}20\,\text{AU}}{30{,}1\,\text{AU}} = 200\,\text{cm}\cdot0{,}1727 = 34{,}6\,\text{cm}$
 **Vastaus:** $35\,\text{cm}$, kaksi merkitsevää numeroa kuten mallin pituudessa $2{,}0\,\text{m}$ (kenttään sopii $34{,}6$). Kohtaa $1{,}0\,\text{m}$ lähimpänä on Uranus. Kohtaa $100\,\text{cm}$ vastaa todellinen etäisyys $$\begin{aligned} &100\,\text{cm} : 200\,\text{cm} \\ &\cdot30{,}1\,\text{AU} \\ &= 15{,}05\,\text{AU} \end{aligned}$$. Se on lähempänä Uranuksen arvoa $19{,}2\,\text{AU}$ (ero $4{,}15\,\text{AU}$) kuin Saturnuksen arvoa $9{,}58\,\text{AU}$ (ero $5{,}47\,\text{AU}$).
@@ -162,7 +162,7 @@ Malli ei ole toistettu havainto, muuttumaton teoria eikä täydellinen totuus. J
 **Annettu:** taulukosta $d = a\cdot10^{n}\,\text{m}$: ihminen $1{,}7\cdot10^{0}$, Maa $1{,}27\cdot10^{7}$, Aurinko $1{,}39\cdot10^{9}$ ja Linnunrata $9{,}46\cdot10^{20}$
 **Kysytty:** kohteiden suuruusluokat ja suuruusluokkien ero ihmisen ja Linnunradan välillä
 **Periaate:** Luvun $a\cdot10^{n}$ suuruusluokka on lähin kymmenpotenssi. Se on $10^{n}$, kun $a$ on alle noin $3$, ja $10^{n+1}$, kun $a$ on yli noin $3$. Suuruusluokkien ero on eksponenttien erotus.
-**Kaava:** $\text{askelia} = n_\text{Linnunrata} - n_\text{ihminen}$, missä $n$ on suuruusluokan eksponentti
+**Kaava:** $$\begin{aligned} \text{askelia} &= n_\text{suurempi} - n_\text{pienempi} \\ &= n_\text{Linnunrata} - n_\text{ihminen} \end{aligned}$$ Tässä $n$ on suuruusluokan eksponentti.
 **Muunnokset:** Ei tarvita. Eksponentit ovat yksiköttömiä lukuja.
 **Sijoitus:** Ihminen $1{,}7 < 3$, joten $10^{0}\,\text{m}$. Maa $1{,}27 < 3$, joten $10^{7}\,\text{m}$. Aurinko $1{,}39 < 3$, joten $10^{9}\,\text{m}$. Linnunrata $9{,}46 > 3$, joten $10^{20+1} = 10^{21}\,\text{m}$. Siis $\text{askelia} = 21 - 0 = 21$.
 **Vastaus:** $21$. Ihmisen ja Linnunradan suuruusluokkien välillä on siis $21$ suuruusluokkaa. Luku on kokonaisluku, koska suuruusluokat ovat kokonaisia kymmenpotensseja. Linnunradan suuruusluokka on $10^{21}\,\text{m}$, koska kerroin $9{,}46$ on lähempänä lukua $10$ kuin lukua $1$. Luku $9{,}46\cdot10^{20}\,\text{m}$ on lähempänä arvoa $10^{21}\,\text{m}$ kuin arvoa $10^{20}\,\text{m}$.
@@ -173,7 +173,7 @@ Malli ei ole toistettu havainto, muuttumaton teoria eikä täydellinen totuus. J
 **Kysytty:** yhden arkin paksuus $d$ millimetreinä
 **Periaate:** Pinon korkeus on arkkien määrä kertaa yhden arkin paksuus, $h = dN$. Pisteet asettuvat siksi suoralle, ja suoran kulmakerroin on arkin paksuus. Suora kulkee origon kautta, koska nollan arkin pino on nollan korkuinen.
 **Kuvaajan lukeminen:** Pisteet asettuvat nousevalle suoralle, jonka molemmille puolille jää pisteitä. Sovitettu suora kulkee origon kautta. Pinon korkeus luetaan sovitetulta suoralta kohdasta $N = 300$, ei suoraan taulukosta. Suoralta saadaan $h \approx 30{,}6\,\text{mm}$. Taulukon mittauspiste $30{,}5\,\text{mm}$ on hieman suoran alapuolella.
-**Kaava:** $h = dN$, joten suoran kulmakertoimena $d = \dfrac{h}{N}$
+**Kaava:** $$\begin{aligned} h &= dN \\ d &= \dfrac{h}{N} \end{aligned}$$ Tässä $d$ on suoran kulmakerroin.
 **Muunnokset:** Ei tarvita. Korkeus on jo millimetreinä, ja arkkien määrä on pelkkä luku.
 **Sijoitus:** $d = \dfrac{30{,}6\,\text{mm}}{300} = 0{,}102\,\text{mm}$
 **Vastaus:** $0{,}10\,\text{mm}$, kaksi merkitsevää numeroa. Suora sovitetaan silmämääräisesti, ja pinon korkeudessa on muitakin virhelähteitä kuin viivaimen lukeminen. Silmämääräinen sovitus vaihtelee, joten noin $0{,}097\text{–}0{,}107\,\text{mm}$ on hyvä vastaus.
@@ -188,7 +188,7 @@ Mittauksen kokonaisepävarmuuteen vaikuttavat myös muut virhelähteet, kuten k�
 **Annettu:** vesikerroksen kasvu $5{,}0\,\text{mm/h}$, kuuron kesto $\Delta t = 10\,\text{min}$, kentän ala $A = 6{,}0\cdot10^{3}\,\text{m}^2$, pisaran halkaisija $2{,}0\,\text{mm}$ ja pallon tilavuus $V = 4\pi r^{3}/3$
 **Kysytty:** pisaroiden lukumäärä $N$ miljardeina sekä oletus, jonka $20\,\%$:n virhe vaikuttaa tulokseen eniten
 **Periaate:** Kentälle satanut veden tilavuus jaetaan yhden pisaran tilavuudella. Arvio on malli, jonka oletukset ovat näkyvissä: pisarat ovat saman kokoisia palloja, ja sade on tasaista.
-**Kaava:** $V_\text{sade} = h\,A$, $V_\text{pisara} = \dfrac{4}{3}\pi r^{3}$ ja $N = \dfrac{V_\text{sade}}{V_\text{pisara}}$
+**Kaava:** $$\begin{aligned} V_\text{sade} &= h\,A \\ V_\text{pisara} &= \dfrac{4}{3}\pi r^{3} \\ N &= \dfrac{V_\text{sade}}{V_\text{pisara}} \end{aligned}$$
 **Muunnokset:** $h = 5{,}0\,\text{mm/h}\cdot(10 : 60)\,\text{h} = 0{,}833\,\text{mm} = 8{,}33\cdot10^{-4}\,\text{m}$ ja $r = 2{,}0\,\text{mm} : 2 = 1{,}0\cdot10^{-3}\,\text{m}$.
 **Sijoitus:** $V_\text{sade} = 8{,}33\cdot10^{-4}\,\text{m}\cdot6{,}0\cdot10^{3}\,\text{m}^2 = 5{,}0\,\text{m}^3$ ja $V_\text{pisara} = \dfrac{4}{3}\pi\left(1{,}0\cdot10^{-3}\,\text{m}\right)^{3} = 4{,}19\cdot10^{-9}\,\text{m}^3$, joten $N = \dfrac{5{,}0\,\text{m}^3}{4{,}19\cdot10^{-9}\,\text{m}^3} = 1{,}19\cdot10^{9}$
 **Vastaus:** noin $1{,}2$ miljardia pisaraa, kaksi merkitsevää numeroa kuten mitatuissa lähtötiedoissa (kenttään sopii $1{,}19$). Kesto $10\,\text{min}$ on tarkka, valittu aika. Se ei rajoita tarkkuutta.
@@ -200,7 +200,7 @@ Jos sade-intensiteetti, kesto tai ala on $20\,\%$ liian suuri, $N$ kasvaa $20\,\
 **Annettu:** $d_0 = 119{,}0\,\text{AU}$, $v = 15{,}341\,\text{km/s}$, $t = 7{,}25\,\text{a}$, $1\,\text{AU} = 1{,}496\cdot10^{8}\,\text{km}$, $1\,\text{a} = 3{,}156\cdot10^{7}\,\text{s}$ ja havainto $143{,}05\,\text{AU}$ Maasta (JPL, helmikuu 2026)
 **Kysytty:** oppilaan virhe, mallin ennuste $d$ yksikössä AU ja se, mitä mittaus kertoo mallista
 **Periaate:** Voyagerin etäisyys mallinnetaan tasaisella liikkeellä, $d = d_0 + vt$, koska nopeus muuttuu tällä välillä hyvin vähän. Yhteenlaskussa ja tulossa suureiden yksiköiden on sovittava yhteen.
-**Kaava:** $s = vt$ ja $d = d_0 + s$. Ennen kuin lukuarvot lasketaan yhteen, molemmat matkat muutetaan yksikköön AU.
+**Kaava:** $$\begin{aligned} s &= vt \\ d &= d_0 + s \end{aligned}$$ Ennen kuin lukuarvot lasketaan yhteen, molemmat matkat muutetaan yksikköön AU.
 **Muunnokset:** $t = 7{,}25\,\text{a} = 7{,}25\cdot3{,}156\cdot10^{7}\,\text{s} = 2{,}288\cdot10^{8}\,\text{s}$.
 **Sijoitus:** $s = 15{,}341\,\text{km/s}\cdot2{,}288\cdot10^{8}\,\text{s} = 3{,}510\cdot10^{9}\,\text{km} = \dfrac{3{,}510\cdot10^{9}\,\text{km}}{1{,}496\cdot10^{8}\,\text{km/AU}} = 23{,}46\,\text{AU}$ ja $d = 119{,}0\,\text{AU} + 23{,}46\,\text{AU} = 142{,}46\,\text{AU}$
 **Vastaus:** $142{,}5\,\text{AU}$, yksi desimaali kuten alkuetäisyydessä $119{,}0\,\text{AU}$, joka on summan epätarkin luku. Oppilas kertoi nopeuden $\text{km/s}$ vuosilla eikä sekunneilla, joten tulos ei ollut matka. Lisäksi hän laski yhteen kilometrejä ja tähtitieteellisiä yksiköitä. Malli ei ollut väärä.
@@ -220,7 +220,7 @@ Malli ja havainto sopivat siis yhteen niin tarkasti kuin vertailu sallii, ja hav
 **Annettu:** taulukosta (MAFY-taulukko, Aurinkokunta) Auringon keskimääräinen säde $r_\text{A} = 695\,700\,\text{km}$ ja Maan säde päiväntasaajalla $r_\text{M} = 6\,378\,\text{km}$
 **Kysytty:** Auringon ja Maan halkaisijoiden suhde $k$
 **Periaate:** Pallon halkaisija on kaksi kertaa säde, $d = 2r$. Suhde saadaan, kun suurempi koko jaetaan pienemmällä. Kun molemmat ovat samassa yksikössä, yksiköt supistuvat pois.
-**Kaava:** $k = \dfrac{d_\text{A}}{d_\text{M}} = \dfrac{2r_\text{A}}{2r_\text{M}} = \dfrac{r_\text{A}}{r_\text{M}}$
+**Kaava:** $$\begin{aligned} k &= \dfrac{d_\text{A}}{d_\text{M}} \\ &= \dfrac{2r_\text{A}}{2r_\text{M}} \\ &= \dfrac{r_\text{A}}{r_\text{M}} \end{aligned}$$
 **Muunnokset:** Molemmat säteet ovat jo kilometreinä, joten muunnoksia ei tarvita. Luku $2$ supistuu pois.
 **Sijoitus:** $k = \dfrac{695\,700\,\text{km}}{6\,378\,\text{km}} = 109{,}08$
 **Vastaus:** $k \approx 109$, kolme merkitsevää numeroa kuten taulukon arvoissa. Arvot ovat MAFY-taulukosta (Aurinkokunta). Vastaus hyväksytään, kun se on enintään noin $\pm 4\,\%$ oikeasta arvosta.

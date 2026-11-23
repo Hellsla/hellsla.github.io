@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 30cb6983115dbf4a
-SCOPE: delta added-exercise from d354f1f5a2bbfb83 base 81db4a6fd727
+CONTENT-HASH: 2ccd524b645fe8c9
 
 ## Blocking
 - none
@@ -9,9 +8,9 @@ SCOPE: delta added-exercise from d354f1f5a2bbfb83 base 81db4a6fd727
 - none
 
 ## Checked
-- Added task fy1-5-L1-09 only; hash recomputed at start and end.
-- Table value: sound in water at 20 °C 1482.3 m/s; correct (about 1482 m/s).
-- Uniform motion s = vt, constant speed stated in the task; m → km conversion right.
-- Independent recompute 2.9646 km = answers.py; the shown 3.0 km is 1.2 % above it, within 4 %.
-- Two significant figures from t = 2.0 s; reasonableness via the 1482/343 ≈ 4.3 ratio to air is right ("over four times").
-- Inside FY1 scope (s = vt); en numbers identical to the Finnish original.
+- Delta (work queue 8g): only the Formula steps of solutions.md changed (aligned blocks from the basic equation); every other changed line in the diff is a paragraph split or spacing, no number, sign or unit changed.
+- Each new Formula block checked line by line: every equality and rearrangement is algebraically valid and leads to the formula the unchanged Substitution uses.
+- Script comparison with the Finnish Kaava steps (which passed science review): same number of aligned rows, inequalities and numerals in every solution.
+- answers.py and exercises.json values not in the diff; answers, units and tolerances unchanged from the passed version.
+- Hash recomputed at start and end with --exercises --lang en: unchanged.
+- Delta s = vt, s - s0 = vt, 2d = Delta s, meeting time t = v2 t0/(v2 - v1) derived step by step correctly. (Finnish re-review after its fix pending; this verdict covers the en text as it is.)

@@ -3,7 +3,7 @@
 Käsitekortit ovat osa Ruukkilabraa. Kortit näkyvät luvun Teoriatiivistelmässä
 (lihavoidut käsitteet ja käsitesirut), luvun lopussa ("Kertaa luvun käsitteet"),
 moduulisivun kertauspakassa, Sovella itsenäisesti -sivulla ja koko kokoelmana
-sivulla `fysiikkalabra/site/kasitteet.html`. Vanhat osoitteet `kasitetakomo.html`
+sivulla `https://ruukkilab.fi/kasitteet.html`. Vanhat osoitteet `kasitetakomo.html`
 ja `kasitekortit.html` ohjaavat sinne parametreineen.
 
 ## Missä kortit ovat

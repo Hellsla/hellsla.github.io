@@ -41,7 +41,7 @@ Magneetin liikkuessa jännite muuttuu koko ajan, joten ”jännitteen suuruus”
 
 Sähkömagneettista induktiota käsitellään tarkemmin moduulissa FY7, jonka sivut eivät ole vielä valmiina. Tätä tutkimusta varten tarvitset vain seuraavat asiat.
 
-**Magneettivuo** $\Phi$ kuvaa, kuinka paljon magneettikenttää kulkee käämin yhden kierroksen läpi. Kun tasainen magneettikenttä $B$ on kohtisuorassa kierroksen tasoa vastaan, $\Phi = BA$, missä $A$ on kierroksen pinta-ala. Vuon yksikkö on weber, $1\ \text{Wb} = 1\ \text{T} \cdot \text{m}^2$. Kun magneetti lähestyy käämiä, yhä enemmän sen kenttää kulkee kierrosten läpi, joten vuo kasvaa.
+**Magneettivuo** $\Phi$ kuvaa, kuinka paljon magneettikenttää kulkee käämin yhden kierroksen läpi. Kun tasainen magneettikenttä $B$ on kohtisuorassa kierroksen tasoa vastaan, $\Phi = BA$, missä $A$ on kierroksen pinta-ala. Vuon yksikkö on weber, $1\,\text{Wb} = 1\,\text{T} \cdot \text{m}^2$. Kun magneetti lähestyy käämiä, yhä enemmän sen kenttää kulkee kierrosten läpi, joten vuo kasvaa.
 
 <svg data-fig="flux" viewBox="0 0 600 330" role="img" aria-label="Kaaviokuva. Vasemmalla on sauvamagneetti, joka liikkuu nopeudella v oikealle kohti käämiä. Magneetin punaisesta päästä lähtee vihreitä kenttäviivoja, joiden suunta on merkitty nuolenkärjin. Neljä tummempaa kenttäviivaa kulkee käämin kierrosten läpi, vaaleammat kaartuvat käämin ohi takaisin magneetin siniseen päähän. Käämissä on N kierrosta, ja sen päiden välille syntyvä jännite U mitataan jännitemittarilla." style="max-width:100%;font-size:24px">
   <image href="pics/fy10/fy10-induktio-flux.webp" x="13.5" y="4.9" width="588.2" height="330.9" preserveAspectRatio="none"/>
@@ -87,7 +87,7 @@ Jos tutkit **kierroslukua**, induktiolaki antaa saman vuon muutoksen jokaiselle 
 Ennen mittaamista päätä ja kirjaa ylös, mitä muutat, mitä mittaat ja mitä pidät vakiona.
 
 ::: tuki O
-**Ohjattu.** Tutkit magneetin nopeutta. Pudotat magneetin levosta pystysuoran muoviputken läpi, joka kulkee käämin läpi, ja muutat pudotuskorkeutta $h$. Mittaat korkeuden magneetin keskikohdasta käämin yläreunaan. Vakiona pidät magneetin, sen asennon (sama napa alaspäin), käämin ja putken. Käytä ainakin kuutta pudotuskorkeutta, esimerkiksi välillä $0{,}10\ \text{m}$ – $0{,}80\ \text{m}$, jos teline riittää, ja pudota magneetti jokaiselta korkeudelta kolme kertaa.
+**Ohjattu.** Tutkit magneetin nopeutta. Pudotat magneetin levosta pystysuoran muoviputken läpi, joka kulkee käämin läpi, ja muutat pudotuskorkeutta $h$. Mittaat korkeuden magneetin keskikohdasta käämin yläreunaan. Vakiona pidät magneetin, sen asennon (sama napa alaspäin), käämin ja putken. Käytä ainakin kuutta pudotuskorkeutta, esimerkiksi välillä $0{,}10\,\text{m}$ – $0{,}80\,\text{m}$, jos teline riittää, ja pudota magneetti jokaiselta korkeudelta kolme kertaa.
 :::
 
 ::: tuki OO

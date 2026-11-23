@@ -770,6 +770,18 @@ Avoimet huomiot (Polish, ei uusia kierroksia): koe k3-c, k4-c, k6-a, k6-c: sieve
 
 22 Tehtävän pieni taulukko ja kuva vierekkäin leveällä näytöllä (opettaja 2026-11-19, malli fy8-3): tehty PR #751 (build.py / site.css, check_layout-tarkistus; kuvat hyväksytty opettaja 2026-11-19 klo 12.4x).
 
+## [loki] 8g FY1. Mallivastaukset perusperiaatteesta (PR #813, claude/8g-fy1, 2026-11-23)
+- Laajuus: kaikkien kahdeksan luvun tehtävien (fi, en, fi-easy), Sovellan (fi, en, fi-easy) ja kokeen (fi) mallivastausten Kaava-vaihe alkaa perusyhtälöistä ja johdetaan symbolisesti; vain `**Kaava:**`-rivit muuttuivat (yhteensä noin 520 riviä), vastaukset, toleranssit ja tehtävät ennallaan. fy1-1 ja fy1-8 kohdan 8j ohitus ei vaikuttanut tähän (8j:n kysymys koskee vain pohdinnan kertaustehtävää). Ei mekaanisia 0f-tähteitä FY1:lle muuta kuin mitä katselmointi vaati.
+- Katselmoinnit: kierros 1 löysi kaksi tiedettä koskevaa virhettä, jotka korjattiin: fy1-5-L1-09 (kaava väärinpäin) ja fy1-6-L2-04, L3-01, L3-02 (Kaava-rivit siirtyneet väärän tehtävän alle), sekä fy1-8-L3-02 ja L3-05 (jäähtymisnopeus $r = -\Delta T/\Delta t$, etumerkki). Kierros 2 PASS kaikille kolmelle kielelle. Sovella ja koe: kaikki PASS kierroksella 1.
+- Jäi (polish, ei estä): fy1-3 L2-rako ja fy1-7 tiheystehtävä ovat jo perusmääritelmiä yhdellä rivillä; fy1-3 rivi 143 viimeinen rivi toistaa suhteen; fy1-6-L3-02:n Kaava päättyy $t_2 = v_2/g$:hen; koe k5 c: arvauskaavion rubriikki 7,1–8,3 vs. 8,35 (ehdotus 7,1–8,4); k5 c: ΔV = 2·0,5 ml sisältää luvun symbolisessa vaiheessa; k7 d "tarkka arvo" → "oletetaan tarkaksi"; Sovella s1 b: Annettu mainitsee t = 0,4–2,0 s, sovitus t ≥ 0,6 s. Koe k6 ja k7 ovat molemmat mittausaineistotehtäviä.
+- Huomio: `check_lesson.py fy1-2` epäonnistuu `check_choices.py`-tarkistukseen (oikean vaihtoehdon paikka 3: 46 % > 45 %, FY1:n 24 valintatehtävää); virhe ei johdu tästä PR:stä (inquiry.json ja exit-ticket ennallaan), joten fy1-2:n paketit tehtiin `--skip-checks`-valinnalla. Korjaus kuuluu erilliseen kohtaan.
+- Reviewerien vapaamuotoiset `SCOPE:`-rivit poistettiin raporteista (`reviews.py verify` hylkää muun kuin added-exercise-deltan SCOPE-rivin).
+- Opetus: pakettien diff näyttää `aligned`-lohkojen `\\`-rivinvaihdot poistettuina; reviewer arvioi tiedoston, ei diffiä. Kaava-rivien rinnakkaisessa kirjoituksessa (viisi kehittäjää) kolme riviä siirtyi väärän tehtävän alle: ohjeeseen "pidä rivi omassa tehtävässään, tarkista `git diff` tehtävän otsikoita vasten".
+
+8 Virhekäsitys ja tiivistelmä avattaviin laatikoihin (opettaja 2026-11-13): sivupohja #713; "Yleinen virhekäsitys" -osa kaikissa FY1–FY8:n luvuissa (tarkistettu 2026-11-23, tekijät FY4 ja FY7 sekä grep). Kohta poistettu jonosta.
+
+8f Animoitu kuva (opettaja 2026-11-13): pilotti fy3-8 #649; FY3 fy3-9, fy3-3 #757; FY4 fy4-10 #761 (opettaja 2026-11-19 "ok"). Kohta poistettu jonosta.
+
 ## [loki] 8g FY8 ja 15 fy8-9 (PR #823, claude/fy8-8g-15, 2026-11-23)
 
 Tehty: 8g FY8: luvut fy8-1…fy8-16 (kaikki kolme kieltä; Kaava-vaihe perusperiaatteesta, `aligned`-lohko), Sovella (fi, en, fi-easy) ja esimerkkikoe (fi). Sijoitus, vastaukset, toleranssit, tunnisteet ja luvut ennallaan; jätetty ennalleen kohdat, joissa Kaava on jo yksi peruslaki tai määritelmä, sekä sanalliset tehtävät. 15 fy8-9: "säteilykvanteista" → "ionisoivista hiukkasista ja fotoneista", esimerkin 97,65 → 97,6 MBq, Geiger-kuvatekstiin "taustan vähentämisen jälkeen" (fi, en, fi-easy).

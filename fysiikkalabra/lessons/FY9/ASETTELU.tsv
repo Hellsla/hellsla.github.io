@@ -1,0 +1,31 @@
+kuvan tunniste	tyyppi	tiedosto	x	y	leveys	korkeus	merkintöjen siirrot (järjestysnumero: dx, dy)	ilman taustaa (merkintöjen järjestysnumerot)
+fy9-aallot/hero	illustration	fy9-aallot-hero.webp						
+fy9-aallot/ominais	diagram	fy9-aallot-ominais.webp	0	0	600	470		
+fy9-energia/hero	illustration	fy9-energia-hero.webp						
+fy9-energia/ketju	diagram	fy9-energia-ketju.webp	0	0	420	475.1	{"3":[5,0]}	
+fy9-kaasut/hero	illustration	fy9-kaasut-hero.webp						
+fy9-kaasut/kone	diagram	fy9-kaasut-kone.webp	0	0	420	469		
+fy9-lampo/hero	illustration	fy9-lampo-hero.webp						
+fy9-liike/hero	illustration	fy9-liike-hero.webp						
+fy9-magnetismi-valo/hero	illustration	fy9-magnetismi-valo-hero.webp						
+fy9-magnetismi-valo/rajakulma	diagram	fy9-magnetismi-valo-rajakulma.webp	1.2	1.2	597	335.8	{"5":[-14,0]}	
+fy9-magnetismi-valo/ympyra	diagram	fy9-magnetismi-valo-ympyra.webp	0	0	600	425		[7]
+fy9-moderni/hero	illustration	fy9-moderni-hero.webp						
+fy9-moderni/pallo	diagram	fy9-moderni-pallo.webp	-1.1	0	532.7	379.5		[3, 4]
+fy9-sahkokentta/hero	illustration	fy9-sahkokentta-hero.webp						
+fy9-sahkokentta/kipina	diagram	fy9-sahkokentta-kipina.webp	0	0	600	541.2		
+fy9-sahkokentta/levyt	diagram	fy9-sahkokentta-levyt.webp	0	0	600	447.5		
+fy9-sailymislait/hero	illustration	fy9-sailymislait-hero.webp						
+fy9-sailymislait/tuuli	diagram	fy9-sailymislait-tuuli.webp	1.2	0	597	422.9		
+fy9-tasavirta/hero	illustration	fy9-tasavirta-hero.webp						
+fy9-tasavirta/mokki	diagram	fy9-tasavirta-mokki.webp	1.2	1.2	597	360.7		
+fy9-tasavirta/piiri	diagram	fy9-tasavirta-piiri.webp	9.7	1.2	582.5	327.7		
+fy9-voimat/hero	illustration	fy9-voimat-hero.webp						
+fy9-voimat/kalteva	diagram	fy9-voimat-kalteva.webp	0	0	600	387.5		
+fy9-ympyraliike/geo	diagram	fy9-ympyraliike-geo.webp	0	0	600	600		[3]
+fy9-ympyraliike/hero	illustration	fy9-ympyraliike-hero.webp						
+fy9-ympyraliike/tilanteet	diagram	fy9-ympyraliike-tilanteet.webp	0	0	380	679.2		
+fy9-harjoituskoe-sovella/fy9-harjoituskoe-s2-fbd	diagram	fy9-harjoituskoe-sovella-fy9-harjoituskoe-s2-fbd.webp	3.8	0	596.2	342.6		
+fy9-kaasut-sovella/fy9-kaasut-s6-pysty	diagram	fy9-kaasut-sovella-fy9-kaasut-s6-pysty.webp	0.9	0.9	417.9	399.6		
+fy9-kaasut-sovella/fy9-kaasut-s6-vaaka	diagram	fy9-kaasut-sovella-fy9-kaasut-s6-vaaka.webp	0	0	420	275.6		
+fy9-sahkokentta-sovella/fy9-sahkokentta-s1-fbd	diagram	fy9-sahkokentta-sovella-fy9-sahkokentta-s1-fbd.webp	0	0	500	404.2		

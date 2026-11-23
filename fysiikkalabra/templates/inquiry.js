@@ -133,7 +133,7 @@
       const i = radios.findIndex((r) => r.checked);
       if (i < 0) { out.textContent = msg('choose_first'); out.dataset.state = 'hint'; return; }
       commit(i, false);
-      if (window.flAttempt) window.flAttempt(fs, 'choice', radios[i].dataset.correct === '1' ? 'ok' : 'no');
+      if (window.flAttempt) window.flAttempt(fs, 'choice', radios[i].dataset.correct === '1' ? 'ok' : 'no', { choice: i, first: tries === 0 });
       if (reveal) return;
       tries += 1;
       if (radios[i].dataset.correct === '1') { finish(); return; }
@@ -195,7 +195,7 @@
       if (!tf && new Set(rows.map(given)).size !== rows.length) { say(msg('order_distinct'), 'hint'); return; }
       tries += 1;
       const wrong = rows.filter((li) => !right(li));
-      if (window.flAttempt) window.flAttempt(fs, 'choice', wrong.length ? 'no' : 'ok');
+      if (window.flAttempt) window.flAttempt(fs, 'choice', wrong.length ? 'no' : 'ok', { first: tries === 1 });
       bus.dispatchEvent(new CustomEvent('fl:answered', { detail: { id: fs.dataset.id } }));
       rows.forEach((li) => { delete li.dataset.state; });
       if (!wrong.length) { say(msg('list_all_right'), 'ok'); reveal(); finish(); return; }
@@ -393,7 +393,8 @@
       const v = window.flParse ? window.flParse(input.value) : NaN;   // the same reading as the answer check (lesson.js part 1)
       if (!Number.isFinite(v) || out.dataset.state === 'ok' || out.dataset.state === 'close') return;
       const m = mistakes.find((x) => Math.abs(v - x.value) <= (x.value === 0 ? tol : tol * Math.abs(x.value)));
-      if (m) { if (m.html) out.innerHTML = m.html; else out.textContent = m.feedback; out.dataset.state = 'no'; if (m.feedback.includes('$')) typeset(out); }
+      if (m) { if (form.flLast) form.flLast.mistake = mistakes.indexOf(m);   // for the evidence log (valmentaja.js)
+        if (m.html) out.innerHTML = m.html; else out.textContent = m.feedback; out.dataset.state = 'no'; if (m.feedback.includes('$')) typeset(out); }
     });
   });
   // hints (teacher 2026-11-04): every hint is in view and opens freely, no lock between them
@@ -455,6 +456,7 @@
       result.querySelector('.crit-missing').innerHTML = missingCrit.map((h) => '<li>' + h + '</li>').join('');
       result.querySelector('.crit-practice').hidden = !missingCrit.length;
       result.hidden = false;
+      ex.dispatchEvent(new CustomEvent('fl:rubric', { bubbles: true, detail: { id, kind: 'explain', got: boxes.length - missingCrit.length, max: boxes.length, crit: boxes.map((b) => (b.checked ? 1 : 0)), complete: true } }));   // the student's own ticks (valmentaja.js)
       if (missingCrit.length) ta.focus();
     });
     if (copy) copy.addEventListener('click', () => {
