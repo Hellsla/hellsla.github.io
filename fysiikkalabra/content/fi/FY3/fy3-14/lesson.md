@@ -1,6 +1,6 @@
 # Lämpötasapaino olomuodon muuttuessa
 
-> **Miksi** jääpalat viilentävät juomaa niin tehokkaasti, vaikka jää itse on vain nollan asteen lämpöistä? Entä miksi lasin pohjalle voi jäädä jäätä, vaikka juoma oli huoneenlämpöistä?
+> **Miksi** jääpalat viilentävät juomaa niin tehokkaasti, vaikka jää itse on vain nollan asteen lämpöistä? Entä miksi lasissa voi olla jäätä vielä jäljellä, vaikka juoma oli huoneenlämpöistä?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: pöydällä on korkea lasi kylmää juomaa, jossa kelluu jääpaloja ja pilli. Lasin ulkopinnalle on tiivistynyt vesipisaroita, ja lasin vieressä on jääpalarasia." class="fig-hero" style="max-width:100%;font-size:24px">
   <image href="pics/fy3/fy3-14-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>

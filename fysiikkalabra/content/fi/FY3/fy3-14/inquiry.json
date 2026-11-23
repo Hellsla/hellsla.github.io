@@ -12,7 +12,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Kesäpäivänä pudotat huoneenlämpöiseen mehulasiin muutaman jääkuution. Jäät ovat itse vain 0-asteisia, mutta mehu viilenee nopeasti, paljon enemmän kuin jos lisäisit saman määrän 0-asteista vettä. Kun lämpö on tasoittunut, lasin pohjalla voi silti kellua jäätä.",
+      "text": "Kesäpäivänä pudotat huoneenlämpöiseen mehulasiin muutaman jääkuution. Jäät ovat itse vain 0-asteisia, mutta mehu viilenee nopeasti, paljon enemmän kuin jos lisäisit saman määrän 0-asteista vettä. Kun lämpö on tasoittunut, lasissa voi silti kellua jäätä.",
       "question": "Miksi 0-asteinen jää viilentää juomaa niin paljon tehokkaammin kuin 0-asteinen vesi, ja miksi kaikki jää ei aina sula?"
     },
     {

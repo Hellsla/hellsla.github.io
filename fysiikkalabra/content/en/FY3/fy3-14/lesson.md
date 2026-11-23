@@ -1,6 +1,6 @@
 # Thermal balance during a change of state
 
-> **Why** do ice cubes cool a drink so effectively, even though the ice itself is only at zero degrees? And why can some ice be left at the bottom of the glass, even though the drink was at room temperature?
+> **Why** do ice cubes cool a drink so effectively, even though the ice itself is only at zero degrees? And why can some ice be left in the glass, even though the drink was at room temperature?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a tall glass of a cold drink stands on a table, with ice cubes and a straw floating in it. Water droplets have condensed on the outside of the glass, and a box of ice cubes stands next to the glass." class="fig-hero" style="max-width:100%;font-size:24px">
   <image href="pics/fy3/fy3-14-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
