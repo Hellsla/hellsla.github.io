@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 3ce1b534cce6a362
+CONTENT-HASH: 763ab4659971eb79
+SCOPE: delta round 1 (work queue 8g, Kaava steps from basic equations)
 
 ## Blocking
 - none
@@ -8,9 +9,9 @@ CONTENT-HASH: 3ce1b534cce6a362
 - none
 
 ## Checked
-- This review covers fy1-2-L2-08 only (a new exercise, judged in full). The hash was 3ce1b534cce6a362 at the start and at the end.
-- I recomputed it myself: Δm/m = 10⁻⁶ kg / 1 kg = 10⁻⁶, which is 10⁻⁴ % = 0,0001 %. 25 µg gives 2,5·10⁻⁶ %. 1 mg / 25 µg = 40. answers.py prints 0.0001, which matches exercises.json (unit %, tolerance 0,02).
-- The significant figures (one, from 1 mg) are right. The conversions mg → kg and µg → kg are right. The formula is stated in symbols before the substitution. The reasonableness check (one millionth of the mass) is a real check.
-- I checked the BIPM pages (fetched 2026-11-16). The 1889 platinum-iridium prototype and the forty copies are there. So is the 1946 verification, which found the copies diverging, and the third verification of 1989–1991, with a median difference of about 25 micrograms. The reasons given for the new definition are long-term stability and more use to modern science. The current definition fixes h = 6,626 070 15·10⁻³⁴ J s, together with the definitions of the metre and the second. All of this matches the model answers a), b) and c).
-- a) says the drift could not be attributed to any one prototype, because the IPK was 1 kg by definition. That is correct, and it is the standard argument.
-- d) correctly separates the exactness of a definition from measurement uncertainty, without misusing any measurement terms. The physics and the scope are FY1 (SI system).
+- The changed Kaava steps are correct, and each one starts from a basic equation and solves for the asked quantity: the px scale ratio; $v = s/t$; km² → ha; knots → m/s; $V = qt \Rightarrow t = V/q$; $2d = ct$; $P = E/t \Rightarrow t = E/P$; $s = ct$; and the pendulum's dimensional analysis, now carried through $T_1$, $T_2$ and $T_2/T_1 = \sqrt{L_2/L_1}$.
+- I read the aligned blocks on disk (lines 46, 103, 123, 183). Each ends on the form the Sijoitus substitutes into.
+- I recomputed the numbers myself: 400,69 px; $T_2 = 2{,}00\,\text{s}$; 1,54 h; 40,2 h. All match the solutions, and nothing numeric changed.
+- L2-08: the Kaava ε = Δm/m·100 % only moved below the split model answer a). The three paragraphs of a) and d) keep every sentence (BIPM facts, definition versus measurement uncertainty).
+- L1-04: the split model answer keeps all four unit arguments.
+- The hash was 763ab4659971eb79 at the start and at the end.

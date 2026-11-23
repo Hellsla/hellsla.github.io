@@ -1,20 +1,25 @@
 VERDICT: PASS
-CONTENT-HASH: 6a0a33a715c949de
+CONTENT-HASH: 6f84f2c00e8197fd
+SCOPE: delta round 1 (work queue 8g, Kaava steps from basic equations)
 
 ## Blocking
+- none
 
 ## Polish
-- content/fi/FY1/fy1-7/exercises/solutions.md:284 — The solution says Saturn's density is "noin puolet" of Neptune's. The ratio is 687/1638 = 0,42 (carried over from round 1; recorded in the PR) — "alle puolet".
-- content/fi/FY1/fy1-7/exercises/solutions.md:282 — "koska se pyörii hitaammin" names only one cause. A rotating body flattens in proportion to ω²R³/(GM), so the Earth's higher density also plays a part. This is acceptable at FY1 level (C).
+- none
 
 ## Checked
-- Hash 6a0a33a715c949de at the start and at the end. The packet was missing, so I generated it with `scripts/review_packet.py fy1-7 --role science --exercises`.
-- Round-1 Blocking fixed. Model answer c) now says the Earth is slightly flattened by its rotation, less than Saturn, and that the flattening is mostly why the Earth's difference is small. The incorrect rounding explanation and the "jäykkä kivipallo" claim are gone.
-- The flattening explanation checks out numerically:
-  - 5493 · 6378/6357 = 5511 kg/m³.
-  - The remaining 0,04 % comes from rounding the mass (5,9722 → 5,97), which brings the value to about 5514 kg/m³, NASA's figure.
-  - For Saturn, 619 · 60 268/54 364 = 687 kg/m³.
-- I recomputed both answers again:
-  - L2-09: ρ = 6m/(πd³) = 5493,3 kg/m³, the same as answers.py and the key 5493 (−0,38 % from NASA).
-  - L2-10: the fit through the origin gives 2699,7 kg/m³ (key 2700), and the prediction is 2,70 · 9,26 = 25,0 kg.
-- Nothing else in the two exercises changed since round 1. The rest stands as judged then: the fact-sheet values, the PhET ranges and the shared Glass/Aluminium mark.
+- I checked every changed Kaava step. Each starts from $\rho = m/V$ and solves symbolically, for:
+  - $m = \rho V$ and $V = m/\rho$;
+  - $m = \rho abc$;
+  - $\rho = m/(V_2 - V_1)$ and $\rho = (m_\text{yht} - m_0)/V$;
+  - equal masses giving $V_\text{Al}/V_\text{Cu} = \rho_\text{Cu}/\rho_\text{Al}$;
+  - the mixture $\bar\rho = (\rho_1V_1 + \rho_2V_2)/(V_1 + V_2)$;
+  - the wire length $L = m/(\rho\pi r^2)$;
+  - the intercept form $m_\text{yht} = m_0 + \rho V$;
+  - the error with the probe volume;
+  - the two-metal system, whose substitution step $(\rho_\text{Cu} - \rho_\text{Al})V_\text{Cu} = m - \rho_\text{Al}V$ is right;
+  - the sphere $\rho = 6m/(\pi d^3)$.
+- The former separate display lines, the final forms of these steps, are now inside the Kaava block. No content was lost.
+- I recomputed the numbers myself: 94,5 g; 400 cm³; 1800 kg; 1,93 kg; 1,975 kg; 8900 and 788 kg/m³; 3,32; 4,42 g/cm³; 71,1 m; 920 kg/m³; 39,9 cm³; 0,448 kg. None changed.
+- The hash was 6f84f2c00e8197fd at the start and at the end.

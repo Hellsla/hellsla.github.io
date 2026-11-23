@@ -84,7 +84,7 @@
 **Annettu:** mittaukset $(t_1;\, v_1) = (1{,}0\,\text{s};\, 9{,}7\,\text{m/s})$ ja $(t_2;\, v_2) = (3{,}0\,\text{s};\, 29{,}3\,\text{m/s})$
 **Kysytty:** putoamiskiihtyvyys $g$ yksikössä $\text{m/s}^2$
 **Periaate:** Vapaassa pudotuksessa nopeus kasvaa joka sekunti yhtä paljon. Siksi $g$ on nopeuden muutos jaettuna ajan muutoksella. Voit laskea sen mistä tahansa kahdesta mittauksesta. Se onnistuu myös silloin, kun kumpikaan mittaus ei ole hetkellä nolla.
-**Kaava:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ v_1 &= g\,t \\ v_2 &= g\,t \\ \dfrac{v_2}{v_1} &= \dfrac{g\,t}{g\,t} \\ &= 1 \end{aligned}$$
+**Kaava:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v_2 - v_1}{t_2 - t_1} \end{aligned}$$
 **Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$ ja ajat sekunteina. Tulos tulee siis yksikössä $\text{m/s}^2$. Muunnoksia ei tarvita.
 **Sijoitus:** $g = \dfrac{29{,}3\,\text{m/s} - 9{,}7\,\text{m/s}}{3{,}0\,\text{s} - 1{,}0\,\text{s}} = \dfrac{19{,}6\,\text{m/s}}{2{,}0\,\text{s}} = 9{,}8\,\text{m/s}^2$
 **Vastaus:** $9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa, koska aikaväli $2{,}0\,\text{s}$ on annettu kahdella numerolla.
@@ -94,7 +94,7 @@
 **Annettu:** kaksi palloa tyhjiössä, massat $m_1 = 0{,}50\,\text{kg}$ ja $m_2 = 4{,}0\,\text{kg}$, molemmat lähtevät levosta, $t = 1{,}5\,\text{s}$
 **Kysytty:** nopeuksien suhde $\dfrac{v_2}{v_1}$ (ei yksikköä)
 **Periaate:** Tyhjiössä ei ole ilmanvastusta, joten kumpikin pallo on vapaassa pudotuksessa. Putoamiskiihtyvyys $g$ on kaikille kappaleille sama massasta riippumatta. Kummankin nopeus on siis $g\,t$.
-**Kaava:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v_1}{t_1} \\ t_2 &= \dfrac{v_2}{g} \\ &= \dfrac{v_2\,t_1}{v_1} \end{aligned}$$
+**Kaava:** $$\begin{aligned} v_1 &= g\,t \\ v_2 &= g\,t \\ \dfrac{v_2}{v_1} &= \dfrac{g\,t}{g\,t} \\ &= 1 \end{aligned}$$
 **Muunnokset:** Ajat ovat sekunteina, ja massoja ei tarvita laskussa. Muunnoksia ei tarvita.
 **Sijoitus:** $v_1 = v_2 = 9{,}81\,\text{m/s}^2 \cdot 1{,}5\,\text{s} = 14{,}715\,\text{m/s}$, joten $\dfrac{v_2}{v_1} = \dfrac{14{,}715\,\text{m/s}}{14{,}715\,\text{m/s}} = 1{,}0$
 **Vastaus:** $1{,}0$ eli nopeudet ovat yhtä suuret. Suhde on tarkalleen yksi, koska kummankin pallon nopeus on $g\,t$. Massa ei ole mukana kaavassa. Siksi tulos ei riipu ajan $1{,}5\,\text{s}$ tarkkuudesta.
@@ -104,7 +104,7 @@
 **Annettu:** planeetalla ei ole ilmakehää, kivi lähtee levosta, $v_1 = 14{,}8\,\text{m/s}$ hetkellä $t_1 = 4{,}0\,\text{s}$, haluttu nopeus $v_2 = 30{,}0\,\text{m/s}$
 **Kysytty:** aika $t_2$ yksikössä $\text{s}$, jolloin nopeus on $30{,}0\,\text{m/s}$
 **Periaate:** Ilmakehää ei ole, joten kivi on vapaassa pudotuksessa. Nopeus on suoraan verrannollinen aikaan: $v = g\,t$. Planeetan $g$:tä ei tunneta. Ratkaise se ensin annetusta mittauksesta. Käytä sitä sitten ajan laskemiseen.
-**Kaava:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v_2 - v_1}{t_2 - t_1} \end{aligned}$$
+**Kaava:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v_1}{t_1} \\ v_2 &= g\,t_2 \\ t_2 &= \dfrac{v_2}{g} \end{aligned}$$
 **Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$ ja ajat sekunteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $g = \dfrac{14{,}8\,\text{m/s}}{4{,}0\,\text{s}} = 3{,}70\,\text{m/s}^2$ ja $t_2 = \dfrac{30{,}0\,\text{m/s}}{3{,}70\,\text{m/s}^2} = 8{,}108\,\text{s}$
 **Vastaus:** $8{,}1\,\text{s}$, kaksi merkitsevää numeroa. Aika $4{,}0\,\text{s}$ on annettu kahdella numerolla, ja se rajoittaa tulosta.

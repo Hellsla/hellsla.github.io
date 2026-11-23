@@ -1,14 +1,29 @@
 VERDICT: PASS
-CONTENT-HASH: 72a265bfa9067748
+CONTENT-HASH: 185e679af584e570
+SCOPE: delta round 1 (work queue 8g, Kaava steps from basic equations)
 
 ## Blocking
+- none
 
 ## Polish
-- content/fi/FY1/fy1-4/exercises/exercises.json:343 — The task asks for data "tunnin välein", but the fallback table and the solution's "Annettu" use 2 h steps (carried over from round 1; recorded in the PR) — optionally "tunnin tai kahden tunnin välein".
+- none
 
 ## Checked
-- Hash 72a265bfa9067748 at the start and at the end.
-- Round-1 Blocking fixed: solutions.md:237 now gives 22,4 °C at 16 h. My recomputation: T(16) = 7,2 °C + 1,5167 °C/h · 10 h = 22,37 °C, which rounds to 22,4 °C.
-- I recomputed the other model values again and they still agree: T(8) = 10,2 °C, T(10) = 13,3 °C, T(0) = −1,9 °C, and the difference inside the interval is at most 0,2 °C.
-- answers.py gives 1.516667, which matches the key 1.517 with a tolerance of 0,03. Two significant figures is right (ΔT = 9,1 °C; the 6 h span is exact).
-- Nothing else in the exercise changed since round 1. The physics, scope, labelling of the invented data and the mechanism in d) stay as judged then.
+- I checked every changed Kaava step. Each starts from the line $y = kx + b$ or $k = \Delta y/\Delta x$ and solves symbolically for the asked quantity:
+  - $t = (h-b)/k$ and $t = (s-b)/k$;
+  - $k = m/N$;
+  - $b = m_1 - kV_1$, $b = l_1 - km_1$ and $b = x_1 - vt_1$;
+  - $r = y_2/y_1$;
+  - point-slope $s = s_1 + k(t - t_1)$;
+  - the slope ratios $|k_1|/|k_3|$ and $k_\text{B}/k_\text{A}$;
+  - the relative-slope uncertainty;
+  - $k_\text{max}$, $k_\text{min}$ with mean and half-difference.
+- I recomputed the numbers myself:
+  - r = 1,76;
+  - the uncertainty ratio is 16;
+  - $k_\text{B}/k_\text{A}$ = 2,90 unrounded, against the solution's 7,84/2,71 = 2,89, which is inside the tolerance and unchanged;
+  - ε = 15,8 %.
+- No number, answer or tolerance changed.
+- The paragraph splits (L1-07, L2-07 spring, L2-08, L3-01, L3-02 d) keep every sentence. These include the elastic-limit reasoning, "väli on arvioitu rajaus eikä varma raja" and the weather-model limits.
+- The only exercises.json change is that the esimerkkiaineisto marker was taken out of the captions, with the teacher's approval. No physics changed.
+- The hash was 185e679af584e570 at the start and at the end.

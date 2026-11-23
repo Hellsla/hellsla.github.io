@@ -86,7 +86,7 @@ The same speed is found by first calculating the speed of A and then the time th
 **Given:** measurements $(t_1;\, v_1) = (1.0\,\text{s};\, 9.7\,\text{m/s})$ and $(t_2;\, v_2) = (3.0\,\text{s};\, 29.3\,\text{m/s})$
 **Find:** the acceleration of free fall $g$ in $\text{m/s}^2$
 **Principle:** In free fall the speed increases by the same amount every second. So $g$ is the change in speed divided by the change in time, and it can be calculated from any two measurements, even when neither is at the moment zero.
-**Formula:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ v_1 &= g\,t \\ v_2 &= g\,t \\ \dfrac{v_2}{v_1} &= \dfrac{g\,t}{g\,t} \\ &= 1 \end{aligned}$$
+**Formula:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v_2 - v_1}{t_2 - t_1} \end{aligned}$$
 **Conversions:** The speeds are in $\text{m/s}$ and the times in seconds, so the result comes in $\text{m/s}^2$. No conversions are needed.
 **Substitution:** $g = \dfrac{29.3\,\text{m/s} - 9.7\,\text{m/s}}{3.0\,\text{s} - 1.0\,\text{s}} = \dfrac{19.6\,\text{m/s}}{2.0\,\text{s}} = 9.8\,\text{m/s}^2$
 **Answer:** $9.8\,\text{m/s}^2$, two significant figures, because the time interval $2.0\,\text{s}$ is given with two figures.
@@ -96,7 +96,7 @@ The same speed is found by first calculating the speed of A and then the time th
 **Given:** two balls in a vacuum, masses $m_1 = 0.50\,\text{kg}$ and $m_2 = 4.0\,\text{kg}$, both start from rest, $t = 1.5\,\text{s}$
 **Find:** the ratio of the speeds $\dfrac{v_2}{v_1}$ (no unit)
 **Principle:** In a vacuum there is no air resistance, so both balls are in free fall. The acceleration of free fall $g$ is the same for all objects regardless of mass, so the speed of each is $g\,t$.
-**Formula:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v_1}{t_1} \\ t_2 &= \dfrac{v_2}{g} \\ &= \dfrac{v_2\,t_1}{v_1} \end{aligned}$$
+**Formula:** $$\begin{aligned} v_1 &= g\,t \\ v_2 &= g\,t \\ \dfrac{v_2}{v_1} &= \dfrac{g\,t}{g\,t} \\ &= 1 \end{aligned}$$
 **Conversions:** The times are in seconds, and the masses are not needed in the calculation. No conversions are needed.
 **Substitution:** $v_1 = v_2 = 9.81\,\text{m/s}^2 \cdot 1.5\,\text{s} = 14.715\,\text{m/s}$, so $\dfrac{v_2}{v_1} = \dfrac{14.715\,\text{m/s}}{14.715\,\text{m/s}} = 1.0$
 **Answer:** $1.0$, that is, the speeds are equal. The ratio is exactly one, because the speed of each ball is $g\,t$ and the mass does not appear in the formula. So the result does not depend on the precision of the time $1.5\,\text{s}$.
@@ -106,7 +106,7 @@ The same speed is found by first calculating the speed of A and then the time th
 **Given:** the planet has no atmosphere, the stone starts from rest, $v_1 = 14.8\,\text{m/s}$ at the moment $t_1 = 4.0\,\text{s}$, desired speed $v_2 = 30.0\,\text{m/s}$
 **Find:** the time $t_2$ in $\text{s}$ at which the speed is $30.0\,\text{m/s}$
 **Principle:** With no atmosphere the stone is in free fall, so the speed is directly proportional to time: $v = g\,t$. The $g$ of the planet is not known, so it is first solved from the given measurement and then used to find the time.
-**Formula:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v_2 - v_1}{t_2 - t_1} \end{aligned}$$
+**Formula:** $$\begin{aligned} g &= \dfrac{\Delta v}{\Delta t} \\ &= \dfrac{v_1}{t_1} \\ v_2 &= g\,t_2 \\ t_2 &= \dfrac{v_2}{g} \end{aligned}$$
 **Conversions:** The speeds are in $\text{m/s}$ and the times in seconds, so no conversions are needed.
 **Substitution:** $g = \dfrac{14.8\,\text{m/s}}{4.0\,\text{s}} = 3.70\,\text{m/s}^2$ and $t_2 = \dfrac{30.0\,\text{m/s}}{3.70\,\text{m/s}^2} = 8.108\,\text{s}$
 **Answer:** $8.1\,\text{s}$, two significant figures, because the time $4.0\,\text{s}$ is given with two figures and limits the result.

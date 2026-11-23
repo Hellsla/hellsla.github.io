@@ -216,7 +216,7 @@ Kuvaajassa A suora nousee. Silloin paikka kasvaisi ja kävelijä menisi poispäi
 **Annettu:** aika $t = 2{,}0\,\text{s}$; taulukosta (MAFY-taulukko, Äänen nopeuksia eri väliaineissa, nesteet, vesi $20\,{}^\circ\text{C}$) äänen nopeus $v = 1482{,}3\,\text{m/s}$
 **Kysytty:** kuljettu matka $s$ yksikössä $\text{km}$
 **Periaate:** Ääni kulkee vedessä tasaisella nopeudella. Silloin liike on tasaista. Matka on nopeus kerrottuna ajalla.
-**Kaava:** $$\begin{aligned} s &= vt \\ v &= \dfrac{s}{t} \end{aligned}$$
+**Kaava:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= vt \end{aligned}$$
 **Muunnokset:** $1\,\text{km} = 1000\,\text{m}$. Matka $s$ muutetaan metreistä kilometreiksi jakamalla luvulla $1000$.
 **Sijoitus:** $s = 1482{,}3\,\tfrac{\text{m}}{\text{s}} \cdot 2{,}0\,\text{s} = 2964{,}6\,\text{m} = 2{,}9646\,\text{km}$
 **Vastaus:** $3{,}0\,\text{km}$ (tarkemmin $2{,}96\,\text{km}$). Aika $2{,}0\,\text{s}$ on annettu kahdella merkitsevällä numerolla, joten vastauskin on. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.

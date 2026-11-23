@@ -228,7 +228,7 @@ We also check the quantity on the vertical axis: in graph B it is the speed $v$.
 **Given:** time $t = 2.0\,\text{s}$; from the table (MAFY table, Äänen nopeuksia eri väliaineissa, liquids, water $20\,{}^\circ\text{C}$) the speed of sound $v = 1482.3\,\text{m/s}$
 **Find:** distance travelled $s$ in $\text{km}$
 **Principle:** Sound travels through water at a constant speed, so the motion is uniform and the distance is the speed times the time.
-**Formula:** $$\begin{aligned} s &= vt \\ v &= \dfrac{s}{t} \end{aligned}$$
+**Formula:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= vt \end{aligned}$$
 **Conversions:** $1\,\text{km} = 1000\,\text{m}$, so $s$ is converted from metres to kilometres by dividing by $1000$.
 **Substitution:** $s = 1482.3\,\tfrac{\text{m}}{\text{s}} \cdot 2.0\,\text{s} = 2964.6\,\text{m} = 2.9646\,\text{km}$
 **Answer:** $3.0\,\text{km}$ (more precisely $2.96\,\text{km}$), two significant figures as in the time $2.0\,\text{s}$. Depending on the table value, the answer is accepted within about $\pm 4\,\%$.

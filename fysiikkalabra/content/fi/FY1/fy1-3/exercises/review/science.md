@@ -1,18 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 49dfaa86f7573fbd
+CONTENT-HASH: 1d39d74a7173b860
+SCOPE: delta round 1 (work queue 8g, Kaava steps from basic equations)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- content/fi/FY1/fy1-3/exercises/solutions.md:143 — the last row $\Delta x_\text{v} : \Delta x_\text{t} = \Delta x_\text{v}/\Delta x_\text{t}$ only restates itself, so the simplification stops short — end with $= \dfrac{d_\text{v}}{d_\text{t}}$.
+- content/fi/FY1/fy1-3/exercises/solutions.md:185 — the row $n = 7$ inside the aligned formula block is a datum, not an equation of the model — move "missä $n = 7$" back into the text after the block.
 
 ## Checked
-- Delta: every solutions.md change except one in L1-09 only splits a paragraph. This covers L1-06, L1-07 (turntable), L2-06 (outlier), L2-08 (densities), L2-07 (pendulum masses) and L2-09 a)–d) (OPERA). The wording, numbers and units are the same, and no claim or condition was lost when a paragraph was cut.
-- L1-09: the mean is now an aligned block with a two-row numerator, and it still has the same values. I recomputed it: (1,004 + 1,012 + 1,008 + 1,014 + 1,012)/5 = 1,010 g/cm³. The deviation is (1,010 − 0,998206)/0,998206 = 1,18 %, which matches 1,18 % and the answer 1,2 %.
-- L2-07 is unchanged: 71,5/5 = 14,30 s, 71,8/5 = 14,36 s and the difference is 0,06 s.
-- The guardrails still hold in the split paragraphs:
-  - Separate intervals do not prove either result wrong, and an uncertainty estimate is not a sure limit (L2-08).
-  - A difference smaller than the uncertainty does not prove the two values equal (L2-07).
-  - An outlier is checked, not discarded (L2-09 d), and it is left out only for a recorded reason (L2-06).
-- The hash was 49dfaa86f7573fbd at the start and at the end.
+- I checked every changed Kaava step, in L1-01–L1-05, L2-01–L2-06 and L3-01–L3-05. The formulas are right:
+  - the mean as $\sum t_i/n$ with the right $n$ (4, 5, 6, 8, 7);
+  - the half-range;
+  - zero-error correction, starting from $m_\text{lukema} = m + m_0$;
+  - $\Delta t_\text{sys} = t_\text{lukema} - t_\text{oikea} = \tau_2 - \tau_1$, with the sign right;
+  - $\Delta h_1 = d/(2n)$;
+  - the inequality chain giving $N \ge \Delta t/(0{,}01\,T)$;
+  - the OPERA rows $s = ct$, $\Delta s = c\Delta t$.
+- I recomputed the numbers myself: $N \ge 13{,}3$; ε = 4,83 %; and the means and half-ranges of L2-03 and L2-05. All are unchanged and correct.
+- No answer, tolerance or wording changed. All the guardrails noted in the previous report still hold.
+- The hash was 1d39d74a7173b860 at the start and at the end.

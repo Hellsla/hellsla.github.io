@@ -1,12 +1,24 @@
 VERDICT: PASS
-CONTENT-HASH: a4ab830e4fcf75d5
+CONTENT-HASH: 0134f21ed9127ea2
+SCOPE: delta round 1 (work queue 8g, Kaava steps from basic equations)
 
 ## Blocking
 - none
 
 ## Polish
-- content/fi/FY1/fy1-8/exercises/solutions.md:192 — still from the previous round: "(tarkemmin $1{,}37\,\text{km}$)" rounds a minimum down (computed 1,3736 km) — write "$1{,}374\,\text{km}$" or drop it.
+- none
 
 ## Checked
-- Delta only: fy1-8-L3-04 in exercises.json and solutions.md, "mitkä väitteet … tukee" → "mitä väitteitä … tukee" (grammar only). The question asked and the physics are unchanged. The hash was the same at the start and the end.
-- Recomputed: d = 3,12 s − 3,08 s = 0,04 s, and k = 0,15 s / 0,04 s ≈ 3,8. The intervals 3,08–3,16 s and 3,04–3,12 s overlap, so a difference cannot be shown. The Periaate says exactly this, as the guardrail requires: it says it cannot be concluded, not that the times are equal.
+- I checked every changed Kaava step. Each one starts from its basic equation and solves for the asked quantity:
+  - $s = vt \Rightarrow v = s/t$;
+  - mean, half-range and ε;
+  - $s = vt \Rightarrow t = s/v$, $\varepsilon = \Delta t\,v/s$;
+  - slope $v = \Delta s/\Delta t$, used twice;
+  - midpoint and half-difference of $v$;
+  - cooling rate $r = \Delta T/\Delta t$ with $\Delta r = r_1 - r_2$;
+  - the time budget $t_\text{kok} = t_\text{val} + Nnt_\text{toisto}$ solved for $n$;
+  - the mean difference against Δt, and $d$ and $k$;
+  - the inequality chains ε ≤ ε_max giving $T_\text{lasku} \ge \Delta T/\varepsilon_\text{max}$ and $t \ge \Delta t/\varepsilon_\text{max}$, each rounded to the safe side.
+- I recomputed the numbers myself: 0,417 m/s; 2,5 %; 10 %; 0,42 and 0,30 m/s; 0,033 m/s; 1,4 K/min; n = 4,0; k = 3,75; 10 min; 1,37 km. None changed.
+- The new symbols $p$ and $\Delta r$ are defined in their own rows. No answer, unit or tolerance changed.
+- The hash was 0134f21ed9127ea2 at the start and at the end.
