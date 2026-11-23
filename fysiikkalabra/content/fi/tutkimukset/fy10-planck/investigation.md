@@ -51,7 +51,7 @@ missä $E$ on fotonin energia, $f$ valon taajuus ja $h$ **Planckin vakio**, jonk
 eU_\text{k} \approx hf
 ```
 
-Yhteys on vain likimääräinen, ja sen ehdot kannattaa pitää mielessä koko työn ajan: LED ei lähetä yhtä ainoaa aallonpituutta vaan kapean aallonpituusalueen, kynnysjännitteen arvo riippuu siitä, miten se määritetään, osa LEDin jännitteestä kuluu sen sisäiseen resistanssiin, ja LEDin lämpeneminen muuttaa sen ominaisuuksia. Vakiot $e = 1{,}602\,176\,634\cdot10^{-19}\ \text{C}$ ja $c = 2{,}997\,924\,58\cdot10^{8}\ \text{m/s}$ ovat tarkkoja määriteltyjä arvoja.
+Yhteys on vain likimääräinen, ja sen ehdot kannattaa pitää mielessä koko työn ajan: LED ei lähetä yhtä ainoaa aallonpituutta vaan kapean aallonpituusalueen, kynnysjännitteen arvo riippuu siitä, miten se määritetään, osa LEDin jännitteestä kuluu sen sisäiseen resistanssiin, ja LEDin lämpeneminen muuttaa sen ominaisuuksia. Vakiot $e = 1{,}602\,176\,634\cdot10^{-19}\,\text{C}$ ja $c = 2{,}997\,924\,58\cdot10^{8}\,\text{m/s}$ ovat tarkkoja määriteltyjä arvoja.
 
 ::: tuki O
 **Malli kuvaajaksi.** Kun periaatteeseen sijoitetaan $f = \dfrac{c}{\lambda}$ ja ratkaistaan kynnysjännite, saadaan
@@ -201,7 +201,7 @@ Määritä kynnysjännite jyrkän osan suoran avulla. Valitse virta–jännite-k
 U_\text{k} = \frac{hc}{e}\cdot\frac{1}{\lambda}
 ```
 
-Tämä on suoran yhtälö $y = kx$, kun pystyakselille valitaan $U_\text{k}$ ja vaaka-akselille $\dfrac{1}{\lambda}$. Silloin kulmakerroin on $k = \dfrac{hc}{e}$, sen yksikkö on $\text{V}\cdot\text{m}$, ja Planckin vakio on $h = \dfrac{ek}{c}$. Jos vaaka-akselille valittaisiin aallonpituus $\lambda$, pisteet asettuisivat käyrälle eikä suoralle. Toinen hyvä valinta on pystyakselille fotonin energia $eU_\text{k}$ ja vaaka-akselille taajuus $f = \dfrac{c}{\lambda}$: silloin kulmakerroin on suoraan $h$. Aallonpituus muunnetaan metreiksi ennen käänteisluvun laskemista: $1\ \text{nm} = 10^{-9}\ \text{m}$.
+Tämä on suoran yhtälö $y = kx$, kun pystyakselille valitaan $U_\text{k}$ ja vaaka-akselille $\dfrac{1}{\lambda}$. Silloin kulmakerroin on $k = \dfrac{hc}{e}$, sen yksikkö on $\text{V}\cdot\text{m}$, ja Planckin vakio on $h = \dfrac{ek}{c}$. Jos vaaka-akselille valittaisiin aallonpituus $\lambda$, pisteet asettuisivat käyrälle eikä suoralle. Toinen hyvä valinta on pystyakselille fotonin energia $eU_\text{k}$ ja vaaka-akselille taajuus $f = \dfrac{c}{\lambda}$: silloin kulmakerroin on suoraan $h$. Aallonpituus muunnetaan metreiksi ennen käänteisluvun laskemista: $1\,\text{nm} = 10^{-9}\,\text{m}$.
 
 Tarkista vielä kuvaajastasi: ovatko pisteet suoralla, ja kulkeeko suora origon kautta? Jos kaikkien LEDien kynnysjännitteissä on sama lisäosa, suora siirtyy ylös tai alas, mutta kulmakerroin ei muutu. Eri materiaaleista tehdyillä LEDeillä lisäosa voi olla erisuuruinen, ja silloin se muuttaa myös kulmakerrointa.
 :::
@@ -210,7 +210,7 @@ Kuvaajien piirtämiseen ja sovitukseen käytä Graphical Analysis Pro -ohjelmaa.
 
 ## Epävarmuus ja luotettavuus
 
-Ilmoita Planckin vakio muodossa $h = (h \pm \Delta h)\ \text{J}\cdot\text{s}$ ja perustele, miten arvioit epävarmuuden $\Delta h$.
+Ilmoita Planckin vakio muodossa $h = (h \pm \Delta h)\,\text{J}\cdot\text{s}$ ja perustele, miten arvioit epävarmuuden $\Delta h$.
 
 ::: tuki O OO
 Koska $e$ ja $c$ ovat tarkkoja arvoja, Planckin vakion suhteellinen epävarmuus on sama kuin kulmakertoimen: $\dfrac{\Delta h}{h} = \dfrac{\Delta k}{k}$. Kulmakertoimen epävarmuuden voit arvioida jommallakummalla tavalla:
@@ -227,7 +227,7 @@ Pyöristä $\Delta h$ yhteen merkitsevään numeroon ja $h$ samaan tarkkuuteen.
 Ohjatussa työtavassa käytä kulmakertoimen epävarmuutena jyrkimmän ja loivimman suoran menetelmää.
 :::
 
-Vertaa tulosta Planckin vakion tunnettuun arvoon $h = 6{,}626\,070\,15\cdot10^{-34}\ \text{J}\cdot\text{s}$. Laske, kuinka monta prosenttia tuloksesi poikkeaa siitä, ja tarkista, mahtuuko tunnettu arvo epävarmuusvälisi sisään.
+Vertaa tulosta Planckin vakion tunnettuun arvoon $h = 6{,}626\,070\,15\cdot10^{-34}\,\text{J}\cdot\text{s}$. Laske, kuinka monta prosenttia tuloksesi poikkeaa siitä, ja tarkista, mahtuuko tunnettu arvo epävarmuusvälisi sisään.
 
 Pohdi sitten luotettavuutta konkreettisesti: mitkä tekijät aiheuttivat mittausepävarmuutta, olivatko ne satunnaisia vai systemaattisia, ja mihin suuntaan systemaattiset virheet olisivat muuttaneet tulosta? Jos tunnettu arvo jää epävarmuusvälisi ulkopuolelle, ero ei selity pelkillä lukematarkkuuksilla: mieti, mitkä Teoriaa lyhyesti -kohdan mallin ehdoista eivät ehkä täyttyneet. Miten parantaisit mittausta?
 
@@ -248,7 +248,7 @@ Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kai
 - **Tausta ja teoria:** fotonin energia, periaate $eU_\text{k} \approx hf$ ehtoineen ja perustelu kuvaajan akseleille.
 - **Koejärjestely ja menetelmä:** kytkentäkaavio, mistä LEDien aallonpituudet ovat peräisin ja miten määritit kynnysjännitteen.
 - **Mittaustulokset:** jokaisen LEDin mittaussarja omana taulukkonaan ja yhteenvetotaulukko, jossa johdetut suureet ovat mitattujen oikealla puolella.
-- **Tulos:** $h = (h \pm \Delta h)\ \text{J}\cdot\text{s}$ oikein pyöristettynä ja poikkeama tunnetusta arvosta.
+- **Tulos:** $h = (h \pm \Delta h)\,\text{J}\cdot\text{s}$ oikein pyöristettynä ja poikkeama tunnetusta arvosta.
 - **Luotettavuus:** konkreettiset epävarmuuden lähteet, niiden vaikutuksen suunta ja mallin rajat.
 
 ## Laajennus: aallonpituudet itse hilalla
@@ -259,7 +259,7 @@ Tietolehden aallonpituuden sijasta voit mitata LEDin aallonpituuden itse. Spektr
 d\sin\theta = \lambda
 ```
 
-missä $d$ on hilan kahden vierekkäisen raon välimatka eli hilavakio ja $\lambda$ valon aallonpituus. Jos hilaan on merkitty rakojen määrä millimetrillä $N$, hilavakio on $d = \dfrac{1\ \text{mm}}{N}$. Hilaa ja valon diffraktiota käsitellään tarkemmin moduulissa FY7.
+missä $d$ on hilan kahden vierekkäisen raon välimatka eli hilavakio ja $\lambda$ valon aallonpituus. Jos hilaan on merkitty rakojen määrä millimetrillä $N$, hilavakio on $d = \dfrac{1\,\text{mm}}{N}$. Hilaa ja valon diffraktiota käsitellään tarkemmin moduulissa FY7.
 
 <svg data-fig="grating" viewBox="0 0 600 360" role="img" aria-label="Kaaviokuva ylhäältä. Vasemmalla on kapea rako, jonka takana on LED, ja raon kohdalla poikittainen mitta-asteikko. Oikealla etäisyydellä L asteikosta on hila ja sen takana silmä. Valo kulkee raosta suoraan hilaan. Silmä näkee raon värillisen kuvan asteikolla etäisyydellä x raosta, suunnassa, joka poikkeaa kulman theta verran raon suunnasta." style="max-width:100%;font-size:24px">
   <image href="pics/fy10/fy10-planck-grating.webp" x="0" y="-1.2" width="600" height="366.2" preserveAspectRatio="none"/>

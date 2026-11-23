@@ -10,7 +10,7 @@
 - Tuloa $U_1 I_1$ pidetään ensiöpuolen todellisena tehona. Se on vähintään yhtä suuri kuin todellinen teho, koska osa ensiövirrasta vain magnetoi sydäntä, joten näin laskettu hyötysuhde on alaraja. Ero on suurin pienellä kuormalla.
 - Hyötysuhde yli sadan prosentin on aina merkki mittaus- tai laskuvirheestä, esimerkiksi väärästä mittausalueesta tai lukemista, jotka on otettu eri kuormituksilla.
 - Rautasydän jätetään raolleen, mikä näkyy sekä jännitteiden suhteessa että hyötysuhteessa.
-- Energiahäviöt selitetään vain "lämpönä" erittelemättä käämien ja rautasydämen häviöitä.
+- Energiahäviöt selitetään vain ”lämpönä” erittelemättä käämien ja rautasydämen häviöitä.
 
 **Eriyttäminen.** Ohjattu työtapa antaa toimintaohjeen kahdessa osassa, taulukot ja akselit; se sopii, jos opiskelija ei ole aiemmin kytkenyt mittareita vaihtovirtapiiriin. Osittain ohjatussa opiskelija päättää käämiyhdistelmät, ensiöjännitteen ja toistot ja saa mallikuvaajan ja epävarmuuden arviointitavat tueksi. Itsenäisessä työtavassa sivu antaa tutkimuskysymyksen, välineet ja periaatteet (induktio, ideaalisen muuntajan ehdot, $P = UI$ ja hyötysuhde); opiskelija johtaa mallin ennusteen ja valitsee kuvaajan akselit itse, ja laajennus kuuluu työhön. FY10-suunnitelmassa muuntaja on teeman 8 itsenäisen tutkimuksen vaihtoehto. Koska induktiota ja sähkötehoa käsittelevät luvut (FY6, FY7) eivät ole vielä julkaistuja, sivu selittää tarvittavat periaatteet lyhyesti; käy ne tarvittaessa läpi ennen työtä.
 

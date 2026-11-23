@@ -76,7 +76,7 @@ Ennen mittaamista päätä ja kirjaa ylös, mitä mittaat, mitä muutat ja mitä
 Noudata laserin kanssa sivun alun turvallisuusohjeita. Älä koskaan katso säteeseen tai sen heijastuksiin.
 
 ::: tuki O
-**Ohjattu.** Kiinnitä hius pystysuoraan pidikkeeseen ja aseta pidike lasersäteeseen muutaman senttimetrin päähän laserista, niin että säde osuu hiukseen. Sijoita varjostin seinälle useamman metrin päähän hiuksesta, esimerkiksi $2$–$4\ \text{m}$ päähän. Mittaat hiuksen ja varjostimen välisen etäisyyden $L$ sekä kuvion minimien paikat. Vakiona pidät laserin, hiuksen ja etäisyyden $L$ koko mittaussarjan ajan.
+**Ohjattu.** Kiinnitä hius pystysuoraan pidikkeeseen ja aseta pidike lasersäteeseen muutaman senttimetrin päähän laserista, niin että säde osuu hiukseen. Sijoita varjostin seinälle useamman metrin päähän hiuksesta, esimerkiksi $2$–$4\,\text{m}$ päähän. Mittaat hiuksen ja varjostimen välisen etäisyyden $L$ sekä kuvion minimien paikat. Vakiona pidät laserin, hiuksen ja etäisyyden $L$ koko mittaussarjan ajan.
 :::
 
 ::: tuki OO
@@ -103,7 +103,7 @@ Kirjoita vastauksesi ylös ennen kuin luet eteenpäin. Tarkista sitten kirjaukse
   <foreignObject x="300" y="297.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$L$</div></foreignObject>
 </svg>
 
-Kun kulma on pieni, $\sin\theta_m \approx \tan\theta_m$. Esimerkiksi kun kulma on alle $0{,}1\ \text{rad}$ eli alle noin $6^\circ$, ne eroavat toisistaan alle prosentin. Pienillä kulmilla minimien ehdosta tulee
+Kun kulma on pieni, $\sin\theta_m \approx \tan\theta_m$. Esimerkiksi kun kulma on alle $0{,}1\,\text{rad}$ eli alle noin $6^\circ$, ne eroavat toisistaan alle prosentin. Pienillä kulmilla minimien ehdosta tulee
 
 ```latex
 d \cdot \frac{x_m}{L} = m\lambda
@@ -176,7 +176,7 @@ Testaa lopuksi ennustettasi 1: vaihda hiuksen tilalle selvästi paksumpi tai ohu
 Määritä hiuksen paksuus niin, että tulokseen vaikuttavat useat minimit. Jos piirrät kuvaajan, merkitse akseleille suureet ja yksiköt, piirrä mittauspisteet yhdistämättä niitä murtoviivalla ja sovita pisteisiin suora. [[apua:fy1-4|Suoran sovittaminen ja kulmakertoimen tulkinta]]
 
 ::: tuki O
-Piirrä kuvaaja, jonka pystyakselilla on minimin etäisyys keskikohdasta $x_m$ ja vaaka-akselilla järjestysluku $m$. Sovita pisteisiin suora ja laske hiuksen paksuus kulmakertoimesta. Muista muuttaa aallonpituus nanometreistä metreiksi: $1\ \text{nm} = 10^{-9}\ \text{m}$.
+Piirrä kuvaaja, jonka pystyakselilla on minimin etäisyys keskikohdasta $x_m$ ja vaaka-akselilla järjestysluku $m$. Sovita pisteisiin suora ja laske hiuksen paksuus kulmakertoimesta. Muista muuttaa aallonpituus nanometreistä metreiksi: $1\,\text{nm} = 10^{-9}\,\text{m}$.
 :::
 
 Kirjoita laskusi näkyviin ja vastaa:
@@ -194,7 +194,7 @@ Kuvaajan sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohje
 
 ## Epävarmuus ja luotettavuus
 
-Ilmoita hiuksen paksuus muodossa $d = (d \pm \Delta d)\ \mu\text{m}$ ja perustele, miten arvioit epävarmuuden $\Delta d$. Mitkä suureet vaikuttavat tulokseen, ja minkä niistä epävarmuus vaikuttaa eniten?
+Ilmoita hiuksen paksuus muodossa $d = (d \pm \Delta d)\,\mu\text{m}$ ja perustele, miten arvioit epävarmuuden $\Delta d$. Mitkä suureet vaikuttavat tulokseen, ja minkä niistä epävarmuus vaikuttaa eniten?
 
 ::: tuki O OO
 Hiuksen paksuus lasketaan kolmesta suureesta: $d = \dfrac{\lambda L}{a}$. Kun suure on tulo tai osamäärä, sen suhteellinen epävarmuus on likimain osien suhteellisten epävarmuuksien summa:
@@ -223,12 +223,12 @@ Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kai
 - **Tausta ja teoria:** diffraktio ja minimien ehto, miksi hiuksen kuvio vastaa raon kuviota ja mitä mallin ehtoja tarvitaan.
 - **Koejärjestely ja menetelmä:** koejärjestely kuvana, miten mittasit minimien paikat ja etäisyyden $L$, mitä pidit vakiona ja miten huolehdit lasertyön turvallisuudesta.
 - **Mittaustulokset:** alkuperäiset lukemat omissa sarakkeissaan, laserin aallonpituus kyltistä ja etäisyys $L$.
-- **Tulos:** $d = (d \pm \Delta d)\ \mu\text{m}$ oikein pyöristettynä ja vertailu tyypilliseen suuruusluokkaan.
+- **Tulos:** $d = (d \pm \Delta d)\,\mu\text{m}$ oikein pyöristettynä ja vertailu tyypilliseen suuruusluokkaan.
 - **Luotettavuus:** konkreettiset epävarmuuden lähteet, niiden vaikutuksen suunta ja se, minkä suureen epävarmuus vaikutti eniten.
 
 ## Laajennus: menetelmän testaaminen tunnetulla langalla
 
-Kuinka hyvin menetelmä toimii? Sen voi testata ohuella, alle $0{,}3\ \text{mm}$ paksulla metallilangalla, jonka paksuus saadaan myös toisella tavalla, esimerkiksi mikrometriruuvilla. Kiristä mikrometriruuvi kevyesti sen räikän eli kitkakytkimen avulla, ettei lanka tai hius litisty. Määritä langan paksuus samalla diffraktiomenetelmällä kuin hiuksen paksuus ja mittaa se lisäksi mikrometriruuvilla. Ilmoita molemmat tulokset epävarmuuksineen.
+Kuinka hyvin menetelmä toimii? Sen voi testata ohuella, alle $0{,}3\,\text{mm}$ paksulla metallilangalla, jonka paksuus saadaan myös toisella tavalla, esimerkiksi mikrometriruuvilla. Kiristä mikrometriruuvi kevyesti sen räikän eli kitkakytkimen avulla, ettei lanka tai hius litisty. Määritä langan paksuus samalla diffraktiomenetelmällä kuin hiuksen paksuus ja mittaa se lisäksi mikrometriruuvilla. Ilmoita molemmat tulokset epävarmuuksineen.
 
 Ovatko tulokset sopusoinnussa, eli mahtuvatko ne toistensa epävarmuusväleihin? Päällekkäiset epävarmuusvälit tarkoittavat, että tulokset ovat sopusoinnussa, eivät sitä, että ne on todistettu samoiksi. Mittaa lopuksi myös hius mikrometriruuvilla ja vertaa sen suhteellista epävarmuutta diffraktiomenetelmän suhteelliseen epävarmuuteen. Kumpi menetelmä sopii paremmin hiuksen mittaamiseen, ja miksi?
 

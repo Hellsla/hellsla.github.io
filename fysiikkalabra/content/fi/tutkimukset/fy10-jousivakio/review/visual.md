@@ -1,19 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: ae3715dbf7697f9f
+CONTENT-HASH: 5b106266d8d24ded
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] investigation.md "Epävarmuus ja luotettavuus", "Raportoi" — `k = (k \pm \Delta k)` uses k on both sides; the value should be a distinct symbol, e.g. `k = (\bar{k} \pm \Delta k)\ \text{N/m}` (for science: confirm the notation matches fy1-3's `\bar{x} \pm \Delta x`).
-- [Minor] box "Miksi juuri nämä akselit?" — one paragraph of about 125 words mixing three ideas (axes, inverse slope, coil pre-tension); split it into two or three short paragraphs.
-- [Minor] fig 3 (setup) — the red arrow `\overline{F}` runs over the lower coils of the loaded spring and the dashed rule crosses its tip; shift the arrow beside the spring or start it at the block edge. The figure is still readable.
-- [Minor] figs 5 and 8 — the model graphs have no axis units or tick labels. This is acceptable for a schematic model, but "kaaviokuva, ei mittakaavassa" in the caption or alt text would say so.
-- [Minor] text — straight quotes "kuvaajasta 1 nähdään…" should be Finnish ”…”; "Jousivaa'an" should have a typographic apostrophe.
+- [Minor] investigation.md, opening paragraph — "selvität mittaamalla, millainen riippuvuus on" lacks its object — "millainen riippuvuus venymän ja voiman välillä on".
+- [Minor] Epävarmuus-section — "$k = (k \pm \Delta k)\,\text{N/m}$" has k on both sides and the unit sits tight after the bracket — for science: is the notation intended? Suggest "$k = (k_0 \pm \Delta k)\,\text{N/m}$" or a words-only form, with a thin space before the unit.
+- [Minor] Figure 2 — the force arrow $\overline{F}$ runs over the lower coils of the spring, and weight and spring force share the force red (convention-correct) — start the arrow at the block's top edge and shift it slightly sideways so the coils stay clear.
+- [Minor] Figure 4 — "vakiotermi" label and the intercept dot are small at 390 px — enlarge to the 24 px rule.
+- [Minor] Mittaa table — the empty example table has no caption/row labels — add a short aria-label for screen readers.
 
-## Checked (delta 2026-11-16)
-- Changed: the 'Miksi juuri nämä akselit?' paragraph split in three. Opened page-1280-5 and page-390-7 (three short paragraphs read well in the box, the 1/k fraction is fine, nothing overflows at 390 px; earlier Polish on its length resolved). Straight quotes in Johtopäätökset (page-390-8) remain, Minor.
-- Delta of text and typography only; no figure changed (figure findings above are the teacher's redraw queue, not Blocking).
+## Checked
+- Rebuilt captures (the build needed `pip install markdown`), then opened contact sheets 1–3.
+- fig-1..fig-4 at 390 px; top-1280; open-ennusta-1280.
+- page-390-3, -6, -7 (tools list, Mittaa table, derivation box and uncertainty section).
+- Figures: set-up sketch, spring extension diagram, F-x graph, T²-m graph; all LaTeX labels render, nothing clipped, no horizontal overflow seen.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4
