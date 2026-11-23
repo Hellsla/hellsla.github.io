@@ -77,9 +77,9 @@ The hints in italics use Finnish letters, as in the first lesson: capitals show 
    <span lang="fr"><span class="nobr">quatre-vingt-dix-sept</span></span> *ka-trö-vẽ-di-SET*. Listen for the end: it tells you the units.
 
 ```pysahdy
-Why do you hear a *z* in <span lang="fr">deux euros</span> but not in <span lang="fr">deux croissants</span>?
+Why do you hear a <em>z</em> in <span lang="fr">deux euros</span> but not in <span lang="fr">deux croissants</span>?
 ---
-<span lang="fr">Euro</span> starts with a vowel, so the silent final consonant of <span lang="fr">deux</span> is linked to it in a liaison. Before a consonant the *x* stays silent.
+<span lang="fr">Euro</span> starts with a vowel, so the silent final consonant of <span lang="fr">deux</span> is linked to it in a liaison. Before a consonant the <em>x</em> stays silent.
 ```
 
 <div class="fx" data-fx="say" id="fx-say-sounds"><script type="application/json">{"phrases": [{"fr": "six, dix, six croissants", "en": "Final consonants", "tip": "*SIS, DIS, si krwa-SÃ*"}, {"fr": "vingt, vingt-deux, quatre-vingt-un", "en": "Vingt", "tip": "*VẼ, vẽt-DÖ, ka-trö-vẽ-Ẽ*"}, {"fr": "deux euros, six euros, dix euros", "en": "Liaison", "tip": "*dö-zö-RO, si-zö-RO, di-zö-RO*"}, {"fr": "quatre-vingt-dix-sept euros", "en": "Stress at the end", "tip": "*ka-trö-vẽ-di-se-tö-RO*: the *t* of *{fr}sept{/fr}* is linked to *{fr}euros{/fr}*."}]}</script></div>

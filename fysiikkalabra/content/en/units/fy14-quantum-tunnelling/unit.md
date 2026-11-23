@@ -3354,12 +3354,6 @@ In 1924 the French physicist Louis de Broglie suggested that electrons might be 
 
 Each electron arrives at one single point, like a particle. But where it arrives is not decided like a bullet's path: after thousands of electrons, the dots form the bands of a wave pattern. At the Fotoni lab visit you can study a double-slit experiment repeated with single photons (unit *Fotoni lab visit: modern physics experiments*).
 
-```pysahdy
-Each electron lands at one single point. What shows that electrons still behave as waves?
----
-After thousands of electrons the dots form interference bands, which is a wave pattern.
-```
-
 ## Through the wall {Tunnel}
 
 Roll a ball towards a hill. If its kinetic energy is less than the energy needed to reach the top, it always rolls back. In classical physics the region beyond the hill is simply forbidden. A small particle such as an electron behaves differently. Its wave does not stop at the edge of an **energy barrier**: inside the barrier the wave shrinks quickly, and if the barrier is thin, a small wave comes out on the other side. So the particle has a chance of appearing beyond the barrier. This is **quantum tunnelling**.

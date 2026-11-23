@@ -32,7 +32,7 @@ Good readers of a foreign language use five strategies:
 ```pysahdy
 You see the word <span lang="fr">réacteur</span> in a news text. Which strategy gives you its meaning, and what does it mean?
 ---
-The word ending: French <span lang="fr">‑eur</span> has the regular English partner *‑or*, so <span lang="fr">réacteur</span> means *reactor*.
+The word ending: French <span lang="fr">‑eur</span> has the regular English partner <em>‑or</em>, so <span lang="fr">réacteur</span> means <em>reactor</em>.
 ```
 
 ## False friends
@@ -54,7 +54,7 @@ When a look-alike gives a sentence a strange meaning, check it against the conte
 ```pysahdy
 A French text says a project costs several <span lang="fr">milliards</span> of euros. Is that millions or billions, and how large is one <span lang="fr">milliard</span>?
 ---
-It is billions: <span lang="fr">un milliard</span> is $10^{9}$, not a million. It is a false friend that looks like *million*.
+It is billions: <span lang="fr">un milliard</span> is $10^{9}$, not a million. It is a false friend that looks like <em>million</em>.
 ```
 
 ## Summary

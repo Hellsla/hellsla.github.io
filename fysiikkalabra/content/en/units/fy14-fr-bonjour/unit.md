@@ -32,7 +32,7 @@ The greeting follows the same idea. **<span lang="fr">Bonjour</span>** works wit
 before you ask a question, when you enter a shop, when you meet the guide. Starting without it can sound rude.
 
 ```pysahdy
-You meet two adult engineers at the same time and want to greet them with the right word for *you*. Do you use <span lang="fr">tu</span> or <span lang="fr">vous</span>?
+You meet two adult engineers at the same time and want to greet them with the right word for <em>you</em>. Do you use <span lang="fr">tu</span> or <span lang="fr">vous</span>?
 ---
 <span lang="fr">Vous</span>. It is the polite word for an adult you do not know, and it is also the only word for two or more people.
 ```
@@ -67,7 +67,7 @@ is like the *s* in English *pleasure*.
 ```pysahdy
 Why do <span lang="fr">finlandais</span> and <span lang="fr">finlandaise</span> sound different, although they differ by one letter?
 ---
-In <span lang="fr">finlandais</span> the final *s* is silent. In <span lang="fr">finlandaise</span> the *s* is no longer at the end of the word, so it is heard, as a *z*.
+In <span lang="fr">finlandais</span> the final <em>s</em> is silent. In <span lang="fr">finlandaise</span> the <em>s</em> is no longer at the end of the word, so it is heard, as a <em>z</em>.
 ```
 
 Listen to the four points, then say them aloud:

@@ -21,7 +21,7 @@ Read the data critically:
 - Results of private companies are usually **company-reported**, and every date of a planned machine is a **plan**.
 
 ```pysahdy
-A line in the explorer reads *Model A, 1953–?*. Does the year filter show it as operating in 1975, and is that a fact?
+A line in the explorer reads <em>Model A, 1953–?</em>. Does the year filter show it as operating in 1975, and is that a fact?
 ---
 No. With no known end year the filter counts it only for ten years after its start, to 1963. This is a careful guess, not a fact, and the panel's note says which rule was used.
 ```
