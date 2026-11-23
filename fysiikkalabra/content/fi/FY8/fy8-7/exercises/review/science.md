@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: bb52b416609e298b
-SCOPE: delta added-exercise from 6eb91ace4b5c1ba6 base 5b3ca4f81c77
+CONTENT-HASH: 67ed4e67f89dc96b
+SCOPE: delta (work queue 8g, Kaava steps of the model solutions)
 
 ## Blocking
 
 ## Polish
-- solutions.md:370 (L3-06) — the ordinals are right on its 1-unit grid ("seitsemännen", "neljännen"), but naming the lines by their values ("vaakaviivan $7$", "vaakaviivan $4$") would match the L2-08 wording now.
-- L3-06 tolerance ±4 % — a careful reading of ±0,1 per point moves the ratio by 2–4 % (6,7/4,1 → 2,91; 6,9/3,9 → 3,15), so it can just land in "Lähellä". Acceptable; ±5 % would be safer.
+- solutions.md (L3-03) — the Kaava block writes $f_\text{valo} = c/\lambda$ but no row for $f_\text{q}$, which is given. That is correct, but one clause ("$f_\text{q}$ on annettu") would make it read as complete.
 
 ## Checked
-- Round-1 blocking item fixed: solutions.md:336 (L2-08) now says "Piste on hieman vaakaviivan $4{,}0$ alapuolella". This matches the figure (0,5 grid, point at 3,927) and the stated 0,5 spacing, and the self-contradicting ordinal is gone.
-- `git diff f19f98ccc HEAD`: in the fi exercise set the only change is that one line of solutions.md. exercises.json, answers.py and figures.py are unchanged. The en and fi-easy solutions changed one line each, as the parallel fix, and are not judged here.
-- Recomputed in one script: L1-10 6,7455e15 1/s (MAFY h); L2-08 3,9e15 · hc/520 nm = 1,490 mW → 1,5; L3-06 1,70 · 1,7778 = 3,022 → 3,0; figure point 3,927e15. All agree with answers.py (6,745547e15; 1,5; 3,0).
-- Physics, scope, units and rounding are as passed in round 1.
-- Hash bb52b416609e298b at start and end.
+- `git diff a7ec649ae6 -- exercises/ answers.py figures.py`: only solutions.md changed. exercises.json, answers.py and figures.py are unchanged, so the answers, units and tolerances are the ones passed before.
+- I compared every solution field by field, with whitespace normalised: only the **Kaava** fields changed. Every other field differs only by blank-line paragraph splits.
+- Every new Kaava block starts from $E = hf$ or $P = \tfrac{N}{t} \cdot hf$ and $f = \tfrac{c}{\lambda}$, as the lesson's *Kaava: Laserin fotonit* does. Then comes the derived form, and then the unknown is solved in symbols.
+- I checked the algebra. L1-03 $\lambda = hc/(E_2-E_1)$. L2-01 $\eta = \lambda_\text{p}/\lambda_\text{L}$. L2-02 $N_\text{r}/N_\text{v} = \lambda_\text{r}/\lambda_\text{v}$. L2-04 $P = Nhc/(\lambda t)$. L3-02 $\tfrac{N_\text{v}}{t} = P\lambda_\text{p}/(2hc)$. L3-03 $c/(\lambda f_\text{q})$. L3-04 $\eta_\text{q} = P_\text{L}\lambda_\text{L}/(P_\text{p}\lambda_\text{p})$ and $P_\text{pak} = \tfrac{N_\text{L}}{t}(hf_\text{p} - hf_\text{L})$. L3-05: the ratio step $\tfrac{\Delta P_\text{L}}{\Delta P_\text{p}} = \tfrac{\Delta N_\text{L}}{\Delta N_\text{p}} \cdot \tfrac{\lambda_\text{p}}{\lambda_\text{L}}$ inverts correctly to $\cdot\,\lambda_\text{L}/\lambda_\text{p}$. L3-06 $P_\text{X}/P_\text{Y}$. All are correct.
+- Each Sijoitus still substitutes into the last symbolic form of its Kaava block. The numbers are unchanged.
+- Notation is the same as the lesson's ($E_2 - E_1$, $\tfrac{N}{t}$, $hf$).
+- The hash was 67ed4e67f89dc96b at the start and at the end.
