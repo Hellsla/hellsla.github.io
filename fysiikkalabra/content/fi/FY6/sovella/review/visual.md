@@ -1,21 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 5fb6f421aeb38b44
+CONTENT-HASH: 37ff55bd05bc7116
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] tasks.json fy6-s1 text — the situation paragraph is about 150 words (over the 120-word guideline) and the creep explanation sits in the middle of it — split it into the set-up, the creep note and the control measurement, with the question last.
-- [Minor] fig 3 and fig 4 at 390 px — the grey labels (12 V, 24 W, "suutinlevy", "työkappale") are about 10 px — enlarge them or darken them (the 390 px captures only; the figures are otherwise clear and consistent).
-- [Minor] solutions.md fy6-s2 b) Kaava — the first aligned row (E − R_kI − U_L = 0) sits left while the later rows are indented at the = column, so the block looks ragged — start with the = rows aligned in one column, or put the loop rule on its own line.
-- [Minor] solutions.md fy6-s3 d) Sijoitus — the row begins with a bare "· (6,0 · 10^-13 C)^2/…" after the unit fraction; it is correct and readable, but a continuation row starting with an operator is slightly cramped on 390 px.
-- [Minor] fig 2 (graph) — the broken vertical axis (start at 3,6 V) is explained only in prose — add a short "alku 3,6 V" note or an axis-break mark in the figure itself.
+- [Minor] tasks.json fy6-s1 text: the situation paragraph is still long (over the 120-word guideline); split the set-up, the creep note and the control measurement into short paragraphs, question last.
+- [Minor] fig 3 and fig 4 at 390 px: the grey labels are about 10 px; enlarge or darken them.
+- [Minor] fig 2: the broken vertical axis (starts at 3,6 V) is explained in prose only; add a short note or an axis-break mark in the figure.
+- [Minor] solutions.md fy6-s2 b) Kaava: the first aligned row sits left of the later = rows; align the block in one column.
 
 ## Checked
-- Opened at readable size: top-390 and top-1280, fig-1…fig-4 at 390 px (the circuit, the graph, the cabin circuit, the field figure), contact-1.
-- Opened stage captures: s1-1, s1-4 (formula blocks, Kaava, Sijoitus, Vastaus), s2-9 (rubric rows), s3-6 (Coulomb row, Järkevyys).
-- Opened page-1280-2 and page-1280-12 (task list, model answer, table, aligned Kaava rows).
-- Did not open every capture of the 126; the other stage parts and the s4 captures were seen only through the contact sheet, and fig-1…4 covers every figure.
+- Round 2 (text-only changes since my PASS at hash 5fb6f421aeb38b44), judged as a full review against the current captures.
+- Opened contact-1, top-390, fig-2-390 (graph), stage-fy6-s1-390-2 (task text, parts a-d, opened model answer).
+- Text, tasks and the opened model answer render without clipping or overflow at 390 px; KaTeX renders without red source; quantities with units are in LaTeX; the figures are unchanged.
+- Did not open every capture; the rest were seen through the contact sheet only.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4
