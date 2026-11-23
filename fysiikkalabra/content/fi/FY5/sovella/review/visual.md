@@ -1,19 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: c05a8657af84848d
+CONTENT-HASH: e15d7cb149da0d0d
+none
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md a-, b-, c-, s2-a-, s3-kohdat — `$$\begin{aligned}…$$` display maths sits inside a running sentence and is followed by ", joten …" or "." on its own line. This is unchanged from the baseline; at 390 px the stray punctuation line reads slightly oddly. Optional: end the sentence before the display, or put the continuation in the next sentence.
-- [Minor] solutions.md fy5-s1 d) — the sentence "Kuorma ei siis heitty ulospäin…" is now its own paragraph right after the "Kuljettajan selitys" paragraph. It reads as a conclusion, so the split is fine; only a thought: "siis" is slightly redundant after the split.
+- [Minor] solutions c) Mallivastaus — short chains such as `2000 kg · 9,81 m/s² · 10 m = 196,2 kNm` and `188 000 Nm : (…) ≈ 1,9 t` start with a bare numeric expression (house rule: a chain starts with the quantity it computes) — open them with `M_\text{lisä} =` and `m_\text{lisä} =`.
+- [Minor] fy5-s4 signal graph — the y axis has no ticks or unit ("signaali"); fine for a schematic trace, but say "mielivaltainen yksikkö" in the alt text or title.
+- [Minor] s3 d) Kaava — `E_{k,max}` subscripts are set in italic (`max`) beside upright `\text{eff}` elsewhere; make `\text{max}` consistent.
+- [Minor] s2 d) Mallivastaus "Oletukset" — a dash list inside one paragraph, set as run-on lines; use a real list.
 
 ## Checked
-- Source-only review (the screenshot inventory is empty, so there are no captures; the packet permits judging from source for this paragraph-split change). No figure was opened and no figure claim is made. The figures were not touched by the diff.
-- Hash run at start and end: c05a8657af84848d.
-- Read the full solutions.md diff (word-diff against origin/main): every split lands at a thought boundary (Periaate → method, Mallivastaus → Johtopäätös → real-crane remark, Kuljettajan selitys → conclusion, Mallivastaus → Epävarmuus → Poikkeaman syy). No `$…$` or `$$…$$` is broken across a paragraph, no bold label is orphaned from its text, and the label-per-line structure (Annettu, Kysytty, Periaate, …) is intact.
-- tasks.json: the three edited task texts (s1 d, s3 Jupiter, s4 urut) were split at the premise, assumption and question boundaries. The `$…$` units with `\\,\\text` are unchanged, with correct case endings (`$15\,\text{m}$:n`, `$9{,}93\,\text{h}$:n`). The instruction sentence now stands alone as the last paragraph, which improves task clarity.
-- Display aligned blocks are short, broken at `=`/`\\`, and break nothing at phone width by structure.
+- Contact sheets 1, 2, 3 (all of s1–s4 solutions at 390 px).
+- fig-1…fig-5 at 390 px (crane, force diagram, two graphs, signal graph): legible, nothing clipped.
+- page-390-6, -10, -21, -29 at readable size: the new Kaava blocks (basic equation, symbolic simplification, then Sijoitus) wrap on the phone without clipping, equals signs aligned, units upright with thin space.
+- Not opened one by one: the 1280 px parts of the page; the layout checks in the packet cover them.
 
 ## Scores
-illustrations 4 (not re-inspected) · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
