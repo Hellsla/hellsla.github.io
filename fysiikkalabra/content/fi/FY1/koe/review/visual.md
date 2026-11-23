@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 823f6d310477ff2b
+CONTENT-HASH: 26b1711cf5753b06
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md k2 h) Perustelu (page-390-7) — "välillä 4–7 s" wraps as "4" / "–7 s" at 390 px; use `$4\text{–}7\,\text{s}$` so the range stays together.
-- [Minor] solutions.md k1 j) Perustelu — four density calculations run as one dense paragraph; a short list or table (A–D) would read better. Optional.
+- [Minor] solutions.md k2 h) Perustelu: "4–7 s" can still wrap as "4" / "–7 s" at 390 px; use `$4\text{–}7\,\text{s}$`. Carried over from the previous report, not re-checked.
+- [Minor] solutions.md k1 j) Perustelu: four density calculations run together as one dense paragraph; a short list or table (A–D) would read better. Optional. Carried over, not re-checked.
 
 ## Checked
-- Full review. contact-1 and contact-2; at 390 px page-390-7 (h, i, j: the i) aligned block sits inside the sentence, closing period set with it) and page-390-16 (k3 b: six-row Kaava, `=` aligned, nothing clipped; Muunnokset and Sijoitus rows aligned).
-- All five figures at 390 px (fig-1…fig-5): axes with quantities and units, readable ticks, data points distinct from fitted lines, read-off construction dashed, LaTeX labels, Elina/Aaro lines told apart by colour and labels.
+- Delta review of task k7 b)'s Kaava step (d_1 = (d-0)/(N-0) = d/N; Δd_1 = Δd/N). Opened stage-osa-3-390-11 at 390 px: three rows, the = signs aligned, the remark "Tässä Δd on lukeman epävarmuus." on its own line, nothing clipped or overflowing. Muunnokset, Sijoitus (aligned rows, = signs) and Vastaus below it read cleanly.
+- Also opened stage-osa-3-390-12 (k7 d), Kaava V = A·d_1, unchanged, fine) and contact-9.
+- The k7 figure (fig-5) was not re-opened; the diff does not touch it; the previous report covered it.
 - Not opened: 1280 px captures and the other contact sheets.
 
 ## Scores
