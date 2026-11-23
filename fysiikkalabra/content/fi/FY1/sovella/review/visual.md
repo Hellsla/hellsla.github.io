@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 2c9f93d9d410c35d
+CONTENT-HASH: c1ca060ba10bd4ef
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md task 1 d) — the unchanged line "Sovitetun suoran vakiotermi on noin…" now follows the last new paragraph without a blank line; it rendered as its own paragraph, but a blank line would make the structure explicit.
+- [Minor] fy1-s1-graph — the blue "ramppi" label sits right on the lowest points near the axis; moving it a little up/right would give it air. Not blocking.
 
 ## Checked
-- Delta 8c (md-paragraphs), changed steps: 1 c) Mallivastaus (four paragraphs) and 1 d) Mallivastaus (three paragraphs plus the old tail).
-- Opened contact-1.png and FY1-sovella-page-390-6.png (390 px, solutions open; c and d in view): breaks render as even paragraph gaps inside the labelled block, no label detached, $...$ formulas and units intact, nothing clipped. Captures are current for this hash.
-- Not opened: other captures (outside the diff).
+- Full review, fi. contact-1.png; page-390-4 (1 b) Vastaus/Järkevyys, 1 c)), page-390-11 (2 b) Kaava, Sijoitus: the new aligned Kaava blocks); fig-1-390 (fy1-s1-graph: labelled axes with units, ramp points distinct, fitted line, read-off points dashed).
+- The aligned Kaava blocks (1 b, 2 b) render with `=` aligned, fractions in display size, nothing clipped, labels not detached; the Sijoitus chains below keep their own aligned rows.
+- Not opened: the 1280 px parts and stage captures (same content in other states).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

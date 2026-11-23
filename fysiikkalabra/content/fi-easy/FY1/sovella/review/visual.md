@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d069661b6c8f77a2
+CONTENT-HASH: e001e7c289b1571a
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md task 1 d) — the unchanged line "Sovitetun suoran vakiotermi on noin…" follows the new last paragraph without a blank line; add one.
+- none
 
 ## Checked
-- Delta 8c (md-paragraphs): judged from the diff of content/fi-easy/FY1/sovella/solutions.md (1 a) into four paragraphs, 1 c) four, 1 d) three). screenshot.py cannot capture the translated Sovella page; the layout component is the same as in the fi captures, so I used the fi captures (contact-1.png, FY1-sovella-page-390-6.png: gaps even, labels attached, formulas intact) as layout evidence. No Selkeä suomi capture was opened.
-- Breaks fall at sentence ends; one idea per paragraph, in the Selkeä suomi voice.
+- Full review, fi-easy, text-only: no Selkeä suomi capture exists; the Kaava blocks (1 b, 2 b) and the layout are cut exactly as the Finnish ones, so the fi captures (page-390-4, page-390-11, fig-1-390: aligned `=`, nothing clipped) serve as layout evidence. No fi-easy capture was opened.
+- Read the source: short sentences, one idea each, symbolic form before substitution, decimal comma and LaTeX units consistent.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5
