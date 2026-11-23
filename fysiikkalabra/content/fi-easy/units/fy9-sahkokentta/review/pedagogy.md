@@ -1,24 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: debd72cf8d478220
+VERDICT: PASS
+CONTENT-HASH: fe2ecfbd0b95d72a
 
 ## Blocking
-- s4 b: the task text was fixed but solutions.md and one rubric line still carry the old, ill-posed framing, so prompt, rubric and solution contradict each other.
-  - solutions.md line 370 "Kysytty": "pienin ilmaväli, jonka läpi sähkö voi lyödä". Line 374: "pienin väli, jonka läpi sähkö lyö, on d = U/E_max ≈ 4 mm".
-  - The uniform-field model gives the longest gap that surely breaks down (breakdown for d ≤ 4 mm). It is not the smallest gap, because shorter gaps break down too. A student learning from the solution gets the opposite reading of the new prompt.
-  - tasks.json s4 b assumptions criterion: "alaraja eli pienin mahdollinen arvo". That is unclear against "kuinka lyhyen ... varmasti". Say instead that 4 mm is a cautious (alaraja) estimate of the longest gap that breaks down, since field enhancement and moisture allow longer gaps.
-  - The solution's "turvaetäisyyden alaraja" and the common mistake "tasaisen kentän alaraja" need the same fix.
-  - Fix: use one wording in the "Kysytty" line, the model answer and the rubric. Example: "kuinka pitkän ilmavälin yli sähkö lyö varmasti läpi (tasaisen kentän malli: enintään noin 4 mm), ja miksi todellinen väli voi olla pidempi".
-  - The prompt "Arvioi, kuinka lyhyen ilmavälin yli sähkö lyö varmasti läpi" is well-posed on its own. The "varmasti" comes from the uniform-field assumption, so the solution should say so.
+None.
 
 ## Polish
-- s4 b: "kuinka lyhyen" is slightly odd Finnish. "Kuinka pitkän ilmavälin yli ... läpi" or "enintään kuinka pitkän" reads more naturally and avoids the confusion.
-- fi-easy: the s4 solution does not link the 4 mm result to the unit's opening spark (3 mm, about 9 kV). A single sentence would tie it to the Ydinajatus.
+- s4 b: "enintään kuinka pitkän ilmavälin yli sähkö lyö varmasti läpi" is logically tight but easy to misread as a safe distance. The rubric (assumptions) and the common-mistake line already say that 4 mm is a lower bound, not a safe distance, so students are repaired. Optional: "Arvioi pisin ilmaväli, jonka yli ..." would match the solution's Kysytty wording exactly.
+- s4 b rubric calls the body current "ampeerien suuruinen"; the model answer gives about 1,2 A for 10 kOhm. Consistent, but it assumes the 10 kOhm path. Optional: state that assumption in the rubric line.
 
 ## Checked
-- All eight tasks demand application in new authentic contexts: s1 balls on threads, s2 capacitor and glass, s3 data and linearisation, s4 safety, s5 report critique and experiment design, s6 ion engine, s7 graph V(x), s8 LED. No heading names the formula.
-- Each task has parts of rising demand and a rubric tied to the criteria keys. No points go to irrelevant things. Variety is good: graph (s3, s7, s8), experiment (s5), safety and communication (s4).
-- Solutions show the principle first and give real common mistakes. Spot-checked numbers: s1, s2, s5 a (0.99 W, 16 %), s6 (40.2 km/s, 87.5 mN, 349 m/s), s8 (17 mA, 63 %, 127 Ω).
-- Workload: 8 tasks, 95 points. teacher.md splits the hour realistically (2 in class, 2 at home, long tasks as homework).
-- The fi-easy wording is plain and the sentences are short. The terms are explained (influenssi, läpilyöntilujuus, kammiovärinä).
-- Not re-checked: the unit text and inquiry beyond the packet's checks (practice.py check OK).
-- Hash at start and end: debd72cf8d478220.
+- s4 b is well-posed. Text gives 12 kV to ground (20 kV phase to phase explained) and E_max = 3 MV/m, so d = U/E_max = 12 kV / 3 MV/m = 4 mm follows without naming a formula.
+- Consistent across task text, rubric (concept 1, math 2, assumptions 1, transfer 1 = 5 points), solution Kysytty, model answer and the common-mistake lines (20 kV mistake, 4 mm shown as safe).
+- Physics reading is coherent: in the uniform-field model a gap of 4 mm or less breaks down. Real fields near a thin conductor are stronger, so the estimate is a lower bound. The solution says exactly this.
+- The a and c parts are unchanged and still fit: the bird, the touch and step-voltage reasoning, with rising demand a to c.
+- Rubric points are fair and tied to what the question asks. No points go to irrelevant things.
+- Unit hash matches the one in the packet.

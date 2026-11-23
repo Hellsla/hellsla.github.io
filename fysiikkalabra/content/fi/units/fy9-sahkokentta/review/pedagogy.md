@@ -1,15 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: e9115553fe1fb6c4
+VERDICT: PASS
+CONTENT-HASH: 7013f5c43b745e8d
 
 ## Blocking
-- s4 b: the reworded question is still not consistent with the solution. The task now says "kuinka lyhyen ilmavälin yli läpilyönti tapahtuu varmasti", but solutions.md s4 b still has `Kysytty: ... pienin ilmaväli, joka voi lyödä läpi` and the model answer says "pienin läpilyövä väli ... ≈ 4 mm". The old ill-posed wording survives there. U/E_max = 4 mm is the longest gap that breaks down in the uniform-field model, not the smallest. Any gap shorter than 4 mm breaks down too, so "smallest" is wrong. Fix the Kysytty line and the model answer to match, for example "suurin ilmaväli, jonka yli läpilyönti tapahtuu varmasti, on noin 4 mm".
-- The task wording itself is still easy to misread. "Kuinka lyhyen" asks about a short gap, but the answer is an upper limit on the gap length. Suggested wording: "Arvioi, kuinka pitkän ilmavälin yli läpilyönti tapahtuu varmasti" or "enintään kuinka pitkän".
+- (none)
 
 ## Polish
-- The rubric's assumptions criterion ("arvio on alaraja ... valokaari voi syttyä pidemmästäkin välistä") fits the corrected reading: the 4 mm figure is a lower bound for the longest breakdown gap. The solution's "alaraja turvaetäisyydelle" says the same thing and is fine. After the fix, check that all three texts (task, rubric, solution) call 4 mm the same kind of bound.
+- s4 b: "enintään ... varmasti" is a little awkward in Finnish. A reader may first take it as a safe distance. The solution's "alaraja turvaetäisyydelle" line and the common-mistake line already repair this.
+- s4 b: the solution mentions "siima" (fishing line) as weakening the insulation. The rubric's assumptions criterion does not name it. Harmless.
 
 ## Checked
-- Read the s4 b task text, its rubric (4 criteria, 5 p) and the solution in the packet.
-- The 12 kV (20/√3) reasoning and the 4 mm calculation are consistent between rubric and solution.
-- The listed common mistake (using 20 kV) is real.
-- I did not re-review the other tasks: this was a delta re-review of s4 b only.
+- s4 b is now consistent across the task text, the solution's Kysytty line and model answer, the rubric and the common-mistake line. All use "the longest gap over which breakdown certainly occurs, about 4 mm". The model is d = U/E_max with U = 12 kV (conductor to ground) and E_max = 3 MV/m, which gives 4 mm. This is arithmetically right and well-posed: the task text itself gives 12 kV, 3 MV/m and the phase-voltage clarification.
+- Rubric points: concept 1, math 2, assumptions 1, transfer 1, which sums to 5 and matches the part's points. The 12 kV versus 20 kV trap is rewarded in the math criterion and listed as a common mistake.
+- The assumptions criterion states that 4 mm is a lower bound on a safe distance. A thin conductor's field is stronger than U/d, and humidity and dirt weaken the insulation. This is physically honest and teaches the limit of the model.
+- The 1.2 A body-current illustration (10 kΩ, 12 kV) is plausible, and the 50 mA comparison is fine.
+- Parts a and c were not reopened. They are unchanged and stay consistent with the 12 kV figure.

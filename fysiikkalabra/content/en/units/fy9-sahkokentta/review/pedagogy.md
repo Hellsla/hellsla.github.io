@@ -1,18 +1,22 @@
-VERDICT: FAIL
-CONTENT-HASH: e1ef3a1aeef83571
+VERDICT: PASS
+CONTENT-HASH: 12b4cb1f1fce7b8a
 
 ## Blocking
-- s4 b: the prompt is now well-posed ("Estimate how short an air gap must be for breakdown to be certain" gives d <= U/E_max ~ 4 mm in the uniform-field model), but the rubric and the solution were not updated and now contradict it.
-  - tasks.json s4 b `assumptions` detail: "The estimate is a lower limit ... an arc can strike across a clearly longer gap too". For the new question 4 mm is an upper limit for a gap that certainly breaks down, and a longer gap can still break down. "Lower limit" would teach students the opposite of what they computed.
-  - solutions.md s4 b: **Find** still says "the smallest air gap that can break down". The model answer says "the smallest gap that breaks down is d = U/E_max". The estimate is called "a lower limit for the safety distance". The first two are the original ill-posed wording, and the third mixes two different quantities.
-  - Yleisiä virheitä: "The 4 mm of part b is presented as a safe distance, although it is the lower limit of a uniform field". The fault it names is real, but "lower limit" is again the wrong term.
-  - Fix: Find = "how short a gap breaks down certainly". Answer: "In a uniform field a gap of at most about 4 mm breaks down certainly. Near a thin conductor or the tip of the rod the field is stronger than U/d, and humid air and dirt weaken the insulation, so an arc can strike across a clearly longer gap too, so 4 mm is not a safe distance". Reword the criterion and the common mistake to match ("upper limit of the gap that certainly breaks down", not a safe distance).
+None. The earlier FAIL (s4 b asked for one quantity and answered another) is fixed.
 
 ## Polish
-- s4 b criterion 4 says "a current of the order of amperes". The solution gives 1.2 A for an assumed 10 kOhm. The rubric could state that assumption.
+- s4 b rubric `assumptions` and the model answer call 4 mm "a lower limit for the safety distance". The wording is correct but takes a second to follow. Something like "breakdown is certain up to about 4 mm, and an arc can strike across longer gaps" says the same thing more directly.
+- s4 b is worth 5 points for four rubric items: concept 1, math 2, assumptions 1, transfer 1. The "consequence" item (about 1.2 A) goes beyond the question, which asks for an explanation and an estimate. It is harmless but rewards extra content.
 
 ## Checked
-- practice.py check OK. Hash taken at the start.
-- s4 a and c: well-posed, authentic, rubric points match the solution. The bird task corrects a real misconception (potential vs potential difference).
-- s4 b: the prompt is consistent with its numbers (12 kV, 3 MV/m, 4 mm) and the first and fourth criteria. It is inconsistent with the `assumptions` detail and the solution (see Blocking).
-- I did not re-read the other tasks (s1-s3, s5-s8) in detail. They were not changed since my earlier review, which did not flag them.
+- s4 b is now well-posed and consistent in every place it appears.
+  - The task text asks to "estimate up to what length of air gap breakdown is certain".
+  - The solution's Find line says "the longest air gap across which breakdown is certain".
+  - The model answer gives $d = U/E_\text{max} = 12\,\text{kV}/3\,\text{MV/m} \approx 4\,\text{mm}$.
+  - The rubric math item has the same computation.
+  - The common-mistake line says 4 mm is not a safe distance.
+- The stem gives everything the student needs: the 20 kV phase-to-phase voltage, the roughly 12 kV to earth, and the dielectric strength of air. Nothing names the model, so the student has to choose the uniform-field estimate. The 12 kV versus 20 kV trap is a real, named mistake.
+- Physics reading. In the uniform-field model, E reaches E_max at d = U/E_max, so breakdown is certain for gaps up to about 4 mm. Field enhancement near the tip and thin conductor means longer gaps can also break down, and the answer says so. It makes no claim that 4 mm is safe.
+- The rubric points sum to 5 and match the part's points. The `assumptions` shared key carries a specific detail. The current estimate is labelled as an example ("for example $10\,\text{k}\Omega$").
+- The task stays authentic and unfamiliar, with parts a, b and c at rising demand: potential difference, then air breakdown, then step voltage. The other s4 parts were not changed.
+- The unit hash is 12b4cb1f1fce7b8a at the start of the review. I did not re-run it at the end, because only the re-review of s4 b was in scope and I edited no other file.
