@@ -1,13 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 95310d4f74748abc
-SCOPE: delta: en; only change since the previous pass is s7 b) rubric detail (tasks.json), Substitution/Sijoitus row "F_v = 75,0 kg · (9,81 m/s² − 1,5 m/s²)" split into three aligned rows for 360 px; other tasks not re-judged.
+CONTENT-HASH: 8c6a0362c846fe10
+SCOPE: delta (old-content fixes, git diff origin/main)
 
-## Blocking
-- (none)
-
-## Polish
-- Earlier Polish items remain recorded and unchanged; nothing new.
-
-## Checked
-- tasks.json s7 b detail now reads F_v = 75 kg; · (9.81 − 1.5 m/s² split over two lines); ≈ 623 N: same numbers, order, signs and units; 75.0 · 8.31 = 623 N holds.
-- Identical structure in fi, en and fi-easy; no new content, wording or step added.
+Checked
+1. Count (8 tasks, seven homework) and points (131 = 20 + 5 x 15 + 17 + 19) agree; mu_0 = 0.414 matches tan 22.5 degrees and tasks.json 0.4142. The fi, en and fi-easy versions carry the same changes with the same meaning.

@@ -10,6 +10,12 @@
 
 Moduulin ilmiöt liittyvät kahteen kenttään. **Magneettikenttä** $\overline{B}$ ei vaikuta levossa olevaan varaukseen; liikkuvaan varaukseen ja virtajohtimeen se kohdistaa voiman, kun liike tai virta ei ole kentän suuntainen, ja voima on kohtisuorassa sekä liikettä että kenttää vastaan. **Muuttuva magneettivuo** synnyttää jännitteen: tähän perustuvat generaattori, muuntaja, induktioliesi ja pyörrevirtajarru. Kun sähkö- ja magneettikenttä muuttuvat ja synnyttävät toisensa, syntyy **sähkömagneettinen aalto**, jonka näkyvä osa on valo.
 
+```pysahdy
+Mitä käämin magneettivuolle täytyy tapahtua, jotta käämiin indusoituu jännite?
+---
+Magneettivuon täytyy muuttua. Jos vuo pysyy samana, jännitettä ei synny.
+```
+
 <svg data-fig="kartta" viewBox="0 0 380 866" role="img" aria-label="Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Tee ensin kuva ja merkitse suunnat, ja katso sitten, mikä  tehtävän tunnusmerkki sopii. Hiukkanen liikkuu kentässä: magneettinen voima on varaus kertaa nopeus kertaa  kohtisuora magneettivuon tiheys. Virtajohdin kentässä: voima on virta kertaa johtimen pituus kertaa kohtisuora  magneettivuon tiheys. Hiukkanen kiertää ympyrää: magneettinen voima on keskeisvoima, ja säde on massa kertaa  nopeus jaettuna varauksen ja magneettivuon tiheyden tulolla. Magneettivuo muuttuu: käämiin indusoituva jännite  on miinus kierrosluku kertaa vuon muutos jaettuna ajalla. Muuntaja: kierroslukujen suhde on jännitteiden suhde.  Generaattori pyörii: indusoituvan jännitteen huippuarvo on kierrosluku kertaa pinta-ala kertaa magneettivuon  tiheys kertaa kaksi pii kertaa taajuus. Valo kulkee aineesta toiseen: taittumisessa käytetään Snellin lakia.  Valo ei pääse ulos aineesta: kokonaisheijastuksen rajakulman sini on taitekertoimien suhde. Valo osuu hilaan:  hilayhtälö on rakovälin ja kulman sinin tulo yhtä suuri kuin kertaluku kertaa aallonpituus." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="822" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
@@ -118,6 +124,12 @@ missä $F_\text{M}$ on magneettinen voima ($\text{N}$), $Q$ varaus ($\text{C}$),
 
 Kun varattu hiukkanen, jonka massa on $m$ ($\text{kg}$) ja varaus $Q$, liikkuu vauhdilla $v$ kohtisuoraan homogeenista magneettikenttää vastaan, magneettinen voima on koko ajan kohtisuorassa nopeutta vastaan. Hiukkanen kulkee silloin tasaista ympyräliikettä radalla, jonka säde on $r$ ($\text{m}$).
 
+```pysahdy
+Miksi magneettinen voima ei muuta varatun hiukkasen vauhtia?
+---
+Voima on koko ajan kohtisuorassa nopeutta vastaan, joten se muuttaa vain liikkeen suuntaa.
+```
+
 <svg data-fig="ympyra" viewBox="0 0 600 420" role="img" aria-label="Kaavakuva: positiivinen hiukkanen homogeenisessa magneettikentässä, joka osoittaa paperiin sisään (vihreät ristit). Hiukkasen rata on katkoviivalla piirretty ympyrä, jota se kiertää vastapäivään. Neljässä radan kohdassa sininen nopeusnuoli on radan suuntainen ja punainen magneettisen voiman nuoli osoittaa ympyrän keskipisteeseen, kohtisuoraan nopeutta vastaan. Säde r on merkitty keskipisteestä rataan." style="max-width:100%;font-size:24px">
   <image href="pics/fy9/fy9-magnetismi-valo-ympyra.webp" x="0" y="0" width="600" height="425" preserveAspectRatio="none"/>
   <foreignObject x="302" y="169.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$r$</div></foreignObject>
@@ -157,7 +169,7 @@ sinimuotoisen vaihtojännitteen tehollinen arvo :: U_\text{eff} = \frac{u_0}{\sq
 muuntaja :: \frac{N_1}{N_2} = \frac{U_1}{U_2} \approx \frac{I_2}{I_1}
 ```
 
-missä $e$ on induktiojännite ($\text{V}$), $\Phi = BA$ magneettivuo ($\text{Wb}$), kun kenttä on kohtisuorassa pintaa $A$ vastaan, $u_0$ generaattorin jännitteen huippuarvo, $f$ pyörimistaajuus ($\text{Hz}$), $U_\text{eff}$ ja $u_0$ tehollinen arvo ja huippuarvo, indeksit $1$ ja $2$ muuntajan ensiö- ja toisiopuoli. Miinusmerkki on Lenzin laki: induktiovirta vastustaa vuon muutosta. Kentässä liikkuvan tangon jännite on $e = vBl$. Muuntajan yhtälö koskee vaihtojännitettä; virtojen suhde on yhtäsuuruus vain ideaalisessa, häviöttömässä muuntajassa.
+missä $e$ on induktiojännite ($\text{V}$), $\Phi = BA$ magneettivuo ($\text{Wb}$), kun kenttä on kohtisuorassa pintaa $A$ vastaan, $u_0$ generaattorin jännitteen huippuarvo, $f$ pyörimistaajuus ($\text{Hz}$), $U_\text{eff}$ ja $u_0$ tehollinen arvo ja huippuarvo, indeksit $1$ ja $2$ muuntajan ensiö- ja toisiopuoli. Miinusmerkki on Lenzin laki: induktiovirta vastustaa vuon muutosta. Kentässä liikkuvan tangon jännite on $e = vBl$, kun nopeus $\overline{v}$, kenttä $\overline{B}$ ja tanko ovat kaikki kohtisuorassa toisiaan vastaan. Muuntajan yhtälö koskee vaihtojännitettä; virtojen suhde on yhtäsuuruus vain ideaalisessa, häviöttömässä muuntajassa.
 
 Siirtojohtoa pitkin siirretään teho $P$ ($\text{W}$) siirtojännitteellä $U$ ($\text{V}$), ja johdon resistanssi on $R$ ($\Omega$). Osa tehosta muuttuu johdon sisäenergiaksi, joka siirtyy lämpönä ympäristöön, ja tämä häviöteho $P_\text{h}$ ($\text{W}$) riippuu johdossa kulkevasta virrasta.
 
@@ -192,6 +204,12 @@ I = I_0\cos^2\theta
 missä $c = 3{,}00 \cdot 10^8\,\text{m/s}$, $f$ taajuus, $\lambda$ aallonpituus, $T$ absoluuttinen lämpötila ($\text{K}$), $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$, $n = \tfrac{c}{v}$ taitekerroin ja $v$ valon nopeus aineessa, $\alpha_1$ ja $\alpha_2$ tulo- ja taitekulma normaalista, $d$ hilavakio, hilayhtälössä $\alpha$ maksimin suunta ja $n = 0, 1, 2, \ldots$ kertaluku ja $I_0$ polarisoituneen valon intensiteetti ennen analysaattoria. Malusin laissa $\theta$ on polarisaation suunnan ja analysaattorin läpäisysuunnan välinen kulma. Ohuessa kalvossa matkaero on $2nd$, kun valo tulee lähes kohtisuoraan. Kun vain toinen heijastus kääntää aallon, $2nd = \left(k + \tfrac12\right)\lambda$ antaa vahvistavan interferenssin; kun molemmat kääntävät, $2nd = k\lambda$.
 
 Kun valo tulee suuremman taitekertoimen aineesta pienemmän taitekertoimen aineeseen ($n_1 > n_2$), taitekulma on tulokulmaa suurempi. Tulokulma, jolla taitekulma on $90^\circ$, on rajakulma $\alpha_\text{r}$, ja sitä suuremmilla tulokulmilla valo kokonaisheijastuu.
+
+```pysahdy
+Taittuuko valo kohti pinnan normaalia vai siitä poispäin, kun se tulee aineesta, jonka taitekerroin on suurempi, aineeseen, jonka taitekerroin on pienempi?
+---
+Taitekulma on tällöin tulokulmaa suurempi, joten säde taittuu pois normaalista.
+```
 
 <svg data-fig="rajakulma" viewBox="0 0 600 330" role="img" aria-label="Kaavakuva, ei lukuarvoja. Alhaalla on aine, jonka taitekerroin n 1 on suurempi, ja ylhäällä aine, jonka taitekerroin n 2 on pienempi. Pohjalla oleva lamppu lähettää kaksi valonsädettä rajapintaan. Osumakohtiin on piirretty pinnan normaali katkoviivana. Vasemman säteen tulokulma on rajakulma alfa r: taittunut säde kulkee pitkin rajapintaa, eli taitekulma alfa 2 on 90 astetta, ja heikko osa heijastuu takaisin. Oikean säteen tulokulma on rajakulmaa suurempi: valo ei taitu ylempään aineeseen, vaan koko säde heijastuu takaisin, eli tapahtuu kokonaisheijastuminen." style="max-width:100%;font-size:24px">
   <image href="pics/fy9/fy9-magnetismi-valo-rajakulma.webp" x="1.2" y="1.2" width="597" height="335.8" preserveAspectRatio="none"/>

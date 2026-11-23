@@ -10,6 +10,12 @@
 
 Lämpöopissa on erotettava kolme käsitettä. **Lämpötila** kuvaa hiukkasten lämpöliikkeen voimakkuutta. **Sisäenergia** on hiukkasten liike-energian ja niiden välisten vuorovaikutusten energian summa, joten se riippuu myös aineen määrästä ja olomuodosta. **Lämpö** on energian siirtymistä lämpötilaeron vuoksi: kappaleella on lämpötila ja sisäenergia, mutta ei lämpöä.
 
+```pysahdy
+Kuumalla kahvikupilla on lämpötila ja sisäenergia. Onko sillä myös lämpöä?
+---
+Ei ole. Lämpö on energian siirtymistä lämpötilaeron vuoksi, joten sitä on vain siirtymisen aikana.
+```
+
 Kaikki tunnin tehtävät palautuvat energian säilymiseen. Aineeseen siirtyvä lämpö joko nostaa sen lämpötilaa tai muuttaa sen olomuotoa, ja lämpötilan noustessa aine myös laajenee. Eristetyssä systeemissä kuuman osan luovuttama lämpö on yhtä suuri kuin kylmän osan vastaanottama. Talon lämpötila pysyy vakiona, kun siihen tulee yhtä suuri teho kuin siitä lähtee.
 
 <svg data-fig="kartta" viewBox="0 0 380 784" role="img" aria-label="Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Kysy, mitä aineelle tapahtuu, ja katso, mikä tehtävän tunnusmerkki sopii. Lämpötila muuttuu, olomuoto ei: lämpeneminen, lämpömäärä on ominaislämpökapasiteetti kertaa massa kertaa lämpötilan muutos. Jää sulaa tai vesi jäätyy: sulamislämpö, lämpömäärä on ominaissulamislämpö kertaa massa. Vesi kiehuu tai höyry tiivistyy: höyrystymislämpö, lämpömäärä on ominaishöyrystymislämpö kertaa massa. Eristetty astia, sekoitus: lämpötasapaino, luovutettu lämpömäärä on yhtä suuri kuin vastaanotettu. Kappaleen pituus muuttuu: lämpölaajeneminen, pituus on alkuperäinen pituus kertaa yksi plus pituuden lämpötilakerroin kertaa lämpötilan muutos. Nesteen tilavuus muuttuu: lämpölaajeneminen, tilavuus on alkuperäinen tilavuus kertaa yksi plus tilavuuden lämpötilakerroin kertaa lämpötilan muutos. Lämpö johtuu seinän läpi: U-arvo, teho on U-arvo kertaa pinta-ala kertaa lämpötilaero." style="max-width:100%;font-size:21px">
@@ -101,6 +107,12 @@ höyrystymislämpö :: Q = rm
 
 missä $s$ on ominaissulamislämpö ja $r$ ominaishöyrystymislämpö ($\text{J/kg}$). Puhtaan aineen lämpötila pysyy vakiopaineessa muutoksen ajan vakiona, koska energia kasvattaa hiukkasten vuorovaikutusenergiaa. Sama energia vapautuu jähmettymisessä ja tiivistymisessä. Vedelle $c = 4190\,\text{J/(kg}\cdot\text{K)}$, jäälle $c = 2100\,\text{J/(kg}\cdot\text{K)}$, $s = 334\,\text{kJ/kg}$ ja $r = 2260\,\text{kJ/kg}$.
 
+```pysahdy
+Jään sulaessa siihen siirtyy energiaa, mutta sen lämpötila pysyy vakiona. Mihin energia menee?
+---
+Energia kasvattaa hiukkasten vuorovaikutusenergiaa eikä niiden liike-energiaa, joten lämpötila ei nouse.
+```
+
 Tästä saadaan vastaus alun kysymykseen. Kilogramman lumen lämmittäminen $-10\,{}^\circ\text{C}$:sta $0\,{}^\circ\text{C}$:seen vie vain $21\,\text{kJ}$, mutta sen sulattaminen $334\,\text{kJ}$, melkein yhtä paljon kuin sulamisveden kuumentaminen kiehuvaksi, $419\,\text{kJ}$.
 
 <svg data-fig="kayra" viewBox="0 0 600 380" role="img" aria-label="Kuvaaja mittakaavassa: kilogramman lumen lämpötila T celsiusasteina siirretyn energian Q funktiona kilojouleina. Lumi lämpenee −10 asteesta 0 asteeseen, kun energiaa on siirtynyt 21 kJ. Sitten lämpötila pysyy 0 asteessa, kunnes energiaa on siirtynyt 355 kJ: sulamiseen kuluu Q = s m = 334 kJ. Sulamisvesi lämpenee 100 asteeseen, kun energiaa on siirtynyt 774 kJ: tähän kuluu Q = c m ΔT = 419 kJ. Sen jälkeen vesi kiehuu 100 asteessa, ja kuvaaja jatkuu vaakasuorana nuolena, koska höyrystyminen Q = r m vaatisi vielä 2260 kJ." style="max-width:100%;font-size:24px">
@@ -181,6 +193,12 @@ Q_\text{luovutettu} = Q_\text{vastaanotettu}
 ```
 
 Kun jäätä ja vettä sekoitetaan, verrataan ensin, riittääkö lämpö, jonka vesi luovuttaa jäähtyessään $0\,{}^\circ\text{C}$:seen, lämmittämään jään $0\,{}^\circ\text{C}$:seen ja sulattamaan sen. Jos riittää, kaikki jää sulaa ja lopputila on vähintään $0\,{}^\circ\text{C}$. Jos ei riitä, jäätä jää jäljelle ja lämpötila on tasan $0\,{}^\circ\text{C}$. Hyvin kylmä jää voi myös jäädyttää osan vedestä tai kaiken veden.
+
+```pysahdy
+Vettä ja jäätä sekoitetaan, ja veden luovuttama lämpö ei riitä sulattamaan kaikkea jäätä. Mikä on lopputilan lämpötila?
+---
+Kun astiassa on sekä jäätä että vettä, lämpötila on tasan $0\,{}^\circ\text{C}$.
+```
 
 ### Laajeneminen ja lämmön siirtyminen
 

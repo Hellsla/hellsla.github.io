@@ -242,7 +242,7 @@
       {
        "key": "equation",
        "points": 1,
-       "detail": "$f_\\text{s} = f_0 \\cdot \\dfrac{v}{v - v_\\text{l}}$ ja $f = f_\\text{s} \\cdot \\dfrac{v + v_\\text{l}}{v}$, joten $f = f_0 \\cdot \\dfrac{v + v_\\text{l}}{v - v_\\text{l}}$"
+       "detail": "$f_\\text{s} = f_0 \\cdot \\dfrac{v}{v - v_\\text{L}}$ ja $f = f_\\text{s} \\cdot \\dfrac{v + v_\\text{H}}{v}$, ja koska $v_\\text{H} = v_\\text{L}$, $f = f_0 \\cdot \\dfrac{v + v_\\text{L}}{v - v_\\text{L}}$"
       },
       {
        "key": "calculation",
@@ -882,7 +882,7 @@
       {
        "key": "conclusion",
        "points": 1,
-       "detail": "Vastakkaisvaiheiset aallot kumoavat toisensa, joten $\\text{P}$ on vaimean äänen kohta (lähes hiljainen, solmuviiva)."
+       "detail": "Vastakkaisvaiheiset aallot kumoavat toisensa, joten $\\text{P}$ on vaimean äänen kohta (hiljainen solmupiste, kun voimakkuusero jätetään huomiotta)."
       }
      ]
     },

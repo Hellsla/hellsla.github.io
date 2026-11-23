@@ -1,12 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 33f954faa91767d5
-SCOPE: delta: CI 360 px layout fix, sovella tasks.json s7 b) rubric Substitution row split into three aligned rows (fi); all else not re-judged.
+CONTENT-HASH: c7bd857714016ab6
+SCOPE: delta (old-content fixes, git diff origin/main)
 
-## Blocking
-- (none)
-
-## Polish
-- Earlier Polish items stay recorded; nothing new.
-
-## Checked
-git diff of unit content: only the s7 b) Substitution detail in tasks.json. Same numbers, order, signs and units: 75.0 kg · (9.81 m/s² − 1.5 m/s²) ≈ 623 N (75 · 8.31 = 623.25). Split into rows "75.0 kg", "· (9.81 m/s²", "− 1.5 m/s²)" with unchanged result row; parenthesis still closes, minus kept. Decimal comma/point correct for the language. No new content.
+1. Blocking: none.
+2. Checked: s5 mean of tan 22, 24, 21, 23 deg = 0.4144 -> 0.414 (tan of the mean angle 0.4142). teacher.md 20 + 5x15 + 17 + 19 = 131, 'muut seitsemän' matches 8 tasks. en: terminal-velocity symbol v_t in the rubric now matches the en solution.
+3. Language fi: the changed numbers and wording were checked to carry the same values as fi.

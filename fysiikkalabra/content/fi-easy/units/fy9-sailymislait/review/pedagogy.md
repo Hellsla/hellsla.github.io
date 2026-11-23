@@ -1,14 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 4cb6396da76519c3
-SCOPE: delta: CI 360 px fix; s8 d) rubric detail W_air line became a two-row aligned display; fi-easy checked.
+CONTENT-HASH: b3e3ee5b4e82ab7c
+SCOPE: delta (old-content fixes, git diff origin/main)
 
-## Blocking
-- (none)
-
-## Polish
-- Earlier Polish stays recorded (s7 c explain-question, s8 14 points, s8 d precision, comma after display blocks, s7 d hint); not re-raised.
-
-## Checked
-- W_air = 27.4 J - 33.9 J ≈ -6.5 J: same numbers, order, sign and units in the two-row display; arithmetic correct (27.4 - 33.9 = -6.5).
-- Connecting word ("and"/"ja"/fi-easy "ja") and the preceding E_p display unchanged; no new text, hints or content added.
-- Hash at start and end identical.
+Checked
+1. The sled solution now says friction does more work on the heavier sled and keeps the equal-speed conclusion; air resistance is explicitly assumed negligible; 12.56 m/s = 45 km/h. The fi, en and fi-easy versions carry the same changes with the same meaning.

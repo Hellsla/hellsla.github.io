@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 06750d8754030997
+CONTENT-HASH: 1a2221b9b237abfe
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-moderni (fi): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-(none)
-
-## Polish
-- [Minor] The shots predate the paragraph split (earlier hash), so the new breaks are judged from the diff plus the existing layout of the same solution blocks, not seen rendered. Gap noted, not a ground for FAIL.
-
-## Checked
-- git diff origin/main...HEAD for fi/units/fy9-moderni (excl. review/): solutions.md (about 70 lines added, 13 removed) and one inquiry.json solution field; only blank lines inserted between sentences, no word, formula, number or figure changed. Bold label lines (Periaate, Mallivastaus) stay on their own lines.
-- Read the previous Sovella visual report (PASS, same change).
-- Opened review/shots/fy9-moderni-stage-sovella-390-5.png, -390-9.png and -1280-4.png: solution blocks with labelled sections, display maths and calculation rows intact, no clipping or horizontal overflow, short paragraphs. Splits only create shorter blocks in the same container.
-- Figures unchanged, not re-opened.
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.

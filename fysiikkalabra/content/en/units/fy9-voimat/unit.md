@@ -83,6 +83,12 @@ Every task in this lesson is solved in the same way: **first the free-body diagr
 
 The opening question is settled by the choice of object. The car and the trailer act on each other with equal forces, but the forces act on **different objects**, so they do not cancel each other. The motion of the trailer is decided only by the forces acting on the trailer: while accelerating, the drawbar pulls it forwards more than the rolling resistance holds it back.
 
+```pysahdy
+The car pulls the trailer forward and the trailer pulls the car backward with equal forces. Why do these forces not cancel each other?
+---
+They act on different objects. Only the forces acting on the trailer decide the motion of the trailer.
+```
+
 ## Formula: Newton's laws and forces
 
 ### Newton's laws
@@ -94,6 +100,12 @@ Newton's second law (fundamental law of dynamics) :: \Sigma\overline{F} = m\over
 ```
 
 where $\Sigma\overline{F}$ is the sum of the forces acting on the object ($\text{N}$), $m$ the mass ($\text{kg}$), $\overline{a}$ the acceleration ($\text{m/s}^2$) and $\overline{F}_{AB}$ the force with which A acts on B. In a calculation the second law is written in components, $\Sigma F_x = ma_x$ and $\Sigma F_y = ma_y$, and the components of an oblique force are $F\cos\alpha$ and $F\sin\alpha$. The net force points in the direction of the acceleration, not always in the direction of the velocity.
+
+```pysahdy
+An object brakes on a straight road. In which direction does the sum of the forces acting on it point?
+---
+In the direction of the acceleration, which here is against the motion. The net force does not always point in the direction of the velocity.
+```
 
 ### Weight, friction and the slope
 
@@ -121,6 +133,12 @@ On a slope with the angle of inclination $\alpha$, the components of the weight 
   <foreignObject x="501.5" y="284" width="52" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#c92a2a">$\overline{G}_{y}$</div></foreignObject>
   <foreignObject x="450.5" y="223" width="23" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px">$\alpha$</div></foreignObject>
 </svg>
+
+```pysahdy
+An object slides on a slope with the angle of inclination $\alpha$, and only the weight and the normal force act perpendicular to the surface. What is the magnitude of the normal force?
+---
+$N = mg\cos\alpha$, because the normal force cancels the component $G_y$ of the weight perpendicular to the surface. It is smaller than $mg$.
+```
 
 ### Connected bodies and air resistance
 

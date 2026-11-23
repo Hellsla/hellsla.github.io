@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 01caf546ba9d2d37
+CONTENT-HASH: 89e2449689da973a
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-tasavirta (fi-easy): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-(none)
-
-## Polish
-(none)
-
-## Checked
-- Diff since last PASS (fi-easy, git diff origin/main...HEAD, excluding review/): sovella/solutions.md (30 lines added, 10 removed) and one inquiry.json solution field. Only paragraph breaks in model answers; words, maths and figures unchanged. Display-math blocks stay attached to their sentences.
-- Read the earlier Sovella visual report (fi-easy) as evidence: PASS, same conclusion.
-- Opened: review/shots/fy9-tasavirta-stage-sovella-390-8.png (open model solution at 390 px, Kaava to Järkevyys): formula rows, answer box and reasonableness block intact, no overflow.
-- Gap: not every changed paragraph has its own capture (one shared component renders all); figures unchanged and not re-inspected; contact sheets not opened.
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.

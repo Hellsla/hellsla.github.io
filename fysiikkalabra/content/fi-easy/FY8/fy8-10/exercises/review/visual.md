@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 68a4c8c1f1b78bb8
+CONTENT-HASH: dacec6a883ef1816
+SCOPE: delta numbers,reflow,typography,wording from 68a4c8c1f1b78bb8 base 4b05399
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions 10-? (the nuclide comparison task), Kysytty — "megaelektronvoltteina" lacks an i — "megaelektronivoltteina".
+- [Minor] Kaava rows: the block now stacks every step, incl. the repeated "E = hf, f = c/lambda" opener; acceptable, no change asked.
 
 ## Checked
-- Delta (solutions.md, blank lines only, paragraph cutting): opened fy8-10-open-exercises-1280-2, fy8-10-open-exercises-L2-1280-6 and fy8-10-open-exercises-L3-1280-4 (shots in review/shots), solutions open at 1280 px.
-- Blocks (Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys) separate cleanly; aligned rows with equals signs in one column; units upright with thin space; nothing clipped.
+- Delta (solutions.md, Kaava step re-set as aligned blocks). Source read; rendered the built fi-easy page at 390 px with every solution open and opened the three tallest Kaava blocks (own captures; the packet has no phone-width solution shots) plus lesson-level capture open-exercises-1280.
+- Result: one equation per row, equals signs aligned, fractions and subscripts legible, no clipping, scrollWidth 390, no KaTeX element beyond the viewport; the rest of the solution (Sijoitus, Vastaus, Järkevyys) unchanged.
+- Other captures not opened.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

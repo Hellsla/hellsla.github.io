@@ -22,7 +22,11 @@
 **Annettu:** mittauksia $N = 3000$, orbitaalin raja $90\,\%$
 **Kysytty:** rajan ulkopuolelle osuvien mittausten odotettu määrä $k_\text{ulko}$
 **Periaate:** Raja on piirretty niin, että sen sisällä elektroni havaitaan todennäköisyydellä $0{,}90$. Ulkopuolelle osumisen todennäköisyys on siis $1 - 0{,}90 = 0{,}10$. Monessa mittauksessa ulkopuolelle osuvien osuus on likimain tämä todennäköisyys, $P \approx \tfrac{k}{N}$.
-**Kaava:** $k_\text{ulko} = (1 - p)\,N$
+**Kaava:** $$\begin{aligned} P_\text{ulko} &= 1 - p \\
+k_\text{ulko} &= P_\text{ulko}\,N \\
+&= (1 - p)\,N
+\end{aligned}
+$$
 **Muunnokset:** $p = 90\,\% = 0{,}90$
 **Sijoitus:** $k_\text{ulko} = (1 - 0{,}90) \cdot 3000 = 0{,}10 \cdot 3000 = 300$
 **Vastaus:** noin $300$ mittausta. Luku on odotusarvo (keskimääräinen luku monen sarjan jälkeen), ja todellinen määrä vaihtelee sarjasta toiseen.
@@ -32,7 +36,12 @@
 **Annettu:** elektroni $3\text{p}$-tilassa, joten $n = 3$. Vetyatomin energiatasot ovat $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$.
 **Kysytty:** irrottamiseen tarvittava pienin energia $E_\text{i}$ elektronivoltteina
 **Periaate:** Elektroni on irti atomista, kun sen energia on vähintään $0$. Vetyatomissa tilan energia riippuu vain pääkvanttiluvusta. Tilan $3\text{p}$ energia on siis kuoren $n = 3$ energia. Tarvittava energia on erotus $0 - E_3$.
-**Kaava:** $E_\text{i} = 0 - E_3 = \dfrac{13{,}6\,\text{eV}}{3^2}$
+**Kaava:** $$\begin{aligned} E_3 + E_\text{i} &= 0 \\
+E_\text{i} &= 0 - E_3 \\
+E_3 &= -\frac{13{,}6\,\text{eV}}{3^2} \\
+E_\text{i} &= \frac{13{,}6\,\text{eV}}{3^2}
+\end{aligned}
+$$
 **Muunnokset:** Ei tarvita, koska energiatasot ja kysytty energia ovat elektronivoltteina.
 **Sijoitus:** $E_\text{i} = \dfrac{13{,}6\,\text{eV}}{9} = 1{,}5111\,\text{eV}$
 **Vastaus:** $1{,}51\,\text{eV}$. Vastauksessa on kolme merkitsevää numeroa, koska energiassa $13{,}6\,\text{eV}$ on kolme.
@@ -52,7 +61,14 @@
 **Annettu:** alkutila $3\text{p}$, joten $n = 3$. Lopputila $1\text{s}$, joten $n = 1$. Lisäksi $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$.
 **Kysytty:** fotonin aallonpituus $\lambda$ nanometreinä
 **Periaate:** Energia säilyy. Atomin energia pienenee tilojen energioiden erotuksen verran, ja sama energia lähtee fotonina. Fotonin energia on $hf = \tfrac{hc}{\lambda}$. Vetyatomissa tilan energia riippuu vain pääkvanttiluvusta.
-**Kaava:** $\dfrac{hc}{\lambda} = E_3 - E_1$, josta $\lambda = \dfrac{hc}{E_3 - E_1}$
+**Kaava:** $$\begin{aligned} E_\text{f} &= hf \\
+c &= f\lambda \\
+E_\text{f} &= \frac{hc}{\lambda} \\
+E_\text{f} &= E_3 - E_1 \\
+\frac{hc}{\lambda} &= E_3 - E_1 \\
+\lambda &= \frac{hc}{E_3 - E_1}
+\end{aligned}
+$$
 **Muunnokset:** Energiaero elektronivoltteina on $E_3 - E_1 = -\tfrac{13{,}6\,\text{eV}}{9} + 13{,}6\,\text{eV} = 12{,}089\,\text{eV}$. Sijoitetaan $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$: $E_3 - E_1 = 12{,}089 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}9366 \cdot 10^{-18}\,\text{J}$. Lopuksi tarvitaan vielä $1\,\text{nm} = 10^{-9}\,\text{m}$.
 **Sijoitus:** Ensin $$
 \begin{aligned}
@@ -68,7 +84,12 @@ $$. Sitten $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}93
 **Annettu:** argonissa on $18$ elektronia. Täyttöjärjestys on $1\text{s}$, $2\text{s}$, $2\text{p}$, $3\text{s}$, $3\text{p}$. Orbitaalille mahtuu enintään kaksi elektronia.
 **Kysytty:** uloimman kuoren elektronien määrä $N_\text{ulko}$
 **Periaate:** Perustilassa elektronit täyttävät orbitaalit alimmasta energiasta alkaen. Kuorelle $n$ mahtuu enintään $2n^2$ elektronia. Ensin täyttyvät kuoret $n = 1$ ja $n = 2$. Loput elektronit jäävät kuorelle $n = 3$, joka on argonin uloin kuori.
-**Kaava:** $N_\text{ulko} = N - 2 \cdot 1^2 - 2 \cdot 2^2$
+**Kaava:** $$\begin{aligned} N &= N_1 + N_2 + N_\text{ulko} \\
+N_n &= 2n^2 \\
+N_\text{ulko} &= N - N_1 - N_2 \\
+&= N - 2 \cdot 1^2 - 2 \cdot 2^2
+\end{aligned}
+$$
 **Muunnokset:** Ei tarvita, koska kysytään lukumäärää.
 **Sijoitus:** $N_\text{ulko} = 18 - 2 - 8 = 8$
 **Vastaus:** $8$ elektronia. Tulos on tarkka kokonaisluku.
@@ -78,7 +99,11 @@ $$. Sitten $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}93
 **Annettu:** mittauksia $N = 2400$. Rajat ovat $50\,\%$:n raja $0{,}071\,\text{nm}$ ja $90\,\%$:n raja $0{,}14\,\text{nm}$.
 **Kysytty:** rajojen väliin osuvien mittausten odotettu määrä $k$
 **Periaate:** $50\,\%$:n raja on kokonaan $90\,\%$:n rajan sisällä. Rajojen väliseen kuoreen jää siis todennäköisyys $0{,}90 - 0{,}50 = 0{,}40$. Monessa mittauksessa alueeseen osuvien osuus on likimain alueen todennäköisyys. Rajojen säteitä ei tarvita.
-**Kaava:** $k = (p_{90} - p_{50})\,N$
+**Kaava:** $$\begin{aligned} P &= p_{90} - p_{50} \\
+k &= PN \\
+&= (p_{90} - p_{50})\,N
+\end{aligned}
+$$
 **Muunnokset:** $p_{90} = 90\,\% = 0{,}90$ ja $p_{50} = 50\,\% = 0{,}50$
 **Sijoitus:** $k = (0{,}90 - 0{,}50) \cdot 2400 = 0{,}40 \cdot 2400 = 960$
 **Vastaus:** noin $960$ mittausta. Luku on odotusarvo (keskimääräinen luku monen sarjan jälkeen), ja todellinen määrä vaihtelee sarjasta toiseen.
@@ -88,7 +113,14 @@ $$. Sitten $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}93
 **Annettu:** elektroni kuorella $n = 2$. Lisäksi $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$.
 **Kysytty:** suurin aallonpituus $\lambda_\text{max}$, jolla fotoni irrottaa elektronin, nanometreinä
 **Periaate:** Fotonin energian on oltava vähintään irrottamiseen tarvittava energia $0 - E_2$. Fotonin energia $\tfrac{hc}{\lambda}$ pienenee, kun aallonpituus kasvaa. Suurin kelpaava aallonpituus vastaa siis juuri tätä energiaa.
-**Kaava:** $\dfrac{hc}{\lambda_\text{max}} = 0 - E_2$, josta $\lambda_\text{max} = \dfrac{hc}{-E_2}$
+**Kaava:** $$\begin{aligned} E_\text{f} &= hf \\
+c &= f\lambda \\
+E_\text{f} &= \frac{hc}{\lambda} \\
+E_\text{f} &= 0 - E_2 \\
+\frac{hc}{\lambda_\text{max}} &= -E_2 \\
+\lambda_\text{max} &= \frac{hc}{-E_2}
+\end{aligned}
+$$
 **Muunnokset:** $-E_2 = \tfrac{13{,}6\,\text{eV}}{4} = 3{,}40\,\text{eV}$. Sijoitetaan $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$: $-E_2 = 3{,}40 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 5{,}4468 \cdot 10^{-19}\,\text{J}$. Lopuksi tarvitaan vielä $1\,\text{nm} = 10^{-9}\,\text{m}$.
 **Sijoitus:** Ensin $$
 \begin{aligned}
@@ -104,7 +136,16 @@ $$. Sitten $\lambda_\text{max} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text
 **Annettu:** fotonin aallonpituus $\lambda = 97{,}3\,\text{nm}$. Atomi on perustilassa, $n = 1$. Lisäksi $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$.
 **Kysytty:** orbitaalien määrä sillä kuorella $n$, jolle elektroni siirtyy
 **Periaate:** Atomi voi absorboida fotonin vain, jos fotonin energia on täsmälleen kahden tilan energioiden erotus. Fotonin energiasta saadaan ylemmän tilan energia $E_n = E_1 + \tfrac{hc}{\lambda}$. Siitä saadaan kuoren numero $n$. Kuorella $n$ on $n^2$ orbitaalia.
-**Kaava:** $E_n = E_1 + \dfrac{hc}{\lambda}$, josta $n = \sqrt{\dfrac{13{,}6\,\text{eV}}{-E_n}}$. Orbitaalien määrä on $n^2$.
+**Kaava:** $$\begin{aligned} E_\text{f} &= hf \\
+c &= f\lambda \\
+E_\text{f} &= \frac{hc}{\lambda} \\
+E_\text{f} &= E_n - E_1 \\
+E_n &= E_1 + \frac{hc}{\lambda} \\
+E_n &= -\frac{13{,}6\,\text{eV}}{n^2} \\
+n &= \sqrt{\frac{13{,}6\,\text{eV}}{-E_n}} \\
+N_\text{orb} &= n^2
+\end{aligned}
+$$
 **Muunnokset:** $\lambda = 97{,}3\,\text{nm} = 97{,}3 \cdot 10^{-9}\,\text{m}$. Kun $$
 \begin{aligned}
 hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
@@ -132,7 +173,11 @@ $$, fotonin energia on $\tfrac{hc}{\lambda} = \tfrac{1{,}9865 \cdot 10^{-25}\,\t
 **Annettu:** mittauksia $N = 5000$, orbitaalin raja $90\,\%$. Solmupallon sisäpuolelle osuu $5{,}3\,\%$ mittauksista, ja tämä sisäosa kuuluu käytännössä kokonaan orbitaalin alueeseen.
 **Kysytty:** orbitaalin alueeseen solmupallon ulkopuolelle osuvien mittausten odotettu määrä $k$
 **Periaate:** Orbitaalin alueen todennäköisyys $0{,}90$ jakautuu kahteen osaan: solmupallon sisäosaan ja solmupallon ulkopuoliseen kuoreen. Sisäosa kuuluu alueeseen kokonaan, joten ulko-osan todennäköisyys on erotus $0{,}90 - 0{,}053$. Monessa mittauksessa alueeseen osuvien osuus on likimain alueen todennäköisyys.
-**Kaava:** $k = (p - p_\text{sisä})\,N$
+**Kaava:** $$\begin{aligned} P &= p - p_\text{sisä} \\
+k &= PN \\
+&= (p - p_\text{sisä})\,N
+\end{aligned}
+$$
 **Muunnokset:** $p = 90\,\% = 0{,}90$ ja $p_\text{sisä} = 5{,}3\,\% = 0{,}053$
 **Sijoitus:** $k = (0{,}90 - 0{,}053) \cdot 5000 = 0{,}847 \cdot 5000 = 4235$
 **Vastaus:** noin $4240$ mittausta. Luku on odotusarvo, jonka todellinen sarja toteuttaa vain likimain. Sisäosan osuus $5{,}3\,\%$ rajaa tarkkuuden noin kahteen tai kolmeen merkitsevään numeroon.
@@ -214,7 +259,12 @@ $$, kuten pitää.
 **Kysytty:** a) aallonpituus $\lambda$ kussakin tilassa, b) taajuus $f$ kussakin tilassa, c) selitys solmujen ja taajuuden yhteydestä
 **Periaate:** Kielen päät pysyvät paikallaan, joten päät ovat solmuja. Kieleen mahtuu kokonainen määrä kupuja. Kupu on kohta, jossa kieli liikkuu eniten. Kun kupuja on $m$, kunkin kuvun pituus on puoli aallonpituutta, joten $L = m \cdot \tfrac{\lambda}{2}$. Aallolle pätee $v = f\lambda$.
 **Kuvaajan lukeminen:** Kuvassa ylimmässä tilassa on yksi kupu eikä solmua päiden välissä. Keskimmäisessä on kaksi kupua ja yksi solmu. Alimmassa on kolme kupua ja kaksi solmua. Kupuja on siis aina yksi enemmän kuin solmuja: $m = 1, 2, 3$. Kuvan aallonpituuksia ei voi lukea, joten ne lasketaan kielen pituudesta.
-**Kaava:** $\lambda = \dfrac{2L}{m}$ ja $f = \dfrac{v}{\lambda}$
+**Kaava:** $$\begin{aligned} L &= m\,\frac{\lambda}{2} \\
+\lambda &= \frac{2L}{m} \\
+v &= f\lambda \\
+f &= \frac{v}{\lambda}
+\end{aligned}
+$$
 **Muunnokset:** Ei tarvita, koska pituus on metreinä ja nopeus yksikössä $\text{m/s}$.
 **Sijoitus:** a) Tilassa $m = 1$ aallonpituus on $\lambda = \dfrac{2 \cdot 0{,}80\,\text{m}}{1} = 1{,}60\,\text{m}$. Tilassa $m = 2$ se on $\lambda = \dfrac{2 \cdot 0{,}80\,\text{m}}{2} = 0{,}80\,\text{m}$. Tilassa $m = 3$ se on $\lambda = \dfrac{2 \cdot 0{,}80\,\text{m}}{3} = 0{,}533\,\text{m}$. b) Tilassa $m = 1$ taajuus on $f_1 = \dfrac{64\,\text{m/s}}{1{,}60\,\text{m}} = 40\,\text{Hz}$. Tilassa $m = 2$ se on $f_2 = \dfrac{64\,\text{m/s}}{0{,}80\,\text{m}} = 80\,\text{Hz}$. Tilassa $m = 3$ (kaksi solmua) se on $f_3 = \dfrac{64\,\text{m/s}}{0{,}5333\,\text{m}} = 120\,\text{Hz}$.
 **Vastaus:** kahden solmun tilan taajuus on $120\,\text{Hz}$. Vastauksessa on kaksi merkitsevää numeroa, kuten nopeudessa $64\,\text{m/s}$.
@@ -242,7 +292,17 @@ Vetyatomissa mitä enemmän solmuja, sitä suurempi energia. Kielellä mitä ene
 
 Kaikkiin pisteisiin sovitettu suora antaa kulmakertoimen $13{,}62\,\text{eV}$ ja vakiotermin $-0{,}003\,\text{eV}$. Vastauksena käytetään tätä kulmakerrointa.
 
-**Kaava:** $E_\text{f} = \dfrac{hc}{\lambda}$, $\ \dfrac{1}{n^2} = \dfrac{1}{4} - \dfrac{E_\text{f}}{13{,}6\,\text{eV}}$ ja kulmakerroin $k = \dfrac{\Delta E_\text{f}}{\Delta\left(\tfrac{1}{4} - \tfrac{1}{n^2}\right)}$
+**Kaava:** $$\begin{aligned} E_\text{f} &= hf \\
+c &= f\lambda \\
+E_\text{f} &= \frac{hc}{\lambda} \\
+E_n &= -\frac{13{,}6\,\text{eV}}{n^2} \\
+E_2 &= -\frac{13{,}6\,\text{eV}}{2^2} \\
+E_\text{f} &= E_n - E_2 \\
+&= 13{,}6\,\text{eV} \cdot \left(\frac{1}{4} - \frac{1}{n^2}\right) \\
+\frac{1}{n^2} &= \frac{1}{4} - \frac{E_\text{f}}{13{,}6\,\text{eV}} \\
+k &= \frac{\Delta E_\text{f}}{\Delta\left(\frac{1}{4} - \frac{1}{n^2}\right)}
+\end{aligned}
+$$
 
 **Muunnokset:** Aallonpituus $657{,}1\,\text{nm} = 657{,}1 \cdot 10^{-9}\,\text{m}$, ja samoin muut. Tulo $$
 \begin{aligned}
@@ -272,7 +332,15 @@ d) Aallonpituus on noin $397\,\text{nm}$.
 **Annettu:** $Z = 11$. Ionisaatioenergiat $E_\text{i}$ (NIST Atomic Spectra Database): Li $5{,}39\,\text{eV}$ ($n = 2$), Na $5{,}14\,\text{eV}$ ($n = 3$), K $4{,}34\,\text{eV}$ ($n = 4$). Siirtymän $3\text{s} \to 3\text{p}$ energia on $\Delta E = 2{,}10\,\text{eV}$. Lisäksi $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$ ja $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
 **Kysytty:** a) natriumin elektronikonfiguraatio, b) ionisaatioenergian pieneneminen, c) viritysfotonin aallonpituus $\lambda$, d) ionisoivan fotonin pisin aallonpituus $\lambda_\text{max}$
 **Periaate:** Perustilassa elektronit täyttävät orbitaalit alimmasta energiasta alkaen. Kullekin orbitaalille mahtuu enintään kaksi elektronia. Kun atomi absorboi fotonin, atomin energia muuttuu fotonin energian verran. Fotonin energia on siis tilojen energioiden erotus, $\tfrac{hc}{\lambda} = \Delta E$. Elektronin irrottamiseen tarvitaan vähintään ionisaatioenergia. Pisin kelpaava aallonpituus vastaa siis energiaa $E_\text{i}$.
-**Kaava:** $\lambda = \dfrac{hc}{\Delta E}$ ja $\lambda_\text{max} = \dfrac{hc}{E_\text{i}}$
+**Kaava:** $$\begin{aligned} E_\text{f} &= hf \\
+c &= f\lambda \\
+E_\text{f} &= \frac{hc}{\lambda} \\
+E_\text{f} &= \Delta E \\
+\lambda &= \frac{hc}{\Delta E} \\
+\frac{hc}{\lambda_\text{max}} &= E_\text{i} \\
+\lambda_\text{max} &= \frac{hc}{E_\text{i}}
+\end{aligned}
+$$
 **Muunnokset:** $\Delta E = 2{,}10\,\text{eV} = 2{,}10 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}3642 \cdot 10^{-19}\,\text{J}$ ja $E_\text{i} = 5{,}14\,\text{eV} = 5{,}14 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 8{,}2343 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{nm} = 10^{-9}\,\text{m}$.
 **Sijoitus:** Ensin $$
 \begin{aligned}
@@ -314,7 +382,14 @@ b) Solmussa aalto on nolla, joten todennäköisyys havaita elektroni on siellä 
 **Kysytty:** a) fotonin energia $E_\text{f}$ eV, b) aallonpituus $\lambda$, c) kuoren $n = 4$ orbitaalien lukumäärä ja perustelu aallonpituuden samuudelle
 **Periaate:** Energia säilyy: atomin energia pienenee tilojen energioiden erotuksen verran, ja sama energia lähtee fotonina, jonka energia on $E_\text{f} = \tfrac{hc}{\lambda}$. Vetyatomissa tilan energia riippuu vain pääkvanttiluvusta.
 **Kuvaajan lukeminen:** Kuvassa $4\text{s}$-orbitaalin laatikko on energia-akselin kohdalla $-0{,}850\,\text{eV}$ ja $2\text{p}$-orbitaalien laatikot kohdalla $-3{,}40\,\text{eV}$. Nuoli alkaa ylemmältä tasolta ja päättyy alemmalle, joten fotoni syntyy siirtymässä $E_4 \to E_2$. Kuorella $n = 4$ kuva näyttää alikuoret $4\text{s}$, $4\text{p}$, $4\text{d}$ ja $4\text{f}$, joissa on $1$, $3$, $5$ ja $7$ laatikkoa.
-**Kaava:** $E_\text{f} = E_4 - E_2$ ja $E_\text{f} = \dfrac{hc}{\lambda}$, josta $\lambda = \dfrac{hc}{E_4 - E_2}$
+**Kaava:** $$\begin{aligned} E_\text{f} &= hf \\
+c &= f\lambda \\
+E_\text{f} &= \frac{hc}{\lambda} \\
+E_\text{f} &= E_4 - E_2 \\
+\lambda &= \frac{hc}{E_\text{f}} \\
+&= \frac{hc}{E_4 - E_2}
+\end{aligned}
+$$
 **Muunnokset:** Energia muunnetaan jouleiksi: $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{nm} = 10^{-9}\,\text{m}$.
 **Sijoitus:** Kohta a): $$
 \begin{aligned}

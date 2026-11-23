@@ -192,9 +192,9 @@ A construction crane lifts a concrete slab of mass $480\,\text{kg}$. The tension
 **Rearranged formula.** We start from Newton's second law $\Sigma F = ma$. From the diagram the net force is $T - mg$, and we solve for the acceleration:
 ```latex
 \begin{aligned}
-&\Sigma F = ma \\
-&T - mg = ma \\
-&a = \frac{T - mg}{m}
+\Sigma F &= ma \\
+T - mg &= ma \\
+a &= \frac{T - mg}{m}
 \end{aligned}
 ```
 
@@ -207,11 +207,11 @@ A construction crane lifts a concrete slab of mass $480\,\text{kg}$. The tension
 **Substitution.** First we calculate the weight and then the acceleration:
 ```latex
 \begin{aligned}
-&a = \frac{T - mg}{m} \\
-&mg = 480\,\text{kg}\cdot 9.81\,\text{m/s}^2 \\
-&\phantom{mg} = 4708.8\,\text{N} \\
-&a = \frac{5200\,\text{N} - 4708.8\,\text{N}}{480\,\text{kg}} \\
-&\phantom{a} \approx 1.02\,\text{m/s}^2
+a &= \frac{T - mg}{m} \\
+mg &= 480\,\text{kg}\cdot 9.81\,\text{m/s}^2 \\
+&= 4708.8\,\text{N} \\
+a &= \frac{5200\,\text{N} - 4708.8\,\text{N}}{480\,\text{kg}} \\
+&\approx 1.02\,\text{m/s}^2
 \end{aligned}
 ```
 

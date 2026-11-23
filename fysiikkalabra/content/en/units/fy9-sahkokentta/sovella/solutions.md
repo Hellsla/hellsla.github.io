@@ -367,11 +367,11 @@ The bird is indeed at almost the same potential as the conductor, about $12\,\te
 The conclusion of the claim is right, but the justification is wrong: the bird would be safe even if its feet conducted electricity well. The bird is in danger if it touches another conductor or an earthed part of the pole with its wing at the same time.
 
 ### b)
-**Find:** why the angler can get a shock without touching the conductor, and the smallest air gap that can break down
+**Find:** why the angler can get a shock without touching the conductor, and the longest air gap across which breakdown is certain
 **Principle:** Air is an insulator only when the electric field is smaller than the dielectric strength of air. In a uniform field an air gap $d$ withstands the voltage $E_\text{max} d$ (chapters *The capacitor and its energy* and *Electrical safety at home and at work*).
 **Model answer:** Carbon fibre conducts electricity. When the angler stands on the ground, the tip of the rod is almost at earth potential, so the whole voltage between the conductor and earth, about $12\,\text{kV}$, is across the air gap between the tip and the conductor.
 
-The nominal voltage of the line, $20\,\text{kV}$, is between two phase conductors, and one conductor is at a voltage of $\tfrac{20\,\text{kV}}{\sqrt{3}} \approx 12\,\text{kV}$ relative to earth. With the uniform field model the smallest gap that breaks down is $d = \tfrac{U}{E_\text{max}} = \tfrac{12 \cdot 10^{3}\,\text{V}}{3 \cdot 10^{6}\,\text{V/m}} \approx 4\,\text{mm}$.
+The nominal voltage of the line, $20\,\text{kV}$, is between two phase conductors, and one conductor is at a voltage of $\tfrac{20\,\text{kV}}{\sqrt{3}} \approx 12\,\text{kV}$ relative to earth. With the uniform field model the longest gap across which breakdown is certain is $d = \tfrac{U}{E_\text{max}} = \tfrac{12 \cdot 10^{3}\,\text{V}}{3 \cdot 10^{6}\,\text{V/m}} \approx 4\,\text{mm}$.
 
 The estimate is a lower limit for the safety distance, not a safe distance: near a thin conductor and the tip of the rod the field is much stronger than $\tfrac{U}{d}$, and humid air, dirt and the fishing line weaken the insulation, so an arc can strike across a clearly longer gap too.
 
@@ -394,7 +394,7 @@ The distance between the front and hind legs of a cow is over a metre, so the vo
 - The safety of the bird is explained by the bird not being earthed, without mentioning that there is no voltage between its feet.
 - A high potential as such is interpreted as dangerous, although the danger comes only from a potential difference.
 - In part b the voltage of the air gap is taken as the $20\,\text{kV}$ between the phase conductors, although between the tip of the rod and the conductor there is the about $12\,\text{kV}$ between the conductor and earth.
-- The $4\,\text{mm}$ of part b is presented as a safe distance, although it is the lower limit of a uniform field.
+- The $4\,\text{mm}$ of part b is presented as a safe distance, although it is only the gap across which breakdown is certain in the uniform field model.
 - In part c the advice is to run away with long steps, which increases the step voltage.
 
 ## fy9-sahkokentta-s5
@@ -575,7 +575,7 @@ E &= \dfrac{250\,\text{V} - 50\,\text{V}}{0.050\,\text{m} - 0.010\,\text{m}} \\
 \end{aligned}
 $$
 **Answer:** $E = 5.0\,\text{kV/m}$. The field points from the positive plate to the negative plate, because the potential decreases in that direction: against the $x$ axis. The result has two significant figures, like the values read from the graph.
-**Reasonableness:** Over the whole gap $250\,\text{V} : 0.050\,\text{m}$ = $5.0\,\text{kV/m}$, the same result, as it must be in a uniform field. The field is far smaller than the breakdown field of air, about $3\,\text{MV/m}$.
+**Reasonableness:** Over the whole gap $250\,\text{V} : 0.050\,\text{m}$ = $5.0\,\text{kV/m}$, the same result, as it must be in a uniform field. The plates are in a vacuum, so the breakdown of air does not limit the field. For comparison, the field is only about $0.2\,\%$ of the breakdown field of air, about $3\,\text{MV/m}$, so it is easy to produce.
 
 ### b)
 **Given:** $E = 5.0\,\text{kV/m}$ from part a; the charge of the alpha particle is $q = +2e = 2 \cdot 1.602 \cdot 10^{-19}\,\text{C}$ and its mass is $m = 6.645 \cdot 10^{-27}\,\text{kg}$; only the electric force acts
@@ -595,7 +595,7 @@ a &= \dfrac{1.602 \cdot 10^{-15}\,\text{N}}{6.645 \cdot 10^{-27}\,\text{kg}} \\
 \end{aligned}
 $$
 **Answer:** $a \approx 2.4 \cdot 10^{11}\,\text{m/s}^2$, in the direction of the field, that is towards the negative plate ($x$ decreases). Two significant figures, like the field strength.
-**Reasonableness:** The weight of the particle $mg \approx 6.5 \cdot 10^{-26}\,\text{N}$ is about $2 \cdot 10^{10}$ times smaller than the electric force, so gravity can be ignored. The large acceleration is due to the small mass of the particle.
+**Reasonableness:** The weight of the particle $mg \approx 6.5 \cdot 10^{-26}\,\text{N}$ is about $2.5 \cdot 10^{10}$ times smaller than the electric force, so gravity can be ignored. The large acceleration is due to the small mass of the particle.
 
 ### c)
 **Given:** the alpha particle starts from rest at $x = 4.0\,\text{cm}$; $q = 2e$ and $m$ as in part b; only the electric force does work

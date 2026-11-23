@@ -1018,12 +1018,12 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$t = \\dfrac{16\\,\\text{m}}{3.0\\,\\text{m/s}} \\approx 5.3\\,\\text{s}$ and $$\n\\begin{aligned}\nx &= 4\\,\\text{m} + 2.0\\,\\text{m/s} \\cdot 5.33\\,\\text{s} \\\\\n&\\approx 14.7\\,\\text{m}\n\\end{aligned}\n$$"
+              "detail": "$t = \\dfrac{16\\,\\text{m}}{3.0\\,\\text{m/s}} \\approx 5.3\\,\\text{s}$ and $$\n\\begin{aligned}\nx &= 4\\,\\text{m} + 2.0\\,\\text{m/s} \\cdot 5.33\\,\\text{s} \\\\\n&\\approx 15\\,\\text{m}\n\\end{aligned}\n$$"
             },
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "The meeting would happen later ($5.3\\,\\text{s} > 4.0\\,\\text{s}$) and nearer B's starting position ($14.7\\,\\text{m} > 12\\,\\text{m}$), because the distance shrinks more slowly and A has time to walk farther."
+              "detail": "The meeting would happen later ($5.3\\,\\text{s} > 4.0\\,\\text{s}$) and nearer B's starting position ($15\\,\\text{m} > 12\\,\\text{m}$), because the distance shrinks more slowly and A has time to walk farther."
             }
           ]
         }

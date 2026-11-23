@@ -346,7 +346,7 @@ $$ the travel time of the long section is $3000\,\text{m} : 22.2\,\text{m/s} = 1
 &80\,\text{km/h} \cdot 1\,\text{s} : 135\,\text{s} \\
 &\approx 0.6\,\text{km/h}
 \end{aligned}
-$$. On the short section the travel time is only $100\,\text{m} : 22.2\,\text{m/s} = 4.5\,\text{s}$, and an error of one second is over $20\,\%$ of it: the measured average speed could be about $65$–$100\,\text{km/h}$, so the uncertainty is about $18\,\text{km/h}$. The third opinion therefore does not hold. On a short section the system could not tell a driver at the speed limit from a speeding one, and the result could go either way. The enforcement section must be long, so that the uncertainty of the timing is small compared with the travel time.
+$$. On the short section the travel time is only $100\,\text{m} : 22.2\,\text{m/s} = 4.5\,\text{s}$, and an error of one second is over $20\,\%$ of it: the measured average speed could be about $65$–$103\,\text{km/h}$, so the uncertainty is about $18\,\text{km/h}$. The third opinion therefore does not hold. On a short section the system could not tell a driver at the speed limit from a speeding one, and the result could go either way. The enforcement section must be long, so that the uncertainty of the timing is small compared with the travel time.
 
 ### Yleisiä virheitä
 - In part b the mean of the velocities is calculated, or a mean weighted by the distances ($\tfrac{2}{3} \cdot 100 + \tfrac{1}{3} \cdot 60 \approx 87\,\text{km/h}$), or the distance is divided by the wrong velocity.
@@ -647,9 +647,9 @@ $$ The position is $$
 \begin{aligned}
 x &= 4\,\text{m} + 2.0\,\text{m/s} \cdot 5.33\,\text{s} \\
 &\approx 4\,\text{m} + 10.7\,\text{m} \\
-&\approx 14.7\,\text{m}
+&\approx 15\,\text{m}
 \end{aligned}
-$$ The meeting would therefore happen later ($5.3\,\text{s} > 4.0\,\text{s}$) and nearer B's starting position ($14.7\,\text{m} > 12\,\text{m}$). The distance of $16\,\text{m}$ now shrinks more slowly, at $3.0\,\text{m/s}$ instead of $4.0\,\text{m/s}$, and A has time to walk farther before the meeting. The moment $5.3\,\text{s}$ is still within the time interval $0\ldots 8\,\text{s}$ of the graph.
+$$ The meeting would therefore happen later ($5.3\,\text{s} > 4.0\,\text{s}$) and nearer B's starting position ($15\,\text{m} > 12\,\text{m}$). The distance of $16\,\text{m}$ now shrinks more slowly, at $3.0\,\text{m/s}$ instead of $4.0\,\text{m/s}$, and A has time to walk farther before the meeting. The moment $5.3\,\text{s}$ is still within the time interval $0\ldots 8\,\text{s}$ of the graph.
 
 ### Yleisiä virheitä
 - The sign of B's velocity is forgotten ($v_\text{B} = +2.0\,\text{m/s}$), so the equation $4 + 2t = 20 + 2t$ has no solution, or the moment of meeting comes out wrong.

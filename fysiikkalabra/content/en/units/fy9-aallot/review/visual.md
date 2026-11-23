@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 5f8c760d82c982ea
+CONTENT-HASH: 01616f4e2d259322
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-aallot (en): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-(none)
-
-## Polish
-(none)
-
-## Checked
-- Read `git diff origin/main...HEAD` for en (excluding review/): only sovella/solutions.md and inquiry.json, 36 insertions / 12 deletions. Changes are paragraph breaks (blank line inserted between sentences of Periaate and Mallivastaus fields); words, maths, units and figures unchanged. A display-math block that opens mid-paragraph stays in the later paragraph, so no formula is split by the new break.
-- Read the previous Sovella visual report (PASS) as evidence.
-- Opened en 1280 px (sovella-1280-2) from review/shots/: Sovella task cards render cleanly, KaTeX and units intact, no clipping or overflow, one reading column.
-- Not opened: captures of the solution panels with the solution button open, so the rendered paragraph spacing inside solutions rests on the diff and the earlier Sovella report, not on my own view.
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.

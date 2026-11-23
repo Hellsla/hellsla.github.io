@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b0e825b1fd056a68
+CONTENT-HASH: 67ed4e67f89dc96b
+SCOPE: delta numbers,reflow from b0e825b1fd056a68 base 4b05399
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L1-10 answer box (open-exercises-1280-12) — Vastaus box still shows "6,7 · 10^15" without the unit — write `$6{,}7 \cdot 10^{15}\,\tfrac{1}{\text{s}}$`.
+- [Minor] 7-10 Vastaus (open-exercises-1280-5/6) — answer box still "6,7 · 10^15" without unit — write `$6{,}7 \cdot 10^{15}\,\tfrac{1}{\text{s}}$`.
+- [Minor] No 390/360 px capture exists of an opened exercise solution (only 1280 px); the Kaava blocks were judged at 1280 px, phone width rests on `check_layout.py` 360/390 passing.
 
 ## Checked
-- Delta round 1: solutions.md re-cut into paragraphs only.
-- Opened open-exercises-1280-12 (L1-10), open-exercises-L2-1280-10 (7-18 graph task and solution), open-exercises-L3-1280-5 (quantum efficiency solution).
-- Chains aligned, units upright, decimal comma, solution blocks inside their cards; nothing clipped. The graph's axes carry quantity and unit and the point is distinct.
+- Delta: only solutions.md, Kaava steps re-set as aligned blocks (one equation per row). Opened open-exercises-1280-2 (7-2), L2 contact sheet (#61-#72), L3 contact sheet (#73-#84), L3-1280-6 and L3-1280-8 at full size (the longest Kaava blocks: eta/threshold chains).
+- Each block starts with the principle (E = hf, f = c/lambda), `=` signs aligned, fractions in display style, units upright, decimal comma; blocks stay inside their cards, nothing clipped or overlapping.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

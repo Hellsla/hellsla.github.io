@@ -1,17 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: ec2edc61b407e7f1
+CONTENT-HASH: 6bbb2316ee94a7ba
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-sailymislait (fi): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-(none)
-
-## Polish
-- [Minor] Only contact sheet 5 was opened for this language; other changed solution blocks were judged from the diff text and the earlier Sovella visual report, not each capture.
-
-## Checked
-- Diff origin/main...HEAD (excluding review/): paragraph breaks only in sovella/solutions.md and the inquiry.json solution field; words, maths and figures unchanged. Display formulas stay intact; the break falls after the sentence that closes them.
-- contact-5.png (fi): Sovella tasks 3.3-4 and 3.3-5 with open model answers (#54-#60): the new breaks give short paragraphs with even spacing, display formulas stay inside the cards, no clipping, overflow or orphaned formula fragment.
-- Read the earlier Sovella visual report (PASS) as evidence; it agrees.
-- Not opened: other contact sheets, full-size captures, figures (unchanged).
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.

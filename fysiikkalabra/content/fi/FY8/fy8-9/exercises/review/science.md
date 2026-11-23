@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 54537ad9c998f1a3
-SCOPE: delta added-exercise from d9ba28cfd425b32a base 5b3ca4f81c77
+CONTENT-HASH: b05067dea6428416
+SCOPE: delta md-paragraphs,numbers,reflow,typography from 54537ad9c998f1a3 base 64d4935
 
 ## Blocking
 
 ## Polish
-- lessons/FY8/fy8-9/figures.py (pa_points description) — the description still says "Pisteet ovat samat kuin tehtävän taulukossa", which points to the Sovella task's table. L2-09 has no table. — Say "simuloitu esimerkkiaineisto" only, or name the data as the figure's own.
-- content/fi/FY8/fy8-9/exercises/exercises.json (L2-10 `tolerance` 0.03) — this accepts 0.136–0.144 1/h, which is T½ 4.81–5.10 h. A student who reads 5.2 h from the 1 h grid and answers 0.13 is marked wrong. This is acceptable because 360 kBq at 5.0 h lies on a grid line. — Optionally use 0.05.
+- solutions.md (L2-05, L2-06, L3-02, L3-03) — a display block is followed directly by ", missä …" or ", kun $A_0$ supistuu", so the comma opens a new line on the page. This is layout and language, not physics.
 
 ## Checked
-- The hash was 54537ad9c998f1a3 at the start and at the end. I judged only L2-09 and L2-10.
-- Fixed since round 1: the L2-09 tolerance is 0.02, which accepts 69.4–72.3 s. That excludes 73.75 s, the answer without background subtraction, which the solution now correctly gives as 73,7 s.
-- Fixed since round 1: the L2-10 check now says (1/2)^(1/5,0) = 0.8706 is left each hour (about 13 % decays) and 0.8706^5 = 0.500. I recomputed both.
-- Fixed since round 1: the answers.py comment now says 70,85 → 70,9 s, and the reason for three significant figures has been corrected.
-- I recomputed L2-09: 200 s · ln 2 / ln(375/53) = 70.851 s, and answers.py gives 70.850976. The data hold log2(375/53) = 2.82 halvings, so the "≈ 71 s" check is right.
-- I recomputed L2-10: ln 2 / 5.0 h = 0.13863 1/h → 0.14, and answers.py gives 0.138629. Two significant figures fit the 5.0 h reading, and the 1/h unit needs no conversion.
-- In both solutions the law is the lesson's, the unknown is solved symbolically before substitution, and the background is subtracted before the logarithm. Both stay within the FY8 decay-law scope.
+- `git diff a7ec649ae6`: only solutions.md changed (13 Kaava fields). exercises.json, answers.py and figures.py are unchanged, so the answers and tolerances are the ones passed before.
+- I compared every field with whitespace normalised. Nothing changed outside the Kaava fields.
+- L1-03 and L2-01: the derivation goes from $N = N_0e^{-\lambda t}$ with $N = N_0/2$ at $t = T_{1/2}$ to $\lambda T_{1/2} = \ln 2$. It is correct and within the scope note (both forms of the law).
+- L1-08, L2-05, L3-01, L3-02, L2-09: the step from $(\tfrac12)^{t/T}$ to $\ln(X_0/X) = \tfrac{t}{T}\ln 2$ is correct. L2-05 and L2-09 keep the background subtracted ($R$ net, $y - B$).
+- L2-02 $N = AT_{1/2}/\ln 2$ is correct. L2-04: $m = N m_\text{ydin}$ makes $m \propto N$ explicit, which is correct. L2-06 $R(2T_{1/2}) = R_0/4$ is correct.
+- L3-03: the equal initial activities $A_0$ cancel, as before. L3-04: two-time ratio of component 2, correct.
+- L3-05: $\lambda_\text{eff} = \lambda_\text{fys} + \lambda_\text{bio}$ gives $1/T_\text{bio} = 1/T_\text{eff} - 1/T_\text{fys}$. This is correct; the old text had stated it as a difference.
+- The substitutions are unchanged, and each uses the last symbolic form.
+- The hash was b05067dea6428416 at the start and at the end.

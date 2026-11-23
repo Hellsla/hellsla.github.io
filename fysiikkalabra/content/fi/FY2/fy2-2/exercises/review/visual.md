@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c6fcc6ca33f40463
+CONTENT-HASH: 4e7c5cec5ef77cce
+SCOPE: delta numbers,reflow from c6fcc6ca33f40463 base 3076572c597d
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md 2-?? (aamupuuro) — the new Kaava display splits the sum in the source; at 1280 px it shows on one row, as intended; 390 px not captured.
+- none
 
 ## Checked
-batch delta review: fy2-2-open-exercises-L2-1280-5 (Kaava display, Sijoitus, Vastaus, Järkevyys). 390 px solutions not captured; layout check is the packet's.
+- fy2-2-open-exercises-L2-1280-4.png (breakfast energy and walk: proportion fractions, display breaks), L3-1280-6.png and -7.png (2-23: new Kaava with fraction chain, Sijoitus), L3-1280-2.png and -5.png (surrounding layout). KaTeX intact, units upright, no clipping or overflow.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

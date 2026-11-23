@@ -130,7 +130,7 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "$E = Hm$ for the chips burnt in an hour and $P_0 = \\dfrac{E}{t}$"
+              "detail": "$Q = Hm$ for the chips burnt in an hour and $P_0 = \\dfrac{Q}{t}$"
             },
             {
               "key": "calculation",
@@ -815,7 +815,7 @@
           "id": "d",
           "kind": "word",
           "points": 2,
-          "text": "According to the test report, the range of the car that drove the furthest fell short of its stated range by the largest percentage. Explain with the help of the source why this does not show that it withstands frost worse than the other cars.",
+          "text": "According to the test report, the range of the car that drove the furthest fell short of its stated range by $46\\,\\%$, which is one of the largest deviations in the test. Explain with the help of the source why this does not show that it withstands frost worse than the other cars.",
           "criteria": [
             {
               "text": "Uses the source: the temperature fell along the route from $-7\\,{}^\\circ\\text{C}$ to $-32\\,{}^\\circ\\text{C}$, so the car that drove the furthest drove a large part of its distance on the coldest section and was in the frost the longest, whereas a car with a short range stopped already at the $-16\\,{}^\\circ\\text{C}$ point.",

@@ -1,17 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 79ff0bd6c42ae048
+CONTENT-HASH: fe735814878a79ef
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-energia (fi-easy): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-(none)
-
-## Polish
-(none)
-
-## Checked
-- Diff origin/main...HEAD for content/fi-easy/units/fy9-energia (excluding review/): only sovella/solutions.md changed, 30 insertions and 9 deletions; each change is a paragraph break inside a Mallivastaus or inquiry-solution field. Words, maths, units and figures unchanged. Breaks fall at sensible thought boundaries (a conclusion or a new line of argument); no break sits inside a display equation. The break after "Mallivastaus:" before a bullet list is a normal list start.
-- Opened captures: fy9-energia-stage-sovella-1280-5.png and fy9-energia-stage-sovella-390-6.png (Finnish shots dir, current layout of the Sovella stage: cards, hints, closed Näytä ratkaisu button, no clipping or overflow). These show the solutions closed, so the new breaks themselves were judged from the diff, not seen rendered.
-- Read the earlier Sovella visual report as evidence; it passed the same change.
-- Content hash rerun at the end: 79ff0bd6c42ae048 (unchanged).
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.

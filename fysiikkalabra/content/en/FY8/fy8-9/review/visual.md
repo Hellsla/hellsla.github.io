@@ -1,10 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 73014f45720e9c2d
+CONTENT-HASH: 37809b21af7c6c0d
+SCOPE: delta numbers,photo,teacher-figure,wording from 73014f45720e9c2d base b3ee786
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] relocated box — now sits right after the half-life definition and before the table; reads well. No change needed.
+- [Minor] none.
 
 ## Checked
-batch delta review: new probability box and the relocated 8000-nuclei box read from source; `\left(\tfrac{1}{2}\right)^2` set correctly; box captures not available.
+- Delta: Geiger-counter caption and Activity paragraph wording (count rate after background subtracted; "ionising particles and photons"), example result 97.65 to 97.6 MBq (three figures, consistent with Result and Reasonableness).
+- Opened fy8-9-intro-1280 and fy8-9-fig-1-390 (hero illustration, teacher-approved: clear, uncluttered, no text), fy8-9-example-390-2 (97.6 MBq renders correctly, units upright).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

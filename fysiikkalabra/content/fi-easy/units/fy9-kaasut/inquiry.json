@@ -363,8 +363,8 @@
           "feedback": "Kerroit väärin päin. Kun tilavuus pienenee, paine kasvaa: $p_2 = p_1 \\cdot \\tfrac{V_1}{V_2}$, ja $\\tfrac{V_1}{V_2} = 2{,}5$."
         },
         {
-          "value": 100.0,
-          "feedback": "Boylen lakiin sijoitetaan kokonaispaine, ei ylipaine. Alussa kokonaispaine on $101\\,\\text{kPa}$, vaikka mittari näyttää silloin nollaa."
+          "value": 353.5,
+          "feedback": "Lisäsit ilmanpaineen kokonaispaineeseen. Mittarin lukema on kokonaispaineen ja ilmanpaineen erotus: $\\Delta p = p_2 - p_0$, ei summa."
         }
       ],
       "solution": "**Annettu:** alkutilavuus $V_1 = 0{,}30\\,\\textsf{l}$, alkupaine $p_1 = 101\\,\\text{kPa}$ (ilmanpaine), lopputilavuus $V_2 = 0{,}12\\,\\textsf{l}$; lämpötila vakio\n\n**Kysytty:** mittarin lukema eli ylipaine $\\Delta p$ kilopascaleina\n\n**Periaate:** Suutin on tukittu, joten ilman määrä pysyy samana. Puristus on hidas, joten lämpötila pysyy vakiona. Silloin pätee Boylen laki. Lakiin sijoitetaan kokonaispaine. Mittari näyttää kokonaispaineen ja ilmanpaineen erotuksen (luku *Kaasujen tilanmuutokset ja Boylen laki*).\n\n**Kaava:** $p_1V_1 = p_2V_2$, joten $p_2 = \\dfrac{p_1V_1}{V_2}$ ja $\\Delta p = p_2 - p_1 = \\dfrac{p_1V_1}{V_2} - p_1$\n\n**Muunnokset:** Muunnoksia ei tarvita. Litrat supistuvat, ja paine saadaan suoraan kilopascaleina.\n\n**Sijoitus:** $p_2 = \\dfrac{101\\,\\text{kPa} \\cdot 0{,}30\\,\\textsf{l}}{0{,}12\\,\\textsf{l}} = 252{,}5\\,\\text{kPa}$ ja $\\Delta p = 252{,}5\\,\\text{kPa} - 101\\,\\text{kPa} = 151{,}5\\,\\text{kPa}$\n\n**Vastaus:** Mittari näyttää noin $150\\,\\text{kPa}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tilavuuksissa $0{,}30\\,\\textsf{l}$ ja $0{,}12\\,\\textsf{l}$.\n\n**Järkevyys:** Tilavuus pienenee $2{,}5$-osaan. Siksi kokonaispaine kasvaa $2{,}5$-kertaiseksi, noin $250\\,\\text{kPa}$:iin. Ylipaine on tätä ilmanpaineen verran pienempi. Lukema on tavallista suuruusluokkaa polkupyörän renkaalle."

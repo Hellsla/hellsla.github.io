@@ -39,7 +39,7 @@ $$, ja $2880 : 3 = 960$.
 **Kysytty:** tuulivoiman ja aurinkosähkön yhteinen osuus sähköntuotannosta prosentteina
 **Periaate:** Tuuli- ja aurinkovoiman teho riippuu säästä. Siksi ne ovat sääriippuvaisia tuotantotapoja. Niiden yhteinen tuotanto on kahden pylvään summa. Osuus saadaan jakamalla summa kokonaistuotannolla.
 **Kuvaajan lukeminen:** Tuulivoiman pylvään päässä on luku $20{,}2$ ja aurinkosähkön lyhyen pylvään päässä $0{,}9$. Vaaka-akselin yksikkö on $\text{TWh}$. Siis $E_\text{tuuli} = 20{,}2\,\text{TWh}$ ja $E_\text{aurinko} = 0{,}9\,\text{TWh}$.
-**Kaava:** $\text{osuus} = \dfrac{E_\text{tuuli} + E_\text{aurinko}}{E_\text{yht}}$
+**Kaava:** $\text{osuus} = \dfrac{E_\text{osa}}{E_\text{yht}}$, jossa $E_\text{osa} = E_\text{tuuli} + E_\text{aurinko}$, joten $\text{osuus} = \dfrac{E_\text{tuuli} + E_\text{aurinko}}{E_\text{yht}}$
 **Muunnokset:** Ei tarvita: kaikki energiat ovat teravattitunteina, joten yksikkö supistuu. Prosentteina $1 = 100\,\%$.
 **Sijoitus:** $\text{osuus} = \dfrac{20{,}2\,\text{TWh} + 0{,}9\,\text{TWh}}{79{,}9\,\text{TWh}} = \dfrac{21{,}1\,\text{TWh}}{79{,}9\,\text{TWh}} = 0{,}2641 = 26{,}41\,\%$
 **Vastaus:** $26{,}4\,\%$, kolme merkitsevää numeroa kuten energioissa $21{,}1\,\text{TWh}$ ja $79{,}9\,\text{TWh}$.
@@ -113,9 +113,9 @@ Se on väärin, koska tuuli ei puhalla koko ajan. Siksi energia lasketaan keskit
 **Annettu:** nimellisteho $P_\text{nim} = 25\,\text{MW}$, keskiteho $32\,\%$ nimellistehosta, aika $t = 8760\,\text{h}$
 **Kysytty:** vuodessa tuotettu energia $E$ gigawattitunteina
 **Periaate:** Tuulipuiston teho vaihtelee. Vuosienergia on kuitenkin sama kuin jos puisto toimisi koko vuoden keskiteholla. Keskiteho on annettu osuus nimellistehosta. Energia on keskiteho kerrottuna ajalla.
-**Kaava:** $P_\text{ka} = 0{,}32 \cdot P_\text{nim}$ ja $E = P_\text{ka}\, t$
+**Kaava:** $E = P_\text{ka}\, t$, jossa $P_\text{ka} = 0{,}32 \cdot P_\text{nim}$, joten $E = 0{,}32 \cdot P_\text{nim}\, t$
 **Muunnokset:** $32\,\% = 0{,}32$. Lopuksi megawattitunnit gigawattitunneiksi: $70\,080\,\text{MWh} = 70{,}08 \cdot 1000\,\text{MWh} = 70{,}08\,\text{GWh}$.
-**Sijoitus:** $P_\text{ka} = 0{,}32 \cdot 25\,\text{MW} = 8{,}0\,\text{MW}$ ja $E = 8{,}0\,\text{MW} \cdot 8760\,\text{h} = 70\,080\,\text{MWh} = 70{,}08\,\text{GWh}$
+**Sijoitus:** $E = 0{,}32 \cdot 25\,\text{MW} \cdot 8760\,\text{h} = 8{,}0\,\text{MW} \cdot 8760\,\text{h} = 70\,080\,\text{MWh} = 70{,}08\,\text{GWh}$
 **Vastaus:** $70\,\text{GWh}$, kaksi merkitsevää numeroa kuten nimellistehossa $25\,\text{MW}$ ja osuudessa $32\,\%$.
 **Järkevyys:** Täydellä teholla puisto tuottaisi $25\,\text{MW} \cdot 8760\,\text{h} = 219\,000\,\text{MWh} \approx 220\,\text{GWh}$, ja noin kolmannes siitä on noin $70\,\text{GWh}$. Tulos on pienempi kuin nimellistehon mukainen energia, koska tuuli vaihtelee.
 
@@ -145,7 +145,7 @@ $$. Lukumäärä on tuhansia. Yksi tuulivoimala tuottaa vuodessa vain noin $0{,}
 **Annettu:** teho $P = 1{,}6\,\text{GW}$, aika $t = 8760\,\text{h}$, yhden kotitalouden kulutus $5000\,\text{kWh}$
 **Kysytty:** kotitalouksien lukumäärä miljoonina
 **Periaate:** Ensin lasketaan laitoksen vuosienergia kaavalla $E = P t$, koska teho on vakio. Sitten energia jaetaan yhden kotitalouden kulutuksella.
-**Kaava:** $N = \dfrac{P t}{E_\text{koti}}$
+**Kaava:** $E = P t$ ja $E = N E_\text{koti}$, joten $N = \dfrac{E}{E_\text{koti}} = \dfrac{P t}{E_\text{koti}}$
 **Muunnokset:** $1{,}6\,\text{GW} = 1{,}6 \cdot 10^{6}\,\text{kW}$. Kun kilowatit kerrotaan tunneilla, tulos on kilowattitunteina.
 **Sijoitus:** $$
 \begin{aligned}
@@ -163,7 +163,7 @@ $$
 **Annettu:** tuulivoima $E_1 = 1{,}5\,\text{TWh}$ ja $E_2 = 20{,}0\,\text{TWh}$; taulukon muut energiat ensimmäiseltä ja toiselta vuodelta
 **Kysytty:** tuulivoiman osuus kokonaistuotannosta kummallekin vuodelle ja osuuden muutos prosenttiyksikköinä; tuotantotapa, jonka energia väheni eniten
 **Periaate:** Osuus on lähteen energia jaettuna kokonaisenergialla. Siksi lasketaan ensin kokonaistuotanto yhteenlaskulla. Osuuden muutos on toisen vuoden osuus miinus ensimmäisen vuoden osuus.
-**Kaava:** $o = \dfrac{E_\text{tuuli}}{E_\text{yht}}$ ja $\Delta o = o_2 - o_1$
+**Kaava:** $o = \dfrac{E_\text{tuuli}}{E_\text{yht}}$, jossa $E_\text{yht}$ on kaikkien tuotantotapojen energioiden summa, ja $\Delta o = o_2 - o_1$
 **Muunnokset:** Ei tarvita: kaikki energiat ovat teravattitunteina. Osuus muutetaan prosenteiksi kertomalla sadalla.
 **Sijoitus:** Kokonaistuotanto on ensimmäisenä vuonna $$
 \begin{aligned}
@@ -212,7 +212,7 @@ $$. Tuulivoiman energia kasvoi noin $20{,}0 : 1{,}5 \approx 13$-kertaiseksi. Sik
 **Annettu:** puistot A $30\,\text{MW}$, $84\,\text{GWh}$; B $60\,\text{MW}$, $150\,\text{GWh}$; C $12\,\text{MW}$, $35\,\text{GWh}$; vuosi $8760\,\text{h}$
 **Kysytty:** keskitehon osuus nimellistehosta jokaiselle puistolle, ja onko oppilaan väite oikein
 **Periaate:** Keskiteho on vuosienergia jaettuna vuoden tuntimäärällä, $P_\text{ka} = E : t$. Keskitehon osuus nimellistehosta kertoo, miten hyvin nimellisteho on käytössä. Vuosienergia riippuu myös nimellistehon suuruudesta. Siksi suurin vuosienergia ei kerro osuutta.
-**Kaava:** $P_\text{ka} = \dfrac{E}{t}$ ja $o = \dfrac{P_\text{ka}}{P_\text{nim}}$
+**Kaava:** $E = P_\text{ka}\, t$, josta $P_\text{ka} = \dfrac{E}{t}$, ja $o = \dfrac{P_\text{ka}}{P_\text{nim}}$
 **Muunnokset:** $E_\text{A} = 84\,\text{GWh} = 84\,000\,\text{MWh}$, $E_\text{B} = 150\,000\,\text{MWh}$ ja $E_\text{C} = 35\,000\,\text{MWh}$.
 **Sijoitus:** $P_\text{ka} = E : t$ ja $o = P_\text{ka} : P_\text{nim}$
 ```latex
@@ -235,7 +235,7 @@ o_\text{C} &= 4{,}0\,\text{MW} : 12\,\text{MW} = 0{,}33
 **Annettu:** päästökertoimet kivihiili $820\,\text{g/kWh}$ ja tuulivoima $12\,\text{g/kWh}$, kaupungin sähkö $E = 2{,}0\,\text{TWh}$ vuodessa
 **Kysytty:** säästyvä päästö miljoonina tonneina hiilidioksidiekvivalenttia, kun kivihiili korvataan tuulivoimalla (elinkaaren päästöistä yhden vuoden tuotannolle kuuluva osa); paras valinta
 **Periaate:** Päästö on päästökerroin kerrottuna tuotetulla energialla. Säästö on kivihiilen ja tuulivoiman päästöjen erotus, koska energia on molemmissa sama.
-**Kaava:** $\Delta m = (k_\text{hiili} - k_\text{tuuli})\, E$
+**Kaava:** $m = kE$, joten $\Delta m = m_\text{hiili} - m_\text{tuuli} = k_\text{hiili} E - k_\text{tuuli} E = (k_\text{hiili} - k_\text{tuuli})\, E$
 **Muunnokset:** $2{,}0\,\text{TWh} = 2{,}0 \cdot 10^{9}\,\text{kWh}$. Lopuksi grammat tonneiksi: $1{,}616 \cdot 10^{12}\,\text{g} = 1{,}616 \cdot 10^{12} : 10^{6}\,\text{t} = 1{,}616 \cdot 10^{6}\,\text{t}$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -258,7 +258,7 @@ Taulukko ei kerro tehon säädettävyyttä, kustannuksia, sääriippuvuutta, maa
 **Annettu:** kulutus $11\,\text{GW}$, ydinvoima $3{,}5\,\text{GW}$, tuulivoiman nimellisteho $9{,}0\,\text{GW}$ ja toteutunut teho $4{,}0\,\%$ siitä
 **Kysytty:** muiden voimaloiden ja tuonnin tuotettava teho $P_\text{muut}$ gigawatteina
 **Periaate:** Sähköverkossa tuotannon ja kulutuksen on oltava yhtä suuret joka hetki. Puuttuva teho on siis kulutus miinus sääriippuvan ja tasaisen tuotannon teho.
-**Kaava:** $$ \begin{aligned} P_\text{muut} &= P_\text{kulutus} - P_\text{ydin} \\ &- 0{,}040 \cdot P_\text{tuuli,nim} \end{aligned} $$
+**Kaava:** $P_\text{kulutus} = P_\text{ydin} + P_\text{tuuli} + P_\text{muut}$ ja $P_\text{tuuli} = 0{,}040 \cdot P_\text{tuuli,nim}$, joten $$ \begin{aligned} P_\text{muut} &= P_\text{kulutus} - P_\text{ydin} \\ &- 0{,}040 \cdot P_\text{tuuli,nim} \end{aligned} $$
 **Muunnokset:** Ei tarvita: kaikki tehot ovat gigawatteina. Prosentti on $4{,}0\,\% = 0{,}040$.
 **Sijoitus:** $$
 \begin{aligned}
@@ -276,9 +276,9 @@ $$
 **Annettu:** nimellisteho molemmilla $600\,\text{MW}$, tuulipuiston keskiteho $33\,\%$ ja ydinvoimalan $90\,\%$ nimellistehosta
 **Kysytty:** vuosienergioiden suhde $E_\text{ydin} : E_\text{tuuli}$
 **Periaate:** Kummankin voimalan vuosienergia on keskiteho kertaa vuoden pituus, $E = P_\text{ka} t$. Vuoden pituus on sama molemmille. Myös nimellisteho on sama. Siksi suhde riippuu vain siitä, kuinka suuri osa nimellistehosta keskiteho on.
-**Kaava:** $\dfrac{E_\text{ydin}}{E_\text{tuuli}} = \dfrac{0{,}90 \cdot 600\,\text{MW} \cdot t}{0{,}33 \cdot 600\,\text{MW} \cdot t}$
+**Kaava:** $E = P_\text{ka}\, t$ ja $P_\text{ka} = o\, P_\text{nim}$, joten $E = o\, P_\text{nim}\, t$ ja $\dfrac{E_\text{ydin}}{E_\text{tuuli}} = \dfrac{o_\text{ydin} P_\text{nim}\, t}{o_\text{tuuli} P_\text{nim}\, t} = \dfrac{o_\text{ydin}}{o_\text{tuuli}}$
 **Muunnokset:** Ei tarvita: nimellisteho ja aika supistuvat pois.
-**Sijoitus:** $\dfrac{E_\text{ydin}}{E_\text{tuuli}} = 0{,}90 : 0{,}33 = 2{,}727$
+**Sijoitus:** $\dfrac{E_\text{ydin}}{E_\text{tuuli}} = \dfrac{0{,}90}{0{,}33} = 2{,}727$
 **Vastaus:** $2{,}7$ kertaa, kaksi merkitsevää numeroa kuten osuuksissa $0{,}90$ ja $0{,}33$.
 **Järkevyys:** Tarkistus vuosienergioilla: ydinvoima $$
 \begin{aligned}
@@ -296,7 +296,7 @@ $$, ja $4{,}7 : 1{,}7 \approx 2{,}8$. Sama nimellisteho ei siis tarkoita samaa v
 **Annettu:** Olkiluoto 3:n nimellisteho $P_\text{O} = 1600\,\text{MW}$ ja keskiteho $90\,\%$ siitä, aurinkopuiston keskiteho $11\,\%$ nimellistehosta, molemmille sama aika $t$ (vuosi)
 **Kysytty:** aurinkopuiston nimellisteho $P_\text{a}$ gigawatteina, ja korvaisiko puisto Olkiluoto 3:n tammikuun iltana
 **Periaate:** Vuosienergia on keskiteho kerrottuna ajalla, $E = P_\text{ka} t$. Keskiteho on annettu osuus $o$ nimellistehosta. Aika on molemmilla sama vuosi. Siksi vuosienergiat ovat yhtä suuret, kun keskitehot ovat yhtä suuret.
-**Kaava:** $o_\text{a} P_\text{a}\, t = o_\text{O} P_\text{O}\, t$, josta $P_\text{a} = \dfrac{o_\text{O} P_\text{O}}{o_\text{a}}$
+**Kaava:** $E = P_\text{ka}\, t$ ja $P_\text{ka} = o\, P_\text{nim}$, joten $E = o\, P_\text{nim}\, t$. Vuosienergiat ovat yhtä suuret: $o_\text{a} P_\text{a}\, t = o_\text{O} P_\text{O}\, t$, josta $P_\text{a} = \dfrac{o_\text{O} P_\text{O}}{o_\text{a}}$
 **Muunnokset:** $o_\text{O} = 90\,\% = 0{,}90$ ja $o_\text{a} = 11\,\% = 0{,}11$. Lopuksi megawatit gigawateiksi: $13\,091\,\text{MW} = 13{,}091 \cdot 1000\,\text{MW} = 13{,}1\,\text{GW}$.
 **Sijoitus:** $P_\text{a} = 0{,}90 \cdot 1600\,\text{MW} : 0{,}11 = 1440\,\text{MW} : 0{,}11 = 13\,091\,\text{MW} = 13{,}1\,\text{GW}$
 **Vastaus:** $13\,\text{GW}$, kaksi merkitsevää numeroa kuten osuuksissa $11\,\%$ ja $90\,\%$.
@@ -310,7 +310,7 @@ Sama vuosienergia ei siis tarkoita, että voimala korvaa toisen joka hetki.
 **Annettu:** tuulivoiman nimellisteho $P_\text{nim} = 9{,}0\,\text{GW}$, ydinvoima $P_\text{ydin} = 3{,}5\,\text{GW}$ koko viikon, päiväkohtaiset $P_\text{tuuli}$ ja $P_\text{kulutus}$ taulukosta, viikko $168\,\text{h}$
 **Kysytty:** a) tuulivoiman viikon energia ja keskiteho osuutena nimellistehosta; b) muiden voimaloiden ja tuonnin päiväkohtainen teho, sen suurin arvo; c) mitä vaihtelu vaatii järjestelmältä
 **Periaate:** Verkossa tuotannon pitää vastata kulutusta joka hetki. Siksi muiden pitää tuottaa kulutus miinus ydin- ja tuulivoima. Tuulivoiman viikon energia on päivien tehojen summa kerrottuna vuorokauden pituudella, koska teho on kunakin päivänä keskimäärin vakio.
-**Kaava:** $E_\text{tuuli} = \left(\sum P_\text{tuuli}\right) \Delta t_\text{päivä}$, $P_\text{ka} = \dfrac{E_\text{tuuli}}{\Delta t_\text{viikko}}$ ja $$ \begin{aligned} P_\text{muut} &= P_\text{kulutus} \\ &- P_\text{ydin} - P_\text{tuuli} \end{aligned} $$
+**Kaava:** $E = P t$ kunakin päivänä, joten $E_\text{tuuli} = \left(\sum P_\text{tuuli}\right) \Delta t_\text{päivä}$. Keskiteho on $P_\text{ka} = \dfrac{E_\text{tuuli}}{\Delta t_\text{viikko}}$. Teho on tasapainossa: $$ \begin{aligned} P_\text{kulutus} &= P_\text{ydin} + P_\text{tuuli} \\ &+ P_\text{muut} \end{aligned} $$ joten $$ \begin{aligned} P_\text{muut} &= P_\text{kulutus} \\ &- P_\text{ydin} - P_\text{tuuli} \end{aligned} $$
 **Muunnokset:** Ei tarvita: tehot ovat gigawatteina ja energia lasketaan gigawattitunteina. Viikossa on $7 \cdot 24\,\text{h} = 168\,\text{h}$.
 **Sijoitus:** a) Tuulivoiman päiväkohtaisten tehojen summa on $$
 \begin{aligned}
@@ -374,7 +374,7 @@ Tuulivoima kattaa viikon kulutuksesta vain $490 : 1615 = 0{,}30$ eli $30\,\%$, v
 **Periaate:** Vuosienergia on keskiteho kerrottuna vuoden pituudella. Keskiteho on osuus nimellistehosta. Energia koko käyttöiältä on vuosienergia kerrottuna käyttöiällä.
 
 Kustannus energiaa kohti on rakennuskustannus jaettuna käyttöiän energialla. Päästö on päästökerroin kerrottuna energialla.
-**Kaava:** $E_\text{v} = o\, P_\text{nim}\, t$, $E_\text{kok} = E_\text{v} \cdot a$ ja $k = \dfrac{K}{E_\text{kok}}$
+**Kaava:** $E = P_\text{ka}\, t$ ja $P_\text{ka} = o\, P_\text{nim}$, joten $E_\text{v} = o\, P_\text{nim}\, t$. Energia käyttöiältä on $E_\text{kok} = E_\text{v} \cdot a$, kustannus energiaa kohti $k = \dfrac{K}{E_\text{kok}}$ ja päästö $m = \text{päästökerroin} \cdot E$
 **Muunnokset:** $$
 \begin{aligned}
 &120\,\text{milj. euroa} \\

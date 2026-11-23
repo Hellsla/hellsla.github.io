@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: b91a832e250a3f5f
-SCOPE: delta: tasks s7 (filament lamp, battery voltage) and s8 (three resistors in a mixed connection) with solutions, and the intro; other tasks not re-judged
+CONTENT-HASH: d9c0a99ccab576c3
+SCOPE: delta (old-content fixes, git diff origin/main)
 
-## Blocking
-None.
+Blocking: none.
 
-## Polish
-- In the English solutions.md the fixed section headings "Yleisiä virheitä" and "Hyväksytään myös" are Finnish; if the build shows them to students, translate them (the parser may key on them, so check first).
-
-## Checked
-s7 needs the characteristic curve and a design decision (series resistor) the text does not reveal; s8 asks for a prediction before calculation in part d. Parts, points (16, 18), figures and answers match fi. Solutions complete a-d with common mistakes and accepted alternatives.
+1. Teacher.md points (20 + five 15 + 16 + 18 = 129) match tasks.json; consistent in all three languages.
+2. Earlier delta lines re-read briefly: the changes touch only counts, points and notation; no misconception feedback, hint ladder or rubric criterion was weakened, and no answer is disclosed early.
+3. Polish: none.

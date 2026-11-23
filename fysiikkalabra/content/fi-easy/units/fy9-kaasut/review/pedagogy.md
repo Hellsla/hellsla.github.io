@@ -1,21 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: fd4f0479d36b9c00
-SCOPE: delta: s8 (kaksi p(T)-suoraa, ainemäärien vertailu) ja s9 (isobaari pV-kuvaajassa, työ, lämpötila, ensimmäinen pääsääntö); tehtävien tekstit, osatehtävät, pisteytys, mallivastaukset ja uskollisuus fi-versiolle; unit.md ei ole muuttunut tästä versiosta.
+CONTENT-HASH: 530f2f54a1637ab2
+SCOPE: delta (old-content fixes, git diff origin/main)
 
-## Blocking
-
-(none)
-
-## Polish
-
-- Polish: s9d:n Periaate-virke on 34 sanaa; jaa helppoa suomea varten. s8:n tehtävän otsikko on neutraali, hyvä.
-
-## Checked
-
-- Uudet tehtävät vaativat itsenäistä soveltamista: tuntematon mutta uskottava tilanne, aineisto (kuvaaja tai kuva) luetaan itse, osat nousevat vaativammiksi (lukeminen, laskenta, perustelu tai ennuste).
-- Tehtävän otsikko tai teksti ei paljasta ratkaisumallia tai kaavaa; vihjeet eivät kerro vastausta.
-- Pisteytys on tarkka eikä anna pisteitä epäolennaisesta; sanalliset osat ovat havaittavia kriteereitä.
-- Mallivastaukset ovat täydelliset (annettu, kysytty, periaate, kaava, sijoitus, vastaus, järkevyys), yleiset virheet ja hyväksytyt vaihtoehdot mukana; laskin tarkistettu (vastaukset täsmäävät).
-- Vastaukset, pisteet ja kuva-viitteet ovat samat kuin fi-versiossa.
-- Lukutaso: lyhyet virkkeet, tuttu sanasto; muutama pitkä virke mallivastauksissa (Polish).
-- Hash alussa ja lopussa sama.
+Checked
+1. The pumppu wrong answer 353.5 kPa (252.5 + 101) is a real misconception and its feedback names it; the other feedbacks are unchanged and distinct. Teacher count (9 tasks) and the points (11 and 14) match tasks.json (sum 135). The fi, en and fi-easy versions carry the same changes with the same meaning.

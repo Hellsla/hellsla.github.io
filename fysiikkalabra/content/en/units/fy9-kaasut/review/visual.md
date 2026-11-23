@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 7b20b967a976499c
+CONTENT-HASH: 9a040a885a558a97
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-kaasut (en): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-(none)
-
-## Polish
-- [Minor] capture gap: the shots have no capture of the opened Sovella solutions the diff touches; the paragraph breaks were judged from the diff and the same component's rendering elsewhere.
-
-## Checked
-- git diff origin/main...HEAD (excluding review/): only solutions.md changed; blank lines inserted between paragraphs; words, maths and figures unchanged; no break inside a formula.
-- Read sovella/review/visual.md (earlier PASS).
-- Opened stage-sovella-1280-2 (en): graph, answer options and task card layout intact at 1280 px.
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.

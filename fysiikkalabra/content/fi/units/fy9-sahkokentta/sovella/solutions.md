@@ -367,11 +367,11 @@ Lintu on kyllä lähes samassa potentiaalissa kuin johdin, noin $12\,\text{kV}$ 
 Väitteen johtopäätös on oikea, mutta perustelu väärä: lintu olisi turvassa, vaikka sen jalat johtaisivat sähköä hyvin. Vaaraan lintu joutuu, jos se koskettaa siivellään samalla toista johdinta tai maadoitettua pylvään osaa.
 
 ### b)
-**Kysytty:** miksi kalastaja voi saada iskun koskematta johtimeen, ja pienin ilmaväli, joka voi lyödä läpi
+**Kysytty:** miksi kalastaja voi saada iskun koskematta johtimeen, ja pisin ilmaväli, jonka yli läpilyönti tapahtuu varmasti
 **Periaate:** Ilma on eriste vain, kun sähkökenttä on pienempi kuin ilman läpilyöntilujuus. Tasaisessa kentässä ilmaväli $d$ kestää jännitteen $E_\text{max} d$ (luvut *Kondensaattori ja sen energia* ja *Sähköturvallisuus kotona ja työssä*).
 **Mallivastaus:** Hiilikuitu johtaa sähköä. Kun kalastaja seisoo maassa, vavan kärki on lähes maan potentiaalissa, joten kärjen ja johtimen välisen ilmavälin yli on koko johtimen ja maan välinen jännite, noin $12\,\text{kV}$.
 
-Linjan nimellisjännite $20\,\text{kV}$ on kahden vaihejohtimen välinen, ja yksi johdin on maahan nähden $\tfrac{20\,\text{kV}}{\sqrt{3}} \approx 12\,\text{kV}$:n jännitteessä. Tasaisen kentän mallilla pienin läpilyövä väli on $d = \tfrac{U}{E_\text{max}} = \tfrac{12 \cdot 10^{3}\,\text{V}}{3 \cdot 10^{6}\,\text{V/m}} \approx 4\,\text{mm}$.
+Linjan nimellisjännite $20\,\text{kV}$ on kahden vaihejohtimen välinen, ja yksi johdin on maahan nähden $\tfrac{20\,\text{kV}}{\sqrt{3}} \approx 12\,\text{kV}$:n jännitteessä. Tasaisen kentän mallilla pisin väli, jonka yli läpilyönti tapahtuu varmasti, on $d = \tfrac{U}{E_\text{max}} = \tfrac{12 \cdot 10^{3}\,\text{V}}{3 \cdot 10^{6}\,\text{V/m}} \approx 4\,\text{mm}$.
 
 Arvio on alaraja turvaetäisyydelle eikä turvallinen etäisyys: ohuen johtimen ja vavan kärjen lähellä kenttä on paljon voimakkaampi kuin $\tfrac{U}{d}$, ja kostea ilma, lika ja siima heikentävät eristystä, joten valokaari voi syttyä selvästi pidemmästäkin välistä.
 
@@ -394,7 +394,7 @@ Lehmän etu- ja takajalkojen väli on yli metrin, joten niiden välillä on palj
 - Linnun turvallisuus selitetään sillä, että lintu ei ole maadoitettu, mainitsematta, että jalkojen välillä ei ole jännitettä.
 - Suuri potentiaali sinänsä tulkitaan vaaralliseksi, vaikka vaara syntyy vasta potentiaalierosta.
 - b-kohdassa ilmavälin jännitteeksi otetaan vaihejohtimien välinen $20\,\text{kV}$, vaikka vavan kärjen ja johtimen välillä on johtimen ja maan välinen noin $12\,\text{kV}$.
-- b-kohdan $4\,\text{mm}$ esitetään turvallisena etäisyytenä, vaikka se on tasaisen kentän alaraja.
+- b-kohdan $4\,\text{mm}$ esitetään turvallisena etäisyytenä, vaikka se on vain väli, jonka yli läpilyönti tapahtuu varmasti tasaisen kentän mallissa.
 - c-kohdassa neuvotaan juoksemaan pitkin askelin pois, mikä kasvattaa askeljännitettä.
 
 ## fy9-sahkokentta-s5
@@ -575,7 +575,7 @@ E &= \dfrac{250\,\text{V} - 50\,\text{V}}{0{,}050\,\text{m} - 0{,}010\,\text{m}}
 \end{aligned}
 $$
 **Vastaus:** $E = 5{,}0\,\text{kV/m}$. Kenttä osoittaa positiivisesta levystä negatiiviseen, koska potentiaali pienenee siihen suuntaan: $x$-akselia vastaan. Tuloksessa on kaksi merkitsevää numeroa kuten luetuissa arvoissa.
-**Järkevyys:** Koko levyvälillä $250\,\text{V} : 0{,}050\,\text{m}$ = $5{,}0\,\text{kV/m}$, sama tulos, kuten homogeenisessa kentässä pitääkin. Kenttä on selvästi pienempi kuin ilman läpilyöntikenttä, noin $3\,\text{MV/m}$.
+**Järkevyys:** Koko levyvälillä $250\,\text{V} : 0{,}050\,\text{m}$ = $5{,}0\,\text{kV/m}$, sama tulos, kuten homogeenisessa kentässä pitääkin. Levyt ovat tyhjiössä, joten ilman läpilyönti ei rajoita kenttää. Vertailuksi: kenttä on vain noin $0{,}2\,\%$ ilman läpilyöntikentästä, noin $3\,\text{MV/m}$, joten se on helppo tuottaa.
 
 ### b)
 **Annettu:** $E = 5{,}0\,\text{kV/m}$ a-kohdasta; alfahiukkasen varaus $q = +2e = 2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C}$ ja massa $m = 6{,}645 \cdot 10^{-27}\,\text{kg}$; vain sähköinen voima
@@ -595,7 +595,7 @@ a &= \dfrac{1{,}602 \cdot 10^{-15}\,\text{N}}{6{,}645 \cdot 10^{-27}\,\text{kg}}
 \end{aligned}
 $$
 **Vastaus:** $a \approx 2{,}4 \cdot 10^{11}\,\text{m/s}^2$, kentän suuntaan eli kohti negatiivista levyä ($x$ pienenee). Kaksi merkitsevää numeroa kuten kentän voimakkuudessa.
-**Järkevyys:** Hiukkasen paino $mg \approx 6{,}5 \cdot 10^{-26}\,\text{N}$ on noin $2 \cdot 10^{10}$ kertaa pienempi kuin sähköinen voima, joten painovoiman voi jättää huomiotta. Suuri kiihtyvyys johtuu hiukkasen pienestä massasta.
+**Järkevyys:** Hiukkasen paino $mg \approx 6{,}5 \cdot 10^{-26}\,\text{N}$ on noin $2{,}5 \cdot 10^{10}$ kertaa pienempi kuin sähköinen voima, joten painovoiman voi jättää huomiotta. Suuri kiihtyvyys johtuu hiukkasen pienestä massasta.
 
 ### c)
 **Annettu:** alfahiukkanen lähtee levosta kohdasta $x = 4{,}0\,\text{cm}$; $q = 2e$ ja $m$ kuten b-kohdassa; vain sähköinen voima tekee työtä

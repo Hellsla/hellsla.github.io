@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 67b4799bb076bead
+CONTENT-HASH: 5a2a6d8880fe81c5
+SCOPE: delta numbers,reflow,teacher-figure from 67b4799bb076bead base b3ee786
 
 ## Blocking
 - none
@@ -8,6 +9,8 @@ CONTENT-HASH: 67b4799bb076bead
 - none
 
 ## Checked
-- Delta (solutions.md paragraph cuts): open-exercises-L2-1280-12, -13, open-exercises-L3-1280-5: paragraphs, aligned chains, answer box and Järkevyys render cleanly.
+- Delta (8g, Kaava step of solutions.md only). Rendered every Kaava block of the exercise solutions at 390 px (own Playwright capture, `?ratkaisut=1`, all boxes open; the packet's shots are 1280 px only): no clipping, scrollWidth 390, equals signs aligned in one column, one equation per row, symbols and units unchanged. Also contact captures of the 1280 px open-exercises set from screenshot.py.
+- Figures fy8-5/nodes and fy8-5/string and the two webp pictures are listed as teacher-approved and unchanged; not re-judged.
+
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography  · Finnish 5 · accessibility 5

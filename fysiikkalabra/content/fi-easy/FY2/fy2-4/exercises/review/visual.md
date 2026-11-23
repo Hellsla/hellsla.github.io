@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 31aa80002bbd8de9
+CONTENT-HASH: 1cbb64c4124fa188
+SCOPE: delta numbers,teacher-figure,wording from 31aa80002bbd8de9 base 5d4ee2361db4
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] shared component (not this change) — in the open-exercise captures the expand button at a task's top right overlaps the end of the first text line (e.g. fy2-4 4-17, fy2-7 7-15, fy2-5 5-16) — give the task heading row its own space or right padding in the shared card.
 
 ## Checked
-- Delta (fi-easy, reflow in solutions.md): L3-02 (4-20) Reasonableness, L1-08 (4-8) Reasonableness and the answer-check row 'Rivi 3' of 4-17, in content/fi-easy/FY2/fy2-4/review/shots/fy2-4-open-exercises-L3-1280-3.png, -1280-6.png and -L2-1280-7.png. The changed chains render as set-apart aligned blocks with units as LaTeX; sentence before and after reads on; no clipping, overflow or gap; surrounding solution cards intact.
+- fy2-4 captures opened: open-exercises-L2-1280-3 (4-13 Kaava with wrapped inline formulas), -L2-1280-7 (4-17); assets/pics/fy2/fy2-4-grid.webp opened (unlabelled, palette-consistent).
+- Long inline Kaava lines wrap cleanly on a line of their own; fractions, subscripts and units render; no overflow. Not every changed row opened.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

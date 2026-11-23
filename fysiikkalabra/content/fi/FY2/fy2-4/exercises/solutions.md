@@ -2,7 +2,7 @@
 **Annettu:** laitteeseen otettu energia $E_\text{o} = 400\,\text{J}$ ja hyötyenergia (liike-energia) $E_\text{a} = 340\,\text{J}$
 **Kysytty:** moottorin hyötysuhde $\eta$ prosentteina
 **Periaate:** Hyötysuhde kertoo, kuinka suuri osa laitteeseen otetusta energiasta muuttuu hyödyksi. Molemmat energiat tunnetaan, joten hyötysuhde on niiden suhde.
-**Kaava:** $\eta = \dfrac{E_\text{a}}{E_\text{o}}$
+**Kaava:** Hyötysuhteen määritelmä $\eta = \dfrac{E_\text{a}}{E_\text{o}}$; kysytty $\eta$ on jo yksin, joten sieventämistä ei tarvita
 **Muunnokset:** Ei tarvita: molemmat energiat ovat jouleina, joten yksiköt supistuvat. Prosentiksi muunnetaan sijoittamalla $1 = 100\,\%$.
 **Sijoitus:** $\eta = \dfrac{340\,\text{J}}{400\,\text{J}} = 0{,}85 = 0{,}85 \cdot 100\,\% = 85\,\%$
 **Vastaus:** $85\,\%$, kaksi merkitsevää numeroa, koska energiat annettiin kahden numeron tarkkuudella.
@@ -12,7 +12,7 @@
 **Annettu:** laitteeseen otettu teho $P_\text{o} = 8{,}0\,\text{W}$ ja hyötyteho (valo) $P_\text{a} = 2{,}4\,\text{W}$
 **Kysytty:** ledilampun hyötysuhde $\eta$ prosentteina
 **Periaate:** Hyötysuhde voidaan laskea tehojen suhteena, koska laite käy tasaisella teholla: ajan $t$ kuluessa energiat ovat $P_\text{a} \cdot t$ ja $P_\text{o} \cdot t$, ja aika supistuu.
-**Kaava:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$
+**Kaava:** Tasaisella teholla $E = Pt$, joten $\eta = \dfrac{E_\text{a}}{E_\text{o}} = \dfrac{P_\text{a} t}{P_\text{o} t} = \dfrac{P_\text{a}}{P_\text{o}}$
 **Muunnokset:** Ei tarvita: molemmat tehot ovat watteina. Prosentiksi muunnetaan sijoittamalla $1 = 100\,\%$.
 **Sijoitus:** $\eta = \dfrac{2{,}4\,\text{W}}{8{,}0\,\text{W}} = 0{,}30 = 0{,}30 \cdot 100\,\% = 30\,\%$
 **Vastaus:** $30\,\%$, kaksi merkitsevää numeroa kuten tehoissa $2{,}4\,\text{W}$ ja $8{,}0\,\text{W}$.
@@ -22,7 +22,7 @@
 **Annettu:** hyötysuhde $\eta = 5{,}0\,\%$ ja otettu teho $P_\text{o} = 60\,\text{W}$
 **Kysytty:** valoteho eli hyötyteho $P_\text{a}$ watteina
 **Periaate:** Hyötysuhde on hyötytehon osuus otetusta tehosta. Kun hyötysuhde ja otettu teho tunnetaan, hyötyteho saadaan kertomalla.
-**Kaava:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, josta $P_\text{a} = \eta \cdot P_\text{o}$
+**Kaava:** Hyötysuhteen määritelmä tehoilla $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, josta $P_\text{a} = \eta \cdot P_\text{o}$
 **Muunnokset:** Prosentti muunnetaan luvuksi sijoittamalla $1\,\% = 0{,}01$: $5{,}0\,\% = 5{,}0 \cdot 0{,}01 = 0{,}050$.
 **Sijoitus:** $P_\text{a} = 0{,}050 \cdot 60\,\text{W} = 3{,}0\,\text{W}$
 **Vastaus:** $3{,}0\,\text{W}$, kaksi merkitsevää numeroa kuten hyötysuhteessa $5{,}0\,\%$.
@@ -32,7 +32,7 @@
 **Annettu:** hyötysuhde $\eta = 90\,\%$ ja hyötyenergia $E_\text{a} = 1800\,\text{J}$
 **Kysytty:** moottoriin otettu sähköenergia $E_\text{o}$ jouleina
 **Periaate:** Hyötyenergia on hyötysuhteen osuus otetusta energiasta. Otettu energia on siis suurempi kuin hyötyenergia, ja se saadaan jakamalla hyötyenergia hyötysuhteella.
-**Kaava:** $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, josta $E_\text{o} = \dfrac{E_\text{a}}{\eta}$
+**Kaava:** Hyötysuhteen määritelmä $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, josta $E_\text{o} = \dfrac{E_\text{a}}{\eta}$
 **Muunnokset:** Prosentti muunnetaan luvuksi sijoittamalla $1\,\% = 0{,}01$: $90\,\% = 90 \cdot 0{,}01 = 0{,}90$.
 **Sijoitus:** $E_\text{o} = \dfrac{1800\,\text{J}}{0{,}90} = 2000\,\text{J}$
 **Vastaus:** $2000\,\text{J}$ eli $2{,}0 \cdot 10^{3}\,\text{J}$, kaksi merkitsevää numeroa kuten hyötysuhteessa $90\,\%$.
@@ -42,7 +42,7 @@
 **Annettu:** paneeliin osuva säteilyenergia $E_\text{o} = 5{,}0\,\text{kJ}$ ja hyötysuhde $\eta = 20\,\%$
 **Kysytty:** häviöiksi muuttuva energia $E_\text{h}$ kilojouleina
 **Periaate:** Energia säilyy: otettu energia jakautuu hyötyenergiaan ja häviöihin, $E_\text{o} = E_\text{a} + E_\text{h}$. Hyötyenergia saadaan hyötysuhteesta, ja loput on häviöitä.
-**Kaava:** $E_\text{a} = \eta \cdot E_\text{o}$ ja $E_\text{h} = E_\text{o} - E_\text{a}$
+**Kaava:** Hyötysuhteen määritelmä $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, josta $E_\text{a} = \eta \cdot E_\text{o}$; energian säilyminen $E_\text{o} = E_\text{a} + E_\text{h}$, josta $E_\text{h} = E_\text{o} - E_\text{a}$
 **Muunnokset:** Prosentti muunnetaan luvuksi sijoittamalla $1\,\% = 0{,}01$: $20\,\% = 20 \cdot 0{,}01 = 0{,}20$. Energiat pysyvät kilojouleina.
 **Sijoitus:** $E_\text{a} = 0{,}20 \cdot 5{,}0\,\text{kJ} = 1{,}0\,\text{kJ}$, joten $E_\text{h} = 5{,}0\,\text{kJ} - 1{,}0\,\text{kJ} = 4{,}0\,\text{kJ}$
 **Vastaus:** $4{,}0\,\text{kJ}$, kaksi merkitsevää numeroa kuten annetuissa tiedoissa.
@@ -52,7 +52,7 @@
 **Annettu:** otettu teho $P_\text{o} = 1{,}0\,\text{kW}$, hyötysuhde $\eta = 80\,\%$ ja käyntiaika $t = 2{,}0\,\text{min}$
 **Kysytty:** moottorin antama liike-energia eli hyötyenergia $E_\text{a}$ kilojouleina
 **Periaate:** Moottori käy tasaisella teholla, joten otettu energia on teho kerrottuna ajalla. Hyötyenergia on hyötysuhteen osuus otetusta energiasta.
-**Kaava:** $E_\text{o} = P_\text{o} \cdot t$ ja $E_\text{a} = \eta \cdot E_\text{o}$, joten $E_\text{a} = \eta \cdot P_\text{o} \cdot t$
+**Kaava:** Tasaisella teholla $E = Pt$, joten $E_\text{o} = P_\text{o} \cdot t$; hyötysuhteen määritelmä $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, josta $E_\text{a} = \eta \cdot E_\text{o} = \eta \cdot P_\text{o} \cdot t$
 **Muunnokset:** $1{,}0\,\text{kW} = 1{,}0 \cdot 1000\,\text{W} = 1000\,\text{W}$, $2{,}0\,\text{min} = 2{,}0 \cdot 60\,\text{s} = 120\,\text{s}$ ja $80\,\% = 80 \cdot 0{,}01 = 0{,}80$.
 **Sijoitus:** $E_\text{o} = 1000\,\text{W} \cdot 120\,\text{s} = 120\,000\,\text{J}$, joten $E_\text{a} = 0{,}80 \cdot 120\,000\,\text{J} = 96\,000\,\text{J} = 96\,\text{kJ}$
 **Vastaus:** $96\,\text{kJ}$, kaksi merkitsevää numeroa kuten annetuissa tiedoissa.
@@ -62,7 +62,7 @@
 **Annettu:** ledilamppu: $\eta_\text{LED} = 30\,\%$ ja $P_\text{o,LED} = 9{,}0\,\text{W}$; hehkulamppu: $\eta_\text{hehku} = 5{,}0\,\%$; kummankin valoteho on sama
 **Kysytty:** hehkulampun otettu teho $P_\text{o,hehku}$ watteina
 **Periaate:** Kun valoteho on sama, lamppujen hyötytehot ovat yhtä suuret. Lasketaan ensin ledilampun hyötyteho hyötysuhteesta ja sitten teho, jonka hehkulamppu tarvitsee saman hyötytehon antamiseen.
-**Kaava:** $P_\text{a} = \eta_\text{LED} \cdot P_\text{o,LED}$ ja $P_\text{o,hehku} = \dfrac{P_\text{a}}{\eta_\text{hehku}}$
+**Kaava:** Hyötysuhteen määritelmä $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, josta ledille $P_\text{a} = \eta_\text{LED} \cdot P_\text{o,LED}$ ja hehkulampulle $P_\text{a} = \eta_\text{hehku} \cdot P_\text{o,hehku}$, josta $P_\text{o,hehku} = \dfrac{P_\text{a}}{\eta_\text{hehku}}$
 **Muunnokset:** Prosentit muunnetaan luvuiksi sijoittamalla $1\,\% = 0{,}01$: $30\,\% = 0{,}30$ ja $5{,}0\,\% = 0{,}050$.
 **Sijoitus:** $P_\text{a} = 0{,}30 \cdot 9{,}0\,\text{W} = 2{,}7\,\text{W}$, joten $P_\text{o,hehku} = \dfrac{2{,}7\,\text{W}}{0{,}050} = 54\,\text{W}$
 **Vastaus:** $54\,\text{W}$, kaksi merkitsevää numeroa kuten hyötysuhteissa.
@@ -72,7 +72,7 @@
 **Annettu:** otettu teho $P_\text{o} = 60\,\text{W}$, hyötysuhde $\eta = 5{,}0\,\%$ ja palamisaika $t = 4{,}0\,\text{h}$
 **Kysytty:** lämmöksi muuttuva sähköenergia eli häviöenergia $E_\text{h}$ kilowattitunteina
 **Periaate:** Lamppu palaa tasaisella teholla, joten otettu energia on teho kerrottuna ajalla. Valoksi muuttuu hyötysuhteen osuus, ja loput on häviöitä eli lämpöä, koska energia säilyy.
-**Kaava:** $E_\text{o} = P_\text{o} \cdot t$ ja $E_\text{h} = E_\text{o} - \eta \cdot E_\text{o} = (1 - \eta) \cdot E_\text{o}$
+**Kaava:** Tasaisella teholla $E = Pt$, joten $E_\text{o} = P_\text{o} \cdot t$; energian säilyminen $E_\text{o} = E_\text{a} + E_\text{h}$ ja $E_\text{a} = \eta \cdot E_\text{o}$, josta $E_\text{h} = E_\text{o} - \eta \cdot E_\text{o} = (1 - \eta) \cdot E_\text{o}$
 **Muunnokset:** Teho kilowateiksi: $60\,\text{W} = 60 \cdot 0{,}001\,\text{kW} = 0{,}060\,\text{kW}$. Kun teho on kilowatteina ja aika tunteina, energia saadaan suoraan kilowattitunteina. Lisäksi $5{,}0\,\% = 5{,}0 \cdot 0{,}01 = 0{,}050$.
 **Sijoitus:** $E_\text{o} = 0{,}060\,\text{kW} \cdot 4{,}0\,\text{h} = 0{,}24\,\text{kWh}$, joten $E_\text{h} = (1 - 0{,}050) \cdot 0{,}24\,\text{kWh} = 0{,}228\,\text{kWh}$
 **Vastaus:** $0{,}23\,\text{kWh}$, kaksi merkitsevää numeroa kuten annetuissa tiedoissa.
@@ -87,7 +87,7 @@ $$.
 **Annettu:** hyötysuhde $\eta = 25\,\%$ ja hyötyteho $P_\text{a} = 15\,\text{kW}$
 **Kysytty:** häviöteho $P_\text{h}$ kilowatteina
 **Periaate:** Bensiinimoottoriin otettu teho jakautuu hyötytehoon ja häviötehoon, koska energia säilyy: $P_\text{o} = P_\text{a} + P_\text{h}$. Otettu teho saadaan hyötytehosta ja hyötysuhteesta, ja häviöteho on erotus.
-**Kaava:** $P_\text{o} = \dfrac{P_\text{a}}{\eta}$ ja $P_\text{h} = P_\text{o} - P_\text{a}$
+**Kaava:** Energian säilyminen tehoilla $P_\text{o} = P_\text{a} + P_\text{h}$ ja $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, josta $P_\text{o} = \dfrac{P_\text{a}}{\eta}$ ja $P_\text{h} = P_\text{o} - P_\text{a}$
 **Muunnokset:** Prosentti muunnetaan luvuksi sijoittamalla $1\,\% = 0{,}01$: $25\,\% = 0{,}25$. Tehot pysyvät kilowatteina.
 **Sijoitus:** $P_\text{o} = \dfrac{15\,\text{kW}}{0{,}25} = 60\,\text{kW}$, joten $P_\text{h} = 60\,\text{kW} - 15\,\text{kW} = 45\,\text{kW}$
 **Vastaus:** $45\,\text{kW}$, kaksi merkitsevää numeroa kuten annetuissa tiedoissa.
@@ -97,7 +97,7 @@ $$.
 **Annettu:** laite A: $E_\text{o,A} = 200\,\text{J}$ ja $E_\text{a,A} = 150\,\text{J}$; laite B: $E_\text{o,B} = 4{,}0\,\text{kJ}$ ja $E_\text{h,B} = 2{,}0\,\text{kJ}$
 **Kysytty:** hyötysuhteiden suhde $\eta_\text{A} : \eta_\text{B}$ eli kuinka moninkertainen $\eta_\text{A}$ on verrattuna lukuun $\eta_\text{B}$
 **Periaate:** Laitteen A hyötysuhde saadaan suoraan hyötyenergiasta. Laitteelle B annettiin häviöt, joten hyötyenergia saadaan energian säilymisestä: $E_\text{a} = E_\text{o} - E_\text{h}$. Vertailu tehdään jakamalla hyötysuhteet toisillaan.
-**Kaava:** $\eta_\text{A} = \dfrac{E_\text{a,A}}{E_\text{o,A}}$, $\eta_\text{B} = \dfrac{E_\text{o,B} - E_\text{h,B}}{E_\text{o,B}}$ ja vertailuluku $\eta_\text{A} : \eta_\text{B}$
+**Kaava:** Hyötysuhteen määritelmä $\eta = \dfrac{E_\text{a}}{E_\text{o}}$; laitteelle A suoraan $\eta_\text{A} = \dfrac{E_\text{a,A}}{E_\text{o,A}}$; laitteelle B energian säilyminen $E_\text{o,B} = E_\text{a,B} + E_\text{h,B}$, josta $E_\text{a,B} = E_\text{o,B} - E_\text{h,B}$ ja $\eta_\text{B} = \dfrac{E_\text{o,B} - E_\text{h,B}}{E_\text{o,B}}$; vertailuluku $\eta_\text{A} : \eta_\text{B}$
 **Muunnokset:** Hyötysuhteet ovat suhdelukuja, joten yksikkö ei vaikuta niihin, kunhan kummankin laitteen energiat ovat samassa yksikössä. Siksi laitteen B kilojouleja ei tarvitse muuntaa jouleiksi.
 **Sijoitus:** $\eta_\text{A} = \dfrac{150\,\text{J}}{200\,\text{J}} = 0{,}75$ ja $\eta_\text{B} = \dfrac{4{,}0\,\text{kJ} - 2{,}0\,\text{kJ}}{4{,}0\,\text{kJ}} = 0{,}50$, joten $\eta_\text{A} : \eta_\text{B} = 0{,}75 : 0{,}50 = 1{,}5$
 **Vastaus:** $1{,}5$ kertaa, kaksi merkitsevää numeroa kuten annetuissa tiedoissa.
@@ -107,7 +107,7 @@ $$.
 **Annettu:** otettu teho $P_\text{o} = 1{,}2\,\text{kW}$, hyötysuhde $\eta = 20\,\%$ ja tuotettava sähköenergia $E_\text{a} = 0{,}50\,\text{MJ}$
 **Kysytty:** aika $t$ sekunteina
 **Periaate:** Paneelin hyötyteho on hyötysuhteen osuus otetusta tehosta. Tasaisella teholla hyötyenergia on hyötyteho kerrottuna ajalla, joten aika saadaan jakamalla hyötyenergia hyötytehosta.
-**Kaava:** $P_\text{a} = \eta \cdot P_\text{o}$ ja $E_\text{a} = P_\text{a} \cdot t$, josta $t = \dfrac{E_\text{a}}{\eta \cdot P_\text{o}}$
+**Kaava:** Hyötysuhteen määritelmä $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, josta $P_\text{a} = \eta \cdot P_\text{o}$; tasaisella teholla $E_\text{a} = P_\text{a} \cdot t$, josta $t = \dfrac{E_\text{a}}{P_\text{a}} = \dfrac{E_\text{a}}{\eta \cdot P_\text{o}}$
 **Muunnokset:** $1{,}2\,\text{kW} = 1{,}2 \cdot 1000\,\text{W} = 1200\,\text{W}$, $0{,}50\,\text{MJ} = 0{,}50 \cdot 10^{6}\,\text{J} = 500\,000\,\text{J}$ ja $20\,\% = 20 \cdot 0{,}01 = 0{,}20$.
 **Sijoitus:** $t = \dfrac{500\,000\,\text{J}}{0{,}20 \cdot 1200\,\text{W}} = \dfrac{500\,000\,\text{J}}{240\,\text{W}} = 2083\,\text{s}$
 **Vastaus:** $2083\,\text{s}$ eli noin $2{,}1 \cdot 10^{3}\,\text{s}$, kaksi merkitsevää numeroa kuten annetuissa tiedoissa.
@@ -123,7 +123,7 @@ $$, ja viisinkertainen aika vastaa hyötysuhdetta $20\,\%$.
 **Kysytty:** häviöiksi muuttuva energia $E_\text{h}$ jouleina
 **Periaate:** Mittakaavaan piirretyssä energiavirtakuviossa nuolen paksuus on verrannollinen energiaan. Yksi ruutu vastaa siis aina samaa energiaa, ja tulevan nuolen paksuus ja energia kertovat, kuinka paljon. Energia säilyy, joten lähtevien nuolten paksuudet ovat yhteensä tulevan nuolen paksuus.
 **Kuvaajan lukeminen:** Tuleva nuoli ulottuu ylhäältä alas kahdeksan ruudun yli. Vihreä hyötyenergian nuoli on oikeassa reunassa kahden ruudun paksuinen ja oranssi häviöiden nuoli kuuden ruudun paksuinen; paksuus luetaan nuolen suorasta osasta ennen kärkeä. Tarkistus: $2 + 6 = 8$ ruutua.
-**Kaava:** $\dfrac{E_\text{h}}{E_\text{o}} = \dfrac{d_\text{h}}{d_\text{o}}$, joten $E_\text{h} = \dfrac{d_\text{h}}{d_\text{o}} \cdot E_\text{o}$
+**Kaava:** Nuolen paksuus on verrannollinen energiaan, joten $\dfrac{E_\text{h}}{E_\text{o}} = \dfrac{d_\text{h}}{d_\text{o}}$, josta $E_\text{h} = \dfrac{d_\text{h}}{d_\text{o}} \cdot E_\text{o}$
 **Muunnokset:** Ei tarvita: paksuudet ovat samassa yksikössä (ruutuina), joten ne supistuvat, ja energia on jouleina.
 **Sijoitus:** $E_\text{h} = \dfrac{6}{8} \cdot 240\,\text{J} = 0{,}75 \cdot 240\,\text{J} = 180\,\text{J}$
 **Vastaus:** $180\,\text{J}$ eli $1{,}8 \cdot 10^{2}\,\text{J}$, kaksi merkitsevää numeroa kuten tulevassa energiassa $240\,\text{J}$.
@@ -141,7 +141,7 @@ Hyötysuhde on enintään $100\,\%$. Todellisissa laitteissa se jää usein alle
 **Annettu:** otettu energia $E_\text{o} = 36\,\text{kJ}$ ja hyötyenergia (liike-energia) $E_\text{a} = 27\,\text{kJ}$
 **Kysytty:** häviöiksi muuttuva energia $E_\text{h}$ kilojouleina
 **Periaate:** Energia säilyy, joten laitteeseen otettu energia jakautuu hyötyenergiaan ja häviöihin. Häviöt saadaan vähentämällä hyötyenergia otetusta energiasta.
-**Kaava:** $E_\text{o} = E_\text{a} + E_\text{h}$, josta $E_\text{h} = E_\text{o} - E_\text{a}$
+**Kaava:** Energian säilyminen $E_\text{o} = E_\text{a} + E_\text{h}$, josta $E_\text{h} = E_\text{o} - E_\text{a}$
 **Muunnokset:** Ei tarvita: molemmat energiat ovat kilojouleina.
 **Sijoitus:** $E_\text{h} = 36\,\text{kJ} - 27\,\text{kJ} = 9{,}0\,\text{kJ}$
 **Vastaus:** $9{,}0\,\text{kJ}$, kaksi merkitsevää numeroa kuten annetuissa energioissa.
@@ -151,7 +151,7 @@ Hyötysuhde on enintään $100\,\%$. Todellisissa laitteissa se jää usein alle
 **Annettu:** hyötysuhde $\eta = 90\,\%$ ja hyötyteho (sähköteho) $P_\text{a} = 180\,\text{kW}$
 **Kysytty:** generaattorin turbiinilta ottama teho $P_\text{o}$ kilowatteina
 **Periaate:** Hyötyteho on hyötysuhteen osuus otetusta tehosta. Otettu teho on siis suurempi kuin hyötyteho, ja se saadaan jakamalla hyötyteho hyötysuhteella.
-**Kaava:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, josta $P_\text{o} = \dfrac{P_\text{a}}{\eta}$
+**Kaava:** Hyötysuhteen määritelmä $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, josta $P_\text{o} = \dfrac{P_\text{a}}{\eta}$
 **Muunnokset:** Prosentti muunnetaan luvuksi sijoittamalla $1\,\% = 0{,}01$: $90\,\% = 90 \cdot 0{,}01 = 0{,}90$. Tehoa ei tarvitse muuntaa, koska vastaus pyydetään kilowatteina.
 **Sijoitus:** $P_\text{o} = \dfrac{180\,\text{kW}}{0{,}90} = 200\,\text{kW}$
 **Vastaus:** $200\,\text{kW}$ eli $2{,}0 \cdot 10^{2}\,\text{kW}$, kaksi merkitsevää numeroa kuten hyötysuhteessa $90\,\%$.
@@ -166,7 +166,7 @@ $$ eli $10\,\%$ otetusta.
 **Annettu:** taulukosta lamppujen otettu teho $P_\text{o}$ ja valoteho $P_\text{a}$: hehkulamppu $60\,\text{W}$ ja $3{,}0\,\text{W}$, halogeenilamppu $40\,\text{W}$ ja $2{,}8\,\text{W}$, loistelamppu $18\,\text{W}$ ja $3{,}6\,\text{W}$, ledilamppu $9{,}0\,\text{W}$ ja $2{,}7\,\text{W}$
 **Kysytty:** ledilampun hyötysuhteen ja halogeenilampun hyötysuhteen suhde, kuinka moninkertainen ledin hyötysuhde on
 **Periaate:** Lamput käyvät tasaisella teholla, joten hyötysuhde on hyötytehon ja otetun tehon suhde. Se lasketaan jokaiselle lampulle erikseen, ja vertailu tehdään jakamalla ledin hyötysuhde halogeenilampun hyötysuhteella.
-**Kaava:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$
+**Kaava:** Hyötysuhteen määritelmä $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, joka lasketaan jokaiselle lampulle erikseen; ratkaistavaa ei tarvitse sieventää
 **Muunnokset:** Ei tarvita: kaikki tehot ovat watteina, joten yksiköt supistuvat. Hyötysuhteet lasketaan suhdelukuina, ja prosentteihin siirrytään sijoittamalla $1 = 100\,\%$.
 **Sijoitus:** Hehkulamppu $\eta = \dfrac{3{,}0\,\text{W}}{60\,\text{W}} = 0{,}050 = 5{,}0\,\%$, halogeenilamppu $\eta = \dfrac{2{,}8\,\text{W}}{40\,\text{W}} = 0{,}070 = 7{,}0\,\%$, loistelamppu $\eta = \dfrac{3{,}6\,\text{W}}{18\,\text{W}} = 0{,}20 = 20\,\%$ ja ledilamppu $\eta = \dfrac{2{,}7\,\text{W}}{9{,}0\,\text{W}} = 0{,}30 = 30\,\%$. Ledin ja halogeenilampun suhde on $\dfrac{0{,}30}{0{,}070} = 4{,}3$.
 **Vastaus:** Ledilampun hyötysuhde on noin $4{,}3$ kertaa halogeenilampun hyötysuhde. Tulos on annettu kahdella merkitsevällä numerolla kuten taulukon arvot.
@@ -182,7 +182,7 @@ Huomaa, että eniten valoa antaa loistelamppu ($3{,}6\,\text{W}$), mutta se ei o
 **Periaate:** Hyötysuhde on hyötyenergian osuus otetusta energiasta. Energiat on mitattu alusta asti (kohdassa $t = 0$ kumpikin on nolla), joten jokaiselta riviltä saadaan hyötysuhde suoraan.
 
 Tasaisesti käyvän moottorin hyötysuhde ei riipu siitä, kuinka pitkää jaksoa tarkastellaan, joten rivien arvot ovat samat mittaustarkkuuden rajoissa ja koko jakson rivi antaa tuloksen.
-**Kaava:** $\eta = \dfrac{E_\text{a}}{E_\text{o}}$
+**Kaava:** Hyötysuhteen määritelmä $\eta = \dfrac{E_\text{a}}{E_\text{o}}$; kysytty $\eta$ on jo yksin, joten sieventämistä ei tarvita
 **Muunnokset:** Ei tarvita: molemmat energiat ovat kilojouleina, joten yksiköt supistuvat. Prosentiksi muunnetaan sijoittamalla $1 = 100\,\%$.
 **Sijoitus:** Rivit: $\dfrac{24\,\text{kJ}}{30\,\text{kJ}} = 0{,}80$, $\dfrac{48\,\text{kJ}}{61\,\text{kJ}} = 0{,}79$, $\dfrac{71\,\text{kJ}}{89\,\text{kJ}} = 0{,}80$ ja $\dfrac{95\,\text{kJ}}{120\,\text{kJ}} = 0{,}792$. Kaikki ovat noin $0{,}79$–$0{,}80$, ja koko jakson rivistä $\eta = 0{,}792 \cdot 100\,\% = 79\,\%$.
 **Vastaus:** Moottorin hyötysuhde on noin $79\,\%$, kaksi merkitsevää numeroa. Mittauspisteissä on pientä hajontaa, joten tarkempi luku olisi harhaanjohtava.
@@ -206,7 +206,7 @@ A:n häviöteho on $2{,}0\,\text{kW} - 1{,}5\,\text{kW} = 0{,}5\,\text{kW}$ ja B
 &= 3{,}6\,\text{MJ}
 \end{aligned}
 $$. Hyötyenergia on hyötysuhde kerrottuna otetulla energialla. Energia säilyy: otettu energia on hyötyä ja häviöitä (lämpöä).
-**Kaava:** $E_\text{b} = V \cdot h$, $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, josta $E_\text{a} = \eta \cdot E_\text{o}$, ja vertailu $\dfrac{E_\text{b}}{E_\text{s}}$
+**Kaava:** Polttoaineen energia $E_\text{b} = V \cdot h$; hyötysuhteen määritelmä $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, josta $E_\text{a} = \eta \cdot E_\text{o}$; vertailu $\dfrac{E_\text{b}}{E_\text{s}}$
 **Muunnokset:** $$
 \begin{aligned}
 1\,\text{kWh} &= 1000\,\text{W} \cdot 3600\,\text{s} \\
@@ -228,7 +228,7 @@ Ero otetussa energiassa johtuu hyötysuhteesta: sähköauto hyödyntää $90\,\%
 
 Energia säilyy, joten $E_\text{o} = E_\text{a} + E_\text{h}$. Teho on $P = E : t$, vuoden energia on teho kerrottuna käyttöajalla, ja lämmön osuus siitä on häviöiden osuus otetusta energiasta.
 **Kuvaajan lukeminen:** Rivien $E_\text{o} : t$ on joka rivillä sama, $540\,\text{J} : 60\,\text{s} = 9{,}0\,\text{W}$, joten otettu teho on $9{,}0\,\text{W}$. Häviön osuus on joka rivillä noin $0{,}70$.
-**Kaava:** $E_\text{a} = E_\text{o} - E_\text{h}$, $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, $P = \dfrac{E}{t}$, $E_\text{o,v} = P \cdot t_\text{v}$ ja $E_\text{h,v} = \dfrac{E_\text{h}}{E_\text{o}} \cdot E_\text{o,v}$
+**Kaava:** Energian säilyminen $E_\text{o} = E_\text{a} + E_\text{h}$, josta $E_\text{a} = E_\text{o} - E_\text{h}$; hyötysuhteen määritelmä $\eta = \dfrac{E_\text{a}}{E_\text{o}}$; teho $P = \dfrac{E}{t}$, josta $E_\text{o,v} = P \cdot t_\text{v}$; lämmön osuus on sama kuin joka rivillä, joten $E_\text{h,v} = \dfrac{E_\text{h}}{E_\text{o}} \cdot E_\text{o,v}$
 **Muunnokset:** Vuoden käyttöaika $t_\text{v} = 3{,}0\,\text{h} \cdot 365 = 1095\,\text{h}$. Teho $9{,}0\,\text{W} = 0{,}0090\,\text{kW}$.
 **Sijoitus:** Oppilaan virhe: hän jakoi häviöenergian otetulla energialla, joten $0{,}70$ on häviöiden osuus eikä hyötysuhde. Valoenergia on $E_\text{a} = 2160\,\text{J} - 1510\,\text{J} = 650\,\text{J}$, ja $\eta = \dfrac{650\,\text{J}}{2160\,\text{J}} = 0{,}301 = 30\,\%$.
 Vuodessa lamppu ottaa energian $E_\text{o,v} = 0{,}0090\,\text{kW} \cdot 1095\,\text{h} = 9{,}855\,\text{kWh}$. Siitä lämmöksi muuttuu osuus $\dfrac{1510}{2160} = 0{,}699$, eli $E_\text{h,v} = 0{,}699 \cdot 9{,}855\,\text{kWh} = 6{,}89\,\text{kWh}$. Hinta on $$
@@ -276,7 +276,7 @@ Tarkistus: hyötysuhde $167\,\%$ olisi yli $100\,\%$, ja oikea tulos sopii rivii
 **Annettu:** polttoöljyn massa $m = 2{,}5\,\text{kg}$ ja hyötyenergia $E_\text{a} = 80\,\text{MJ}$; taulukosta (MAFY-taulukko, polttoaineiden lämpöarvot, polttoöljy, kevyt) $H = 40{,}6\,\text{MJ/kg}$
 **Kysytty:** hyötysuhde $\eta$ prosentteina
 **Periaate:** Hyötysuhde on hyötyenergian osuus laitteeseen otetusta energiasta. Otettu energia on polttoaineen palamisessa vapautuva kemiallinen energia, joka saadaan lämpöarvosta ja massasta.
-**Kaava:** $E_\text{o} = Hm$ ja $\eta = \dfrac{E_\text{a}}{E_\text{o}}$
+**Kaava:** Palamisen energia $E_\text{o} = Hm$; hyötysuhteen määritelmä $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, joka on jo ratkaistu kysyttyyn muotoon
 **Muunnokset:** Kaikki energiat ovat megajouleina, joten muunnoksia ei tarvita. Prosentteina $\eta \cdot 100\,\%$.
 **Sijoitus:** $E_\text{o} = 40{,}6\,\dfrac{\text{MJ}}{\text{kg}} \cdot 2{,}5\,\text{kg} = 101{,}5\,\text{MJ}$ ja $\eta = \dfrac{80\,\text{MJ}}{101{,}5\,\text{MJ}} = 0{,}788 = 78{,}8\,\%$
 **Vastaus:** Kattilan hyötysuhde on noin $79\,\%$. Lämpöarvo $H = 40{,}6\,\text{MJ/kg}$ on MAFY-taulukosta (polttoaineiden lämpöarvot, kevyt polttoöljy); tehtävässä käytetään tätä MAFY-arvoa, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.

@@ -1,15 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 58568037df090f6a
+CONTENT-HASH: eaa8e53380b1d3b8
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-voimat (fi-easy): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-(none)
-
-## Polish
-- [Minor] sovella/solutions.md s5 a) — the break leaves the sentence on measurement 5 as a lone paragraph between the Periaate and Kaava lines; optionally keep it inside Periaate. Not needed.
-
-## Checked
-- Diff origin/main...HEAD for fi-easy (word-level): only blank-line paragraph breaks in sovella/solutions.md and the inquiry.json model field; words, maths, figures unchanged.
-- Every new break falls at a sentence boundary outside inline/display maths (before a voimakuvio fence, after a closing $$, between equilibrium and changed-situation parts); no split chain; paragraphs under about 120 words.
-- Read the previous Sovella visual report (PASS) as evidence.
-- Opened captures: fi-easy/review/shots/fy9-voimat-stage-sovella-390-5.png (fi) and en/.../sovella-1280-3.png (en), the same page structure for all languages: tasks, hints, Näytä ratkaisu cards readable, nothing clipped, no horizontal overflow.
-- Gap: I did not open the captures of the opened model solutions with the new breaks specifically in fi-easy; the captures seen show the closed/just-opened solution start. Figures unchanged and not re-inspected.
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.

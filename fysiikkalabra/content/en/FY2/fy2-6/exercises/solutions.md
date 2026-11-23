@@ -39,7 +39,7 @@ $$, and $2880 : 3 = 960$.
 **Find:** the combined share of wind power and solar power in electricity production, as a percentage
 **Principle:** The power of wind and solar power depends on the weather, so they are weather-dependent ways of producing electricity. Their combined production is the sum of two bars, and the share is found by dividing it by the total production.
 **Reading the graph:** At the end of the wind power bar there is the number $20.2$ and at the end of the short solar power bar $0.9$. The unit of the horizontal axis is $\text{TWh}$, so $E_\text{wind} = 20.2\,\text{TWh}$ and $E_\text{solar} = 0.9\,\text{TWh}$.
-**Formula:** $\text{share} = \dfrac{E_\text{wind} + E_\text{solar}}{E_\text{tot}}$
+**Formula:** $\text{share} = \dfrac{E_\text{part}}{E_\text{tot}}$, where $E_\text{part} = E_\text{wind} + E_\text{solar}$, so $\text{share} = \dfrac{E_\text{wind} + E_\text{solar}}{E_\text{tot}}$
 **Conversions:** Not needed: all the energies are in terawatt-hours, so the unit cancels. As a percentage, $1 = 100\,\%$.
 **Substitution:** $\text{share} = \dfrac{20.2\,\text{TWh} + 0.9\,\text{TWh}}{79.9\,\text{TWh}} = \dfrac{21.1\,\text{TWh}}{79.9\,\text{TWh}} = 0.2641 = 26.41\,\%$
 **Answer:** $26.4\,\%$, three significant figures like the energies $21.1\,\text{TWh}$ and $79.9\,\text{TWh}$.
@@ -113,9 +113,9 @@ This is wrong because the wind does not blow all the time, so the energy is calc
 **Given:** rated power $P_\text{nom} = 25\,\text{MW}$, average power $32\,\%$ of the rated power, time $t = 8760\,\text{h}$
 **Find:** the energy $E$ produced in a year, in gigawatt-hours
 **Principle:** The power of a wind farm varies, but the annual energy is the same as if the farm ran at its average power all year. The average power is the given share of the rated power, and the energy is the average power multiplied by time.
-**Formula:** $P_\text{avg} = 0.32 \cdot P_\text{nom}$ and $E = P_\text{avg}\, t$
+**Formula:** $E = P_\text{avg}\, t$, where $P_\text{avg} = 0.32 \cdot P_\text{nom}$, so $E = 0.32 \cdot P_\text{nom}\, t$
 **Conversions:** $32\,\% = 0.32$. Finally megawatt-hours to gigawatt-hours: $70\,080\,\text{MWh} = 70.08 \cdot 1000\,\text{MWh} = 70.08\,\text{GWh}$.
-**Substitution:** $P_\text{avg} = 0.32 \cdot 25\,\text{MW} = 8.0\,\text{MW}$ and $E = 8.0\,\text{MW} \cdot 8760\,\text{h} = 70\,080\,\text{MWh} = 70.08\,\text{GWh}$
+**Substitution:** $E = 0.32 \cdot 25\,\text{MW} \cdot 8760\,\text{h} = 8.0\,\text{MW} \cdot 8760\,\text{h} = 70\,080\,\text{MWh} = 70.08\,\text{GWh}$
 **Answer:** $70\,\text{GWh}$, two significant figures like the rated power $25\,\text{MW}$ and the share $32\,\%$.
 **Reasonableness:** At full power the farm would produce $25\,\text{MW} \cdot 8760\,\text{h} = 219\,000\,\text{MWh} \approx 220\,\text{GWh}$, and about a third of that is about $70\,\text{GWh}$. The result is smaller than the energy at rated power, because the wind varies.
 
@@ -145,7 +145,7 @@ $$. The number is in the thousands, because one wind turbine produces in a year 
 **Given:** power $P = 1.6\,\text{GW}$, time $t = 8760\,\text{h}$, consumption of one household $5000\,\text{kWh}$
 **Find:** the number of households, in millions
 **Principle:** First the annual energy of the plant is calculated with the formula $E = P t$, because the power is constant. Then the energy is divided by the consumption of one household.
-**Formula:** $N = \dfrac{P t}{E_\text{home}}$
+**Formula:** $E = P t$ and $E = N E_\text{home}$, so $N = \dfrac{E}{E_\text{home}} = \dfrac{P t}{E_\text{home}}$
 **Conversions:** $1.6\,\text{GW} = 1.6 \cdot 10^{6}\,\text{kW}$, so the product with an hour is in kilowatt-hours.
 **Substitution:** $$
 \begin{aligned}
@@ -163,7 +163,7 @@ $$
 **Given:** wind power $E_1 = 1.5\,\text{TWh}$ and $E_2 = 20.0\,\text{TWh}$; the other energies of the table for the first and the second year
 **Find:** the share of wind power in the total production for both years and the change in the share in percentage points; the production method whose energy decreased the most
 **Principle:** The share is the energy of the source divided by the total energy, so the total production is calculated first by addition. The change in the share is the share of the second year minus the share of the first year.
-**Formula:** $o = \dfrac{E_\text{wind}}{E_\text{tot}}$ and $\Delta o = o_2 - o_1$
+**Formula:** $o = \dfrac{E_\text{wind}}{E_\text{tot}}$, where $E_\text{tot}$ is the sum of the energies of all production methods, and $\Delta o = o_2 - o_1$
 **Conversions:** Not needed: all the energies are in terawatt-hours. The share is changed into a percentage by multiplying by one hundred.
 **Substitution:** The total production is in the first year $$
 \begin{aligned}
@@ -212,7 +212,7 @@ $$. The energy of wind power grew to about $20.0 : 1.5 \approx 13$ times, so a g
 **Given:** farms A $30\,\text{MW}$, $84\,\text{GWh}$; B $60\,\text{MW}$, $150\,\text{GWh}$; C $12\,\text{MW}$, $35\,\text{GWh}$; year $8760\,\text{h}$
 **Find:** the share of the average power of the rated power for each farm, and whether the student's claim is correct
 **Principle:** The average power is the annual energy divided by the number of hours in a year, $P_\text{avg} = E : t$. Its share of the rated power tells how well the rated power is used. The annual energy also depends on the size of the rated power, so the greatest annual energy does not tell the share.
-**Formula:** $P_\text{avg} = \dfrac{E}{t}$ and $o = \dfrac{P_\text{avg}}{P_\text{rated}}$
+**Formula:** $E = P_\text{avg}\, t$, so $P_\text{avg} = \dfrac{E}{t}$, and $o = \dfrac{P_\text{avg}}{P_\text{rated}}$
 **Conversions:** $E_\text{A} = 84\,\text{GWh} = 84\,000\,\text{MWh}$, $E_\text{B} = 150\,000\,\text{MWh}$ and $E_\text{C} = 35\,000\,\text{MWh}$.
 **Substitution:** $P_\text{avg} = E : t$ and $o = P_\text{avg} : P_\text{rated}$
 ```latex
@@ -235,7 +235,7 @@ o_\text{C} &= 4.0\,\text{MW} : 12\,\text{MW} = 0.33
 **Given:** emission factors coal $820\,\text{g/kWh}$ and wind power $12\,\text{g/kWh}$, the city's electricity $E = 2.0\,\text{TWh}$ per year
 **Find:** the emission saved, in carbon dioxide equivalent, from the life-cycle emissions that belong to one year's electricity production, in millions of tonnes, when coal is replaced by wind power; the best choice
 **Principle:** The emission is the emission factor multiplied by the energy produced. The saving is the difference between the emissions of coal and wind power, because the energy is the same in both.
-**Formula:** $\Delta m = (k_\text{coal} - k_\text{wind})\, E$
+**Formula:** $m = kE$, so $\Delta m = m_\text{coal} - m_\text{wind} = k_\text{coal} E - k_\text{wind} E = (k_\text{coal} - k_\text{wind})\, E$
 **Conversions:** $2.0\,\text{TWh} = 2.0 \cdot 10^{9}\,\text{kWh}$. Finally grams into tonnes: $1.616 \cdot 10^{12}\,\text{g} = 1.616 \cdot 10^{12} : 10^{6}\,\text{t} = 1.616 \cdot 10^{6}\,\text{t}$.
 **Substitution:** $$
 \begin{aligned}
@@ -258,7 +258,7 @@ The table does not tell the controllability of power, the costs, the weather dep
 **Given:** consumption $11\,\text{GW}$, nuclear power $3.5\,\text{GW}$, rated power of wind power $9.0\,\text{GW}$ and actual power $4.0\,\%$ of it
 **Find:** the power $P_\text{other}$ that other power plants and imports must produce, in gigawatts
 **Principle:** In the electricity grid, production and consumption must be equal at every moment, so the missing power is the consumption minus the power of weather-dependent and steady production.
-**Formula:** $$ \begin{aligned} P_\text{other} &= P_\text{cons} - P_\text{nuc} \\ &- 0.040 \cdot P_\text{wind,nom} \end{aligned} $$
+**Formula:** $P_\text{cons} = P_\text{nuc} + P_\text{wind} + P_\text{other}$ and $P_\text{wind} = 0.040 \cdot P_\text{wind,nom}$, so $$ \begin{aligned} P_\text{other} &= P_\text{cons} - P_\text{nuc} \\ &- 0.040 \cdot P_\text{wind,nom} \end{aligned} $$
 **Conversions:** Not needed: all powers are in gigawatts. The percentage is $4.0\,\% = 0.040$.
 **Substitution:** $$
 \begin{aligned}
@@ -276,9 +276,9 @@ $$
 **Given:** rated power $600\,\text{MW}$ for both, average power of the wind farm $33\,\%$ and of the nuclear power plant $90\,\%$ of the rated power
 **Find:** the ratio of the annual energies $E_\text{nuc} : E_\text{wind}$
 **Principle:** The annual energy of each is the average power times the same length of year, $E = P_\text{avg} t$. The rated power and the time are the same, so the ratio depends only on the shares of the average powers.
-**Formula:** $\dfrac{E_\text{nuc}}{E_\text{wind}} = \dfrac{0.90 \cdot 600\,\text{MW} \cdot t}{0.33 \cdot 600\,\text{MW} \cdot t}$
+**Formula:** $E = P_\text{avg}\, t$ and $P_\text{avg} = o\, P_\text{rated}$, so $E = o\, P_\text{rated}\, t$ and $\dfrac{E_\text{nuc}}{E_\text{wind}} = \dfrac{o_\text{nuc} P_\text{rated}\, t}{o_\text{wind} P_\text{rated}\, t} = \dfrac{o_\text{nuc}}{o_\text{wind}}$
 **Conversions:** Not needed: the rated power and the time cancel.
-**Substitution:** $\dfrac{E_\text{nuc}}{E_\text{wind}} = 0.90 : 0.33 = 2.727$
+**Substitution:** $\dfrac{E_\text{nuc}}{E_\text{wind}} = \dfrac{0.90}{0.33} = 2.727$
 **Answer:** $2.7$ times, two significant figures like the shares $0.90$ and $0.33$.
 **Reasonableness:** Check with the annual energies: nuclear power $$
 \begin{aligned}
@@ -296,7 +296,7 @@ $$, and $4.7 : 1.7 \approx 2.8$. The same rated power does not mean the same ann
 **Given:** rated power of Olkiluoto 3 $P_\text{O} = 1600\,\text{MW}$ and average power $90\,\%$ of it, average power of the solar park $11\,\%$ of its rated power, the same time $t$ (a year) for both
 **Find:** the rated power $P_\text{a}$ of the solar park in gigawatts, and whether the park would replace Olkiluoto 3 on a January evening
 **Principle:** The annual energy is the average power multiplied by time, $E = P_\text{avg} t$, and the average power is the given share $o$ of the rated power. The time is the same year for both, so the annual energies are equal when the average powers are equal.
-**Formula:** $o_\text{a} P_\text{a}\, t = o_\text{O} P_\text{O}\, t$, so $P_\text{a} = \dfrac{o_\text{O} P_\text{O}}{o_\text{a}}$
+**Formula:** $E = P_\text{avg}\, t$ and $P_\text{avg} = o\, P_\text{rated}$, so $E = o\, P_\text{rated}\, t$. The annual energies are equal: $o_\text{a} P_\text{a}\, t = o_\text{O} P_\text{O}\, t$, so $P_\text{a} = \dfrac{o_\text{O} P_\text{O}}{o_\text{a}}$
 **Conversions:** $o_\text{O} = 90\,\% = 0.90$ and $o_\text{a} = 11\,\% = 0.11$. Finally megawatts to gigawatts: $13\,091\,\text{MW} = 13.091 \cdot 1000\,\text{MW} = 13.1\,\text{GW}$.
 **Substitution:** $P_\text{a} = 0.90 \cdot 1600\,\text{MW} : 0.11 = 1440\,\text{MW} : 0.11 = 13\,091\,\text{MW} = 13.1\,\text{GW}$
 **Answer:** $13\,\text{GW}$, two significant figures like the shares $11\,\%$ and $90\,\%$.
@@ -310,7 +310,7 @@ The same annual energy therefore does not mean that one power plant replaces ano
 **Given:** rated power of wind power $P_\text{rated} = 9.0\,\text{GW}$, nuclear power $P_\text{nuclear} = 3.5\,\text{GW}$ for the whole week, the daily $P_\text{wind}$ and $P_\text{consumption}$ from the table, week $168\,\text{h}$
 **Find:** a) the weekly energy of wind power and its average power as a share of the rated power; b) the daily power of other power plants and imports, and its greatest value; c) what the variation requires of the system
 **Principle:** In the grid, production must match consumption at every moment, so the others must produce the consumption minus nuclear and wind power. The weekly energy of wind power is the sum of the daily powers multiplied by the length of a day, because on each day the power is constant on average.
-**Formula:** $E_\text{wind} = \left(\sum P_\text{wind}\right) \Delta t_\text{day}$, $P_\text{avg} = \dfrac{E_\text{wind}}{\Delta t_\text{week}}$ and $$ \begin{aligned} P_\text{other} &= P_\text{consumption} \\ &- P_\text{nuclear} - P_\text{wind} \end{aligned} $$
+**Formula:** $E = P t$ on each day, so $E_\text{wind} = \left(\sum P_\text{wind}\right) \Delta t_\text{day}$. The average power is $P_\text{avg} = \dfrac{E_\text{wind}}{\Delta t_\text{week}}$. The powers balance: $$ \begin{aligned} P_\text{consumption} &= P_\text{nuclear} + P_\text{wind} \\ &+ P_\text{other} \end{aligned} $$ so $$ \begin{aligned} P_\text{other} &= P_\text{consumption} \\ &- P_\text{nuclear} - P_\text{wind} \end{aligned} $$
 **Conversions:** Not needed: the powers are in gigawatts and the energy is calculated in gigawatt-hours. A week has $7 \cdot 24\,\text{h} = 168\,\text{h}$.
 **Substitution:** a) The sum of the daily powers of wind power is $$
 \begin{aligned}
@@ -374,7 +374,7 @@ Wind power covers only $490 : 1615 = 0.30$, that is, $30\,\%$ of the weekly cons
 **Principle:** The annual energy is the average power multiplied by the length of a year, and the average power is a share of the rated power. The energy over the lifetime is the annual energy multiplied by the lifetime.
 
 The cost per energy is the construction cost divided by the energy over the lifetime. The emission is the emission factor multiplied by the energy.
-**Formula:** $E_\text{y} = o\, P_\text{rated}\, t$, $E_\text{tot} = E_\text{y} \cdot a$ and $k = \dfrac{K}{E_\text{tot}}$
+**Formula:** $E = P_\text{avg}\, t$ and $P_\text{avg} = o\, P_\text{rated}$, so $E_\text{y} = o\, P_\text{rated}\, t$. The energy over the lifetime is $E_\text{tot} = E_\text{y} \cdot a$, the cost per energy $k = \dfrac{K}{E_\text{tot}}$ and the emission $m = \text{emission factor} \cdot E$
 **Conversions:** $$
 \begin{aligned}
 &120\,\text{million euros} \\

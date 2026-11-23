@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d04a985fcecab796
+CONTENT-HASH: 9fc26be04f2f21d9
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-magnetismi-valo (fi): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-(none)
-
-## Polish
-- [Minor] Sovella s7 solution, "Annettu": "400–700 nm" can break after the en dash at 390 px; keep it in one non-breaking math group (optional, carried from the Sovella report).
-
-## Checked
-- Language fi. Read the diff (origin/main...HEAD) of sovella/solutions.md and inquiry.json: only paragraph breaks in solution fields; words, maths and figures unchanged.
-- Read the earlier Sovella visual report (PASS) as evidence.
-- Opened review/shots/contact-15.png (open solutions and model answers) at contact-sheet resolution: split paragraphs render as separate blocks inside the cards, no clipped formulas or overflow visible. No full-size captures opened; fine spacing judged only at contact-sheet scale.
-- Hash re-run at the end: d04a985fcecab796 (unchanged).
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.

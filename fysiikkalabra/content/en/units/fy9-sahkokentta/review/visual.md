@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 4b533cac1121c16c
+CONTENT-HASH: 8c7ea1ab4bdf3bf2
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-sahkokentta (en): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-(none)
-
-## Polish
-(none)
-
-## Checked
-- Delta since last PASS read: `git diff origin/main...HEAD` for en, only `sovella/solutions.md` (86 insertions, 14 deletions): long solution paragraphs split at blank lines. Words, maths, figures unchanged; same cut as the Finnish text.
-- Opened capture: `fy9-sahkokentta-stage-sovella-1280-5.png` (opened solution: Given, Find, Principle, Formula, Conversions, Substitution, Answer): aligned maths, boxes and spacing intact, no clipping. Also relied on the Finnish capture `sovella-1280-3`, which has the same layout.
-- Not opened: the exact captures of the newly split Mallivastaus paragraphs; the previous reviewer's `sovella/review/visual.md` (PASS) is relied on for those.
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.

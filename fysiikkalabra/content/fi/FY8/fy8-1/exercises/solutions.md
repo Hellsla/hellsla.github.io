@@ -2,7 +2,12 @@
 **Annettu:** aallonpituus $\lambda = 532\,\text{nm}$, Planckin vakio $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, valon nopeus $c = 2{,}998 \cdot 10^8\,\text{m/s}$
 **Kysytty:** yhden fotonin energia $E$ jouleina
 **Periaate:** Valon energia on kvantittunut fotoneiksi, ja yhden fotonin energia riippuu vain valon taajuudesta: $E = hf$. Koska tunnetaan aallonpituus, taajuus lausutaan aaltoliikkeen perusyhtälöstä $c = f\lambda$.
-**Kaava:** $E = hf$ ja $f = \dfrac{c}{\lambda}$, joten $E = \dfrac{hc}{\lambda}$
+**Kaava:** $$\begin{aligned} E &= hf \\
+c &= f\lambda \\
+f &= \dfrac{c}{\lambda} \\
+E &= h\dfrac{c}{\lambda} = \dfrac{hc}{\lambda}
+\end{aligned}
+$$
 **Muunnokset:** $\lambda = 532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$
 **Sijoitus:** $$
 \begin{aligned}
@@ -44,7 +49,12 @@ $$. Näkyvän valon fotonien energiat ovat noin $1{,}8$–$3{,}1\,\text{eV}$, ja
 **Annettu:** aallonpituus $\lambda = 254\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** yhden fotonin energia $E$ elektronivoltteina
 **Periaate:** Fotonin energia on $E = hf$, ja taajuus saadaan aallonpituudesta, koska säteily etenee valon nopeudella: $f = \tfrac{c}{\lambda}$. Tulos jouleina muunnetaan lopuksi elektronivolteiksi.
-**Kaava:** $E = \dfrac{hc}{\lambda}$
+**Kaava:** $$\begin{aligned} E &= hf \\
+c &= f\lambda \\
+f &= \dfrac{c}{\lambda} \\
+E &= h\dfrac{c}{\lambda} = \dfrac{hc}{\lambda}
+\end{aligned}
+$$
 **Muunnokset:** $\lambda = 254\,\text{nm} = 254 \cdot 10^{-9}\,\text{m}$; energia jouleista elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
 **Sijoitus:** $$
 \begin{aligned}
@@ -77,7 +87,12 @@ Elektroni ei voi koota energiaa useammasta fotonista, ja siksi suurempi fotonien
 **Annettu:** kaliumin irrotustyö $W = 2{,}30\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$, punaisen valon aallonpituus $650\,\text{nm}$
 **Kysytty:** a) rajataajuus $f_0$ hertseinä, b) raja-aallonpituus $\lambda_0$ ja se, irrottaako $650\,\text{nm}$:n valo elektroneja
 **Periaate:** Elektroni irtoaa vain, jos fotonin energia on vähintään irrotustyön suuruinen. Rajataajuudella $hf_0 = W$ ja liike-energia on nolla. Aallonpituus saadaan taajuudesta yhtälöllä $c = f\lambda$, ja suurempaa aallonpituutta vastaa pienempi fotonin energia.
-**Kaava:** a) $hf_0 = W$, joten $f_0 = \dfrac{W}{h}$; b) $\lambda_0 = \dfrac{c}{f_0}$
+**Kaava:** $$\begin{aligned} \text{a)}\ hf_0 &= W \\
+f_0 &= \dfrac{W}{h} \\
+\text{b)}\ c &= f_0\lambda_0 \\
+\lambda_0 &= \dfrac{c}{f_0}
+\end{aligned}
+$$
 **Muunnokset:** $W = 2{,}30\,\text{eV} = 2{,}30 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}685 \cdot 10^{-19}\,\text{J}$; $1\,\text{m} = 10^{9}\,\text{nm}$
 **Sijoitus:** a) $f_0 = \dfrac{3{,}685 \cdot 10^{-19}\,\text{J}}{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}} = 5{,}561 \cdot 10^{14}\,\text{Hz}$; b) $\lambda_0 = \dfrac{2{,}998 \cdot 10^8\,\text{m/s}}{5{,}561 \cdot 10^{14}\,\text{Hz}} = 5{,}391 \cdot 10^{-7}\,\text{m} = 539{,}1\,\text{nm}$
 **Vastaus:** a) $5{,}56 \cdot 10^{14}\,\text{Hz}$, kolme merkitsevää numeroa kuten irrotustyössä $2{,}30\,\text{eV}$; b) $\lambda_0 = 539\,\text{nm}$. Punaisen valon aallonpituus $650\,\text{nm}$ on suurempi kuin $539\,\text{nm}$, joten sen fotonin energia on liian pieni eikä punainen valo irrota kaliumista elektroneja.
@@ -129,7 +144,13 @@ Lampun B fotonin energia $2{,}25\,\text{eV}$ on pienempi kuin irrotustyö $2{,}5
 **Annettu:** cesiumin irrotustyö $W = 2{,}14\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** pisin irrottava aallonpituus eli raja-aallonpituus $\lambda_0$ nanometreinä
 **Periaate:** Elektroni irtoaa vain, jos yhden fotonin energia on vähintään irrotustyön suuruinen. Fotonin energia pienenee, kun aallonpituus kasvaa, joten pisin irrottava aallonpituus on se, jolla fotonin energia on täsmälleen $W$ ja liike-energia nolla.
-**Kaava:** $\dfrac{hc}{\lambda_0} = W$, joten $\lambda_0 = \dfrac{hc}{W}$
+**Kaava:** $$\begin{aligned} E &= hf_0 \\
+c &= f_0\lambda_0 \\
+E &= W \\
+\dfrac{hc}{\lambda_0} &= W \\
+\lambda_0 &= \dfrac{hc}{W}
+\end{aligned}
+$$
 **Muunnokset:** $W = 2{,}14\,\text{eV} = 2{,}14 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}428 \cdot 10^{-19}\,\text{J}$; tulos metreistä nanometreiksi $1\,\text{m} = 10^{9}\,\text{nm}$
 **Sijoitus:** $$
 \begin{aligned}
@@ -149,7 +170,12 @@ $$. Se on keltaista valoa, joten vihreä ja sininen valo irrottavat elektroneja 
 **Annettu:** laserin teho $P = 5{,}0\,\text{mW}$, aallonpituus $\lambda = 650\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$
 **Kysytty:** sekunnissa lähtevien fotonien lukumäärä $N$ yksikössä $\tfrac{1}{\text{s}}$
 **Periaate:** Valon energia kulkee fotoneina, joilla kaikilla on sama energia $E = \tfrac{hc}{\lambda}$, koska laservalolla on yksi aallonpituus. Teho on sekunnissa lähtevä energia, joten fotonien määrä sekunnissa on teho jaettuna yhden fotonin energialla.
-**Kaava:** $P = N E = N \dfrac{hc}{\lambda}$, joten $N = \dfrac{P \lambda}{hc}$
+**Kaava:** $$\begin{aligned} E &= hf \\
+f &= \dfrac{c}{\lambda} \\
+P &= NE = N\dfrac{hc}{\lambda} \\
+N &= \dfrac{P\lambda}{hc}
+\end{aligned}
+$$
 **Muunnokset:** $P = 5{,}0\,\text{mW} = 5{,}0 \cdot 10^{-3}\,\text{W}$, $\lambda = 650\,\text{nm} = 650 \cdot 10^{-9}\,\text{m}$
 **Sijoitus:** $$
 \begin{aligned}
@@ -165,7 +191,12 @@ $$, joten $N = \dfrac{5{,}0 \cdot 10^{-3}\,\text{W} \cdot 650 \cdot 10^{-9}\,\te
 **Annettu:** aallonpituus $\lambda = 222\,\text{nm}$, magnesiumin irrotustyö $W = 3{,}68\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** irtoavien elektronien suurin liike-energia $E_\text{k,max}$ elektronivoltteina
 **Periaate:** Yksi fotoni luovuttaa energiansa yhdelle elektronille, ja energia säilyy: fotonin energiasta kuluu irrotustyö, loppu jää liike-energiaksi (valosähköinen yhtälö). Fotonin energia lasketaan aallonpituudesta.
-**Kaava:** $hf = W + E_\text{k,max}$ ja $hf = \dfrac{hc}{\lambda}$, joten $E_\text{k,max} = \dfrac{hc}{\lambda} - W$
+**Kaava:** $$\begin{aligned} hf &= W + E_\text{k,max} \\
+c &= f\lambda \\
+E_\text{k,max} &= hf - W \\
+&= \dfrac{hc}{\lambda} - W
+\end{aligned}
+$$
 **Muunnokset:** $\lambda = 222\,\text{nm} = 222 \cdot 10^{-9}\,\text{m}$; fotonin energia jouleista elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
 **Sijoitus:** $$
 \begin{aligned}
@@ -185,7 +216,12 @@ $$, ja $5{,}6\,\text{eV} - 3{,}7\,\text{eV} \approx 1{,}9\,\text{eV}$. Fotonin e
 **Annettu:** aallonpituus $\lambda = 300\,\text{nm}$, suurin liike-energia $E_\text{k,max} = 1{,}85\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** metallin irrotustyö $W$ elektronivoltteina
 **Periaate:** Valosähköinen yhtälö kertoo energian säilymisen: fotonin energia on irrotustyön ja suurimman liike-energian summa. Kun fotonin energia ja suurin liike-energia tunnetaan, irrotustyö on niiden erotus.
-**Kaava:** $\dfrac{hc}{\lambda} = W + E_\text{k,max}$, joten $W = \dfrac{hc}{\lambda} - E_\text{k,max}$
+**Kaava:** $$\begin{aligned} hf &= W + E_\text{k,max} \\
+c &= f\lambda \\
+W &= hf - E_\text{k,max} \\
+&= \dfrac{hc}{\lambda} - E_\text{k,max}
+\end{aligned}
+$$
 **Muunnokset:** $\lambda = 300\,\text{nm} = 300 \cdot 10^{-9}\,\text{m}$; fotonin energia jouleista elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
 **Sijoitus:** $$
 \begin{aligned}
@@ -202,7 +238,14 @@ $$, joten $\dfrac{hc}{\lambda} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text
 **Kysytty:** Planckin vakio $h$ yksikössä $\text{J}\,\text{s}$ (sekä rajataajuus $f_0$ ja irrotustyö $W$)
 **Periaate:** Valosähköisen yhtälön $hf = W + eU_\text{s}$ mukaan $U_\text{s} = \tfrac{h}{e}f - \tfrac{W}{e}$ on taajuuden suoran yhtälö. Suoran kulmakerroin on $\tfrac{h}{e}$, ja se leikkaa taajuusakselin rajataajuudella, jossa $U_\text{s} = 0$. Mittauspisteet eivät yleensä ole täsmälleen samalla suoralla mittausepävarmuuden vuoksi, joten kulmakerroin luetaan sovitetulta suoralta.
 **Kuvaajan lukeminen:** Taajuudet ovat $f = \tfrac{c}{\lambda}$: $8{,}21$, $7{,}40$, $6{,}88$, $6{,}38$ ja $5{,}94$ yksikössä $10^{14}\,\text{Hz}$. Pisteiden läpi sovitetaan suora, joka kulkee pisteiden lomassa. Suoralta valitaan kaksi kaukana toisistaan olevaa pistettä, esimerkiksi $(6{,}0 \cdot 10^{14}\,\text{Hz};\ 0{,}179\,\text{V})$ ja $(8{,}0 \cdot 10^{14}\,\text{Hz};\ 1{,}018\,\text{V})$. Rajataajuus luetaan kohdasta, jossa suora leikkaa taajuusakselin.
-**Kaava:** $k = \dfrac{\Delta U_\text{s}}{\Delta f}$ ja $k = \dfrac{h}{e}$, joten $h = ek$; rajataajuudella $hf_0 = W$
+**Kaava:** $$\begin{aligned} hf &= W + E_\text{k,max} \\
+E_\text{k,max} &= eU_\text{s} \\
+U_\text{s} &= \dfrac{h}{e}f - \dfrac{W}{e} \\
+k &= \dfrac{\Delta U_\text{s}}{\Delta f} = \dfrac{h}{e} \\
+h &= ek \\
+hf_0 &= W
+\end{aligned}
+$$
 **Muunnokset:** Taajuudet laskettiin aallonpituuksista $\lambda = 365\,\text{nm} = 365 \cdot 10^{-9}\,\text{m}$ jne.; muita muunnoksia ei tarvita.
 **Sijoitus:** $k = \dfrac{1{,}018\,\text{V} - 0{,}179\,\text{V}}{8{,}0 \cdot 10^{14}\,\text{Hz} - 6{,}0 \cdot 10^{14}\,\text{Hz}} = 4{,}195 \cdot 10^{-15}\,\tfrac{\text{V}}{\text{Hz}}$, joten $$
 \begin{aligned}
@@ -237,7 +280,13 @@ $$, ja kaikki mitatut aallonpituudet $365$–$505\,\text{nm}$ ovat sitä lyhyemp
 **Kysytty:** a) opiskelijan virhe, b) irrotustyö $W$ elektronivoltteina
 **Periaate:** Valosähköisen yhtälön mukaan $E_\text{k,max} = hf - W$ on taajuuden suora. Kun $f = 0$, $E_\text{k,max} = -W$, joten pystyakselin leikkauspiste kertoo irrotustyön vastaluvun. Rajataajuudella $E_\text{k,max} = 0$, joten rajataajuus luetaan kohdasta, jossa suora leikkaa vaaka-akselin eli taajuusakselin.
 **Kuvaajan lukeminen:** Opiskelijan lukema $-2{,}1\,\text{eV}$ on pystyakselin leikkauspiste, ja sen yksikkö on energian yksikkö eV, ei taajuuden yksikkö Hz. Rajataajuus on vaaka-akselin leikkauspiste. Suoran kulmakerroin lasketaan ensimmäisestä ja viimeisestä pisteestä.
-**Kaava:** $k = \dfrac{E_3 - E_1}{f_3 - f_1}$; rajataajuudella $0 = E_1 + k(f_0 - f_1)$, joten $f_0 = f_1 - \dfrac{E_1}{k}$, ja $W = kf_0$
+**Kaava:** $$\begin{aligned} E_\text{k,max} &= hf - W \\
+k &= \dfrac{E_3 - E_1}{f_3 - f_1} = h \\
+0 &= E_1 + k(f_0 - f_1) \\
+f_0 &= f_1 - \dfrac{E_1}{k} \\
+W &= hf_0 = kf_0
+\end{aligned}
+$$
 **Muunnokset:** Ei tarvita: energia on elektronivoltteina ja taajuus hertseinä, joten kulmakerroin on yksikössä $\text{eV/Hz}$.
 **Sijoitus:** $k = \dfrac{1{,}79\,\text{eV} - 0{,}55\,\text{eV}}{9{,}5 \cdot 10^{14}\,\text{Hz} - 6{,}5 \cdot 10^{14}\,\text{Hz}} = 4{,}133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, joten $$
 \begin{aligned}
@@ -266,7 +315,14 @@ $$, joten sen itseisarvo on sama kuin $W$, ja opiskelijan lukema $-2{,}1\,\text{
 **Annettu:** natriumin irrotustyö $W = 2{,}28\,\text{eV}$, aallonpituus $\lambda = 350\,\text{nm}$, elektronin massa $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** nopeimpien elektronien vauhti $v$ yksikössä $\text{m/s}$
 **Periaate:** Nopeimmat elektronit saavat suurimman liike-energian $E_\text{k,max} = hf - W$ (valosähköinen yhtälö, energian säilyminen). Vauhti saadaan liike-energiasta $E_\text{k} = \tfrac{1}{2} m v^2$, joka pätee, koska vauhti jää paljon valon nopeutta pienemmäksi (tämä tarkistetaan lopuksi). Liike-energian on oltava jouleina, jotta vauhti tulee yksikössä $\text{m/s}$.
-**Kaava:** $E_\text{k,max} = \dfrac{hc}{\lambda} - W$ ja $\dfrac{1}{2} m v^2 = E_\text{k,max}$, joten $v = \sqrt{\dfrac{2 E_\text{k,max}}{m}}$
+**Kaava:** $$\begin{aligned} hf &= W + E_\text{k,max} \\
+c &= f\lambda \\
+E_\text{k,max} &= hf - W \\
+&= \dfrac{hc}{\lambda} - W \\
+\tfrac{1}{2}mv^2 &= E_\text{k,max} \\
+v &= \sqrt{\dfrac{2E_\text{k,max}}{m}}
+\end{aligned}
+$$
 **Muunnokset:** $\lambda = 350\,\text{nm} = 350 \cdot 10^{-9}\,\text{m}$; $W = 2{,}28\,\text{eV} = 2{,}28 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}653 \cdot 10^{-19}\,\text{J}$
 **Sijoitus:** $$
 \begin{aligned}
@@ -291,7 +347,12 @@ $$, joten $v = \sqrt{\dfrac{2 \cdot 2{,}023 \cdot 10^{-19}\,\text{J}}{9{,}109 \c
 **Annettu:** irrotustyö $W = 2{,}28\,\text{eV}$, intensiteetti $I = 1{,}0 \cdot 10^{-6}\,\text{W/m}^2$, elektronin keräysala $A = 1{,}0 \cdot 10^{-20}\,\text{m}^2$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$; oletus: kaikki alalle osuva energia kertyy yhdelle elektronille
 **Kysytty:** aika $t$, jossa elektroni kerää irrotustyön verran energiaa, vuorokausina
 **Periaate:** Aaltomallissa valon energia jakautuu tasaisesti koko aaltorintamalle. Intensiteetti on teho pinta-alaa kohti, joten alalle $A$ tuleva teho on $P = IA$, ja ajassa $t$ elektroni saa energian $E = Pt = IAt$. Irtoaminen alkaisi, kun $E = W$.
-**Kaava:** $W = I A t$, joten $t = \dfrac{W}{I A}$
+**Kaava:** $$\begin{aligned} P &= IA \\
+E &= Pt = IAt \\
+E &= W \\
+t &= \dfrac{W}{IA}
+\end{aligned}
+$$
 **Muunnokset:** $W = 2{,}28\,\text{eV} = 2{,}28 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}653 \cdot 10^{-19}\,\text{J}$; aika sekunneista vuorokausiksi $1\,\text{vrk} = 24 \cdot 3600\,\text{s} = 86\,400\,\text{s}$
 **Sijoitus:** $t = \dfrac{3{,}653 \cdot 10^{-19}\,\text{J}}{1{,}0 \cdot 10^{-6}\,\text{W/m}^2 \cdot 1{,}0 \cdot 10^{-20}\,\text{m}^2} = 3{,}653 \cdot 10^{7}\,\text{s} = \dfrac{3{,}653 \cdot 10^{7}}{86\,400}\,\text{vrk} = 422{,}8\,\text{vrk}$
 **Vastaus:** noin $420\,\text{vrk}$ eli yli vuosi, kaksi merkitsevää numeroa kuten intensiteetissä ja pinta-alassa.
@@ -301,7 +362,13 @@ $$, joten $v = \sqrt{\dfrac{2 \cdot 2{,}023 \cdot 10^{-19}\,\text{J}}{9{,}109 \c
 **Annettu:** mittauspisteet $(f_1, E_1) = (7{,}0 \cdot 10^{14}\,\text{Hz};\ 0{,}60\,\text{eV})$ ja $(f_2, E_2) = (1{,}00 \cdot 10^{15}\,\text{Hz};\ 1{,}84\,\text{eV})$, joissa $E$ on suurin liike-energia; riippuvuus on lineaarinen
 **Kysytty:** rajataajuus $f_0$ hertseinä
 **Periaate:** Valosähköisen yhtälön mukaan $E_\text{k,max} = hf - W$ on taajuuden suhteen suora. Rajataajuudella elektroni juuri ja juuri irtoaa, joten suurin liike-energia on nolla: rajataajuus on kohta, jossa suora leikkaa taajuusakselin. Suoran kulmakerroin saadaan kahdesta mittauspisteestä.
-**Kaava:** kulmakerroin $k = \dfrac{E_2 - E_1}{f_2 - f_1}$, ja suoralla $E = E_1 + k(f - f_1)$; ehdosta $E = 0$ saadaan $f_0 = f_1 - \dfrac{E_1}{k}$
+**Kaava:** $$\begin{aligned} E_\text{k,max} &= hf - W \\
+k &= \dfrac{E_2 - E_1}{f_2 - f_1} \\
+E &= E_1 + k(f - f_1) \\
+0 &= E_1 + k(f_0 - f_1) \\
+f_0 &= f_1 - \dfrac{E_1}{k}
+\end{aligned}
+$$
 **Muunnokset:** Ei tarvita: energiat ovat samassa yksikössä ja taajuudet hertseinä, joten yksiköt supistuvat.
 **Sijoitus:** $k = \dfrac{1{,}84\,\text{eV} - 0{,}60\,\text{eV}}{1{,}00 \cdot 10^{15}\,\text{Hz} - 7{,}0 \cdot 10^{14}\,\text{Hz}} = \dfrac{1{,}24\,\text{eV}}{3{,}0 \cdot 10^{14}\,\text{Hz}} = 4{,}133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, joten $$
 \begin{aligned}
@@ -326,7 +393,17 @@ $$, kuten on. Rajataajuus on pienempi kuin kumpikin mittaustaajuus, kuten pitä�
 **Annettu:** $\lambda = 400\,\text{nm}$, $P_1 = 1{,}0\,\text{mW}$, $P_2 = 2{,}0\,\text{mW}$, kyllästysvirrat taulukosta $I_1 = 0{,}30\,\mu\text{A}$ ja $I_2 = 0{,}60\,\mu\text{A}$, virta on nolla jännitteellä $U = -0{,}80\,\text{V}$ ja sen alapuolella; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
 **Kysytty:** kvanttisaanto $\eta$ eli niiden fotonien osuus, jotka irrottavat elektronin, prosentteina (sekä $U_\text{s}$ ja $W$)
 **Periaate:** Estojännite on pienin vastajännite, jolla virta on nolla, ja se pysäyttää nopeimmatkin elektronit: $eU_\text{s} = E_\text{k,max} = hf - W$. Kyllästysvirrassa kaikki irronneet elektronit päätyvät anodille, joten elektronien määrä sekunnissa on $\tfrac{I}{e}$. Fotonien määrä sekunnissa on teho jaettuna yhden fotonin energialla $\tfrac{hc}{\lambda}$.
-**Kaava:** $W = \dfrac{hc}{\lambda} - eU_\text{s}$; $N_\text{f} = \dfrac{P\lambda}{hc}$, $N_\text{e} = \dfrac{I}{e}$ ja $\eta = \dfrac{N_\text{e}}{N_\text{f}}$
+**Kaava:** $$\begin{aligned} hf &= W + E_\text{k,max} \\
+E_\text{k,max} &= eU_\text{s} \\
+E_\text{f} &= hf = \dfrac{hc}{\lambda} \\
+W &= \dfrac{hc}{\lambda} - eU_\text{s} \\
+P &= N_\text{f}E_\text{f} \\
+N_\text{f} &= \dfrac{P\lambda}{hc} \\
+I &= N_\text{e}e \\
+N_\text{e} &= \dfrac{I}{e} \\
+\eta &= \dfrac{N_\text{e}}{N_\text{f}}
+\end{aligned}
+$$
 **Muunnokset:** $\lambda = 400\,\text{nm} = 400 \cdot 10^{-9}\,\text{m}$, $P_1 = 1{,}0 \cdot 10^{-3}\,\text{W}$, $I_1 = 0{,}30\,\mu\text{A} = 0{,}30 \cdot 10^{-6}\,\text{A}$; energia $\text{J}$:sta $\text{eV}$:iin jakamalla luvulla $1{,}602 \cdot 10^{-19}$
 **Sijoitus:** a) $U_\text{s} = 0{,}80\,\text{V}$ ja fotonin energia $\tfrac{hc}{\lambda} = \tfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{400 \cdot 10^{-9}\,\text{m}} = 4{,}966 \cdot 10^{-19}\,\text{J} = 3{,}100\,\text{eV}$, joten $W = 3{,}100\,\text{eV} - 0{,}80\,\text{eV} = 2{,}30\,\text{eV}$. b) $N_\text{f} = \dfrac{1{,}0 \cdot 10^{-3}\,\text{W}}{4{,}966 \cdot 10^{-19}\,\text{J}} = 2{,}014 \cdot 10^{15}\,\tfrac{1}{\text{s}}$ ja $N_\text{e} = \dfrac{0{,}30 \cdot 10^{-6}\,\text{A}}{1{,}602 \cdot 10^{-19}\,\text{C}} = 1{,}873 \cdot 10^{12}\,\tfrac{1}{\text{s}}$, joten $\eta = \dfrac{1{,}873 \cdot 10^{12}}{2{,}014 \cdot 10^{15}} = 9{,}30 \cdot 10^{-4} = 0{,}0930\,\%$. c) Teholla $P_2$: $N_\text{f} = 4{,}027 \cdot 10^{15}\,\tfrac{1}{\text{s}}$ ja $N_\text{e} = 3{,}745 \cdot 10^{12}\,\tfrac{1}{\text{s}}$, joten $\eta = 0{,}0930\,\%$ myös nyt.
 **Vastaus:** $\eta = 0{,}093\,\%$, kaksi merkitsevää numeroa kuten tehossa $1{,}0\,\text{mW}$ ja virrassa $0{,}30\,\mu\text{A}$; eli noin yksi fotoni tuhannesta irrottaa elektronin. Lisäksi $U_\text{s} = 0{,}80\,\text{V}$ ja $W = 2{,}30\,\text{eV}$. Estojännite ei muutu, koska yksi elektroni absorboi yhden fotonin, ja sen suurin liike-energia $hf - W$ riippuu vain taajuudesta ja irrotustyöstä.
@@ -338,7 +415,15 @@ Kaksinkertainen teho tuo kaksi kertaa niin monta fotonia mutta ei muuta yhden fo
 **Annettu:** kaliumin irrotustyö $W = 2{,}30\,\text{eV}$; lähteet A: $470\,\text{nm}$, $4{,}0\,\text{mW}$, B: $620\,\text{nm}$, $8{,}0\,\text{mW}$ ja C: $365\,\text{nm}$, $1{,}0\,\text{mW}$; yksi elektroni tuhatta irrotukseen riittävää fotonia kohti ($\eta = 0{,}10\,\%$); $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
 **Kysytty:** kennon kokonaisvirta $I$ mikroampeereina (sekä lähteet, jotka irrottavat elektroneja, ja estojännite $U_\text{s}$)
 **Periaate:** Lähde irrottaa elektroneja vain, jos sen fotonin energia $\tfrac{hc}{\lambda}$ on vähintään $W$; teho ei korvaa fotonin energiaa. Irrottavan lähteen fotonien määrä sekunnissa on $N_\text{f} = \tfrac{P\lambda}{hc}$, elektroneja irtoaa $\eta N_\text{f}$ ja virta on $I = e \eta N_\text{f}$. Eri lähteiden virrat summataan. Estojännite määräytyy suurimmasta liike-energiasta, joten sen antaa suurin fotonin energia.
-**Kaava:** $E_\text{f} = \dfrac{hc}{\lambda}$; $I = \dfrac{e \eta P \lambda}{hc}$ jokaiselle irrottavalle lähteelle; $U_\text{s} = \dfrac{E_\text{f,max} - W}{e}$
+**Kaava:** $$\begin{aligned} E_\text{f} &= hf = \dfrac{hc}{\lambda} \\
+P &= N_\text{f}E_\text{f} \\
+N_\text{e} &= \eta N_\text{f} \\
+I &= N_\text{e}e \\
+&= \dfrac{e\eta P\lambda}{hc} \\
+eU_\text{s} &= E_\text{f,max} - W \\
+U_\text{s} &= \dfrac{E_\text{f,max} - W}{e}
+\end{aligned}
+$$
 **Muunnokset:** $\lambda = 470\,\text{nm} = 470 \cdot 10^{-9}\,\text{m}$ jne., $P_\text{A} = 4{,}0\,\text{mW} = 4{,}0 \cdot 10^{-3}\,\text{W}$, $\eta = 0{,}10\,\% = 1{,}0 \cdot 10^{-3}$; fotonin energia $\text{J}$:sta $\text{eV}$:iin jakamalla luvulla $1{,}602 \cdot 10^{-19}$
 **Sijoitus:** a) $E_\text{A} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{470 \cdot 10^{-9}\,\text{m}} = 4{,}227 \cdot 10^{-19}\,\text{J} = 2{,}64\,\text{eV}$, $E_\text{B} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{620 \cdot 10^{-9}\,\text{m}} = 3{,}204 \cdot 10^{-19}\,\text{J} = 2{,}00\,\text{eV}$ ja $E_\text{C} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{365 \cdot 10^{-9}\,\text{m}} = 5{,}443 \cdot 10^{-19}\,\text{J} = 3{,}40\,\text{eV}$. Lähteet A ja C ylittävät arvon $2{,}30\,\text{eV}$, lähde B ei. b) $$
 \begin{aligned}
@@ -369,7 +454,12 @@ $$ sekunnissa. Punaisen lähteen $8{,}0\,\text{mW}$ vastaa $2{,}5 \cdot 10^{16}$
 **Annettu:** kalsiumin irrotustyö MAFY-taulukosta (*Irrotustöitä*, kalsium) $W = 3{,}20\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** pisin aallonpituus eli raja-aallonpituus $\lambda_0$ nanometreinä
 **Periaate:** Elektroni irtoaa vain, jos fotonin energia riittää irrotustyöhön: $hf \geq W$. Pisimmällä aallonpituudella ja pienimmällä taajuudella fotonin energia on juuri yhtä suuri kuin irrotustyö, $hf_0 = W$. Irrotustyö on haettava taulukosta, koska sitä ei anneta tehtävässä.
-**Kaava:** $hf_0 = W$ ja $f_0 = \dfrac{c}{\lambda_0}$, joten $\lambda_0 = \dfrac{hc}{W}$
+**Kaava:** $$\begin{aligned} hf_0 &= W \\
+c &= f_0\lambda_0 \\
+f_0 &= \dfrac{c}{\lambda_0} \\
+\lambda_0 &= \dfrac{hc}{W}
+\end{aligned}
+$$
 **Muunnokset:** $W = 3{,}20\,\text{eV} = 3{,}20 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 5{,}126 \cdot 10^{-19}\,\text{J}$
 **Sijoitus:** $$
 \begin{aligned}

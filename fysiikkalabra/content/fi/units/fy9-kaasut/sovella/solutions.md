@@ -387,7 +387,7 @@ Suhde $35 : 10 = 3{,}5$ on lämpökerroin eikä hyötysuhde: se voi olla yli $1$
 - *Karkaava ilma.* Pumppua irrotettaessa ja venttiilin kautta karkaa ilmaa ennen punnitusta, joten $\Delta m$ on liian pieni ja tulos liian pieni.
 - *Pullon tilavuus.* Merkintä $1{,}5\,\textsf{l}$ on juoman tilavuus. Pullo on hieman suurempi ja pullistuu paineessa, joten todellinen $\Delta n$ on laskettua suurempi. Tämä suurentaa laskettua tulosta, eli se ei selitä liian pientä arvoa.
 
-Vaa'an tarkkuus $0{,}01\,\text{g}$ on alle $1\,\%$ massan kasvusta $3{,}28\,\text{g}$, joten se ei ole merkittävä. Lämpötilan ja mittarin virheet ovat kumpikin noin $5$–$7\,\%$, joten epävarmuus on samaa suuruusluokkaa kuin ero taulukkoarvoon. Mittaus ei osoita taulukkoarvoa vääräksi.
+Vaa'an tarkkuus $0{,}01\,\text{g}$ on alle $1\,\%$ massan kasvusta $3{,}28\,\text{g}$, joten se ei ole merkittävä. Lämpötilan ja mittarin virheet ovat kumpikin noin $5\,\%$, joten epävarmuus on samaa suuruusluokkaa kuin ero taulukkoarvoon. Mittaus ei osoita taulukkoarvoa vääräksi.
 
 ### c)
 **Kysytty:** koesuunnitelma, jolla ilman moolimassa saadaan luotettavammin

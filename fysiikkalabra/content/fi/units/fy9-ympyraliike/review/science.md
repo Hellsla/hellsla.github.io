@@ -1,17 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: c415a4f87c3b7043
-SCOPE: delta: round 1 fixes (s8 d 7360 N -> 7400 N in criterion and model answer; en: s9 b criterion translation, "centripetal acceleration" in s8 and figure alt); s1-s7 not re-judged.
+CONTENT-HASH: 91e8a09dd9f44f43
+SCOPE: delta (old-content fixes, git diff origin/main)
 
-## Blocking
-- (none) Previous Blocking items resolved.
-
-## Polish
-- Round 1 Polish items stay recorded (s9 b 331 N vs 330 N intermediate wording).
-
-
-## Checked
-- 7400 N now in tasks.json s8 d and solutions.md line 606; 7400 = 0,50 * 1500 * 9,81 = 7357 rounded to two figures; ratio 4500/7400 = 61 % unchanged, v_max and answers unaffected.
-- No leftover 7360 in task files (only in review notes).
-- Hash unchanged at end of review; practice.py check OK for fi, en, fi-easy (9 tasks, 142 points).
-- No new physics or terms introduced by the change.
-
+1. Blocking: none.
+2. Checked: s3 d T = sqrt(1.95/8.0) = 0.4937 s (answer value, answers.py and solution agree). s9 T = 19.5 kg*9.81/sin 30 = 382.6 N, H = 331.3 N, V = 14.7 N, F = 331.7 N; 'aiemmin vaakakomponentti oli 331 N' is right. s8 static friction coefficient is mu_0 everywhere (task, solution, rubric), as in the course.
+3. Checked: teacher.md 20 + 7x15 + 17 = 142 from nine tasks, 'muut kahdeksan', NASA task named as real data.
+4. Language fi: the changed numbers and wording were checked to carry the same values as fi.

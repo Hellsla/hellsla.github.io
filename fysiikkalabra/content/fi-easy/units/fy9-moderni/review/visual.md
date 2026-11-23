@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 9f6d0a54ea9df872
+CONTENT-HASH: 8655bc123e66b788
+SCOPE: delta (old-content fixes, git diff origin/main)
+Checked: fy9-moderni (fi-easy): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
 
-## Blocking
-(none)
-
-## Polish
-- [Minor] The shots predate the paragraph split (earlier hash), so the new breaks are judged from the diff plus the existing layout of the same solution blocks, not seen rendered. Gap noted, not a ground for FAIL.
-
-## Checked
-- git diff origin/main...HEAD for fi-easy/units/fy9-moderni (excl. review/): solutions.md (same stat as fi, about 70 lines added, 13 removed) and one inquiry.json solution field; only blank lines inserted; no word, formula, number or figure changed. Fi diff read in full.
-- Read the previous Sovella visual report (PASS, same change).
-- Opened fi-easy review/shots/fy9-moderni-stage-sovella-390-5.png and -390-9.png (plus the fi 1280 capture): labelled solution sections, display maths and calculation rows intact, no clipping or overflow at 390 px.
-- Figures unchanged, not re-opened.
+1. Blocking: none.
+2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
+3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
+4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.

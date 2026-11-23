@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 0f23ffb901818a30
+CONTENT-HASH: b2e495e2487ce941
+SCOPE: delta numbers,photo,teacher-figure,wording from 0f23ffb901818a30 base b3ee786
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] pysahdy 2 — "Noin kuinka monta" with an exact answer $1000$; "Kuinka monta" would be cleaner.
-- [Minor] pysahdy 3 — answer has no equation row for the ratio; optional.
-
-## Vanhan sisällön löydökset
-(none)
+- [Minor] Opening illustration (top-390, intro-1280) — a soft, shaded raster scene (teacher-approved figure), a little more polished than the flat-vector house style; no change asked, the phenomenon sits in the middle third and reads at 390 px.
 
 ## Checked
-batch delta review (pysahdy only): component rendering in fy8-10 theory capture; source of all three boxes ($\left(\tfrac{1}{2}\right)^2$ fractions are inline and fine).
+- Delta: geiger-counter caption ("taustan vähentämisen jälkeen"), Aktiivisuus paragraph wording, example result 97,65 -> 97,6 MBq, and the two teacher-approved pictures (hero, ydin).
+- Opened top-390, intro-1280, fig-1-390 (hero), fig-2-390 (the ydin figure: three grids, orange/grey legend, N labels readable), example-390-1 and -2 (the chain now ends "≈ 97,6 MBq", the result and the reasonableness stage agree with three significant figures).
+- Layout survived: nothing clipped, chain rows aligned, units upright, decimal comma.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

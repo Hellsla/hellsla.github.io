@@ -78,7 +78,13 @@ $$. The speed is much smaller than the speed of light, as it should be for a sma
 
 **Principle:** The background radiation is electromagnetic radiation whose energy is quantised into photons (chapter *The photoelectric effect and the photon*). The energy of a photon is inversely proportional to its wavelength.
 
-**Formula:** $E = hf$ and $f = \dfrac{c}{\lambda}$, so $E = \dfrac{hc}{\lambda}$
+**Formula:** $E = hf$ and $$
+\begin{aligned}
+&f = \dfrac{c}{\lambda} \\
+&E = h\,\dfrac{c}{\lambda} \\
+&= \dfrac{hc}{\lambda}
+\end{aligned}
+$$
 
 **Conversions:** $1.06\,\text{mm} = 1.06 \cdot 10^{-3}\,\text{m}$. To change from joules to electronvolts, substitute $1\,\text{J} = \dfrac{1}{1.602 \cdot 10^{-19}}\,\text{eV}$.
 
@@ -103,7 +109,15 @@ $$
 
 **Principle:** The shift of the line gives the redshift $z$, and from it the recession speed $v = cz$, because the redshift is small. According to the Hubble–Lemaître law, the speed is proportional to the distance, so the distance is the speed divided by the Hubble constant.
 
-**Formula:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$, $v = cz$ and $v = H_0\,d$, so $d = \dfrac{c\,(\lambda - \lambda_0)}{H_0\,\lambda_0}$
+**Formula:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ and $$
+\begin{aligned}
+&v = c\,z \\
+&v = H_0\,d \\
+&d = \dfrac{v}{H_0} \\
+&= \dfrac{c\,z}{H_0} \\
+&= \dfrac{c\,(\lambda - \lambda_0)}{H_0\,\lambda_0}
+\end{aligned}
+$$
 
 **Conversions:** None needed: the nanometres cancel in the redshift, and the kilometres per second cancel when the speed is divided by the Hubble constant.
 
@@ -120,7 +134,13 @@ $$
 
 **Principle:** If the speed of the expansion has stayed the same, a galaxy that is now at distance $d$ and recedes at the speed $v = H_0\,d$ was in the same place as we were a time $t = \tfrac{d}{v}$ ago. The distance cancels, so the time is the same for all galaxies.
 
-**Formula:** $t = \dfrac{d}{v} = \dfrac{d}{H_0\,d}$, so $t = \dfrac{1}{H_0}$
+**Formula:** $t = \dfrac{d}{v}$ and $$
+\begin{aligned}
+&v = H_0\,d \\
+&t = \dfrac{d}{H_0\,d} \\
+&= \dfrac{1}{H_0}
+\end{aligned}
+$$
 
 **Conversions:** For the megaparsec, substitute $1\,\text{Mpc} = 3.086 \cdot 10^{19}\,\text{km}$ so that the kilometres cancel, and change seconds into years by substituting $1\,\text{s} = \dfrac{1}{3.156 \cdot 10^{7}}\,\text{a}$.
 
@@ -137,7 +157,14 @@ $$
 
 **Principle:** The expansion has stretched every wavelength by a factor of $1100$, so when it was released, the wavelength was $1100$ times shorter than now. The energy of a photon is obtained from the wavelength, as in the chapter *The photoelectric effect and the photon*.
 
-**Formula:** $\lambda = \dfrac{\lambda_\text{now}}{1100}$ and $E = \dfrac{hc}{\lambda}$, so $E = \dfrac{1100\,hc}{\lambda_\text{now}}$
+**Formula:** $\lambda = \dfrac{\lambda_\text{now}}{1100}$ and $$
+\begin{aligned}
+&E = hf \\
+&f = \dfrac{c}{\lambda} \\
+&E = \dfrac{hc}{\lambda} \\
+&= \dfrac{1100\,hc}{\lambda_\text{now}}
+\end{aligned}
+$$
 
 **Conversions:** $1.06\,\text{mm} = 1.06 \cdot 10^{-3}\,\text{m}$, and to change from joules to electronvolts, substitute $1\,\text{J} = \dfrac{1}{1.602 \cdot 10^{-19}}\,\text{eV}$.
 
@@ -164,7 +191,14 @@ When the temperature fell to about $3000\,\text{K}$, there were too few of them,
 
 **Principle:** According to the Hubble–Lemaître law, all galaxies have the same Hubble constant, so the ratio of speed to distance is the same: the number of times faster a galaxy recedes is the number of times farther away it is. The own motion of the galaxies is ignored.
 
-**Formula:** $H_0 = \dfrac{v_\text{A}}{d_\text{A}} = \dfrac{v_\text{B}}{d_\text{B}}$, so $d_\text{B} = d_\text{A} \cdot \dfrac{v_\text{B}}{v_\text{A}}$
+**Formula:** $v = H_0\,d$ and $$
+\begin{aligned}
+&H_0 = \dfrac{v_\text{A}}{d_\text{A}} \\
+&H_0 = \dfrac{v_\text{B}}{d_\text{B}} \\
+&\dfrac{v_\text{B}}{d_\text{B}} = \dfrac{v_\text{A}}{d_\text{A}} \\
+&d_\text{B} = d_\text{A} \cdot \dfrac{v_\text{B}}{v_\text{A}}
+\end{aligned}
+$$
 
 **Conversions:** None needed: the unit of the speeds cancels, and the distance comes out in megaparsecs.
 
@@ -183,7 +217,13 @@ When the temperature fell to about $3000\,\text{K}$, there were too few of them,
 
 The total number of nucleons does not change in fusion.
 
-**Formula:** When there are $n$ neutrons and $p$ protons, $2n$ nucleons bind into helium, so the mass fraction is $Y = \dfrac{2n}{n + p}$
+**Formula:** Let $m$ be the mass of a nucleon. $m_\text{He} = 2n\,m$ and $$
+\begin{aligned}
+&m_\text{tot} = (n + p)\,m \\
+&Y = \dfrac{m_\text{He}}{m_\text{tot}} \\
+&= \dfrac{2n}{n + p}
+\end{aligned}
+$$
 
 **Conversions:** None needed: we count numbers of nucleons, and finally the fraction is changed into a percentage by multiplying by $100\,\%$.
 
@@ -200,7 +240,13 @@ The total number of nucleons does not change in fusion.
 
 **Principle:** In fusion, energy is released when the nucleus that forms is more tightly bound than the starting nuclei and therefore lighter than they are together (chapter *Mass defect and nuclear binding energy*). Atomic masses can be used, because there are six electrons on both sides.
 
-**Formula:** $Q = (m_\text{initial} - m_\text{final})\,c^2$, where the starting materials are three helium atoms and the product is one carbon atom, so $Q = (3\,m_\text{He} - m_\text{C})\,c^2$
+**Formula:** $Q = \Delta m\,c^2$ and $$
+\begin{aligned}
+&\Delta m = m_\text{initial} - m_\text{final} \\
+&\Delta m = 3\,m_\text{He} - m_\text{C} \\
+&Q = (3\,m_\text{He} - m_\text{C})\,c^2
+\end{aligned}
+$$
 
 **Conversions:** The mass is not converted into kilograms: substitute $931.5\,\tfrac{\text{MeV}}{c^2}$ for the unit $\text{u}$, so that $c^2$ cancels.
 
@@ -219,7 +265,15 @@ The total number of nucleons does not change in fusion.
 
 The distance is obtained from the Hubble–Lemaître law. The most accurate $z$ comes from the longest line, whose shift is the greatest.
 
-**Formula:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$, $v = cz$ and $v = H_0\,d$, so $d = \dfrac{c\,(\lambda - \lambda_0)}{H_0\,\lambda_0}$
+**Formula:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ and $$
+\begin{aligned}
+&v = c\,z \\
+&v = H_0\,d \\
+&d = \dfrac{v}{H_0} \\
+&= \dfrac{c\,z}{H_0} \\
+&= \dfrac{c\,(\lambda - \lambda_0)}{H_0\,\lambda_0}
+\end{aligned}
+$$
 
 **Conversions:** None needed: the nanometres and the kilometres per second cancel.
 
@@ -284,7 +338,12 @@ Nor is it radiation from dark matter, because dark matter does not emit radiatio
 
 Check your graph: the line must pass through the origin.
 
-**Formula:** $H_0 = \dfrac{\Delta v}{\Delta d}$ as the slope of the line. Least-squares fit through the origin by calculation: $H_0 = \dfrac{\sum d\,v}{\sum d^{2}}$
+**Formula:** $v = H_0\,d$. The slope from the graph and the least-squares fit through the origin by calculation: $$
+\begin{aligned}
+&H_0 = \dfrac{\Delta v}{\Delta d} \\
+&H_0 = \dfrac{\sum d\,v}{\sum d^{2}}
+\end{aligned}
+$$
 
 **Conversions:** None needed: the distance is in megaparsecs and the speed in kilometres per second, so the slope comes directly in the unit $\tfrac{\text{km/s}}{\text{Mpc}}$.
 
@@ -304,7 +363,13 @@ The deviation is due to the galaxy's own motion, typically a few hundred kilomet
 
 **Principle:** The student's redshift $z$ and speed $v = c\,z$ are correct, because $z$ is small. The error is in the last step: the Hubble–Lemaître law is $v = H_0\,d$, so the distance is obtained by dividing the speed by the Hubble constant, not by multiplying. The multiplication gives the unit $\tfrac{\text{km}^2}{\text{s}^2\,\text{Mpc}}$, which is not a unit of distance.
 
-**Formula:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$, $v = c\,z$ and $v = H_0\,d$, so $d = \dfrac{v}{H_0}$
+**Formula:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ and $$
+\begin{aligned}
+&v = c\,z \\
+&v = H_0\,d \\
+&d = \dfrac{v}{H_0}
+\end{aligned}
+$$
 
 **Conversions:** None needed: the nanometres cancel in the redshift, and the kilometres per second cancel when the speed is divided by the Hubble constant.
 
@@ -385,7 +450,13 @@ Near the centre, at $2\,\text{kpc}$ and $5\,\text{kpc}$, the ratio is $\tfrac{95
 
 **Principle:** The wavelength of the light has stretched in the same proportion as space, so the stretching factor is $k = \tfrac{\lambda}{\lambda_0} = 1 + z$. The formula $v = c\,z$ is an approximation only for a small redshift, about $z < 0.1$. The temperature of the background radiation was then $k$ times the present one. The rule checks out: $2.725\,\text{K} \cdot 1100 \approx 3000\,\text{K}$.
 
-**Formula:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$, $k = 1 + z$ and $T = k\,T_\text{now}$
+**Formula:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ and $$
+\begin{aligned}
+&k = 1 + z \\
+&T = k\,T_\text{now} \\
+&T = (1 + z)\,T_\text{now}
+\end{aligned}
+$$
 
 **Conversions:** None needed: the wavelengths are in nanometres, and the unit cancels.
 
@@ -416,7 +487,14 @@ $$.
 
 **Reading the graph:** The line passes through the origin and the grid point $(250\,\text{Mpc}, 18\,000\,\text{km/s})$, so its slope is $H_0 = \dfrac{18\,000\,\text{km/s}}{250\,\text{Mpc}} = 72.0\,\tfrac{\text{km/s}}{\text{Mpc}}$.
 
-**Formula:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$, $v = c\,z$ and $v = H_0\,d$, so $d = \dfrac{v}{H_0} = \dfrac{c\,z}{H_0}$
+**Formula:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$ and $$
+\begin{aligned}
+&v = c\,z \\
+&v = H_0\,d \\
+&d = \dfrac{v}{H_0} \\
+&= \dfrac{c\,z}{H_0}
+\end{aligned}
+$$
 
 **Conversions:** None needed: the nanometres cancel in the redshift, and the speed is in kilometres per second and $H_0$ in $\tfrac{\text{km/s}}{\text{Mpc}}$, so the distance comes out in megaparsecs.
 
@@ -439,7 +517,13 @@ c) $d = \dfrac{v}{H_0} = \dfrac{10\,569\,\text{km/s}}{72.0\,\tfrac{\text{km/s}}{
 
 **Reading the graph:** The line passes through the origin and the grid point $(250\,\text{Mpc}, 18\,000\,\text{km/s})$, so $H_0 = \dfrac{18\,000\,\text{km/s}}{250\,\text{Mpc}} = 72.0\,\tfrac{\text{km/s}}{\text{Mpc}}$. The speed $0.10\,c = 2.998 \cdot 10^{4}\,\text{km/s}$ is greater than the top of the figure, $21\,000\,\text{km/s}$, so the point lies outside the figure.
 
-**Formula:** $v = H_0\,d$, so $d = \dfrac{v}{H_0}$ when $v = 0.10\,c$
+**Formula:** $v = H_0\,d$ and $$
+\begin{aligned}
+&d = \dfrac{v}{H_0} \\
+&v = 0.10\,c \\
+&d = \dfrac{0.10\,c}{H_0}
+\end{aligned}
+$$
 
 **Conversions:** None needed: the speed and $H_0$ are in kilometres per second and $\tfrac{\text{km/s}}{\text{Mpc}}$, so the distance comes out in megaparsecs.
 

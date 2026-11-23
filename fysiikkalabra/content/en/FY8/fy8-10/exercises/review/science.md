@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 22cfd6b61729f0ac
-Mode: delta (translation)
+CONTENT-HASH: f341f3b768cc86fe
+SCOPE: delta md-paragraphs,numbers,reflow,typography,wording from 22cfd6b61729f0ac base 64d4935
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- content/en/FY8/fy8-10/exercises/solutions.md (fy8-10-L3-04 Formula a): the aligned block wraps m_final and Q by hand (`\quad + 3\,m_\text{n}`, `\quad - m_\text{Kr}`), against the "never split by hand" rule. The physics is fine; the visual reviewer can judge it.
 
 ## Checked
-- New exercises fy8-10-L1-09, L2-09, L3-06 (en) compared with the reviewed fi set by script: same answer, unit, tolerance, figure, kind, lookup and hint count; every number in task texts and solutions identical to fi (decimal point instead of comma).
-- Recomputed independently: deuteron dm = 1.007276466621 + 1.00866491595 - 2.0135532001 = 0.0023882 u, E_B = 2.2246 MeV (2.225); hydrogen-atom mistake gives 2.736 MeV, outside the 2 % tolerance.
-- L2-09: 120 * 8.5 = 1020 MeV (true Sn-120 1020.5), 238 * 7.6 = 1809 MeV; graph readings 8.5 and 7.6 MeV agree with the figure description; 5 % tolerance fits a +-0.1 MeV reading.
-- L3-06: Q = 235 * (8.5 - 7.6) = 211.5 MeV (true values about 217 MeV, inside 15 %); Fe-56 estimate 56 * (8.4 - 8.8) = -22 MeV, sign and reasoning right; mass number conserved, "difference released as kinetic energy and radiation" correct.
-- Solutions: given, principle, symbolic formula, conversions, substitution, rounding reason and reasonableness all present and the same as fi; answers.py lines compute the same values (2.224592, 1020, 211.5).
-- Physics guardrails: nuclear (not atomic) masses stated in L1-09 so no electron bookkeeping; no wrong claims found.
-- Hash 22cfd6b61729f0ac at start and end.
+- I compared the removed text with the added text outside the Formula lines, ignoring whitespace. Only two Formula steps changed (L3-04 and L3-05). The rest is paragraph breaks, plus L3-04's parts b) and c) moved to a line of their own. No number, answer or tolerance changed.
+- L3-04 a) starts from Q = (m_initial − m_final)c², with m_initial = m_U + m_n and m_final = m_Ba + m_Kr + 3m_n. It simplifies symbolically to (m_U − m_Ba − m_Kr − 2m_n)c², which agrees with the substitution. Atomic masses are allowed, because the electrons balance (92 = 56 + 36). Parts b) and c) are unchanged.
+- L3-05:
+  - a) E = Lt and E = Δm_yr c² give Δm_yr = Lt/c².
+  - b) Δm = 4m_H − m(He-4) and f = Δm/(4m_H).
+  - c) Δm_yr = f·m_hydrogen, inverted correctly.
+  - d) the share = 10⁹·m_hydrogen/(0.70 M).
+  - Every step is right and in FY8 scope (mass–energy equivalence).
+- I recomputed both in one script with my own formulas. L3-04: 0.186033 u → 173.29 MeV, N = 2.562e21, E = 7.1135e10 J. L3-05: Δm_yr = 3.511e18 kg, f = 0.007119, m = 4.932e20 kg. Both agree with answers.py and with the JSON answers 7.11 and 4.9 inside their tolerance. Every other answer in the set is still inside its tolerance, against answers.py.
+- The hash was f341f3b768cc86fe at the start and at the end.

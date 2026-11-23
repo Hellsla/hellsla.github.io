@@ -216,7 +216,7 @@ Kuvaajassa on ympyröity kaksi suoran pistettä. Niistä luetaan b-kohdan kulmak
 
 ### d)
 **Kysytty:** miksi yhden mittauksen tulos $2{,}54\,\text{MJ/kg}$ on liian suuri ja kumpi tulos on luotettavampi
-**Periaate:** Energia säilyy. Kuumentimen energia $P\,t$ jakautuu kahteen osaan: höyrystämiseen ja lämpöön, joka johtuu huoneeseen. $P\,t = r\,\Delta m + P_\text{h}\,t$ (luku *Olomuodon muutokset*).
+**Periaate:** Energia säilyy. Kuumentimen energia $P\,t$ muuttuu veden ja astian sisäenergiaksi. Osa siitä höyrystää vettä, ja osa siirtyy lämpönä huoneeseen. $P\,t = r\,\Delta m + P_\text{h}\,t$ (luku *Olomuodon muutokset*).
 **Mallivastaus:** Yhden mittauksen laskussa $r = \dfrac{P\,t}{\Delta m}$ oletetaan, että kuumentimen koko energia on kulunut höyrystämiseen. Todellisuudessa noin $70\,\text{W}$ johtuu huoneeseen. Teholla $600\,\text{W}$ höyrystämiseen jää siis vain noin $530\,\text{W}$. Laskussa on liikaa energiaa samaa massaa kohti. Siksi tulos on noin $\dfrac{P}{P - P_\text{h}} = 600 : 530 \approx 1{,}13$-kertainen eli noin $13\,\%$ liian suuri. Kuvaajasta saatu tulos on luotettavampi. Häviöteho pysyy vakiona, joten se siirtää suoraa sivulle, mutta ei muuta suoran kulmakerrointa. Siksi kulmakertoimesta laskettu $r$ ei sisällä häviötä. Lisäksi on viisi mittausta, ja suora on sovitettu niiden välistä. Se pienentää yksittäisen lukeman satunnaisvirheen vaikutusta. Menetelmässä oletetaan, että häviöteho on sama kaikilla tehoilla. Oletus on perusteltu, koska kiehuva vesi on aina $100\,{}^\circ\text{C}$:ssa. Myös se, että pisteet asettuvat suoralle, tukee oletusta.
 
 ### Yleisiä virheitä
@@ -295,7 +295,7 @@ s &= \dfrac{21\,537\,\text{J} - 1890\,\text{J} - 2996\,\text{J}}{0{,}0500\,\text
 &= 333\,\text{kJ/kg}
 \end{aligned}
 $$
-**Vastaus:** $333\,\text{kJ/kg}$. Vastauksessa on kolme merkitsevää numeroa, kuten mittaustuloksissa. Ryhmän johtopäätös ei pidä. Korjattu tulos on sama kuin taulukkoarvo $334\,\text{kJ/kg}$. Ero johtui väärästä oletuksesta, ei taulukosta. Muki ei myöskään selitä eroa. Jos muki ottaisi lämpöä, ryhmän kaava laskisi senkin jään hyväksi. Tulos olisi silloin liian suuri. Ero $1890\,\text{J}$ vaatisi kuitenkin, että mukin lämpökapasiteetti on noin $1890\,\text{J} : 25{,}7\,\text{K} \approx 70\,\text{J/K}$. Styroksimuki painaa vain muutaman gramman, ja sen lämpökapasiteetti on vain muutama $\text{J/K}$. Lisäksi korjattu arvo on jo sama kuin taulukossa.
+**Vastaus:** $333\,\text{kJ/kg}$. Vastauksessa on kolme merkitsevää numeroa, kuten mittaustuloksissa. Ryhmän johtopäätös ei pidä. Korjattu tulos on sama kuin taulukkoarvo $334\,\text{kJ/kg}$. Ero johtui väärästä oletuksesta, ei taulukosta. Muki ei myöskään selitä eroa. Jos muki ottaisi lämpöä, ryhmän kaava laskisi senkin jään hyväksi. Tulos olisi silloin liian suuri. Ero $1890\,\text{J}$ vaatisi kuitenkin, että mukin lämpökapasiteetti on noin $1890\,\text{J} : 25{,}7\,\text{K} \approx 73{,}5\,\text{J/K}$. Styroksimuki painaa vain muutaman gramman, ja sen lämpökapasiteetti on vain muutama $\text{J/K}$. Lisäksi korjattu arvo on jo sama kuin taulukossa.
 **Järkevyys:** Jään lämpeneminen vie $1890\,\text{J}$. Se on vain noin $9\,\%$ veden luovuttamasta lämmöstä. Kun se jaetaan pienellä jään massalla, saadaan $38\,\text{kJ/kg}$. Se on juuri tulosten ero $371 - 333$. Korjattu arvo poikkeaa taulukosta alle prosentin. Se on mittausten tarkkuuden rajoissa.
 
 ### c)
@@ -484,7 +484,7 @@ s &= \dfrac{200\,\text{kJ}}{0{,}60\,\text{kg}} \\
 &\approx 333\,\text{kJ/kg}
 \end{aligned}
 $$
-**Vastaus:** $s \approx 3{,}3 \cdot 10^{2}\,\text{kJ/kg}$, kaksi merkitsevää numeroa. Taulukon arvo on $333\,\text{kJ/kg}$, joten tulos on sama.
+**Vastaus:** $s \approx 3{,}3 \cdot 10^{2}\,\text{kJ/kg}$, kaksi merkitsevää numeroa. Taulukon arvo on $334\,\text{kJ/kg}$, joten tulos on sama kahden merkitsevän numeron tarkkuudella.
 **Järkevyys:** Sulamiseen kuluu $200\,\text{kJ}$ eli kymmenkertainen määrä jään lämmittämiseen kuluneeseen $20\,\text{kJ}$:iin verrattuna, vaikka lämpötila ei muutu: sulaminen on energiavaltainen vaihe. $333\,\text{kJ/kg}$ vastaa veden lämmittämistä noin $80\,\text{K}$.
 
 ### c)

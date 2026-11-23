@@ -55,10 +55,10 @@ $6\,\text{h}$ is three half-lives, so the number is halved three times: $8000 \c
 
 Source: literature values from the NNDC NuDat 3 database (Brookhaven National Laboratory), rounded to three significant figures. For iodine-131 the established value $8.02\,\text{d}$ is used. Different evaluations give its half-life as about $8.021$–$8.025\,\text{d}$, so rounding can also give $8.03\,\text{d}$. The calculations in this chapter use $8.02\,\text{d}$; a more precise value would change the results only in the third significant figure.
 
-<figure class="unit-photo"><img src="pics/fy8/geiger-counter.webp" alt="An old beige radiation meter on a white table: the box has a needle display and a control knob, and a round probe on a handle is connected to it by a cable."><figcaption>A Geiger–Müller counter counts the ionising particles that hit its probe. When the counter is kept in the same place, the count rate is proportional to the activity of the source.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy8/geiger-counter.webp" alt="An old beige radiation meter on a white table: the box has a needle display and a control knob, and a round probe on a handle is connected to it by a cable."><figcaption>A Geiger–Müller counter counts the ionising particles that hit its probe. When the counter is kept in the same place, the count rate, after the background is subtracted, is proportional to the activity of the source.</figcaption></figure>
 
 ### Activity
-The **activity** $A$ of a sample is the number of decays in it per unit of time. Its unit is the becquerel: $1\,\text{Bq}$ is one decay per second, that is, $1\,\tfrac{1}{\text{s}}$. Because every nucleus is equally likely to decay, the activity is directly proportional to the number of undecayed nuclei: when half of the nuclei are left, the activity has also halved. A radiation meter does not measure the activity directly. It counts the pulses from the quanta of radiation that hit its detector. The number of pulses is proportional to the activity, but the **background radiation** of the surroundings is always added to it.
+The **activity** $A$ of a sample is the number of decays in it per unit of time. Its unit is the becquerel: $1\,\text{Bq}$ is one decay per second, that is, $1\,\tfrac{1}{\text{s}}$. Because every nucleus is equally likely to decay, the activity is directly proportional to the number of undecayed nuclei: when half of the nuclei are left, the activity has also halved. A radiation meter does not measure the activity directly. It counts the pulses from the ionising particles and photons that hit its detector. The number of pulses is proportional to the activity, but the **background radiation** of the surroundings is always added to it.
 
 ## Formula: The decay law
 
@@ -254,7 +254,7 @@ A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}
 &= 550\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{20.0\,\text{d} / 8.02\,\text{d}} \\
 &= 550\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{2.4938} \\
 &= 550\,\text{MBq} \cdot 0.17754 \\
-&\approx 97.65\,\text{MBq}
+&\approx 97.6\,\text{MBq}
 \end{aligned}
 ```
 

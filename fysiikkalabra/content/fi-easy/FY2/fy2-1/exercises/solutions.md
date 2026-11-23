@@ -2,7 +2,7 @@
 **Annettu:** kiven potentiaalienergia kalliolla $E_\text{p} = 50\,\text{J}$, liike-energia kalliolla $0\,\text{J}$, potentiaalienergia maassa $0\,\text{J}$
 **Kysytty:** kiven liike-energia $E_\text{k}$ juuri ennen maahan osumista yksikössä $\text{J}$
 **Periaate:** Ilmanvastus jätetään huomiotta. Silloin kiven ja Maan muodostamaan systeemiin ei tule energiaa, eikä siitä lähde energiaa pois. Systeemi on eristetty, joten energia säilyy: $E_\text{alussa} = E_\text{lopussa}$. Ilman kitkaa lämpöenergiaa ei synny.
-**Kaava:** Alussa on vain potentiaalienergiaa ja lopussa vain liike-energiaa: $E_\text{p} = E_\text{k}$, joten $E_\text{k} = E_\text{p}$
+**Kaava:** $E_\text{alussa} = E_\text{lopussa}$. Alussa on vain potentiaalienergiaa ja lopussa vain liike-energiaa, joten $E_\text{p} = E_\text{k}$ eli $E_\text{k} = E_\text{p}$
 **Muunnokset:** Energia on annettu jouleina ja vastaus kysytään jouleina, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{k} = E_\text{p} = 50\,\text{J}$
 **Vastaus:** $50\,\text{J}$, kaksi merkitsevää numeroa kuten potentiaalienergiassa $50\,\text{J}$.
@@ -12,7 +12,7 @@
 **Annettu:** lehteen imeytyvä säteilyenergia $E_\text{säteily} = 245\,\text{J}$, syntyvä kemiallinen energia $E_\text{kem} = 6{,}0\,\text{J}$
 **Kysytty:** lämpöenergiaksi muuttuva energia $E_\text{lämpö}$ yksikössä $\text{J}$
 **Periaate:** Lehti muuttaa imeytyneen säteilyenergian kemialliseksi energiaksi ja lämpöenergiaksi. Energiaa ei synny eikä katoa. Energian säilymislain mukaan $E_\text{alussa} = E_\text{lopussa}$.
-**Kaava:** $E_\text{säteily} = E_\text{kem} + E_\text{lämpö}$, joten $E_\text{lämpö} = E_\text{säteily} - E_\text{kem}$
+**Kaava:** $E_\text{alussa} = E_\text{lopussa}$, eli $E_\text{säteily} = E_\text{kem} + E_\text{lämpö}$, joten $E_\text{lämpö} = E_\text{säteily} - E_\text{kem}$
 **Muunnokset:** Kaikki energiat ovat jouleina, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{lämpö} = 245\,\text{J} - 6{,}0\,\text{J} = 239\,\text{J}$
 **Vastaus:** $239\,\text{J}$, kokonaisina jouleina. Säteilyenergia $245\,\text{J}$ on annettu joulen tarkkuudella, ja se rajoittaa erotuksen tarkkuutta.
@@ -23,7 +23,7 @@
 **Kysytty:** lämpöenergiaksi muuttunut energia $E_\text{lämpö}$ kohtien A ja C välillä yksikössä $\text{J}$
 **Periaate:** Skeittari, half-pipe ja ilma muodostavat eristetyn systeemin, joten energia säilyy: $E_\text{alussa} = E_\text{lopussa}$. Kitka muuttaa osan mekaanisesta energiasta lämpöenergiaksi. Siksi lopussa energiaa on mekaanisena energiana ja lämpöenergiana.
 **Kuvaajan lukeminen:** Kohdassa A on vain sininen potentiaalienergian pylväs. Sen yläreuna on ruudukon viivalla $700\,\text{J}$. Liike-energiaa ei ole, koska skeittari on levossa. Kohdassa C on vain oranssi liike-energian pylväs. Sen yläreuna on viivalla $500\,\text{J}$. Potentiaalienergiaa ei ole, koska pohja on nollataso. Kohdan B pylväitä ei tarvita.
-**Kaava:** $$ \begin{aligned} E_\text{p,A} + E_\text{k,A} &= E_\text{p,C} + E_\text{k,C} \\ &+ E_\text{lämpö} \end{aligned} $$, joten $$ \begin{aligned} E_\text{lämpö} &= (E_\text{p,A} + E_\text{k,A}) \\ &- (E_\text{p,C} + E_\text{k,C}) \end{aligned} $$
+**Kaava:** $E_\text{alussa} = E_\text{lopussa}$, eli $$ \begin{aligned} E_\text{p,A} + E_\text{k,A} &= E_\text{p,C} + E_\text{k,C} \\ &+ E_\text{lämpö} \end{aligned} $$, joten $$ \begin{aligned} E_\text{lämpö} &= (E_\text{p,A} + E_\text{k,A}) \\ &- (E_\text{p,C} + E_\text{k,C}) \end{aligned} $$
 **Muunnokset:** Kaikki energiat ovat jouleina, joten muunnoksia ei tarvita.
 **Sijoitus:** $$
 \begin{aligned}
@@ -50,7 +50,7 @@ Alun energialajit ovat siis a) kemiallinen energia, b) säteilyenergia ja c) pot
 **Annettu:** pulkan potentiaalienergia ylhäällä $E_\text{p} = 600\,\text{J}$, kitkan lämpöenergiaksi muuttama energia $E_\text{lämpö} = 90\,\text{J}$, potentiaalienergia mäen alla $0\,\text{J}$
 **Kysytty:** liike-energia $E_\text{k}$ mäen alla yksikössä $\text{J}$
 **Periaate:** Pulkka, mäki ja ympäristö muodostavat eristetyn systeemin, joten energia säilyy: $E_\text{alussa} = E_\text{lopussa}$. Alussa kaikki energia on potentiaalienergiaa. Lopussa se on liike-energiaa ja lämpöenergiaa. Kitka on muuttanut osan energiasta lämpöenergiaksi.
-**Kaava:** $E_\text{p} = E_\text{k} + E_\text{lämpö}$, joten $E_\text{k} = E_\text{p} - E_\text{lämpö}$
+**Kaava:** $E_\text{alussa} = E_\text{lopussa}$, eli $E_\text{p} = E_\text{k} + E_\text{lämpö}$, joten $E_\text{k} = E_\text{p} - E_\text{lämpö}$
 **Muunnokset:** Kaikki energiat ovat jouleina, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{k} = 600\,\text{J} - 90\,\text{J} = 510\,\text{J}$
 **Vastaus:** $510\,\text{J}$, kolme merkitsevää numeroa kuten potentiaalienergiassa $600\,\text{J}$.
@@ -90,7 +90,7 @@ Väitteet 2 ja 4 ovat epätosia. Energia ei kulu loppuun. Lämpöenergia kuuluu 
 **Annettu:** polttoaineen massa $m = 2{,}0\,\text{kg}$ (bensiini); taulukosta (MAFY-taulukko, polttoaineiden lämpöarvot, bensiini) $H = 43{,}4\,\text{MJ/kg}$
 **Kysytty:** palamisessa vapautuva kemiallinen energia $E$ yksikössä $\text{MJ}$
 **Periaate:** Energiaa ei synny eikä katoa, vaan se muuttaa muotoa. Palamisessa bensiinin kemiallinen energia muuttuu liike-energiaksi ja lämpöenergiaksi, ja muuttuvan energian määrä on yhtä suuri kuin vapautuva kemiallinen energia. Lämpöarvo $H$ kertoo vapautuvan energian yhtä massayksikköä kohti.
-**Kaava:** $E = Hm$
+**Kaava:** Lämpöarvo on vapautuvan energian suhde polttoaineen massaan, $H = \dfrac{E}{m}$, joten $E = Hm$
 **Muunnokset:** Lämpöarvo on jo yksikössä $\text{MJ/kg}$ ja massa kilogrammoina, joten vastaus tulee suoraan megajouleina eikä muunnoksia tarvita.
 **Sijoitus:** $E = 43{,}4\,\dfrac{\text{MJ}}{\text{kg}} \cdot 2{,}0\,\text{kg} = 86{,}8\,\text{MJ}$
 **Vastaus:** $E \approx 87\,\text{MJ}$, kaksi merkitsevää numeroa kuten massassa $2{,}0\,\text{kg}$. Lämpöarvo $H = 43{,}4\,\text{MJ/kg}$ on MAFY-taulukosta (polttoaineiden lämpöarvot, bensiini); eri taulukoiden arvot poikkeavat hieman toisistaan, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
@@ -100,7 +100,7 @@ Väitteet 2 ja 4 ovat epätosia. Energia ei kulu loppuun. Lämpöenergia kuuluu 
 **Annettu:** akusta vapautuva kemiallinen energia $E_\text{kem} = 3{,}00\,\text{kJ}$, potkulaudan ja kuljettajan liike-energia $E_\text{k} = 2150\,\text{J}$
 **Kysytty:** lämpöenergiaksi muuttuva energia $E_\text{lämpö}$ yksikössä $\text{J}$
 **Periaate:** Akun kemiallinen energia muuttuu sähköenergian kautta liike-energiaksi ja lämpöenergiaksi. Energiaa ei synny eikä katoa. Energian säilymislain mukaan $E_\text{alussa} = E_\text{lopussa}$.
-**Kaava:** $E_\text{kem} = E_\text{k} + E_\text{lämpö}$, joten $E_\text{lämpö} = E_\text{kem} - E_\text{k}$
+**Kaava:** $E_\text{alussa} = E_\text{lopussa}$, eli $E_\text{kem} = E_\text{k} + E_\text{lämpö}$, joten $E_\text{lämpö} = E_\text{kem} - E_\text{k}$
 **Muunnokset:** Kemiallinen energia on kilojouleina ja liike-energia jouleina. Etuliite kilo tarkoittaa tuhatta, joten sijoitetaan $3{,}00\,\text{kJ} = 3{,}00 \cdot 1000\,\text{J} = 3000\,\text{J}$.
 **Sijoitus:** $E_\text{lämpö} = 3000\,\text{J} - 2150\,\text{J} = 850\,\text{J}$
 **Vastaus:** $850\,\text{J}$, kymmenen joulen tarkkuudella. Kemiallinen energia $3{,}00\,\text{kJ}$ on annettu kymmenen joulen tarkkuudella.
@@ -110,7 +110,7 @@ Väitteet 2 ja 4 ovat epätosia. Energia ei kulu loppuun. Lämpöenergia kuuluu 
 **Annettu:** liike-energia alapäässä $E_\text{k} = 2400\,\text{J}$, kitkan lämpöenergiaksi muuttama energia $E_\text{lämpö} = 0{,}60\,\text{kJ}$, potentiaalienergia alapäässä $0\,\text{J}$, lapsi lähtee levosta
 **Kysytty:** potentiaalienergia $E_\text{p}$ yläpäässä yksikössä $\text{kJ}$
 **Periaate:** Lapsi, liukumäki ja vesi muodostavat eristetyn systeemin, joten energia säilyy: $E_\text{alussa} = E_\text{lopussa}$. Yläpäässä lapsi on levossa, joten koko energia on potentiaalienergiaa.
-**Kaava:** $E_\text{p} = E_\text{k} + E_\text{lämpö}$. Kaava on jo ratkaistu kysytyn suureen mukaan.
+**Kaava:** $E_\text{alussa} = E_\text{lopussa}$. Yläpäässä lapsi on levossa ja alapäässä potentiaalienergia on nolla, joten $E_\text{p} = E_\text{k} + E_\text{lämpö}$. Kaava on jo ratkaistu kysytyn suureen suhteen.
 **Muunnokset:** Vastaus kysytään kilojouleina, mutta liike-energia on jouleina. Joule on tuhannesosa kilojoulesta, joten sijoitetaan $2400\,\text{J} = 2400 \cdot 0{,}001\,\text{kJ} = 2{,}4\,\text{kJ}$.
 **Sijoitus:** $E_\text{p} = 2{,}4\,\text{kJ} + 0{,}60\,\text{kJ} = 3{,}0\,\text{kJ}$
 **Vastaus:** $3{,}0\,\text{kJ}$, kaksi merkitsevää numeroa kuten liike-energiassa $2400\,\text{J}$ eli $2{,}4\,\text{kJ}$.
@@ -120,7 +120,7 @@ Väitteet 2 ja 4 ovat epätosia. Energia ei kulu loppuun. Lämpöenergia kuuluu 
 **Annettu:** potentiaalienergia ylimmässä kohdassa $E_\text{p} = 0{,}36\,\text{kJ}$, keinu lähtee levosta ja pysähtyy lopuksi alimpaan kohtaan, ääntä ei oteta huomioon
 **Kysytty:** lämpöenergiaksi muuttuva energia yhteensä $E_\text{lämpö}$ yksikössä $\text{J}$
 **Periaate:** Lapsi, keinu, sen kiinnitykset ja ympäröivä ilma muodostavat eristetyn systeemin, joten energia säilyy. Lopussa keinu on levossa alimmassa kohdassa. Silloin sillä ei ole liike-energiaa eikä potentiaalienergiaa. Koko alkuenergia on muuttunut lämpöenergiaksi ilmanvastuksessa ja kiinnitysten kitkassa.
-**Kaava:** $E_\text{p} = E_\text{lämpö}$, joten $E_\text{lämpö} = E_\text{p}$
+**Kaava:** $E_\text{alussa} = E_\text{lopussa}$, eli $E_\text{p} = E_\text{lämpö}$, joten $E_\text{lämpö} = E_\text{p}$
 **Muunnokset:** Etuliite kilo tarkoittaa tuhatta, joten sijoitetaan $0{,}36\,\text{kJ} = 0{,}36 \cdot 1000\,\text{J} = 360\,\text{J}$.
 **Sijoitus:** $E_\text{lämpö} = E_\text{p} = 360\,\text{J}$
 **Vastaus:** $360\,\text{J}$ eli $3{,}6 \cdot 10^{2}\,\text{J}$, kaksi merkitsevää numeroa kuten tiedossa $0{,}36\,\text{kJ}$.
@@ -130,7 +130,7 @@ Väitteet 2 ja 4 ovat epätosia. Energia ei kulu loppuun. Lämpöenergia kuuluu 
 **Annettu:** keittimeen tuleva sähköenergia $E_\text{sähkö} = 360\,\text{kJ}$, veteen lämpönä siirtyvä energia $E_\text{vesi} = 331\,\text{kJ}$
 **Kysytty:** keittimeen ja ympäristöön päätyvä energia $E_\text{muu}$ yksikössä $\text{J}$
 **Periaate:** Sähköenergia muuttuu lämpöenergiaksi. Osa siitä päätyy veteen. Muu energia päätyy keittimeen ja ympäristöön. Energiaa ei synny eikä katoa, joten $E_\text{alussa} = E_\text{lopussa}$.
-**Kaava:** $E_\text{sähkö} = E_\text{vesi} + E_\text{muu}$, joten $E_\text{muu} = E_\text{sähkö} - E_\text{vesi}$
+**Kaava:** $E_\text{alussa} = E_\text{lopussa}$, eli $E_\text{sähkö} = E_\text{vesi} + E_\text{muu}$, joten $E_\text{muu} = E_\text{sähkö} - E_\text{vesi}$
 **Muunnokset:** Etuliite kilo tarkoittaa tuhatta, joten sijoitetaan $360\,\text{kJ} = 360 \cdot 1000\,\text{J} = 360\,000\,\text{J}$ ja $331\,\text{kJ} = 331 \cdot 1000\,\text{J} = 331\,000\,\text{J}$.
 **Sijoitus:** $E_\text{muu} = 360\,000\,\text{J} - 331\,000\,\text{J} = 29\,000\,\text{J}$
 **Vastaus:** $29\,000\,\text{J}$ eli $2{,}9 \cdot 10^{4}\,\text{J}$, kaksi merkitsevää numeroa. Tiedot on annettu kilojoulen tarkkuudella, ja erotus on $29\,\text{kJ}$.
@@ -145,7 +145,7 @@ $$.
 **Annettu:** tilojen lämmitys $36{,}0\,\text{GJ}$, lämmin käyttövesi $10{,}5\,\text{GJ}$, sähkölaitteet ja valaistus $9{,}0\,\text{GJ}$, sauna $4{,}5\,\text{GJ}$
 **Kysytty:** tilojen lämmityksen osuus koko kulutuksesta prosentteina ja suurin säästökohde
 **Periaate:** Osuus kertoo, kuinka suuri osa on kokonaisuudesta. Kokonaiskulutus on kaikkien käyttökohteiden energioiden summa, koska käyttökohteet eivät mene päällekkäin.
-**Kaava:** $$ \begin{aligned} E_\text{yht} &= E_\text{lämmitys} + E_\text{vesi} \\ &+ E_\text{sähkö} + E_\text{sauna} \end{aligned} $$ ja osuus $= \dfrac{E_\text{lämmitys}}{E_\text{yht}}$
+**Kaava:** Osuus on osan suhde kokonaisuuteen, osuus $= \dfrac{E_\text{lämmitys}}{E_\text{yht}}$, ja kokonaisuus on summa $$ \begin{aligned} E_\text{yht} &= E_\text{lämmitys} + E_\text{vesi} \\ &+ E_\text{sähkö} + E_\text{sauna} \end{aligned} $$
 **Muunnokset:** Kaikki energiat ovat gigajouleina, joten muunnoksia ei tarvita. Osuus muutetaan prosenteiksi kertomalla sadalla.
 **Sijoitus:** Summa on $$
 \begin{aligned}
@@ -161,7 +161,7 @@ $$, joten osuus on $\dfrac{36{,}0\,\text{GJ}}{60{,}0\,\text{GJ}} = 0{,}600 = 60{
 **Annettu:** putoavan veden potentiaalienergian väheneminen $100\,\text{J}$ kierroksella, generaattorin sähköenergia $100\,\text{J}$, pumpun käyttämä sähköenergia $80\,\text{J}$, vesi palaa yläaltaaseen
 **Kysytty:** kierroksella tyhjästä syntyvä energia $E_\text{luotu}$ yksikössä $\text{J}$ ja se, mikä energiaperiaate rikkoutuu
 **Periaate:** Energia säilyy: eristetyssä systeemissä $E_\text{alussa} = E_\text{lopussa}$. Kierroksen lopussa vesi on taas yläaltaassa. Veden energia on siis sama kuin alussa. Koko laitteen kokonaisenergia ei saa muuttua, kun mikään ei tule ulkopuolelta.
-**Kaava:** Lamppuun jäävä energia on $E_\text{lamppu} = E_\text{sähkö} - E_\text{pumppu}$. Vesi on kierroksen jälkeen ennallaan, joten sama energia on laitteeseen luotua energiaa: $E_\text{luotu} = E_\text{lamppu}$
+**Kaava:** Energian säilymislain mukaan laite ei voi tuottaa energiaa tyhjästä. Lamppuun jäävä energia on $E_\text{lamppu} = E_\text{sähkö} - E_\text{pumppu}$. Vesi on kierroksen jälkeen ennallaan, joten sama energia on laitteeseen luotua energiaa: $E_\text{luotu} = E_\text{lamppu}$
 **Muunnokset:** Kaikki energiat ovat jouleina, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{luotu} = E_\text{lamppu} = 100\,\text{J} - 80\,\text{J} = 20\,\text{J}$
 **Vastaus:** $20\,\text{J}$ kierrosta kohti, kaksi merkitsevää numeroa kuten tiedoissa. Väite rikkoo energian säilymislakia, koska energiaa ei voi syntyä tyhjästä. Laitteessa pitäisi syntyä $20\,\text{J}$ lisää energiaa joka kierroksella.
@@ -171,7 +171,7 @@ $$, joten osuus on $\dfrac{36{,}0\,\text{GJ}}{60{,}0\,\text{GJ}} = 0{,}600 = 60{
 **Annettu:** jokaisen lampun sähköenergia $E_\text{sähkö} = 216\,\text{kJ}$; valoksi muuttuva energia hehkulampulla $11\,\text{kJ}$, halogeenilampulla $16\,\text{kJ}$ ja LED-lampulla $54\,\text{kJ}$ (esimerkkilukuja)
 **Kysytty:** hehkulampun ja LED-lampun lämpöenergioiden erotus $\Delta E_\text{lämpö}$ yksikössä $\text{kJ}$
 **Periaate:** Lamppu muuttaa sähköenergian valoksi ja lämpöenergiaksi. Energiaa ei synny eikä katoa, joten $E_\text{sähkö} = E_\text{valo} + E_\text{lämpö}$.
-**Kaava:** $E_\text{lämpö} = E_\text{sähkö} - E_\text{valo}$ kummallekin lampulle ja $$ \begin{aligned} \Delta E_\text{lämpö} &= E_\text{lämpö,hehku} \\ &- E_\text{lämpö,LED} \end{aligned} $$
+**Kaava:** $E_\text{alussa} = E_\text{lopussa}$, eli $E_\text{lämpö} = E_\text{sähkö} - E_\text{valo}$ kummallekin lampulle ja $$ \begin{aligned} \Delta E_\text{lämpö} &= E_\text{lämpö,hehku} \\ &- E_\text{lämpö,LED} \end{aligned} $$
 **Muunnokset:** Kaikki energiat ovat kilojouleina, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{lämpö,hehku} = 216\,\text{kJ} - 11\,\text{kJ} = 205\,\text{kJ}$ ja $E_\text{lämpö,LED} = 216\,\text{kJ} - 54\,\text{kJ} = 162\,\text{kJ}$, joten $\Delta E_\text{lämpö} = 205\,\text{kJ} - 162\,\text{kJ} = 43\,\text{kJ}$
 **Vastaus:** Hehkulamppu tuottaa $43\,\text{kJ}$ enemmän lämpöenergiaa. Kaksi merkitsevää numeroa vastaa valon energian $11\,\text{kJ}$ tarkkuutta.
@@ -182,7 +182,7 @@ $$, joten osuus on $\dfrac{36{,}0\,\text{GJ}}{60{,}0\,\text{GJ}} = 0{,}600 = 60{
 **Kysytty:** kohtaan B mennessä lämpöenergiaksi muuttuneen energian osuus alkuperäisestä energiasta prosentteina
 **Periaate:** Skeittari, half-pipe ja ympäristö muodostavat eristetyn systeemin, joten energia säilyy. Kitka muuttaa mekaanista energiaa lämpöenergiaksi, joten lämpöenergia on alkuenergian ja kohdan B mekaanisen energian erotus.
 **Kuvaajan lukeminen:** Kohdassa A on vain potentiaalienergian pylväs, jonka yläreuna on ruudukon viivalla $700\,\text{J}$, ja liike-energia on nolla, koska skeittari on levossa. Kohdassa B potentiaalienergian ja liike-energian pylväät yltävät kumpikin viivalle $300\,\text{J}$.
-**Kaava:** $E_\text{A} = E_\text{B} + E_\text{lämpö}$, joten $E_\text{lämpö} = E_\text{A} - E_\text{B}$, ja osuus on $p = \dfrac{E_\text{lämpö}}{E_\text{A}} \cdot 100\,\%$
+**Kaava:** $E_\text{alussa} = E_\text{lopussa}$, eli $E_\text{A} = E_\text{B} + E_\text{lämpö}$, joten $E_\text{lämpö} = E_\text{A} - E_\text{B}$, ja osuus on $p = \dfrac{E_\text{lämpö}}{E_\text{A}} \cdot 100\,\%$
 **Muunnokset:** Kaikki energiat ovat jouleina, joten muunnoksia ei tarvita.
 **Sijoitus:** $$
 \begin{aligned}
@@ -198,7 +198,7 @@ $$, ja $p = \dfrac{100\,\text{J}}{700\,\text{J}} \cdot 100\,\% = 14{,}3\,\%$
 **Annettu:** kohdassa A $E_\text{p} = 900\,\text{J}$ ja $E_\text{k} = 0\,\text{J}$; kohdassa B $E_\text{p} = 400\,\text{J}$ ja $E_\text{k} = 480\,\text{J}$; kohdassa C $E_\text{p} = 0\,\text{J}$ ja $E_\text{k} = 750\,\text{J}$
 **Kysytty:** kohtien B ja C välillä lämpöenergiaksi muuttuva energia $\Delta E_\text{lämpö}$ yksikössä $\text{J}$
 **Periaate:** Systeemin kokonaisenergia säilyy. Siksi jokaisessa kohdassa $E_\text{p} + E_\text{k} + E_\text{lämpö}$ on yhtä suuri kuin kohdassa A. Siellä se on $900\,\text{J}$. Lämpöenergia on se osa, joka mekaaniselta energialta puuttuu.
-**Kaava:** $E_\text{lämpö} = E_\text{A} - E_\text{p} - E_\text{k}$ kussakin kohdassa, ja kohtien B ja C välillä $$ \begin{aligned} \Delta E_\text{lämpö} &= E_\text{lämpö,C} \\ &- E_\text{lämpö,B} \end{aligned} $$
+**Kaava:** Kussakin kohdassa $E_\text{A} = E_\text{p} + E_\text{k} + E_\text{lämpö}$, joten $E_\text{lämpö} = E_\text{A} - E_\text{p} - E_\text{k}$, ja kohtien B ja C välillä $$ \begin{aligned} \Delta E_\text{lämpö} &= E_\text{lämpö,C} \\ &- E_\text{lämpö,B} \end{aligned} $$
 **Muunnokset:** Kaikki energiat ovat jouleina, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{lämpö,B} = 900\,\text{J} - 400\,\text{J} - 480\,\text{J} = 20\,\text{J}$ ja $E_\text{lämpö,C} = 900\,\text{J} - 0\,\text{J} - 750\,\text{J} = 150\,\text{J}$, joten $\Delta E_\text{lämpö} = 150\,\text{J} - 20\,\text{J} = 130\,\text{J}$
 **Vastaus:** $130\,\text{J}$, kaksi merkitsevää numeroa. Lähtötiedot on annettu kymmenen joulen tarkkuudella.
@@ -264,7 +264,7 @@ $$. Raja-arvo: jos korvataan täsmälleen $70\,\text{PJ}$, fossiilista energiaa 
 **Annettu:** vaiheiden tulo ja hyödyllinen energia: paneeli $5{,}00\,\text{MJ} \to 0{,}80\,\text{MJ}$, latausohjain ja akku $0{,}80\,\text{MJ} \to 0{,}64\,\text{MJ}$, akun purku ja johdot $0{,}64\,\text{MJ} \to 0{,}56\,\text{MJ}$, LED-lamppu $0{,}56\,\text{MJ} \to 0{,}14\,\text{MJ}$
 **Kysytty:** a) lämpöenergia $E_\text{lämpö}$ jokaisessa vaiheessa ja yhteensä yksikössä $\text{MJ}$; b) vaihe, jossa lämpöenergiaa syntyy eniten, ja sen osuus prosentteina; c) säilymislain tarkistus ja perustelu
 **Periaate:** Jokaisessa vaiheessa energia säilyy: $E_\text{tulo} = E_\text{ulos} + E_\text{lämpö}$. Mallissa oletetaan, että loppu energia muuttuu lämpöenergiaksi. Lämpöenergiaksi lasketaan siis se osa, joka ei jatka eteenpäin hyödyllisenä energiana. Koko ketjun lämpöenergia on vaiheiden lämpöenergioiden summa.
-**Kaava:** $E_\text{lämpö} = E_\text{tulo} - E_\text{ulos}$ kussakin vaiheessa ja $E_\text{lämpö,yht}$ on vaiheiden summa
+**Kaava:** $E_\text{tulo} = E_\text{ulos} + E_\text{lämpö}$, joten $E_\text{lämpö} = E_\text{tulo} - E_\text{ulos}$ kussakin vaiheessa ja $E_\text{lämpö,yht}$ on vaiheiden summa
 **Muunnokset:** Kaikki energiat ovat megajouleina, joten muunnoksia ei tarvita.
 **Sijoitus:** Paneelissa $5{,}00\,\text{MJ} - 0{,}80\,\text{MJ} = 4{,}20\,\text{MJ}$, latausohjaimessa ja akussa $0{,}80\,\text{MJ} - 0{,}64\,\text{MJ} = 0{,}16\,\text{MJ}$, akun purussa ja johdoissa $0{,}64\,\text{MJ} - 0{,}56\,\text{MJ} = 0{,}08\,\text{MJ}$ ja lampussa $0{,}56\,\text{MJ} - 0{,}14\,\text{MJ} = 0{,}42\,\text{MJ}$. Summa on $$
 \begin{aligned}

@@ -1,12 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 2ab8e54bc5beb6bd
-SCOPE: delta: tasks s7 (two loudspeakers in a yard, grid figure) and s8 (standing wave on a string, figure) with solutions, and the intro; other tasks not re-judged
+CONTENT-HASH: 01616f4e2d259322
+SCOPE: delta (old-content fixes, git diff origin/main)
 
-## Blocking
-None.
-
-## Polish
-- In the English solutions.md the fixed section headings "Yleisiä virheitä" and "Hyväksytään myös" are Finnish; if the build shows them to students, translate them (the parser may key on them, so check first).
-
-## Checked
-Both tasks need the figure to answer, have rising demand (path difference, then lowest frequency; wavelength, speed, three loops, 20 Hz not a resonance) and do not name the interference or standing-wave condition. Parts, points (12, 13), figures and answers match fi. Solutions complete a-d with common mistakes and accepted alternatives.
+Checked
+1. v_L (source) and v_H (listener) are consistent in the inquiry, solutions, rubric and unit.md; the bat solution now derives the double Doppler formula step by step; the task text states the intensity difference is ignored and the model answer and rubric agree with it. The fi, en and fi-easy versions carry the same changes with the same meaning.

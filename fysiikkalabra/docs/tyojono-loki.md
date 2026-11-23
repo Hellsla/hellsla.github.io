@@ -584,6 +584,8 @@ FY9 tehty: claude/fy9-oikoluku-aineisto (PR #626); samassa PR:ssä kohdan 19 ain
 FY4 tehty: claude/fy4-oikoluku-aineisto (PR #625); samassa PR:ssä kohdan 19 aineistotehtävät FY4-A1…A5. Lähteestä tarkistamatta: fy4-5 les:316 (YTL) ja fy4-11 les:290 (OTI).
 FY2 tehty: claude/fy2-oikoluku-aineisto (PR #632); samassa PR:ssä kohdan 19 aineistotehtävät FY2-A1…A5. Kaikki kurssit tehty; jäljellä vain `docs/physics-phrases-known/`:n rivit (FY5, FY6, FY9).
 
+FY9-yksiköiden viimeinen rivi (`units.tsv`, fy9-lampo) korjattu ja poistettu (claude/fy9-vanhat-loydokset, 2026-11-23): `docs/physics-phrases-known/` on tyhjä, kohta 18 valmis.
+
 ## [loki] 19. 45 soveltavaa aineistotehtävää FY1–FY9 (opettaja 2026-11-16)
 
 Toimeksianto sanatarkasti: `docs/audits/2026-11-16-aineistotehtavat.md` (viisi tehtävää per kurssi, tunnisteet FY1-A1 …
@@ -781,3 +783,16 @@ Avoimet huomiot (Polish, ei uusia kierroksia): koe k3-c, k4-c, k6-a, k6-c: sieve
 8 Virhekäsitys ja tiivistelmä avattaviin laatikoihin (opettaja 2026-11-13): sivupohja #713; "Yleinen virhekäsitys" -osa kaikissa FY1–FY8:n luvuissa (tarkistettu 2026-11-23, tekijät FY4 ja FY7 sekä grep). Kohta poistettu jonosta.
 
 8f Animoitu kuva (opettaja 2026-11-13): pilotti fy3-8 #649; FY3 fy3-9, fy3-3 #757; FY4 fy4-10 #761 (opettaja 2026-11-19 "ok"). Kohta poistettu jonosta.
+
+## [loki] 8g FY8 ja 15 fy8-9 (PR #823, claude/fy8-8g-15, 2026-11-23)
+
+Tehty: 8g FY8: luvut fy8-1…fy8-16 (kaikki kolme kieltä; Kaava-vaihe perusperiaatteesta, `aligned`-lohko), Sovella (fi, en, fi-easy) ja esimerkkikoe (fi). Sijoitus, vastaukset, toleranssit, tunnisteet ja luvut ennallaan; jätetty ennalleen kohdat, joissa Kaava on jo yksi peruslaki tai määritelmä, sekä sanalliset tehtävät. 15 fy8-9: "säteilykvanteista" → "ionisoivista hiukkasista ja fotoneista", esimerkin 97,65 → 97,6 MBq, Geiger-kuvatekstiin "taustan vähentämisen jälkeen" (fi, en, fi-easy).
+Työtapa: yksi developer (Sonnet medium) per luku, Sovella ja koe erikseen; `round.py` luvuittain; katselmoinnit rooleittain ja kielittäin 5–6 luvun erissä (science Opus medium, pedagogy ja visual Sonnet medium), uusintakierros fy8-6:lle, fy8-16:lle ja Sovellalle.
+Katselmointilöydökset korjattu: fy8-6 L2-06 (h₀:n 10⁻³⁴ pudonnut), fy8-6 L1-05 ja L3-04 (sovitettu suora ei kulje origon kautta: U_k ≈ (h/e)f + b), fy8-16 (\frac → \dfrac Kaava-riveillä), Sovella fy8-s3 d (36 cm:ssä lähde on vielä ≈ 3σ taustan yläpuolella; vastaus ja kriteeri: kauempana sen peittää pian taustan satunnainen vaihtelu).
+Opit: (1) Developer pudotti kerran potenssin (10⁻³⁴) Kaava-rivistä kaikilla kolmella kielellä; pedagogiakatselmointi löysi sen: pyydä kehittäjää tarkistamaan jokainen vakio ja yksikkö Kaava-riveiltä. (2) Lint vaatii ensimmäiselle Kaava-riville `=`; ensimmäinen yhtälö on siksi samalla rivillä kuin `**Kaava:**`. (3) `reviews.py verify` johtaa raportin SCOPE-rivin itse (`SCOPE: delta <luokat> from <hash> base <commit>`, hash ja commit mainin edellisestä PASS-raportista, luokat `changes()`:sta); paketin viimeisen raportin lainauksesta ei saa kopioida SCOPE-riviä. (4) Rinnakkaiskatselmoijia saa olla 20 kerrallaan.
+Avoimet huomiot (Polish, ei uusia kierroksia): fy8-6 L3-04 Kaava alkaa yhä `eU_k = hf` (olisi ≈), fy8-6 L3-01 `k = h/e`; fy8-11 11-11 tehtävätekstissä ylimääräinen piste reaktion jälkeen; fy8-9 `lesson-answers.py`:n kommentti 97,62 (oikea 97,65); fy8-10 L1-03 Kaava kehämäinen; useiden lukujen Kaava-rivit ovat luettelo, ei ketju (fy8-8 L2-05, L2-07, L3-03, fy8-11 L3-05); fy8-13 L2-10 puoliarvopaksuus eroaa luvun arvosta; fy8-14 L2-08 toleranssi.
+
+## [loki] 15 FY4-polish fy4-4 (claude/fy4-15-polish, 2026-11-23)
+
+Tehty (fi, en, fi-easy): koe 2 vaatii kolme mittausta (`min: 3` kokeessa ja ennusteen 2 paljastuksessa; simulaation massavalikossa on kolme arvoa); esimerkin kaava- ja sijoitusvaiheen `aligned`-rivit tasattu yhtäsuuruusmerkkien kohdalle (`\phantom` pois). Ennallaan: `valitse_d`-kuva (piirretään myöhemmin, opettaja 2026-11-23), tunnisteet, vastaukset ja UI-tekstit.
+Katselmoinnit: 9 (science Opus medium, pedagogy ja visual Sonnet medium, kolme kieltä), kaikki PASS, ei Blocking-löydöksiä. Avoimet Polish-huomiot (ei uutta kierrosta): "mittaukset" vs. "mallin arvot" simulaatiolukemista; esimerkin Järkevyys-vaihe sisältää toisen ajatuksen; "Valitse oikea voimakuvio" -otsikko; en: "the element" → "the slab", "ten percent" LaTeXiksi; fi-easy: "verrannollinen" selittämättä, check-3:n kysymys ei viimeisenä.

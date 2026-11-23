@@ -507,7 +507,7 @@
      "id": "b",
      "kind": "word",
      "points": 5,
-     "text": "Kalastaja heittää hiilikuituvavalla linjan alla. Selitä, miksi hän voi saada sähköiskun, vaikka vapa ei koske johtimeen. Arvioi pienin ilmaväli, joka voi lyödä läpi.",
+     "text": "Kalastaja heittää hiilikuituvavalla linjan alla. Selitä, miksi hän voi saada sähköiskun, vaikka vapa ei koske johtimeen. Arvioi, enintään kuinka pitkän ilmavälin yli läpilyönti tapahtuu varmasti.",
      "criteria": [
       {
        "text": "Selittää, että hiilikuitu johtaa sähköä, joten vavan kärki on lähes maan potentiaalissa, kun kalastaja seisoo maassa; ilmavälin yli on silloin koko johtimen ja maan välinen jännite.",
@@ -522,7 +522,7 @@
       {
        "key": "assumptions",
        "points": 1,
-       "detail": "Arvio on alaraja: ohuen johtimen lähellä kenttä on voimakkaampi kuin $\\tfrac{U}{d}$, ja kostea ilma ja lika heikentävät eristystä, joten valokaari voi syttyä selvästi pidemmästäkin välistä."
+       "detail": "Arvio on turvaetäisyyden alaraja, ei turvallinen etäisyys: ohuen johtimen lähellä kenttä on voimakkaampi kuin $\\tfrac{U}{d}$, ja kostea ilma ja lika heikentävät eristystä, joten valokaari voi syttyä selvästi pidemmästäkin välistä."
       },
       {
        "text": "Selittää seurauksen: läpilyönnin jälkeen virta kulkee valokaaren, vavan ja kalastajan kautta maahan, ja $12\\,\\text{kV}$:n jännite antaa kehon resistanssilla ampeerien suuruisen virran.",
@@ -855,7 +855,7 @@
     "fy4-7"
    ],
    "figure": "fy6-12/ex-vgraph",
-   "text": "Kaksi suurta metallilevyä on yhdensuuntaisina tyhjiössä, ja niiden välissä on homogeeninen sähkökenttä. Kuvaajassa on potentiaali $V$ etäisyyden $x$ funktiona, kun $x$ mitataan negatiivisesta levystä. Alfahiukkanen (heliumin ydin, varaus $+2e$) on levyjen välissä, ja siihen vaikuttaa vain sähköinen voima.\n\n- alkeisvaraus $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$\n- alfahiukkasen massa $6{,}645 \\cdot 10^{-27}\\,\\text{kg}$",
+   "text": "Kaksi suurta metallilevyä on yhdensuuntaisina tyhjiössä $5{,}0\\,\\text{cm}$:n etäisyydellä toisistaan, ja niiden välissä on homogeeninen sähkökenttä. Kuvaajassa on potentiaali $V$ etäisyyden $x$ funktiona, kun $x$ mitataan negatiivisesta levystä. Alfahiukkanen (heliumin ydin, varaus $+2e$) on levyjen välissä, ja siihen vaikuttaa vain sähköinen voima.\n\n- alkeisvaraus $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$\n- alfahiukkasen massa $6{,}645 \\cdot 10^{-27}\\,\\text{kg}$",
    "parts": [
     {
      "id": "a",

@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0742e66b95ebc481
-SCOPE: delta added-exercise from eddb481aa99052bc base 611fb7d5c174
+CONTENT-HASH: f6e0c13fb90edba1
+SCOPE: delta wording from 1d2e344571e5d8dc base 63ede90
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- L1-09: E_o = Hm = 40.6 x 2.5 = 101.5 MJ, eta = 80/101.5 = 78.8 %; E_o = Hm given in the task; eta < 100 %; losses with flue gases a right cause.
-- L2-09: fy2-4/grid arrows 8, 2, 6 squares; eta = 2/8 = 25 %; conservation check 2 + 6 = 8; figure's 'kinetic energy' label translated.
-- Efficiency of one device only (no chain): in scope.
-- check script (one run): every added answer recomputed from the task text with my own formulas, equal to answers.py and exercises.json; answer, unit, tolerance, figure and lookup identical to the reviewed Finnish; every number of the task texts and solutions identical en/fi.
-- MAFY lookup values agree with docs/mafy-arvot.tsv (VERIFIED 2026-11-12).
-- No scope breach, no guardrail break (A or B) found.
+- I ran the hash `--exercises --lang en` at the start and at the end. Both times it was f6e0c13fb90edba1, the same as in the packet.
+- Both Polish items from my previous report are fixed. solutions.md:144 (L1-07) now reads "Conservation of energy $E_\text{o} = E_\text{a} + E_\text{h}$, so $E_\text{h} = E_\text{o} - E_\text{a}$", and solutions.md:154 (L1-08) reads "Definition of efficiency $\eta = P_\text{a}/P_\text{o}$, so $P_\text{o} = P_\text{a}/\eta$".
+- The diff changes only the Finnish words in these two Formula lines. The symbols, the equations, the substitutions and the answers (9.0 kJ, 200 kW) are the same as in the version I passed.
+- L1-07: $36 - 27 = 9.0\,\text{kJ}$. L1-08: $180/0.90 = 200\,\text{kW}$. Both are correct.
+- The Formula lines still start from the basic principle (conservation, or the definition of efficiency) and are solved symbolically before substitution. No guardrail break.

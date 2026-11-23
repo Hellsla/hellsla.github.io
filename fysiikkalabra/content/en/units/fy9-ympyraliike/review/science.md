@@ -1,15 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: c0ad285a9610c83b
-SCOPE: delta: s9 "wire" -> "cable" in en sovella tasks.json and solutions.md (match fy5-2/kyltti figure alt text). Other tasks not re-judged.
+CONTENT-HASH: 58d9e80f175c148e
+SCOPE: delta (old-content fixes, git diff origin/main)
 
-## Blocking
-- None. Round 2 Blocking (alt text "cable" vs task "wire") is resolved: no "wire" remains in en tasks.json or solutions.md; figure label vaijeri = "cable".
-
-## Polish
-- Round 1 Polish stays recorded (s9 b 331 N vs 330 N).
-- Unit chart "normal acceleration" (unit.md, figures.json glossary) unchanged, outside this delta.
-
-## Checked
-- Grammar of "a cable runs", "the force in the cable", "the cable withstands", "fixed ... higher up" reads naturally in s9 a, b, d and solutions.
-- Physics and numbers unchanged (191 N, 380 N, 270 N, 29 %, 600 N limit, 19.5 kg).
-- Hash identical at start and end (c0ad285a9610c83b).
+1. Blocking: none.
+2. Checked: s3 d T = sqrt(1.95/8.0) = 0.4937 s (answer value, answers.py and solution agree). s9 T = 19.5 kg*9.81/sin 30 = 382.6 N, H = 331.3 N, V = 14.7 N, F = 331.7 N; 'aiemmin vaakakomponentti oli 331 N' is right. s8 static friction coefficient is mu_0 everywhere (task, solution, rubric), as in the course.
+3. Checked: teacher.md 20 + 7x15 + 17 = 142 from nine tasks, 'muut kahdeksan', NASA task named as real data.
+4. Language en: the changed numbers and wording were checked to carry the same values as fi.
