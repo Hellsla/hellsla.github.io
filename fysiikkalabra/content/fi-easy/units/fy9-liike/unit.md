@@ -116,7 +116,7 @@ paikka tasaisesti kiihtyvässä suoraviivaisessa liikkeessä :: x = x_0 + v_0\,t
 Tässä $v_0$ on alkunopeus ($\text{m/s}$) ja $a$ on kiihtyvyys ($\text{m/s}^2$). Vauhti kasvaa, kun $a$ ja $v$ ovat samansuuntaiset. Vauhti pienenee, kun ne ovat vastakkaissuuntaiset. Vapaassa pudotuksessa $a = g = 9{,}81\,\text{m/s}^2$ alaspäin, kun ilmanvastus on pieni.
 
 ```pysahdy
-Kappale liikkuu positiiviseen suuntaan ja sen kiihtyvyys on negatiivinen. Kasvaako vai pieneneekö vauhti?
+Kappale liikkuu positiiviseen suuntaan ja sen kiihtyvyys on negatiivinen. Kasvaako vai pieneekö vauhti?
 ---
 Vauhti pienenee. Nopeus ja kiihtyvyys ovat vastakkaissuuntaiset.
 ```
