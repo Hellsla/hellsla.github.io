@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 0847076788133655
+CONTENT-HASH: c490387b34b31487
 SCOPE: delta numbers,reflow,teacher-figure,wording from 9ce9f1634468bcd8 base 5d4ee2361db4
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md Formula lines — several chains stack "so … so" (or "; … ;") in one line; a full stop or "and" between the principle and the rearrangement would read slightly better. Optional.
+- [Minor] solutions.md Formula lines — some chains stack "so … so"; optional, unchanged from the previous round.
 
 ## Checked
-- Delta (solutions.md Formula/Substitution lines; round 2 fixes). en captures opened: open-exercises-L3-1280-3 (7-21 now E_arrived,A/B in Substitution, 7-22). The teacher-approved sankey figure was not re-judged.
-- Aligned rows, fractions, units with thin spaces, answer boxes and reasonableness blocks render intact; no Finnish symbols or words left in the changed English text (remaining Finnish strings are MAFY table names, proper names).
+- Delta: "internal energy" → "thermal energy" in 2 feedback strings (exercises.json), 3 sentences (solutions.md). The change swaps one phrase for another, with no numbers, symbols or line breaks affected.
+- Captures opened (lesson review/shots, existing layout): open-exercises-L3-1280-3, open-exercises-L2-1280-8 (solution block with the changed grid-loss sentence follows). Layout, aligned rows and answer boxes intact. The new wording is the same length class and cannot change line structure materially.
+- "Thermal energy" is used consistently in the changed sentences, matching the FY2 convention.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 5
