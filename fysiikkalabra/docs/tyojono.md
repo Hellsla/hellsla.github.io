@@ -115,10 +115,6 @@ PR 1 tehty (e2c7f5c, YTL/Abitti-tiedot). PR 2 tehty (#824: tehtäväindeksi `val
 Varattu: claude/11b-pr4-osaamisnakyma (PR 4 osaamisnäkymä)
 PR 4 (#830): uudet käyttöliittymätekstit, tietosuojalause, kuvat ja laattakuva `coach.svg` hyväksytty: opettaja 2026-11-23 tekijäsessioon ("Hyväksyn tekstit ja kuvat").
 
-## Ex-focus-leveys (opettaja 2026-11-23)
-Varattu: claude/ex-focus-leveys ("Avaa isoksi": lyhyen tehtävän ratkaisukenttä isonäkymän leveydelle, enintään 92 rem; jaettu muutos, vain ex-focus-säännöt)
-Uusi asettelu hyväksytty: opettaja 2026-11-23 suoraan tekijäsessioon ("hyväksyn muutokset"), kuvat `docs/audits/ex-focus-leveys/`.
-
 ## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
 17a PR 1 (#720) ja PR 2 (#741, manifesti ja pysyvä tallennus) sekä 17b PR 1 (#818, koko työ yhteen tiedostoon; tekstit opettaja 2026-11-23) tehty; webkit.org sallittu ympäristöön 2026-11-19, opettajan luvalla.
 Ohjeet ja päätökset K1–K9: `docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md`. Jokainen osa oma PR, yksin; uudet käyttöliittymätekstit PR:n kuvauksessa. Tallennusavaimia, tiedostomuotoja ja korttien id:itä ei muuteta.
