@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 23911fe276ddc524
-SCOPE: delta added-exercise from 9b35050b83c355e9 base 110ed2029320
+CONTENT-HASH: 1530a872a68fd59f
 
 ## Blocking
 
 ## Polish
 
-- solutions.md (redshift, Hubble time, CMB photon energy and similar) — the Formula reads "X and" followed straight by an aligned block, so the sentence has no verb before the display. Fix: end the lead-in with a colon ("$E = hf$, from which:") as the other fy8 sets now do.
-- solutions.md (Hubble-law tasks) — rows mix \frac and \dfrac in the same step, and the unaligned "=" lines sit under a left "&" rather than the quantity; only appearance, but the equals signs do not line up with the first row.
-- solutions.md (L2 helium fraction) — the nucleon mass m is introduced inside the Formula line, a Given-type step; acceptable but could sit in the Principle.
+- solutions.md (redshift, Hubble time, CMB photon energy and similar) — the Formula still reads "X and" followed straight by an aligned block, with no verb before the display. Fix: end the lead-in with a colon ("$E = hf$, from which:").
+- solutions.md (L2 helium fraction) — the nucleon mass m is introduced inside the Formula line; it could sit in the Principle.
 
 ## Checked
 
-- The derived formulas now follow from the basic laws: E = hf with f = c/λ; v = cz and v = H0 d giving d = cz/H0; t = d/v with v = H0 d giving t = 1/H0; Q = Δm c^2 with Δm from the reaction; the helium mass fraction from nucleon masses.
-- Each is simplified symbolically to the end, and Substitution uses the last form.
-- The Hubble-law ratio task (d_B = d_A v_B/v_A) shows both H0 expressions equated, which is the missing step for students.
-- The graph task now states v = H0 d first, then the slope and the least-squares fit as two ways to get H0.
-- Single-law tasks (z, v = cz, v = H0 d) are correctly left as one line.
-- Numbers, answers, tolerances, Conversions and Substitution are unchanged.
-- Hash matches the packet (--lang en).
+- The diff only changes \frac to \dfrac in the Formula rows. Numbers, symbols, order of steps, answers and tolerances are unchanged.
+- The mixed \frac and \dfrac polish item from the last round is fixed.
+- The derivations still run from basic laws to the derived formula (E = hf with f = c/λ; v = cz and v = H0 d; t = d/v; ratio of H0 expressions), each simplified to the end before substitution.
+- The \dfrac fractions are larger in aligned rows, so row legibility at 360 px is a visual-review item and not a pedagogy one.
+- No new exercise or figure content, so the level mix and the hubble-t figure checks from the earlier pass still hold.
