@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2d84a1de83570817
+CONTENT-HASH: db95bbe75962f18c
 
 ## Blocking
 None.
@@ -7,14 +7,8 @@ None.
 ## Polish
 None.
 
-## Checked (delta 2026-10-31)
-- `topic` "aine" fits the physics area.
-- TVT `guides` (kuvaaja, suoran sovitus, kulmakerroin, epävarmuus) match the prerequisite: a linear fit whose slope and its uncertainty give the result; inline links agree.
-- Report link `[[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]` fits the report task; no physics changed.
-
-## Delta 2 (2026-10-31)
-- Raportoi: the tvt-tyoselostus link moved to its own sentence; wording only, no physics changed.
-
-## Delta 4 (2026-10-31)
-
-- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+## Checked (delta 5, 2026-11-23)
+- Diff (`git diff HEAD`, investigation.md only, 6 lines): every change replaces `\ ` with the thin space `\,` between a number and its unit (e, c, h known value, 1 nm = 10^-9 m, d = 1 mm / N, the h ± Δh result form). No number, symbol, formula or unit changed.
+- Values still correct: e = 1,602 176 634·10^-19 C, c = 2,997 924 58·10^8 m/s, h = 6,626 070 15·10^-34 J·s (exact SI values); 1 nm = 10^-9 m; d = 1 mm/N.
+- The remaining `\ ` are in table headers of the form quantity (unit) (U (V), I (mA), λ (nm), 1/λ (1/m), U_k (V)): a word space between the symbol and the bracketed unit reads correctly and is no number–unit pair.
+- The rest of the physics (U_k = hc/(eλ), slope k = hc/e in V·m, h = ek/c, the E–f alternative with slope h, the stated model conditions) is unchanged since the earlier PASS.
