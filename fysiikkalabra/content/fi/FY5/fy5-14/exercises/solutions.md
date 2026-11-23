@@ -2,7 +2,7 @@
 **Annettu:** etäisyys seinään $d = 86{,}0\,\text{m}$, kaiun paluuaika $t = 0{,}505\,\text{s}$
 **Kysytty:** äänen nopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Ääni kulkee seinään ja heijastuu takaisin, joten paluuaikana se kulkee matkan $2d$. Ilmassa ääni etenee tasaisella nopeudella, joten nopeus on kuljettu matka jaettuna ajalla.
-**Kaava:** $2d = v t$, josta $v = \dfrac{2d}{t}$
+**Kaava:** $$\begin{aligned} s &= 2d \\ s &= vt \\ v &= \dfrac{s}{t} = \dfrac{2d}{t} \end{aligned}$$
 **Muunnokset:** Ei tarvita: matka on metreinä ja aika sekunteina.
 **Sijoitus:** $v = \dfrac{2 \cdot 86{,}0\,\text{m}}{0{,}505\,\text{s}} = \dfrac{172{,}0\,\text{m}}{0{,}505\,\text{s}} = 340{,}59\,\text{m/s}$
 **Vastaus:** $341\,\text{m/s}$, kolme merkitsevää numeroa kuten etäisyydessä ja ajassa.
@@ -32,7 +32,7 @@
 **Annettu:** sävelen taajuus $f_0 = 415\,\text{Hz}$, auton nopeus $v_\text{L} = 15{,}0\,\text{m/s}$ poispäin kuulijasta, äänen nopeus $v = 340\,\text{m/s}$
 **Kysytty:** kuultu taajuus $f$
 **Periaate:** Äänilähde liikkuu ja kuulija on paikallaan, joten käytetään liikkuvan lähteen Dopplerin kaavaa. Lähde loittonee, joten aaltorintamat harvenevat sen takana ja kuultu taajuus on pienempi kuin $f_0$: nimittäjään tulee plusmerkki.
-**Kaava:** $f = f_0 \cdot \dfrac{v}{v + v_\text{L}}$
+**Kaava:** $$\begin{aligned} f &= \dfrac{v}{\lambda} \\ \lambda &= (v + v_\text{L})T_0 \\ T_0 &= \dfrac{1}{f_0} \\ f &= f_0 \cdot \dfrac{v}{v + v_\text{L}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja taajuus hertseinä.
 **Sijoitus:** $f = 415\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{340\,\text{m/s} + 15{,}0\,\text{m/s}} = 415\,\text{Hz} \cdot \dfrac{340}{355} = 397{,}46\,\text{Hz}$
 **Vastaus:** $397\,\text{Hz}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
@@ -62,7 +62,7 @@ Väite 5 on tosi. Ohitushetkellä taajuus laskee. Loittonevan auton takana aallo
 **Annettu:** ääniraudan taajuus $f_1 = 262\,\text{Hz}$, $N = 15$ voimakasta hetkeä ajassa $t = 5{,}0\,\text{s}$, kieli on ääniraudan ääntä matalampi
 **Kysytty:** kielen taajuus $f_2$
 **Periaate:** Kaksi lähes samantaajuista ääntä huojuu, ja voimakkaita hetkiä on sekunnissa yhtä monta kuin taajuuksien erotus. Huojuntataajuus saadaan laskemalla voimakkaat hetket aikayksikköä kohti. Koska kieli on matalampi, sen taajuus on huojuntataajuuden verran pienempi kuin ääniraudan.
-**Kaava:** $f_\text{H} = \dfrac{N}{t}$ ja $f_\text{H} = |f_1 - f_2| = f_1 - f_2$, josta $f_2 = f_1 - \dfrac{N}{t}$
+**Kaava:** $$\begin{aligned} f_\text{H} &= \dfrac{N}{t} \\ f_\text{H} &= |f_1 - f_2| = f_1 - f_2 \\ f_2 &= f_1 - f_\text{H} = f_1 - \dfrac{N}{t} \end{aligned}$$
 **Muunnokset:** Ei tarvita: aika on sekunteina, joten $\tfrac{N}{t}$ tulee hertseinä.
 **Sijoitus:** $f_\text{H} = \dfrac{15}{5{,}0\,\text{s}} = 3{,}0\,\text{Hz}$ ja $f_2 = 262\,\text{Hz} - 3{,}0\,\text{Hz} = 259\,\text{Hz}$
 **Vastaus:** $259\,\text{Hz}$; erotus $3{,}0\,\text{Hz}$ tunnetaan kymmenesosahertsin tarkkuudella, joten tulos ilmoitetaan kokonaisina hertseinä kuten ääniraudan taajuus.
@@ -72,7 +72,7 @@ Väite 5 on tosi. Ohitushetkellä taajuus laskee. Loittonevan auton takana aallo
 **Annettu:** aallonpituus ilmassa $\lambda_\text{i} = 0{,}850\,\text{m}$, äänen nopeus ilmassa $v_\text{i} = 340\,\text{m/s}$ ja vedessä $v_\text{v} = 1480\,\text{m/s}$
 **Kysytty:** aallonpituus vedessä $\lambda_\text{v}$
 **Periaate:** Kun ääni siirtyy ilmasta veteen, taajuus pysyy samana, koska rajapinnan hiukkaset värähtelevät samaan tahtiin kuin tuleva aalto. Nopeus muuttuu, joten aallonpituus muuttuu. Kummassakin aineessa pätee $v = f\lambda$.
-**Kaava:** $f = \dfrac{v_\text{i}}{\lambda_\text{i}}$ ja $\lambda_\text{v} = \dfrac{v_\text{v}}{f}$
+**Kaava:** $$\begin{aligned} v_\text{i} &= f\lambda_\text{i} \\ v_\text{v} &= f\lambda_\text{v} \\ f &= \dfrac{v_\text{i}}{\lambda_\text{i}} \\ \lambda_\text{v} &= \dfrac{v_\text{v}}{f} \end{aligned}$$
 **Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja aallonpituus metreinä.
 **Sijoitus:** $f = \dfrac{340\,\text{m/s}}{0{,}850\,\text{m}} = 400\,\text{Hz}$ ja $\lambda_\text{v} = \dfrac{1480\,\text{m/s}}{400\,\text{Hz}} = 3{,}70\,\text{m}$
 **Vastaus:** $3{,}70\,\text{m}$, kolme merkitsevää numeroa kuten lähtötiedoissa. Laatikkoon kelpaa $3{,}70$ tai $3{,}7$, koska ne ovat sama luku.
@@ -82,7 +82,7 @@ Väite 5 on tosi. Ohitushetkellä taajuus laskee. Loittonevan auton takana aallo
 **Annettu:** sireenin taajuus $f_0 = 650\,\text{Hz}$, autoilijan nopeus $v_\text{H} = 90{,}0\,\text{km/h}$ kohti sireeniä, äänen nopeus $v = 340\,\text{m/s}$
 **Kysytty:** autoilijan kuulema taajuus $f$
 **Periaate:** Lähde on paikallaan ja kuulija liikkuu, joten aallonpituus ei muutu, mutta autoilija kohtaa aaltorintamat useammin, koska ne lähestyvät häntä nopeudella $v + v_\text{H}$. Käytetään liikkuvan kuulijan Dopplerin kaavaa lähestymisen plusmerkillä.
-**Kaava:** $f = f_0 \cdot \dfrac{v + v_\text{H}}{v}$
+**Kaava:** $$\begin{aligned} v_\text{rel} &= v + v_\text{H} \\ \lambda &= v T_0 = \dfrac{v}{f_0} \\ f &= \dfrac{v_\text{rel}}{\lambda} \\ f &= f_0 \cdot \dfrac{v + v_\text{H}}{v} \end{aligned}$$
 **Muunnokset:** $v_\text{H} = 90{,}0\,\tfrac{\text{km}}{\text{h}} = 90{,}0 \cdot \tfrac{1000\,\text{m}}{3600\,\text{s}} = 25{,}0\,\tfrac{\text{m}}{\text{s}}$
 **Sijoitus:** $f = 650\,\text{Hz} \cdot \dfrac{340\,\text{m/s} + 25{,}0\,\text{m/s}}{340\,\text{m/s}} = 650\,\text{Hz} \cdot \dfrac{365}{340} = 697{,}79\,\text{Hz}$
 **Vastaus:** $698\,\text{Hz}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
@@ -92,7 +92,7 @@ Väite 5 on tosi. Ohitushetkellä taajuus laskee. Loittonevan auton takana aallo
 **Annettu:** moottorin taajuus paikallaan $f_0 = 425\,\text{Hz}$, kuultu taajuus auton loitotessa $f = 398\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$
 **Kysytty:** auton nopeus $v_\text{L}$
 **Periaate:** Auto eli äänilähde loittonee suoraan katsojasta, ja katsoja on paikallaan, joten pätee liikkuvan lähteen Dopplerin kaava loittonemisen plusmerkillä. Kierrosluku on sama, joten moottorin oma taajuus on $f_0$. Kaavasta ratkaistaan lähteen nopeus.
-**Kaava:** $f = f_0 \cdot \dfrac{v}{v + v_\text{L}}$, josta $v + v_\text{L} = \dfrac{f_0 v}{f}$ ja $v_\text{L} = v \left(\dfrac{f_0}{f} - 1\right)$
+**Kaava:** $$\begin{aligned} f &= \dfrac{v}{\lambda} \\ \lambda &= (v + v_\text{L})T_0 \\ T_0 &= \dfrac{1}{f_0} \\ f &= f_0 \cdot \dfrac{v}{v + v_\text{L}} \\ v + v_\text{L} &= \dfrac{f_0 v}{f} \\ v_\text{L} &= v\left(\dfrac{f_0}{f} - 1\right) \end{aligned}$$
 **Muunnokset:** Ei tarvita: taajuudet ovat hertseinä, ja niiden suhteesta yksikkö supistuu.
 **Sijoitus:** $v_\text{L} = 340\,\text{m/s} \cdot \left(\dfrac{425\,\text{Hz}}{398\,\text{Hz}} - 1\right) = 340\,\text{m/s} \cdot 0{,}067839 = 23{,}065\,\text{m/s}$
 **Vastaus:** $23\,\text{m/s}$, kaksi merkitsevää numeroa, koska tulos riippuu taajuuksien erotuksesta $27\,\text{Hz}$, joka tunnetaan kahden numeron tarkkuudella.
@@ -102,7 +102,7 @@ Väite 5 on tosi. Ohitushetkellä taajuus laskee. Loittonevan auton takana aallo
 **Annettu:** kuultu taajuus lähestyttäessä $f_1 = 476\,\text{Hz}$ ja loitottaessa $f_2 = 404\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$; sireenin taajuus $f_0$ on tuntematon
 **Kysytty:** ambulanssin nopeus $v_\text{L}$
 **Periaate:** Kuulija on paikallaan ja lähde liikkuu suoraan häntä kohti ja hänestä poispäin samalla nopeudella, joten kummassakin vaiheessa pätee liikkuvan lähteen kaava, lähestyttäessä miinus- ja loitottaessa plusmerkillä. Tuntematon $f_0$ supistuu pois, kun taajuudet jaetaan keskenään.
-**Kaava:** $f_1 = f_0 \cdot \dfrac{v}{v - v_\text{L}}$ ja $f_2 = f_0 \cdot \dfrac{v}{v + v_\text{L}}$, joten $\dfrac{f_1}{f_2} = \dfrac{v + v_\text{L}}{v - v_\text{L}}$. Kertomalla ristiin $f_1 v - f_1 v_\text{L} = f_2 v + f_2 v_\text{L}$, joten $v_\text{L} (f_1 + f_2) = v (f_1 - f_2)$ ja $v_\text{L} = v \cdot \dfrac{f_1 - f_2}{f_1 + f_2}$
+**Kaava:** $$\begin{aligned} f_1 &= \dfrac{v}{\lambda_1},\; \lambda_1 = (v - v_\text{L})T_0 \\ f_2 &= \dfrac{v}{\lambda_2},\; \lambda_2 = (v + v_\text{L})T_0 \\ f_1 &= f_0 \cdot \dfrac{v}{v - v_\text{L}} \\ f_2 &= f_0 \cdot \dfrac{v}{v + v_\text{L}} \\ \dfrac{f_1}{f_2} &= \dfrac{v + v_\text{L}}{v - v_\text{L}} \\ f_1 v - f_1 v_\text{L} &= f_2 v + f_2 v_\text{L} \\ v_\text{L}(f_1 + f_2) &= v(f_1 - f_2) \\ v_\text{L} &= v \cdot \dfrac{f_1 - f_2}{f_1 + f_2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: taajuuksien yksikkö supistuu, ja nopeus tulee yksikössä $\text{m/s}$.
 **Sijoitus:** $v_\text{L} = 340\,\text{m/s} \cdot \dfrac{476\,\text{Hz} - 404\,\text{Hz}}{476\,\text{Hz} + 404\,\text{Hz}} = 340\,\text{m/s} \cdot \dfrac{72}{880} = 27{,}818\,\text{m/s}$
 **Vastaus:** $28\,\text{m/s}$, kaksi merkitsevää numeroa, koska taajuuksien erotus $72\,\text{Hz}$ tunnetaan kahden numeron tarkkuudella.
@@ -152,7 +152,7 @@ Vain parittomat monikerrat ovat toisesta päästä suljetun putken ominaistaajuu
 **Kysytty:** auton nopeus $v_\text{L}$
 **Periaate:** Auto eli äänilähde lähestyy paikallaan olevaa kuulijaa, joten pätee liikkuvan lähteen Dopplerin kaava miinusmerkillä. Mittaukset vaihtelevat hieman, joten käytetään niiden keskiarvoa $f_\text{ka}$. Kaavasta ratkaistaan lähteen nopeus.
 **Aineiston käsittely:** Taulukon neljän taajuuden summa on $$431 + 429 + 432 + 430 = 1722$$ hertsiä, joten keskiarvo on $f_\text{ka} = \dfrac{1722\,\text{Hz}}{4} = 430{,}5\,\text{Hz}$.
-**Kaava:** $f_\text{ka} = f_0 \cdot \dfrac{v}{v - v_\text{L}}$, josta $v - v_\text{L} = \dfrac{f_0 v}{f_\text{ka}}$ ja $v_\text{L} = v \left(1 - \dfrac{f_0}{f_\text{ka}}\right)$
+**Kaava:** $$\begin{aligned} f_\text{ka} &= \dfrac{v}{\lambda} \\ \lambda &= (v - v_\text{L})T_0 \\ T_0 &= \dfrac{1}{f_0} \\ f_\text{ka} &= f_0 \cdot \dfrac{v}{v - v_\text{L}} \\ v - v_\text{L} &= \dfrac{f_0 v}{f_\text{ka}} \\ v_\text{L} &= v\left(1 - \dfrac{f_0}{f_\text{ka}}\right) \end{aligned}$$
 **Muunnokset:** Ei tarvita: taajuudet ovat hertseinä, ja niiden suhteesta yksikkö supistuu.
 **Sijoitus:** $v_\text{L} = 340\,\text{m/s} \cdot \left(1 - \dfrac{392\,\text{Hz}}{430{,}5\,\text{Hz}}\right) = 340\,\text{m/s} \cdot 0{,}08943 = 30{,}41\,\text{m/s}$
 **Vastaus:** $30{,}4\,\text{m/s}$, kolme merkitsevää numeroa kuten taajuuksissa.
@@ -173,7 +173,7 @@ Vain parittomat monikerrat ovat toisesta päästä suljetun putken ominaistaajuu
 **Annettu:** auton nopeus $v_\text{L} = 30{,}0\,\text{m/s}$, torven taajuus $f_0 = 500\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$, opiskelijan tulos $544\,\text{Hz}$
 **Kysytty:** opiskelijan virhe ja oikea kuultu taajuus $f$
 **Periaate:** Opiskelija käytti kaavaa, joka koskee liikkuvaa kuulijaa. Tässä kuulija on paikallaan ja äänilähde eli auto liikkuu, joten pätee liikkuvan lähteen kaava. Lähteen liike lyhentää aallonpituutta lähteen edessä ($\lambda = (v - v_\text{L}) T_0$), kun taas kuulijan liike ei muuta aallonpituutta. Auto lähestyy, joten merkki valitaan niin, että $f > f_0$.
-**Kaava:** $f = f_0 \cdot \dfrac{v}{v - v_\text{L}}$
+**Kaava:** $$\begin{aligned} f &= \dfrac{v}{\lambda} \\ \lambda &= (v - v_\text{L})T_0 \\ T_0 &= \dfrac{1}{f_0} \\ f &= f_0 \cdot \dfrac{v}{v - v_\text{L}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: nopeudet ovat jo yksikössä m/s.
 **Sijoitus:**
 $\begin{aligned} f &= 500\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{(340 - 30{,}0)\,\text{m/s}} \\ &= 500\,\text{Hz} \cdot \dfrac{340}{310{,}0} \\ &= 548{,}4\,\text{Hz} \end{aligned}$
@@ -187,7 +187,7 @@ $\begin{aligned} f &= 500\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{(340 - 30{,}0
 
 Doppler-siirtymä tulee siis kahdesti, minkä vuoksi muutos on lähes kaksinkertainen yhteen siirtymään verrattuna. Suurin virtausnopeus vastaa suurinta taajuuden muutosta.
 **Aineiston käsittely:** Taulukon suurin muutos on $\Delta f = 2{,}47\,\text{kHz}$ hetkellä $t = 0{,}20\,\text{s}$.
-**Kaava:** $f = f_0 \cdot \dfrac{v + v_\text{v}}{v - v_\text{v}}$, josta $\Delta f = f - f_0 = f_0 \cdot \dfrac{2 v_\text{v}}{v - v_\text{v}}$ ja $v_\text{v} = \dfrac{v \, \Delta f}{2 f_0 + \Delta f}$
+**Kaava:** $$\begin{aligned} f_1 &= f_0 \cdot \dfrac{v + v_\text{v}}{v} \\ f &= f_1 \cdot \dfrac{v}{v - v_\text{v}} \\ f &= f_0 \cdot \dfrac{v + v_\text{v}}{v - v_\text{v}} \\ \Delta f &= f - f_0 = f_0 \cdot \dfrac{2 v_\text{v}}{v - v_\text{v}} \\ \Delta f\,(v - v_\text{v}) &= 2 f_0 v_\text{v} \\ v_\text{v} &= \dfrac{v \, \Delta f}{2 f_0 + \Delta f} \end{aligned}$$
 **Muunnokset:** $\Delta f = 2{,}47\,\text{kHz} = 2470\,\text{Hz}$ ja $f_0 = 4{,}00\,\text{MHz} = 4\,000\,000\,\text{Hz}$.
 **Sijoitus:** Nimittäjä on $$
 \begin{aligned}
@@ -205,7 +205,7 @@ $\begin{aligned} v_\text{v} &= \dfrac{1540\,\text{m/s} \cdot 2470\,\text{Hz}}{8\
 **Kysytty:** perustaajuus $f_1$, puuttuvat harmoniset, aallon nopeus kielessä $v$ ja sointivärin ero
 **Periaate:** Molemmista päistä kiinnitetyn kielen ominaistaajuudet ovat $f_n = n f_1$, ja perustaajuudella kielessä on yksi kupu, jolloin $L = \tfrac{\lambda_1}{2}$ ja $v = \lambda_1 f_1$. Parillisilla harmonisilla on kielen keskellä solmu, eikä näpäytys solmussa viritä niitä.
 **Aineiston käsittely:** Alin piikki on $196\,\text{Hz}$, ja muut ovat sen monikertoja: $\dfrac{392}{196} = 2$, $\dfrac{588}{196} = 3$, $\dfrac{784}{196} = 4$, $\dfrac{980}{196} = 5$ ja $\dfrac{1176}{196} = 6$. Keskeltä näpätyssä spektrissä parillisten harmonisten ($n = 2$, $4$, $6$) amplitudit ovat enintään $0{,}02$.
-**Kaava:** $L = \dfrac{\lambda_1}{2}$, joten $\lambda_1 = 2L$, ja $v = \lambda_1 f_1$, josta $v = 2 L f_1$
+**Kaava:** $$\begin{aligned} L &= \dfrac{\lambda_1}{2} \\ \lambda_1 &= 2L \\ v &= \lambda_1 f_1 \\ v &= 2 L f_1 \end{aligned}$$
 **Muunnokset:** Ei tarvita: pituus on metreinä ja taajuus hertseinä.
 **Sijoitus:**
 $\begin{aligned} v &= 2 \cdot 0{,}650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254{,}8\,\text{m/s} \end{aligned}$
