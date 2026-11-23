@@ -180,7 +180,7 @@ The light comes from far away and is parallel, so the shadow is as large as the 
 **Given:** periods $T_1 = 0.60\,\text{s}$ and $T_2 = 0.90\,\text{s}$, both pass the equilibrium position going up at the time $0$
 **Find:** the shortest time $t$ after which they again pass the equilibrium position going up at the same time
 **Principle:** The first weight passes the equilibrium position going up at intervals of a full period, at the times $0.60\,\text{s}$, $1.20\,\text{s}$, $1.80\,\text{s}$, … and the second at the times $0.90\,\text{s}$, $1.80\,\text{s}$, … We look for the shortest time that is a whole multiple of both periods: integers $k$ and $m$ for which $k T_1 = m T_2$.
-**Formula:** $$\begin{aligned} k T_1 &= m T_2 \\ \dfrac{k}{m} &= \dfrac{T_2}{T_1} \\ t &= k T_1 \quad (\text{smallest integer k}) \end{aligned}$$
+**Formula:** $$\begin{aligned} k T_1 &= m T_2 \\ \dfrac{k}{m} &= \dfrac{T_2}{T_1} \\ t &= k T_1 \quad (\text{smallest integer }k) \end{aligned}$$
 **Conversions:** None needed: both periods are in seconds.
 **Substitution:** $\dfrac{k}{m} = \dfrac{0.90\,\text{s}}{0.60\,\text{s}} = 1.5 = \dfrac{3}{2}$, so $k = 3$ and $t = 3 \cdot 0.60\,\text{s} = 1.80\,\text{s}$
 **Answer:** $1.8\,\text{s}$, two significant figures as in the periods $0.60\,\text{s}$ and $0.90\,\text{s}$.

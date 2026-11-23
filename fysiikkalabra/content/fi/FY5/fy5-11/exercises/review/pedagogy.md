@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b12c411f043ca675
-SCOPE: delta added-exercise from 19c4b1112a3292c3 base 81db4a6fd727
+CONTENT-HASH: 5922d63d970900d2
+
 ## Blocking
-(none)
 
 ## Polish
-- solutions.md (L2-09) — Järkevyys claims water waves of λ = 8 cm cannot exceed about 4,5 Hz; this goes beyond the lesson. Drop that sentence and keep the T and v·T check.
-- exercises.json (L2-10) — the premise "nopeus pysyy samana" is stated and the solution admits it is false for real water; fine as a model assumption, but a student may find it confusing. Consider "Oletetaan mallina, että...".
-- L2-09 is easy for level 2 (one read, v = fλ); L2-10 carries the level.
+- solutions.md:129 and :219 — these Kaava steps still read "λ = v/f ja suhde b/λ" and "λ = c/f ja suhde b/λ". The derivation is one step and the rest is a ratio, so they are allowed. For consistency, start from v = fλ (c = fλ) in an aligned block as the rest of the set does.
+- solutions.md:244 (L2-07 Kaava, Kohta c)) — the starting equation of the two conditions is in prose. Optional: show Δs = nλ and Δs = (n + ½)λ as aligned rows first.
 
 ## Checked
-- Text and figure description only (no renders); fronts on lines 1 and 5, gap between lines 1 and 7, 2,0 cm per square: λ = 8,0 cm, v = 32 cm/s, b = 12 cm, b/λ' = 3,0, all correct.
-- Two tasks on one figure ask different things (speed; ratio under a changed condition), not a repeat; no repeat of L1-07 (given λ and b).
-- Description gives the same data as the figure; λ and b not marked.
-- inquiry.json not opened.
+- Delta review. The packet diff flattens the aligned blocks; the source has `\begin{aligned}` rows, one equation per row.
+- The echo and sonar tasks now start from s = vt with s = 2d (the echo's round trip) and solve for d, t or v. Why 2d is stated in Periaate, and the symbolic chain follows it.
+- The Huygens-wavefront tasks (s = d sin α, s = vΔt) combine symbolically to Δt = d sin α / v and α = sin⁻¹(vΔt/d) before the Sijoitus step.
+- The mapping app and wall-distance tasks derive t_4 − t_1 so that t_0 cancels. This is the idea that a student could not skip.
+- The reflection-angle task (φ = α + β, β = α) and the doubled-frequency slit task (λ' = v/2f = λ/2) are one step per row.
+- The answers, tolerances and numbers are unchanged. The split paragraphs (L1-06, L2-06, L3 c) tasks) keep every sentence.

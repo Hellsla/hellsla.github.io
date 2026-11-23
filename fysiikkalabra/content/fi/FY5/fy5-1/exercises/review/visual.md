@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 483dc3f4f331ce02
+CONTENT-HASH: 845bbf8761a73937
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md L3-04 Sijoitus (about line 199) — only "vaihteella 2" is set as display maths while vaihde 1 and 3 stay inline, so the three parallel results look unequal; cosmetic (also in the previous report).
+- [Minor] solutions.md weights task (Kaava, `\qquad` continuation row) — not opened as a capture; manual row break inside the aligned block is fragile, check at 360 px.
 
 ## Checked
-- Own captures (preview/fy5-1.html?ratkaisut=1, details opened, 390 px): w1-390-0.png (L1 door, Mallivastaus split), w1-390-1.png (L2 crank, Periaate split).
-- Each split is a proper paragraph inside the card, no gap or clipping; units, decimal commas and \cdot intact; words unchanged.
-- scrollWidth 390 and 1280, no horizontal overflow.
+- Captures (content/fi/FY5/fy5-1/review/shots, current for this hash): fy5-1-open-exercises-1280-1 (door, 3-row Kaava), L2-1280-4 (valve Kaava/Sijoitus tail), L3-1280-4, L3-1280-5 (bike, 4-row Kaava with fraction, Muunnokset, Sijoitus).
+- Kaava blocks render as aligned rows with equals signs in one column, KaTeX clean, subscripts legible, no clipping or overflow; Sijoitus, answers unchanged.
+- Figure (ruutu) not opened; teacher-approved, carried.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4

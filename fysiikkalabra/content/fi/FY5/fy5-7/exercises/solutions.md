@@ -175,7 +175,7 @@ Suorakulmaisessa kolmiossa, jonka kulma on $30^\circ$, vastainen kateetti on puo
 **Annettu:** jaksonajat $T_1 = 0{,}60\,\text{s}$ ja $T_2 = 0{,}90\,\text{s}$, molemmat ohittavat tasapainoaseman ylöspäin hetkellä $0$
 **Kysytty:** lyhin aika $t$, jonka kuluttua ne ohittavat tasapainoaseman ylöspäin taas yhtä aikaa
 **Periaate:** Ensimmäinen punnus ohittaa tasapainoaseman ylöspäin aina täyden jaksonajan välein, hetkinä $0{,}60\,\text{s}$, $1{,}20\,\text{s}$, $1{,}80\,\text{s}$, … ja toinen hetkinä $0{,}90\,\text{s}$, $1{,}80\,\text{s}$, … Etsitään lyhin aika, joka on kummankin jaksonajan kokonainen monikerta: kokonaisluvut $k$ ja $m$, joilla $k T_1 = m T_2$.
-**Kaava:** $$\begin{aligned} k T_1 &= m T_2 \\ \dfrac{k}{m} &= \dfrac{T_2}{T_1} \\ t &= k T_1 \quad (\text{pienin kokonaisluku k}) \end{aligned}$$
+**Kaava:** $$\begin{aligned} k T_1 &= m T_2 \\ \dfrac{k}{m} &= \dfrac{T_2}{T_1} \\ t &= k T_1 \quad (\text{pienin kokonaisluku }k) \end{aligned}$$
 **Muunnokset:** Ei tarvita: kumpikin jaksonaika on sekunteina.
 **Sijoitus:** $\dfrac{k}{m} = \dfrac{0{,}90\,\text{s}}{0{,}60\,\text{s}} = 1{,}5 = \dfrac{3}{2}$, joten $k = 3$ ja $t = 3 \cdot 0{,}60\,\text{s} = 1{,}80\,\text{s}$
 **Vastaus:** $1{,}8\,\text{s}$, kaksi merkitsevää numeroa kuten jaksonajoissa $0{,}60\,\text{s}$ ja $0{,}90\,\text{s}$.
