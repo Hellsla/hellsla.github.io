@@ -233,7 +233,7 @@ Laitteiden määrä ei ratkaise, vaan niiden yhteinen teho.
 **Kysytty:** sarjaankytkennän virta $I$ ja lampun jännite $U_\text{L}$
 **Periaate:** Sarjaankytkennässä sama virta kulkee vastuksen ja lampun läpi. Kirchhoffin jännitelain mukaan niiden jännitteet summautuvat lähteen jännitteeksi. Lampun resistanssi riippuu virrasta, joten virta haetaan kuvaajista: etsitään virta, jolla vastuksen ja lampun jännitteiden summa on $6{,}0\,\text{V}$.
 **Kuvaajan lukeminen:** Virralla $150\,\text{mA}$ vastuksen jännite on $2{,}7\,\text{V}$ ja lampun noin $1{,}7\,\text{V}$, yhteensä $4{,}4\,\text{V}$, liian vähän. Virralla $190\,\text{mA}$ vastuksen jännite on noin $3{,}4\,\text{V}$ ja lampun noin $2{,}6\,\text{V}$, yhteensä $6{,}0\,\text{V}$.
-**Kaava:** $U_R + U_\text{L} = U$, missä $U_R = RI$
+**Kaava:** $$\begin{aligned} U - U_R - U_\text{L} &= 0 \\ U_R &= RI \\ U_\text{L} &= U - RI \end{aligned}$$
 **Muunnokset:** $190\,\text{mA} = 0{,}19\,\text{A}$
 **Sijoitus:** $U_R = 18\,\Omega \cdot 0{,}19\,\text{A} \approx 3{,}4\,\text{V}$ ja $U_\text{L} = 6{,}0\,\text{V} - 3{,}4\,\text{V} = 2{,}6\,\text{V}$, mikä vastaa kuvaajan lampun käyrää virralla $0{,}19\,\text{A}$.
 **Vastaus:** Piirissä kulkee noin $0{,}19\,\text{A}$:n virta, ja lampun jännite on noin $2{,}6\,\text{V}$.
@@ -255,7 +255,7 @@ Laitteiden määrä ei ratkaise, vaan niiden yhteinen teho.
 **Annettu:** $U = 5{,}0\,\text{V}$, $U_\text{D} = 2{,}0\,\text{V}$, $I = 15\,\text{mA}$, käytettävä vastus $220\,\Omega$
 **Kysytty:** tarvittava etuvastus $R$ ja virta $220\,\Omega$:n vastuksella
 **Periaate:** LED ja vastus ovat sarjassa, joten sama virta kulkee molempien läpi. Kirchhoffin jännitelain mukaan lähteen jännite jakautuu vastukselle ja LEDille, $U = U_R + U_\text{D}$, ja vastus noudattaa Ohmin lakia, $U_R = RI$. LEDin jännite pysyy lähes samana koko virta-alueella $10\text{–}20\,\text{mA}$.
-**Kaava:** $R = \dfrac{U - U_\text{D}}{I}$ ja $I = \dfrac{U - U_\text{D}}{R}$
+**Kaava:** $$\begin{aligned} U - U_R - U_\text{D} &= 0 \\ U_R &= RI \\ R &= \dfrac{U - U_\text{D}}{I} \\ I &= \dfrac{U - U_\text{D}}{R} \end{aligned}$$
 **Muunnokset:** $15\,\text{mA} = 0{,}015\,\text{A}$
 **Sijoitus:** $R = \dfrac{5{,}0\,\text{V} - 2{,}0\,\text{V}}{0{,}015\,\text{A}} = 200\,\Omega$ ja $I = \dfrac{3{,}0\,\text{V}}{220\,\Omega} \approx 0{,}0136\,\text{A}$
 **Vastaus:** Etuvastukseksi tarvitaan $200\,\Omega$. $220\,\Omega$:n vastuksella LEDin virta on noin $13{,}6\,\text{mA}$.
@@ -265,7 +265,7 @@ Laitteiden määrä ei ratkaise, vaan niiden yhteinen teho.
 **Annettu:** $U_R = 2{,}98\,\text{V}$, resoluutio $0{,}01\,\text{V}$, virheraja $\pm(0{,}5\,\% + 2\ \text{numeroa})$, $R = 220\,\Omega \pm 5\,\%$
 **Kysytty:** LEDin virta $I$ ja sen epävarmuus $\Delta I$ sekä kumpi epävarmuus vaikuttaa enemmän
 **Periaate:** LEDin virta on sama kuin vastuksen virta, joka saadaan Ohmin laista. Mittarin virheraja, prosenttiosuus lukemasta lisättynä numeroiden osuudella, ja vastuksen toleranssi käytetään mittausten epävarmuuksina. Kun suure lasketaan jakamalla, suhteelliset epävarmuudet lasketaan yhteen.
-**Kaava:** $I = \dfrac{U_R}{R}$, $\Delta U = p \cdot U_R + n \cdot r$ ja $\dfrac{\Delta I}{I} = \dfrac{\Delta U}{U_R} + \dfrac{\Delta R}{R}$
+**Kaava:** $$\begin{aligned} U_R &= RI \\ I &= \dfrac{U_R}{R} \\ \Delta U &= p \cdot U_R + n \cdot r \\ \dfrac{\Delta I}{I} &= \dfrac{\Delta U}{U_R} + \dfrac{\Delta R}{R} \end{aligned}$$
 **Muunnokset:** $0{,}5\,\% = 0{,}005$
 **Sijoitus:** $I = \dfrac{2{,}98\,\text{V}}{220\,\Omega} \approx 0{,}01355\,\text{A}$. Mittarin virheraja on $\Delta U = 0{,}005 \cdot 2{,}98\,\text{V} + 2 \cdot 0{,}01\,\text{V} \approx 0{,}035\,\text{V}$, eli $\tfrac{0{,}035}{2{,}98} \approx 1{,}2\,\%$. Yhteensä $\tfrac{\Delta I}{I} \approx 1{,}2\,\% + 5\,\% \approx 6{,}2\,\%$, joten $\Delta I \approx 0{,}062 \cdot 13{,}55\,\text{mA} \approx 0{,}8\,\text{mA}$.
 **Vastaus:** LEDin virta on $I = (13{,}5 \pm 0{,}8)\,\text{mA}$. Vastuksen toleranssi $5\,\%$ vaikuttaa tulokseen noin nelinkertaisesti mittarin virherajaan nähden.
@@ -275,7 +275,7 @@ Laitteiden määrä ei ratkaise, vaan niiden yhteinen teho.
 **Annettu:** $U = 5{,}0\,\text{V}$, $U_\text{D} = 2{,}0\,\text{V}$, kytkennässä 1 haaran virta $13{,}6\,\text{mA}$ (a-kohta), kytkennässä 2 vastus $68\,\Omega$
 **Kysytty:** lähteestä otettava virta $I$, lähteen teho $P$ ja LEDeihin siirtyvä osuus kummassakin kytkennässä
 **Periaate:** Kytkennässä 1 kummankin haaran jännite on lähteen jännite, joten kummassakin haarassa kulkee a-kohdan virta, ja Kirchhoffin virtalain mukaan lähteen virta on haarojen virtojen summa. Kytkennässä 2 sama virta kulkee kaikkien osien läpi, ja vastukselle jää lähteen jännitteestä se, mitä kaksi LEDiä eivät ota. Lähteen teho on $P = UI$ ja LEDin teho $U_\text{D} I_\text{D}$.
-**Kaava:** Kytkentä 1: $I_1 = 2I_\text{D}$; kytkentä 2: $I_2 = \dfrac{U - 2U_\text{D}}{R}$; osuus $= \dfrac{2U_\text{D} I_\text{D}}{UI}$
+**Kaava:** $$\begin{aligned} \text{Kytkentä 1: } I_1 &= I_\text{D} + I_\text{D} \\ &= 2I_\text{D} \\ \text{Kytkentä 2: } U - 2U_\text{D} - RI_2 &= 0 \\ I_2 &= \dfrac{U - 2U_\text{D}}{R} \\ P &= UI \\ \text{osuus} &= \dfrac{2U_\text{D} I_\text{D}}{UI} \end{aligned}$$
 **Muunnokset:** $13{,}6\,\text{mA} = 0{,}0136\,\text{A}$
 **Sijoitus:** Kytkentä 1: $I_1 = 2 \cdot 0{,}0136\,\text{A} \approx 0{,}0273\,\text{A}$ ja $P_1 = 5{,}0\,\text{V} \cdot 0{,}0273\,\text{A} \approx 0{,}136\,\text{W}$. LEDit saavat $$\begin{aligned} &2 \cdot 2{,}0\,\text{V} \cdot 0{,}0136\,\text{A} \\ &\approx 0{,}055\,\text{W} \end{aligned}$$, eli $40\,\%$. Kytkentä 2: $I_2 = \dfrac{5{,}0\,\text{V} - 4{,}0\,\text{V}}{68\,\Omega} \approx 0{,}0147\,\text{A}$ ja $P_2 = 5{,}0\,\text{V} \cdot 0{,}0147\,\text{A} \approx 0{,}074\,\text{W}$. LEDit saavat $4{,}0\,\text{V} \cdot 0{,}0147\,\text{A} \approx 0{,}059\,\text{W}$, eli $80\,\%$.
 **Vastaus:** Kytkennässä 1 lähteestä otetaan noin $27\,\text{mA}$ ja lähde antaa noin $136\,\text{mW}$, josta LEDeihin siirtyy $40\,\%$. Kytkennässä 2 lähteestä otetaan noin $14{,}7\,\text{mA}$ ja lähde antaa noin $74\,\text{mW}$, josta LEDeihin siirtyy $80\,\%$. Loput muuttuvat vastusten sisäenergiaksi.
@@ -322,7 +322,7 @@ Jos energiaa on säästettävä, esimerkiksi paristokäytössä, kytkentä 2 on 
 **Annettu:** $U = 1100\,\text{V}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$, $m = 2{,}18 \cdot 10^{-25}\,\text{kg}$, alkunopeus lähes nolla
 **Kysytty:** ionin nopeus $v$ ja syy, miksi hilojen etäisyys ei vaikuta siihen
 **Periaate:** Kun ioni kulkee potentiaalieron $U$ läpi, sähköinen voima tekee siihen työn $eU$. Muut voimat ovat merkityksettömiä, joten työ muuttuu kokonaan ionin liike-energiaksi.
-**Kaava:** $eU = \tfrac{1}{2}mv^2 \quad\Rightarrow\quad v = \sqrt{\dfrac{2eU}{m}}$
+**Kaava:** $$\begin{aligned} W &= eU \\ W &= \Delta E_\text{k} = \tfrac{1}{2}mv^2 - 0 \\ eU &= \tfrac{1}{2}mv^2 \\ v &= \sqrt{\dfrac{2eU}{m}} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $v = \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19} \cdot 1100}{2{,}18 \cdot 10^{-25}}}\,\text{m/s} \approx 4{,}0 \cdot 10^{4}\,\text{m/s}$
 **Vastaus:** Ionit lähtevät moottorista noin $4{,}0 \cdot 10^{4}\,\text{m/s}$:n eli $40\,\text{km/s}$:n nopeudella. Hilojen etäisyys ei vaikuta tulokseen: jos etäisyys kasvaa, kenttä $E = \tfrac{U}{d}$ ja voima pienenevät samassa suhteessa kuin kiihdytysmatka kasvaa, joten työ $Fd = eEd = eU$ pysyy samana.
@@ -332,7 +332,7 @@ Jos energiaa on säästettävä, esimerkiksi paristokäytössä, kytkentä 2 on 
 **Annettu:** $I = 1{,}76\,\text{A}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$, $m = 2{,}18 \cdot 10^{-25}\,\text{kg}$
 **Kysytty:** sekunnissa lähtevien ionien määrä $N$ ja vuorokaudessa kuluva ksenonin massa $m_\text{vrk}$
 **Periaate:** Sähkövirta on sekunnissa kulkeva varaus. Jokaisella ionilla on varaus $e$, joten ionien määrä sekunnissa on virta jaettuna alkeisvarauksella. Jokainen ioni vie mukanaan yhden ksenonatomin massan.
-**Kaava:** $N = \dfrac{I}{e}$ ja $m_\text{vrk} = N m t$
+**Kaava:** $$\begin{aligned} I &= \dfrac{\Delta Q}{\Delta t} = Ne \\ N &= \dfrac{I}{e} \\ m_\text{vrk} &= N m t \end{aligned}$$
 **Muunnokset:** $1\,\text{vrk} = 24 \cdot 3600\,\text{s} = 86\,400\,\text{s}$
 **Sijoitus:** $N = \dfrac{1{,}76\,\text{A}}{1{,}602 \cdot 10^{-19}\,\text{C}} \approx 1{,}10 \cdot 10^{19}\,\text{1/s}$. Sekunnissa lähtee massa $Nm = 1{,}10 \cdot 10^{19} \cdot 2{,}18 \cdot 10^{-25}\,\text{kg} \approx 2{,}40 \cdot 10^{-6}\,\text{kg}$, joten vuorokaudessa $m_\text{vrk} = 86\,400 \cdot 2{,}40 \cdot 10^{-6}\,\text{kg} \approx 0{,}21\,\text{kg}$
 **Vastaus:** Moottorista lähtee noin $1{,}1 \cdot 10^{19}$ ionia sekunnissa, ja ksenonia kuluu noin $0{,}21\,\text{kg}$ vuorokaudessa.
@@ -342,7 +342,7 @@ Jos energiaa on säästettävä, esimerkiksi paristokäytössä, kytkentä 2 on 
 **Annettu:** $U = 1100\,\text{V}$, $I = 1{,}76\,\text{A}$, $N \approx 1{,}10 \cdot 10^{19}\,\text{1/s}$ (c-kohta), ionin liike-energia $1{,}76 \cdot 10^{-16}\,\text{J}$ (b-kohta)
 **Kysytty:** kiihdyttämiseen tarvittava teho $P$ ja vertailu ionien liike-energiaan sekunnissa
 **Periaate:** Sähköteho on jännite kertaa virta. Jokainen ioni saa liike-energian $eU$, joten sekunnissa ionit saavat energian $N \cdot eU$, ja koska $N = \tfrac{I}{e}$, tämä on $UI$.
-**Kaava:** $P = UI$ ja $\dfrac{E_\text{k}}{t} = N \cdot \tfrac{1}{2}mv^2$
+**Kaava:** $$\begin{aligned} P &= UI \\ \dfrac{E_\text{k}}{t} &= N \cdot \tfrac{1}{2}mv^2 \\ \tfrac{1}{2}mv^2 &= eU \\ \dfrac{E_\text{k}}{t} &= NeU = UI \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $P = 1100\,\text{V} \cdot 1{,}76\,\text{A} \approx 1940\,\text{W}$ ja $$\begin{aligned} &N \cdot \tfrac{1}{2}mv^2 \\ &= 1{,}10 \cdot 10^{19} \cdot 1{,}76 \cdot 10^{-16}\,\text{J/s} \\ &\approx 1940\,\text{W} \end{aligned}$$
 **Vastaus:** Ionien kiihdyttämiseen tarvittava teho on noin $1{,}9\,\text{kW}$. Yhden sekunnin aikana ionien saama liike-energia on noin $1{,}9\,\text{kJ}$. Siten liike-energian kasvunopeus on $1{,}9\,\text{kJ/s} = 1{,}9\,\text{kW}$, koska jokainen hiloilta lähtevä ioni saa energian $eU$.
@@ -373,7 +373,7 @@ Jos energiaa on säästettävä, esimerkiksi paristokäytössä, kytkentä 2 on 
 **Annettu:** $C = 0{,}47\,\text{F}$, $U_1 = 4{,}5\,\text{V}$, $U_2 = 2{,}0\,\text{V}$, $P = 15\,\text{mW}$
 **Kysytty:** seisontavalon saama energia $W_\text{käyt}$ ja paloaika $t$
 **Periaate:** Valo sammuu, kun jännite on laskenut $2{,}0\,\text{V}$:iin, joten kondensaattoriin jää silloin energiaa. Valo käyttää vain energioiden erotuksen. Ohjauselektroniikka pitää tehon vakiona, joten paloaika on käytetty energia jaettuna teholla.
-**Kaava:** $W_\text{käyt} = \tfrac{1}{2}C\left(U_1^2 - U_2^2\right)$ ja $t = \dfrac{W_\text{käyt}}{P}$
+**Kaava:** $$\begin{aligned} W_1 &= \tfrac{1}{2}CU_1^2 \\ W_2 &= \tfrac{1}{2}CU_2^2 \\ W_\text{käyt} &= W_1 - W_2 \\ &= \tfrac{1}{2}C\left(U_1^2 - U_2^2\right) \\ t &= \dfrac{W_\text{käyt}}{P} \end{aligned}$$
 **Muunnokset:** $15\,\text{mW} = 0{,}015\,\text{W}$
 **Sijoitus:** Kondensaattoriin jää $\tfrac{1}{2} \cdot 0{,}47\,\text{F} \cdot (2{,}0\,\text{V})^2 \approx 0{,}94\,\text{J}$, joten $W_\text{käyt} \approx 4{,}76\,\text{J} - 0{,}94\,\text{J} \approx 3{,}8\,\text{J}$ ja $t = \dfrac{3{,}82\,\text{J}}{0{,}015\,\text{W}} \approx 255\,\text{s}$
 **Vastaus:** Seisontavalo saa kondensaattorista noin $3{,}8\,\text{J}$, ja se palaa noin $250\,\text{s}$ eli runsaat $4$ minuuttia.
@@ -383,7 +383,7 @@ Jos energiaa on säästettävä, esimerkiksi paristokäytössä, kytkentä 2 on 
 **Annettu:** $P = 15\,\text{mW}$, jännite alussa $4{,}5\,\text{V}$ ja lopussa $2{,}0\,\text{V}$, $C = 0{,}47\,\text{F}$
 **Kysytty:** virta alussa ja lopussa sekä syy, miksi jännite laskee lopussa nopeammin
 **Periaate:** Teho on jännite kertaa virta, joten vakioteholla virta kasvaa, kun jännite pienenee. Kondensaattorin jännite on $U = \tfrac{Q}{C}$, joten jännite pienenee sitä nopeammin, mitä enemmän varausta siitä lähtee sekunnissa eli mitä suurempi virta on.
-**Kaava:** $I = \dfrac{P}{U}$ ja jännitteen muutos sekunnissa $\dfrac{\Delta U}{\Delta t} = \dfrac{I}{C}$
+**Kaava:** $$\begin{aligned} P &= UI \\ I &= \dfrac{P}{U} \\ U &= \dfrac{Q}{C} \\ \Delta U &= \dfrac{\Delta Q}{C} = \dfrac{I\,\Delta t}{C} \\ \dfrac{\Delta U}{\Delta t} &= \dfrac{I}{C} \end{aligned}$$
 **Muunnokset:** $15\,\text{mW} = 0{,}015\,\text{W}$
 **Sijoitus:** $I_\text{alku} = \dfrac{0{,}015\,\text{W}}{4{,}5\,\text{V}} \approx 0{,}0033\,\text{A}$ ja $I_\text{loppu} = \dfrac{0{,}015\,\text{W}}{2{,}0\,\text{V}} = 0{,}0075\,\text{A}$. Jännite laskee alussa $\tfrac{0{,}0033\,\text{A}}{0{,}47\,\text{F}} \approx 7\,\text{mV/s}$ ja lopussa $\tfrac{0{,}0075\,\text{A}}{0{,}47\,\text{F}} \approx 16\,\text{mV/s}$.
 **Vastaus:** Valon syttyessä kondensaattorista kulkee noin $3{,}3\,\text{mA}$ ja juuri ennen sammumista noin $7{,}5\,\text{mA}$. Suurempi virta vie lopussa enemmän varausta sekunnissa, ja koska jännite on verrannollinen varaukseen, jännite laskee lopussa yli kaksi kertaa niin nopeasti kuin alussa.
@@ -393,7 +393,7 @@ Jos energiaa on säästettävä, esimerkiksi paristokäytössä, kytkentä 2 on 
 **Annettu:** vaihtoehto 1: $C = 0{,}47\,\text{F}$, $U_1 = 5{,}5\,\text{V}$; vaihtoehto 2: $C = 1{,}0\,\text{F}$, $U_1 = 4{,}5\,\text{V}$; kummassakin $U_2 = 2{,}0\,\text{V}$ ja $P = 15\,\text{mW}$
 **Kysytty:** paloaika kummassakin vaihtoehdossa ja kumpi on parempi
 **Periaate:** Lasketaan kuten b-kohdassa käytettävissä oleva energia ja aika. Energia on verrannollinen kapasitanssiin ja jännitteen neliöön.
-**Kaava:** $t = \dfrac{C\left(U_1^2 - U_2^2\right)}{2P}$
+**Kaava:** $$\begin{aligned} W_\text{käyt} &= \tfrac{1}{2}C\left(U_1^2 - U_2^2\right) \\ t &= \dfrac{W_\text{käyt}}{P} \\ &= \dfrac{C\left(U_1^2 - U_2^2\right)}{2P} \end{aligned}$$
 **Muunnokset:** $15\,\text{mW} = 0{,}015\,\text{W}$
 **Sijoitus:** Vaihtoehto 1: $\tfrac{1}{2} \cdot 0{,}47 \cdot (5{,}5^2 - 2{,}0^2)\,\text{J} \approx 6{,}2\,\text{J}$, joten $t_1 = \dfrac{6{,}17\,\text{J}}{0{,}015\,\text{W}} \approx 410\,\text{s}$. Vaihtoehto 2: $\tfrac{1}{2} \cdot 1{,}0 \cdot (4{,}5^2 - 2{,}0^2)\,\text{J} \approx 8{,}1\,\text{J}$, joten $t_2 = \dfrac{8{,}13\,\text{J}}{0{,}015\,\text{W}} \approx 540\,\text{s}$.
 **Vastaus:** Vaihtoehdossa 1 valo palaa noin $410\,\text{s}$ ja vaihtoehdossa 2 noin $540\,\text{s}$. Jo $1\,\text{V}$:n jännitteen nosto pidentää paloaikaa noin $1{,}6$-kertaiseksi, koska energia kasvaa jännitteen neliön mukana. Vaihtoehto 2 on kuitenkin parempi: se antaa pidemmän ajan, eikä kondensaattoria tarvitse ladata suurimpaan sallittuun jännitteeseensä. Dynamon jännite vaihtelee ajonopeuden mukana, ja jos kondensaattori ladataan aivan rajalle, pienikin ylitys voi vaurioittaa sitä.
@@ -506,7 +506,7 @@ Vaaka-akselille merkitään $r^{-2}\ (\text{m}^{-2})$ ja pystyakselille $F\ (\te
 **Kysytty:** pallojen varaus $q$
 **Periaate:** Coulombin lain mukaan $F = \tfrac{kq^2}{r^2}$, joten $(r^{-2}, F)$-kuvaajan kulmakerroin on $kq^2$. Kulmakerroin luetaan suoralta kaukana origosta olevasta pisteestä.
 **Kuvaajan lukeminen:** Suora kulkee origon ja pisteen $(400\,\text{m}^{-2};\ 2{,}24\,\text{mN})$ kautta.
-**Kaava:** $kq^2 = \dfrac{\Delta F}{\Delta\left(r^{-2}\right)} \quad\Rightarrow\quad q = \sqrt{\dfrac{\Delta F}{k\,\Delta\left(r^{-2}\right)}}$
+**Kaava:** $$\begin{aligned} F &= k\dfrac{q^2}{r^2} = kq^2 \cdot r^{-2} \\ kq^2 &= \dfrac{\Delta F}{\Delta\left(r^{-2}\right)} \\ q &= \sqrt{\dfrac{\Delta F}{k\,\Delta\left(r^{-2}\right)}} \end{aligned}$$
 **Muunnokset:** $2{,}24\,\text{mN} = 2{,}24 \cdot 10^{-3}\,\text{N}$
 **Sijoitus:** Kulmakerroin on $\dfrac{2{,}24 \cdot 10^{-3}\,\text{N}}{400\,\text{m}^{-2}} = 5{,}6 \cdot 10^{-6}\,\text{N} \cdot \text{m}^2$, joten $q = \sqrt{\dfrac{5{,}6 \cdot 10^{-6}}{8{,}99 \cdot 10^{9}}}\,\text{C} \approx 2{,}5 \cdot 10^{-8}\,\text{C}$
 **Vastaus:** Kummankin pallon varaus on noin $2{,}5 \cdot 10^{-8}\,\text{C}$ eli $25\,\text{nC}$.
@@ -559,7 +559,7 @@ Coulombin lakia voi käyttää näihin palloihin, kun etäisyys on monta kertaa 
 **Annettu:** $16$ kennoa sarjassa, kennon nimellisjännite $3{,}20\,\text{V}$ ja kapasiteetti $200\,\text{Ah}$
 **Kysytty:** akuston nimellisjännite $U$ ja energia $W$
 **Periaate:** Sarjaan kytkettyjen kennojen jännitteet summautuvat. Sama varaus kulkee jokaisen kennon läpi, joten akuston kapasiteetti on yhden kennon kapasiteetti. Akkuun varastoitunut energia on jännite kertaa kapasiteetti.
-**Kaava:** $U = 16\,U_1$ ja $W = UQ$
+**Kaava:** $$\begin{aligned} U &= U_1 + U_1 + \ldots + U_1 \\ &= 16\,U_1 \\ W &= UQ \end{aligned}$$
 **Muunnokset:** $1\,\text{kWh} = 1000\,\text{Wh}$
 **Sijoitus:** $U = 16 \cdot 3{,}20\,\text{V} = 51{,}2\,\text{V}$ ja $W = 51{,}2\,\text{V} \cdot 200\,\text{Ah} = 10\,240\,\text{Wh} \approx 10{,}2\,\text{kWh}$
 **Vastaus:** Akuston nimellisjännite on $51{,}2\,\text{V}$, ja täyteen ladattuun akustoon on varastoitunut noin $10{,}2\,\text{kWh}$:n energia.
@@ -569,7 +569,7 @@ Coulombin lakia voi käyttää näihin palloihin, kun etäisyys on monta kertaa 
 **Annettu:** $P = 1{,}2\,\text{kW}$, $t = 6{,}0\,\text{h}$, vaihtosuuntaajan hyötysuhde $95\,\%$, käytettävissä $90\,\%$ akuston energiasta $10{,}24\,\text{kWh}$
 **Kysytty:** akustosta illan aikana tarvittava energia ja riittääkö akusto
 **Periaate:** Talon käyttämä energia on teho kertaa aika. Vaihtosuuntaaja muuttaa $95\,\%$ akustosta ottamastaan energiasta verkkosähköksi, joten akustosta on otettava enemmän energiaa kuin talo käyttää.
-**Kaava:** $W_\text{talo} = Pt$ ja $W_\text{akusto} = \dfrac{W_\text{talo}}{\eta}$
+**Kaava:** $$\begin{aligned} W_\text{talo} &= Pt \\ \eta &= \dfrac{W_\text{talo}}{W_\text{akusto}} \\ W_\text{akusto} &= \dfrac{W_\text{talo}}{\eta} \end{aligned}$$
 **Muunnokset:** $95\,\% = 0{,}95$ ja $90\,\% = 0{,}90$
 **Sijoitus:** $W_\text{talo} = 1{,}2\,\text{kW} \cdot 6{,}0\,\text{h} = 7{,}2\,\text{kWh}$ ja $W_\text{akusto} = \dfrac{7{,}2\,\text{kWh}}{0{,}95} \approx 7{,}6\,\text{kWh}$. Käytettävissä on $0{,}90 \cdot 10{,}24\,\text{kWh} \approx 9{,}2\,\text{kWh}$.
 **Vastaus:** Akustosta tarvitaan illan aikana noin $7{,}6\,\text{kWh}$. Täyteen ladattu akusto riittää, ja varaa jää noin $1{,}6\,\text{kWh}$.
@@ -579,7 +579,7 @@ Coulombin lakia voi käyttää näihin palloihin, kun etäisyys on monta kertaa 
 **Annettu:** $P = 5{,}0\,\text{kW}$, $U = 51{,}2\,\text{V}$, $16$ kennoa, joiden kunkin sisäinen resistanssi on $0{,}50\,\text{m}\Omega$, kaapelin resistanssi $4{,}0\,\text{m}\Omega$
 **Kysytty:** akuston virta $I$ ja sisäenergiaksi muuttuva teho $P_\text{h}$
 **Periaate:** Teho on jännite kertaa virta. Kennojen sisäiset resistanssit ovat sarjassa keskenään ja kaapelin kanssa, joten resistanssit lasketaan yhteen. Joulen lain mukaan resistanssissa sisäenergiaksi muuttuva teho on $RI^2$, ja tämä energia siirtyy lämpönä ympäristöön.
-**Kaava:** $I = \dfrac{P}{U}$ ja $P_\text{h} = (R_\text{s} + R_\text{k})\,I^2$, missä $R_\text{s} = 16\,R_1$
+**Kaava:** $$\begin{aligned} P &= UI \\ I &= \dfrac{P}{U} \\ R_\text{s} &= 16\,R_1 \\ R &= R_\text{s} + R_\text{k} \\ P_\text{h} &= RI^2 \end{aligned}$$
 **Muunnokset:** $5{,}0\,\text{kW} = 5000\,\text{W}$; $R_\text{s} = 16 \cdot 0{,}50\,\text{m}\Omega = 8{,}0\,\text{m}\Omega$, joten $R_\text{s} + R_\text{k} = 12\,\text{m}\Omega = 0{,}012\,\Omega$
 **Sijoitus:** $I = \dfrac{5000\,\text{W}}{51{,}2\,\text{V}} \approx 97{,}7\,\text{A}$ ja $P_\text{h} = 0{,}012\,\Omega \cdot (97{,}7\,\text{A})^2 \approx 114\,\text{W}$
 **Vastaus:** Akuston virta on noin $98\,\text{A}$, ja sisäenergiaksi muuttuu noin $110\,\text{W}$: noin $76\,\text{W}$ akustossa ja $38\,\text{W}$ kaapelissa. Se on noin $2\,\%$ siirrettävästä tehosta.
@@ -589,7 +589,7 @@ Coulombin lakia voi käyttää näihin palloihin, kun etäisyys on monta kertaa 
 **Annettu:** $E = 51{,}2\,\text{V}$, $R_\text{s} = 8{,}0\,\text{m}\Omega$, sulake $125\,\text{A}$, suojajänniteraja $120\,\text{V}$
 **Kysytty:** oikosulkuvirta $I_\text{k}$, oikosulun vaarat ja miksi nimellisjännitteen vertaaminen suojajänniterajaan ei yksin riitä turvallisuuden arviointiin
 **Periaate:** Jakoavain yhdistää akuston navat, ja sen resistanssi on hyvin pieni, joten oikosulussa virtaa rajoittaa vain akuston sisäinen resistanssi. Kaapeli ja sulake eivät ole oikosulkupiirissä, koska oikosulku tapahtuu ennen sulaketta. Akuston vaarallisuutta ei voi päätellä pelkästä jännitteestä, koska akustoon on varastoitunut suuri energia, jonka oikosulku vapauttaa hetkessä.
-**Kaava:** $I_\text{k} = \dfrac{E}{R_\text{s}}$
+**Kaava:** $$\begin{aligned} E - R_\text{s} I_\text{k} &= 0 \\ I_\text{k} &= \dfrac{E}{R_\text{s}} \end{aligned}$$
 **Muunnokset:** $8{,}0\,\text{m}\Omega = 0{,}0080\,\Omega$
 **Sijoitus:** $I_\text{k} = \dfrac{51{,}2\,\text{V}}{0{,}0080\,\Omega} = 6400\,\text{A}$
 **Vastaus:** Oikosulkuvirta voi olla noin $6\,\text{kA}$, noin $50$ kertaa sulakkeen nimellisvirta.
@@ -615,7 +615,7 @@ Siksi akuston paljaita johtavia osia ei käsitellä ilman asianmukaisia suojauks
 **Annettu:** $12{,}8\,\text{V}$:n akusto: neljä rinnakkaista ryhmää, kussakin neljä kennoa sarjassa; $P = 5{,}0\,\text{kW}$, $R_\text{k} = 4{,}0\,\text{m}\Omega$, $R_1 = 0{,}50\,\text{m}\Omega$
 **Kysytty:** virta $I$, kaapelin lämpöteho $P_\text{k}$ ja akuston lämpöteho $P_\text{s}$ sekä kytkentöjen vertailu
 **Periaate:** Ryhmässä on neljä kennoa sarjassa, joten ryhmän resistanssi on $4R_1$. Neljä samanlaista ryhmää rinnan jakaa virran tasan, joten akuston resistanssi on ryhmän resistanssi jaettuna neljällä. Lämpöteho on $RI^2$.
-**Kaava:** $I = \dfrac{P}{U}$, $R_\text{s} = \dfrac{4R_1}{4} = R_1$, $P_\text{k} = R_\text{k} I^2$ ja $P_\text{s} = R_\text{s} I^2$
+**Kaava:** $$\begin{aligned} P &= UI \\ I &= \dfrac{P}{U} \\ R_\text{ryhmä} &= 4R_1 \\ \dfrac{1}{R_\text{s}} &= 4 \cdot \dfrac{1}{R_\text{ryhmä}} \\ R_\text{s} &= \dfrac{4R_1}{4} = R_1 \\ P_\text{k} &= R_\text{k} I^2 \\ P_\text{s} &= R_\text{s} I^2 \end{aligned}$$
 **Muunnokset:** $4{,}0\,\text{m}\Omega = 0{,}0040\,\Omega$ ja $0{,}50\,\text{m}\Omega = 0{,}00050\,\Omega$
 **Sijoitus:** $I = \dfrac{5000\,\text{W}}{12{,}8\,\text{V}} \approx 391\,\text{A}$, $P_\text{k} = 0{,}0040\,\Omega \cdot (391\,\text{A})^2 \approx 610\,\text{W}$ ja $P_\text{s} = 0{,}00050\,\Omega \cdot (391\,\text{A})^2 \approx 76\,\text{W}$
 **Vastaus:** Kun akuston jännite on $12{,}8\,\text{V}$, siitä otetaan noin $390\,\text{A}$, nelinkertainen virta, joka ylittää kaapelin sulakkeen $125\,\text{A}$ moninkertaisesti.
