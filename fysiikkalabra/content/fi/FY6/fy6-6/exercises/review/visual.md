@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 12827abc4d334240
+CONTENT-HASH: 5376a4178071797a
+SCOPE: delta numbers from 12827abc4d334240 base 4d1dce4
 
 ## Blocking
 (none)
@@ -8,8 +9,9 @@ CONTENT-HASH: 12827abc4d334240
 (none)
 
 ## Checked
-- Delta (md-paragraphs, round 2): diff of solutions.md (L2-06 Järkevyys, L2-07 and L3-04 Vastaus, L3-05 Vastaus); "Se ylittää …" is back in the paragraph above, as intended.
-- Opened fy6-6-open-exercises-L3-1280-6 and -7 at 1280 px: paragraph breaks fall at sentence boundaries, spacing even, formulas intact, nothing clipped. No 390 px exercise captures; the 360 px check is green.
+- Delta: diff of solutions.md, every Kaava step now a `$$\begin{aligned}` block of basic-principle equations.
+- Opened fy6-6-open-exercises-1280-1, L2-1280-3, L2-1280-5 and L3-1280-3 (6-1, 6-12, lamp table, 6-19/6-20).
+- Rows render one equation each, left sides right-aligned so the equals signs share a column, fractions and subscripts intact, order principle then symbolic then result; the white Kaava box fits its column, nothing clipped. No 390 px exercise captures of the solutions; the 360 px check is green.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 4

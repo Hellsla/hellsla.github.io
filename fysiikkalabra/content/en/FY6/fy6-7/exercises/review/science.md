@@ -1,17 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: df6cf372cf645c1d
+VERDICT: FAIL
+CONTENT-HASH: bb4c59d60a1ec530
 
 ## Blocking
+- exercises/solutions.md:213 (fy6-7-L3-04 Formula) — A: the new row "S = aE_heater" is a false equation: S is the saving, while aE_heater is the cost of the heater's energy at one price, and a is undefined here (high or low price?). The next row S = E_heater(a_high − a_low) is right, but it does not follow from that row. — Replace the row with the costs at the two prices, e.g. "K_high = a_high E_heater \\ K_low = a_low E_heater \\ S = K_high − K_low \\ S = E_heater(a_high − a_low)". (The Finnish file has the same row, line 195.)
 
 ## Polish
+- none
 
 ## Checked
-- The new task fy6-7-L2-09 matches the Finnish task passed earlier. The ENERGY STAR pair is LG LT18S1100* at 344 kWh/a and LT18S1200* at 440 kWh/a, both Top Freezer, 17,5 ft³, read 15 Nov 2026.
-- a) 96 kWh more, about 28 %.
-- b) P_avg = E/t gives 39,27 W and 50,23 W with t = 8760 h.
-- c) K = naE gives 688 € and 880 €, a difference of 192 €.
-- The rounding reasons match the Finnish set. The answer is 39,269 W with tolerance 0,02, and answers.py is shared.
-- d): the duty-cycle mechanism (P_avg ≈ kP_run, k ≈ 0,39 at 100 W) is correct. The 100 W is marked as a general order of magnitude, not as source data.
-- The task says the stated use is a standard test result, not a home measurement. 1 ft³ ≈ 28,3 l is correct.
-- Reflowed chains: same numbers, signs and units in the same order.
-- Hash read at start and end: unchanged.
+- Other new Formula blocks derive from E = Pt (and P = UI, U = RI, K = aE, K = K_base + aE): every row correct, last row the one substituted into (L1 steps sum, E = UIt, K = aPt, ΔE = (P1 − P2)t, equal-energy t2 = P1t1/P2, E = (K − K_base)/a, resistor heating water, appliance-day sum and ×365).
+- Recomputed: saving 6.0 kWh · 15.5 c/kWh = 93.0 c; average price 267.44 c : 19.0 kWh = 14.08 c/kWh; numbers in the diff unchanged.
+- Paragraph splits (kWh choice, unit-error task, meter graph, refrigerator payback, oven, ENERGY STAR task) change no physics or reasoning order.
+- Content hash checked at start and end.
