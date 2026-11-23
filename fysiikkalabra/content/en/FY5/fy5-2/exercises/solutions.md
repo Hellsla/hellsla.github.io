@@ -6,7 +6,7 @@
 In the free-body diagram the forces acting on the bar are the force of the hand $F_\text{h}$ downwards, the force of the nail $F_\text{n}$ downwards on the other side of the pivot and the force of the support upwards at the pivot; the lever arm of the support force is zero, so it does not appear in the moment condition.
 
 The bar is light, so its weight is neglected. The force of the hand rotates the bar in one direction and the force of the nail in the other.
-**Formula:** $F_\text{h} r_\text{h} - F_\text{n} r_\text{n} = 0$, from which $F_\text{n} = \dfrac{F_\text{h} r_\text{h}}{r_\text{n}}$
+**Formula:** $$\begin{aligned} \Sigma M &= 0 \\ F_\text{h} r_\text{h} - F_\text{n} r_\text{n} &= 0 \\ F_\text{n} &= \dfrac{F_\text{h} r_\text{h}}{r_\text{n}} \end{aligned}$$
 **Conversions:** None needed: the force is in newtons and the lever arms in metres.
 **Substitution:** $F_\text{n} = \dfrac{80\,\text{N} \cdot 0.60\,\text{m}}{0.050\,\text{m}} = \dfrac{48\,\text{Nm}}{0.050\,\text{m}} = 960\,\text{N}$
 **Answer:** $960\,\text{N}$, two significant figures like the force of the hand $80\,\text{N}$ and the lever arm $0.60\,\text{m}$.
@@ -20,7 +20,7 @@ The bar is light, so its weight is neglected. The force of the hand rotates the 
 In the free-body diagram the forces acting on the ruler are the force of the mass $F_1$ downwards on the left, the force $F_2$ downwards on the right and the force of the support upwards at the pivot, whose lever arm is zero.
 
 The ruler is light, so its weight is neglected. $F_1$ rotates the ruler anticlockwise and $F_2$ clockwise.
-**Formula:** $F_1 r_1 - F_2 r_2 = 0$, from which $F_2 = \dfrac{F_1 r_1}{r_2}$
+**Formula:** $$\begin{aligned} \Sigma M &= 0 \\ F_1 r_1 - F_2 r_2 &= 0 \\ F_2 &= \dfrac{F_1 r_1}{r_2} \end{aligned}$$
 **Conversions:** None needed: the force is in newtons and the lever arms in metres.
 **Substitution:** $F_2 = \dfrac{0.50\,\text{N} \cdot 0.30\,\text{m}}{0.20\,\text{m}} = 0.75\,\text{N}$
 **Answer:** $0.75\,\text{N}$, two significant figures like the data.
@@ -34,7 +34,7 @@ The ruler is light, so its weight is neglected. $F_1$ rotates the ruler anticloc
 In the free-body diagram the forces acting on the wheelbarrow are the weight $G$ downwards from the centre of mass, the lifting force $F$ upwards at the handles and the support force of the ground upwards at the wheel.
 
 The axle of the wheel is chosen as the reference point, so the unknown support force drops out. The weight rotates the wheelbarrow clockwise and the lifting force anticlockwise.
-**Formula:** $F r_F - G r_G = 0$, from which $F = \dfrac{G r_G}{r_F}$
+**Formula:** $$\begin{aligned} \Sigma M &= 0 \\ F r_F - G r_G &= 0 \\ F &= \dfrac{G r_G}{r_F} \end{aligned}$$
 **Conversions:** None needed: the weight is in newtons and the lever arms in metres.
 **Substitution:** $F = \dfrac{620\,\text{N} \cdot 0.400\,\text{m}}{1.20\,\text{m}} = 206.7\,\text{N}$
 **Answer:** $207\,\text{N}$, three significant figures like the lengths $0.400\,\text{m}$ and $1.20\,\text{m}$.
@@ -48,7 +48,7 @@ The axle of the wheel is chosen as the reference point, so the unknown support f
 In the free-body diagram the forces acting on the plank are the weight $G$ downwards from the middle and the support forces $N_1$ and $N_2$ upwards at the ends.
 
 The centre of mass is in the middle, so the supports are at equal distances from it, and the moment condition about the centre of mass, $N_1 r = N_2 r$, gives $N_1 = N_2 = N$. The support forces are then obtained from the sum of the forces.
-**Formula:** $N_1 + N_2 - G = 0$ and $N_1 = N_2 = N$, so $N = \dfrac{m g}{2}$
+**Formula:** $$\begin{aligned} \Sigma F &= 0 \\ N_1 + N_2 - G &= 0 \\ 2N - m g &= 0 \\ N &= \dfrac{m g}{2} \end{aligned}$$
 **Conversions:** None needed: the mass is in kilograms.
 **Substitution:** $N = \dfrac{12.0\,\text{kg} \cdot 9.81\,\text{m/s}^2}{2} = \dfrac{117.72\,\text{N}}{2} = 58.86\,\text{N}$
 **Answer:** $58.9\,\text{N}$, three significant figures like the mass $12.0\,\text{kg}$.
@@ -60,7 +60,7 @@ The centre of mass is in the middle, so the supports are at equal distances from
 **Principle:** The rod stays horizontal when it is supported at the common centre of mass: the moments of the weights of the masses about the point of support then cancel each other.
 
 In the free-body diagram the forces acting on the rod are the forces of the masses $m_1 g$ and $m_2 g$ downwards at the ends and the force of the support upwards at the point of support. The rod is light, so its weight is neglected.
-**Formula:** $x_\text{cm} = \dfrac{m_1 x_1 + m_2 x_2}{m_1 + m_2}$
+**Formula:** $$\begin{aligned} M_1 &= M_2 \\ m_1 g\, r_1 &= m_2 g\, r_2 \\ m_1 (x_\text{cm} - x_1) &= m_2 (x_2 - x_\text{cm}) \\ (m_1 + m_2)\, x_\text{cm} &= m_1 x_1 + m_2 x_2 \\ x_\text{cm} &= \dfrac{m_1 x_1 + m_2 x_2}{m_1 + m_2} \end{aligned}$$
 **Conversions:** None needed: the unit of mass cancels, and the length is in metres.
 **Substitution:** $x_\text{cm} = \dfrac{2.0\,\text{kg} \cdot 0\,\text{m} + 6.0\,\text{kg} \cdot 0.80\,\text{m}}{2.0\,\text{kg} + 6.0\,\text{kg}} = \dfrac{4.8\,\text{kg}\cdot\text{m}}{8.0\,\text{kg}} = 0.60\,\text{m}$
 **Answer:** $0.60\,\text{m}$ from the lighter mass, two significant figures like the masses and the length.
@@ -89,7 +89,7 @@ The rod does not start to move upwards either, because the sum of the forces is 
 In the free-body diagram the forces acting on the plank are the weights of the children $m_1 g$ and $m_2 g$ downwards and the force of the support upwards at the pivot.
 
 The lever arm of the support force is zero, so it does not appear in the moment condition. The plank is light, so its weight is neglected. The children turn the plank in opposite directions.
-**Formula:** $m_1 g\, r_1 - m_2 g\, r_2 = 0$, from which $r_2 = \dfrac{m_1 r_1}{m_2}$
+**Formula:** $$\begin{aligned} \Sigma M &= 0 \\ m_1 g\, r_1 - m_2 g\, r_2 &= 0 \\ m_1 g\, r_1 &= m_2 g\, r_2 \\ r_2 &= \dfrac{m_1 r_1}{m_2} \end{aligned}$$
 **Conversions:** None needed: the acceleration of free fall $g$ cancels, and the masses are in kilograms.
 **Substitution:** $r_2 = \dfrac{28\,\text{kg} \cdot 1.4\,\text{m}}{40\,\text{kg}} = \dfrac{39.2\,\text{kg}\cdot\text{m}}{40\,\text{kg}} = 0.98\,\text{m}$
 **Answer:** $0.98\,\text{m}$, two significant figures like the initial values.
@@ -103,7 +103,7 @@ The lever arm of the support force is zero, so it does not appear in the moment 
 In the free-body diagram the forces acting on the plank and the sack are the weights from the centre of mass of the plank and from the right end downwards and the force of the support upwards at the point of support.
 
 The weight of a uniform plank acts at its midpoint.
-**Formula:** $x_\text{cm} = \dfrac{m_1 x_1 + m_2 x_2}{m_1 + m_2}$
+**Formula:** $$\begin{aligned} M_1 &= M_2 \\ m_1 g\, r_1 &= m_2 g\, r_2 \\ m_1 (x_\text{cm} - x_1) &= m_2 (x_2 - x_\text{cm}) \\ (m_1 + m_2)\, x_\text{cm} &= m_1 x_1 + m_2 x_2 \\ x_\text{cm} &= \dfrac{m_1 x_1 + m_2 x_2}{m_1 + m_2} \end{aligned}$$
 **Conversions:** None needed: the masses are in kilograms and the positions in metres.
 **Substitution:** $x_\text{cm} = \dfrac{6.0\,\text{kg} \cdot 1.2\,\text{m} + 3.0\,\text{kg} \cdot 2.4\,\text{m}}{6.0\,\text{kg} + 3.0\,\text{kg}} = \dfrac{14.4\,\text{kg}\cdot\text{m}}{9.0\,\text{kg}} = 1.6\,\text{m}$
 **Answer:** $1.6\,\text{m}$ from the left end of the plank, two significant figures like the initial values.
@@ -117,7 +117,7 @@ The weight of a uniform plank acts at its midpoint.
 In the free-body diagram the forces acting on the plank are the weight $G$ downwards from the middle and the support forces $N_1$ and $N_2$ upwards. The right support is chosen as the reference point, so the unknown $N_2$ drops out of the moment condition.
 
 The weight is to the left of the right support and rotates the plank anticlockwise, $N_1$ clockwise.
-**Formula:** $G r_G - N_1 r_1 = 0$, from which $N_1 = \dfrac{m g\, r_G}{r_1}$
+**Formula:** $$\begin{aligned} \Sigma M &= 0 \\ G r_G - N_1 r_1 &= 0 \\ N_1 &= \dfrac{G r_G}{r_1} \\ &= \dfrac{m g\, r_G}{r_1} \end{aligned}$$
 **Conversions:** None needed, but the lever arms are calculated from the right support: $r_G = 3.00\,\text{m} - 2.00\,\text{m} = 1.00\,\text{m}$ and $r_1 = 3.00\,\text{m} - 0.50\,\text{m} = 2.50\,\text{m}$.
 **Substitution:** $N_1 = \dfrac{25.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 1.00\,\text{m}}{2.50\,\text{m}} = \dfrac{245.25\,\text{Nm}}{2.50\,\text{m}} = 98.1\,\text{N}$
 **Answer:** $98.1\,\text{N}$, three significant figures like the data.
@@ -131,7 +131,7 @@ The weight is to the left of the right support and rotates the plank anticlockwi
 In the free-body diagram the forces acting on the plank are its weight $G_\text{p}$ downwards from the middle, the force of the person $F_\text{pers} = m_\text{pers} g$ downwards and the support forces $N_1$ and $N_2$ upwards at the ends.
 
 The right end is chosen as the reference point, so $N_2$ drops out. $G_\text{p}$ and $F_\text{pers}$ rotate the plank about it anticlockwise, $N_1$ clockwise.
-**Formula:** $$m_\text{p} g\, r_\text{p} + m_\text{pers} g\, r_\text{pers} - N_1 L = 0$$, from which $N_1 = \dfrac{(m_\text{p} r_\text{p} + m_\text{pers} r_\text{pers})\, g}{L}$
+**Formula:** $$\begin{aligned} \Sigma M &= 0 \\ G_\text{p} r_\text{p} + F_\text{pers} r_\text{pers} - N_1 L &= 0 \\ N_1 L &= m_\text{p} g\, r_\text{p} + m_\text{pers} g\, r_\text{pers} \\ N_1 &= \dfrac{(m_\text{p} r_\text{p} + m_\text{pers} r_\text{pers})\, g}{L} \end{aligned}$$
 **Conversions:** None needed, but the lever arms are calculated from the right end: $r_\text{p} = 1.5\,\text{m}$ and $r_\text{pers} = 3.0\,\text{m} - 1.0\,\text{m} = 2.0\,\text{m}$.
 **Substitution:** The moments are $m_\text{p} g\, r_\text{p} = 20\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 1.5\,\text{m} = 294.3\,\text{Nm}$ and $m_\text{pers} g\, r_\text{pers} = 70\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 2.0\,\text{m} = 1373.4\,\text{Nm}$, together $1667.7\,\text{Nm}$. So $N_1 = \dfrac{1667.7\,\text{Nm}}{3.0\,\text{m}} = 555.9\,\text{N}$
 **Answer:** $560\,\text{N}$, two significant figures like the data.
@@ -151,7 +151,7 @@ The centre of mass is in the middle of the shelf, so it is half the height, $\tf
 
 This gives a right-angled triangle whose legs are $\tfrac{d}{2}$ and $\tfrac{h}{2}$ and whose hypotenuse is the vertical segment.
 
-At the centre of mass the angle between the vertical and the leg $\tfrac{h}{2}$ is $\alpha$, because the leg $\tfrac{h}{2}$ is along the front edge of the shelf, and the leg opposite the angle is $\tfrac{d}{2}$. So $\tan\alpha = \dfrac{d/2}{h/2} = \dfrac{d}{h}$, from which $\alpha = \arctan\dfrac{d}{h}$
+At the centre of mass the angle between the vertical and the leg $\tfrac{h}{2}$ is $\alpha$, because the leg $\tfrac{h}{2}$ is along the front edge of the shelf, and the leg opposite the angle is $\tfrac{d}{2}$. So $$\begin{aligned} \tan\alpha &= \dfrac{d/2}{h/2} \\ &= \dfrac{d}{h} \\ \alpha &= \arctan\dfrac{d}{h} \end{aligned}$$
 **Conversions:** None needed: both lengths are in metres, and the unit cancels.
 **Substitution:** $\alpha = \arctan\dfrac{0.400\,\text{m}}{1.80\,\text{m}} = \arctan 0.2222 = 12.53^\circ$
 **Answer:** $12.5^\circ$, three significant figures like the dimensions $0.400\,\text{m}$ and $1.80\,\text{m}$.
@@ -165,7 +165,7 @@ At the centre of mass the angle between the vertical and the leg $\tfrac{h}{2}$ 
 In the free-body diagram the forces acting on the forearm are the force of the kettlebell $mg$ downwards from the palm, the weight of the forearm downwards from its centre of mass, the force of the muscle $F$ upwards and the force of the elbow joint, which points down, because the force of the muscle is greater than the weights together.
 
 The joint is chosen as the reference point, so the unknown force of the joint drops out. The muscle rotates the forearm in one direction, the weights in the other.
-**Formula:** $F r_\text{m} - m g\, r_\text{kb} - G_\text{f} r_\text{f} = 0$, from which $F = \dfrac{m g\, r_\text{kb} + G_\text{f} r_\text{f}}{r_\text{m}}$
+**Formula:** $$\begin{aligned} \Sigma M &= 0 \\ F r_\text{m} - m g\, r_\text{kb} - G_\text{f} r_\text{f} &= 0 \\ F r_\text{m} &= m g\, r_\text{kb} + G_\text{f} r_\text{f} \\ F &= \dfrac{m g\, r_\text{kb} + G_\text{f} r_\text{f}}{r_\text{m}} \end{aligned}$$
 **Conversions:** None needed: the lever arms are in metres and the mass in kilograms.
 **Substitution:** The moments are $m g\, r_\text{kb} = 5.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 0.32\,\text{m} = 15.696\,\text{Nm}$ and $G_\text{f} r_\text{f} = 15\,\text{N} \cdot 0.15\,\text{m} = 2.25\,\text{Nm}$, together $17.946\,\text{Nm}$. So $F = \dfrac{17.946\,\text{Nm}}{0.040\,\text{m}} = 448.65\,\text{N}$
 **Answer:** $450\,\text{N}$, two significant figures like the data.
@@ -180,7 +180,7 @@ In the free-body diagram the forces acting on the plank are its weight $G_\text{
 
 The force $N_2$ of the right end drops out of the moment condition. The moment condition gives $N_1$ as a linear function of the position $x$, so a line fits the points, and the weight of the person is obtained from its slope.
 **Reading the graph:** The points lie on a descending line with points on both sides of it. The fitted line passes approximately through the points $(0.50\,\text{m};\ 556\,\text{N})$ and $(2.50\,\text{m};\ 151\,\text{N})$. They are read from the line and chosen far from each other.
-**Formula:** Moment condition about the right end: $$N_1 L - m_\text{p} g \cdot \tfrac{L}{2} - m g\,(L - x) = 0$$, from which $N_1 = \tfrac{1}{2} m_\text{p} g + m g - \dfrac{m g}{L}\, x$. The slope is $k = -\dfrac{m g}{L}$, so $m = -\dfrac{k L}{g}$
+**Formula:** $$\begin{aligned} \Sigma M &= 0 \\ N_1 L &= m_\text{p} g\, \tfrac{L}{2} \\ &\quad + m g\,(L - x) \\ N_1 &= \tfrac{1}{2} m_\text{p} g + m g \\ &\quad - \dfrac{m g}{L}\, x \\ k &= -\dfrac{m g}{L} \\ m &= -\dfrac{k L}{g} \end{aligned}$$
 **Conversions:** None needed: the forces are in newtons and the positions in metres, so the slope is in $\text{N/m}$.
 **Substitution:** The slope is $k = \dfrac{151\,\text{N} - 556\,\text{N}}{2.50\,\text{m} - 0.50\,\text{m}} = -202.5\,\dfrac{\text{N}}{\text{m}}$. So $m = \dfrac{202.5\,\text{N/m} \cdot 3.00\,\text{m}}{9.81\,\text{m/s}^2} = \dfrac{607.5\,\text{N}}{9.81\,\text{m/s}^2} = 61.9\,\text{kg}$
 **Answer:** a) $62\,\text{kg}$, two significant figures, because the line is fitted by eye and the slope is therefore obtained only to two figures; a fit by eye varies, so about $59\text{–}65\,\text{kg}$ is a good answer.
@@ -200,7 +200,7 @@ In the free-body diagram the forces acting on the bench are its weight $G_\text{
 The student took into account the force of the person and the force of the right leg but forgot the weight of the bench itself.
 
 The centre of mass is $1.20\,\text{m} - 0.20\,\text{m} = 1.00\,\text{m}$ from the left leg, so the lever arm of the weight is not zero, and its moment turns the bench in the same direction as the moment of the force of the person. The right leg turns the bench in the opposite direction.
-**Formula:** $N_2 r_2 - G_\text{p} r_\text{p} - F_\text{h} r_\text{h} = 0$, from which $N_2 = \dfrac{G_\text{p} r_\text{p} + F_\text{h} r_\text{h}}{r_2}$
+**Formula:** $$\begin{aligned} \Sigma M &= 0 \\ N_2 r_2 - G_\text{p} r_\text{p} - F_\text{h} r_\text{h} &= 0 \\ N_2 r_2 &= G_\text{p} r_\text{p} + F_\text{h} r_\text{h} \\ N_2 &= \dfrac{G_\text{p} r_\text{p} + F_\text{h} r_\text{h}}{r_2} \end{aligned}$$
 **Conversions:** None needed: the masses are in kilograms and the lever arms in metres. The lever arms from the left leg are $r_\text{p} = 1.00\,\text{m}$, $r_\text{h} = 0.40\,\text{m}$ and $r_2 = 2.00\,\text{m}$.
 **Substitution:** The weights are $G_\text{p} = 14.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 137.3\,\text{N}$ and $F_\text{h} = 72.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 706.3\,\text{N}$. The moments are $G_\text{p} r_\text{p} = 137.3\,\text{N} \cdot 1.00\,\text{m} = 137.3\,\text{Nm}$ and $F_\text{h} r_\text{h} = 706.3\,\text{N} \cdot 0.40\,\text{m} = 282.5\,\text{Nm}$, together $419.9\,\text{Nm}$. So $N_2 = \dfrac{419.9\,\text{Nm}}{2.00\,\text{m}} = 209.9\,\text{N}$
 **Answer:** a) The student forgot the weight $G_\text{p}$ of the bench itself. Its lever arm about the left leg is $1.00\,\text{m}$, so its moment is not zero and it must not be left out; only the force of the left leg itself drops out, because its lever arm is zero. b) $210\,\text{N}$, three significant figures like the initial values.
@@ -210,7 +210,7 @@ The centre of mass is $1.20\,\text{m} - 0.20\,\text{m} = 1.00\,\text{m}$ from th
 **Given:** measurement points of the table $(m;\ x)$: $(50.0\,\text{g};\ 35.8\,\text{cm})$, $(100.0\,\text{g};\ 28.7\,\text{cm})$, $(150.0\,\text{g};\ 24.0\,\text{cm})$ and $(200.0\,\text{g};\ 21.1\,\text{cm})$; mass at $5.0\,\text{cm}$, centre of mass of the rule at $50.0\,\text{cm}$
 **Find:** a) the mass $M$ of the rule from each measurement and their mean $M_\text{mean}$ in grams; b) why the experiment is done with several masses
 **Principle:** When the rule stays horizontal on the support, the sum of the moments about the point of support is zero. In the free-body diagram the forces acting on the rule are the weight of the mass $m g$ from the $5.0\,\text{cm}$ mark downwards, the weight of the rule $M g$ from the centre of mass at $50.0\,\text{cm}$ downwards and the force of the support upwards at the point of support, whose lever arm is zero. The mass turns the rule to one side of the point of support and the weight of the rule to the other. The lever arm of the mass is $x - 5.0\,\text{cm}$ and the lever arm of the weight of the rule $50.0\,\text{cm} - x$.
-**Formula:** $$\begin{aligned} &m g\,(x - 5.0\,\text{cm}) \\ &\quad - M g\,(50.0\,\text{cm} - x) \\ &= 0 \end{aligned}$$, from which $M = \dfrac{m\,(x - 5.0\,\text{cm})}{50.0\,\text{cm} - x}$
+**Formula:** $$\begin{aligned} r_1 &= x - 5.0\,\text{cm} \\ r_2 &= 50.0\,\text{cm} - x \\ \Sigma M &= 0 \\ m g\, r_1 - M g\, r_2 &= 0 \\ M &= \dfrac{m r_1}{r_2} \\ &= \dfrac{m\,(x - 5.0\,\text{cm})}{50.0\,\text{cm} - x} \end{aligned}$$
 **Conversions:** None needed: $g$ cancels, and the lengths are in the same unit $\text{cm}$, so the unit cancels in the quotient.
 **Substitution:** From the first measurement $M = \dfrac{50.0\,\text{g} \cdot 30.8\,\text{cm}}{14.2\,\text{cm}} = 108.5\,\text{g}$. In the same way from the others: $100.0\,\text{g} \cdot \dfrac{23.7}{21.3} = 111.3\,\text{g}$, $150.0\,\text{g} \cdot \dfrac{19.0}{26.0} = 109.6\,\text{g}$ and $200.0\,\text{g} \cdot \dfrac{16.1}{28.9} = 111.4\,\text{g}$. The sum is $440.8\,\text{g}$, so $M_\text{mean} = \dfrac{440.8\,\text{g}}{4} = 110.2\,\text{g}$
 **Answer:** a) $110\,\text{g}$, three significant figures like the measurement data. b) Each measurement gives its own estimate of the mass of the rule, and the mean reduces the effect of a single reading error of $x$. Comparing the results is also a check: the results $108.5\text{–}111.4\,\text{g}$ vary by only a few per cent, and there is no clear trend with the mass, so the assumption that the centre of mass of the rule is at $50.0\,\text{cm}$ seems to hold. If the result changed clearly with the mass, there would be an error in the assumption or in the dimensions.
@@ -255,7 +255,7 @@ The correct answer is line 2: the lever arms of all forces are measured about th
 In the free-body diagram the forces acting on the plank are the weight $G_\text{p}$ downwards from the middle, the force of the painter $m_\text{pt} g$ downwards and the support forces upwards.
 
 The right trestle is chosen as the reference point: at the limit $N_1 = 0$, and the moment of the weight of the plank (anticlockwise) cancels the moment of the painter (clockwise).
-**Formula:** $$\begin{aligned} &m_\text{p} g\,(x_2 - x_\text{p}) - m_\text{pt} g\,(x - x_2) \\ &= 0 \end{aligned}$$, from which $x = x_2 + \dfrac{m_\text{p}\,(x_2 - x_\text{p})}{m_\text{pt}}$
+**Formula:** $$\begin{aligned} r_1 &= x_2 - x_\text{p} \\ r_2 &= x - x_2 \\ \Sigma M &= 0 \\ m_\text{p} g\, r_1 - m_\text{pt} g\, r_2 &= 0 \\ r_2 &= \dfrac{m_\text{p} r_1}{m_\text{pt}} \\ x &= x_2 + r_2 \\ &= x_2 + \dfrac{m_\text{p}\,(x_2 - x_\text{p})}{m_\text{pt}} \end{aligned}$$
 **Conversions:** None needed: $g$ and the unit of mass cancel, and the lengths are in metres. The lever arm of the weight of the plank from the trestle is $x_2 - x_\text{p} = 3.00\,\text{m} - 2.00\,\text{m} = 1.00\,\text{m}$.
 **Substitution:** $x = 3.00\,\text{m} + \dfrac{20.0\,\text{kg} \cdot 1.00\,\text{m}}{60.0\,\text{kg}} = 3.00\,\text{m} + 0.333\,\text{m} = 3.333\,\text{m}$
 **Answer:** $3.33\,\text{m}$ from the left end of the plank, three significant figures like the data.
@@ -271,7 +271,7 @@ In the free-body diagram the forces acting on the rod are its weight downwards f
 The hinge is chosen as the reference point, so its unknown force drops out.
 
 $\overline{T}$ is resolved into components: the component along the rod passes through the hinge and causes no moment, and the perpendicular component $T \sin\alpha$ rotates the rod upwards.
-**Formula:** $T \sin\alpha \cdot L - m_\text{r} g \cdot \tfrac{L}{2} - m_\text{s} g \cdot L = 0$, from which $T = \dfrac{(\tfrac{1}{2} m_\text{r} + m_\text{s})\, g}{\sin\alpha}$
+**Formula:** $$\begin{aligned} \Sigma M &= 0 \\ T \sin\alpha \cdot L &= m_\text{r} g\, \tfrac{L}{2} \\ &\quad + m_\text{s} g\, L \\ T \sin\alpha &= (\tfrac{1}{2} m_\text{r} + m_\text{s})\, g \\ T &= \dfrac{(\tfrac{1}{2} m_\text{r} + m_\text{s})\, g}{\sin\alpha} \end{aligned}$$
 **Conversions:** None needed: the masses are in kilograms, and the length $L$ cancels.
 **Substitution:** $T = \dfrac{(2.00\,\text{kg} + 8.00\,\text{kg}) \cdot 9.81\,\text{m/s}^2}{\sin 30.0^\circ} = \dfrac{98.1\,\text{N}}{0.500} = 196.2\,\text{N}$
 **Answer:** $196\,\text{N}$, three significant figures like the data.
@@ -285,7 +285,7 @@ $\overline{T}$ is resolved into components: the component along the rod passes t
 In the free-body diagram the forces acting on the log are the weight $G$ downwards from the middle and the forces of the carriers upwards.
 
 The rear carrier is chosen as the reference point, so his unknown force drops out. The centre of mass is between the carriers, so the weight and the force of the front carrier rotate the log in opposite directions.
-**Formula:** $F\,(L - a) - m g\,(\tfrac{L}{2} - a) = 0$, from which $a = \dfrac{m g \cdot \tfrac{L}{2} - F L}{m g - F}$
+**Formula:** $$\begin{aligned} \Sigma M &= 0 \\ F\,(L - a) &= m g\,(\tfrac{L}{2} - a) \\ F L - F a &= \tfrac{1}{2} m g L - m g a \\ (m g - F)\, a &= \tfrac{1}{2} m g L - F L \\ a &= \dfrac{m g \cdot \tfrac{L}{2} - F L}{m g - F} \end{aligned}$$
 **Conversions:** None needed: the mass is in kilograms and the length in metres. The weight is $G = 90.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 882.9\,\text{N}$.
 **Substitution:** The numerator is $882.9\,\text{N} \cdot 2.50\,\text{m} - 300\,\text{N} \cdot 5.00\,\text{m} = 707.25\,\text{Nm}$ and the denominator $$882.9\,\text{N} - 300\,\text{N} = 582.9\,\text{N}$$. So $a = \dfrac{707.25\,\text{Nm}}{582.9\,\text{N}} = 1.213\,\text{m}$
 **Answer:** $1.21\,\text{m}$ from the back end of the log, three significant figures like the data.
@@ -303,7 +303,7 @@ The wall is smooth, so the force of the wall is perpendicular to the wall and th
 The lower end of the ladder is chosen as the point of moments, so $N$ and $f$ drop out. At the limit of slipping the friction is at its largest, $f = \mu N$.
 
 From the distance $s$ along the ladder, the lever arm of the weight is horizontally $s\cos\alpha$ and the lever arm of the force of the wall vertically $L\sin\alpha$.
-**Formula:** Sum of the forces: $N = G_\text{t} + G_\text{h}$ and $N_\text{s} = f = \mu N$. Moment condition about the lower end: $M_\text{s} = M_\text{t} + M_\text{h}$, where $M_\text{s} = N_\text{s} L \sin\alpha$, $M_\text{t} = G_\text{t}\,\tfrac{L}{2}\cos\alpha$ and $M_\text{h} = G_\text{h}\, s \cos\alpha$. So $s = \dfrac{M_\text{s} - M_\text{t}}{G_\text{h}\cos\alpha}$
+**Formula:** $$\begin{aligned} \Sigma F_y &= 0 \\ N &= G_\text{t} + G_\text{h} \\ \Sigma F_x &= 0 \\ N_\text{s} &= f = \mu N \\ \Sigma M &= 0 \\ N_\text{s} L \sin\alpha &= G_\text{t}\,\tfrac{L}{2}\cos\alpha \\ &\quad + G_\text{h}\, s \cos\alpha \\ s &= \dfrac{N_\text{s} L \sin\alpha - G_\text{t}\,\tfrac{L}{2}\cos\alpha}{G_\text{h}\cos\alpha} \end{aligned}$$
 **Conversions:** None needed: the masses are in kilograms and the lengths in metres. The weights are $G_\text{t} = 12.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 117.7\,\text{N}$ and $G_\text{h} = 75.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 735.8\,\text{N}$, and $\sin 65.0^\circ = 0.9063$ and $\cos 65.0^\circ = 0.4226$.
 **Substitution:** In the vertical direction $N = 117.7\,\text{N} + 735.8\,\text{N} = 853.5\,\text{N}$. At the limit $N_\text{s} = f = \mu N = 0.40 \cdot 853.5\,\text{N} = 341.4\,\text{N}$. The moments are $$\begin{aligned} N_\text{s} L \sin\alpha &= 341.4\,\text{N} \cdot 5.00\,\text{m} \\ &\quad \cdot 0.9063 \\ &= 1547\,\text{Nm} \end{aligned}$$ and $$\begin{aligned} G_\text{t}\,\tfrac{L}{2}\cos\alpha &= 117.7\,\text{N} \cdot 2.50\,\text{m} \\ &\quad \cdot 0.4226 \\ &= 124.4\,\text{Nm} \end{aligned}$$. The denominator is $G_\text{h}\cos\alpha = 735.8\,\text{N} \cdot 0.4226 = 310.9\,\text{N}$. So $s = \dfrac{1547\,\text{Nm} - 124.4\,\text{Nm}}{310.9\,\text{N}} = 4.575\,\text{m}$
 **Answer:** b) $4.6\,\text{m}$ from the lower end of the ladder, two significant figures like the coefficient of friction $0.40$. c) The normal force $N$ of the floor is the same all the time, because it carries the combined weight of the ladder and the person, so the largest possible friction $\mu N$ does not change. However, the moment of the weight of the person about the lower end grows with the distance $s$, and to balance it the wall must push the ladder harder and harder. At the same time the friction must grow equally large, $f = N_\text{s}$. When the friction needed exceeds $\mu N$, the ladder slips.
@@ -319,7 +319,7 @@ The chair topples onto its front legs when the common centre of mass of the chai
 In the free-body diagram the forces acting on the chair and the person are the weights $m_\text{t} g$ and $m_\text{h} g$ downwards and the support forces of the floor from the legs upwards.
 
 The common centre of mass is calculated from the masses and positions as for two bodies, and the limit is when it is at the front legs, $0.40\,\text{m}$ from the rear legs. This gives the limiting value of the centre of mass of the person, and the angle is read from the table at the point where $x_\text{h}$ reaches it.
-**Formula:** $x_\text{cm} = \dfrac{m_\text{t} x_\text{t} + m_\text{h} x_\text{h}}{m_\text{t} + m_\text{h}} = d$, from which $x_\text{h} = \dfrac{(m_\text{t} + m_\text{h})\, d - m_\text{t} x_\text{t}}{m_\text{h}}$. Linear interpolation between two table points $(\theta_1;\ x_1)$ and $(\theta_2;\ x_2)$: $\theta = \theta_1 + (\theta_2 - \theta_1)\,\dfrac{x_\text{h} - x_1}{x_2 - x_1}$
+**Formula:** $$\begin{aligned} x_\text{cm} &= \dfrac{m_\text{t} x_\text{t} + m_\text{h} x_\text{h}}{m_\text{t} + m_\text{h}} \\ x_\text{cm} &= d \\ (m_\text{t} + m_\text{h})\, d &= m_\text{t} x_\text{t} + m_\text{h} x_\text{h} \\ x_\text{h} &= \dfrac{(m_\text{t} + m_\text{h})\, d - m_\text{t} x_\text{t}}{m_\text{h}} \end{aligned}$$ Linear interpolation between two table points $(\theta_1;\ x_1)$ and $(\theta_2;\ x_2)$: $\theta = \theta_1 + (\theta_2 - \theta_1)\,\dfrac{x_\text{h} - x_1}{x_2 - x_1}$
 **Conversions:** Not needed in the calculation of part a), but the distances in the table are in centimetres: $0.4222\,\text{m} = 42.22\,\text{cm}$.
 **Substitution:** In part a) the numerator is $80.0\,\text{kg} \cdot 0.40\,\text{m} = 32.0\,\text{kg}\cdot\text{m}$ minus the term of the chair $8.00\,\text{kg} \cdot 0.20\,\text{m} = 1.6\,\text{kg}\cdot\text{m}$, that is $30.4\,\text{kg}\cdot\text{m}$. So $x_\text{h} = \dfrac{30.4\,\text{kg}\cdot\text{m}}{72.0\,\text{kg}} = 0.4222\,\text{m} = 42.2\,\text{cm}$. In the table the limiting value is between the points $(50^\circ;\ 41.3\,\text{cm})$ and $(60^\circ;\ 44.4\,\text{cm})$, so in part b) $\theta = 50^\circ + 10^\circ \cdot \dfrac{42.22 - 41.3}{44.4 - 41.3} = 50^\circ + 2.97^\circ = 52.97^\circ$
 **Answer:** b) $53^\circ$, two significant figures, because the angle is interpolated between table points. c) When the person reaches forward, the centre of mass of the person moves forward, and with it the common centre of mass of the chair and the person. As long as the common centre of mass is between the legs, the rear legs carry part of the weight and the chair stays in place. When the common centre of mass passes the front legs, the moment of the weights about the front legs turns the chair forward and no force can turn it back, because the support force of the rear legs is already zero. The chair topples. A longer reach would be allowed, for example, by moving the front legs further forward, so that the limiting value $x_\text{h}$ grows: if the distance between the legs were $0.50\,\text{m}$ and the centre of mass of the chair $0.25\,\text{m}$ away, the numerator would be $$80.0 \cdot 0.50 - 8.00 \cdot 0.25 = 38.0$$ and the limit $x_\text{h} = 38.0 / 72.0\,\text{m} = 0.528\,\text{m}$.

@@ -2,7 +2,7 @@
 **Annettu:** käden voima $F_\text{k} = 80\,\text{N}$, varsi $r_\text{k} = 0{,}60\,\text{m}$ tukipisteestä; naulan varsi $r_\text{n} = 0{,}050\,\text{m}$ tukipisteestä; rauta on kevyt ja levossa
 **Kysytty:** voima $F_\text{n}$, jolla rauta vetää naulaa, newtoneina
 **Periaate:** Rauta pysyy levossa, joten momenttien summa tukipisteen suhteen on nolla. Voimakuviossa raudalla on käden voima $F_\text{k}$ alas, naulan voima $F_\text{n}$ alas toisella puolella tukipistettä ja tuen voima ylös tukipisteessä; tuen voiman varsi on nolla, joten se ei esiinny momenttiehdossa. Rauta on kevyt, joten sen painoa ei oteta huomioon. Käden voima kiertää rautaa yhteen suuntaan ja naulan voima toiseen.
-**Kaava:** $F_\text{k} r_\text{k} - F_\text{n} r_\text{n} = 0$, josta $F_\text{n} = \dfrac{F_\text{k} r_\text{k}}{r_\text{n}}$
+**Kaava:** $$\begin{aligned} \Sigma M &= 0 \\ F_\text{k} r_\text{k} - F_\text{n} r_\text{n} &= 0 \\ F_\text{n} &= \dfrac{F_\text{k} r_\text{k}}{r_\text{n}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: voima on newtoneina ja varret metreinä.
 **Sijoitus:** $F_\text{n} = \dfrac{80\,\text{N} \cdot 0{,}60\,\text{m}}{0{,}050\,\text{m}} = \dfrac{48\,\text{Nm}}{0{,}050\,\text{m}} = 960\,\text{N}$
 **Vastaus:** $960\,\text{N}$, kaksi merkitsevää numeroa kuten käden voimassa $80\,\text{N}$ ja varressa $0{,}60\,\text{m}$.
@@ -12,7 +12,7 @@
 **Annettu:** punnuksen paino $F_1 = 0{,}50\,\text{N}$, varsi $r_1 = 0{,}30\,\text{m}$; kysytyn voiman varsi $r_2 = 0{,}20\,\text{m}$; kevyt viivain tuettu keskeltä
 **Kysytty:** tarvittava voima $F_2$ newtoneina
 **Periaate:** Viivain pysyy levossa, joten momenttien summa tukipisteen suhteen on nolla. Voimakuviossa viivaimeen vaikuttavat punnuksen voima $F_1$ alas vasemmalla, voima $F_2$ alas oikealla ja tuen voima ylös tukipisteessä, jonka varsi on nolla. Viivain on kevyt, joten sen painoa ei oteta huomioon. $F_1$ kiertää viivainta vastapäivään ja $F_2$ myötäpäivään.
-**Kaava:** $F_1 r_1 - F_2 r_2 = 0$, josta $F_2 = \dfrac{F_1 r_1}{r_2}$
+**Kaava:** $$\begin{aligned} \Sigma M &= 0 \\ F_1 r_1 - F_2 r_2 &= 0 \\ F_2 &= \dfrac{F_1 r_1}{r_2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: voima on newtoneina ja varret metreinä.
 **Sijoitus:** $F_2 = \dfrac{0{,}50\,\text{N} \cdot 0{,}30\,\text{m}}{0{,}20\,\text{m}} = 0{,}75\,\text{N}$
 **Vastaus:** $0{,}75\,\text{N}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -22,7 +22,7 @@
 **Annettu:** kärryjen ja kuorman paino $G = 620\,\text{N}$, sen varsi akselista $r_G = 0{,}400\,\text{m}$; kahvojen varsi $r_F = 1{,}20\,\text{m}$
 **Kysytty:** nostovoima $F$ newtoneina
 **Periaate:** Kärryt ovat levossa, joten momenttien summa minkä tahansa pisteen suhteen on nolla. Voimakuviossa kärryihin vaikuttavat paino $G$ painopisteestä alas, nostovoima $F$ kahvoista ylös ja maan tukivoima pyörän kohdalta ylös. Momenttipisteeksi valitaan pyörän akseli, jolloin tuntematon tukivoima jää pois. Paino kiertää kärryjä myötäpäivään ja nostovoima vastapäivään.
-**Kaava:** $F r_F - G r_G = 0$, josta $F = \dfrac{G r_G}{r_F}$
+**Kaava:** $$\begin{aligned} \Sigma M &= 0 \\ F r_F - G r_G &= 0 \\ F &= \dfrac{G r_G}{r_F} \end{aligned}$$
 **Muunnokset:** Ei tarvita: paino on newtoneina ja varret metreinä.
 **Sijoitus:** $F = \dfrac{620\,\text{N} \cdot 0{,}400\,\text{m}}{1{,}20\,\text{m}} = 206{,}7\,\text{N}$
 **Vastaus:** $207\,\text{N}$, kolme merkitsevää numeroa kuten pituuksissa $0{,}400\,\text{m}$ ja $1{,}20\,\text{m}$.
@@ -32,7 +32,7 @@
 **Annettu:** tasa-aineinen lankku $m = 12{,}0\,\text{kg}$; tuet lankun päissä; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** kummankin tuen tukivoima $N$ newtoneina
 **Periaate:** Lankku on levossa, joten voimien summa ja momenttien summa ovat nolla. Voimakuviossa lankkuun vaikuttavat paino $G$ keskeltä alas ja tukivoimat $N_1$ ja $N_2$ päistä ylös. Painopiste on keskellä, joten tuet ovat yhtä kaukana siitä, ja momenttiehto painopisteen suhteen, $N_1 r = N_2 r$, antaa $N_1 = N_2 = N$. Tukivoimat saadaan sitten voimien summasta.
-**Kaava:** $N_1 + N_2 - G = 0$ ja $N_1 = N_2 = N$, joten $N = \dfrac{m g}{2}$
+**Kaava:** $$\begin{aligned} \Sigma F &= 0 \\ N_1 + N_2 - G &= 0 \\ 2N - m g &= 0 \\ N &= \dfrac{m g}{2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: massa on kilogrammoina.
 **Sijoitus:** $N = \dfrac{12{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{2} = \dfrac{117{,}72\,\text{N}}{2} = 58{,}86\,\text{N}$
 **Vastaus:** $58{,}9\,\text{N}$, kolme merkitsevää numeroa kuten massassa $12{,}0\,\text{kg}$.
@@ -42,7 +42,7 @@
 **Annettu:** kevyt tanko $L = 0{,}80\,\text{m}$; punnukset $m_1 = 2{,}0\,\text{kg}$ kohdassa $x_1 = 0$ ja $m_2 = 6{,}0\,\text{kg}$ kohdassa $x_2 = 0{,}80\,\text{m}$
 **Kysytty:** yhteisen painopisteen paikka $x_\text{pp}$ kevyemmästä punnuksesta mitattuna
 **Periaate:** Tanko pysyy vaakasuorassa, kun se tuetaan yhteisen painopisteen kohdalta: silloin punnusten painojen momentit tukikohdan suhteen kumoavat toisensa. Voimakuviossa tankoon vaikuttavat punnusten voimat $m_1 g$ ja $m_2 g$ päistä alas ja tuen voima ylös tukikohdassa. Tanko on kevyt, joten sen painoa ei oteta huomioon.
-**Kaava:** $x_\text{pp} = \dfrac{m_1 x_1 + m_2 x_2}{m_1 + m_2}$
+**Kaava:** $$\begin{aligned} M_1 &= M_2 \\ m_1 g\, r_1 &= m_2 g\, r_2 \\ m_1 (x_\text{pp} - x_1) &= m_2 (x_2 - x_\text{pp}) \\ (m_1 + m_2)\, x_\text{pp} &= m_1 x_1 + m_2 x_2 \\ x_\text{pp} &= \dfrac{m_1 x_1 + m_2 x_2}{m_1 + m_2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: massojen yksikkö supistuu, ja pituus on metreinä.
 **Sijoitus:** $x_\text{pp} = \dfrac{2{,}0\,\text{kg} \cdot 0\,\text{m} + 6{,}0\,\text{kg} \cdot 0{,}80\,\text{m}}{2{,}0\,\text{kg} + 6{,}0\,\text{kg}} = \dfrac{4{,}8\,\text{kg}\cdot\text{m}}{8{,}0\,\text{kg}} = 0{,}60\,\text{m}$
 **Vastaus:** $0{,}60\,\text{m}$ kevyemmästä punnuksesta, kaksi merkitsevää numeroa kuten massoissa ja pituudessa.
@@ -62,7 +62,7 @@ Väite, että tanko pysyisi levossa pelkän voimien summan nollautumisen vuoksi,
 **Annettu:** ensimmäisen lapsen massa $m_1 = 28\,\text{kg}$ ja varsi $r_1 = 1{,}4\,\text{m}$ tukipisteestä; toisen lapsen massa $m_2 = 40\,\text{kg}$; lauta on kevyt ja tuettu keskeltä
 **Kysytty:** toisen lapsen etäisyys $r_2$ tukipisteestä metreinä
 **Periaate:** Lauta pysyy vaakasuorassa, kun sen painon momenttien summa tukipisteen suhteen on nolla. Voimakuviossa lautaan vaikuttavat lasten painot $m_1 g$ ja $m_2 g$ alas ja tuen voima ylös tukipisteessä. Tuen voiman varsi on nolla, joten se ei esiinny momenttiehdossa. Lauta on kevyt, joten sen painoa ei oteta huomioon. Lapset kiertävät lautaa vastakkaisiin suuntiin.
-**Kaava:** $m_1 g\, r_1 - m_2 g\, r_2 = 0$, josta $r_2 = \dfrac{m_1 r_1}{m_2}$
+**Kaava:** $$\begin{aligned} \Sigma M &= 0 \\ m_1 g\, r_1 - m_2 g\, r_2 &= 0 \\ m_1 g\, r_1 &= m_2 g\, r_2 \\ r_2 &= \dfrac{m_1 r_1}{m_2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: putoamiskiihtyvyys $g$ supistuu, ja massat ovat kilogrammoina.
 **Sijoitus:** $r_2 = \dfrac{28\,\text{kg} \cdot 1{,}4\,\text{m}}{40\,\text{kg}} = \dfrac{39{,}2\,\text{kg}\cdot\text{m}}{40\,\text{kg}} = 0{,}98\,\text{m}$
 **Vastaus:** $0{,}98\,\text{m}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -72,7 +72,7 @@ Väite, että tanko pysyisi levossa pelkän voimien summan nollautumisen vuoksi,
 **Annettu:** lankku $L = 2{,}4\,\text{m}$, $m_1 = 6{,}0\,\text{kg}$, painopiste keskellä eli kohdassa $x_1 = 1{,}2\,\text{m}$; säkki $m_2 = 3{,}0\,\text{kg}$ oikeassa päässä, $x_2 = 2{,}4\,\text{m}$
 **Kysytty:** yhteisen painopisteen paikka $x_\text{pp}$ lankun vasemmasta päästä mitattuna
 **Periaate:** Yhteinen painopiste on kohta, josta tuettuna lankku ja säkki pysyvät vaakasuorassa, koska painojen momentit tukikohdan suhteen kumoavat toisensa. Voimakuviossa lankkuun ja säkkiin vaikuttavat painot lankun painopisteestä ja oikeasta päästä alas sekä tuen voima ylös tukikohdassa. Tasa-aineisen lankun paino vaikuttaa sen keskipisteestä.
-**Kaava:** $x_\text{pp} = \dfrac{m_1 x_1 + m_2 x_2}{m_1 + m_2}$
+**Kaava:** $$\begin{aligned} M_1 &= M_2 \\ m_1 g\, r_1 &= m_2 g\, r_2 \\ m_1 (x_\text{pp} - x_1) &= m_2 (x_2 - x_\text{pp}) \\ (m_1 + m_2)\, x_\text{pp} &= m_1 x_1 + m_2 x_2 \\ x_\text{pp} &= \dfrac{m_1 x_1 + m_2 x_2}{m_1 + m_2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: massat ovat kilogrammoina ja paikat metreinä.
 **Sijoitus:** $x_\text{pp} = \dfrac{6{,}0\,\text{kg} \cdot 1{,}2\,\text{m} + 3{,}0\,\text{kg} \cdot 2{,}4\,\text{m}}{6{,}0\,\text{kg} + 3{,}0\,\text{kg}} = \dfrac{14{,}4\,\text{kg}\cdot\text{m}}{9{,}0\,\text{kg}} = 1{,}6\,\text{m}$
 **Vastaus:** $1{,}6\,\text{m}$ lankun vasemmasta päästä, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -82,7 +82,7 @@ Väite, että tanko pysyisi levossa pelkän voimien summan nollautumisen vuoksi,
 **Annettu:** lankku $L = 4{,}00\,\text{m}$, $m = 25{,}0\,\text{kg}$, painopiste kohdassa $2{,}00\,\text{m}$; tuet kohdissa $x_1 = 0{,}50\,\text{m}$ ja $x_2 = 3{,}00\,\text{m}$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** vasemman tuen tukivoima $N_1$ newtoneina
 **Periaate:** Lankku on levossa, joten momenttien summa minkä tahansa pisteen suhteen on nolla. Voimakuviossa lankkuun vaikuttavat paino $G$ keskeltä alas ja tukivoimat $N_1$ ja $N_2$ ylös. Momenttipisteeksi valitaan oikea tuki, jolloin tuntematon $N_2$ jää pois momenttiehdosta. Paino on oikean tuen vasemmalla puolella ja kiertää lankkua vastapäivään, $N_1$ myötäpäivään.
-**Kaava:** $G r_G - N_1 r_1 = 0$, josta $N_1 = \dfrac{m g\, r_G}{r_1}$
+**Kaava:** $$\begin{aligned} \Sigma M &= 0 \\ G r_G - N_1 r_1 &= 0 \\ N_1 &= \dfrac{G r_G}{r_1} \\ &= \dfrac{m g\, r_G}{r_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita, mutta varret lasketaan oikeasta tuesta: $r_G = 3{,}00\,\text{m} - 2{,}00\,\text{m} = 1{,}00\,\text{m}$ ja $r_1 = 3{,}00\,\text{m} - 0{,}50\,\text{m} = 2{,}50\,\text{m}$.
 **Sijoitus:** $N_1 = \dfrac{25{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}00\,\text{m}}{2{,}50\,\text{m}} = \dfrac{245{,}25\,\text{Nm}}{2{,}50\,\text{m}} = 98{,}1\,\text{N}$
 **Vastaus:** $98{,}1\,\text{N}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
@@ -92,7 +92,7 @@ Väite, että tanko pysyisi levossa pelkän voimien summan nollautumisen vuoksi,
 **Annettu:** lankku $L = 3{,}0\,\text{m}$, $m_\text{L} = 20\,\text{kg}$, painopiste keskellä; henkilö $m_\text{h} = 70\,\text{kg}$ kohdassa $1{,}0\,\text{m}$ vasemmasta päästä; tuet päissä; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** vasemman pään tukivoima $N_1$ newtoneina
 **Periaate:** Lankku on levossa, joten momenttien summa minkä tahansa pisteen suhteen on nolla. Voimakuviossa lankkuun vaikuttavat sen paino $G_\text{L}$ keskeltä alas, henkilön voima $F_\text{h} = m_\text{h} g$ alas ja tukivoimat $N_1$ ja $N_2$ päistä ylös. Momenttipisteeksi valitaan oikea pää, jolloin $N_2$ jää pois. $G_\text{L}$ ja $F_\text{h}$ kiertävät lankkua sen ympäri vastapäivään, $N_1$ myötäpäivään.
-**Kaava:** $$m_\text{L} g\, r_\text{L} + m_\text{h} g\, r_\text{h} - N_1 L = 0$$, josta $N_1 = \dfrac{(m_\text{L} r_\text{L} + m_\text{h} r_\text{h})\, g}{L}$
+**Kaava:** $$\begin{aligned} \Sigma M &= 0 \\ G_\text{L} r_\text{L} + F_\text{h} r_\text{h} - N_1 L &= 0 \\ N_1 L &= m_\text{L} g\, r_\text{L} + m_\text{h} g\, r_\text{h} \\ N_1 &= \dfrac{(m_\text{L} r_\text{L} + m_\text{h} r_\text{h})\, g}{L} \end{aligned}$$
 **Muunnokset:** Ei tarvita, mutta varret lasketaan oikeasta päästä: $r_\text{L} = 1{,}5\,\text{m}$ ja $r_\text{h} = 3{,}0\,\text{m} - 1{,}0\,\text{m} = 2{,}0\,\text{m}$.
 **Sijoitus:** Momentit ovat $m_\text{L} g\, r_\text{L} = 20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}5\,\text{m} = 294{,}3\,\text{Nm}$ ja $m_\text{h} g\, r_\text{h} = 70\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 2{,}0\,\text{m} = 1373{,}4\,\text{Nm}$, yhteensä $1667{,}7\,\text{Nm}$. Siis $N_1 = \dfrac{1667{,}7\,\text{Nm}}{3{,}0\,\text{m}} = 555{,}9\,\text{N}$
 **Vastaus:** $560\,\text{N}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -104,7 +104,7 @@ Väite, että tanko pysyisi levossa pelkän voimien summan nollautumisen vuoksi,
 **Periaate:** Kuvassa kulma $\alpha$ on pystysuoran ja hyllyn korkeussuunnan eli etureunan välinen kulma, siis hyllyn kallistus pystysuoraan nähden. Etureunansa varassa oleva hylly pysyy paikallaan, kun painopisteen kautta kulkeva pystysuora osuu reunan taakse: silloin painon momentti reunan suhteen kääntää hyllyä takaisin.
 
 Raja on, kun painopiste on täsmälleen reunan yläpuolella, jolloin painon momentti reunan suhteen on nolla. Voimakuviossa hyllyyn vaikuttavat vain paino painopisteestä alas ja lattian tukivoima reunasta ylös.
-**Kaava:** Rajalla painopisteestä etureunaan $P$ kulkeva jana on pystysuora. Painopiste on hyllyn keskellä, joten se on puolen korkeuden, $\tfrac{h}{2}$, päässä hyllyn pohjan keskikohdasta hyllyn korkeussuunnassa, ja pohjan keskikohta on puolen syvyyden, $\tfrac{d}{2}$, päässä reunasta $P$. Syntyy suorakulmainen kolmio, jonka kateetit ovat $\tfrac{d}{2}$ ja $\tfrac{h}{2}$ ja jonka hypotenuusa on pystysuora jana. Painopisteen kohdalla pystysuoran ja kateetin $\tfrac{h}{2}$ välinen kulma on $\alpha$, koska kateetti $\tfrac{h}{2}$ on hyllyn etureunan suuntainen, ja kulman vastainen kateetti on $\tfrac{d}{2}$. Siis $\tan\alpha = \dfrac{d/2}{h/2} = \dfrac{d}{h}$, josta $\alpha = \arctan\dfrac{d}{h}$
+**Kaava:** Rajalla painopisteestä etureunaan $P$ kulkeva jana on pystysuora. Painopiste on hyllyn keskellä, joten se on puolen korkeuden, $\tfrac{h}{2}$, päässä hyllyn pohjan keskikohdasta hyllyn korkeussuunnassa, ja pohjan keskikohta on puolen syvyyden, $\tfrac{d}{2}$, päässä reunasta $P$. Syntyy suorakulmainen kolmio, jonka kateetit ovat $\tfrac{d}{2}$ ja $\tfrac{h}{2}$ ja jonka hypotenuusa on pystysuora jana. Painopisteen kohdalla pystysuoran ja kateetin $\tfrac{h}{2}$ välinen kulma on $\alpha$, koska kateetti $\tfrac{h}{2}$ on hyllyn etureunan suuntainen, ja kulman vastainen kateetti on $\tfrac{d}{2}$. Siis $$\begin{aligned} \tan\alpha &= \dfrac{d/2}{h/2} \\ &= \dfrac{d}{h} \\ \alpha &= \arctan\dfrac{d}{h} \end{aligned}$$
 **Muunnokset:** Ei tarvita: kummankin pituuden yksikkö on metri, ja se supistuu.
 **Sijoitus:** $\alpha = \arctan\dfrac{0{,}400\,\text{m}}{1{,}80\,\text{m}} = \arctan 0{,}2222 = 12{,}53^\circ$
 **Vastaus:** $12{,}5^\circ$, kolme merkitsevää numeroa kuten mitoissa $0{,}400\,\text{m}$ ja $1{,}80\,\text{m}$.
@@ -114,7 +114,7 @@ Raja on, kun painopiste on täsmälleen reunan yläpuolella, jolloin painon mome
 **Annettu:** kahvakuula $m = 5{,}0\,\text{kg}$, varsi $r_\text{k} = 0{,}32\,\text{m}$; kyynärvarren paino $G_\text{v} = 15\,\text{N}$, varsi $r_\text{v} = 0{,}15\,\text{m}$; lihaksen varsi $r_\text{L} = 0{,}040\,\text{m}$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** hauislihaksen voima $F$ newtoneina
 **Periaate:** Kyynärvarsi on levossa, joten momenttien summa kyynärnivelen suhteen on nolla. Voimakuviossa kyynärvarteen vaikuttavat kahvakuulan voima $mg$ kämmenestä alas, kyynärvarren paino painopisteestään alas, lihaksen voima $F$ ylös ja kyynärnivelen voima, joka osoittaa alas, koska lihaksen voima on suurempi kuin painot yhteensä. Momenttipisteeksi valitaan nivel, jolloin tuntematon nivelen voima jää pois. Lihas kiertää kyynärvartta yhteen suuntaan, painot toiseen.
-**Kaava:** $F r_\text{L} - m g\, r_\text{k} - G_\text{v} r_\text{v} = 0$, josta $F = \dfrac{m g\, r_\text{k} + G_\text{v} r_\text{v}}{r_\text{L}}$
+**Kaava:** $$\begin{aligned} \Sigma M &= 0 \\ F r_\text{L} - m g\, r_\text{k} - G_\text{v} r_\text{v} &= 0 \\ F r_\text{L} &= m g\, r_\text{k} + G_\text{v} r_\text{v} \\ F &= \dfrac{m g\, r_\text{k} + G_\text{v} r_\text{v}}{r_\text{L}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: varret ovat metreinä ja massa kilogrammoina.
 **Sijoitus:** Momentit ovat $m g\, r_\text{k} = 5{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 0{,}32\,\text{m} = 15{,}696\,\text{Nm}$ ja $G_\text{v} r_\text{v} = 15\,\text{N} \cdot 0{,}15\,\text{m} = 2{,}25\,\text{Nm}$, yhteensä $17{,}946\,\text{Nm}$. Siis $F = \dfrac{17{,}946\,\text{Nm}}{0{,}040\,\text{m}} = 448{,}65\,\text{N}$
 **Vastaus:** $450\,\text{N}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -125,7 +125,7 @@ Raja on, kun painopiste on täsmälleen reunan yläpuolella, jolloin painon mome
 **Kysytty:** a) henkilön massa $m$ kilogrammoina sovitetun suoran kulmakertoimesta; b) selitys, miksi pisteet ovat suoralla
 **Periaate:** Lankku on levossa, joten momenttien summa oikean pään suhteen on nolla. Voimakuviossa lankkuun vaikuttavat sen paino $G_\text{L}$ keskeltä alas, henkilön voima $m g$ kohdasta $x$ alas ja anturien voimat $N_1$ ja $N_2$ päistä ylös. Oikean pään voima $N_2$ jää momenttiehdosta pois. Momenttiehto antaa $N_1$:n lineaarisena funktiona paikasta $x$, joten pisteisiin sopii suora, ja sen kulmakertoimesta saadaan henkilön paino.
 **Kuvaajan lukeminen:** Pisteet asettuvat laskevalle suoralle, jonka molemmille puolille jää pisteitä. Sovitettu suora kulkee likimain pisteiden $(0{,}50\,\text{m};\ 556\,\text{N})$ ja $(2{,}50\,\text{m};\ 151\,\text{N})$ kautta. Ne luetaan suoralta ja valitaan kaukana toisistaan.
-**Kaava:** Momenttiehto oikean pään suhteen: $$N_1 L - m_\text{L} g \cdot \tfrac{L}{2} - m g\,(L - x) = 0$$, josta $N_1 = \tfrac{1}{2} m_\text{L} g + m g - \dfrac{m g}{L}\, x$. Kulmakerroin on $k = -\dfrac{m g}{L}$, joten $m = -\dfrac{k L}{g}$
+**Kaava:** $$\begin{aligned} \Sigma M &= 0 \\ N_1 L &= m_\text{L} g\, \tfrac{L}{2} \\ &\quad + m g\,(L - x) \\ N_1 &= \tfrac{1}{2} m_\text{L} g + m g \\ &\quad - \dfrac{m g}{L}\, x \\ k &= -\dfrac{m g}{L} \\ m &= -\dfrac{k L}{g} \end{aligned}$$
 **Muunnokset:** Ei tarvita: voimat ovat newtoneina ja paikat metreinä, joten kulmakerroin on yksikössä $\text{N/m}$.
 **Sijoitus:** Kulmakerroin on $k = \dfrac{151\,\text{N} - 556\,\text{N}}{2{,}50\,\text{m} - 0{,}50\,\text{m}} = -202{,}5\,\dfrac{\text{N}}{\text{m}}$. Siis $m = \dfrac{202{,}5\,\text{N/m} \cdot 3{,}00\,\text{m}}{9{,}81\,\text{m/s}^2} = \dfrac{607{,}5\,\text{N}}{9{,}81\,\text{m/s}^2} = 61{,}9\,\text{kg}$
 **Vastaus:** a) $62\,\text{kg}$, kaksi merkitsevää numeroa, koska suora sovitetaan silmämääräisesti ja kulmakerroin saadaan siksi vain kahden numeron tarkkuudella; silmämääräinen sovitus vaihtelee, joten noin $59\text{–}65\,\text{kg}$ on hyvä vastaus.
@@ -139,7 +139,7 @@ b) Oikean pään suhteen lasketussa momenttiehdossa henkilön paino kerrotaan va
 **Periaate:** Penkki on levossa, joten momenttien summa vasemman jalan suhteen on nolla. Voimakuviossa penkkiin vaikuttavat sen paino $G_\text{p}$ keskeltä alas, henkilön voima $F_\text{h}$ alas ja jalkojen tukivoimat ylös. Opiskelija otti huomioon henkilön voiman ja oikean jalan voiman mutta unohti penkin oman painon.
 
 Painopiste on $1{,}20\,\text{m} - 0{,}20\,\text{m} = 1{,}00\,\text{m}$:n päässä vasemmasta jalasta, joten painon varsi ei ole nolla ja sen momentti kiertää penkkiä samaan suuntaan kuin henkilön voiman momentti. Oikea jalka kiertää penkkiä vastakkaiseen suuntaan.
-**Kaava:** $N_2 r_2 - G_\text{p} r_\text{p} - F_\text{h} r_\text{h} = 0$, josta $N_2 = \dfrac{G_\text{p} r_\text{p} + F_\text{h} r_\text{h}}{r_2}$
+**Kaava:** $$\begin{aligned} \Sigma M &= 0 \\ N_2 r_2 - G_\text{p} r_\text{p} - F_\text{h} r_\text{h} &= 0 \\ N_2 r_2 &= G_\text{p} r_\text{p} + F_\text{h} r_\text{h} \\ N_2 &= \dfrac{G_\text{p} r_\text{p} + F_\text{h} r_\text{h}}{r_2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: massat ovat kilogrammoina ja varret metreinä. Varret vasemmasta jalasta ovat $r_\text{p} = 1{,}00\,\text{m}$, $r_\text{h} = 0{,}40\,\text{m}$ ja $r_2 = 2{,}00\,\text{m}$.
 **Sijoitus:** Painot ovat $G_\text{p} = 14{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 137{,}3\,\text{N}$ ja $F_\text{h} = 72{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 706{,}3\,\text{N}$. Momentit ovat $G_\text{p} r_\text{p} = 137{,}3\,\text{N} \cdot 1{,}00\,\text{m} = 137{,}3\,\text{Nm}$ ja $F_\text{h} r_\text{h} = 706{,}3\,\text{N} \cdot 0{,}40\,\text{m} = 282{,}5\,\text{Nm}$, yhteensä $419{,}9\,\text{Nm}$. Siis $N_2 = \dfrac{419{,}9\,\text{Nm}}{2{,}00\,\text{m}} = 209{,}9\,\text{N}$
 **Vastaus:** a) Opiskelija unohti penkin oman painon $G_\text{p}$. Sen varsi vasemman jalan suhteen on $1{,}00\,\text{m}$, joten sen momentti ei ole nolla eikä sitä saa jättää pois; vain vasemman jalan oma voima jää pois, koska sen varsi on nolla. b) $210\,\text{N}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
@@ -149,7 +149,7 @@ Painopiste on $1{,}20\,\text{m} - 0{,}20\,\text{m} = 1{,}00\,\text{m}$:n pääss
 **Annettu:** taulukon mittauspisteet $(m;\ x)$: $(50{,}0\,\text{g};\ 35{,}8\,\text{cm})$, $(100{,}0\,\text{g};\ 28{,}7\,\text{cm})$, $(150{,}0\,\text{g};\ 24{,}0\,\text{cm})$ ja $(200{,}0\,\text{g};\ 21{,}1\,\text{cm})$; punnus kohdassa $5{,}0\,\text{cm}$, mitan painopiste kohdassa $50{,}0\,\text{cm}$
 **Kysytty:** a) mitan massa $M$ jokaisesta mittauksesta ja niiden keskiarvo $M_\text{ka}$ grammoina; b) miksi koe tehdään usealla punnuksella
 **Periaate:** Kun mitta pysyy vaakasuorassa tuella, momenttien summa tukikohdan suhteen on nolla. Voimakuviossa mittaan vaikuttavat punnuksen paino $m g$ kohdasta $5{,}0\,\text{cm}$ alas, mitan paino $M g$ painopisteestä $50{,}0\,\text{cm}$ alas ja tuen voima ylös tukikohdassa, jonka varsi on nolla. Punnus kiertää mittaa tukikohdan toiselle puolelle ja mitan paino toiselle. Punnuksen varsi on $x - 5{,}0\,\text{cm}$ ja mitan painon varsi $50{,}0\,\text{cm} - x$.
-**Kaava:** $$\begin{aligned} &m g\,(x - 5{,}0\,\text{cm}) \\ &\quad - M g\,(50{,}0\,\text{cm} - x) \\ &= 0 \end{aligned}$$, josta $M = \dfrac{m\,(x - 5{,}0\,\text{cm})}{50{,}0\,\text{cm} - x}$
+**Kaava:** $$\begin{aligned} r_1 &= x - 5{,}0\,\text{cm} \\ r_2 &= 50{,}0\,\text{cm} - x \\ \Sigma M &= 0 \\ m g\, r_1 - M g\, r_2 &= 0 \\ M &= \dfrac{m r_1}{r_2} \\ &= \dfrac{m\,(x - 5{,}0\,\text{cm})}{50{,}0\,\text{cm} - x} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $g$ supistuu, ja pituudet ovat samassa yksikössä $\text{cm}$, jolloin yksikkö supistuu osamäärässä.
 **Sijoitus:** Ensimmäisestä mittauksesta $M = \dfrac{50{,}0\,\text{g} \cdot 30{,}8\,\text{cm}}{14{,}2\,\text{cm}} = 108{,}5\,\text{g}$. Samalla tavalla muista: $100{,}0\,\text{g} \cdot \dfrac{23{,}7}{21{,}3} = 111{,}3\,\text{g}$, $150{,}0\,\text{g} \cdot \dfrac{19{,}0}{26{,}0} = 109{,}6\,\text{g}$ ja $200{,}0\,\text{g} \cdot \dfrac{16{,}1}{28{,}9} = 111{,}4\,\text{g}$. Summa on $440{,}8\,\text{g}$, joten $M_\text{ka} = \dfrac{440{,}8\,\text{g}}{4} = 110{,}2\,\text{g}$
 **Vastaus:** a) $110\,\text{g}$, kolme merkitsevää numeroa kuten mittaustiedoissa.
@@ -184,7 +184,7 @@ Tukivoimat ovat $N_\text{A} = 20\,\text{N}$ ja $N_\text{B} = 180\,\text{N}$, kak
 **Annettu:** lankku $L = 4{,}00\,\text{m}$, $m_\text{L} = 20{,}0\,\text{kg}$, painopiste $x_\text{L} = 2{,}00\,\text{m}$; pukit $x_1 = 0{,}50\,\text{m}$ ja $x_2 = 3{,}00\,\text{m}$ vasemmasta päästä; maalari $m_\text{m} = 60{,}0\,\text{kg}$
 **Kysytty:** maalarin suurin etäisyys $x$ lankun vasemmasta päästä ennen kaatumista
 **Periaate:** Lankku pysyy pukkien varassa, kunnes vasemman pukin tukivoima $N_1$ pienenee nollaan, koska pukki voi vain työntää ylöspäin. Voimakuviossa lankkuun vaikuttavat paino $G_\text{L}$ keskeltä alas, maalarin voima $m_\text{m} g$ alas ja tukivoimat ylös. Momenttipisteeksi valitaan oikea pukki: rajalla $N_1 = 0$, ja lankun painon momentti (vastapäivään) kumoaa maalarin momentin (myötäpäivään).
-**Kaava:** $$\begin{aligned} &m_\text{L} g\,(x_2 - x_\text{L}) - m_\text{m} g\,(x - x_2) \\ &= 0 \end{aligned}$$, josta $x = x_2 + \dfrac{m_\text{L}\,(x_2 - x_\text{L})}{m_\text{m}}$
+**Kaava:** $$\begin{aligned} r_1 &= x_2 - x_\text{L} \\ r_2 &= x - x_2 \\ \Sigma M &= 0 \\ m_\text{L} g\, r_1 - m_\text{m} g\, r_2 &= 0 \\ r_2 &= \dfrac{m_\text{L} r_1}{m_\text{m}} \\ x &= x_2 + r_2 \\ &= x_2 + \dfrac{m_\text{L}\,(x_2 - x_\text{L})}{m_\text{m}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $g$ ja massojen yksikkö supistuvat, ja pituudet ovat metreinä. Lankun painon varsi pukista on $x_2 - x_\text{L} = 3{,}00\,\text{m} - 2{,}00\,\text{m} = 1{,}00\,\text{m}$.
 **Sijoitus:** $x = 3{,}00\,\text{m} + \dfrac{20{,}0\,\text{kg} \cdot 1{,}00\,\text{m}}{60{,}0\,\text{kg}} = 3{,}00\,\text{m} + 0{,}333\,\text{m} = 3{,}333\,\text{m}$
 **Vastaus:** $3{,}33\,\text{m}$ lankun vasemmasta päästä, kolme merkitsevää numeroa kuten lähtötiedoissa.
@@ -196,7 +196,7 @@ Tukivoimat ovat $N_\text{A} = 20\,\text{N}$ ja $N_\text{B} = 180\,\text{N}$, kak
 **Periaate:** Tanko on levossa, joten momenttien summa saranan suhteen on nolla. Voimakuviossa tankoon vaikuttavat sen paino keskeltä alas, kyltin voima $m_\text{k} g$ uloimmasta päästä alas, vaijerin jännitysvoima $\overline{T}$ uloimmasta päästä vaijeria pitkin kohti seinää ja saranan voima. Momenttipisteeksi valitaan sarana, jolloin sen tuntematon voima jää pois.
 
 $\overline{T}$ jaetaan komponentteihin: tangon suuntainen komponentti kulkee saranan kautta eikä aiheuta momenttia, kohtisuora komponentti $T \sin\alpha$ kiertää tankoa ylös.
-**Kaava:** $T \sin\alpha \cdot L - m_\text{t} g \cdot \tfrac{L}{2} - m_\text{k} g \cdot L = 0$, josta $T = \dfrac{(\tfrac{1}{2} m_\text{t} + m_\text{k})\, g}{\sin\alpha}$
+**Kaava:** $$\begin{aligned} \Sigma M &= 0 \\ T \sin\alpha \cdot L &= m_\text{t} g\, \tfrac{L}{2} \\ &\quad + m_\text{k} g\, L \\ T \sin\alpha &= (\tfrac{1}{2} m_\text{t} + m_\text{k})\, g \\ T &= \dfrac{(\tfrac{1}{2} m_\text{t} + m_\text{k})\, g}{\sin\alpha} \end{aligned}$$
 **Muunnokset:** Ei tarvita: massat ovat kilogrammoina, ja pituus $L$ supistuu.
 **Sijoitus:** $T = \dfrac{(2{,}00\,\text{kg} + 8{,}00\,\text{kg}) \cdot 9{,}81\,\text{m/s}^2}{\sin 30{,}0^\circ} = \dfrac{98{,}1\,\text{N}}{0{,}500} = 196{,}2\,\text{N}$
 **Vastaus:** $196\,\text{N}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
@@ -206,7 +206,7 @@ $\overline{T}$ jaetaan komponentteihin: tangon suuntainen komponentti kulkee sar
 **Annettu:** tukki $L = 5{,}00\,\text{m}$, $m = 90{,}0\,\text{kg}$, painopiste keskellä; etummaisen kantajan voima $F = 300\,\text{N}$ etupäässä; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** takimmaisen kantajan etäisyys $a$ tukin takapäästä
 **Periaate:** Tukki on levossa, joten momenttien summa minkä tahansa pisteen suhteen on nolla. Voimakuviossa tukkiin vaikuttavat paino $G$ keskeltä alas ja kantajien voimat ylös. Momenttipisteeksi valitaan takimmainen kantaja, jolloin hänen tuntematon voimansa jää pois. Painopiste on kantajien välissä, joten paino ja etummaisen kantajan voima kiertävät tukkia vastakkaisiin suuntiin.
-**Kaava:** $F\,(L - a) - m g\,(\tfrac{L}{2} - a) = 0$, josta $a = \dfrac{m g \cdot \tfrac{L}{2} - F L}{m g - F}$
+**Kaava:** $$\begin{aligned} \Sigma M &= 0 \\ F\,(L - a) &= m g\,(\tfrac{L}{2} - a) \\ F L - F a &= \tfrac{1}{2} m g L - m g a \\ (m g - F)\, a &= \tfrac{1}{2} m g L - F L \\ a &= \dfrac{m g \cdot \tfrac{L}{2} - F L}{m g - F} \end{aligned}$$
 **Muunnokset:** Ei tarvita: massa on kilogrammoina ja pituus metreinä. Paino on $G = 90{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 882{,}9\,\text{N}$.
 **Sijoitus:** Osoittaja on $882{,}9\,\text{N} \cdot 2{,}50\,\text{m} - 300\,\text{N} \cdot 5{,}00\,\text{m} = 707{,}25\,\text{Nm}$ ja nimittäjä $$882{,}9\,\text{N} - 300\,\text{N} = 582{,}9\,\text{N}$$. Siis $a = \dfrac{707{,}25\,\text{Nm}}{582{,}9\,\text{N}} = 1{,}213\,\text{m}$
 **Vastaus:** $1{,}21\,\text{m}$ tukin takapäästä, kolme merkitsevää numeroa kuten lähtötiedoissa.
@@ -222,7 +222,7 @@ Seinä on sileä, joten seinän voima on kohtisuora seinää vastaan eikä sein�
 Momenttipisteeksi valitaan tikkaiden alapää, jolloin $N$ ja $f$ jäävät pois. Liukumisen rajalla kitka on suurimmillaan, $f = \mu N$.
 
 Tikkaiden suuntaisesta matkasta $s$ saadaan painon varreksi vaakasuunnassa $s\cos\alpha$ ja seinän voiman varreksi pystysuunnassa $L\sin\alpha$.
-**Kaava:** Voimien summa: $N = G_\text{t} + G_\text{h}$ ja $N_\text{s} = f = \mu N$. Momenttiehto alapään suhteen: $M_\text{s} = M_\text{t} + M_\text{h}$, missä $M_\text{s} = N_\text{s} L \sin\alpha$, $M_\text{t} = G_\text{t}\,\tfrac{L}{2}\cos\alpha$ ja $M_\text{h} = G_\text{h}\, s \cos\alpha$. Siis $s = \dfrac{M_\text{s} - M_\text{t}}{G_\text{h}\cos\alpha}$
+**Kaava:** $$\begin{aligned} \Sigma F_y &= 0 \\ N &= G_\text{t} + G_\text{h} \\ \Sigma F_x &= 0 \\ N_\text{s} &= f = \mu N \\ \Sigma M &= 0 \\ N_\text{s} L \sin\alpha &= G_\text{t}\,\tfrac{L}{2}\cos\alpha \\ &\quad + G_\text{h}\, s \cos\alpha \\ s &= \dfrac{N_\text{s} L \sin\alpha - G_\text{t}\,\tfrac{L}{2}\cos\alpha}{G_\text{h}\cos\alpha} \end{aligned}$$
 **Muunnokset:** Ei tarvita: massat ovat kilogrammoina ja pituudet metreinä. Painot ovat $G_\text{t} = 12{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 117{,}7\,\text{N}$ ja $G_\text{h} = 75{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 735{,}8\,\text{N}$ sekä $\sin 65{,}0^\circ = 0{,}9063$ ja $\cos 65{,}0^\circ = 0{,}4226$.
 **Sijoitus:** Pystysuunnassa $N = 117{,}7\,\text{N} + 735{,}8\,\text{N} = 853{,}5\,\text{N}$. Rajalla $N_\text{s} = f = \mu N = 0{,}40 \cdot 853{,}5\,\text{N} = 341{,}4\,\text{N}$. Momentit ovat $$\begin{aligned} N_\text{s} L \sin\alpha &= 341{,}4\,\text{N} \cdot 5{,}00\,\text{m} \\ &\quad \cdot 0{,}9063 \\ &= 1547\,\text{Nm} \end{aligned}$$ ja $$\begin{aligned} G_\text{t}\,\tfrac{L}{2}\cos\alpha &= 117{,}7\,\text{N} \cdot 2{,}50\,\text{m} \\ &\quad \cdot 0{,}4226 \\ &= 124{,}4\,\text{Nm} \end{aligned}$$. Nimittäjä on $G_\text{h}\cos\alpha = 735{,}8\,\text{N} \cdot 0{,}4226 = 310{,}9\,\text{N}$. Siis $s = \dfrac{1547\,\text{Nm} - 124{,}4\,\text{Nm}}{310{,}9\,\text{N}} = 4{,}575\,\text{m}$
 **Vastaus:** b) $4{,}6\,\text{m}$ tikkaiden alapäästä, kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}40$. c) Lattian tukivoima $N$ on koko ajan sama, koska se kantaa tikkaiden ja henkilön yhteispainon, joten suurin mahdollinen kitka $\mu N$ ei muutu. Henkilön painon momentti alapään suhteen kasvaa kuitenkin matkan $s$ mukana, ja sen tasapainottamiseksi seinän on työnnettävä tikkaita yhä voimakkaammin. Samalla kitkan on kasvettava yhtä suureksi, $f = N_\text{s}$. Kun tarvittava kitka ylittää arvon $\mu N$, tikkaat liukuvat.
@@ -234,7 +234,7 @@ Tikkaiden suuntaisesta matkasta $s$ saadaan painon varreksi vaakasuunnassa $s\co
 **Periaate:** Henkilön jalat eivät yllä lattiaan, joten koko hänen painonsa on tuolin varassa. Tuoli kaatuu etujalkojensa varaan, kun tuolin ja henkilön yhteinen painopiste siirtyy etujalkojen kohdalle: silloin takajalkojen tukivoima on nolla ja painojen momentti etujalkojen suhteen on nolla. Voimakuviossa tuoliin ja henkilöön vaikuttavat painot $m_\text{t} g$ ja $m_\text{h} g$ alas sekä lattian tukivoimat jaloista ylös.
 
 Yhteinen painopiste lasketaan massojen ja paikkojen avulla kuten kahden kappaleen tapauksessa, ja raja on, kun se on etujalkojen kohdalla, $0{,}40\,\text{m}$:n päässä takajaloista. Näin saadaan henkilön painopisteen raja-arvo, ja kulma luetaan taulukosta kohdasta, jossa $x_\text{h}$ saavuttaa sen.
-**Kaava:** $x_\text{pp} = \dfrac{m_\text{t} x_\text{t} + m_\text{h} x_\text{h}}{m_\text{t} + m_\text{h}} = d$, josta $x_\text{h} = \dfrac{(m_\text{t} + m_\text{h})\, d - m_\text{t} x_\text{t}}{m_\text{h}}$. Lineaarinen interpolointi kahden taulukon pisteen $(\theta_1;\ x_1)$ ja $(\theta_2;\ x_2)$ välillä: $\theta = \theta_1 + (\theta_2 - \theta_1)\,\dfrac{x_\text{h} - x_1}{x_2 - x_1}$
+**Kaava:** $$\begin{aligned} x_\text{pp} &= \dfrac{m_\text{t} x_\text{t} + m_\text{h} x_\text{h}}{m_\text{t} + m_\text{h}} \\ x_\text{pp} &= d \\ (m_\text{t} + m_\text{h})\, d &= m_\text{t} x_\text{t} + m_\text{h} x_\text{h} \\ x_\text{h} &= \dfrac{(m_\text{t} + m_\text{h})\, d - m_\text{t} x_\text{t}}{m_\text{h}} \end{aligned}$$ Lineaarinen interpolointi kahden taulukon pisteen $(\theta_1;\ x_1)$ ja $(\theta_2;\ x_2)$ välillä: $\theta = \theta_1 + (\theta_2 - \theta_1)\,\dfrac{x_\text{h} - x_1}{x_2 - x_1}$
 **Muunnokset:** Ei tarvita laskussa a), mutta taulukon etäisyydet ovat senttimetreinä: $0{,}4222\,\text{m} = 42{,}22\,\text{cm}$.
 **Sijoitus:** Kohdassa a) osoittaja on $80{,}0\,\text{kg} \cdot 0{,}40\,\text{m} = 32{,}0\,\text{kg}\cdot\text{m}$ vähennettynä tuolin termillä $8{,}00\,\text{kg} \cdot 0{,}20\,\text{m} = 1{,}6\,\text{kg}\cdot\text{m}$, eli $30{,}4\,\text{kg}\cdot\text{m}$. Siis $x_\text{h} = \dfrac{30{,}4\,\text{kg}\cdot\text{m}}{72{,}0\,\text{kg}} = 0{,}4222\,\text{m} = 42{,}2\,\text{cm}$. Taulukossa raja-arvo on pisteiden $(50^\circ;\ 41{,}3\,\text{cm})$ ja $(60^\circ;\ 44{,}4\,\text{cm})$ välissä, joten b)-kohdassa $\theta = 50^\circ + 10^\circ \cdot \dfrac{42{,}22 - 41{,}3}{44{,}4 - 41{,}3} = 50^\circ + 2{,}97^\circ = 52{,}97^\circ$
 **Vastaus:** b) $53^\circ$, kaksi merkitsevää numeroa, koska kulma on interpoloitu taulukon pisteiden väliltä. c) Kurkotellessa henkilön painopiste siirtyy eteenpäin, ja sen mukana tuolin ja henkilön yhteinen painopiste. Niin kauan kuin yhteinen painopiste on jalkojen välissä, takajalat kantavat osan painosta ja tuoli pysyy paikallaan. Kun yhteinen painopiste ylittää etujalkojen kohdan, painojen momentti etujalkojen suhteen kiertää tuolia eteenpäin eikä mikään voima voi kääntää sitä takaisin, koska takajalkojen tukivoima on jo nolla. Tuoli kaatuu. Kurkottelun sallisi pidemmälle esimerkiksi etujalkojen siirtäminen kauemmas eteenpäin, jolloin raja-arvo $x_\text{h}$ kasvaa: jos jalkojen väli olisi $0{,}50\,\text{m}$ ja tuolin painopiste $0{,}25\,\text{m}$:n päässä, osoittaja olisi $$80{,}0 \cdot 0{,}50 - 8{,}00 \cdot 0{,}25 = 38{,}0$$ ja raja $x_\text{h} = 38{,}0 / 72{,}0\,\text{m} = 0{,}528\,\text{m}$.

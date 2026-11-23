@@ -22,7 +22,7 @@
 **Annettu:** massa $m = 0{,}20\,\text{kg}$, jousivakio $k = 80\,\text{N/m}$
 **Kysytty:** taajuus $f$ yksikössä $\text{Hz}$
 **Periaate:** Hahmo värähtelee jousen harmonisen voiman vaikutuksesta, joten jaksonaika saadaan jousen ja kappaleen kaavasta. Taajuus on jaksonajan käänteisluku. Se kertoo, montako jaksoa tapahtuu sekunnissa.
-**Kaava:** $T = 2\pi\sqrt{\dfrac{m}{k}}$ ja $f = \dfrac{1}{T}$, joten $f = \dfrac{1}{2\pi}\sqrt{\dfrac{k}{m}}$
+**Kaava:** $$\begin{aligned} f &= \dfrac{1}{T} \\ T &= 2\pi\sqrt{\dfrac{m}{k}} \\ f &= \dfrac{1}{2\pi}\sqrt{\dfrac{k}{m}} \end{aligned}$$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $f = \dfrac{1}{2\pi}\sqrt{\dfrac{80\,\text{N/m}}{0{,}20\,\text{kg}}} = \dfrac{1}{2\pi}\sqrt{400\,\tfrac{1}{\text{s}^2}} = \dfrac{20\,\tfrac{1}{\text{s}}}{2\pi} = 3{,}183\,\text{Hz}$
 **Vastaus:** $3{,}2\,\text{Hz}$, kaksi merkitsevää numeroa kuten massassa $0{,}20\,\text{kg}$ ja jousivakiossa $80\,\text{N/m}$.
@@ -52,7 +52,7 @@
 **Annettu:** jaksonaika $T = 1{,}50\,\text{s}$, pienet heilahdukset, ilmanvastus jätetään huomiotta, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** heilurin pituus $l$ yksikössä $\text{m}$
 **Periaate:** Pienillä heilahduksilla heiluri on harmoninen värähtelijä. Sen jaksonaika riippuu vain pituudesta ja putoamiskiihtyvyydestä. Ratkaistaan pituus jaksonajan kaavasta.
-**Kaava:** $T = 2\pi\sqrt{\dfrac{l}{g}}$, josta $T^2 = 4\pi^2\dfrac{l}{g}$ ja $l = \dfrac{gT^2}{4\pi^2}$
+**Kaava:** $$\begin{aligned} T &= 2\pi\sqrt{\dfrac{l}{g}} \\ T^2 &= 4\pi^2\dfrac{l}{g} \\ l &= \dfrac{gT^2}{4\pi^2} \end{aligned}$$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $l = \dfrac{9{,}81\,\text{m/s}^2 \cdot (1{,}50\,\text{s})^2}{4\pi^2} = \dfrac{22{,}07\,\text{m}}{39{,}48} = 0{,}5591\,\text{m}$
 **Vastaus:** $0{,}559\,\text{m}$, kolme merkitsevää numeroa kuten jaksonajassa $1{,}50\,\text{s}$.
@@ -62,7 +62,7 @@
 **Annettu:** punnuksen massa $m_1 = 0{,}30\,\text{kg}$, jousi pysyy samana, jaksonaika kaksinkertaistuu: $T_2 = 2T_1$
 **Kysytty:** lisättävä massa $\Delta m$ yksikössä $\text{kg}$
 **Periaate:** Jousen ja kappaleen jaksonaika on verrannollinen massan neliöjuureen, kun jousivakio pysyy samana. Jaksonajan kaksinkertaistaminen vaatii siksi nelinkertaisen massan.
-**Kaava:** $\dfrac{T_2}{T_1} = \sqrt{\dfrac{m_2}{m_1}}$, josta $m_2 = \left(\dfrac{T_2}{T_1}\right)^2 m_1 = 4m_1$ ja $\Delta m = m_2 - m_1 = 3m_1$
+**Kaava:** $$\begin{aligned} T_1 &= 2\pi\sqrt{\dfrac{m_1}{k}} \\ T_2 &= 2\pi\sqrt{\dfrac{m_2}{k}} \\ \dfrac{T_2}{T_1} &= \sqrt{\dfrac{m_2}{m_1}} \\ m_2 &= \left(\dfrac{T_2}{T_1}\right)^2 m_1 \\ &= 4m_1 \\ \Delta m &= m_2 - m_1 = 3m_1 \end{aligned}$$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** $\Delta m = 3 \cdot 0{,}30\,\text{kg} = 0{,}90\,\text{kg}$
 **Vastaus:** $0{,}90\,\text{kg}$, kaksi merkitsevää numeroa kuten massassa $0{,}30\,\text{kg}$.
@@ -72,7 +72,7 @@
 **Annettu:** massa $m = 0{,}40\,\text{kg}$, jousivakio $k = 25\,\text{N/m}$, amplitudi $A = 8{,}0\,\text{cm}$, rata kitkaton, lähtö levosta
 **Kysytty:** suurin nopeus $v_\text{max}$ yksikössä $\text{m/s}$
 **Periaate:** Radalla ei ole kitkaa, joten värähtelijän mekaaninen energia säilyy. Ääriasennossa kaikki energia on jousen potentiaalienergiaa. Tasapainoasemassa kaikki energia on liike-energiaa, ja siellä nopeus on suurin.
-**Kaava:** $\dfrac{1}{2}mv_\text{max}^2 = \dfrac{1}{2}kA^2$, josta $v_\text{max} = A\sqrt{\dfrac{k}{m}}$
+**Kaava:** $$\begin{aligned} \dfrac{1}{2}mv_\text{max}^2 &= \dfrac{1}{2}kA^2 \\ v_\text{max}^2 &= \dfrac{k}{m}A^2 \\ v_\text{max} &= A\sqrt{\dfrac{k}{m}} \end{aligned}$$
 **Muunnokset:** $8{,}0\,\text{cm} = 8{,}0 \cdot 0{,}01\,\text{m} = 0{,}080\,\text{m}$
 **Sijoitus:** $v_\text{max} = 0{,}080\,\text{m} \cdot \sqrt{\dfrac{25\,\text{N/m}}{0{,}40\,\text{kg}}} = 0{,}080\,\text{m} \cdot 7{,}906\,\tfrac{1}{\text{s}} = 0{,}6325\,\text{m/s}$
 **Vastaus:** $0{,}63\,\text{m/s}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -82,7 +82,7 @@
 **Annettu:** jaksonaika Maassa $T_\text{M} = 2{,}00\,\text{s}$, $g_\text{M} = 9{,}81\,\text{m/s}^2$, Marsissa $g_\text{Mars} = 3{,}71\,\text{m/s}^2$, pienet heilahdukset
 **Kysytty:** jaksonaika Marsissa $T_\text{Mars}$ yksikössä $\text{s}$
 **Periaate:** Pienillä heilahduksilla heilurin jaksonaika on $2\pi\sqrt{\tfrac{l}{g}}$. Heilurin pituus pysyy samana. Siksi jaksonaika on kääntäen verrannollinen putoamiskiihtyvyyden neliöjuureen. Pituutta ei tarvitse laskea.
-**Kaava:** $\dfrac{T_\text{Mars}}{T_\text{M}} = \sqrt{\dfrac{g_\text{M}}{g_\text{Mars}}}$, josta $T_\text{Mars} = T_\text{M}\sqrt{\dfrac{g_\text{M}}{g_\text{Mars}}}$
+**Kaava:** $$\begin{aligned} T_\text{Mars} &= 2\pi\sqrt{\dfrac{l}{g_\text{Mars}}} \\ T_\text{M} &= 2\pi\sqrt{\dfrac{l}{g_\text{M}}} \\ \dfrac{T_\text{Mars}}{T_\text{M}} &= \sqrt{\dfrac{g_\text{M}}{g_\text{Mars}}} \\ T_\text{Mars} &= T_\text{M}\sqrt{\dfrac{g_\text{M}}{g_\text{Mars}}} \end{aligned}$$
 **Muunnokset:** Kummankin putoamiskiihtyvyyden yksikkö on $\text{m/s}^2$. Yksikkö supistuu, joten muunnoksia ei tarvita.
 **Sijoitus:** $T_\text{Mars} = 2{,}00\,\text{s} \cdot \sqrt{\dfrac{9{,}81\,\text{m/s}^2}{3{,}71\,\text{m/s}^2}} = 2{,}00\,\text{s} \cdot \sqrt{2{,}644} = 2{,}00\,\text{s} \cdot 1{,}626 = 3{,}252\,\text{s}$
 **Vastaus:** $3{,}25\,\text{s}$, kolme merkitsevää numeroa kuten jaksonajassa $2{,}00\,\text{s}$ ja putoamiskiihtyvyydessä $3{,}71\,\text{m/s}^2$.
@@ -92,7 +92,7 @@
 **Annettu:** massa $m = 0{,}50\,\text{kg}$, jousivakio $k = 200\,\text{N/m}$, amplitudi $A = 0{,}100\,\text{m}$, poikkeama $x = 0{,}0500\,\text{m}$, kitkaton värähtely
 **Kysytty:** nopeus $v$ kohdassa $x$ yksikössä $\text{m/s}$
 **Periaate:** Kitkattomassa värähtelyssä mekaaninen energia säilyy. Jokaisessa kohdassa liike-energian ja jousen potentiaalienergian summa on yhtä suuri kuin energia ääriasennossa, jossa nopeus on nolla. Kohdassa $x$ osa energiasta on vielä jousessa. Siksi nopeus on siellä pienempi kuin tasapainoasemassa.
-**Kaava:** $\dfrac{1}{2}mv^2 + \dfrac{1}{2}kx^2 = \dfrac{1}{2}kA^2$, josta $v^2 = \dfrac{k}{m}(A^2 - x^2)$ ja $v = \sqrt{\dfrac{k}{m}(A^2 - x^2)}$
+**Kaava:** $$\begin{aligned} E &= \dfrac{1}{2}mv^2 + \dfrac{1}{2}kx^2 \\ E &= \dfrac{1}{2}kA^2 \\ \dfrac{1}{2}mv^2 &= \dfrac{1}{2}k(A^2 - x^2) \\ v^2 &= \dfrac{k}{m}(A^2 - x^2) \\ v &= \sqrt{\dfrac{k}{m}(A^2 - x^2)} \end{aligned}$$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** Ensin $\dfrac{k}{m} = \dfrac{200\,\text{N/m}}{0{,}50\,\text{kg}} = 400\,\tfrac{1}{\text{s}^2}$ ja $$
 \begin{aligned}
@@ -108,7 +108,7 @@ $$, joten $v = \sqrt{400\,\tfrac{1}{\text{s}^2} \cdot 0{,}00750\,\text{m}^2} = \
 **Annettu:** matkustajan massa $m_\text{p} = 80\,\text{kg}$, auton massa $1200\,\text{kg}$, painuma $\Delta x = 3{,}0\,\text{cm}$, $g = 9{,}81\,\text{m/s}^2$; malli: yksi kappale yhden jousen varassa, ei vaimennusta
 **Kysytty:** korin värähtelyn jaksonaika $T$ yksikössä $\text{s}$
 **Periaate:** Tehtävässä on kaksi ideaa. Ensin lasketaan jousivakio. Kun matkustaja on istunut ja auto on taas levossa, jousen lisävoima on yhtä suuri kuin matkustajan paino. Siksi $k\Delta x = m_\text{p}g$. Sitten lasketaan jaksonaika. Pystysuorassa värähtelyssä paino siirtää vain tasapainoasemaa, joten jaksonaika on $2\pi\sqrt{\tfrac{m}{k}}$. Tässä $m$ on koko värähtelevä massa eli auto ja matkustaja.
-**Kaava:** $k = \dfrac{m_\text{p}g}{\Delta x}$ ja $T = 2\pi\sqrt{\dfrac{m}{k}}$, joten $T = 2\pi\sqrt{\dfrac{m\,\Delta x}{m_\text{p}g}}$
+**Kaava:** $$\begin{aligned} m_\text{p}g &= k\,\Delta x \\ k &= \dfrac{m_\text{p}g}{\Delta x} \\ T &= 2\pi\sqrt{\dfrac{m}{k}} \\ &= 2\pi\sqrt{\dfrac{m\,\Delta x}{m_\text{p}g}} \end{aligned}$$
 **Muunnokset:** $\Delta x = 3{,}0\,\text{cm} = 3{,}0 \cdot 0{,}01\,\text{m} = 0{,}030\,\text{m}$; värähtelevä massa $m = 1200\,\text{kg} + 80\,\text{kg} = 1280\,\text{kg}$
 **Sijoitus:** $k = \dfrac{80\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{0{,}030\,\text{m}} = 26\,160\,\text{N/m}$ ja $T = 2\pi\sqrt{\dfrac{1280\,\text{kg}}{26\,160\,\text{N/m}}} = 2\pi\sqrt{0{,}04893\,\text{s}^2} = 2\pi \cdot 0{,}2212\,\text{s} = 1{,}390\,\text{s}$
 **Vastaus:** $1{,}4\,\text{s}$, kaksi merkitsevää numeroa kuten painumassa $3{,}0\,\text{cm}$.
@@ -118,7 +118,7 @@ $$, joten $v = \sqrt{400\,\tfrac{1}{\text{s}^2} \cdot 0{,}00750\,\text{m}^2} = \
 **Annettu:** keväällä heilurin pituus $l = 0{,}994\,\text{m}$, kesällä pidempi $\Delta l = 0{,}50\,\text{mm}$, pienet heilahdukset, vuorokausi $t = 86\,400\,\text{s}$
 **Kysytty:** kellon jätätys vuorokaudessa $\Delta t$ yksikössä $\text{s}$
 **Periaate:** Pienillä heilahduksilla jaksonaika on $2\pi\sqrt{\tfrac{l}{g}}$, joten pidempi heiluri heilahtaa hitaammin. Kello laskee jaksoja ja lisää jokaisesta kevään jaksonajan $T$, vaikka todellinen jakso kestää $T'$. Vuorokaudessa se ehtii tehdä vain $\tfrac{t}{T'}$ pidempää jaksoa $T'$. Siksi se näyttää aikaa $\tfrac{t}{T'}T$ ja jää jälkeen. Putoamiskiihtyvyys supistuu jaksonaikojen suhteesta.
-**Kaava:** $\dfrac{T'}{T} = \sqrt{\dfrac{l + \Delta l}{l}}$ ja $\Delta t = t - \dfrac{t}{T'}T$, josta $\Delta t = t\left(1 - \dfrac{T}{T'}\right) = t\left(1 - \sqrt{\dfrac{l}{l + \Delta l}}\right)$
+**Kaava:** $$\begin{aligned} T &= 2\pi\sqrt{\dfrac{l}{g}} \\ T' &= 2\pi\sqrt{\dfrac{l + \Delta l}{g}} \\ \dfrac{T'}{T} &= \sqrt{\dfrac{l + \Delta l}{l}} \\ N &= \dfrac{t}{T'} \\ \Delta t &= t - NT = t - \dfrac{t}{T'}T \\ &= t\left(1 - \dfrac{T}{T'}\right) \\ &= t\left(1 - \sqrt{\dfrac{l}{l + \Delta l}}\right) \end{aligned}$$
 **Muunnokset:** $\Delta l = 0{,}50\,\text{mm} = 0{,}50 \cdot 0{,}001\,\text{m} = 0{,}00050\,\text{m}$; vuorokausi $t = 24 \cdot 3600\,\text{s} = 86\,400\,\text{s}$
 **Sijoitus:** $\Delta t = 86\,400\,\text{s} \cdot \left(1 - \sqrt{\dfrac{0{,}994\,\text{m}}{0{,}9945\,\text{m}}}\right) = 86\,400\,\text{s} \cdot (1 - 0{,}999\,749) = 86\,400\,\text{s} \cdot 0{,}000\,251 = 21{,}7\,\text{s}$. Välitulosta ei saa pyöristää. Jo pyöristys $1 - 0{,}9997 = 0{,}0003$ antaisi $26\,\text{s}$.
 **Vastaus:** $22\,\text{s}$, kaksi merkitsevää numeroa kuten pitenemisessä $0{,}50\,\text{mm}$.
@@ -144,7 +144,7 @@ $$, joten $v = \sqrt{400\,\tfrac{1}{\text{s}^2} \cdot 0{,}00750\,\text{m}^2} = \
 **Kysytty:** putoamiskiihtyvyys $g$ yksikössä $\text{m/s}^2$
 **Periaate:** Pienillä heilahduksilla $T = 2\pi\sqrt{\tfrac{l}{g}}$, joten $T^2 = \tfrac{4\pi^2}{g}\,l$. Jaksonajan neliö on suoraan verrannollinen pituuteen. Pisteet $(l, T^2)$ asettuvat suoralle, joka kulkee origon kautta. Suoran kulmakerroin on $\tfrac{4\pi^2}{g}$. Suora kulkee origon kautta, koska nollapituisen heilurin jaksonaika on nolla.
 **Kuvaajan lukeminen:** Akseleille sopii mittakaava $0$–$1{,}0\,\text{m}$ ja $0$–$4{,}5\,\text{s}^2$. Jaksonajan neliöt ovat $0{,}81\,\text{s}^2$, $1{,}61\,\text{s}^2$, $2{,}40\,\text{s}^2$, $3{,}24\,\text{s}^2$ ja $4{,}04\,\text{s}^2$. Ne asettuvat nousevalle suoralle, jonka molemmille puolille jää pisteitä. Sovitettu suora kulkee origon kautta ja likimain pisteen $(1{,}00\,\text{m};\ 4{,}04\,\text{s}^2)$ kautta. Kulmakerroin luetaan sovitetulta suoralta kaukana toisistaan olevista pisteistä. Sitä ei lueta vierekkäisistä mittauspisteistä.
-**Kaava:** $a = \dfrac{T^2}{l} = \dfrac{4\pi^2}{g}$, joten $g = \dfrac{4\pi^2}{a}$
+**Kaava:** $$\begin{aligned} a &= \dfrac{T^2}{l} \\ T^2 &= 4\pi^2\dfrac{l}{g} \\ a &= \dfrac{4\pi^2}{g} \\ g &= \dfrac{4\pi^2}{a} \end{aligned}$$
 **Muunnokset:** Ei tarvita: pituus on metreinä ja aika sekunteina.
 **Sijoitus:** $a = \dfrac{4{,}04\,\text{s}^2}{1{,}00\,\text{m}} = 4{,}04\,\tfrac{\text{s}^2}{\text{m}}$ ja $g = \dfrac{4\pi^2}{4{,}04\,\text{s}^2/\text{m}} = 9{,}772\,\text{m/s}^2$
 **Vastaus:** $9{,}77\,\text{m/s}^2$, kolme merkitsevää numeroa, koska sovituksen lukema perustuu pisteeseen $(1{,}00\,\text{m};\ 2{,}01\,\text{s})$, jonka arvoissa on kolme numeroa. Lyhimmän heilurin arvoissa ($0{,}20\,\text{m}$ ja $0{,}90\,\text{s}$) on vain kaksi, mutta ne eivät rajoita luettua kulmakerrointa. Silmämääräinen sovitus (suoran sovittaminen silmällä) antaa hieman erilaisia tuloksia. Pieni vaihtelu on siis odotettua.
@@ -155,7 +155,7 @@ $$, joten $v = \sqrt{400\,\tfrac{1}{\text{s}^2} \cdot 0{,}00750\,\text{m}^2} = \
 **Kysytty:** jousivakio $k$ yksikössä $\text{N/m}$
 **Periaate:** Jousen ja kappaleen jaksonaika on $T = 2\pi\sqrt{\tfrac{m}{k}}$, joten $T^2 = \tfrac{4\pi^2}{k}\,m$. Jaksonajan neliö on suoraan verrannollinen massaan. Pisteet asettuvat suoralle, joka kulkee origon kautta. Suoran kulmakerroin on $\tfrac{4\pi^2}{k}$. Suora kulkee origon kautta, koska jousen massa jätetään huomiotta.
 **Kuvaajan lukeminen:** Jaksonaika on $T = \tfrac{t_{10}}{10}$. Jaksonajat ovat $0{,}45\,\text{s}$, $0{,}62\,\text{s}$, $0{,}77\,\text{s}$, $0{,}89\,\text{s}$ ja $0{,}99\,\text{s}$. Niiden neliöt ovat $0{,}20\,\text{s}^2$, $0{,}38\,\text{s}^2$, $0{,}59\,\text{s}^2$, $0{,}79\,\text{s}^2$ ja $0{,}98\,\text{s}^2$. Pisteiden läpi sovitettu suora kulkee origon ja pisteen $(0{,}500\,\text{kg};\ 0{,}98\,\text{s}^2)$ kautta.
-**Kaava:** $a = \dfrac{T^2}{m} = \dfrac{4\pi^2}{k}$, joten $k = \dfrac{4\pi^2}{a}$
+**Kaava:** $$\begin{aligned} a &= \dfrac{T^2}{m} \\ T^2 &= 4\pi^2\dfrac{m}{k} \\ a &= \dfrac{4\pi^2}{k} \\ k &= \dfrac{4\pi^2}{a} \end{aligned}$$
 **Muunnokset:** Jaksonaika saadaan kymmenen jakson ajasta jakamalla kymmenellä, esimerkiksi $4{,}5\,\text{s} : 10 = 0{,}45\,\text{s}$. Massa on jo kilogrammoina.
 **Sijoitus:** $a = \dfrac{0{,}98\,\text{s}^2}{0{,}500\,\text{kg}} = 1{,}96\,\tfrac{\text{s}^2}{\text{kg}}$ ja $k = \dfrac{4\pi^2}{1{,}96\,\text{s}^2/\text{kg}} = 20{,}14\,\text{N/m}$
 **Vastaus:** $20\,\text{N/m}$ (välitulos $20{,}14\,\text{N/m}$), kaksi merkitsevää numeroa. Kymmenen jakson ajat $t_{10}$, esimerkiksi $4{,}5\,\text{s}$, on annettu kahdella merkitsevällä numerolla. Silmämääräinen sovitus vaihtelee hieman.
@@ -176,7 +176,7 @@ $$, joten $v = \sqrt{400\,\tfrac{1}{\text{s}^2} \cdot 0{,}00750\,\text{m}^2} = \
 **Kysytty:** a) jousivakio $k$ yksikössä $\text{N/m}$, b) lisämassa $m_0$ ja kevyimmästä mittauksesta lasketun jousivakion virhe prosentteina
 **Periaate:** Malli kirjoitetaan muotoon $T^2 = \tfrac{4\pi^2}{k}\,m + \tfrac{4\pi^2}{k}\,m_0$. Se on suora. Suoran kulmakerroin on $a = \tfrac{4\pi^2}{k}$ ja vakiotermi on $b = \tfrac{4\pi^2}{k}m_0$. Suora ei kulje origon kautta, koska jousen massa värähtelee mukana. Jousivakio saadaan siis kulmakertoimesta. Lisämassa $m_0$ saadaan vakiotermin ja kulmakertoimen suhteesta.
 **Kuvaajan lukeminen:** Jaksonajan neliöt ovat $0{,}112\,\text{s}^2$, $0{,}187\,\text{s}^2$, $0{,}271\,\text{s}^2$, $0{,}345\,\text{s}^2$, $0{,}430\,\text{s}^2$ ja $0{,}501\,\text{s}^2$. Ne asettuvat nousevalle suoralle. Suora leikkaa $T^2$-akselin kohdassa $b = 0{,}033\,\text{s}^2$, eli se ei kulje origon kautta. Suora kulkee pisteiden $(0\,\text{kg};\ 0{,}033\,\text{s}^2)$ ja $(0{,}300\,\text{kg};\ 0{,}504\,\text{s}^2)$ kautta. Pisteet luetaan sovitetulta suoralta, ei mittauspisteistä.
-**Kaava:** $a = \dfrac{\Delta (T^2)}{\Delta m}$ ja $k = \dfrac{4\pi^2}{a}$; lisäksi $m_0 = \dfrac{b}{a}$ ja yksittäisestä mittauksesta $k_1 = \dfrac{4\pi^2 m}{T^2}$, jolloin virhe on $\dfrac{k_1 - k}{k} \cdot 100\,\%$
+**Kaava:** $$\begin{aligned} T^2 &= \dfrac{4\pi^2}{k}(m + m_0) \\ &= am + b \\ a &= \dfrac{\Delta (T^2)}{\Delta m} = \dfrac{4\pi^2}{k} \\ k &= \dfrac{4\pi^2}{a} \\ b &= am_0 \\ m_0 &= \dfrac{b}{a} \\ k_1 &= \dfrac{4\pi^2 m}{T^2} \\ \delta &= \dfrac{k_1 - k}{k} \cdot 100\,\% \end{aligned}$$
 **Muunnokset:** Ei tarvita: massat ovat kilogrammoina ja ajat sekunteina.
 **Sijoitus:** $a = \dfrac{0{,}504\,\text{s}^2 - 0{,}033\,\text{s}^2}{0{,}300\,\text{kg} - 0\,\text{kg}} = 1{,}570\,\tfrac{\text{s}^2}{\text{kg}}$ ja $k = \dfrac{4\pi^2}{1{,}570\,\text{s}^2/\text{kg}} = 25{,}14\,\text{N/m}$. Lisämassa on $m_0 = \dfrac{0{,}033\,\text{s}^2}{1{,}570\,\text{s}^2/\text{kg}} = 0{,}0210\,\text{kg}$. Kevyimmästä mittauksesta saadaan $k_1 = \dfrac{4\pi^2 \cdot 0{,}050\,\text{kg}}{(0{,}334\,\text{s})^2} = 17{,}69\,\text{N/m}$. Virhe on $\dfrac{17{,}69 - 25{,}14}{25{,}14} \cdot 100\,\% = -29{,}6\,\%$.
 **Vastaus:** $25{,}1\,\text{N/m}$, kolme merkitsevää numeroa kuten jaksonajoissa. Lisämassa on noin $21\,\text{g}$. Kevyimmästä mittauksesta laskettu jousivakio olisi noin $30\,\%$ liian pieni.
@@ -191,7 +191,7 @@ $$). Jousen massan osuus pienenee, kun punnus kasvaa. Siksi kulmakerroin antaa l
 **Annettu:** heilurin pituus $l = 1{,}20\,\text{m}$, lähtökulma $\alpha_0 = 10{,}0\,{}^\circ$, lähtö levosta, $g = 9{,}81\,\text{m/s}^2$; pistemäinen kuula, langan massa ja ilmanvastus jätetään huomiotta
 **Kysytty:** a) aika ääriasennosta alimpaan kohtaan, b) suurin nopeus $v$ yksikössä $\text{m/s}$ ja ääriasennon korkeus, c) nopeus harmonisella mallilla ja tulosten ero
 **Periaate:** Tehtävässä on kolme ideaa. Pienellä lähtökulmalla jaksonaika on $T = 2\pi\sqrt{\tfrac{l}{g}}$. Ääriasennosta alimpaan kohtaan kuluu neljäsosa jaksosta. Energia säilyy, koska vain paino tekee työtä ja lanka on aina kohtisuorassa liikettä vastaan. Ääriasennon potentiaalienergia muuttuu siis liike-energiaksi alimmassa kohdassa. Harmonisessa mallissa $\tfrac{1}{2}\tfrac{mg}{l}A^2 = \tfrac{1}{2}mv^2$. Malli on likiarvo, koska siinä $\sin\alpha \approx \alpha$.
-**Kaava:** $t = \dfrac{T}{4}$; $h = l(1 - \cos\alpha_0)$ ja $mgh = \dfrac{1}{2}mv^2$, joten $v = \sqrt{2gh}$; harmonisella mallilla $A = l\alpha_0$ ja $v_\text{h} = A\sqrt{\dfrac{g}{l}}$
+**Kaava:** $$\begin{aligned} t &= \dfrac{T}{4} \\ T &= 2\pi\sqrt{\dfrac{l}{g}} \\ h &= l(1 - \cos\alpha_0) \\ mgh &= \dfrac{1}{2}mv^2 \\ v &= \sqrt{2gh} \\ A &= l\alpha_0 \\ v_\text{h} &= A\sqrt{\dfrac{g}{l}} \end{aligned}$$
 **Muunnokset:** Kulma radiaaneina: $\alpha_0 = 10{,}0\,{}^\circ = 10{,}0 \cdot \dfrac{\pi}{180} = 0{,}17453$.
 **Sijoitus:** Kohta a): $T = 2\pi\sqrt{\dfrac{1{,}20\,\text{m}}{9{,}81\,\text{m/s}^2}} = 2{,}198\,\text{s}$, joten $t = \dfrac{2{,}198\,\text{s}}{4} = 0{,}549\,\text{s}$. Kohta b): $h = 1{,}20\,\text{m} \cdot (1 - \cos 10{,}0\,{}^\circ) = 0{,}01823\,\text{m}$ ja $v = \sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 0{,}01823\,\text{m}} = 0{,}5981\,\text{m/s}$. Kohta c): $A = 1{,}20\,\text{m} \cdot 0{,}17453 = 0{,}2094\,\text{m}$ ja $v_\text{h} = 0{,}2094\,\text{m} \cdot \sqrt{\dfrac{9{,}81}{1{,}20}}\,\dfrac{1}{\text{s}} = 0{,}5988\,\text{m/s}$. Ero on $\dfrac{0{,}59883 - 0{,}59807}{0{,}59807} \cdot 100\,\% = 0{,}13\,\%$, ja harmoninen malli antaa suuremman nopeuden.
 **Vastaus:** a) $0{,}549\,\text{s}$. b) $0{,}598\,\text{m/s}$, ja ääriasennon korkeus on noin $1{,}82\,\text{cm}$. c) $0{,}599\,\text{m/s}$, ja harmoninen malli antaa noin $0{,}13\,\%$ suuremman nopeuden. Ajassa ja nopeuksissa on kolme merkitsevää numeroa kuten pituudessa $1{,}20\,\text{m}$ ja kulmassa $10{,}0\,{}^\circ$.
@@ -242,7 +242,7 @@ Heilurin jaksonaika kasvaa siis noin $2{,}5$-kertaiseksi, ja jousen jaksonaika p
 **Kysytty:** kappaleen suurin nopeus $v_{\max}$
 **Periaate:** Värähtelyn energia $\tfrac12 kA^2$ on tasapainoasemassa kokonaan liike-energiaa, $\tfrac12 m v_{\max}^2 = \tfrac12 kA^2$. Jaksonaika $T = 2\pi\sqrt{m/k}$ antaa $\sqrt{k/m} = 2\pi/T$. Siksi massaa ja jousivakiota ei tarvita. Amplitudi ja jaksonaika luetaan kuvaajasta.
 **Kuvaajan lukeminen:** Huiput ovat korkeudella $x = 3{,}0\,\text{cm}$ eli $A = 3{,}0\,\text{cm} = 0{,}030\,\text{m}$. Huiput ovat hetkillä $0$, $0{,}40\,\text{s}$ ja $0{,}80\,\text{s}$. Siis $T = 0{,}40\,\text{s}$. Pohjat hetkillä $0{,}20\,\text{s}$ ja $0{,}60\,\text{s}$ vahvistavat tuloksen.
-**Kaava:** $v_{\max} = A\sqrt{\dfrac{k}{m}} = \dfrac{2\pi A}{T}$
+**Kaava:** $$\begin{aligned} v_{\max} &= A\sqrt{\dfrac{k}{m}} \\ T &= 2\pi\sqrt{\dfrac{m}{k}} \Rightarrow \sqrt{\dfrac{k}{m}} = \dfrac{2\pi}{T} \\ v_{\max} &= \dfrac{2\pi A}{T} \end{aligned}$$
 **Muunnokset:** $A = 3{,}0\,\text{cm} = 3{,}0 \cdot 0{,}01\,\text{m} = 0{,}030\,\text{m}$
 **Sijoitus:** $v_{\max} = \dfrac{2\pi \cdot 0{,}030\,\text{m}}{0{,}40\,\text{s}} = \dfrac{0{,}1885\,\text{m}}{0{,}40\,\text{s}} = 0{,}471\,\text{m/s}$
 **Vastaus:** $0{,}47\,\text{m/s}$. Vastauksessa on kaksi merkitsevää numeroa, koska amplitudissa $3{,}0\,\text{cm}$ ja jaksonajassa $0{,}40\,\text{s}$ on kaksi.

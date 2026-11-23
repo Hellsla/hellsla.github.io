@@ -12,7 +12,7 @@
 **Given:** frequency $f = 440\,\text{Hz}$, speed of sound in air $v = 343\,\text{m/s}$
 **Find:** the wavelength $\lambda$
 **Principle:** Sound is a longitudinal wave travelling in air, and the fundamental equation of wave motion holds for it as well: during one period the sound travels one wavelength. The frequency is the frequency of the vibration of the loudspeaker cone.
-**Formula:** $v = f\lambda$, so $\lambda = \dfrac{v}{f}$
+**Formula:** $$\begin{aligned} v &= f\lambda \\ \lambda &= \dfrac{v}{f} \end{aligned}$$
 **Conversions:** Not needed: $\tfrac{\text{m/s}}{\text{Hz}} = \tfrac{\text{m/s}}{1/\text{s}} = \text{m}$.
 **Substitution:** $\lambda = \dfrac{343\,\text{m/s}}{440\,\text{s}^{-1}} = 0.7795\,\text{m}$
 **Answer:** $0.780\,\text{m}$, three significant figures like the speed $343\,\text{m/s}$ and the frequency $440\,\text{Hz}$.
@@ -22,7 +22,7 @@
 **Given:** speed of the wave $v = 6.0\,\text{m/s}$, distance between crests, that is, the wavelength $\lambda = 1.5\,\text{m}$
 **Find:** the frequency $f$
 **Principle:** The distance between two successive crests is the wavelength. Every point of the rope vibrates with the same frequency as the hand, so the frequency of the wave is the frequency of the shaking, and it follows from the fundamental equation.
-**Formula:** $v = f\lambda$, so $f = \dfrac{v}{\lambda}$
+**Formula:** $$\begin{aligned} v &= f\lambda \\ f &= \dfrac{v}{\lambda} \end{aligned}$$
 **Conversions:** Not needed: $\tfrac{\text{m/s}}{\text{m}} = \text{s}^{-1} = \text{Hz}$.
 **Substitution:** $f = \dfrac{6.0\,\text{m/s}}{1.5\,\text{m}} = 4.0\,\text{s}^{-1} = 4.0\,\text{Hz}$
 **Answer:** $4.0\,\text{Hz}$, two significant figures like the initial values $6.0\,\text{m/s}$ and $1.5\,\text{m}$.
@@ -42,7 +42,7 @@
 **Given:** speed of the wave $v = 4.8\,\text{m/s}$, wavelength $\lambda = 1.2\,\text{m}$
 **Find:** the period $T$
 **Principle:** The period is the time in which the wave travels one wavelength, so it follows from the form $v = \tfrac{\lambda}{T}$ of the fundamental equation. The period is also the time of one full vibration of every point of the rope.
-**Formula:** $v = \dfrac{\lambda}{T}$, so $T = \dfrac{\lambda}{v}$
+**Formula:** $$\begin{aligned} v &= \dfrac{\lambda}{T} \\ T &= \dfrac{\lambda}{v} \end{aligned}$$
 **Conversions:** Not needed: $\tfrac{\text{m}}{\text{m/s}} = \text{s}$.
 **Substitution:** $T = \dfrac{1.2\,\text{m}}{4.8\,\text{m/s}} = 0.25\,\text{s}$
 **Answer:** $0.25\,\text{s}$, two significant figures like the speed $4.8\,\text{m/s}$ and the wavelength $1.2\,\text{m}$.
@@ -63,7 +63,7 @@
 **Given:** $N = 18$ full swings in the time $t = 12.0\,\text{s}$, distance between crests, that is, the wavelength $\lambda = 1.40\,\text{m}$
 **Find:** the speed of the wave $v$
 **Principle:** Every point of the rope vibrates with the frequency of the hand, so the frequency of the wave is the number of swings of the hand per second. The speed then follows from the fundamental equation, because during one period the wave travels one wavelength.
-**Formula:** $f = \dfrac{N}{t}$ and $v = f\lambda$, so $v = \dfrac{N\lambda}{t}$
+**Formula:** $$\begin{aligned} f &= \dfrac{N}{t} \\ v &= f\lambda \\ v &= \dfrac{N\lambda}{t} \end{aligned}$$
 **Conversions:** Not needed: $\text{s}^{-1} = \text{Hz}$ and $\text{Hz} \cdot \text{m} = \text{m/s}$.
 **Substitution:** $f = \dfrac{18}{12.0\,\text{s}} = 1.5\,\text{Hz}$ and $v = 1.5\,\text{s}^{-1} \cdot 1.40\,\text{m} = 2.10\,\text{m/s}$
 **Answer:** $2.10\,\text{m/s}$, three significant figures like the time $12.0\,\text{s}$ and the wavelength $1.40\,\text{m}$; the number of swings $18$ is a counted number, so it does not limit the significant figures.
@@ -73,7 +73,7 @@
 **Given:** in air $v_\text{a} = 343\,\text{m/s}$ and $\lambda_\text{a} = 0.750\,\text{m}$, in water $v_\text{w} = 1480\,\text{m/s}$
 **Find:** the wavelength in water $\lambda_\text{w}$
 **Principle:** When a wave passes from one medium to another, the frequency stays the same, because the water is set moving by the vibration of the air at the boundary in step with it. The speed changes with the medium, so the wavelength changes. In both media $v = f\lambda$ holds.
-**Formula:** $f = \dfrac{v_\text{a}}{\lambda_\text{a}}$ and $\lambda_\text{w} = \dfrac{v_\text{w}}{f}$, so $\lambda_\text{w} = \dfrac{v_\text{w}\lambda_\text{a}}{v_\text{a}}$
+**Formula:** $$\begin{aligned} v_\text{a} &= f\lambda_\text{a} \\ f &= \dfrac{v_\text{a}}{\lambda_\text{a}} \\ \lambda_\text{w} &= \dfrac{v_\text{w}}{f} \\ \lambda_\text{w} &= \dfrac{v_\text{w}\lambda_\text{a}}{v_\text{a}} \end{aligned}$$
 **Conversions:** Not needed: the speeds are in the same unit, so their ratio has no unit, and the wavelength is in metres.
 **Substitution:** $f = \dfrac{343\,\text{m/s}}{0.750\,\text{m}} = 457.3\,\text{Hz}$ and $\lambda_\text{w} = \dfrac{1480\,\text{m/s}}{457.3\,\text{s}^{-1}} = 3.236\,\text{m}$
 **Answer:** $3.24\,\text{m}$, three significant figures like the initial values $343\,\text{m/s}$, $0.750\,\text{m}$ and $1480\,\text{m/s}$.
@@ -95,7 +95,7 @@
 **Principle:** A crest is a part of the wave, so it travels at the speed of the wave, $v = \tfrac{\Delta x}{\Delta t}$. Since the crest has travelled less than a wavelength, the photographs show the same crest and not already the next one.
 
 The displacement of the crest is not a displacement of the matter of the rope: the points of the rope only move up and down, and the crest is always at the point that is at its highest position at that moment. The frequency follows from the fundamental equation.
-**Formula:** $v = \dfrac{x_2 - x_1}{\Delta t}$ and $v = f\lambda$, so $f = \dfrac{x_2 - x_1}{\lambda\,\Delta t}$
+**Formula:** $$\begin{aligned} v &= \dfrac{x_2 - x_1}{\Delta t} \\ v &= f\lambda \\ f &= \dfrac{v}{\lambda} \\ f &= \dfrac{x_2 - x_1}{\lambda\,\Delta t} \end{aligned}$$
 **Conversions:** Not needed: all lengths are in metres and the time in seconds.
 **Substitution:** $v = \dfrac{1.05\,\text{m} - 0.60\,\text{m}}{0.15\,\text{s}} = \dfrac{0.45\,\text{m}}{0.15\,\text{s}} = 3.0\,\text{m/s}$ and $f = \dfrac{3.0\,\text{m/s}}{1.20\,\text{m}} = 2.5\,\text{Hz}$
 **Answer:** $2.5\,\text{Hz}$, two significant figures, because the time $0.15\,\text{s}$ and the displacement $0.45\,\text{m}$ are known to two figures.
@@ -107,7 +107,7 @@ The displacement of the crest is not a displacement of the matter of the rope: t
 **Principle:** The blow of the hammer produces sound both in the rail and in the air. The speed of a wave depends on the medium, so the two sounds travel the same distance $d$ at different speeds and arrive at different times: the sound that travelled in the steel first.
 
 Each travels at a steady speed, so the travel time is $\tfrac{d}{v}$, and the time difference is the difference of the travel times.
-**Formula:** $\Delta t = \dfrac{d}{v_\text{a}} - \dfrac{d}{v_\text{s}}$, so $d = \dfrac{\Delta t}{\dfrac{1}{v_\text{a}} - \dfrac{1}{v_\text{s}}}$
+**Formula:** $$\begin{aligned} t_\text{a} &= \dfrac{d}{v_\text{a}} \\ t_\text{s} &= \dfrac{d}{v_\text{s}} \\ \Delta t &= t_\text{a} - t_\text{s} \\ \Delta t &= d\left(\dfrac{1}{v_\text{a}} - \dfrac{1}{v_\text{s}}\right) \\ d &= \dfrac{\Delta t}{\dfrac{1}{v_\text{a}} - \dfrac{1}{v_\text{s}}} \end{aligned}$$
 **Conversions:** Not needed: the speeds are in metres per second and the time in seconds.
 **Substitution:** $d = \dfrac{0.50\,\text{s}}{\dfrac{1}{340\,\text{m/s}} - \dfrac{1}{5100\,\text{m/s}}} = \dfrac{0.50\,\text{s}}{0.002\,745\,\text{s/m}} = 182.1\,\text{m}$
 **Answer:** $1.8 \cdot 10^{2}\,\text{m}$, that is, about $180\,\text{m}$, two significant figures, because the time difference $0.50\,\text{s}$ is known to two figures.
@@ -120,7 +120,7 @@ Each travels at a steady speed, so the travel time is $\tfrac{d}{v}$, and the ti
 **Principle:** The wave in a stadium stand is a model of wave motion: every spectator repeats the movement of the neighbour after a small delay, so the standing up, the disturbance, travels along the row although the spectators stay in their places and only stand up and sit down.
 
 The disturbance travels one seat spacing in the time $\Delta t$, so its speed is constant and the time of one round is the distance divided by the speed.
-**Formula:** $v = \dfrac{\Delta x}{\Delta t}$ and $s = vt$, so $t = \dfrac{s}{v} = \dfrac{s\,\Delta t}{\Delta x}$
+**Formula:** $$\begin{aligned} v &= \dfrac{\Delta x}{\Delta t} \\ s &= vt \\ t &= \dfrac{s}{v} \\ t &= \dfrac{s\,\Delta t}{\Delta x} \end{aligned}$$
 **Conversions:** Not needed: the lengths are in metres and the time in seconds.
 **Substitution:** $v = \dfrac{0.55\,\text{m}}{0.050\,\text{s}} = 11\,\text{m/s}$ and $t = \dfrac{440\,\text{m}}{11\,\text{m/s}} = 40\,\text{s}$
 **Answer:** $40\,\text{s}$, two significant figures like the delay $0.050\,\text{s}$ and the seat spacing $0.55\,\text{m}$.
@@ -297,7 +297,7 @@ $v = f\lambda = 1.5\,\text{Hz} \cdot 1.2\,\text{m}$, that is, $v = 1.8\,\text{m/
 **Given:** frequency $f = 1.00\,\text{kHz}$, the rod is at $20\,{}^\circ\text{C}$, from the table (MAFY, *Äänen nopeuksia eri väliaineissa: Kiinteät aineet*, iron) the speed of sound $v = 5120\,\text{m/s}$
 **Find:** the wavelength $\lambda$ in metres
 **Principle:** The basic wave equation $v = f\lambda$ holds for every periodic wave. The speed is set by the medium, here iron, and it is read from the table. The frequency is set by the source, so it gives the wavelength.
-**Formula:** $v = f\lambda$, so $\lambda = \dfrac{v}{f}$
+**Formula:** $$\begin{aligned} v &= f\lambda \\ \lambda &= \dfrac{v}{f} \end{aligned}$$
 **Conversions:** $1.00\,\text{kHz} = 1.00 \cdot 1000\,\text{Hz} = 1000\,\text{Hz}$, and $1\,\text{Hz} = 1\,\text{s}^{-1}$.
 **Substitution:** $\lambda = \dfrac{5120\,\text{m/s}}{1000\,\text{Hz}} = \dfrac{5120\,\text{m/s}}{1000\,\text{s}^{-1}} = 5.12\,\text{m}$
 **Answer:** $5.12\,\text{m}$, three significant figures like the table value $5120\,\text{m/s}$ and the frequency $1.00\,\text{kHz}$.
@@ -308,7 +308,7 @@ $v = f\lambda = 1.5\,\text{Hz} \cdot 1.2\,\text{m}$, that is, $v = 1.8\,\text{m/
 **Find:** the period $T$
 **Principle:** On the horizontal axis of the snapshot there is position, so the distance between two successive crests is the wavelength $\lambda$. In one period the wave travels one wavelength, so $v = \dfrac{\lambda}{T}$.
 **Reading the graph:** The crests are on gridlines at $0.5\,\text{m}$, $2.0\,\text{m}$ and $3.5\,\text{m}$. The distance between two successive crests is $2.0\,\text{m} - 0.5\,\text{m} = 1.5\,\text{m}$, and the same distance lies between $2.0\,\text{m}$ and $3.5\,\text{m}$, so $\lambda = 1.5\,\text{m}$. The amplitude $4\,\text{cm}$ is not needed.
-**Formula:** $v = \dfrac{\lambda}{T}$, so $T = \dfrac{\lambda}{v}$
+**Formula:** $$\begin{aligned} v &= \dfrac{\lambda}{T} \\ T &= \dfrac{\lambda}{v} \end{aligned}$$
 **Conversions:** Not needed: the wavelength is in metres and the speed in $\text{m/s}$.
 **Substitution:** $T = \dfrac{1.5\,\text{m}}{3.0\,\text{m/s}} = 0.50\,\text{s}$
 **Answer:** $0.50\,\text{s}$, two significant figures like the speed $3.0\,\text{m/s}$ and the wavelength $1.5\,\text{m}$ read from the figure.
