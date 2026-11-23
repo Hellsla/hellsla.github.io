@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6bfe5ddbe100df3b
+CONTENT-HASH: 020a2d39a5af90ba
 Mode: delta
 
 ## Blocking
@@ -9,8 +9,7 @@ Mode: delta
 (none)
 
 ## Checked
-- Oil H changed 43 to 40.6 MJ/kg (MAFY table) in L3-01, L3-04, L3-05, in the texts, solutions and answers.py; the text of L3-01 and L3-04 now names the source.
-- L3-01: 120/40.6 = 2.956 kg, 8.0 - 2.96 = 5.04, answer 5.0 kg; check 2.71 x 2.96 = 8.0 correct.
-- L3-04: oil 53 200/40.6 = 1310 kg; ratio of masses 2.5, of heats 40.6:17 = 2.4, 2.4 x 0.90/0.85 = 2.5: the explanation of the efficiency still holds; answer (pellets 3300 kg) unchanged.
-- L3-05: oil 36 000/(0.90 x 40.6) = 985 kg (990); "more than twice" and 40.6:15 = 2.7 correct; answer 940 kg unchanged.
-- Edited during the review: the L3-05 table row for the oil boiler now reads 40.6 MJ/kg (light heating oil, MAFY table), matching the solution's 'from the table'; a necessary and correct fix.
+- Delta: Formula lines now start from e = E_label/m_label, eta = E_useful/E_in, E = Hm, P = E/t or E_w = E_p and combine into one expression; each combination is algebraically right and no answer changed.
+- Substitution lines now plug into the combined expression and give the old intermediate value in brackets; the numbers (480 kJ, 578 MJ, 4.465 kg, 5.04 kg, 3.6, 35 MW, 5.62 kg, 34.4 kg) agree with the earlier ones.
+- The L3 heating-table solution now shows the three fuel calculations on separate lines (3313, 1310, 4024 kg; +710 kg): easier to follow.
+- Long Reading the graph / Answer paragraphs split into short paragraphs; wording identical.

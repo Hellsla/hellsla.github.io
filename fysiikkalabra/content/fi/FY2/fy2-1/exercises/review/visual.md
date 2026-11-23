@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 2c00ef9907576d3e
+CONTENT-HASH: 488edba2bc8932a7
+SCOPE: delta: solutions.md Kaava lines now start from E_alussa = E_lopussa; checked in captures.
 
 ## Blocking
 - none
 
 ## Polish
-- none (paragraph breaks only; no new findings)
+- none
 
 ## Checked
-- fi Solutions cut into paragraphs and (a)/(b)/(c) parts, rendered in the lesson shots folder: fy2-1-open-exercises-1280-4.png, -8.png (L1-4, L1-5/L1-8 solutions), fy2-1-open-exercises-L3-1280-4.png, -5.png (nuclear chain, 1-22 fossil share); each part starts its own paragraph, formulas and units intact.
-- Delta only: one text cut into paragraphs, words unchanged. KaTeX renders, units upright with thin space, no clipping or overflow, spacing between paragraphs matches the rest of the page.
+- fy2-1-open-exercises-1280-1.png (1-2), -3.png (skateboard A-C, display formulas between "eli" and "joten"), L2-1280-3.png (1-14): new Kaava lines render, KaTeX intact, units upright, no clipping, spacing as before.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -1,13 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 5b31514997a4592b
+VERDICT: FAIL
+CONTENT-HASH: 1079c8766e1b2551
 Mode: delta
 
 ## Blocking
-(none)
+- fy2-1/exercises/solutions.md lines 5, 15, 30, 59, 117, 127, 137, 147, 192, 207 — the new opening Formula line uses Finnish subscripts, $E_\text{alussa} = E_\text{lopussa}$, in the English solutions. The lesson (Kaava, line 80) and the Principle lines of these same solutions use $E_\text{initial} = E_\text{final}$, so the student meets two different symbols for one quantity — fix: replace `alussa`/`lopussa` with `initial`/`final` in all ten lines.
 
 ## Polish
 (none)
 
 ## Checked
-- Delta: only the L1-10 Reasonableness line; "dry wood, 16.2 MJ/kg in the MAFY tables" is consistent with the table lookup and still supports the point (petrol holds much more per kilogram).
-- 40 MJ/kg x 2 kg = 80 MJ, 87 MJ = 24 kWh: arithmetic right. Rest of the set unchanged.
+- Delta: Formula lines now start from E_initial = E_final (or from the definition H = E/m, share = part/whole); the derived equations are unchanged and no number changed.
+- The Reading the graph and Model answer paragraphs split into short paragraphs: content identical, easier to read on a phone.
+- L1-04, L1-05, L2 and L3 answers: split only, wording unchanged.
