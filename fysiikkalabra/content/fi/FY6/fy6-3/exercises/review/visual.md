@@ -1,16 +1,17 @@
 VERDICT: PASS
 CONTENT-HASH: 58ff29a1ecb104bc
-SCOPE: delta md-paragraphs,numbers,typography,wording from 2eb18a63c0e1ad44 base 5b3ca4f
+SCOPE: delta md-paragraphs,reflow,typography from 2eb18a63c0e1ad44 base 5b3ca4f
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Opened fy6-3-open-exercises-L3-1280-3, -5, -7, -8 and L2-1280-10, -11 (the 3-21 Kaava, the graph task's Kohta b) display block between words, the proportionality task): aligned rows read cleanly, nothing clipped.
-- Captures are in content/fi/FY6/fy6-3/review/shots/ (the packet's relative path did not resolve under exercises/review/).
+- Delta judged from git diff 5b3ca4f against the current captures in content/fi/FY6/fy6-3/review/shots/ (stamp current): the changes are the Kaava/Formula steps now written as aligned blocks of basic equations, and long Principle/Model answer paragraphs split into one idea each.
+- Opened the longest changed blocks (fy6-1 L3 1280-5: seven-row Formula block; fy6-3 L3 1280-2/-3: three-row and chain blocks, fy6-1 L2 1280-9): rows aligned at =, fractions and subscripts legible, nothing clipped, Substitution chains and boxed answers intact, spacing between split paragraphs even.
+- The unchanged figures and layout of the rest of the page were not re-judged; no figure or caption text in the diff beyond what is named in SCOPE.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

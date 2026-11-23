@@ -1,16 +1,17 @@
 VERDICT: PASS
 CONTENT-HASH: 0403a43777fa1082
-SCOPE: delta answers,comments,md-paragraphs,numbers,reflow,structure,typography,wording from 950adae5af06a27a base 8f23aa7
+SCOPE: delta md-paragraphs,reflow,typography from 950adae5af06a27a base 8f23aa7
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md Kaava rows: a short aligned block puts the first rows at slightly different left offsets (equals signs aligned, as intended); no change needed.
+- none
 
 ## Checked
-- fy6-3 open-exercises-L2-1280-10 (Kohta b/c Kaava), L3-1280-4, -5, -6, -7, -8
-Kaava blocks now one equation per row, equals signs aligned, fractions in display size, no clipping or overflow; order principle, formula, substitution kept; Finnish text around the blocks unchanged.
+- Delta judged from git diff 8f23aa7 against the current captures in content/fi-easy/FY6/fy6-3/review/shots/ (stamp current): the changes are the Kaava/Formula steps now written as aligned blocks of basic equations, and long Principle/Model answer paragraphs split into one idea each.
+- Opened the longest changed blocks (fy6-1 L3 1280-5: seven-row Formula block; fy6-3 L3 1280-2/-3: three-row and chain blocks, fy6-1 L2 1280-9): rows aligned at =, fractions and subscripts legible, nothing clipped, Substitution chains and boxed answers intact, spacing between split paragraphs even.
+- The unchanged figures and layout of the rest of the page were not re-judged; no figure or caption text in the diff beyond what is named in SCOPE.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

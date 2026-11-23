@@ -1,16 +1,17 @@
 VERDICT: PASS
 CONTENT-HASH: 295c391cac8e837b
-SCOPE: delta md-paragraphs,numbers,reflow,teacher-figure,typography from 9415e187cfda526d base e238aa9
+SCOPE: delta md-paragraphs,reflow,typography from a7371b05089e9246 base 5b3ca4f
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Opened fy6-1-open-exercises-1280-1, L3-1280-4, -5, -6, -7 (1-2, 1-21, 1-22: two-, seven- and five-row Kaava blocks) and fy6-1-fig-5-390: rows aligned at =, fractions legible, nothing clipped, Sijoitus chains intact.
-- Captures are in content/fi/FY6/fy6-1/review/shots/ (the packet's relative path did not resolve under exercises/review/).
+- Delta judged from git diff 5b3ca4f against the current captures in content/fi/FY6/fy6-1/review/shots/ (stamp current): the changes are the Kaava/Formula steps now written as aligned blocks of basic equations, and long Principle/Model answer paragraphs split into one idea each.
+- Opened the longest changed blocks (fy6-1 L3 1280-5: seven-row Formula block; fy6-3 L3 1280-2/-3: three-row and chain blocks, fy6-1 L2 1280-9): rows aligned at =, fractions and subscripts legible, nothing clipped, Substitution chains and boxed answers intact, spacing between split paragraphs even.
+- The unchanged figures and layout of the rest of the page were not re-judged; no figure or caption text in the diff beyond what is named in SCOPE.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
