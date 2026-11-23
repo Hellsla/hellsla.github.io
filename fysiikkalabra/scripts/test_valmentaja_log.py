@@ -35,7 +35,7 @@ code = re.sub(r"/\*.*?\*/", "", src, flags=re.S)
 code = re.sub(r"//.*", "", code)
 bad = [w for w in ("fetch", "XMLHttpRequest", "sendBeacon", "WebSocket", "EventSource", "importScripts", "new Image", "submit(", "navigator.", "document.cookie", "indexedDB") if w in code]
 uses = sorted(set(re.findall(r"localStorage\.(\w+)", code)))
-expect("valmentaja.js makes no network call and keeps nothing but its own key (R5)", not bad and uses == ["getItem", "removeItem", "setItem"] and KEY in code and "localStorage.removeItem(V.KEY)" in code, (bad, uses))
+expect("valmentaja.js makes no network call and keeps nothing but its own two keys (R5; the log and, PR 4b, the goal and courses)", not bad and uses == ["getItem", "removeItem", "setItem"] and KEY in code and "ruukkilabra:fy9-tavoite" in code and "localStorage.removeItem(V.KEY)" in code and "localStorage.removeItem(SET_KEY)" in code, (bad, uses))
 expect("the old fl:attempt fields id, kind and state are still sent (lesson.js)", "{ id: taskId(el), kind, state }" in (ROOT / "templates" / "lesson.js").read_text())
 pages = sorted(SITE.rglob("*.html"))
 with_js = sorted(p.relative_to(SITE).as_posix() for p in pages if "valmentaja.js" in p.read_text(errors="ignore"))

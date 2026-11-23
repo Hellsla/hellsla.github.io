@@ -52,6 +52,22 @@ INDEX = {"units": [{"id": u, "chapter": 1, "title": u, "n": f"1.{k}"} for k, u i
     task("fy9-c#n1", "fy9-c", "numeric", ["math"], 4), task("fy9-c#c1", "fy9-c", "choice", ["concept"], 2)]}
 
 
+def unit(u, k, course=None):
+    o = {"id": u, "chapter": 1, "title": u, "n": f"1.{k}"}
+    if course: o["course"] = course
+    return o
+
+
+def mk(u):
+    return [task(f"{u}#c1", u, "choice", ["concept"], 2), task(f"{u}#c2", u, "choice", ["graph"], 2), task(f"{u}#n1", u, "numeric", ["math"], 4), task(f"{u}#n2", u, "numeric", ["math"], 4),
+            task(f"{u}#e1", u, "explain", ["communication"], 5), task(f"{u}#i1", u, "interpret", ["graph"], 4),
+            task(f"{u}-s1", u, "long", {"math": 6, "concept": 4}, 30), task(f"{u}-s2", u, "long", {"transfer": 5, "communication": 5}, 30)]
+
+
+# PR 4b: three units, two of them of a course each (1 and 2), the third (an exam unit) of none
+INDEX2 = {"units": [unit("fy9-a", 1, 1), unit("fy9-b", 2, 2), unit("fy9-x", 3)], "tasks": mk("fy9-a") + mk("fy9-b") + mk("fy9-x")}
+
+
 def row(day, tid, way="a", result="ok", first=1, hints=0, mistake=None, mode="p", hour="10:00"):
     return [f"{day}T{hour}Z", tid, way, result, first, hints, mistake, mode]
 
@@ -162,6 +178,29 @@ with sync_playwright() as pw:
     # a task whose rows show no result: a written solution marked done carries none
     c = cells(D([row("2026-11-20", "fy9-a-s1", "s", None)]), "2026-11-23")["fy9-a|math"]
     expect("a written solution marked done (no result) is no evidence", c["state"] == "none", c)
+
+    # ---- PR 4b: the goal and the courses taken ----
+    ctx3 = b.new_context(timezone_id="Europe/Helsinki"); pg3 = ctx3.new_page(); pg3.goto(BASE + "FY9-valmentaja.html")
+    rec2 = lambda d, o=None: pg3.evaluate("([i, d, t, o]) => window.flCoach.recommend(i, d, t, o)", [INDEX2, d, "2026-11-23", o])
+    log2 = [row("2026-11-20", "fy9-a#n1", result="no"), row("2026-11-21", "fy9-b#c1", result="no")]
+    base = rec2(D(log2)); kinds = lambda r: [x["task"]["kind"] for x in r["recs"]]
+    expect("PR 4b: no goal and no course: the recommendation is the one of PR 4 (no setting changes it)", base == rec2(D(log2), {"goal": None, "courses": []}) and len(base["recs"]) == 3, ids(base))
+    le, mc, ba = (rec2(D(log2), {"goal": g}) for g in ("LE", "MC", "BA"))
+    expect("L-E: at least two of the three are long, explaining or reading tasks, at most one is a plain choice or number", sum(k in ("long", "explain", "interpret") for k in kinds(le)) >= 2 and sum(k in ("choice", "numeric") for k in kinds(le)) <= 1, kinds(le))
+    expect("B-A: no long task while short ones are left, and at least two short tasks the page checks", kinds(ba).count("long") == 0 and sum(k in ("choice", "numeric") for k in kinds(ba)) >= 2, kinds(ba))
+    expect("M-C: about half and half, at most two long and at most two short, both present", 1 <= kinds(mc).count("long") <= 2 and 1 <= sum(k != "long" for k in kinds(mc)) <= 2, kinds(mc))
+    expect("the three goals give three different mixes", len({tuple(ids(x)) for x in (le, mc, ba)}) == 3, [ids(x) for x in (le, mc, ba)])
+    expect("a goal keeps the limits of PR 4: three at most, one per cell, two per unit, the same each time", all(len(x["recs"]) <= 3 and len({y["cell"] for y in x["recs"]}) == len(x["recs"]) and all(sum(y["task"]["unit"] == u for y in x["recs"]) <= 2 for u in ("fy9-a", "fy9-b", "fy9-x")) for x in (le, mc, ba)) and le == rec2(D(log2), {"goal": "LE"}))
+    c2 = rec2(D(log2), {"courses": [2]})
+    expect("a course not ticked: its unit is in no recommendation, a unit of no course stays", c2["recs"] and not any(x["task"]["unit"] == "fy9-a" for x in c2["recs"]) and not any(k.startswith("fy9-a|") for k in c2["cells"]) and any(k.startswith("fy9-b|") for k in c2["cells"]) and any(k.startswith("fy9-x|") for k in c2["cells"]), ids(c2))
+    c1 = rec2(D(log2), {"courses": [1], "goal": "LE"})
+    expect("with course 1 ticked only fy9-a and fy9-x are offered, with any goal", c1["recs"] and all(x["task"]["unit"] in ("fy9-a", "fy9-x") for x in c1["recs"]), ids(c1))
+    expect("evidence of a course that is not ticked still means there is evidence (no diagnostic offered)", not rec2(D([row("2026-11-20", "fy9-a#n1")]), {"courses": [2]})["diag"])
+    expect("the settings store: read, write, remove", pg3.evaluate("""() => { const f = window.flCoach, k = f.SET_KEY;
+        f.writeSet({ goal: 'MC', courses: [3, 1] }); const a = f.readSet(); f.writeSet({ goal: null, courses: [] }); return k === 'ruukkilabra:fy9-tavoite' && JSON.stringify(a) === '{"goal":"MC","courses":[3,1]}'.replace('[3,1]', '[1,3]') && localStorage.getItem(k) === null; }"""))
+    expect("a damaged or foreign setting is ignored", pg3.evaluate("""() => { const f = window.flCoach, k = f.SET_KEY, out = [];
+        for (const v of ['{no', '{"v":2,"goal":"LE"}', '{"v":1,"goal":"XX","courses":[0,9,"a",2,2]}']) { localStorage.setItem(k, v); out.push(JSON.stringify(f.readSet())); } localStorage.removeItem(k); return out.join('|'); }""") == '{"goal":null,"courses":[]}|{"goal":null,"courses":[]}|{"goal":null,"courses":[2]}')
+    ctx3.close()
     ctx.close()
 
     # ---- the pages ----
@@ -210,6 +249,24 @@ with sync_playwright() as pw:
             expect(f"{lang} {w}px: no horizontal overflow and every control 40 px or more", over <= 1 and not small, (over, small))
             if lang == "fi" and w == 360: p.screenshot(path="/tmp/coach-360.png", full_page=True)
             if lang == "fi" and w == 1280: p.screenshot(path="/tmp/coach-1280.png", full_page=True)
+            # PR 4b: the settings on the page
+            SK = "ruukkilabra:fy9-tavoite"
+            p.evaluate("(k) => localStorage.removeItem(k)", SK); p.goto(base + "FY9-valmentaja.html")
+            expect(f"{lang} {w}px: the settings are there (four goals, eight courses), closed, with no data too", p.locator("#coach-set").is_visible() and not p.locator("#coach-set").evaluate("e => e.open") and p.locator("#coach-set input[type=radio]").count() == 4 and p.locator("#coach-set input[type=checkbox]").count() == 8)
+            p.locator("#coach-set > summary").click()
+            sm = p.evaluate("() => [...document.querySelectorAll('#coach-set label')].filter((e) => e.getBoundingClientRect().height < 40).length")
+            expect(f"{lang} {w}px: every setting is 40 px or higher and nothing overflows", sm == 0 and p.evaluate("() => document.scrollingElement.scrollWidth - document.scrollingElement.clientWidth") <= 1, sm)
+            p.locator("#coach-set label", has_text=T["goal_MC"]).click()
+            p.locator("#coach-set label", has_text="FY4").click(); p.locator("#coach-set label", has_text="FY1").click()
+            expect(f"{lang} {w}px: a goal and courses are saved at once, only to this device's one key", json.loads(p.evaluate("(k) => localStorage.getItem(k)", SK)) == {"v": 1, "goal": "MC", "courses": [1, 4]})
+            p.reload(); p.locator("#coach-set > summary").click()
+            expect(f"{lang} {w}px: they come back after a reload", p.locator("#coach-set input[type=radio]:checked").get_attribute("value") == "MC" and p.locator("#coach-set input[type=checkbox]:checked").count() == 2)
+            expect(f"{lang} {w}px: no grade, no percentage and no prediction in the settings", "%" not in p.locator("#coach-set").inner_text() and not re.search(r"arvosana|grade|prediction|ennuste", p.locator("#coach-set").inner_text(), re.I))
+            hidden = [u["id"] for u in idx["units"] if u.get("course") and u["course"] not in (1, 4)]
+            p.locator("#coach-areas > summary").click(); p.locator("details.coach-comp").first.locator("summary").click()
+            shown = p.locator(".coach-table").first.inner_text()
+            expect(f"{lang} {w}px: the table has the units of the courses ticked and the exam units, and no unit of another course", hidden and all(next(u for u in idx["units"] if u["id"] == h)["title"] not in shown for h in hidden) and any(u["title"] in shown for u in idx["units"] if u.get("course") in (1, 4)), shown[:200])
+            p.evaluate("(k) => localStorage.removeItem(k)", SK)
             # the row on the course page
             p.goto(base + "FY9.html")
             row_el = p.locator("#fy9-coach-row")
@@ -229,9 +286,10 @@ with sync_playwright() as pw:
                 p2 = c.new_page(); p2.on("dialog", lambda dlg: dlg.accept()); p2.goto(base + "FY9-valmentaja.html")
                 other = "ruukkilabra:vastaukset:fy9-voimat"
                 p2.evaluate("(k) => localStorage.setItem(k, '{\"a\":1}')", other)
+                p2.evaluate("(k) => localStorage.setItem(k, '{\"v\":1,\"goal\":\"LE\",\"courses\":[2]}')", "ruukkilabra:fy9-tavoite")
                 with p2.expect_navigation(): p2.locator(".coach-clear").click()
                 expect(f"{lang}: confirming removes the coach's key and nothing else; the diagnostic is offered again",
-                       p2.evaluate("(k) => localStorage.getItem(k)", KEY) is None and p2.evaluate("(k) => localStorage.getItem(k)", other) is not None and p2.locator("#coach-recs a.coach-go").count() == 1)
+                       p2.evaluate("(k) => localStorage.getItem(k)", KEY) is None and p2.evaluate("(k) => localStorage.getItem(k)", "ruukkilabra:fy9-tavoite") is None and p2.evaluate("(k) => localStorage.getItem(k)", other) is not None and p2.locator("#coach-recs a.coach-go").count() == 1)
                 p2.close()
             c.close()
     # blocked storage
