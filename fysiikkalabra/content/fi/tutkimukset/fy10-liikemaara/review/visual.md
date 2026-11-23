@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1d06f92ebbede882
+CONTENT-HASH: 2554de77f83e90de
 
 ## Blocking
 (none)
@@ -13,6 +13,7 @@ CONTENT-HASH: 1d06f92ebbede882
 ## Checked
 - Delta: page-1280-7 (changed passage in its closed "tuki" box, the model figure with its lead paragraph and the following section: layout intact, no overflow), fig-4-390 (model figure at 390 px: legible, nothing clipped, labels in KaTeX, the line drawn as a model with no data points, "suuruus pienenee" arrow clear), page-1280-5 for context.
 - Drawing unchanged by the diff; aria-label in SVG and figures.py match. teacher.md bullet read from the diff: same wording as the page, consistent notation.
+- Re-run for hash 2554de77f83e90de: the diff only adds "ja nopeuksista" in both files and rewords the first sentence of the teacher.md bullet ("näkyy järjestelmällisenä erona kokonaisliikemäärissä ennen törmäystä ja sen jälkeen"); read in source: fluent, notation unchanged, no layout change, so the earlier captures still hold.
 - Not opened: the 390 px page parts around the passage; no overflow reported in the packet checks.
 
 ## Scores
