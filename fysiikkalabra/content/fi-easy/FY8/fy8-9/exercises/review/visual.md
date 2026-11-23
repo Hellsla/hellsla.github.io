@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: dbef09b8ef43b8da
+CONTENT-HASH: ebe98a22a12cb8f4
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] 9-18 solution, Järkevyys — the "ln 380/58" fraction (no-background chain) renders with a small nested "ln" and numerator; legible, so no change required.
+- [Minor] Kaava rows: the block now stacks every step, incl. the repeated "E = hf, f = c/lambda" opener; acceptable, no change asked.
 
 ## Checked
-- Delta: solutions.md md-paragraphs only (same words, cut into paragraphs).
-- Opened fy8-9-open-exercises-L2-1280-13 and -14 (tasks 9-18 and 9-19, every solution open; lesson's shots folder, the exercises folder holds none): paragraphs separate cleanly, equals signs aligned, answers set apart, graphs readable, no clipping.
+- Delta (solutions.md, Kaava step re-set as aligned blocks). Source read; rendered the built fi-easy page at 390 px with every solution open and opened the three tallest Kaava blocks (own captures; the packet has no phone-width solution shots) plus lesson-level capture open-exercises-1280.
+- Result: one equation per row, equals signs aligned, fractions and subscripts legible, no clipping, scrollWidth 390, no KaTeX element beyond the viewport; the rest of the solution (Sijoitus, Vastaus, Järkevyys) unchanged.
+- Other captures not opened.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

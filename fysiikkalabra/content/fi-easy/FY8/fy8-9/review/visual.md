@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 41902d2b8ee6b58a
+CONTENT-HASH: 10e59ab40e812232
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] ensimmäinen pysahdy-laatikko — "Päättele näytteen ytimien määristä." on epäselvä ohje; parempi: "Päättele ytimien määrästä, kuinka suuri osa jäljellä olevista ytimistä hajoaa."
-
-## Vanhan sisällön löydökset
-- ei
+- [Minor] lesson.md, Geiger photo caption — "taustasäteilyn" appears before the bold definition of "taustasäteily" in the next paragraph; for S2 readers a short gloss or moving the caption after it would help.
+- [Minor] lesson.md, Aktiivisuus — "ionisoivista hiukkasista ja fotoneista" is heavy for S2 level; one short explanation would do.
 
 ## Checked
-- batch delta review: edited first box and the moved box (now before the isotope table) read from diff; `\left(\tfrac{1}{2}\right)^2` set correctly; layout via shared component.
+- Delta: three text fixes (Geiger caption, Aktiivisuus paragraph, 97,6 MBq rounding) and the two teacher-approved pictures. Opened top-390, fig-2-390, intro-1280: hero and Ydinajatus picture render, nothing clipped, labels legible.
+- Wording reads fluently; 97,6 MBq has three significant figures, consistent with the data.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

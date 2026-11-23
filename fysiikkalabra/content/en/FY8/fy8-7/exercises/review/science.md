@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 7ff4568c0902edd0
-SCOPE: delta added-exercise from e73b4e5e83dd72e3 base 5b3ca4f81c77
+CONTENT-HASH: ff46a59fd2b8b611
+SCOPE: delta (work queue 8g: Kaava step of the model solutions; paragraph breaks)
 
 ## Blocking
 
 ## Polish
-- exercises/exercises.json (fy8-7-L2-08 text) — "the number of photons per second emitted by one laser as a function of wavelength" reads as if one laser's wavelength varied; the figure is a grid with one point — e.g. "The figure shows a laser as a point: its wavelength on the horizontal axis and the number of photons it emits per second on the vertical axis." The same applies to L3-06 for two lasers.
+- exercises/exercises.json (fy8-7-L2-08 and L3-06 text): my earlier Polish item still stands. "As a function of wavelength" reads as if one laser's wavelength were varied.
 
 ## Checked
-- L1-10: N/t = Pλ/(hc) with MAFY h = 6.62607015e-34 J s: 6.7455e15 1/s; answer 6.7e15 is 0.7 % off, inside ±2 %; with h = 6.626e-34 the same to 4 figures. Two figures from 2.0 mW justified; check 3.0e-19 J per photon and comparison with L1-07 (1.3e16 1/s) right.
-- L2-08: figure point at (520 nm, 3.927e15 1/s), generated from 1.5 mW; read 3.9e15 gives 1.490 mW, readings 3.85–3.95e15 give 1.47–1.51 mW, inside ±3 %. Photon 3.8201e-19 J = 2.38 eV (green); 1.0 mW would give 2.62e15 1/s; reasonableness check is a real one.
-- L3-06: points X (450 nm, 6.796e15) and Y (800 nm, 4.027e15), generated from 3.0 and 1.0 mW; exact ratio 3.000, read values give 3.022; reading ±0.1 on both axes gives 2.91–3.15, so ±4 % is tight but fair for two well-placed points. hc cancels; photon energies 4.41e-19 and 2.48e-19 J right.
-- Figure grids and descriptions give every value needed; neither prints a power or the answer.
-- answers.py lines for the three exercises compute the right physics (P = (N/t)hc/λ) and match exercises.json; units 1/s, mW, dimensionless correct.
-- Solutions: symbolic form before substitution, conversions, rounding reason and reasonableness in each; within FY8 scope (E = hf, photon flux).
-- Hash 7ff4568c0902edd0 at start and end.
+- I compared the removed text with the added text outside the Formula lines, ignoring whitespace. They are identical word for word: the only other change is new paragraph breaks. No number, answer, tolerance or substitution changed.
+- I read every new Formula block on disk. The packet's diff flattens the `aligned` rows, but on disk each is a clean aligned derivation. Each starts from E = hf (or P = (N/t)·hf, E = N·hf), uses f = c/λ and reaches the same derived form as before. L1-03, L1-04, L2-03 and L3-01 solve for the unknown symbolically. L2-01, L2-02, L3-03, L3-05 and L3-06 cancel hc (or h) symbolically before substitution.
+- L3-04: η_q = (P_L λ_L)/(P_p λ_p) follows from N/t = Pλ/(hc). P_unav = (N_L/t)(hf_p − hf_L) is the right unavoidable part (the quantum defect).
+- L3-05: the chain ΔP_L/ΔP_p = (ΔN_L/ΔN_p)(λ_p/λ_L) is inverted correctly, giving ΔN_L/ΔN_p = slope · λ_L/λ_p.
+- L3-03: E_light = hf_light and E_q = hf_q, so the ratio is c/(λ f_q). This is right.
+- I recomputed every numeric answer with my own formulas in one script (h = 6.626e-34, c = 2.998e8). All of them agree with answers.py and lie inside their JSON tolerance: for example L1-04 1.6069e16, L2-03 527.66 nm, L3-02 2.0338e18 1/s, L3-04 82.223 %, L3-05 0.5241, L2-08 1.490 mW, L3-06 3.022.
+- The notation (E = hf, f = c/λ, N/t) stays within the FY8 photon-energy scope.
+- The hash was ff46a59fd2b8b611 at the start and at the end.
