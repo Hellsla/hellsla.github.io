@@ -1,8 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0f23ffb901818a30
+CONTENT-HASH: b2e495e2487ce941
+SCOPE: delta, three text fixes from the final audit
+
 ## Blocking
--
+(none)
+
 ## Polish
--
+(none)
+
 ## Checked
-batch delta review: uudet Pysähdy ja mieti -laatikot: laskut tarkistettu, kysymys ratkaistavissa opitulla, palaute korjaa käsitteen; vanhasta sisällöstä ei löydöksiä (Vanhan sisällön löydökset: ei).
+- Geiger caption: "taustan vähentämisen jälkeen verrannollinen" is correct physics (net count rate) and consistent with the Aktiivisuus paragraph, which says background is always added.
+- Aktiivisuus paragraph: "ionisoivista hiukkasista ja fotoneista" replaces the vague "säteilykvanteista"; correct, understandable at the course level, and the paragraph stays under 120 words.
+- Worked example last row: 550 MBq · 0,17754 = 97,647 MBq, so 97,6 MBq (three figures, as the data 550 MBq) is right; the example's stages and check are not affected.
+- No change to inquiry, figures, simulation or learning path; the earlier PASS stands.
