@@ -8,6 +8,10 @@ So that your work is not lost when you close the page, Ruukkilabra saves some th
 
 Ruukkilabra does not send this data automatically to your teacher or anywhere else, and your teacher cannot see it in your browser.
 
+As a backup you can save all the work in this browser to one file on your device and open it on another device. The file holds the work of every module (solutions and answers, self-assessments, the times of tasks counted as done) as well as concept card progress and the chapter opened last, and a checksum. It has no name, no contact details and no read-aloud settings. This file is not a submission: the teacher's grading page does not accept it, and you submit work with the module's own work file.
+
+<div class="work-tools" id="kaikki-tyo" hidden></div>
+
 ## The work file
 
 The *Save work to a file* button puts your work for the course into one file on your device. You can open the file on another device with *Open saved work*. The file contains everything the browser has saved from this course's pages:

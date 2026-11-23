@@ -183,7 +183,7 @@ jobs:
       - name: the solution editor under every exercise (Abitti's Digabi editor, loaded on the first click; copy for L'Math; teacher 2026-11-01)
         run: python scripts/test_writepad.py
       - name: submission and grading trial, FY3-1 (Lataa ratkaisut, Apps Script import and grading view against a mock; teacher 2026-11-05)
-        run: python scripts/palautus_tasks.py --check && python scripts/test_palautus.py && python scripts/test_tehty.py && python scripts/test_koko.py
+        run: python scripts/palautus_tasks.py --check && python scripts/test_palautus.py && python scripts/test_tehty.py && python scripts/test_koko.py && python scripts/test_kaikki.py
       - name: offline use (service worker, visited pages, KaTeX, simulation and answer check without a network; newest page wins; old caches removed; emergency switch; work queue 17a PR 1)
         run: python scripts/test_offline.py
       - name: read aloud on every lesson page (browser voice, formulas as words, the sentence and word highlighted; teacher 2026-11-03)
