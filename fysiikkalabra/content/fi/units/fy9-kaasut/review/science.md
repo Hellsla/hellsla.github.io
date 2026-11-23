@@ -1,17 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 2f9de8817eb2638d
-SCOPE: delta (round 2): new tasks fy9-kaasut-s8 (fy3-10/pt-suorat) and s9 (fy3-11/pv-isobaari) and the changed intro, judged afresh; s1-s7 not re-judged. Hash at start and end identical. Language: fi.
+VERDICT: FAIL
+CONTENT-HASH: 9aa2efef9e81542c
+SCOPE: full; the three new ```pysahdy boxes judged first, then unit.md, inquiry.json, teacher.md and the Sovella set s1–s9 with answers.py. Hash identical at start and end. Language: fi.
 
 ## Blocking
-(none)
+1. **A (definition), unit.md, second pysahdy box (Kaasun tila).** The question "Miksi absoluuttinen nollapiste on vain mallin ennuste?" says that absolute zero itself is only a model prediction. That is wrong. Absolute zero is the lowest possible temperature and the zero of the kelvin scale, whatever model is used. What the gas model predicts is that the gas's pressure or volume would fall to zero there, and the extrapolated value is the estimate. The box's own answer is about the extrapolation, so the question and the answer do not match, and a student is left thinking absolute zero is hypothetical. Fix: e.g. "Miksi suoran jatkaminen nollapaineeseen on vain kaasumallin ennuste?" and keep the answer as it is (optionally add: "Absoluuttinen nollapiste on silti todellinen alin mahdollinen lämpötila.").
 
 ## Polish
-- s9: heating air to about 1170 K (about 900 C) is still not plausible for a school cylinder; a smaller volume ratio or a one-line note ("the gas is idealised") would help. Not blocking, the task is explicitly an invented example.
+- The same box sits between "Kelvinlämpötila on" and the formula $T = \theta + 273{,}15\,\text{K}$, so it splits the sentence. It also answers a point that the paragraph under the formula only introduces afterwards. Move it after that paragraph (ends "…tiivistyy nesteeksi ennen sitä.").
+- The third box repeats the sentence right after it. The physics is right (a cyclic engine, $W = Q_1 - Q_2 < Q_1$), but the repeat is redundant.
+- s5 b): "Lämpötilan ja mittarin virheet ovat kumpikin noin 5–7 %". When recomputed they are 4.6 % (30 °C → 26.6 g/mol) and 5.0 % (200 kPa → 26.7 g/mol). "noin 5 %" fits.
 
 ## Checked
-- Round-1 blockers verified in the current text, not trusted: (1) s9 now says the movable piston carries weights that hold the pressure constant, "light" is gone, consistent with the constant 250 kPa in the figure; (2) s9 b and c both use two significant figures, answer.value 1172.6 K with tolerance 3 %: 1.2e3 K is 2.3 % off, so inside tolerance, and n = 0.10 mol gives 1203 K (2.6 %), also inside; (3) the intro no longer calls the last task the source task, it says only that one of the tasks is source-based; (4) the s9 c common-mistake line now reads "temperature not converted from Celsius to kelvins or the answer says it quadruples in Celsius (80 C)", which is correct.
-- Own recomputation (R = 8.31, 273.15): s8 a n = 100000*2.0e-3/(8.31*400) = 0.0602 mol (200 K / 50 kPa point gives the same); s8 b 60/100 = 0.60, so 40 % smaller, n_B 0.036 mol; s8 c 253.15/400*100 = 63.3 kPa; s9 a 250 kPa*3.0 l = 750 J; s9 b n = 0.1026 mol; s9 c T2 = 4*293.15 = 1172.6 K (880 K rise, 899.5 C). All match tasks.json answers and solutions.
-- s8: rigid vessel, constant V and n, so p proportional to T; comparison at equal T and V is physically sound; reading from two far-apart points; precision (two figures) matches the data; the -20 C part lies within the graph's range logic (253 K between 200 K and 400 K).
-- s9 d: heating at constant pressure, internal energy up, Q = dU + W, so Q > W; sign convention and energy wording correct. Magnitude check (0.04 mol of air per litre at 101 kPa, 2.5x pressure gives 0.10 mol) right.
-- Points add up per part, criteria match the parts, scope FY3, figure values are readable from the figures (V and 20 C given in the text).
-- Fidelity: numbers, criteria and physics identical across fi, en and fi-easy.
+- Box 1: the gauge shows overpressure; $101 + 230 = 331\,\text{kPa}$ is correct and consistent with the text. Box 3: correct by the guardrail (a heat engine in a cycle).
+- New raster figures: kone.webp has arrow widths of 274 : 179 : 92 px, which is 1000 : 653 : 336, so the "mittakaavassa" claim holds (1000/650/350 J). The hero image matches its alt text and makes no physics claim.
+- One script recomputes every number from the task data and compares it with answers.py: the tyre example (285.8 kPa, gauge 185 kPa; teacher.md 14 % / 20 %, −25 °C → 34.3 ml); inquiry aineisto 0.0602 mol (B 0.0361), luukku 17.66 kN (54.0 with total pressure), pumppu 151.5 kPa, pallo 832 kg (3451/2619), mäntä 750 J, tarkistus-2 58.3 kW, the pump 10.3 m limit, the celsius 114 kPa and lt-4 1.07; s1 562.1 kPa / 21.19 kJ / 25.0 and 3.81 kJ / 650 kPa / 501 kPa / 0.42 m; s2 2183 mol, 34.92 kg, 485 kW, 174.6 kW, 84 %, waste 77.6 kW; s3 LSQ k 0.1351 and −279.1 °C, read −279.3, extreme lines pass every ±0.3 ml range (−264.5 / −294.4), 1.646 mmol, point 1.68 mmol, shift 11 K; s4 6.0 % (below Carnot 8.3 %); s5 25.45 g/mol, 17.2 with 311 kPa; s6 11.21 / 18.69 / 37.4 kPa, safety 5.35 / 3.21 / 1.60; s7 37.2 %, 2700 MW, 64.8 GWh, 2.33·10¹⁴ J, 11.3 K (Carnot 49.7 % > 37 %); s8 0.0602 mol, 40 %, 63.3 kPa; s9 750 J, 0.1026 mol, 1172.6 K. All agree.
+- Every choice item has exactly one correct option, and the distractor feedback is right. The rubric points add up, the criteria match the solutions, s6 force diagrams pass the force-diagram checklist, the scope stays within FY3/FY4, and no data is presented as measured without a source.
