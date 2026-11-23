@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: a65b3da0c07dac65
-SCOPE: delta added-exercise from abbe309450785620 base 8f23aa7ae3bd
+CONTENT-HASH: 8c9f1e66f8a4dcab
+SCOPE: delta caption-label,md-paragraphs,numbers,reflow,typography,wording from a65b3da0c07dac65 base b5600a6
 
 ## Blocking
 - none
@@ -9,11 +9,11 @@ SCOPE: delta added-exercise from abbe309450785620 base 8f23aa7ae3bd
 - none
 
 ## Checked
-- fy6-8-L2-09 recomputed: R_s = (11 V − 7 V) : (250 A − 50 A) = 0.020 Ω; answers.py and exercises.json agree; unit Ω, tolerance 0.04.
-- Figure fy6-8/ex-graph-car (figures.py): points U = 12 − 0.02 I at 50…250 A give 11, 10, 9, 8, 7 V, all on the 50 A / 1 V gridlines; the line is drawn only over the data, so neither E nor I_k nor the slope is given away; the description lists the same points.
-- Model U = E − R_s I is the lesson's model (answers.py header); the solution derives R_s from two points by subtracting the equations, symbolically before numbers, and says why U : I at one point is the load resistance, not R_s.
-- The task says the points are calculated from a model, so no invented data is presented as measured (guardrail: say whether data are measured, simulated or calculated).
-- Magnitudes: E = 12 V and R_s = 20 mΩ are realistic for a car starter battery; currents of hundreds of amperes fit the starter motor.
-- Reasonableness checks are real: a third point (150 A; 9 V) gives the same slope; E = 11 V + 0.020 Ω · 50 A = 12 V.
-- Inside FY6 central contents (batteries; internal resistance of a source, the experimental work named in LOPS).
-- Recomputed in one script together with fy6-1, -2, -3, -4, -6, -7; content hash checked at start and end.
+- Every new Formula block starts from the terminal-voltage law U = E − R_sI or the loop (voltage) law E − R_sI − RI = 0 and derives the asked form; each row is a correct equation.
+- Short circuit: 0 = E − R_sI_k → I_k = E/R_s; correct.
+- n identical cells in parallel: 1/R_s = n/R_s1 → R_s1/n; two in parallel with I = I1 + I1 → I1 = I/2 (current law); correct for identical cells.
+- Series cells: E = 2E1, R_s = 2R_s1; one reversed: E = E1, R_s = 3R_s1; correct.
+- Two-point fits: subtracting the two U equations gives R_s = (U1 − U2)/(I2 − I1); ΔU = −R_sΔI; the battery-crossing task U_A = U_B → I = (E_A − E_B)/(R_A − R_B); wire task slope −(R_s + R_j); all correct.
+- Recomputed: R_A 0.50 Ω, R_B 0.22 Ω, crossing ≈ 0.39 A ≈ 0.4 A, 3.91 V with wires, aged-battery powers 0.47/0.53/0.47/0.34 W; numbers in the diff unchanged.
+- Paragraph splits in Principle, Model answer and Reasonableness change no physics or reasoning order.
+- Content hash checked at start and end.
