@@ -3,39 +3,7 @@
 > **Tutkimuskysymys:** Miten rataa alas laskevan leikkiauton nopeus riippuu lähtökorkeudesta, ja vastaavatko mittaukset energiaperiaatteeseen perustuvaa mallia?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: leikkiauto on kaltevan radan yläpäässä. Auton paikka on piirretty tasaisin aikavälein: rinteessä välit kasvavat, kun auton vauhti kasvaa. Radan alapäässä on vaakasuora osa, jolla auto kulkee valoportin läpi. Valoportti on kytketty pöydällä olevaan tietokoneeseen. Radan päässä on pysäytin." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy10lh-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#dfe9ef"/></linearGradient><linearGradient id="fy10lh-desk" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e9c98a"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
-  <rect x="0" y="0" width="1200" height="600" fill="url(#fy10lh-wall)"/>
-  <rect x="0" y="470" width="1200" height="130" fill="url(#fy10lh-desk)"/>
-  <line x1="0" y1="492" x2="1200" y2="488" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="514" x2="1200" y2="510" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="536" x2="1200" y2="532" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="558" x2="1200" y2="554" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="580" x2="1200" y2="576" stroke="#a97a35" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="0" y1="470" x2="1200" y2="470" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="30" y="426" width="150" height="44" rx="4" fill="#a9d1f0" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="34" y="382" width="150" height="44" rx="4" fill="#f2a69c" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="30" y="338" width="150" height="44" rx="4" fill="#b2f2bb" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="34" y="294" width="150" height="44" rx="4" fill="#ffe8a3" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="30" y="250" width="150" height="44" rx="4" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="34" y="206" width="150" height="44" rx="4" fill="#a9d1f0" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M70,196 L690,440 H1150 V454 H694 L100,222 L70,210 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <rect x="1150" y="410" width="22" height="44" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="750" y="454" width="20" height="16" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <rect x="990" y="454" width="20" height="16" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <g transform="translate(135,221.5) rotate(21.48)" opacity="1.0"><rect x="-6" y="-74" width="12" height="26" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><path d="M-26,-34 L-16,-50 H20 L30,-34 Z" fill="#dbe4ea" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/><rect x="-46" y="-36" width="92" height="22" rx="6" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/><circle cx="-28" cy="-10" r="10" fill="#1f2933"/><circle cx="-28" cy="-10" r="4" fill="#c4ccd4"/><circle cx="28" cy="-10" r="10" fill="#1f2933"/><circle cx="28" cy="-10" r="4" fill="#c4ccd4"/></g>
-  <g transform="translate(159.5,231.5) rotate(21.48)" opacity="0.35"><rect x="-6" y="-74" width="12" height="26" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><path d="M-26,-34 L-16,-50 H20 L30,-34 Z" fill="#dbe4ea" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/><rect x="-46" y="-36" width="92" height="22" rx="6" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/><circle cx="-28" cy="-10" r="10" fill="#1f2933"/><circle cx="-28" cy="-10" r="4" fill="#c4ccd4"/><circle cx="28" cy="-10" r="10" fill="#1f2933"/><circle cx="28" cy="-10" r="4" fill="#c4ccd4"/></g>
-  <g transform="translate(233.5,260.5) rotate(21.48)" opacity="0.35"><rect x="-6" y="-74" width="12" height="26" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><path d="M-26,-34 L-16,-50 H20 L30,-34 Z" fill="#dbe4ea" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/><rect x="-46" y="-36" width="92" height="22" rx="6" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/><circle cx="-28" cy="-10" r="10" fill="#1f2933"/><circle cx="-28" cy="-10" r="4" fill="#c4ccd4"/><circle cx="28" cy="-10" r="10" fill="#1f2933"/><circle cx="28" cy="-10" r="4" fill="#c4ccd4"/></g>
-  <g transform="translate(356.5,308.5) rotate(21.48)" opacity="0.35"><rect x="-6" y="-74" width="12" height="26" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><path d="M-26,-34 L-16,-50 H20 L30,-34 Z" fill="#dbe4ea" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/><rect x="-46" y="-36" width="92" height="22" rx="6" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/><circle cx="-28" cy="-10" r="10" fill="#1f2933"/><circle cx="-28" cy="-10" r="4" fill="#c4ccd4"/><circle cx="28" cy="-10" r="10" fill="#1f2933"/><circle cx="28" cy="-10" r="4" fill="#c4ccd4"/></g>
-  <g transform="translate(528.5,376.5) rotate(21.48)" opacity="0.35"><rect x="-6" y="-74" width="12" height="26" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><path d="M-26,-34 L-16,-50 H20 L30,-34 Z" fill="#dbe4ea" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/><rect x="-46" y="-36" width="92" height="22" rx="6" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/><circle cx="-28" cy="-10" r="10" fill="#1f2933"/><circle cx="-28" cy="-10" r="4" fill="#c4ccd4"/><circle cx="28" cy="-10" r="10" fill="#1f2933"/><circle cx="28" cy="-10" r="4" fill="#c4ccd4"/></g>
-  <g transform="translate(753,440) rotate(0.00)" opacity="0.35"><rect x="-6" y="-74" width="12" height="26" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><path d="M-26,-34 L-16,-50 H20 L30,-34 Z" fill="#dbe4ea" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/><rect x="-46" y="-36" width="92" height="22" rx="6" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/><circle cx="-28" cy="-10" r="10" fill="#1f2933"/><circle cx="-28" cy="-10" r="4" fill="#c4ccd4"/><circle cx="28" cy="-10" r="10" fill="#1f2933"/><circle cx="28" cy="-10" r="4" fill="#c4ccd4"/></g>
-  <rect x="999" y="368" width="10" height="72" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="991" y="360" width="26" height="30" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="1004" cy="378" r="3.5" fill="#ffffff"/>
-  <g transform="translate(1004,440) rotate(0.00)" opacity="1.0"><rect x="-6" y="-74" width="12" height="26" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><path d="M-26,-34 L-16,-50 H20 L30,-34 Z" fill="#dbe4ea" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/><rect x="-46" y="-36" width="92" height="22" rx="6" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/><circle cx="-28" cy="-10" r="10" fill="#1f2933"/><circle cx="-28" cy="-10" r="4" fill="#c4ccd4"/><circle cx="28" cy="-10" r="10" fill="#1f2933"/><circle cx="28" cy="-10" r="4" fill="#c4ccd4"/></g>
-  <path d="M1017,370 C1094,370 1110,450 1090,488" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <rect x="1020" y="488" width="140" height="80" rx="6" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="1030" y="498" width="120" height="60" rx="3" fill="#d0e6fb" stroke="#1f2933" stroke-width="2"/>
-  <path d="M1010,568 H1170 L1160,580 H1020 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <image href="pics/fy10/fy10-leikkiauto-hero.webp" x="0" y="0" width="1200" height="600" preserveAspectRatio="none"/>
 </svg>
 
 Mäenlaskija, vuoristoradan vaunu ja leikkiauto saavat vauhtinsa samasta lähteestä: korkeuserosta. Tässä tutkimuksessa et aloita mittaamisesta vaan ennusteesta. Muotoilet ensin energiaperiaatteen avulla hypoteesin ja mallin siitä, miten auton nopeus riippuu lähtökorkeudesta, ja testaat mallin sitten mittaamalla. Mittaa, piirrä ja päättele itse: tämä sivu kertoo, mitä tutkitaan, ja tukee sinua niin paljon kuin valitsemasi työtapa lupaa.
@@ -77,22 +45,8 @@ Auto päästetään liikkeelle levosta. Kun se laskee rataa alas, sen potentiaal
 Tarkista kirjauksesi tästä. Merkitään **lähtökorkeutta** $h$: se on auton tietyn kohdan, esimerkiksi auton kylkeen tehdyn merkin, pystysuora korkeusero lähtökohdan ja valoportin kohdan välillä. Auton nopeus valoportin kohdalla on $v$.
 
 <svg data-fig="setup" viewBox="0 0 600 380" role="img" aria-label="Kaaviokuva. Vasemmalla ylhäällä leikkiauto on levossa kaltevan radan yläpäässä. Autossa on merkki. Rata jatkuu alhaalla vaakasuorana, ja sen kohdalla on valoportti, jonka läpi auto kulkee. Korkeus h on auton merkin pystysuora korkeusero lähtökohdan ja valoportin välillä. Auton katolla oleva liuska katkaisee valoportin säteen. Liuskan leveys on L." style="max-width:100%;font-size:24px">
-  <path d="M40,120 L300,300 H470 V310 H303 L40,132 Z" fill="#c4ccd4" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <rect x="470" y="278" width="14" height="32" rx="2" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
-  <g transform="translate(77,145.5) rotate(34.70)" opacity="1.0"><rect x="-9" y="-55.5" width="18" height="19.5" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><path d="M-19.5,-25.5 L-12,-37.5 H15 L22.5,-25.5 Z" fill="#dbe4ea" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/><rect x="-34.5" y="-27" width="69" height="16.5" rx="4.5" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/><circle cx="-21" cy="-7.5" r="7.5" fill="#1f2933"/><circle cx="-21" cy="-7.5" r="3" fill="#c4ccd4"/><circle cx="21" cy="-7.5" r="7.5" fill="#1f2933"/><circle cx="21" cy="-7.5" r="3" fill="#c4ccd4"/><circle cx="0" cy="-19" r="4" fill="#ffffff" stroke="#1f2933" stroke-width="2"/></g>
-  <rect x="375" y="243.5" width="10" height="56.5" fill="#8a96a3" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="369" y="235.5" width="22" height="30" rx="4" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="380" cy="253.5" r="3.5" fill="#ffffff"/>
-  <g transform="translate(380,300) rotate(0.00)" opacity="1.0"><rect x="-9" y="-55.5" width="18" height="19.5" fill="#ffffff" stroke="#1f2933" stroke-width="2"/><path d="M-19.5,-25.5 L-12,-37.5 H15 L22.5,-25.5 Z" fill="#dbe4ea" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/><rect x="-34.5" y="-27" width="69" height="16.5" rx="4.5" fill="#ffc078" stroke="#1f2933" stroke-width="2.5"/><circle cx="-21" cy="-7.5" r="7.5" fill="#1f2933"/><circle cx="-21" cy="-7.5" r="3" fill="#c4ccd4"/><circle cx="21" cy="-7.5" r="7.5" fill="#1f2933"/><circle cx="21" cy="-7.5" r="3" fill="#c4ccd4"/><circle cx="0" cy="-19" r="4" fill="#ffffff" stroke="#1f2933" stroke-width="2"/></g>
-  <line x1="95.5" y1="130" x2="555" y2="130" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
-  <line x1="388" y1="281" x2="555" y2="281" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4"/>
-  <line x1="545" y1="130" x2="545" y2="281" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="535" y1="130" x2="555" y2="130" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="535" y1="281" x2="555" y2="281" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <image href="pics/fy10/fy10-leikkiauto-setup.webp" x="0" y="-1.2" width="600" height="386.2" preserveAspectRatio="none"/>
   <foreignObject x="513" y="191" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$h$</div></foreignObject>
-  <line x1="371" y1="206.5" x2="371" y2="240.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="389" y1="206.5" x2="389" y2="240.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="371" y1="214.5" x2="389" y2="214.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="345" y="200" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$L$</div></foreignObject>
   <foreignObject x="313.5" y="331.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{valoportti}$</div></foreignObject>
   <foreignObject x="57" y="51" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{lähtö levosta}$</div></foreignObject>

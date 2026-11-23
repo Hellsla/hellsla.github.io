@@ -78,28 +78,14 @@ Voimalevy mittaa vain voimaa ja aikaa, mutta tutkimuskysymyksessä kysytään no
 Hyppääjään vaikuttaa kaksi voimaa: alaspäin paino $\overline{G}$ ja ylöspäin levyn tukivoima $\overline{N}$. Hyppääjä painaa levyä yhtä suurella voimalla kuin levy tukee häntä (Newtonin III laki), joten levy mittaa tukivoiman suuruuden $N$. Kun hyppääjä seisoo levossa, voimat kumoavat toisensa. Kun ne eivät kumoa toisiaan, kokonaisvoima muuttaa hyppääjän nopeutta Newtonin toisen lain mukaisesti. [[apua:fy4-4|Newtonin toinen laki]]
 
 <svg data-fig="forces" viewBox="0 0 600 340" role="img" aria-label="Kaksi voimakuviota, hyppääjä suorakulmiona. Vasemmalla hyppääjä seisoo levossa voimalevyllä: paino G osoittaa keskipisteestä alas ja levyn tukivoima N alapinnasta ylös, ja nuolet ovat yhtä pitkät. Oikealla hyppääjä ponnistaa: tukivoima N on pidempi kuin paino G, ja hyppääjän vieressä oleva oranssi nuoli a näyttää kiihtyvyyden ylöspäin." style="max-width:100%;font-size:24px">
-  <rect x="60" y="270" width="200" height="12" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <image href="pics/fy10/fy10-hyppy-forces.webp" x="1.2" y="0" width="597" height="345.8" preserveAspectRatio="none"/>
   <foreignObject x="112.5" y="11.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{levossa}$</div></foreignObject>
-  <rect x="125" y="110" width="70" height="160" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="160" y1="190" x2="160" y2="248" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M160,265 L152,247 L168,247 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="119.5" y="240.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="182" y1="270" x2="182" y2="212" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M182,195 L190,213 L174,213 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="195.5" y="192.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
-  <rect x="340" y="270" width="200" height="12" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
+  <foreignObject x="103.5" y="240.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
+  <foreignObject x="201.5" y="192.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
   <foreignObject x="323.5" y="11.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{ponnistuksen aikana}$</div></foreignObject>
-  <rect x="405" y="110" width="70" height="160" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="440" y1="190" x2="440" y2="248" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M440,265 L432,247 L448,247 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="399.5" y="240.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="462" y1="270" x2="462" y2="152" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M462,135 L470,153 L454,153 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="385.5" y="240.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
   <foreignObject x="475.5" y="132.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
-  <line x1="520" y1="220" x2="520" y2="158" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M526.5,169 L520,156 L513.5,169" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="521.5" y="149.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
-  <line x1="300" y1="14" x2="300" y2="326" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
 </svg>
 
 Kokonaisvoiman vaikutusta ajan kuluessa kuvaa **impulssi**, ja impulssiperiaatteen mukaan kokonaisvoiman impulssi on yhtä suuri kuin liikemäärän muutos. Kun voima muuttuu koko ajan, impulssi on voima–aika-kuvaajan ja aika-akselin väliin jäävä pinta-ala. [[apua:fy4-9|Impulssi ja voima–aika-kuvaajan pinta-ala]]

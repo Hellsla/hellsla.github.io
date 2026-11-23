@@ -83,22 +83,11 @@ F_\mu = \mu N
 missä $\mu$ on liukukitkakerroin. Kerroin on yksikötön. Malli olettaa, että jarru painuu rataa vasten koko vaunun painolla. Jos pyörät kantavat osan painosta ja jarrua painaa esimerkiksi jousi, mittaamasi luku on kitkavoiman ja painon suhde, joka kuvaa koko vaunun jarrutusta, eikä pelkästään jarrun ja radan pintojen kitkakerroin. [[apua:fy4-6|Kitka ja kitkakerroin]]
 
 <svg data-fig="forces" viewBox="0 0 600 330" role="img" aria-label="Voimakuvio: radalla oikealle liukuva ja hidastuva vaunu suorakulmiona. Paino G osoittaa keskipisteestä alas. Radan tukivoima N osoittaa alapinnasta ylös, ja se on yhtä pitkä kuin paino. Liukukitka F myy osoittaa alapinnan takakulmasta vasemmalle eli liikettä vastaan, ja se on paljon lyhyempi kuin paino. Kappaleen yläpuolella sininen nopeusnuoli v osoittaa oikealle ja oranssi kiihtyvyysnuoli a vasemmalle." style="max-width:100%;font-size:24px">
-  <line x1="150" y1="192" x2="510" y2="192" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <rect x="265" y="128" width="130" height="64" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="330" y1="160" x2="330" y2="246" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M330,263 L322,245 L338,245 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <image href="pics/fy10/fy10-liukukitka-forces.webp" x="8.7" y="11.2" width="597" height="335.8" preserveAspectRatio="none"/>
   <foreignObject x="337.5" y="242.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}$</div></foreignObject>
-  <line x1="364" y1="192" x2="364" y2="106" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M364,89 L372,107 L356,107 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="371.5" y="82.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}$</div></foreignObject>
-  <line x1="265" y1="192" x2="251" y2="192" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
-  <path d="M234,192 L252,184 L252,200 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="205.5" y="199.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_{\mu}$</div></foreignObject>
-  <line x1="417" y1="124" x2="485" y2="124" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M474,130.5 L487,124 L474,117.5" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="492.5" y="105.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}$</div></foreignObject>
-  <line x1="243" y1="124" x2="195" y2="124" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M206,117.5 L193,124 L206,130.5" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="154.5" y="105.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
 </svg>
 
@@ -108,25 +97,12 @@ Paino ja tukivoima ovat kohtisuorassa liikettä vastaan, joten ne eivät tee ty�
 Tarkista kirjauksesi tästä. Jarrutus alkaa hetkestä, jolloin käsi on irronnut vaunusta. Silloin vaunun nopeus on **alkunopeus** $v_0$, ja siitä kohdasta pysähtymiskohtaan vaunu kulkee **pysähtymismatkan** $s$. Molemmat luetaan liikeanturin tuloksista: $v_0$ nopeuden kuvaajasta ja $s$ paikan kuvaajasta, aina vaunun samasta kohdasta mitattuna.
 
 <svg data-fig="setup" viewBox="0 0 600 320" role="img" aria-label="Kaaviokuva. Vaakasuoran vaunuradan vasemmassa päässä on liikeanturi. Vaunu on piirretty kahteen kohtaan. Vasemmalla, himmeämpänä, vaunu on kohdassa, jossa työntö on loppunut ja vaunun nopeus on alkunopeus v nolla, oikealle. Oikealla vaunu on pysähtynyt. Kohtien välinen matka, mitattuna vaunun samasta kohdasta, on pysähtymismatka s. Vaunun jarru painuu radan pintaa vasten." style="max-width:100%;font-size:24px">
-  <rect x="20" y="210" width="560" height="12" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="26" y="161.5" width="39.5" height="48.5" rx="5" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
-  <circle cx="63.5" cy="185.5" r="13.5" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="63.5" cy="185.5" r="6.3" fill="#1f2933"/>
+  <image href="pics/fy10/fy10-liukukitka-setup.webp" x="-1.3" y="7.5" width="603" height="330.4" preserveAspectRatio="none"/>
   <foreignObject x="22" y="237.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$\text{liikeanturi}$</div></foreignObject>
-  <g opacity="0.45"><rect x="130" y="142" width="110" height="46" rx="6" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/><rect x="142" y="152" width="86" height="24" rx="3" fill="#ffffff" stroke="#1971c2" stroke-width="1.5" opacity="0.7"/><rect x="171" y="186" width="28" height="24" rx="2" fill="#495057" stroke="#1f2933" stroke-width="1.5"/><circle cx="152" cy="197" r="13" fill="#1f2933"/><circle cx="152" cy="197" r="6" fill="#c4ccd4"/><circle cx="218" cy="197" r="13" fill="#1f2933"/><circle cx="218" cy="197" r="6" fill="#c4ccd4"/></g>
-  <g opacity="1.0"><rect x="400" y="142" width="110" height="46" rx="6" fill="#d0e6fb" stroke="#1f2933" stroke-width="2.5"/><rect x="412" y="152" width="86" height="24" rx="3" fill="#ffffff" stroke="#1971c2" stroke-width="1.5" opacity="0.7"/><rect x="441" y="186" width="28" height="24" rx="2" fill="#495057" stroke="#1f2933" stroke-width="1.5"/><circle cx="422" cy="197" r="13" fill="#1f2933"/><circle cx="422" cy="197" r="6" fill="#c4ccd4"/><circle cx="488" cy="197" r="13" fill="#1f2933"/><circle cx="488" cy="197" r="6" fill="#c4ccd4"/></g>
-  <line x1="150" y1="110" x2="228" y2="110" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M217,116.5 L230,110 L217,103.5" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="229.5" y="95.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\overline{v}_0$</div></foreignObject>
   <foreignObject x="432.5" y="95.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$v = 0$</div></foreignObject>
-  <line x1="240" y1="146" x2="240" y2="282" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
-  <line x1="510" y1="146" x2="510" y2="282" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 4"/>
-  <line x1="240" y1="276" x2="510" y2="276" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="240" y1="266" x2="240" y2="286" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <line x1="510" y1="266" x2="510" y2="286" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="365" y="283.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$s$</div></foreignObject>
   <foreignObject x="420" y="229.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{jarru}$</div></foreignObject>
-  <line x1="455" y1="232" x2="455" y2="223" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
 </svg>
 
 Kitkavoima on vakio ja liikettä vastaan, joten se tekee matkalla $s$ työn $W = -F_\mu s = -\mu m g s$. Liike-energia muuttuu arvosta $\tfrac{1}{2}mv_0^2$ nollaan. Energiaperiaatteesta saadaan

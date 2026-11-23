@@ -102,7 +102,7 @@ def setup():
     f.arrow(30, 232, 110, 232, MUTED, 2.5, 12); f.tex(70, 258, r"\text{anturi 1: }+", "start", MUTED, size=20)
     f.arrow(570, 232, 490, 232, MUTED, 2.5, 12); f.tex(530, 258, r"\text{anturi 2: }+", "end", MUTED, size=20)
     # the chosen positive direction
-    f.arrow(230, 300, 370, 300, INK, 3, 14); f.tex(222, 300, r"\text{positiivinen suunta}", "end", INK, size=20)
+    f.arrow(230, 300, 370, 300, INK, 3, 14); f.tex(222, 300, r"\text{positiivinen suunta}", "end", INK, size=20, w=170)
     f.tex(378, 300, r"+", "start")
     return f.svg()
 
