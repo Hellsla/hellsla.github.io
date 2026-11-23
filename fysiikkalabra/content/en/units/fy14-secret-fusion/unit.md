@@ -38,12 +38,6 @@ A fusion fuel must be heated to many millions of degrees, so it becomes a **plas
 
 In a **pinch**, a strong current flows through the plasma itself. The current makes a magnetic field that circles around it, and the magnetic force on the moving charges squeezes the plasma towards the axis. In a **Z-pinch** the current flows along the plasma column. In a **theta pinch** a current in an outer coil flows *around* the column, and the field along the axis squeezes it. British teams at Harwell and Aldermaston built ring-shaped pinches, and James Tuck at Los Alamos built one he called the *Perhapsatron*. The squeezed column was unstable: it bent sideways (the **kink instability**) or narrowed in places like a chain of sausages (the **sausage instability**) and touched the wall in a tiny fraction of a second.
 
-```pysahdy
-In a Z-pinch the current flows along the plasma column. Why does this squeeze the plasma towards the axis?
----
-The current produces a magnetic field that circles around the column. The magnetic force on the moving charges is directed towards the axis.
-```
-
 <svg data-fig="pinch" viewBox="0 0 600 500" role="img" aria-label="Diagram of two kinds of pinch. Top, the Z-pinch: a horizontal pink plasma column with a violet arrow for the current I flowing along it, from left to right. Above the column the magnetic field B points out of the page (green circles with a dot), below it into the page (green circles with a cross): the field circles the current. Red arrows above and below the column point inwards, towards its axis: the magnetic force F squeezes the plasma. Bottom, the theta pinch: the same kind of column inside a glass tube, wound with a violet coil whose turns carry the current I around the column (an arrowhead on the front of the last turn shows it flowing down). A green arrow along the axis shows the magnetic field B pointing along the column, and red arrows again point inwards." style="max-width:100%;font-size:24px">
   <image href="pics/fy14/fy14-secret-fusion-pinch.webp" x="0" y="0" width="600" height="505" preserveAspectRatio="none"/>
   <foreignObject x="14" y="9.5" width="370" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{Z-pinch: current along the plasma}$</div></foreignObject>
@@ -56,6 +50,19 @@ The current produces a magnetic field that circles around the column. The magnet
   <foreignObject x="562" y="403.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\overline{B}$</div></foreignObject>
   <foreignObject x="117.5" y="321.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
 </svg>
+
+<svg data-fig="neutrons" viewBox="0 0 600 380" role="img" aria-label="Diagram comparing two possible sources of neutrons. Left, a hot plasma: a round orange cloud with twelve dark arrows of equal length pointing out in all directions, labelled fusion in a hot plasma. Right, fast ions: a round cloud with a few long arrows pointing to the right and only short arrows in other directions, labelled a few accelerated ions." style="max-width:100%;font-size:24px">
+  <image href="pics/fy14/fy14-secret-fusion-neutrons.webp" x="1.2" y="-2.5" width="600" height="388.8" preserveAspectRatio="none"/>
+  <foreignObject x="2" y="284.5" width="296" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{fusion in a hot plasma}$</div></foreignObject>
+  <foreignObject x="302" y="284.5" width="296" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{a few accelerated ions}$</div></foreignObject>
+  <foreignObject x="10" y="334.5" width="580" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{Arrows show where neutrons fly.}$</div></foreignObject>
+</svg>
+
+```pysahdy
+In a Z-pinch the current flows along the plasma column. Why does this squeeze the plasma towards the axis?
+---
+The current produces a magnetic field that circles around the column. The magnetic force on the moving charges is directed towards the axis.
+```
 
 In 1951 **Lyman Spitzer**, a Princeton astronomer, read about Richter's claim and doubted it. He then designed a different magnetic bottle, the **stellarator**: a tube bent into a figure-eight, so that the slow sideways drift of the particles in one half of the loop cancels the drift in the other half. The Atomic Energy Commission gave him 50,000 dollars, and his secret Project Matterhorn later became the Princeton Plasma Physics Laboratory. Its first small machine, Model A, ran in 1953. In Moscow, Tamm and Sakharov's ring became the **tokamak**, a ring with both a strong magnetic field from outside coils and a current in the plasma. The first true tokamak, T-1, started at the end of 1958.
 
@@ -72,13 +79,6 @@ In a really hot plasma the fusion neutrons fly out equally in every direction. W
 ---
 Random thermal motion of hot ions has no preferred direction. Neutrons flying mostly one way show that they came from a few ions accelerated by electric fields, not from a hot plasma.
 ```
-
-<svg data-fig="neutrons" viewBox="0 0 600 380" role="img" aria-label="Diagram comparing two possible sources of neutrons. Left, a hot plasma: a round orange cloud with twelve dark arrows of equal length pointing out in all directions, labelled fusion in a hot plasma. Right, fast ions: a round cloud with a few long arrows pointing to the right and only short arrows in other directions, labelled a few accelerated ions." style="max-width:100%;font-size:24px">
-  <image href="pics/fy14/fy14-secret-fusion-neutrons.webp" x="1.2" y="-2.5" width="600" height="388.8" preserveAspectRatio="none"/>
-  <foreignObject x="2" y="284.5" width="296" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{fusion in a hot plasma}$</div></foreignObject>
-  <foreignObject x="302" y="284.5" width="296" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{a few accelerated ions}$</div></foreignObject>
-  <foreignObject x="10" y="334.5" width="580" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$\text{Arrows show where neutrons fly.}$</div></foreignObject>
-</svg>
 
 ## Geneva 1958: the doors open {Geneva}
 

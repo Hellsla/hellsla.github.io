@@ -3358,12 +3358,6 @@ Each electron arrives at one single point, like a particle. But where it arrives
 
 Roll a ball towards a hill. If its kinetic energy is less than the energy needed to reach the top, it always rolls back. In classical physics the region beyond the hill is simply forbidden. A small particle such as an electron behaves differently. Its wave does not stop at the edge of an **energy barrier**: inside the barrier the wave shrinks quickly, and if the barrier is thin, a small wave comes out on the other side. So the particle has a chance of appearing beyond the barrier. This is **quantum tunnelling**.
 
-```pysahdy
-A ball with too little energy always rolls back from a hill. Why can an electron sometimes appear on the far side of a thin energy barrier?
----
-The electron's wave does not stop at the edge of the barrier but shrinks inside it. If the barrier is thin, a small wave comes out on the other side, so there is a small probability of finding the electron there.
-```
-
 <svg data-fig="barrier" viewBox="0 0 600 340" role="img" aria-label="Schematic drawing, not to scale. A grey rectangle in the middle is an energy barrier whose top is higher than the particle&#x27;s energy, shown as a dashed line. On the left, a blue wave of large amplitude moves towards the barrier. Inside the barrier the wave does not oscillate but shrinks smoothly. On the right of the barrier a wave with the same wavelength but a much smaller amplitude continues. The square of the amplitude tells the probability of finding the particle." style="max-width:100%;font-size:24px">
   <rect x="260" y="70" width="80" height="230" fill="#c4ccd4" stroke="#1f2933" stroke-width="2"/>
   <line x1="30" y1="300" x2="570" y2="300" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -3376,6 +3370,12 @@ The electron's wave does not stop at the edge of the barrier but shrinks inside 
   <foreignObject x="387.5" y="305.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\text{transmitted}$</div></foreignObject>
   <foreignObject x="450" y="9.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{schematic}$</div></foreignObject>
 </svg>
+
+```pysahdy
+A ball with too little energy always rolls back from a hill. Why can an electron sometimes appear on the far side of a thin energy barrier?
+---
+The electron's wave does not stop at the edge of the barrier but shrinks inside it. If the barrier is thin, a small wave comes out on the other side, so there is a small probability of finding the electron there.
+```
 
 How large is the chance? The table gives approximate model values for an electron whose energy is $1\ \text{eV}$ below the top of a barrier, for different barrier widths.
 
