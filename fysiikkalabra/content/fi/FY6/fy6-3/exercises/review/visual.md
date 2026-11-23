@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 2f87f01cc86392ef
+CONTENT-HASH: 58ff29a1ecb104bc
+SCOPE: delta — Kaava step now an aligned principle-equation chain
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L3-05 Sijoitus — the chain-length inline formulas set as separate boxes (R40 loose between boxes) split the sentence "Resistanssit ovat …" into fragments; existing shared layout behaviour, not for this change.
+(none)
 
 ## Checked
-- Delta (md-paragraphs, round 2): diff of solutions.md (L3-05: Sijoitus paragraph joined, break now before "(1)"; "Virhelähteet:" leads straight into the list).
-- Opened fy6-3-open-exercises-L3-1280-7 (and -8, the card's end) at 1280 px: spacing even, nothing clipped. No 390 px exercise captures; the 360 px check is green.
+- Opened fy6-3-open-exercises-L3-1280-3, -5, -7, -8 and L2-1280-10, -11 (the 3-21 Kaava, the graph task's Kohta b) display block between words, the proportionality task): aligned rows read cleanly, nothing clipped.
+- Captures are in content/fi/FY6/fy6-3/review/shots/ (the packet's relative path did not resolve under exercises/review/).
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

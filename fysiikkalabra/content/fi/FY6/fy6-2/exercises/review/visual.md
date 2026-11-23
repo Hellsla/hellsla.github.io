@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 72d92aa74fd113f6
+CONTENT-HASH: f57c156658def7ed
+SCOPE: delta — Kaava step now an aligned principle-equation chain; multimeter-task figure and caption marker change
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions, Sijoitus step with a bare "c)" (fy6-2 L2) / "b)" (fy6-4 L2) label alone on its line above a calculation box: the part letter reads orphaned; give it a short lead-in ("c) Virheraja on") as in the neighbouring parts.
+(none)
 
 ## Checked
-- Delta (md-paragraphs): the diff of solutions.md; every added one-line paragraph checked (no one-word or mid-thought orphans).
-- Opened open-exercises captures at 1280 px (lesson review/shots, stamp matches this exercises hash): fy6-1 L1-5 and L2-8, fy6-2 L2-8, fy6-3 L2-9, fy6-4 L2-9. Paragraph spacing inside solution cards is even, nothing clipped. No 390 px exercise captures exist; the 360 px layout check is green.
+- Opened fy6-2-open-exercises-L3-1280-3, -6, -7, -8 (2-21, 2-22, 2-23 and the ten-row Kaava of the voltmeter-load task) and fy6-2-fig-5-390: long aligned chains fit the column, nested fractions legible, nothing clipped.
+- Captures are in content/fi/FY6/fy6-2/review/shots/ (the packet's relative path did not resolve under exercises/review/).
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 90b7189d78510f1a
+CONTENT-HASH: 295c391cac8e837b
+SCOPE: delta — Kaava step now an aligned principle-equation chain; figure kaavio-malli unchanged in look
 
 ## Blocking
 (none)
@@ -8,8 +9,8 @@ CONTENT-HASH: 90b7189d78510f1a
 (none)
 
 ## Checked
-- Delta (md-paragraphs, round 2): diff of solutions.md; breaks now sit before the part labels a), b), c) in L2-06 and L2-07 (the mid-part breaks are gone).
-- Opened fy6-1-open-exercises-L2-1280-8 and -9 (L2-07 and the next task, open solutions) and L3-1280-5, -6 at 1280 px: paragraph spacing even, formulas intact, nothing clipped. No 390 px exercise captures; the 360 px layout check is green.
+- Opened fy6-1-open-exercises-1280-1, L3-1280-4, -5, -6, -7 (1-2, 1-21, 1-22: two-, seven- and five-row Kaava blocks) and fy6-1-fig-5-390: rows aligned at =, fractions legible, nothing clipped, Sijoitus chains intact.
+- Captures are in content/fi/FY6/fy6-1/review/shots/ (the packet's relative path did not resolve under exercises/review/).
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4
