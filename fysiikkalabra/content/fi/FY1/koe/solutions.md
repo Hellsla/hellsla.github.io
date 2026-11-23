@@ -469,7 +469,9 @@ Mitataan useita eri arkkimääriä, piirretään $(N, d)$-kuvaaja ja määritet�
 **Kysytty:** yhden arkin paksuus mikrometreinä ja sen epävarmuus
 **Periaate:** Suoran kulmakerroin on paksuuden lisäys arkkia kohti. Pinon paksuuden epävarmuus jakautuu kaikille arkeille.
 **Kuvaajan lukeminen:** Suoralta luetaan origo ja piste $(500;\ 51\,\text{mm})$.
-**Kaava:** $$\begin{aligned} d_1 &= \dfrac{d - 0}{N - 0} = \dfrac{d}{N} \\ \Delta d_1 &= \dfrac{\Delta d}{N},\ \Delta d \text{ on lukeman epävarmuus} \end{aligned}$$
+**Kaava:** $$\begin{aligned} d_1 &= \dfrac{d - 0}{N - 0} \\ &= \dfrac{d}{N} \\ \Delta d_1 &= \dfrac{\Delta d}{N} \end{aligned}$$
+
+Tässä $\Delta d$ on lukeman epävarmuus.
 **Muunnokset:** $1\,\text{mm} = 1000\,\mu\text{m}$
 **Sijoitus:** $d_1 = \dfrac{51\,\text{mm} - 0\,\text{mm}}{500 - 0} = 0{,}102\,\text{mm} = 0{,}102 \cdot 1000\,\mu\text{m} = 102\,\mu\text{m}$ ja $\Delta d_1 = \dfrac{1\,\text{mm}}{500} = 0{,}002\,\text{mm} = 2\,\mu\text{m}$
 **Vastaus:** Yhden arkin paksuus on $d_1 = (102 \pm 2)\,\mu\text{m}$, kun annettu lukeman epävarmuus $1\,\text{mm}$ jaetaan $500$ arkilla.
