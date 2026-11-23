@@ -2,7 +2,7 @@
 **Given:** speed $v = 5.5\,\text{m/s}$, time $t = 20\,\text{s}$
 **Find:** distance travelled $\Delta s$ in metres
 **Principle:** The speed is constant, so the motion is uniform, and the distance is directly proportional to time.
-**Formula:** $\Delta s = vt$
+**Formula:** $$\begin{aligned} v &= \dfrac{\Delta s}{t} \\ \Delta s &= vt \end{aligned}$$
 **Conversions:** None needed: the speed is in m/s and the time in seconds, so the product is in metres.
 **Substitution:** $\Delta s = 5.5\,\tfrac{\text{m}}{\text{s}} \cdot 20\,\text{s} = 110\,\text{m}$
 **Answer:** $110\,\text{m}$, two significant figures as in the speed $5.5\,\text{m/s}$.
@@ -12,7 +12,7 @@
 **Given:** distance $\Delta s = 360\,\text{m}$, time $t = 45\,\text{s}$; the motion is uniform
 **Find:** speed $v$ in m/s
 **Principle:** In uniform motion, the speed is the distance travelled divided by the time it took.
-**Formula:** $\Delta s = vt$, so $v = \dfrac{\Delta s}{t}$
+**Formula:** $$\begin{aligned} \Delta s &= vt \\ v &= \dfrac{\Delta s}{t} \end{aligned}$$
 **Conversions:** None needed: the distance is in metres and the time in seconds.
 **Substitution:** $v = \dfrac{360\,\text{m}}{45\,\text{s}} = 8.0\,\tfrac{\text{m}}{\text{s}}$
 **Answer:** $8.0\,\text{m/s}$, two significant figures as in the time $45\,\text{s}$.
@@ -23,7 +23,7 @@
 **Find:** time $t$ in seconds when the distance is $150\,\text{m}$
 **Principle:** A straight line from the origin means uniform motion, and the slope of the line is the speed. When the speed is known, the time beyond the graph is obtained by dividing the distance by the speed.
 **Reading the graph:** The line passes through the grid crossing where $t_1 = 0\,\text{s}$ and $s_1 = 0\,\text{m}$ (the origin), and through the crossing where $t_2 = 8\,\text{s}$ and $s_2 = 20\,\text{m}$. Other crossings are for example $(4\,\text{s};\,10\,\text{m})$ and $(10\,\text{s};\,25\,\text{m})$. The reading is exact from the grid, so an answer that deviates by at most $3\,\%$ is accepted.
-**Formula:** $v = \dfrac{\Delta s}{\Delta t}$ and $s = vt$, so $t = \dfrac{s}{v}$
+**Formula:** $$\begin{aligned} v &= \dfrac{\Delta s}{\Delta t} \\ s &= vt \\ t &= \dfrac{s}{v} \end{aligned}$$
 **Conversions:** None needed: the distance is in metres and the time in seconds.
 **Substitution:** $v = \dfrac{20\,\text{m} - 0\,\text{m}}{8\,\text{s} - 0\,\text{s}} = 2.5\,\dfrac{\text{m}}{\text{s}}$ and $t = \dfrac{150\,\text{m}}{2.5\,\frac{\text{m}}{\text{s}}} = 60\,\text{s}$
 **Answer:** $60\,\text{s}$, that is one minute; the speed was read with two significant figures, so the answer is given with the same precision.
@@ -33,7 +33,7 @@
 **Given:** $s_1 = 18\,\text{m}$ in time $t_1 = 4.0\,\text{s}$; the time asked about is $t_2 = 10\,\text{s}$; the motion starts from the starting point, so $s_0 = 0$
 **Find:** distance $s_2$ in time $t_2$ in metres
 **Principle:** The motion is uniform and starts from the zero point, so the distance is directly proportional to time: the ratio $s : t$ is the same for both times.
-**Formula:** $\dfrac{s_2}{t_2} = \dfrac{s_1}{t_1}$, so $s_2 = s_1\,\dfrac{t_2}{t_1}$
+**Formula:** $$\begin{aligned} v &= \dfrac{s_1}{t_1} \\ v &= \dfrac{s_2}{t_2} \\ \dfrac{s_1}{t_1} &= \dfrac{s_2}{t_2} \\ s_2 &= s_1\,\dfrac{t_2}{t_1} \end{aligned}$$
 **Conversions:** None needed: the times are in seconds, and the seconds cancel.
 **Substitution:** $s_2 = 18\,\text{m} \cdot \dfrac{10\,\text{s}}{4.0\,\text{s}} = 45\,\text{m}$
 **Answer:** $45\,\text{m}$, two significant figures as in the distance $18\,\text{m}$.
@@ -43,7 +43,7 @@
 **Given:** at time $t_1 = 2.0\,\text{s}$ the position is $s_1 = 7.0\,\text{m}$, and at time $t_2 = 6.0\,\text{s}$ the position is $s_2 = 21\,\text{m}$; the motion is uniform
 **Find:** speed $v$ in m/s
 **Principle:** In uniform motion the speed is constant, so it equals the change in position divided by the time interval. The initial position does not matter, because it cancels in the difference.
-**Formula:** $v = \dfrac{\Delta s}{\Delta t} = \dfrac{s_2 - s_1}{t_2 - t_1}$
+**Formula:** $$\begin{aligned} v &= \dfrac{\Delta s}{\Delta t} \\ &= \dfrac{s_2 - s_1}{t_2 - t_1} \end{aligned}$$
 **Conversions:** None needed: the positions are in metres and the times in seconds.
 **Substitution:** $v = \dfrac{21\,\text{m} - 7.0\,\text{m}}{6.0\,\text{s} - 2.0\,\text{s}} = \dfrac{14\,\text{m}}{4.0\,\text{s}} = 3.5\,\tfrac{\text{m}}{\text{s}}$
 **Answer:** $3.5\,\text{m/s}$, two significant figures as in the positions $7.0\,\text{m}$ and the times $2.0\,\text{s}$.
@@ -53,7 +53,7 @@
 **Given:** speed $v = 54\,\text{km/h}$, time $t = 14\,\text{s}$
 **Find:** distance $\Delta s$ in metres
 **Principle:** The car drives at constant speed, so the motion is uniform and $\Delta s = vt$. The speed and the time must be in compatible units.
-**Formula:** $\Delta s = vt$
+**Formula:** $$\begin{aligned} v &= \dfrac{\Delta s}{t} \\ \Delta s &= vt \end{aligned}$$
 **Conversions:** substitute $1\,\text{km} = 1000\,\text{m}$ and $1\,\text{h} = 3600\,\text{s}$: $v = 54\,\text{km/h} = \dfrac{54\cdot1000\,\text{m}}{3600\,\text{s}} = 15\,\text{m/s}$.
 **Substitution:** $\Delta s = 15\,\tfrac{\text{m}}{\text{s}} \cdot 14\,\text{s} = 210\,\text{m}$
 **Answer:** $210\,\text{m}$, two significant figures as in the speed $54\,\text{km/h}$ and the time $14\,\text{s}$.
@@ -63,7 +63,7 @@
 **Given:** speed $v = 36\,\text{km/h}$, distance $\Delta s = 4.5\,\text{km}$; the motion is uniform
 **Find:** time $t$ in seconds
 **Principle:** The bus drives at constant speed, so the distance is proportional to time and the time is the distance divided by the speed.
-**Formula:** $\Delta s = vt$, so $t = \dfrac{\Delta s}{v}$
+**Formula:** $$\begin{aligned} v &= \dfrac{\Delta s}{t} \\ vt &= \Delta s \\ t &= \dfrac{\Delta s}{v} \end{aligned}$$
 **Conversions:** $v = 36\,\text{km/h} = \dfrac{36\cdot1000\,\text{m}}{3600\,\text{s}} = 10\,\text{m/s}$ and $\Delta s = 4.5\,\text{km} = 4500\,\text{m}$.
 **Substitution:** $t = \dfrac{4500\,\text{m}}{10\,\tfrac{\text{m}}{\text{s}}} = 450\,\text{s}$
 **Answer:** $450\,\text{s}$, two significant figures as in the data $36\,\text{km/h}$ and $4.5\,\text{km}$.
@@ -73,7 +73,7 @@
 **Given:** initial position $s_0 = 1.5\,\text{km}$ from the cabin, speed $v = 1.5\,\text{m/s}$ away from the cabin, time $t = 10\,\text{min}$
 **Find:** distance from the cabin $s$ in kilometres
 **Principle:** The hiker walks at constant speed, so the motion is uniform. The initial position is not zero, so the position is the initial position plus the distance travelled.
-**Formula:** $s = s_0 + vt$
+**Formula:** $$\begin{aligned} \Delta s &= s - s_0 \\ v &= \dfrac{\Delta s}{t} \\ \Delta s &= vt \\ s - s_0 &= vt \\ s &= s_0 + vt \end{aligned}$$
 **Conversions:** $s_0 = 1.5\,\text{km} = 1500\,\text{m}$ and $t = 10\,\text{min} = 600\,\text{s}$. Finally $1\,\text{km} = 1000\,\text{m}$.
 **Substitution:** $s = 1500\,\text{m} + 1.5\,\tfrac{\text{m}}{\text{s}} \cdot 600\,\text{s} = 1500\,\text{m} + 900\,\text{m} = 2400\,\text{m} = 2.4\,\text{km}$
 **Answer:** $2.4\,\text{km}$, two significant figures as in the data $1.5\,\text{km}$ and $1.5\,\text{m/s}$.
@@ -83,7 +83,7 @@
 **Given:** time $t = 5.0\,\text{s}$, speed of sound $v = 343\,\text{m/s}$; the travel time of light is ignored
 **Find:** distance of the lightning $\Delta s$ in kilometres
 **Principle:** Sound travels at constant speed, so the distance it travels is $\Delta s = vt$. Light arrives practically at once, so the delay of the thunder is the travel time of sound over the whole distance.
-**Formula:** $\Delta s = vt$
+**Formula:** $$\begin{aligned} v &= \dfrac{\Delta s}{t} \\ \Delta s &= vt \end{aligned}$$
 **Conversions:** The distance is calculated in metres, and finally $1\,\text{km} = 1000\,\text{m}$.
 **Substitution:** $\Delta s = 343\,\tfrac{\text{m}}{\text{s}} \cdot 5.0\,\text{s} = 1715\,\text{m} = 1.7\,\text{km}$
 **Answer:** $1.7\,\text{km}$, two significant figures as in the time $5.0\,\text{s}$.
@@ -93,7 +93,7 @@
 **Given:** $s_0 = 119.0\,\text{AU}$ at time $t = 0$ (5 November 2018), $v = 15.341\,\text{km/s}$, $s = 150\,\text{AU}$, $1\,\text{AU} = 149\,597\,870.7\,\text{km}$, $1\,\text{day} = 86\,400\,\text{s}$
 **Find:** time $t$ in days when the probe is at a distance of $150\,\text{AU}$
 **Principle:** The speed is assumed constant, so the uniform motion model $s = s_0 + vt$ applies. The result is a model value, because the Sun's gravity slows the probe slightly and the real time is therefore a little longer.
-**Formula:** $s = s_0 + vt$, so $t = \dfrac{s - s_0}{v}$
+**Formula:** $$\begin{aligned} \Delta s &= s - s_0 \\ v &= \dfrac{\Delta s}{t} \\ vt &= s - s_0 \\ t &= \dfrac{s - s_0}{v} \end{aligned}$$
 **Conversions:** The speed in astronomical units per day by substituting $1\,\text{km} = \tfrac{1}{149\,597\,870.7}\,\text{AU}$ and $1\,\text{s} = \tfrac{1}{86\,400}\,\text{day}$: $v = 15.341\,\tfrac{\text{km}}{\text{s}} = \dfrac{15.341 \cdot \tfrac{1}{149\,597\,870.7}\,\text{AU}}{\tfrac{1}{86\,400}\,\text{day}} = 0.0088602\,\tfrac{\text{AU}}{\text{day}}$.
 **Substitution:** $t = \dfrac{150\,\text{AU} - 119.0\,\text{AU}}{0.0088602\,\text{AU/day}} = \dfrac{31.0\,\text{AU}}{0.0088602\,\text{AU/day}} = 3498.8\,\text{days}$
 **Answer:** $3.50 \cdot 10^{3}\,\text{days}$, about $3500\,\text{days}$, three significant figures: $150\,\text{AU}$ is an exact limit, and the difference $31.0\,\text{AU}$ is accurate to three figures.
@@ -105,7 +105,7 @@
 **Principle:** A radio signal travels in vacuum at constant speed, so the distance it travels is $s = ct$. The command and the reply each travel the distance $d$, so the total distance is $2d$.
 
 During this time the probe moves about $$\begin{aligned} &15\,\text{km/s} \cdot 1.5 \cdot 10^{5}\,\text{s} \\ &\approx 2.3 \cdot 10^{6}\,\text{km} \\ &\approx 0.015\,\text{AU} \end{aligned}$$, which is only $0.01\,\%$ of the distance $150\,\text{AU}$. In the same time the Earth moves about $$\begin{aligned} &30\,\text{km/s} \cdot 1.5 \cdot 10^{5}\,\text{s} \\ &\approx 0.03\,\text{AU} \end{aligned}$$, only about $0.02\,\%$, so neither motion needs to be taken into account.
-**Formula:** $2d = ct$, so $t = \dfrac{2d}{c}$
+**Formula:** $$\begin{aligned} \Delta s &= 2d \\ c &= \dfrac{\Delta s}{t} \\ t &= \dfrac{\Delta s}{c} \\ &= \dfrac{2d}{c} \end{aligned}$$
 **Conversions:** $d = 150 \cdot 149\,597\,870.7\,\text{km} = 2.2440 \cdot 10^{10}\,\text{km} = 2.2440 \cdot 10^{13}\,\text{m}$. Finally $1\,\text{h} = 3600\,\text{s}$.
 **Substitution:** $t = \dfrac{2 \cdot 2.2440 \cdot 10^{13}\,\text{m}}{299\,792\,458\,\text{m/s}} = 1.497 \cdot 10^{5}\,\text{s} = \dfrac{1.497 \cdot 10^{5}\,\text{s}}{3600\,\text{s/h}} = 41.58\,\text{h}$
 **Answer:** $41.6\,\text{h}$. The given values are exact (the assumed distance $150\,\text{AU}$, and the speed of light and $1\,\text{AU}$ by definition), so the precision is chosen: three significant figures are enough.
@@ -115,7 +115,7 @@ During this time the probe moves about $$\begin{aligned} &15\,\text{km/s} \cdot 
 **Given:** speed of the walker $v_1 = 1.5\,\text{m/s}$, speed of the cyclist $v_2 = 4.5\,\text{m/s}$, delay of the cyclist $t_0 = 40\,\text{s}$; both start from the door, so $s_0 = 0$
 **Find:** distance from the door $s$ at the point where the cyclist catches up with the walker
 **Principle:** Both move uniformly. They are at the same position when their distances from the door are equal. The time $t$ is measured from the start of the walker, so the cyclist has been moving for the time $t - t_0$.
-**Formula:** $s_1 = v_1 t$ and $s_2 = v_2 (t - t_0)$. From the condition $s_1 = s_2$ we get $v_1 t = v_2 (t - t_0)$, so $t = \dfrac{v_2 t_0}{v_2 - v_1}$ and $s = v_1 t$.
+**Formula:** $$\begin{aligned} s_1 &= v_1 t \\ s_2 &= v_2 (t - t_0) \\ s_1 &= s_2 \\ v_1 t &= v_2 t - v_2 t_0 \\ v_2 t_0 &= (v_2 - v_1)\,t \\ t &= \dfrac{v_2 t_0}{v_2 - v_1} \\ s &= v_1 t \end{aligned}$$
 **Conversions:** None needed: the speeds are in m/s and the delay in seconds.
 **Substitution:** $t = \dfrac{4.5\,\tfrac{\text{m}}{\text{s}} \cdot 40\,\text{s}}{4.5\,\tfrac{\text{m}}{\text{s}} - 1.5\,\tfrac{\text{m}}{\text{s}}} = 60\,\text{s}$ and $s = 1.5\,\tfrac{\text{m}}{\text{s}} \cdot 60\,\text{s} = 90\,\text{m}$
 **Answer:** $90\,\text{m}$, two significant figures as in the speeds.
@@ -131,7 +131,7 @@ During this time the probe moves about $$\begin{aligned} &15\,\text{km/s} \cdot 
 **Find:** distance travelled $\Delta s$ in metres
 **Principle:** In a $(t, v)$ graph, a horizontal line is the top edge of a rectangle. The height of the rectangle is the speed $v$ and the width is the time $t$, so its area $vt$ is the distance travelled in uniform motion.
 **Reading the graph:** The height is $v = 0.80\,\text{m/s}$ and the width is $t = 12\,\text{s} - 0\,\text{s} = 12\,\text{s}$.
-**Formula:** $\Delta s = vt$ (area of the rectangle = height $\cdot$ width)
+**Formula:** $$\begin{aligned} \Delta s &= A_\text{rectangle} \\ A_\text{rectangle} &= vt \end{aligned}$$
 **Conversions:** None needed: the speed is in m/s and the time in seconds, and $\tfrac{\text{m}}{\text{s}} \cdot \text{s} = \text{m}$.
 **Substitution:** $\Delta s = 0.80\,\tfrac{\text{m}}{\text{s}} \cdot 12\,\text{s} = 9.6\,\text{m}$
 **Answer:** $9.6\,\text{m}$, two significant figures as in the speed $0.80\,\text{m/s}$ and the time $12\,\text{s}$.
@@ -141,7 +141,7 @@ During this time the probe moves about $$\begin{aligned} &15\,\text{km/s} \cdot 
 **Given:** distance $s = 2.4\,\text{km}$, time $t = 16\,\text{min}$; the motion is uniform and starts from the zero point
 **Find:** speed $v$ in m/s
 **Principle:** In uniform motion, the speed is the distance travelled divided by the time it took. Kilometres and minutes are converted to metres and seconds before dividing.
-**Formula:** $s = vt$, so $v = \dfrac{s}{t}$
+**Formula:** $$\begin{aligned} s &= vt \\ v &= \dfrac{s}{t} \end{aligned}$$
 **Conversions:** substituting $1\,\text{km} = 1000\,\text{m}$ and $1\,\text{min} = 60\,\text{s}$: $s = 2.4 \cdot 1000\,\text{m} = 2400\,\text{m}$ and $t = 16 \cdot 60\,\text{s} = 960\,\text{s}$.
 **Substitution:** $v = \dfrac{2400\,\text{m}}{960\,\text{s}} = 2.5\,\tfrac{\text{m}}{\text{s}}$
 **Answer:** $2.5\,\text{m/s}$, two significant figures as in the data $2.4\,\text{km}$ and $16\,\text{min}$.
@@ -152,7 +152,7 @@ During this time the probe moves about $$\begin{aligned} &15\,\text{km/s} \cdot 
 **Find:** position $s$ of the walker at time $t = 12\,\text{s}$ in metres
 **Principle:** In uniform motion, the position is a linear function of time, $s = s_0 + vt$. In real measurement series, the measurement points usually do not lie exactly on the same straight line because of measurement uncertainty, so the line is fitted through the middle of the set of points and the speed is read along it.
 **Reading the graph:** The points lie on a rising line with points on both sides of it. The fitted line passes approximately through the points $(0\,\text{s};\ 1.2\,\text{m})$ and $(5.0\,\text{s};\ 8.2\,\text{m})$. They are read from the line and chosen far apart. The initial position is $s_0 = 1.2\,\text{m}$, because the line crosses the $s$-axis there.
-**Formula:** $v = \dfrac{\Delta s}{\Delta t}$ and $s = s_0 + vt$
+**Formula:** $$\begin{aligned} v &= \dfrac{\Delta s}{\Delta t} \\ s - s_0 &= vt \\ s &= s_0 + vt \end{aligned}$$
 **Conversions:** None needed: the positions are in metres and the times in seconds.
 **Substitution:** $v = \dfrac{8.2\,\text{m} - 1.2\,\text{m}}{5.0\,\text{s} - 0\,\text{s}} = 1.4\,\tfrac{\text{m}}{\text{s}}$ and $s = 1.2\,\text{m} + 1.4\,\tfrac{\text{m}}{\text{s}} \cdot 12\,\text{s} = 1.2\,\text{m} + 16.8\,\text{m} = 18\,\text{m}$
 **Answer:** about $18\,\text{m}$, two significant figures. A fit by eye varies, so about $17.3\text{–}18.7\,\text{m}$ is a good answer.
@@ -164,7 +164,7 @@ The prediction is a model value, not a measurement: the moment $12\,\text{s}$ is
 **Given:** initial position $s_0 = 8.0\,\text{m}$, position $s_1 = 11\,\text{m}$ at time $t_1 = 2.0\,\text{s}$; the student's conclusion is $s = 33\,\text{m}$ at time $t_2 = 6.0\,\text{s}$
 **Find:** the student's error and the correct position $s$ at time $6.0\,\text{s}$ in metres
 **Principle:** In uniform motion, only the distance travelled $\Delta s = vt$ is directly proportional to time. The position $s = s_0 + vt$ is proportional to time only when $s_0 = 0$. The student mixed up position and distance: the student tripled the position, although the distance should have been tripled.
-**Formula:** $v = \dfrac{\Delta s}{\Delta t}$ and $s = s_0 + vt$
+**Formula:** $$\begin{aligned} v &= \dfrac{\Delta s}{\Delta t} \\ s - s_0 &= vt \\ s &= s_0 + vt \end{aligned}$$
 **Conversions:** None needed: the positions are in metres and the times in seconds.
 **Substitution:** $v = \dfrac{11\,\text{m} - 8.0\,\text{m}}{2.0\,\text{s}} = 1.5\,\tfrac{\text{m}}{\text{s}}$ and $s = 8.0\,\text{m} + 1.5\,\tfrac{\text{m}}{\text{s}} \cdot 6.0\,\text{s} = 8.0\,\text{m} + 9.0\,\text{m} = 17\,\text{m}$
 **Answer:** The trolley is at $17\,\text{m}$, not at $33\,\text{m}$. The error is that the position was tripled: the initial position $s_0 = 8.0\,\text{m}$ is not zero, so only the distance triples ($3.0\,\text{m} \to 9.0\,\text{m}$), and the initial position must be added to it.
@@ -174,7 +174,7 @@ The prediction is a model value, not a measurement: the moment $12\,\text{s}$ is
 **Given:** speed about $v = 0.80\,\text{m/s}$, uncertainty of the timing $\Delta t = 0.2\,\text{s}$ (the same for all times; here $\Delta t$ is the uncertainty, not a time interval), limit of the relative uncertainty $2.0\,\%$
 **Find:** minimum distance $s$ in metres
 **Principle:** The relative uncertainty of the time is $\varepsilon = \Delta t : t$. Since $\Delta t$ is constant, the relative uncertainty decreases as the measured time grows. The limit gives the minimum time, and in uniform motion the distance is speed times time.
-**Formula:** $\varepsilon = \dfrac{\Delta t}{t} \le 0.020$, so $t \ge \dfrac{\Delta t}{0.020}$, and $s = vt$
+**Formula:** $$\begin{aligned} \varepsilon &= \dfrac{\Delta t}{t} \\ \dfrac{\Delta t}{t} &\le 0.020 \\ t &\ge \dfrac{\Delta t}{0.020} \\ s &= vt \end{aligned}$$
 **Conversions:** None needed: the times are in seconds and the speed in m/s. The percentage is $2.0\,\% = 0.020$.
 **Substitution:** $t \ge \dfrac{0.2\,\text{s}}{0.020} = 10\,\text{s}$ and $s = 0.80\,\tfrac{\text{m}}{\text{s}} \cdot 10\,\text{s} = 8.0\,\text{m}$
 **Answer:** The car must travel at least $8.0\,\text{m}$. A long distance improves the measurement, because it takes longer and the timing uncertainty $0.2\,\text{s}$ is then a smaller part of the whole time. On a short distance, for example $1.0\,\text{m}$ ($t = 1.25\,\text{s}$), the relative uncertainty would be $16\,\%$.
@@ -187,7 +187,7 @@ The prediction is a model value, not a measurement: the moment $12\,\text{s}$ is
 
 The average speed is the change in position divided by the length of the interval.
 **Reading the graph:** The points in the interval $0\text{–}10\,\text{s}$ are on the same steep line. From the moment $10\,\text{s}$ on, the line is gentler, and the points $(10\,\text{s};\ 30\,\text{m})$, $(20\,\text{s};\ 40\,\text{m})$ and $(40\,\text{s};\ 60\,\text{m})$ are on the same gentle line. So the speed changes at the moment $t = 10\,\text{s}$.
-**Formula:** speed of a part $v = \dfrac{\Delta s}{\Delta t}$, position on the gentle part $s = s_{10} + v_2 (t - 10\,\text{s})$ and average speed $v_\text{avg} = \dfrac{s(35\,\text{s}) - s(5.0\,\text{s})}{35\,\text{s} - 5.0\,\text{s}}$
+**Formula:** $$\begin{aligned} v &= \dfrac{\Delta s}{\Delta t} \\ s &= s_{10} + v_2 (t - 10\,\text{s}) \\ v_\text{avg} &= \dfrac{\Delta s}{\Delta t} \\ &= \dfrac{s(35\,\text{s}) - s(5.0\,\text{s})}{35\,\text{s} - 5.0\,\text{s}} \end{aligned}$$
 **Conversions:** None needed: the positions are in metres and the times in seconds.
 **Substitution:** Part 1: $v_1 = \dfrac{30\,\text{m} - 0\,\text{m}}{10\,\text{s} - 0\,\text{s}} = 3.0\,\tfrac{\text{m}}{\text{s}}$. Part 2: $v_2 = \dfrac{60\,\text{m} - 30\,\text{m}}{40\,\text{s} - 10\,\text{s}} = 1.0\,\tfrac{\text{m}}{\text{s}}$. Position at $35\,\text{s}$: $s = 30\,\text{m} + 1.0\,\tfrac{\text{m}}{\text{s}} \cdot 25\,\text{s} = 55\,\text{m}$. Average speed: $v_\text{avg} = \dfrac{55\,\text{m} - 15\,\text{m}}{35\,\text{s} - 5.0\,\text{s}} = \dfrac{40\,\text{m}}{30\,\text{s}} = 1.33\,\tfrac{\text{m}}{\text{s}}$.
 **Answer:** $1.3\,\text{m/s}$, two significant figures as in the data. The mean of the speeds of the parts would be $(3.0 + 1.0)\,\text{m/s} : 2 = 2.0\,\text{m/s}$, but that would be wrong, because the parts last for different times: the speed $3.0\,\text{m/s}$ is in effect for only $5.0\,\text{s}$ and the speed $1.0\,\text{m/s}$ for as long as $25\,\text{s}$.
@@ -200,7 +200,7 @@ The average speed is the change in position divided by the length of the interva
 
 An object has only one position at every moment, so every value of time corresponds to one value of position. A vertical line would have $\Delta t = 0$ and $\Delta s \neq 0$, and then the quotient would not be any number.
 **Reading the graph:** The points of the table lie on the same straight line, and between two consecutive points the position changes by $\Delta s = 5.0\,\text{m} - 2.0\,\text{m} = 3.0\,\text{m}$ in the time $\Delta t = 0.010\,\text{s}$.
-**Formula:** $v = \dfrac{\Delta s}{\Delta t}$; in the drawing, the length is the value times the scale
+**Formula:** $$\begin{aligned} v &= \dfrac{\Delta s}{\Delta t} \\ L_\text{drawing} &= a_\text{value} \cdot k_\text{scale} \end{aligned}$$
 **Conversions:** Not needed for calculating the speed. In the drawing, $\Delta s = 3.0 \cdot 1.0\,\text{cm} = 3.0\,\text{cm}$ and $\Delta t = 0.010 \cdot 10\,\text{cm} = 0.10\,\text{cm}$.
 **Substitution:** $v = \dfrac{3.0\,\text{m}}{0.010\,\text{s}} = 300\,\tfrac{\text{m}}{\text{s}}$. In one imaging interval the line rises $3.0\,\text{cm}$ and advances horizontally only $0.10\,\text{cm}$, that is, $1.0\,\text{mm}$.
 **Answer:** $300\,\text{m/s}$, two significant figures as in the difference of positions $3.0\,\text{m}$. The line rises $3.0\,\text{cm}$ and advances $0.10\,\text{cm}$, so it rises about $30$ times as much as it advances horizontally and looks almost vertical.
@@ -228,7 +228,7 @@ We also check the quantity on the vertical axis: in graph B it is the speed $v$.
 **Given:** time $t = 2.0\,\text{s}$; from the table (MAFY table, Äänen nopeuksia eri väliaineissa, liquids, water $20\,{}^\circ\text{C}$) the speed of sound $v = 1482.3\,\text{m/s}$
 **Find:** distance travelled $s$ in $\text{km}$
 **Principle:** Sound travels through water at a constant speed, so the motion is uniform and the distance is the speed times the time.
-**Formula:** $s = vt$
+**Formula:** $$\begin{aligned} s &= vt \\ v &= \dfrac{s}{t} \end{aligned}$$
 **Conversions:** $1\,\text{km} = 1000\,\text{m}$, so $s$ is converted from metres to kilometres by dividing by $1000$.
 **Substitution:** $s = 1482.3\,\tfrac{\text{m}}{\text{s}} \cdot 2.0\,\text{s} = 2964.6\,\text{m} = 2.9646\,\text{km}$
 **Answer:** $3.0\,\text{km}$ (more precisely $2.96\,\text{km}$), two significant figures as in the time $2.0\,\text{s}$. Depending on the table value, the answer is accepted within about $\pm 4\,\%$.
