@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 02af06d85c6fff13
-SCOPE: delta numbers,reflow from 6fa3173777f1fcd9 base 4b05399
+CONTENT-HASH: e4dcc85503760ad7
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions 6-5 / L2-04 Formula inline: unit-like fractions such as $\tfrac{\text{V}}{\text{Hz}}$ in running text make lines taller (untouched text).
-- [Minor] No true 390 px captures of the open solutions exist; phone wrapping rests on check_layout.py (run at 360 px for en, fi, fi-easy: OK).
+- [Minor] solutions L2-06 Answer: "…cancels the fact that the threshold voltage is … smaller than $\tfrac{hf}{e}$, and overshoots it a little." — "it" is ambiguous (the voltage or the fact) — e.g. "…smaller than $\tfrac{hf}{e}$; with the extra voltage it overshoots a little."
 
 ## Checked
-- Delta (solutions.md: the Kaava step, \approx to = for the line and h = ek). Opened fy8-6-open-exercises-L3-1280-6 (L3-04 Formula: aligned blocks, k = dfrac with ≈ row, h = ek in text), 1280-4 and 1280-5 (6-4 aligned Formula/Substitution blocks), L2-1280-1 (6-9).
-- Fractions at display size, equals signs in one column, subscripts legible, blocks inside their cards, no red KaTeX.
-- check_layout.py fy8-6 --width 360: OK in all three languages with solutions open.
+- Delta: L3-04 Formula (fy8-6-open-exercises-L3-1280-6): "eU_k ≈ hf" in running text, aligned blocks and fractions intact, no red KaTeX, blocks inside their card.
+- Delta: L2-06 Answer (fy8-6-open-exercises-L2-1280-8): changed Salla sentence reads fully, layout around it survived.
 - Hash re-run at end: unchanged.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
