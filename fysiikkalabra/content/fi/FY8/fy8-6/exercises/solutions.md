@@ -347,7 +347,7 @@ $$, joten $h = \dfrac{2{,}0589 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}998 \cdot
 
 Ainon lukema on liian pieni, koska virta $0{,}1\,\text{mA}$ kulkee jo ennen suoran jatkeen antamaa kynnystä, ja Sallan liian suuri, koska virralla $10\,\text{mA}$ elektronit tarvitsevat kynnyksen lisäksi jännitettä virran kasvattamiseen. Eeron lukutapa ei riipu valitusta virrasta.
 
-Sallan arvo osuu sattumalta lähemmäs hyväksyttyä arvoa, koska hänen ylimääräinen noin $0{,}16\,\text{V}$ kumoaa osan siitä, että kynnysjännite on tässä aineistossa noin $0{,}1\,\text{V}$ pienempi kuin $\tfrac{hf}{e}$. Lähellä taulukkoarvoa oleva tulos ei todista lukutapaa oikeaksi; suoran jatkeen jäljelle jäävä ero poistuu kulmakertoimesta.
+Sallan arvo osuu sattumalta lähemmäs hyväksyttyä arvoa, koska hänen ylimääräinen noin $0{,}16\,\text{V}$ kumoaa sen, että kynnysjännite on tässä aineistossa noin $0{,}1\,\text{V}$ pienempi kuin $\tfrac{hf}{e}$, ja menee vielä hieman yli. Lähellä taulukkoarvoa oleva tulos ei todista lukutapaa oikeaksi; suoran jatkeen jäljelle jäävä ero poistuu kulmakertoimesta.
 
 **Järkevyys:** Eeron $h$ poikkeaa hyväksytystä arvosta silti $-4{,}5\,\%$, ja ero on juuri luvun mainitsema noin $0{,}1\,\text{V}$ ($\tfrac{hc}{e\lambda} = 1{,}97\,\text{V}$ ja Eeron $1{,}88\,\text{V}$), joten sitä ei pidä pitää virheellisenä lukutapana. Suunta täsmää: $5{,}86 < 6{,}33 < 6{,}87$ vastaa jännitteiden järjestystä $1{,}74\,\text{V} < 1{,}88\,\text{V} < 2{,}04\,\text{V}$.
 
@@ -419,7 +419,7 @@ Eroa ei myöskään voi verrata suoraan kulmakertoimen epävarmuuteen $\Delta k$
 **Kysytty:** Planckin vakio $h$ suoran kulmakertoimesta yksikössä $\text{J}\,\text{s}$, sekä korjauksen vaikutus suoraan ja yhden LEDin tulokseen
 **Periaate:** Kynnysjännitteellä $eU_\text{k} \approx hf$, joten $U_\text{k}$ on taajuuden suhteen likimain suora, jonka kulmakerroin on mallissa noin $\tfrac{h}{e}$. Mittarin nollapistevirhe lisää jokaiseen jännitteeseen saman vakion $0{,}05\,\text{V}$. Vakion lisääminen siirtää suoraa ylöspäin mutta ei muuta sen kulmakerrointa, joten virhe näkyy leikkauskohdassa.
 **Kuvaajan lukeminen:** Taajuudet ovat $4{,}759$, $5{,}081$, $5{,}260$, $5{,}710$ ja $6{,}447$ yksikössä $10^{14}\,\text{Hz}$. Sovitus kaikkiin viiteen mitattuun pisteeseen antaa kulmakertoimen $m = 4{,}208 \cdot 10^{-15}\,\text{V}\,\text{s}$ ja leikkauskohdan $b = -0{,}062\,\text{V}$. Korjattujen jännitteiden $U = U_\text{mitattu} - 0{,}05\,\text{V}$ sovitus antaa saman kulmakertoimen $4{,}208 \cdot 10^{-15}\,\text{V}\,\text{s}$ ja leikkauskohdan $-0{,}112\,\text{V}$.
-**Kaava:** Taajuus on $f = \dfrac{c}{\lambda}$ ja kynnysjännitteellä $eU_\text{k} = hf$, joten $U_\text{k} \approx \dfrac{h}{e}\,f + b$. Suoran kulmakerroin on $k = \dfrac{\Delta U_\text{k}}{\Delta f} \approx \dfrac{h}{e}$, joten $h = ek$. Yhden LEDin $eU_\text{k} = hf = \dfrac{hc}{\lambda}$, joten $h = \dfrac{eU_\text{k}\lambda}{c}$.
+**Kaava:** Taajuus on $f = \dfrac{c}{\lambda}$ ja kynnysjännitteellä $eU_\text{k} \approx hf$, joten $U_\text{k} \approx \dfrac{h}{e}\,f + b$. Suoran kulmakerroin on $k = \dfrac{\Delta U_\text{k}}{\Delta f} \approx \dfrac{h}{e}$, joten $h = ek$. Yhden LEDin $eU_\text{k} = hf = \dfrac{hc}{\lambda}$, joten $h = \dfrac{eU_\text{k}\lambda}{c}$.
 **Muunnokset:** $\lambda = 630 \cdot 10^{-9}\,\text{m}$ jne.; $\tfrac{\text{V}}{\text{Hz}} = \text{V}\,\text{s}$ ja $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$
 **Sijoitus:** $$
 \begin{aligned}

@@ -372,7 +372,7 @@ $$, so $h = \dfrac{2.0589 \cdot 10^{-25}\,\text{J}\,\text{m}}{2.998 \cdot 10^8\,
 
 Aino’s reading is too small because the current $0.1\,\text{mA}$ already flows before the threshold given by the extension of the line, and Salla’s too large because at the current $10\,\text{mA}$ the electrons need extra voltage, on top of the threshold, to make the current larger. Eero’s method does not depend on the current chosen.
 
-Salla’s value happens to come closer to the accepted value because her extra $0.16\,\text{V}$ or so cancels part of the fact that the threshold voltage is in this data set about $0.1\,\text{V}$ smaller than $\tfrac{hf}{e}$.
+Salla’s value happens to come closer to the accepted value because her extra $0.16\,\text{V}$ or so cancels the fact that the threshold voltage is in this data set about $0.1\,\text{V}$ smaller than $\tfrac{hf}{e}$, and overshoots it a little.
 
 A result close to the table value does not prove the reading method correct; the remaining difference of the extension of the line disappears from the slope.
 
@@ -459,7 +459,7 @@ Adding a constant shifts the line upwards but does not change its slope, so the 
 
 **Reading the graph:** The frequencies are $4.759$, $5.081$, $5.260$, $5.710$ and $6.447$ in the unit $10^{14}\,\text{Hz}$. A fit to all five measured points gives the slope $m = 4.208 \cdot 10^{-15}\,\text{V}\,\text{s}$ and the intercept $b = -0.062\,\text{V}$. A fit to the corrected voltages $U = U_\text{measured} - 0.05\,\text{V}$ gives the same slope $4.208 \cdot 10^{-15}\,\text{V}\,\text{s}$ and the intercept $-0.112\,\text{V}$.
 
-**Formula:** The frequency is $f = \dfrac{c}{\lambda}$ and at the threshold voltage $eU_\text{k} = hf$, so $U_\text{k} \approx \dfrac{h}{e}\,f + b$. The slope is $k = \dfrac{\Delta U_\text{k}}{\Delta f} \approx \dfrac{h}{e}$, so $h = ek$. For a single LED $eU_\text{k} = hf = \dfrac{hc}{\lambda}$, so $h = \dfrac{eU_\text{k}\lambda}{c}$.
+**Formula:** The frequency is $f = \dfrac{c}{\lambda}$ and at the threshold voltage $eU_\text{k} \approx hf$, so $U_\text{k} \approx \dfrac{h}{e}\,f + b$. The slope is $k = \dfrac{\Delta U_\text{k}}{\Delta f} \approx \dfrac{h}{e}$, so $h = ek$. For a single LED $eU_\text{k} = hf = \dfrac{hc}{\lambda}$, so $h = \dfrac{eU_\text{k}\lambda}{c}$.
 
 **Conversions:** $\lambda = 630 \cdot 10^{-9}\,\text{m}$ etc.; $\tfrac{\text{V}}{\text{Hz}} = \text{V}\,\text{s}$ and $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$
 
