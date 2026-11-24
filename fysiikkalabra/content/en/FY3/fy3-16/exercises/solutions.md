@@ -45,7 +45,12 @@ So the energy does not raise the temperature but changes the interactions betwee
 **Given:** $c = 3500\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, circulating mass $\tfrac{m}{t} = 0.50\,\tfrac{\text{kg}}{\text{s}}$, rise in temperature $\Delta T = 8.0\,\text{K}$
 **Find:** power $P$ transferred from the engine to the liquid, in kilowatts
 **Principle:** The liquid warms up and does not boil, so its state does not change, and the quantity of heat absorbed per second is $c\,m\,\Delta T$ for the mass that passes through the engine in a second. Power is energy per unit time, $P = \tfrac{Q}{t}$.
-**Formula:** $P = \dfrac{Q}{t} = \dfrac{c\,m\,\Delta T}{t} = c\,\dfrac{m}{t}\,\Delta T$
+**Formula:** $$\begin{aligned} Q &= c\,m\,\Delta T \\
+P &= \dfrac{Q}{t} \\
+&= \dfrac{c\,m\,\Delta T}{t} \\
+&= c\,\dfrac{m}{t}\,\Delta T
+\end{aligned}
+$$
 **Conversions:** The change in temperature is already in kelvins. Units: $\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot \tfrac{\text{kg}}{\text{s}} \cdot \text{K} = \tfrac{\text{J}}{\text{s}} = \text{W}$, and finally $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** $P = 3500\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\tfrac{\text{kg}}{\text{s}} \cdot 8.0\,\text{K} = 14\,000\,\tfrac{\text{J}}{\text{s}} = 14\,000\,\text{W} = 14\,\text{kW}$
 **Answer:** $14\,\text{kW}$, two significant figures like the values $0.50\,\tfrac{\text{kg}}{\text{s}}$ and $8.0\,\text{K}$.
@@ -55,7 +60,14 @@ So the energy does not raise the temperature but changes the interactions betwee
 **Given:** $U = 2.0\,\tfrac{\text{W}}{\text{m}^2\text{K}}$, $A = 0.50\,\text{m}^2$, outside $25\,{}^\circ\text{C}$ and inside $0\,{}^\circ\text{C}$, so $\Delta T = 25\,\text{K}$, time $t = 6.0\,\text{h}$; from the table $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** mass of the ice $m$ in kilograms
 **Principle:** As long as there is ice, the inside stays at $0\,{}^\circ\text{C}$, so the temperature difference and the power through the wall stay constant. The bag contains only ice, so all the energy $P\,t$ that has come through the wall is used to melt the ice: $P\,t = s\,m$.
-**Formula:** $U A\,\Delta T\,t = s\,m$, so $m = \dfrac{U A\,\Delta T\,t}{s}$
+**Formula:** $$\begin{aligned} P &= U A\,\Delta T \\
+E &= P\,t \\
+Q &= s\,m \\
+E &= Q \\
+U A\,\Delta T\,t &= s\,m \\
+m &= \dfrac{U A\,\Delta T\,t}{s}
+\end{aligned}
+$$
 **Conversions:** $t = 6.0\,\text{h} = 6.0 \cdot 3600\,\text{s} = 21\,600\,\text{s}$ and $s = 334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$, so that a watt times a second is a joule.
 **Substitution:** $P = 2.0 \cdot 0.50 \cdot 25\,\text{W} = 25\,\text{W}$ and $m = \dfrac{25\,\text{W} \cdot 21\,600\,\text{s}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = \dfrac{540\,000\,\text{J}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = 1.617\,\text{kg}$
 **Answer:** $1.7\,\text{kg}$, two significant figures, because the U-value $2.0$, the area $0.50\,\text{m}^2$, the temperature difference $25\,\text{K}$ and the time $6.0\,\text{h}$ all have two figures. The calculated $1.617\,\text{kg}$ is the smallest mass that is enough, so it is rounded up: $1.6\,\text{kg}$ would not last the full six hours.
@@ -65,7 +77,13 @@ So the energy does not raise the temperature but changes the interactions betwee
 **Given:** water $m = 0.25\,\text{kg}$, $T_\text{initial} = 20\,{}^\circ\text{C}$, $T_\text{final} = 100\,{}^\circ\text{C}$; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** total quantity of heat $Q$ in kilojoules
 **Principle:** The process has two stages, one after the other. First the water warms up to $100\,{}^\circ\text{C}$ ($c\,m\,\Delta T$), then it vaporises at this temperature, which does not change ($r\,m$). There is no change in temperature during vaporisation, so the energies of the stages are calculated with different formulas and added together.
-**Formula:** $Q = Q_\text{heating} + Q_\text{vaporisation} = c\,m\,\Delta T + r\,m$, where $\Delta T = T_\text{final} - T_\text{initial}$
+**Formula:** $$\begin{aligned} Q_\text{heating} &= c\,m\,\Delta T \\
+Q_\text{vaporisation} &= r\,m \\
+Q &= Q_\text{heating} + Q_\text{vaporisation} \\
+&= c\,m\,\Delta T + r\,m \\
+\Delta T &= T_\text{final} - T_\text{initial}
+\end{aligned}
+$$
 **Conversions:** $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$, the same in kelvins. $r = 2260\,\tfrac{\text{kJ}}{\text{kg}} = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$ and finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $Q_\text{heating} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.25\,\text{kg} \cdot 80\,\text{K} = 83\,800\,\text{J}$ and $Q_\text{vaporisation} = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0.25\,\text{kg} = 565\,000\,\text{J}$, so $Q = 648\,800\,\text{J} = 648.8\,\text{kJ}$
 **Answer:** $650\,\text{kJ}$, two significant figures like the mass $0.25\,\text{kg}$.
@@ -75,7 +93,12 @@ So the energy does not raise the temperature but changes the interactions betwee
 **Given:** $P = 24\,\text{kW}$, $c = 3500\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, greatest allowed rise in temperature $\Delta T = 8.0\,\text{K}$
 **Find:** mass of liquid to be circulated per second $\tfrac{m}{t}$ in $\tfrac{\text{kg}}{\text{s}}$
 **Principle:** All the power transferred from the engine goes into warming the liquid, and the liquid does not boil, so its state does not change. The mass $\tfrac{m}{t}$ passing per second absorbs the quantity of heat $c\,\tfrac{m}{t}\,\Delta T$, and this is equal to the power $P$.
-**Formula:** $P = c\,\dfrac{m}{t}\,\Delta T$, so $\dfrac{m}{t} = \dfrac{P}{c\,\Delta T}$
+**Formula:** $$\begin{aligned} Q &= c\,m\,\Delta T \\
+P &= \dfrac{Q}{t} \\
+&= c\,\dfrac{m}{t}\,\Delta T \\
+\dfrac{m}{t} &= \dfrac{P}{c\,\Delta T}
+\end{aligned}
+$$
 **Conversions:** $24\,\text{kW} = 24\,000\,\text{W} = 24\,000\,\tfrac{\text{J}}{\text{s}}$. The change in temperature is already in kelvins.
 **Substitution:** $\dfrac{m}{t} = \dfrac{24\,000\,\tfrac{\text{J}}{\text{s}}}{3500\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 8.0\,\text{K}} = \dfrac{24\,000}{28\,000}\,\tfrac{\text{kg}}{\text{s}} = 0.857\,\tfrac{\text{kg}}{\text{s}}$
 **Answer:** $0.86\,\tfrac{\text{kg}}{\text{s}}$, two significant figures like the values $24\,\text{kW}$ and $8.0\,\text{K}$.
@@ -85,7 +108,13 @@ So the energy does not raise the temperature but changes the interactions betwee
 **Given:** lemonade $m_\text{j} = 0.33\,\text{kg}$, $T_\text{initial} = 22\,{}^\circ\text{C}$, $T_\text{final} = 0\,{}^\circ\text{C}$, $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ (the value for water); from the table $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** mass of melted ice $m_\text{ice}$ in grams
 **Principle:** Energy is conserved: when no heat comes in from the surroundings, the energy that the lemonade gives out as it cools is all used to melt ice. There is enough ice, so the temperature settles at $0\,{}^\circ\text{C}$ and the melted ice does not warm up.
-**Formula:** $c\,m_\text{j}\,\Delta T = s\,m_\text{ice}$, so $m_\text{ice} = \dfrac{c\,m_\text{j}\,\Delta T}{s}$
+**Formula:** $$\begin{aligned} Q_\text{released} &= Q_\text{absorbed} \\
+Q_\text{released} &= c\,m_\text{j}\,\Delta T \\
+Q_\text{absorbed} &= s\,m_\text{ice} \\
+c\,m_\text{j}\,\Delta T &= s\,m_\text{ice} \\
+m_\text{ice} &= \dfrac{c\,m_\text{j}\,\Delta T}{s}
+\end{aligned}
+$$
 **Conversions:** $\Delta T = 22\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 22\,\text{K}$, the same in kelvins. $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$, and finally $1\,\text{kg} = 1000\,\text{g}$.
 **Substitution:** $m_\text{ice} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.33\,\text{kg} \cdot 22\,\text{K}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = \dfrac{30\,419.4\,\text{J}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = 0.0911\,\text{kg} = 91.1\,\text{g}$
 **Answer:** $91\,\text{g}$, two significant figures like the values $0.33\,\text{kg}$ and $22\,\text{K}$.
@@ -97,7 +126,15 @@ So the energy does not raise the temperature but changes the interactions betwee
 **Principle:** Energy is conserved: when all the energy is taken from the stones, the energy given out by the stones is equal to the energy absorbed by the water.
 
 The water absorbs energy in two stages (warming up and vaporisation), and the stones only cool down, so their state does not change. The warming of the steam and the heating of the stove are not taken into account.
-**Formula:** $c_\text{k}\,m_\text{k}\,\Delta T_\text{k} = m_\text{v}(c_\text{v}\,\Delta T_\text{v} + r)$, so $\Delta T_\text{k} = \dfrac{m_\text{v}(c_\text{v}\,\Delta T_\text{v} + r)}{c_\text{k}\,m_\text{k}}$
+**Formula:** $$\begin{aligned} Q_\text{released} &= Q_\text{absorbed} \\
+Q_\text{released} &= c_\text{k}\,m_\text{k}\,\Delta T_\text{k} \\
+Q_\text{absorbed} &= Q_\text{v} \\
+Q_\text{v} &= c_\text{v}\,m_\text{v}\,\Delta T_\text{v} + r\,m_\text{v} \\
+&= m_\text{v}(c_\text{v}\,\Delta T_\text{v} + r) \\
+c_\text{k}\,m_\text{k}\,\Delta T_\text{k} &= m_\text{v}(c_\text{v}\,\Delta T_\text{v} + r) \\
+\Delta T_\text{k} &= \dfrac{m_\text{v}(c_\text{v}\,\Delta T_\text{v} + r)}{c_\text{k}\,m_\text{k}}
+\end{aligned}
+$$
 **Conversions:** $\Delta T_\text{v} = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$, the same in kelvins.
 
 $r = 2260\,\tfrac{\text{kJ}}{\text{kg}} = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$.
@@ -114,7 +151,15 @@ Warming the steam would make the drop slightly larger, and a stove that keeps he
 
 First check: as it cools to $0\,{}^\circ\text{C}$ the water can give out at most $c\,m_\text{v}\,T_\text{v} = 251\,400\,\text{J}$, and melting the ice needs only $s\,m_\text{ice} = 167\,000\,\text{J}$. Since $251\,400\,\text{J} > 167\,000\,\text{J}$, all the ice melts and the final temperature is above $0\,{}^\circ\text{C}$.
 
-**Formula:** $$\begin{aligned} &c\,m_\text{v}(T_\text{v} - T) \\ &= s\,m_\text{ice} + c\,m_\text{ice}\,T \end{aligned}$$, so $T = \dfrac{c\,m_\text{v}\,T_\text{v} - s\,m_\text{ice}}{c\,(m_\text{v} + m_\text{ice})}$
+**Formula:** $$\begin{aligned} Q_\text{released} &= Q_\text{absorbed} \\
+Q_\text{released} &= c\,m_\text{v}(T_\text{v} - T) \\
+Q_\text{absorbed} &= s\,m_\text{ice} + c\,m_\text{ice}\,T \\
+c\,m_\text{v}(T_\text{v} - T) &= s\,m_\text{ice} + c\,m_\text{ice}\,T \\
+c\,m_\text{v}\,T_\text{v} - s\,m_\text{ice} &= c\,m_\text{v}\,T + c\,m_\text{ice}\,T \\
+&= c\,(m_\text{v} + m_\text{ice})\,T \\
+T &= \dfrac{c\,m_\text{v}\,T_\text{v} - s\,m_\text{ice}}{c\,(m_\text{v} + m_\text{ice})}
+\end{aligned}
+$$
 **Conversions:** The ice is at $0\,{}^\circ\text{C}$, so the change in temperature of the melted water is $T - 0\,{}^\circ\text{C} = T$ and the water cools by $T_\text{v} - T$; the differences are the same in kelvins, and $T$ comes directly in degrees Celsius. $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Substitution:** The numerator is $$\begin{aligned} &4190 \cdot 2.00 \cdot 30.0\,\text{J} \\ &- 334\,000 \cdot 0.500\,\text{J} \\ &= 251\,400\,\text{J} - 167\,000\,\text{J} \\ &= 84\,400\,\text{J} \end{aligned}$$ and the denominator is $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 2.50\,\text{kg} = 10\,475\,\tfrac{\text{J}}{\text{K}}$, so
 
@@ -129,7 +174,17 @@ $$T = \dfrac{84\,400\,\text{J}}{10\,475\,\tfrac{\text{J}}{\text{K}}} = 8.057\,{}
 **Principle:** Energy is conserved: during the 6.0 hours the ice has to absorb the energy coming through the wall and the energy given out by the drinks. The ice first warms from $-10\,{}^\circ\text{C}$ to $0\,{}^\circ\text{C}$ ($c_\text{ice}\,\Delta T_\text{ice}$) and then melts ($s$).
 
 By the assumption of the problem the inside is at $0\,{}^\circ\text{C}$, so the power through the wall stays constant.
-**Formula:** $m\,(c_\text{ice}\,\Delta T_\text{ice} + s) = U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j}$, so $m = \dfrac{U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j}}{c_\text{ice}\,\Delta T_\text{ice} + s}$
+**Formula:** $$\begin{aligned} Q_\text{absorbed} &= Q_\text{released} \\
+Q_\text{absorbed} &= c_\text{ice}\,m\,\Delta T_\text{ice} + s\,m \\
+&= m\,(c_\text{ice}\,\Delta T_\text{ice} + s) \\
+P &= U A\,\Delta T \\
+E &= P\,t \\
+Q_\text{released} &= E + c\,m_\text{j}\,\Delta T_\text{j} \\
+&= U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j} \\
+m\,(c_\text{ice}\,\Delta T_\text{ice} + s) &= U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j} \\
+m &= \dfrac{U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j}}{c_\text{ice}\,\Delta T_\text{ice} + s}
+\end{aligned}
+$$
 **Conversions:** $t = 6.0\,\text{h} = 21\,600\,\text{s}$ and $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. The change in the temperature of the ice is $\Delta T_\text{ice} = 0\,{}^\circ\text{C} - (-10\,{}^\circ\text{C}) = 10\,\text{K}$, the same in kelvins.
 
 **Substitution:**
@@ -165,7 +220,13 @@ The wall also only slows down the conduction of heat and does not prevent it, an
 **Given:** power $P = 2.0\,\text{kW}$, water $m = 1.5\,\text{kg}$, $T_\text{initial} = 20\,{}^\circ\text{C}$, $T_\text{final} = 100\,{}^\circ\text{C}$; given in the problem $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Find:** heating time $t$ in seconds
 **Principle:** By the assumption, all of the electrical energy $P\,t$ goes into heating the water. The water does not boil or vaporise, so its state does not change and $Q = c\,m\,\Delta T$ is enough. From the energy balance $P\,t = c\,m\,\Delta T$.
-**Formula:** $P\,t = c\,m\,\Delta T$, so $t = \dfrac{c\,m\,\Delta T}{P}$
+**Formula:** $$\begin{aligned} E &= P\,t \\
+Q &= c\,m\,\Delta T \\
+E &= Q \\
+P\,t &= c\,m\,\Delta T \\
+t &= \dfrac{c\,m\,\Delta T}{P}
+\end{aligned}
+$$
 **Conversions:** The change in temperature is the same in kelvins: $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$. The power is $P = 2.0\,\text{kW} = 2000\,\text{W}$, so that the energy is in joules and the time in seconds.
 **Substitution:** $t = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1.5\,\text{kg} \cdot 80\,\text{K}}{2000\,\text{W}} = \dfrac{502\,800\,\text{J}}{2000\,\text{W}} = 251.4\,\text{s}$
 **Answer:** $250\,\text{s}$, two significant figures, as in the mass $1.5\,\text{kg}$ and the power $2.0\,\text{kW}$.
@@ -175,7 +236,13 @@ The wall also only slows down the conduction of heat and does not prevent it, an
 **Given:** power $P = 6.0\,\text{kW}$, stones $m = 40\,\text{kg}$ and $c = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; from the table $T = 20\,{}^\circ\text{C}$ at $0\,\text{min}$ and $T = 275\,{}^\circ\text{C}$ at $30\,\text{min}$ (intermediate values $112\,{}^\circ\text{C}$ and $196\,{}^\circ\text{C}$)
 **Find:** efficiency $\eta$ of the heating as a percentage
 **Principle:** The stones stay solid, so the energy transferred to them is $Q = c\,m\,\Delta T$. The elements convert electrical energy into internal energy at the power $P$, and it is transferred to the stones as heat, so the energy used is $P\,t$. Efficiency is the ratio of the useful energy to the energy used.
-**Formula:** $\eta = \dfrac{Q}{P\,t} = \dfrac{c\,m\,\Delta T}{P\,t}$
+**Formula:** $$\begin{aligned} \eta &= \dfrac{E_\text{useful}}{E} \\
+E_\text{useful} &= Q \\
+Q &= c\,m\,\Delta T \\
+E &= P\,t \\
+\eta &= \dfrac{c\,m\,\Delta T}{P\,t}
+\end{aligned}
+$$
 **Conversions:** The change in temperature is the same in kelvins: $\Delta T = 275\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 255\,\text{K}$. The time is $t = 30\,\text{min} = 1800\,\text{s}$ and the power is $P = 6.0\,\text{kW} = 6000\,\text{W}$.
 **Substitution:** $\eta = \dfrac{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 40\,\text{kg} \cdot 255\,\text{K}}{6000\,\text{W} \cdot 1800\,\text{s}} = \dfrac{8.16 \cdot 10^{6}\,\text{J}}{10.8 \cdot 10^{6}\,\text{J}} = 0.756 = 75.6\,\%$
 **Answer:** $76\,\%$, two significant figures, as in the power $6.0\,\text{kW}$ and the mass $40\,\text{kg}$.
@@ -193,7 +260,15 @@ As the stones get hotter, a larger share of the elements' power of $6.0\,\text{k
 **Reading the graph:** The points $(T_\text{out}, E)$ lie approximately on a descending line, but not exactly on it because of variation in the measurements. The fitted line passes between the points.
 
 The slope is read from two points of the line: $(8\,{}^\circ\text{C};\ 1210\,\text{kWh})$ and $(-8\,{}^\circ\text{C};\ 2810\,\text{kWh})$ (a point of the line, not a measured point; the value in the table is $2790\,\text{kWh}$), so $k = \dfrac{2810\,\text{kWh} - 1210\,\text{kWh}}{-8\,\text{K} - 8\,\text{K}} = -100\,\dfrac{\text{kWh}}{\text{K}}$.
-**Formula:** $k = -UA\,t$, so $UA = \dfrac{-k}{t}$
+**Formula:** $$\begin{aligned} P &= U A\,\Delta T \\
+E &= P\,t \\
+\Delta T &= T_\text{in} - T_\text{out} \\
+E &= U A\,t\,(T_\text{in} - T_\text{out}) \\
+&= U A\,t\,T_\text{in} - U A\,t\,T_\text{out} \\
+k &= -U A\,t \\
+U A &= \dfrac{-k}{t}
+\end{aligned}
+$$
 **Conversions:** The magnitude of the slope is $100\,\dfrac{\text{kWh}}{\text{K}}$, and $\dfrac{\text{kWh}}{\text{h}} = \text{kW}$. Finally $1\,\text{kW} = 1000\,\text{W}$.
 
 **Substitution:** $UA = \dfrac{100\,\tfrac{\text{kWh}}{\text{K}}}{720\,\text{h}} = 0.1389\,\dfrac{\text{kW}}{\text{K}} = 139\,\dfrac{\text{W}}{\text{K}}$
@@ -210,7 +285,14 @@ Above it no heating is needed, so the line tells you the indoor temperature, not
 
 The student ignored the indoor temperature. When there is ice, it is $0\,{}^\circ\text{C}$ inside and the energy coming through the wall melts the ice, $UA\Delta T\,t = s\,m$.
 
-**Formula:** $UA\Delta T\,t = s\,m$, so $t = \dfrac{s\,m}{UA\Delta T}$
+**Formula:** $$\begin{aligned} P &= U A\,\Delta T \\
+E &= P\,t \\
+Q &= s\,m \\
+E &= Q \\
+U A\,\Delta T\,t &= s\,m \\
+t &= \dfrac{s\,m}{U A\,\Delta T}
+\end{aligned}
+$$
 **Conversions:** No conversion of temperatures: $\Delta T = 26\,\text{K}$. The latent heat of fusion is $s = 334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$ and finally $1\,\text{h} = 3600\,\text{s}$.
 **Substitution:** $t = \dfrac{334\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0.80\,\text{kg}}{1.4\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 0.70\,\text{m}^2 \cdot 26\,\text{K}} = \dfrac{267\,200\,\text{J}}{25.48\,\text{W}} = 10\,487\,\text{s} = 2.913\,\text{h}$
 **Answer:** $2.9\,\text{h}$, two significant figures, as in the values $0.80\,\text{kg}$, $0.70\,\text{m}^2$ and $1.4\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$.
@@ -243,7 +325,18 @@ If the U-value were read the wrong way round, half would be obtained. If the ris
 
 Since $UA$, $t$ and the indoor temperature are the same, the energy of the season is $UA\,t\,\Sigma\Delta T$. The fuel has to supply this energy divided by the efficiency, and the mass of firewood is obtained from the heating value.
 
-**Formula:** $E = UA\,t\,\Sigma\Delta T$, the cost of electricity $C_\text{A} = \dfrac{E}{\eta_\text{A}}\,h_\text{A}$ and of wood $C_\text{B} = \dfrac{E}{\eta_\text{B}\,H}\,h_\text{B}$, so the saving is $C_\text{A} - C_\text{B}$
+**Formula:** $$\begin{aligned} P &= U A\,\Delta T \\
+E &= \Sigma\,P\,t \\
+&= U A\,t\,\Sigma\Delta T \\
+\eta &= \dfrac{E}{E_\text{used}} \\
+C_\text{A} &= \dfrac{E}{\eta_\text{A}}\,h_\text{A} \\
+m\,H &= \dfrac{E}{\eta_\text{B}} \\
+m &= \dfrac{E}{\eta_\text{B}\,H} \\
+C_\text{B} &= m\,h_\text{B} \\
+&= \dfrac{E}{\eta_\text{B}\,H}\,h_\text{B} \\
+\text{saving} &= C_\text{A} - C_\text{B}
+\end{aligned}
+$$
 **Conversions:** The temperature differences $\Delta T = 18\,{}^\circ\text{C} - T_\text{out}$ are the same in kelvins: $13$, $18$, $22$, $27$, $25$ and $21\,\text{K}$. The heat loss coefficient is $UA = 0.50 \cdot 120\,\tfrac{\text{W}}{\text{K}} = 60\,\tfrac{\text{W}}{\text{K}} = 0.060\,\tfrac{\text{kW}}{\text{K}}$. The heating value $15\,\tfrac{\text{MJ}}{\text{kg}}$ is converted: $1\,\text{kWh} = 3.6\,\text{MJ}$, so $H = \dfrac{15}{3.6}\,\tfrac{\text{kWh}}{\text{kg}} = 4.167\,\tfrac{\text{kWh}}{\text{kg}}$.
 
 **Substitution:** The sum of the temperature differences is $$\begin{aligned} &13 + 18 + 22 + 27 + 25 + 21 \\ &= 126\,\text{K} \end{aligned}$$, so $E = 0.060\,\tfrac{\text{kW}}{\text{K}} \cdot 720\,\text{h} \cdot 126\,\text{K} = 5443\,\text{kWh}$.
@@ -262,7 +355,15 @@ The model assumes a constant indoor temperature, the monthly mean temperatures, 
 **Principle:** The machine removes energy from the water in three stages, and all the power is used for them: $P\,t = Q_1 + Q_2 + Q_3$. The water first cools to $0\,{}^\circ\text{C}$ ($Q_1 = c_\text{water}\,m\,\Delta T_1$), then freezes at constant temperature ($Q_2 = s\,m$: when freezing, the same energy is released as is needed for melting), and finally the ice cools to $-5.0\,{}^\circ\text{C}$ ($Q_3 = c_\text{ice}\,m\,\Delta T_3$).
 
 The temperature does not change during freezing, so $c\,\Delta T$ is not used for it.
-**Formula:** $m = \rho\,V$, $$\begin{aligned} P\,t &= c_\text{water}\,m\,\Delta T_1 \\ &+ s\,m + c_\text{ice}\,m\,\Delta T_3 \end{aligned}$$, so $P = \dfrac{m\,(c_\text{water}\,\Delta T_1 + s + c_\text{ice}\,\Delta T_3)}{t}$
+**Formula:** $$\begin{aligned} m &= \rho\,V \\
+Q_1 &= c_\text{water}\,m\,\Delta T_1 \\
+Q_2 &= s\,m \\
+Q_3 &= c_\text{ice}\,m\,\Delta T_3 \\
+P\,t &= Q_1 + Q_2 + Q_3 \\
+&= m\,(c_\text{water}\,\Delta T_1 + s + c_\text{ice}\,\Delta T_3) \\
+P &= \dfrac{m\,(c_\text{water}\,\Delta T_1 + s + c_\text{ice}\,\Delta T_3)}{t}
+\end{aligned}
+$$
 **Conversions:** The changes in temperature are the same in kelvins: $\Delta T_1 = 12\,\text{K}$ and $\Delta T_3 = 5.0\,\text{K}$. $s = 334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$ and $t = 10\,\text{h} = 36\,000\,\text{s}$.
 **Substitution:** The volume is $V = 60\,\text{m} \cdot 30\,\text{m} \cdot 0.030\,\text{m} = 54\,\text{m}^3$ and the mass is $m = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 54\,\text{m}^3 = 54\,000\,\text{kg}$.
 
@@ -291,7 +392,13 @@ The real cooling power needed is greater than the calculated one, because additi
 **Find:** the specific heat capacity $c$ in $\text{J/(kg}\cdot\text{K)}$
 **Principle:** Energy is conserved and all the power of the resistor goes to the block, so the energy $Pt$ transferred in time $t$ warms the block: $Pt = Q = cm\Delta T$.
 **Reading the graph:** The power is constant, so the graph is a straight line. The starting point is at a crossing of the grid, $(0\,\text{s};\ 20\,{}^\circ\text{C})$, and the end point at a crossing, $(180\,\text{s};\ 60\,{}^\circ\text{C})$. The grid spacing is $20\,\text{s}$ and $10\,{}^\circ\text{C}$. So the time is $t = 180\,\text{s}$ and the change in temperature is $\Delta T = 60 - 20 = 40\,{}^\circ\text{C} = 40\,\text{K}$.
-**Formula:** $Pt = cm\Delta T$, so $c = \dfrac{Pt}{m\Delta T}$
+**Formula:** $$\begin{aligned} E &= P\,t \\
+Q &= c\,m\,\Delta T \\
+E &= Q \\
+P\,t &= c\,m\,\Delta T \\
+c &= \dfrac{P\,t}{m\,\Delta T}
+\end{aligned}
+$$
 **Conversions:** A change in temperature is equal in degrees Celsius and in kelvins, $\Delta T = 40\,\text{K}$. Power in $\text{W}$ times time in $\text{s}$ is in joules, so no other conversions are needed.
 **Substitution:** $c = \dfrac{400\,\text{W} \cdot 180\,\text{s}}{2.0\,\text{kg} \cdot 40\,\text{K}} = \dfrac{72\,000\,\text{J}}{80\,\text{kg}\cdot\text{K}} = 900\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Answer:** $c \approx 900\,\text{J/(kg}\cdot\text{K)}$, two significant figures as in the mass $2.0\,\text{kg}$.
@@ -302,7 +409,12 @@ The real cooling power needed is greater than the calculated one, because additi
 **Find:** the time $t$ in hours until all the ice has melted
 **Principle:** Energy is conserved, and the energy $Pt$ transferred through the walls warms the ice to the melting point and melts it. The graph shows the whole energy needed, and at a constant power $t = Q/P$.
 **Reading the graph:** The temperature rises from the point $(0\,\text{kJ};\ -16\,{}^\circ\text{C})$ to $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$ and then stays at $0\,{}^\circ\text{C}$ while the ice melts, up to the point $(220\,\text{kJ};\ 0\,{}^\circ\text{C})$. All the ice has melted when the energy transferred is $Q = 220\,\text{kJ}$. This includes both warming and melting the ice. The grid spacing is $20\,\text{kJ}$.
-**Formula:** $Pt = Q$, so $t = \dfrac{Q}{P}$
+**Formula:** $$\begin{aligned} E &= P\,t \\
+E &= Q \\
+P\,t &= Q \\
+t &= \dfrac{Q}{P}
+\end{aligned}
+$$
 **Conversions:** $Q = 220\,\text{kJ} = 220\,000\,\text{J}$ and $1\,\text{h} = 3600\,\text{s}$
 **Substitution:** $t = \dfrac{220\,000\,\text{J}}{25\,\text{W}} = 8800\,\text{s} = \dfrac{8800}{3600}\,\text{h} = 2.44\,\text{h}$
 **Answer:** $t \approx 2.4\,\text{h}$, that is, about $2\,\text{h}\ 27\,\text{min}$, two significant figures, because the power $25\,\text{W}$ is a two-figure value.
