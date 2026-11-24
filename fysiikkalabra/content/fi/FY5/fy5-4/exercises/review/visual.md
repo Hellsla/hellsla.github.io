@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: eeef02e000ff63e5
-none
+CONTENT-HASH: afd4fbbebd320dc8
+SCOPE: delta answers,numbers from eeef02e000ff63e5 base 48ff417
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md L3-05 Kaava — the "Kitkan kanssa" rows have no left-hand quantity header such as `\Sigma F_x` any more; the sentence "Kitkan kanssa:" is enough, but a short lead like "Kitkan kanssa (suunnat kuten yllä):" would help; optional.
+(none)
 
 ## Checked
-- Delta: only the "Kitkan kanssa" block of L3-05 (banked curve) changed. Opened open-exercises-L3-1280-9 (Kaava both blocks, division step) and -10 (Sijoitus, answer, Järkevyys), plus -6 and -7 (neighbouring task) to see the layout.
-- Both rows align at `=`, KaTeX clean, no clipping or overflow; the two-row chain now reads N-equations straight into the division step; Sijoitus and the answer 97 km/h unchanged; force diagram colours unchanged.
+- Delta: L3-01 and L3-03 (4-20) limit values rounded to the safe side (27 km/h, 210 m).
+- Opened open-exercises-L3-1280-1, -2 (4-18 question, Sijoitus, Vastaus 27 km/h, Järkevyys) and -4, -5 (4-20 question, Kaava, Sijoitus, Vastaus 210 m) for this language.
+- KaTeX clean, rows aligned at =, units upright with thin space, no clipping or overflow; the answer box, the exact value and the rounding-direction sentence read in logical order; force diagrams unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

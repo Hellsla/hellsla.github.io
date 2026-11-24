@@ -1,25 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: eeef02e000ff63e5
+CONTENT-HASH: afd4fbbebd320dc8
+SCOPE: delta answers,numbers from eeef02e000ff63e5 base 48ff417
 
 ## Blocking
 
 ## Polish
-- content/fi/FY5/fy5-4/exercises/solutions.md:300 (L3-05) — the step from `\tan\alpha = \dfrac{N\sin\alpha}{N\cos\alpha}` to `\dfrac{v_0^2}{g r}` skips the division $\dfrac{m v_0^2/r}{mg}$. The result is correct; showing that one row would make the step explicit.
-- solutions.md:302 (L3-05, Kitkan kanssa) — unlike the frictionless block above it, these two rows have no $\Sigma F_x$ / $\Sigma F_y$ labels. — For consistency, start them from $\Sigma F_x = m a_\text{n}$ and $\Sigma F_y = 0$.
-- solutions.md:163 (L3-03) and :125 (L3-01) — this is the same note as before, on lines the diff did not touch. Both answers are limit values rounded to the unsafe side. In L3-03, $r \ge 201\,\text{m}$ is given as $2{,}0\cdot10^2\,\text{m}$; in L3-01, $v \le 27{,}6\,\text{km/h}$ is given as $28\,\text{km/h}$. Fixing them changes answers, so they need their own change.
+- content/fi/FY5/fy5-4/exercises/solutions.md:164 (L3-03, reasonableness check) — "about 450 m" for 120 km/h is the exact 2,25 · 201,4 m = 453 m. It is also a smallest allowed radius, and by the same rule it would round up to 460 m (or 2,25 · 210 m ≈ 470 m). It is not wrong as an estimate. — Optionally write "about 460 m".
 
 ## Checked
-- The hash was the same at the start and the end. I judged only the diff:
-  - 17 Kaava steps were rewritten as aligned blocks.
-  - Some paragraphs were split.
-  - The Sijoitus rows, answers, units and tolerances are unchanged.
-- The previous Blocking item is fixed. In L3-05 the friction rows now read `N\cos\alpha - \mu_0 N\sin\alpha = mg` and `N\sin\alpha + \mu_0 N\cos\alpha = m v^2/r`, which is correct.
-- Every block starts from $\Sigma F = m a_\text{n}$ with $a_\text{n} = v^2/r$, or from the force components, and is simplified to the form that Sijoitus uses.
-- The signs are right:
-  - L2-01: the dip, with $+m a_\text{n}$.
-  - L2-03: the crest, with $-m a_\text{n}$ and $y$ up.
-  - L3-04: the bottom ($N_1 - mg = m a_1$) and the top ($N_2 + mg = m a_2$), and $N_2 = 0 \Rightarrow v_\text{min} = \sqrt{g r}$.
-- The friction rows use $F_\mu = \mu_0 N$ only at the limit the task asks for: L3-01, L2-06 and L3-06. L3-03 keeps the inequality $F_\mu \le 0{,}25\,mg$, and $r \ge$ follows from it.
-- In L3-02, $T$ is named as the string's jännitysvoima in the Periaate, so `\Sigma F_x = T` is defined.
-- L2-05 derives $F = (m/r)v^2$, so the slope is $k = m/r$ and $m = kr$. This is right for a line through the origin.
-- I recomputed in one script: 6,667; 7,906; 1104,8; 6012; 2064; 27,62 km/h; 1,407 Hz; 201,4; 24,98 g; 3672; 75; 0,6796. All of them match the Sijoitus values. The L3-04 and L3-05 values are as in my previous report, and their Sijoitus rows are unchanged.
+- The hash was the same at the start and the end. I judged only the diff (L3-01, L3-03: answer, tolerance, the Answer line, answers.py). My previous Polish item (limits rounded to the unsafe side) is fixed.
+- I recomputed in one script with my own formulas: L3-01 v = sqrt(mu0 g r) = 7,672 m/s = 27,62 km/h; L3-03 r = v²/(0,25 g) = 201,36 m. answers.py now gives 27 (floor) and 210 (ceil to two figures). These match exercises.json in this language.
+- Direction of rounding: L3-01 asks for the greatest speed ("at most"), so it rounds down to 27 km/h; L3-03 asks how large the radius must be at least ("at least"), so it rounds up to 210 m = 2,1·10² m. Both follow CLAUDE.md P7 (limit values to the safe side). Two figures are right (60 m, 0,10; 80 km/h, 0,25).
+- Tolerances, checked with the page's rule max(2 %, tol, half a unit): L3-01 (tol 0,03) accepts 27 and the exact 27,6, and 28 is only "near"; L3-03 (tol 0,045) accepts 210, 201 and 201,4, and 200 is only "near". So the exact value is accepted and the unsafe rounding is not.
+- The new Answer lines state the exact value, the significant figures and the reason for the rounding direction correctly. The Sijoitus rows above them are unchanged (27,62 km/h; 201,4 m).
+- The L3-01 check (sqrt 8 · 27,62 ≈ 78 km/h on dry asphalt) is still consistent.
