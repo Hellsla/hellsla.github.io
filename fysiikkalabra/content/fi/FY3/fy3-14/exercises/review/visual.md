@@ -1,18 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: 46f47205766eba0c
+VERDICT: FAIL
+CONTENT-HASH: 374766fe1b22fc4c
 
 ## Blocking
-(none)
+- [Major] solutions.md fy3-14-L2-04 (9-13), L3-03 (9-21), L3-04 (9-22) Kaava — the final fraction's numerator is hand-broken with `\begin{array}`: it renders as a stacked "c_v m_v (T_v" over "−T) − c_v m_j T" (L3-04 as four lines "c_v m_v (T_v / −T) / −c_v m_j T / −c_j m_j ΔT_j"), splitting the bracket T_v − T across lines — the formula is hard to read, and it breaks even at 1280 px where it fits — keep each numerator term whole (break only before a + or − outside a bracket, or define the numerator as a symbol, e.g. first row `X = …`, then `s = \dfrac{X}{m_\text{j}}`).
+- [Major] solutions.md fy3-14-L3-03 (9-21) Kaava — the `\quad` continuation rows were merged into one line, and the equals signs of the three rows are not in one column (row 1 `Q_luovutettu = Q_vastaanotettu` sits about 150 px to the right of rows 2–3) — an aligned block with unaligned rows reads as broken typography — give every row the form `lhs &= rhs` with the left side on its own row when long, as in L3-04's first rows.
 
 ## Polish
 (none)
 
 ## Checked
-- Round 1, delta (md-paragraphs): solutions.md only, solution paragraphs cut, words in the same order.
-- 1280 px with solutions open: fy3-14-open-exercises-1280-1.png (level 1, 9-1: paragraph breaks between answer, reasoning and Järkevyys inside the card, display aligned at "=", no clipping), fy3-14-open-exercises-L2-1280-1.png (level 2, 9-10: Kaava and Sijoitus paragraphs with displays, punctuation after display stays on its row, units thin-spaced).
-- 390 px: fy3-14-example-390-1.png and fy3-14-stage-sovella-390-1.png (the stored 390 px captures show the lesson's worked-example stages with the same paragraph/display layout, not exercise solutions; layout holds, no overflow). There are no 360 px captures.
-- Language: split paragraphs read as one idea each.
+- Delta (Kaava re-set as aligned blocks; solutions.md). Opened at 1280 px, solutions open: open-exercises-1280-1 and -8 (L1, short Kaava fine), L2-1280-1/-2/-3 (9-11, 9-12: aligned, fine), L2-1280-4 (9-13: broken numerator, row 1 `=` about 16 px off), L3-1280-4/-5 (9-21: misaligned, broken), L3-1280-6 (9-22: four-line numerator), L3-1280-7/-9/-10 (rest fine).
 - Hash same at start and end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 2 · Finnish 5 · accessibility 4

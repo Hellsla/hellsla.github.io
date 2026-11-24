@@ -1,18 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: ec640d55d5e51c5c
+VERDICT: FAIL
+CONTENT-HASH: 2b0d3c5665d5edc6
 
 ## Blocking
-(none)
+- [Major] solutions.md fy3-16-L3-03 (16-22) Kaava — the long block does not align at "=": rows `Q = c m ΔT` and `= m(…)` sit at the right, while the row `m(c_jää ΔT_jää + s) = UAΔTt + c m_j ΔT_j` starts at the left edge of the card about 215 px away, and the final fraction's numerator is stacked with a leading "+" ("UAΔTt" over "+c m_j ΔT_j"). Equals signs in two columns, one row nearly touching the card edge — hard to follow, and the quad continuation does not read as a continuation — put the long left side on its own row (`m\,(…) \\ &= …`) with no quad rows, or break the chain into shorter named steps so every `=` shares one column.
 
 ## Polish
-(none)
+- [Minor] fy3-16 L3-03 Kaava is 12 rows, longer than the other Kaava blocks; two or three fewer rows would read better.
 
 ## Checked
-- Round 1, delta (md-paragraphs): solutions.md only, solution paragraphs cut, words in the same order.
-- 1280 px with solutions open: fy3-16-open-exercises-1280-1.png (level 1, 16-1: Muunnokset and Sijoitus displays set apart, Vastaus and Järkevyys blocks, no clipping), fy3-16-open-exercises-L2-1280-1.png (level 2, 16-10: unit-conversion displays, "jotta watti kertaa sekunti on joule" as own paragraph, substitution rows aligned at "=", no overflow).
-- 390 px: fy3-16-example-390-1.png and fy3-16-stage-sovella-390-1.png (the stored 390 px captures show the lesson's worked-example stages with the same paragraph/display layout, not exercise solutions; layout holds, no overflow). There are no 360 px captures.
-- Language: split paragraphs read as one idea each.
+- Delta (Kaava re-set as aligned blocks; solutions.md). Opened at 1280 px, solutions open: open-exercises-L3-1280-1 (16-20: fine), L3-1280-4 and -5 (16-22: defect above), L2-1280-3 (fine).
 - Hash same at start and end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 2 · Finnish 5 · accessibility 4
