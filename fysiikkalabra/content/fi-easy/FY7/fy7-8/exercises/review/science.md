@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8612c63198757666
+CONTENT-HASH: e7ab328442b3a9cb
+SCOPE: delta md-paragraphs,numbers,typography from 8612c63198757666 base 5b3ca4f
 
 ## Blocking
 
 ## Polish
-
+- solutions.md:327-329 (L2-10 d) — the new paragraph break puts "Häviöteho on verrannollinen resistanssiin." in one paragraph and its example "Esimerkiksi kaksi kertaa pidempi johto…" at the start of the next one — keep the example in the same paragraph as the claim (layout only, not physics).
 
 ## Checked
-- Delta round 2: compared with the files at the round-1 review commit 1ec494e0df with the row markup stripped: exercises.json is byte-identical and solutions.md differs in one line (L3-04 c) only by row breaks; no number, sign, unit or word changed. answers.py unchanged.
-- solutions.md:191 (L3-04 c, saving): rows are now "$= (43\,440\,\text{MWh} - 13\,140\,\text{MWh})$", "$\cdot 50\,\tfrac{\text{€}}{\text{MWh}}$", "$= 30\,300\,\text{MWh} \cdot 50\,\tfrac{\text{€}}{\text{MWh}}$", "$= 1{,}515 \cdot 10^{6}\,\text{€}$": the bracket is whole on one row and each relation starts a row; the chain reads correctly.
-- Recomputed: $(43\,440 - 13\,140)\,\text{MWh} = 30\,300\,\text{MWh}$, times $50\,\text{€/MWh}$ gives $1\,515\,000\,\text{€}$; $4{,}959\,\text{MW} \cdot 8760\,\text{h} = 43\,440\,\text{MWh}$, $1{,}500\,\text{MW} \cdot 8760\,\text{h} = 13\,140\,\text{MWh}$.
-- The packet for this language starts from an older passed version (hash aa0d1a01b2d22233), so its diff also holds the new task fy7-8-L2-10 (FY7-A1), judged here: every formula and number of the task text and of the solution (82 formula spans) is identical to the Finnish version passed in round 1; only the sentences are simplified.
-- L2-10 recomputed from the task text: $I = P/(\sqrt{3}\,U)$ = 1049,7 A and 288,7 A; $P_\text{h} = 3RI^2$ = 13,22 MW and 1,000 MW (6,6 % and 0,50 % of 200 MW); ratio $(400:110)^2 = 13{,}2$; $1/0{,}90^2 = 1{,}23$; $RI = 4{,}2\,\text{kV}$; answers.py gives 13,22314 = box answer 13,2231 MW, shown 13 MW inside the 2 % tolerance.
-- L2-10 model and wording: three-phase stated in the task, $U$ line voltage and $I$ phase-conductor current, $U^2 : R$ excluded with the right reason, "muuttuu sisäenergiaksi … siirtyy lämpönä"; the added plain-language gloss of "kääntäen verrannollinen" (loss falls as voltage rises) is true and the exact $1 : U^2$ relation stands beside it. Source numbers (5400, 1000, 7600 km; 320 km HVDC; 0,4–110 kV) as verified against the Fingrid page in round 1.
-- Hash identical at start and end.
+- Delta from 8612c63198757666 (commit 5b3ca4f): only the solutions.md Kaava steps and paragraph breaks changed. exercises.json and answers.py did not change.
+- Every new Kaava chain starts from the basic law and is simplified symbolically to the form that is substituted: L1-03 $P_1 = P_2 \Rightarrow I_1 = U_2 I_2 / U_1$; L2-01 and L2-03 $P_\text{h} = RI^2 = RP^2/U^2$, $P_\text{h}/P = RP/U^2$; L3-01 the same; L3-02 $R = 0{,}010\,U^2/P$; L3-03 $P_2/P_1 = U_2^2/U_1^2$; L1-07 $P_\text{h,2} = P_\text{h,1}U_1^2/U_2^2$; L2-09 $R = 0{,}030\,U^2/P$; L2-10 $P_\text{h} = RP^2/(U^2\cos^2\varphi)$. Every step is algebraically correct.
+- L3-04: the closed form $RP^2t(1/U_\text{A}^2 - 1/U_\text{B}^2)\cdot\text{hinta}$ is correct. Recomputed, it gives $1{,}515 \cdot 10^{6}\,\text{€}$, the same as the step-by-step route.
+- Recomputed in one script and compared with answers.py: 5,0 A; 826,4 kW; 0,9917 %; 0,75 %; 4,0 Ω; 3,306; 210 kW; 87,7 %; 1,5149 M€; 6,0 Ω; 13,22 MW and 1,000 MW. All agree.
+- The paragraph splits (L2-06, L3-05, L2-08, L2-10 a and d) change no number, sign, unit or claim.
+- The model stays the same as in the lesson: two-conductor $P = UI$, three-phase only in L2-10, and $U^2 : R$ is excluded for the right reason.
+- The hash was the same at the start and the end.
