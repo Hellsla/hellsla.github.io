@@ -1,19 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 6d5e4fe26062f07c
+CONTENT-HASH: b8da362cb104dafe
 
 ## Blocking
 
 ## Polish
-- solutions.md:268 (fy3-15-L3-04 Annettu), carried over: the CHP heat is given as $0{,}560\,P_{\text{o},\text{B}}$. In the Kaava, $P_{\text{o},\text{B}}$ is option B's total (CHP plus boiler), and the CHP plant's own fuel power is $P_{\text{o},\text{CHP}}$. Fix: write $0{,}560\,P_{\text{o},\text{CHP}}$ in the Annettu so that one symbol means one quantity. The task text itself is unambiguous.
 
 ## Checked
-- I read the changed Kaava block of L3-04 on disk (solutions.md:272–280). It now ends with the asked quantity, $\Delta P_\text{o} = P_{\text{o},\text{A}} - P_{\text{o},\text{B}}$, which is the Kysytty of the task (part c).
-- The whole symbolic chain is right:
-  - It starts from $P_\text{o} = P_\text{hyöty}/\eta$.
-  - Option A: $P_{\text{o},\text{A}} = P_\text{s}/\eta_\text{s,A} + P_\text{k}/\eta_\text{kat}$.
-  - Option B: $P_{\text{o},\text{CHP}} = P_\text{s}/\eta_\text{s,B}$ and $P_\text{k,CHP} = 0{,}560\,P_{\text{o},\text{CHP}}$, with the boiler covering $P_\text{k} - P_\text{k,CHP}$.
-  - This is the model the task text describes.
-- I recomputed with my own formulas: $P_{\text{o},\text{A}} = 250 + 222{,}2 = 472{,}2\,\text{MW}$ and $P_{\text{o},\text{B}} = 312{,}5 + 25{,}0/0{,}900 = 340{,}3\,\text{MW}$. The difference is $131{,}9\,\text{MW}$, so the answer $132\,\text{MW}$ is right. The saving is $131{,}9/472{,}2 = 28\,\%$, as stated.
-- The reasonableness check is consistent: CHP total efficiency $0{,}880$ and $275\,\text{MW}$ useful power, against $0{,}635$ for option A.
-- No Sijoitus, answer or answers.py value changed.
+- The diff changes only the Annettu of fy3-15-L3-04 (solutions.md:267). The CHP district heat is now $0{,}560\,P_{\text{o},\text{CHP}}$, the same symbol as in the Kaava row $P_\text{k,CHP} = 0{,}560\,P_{\text{o},\text{CHP}}$. My earlier Polish item is resolved: one symbol means one quantity, and $P_{\text{o},\text{B}}$ is option B's total only.
+- I recomputed with my own formulas: $P_{\text{o},\text{A}} = 100/0{,}400 + 200/0{,}900 = 472{,}22\,\text{MW}$ and $P_{\text{o},\text{CHP}} = 312{,}5\,\text{MW}$. The CHP heat is $175{,}0\,\text{MW}$ and the boiler's fuel $27{,}78\,\text{MW}$, so $P_{\text{o},\text{B}} = 340{,}28\,\text{MW}$. The difference is $131{,}94 \approx 132\,\text{MW}$ and the saving 27,9 % ≈ 28 %. answers.py line 37 matches.
+- The symbolic chain, the Sijoitus and the Järkevyys (total efficiency 0,880, 275 MW useful, option A 0,635) are unchanged and consistent with the new Annettu.
+- No other line changed. My earlier checks still hold.
 - The hash was the same at the start and the end.
