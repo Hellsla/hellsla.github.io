@@ -42,7 +42,7 @@ def types():
     f = Fig("fy510-types", 412, "Kaavakuva, ei mittakaavassa. Ylhäällä poikittainen aalto: naru on siniaallon muotoinen, ja sininen "
             "nuoli osoittaa aallon etenemissuunnan oikealle. Kolmessa narun kohdassa pystysuora kaksipäinen nuoli näyttää, "
             "että kohta liikkuu ylös ja alas eli kohtisuoraan etenemissuuntaa vastaan. Alhaalla pitkittäinen aalto: pitkän "
-            "kierrejousen kierrokset ovat paikoin tiheässä (tihentymä) ja paikoin harvassa (harvennus). Yhden kierroksen "
+            "kierrejousen kierrokset ovat paikoin tiheässä (tihentymä) ja paikoin harvassa (harventuma). Yhden kierroksen "
             "yllä vaakasuora kaksipäinen nuoli näyttää, että kierros liikkuu edestakaisin jousen suuntaisesti. Sininen nuoli "
             "osoittaa tämänkin aallon etenemissuunnan oikealle.", anim=True)
     P = WAVE_PERIOD
@@ -84,8 +84,8 @@ def types():
     f.motion([(0, 0, 0, 0, 0), (1, 0, 0, 0, 0)], P)                    # the labels name places of the still: gone while the crowding travels
     f.tex(160, 354, r"\text{tihentymä}", "middle")
     f.tex(360, 354, r"\text{tihentymä}", "middle")
-    f.tex(260, 384, r"\text{harvennus}", "middle")
-    f.tex(460, 384, r"\text{harvennus}", "middle")
+    f.tex(260, 384, r"\text{harventuma}", "middle")
+    f.tex(460, 384, r"\text{harventuma}", "middle")
     f.end()
     return f.svg()
 

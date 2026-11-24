@@ -41,7 +41,7 @@ def speaker(f, x, y, sc=1.0):
 def longitudinal():
     f = Fig("fy514-long", 356, "Kaavakuva, ei mittakaavassa. Ylhäällä vasemmalla kaiutin, jonka edessä on ilmaa putkessa. Ilman "
             "hiukkaset on piirretty sinisinä pisteinä, ja ne ovat paikoin tiheässä ja paikoin harvassa: tiheät kohdat ovat "
-            "tihentymiä ja harvat harvennuksia. Hiukkaset värähtelevät edestakaisin aallon etenemissuunnassa, mitä esittää "
+            "tihentymiä ja harvat harventumia. Hiukkaset värähtelevät edestakaisin aallon etenemissuunnassa, mitä esittää "
             "pieni kaksipäinen nuoli, ja aalto etenee oikealle, mitä esittää sininen nuoli. Alhaalla on saman hetken paine "
             "paikan funktiona: käyrä vaihtelee normaalin ilmanpaineen p0 molemmin puolin, ja sen huiput ovat tihentymien "
             "kohdalla. Kahden vierekkäisen tihentymän etäisyys on aallonpituus lambda.")
@@ -64,7 +64,7 @@ def longitudinal():
         xm = xc + m * lam
         if xm < x1 - 20: f.tex(xm, yc - hh - 22, r"\text{tihentymä}", "middle")
     xr = xc + lam / 2
-    f.tex(xr, yc + hh + 22, r"\text{harvennus}", "middle")
+    f.tex(xr, yc + hh + 22, r"\text{harventuma}", "middle")
     # particle oscillation and propagation
     f.arrow(xr + lam / 2 + 6, yc + hh + 22, xr + lam / 2 - 22, yc + hh + 22, INK, 2, 10)
     f.arrow(xr + lam / 2 - 16, yc + hh + 22, xr + lam / 2 + 12, yc + hh + 22, INK, 2, 10)
