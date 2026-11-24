@@ -175,19 +175,13 @@ $$T = \dfrac{84\,400\,\text{J}}{10\,475\,\tfrac{\text{J}}{\text{K}}} = 8.057\,{}
 
 By the assumption of the problem the inside is at $0\,{}^\circ\text{C}$, so the power through the wall stays constant.
 **Formula:** $$\begin{aligned} Q_\text{absorbed} &= Q_\text{released} \\
-Q_\text{absorbed} &= c_\text{ice}\,m\,\Delta T_\text{ice} \\
-&\quad + s\,m \\
-&= m\,(c_\text{ice}\,\Delta T_\text{ice} + s) \\
+Q_\text{absorbed} &= m\,(c_\text{ice}\,\Delta T_\text{ice} + s) \\
 P &= U A\,\Delta T \\
 E &= P\,t \\
-Q_\text{released} &= E \\
+Q_\text{released} &= E + c\,m_\text{j}\,\Delta T_\text{j} \\
+m\,(c_\text{ice}\,\Delta T_\text{ice} + s) &= U A\,\Delta T\,t \\
 &\quad + c\,m_\text{j}\,\Delta T_\text{j} \\
-&= U A\,\Delta T\,t \\
-&\quad + c\,m_\text{j}\,\Delta T_\text{j} \\
-m\,(c_\text{ice}\,\Delta T_\text{ice} + s) \\
-&= U A\,\Delta T\,t \\
-&\quad + c\,m_\text{j}\,\Delta T_\text{j} \\
-m &= \dfrac{\begin{array}{c} U A\,\Delta T\,t \\ + c\,m_\text{j}\,\Delta T_\text{j} \end{array}}{c_\text{ice}\,\Delta T_\text{ice} + s}
+m &= \dfrac{U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j}}{c_\text{ice}\,\Delta T_\text{ice} + s}
 \end{aligned}
 $$
 **Conversions:** $t = 6.0\,\text{h} = 21\,600\,\text{s}$ and $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. The change in the temperature of the ice is $\Delta T_\text{ice} = 0\,{}^\circ\text{C} - (-10\,{}^\circ\text{C}) = 10\,\text{K}$, the same in kelvins.

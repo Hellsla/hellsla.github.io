@@ -161,19 +161,13 @@ $$T = \dfrac{84\,400\,\text{J}}{10\,475\,\tfrac{\text{J}}{\text{K}}} = 8{,}057\,
 **Kysytty:** jääpussin pienin massa $m$ kilogrammoina
 **Periaate:** Energia säilyy. Jään täytyy 6,0 tunnin aikana ottaa vastaan kaksi energiaa: seinän läpi tuleva energia ja juomien luovuttama energia. Jää lämpenee ensin $-10\,{}^\circ\text{C}$:sta $0\,{}^\circ\text{C}$:seen ($c_\text{jää}\,\Delta T_\text{jää}$). Sitten se sulaa ($s$). Tehtävän oletuksen mukaan sisällä on $0\,{}^\circ\text{C}$, joten seinän teho pysyy vakiona.
 **Kaava:** $$\begin{aligned} Q_\text{vastaanotettu} &= Q_\text{luovutettu} \\
-Q_\text{vastaanotettu} &= c_\text{jää}\,m\,\Delta T_\text{jää} \\
-&\quad + s\,m \\
-&= m\,(c_\text{jää}\,\Delta T_\text{jää} + s) \\
+Q_\text{vastaanotettu} &= m\,(c_\text{jää}\,\Delta T_\text{jää} + s) \\
 P &= U A\,\Delta T \\
 E &= P\,t \\
-Q_\text{luovutettu} &= E \\
+Q_\text{luovutettu} &= E + c\,m_\text{j}\,\Delta T_\text{j} \\
+m\,(c_\text{jää}\,\Delta T_\text{jää} + s) &= U A\,\Delta T\,t \\
 &\quad + c\,m_\text{j}\,\Delta T_\text{j} \\
-&= U A\,\Delta T\,t \\
-&\quad + c\,m_\text{j}\,\Delta T_\text{j} \\
-m\,(c_\text{jää}\,\Delta T_\text{jää} + s) \\
-&= U A\,\Delta T\,t \\
-&\quad + c\,m_\text{j}\,\Delta T_\text{j} \\
-m &= \dfrac{\begin{array}{c} U A\,\Delta T\,t \\ + c\,m_\text{j}\,\Delta T_\text{j} \end{array}}{c_\text{jää}\,\Delta T_\text{jää} + s}
+m &= \dfrac{U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j}}{c_\text{jää}\,\Delta T_\text{jää} + s}
 \end{aligned}
 $$
 **Muunnokset:** $t = 6{,}0\,\text{h} = 21\,600\,\text{s}$ ja $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. Jään lämpötilan muutos on $\Delta T_\text{jää} = 0\,{}^\circ\text{C} - (-10\,{}^\circ\text{C}) = 10\,\text{K}$, sama kelvineinä.

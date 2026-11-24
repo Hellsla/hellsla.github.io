@@ -272,7 +272,7 @@ Tässä $g_\text{raja}$ on talven suurin sallittu rako.
 **Sijoitus:** a)
 $g_\text{min} = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25{,}0\,\text{m} \cdot 44\,\text{K} = 0{,}0132\,\text{m} = 13{,}2\,\text{mm}$
 b) Talven muutos on $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25{,}0\,\text{m} \cdot 40\,\text{K} = 0{,}0120\,\text{m} = 12{,}0\,\text{mm}$, joten $g_\text{max} = 30\,\text{mm} - 12{,}0\,\text{mm} = 18\,\text{mm}$.
-**Vastaus:** a) $g_\text{min} = 13{,}2\,\text{mm}$, käytännössä vähintään $14\,	ext{mm}$, ja b) $g_\text{max} = 18\,\text{mm}$. Kerroin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ on kahden numeron arvo, joten tulokset kelpaavat kahteen numeroon pyöristettyinä.
+**Vastaus:** a) $g_\text{min} = 13{,}2\,\text{mm}$, käytännössä vähintään $14\,\text{mm}$, ja b) $g_\text{max} = 18\,\text{mm}$. Kerroin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ on kahden numeron arvo, joten tulokset kelpaavat kahteen numeroon pyöristettyinä.
 
 Mallivastaus c): rako $15\,\text{mm}$ on välillä $13{,}2\,\text{mm} \ldots 18\,\text{mm}$, joten se kelpaa asennettaessa lämpötilassa $8\,{}^\circ\text{C}$. Kesällä rakoa jää $15\,\text{mm} - 13{,}2\,\text{mm} = 1{,}8\,\text{mm}$. Talvella rako on $$\begin{aligned} &15\,\text{mm} + 12{,}0\,\text{mm} \\ &= 27\,\text{mm} \\ &< 30\,\text{mm} \end{aligned}$$.
 
