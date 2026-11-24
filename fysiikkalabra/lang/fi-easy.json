@@ -3184,7 +3184,12 @@
     "courses_lead": "Valitse kurssit, jotka olet käynyt. Muiden kurssien aiheita ei ehdoteta eikä näytetä taulukossa.",
     "courses_none": "Jos et valitse mitään, kaikki aiheet ovat mukana.",
     "set_note": "Valinnat tallentuvat vain tähän laitteeseen. Tavoite muuttaa vain ehdotuksia. Se ei estä mitään.",
-    "nojs": "Valmentaja tarvitsee JavaScriptin."
+    "nojs": "Valmentaja tarvitsee JavaScriptin.",
+    "hard_q": "Mikä vaihe oli sinusta vaikein?",
+    "step_tulkinta": "Tehtävän ymmärtäminen",
+    "steps_h": "Vaikeat vaiheet",
+    "mistakes_h": "Toistuvat virheet",
+    "mistakes_n": "Virhe tuli {n} kertaa"
   },
   "mixer": {
     "title": "YO-sekoitin",

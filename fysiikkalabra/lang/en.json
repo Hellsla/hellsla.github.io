@@ -3184,7 +3184,12 @@
     "courses_lead": "Tick the courses you have taken. Topics of other courses are not suggested or shown in the table.",
     "courses_none": "If you tick none, all topics are included.",
     "set_note": "Your choices are saved on this device only. The goal only changes the suggestions and locks nothing.",
-    "nojs": "The coach needs JavaScript."
+    "nojs": "The coach needs JavaScript.",
+    "hard_q": "Which step was hardest?",
+    "step_tulkinta": "Reading the task",
+    "steps_h": "Hard steps",
+    "mistakes_h": "Repeated mistakes",
+    "mistakes_n": "Happened {n} times"
   },
   "mixer": {
     "title": "Exam task mixer",
