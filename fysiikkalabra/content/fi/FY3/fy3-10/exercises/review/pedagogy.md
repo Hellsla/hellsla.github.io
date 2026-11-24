@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 0153dce31f9e43a0
-SCOPE: delta Kaava step of model solutions (basic equations first, derived formula, symbolic simplification to the end)
 
 ## Blocking
 None.
