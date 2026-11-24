@@ -1,20 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 47a97eb92976ebc3
+VERDICT: PASS
+CONTENT-HASH: 624bb27d73e83b97
 
 ## Blocking
-- inquiry.json:267 (exp-2 solution, Järkevyys) — **A, causality.** The solution explains that 16 m/s is "yli kaksi kertaa" the cyclist's speed because the car must first make up the lead the cyclist gained while the car was slower. The lesson's own Kaava section (lines 273, 322) shows that making up that gain gives exactly $2v$. The amount over $2v$ comes from the initial 16 m head start. — Fix: "Se on yli kaksi kertaa pyöräilijän nopeus, koska pyöräilijä oli lisäksi alussa $16\,\text{m}$ edellä; samasta paikasta lähdettäessä ohitusnopeus olisi täsmälleen $2v$."
 
 ## Polish
-- inquiry.json:143 (sim `model`) — "Kitkaa ja ilmanvastusta ei huomioida" sits oddly in a kinematic model of an accelerating car, because road friction is what drives the car. — Suggest: "Voimia ei mallinneta: kiihtyvyys on annettu vakio."
-- lesson.md:383 (summary) — the maximum lead at equal speeds holds only if the follower becomes faster. — Add "ja kiihtyy".
-- sim.js `track` — the velocity arrow is |v|·2,8 + 6 px long, so it is not strictly proportional to the speed, while howto says its length shows the magnitude. — Drop the +6 offset, or leave it as is (C).
+- inquiry.json:143 (sim `model`) — "Kitkaa ja ilmanvastusta ei huomioida" reads oddly in a purely kinematic model of an accelerating car, because road friction is what drives the car. — Suggest: "Voimia ei mallinneta: kiihtyvyys on annettu vakio."
+- lesson.md:383 (summary), lesson.md:214 — the claim that the lead is greatest at equal speeds holds only when the follower speeds up and overtakes. The context makes this clear (C). — If you want it explicit, add "ja kiihtyy".
+- sim.js `track` — the velocity arrow is |v|·2,8 + 6 px long, so its length is not strictly proportional to the speed, while `howto` says the length shows the magnitude. — Drop the +6 offset, or leave it (C).
 
 ## Checked
-- I recomputed all 29 lesson-answers.py numbers in one script with my own meeting solver. All agree, including 8,0 s/64 m/16 m/s, the 25 m lead, case 5 at 1,55/6,45 s, the transfer task's 24 m/s and check-2's 6,0 s with its mistakes.
-- Every choice item has exactly one correct option, and every distractor's feedback has the right physics and numbers.
-- The worked example is complete: it is solved symbolically first, rounded to 2 sf, checked with the other position function, and the negative root is discarded.
-- All six figures are to scale by their pixel coordinates (the arrows 3:2, the vt areas ±9 m, the intersections).
-- Sim: CASES 1, 3, 4 and 5 match the texts. simState gives xA, xB, vA, gap and meetings. The 0,5 s slider step reaches 3, 8 and 10 s. The locked `tapaus` isolates t.
-- The higher-line guardrail is followed with its direction condition (lesson.md:196).
-- The root-count claims state their conditions, and the model box states point bodies and constant acceleration.
-- The scope is FY4 linear motion only. The exit ticket and check-3 agree with the theory.
+- The round-1 blocking item is fixed. The exp-2 Järkevyys now says the speed is more than $2v$ because of the 16 m head start, and that starting from the same place would give exactly $2v$. That is right: $v_\text{A} = v + \sqrt{v^2 + 2ad} > 2v$.
+- I recomputed all 29 lesson-answers.py numbers in one script with my own quadratic meeting solver, and every one agrees. They include 8,0 s, 64 m, 16 m/s and −2,0 s; the 25 m and 9 m greatest leads at 3,0 s; case 1 at 10 s and 50 m; case 4 at −10 s; case 5 at 1,55 s and 6,45 s; the transfer task's 24 m/s, 96 m and 8 s; and check-2's 6,0 s with its mistakes 15, 30 and 10. Extras also agree: case 2 meets at 5 s, pr-paikka is 25 m, and in ei-kohtaa at t = 10 s the bodies are at 30 m and 70 m.
+- Every choice item has exactly one correct option, and each distractor's feedback has the right physics and numbers. This covers pred-1 to pred-3, exp-3, ei-kohtaa, virhe and check-1.
+- The worked example has all seven stages, is solved symbolically first (with the quadratic coefficients), keeps 2 sf, checks with the other position function and with the speeds, and discards the negative root.
+- Figures are to scale by their pixel coordinates. tilanne: arrows 3:2, meeting at 36 m. kohtaus: crossing at (12 s, 36 m). kaava: x = t² against 6t, crossing at (6 s, 36 m). vt: two triangles of 9 m each. esimerkki: crossing at (8 s, 64 m). fig ei-kohtaa: 36 m and 80 m at 12 s.
+- Sim: the CASES match the texts and sim-spec. meetings() solves x_A − x_B = 0 correctly. simState gives xA, xB, vA, gap and meetings, where meetings counts only the meetings reached so far. The 0,5 s slider step reaches 3, 8 and 10 s. The locked `tapaus` isolates t. In exp-3 the suggested times (gap −5, +1, +1, −1,5 m) show both sign changes.
+- The guardrail sentence on the higher line is used with its direction condition (lesson.md:196).
+- The model's limits are stated: point bodies, constant acceleration, acceleration from the start. The root-count claims state their conditions.
+- Scope: FY4 uniform and uniformly accelerated linear motion only. The exit ticket, check-3 and the conclusion's model answer agree with the theory, and their numbers are called model values.
