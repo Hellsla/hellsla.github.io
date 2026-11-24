@@ -1,9 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 81feb70459f703c1
+CONTENT-HASH: 8627fcebb3296c19
+
 ## Blocking
 
 ## Polish
-
+- [Minor] sim (fy7-10-sim-390/1280) — the one-line note "Katkoviiva on rajapinnan normaali…" was removed; the dashed normal is now explained only by the figures and Käyttöohje. Optional: mention it in Käyttöohje if not already there.
 
 ## Checked
-batch delta review, round 2: rendered the lesson at 390 px, opened every Pysähdy ja mieti answer and looked at the captures (label, question, answer, chain rows inside the aside, no katex-error, no horizontal overflow, aside width 358 px); ran check_layout.py at 360 px (fi, en, fi-easy) and fy7-1 also at 390 px: OK; read the diff for notation (decimal comma, units upright, `\cdot`, colon division) and Finnish wording. Old content not judged (scope note 2026-11-20); no Vanhan sisällön löydökset.
+- Delta (sim.js: note line removed; pictures and lesson.md teacher-approved). Opened fy7-10-sim-390, sim-1280, lab-1280, top-390, intro-1280, contact-1 (figures 1-6, example, ennusta): no clipping, overlap or overflow; sim labels LaTeX, controls, readout and closed boxes intact; figures legible; hero and scene read clearly.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
