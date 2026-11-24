@@ -1,22 +1,24 @@
 VERDICT: PASS
-CONTENT-HASH: 6147fa631487e5da
+CONTENT-HASH: 3b3df2a745260fbd
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json koe-1 / ennuste-2 — both predictions are pure proportional arithmetic (given 33 s per 10^7 km, or 8 min per AU, scale up), and koe-1 only reads off  = s : c$ that the sim computes; it confirms arithmetic, not something that emerges (inquiry spec). Acceptable here (teacher's scale-sim brief, unit topic), but the prefix conversions and significant figures, which are the slot's goals, have no student action in the core path besides the pysahdy items and check 1. Fix: make koe-1 or the optional items ask the student to convert a read value (km to m, mm) and round it.
-- inquiry.json voyager-malli — the table shows $ = 16,5–21,9 h before koe-2, so koe-2 (read $ and $ for two dates) repeats what the table already gives and ennuste-1's answer is visible before its reveal. Fix: put voyager-malli after koe-2, or drop one of the two.
-- inquiry.json simulaatio/koe-1 — AU is used as a readout and in the measure column before it is defined anywhere visible (the definition is only in the closed *Laskennan selitys* and in Teoria). Fix: one clause in the hook or the sim lead, "yksi AU on Maan ja Auringon etäisyys".
-- lesson.md "Merkitsevät numerot" vs "Kaava" and exit-ticket.json q2 — the lesson warns that trailing zeros of an integer are ambiguous, then writes {,}2\,\text{km} = 4200\,\text{m}$, {,}5\,\text{m} = 2500\,\text{mm}$ and the exit answer /bin/bash{,}50\,\text{mm} = 500\,\mu\text{m}$ (two figures). Fix: write {,}2\cdot10^{3}\,\text{m}$, {,}5\cdot10^{3}\,\text{mm}$, {,}0\cdot10^{2}\,\mu\text{m}$.
-- inquiry.json merkitsevat and tarkistus-2 — both repeat the worked example's numbers or method (0{,}1\,\text{AU}$ to {,}50\cdot10^{9}\,\text{km}$; AU to light time). Fix: fresh data (e.g. Jupiter {,}20\,\text{AU}$). Also hook/hero say the signal comes "tänne" (to Earth) while the sim and predictions compute from the Sun; one clause saying so would remove the mismatch.
+- inquiry.json `voyager-malli` (between koe-1 and koe-2; lab-1280 capture) — the table under Koe 1 shows 144,9 AU and 20,1 h for 2026 and 157,8 AU for 2030, the same quantities koe-2 asks the student to record, so koe-2 no longer produces anything new and ennuste-1's answer (about 20 h) is visible before the experiment — move `voyager-malli` after koe-2, or make its table other dates.
+- inquiry.json `johtopaatos` model and criteria — the opening question ("miksi sama etäisyys ilmoitetaan eri yksiköillä") is answered on the core path only as "yksikön paikalle kirjoitetaan sen arvo"; why a unit is chosen (a convenient number: km too big, AU as the Earth's distance, light time as delay) is only in the optional `pohdi` and `tarkistus-3` — add a criterion and one sentence of the model answer on convenience.
+- inquiry.json `koe-1` — the simulation only evaluates t = d/c, so the experiment checks arithmetic and exponent handling, not a physical result; ennuste-2's prompt already supplies "33 s". Acceptable for a units lesson, but a prefix or conversion step (read d in km, AU and s and convert between them) would serve the slot's goal (muunnokset, etuliitteet) better.
+- inquiry.json `voyager-malli` — the correct option is by far the longest and hedged; the other two are one-liners. Shorten it and move the JPL comparison into the feedback only.
+- lesson.md hero and `siirto` — "valotunteina" is never explained; `siirto` uses the unit AU/a, but "a" for year is not introduced: write "AU/vuosi" or add "1 a = 1 vuosi" to the prompt.
 
 ## Checked
-- Opening question is answered only in the explain model answer and the sim; the hook does not disclose it; retrieval item (optional) matches the prerequisite.
-- Predictions: wrong options' feedback repairs the specific slip (exponent added/divided, constant speed means constant time); reveal gated after the matching experiment, min 2; numbers verified (42{,}2\,\text{AU}$, 9{,}7\,\text{h}$, 340\,\text{s}$, \,\text{AU/h}$, 3\,000\,\text{AU/ly}$).
-- Core path is one lesson's work: optional items are marked; 3 checks with check 1 concept, 2 reasoning, 3 calculation.
-- Worked example: seven stages, one step each, symbolic first; arithmetic checked ({,}503\cdot10^{9}\,\text{km}$, {,}17\,\text{h}$, reasonableness).
-- Error-spotting item targets the real misconception (km² = 10^6 m²) and every option's feedback repairs it.
-- Finnish: case after number+unit correct throughout (42{,}2\,\text{AU}$:n, /bin/bash{,}387\,\text{AU}$:n); glossary terms match.
-- Siirto task and solution follow the 7-point form; hints progressive; mistakes cover unit slips ({,}236$ vs 236$).
-- Captures: sim at 390 px readable, controls and readout not clipped, model values labelled; Pohdinta capture fine.
+- Learning path: prior knowledge (powers of ten, scales) matches fy1-1; goals (suure, SI, etuliitteet, merkitsevät numerot, muunnokset) all covered; sig figs only in the optional `merkitsevat` plus check 1 and the exercises, acceptable.
+- Predictions can be argued and refuted by the model values; each wrong option's feedback repairs a named misconception (exponent as factor, constant speed means constant time).
+- Model values are labelled as model values with source (voyager-malli, johtopaatos); workload about one lesson with optional items marked.
+- Worked example: seven stages, one step each, symbolic before numeric, reasonableness check; numbers verified (4,503·10^9 km, 4,17 h).
+- Etsi virhe (km² to m²) and siirto distractors/mistake feedback are real misconceptions; siirto answer 3,236 AU/a verified.
+- Tarkista: concept, representation and calculation checks with misconception distractors; the explain criteria are observable.
+- Sim at 390 px and 1280 px: controls and readout readable, text behind Käyttöohje/Mallin oletukset/Laskennan selitys; experiment locks the date.
+- Exit ticket tests suure/yksikkö and prefix conversion, the core ideas.
+- Finnish read through; no case or term errors found beyond the polish items.
+- Exercises not judged (reviewed apart).
