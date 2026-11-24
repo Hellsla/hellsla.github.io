@@ -1188,7 +1188,7 @@ def build_units(lang, out, unit_pub):
                 .replace("{{toc}}", toc).replace("{{main}}", f'<article id="teoria" class="inquiry unit unit-{d["kind"]}" data-course="{code.lower()}">{body}{units.course_nav(uid, lang, T, published)}{tail}</article>' + embedded)   # Previous / Next before the credits (teacher 2026-11-06)
                 .replace("{{scripts}}", f'<script src="inquiry.js"></script>' + ('<script src="selfassess.js"></script>' if tasks_html else "")
                          + (f'<script src="units/{code.lower()}/units.js"></script>' if cdir.is_dir() else "")
-                         + ('<script src="valmentaja.js"></script>' if code == "FY9" else "")   # the evidence log of the FY9 coach (work queue 11b PR 3; invisible)
+                         + (f'<script src="valmentaja.js" data-t="{valmentaja.unit_json(T)}"></script>' if code == "FY9" else "")   # the evidence log of the FY9 coach (work queue 11b PR 3; invisible)
                          + (submission_script(lang, uid) if tasks_html else ""))
                 .replace("{{description}}", esc(d["description"])).replace("{{url}}", URL + f"{uid}.html")
                 .replace("{{languages}}", languages_nav(f"{uid}.html") if len(unit_pub[uid]) > 1 else ""))   # a unit in one language has none
@@ -1569,7 +1569,7 @@ def build_language(lang):
         cindex = valmentaja.build(lang, unit_pub)
         if cindex["units"]:
             crumb = f' › <a href="{mcode}.html">{mcode}</a>' if mcode in local else ""
-            (out / valmentaja.PAGE).write_text(page(T("coach.title"), valmentaja.page_body(T, cindex, f"{mcode}.html"),
+            (out / valmentaja.PAGE).write_text(page(T("coach.title"), valmentaja.page_body(T, cindex, f"{mcode}.html", lang),
                                                     f'<a href="index.html">{T("site.name")}</a>{crumb} › {T("coach.title")}', valmentaja.PAGE, T("coach.description"), main_class="reading coach-page"))
             mixer_built.append(valmentaja.PAGE)
     if lang in valmentaja.languages():           # the FY9 task index (scripts/valmentaja.py, work queue 11b PR 2): data for a later page, no page of its own
