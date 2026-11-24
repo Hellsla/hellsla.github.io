@@ -1027,7 +1027,7 @@
       "massa_a": "Mass $m_\\text{A} = {{m}}\\,\\text{kg}$",
       "massa_b": "Mass $m_\\text{B} = {{m}}\\,\\text{kg}$",
       "hetki": "Moment $t = {{tau}}\\,\\text{s}$",
-      "nopeus_toisto": "Speed",
+      "nopeus_toisto": "Speed (replay)",
       "hidas": "slow",
       "normaali": "normal",
       "nopea": "fast",

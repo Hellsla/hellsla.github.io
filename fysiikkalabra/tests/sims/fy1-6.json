@@ -30,10 +30,10 @@
   "note": "main button Pudota first, then Alusta; DOM order canvas, controls, readout"
  },
  {
-  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root label')]; const t=L.map((e)=>simText(e)); return L.length===5 && t[0].startsWith('Ympäristö') && /^Massa \\$m_\\\\text\\{A\\} = .*\\\\,\\\\text\\{kg\\}\\$$/.test(t[1]) && /^Massa \\$m_\\\\text\\{B\\} = .*\\\\,\\\\text\\{kg\\}\\$$/.test(t[2]) && /^Hetki \\$t = .*\\\\,\\\\text\\{s\\}\\$$/.test(t[3]) && t[4].startsWith('Nopeus') ? 1 : 0 })()",
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root label')]; const t=L.map((e)=>simText(e)); return L.length===5 && t[0].startsWith('Ympäristö') && /^Massa \\$m_\\\\text\\{A\\} = .*\\\\,\\\\text\\{kg\\}\\$$/.test(t[1]) && /^Massa \\$m_\\\\text\\{B\\} = .*\\\\,\\\\text\\{kg\\}\\$$/.test(t[2]) && /^Hetki \\$t = .*\\\\,\\\\text\\{s\\}\\$$/.test(t[3]) && t[4].startsWith('Nopeus (toisto)') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "five labelled controls: Ympäristö, Massa mA and mB with unit kg, Hetki t with unit s, Nopeus"
+  "note": "five labelled controls: Ympäristö, Massa mA and mB with unit kg, Hetki t with unit s, Nopeus (toisto)"
  },
  {
   "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===0 ? 1 : 0 })()",
