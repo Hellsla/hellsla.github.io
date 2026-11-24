@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9f35c8b8291f8ed1
+CONTENT-HASH: f6fcacc2bacbb728
 ## Blocking
 (none)
 ## Polish
 (none)
 ## Checked
-- Delta: L1-02 Järkevyys / Reasonableness now says 'venymä newtonia kohti' / 'extension per newton' instead of spring constant; the term is not taught in FY3 (force-meter extension is proportional to force), and the ratio 2,0 cm / 4,0 N = 0,50 cm/N and 0,50 · 12 = 6,0 are unchanged and correct. Clearer for the student.
-- Judged from the diff text; captures not opened.
+- Delta: only the label in the spring-calibration Formula row changed, "(c: spring constant)" to "(c = x/F)"; no number, unit or answer changed.
+- "c = x/F" is the extension per unit force, which fits the row $x/m = c\,g$ since $F = G = mg$; no term FY3 does not teach remains (my earlier Polish item is closed).
+- The row still leads to the symbolic form the Substitution step uses.
+- Judged from the diff and solutions.md on disk; captures not opened.

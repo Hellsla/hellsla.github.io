@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e315e7f681957255
+CONTENT-HASH: c1c4d31ab8d2e60a
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- Round 1, delta (solutions.md, md-paragraphs: words unchanged). Packet captures are 1280 px only; no 360 or 390 px exercise captures exist (said once); the 360 px layout check is clean per the packet.
-- fy3-1-open-exercises-L3-1280-5 (Periaate, Taulukon lukeminen, Kaava, Muunnokset, Sijoitus split into short paragraphs, boxed formula rows, equals signs aligned, nothing clipped).
-- fy3-1-open-exercises-1280-9 (model answer paragraphs in Mallivastaus, formula lines separate, force-diagram options intact).
-- fy3-1-open-exercises-1280-1 (1-1 solution: row structure and boxed Sijoitus/Vastaus intact).
-- Paragraph breaks sit at meaningful boundaries; surrounding layout intact.
+- Delta (one Kaava aside in fy3-1-L3-04 changed to `(c = x/F)`). Captures in content/fi/FY3/fy3-1/review/shots, 1280 px.
+- fy3-1-open-exercises-L3-1280-4 (1-22 task text and table) and -5 (1-22 solution: three-row Kaava aligned at "=", clean, Muunnokset follows).
+- Nothing clipped; layout intact; the 360 px layout check is clean per packet.
+- Hash same at start and end.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

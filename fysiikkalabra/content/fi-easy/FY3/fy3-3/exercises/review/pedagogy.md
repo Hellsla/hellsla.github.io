@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 321d09b2406fc68a
-
+CONTENT-HASH: 1a68fec8b98d05e5
 ## Blocking
-- none
-
+(none)
 ## Polish
-- none
-
+(none)
 ## Checked
-- Delta 2026-11-15: model answer for the open/closed system task now says the temperature of a closed system is "ei välttämättä vakio"; more accurate than "ei ole vakio" (an isothermal process is possible) and keeps the point that heating or compressing does not open the system.
-- Solution still has given, principle, model answer; no number changed.
+- Delta: only the Kaava step of the model solutions changed. The packet diff shows the new Kaava lines run together; the files on disk hold them as aligned display blocks (one equation per row, equals signs aligned), so the diff is a flattening artifact and not a defect.
+- Every Kaava block starts from the basic equation or law and ends in the asked quantity solved in symbols before any substitution (CLAUDE.md read-through rule); the brackets and $ delimiters balance.
+- Steps after Kaava (Muunnokset, Sijoitus, Vastaus, Järkevyys) are unchanged and still follow from the new Kaava rows; the principle is still explained in Periaate.
+- Judged from the diff and the solutions file on disk; captures not opened. Hash unchanged at start and end.

@@ -53,7 +53,7 @@
 **Kysytty:** ilmaan siirtyvä lämpömäärä $Q$ etumerkkeineen
 **Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Voima muuttuu matkalla. Siksi työtä ei lasketa tulona $Fs$. Työ on $(s,F)$-kuvaajan ja vaaka-akselin väliin jäävä pinta-ala. Mäntä on ympäristöä, joka tekee työtä ilmaan, joten $W$ on positiivinen. Lämpö saadaan sisäenergian muutoksen ja työn erotuksena.
 **Kuvaajan lukeminen:** Suora alkaa ruudukon risteyksestä $(0\,\text{m};\ 200\,\text{N})$. Se päättyy risteykseen $(0{,}20\,\text{m};\ 400\,\text{N})$. Pinta-ala on puolisuunnikas. Sen yhdensuuntaiset sivut ovat $F_1 = 200\,\text{N}$ ja $F_2 = 400\,\text{N}$. Sen korkeus on $s = 0{,}20\,\text{m}$.
-**Kaava:** $W = \dfrac{F_1 + F_2}{2}\, s$ ja $\Delta U = Q + W$, joten $Q = \Delta U - W$
+**Kaava:** $$\begin{aligned} \Delta U &= Q + W \\ W &= \dfrac{F_1 + F_2}{2}\, s \\ Q &= \Delta U - W \end{aligned}$$
 **Muunnokset:** Ei tarvita: voima on newtoneina ja matka metreinä, joten $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
 **Sijoitus:** $W = \dfrac{200\,\text{N} + 400\,\text{N}}{2} \cdot 0{,}20\,\text{m} = 300\,\text{N} \cdot 0{,}20\,\text{m} = 60\,\text{J}$, joten $Q = 45\,\text{J} - 60\,\text{J} = -15\,\text{J}$
 **Vastaus:** $-15\,\text{J}$, kaksi merkitsevää numeroa kuten tiedoissa $0{,}20\,\text{m}$ ja $45\,\text{J}$. Kuvaajan arvot luetaan tarkasti ruudukosta. Siksi hyväksytään $-14{,}5\ldots-15{,}5\,\text{J}$.
@@ -63,7 +63,7 @@
 **Annettu:** systeemi on vesi; vastuksen teho $P = 2{,}0\,\text{kW}$, aika $t = 90\,\text{s}$, kuoren läpi ympäristöön siirtyvä lämpö $20\,\text{kJ}$; työtä ei tehdä, joten $W = 0$
 **Kysytty:** veden sisäenergian kasvu $\Delta U$ kilojouleina
 **Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Vastus siirtää veteen energiaa lämpönä, ja osa siitä karkaa ulos. Veteen siirtyvä nettolämpö on tuleva energia miinus poistuva energia. Vesi ei laajene eikä siihen tehdä työtä, joten $W = 0$.
-**Kaava:** vastuksen siirtämä energia $Q_\text{sis} = Pt$, nettolämpö $Q = Pt - Q_\text{ulos}$ ja $\Delta U = Q + W$, joten $\Delta U = Pt - Q_\text{ulos}$
+**Kaava:** $$\begin{aligned} \Delta U &= Q + W \\ W &= 0 \\ Q_\text{sis} &= Pt \\ Q &= Q_\text{sis} - Q_\text{ulos} \\ \Delta U &= Pt - Q_\text{ulos} \end{aligned}$$
 **Muunnokset:** $P = 2{,}0\,\text{kW} = 2000\,\text{W}$, jolloin $Pt$ tulee jouleina. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $Pt = 2000\,\text{W} \cdot 90\,\text{s} = 180\,000\,\text{J} = 180\,\text{kJ}$. Siis $\Delta U = 180\,\text{kJ} - 20\,\text{kJ} + 0 = 160\,\text{kJ}$
 **Vastaus:** $160\,\text{kJ}$, kaksi merkitsevää numeroa. Erotus $180\,\text{kJ} - 20\,\text{kJ}$ tunnetaan kymmenen kilojoulen tarkkuudella, koska lämpö $20\,\text{kJ}$ on annettu vain niin tarkasti.
@@ -73,7 +73,7 @@
 **Annettu:** systeemi on höyry; $W = -2{,}0\,\text{kJ}$ (höyry tekee työtä), $\Delta U = -1{,}2\,\text{kJ}$
 **Kysytty:** höyryyn siirtyvä lämpömäärä $Q$ jouleina
 **Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Sisäenergian muutos ja työ tunnetaan, joten lämpö saadaan niiden erotuksena. Höyry laajenee ja tekee työtä, joten $W$ on negatiivinen.
-**Kaava:** $\Delta U = Q + W$, joten $Q = \Delta U - W$
+**Kaava:** $$\begin{aligned} \Delta U &= Q + W \\ Q &= \Delta U - W \end{aligned}$$
 **Muunnokset:** Vastaus halutaan jouleina: $\Delta U = -1{,}2\,\text{kJ} = -1200\,\text{J}$ ja $W = -2{,}0\,\text{kJ} = -2000\,\text{J}$.
 **Sijoitus:** $Q = -1200\,\text{J} - (-2000\,\text{J}) = 800\,\text{J}$
 **Vastaus:** $800\,\text{J} = 0{,}8\,\text{kJ}$. Erotus tunnetaan sadan joulen tarkkuudella kuten tiedot, joten yksi merkitsevä numero.
@@ -83,7 +83,7 @@
 **Annettu:** systeemi on smoothie; terän teho $P = 250\,\text{W}$, $Q = +2{,}0\,\text{kJ}$ (lämpöä siirtyy smoothieen), $\Delta U = +12\,\text{kJ}$
 **Kysytty:** sekoitusaika $t$
 **Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Sisäenergian kasvusta osa tulee lämpönä ja loput terän tekemänä työnä. Terän työ on tehon ja ajan tulo, koska teho on vakio: $W = Pt$.
-**Kaava:** $\Delta U = Q + W$, joten $W = \Delta U - Q$. Koska $P = \dfrac{W}{t}$, ratkeaa $t = \dfrac{W}{P} = \dfrac{\Delta U - Q}{P}$
+**Kaava:** $$\begin{aligned} \Delta U &= Q + W \\ W &= \Delta U - Q \\ P &= \dfrac{W}{t} \\ t &= \dfrac{W}{P} \\ &= \dfrac{\Delta U - Q}{P} \end{aligned}$$
 **Muunnokset:** Energiat kilojouleista jouleiksi, jotta tulos tulee sekunteina: $1\,\text{kJ} = 1000\,\text{J}$, joten $\Delta U = 12\,000\,\text{J}$ ja $Q = 2000\,\text{J}$. Tehon yksikkö $1\,\text{W} = 1\,\tfrac{\text{J}}{\text{s}}$.
 **Sijoitus:** $W = 12\,\text{kJ} - 2{,}0\,\text{kJ} = 10\,\text{kJ} = 10\,000\,\text{J}$. Siis $t = \dfrac{10\,000\,\text{J}}{250\,\text{W}} = 40\,\text{s}$
 **Vastaus:** $40\,\text{s}$, kaksi merkitsevää numeroa. Työ $W = 12\,\text{kJ} - 2{,}0\,\text{kJ} = 10\,\text{kJ}$ tunnetaan tarkkuudella $1\,\text{kJ}$, koska sisäenergia $12\,\text{kJ}$ on annettu kokonaisina kilojouleina.
@@ -93,7 +93,7 @@
 **Annettu:** systeemi on pumpun ilma (määrä ei muutu); $F = 120\,\text{N}$, $s = 0{,}15\,\text{m}$, lämpötila pysyy vakiona
 **Kysytty:** ilmaan siirtyvä lämpömäärä $Q$ etumerkkeineen, ja miksi $\Delta U$ ei muutu
 **Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Tehtävän mukaan lämpötila pysyy vakiona, eikä ilman määrä muutu. Silloin hiukkasten liike-energia ja määrä ovat ennallaan. Ilmaa voi pitää ideaalikaasuna, joten sen sisäenergia ei muutu: $\Delta U = 0$. Silloin työn tuoma energia on siirryttävä pois lämpönä: $Q = -W$.
-**Kaava:** $W = Fs$ ja $\Delta U = Q + W = 0$, joten $Q = -W = -Fs$
+**Kaava:** $$\begin{aligned} \Delta U &= Q + W = 0 \\ W &= Fs \\ Q &= -W \\ &= -Fs \end{aligned}$$
 **Muunnokset:** Ei tarvita: voima on newtoneina ja matka metreinä, joten tulo on jouleina.
 **Sijoitus:** $W = 120\,\text{N} \cdot 0{,}15\,\text{m} = 18\,\text{J}$ (työtä tehdään ilmaan, joten $W > 0$). Siis $Q = -18\,\text{J}$
 **Vastaus:** $-18\,\text{J}$, kaksi merkitsevää numeroa kuten tiedoissa $0{,}15\,\text{m}$ ja $120\,\text{N}$.
@@ -103,7 +103,7 @@
 **Annettu:** systeemi on vesi; punnuksen massa $m = 5{,}0\,\text{kg}$, laskeutumisia $n = 12$, $\Delta U = 1{,}0\,\text{kJ}$, $g = 9{,}81\,\text{m/s}^2$, eristetty astia
 **Kysytty:** laskeutumiskorkeus $h$ yhdellä kerralla
 **Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Astia on eristetty, joten lämpöä ei siirry ja $Q = 0$. Punnus laskeutuu tasaisella nopeudella, joten köysi vetää sitä voimalla $F = G = mg$. Kun punnus laskeutuu korkeuden $h$, köysi ja siipipyörä tekevät veteen työn $W_1 = Fh = mgh$. Silloin $\Delta U = W$.
-**Kaava:** yhden laskeutumisen työ $W_1 = mgh$, joten $\Delta U = nmgh$ ja $h = \dfrac{\Delta U}{nmg}$
+**Kaava:** $$\begin{aligned} \Delta U &= Q + W \\ Q &= 0 \\ W_1 &= Fh = mgh \\ W &= nW_1 \\ \Delta U &= nmgh \\ h &= \dfrac{\Delta U}{nmg} \end{aligned}$$
 **Muunnokset:** $\Delta U = 1{,}0\,\text{kJ} = 1000\,\text{J}$. Lopuksi $1\,\text{J} = 1\,\text{N}\cdot\text{m}$ ja $1\,\text{N} = 1\,\tfrac{\text{kg}\cdot\text{m}}{\text{s}^2}$, joten osamäärän yksikkö on metri.
 **Sijoitus:** $h = \dfrac{1000\,\text{J}}{12 \cdot 5{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2} = \dfrac{1000\,\text{J}}{588{,}6\,\text{N}} = 1{,}6989\,\text{m}$
 **Vastaus:** $1{,}7\,\text{m}$, kaksi merkitsevää numeroa kuten massassa $5{,}0\,\text{kg}$ ja energiassa $1{,}0\,\text{kJ}$.
@@ -113,7 +113,7 @@
 **Annettu:** systeemi on kaasu; tapa A: $Q_\text{A} = +400\,\text{J}$, $W_\text{A} = -150\,\text{J}$ (kaasu tekee työtä); tapa B: $W_\text{B} = -60\,\text{J}$; sama alku- ja loppulämpötila, sama kaasun määrä
 **Kysytty:** lämpömäärä $Q_\text{B}$, ja miksi $\Delta U$ on kummassakin tavassa sama
 **Periaate:** Energia säilyy, joten $\Delta U = Q + W$ kummallekin tavalle. Tehtävän mukaan kaasun lämpötila ja määrä ovat samat alkutilassa ja lopputilassa. Silloin hiukkasten liike-energia on sama. Ideaalikaasussa vuorovaikutusten energia on merkityksetön, joten myös sisäenergia on sama. Siksi $\Delta U$ on sama kummassakin tavassa, vaikka lämpö ja työ eroavat. Lämpö ja työ riippuvat reitistä. Sisäenergia riippuu vain alku- ja lopputilasta.
-**Kaava:** $\Delta U_\text{A} = Q_\text{A} + W_\text{A}$ ja $\Delta U_\text{B} = \Delta U_\text{A}$, joten $Q_\text{B} = \Delta U_\text{A} - W_\text{B} = Q_\text{A} + W_\text{A} - W_\text{B}$
+**Kaava:** $$\begin{aligned} \Delta U_\text{A} &= Q_\text{A} + W_\text{A} \\ \Delta U_\text{B} &= Q_\text{B} + W_\text{B} \\ \Delta U_\text{B} &= \Delta U_\text{A} \\ Q_\text{B} &= \Delta U_\text{A} - W_\text{B} \\ &= Q_\text{A} + W_\text{A} - W_\text{B} \end{aligned}$$
 **Muunnokset:** Ei tarvita: kaikki energiat on annettu jouleina.
 **Sijoitus:** $\Delta U_\text{A} = 400\,\text{J} + (-150\,\text{J}) = 250\,\text{J}$. Siis $Q_\text{B} = 250\,\text{J} - (-60\,\text{J}) = 310\,\text{J}$
 **Vastaus:** $310\,\text{J}$. Yhteenlaskussa tulos on yhtä tarkka kuin tiedot, jotka on annettu täysinä jouleina.
@@ -133,7 +133,7 @@
 **Annettu:** systeemi on vesi; teho $P = 0{,}80\,\text{kW}$, aika $t = 45\,\text{s}$, lämpöä ei karkaa ympäristöön, $W = 0$
 **Kysytty:** veden sisäenergian kasvu $\Delta U$ kilojouleina
 **Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Kuumennin siirtää veteen energiaa lämpönä tasaisella teholla. Siksi veteen siirtyvä lämpömäärä on tehon ja ajan tulo. Työtä ei tehdä, joten $W = 0$.
-**Kaava:** $Q = Pt$ ja $\Delta U = Q + W$, joten $\Delta U = Pt$
+**Kaava:** $$\begin{aligned} \Delta U &= Q + W \\ W &= 0 \\ Q &= Pt \\ \Delta U &= Pt \end{aligned}$$
 **Muunnokset:** $P = 0{,}80\,\text{kW} = 800\,\text{W}$, jolloin $Pt$ tulee jouleina. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $\Delta U = 800\,\text{W} \cdot 45\,\text{s} = 36\,000\,\text{J} = 36\,\text{kJ}$
 **Vastaus:** $36\,\text{kJ}$, kaksi merkitsevää numeroa kuten tiedoissa $0{,}80\,\text{kW}$ ja $45\,\text{s}$.
@@ -163,7 +163,7 @@
 **Annettu:** systeemi on palikka ja pöytä; vetoja $n = 20$, matka vedolla $s = 0{,}600\,\text{m}$, voimat $4{,}1\,\text{N}$, $4{,}3\,\text{N}$, $4{,}2\,\text{N}$, $4{,}0\,\text{N}$ ja $4{,}4\,\text{N}$; $Q = 0$
 **Kysytty:** sisäenergian kasvu $\Delta U$ 20 vedon aikana, ja miksi oikea kasvu on pienempi
 **Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Oletuksen mukaan $Q = 0$, joten $\Delta U = W$. Vetovoima tekee systeemiin työn $W = Fs$, ja kitka muuttaa sen sisäenergiaksi. Mittaukset vaihtelevat hieman, joten vetovoimana käytetään keskiarvoa.
-**Kaava:** $F_\text{ka} = \dfrac{\text{mittausten summa}}{5}$, yhden vedon työ $W_1 = F_\text{ka}\, s$ ja kaikkien vetojen $\Delta U = nW_1$
+**Kaava:** $$\begin{aligned} \Delta U &= Q + W \\ Q &= 0 \\ F_\text{ka} &= \dfrac{\text{mittausten summa}}{5} \\ W_1 &= F_\text{ka}\, s \\ W &= nW_1 \\ \Delta U &= W = nF_\text{ka}\, s \end{aligned}$$
 **Muunnokset:** Ei tarvita: voima on newtoneina ja matka metreinä, joten tulo on jouleina.
 **Sijoitus:** Mittausten summa on $$\begin{aligned} &4{,}1\,\text{N} + 4{,}3\,\text{N} + 4{,}2\,\text{N} \\ &+ 4{,}0\,\text{N} + 4{,}4\,\text{N} \\ &= 21{,}0\,\text{N} \end{aligned}$$, joten $F_\text{ka} = \dfrac{21{,}0\,\text{N}}{5} = 4{,}20\,\text{N}$. Yhden vedon työ on $W_1 = 4{,}20\,\text{N} \cdot 0{,}600\,\text{m} = 2{,}52\,\text{J}$, joten $\Delta U = 20 \cdot 2{,}52\,\text{J} = 50{,}4\,\text{J}$
 **Vastaus:** $50\,\text{J}$ (laskettu $50{,}4\,\text{J}$), kaksi merkitsevää numeroa. Voimamittaukset on annettu kahdella merkitsevällä numerolla, ja ne vaihtelevat noin $\pm 0{,}2\,\text{N}$ ($\approx 5\,\%$). Oikea kasvu on todennäköisesti hieman pienempi. Lämmennyt palikka ja pöytä siirtävät osan energiasta lämpönä ilmaan, jolloin $Q < 0$ ja $\Delta U = Q + W < W$.
@@ -174,7 +174,7 @@
 **Kysytty:** a) työ $W$ puolisuunnikassäännöllä, b) sisäenergian kasvu $\Delta U$ nopeassa puristuksessa, c) lämpömäärä $Q$ hitaassa puristuksessa ja selitys
 **Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Voima muuttuu matkalla. Siksi työ on $(s,F)$-kuvaajan alle jäävä pinta-ala, jonka puolisuunnikassääntö arvioi. Mäntä tekee ilmaan työtä, joten $W > 0$. Nopeassa puristuksessa lämpöä ei ehdi siirtyä, joten $\Delta U = W$. Hitaassa puristuksessa lämpötila ja ilman määrä pysyvät samoina. Ilmaa voi pitää ideaalikaasuna, joten $\Delta U = 0$ ja $Q = -W$.
 **Kuvaajan lukeminen:** Taulukossa on viisi jakoväliä, ja jokaisen leveys on $h = 0{,}04\,\text{m}$. Voimat jakovälien päissä ovat $50$, $62$, $78$, $98$, $125$ ja $160\,\text{N}$. Jokaisen välin pinta-ala on puolisuunnikas. Sen yhdensuuntaiset sivut ovat välin päiden voimat.
-**Kaava:** puolisuunnikassääntö: työ on kaikkien välien pinta-alojen $h\,\dfrac{F_i + F_{i+1}}{2}$ summa, jossa välin päiden voimat ovat $F_i$ ja $F_{i+1}$. Lisäksi $\Delta U_\text{nopea} = Q + W = W$ ja $Q_\text{hidas} = -W_\text{hidas}$
+**Kaava:** $$\begin{aligned} \Delta U_\text{nopea} &= Q + W = W \\ W &= \sum_i h\,\dfrac{F_i + F_{i+1}}{2} \\ \Delta U_\text{hidas} &= Q_\text{hidas} + W_\text{hidas} = 0 \\ Q_\text{hidas} &= -W_\text{hidas} \end{aligned}$$
 **Muunnokset:** Ei tarvita: voima on newtoneina ja matka metreinä, joten $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
 **Sijoitus:** Jokaisen voiman vieressä on kaksi väliä, paitsi päissä. Siksi päiden voimista otetaan puolet. Summa on $$\begin{aligned} &25\,\text{N} + 62\,\text{N} + 78\,\text{N} \\ &+ 98\,\text{N} + 125\,\text{N} + 80\,\text{N} \\ &= 468\,\text{N} \end{aligned}$$. Siis $W = 0{,}04\,\text{m} \cdot 468\,\text{N} = 18{,}72\,\text{J}$, joten $\Delta U = 0 + 18{,}72\,\text{J} = 18{,}72\,\text{J}$. Kohdassa c) $Q = -14{,}0\,\text{J}$.
 **Vastaus:** a) $W \approx 18{,}7\,\text{J}$. b) $\Delta U \approx 18{,}7\,\text{J}$, kolme merkitsevää numeroa. c) $Q = -14{,}0\,\text{J}$. Nopeassa puristuksessa lämpöä ei ehdi siirtyä pois, joten kaikki työ jää ilman sisäenergiaksi ja lämpötila nousee. Hitaassa puristuksessa sama energia siirtyy lämpönä sylinterin seinien kautta ympäristöön, joten sisäenergia ja lämpötila pysyvät ennallaan.
@@ -185,7 +185,7 @@
 **Kysytty:** a) keskimääräinen teho $P$, b) vedestä ympäristöön siirtynyt lämpömäärä $Q_\text{ulos}$ ajanhetkellä $120\,\text{s}$ ja sen osuus prosentteina, c) selitys energian säilymisen avulla
 **Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Vettä ei sekoiteta eikä siihen tehdä työtä, joten $W = 0$. Vastuksen ja keittimen rungon oman lämpenemisen oletetaan olevan merkityksetön. Siksi veteen siirtyvä nettolämpö on vastuksen siirtämä energia miinus ympäristöön karkaava lämpö: $Q = E_\text{v} - Q_\text{ulos}$. Siis $\Delta U = E_\text{v} - Q_\text{ulos}$ ja $Q_\text{ulos} = E_\text{v} - \Delta U$. Teho on energia jaettuna ajalla: $P = \dfrac{E_\text{v}}{t}$.
 **Kuvaajan lukeminen:** Viimeisellä rivillä $t = 120\,\text{s}$, $E_\text{v} = 239{,}9\,\text{kJ}$ ja $\Delta U = 205{,}1\,\text{kJ}$. Ensimmäisellä rivillä molemmat ovat nollia.
-**Kaava:** $P = \dfrac{E_\text{v}}{t}$, $Q_\text{ulos} = E_\text{v} - \Delta U$ ja osuus $= \dfrac{Q_\text{ulos}}{E_\text{v}} \cdot 100\,\%$
+**Kaava:** $$\begin{aligned} \Delta U &= Q + W \\ W &= 0 \\ Q &= E_\text{v} - Q_\text{ulos} \\ Q_\text{ulos} &= E_\text{v} - \Delta U \\ P &= \dfrac{E_\text{v}}{t} \\ \text{osuus} &= \dfrac{Q_\text{ulos}}{E_\text{v}} \cdot 100\,\% \end{aligned}$$
 **Muunnokset:** $E_\text{v} = 239{,}9\,\text{kJ} = 239\,900\,\text{J}$, jolloin teho tulee watteina; $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** a) $P = \dfrac{239\,900\,\text{J}}{120\,\text{s}} = 1999\,\text{W} \approx 2{,}00\,\text{kW}$. b) $Q_\text{ulos} = 239{,}9\,\text{kJ} - 205{,}1\,\text{kJ} = 34{,}8\,\text{kJ}$ ja osuus $\dfrac{34{,}8\,\text{kJ}}{239{,}9\,\text{kJ}} \cdot 100\,\% = 14{,}5\,\%$
 **Vastaus:** $Q_\text{ulos} = 34{,}8\,\text{kJ}$ (kohta b), kolme merkitsevää numeroa kuten taulukon arvot, eli noin $14{,}5\,\%$ vastuksen energiasta.
@@ -212,7 +212,7 @@ Väite 3 on epätosi: $60\,\text{J}$ on työ, ja lämpö on nolla. Väite 4 on e
 **Annettu:** lämpömäärä $Q = 2{,}0\,\text{kcal}$ ja työ $W = 3{,}0\,\text{kJ}$; taulukosta (MAFY-taulukko, yksikkömuunnoksia, energia/työ, kalori) $1\,\text{cal} = 4{,}1868\,\text{J}$
 **Kysytty:** sisäenergian muutos $\Delta U$ kilojouleina
 **Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Lämpö siirtyy systeemiin, ja ympäristö tekee siihen työtä. Siksi sekä $Q$ että $W$ ovat positiivisia. Termien yksikön pitää olla sama. Siksi kalorit muutetaan ensin jouleiksi.
-**Kaava:** $\Delta U = Q + W$ ja $Q = N \cdot 4{,}1868\,\text{J}$, missä $N$ on kalorien lukumäärä
+**Kaava:** $$\begin{aligned} \Delta U &= Q + W \\ Q &= N \cdot 4{,}1868\,\text{J} \end{aligned}$$, missä $N$ on kalorien lukumäärä
 **Muunnokset:** $2{,}0\,\text{kcal} = 2000\,\text{cal}$ ja $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $Q = 2000 \cdot 4{,}1868\,\text{J} = 8373{,}6\,\text{J} = 8{,}3736\,\text{kJ}$, joten $\Delta U = 8{,}3736\,\text{kJ} + 3{,}0\,\text{kJ} = 11{,}3736\,\text{kJ} \approx 11\,\text{kJ}$
 **Vastaus:** $11\,\text{kJ}$, kaksi merkitsevää numeroa kuten tiedoissa $2{,}0\,\text{kcal}$ ja $3{,}0\,\text{kJ}$. Kalorin arvo $4{,}1868\,\text{J}$ on MAFY-taulukosta. Eri taulukoiden arvot poikkeavat hieman. Siksi vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
@@ -223,7 +223,7 @@ Väite 3 on epätosi: $60\,\text{J}$ on työ, ja lämpö on nolla. Väite 4 on e
 **Kysytty:** ilman sisäenergian kasvu $\Delta U$
 **Periaate:** Energia säilyy, joten $\Delta U = Q + W$. Lämpöä ei siirry, joten $\Delta U = W$. Voima muuttuu matkalla. Siksi työ on $(s,F)$-kuvaajan ja vaaka-akselin väliin jäävä pinta-ala. Mäntä on ympäristöä, joka tekee työtä ilmaan. Siksi $W$ on positiivinen.
 **Kuvaajan lukeminen:** Suora alkaa ruudukon risteyksestä $(0\,\text{m};\ 200\,\text{N})$. Se päättyy risteykseen $(0{,}20\,\text{m};\ 400\,\text{N})$. Pinta-ala on puolisuunnikas. Sen yhdensuuntaiset sivut ovat $F_1 = 200\,\text{N}$ ja $F_2 = 400\,\text{N}$. Sen korkeus on $s = 0{,}20\,\text{m}$.
-**Kaava:** $W = \dfrac{F_1 + F_2}{2}\, s$ ja $\Delta U = Q + W = W$
+**Kaava:** $$\begin{aligned} \Delta U &= Q + W \\ Q &= 0 \\ W &= \dfrac{F_1 + F_2}{2}\, s \\ \Delta U &= W \end{aligned}$$
 **Muunnokset:** Ei tarvita: voima on newtoneina ja matka metreinä, joten $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
 **Sijoitus:** $W = \dfrac{200\,\text{N} + 400\,\text{N}}{2} \cdot 0{,}20\,\text{m} = 300\,\text{N} \cdot 0{,}20\,\text{m} = 60\,\text{J}$, joten $\Delta U = 0 + 60\,\text{J} = 60\,\text{J}$
 **Vastaus:** $60\,\text{J}$, kaksi merkitsevää numeroa kuten tiedossa $0{,}20\,\text{m}$. Kuvaajan arvot luetaan tarkasti ruudukosta. Siksi hyväksytään $58{,}2\ldots61{,}8\,\text{J}$.

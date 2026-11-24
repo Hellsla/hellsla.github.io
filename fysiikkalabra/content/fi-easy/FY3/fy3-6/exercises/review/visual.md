@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 3cc1585e5b74f6a9
+CONTENT-HASH: d5eedf037682347f
 Mode: delta
-Round: 1
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] fy3-6 L3 7-x Kaava (Q_h = Q_v chain): the remark "(Q = cmΔT)" floats to the right of row 2; consider moving it into the Periaate text.
 
 ## Checked
-- Delta: changed task texts (prefix "Esimerkkiaineisto:" removed, each text now opens with a capital); read in the diff. Layout judged from the shared open-exercise rendering (fy3-4 and fy3-13 L3 captures opened; same component).
-- Wording only: the new openings read naturally; maths and units unchanged and in LaTeX.
+- Delta: the Kaava step as aligned multi-row blocks; the changed teacher-approved picture fy3-6-c-bars is not judged (teacher figure). Captures are newer than solutions.md and match the hash.
+- Opened at 1280 px, solutions open: fy3-6-open-exercises-L2-1280-5, L3-1280-4.
+- Judged: the five-row block (Q_h = Q_v, c_h m_h ΔT = …, m_h, ρ_h, V_h): rows aligned at `=`, one equation per row, nothing clipped, Sijoitus and Vastaus unaffected.
+- No 360/390 px open-solution captures exist for exercises.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

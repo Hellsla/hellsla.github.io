@@ -42,7 +42,12 @@
 **Annettu:** $c = 3500\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, kiertävä massa $\tfrac{m}{t} = 0{,}50\,\tfrac{\text{kg}}{\text{s}}$, lämpötilan nousu $\Delta T = 8{,}0\,\text{K}$
 **Kysytty:** moottorista nesteeseen siirtyvä teho $P$ kilowatteina
 **Periaate:** Neste lämpenee eikä kiehu, joten sen olomuoto ei muutu ja sekunnissa vastaanotettu lämpömäärä on $c\,m\,\Delta T$ sille massalle, joka kulkee moottorin läpi sekunnissa. Teho on energia aikayksikköä kohti, $P = \tfrac{Q}{t}$.
-**Kaava:** $P = \dfrac{Q}{t} = \dfrac{c\,m\,\Delta T}{t} = c\,\dfrac{m}{t}\,\Delta T$
+**Kaava:** $$\begin{aligned} Q &= c\,m\,\Delta T \\
+P &= \dfrac{Q}{t} \\
+&= \dfrac{c\,m\,\Delta T}{t} \\
+&= c\,\dfrac{m}{t}\,\Delta T
+\end{aligned}
+$$
 **Muunnokset:** Lämpötilan muutos on jo kelvineinä. Yksiköt: $\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot \tfrac{\text{kg}}{\text{s}} \cdot \text{K} = \tfrac{\text{J}}{\text{s}} = \text{W}$ ja lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** $P = 3500\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\tfrac{\text{kg}}{\text{s}} \cdot 8{,}0\,\text{K} = 14\,000\,\tfrac{\text{J}}{\text{s}} = 14\,000\,\text{W} = 14\,\text{kW}$
 **Vastaus:** $14\,\text{kW}$, kaksi merkitsevää numeroa kuten arvoissa $0{,}50\,\tfrac{\text{kg}}{\text{s}}$ ja $8{,}0\,\text{K}$.
@@ -52,7 +57,14 @@
 **Annettu:** $U = 2{,}0\,\tfrac{\text{W}}{\text{m}^2\text{K}}$, $A = 0{,}50\,\text{m}^2$, ulkona $25\,{}^\circ\text{C}$ ja sisällä $0\,{}^\circ\text{C}$ eli $\Delta T = 25\,\text{K}$, aika $t = 6{,}0\,\text{h}$; taulukosta $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** jään massa $m$ kilogrammoina
 **Periaate:** Niin kauan kuin jäätä on, sisällä pysyy $0\,{}^\circ\text{C}$, joten lämpötilaero ja seinän läpi tuleva teho pysyvät vakioina. Laukussa on vain jäätä, joten koko seinän läpi tullut energia $P\,t$ kuluu jään sulattamiseen: $P\,t = s\,m$.
-**Kaava:** $U A\,\Delta T\,t = s\,m$, joten $m = \dfrac{U A\,\Delta T\,t}{s}$
+**Kaava:** $$\begin{aligned} P &= U A\,\Delta T \\
+E &= P\,t \\
+Q &= s\,m \\
+E &= Q \\
+U A\,\Delta T\,t &= s\,m \\
+m &= \dfrac{U A\,\Delta T\,t}{s}
+\end{aligned}
+$$
 **Muunnokset:** $t = 6{,}0\,\text{h} = 6{,}0 \cdot 3600\,\text{s} = 21\,600\,\text{s}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$, jotta watti kertaa sekunti on joule.
 **Sijoitus:** $P = 2{,}0 \cdot 0{,}50 \cdot 25\,\text{W} = 25\,\text{W}$ ja $m = \dfrac{25\,\text{W} \cdot 21\,600\,\text{s}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = \dfrac{540\,000\,\text{J}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = 1{,}617\,\text{kg}$
 **Vastaus:** $1{,}7\,\text{kg}$, kaksi merkitsevää numeroa, koska U-arvo $2{,}0$, pinta-ala $0{,}50\,\text{m}^2$, lämpötilaero $25\,\text{K}$ ja aika $6{,}0\,\text{h}$ ovat kaikki kahdella numerolla. Laskettu $1{,}617\,\text{kg}$ on pienin riittävä massa, joten se pyöristetään ylöspäin: $1{,}6\,\text{kg}$ ei riittäisi koko kuudeksi tunniksi.
@@ -62,7 +74,13 @@
 **Annettu:** vesi $m = 0{,}25\,\text{kg}$, $T_\text{alku} = 20\,{}^\circ\text{C}$, $T_\text{loppu} = 100\,{}^\circ\text{C}$; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** kokonaislämpömäärä $Q$ kilojouleina
 **Periaate:** Prosessissa on kaksi peräkkäistä vaihetta. Ensin vesi lämpenee $100\,{}^\circ\text{C}$:seen ($c\,m\,\Delta T$), sitten se höyrystyy tässä lämpötilassa, joka ei muutu ($r\,m$). Höyrystyessä ei ole lämpötilan muutosta, joten vaiheiden energiat lasketaan eri kaavoilla ja lasketaan yhteen.
-**Kaava:** $Q = Q_\text{lämpeneminen} + Q_\text{höyrystyminen} = c\,m\,\Delta T + r\,m$, missä $\Delta T = T_\text{loppu} - T_\text{alku}$
+**Kaava:** $$\begin{aligned} Q_\text{lämpeneminen} &= c\,m\,\Delta T \\
+Q_\text{höyrystyminen} &= r\,m \\
+Q &= Q_\text{lämpeneminen} \\ &\quad + Q_\text{höyrystyminen} \\
+&= c\,m\,\Delta T + r\,m \\
+\Delta T &= T_\text{loppu} - T_\text{alku}
+\end{aligned}
+$$
 **Muunnokset:** $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$, sama kelvineinä. $r = 2260\,\tfrac{\text{kJ}}{\text{kg}} = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$ ja lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $Q_\text{lämpeneminen} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}25\,\text{kg} \cdot 80\,\text{K} = 83\,800\,\text{J}$ ja $Q_\text{höyrystyminen} = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0{,}25\,\text{kg} = 565\,000\,\text{J}$, joten $Q = 648\,800\,\text{J} = 648{,}8\,\text{kJ}$
 **Vastaus:** $650\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $0{,}25\,\text{kg}$.
@@ -72,7 +90,12 @@
 **Annettu:** $P = 24\,\text{kW}$, $c = 3500\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, suurin sallittu lämpötilan nousu $\Delta T = 8{,}0\,\text{K}$
 **Kysytty:** sekunnissa kierrätettävä nestemassa $\tfrac{m}{t}$ yksikössä $\tfrac{\text{kg}}{\text{s}}$
 **Periaate:** Moottorista siirtyvä teho menee kokonaan nesteen lämpenemiseen, ja neste ei kiehu, joten olomuoto ei muutu. Sekunnissa kulkeva massa $\tfrac{m}{t}$ ottaa vastaan lämpömäärän $c\,\tfrac{m}{t}\,\Delta T$, ja se on yhtä suuri kuin teho $P$.
-**Kaava:** $P = c\,\dfrac{m}{t}\,\Delta T$, joten $\dfrac{m}{t} = \dfrac{P}{c\,\Delta T}$
+**Kaava:** $$\begin{aligned} Q &= c\,m\,\Delta T \\
+P &= \dfrac{Q}{t} \\
+&= c\,\dfrac{m}{t}\,\Delta T \\
+\dfrac{m}{t} &= \dfrac{P}{c\,\Delta T}
+\end{aligned}
+$$
 **Muunnokset:** $24\,\text{kW} = 24\,000\,\text{W} = 24\,000\,\tfrac{\text{J}}{\text{s}}$. Lämpötilan muutos on jo kelvineinä.
 **Sijoitus:** $\dfrac{m}{t} = \dfrac{24\,000\,\tfrac{\text{J}}{\text{s}}}{3500\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 8{,}0\,\text{K}} = \dfrac{24\,000}{28\,000}\,\tfrac{\text{kg}}{\text{s}} = 0{,}857\,\tfrac{\text{kg}}{\text{s}}$
 **Vastaus:** $0{,}86\,\tfrac{\text{kg}}{\text{s}}$, kaksi merkitsevää numeroa kuten arvoissa $24\,\text{kW}$ ja $8{,}0\,\text{K}$.
@@ -82,7 +105,13 @@
 **Annettu:** limonadi $m_\text{j} = 0{,}33\,\text{kg}$, $T_\text{alku} = 22\,{}^\circ\text{C}$, $T_\text{loppu} = 0\,{}^\circ\text{C}$, $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ (veden arvo); taulukosta $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** sulaneen jään massa $m_\text{jää}$ grammoina
 **Periaate:** Energia säilyy: kun ympäristöstä ei tule lämpöä, limonadin jäähtyessä luovuttama energia kuluu kokonaan jään sulattamiseen. Jäätä on riittävästi, joten lämpötila asettuu $0\,{}^\circ\text{C}$:seen eikä sulanut jää lämpene.
-**Kaava:** $c\,m_\text{j}\,\Delta T = s\,m_\text{jää}$, joten $m_\text{jää} = \dfrac{c\,m_\text{j}\,\Delta T}{s}$
+**Kaava:** $$\begin{aligned} Q_\text{luovutettu} &= Q_\text{vastaanotettu} \\
+Q_\text{luovutettu} &= c\,m_\text{j}\,\Delta T \\
+Q_\text{vastaanotettu} &= s\,m_\text{jää} \\
+c\,m_\text{j}\,\Delta T &= s\,m_\text{jää} \\
+m_\text{jää} &= \dfrac{c\,m_\text{j}\,\Delta T}{s}
+\end{aligned}
+$$
 **Muunnokset:** $\Delta T = 22\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 22\,\text{K}$, sama kelvineinä. $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$, ja lopuksi $1\,\text{kg} = 1000\,\text{g}$.
 **Sijoitus:** $m_\text{jää} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}33\,\text{kg} \cdot 22\,\text{K}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = \dfrac{30\,419{,}4\,\text{J}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = 0{,}0911\,\text{kg} = 91{,}1\,\text{g}$
 **Vastaus:** $91\,\text{g}$, kaksi merkitsevää numeroa kuten arvoissa $0{,}33\,\text{kg}$ ja $22\,\text{K}$.
@@ -92,7 +121,15 @@
 **Annettu:** kivet $m_\text{k} = 25\,\text{kg}$, $c_\text{k} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; vesi $m_\text{v} = 0{,}20\,\text{kg}$, $T_\text{alku} = 20\,{}^\circ\text{C}$, lämpenee $100\,{}^\circ\text{C}$:seen ja höyrystyy; taulukosta $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** kivien lämpötilan lasku $\Delta T_\text{k}$ kelvineinä
 **Periaate:** Energia säilyy: kun kaikki energia otetaan kivistä, kivien luovuttama energia on yhtä suuri kuin veden vastaanottama. Vesi vastaanottaa energiaa kahdessa vaiheessa (lämpeneminen ja höyrystyminen), kivet vain jäähtyvät eikä niiden olomuoto muutu. Höyryn lämpenemistä ja kiukaan lämmitystä ei oteta huomioon.
-**Kaava:** $c_\text{k}\,m_\text{k}\,\Delta T_\text{k} = m_\text{v}(c_\text{v}\,\Delta T_\text{v} + r)$, joten $\Delta T_\text{k} = \dfrac{m_\text{v}(c_\text{v}\,\Delta T_\text{v} + r)}{c_\text{k}\,m_\text{k}}$
+**Kaava:** $$\begin{aligned} Q_\text{luovutettu} &= Q_\text{vastaanotettu} \\
+Q_\text{luovutettu} &= c_\text{k}\,m_\text{k}\,\Delta T_\text{k} \\
+Q_\text{vastaanotettu} &= Q_\text{v} \\
+Q_\text{v} &= c_\text{v}\,m_\text{v}\,\Delta T_\text{v} + r\,m_\text{v} \\
+&= m_\text{v}(c_\text{v}\,\Delta T_\text{v} + r) \\
+c_\text{k}\,m_\text{k}\,\Delta T_\text{k} &= m_\text{v}(c_\text{v}\,\Delta T_\text{v} + r) \\
+\Delta T_\text{k} &= \dfrac{m_\text{v}(c_\text{v}\,\Delta T_\text{v} + r)}{c_\text{k}\,m_\text{k}}
+\end{aligned}
+$$
 **Muunnokset:** $\Delta T_\text{v} = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$, sama kelvineinä. $r = 2260\,\tfrac{\text{kJ}}{\text{kg}} = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Sijoitus:** $c_\text{v}\,\Delta T_\text{v} = 4190 \cdot 80\,\tfrac{\text{J}}{\text{kg}} = 335\,200\,\tfrac{\text{J}}{\text{kg}}$, $$\begin{aligned} Q_\text{v} &= 0{,}20\,\text{kg} \\ &\cdot (335\,200 + 2\,260\,000)\,\tfrac{\text{J}}{\text{kg}} \\ &= 519\,040\,\text{J} \end{aligned}$$ ja $\Delta T_\text{k} = \dfrac{519\,040\,\text{J}}{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 25\,\text{kg}} = 25{,}95\,\text{K}$
 **Vastaus:** $26\,\text{K}$, kaksi merkitsevää numeroa kuten massoissa $0{,}20\,\text{kg}$ ja $25\,\text{kg}$.
@@ -102,7 +139,15 @@
 **Annettu:** jää $m_\text{jää} = 0{,}500\,\text{kg}$, $0\,{}^\circ\text{C}$; vesi $m_\text{v} = 2{,}00\,\text{kg}$, $T_\text{v} = 30{,}0\,{}^\circ\text{C}$; astia on eristetty; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** seoksen loppulämpötila $T$ celsiusasteina
 **Periaate:** Energia säilyy, koska astia on eristetty: veden luovuttama energia sulattaa jään ja lämmittää sulaneen veden loppulämpötilaan. Se onnistuu vain, jos kaikki jää sulaa. Tarkistetaan ensin: vesi voi luovuttaa jäähtyessään $0\,{}^\circ\text{C}$:seen enintään $c\,m_\text{v}\,T_\text{v} = 251\,400\,\text{J}$, ja jään sulattamiseen riittää $s\,m_\text{jää} = 167\,000\,\text{J}$. Koska $251\,400\,\text{J} > 167\,000\,\text{J}$, kaikki jää sulaa ja loppulämpötila on yli $0\,{}^\circ\text{C}$.
-**Kaava:** $$\begin{aligned} &c\,m_\text{v}(T_\text{v} - T) \\ &= s\,m_\text{jää} + c\,m_\text{jää}\,T \end{aligned}$$, joten $T = \dfrac{c\,m_\text{v}\,T_\text{v} - s\,m_\text{jää}}{c\,(m_\text{v} + m_\text{jää})}$
+**Kaava:** $$\begin{aligned} Q_\text{luovutettu} &= Q_\text{vastaanotettu} \\
+Q_\text{luovutettu} &= c\,m_\text{v}(T_\text{v} - T) \\
+Q_\text{vastaanotettu} &= s\,m_\text{jää} + c\,m_\text{jää}\,T \\
+c\,m_\text{v}(T_\text{v} - T) &= s\,m_\text{jää} + c\,m_\text{jää}\,T \\
+c\,m_\text{v}\,T_\text{v} - s\,m_\text{jää} &= c\,m_\text{v}\,T + c\,m_\text{jää}\,T \\
+&= c\,(m_\text{v} + m_\text{jää})\,T \\
+T &= \dfrac{c\,m_\text{v}\,T_\text{v} - s\,m_\text{jää}}{c\,(m_\text{v} + m_\text{jää})}
+\end{aligned}
+$$
 **Muunnokset:** Jää on $0\,{}^\circ\text{C}$:ssa, joten sulaneen veden lämpötilan muutos on $T - 0\,{}^\circ\text{C} = T$ ja vesi jäähtyy $T_\text{v} - T$; erot ovat samat kelvineinä, ja $T$ saadaan suoraan celsiusasteina. $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Sijoitus:** Osoittaja on $$\begin{aligned} &4190 \cdot 2{,}00 \cdot 30{,}0\,\text{J} \\ &- 334\,000 \cdot 0{,}500\,\text{J} \\ &= 251\,400\,\text{J} - 167\,000\,\text{J} \\ &= 84\,400\,\text{J} \end{aligned}$$ ja nimittäjä $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 2{,}50\,\text{kg} = 10\,475\,\tfrac{\text{J}}{\text{K}}$, joten
 
@@ -115,7 +160,17 @@ $$T = \dfrac{84\,400\,\text{J}}{10\,475\,\tfrac{\text{J}}{\text{K}}} = 8{,}057\,
 **Annettu:** $U = 1{,}5\,\tfrac{\text{W}}{\text{m}^2\text{K}}$, $A = 0{,}50\,\text{m}^2$, ulkona $30\,{}^\circ\text{C}$ ja sisällä $0\,{}^\circ\text{C}$ eli $\Delta T = 30\,\text{K}$, $t = 6{,}0\,\text{h}$; juomat $m_\text{j} = 0{,}50\,\text{kg}$, $\Delta T_\text{j} = 24\,\text{K}$, $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; jää $-10\,{}^\circ\text{C} \to 0\,{}^\circ\text{C}$, $c_\text{jää} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; taulukosta $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** jääpussin pienin massa $m$ kilogrammoina
 **Periaate:** Energia säilyy: jään täytyy 6,0 tunnin aikana ottaa vastaan seinän läpi tuleva energia sekä juomien luovuttama energia. Jää lämpenee ensin $-10\,{}^\circ\text{C}$:sta $0\,{}^\circ\text{C}$:seen ($c_\text{jää}\,\Delta T_\text{jää}$) ja sulaa sitten ($s$). Sisällä on tehtävän oletuksen mukaan $0\,{}^\circ\text{C}$, joten seinän teho pysyy vakiona.
-**Kaava:** $m\,(c_\text{jää}\,\Delta T_\text{jää} + s) = U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j}$, joten $m = \dfrac{U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j}}{c_\text{jää}\,\Delta T_\text{jää} + s}$
+**Kaava:** $$\begin{aligned} Q_\text{vastaanotettu} &= Q_\text{luovutettu} \\
+Q_\text{vastaanotettu} &= m\,(c_\text{jää}\,\Delta T_\text{jää} + s) \\
+P &= U A\,\Delta T \\
+E &= P\,t \\
+Q_\text{luovutettu} &= E + c\,m_\text{j}\,\Delta T_\text{j} \\
+E_\text{yht} &= U A\,\Delta T\,t \\
+&\quad + c\,m_\text{j}\,\Delta T_\text{j} \\
+m\,(c_\text{jää}\,\Delta T_\text{jää} + s) &= E_\text{yht} \\
+m &= \dfrac{E_\text{yht}}{c_\text{jää}\,\Delta T_\text{jää} + s}
+\end{aligned}
+$$
 **Muunnokset:** $t = 6{,}0\,\text{h} = 21\,600\,\text{s}$ ja $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. Jään lämpötilan muutos on $\Delta T_\text{jää} = 0\,{}^\circ\text{C} - (-10\,{}^\circ\text{C}) = 10\,\text{K}$, sama kelvineinä.
 **Sijoitus:**
 Seinän energia: $U A\,\Delta T\,t = 1{,}5 \cdot 0{,}50 \cdot 30 \cdot 21\,600\,\text{J} = 486\,000\,\text{J}$
@@ -139,7 +194,13 @@ Pienin massa: $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tfr
 **Annettu:** teho $P = 2{,}0\,\text{kW}$, vesi $m = 1{,}5\,\text{kg}$, $T_\text{alku} = 20\,{}^\circ\text{C}$, $T_\text{loppu} = 100\,{}^\circ\text{C}$; tehtävässä annettu $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Kysytty:** lämmitysaika $t$ sekunteina
 **Periaate:** Oletuksen mukaan koko sähköenergia $P\,t$ menee veden lämmittämiseen. Vesi ei kiehu eikä höyrysty, joten olomuoto ei muutu ja riittää $Q = c\,m\,\Delta T$. Energiataseesta $P\,t = c\,m\,\Delta T$.
-**Kaava:** $P\,t = c\,m\,\Delta T$, josta $t = \dfrac{c\,m\,\Delta T}{P}$
+**Kaava:** $$\begin{aligned} E &= P\,t \\
+Q &= c\,m\,\Delta T \\
+E &= Q \\
+P\,t &= c\,m\,\Delta T \\
+t &= \dfrac{c\,m\,\Delta T}{P}
+\end{aligned}
+$$
 **Muunnokset:** Lämpötilan muutos on sama kelvineinä: $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$. Teho on $P = 2{,}0\,\text{kW} = 2000\,\text{W}$, jotta energia on jouleina ja aika sekunteina.
 **Sijoitus:** $t = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1{,}5\,\text{kg} \cdot 80\,\text{K}}{2000\,\text{W}} = \dfrac{502\,800\,\text{J}}{2000\,\text{W}} = 251{,}4\,\text{s}$
 **Vastaus:** $250\,\text{s}$, kaksi merkitsevää numeroa kuten massassa $1{,}5\,\text{kg}$ ja tehossa $2{,}0\,\text{kW}$.
@@ -149,7 +210,13 @@ Pienin massa: $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tfr
 **Annettu:** teho $P = 6{,}0\,\text{kW}$, kivet $m = 40\,\text{kg}$ ja $c = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; taulukosta $T = 20\,{}^\circ\text{C}$ hetkellä $0\,\text{min}$ ja $T = 275\,{}^\circ\text{C}$ hetkellä $30\,\text{min}$ (väliarvot $112\,{}^\circ\text{C}$ ja $196\,{}^\circ\text{C}$)
 **Kysytty:** lämmityksen hyötysuhde $\eta$ prosentteina
 **Periaate:** Kivet pysyvät kiinteinä, joten niihin siirtynyt energia on $Q = c\,m\,\Delta T$. Vastukset muuttavat sähköenergiaa sisäenergiaksi teholla $P$, ja se siirtyy lämpönä kiviin, joten käytetty energia on $P\,t$. Hyötysuhde on hyödyksi päätyvän energian suhde käytettyyn energiaan.
-**Kaava:** $\eta = \dfrac{Q}{P\,t} = \dfrac{c\,m\,\Delta T}{P\,t}$
+**Kaava:** $$\begin{aligned} \eta &= \dfrac{E_\text{hyöty}}{E} \\
+E_\text{hyöty} &= Q \\
+Q &= c\,m\,\Delta T \\
+E &= P\,t \\
+\eta &= \dfrac{c\,m\,\Delta T}{P\,t}
+\end{aligned}
+$$
 **Muunnokset:** Lämpötilan muutos on sama kelvineinä: $\Delta T = 275\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 255\,\text{K}$. Aika $t = 30\,\text{min} = 1800\,\text{s}$ ja teho $P = 6{,}0\,\text{kW} = 6000\,\text{W}$.
 **Sijoitus:** $\eta = \dfrac{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 40\,\text{kg} \cdot 255\,\text{K}}{6000\,\text{W} \cdot 1800\,\text{s}} = \dfrac{8{,}16 \cdot 10^{6}\,\text{J}}{10{,}8 \cdot 10^{6}\,\text{J}} = 0{,}756 = 75{,}6\,\%$
 **Vastaus:** $76\,\%$, kaksi merkitsevää numeroa kuten tehossa $6{,}0\,\text{kW}$ ja massassa $40\,\text{kg}$.
@@ -161,7 +228,15 @@ Pienin massa: $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tfr
 **Kysytty:** talon lämpöhäviökerroin $UA$ yksikössä $\text{W/K}$
 **Periaate:** Lämmitysenergia on yhtä suuri kuin rakenteiden läpi poistuva energia, $E = P\,t = UA\,\Delta T\,t$, ja $\Delta T = T_\text{sisä} - T_\text{ulko}$. Kun sisälämpötila ja $UA$ ovat vakioita, $E$ on ulkolämpötilan lineaarinen funktio, ja suoran kulmakerroin on $-UA\,t$.
 **Kuvaajan lukeminen:** Pisteet $(T_\text{ulko}, E)$ asettuvat likimain laskevalle suoralle, mutta eivät täsmälleen sen päälle mittausvaihtelun vuoksi. Sovitettu suora kulkee pisteiden keskeltä. Kulmakerroin luetaan kahdesta suoran pisteestä: $(8\,{}^\circ\text{C};\ 1210\,\text{kWh})$ ja $(-8\,{}^\circ\text{C};\ 2810\,\text{kWh})$ (suoran piste, ei mittauspiste; taulukon arvo on $2790\,\text{kWh}$), joten $k = \dfrac{2810\,\text{kWh} - 1210\,\text{kWh}}{-8\,\text{K} - 8\,\text{K}} = -100\,\dfrac{\text{kWh}}{\text{K}}$.
-**Kaava:** $k = -UA\,t$, josta $UA = \dfrac{-k}{t}$
+**Kaava:** $$\begin{aligned} P &= U A\,\Delta T \\
+E &= P\,t \\
+\Delta T &= T_\text{sisä} - T_\text{ulko} \\
+E &= U A\,t\,(T_\text{sisä} - T_\text{ulko}) \\
+&= U A\,t\,T_\text{sisä} - U A\,t\,T_\text{ulko} \\
+k &= -U A\,t \\
+U A &= \dfrac{-k}{t}
+\end{aligned}
+$$
 **Muunnokset:** Kulmakertoimen suuruus on $100\,\dfrac{\text{kWh}}{\text{K}}$, ja $\dfrac{\text{kWh}}{\text{h}} = \text{kW}$. Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** $UA = \dfrac{100\,\tfrac{\text{kWh}}{\text{K}}}{720\,\text{h}} = 0{,}1389\,\dfrac{\text{kW}}{\text{K}} = 139\,\dfrac{\text{W}}{\text{K}}$
 **Vastaus:** $1{,}4 \cdot 10^{2}\,\dfrac{\text{W}}{\text{K}}$ (laskettu arvo $139\,\dfrac{\text{W}}{\text{K}}$), kaksi merkitsevää numeroa, koska suoran sovitus rajaa tarkkuutta.
@@ -172,7 +247,14 @@ Pienin massa: $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tfr
 **Annettu:** jää $m = 0{,}80\,\text{kg}$, $T_\text{jää} = 0\,{}^\circ\text{C}$, ulkona $26\,{}^\circ\text{C}$, $A = 0{,}70\,\text{m}^2$, $U = 1{,}4\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$; tehtävässä annettu $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** jään kestoaika $t$ tunteina; lisäksi missä oppilaan virhe on
 **Periaate:** Oppilaan virhe on, että hän käytti lämpötilaeroksi ulkolämpötilaa kelvineinä, $26 + 273 = 299\,\text{K}$. Kaavaan $P = UA\Delta T$ tulee lämpötilojen erotus, ja erotus on sama celsiusasteina ja kelvineinä, koska asteikoilla on sama aste: $26\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 26\,\text{K}$ eli $299\,\text{K} - 273\,\text{K}$. Oppilas jätti sisälämpötilan huomiotta. Kun jäätä on, sisällä on $0\,{}^\circ\text{C}$ ja seinän energia sulattaa jään, $UA\Delta T\,t = s\,m$.
-**Kaava:** $UA\Delta T\,t = s\,m$, josta $t = \dfrac{s\,m}{UA\Delta T}$
+**Kaava:** $$\begin{aligned} P &= U A\,\Delta T \\
+E &= P\,t \\
+Q &= s\,m \\
+E &= Q \\
+U A\,\Delta T\,t &= s\,m \\
+t &= \dfrac{s\,m}{U A\,\Delta T}
+\end{aligned}
+$$
 **Muunnokset:** Ei lämpötilojen muunnosta: $\Delta T = 26\,\text{K}$. Sulamislämpö $s = 334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$ ja lopuksi $1\,\text{h} = 3600\,\text{s}$.
 **Sijoitus:** $t = \dfrac{334\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0{,}80\,\text{kg}}{1{,}4\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 0{,}70\,\text{m}^2 \cdot 26\,\text{K}} = \dfrac{267\,200\,\text{J}}{25{,}48\,\text{W}} = 10\,487\,\text{s} = 2{,}913\,\text{h}$
 **Vastaus:** $2{,}9\,\text{h}$, kaksi merkitsevää numeroa kuten arvoissa $0{,}80\,\text{kg}$, $0{,}70\,\text{m}^2$ ja $1{,}4\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$.
@@ -196,7 +278,18 @@ Kestoaika kasvaa kaksinkertaiseksi. Massa ja lämpötilaero kasvavat molemmat ke
 **Annettu:** keskimääräinen $U = 0{,}50\,\tfrac{\text{W}}{\text{m}^2\text{K}}$, $A = 120\,\text{m}^2$, $T_\text{sisä} = 18\,{}^\circ\text{C}$, $t = 720\,\text{h}$ kuukaudessa; ulkolämpötilat taulukosta: $5\,{}^\circ\text{C}$, $0\,{}^\circ\text{C}$, $-4\,{}^\circ\text{C}$, $-9\,{}^\circ\text{C}$, $-7\,{}^\circ\text{C}$, $-3\,{}^\circ\text{C}$; A: $\eta_\text{A} = 1{,}00$, $0{,}15\,\tfrac{\text{€}}{\text{kWh}}$; B: $\eta_\text{B} = 0{,}70$, lämpöarvo $H = 15\,\tfrac{\text{MJ}}{\text{kg}}$, $0{,}18\,\tfrac{\text{€}}{\text{kg}}$
 **Kysytty:** edullisemman ratkaisun säästö kustannuksissa lämmityskaudella euroina
 **Periaate:** Lämmitysenergia on yhtä suuri kuin rakenteiden läpi johtuva energia. Jokaisen kuukauden teho on $P = UA\Delta T$ ja energia $P\,t$. Koska $UA$, $t$ ja sisälämpötila ovat samat, kauden energia on $UA\,t\,\Sigma\Delta T$. Polttoaineesta tarvitaan tämä energia jaettuna hyötysuhteella, ja polttopuun massa saadaan lämpöarvosta.
-**Kaava:** $E = UA\,t\,\Sigma\Delta T$, sähkön kustannus $C_\text{A} = \dfrac{E}{\eta_\text{A}}\,h_\text{A}$ ja puun $C_\text{B} = \dfrac{E}{\eta_\text{B}\,H}\,h_\text{B}$, joten säästö on $C_\text{A} - C_\text{B}$
+**Kaava:** $$\begin{aligned} P &= U A\,\Delta T \\
+E &= \Sigma\,P\,t \\
+&= U A\,t\,\Sigma\Delta T \\
+\eta &= \dfrac{E}{E_\text{kulutettu}} \\
+C_\text{A} &= \dfrac{E}{\eta_\text{A}}\,h_\text{A} \\
+m\,H &= \dfrac{E}{\eta_\text{B}} \\
+m &= \dfrac{E}{\eta_\text{B}\,H} \\
+C_\text{B} &= m\,h_\text{B} \\
+&= \dfrac{E}{\eta_\text{B}\,H}\,h_\text{B} \\
+\text{säästö} &= C_\text{A} - C_\text{B}
+\end{aligned}
+$$
 **Muunnokset:** Lämpötilaerot $\Delta T = 18\,{}^\circ\text{C} - T_\text{ulko}$ ovat samat kelvineinä: $13$, $18$, $22$, $27$, $25$ ja $21\,\text{K}$. Lämpöhäviökerroin $UA = 0{,}50 \cdot 120\,\tfrac{\text{W}}{\text{K}} = 60\,\tfrac{\text{W}}{\text{K}} = 0{,}060\,\tfrac{\text{kW}}{\text{K}}$. Lämpöarvo $15\,\tfrac{\text{MJ}}{\text{kg}}$ muutetaan: $1\,\text{kWh} = 3{,}6\,\text{MJ}$, joten $H = \dfrac{15}{3{,}6}\,\tfrac{\text{kWh}}{\text{kg}} = 4{,}167\,\tfrac{\text{kWh}}{\text{kg}}$.
 **Sijoitus:** Lämpötilaerojen summa on $$\begin{aligned} &13 + 18 + 22 + 27 + 25 + 21 \\ &= 126\,\text{K} \end{aligned}$$, joten $E = 0{,}060\,\tfrac{\text{kW}}{\text{K}} \cdot 720\,\text{h} \cdot 126\,\text{K} = 5443\,\text{kWh}$.
 Sähkö: $C_\text{A} = \dfrac{5443\,\text{kWh}}{1{,}00} \cdot 0{,}15\,\tfrac{\text{€}}{\text{kWh}} = 816{,}5\,\text{€}$
@@ -210,7 +303,15 @@ Säästö: $C_\text{A} - C_\text{B} = 816{,}5\,\text{€} - 335{,}9\,\text{€} 
 **Annettu:** pituus $60\,\text{m}$, leveys $30\,\text{m}$, vesikerroksen paksuus ennen jäätymistä $0{,}030\,\text{m}$, veden alkulämpötila $12\,{}^\circ\text{C}$, jään loppulämpötila $-5{,}0\,{}^\circ\text{C}$, $\rho = 1000\,\tfrac{\text{kg}}{\text{m}^3}$, $c_\text{vesi} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $c_\text{jää} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, aika $t = 10\,\text{h}$; taulukosta $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** jäähdytyskoneen keskimääräinen teho $P$ kilowatteina
 **Periaate:** Kone poistaa vedestä energian kolmessa vaiheessa, ja koko teho kuluu niihin: $P\,t = Q_1 + Q_2 + Q_3$. Vesi jäähtyy ensin $0\,{}^\circ\text{C}$:seen ($Q_1 = c_\text{vesi}\,m\,\Delta T_1$), sitten jäätyy vakiolämpötilassa ($Q_2 = s\,m$: jäätyessä vapautuu sama energia kuin sulamiseen tarvitaan) ja lopuksi jää jäähtyy $-5{,}0\,{}^\circ\text{C}$:seen ($Q_3 = c_\text{jää}\,m\,\Delta T_3$). Jäätymisen aikana lämpötila ei muutu, joten sille ei käytetä $c\,\Delta T$:tä.
-**Kaava:** $m = \rho\,V$, $$\begin{aligned} P\,t &= c_\text{vesi}\,m\,\Delta T_1 \\ &+ s\,m + c_\text{jää}\,m\,\Delta T_3 \end{aligned}$$, josta $P = \dfrac{m\,(c_\text{vesi}\,\Delta T_1 + s + c_\text{jää}\,\Delta T_3)}{t}$
+**Kaava:** $$\begin{aligned} m &= \rho\,V \\
+Q_1 &= c_\text{vesi}\,m\,\Delta T_1 \\
+Q_2 &= s\,m \\
+Q_3 &= c_\text{jää}\,m\,\Delta T_3 \\
+P\,t &= Q_1 + Q_2 + Q_3 \\
+&= m\,(c_\text{vesi}\,\Delta T_1 + s + c_\text{jää}\,\Delta T_3) \\
+P &= \dfrac{m\,(c_\text{vesi}\,\Delta T_1 + s + c_\text{jää}\,\Delta T_3)}{t}
+\end{aligned}
+$$
 **Muunnokset:** Lämpötilan muutokset ovat samat kelvineinä: $\Delta T_1 = 12\,\text{K}$ ja $\Delta T_3 = 5{,}0\,\text{K}$. $s = 334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$ ja $t = 10\,\text{h} = 36\,000\,\text{s}$.
 **Sijoitus:** Tilavuus $V = 60\,\text{m} \cdot 30\,\text{m} \cdot 0{,}030\,\text{m} = 54\,\text{m}^3$ ja massa $m = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 54\,\text{m}^3 = 54\,000\,\text{kg}$.
 Veden jäähtyminen: $Q_1 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 54\,000\,\text{kg} \cdot 12\,\text{K} = 2{,}715 \cdot 10^{9}\,\text{J}$
@@ -238,7 +339,13 @@ Todellinen tarvittava jäähdytysteho on laskettua suurempi, koska hallin ilmast
 **Kysytty:** ominaislämpökapasiteetti $c$ yksikössä $\text{J/(kg}\cdot\text{K)}$
 **Periaate:** Energia säilyy, ja koko vastuksen teho siirtyy kappaleeseen, joten ajassa $t$ siirtyvä energia $Pt$ lämmittää kappaletta: $Pt = Q = cm\Delta T$.
 **Kuvaajan lukeminen:** Teho on vakio, joten kuvaaja on suora. Alkupiste on ruudukon risteyksessä $(0\,\text{s};\ 20\,{}^\circ\text{C})$ ja loppupiste risteyksessä $(180\,\text{s};\ 60\,{}^\circ\text{C})$. Ruudukon väli on $20\,\text{s}$ ja $10\,{}^\circ\text{C}$. Aika on siis $t = 180\,\text{s}$ ja lämpötilan muutos $\Delta T = 60 - 20 = 40\,{}^\circ\text{C} = 40\,\text{K}$.
-**Kaava:** $Pt = cm\Delta T$, joten $c = \dfrac{Pt}{m\Delta T}$
+**Kaava:** $$\begin{aligned} E &= P\,t \\
+Q &= c\,m\,\Delta T \\
+E &= Q \\
+P\,t &= c\,m\,\Delta T \\
+c &= \dfrac{P\,t}{m\,\Delta T}
+\end{aligned}
+$$
 **Muunnokset:** Lämpötilan muutos on yhtä suuri celsiusasteina ja kelvineinä, $\Delta T = 40\,\text{K}$. Teho $\text{W}$ kertaa aika $\text{s}$ on jouleina, joten muita muunnoksia ei tarvita.
 **Sijoitus:** $c = \dfrac{400\,\text{W} \cdot 180\,\text{s}}{2{,}0\,\text{kg} \cdot 40\,\text{K}} = \dfrac{72\,000\,\text{J}}{80\,\text{kg}\cdot\text{K}} = 900\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Vastaus:** $c \approx 900\,\text{J/(kg}\cdot\text{K)}$, kaksi merkitsevää numeroa kuten massassa $2{,}0\,\text{kg}$.
@@ -249,7 +356,12 @@ Todellinen tarvittava jäähdytysteho on laskettua suurempi, koska hallin ilmast
 **Kysytty:** aika $t$ tunteina, kunnes kaikki jää on sulanut
 **Periaate:** Energia säilyy, ja seinän läpi siirtyvä energia $Pt$ lämmittää jään sulamispisteeseen ja sulattaa sen. Kuvaajasta nähdään koko tarvittava energia, ja tasaisella teholla $t = Q/P$.
 **Kuvaajan lukeminen:** Lämpötila nousee pisteestä $(0\,\text{kJ};\ -16\,{}^\circ\text{C})$ pisteeseen $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$ ja pysyy sitten $0\,{}^\circ\text{C}$:ssa, kun jää sulaa, pisteeseen $(220\,\text{kJ};\ 0\,{}^\circ\text{C})$. Kaikki jää on sulanut, kun siirretty energia on $Q = 220\,\text{kJ}$. Se sisältää sekä jään lämmittämisen että sulattamisen. Ruudukon väli on $20\,\text{kJ}$.
-**Kaava:** $Pt = Q$, joten $t = \dfrac{Q}{P}$
+**Kaava:** $$\begin{aligned} E &= P\,t \\
+E &= Q \\
+P\,t &= Q \\
+t &= \dfrac{Q}{P}
+\end{aligned}
+$$
 **Muunnokset:** $Q = 220\,\text{kJ} = 220\,000\,\text{J}$ ja $1\,\text{h} = 3600\,\text{s}$
 **Sijoitus:** $t = \dfrac{220\,000\,\text{J}}{25\,\text{W}} = 8800\,\text{s} = \dfrac{8800}{3600}\,\text{h} = 2{,}44\,\text{h}$
 **Vastaus:** $t \approx 2{,}4\,\text{h}$ eli noin $2\,\text{h}\ 27\,\text{min}$, kaksi merkitsevää numeroa, koska teho $25\,\text{W}$ on kahden numeron arvo.

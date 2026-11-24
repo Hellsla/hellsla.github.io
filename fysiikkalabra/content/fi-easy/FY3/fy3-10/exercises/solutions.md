@@ -2,7 +2,7 @@
 **Annettu:** jääkaapin ilma, $V = 0{,}250\,\text{m}^3$, $T = 278\,\text{K}$, $p = 1{,}01 \cdot 10^5\,\text{Pa}$; $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Kysytty:** ainemäärä $n$ mooleina
 **Periaate:** Kaapin ilma on kiinteässä astiassa. Sen paine, tilavuus ja lämpötila tunnetaan. Ideaalikaasun tilanyhtälö yhdistää nämä kolme ainemäärään. Ilma käyttäytyy ideaalikaasun tavoin tavallisessa paineessa ja lämpötilassa.
-**Kaava:** $pV = nRT$, josta $n = \dfrac{pV}{RT}$
+**Kaava:** $$\begin{aligned} pV &= nRT \\ n &= \dfrac{pV}{RT} \end{aligned}$$
 **Muunnokset:** Muunnoksia ei tarvita. Tilavuus on kuutiometreinä, paine pascaleina ja lämpötila kelvineinä. Silloin $\text{Pa}\cdot\text{m}^3 = \text{J}$, ja joulet supistuvat.
 **Sijoitus:** $n = \dfrac{1{,}01 \cdot 10^5\,\text{Pa} \cdot 0{,}250\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 278\,\text{K}} = 10{,}93\,\text{mol}$
 **Vastaus:** $10{,}9\,\text{mol}$, kolme merkitsevää numeroa. Kaikki tiedot on annettu kolmella numerolla: $0{,}250\,\text{m}^3$, $278\,\text{K}$, $1{,}01 \cdot 10^5\,\text{Pa}$ ja $R = 8{,}31$.
@@ -12,7 +12,7 @@
 **Annettu:** koripallon ilma, $V = 0{,}00710\,\text{m}^3$, $n = 0{,}460\,\text{mol}$, $T = 293\,\text{K}$; $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Kysytty:** paine $p$ kilopascaleina
 **Periaate:** Pallossa on tietty määrä ilmaa. Tilavuus ja lämpötila tunnetaan. Ilma käyttäytyy ideaalikaasuna. Siksi tilanyhtälö antaa paineen suoraan ainemäärästä, lämpötilasta ja tilavuudesta.
-**Kaava:** $pV = nRT$, josta $p = \dfrac{nRT}{V}$
+**Kaava:** $$\begin{aligned} pV &= nRT \\ p &= \dfrac{nRT}{V} \end{aligned}$$
 **Muunnokset:** Tiedot ovat jo perusyksiköissä. Sijoitus antaa siis paineen pascaleina, koska $\tfrac{\text{J}}{\text{m}^3} = \text{Pa}$. Lopuksi $1\,\text{kPa} = 1000\,\text{Pa}$.
 **Sijoitus:** $p = \dfrac{0{,}460\,\text{mol} \cdot 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 293\,\text{K}}{0{,}00710\,\text{m}^3} = 157\,750\,\text{Pa} = 157{,}75\,\text{kPa}$
 **Vastaus:** $158\,\text{kPa}$, kolme merkitsevää numeroa. Kaikki tiedot on annettu kolmella numerolla: $0{,}460\,\text{mol}$, $0{,}00710\,\text{m}^3$, $293\,\text{K}$ ja $R = 8{,}31$.
@@ -22,7 +22,7 @@
 **Annettu:** liivin hiilidioksidi, $n = 0{,}400\,\text{mol}$, $T = 283\,\text{K}$, $p = 1{,}05 \cdot 10^5\,\text{Pa}$; $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Kysytty:** tilavuus $V$ kuutiometreinä
 **Periaate:** Kaasu on vapautunut liiviin. Sen paine on liivin paine, ja lämpötila tunnetaan. Myös kaasun ainemäärä tunnetaan. Siksi tilanyhtälö antaa tilavuuden. Kaasun laatu ei vaikuta laskuun, koska tilanyhtälössä ei ole moolimassaa.
-**Kaava:** $pV = nRT$, josta $V = \dfrac{nRT}{p}$
+**Kaava:** $$\begin{aligned} pV &= nRT \\ V &= \dfrac{nRT}{p} \end{aligned}$$
 **Muunnokset:** Muunnoksia ei tarvita. Ainemäärä on moolina, lämpötila kelvineinä ja paine pascaleina. Siksi tilavuus tulee kuutiometreinä.
 **Sijoitus:** $V = \dfrac{0{,}400\,\text{mol} \cdot 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 283\,\text{K}}{1{,}05 \cdot 10^5\,\text{Pa}} = 0{,}008959\,\text{m}^3$
 **Vastaus:** $0{,}00896\,\text{m}^3$, kolme merkitsevää numeroa. Kaikki tiedot on annettu kolmella numerolla: $0{,}400\,\text{mol}$, $283\,\text{K}$, $1{,}05 \cdot 10^5\,\text{Pa}$ ja $R = 8{,}31$.
@@ -32,7 +32,7 @@
 **Annettu:** tynnyrin ilma, $V = 0{,}200\,\text{m}^3$, $n = 8{,}40\,\text{mol}$, $p = 1{,}13 \cdot 10^5\,\text{Pa}$; $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Kysytty:** lämpötila $T$ kelvineinä
 **Periaate:** Tynnyri on suljettu. Ilman ainemäärä ja tilavuus tunnetaan, ja paine on mitattu. Ilma käyttäytyy ideaalikaasuna. Siksi tilanyhtälö antaa lämpötilan.
-**Kaava:** $pV = nRT$, josta $T = \dfrac{pV}{nR}$
+**Kaava:** $$\begin{aligned} pV &= nRT \\ T &= \dfrac{pV}{nR} \end{aligned}$$
 **Muunnokset:** Muunnoksia ei tarvita. Paine on pascaleina, tilavuus kuutiometreinä ja ainemäärä moolina. Siksi tulos tulee suoraan kelvineinä.
 **Sijoitus:** $T = \dfrac{1{,}13 \cdot 10^5\,\text{Pa} \cdot 0{,}200\,\text{m}^3}{8{,}40\,\text{mol} \cdot 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}} = 323{,}8\,\text{K}$
 **Vastaus:** $324\,\text{K}$, kolme merkitsevää numeroa. Kaikki tiedot on annettu kolmella numerolla: $0{,}200\,\text{m}^3$, $8{,}40\,\text{mol}$, $1{,}13 \cdot 10^5\,\text{Pa}$ ja $R = 8{,}31$.
@@ -42,7 +42,7 @@
 **Annettu:** hiilidioksidi, $m = 425\,\text{g}$, $M = 44\,\text{g/mol}$
 **Kysytty:** ainemäärä $n$ moolina
 **Periaate:** Moolimassa kertoo yhden moolin massan. Kun kaasun kokonaismassa jaetaan moolimassalla, saadaan moolien lukumäärä. Tilanyhtälöä ei tarvita, koska paine ja lämpötila eivät vaikuta aineen määrään.
-**Kaava:** $M = \dfrac{m}{n}$, josta $n = \dfrac{m}{M}$
+**Kaava:** $$\begin{aligned} M &= \dfrac{m}{n} \\ n &= \dfrac{m}{M} \end{aligned}$$
 **Muunnokset:** Muunnoksia ei tarvita. Massa ja moolimassa ovat molemmat grammoina. Grammat supistuvat, ja jäljelle jää mooli.
 **Sijoitus:** $n = \dfrac{425\,\text{g}}{44\,\text{g/mol}} = 9{,}659\,\text{mol}$
 **Vastaus:** $9{,}7\,\text{mol}$, kaksi merkitsevää numeroa. Rajoittava tieto on moolimassa $44\,\text{g/mol}$, jossa on kaksi numeroa. Massa $425\,\text{g}$ on kolmen numeron arvo.
@@ -52,7 +52,7 @@
 **Annettu:** happi, $V = 10{,}0\,\textsf{l}$, $m = 2{,}40\,\text{kg}$, $\theta = 15\,{}^\circ\text{C}$, $M = 32{,}0\,\text{g/mol}$; $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Kysytty:** paine $p$ baareina, kun $1\,\text{bar} = 100\,\text{kPa}$
 **Periaate:** Pullon happi on kiinteässä tilavuudessa. Lämpötila tunnetaan. Ainemäärän saa massasta ja moolimassasta. Oletetaan, että happi on ideaalikaasua. Silloin tilanyhtälö antaa paineen.
-**Kaava:** $pV = nRT$ ja $n = \dfrac{m}{M}$, joten $p = \dfrac{nRT}{V} = \dfrac{mRT}{MV}$
+**Kaava:** $$\begin{aligned} n &= \dfrac{m}{M} \\ pV &= nRT \\ p &= \dfrac{nRT}{V} \\ &= \dfrac{mRT}{MV} \end{aligned}$$
 **Muunnokset:** $V = 10{,}0\,\textsf{l} = 0{,}0100\,\text{m}^3$, $M = 32{,}0\,\text{g/mol} = 0{,}0320\,\text{kg/mol}$ ja $T = (15 + 273{,}15)\,\text{K} = 288{,}15\,\text{K}$. Lopuksi $1\,\text{bar} = 10^5\,\text{Pa}$.
 **Sijoitus:** $n = \dfrac{2{,}40\,\text{kg}}{0{,}0320\,\text{kg/mol}} = 75{,}0\,\text{mol}$. $p = \dfrac{75{,}0\,\text{mol} \cdot 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 288{,}15\,\text{K}}{0{,}0100\,\text{m}^3} = 1{,}796 \cdot 10^7\,\text{Pa} = 179{,}6\,\text{bar}$
 **Vastaus:** $180\,\text{bar}$, kolme merkitsevää numeroa. Kaikki tiedot on annettu kolmella numerolla: $10{,}0\,\textsf{l}$, $2{,}40\,\text{kg}$, $32{,}0\,\text{g/mol}$ ja $R = 8{,}31$. Myös lämpötila $288\,\text{K}$ on kolmen numeron arvo. Se saatiin kokonaisasteista $15\,{}^\circ\text{C}$.
@@ -62,7 +62,7 @@
 **Annettu:** tuntematon kaasu, $V = 1{,}00\,\textsf{l}$, massan lisäys $m = 1{,}15\,\text{g}$, $p = 101\,\text{kPa}$, $\theta = 22\,{}^\circ\text{C}$; $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Kysytty:** moolimassa $M$ ja kaasun laji
 **Periaate:** Pallo oli tyhjiö. Massan lisäys on siis kaasun massa. Tilanyhtälö antaa ainemäärän paineesta, tilavuudesta ja lämpötilasta. Moolimassa on massa jaettuna ainemäärällä. Tilanyhtälössä ei ole kaasun lajia. Laji tunnistetaan vasta moolimassasta.
-**Kaava:** $pV = nRT$ ja $n = \dfrac{m}{M}$, joten $\dfrac{pV}{RT} = \dfrac{m}{M}$ ja $M = \dfrac{mRT}{pV}$
+**Kaava:** $$\begin{aligned} pV &= nRT \\ n &= \dfrac{m}{M} \\ pV &= \dfrac{m}{M}\,RT \\ M &= \dfrac{mRT}{pV} \end{aligned}$$
 **Muunnokset:** $V = 1{,}00\,\textsf{l} = 0{,}00100\,\text{m}^3$, $p = 101\,\text{kPa} = 101\,000\,\text{Pa}$ ja $T = (22 + 273{,}15)\,\text{K} = 295{,}15\,\text{K}$. Massa jätetään grammoiksi. Silloin tulos on yksikössä $\text{g/mol}$.
 **Sijoitus:** $M = \dfrac{1{,}15\,\text{g} \cdot 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 295{,}15\,\text{K}}{101\,000\,\text{Pa} \cdot 0{,}00100\,\text{m}^3} = 27{,}93\,\tfrac{\text{g}}{\text{mol}}$
 **Vastaus:** $27{,}9\,\text{g/mol}$, kolme merkitsevää numeroa. Kaikki tiedot on annettu kolmella numerolla: $1{,}00\,\textsf{l}$, $1{,}15\,\text{g}$, $101\,\text{kPa}$ ja $R = 8{,}31$. Myös lämpötila $295\,\text{K}$ on kolmen numeron arvo. Se saatiin kokonaisasteista $22\,{}^\circ\text{C}$. Kaasu on typpeä ($28\,\text{g/mol}$).
@@ -72,7 +72,7 @@
 **Annettu:** ilma sylinterissä, alussa $V_1 = 0{,}500\,\textsf{l}$, $p_1 = 101\,\text{kPa}$, $\theta_1 = 30\,{}^\circ\text{C}$; lopussa $V_2 = 0{,}0300\,\textsf{l}$, $p_2 = 4{,}60\,\text{MPa}$
 **Kysytty:** loppulämpötila $\theta_2$ celsiusasteina ja syttyykö polttoaine ($250\,{}^\circ\text{C}$)
 **Periaate:** Venttiilit ovat kiinni. Siksi ilman ainemäärä pysyy samana ja $nR$ on vakio. Silloin tilanyhtälöstä seuraa yhdistetty kaasulaki alku- ja lopputilan välillä.
-**Kaava:** $\dfrac{p_1 V_1}{T_1} = \dfrac{p_2 V_2}{T_2}$, josta $T_2 = T_1 \cdot \dfrac{p_2 V_2}{p_1 V_1}$ ja $\theta_2 = T_2 - 273{,}15\,\text{K}$
+**Kaava:** $$\begin{aligned} p_1V_1 &= nRT_1 \\ p_2V_2 &= nRT_2 \\ \dfrac{p_2V_2}{p_1V_1} &= \dfrac{T_2}{T_1} \\ T_2 &= T_1 \cdot \dfrac{p_2V_2}{p_1V_1} \\ \theta_2 &= T_2 - 273{,}15\,\text{K} \end{aligned}$$
 **Muunnokset:** $T_1 = (30 + 273{,}15)\,\text{K} = 303{,}15\,\text{K}$. Paineet ja tilavuudet ovat suhteessa. Ne supistuvat, kun yksiköt ovat samat: $4{,}60\,\text{MPa} = 4600\,\text{kPa}$ ja litrat pysyvät litroina.
 **Sijoitus:** $T_2 = 303{,}15\,\text{K} \cdot \dfrac{4600\,\text{kPa} \cdot 0{,}0300\,\textsf{l}}{101\,\text{kPa} \cdot 0{,}500\,\textsf{l}} = 828{,}4\,\text{K}$. $\theta_2 = 828{,}4 - 273{,}15 = 555{,}3\,{}^\circ\text{C}$
 **Vastaus:** $555\,{}^\circ\text{C}$, kolme merkitsevää numeroa. Kaikki tiedot ovat kolmen numeron arvoja: $0{,}500\,\textsf{l}$, $101\,\text{kPa}$, $0{,}0300\,\textsf{l}$, $4{,}60\,\text{MPa}$ ja $303\,\text{K}$ (kokonaisasteista $30\,{}^\circ\text{C}$). Kun kelvinlämpötilasta $828\,\text{K}$ vähennetään $273{,}15\,\text{K}$, yksiköt säilyvät. Polttoaine syttyy, koska $555\,{}^\circ\text{C}$ on selvästi yli $250\,{}^\circ\text{C}$.
@@ -83,7 +83,7 @@
 **Kysytty:** ainemäärien erotus $n_\text{A} - n_\text{B}$
 **Periaate:** Astiat ovat suljettuja ja jäykkiä. Siksi kaasun määrä ja tilavuus pysyvät samoina, ja kuvaajan suorat ovat tilanyhtälön mukaisia. Luetaan kummastakin sarjasta paine samassa lämpötilassa. Silloin tilanyhtälö antaa kummankin ainemäärän. Erotus saadaan vähentämällä.
 **Kuvaajan lukeminen:** Luetaan molemmat sarjat samasta lämpötilasta $T = 400\,\text{K}$. Se on ruudukon pystyviiva. Kaasu A: $p_\text{A} = 100\,\text{kPa}$. Kaasu B: $p_\text{B} = 60\,\text{kPa}$. Pisteiden $T = 200\,\text{K}$ paineet ovat puolet näistä. Suorat kulkevat siis origon kautta, kuten $p = nRT/V$ vaatii.
-**Kaava:** $pV = nRT$, josta $n = \dfrac{pV}{RT}$ ja $n_\text{A} - n_\text{B} = \dfrac{(p_\text{A} - p_\text{B})\,V}{RT}$
+**Kaava:** $$\begin{aligned} pV &= nRT \\ n &= \dfrac{pV}{RT} \\ n_\text{A} - n_\text{B} &= \dfrac{p_\text{A}V}{RT} - \dfrac{p_\text{B}V}{RT} \\ &= \dfrac{(p_\text{A} - p_\text{B})\,V}{RT} \end{aligned}$$
 **Muunnokset:** $p_\text{A} - p_\text{B} = (100 - 60)\,\text{kPa} = 40\,\text{kPa} = 40\,000\,\text{Pa}$ ja $V = 2{,}00\,\textsf{l} = 0{,}00200\,\text{m}^3$. Lämpötila on jo kelvineinä.
 **Sijoitus:** $n_\text{A} - n_\text{B} = \dfrac{40\,000\,\text{Pa} \cdot 0{,}00200\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 400\,\text{K}} = \dfrac{80\,\text{J}}{3324\,\tfrac{\text{J}}{\text{mol}}} = 0{,}0241\,\text{mol}$
 **Vastaus:** $n_\text{A} - n_\text{B} \approx 0{,}024\,\text{mol}$, kaksi merkitsevää numeroa. Kuvaajasta luettu paine $60\,\text{kPa}$ ja paine-ero $40\,\text{kPa}$ ovat kahden numeron arvoja. Tilavuus $2{,}00\,\textsf{l}$ on kolmen numeron arvo, joten se ei rajoita tarkkuutta. Erikseen $n_\text{A} \approx 0{,}060\,\text{mol}$ ja $n_\text{B} \approx 0{,}036\,\text{mol}$. Pisteet luetaan ruudukon risteyksistä, joten hyväksytty väli on kapea: $0{,}0233$–$0{,}0247\,\text{mol}$.
@@ -102,7 +102,7 @@ Tarkistus: $574\,{}^\circ\text{C}$ olisi kuuma uuni, mutta $28\,{}^\circ\text{C}
 **Annettu:** keuhkojen ilma, $V = 0{,}55\,\textsf{l}$, $\theta = 37\,{}^\circ\text{C}$, $p = 101\,\text{kPa}$; $N_\text{A} = 6{,}022 \cdot 10^{23}\,\tfrac{1}{\text{mol}}$, $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Kysytty:** molekyylien lukumäärä $N$
 **Periaate:** Tilanyhtälö antaa ainemäärän. Avogadron vakio muuttaa sen molekyylien lukumääräksi. Ilma on kaasuseos. Tilanyhtälössä on kuitenkin vain kaikkien hiukkasten yhteinen ainemäärä, ei moolimassaa. Siksi ei tarvitse tietää, mistä kaasuista ilma koostuu.
-**Kaava:** $pV = nRT$ ja $N = n N_\text{A}$, joten $n = \dfrac{pV}{RT}$ ja $N = \dfrac{pV N_\text{A}}{RT}$
+**Kaava:** $$\begin{aligned} pV &= nRT \\ n &= \dfrac{pV}{RT} \\ N &= n N_\text{A} \\ &= \dfrac{pV N_\text{A}}{RT} \end{aligned}$$
 **Muunnokset:** $V = 0{,}55\,\textsf{l} = 0{,}00055\,\text{m}^3$, $p = 101\,\text{kPa} = 101\,000\,\text{Pa}$ ja $T = (37 + 273{,}15)\,\text{K} = 310{,}15\,\text{K}$.
 **Sijoitus:** Osoittaja on $$\begin{aligned} &101\,000\,\text{Pa} \cdot 0{,}00055\,\text{m}^3 \\ &\cdot 6{,}022 \cdot 10^{23}\,\tfrac{1}{\text{mol}} \\ &= 3{,}345 \cdot 10^{25}\,\tfrac{\text{J}}{\text{mol}} \end{aligned}$$ ja nimittäjä $8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 310{,}15\,\text{K} = 2577\,\tfrac{\text{J}}{\text{mol}}$, joten
 
@@ -115,7 +115,7 @@ $$N = \dfrac{3{,}345 \cdot 10^{25}\,\tfrac{\text{J}}{\text{mol}}}{2577\,\tfrac{\
 **Annettu:** eristyslasi, $A = 1{,}20\,\text{m}^2$, massaero $\Delta m = 6{,}0\,\text{g}$, $p = 101\,\text{kPa}$, $\theta = 20\,{}^\circ\text{C}$, $M_\text{Ar} = 40\,\text{g/mol}$, $M_\text{ilma} = 29\,\text{g/mol}$; $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Kysytty:** kaasukerroksen paksuus $d$ millimetreinä
 **Periaate:** Välitila täytetään samassa paineessa ja lämpötilassa. Tilavuus on siis sama, ja kaasua on yhtä monta moolia kummallakin täytteellä. Massaero johtuu vain siitä, että argonin moolimassa on suurempi. Ainemäärän saa siksi massaerosta ja moolimassojen erotuksesta.
-**Kaava:** $\Delta m = n (M_\text{Ar} - M_\text{ilma})$, joten $n = \dfrac{\Delta m}{M_\text{Ar} - M_\text{ilma}}$. Tilanyhtälöstä $V = \dfrac{nRT}{p}$ ja $V = Ad$, joten $d = \dfrac{nRT}{pA} = \dfrac{\Delta m\,RT}{pA(M_\text{Ar} - M_\text{ilma})}$
+**Kaava:** $$\begin{aligned} \Delta m &= n (M_\text{Ar} - M_\text{ilma}) \\ n &= \dfrac{\Delta m}{M_\text{Ar} - M_\text{ilma}} \\ pV &= nRT \\ V &= Ad \\ pAd &= nRT \\ d &= \dfrac{nRT}{pA} \\ &= \dfrac{\Delta m\,RT}{pA(M_\text{Ar} - M_\text{ilma})} \end{aligned}$$
 **Muunnokset:** $T = (20 + 273{,}15)\,\text{K} = 293{,}15\,\text{K}$ ja $p = 101\,\text{kPa} = 101\,000\,\text{Pa}$. Massa ja moolimassat ovat grammoina. Siksi $n$ tulee suoraan moolina. Lopuksi $1\,\text{m} = 1000\,\text{mm}$.
 **Sijoitus:** $n = \dfrac{6{,}0\,\text{g}}{40\,\text{g/mol} - 29\,\text{g/mol}} = 0{,}5455\,\text{mol}$.
 
@@ -130,7 +130,7 @@ $$\begin{aligned} d &= \dfrac{1328{,}9\,\text{J}}{121\,200\,\text{N}} \\ &= 0{,}
 **Annettu:** paineilmasäiliö, $V = 200{,}0\,\textsf{l}$, ylipaine ennen $10{,}0\,\text{bar}$ ja jälkeen $7{,}0\,\text{bar}$, $\theta = 18\,{}^\circ\text{C}$, $M = 29\,\text{g/mol}$; $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Kysytty:** vuotaneen ilman massa $\Delta m$ kilogrammoina
 **Periaate:** Säiliön tilavuus ja lämpötila pysyvät samoina. Paineen lasku johtuu siis vain ainemäärän vähenemisestä: $\Delta p V = \Delta n RT$. Mittarin lukema on kokonaispaine miinus ilmanpaine. Ilmanpaine on sama alussa ja lopussa. Se kumoutuu paine-erotuksessa. Lukemia voi siis käyttää sellaisenaan.
-**Kaava:** $\Delta n = \dfrac{\Delta p\,V}{RT}$ ja $\Delta m = \Delta n\,M$, joten $\Delta m = \dfrac{\Delta p\,V M}{RT}$
+**Kaava:** $$\begin{aligned} \Delta p\,V &= \Delta n\,RT \\ \Delta n &= \dfrac{\Delta p\,V}{RT} \\ \Delta m &= \Delta n\,M \\ &= \dfrac{\Delta p\,V M}{RT} \end{aligned}$$
 **Muunnokset:** $\Delta p = 10{,}0\,\text{bar} - 7{,}0\,\text{bar} = 3{,}0\,\text{bar} = 3{,}0 \cdot 10^5\,\text{Pa}$, $V = 200{,}0\,\textsf{l} = 0{,}2000\,\text{m}^3$, $M = 0{,}029\,\text{kg/mol}$ ja $T = (18 + 273{,}15)\,\text{K} = 291{,}15\,\text{K}$.
 **Sijoitus:** $\Delta n = \dfrac{3{,}0 \cdot 10^5\,\text{Pa} \cdot 0{,}2000\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 291{,}15\,\text{K}} = 24{,}80\,\text{mol}$. $\Delta m = 24{,}80\,\text{mol} \cdot 0{,}029\,\tfrac{\text{kg}}{\text{mol}} = 0{,}7192\,\text{kg}$
 **Vastaus:** $0{,}72\,\text{kg}$, kaksi merkitsevää numeroa. Rajoittava tieto on paine-ero $10{,}0\,\text{bar} - 7{,}0\,\text{bar} = 3{,}0\,\text{bar}$. Lukemien erotuksessa on yhtä monta desimaalia kuin epätarkemmassa lukemassa. Siksi erotuksessa on kaksi numeroa. Tilavuus $200{,}0\,\textsf{l}$, moolimassa $29\,\text{g/mol}$ ja lämpötila $291\,\text{K}$ ovat vähintään kahden numeron arvoja. Ne eivät rajoita tulosta.
@@ -145,7 +145,7 @@ $$\begin{aligned} d &= \dfrac{1328{,}9\,\text{J}}{121\,200\,\text{N}} \\ &= 0{,}
 **Annettu:** helium, $V_1 = 2{,}50\,\textsf{l}$, $\theta_1 = 21\,{}^\circ\text{C}$, $p_1 = 101\,\text{kPa}$; $\theta_2 = -9\,{}^\circ\text{C}$, $p_2 = 98\,\text{kPa}$
 **Kysytty:** tilavuus $V_2$ litroina
 **Periaate:** Kaasua ei pääse pois, joten ainemäärä $n$ pysyy samana. Tilanyhtälö $pV = nRT$ antaa kummassakin tilassa saman luvun $nR = pV/T$. Siksi $p_1V_1/T_1 = p_2V_2/T_2$.
-**Kaava:** $\dfrac{p_1V_1}{T_1} = \dfrac{p_2V_2}{T_2}$, josta $V_2 = \dfrac{p_1 V_1 T_2}{p_2 T_1}$
+**Kaava:** $$\begin{aligned} pV &= nRT \\ \dfrac{pV}{T} &= nR \\ \dfrac{p_1V_1}{T_1} &= \dfrac{p_2V_2}{T_2} \\ V_2 &= \dfrac{p_1 V_1 T_2}{p_2 T_1} \end{aligned}$$
 **Muunnokset:** $T_1 = (21 + 273{,}15)\,\text{K} = 294{,}15\,\text{K}$ ja $T_2 = (-9 + 273{,}15)\,\text{K} = 264{,}15\,\text{K}$. Paineen ja tilavuuden yksiköt supistuvat. Niitä ei tarvitse muuntaa.
 **Sijoitus:** $V_2 = \dfrac{101\,\text{kPa} \cdot 2{,}50\,\textsf{l} \cdot 264{,}15\,\text{K}}{98\,\text{kPa} \cdot 294{,}15\,\text{K}} = 2{,}314\,\textsf{l}$
 **Vastaus:** $2{,}3\,\textsf{l}$, kaksi merkitsevää numeroa. Paine $98\,\text{kPa}$ on annettu kahdella numerolla. Välitulos on $2{,}314\,\textsf{l}$.
@@ -160,7 +160,7 @@ $$\begin{aligned} d &= \dfrac{1328{,}9\,\text{J}}{121\,200\,\text{N}} \\ &= 0{,}
 **Annettu:** rengas, $\theta_1 = 5{,}0\,{}^\circ\text{C}$, $p_1 = 300\,\text{kPa}$ ennen ajoa; $\theta_2 = 26{,}0\,{}^\circ\text{C}$, $p_2 = 305\,\text{kPa}$ ajon jälkeen; tilavuus $V$ vakio
 **Kysytty:** vuotanut osuus $\dfrac{n_1 - n_2}{n_1}$ prosentteina
 **Periaate:** Tilavuus on vakio. Tilanyhtälöstä $pV = nRT$ saadaan siksi ainemäärä $n = \dfrac{pV}{RT}$ kummassakin tilassa. Lämpötila nousee ajossa. Paine nousisi siis vuotamattomassakin renkaassa. Vuoto näkyy vasta, kun ainemäärät vertaillaan.
-**Kaava:** $n_1 = \dfrac{p_1V}{RT_1}$ ja $n_2 = \dfrac{p_2V}{RT_2}$, joten $\dfrac{n_2}{n_1} = \dfrac{p_2 T_1}{p_1 T_2}$ ja vuotanut osuus on $1 - \dfrac{n_2}{n_1}$
+**Kaava:** $$\begin{aligned} pV &= nRT \\ n_1 &= \dfrac{p_1V}{RT_1} \\ n_2 &= \dfrac{p_2V}{RT_2} \\ \dfrac{n_2}{n_1} &= \dfrac{p_2 T_1}{p_1 T_2} \\ \dfrac{n_1 - n_2}{n_1} &= 1 - \dfrac{n_2}{n_1} \\ &= 1 - \dfrac{p_2 T_1}{p_1 T_2} \end{aligned}$$
 **Muunnokset:** $T_1 = (5{,}0 + 273{,}15)\,\text{K} = 278{,}15\,\text{K}$ ja $T_2 = (26{,}0 + 273{,}15)\,\text{K} = 299{,}15\,\text{K}$. Paineet ovat samassa yksikössä, joten ne supistuvat.
 **Sijoitus:** a) Ilman vuotoa ainemäärä ja tilavuus eivät muutu. Siksi $p_2' = p_1 \dfrac{T_2}{T_1} = 300\,\text{kPa} \cdot \dfrac{299{,}15\,\text{K}}{278{,}15\,\text{K}} = 322{,}6\,\text{kPa}$. b) $\dfrac{n_2}{n_1} = \dfrac{305\,\text{kPa} \cdot 278{,}15\,\text{K}}{300\,\text{kPa} \cdot 299{,}15\,\text{K}} = 0{,}9453$, joten vuotanut osuus on $1 - 0{,}9453 = 0{,}0547$
 **Vastaus:** $5{,}5\,\%$, kaksi merkitsevää numeroa. Osuus on erotus $1 - 0{,}945$, joten paineiden kolmas numero ratkaisee toisen numeron. Vuotamattomassa renkaassa paine olisi ajon jälkeen $323\,\text{kPa}$. Mitattu paine on $305\,\text{kPa}$. Paineen nousu $300 \to 305\,\text{kPa}$ ei yksin kerro vuodosta. Lämpötilan nousu nostaisi painetta ilman vuotoakin.
@@ -173,7 +173,7 @@ $$\begin{aligned} d &= \dfrac{1328{,}9\,\text{J}}{121\,200\,\text{N}} \\ &= 0{,}
 **Kuvaajan lukeminen:** Piirretään pisteet ja suora, joka kulkee pisteiden lomassa. Pienimmän neliösumman suora on $V = 0{,}408\,\tfrac{\text{cm}^3}{\text{K}} \cdot T + 1{,}1\,\text{cm}^3$. Omaa suoraa voi verrata siihen. Luetaan suoralta kaksi kaukana toisistaan olevaa pistettä. Suoran arvot ovat $(280\,\text{K};\ 115{,}4\,\text{cm}^3)$ ja $(360\,\text{K};\ 148{,}0\,\text{cm}^3)$.
 
 Ne eivät ole taulukon arvot $115{,}0\,\text{cm}^3$ ja $147{,}6\,\text{cm}^3$. Kulmakerroin on $k = \dfrac{(148{,}0 - 115{,}4)\,\text{cm}^3}{(360 - 280)\,\text{K}} = 0{,}4075\,\tfrac{\text{cm}^3}{\text{K}}$. Suoran vakiotermi $1{,}1\,\text{cm}^3$ on pieni verrattuna tilavuuksiin $115$–$148\,\text{cm}^3$. Suora kulkee siis lähes origon kautta.
-**Kaava:** $k = \dfrac{nR}{p}$, josta $n = \dfrac{kp}{R}$
+**Kaava:** $$\begin{aligned} pV &= nRT \\ V &= \dfrac{nR}{p}\,T \\ k &= \dfrac{nR}{p} \\ n &= \dfrac{kp}{R} \end{aligned}$$
 **Muunnokset:** $k = 0{,}4075\,\tfrac{\text{cm}^3}{\text{K}} = 0{,}4075 \cdot 10^{-6}\,\tfrac{\text{m}^3}{\text{K}}$ ja $p = 101\,\text{kPa} = 101\,000\,\text{Pa}$. Lopuksi $1\,\text{mol} = 1000\,\text{mmol}$.
 **Sijoitus:** $n = \dfrac{0{,}4075 \cdot 10^{-6}\,\tfrac{\text{m}^3}{\text{K}} \cdot 101\,000\,\text{Pa}}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}} = 4{,}953 \cdot 10^{-3}\,\text{mol}$
 **Vastaus:** $5{,}0\,\text{mmol}$, kaksi merkitsevää numeroa. Suoran sovituksen mittausepävarmuus on noin $\pm 0{,}1\,\text{mmol}$. Välitulos on $4{,}95\,\text{mmol}$. Suoran pitää kulkea origon kautta. Tilavuus $V = nRT/p$ on suoraan verrannollinen lämpötilaan, kun $T$ on kelvineinä. Lämpötilassa $T = 0$ tilavuus olisi nolla.
@@ -191,7 +191,7 @@ Sama paine $122\,\text{kPa}$ on sarjassa B suuremmassa tilavuudessa. $(V, p)$-ko
 **Annettu:** helium, $V = 20{,}0\,\textsf{l}$; taulukosta hetki 1: $\theta_1 = 5{,}0\,{}^\circ\text{C}$, $p_1 = 14{,}2\,\text{bar}$, hetki 2: $\theta_2 = 21{,}0\,{}^\circ\text{C}$, $p_2 = 11{,}0\,\text{bar}$, hetki 3: $\theta_3 = 21{,}0\,{}^\circ\text{C}$, $p_3 = 6{,}5\,\text{bar}$; ilmapallo $p_\text{p} = 101\,\text{kPa}$, $\theta_\text{p} = 21{,}0\,{}^\circ\text{C}$, $V_\text{p} = 5{,}0\,\textsf{l}$; $M = 4{,}0\,\tfrac{\text{g}}{\text{mol}}$, $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Kysytty:** käytetyn heliumin massa $m$ grammoina (b-kohta); ainemäärät $n_1$, $n_2$, $n_3$ (a) ja pallojen lukumäärät (c)
 **Periaate:** Pullon tilavuus on vakio, eikä kaasua vuoda. Tilanyhtälö $pV = nRT$ antaa siksi ainemäärän jokaisella hetkellä erikseen. Lämpötila muuttuu hetkien 1 ja 2 välillä. Ainemäärä ei siis ole suoraan verrannollinen paineeseen: sama paine vastaa kylmässä suurempaa ainemäärää. Käytetty määrä on ainemäärien erotus.
-**Kaava:** $n = \dfrac{pV}{RT}$, käytetty ainemäärä $\Delta n = n_1 - n_3$ ja massa $m = \Delta n \cdot M$. Yhden pallon ainemäärä on $n_\text{p} = \dfrac{p_\text{p}V_\text{p}}{RT_\text{p}}$, ja palloja saadaan $\dfrac{\Delta n}{n_\text{p}}$.
+**Kaava:** $$\begin{aligned} pV &= nRT \\ n &= \dfrac{pV}{RT} \\ \Delta n &= n_1 - n_3 \\ m &= \Delta n \cdot M \\ n_\text{p} &= \dfrac{p_\text{p}V_\text{p}}{RT_\text{p}} \\ N &= \dfrac{\Delta n}{n_\text{p}} \end{aligned}$$
 **Muunnokset:** $V = 20{,}0\,\textsf{l} = 0{,}0200\,\text{m}^3$ ja $V_\text{p} = 0{,}0050\,\text{m}^3$; $p_1 = 14{,}2\,\text{bar} = 1{,}42 \cdot 10^6\,\text{Pa}$, $p_2 = 1{,}10 \cdot 10^6\,\text{Pa}$ ja $p_3 = 6{,}5 \cdot 10^5\,\text{Pa}$; $T_1 = (5{,}0 + 273{,}15)\,\text{K} = 278{,}15\,\text{K}$ ja $T_2 = T_3 = T_\text{p} = 294{,}15\,\text{K}$.
 **Sijoitus:** a) $n_1 = \dfrac{1{,}42 \cdot 10^6\,\text{Pa} \cdot 0{,}0200\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 278{,}15\,\text{K}} = 12{,}29\,\text{mol}$, $n_2 = \dfrac{1{,}10 \cdot 10^6\,\text{Pa} \cdot 0{,}0200\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 294{,}15\,\text{K}} = 9{,}000\,\text{mol}$ ja $n_3 = \dfrac{6{,}5 \cdot 10^5\,\text{Pa} \cdot 0{,}0200\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 294{,}15\,\text{K}} = 5{,}318\,\text{mol}$. b) $\Delta n = 12{,}29\,\text{mol} - 5{,}318\,\text{mol} = 6{,}968\,\text{mol}$ ja $m = 6{,}968\,\text{mol} \cdot 4{,}0\,\tfrac{\text{g}}{\text{mol}} = 27{,}87\,\text{g}$. c) $n_\text{p} = \dfrac{101\,000\,\text{Pa} \cdot 0{,}0050\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 294{,}15\,\text{K}} = 0{,}2066\,\text{mol}$. Käytetyllä heliumilla täytettiin siis $\dfrac{6{,}968\,\text{mol}}{0{,}2066\,\text{mol}} = 33{,}7$ palloa. Kun paine on $101\,\text{kPa}$, pullossa on $n_\text{loppu} = \dfrac{101\,000\,\text{Pa} \cdot 0{,}0200\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 294{,}15\,\text{K}} = 0{,}8264\,\text{mol}$, joten vielä käytettävissä on $$\begin{aligned} &5{,}318\,\text{mol} - 0{,}8264\,\text{mol} \\ &= 4{,}492\,\text{mol} \end{aligned}$$ ja palloja $\dfrac{4{,}492\,\text{mol}}{0{,}2066\,\text{mol}} = 21{,}7$.
 **Vastaus:** b) $28\,\text{g}$, kaksi merkitsevää numeroa. Moolimassa $4{,}0\,\tfrac{\text{g}}{\text{mol}}$ on annettu kahdella numerolla. a) $n_1 = 12{,}3\,\text{mol}$, $n_2 = 9{,}00\,\text{mol}$ ja $n_3 = 5{,}32\,\text{mol}$. c) Käytetyllä heliumilla täytettiin noin $34$ palloa (ensimmäisessä vaiheessa noin $16$ ja toisessa noin $18$), ja vielä saadaan $21$ täyttä palloa.
@@ -203,7 +203,7 @@ Paine-eron $14{,}2 - 6{,}5 = 7{,}7\,\text{bar}$ perusteella massa olisi noin $25
 **Annettu:** helium, $V_0 = 2{,}50\,\text{m}^3$; taulukosta maanpinta $p_0 = 101\,\text{kPa}$, $\theta_0 = 15{,}0\,{}^\circ\text{C}$, korkeus $10\,\text{km}$: $p = 26{,}5\,\text{kPa}$, $\theta = -50{,}0\,{}^\circ\text{C}$ ja korkeus $15\,\text{km}$: $p = 12{,}1\,\text{kPa}$, $\theta = -56{,}5\,{}^\circ\text{C}$; $V_\text{max} = 12{,}0\,\text{m}^3$; $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Kysytty:** tilavuus $V$ korkeudella $10\,\text{km}$ (b-kohta)
 **Periaate:** Pallo on suljettu, joten ainemäärä $n$ pysyy samana. Ilmakehän paine ja lämpötila laskevat, ja pallon kaasun paine on sama kuin ympäristön. Tilanyhtälö $pV = nRT$ antaa tilavuuden kullakin korkeudella.
-**Kaava:** a) $n = \dfrac{p_0V_0}{RT_0}$. b) ja c) $V = \dfrac{nRT}{p}$. Lineaarisessa arviossa korkeus on $h = h_{10} + (h_{15} - h_{10}) \cdot \dfrac{V_\text{max} - V_{10}}{V_{15} - V_{10}}$.
+**Kaava:** $$\begin{aligned} pV &= nRT \\ n &= \dfrac{p_0V_0}{RT_0} \\ V &= \dfrac{nRT}{p} \\ h &= h_{10} + (h_{15} - h_{10}) \cdot \dfrac{V_\text{max} - V_{10}}{V_{15} - V_{10}} \end{aligned}$$
 **Muunnokset:** $p_0 = 101\,000\,\text{Pa}$, $T_0 = (15{,}0 + 273{,}15)\,\text{K} = 288{,}15\,\text{K}$, $T_{10} = (-50{,}0 + 273{,}15)\,\text{K} = 223{,}15\,\text{K}$, $T_{15} = 216{,}65\,\text{K}$ ja $p_{10} = 26\,500\,\text{Pa}$, $p_{15} = 12\,100\,\text{Pa}$.
 **Sijoitus:** a) $n = \dfrac{101\,000\,\text{Pa} \cdot 2{,}50\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 288{,}15\,\text{K}} = 105{,}4\,\text{mol}$. b) $$\begin{aligned} &V_{10} \\ &= \dfrac{105{,}4\,\text{mol} \cdot 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 223{,}15\,\text{K}}{26\,500\,\text{Pa}} \\ &= 7{,}379\,\text{m}^3 \end{aligned}$$. c) $$\begin{aligned} &V_{15} \\ &= \dfrac{105{,}4\,\text{mol} \cdot 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 216{,}65\,\text{K}}{12\,100\,\text{Pa}} \\ &= 15{,}69\,\text{m}^3 \end{aligned}$$ ja $$\begin{aligned} h &= 10\,\text{km} \\ &+ 5\,\text{km} \cdot \dfrac{(12{,}0 - 7{,}379)\,\text{m}^3}{(15{,}69 - 7{,}379)\,\text{m}^3} \\ &= 12{,}8\,\text{km} \end{aligned}$$
 **Vastaus:** b) $7{,}4\,\text{m}^3$, kaksi merkitsevää numeroa. ICAO-arvot on pyöristetty, eikä pallon kaasu ole tarkalleen ympäröivän ilman lämpötilassa. Heliumia on a) $105\,\text{mol}$. c) Korkeudella $15\,\text{km}$ tilavuus olisi $15{,}7\,\text{m}^3$, joka on yli kuoren rajan $12{,}0\,\text{m}^3$.
@@ -217,7 +217,7 @@ Tilavuus on suoraan verrannollinen lämpötilaan ja kääntäen verrannollinen p
 **Annettu:** $m = 0{,}500\,\text{kg}$, $V = 10{,}0\,\textsf{l}$, $T = 293\,\text{K}$ ja $R = 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$. Taulukosta (MAFY-taulukko, alkuaineiden atomimassat ja moolimassat, argon) $M = 39{,}95\,\text{g/mol}$.
 **Kysytty:** kaasun paine $p$ megapascaleina
 **Periaate:** Kaasu on suljettuna pullossa. Se noudattaa ideaalikaasun tilanyhtälöä $pV = nRT$. Ainemäärä saadaan massasta ja moolimassasta, koska yksi mooli argonia painaa $M$.
-**Kaava:** $n = \dfrac{m}{M}$ ja $pV = nRT$, josta $p = \dfrac{nRT}{V}$
+**Kaava:** $$\begin{aligned} n &= \dfrac{m}{M} \\ pV &= nRT \\ p &= \dfrac{nRT}{V} \\ &= \dfrac{mRT}{MV} \end{aligned}$$
 **Muunnokset:** $0{,}500\,\text{kg} = 500\,\text{g}$, koska $1\,\text{kg} = 1000\,\text{g}$. $10{,}0\,\textsf{l} = 10{,}0 \cdot 0{,}001\,\text{m}^3 = 0{,}0100\,\text{m}^3$. Lopuksi $1\,\text{MPa} = 10^6\,\text{Pa}$.
 **Sijoitus:** $n = \dfrac{500\,\text{g}}{39{,}95\,\text{g/mol}} = 12{,}52\,\text{mol}$ ja $p = \dfrac{12{,}52\,\text{mol} \cdot 8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 293\,\text{K}}{0{,}0100\,\text{m}^3} = 3{,}047 \cdot 10^{6}\,\text{Pa}$
 **Vastaus:** $p \approx 3{,}05\,\text{MPa}$, kolme merkitsevää numeroa kuten massassa $0{,}500\,\text{kg}$. Moolimassa $39{,}95\,\text{g/mol}$ on MAFY-taulukosta (alkuaineiden atomimassat ja moolimassat). Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
@@ -228,7 +228,7 @@ Tilavuus on suoraan verrannollinen lämpötilaan ja kääntäen verrannollinen p
 **Kysytty:** suhde $n_\text{A}/n_\text{B}$
 **Periaate:** Kaasu on suljettu jäykkään astiaan ($n$ ja $V$ vakioita) ja noudattaa tilanyhtälöä $pV = nRT$. Silloin suora $p(T)$ kulkee origon kautta ja sen kulmakerroin on $p/T = nR/V$. Astioiden tilavuus ja $R$ ovat samat, joten kulmakertoimien suhde on ainemäärien suhde.
 **Kuvaajan lukeminen:** Luetaan molemmat suorat samasta lämpötilasta $T = 400\,\text{K}$, joka on ruudukon pystyviiva: $p_\text{A} = 100\,\text{kPa}$ ja $p_\text{B} = 60\,\text{kPa}$. Suorat kulkevat origon kautta.
-**Kaava:** $\dfrac{p}{T} = \dfrac{nR}{V}$, josta $n = \dfrac{V}{R} \cdot \dfrac{p}{T}$ ja $\dfrac{n_\text{A}}{n_\text{B}} = \dfrac{p_\text{A}/T}{p_\text{B}/T} = \dfrac{p_\text{A}}{p_\text{B}}$
+**Kaava:** $$\begin{aligned} pV &= nRT \\ \dfrac{p}{T} &= \dfrac{nR}{V} \\ n &= \dfrac{V}{R} \cdot \dfrac{p}{T} \\ \dfrac{n_\text{A}}{n_\text{B}} &= \dfrac{p_\text{A}/T}{p_\text{B}/T} \\ &= \dfrac{p_\text{A}}{p_\text{B}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: paineiden suhde on sama kilopascaleina kuin pascaleina.
 **Sijoitus:** $\dfrac{n_\text{A}}{n_\text{B}} = \dfrac{100\,\text{kPa}}{60\,\text{kPa}} = 1{,}667$
 **Vastaus:** Astiassa A on noin $1{,}7$ kertaa niin paljon kaasua kuin astiassa B (laskettu $1{,}667$), kaksi merkitsevää numeroa, koska kuvaajasta luettu paine $60\,\text{kPa}$ on kahden numeron arvo.

@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b78d602ccedd90e1
+CONTENT-HASH: 51c86aaf9a3b697c
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] tasks.json fy3-s3 b) Annettu — "$V_1 = 6{,}0\,\text{l}$" reads as "6,01" in KaTeX (italic-looking l next to the number) — write "$6{,}0\,\text{dm}^3$" or "$\ell$".
-- [Minor] fy3-s1 graph (fig-1) — the second slope line (0,43 K/min) is a thin dashed line and its label is blue while the data line is orange; legend is by the label only. Consider saying in the figure description that the dashed lines are tangent and secant line.
-- [Minor] Sovella page, 390 px — the Annettu/Periaate blocks in solutions are long, narrow cards with large text; acceptable, but the Periaate paragraph of s1 b) runs long (about 100 words).
-- [Minor] fig-2 capture is blank (the inventory lists only one figure), so there is nothing to judge there; the packet's capture count may be off by one.
+- [Minor] solutions.md s3 b/c (rows 197, 202, 203, 213) — the rate `20\,\text{l/min}` still sets the litre as a roman `l`; next to `\textsf{l}` quantities it is inconsistent and can read as "1/min" — write `20\,\textsf{l}/\text{min}` (lint does not flag it).
+- [Minor] Kaava blocks (s1 c, s2 d, s3 a): rows with a fraction sit slightly off the `=` column of the plain rows; acceptable.
+- [Minor] fi-easy Sovella cannot be captured; judged from the Finnish captures of the same layout plus the fi-easy source.
 
 ## Checked
-- Screenshots were captured under content/fi (captures reused as current); the fi-easy page uses the same layout. Captures were not rebuilt for the fi-easy hash, so wording differences in fi-easy could not be checked from the pictures.
-- contact-1.png (first 12 captures), top-390, fig-1-390 (the s1 graph, the only figure), fig-2-390 (blank).
-- page-390-3, page-390-14, page-1280-3, stage-fy3-s3-390-3: formulas, Annettu/Kysytty/Periaate/Kaava/Sijoitus/Vastaus blocks, the s2 table and the open solutions.
-- I did not open contact sheets 2–7 or the other page parts.
+- Round 2 delta: all `\text{l}` quantities are now `\textsf{l}` (grep over fi-easy/FY3/sovella: tasks and solutions; `6{,}0`, `12{,}0`, `725` litre values fixed). The s3 d Kaava is a one-step-per-row aligned block (source read).
+- Earlier round captures: contact-1; page-390-5, -8, -12, -14, -22 (Finnish): Kaava/Sijoitus/Vastaus blocks, no clipping or horizontal overflow. The figure is unchanged and was not reopened.
+- The fi-easy captures were not re-made, as instructed.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

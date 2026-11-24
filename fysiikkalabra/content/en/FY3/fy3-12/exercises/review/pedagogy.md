@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e958149d90cd81ad
-
+CONTENT-HASH: 771588436413fa23
 ## Blocking
-None.
-
+(none)
 ## Polish
-1. L2-09 is a single multiplication; the sentence "it is a mean over the whole surface" tells the step. Optional: drop it.
-
+- exercises/solutions.md:238 (greenhouse-model Formula step) — a stray full stop follows the closing `$$` of the aligned block and the Check and interpolation sentences are glued to it; move "Check at the surface" and the interpolation formula to their own rows or paragraphs.
 ## Checked
-- Round 3 delta: L1-05 "Reading the graph" now quotes the English figure label "heat radiation" instead of "lämpösäteily"; a reader of the English page can now find the arrow by its label. The explanation and the answer (239 W/m²) are unchanged.
-- Earlier round-2 changes (L2-09 in petawatts, L3-03 coefficient of performance defined) remain sound.
+- The Formula steps of about 20 solutions are now aligned rows (27 balanced blocks): definition, auxiliary relation, combined result; each ends in the form the Substitution uses.
+- Balance steps (P_rad = P_abs, P_abs = P_in − P_refl; the greenhouse P_abs = (1 − f/2)S) start from the basic equation before the combined formula, as the house rule asks.
+- Heat-loss and energy chains ($P = UA\Delta T$, $E = Pt$, $H = hE$; $P_\text{v} - P_\text{u}$) and the ice-albedo chain ($P_\text{sea} - P_\text{ice} = I\,\Delta A\,(a_\text{ice} - a_\text{sea})$) are correct and easy to follow.
+- The $\Delta P$ and $k = UA$ rows now show where the slope and $U = k/A$ come from.
+- No number, unit or data changed; levels and counts unchanged.

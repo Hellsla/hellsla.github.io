@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b84b000bd30022fa
+CONTENT-HASH: a8a78cd65866b1c8
 ## Blocking
 (none)
 ## Polish
 (none)
 ## Checked
-- Delta: 'Syventävä tehtävä.' prefix on the cycle task flags the level; 'sisäenergia' grammar fix; 50 J with 50,4 stated as calculated, two sig figs explained by the data.
-- Judged from the diff text; captures not opened.
+- Delta: only the Kaava step of the model solutions changed; read from solutions.md itself (the packet diff shows the aligned rows flattened). In fy3-5 the chains start from ΔU = Q + W, set W = 0 or Q = 0 explicitly and solve for the asked quantity.
+- Answers, Sijoitus and Muunnokset unchanged; Sijoitus substitutes into the last symbolic form.
+- Tasks whose asked quantity is already alone state so in one line; nothing skipped for a student who could not solve the task.
+- Judged from the solutions text; captures not opened.

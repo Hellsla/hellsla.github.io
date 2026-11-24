@@ -2,7 +2,7 @@
 **Given:** the line $p = p_0 + k\theta$, where $p_0 = 98.0\,\text{kPa}$ and $k = 0.360\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$
 **Find:** the temperature $\theta_0$ in degrees Celsius at which the line gives the pressure $p = 0$
 **Principle:** The container is closed and rigid, so the amount and volume of the gas stay constant and the pressure depends linearly on temperature. So the equation of the line describes the gas within the measurement range, and the line can be extended (extrapolated) beyond it: the point of zero pressure is found by setting $p = 0$ in the equation.
-**Formula:** $p = p_0 + k\theta$. When $p = 0$ and $\theta = \theta_0$, then $0 = p_0 + k\theta_0$, so $\theta_0 = -\dfrac{p_0}{k}$
+**Formula:** $$\begin{aligned} p &= p_0 + k\theta \\ 0 &= p_0 + k\theta_0 \\ k\theta_0 &= -p_0 \\ \theta_0 &= -\dfrac{p_0}{k} \end{aligned}$$
 **Conversions:** No conversions are needed: $p_0$ and $k$ are in kilopascals, so the kPa cancels and the result is in degrees Celsius, as asked.
 **Substitution:** $\theta_0 = -\dfrac{98.0\,\text{kPa}}{0.360\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -272.22\,{}^\circ\text{C}$
 **Answer:** $-272\,{}^\circ\text{C}$, three significant figures, like the values $98.0\,\text{kPa}$ and $0.360$.
@@ -12,7 +12,7 @@
 **Given:** two points on the line: $(\theta_1, p_1) = (20.0\,{}^\circ\text{C};\ 105.0\,\text{kPa})$ and $(\theta_2, p_2) = (80.0\,{}^\circ\text{C};\ 127.0\,\text{kPa})$
 **Find:** the slope $k$ of the line in the unit $\tfrac{\text{kPa}}{{}^\circ\text{C}}$
 **Principle:** In a closed rigid container, the pressure of a dilute gas is a linear function of temperature within the measurement range, so the slope of the line is the same everywhere: it tells you how many kilopascals the pressure rises per degree Celsius. So you can calculate it from any two points on the line.
-**Formula:** $k = \dfrac{\Delta p}{\Delta\theta}$, where $\Delta p = p_2 - p_1$ and $\Delta\theta = \theta_2 - \theta_1$, so $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$
+**Formula:** $$\begin{aligned} k &= \dfrac{\Delta p}{\Delta\theta} \\ &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \end{aligned}$$
 **Conversions:** No units are converted, because the slope is asked for in the unit $\text{kPa}/{}^\circ\text{C}$. The temperature difference is $\Delta\theta = 80.0\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} = 60.0\,{}^\circ\text{C}$, and it is the same in kelvins.
 **Substitution:** $k = \dfrac{(127.0 - 105.0)\,\text{kPa}}{(80.0 - 20.0)\,{}^\circ\text{C}} = \dfrac{22.0\,\text{kPa}}{60.0\,{}^\circ\text{C}} = 0.36667\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$
 **Answer:** $0.367\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, three significant figures, because both differences, the pressure change $22.0\,\text{kPa}$ and the temperature difference $60.0\,{}^\circ\text{C}$, are known to three figures.
@@ -52,7 +52,7 @@
 **Given:** two measurement points $(\theta_1, p_1) = (15.0\,{}^\circ\text{C};\ 1.050\,\text{bar})$ and $(\theta_2, p_2) = (95.0\,{}^\circ\text{C};\ 1.360\,\text{bar})$; the pressure depends linearly on temperature
 **Find:** the temperature $\theta_0$ in degrees Celsius at which the line gives zero pressure
 **Principle:** The flask is sealed, so the amount and volume of the air stay constant and the pressure is a linear function of temperature. Two points determine the line, and it is extended by extrapolation to the point where $p = 0$.
-**Formula:** The slope is $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$. The line through point 1 is $p = p_1 + k(\theta - \theta_1)$, and $p = 0$ gives $\theta_0 = \theta_1 - \dfrac{p_1}{k}$
+**Formula:** $$\begin{aligned} k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\ p &= p_1 + k(\theta - \theta_1) \\ 0 &= p_1 + k(\theta_0 - \theta_1) \\ k(\theta_0 - \theta_1) &= -p_1 \\ \theta_0 &= \theta_1 - \dfrac{p_1}{k} \end{aligned}$$
 **Conversions:** Both pressures are in bar. In the quotient $p_1/k$ the unit bar cancels, so there is no need to convert to pascals. The temperature difference $95.0\,{}^\circ\text{C} - 15.0\,{}^\circ\text{C} = 80.0\,{}^\circ\text{C}$ is the same in kelvins.
 **Substitution:** $k = \dfrac{(1.360 - 1.050)\,\text{bar}}{(95.0 - 15.0)\,{}^\circ\text{C}} = \dfrac{0.310\,\text{bar}}{80.0\,{}^\circ\text{C}} = 0.003875\,\tfrac{\text{bar}}{{}^\circ\text{C}}$ and $\theta_0 = 15.0\,{}^\circ\text{C} - \dfrac{1.050\,\text{bar}}{0.003875\,\tfrac{\text{bar}}{{}^\circ\text{C}}} = 15.0\,{}^\circ\text{C} - 270.97\,{}^\circ\text{C} = -255.97\,{}^\circ\text{C}$
 **Answer:** $-256\,{}^\circ\text{C}$, three significant figures, because the pressure difference $0.310\,\text{bar}$ and the temperature difference $80.0\,{}^\circ\text{C}$ are known to three figures; finally the subtraction $15.0 - 271$ gives the result in whole degrees.
@@ -62,7 +62,7 @@
 **Given:** two limit lines $p = 100\,\text{kPa} + 0.380\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$ (steeper) and $p = 102\,\text{kPa} + 0.350\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$ (shallower)
 **Find:** the uncertainty $\Delta\theta_0$ in degrees Celsius
 **Principle:** Both lines pass through the uncertainty bars of all the measurement points, so the true line probably lies between them. The temperatures at zero pressure of the limit lines bound the estimated interval for the zero point, and the uncertainty is half of this interval.
-**Formula:** The zero pressure of each line follows from the condition $0 = p_0 + k\theta_0$, that is, $\theta_0 = -\dfrac{p_0}{k}$. The steeper line gives the value $\theta_{0,\text{max}}$ and the shallower one the value $\theta_{0,\text{min}}$, and $\Delta\theta_0 = \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2}$
+**Formula:** $$\begin{aligned} 0 &= p_0 + k\theta_0 \\ \theta_0 &= -\dfrac{p_0}{k} \\ \Delta\theta_0 &= \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2} \end{aligned}$$
 **Conversions:** No conversions are needed: $p_0$ is in kilopascals and $k$ in the unit $\text{kPa}/{}^\circ\text{C}$, so the quotient is in degrees Celsius.
 **Substitution:** $\theta_{0,\text{max}} = -\dfrac{100\,\text{kPa}}{0.380\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -263.16\,{}^\circ\text{C}$ and $\theta_{0,\text{min}} = -\dfrac{102\,\text{kPa}}{0.350\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -291.43\,{}^\circ\text{C}$. So $\Delta\theta_0 = \dfrac{-263.16\,{}^\circ\text{C} - (-291.43\,{}^\circ\text{C})}{2} = 14.14\,{}^\circ\text{C}$
 **Answer:** $14\,{}^\circ\text{C}$, two significant figures, because the zero points $-263\,{}^\circ\text{C}$ and $-291\,{}^\circ\text{C}$ are known to three figures, that is, in whole degrees, and their difference $28\,{}^\circ\text{C}$ is only a two-figure number; the divisor $2$ is exact.
@@ -72,7 +72,7 @@
 **Given:** atmospheric pressure $p_\text{air} = 101.0\,\text{kPa}$; the gauge pressure from the gauge $p_\text{g,1} = 9.0\,\text{kPa}$ at the temperature $\theta_1 = 30.0\,{}^\circ\text{C}$ and $p_\text{g,2} = 31.0\,\text{kPa}$ at the temperature $\theta_2 = 90.0\,{}^\circ\text{C}$
 **Find:** the temperature $\theta_0$ in degrees Celsius at which the absolute pressure of the gas is zero
 **Principle:** The pressure of a gas means the absolute pressure, and only that is linear with respect to temperature in such a way that the zero of the line predicts a vacuum. The gauge shows the gauge pressure compared with atmospheric pressure, so you must add the atmospheric pressure before fitting the line.
-**Formula:** $p = p_\text{g} + p_\text{air}$. Then $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ and for zero pressure $0 = p_1 + k(\theta_0 - \theta_1)$, so $\theta_0 = \theta_1 - \dfrac{p_1}{k}$
+**Formula:** $$\begin{aligned} p &= p_\text{g} + p_\text{air} \\ k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\ 0 &= p_1 + k(\theta_0 - \theta_1) \\ k(\theta_0 - \theta_1) &= -p_1 \\ \theta_0 &= \theta_1 - \dfrac{p_1}{k} \end{aligned}$$
 **Conversions:** The gauge pressures are converted to absolute pressures: $p_1 = 9.0\,\text{kPa} + 101.0\,\text{kPa} = 110.0\,\text{kPa}$ and $p_2 = 31.0\,\text{kPa} + 101.0\,\text{kPa} = 132.0\,\text{kPa}$. The units are already kilopascals and degrees Celsius.
 **Substitution:** $k = \dfrac{(132.0 - 110.0)\,\text{kPa}}{(90.0 - 30.0)\,{}^\circ\text{C}} = \dfrac{22.0\,\text{kPa}}{60.0\,{}^\circ\text{C}} = 0.36667\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ and $\theta_0 = 30.0\,{}^\circ\text{C} - \dfrac{110.0\,\text{kPa}}{0.36667\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = 30.0\,{}^\circ\text{C} - 300\,{}^\circ\text{C} = -270\,{}^\circ\text{C}$
 **Answer:** $-270\,{}^\circ\text{C}$, three significant figures, because the pressure difference $22.0\,\text{kPa}$ and the temperature difference $60.0\,{}^\circ\text{C}$ are known to three figures; finally the subtraction $30.0 - 300$ gives the result in whole degrees.
@@ -94,7 +94,7 @@ Limiting case: the proportion would be $100\,\%$ if the temperature error were $
 **Given:** the end points $106.0 \pm 1.0\,\text{kPa}$ at the temperature $20.0\,{}^\circ\text{C}$ and $137.0 \pm 1.0\,\text{kPa}$ at the temperature $100.0\,{}^\circ\text{C}$. The steepest limit line passes through the points $(20.0\,{}^\circ\text{C};\ 105.0\,\text{kPa})$ and $(100.0\,{}^\circ\text{C};\ 138.0\,\text{kPa})$, the shallowest through the points $(20.0\,{}^\circ\text{C};\ 107.0\,\text{kPa})$ and $(100.0\,{}^\circ\text{C};\ 136.0\,\text{kPa})$
 **Find:** the uncertainty $\Delta\theta_0$ in degrees Celsius and the reason why the result is larger than with the seven-point data
 **Principle:** The steeper or shallower a line you allow, the wider the interval of zero points. The zero-pressure point of each limit line is calculated from two points of the line, and the uncertainty is half of the interval between these two values.
-**Formula:** For each line $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ and $\theta_0 = \theta_1 - \dfrac{p_1}{k}$, and then $\Delta\theta_0 = \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2}$
+**Formula:** $$\begin{aligned} k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\ 0 &= p_1 + k(\theta_0 - \theta_1) \\ k(\theta_0 - \theta_1) &= -p_1 \\ \theta_0 &= \theta_1 - \dfrac{p_1}{k} \\ \Delta\theta_0 &= \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2} \end{aligned}$$
 **Conversions:** No conversions are needed: the pressures are in kilopascals and the temperatures in degrees Celsius, and the temperature difference $100.0\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} = 80.0\,{}^\circ\text{C}$ is the same in kelvins.
 **Substitution:** Steepest: $k = \dfrac{(138.0 - 105.0)\,\text{kPa}}{80.0\,{}^\circ\text{C}} = 0.4125\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ and $\theta_0 = 20.0\,{}^\circ\text{C} - \dfrac{105.0\,\text{kPa}}{0.4125\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -234.55\,{}^\circ\text{C}$. Shallowest: $k = \dfrac{(136.0 - 107.0)\,\text{kPa}}{80.0\,{}^\circ\text{C}} = 0.3625\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ and $\theta_0 = 20.0\,{}^\circ\text{C} - \dfrac{107.0\,\text{kPa}}{0.3625\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -275.17\,{}^\circ\text{C}$. So $\Delta\theta_0 = \dfrac{-234.55 - (-275.17)}{2}\,{}^\circ\text{C} = 20.31\,{}^\circ\text{C}$
 **Answer:** $20\,{}^\circ\text{C}$ (exactly $20.3\,{}^\circ\text{C}$), two significant figures, because the zero points $-235\,{}^\circ\text{C}$ and $-275\,{}^\circ\text{C}$ are known to three figures, that is, in whole degrees, and their difference $$40\,{}^\circ\text{C}$$ is a two-figure number. A third figure would require initial values to the hundredth, which does not fit the uncertainty $\pm 1.0\,\text{kPa}$.
@@ -108,7 +108,7 @@ In the seven-point data every line must also pass through the bars of the five i
 **Given:** $p_0 = 100.0\,\text{kPa}$ at the temperature $0\,{}^\circ\text{C}$, the target temperature $T = 77.0\,\text{K}$ and $p \propto T$ in kelvins; at this pressure nitrogen condenses into a liquid only at about $67\,\text{K}$
 **Find:** the pressure $p$ at the temperature $77.0\,\text{K}$ in kilopascals, and a justification of why the line cannot be extended all the way to zero
 **Principle:** In a rigid closed container, the amount and volume of the gas stay constant, so the pressure is directly proportional to the temperature in kelvins and $\dfrac{p}{T}$ is constant. The proportionality holds only in kelvins, because only the zero of the kelvin scale is absolute zero. It also requires that the gas stays a gas.
-**Formula:** $\dfrac{p}{T} = \dfrac{p_0}{T_0}$, so $p = p_0\,\dfrac{T}{T_0}$
+**Formula:** $$\begin{aligned} \dfrac{p}{T} &= \dfrac{p_0}{T_0} \\ p &= p_0\,\dfrac{T}{T_0} \end{aligned}$$
 **Conversions:** The initial temperature is converted to kelvins: $T_0 = 0\,{}^\circ\text{C} = 273.15\,\text{K}$. The temperature $77.0\,\text{K}$ is already in kelvins. In the ratio $T/T_0$ the kelvins cancel, so the pressure stays in kilopascals.
 **Substitution:** $p = 100.0\,\text{kPa} \cdot \dfrac{77.0\,\text{K}}{273.15\,\text{K}} = 28.19\,\text{kPa}$
 **Answer:** $28.2\,\text{kPa}$, three significant figures, because the temperature $77.0\,\text{K}$ is given to three figures ($273.15\,\text{K}$ is a definition and does not limit).
@@ -163,7 +163,7 @@ Reading between two measured points is interpolation, repeating reduces the rand
 **Find:** a) the centre point; b) the temperature at zero pressure $\theta_0$ in degrees Celsius
 **Principle:** The flask is sealed and rigid, so the amount of substance and the volume stay constant and the pressure is a linear function of temperature. The fitted line passes through the middle of the set of points, so it passes through the centre point. The line is extended by extrapolation to $p = 0$.
 **Reading the graph:** The centre point of the table is calculated as the means $\theta_{\text{av}}$ and $p_{\text{av}}$. The sum of the temperatures is $250\,{}^\circ\text{C}$ and the sum of the pressures is $588.9\,\text{kPa}$. The line passes through this point with the slope $k$.
-**Formula:** The line through the point $(\theta_{\text{av}}, p_{\text{av}})$ is $p = p_{\text{av}} + k(\theta - \theta_{\text{av}})$. When $p = 0$ and $\theta = \theta_0$, then $\theta_0 = \theta_{\text{av}} - \dfrac{p_{\text{av}}}{k}$
+**Formula:** $$\begin{aligned} p &= p_{\text{av}} + k(\theta - \theta_{\text{av}}) \\ 0 &= p_{\text{av}} + k(\theta_0 - \theta_{\text{av}}) \\ k(\theta_0 - \theta_{\text{av}}) &= -p_{\text{av}} \\ \theta_0 &= \theta_{\text{av}} - \dfrac{p_{\text{av}}}{k} \end{aligned}$$
 **Conversions:** No conversions are needed: the pressures are in kilopascals, so in the quotient $p_{\text{av}}/k$ the kPa cancels and degrees Celsius remain.
 **Substitution:** a) $\theta_{\text{av}} = 250\,{}^\circ\text{C} : 5 = 50\,{}^\circ\text{C}$ and $p_{\text{av}} = 588.9\,\text{kPa} : 5 = 117.78\,\text{kPa}$. b)
 
@@ -177,7 +177,7 @@ $$\begin{aligned} \theta_0 &= 50\,{}^\circ\text{C} - \dfrac{117.78\,\text{kPa}}{
 **Find:** a) group B's temperature at zero pressure $\theta_0$ in degrees Celsius; b) why the result differs from group A's result
 **Principle:** In a sealed rigid container the pressure is a linear function of temperature, so two points determine a line, which is extended to $p = 0$. The measurement points have random scatter, so the shorter the interval from which the slope is calculated, the more uncertain it is.
 **Reading the graph:** Group B reads only the first two rows of the table, the temperatures $20\,{}^\circ\text{C}$ and $35\,{}^\circ\text{C}$.
-**Formula:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ and $\theta_0 = \theta_1 - \dfrac{p_1}{k}$
+**Formula:** $$\begin{aligned} k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\ 0 &= p_1 + k(\theta_0 - \theta_1) \\ k(\theta_0 - \theta_1) &= -p_1 \\ \theta_0 &= \theta_1 - \dfrac{p_1}{k} \end{aligned}$$
 **Conversions:** No conversions are needed: the pressures are in kilopascals, so the kPa cancels in the quotient $p_1/k$. The temperature difference $15\,{}^\circ\text{C}$ is the same in kelvins.
 **Substitution:**
 
@@ -196,7 +196,7 @@ Group A uses six points from an interval $75\,{}^\circ\text{C}$ wide, so the sca
 **Find:** a) the temperature at zero pressure $\theta_0$ obtained by the group, in degrees Celsius; b) whether the table supports the suspicion of a leak and why a leak distorts the result
 **Principle:** In a sealed flask with no leak the amount of substance is constant and the pressure rises linearly with temperature. If gas escapes, the amount of substance decreases and the linear model no longer holds. Extrapolation assumes that the model holds, so the result is distorted.
 **Reading the graph:** From the table we read the first point $(20\,{}^\circ\text{C};\ 104.0\,\text{kPa})$ and the last point $(80\,{}^\circ\text{C};\ 120.0\,\text{kPa})$.
-**Formula:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ and $\theta_0 = \theta_1 - \dfrac{p_1}{k}$
+**Formula:** $$\begin{aligned} k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\ 0 &= p_1 + k(\theta_0 - \theta_1) \\ k(\theta_0 - \theta_1) &= -p_1 \\ \theta_0 &= \theta_1 - \dfrac{p_1}{k} \end{aligned}$$
 **Conversions:** No conversions are needed: the kilopascals cancel in the quotient, and the temperature difference $60\,{}^\circ\text{C}$ is the same in kelvins.
 **Substitution:**
 
@@ -217,7 +217,9 @@ In a leak, gas escapes from the hot flask, so the amount of substance decreases 
 
 The model assumes that in a sealed rigid container the pressure is a linear function of temperature also outside the measured range.
 **Reading the graph:** Two points are read from each series. The steepest line passes through the points $(\theta_1;\ p_1 - \Delta p)$ and $(\theta_2;\ p_2 + \Delta p)$, the shallowest through the points $(\theta_1;\ p_1 + \Delta p)$ and $(\theta_2;\ p_2 - \Delta p)$.
-**Formula:** The pressure of the line at the point $\theta_1$ is $p_a$ and at the point $\theta_2$ it is $p_b$. Then $k = \dfrac{p_b - p_a}{\theta_2 - \theta_1}$, $\theta_0 = \theta_1 - \dfrac{p_a}{k}$ and $\Delta\theta_0 = \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2}$
+**Formula:** $$\begin{aligned} k &= \dfrac{p_b - p_a}{\theta_2 - \theta_1} \\ 0 &= p_a + k(\theta_0 - \theta_1) \\ k(\theta_0 - \theta_1) &= -p_a \\ \theta_0 &= \theta_1 - \dfrac{p_a}{k} \\ \Delta\theta_0 &= \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2} \end{aligned}$$
+
+Here $p_a$ is the pressure of the line at the point $\theta_1$ and $p_b$ at the point $\theta_2$.
 **Conversions:** No conversions are needed: the kilopascals cancel in the quotient $p_a/k$, and the temperature differences are the same in kelvins.
 **Substitution:**
 
@@ -256,7 +258,7 @@ The interval of each series contains the value $-273.15\,{}^\circ\text{C}$ (A: $
 
 The calibration line passes through points far apart, and it is solved for the temperature when the pressure is known. The temperature of the freezer is outside the calibration range $0\ldots 100\,{}^\circ\text{C}$.
 **Reading the graph:** From the table we read the points farthest apart, $(0\,{}^\circ\text{C};\ 100.4\,\text{kPa})$ and $(100\,{}^\circ\text{C};\ 137.0\,\text{kPa})$. The other points serve as a check.
-**Formula:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ and the solution of the line $p = p_1 + k(\theta - \theta_1)$ is $\theta = \theta_1 + \dfrac{p - p_1}{k}$. The uncertainty of the pressure reading corresponds to the temperature uncertainty $\Delta\theta = \dfrac{\Delta p}{k}$.
+**Formula:** $$\begin{aligned} k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\ p &= p_1 + k(\theta - \theta_1) \\ k(\theta - \theta_1) &= p - p_1 \\ \theta &= \theta_1 + \dfrac{p - p_1}{k} \\ \Delta\theta &= \dfrac{\Delta p}{k} \end{aligned}$$
 **Conversions:** No conversions are needed: the kilopascals cancel, so the result is in degrees Celsius. The temperature difference $100\,{}^\circ\text{C}$ is the same in kelvins.
 **Substitution:**
 
@@ -301,7 +303,7 @@ The result is reasonable: an increase of pressure with temperature suits a seale
 **Given:** the kelvin temperature at the absolute zero $T = 0\,\text{K}$; from the table (MAFY table, unit conversions) $0\,{}^\circ\text{C} = 273.15\,\text{K}$, so $T_0 = 273.15\,\text{K}$
 **Find:** the Celsius temperature $\theta_0$ of the absolute zero in degrees Celsius
 **Principle:** The degrees of the Celsius and kelvin scales are equal, and the scales are shifted from each other by the constant $T_0$. The absolute zero is the zero point of the kelvin scale, so its Celsius temperature is obtained by setting $T = 0$.
-**Formula:** $T = \theta + T_0$, so $0 = \theta_0 + T_0$ and $\theta_0 = -T_0$
+**Formula:** $$\begin{aligned} T &= \theta + T_0 \\ 0 &= \theta_0 + T_0 \\ \theta_0 &= -T_0 \end{aligned}$$
 **Conversions:** No conversions are needed: $T_0$ is already in the table, and a temperature change is equal in kelvins and in degrees Celsius.
 **Substitution:** $\theta_0 = -273.15\,{}^\circ\text{C}$
 **Answer:** $$\begin{aligned} \theta_0 &= -273.15\,{}^\circ\text{C} \\ &\approx -273\,{}^\circ\text{C} \end{aligned}$$. The value $T_0 = 273.15\,\text{K}$ is from the MAFY table (unit conversions); the table value is defined to be exact, and an answer within about $\pm 4\,\%$ is accepted.
@@ -316,7 +318,7 @@ The kelvin scale starts at absolute zero, so there is no negative kelvin tempera
 **Reading the graph:** The first point is at a crossing of the grid, $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$. The last point is slightly above the $100\,\text{kPa}$ line, at $102.5\,\text{kPa}$, at the temperature $100\,{}^\circ\text{C}$. From these two points the slope of the line is calculated.
 
 The horizontal axis of the graph does not reach the zero-pressure point, so the zero point cannot be read from the graph but is calculated from the slope. The calculated value is accepted within a $5\,\%$ tolerance.
-**Formula:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ and $p = p_1 + k(\theta - \theta_1) = 0$, so $\theta_0 = \theta_1 - \dfrac{p_1}{k}$
+**Formula:** $$\begin{aligned} k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\ 0 &= p_1 + k(\theta_0 - \theta_1) \\ k(\theta_0 - \theta_1) &= -p_1 \\ \theta_0 &= \theta_1 - \dfrac{p_1}{k} \end{aligned}$$
 **Conversions:** No conversions are needed: the pressures are in kilopascals and the temperatures in degrees Celsius.
 **Substitution:** $k = \dfrac{(102.5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, and $\theta_0 = 0\,{}^\circ\text{C} - \dfrac{75\,\text{kPa}}{0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -272.7\,{}^\circ\text{C}$
 **Answer:** $\theta_0 \approx -273\,{}^\circ\text{C}$. The pressure read from the graph is accurate to about $1\,\text{kPa}$, so the uncertainty of the result is about ten degrees Celsius or more, and the third digit is not reliable.
@@ -329,7 +331,7 @@ The horizontal axis of the graph does not reach the zero-pressure point, so the 
 
 The temperature of the graph is in degrees Celsius, so the kelvin temperature must first be converted to degrees Celsius.
 **Reading the graph:** The first point is at a crossing of the grid, $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$, and the last is slightly above the $100\,\text{kPa}$ line, $(100\,{}^\circ\text{C};\ 102.5\,\text{kPa})$. From these the slope of the line is calculated, and the line is continued to the left. Drawing the line by eye gives a value of $53$–$57\,\text{kPa}$, which is accepted.
-**Formula:** $\theta = T - 273.15\,\text{K}$ (in degrees Celsius), $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ and $p = p_1 + k(\theta - \theta_1)$
+**Formula:** $$\begin{aligned} \theta &= T - 273.15\,\text{K} \\ k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\ p &= p_1 + k(\theta - \theta_1) \end{aligned}$$
 **Conversions:** $\theta = 200 - 273.15 = -73.15\,{}^\circ\text{C}$
 **Substitution:** $k = \dfrac{(102.5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, and $$\begin{aligned} p &= 75\,\text{kPa} \\ &+ 0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot (-73.15 - 0)\,{}^\circ\text{C} \\ &= 75\,\text{kPa} - 20.1\,\text{kPa} \\ &= 54.9\,\text{kPa} \end{aligned}$$
 **Answer:** $p \approx 55\,\text{kPa}$, two significant figures, because the pressure read from the graph is accurate to about $1\,\text{kPa}$.

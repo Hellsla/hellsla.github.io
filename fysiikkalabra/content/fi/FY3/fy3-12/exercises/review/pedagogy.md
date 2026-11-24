@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: cc8485c6d5e1447c
+CONTENT-HASH: 5c6002d8df8940b4
 
 ## Blocking
 None.
 
 ## Polish
-1. L2-09 is a single multiplication; the sentence saying the figure value is a mean over the whole surface tells the step. Optional: drop it so the student decides to multiply by the area.
+None.
 
 ## Checked
-- Round 2 delta judged in context (round-1 findings addressed).
-- L2-09 now reads a value, multiplies by the area and converts to PW; level 2 fits, no repeat of L1-05 (same figure, different skill). L3-03 defines the coefficient of performance before use; 984 kWh checked. L1-05 solution names the dashed arrow 'lämpösäteily'.
-- Full set read: levels, counts, mix of kinds (choices, data, error analysis, model) fine; solutions staged with principle first; units and Finnish fine.
+- Each Kaava step now starts from the basic equation(s) or law and reaches the solved symbolic form that Sijoitus uses; no combined formula opens a derivation.
+- The derivation steps are consistent with the quantities named in Sijoitus; answers, units and Sijoitus unchanged.
+- Added paragraph breaks and moved remarks in long model answers help reading and change no content.
+- Aligned blocks are short enough for a phone.

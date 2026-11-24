@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2a0490285f2ef3cd
+CONTENT-HASH: ca97d56eea315b06
 ## Blocking
 (none)
 ## Polish
 (none)
 ## Checked
-- Delta: L1-02 Järkevyys / Reasonableness now says 'venymä newtonia kohti' / 'extension per newton' instead of spring constant; the term is not taught in FY3 (force-meter extension is proportional to force), and the ratio 2,0 cm / 4,0 N = 0,50 cm/N and 0,50 · 12 = 6,0 are unchanged and correct. Clearer for the student.
-- Judged from the diff text; captures not opened.
+- Delta: only the note in the L3-04 Kaava row changed, from "(c: jousen vakio)" to "(c = x/F)". It now defines the spring constant by the calibration relation, so the student sees where c comes from.
+- The Kaava block still starts from x/m = c g_Maa, writes the same relation for X and solves g_X in symbols before substitution.
+- Periaate, Taulukon lukeminen and the later steps are unchanged and consistent with the note.
+- Judged from the diff and the solutions file on disk; captures not opened. Hash unchanged at start and end.

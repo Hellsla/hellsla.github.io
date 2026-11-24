@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c5435cd354b04553
+CONTENT-HASH: e099a0ff33b8b15c
 
 ## Blocking
 
 ## Polish
-- exercises.json fy3-16-L2-01, fy3-16-L3-03 — with tolerance 0.07 the check accepts 1.58–1.82 kg (key 1.7) and 1.49–1.71 kg (key 1.6), so the value one step above the key (1.8 kg; 1.7 kg) also passes — follows from the teacher's both-directions decision; no change needed.
+- solutions.md:176–179 (fy3-16-L3-03): the Kaava now ends at $m = E_\text{yht}/(c_\text{jää}\Delta T_\text{jää} + s)$, but the Sijoitus never names $E_\text{yht}$. Adding a row "$E_\text{yht} = 486\,000\,\text{J} + 50\,280\,\text{J} = 536\,280\,\text{J}$" before "Pienin massa" would make the Sijoitus substitute into the last symbolic form literally.
+- solutions.md:167–169 (L3-03): $E_\text{yht}$ is the same quantity as $Q_\text{luovutettu}$, written out once more. Writing "$Q_\text{luovutettu} = E_\text{yht} = UA\Delta T\,t + c\,m_\text{j}\Delta T_\text{j}$" on one row would remove the duplicate.
 
 ## Checked
-- Round 4, full: all 21 numeric answers recomputed in one script from the task texts with my own formulas; all agree with exercises.json and answers.py.
-- Limit-value tasks L2-01 and L3-03: key and model answer round up (1.617→1.7; 1.511→1.6), answers.py uses ceil; tolerance 0.07 accepts the rounded-down 1.6 (5.9 %) and 1.5 (6.3 %) as the teacher decided; the unrounded values pass too.
-- Every other tolerance lets a student who rounds to the data's figures pass (680 vs 678, 2.4 vs 2.444, 140 vs 139, 480 vs 480.6, 590 vs 592).
-- Laws and conditions: Q = cmΔT only without a change of state (said in each Periaate), sm and rm at constant temperature, P = UAΔT with the inside at 0 °C stated in the task, mixing task checks 251 400 J > 167 000 J first and states the "not enough" case correctly.
-- Multiple choice L1-06, L1-07, L2-08: exactly one correct option; each distractor is wrong and its feedback gives the right physics (net transfer wording, no "cold flows", t ∝ m/(UΔT) ratio = 2).
-- Intermediate numbers of the solutions recomputed (period efficiencies, break-even price 0.44 €/kg, stage energies, fitted line, axis crossing ≈ +20 °C): all right.
-- Figures fy3-6/heating-line and fy3-7/melting-curve give the needed readings (180 s, 40 K; 220 kJ), agree with c_ice·m·ΔT + sm = 20.2 + 200 kJ, and do not show the answer.
-- Scope: FY3 central contents only (heat, changes of state, U-value from the lesson); symbols as in the brief (s, r, c, m/t, UA).
-- Guardrails: melting explained by interaction energy, heater efficiency "käytännössä 100 %", example data called esimerkkiaineisto, slope read from the fitted line.
-- fi-easy: answers, units, tolerances, data rows and correct options identical to fi; every number in every solution matches the fi solution (compared mechanically); no step or justification dropped.
+- solutions.md:163–171 (L3-03): I read the block on disk as an aligned block. There is no `array` numerator any more. The rows go from $Q_\text{vastaanotettu} = Q_\text{luovutettu}$ to $Q_\text{vastaanotettu} = m(c_\text{jää}\Delta T_\text{jää} + s)$, $P = UA\Delta T$, $E = Pt$, $Q_\text{luovutettu} = E + c\,m_\text{j}\Delta T_\text{j}$ and $E_\text{yht}$, ending with $m = E_\text{yht}/(c_\text{jää}\Delta T_\text{jää} + s)$. Every row is algebraically right, and the wall energy is now on the received side together with the drinks' heat, which settles my earlier polish point.
+- The physics is unchanged: the ice warms from $-10\,{}^\circ\text{C}$ to $0\,{}^\circ\text{C}$ and then melts. The inside stays at $0\,{}^\circ\text{C}$, so the wall power is constant, as the task assumes.
+- Recomputed: $(1{,}5 \cdot 0{,}50 \cdot 30 \cdot 21\,600 + 4190 \cdot 0{,}50 \cdot 24)/(2100 \cdot 10 + 334\,000) = 1{,}511\,\text{kg}$. This minimum is rounded up to $1{,}6\,\text{kg}$, which is the safe side.
+- No other file and no answer, unit or tolerance changed. My previous checks still hold.
+- The hash was the same at the start and the end.

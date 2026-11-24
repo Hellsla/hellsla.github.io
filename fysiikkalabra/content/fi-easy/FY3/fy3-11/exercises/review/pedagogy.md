@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 191a6317ef0bbcdc
-SCOPE: delta wording from 0fc397895a2ab582 base 6153818
-
+CONTENT-HASH: 309dda9004ec4ead
 ## Blocking
 (none)
-
 ## Polish
 (none)
-
 ## Checked
-L2-04 Answer line only: the reason now leads (final zero of 480 kW is significant, so three figures; 40.0 % also three; therefore three significant figures). A 16-19-year-old can follow it; numbers, units and answer 720 kW unchanged. fi-easy stays plain Finnish: short sentences, no new terms.
+- Delta: Kaava rows start from the basic definitions (W = Fs, eta = W/Q1, Q1 = Q2 + W) and combine them last; aligned one step per row.
+- Single-equation Kaava rows left as they were are fine.
+- The packet diff shows the aligned blocks collapsed to one line; the file on disk has them on separate rows and balanced `$$`.
+- Finnish unchanged in the diff apart from sentence splits; short sentences, fits a phone.

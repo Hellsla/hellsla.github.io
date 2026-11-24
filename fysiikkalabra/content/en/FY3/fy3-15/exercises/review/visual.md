@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 312ac1feb6f82c78
+CONTENT-HASH: af6e1c0f678902a1
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- [Minor] open-exercises-L2-1280-4 (14-13) — the Principle paragraph is long (four sentences); a break before "The water only warms up" would help. Optional.
+- none
 
 ## Checked
-- Delta (md-paragraphs: solutions.md, words unchanged). There are no 360 px captures; the 390 px ones were used.
-- 1280 px with solutions open: fy3-15-open-exercises-L2-1280-4.png (14-12 Answer and Reasonableness, 14-13 Given, Find, Principle, Formula; separate paragraphs, even spacing, nothing clipped); fy3-15-open-tarkista-1280-2.png (feedback, hints open).
-- 390 px: fy3-15-stage-tarkista-390-2.png (long options wrap without overflow); fy3-15-stage-sovella-390-2.png (worked-example stages 5-7: chains and paragraphs separate and readable).
-- Hash run at start and end: unchanged.
+- Delta: the Given of fy3-15-L3-04 (14-22) now reads $0.560\,P_{\text{o},\text{CHP}}$; captures current for this hash (stamp.txt).
+- 1280 px, level 3, every solution open: fy3-15-open-exercises-L3-1280-6 (Given, Find, Principle, six-row Formula, Substitution A) and -7 (Substitution B, Answer, Reasonableness).
+- The Given subscript matches the Formula and Substitution rows ($P_{\text{o},\text{CHP}}$); nothing clipped, equals signs aligned.
+- Not opened: 390 px solution captures (none exist; the layout check is covered by the deterministic scope).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

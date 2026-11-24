@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1a56ff9735fa8c48
+CONTENT-HASH: f6fcacc2bacbb728
 
 ## Blocking
 - none
@@ -8,9 +8,10 @@ CONTENT-HASH: 1a56ff9735fa8c48
 - none
 
 ## Checked
-- Delta (md-paragraphs: paragraph breaks only, words unchanged). Captures current for this hash (stamp.txt).
-- 1280 px, solutions open: fy3-1-open-exercises-1280-3.png, fy3-1-open-exercises-1280-7.png. Split paragraphs (Principle, Model answer, Reasonableness) read as separate blocks; chains, answer box and cards intact, no clipping.
-- 390 px: fy3-1-stage-tarkista-390-1.png, fy3-1-stage-tarkista-390-2.png (solutions closed there; no solution-open phone capture exists). No 360 px captures exist.
+- Delta: one wording change in the Formula block of fy3-1-L3-04 (1-22): "(c: spring constant)" became "(c = x/F)". Captures current for this hash (stamp.txt).
+- 1280 px, level 3, every solution open: fy3-1-open-exercises-L3-1280-4 and -5 (the task text, then the solution with the changed Formula block, which carries on below).
+- The three-row aligned Formula block renders cleanly in KaTeX. Equals signs sit in one column and the bracket "(c = x/F)" reads clearly after the first row. Nothing is clipped or overflowing. The layout around it is intact.
+- Not opened: 390 px solution captures. None exist, and the 360/390 layout check is covered by the packet's deterministic scope.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

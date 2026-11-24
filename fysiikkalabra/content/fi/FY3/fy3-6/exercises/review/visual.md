@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 2688fb104b695b54
-SCOPE: delta wording from bf6fcdc9cf923eca base 64d4935
+CONTENT-HASH: 093bce03ecb85ed2
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] fy3-6-open-exercises-L3-1280-4 and -6 (L3-03, L3-04 Kaava) — the part labels `a)` and `c)` (and the note `(Q = cm\Delta T)`) float at the right end of single rows with ragged gaps — set them as `\text{a)}` after a fixed `\qquad` or move them to the row's start.
+- [Minor] fy3-6-open-exercises-L2-1280-2 (Järkevyys of the c task) — the closing full stop of "Yksiköt: … ." falls alone on its own line after the display fraction.
 
 ## Checked
-- Delta, wording only: the diff read in full. The prefix "Esimerkkiaineisto:" is gone; each task now opens with a capital letter and reads as a normal sentence. No numbers, symbols, units or LaTeX changed.
-- Captures: opened fy3-4 L3 part 1 and 4 at 1280 px (content/fi/FY3/fy3-4/review/shots), which show the layout of this kind of task card; the other sets' captures were not opened, because the diff changes only the first words of a text.
-- Hash unchanged at the end.
+- Delta (Kaava steps as aligned multi-row blocks, quad continuations in L2-01, L2-04, L2-07, L3-03, L3-04; previous scope line is for an earlier delta). Captures in content/fi/FY3/fy3-6/review/shots; exercise captures at 1280 px only.
+- fy3-6-open-exercises-L2-1280-2 (five-row Kaava E = Pt … c = Pt/(mΔT)), L3-1280-4 (five-row Q_h = Q_v chain), L3-1280-6 (seven-row Kaava, Sijoitus chain).
+- Equals signs aligned, nothing clipped, layout intact.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4
