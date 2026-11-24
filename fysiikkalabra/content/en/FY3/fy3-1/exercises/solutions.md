@@ -12,7 +12,10 @@
 **Given:** $F_1 = 4.0\,\text{N}$ and its extension $x_1 = 2.0\,\text{cm}$; a second force $F = 12\,\text{N}$
 **Find:** the extension $x$ in centimetres
 **Principle:** The extension of a force meter's spring is directly proportional to the force stretching it (the spring is not stretched too far), so when the force is multiplied, the extension is multiplied by the same number. That is why we can use a ratio.
-**Formula:** $\dfrac{x}{x_1} = \dfrac{F}{F_1}$, so $x = \dfrac{x_1 F}{F_1}$
+**Formula:** $$\begin{aligned} \dfrac{x}{x_1} &= \dfrac{F}{F_1} \\
+x &= \dfrac{x_1 F}{F_1}
+\end{aligned}
+$$
 **Conversions:** No conversions are needed: the extension comes out in the same unit as $x_1$ (centimetres), and the newtons cancel in the ratio $\dfrac{F}{F_1}$.
 **Substitution:** $x = \dfrac{2.0\,\text{cm} \cdot 12\,\text{N}}{4.0\,\text{N}} = 6.0\,\text{cm}$
 **Answer:** $6.0\,\text{cm}$, two significant figures like the given values.
@@ -35,7 +38,10 @@
 **Reading the graph:** Read two points from the grid crossings: $(4\,\text{N};\ 2\,\text{cm})$ and $(10\,\text{N};\ 5\,\text{cm})$. In both, $x/F = 0.5\,\text{cm/N}$, so the points lie on the same straight line through the origin.
 
 The extension $3.5\,\text{cm}$ is between the points $(6\,\text{N};\ 3\,\text{cm})$ and $(8\,\text{N};\ 4\,\text{cm})$, so the force must be between $6\,\text{N}$ and $8\,\text{N}$. An answer read by eye, $6.8$–$7.2\,\text{N}$, is accepted.
-**Formula:** $\dfrac{x}{F} = \dfrac{x_1}{F_1}$, so $F = \dfrac{F_1 x}{x_1}$
+**Formula:** $$\begin{aligned} \dfrac{x}{F} &= \dfrac{x_1}{F_1} \\
+F &= \dfrac{F_1 x}{x_1}
+\end{aligned}
+$$
 **Conversions:** No conversions are needed: the centimetres cancel in the ratio $\dfrac{x}{x_1}$ and the force comes out in newtons.
 **Substitution:** $F = \dfrac{4\,\text{N} \cdot 3.5\,\text{cm}}{2\,\text{cm}} = 7.0\,\text{N}$
 **Answer:** $F = 7.0\,\text{N}$, two significant figures like the extension $3.5\,\text{cm}$.
@@ -55,7 +61,10 @@ The extension $3.5\,\text{cm}$ is between the points $(6\,\text{N};\ 3\,\text{cm
 **Given:** the force meter reading, that is, the weight $G = 49\,\text{N}$ on Earth; from the table $g = 9.81\,\text{m/s}^2$
 **Find:** the mass $m$ of the object in kilograms
 **Principle:** A force meter measures force, and the object hangs from the meter on Earth, so the reading is the object's weight $G = m g$. The mass is obtained by dividing the weight by the Earth's $g$.
-**Formula:** $G = m g$, so $m = \dfrac{G}{g}$
+**Formula:** $$\begin{aligned} G &= m g \\
+m &= \dfrac{G}{g}
+\end{aligned}
+$$
 **Conversions:** No conversions are needed: $1\,\text{N} = 1\,\text{kg} \cdot \text{m/s}^2$, so $\dfrac{\text{N}}{\text{m/s}^2}$ is a kilogram.
 **Substitution:** $m = \dfrac{49\,\text{N}}{9.81\,\text{m/s}^2} = 4.995\,\text{kg}$
 **Answer:** $5.0\,\text{kg}$, two significant figures like the weight $49\,\text{N}$.
@@ -75,7 +84,13 @@ The extension $3.5\,\text{cm}$ is between the points $(6\,\text{N};\ 3\,\text{cm
 **Given:** $m = 145\,\text{kg}$; from the table $g_\text{Earth} = 9.81\,\text{m/s}^2$ and $g_\text{Moon} = 1.62\,\text{m/s}^2$
 **Find:** the decrease in weight $\Delta G = G_\text{Earth} - G_\text{Moon}$ in newtons
 **Principle:** The mass is the same in both places, and the weight in each is $G = m g$ with the $g$ of that place. The difference is obtained by subtracting the weight on the Moon from the weight on Earth.
-**Formula:** $\Delta G = m g_\text{Earth} - m g_\text{Moon}$, so $\Delta G = m (g_\text{Earth} - g_\text{Moon})$
+**Formula:** $$\begin{aligned} \Delta G &= G_\text{Earth} - G_\text{Moon} \\
+G_\text{Earth} &= m g_\text{Earth} \\
+G_\text{Moon} &= m g_\text{Moon} \\
+\Delta G &= m g_\text{Earth} - m g_\text{Moon} \\
+&= m (g_\text{Earth} - g_\text{Moon})
+\end{aligned}
+$$
 **Conversions:** The mass is in kilograms and the $g$ values in $\text{m/s}^2$, so the result comes out in newtons and no conversions are needed.
 **Substitution:** $$\begin{aligned} \Delta G &= 145\,\text{kg} \\ &\cdot (9.81\,\text{m/s}^2 - 1.62\,\text{m/s}^2) \\ &= 145\,\text{kg} \cdot 8.19\,\text{m/s}^2 \\ &= 1187.55\,\text{N} \end{aligned}$$
 **Answer:** $1190\,\text{N}$, three significant figures like the mass $145\,\text{kg}$.
@@ -85,7 +100,12 @@ The extension $3.5\,\text{cm}$ is between the points $(6\,\text{N};\ 3\,\text{cm
 **Given:** $m = 0.20\,\text{kg}$ and its extension $x_1 = 1.5\,\text{cm}$ on Earth; a new extension $x = 4.5\,\text{cm}$; from the table $g = 9.81\,\text{m/s}^2$
 **Find:** the stretching force $F$ in newtons
 **Principle:** The weight of the object $G = m g$ is the force that stretches the spring by $x_1$. The extension is directly proportional to the force (the spring is not stretched too far), so the force at the new extension is obtained from the ratio.
-**Formula:** $G = m g$ and $\dfrac{F}{G} = \dfrac{x}{x_1}$, so $F = \dfrac{m g x}{x_1}$
+**Formula:** $$\begin{aligned} G &= m g \\
+\dfrac{F}{G} &= \dfrac{x}{x_1} \\
+F &= \dfrac{G x}{x_1} \\
+&= \dfrac{m g x}{x_1}
+\end{aligned}
+$$
 **Conversions:** The mass is already in kilograms. The centimetres cancel in the ratio $\dfrac{x}{x_1}$, so the extensions do not need to be converted to metres.
 **Substitution:** $F = \dfrac{0.20\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 4.5\,\text{cm}}{1.5\,\text{cm}} = 1.962\,\text{N} \cdot \dfrac{4.5}{1.5} = 5.886\,\text{N}$
 **Answer:** $5.9\,\text{N}$, two significant figures like the mass $0.20\,\text{kg}$.
@@ -95,7 +115,11 @@ The extension $3.5\,\text{cm}$ is between the points $(6\,\text{N};\ 3\,\text{cm
 **Given:** $G_\text{Earth} = 18\,\text{N}$; from the table $g_\text{Earth} = 9.81\,\text{m/s}^2$ and $g_\text{Mars} = 3.71\,\text{m/s}^2$
 **Find:** the meter reading on Mars $G_\text{Mars}$ in newtons
 **Principle:** The meter shows the weight. The mass of the object stays the same on Mars and only $g$ changes, so the weight changes in the same proportion as $g$. The mass is therefore constant here, and it links the two places.
-**Formula:** $m = \dfrac{G_\text{Earth}}{g_\text{Earth}}$ and $G_\text{Mars} = m g_\text{Mars}$, so $G_\text{Mars} = \dfrac{G_\text{Earth} g_\text{Mars}}{g_\text{Earth}}$
+**Formula:** $$\begin{aligned} m &= \dfrac{G_\text{Earth}}{g_\text{Earth}} \\
+G_\text{Mars} &= m g_\text{Mars} \\
+&= \dfrac{G_\text{Earth} g_\text{Mars}}{g_\text{Earth}}
+\end{aligned}
+$$
 **Conversions:** No conversions are needed: $\dfrac{\text{m/s}^2}{\text{m/s}^2}$ cancels, and the weight stays in newtons.
 **Substitution:** $m = \dfrac{18\,\text{N}}{9.81\,\text{m/s}^2} = 1.835\,\text{kg}$, so $G_\text{Mars} = 1.835\,\text{kg} \cdot 3.71\,\text{m/s}^2 = 6.807\,\text{N}$
 **Answer:** $6.8\,\text{N}$, two significant figures like the weight $18\,\text{N}$.
@@ -105,7 +129,12 @@ The extension $3.5\,\text{cm}$ is between the points $(6\,\text{N};\ 3\,\text{cm
 **Given:** $m_\text{Earth} = 22.0\,\text{kg}$; from the table $g_\text{Earth} = 9.81\,\text{m/s}^2$ and $g_\text{Moon} = 1.62\,\text{m/s}^2$
 **Find:** the mass that can be lifted on the Moon $m_\text{Moon}$ in kilograms
 **Principle:** The lifter can produce the same force $F$ in both places, and the weight of the mass lifted must be at most this force. On the Moon $g$ is smaller, so the same force is enough for a greater mass.
-**Formula:** $F = m_\text{Earth} g_\text{Earth}$ and $F = m_\text{Moon} g_\text{Moon}$, so $m_\text{Moon} = \dfrac{m_\text{Earth} g_\text{Earth}}{g_\text{Moon}}$
+**Formula:** $$\begin{aligned} F &= m_\text{Earth} g_\text{Earth} \\
+F &= m_\text{Moon} g_\text{Moon} \\
+m_\text{Moon} g_\text{Moon} &= m_\text{Earth} g_\text{Earth} \\
+m_\text{Moon} &= \dfrac{m_\text{Earth} g_\text{Earth}}{g_\text{Moon}}
+\end{aligned}
+$$
 **Conversions:** The mass is in kilograms and the $g$ values in $\text{m/s}^2$, so the force comes out in newtons and the mass in kilograms without conversions.
 **Substitution:** $m_\text{Moon} = \dfrac{22.0\,\text{kg} \cdot 9.81\,\text{m/s}^2}{1.62\,\text{m/s}^2} = \dfrac{215.82\,\text{N}}{1.62\,\text{m/s}^2} = 133.2\,\text{kg}$
 **Answer:** $133\,\text{kg}$, three significant figures like the mass $22.0\,\text{kg}$.
@@ -115,7 +144,13 @@ The extension $3.5\,\text{cm}$ is between the points $(6\,\text{N};\ 3\,\text{cm
 **Given:** the meter reading $L = 26\,\text{kg}$ on Mars; from the table $g_\text{Mars} = 3.71\,\text{m/s}^2$; the scale shows the force divided by the Earth's value $g_\text{Earth} = 9.81\,\text{m/s}^2$
 **Find:** the true mass $m$ of the object in kilograms
 **Principle:** The meter measures force, not mass: its scale was made on Earth by dividing the force by the number $9.81\,\text{m/s}^2$. On Mars we must therefore first work out the force, that is, the weight of the object, from the reading, and the mass is obtained by dividing it by Mars's $g$.
-**Formula:** $L = \dfrac{G}{g_\text{Earth}}$, so $G = L g_\text{Earth}$. On Mars $G = m g_\text{Mars}$, so $m = \dfrac{L g_\text{Earth}}{g_\text{Mars}}$
+**Formula:** $$\begin{aligned} L &= \dfrac{G}{g_\text{Earth}} \\
+G &= L g_\text{Earth} \\
+G &= m g_\text{Mars} \\
+m &= \dfrac{G}{g_\text{Mars}} \\
+&= \dfrac{L g_\text{Earth}}{g_\text{Mars}}
+\end{aligned}
+$$
 **Conversions:** The reading $26\,\text{kg}$ is interpreted as a number on the scale: the force is $G = 26\,\text{kg} \cdot 9.81\,\text{m/s}^2$ in newtons. No other conversions are needed.
 **Substitution:** $m = \dfrac{26\,\text{kg} \cdot 9.81\,\text{m/s}^2}{3.71\,\text{m/s}^2} = \dfrac{255.06\,\text{N}}{3.71\,\text{m/s}^2} = 68.75\,\text{kg}$
 **Answer:** $69\,\text{kg}$, two significant figures like the reading $26\,\text{kg}$.
@@ -152,7 +187,10 @@ The force meter is not a party to the interaction but a tool from whose spring e
 **Find:** the acceleration of free fall $g$ in $\text{m/s}^2$
 **Principle:** Weight is directly proportional to mass, $G = m g$, so the $(m, G)$ points lie on a straight line through the origin and the slope of the line is $g$. The measurement points are not exactly on a line, so the line is fitted between the points, and the slope is read from two points of the drawn line.
 **Reading the graph:** The drawn line passes through the origin so that measurement points are left on both sides of the line. Two points far apart are read from the line: the origin $(0;\ 0)$ and the point $(0.50\,\text{kg};\ 4.90\,\text{N})$. From them $\Delta G = 4.90\,\text{N} - 0\,\text{N} = 4.90\,\text{N}$ and $\Delta m = 0.50\,\text{kg} - 0\,\text{kg} = 0.50\,\text{kg}$.
-**Formula:** $G = m g$, so the slope is $g = \dfrac{\Delta G}{\Delta m}$
+**Formula:** $$\begin{aligned} G &= m g \\
+g &= \dfrac{\Delta G}{\Delta m}
+\end{aligned}
+$$
 **Conversions:** No conversions are needed: $1\,\text{N} = 1\,\text{kg} \cdot \text{m/s}^2$, so $\dfrac{\text{N}}{\text{kg}}$ is $\text{m/s}^2$.
 **Substitution:** $g = \dfrac{4.90\,\text{N}}{0.50\,\text{kg}} = 9.8\,\dfrac{\text{N}}{\text{kg}} = 9.8\,\text{m/s}^2$
 **Answer:** $g = 9.8\,\text{m/s}^2$, two significant figures like the masses.
@@ -162,7 +200,11 @@ The force meter is not a party to the interaction but a tool from whose spring e
 **Given:** the weights of the same sample: $G_\text{Earth} = 7.4\,\text{N}$, $G_\text{Moon} = 1.2\,\text{N}$, $G_\text{Mars} = 2.8\,\text{N}$; $g_\text{Earth} = 9.81\,\text{m/s}^2$
 **Find:** the acceleration of free fall on Mars $g_\text{Mars}$
 **Principle:** The mass of the sample is the same everywhere, but it is not known. On Earth the weight gives the mass, $m = G_\text{Earth}/g_\text{Earth}$, and the same mass is used on Mars: $g_\text{Mars} = G_\text{Mars}/m$. The weight on the Moon in the table is not needed for this question.
-**Formula:** $m = \dfrac{G_\text{Earth}}{g_\text{Earth}}$ and $g_\text{Mars} = \dfrac{G_\text{Mars}}{m}$, so $g_\text{Mars} = g_\text{Earth} \dfrac{G_\text{Mars}}{G_\text{Earth}}$
+**Formula:** $$\begin{aligned} m &= \dfrac{G_\text{Earth}}{g_\text{Earth}} \\
+g_\text{Mars} &= \dfrac{G_\text{Mars}}{m} \\
+&= g_\text{Earth} \dfrac{G_\text{Mars}}{G_\text{Earth}}
+\end{aligned}
+$$
 **Conversions:** No conversions are needed: the newtons cancel in the ratio $\dfrac{G_\text{Mars}}{G_\text{Earth}}$, and $g$ stays in $\text{m/s}^2$.
 **Substitution:** $m = \dfrac{7.4\,\text{N}}{9.81\,\text{m/s}^2} = 0.754\,\text{kg}$, so $g_\text{Mars} = \dfrac{2.8\,\text{N}}{0.754\,\text{kg}} = 3.71\,\text{m/s}^2$
 **Answer:** $g_\text{Mars} = 3.7\,\text{m/s}^2$, two significant figures like the weights.
@@ -175,7 +217,10 @@ The force meter is not a party to the interaction but a tool from whose spring e
 **Model answer a):** The student has confused weight and mass. The reading $4.9\,\text{N}$ is a force, and its unit is the newton, not the kilogram. Mass and weight are not the same quantity, because the weight depends on $g$ and the mass does not.
 
 The mass is obtained by dividing the weight by the number $9.81\,\text{m/s}^2$, so it is about a tenth of the reading $4.9$, that is, much smaller than $4.9\,\text{kg}$.
-**Formula:** $G = m g$, so $m = \dfrac{G}{g}$
+**Formula:** $$\begin{aligned} G &= m g \\
+m &= \dfrac{G}{g}
+\end{aligned}
+$$
 **Conversions:** No conversions are needed: $1\,\text{N} = 1\,\text{kg} \cdot \text{m/s}^2$, so $\dfrac{\text{N}}{\text{m/s}^2}$ is a kilogram.
 **Substitution:** $m = \dfrac{4.9\,\text{N}}{9.81\,\text{m/s}^2} = 0.4995\,\text{kg}$
 **Answer:** $0.50\,\text{kg}$, two significant figures like the weight $4.9\,\text{N}$.
@@ -188,7 +233,11 @@ The mass is obtained by dividing the weight by the number $9.81\,\text{m/s}^2$, 
 
 The extensions of the same spring with the same mass are therefore in the same ratio as the $g$ values. The measurements on Earth give the calibration of the spring, and with it the $g$ of the unknown place.
 **Reading the table:** The points $(m, x)$ lie on a line through the origin, so the ratio $x/m$ is almost the same at every point ($1.1/0.10 = 11$ and $6.1/0.60 \approx 10.2\,\text{cm/kg}$). To even out the scatter of the measurements, the ratio is calculated from all the points: the sum of the extensions is $$\begin{aligned} &1.1 + 2.1 + 3.2 + 4.1 + 5.2 + 6.1 \\ &= 21.8\,\text{cm} \end{aligned}$$ and the sum of the masses $$\begin{aligned} &0.10 + 0.20 + 0.30 \\ &+ 0.40 + 0.50 + 0.60 \\ &= 2.10\,\text{kg} \end{aligned}$$.
-**Formula:** On Earth $\dfrac{x}{m} = c\, g_\text{Earth}$ and on the unknown celestial body $\dfrac{x_\text{X}}{m_\text{X}} = c\, g_\text{X}$, where $c$ is the constant of the spring. Dividing gives $g_\text{X} = g_\text{Earth} \dfrac{x_\text{X}/m_\text{X}}{(x/m)_\text{Earth}}$
+**Formula:** $$\begin{aligned} \dfrac{x}{m} &= c\, g_\text{Earth} \quad (c\text{: spring constant}) \\
+\dfrac{x_\text{X}}{m_\text{X}} &= c\, g_\text{X} \\
+g_\text{X} &= g_\text{Earth} \dfrac{x_\text{X}/m_\text{X}}{(x/m)_\text{Earth}}
+\end{aligned}
+$$
 **Conversions:** No conversions are needed: the centimetres and the kilograms stay the same in both ratios and cancel. The ratio on Earth is $\dfrac{21.8\,\text{cm}}{2.10\,\text{kg}} = 10.38\,\text{cm/kg}$ and at the unknown place $\dfrac{1.9\,\text{cm}}{0.50\,\text{kg}} = 3.8\,\text{cm/kg}$.
 **Substitution:** $g_\text{X} = 9.81\,\text{m/s}^2 \cdot \dfrac{3.8\,\text{cm/kg}}{10.38\,\text{cm/kg}} = 9.81\,\text{m/s}^2 \cdot 0.366 = 3.59\,\text{m/s}^2$
 **Answer:** a) $g_\text{X} = 3.6\,\text{m/s}^2$, two significant figures like the extension $1.9\,\text{cm}$. b) The celestial body is Mars. The value of the Moon, $1.62\,\text{m/s}^2$, is less than half of the result, and the values of the Earth, $9.81\,\text{m/s}^2$, and Jupiter, $24.8\,\text{m/s}^2$, are several times as great.
@@ -202,7 +251,14 @@ The value of Mars, $3.71\,\text{m/s}^2$, differs from the result by only about $
 **Principle:** The limit of the legs is a force, not a mass. The weight of the unit $G = m g$ is the force the legs carry, and it may be at most $F_\text{max}$.
 
 With the same force, the smaller $g$ of Mars allows a greater mass. The greatest mass of the additional load is the difference between the greatest allowed total mass and the present total mass.
-**Formula:** $m_\text{tot} = m_1 + m_2 + m_3 + m_4$, $G = m g$ and $m_\text{max} = \dfrac{F_\text{max}}{g_\text{Mars}}$, so $m_\text{extra} = \dfrac{F_\text{max}}{g_\text{Mars}} - m_\text{tot}$
+**Formula:** $$\begin{aligned} m_\text{tot} &= m_1 + m_2 + m_3 + m_4 \\
+G &= m g \\
+F_\text{max} &= m_\text{max} g_\text{Mars} \\
+m_\text{max} &= \dfrac{F_\text{max}}{g_\text{Mars}} \\
+m_\text{extra} &= m_\text{max} - m_\text{tot} \\
+&= \dfrac{F_\text{max}}{g_\text{Mars}} - m_\text{tot}
+\end{aligned}
+$$
 **Conversions:** $6.00\,\text{kN} = 6000\,\text{N}$, so that the force is in newtons and the mass comes out in kilograms.
 **Substitution:** a) and b)
 
@@ -248,7 +304,11 @@ Diagram D also has the force $F_\text{k}$, which is the force of the body on the
 **Reading the graph:** Read the points from the grid crossings: $(4\,\text{kg};\ 20\,\text{N})$ and $(10\,\text{kg};\ 50\,\text{N})$. In both, $g = G/m = 5.0\,\text{m/s}^2$, so the points lie on the same straight line through the origin.
 
 The mass $12\,\text{kg}$ is to the right of the last point $(10\,\text{kg};\ 50\,\text{N})$, so the weight is more than $50\,\text{N}$. The line can be extended by eye, and an answer of $58.2$–$61.8\,\text{N}$ ($60\,\text{N} \pm 3\,\%$) is accepted.
-**Formula:** $g = \dfrac{G_1}{m_1}$, so $G = m g$
+**Formula:** $$\begin{aligned} G_1 &= g\, m_1 \\
+g &= \dfrac{G_1}{m_1} \\
+G &= m g
+\end{aligned}
+$$
 **Conversions:** No conversions are needed: the mass is in kilograms and the force in newtons, so $g$ comes out directly in $\text{m/s}^2$.
 **Substitution:** $g = \dfrac{50\,\text{N}}{10\,\text{kg}} = 5.0\,\text{m/s}^2$ and $G = 12\,\text{kg} \cdot 5.0\,\text{m/s}^2 = 60\,\text{N}$
 **Answer:** $G = 60\,\text{N}$, two significant figures like the mass $12\,\text{kg}$.

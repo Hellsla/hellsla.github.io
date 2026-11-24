@@ -12,7 +12,10 @@
 **Annettu:** $F_1 = 4{,}0\,\text{N}$ ja sen venymä $x_1 = 2{,}0\,\text{cm}$; toinen voima $F = 12\,\text{N}$
 **Kysytty:** venymä $x$ senttimetreinä
 **Periaate:** Voimamittarin jousen venymä on suoraan verrannollinen sitä venyttävään voimaan (jousta ei venytetä liikaa), joten voiman moninkertaistuessa venymä moninkertaistuu samalla luvulla. Siksi voidaan käyttää suhdetta.
-**Kaava:** $\dfrac{x}{x_1} = \dfrac{F}{F_1}$, joten $x = \dfrac{x_1 F}{F_1}$
+**Kaava:** $$\begin{aligned} \dfrac{x}{x_1} &= \dfrac{F}{F_1} \\
+x &= \dfrac{x_1 F}{F_1}
+\end{aligned}
+$$
 **Muunnokset:** Muunnoksia ei tarvita: venymä ratkeaa samassa yksikössä kuin $x_1$ (senttimetreinä), ja newtonit supistuvat suhteessa $\dfrac{F}{F_1}$.
 **Sijoitus:** $x = \dfrac{2{,}0\,\text{cm} \cdot 12\,\text{N}}{4{,}0\,\text{N}} = 6{,}0\,\text{cm}$
 **Vastaus:** $6{,}0\,\text{cm}$, kaksi merkitsevää numeroa kuten annetuissa arvoissa.
@@ -33,7 +36,10 @@
 **Kysytty:** voima $F$ newtoneina
 **Periaate:** Jousen venymä on suoraan verrannollinen voimaan (jousta ei venytetä liikaa), joten pisteet ovat origon kautta kulkevalla suoralla ja suhde $x/F$ on sama kaikkialla. Tuntematonta voimaa ei tarvitse lukea pisteiden väliin silmällä: se lasketaan suhteesta.
 **Kuvaajan lukeminen:** Luetaan kaksi pistettä ruudukon risteyksistä: $(4\,\text{N};\ 2\,\text{cm})$ ja $(10\,\text{N};\ 5\,\text{cm})$. Molemmissa $x/F = 0{,}5\,\text{cm/N}$, joten pisteet ovat samalla origon kautta kulkevalla suoralla. Venymä $3{,}5\,\text{cm}$ on pisteiden $(6\,\text{N};\ 3\,\text{cm})$ ja $(8\,\text{N};\ 4\,\text{cm})$ välissä, joten voiman pitää olla $6\,\text{N}$ ja $8\,\text{N}$ välissä. Silmällä luettu vastaus $6{,}8$–$7{,}2\,\text{N}$ hyväksytään.
-**Kaava:** $\dfrac{x}{F} = \dfrac{x_1}{F_1}$, josta $F = \dfrac{F_1 x}{x_1}$
+**Kaava:** $$\begin{aligned} \dfrac{x}{F} &= \dfrac{x_1}{F_1} \\
+F &= \dfrac{F_1 x}{x_1}
+\end{aligned}
+$$
 **Muunnokset:** Muunnoksia ei tarvita: senttimetrit supistuvat suhteessa $\dfrac{x}{x_1}$ ja voima ratkeaa newtoneina.
 **Sijoitus:** $F = \dfrac{4\,\text{N} \cdot 3{,}5\,\text{cm}}{2\,\text{cm}} = 7{,}0\,\text{N}$
 **Vastaus:** $F = 7{,}0\,\text{N}$, kaksi merkitsevää numeroa kuten venymässä $3{,}5\,\text{cm}$.
@@ -53,7 +59,10 @@
 **Annettu:** voimamittarin lukema eli paino $G = 49\,\text{N}$ Maassa; taulukosta $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** kappaleen massa $m$ kilogrammoina
 **Periaate:** Voimamittari mittaa voimaa, ja kappale riippuu mittarissa Maassa, joten lukema on kappaleen paino $G = m g$. Massa saadaan jakamalla paino Maan $g$:llä.
-**Kaava:** $G = m g$, joten $m = \dfrac{G}{g}$
+**Kaava:** $$\begin{aligned} G &= m g \\
+m &= \dfrac{G}{g}
+\end{aligned}
+$$
 **Muunnokset:** Muunnoksia ei tarvita: $1\,\text{N} = 1\,\text{kg} \cdot \text{m/s}^2$, joten $\dfrac{\text{N}}{\text{m/s}^2}$ on kilogramma.
 **Sijoitus:** $m = \dfrac{49\,\text{N}}{9{,}81\,\text{m/s}^2} = 4{,}995\,\text{kg}$
 **Vastaus:** $5{,}0\,\text{kg}$, kaksi merkitsevää numeroa kuten painossa $49\,\text{N}$.
@@ -73,7 +82,13 @@
 **Annettu:** $m = 145\,\text{kg}$; taulukosta $g_\text{Maa} = 9{,}81\,\text{m/s}^2$ ja $g_\text{Kuu} = 1{,}62\,\text{m/s}^2$
 **Kysytty:** painon pieneneminen $\Delta G = G_\text{Maa} - G_\text{Kuu}$ newtoneina
 **Periaate:** Massa on sama molemmissa paikoissa, ja paino on kummassakin $G = m g$ sen paikan $g$:llä. Erotus saadaan vähentämällä Kuun paino Maan painosta.
-**Kaava:** $\Delta G = m g_\text{Maa} - m g_\text{Kuu}$, joten $\Delta G = m (g_\text{Maa} - g_\text{Kuu})$
+**Kaava:** $$\begin{aligned} \Delta G &= G_\text{Maa} - G_\text{Kuu} \\
+G_\text{Maa} &= m g_\text{Maa} \\
+G_\text{Kuu} &= m g_\text{Kuu} \\
+\Delta G &= m g_\text{Maa} - m g_\text{Kuu} \\
+&= m (g_\text{Maa} - g_\text{Kuu})
+\end{aligned}
+$$
 **Muunnokset:** Massa on kilogrammoina ja $g$-arvot yksikössä $\text{m/s}^2$, joten tulos tulee newtoneina eikä muunnoksia tarvita.
 **Sijoitus:** $$\begin{aligned} \Delta G &= 145\,\text{kg} \\ &\cdot (9{,}81\,\text{m/s}^2 - 1{,}62\,\text{m/s}^2) \\ &= 145\,\text{kg} \cdot 8{,}19\,\text{m/s}^2 \\ &= 1187{,}55\,\text{N} \end{aligned}$$
 **Vastaus:** $1190\,\text{N}$, kolme merkitsevää numeroa kuten massassa $145\,\text{kg}$.
@@ -83,7 +98,12 @@
 **Annettu:** $m = 0{,}20\,\text{kg}$ ja sen venymä $x_1 = 1{,}5\,\text{cm}$ Maassa; uusi venymä $x = 4{,}5\,\text{cm}$; taulukosta $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** venyttävä voima $F$ newtoneina
 **Periaate:** Kappaleen paino $G = m g$ on voima, joka venyttää jousta $x_1$. Venymä on suoraan verrannollinen voimaan (jousta ei venytetä liikaa), joten voima uudella venymällä saadaan suhteesta.
-**Kaava:** $G = m g$ ja $\dfrac{F}{G} = \dfrac{x}{x_1}$, joten $F = \dfrac{m g x}{x_1}$
+**Kaava:** $$\begin{aligned} G &= m g \\
+\dfrac{F}{G} &= \dfrac{x}{x_1} \\
+F &= \dfrac{G x}{x_1} \\
+&= \dfrac{m g x}{x_1}
+\end{aligned}
+$$
 **Muunnokset:** Massa on jo kilogrammoina. Senttimetrit supistuvat suhteessa $\dfrac{x}{x_1}$, joten venymiä ei tarvitse muuttaa metreiksi.
 **Sijoitus:** $F = \dfrac{0{,}20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 4{,}5\,\text{cm}}{1{,}5\,\text{cm}} = 1{,}962\,\text{N} \cdot \dfrac{4{,}5}{1{,}5} = 5{,}886\,\text{N}$
 **Vastaus:** $5{,}9\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $0{,}20\,\text{kg}$.
@@ -93,7 +113,11 @@
 **Annettu:** $G_\text{Maa} = 18\,\text{N}$; taulukosta $g_\text{Maa} = 9{,}81\,\text{m/s}^2$ ja $g_\text{Mars} = 3{,}71\,\text{m/s}^2$
 **Kysytty:** mittarin lukema Marsissa $G_\text{Mars}$ newtoneina
 **Periaate:** Mittari näyttää painon. Kappaleen massa pysyy samana Marsissa, vain $g$ vaihtuu, joten paino muuttuu samassa suhteessa kuin $g$. Massa on siis tässä vakio, ja se yhdistää kaksi paikkaa.
-**Kaava:** $m = \dfrac{G_\text{Maa}}{g_\text{Maa}}$ ja $G_\text{Mars} = m g_\text{Mars}$, joten $G_\text{Mars} = \dfrac{G_\text{Maa} g_\text{Mars}}{g_\text{Maa}}$
+**Kaava:** $$\begin{aligned} m &= \dfrac{G_\text{Maa}}{g_\text{Maa}} \\
+G_\text{Mars} &= m g_\text{Mars} \\
+&= \dfrac{G_\text{Maa} g_\text{Mars}}{g_\text{Maa}}
+\end{aligned}
+$$
 **Muunnokset:** Muunnoksia ei tarvita: $\dfrac{\text{m/s}^2}{\text{m/s}^2}$ supistuu, ja paino jää newtoneiksi.
 **Sijoitus:** $m = \dfrac{18\,\text{N}}{9{,}81\,\text{m/s}^2} = 1{,}835\,\text{kg}$, joten $G_\text{Mars} = 1{,}835\,\text{kg} \cdot 3{,}71\,\text{m/s}^2 = 6{,}807\,\text{N}$
 **Vastaus:** $6{,}8\,\text{N}$, kaksi merkitsevää numeroa kuten painossa $18\,\text{N}$.
@@ -103,7 +127,12 @@
 **Annettu:** $m_\text{Maa} = 22{,}0\,\text{kg}$; taulukosta $g_\text{Maa} = 9{,}81\,\text{m/s}^2$ ja $g_\text{Kuu} = 1{,}62\,\text{m/s}^2$
 **Kysytty:** nostettava massa Kuussa $m_\text{Kuu}$ kilogrammoina
 **Periaate:** Nostaja jaksaa tuottaa saman voiman $F$ molemmissa paikoissa, ja nostettavan massan painon on oltava enintään tämä voima. Kuussa $g$ on pienempi, joten sama voima riittää suuremmalle massalle.
-**Kaava:** $F = m_\text{Maa} g_\text{Maa}$ ja $F = m_\text{Kuu} g_\text{Kuu}$, joten $m_\text{Kuu} = \dfrac{m_\text{Maa} g_\text{Maa}}{g_\text{Kuu}}$
+**Kaava:** $$\begin{aligned} F &= m_\text{Maa} g_\text{Maa} \\
+F &= m_\text{Kuu} g_\text{Kuu} \\
+m_\text{Kuu} g_\text{Kuu} &= m_\text{Maa} g_\text{Maa} \\
+m_\text{Kuu} &= \dfrac{m_\text{Maa} g_\text{Maa}}{g_\text{Kuu}}
+\end{aligned}
+$$
 **Muunnokset:** Massa on kilogrammoina ja $g$-arvot yksikössä $\text{m/s}^2$, joten voima tulee newtoneina ja massa kilogrammoina ilman muunnoksia.
 **Sijoitus:** $m_\text{Kuu} = \dfrac{22{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{1{,}62\,\text{m/s}^2} = \dfrac{215{,}82\,\text{N}}{1{,}62\,\text{m/s}^2} = 133{,}2\,\text{kg}$
 **Vastaus:** $133\,\text{kg}$, kolme merkitsevää numeroa kuten massassa $22{,}0\,\text{kg}$.
@@ -113,7 +142,13 @@
 **Annettu:** mittarin lukema $L = 26\,\text{kg}$ Marsissa; taulukosta $g_\text{Mars} = 3{,}71\,\text{m/s}^2$; asteikko näyttää voiman jaettuna Maan arvolla $g_\text{Maa} = 9{,}81\,\text{m/s}^2$
 **Kysytty:** kappaleen todellinen massa $m$ kilogrammoina
 **Periaate:** Mittari mittaa voimaa, ei massaa: sen asteikko on tehty Maassa jakamalla voima luvulla $9{,}81\,\text{m/s}^2$. Marsissa lukemasta pitää siis ensin päätellä voima eli kappaleen paino, ja massa saadaan jakamalla se Marsin $g$:llä.
-**Kaava:** $L = \dfrac{G}{g_\text{Maa}}$, joten $G = L g_\text{Maa}$. Marsissa $G = m g_\text{Mars}$, joten $m = \dfrac{L g_\text{Maa}}{g_\text{Mars}}$
+**Kaava:** $$\begin{aligned} L &= \dfrac{G}{g_\text{Maa}} \\
+G &= L g_\text{Maa} \\
+G &= m g_\text{Mars} \\
+m &= \dfrac{G}{g_\text{Mars}} \\
+&= \dfrac{L g_\text{Maa}}{g_\text{Mars}}
+\end{aligned}
+$$
 **Muunnokset:** Lukema $26\,\text{kg}$ tulkitaan asteikon luvuksi: voima on $G = 26\,\text{kg} \cdot 9{,}81\,\text{m/s}^2$ newtoneina. Muita muunnoksia ei tarvita.
 **Sijoitus:** $m = \dfrac{26\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{3{,}71\,\text{m/s}^2} = \dfrac{255{,}06\,\text{N}}{3{,}71\,\text{m/s}^2} = 68{,}75\,\text{kg}$
 **Vastaus:** $69\,\text{kg}$, kaksi merkitsevää numeroa kuten lukemassa $26\,\text{kg}$.
@@ -144,7 +179,10 @@
 **Kysytty:** putoamiskiihtyvyys $g$ yksikössä $\text{m/s}^2$
 **Periaate:** Paino on suoraan verrannollinen massaan, $G = m g$, joten $(m, G)$-pisteet ovat origon kautta kulkevalla suoralla ja suoran kulmakerroin on $g$. Mittauspisteet eivät ole täsmälleen suoralla, joten suora sovitetaan pisteiden väliin, ja kulmakerroin luetaan kahdesta piirretyn suoran pisteestä.
 **Kuvaajan lukeminen:** Piirretty suora kulkee origon kautta niin, että mittauspisteitä jää suoran molemmin puolin. Suoralta luetaan kaksi kaukana toisistaan olevaa pistettä: origo $(0;\ 0)$ ja piste $(0{,}50\,\text{kg};\ 4{,}90\,\text{N})$. Niistä $\Delta G = 4{,}90\,\text{N} - 0\,\text{N} = 4{,}90\,\text{N}$ ja $\Delta m = 0{,}50\,\text{kg} - 0\,\text{kg} = 0{,}50\,\text{kg}$.
-**Kaava:** $G = m g$, joten kulmakerroin on $g = \dfrac{\Delta G}{\Delta m}$
+**Kaava:** $$\begin{aligned} G &= m g \\
+g &= \dfrac{\Delta G}{\Delta m}
+\end{aligned}
+$$
 **Muunnokset:** Muunnoksia ei tarvita: $1\,\text{N} = 1\,\text{kg} \cdot \text{m/s}^2$, joten $\dfrac{\text{N}}{\text{kg}}$ on $\text{m/s}^2$.
 **Sijoitus:** $g = \dfrac{4{,}90\,\text{N}}{0{,}50\,\text{kg}} = 9{,}8\,\dfrac{\text{N}}{\text{kg}} = 9{,}8\,\text{m/s}^2$
 **Vastaus:** $g = 9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten massoissa.
@@ -154,7 +192,11 @@
 **Annettu:** saman näytteen painot: $G_\text{Maa} = 7{,}4\,\text{N}$, $G_\text{Kuu} = 1{,}2\,\text{N}$, $G_\text{Mars} = 2{,}8\,\text{N}$; $g_\text{Maa} = 9{,}81\,\text{m/s}^2$
 **Kysytty:** Marsin putoamiskiihtyvyys $g_\text{Mars}$
 **Periaate:** Näytteen massa on sama kaikkialla, mutta sitä ei tunneta. Maassa paino kertoo massan, $m = G_\text{Maa}/g_\text{Maa}$, ja samaa massaa käytetään Marsissa: $g_\text{Mars} = G_\text{Mars}/m$. Taulukon Kuun painoa ei tarvita tähän kysymykseen.
-**Kaava:** $m = \dfrac{G_\text{Maa}}{g_\text{Maa}}$ ja $g_\text{Mars} = \dfrac{G_\text{Mars}}{m}$, joten $g_\text{Mars} = g_\text{Maa} \dfrac{G_\text{Mars}}{G_\text{Maa}}$
+**Kaava:** $$\begin{aligned} m &= \dfrac{G_\text{Maa}}{g_\text{Maa}} \\
+g_\text{Mars} &= \dfrac{G_\text{Mars}}{m} \\
+&= g_\text{Maa} \dfrac{G_\text{Mars}}{G_\text{Maa}}
+\end{aligned}
+$$
 **Muunnokset:** Muunnoksia ei tarvita: newtonit supistuvat suhteessa $\dfrac{G_\text{Mars}}{G_\text{Maa}}$, ja $g$ jää yksikköön $\text{m/s}^2$.
 **Sijoitus:** $m = \dfrac{7{,}4\,\text{N}}{9{,}81\,\text{m/s}^2} = 0{,}754\,\text{kg}$, joten $g_\text{Mars} = \dfrac{2{,}8\,\text{N}}{0{,}754\,\text{kg}} = 3{,}71\,\text{m/s}^2$
 **Vastaus:** $g_\text{Mars} = 3{,}7\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten painoissa.
@@ -165,7 +207,10 @@
 **Kysytty:** a) virhe oppilaan päättelyssä; b) kappaleen massa $m$ kilogrammoina
 **Periaate:** Voimamittari mittaa voimaa: jousen venymä kertoo, kuinka voimakas on Maan ja kappaleen välinen vuorovaikutus. Lukema newtoneina on siis paino $G$, ei massa. Massa saadaan painosta vasta, kun tunnetaan paikan $g$: $G = m g$.
 **Mallivastaus a):** Oppilas on sekoittanut painon ja massan. Lukema $4{,}9\,\text{N}$ on voima, ja sen yksikkö on newton, ei kilogramma. Massa ja paino eivät ole sama suure, koska paino riippuu $g$:stä ja massa ei. Massa saadaan jakamalla paino luvulla $9{,}81\,\text{m/s}^2$, joten se on noin kymmenesosa lukemasta $4{,}9$, eli paljon pienempi kuin $4{,}9\,\text{kg}$.
-**Kaava:** $G = m g$, joten $m = \dfrac{G}{g}$
+**Kaava:** $$\begin{aligned} G &= m g \\
+m &= \dfrac{G}{g}
+\end{aligned}
+$$
 **Muunnokset:** Muunnoksia ei tarvita: $1\,\text{N} = 1\,\text{kg} \cdot \text{m/s}^2$, joten $\dfrac{\text{N}}{\text{m/s}^2}$ on kilogramma.
 **Sijoitus:** $m = \dfrac{4{,}9\,\text{N}}{9{,}81\,\text{m/s}^2} = 0{,}4995\,\text{kg}$
 **Vastaus:** $0{,}50\,\text{kg}$, kaksi merkitsevää numeroa kuten painossa $4{,}9\,\text{N}$.
@@ -176,7 +221,11 @@
 **Kysytty:** a) taivaankappaleen $g_\text{X}$; b) mikä taivaankappale on kyseessä
 **Periaate:** Jousen venymä on suoraan verrannollinen voimaan ja paino $G = m g$ on voima, joten $x$ on suoraan verrannollinen tulolle $m g$. Saman jousen ja saman massan venymät suhtautuvat siis kuten $g$-arvot. Maan mittauksista saadaan jousen kalibrointi, ja sen avulla tuntemattoman paikan $g$.
 **Taulukon lukeminen:** Pisteet $(m, x)$ ovat origon kautta kulkevalla suoralla, joten suhde $x/m$ on kaikissa pisteissä lähes sama ($1{,}1/0{,}10 = 11$ ja $6{,}1/0{,}60 \approx 10{,}2\,\text{cm/kg}$). Jotta mittaushajonta tasoittuu, lasketaan suhde kaikista pisteistä: venymien summa on $$\begin{aligned} &1{,}1 + 2{,}1 + 3{,}2 + 4{,}1 + 5{,}2 + 6{,}1 \\ &= 21{,}8\,\text{cm} \end{aligned}$$ ja massojen summa $$\begin{aligned} &0{,}10 + 0{,}20 + 0{,}30 \\ &+ 0{,}40 + 0{,}50 + 0{,}60 \\ &= 2{,}10\,\text{kg} \end{aligned}$$.
-**Kaava:** Maassa $\dfrac{x}{m} = c\, g_\text{Maa}$ ja tuntemattomalla taivaankappaleella $\dfrac{x_\text{X}}{m_\text{X}} = c\, g_\text{X}$, missä $c$ on jousen vakio. Jakamalla saadaan $g_\text{X} = g_\text{Maa} \dfrac{x_\text{X}/m_\text{X}}{(x/m)_\text{Maa}}$
+**Kaava:** $$\begin{aligned} \dfrac{x}{m} &= c\, g_\text{Maa} \quad (c\text{: jousen vakio}) \\
+\dfrac{x_\text{X}}{m_\text{X}} &= c\, g_\text{X} \\
+g_\text{X} &= g_\text{Maa} \dfrac{x_\text{X}/m_\text{X}}{(x/m)_\text{Maa}}
+\end{aligned}
+$$
 **Muunnokset:** Muunnoksia ei tarvita: senttimetrit ja kilogramma pysyvät samoina molemmissa suhteissa ja supistuvat. Maan suhde on $\dfrac{21{,}8\,\text{cm}}{2{,}10\,\text{kg}} = 10{,}38\,\text{cm/kg}$ ja tuntemattoman paikan $\dfrac{1{,}9\,\text{cm}}{0{,}50\,\text{kg}} = 3{,}8\,\text{cm/kg}$.
 **Sijoitus:** $g_\text{X} = 9{,}81\,\text{m/s}^2 \cdot \dfrac{3{,}8\,\text{cm/kg}}{10{,}38\,\text{cm/kg}} = 9{,}81\,\text{m/s}^2 \cdot 0{,}366 = 3{,}59\,\text{m/s}^2$
 **Vastaus:** a) $g_\text{X} = 3{,}6\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten venymässä $1{,}9\,\text{cm}$. b) Taivaankappale on Mars. Kuun arvo $1{,}62\,\text{m/s}^2$ on alle puolet saadusta, ja Maan $9{,}81\,\text{m/s}^2$ ja Jupiterin $24{,}8\,\text{m/s}^2$ ovat moninkertaisia. Marsin $3{,}71\,\text{m/s}^2$ poikkeaa tuloksesta vain noin $3\,\%$, mikä on mittaushajonnan suuruusluokkaa.
@@ -186,7 +235,14 @@
 **Annettu:** osien massat $520\,\text{kg}$, $180\,\text{kg}$, $95\,\text{kg}$ ja $140\,\text{kg}$; jalkojen kestämä voima $F_\text{max} = 6{,}00\,\text{kN}$; $g_\text{Maa} = 9{,}81\,\text{m/s}^2$, $g_\text{Mars} = 3{,}71\,\text{m/s}^2$
 **Kysytty:** a) yhteismassa ja paino Maassa ja Marsissa; b) suurin lisäkuorma $m_\text{lisä}$ Marsissa kilogrammoina
 **Periaate:** Jalkojen rajana on voima, ei massa. Yksikön paino $G = m g$ on voima, jonka jalat kantavat, ja se saa olla enintään $F_\text{max}$. Samalla voimalla Marsin pienempi $g$ sallii suuremman massan. Lisäkuorman suurin massa on suurimman sallitun kokonaismassan ja nykyisen yhteismassan erotus.
-**Kaava:** $m_\text{yht} = m_1 + m_2 + m_3 + m_4$, $G = m g$ ja $m_\text{max} = \dfrac{F_\text{max}}{g_\text{Mars}}$, joten $m_\text{lisä} = \dfrac{F_\text{max}}{g_\text{Mars}} - m_\text{yht}$
+**Kaava:** $$\begin{aligned} m_\text{yht} &= m_1 + m_2 + m_3 + m_4 \\
+G &= m g \\
+F_\text{max} &= m_\text{max} g_\text{Mars} \\
+m_\text{max} &= \dfrac{F_\text{max}}{g_\text{Mars}} \\
+m_\text{lisä} &= m_\text{max} - m_\text{yht} \\
+&= \dfrac{F_\text{max}}{g_\text{Mars}} - m_\text{yht}
+\end{aligned}
+$$
 **Muunnokset:** $6{,}00\,\text{kN} = 6000\,\text{N}$, jotta voima on newtoneina ja massa tulee kilogrammoina.
 **Sijoitus:** a) ja b)
 
@@ -224,7 +280,11 @@ Kuviosta A puuttuu mittarin voima $F$, vaikka mittari vetää kappaletta. Kuvios
 **Kysytty:** kappaleen paino $G$ newtoneina samalla taivaankappaleella
 **Periaate:** Paino on suoraan verrannollinen massaan, $G = m g$, ja kerroin $g$ on saman taivaankappaleen pinnalla kaikille kappaleille sama. Kun $g$ määritetään kuvaajasta, sillä voi laskea myös massan $12\,\text{kg}$, joka on kuvaajan ulkopuolella.
 **Kuvaajan lukeminen:** Luetaan pisteet ruudukon risteyksistä: $(4\,\text{kg};\ 20\,\text{N})$ ja $(10\,\text{kg};\ 50\,\text{N})$. Molemmissa $g = G/m = 5{,}0\,\text{m/s}^2$, joten pisteet ovat samalla origon kautta kulkevalla suoralla. Massa $12\,\text{kg}$ on viimeisen pisteen $(10\,\text{kg};\ 50\,\text{N})$ oikealla puolella, joten paino on yli $50\,\text{N}$. Suoraa voi jatkaa silmällä, ja vastaus $58{,}2$–$61{,}8\,\text{N}$ ($60\,\text{N} \pm 3\,\%$) hyväksytään.
-**Kaava:** $g = \dfrac{G_1}{m_1}$, joten $G = m g$
+**Kaava:** $$\begin{aligned} G_1 &= g\, m_1 \\
+g &= \dfrac{G_1}{m_1} \\
+G &= m g
+\end{aligned}
+$$
 **Muunnokset:** Muunnoksia ei tarvita: massa on kilogrammoina ja voima newtoneina, joten $g$ tulee suoraan yksikössä $\text{m/s}^2$.
 **Sijoitus:** $g = \dfrac{50\,\text{N}}{10\,\text{kg}} = 5{,}0\,\text{m/s}^2$ ja $G = 12\,\text{kg} \cdot 5{,}0\,\text{m/s}^2 = 60\,\text{N}$
 **Vastaus:** $G = 60\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $12\,\text{kg}$.
