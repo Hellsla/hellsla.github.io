@@ -310,8 +310,7 @@ In option B the plant is sized according to the electricity need, and the distri
 P_{\text{o},\text{A}} &= \dfrac{P_\text{s}}{\eta_\text{s,A}} + \dfrac{P_\text{k}}{\eta_\text{boiler}} \\
 P_{\text{o},\text{CHP}} &= \dfrac{P_\text{s}}{\eta_\text{s,B}} \\
 P_\text{k,CHP} &= 0.560\,P_{\text{o},\text{CHP}} \\
-P_{\text{o},\text{B}} &= P_{\text{o},\text{CHP}} + \dfrac{P_\text{k} - P_\text{k,CHP}}{\eta_\text{boiler}} \\
-P_{\text{o},\text{A}} - P_{\text{o},\text{B}} &= \dfrac{P_\text{s}}{\eta_\text{s,A}} + \dfrac{P_\text{k}}{\eta_\text{boiler}} - P_{\text{o},\text{B}}
+P_{\text{o},\text{B}} &= P_{\text{o},\text{CHP}} + \dfrac{P_\text{k} - P_\text{k,CHP}}{\eta_\text{boiler}}
 \end{aligned}
 $$
 **Conversions:** All powers are in megawatts and the efficiencies are dimensionless numbers, so no conversions are needed.

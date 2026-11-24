@@ -272,8 +272,7 @@ $$ Lämpöpumpussa $Q_1$ on sisälle luovutettu lämpö ja $W$ pumpun käyttäm�
 P_{\text{o},\text{A}} &= \dfrac{P_\text{s}}{\eta_\text{s,A}} + \dfrac{P_\text{k}}{\eta_\text{kat}} \\
 P_{\text{o},\text{CHP}} &= \dfrac{P_\text{s}}{\eta_\text{s,B}} \\
 P_\text{k,CHP} &= 0{,}560\,P_{\text{o},\text{CHP}} \\
-P_{\text{o},\text{B}} &= P_{\text{o},\text{CHP}} + \dfrac{P_\text{k} - P_\text{k,CHP}}{\eta_\text{kat}} \\
-P_{\text{o},\text{A}} - P_{\text{o},\text{B}} &= \dfrac{P_\text{s}}{\eta_\text{s,A}} + \dfrac{P_\text{k}}{\eta_\text{kat}} - P_{\text{o},\text{B}}
+P_{\text{o},\text{B}} &= P_{\text{o},\text{CHP}} + \dfrac{P_\text{k} - P_\text{k,CHP}}{\eta_\text{kat}}
 \end{aligned}
 $$
 **Muunnokset:** Kaikki tehot ovat megawatteina ja hyötysuhteet dimensiottomia lukuja, joten muunnoksia ei tarvita.

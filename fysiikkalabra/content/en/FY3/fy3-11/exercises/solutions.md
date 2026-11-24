@@ -207,9 +207,9 @@ Electricity and heat are both energy, so they can be compared with each other.
 **Find:** the coefficient of performance $\varepsilon$
 **Principle:** The coefficient of performance tells how many times as much heat the pump gives out indoors as the electrical energy it uses. It can also be calculated from the powers, because both powers are energy in the same time.
 **Formula:** $$\begin{aligned} \varepsilon &= \dfrac{Q_1}{W} \\
-Q_1 &= P_1 t \\
-W &= P_\text{el} t \\
-\varepsilon &= \dfrac{P_1 t}{P_\text{el} t} = \dfrac{P_1}{P_\text{el}}
+Q_1 &= P_1 \,t \\
+W &= P_\text{el}\,t \\
+\varepsilon &= \dfrac{P_1\,t}{P_\text{el}\,t} = \dfrac{P_1}{P_\text{el}}
 \end{aligned}
 $$
 **Conversions:** Both powers are in kilowatts, so the unit cancels and no conversion is needed. The coefficient of performance has no unit.

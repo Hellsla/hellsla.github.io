@@ -179,9 +179,9 @@ $$\begin{aligned} P &= \dfrac{5{,}418 \cdot 10^7\,\text{J}}{4500\,\text{s}} \\ &
 **Kysytty:** lämpökerroin $\varepsilon$
 **Periaate:** Lämpökerroin kertoo, kuinka moninkertaisen lämmön pumppu luovuttaa sisälle käyttämäänsä sähköenergiaan verrattuna. Se voidaan laskea myös tehoista, koska molemmat tehot ovat energiaa samassa ajassa.
 **Kaava:** $$\begin{aligned} \varepsilon &= \dfrac{Q_1}{W} \\
-Q_1 &= P_1 t \\
-W &= P_\text{s} t \\
-\varepsilon &= \dfrac{P_1 t}{P_\text{s} t} = \dfrac{P_1}{P_\text{s}}
+Q_1 &= P_1 \,t \\
+W &= P_\text{s}\,t \\
+\varepsilon &= \dfrac{P_1\,t}{P_\text{s}\,t} = \dfrac{P_1}{P_\text{s}}
 \end{aligned}
 $$
 **Muunnokset:** Molemmat tehot ovat kilowatteina, joten yksikkö supistuu eikä muunnosta tarvita. Lämpökertoimella ei ole yksikköä.

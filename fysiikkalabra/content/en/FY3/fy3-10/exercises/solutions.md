@@ -131,7 +131,7 @@ $$N = \dfrac{3.345 \cdot 10^{25}\,\tfrac{\text{J}}{\text{mol}}}{2577\,\tfrac{\te
 **Principle:** The gap is filled at the same pressure and temperature, so the volume is the same and there is the same number of moles of gas with either filling.
 
 The difference in mass is due only to the greater molar mass of argon, so you can get the amount of substance from the difference in mass and the difference in molar masses.
-**Formula:** $$\begin{aligned} \Delta m &= n (M_\text{Ar} - M_\text{ilma}) \\ n &= \dfrac{\Delta m}{M_\text{Ar} - M_\text{ilma}} \\ pV &= nRT \\ V &= Ad \\ pAd &= nRT \\ d &= \dfrac{nRT}{pA} \\ &= \dfrac{\Delta m\,RT}{pA(M_\text{Ar} - M_\text{ilma})} \end{aligned}$$
+**Formula:** $$\begin{aligned} \Delta m &= n (M_\text{Ar} - M_\text{air}) \\ n &= \dfrac{\Delta m}{M_\text{Ar} - M_\text{air}} \\ pV &= nRT \\ V &= Ad \\ pAd &= nRT \\ d &= \dfrac{nRT}{pA} \\ &= \dfrac{\Delta m\,RT}{pA(M_\text{Ar} - M_\text{air})} \end{aligned}$$
 **Conversions:** $T = (20 + 273.15)\,\text{K} = 293.15\,\text{K}$ and $p = 101\,\text{kPa} = 101\,000\,\text{Pa}$. The mass and the molar masses are in grams, so $n$ comes out directly in moles. Finally $1\,\text{m} = 1000\,\text{mm}$.
 **Substitution:** $n = \dfrac{6.0\,\text{g}}{40\,\text{g/mol} - 29\,\text{g/mol}} = 0.5455\,\text{mol}$.
 
