@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 57544ac197c30d1e
-SCOPE: delta wording
 
 ## Blocking
 (none)
