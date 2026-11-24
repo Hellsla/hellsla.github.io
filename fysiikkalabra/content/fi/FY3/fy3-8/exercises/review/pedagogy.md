@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 1acfcf757217e158
+CONTENT-HASH: 2668999cc1d29224
 ## Blocking
 (none)
 ## Polish
-- solutions.md:277 (L3 kiskojen rako, Vastaus a) — "käytännössä vähintään 14 mm" is not explained, and the next sentence says the results are good to two figures (13 mm), which seems to contradict it — add "pyöristetään ylöspäin, koska raon on oltava vähintään tämä" (the safe-side rule) and say the 13,2 mm is rounded up to 14 mm.
+- solutions.md:277 (L3 kiskojen rako, Vastaus a) — the answer is 13,2 mm and the next sentence says the results are good to two figures; two figures would be 13 mm, which is below the minimum (an "at least" value rounds up: 14 mm). Say "pyöristettynä turvalliselle puolelle $14\,\text{mm}$" or drop the two-figure sentence for a).
 ## Checked
-- Delta: only Vastaus a) changed; 13,2 mm rounded up to 14 mm follows the house rule (an "at least" value rounds up).
-- Mallivastaus c) still uses 13,2 mm and 15 mm is inside the range, so the conclusion holds.
-- Kaava, Sijoitus and b) (18 mm) unchanged.
+- Delta: the "käytännössä 14 mm" clause is gone, so the unexplained 14 mm of my earlier polish no longer confuses; the answer is consistent with the Sijoitus (13,2 mm).
+- Mallivastaus c) uses 13,2 mm and 18 mm; 15 mm lies inside the range, so the conclusion holds.
+- Kaava, Taulukon lukeminen and b) (18 mm) unchanged.
 - Judged from the solutions text; captures not opened.
