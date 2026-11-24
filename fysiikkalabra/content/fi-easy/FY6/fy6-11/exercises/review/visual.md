@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 143de208888628e3
-SCOPE: delta numbers,reflow,teacher-figure from a555d02f7a803565 base 9102119
+CONTENT-HASH: 5f16bb3fb21eb793
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+[Minor] solutions.md Annettu line of the Millikan task still begins "esimerkkiaineisto: levyjen etäisyys …" (lower-case, in the open solution): remove the prefix there too for consistency.
 
 ## Checked
-- Diff read in full: Kaava steps start from basic equations as `aligned` blocks; the four pick-* force-diagram pictures of L2-08 are teacher-approved drawings.
-- Opened at 1280 px: open-exercises-L2-1280-8. Diagrams A to D legible, labels in LaTeX, force red and velocity blue, feedback inside the card, layout intact.
-- Layout checks at 360-1280 px are green in the packet.
+- Delta round 1: the diff only removes the prefix "Esimerkkiaineisto: " and capitalises the next word; no numbers, symbols, formulas or figures changed.
+- Opened (content/fi-easy/FY6/fy6-11/review/shots/): fy6-11-open-exercises-L3-1280-5 (the Millikan task, now "Millikanin kokeen kaltaisessa …"), -7 (the neighbouring task).
+- The text reads naturally and the table and answer row are intact.
+- Hash re-run at the end: unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
