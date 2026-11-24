@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 043d91dec723e1fb
+CONTENT-HASH: 50ebf006bdcb9f9e
+SCOPE: delta (investigation.md line 42 only)
 
 ## Blocking
 
@@ -42,3 +43,8 @@ None.
 
 ## Checked (gate 2026-11-23)
 Only change: `\ ` to `\,` before K in the kelvin conversion (investigation.md). Presentation only; activities, prediction, data, analysis, Finnish and phone/laptop use unchanged. Earlier PASS stands.
+
+
+## Checked (delta 2026-11-24)
+
+Only change: "harvennusten" -> "harventumien" (teacher terminology decision 2026-11-19). The pair "tihentymien ja harventumien" is now symmetric and reads clearly for a 16-19-year-old; the sentence still explains the term through the pressure variation. No other occurrence of the old term in the text, so it is consistent. Activities, prediction, data and analysis unchanged. Earlier PASS stands. No blocking finding.
