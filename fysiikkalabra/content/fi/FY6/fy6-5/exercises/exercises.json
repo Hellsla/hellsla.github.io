@@ -150,7 +150,7 @@
     {
       "id": "fy6-5-L2-05",
       "level": 2,
-      "text": "Esimerkkiaineisto: kolme vastusta, $R_1 = 60\\,\\Omega$, $R_2 = 80\\,\\Omega$ ja $R_3 = 50\\,\\Omega$, on kytketty rinnan jännitelähteeseen, jonka jännite on $12\\,\\text{V}$. Jokaisen vastuksen kanssa sarjassa on virtamittari, ja pääjohtimessa on virtamittari $\\text{A}_0$. Lähde, johtimet ja virtamittarit oletetaan ideaalisiksi.\n\nTaulukossa ovat mittarien lukemat. Yksi lukemista on virheellinen, koska Kirchhoffin virtalaki ei toteudu.\n\na) Tarkista haaramittarien lukemat Ohmin lailla.\n\nb) Päättele, mikä lukema on virheellinen, ja laske, mitä sen mittarin pitäisi näyttää.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "text": "Kolme vastusta, $R_1 = 60\\,\\Omega$, $R_2 = 80\\,\\Omega$ ja $R_3 = 50\\,\\Omega$, on kytketty rinnan jännitelähteeseen, jonka jännite on $12\\,\\text{V}$. Jokaisen vastuksen kanssa sarjassa on virtamittari, ja pääjohtimessa on virtamittari $\\text{A}_0$. Lähde, johtimet ja virtamittarit oletetaan ideaalisiksi.\n\nTaulukossa ovat mittarien lukemat. Yksi lukemista on virheellinen, koska Kirchhoffin virtalaki ei toteudu.\n\na) Tarkista haaramittarien lukemat Ohmin lailla.\n\nb) Päättele, mikä lukema on virheellinen, ja laske, mitä sen mittarin pitäisi näyttää.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
       "kind": [
         "data",
         "error"
@@ -188,7 +188,7 @@
       "id": "fy6-5-L2-06",
       "level": 2,
       "core": true,
-      "text": "Esimerkkiaineisto: sarjapiirissä on jännitelähde ja kolme vastusta. Kohta $A$ on lähteen plusnapa, ja virta kulkee sieltä vastuksen $R_1$ kautta kohtaan $B$, johtimen kautta kohtaan $C$, vastuksen $R_2$ kautta kohtaan $D$ ja vastuksen $R_3$ kautta lähteen miinusnapaan $E$.\n\nMiinusnapa on nollakohta. Jännitemittarilla mitatut potentiaalit ovat taulukossa, ja virtamittari näyttää $0{,}12\\,\\text{A}$.\n\na) Selitä, miksi kohdilla $B$ ja $C$ on sama potentiaali.\n\nb) Laske vastuksen $R_2$ resistanssi.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "text": "Sarjapiirissä on jännitelähde ja kolme vastusta. Kohta $A$ on lähteen plusnapa, ja virta kulkee sieltä vastuksen $R_1$ kautta kohtaan $B$, johtimen kautta kohtaan $C$, vastuksen $R_2$ kautta kohtaan $D$ ja vastuksen $R_3$ kautta lähteen miinusnapaan $E$.\n\nMiinusnapa on nollakohta. Jännitemittarilla mitatut potentiaalit ovat taulukossa, ja virtamittari näyttää $0{,}12\\,\\text{A}$.\n\na) Selitä, miksi kohdilla $B$ ja $C$ on sama potentiaali.\n\nb) Laske vastuksen $R_2$ resistanssi.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
       "kind": [
         "data"
       ],

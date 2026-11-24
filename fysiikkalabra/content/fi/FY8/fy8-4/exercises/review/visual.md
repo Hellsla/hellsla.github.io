@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a55f5a63698fbd03
-SCOPE: delta numbers,reflow from ee8323182bafbce6 base 4b05399
+CONTENT-HASH: 196d7db3114314b7
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] fy8-4 solutions.md, Kaava with `p' = h/\lambda'` and `p_e = \sqrt{...}` — at 390 px the denominator `\lambda'` touches the root bar of the wrapped next line — put `p_e` on its own aligned row.
+(none)
 
 ## Checked
-- Delta (8g, Kaava step of solutions.md only). Rendered every Kaava block of the exercise solutions at 390 px (own Playwright capture, `?ratkaisut=1`, all boxes open; the packet's shots are 1280 px only): no clipping, scrollWidth 390, equals signs aligned in one column, one equation per row, symbols and units unchanged. Also contact captures of the 1280 px open-exercises set from screenshot.py.
+- Delta only: prefix "Esimerkkiaineisto: " removed, first letter capitalised. Opened fy8-4-open-exercises-L2-1280-5 (L2-05 double slit); text reads naturally, layout (cards, tables, formulas, answer fields) intact, no clipping or overflow.
+- Source diff read for the changed tasks; no numbers, units or formulas changed.
 
 ## Scores
-illustrations 5 · typography  · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

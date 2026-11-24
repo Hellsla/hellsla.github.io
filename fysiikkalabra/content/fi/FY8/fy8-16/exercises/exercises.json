@@ -153,7 +153,7 @@
       "id": "fy8-16-L2-05",
       "level": 2,
       "core": true,
-      "text": "Esimerkkiaineisto: tähtitieteilijä on mitannut yhdeksän galaksin etäisyyden $d$ ja etääntymisnopeuden $v$. Tulokset ovat taulukossa.\n\na) Piirrä $(d, v)$-kuvaaja ja sovita pisteisiin origon kautta kulkeva suora. Lue Hubblen vakio $H_0$ suoran kulmakertoimesta. Anna vastaus yksikössä $\\tfrac{\\text{km/s}}{\\text{Mpc}}$.\n\nb) Pisteet eivät ole täsmälleen suoralla. Mikä piste poikkeaa suorasta suhteellisesti eniten, ja mistä poikkeama voi johtua?\n\nAnna a)-kohdan tulos vastauskenttään.",
+      "text": "Tähtitieteilijä on mitannut yhdeksän galaksin etäisyyden $d$ ja etääntymisnopeuden $v$. Tulokset ovat taulukossa.\n\na) Piirrä $(d, v)$-kuvaaja ja sovita pisteisiin origon kautta kulkeva suora. Lue Hubblen vakio $H_0$ suoran kulmakertoimesta. Anna vastaus yksikössä $\\tfrac{\\text{km/s}}{\\text{Mpc}}$.\n\nb) Pisteet eivät ole täsmälleen suoralla. Mikä piste poikkeaa suorasta suhteellisesti eniten, ja mistä poikkeama voi johtua?\n\nAnna a)-kohdan tulos vastauskenttään.",
       "kind": [
         "data",
         "graph"
@@ -322,7 +322,7 @@
     {
       "id": "fy8-16-L3-04",
       "level": 3,
-      "text": "Esimerkkiaineisto: spiraaligalaksin tähtien ja kaasun ratanopeus $v_{\\text{hav}}$ on mitattu eri etäisyyksillä $r$ galaksin keskustasta. Taulukon kolmannessa sarakkeessa on nopeus $v_{\\text{näk}}$, jonka näkyvä aine eli tähdet, kaasu ja pöly yksin mallin mukaan aiheuttaisivat.\n\na) Kuinka monta prosenttia havaittu nopeus muuttuu etäisyyksien $10\\,\\text{kpc}$ ja $30\\,\\text{kpc}$ välillä? Entä mallin nopeus?\n\nb) Laske havaitun ja mallin nopeuden suhde $\\dfrac{v_{\\text{hav}}}{v_{\\text{näk}}}$ etäisyydellä $30\\,\\text{kpc}$.\n\nc) Mitä aineisto kertoo galaksin massasta? Perustele, miksi ero ei selity mittausvirheillä, ja päättele, mitä pimeä aine on tässä tulkinnassa.\n\nAnna b)-kohdan tulos vastauskenttään.",
+      "text": "Spiraaligalaksin tähtien ja kaasun ratanopeus $v_{\\text{hav}}$ on mitattu eri etäisyyksillä $r$ galaksin keskustasta. Taulukon kolmannessa sarakkeessa on nopeus $v_{\\text{näk}}$, jonka näkyvä aine eli tähdet, kaasu ja pöly yksin mallin mukaan aiheuttaisivat.\n\na) Kuinka monta prosenttia havaittu nopeus muuttuu etäisyyksien $10\\,\\text{kpc}$ ja $30\\,\\text{kpc}$ välillä? Entä mallin nopeus?\n\nb) Laske havaitun ja mallin nopeuden suhde $\\dfrac{v_{\\text{hav}}}{v_{\\text{näk}}}$ etäisyydellä $30\\,\\text{kpc}$.\n\nc) Mitä aineisto kertoo galaksin massasta? Perustele, miksi ero ei selity mittausvirheillä, ja päättele, mitä pimeä aine on tässä tulkinnassa.\n\nAnna b)-kohdan tulos vastauskenttään.",
       "kind": [
         "data",
         "model",

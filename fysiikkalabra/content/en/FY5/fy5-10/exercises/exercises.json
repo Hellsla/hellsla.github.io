@@ -335,7 +335,7 @@
     {
       "id": "fy5-10-L3-04",
       "level": 3,
-      "text": "Example data: a $12.0\\,\\text{m}$ long rope is tightened with different forces $F$, and a pulse made at the end of the rope travels the whole length of the rope in time $t$. The measurement results are in the table.\n\nCalculate the speed of the pulse for each tension. Investigate whether the speed depends on the tension directly proportionally or in some other way.\n\nThe rope is shaken at a frequency of $5.0\\,\\text{Hz}$ when the tension is $30\\,\\text{N}$. What is the wavelength of the wave that forms? Justify why the wavelength would change if the rope were replaced with a thicker one but the frequency were kept the same.\n\nGive the answer as the wavelength.",
+      "text": "A $12.0\\,\\text{m}$ long rope is tightened with different forces $F$, and a pulse made at the end of the rope travels the whole length of the rope in time $t$. The measurement results are in the table.\n\nCalculate the speed of the pulse for each tension. Investigate whether the speed depends on the tension directly proportionally or in some other way.\n\nThe rope is shaken at a frequency of $5.0\\,\\text{Hz}$ when the tension is $30\\,\\text{N}$. What is the wavelength of the wave that forms? Justify why the wavelength would change if the rope were replaced with a thicker one but the frequency were kept the same.\n\nGive the answer as the wavelength.",
       "kind": [
         "data",
         "model"
@@ -372,7 +372,7 @@
     {
       "id": "fy5-10-L3-05",
       "level": 3,
-      "text": "Example data: a long rope consists of two parts of different thickness joined together. The end of the rope is shaken steadily at a frequency of $5.0\\,\\text{Hz}$, and the wavelength is measured in both parts. The results are in the table.\n\nAt the start of the shaking, a single pulse is made in the rope, and it travels first through the thin part and then through the thick part. The reflection of the pulse at the joint is ignored, and the pulse travels at a steady speed in both parts.\n\nHow long does the pulse take to travel the whole length of the rope? Justify why the frequency is the same in both parts but the wavelength is not.",
+      "text": "A long rope consists of two parts of different thickness joined together. The end of the rope is shaken steadily at a frequency of $5.0\\,\\text{Hz}$, and the wavelength is measured in both parts. The results are in the table.\n\nAt the start of the shaking, a single pulse is made in the rope, and it travels first through the thin part and then through the thick part. The reflection of the pulse at the joint is ignored, and the pulse travels at a steady speed in both parts.\n\nHow long does the pulse take to travel the whole length of the rope? Justify why the frequency is the same in both parts but the wavelength is not.",
       "kind": [
         "data",
         "model"

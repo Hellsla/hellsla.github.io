@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7ce144fd54e2f55c
-
-Delta review, language: fi-easy. Exercise answer option, feedback and solution (selkeä suomi). Change: "harvennus" to "harventuma" (plural "harventumia"), wording only.
+CONTENT-HASH: bb45c42f25faf991
 
 ## Blocking
-None.
 
 ## Polish
-None (the figure label "harvennus" in the lesson's types figure is noted in the lesson reports).
 
 ## Checked
-- Each changed sentence reads correctly: "harventumia", "harventumat", "harventumassa" (fi-easy) are the right case forms and match the glossary (pitkittäinen aalto: tihentymiä ja harventumia).
-- Nothing else in the diff (figure and picture lines are approval notes only); no number, symbol or answer changed.
-- Correct options and feedback are still consistent: the correct answer text matches the option text in exercises.json and solutions.md.
-- Hash at start and end equal.
+- Capitalisation and sentence grammar after the change are correct in every edited task (e.g. fy8-5 mid-text removal reads "Kielen pituus on ...").
+- Diff only removes the prefix "Esimerkkiaineisto: " and capitalises the next word; no numbers, data, criteria or answers changed.
+- The tasks still open with the situation and end with the question; the data is plainly given, so the prefix label was redundant.

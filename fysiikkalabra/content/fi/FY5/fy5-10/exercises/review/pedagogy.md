@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a33f09c0181e8d79
-
-Delta review, language: fi. Exercise answer option, feedback and solution. Change: "harvennus" to "harventuma" (plural "harventumia"), wording only.
+CONTENT-HASH: e2c8ce659288c7b2
 
 ## Blocking
 None.
 
 ## Polish
-None (the figure label "harvennus" in the lesson's types figure is noted in the lesson reports).
+None.
 
 ## Checked
-- Each changed sentence reads correctly: "harventumia", "harventumat", "harventumassa" (fi-easy) are the right case forms and match the glossary (pitkittäinen aalto: tihentymiä ja harventumia).
-- Nothing else in the diff (figure and picture lines are approval notes only); no number, symbol or answer changed.
-- Correct options and feedback are still consistent: the correct answer text matches the option text in exercises.json and solutions.md.
-- Hash at start and end equal.
+- Task texts begin naturally without the prefix (capital letter correct, sentence grammatical); the task still states what the table or data is and no task now names its method; levels and answers unchanged.
+- Delta limited to removing the prefix "Esimerkkiaineisto: "; no number, symbol, data or question changed.

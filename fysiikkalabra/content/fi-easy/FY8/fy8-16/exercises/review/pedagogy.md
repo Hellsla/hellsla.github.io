@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b4a317e3e12c35cd
-SCOPE: delta md-paragraphs,numbers,reflow,typography from 2314041f626411b2 base 64d4935
+CONTENT-HASH: 37dcf7ee1f87c205
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Delta is only `\frac` to `\dfrac` in the Kaava blocks of solutions.md; no number, symbol, unit, answer or wording changed.
-- Context read in the diff: each chain still goes from the basic law to the derived formula, one equation per row, symbolic before Sijoitus; the students' reading is unchanged (larger fractions are, if anything, more legible).
-- Levels, tasks, figure and tolerances untouched; earlier pass stands.
-- Hash matches the packet at start (b4a317e3e12c35cd).
+- Capitalisation and sentence grammar after the change are correct in every edited task (e.g. fy8-5 mid-text removal reads "Kielen pituus on ...").
+- Diff only removes the prefix "Esimerkkiaineisto: " and capitalises the next word; no numbers, data, criteria or answers changed.
+- The tasks still open with the situation and end with the question; the data is plainly given, so the prefix label was redundant.

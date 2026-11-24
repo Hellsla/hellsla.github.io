@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 143de208888628e3
-SCOPE: delta caption-label,md-paragraphs,numbers,paragraphs,reflow,teacher-figure,typography from 52fabbb87f61e010 base 98218de
+CONTENT-HASH: 5f16bb3fb21eb793
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- The Kaava/Formula step of the model solutions now starts from the basic principle equation (F = qE, W = qU, energy conservation, Newton's laws, Coulomb) and derives the result row by row; each row follows from the previous one.
-- The derivations match the Principle step above them; no step is skipped and no new symbol appears without explanation.
-- Re-broken aligned rows keep numbers, signs and units unchanged; no task, data, level or answer changed.
-- Split solution and model-answer paragraphs read more easily, text unchanged in substance.
-- Rows are short, so they stay readable at 360 px.
+- Capitalisation and sentence grammar after the change are correct in every edited task (e.g. fy8-5 mid-text removal reads "Kielen pituus on ...").
+- Diff only removes the prefix "Esimerkkiaineisto: " and capitalises the next word; no numbers, data, criteria or answers changed.
+- The tasks still open with the situation and end with the question; the data is plainly given, so the prefix label was redundant.

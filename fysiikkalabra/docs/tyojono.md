@@ -95,6 +95,8 @@ Pohdinnan järjestys ilmiö → kertaustehtävä → pohdintakysymys (`inquiry.p
 ## 8l-b. "Esimerkkiaineisto" pois otsikoista (opettaja 2026-11-16)
 `caption-label` tunnistaa kaikki muodot (#658); poistettu FY1, FY2, FY4, FY6, FY7, FY8 (fy8-2, fi, fi-easy, en; 0f-PR claude/fy8-0f). FY5 tehty (0f-PR #671). FY3: tehtävien text-kentät tehty (PR #742). Jäljellä muut kurssit:
 otsikot `reviews.caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]`; tehdään kurssin muiden töiden mukana (0f).
+Tehty (PR #852, 2026-11-24): tehtävätekstien ja tutkimusvaiheen alkuetuliite "Esimerkkiaineisto:" / "Example data:" pois fi, fi-easy ja en: fy1-6 (tutkimusvaihe), fy4-16, fy5-10, fy6-1, fy6-5, fy6-11, fy8-4, fy8-5, fy8-7, fy8-16 (tehtävät); delta-katselmoinnit PASS. Ei carry-reittiä: jäljellä ei ollut `caption`-kenttiä.
+Jäljellä: FY3 (#849:n yhteydessä); fy2-1:n tutkimusvaiheen otsikko "Esimerkkiaineisto: pomppiva pallo" (kaikissa kielissä; täysi katselmointi, joten tehdään fy2-1:n seuraavan sisältömuutoksen mukana); en-yksikön `units/fy14-fotoni/inquiry.json` kehote "Example data: …" (yksikön katselmointi); fy6-11:n `solutions.md`:n Annettu-rivin pieni alkukirjain "esimerkkiaineisto: levyjen etäisyys …" (visual Polish, ei uutta kierrosta). Leipätekstin "esimerkkiaineistossa" ja palautteiden "Esimerkkiaineisto kumoaa/tukee tätä" jäävät tarkoituksella.
 
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 Mittaus ja päätökset `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. PR 1–4b tehty (#563, #588, #591, #648, #652), PR 5 tehty (#711: canvasin nimi ja kuvaus, 40 px:n valintaruudut, näkyvä kohdistus). Myöhemmin kurssi kerrallaan luvun seuraavan

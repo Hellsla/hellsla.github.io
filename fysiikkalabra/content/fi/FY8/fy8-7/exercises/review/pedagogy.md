@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 67ed4e67f89dc96b
-SCOPE: delta md-paragraphs,numbers,reflow,typography from bb52b416609e298b base 64d4935
+CONTENT-HASH: 173a60e96e09d058
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+None.
 
 ## Checked
-- Read every Kaava step of the set from solutions.md: basic law first, derived formula after, symbolic simplification to the end; the Sijoitus rows use the last symbolic form.
-- Every Kaava now shows E = hf, f = c/λ, then the combined form (e.g. L1-02, L2-01, L3-02); the stimuloitu emissio / populaatioinversio model answers are split into shorter paragraphs, which reads better.
-- L1-01 and L1-05 stay one-line (E = hf with f = c/λ; P = N/t·hf): acceptable.
-- Numbers, answers and tolerances unchanged; the rows are short aligned chains, fine on a phone.
-- Principle explained before the formula; the diagram order and levels (1, 2, 3) are as passed earlier.
+- Task texts begin naturally without the prefix (capital letter correct, sentence grammatical); the task still states what the table or data is and no task now names its method; levels and answers unchanged.
+- Delta limited to removing the prefix "Esimerkkiaineisto: "; no number, symbol, data or question changed.

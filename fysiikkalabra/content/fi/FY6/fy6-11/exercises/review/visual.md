@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f8a8e923c8dbc625
-SCOPE: delta numbers,reflow,teacher-figure from bb084e9586f15f33 base 9102119
+CONTENT-HASH: 70942c7b519edcb2
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] solutions of this set still contain the old wording (e.g. a lowercase "esimerkkiaineisto" in ANNETTU) — align with the task text when next edited.
 
 ## Checked
-- Diff read in full: Kaava steps start from basic equations (W = qEd, F = G, ΣF = ma, ΣF-vector = 0 and so on) as `aligned` blocks; the four pick-* force-diagram pictures of L2-08 are teacher-approved drawings.
-- Opened at 1280 px: open-exercises-L2-1280-5, -6, -8 and L3-1280-3. L2-08 shows diagrams A to D side by side, labels `\overline{G}`, `\overline{F}_\text{s}`, `\overline{v}` legible, force red and velocity blue, feedback inside the card; Sijoitus rows aligned, no clipping.
-- Layout checks at 360-1280 px are green in the packet.
+- Delta only: prefix "Esimerkkiaineisto: " removed, first letter capitalised. Opened fy6-11-open-exercises-L3-1280-5 (Millikan task L3-04); text reads naturally, layout (cards, tables, formulas, answer fields) intact, no clipping or overflow.
+- Source diff read for the changed tasks; no numbers, units or formulas changed.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

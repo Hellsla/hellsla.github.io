@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ff46a59fd2b8b611
-SCOPE: delta md-paragraphs,numbers,reflow,typography,wording from 7ff4568c0902edd0 base 64d4935
+CONTENT-HASH: 11e728d1468966a5
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+None.
 
 ## Checked
-- Delta: the Kaava step of the solutions now runs basic law, then derived formula, then symbolic simplification, and the substitution uses the last symbolic form, as CLAUDE.md "Start from the basic principle and derive" asks.
-- Each chain ends in the same formula as before the change, so the substitution rows, answers and tolerances still follow from it.
-- Each Kaava step is a short aligned chain (one relation per step), a student who could not solve the task can follow it.
-- Paragraph splitting in Principle, Reading the graph and Model answer keeps one idea per paragraph and drops no reason or step.
-- Level mix, task wording and figures are untouched by the change.
+Delta round 1. The diff only removes the prefix "Example data: " from the task texts and capitalises the first letter. Numbers, symbols, figures, answers and feedback are unchanged. Each sentence still reads naturally and states its situation. The tasks still give the data the student needs, and no answer is disclosed. The change removes a label that interrupted the problem statement, so it helps the exercise levels and keeps the workload unchanged. Nothing outside the changed text is touched.
