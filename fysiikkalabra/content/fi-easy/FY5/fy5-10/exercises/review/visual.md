@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 23a62c16c4efc8c8
-none
+CONTENT-HASH: 7ce144fd54e2f55c
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] solutions.md 10-9 Kaava: the first row "v = (x2-x1)/Δt" is not a basic equation of its own; acceptable.
+- [Minor] solutions.md L1-06/07 Mallivastaus — "harventumassa harvassa" is slightly clumsy; "harventumassa kierteet ovat harvassa" reads more naturally.
 
 ## Checked
-- Delta round 1: Kaava steps of solutions.md rewritten as aligned symbolic chains.
-- Opened open-exercises-1280-2 (10-3), -4 (10-5), -5, -6 (10-8, unchanged Kaava), -7, -8, -9 (10-10) in fi-easy.
-- Kaava boxes: rows aligned at `=`, fractions in display size, no clipping or overflow, spacing between steps even, Sijoitus/Vastaus/Järkevyys unchanged.
-- Not opened: 390 px captures, the five-row 10-6 and 10-9 cards (same component, same aligned block).
+- Delta: exercises.json and solutions.md wording harvennus -> harventuma, read in source; figures.json is teacher-approved. No exercise captures in this packet; the fi-easy lesson page captures (fig-row-1280, fig-2-390) show the shared figure unchanged and layout intact.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

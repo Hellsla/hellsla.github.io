@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 3f85c11d16edeafb
+CONTENT-HASH: 7fc0a31977d821a4
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] third block — repeats the formula paragraph with numbers; fine as retrieval, no change needed.
-
-## Vanhan sisällön löydökset
-- none (old content was not judged; scope note 2026-11-20)
+- [Minor] figure types (fig-2) — drawn labels still say "harvennus" while the text now says "harventuma" — teacher-approved as-is, queued for redraw; no action now.
 
 ## Checked
-- Opened theory-1280-1 (fi): blocks 1 and 2 (green card, label, "Vastaus" summary, question text with units in LaTeX, decimal comma/point correct, no overlap with the types figure).
-- fi only: theory-1280-2 showing block 3 after the fundamental-equation paragraph. For en/fi-easy block 3 was read from source (same placement and layout as fi).
-- Opened answers: checked only by source and CSS (.stop-think-a); no opened-answer capture exists and no browser was available to make one at 360 px, so the packet's green layout checks (360-1920 px) carry that part.
-- Wording, units, physics and placement of all three blocks read in source: answerable from the paragraph just above, nothing given away from the exercises (no same numbers in solutions).
+- Delta (wording harvennus -> harventuma). Opened fig-2-390, fig-row-1280, intro-1280, theory-1280-1, contact-1 (fig 1-8, sim, example, stages).
+- Changed paragraph wraps and sits beside the types figure correctly; hero and other figures unchanged; no overflow or clipping.
+- inquiry.json feedback change read in source (plain word swap, no numbers or symbols).
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4
