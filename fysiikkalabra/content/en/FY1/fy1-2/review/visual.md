@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c60d30a7c0a9a6ea
+CONTENT-HASH: b31745d2f8a9936d
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-2-sim-390 — at 390 px the "Travel at the speed of light" button touches the bottom edge of the canvas with no gap — add a small top margin to the controls (shared component).
-- [Minor] fy1-2-sim-390 — the removed note about one pixel being the Moon's diameter now lives only in the intro text; the canvas scale bar "100 px = 3,47·10^5 km" still shows the scale, so nothing is lost — optional.
+- [Minor] Significant figures paragraph — the changed paragraph is about 120 words and ends with three ideas (precision in scientific notation, the exact-time rule, the 230 V example) — optional: start a new paragraph at "In the tasks of this book".
 
 ## Checked
-- Delta: the simulation controls re-grouped into three rows (trip, view, places). Opened fy1-2-sim-390, fy1-2-sim-1280 and fy1-2-lab-1280-1: the rows wrap cleanly, the controls are readable and 40 px or more, and the slider label, date field and jump buttons are intact. Nothing is clipped and there is no horizontal overflow.
-- Opened fy1-2-intro-1280 (hero) and fy1-2-fig-4-390. The pictures are unchanged, approved by the teacher, and render fine. The text is unchanged apart from the approved figures.
+- Delta: the one changed paragraph under "Significant figures". Opened fy1-2-theory-1280-2 and fy1-2-theory-1280-3. $10\,\text{min}$ and $230\,\text{V}$ render as KaTeX with a thin space, the number and unit are one formula, and there is no red source.
+- The surrounding layout (prefix figure beside its paragraph, the unit table, the display equations) is intact, with no clipping.
+- Language: the new sentence is fluent and consistent with the rest of the chapter.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4
