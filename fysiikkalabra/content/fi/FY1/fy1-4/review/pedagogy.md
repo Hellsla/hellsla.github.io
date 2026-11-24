@@ -1,24 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: f5b4bdd7b0b1cd9b
+CONTENT-HASH: 1f755be05cba69e8
 
 ## Blocking
-(none)
 
 ## Polish
-1. inquiry.json:233 (johtopaatos) — `after` lists koe-1, koe-2 and koe-3, but the prompt, model answer and four criteria cover only koe-1 and koe-2. Goal 3 ("tunnistamaan, milloin lineaarinen malli ei sovi") then has no self-assessment line in the conclusion — add a criterion and a sentence: "Aineistossa 3 poikkeamat muodostivat kuvion (päissä suoran yläpuolella, keskellä alapuolella), joten suora ei sovi, vaikka $d$ oli pieni verrattuna muutokseen."
-2. lesson.md:31,33 — the "Lineaarinen malli" paragraph introduces fysikaalinen, graafinen, matemaattinen and kvantitatiivinen malli in one sentence, and the next paragraph holds proportionality, interpolation, extrapolation and curvature. Split into one idea per paragraph (e.g. a short ### "Mallin pätevyysalue" for interpolointi, ekstrapolointi and kaareutuminen).
-3. lesson.md:36 — the pysähdy item "Jännitettä mitattiin välillä $x = 2\ldots 10$" has no unit and does not say that $x$ is the voltage. Fix: "Jännitettä $U$ mitattiin välillä $2\ldots 10\,\text{V}$. Kummassa arvossa tulos on luotettavampi, kun $U = 6\,\text{V}$ vai kun $U = 30\,\text{V}$?" and adjust the answer.
-4. inquiry.json:393 (check-c2) — "Suoran piirtäminen" repeats ennuste-1, kertaus, virhe and tarkistus-3 (polyline vs fit, origin line). The core path allows 1–2 checks; make it `optional`. Correct options are mostly the longest and most qualified in the choice items (kertaus, ennuste-1, virhe, check-c2). Shorten them or lengthen the distractors.
-5. inquiry.json:94 (ennuste-2, third option's feedback) — "kuin Kokeessa 2" should be "kuin kokeessa 2" (lowercase mid-sentence).
+- inquiry.json koe-3 question — the prompt hard-codes "Pienin saavutettu poikkeama on noin 5,8 °C", but b is locked at 80 °C, so the student's own minimum may differ from a true best-fit d. Say "kun $b = 80\,{}^\circ\text{C}$" or let the student quote their own table value.
+- inquiry.json ennuste-1 / koe-1 — the polyline option cannot be tested in the simulation (it only moves a straight line); the refutation is carried by the feedback numbers (slopes 0,2 … 0,8). Acceptable, but the experiment intro could invite the student to compare the red segments with the jagged slopes between neighbouring points.
+- simulaatio / lesson.md "Suora sovitetaan" — the sim's criterion is the smallest d (RMS), the lesson's is a visual one ("pisteitä molemmin puolin, lähellä kaikkia"). A sentence in `calc` or the conclusion saying that by eye the two give nearly the same line would stop "paras suora = pienin d" from becoming the only rule. "Keskimääräinen poikkeama" for an RMS value is also loose; "neliöllinen keskipoikkeama" is more exact if the glossary allows it.
+- Workload — two predictions, three experiments with at least three rows each, a sim, an explain task, the example, three checks and an exit ticket is near the upper limit for one lesson. Koe 3 could go inside "Lisää tutkittavaa" if the lesson runs long.
+- inquiry.json ennuste-2 — the prompt already says the line is extended to V = 0 and names the container ("mittalasin ja nesteen yhteismassa"). This is fair, since the student has to reason about it, but the correct option is the most elaborate one. Shorten it a little to even the lengths out.
 
 ## Checked
-- Learning path: the opening question is answered by the theory (random error, fit through the middle) and by the experiments; goals 1–3 are covered and nothing goes beyond FY1.
-- Prediction data recomputed: the best fit through the origin is k≈0.49 m/s (d≈0.12 m), the 0.60 m/s line gives 0.44 m, the polyline slopes are 0.2/0.8/0.5/0.3/0.5. Prediction 2 gives b≈61 g (d≈1.2 g), and the b=0 line d≈61 g.
-- Koe 3 recomputed with b=80 locked: minimum d≈5.8 °C and the residuals are + at the ends and − in the middle, as the question says. The simulation fits the topic and its numbers are called model values.
-- Worked example: the kettle data fit T=8,0·t+20 (3 points above, 3 below, max 0,8 °C). k, b and t=2,5 min are correct, and the 7 stages each hold one step.
-- Etsi virhe, Lue kulmakerroin, Sovella uuteen tilanteeseen, tarkistus-2 and exit ticket: all numbers and distractor values recomputed and correct; hints are progressive and each common-mistake feedback repairs a named misconception.
-- The interpret figure was checked against its aria-label: the line starts at 5 km and passes (1 h; 20 km) and (3 h; 50 km).
-- Solutions follow the 7-step form, symbolic first, and the plausibility checks are real checks.
-- Captures at 390 and 1280 px (contact-1, lab-1280): nothing clipped, the sim controls and readout are understandable, figures sit next to their paragraphs.
-- Finnish: glossary terms (kuvaaja, kulmakerroin, suoran sovitus, lineaarinen malli) are used consistently, the units after numbers are fine and the case endings are fine; no speaker names and no option referred to by letter.
-- Workload is acceptable because of the optional items (kertaus, pohdi, siirto, tarkistus-3), though it is at the upper end of one lesson.
+- Path: retrieval (random error), then prediction, then experiment, then theory, then example and exercises. The hook's question is answered by the conclusion and the reflect task, and the slot's three goals are all covered.
+- Predictions can be argued from the data before the evidence. Every wrong option's feedback is gated on commitment and repairs the misconception with numbers (polyline, forcing the line through a point, b = 0).
+- Experiments can refute their predictions: d has a clear minimum near k = 0,5 m/s and b ≈ 61 g, and Koe 3 shows a pattern in the deviations. Variable control is clear and the locks are stated.
+- Koe 3 and its question teach "a small d does not mean the model fits" (the direction of the deviations); this is the central lesson of the model.
+- The worked example (kettle) has seven stages, one step each, with a figure showing A, B and the 40 °C dashed construction. Its numbers are consistent: the maximum deviation is about 1 °C, and the interval check is correct.
+- Etsi virhe and the transfer task have realistic distractors (Δt/Δs, s/t through the origin, mixing up k and b) with feedback that names the error. The figure task works: the coordinates are read from the grid, and the aria-label gives the same data without computing k.
+- Checks and exit ticket test the concept (b ≠ 0 means not proportional) and the calculation. The explain criteria are observable and match the question.
+- Captures: the sim at 390 and 1280 px is legible, with usage, assumptions and computation behind closed boxes. The experiments sit beside the sim at 1280 px. The kettle figure at 390 px is small but legible.
+- Finnish: terms (kuvaaja, kulmakerroin, suoran sovitus, lineaarinen malli) match the glossary; no case errors found.
+- Exercises not judged (own review).
