@@ -471,7 +471,7 @@ $W = \dfrac{20{,}3\,\text{MWh}}{3{,}0} \approx 6{,}8\,\text{MWh}$
 **Annettu:** ikkunoiden ala $20\,\text{m}^2$, U-arvo $2{,}0 \to 0{,}90\,\tfrac{\text{W}}{\text{m}^2 \cdot \text{K}}$, $\Delta T = 20\,\text{K}$, $t = 5100\,\text{h}$, $\varepsilon = 3{,}0$, sähkön hinta $0{,}15\,\tfrac{\text{€}}{\text{kWh}}$, vaihdon hinta $9000\,\text{€}$
 **Kysytty:** vuotuinen sähkön ja rahan säästö ja vaihdon kannattavuus
 **Periaate:** Uudet ikkunat pienentävät johtumistehoa U-arvon muutoksen verran. Säästyvä lämpö jaetaan lämpökertoimella, jolloin saadaan säästyvä sähkö.
-**Kaava:** $$\begin{aligned} P &= UA\,\Delta T \\ \Delta P &= P_\text{vanha} - P_\text{uusi} \\ &= (U_\text{vanha} - U_\text{uusi})A\,\Delta T = \Delta U \cdot A\,\Delta T \\ \Delta Q_1 &= \Delta P \cdot t \\ \varepsilon &= \dfrac{\Delta Q_1}{\Delta W} \\ \Delta W &= \dfrac{\Delta Q_1}{\varepsilon} \end{aligned}$$
+**Kaava:** $$\begin{aligned} P &= UA\,\Delta T \\ \Delta P &= P_\text{vanha} - P_\text{uusi} \\ &= (U_\text{vanha} - U_\text{uusi})A\,\Delta T \\ &= \Delta U \cdot A\,\Delta T \\ \Delta Q_1 &= \Delta P \cdot t \\ \varepsilon &= \dfrac{\Delta Q_1}{\Delta W} \\ \Delta W &= \dfrac{\Delta Q_1}{\varepsilon} \end{aligned}$$
 **Muunnokset:** $\Delta U = 2{,}0 - 0{,}90 = 1{,}1\,\tfrac{\text{W}}{\text{m}^2 \cdot \text{K}}$
 **Sijoitus:** $\Delta P = 1{,}1\,\tfrac{\text{W}}{\text{m}^2 \cdot \text{K}} \cdot 20\,\text{m}^2 \cdot 20\,\text{K} = 440\,\text{W}$
 
