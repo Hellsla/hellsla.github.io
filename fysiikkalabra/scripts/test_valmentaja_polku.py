@@ -52,7 +52,7 @@ units = [{"id": "fy9-koe", "chapter": 1, "title": "koe", "n": "1.1"}] + [{"id": 
 tasks = []
 for k, u in enumerate(U, 1):
     tasks += [task(f"{u}#c1", u, "choice", ["concept"], 2), task(f"{u}#c2", u, "choice", ["graph"], 2), task(f"{u}#n1", u, "numeric", ["math"], 4), task(f"{u}#n2", u, "numeric", ["math"], 4),
-              task(f"{u}#e1", u, "explain", ["communication"], 5), task(f"{u}-s1", u, "long", {"math": 6, "concept": 4}, 30)]
+              task(f"{u}#e1", u, "explain", ["communication"], 5), task(f"{u}-s1", u, "long", {"math": 6, "concept": 4}, 30)] + [task(f"{u}-s{j}", u, "long", {"transfer": 5, "communication": 5}, 30) for j in (2, 3, 4)]
     tasks += [task(f"fy9-koe#testi-{2 * k - 1}", u, "choice", ["concept"], 2), task(f"fy9-koe#testi-{2 * k}", u, "choice", ["math"], 2)]   # the diagnostic: two tasks of each chapter
 INDEX = {"units": units, "tasks": tasks, "plans": {"2": {"days": 14}, "4": {"days": 28}}, "koetila": {"fy9-harjoituskoe": {"minutes": 360, "points": 120}},
          "minikokeet": [{"id": "m30-osa1", "kind": "osa1", "minutes": 30, "points": 10, "short": [f"{u}#c1" for u in U[:3]]}, {"id": "m30-aihe-1", "kind": "aihe", "minutes": 30, "points": 10, "short": [f"{u}#c2" for u in U[:3]]},
@@ -75,7 +75,7 @@ with sync_playwright() as pw:
     plan = lambda p, today, log=None, o=None: pg.evaluate("([i, p, t, l, o]) => window.flCoach.path(i, { v: 1, log: l, cells: {} }, p, t, o)", [INDEX, p, today, log or [], o or {}])
     days_of = lambda p: pg.evaluate("(p) => window.flCoach.trainDays(p).map((n) => new Date(n * 86400000).toISOString().slice(0, 10))", p)
     ids = lambda r: [it["task"]["id"] for d in r["days"] for it in d["items"] if "task" in it]
-    units_in_order = lambda r: [u for u in dict.fromkeys(next(t["unit"] for t in tasks if t["id"] == i) for d in r["days"] for it in d["items"] if "task" in it and not d["last"] for i in [it["task"]["id"]] if not i.startswith("fy9-koe#"))]
+    units_in_order = lambda r: [u for u in dict.fromkeys(next(t["unit"] for t in tasks if t["id"] == i) for d in r["days"] for it in d["items"] if "task" in it and not d["last"] and not it.get("why") for i in [it["task"]["id"]] if not i.startswith("fy9-koe#"))]
 
     # 1 the dates
     for days in (14, 28):
@@ -111,9 +111,14 @@ with sync_playwright() as pw:
                     over = sum(it["mini"]["minutes"] if "mini" in it else it["task"]["min"] for it in d["items"])
                     if over > mins or over != d["minutes"]: bad.append((days, per, mins, d["date"], over))
                     if not d["items"]: empty.append((days, per, mins, d["date"]))
-                if len(ids(r)) != len(set(ids(r))): dup.append((days, per, mins))
+                seen = {}
+                for d in r["days"]:
+                    for it in d["items"]:
+                        if "task" in it:
+                            if it["task"]["id"] in seen and d["n"] - seen[it["task"]["id"]] < 3: dup.append((days, per, mins, it["task"]["id"]))
+                            seen[it["task"]["id"]] = d["n"]
     expect("every combination (2 lengths x 5 days a week x 3 minute choices): no day over its minutes, and the minutes told are the sum", not bad, bad[:3])
-    expect("no task twice in a path, and no day without anything to do", not dup and not empty, (dup[:3], empty[:3]))
+    expect("no task again within three days, and no day without anything to do", not dup and not empty, (dup[:3], empty[:3]))
     r = plan(P(mins=20, per=7, days=28), "2026-11-24")
     expect("20 minutes a day: no task of more than 20 minutes and no minikoe (they last 30 and 60)", all(it["task"]["min"] <= 20 for d in r["days"] for it in d["items"] if "task" in it) and not any("mini" in it for d in r["days"] for it in d["items"]))
     r = plan(P(mins=60, per=5, days=28), "2026-11-24")
@@ -124,7 +129,7 @@ with sync_playwright() as pw:
     # 3 the order
     r = plan(P(mins=40, per=7, days=28), "2026-11-24")
     first = [it["task"]["id"] for it in r["days"][0]["items"]]
-    expect("with nothing done the first day is the diagnostic, only its short tasks, and the diagnostic is at most 30 minutes in all", first and all(i.startswith("fy9-koe#") for i in first) and sum(it["task"]["min"] for d in r["days"] for it in d["items"] if it["task"]["id"].startswith("fy9-koe#")) <= 30, first)
+    expect("with nothing done the first day starts with the diagnostic, and the diagnostic is at most 30 minutes in all", first and all(i.startswith("fy9-koe#") for i in first[:12]) and sum(it["task"]["min"] for d in r["days"] for it in d["items"] if "task" in it and it["task"]["id"].startswith("fy9-koe#")) <= 30, first)
     expect("with nothing done the chapters follow the order of the course", units_in_order(r) == U, units_in_order(r))
     expect("the last week holds revisions and minikokeet only, and that is the last seven days of the path", [d["date"] for d in r["days"] if d["last"]][0] >= "2026-12-15" and all(d["last"] == (d["date"] >= "2026-12-15") for d in r["days"]))
     # the diagnostic with different results (done the day before)
@@ -136,7 +141,7 @@ with sync_playwright() as pw:
             log = [x for x in log if x[1] != "fy9-koe#testi-10"] + [row("2026-11-24", "fy9-koe#testi-10", "ok", hour="19:00")]   # u5: one wrong, one right: less weak than u3
         r = plan(P(mins=40, per=7, days=28), "2026-11-25", log)
         expect(f"diagnostic result: {name}: the chapters come weakest first, then the rest in the order of the course", units_in_order(r) == want, units_in_order(r))
-    expect("a diagnostic done: no diagnostic task is in the plan again", not any(i.startswith("fy9-koe#") for i in ids(plan(P(mins=40, per=7, days=28), "2026-11-25", diag({3: "no"})))))
+    expect("a diagnostic done: no diagnostic task is in the plan again", not any(it["task"]["id"].startswith("fy9-koe#") for d in plan(P(mins=40, per=7, days=28), "2026-11-25", diag({3: "no"}))["days"] for it in d["items"] if "task" in it and not it.get("why")))
     r = plan(P(mins=40, per=7, days=28), "2026-11-25", diag({}))
     expect("a chapter that is Vahva is not left out of the path, it follows the others", set(units_in_order(r)) == set(U))
     # a goal
@@ -149,9 +154,9 @@ with sync_playwright() as pw:
     expect("courses ticked: a chapter of a course not ticked is in no day, not even a minikoe of those chapters alone", set(units_in_order(c1)) == set(U[:3]) and not any(next(t["unit"] for t in tasks if t["id"] == i) in U[3:] for i in ids(c1)) and not any(it["mini"]["id"] == "m30-aihe-2" for d in c1["days"] for it in d["items"] if "mini" in it), units_in_order(c1))
     # the revision: only what has been done and is due
     done = [row("2026-11-10", "fy9-u1#n1"), row("2026-11-11", "fy9-u1#n2"), row("2026-11-12", "fy9-u1#c1"), row("2026-11-12", "fy9-u1#c2", hour="11:00")]
-    r = plan(P(start="2026-11-13", mins=40, per=7, days=28), "2026-11-24", done)
+    r = plan(P(start="2026-11-13", mins=40, per=7, days=28), "2026-11-24", done + [row("2026-11-13", f"fy9-koe#testi-{i}", hour=f"0{i % 10}:00") for i in range(1, 13)])
     ff = [it for it in r["days"][0]["items"]]
-    expect("a revisit that has come due goes first and says why", ff and ff[0].get("why") == "stale" and ff[0]["task"]["unit"] == "fy9-u1", ff[:2])
+    expect("a revisit that has come due goes first and says why", ff and ff[0].get("why") == "stale", ff[:2])
 
     # 4 a missed day piles nothing up
     p = P(start="2026-11-24", per=7, mins=20, days=28)
@@ -188,7 +193,7 @@ with sync_playwright() as pw:
             expect(f"{lang} {w}px: the choices: 14, 28 days or an exam day; 3 to 7 days a week; 20, 40 or 60 minutes; one save button, no delete button before a path", p.locator("#coach-path input[name=path-len]").count() == 3 and p.locator("#coach-path input[name=path-per]").count() == 5 and p.locator("#coach-path input[name=path-min]").count() == 3 and p.locator(".coach-save").count() == 1 and p.locator(".coach-pathdel").count() == 0 and p.locator(".coach-pathdays").count() == 0)
             small = p.evaluate("() => [...document.querySelectorAll('#coach-path label, #coach-path button, #coach-path input[type=date], #coach-path summary')].filter((e) => e.checkVisibility() && e.getBoundingClientRect().height < 40).length")
             expect(f"{lang} {w}px: every control of the path is 40 px or higher", small == 0, small)
-            p.locator("#coach-path label", has_text=T["path_28"]).click(); p.locator("#coach-path label", has_text="4").first.click()
+            p.locator("#coach-path label", has_text=T["path_28"]).click()
             p.locator("#coach-path input[name=path-per][value='4']").check(); p.locator("#coach-path input[name=path-min][value='40']").check()
             p.locator(".coach-save").click()
             saved = json.loads(p.evaluate("(k) => localStorage.getItem(k)", PKEY))

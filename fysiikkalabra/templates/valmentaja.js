@@ -380,7 +380,8 @@
     // what the path knows is the log up to the end of yesterday: today's own list stays as it was when the day began
     const past = (d.log || []).filter((r) => { const x = dayOf(r[0]); return x && num(x) < t0; });
     const touched = new Set(past.map((r) => r[1])), synth = past.slice();
-    const mark = (n, t) => synth.push([str(n) + 'T10:00Z', t.id, 'a', 'ok', 0, 0, null, 'p']);   // a planned task counts as touched for the days after it, never as evidence
+    const planned = new Map();
+    const mark = (n, t) => { planned.set(t.id, n); synth.push([str(n) + 'T10:00Z', t.id, 'a', 'ok', 0, 0, null, 'p']); };   // a planned task counts as touched for the days after it, never as evidence
     const days = trainDays(p).filter((n) => n >= t0);
     if (!days.length) return none;
     const cs = cells(past, idx, todayStr, d.cells);
@@ -421,10 +422,15 @@
       for (let round = 0; round < 4 && left >= 2; round++) {
         const res = recommend(idx, { log: synth, cells: d.cells }, str(n), { goal, courses: [], budget: left });
         let added = 0;
-        for (const r of res.recs) if (r.task.min <= left && !items.some((x) => x.task && x.task.id === r.task.id)) { items.push({ task: r.task, why: r.reason.key }); mark(n, r.task); left -= r.task.min; added++; }
+        for (const r of res.recs) if (!(goal === 'BA' && r.task.kind === 'long') && r.task.min <= left && !items.some((x) => x.task && x.task.id === r.task.id)) { items.push({ task: r.task, why: r.reason.key }); mark(n, r.task); left -= r.task.min; added++; }
         if (!added) break;
       }
-      for (const t of rq) { if (left < 2) break; if (t.min <= left && !touched.has(t.id) && !synth.some((r) => r[1] === t.id) && !items.some((x) => x.task && x.task.id === t.id)) { items.push({ task: t }); mark(n, t); left -= t.min; } }   // nothing to revise yet: the tasks of the course in order
+      for (const t of rq) { if (left < 2) break; if (!(goal === 'BA' && t.kind === 'long') && t.min <= left && !touched.has(t.id) && !synth.some((r) => r[1] === t.id) && !items.some((x) => x.task && x.task.id === t.id)) { items.push({ task: t }); mark(n, t); left -= t.min; } }   // nothing to revise yet: the tasks of the course in order
+      for (const t of rq) {   // the course is used up: what was done at least three days ago is done again, the chapters in the order of the path
+        if (left < 2) break;
+        const was = planned.get(t.id);
+        if (!(goal === 'BA' && t.kind === 'long') && t.min <= left && (was === undefined || n - was >= 3) && !items.some((x) => x.task && x.task.id === t.id)) { items.push({ task: t }); mark(n, t); left -= t.min; }
+      }
       return left;
     };
     const out = []; let miniAt = 0, lastIdx = 0;
