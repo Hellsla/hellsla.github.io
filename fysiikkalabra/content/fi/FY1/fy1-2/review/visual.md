@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3b3df2a745260fbd
+CONTENT-HASH: afa411dcc776f0f4
 
 ## Blocking
 
 ## Polish
-- [Minor] sim controls — the first control row (travel, reset) sits tight against the canvas at 390 px, with almost no gap above "Matkusta valon nopeudella". Fix: add a small top margin to `.controls`, in the shared component.
 
 ## Checked
-- Delta (sim.js controls regrouped into three rows, pixel note removed, pictures teacher-approved): fy1-2-sim-390, fy1-2-sim-1280, fy1-2-lab-1280-1 (sim beside the experiment), contact-1 (hero, figures 1–5, example stages, Ennusta).
-- The trip, view and places rows wrap cleanly at 390 and 1280 px. Nothing is clipped. The arrow buttons, slider, date input and jump buttons all have readable labels and sizes. The readout is LaTeX with units.
-- The removed pixel-scale note is covered by the on-canvas scale label "100 px = 3,47 · 10^5 km" and the closed-box text under the sim.
-- The teacher-approved pictures (hero, quantity, conversion) look consistent and legible in the contact sheet.
+- Delta (one rewritten sentence in Merkitsevät numerot): fy1-2-theory-1280-2 and -3 (the changed paragraph and its surroundings), contact-1 (hero, figures 1-5, example, Ennusta; nothing else changed).
+- The new sentence renders in KaTeX: $10\,\text{min}$ and $230\,\text{V}$ are one formula each with a thin space and upright unit, and no plain quantity is left. The paragraph is 6 lines, so it is not a text wall, and the layout around it is unchanged.
+- Finnish: "tehtävän asettama aikaväli tai lukumäärä ... on tarkka, mutta mitatun tai nimellisarvon loppunollat ovat merkitseviä" reads fluently, and the example 230 V gives the contrast.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

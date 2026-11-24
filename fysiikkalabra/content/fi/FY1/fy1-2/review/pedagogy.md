@@ -1,24 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3b3df2a745260fbd
+CONTENT-HASH: afa411dcc776f0f4
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json `voyager-malli` (between koe-1 and koe-2; lab-1280 capture) — the table under Koe 1 shows 144,9 AU and 20,1 h for 2026 and 157,8 AU for 2030, the same quantities koe-2 asks the student to record, so koe-2 no longer produces anything new and ennuste-1's answer (about 20 h) is visible before the experiment — move `voyager-malli` after koe-2, or make its table other dates.
-- inquiry.json `johtopaatos` model and criteria — the opening question ("miksi sama etäisyys ilmoitetaan eri yksiköillä") is answered on the core path only as "yksikön paikalle kirjoitetaan sen arvo"; why a unit is chosen (a convenient number: km too big, AU as the Earth's distance, light time as delay) is only in the optional `pohdi` and `tarkistus-3` — add a criterion and one sentence of the model answer on convenience.
-- inquiry.json `koe-1` — the simulation only evaluates t = d/c, so the experiment checks arithmetic and exponent handling, not a physical result; ennuste-2's prompt already supplies "33 s". Acceptable for a units lesson, but a prefix or conversion step (read d in km, AU and s and convert between them) would serve the slot's goal (muunnokset, etuliitteet) better.
-- inquiry.json `voyager-malli` — the correct option is by far the longest and hedged; the other two are one-liners. Shorten it and move the JPL comparison into the feedback only.
-- lesson.md hero and `siirto` — "valotunteina" is never explained; `siirto` uses the unit AU/a, but "a" for year is not introduced: write "AU/vuosi" or add "1 a = 1 vuosi" to the prompt.
+- lesson.md:65 (Merkitsevät numerot) — the new sentence says trailing zeros of a measured or nominal value are significant ("230 V" has three), but two sentences earlier "Kokonaisluvun loppunollat ovat epäselviä" (384 400 km); a 17-year-old sees two opposite rules for integer trailing zeros. Link them: "Kun loppunollat ovat osa mitattua tai nimellisarvoa ja asia on selvä (esim. 230 V), ne luetaan merkitseviksi; epäselvässä tapauksessa käytä kymmenpotenssimuotoa 2,30·10^2 V." Otherwise the 230 V example would itself be better written 2,30·10^2 V, as the rule just taught.
+- lesson.md:65 — "tehtävän asettama aikaväli tai lukumäärä" is clumsy; "tehtävänannossa annettu aikaväli tai lukumäärä, kuten 10 min, on tarkka" reads better.
+- Earlier polish items (voyager-malli order, convenience in johtopaatos, koe-1 only arithmetic, long correct option, "valotunteina" and "AU/a") are unchanged by this diff and still open.
 
 ## Checked
-- Learning path: prior knowledge (powers of ten, scales) matches fy1-1; goals (suure, SI, etuliitteet, merkitsevät numerot, muunnokset) all covered; sig figs only in the optional `merkitsevat` plus check 1 and the exercises, acceptable.
-- Predictions can be argued and refuted by the model values; each wrong option's feedback repairs a named misconception (exponent as factor, constant speed means constant time).
-- Model values are labelled as model values with source (voyager-malli, johtopaatos); workload about one lesson with optional items marked.
-- Worked example: seven stages, one step each, symbolic before numeric, reasonableness check; numbers verified (4,503·10^9 km, 4,17 h).
-- Etsi virhe (km² to m²) and siirto distractors/mistake feedback are real misconceptions; siirto answer 3,236 AU/a verified.
-- Tarkista: concept, representation and calculation checks with misconception distractors; the explain criteria are observable.
-- Sim at 390 px and 1280 px: controls and readout readable, text behind Käyttöohje/Mallin oletukset/Laskennan selitys; experiment locks the date.
-- Exit ticket tests suure/yksikkö and prefix conversion, the core ideas.
-- Finnish read through; no case or term errors found beyond the polish items.
+- Diff is one sentence replacing the rule "integer trailing zeros are exact" with "task-set time spans and counts are exact; measured or nominal trailing zeros are significant"; the new rule is physically sounder (230 V, measured values) and fits the slot's sig-fig goal.
+- The example 230 V is authentic and recognisable (mains voltage) and is not an answer to any inquiry task.
+- No change to inquiry.json, figures or the simulation; the learning path, predictions, worked example and staging I approved stand.
+- Finnish of the new sentence: grammar and case correct ("luvussa 230 V on kolme merkitsevää numeroa").
 - Exercises not judged (reviewed apart).
