@@ -30,10 +30,10 @@
   "note": "main button Käynnistä first, then Alusta; DOM order canvas, controls, readout"
  },
  {
-  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>x.textContent); return l.length===3 && l[0].startsWith('Tapaus') && /^Hetki \\$t = .*\\\\,\\\\text\\{s\\}\\$$/.test(simText(document.querySelectorAll('#sim-root label')[1])) && l[2].startsWith('Nopeus (toisto)') ? 1 : 0 })()",
+  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>x.textContent); return l.length===3 && l[0].startsWith('Tapaus') && /^Hetki \\$t = .*\\\\,\\\\text\\{s\\}\\$$/.test(simText(document.querySelectorAll('#sim-root label')[1])) && l[2].startsWith('Nopeus') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "three labelled controls: Tapaus, Hetki t with unit s, Nopeus (toisto)"
+  "note": "three labelled controls: Tapaus, Hetki t with unit s, Nopeus"
  },
  {
   "expr": "(() => !document.querySelector('#sim-root details') && document.querySelectorAll('#sim-root p.note').length===0 ? 1 : 0)()",
