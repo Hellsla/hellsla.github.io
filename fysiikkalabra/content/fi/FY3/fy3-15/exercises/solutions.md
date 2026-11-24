@@ -2,7 +2,13 @@
 **Annettu:** turbiinin hyötysuhde $\eta_1 = 92{,}0\,\% = 0{,}920$, generaattorin hyötysuhde $\eta_2 = 98{,}0\,\% = 0{,}980$
 **Kysytty:** koko laitoksen hyötysuhde $\eta$ prosentteina
 **Periaate:** Laitos on ketju, jossa turbiinin ulostuloteho on generaattorin sisäänmenoteho. Kumpikin vaihe päästää läpi vain osan siihen tulevasta energiasta, joten ketjun hyötysuhde on osahyötysuhteiden tulo.
-**Kaava:** $P_1 = \eta_1 P_\text{o}$ ja $P_2 = \eta_2 P_1$, joten $\eta = \dfrac{P_2}{P_\text{o}} = \eta_1 \eta_2$
+**Kaava:** $$\begin{aligned} P_1 &= \eta_1 P_\text{o} \\
+P_2 &= \eta_2 P_1 \\
+\eta &= \dfrac{P_2}{P_\text{o}} \\
+&= \dfrac{\eta_2 \eta_1 P_\text{o}}{P_\text{o}} \\
+&= \eta_1 \eta_2
+\end{aligned}
+$$
 **Muunnokset:** Hyötysuhteet ovat luvun osia: $92{,}0\,\% = 0{,}920$ ja $98{,}0\,\% = 0{,}980$. Lopuksi tulos kerrotaan sadalla prosenteiksi.
 **Sijoitus:** $\eta = 0{,}920 \cdot 0{,}980 = 0{,}9016 = 90{,}16\,\%$
 **Vastaus:** $90{,}2\,\%$, kolme merkitsevää numeroa kuten annetuissa hyötysuhteissa $92{,}0\,\%$ ja $98{,}0\,\%$.
@@ -22,7 +28,12 @@
 **Annettu:** pinta-ala $A = 20{,}0\,\text{m}^2$, säteilyn teho pinta-alaa kohti $I = 1{,}00\,\tfrac{\text{kW}}{\text{m}^2}$, hyötysuhde $\eta = 0{,}210$
 **Kysytty:** paneelin sähköteho $P$ kilowatteina
 **Periaate:** Paneeliin osuvan säteilyn teho on intensiteetti kertaa pinta-ala, ja hyötysuhde kertoo, kuinka suuri osa siitä muuttuu sähköksi. Loput heijastuu tai muuttuu paneelin sisäenergiaksi, joka siirtyy lämpönä ympäristöön, joten sähköteho on ottotehon $P_\text{o} = IA$ eli paneeliin tulevan säteilyn tehon $\eta$-osa.
-**Kaava:** $P = \eta P_\text{o} = \eta I A$
+**Kaava:** $$\begin{aligned} P_\text{o} &= I A \\
+\eta &= \dfrac{P}{P_\text{o}} \\
+P &= \eta P_\text{o} \\
+&= \eta I A
+\end{aligned}
+$$
 **Muunnokset:** Yksiköt kulkevat mukana: $\tfrac{\text{kW}}{\text{m}^2} \cdot \text{m}^2 = \text{kW}$, joten tulos tulee suoraan kilowatteina eikä muunnoksia tarvita.
 **Sijoitus:** $P = 0{,}210 \cdot 1{,}00\,\tfrac{\text{kW}}{\text{m}^2} \cdot 20{,}0\,\text{m}^2 = 0{,}210 \cdot 20{,}0\,\text{kW} = 4{,}20\,\text{kW}$
 **Vastaus:** $4{,}20\,\text{kW}$, kolme merkitsevää numeroa, koska pinta-ala $20{,}0\,\text{m}^2$, säteilyteho $1{,}00\,\tfrac{\text{kW}}{\text{m}^2}$ ja hyötysuhde $0{,}210$ ovat kaikki kolmella numerolla.
@@ -33,7 +44,11 @@
 **Kysytty:** vaihe, jossa teho pienenee eniten, ja siinä ympäristöön lämpönä siirtyvä teho
 **Periaate:** Voimalaitos toimii tasaisesti ja energia säilyy, joten kun teho pienenee vaiheessa, ero siirtyy lämpönä ympäristöön. Vaiheessa ulos tuleva teho on pienempi kuin sisään tuleva, ja ero on siinä syntyvä hukkalämpö.
 **Kuvaajan lukeminen:** Pylväiden $P_\text{o}$, $P_1$ ja $P_2$ päät ovat ruudukon viivoilla, ja ne kertovat tehot $400$, $350$ ja $150\,\text{MW}$. Sähköteho $P_3$ on vähän viivan $150\,\text{MW}$ alapuolella, noin $140\,\text{MW}$; sitä ei tarvita vastaukseen. Tehon pieneneminen vaiheittain on $P_\text{o} - P_1 = 50\,\text{MW}$ kattilassa, $P_1 - P_2 = 200\,\text{MW}$ höyrykierrossa ja $P_2 - P_3 = 10\,\text{MW}$ generaattorissa ja muuntajassa. Suurin pudotus on pylväiden $P_1$ ja $P_2$ välissä eli höyrykierrossa.
-**Kaava:** $P_\text{h} = P_\text{o} - P_\text{a}$, missä $P_\text{o}$ on vaiheeseen tuleva ottoteho ja $P_\text{a}$ siitä lähtevä antoteho; höyrykierrossa $P_\text{o} = P_1$ ja $P_\text{a} = P_2$, joten $P_\text{h} = P_1 - P_2$
+**Kaava:** $$\begin{aligned} P_\text{o} &= P_\text{a} + P_\text{h} \\
+P_\text{h} &= P_\text{o} - P_\text{a} \\
+&= P_1 - P_2
+\end{aligned}
+$$ Vaiheessa $P_\text{o}$ on vaiheeseen tuleva ottoteho ja $P_\text{a}$ siitä lähtevä antoteho; höyrykierrossa $P_\text{o} = P_1$ ja $P_\text{a} = P_2$.
 **Muunnokset:** Ei tarvita: kaikki tehot ovat megawatteina.
 **Sijoitus:** $P_\text{h} = 350\,\text{MW} - 150\,\text{MW} = 200\,\text{MW}$
 **Vastaus:** Eniten teho pienenee höyrykierrossa, jossa lämpönä ympäristöön siirtyy $200\,\text{MW}$. Pylväiden $P_1$ ja $P_2$ päät ovat tarkasti ruudukon viivoilla, joten lukemat $350\,\text{MW}$ ja $150\,\text{MW}$ ovat täysiä megawatteja, kolmen numeron arvoja, ja tulos $200\,\text{MW}$ on kolmen merkitsevän numeron tarkkuudella.
@@ -78,7 +93,13 @@
 **Annettu:** polttoaineteho $P_\text{o} = 300\,\text{MW}$, kattilan hyötysuhde $\eta_1 = 0{,}880$, höyrykierron $\eta_2 = 0{,}420$ ja generaattorin $\eta_3 = 0{,}980$
 **Kysytty:** laitoksen sähköteho $P_3$ megawatteina
 **Periaate:** Vaiheet ovat peräkkäin, ja jokaisen ulostuloteho on seuraavan sisäänmenoteho. Kukin vaihe säilyttää vain $\eta$-osan tehostaan, joten sähköteho on polttoaineteho kerrottuna kaikilla kolmella hyötysuhteella.
-**Kaava:** $P_1 = \eta_1 P_\text{o}$, $P_2 = \eta_2 P_1$ ja $P_3 = \eta_3 P_2$, joten $P_3 = \eta_1 \eta_2 \eta_3 P_\text{o}$
+**Kaava:** $$\begin{aligned} P_1 &= \eta_1 P_\text{o} \\
+P_2 &= \eta_2 P_1 \\
+P_3 &= \eta_3 P_2 \\
+&= \eta_3 \eta_2 \eta_1 P_\text{o} \\
+&= \eta_1 \eta_2 \eta_3 P_\text{o}
+\end{aligned}
+$$
 **Muunnokset:** Hyötysuhteet ovat dimensiottomia ja teho on jo megawatteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $P_3 = 0{,}880 \cdot 0{,}420 \cdot 0{,}980 \cdot 300\,\text{MW} = 0{,}362208 \cdot 300\,\text{MW} = 108{,}6624\,\text{MW}$
 **Vastaus:** $109\,\text{MW}$, kolme merkitsevää numeroa, koska hyötysuhteet $0{,}880$, $0{,}420$ ja $0{,}980$ ovat kolmella numerolla ja polttoaineteho $300\,\text{MW}$ on annettu megawatin tarkkuudella.
@@ -88,7 +109,10 @@
 **Annettu:** koko ketjun hyötysuhde $\eta = 0{,}380$, kattilan $\eta_1 = 0{,}900$ ja generaattorin $\eta_3 = 0{,}980$
 **Kysytty:** höyrykierron hyötysuhde $\eta_2$ prosentteina
 **Periaate:** Ketju on kolmen peräkkäisen vaiheen tulo, joten koko ketjun hyötysuhde on vaiheiden hyötysuhteiden tulo. Kun kaksi vaihetta ja kokonaisuus tunnetaan, puuttuva vaihe saadaan jakamalla.
-**Kaava:** $\eta = \eta_1 \eta_2 \eta_3$, joten $\eta_2 = \dfrac{\eta}{\eta_1 \eta_3}$
+**Kaava:** $$\begin{aligned} \eta &= \eta_1 \eta_2 \eta_3 \\
+\eta_2 &= \dfrac{\eta}{\eta_1 \eta_3}
+\end{aligned}
+$$
 **Muunnokset:** Hyötysuhteet ovat dimensiottomia lukuja, joten yksikkömuunnoksia ei tarvita. Lopuksi tulos kerrotaan sadalla prosenteiksi.
 **Sijoitus:** $\eta_2 = \dfrac{0{,}380}{0{,}900 \cdot 0{,}980} = \dfrac{0{,}380}{0{,}882} = 0{,}43084 = 43{,}08\,\%$
 **Vastaus:** $43{,}1\,\%$, kolme merkitsevää numeroa, koska kaikki kolme hyötysuhdetta, $0{,}380$, $0{,}900$ ja $0{,}980$, ovat kolmella numerolla.
@@ -98,7 +122,12 @@
 **Annettu:** sähköteho $P_\text{s} = 150\,\text{MW}$, hyötysuhde $\eta = 0{,}360$, lämpöarvo $H = 9{,}00\,\tfrac{\text{MJ}}{\text{kg}}$, aika $t = 1\,\text{h}$
 **Kysytty:** poltetun hakkeen massa tunnissa $m$ tonneina
 **Periaate:** Energia säilyy: polttoaineen kemiallinen energia on joko sähköä tai hukkalämpöä. Hyötysuhde yhdistää sähkötehon polttoainetehoon, ja polttoaineteho on lämpöarvo kertaa massavirta, koska lämpöarvo kertoo energian massayksikköä kohti.
-**Kaava:** $P_\text{o} = \dfrac{P_\text{s}}{\eta}$ ja $P_\text{o} = \dfrac{H m}{t}$, joten $m = \dfrac{P_\text{s}\, t}{\eta H}$
+**Kaava:** $$\begin{aligned} P_\text{s} &= \eta P_\text{o} \\
+P_\text{o} &= \dfrac{H m}{t} \\
+P_\text{s} &= \dfrac{\eta H m}{t} \\
+m &= \dfrac{P_\text{s}\, t}{\eta H}
+\end{aligned}
+$$
 **Muunnokset:** $150\,\text{MW} = 150 \cdot 10^6\,\text{W}$, $9{,}00\,\tfrac{\text{MJ}}{\text{kg}} = 9{,}00 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$ ja $1\,\text{h} = 3600\,\text{s}$. Lopuksi $1\,\text{t} = 1000\,\text{kg}$.
 **Sijoitus:** $m = \dfrac{150 \cdot 10^6\,\text{W} \cdot 3600\,\text{s}}{0{,}360 \cdot 9{,}00 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}} = 1{,}66667 \cdot 10^5\,\text{kg} = 166{,}67\,\text{t}$
 **Vastaus:** $167\,\text{t}$, kolme merkitsevää numeroa, koska hyötysuhde $0{,}360$ ja lämpöarvo $9{,}00\,\tfrac{\text{MJ}}{\text{kg}}$ ovat kolmella numerolla ja sähköteho $150\,\text{MW}$ on annettu megawatin tarkkuudella; tunti on tarkka ($3600\,\text{s}$) eikä rajoita.
@@ -108,7 +137,13 @@
 **Annettu:** lauhduttimeen siirtyvä lämpöteho $P_\text{L} = 270\,\text{MW}$, veden lämpötilan nousu $\Delta T = 9{,}00\,\text{K}$ ja annettu ominaislämpökapasiteetti $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Kysytty:** lauhduttimen läpi virtaava vesivirta $q_m = m/t$ tonneina sekunnissa
 **Periaate:** Lauhduttimen luovuttama lämpö siirtyy kokonaan jäähdytysveteen, kun muita häviöitä ei ole. Vesi vain lämpenee eikä höyrysty, joten lämpömäärälle pätee $Q = c m \Delta T$; jakamalla ajalla saadaan teho.
-**Kaava:** $P_\text{L} = \dfrac{Q}{t} = c\, q_m \Delta T$, joten $q_m = \dfrac{P_\text{L}}{c\, \Delta T}$
+**Kaava:** $$\begin{aligned} Q &= c m \Delta T \\
+P_\text{L} &= \dfrac{Q}{t} \\
+&= c\,\dfrac{m}{t}\,\Delta T \\
+&= c\, q_m \Delta T \\
+q_m &= \dfrac{P_\text{L}}{c\, \Delta T}
+\end{aligned}
+$$
 **Muunnokset:** $270\,\text{MW} = 270 \cdot 10^6\,\text{W}$ ja $1\,\text{W} = 1\,\tfrac{\text{J}}{\text{s}}$. Lämpötilan muutos $9{,}00\,\text{K}$ on sama kelvineinä ja celsiusasteina. Lopuksi $1\,\text{t} = 1000\,\text{kg}$.
 **Sijoitus:** $q_m = \dfrac{270 \cdot 10^6\,\text{W}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 9{,}00\,\text{K}} = 7159{,}9\,\tfrac{\text{kg}}{\text{s}} = 7{,}1599\,\tfrac{\text{t}}{\text{s}}$
 **Vastaus:** $7{,}16\,\tfrac{\text{t}}{\text{s}}$, kolme merkitsevää numeroa, koska lämpötilan muutos $9{,}00\,\text{K}$ ja ominaislämpökapasiteetti $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ovat kolmella numerolla ja teho $270\,\text{MW}$ on annettu megawatin tarkkuudella.
@@ -130,7 +165,11 @@ Kylmänä vuonna kaukolämpöä tarvitaan enemmän, joten suurempi osa lauhdutti
 **Annettu:** taulukosta ydinvoimala $P_\text{o} = 2400\,\text{MW}$ ja $P_\text{s} = 840\,\text{MW}$, kivihiilivoimala $1200\,\text{MW}$ ja $432\,\text{MW}$, biovoimala $350\,\text{MW}$ ja $112\,\text{MW}$
 **Kysytty:** suurin hukkalämmön teho $P_\text{h}$ megawatteina
 **Periaate:** Lauhdevoimalaitoksessa hyödyksi saadaan vain sähkö, ja energia säilyy, joten polttoaine- tai reaktoriteho on sähköä tai hukkalämpöä: $P_\text{o} = P_\text{s} + P_\text{h}$. Hyötysuhde on suhdeluku, mutta hukkalämmön teho riippuu myös laitoksen koosta.
-**Kaava:** $\eta = \dfrac{P_\text{s}}{P_\text{o}}$ ja $P_\text{h} = P_\text{o} - P_\text{s}$
+**Kaava:** $$\begin{aligned} \eta &= \dfrac{P_\text{s}}{P_\text{o}} \\
+P_\text{o} &= P_\text{s} + P_\text{h} \\
+P_\text{h} &= P_\text{o} - P_\text{s}
+\end{aligned}
+$$
 **Muunnokset:** Kaikki tehot ovat megawatteina, joten muunnoksia ei tarvita.
 **Sijoitus:** Ydinvoimala: $\eta = \tfrac{840\,\text{MW}}{2400\,\text{MW}} = 0{,}350$ ja $P_\text{h} = 2400\,\text{MW} - 840\,\text{MW} = 1560\,\text{MW}$. Kivihiilivoimala: $\eta = \tfrac{432}{1200} = 0{,}360$ ja $P_\text{h} = 1200\,\text{MW} - 432\,\text{MW} = 768\,\text{MW}$. Biovoimala: $\eta = \tfrac{112}{350} = 0{,}320$ ja $P_\text{h} = 350\,\text{MW} - 112\,\text{MW} = 238\,\text{MW}$.
 **Vastaus:** $1560\,\text{MW}$ (ydinvoimala), kolme merkitsevää numeroa kuten sähkötehoissa.
@@ -142,7 +181,14 @@ Suurin hukkalämmön teho on ydinvoimalalla, vaikka sen hyötysuhde ($35{,}0\,\%
 **Annettu:** $\eta_1 = 0{,}920$ (kattila), $\eta_2 = 0{,}410$ (höyrykierto) ja $\eta_3 = 0{,}970$ (generaattori); oppilaan tulos $230\,\%$
 **Kysytty:** laitoksen oikea hyötysuhde $\eta$ prosentteina ja virheen selitys
 **Periaate:** Vaiheet ovat peräkkäin, ja kukin vaihe päästää läpi vain hyötysuhteensa verran siihen tulevasta tehosta. Kun $P_1 = \eta_1 P_\text{o}$, $P_2 = \eta_2 P_1$ ja $P_3 = \eta_3 P_2$, ketjun hyötysuhde on $\eta = \dfrac{P_3}{P_\text{o}} = \eta_1\,\eta_2\,\eta_3$ eli hyötysuhteet kerrotaan.
-**Kaava:** $\eta = \eta_1\,\eta_2\,\eta_3$
+**Kaava:** $$\begin{aligned} P_1 &= \eta_1 P_\text{o} \\
+P_2 &= \eta_2 P_1 \\
+P_3 &= \eta_3 P_2 \\
+\eta &= \dfrac{P_3}{P_\text{o}} \\
+&= \dfrac{\eta_3 \eta_2 \eta_1 P_\text{o}}{P_\text{o}} \\
+&= \eta_1\,\eta_2\,\eta_3
+\end{aligned}
+$$
 **Muunnokset:** Hyötysuhteet ovat dimensiottomia lukuja, joten muunnoksia ei tarvita. Lopuksi tulos kerrotaan sadalla prosenteiksi.
 **Sijoitus:** $\eta = 0{,}920 \cdot 0{,}410 \cdot 0{,}970 = 0{,}3659 = 36{,}6\,\%$
 **Vastaus:** $36{,}6\,\%$, kolme merkitsevää numeroa kuten annetuissa hyötysuhteissa.
@@ -176,7 +222,11 @@ Lähin vaihtoehto on $500\,\text{MW}$. Järkevyys: tulos on noin $42\,\%$ poltto
 **Annettu:** $P_\text{o} = 600\,\text{MW}$. Pelkkä sähkö: $P_\text{s,0} = 240\,\text{MW}$. Täysi yhteistuotanto: $P_\text{s,täysi} = 180\,\text{MW}$ ja $P_\text{k,täysi} = 348\,\text{MW}$. Nyt kaukolämpöteho on $P_\text{k} = 200\,\text{MW}$.
 **Kysytty:** sähköteho $P_\text{s}$ megawatteina ja kokonaishyötysuhde $\eta_\text{kok}$
 **Periaate:** Tehtävän mukaan sähköteho pienenee lineaarisesti, kun kaukolämpöteho kasvaa, joten kaksi ääritilaa määrittävät suoran. Kaukolämpöä otetaan välitilassa, joten sähköteho saadaan siltä suoralta. Kokonaishyötysuhde on sähkön ja kaukolämmön yhteisteho jaettuna polttoainetehosta.
-**Kaava:** $P_\text{s} = P_\text{s,0} - k P_\text{k}$, missä $k = \dfrac{P_\text{s,0} - P_\text{s,täysi}}{P_\text{k,täysi}}$, ja $\eta_\text{kok} = \dfrac{P_\text{s} + P_\text{k}}{P_\text{o}}$
+**Kaava:** $$\begin{aligned} k &= \dfrac{P_\text{s,0} - P_\text{s,täysi}}{P_\text{k,täysi}} \\
+P_\text{s} &= P_\text{s,0} - k P_\text{k} \\
+\eta_\text{kok} &= \dfrac{P_\text{s} + P_\text{k}}{P_\text{o}}
+\end{aligned}
+$$
 **Muunnokset:** Kaikki tehot ovat megawatteina ja $k$ on dimensioton luku, joten muunnoksia ei tarvita.
 **Sijoitus:** $k = \dfrac{240\,\text{MW} - 180\,\text{MW}}{348\,\text{MW}} = 0{,}17241$ ja $P_\text{s} = 240\,\text{MW} - 0{,}17241 \cdot 200\,\text{MW} = 205{,}517\,\text{MW}$. Sitten $\eta_\text{kok} = \dfrac{205{,}517\,\text{MW} + 200\,\text{MW}}{600\,\text{MW}} = 0{,}67586 = 67{,}6\,\%$.
 **Vastaus:** $P_\text{s} = 206\,\text{MW}$ ja $\eta_\text{kok} = 67{,}6\,\%$, kolme merkitsevää numeroa eli megawatin tarkkuus, koska kaikki tehot on annettu megawatin tarkkuudella: erotus $240 - 180 = 60\,\text{MW}$ on sillä tarkkuudella, ja vähennettävä $0{,}172 \cdot 200 \approx 34\,\text{MW}$ on ykkösten tarkkuudella.
@@ -186,7 +236,12 @@ Lähin vaihtoehto on $500\,\text{MW}$. Järkevyys: tulos on noin $42\,\%$ poltto
 **Annettu:** sähköenergia $E = 36{,}0\,\text{GWh}$, hyötysuhde $\eta = 0{,}380$ ja hiilen lämpöarvo $H = 25{,}0\,\tfrac{\text{MJ}}{\text{kg}}$; annettu $1\,\text{GWh} = 3{,}60 \cdot 10^{12}\,\text{J}$
 **Kysytty:** vuodessa poltettavan hiilen massa $m$ kilotonneina
 **Periaate:** Energia säilyy: hiilen kemiallinen energia $Q_1$ muuttuu sähköksi hyötysuhteella $\eta$, ja loput siirtyy hukkalämpönä ympäristöön. Hyötysuhteen nimittäjä on ostettu polttoaine, ja polttoaineen energia on lämpöarvo kertaa massa.
-**Kaava:** $E = \eta Q_1$ ja $Q_1 = H m$, joten $m = \dfrac{E}{\eta H}$
+**Kaava:** $$\begin{aligned} E &= \eta Q_1 \\
+Q_1 &= H m \\
+E &= \eta H m \\
+m &= \dfrac{E}{\eta H}
+\end{aligned}
+$$
 **Muunnokset:** $E = 36{,}0 \cdot 3{,}60 \cdot 10^{12}\,\text{J} = 1{,}296 \cdot 10^{14}\,\text{J}$ ja $H = 25{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$. Lopuksi $1\,\text{kt} = 10^6\,\text{kg}$.
 **Sijoitus:** $m = \dfrac{1{,}296 \cdot 10^{14}\,\text{J}}{0{,}380 \cdot 25{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}} = 1{,}3642 \cdot 10^7\,\text{kg} = 13{,}642\,\text{kt}$
 **Vastaus:** $13{,}6\,\text{kt}$, kolme merkitsevää numeroa, koska sähköenergia $36{,}0\,\text{GWh}$, hyötysuhde $0{,}380$, lämpöarvo $25{,}0\,\tfrac{\text{MJ}}{\text{kg}}$ ja muuntokerroin $3{,}60 \cdot 10^{12}\,\text{J}/\text{GWh}$ ovat kaikki kolmella numerolla.
@@ -198,7 +253,12 @@ Hyötysuhteita ei voi verrata suoraan: hiilivoimalassa nimittäjä on ostettu po
 **Annettu:** lämmitystarve $Q_1 = 100\,\text{kWh}$, lämpökerroin $\varepsilon = 3{,}00$, voimalan hyötysuhde $\eta_\text{voimala} = 0{,}400$ ja siirron osuus $\eta_\text{siirto} = 0{,}950$
 **Kysytty:** voimalaitoksen polttoaineen energia $E_\text{polttoaine}$ kilowattitunteina
 **Periaate:** Lämpöpumppu siirtää lämpöä ulkoa sisälle ja käyttää siihen sähköä, joten lämpökerroin kertoo lämmön ja sähkön suhteen. Sähkö on tuotettu polttoaineesta ketjussa, jonka jokainen vaihe päästää läpi vain osan energiasta, joten polttoaine saadaan jakamalla sähkö ketjun hyötysuhteella.
-**Kaava:** $\varepsilon = \dfrac{Q_1}{W}$, joten $W = \dfrac{Q_1}{\varepsilon}$, ja $E_\text{polttoaine} = \dfrac{W}{\eta_\text{siirto}\, \eta_\text{voimala}}$, siis $E_\text{polttoaine} = \dfrac{Q_1}{\eta_\text{siirto}\, \eta_\text{voimala}\, \varepsilon}$. Lämpöpumpussa $Q_1$ on sisälle luovutettu lämpö ja $W$ pumpun käyttämä sähköenergia.
+**Kaava:** $$\begin{aligned} \varepsilon &= \dfrac{Q_1}{W} \\
+W &= \dfrac{Q_1}{\varepsilon} \\
+E_\text{polttoaine} &= \dfrac{W}{\eta_\text{siirto}\, \eta_\text{voimala}} \\
+&= \dfrac{Q_1}{\eta_\text{siirto}\, \eta_\text{voimala}\, \varepsilon}
+\end{aligned}
+$$ Lämpöpumpussa $Q_1$ on sisälle luovutettu lämpö ja $W$ pumpun käyttämä sähköenergia.
 **Muunnokset:** Kaikki energiat ovat kilowattitunteina ja kertoimet dimensiottomia, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{polttoaine} = \dfrac{100\,\text{kWh}}{0{,}950 \cdot 0{,}400 \cdot 3{,}00} = \dfrac{100\,\text{kWh}}{1{,}14} = 87{,}719\,\text{kWh}$
 **Vastaus:** $87{,}7\,\text{kWh}$, kolme merkitsevää numeroa, koska kertoimet $0{,}950$, $0{,}400$ ja $3{,}00$ ovat kolmella numerolla ja lämmitystarve $100\,\text{kWh}$ on annettu kilowattitunnin tarkkuudella.
@@ -208,7 +268,14 @@ Hyötysuhteita ei voi verrata suoraan: hiilivoimalassa nimittäjä on ostettu po
 **Annettu:** sähkön tarve $P_\text{s} = 100\,\text{MW}$ ja kaukolämmön tarve $P_\text{k} = 200\,\text{MW}$. A: lauhdevoimalaitoksen hyötysuhde $\eta_\text{s,A} = 0{,}400$ ja lämpökattilan $\eta_\text{kat} = 0{,}900$. B: yhteistuotantolaitoksen sähköhyötysuhde $\eta_\text{s,B} = 0{,}320$ ja kaukolämpöteho $0{,}560\,P_{\text{o},\text{B}}$; puuttuva lämpö tuotetaan samanlaisella lämpökattilalla ($\eta_\text{kat} = 0{,}900$)
 **Kysytty:** polttoainetehojen erotus $P_{\text{o},\text{A}} - P_{\text{o},\text{B}}$ megawatteina
 **Periaate:** Polttoaineteho saadaan jakamalla hyötyteho hyötysuhteella. Vaihtoehdossa A sähkö ja lämpö tuotetaan erikseen, joten polttoainetehot lasketaan yhteen. Vaihtoehdossa B laitos mitoitetaan sähkötarpeen mukaan, ja sen tuottama kaukolämpö vähennetään lämpötarpeesta; jäljelle jäävä lämpö tuotetaan kattilassa.
-**Kaava:** A: $P_{\text{o},\text{A}} = \dfrac{P_\text{s}}{\eta_\text{s,A}} + \dfrac{P_\text{k}}{\eta_\text{kat}}$. B: $P_{\text{o},\text{CHP}} = \dfrac{P_\text{s}}{\eta_\text{s,B}}$, $P_\text{k,CHP} = 0{,}560\,P_{\text{o},\text{CHP}}$ ja $P_{\text{o},\text{B}} = P_{\text{o},\text{CHP}} + \dfrac{P_\text{k} - P_\text{k,CHP}}{\eta_\text{kat}}$. Erotus on $P_{\text{o},\text{A}} - P_{\text{o},\text{B}}$.
+**Kaava:** $$\begin{aligned} P_\text{o} &= \dfrac{P_\text{hyöty}}{\eta} \\
+P_{\text{o},\text{A}} &= \dfrac{P_\text{s}}{\eta_\text{s,A}} + \dfrac{P_\text{k}}{\eta_\text{kat}} \\
+P_{\text{o},\text{CHP}} &= \dfrac{P_\text{s}}{\eta_\text{s,B}} \\
+P_\text{k,CHP} &= 0{,}560\,P_{\text{o},\text{CHP}} \\
+P_{\text{o},\text{B}} &= P_{\text{o},\text{CHP}} + \dfrac{P_\text{k} - P_\text{k,CHP}}{\eta_\text{kat}} \\
+P_{\text{o},\text{A}} - P_{\text{o},\text{B}} &= \dfrac{P_\text{s}}{\eta_\text{s,A}} + \dfrac{P_\text{k}}{\eta_\text{kat}} - P_{\text{o},\text{B}}
+\end{aligned}
+$$
 **Muunnokset:** Kaikki tehot ovat megawatteina ja hyötysuhteet dimensiottomia lukuja, joten muunnoksia ei tarvita.
 **Sijoitus:** A: $P_{\text{o},\text{A}} = \dfrac{100\,\text{MW}}{0{,}400} + \dfrac{200\,\text{MW}}{0{,}900} = 250\,\text{MW} + 222{,}22\,\text{MW} = 472{,}22\,\text{MW}$. B: $P_{\text{o},\text{CHP}} = \dfrac{100\,\text{MW}}{0{,}320} = 312{,}5\,\text{MW}$ ja $P_\text{k,CHP} = 0{,}560 \cdot 312{,}5\,\text{MW} = 175{,}0\,\text{MW}$. Kattilan on tuotettava $$\begin{aligned} &200\,\text{MW} - 175{,}0\,\text{MW} \\ &= 25{,}0\,\text{MW} \end{aligned}$$, joten kattilan polttoaineteho on $\dfrac{25{,}0\,\text{MW}}{0{,}900} = 27{,}78\,\text{MW}$ ja $$\begin{aligned} P_{\text{o},\text{B}} &= 312{,}5\,\text{MW} + 27{,}78\,\text{MW} \\ &= 340{,}28\,\text{MW} \end{aligned}$$. Erotus on $$\begin{aligned} &472{,}22\,\text{MW} - 340{,}28\,\text{MW} \\ &= 131{,}94\,\text{MW} \end{aligned}$$.
 **Vastaus:** $132\,\text{MW}$, kolme merkitsevää numeroa kuten annetuissa hyötysuhteissa. Vaihtoehto B tarvitsee noin $28\,\%$ vähemmän polttoainetta.
@@ -219,7 +286,12 @@ Hyötysuhteita ei voi verrata suoraan: hiilivoimalassa nimittäjä on ostettu po
 **Kysytty:** lauhduttimeen siirtyvä lämpöteho $P_\text{L}$ megawatteina
 **Periaate:** Lauhduttimen lämpö lämmittää jäähdytysvettä, ja lämpömäärä on $Q = cm\,\Delta T$, kun vesi pysyy nesteenä. Teho on lämpömäärä aikayksikköä kohti, joten $P_\text{L} = c\,q_m\,\Delta T$. Lämpötilan nousu vaihtelee kuukausittain hieman, joten käytetään keskiarvoa.
 **Kuvaajan lukeminen:** Taulukosta lasketaan nousu $\Delta T = T_\text{ulos} - T_\text{sisään}$ kunakin kuukautena: tammikuu $10{,}9\,\text{K}$, huhtikuu $10{,}7\,\text{K}$, heinäkuu $10{,}6\,\text{K}$ ja syyskuu $10{,}9\,\text{K}$. Lämpötilaero on sama celsius- ja kelvinasteikolla.
-**Kaava:** $\Delta T_\text{ka} = \dfrac{\Sigma\,\Delta T}{4}$ ja $P_\text{L} = c\,q_m\,\Delta T_\text{ka}$
+**Kaava:** $$\begin{aligned} \Delta T_\text{ka} &= \dfrac{\Sigma\,\Delta T}{4} \\
+Q &= c m \Delta T_\text{ka} \\
+P_\text{L} &= \dfrac{Q}{t} \\
+&= c\,q_m\,\Delta T_\text{ka}
+\end{aligned}
+$$
 **Muunnokset:** $q_m = 38{,}0\,\text{t/s} = 38\,000\,\text{kg/s}$. Tulos muunnetaan wateista megawateiksi, $1\,\text{MW} = 10^6\,\text{W}$.
 **Sijoitus:** Nousujen summa on $$\begin{aligned} &10{,}9 + 10{,}7 + 10{,}6 + 10{,}9 \\ &= 43{,}1\,\text{K} \end{aligned}$$, joten $\Delta T_\text{ka} = 10{,}775\,\text{K}$. Tällöin
 $$\begin{aligned} P_\text{L} &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 38\,000\,\tfrac{\text{kg}}{\text{s}} \cdot 10{,}775\,\text{K} \\ &= 1{,}7156 \cdot 10^{9}\,\text{W} \\ &= 1716\,\text{MW} \end{aligned}$$
@@ -232,7 +304,12 @@ Vesi on lauhduttimen jälkeen vain noin $11\,\text{K}$ ympäristöä lämpimämp
 **Annettu:** vesivirta $q_m = 80\,\text{kg/s}$, lämpötilan nousu $\Delta T = 40\,\text{K}$; taulukosta (MAFY-taulukko, ominaislämpökapasiteetit, nesteet, vesi) $c = 4{,}182\,\text{kJ/(kg}\cdot\text{K)}$
 **Kysytty:** kaukolämpöteho $P_\text{k}$ megawatteina
 **Periaate:** Verkon veteen siirtyvä lämpö on $Q = cm\Delta T$. Kun vettä virtaa tasaisesti massa $m$ ajassa $t$, lämpöteho on $P = Q/t = c\,(m/t)\,\Delta T$ eli $P_\text{k} = c\,q_m\,\Delta T$.
-**Kaava:** $P_\text{k} = c\,q_m\,\Delta T$
+**Kaava:** $$\begin{aligned} Q &= c m \Delta T \\
+P_\text{k} &= \dfrac{Q}{t} \\
+&= c\,\dfrac{m}{t}\,\Delta T \\
+&= c\,q_m\,\Delta T
+\end{aligned}
+$$
 **Muunnokset:** $\dfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot \dfrac{\text{kg}}{\text{s}} \cdot \text{K} = \dfrac{\text{kJ}}{\text{s}} = \text{kW}$ ja $1\,\text{MW} = 1000\,\text{kW}$
 **Sijoitus:** $P_\text{k} = 4{,}182\,\dfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 80\,\dfrac{\text{kg}}{\text{s}} \cdot 40\,\text{K} = 13\,382\,\text{kW} = 13{,}4\,\text{MW}$
 **Vastaus:** $P_\text{k} \approx 13\,\text{MW}$, kaksi merkitsevää numeroa kuten tiedoissa $80\,\text{kg/s}$ ja $40\,\text{K}$. Arvo $c = 4{,}182\,\text{kJ/(kg}\cdot\text{K)}$ on MAFY-taulukosta (ominaislämpökapasiteetit, nesteet, vesi, $20\,{}^\circ\text{C}$); kuumalle vedelle ero on pieni, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.

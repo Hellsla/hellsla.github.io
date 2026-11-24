@@ -2,7 +2,7 @@
 **Given:** air in a fridge, $V = 0.250\,\text{m}^3$, $T = 278\,\text{K}$, $p = 1.01 \cdot 10^5\,\text{Pa}$; $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Find:** amount of substance $n$ in moles
 **Principle:** The air in the fridge is in a fixed container, and its pressure, volume and temperature are all known at the same time. The equation of state of an ideal gas links these three to the amount of substance, and air behaves like an ideal gas at ordinary pressure and temperature.
-**Formula:** $pV = nRT$, so $n = \dfrac{pV}{RT}$
+**Formula:** $$\begin{aligned} pV &= nRT \\ n &= \dfrac{pV}{RT} \end{aligned}$$
 **Conversions:** No conversions are needed, because the volume is in cubic metres, the pressure in pascals and the temperature in kelvins. Then $\text{Pa}\cdot\text{m}^3 = \text{J}$, and the joules cancel.
 **Substitution:** $n = \dfrac{1.01 \cdot 10^5\,\text{Pa} \cdot 0.250\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 278\,\text{K}} = 10.93\,\text{mol}$
 **Answer:** $10.9\,\text{mol}$, three significant figures. All the data ($0.250\,\text{m}^3$, $278\,\text{K}$, $1.01 \cdot 10^5\,\text{Pa}$ and $R = 8.31$) are given with three digits.
@@ -12,7 +12,7 @@
 **Given:** air in a basketball, $V = 0.00710\,\text{m}^3$, $n = 0.460\,\text{mol}$, $T = 293\,\text{K}$; $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Find:** pressure $p$ in kilopascals
 **Principle:** The ball contains a certain amount of air in a certain volume and at a certain temperature. The air behaves as an ideal gas, so the equation of state gives the pressure directly from the amount of substance, the temperature and the volume.
-**Formula:** $pV = nRT$, so $p = \dfrac{nRT}{V}$
+**Formula:** $$\begin{aligned} pV &= nRT \\ p &= \dfrac{nRT}{V} \end{aligned}$$
 **Conversions:** The data are already in base units, so the substitution gives the pressure in pascals, because $\tfrac{\text{J}}{\text{m}^3} = \text{Pa}$. Finally $1\,\text{kPa} = 1000\,\text{Pa}$.
 **Substitution:** $p = \dfrac{0.460\,\text{mol} \cdot 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 293\,\text{K}}{0.00710\,\text{m}^3} = 157\,750\,\text{Pa} = 157.75\,\text{kPa}$
 **Answer:** $158\,\text{kPa}$, three significant figures. All the data ($0.460\,\text{mol}$, $0.00710\,\text{m}^3$, $293\,\text{K}$ and $R = 8.31$) are given with three digits.
@@ -22,7 +22,7 @@
 **Given:** carbon dioxide in a life jacket, $n = 0.400\,\text{mol}$, $T = 283\,\text{K}$, $p = 1.05 \cdot 10^5\,\text{Pa}$; $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Find:** volume $V$ in cubic metres
 **Principle:** When the gas has been released into the jacket, its pressure is the pressure in the jacket and its temperature is known. The amount of gas is known, so the equation of state gives the volume. The type of gas does not affect the calculation, because the equation of state has no molar mass.
-**Formula:** $pV = nRT$, so $V = \dfrac{nRT}{p}$
+**Formula:** $$\begin{aligned} pV &= nRT \\ V &= \dfrac{nRT}{p} \end{aligned}$$
 **Conversions:** No conversions are needed: the amount of substance is in moles, the temperature in kelvins and the pressure in pascals, so the volume comes out in cubic metres.
 **Substitution:** $V = \dfrac{0.400\,\text{mol} \cdot 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 283\,\text{K}}{1.05 \cdot 10^5\,\text{Pa}} = 0.008959\,\text{m}^3$
 **Answer:** $0.00896\,\text{m}^3$, three significant figures. All the data ($0.400\,\text{mol}$, $283\,\text{K}$, $1.05 \cdot 10^5\,\text{Pa}$ and $R = 8.31$) are given with three digits.
@@ -32,7 +32,7 @@
 **Given:** air in a barrel, $V = 0.200\,\text{m}^3$, $n = 8.40\,\text{mol}$, $p = 1.13 \cdot 10^5\,\text{Pa}$; $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Find:** temperature $T$ in kelvins
 **Principle:** The barrel is closed, so the amount of air and the volume are known, and the pressure has been measured. The equation of state gives the temperature when the air behaves as an ideal gas.
-**Formula:** $pV = nRT$, so $T = \dfrac{pV}{nR}$
+**Formula:** $$\begin{aligned} pV &= nRT \\ T &= \dfrac{pV}{nR} \end{aligned}$$
 **Conversions:** No conversions are needed: the pressure is in pascals, the volume in cubic metres and the amount of substance in moles, so the result comes out directly in kelvins.
 **Substitution:** $T = \dfrac{1.13 \cdot 10^5\,\text{Pa} \cdot 0.200\,\text{m}^3}{8.40\,\text{mol} \cdot 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}} = 323.8\,\text{K}$
 **Answer:** $324\,\text{K}$, three significant figures. All the data ($0.200\,\text{m}^3$, $8.40\,\text{mol}$, $1.13 \cdot 10^5\,\text{Pa}$ and $R = 8.31$) are given with three digits.
@@ -44,7 +44,7 @@ With the same amount of substance and volume, a pressure of $101\,\text{kPa}$ wo
 **Given:** carbon dioxide, $m = 425\,\text{g}$, $M = 44\,\text{g/mol}$
 **Find:** amount of substance $n$ in moles
 **Principle:** The molar mass tells the mass of one mole, so the total mass of the gas divided by the molar mass gives the number of moles. The equation of state is not needed, because pressure and temperature do not affect the amount of substance.
-**Formula:** $M = \dfrac{m}{n}$, so $n = \dfrac{m}{M}$
+**Formula:** $$\begin{aligned} M &= \dfrac{m}{n} \\ n &= \dfrac{m}{M} \end{aligned}$$
 **Conversions:** No conversions are needed, because the mass and the molar mass are both in grams. The grams cancel, and the mole is left.
 **Substitution:** $n = \dfrac{425\,\text{g}}{44\,\text{g/mol}} = 9.659\,\text{mol}$
 **Answer:** $9.7\,\text{mol}$, two significant figures. The limiting datum is the molar mass $44\,\text{g/mol}$ (two digits); the mass $425\,\text{g}$ has three digits.
@@ -54,7 +54,7 @@ With the same amount of substance and volume, a pressure of $101\,\text{kPa}$ wo
 **Given:** oxygen, $V = 10.0\,\textsf{l}$, $m = 2.40\,\text{kg}$, $\theta = 15\,{}^\circ\text{C}$, $M = 32.0\,\text{g/mol}$; $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Find:** pressure $p$ in bars, where $1\,\text{bar} = 100\,\text{kPa}$
 **Principle:** The oxygen in the cylinder is in a fixed volume at a known temperature, and its amount of substance can be found by weighing from the mass and the molar mass. We assume that oxygen is an ideal gas, so the equation of state gives the pressure.
-**Formula:** $pV = nRT$ and $n = \dfrac{m}{M}$, so $p = \dfrac{nRT}{V} = \dfrac{mRT}{MV}$
+**Formula:** $$\begin{aligned} n &= \dfrac{m}{M} \\ pV &= nRT \\ p &= \dfrac{nRT}{V} \\ &= \dfrac{mRT}{MV} \end{aligned}$$
 **Conversions:** $V = 10.0\,\textsf{l} = 0.0100\,\text{m}^3$, $M = 32.0\,\text{g/mol} = 0.0320\,\text{kg/mol}$ and $T = (15 + 273.15)\,\text{K} = 288.15\,\text{K}$. Finally $1\,\text{bar} = 10^5\,\text{Pa}$.
 **Substitution:** $n = \dfrac{2.40\,\text{kg}}{0.0320\,\text{kg/mol}} = 75.0\,\text{mol}$. $p = \dfrac{75.0\,\text{mol} \cdot 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 288.15\,\text{K}}{0.0100\,\text{m}^3} = 1.796 \cdot 10^7\,\text{Pa} = 179.6\,\text{bar}$
 **Answer:** $180\,\text{bar}$, three significant figures. All the data ($10.0\,\textsf{l}$, $2.40\,\text{kg}$, $32.0\,\text{g/mol}$ and $R = 8.31$) are given with three digits, and the $288\,\text{K}$ obtained from the whole degrees $15\,{}^\circ\text{C}$ also has three digits.
@@ -72,7 +72,7 @@ At such a high pressure a real gas differs from an ideal gas by a few percent, b
 The equation of state gives the amount of substance from the pressure, the volume and the temperature, and the molar mass is the mass divided by the amount of substance.
 
 The equation of state does not contain the type of gas, so the type is identified only from the molar mass.
-**Formula:** $pV = nRT$ and $n = \dfrac{m}{M}$, so $\dfrac{pV}{RT} = \dfrac{m}{M}$ and $M = \dfrac{mRT}{pV}$
+**Formula:** $$\begin{aligned} pV &= nRT \\ n &= \dfrac{m}{M} \\ pV &= \dfrac{m}{M}\,RT \\ M &= \dfrac{mRT}{pV} \end{aligned}$$
 **Conversions:** $V = 1.00\,\textsf{l} = 0.00100\,\text{m}^3$, $p = 101\,\text{kPa} = 101\,000\,\text{Pa}$ and $T = (22 + 273.15)\,\text{K} = 295.15\,\text{K}$. The mass is left in grams, so the result is in $\text{g/mol}$.
 **Substitution:** $M = \dfrac{1.15\,\text{g} \cdot 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 295.15\,\text{K}}{101\,000\,\text{Pa} \cdot 0.00100\,\text{m}^3} = 27.93\,\tfrac{\text{g}}{\text{mol}}$
 **Answer:** $27.9\,\text{g/mol}$, three significant figures. All the data ($1.00\,\textsf{l}$, $1.15\,\text{g}$, $101\,\text{kPa}$ and $R = 8.31$) are given with three digits, and $295\,\text{K}$ (from the whole degrees $22\,{}^\circ\text{C}$) also has three digits. The gas is nitrogen ($28\,\text{g/mol}$).
@@ -82,7 +82,7 @@ The equation of state does not contain the type of gas, so the type is identifie
 **Given:** air in a cylinder, initially $V_1 = 0.500\,\textsf{l}$, $p_1 = 101\,\text{kPa}$, $\theta_1 = 30\,{}^\circ\text{C}$; finally $V_2 = 0.0300\,\textsf{l}$, $p_2 = 4.60\,\text{MPa}$
 **Find:** final temperature $\theta_2$ in degrees Celsius, and whether the fuel ignites ($250\,{}^\circ\text{C}$)
 **Principle:** The valves are closed, so the amount of air stays the same and $nR$ is constant. Then the equation of state gives the combined gas law between the initial and final state.
-**Formula:** $\dfrac{p_1 V_1}{T_1} = \dfrac{p_2 V_2}{T_2}$, so $T_2 = T_1 \cdot \dfrac{p_2 V_2}{p_1 V_1}$ and $\theta_2 = T_2 - 273.15\,\text{K}$
+**Formula:** $$\begin{aligned} p_1V_1 &= nRT_1 \\ p_2V_2 &= nRT_2 \\ \dfrac{p_2V_2}{p_1V_1} &= \dfrac{T_2}{T_1} \\ T_2 &= T_1 \cdot \dfrac{p_2V_2}{p_1V_1} \\ \theta_2 &= T_2 - 273.15\,\text{K} \end{aligned}$$
 **Conversions:** $T_1 = (30 + 273.15)\,\text{K} = 303.15\,\text{K}$. The pressures and volumes appear as ratios, so they cancel when they are in the same units: $4.60\,\text{MPa} = 4600\,\text{kPa}$ and the litres stay as litres.
 **Substitution:** $T_2 = 303.15\,\text{K} \cdot \dfrac{4600\,\text{kPa} \cdot 0.0300\,\textsf{l}}{101\,\text{kPa} \cdot 0.500\,\textsf{l}} = 828.4\,\text{K}$. $\theta_2 = 828.4 - 273.15 = 555.3\,{}^\circ\text{C}$
 **Answer:** $555\,{}^\circ\text{C}$, three significant figures. All the data ($0.500\,\textsf{l}$, $101\,\text{kPa}$, $0.0300\,\textsf{l}$, $4.60\,\text{MPa}$ and $303\,\text{K}$ from the whole degrees $30\,{}^\circ\text{C}$) have three digits, and subtracting $273.15\,\text{K}$ from the temperature $828\,\text{K}$ keeps the units. The fuel ignites, because $555\,{}^\circ\text{C}$ is clearly above $250\,{}^\circ\text{C}$.
@@ -95,7 +95,7 @@ The result agrees, and the temperature rises when a gas is compressed, so a dies
 **Find:** the difference of the amounts of substance $n_\text{A} - n_\text{B}$
 **Principle:** The containers are closed and rigid, so the amount of gas and the volume stay the same and the lines of the graph follow the equation of state. When the pressure of both series is read at the same temperature, the equation of state gives both amounts of substance, and the difference is obtained by subtracting.
 **Reading the graph:** Both series are read at the same temperature $T = 400\,\text{K}$, which is a vertical grid line: gas A $p_\text{A} = 100\,\text{kPa}$ and gas B $p_\text{B} = 60\,\text{kPa}$. The pressures of the points at $T = 200\,\text{K}$ are half of these, so the lines pass through the origin, as $p = nRT/V$ requires.
-**Formula:** $pV = nRT$, so $n = \dfrac{pV}{RT}$ and $n_\text{A} - n_\text{B} = \dfrac{(p_\text{A} - p_\text{B})\,V}{RT}$
+**Formula:** $$\begin{aligned} pV &= nRT \\ n &= \dfrac{pV}{RT} \\ n_\text{A} - n_\text{B} &= \dfrac{p_\text{A}V}{RT} - \dfrac{p_\text{B}V}{RT} \\ &= \dfrac{(p_\text{A} - p_\text{B})\,V}{RT} \end{aligned}$$
 **Conversions:** $p_\text{A} - p_\text{B} = (100 - 60)\,\text{kPa} = 40\,\text{kPa} = 40\,000\,\text{Pa}$ and $V = 2.00\,\textsf{l} = 0.00200\,\text{m}^3$. The temperature is already in kelvins.
 **Substitution:** $n_\text{A} - n_\text{B} = \dfrac{40\,000\,\text{Pa} \cdot 0.00200\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 400\,\text{K}} = \dfrac{80\,\text{J}}{3324\,\tfrac{\text{J}}{\text{mol}}} = 0.0241\,\text{mol}$
 **Answer:** $n_\text{A} - n_\text{B} \approx 0.024\,\text{mol}$, two significant figures, because the pressure $60\,\text{kPa}$ read from the graph and the pressure difference $40\,\text{kPa}$ have two figures; the volume $2.00\,\textsf{l}$ has three and does not limit the precision. Separately $n_\text{A} \approx 0.060\,\text{mol}$ and $n_\text{B} \approx 0.036\,\text{mol}$. The points are read from grid crossings, so the accepted range is narrow: $0.0233$–$0.0247\,\text{mol}$.
@@ -116,7 +116,7 @@ The correct value is $\theta = 301 - 273 = 28\,{}^\circ\text{C}$. Check: $574\,{
 **Given:** air in the lungs, $V = 0.55\,\textsf{l}$, $\theta = 37\,{}^\circ\text{C}$, $p = 101\,\text{kPa}$; $N_\text{A} = 6.022 \cdot 10^{23}\,\tfrac{1}{\text{mol}}$, $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Find:** number of molecules $N$
 **Principle:** The equation of state gives the amount of substance, and the Avogadro constant converts it into the number of molecules. Air is a mixture of gases, but the equation of state contains only the total amount of substance of all the particles and no molar mass. So you do not need to know which gases the air consists of.
-**Formula:** $pV = nRT$ and $N = n N_\text{A}$, so $n = \dfrac{pV}{RT}$ and $N = \dfrac{pV N_\text{A}}{RT}$
+**Formula:** $$\begin{aligned} pV &= nRT \\ n &= \dfrac{pV}{RT} \\ N &= n N_\text{A} \\ &= \dfrac{pV N_\text{A}}{RT} \end{aligned}$$
 **Conversions:** $V = 0.55\,\textsf{l} = 0.00055\,\text{m}^3$, $p = 101\,\text{kPa} = 101\,000\,\text{Pa}$ and $T = (37 + 273.15)\,\text{K} = 310.15\,\text{K}$.
 **Substitution:** The numerator is $$\begin{aligned} &101\,000\,\text{Pa} \cdot 0.00055\,\text{m}^3 \\ &\cdot 6.022 \cdot 10^{23}\,\tfrac{1}{\text{mol}} \\ &= 3.345 \cdot 10^{25}\,\tfrac{\text{J}}{\text{mol}} \end{aligned}$$ and the denominator is $8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 310.15\,\text{K} = 2577\,\tfrac{\text{J}}{\text{mol}}$, so
 
@@ -131,7 +131,7 @@ $$N = \dfrac{3.345 \cdot 10^{25}\,\tfrac{\text{J}}{\text{mol}}}{2577\,\tfrac{\te
 **Principle:** The gap is filled at the same pressure and temperature, so the volume is the same and there is the same number of moles of gas with either filling.
 
 The difference in mass is due only to the greater molar mass of argon, so you can get the amount of substance from the difference in mass and the difference in molar masses.
-**Formula:** $\Delta m = n (M_\text{Ar} - M_\text{air})$, so $n = \dfrac{\Delta m}{M_\text{Ar} - M_\text{air}}$. From the equation of state $V = \dfrac{nRT}{p}$ and $V = Ad$, so $d = \dfrac{nRT}{pA} = \dfrac{\Delta m\,RT}{pA(M_\text{Ar} - M_\text{air})}$
+**Formula:** $$\begin{aligned} \Delta m &= n (M_\text{Ar} - M_\text{ilma}) \\ n &= \dfrac{\Delta m}{M_\text{Ar} - M_\text{ilma}} \\ pV &= nRT \\ V &= Ad \\ pAd &= nRT \\ d &= \dfrac{nRT}{pA} \\ &= \dfrac{\Delta m\,RT}{pA(M_\text{Ar} - M_\text{ilma})} \end{aligned}$$
 **Conversions:** $T = (20 + 273.15)\,\text{K} = 293.15\,\text{K}$ and $p = 101\,\text{kPa} = 101\,000\,\text{Pa}$. The mass and the molar masses are in grams, so $n$ comes out directly in moles. Finally $1\,\text{m} = 1000\,\text{mm}$.
 **Substitution:** $n = \dfrac{6.0\,\text{g}}{40\,\text{g/mol} - 29\,\text{g/mol}} = 0.5455\,\text{mol}$.
 
@@ -148,7 +148,7 @@ $$\begin{aligned} d &= \dfrac{1328.9\,\text{J}}{121\,200\,\text{N}} \\ &= 0.0109
 **Principle:** The volume and the temperature of the tank stay the same, so the drop in pressure is due only to the decrease in the amount of substance: $\Delta p V = \Delta n RT$.
 
 The reading of the gauge is the total pressure minus atmospheric pressure, and atmospheric pressure is the same at the start and at the end. It cancels in the pressure difference, so the readings can be used as they are.
-**Formula:** $\Delta n = \dfrac{\Delta p\,V}{RT}$ and $\Delta m = \Delta n\,M$, so $\Delta m = \dfrac{\Delta p\,V M}{RT}$
+**Formula:** $$\begin{aligned} \Delta p\,V &= \Delta n\,RT \\ \Delta n &= \dfrac{\Delta p\,V}{RT} \\ \Delta m &= \Delta n\,M \\ &= \dfrac{\Delta p\,V M}{RT} \end{aligned}$$
 **Conversions:** $\Delta p = 10.0\,\text{bar} - 7.0\,\text{bar} = 3.0\,\text{bar} = 3.0 \cdot 10^5\,\text{Pa}$, $V = 200.0\,\textsf{l} = 0.2000\,\text{m}^3$, $M = 0.029\,\text{kg/mol}$ and $T = (18 + 273.15)\,\text{K} = 291.15\,\text{K}$.
 **Substitution:** $\Delta n = \dfrac{3.0 \cdot 10^5\,\text{Pa} \cdot 0.2000\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 291.15\,\text{K}} = 24.80\,\text{mol}$. $\Delta m = 24.80\,\text{mol} \cdot 0.029\,\tfrac{\text{kg}}{\text{mol}} = 0.7192\,\text{kg}$
 **Answer:** $0.72\,\text{kg}$, two significant figures. The limiting datum is the pressure difference $10.0\,\text{bar} - 7.0\,\text{bar} = 3.0\,\text{bar}$: the difference of the readings has the decimals of the less precise reading, so it has two digits. The volume $200.0\,\textsf{l}$, the molar mass $29\,\text{g/mol}$ and $291\,\text{K}$ have at least two digits and do not limit the result.
@@ -171,7 +171,7 @@ Nor is it the density or the speed of the particles, because the volume $V$ and 
 **Given:** helium, $V_1 = 2.50\,\textsf{l}$, $\theta_1 = 21\,{}^\circ\text{C}$, $p_1 = 101\,\text{kPa}$; $\theta_2 = -9\,{}^\circ\text{C}$, $p_2 = 98\,\text{kPa}$
 **Find:** volume $V_2$ in litres
 **Principle:** No gas escapes, so the amount of substance $n$ stays the same. In both states the equation of state $pV = nRT$ gives the same number $nR = pV/T$, so $p_1V_1/T_1 = p_2V_2/T_2$.
-**Formula:** $\dfrac{p_1V_1}{T_1} = \dfrac{p_2V_2}{T_2}$, so $V_2 = \dfrac{p_1 V_1 T_2}{p_2 T_1}$
+**Formula:** $$\begin{aligned} pV &= nRT \\ \dfrac{pV}{T} &= nR \\ \dfrac{p_1V_1}{T_1} &= \dfrac{p_2V_2}{T_2} \\ V_2 &= \dfrac{p_1 V_1 T_2}{p_2 T_1} \end{aligned}$$
 **Conversions:** $T_1 = (21 + 273.15)\,\text{K} = 294.15\,\text{K}$ and $T_2 = (-9 + 273.15)\,\text{K} = 264.15\,\text{K}$. The units of pressure and volume cancel, so they do not need to be converted.
 **Substitution:** $V_2 = \dfrac{101\,\text{kPa} \cdot 2.50\,\textsf{l} \cdot 264.15\,\text{K}}{98\,\text{kPa} \cdot 294.15\,\text{K}} = 2.314\,\textsf{l}$
 **Answer:** $2.3\,\textsf{l}$, two significant figures, because the pressure $98\,\text{kPa}$ is given with two digits (intermediate result $2.314\,\textsf{l}$).
@@ -186,7 +186,7 @@ Nor is it the density or the speed of the particles, because the volume $V$ and 
 **Given:** tyre, $\theta_1 = 5.0\,{}^\circ\text{C}$, $p_1 = 300\,\text{kPa}$ before the drive; $\theta_2 = 26.0\,{}^\circ\text{C}$, $p_2 = 305\,\text{kPa}$ after the drive; volume $V$ constant
 **Find:** the leaked share $\dfrac{n_1 - n_2}{n_1}$ as a percentage
 **Principle:** The volume is constant, so the equation of state $pV = nRT$ gives the amount of substance $n = \dfrac{pV}{RT}$ in both states. The temperature rises during the drive, so the pressure would rise even in a tyre that does not leak, and the leak shows only when the amounts of substance are compared.
-**Formula:** $n_1 = \dfrac{p_1V}{RT_1}$ and $n_2 = \dfrac{p_2V}{RT_2}$, so $\dfrac{n_2}{n_1} = \dfrac{p_2 T_1}{p_1 T_2}$ and the leaked share is $1 - \dfrac{n_2}{n_1}$
+**Formula:** $$\begin{aligned} pV &= nRT \\ n_1 &= \dfrac{p_1V}{RT_1} \\ n_2 &= \dfrac{p_2V}{RT_2} \\ \dfrac{n_2}{n_1} &= \dfrac{p_2 T_1}{p_1 T_2} \\ \dfrac{n_1 - n_2}{n_1} &= 1 - \dfrac{n_2}{n_1} \\ &= 1 - \dfrac{p_2 T_1}{p_1 T_2} \end{aligned}$$
 **Conversions:** $T_1 = (5.0 + 273.15)\,\text{K} = 278.15\,\text{K}$ and $T_2 = (26.0 + 273.15)\,\text{K} = 299.15\,\text{K}$. The pressures are in the same unit, so they cancel.
 **Substitution:** a) Without a leak the amount of substance and the volume do not change, so $p_2' = p_1 \dfrac{T_2}{T_1} = 300\,\text{kPa} \cdot \dfrac{299.15\,\text{K}}{278.15\,\text{K}} = 322.6\,\text{kPa}$. b) $\dfrac{n_2}{n_1} = \dfrac{305\,\text{kPa} \cdot 278.15\,\text{K}}{300\,\text{kPa} \cdot 299.15\,\text{K}} = 0.9453$, so the leaked share is $1 - 0.9453 = 0.0547$
 **Answer:** $5.5\,\%$, two significant figures: the share is the difference $1 - 0.945$, so the third digit of the pressures decides the second digit.
@@ -205,7 +205,7 @@ The rise in pressure $300 \to 305\,\text{kPa}$ does not alone show a leak, becau
 Read two points far apart from the line: the values of the line are $(280\,\text{K};\ 115.4\,\text{cm}^3)$ and $(360\,\text{K};\ 148.0\,\text{cm}^3)$, not the table values $115.0\,\text{cm}^3$ and $147.6\,\text{cm}^3$. The slope is $k = \dfrac{(148.0 - 115.4)\,\text{cm}^3}{(360 - 280)\,\text{K}} = 0.4075\,\tfrac{\text{cm}^3}{\text{K}}$.
 
 The constant term of the line, $1.1\,\text{cm}^3$, is small compared with the volumes $115$–$148\,\text{cm}^3$, so the line passes almost through the origin.
-**Formula:** $k = \dfrac{nR}{p}$, so $n = \dfrac{kp}{R}$
+**Formula:** $$\begin{aligned} pV &= nRT \\ V &= \dfrac{nR}{p}\,T \\ k &= \dfrac{nR}{p} \\ n &= \dfrac{kp}{R} \end{aligned}$$
 **Conversions:** $k = 0.4075\,\tfrac{\text{cm}^3}{\text{K}} = 0.4075 \cdot 10^{-6}\,\tfrac{\text{m}^3}{\text{K}}$ and $p = 101\,\text{kPa} = 101\,000\,\text{Pa}$. Finally $1\,\text{mol} = 1000\,\text{mmol}$.
 **Substitution:** $n = \dfrac{0.4075 \cdot 10^{-6}\,\tfrac{\text{m}^3}{\text{K}} \cdot 101\,000\,\text{Pa}}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}} = 4.953 \cdot 10^{-3}\,\text{mol}$
 **Answer:** $5.0\,\text{mmol}$, two significant figures, because the measurement uncertainty of the fitted line is about $\pm 0.1\,\text{mmol}$ (intermediate result $4.95\,\text{mmol}$). The line must pass through the origin, because $V = nRT/p$ is directly proportional to the temperature when $T$ is in kelvins: at $T = 0$ the volume would be zero.
@@ -231,7 +231,7 @@ Both series obey Boyle's law, so the decrease of the pressure as the volume incr
 The temperature changes between moments 1 and 2, so the amount of substance is not directly proportional to the pressure: the same pressure corresponds to a greater amount of substance in the cold.
 
 The amount used is the difference of the amounts of substance.
-**Formula:** $n = \dfrac{pV}{RT}$, the amount used $\Delta n = n_1 - n_3$ and the mass $m = \Delta n \cdot M$. The amount of substance in one balloon is $n_\text{b} = \dfrac{p_\text{b}V_\text{b}}{RT_\text{b}}$, and the number of balloons is $\dfrac{\Delta n}{n_\text{b}}$.
+**Formula:** $$\begin{aligned} pV &= nRT \\ n &= \dfrac{pV}{RT} \\ \Delta n &= n_1 - n_3 \\ m &= \Delta n \cdot M \\ n_\text{p} &= \dfrac{p_\text{p}V_\text{p}}{RT_\text{p}} \\ N &= \dfrac{\Delta n}{n_\text{p}} \end{aligned}$$
 **Conversions:** $V = 20.0\,\textsf{l} = 0.0200\,\text{m}^3$ and $V_\text{b} = 0.0050\,\text{m}^3$; $p_1 = 14.2\,\text{bar} = 1.42 \cdot 10^6\,\text{Pa}$, $p_2 = 1.10 \cdot 10^6\,\text{Pa}$ and $p_3 = 6.5 \cdot 10^5\,\text{Pa}$; $T_1 = (5.0 + 273.15)\,\text{K} = 278.15\,\text{K}$ and $T_2 = T_3 = T_\text{b} = 294.15\,\text{K}$.
 **Substitution:** a) $n_1 = \dfrac{1.42 \cdot 10^6\,\text{Pa} \cdot 0.0200\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 278.15\,\text{K}} = 12.29\,\text{mol}$, $n_2 = \dfrac{1.10 \cdot 10^6\,\text{Pa} \cdot 0.0200\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 294.15\,\text{K}} = 9.000\,\text{mol}$ and $n_3 = \dfrac{6.5 \cdot 10^5\,\text{Pa} \cdot 0.0200\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 294.15\,\text{K}} = 5.318\,\text{mol}$. b) $\Delta n = 12.29\,\text{mol} - 5.318\,\text{mol} = 6.968\,\text{mol}$ and $m = 6.968\,\text{mol} \cdot 4.0\,\tfrac{\text{g}}{\text{mol}} = 27.87\,\text{g}$. c) $n_\text{b} = \dfrac{101\,000\,\text{Pa} \cdot 0.0050\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 294.15\,\text{K}} = 0.2066\,\text{mol}$, so the helium used filled $\dfrac{6.968\,\text{mol}}{0.2066\,\text{mol}} = 33.7$ balloons. When the pressure is $101\,\text{kPa}$, the cylinder contains $n_\text{end} = \dfrac{101\,000\,\text{Pa} \cdot 0.0200\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 294.15\,\text{K}} = 0.8264\,\text{mol}$, so $$\begin{aligned} &5.318\,\text{mol} - 0.8264\,\text{mol} \\ &= 4.492\,\text{mol} \end{aligned}$$ is still available, enough for $\dfrac{4.492\,\text{mol}}{0.2066\,\text{mol}} = 21.7$ balloons.
 **Answer:** b) $28\,\text{g}$, two significant figures, because the molar mass $4.0\,\tfrac{\text{g}}{\text{mol}}$ is given with two digits. a) $n_1 = 12.3\,\text{mol}$, $n_2 = 9.00\,\text{mol}$ and $n_3 = 5.32\,\text{mol}$.
@@ -245,7 +245,7 @@ From the pressure difference $14.2 - 6.5 = 7.7\,\text{bar}$ the mass would have 
 **Given:** helium, $V_0 = 2.50\,\text{m}^3$; from the table ground level $p_0 = 101\,\text{kPa}$, $\theta_0 = 15.0\,{}^\circ\text{C}$, height $10\,\text{km}$: $p = 26.5\,\text{kPa}$, $\theta = -50.0\,{}^\circ\text{C}$ and height $15\,\text{km}$: $p = 12.1\,\text{kPa}$, $\theta = -56.5\,{}^\circ\text{C}$; $V_\text{max} = 12.0\,\text{m}^3$; $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
 **Find:** volume $V$ at a height of $10\,\text{km}$ (part b)
 **Principle:** The balloon is closed, so the amount of substance $n$ stays the same. The pressure and temperature of the atmosphere fall, and the pressure of the gas in the balloon is the same as that of the surroundings. The equation of state $pV = nRT$ gives the volume at each height.
-**Formula:** a) $n = \dfrac{p_0V_0}{RT_0}$. b) and c) $V = \dfrac{nRT}{p}$. In the linear estimate the height is $h = h_{10} + (h_{15} - h_{10}) \cdot \dfrac{V_\text{max} - V_{10}}{V_{15} - V_{10}}$.
+**Formula:** $$\begin{aligned} pV &= nRT \\ n &= \dfrac{p_0V_0}{RT_0} \\ V &= \dfrac{nRT}{p} \\ h &= h_{10} + (h_{15} - h_{10}) \cdot \dfrac{V_\text{max} - V_{10}}{V_{15} - V_{10}} \end{aligned}$$
 **Conversions:** $p_0 = 101\,000\,\text{Pa}$, $T_0 = (15.0 + 273.15)\,\text{K} = 288.15\,\text{K}$, $T_{10} = (-50.0 + 273.15)\,\text{K} = 223.15\,\text{K}$, $T_{15} = 216.65\,\text{K}$ and $p_{10} = 26\,500\,\text{Pa}$, $p_{15} = 12\,100\,\text{Pa}$.
 **Substitution:** a) $n = \dfrac{101\,000\,\text{Pa} \cdot 2.50\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 288.15\,\text{K}} = 105.4\,\text{mol}$. b) $$\begin{aligned} &V_{10} \\ &= \dfrac{105.4\,\text{mol} \cdot 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 223.15\,\text{K}}{26\,500\,\text{Pa}} \\ &= 7.379\,\text{m}^3 \end{aligned}$$. c) $$\begin{aligned} &V_{15} \\ &= \dfrac{105.4\,\text{mol} \cdot 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 216.65\,\text{K}}{12\,100\,\text{Pa}} \\ &= 15.69\,\text{m}^3 \end{aligned}$$ and $$\begin{aligned} h &= 10\,\text{km} \\ &+ 5\,\text{km} \cdot \dfrac{(12.0 - 7.379)\,\text{m}^3}{(15.69 - 7.379)\,\text{m}^3} \\ &= 12.8\,\text{km} \end{aligned}$$
 **Answer:** b) $7.4\,\text{m}^3$, two significant figures, because the ICAO values are rounded and the gas of the balloon is not exactly at the temperature of the surrounding air. The amount of helium is a) $105\,\text{mol}$.
@@ -263,7 +263,7 @@ The volume is directly proportional to the temperature and inversely proportiona
 **Given:** $m = 0.500\,\text{kg}$, $V = 10.0\,\textsf{l}$, $T = 293\,\text{K}$, $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$; from the table (MAFY table, atomic masses and molar masses of the elements, argon) $M = 39.95\,\text{g/mol}$
 **Find:** the pressure of the gas $p$ in megapascals
 **Principle:** The gas is enclosed in the cylinder and obeys the ideal gas law $pV = nRT$. The amount of substance comes from the mass and the molar mass, because one mole of argon has the mass $M$.
-**Formula:** $n = \dfrac{m}{M}$ and $pV = nRT$, so $p = \dfrac{nRT}{V}$
+**Formula:** $$\begin{aligned} n &= \dfrac{m}{M} \\ pV &= nRT \\ p &= \dfrac{nRT}{V} \\ &= \dfrac{mRT}{MV} \end{aligned}$$
 **Conversions:** $0.500\,\text{kg} = 500\,\text{g}$, because $1\,\text{kg} = 1000\,\text{g}$. $10.0\,\textsf{l} = 10.0 \cdot 0.001\,\text{m}^3 = 0.0100\,\text{m}^3$. Finally $1\,\text{MPa} = 10^6\,\text{Pa}$.
 **Substitution:** $n = \dfrac{500\,\text{g}}{39.95\,\text{g/mol}} = 12.52\,\text{mol}$ and $p = \dfrac{12.52\,\text{mol} \cdot 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 293\,\text{K}}{0.0100\,\text{m}^3} = 3.047 \cdot 10^{6}\,\text{Pa}$
 **Answer:** $p \approx 3.05\,\text{MPa}$, three significant figures, as in the mass $0.500\,\text{kg}$. The molar mass $39.95\,\text{g/mol}$ is from the MAFY table (atomic masses and molar masses of the elements); the answer is accepted within about $\pm 4\,\%$.
@@ -274,7 +274,7 @@ The volume is directly proportional to the temperature and inversely proportiona
 **Find:** the ratio $n_\text{A}/n_\text{B}$
 **Principle:** The gas is sealed in a rigid vessel ($n$ and $V$ constant) and obeys $pV = nRT$. So the line $p(T)$ goes through the origin and its slope is $p/T = nR/V$. The vessels have the same volume and $R$ is the same, so the ratio of the slopes is the ratio of the amounts of substance.
 **Reading the graph:** Read both lines at the same temperature $T = 400\,\text{K}$, a vertical gridline: $p_\text{A} = 100\,\text{kPa}$ and $p_\text{B} = 60\,\text{kPa}$. The lines go through the origin.
-**Formula:** $\dfrac{p}{T} = \dfrac{nR}{V}$, so $n = \dfrac{V}{R} \cdot \dfrac{p}{T}$ and $\dfrac{n_\text{A}}{n_\text{B}} = \dfrac{p_\text{A}/T}{p_\text{B}/T} = \dfrac{p_\text{A}}{p_\text{B}}$
+**Formula:** $$\begin{aligned} pV &= nRT \\ \dfrac{p}{T} &= \dfrac{nR}{V} \\ n &= \dfrac{V}{R} \cdot \dfrac{p}{T} \\ \dfrac{n_\text{A}}{n_\text{B}} &= \dfrac{p_\text{A}/T}{p_\text{B}/T} \\ &= \dfrac{p_\text{A}}{p_\text{B}} \end{aligned}$$
 **Conversions:** Not needed: the ratio of the pressures is the same in kilopascals as in pascals.
 **Substitution:** $\dfrac{n_\text{A}}{n_\text{B}} = \dfrac{100\,\text{kPa}}{60\,\text{kPa}} = 1.667$
 **Answer:** Vessel A holds about $1.7$ times as much gas as vessel B (calculated $1.667$), two significant figures, because the pressure $60\,\text{kPa}$ read from the graph has two figures.

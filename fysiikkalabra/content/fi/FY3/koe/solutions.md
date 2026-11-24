@@ -105,7 +105,7 @@ Lämpimämpi Maa säteilee enemmän, kunnes lähtevä ja tuleva teho ovat taas y
 **Kysytty:** absoluuttisen nollapisteen lämpötila $\theta_0$
 **Periaate:** Vakiopaineessa ideaalikaasun tilavuus ja siis ilmapatsaan pituus pienenee lineaarisesti lämpötilan laskiessa. Absoluuttisessa nollapisteessä pituus olisi nolla. Ratkaistaan, missä suora $L = L_0 + k\theta$ saa arvon nolla.
 **Kuvaajan lukeminen:** Suoralta luetaan pisteet $(0\,{}^\circ\text{C};\ 58{,}0\,\text{mm})$ ja $(80\,{}^\circ\text{C};\ 75{,}0\,\text{mm})$. Ne ovat suoran pisteitä, eivät mittauspisteitä.
-**Kaava:** $k = \dfrac{\Delta L}{\Delta \theta}$ ja $0 = L_0 + k\theta_0$, joten $\theta_0 = -\dfrac{L_0}{k}$.
+**Kaava:** $$\begin{aligned} k &= \dfrac{\Delta L}{\Delta \theta} \\ L &= L_0 + k\theta \\ 0 &= L_0 + k\theta_0 \\ \theta_0 &= -\dfrac{L_0}{k} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $k = \dfrac{75{,}0\,\text{mm} - 58{,}0\,\text{mm}}{80\,{}^\circ\text{C} - 0\,{}^\circ\text{C}} = 0{,}2125\,\tfrac{\text{mm}}{{}^\circ\text{C}}$
 
@@ -124,7 +124,7 @@ Putken poikkipinta-ala $A$ on vakio, joten tilavuus $V = AL$ on verrannollinen p
 **Annettu:** jokainen lukema $2{,}0\,\text{mm}$ todellista suurempi; a-kohdan suoran kulmakerroin $k = 0{,}2125\,\tfrac{\text{mm}}{{}^\circ\text{C}}$
 **Kysytty:** toisen ryhmän tulos $\theta_0'$ ja virheen laji
 **Periaate:** Kun kaikkiin lukemiin lisätään sama $2{,}0\,\text{mm}$, suora siirtyy ylöspäin mutta sen kulmakerroin ei muutu. Pituus lämpötilassa $0\,{}^\circ\text{C}$ on silloin $$\begin{aligned} &58{,}0\,\text{mm} + 2{,}0\,\text{mm} \\ &= 60{,}0\,\text{mm} \end{aligned}$$.
-**Kaava:** $\theta_0' = -\dfrac{L_0'}{k}$
+**Kaava:** $$\begin{aligned} 0 &= L_0' + k\theta_0' \\ \theta_0' &= -\dfrac{L_0'}{k} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $\theta_0' = -\dfrac{60{,}0\,\text{mm}}{0{,}2125\,\tfrac{\text{mm}}{{}^\circ\text{C}}} \approx -282\,{}^\circ\text{C}$
 **Vastaus:** Toinen ryhmä sai tulokseksi noin $-280\,{}^\circ\text{C}$. Virhe on systemaattinen: se siirtää kaikkia lukemia samaan suuntaan, eikä se näy pisteiden hajontana. Pieni, noin $3\,\%$:n virhe pituuksissa muuttaa tulosta noin $9\,{}^\circ\text{C}$, koska suora jatketaan kauas mittausalueen ulkopuolelle.
@@ -145,7 +145,7 @@ Putken poikkipinta-ala $A$ on vakio, joten tilavuus $V = AL$ on verrannollinen p
 **Annettu:** $m = 12{,}0\,\text{kg}$, $A = 40{,}0\,\text{cm}^2$, $p_0 = 101\,\text{kPa}$, $h_1 = 25{,}0\,\text{cm}$, $\theta_1 = 20{,}0\,{}^\circ\text{C}$, $g = 9{,}81\,\text{m/s}^2$ ja $R = 8{,}314\,\tfrac{\text{J}}{\text{mol} \cdot \text{K}}$
 **Kysytty:** ilman paine $p$ ja ainemäärä $n$
 **Periaate:** Männän ja punnuksen paino $G = mg$ jakautuu männän alalle ja lisää ilman painetta määrällä $\tfrac{G}{A}$. Ainemäärä saadaan ideaalikaasun tilanyhtälöstä.
-**Kaava:** $p = p_0 + \dfrac{mg}{A}$ ja $pV = nRT$, joten $n = \dfrac{pV}{RT}$, kun $V = Ah_1$.
+**Kaava:** $$\begin{aligned} G &= mg \\ p &= p_0 + \dfrac{G}{A} \\ pV &= nRT \\ V &= Ah_1 \\ n &= \dfrac{pV}{RT} \end{aligned}$$
 **Muunnokset:** $A = 40{,}0 \cdot 10^{-4}\,\text{m}^2 = 4{,}00 \cdot 10^{-3}\,\text{m}^2$, $h_1 = 0{,}250\,\text{m}$, $p_0 = 101\,000\,\text{Pa}$ ja $T_1 = (20{,}0 + 273{,}15)\,\text{K} = 293{,}15\,\text{K}$. Tilavuus on $V = 4{,}00 \cdot 10^{-3}\,\text{m}^2 \cdot 0{,}250\,\text{m} = 1{,}00 \cdot 10^{-3}\,\text{m}^3$.
 **Sijoitus:** $G = 12{,}0\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \approx 117{,}7\,\text{N}$
 
@@ -161,7 +161,7 @@ $n = \dfrac{130\,400\,\text{Pa} \cdot 1{,}00 \cdot 10^{-3}\,\text{m}^3}{8{,}314\
 **Annettu:** $h_1 = 25{,}0\,\text{cm}$, $\theta_1 = 20{,}0\,{}^\circ\text{C}$ ja $\theta_2 = 80{,}0\,{}^\circ\text{C}$
 **Kysytty:** männän nousu $\Delta h$
 **Periaate:** Männän ja punnuksen paino ja ulkoilman paine eivät muutu, joten ilman paine pysyy vakiona. Vakiopaineessa tilavuus on verrannollinen absoluuttiseen lämpötilaan, ja koska ala on vakio, myös korkeus on.
-**Kaava:** $\dfrac{V_1}{T_1} = \dfrac{V_2}{T_2}$ ja $V = Ah$, joten $h_2 = h_1 \cdot \dfrac{T_2}{T_1}$ ja $\Delta h = h_2 - h_1$.
+**Kaava:** $$\begin{aligned} \dfrac{V_1}{T_1} &= \dfrac{V_2}{T_2} \\ V &= Ah \\ \dfrac{Ah_1}{T_1} &= \dfrac{Ah_2}{T_2} \\ h_2 &= h_1 \cdot \dfrac{T_2}{T_1} \\ \Delta h &= h_2 - h_1 \end{aligned}$$
 **Muunnokset:** $T_1 = 293{,}15\,\text{K}$ ja $T_2 = (80{,}0 + 273{,}15)\,\text{K} = 353{,}15\,\text{K}$
 **Sijoitus:** $h_2 = 25{,}0\,\text{cm} \cdot \dfrac{353{,}15\,\text{K}}{293{,}15\,\text{K}} \approx 30{,}12\,\text{cm}$
 
@@ -173,7 +173,7 @@ $\Delta h = 30{,}12\,\text{cm} - 25{,}0\,\text{cm} \approx 5{,}1\,\text{cm}$
 **Annettu:** $p = 130{,}4\,\text{kPa}$, $A = 4{,}00 \cdot 10^{-3}\,\text{m}^2$ ja $\Delta h = 5{,}12\,\text{cm}$
 **Kysytty:** ilman tekemä työ $W$
 **Periaate:** Ilma painaa mäntää vakiovoimalla $F = pA$, ja mäntä liikkuu voiman suuntaan matkan $\Delta h$. Työ on voiman ja matkan tulo.
-**Kaava:** $W = Fs = pA\,\Delta h = p\,\Delta V$
+**Kaava:** $$\begin{aligned} W &= Fs \\ F &= pA \\ s &= \Delta h \\ W &= pA\,\Delta h = p\,\Delta V \end{aligned}$$
 **Muunnokset:** $\Delta h = 0{,}0512\,\text{m}$
 **Sijoitus:** $F = 130\,400\,\text{Pa} \cdot 4{,}00 \cdot 10^{-3}\,\text{m}^2 \approx 521{,}7\,\text{N}$
 
@@ -203,7 +203,7 @@ $W = 521{,}7\,\text{N} \cdot 0{,}0512\,\text{m} \approx 26{,}7\,\text{J}$
 **Annettu:** $m = 1{,}20\,\text{kg}$, $\theta_1 = -8{,}0\,{}^\circ\text{C}$, $\theta_2 = 100\,{}^\circ\text{C}$, $c_\text{j} = 2{,}09\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$, $s = 333\,\tfrac{\text{kJ}}{\text{kg}}$ ja $c_\text{v} = 4{,}19\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$
 **Kysytty:** lumen ja veden saama energia $Q$
 **Periaate:** Lumi lämpenee ensin sulamispisteeseen $0\,{}^\circ\text{C}$, sulaa sitten vakiolämpötilassa ja lopuksi vesi lämpenee kiehumispisteeseen. Kunkin vaiheen lämpömäärät lasketaan yhteen.
-**Kaava:** $$Q = c_\text{j}m\,\Delta T_1 + sm + c_\text{v}m\,\Delta T_2$$
+**Kaava:** $$\begin{aligned} Q_1 &= c_\text{j}m\,\Delta T_1 \\ Q_2 &= sm \\ Q_3 &= c_\text{v}m\,\Delta T_2 \\ Q &= Q_1 + Q_2 + Q_3 \\ &= c_\text{j}m\,\Delta T_1 + sm + c_\text{v}m\,\Delta T_2 \end{aligned}$$
 **Muunnokset:** $\Delta T_1 = 8{,}0\,\text{K}$ ja $\Delta T_2 = 100\,\text{K}$
 **Sijoitus:** $Q_1 = 2{,}09\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}} \cdot 1{,}20\,\text{kg} \cdot 8{,}0\,\text{K} \approx 20\,\text{kJ}$
 
@@ -219,7 +219,7 @@ $Q = 20\,\text{kJ} + 400\,\text{kJ} + 503\,\text{kJ} \approx 922\,\text{kJ}$
 **Annettu:** $Q = 922\,\text{kJ}$, kaasusäiliön lukemat $352\,\text{g}$ ja $310\,\text{g}$, lämpöarvo $H = 46\,\tfrac{\text{MJ}}{\text{kg}}$
 **Kysytty:** keittimen hyötysuhde $\eta$
 **Periaate:** Hyötysuhde on hyödyksi saadun energian ja käytetyn energian osamäärä. Käytetty energia on palaneen kaasun energia.
-**Kaava:** $\eta = \dfrac{Q}{E}$, kun $E = m_\text{k}H$
+**Kaava:** $$\begin{aligned} \eta &= \dfrac{E_\text{hyöty}}{E} \\ E_\text{hyöty} &= Q \\ E &= m_\text{k}H \\ \eta &= \dfrac{Q}{m_\text{k}H} \end{aligned}$$
 **Muunnokset:** $m_\text{k} = 352\,\text{g} - 310\,\text{g} = 42\,\text{g} = 0{,}042\,\text{kg}$ ja $H = 46\,000\,\tfrac{\text{kJ}}{\text{kg}}$
 **Sijoitus:** $E = 0{,}042\,\text{kg} \cdot 46\,000\,\tfrac{\text{kJ}}{\text{kg}} \approx 1930\,\text{kJ}$
 
@@ -231,7 +231,7 @@ $\eta = \dfrac{922\,\text{kJ}}{1930\,\text{kJ}} \approx 0{,}48 = 48\,\%$
 **Annettu:** lukemien epävarmuus $1\,\text{g}$
 **Kysytty:** hyötysuhteen epävarmuus
 **Periaate:** Palaneen kaasun massa on kahden lukeman erotus, joten sen epävarmuus on lukemien epävarmuuksien summa $2\,\text{g}$. Lasketaan hyötysuhde massan ääriarvoilla $40\,\text{g}$ ja $44\,\text{g}$.
-**Kaava:** $\eta = \dfrac{Q}{m_\text{k}H}$
+**Kaava:** $$\begin{aligned} \eta &= \dfrac{E_\text{hyöty}}{E} \\ E_\text{hyöty} &= Q \\ E &= m_\text{k}H \\ \eta &= \dfrac{Q}{m_\text{k}H} \end{aligned}$$
 **Muunnokset:** $40\,\text{g} = 0{,}040\,\text{kg}$ ja $44\,\text{g} = 0{,}044\,\text{kg}$
 **Sijoitus:** $\eta_\text{max} = \dfrac{922\,\text{kJ}}{0{,}040\,\text{kg} \cdot 46\,000\,\tfrac{\text{kJ}}{\text{kg}}} \approx 0{,}501$
 
@@ -281,7 +281,7 @@ U:n muotoinen mutka joustaa: sen sakarat taipuvat hieman, joten pituuden muutos 
 **Annettu:** kokonaispaine $p_1 = 650\,\text{kPa}$, $h = 35\,\text{m}$, $\rho = 947\,\text{kg/m}^3$ ja $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** veden paine $p_2$ mäen kohdalla
 **Periaate:** Levossa olevassa nesteessä paine kasvaa alaspäin ja pienenee ylöspäin hydrostaattisen paineen $\rho g h$ verran. Putken muodolla ei ole merkitystä, vain korkeuserolla.
-**Kaava:** $p_2 = p_1 - \rho g h$
+**Kaava:** $$\begin{aligned} p_\text{h} &= \rho g h \\ p_1 &= p_2 + p_\text{h} \\ p_2 &= p_1 - p_\text{h} \\ &= p_1 - \rho g h \end{aligned}$$
 **Muunnokset:** $p_1 = 650\,000\,\text{Pa}$
 **Sijoitus:** $\rho g h = 947\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 35\,\text{m} \approx 325\,000\,\text{Pa}$
 
@@ -293,7 +293,7 @@ $p_2 = 650\,000\,\text{Pa} - 325\,000\,\text{Pa} = 325\,000\,\text{Pa}$
 **Annettu:** $p_1 = 650\,\text{kPa}$, kiehumispaine $p_\text{k} = 169\,\text{kPa}$, $\rho = 947\,\text{kg/m}^3$
 **Kysytty:** suurin korkeus $h_\text{max}$ ja todellisen rajan suunta
 **Periaate:** Vesi alkaa kiehua siinä korkeudessa, jossa hydrostaattinen paine on pienentänyt pumppaamon paineen kiehumispaineeseen.
-**Kaava:** $p_1 - \rho g h_\text{max} = p_\text{k}$, joten $h_\text{max} = \dfrac{p_1 - p_\text{k}}{\rho g}$
+**Kaava:** $$\begin{aligned} p_1 - \rho g h_\text{max} &= p_\text{k} \\ \rho g h_\text{max} &= p_1 - p_\text{k} \\ h_\text{max} &= \dfrac{p_1 - p_\text{k}}{\rho g} \end{aligned}$$
 **Muunnokset:** $p_1 - p_\text{k} = 650\,000\,\text{Pa} - 169\,000\,\text{Pa} = 481\,000\,\text{Pa}$
 **Sijoitus:** $h_\text{max} = \dfrac{481\,000\,\text{Pa}}{947\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}} \approx 52\,\text{m}$
 **Vastaus:** Levossa olevan veden mallin mukaan putki voi kulkea enintään noin $52\,\text{m}$ pumppaamoa ylempänä. Todellinen raja on matalampi: virtaavan veden paine pienenee putken kitkan vuoksi matkan varrella, joten mäellä paine on pienempi kuin c-kohdan mallissa. Siksi verkossa pidetään varmuusmarginaali, esimerkiksi lisäpumppaamolla tai suuremmalla paineella.
@@ -397,7 +397,7 @@ Lämpötila, joka kuvaa hiukkasten keskimääräistä liike-energiaa, ei muutu. 
 **Kysytty:** teho $P$, jolla vastus luovuttaa energiaa veteen
 **Periaate:** Kun jää on sulanut, vastuksen energia lämmittää koko vesimäärää. Teho on lämpömäärä aikayksikköä kohti, ja lämpötilan nousunopeus on suoran kulmakerroin.
 **Kuvaajan lukeminen:** Nousevalta suoralta luetaan pisteet $(9{,}0\,\text{min};\ 11{,}2\,{}^\circ\text{C})$ ja $(13{,}0\,\text{min};\ 42{,}9\,{}^\circ\text{C})$.
-**Kaava:** $P = \dfrac{Q}{\Delta t} = cm\,\dfrac{\Delta T}{\Delta t} = cmk$
+**Kaava:** $$\begin{aligned} P &= \dfrac{Q}{\Delta t} \\ Q &= cm\,\Delta T \\ P &= cm\,\dfrac{\Delta T}{\Delta t} \\ k &= \dfrac{\Delta T}{\Delta t} \\ P &= cmk \end{aligned}$$
 **Muunnokset:** $\Delta t = 4{,}0\,\text{min} = 240\,\text{s}$ ja $c = 4190\,\tfrac{\text{J}}{\text{kg} \cdot \text{K}}$
 **Sijoitus:** $k = \dfrac{42{,}9\,{}^\circ\text{C} - 11{,}2\,{}^\circ\text{C}}{240\,\text{s}} \approx 0{,}132\,\tfrac{\text{K}}{\text{s}}$
 
@@ -409,7 +409,7 @@ $P = 4190\,\tfrac{\text{J}}{\text{kg} \cdot \text{K}} \cdot 0{,}500\,\text{kg} \
 **Annettu:** $P = 277\,\text{W}$, sulamisaika $\Delta t = 7{,}6\,\text{min}$ ja $m_\text{jää} = 0{,}400\,\text{kg}$
 **Kysytty:** jään ominaissulamislämpö $s$
 **Periaate:** Sulamisen aikana vastuksen koko energia kului jään sulattamiseen, ja vastuksen teho oli sama kuin lämpenemisvaiheessa.
-**Kaava:** $Q = P\,\Delta t$ ja $Q = sm_\text{jää}$, joten $s = \dfrac{P\,\Delta t}{m_\text{jää}}$
+**Kaava:** $$\begin{aligned} Q &= P\,\Delta t \\ Q &= sm_\text{jää} \\ s &= \dfrac{Q}{m_\text{jää}} \\ &= \dfrac{P\,\Delta t}{m_\text{jää}} \end{aligned}$$
 **Muunnokset:** $\Delta t = 7{,}6 \cdot 60\,\text{s} \approx 457\,\text{s}$
 **Sijoitus:** $Q = 277\,\text{W} \cdot 457\,\text{s} \approx 126\,000\,\text{J}$
 
@@ -442,7 +442,7 @@ $s = \dfrac{126\,000\,\text{J}}{0{,}400\,\text{kg}} \approx 316\,000\,\tfrac{\te
 **Annettu:** rakennusosien pinta-alat ja U-arvot, $\theta_\text{sisä} = 21\,{}^\circ\text{C}$ ja $\theta_\text{ulko} = +1{,}0\,{}^\circ\text{C}$
 **Kysytty:** rakennusosien läpi johtuva lämpöteho $P$ ja suurin lämmön karkaamisreitti
 **Periaate:** Rakennusosan läpi johtuva lämpöteho on verrannollinen U-arvoon, pinta-alaan ja lämpötilaeroon. Rakennusosat johtavat lämpöä rinnakkain, joten tehot lasketaan yhteen.
-**Kaava:** $$\begin{aligned} &P \\ &= (U_1A_1 + U_2A_2 + U_3A_3)\,\Delta T \end{aligned}$$
+**Kaava:** $$\begin{aligned} P_i &= U_iA_i\,\Delta T \\ P &= P_1 + P_2 + P_3 \\ &= (U_1A_1 + U_2A_2 + U_3A_3)\,\Delta T \end{aligned}$$
 **Muunnokset:** $\Delta T = 21\,{}^\circ\text{C} - 1{,}0\,{}^\circ\text{C} = 20\,\text{K}$
 **Sijoitus:** Ulkoseinät $0{,}40 \cdot 140\,\tfrac{\text{W}}{\text{K}} = 56\,\tfrac{\text{W}}{\text{K}}$, yläpohja $0{,}25 \cdot 100\,\tfrac{\text{W}}{\text{K}} = 25\,\tfrac{\text{W}}{\text{K}}$ ja ikkunat $2{,}0 \cdot 20\,\tfrac{\text{W}}{\text{K}} = 40\,\tfrac{\text{W}}{\text{K}}$.
 
@@ -454,7 +454,7 @@ $P = (56 + 25 + 40)\,\tfrac{\text{W}}{\text{K}} \cdot 20\,\text{K} = 121\,\tfrac
 **Annettu:** $P = 2420\,\text{W}$, $t = 5100\,\text{h}$, ilmanvaihto ja käyttövesi $8{,}0\,\text{MWh}$, lämpökerroin $\varepsilon = 3{,}0$
 **Kysytty:** vuotuinen lämmöntarve $Q_1$ ja lämmityksen sähkönkulutus $W$ kahdella tavalla
 **Periaate:** Keskimääräinen teho kerrottuna ajalla on energia. Lämpöpumpun lämpökerroin on taloon annetun lämmön ja pumpun käyttämän sähköenergian osamäärä. Sähkövastuksessa koko sähköenergia muuttuu vastuksen sisäenergiaksi, joka siirtyy lämpönä taloon.
-**Kaava:** $Q_1 = Pt + Q_\text{iv}$ ja $\varepsilon = \dfrac{Q_1}{W}$, joten $W = \dfrac{Q_1}{\varepsilon}$
+**Kaava:** $$\begin{aligned} Q_P &= Pt \\ Q_1 &= Q_P + Q_\text{iv} \\ \varepsilon &= \dfrac{Q_1}{W} \\ W &= \dfrac{Q_1}{\varepsilon} \end{aligned}$$
 **Muunnokset:** $2420\,\text{W} \cdot 5100\,\text{h} = 12\,342\,000\,\text{Wh} \approx 12{,}3\,\text{MWh}$
 **Sijoitus:** $Q_1 = 12{,}3\,\text{MWh} + 8{,}0\,\text{MWh} \approx 20{,}3\,\text{MWh}$
 
@@ -471,7 +471,7 @@ $W = \dfrac{20{,}3\,\text{MWh}}{3{,}0} \approx 6{,}8\,\text{MWh}$
 **Annettu:** ikkunoiden ala $20\,\text{m}^2$, U-arvo $2{,}0 \to 0{,}90\,\tfrac{\text{W}}{\text{m}^2 \cdot \text{K}}$, $\Delta T = 20\,\text{K}$, $t = 5100\,\text{h}$, $\varepsilon = 3{,}0$, sähkön hinta $0{,}15\,\tfrac{\text{€}}{\text{kWh}}$, vaihdon hinta $9000\,\text{€}$
 **Kysytty:** vuotuinen sähkön ja rahan säästö ja vaihdon kannattavuus
 **Periaate:** Uudet ikkunat pienentävät johtumistehoa U-arvon muutoksen verran. Säästyvä lämpö jaetaan lämpökertoimella, jolloin saadaan säästyvä sähkö.
-**Kaava:** $\Delta P = \Delta U \cdot A\,\Delta T$, $\Delta Q_1 = \Delta P \cdot t$ ja $\Delta W = \dfrac{\Delta Q_1}{\varepsilon}$
+**Kaava:** $$\begin{aligned} P &= UA\,\Delta T \\ \Delta P &= P_\text{vanha} - P_\text{uusi} \\ &= (U_\text{vanha} - U_\text{uusi})A\,\Delta T = \Delta U \cdot A\,\Delta T \\ \Delta Q_1 &= \Delta P \cdot t \\ \varepsilon &= \dfrac{\Delta Q_1}{\Delta W} \\ \Delta W &= \dfrac{\Delta Q_1}{\varepsilon} \end{aligned}$$
 **Muunnokset:** $\Delta U = 2{,}0 - 0{,}90 = 1{,}1\,\tfrac{\text{W}}{\text{m}^2 \cdot \text{K}}$
 **Sijoitus:** $\Delta P = 1{,}1\,\tfrac{\text{W}}{\text{m}^2 \cdot \text{K}} \cdot 20\,\text{m}^2 \cdot 20\,\text{K} = 440\,\text{W}$
 
@@ -485,7 +485,7 @@ $\Delta W = \dfrac{2240\,\text{kWh}}{3{,}0} \approx 750\,\text{kWh}$ ja $750\,\t
 **Annettu:** $\varepsilon = 3{,}0$, lauhdevoimalaitoksen hyötysuhde $40\,\%$, öljykattilan hyötysuhde $90\,\%$, päästökertoimet $94{,}6\,\tfrac{\text{g}}{\text{MJ}}$ (kivihiili) ja $74{,}1\,\tfrac{\text{g}}{\text{MJ}}$ (polttoöljy)
 **Kysytty:** hiilidioksidipäästöt yhtä lämmön megawattituntia kohti ja väitteen arvio
 **Periaate:** Lasketaan kummallekin vaihtoehdolle, kuinka paljon polttoainetta kuluu, kun taloon saadaan $1{,}0\,\text{MWh}$ lämpöä, ja kerrotaan polttoaineen energia päästökertoimella.
-**Kaava:** Lämpöpumppu: $W = \dfrac{Q_1}{\varepsilon}$ ja $E_\text{pa} = \dfrac{W}{\eta_\text{l}}$. Öljykattila: $E_\text{pa} = \dfrac{Q_1}{\eta_\text{ö}}$. Päästö on $m = E_\text{pa} \cdot$ päästökerroin.
+**Kaava:** Lämpöpumppu: $$\begin{aligned} \varepsilon &= \dfrac{Q_1}{W} \\ W &= \dfrac{Q_1}{\varepsilon} \\ \eta_\text{l} &= \dfrac{W}{E_\text{pa}} \\ E_\text{pa} &= \dfrac{W}{\eta_\text{l}} \end{aligned}$$ Öljykattila: $$\begin{aligned} \eta_\text{ö} &= \dfrac{Q_1}{E_\text{pa}} \\ E_\text{pa} &= \dfrac{Q_1}{\eta_\text{ö}} \end{aligned}$$ Päästö: $$\begin{aligned} m &= E_\text{pa} \cdot \text{päästökerroin} \end{aligned}$$
 **Muunnokset:** $1\,\text{MWh} = 3600\,\text{MJ}$
 **Sijoitus:** Lämpöpumppu: $W = \dfrac{1{,}0\,\text{MWh}}{3{,}0} \approx 0{,}333\,\text{MWh}$ ja $E_\text{pa} = \dfrac{0{,}333\,\text{MWh}}{0{,}40} \approx 0{,}833\,\text{MWh} = 3000\,\text{MJ}$
 
