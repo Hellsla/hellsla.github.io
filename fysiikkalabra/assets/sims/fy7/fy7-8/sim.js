@@ -29,6 +29,7 @@ new p5((p) => {
     const l1 = p.createElement('label').parent(controls); lU = p.createSpan('').parent(l1); slU = p.createSlider(20, 400, 400, 10).parent(l1);
     const l2 = p.createElement('label').parent(controls); lP = p.createSpan('').parent(l2); slP = p.createSlider(50, 500, 200, 50).parent(l2);
     const l3 = p.createElement('label').parent(controls); lL = p.createSpan('').parent(l3); slL = p.createSlider(10, 300, 150, 10).parent(l3);
+    p.createP(__('selite')).parent('sim-root').class('note');
     p.textFont('Arial');
     if (window.defineSimAdapter) window.defineSimAdapter({
       params: { U: { input: slU.elt, unit: 'kV' }, P: { input: slP.elt, unit: 'MW' }, l: { input: slL.elt, unit: 'km' } },
