@@ -12,6 +12,12 @@ In 1968 the world was divided by the **Iron Curtain**, the border between the So
 
 Fusion research had been open since the Geneva conference of 1958, but it was stuck. Most machines lost their plasma much faster than theory predicted, at a rate known as **Bohm diffusion**. If that rate was a law of nature, a fusion reactor would be impossible. The five sources below follow what happened next. They are short texts written for this course from historical documents; words in quotation marks are the original words.
 
+```pysahdy
+If the Bohm rate were a law of nature, what would it mean for a fusion reactor?
+---
+The plasma would be lost far too fast to be held long enough, so a reactor would be impossible.
+```
+
 ## Source A: Novosibirsk, August 1968 {Source A}
 
 *Type: a summary of results presented at a scientific conference. Based on the International Atomic Energy Agency's conference of 1–7 August 1968 and on later accounts.*
@@ -47,6 +53,12 @@ Fusion research had been open since the Geneva conference of 1958, but it was st
 ## How Thomson scattering works {Thomson}
 
 When laser light passes through a plasma, a tiny fraction of it is scattered sideways by the free electrons. This is **Thomson scattering**. An electron that moves towards the detector scatters the light with a slightly shorter wavelength, and one that moves away with a slightly longer wavelength, because of the **Doppler effect**. In a plasma the electrons move in all directions at random, so the scattered light is spread over a range of wavelengths around the laser's own wavelength, $694\ \text{nm}$ for a ruby laser.
+
+```pysahdy
+An electron moves towards the detector. Does it scatter the laser light with a shorter or a longer wavelength?
+---
+Shorter. Because of the Doppler effect, motion towards the detector shortens the wavelength, and motion away lengthens it.
+```
 
 The hotter the electrons, the faster they move, and the **wider** the spread. So the width of the scattered spectrum gives the electron temperature *directly*, from the motion of the bulk of the electrons. A few runaway electrons cannot fake it, because they would add only a weak, far-away tail to the spectrum. And the method does not depend on the Soviet magnetic measurements at all. Its difficulty is that very little light is scattered, which is why the team needed such a powerful laser and why the vibrations and the noise were such a problem.
 

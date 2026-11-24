@@ -1,16 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: ad7141695fb701d6
+CONTENT-HASH: e1c14049ce6a5690
+SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
-Delta review: unit.md "Why you understand more than you think", first sentence now "You can already recognise many French words, especially through English, Swedish and international scientific vocabulary." Previous PASS hash: f5bc3f119dc791ac.
-
-## Blocking
-(none)
-
-## Polish
-(Carried over from the previous report, not part of this diff: News texts can still separate a number from its unit at a line break; use a no-break space.)
-
-## Checked
-- Built preview and scripts/screenshot.py fy14-fr-lire --lang en (47 captures). Opened the paragraph at 390 px (lire-390-0): the italic French and Swedish examples (trottoar, parapluie, byrå, bureau ...) wrap between whole items, `lang="fr"` spans unchanged, no clipping, no horizontal scroll. The new sentence is accurate in tone (no longer "thousands ... without having studied them") and flows into the examples. Diff read: only this sentence changed.
-
-## Scores
-illustrations 5 · typography 5 · English 5 · accessibility 4
+1. Blocking: none
+2. Checked: stage-selita captures at 390 px and 1280 px showing the box (bonjour selita-390-2/-3, selita-1280-2; lire selita-390-1/-2, selita-1280-1). The box sits right after the paragraph or list it follows, spacing is even, and the Answer opens inline. Built HTML (preview/en) has real <em> tags and no literal asterisks or raw $ in the box. Polish: the French words in the box (finlandais, réacteur) are upright while the body text italicises them; this is optional.
