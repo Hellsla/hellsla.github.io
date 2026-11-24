@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: ac3cb81970d997cb
+CONTENT-HASH: 250da0413dc684b5
 
 ## Blocking
 - none
@@ -8,9 +8,9 @@ CONTENT-HASH: ac3cb81970d997cb
 - none
 
 ## Checked
-- Delta: the Answer of fy3-8-L3-04 (10-23) lost "in practice at least $14\,\text{mm}$"; captures current for this hash (stamp.txt).
-- 1280 px, level 3, every solution open: fy3-8-open-exercises-L3-1280-7 (Formula, Substitution, changed Answer, part c, start of Reasonableness).
-- The Answer now reads "a) g_min = 13.2 mm, and b) g_max = 18 mm" cleanly, units upright in LaTeX; the aligned rows and the part c block are intact.
+- Delta: the Answer of fy3-8-L3-04 (a) now says "(the lower limit is rounded up: at least $14\,\text{mm}$)" and ends "a lower limit is still always rounded up"; captures current for this hash.
+- Opened fy3-8-open-exercises-L3-1280-7 (Formula, Substitution, changed Answer, part c, start of Reasonableness).
+- The Answer paragraph wraps cleanly, the units are upright LaTeX, and the new sentence reads fluently in English. The aligned rows and the part c block are intact.
 - Not opened: 390 px solution captures (none exist; the layout check is covered by the deterministic scope).
 
 ## Scores
