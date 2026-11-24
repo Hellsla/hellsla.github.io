@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 8669f3323c2d6fda
+CONTENT-HASH: 5e6541ff07793d7a
 Mode: delta
-Round: 1
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] fy3-1 L3 1-16 Kaava: stacked fraction rows sit close together and the note (c: jousen vakio) hangs beside row 1; readable, optional more row spacing in the shared style.
 
 ## Checked
-- Delta: solutions.md paragraphs cut, words unchanged. No 360 px captures exist; 390 px used.
-- 1280 px, solutions open: fy3-1-open-exercises-1280-3.png (solution rows: Annettu, Periaate, Kaava, Sijoitus, Järkevyys, aligned and unclipped); fy3-1-open-exercises-L2-1280-4.png (Periaate split into short paragraphs, fraction chain, table beside the task); fy3-1-open-tarkista-1280-1.png (checks).
-- 390 px: fy3-1-example-390-1.png and fy3-1-stage-selita-390-2.png (same shared paragraph and solution styles, no overflow).
-- Judged: logical paragraph order, units and decimal commas in LaTeX, nothing clipped.
+- Delta: only the Kaava step became aligned multi-row blocks (source is `aligned`; the diff view flattened the rows). Captures are newer than solutions.md and match the hash.
+- Opened at 1280 px, solutions open: fy3-1-open-exercises-1280-1/2/3, L2-1280-1/3, L3-1280-3/5/6.
+- Judged: tasks 1-2, 1-11, 1-12, 1-16, 1-21 Kaava blocks: rows aligned at `=`, one equation per row, units and decimal commas in LaTeX, nothing clipped, Muunnokset/Sijoitus below unaffected.
+- No 360/390 px open-solution captures exist for exercises.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

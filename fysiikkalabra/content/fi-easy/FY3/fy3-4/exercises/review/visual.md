@@ -1,7 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 95be45143ff21cc8
+CONTENT-HASH: d78f2368cbfbb8e4
 Mode: delta
-Round: 1
 
 ## Blocking
 None.
@@ -10,8 +9,10 @@ None.
 None.
 
 ## Checked
-- Delta: changed task texts (prefix "Esimerkkiaineisto:" removed, each text now opens with a capital); read in the diff. Layout judged in fy3-4-open-exercises-L3-1280-1 (task text, answer row, open solution, no clipping).
-- Wording only: the new openings read naturally; maths and units unchanged and in LaTeX.
+- Delta: the Kaava step as aligned multi-row blocks. Captures are newer than solutions.md and match the hash.
+- Opened at 1280 px, solutions open: fy3-4-open-exercises-L2-1280-4, L3-1280-4.
+- Judged: Δp = F/A, F = Δp A block and the Δp1, Δp2, Δp = Δp1 + Δp2 chain: equals signs in one column, one equation per row, nothing clipped, Muunnokset/Sijoitus below unaffected.
+- No 360/390 px open-solution captures exist for exercises.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4
