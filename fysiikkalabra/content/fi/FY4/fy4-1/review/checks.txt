@@ -2,7 +2,7 @@ ok   lint
 ok   latex
 ok   i18n (en 0 error(s); fi-easy 0 error(s))
 ok   build
-FAIL sims
+ok   sims
 ok   inquiry (142 passed, 0 failed)
 ok   answer positions
 ok   layout 360 px
