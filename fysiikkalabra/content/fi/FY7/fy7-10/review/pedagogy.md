@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 81feb70459f703c1
+CONTENT-HASH: d848741bf171d6aa
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
-
-## Vanhan sisällön löydökset
-(none)
+- Earlier polish items (mittaus slope stated in text, ennuste-1 feedback quoting 40°, "Lukemista näet" slip, A = n2 : n1 before mittaus) are not touched by this diff; decide separately.
 
 ## Checked
-batch delta review (round 2, vain pysahdy-lohkot): kolme lohkoa; "1,33 kertaa lyhyempi kuin ilmassa" selkeämpi kuin entinen; v = c:n = 1,24·10^8 m/s ja taitekulma 25° laskettu uudelleen.
+- Diff: only the prompt of explain check 3 changed: "sivulta vinosti ylhäältä" became "vinosti ylhäältä veden pinnan läpi". The view through the surface is now stated, which is what the refraction explanation needs. It is more precise and no clearer than before for a student, and it gives away nothing.
+- The model answer and criteria still match the prompt (rays from water to air, bent away from the normal, backward extension of the rays, apparent rise, break at the surface).
+- The wording is correct Finnish and keeps the glossary terms.

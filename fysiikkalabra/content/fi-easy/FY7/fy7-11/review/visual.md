@@ -1,11 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: ea79c6a7376de46f
+CONTENT-HASH: 1c23c153f54b8069
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] sim 390/1280 — The note "Katkoviivat ovat pintojen normaalit ja tulevan säteen jatke" is gone from the page, and the sim.js diff shows that removal. The dashed lines in the canvas now have no visible explanation. They are standard normals and the unrefracted continuation, and α₁ is marked. Check that the Käyttöohje box says what they are.
 
 ## Checked
-- batch delta review (round 2): fy7-11 (fi-easy) built page, every "Pysähdy ja mieti" block rendered with the answer open and photographed at 360 px (examined for the long chains) and measured at 360 and 1280 px: label, question, Vastaus summary, KaTeX (no red source, no clipped formula, no overflow), decimal comma, units, answer chains laid out as rows; check_layout.py clean at 360/390/1280. The round 1 clip in fy7-1 block 3 is fixed by the shared component. Listed older captures not reopened (unchanged old content). Vanhan sisällön löydökset: none.
+- Delta review: six teacher-approved picture files, a sim.js change that removes one note line, changed sim assertions.
+- Opened contact-1.png (top, figures, example), fy7-11-sim-390.png and fy7-11-sim-1280.png at full size: layout survived, KaTeX renders, nothing clipped, no gap where the note was.
+- Opened fig-3, fig-4 and fig-6 at 390 px: labels legible, nothing overlaps, red and violet distinct, angles clear.
+- Hero, prism and graph figures judged from the contact sheet only.
+- Exercises and other open-state captures not opened (unchanged by this diff).
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

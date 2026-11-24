@@ -442,7 +442,7 @@
       "stage": "tarkista",
       "type": "explain",
       "title": "3. Selitä: katkeava pilli",
-      "prompt": "Selitä taittumisen avulla, miksi vesilasissa oleva pilli näyttää katkeavan vedenpinnan kohdalla, kun lasia katsotaan sivulta vinosti ylhäältä.",
+      "prompt": "Selitä taittumisen avulla, miksi vesilasissa oleva pilli näyttää katkeavan vedenpinnan kohdalla, kun lasia katsotaan vinosti ylhäältä veden pinnan läpi.",
       "model": "Pillin vedessä olevasta osasta lähtevät säteet kulkevat vedestä ilmaan. Ilma on optisesti harvempaa, joten säteet taittuvat vedenpinnassa normaalista poispäin. Silmä ja aivot olettavat, että valo on kulkenut suoraan, joten ne jatkavat silmään tulevia säteitä taaksepäin suoria viivoja pitkin. Jatkeet kohtaavat kohdassa, joka on ylempänä kuin pillin todellinen kohta. Siksi pillin vedessä oleva osa näyttää nousseen ylemmäs ja siirtyneen, kun taas vedenpinnan yläpuolella oleva osa näkyy oikealla paikallaan. Pilli näyttää katkeavan juuri vedenpinnan kohdalla, koska siinä valo vaihtaa ainetta.",
       "criteria": [
         "Kerron, että pillin vedessä olevasta osasta tuleva valo siirtyy vedestä ilmaan ja taittuu vedenpinnassa.",

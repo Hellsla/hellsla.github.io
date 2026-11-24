@@ -1,11 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 862cb7079751a2e4
+CONTENT-HASH: 39c930b50e38683d
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] stage-tarkista-390-2 — the changed prompt sits in a closed optional box ("4. Selitystehtävä: Katkeava pilli"), so its new wording is not visible in any capture. I judged it from the diff. It is fluent, and it removes the ambiguous "sivulta vinosti ylhäältä". Optional: "veden pinnan läpi" could be "vedenpinnan läpi", to match "vedenpinnan kohdalla" earlier in the sentence.
 
 ## Checked
-- batch delta review (round 2): fy7-10 (fi-easy) built page, every "Pysähdy ja mieti" block rendered with the answer open and photographed at 360 px (examined for the long chains) and measured at 360 and 1280 px: label, question, Vastaus summary, KaTeX (no red source, no clipped formula, no overflow), decimal comma, units, answer chains laid out as rows; check_layout.py clean at 360/390/1280. The round 1 clip in fy7-1 block 3 is fixed by the shared component. Listed older captures not reopened (unchanged old content). Vanhan sisällön löydökset: none.
+- Delta: one prompt in inquiry.json changed, with no numbers, symbols or figures.
+- Opened stage-tutki-390-3 and -4, stage-selita-390-6 and stage-tarkista-390-2. The layout around the changed task is intact: no clipping, the closed box sits normally, and the self-assessment rows are unaffected.
+- The model answer and the other text did not change. Other captures were not reopened.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4
