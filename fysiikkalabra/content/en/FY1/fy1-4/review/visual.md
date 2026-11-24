@@ -1,11 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 257f7f3f2622b45a
+CONTENT-HASH: a48aef79c9536188
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md, Stop and think (slope) — inline \frac in the answer — use \tfrac inline (house rule).
+- [Minor] sim at 1280 px — controls wrap into an uneven two-column grid (the slope slider sits beside the data set, the constant term below) — the shared sim-controls layout could line the sliders up; not a per-lesson fix.
 
 ## Checked
-batch delta review: contact sheets (page 2 of fy1-1, fy1-2, fy1-4, fy1-6; the added "Stop and think" boxes render as a tinted box with a closed Answer disclosure, readable at 390 px, maths rendered, no clipping, layout around them intact); other lessons judged from the diff plus the same shared component, the figures unchanged.
+- Delta: the only visible change is that the sentence "The blue dots are example data, orange is your line, the red segments are deviations." was removed from under the simulation. I opened fy1-4-sim-390.png and fy1-4-sim-1280.png.
+- Without that sentence, the canvas still reads on its own. Blue points, the orange line and the red deviation segments are visible. Axes carry the quantity and unit as LaTeX, and the readouts ($k$, $b$, $d$) are LaTeX with units. No clipping or overflow, and the closed boxes (How to use, Assumptions, Calculation) sit below the controls.
+- Colour meaning is no longer stated in text. The deviation segments are explained in the closed boxes and in the lesson text (not re-read for this delta), and the legend-free canvas is simple enough that this is not blocking.
+- Lesson text, figures and exercises are unchanged since the previous PASS and were not re-judged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4
