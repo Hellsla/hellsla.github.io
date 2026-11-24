@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 65496fbb78cfc318
+CONTENT-HASH: 490134ab5599396c
 
 ## Blocking
 
 ## Polish
-- solutions.md fy3-16-L3-03 Formula — the energy conducted through the wall is put under $Q_\text{released}$. The outside air gives that energy and the wall only conducts it, so the label is loose. The balance itself is right. — Optional fix: name it $Q_\text{in}$ ("energy into the box"), or write $Q_\text{absorbed} = E + c\,m_\text{j}\,\Delta T_\text{j}$ directly.
-- solutions.md fy3-16-L2-06 Formula — the chain ends in $UA = -k/t$, but the Substitution puts in the slope's magnitude 100 kWh/K without its sign. The result is right, because the Conversions speaks of the magnitude. — Optional fix: write $UA = |k|/t$, or substitute $k = -100$ kWh/K.
+- solutions.md (fy3-16-L3-03, Formula): $E_\text{tot}$ is the same quantity as $Q_\text{released}$, so two names stand for one quantity. Writing the row as $Q_\text{released} = UA\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j}$, or "$E_\text{tot} = Q_\text{released}$", would make that visible. The earlier note still applies: the outside air gives the wall's energy and the wall only conducts it, so a label such as $Q_\text{in}$ would be more exact.
+- solutions.md (fy3-16-L2-06, Formula): as before, the chain ends in $UA = -k/t$ while the Substitution uses the magnitude $100\,\text{kWh/K}$. $UA = |k|/t$ would match.
 
 ## Checked
-- Diff: only Formula steps changed. Each now starts from the basic equation ($Q_\text{released} = Q_\text{absorbed}$, $E = Q$, $\eta = E_\text{useful}/E$), then the basic laws ($Q = cm\Delta T$, $Q = sm$, $Q = rm$, $E = Pt$, $P = UA\Delta T$), then the combined form. This follows the teacher's rule.
-- L1-05, L2-03: the step $m/t$ is shown, giving 14 kW and 0.857 kg/s. L2-02: Q = 649 kJ.
-- L2-01, L2-07: wall power times time equals $sm$, giving m = 1.617 kg (key rounded up to 1.7) and t = 2.91 h.
-- L2-04: m_ice = 91.1 g. L3-01: factoring $m_\text{v}(c_\text{v}\Delta T_\text{v} + r)$ gives ΔT_k = 26.0 K.
-- L3-02: the rearrangement $c\,m_\text{v}T_\text{v} - s\,m_\text{ice} = c(m_\text{v} + m_\text{ice})T$ is correct, giving T = 8.06 °C. The check 251 400 J > 167 000 J is unchanged.
-- L3-03: $m(c_\text{ice}\Delta T_\text{ice} + s) = UA\Delta T\,t + c\,m_\text{j}\Delta T_\text{j}$ gives m = 1.511 kg, rounded up to 1.6 kg (limit value, guardrail).
-- L2-05: η = 75.6 %. L1-08: t = 251 s. L2-09: c = 900 J/(kg·K). L2-10: t = 2.44 h.
-- L2-06: $E = UAt(T_\text{in} - T_\text{out})$ is linear in $T_\text{out}$ with slope $-UAt$. UA = 139 W/K, and the axis crossing is the indoor temperature.
-- L3-04: E = 5443 kWh; the costs follow from $E/\eta$ and $m = E/(\eta_\text{B}H)$. L3-05: the three stages are factored over $m$ and divided by $t$.
-- I recomputed every changed solution in one script, and all match. The hash is identical at start and end.
+- Only L3-03's Formula changed. The `array` numerator is gone, and the chain now runs from $Q_\text{absorbed} = Q_\text{released}$ through the basic laws ($Q = m(c_\text{ice}\Delta T_\text{ice} + s)$, $P = UA\,\Delta T$, $E = Pt$) to $m = E_\text{tot}/(c_\text{ice}\Delta T_\text{ice} + s)$.
+- $E_\text{tot} = UA\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j}$ is $Q_\text{released}$ with $E = Pt$ substituted, which is correct. The Substitution adds exactly these two terms.
+- Recomputed: wall $486\,000\,\text{J}$, drinks $50\,280\,\text{J}$, $355\,000\,\text{J/kg}$ and $m = 1.511\,\text{kg}$. It is rounded up to $1.6\,\text{kg}$ as a limit value, following the guardrail.
+- The constant wall power is justified by the stated assumption that the inside is at $0\,{}^\circ\text{C}$.
+- Nothing else changed since the earlier PASS.
+- The hash was the same at the start and the end.

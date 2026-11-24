@@ -300,7 +300,7 @@ $$ In a heat pump $Q_1$ is the heat given indoors and $W$ the electric energy th
 Direct electric heating is the worst, because over $60\,\%$ of the energy of the fuel has already been wasted in producing the electricity.
 
 ## fy3-15-L3-04
-**Given:** electricity need $P_\text{s} = 100\,\text{MW}$ and district heating need $P_\text{k} = 200\,\text{MW}$. A: efficiency of the condensing power plant $\eta_\text{s,A} = 0.400$ and of the heating boiler $\eta_\text{boiler} = 0.900$. B: electrical efficiency of the combined heat and power plant $\eta_\text{s,B} = 0.320$ and district heating power $0.560\,P_{\text{o},\text{B}}$; the missing heat is produced in a similar heating boiler ($\eta_\text{boiler} = 0.900$)
+**Given:** electricity need $P_\text{s} = 100\,\text{MW}$ and district heating need $P_\text{k} = 200\,\text{MW}$. A: efficiency of the condensing power plant $\eta_\text{s,A} = 0.400$ and of the heating boiler $\eta_\text{boiler} = 0.900$. B: electrical efficiency of the combined heat and power plant $\eta_\text{s,B} = 0.320$ and district heating power $0.560\,P_{\text{o},\text{CHP}}$; the missing heat is produced in a similar heating boiler ($\eta_\text{boiler} = 0.900$)
 **Find:** the difference of the fuel powers $P_{\text{o},\text{A}} - P_{\text{o},\text{B}}$ in megawatts
 **Principle:** The fuel power is found by dividing the useful power by the efficiency. In option A electricity and heat are produced separately, so the fuel powers are added.
 
