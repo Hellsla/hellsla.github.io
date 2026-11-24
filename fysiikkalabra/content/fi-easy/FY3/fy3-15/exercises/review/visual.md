@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: aa08ba5b4a64f36f
+CONTENT-HASH: a14dcf70d249d4ff
 Mode: delta
 
 ## Blocking
@@ -9,9 +9,9 @@ None.
 None.
 
 ## Checked
-- Delta: L3-04 Kaava gained the row `ΔP_o = P_{o,A} − P_{o,B}`.
-- Opened at 1280 px, solutions open: fy3-15-open-exercises-L3-1280-6 (Kaava, Muunnokset, Sijoitus) and L3-1280-7 (Vastaus, Järkevyys).
-- Judged: six rows aligned at `=`, fractions legible, the new row reads cleanly and matches the Kysytty line; nothing clipped.
+- Delta: L3-04 Annettu now reads "kaukolämpöteho $0{,}560\,P_{\text{o},\text{CHP}}$" (was $P_{\text{o},\text{B}}$).
+- Opened at 1280 px, solutions open: fy3-15-open-exercises-L3-1280-6 (Annettu, Kysytty, Kaava, Sijoitus).
+- Judged: the subscript CHP now matches the Kaava rows (P_o,CHP, P_k,CHP) and the Sijoitus; P_o,B stays the total, as in Kysytty. Notation consistent, formulas legible, rows aligned at "=", nothing clipped.
 - No 360/390 px open-solution captures exist for exercises.
 
 ## Scores

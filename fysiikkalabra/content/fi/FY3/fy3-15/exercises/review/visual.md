@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6d5e4fe26062f07c
+CONTENT-HASH: b8da362cb104dafe
 
 ## Blocking
 (none)
@@ -8,8 +8,9 @@ CONTENT-HASH: 6d5e4fe26062f07c
 (none)
 
 ## Checked
-- Delta (one row `\Delta P_\text{o} = P_{o,A} - P_{o,B}` added to the Kaava of fy3-15-L3-04). Captures in content/fi/FY3/fy3-15/review/shots, 1280 px.
-- fy3-15-open-exercises-L3-1280-6 (Kaava: six rows, equals signs aligned, fractions readable, no clipping; Muunnokset and Sijoitus follow intact); -L3-1280-4 (neighbouring task layout).
+- Delta (fy3-15-L3-04 Annettu: "0,560 P_o,B" replaced by "0,560 P_o,CHP"). Captures in content/fi/FY3/fy3-15/review/shots, 1280 px.
+- fy3-15-open-exercises-L3-1280-6 (Annettu text shows P_o,CHP; Kaava six rows aligned, fractions readable; Sijoitus uses P_o,CHP consistently, no clipping).
+- Notation now matches Kaava and Sijoitus; units LaTeX.
 - Hash same at start and end.
 
 ## Scores
