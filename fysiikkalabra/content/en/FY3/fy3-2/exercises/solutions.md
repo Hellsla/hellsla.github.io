@@ -86,7 +86,7 @@
 **Reading the graph:** The graph has a horizontal segment at the height $10\,\text{N}$ from $0\ldots 2.0\,\text{m}$ and, continuing from it, a straight segment from the height $10\,\text{N}$ to the height $30\,\text{N}$ from $2.0\ldots 6.0\,\text{m}$.
 
 The rectangle has height $10\,\text{N}$ and width $2.0\,\text{m}$. The parallel sides of the trapezium are $10\,\text{N}$ and $30\,\text{N}$, and its height (the width along the $s$-axis) is $4.0\,\text{m}$.
-**Formula:** $$\begin{aligned} W &= A_\text{rectangle} + A_\text{trapezium} \\ A_\text{rectangle} &= F_1 s_1 \\ A_\text{trapezium} &= 0.5 \cdot (F_1 + F_2)\, s_2 \\ W &= F_1 s_1 + 0.5 \cdot (F_1 + F_2)\, s_2 \end{aligned}$$
+**Formula:** $$\begin{aligned} W &= W_1 + W_2 \\ W_1 &= F_1 s_1 \\ W_2 &= 0.5 \cdot (F_1 + F_2)\, s_2 \\ W &= F_1 s_1 + 0.5 \cdot (F_1 + F_2)\, s_2 \end{aligned}$$
 **Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.
 **Substitution:** $$\begin{aligned} W &= 10\,\text{N} \cdot 2.0\,\text{m} \\ &+ \tfrac{1}{2} \cdot (10\,\text{N} + 30\,\text{N}) \cdot 4.0\,\text{m} \\ &= 20\,\text{J} + 80\,\text{J} \\ &= 100\,\text{J} \end{aligned}$$
 **Answer:** $100\,\text{J}$, two significant figures like the given values (for example $2.0\,\text{m}$).

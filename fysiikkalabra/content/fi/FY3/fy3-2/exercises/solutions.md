@@ -84,7 +84,7 @@
 **Kysytty:** kokonaistyö $W$ jouleina
 **Periaate:** Voima muuttuu, joten kaava $W = F s$ ei käy koko matkalle. Työ on $(s,F)$-kuvaajan pinta-ala, ja sen voi laskea osissa: vakiovoiman osuus on suorakulmio ja tasaisesti kasvavan osuus puolisuunnikas.
 **Kuvaajan lukeminen:** Kuvaajassa on vaakasuora jana korkeudella $10\,\text{N}$ välillä $0\ldots 2{,}0\,\text{m}$ ja sen jatkona suora jana korkeudesta $10\,\text{N}$ korkeuteen $30\,\text{N}$ välillä $2{,}0\ldots 6{,}0\,\text{m}$. Suorakulmion korkeus on $10\,\text{N}$ ja leveys $2{,}0\,\text{m}$. Puolisuunnikkaan yhdensuuntaiset sivut ovat $10\,\text{N}$ ja $30\,\text{N}$ ja korkeus (leveys $s$-akselilla) $4{,}0\,\text{m}$.
-**Kaava:** $$\begin{aligned} W &= A_\text{suorakulmio} + A_\text{puolisuunnikas} \\ A_\text{suorakulmio} &= F_1 s_1 \\ A_\text{puolisuunnikas} &= 0{,}5 \cdot (F_1 + F_2)\, s_2 \\ W &= F_1 s_1 + 0{,}5 \cdot (F_1 + F_2)\, s_2 \end{aligned}$$
+**Kaava:** $$\begin{aligned} W &= W_1 + W_2 \\ W_1 &= F_1 s_1 \\ W_2 &= 0{,}5 \cdot (F_1 + F_2)\, s_2 \\ W &= F_1 s_1 + 0{,}5 \cdot (F_1 + F_2)\, s_2 \end{aligned}$$
 **Muunnokset:** Voimat ovat newtoneina ja matkat metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $$\begin{aligned} W &= 10\,\text{N} \cdot 2{,}0\,\text{m} \\ &+ \tfrac{1}{2} \cdot (10\,\text{N} + 30\,\text{N}) \cdot 4{,}0\,\text{m} \\ &= 20\,\text{J} + 80\,\text{J} \\ &= 100\,\text{J} \end{aligned}$$
 **Vastaus:** $100\,\text{J}$, kaksi merkitsevää numeroa kuten annetuissa arvoissa (esimerkiksi $2{,}0\,\text{m}$).
