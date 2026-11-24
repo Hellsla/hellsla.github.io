@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 2668999cc1d29224
+CONTENT-HASH: d5da62db5dfdd014
 
 ## Blocking
 
 ## Polish
-- solutions.md:276 (fy3-8-L3-04 Vastaus): now that "käytännössä vähintään 14 mm" is gone, the closing sentence "tulokset kelpaavat kahteen numeroon pyöristettyinä" leaves the student to round the minimum gap 13,2 mm to 13 mm, which is on the unsafe side. The guardrail says a "vähintään" value is rounded up. Suggested wording: "pienin rako pyöristetään turvalliselle puolelle ylöspäin (noin 14 mm); laskettu arvo on 13,2 mm". The answer field stays 13,2 mm. Optional.
-- solutions.md:268 (rail-gap task), carried over: $g_\text{max} + \alpha l_0 \Delta T_\text{talvi} \le g_\text{raja}$ would show that this is an "at most" condition. Optional.
+- exercises.json fy3-8-L3-04 (answer 13.2, tolerance 0.03): the Vastaus now tells the student that the minimum gap rounds up to "vähintään 14 mm". A student who types 14 is 6 % off and is marked wrong, so the checker contradicts the model solution. The caller says the answer and tolerance stay as they are on purpose, so I list this only. A tolerance of about 0.07, or a hint that asks for the unrounded value, would fix it. Optional.
+- solutions.md:268, carried over: $g_\text{max} + \alpha l_0 \Delta T_\text{talvi} \le g_\text{raja}$ would show that this is an "at most" condition. Optional.
 
 ## Checked
-- The diff removes only the words "käytännössä vähintään 14 mm" from the Vastaus of L3-04. My earlier Polish item about the tolerance (a student entering 14 mm was marked wrong) is now moot.
-- I recomputed both limits: $12\cdot10^{-6}\cdot 25{,}0\cdot 44 = 13{,}2\,\text{mm}$ and $30 - 12\cdot10^{-6}\cdot 25{,}0\cdot 40 = 18{,}0\,\text{mm}$. answers.py line 37 gives 13,2 mm, and the stated numbers are correct.
-- The model answer to c) is consistent: 15 mm lies between 13,2 and 18 mm. The summer and winter gaps are 1,8 mm and 27 mm, and installing in winter frost gives 25,2 mm > 15 mm.
-- The Järkevyys check (25,2 = 13,2 + 12,0; a window of 4,8 mm) is unchanged and correct.
+- Diff: only the Vastaus line of L3-04 changed. It now gives $g_\text{min} = 13{,}2\,\text{mm}$ and says it is rounded up to at least $14\,\text{mm}$. It also adds "kahden numeron tarkkuudella; alaraja pyöristetään kuitenkin aina ylöspäin". This follows the house rule and the guardrail that an "at least" value is rounded up. With two significant figures (α has two), 13,2 rounds up to 14 mm. This settles my earlier Polish item.
+- b) $g_\text{max} = 30 - 12\cdot10^{-6}\cdot 25{,}0\cdot 40\,\text{mm} = 18{,}0\,\text{mm}$ is an "at most" value. It needs no rounding, so 18 mm is on the safe side.
+- I recomputed: $12\cdot10^{-6}\cdot 25{,}0\cdot 44 = 13{,}2\,\text{mm}$ and $12\cdot10^{-6}\cdot 25{,}0\cdot 40 = 12{,}0\,\text{mm}$. Both match the solution and answers.py.
+- The model answer to c) is still consistent. 15 mm lies between 14 and 18 mm, so it works with the rounded limit too. The gap is 1,8 mm in summer and 27 mm in winter.
 - No other line changed. My earlier checks still hold.
 - The hash was the same at the start and the end.
