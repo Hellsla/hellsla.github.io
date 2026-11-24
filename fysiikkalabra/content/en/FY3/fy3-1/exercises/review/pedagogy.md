@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: faf427df85f5c676
+CONTENT-HASH: f6fcacc2bacbb728
 ## Blocking
 (none)
 ## Polish
-- solutions.md fy3-1-L3 (spring-calibration task), Formula row — "c: spring constant" names a term FY3 does not teach (L1-02 was already changed to "extension per newton") — write "c: constant of the spring" or "c: a constant of the spring".
+(none)
 ## Checked
-- Delta: only the Formula step of model solutions changed, plus paragraph splits in Principle/Model answer; no number, unit, answer or task text changed.
-- Formula rows now start from the basic equation and derive the asked quantity symbolically, one equation per row, as the house rule asks; the packet diff shows them flattened onto one line, the files hold aligned blocks.
-- Where the asked quantity is already alone, the row says so (no empty rearrangement step).
-- Each Formula row leads to the symbolic form that the Substitution step uses; nothing skipped.
+- Delta: only the label in the spring-calibration Formula row changed, "(c: spring constant)" to "(c = x/F)"; no number, unit or answer changed.
+- "c = x/F" is the extension per unit force, which fits the row $x/m = c\,g$ since $F = G = mg$; no term FY3 does not teach remains (my earlier Polish item is closed).
+- The row still leads to the symbolic form the Substitution step uses.
 - Judged from the diff and solutions.md on disk; captures not opened.

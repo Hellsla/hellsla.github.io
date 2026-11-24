@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 65496fbb78cfc318
+CONTENT-HASH: 490134ab5599396c
 ## Blocking
 (none)
 ## Polish
-(none)
+- solutions.md fy3-16 ice-box task, Formula — $E_\text{tot}$ is the sum of the heat through the wall and the heat of the drinks, but the row "$E_\text{tot} = UA\,\Delta T\,t$" ends with a "+ c m_j ΔT_j" continuation. Fine, but add "(the total energy the ice must absorb)" so the name is explained.
 ## Checked
-- The Formula steps of about 16 solutions are aligned rows (29 balanced blocks): basic law ($Q = cm\Delta T$, $Q = sm$, $E = Pt$), then the balance $Q_\text{released} = Q_\text{absorbed}$, then the unknown solved symbolically before substitution, as the house rule asks.
-- The ice-and-water temperature chain shows each algebra step (collecting the terms in $T$, factoring $c\,(m_\text{v} + m_\text{ice})\,T$) so a student who could not solve it can follow.
-- The heat-loss slope task ($E = UA\,t\,(T_\text{in} - T_\text{out})$, $k = -UAt$, $UA = -k/t$) explains the sign of the slope in the algebra.
-- The one wrapped fraction numerator breaks before a sign outside brackets (acceptable); no brackets are split across rows.
-- The cost comparison (energy, fuel mass, cost, saving) is in a sensible order; no number, unit or data changed; levels and counts unchanged.
+- The round 1 array numerator is gone: $E_\text{tot}$ is a named quantity and the last row is $m = E_\text{tot}/(c_\text{ice}\Delta T_\text{ice} + s)$.
+- Chain is right: $Q_\text{released} = E + c\,m_\text{j}\Delta T_\text{j}$, $E = Pt$, $P = UA\Delta T$, then $m(c_\text{ice}\Delta T_\text{ice}+s) = E_\text{tot}$; the repeated rows of the old version are removed.
+- It starts from the balance $Q_\text{absorbed} = Q_\text{released}$ and is symbolic to the end.
+- No number, unit or data changed.
+- Judged from the diff and solutions.md on disk; captures not opened.

@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8361d8c133f37f03
+CONTENT-HASH: c1c4d31ab8d2e60a
 ## Blocking
 (none)
 ## Polish
-- solutions.md:224 (L3 jousen kalibrointi) — "c: jousen vakio" is a spring constant, a term the chapter dropped elsewhere (L1-02 Järkevyys) — say "jousen ominaisuus, sama molemmissa" or leave c out and write the ratio x/m ∝ g.
+(none)
 ## Checked
-- Delta: the Kaava step of each solution now stands as an aligned block that starts from the basic equation(s) (G = mg, F = m g, proportion), derives the formula and simplifies symbolically to the end; read from the file itself (the packet diff shows the rows flattened, the source has the rows).
-- Answers, Sijoitus, Muunnokset unchanged; each Sijoitus substitutes into the last symbolic form.
-- Single-equation Kaava lines (G = m g, already solved for the asked quantity) are stated as such; fine.
-- Longest chains (L2 Kuu/Maa difference, L3 Marsin kantavuus) stay stepwise, one thing per row.
+- Delta: L3-04 Kaava note "(c = x/F)" replaces "jousen vakio". Read in context at solutions.md: x = cF with F = mg gives x/m = c g, so the proportion is consistent and the term problem is fixed.
+- c is defined by the quantities the lesson teaches (venymä per voima, jousen kalibrointi), so no new term appears.
+- Kaava, Sijoitus (ratio of x/m values) and answer (Mars, 3,6 m/s²) unchanged and consistent.
 - Judged from the solutions text; captures not opened.

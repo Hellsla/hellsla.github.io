@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: dcf9a25f9b327a71
+CONTENT-HASH: fac43d3c5888a291
 ## Blocking
 (none)
 ## Polish
-- Polish: solutions.md L2/L3 calometer rows, where a long numerator is broken inside a bracket (`(T_\text{v} \\ - T)` in a `\begin{array}`); break between terms, not inside a bracket.
+- solutions.md fy3-14-L2-04 Sijoitus — "Hakasulkeiden lauseke" no longer matches the Kaava, where the quantity is named K. Fix: "Lauseke $K$ on".
+- solutions.md fy3-14-L3-03 Kaava — the step from the two Q rows to "N = ..." skips the rearrangement, and the closing sentence after the block has no full stop. Add one line, for example "kun termit kerätään", and the full stop.
 ## Checked
-- Delta: Kaava rows start from Q_luovutettu = Q_vastaanotettu and the basic laws, then solve for the unknown; staged one step per row.
-- Long model answers split into short paragraphs; contents unchanged.
-- Sulamislämpö solutions keep the lesson's terms.
-- Finnish unchanged in the diff apart from sentence splits; short sentences, fits a phone.
+- Delta: the array numerators are replaced by named intermediate quantities (K, N) in L2-04, L3-03 and L3-04. Each row is a short step.
+- L2-04: K = m_v(T_v − T) − m_j T and s = c_v K / m_j agree with the Sijoitus step (3,975 kg·K).
+- L3-03: N = c_v m_v ΔT_v + s m_v + c_j m_j T_j and T = N / (c_j(m_j + m_v)) agree with the numerator terms in Sijoitus.
+- L3-04: K, N and s = N/m_j agree with the case ΔT_j = 0 in a).
+- The symbolic form is reached before any substitution, and no bracket is broken inside an array.
+- Judged from the diff and the solutions file on disk. Hash unchanged at start and end.

@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c181f69fde99c348
+CONTENT-HASH: a734d296f9991e3e
 ## Blocking
 (none)
 ## Polish
-- exercises/solutions.md:111, 167, 278 (Formula steps of the latent-heat-of-fusion and ice-and-water tasks) — the numerator of the last row is put in `\begin{array}{c}` and broken by hand inside a bracket, "(T_w" on one row and "- T)" on the next. A student reads a broken bracket as an error. Fix: keep the numerator on one row (the page wraps it on a phone) or break it only before a sign outside brackets.
-- exercises/solutions.md:270–280 — two Formula steps carry `\quad +` continuation rows; a short plain-text clause "(the same terms moved to the other side)" would explain the move for a weaker student.
+- solutions.md fy3-14-L2-04, Substitution — "The expression in the square brackets is ..." refers to brackets that no longer exist now that $K$ is a row of the Formula step. Write "The quantity $K$ is ...".
+- solutions.md fy3-14-L2-04 and the ice-and-water tasks — $K$ and $N$ are auxiliary names with no introduction, and $K$ looks like the kelvin symbol. Add "where $K$ is a shorthand for ..." or use another letter (e.g. $X$).
 ## Checked
-- All Formula steps (about 20) now start from the basic balance ($Q_\text{released} = Q_\text{absorbed}$, $E = Pt$, $Q = sm$), then the terms, then the solved unknown; symbolic to the end before substitution, as the house rule asks.
-- The partial-melting condition ($Q_\text{w} > s m_\text{i}$) and the frozen-water case are stated beside the chain, not hidden in it.
-- Split paragraphs (energy-balance checks, comparison of reasons, corrected value of $s$) keep each reasoning step; none over about 120 words.
-- Symbols match Given and Substitution; no number, unit or data changed; levels and counts unchanged.
+- The round 1 array numerators are gone: the long numerators are now named quantities ($K$, $N$) and the last row is a short fraction, so no bracket is split across rows.
+- $K = m_\text{w}(T_\text{w} - T) - m_\text{i}T$ and $s m_\text{i} = c_\text{w}K$ are algebraically right; the second task's $N$ includes $-c_\text{i}m_\text{i}\Delta T_\text{i}$ correctly.
+- In the ice-and-water task each balance term is on its own row ($Q_\text{released}$, $Q_\text{absorbed}$), then $N$ collects the known terms, then $T = N/(c_\text{i}(m_\text{i}+m_\text{w}))$.
+- Rows start from the basic balance, symbolic to the end; no number, unit or data changed.
+- Judged from the diff and solutions.md on disk; captures not opened.

@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 561d3e679af9f6d9
+CONTENT-HASH: 7e6d204e0c7b09d6
 ## Blocking
 (none)
 ## Polish
-(none)
+- solutions.md fy3-8 rail-gap task, Answer line — "in practice at least $14\,\text{mm}$" is followed by "acceptable rounded to two figures", which would give $13\,\text{mm}$. Say "the two-figure value of the coefficient is why the results are given to two figures; the lower limit is rounded up to the safe side".
 ## Checked
-- Delta: only the Formula step of model solutions changed, plus paragraph splits in Principle/Model answer; no number, unit, answer or task text changed.
-- Formula rows now start from the basic equation and derive the asked quantity symbolically, one equation per row, as the house rule asks; the packet diff shows them flattened onto one line, the files hold aligned blocks.
-- Where the asked quantity is already alone, the row says so (no empty rearrangement step).
-- Each Formula row leads to the symbolic form that the Substitution step uses; nothing skipped.
+- Delta: only the Answer of part a) changed, from "in practice 13 mm" to "at least 14 mm".
+- Rounding an "at least" value up is the safe side, so the new wording is right and matches the house rule on limit values.
+- Part c) still works: the gap $15\,\text{mm}$ is above $14\,\text{mm}$ and below $18\,\text{mm}$.
+- The Formula rows (g_limit named) are unchanged and symbolic to the end.
 - Judged from the diff and solutions.md on disk; captures not opened.

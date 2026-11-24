@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5e6541ff07793d7a
+CONTENT-HASH: ca97d56eea315b06
 ## Blocking
 (none)
 ## Polish
 (none)
 ## Checked
-- Delta: only the Kaava step of the model solutions changed. The packet diff shows the new Kaava lines run together; the files on disk hold them as aligned display blocks (one equation per row, equals signs aligned), so the diff is a flattening artifact and not a defect.
-- Every Kaava block starts from the basic equation or law and ends in the asked quantity solved in symbols before any substitution (CLAUDE.md read-through rule); the brackets and $ delimiters balance.
-- Steps after Kaava (Muunnokset, Sijoitus, Vastaus, Järkevyys) are unchanged and still follow from the new Kaava rows; the principle is still explained in Periaate.
+- Delta: only the note in the L3-04 Kaava row changed, from "(c: jousen vakio)" to "(c = x/F)". It now defines the spring constant by the calibration relation, so the student sees where c comes from.
+- The Kaava block still starts from x/m = c g_Maa, writes the same relation for X and solves g_X in symbols before substitution.
+- Periaate, Taulukon lukeminen and the later steps are unchanged and consistent with the note.
 - Judged from the diff and the solutions file on disk; captures not opened. Hash unchanged at start and end.

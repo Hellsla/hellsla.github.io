@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0d8ceb3846b7e870
+CONTENT-HASH: 0171826181598c8e
 ## Blocking
 (none)
 ## Polish
-(none)
+- solutions.md fy3-8 L3-04 Vastaus — "käytännössä vähintään 14 mm" is followed by "tulokset kelpaavat kahteen numeroon pyöristettyinä", which would give 13 mm for a). Fix: "pyöristettyinä, mutta alaraja pyöristetään ylös".
 ## Checked
-- Delta: only the Kaava step of the model solutions changed. The packet diff shows the new Kaava lines run together; the files on disk hold them as aligned display blocks (one equation per row, equals signs aligned), so the diff is a flattening artifact and not a defect.
-- Every Kaava block starts from the basic equation or law and ends in the asked quantity solved in symbols before any substitution (CLAUDE.md read-through rule); the brackets and $ delimiters balance.
-- Steps after Kaava (Muunnokset, Sijoitus, Vastaus, Järkevyys) are unchanged and still follow from the new Kaava rows; the principle is still explained in Periaate.
-- Judged from the diff and the solutions file on disk; captures not opened. Hash unchanged at start and end.
+- Delta: only the a) answer changed, from "13 mm" to "käytännössä vähintään 14 mm". This follows the rule that an "at least" limit is rounded up.
+- The new answer fits Mallivastaus c): a 15 mm gap lies between 13,2 mm and 18 mm, and 15 mm is above 14 mm.
+- b) is unchanged: g_max = 18 mm.
+- Judged from the diff and the solutions file on disk. Hash unchanged at start and end.

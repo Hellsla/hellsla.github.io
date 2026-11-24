@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4da5d6b6c0b16245
+CONTENT-HASH: 1acfcf757217e158
 ## Blocking
 (none)
 ## Polish
-(none)
+- solutions.md:277 (L3 kiskojen rako, Vastaus a) — "käytännössä vähintään 14 mm" is not explained, and the next sentence says the results are good to two figures (13 mm), which seems to contradict it — add "pyöristetään ylöspäin, koska raon on oltava vähintään tämä" (the safe-side rule) and say the 13,2 mm is rounded up to 14 mm.
 ## Checked
-- Delta: only the Kaava step of the model solutions changed; read from solutions.md itself (the packet diff shows the aligned rows flattened). In fy3-8 expansion chains start from Δl = αl0ΔT or ΔV = γV0ΔT, rearrange or combine (γ ≈ 3α) and simplify symbolically to the end.
-- Answers, Sijoitus and Muunnokset unchanged; Sijoitus substitutes into the last symbolic form.
-- Tasks whose asked quantity is already alone state so in one line; nothing skipped for a student who could not solve the task.
+- Delta: only Vastaus a) changed; 13,2 mm rounded up to 14 mm follows the house rule (an "at least" value rounds up).
+- Mallivastaus c) still uses 13,2 mm and 15 mm is inside the range, so the conclusion holds.
+- Kaava, Sijoitus and b) (18 mm) unchanged.
 - Judged from the solutions text; captures not opened.

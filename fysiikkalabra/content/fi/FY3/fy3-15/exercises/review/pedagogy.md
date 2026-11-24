@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b5a901260dcdfe41
-SCOPE: delta Kaava step of model solutions (basic equations first, derived formula, symbolic simplification to the end)
-
+CONTENT-HASH: 6d5e4fe26062f07c
 ## Blocking
-None.
-
+(none)
 ## Polish
-None.
-
+(none)
 ## Checked
-- Each Kaava step now starts from the basic equation(s) or law and reaches the solved symbolic form that Sijoitus uses; no combined formula opens a derivation.
-- The derivation steps are consistent with the quantities named in Sijoitus; answers, units and Sijoitus unchanged.
-- Added paragraph breaks and moved remarks in long model answers help reading and change no content.
-- Aligned blocks are short enough for a phone.
+- Delta: L3-04 Kaava ends with the row ΔP_o = P_o,A - P_o,B, the quantity the task asks for. Read from solutions.md.
+- The chain goes in order: P_o = P_hyöty/η, A, CHP, k,CHP, B, difference. Sijoitus follows the same order and ends at 131,94 MW.
+- Answer (132 MW, three figures) and Järkevyys (total efficiency 0,880 and 0,635) unchanged and consistent.
+- Judged from the solutions text; captures not opened.
