@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 0021887cd241265d
+CONTENT-HASH: 94f5035d13fe705d
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] sim-1280 / exp-exp-1-390 — the removed note ("Katkoviiva on v = g t …") leaves the dashed line unlabelled on the canvas; the legend shows only A and B. Make sure Käyttöohje says what the dashed line is, or add a short LaTeX legend entry $v = g\,t$.
+(none)
 
 ## Checked
-- Delta: sim.js only drops the note line under the simulation; the three teacher-approved pictures and the lesson.md figures are teacher-approved.
-- Opened: sim-1280, exp-exp-1-390-1, lab-1280, intro-1280 (hero), fig-1-390, theory-1280-1.
-- Sim at 1280 and 390 px: canvas, graph axes with units, A/B legend, readout, controls and speed select are all intact, with no clipping or overflow. Labels and readout are LaTeX. A orange and B blue are consistent with the palette.
-- Hero picture reads clearly in the left third and middle third. The theory figure with v arrows in blue is legible. The Pysähdy ja mieti card is fine and its numbers carry LaTeX units.
+- Delta round 1: the diff only removes the prefix "Esimerkkiaineisto: " and capitalises the next word; no numbers, symbols, formulas or figures changed.
+- Opened (content/fi-easy/FY1/fy1-6/review/shots/): fy1-6-stage-tarkista-390-1, fy1-6-stage-tarkista-390-3, fy1-6-stage-tutki-390-3 (the optional card "Kuulan nopeus kuvista" in the Tutki stage, 390 px).
+- The title now reads "Kuulan nopeus kuvista" in the closed optional card; no clipping, layout intact. The card body still says "simuloitu esimerkkiaineisto, ei oikea koe" and the figure's aria-label begins "Esimerkkiaineiston …"; both are labelling of simulated data, so consistent.
+- Hash re-run at the end: unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

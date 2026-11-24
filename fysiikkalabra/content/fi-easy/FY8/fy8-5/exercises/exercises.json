@@ -184,7 +184,7 @@
     {
       "id": "fy8-5-L2-05",
       "level": 2,
-      "text": "Esimerkkiaineisto: vetyatomin $1\\text{s}$-elektronin etäisyys ytimestä mitataan simulaatiossa $N = 400$ kertaa. Taulukossa on mittausten lukumäärä $k$ luokittain. Luokan leveys on $0{,}05\\,\\text{nm}$.\n\na) Mikä etäisyysluokka on yleisin?\n\nb) Kuinka suuri osuus mittauksista osuu alle $0{,}10\\,\\text{nm}$:n etäisyydelle? Anna osuus prosentteina.\n\nc) Sopiiko aineisto yhteen sen kanssa, että $1\\text{s}$-orbitaalin $90\\,\\%$:n rajan säde on $0{,}14\\,\\text{nm}$? Perustele luvuilla.\n\nAnna b)-kohdan tulos vastauslaatikkoon.",
+      "text": "Vetyatomin $1\\text{s}$-elektronin etäisyys ytimestä mitataan simulaatiossa $N = 400$ kertaa. Taulukossa on mittausten lukumäärä $k$ luokittain. Luokan leveys on $0{,}05\\,\\text{nm}$.\n\na) Mikä etäisyysluokka on yleisin?\n\nb) Kuinka suuri osuus mittauksista osuu alle $0{,}10\\,\\text{nm}$:n etäisyydelle? Anna osuus prosentteina.\n\nc) Sopiiko aineisto yhteen sen kanssa, että $1\\text{s}$-orbitaalin $90\\,\\%$:n rajan säde on $0{,}14\\,\\text{nm}$? Perustele luvuilla.\n\nAnna b)-kohdan tulos vastauslaatikkoon.",
       "kind": [
         "data",
         "reasoning"
@@ -230,7 +230,7 @@
       "id": "fy8-5-L2-06",
       "level": 2,
       "core": true,
-      "text": "Kuvassa on molemmista päistä kiinnitetyn kielen kolme ensimmäistä seisovaa aaltoa. Solmu on kohta, jossa kieli ei liiku. Esimerkkiaineisto: kielen pituus on $L = 0{,}80\\,\\text{m}$ ja aallon nopeus kielessä $v = 64\\,\\text{m/s}$.\n\na) Mikä on kunkin kuvan tilan aallonpituus $\\lambda$?\n\nb) Laske kunkin tilan taajuus $f$.\n\nc) Selitä laskemiesi taajuuksien avulla, miksi tila, jossa on enemmän solmuja, vastaa suurempaa taajuutta. Kerro myös, mitä tämä kertoo atomin elektronin tiloista.\n\nAnna b)-kohdan tulos vastauslaatikkoon sen tilan osalta, jossa on kaksi solmua.",
+      "text": "Kuvassa on molemmista päistä kiinnitetyn kielen kolme ensimmäistä seisovaa aaltoa. Solmu on kohta, jossa kieli ei liiku. Kielen pituus on $L = 0{,}80\\,\\text{m}$ ja aallon nopeus kielessä $v = 64\\,\\text{m/s}$.\n\na) Mikä on kunkin kuvan tilan aallonpituus $\\lambda$?\n\nb) Laske kunkin tilan taajuus $f$.\n\nc) Selitä laskemiesi taajuuksien avulla, miksi tila, jossa on enemmän solmuja, vastaa suurempaa taajuutta. Kerro myös, mitä tämä kertoo atomin elektronin tiloista.\n\nAnna b)-kohdan tulos vastauslaatikkoon sen tilan osalta, jossa on kaksi solmua.",
       "kind": [
         "graph",
         "concept"
@@ -329,7 +329,7 @@
     {
       "id": "fy8-5-L3-04",
       "level": 3,
-      "text": "Esimerkkiaineisto: vetykaasun emissiospektrin näkyvät viivat syntyvät, kun atomin elektroni siirtyy ylemmältä kuorelta kuorelle $n = 2$. Emissiospektri on atomin lähettämän valon viivat. Taulukossa on neljän viivan aallonpituudet $\\lambda$.\n\nVetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Viivojen alkukuoria ei kuitenkaan tunneta. Alkukuori on kuori, jolta elektroni lähtee.\n\na) Laske kunkin viivan fotonin energia $E_\\text{f}$ elektronivoltteina.\n\nb) Päättele jokaiselle viivalle alkukuoren numero $n$ ratkaisemalla se yhtälöstä $E_\\text{f} = E_n - E_2$. Perustele, miksi tulosten pitää olla kokonaislukuja.\n\nc) Piirrä kuvaaja, jonka vaaka-akselilla on $\\tfrac{1}{4} - \\tfrac{1}{n^2}$ ja pystyakselilla $E_\\text{f}$. Sovita pisteisiin suora. Määritä suoran kulmakerroin ja kerro, mitä se ilmaisee.\n\nd) Ennusta seuraavan viivan aallonpituus. Se on viiva, jossa elektroni lähtee kuorelta $n = 7$.\n\nAnna c)-kohdan kulmakerroin vastauslaatikkoon elektronivoltteina.",
+      "text": "Vetykaasun emissiospektrin näkyvät viivat syntyvät, kun atomin elektroni siirtyy ylemmältä kuorelta kuorelle $n = 2$. Emissiospektri on atomin lähettämän valon viivat. Taulukossa on neljän viivan aallonpituudet $\\lambda$.\n\nVetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$. Viivojen alkukuoria ei kuitenkaan tunneta. Alkukuori on kuori, jolta elektroni lähtee.\n\na) Laske kunkin viivan fotonin energia $E_\\text{f}$ elektronivoltteina.\n\nb) Päättele jokaiselle viivalle alkukuoren numero $n$ ratkaisemalla se yhtälöstä $E_\\text{f} = E_n - E_2$. Perustele, miksi tulosten pitää olla kokonaislukuja.\n\nc) Piirrä kuvaaja, jonka vaaka-akselilla on $\\tfrac{1}{4} - \\tfrac{1}{n^2}$ ja pystyakselilla $E_\\text{f}$. Sovita pisteisiin suora. Määritä suoran kulmakerroin ja kerro, mitä se ilmaisee.\n\nd) Ennusta seuraavan viivan aallonpituus. Se on viiva, jossa elektroni lähtee kuorelta $n = 7$.\n\nAnna c)-kohdan kulmakerroin vastauslaatikkoon elektronivoltteina.",
       "kind": [
         "data",
         "graph",

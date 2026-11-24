@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 00f8c7564f63ff3c
-SCOPE: delta numbers,reflow,teacher-figure from f357a9805844a06e base 9102119
+CONTENT-HASH: 81975ac73e4cf79c
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Diff read in full: Formula steps start from basic equations as `aligned` blocks; the four pick-* force-diagram pictures of L2-08 are teacher-approved drawings.
-- Opened at 1280 px: open-exercises-L2-1280-8. Diagrams A to D legible, labels `\overline{G}`, `\overline{F}_\text{e}`, `\overline{v}` in LaTeX, force red and velocity blue, feedback inside the card, option card layout intact.
-- Layout checks at 360-1280 px are green in the packet.
+- Delta (removal of the prefix "Example data: "): opened stage-exercises-390-1. Layout, maths and tables intact, nothing clipped; the edited sentences read naturally without the prefix.
 
 ## Scores
-illustrations 5 · typography 5 · English 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

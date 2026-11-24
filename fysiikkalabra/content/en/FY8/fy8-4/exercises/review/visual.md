@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a6daf3bf862bbc3a
-SCOPE: delta numbers,reflow from 685e2a41e56bc41e base 4b05399
+CONTENT-HASH: 7e1e68d19c4b1d9f
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] The Compton task's Formula step mixes inline fractions with prose (p = h/λ, p' = h/λ' ...) before the block; \tfrac would keep the line height even.
+- none
 
 ## Checked
-- delta, en (8g: the Kaava step of the model solutions as aligned blocks, one equation per row). The packet's 390 px captures did not exist for the exercise solutions, so I rebuilt preview/en/fy8-4.html and took my own 390 px captures (all details open) of the Formula blocks: the three to four tallest per set, opened and read.
-- Measured at 360 and 390 px with every solution open: no clipped or overflowing KaTeX in any solution step, no page-level horizontal overflow, no red KaTeX source.
-- Equals signs align in one column, left sides right-aligned, fractions in display size, subscripts legible, prose and blocks interleave correctly; the changed rows sit in their cards.
-- Hash re-run at the end: unchanged.
+- Delta (removal of the prefix "Example data: "): opened stage-exercises-390-1 and open-exercises-L2-1280-1. Layout, maths and tables intact, nothing clipped; the edited sentences read naturally without the prefix.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
