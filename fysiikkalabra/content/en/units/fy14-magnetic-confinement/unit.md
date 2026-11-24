@@ -122,6 +122,12 @@ The force is always **perpendicular** both to $\overline{v}$ and to $\overline{B
   <foreignObject x="20" y="55.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#2b8a3e">$\text{the page}$</div></foreignObject>
 </svg>
 
+```pysahdy
+A proton moves exactly along a magnetic field line. What is the magnetic force on it?
+---
+Zero. The force is $F = |q|\,vB\sin\alpha$, and along the field $\alpha = 0$, so $\sin\alpha = 0$.
+```
+
 ## Formula: Radius and period of the orbit
 
 When $\overline{v}$ is perpendicular to a uniform $\overline{B}$, the magnetic force is a constant-size force towards a centre, so the particle moves on a **circle**. The magnetic force is the centripetal force:
@@ -139,6 +145,7 @@ The radius $r$ is called the **gyroradius**. A stronger field gives a smaller ci
 Usually the velocity has a part along the field, $v_{\parallel} = v\cos\theta$, and a part across it, $v_{\perp} = v\sin\theta$. The angle $\theta$ is the **pitch angle**. The field does not affect $v_{\parallel}$, so the particle circles *around* a field line and slides *along* it: its path is a **helix**. The particle is tied to its field line, but it can run freely along it.
 
 In a **magnetic mirror** the field is stronger at both ends. As a particle moves into the stronger field, more of its motion turns into circling and $v_{\parallel}$ shrinks. If $v_{\parallel}$ reaches zero, the particle turns back. The condition for this is below: $B_0$ is the field in the middle and $B_{\max}$ the field at the ends.
+
 ```latex
 \sin^2\theta \geq \frac{B_0}{B_{\max}}
 ```
@@ -157,6 +164,12 @@ Particles with smaller pitch angles, inside the **loss cone**, escape through th
   <foreignObject x="293" y="278.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\theta$</div></foreignObject>
   <foreignObject x="127.5" y="401.5" width="345" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$B_{\max} = 4B_0\text{: reflected if } \sin^2\theta \geq B_0 / B_{\max}$</div></foreignObject>
 </svg>
+
+```pysahdy
+Why does $v_{\parallel}$ shrink when a particle moves into a stronger field?
+---
+The magnetic force does no work, so the kinetic energy stays the same. More of the motion turns into circling around the field line, and less is left for sliding along it.
+```
 
 The Earth's magnetic field is a natural mirror: it traps charged particles in the radiation belts, where they bounce between the north and the south. Particles that do reach the upper air near the poles make the northern lights.
 

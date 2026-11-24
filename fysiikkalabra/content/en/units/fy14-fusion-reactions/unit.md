@@ -58,6 +58,12 @@ The Sun turns hydrogen into helium in three steps, called the **proton–proton 
 
 In total, four protons become one helium-4 nucleus, and $26.7\ \text{MeV}$ is released; about $2\ \%$ of it escapes with the neutrinos. The first step is extremely slow, because turning a proton into a neutron needs the **weak interaction**. An average proton in the Sun's core waits about $9$ billion years before it fuses. The Sun shines only because it holds an enormous number of protons.
 
+```pysahdy
+Why is the first step of the proton–proton chain so slow?
+---
+It must turn a proton into a neutron, which needs the weak interaction. This interaction is so weak that an average proton in the Sun's core waits billions of years to fuse.
+```
+
 ## Key idea
 
 Two nuclei are both positive, so they repel each other. To fuse, they must come within about $3\ \text{fm}$ of each other, where the strong force takes over. At this distance their electric potential energy is about $0.5\ \text{MeV}$. This energy hill is the **Coulomb barrier**.
@@ -111,6 +117,12 @@ The temperature of the Sun's core is about $15.7$ million kelvin. There, the ave
 
 The answer is **quantum tunnelling**. A nucleus behaves partly like a wave, and it has a small probability of appearing on the other side of the barrier without having the energy to climb over it. George Gamow found this effect in 1928 for alpha decay, and in 1929 Robert Atkinson and Fritz Houtermans used it to calculate fusion in stars. Tunnelling is most likely for the fastest nuclei and for barriers that are low and thin, so fusion needs high temperatures, and it is easiest for the hydrogen isotopes, which have the smallest charge. Because of tunnelling, deuterium and tritium already fuse readily at collision energies of about $0.1\ \text{MeV}$, well below the $0.5\ \text{MeV}$ top of the barrier, and in a reactor plasma (about $15\ \text{keV}$) the fastest nuclei do most of the fusing.
 
+```pysahdy
+The thermal energy of a nucleus in the Sun's core is about $2\,\text{keV}$, but the Coulomb barrier is about $0.5\,\text{MeV}$. How can the Sun still fuse nuclei?
+---
+By quantum tunnelling. A nucleus behaves partly like a wave and has a small probability of appearing on the far side of the barrier without having the energy to climb over it.
+```
+
 ## Formula: Sharing the energy of D–T fusion
 
 The easiest reaction for a reactor is the fusion of deuterium and tritium:
@@ -125,6 +137,12 @@ E_\text{n} &= \frac{m_\alpha}{m_\alpha + m_\text{n}} \cdot Q
 \end{aligned}
 ```
 So the neutron carries $14.1\ \text{MeV}$ and the helium nucleus, the **alpha particle**, $3.5\ \text{MeV}$.
+
+```pysahdy
+Why does the neutron take $14.1\,\text{MeV}$ of the energy of D–T fusion and the alpha particle only $3.5\,\text{MeV}$?
+---
+The two products have equal and opposite momenta, and $E_\text{k} = p^2/(2m)$. For the same momentum the lighter neutron gets the larger share of the kinetic energy.
+```
 
 ## Fusion in the laboratory {Lab}
 

@@ -121,6 +121,12 @@ A black body sends out radiation at all wavelengths, but not equally. Its spectr
 
 The Sun's surface, at about $5800\ \text{K}$, has its peak near $500\ \text{nm}$, in the middle of the visible band. Your skin, at about $300\ \text{K}$, has its peak near $10\ \mu\text{m}$, in the infrared: thermal cameras see it.
 
+```pysahdy
+Which radiates with its peak at the shorter wavelength, the Sun's surface or your skin, and why?
+---
+The Sun's surface. It is much hotter, and the peak of a black-body spectrum moves to shorter wavelengths when the temperature rises.
+```
+
 ## The ultraviolet catastrophe {Catastrophe}
 
 Classical physics tried to explain the curve. In an oven, the radiation forms **standing waves** between the walls, like the vibrations of a guitar string. There is no limit to how short a standing wave can be, and the shorter the wavelength, the more different wave patterns fit into the oven. Classical physics says that at a temperature $T$ every wave pattern gets the same average share of the energy.
@@ -164,6 +170,12 @@ Lord Rayleigh worked out what this means in 1900, and Rayleigh and James Jeans c
   <foreignObject x="302.5" y="187" width="270" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{measured (Planck's law)}$</span></div></foreignObject>
 </svg>
 
+```pysahdy
+What did classical physics predict for the radiated power at very short wavelengths, and why was that a failure?
+---
+It predicted power growing without limit, so the total energy of the radiation would be infinite. Real ovens do not do this: the measured curve falls to zero at short wavelengths.
+```
+
 The measured curve falls to zero at short wavelengths. Classical physics was not just a little inaccurate here; its basic idea gave an impossible answer.
 
 ## Formula: Wien's law and Planck's energy packets
@@ -182,6 +194,12 @@ On 19 October 1900 Max Planck presented a formula that fitted the Berlin measure
 E = hf
 ```
 where $h = 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}$ is **Planck's constant**. A short wave has a high frequency, so its packet is large. At a temperature $T$ the typical energy available from the heat motion is small, of the order of $k_\text{B}T$, where $k_\text{B} = 1.381 \cdot 10^{-23}\ \text{J/K}$ is the Boltzmann constant. Very few short-wave patterns ever receive a whole packet, so they carry almost no energy. The catastrophe disappears.
+
+```pysahdy
+Why does Planck's assumption of energy packets $E = hf$ remove the ultraviolet catastrophe?
+---
+A short wave has a high frequency, so its packet is much larger than the typical heat energy of the order of $k_\text{B}T$. Very few short-wave patterns ever receive a whole packet, so they carry almost no energy.
+```
 
 Planck called his assumption "an act of despair" and saw it as a mathematical step. Five years later Einstein took the packets seriously as particles of light.
 

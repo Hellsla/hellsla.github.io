@@ -73,6 +73,12 @@ When a gas is heated, its particles move faster and collide harder. At high enou
 
 A plasma is **quasi-neutral**: in any large volume there is almost the same amount of positive and negative charge. But its charges can move, so a plasma **conducts electricity** and reacts strongly to **magnetic fields**. This is why it behaves so differently from a gas. Some scientists call it the **fourth state of matter**, after solid, liquid and gas.
 
+```pysahdy
+A plasma is almost neutral overall. Why does it still conduct electricity?
+---
+It contains free ions and electrons that can move, and moving charges form a current.
+```
+
 ## Plasma in nature {Nature}
 
 Most of the ordinary matter that we can see in the universe is plasma, because **stars** are made of it. In the Sun's core the temperature is about $1.57 \cdot 10^{7}\ \text{K}$, and the matter is almost completely ionised.
@@ -133,6 +139,12 @@ The Sun's core is very dense: about $1.5 \cdot 10^{5}\ \text{kg/m}^3$, 150 times
 ## Formula: The triple product
 
 A fusion plasma loses energy all the time: hot particles escape and the plasma radiates. The **energy confinement time** $\tau_\text{E}$ is the energy stored in the plasma divided by the power it loses.
+
+```pysahdy
+A plasma stores $60\,\text{MJ}$ of energy and loses $30\,\text{MW}$. What is its energy confinement time?
+---
+$\tau_\text{E}$ is the stored energy divided by the lost power, here $60\,\text{MJ} : 30\,\text{MW} = 2\,\text{s}$.
+```
 
 In 1955 the British engineer John Lawson worked out what a plasma needs to give out more energy than it loses. Today his result is a condition on the **triple product** of density, temperature and confinement time. For deuterium–tritium fuel, a plasma that keeps itself hot by its own fusion (**ignition**) needs the following, at a temperature near $T \approx 14\ \text{keV}$.
 ```latex
