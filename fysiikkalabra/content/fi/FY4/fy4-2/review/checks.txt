@@ -1,4 +1,4 @@
-FAIL lint
+ok   lint
 ok   latex
 ok   i18n (en 0 error(s); fi-easy 0 error(s))
 ok   build

@@ -1201,14 +1201,15 @@
       "kaynnista": "Käynnistä",
       "alusta": "Alusta",
       "tauko": "Tauko",
-      "nopeus_toisto": "Nopeus",
+      "nopeus_toisto": "Nopeus (toisto)",
       "hidas": "hidas",
       "normaali": "normaali",
       "nopea": "nopea",
       "alkunopeus": "Alkunopeus $v_0 = {{v}}\\,\\text{m/s}$",
       "kiihtyvyys": "Kiihtyvyys $a = {{a}}\\,\\text{m/s}^2$",
       "hetki": "Hetki $t = {{t}}\\,\\text{s}$",
-      "lukemat": "<strong>$t = {{t}}\\,\\text{s}$</strong><br>paikka <strong>$x = {{x}}\\,\\text{m}$</strong>, nopeus <strong>$v = {{v}}\\,\\text{m/s}$</strong>, kiihtyvyys $a = {{a}}\\,\\text{m/s}^2$"
+      "lukemat": "<strong>$t = {{t}}\\,\\text{s}$</strong><br>paikka <strong>$x = {{x}}\\,\\text{m}$</strong>, nopeus <strong>$v = {{v}}\\,\\text{m/s}$</strong>, kiihtyvyys $a = {{a}}\\,\\text{m/s}^2$",
+      "legend": "Sininen nuoli on nopeus, oranssi kiihtyvyys. Haalea kärry näyttää paikan kokonaisin sekunnein."
     },
     "fy4-4": {
       "kaynnista": "Käynnistä",

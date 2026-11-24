@@ -24,16 +24,16 @@
   "note": "main button Käynnistä first, then Alusta; DOM order canvas, controls, readout"
  },
  {
-  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root label')]; const s=L.map(x=>simText(x)); return L.length===4 && /^Alkunopeus \\$v_0 = 0\\\\,\\\\text\\{m\\/s\\}\\$/.test(s[0]) && /^Kiihtyvyys \\$a = 2\\{,\\}0\\\\,\\\\text\\{m\\/s\\}\\^2\\$/.test(s[1]) && /^Hetki \\$t = 0\\{,\\}0\\\\,\\\\text\\{s\\}\\$/.test(s[2]) && s[3].startsWith('Nopeus') ? 1 : 0 })()",
+  "expr": "(() => { const L=[...document.querySelectorAll('#sim-root label')]; const s=L.map(x=>simText(x)); return L.length===4 && /^Alkunopeus \\$v_0 = 0\\\\,\\\\text\\{m\\/s\\}\\$/.test(s[0]) && /^Kiihtyvyys \\$a = 2\\{,\\}0\\\\,\\\\text\\{m\\/s\\}\\^2\\$/.test(s[1]) && /^Hetki \\$t = 0\\{,\\}0\\\\,\\\\text\\{s\\}\\$/.test(s[2]) && s[3].startsWith('Nopeus (toisto)') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "four labelled controls with LaTeX values: Alkunopeus v0, Kiihtyvyys a, Hetki t, Nopeus"
+  "note": "four labelled controls with LaTeX values: Alkunopeus v0, Kiihtyvyys a, Hetki t, Nopeus (toisto)"
  },
  {
-  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===0 ? 1 : 0 })()",
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "no Lisätietoja box and no legend line (the legend is in the lesson's inquiry.json)"
+  "note": "no Lisätietoja box; one legend line of at most 15 words"
  },
  {
   "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='a,t,v0' && P.t.unit==='s' && P.v0.unit==='m/s' ? 1 : 0 })()",
