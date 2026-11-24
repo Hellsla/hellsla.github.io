@@ -52,7 +52,10 @@
 **Annettu:** teräsputki, paljeosan enimmäisvara $\Delta l = 50{,}0\,\text{mm}$, $T_0 = 10\,{}^\circ\text{C}$, $T = 90\,{}^\circ\text{C}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (tehtävässä annettu)
 **Kysytty:** suoran osuuden suurin pituus $l_0$ metreinä
 **Periaate:** Putken pituuden muutos on verrannollinen sen pituuteen ja lämpötilan muutokseen. Paljeosa ottaa vastaan enintään $50{,}0\,\text{mm}$. Teräs pysyy kiinteänä, joten sama laajenemiskaava pätee. Kaava ratkaistaan alkupituudelle, koska muutos tunnetaan ja pituus on kysytty.
-**Kaava:** $\Delta l = \alpha l_0 \Delta T$, josta $l_0 = \dfrac{\Delta l}{\alpha \Delta T}$
+**Kaava:** $$\begin{aligned} \Delta l &= \alpha l_0 \Delta T \\
+l_0 &= \dfrac{\Delta l}{\alpha \Delta T}
+\end{aligned}
+$$
 **Muunnokset:** $\Delta l = 50{,}0\,\text{mm} = 0{,}0500\,\text{m}$, jotta tulos tulee metreinä. $\Delta T = 90\,{}^\circ\text{C} - 10\,{}^\circ\text{C} = 80\,\text{K}$, sama kelvineinä.
 **Sijoitus:** $l_0 = \dfrac{0{,}0500\,\text{m}}{12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 80\,\text{K}} = \dfrac{0{,}0500\,\text{m}}{9{,}6 \cdot 10^{-4}} = 52{,}083\,\text{m}$
 **Vastaus:** $l_0 \approx 52\,\text{m}$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ ja kokonaisasteiden erotus $\Delta T = 80\,\text{K}$ (kummassakin kaksi numeroa). Sallittu muutos $50{,}0\,\text{mm}$ on kolmen numeron arvo, joten se ei rajoita tulosta.
@@ -62,7 +65,11 @@
 **Annettu:** teräksinen kahvakuula, $V_0 = 2{,}0\,\text{dm}^3$, $T_0 = -22\,{}^\circ\text{C}$, $T = 20\,{}^\circ\text{C}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (tehtävässä annettu)
 **Kysytty:** tilavuuden kasvu $\Delta V$ kuutiosenttimetreinä
 **Periaate:** Kuula laajenee kaikkiin kolmeen suuntaan samassa suhteessa. Siksi tilavuus kasvaa suhteellisesti noin kolme kertaa niin paljon kuin pituus: $\gamma \approx 3\alpha$. Tämä pätee kiinteälle aineelle, jonka olomuoto ei muutu. Tilavuuden muutos on verrannollinen alkutilavuuteen ja lämpötilan muutokseen.
-**Kaava:** $\gamma \approx 3\alpha$ ja $\Delta V = \gamma V_0 \Delta T$, eli $\Delta V = 3\alpha V_0 \Delta T$.
+**Kaava:** $$\begin{aligned} \gamma &\approx 3\alpha \\
+\Delta V &= \gamma V_0 \Delta T \\
+&= 3\alpha V_0 \Delta T
+\end{aligned}
+$$
 **Muunnokset:** $V_0 = 2{,}0\,\text{dm}^3 = 2000\,\text{cm}^3$, koska $1\,\text{dm}^3 = 1000\,\text{cm}^3$. $\Delta T = 20\,{}^\circ\text{C} - (-22\,{}^\circ\text{C}) = 42\,\text{K}$, sama kelvineinä.
 **Sijoitus:** $\gamma \approx 3 \cdot 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} = 36 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, ja $\Delta V = 36 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 2000\,\text{cm}^3 \cdot 42\,\text{K} = 3{,}024\,\text{cm}^3$
 **Vastaus:** $\Delta V \approx 3{,}0\,\text{cm}^3$, kaksi merkitsevää numeroa. Rajoittavia tietoja on kolme: tilavuus $2{,}0\,\text{dm}^3$, kerroin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ ja kokonaisasteiden erotus $\Delta T = 42\,\text{K}$. Kaikissa on kaksi numeroa. Kerroin $3$ ($\gamma \approx 3\alpha$) on tarkka luku, joten se ei rajoita tulosta.
@@ -72,7 +79,11 @@
 **Annettu:** teräskisko, $l_0 = 25{,}0\,\text{m}$, $T_0 = 12\,{}^\circ\text{C}$, rako $\Delta l = 7{,}2\,\text{mm}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (tehtävässä annettu)
 **Kysytty:** lämpötila $T$, jossa rako sulkeutuu
 **Periaate:** Kisko pitenee lämmetessään. Pidentyminen on verrannollinen pituuteen ja lämpötilan muutokseen. Tehtävän oletuksen mukaan rako sulkeutuu, kun kisko on pidentynyt raon leveyden verran. Siksi asetetaan $\Delta l$ yhtä suureksi kuin rako ja ratkaistaan tarvittava lämpötilan muutos.
-**Kaava:** $\Delta l = \alpha l_0 \Delta T$, josta $\Delta T = \dfrac{\Delta l}{\alpha l_0}$, ja lopuksi $T = T_0 + \Delta T$.
+**Kaava:** $$\begin{aligned} \Delta l &= \alpha l_0 \Delta T \\
+\Delta T &= \dfrac{\Delta l}{\alpha l_0} \\
+T &= T_0 + \Delta T
+\end{aligned}
+$$
 **Muunnokset:** $\Delta l = 7{,}2\,\text{mm} = 0{,}0072\,\text{m}$, jotta pituudet ovat samassa yksikössä. Lämpötilan muutos $\Delta T$ saadaan kelvineinä. Se on sama kuin celsiusasteissa, joten se lisätään suoraan lämpötilaan $T_0$.
 **Sijoitus:** $\Delta T = \dfrac{0{,}0072\,\text{m}}{12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25{,}0\,\text{m}} = \dfrac{0{,}0072\,\text{m}}{3{,}0 \cdot 10^{-4}\,\text{m/K}} = 24\,\text{K}$, ja $T = 12\,{}^\circ\text{C} + 24\,\text{K} = 36\,{}^\circ\text{C}$.
 **Vastaus:** $T = 36\,{}^\circ\text{C}$, kaksi merkitsevää numeroa. Lämpötilan muutoksen $\Delta T = 24\,\text{K}$ numeroita rajoittavat rako $7{,}2\,\text{mm}$ ja kerroin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (kummassakin kaksi numeroa). Pituudessa $25{,}0\,\text{m}$ on kolme numeroa. Summa $12\,{}^\circ\text{C} + 24\,\text{K}$ on kokonaisasteina, joten $36\,{}^\circ\text{C}$ säilyttää nuo kaksi numeroa.
@@ -83,7 +94,10 @@
 **Kysytty:** pituuden lämpötilakerroin $\alpha$ yksikössä $10^{-6}\,\tfrac{1}{\text{K}}$ ja sen perusteella metalli
 **Periaate:** Palkki pitenee lämmetessään verrannollisesti pituuteensa ja lämpötilan muutokseen. Kerroin $\alpha$ on aineelle ominainen vakio. Kuvaajan pisteistä saadaan lämpötilan muutos ja pituuden muutos. Niistä saadaan $\alpha$, jonka voi verrata taulukkoon.
 **Kuvaajan lukeminen:** Suora alkaa ruudukon risteyksestä $(20\,{}^\circ\text{C};\ 0\,\text{mm})$. Se päättyy risteykseen $(70\,{}^\circ\text{C};\ 3{,}0\,\text{mm})$. Lämpötilan muutos on siis $\Delta T = 70\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 50\,\text{K}$. Pituuden muutos on $\Delta l = 3{,}0\,\text{mm}$.
-**Kaava:** $\Delta l = \alpha l_0 \Delta T$, josta $\alpha = \dfrac{\Delta l}{l_0 \Delta T}$
+**Kaava:** $$\begin{aligned} \Delta l &= \alpha l_0 \Delta T \\
+\alpha &= \dfrac{\Delta l}{l_0 \Delta T}
+\end{aligned}
+$$
 **Muunnokset:** $\Delta l = 3{,}0\,\text{mm} = 0{,}0030\,\text{m}$, jotta yksiköt supistuvat. Lämpötilan muutos on sama celsiusasteina ja kelvineinä. Tulos ilmoitetaan yksikössä $10^{-6}\,\tfrac{1}{\text{K}}$. Siksi kerroin $10^{-6}$ jätetään yksikköön.
 **Sijoitus:** $\alpha = \dfrac{0{,}0030\,\text{m}}{5{,}00\,\text{m} \cdot 50\,\text{K}} = \dfrac{0{,}0030}{250}\,\tfrac{1}{\text{K}} = 0{,}000012\,\tfrac{1}{\text{K}} = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$
 **Vastaus:** $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, joten palkki on terästä. Tuloksessa on kaksi merkitsevää numeroa, koska pituuden muutos $3{,}0\,\text{mm}$ on luettu kahdella numerolla. Arvot luetaan tarkasti ruudukosta, joten hyväksytään $11{,}6\ldots12{,}4$.
@@ -107,7 +121,12 @@ Lyhyempi sauva pitenee enemmän, koska sen lämpötila nousee kolminkertaisesti,
 **Annettu:** teräksinen hammaspyörä, reiän halkaisija $d_0 = 75{,}000\,\text{mm}$ lämpötilassa $T_0 = 20\,{}^\circ\text{C}$, akselin halkaisija $d = 75{,}090\,\text{mm}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (tehtävässä annettu)
 **Kysytty:** pienin lämpötila $T$, jossa reikä on vähintään akselin kokoinen
 **Periaate:** Kappale laajenee kaikkiin suuntiin samassa suhteessa kuin valokuvaa suurennettaessa. Myös reikä laajenee. Reiän halkaisija on kappaleen oma mitta, joten sen muutos noudattaa samaa kaavaa kuin pituuden: $\Delta d = \alpha d_0 \Delta T$. Reikä ei siis pienene, vaikka sen ympärillä oleva aine laajenee. Jäähtyessään reikä pyrkii takaisin kokoon $75{,}000\,\text{mm}$. Akseli on kuitenkin tiellä, ja pyörä puristuu kiinni.
-**Kaava:** $\Delta d = \alpha d_0 \Delta T$, josta $\Delta T = \dfrac{\Delta d}{\alpha d_0}$, ja $T = T_0 + \Delta T$. Tässä $\Delta d = d - d_0$.
+**Kaava:** $$\begin{aligned} \Delta d &= \alpha d_0 \Delta T \\
+\Delta T &= \dfrac{\Delta d}{\alpha d_0} \\
+T &= T_0 + \Delta T
+\end{aligned}
+$$
+Tässä $\Delta d = d - d_0$.
 **Muunnokset:** Kaikki mitat ovat millimetreinä, joten $\Delta d$ ja $d_0$ supistuvat samassa yksikössä, eikä muunnosta tarvita. $\Delta T$ tulee kelvineinä ja on sama kuin celsiusasteina.
 **Sijoitus:** $\Delta d = 75{,}090\,\text{mm} - 75{,}000\,\text{mm} = 0{,}090\,\text{mm}$, ja $\Delta T = \dfrac{0{,}090\,\text{mm}}{12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 75{,}000\,\text{mm}} = \dfrac{0{,}090}{9{,}0 \cdot 10^{-4}}\,\text{K} = 100\,\text{K}$. Siis $T = 20\,{}^\circ\text{C} + 100\,\text{K} = 120\,{}^\circ\text{C}$.
 **Vastaus:** $T = 120\,{}^\circ\text{C}$, kaksi merkitsevää numeroa. Halkaisijoiden erotus $\Delta d = 0{,}090\,\text{mm}$ on kahden numeron arvo, koska mitat on annettu tuhannesosamillimetrin tarkkuudella ($75{,}000$ ja $75{,}090$). Myös kerroin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ on kahden numeron arvo. Ne rajoittavat tulosta $\Delta T = 100\,\text{K}$ ja siten lämpötilaa $120\,{}^\circ\text{C}$.
@@ -117,7 +136,13 @@ Lyhyempi sauva pitenee enemmän, koska sen lämpötila nousee kolminkertaisesti,
 **Annettu:** kupari- ja teräsliuska, $l_0 = 50{,}0\,\text{mm}$, $T_0 = 20\,{}^\circ\text{C}$, $T = 100\,{}^\circ\text{C}$, $\alpha_\text{Cu} = 17{,}0 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, $\alpha_\text{Fe} = 12{,}0 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (tehtävässä annettu)
 **Kysytty:** pitenemisten erotus $\Delta l_\text{Cu} - \Delta l_\text{Fe}$ mikrometreinä ja liuskan taipumissuunta
 **Periaate:** Kumpikin liuska on kiinteää ainetta ja pitenee kaavan $\Delta l = \alpha l_0 \Delta T$ mukaan. Liuskoilla on sama alkupituus ja sama lämpötilan muutos. Siksi pituuksien ero syntyy vain kertoimien erosta. Kupari pitenee enemmän, koska sen $\alpha$ on suurempi.
-**Kaava:** $\Delta l_\text{Cu} - \Delta l_\text{Fe} = (\alpha_\text{Cu} - \alpha_\text{Fe}) l_0 \Delta T$, missä $\Delta T = T - T_0$.
+**Kaava:** $$\begin{aligned} \Delta l_\text{Cu} &= \alpha_\text{Cu} l_0 \Delta T \\
+\Delta l_\text{Fe} &= \alpha_\text{Fe} l_0 \Delta T \\
+\Delta l_\text{Cu} - \Delta l_\text{Fe} &= \alpha_\text{Cu} l_0 \Delta T - \alpha_\text{Fe} l_0 \Delta T \\
+&= (\alpha_\text{Cu} - \alpha_\text{Fe}) l_0 \Delta T
+\end{aligned}
+$$
+Tässä $\Delta T = T - T_0$.
 **Muunnokset:** $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$, sama kelvineinä. $l_0$ on millimetreinä, joten erotus tulee millimetreinä, ja $1\,\text{mm} = 1000\,\mu\text{m}$.
 **Sijoitus:** $$\begin{aligned} \Delta l_\text{Cu} &= 17{,}0 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \\ &\cdot 50{,}0\,\text{mm} \cdot 80\,\text{K} \\ &= 0{,}068\,\text{mm} \end{aligned}$$ ja $$\begin{aligned} \Delta l_\text{Fe} &= 12{,}0 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 50{,}0\,\text{mm} \cdot 80\,\text{K} \\ &= 0{,}048\,\text{mm} \end{aligned}$$. Erotus on $0{,}068\,\text{mm} - 0{,}048\,\text{mm} = 0{,}020\,\text{mm} = 20\,\mu\text{m}$.
 **Vastaus:** $20\,\mu\text{m}$, kaksi merkitsevää numeroa. Rajoittava tieto on kertoimien erotus $17{,}0 - 12{,}0 = 5{,}0$ (yksikössä $10^{-6}\,\tfrac{1}{\text{K}}$). Siinä on kaksi numeroa, koska kertoimet on annettu kymmenesosan tarkkuudella. Myös $\Delta T = 80\,\text{K}$ on kahden numeron arvo. Jos kertoimet olisi annettu vain kokonaislukuina, erotus $17 - 12 = 5$ olisi yhden numeron arvo.
@@ -127,7 +152,13 @@ Lyhyempi sauva pitenee enemmän, koska sen lämpötila nousee kolminkertaisesti,
 **Annettu:** bensiini $V_0 = 20{,}0\,\textsf{l}$, $T_0 = 10\,{}^\circ\text{C}$, $T = 35\,{}^\circ\text{C}$, $\gamma_\text{bensiini} = 0{,}95 \cdot 10^{-3}\,\tfrac{1}{\text{K}}$. Teräskanisteri $\alpha_\text{teräs} = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (tehtävässä annettu)
 **Kysytty:** yli valuva bensiinin tilavuus $\Delta V_\text{yli}$ kuutiosenttimetreinä ja perustelu, miksi kanisteria ei täytetä piripintaan
 **Periaate:** Sekä bensiini että kanisterin sisätila laajenevat. Kanisterin sisätilavuus kasvaa kuin yhtä suuri teräskappale ($\gamma \approx 3\alpha$). Kanisteri oli täynnä, joten yli valuu bensiinin ja sisätilavuuden kasvujen erotus. Kumpikin tilavuus lasketaan samalla kaavalla.
-**Kaava:** $\Delta V = \gamma V_0 \Delta T$ kummallekin, $\gamma_\text{teräs} \approx 3\alpha_\text{teräs}$ ja $\Delta V_\text{yli} = \Delta V_\text{bensiini} - \Delta V_\text{kanisteri}$.
+**Kaava:** $$\begin{aligned} \Delta V_\text{bensiini} &= \gamma_\text{bensiini} V_0 \Delta T \\
+\gamma_\text{teräs} &\approx 3\alpha_\text{teräs} \\
+\Delta V_\text{kanisteri} &= \gamma_\text{teräs} V_0 \Delta T \\
+&= 3\alpha_\text{teräs} V_0 \Delta T \\
+\Delta V_\text{yli} &= \Delta V_\text{bensiini} - \Delta V_\text{kanisteri}
+\end{aligned}
+$$
 **Muunnokset:** $V_0 = 20{,}0\,\textsf{l} = 20\,000\,\text{cm}^3$, koska $1\,\textsf{l} = 1000\,\text{cm}^3$. $\Delta T = 35\,{}^\circ\text{C} - 10\,{}^\circ\text{C} = 25\,\text{K}$, sama kelvineinä.
 **Sijoitus:** $$\begin{aligned} \Delta V_\text{bensiini} &= 0{,}95 \cdot 10^{-3}\,\tfrac{1}{\text{K}} \\ &\cdot 20\,000\,\text{cm}^3 \cdot 25\,\text{K} \\ &= 475\,\text{cm}^3 \end{aligned}$$ ja $$\begin{aligned} \Delta V_\text{kanisteri} &= 3 \cdot 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \\ &\cdot 20\,000\,\text{cm}^3 \cdot 25\,\text{K} \\ &= 18\,\text{cm}^3 \end{aligned}$$. Siis $\Delta V_\text{yli} = 475\,\text{cm}^3 - 18\,\text{cm}^3 = 457\,\text{cm}^3$.
 **Vastaus:** $\Delta V_\text{yli} \approx 460\,\text{cm}^3$, kaksi merkitsevää numeroa. Bensiinin kasvua $475\,\text{cm}^3$ rajoittaa kerroin $\gamma = 0{,}95 \cdot 10^{-3}\,\tfrac{1}{\text{K}}$ (kaksi numeroa). Siksi se tunnetaan vain kymmenien kuutiosenttimetrien tarkkuudella. Erotuksessa $475 - 18$ vähemmän tarkka luku määrää desimaalit, joten tulos pyöristetään kymmeniin: $460\,\text{cm}^3$. Teräksen $\alpha$ ja tilavuus $20{,}0\,\textsf{l}$ vaikuttavat vain pieneen $18\,\text{cm}^3$:n osaan.
@@ -159,7 +190,11 @@ $$\begin{aligned} \Delta l &= 23 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 2{,}0\
 **Kysytty:** a) lämpötila, jossa vesi vie vähiten tilaa, ja mitä se kertoo tiheydestä; b) $\gamma$ välillä $4\,{}^\circ\text{C} \ldots 10\,{}^\circ\text{C}$ yksikössä $10^{-6}\,\tfrac{1}{\text{K}}$; c) vertailu arvoon $210 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ ja veden poikkeava käytös
 **Periaate:** Aineen massa on vakio. Pienin tilavuus tarkoittaa siis suurinta tiheyttä $\rho = m/V$. Lämpötilakerroin saadaan tilavuuden muutoksesta: kun $\Delta V = \gamma V_0 \Delta T$ pätee, niin $\gamma = \dfrac{\Delta V}{V_0 \Delta T}$.
 **Taulukon lukeminen:** Taulukossa tilavuus pienenee arvosta $1{,}00016\,\text{dm}^3$ lämpötilassa $0\,{}^\circ\text{C}$ arvoon $1{,}00003\,\text{dm}^3$ lämpötilassa $4\,{}^\circ\text{C}$. Sen jälkeen tilavuus kasvaa arvoon $1{,}00030\,\text{dm}^3$ lämpötilassa $10\,{}^\circ\text{C}$. Pienin tilavuus on siis lämpötilassa $4\,{}^\circ\text{C}$.
-**Kaava:** $\Delta V = \gamma V_0 \Delta T$, josta $\gamma = \dfrac{\Delta V}{V_0 \Delta T}$ ja $\Delta V = V_{10} - V_4$
+**Kaava:** $$\begin{aligned} \Delta V &= \gamma V_0 \Delta T \\
+\gamma &= \dfrac{\Delta V}{V_0 \Delta T} \\
+\Delta V &= V_{10} - V_4
+\end{aligned}
+$$
 **Muunnokset:** Tilavuudet ovat samassa yksikössä, joten $\Delta V$ ja $V_0$ supistuvat samassa yksikössä. Lämpötilan muutos on $\Delta T = 10\,{}^\circ\text{C} - 4\,{}^\circ\text{C} = 6\,\text{K}$, sama kelvineinä. Tulos ilmoitetaan yksikössä $10^{-6}\,\tfrac{1}{\text{K}}$.
 **Sijoitus:** $\Delta V = 1{,}00030\,\text{dm}^3 - 1{,}00003\,\text{dm}^3 = 0{,}00027\,\text{dm}^3$, ja
 $\gamma = \dfrac{0{,}00027\,\text{dm}^3}{1{,}00003\,\text{dm}^3 \cdot 6\,\text{K}} = 0{,}000045\,\tfrac{1}{\text{K}} = 45 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$
@@ -183,7 +218,10 @@ Sen jälkeen kylmempi vesi on kevyempää ja jää pintaan. Pohjan vesi pysyy no
 **Kysytty:** a) $\alpha$ yksikössä $10^{-6}\,\tfrac{1}{\text{K}}$; b) sauvan aine ja miksi pisteet eivät ole täsmälleen suoralla
 **Periaate:** Sauva pitenee verrannollisesti lämpötilan muutokseen ja alkupituuteen. Kerroin $\alpha$ on aineelle ominainen. Pisteiden läpi kulkeva suora kertoo muutoksen jokaista kelviniä kohti. Sama ominaisuus antaa kertoimen.
 **Taulukon lukeminen:** Ensimmäisestä pisteestä viimeiseen lämpötila muuttuu $\Delta T = 80\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 60\,\text{K}$. Pituus muuttuu $\Delta l = 1{,}10\,\text{mm}$.
-**Kaava:** $\Delta l = \alpha l_0 \Delta T$, josta $\alpha = \dfrac{\Delta l}{l_0 \Delta T}$
+**Kaava:** $$\begin{aligned} \Delta l &= \alpha l_0 \Delta T \\
+\alpha &= \dfrac{\Delta l}{l_0 \Delta T}
+\end{aligned}
+$$
 **Muunnokset:** $\Delta l = 1{,}10\,\text{mm} = 0{,}00110\,\text{m}$, jotta yksiköt supistuvat. Tulos ilmoitetaan yksikössä $10^{-6}\,\tfrac{1}{\text{K}}$.
 **Sijoitus:** $\alpha = \dfrac{0{,}00110\,\text{m}}{0{,}800\,\text{m} \cdot 60\,\text{K}} = \dfrac{0{,}00110}{48}\,\tfrac{1}{\text{K}} = 22{,}9 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$
 **Vastaus:** a) $\alpha \approx 22{,}9 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, kolme merkitsevää numeroa, koska pituuden muutos $1{,}10\,\text{mm}$ on annettu kolmella numerolla.
@@ -199,7 +237,12 @@ Siksi askelten $0{,}17\ldots 0{,}20\,\text{mm}$ vaihtelu on odotettua. Kaikkien 
 **Annettu:** teräsputki, $l_0 = 1{,}00\,\text{m}$, $T_0 = 20\,{}^\circ\text{C}$, $T = 100\,{}^\circ\text{C}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (tehtävässä annettu); mittanauhan lukematarkkuus $0{,}5\,\text{mm}$
 **Kysytty:** a) pituuden muutos $\Delta l$; b) miksi mittanauha ei sovi ja mikä väline sopii; c) putken pituus $l_0$, kun lukematarkkuus on enintään $5{,}0\,\%$ muutoksesta
 **Periaate:** Pituuden muutos on verrannollinen alkupituuteen ja lämpötilan muutokseen, $\Delta l = \alpha l_0 \Delta T$. Mittaus on luotettava vain, jos mitattava muutos on paljon suurempi kuin mittavälineen lukematarkkuus. Kohdassa c) ehto kirjoitetaan muutokselle. Sen avulla ratkaistaan pituus.
-**Kaava:** a) $\Delta l = \alpha l_0 \Delta T$. c) Ehto $0{,}5\,\text{mm} \le 0{,}050 \cdot \Delta l$ antaa $\Delta l \ge 10\,\text{mm}$. Kaava $\Delta l = \alpha l_0 \Delta T$ antaa $l_0 = \dfrac{\Delta l}{\alpha \Delta T}$.
+**Kaava:** a) $\Delta l = \alpha l_0 \Delta T$. c) $$\begin{aligned} 0{,}5\,\text{mm} &\le 0{,}050 \cdot \Delta l \\
+\Delta l &\ge 10\,\text{mm} \\
+\Delta l &= \alpha l_0 \Delta T \\
+l_0 &= \dfrac{\Delta l}{\alpha \Delta T}
+\end{aligned}
+$$
 **Muunnokset:** $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$, sama kelvineinä. Pituuden muutos $10\,\text{mm} = 0{,}010\,\text{m}$, jotta $l_0$ tulee metreinä.
 **Sijoitus:** a) $\Delta l = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 1{,}00\,\text{m} \cdot 80\,\text{K} = 0{,}00096\,\text{m} = 0{,}96\,\text{mm}$. c) Vaadittu muutos on $\Delta l = \dfrac{0{,}5\,\text{mm}}{0{,}050} = 10\,\text{mm} = 0{,}010\,\text{m}$, joten
 $l_0 = \dfrac{0{,}010\,\text{m}}{12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 80\,\text{K}} = 10{,}4\,\text{m}$
@@ -217,7 +260,14 @@ Kymmenen metrin höyryputki on epäkäytännöllinen koulun laboratoriossa. Mitt
 **Kysytty:** a) pienin asennusrako $g_\text{min}$; b) suurin asennusrako $g_\text{max}$; c) miksi rako $15\,\text{mm}$ kelpaa asennuslämpötilassa mutta ei talvipakkasella
 **Periaate:** Raon leveyden muutos on yhtä suuri kuin yhden kiskon pituuden muutos, $\Delta l = \alpha l_0 \Delta T$. Kesällä kisko pitenee ja rako kapenee. Asennusraon on siis oltava vähintään tämä muutos. Talvella kisko lyhenee ja rako levenee. Asennusrako lisättynä talven muutoksella saa siis olla enintään $30\,\text{mm}$.
 **Taulukon lukeminen:** Taulukosta luetaan lämpötilat. Lämpötilan muutos asennuksesta kesään on $$\begin{aligned} \Delta T_\text{kesä} &= 52\,{}^\circ\text{C} - 8\,{}^\circ\text{C} \\ &= 44\,\text{K} \end{aligned}$$. Muutos asennuksesta talveen on $$\begin{aligned} \Delta T_\text{talvi} &= 8\,{}^\circ\text{C} - (-32\,{}^\circ\text{C}) \\ &= 40\,\text{K} \end{aligned}$$.
-**Kaava:** $g_\text{min} = \alpha l_0 \Delta T_\text{kesä}$ ja $g_\text{max} = g_\text{raja} - \alpha l_0 \Delta T_\text{talvi}$, missä $g_\text{raja}$ on talven suurin sallittu rako
+**Kaava:** $$\begin{aligned} \Delta l &= \alpha l_0 \Delta T \\
+g_\text{min} &= \Delta l_\text{kesä} \\
+&= \alpha l_0 \Delta T_\text{kesä} \\
+g_\text{max} + \Delta l_\text{talvi} &= g_\text{raja} \\
+g_\text{max} &= g_\text{raja} - \alpha l_0 \Delta T_\text{talvi}
+\end{aligned}
+$$
+Tässä $g_\text{raja}$ on talven suurin sallittu rako.
 **Muunnokset:** Lämpötilan muutos on sama celsiusasteina ja kelvineinä. Pituus on metreinä, joten muutokset tulevat metreinä. Lopuksi $1\,\text{m} = 1000\,\text{mm}$.
 **Sijoitus:** a)
 $g_\text{min} = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25{,}0\,\text{m} \cdot 44\,\text{K} = 0{,}0132\,\text{m} = 13{,}2\,\text{mm}$
@@ -235,7 +285,16 @@ Se on enemmän kuin rako $15\,\text{mm}$. Rako sulkeutuisi, ja kiskot puristuisi
 **Annettu:** etanoli $V_0 = 1{,}00\,\text{cm}^3$ lämpötilassa $10\,{}^\circ\text{C}$, $\gamma_\text{etanoli} = 1{,}1 \cdot 10^{-3}\,\tfrac{1}{\text{K}}$; lasipallo $\alpha_\text{lasi} = 9{,}0 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$; kapillaarin sisäsäde $r = 0{,}30\,\text{mm}$; lämpötila $10\,{}^\circ\text{C} \rightarrow 30\,{}^\circ\text{C}$ (esimerkkiaineisto)
 **Kysytty:** a) pylvään nousu $h$ millimetreinä; b) kuinka paljon suurempi nousu olisi ilman pallon laajenemista; c) nousu vedellä ja perustelu, miksi vesi ei sovi
 **Periaate:** Etanoli laajenee enemmän kuin sen sisältävä lasipallo. Etanolin tilavuuden kasvusta se osa, joka ei mahdu laajentuneeseen palloon, nousee kapillaariin. Lasipallon sisätilavuus kasvaa kuin yhtä suuri lasikappale, joten $\gamma_\text{lasi} \approx 3\alpha$. Putkeen siirtyvä tilavuus on sylinterin tilavuus $A h$, missä $A = \pi r^2$.
-**Kaava:** $\Delta V_\text{etanoli} = \gamma V_0 \Delta T$, $\Delta V_\text{pallo} = 3\alpha V_0 \Delta T$ ja $A h = \Delta V_\text{etanoli} - \Delta V_\text{pallo}$, josta $h = \dfrac{\Delta V_\text{etanoli} - \Delta V_\text{pallo}}{\pi r^2}$
+**Kaava:** $$\begin{aligned} \Delta V_\text{etanoli} &= \gamma_\text{etanoli} V_0 \Delta T \\
+\gamma_\text{lasi} &\approx 3\alpha_\text{lasi} \\
+\Delta V_\text{pallo} &= \gamma_\text{lasi} V_0 \Delta T \\
+&= 3\alpha_\text{lasi} V_0 \Delta T \\
+A &= \pi r^2 \\
+A h &= \Delta V_\text{etanoli} - \Delta V_\text{pallo} \\
+h &= \dfrac{\Delta V_\text{etanoli} - \Delta V_\text{pallo}}{A} \\
+&= \dfrac{\Delta V_\text{etanoli} - \Delta V_\text{pallo}}{\pi r^2}
+\end{aligned}
+$$
 **Muunnokset:** $V_0 = 1{,}00\,\text{cm}^3 = 1000\,\text{mm}^3$, jotta tilavuudet ja kapillaarin ala ovat samassa yksikössä. Lisäksi $$\begin{aligned} \Delta T &= 30\,{}^\circ\text{C} - 10\,{}^\circ\text{C} \\ &= 20\,\text{K} \end{aligned}$$. Kapillaarin ala on $A = \pi \cdot (0{,}30\,\text{mm})^2 = 0{,}283\,\text{mm}^2$.
 **Sijoitus:** $$\begin{aligned} \Delta V_\text{etanoli} &= 1{,}1 \cdot 10^{-3}\,\tfrac{1}{\text{K}} \\ &\cdot 1000\,\text{mm}^3 \cdot 20\,\text{K} \\ &= 22{,}0\,\text{mm}^3 \end{aligned}$$ ja $$\begin{aligned} \Delta V_\text{pallo} &= 3 \cdot 9{,}0 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \\ &\cdot 1000\,\text{mm}^3 \cdot 20\,\text{K} \\ &= 0{,}54\,\text{mm}^3 \end{aligned}$$. Siis
 $h = \dfrac{22{,}0\,\text{mm}^3 - 0{,}54\,\text{mm}^3}{0{,}283\,\text{mm}^2} = 75{,}9\,\text{mm}$
@@ -263,7 +322,13 @@ Asteikko olisi tiheä ja lukemisen epätarkkuus suuri. Lisäksi vesi kutistuu v�
 **Kysytty:** lämpötila $T$, jossa $\Delta l = 2{,}0\,\text{mm}$
 **Periaate:** Mittauspisteet ovat suoralla. Siksi pituuden muutos on suoraan verrannollinen lämpötilan muutokseen: $\Delta l = k\,\Delta T$. Kulmakerroin $k$ saadaan kuvaajan päätepisteistä. Sen avulla ratkaistaan $\Delta T$.
 **Kuvaajan lukeminen:** Suora alkaa ruudukon risteyksestä $(20\,{}^\circ\text{C};\ 0\,\text{mm})$. Se päättyy risteykseen $(70\,{}^\circ\text{C};\ 3{,}0\,\text{mm})$. Siis $\Delta T_\text{koko} = 70\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 50\,\text{K}$ ja $\Delta l_\text{koko} = 3{,}0\,\text{mm}$.
-**Kaava:** $k = \dfrac{\Delta l_\text{koko}}{\Delta T_\text{koko}}$, $\Delta T = \dfrac{\Delta l}{k}$ ja $T = 20\,{}^\circ\text{C} + \Delta T$
+**Kaava:** $$\begin{aligned} \Delta l_\text{koko} &= k\,\Delta T_\text{koko} \\
+k &= \dfrac{\Delta l_\text{koko}}{\Delta T_\text{koko}} \\
+\Delta l &= k\,\Delta T \\
+\Delta T &= \dfrac{\Delta l}{k} \\
+T &= 20\,{}^\circ\text{C} + \Delta T
+\end{aligned}
+$$
 **Muunnokset:** Ei tarvita: kaikki pituudet ovat millimetreinä ja lämpötilan muutokset kelvineinä.
 **Sijoitus:** $k = \dfrac{3{,}0\,\text{mm}}{50\,\text{K}} = 0{,}060\,\dfrac{\text{mm}}{\text{K}}$, joten $\Delta T = \dfrac{2{,}0\,\text{mm}}{0{,}060\,\text{mm/K}} = 33{,}3\,\text{K}$ ja $T = 20\,{}^\circ\text{C} + 33{,}3\,\text{K} = 53{,}3\,{}^\circ\text{C}$
 **Vastaus:** $53\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten tiedossa $2{,}0\,\text{mm}$. Arvot luetaan ruudukon risteyksistä. Siksi hyväksytään $51{,}7\ldots54{,}9\,{}^\circ\text{C}$.
@@ -274,7 +339,14 @@ Asteikko olisi tiheä ja lukemisen epätarkkuus suuri. Lisäksi vesi kutistuu v�
 **Kysytty:** a) merenpinnan korkeuden muutoksen kuvaus ja keskimääräinen nousunopeus $v$; b) miksi meriveden lämpeneminen nostaa merenpintaa; c) vesipatsaan korkeuden muutos $\Delta h$ millimetreinä; d) miksi malli ei yksin selitä tai ennusta merenpinnan nousua
 **Periaate:** Keskimääräinen nousunopeus on korkeuden muutos jaettuna ajalla, jonka kuluessa muutos tapahtui. Vesi on nestettä. Nesteen tilavuus kasvaa, kun neste lämpenee: $\Delta V = \gamma V_0 \Delta T$. Kaava sopii kohdan c) malliin, koska patsas lämpenee tasaisesti ja lämpötilan muutos on pieni. Siksi kerroin $\gamma$ voidaan pitää vakiona. Poikkipinta-ala ei muutu, joten koko tilavuuden kasvu näkyy korkeuden kasvuna.
 **Kuvaajan lukeminen:** Kuvaajasta luetaan ensimmäinen piste (vuoden 1993 alku, $0\,\text{mm}$) ja viimeisin piste (lokakuu 2026, $115{,}8\,\text{mm}$). Sama arvo on kuvaajan yläpuolella ruudussa "Latest Measurement" eli viimeisin mittaus. Vuoden 1993 alusta lokakuun 2026 puoliväliin on $33$ vuotta ja $9{,}5$ kuukautta, eli $\Delta t \approx 33{,}8\,\text{a}$ (a = vuosi). Korkeuden muutos on $\Delta h_\text{meri} = 115{,}8\,\text{mm}$. Sivu päivittyy, joten myöhemmin luetut arvot poikkeavat näistä. Menetelmä on sama.
-**Kaava:** a) $v = \dfrac{\Delta h_\text{meri}}{\Delta t}$. c) $\Delta V = \gamma V_0 \Delta T$. Patsaan tilavuus on $V_0 = A h_0$. Tilavuuden muutos on $\Delta V = A \Delta h$. Siis $A \Delta h = \gamma A h_0 \Delta T$. Pinta-ala $A$ supistuu pois, ja $\Delta h = \gamma h_0 \Delta T$
+**Kaava:** a) $v = \dfrac{\Delta h_\text{meri}}{\Delta t}$. c) $$\begin{aligned} \Delta V &= \gamma V_0 \Delta T \\
+V_0 &= A h_0 \\
+\Delta V &= A \Delta h \\
+A \Delta h &= \gamma A h_0 \Delta T \\
+\Delta h &= \gamma h_0 \Delta T
+\end{aligned}
+$$
+Pinta-ala $A$ supistuu pois.
 **Muunnokset:** Lämpötilan muutos on sama celsiusasteina ja kelvineinä, joten $\Delta T = 0{,}30\,\text{K}$. Korkeus on metreinä, joten $\Delta h$ tulee metreinä. Lopuksi $1\,\text{m} = 1000\,\text{mm}$.
 **Sijoitus:** a) $$\begin{aligned} v &= \dfrac{\Delta h_\text{meri}}{\Delta t} \\ &= \dfrac{115{,}8\,\text{mm}}{33{,}8\,\text{a}} \\ &= 3{,}43\,\tfrac{\text{mm}}{\text{a}} \end{aligned}$$ c) $$\begin{aligned} \Delta h &= \gamma h_0 \Delta T \\ &= 2{,}0 \cdot 10^{-4}\,\tfrac{1}{\text{K}} \cdot 1000\,\text{m} \\ &\cdot 0{,}30\,\text{K} \\ &= 0{,}060\,\text{m} \\ &= 60\,\text{mm} \end{aligned}$$
 **Vastaus:** c) $\Delta h = 60\,\text{mm}$ eli $6{,}0\,\text{cm}$, kaksi merkitsevää numeroa kuten tiedoissa $0{,}30\,{}^\circ\text{C}$ ja $2{,}0 \cdot 10^{-4}\,\tfrac{1}{\text{K}}$. a) Tällä päivätyllä aineistolla $v \approx 3{,}4\,\tfrac{\text{mm}}{\text{a}}$. Jos luet arvot toisena päivänä, tulos voi poiketa tästä hieman. Oikea vastaus on nopeus, jonka lasket oikein omista lukemistasi, kun kerrot lukupäivän ja luetut arvot.

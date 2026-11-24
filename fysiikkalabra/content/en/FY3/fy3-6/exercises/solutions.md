@@ -57,7 +57,10 @@
 **Given:** copper, $m = 0.50\,\text{kg}$, $Q = 15\,\text{kJ}$; from the table $c = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Find:** the rise in temperature $\Delta T$ in kelvins
 **Principle:** The pot warms and its phase does not change, and no heat is transferred to the surroundings, so the whole quantity of heat $Q$ raises the temperature of the pot. In the formula $Q = c m \Delta T$ the unknown is $\Delta T$.
-**Formula:** $Q = c m \Delta T$, so $\Delta T = \dfrac{Q}{c m}$
+**Formula:** $$\begin{aligned} Q &= c m \Delta T \\
+\Delta T &= \dfrac{Q}{c m}
+\end{aligned}
+$$
 **Conversions:** $15\,\text{kJ} = 15 \cdot 1000\,\text{J} = 15\,000\,\text{J}$.
 **Substitution:** $\Delta T = \dfrac{15\,000\,\text{J}}{385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\text{kg}} = 77.9\,\text{K}$
 **Answer:** $78\,\text{K}$, two significant figures as in the mass $0.50\,\text{kg}$ and the quantity of heat $15\,\text{kJ}$.
@@ -77,7 +80,14 @@
 **Given:** hot water $m_1 = 160\,\text{g}$, $T_1 = 95\,{}^\circ\text{C}$; cold water $m_2 = 40\,\text{g}$, $T_2 = 8.0\,{}^\circ\text{C}$; both are water, no heat losses
 **Find:** the equilibrium temperature $T$
 **Principle:** Energy is conserved: when no heat is transferred to the mug or the air, the heat given out by the hot water is equal to the heat received by the cold water. At the end both have the same temperature $T$.
-**Formula:** $c m_1 (T_1 - T) = c m_2 (T - T_2)$. The same $c$ cancels, and $T$ can be solved: $T = \dfrac{m_1 T_1 + m_2 T_2}{m_1 + m_2}$
+**Formula:** $$\begin{aligned} Q_\text{out} &= Q_\text{in} \\
+c m_1 (T_1 - T) &= c m_2 (T - T_2) \qquad (Q = c m \Delta T) \\
+m_1 (T_1 - T) &= m_2 (T - T_2) \\
+m_1 T_1 - m_1 T &= m_2 T - m_2 T_2 \\
+m_1 T_1 + m_2 T_2 &= (m_1 + m_2) T \\
+T &= \dfrac{m_1 T_1 + m_2 T_2}{m_1 + m_2}
+\end{aligned}
+$$
 **Conversions:** The grams do not need to be converted to kilograms, because the mass is in both the numerator and the denominator and the unit cancels. The temperatures can be substituted in degrees Celsius: the equilibrium equation contains only temperature differences, and in the solved formula the sum of the weights is in the denominator, so shifting the scale shifts the result by the same amount.
 **Substitution:** $T = \dfrac{160\,\text{g} \cdot 95\,{}^\circ\text{C} + 40\,\text{g} \cdot 8.0\,{}^\circ\text{C}}{160\,\text{g} + 40\,\text{g}} = \dfrac{15\,200 + 320}{200}\,{}^\circ\text{C} = 77.6\,{}^\circ\text{C}$
 **Answer:** $78\,{}^\circ\text{C}$, two significant figures as in the temperature $95\,{}^\circ\text{C}$ and the mass $40\,\text{g}$.
@@ -88,7 +98,13 @@
 **Find:** the specific heat capacity of the metal $c$
 **Principle:** Energy is conserved: when all the energy of the heater is transferred to the object, the energy $Pt$ supplied by the heater in the time $t$ is equal to the heat needed to heat the object, $cm\Delta T$. The graph gives the time and the change in temperature.
 **Reading the graph:** The line starts at the grid intersection $(0\,\text{s};\ 20\,{}^\circ\text{C})$ and ends at the intersection $(180\,\text{s};\ 60\,{}^\circ\text{C})$. So the heating time is $t = 180\,\text{s} - 0\,\text{s} = 180\,\text{s}$ and the change in temperature is $\Delta T = 60\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 40\,\text{K}$.
-**Formula:** $Pt = cm\Delta T$, so $c = \dfrac{Pt}{m\Delta T}$
+**Formula:** $$\begin{aligned} E &= P t \\
+Q &= c m \Delta T \\
+E &= Q \\
+P t &= c m \Delta T \\
+c &= \dfrac{P t}{m \Delta T}
+\end{aligned}
+$$
 **Conversions:** Not needed: $1\,\text{W} \cdot 1\,\text{s} = 1\,\text{J}$. The difference of temperatures is the same in degrees Celsius as in kelvins.
 **Substitution:** $c = \dfrac{100\,\text{W} \cdot 180\,\text{s}}{0.50\,\text{kg} \cdot 40\,\text{K}} = \dfrac{18\,000\,\text{J}}{20\,\text{kg}\cdot\text{K}} = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Answer:** $900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, two significant figures as in the mass $0.50\,\text{kg}$. The values of the graph are read precisely from the grid, so $870\ldots930\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ is accepted.
@@ -98,7 +114,12 @@
 **Given:** water $m = 80\,\text{kg}$, $T_\text{initial} = 9.0\,{}^\circ\text{C}$, $Q = 15\,\text{MJ}$; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; no heat losses
 **Find:** the final temperature $T_\text{final}$
 **Principle:** All the heat given out by the resistor is transferred to the water and increases its internal energy, and the water warms without boiling, so $Q = c m \Delta T$. First solve the change in temperature, then add it to the initial temperature.
-**Formula:** $\Delta T = \dfrac{Q}{c m}$, so $T_\text{final} = T_\text{initial} + \dfrac{Q}{c m}$
+**Formula:** $$\begin{aligned} Q &= c m \Delta T \\
+\Delta T &= \dfrac{Q}{c m} \\
+T_\text{final} &= T_\text{initial} + \Delta T \\
+&= T_\text{initial} + \dfrac{Q}{c m}
+\end{aligned}
+$$
 **Conversions:** $Q = 15\,\text{MJ} = 15 \cdot 10^6\,\text{J} = 15\,000\,000\,\text{J}$. The change obtained in kelvins is added directly to the Celsius reading, because the steps of the scales are the same.
 **Substitution:** $\Delta T = \dfrac{15\,000\,000\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 80\,\text{kg}} = 44.75\,\text{K}$, so $T_\text{final} = 9.0\,{}^\circ\text{C} + 44.75\,{}^\circ\text{C} = 53.75\,{}^\circ\text{C}$
 **Answer:** $54\,{}^\circ\text{C}$, two significant figures as in the heat $15\,\text{MJ}$ and the mass $80\,\text{kg}$.
@@ -108,7 +129,13 @@
 **Given:** aluminium $m_1 = 0.25\,\text{kg}$, $T_1 = 95\,{}^\circ\text{C}$; water $m_2 = 0.40\,\text{kg}$, $T_2 = 18\,{}^\circ\text{C}$; from the table $c_1 = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $c_2 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; no heat losses
 **Find:** the common final temperature $T$
 **Principle:** Energy is conserved: the heat given out by the ladle is equal to the heat received by the water, and at the end both have the same temperature. The substances are different, so the specific heat capacities do not cancel.
-**Formula:** $$\begin{aligned} &c_1 m_1 (T_1 - T) \\ &= c_2 m_2 (T - T_2) \end{aligned}$$, from which $T = \dfrac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}$
+**Formula:** $$\begin{aligned} Q_\text{out} &= Q_\text{in} \\
+c_1 m_1 (T_1 - T) &= c_2 m_2 (T - T_2) \qquad (Q = c m \Delta T) \\
+c_1 m_1 T_1 - c_1 m_1 T &= c_2 m_2 T - c_2 m_2 T_2 \\
+c_1 m_1 T_1 + c_2 m_2 T_2 &= (c_1 m_1 + c_2 m_2) T \\
+T &= \dfrac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}
+\end{aligned}
+$$
 **Conversions:** The masses are already in kilograms. The temperatures can be substituted in degrees Celsius: the equilibrium equation contains only temperature differences, and in the solved formula the sum of the weights is in the denominator, so shifting the scale shifts the result by the same amount.
 **Substitution:** $c_1 m_1 = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.25\,\text{kg} = 225\,\tfrac{\text{J}}{\text{K}}$ and $c_2 m_2 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.40\,\text{kg} = 1676\,\tfrac{\text{J}}{\text{K}}$, so $T = \dfrac{225\,\tfrac{\text{J}}{\text{K}} \cdot 95\,{}^\circ\text{C} + 1676\,\tfrac{\text{J}}{\text{K}} \cdot 18\,{}^\circ\text{C}}{1901\,\tfrac{\text{J}}{\text{K}}} = 27.11\,{}^\circ\text{C}$
 **Answer:** $27\,{}^\circ\text{C}$, two significant figures as in the masses.
@@ -119,7 +146,14 @@
 **Find:** the specific heat capacity of the liquid $c$ in $\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Principle:** At constant power the quantity of heat transferred to the liquid is $Q = P t$. When the phase does not change, $Q = c m \Delta T$, so $P t = c m \Delta T$.
 **Reading the graph:** The points lie close to the line: the line gives $25.8\,{}^\circ\text{C}$ at $120\,\text{s}$ and $31.6\,{}^\circ\text{C}$ at $240\,\text{s}$, as in the table. The ends of the line give the change in temperature $\Delta T = 34.5\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} = 14.5\,\text{K}$ in the time $\Delta t = 300\,\text{s}$, so the slope is $\dfrac{\Delta T}{\Delta t} = \dfrac{14.5\,\text{K}}{300\,\text{s}} = 0.0483\,\tfrac{\text{K}}{\text{s}}$.
-**Formula:** $P t = c m \Delta T$, so $c = \dfrac{P}{m} \cdot \dfrac{\Delta t}{\Delta T}$
+**Formula:** $$\begin{aligned} E &= P \Delta t \\
+Q &= c m \Delta T \\
+Q &= E \\
+c m \Delta T &= P \Delta t \\
+c &= \dfrac{P \Delta t}{m \Delta T} \\
+&= \dfrac{P}{m} \cdot \dfrac{\Delta t}{\Delta T}
+\end{aligned}
+$$
 **Conversions:** The power $100\,\text{W} = 100\,\tfrac{\text{J}}{\text{s}}$ and the time in seconds are in SI units, so no conversions are needed. The change in temperature is the same in degrees Celsius and in kelvins.
 **Substitution:** $c = \dfrac{100\,\tfrac{\text{J}}{\text{s}}}{0.50\,\text{kg} \cdot 0.0483\,\tfrac{\text{K}}{\text{s}}} = 4138\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Answer:** $4100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, two significant figures as in the mass $0.50\,\text{kg}$.
@@ -135,7 +169,11 @@ c) Heat losses can be reduced with insulation and a lid on the calorimeter: then
 **Find:** a) which liquid is water; b) the specific heat capacity of the oil $c_\text{oil}$
 **Principle:** The same power in the same time gives both liquids the same quantity of heat $Q$, and the masses are the same. Since $Q = c m \Delta T$, the product $c\,\Delta T$ is the same for both, so the liquid with the greater $c$ warms less.
 **Reading the graph:** The temperatures in the table rise steadily: liquid A warms by about $4.5\,\text{K}$ and liquid B by about $2.3\,\text{K}$ in each $30\,\text{s}$ interval. So in the whole $120\,\text{s}$ the changes are $\Delta T_\text{A} = 38.1\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} = 18.1\,\text{K}$ and $\Delta T_\text{B} = 29.0\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} = 9.0\,\text{K}$. Liquid B warms more slowly, so B is water and A is oil.
-**Formula:** $c_\text{oil}\, m\, \Delta T_\text{A} = c_\text{w}\, m\, \Delta T_\text{B}$, so $c_\text{oil} = c_\text{w} \cdot \dfrac{\Delta T_\text{B}}{\Delta T_\text{A}}$
+**Formula:** $$\begin{aligned} Q_\text{oil} &= Q_\text{w} \\
+c_\text{oil} m \Delta T_\text{A} &= c_\text{w} m \Delta T_\text{B} \qquad (Q = c m \Delta T) \\
+c_\text{oil} &= c_\text{w} \cdot \dfrac{\Delta T_\text{B}}{\Delta T_\text{A}}
+\end{aligned}
+$$
 **Conversions:** The mass $m$ and the quantity of heat $Q$ cancel, so no conversions are needed. The change in temperature is the same in degrees Celsius and in kelvins.
 **Substitution:** $c_\text{oil} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot \dfrac{9.0\,\text{K}}{18.1\,\text{K}} = 2083\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Answer:** $2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, two significant figures as in the mass $0.40\,\text{kg}$ and the change $9.0\,\text{K}$.
@@ -145,7 +183,13 @@ c) Heat losses can be reduced with insulation and a lid on the calorimeter: then
 **Given:** water $m_\text{w} = 0.50\,\text{kg}$, $T_\text{w} = 20\,{}^\circ\text{C}$; copper $m_\text{c} = 0.20\,\text{kg}$, $T_\text{c} = 100\,{}^\circ\text{C}$; from the table $c_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $c_\text{c} = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; no heat losses
 **Find:** a) the error of the student; b) the equilibrium temperature $T$
 **Principle:** In an insulated vessel the heat given out by the copper is equal to the heat received by the water. The student's mean would be correct only if the heat capacities $c m$ of the objects were equal. Here the heat capacity of the water is many times that of the copper, so the equilibrium temperature is close to the initial temperature of the water, not halfway.
-**Formula:** $$\begin{aligned} &c_\text{c} m_\text{c} (T_\text{c} - T) \\ &= c_\text{w} m_\text{w} (T - T_\text{w}) \end{aligned}$$, so $T = \dfrac{c_\text{c} m_\text{c} T_\text{c} + c_\text{w} m_\text{w} T_\text{w}}{c_\text{c} m_\text{c} + c_\text{w} m_\text{w}}$
+**Formula:** $$\begin{aligned} Q_\text{out} &= Q_\text{in} \\
+c_\text{c} m_\text{c} (T_\text{c} - T) &= c_\text{w} m_\text{w} (T - T_\text{w}) \qquad (Q = c m \Delta T) \\
+c_\text{c} m_\text{c} T_\text{c} - c_\text{c} m_\text{c} T &= c_\text{w} m_\text{w} T - c_\text{w} m_\text{w} T_\text{w} \\
+c_\text{c} m_\text{c} T_\text{c} + c_\text{w} m_\text{w} T_\text{w} &= (c_\text{c} m_\text{c} + c_\text{w} m_\text{w}) T \\
+T &= \dfrac{c_\text{c} m_\text{c} T_\text{c} + c_\text{w} m_\text{w} T_\text{w}}{c_\text{c} m_\text{c} + c_\text{w} m_\text{w}}
+\end{aligned}
+$$
 **Conversions:** The heat capacities are $c_\text{c} m_\text{c} = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.20\,\text{kg} = 77\,\tfrac{\text{J}}{\text{K}}$ and $c_\text{w} m_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\text{kg} = 2095\,\tfrac{\text{J}}{\text{K}}$. The temperatures can be substituted in degrees Celsius, because the result is a weighted mean.
 **Substitution:** The numerator is $77\,\tfrac{\text{J}}{\text{K}} \cdot 100\,{}^\circ\text{C} + 2095\,\tfrac{\text{J}}{\text{K}} \cdot 20\,{}^\circ\text{C} = 49\,600\,\text{J}$ and the denominator $77\,\tfrac{\text{J}}{\text{K}} + 2095\,\tfrac{\text{J}}{\text{K}} = 2172\,\tfrac{\text{J}}{\text{K}}$, so $T = \dfrac{49\,600\,\text{J}}{2172\,\tfrac{\text{J}}{\text{K}}} = 22.84\,{}^\circ\text{C}$
 **Answer:** $23\,{}^\circ\text{C}$, two significant figures as in the mass $0.20\,\text{kg}$ and the temperature $20\,{}^\circ\text{C}$.
@@ -170,7 +214,11 @@ Check: the plate cools, so its internal energy decreases and it cannot receive e
 **Given:** water $m_\text{w} = 20\,\text{kg}$, $T_\text{w} = 10\,{}^\circ\text{C}$, target $T = 40\,{}^\circ\text{C}$, $c_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; stones $T_\text{s} = 300\,{}^\circ\text{C}$, $c_\text{s} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; no losses and no vaporisation
 **Find:** the mass of the stones $m_\text{s}$
 **Principle:** Energy is conserved: the heat given out by the stones is equal to the heat received by the water. In equilibrium the stones and the water are at the same temperature, so the stones cool down to $40\,{}^\circ\text{C}$, not to $0\,{}^\circ\text{C}$.
-**Formula:** $$\begin{aligned} &c_\text{s} m_\text{s} (T_\text{s} - T) \\ &= c_\text{w} m_\text{w} (T - T_\text{w}) \end{aligned}$$, from which $m_\text{s} = \dfrac{c_\text{w} m_\text{w} (T - T_\text{w})}{c_\text{s} (T_\text{s} - T)}$
+**Formula:** $$\begin{aligned} Q_\text{out} &= Q_\text{in} \\
+c_\text{s} m_\text{s} (T_\text{s} - T) &= c_\text{w} m_\text{w} (T - T_\text{w}) \qquad (Q = c m \Delta T) \\
+m_\text{s} &= \dfrac{c_\text{w} m_\text{w} (T - T_\text{w})}{c_\text{s} (T_\text{s} - T)}
+\end{aligned}
+$$
 **Conversions:** The temperature differences are the same in kelvins: $T - T_\text{w} = 30\,\text{K}$ and $T_\text{s} - T = 260\,\text{K}$. The other quantities are in SI units.
 **Substitution:** $m_\text{s} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 20\,\text{kg} \cdot 30\,\text{K}}{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 260\,\text{K}} = \dfrac{2\,514\,000\,\text{J}}{208\,000\,\tfrac{\text{J}}{\text{kg}}} = 12.09\,\text{kg}$
 **Answer:** $12\,\text{kg}$, two significant figures as in the mass $20\,\text{kg}$.
@@ -180,7 +228,12 @@ Check: the plate cools, so its internal energy decreases and it cannot receive e
 **Given:** $A = 2000\,\text{m}^2$, $h = 1.2\,\text{m}$, energy $18\,\text{MJ}$ for each square metre, $1000\,\text{kg}$ of water in a cubic metre; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Find:** the rise in temperature $\Delta T$
 **Principle:** The energy stays in the water and the water mixes evenly, so $Q = c m \Delta T$. It is enough to consider the column of water under one square metre, because the energy is given per square metre.
-**Formula:** $\Delta T = \dfrac{Q}{c m}$, where the mass of the water column of one square metre is $m = \rho\, h \cdot 1\,\text{m}^2$
+**Formula:** $$\begin{aligned} Q &= c m \Delta T \\
+\Delta T &= \dfrac{Q}{c m} \\
+m &= \rho V \\
+V &= h \cdot 1\,\text{m}^2
+\end{aligned}
+$$
 **Conversions:** $Q = 18\,\text{MJ} = 18\,000\,000\,\text{J}$. Under a square metre there is $1.2\,\text{m} \cdot 1\,\text{m}^2 = 1.2\,\text{m}^3$ of water, so $m = 1.2\,\text{m}^3 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} = 1200\,\text{kg}$.
 **Substitution:** $\Delta T = \dfrac{18\,000\,000\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1200\,\text{kg}} = 3.58\,\text{K}$
 **Answer:** $3.6\,\text{K}$, two significant figures as in the energy $18\,\text{MJ}$ and the depth $1.2\,\text{m}$.
@@ -190,7 +243,13 @@ Check: the plate cools, so its internal energy decreases and it cannot receive e
 **Given:** water $V_\text{w} = 1.0\,\text{m}^3$, $m_\text{w} = 1000\,\text{kg}$, $c_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; sand $1600\,\text{kg}$ per cubic metre, $c_\text{s} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; both between $20\,{}^\circ\text{C}$ and $70\,{}^\circ\text{C}$
 **Find:** the volume of sand $V_\text{s}$ that stores as much energy as the water store
 **Principle:** When the heat $Q = c m \Delta T$ is transferred to the store, its internal energy increases by the same amount, and when it cools it gives out the same energy. When $Q$ and $\Delta T$ are the same, the heat capacities $c m$ are the same. The volume is obtained from the mass with the help of the density.
-**Formula:** $c_\text{s} m_\text{s} = c_\text{w} m_\text{w}$, so $m_\text{s} = \dfrac{c_\text{w} m_\text{w}}{c_\text{s}}$ and $V_\text{s} = \dfrac{m_\text{s}}{\rho_\text{s}}$
+**Formula:** $$\begin{aligned} Q_\text{s} &= Q_\text{w} \\
+c_\text{s} m_\text{s} \Delta T &= c_\text{w} m_\text{w} \Delta T \qquad (Q = c m \Delta T) \\
+m_\text{s} &= \dfrac{c_\text{w} m_\text{w}}{c_\text{s}} \\
+\rho_\text{s} &= \dfrac{m_\text{s}}{V_\text{s}} \\
+V_\text{s} &= \dfrac{m_\text{s}}{\rho_\text{s}}
+\end{aligned}
+$$
 **Conversions:** The density of the sand is $\rho_\text{s} = 1600\,\tfrac{\text{kg}}{\text{m}^3}$. The temperature range $\Delta T = 50\,\text{K}$ cancels, so it is not needed.
 **Substitution:** $m_\text{s} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1000\,\text{kg}}{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}} = 5237.5\,\text{kg}$, so $V_\text{s} = \dfrac{5237.5\,\text{kg}}{1600\,\tfrac{\text{kg}}{\text{m}^3}} = 3.27\,\text{m}^3$
 **Answer:** $3.3\,\text{m}^3$, two significant figures as in the volume $1.0\,\text{m}^3$.
@@ -201,7 +260,15 @@ Check: the plate cools, so its internal energy decreases and it cannot receive e
 **Find:** a) $c$ from the first minute; b) the reason for the curvature of the graph; c) the mean power of the heat loss $P_\text{loss}$ in the interval $480\text{–}600\,\text{s}$ in watts
 **Principle:** The energy given by the resistor is $P t$. It is divided between the warming of the water $c m \Delta T$ and the heat loss to the surroundings, so $P t = c m \Delta T + P_\text{loss} t$. When the losses are negligible, all the energy heats the water.
 **Reading the graph:** In the first minute the temperature rises by $25.6\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} = 5.6\,\text{K}$. In the interval $480\text{–}600\,\text{s}$ the rise is $63.6\,{}^\circ\text{C} - 56.8\,{}^\circ\text{C} = 6.8\,\text{K}$ in $120\,\text{s}$.
-**Formula:** a) $c = \dfrac{P t}{m \Delta T}$; c) $P_\text{loss} = P - \dfrac{c m \Delta T}{t}$
+**Formula:** $$\begin{aligned} E &= P t \\
+Q &= c m \Delta T \\
+E &= Q \\
+c &= \dfrac{P t}{m \Delta T} \qquad \text{a)} \\
+E_\text{loss} &= P_\text{loss} t \\
+E &= Q + E_\text{loss} \\
+P_\text{loss} &= P - \dfrac{c m \Delta T}{t} \qquad \text{c)}
+\end{aligned}
+$$
 **Conversions:** The times are in seconds and the changes in temperature in kelvins, so no conversions are needed.
 **Substitution:**
 

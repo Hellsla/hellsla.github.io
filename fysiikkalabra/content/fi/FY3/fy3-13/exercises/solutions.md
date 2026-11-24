@@ -2,7 +2,7 @@
 **Annettu:** suora $p = p_0 + k\theta$, jossa $p_0 = 98{,}0\,\text{kPa}$ ja $k = 0{,}360\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$
 **Kysytty:** lämpötila $\theta_0$ celsiusasteina, jossa suora antaa paineeksi $p = 0$
 **Periaate:** Astia on suljettu ja jäykkä, joten kaasun ainemäärä ja tilavuus pysyvät vakioina ja paine riippuu lämpötilasta lineaarisesti. Siksi suoran yhtälö kuvaa kaasua mittausalueella, ja suoraa voi jatkaa (ekstrapoloida) sen ulkopuolelle: nollapaineen kohta saadaan asettamalla yhtälöön $p = 0$.
-**Kaava:** $p = p_0 + k\theta$. Kun $p = 0$ ja $\theta = \theta_0$, niin $0 = p_0 + k\theta_0$, joten $\theta_0 = -\dfrac{p_0}{k}$
+**Kaava:** $$\begin{aligned} p &= p_0 + k\theta \\ 0 &= p_0 + k\theta_0 \\ k\theta_0 &= -p_0 \\ \theta_0 &= -\dfrac{p_0}{k} \end{aligned}$$
 **Muunnokset:** Muunnoksia ei tarvita: $p_0$ ja $k$ ovat kilopascaleina, joten kPa supistuu pois ja tulos jää celsiusasteiksi, kuten kysytään.
 **Sijoitus:** $\theta_0 = -\dfrac{98{,}0\,\text{kPa}}{0{,}360\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -272{,}22\,{}^\circ\text{C}$
 **Vastaus:** $-272\,{}^\circ\text{C}$, kolme merkitsevää numeroa kuten arvoissa $98{,}0\,\text{kPa}$ ja $0{,}360$.
@@ -12,7 +12,7 @@
 **Annettu:** kaksi pistettä suoralta: $(\theta_1, p_1) = (20{,}0\,{}^\circ\text{C};\ 105{,}0\,\text{kPa})$ ja $(\theta_2, p_2) = (80{,}0\,{}^\circ\text{C};\ 127{,}0\,\text{kPa})$
 **Kysytty:** suoran kulmakerroin $k$ yksikössä $\tfrac{\text{kPa}}{{}^\circ\text{C}}$
 **Periaate:** Suljetussa jäykässä astiassa harvan kaasun paine on mittausalueella lämpötilan lineaarinen funktio, joten suoran kulmakerroin on kaikkialla sama: se kertoo, kuinka monta kilopascalia paine kasvaa yhtä celsiusastetta kohti. Sen voi siksi laskea mistä tahansa kahdesta suoran pisteestä.
-**Kaava:** $k = \dfrac{\Delta p}{\Delta\theta}$, missä $\Delta p = p_2 - p_1$ ja $\Delta\theta = \theta_2 - \theta_1$, joten $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$
+**Kaava:** $$\begin{aligned} k &= \dfrac{\Delta p}{\Delta\theta} \\ &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \end{aligned}$$
 **Muunnokset:** Yksiköitä ei muunneta, sillä kulmakerroin kysytään yksikössä $\text{kPa}/{}^\circ\text{C}$. Lämpötilaero on $\Delta\theta = 80{,}0\,{}^\circ\text{C} - 20{,}0\,{}^\circ\text{C} = 60{,}0\,{}^\circ\text{C}$, ja se on sama kelvineinä.
 **Sijoitus:** $k = \dfrac{(127{,}0 - 105{,}0)\,\text{kPa}}{(80{,}0 - 20{,}0)\,{}^\circ\text{C}} = \dfrac{22{,}0\,\text{kPa}}{60{,}0\,{}^\circ\text{C}} = 0{,}36667\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$
 **Vastaus:** $0{,}367\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, kolme merkitsevää numeroa, koska molemmat erotukset, painemuutos $22{,}0\,\text{kPa}$ ja lämpötilaero $60{,}0\,{}^\circ\text{C}$, tunnetaan kolmella numerolla.
@@ -52,7 +52,7 @@
 **Annettu:** kaksi mittauspistettä $(\theta_1, p_1) = (15{,}0\,{}^\circ\text{C};\ 1{,}050\,\text{bar})$ ja $(\theta_2, p_2) = (95{,}0\,{}^\circ\text{C};\ 1{,}360\,\text{bar})$; paine riippuu lämpötilasta lineaarisesti
 **Kysytty:** lämpötila $\theta_0$ celsiusasteina, jossa suora antaa nollapaineen
 **Periaate:** Pullo on suljettu, joten ilman ainemäärä ja tilavuus pysyvät vakioina ja paine on lämpötilan lineaarinen funktio. Kaksi pistettä määrää suoran, ja sitä jatketaan ekstrapoloimalla kohtaan, jossa $p = 0$.
-**Kaava:** Kulmakerroin $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$. Suora pisteen 1 kautta on $p = p_1 + k(\theta - \theta_1)$, ja $p = 0$ antaa $\theta_0 = \theta_1 - \dfrac{p_1}{k}$
+**Kaava:** $$\begin{aligned} k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\ p &= p_1 + k(\theta - \theta_1) \\ 0 &= p_1 + k(\theta_0 - \theta_1) \\ k(\theta_0 - \theta_1) &= -p_1 \\ \theta_0 &= \theta_1 - \dfrac{p_1}{k} \end{aligned}$$
 **Muunnokset:** Molemmat paineet ovat barina. Osamäärässä $p_1/k$ yksikkö bar supistuu, joten pascaleiksi muuntamista ei tarvita. Lämpötilaero $95{,}0\,{}^\circ\text{C} - 15{,}0\,{}^\circ\text{C} = 80{,}0\,{}^\circ\text{C}$ on sama kelvineinä.
 **Sijoitus:** $k = \dfrac{(1{,}360 - 1{,}050)\,\text{bar}}{(95{,}0 - 15{,}0)\,{}^\circ\text{C}} = \dfrac{0{,}310\,\text{bar}}{80{,}0\,{}^\circ\text{C}} = 0{,}003875\,\tfrac{\text{bar}}{{}^\circ\text{C}}$ ja $\theta_0 = 15{,}0\,{}^\circ\text{C} - \dfrac{1{,}050\,\text{bar}}{0{,}003875\,\tfrac{\text{bar}}{{}^\circ\text{C}}} = 15{,}0\,{}^\circ\text{C} - 270{,}97\,{}^\circ\text{C} = -255{,}97\,{}^\circ\text{C}$
 **Vastaus:** $-256\,{}^\circ\text{C}$, kolme merkitsevää numeroa, koska paine-ero $0{,}310\,\text{bar}$ ja lämpötilaero $80{,}0\,{}^\circ\text{C}$ tunnetaan kolmella numerolla; lopuksi vähennys $15{,}0 - 271$ antaa tuloksen kokonaisina asteina.
@@ -62,7 +62,7 @@
 **Annettu:** kaksi ääriviivaa $p = 100\,\text{kPa} + 0{,}380\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$ (jyrkempi) ja $p = 102\,\text{kPa} + 0{,}350\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot \theta$ (loivempi)
 **Kysytty:** epävarmuus $\Delta\theta_0$ celsiusasteina
 **Periaate:** Molemmat suorat kulkevat kaikkien mittauspisteiden epävarmuusjanojen kautta, joten todellinen suora on todennäköisesti niiden välissä. Ääriviivojen nollapaineen lämpötilat rajaavat nollapisteen arvioidun välin, ja epävarmuus on tämän välin puolikas.
-**Kaava:** Kummankin viivan nollapaine saadaan ehdosta $0 = p_0 + k\theta_0$, eli $\theta_0 = -\dfrac{p_0}{k}$. Jyrkempi antaa arvon $\theta_{0,\text{max}}$ ja loivempi arvon $\theta_{0,\text{min}}$, ja $\Delta\theta_0 = \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2}$
+**Kaava:** $$\begin{aligned} 0 &= p_0 + k\theta_0 \\ \theta_0 &= -\dfrac{p_0}{k} \\ \Delta\theta_0 &= \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2} \end{aligned}$$
 **Muunnokset:** Muunnoksia ei tarvita: $p_0$ on kilopascaleina ja $k$ yksikössä $\text{kPa}/{}^\circ\text{C}$, joten osamäärä on celsiusasteina.
 **Sijoitus:** $\theta_{0,\text{max}} = -\dfrac{100\,\text{kPa}}{0{,}380\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -263{,}16\,{}^\circ\text{C}$ ja $\theta_{0,\text{min}} = -\dfrac{102\,\text{kPa}}{0{,}350\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -291{,}43\,{}^\circ\text{C}$. Siis $\Delta\theta_0 = \dfrac{-263{,}16\,{}^\circ\text{C} - (-291{,}43\,{}^\circ\text{C})}{2} = 14{,}14\,{}^\circ\text{C}$
 **Vastaus:** $14\,{}^\circ\text{C}$, kaksi merkitsevää numeroa, koska nollapisteet $-263\,{}^\circ\text{C}$ ja $-291\,{}^\circ\text{C}$ tunnetaan kolmella numerolla eli kokonaisina asteina, ja niiden erotus $28\,{}^\circ\text{C}$ on vain kahden numeron luku; jakaja $2$ on tarkka.
@@ -72,7 +72,7 @@
 **Annettu:** ilmanpaine $p_\text{ilma} = 101{,}0\,\text{kPa}$; mittarin ylipaine $p_\text{y,1} = 9{,}0\,\text{kPa}$ lämpötilassa $\theta_1 = 30{,}0\,{}^\circ\text{C}$ ja $p_\text{y,2} = 31{,}0\,\text{kPa}$ lämpötilassa $\theta_2 = 90{,}0\,{}^\circ\text{C}$
 **Kysytty:** lämpötila $\theta_0$ celsiusasteina, jossa kaasun absoluuttinen paine on nolla
 **Periaate:** Kaasun paine tarkoittaa absoluuttista painetta, ja vain se on lineaarinen lämpötilan suhteen niin, että suoran nolla ennustaa tyhjiön. Mittari näyttää ylipainetta ilmanpaineeseen verrattuna, joten ilmanpaine on lisättävä ennen kuin suoraa sovitetaan.
-**Kaava:** $p = p_\text{y} + p_\text{ilma}$. Sitten $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja nollapaineelle $0 = p_1 + k(\theta_0 - \theta_1)$, joten $\theta_0 = \theta_1 - \dfrac{p_1}{k}$
+**Kaava:** $$\begin{aligned} p &= p_\text{y} + p_\text{ilma} \\ k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\ 0 &= p_1 + k(\theta_0 - \theta_1) \\ k(\theta_0 - \theta_1) &= -p_1 \\ \theta_0 &= \theta_1 - \dfrac{p_1}{k} \end{aligned}$$
 **Muunnokset:** Ylipaineet muunnetaan absoluuttisiksi paineiksi: $p_1 = 9{,}0\,\text{kPa} + 101{,}0\,\text{kPa} = 110{,}0\,\text{kPa}$ ja $p_2 = 31{,}0\,\text{kPa} + 101{,}0\,\text{kPa} = 132{,}0\,\text{kPa}$. Yksiköt ovat jo kilopascaleja ja celsiusasteita.
 **Sijoitus:** $k = \dfrac{(132{,}0 - 110{,}0)\,\text{kPa}}{(90{,}0 - 30{,}0)\,{}^\circ\text{C}} = \dfrac{22{,}0\,\text{kPa}}{60{,}0\,{}^\circ\text{C}} = 0{,}36667\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ ja $\theta_0 = 30{,}0\,{}^\circ\text{C} - \dfrac{110{,}0\,\text{kPa}}{0{,}36667\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = 30{,}0\,{}^\circ\text{C} - 300\,{}^\circ\text{C} = -270\,{}^\circ\text{C}$
 **Vastaus:** $-270\,{}^\circ\text{C}$, kolme merkitsevää numeroa, koska paine-ero $22{,}0\,\text{kPa}$ ja lämpötilaero $60{,}0\,{}^\circ\text{C}$ tunnetaan kolmella numerolla; lopuksi vähennys $30{,}0 - 300$ antaa tuloksen kokonaisina asteina.
@@ -92,7 +92,7 @@
 **Annettu:** päätepisteet $106{,}0 \pm 1{,}0\,\text{kPa}$ lämpötilassa $20{,}0\,{}^\circ\text{C}$ ja $137{,}0 \pm 1{,}0\,\text{kPa}$ lämpötilassa $100{,}0\,{}^\circ\text{C}$. Jyrkin ääriviiva kulkee pisteiden $(20{,}0\,{}^\circ\text{C};\ 105{,}0\,\text{kPa})$ ja $(100{,}0\,{}^\circ\text{C};\ 138{,}0\,\text{kPa})$, loivin pisteiden $(20{,}0\,{}^\circ\text{C};\ 107{,}0\,\text{kPa})$ ja $(100{,}0\,{}^\circ\text{C};\ 136{,}0\,\text{kPa})$ kautta
 **Kysytty:** epävarmuus $\Delta\theta_0$ celsiusasteina ja syy siihen, miksi tulos on suurempi kuin seitsemän pisteen aineistolla
 **Periaate:** Mitä jyrkempi tai loivempi suora sallitaan, sitä laajempi on nollapisteiden väli. Kummankin ääriviivan nollapaine lasketaan suoran kahdesta pisteestä, ja epävarmuus on näiden kahden arvon välin puolikas.
-**Kaava:** Kummallekin suoralle $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja $\theta_0 = \theta_1 - \dfrac{p_1}{k}$, ja sitten $\Delta\theta_0 = \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2}$
+**Kaava:** $$\begin{aligned} k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\ 0 &= p_1 + k(\theta_0 - \theta_1) \\ k(\theta_0 - \theta_1) &= -p_1 \\ \theta_0 &= \theta_1 - \dfrac{p_1}{k} \\ \Delta\theta_0 &= \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2} \end{aligned}$$
 **Muunnokset:** Muunnoksia ei tarvita: paineet ovat kilopascaleina ja lämpötilat celsiusasteina, ja lämpötilaero $100{,}0\,{}^\circ\text{C} - 20{,}0\,{}^\circ\text{C} = 80{,}0\,{}^\circ\text{C}$ on sama kelvineinä.
 **Sijoitus:** Jyrkin: $k = \dfrac{(138{,}0 - 105{,}0)\,\text{kPa}}{80{,}0\,{}^\circ\text{C}} = 0{,}4125\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ ja $\theta_0 = 20{,}0\,{}^\circ\text{C} - \dfrac{105{,}0\,\text{kPa}}{0{,}4125\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -234{,}55\,{}^\circ\text{C}$. Loivin: $k = \dfrac{(136{,}0 - 107{,}0)\,\text{kPa}}{80{,}0\,{}^\circ\text{C}} = 0{,}3625\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ ja $\theta_0 = 20{,}0\,{}^\circ\text{C} - \dfrac{107{,}0\,\text{kPa}}{0{,}3625\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -275{,}17\,{}^\circ\text{C}$. Siis $\Delta\theta_0 = \dfrac{-234{,}55 - (-275{,}17)}{2}\,{}^\circ\text{C} = 20{,}31\,{}^\circ\text{C}$
 **Vastaus:** $20\,{}^\circ\text{C}$ (tarkasti $20{,}3\,{}^\circ\text{C}$), kaksi merkitsevää numeroa, koska nollapisteet $-235\,{}^\circ\text{C}$ ja $-275\,{}^\circ\text{C}$ tunnetaan kolmella numerolla eli kokonaisina asteina ja niiden erotus $$40\,{}^\circ\text{C}$$ on kahden numeron luku. Kolmas numero vaatisi lähtöarvot sadasosan tarkkuudella, mikä ei sovi epävarmuuteen $\pm 1{,}0\,\text{kPa}$.
@@ -102,7 +102,7 @@
 **Annettu:** $p_0 = 100{,}0\,\text{kPa}$ lämpötilassa $0\,{}^\circ\text{C}$, tavoitelämpötila $T = 77{,}0\,\text{K}$ ja $p \propto T$ kelvineinä; typpi tiivistyy tässä paineessa nesteeksi vasta noin $67\,\text{K}$:ssä
 **Kysytty:** paine $p$ lämpötilassa $77{,}0\,\text{K}$ kilopascaleina ja perustelu sille, miksi suoraa ei voi jatkaa nollaan asti
 **Periaate:** Jäykässä suljetussa astiassa kaasun ainemäärä ja tilavuus pysyvät vakioina, joten paine on suoraan verrannollinen kelvinlämpötilaan ja $\dfrac{p}{T}$ on vakio. Verrannollisuus pätee vain kelvineinä, koska vain kelvinasteikon nolla on absoluuttinen nollapiste. Se edellyttää myös, että kaasu pysyy kaasuna.
-**Kaava:** $\dfrac{p}{T} = \dfrac{p_0}{T_0}$, joten $p = p_0\,\dfrac{T}{T_0}$
+**Kaava:** $$\begin{aligned} \dfrac{p}{T} &= \dfrac{p_0}{T_0} \\ p &= p_0\,\dfrac{T}{T_0} \end{aligned}$$
 **Muunnokset:** Lähtölämpötila muunnetaan kelvineiksi: $T_0 = 0\,{}^\circ\text{C} = 273{,}15\,\text{K}$. Lämpötila $77{,}0\,\text{K}$ on jo kelvineinä. Suhteessa $T/T_0$ kelvinit supistuvat, joten paine jää kilopascaleiksi.
 **Sijoitus:** $p = 100{,}0\,\text{kPa} \cdot \dfrac{77{,}0\,\text{K}}{273{,}15\,\text{K}} = 28{,}19\,\text{kPa}$
 **Vastaus:** $28{,}2\,\text{kPa}$, kolme merkitsevää numeroa, koska lämpötila $77{,}0\,\text{K}$ on annettu kolmella numerolla ($273{,}15\,\text{K}$ on määritelmä eikä rajoita). Suoraa ei voi jatkaa nollaan asti, koska typpi tiivistyy nesteeksi noin $67\,\text{K}$:ssä. Silloin kaasun ainemäärä pienenee, paine putoaa nopeammin kuin suora ennustaa, eikä ehto "ainemäärä vakio" enää päde.
@@ -143,7 +143,7 @@
 **Kysytty:** a) keskipiste; b) nollapaineen lämpötila $\theta_0$ celsiusasteina
 **Periaate:** Pullo on suljettu ja jäykkä, joten ainemäärä ja tilavuus pysyvät vakioina ja paine on lämpötilan lineaarinen funktio. Sovitettu suora kulkee pisteiden joukon keskeltä, joten se kulkee keskipisteen kautta. Suoraa jatketaan ekstrapoloimalla kohtaan $p = 0$.
 **Kuvaajan lukeminen:** Taulukon keskipiste lasketaan keskiarvoina $\theta_{\text{ka}}$ ja $p_{\text{ka}}$. Lämpötilojen summa on $250\,{}^\circ\text{C}$ ja paineiden summa $588{,}9\,\text{kPa}$. Suora kulkee tämän pisteen kautta kulmakertoimella $k$.
-**Kaava:** Suora pisteen $(\theta_{\text{ka}}, p_{\text{ka}})$ kautta on $p = p_{\text{ka}} + k(\theta - \theta_{\text{ka}})$. Kun $p = 0$ ja $\theta = \theta_0$, niin $\theta_0 = \theta_{\text{ka}} - \dfrac{p_{\text{ka}}}{k}$
+**Kaava:** $$\begin{aligned} p &= p_{\text{ka}} + k(\theta - \theta_{\text{ka}}) \\ 0 &= p_{\text{ka}} + k(\theta_0 - \theta_{\text{ka}}) \\ k(\theta_0 - \theta_{\text{ka}}) &= -p_{\text{ka}} \\ \theta_0 &= \theta_{\text{ka}} - \dfrac{p_{\text{ka}}}{k} \end{aligned}$$
 **Muunnokset:** Muunnoksia ei tarvita: paineet ovat kilopascaleina, joten osamäärässä $p_{\text{ka}}/k$ kPa supistuu ja jäljelle jää celsiusaste.
 **Sijoitus:** a) $\theta_{\text{ka}} = 250\,{}^\circ\text{C} : 5 = 50\,{}^\circ\text{C}$ ja $p_{\text{ka}} = 588{,}9\,\text{kPa} : 5 = 117{,}78\,\text{kPa}$. b)
 
@@ -157,7 +157,7 @@ $$\begin{aligned} \theta_0 &= 50\,{}^\circ\text{C} - \dfrac{117{,}78\,\text{kPa}
 **Kysytty:** a) ryhmän B nollapaineen lämpötila $\theta_0$ celsiusasteina; b) miksi tulos eroaa ryhmän A tuloksesta
 **Periaate:** Suljetussa jäykässä astiassa paine on lämpötilan lineaarinen funktio, joten kaksi pistettä määrää suoran, jota jatketaan kohtaan $p = 0$. Mittauspisteissä on satunnaista hajontaa, joten suoran kulmakerroin on sitä epävarmempi, mitä lyhyemmältä väliltä se lasketaan.
 **Kuvaajan lukeminen:** Ryhmä B lukee taulukosta vain kaksi ensimmäistä riviä, lämpötilat $20\,{}^\circ\text{C}$ ja $35\,{}^\circ\text{C}$.
-**Kaava:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja $\theta_0 = \theta_1 - \dfrac{p_1}{k}$
+**Kaava:** $$\begin{aligned} k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\ 0 &= p_1 + k(\theta_0 - \theta_1) \\ k(\theta_0 - \theta_1) &= -p_1 \\ \theta_0 &= \theta_1 - \dfrac{p_1}{k} \end{aligned}$$
 **Muunnokset:** Muunnoksia ei tarvita: paineet ovat kilopascaleina, joten kPa supistuu osamäärässä $p_1/k$. Lämpötilaero $15\,{}^\circ\text{C}$ on sama kelvineinä.
 **Sijoitus:**
 
@@ -176,7 +176,7 @@ Ryhmä A käyttää kuutta pistettä $75\,{}^\circ\text{C}$:n levyiseltä välil
 **Kysytty:** a) ryhmän saama nollapaineen lämpötila $\theta_0$ celsiusasteina; b) tukeeko taulukko vuotoepäilyä ja miksi vuoto vääristää tulosta
 **Periaate:** Vuodottomassa suljetussa pullossa ainemäärä on vakio ja paine kasvaa lämpötilan mukana lineaarisesti. Jos kaasua pääsee pois, ainemäärä pienenee eikä lineaarinen malli enää päde. Ekstrapolointi olettaa mallin pätevän, joten tulos vääristyy.
 **Kuvaajan lukeminen:** Luetaan taulukosta ensimmäinen piste $(20\,{}^\circ\text{C};\ 104{,}0\,\text{kPa})$ ja viimeinen piste $(80\,{}^\circ\text{C};\ 120{,}0\,\text{kPa})$.
-**Kaava:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja $\theta_0 = \theta_1 - \dfrac{p_1}{k}$
+**Kaava:** $$\begin{aligned} k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\ 0 &= p_1 + k(\theta_0 - \theta_1) \\ k(\theta_0 - \theta_1) &= -p_1 \\ \theta_0 &= \theta_1 - \dfrac{p_1}{k} \end{aligned}$$
 **Muunnokset:** Muunnoksia ei tarvita: kilopascalit supistuvat osamäärässä, ja lämpötilaero $60\,{}^\circ\text{C}$ on sama kelvineinä.
 **Sijoitus:**
 
@@ -195,7 +195,9 @@ Vuodossa kuumasta pullosta poistuu kaasua, joten ainemäärä pienenee ja paine 
 **Kysytty:** a) kummankin sarjan nollapaineen lämpötilan epävarmuus $\Delta\theta_0$ celsiusasteina; b) mittausalueen leveyden vaikutus ja yhteensopivuus arvon $-273{,}15\,{}^\circ\text{C}$ kanssa
 **Periaate:** Jokaisen pisteen paine tunnetaan välillä $p \pm \Delta p$. Jyrkin suora kulkee alemman pisteen alapään ja ylemmän pisteen yläpään kautta, loivin päinvastoin; molemmat sopivat aineistoon. Niiden nollapaineen lämpötilat rajaavat välin, ja epävarmuus on välin puolikas. Malli olettaa, että paine on lämpötilan lineaarinen funktio suljetussa jäykässä astiassa myös mitatun alueen ulkopuolella.
 **Kuvaajan lukeminen:** Kustakin sarjasta luetaan kaksi pistettä. Jyrkin suora kulkee pisteiden $(\theta_1;\ p_1 - \Delta p)$ ja $(\theta_2;\ p_2 + \Delta p)$ kautta, loivin pisteiden $(\theta_1;\ p_1 + \Delta p)$ ja $(\theta_2;\ p_2 - \Delta p)$ kautta.
-**Kaava:** Suoran paine pisteessä $\theta_1$ on $p_a$ ja pisteessä $\theta_2$ on $p_b$. Silloin $k = \dfrac{p_b - p_a}{\theta_2 - \theta_1}$, $\theta_0 = \theta_1 - \dfrac{p_a}{k}$ ja $\Delta\theta_0 = \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2}$
+**Kaava:** $$\begin{aligned} k &= \dfrac{p_b - p_a}{\theta_2 - \theta_1} \\ 0 &= p_a + k(\theta_0 - \theta_1) \\ k(\theta_0 - \theta_1) &= -p_a \\ \theta_0 &= \theta_1 - \dfrac{p_a}{k} \\ \Delta\theta_0 &= \dfrac{\theta_{0,\text{max}} - \theta_{0,\text{min}}}{2} \end{aligned}$$
+
+Tässä $p_a$ on suoran paine pisteessä $\theta_1$ ja $p_b$ suoran paine pisteessä $\theta_2$.
 **Muunnokset:** Muunnoksia ei tarvita: kilopascalit supistuvat osamäärässä $p_a/k$, ja lämpötilaerot ovat samat kelvineinä.
 **Sijoitus:**
 
@@ -230,7 +232,7 @@ Kummankin sarjan väli sisältää arvon $-273{,}15\,{}^\circ\text{C}$ (A: $-302
 **Kysytty:** a) pakastimen lämpötila $\theta$ celsiusasteina; b) painelukeman epävarmuudesta johtuva lämpötilan epävarmuus $\Delta\theta$; c) miksi tulos on ekstrapolointia mutta luotettava
 **Periaate:** Pullo on suljettu ja jäykkä, joten kaasun ainemäärä ja tilavuus pysyvät vakioina ja paine on lämpötilan lineaarinen funktio. Kalibrointisuora kulkee kaukana toisistaan olevien pisteiden kautta, ja se ratkaistaan lämpötilan suhteen, kun paine tunnetaan. Pakastimen lämpötila on kalibrointialueen $0\ldots 100\,{}^\circ\text{C}$ ulkopuolella.
 **Kuvaajan lukeminen:** Luetaan taulukosta kaukaisimmat pisteet $(0\,{}^\circ\text{C};\ 100{,}4\,\text{kPa})$ ja $(100\,{}^\circ\text{C};\ 137{,}0\,\text{kPa})$. Muut pisteet toimivat tarkistuksena.
-**Kaava:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja suoran $p = p_1 + k(\theta - \theta_1)$ ratkaisu $\theta = \theta_1 + \dfrac{p - p_1}{k}$. Painelukeman epävarmuutta vastaa lämpötilan epävarmuus $\Delta\theta = \dfrac{\Delta p}{k}$.
+**Kaava:** $$\begin{aligned} k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\ p &= p_1 + k(\theta - \theta_1) \\ k(\theta - \theta_1) &= p - p_1 \\ \theta &= \theta_1 + \dfrac{p - p_1}{k} \\ \Delta\theta &= \dfrac{\Delta p}{k} \end{aligned}$$
 **Muunnokset:** Muunnoksia ei tarvita: kilopascalit supistuvat, joten tulos on celsiusasteina. Lämpötilaero $100\,{}^\circ\text{C}$ on sama kelvineinä.
 **Sijoitus:**
 
@@ -271,7 +273,7 @@ Tulos on järkevä: paineen kasvu lämpötilan mukana sopii suljettuun jäykkä�
 **Annettu:** kelvinlämpötila nollapisteessä $T = 0\,\text{K}$; taulukosta (MAFY-taulukko, yksikkömuunnoksia) $0\,{}^\circ\text{C} = 273{,}15\,\text{K}$, joten $T_0 = 273{,}15\,\text{K}$
 **Kysytty:** absoluuttisen nollapisteen celsiuslämpötila $\theta_0$ celsiusasteina
 **Periaate:** Celsius- ja kelvinasteikon asteet ovat yhtä suuret, ja asteikot ovat siirtyneet toistensa suhteen vakion $T_0$ verran. Absoluuttinen nollapiste on kelvinasteikon nollakohta, joten sen celsiuslämpötila saadaan asettamalla $T = 0$.
-**Kaava:** $T = \theta + T_0$, joten $0 = \theta_0 + T_0$ ja $\theta_0 = -T_0$
+**Kaava:** $$\begin{aligned} T &= \theta + T_0 \\ 0 &= \theta_0 + T_0 \\ \theta_0 &= -T_0 \end{aligned}$$
 **Muunnokset:** Muunnoksia ei tarvita: $T_0$ on jo taulukossa, ja lämpötilan muutos on yhtä suuri kelvineinä ja celsiusasteina.
 **Sijoitus:** $\theta_0 = -273{,}15\,{}^\circ\text{C}$
 **Vastaus:** $$\begin{aligned} \theta_0 &= -273{,}15\,{}^\circ\text{C} \\ &\approx -273\,{}^\circ\text{C} \end{aligned}$$. Arvo $T_0 = 273{,}15\,\text{K}$ on MAFY-taulukosta (yksikkömuunnoksia); taulukon arvo on sovittu tarkaksi, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
@@ -282,7 +284,7 @@ Tulos on järkevä: paineen kasvu lämpötilan mukana sopii suljettuun jäykkä�
 **Kysytty:** lämpötila $\theta_0$, jossa suoran paine on nolla, celsiusasteina
 **Periaate:** Jäykässä suljetussa astiassa kaasun määrä ja tilavuus pysyvät samoina, joten paine riippuu vain lämpötilasta. Pisteet ovat lähes suoralla, joten suoraa voidaan jatkaa mittausalueen ulkopuolelle eli ekstrapoloida, kunnes paine on nolla.
 **Kuvaajan lukeminen:** Ensimmäinen piste on ruudukon risteyksessä $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$. Viimeinen piste on hieman $100\,\text{kPa}$:n viivan yläpuolella, $102{,}5\,\text{kPa}$, lämpötilassa $100\,{}^\circ\text{C}$. Näistä kahdesta pisteestä lasketaan suoran kulmakerroin. Kuvaajan vaaka-akseli ei ulotu nollapaineeseen asti, joten nollakohtaa ei voi lukea kuvaajasta vaan se lasketaan kulmakertoimen avulla. Laskettu arvo hyväksytään $5\,\%$:n toleranssilla.
-**Kaava:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja $p = p_1 + k(\theta - \theta_1) = 0$, joten $\theta_0 = \theta_1 - \dfrac{p_1}{k}$
+**Kaava:** $$\begin{aligned} k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\ 0 &= p_1 + k(\theta_0 - \theta_1) \\ k(\theta_0 - \theta_1) &= -p_1 \\ \theta_0 &= \theta_1 - \dfrac{p_1}{k} \end{aligned}$$
 **Muunnokset:** Muunnoksia ei tarvita: paineet ovat kilopascaleina ja lämpötilat celsiusasteina.
 **Sijoitus:** $k = \dfrac{(102{,}5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0{,}275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, ja $\theta_0 = 0\,{}^\circ\text{C} - \dfrac{75\,\text{kPa}}{0{,}275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -272{,}7\,{}^\circ\text{C}$
 **Vastaus:** $\theta_0 \approx -273\,{}^\circ\text{C}$. Kuvaajasta luetun paineen tarkkuus on noin $1\,\text{kPa}$, joten tuloksen epävarmuus on noin kymmenen celsiusastetta tai enemmän, eikä kolmas numero ole luotettava.
@@ -293,7 +295,7 @@ Tulos on järkevä: paineen kasvu lämpötilan mukana sopii suljettuun jäykkä�
 **Kysytty:** paine $p$ lämpötilassa $200\,\text{K}$ kilopascaleina
 **Periaate:** Jäykässä suljetussa astiassa kaasun määrä ja tilavuus pysyvät samoina, joten paine riippuu vain lämpötilasta. Pisteet ovat lähes suoralla, joten suoraa voidaan jatkaa mittausalueen ulkopuolelle. Kuvaajan lämpötila on celsiusasteina, joten kelvinlämpötila on ensin muunnettava celsiusasteiksi.
 **Kuvaajan lukeminen:** Ensimmäinen piste on ruudukon risteyksessä $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ ja viimeinen hieman $100\,\text{kPa}$:n viivan yläpuolella, $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$. Näistä lasketaan suoran kulmakerroin, ja suoraa jatketaan vasemmalle. Silmämääräisesti piirtämällä saa arvon $53$–$57\,\text{kPa}$, joka hyväksytään.
-**Kaava:** $\theta = T - 273{,}15\,\text{K}$ (celsiusasteina), $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja $p = p_1 + k(\theta - \theta_1)$
+**Kaava:** $$\begin{aligned} \theta &= T - 273{,}15\,\text{K} \\ k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\ p &= p_1 + k(\theta - \theta_1) \end{aligned}$$
 **Muunnokset:** $\theta = 200 - 273{,}15 = -73{,}15\,{}^\circ\text{C}$
 **Sijoitus:** $k = \dfrac{(102{,}5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0{,}275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, ja $$\begin{aligned} p &= 75\,\text{kPa} \\ &+ 0{,}275\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot (-73{,}15 - 0)\,{}^\circ\text{C} \\ &= 75\,\text{kPa} - 20{,}1\,\text{kPa} \\ &= 54{,}9\,\text{kPa} \end{aligned}$$
 **Vastaus:** $p \approx 55\,\text{kPa}$, kaksi merkitsevää numeroa, koska kuvaajasta luettu paine on noin $1\,\text{kPa}$:n tarkkuudella.

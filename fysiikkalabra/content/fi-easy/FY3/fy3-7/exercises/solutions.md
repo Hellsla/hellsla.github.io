@@ -43,7 +43,10 @@
 **Kysytty:** jään ominaissulamislämpö $s$
 **Periaate:** Kuvaajan vaakasuorassa osassa lämpötila pysyy vakiona $0\,{}^\circ\text{C}$:ssa, vaikka energiaa siirtyy. Jää sulaa, ja kaikki siirtyvä energia kuluu sulamiseen, $Q = sm$. Sulamiseen kuluva energia on vaakasuoran osan pituus vaaka-akselilla.
 **Kuvaajan lukeminen:** Vaakasuora osa alkaa ruudukon risteyksestä $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$. Se päättyy risteykseen $(220\,\text{kJ};\ 0\,{}^\circ\text{C})$. Sulamiseen kuluva energia on siis $Q = 220\,\text{kJ} - 20\,\text{kJ} = 200\,\text{kJ}$.
-**Kaava:** $Q = sm$, josta $s = \dfrac{Q}{m}$
+**Kaava:** $$\begin{aligned} Q &= sm \\
+s &= \dfrac{Q}{m}
+\end{aligned}
+$$
 **Muunnokset:** Ei tarvita. Energia luetaan kilojouleina, ja vastaus pyydetään yksikössä $\tfrac{\text{kJ}}{\text{kg}}$.
 **Sijoitus:** $s = \dfrac{200\,\text{kJ}}{0{,}60\,\text{kg}} = 333\,\tfrac{\text{kJ}}{\text{kg}}$
 **Vastaus:** $3{,}3 \cdot 10^{2}\,\tfrac{\text{kJ}}{\text{kg}}$, kaksi merkitsevää numeroa kuten massassa $0{,}60\,\text{kg}$ (laskettu $333\,\tfrac{\text{kJ}}{\text{kg}}$). Arvot luetaan tarkasti ruudukosta, joten hyväksytään $323\ldots343\,\tfrac{\text{kJ}}{\text{kg}}$.
@@ -53,7 +56,13 @@
 **Annettu:** $P = 2{,}0\,\text{kW}$, kiehuvasta vedestä höyrystyvä massa $m = 0{,}50\,\text{kg}$, kaikki levyn energia siirtyy veteen; taulukosta $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** aika $t$ minuutteina
 **Periaate:** Vesi kiehuu jo, joten sen lämpötila ei nouse. Kaikki levyn energia $Pt$ kuluu höyrystämiseen, $Q = rm$. Häviöitä ei ole, joten energia säilyy ja $Pt = rm$.
-**Kaava:** $Pt = rm$, josta $t = \dfrac{rm}{P}$
+**Kaava:** $$\begin{aligned} E &= Pt \\
+Q &= rm \\
+E &= Q \\
+Pt &= rm \\
+t &= \dfrac{rm}{P}
+\end{aligned}
+$$
 **Muunnokset:** $P = 2{,}0\,\text{kW} = 2000\,\text{W}$ ja $r = 2260\,\tfrac{\text{kJ}}{\text{kg}} = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$. Aika saadaan sekunteina. Se muunnetaan lopuksi minuuteiksi: $1\,\text{min} = 60\,\text{s}$.
 **Sijoitus:** $t = \dfrac{2\,260\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0{,}50\,\text{kg}}{2000\,\text{W}} = 565\,\text{s} = \dfrac{565}{60}\,\text{min} = 9{,}42\,\text{min}$
 **Vastaus:** $9{,}4\,\text{min}$, kaksi merkitsevää numeroa kuten teholla $2{,}0\,\text{kW}$ ja massalla $0{,}50\,\text{kg}$.
@@ -63,7 +72,13 @@
 **Annettu:** jää, $m = 750\,\text{g}$, $T_1 = -18\,{}^\circ\text{C}$, loppu $0\,{}^\circ\text{C}$:n lämpöinen vesi; taulukosta $c_\text{jää} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** kokonaislämpömäärä $Q$ kilojouleina
 **Periaate:** Prosessissa on kaksi vaihetta. Ensin jää lämpenee $-18\,{}^\circ\text{C}$:sta sulamislämpötilaan $0\,{}^\circ\text{C}$ ($Q_1 = cm\Delta T$). Sitten se sulaa vakiolämpötilassa ($Q_2 = sm$). Kokonaislämpömäärä on näiden summa.
-**Kaava:** $Q = Q_1 + Q_2$, ja $Q = c_\text{jää} m \Delta T + sm$, missä $\Delta T = 0\,{}^\circ\text{C} - T_1$
+**Kaava:** $$\begin{aligned} Q_1 &= c_\text{jää} m \Delta T \\
+\Delta T &= 0\,{}^\circ\text{C} - T_1 \\
+Q_2 &= sm \\
+Q &= Q_1 + Q_2 \\
+&= c_\text{jää} m \Delta T + sm
+\end{aligned}
+$$
 **Muunnokset:** $m = 750\,\text{g} = 0{,}750\,\text{kg}$. Lämpötilan muutos on sama kelvineinä: $\Delta T = 0\,{}^\circ\text{C} - (-18\,{}^\circ\text{C}) = 18\,\text{K}$. $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$ ja lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $Q_1 = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}750\,\text{kg} \cdot 18\,\text{K} = 28\,350\,\text{J}$ ja $Q_2 = 334\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0{,}750\,\text{kg} = 250\,500\,\text{J}$, joten $Q = 28\,350\,\text{J} + 250\,500\,\text{J} = 278\,850\,\text{J} = 278{,}85\,\text{kJ}$
 **Vastaus:** $280\,\text{kJ}$, kaksi merkitsevää numeroa kuten lämpötilassa $-18\,{}^\circ\text{C}$.
@@ -73,7 +88,10 @@
 **Annettu:** auringosta saatu energia $Q = 12\,\text{MJ}$ neliömetriä kohti, jää $0\,{}^\circ\text{C}$:ssa, kaikki energia kuluu sulattamiseen; taulukosta $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** sulava jään massa $m$ kilogrammoina
 **Periaate:** Jää on jo $0\,{}^\circ\text{C}$:ssa, joten se ei lämpene. Kaikki energia kuluu sulamiseen. Siksi sulamiseen tarvittava lämpömäärä on $Q = sm$. Sulavan massan saa ratkaisemalla $m$.
-**Kaava:** $Q = sm$, josta $m = \dfrac{Q}{s}$
+**Kaava:** $$\begin{aligned} Q &= sm \\
+m &= \dfrac{Q}{s}
+\end{aligned}
+$$
 **Muunnokset:** Ennen jakamista megajoulet ja kilojoulet täytyy muuttaa samaan yksikköön: $12\,\text{MJ} = 12\,000\,000\,\text{J}$ ja $334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Sijoitus:** $m = \dfrac{12\,000\,000\,\text{J}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = 35{,}93\,\text{kg}$
 **Vastaus:** $36\,\text{kg}$, kaksi merkitsevää numeroa kuten energiassa $12\,\text{MJ}$.
@@ -83,7 +101,13 @@
 **Annettu:** vesi $m = 2{,}0\,\text{kg}$, $T_1 = 15\,{}^\circ\text{C}$, $T_2 = 100\,{}^\circ\text{C}$, höyrystyvä osa $m_\text{h} = 0{,}10\,\text{kg}$; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** veteen siirtyvä kokonaislämpömäärä $Q$ megajouleina
 **Periaate:** Prosessissa on kaksi vaihetta. Ensin koko vesimäärä lämpenee kiehumispisteeseen ($Q_1 = cm\Delta T$). Sitten vain höyrystyvä osa muuttuu höyryksi vakiolämpötilassa ($Q_2 = rm_\text{h}$). Kokonaislämpömäärä on näiden summa.
-**Kaava:** $Q = Q_1 + Q_2$, ja $Q = cm(T_2 - T_1) + rm_\text{h}$
+**Kaava:** $$\begin{aligned} Q_1 &= cm\Delta T \\
+\Delta T &= T_2 - T_1 \\
+Q_2 &= rm_\text{h} \\
+Q &= Q_1 + Q_2 \\
+&= cm(T_2 - T_1) + rm_\text{h}
+\end{aligned}
+$$
 **Muunnokset:** Lämpötilan muutos on sama kelvineinä: $T_2 - T_1 = 100\,{}^\circ\text{C} - 15\,{}^\circ\text{C} = 85\,\text{K}$. $r = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$ ja lopuksi $1\,\text{MJ} = 10^6\,\text{J}$.
 **Sijoitus:** $Q_1 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 2{,}0\,\text{kg} \cdot 85\,\text{K} = 712\,300\,\text{J}$ ja $Q_2 = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0{,}10\,\text{kg} = 226\,000\,\text{J}$, joten $Q = 938\,300\,\text{J} = 0{,}9383\,\text{MJ}$
 **Vastaus:** $0{,}94\,\text{MJ}$, kaksi merkitsevää numeroa kuten massoissa $2{,}0\,\text{kg}$ ja $0{,}10\,\text{kg}$.
@@ -116,7 +140,14 @@ Arvio: höyrystämiseen tarvitaan pienelläkin massalla paljon energiaa, koska $
 **Annettu:** mehu (veden $c$) $m_1 = 0{,}35\,\text{kg}$, $T_1 = 25\,{}^\circ\text{C}$; jää $m_2 = 60\,\text{g}$, $T_0 = 0\,{}^\circ\text{C}$; ei lämpöhäviöitä; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** loppulämpötila $T$, kun kaikki jää on sulanut
 **Periaate:** Lämpöä ei siirry lasiin eikä ilmaan, joten energia säilyy. Mehun luovuttama lämpömäärä on yhtä suuri kuin jään sulamiseen ja sulamisveden lämmittämiseen kuluva lämpömäärä. Jää sulaa kokonaan, jos mehussa on tarpeeksi energiaa. Mehu luovuttaisi jäähtyessään $0\,{}^\circ\text{C}$:seen $36\,662{,}5\,\text{J}$, mutta sulaminen vaatii vain $20\,040\,\text{J}$.
-**Kaava:** $$\begin{aligned} &cm_1(T_1 - T) \\ &= sm_2 + cm_2(T - T_0) \end{aligned}$$, josta $T = \dfrac{cm_1T_1 + cm_2T_0 - sm_2}{c(m_1 + m_2)}$
+**Kaava:** $$\begin{aligned} Q_\text{luovutettu} &= Q_\text{vastaanotettu} \\
+Q_\text{luovutettu} &= cm_1(T_1 - T) \\
+Q_\text{vastaanotettu} &= sm_2 + cm_2(T - T_0) \\
+cm_1(T_1 - T) &= sm_2 + cm_2(T - T_0) \\
+cm_1T_1 + cm_2T_0 - sm_2 &= c(m_1 + m_2)T \\
+T &= \dfrac{cm_1T_1 + cm_2T_0 - sm_2}{c(m_1 + m_2)}
+\end{aligned}
+$$
 **Muunnokset:** $m_2 = 60\,\text{g} = 0{,}060\,\text{kg}$ ja $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. Koska $T_0 = 0\,{}^\circ\text{C}$, termi $cm_2T_0$ on nolla. Lämpötilat voi sijoittaa celsiusasteina, koska kaava sisältää lämpötilaeroja.
 **Sijoitus:** Osoittaja on $4190 \cdot 0{,}35 \cdot 25 - 334\,000 \cdot 0{,}060 = 36\,662{,}5 - 20\,040 = 16\,622{,}5$ ja nimittäjä $4190 \cdot 0{,}41 = 1717{,}9$, joten
 
@@ -129,7 +160,13 @@ $$T = \dfrac{16\,622{,}5}{1717{,}9}\,{}^\circ\text{C} = 9{,}68\,{}^\circ\text{C}
 **Annettu:** vesi $m = 0{,}25\,\text{kg}$, $T_1 = 20\,{}^\circ\text{C}$, lämpenee $T_2 = 100\,{}^\circ\text{C}$:seen ja höyrystyy kokonaan; kivet $m_\text{k} = 30\,\text{kg}$, $c_\text{k} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** kivien lämpötilan lasku $\Delta T$ kelvineinä
 **Periaate:** Energia säilyy: kaikki veden tarvitsema energia tulee kivistä. Vesi tarvitsee ensin lämpenemiseen energian $cm(T_2 - T_1)$. Sitten se tarvitsee höyrystymiseen energian $rm$, ja silloin lämpötila ei muutu. Kivien luovuttama lämpömäärä on $c_\text{k}m_\text{k}\Delta T$.
-**Kaava:** $$c_\text{k}m_\text{k}\Delta T = cm(T_2 - T_1) + rm$$, josta $\Delta T = \dfrac{cm(T_2 - T_1) + rm}{c_\text{k}m_\text{k}}$
+**Kaava:** $$\begin{aligned} Q_\text{luovutettu} &= Q_\text{vastaanotettu} \\
+Q_\text{luovutettu} &= c_\text{k}m_\text{k}\Delta T \\
+Q_\text{vastaanotettu} &= cm(T_2 - T_1) + rm \\
+c_\text{k}m_\text{k}\Delta T &= cm(T_2 - T_1) + rm \\
+\Delta T &= \dfrac{cm(T_2 - T_1) + rm}{c_\text{k}m_\text{k}}
+\end{aligned}
+$$
 **Muunnokset:** $T_2 - T_1 = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$, sama kelvineinä. $r = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Sijoitus:** $Q_1 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}25\,\text{kg} \cdot 80\,\text{K} = 83\,800\,\text{J}$ ja $Q_2 = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0{,}25\,\text{kg} = 565\,000\,\text{J}$, joten $\Delta T = \dfrac{648\,800\,\text{J}}{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 30\,\text{kg}} = \dfrac{648\,800\,\text{J}}{24\,000\,\tfrac{\text{J}}{\text{K}}} = 27{,}03\,\text{K}$
 **Vastaus:** $27\,\text{K}$, kaksi merkitsevää numeroa kuten massassa $0{,}25\,\text{kg}$.
@@ -139,7 +176,15 @@ $$T = \dfrac{16\,622{,}5}{1717{,}9}\,{}^\circ\text{C} = 9{,}68\,{}^\circ\text{C}
 **Annettu:** $P_1 = 800\,\text{W}$, $\Delta m_1 = 196\,\text{g}$; $P_2 = 400\,\text{W}$, $\Delta m_2 = 90{,}0\,\text{g}$; kummassakin $t = 10{,}0\,\text{min}$; vesi $100\,{}^\circ\text{C}$:ssa, joten ilmaan siirtyvä teho $P_\text{h}$ on sama
 **Kysytty:** ominaishöyrystymislämpö $r$ yksikössä $\tfrac{\text{MJ}}{\text{kg}}$
 **Periaate:** Vesi kiehuu koko ajan, joten sen lämpötila ei muutu. Veteen jäävä energia kuluu höyrystämiseen: $(P - P_\text{h})t = r\Delta m$. Yhtälöitä on kaksi ja tuntemattomia kaksi ($r$ ja $P_\text{h}$), joten yhtälöt voidaan ratkaista yhdessä.
-**Kaava:** $(P_1 - P_\text{h})t = r\Delta m_1$ ja $(P_2 - P_\text{h})t = r\Delta m_2$. Vähennetään yhtälöt: $(P_1 - P_2)t = r(\Delta m_1 - \Delta m_2)$, josta $r = \dfrac{(P_1 - P_2)t}{\Delta m_1 - \Delta m_2}$
+**Kaava:** $$\begin{aligned} E_\text{vesi} &= (P - P_\text{h})t \\
+Q &= r\Delta m \\
+E_\text{vesi} &= Q \\
+(P_1 - P_\text{h})t &= r\Delta m_1 \\
+(P_2 - P_\text{h})t &= r\Delta m_2 \\
+(P_1 - P_2)t &= r(\Delta m_1 - \Delta m_2) \\
+r &= \dfrac{(P_1 - P_2)t}{\Delta m_1 - \Delta m_2}
+\end{aligned}
+$$
 **Muunnokset:** $t = 10{,}0\,\text{min} = 600\,\text{s}$, $\Delta m_1 = 0{,}196\,\text{kg}$ ja $\Delta m_2 = 0{,}0900\,\text{kg}$. Lopuksi $1\,\text{MJ} = 10^6\,\text{J}$.
 **Sijoitus:** $r = \dfrac{(800\,\text{W} - 400\,\text{W}) \cdot 600\,\text{s}}{0{,}196\,\text{kg} - 0{,}0900\,\text{kg}} = \dfrac{240\,000\,\text{J}}{0{,}106\,\text{kg}} = 2\,264\,151\,\tfrac{\text{J}}{\text{kg}} = 2{,}264\,\tfrac{\text{MJ}}{\text{kg}}$
 **Vastaus:** $2{,}26\,\tfrac{\text{MJ}}{\text{kg}}$, kolme merkitsevää numeroa. Erotus $196\,\text{g} - 90{,}0\,\text{g} = 106\,\text{g}$ on gramman tarkkuudella, ja siinä on kolme numeroa.
@@ -163,7 +208,10 @@ Vaihtoehto, jonka mukaan lämpötila nousee tasaisesti, unohtaa tämän. Vaihtoe
 **Annettu:** höyrystymiseen kuluva energia $Q = 1{,}36\,\text{MJ}$; taulukosta $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** pois kiehuva vesimäärä $m$ kilogrammoina
 **Periaate:** Vesi kiehuu jo, joten sen lämpötila ei nouse. Koko energia kuluu höyrystämiseen, $Q = rm$. Höyrystyvä massa on verrannollinen energiaan.
-**Kaava:** $Q = rm$, josta $m = \dfrac{Q}{r}$
+**Kaava:** $$\begin{aligned} Q &= rm \\
+m &= \dfrac{Q}{r}
+\end{aligned}
+$$
 **Muunnokset:** $Q = 1{,}36\,\text{MJ} = 1360\,\text{kJ}$, koska $1\,\text{MJ} = 1000\,\text{kJ}$. Silloin $r$ voidaan pitää kilojouleina kilogrammaa kohti.
 **Sijoitus:** $m = \dfrac{1360\,\text{kJ}}{2260\,\tfrac{\text{kJ}}{\text{kg}}} = 0{,}6018\,\text{kg}$
 **Vastaus:** $0{,}602\,\text{kg}$, kolme merkitsevää numeroa kuten energiassa $1{,}36\,\text{MJ}$.
@@ -181,7 +229,13 @@ Alku: rivit $0\,\text{s}$ ja $10\,\text{s}$ antavat nousun $1{,}14\,\tfrac{\text
 Loppu: rivillä $160\,\text{s}$ lämpötila on $1{,}9\,{}^\circ\text{C}$. Rivien $160\,\text{s}$ ja $180\,\text{s}$ nousu on $0{,}575\,\tfrac{\text{K}}{\text{s}}$. Nousu alkoi siis noin $3{,}3\,\text{s}$ aiemmin eli noin $157\,\text{s}$:ssa.
 
 Sulamisen kesto on $\Delta t = 157\,\text{s} - 18\,\text{s} = 139\,\text{s}$.
-**Kaava:** $Pt = sm$, josta $s = \dfrac{P\,\Delta t}{m}$
+**Kaava:** $$\begin{aligned} E &= P\,\Delta t \\
+Q &= sm \\
+E &= Q \\
+P\,\Delta t &= sm \\
+s &= \dfrac{P\,\Delta t}{m}
+\end{aligned}
+$$
 **Muunnokset:** Teho ja aika ovat jo perusyksiköissä, $1\,\text{W} \cdot 1\,\text{s} = 1\,\text{J}$. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:**
 
@@ -200,7 +254,13 @@ s &= \dfrac{600\,\text{W} \cdot 139\,\text{s}}{0{,}250\,\text{kg}} \\
 **Kysytty:** a) virhe oppilaan päättelyssä; b) pois kiehuvan veden massa $m$ kilogrammoina
 **Periaate:** Avoimessa kattilassa paine on vakio, se on ilmanpaine. Kiehuvan veden lämpötila pysyy kiehumispisteessä. Normaalipaineessa se on noin $100\,{}^\circ\text{C}$. Koko hellan antama energia $Pt$ kuluu höyrystämiseen, $Q = rm$, joten $Pt = rm$.
 **Mallivastaus a):** Oppilas olettaa, että lisätty energia nostaa kiehuvan veden lämpötilaa. Kun paine on vakio, lämpötila ei nouse olomuodon muutoksen aikana. Lisäenergia kuluu veden höyrystämiseen. Teho vaikuttaa siihen, kuinka nopeasti vesi höyrystyy. Teho ei vaikuta veden lämpötilaan. Kaksinkertainen teho höyrystää samassa ajassa kaksi kertaa niin monta kilogrammaa vettä. Vesi pysyy koko ajan $100\,{}^\circ\text{C}$:ssa.
-**Kaava:** $Pt = rm$, josta $m = \dfrac{Pt}{r}$
+**Kaava:** $$\begin{aligned} E &= Pt \\
+Q &= rm \\
+E &= Q \\
+Pt &= rm \\
+m &= \dfrac{Pt}{r}
+\end{aligned}
+$$
 **Muunnokset:** $P = 3{,}0\,\text{kW} = 3000\,\text{W}$, $t = 5{,}0\,\text{min} = 5{,}0 \cdot 60\,\text{s} = 300\,\text{s}$ ja $r = 2260\,\tfrac{\text{kJ}}{\text{kg}} = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Sijoitus:**
 
@@ -248,7 +308,14 @@ Jähmettyminen alkaa noin $3{,}2\,\text{min}$:ssa. Tasanteelle päästään nest
 Jähmettyminen päättyy noin $30{,}9\,\text{min}$:ssa. Kiinteän aineen rivit $32\,\text{min}$ ja $34\,\text{min}$ antavat jäähtymisnopeuden $$\begin{aligned} &(65{,}0\,\text{K} - 57{,}4\,\text{K}) : 2\,\text{min} \\ &= 3{,}8\,\tfrac{\text{K}}{\text{min}} \end{aligned}$$. Tasanteen lämpötilasta $69{,}2\,{}^\circ\text{C}$ rivin $32\,\text{min}$ lämpötilaan $65{,}0\,{}^\circ\text{C}$ kuluu siis aikaa $4{,}2\,\text{K} : 3{,}8\,\tfrac{\text{K}}{\text{min}} = 1{,}1\,\text{min}$.
 
 Jähmettymisen kesto on noin $$\begin{aligned} &30{,}9\,\text{min} - 3{,}2\,\text{min} \\ &= 27{,}7\,\text{min} \end{aligned}$$.
-**Kaava:** b) $P = \dfrac{cm\Delta T}{\Delta t}$; c) $Q = P\,\Delta t_\text{jähm}$ ja $Q = sm$, josta $s = \dfrac{Q}{m}$
+**Kaava:** $$\begin{aligned} Q_\text{neste} &= cm\Delta T \\
+P &= \dfrac{Q_\text{neste}}{\Delta t} \\
+&= \dfrac{cm\Delta T}{\Delta t} \\
+Q &= P\,\Delta t_\text{jähm} \\
+Q &= sm \\
+s &= \dfrac{Q}{m}
+\end{aligned}
+$$
 **Muunnokset:** Lämpötilan muutos on sama celsiusasteina ja kelvineinä. $\Delta t = 3\,\text{min} = 180\,\text{s}$ ja $\Delta t_\text{jähm} = 27{,}7\,\text{min} = 1662\,\text{s}$. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:**
 
@@ -276,7 +343,21 @@ s &= \dfrac{19\,910\,\text{J}}{0{,}100\,\text{kg}} \\
 **Annettu:** maito $M = 0{,}300\,\text{kg}$, $T_0 = 20{,}0\,{}^\circ\text{C}$, loppulämpötila $T = 65{,}0\,{}^\circ\text{C}$; höyry $100\,{}^\circ\text{C}$:ssa; ei lämpöhäviöitä; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Kysytty:** a) tiivistyvän höyryn massa $m_\text{h}$ grammoina; b) vertailu: tarvittava $100\,{}^\circ\text{C}$:n veden massa
 **Periaate:** Kun häviöitä ei ole, energia säilyy. Maidon vastaanottama energia on yhtä suuri kuin höyryn luovuttama. Höyry luovuttaa energiaa kahdessa vaiheessa. Ensin se tiivistyy $100\,{}^\circ\text{C}$:n vedeksi ($Q = rm_\text{h}$). Sitten tiivistynyt vesi jäähtyy $100\,{}^\circ\text{C}$:sta loppulämpötilaan ($Q = cm_\text{h}\Delta T$).
-**Kaava:** $$\begin{aligned} &c M (T - T_0) \\ &= r m_\text{h} + c\, m_\text{h}(100\,{}^\circ\text{C} - T) \end{aligned}$$, josta $m_\text{h} = \dfrac{c M (T - T_0)}{r + c\,(100\,{}^\circ\text{C} - T)}$. Vertailussa pelkkä $100\,{}^\circ\text{C}$:n vesi luovuttaa energiaa vain jäähtyessään: $$\begin{aligned} &c M (T - T_0) \\ &= c\, m_\text{v}(100\,{}^\circ\text{C} - T) \end{aligned}$$, josta $m_\text{v} = \dfrac{M (T - T_0)}{100\,{}^\circ\text{C} - T}$.
+**Kaava:** $$\begin{aligned} Q_\text{luovutettu} &= Q_\text{vastaanotettu} \\
+Q_\text{vastaanotettu} &= cM(T - T_0) \\
+Q_\text{luovutettu} &= rm_\text{h} + c\,m_\text{h}(100\,{}^\circ\text{C} - T) \\
+cM(T - T_0) &= rm_\text{h} + c\,m_\text{h}(100\,{}^\circ\text{C} - T) \\
+cM(T - T_0) &= m_\text{h}\,(r + c\,(100\,{}^\circ\text{C} - T)) \\
+m_\text{h} &= \dfrac{cM(T - T_0)}{r + c\,(100\,{}^\circ\text{C} - T)}
+\end{aligned}
+$$
+
+Vertailussa pelkkä $100\,{}^\circ\text{C}$:n vesi luovuttaa energiaa vain jäähtyessään:
+
+$$\begin{aligned} cM(T - T_0) &= c\,m_\text{v}(100\,{}^\circ\text{C} - T) \\
+m_\text{v} &= \dfrac{M(T - T_0)}{100\,{}^\circ\text{C} - T}
+\end{aligned}
+$$
 **Muunnokset:** Lämpötilaerot ovat samat celsiusasteina ja kelvineinä: $T - T_0 = 45{,}0\,\text{K}$ ja $100\,{}^\circ\text{C} - T = 35{,}0\,\text{K}$. $r = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$ ja lopuksi $1\,\text{kg} = 1000\,\text{g}$.
 **Sijoitus:** Osoittaja on $$\begin{aligned} &4190 \cdot 0{,}300 \cdot 45{,}0\,\text{J} \\ &= 56\,565\,\text{J} \end{aligned}$$ ja nimittäjä $$\begin{aligned} &2\,260\,000 + 4190 \cdot 35{,}0 \\ &= 2\,406\,650\,\tfrac{\text{J}}{\text{kg}} \end{aligned}$$, joten
 
@@ -308,7 +389,10 @@ $$m_\text{v} = \dfrac{0{,}300 \cdot 45{,}0}{35{,}0}\,\text{kg} = 0{,}386\,\text{
 **Kysytty:** jään ominaislämpökapasiteetti $c$
 **Periaate:** Kun jää lämpenee sulamatta, siirtyvä lämpömäärä on $Q = cm\Delta T$. Siksi $c = \dfrac{Q}{m\Delta T}$. Kuvaajan alkuosassa jää lämpenee. Vaakasuora osa on sulamista.
 **Kuvaajan lukeminen:** Alkuosa päättyy ruudukon risteykseen $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$. Siitä luetaan $Q = 20\,\text{kJ}$ (alkupiste on origossa, $0\,\text{kJ}$). Alkulämpötila $-16\,{}^\circ\text{C}$ on annettu tehtävässä. Siis $\Delta T = 0\,{}^\circ\text{C} - (-16\,{}^\circ\text{C}) = 16\,\text{K}$.
-**Kaava:** $c = \dfrac{Q}{m\Delta T}$
+**Kaava:** $$\begin{aligned} Q &= cm\Delta T \\
+c &= \dfrac{Q}{m\Delta T}
+\end{aligned}
+$$
 **Muunnokset:** $Q = 20\,\text{kJ} = 20\,000\,\text{J}$. Näin $c$ tulee yksikössä $\text{J}/(\text{kg}\cdot\text{K})$.
 **Sijoitus:** $c = \dfrac{20\,000\,\text{J}}{0{,}60\,\text{kg} \cdot 16\,\text{K}} = 2083\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}} \approx 2{,}1 \cdot 10^{3}\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Vastaus:** $2{,}1 \cdot 10^{3}\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$, kaksi merkitsevää numeroa kuten tiedossa $0{,}60\,\text{kg}$. Lämpömäärä luetaan ruudukon risteyksestä. Siksi hyväksytään $2020\ldots2150\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$.
