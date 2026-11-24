@@ -164,7 +164,19 @@ Commonwealth Fusion Systems was founded in 2018 as a spin-off from the Plasma Sc
 
 A good debate argument has three parts: a **claim** (what you say), **evidence** (a fact with its source and date) and **reasoning** (why the evidence supports the claim). The same evidence can support both sides: private investment can show that fusion is attractive, or that governments can leave it to companies. So reasoning, not the fact alone, wins the argument.
 
+```pysahdy
+Card E shows that private companies raised USD 4.48 billion in a year. Can this one fact support both sides of the motion?
+---
+Yes. For: it shows that fusion is attractive and still needs government support. Against: it suggests that governments can leave the funding to companies. The reasoning decides which way the fact points.
+```
+
 Check the *kind* of evidence. An **established result** is stronger than an **institutional plan**, and a plan is usually stronger than a **corporate claim**, although a plan's own record matters too: ITER's schedule has slipped several times. Never use scientific gain $Q$ as if it were electricity. A strong speaker also **rebuts**: answers the best argument of the other side instead of ignoring it, and **concedes** a fair point when it is true.
+
+```pysahdy
+On Card A the NIF released $3.15\,\text{MJ}$ from $2.05\,\text{MJ}$ of laser light. Can a speaker use this to claim that fusion already produces electricity?
+---
+No. The gain is $Q = 3.15\,\text{MJ} / 2.05\,\text{MJ} \approx 1.5$ only for the laser light on the target, and the lasers needed about $300\,\text{MJ}$ of electricity (Card G). Gain is not electricity.
+```
 
 ## How a structured debate works {Format}
 

@@ -12,6 +12,12 @@ In November 1985, at their first summit in Geneva, the Soviet leader Mikhail Gor
 
 Why share one machine? The next step after JET and JT-60 had to be a machine that makes **far more fusion power than it receives**. Such a machine is very large, it needs new technology from many industries, and it costs tens of billions of euros. No single country wanted to carry the whole cost and the whole risk. Sharing also brings together the knowledge of many fusion laboratories. And cooperation had a political value: rivals of the Cold War could work on a peaceful energy project. In return, every Member receives all the scientific results and the intellectual property that ITER produces.
 
+```pysahdy
+Give one reason why the next fusion machine after JET and JT-60 was built by many countries together.
+---
+The machine is so large and expensive, tens of billions of euros, that no single country wanted to carry the whole cost and risk. Sharing also combines the knowledge of many laboratories.
+```
+
 ## The plan that changed {Schedule}
 
 A big project has a **baseline**: the official plan for its schedule and cost. ITER's baseline of 2016 planned a short first plasma in 2025 and deuterium–tritium ($\text{D–T}$) operation in 2035. On 3 July 2024, ITER presented a new baseline. It skips the early test plasma and starts with a more complete machine:
@@ -77,6 +83,12 @@ ITER gave several reasons: the COVID-19 pandemic slowed factories and transport,
 ITER has seven **Members**: China, the European Union, India, Japan, Korea, Russia and the United States. As the host, the European Union pays $45.6\ \%$ of the construction costs; the six others pay $9.1\ \%$ each. Together they represent more than thirty countries, because the EU counts its member states.
 
 The Members pay mostly **in kind**: about nine-tenths of their contribution is delivered as finished components, systems or buildings, not as money. Each Member has a **Domestic Agency** that signs contracts with its own industry; Europe's agency is Fusion for Energy. On the site, the **ITER Organization** assembles the machine and will run it. It is led by a Director-General, since October 2022 Pietro Barabaschi, and the **ITER Council**, where every Member is represented, takes the major decisions. About 5,000 people work on the site and in its offices (2026).
+
+```pysahdy
+What does it mean that the Members pay mostly in kind?
+---
+Most of each Member's contribution is delivered as finished components, systems or buildings made by its own industry, not as money.
+```
 
 <figure class="unit-photo"><img src="units/fy14/pics/iter-central-solenoid.jpg" alt="Colour photograph of workers winding a thick superconducting cable into a coil in a factory." width="1600" height="1067" loading="lazy"><figcaption>Winding a module of ITER's central solenoid at General Atomics in the USA (2016). The central solenoid drives the electric current in the plasma. <span class="photo-credit">Photo: Oak Ridge National Laboratory, CC BY 2.0, via Wikimedia Commons</span></figcaption></figure>
 

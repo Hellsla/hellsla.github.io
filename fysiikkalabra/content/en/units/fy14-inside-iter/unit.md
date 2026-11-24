@@ -17,6 +17,12 @@ ITER is a **tokamak**. Its plasma, about $830\ \text{m}^3$ of deuterium and trit
 - **Heating.** Beams of fast neutral atoms and two kinds of radio waves heat the plasma with a planned $50\ \text{MW}$.
 - **Cryostat.** A vacuum chamber about $30\ \text{m}$ tall around everything insulates the cold magnets from the warm building.
 
+```pysahdy
+How does the central solenoid drive a current of up to $15\,\text{MA}$ in the plasma?
+---
+It works like the primary coil of a transformer: a changing current in the solenoid induces a current in the plasma, which acts as the secondary coil.
+```
+
 <figure class="unit-photo"><img src="units/fy14/pics/iter-magnet-coil.jpg" alt="Colour photograph of a very large ring-shaped magnet coil in a factory hall." width="1600" height="1067" loading="lazy"><figcaption>A poloidal field coil being built in the coil factory on the ITER site. These giant rings shape and position the plasma. <span class="photo-credit">Photo: Johannes Reimer, CC BY 4.0, via Wikimedia Commons</span></figcaption></figure>
 
 <figure class="unit-photo"><img src="units/fy14/pics/iter-vacuum-vessel-hellsten.jpg" alt="Colour photograph looking up in the ITER assembly hall: a huge curved steel vacuum-vessel sector hangs in a grey tooling frame next to pink-wrapped D-shaped magnet coils, with yellow cranes overhead and workers on scaffolding." width="1200" height="1600" loading="lazy"><figcaption>A sector of the ITER vacuum vessel in its assembly tooling, 26 March 2024, next to D-shaped toroidal field coils wrapped in pink protective film. The workers on the scaffolding show the scale: one sector is about as tall as a four-storey building. <span class="photo-credit">Photo: Lauri Hellsten</span></figcaption></figure>
@@ -73,6 +79,12 @@ Here $P_\text{fusion}$ is the fusion power produced in the plasma and $P_\text{h
 ## Fuel, blankets and radiation {Fuel}
 
 **Tritium fuel cycle.** Only a small fraction of the fuel, about one per cent according to ITER, fuses on its way through the plasma. Cryopumps pump the exhaust out of the vessel, and the tritium plant separates the hydrogen isotopes and sends deuterium and tritium back to the fuelling system. Tritium is radioactive (half-life $12.3$ years, a weak beta emitter), so detritiation systems take it out of air and water.
+
+```pysahdy
+Only about one per cent of the fuel fuses on its way through the plasma. What happens to the rest?
+---
+Cryopumps remove it from the vessel, the tritium plant separates the hydrogen isotopes, and deuterium and tritium are sent back to the fuelling system.
+```
 
 **Breeding.** Tritium is very rare; today it comes mainly from heavy-water fission reactors. A power plant must make its own from lithium: $^{6}_{3}\text{Li} + \text{n} \to {}^{4}_{2}\text{He} + {}^{3}_{1}\text{H} + 4.8\ \text{MeV}$. In ITER, a few **test blanket modules** will try out ways to do this.
 

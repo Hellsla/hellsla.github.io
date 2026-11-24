@@ -25,6 +25,12 @@ The video *We Went Inside the Largest Nuclear Fusion Reactor* was published by T
 
 Some rows need more words than a table cell. **Nations:** "35" was ITER's long-used count: the 28 EU states of that time, Switzerland and six other Members. The United Kingdom left after Brexit, so today the count is 34. **Temperature:** the plasma is at about $150$ million $^\circ\text{C}$ and the Sun's core at about $15$ million $^\circ\text{C}$, but the Sun's core is far denser. **Cost:** official estimates are about €18–22 billion; a US estimate of 65 billion dollars counts much more and is disputed by ITER, and the repairs of 2024 added about 5 billion euros. **Energy:** in December 2022 the NIF laser target released more energy than the laser delivered, but not more than the facility used. **Net energy:** ITER's goal is a plasma gain $Q = 10$; ITER produces no electricity.
 
+```pysahdy
+Why is it incomplete to say that ITER's plasma is ten times hotter than the Sun's core?
+---
+The comparison holds only for temperature: about $150$ million $^\circ\text{C}$ against about $15$ million $^\circ\text{C}$. The Sun's core is far denser, so temperature alone does not tell how much fusion happens.
+```
+
 The video also contains a **paid promotion** for a company that manages ITER's contracts. A sponsor does not make the facts wrong, but it can decide which topics get the most time.
 
 ## Key idea

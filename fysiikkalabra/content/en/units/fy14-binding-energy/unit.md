@@ -46,11 +46,23 @@ We calculate with the **atomic masses** of tables such as AME2020, which include
 ```
 Here $m_\text{n} = 1.008665\ \text{u}$ is the mass of a neutron.
 
+```pysahdy
+Why must energy be added to a nucleus to split it into free protons and neutrons?
+---
+The nucleus has less mass, and so less energy, than its separate nucleons. The binding energy $B = \Delta m \cdot c^2$ must be supplied to separate them.
+```
+
 ## Binding energy per nucleon {Curve}
 
 To compare nuclei, we divide the binding energy by the number of nucleons. The **binding energy per nucleon** $B/A$ tells how tightly each nucleon is held on average. A large $B/A$ means a tightly bound nucleus.
 
 The curve of $B/A$ rises steeply among the light nuclei: $1.11\ \text{MeV}$ for deuterium, $7.07\ \text{MeV}$ for helium-4. It reaches its peak near iron and nickel ($8.79\ \text{MeV}$ for $^{56}\text{Fe}$ and $^{62}\text{Ni}$) and then falls slowly to $7.59\ \text{MeV}$ for $^{235}\text{U}$. In light nuclei, every added nucleon finds more neighbours to bind to. In heavy nuclei, the electric repulsion of the many protons wins back part of the binding.
+
+```pysahdy
+Which nucleus has the larger binding energy per nucleon, $^{56}\text{Fe}$ or $^{235}\text{U}$, and which is more tightly bound?
+---
+$^{56}\text{Fe}$ has $8.79\,\text{MeV}$ per nucleon and $^{235}\text{U}$ only $7.59\,\text{MeV}$. A larger $B/A$ means a more tightly bound nucleus, so iron is more tightly bound.
+```
 
 ## Fission and fusion {Reactions}
 
