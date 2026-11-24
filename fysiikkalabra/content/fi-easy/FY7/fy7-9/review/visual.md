@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d01cc3934fd834f5
+CONTENT-HASH: 32f374343d0b2f9a
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] sim canvas — the removed note ("Värikaista on näkyvä valo. Katkoviiva näyttää huipun") leaves the rainbow band and dashed line without a visible explanation — make sure Käyttöohje says it; no change required.
 
 ## Checked
-- batch delta review (round 2): fy7-9 (fi-easy) built page, every "Pysähdy ja mieti" block rendered with the answer open and photographed at 360 px (examined for the long chains) and measured at 360 and 1280 px: label, question, Vastaus summary, KaTeX (no red source, no clipped formula, no overflow), decimal comma, units, answer chains laid out as rows; check_layout.py clean at 360/390/1280. The round 1 clip in fy7-1 block 3 is fixed by the shared component. Listed older captures not reopened (unchanged old content). Vanhan sisällön löydökset: none.
+- Delta (sim note removed, two teacher-approved pictures). Opened fy7-9-sim-390, fy7-9-sim-1280, fy7-9-top-390, fy7-9-intro-1280, fy7-9-fig-1-390 (hero), fy7-9-fig-3-390 (antenna).
+- Sim: canvas, labels in KaTeX, readout, slider and select intact at 390 and 1280 px; no clipping, no overflow, layout survived the removal. Hero and antenna pictures sit correctly and read at 390 px; antenna figure colours consistent (E brown, I purple, c dark).
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

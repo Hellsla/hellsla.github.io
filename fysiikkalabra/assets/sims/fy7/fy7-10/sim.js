@@ -37,7 +37,6 @@ new p5((p) => {
     for (const k of Object.keys(N)) { selA.option(__(k), k); selB.option(__(k), k); }
     selA.selected('ilma'); selB.selected('vesi');
     const l3 = p.createElement('label').parent(controls); lA = p.createSpan('').parent(l3); slA = p.createSlider(0, 89, 40, 1).parent(l3);
-    p.createP(__('selite')).parent('sim-root').class('note');
     p.textFont('Arial');
     if (window.defineSimAdapter) window.defineSimAdapter({
       params: { alpha: { input: slA.elt, unit: '°' }, m1: { input: selA.elt, unit: '' }, m2: { input: selB.elt, unit: '' } },
