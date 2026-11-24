@@ -1,0 +1,136 @@
+diff --git a/fysiikkalabra/content/en/FY5/fy5-10/figures.json b/fysiikkalabra/content/en/FY5/fy5-10/figures.json
+index e99fbc80..a63e9654 100644
+--- a/fysiikkalabra/content/en/FY5/fy5-10/figures.json
++++ b/fysiikkalabra/content/en/FY5/fy5-10/figures.json
+@@ -7,7 +7,7 @@
+  "pitkittäinen aalto": "longitudinal wave",
+  "kierroksen liike": "motion of a coil",
+  "tihentymä": "compression",
+- "harvennus": "rarefaction",
++ "harventuma": "rarefaction",
+  "Kaavakuva: narun pää alkaa heilua ylös ja alas, ja narusta on piirretty neljä kuvaa allekkain hetkillä neljäsosa jaksonajasta, puolet, kolme neljäsosaa ja koko jaksonaika. Katkoviiva näyttää, mihin asti aalto on kunakin hetkenä edennyt: neljäsosan aallonpituudesta, puolet, kolme neljäsosaa ja koko aallonpituuden. Alimman kuvan alla mittajana näyttää, että yhden jaksonajan aikana aalto on edennyt yhden aallonpituuden. Rintaman takana naru on levossa.": "Schematic diagram: the end of a rope starts to shake up and down, and the rope is drawn in four pictures one below the other at the moments a quarter of a period, a half, three quarters and a whole period. A dashed line shows how far the wave has travelled at each moment: a quarter of a wavelength, a half, three quarters and a whole wavelength. Below the lowest picture a measuring bar shows that during one period the wave has travelled one wavelength. Behind the front the rope is at rest.",
+  "Kaksi kuvaajaa samasta aallosta allekkain, amplitudi 4 cm. Ylempi on valokuva koko narusta yhdellä hetkellä: vaaka-akselilla paikka x metreinä nollasta 2,5 metriin ja pystyakselilla poikkeama y senttimetreinä. Kahden peräkkäisen harjan väli, 1,0 m, on merkitty aallonpituudeksi lambda ja harjan korkeus amplitudiksi A. Alempi on yhden narun kohdan poikkeama ajan funktiona: vaaka-akselilla aika t sekunteina nollasta 1,25 sekuntiin. Kahden peräkkäisen huipun väli, 0,50 s, on merkitty jaksonajaksi T. Kuvaajat näyttävät samanmuotoisilta, mutta niiden vaaka-akselien suureet ovat eri.": "Two graphs of the same wave one below the other, amplitude 4 cm. The upper one is a snapshot of the whole rope at one moment: the horizontal axis shows the position x in metres from zero to 2.5 metres and the vertical axis the displacement y in centimetres. The distance between two successive crests, 1.0 m, is marked as the wavelength lambda and the height of the crest as the amplitude A. The lower one is the displacement of one point of the rope as a function of time: the horizontal axis shows the time t in seconds from zero to 1.25 seconds. The distance between two successive peaks, 0.50 s, is marked as the period T. The graphs look the same in shape, but the quantities on their horizontal axes are different.",
+  "valokuva: koko naru yhdellä hetkellä": "snapshot: the whole rope at one moment",
+diff --git a/fysiikkalabra/content/en/FY5/fy5-14/figures.json b/fysiikkalabra/content/en/FY5/fy5-14/figures.json
+index bdc4e1e9..bbee36b4 100644
+--- a/fysiikkalabra/content/en/FY5/fy5-14/figures.json
++++ b/fysiikkalabra/content/en/FY5/fy5-14/figures.json
+@@ -2,7 +2,7 @@
+  "Kuvitus: kaupungin katu kesäpäivänä. Valkoinen ambulanssi, jonka katolla palaa sininen hälytysvalo, ajaa kadulla vasemmalta oikealle. Sireenistä leviää ääni kaarina, jotka ovat auton edessä tiheässä ja sen takana harvassa. Oikealla jalkakäytävällä suojatien vieressä seisoo jalankulkija, jonka ohi ambulanssi on juuri ajamassa. Taustalla on taloja ja koivu.": "Illustration: a city street on a summer day. A white ambulance with a blue emergency light on its roof drives along the street from left to right. The sound of the siren spreads out as arcs, close together in front of the ambulance and far apart behind it. On the right-hand pavement next to a pedestrian crossing stands a pedestrian, whom the ambulance is just about to pass. In the background are houses and a birch tree.",
+  "Kaavakuva, ei mittakaavassa. Ylhäällä vasemmalla kaiutin, jonka edessä on ilmaa putkessa. Ilman hiukkaset on piirretty sinisinä pisteinä, ja ne ovat paikoin tiheässä ja paikoin harvassa: tiheät kohdat ovat tihentymiä ja harvat harventumia. Hiukkaset värähtelevät edestakaisin aallon etenemissuunnassa, mitä esittää pieni kaksipäinen nuoli, ja aalto etenee oikealle, mitä esittää sininen nuoli. Alhaalla on saman hetken paine paikan funktiona: käyrä vaihtelee normaalin ilmanpaineen p0 molemmin puolin, ja sen huiput ovat tihentymien kohdalla. Kahden vierekkäisen tihentymän etäisyys on aallonpituus lambda.": "Schematic figure, not to scale. At the top left is a loudspeaker with air in a tube in front of it. The air particles are drawn as blue dots, in places close together and in places far apart: the dense places are compressions and the sparse ones rarefactions. The particles vibrate back and forth along the direction in which the wave travels, shown by a small double-headed arrow, and the wave travels to the right, shown by a blue arrow. Below is the pressure at the same moment as a function of position: the curve varies on both sides of the normal air pressure p0, and its peaks are at the compressions. The distance between two neighbouring compressions is the wavelength lambda.",
+  "tihentymä": "compression",
+- "harvennus": "rarefaction",
++ "harventuma": "rarefaction",
+  "eteneminen": "propagation",
+  "Kaavakuva: taajuusasteikko logaritmisena yhdestä hertsistä kymmeneen miljoonaan hertsiin, jokainen kymmenkertaistus yhtä pitkänä välinä. Alle 20 hertsin taajuudet ovat infraääntä, 20 hertsistä 20 kilohertsiin on ihmisen kuuloalue ja yli 20 kilohertsin taajuudet ovat ultraääntä. Asteikon yläpuolelle on merkitty esimerkkejä: maanjäristys noin yhden hertsin kohdalla, norsujen matalat äänet noin 15 hertsin kohdalla, puhe muutamasta sadasta hertsistä muutamaan kilohertsiin, lepakon kaikuluotaus noin 50 kilohertsin kohdalla ja ultraäänikuvaus noin kolmen megahertsin kohdalla.": "Schematic figure: a logarithmic frequency scale from one hertz to ten million hertz, each tenfold increase the same length. Frequencies below 20 hertz are infrasound, from 20 hertz to 20 kilohertz is the human range of hearing and frequencies above 20 kilohertz are ultrasound. Above the scale are marked examples: an earthquake at about one hertz, the low sounds of elephants at about 15 hertz, speech from a few hundred hertz to a few kilohertz, the echolocation of a bat at about 50 kilohertz and ultrasound imaging at about three megahertz.",
+  "infraääni": "infrasound",
+diff --git a/fysiikkalabra/content/fi-easy/FY5/fy5-10/figures.json b/fysiikkalabra/content/fi-easy/FY5/fy5-10/figures.json
+index f2501d28..81ec1a41 100644
+--- a/fysiikkalabra/content/fi-easy/FY5/fy5-10/figures.json
++++ b/fysiikkalabra/content/fi-easy/FY5/fy5-10/figures.json
+@@ -7,7 +7,7 @@
+  "pitkittäinen aalto": "pitkittäinen aalto",
+  "kierroksen liike": "kierroksen liike",
+  "tihentymä": "tihentymä",
+- "harvennus": "harvennus",
++ "harventuma": "harventuma",
+  "Kaavakuva: narun pää alkaa heilua ylös ja alas, ja narusta on piirretty neljä kuvaa allekkain hetkillä neljäsosa jaksonajasta, puolet, kolme neljäsosaa ja koko jaksonaika. Katkoviiva näyttää, mihin asti aalto on kunakin hetkenä edennyt: neljäsosan aallonpituudesta, puolet, kolme neljäsosaa ja koko aallonpituuden. Alimman kuvan alla mittajana näyttää, että yhden jaksonajan aikana aalto on edennyt yhden aallonpituuden. Rintaman takana naru on levossa.": "Kaavakuva: narun pää alkaa heilua ylös ja alas. Narusta on piirretty neljä kuvaa allekkain. Hetket ovat neljäsosa jaksonajasta, puolet, kolme neljäsosaa ja koko jaksonaika. Katkoviiva näyttää, mihin asti aalto on kunakin hetkenä edennyt. Matkat ovat neljäsosa aallonpituudesta, puolet, kolme neljäsosaa ja koko aallonpituus. Alimman kuvan alla mittajana näyttää, että yhden jaksonajan aikana aalto on edennyt yhden aallonpituuden. Rintaman takana naru on levossa.",
+  "Kaksi kuvaajaa samasta aallosta allekkain, amplitudi 4 cm. Ylempi on valokuva koko narusta yhdellä hetkellä: vaaka-akselilla paikka x metreinä nollasta 2,5 metriin ja pystyakselilla poikkeama y senttimetreinä. Kahden peräkkäisen harjan väli, 1,0 m, on merkitty aallonpituudeksi lambda ja harjan korkeus amplitudiksi A. Alempi on yhden narun kohdan poikkeama ajan funktiona: vaaka-akselilla aika t sekunteina nollasta 1,25 sekuntiin. Kahden peräkkäisen huipun väli, 0,50 s, on merkitty jaksonajaksi T. Kuvaajat näyttävät samanmuotoisilta, mutta niiden vaaka-akselien suureet ovat eri.": "Kaksi kuvaajaa samasta aallosta allekkain, amplitudi 4 cm. Ylempi on valokuva koko narusta yhdellä hetkellä. Vaaka-akselilla on paikka x metreinä nollasta 2,5 metriin ja pystyakselilla poikkeama y senttimetreinä. Kahden peräkkäisen harjan väli, 1,0 m, on merkitty aallonpituudeksi lambda. Harjan korkeus on merkitty amplitudiksi A. Alempi kuvaaja näyttää yhden narun kohdan poikkeaman ajan funktiona. Vaaka-akselilla on aika t sekunteina nollasta 1,25 sekuntiin. Kahden peräkkäisen huipun väli, 0,50 s, on merkitty jaksonajaksi T. Kuvaajat näyttävät samanmuotoisilta, mutta niiden vaaka-akseleilla on eri suureet.",
+  "valokuva: koko naru yhdellä hetkellä": "valokuva: koko naru yhdellä hetkellä",
+diff --git a/fysiikkalabra/content/fi-easy/FY5/fy5-10/lesson.md b/fysiikkalabra/content/fi-easy/FY5/fy5-10/lesson.md
+index 91c1107d..fb1bd890 100644
+--- a/fysiikkalabra/content/fi-easy/FY5/fy5-10/lesson.md
++++ b/fysiikkalabra/content/fi-easy/FY5/fy5-10/lesson.md
+@@ -32,8 +32,8 @@ Aallot jaetaan kahteen lajiin. Jako riippuu siitä, mihin suuntaan väliaineen h
+   <foreignObject x="165" y="247.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kierroksen liike}$</div></foreignObject>
+   <foreignObject x="100" y="339.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tihentymä}$</div></foreignObject>
+   <foreignObject x="300" y="339.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tihentymä}$</div></foreignObject>
+-  <foreignObject x="200" y="369.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{harvennus}$</div></foreignObject>
+-  <foreignObject x="400" y="369.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{harvennus}$</div></foreignObject>
++  <foreignObject x="193.5" y="369.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{harventuma}$</div></foreignObject>
++  <foreignObject x="393.5" y="369.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{harventuma}$</div></foreignObject>
+ </svg>
+ 
+ ```pysahdy
+diff --git a/fysiikkalabra/content/fi-easy/FY5/fy5-14/figures.json b/fysiikkalabra/content/fi-easy/FY5/fy5-14/figures.json
+index a8d7ce66..157fa08b 100644
+--- a/fysiikkalabra/content/fi-easy/FY5/fy5-14/figures.json
++++ b/fysiikkalabra/content/fi-easy/FY5/fy5-14/figures.json
+@@ -2,7 +2,7 @@
+  "Kuvitus: kaupungin katu kesäpäivänä. Valkoinen ambulanssi, jonka katolla palaa sininen hälytysvalo, ajaa kadulla vasemmalta oikealle. Sireenistä leviää ääni kaarina, jotka ovat auton edessä tiheässä ja sen takana harvassa. Oikealla jalkakäytävällä suojatien vieressä seisoo jalankulkija, jonka ohi ambulanssi on juuri ajamassa. Taustalla on taloja ja koivu.": "Kuvitus: kaupungin katu kesäpäivänä. Valkoinen ambulanssi, jonka katolla palaa sininen hälytysvalo, ajaa kadulla vasemmalta oikealle. Sireenin ääni leviää kaarina. Auton edessä kaaret ovat lähellä toisiaan ja auton takana kaukana toisistaan. Oikealla jalkakäytävällä suojatien vieressä seisoo jalankulkija, jonka ohi ambulanssi on juuri ajamassa. Taustalla on taloja ja koivu.",
+  "Kaavakuva, ei mittakaavassa. Ylhäällä vasemmalla kaiutin, jonka edessä on ilmaa putkessa. Ilman hiukkaset on piirretty sinisinä pisteinä, ja ne ovat paikoin tiheässä ja paikoin harvassa: tiheät kohdat ovat tihentymiä ja harvat harventumia. Hiukkaset värähtelevät edestakaisin aallon etenemissuunnassa, mitä esittää pieni kaksipäinen nuoli, ja aalto etenee oikealle, mitä esittää sininen nuoli. Alhaalla on saman hetken paine paikan funktiona: käyrä vaihtelee normaalin ilmanpaineen p0 molemmin puolin, ja sen huiput ovat tihentymien kohdalla. Kahden vierekkäisen tihentymän etäisyys on aallonpituus lambda.": "Kaavakuva, ei mittakaavassa. Ylhäällä vasemmalla kaiutin, jonka edessä on ilmaa putkessa. Ilman hiukkaset on piirretty sinisinä pisteinä, ja ne ovat paikoin tiheässä ja paikoin harvassa: tiheät kohdat ovat tihentymiä ja harvat harventumia. Hiukkaset värähtelevät edestakaisin aallon etenemissuunnassa, mitä esittää pieni kaksipäinen nuoli, ja aalto etenee oikealle, mitä esittää sininen nuoli. Alhaalla on saman hetken paine paikan funktiona: käyrä vaihtelee normaalin ilmanpaineen p0 molemmin puolin, ja sen huiput ovat tihentymien kohdalla. Kahden vierekkäisen tihentymän etäisyys on aallonpituus lambda.",
+  "tihentymä": "tihentymä",
+- "harvennus": "harvennus",
++ "harventuma": "harventuma",
+  "eteneminen": "eteneminen",
+  "Kaavakuva: taajuusasteikko logaritmisena yhdestä hertsistä kymmeneen miljoonaan hertsiin, jokainen kymmenkertaistus yhtä pitkänä välinä. Alle 20 hertsin taajuudet ovat infraääntä, 20 hertsistä 20 kilohertsiin on ihmisen kuuloalue ja yli 20 kilohertsin taajuudet ovat ultraääntä. Asteikon yläpuolelle on merkitty esimerkkejä: maanjäristys noin yhden hertsin kohdalla, norsujen matalat äänet noin 15 hertsin kohdalla, puhe muutamasta sadasta hertsistä muutamaan kilohertsiin, lepakon kaikuluotaus noin 50 kilohertsin kohdalla ja ultraäänikuvaus noin kolmen megahertsin kohdalla.": "Kaavakuva: taajuusasteikko logaritmisena yhdestä hertsistä kymmeneen miljoonaan hertsiin, jokainen kymmenkertaistus yhtä pitkänä välinä. Alle 20 hertsin taajuudet ovat infraääntä, 20 hertsistä 20 kilohertsiin on ihmisen kuuloalue ja yli 20 kilohertsin taajuudet ovat ultraääntä. Asteikon yläpuolelle on merkitty esimerkkejä: maanjäristys noin yhden hertsin kohdalla, norsujen matalat äänet noin 15 hertsin kohdalla, puhe muutamasta sadasta hertsistä muutamaan kilohertsiin, lepakon kaikuluotaus noin 50 kilohertsin kohdalla ja ultraäänikuvaus noin kolmen megahertsin kohdalla.",
+  "infraääni": "infraääni",
+diff --git a/fysiikkalabra/content/fi-easy/FY5/fy5-14/lesson.md b/fysiikkalabra/content/fi-easy/FY5/fy5-14/lesson.md
+index a160f78c..62bfcd35 100644
+--- a/fysiikkalabra/content/fi-easy/FY5/fy5-14/lesson.md
++++ b/fysiikkalabra/content/fi-easy/FY5/fy5-14/lesson.md
+@@ -220,7 +220,7 @@ Kaiuttimen kalvo tai kitaran kieli värähtelee. Se työntää ilman hiukkasia v
+   <foreignObject x="73" y="33.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tihentymä}$</div></foreignObject>
+   <foreignObject x="261" y="33.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tihentymä}$</div></foreignObject>
+   <foreignObject x="449" y="33.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tihentymä}$</div></foreignObject>
+-  <foreignObject x="167" y="145.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{harvennus}$</div></foreignObject>
++  <foreignObject x="160.5" y="145.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{harventuma}$</div></foreignObject>
+   <line x1="327" y1="160" x2="308" y2="160" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+   <path d="M299,160 L309,155.5 L309,164.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+   <line x1="305" y1="160" x2="324" y2="160" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+diff --git a/fysiikkalabra/content/fi/FY5/fy5-10/lesson.md b/fysiikkalabra/content/fi/FY5/fy5-10/lesson.md
+index b4246012..8fea57db 100644
+--- a/fysiikkalabra/content/fi/FY5/fy5-10/lesson.md
++++ b/fysiikkalabra/content/fi/FY5/fy5-10/lesson.md
+@@ -32,8 +32,8 @@ Aallot jaetaan kahteen lajiin sen mukaan, mihin suuntaan väliaineen hiukkaset v
+   <foreignObject x="165" y="247.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kierroksen liike}$</div></foreignObject>
+   <foreignObject x="100" y="339.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tihentymä}$</div></foreignObject>
+   <foreignObject x="300" y="339.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tihentymä}$</div></foreignObject>
+-  <foreignObject x="200" y="369.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{harvennus}$</div></foreignObject>
+-  <foreignObject x="400" y="369.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{harvennus}$</div></foreignObject>
++  <foreignObject x="193.5" y="369.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{harventuma}$</div></foreignObject>
++  <foreignObject x="393.5" y="369.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{harventuma}$</div></foreignObject>
+ </svg>
+ 
+ ```pysahdy
+diff --git a/fysiikkalabra/content/fi/FY5/fy5-14/lesson.md b/fysiikkalabra/content/fi/FY5/fy5-14/lesson.md
+index c3db4fcc..ba440bfe 100644
+--- a/fysiikkalabra/content/fi/FY5/fy5-14/lesson.md
++++ b/fysiikkalabra/content/fi/FY5/fy5-14/lesson.md
+@@ -220,7 +220,7 @@ Kaiuttimen kalvo tai kitaran kieli värähtelee ja työntää ilman hiukkasia vu
+   <foreignObject x="73" y="33.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tihentymä}$</div></foreignObject>
+   <foreignObject x="261" y="33.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tihentymä}$</div></foreignObject>
+   <foreignObject x="449" y="33.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tihentymä}$</div></foreignObject>
+-  <foreignObject x="167" y="145.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{harvennus}$</div></foreignObject>
++  <foreignObject x="160.5" y="145.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{harventuma}$</div></foreignObject>
+   <line x1="327" y1="160" x2="308" y2="160" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+   <path d="M299,160 L309,155.5 L309,164.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+   <line x1="305" y1="160" x2="324" y2="160" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+diff --git a/fysiikkalabra/lessons/FY5/fy5-10/figures.py b/fysiikkalabra/lessons/FY5/fy5-10/figures.py
+index 81b5fff1..44494e04 100644
+--- a/fysiikkalabra/lessons/FY5/fy5-10/figures.py
++++ b/fysiikkalabra/lessons/FY5/fy5-10/figures.py
+@@ -84,8 +84,8 @@ def types():
+     f.motion([(0, 0, 0, 0, 0), (1, 0, 0, 0, 0)], P)                    # the labels name places of the still: gone while the crowding travels
+     f.tex(160, 354, r"\text{tihentymä}", "middle")
+     f.tex(360, 354, r"\text{tihentymä}", "middle")
+-    f.tex(260, 384, r"\text{harvennus}", "middle")
+-    f.tex(460, 384, r"\text{harvennus}", "middle")
++    f.tex(260, 384, r"\text{harventuma}", "middle")
++    f.tex(460, 384, r"\text{harventuma}", "middle")
+     f.end()
+     return f.svg()
+ 
+diff --git a/fysiikkalabra/lessons/FY5/fy5-14/figures.py b/fysiikkalabra/lessons/FY5/fy5-14/figures.py
+index eecbb7dd..3f9f80f0 100644
+--- a/fysiikkalabra/lessons/FY5/fy5-14/figures.py
++++ b/fysiikkalabra/lessons/FY5/fy5-14/figures.py
+@@ -64,7 +64,7 @@ def longitudinal():
+         xm = xc + m * lam
+         if xm < x1 - 20: f.tex(xm, yc - hh - 22, r"\text{tihentymä}", "middle")
+     xr = xc + lam / 2
+-    f.tex(xr, yc + hh + 22, r"\text{harvennus}", "middle")
++    f.tex(xr, yc + hh + 22, r"\text{harventuma}", "middle")
+     # particle oscillation and propagation
+     f.arrow(xr + lam / 2 + 6, yc + hh + 22, xr + lam / 2 - 22, yc + hh + 22, INK, 2, 10)
+     f.arrow(xr + lam / 2 - 16, yc + hh + 22, xr + lam / 2 + 12, yc + hh + 22, INK, 2, 10)

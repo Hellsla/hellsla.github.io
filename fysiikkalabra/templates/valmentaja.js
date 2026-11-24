@@ -14,9 +14,9 @@
      first    1 the first attempt at the task (the only one that counts as evidence, plan 5.1), 0 a later one
      hints    how many hints of the task had been opened on this page when the attempt was made
      mistake  the number of the option picked (a wrong choice) or of the common mistake matched (a number), else null
-     mode     "p" practice ("k", exam mode, comes with its own pull request)
+     mode     "p" practice · "k" exam mode (koetila.js, PR 6: the attempts and self-assessments made when an exam is checked at its end)
    No name, no device id, no text the student wrote, nothing sent anywhere: this file has no network call (scripts/test_valmentaja_log.py
-   checks it). Other keys of this log (cells, steps, plan, exams) belong to later pull requests and are kept as they are.
+   checks it). Other keys of this log (cells, steps, plan) belong to later pull requests and are kept as they are; "exams" (PR 6) holds one summary row per ended exam.
    Keeping it works without storage (a private window, a full or blocked store): the page is as before. The key name matches the
    module's work file (padstore.js work(): "…:fy9-…"), so Tallenna työ tiedostoon and Avaa tallennettu työ carry it. */
 (() => {
@@ -47,7 +47,9 @@
     }
     canStore = false; return false;
   };
-  const taskKey = (id) => (LONG.test(id) ? id : unit + '#' + id);
+  const ko = () => window.flKoetila || null;   // the exam mode (koetila.js, PR 6): a minikoe page holds cards of many units, and an attempt checked at the end of an exam is logged with the mode k
+  const taskKey = (id) => { const k = ko() && ko().key(id); return k || (LONG.test(id) ? id : unit + '#' + id); };
+  const modeOf = (id, kind) => (ko() ? ko().mode(id, kind) : 'p');
   const now = () => new Date().toISOString().slice(0, 16) + 'Z';
   // hints opened on this page, per task (a toggle does not bubble, so it is heard in the capture phase)
   const hints = new Map();
@@ -72,12 +74,12 @@
     setTimeout(() => {   // a moment later: inquiry.js has then said which common mistake the number was (detail.mistake)
       const k = taskKey(det.id), d = read();
       if (det.kind === 'done') {   // a written solution, done: no result, only that it was made (once)
-        if (d && !d.log.some((r) => r[1] === k && r[2] === 's' && r[3] === null)) log([now(), k, 's', null, firstOf(d, k, 's') ? 1 : 0, opened(det.id), null, 'p']);
+        if (d && !d.log.some((r) => r[1] === k && r[2] === 's' && r[3] === null)) log([now(), k, 's', null, firstOf(d, k, 's') ? 1 : 0, opened(det.id), null, modeOf(det.id)]);
         return;
       }
       if (det.state !== 'ok' && det.state !== 'close' && det.state !== 'no') return;
       const miss = det.kind === 'choice' ? (det.state === 'no' && Number.isInteger(det.choice) ? det.choice : null) : (Number.isInteger(det.mistake) ? det.mistake : null);
-      log([now(), k, 'a', det.state, firstOf(d, k, 'a') ? 1 : 0, opened(det.id), miss, 'p']);
+      log([now(), k, 'a', det.state, firstOf(d, k, 'a') ? 1 : 0, opened(det.id), miss, modeOf(det.id)]);
     }, 0);
   });
   document.addEventListener('fl:rubric', (e) => {
@@ -85,7 +87,7 @@
     const det = e.detail || {}; if (!det.id || !det.complete || !(det.max > 0)) return;
     const k = taskKey(det.id), d = read();
     const result = Math.round(100 * Math.max(0, Math.min(1, det.got / det.max))) / 100;
-    log([now(), k, 's', result, firstOf(d, k, 's') ? 1 : 0, opened(det.id), null, 'p'], true);   // changing the points revises the same assessment
+    log([now(), k, 's', result, firstOf(d, k, 's') ? 1 : 0, opened(det.id), null, modeOf(det.id, 'rubric')], true);   // changing the points revises the same assessment
   });
   // "Mikä vaihe oli vaikein?" (PR 5, plan 6.3): once a number task's solution or a long task's model answer is open, an optional row of chips from a fixed
   // list; a chip pressed again is taken back. Kept in the same key as steps { "<task key>": ["sijoitus", ...] }, on this device only, never
@@ -284,7 +286,7 @@
     return true;
   };
   // the settings (PR 4b): read leniently, written only by the student's own choice
-  const SET_KEY = 'ruukkilabra:fy9-tavoite', GOALS = ['LE', 'MC', 'BA'], CORE = ['concept', 'math', 'graph'];
+  const EXAM_KEY = 'ruukkilabra:fy9-koetila', SET_KEY = 'ruukkilabra:fy9-tavoite', GOALS = ['LE', 'MC', 'BA'], CORE = ['concept', 'math', 'graph'];
   const readSet = () => {
     try {
       const o = JSON.parse(localStorage.getItem(SET_KEY));
@@ -329,12 +331,23 @@
     const known = new Set(index.tasks.map((t) => t.id)), s = d && d.steps && typeof d.steps === 'object' ? d.steps : {};
     return V.STEPS.map((id) => [id, Object.keys(s).filter((k) => known.has(k) && Array.isArray(s[k]) && s[k].includes(id))]).filter((x) => x[1].length);
   };
-  window.flCoach = { cells, recommend, compact, evidence, today, COMPS, readSet, writeSet, within, SET_KEY, GOALS, repeated, hardSteps };
+  // the minikokeet and the practice exam in the order the goal suggests (PR 6, P8, P13): B-A the 30 minute sets first, L-E the 60 minute sets
+  // and the practice exam earlier; no goal and M-C the plain order. A pure function of the index and the goal; it hides and locks nothing.
+  const MINI_ORDER = { BA: ['osa1', 'aihe', 'osa2', 'aineisto', 'exam'], MC: ['osa1', 'osa2', 'aihe', 'aineisto', 'exam'], LE: ['osa2', 'aineisto', 'exam', 'osa1', 'aihe'] };
+  const miniOrder = (index, goal) => {
+    const order = MINI_ORDER[goal] || MINI_ORDER.MC;
+    const items = (index.minikokeet || []).map((m) => ({ id: m.id, kind: m.kind, minutes: m.minutes, points: m.points, href: 'fy9-minikoe-' + m.id + '.html' }));
+    const ex = (index.koetila || {})['fy9-harjoituskoe'];
+    if (ex && index.units.some((u) => u.id === 'fy9-harjoituskoe')) items.push({ id: 'fy9-harjoituskoe', kind: 'exam', minutes: ex.minutes, points: ex.points, href: 'fy9-harjoituskoe.html' });
+    return items.map((x, i) => [x, i]).sort((a, b) => order.indexOf(a[0].kind) - order.indexOf(b[0].kind) || a[1] - b[1]).map((x) => x[0]);
+  };
+  window.flCoach = { cells, recommend, compact, evidence, today, COMPS, readSet, writeSet, within, SET_KEY, GOALS, repeated, hardSteps, miniOrder };
 
   // ---- (d) the views ----
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
   const fmt = (s, v) => String(s || '').replace(/\{(\w+)\}/g, (m, k) => (v && k in v ? v[k] : m));
   const json = (id) => { const e = document.getElementById(id); try { return e ? JSON.parse(e.textContent) : null; } catch (x) { return null; } };
+  const json2 = (t) => { try { return JSON.parse(t); } catch (x) { return null; } };
   const index = json('fy9-index');
   const page = document.getElementById('fy9-coach'), row = document.getElementById('fy9-coach-row');
   if (!index || !Array.isArray(index.tasks) || !(page || row)) return;
@@ -402,12 +415,23 @@
       areas.hidden = false;
     }
   };
-  render();
+  const miniBox = document.getElementById('coach-mini');
+  const showMini = () => {   // the minikokeet and the practice exam, in the order the goal suggests; closed until opened
+    if (!miniBox) return;
+    const names = json2(miniBox.dataset.mini) || {}, ol = el('ol', 'coach-minilist');
+    for (const m of miniOrder(index, st.goal)) {
+      const li = el('li', 'coach-mini-item'), a = el('a', 'coach-task', m.kind === 'exam' ? T.mini_exam : names[m.id] || m.id); a.href = m.href;
+      li.append(a, el('span', 'coach-min', fmt(T.mini_item, { min: m.minutes, pts: m.points })));
+      ol.append(li);
+    }
+    miniBox.querySelector('.coach-mini-body').replaceChildren(ol);
+  };
+  render(); showMini();
 
   // the two settings (PR 4b): saved the moment they change, on this device only
   const set = document.getElementById('coach-set');
   if (set) {
-    const save = () => { const ok = writeSet(st); if (!ok) note.hidden = false; render(); showClear(); };
+    const save = () => { const ok = writeSet(st); if (!ok) note.hidden = false; render(); showMini(); showClear(); };
     const goals = el('fieldset', 'coach-opts'), gl = el('legend', '', T.goal_lead);
     goals.append(gl);
     for (const g of [''].concat(GOALS)) {
@@ -468,14 +492,14 @@
     let store = true;
     try { localStorage.getItem(V.KEY); } catch (e) { store = false; }   // anything under our keys, a damaged log too, can be cleared; no storage at all is said
     if (!store) keep.append(el('p', 'notice', T.nostore));
-    const has = () => { try { return localStorage.getItem(V.KEY) !== null || localStorage.getItem(SET_KEY) !== null; } catch (e) { return false; } };
+    const has = () => { try { return localStorage.getItem(V.KEY) !== null || localStorage.getItem(SET_KEY) !== null || localStorage.getItem(EXAM_KEY) !== null; } catch (e) { return false; } };
     let b = null;
     showClear = () => {
       if (!b && has()) {
         b = el('button', 'coach-clear', T.clear); b.type = 'button';
         b.addEventListener('click', () => {
           if (!window.confirm(T.clear_confirm)) return;
-          try { localStorage.removeItem(V.KEY); localStorage.removeItem(SET_KEY); } catch (e) { /* no storage */ }
+          try { localStorage.removeItem(V.KEY); localStorage.removeItem(SET_KEY); localStorage.removeItem(EXAM_KEY); } catch (e) { /* no storage */ }
           location.reload();
         });
         keep.append(b);

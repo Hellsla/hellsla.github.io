@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: eb5080fff1a7bd80
+CONTENT-HASH: a33f09c0181e8d79
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] solutions.md, 10-20 Kaava, last row — nested fraction `\dfrac{\Delta t}{\dfrac{1}{v_i} - \dfrac{1}{v_t}}` is small but legible; no change needed.
+- none
 
 ## Checked
-- Delta, solutions.md Kaava rows only. Opened (lesson review/shots): open-exercises-1280-1 (10-2, 2-row Kaava), L3-1280-2 and -3 (10-20, 5-row Kaava with nested fraction, Sijoitus below), L3-1280-4 (10-21, 4-row Kaava).
-- Aligned blocks render in KaTeX in the formula box, equals signs in one column, no clipping or overflow at 1280 px (check_layout 360/390 per packet); basic law → rearrangement → result order reads well; Muunnokset, Sijoitus, Vastaus unchanged; units upright, decimal commas intact.
-- The other changed tasks are the same short form; not each opened.
+- Delta: exercises.json answer, option and feedback and solutions.md (L1-06/07 area) changed harvennuksia -> harventumia, no numbers or symbols. Read in source; no exercise-specific captures exist in this packet, so I opened the lesson capture open-exercises-1280-6 (fi, solutions open) to confirm the exercise card layout survives (units in LaTeX, solution blocks inside card).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

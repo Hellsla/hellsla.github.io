@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 6867eb1e1e7bd0d1
+CONTENT-HASH: 2577e76ae63ebf14
 
 ## Blocking
 
 ## Polish
-- content/fi/FY5/fy5-14/lesson.md:464 — "mikä sen äänenkorkeus?" asks for a value, but the answer gives only what pitch depends on. Either ask "Mistä äänenkorkeus riippuu?" (as fi-easy does) or add to the answer "kuulemme äänen perustaajuutta $250\,\text{Hz}$ vastaavan korkuisena".
+- content/fi/FY5/fy5-14/lesson.md:223 — the "pitkittainen" figure's label still reads $\text{harvennus}$, but the paragraph above it, its alt text and the summary now say "harventuma". The physics is the same, so this is not an error, but students see two words for one concept. Fix: relabel `\text{harventuma}` in lessons/FY5/fy5-14/figures.py:67 (the figure needs the teacher's approval again).
+- content/fi/FY5/fy5-14/lesson.md:464 — (unchanged from the last round) "mikä sen äänenkorkeus?" asks for a value, but the answer gives only what pitch depends on.
 
 ## Checked
-- Scope: only the changed pysahdy block (round 2, work queue 20); the beat and Doppler blocks are unchanged since my PASS.
-- Physics recomputed: 500 = 2·250 and 750 = 3·250, so the peaks form the harmonic series f_n = n·250 Hz. The fundamental is 250 Hz, both as the lowest peak and as the peak spacing (gcd = 250 Hz).
-- "Muut huiput ovat sen monikertoja eli yläsäveliä" agrees with the definitions just above: f_1 is the lowest, the overtones are above it, and pitch comes from the fundamental. It also matches the glossary (äänenkorkeus, harmoninen sarja).
-- "Perustaajuus on alin huippu" is said for this data, where the lowest peak is also the spacing. That is consistent with the next section's "yleensä myös alimman piikin taajuus" (C, no wrong picture).
-- Answerable from the paragraph just read. The student met "spektri" and its peaks in the Tutki activity "Lue FFT-spektri", which comes earlier on the page.
-- Nothing given away: the only spectrum task (Tutki, 200 Hz series) comes before Teoria and uses different numbers. No 250 Hz spectrum task appears in the exit ticket or the exercises.
-- The previous Polish (pitch set equal to the fundamental) is resolved by the new wording.
-- Deterministic layout checks at 360, 390, 768 and 1280 px are ok (packet).
+- Scope: the diff only, at lesson.md:12 and :531, plus the alt text of the "pitkittainen" figure (lesson.md:14, figures.py:44). No numbers, symbols or formulas changed.
+- Definition: in a sound wave a harventuma is the low-pressure region between compressions, p < p0. The text says so correctly and matches the glossary term "ääni" ("tihentymät ja harventumat").
+- Inflection: harventuma / harventumat / harventumia is used in the same way in the text, the alt text and the summary.
+- The theory paragraph, the summary and the alt text now agree with each other. Only the drawn label differs (Polish above).
+- Cross-chapter: fy5-10 (*Aaltojen synty ja eteneminen*) was also moved to "harventuma" in the same change, so the chapters stay consistent.
+- Hash run at the start and at the end: 2577e76ae63ebf14, unchanged.
 
 ## Vanhan sisällön löydökset
 - none

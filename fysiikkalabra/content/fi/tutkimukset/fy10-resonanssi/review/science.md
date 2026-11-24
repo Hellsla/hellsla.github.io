@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 043d91dec723e1fb
+CONTENT-HASH: 50ebf006bdcb9f9e
 
 ## Blocking
 None.
@@ -7,5 +7,5 @@ None.
 ## Polish
 None.
 
-## Checked (delta 2026-11-23)
-Uncommitted diff (`git diff HEAD`): one line in investigation.md, `\ \text{K}` -> `\,\text{K}` in $T = \left(\theta/{}^\circ\text{C} + 273{,}15\right)\,\text{K}$. Presentation only: the relation is still correct (numeric value of the Celsius temperature plus 273,15, in kelvins) and consistent with $v = 331{,}3\,\text{m/s}\cdot\sqrt{T/(273{,}15\,\text{K})}$ (line 220) and the result format $v = (\ldots \pm \ldots)\,\text{m/s}$ (line 188), which already use `\,`. No numbers, formulas, conditions or claims changed. investigation.json and teacher.md unchanged since the previous science PASS. Committed changes since that PASS (a5e6a89587, 36f68f6e8b) only replace the inline SVG drawings with teacher-approved images (approve-figures) and move the $L$ label in the setup figure; no text or physics changed. Earlier physics review (resonance lengths, end correction via differences of successive resonances, speed of sound and its temperature dependence) stands.
+## Checked (delta 2026-11-24)
+Uncommitted diff (`git diff HEAD`): one word in investigation.md line 42, "harvennusten" -> "harventumien" (teacher's terminology decision 2026-11-19). "Tihentymä" and "harventuma" are the standard Finnish pair for the compressions and rarefactions of a longitudinal (sound) wave. The new word makes the pair match. The sentence's physics is unchanged and correct: air particles oscillate along the direction of propagation, and the pressure is above ambient in compressions and below it in rarefactions. The investigation's other text files use neither term, so nothing contradicts it. No numbers, formulas, conditions or other claims changed. investigation.json and teacher.md are unchanged since the previous science PASS (content hash 043d91dec723e1fb). The earlier physics review stands: resonance lengths, the end correction removed by taking differences of successive resonances, and the speed of sound with its temperature dependence.
