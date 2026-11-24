@@ -1,9 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 6a47f8641d672edf
-SCOPE: delta (old-content fixes, git diff origin/main)
-Checked: fy9-tasavirta (fi): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
+CONTENT-HASH: 5aa0d3f2a0381b2a
+SCOPE: delta (rubric points rescaled, git diff origin/main)
 
-1. Blocking: none.
-2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
-3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
-4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.
+Blocking: none.
+
+Checked: fy9-tasavirta (fi) preview built; s7 and s8 task cards at 360 and 1280 px with all details/solution open (fi captures opened: s8 at 360, s7 at 1280; en and fi-easy by DOM only). Task badges read 15 pistettä; part badges 3+3+5+4 (s7) and 4+4+3+4 (s8) = 15; rubric criteria sum to part points in the JSON; no page or card overflow, no KaTeX errors at either width. Unit total 125 p, matching teacher.md. Rubric rows themselves were not opened as images.

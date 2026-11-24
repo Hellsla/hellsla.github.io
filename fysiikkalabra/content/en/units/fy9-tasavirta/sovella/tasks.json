@@ -840,7 +840,7 @@
         {
           "id": "a",
           "kind": "calc",
-          "points": 4,
+          "points": 3,
           "text": "Determine the resistance of the lamp when the voltage across it is $2.0\\,\\text{V}$.",
           "answer": {
             "value": 9.5,
@@ -862,11 +862,6 @@
               "key": "calculation",
               "points": 1,
               "detail": "$R = \\dfrac{2.0\\,\\text{V}}{0.21\\,\\text{A}} = 9.5\\,\\Omega$"
-            },
-            {
-              "key": "units_precision",
-              "points": 1,
-              "detail": "$R \\approx 9.5\\,\\Omega$ to two significant figures, like the values read from the graph."
             }
           ]
         },
@@ -983,7 +978,7 @@
         {
           "id": "a",
           "kind": "calc",
-          "points": 5,
+          "points": 4,
           "text": "How large is the current through the battery?",
           "answer": {
             "value": 0.3,
@@ -1007,11 +1002,6 @@
               "detail": "$R_\\text{p} = 20\\,\\Omega$, $R = 40\\,\\Omega$ and $I = \\dfrac{12\\,\\text{V}}{40\\,\\Omega} = 0.30\\,\\text{A}$"
             },
             {
-              "key": "units_precision",
-              "points": 1,
-              "detail": "$I = 0.30\\,\\text{A}$ to two significant figures."
-            },
-            {
               "key": "reasonableness",
               "points": 1,
               "detail": "The current is smaller than with the $20\\,\\Omega$ resistor alone ($0.60\\,\\text{A}$) and larger than if all the resistors were in series ($\\approx 0.11\\,\\text{A}$)."
@@ -1021,7 +1011,7 @@
         {
           "id": "b",
           "kind": "calc",
-          "points": 5,
+          "points": 4,
           "text": "How large is the current in the $60\\,\\Omega$ resistor, and how large in the $30\\,\\Omega$ resistor?",
           "answer": [
             {
@@ -1049,11 +1039,6 @@
               "detail": "$$\n\\begin{aligned}\nU_\\text{p} &= 12\\,\\text{V} \\\\\n&\\quad - 0.30\\,\\text{A} \\cdot 20\\,\\Omega \\\\\n&= 6.0\\,\\text{V}\n\\end{aligned}\n$$, $I_{60} = \\dfrac{6.0\\,\\text{V}}{60\\,\\Omega} = 0.10\\,\\text{A}$ and $I_{30} = \\dfrac{6.0\\,\\text{V}}{30\\,\\Omega} = 0.20\\,\\text{A}$"
             },
             {
-              "key": "units_precision",
-              "points": 1,
-              "detail": "$I_{60} = 0.10\\,\\text{A}$ and $I_{30} = 0.20\\,\\text{A}$ with units."
-            },
-            {
               "key": "reasonableness",
               "points": 1,
               "detail": "Together the currents make the current of the battery: $0.10\\,\\text{A} + 0.20\\,\\text{A} = 0.30\\,\\text{A}$, and the smaller resistance takes the larger current."
@@ -1063,7 +1048,7 @@
         {
           "id": "c",
           "kind": "calc",
-          "points": 4,
+          "points": 3,
           "text": "Calculate the power of the $20\\,\\Omega$ resistor and the power of the whole connection.",
           "answer": [
             {
@@ -1089,11 +1074,6 @@
               "key": "calculation",
               "points": 1,
               "detail": "$P_{20} = 20\\,\\Omega \\cdot (0.30\\,\\text{A})^2 = 1.8\\,\\text{W}$ and $P = 12\\,\\text{V} \\cdot 0.30\\,\\text{A} = 3.6\\,\\text{W}$"
-            },
-            {
-              "key": "units_precision",
-              "points": 1,
-              "detail": "$P_{20} = 1.8\\,\\text{W}$ and $P = 3.6\\,\\text{W}$ with units."
             },
             {
               "key": "reasonableness",
