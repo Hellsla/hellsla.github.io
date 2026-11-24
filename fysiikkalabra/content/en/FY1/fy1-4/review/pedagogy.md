@@ -1,24 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 257f7f3f2622b45a
+CONTENT-HASH: a48aef79c9536188
 
 ## Blocking
 (none)
 
 ## Polish
-- lesson.md "Linear model" (Key idea) — uses "slope" and "constant term" before the Formula section defines them, and the opening hook never says the lesson will show where a line's equation comes from — add one clause ("the line y = kx + b, explained in the next section") or move the sentence on slope/constant term after the formula.
-- lesson.md Worked example, stages 1-2 — titled "Fitting a line" but the line arrives already drawn; the student never sees how it was placed (points on both sides, roughly equal) — add one sentence in Principle saying how the line was chosen by eye, using the same criteria as the sim.
-- inquiry.json johtopaatos — `after` includes koe-3, but the model answer and criteria never mention data set 3 (a pattern of deviations means the line does not fit), which is a stated learning goal — add a criterion and one sentence to the model answer.
-- inquiry.json koe-1, ennuste-1, simulaatio — the RMS quantity is called "mean deviation"; the name suggests a plain average and clashes with "deviations above and below cancel" in the text — call it "typical deviation d" or say once that squaring prevents cancelling.
-- inquiry.json koe-3 question, last option ("all the deviations are about the same length") — a weak distractor that no student would pick; replace with a real misconception, e.g. "it fits, because the best-fit line gives a smaller d than any other line".
+- inquiry.json (ennuste-1, ennuste-2) — each prediction has one option that cannot be tested in the simulation (the broken line) or is given away by the prompt ("combined mass of the cylinder and the liquid"). The sim refutes only the slope and constant-term options. Make the broken-line distractor testable (compare the five successive slopes in a small table) and drop "combined" from the prompt, or word it so the student has to decide whether the cylinder counts.
+- inquiry.json (johtopaatos) — the conclusion is `after` koe-3, but no criterion and nothing in the model answer mentions experiment 3 or the pattern of deviations. That is the third learning goal ("recognise when a linear model does not fit"). Add a criterion: "I said how I can tell that a straight line does not fit (the deviations form a pattern)".
+- inquiry.json (simulaatio, pohdi) — the opening question is answered with the quantity d (smallest d), which a student cannot compute at a desk. The theory then says "roughly equal numbers of points on each side". Have the reflect prompt connect the two (small d means short red segments, on both sides of the line), so the move to fitting by eye is made explicit.
+- Slot goal "presenting results graphically" — the lesson text states the axis, unit and scale rules, but no activity asks the student to choose a scale or label axes, and none of the four checks tests it. A short check ("which of these axes is wrong?", with a figure) would cover the goal. The exercises were not reviewed here, so they may already cover it.
+- Experiments 1 and 2 leave the "Show the calculated best-fit line" box available (lab-1280 capture). Ticking it hands over k, b and d before the student has searched. Tell the student in the intro to leave it unticked until the three measurements are recorded. Also, the English page shows decimal commas in the sim ("0,30 m/s", "0,758 m"); English should use points.
 
 ## Checked
-- Opening question is answered by the conclusion and the reflection; slot goals (graph, linear model, fit, slope) covered, nothing beyond FY1 scope.
-- Predictions 1 and 2 can be refuted by experiments 1 and 2; each wrong option's feedback repairs its misconception and cites numbers; I recomputed d for k = 0.3, 0.5, 0.6 and for b = 0 vs about 61 g: all match.
-- Experiment 3 (coffee) shows the curved case; the pattern of deviations (up at the ends, down in the middle) is correct for a convex cooling curve.
-- Worked example arithmetic (k 8.0, b 20, t 2.5 min) and seven stages, one step each, are correct; reasonableness uses the table.
-- Cyclist graph reading checked against SVG coordinates: P1 (1.0 h; 20 km), P2 (3.0 h; 50 km), b = 5 km, 35 km at 2 h; plant and hiker answers (20 days, 7.0 h) and their wrong-value feedback (25, 16, 8.3, 5.5) are correct.
-- Find-the-error item is diagnostic and its correct option names the fix; exit ticket tests the core idea (equation from two points; meaning of b and proportionality).
-- Checks: concept, representation, calculation, explain with criteria; optional items keep the core path to one lesson of work.
-- Captures (390 px): figures sit beside their paragraphs, example stages readable, sim controls and readout understandable, nothing clipped in contact-1.
-- Options carry no letter or position references; no speaker is right most of the time.
-- Exercises not judged (reviewed apart); glossary still lacks "linear model" and "fitting a straight line" (developer task).
+- Hook, retrieval, two predictions, three experiments and the conclusion, in that order. Feedback is gated on commitment, and every wrong option's feedback names the misconception and gives numbers.
+- Recomputed the example numbers: d = 0.76, 0.44 and 0.12 m for slopes 0.30, 0.60 and 0.50 m/s; successive slopes 0.2, 0.8, 0.5, 0.3, 0.5; the mistake values in all numeric tasks (16.7, 0.067, 25, 16, 8.3, 5.5). All consistent.
+- koe-1 and koe-2 can refute their predictions: d is measurable at the wrong value and at the best value. Variables locked correctly.
+- Worked example has 7 stages, one step each, data consistent with its figure (T = 8t + 20, deviations of about 1 degree at most). It does not show how the line was chosen, but the simulation does.
+- The cyclist graph's aria-label gives the grid coordinates, i.e. the data to be read, not the slope. Acceptable.
+- Check, task and exit-ticket distractors are misconception-based. The exit ticket tests the equation from two points and the meaning of b.
+- Workload is heavy (2 predictions, 3 experiments, error item, graph task, 20+ exercises, 3-4 checks), but the reflect, transfer and explain items are optional. About one lesson.
+- Phone: the 390 px sim capture is legible and nothing is clipped. At 1280 px the sim sits beside the experiments. The hero figure shows the fitted line, which gives the Why question's idea away only mildly.
+- Prerequisites (random error, quantity and unit) match fy1-3 and the earlier chapter.
