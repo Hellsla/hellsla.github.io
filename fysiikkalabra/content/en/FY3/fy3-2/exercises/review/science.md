@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d664f2efd876fc3d
+CONTENT-HASH: 9aedda62aa253b0d
 
 ## Blocking
-(none)
 
 ## Polish
-- solutions.md:95–100 (L3-01) uses $F_\text{avg}$, while solutions.md:233–238 (L2-09) uses $F_\text{av}$ for the same quantity. Use one symbol.
-- solutions.md:122 (L3-03) — "This matches everyday experience of solar electricity" is not a check. The 648 kJ per hour comparison before it already is one.
+- solutions.md (fy3-2-L3-01, L2-09, Formula): the blocks stop at $F_\text{avg} = W/s$ and do not substitute the work expression, so the house rule "simplify symbolically to the end" is not fully met. A last row would fix it: $F_\text{avg} = \dfrac{\tfrac12 F s_1 + F s_2 + \tfrac12 F s_3}{s}$, or $\dfrac{F_1 s_1 + F_2 s_2}{s}$ for L2-09. The physics is right.
+- solutions.md (fy3-2-L3-04, Formula): $W = \tfrac12 F s$ holds for a force that grows linearly from zero, which part a) establishes. Writing it as $F_\text{max}$ and $s_\text{max}$ would make clear which values are meant.
 
 ## Checked
-- The packet's lesson brief is empty (an empty markdown fence). I judged the physics from the exercises themselves; notation follows the Finnish set (W = Fs, G = mg, P = W/t = Fv).
-- Recomputed all 18 numeric answers in one script. Every answer, unit and tolerance is identical to the fi-easy set, and all agree with answers.py: L1-09 18,36 kJ; L2-05 55,3 J; L2-06 229,8 W; L3-03 45,4 min; L3-04 25,5 cm (least-squares slope 1,00 N/cm); L3-05 3,598 kW (slope 0,815 m/s).
-- The changed L1-05 check is right: 3.0 m/s ≈ 11 km/h, a skier's pace. The work in one second, 60 J, gives 60 W.
-- L1-06, L1-08 and L2-08 (option and reason): exactly one correct option each. The distractor feedback is physically right, and the true-but-incomplete reasons in L2-08 are explained.
-- L2-07 error analysis: mass used as force, so the factor g is missing. 588,6 J becomes 590 J.
-- L3-02: the energy assumption is stated, and the result is called an increase in internal energy, not heat.
-- L3-05 b) and L2-06: lift force equals weight at constant velocity, the lesson's FY3-level statement, with no Newton's laws.
-- Scope: no E_k, no cos α. Units and significant figures are right, and so are the rounding reasons.
-- Hash the same at the start and the end.
+- The diff changes only the Formula steps and splits paragraphs. I compared the non-Formula text with whitespace removed: it is identical before and after.
+- Every Formula block starts from its basic law ($W = Fs$, $P = W/t$, $F = G = mg$ for a slow lift, the trapezium area) and solves for the asked quantity in symbols. Checked: L1-02, L1-04, L1-05 ($P = Fvt/t = Fv$), L1-07, L2-01, L2-02, L2-03, L2-04, L2-05, L2-06, L2-07, L3-01, L3-02, L3-03, L3-04, L3-05, L1-09 ($W = \rho V g h$) and L2-09.
+- L3-02: writing $\Delta U = n m g h$ assumes all the work becomes internal energy, as the principle states. L3-05: $P = Fv$ is used with a constant speed and $F = G$.
+- Recomputed in one script: L3-01 $30\,\text{N}$, L3-03 $45.4\,\text{min}$, L2-06 $229.8\,\text{W}$. Each matches.
+- The FY3 scope holds: no $E_\text{k}$, no $\cos\alpha$ and no Newton's laws.
+- The hash was the same at the start and the end.
