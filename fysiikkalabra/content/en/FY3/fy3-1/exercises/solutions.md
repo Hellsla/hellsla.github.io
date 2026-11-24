@@ -233,7 +233,7 @@ $$
 
 The extensions of the same spring with the same mass are therefore in the same ratio as the $g$ values. The measurements on Earth give the calibration of the spring, and with it the $g$ of the unknown place.
 **Reading the table:** The points $(m, x)$ lie on a line through the origin, so the ratio $x/m$ is almost the same at every point ($1.1/0.10 = 11$ and $6.1/0.60 \approx 10.2\,\text{cm/kg}$). To even out the scatter of the measurements, the ratio is calculated from all the points: the sum of the extensions is $$\begin{aligned} &1.1 + 2.1 + 3.2 + 4.1 + 5.2 + 6.1 \\ &= 21.8\,\text{cm} \end{aligned}$$ and the sum of the masses $$\begin{aligned} &0.10 + 0.20 + 0.30 \\ &+ 0.40 + 0.50 + 0.60 \\ &= 2.10\,\text{kg} \end{aligned}$$.
-**Formula:** $$\begin{aligned} \dfrac{x}{m} &= c\, g_\text{Earth} \quad (c\text{: extension per newton}) \\
+**Formula:** $$\begin{aligned} \dfrac{x}{m} &= c\, g_\text{Earth} \quad (c = x/F) \\
 \dfrac{x_\text{X}}{m_\text{X}} &= c\, g_\text{X} \\
 g_\text{X} &= g_\text{Earth} \dfrac{x_\text{X}/m_\text{X}}{(x/m)_\text{Earth}}
 \end{aligned}
