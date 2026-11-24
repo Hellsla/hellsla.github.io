@@ -79,7 +79,7 @@ $$
 **Principle:** The process has two stages, one after the other. First the water warms up to $100\,{}^\circ\text{C}$ ($c\,m\,\Delta T$), then it vaporises at this temperature, which does not change ($r\,m$). There is no change in temperature during vaporisation, so the energies of the stages are calculated with different formulas and added together.
 **Formula:** $$\begin{aligned} Q_\text{heating} &= c\,m\,\Delta T \\
 Q_\text{vaporisation} &= r\,m \\
-Q &= Q_\text{heating} + Q_\text{vaporisation} \\
+Q &= Q_\text{heating} \\ &\quad + Q_\text{vaporisation} \\
 &= c\,m\,\Delta T + r\,m \\
 \Delta T &= T_\text{final} - T_\text{initial}
 \end{aligned}
@@ -175,14 +175,19 @@ $$T = \dfrac{84\,400\,\text{J}}{10\,475\,\tfrac{\text{J}}{\text{K}}} = 8.057\,{}
 
 By the assumption of the problem the inside is at $0\,{}^\circ\text{C}$, so the power through the wall stays constant.
 **Formula:** $$\begin{aligned} Q_\text{absorbed} &= Q_\text{released} \\
-Q_\text{absorbed} &= c_\text{ice}\,m\,\Delta T_\text{ice} + s\,m \\
+Q_\text{absorbed} &= c_\text{ice}\,m\,\Delta T_\text{ice} \\
+&\quad + s\,m \\
 &= m\,(c_\text{ice}\,\Delta T_\text{ice} + s) \\
 P &= U A\,\Delta T \\
 E &= P\,t \\
-Q_\text{released} &= E + c\,m_\text{j}\,\Delta T_\text{j} \\
-&= U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j} \\
-m\,(c_\text{ice}\,\Delta T_\text{ice} + s) &= U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j} \\
-m &= \dfrac{U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j}}{c_\text{ice}\,\Delta T_\text{ice} + s}
+Q_\text{released} &= E \\
+&\quad + c\,m_\text{j}\,\Delta T_\text{j} \\
+&= U A\,\Delta T\,t \\
+&\quad + c\,m_\text{j}\,\Delta T_\text{j} \\
+m\,(c_\text{ice}\,\Delta T_\text{ice} + s) \\
+&= U A\,\Delta T\,t \\
+&\quad + c\,m_\text{j}\,\Delta T_\text{j} \\
+m &= \dfrac{\begin{array}{c} U A\,\Delta T\,t \\ + c\,m_\text{j}\,\Delta T_\text{j} \end{array}}{c_\text{ice}\,\Delta T_\text{ice} + s}
 \end{aligned}
 $$
 **Conversions:** $t = 6.0\,\text{h} = 21\,600\,\text{s}$ and $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. The change in the temperature of the ice is $\Delta T_\text{ice} = 0\,{}^\circ\text{C} - (-10\,{}^\circ\text{C}) = 10\,\text{K}$, the same in kelvins.

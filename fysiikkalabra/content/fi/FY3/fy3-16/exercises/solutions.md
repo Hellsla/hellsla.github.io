@@ -76,7 +76,7 @@ $$
 **Periaate:** Prosessissa on kaksi peräkkäistä vaihetta. Ensin vesi lämpenee $100\,{}^\circ\text{C}$:seen ($c\,m\,\Delta T$), sitten se höyrystyy tässä lämpötilassa, joka ei muutu ($r\,m$). Höyrystyessä ei ole lämpötilan muutosta, joten vaiheiden energiat lasketaan eri kaavoilla ja lasketaan yhteen.
 **Kaava:** $$\begin{aligned} Q_\text{lämpeneminen} &= c\,m\,\Delta T \\
 Q_\text{höyrystyminen} &= r\,m \\
-Q &= Q_\text{lämpeneminen} + Q_\text{höyrystyminen} \\
+Q &= Q_\text{lämpeneminen} \\ &\quad + Q_\text{höyrystyminen} \\
 &= c\,m\,\Delta T + r\,m \\
 \Delta T &= T_\text{loppu} - T_\text{alku}
 \end{aligned}
@@ -161,14 +161,19 @@ $$T = \dfrac{84\,400\,\text{J}}{10\,475\,\tfrac{\text{J}}{\text{K}}} = 8{,}057\,
 **Kysytty:** jääpussin pienin massa $m$ kilogrammoina
 **Periaate:** Energia säilyy: jään täytyy 6,0 tunnin aikana ottaa vastaan seinän läpi tuleva energia sekä juomien luovuttama energia. Jää lämpenee ensin $-10\,{}^\circ\text{C}$:sta $0\,{}^\circ\text{C}$:seen ($c_\text{jää}\,\Delta T_\text{jää}$) ja sulaa sitten ($s$). Sisällä on tehtävän oletuksen mukaan $0\,{}^\circ\text{C}$, joten seinän teho pysyy vakiona.
 **Kaava:** $$\begin{aligned} Q_\text{vastaanotettu} &= Q_\text{luovutettu} \\
-Q_\text{vastaanotettu} &= c_\text{jää}\,m\,\Delta T_\text{jää} + s\,m \\
+Q_\text{vastaanotettu} &= c_\text{jää}\,m\,\Delta T_\text{jää} \\
+&\quad + s\,m \\
 &= m\,(c_\text{jää}\,\Delta T_\text{jää} + s) \\
 P &= U A\,\Delta T \\
 E &= P\,t \\
-Q_\text{luovutettu} &= E + c\,m_\text{j}\,\Delta T_\text{j} \\
-&= U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j} \\
-m\,(c_\text{jää}\,\Delta T_\text{jää} + s) &= U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j} \\
-m &= \dfrac{U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j}}{c_\text{jää}\,\Delta T_\text{jää} + s}
+Q_\text{luovutettu} &= E \\
+&\quad + c\,m_\text{j}\,\Delta T_\text{j} \\
+&= U A\,\Delta T\,t \\
+&\quad + c\,m_\text{j}\,\Delta T_\text{j} \\
+m\,(c_\text{jää}\,\Delta T_\text{jää} + s) \\
+&= U A\,\Delta T\,t \\
+&\quad + c\,m_\text{j}\,\Delta T_\text{j} \\
+m &= \dfrac{\begin{array}{c} U A\,\Delta T\,t \\ + c\,m_\text{j}\,\Delta T_\text{j} \end{array}}{c_\text{jää}\,\Delta T_\text{jää} + s}
 \end{aligned}
 $$
 **Muunnokset:** $t = 6{,}0\,\text{h} = 21\,600\,\text{s}$ ja $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. Jään lämpötilan muutos on $\Delta T_\text{jää} = 0\,{}^\circ\text{C} - (-10\,{}^\circ\text{C}) = 10\,\text{K}$, sama kelvineinä.

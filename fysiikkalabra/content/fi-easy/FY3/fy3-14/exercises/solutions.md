@@ -104,10 +104,11 @@ $$\begin{aligned} t &= \dfrac{8400\,\text{J} + 133\,600\,\text{J}}{800\,\tfrac{\
 **Kysytty:** jään ominaissulamislämpö $s$ yksikössä $\tfrac{\text{kJ}}{\text{kg}}$
 **Periaate:** Kalorimetri on eristetty. Sen oma lämpökapasiteetti jätetään huomiotta. Energia säilyy: veden luovuttama lämpö on yhtä suuri kuin jään sulamiseen ja sulamisveden lämpenemiseen kuluva lämpö. Jää on jo $0\,{}^\circ\text{C}$:ssa, joten se ei lämpene ennen sulamista.
 **Kaava:** $$\begin{aligned} Q_\text{luovutettu} &= Q_\text{vastaanotettu} \\
-c_\text{v} m_\text{v} (T_\text{v} - T) &= s m_\text{j} + c_\text{v} m_\text{j} T \\
-s m_\text{j} &= c_\text{v} m_\text{v} (T_\text{v} - T) - c_\text{v} m_\text{j} T \\
-s &= \dfrac{c_\text{v} m_\text{v} (T_\text{v} - T) - c_\text{v} m_\text{j} T}{m_\text{j}} \\
-&= \dfrac{c_\text{v} \left[ m_\text{v} (T_\text{v} - T) - m_\text{j} T \right]}{m_\text{j}}
+c_\text{v} m_\text{v} (T_\text{v} - T) &= s m_\text{j} \\
+&\quad + c_\text{v} m_\text{j} T \\
+s m_\text{j} &= c_\text{v} m_\text{v} (T_\text{v} - T) \\
+&\quad - c_\text{v} m_\text{j} T \\
+s &= \dfrac{\begin{array}{c} c_\text{v} m_\text{v} (T_\text{v} \\ - T) - c_\text{v} m_\text{j} T \end{array}}{m_\text{j}}
 \end{aligned}$$
 **Muunnokset:** Lämpötilaerot ovat samat kelvineinä: $T_\text{v} - T = 30{,}0 - 8{,}1 = 21{,}9\,\text{K}$ ja $T - 0 = 8{,}1\,\text{K}$. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** Hakasulkeiden lauseke on $$\begin{aligned} &0{,}200\,\text{kg} \cdot 21{,}9\,\text{K} - 0{,}0500\,\text{kg} \cdot 8{,}1\,\text{K} \\ &= 4{,}380\,\text{kg}\cdot\text{K} - 0{,}405\,\text{kg}\cdot\text{K} \\ &= 3{,}975\,\text{kg}\cdot\text{K} \end{aligned}$$. Siis
@@ -149,9 +150,13 @@ m_\text{s} &= \dfrac{Q_\text{v} - c_\text{j} m_\text{j} \Delta T_\text{j}}{s}
 **Kysytty:** lopputilan lämpötila $T$ celsiusasteina
 **Periaate:** Energia säilyy eristetyssä astiassa. Vesi voi luovuttaa enintään sen lämmön, joka vapautuu, kun se jäähtyy $0\,{}^\circ\text{C}$:seen ja jäätyy. Jään lämmittämiseen $0\,{}^\circ\text{C}$:seen tarvitaan lämpöä. Jos veden lämpö on tätä vähemmän, kaikki vesi jäätyy. Silloin koko sisältö on jäätä, jonka lämpötila on alle $0\,{}^\circ\text{C}$.
 **Kaava:** $$\begin{aligned} Q_\text{luovutettu} &= Q_\text{vastaanotettu} \\
-c_\text{v} m_\text{v} \Delta T_\text{v} + s m_\text{v} - c_\text{j} m_\text{v} T &= c_\text{j} m_\text{j} T - c_\text{j} m_\text{j} T_\text{j} \\
-c_\text{v} m_\text{v} \Delta T_\text{v} + s m_\text{v} + c_\text{j} m_\text{j} T_\text{j} &= c_\text{j} (m_\text{j} + m_\text{v}) T \\
-T &= \dfrac{c_\text{v} m_\text{v} \Delta T_\text{v} + s m_\text{v} + c_\text{j} m_\text{j} T_\text{j}}{c_\text{j} (m_\text{j} + m_\text{v})}
+c_\text{v} m_\text{v} \Delta T_\text{v} \\
+&\quad + s m_\text{v} - c_\text{j} m_\text{v} T \\
+&= c_\text{j} m_\text{j} T - c_\text{j} m_\text{j} T_\text{j} \\
+c_\text{v} m_\text{v} \Delta T_\text{v} \\
+&\quad + s m_\text{v} + c_\text{j} m_\text{j} T_\text{j} \\
+&= c_\text{j} (m_\text{j} + m_\text{v}) T \\
+T &= \dfrac{\begin{array}{c} c_\text{v} m_\text{v} \Delta T_\text{v} \\ + s m_\text{v} + c_\text{j} m_\text{j} T_\text{j} \end{array}}{c_\text{j} (m_\text{j} + m_\text{v})}
 \end{aligned}$$. Vesi luovuttaa jäähtyessään $0\,{}^\circ\text{C}$:seen lämpömäärän $c_\text{v} m_\text{v} \Delta T_\text{v}$, jäätyessään $s m_\text{v}$ ja syntyneen jään jäähtyessä lämpötilaan $T$ lämpömäärän $c_\text{j} m_\text{v} (0 - T)$. Alkuperäinen jää ottaa lämmetessään lämpötilasta $T_\text{j}$ lämpötilaan $T$ lämpömäärän $c_\text{j} m_\text{j} (T - T_\text{j})$
 **Muunnokset:** Lämpötilaerot ovat samat kelvineinä: veden lasku on $10\,\text{K}$ ja jään nousu on $0 - (-40) = 40\,\text{K}$. Sulamislämpö on $334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Sijoitus:** Vesi luovuttaa enintään $$\begin{aligned} &4190 \cdot 0{,}100 \cdot 10{,}0\,\text{J} \\ &+ 334\,000 \cdot 0{,}100\,\text{J} \\ &= 37\,590\,\text{J} \end{aligned}$$. Jään lämmittäminen $0\,{}^\circ\text{C}$:seen vaatii kuitenkin $$\begin{aligned} &2100 \cdot 0{,}500 \cdot 40{,}0\,\text{J} \\ &= 42\,000\,\text{J} \end{aligned}$$. Siksi kaikki vesi jäätyy.
@@ -252,9 +257,11 @@ Astiassa on jäätä ja vettä yhtä aikaa, joten lämpötila on $0\,{}^\circ\te
 **Kysytty:** a) $s$ kummastakin mittauksesta jään lämpötilaa $0\,{}^\circ\text{C}$ olettaen, b) eron syy, c) mittauksen 2 korjattu $s$ yksikössä $\tfrac{\text{kJ}}{\text{kg}}$
 **Periaate:** Eristetyssä kalorimetrissä energia säilyy. Vesi luovuttaa lämmön, joka lämmittää jään $0\,{}^\circ\text{C}$:seen, sulattaa sen ja lämmittää sulamisveden lopputilan lämpötilaan $T$. Jos jään lämpeneminen unohdetaan, kaikki veden luovuttama lämpö katsotaan sulattamiseen kuluneeksi.
 **Kaava:** $$\begin{aligned} Q_\text{luovutettu} &= Q_\text{vastaanotettu} \\
-c_\text{v} m_\text{v} (T_\text{v} - T) &= c_\text{j} m_\text{j} \Delta T_\text{j} + s m_\text{j} + c_\text{v} m_\text{j} T \\
-s m_\text{j} &= c_\text{v} m_\text{v} (T_\text{v} - T) - c_\text{v} m_\text{j} T - c_\text{j} m_\text{j} \Delta T_\text{j} \\
-s &= \dfrac{c_\text{v} m_\text{v} (T_\text{v} - T) - c_\text{v} m_\text{j} T - c_\text{j} m_\text{j} \Delta T_\text{j}}{m_\text{j}}
+c_\text{v} m_\text{v} (T_\text{v} - T) &= c_\text{j} m_\text{j} \Delta T_\text{j} \\
+&\quad + s m_\text{j} + c_\text{v} m_\text{j} T \\
+s m_\text{j} &= c_\text{v} m_\text{v} (T_\text{v} - T) \\
+&\quad - c_\text{v} m_\text{j} T - c_\text{j} m_\text{j} \Delta T_\text{j} \\
+s &= \dfrac{\begin{array}{c} c_\text{v} m_\text{v} (T_\text{v} \\ - T) \\ - c_\text{v} m_\text{j} T \\ - c_\text{j} m_\text{j} \Delta T_\text{j} \end{array}}{m_\text{j}}
 \end{aligned}$$. Kohdassa a) on $\Delta T_\text{j} = 0$.
 **Muunnokset:** Lämpötilan muutokset ovat samat celsiusasteina ja kelvineinä: $T_\text{v} - T_1 = 21{,}8\,\text{K}$ ja $T_\text{v} - T_2 = 23{,}8\,\text{K}$. Mittauksen 2 jäälle $\Delta T_\text{j} = 0\,{}^\circ\text{C} - (-18{,}0\,{}^\circ\text{C}) = 18{,}0\,\text{K}$. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** a) Mittaus 1: 
@@ -287,13 +294,18 @@ Se poikkeaa taulukkoarvosta alle $1\,\%$.
 Rajalla $T_\text{v,min}$ veden luovuttama lämpö $c_\text{v} m_\text{v} (T_\text{v,min} - 0\,{}^\circ\text{C})$ on juuri yhtä suuri kuin jään tarvitsema $Q_\text{j} = c_\text{j} m_\text{j} \Delta T_\text{j} + s m_\text{j}$. Taulukon riveillä $T_\text{v} = 10\,{}^\circ\text{C}$ ja $T_\text{v} = 20\,{}^\circ\text{C}$ lopputilan lämpötila on $0{,}0\,{}^\circ\text{C}$, joten niillä jäätä jäi. Riveillä $30$, $40$ ja $60\,{}^\circ\text{C}$ lämpötila on yli $0\,{}^\circ\text{C}$, joten niillä kaikki jää suli.
 
 **Kaava:** $$\begin{aligned} Q_\text{luovutettu} &= Q_\text{vastaanotettu} \\
-c_\text{v} m_\text{v} \Delta T_\text{v} &= Q_\text{j} + c_\text{v} (m_\text{v} + m_\text{j}) (T - 0\,{}^\circ\text{C}) \\
-Q_\text{j} &= c_\text{v} m_\text{v} \Delta T_\text{v} - c_\text{v} (m_\text{v} + m_\text{j}) (T - 0\,{}^\circ\text{C}) \\
-Q_\text{j} &= c_\text{j} m_\text{j} \Delta T_\text{j} + s m_\text{j} \\
+c_\text{v} m_\text{v} \Delta T_\text{v} &= Q_\text{j} \\
+&\quad + c_\text{v} (m_\text{v} + m_\text{j}) (T - 0\,{}^\circ\text{C}) \\
+Q_\text{j} &= c_\text{v} m_\text{v} \Delta T_\text{v} \\
+&\quad - c_\text{v} (m_\text{v} + m_\text{j}) (T - 0\,{}^\circ\text{C}) \\
+Q_\text{j} &= c_\text{j} m_\text{j} \Delta T_\text{j} \\
+&\quad + s m_\text{j} \\
 \Delta T_\text{j} &= \dfrac{Q_\text{j} - s m_\text{j}}{c_\text{j} m_\text{j}} \\
-T_\text{j} &= 0\,{}^\circ\text{C} - \Delta T_\text{j} \\
+T_\text{j} &= 0\,{}^\circ\text{C} \\
+&\quad - \Delta T_\text{j} \\
 \Delta T_\text{v,min} &= \dfrac{Q_\text{j}}{c_\text{v} m_\text{v}} \\
-T_\text{v,min} &= 0\,{}^\circ\text{C} + \Delta T_\text{v,min}
+T_\text{v,min} &= 0\,{}^\circ\text{C} \\
+&\quad + \Delta T_\text{v,min}
 \end{aligned}$$. Kaksi ensimmäistä riviä pätevät rivillä, jolla kaikki jää sulaa. Raja on $T_\text{v,min}$
 **Muunnokset:** Lämpötilan muutokset ovat samat celsiusasteina ja kelvineinä. Veden jäähtyminen $0\,{}^\circ\text{C}$:seen on $\Delta T_\text{v} = T_\text{v} - 0\,{}^\circ\text{C}$. Kelvineinä luku on sama. Sulamislämpö $334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Sijoitus:** b) $$\begin{aligned} Q_\text{j} &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}300\,\text{kg} \cdot 40\,\text{K} \\ &- 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}400\,\text{kg} \cdot 8{,}1\,\text{K} \\ &= 50\,280\,\text{J} - 13\,575{,}6\,\text{J} \\ &= 36\,704{,}4\,\text{J} \end{aligned}$$. Sulattamiseen kuluu $s m_\text{j} = 334\,000 \cdot 0{,}100\,\text{J} = 33\,400\,\text{J}$, joten $\Delta T_\text{j} = \dfrac{36\,704{,}4\,\text{J} - 33\,400\,\text{J}}{2100 \cdot 0{,}100\,\tfrac{\text{J}}{\text{K}}} = 15{,}7\,\text{K}$ eli $T_\text{j} = -15{,}7\,{}^\circ\text{C}$.

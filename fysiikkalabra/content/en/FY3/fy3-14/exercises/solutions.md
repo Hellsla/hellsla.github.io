@@ -104,10 +104,11 @@ $$\begin{aligned} t &= \dfrac{8400\,\text{J} + 133\,600\,\text{J}}{800\,\tfrac{\
 **Find:** the specific latent heat of fusion $s$ of ice in $\tfrac{\text{kJ}}{\text{kg}}$
 **Principle:** The calorimeter is insulated and its own heat capacity is ignored, so energy is conserved: the heat given out by the water is equal to the heat used to melt the ice and to warm the meltwater. The ice is already at $0\,{}^\circ\text{C}$, so it does not warm before melting.
 **Formula:** $$\begin{aligned} Q_\text{released} &= Q_\text{absorbed} \\
-c_\text{w} m_\text{w} (T_\text{w} - T) &= s m_\text{i} + c_\text{w} m_\text{i} T \\
-s m_\text{i} &= c_\text{w} m_\text{w} (T_\text{w} - T) - c_\text{w} m_\text{i} T \\
-s &= \dfrac{c_\text{w} m_\text{w} (T_\text{w} - T) - c_\text{w} m_\text{i} T}{m_\text{i}} \\
-&= \dfrac{c_\text{w} \left[ m_\text{w} (T_\text{w} - T) - m_\text{i} T \right]}{m_\text{i}}
+c_\text{w} m_\text{w} (T_\text{w} - T) &= s m_\text{i} \\
+&\quad + c_\text{w} m_\text{i} T \\
+s m_\text{i} &= c_\text{w} m_\text{w} (T_\text{w} - T) \\
+&\quad - c_\text{w} m_\text{i} T \\
+s &= \dfrac{\begin{array}{c} c_\text{w} m_\text{w} (T_\text{w} \\ - T) - c_\text{w} m_\text{i} T \end{array}}{m_\text{i}}
 \end{aligned}$$
 **Conversions:** The temperature differences are the same in kelvins: $T_\text{w} - T = 30.0 - 8.1 = 21.9\,\text{K}$ and $T - 0 = 8.1\,\text{K}$. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** The expression in the square brackets is $$\begin{aligned} &0.200\,\text{kg} \cdot 21.9\,\text{K} - 0.0500\,\text{kg} \cdot 8.1\,\text{K} \\ &= 4.380\,\text{kg}\cdot\text{K} - 0.405\,\text{kg}\cdot\text{K} \\ &= 3.975\,\text{kg}\cdot\text{K} \end{aligned}$$, so
@@ -157,9 +158,13 @@ m_\text{melt} &= \dfrac{Q_\text{w} - c_\text{i} m_\text{i} \Delta T_\text{i}}{s}
 **Find:** the final temperature $T$ in degrees Celsius
 **Principle:** Energy is conserved in the insulated container. The water can give out at most the heat released when it cools to $0\,{}^\circ\text{C}$ and freezes. If this is less than the heat needed to warm the ice to $0\,{}^\circ\text{C}$, all the water freezes and the whole content becomes ice at a temperature below $0\,{}^\circ\text{C}$.
 **Formula:** $$\begin{aligned} Q_\text{released} &= Q_\text{absorbed} \\
-c_\text{w} m_\text{w} \Delta T_\text{w} + s m_\text{w} - c_\text{i} m_\text{w} T &= c_\text{i} m_\text{i} T - c_\text{i} m_\text{i} T_\text{i} \\
-c_\text{w} m_\text{w} \Delta T_\text{w} + s m_\text{w} + c_\text{i} m_\text{i} T_\text{i} &= c_\text{i} (m_\text{i} + m_\text{w}) T \\
-T &= \dfrac{c_\text{w} m_\text{w} \Delta T_\text{w} + s m_\text{w} + c_\text{i} m_\text{i} T_\text{i}}{c_\text{i} (m_\text{i} + m_\text{w})}
+c_\text{w} m_\text{w} \Delta T_\text{w} \\
+&\quad + s m_\text{w} - c_\text{i} m_\text{w} T \\
+&= c_\text{i} m_\text{i} T - c_\text{i} m_\text{i} T_\text{i} \\
+c_\text{w} m_\text{w} \Delta T_\text{w} \\
+&\quad + s m_\text{w} + c_\text{i} m_\text{i} T_\text{i} \\
+&= c_\text{i} (m_\text{i} + m_\text{w}) T \\
+T &= \dfrac{\begin{array}{c} c_\text{w} m_\text{w} \Delta T_\text{w} \\ + s m_\text{w} + c_\text{i} m_\text{i} T_\text{i} \end{array}}{c_\text{i} (m_\text{i} + m_\text{w})}
 \end{aligned}$$. The water gives out the heat $c_\text{w} m_\text{w} \Delta T_\text{w}$ when it cools to $0\,{}^\circ\text{C}$, $s m_\text{w}$ when it freezes and $c_\text{i} m_\text{w} (0 - T)$ when the ice formed cools to the temperature $T$. The original ice takes the heat $c_\text{i} m_\text{i} (T - T_\text{i})$ when it warms from $T_\text{i}$ to $T$
 **Conversions:** The temperature differences are the same in kelvins: the water falls by $10\,\text{K}$ and the ice rises by $0 - (-40) = 40\,\text{K}$. The latent heat of fusion is $334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Substitution:** The water can give out at most $$\begin{aligned} &4190 \cdot 0.100 \cdot 10.0\,\text{J} \\ &+ 334\,000 \cdot 0.100\,\text{J} \\ &= 37\,590\,\text{J} \end{aligned}$$, but warming the ice to $0\,{}^\circ\text{C}$ needs $$\begin{aligned} &2100 \cdot 0.500 \cdot 40.0\,\text{J} \\ &= 42\,000\,\text{J} \end{aligned}$$, so all the water freezes.
@@ -266,9 +271,11 @@ Statement 2 is false: it is not the comparison of the masses that decides the me
 **Find:** a) $s$ from each measurement, assuming that the temperature of the ice was $0\,{}^\circ\text{C}$, b) the reason for the difference, c) the corrected $s$ of measurement 2 in $\tfrac{\text{kJ}}{\text{kg}}$
 **Principle:** In an insulated calorimeter energy is conserved: the water gives out heat that warms the ice to $0\,{}^\circ\text{C}$, melts it and warms the melt water to the final temperature $T$. If the warming of the ice is forgotten, all the heat given out by the water is counted as used for melting.
 **Formula:** $$\begin{aligned} Q_\text{released} &= Q_\text{absorbed} \\
-c_\text{w} m_\text{w} (T_\text{w} - T) &= c_\text{i} m_\text{i} \Delta T_\text{i} + s m_\text{i} + c_\text{w} m_\text{i} T \\
-s m_\text{i} &= c_\text{w} m_\text{w} (T_\text{w} - T) - c_\text{w} m_\text{i} T - c_\text{i} m_\text{i} \Delta T_\text{i} \\
-s &= \dfrac{c_\text{w} m_\text{w} (T_\text{w} - T) - c_\text{w} m_\text{i} T - c_\text{i} m_\text{i} \Delta T_\text{i}}{m_\text{i}}
+c_\text{w} m_\text{w} (T_\text{w} - T) &= c_\text{i} m_\text{i} \Delta T_\text{i} \\
+&\quad + s m_\text{i} + c_\text{w} m_\text{i} T \\
+s m_\text{i} &= c_\text{w} m_\text{w} (T_\text{w} - T) \\
+&\quad - c_\text{w} m_\text{i} T - c_\text{i} m_\text{i} \Delta T_\text{i} \\
+s &= \dfrac{\begin{array}{c} c_\text{w} m_\text{w} (T_\text{w} \\ - T) \\ - c_\text{w} m_\text{i} T \\ - c_\text{i} m_\text{i} \Delta T_\text{i} \end{array}}{m_\text{i}}
 \end{aligned}$$. In part a) $\Delta T_\text{i} = 0$.
 **Conversions:** The changes in temperature are the same in degrees Celsius and in kelvins: $T_\text{w} - T_1 = 21.8\,\text{K}$ and $T_\text{w} - T_2 = 23.8\,\text{K}$, and for the ice of measurement 2 $\Delta T_\text{i} = 0\,{}^\circ\text{C} - (-18.0\,{}^\circ\text{C}) = 18.0\,\text{K}$. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** a) Measurement 1: 
@@ -310,13 +317,18 @@ At the limit $T_\text{w,min}$ the heat given out by the water, $c_\text{w} m_\te
 In the rows $T_\text{w} = 10\,{}^\circ\text{C}$ and $T_\text{w} = 20\,{}^\circ\text{C}$ of the table the final temperature is $0.0\,{}^\circ\text{C}$, so ice was left there. In the rows $30$, $40$ and $60\,{}^\circ\text{C}$ the temperature is above $0\,{}^\circ\text{C}$, so all the ice melted there.
 
 **Formula:** $$\begin{aligned} Q_\text{released} &= Q_\text{absorbed} \\
-c_\text{w} m_\text{w} \Delta T_\text{w} &= Q_\text{i} + c_\text{w} (m_\text{w} + m_\text{i}) (T - 0\,{}^\circ\text{C}) \\
-Q_\text{i} &= c_\text{w} m_\text{w} \Delta T_\text{w} - c_\text{w} (m_\text{w} + m_\text{i}) (T - 0\,{}^\circ\text{C}) \\
-Q_\text{i} &= c_\text{i} m_\text{i} \Delta T_\text{i} + s m_\text{i} \\
+c_\text{w} m_\text{w} \Delta T_\text{w} &= Q_\text{i} \\
+&\quad + c_\text{w} (m_\text{w} + m_\text{i}) (T - 0\,{}^\circ\text{C}) \\
+Q_\text{i} &= c_\text{w} m_\text{w} \Delta T_\text{w} \\
+&\quad - c_\text{w} (m_\text{w} + m_\text{i}) (T - 0\,{}^\circ\text{C}) \\
+Q_\text{i} &= c_\text{i} m_\text{i} \Delta T_\text{i} \\
+&\quad + s m_\text{i} \\
 \Delta T_\text{i} &= \dfrac{Q_\text{i} - s m_\text{i}}{c_\text{i} m_\text{i}} \\
-T_\text{i} &= 0\,{}^\circ\text{C} - \Delta T_\text{i} \\
+T_\text{i} &= 0\,{}^\circ\text{C} \\
+&\quad - \Delta T_\text{i} \\
 \Delta T_\text{w,min} &= \dfrac{Q_\text{i}}{c_\text{w} m_\text{w}} \\
-T_\text{w,min} &= 0\,{}^\circ\text{C} + \Delta T_\text{w,min}
+T_\text{w,min} &= 0\,{}^\circ\text{C} \\
+&\quad + \Delta T_\text{w,min}
 \end{aligned}$$. The first two rows hold in a row where all the ice melts. The limit is $T_\text{w,min}$
 **Conversions:** The changes in temperature are the same in degrees Celsius and in kelvins, and the cooling of the water to $0\,{}^\circ\text{C}$ is $\Delta T_\text{w} = T_\text{w} - 0\,{}^\circ\text{C}$, the same number in kelvins. The latent heat of fusion is $334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Substitution:** b) $$\begin{aligned} Q_\text{i} &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.300\,\text{kg} \cdot 40\,\text{K} \\ &- 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.400\,\text{kg} \cdot 8.1\,\text{K} \\ &= 50\,280\,\text{J} - 13\,575.6\,\text{J} \\ &= 36\,704.4\,\text{J} \end{aligned}$$. Melting needs $s m_\text{i} = 334\,000 \cdot 0.100\,\text{J} = 33\,400\,\text{J}$, so $\Delta T_\text{i} = \dfrac{36\,704.4\,\text{J} - 33\,400\,\text{J}}{2100 \cdot 0.100\,\tfrac{\text{J}}{\text{K}}} = 15.7\,\text{K}$, that is $T_\text{i} = -15.7\,{}^\circ\text{C}$.
