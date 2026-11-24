@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f1b67e3925bfc7d6
-none
+CONTENT-HASH: 1d513d89dd494e99
+SCOPE: delta answers,numbers from f1b67e3925bfc7d6 base 48ff417
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] solutions.md 4-19 (silmukka), Kaava — one nine-row block mixes three ideas (radius from the readings, the two normal forces, the minimum speed); a short paragraph or separate blocks before each idea (as the banked-curve solution does with "Ilman kitkaa" and "Kitkan kanssa") would ease reading. Not blocking.
+(none)
 
 ## Checked
-- Delta, Kaava rewrites in solutions.md (Newton's second law first, then simplified symbolically; Sijoitus unchanged). Opened open-exercises-1280-3 (4-4), L3-1280-6 and L3-1280-7 (silmukka: Kaava with 9 rows, Sijoitus), L3-1280-9 and L3-1280-10 (banked curve: force diagram, Kaava split into three displays with short sentences, Sijoitus).
-- Layout survived at 1280 px with solutions open: rows aligned at `=`, one equation per row, no clipping or overlap, units upright with thin space, vector overlines and colours unchanged in the force diagrams.
-- Not opened: the 4-? hammer, string and friction-limit chains (3–5 rows, same pattern); the four teacher-approved pictures `fy5-4-pick-*` are not judged.
+- Delta: L3-01 and L3-03 (4-20) limit values rounded to the safe side (27 km/h, 210 m).
+- Opened open-exercises-L3-1280-1, -2 (4-18 question, Sijoitus, Vastaus 27 km/h, Järkevyys) and -4, -5 (4-20 question, Kaava, Sijoitus, Vastaus 210 m) for this language.
+- KaTeX clean, rows aligned at =, units upright with thin space, no clipping or overflow; the answer box, the exact value and the rounding-direction sentence read in logical order; force diagrams unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

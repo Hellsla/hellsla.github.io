@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 0531a6d54a3e8f40
-none
+CONTENT-HASH: 05a351bf9e86775d
+SCOPE: delta answers,numbers from 0531a6d54a3e8f40 base 48ff417
 
 ## Blocking
 (none)
@@ -9,8 +9,9 @@ none
 (none)
 
 ## Checked
-- Delta (Kaava steps as aligned symbolic chains). Opened fy5-4 open-exercises-1280-3 (4-4), L3-1280-10 (banked bend, friction case split into short blocks), L3-1280-11 and -12 (4-23, graph read, three-row chain).
-- Equals signs align, one step per row, symbolic order then substitution intact; no clipping or overflow; the 4-23 graph (axes, units, marked point) unchanged and readable. The four pick-* pictures are teacher-approved (carry).
+- Delta: L3-01 and L3-03 (4-20) limit values rounded to the safe side (27 km/h, 210 m).
+- Opened open-exercises-L3-1280-1, -2 (4-18 question, Sijoitus, Vastaus 27 km/h, Järkevyys) and -4, -5 (4-20 question, Kaava, Sijoitus, Vastaus 210 m) for this language.
+- KaTeX clean, rows aligned at =, units upright with thin space, no clipping or overflow; the answer box, the exact value and the rounding-direction sentence read in logical order; force diagrams unchanged.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

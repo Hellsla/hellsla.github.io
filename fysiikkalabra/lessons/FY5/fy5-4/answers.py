@@ -21,10 +21,10 @@ a["fy5-4-L2-03"] = 1200 * (g - 12.0 ** 2 / 30) / 1000     # top of a bump: G −
 v24 = 2 * math.pi * 1.8 / 0.50                            # hammer: v = 2πr/T = 22,62 m/s
 a["fy5-4-L2-04"] = 7.26 * v24 ** 2 / 1.8 / 1000           # ΣF = m v²/r = 2,064 kN
 # Level 3: reasoning, two ideas
-a["fy5-4-L3-01"] = math.sqrt(0.10 * g * 60) * 3.6         # icy curve: mu0 m g = m v²/r → v = sqrt(mu0 g r) = 7,672 m/s = 27,62 km/h
+a["fy5-4-L3-01"] = math.floor(math.sqrt(0.10 * g * 60) * 3.6)  # icy curve: mu0 m g = m v²/r → v = sqrt(mu0 g r) = 7,672 m/s = 27,62 km/h; an "at most" value rounds down: 27 km/h (P7c)
 v32 = math.sqrt(25 * 0.80 / 0.40)                         # cord's limit: T = m v²/r (T the tension) → v = sqrt(T r / m) = 7,071 m/s
 a["fy5-4-L3-02"] = v32 / (2 * math.pi * 0.80)             # v = 2πr f → f = v/(2πr) = 1,407 Hz
-a["fy5-4-L3-03"] = (80 / 3.6) ** 2 / (0.25 * g)           # road design: m v²/r ≤ 0,25 mg → r ≥ v²/(0,25 g) = 201,4 m
+a["fy5-4-L3-03"] = math.ceil((80 / 3.6) ** 2 / (0.25 * g) / 10) * 10  # road design: m v²/r ≤ 0,25 mg → r ≥ v²/(0,25 g) = 201,4 m; an "at least" value rounds up to two figures: 210 m (P7c)
 # Exercise bank additions (teacher 2026-11-04): L1-06 and L1-07 are multiple choice (no number)
 a["fy5-4-L1-08"] = (3 ** 2) * 1.0                                                       # a_n ∝ v²: tripled speed gives 9 · 1,0 m/s² = 9,0 m/s² (≈ 0,92 g)
 a["fy5-4-L2-05"] = 1.53 / 49.0 * 0.80 * 1000                                             # fitted line through the origin and (49 m²/s², 1,53 N): k = m/r = 0,03122 kg/m, m = k r = 24,98 g

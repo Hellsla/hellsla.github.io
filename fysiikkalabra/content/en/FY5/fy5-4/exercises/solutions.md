@@ -130,7 +130,7 @@ akselit 0
 **Formula:** $$\begin{aligned} \Sigma F_y &= 0 \Rightarrow N = mg \\ F_\mu &= \mu_0 N = \mu_0 mg \\ F_\mu &= m a_\text{n} = m\dfrac{v^2}{r} \\ v^2 &= \mu_0 g r \\ v &= \sqrt{\mu_0 g r} \end{aligned}$$
 **Conversions:** The result is finally converted to $\text{km/h}$: $1\,\text{m/s} = \dfrac{0.001\,\text{km}}{\tfrac{1}{3600}\,\text{h}} = 3.6\,\text{km/h}$.
 **Substitution:** $v = \sqrt{0.10\cdot 9.81\,\text{m/s}^2\cdot 60\,\text{m}} = \sqrt{58.86\,\text{m}^2/\text{s}^2} = 7.672\,\text{m/s} = 7.672\cdot 3.6\,\text{km/h} = 27.62\,\text{km/h}$
-**Answer:** $28\,\text{km/h}$, two significant figures like the radius $60\,\text{m}$ and the coefficient $0.10$.
+**Answer:** $27\,\text{km/h}$. The exact value is $27.62\,\text{km/h}$, and two significant figures match the radius $60\,\text{m}$ and the coefficient $0.10$. This is a greatest allowed speed, so the limit is rounded down: $28\,\text{km/h}$ would exceed it.
 **Reasonableness:** On ice a bend must be taken very slowly, and on dry asphalt ($\mu_0 \approx 0.8$) the same bend could be taken at $\sqrt{8} \approx 2.8$ times the speed, about $78\,\text{km/h}$. The mass cancelled, so even a heavy car does not stay in the bend any better.
 
 ## fy5-4-L3-02
@@ -174,7 +174,7 @@ akselit 0
 **Formula:** $$\begin{aligned} \Sigma F_y &= 0 \Rightarrow N = mg \\ F_\mu &= m a_\text{n} = m\dfrac{v^2}{r} \\ F_\mu &\le 0.25\,mg \\ r &\ge \dfrac{v^2}{0.25\,g} \end{aligned}$$
 **Conversions:** $v = 80\,\text{km/h} = \dfrac{80\cdot 1000\,\text{m}}{3600\,\text{s}} = 22.22\,\text{m/s}$
 **Substitution:** $r = \dfrac{(22.22\,\text{m/s})^2}{0.25\cdot 9.81\,\text{m/s}^2} = \dfrac{493.8\,\text{m}^2/\text{s}^2}{2.4525\,\text{m/s}^2} = 201.4\,\text{m}$
-**Answer:** $200\,\text{m}$ or $2.0 \cdot 10^{2}\,\text{m}$, two significant figures like the speed $80\,\text{km/h}$ and the coefficient $0.25$.
+**Answer:** $210\,\text{m}$ or $2.1 \cdot 10^{2}\,\text{m}$. The exact value is $201.4\,\text{m}$, and two significant figures match the speed $80\,\text{km/h}$ and the coefficient $0.25$. This is a smallest allowed radius, so the limit is rounded up: $200\,\text{m}$ would fall short of it.
 **Reasonableness:** The radii of the bends of country roads are hundreds of metres, so the result is believable. The radius grows with the square of the speed: for $120\,\text{km/h}$ a radius $2.25$ times as large would be needed, about $450\,\text{m}$. The mass cancelled, so the same radius is enough for all cars.
 
 ## fy5-4-L1-06
