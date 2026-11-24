@@ -221,7 +221,7 @@ $$
 **Kysytty:** a) taivaankappaleen $g_\text{X}$; b) mikä taivaankappale on kyseessä
 **Periaate:** Jousen venymä on suoraan verrannollinen voimaan. Paino $G = m g$ on voima. Siksi $x$ on suoraan verrannollinen tuloon $m g$. Saman jousen ja saman massan venymät ovat samassa suhteessa kuin $g$-arvot. Maan mittauksista saadaan jousen kalibrointi. Sen avulla saadaan tuntemattoman paikan $g$.
 **Taulukon lukeminen:** Pisteet $(m, x)$ ovat suoralla, joka kulkee origon kautta. Siksi suhde $x/m$ on kaikissa pisteissä lähes sama ($1{,}1/0{,}10 = 11$ ja $6{,}1/0{,}60 \approx 10{,}2\,\text{cm/kg}$). Mittaushajonta tasoittuu, kun suhde lasketaan kaikista pisteistä. Venymien summa on $$\begin{aligned} &1{,}1 + 2{,}1 + 3{,}2 + 4{,}1 + 5{,}2 + 6{,}1 \\ &= 21{,}8\,\text{cm} \end{aligned}$$. Massojen summa on $$\begin{aligned} &0{,}10 + 0{,}20 + 0{,}30 \\ &+ 0{,}40 + 0{,}50 + 0{,}60 \\ &= 2{,}10\,\text{kg} \end{aligned}$$.
-**Kaava:** $$\begin{aligned} \dfrac{x}{m} &= c\, g_\text{Maa} \quad (c\text{: jousen vakio}) \\
+**Kaava:** $$\begin{aligned} \dfrac{x}{m} &= c\, g_\text{Maa} \quad (c\text{: venymä newtonia kohti}) \\
 \dfrac{x_\text{X}}{m_\text{X}} &= c\, g_\text{X} \\
 g_\text{X} &= g_\text{Maa} \dfrac{x_\text{X}/m_\text{X}}{(x/m)_\text{Maa}}
 \end{aligned}

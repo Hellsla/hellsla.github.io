@@ -274,7 +274,7 @@ Here $g_\text{limit}$ is the greatest gap allowed in winter.
 **Substitution:** a)
 $g_\text{min} = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25.0\,\text{m} \cdot 44\,\text{K} = 0.0132\,\text{m} = 13.2\,\text{mm}$
 b) The change in winter is $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25.0\,\text{m} \cdot 40\,\text{K} = 0.0120\,\text{m} = 12.0\,\text{mm}$, so $g_\text{max} = 30\,\text{mm} - 12.0\,\text{mm} = 18\,\text{mm}$.
-**Answer:** a) $g_\text{min} = 13.2\,\text{mm}$, in practice $13\,\text{mm}$, and b) $g_\text{max} = 18\,\text{mm}$. The coefficient $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ is a two-figure value, so the results are acceptable rounded to two figures.
+**Answer:** a) $g_\text{min} = 13.2\,\text{mm}$, in practice at least $14\,\text{mm}$, and b) $g_\text{max} = 18\,\text{mm}$. The coefficient $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ is a two-figure value, so the results are acceptable rounded to two figures.
 
 Model answer c): the gap $15\,\text{mm}$ is in the range $13.2\,\text{mm} \ldots 18\,\text{mm}$, so it is acceptable when installing at $8\,{}^\circ\text{C}$: in summer a gap of $15\,\text{mm} - 13.2\,\text{mm} = 1.8\,\text{mm}$ is left, and in winter it is $$\begin{aligned} &15\,\text{mm} + 12.0\,\text{mm} \\ &= 27\,\text{mm} \\ &< 30\,\text{mm} \end{aligned}$$.
 
